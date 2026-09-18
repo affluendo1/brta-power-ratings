@@ -162,9 +162,10 @@ def pair_from_code(players, code: str) -> str:
 def parse_scorecard(html: str, fixture: dict):
     soup = BeautifulSoup(html, "html.parser")
     root = soup.find("table", attrs={"width": "99%"})
-    if root is None or root.find("tbody") is None:
+    if root is None:
         raise RuntimeError(f"No scorecard table for {fixture['fixture_id']}; response starts: {clean_text(html[:500])}")
-    outer = root.find("tbody").find_all("tr", recursive=False)
+    container = root.find("tbody", recursive=False) or root
+    outer = container.find_all("tr", recursive=False)
     if len(outer) < 2:
         raise RuntimeError(f"Malformed scorecard for {fixture['fixture_id']}")
 
