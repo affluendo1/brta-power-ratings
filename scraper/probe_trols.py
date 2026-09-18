@@ -73,7 +73,7 @@ async def main():
             await dump(page, "01-competition")
 
         # If the page exposes a section selector, choose Section 6.
-        picked_section = await choose_matching_option(page, [r"^\\s*Sets\\s*6\\s*$", r"^\\s*Section\\s*6\\s*$"])
+        picked_section = await choose_matching_option(page, [r"Sets 6"])
         if picked_section:
             await page.wait_for_timeout(2000)
             await dump(page, "02-section6")
