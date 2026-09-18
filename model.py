@@ -19,7 +19,8 @@ HALF_LIFE_DAYS = 365.0
 L2 = 5.0
 DISPLAY_CENTRE = 1500.0
 DISPLAY_SCALE = 600.0
-MIN_MATCHES = 4\nMIN_DOUBLES_MATCHES = 2
+MIN_MATCHES = 4
+MIN_DOUBLES_MATCHES = 2
 
 def prepare(df):
     df = df[df["status"].eq("Completed")].copy()
