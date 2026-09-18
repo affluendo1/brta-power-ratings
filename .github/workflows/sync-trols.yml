@@ -3,7 +3,7 @@ name: Sync BRTA results
 on:
   workflow_dispatch:
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "17 19 * * 0,1,3"\n      timezone: "Australia/Melbourne"
   push:
     paths:
       - "scraper/sync_trols.py"
@@ -33,7 +33,7 @@ jobs:
         run: git status --short data/current && git diff --stat -- data/current || true
       - name: Commit updated results
         run: |
-          if [ -z "$(git status --porcelain -- data/current)" ]; then
+          if [ -z "$(git status --porcelain -- data/current/*.csv)" ]; then
             echo "TROLS has no result changes."
             exit 0
           fi
