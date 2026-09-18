@@ -3,7 +3,8 @@ name: Sync BRTA results
 on:
   workflow_dispatch:
   schedule:
-    - cron: "17 19 * * 0,1,3"\n      timezone: "Australia/Melbourne"
+    - cron: "17 19 * * 0,1,3"
+      timezone: "Australia/Melbourne"
   push:
     paths:
       - "scraper/sync_trols.py"
@@ -42,4 +43,5 @@ jobs:
           git add data/current
           ROUND=$(python -c "import json; print(json.load(open('data/current/sync_status.json'))['latest_round'])")
           git commit -m "Auto-sync BRTA Section 6 through Round $ROUND"
+          git pull --rebase origin main
           git push
