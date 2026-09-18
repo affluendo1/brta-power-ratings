@@ -11,13 +11,13 @@ For player strength `theta`:
 - Real-time decay: `w_m = 2^(-age_days / 365)`
 - Regularization: `(5/2) * sum(theta_i^2)`
 - Objective: `sum_m w_m*L_m - (5/2)*sum(theta_i^2)`
-- Display: `Power_i = 1000 + 250*theta_i`
+- Display: `Power_i = 1500 + 600*theta_i`
 - Uncertainty: Laplace approximation, `Cov(theta) ≈ H^-1`
 - Publication threshold: 4 completed singles matches
 
 V3 deliberately removes V2's separate match-win likelihood because the scoreline already contains the match outcome. This avoids double-counting the same evidence.
 
-Low-data opponents are handled through shrinkage and wider posterior uncertainty rather than a hand-built opponent-reliability multiplier. Expected mismatches also have lower information curvature naturally under the logistic likelihood.
+The wider 1500-centred display scale is an affine rescaling only; it does not alter match probabilities, ranking order, or predictive calibration. Low-data opponents are handled through shrinkage and wider posterior uncertainty rather than a hand-built opponent-reliability multiplier. Expected mismatches also have lower information curvature naturally under the logistic likelihood.
 
 ### Parameter selection
 
