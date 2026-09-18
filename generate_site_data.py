@@ -255,7 +255,7 @@ def main():
         "doublesIndividualMinMatches":INDIVIDUAL_DOUBLES_MIN,
         "overallRule":"50/50 average of singles and individual doubles ratings; ranked overall requires 4 singles and 4 doubles appearances."
     }}
-    OUT.write_text("const DATA="+json.dumps(payload,separators=(",",":"),ensure_ascii=False)+";\\n",encoding="utf-8")
+    OUT.write_text("const DATA="+json.dumps(payload,separators=(",",":"),ensure_ascii=False)+";\n",encoding="utf-8")
     print(f"Wrote {OUT}: {len(srows)} singles, {len(prows)} pairs, {len(drows)} doubles players, latest round {payload['section6']['roundOverview']['round']}")
 
 if __name__=="__main__":
