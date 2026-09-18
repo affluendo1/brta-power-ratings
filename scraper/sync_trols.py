@@ -18,7 +18,7 @@ MATCH_URL = urljoin(BASE, "match_popup.php")
 COMPETITION_LABEL = os.getenv("TROLS_COMPETITION", "Sunday AM - Spring 2026")
 SECTION_LABEL = os.getenv("TROLS_SECTION", "Sets 6")
 OUT = Path(os.getenv("TROLS_OUT", "data/current"))
-UA = "BRTA-Power-Ratings/1.0 (+https://github.com/affluendo1/brta-power-ratings)"
+UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36"
 
 ALIASES = {
     "Geoge Si": "George Si",
@@ -163,7 +163,7 @@ def parse_scorecard(html: str, fixture: dict):
     soup = BeautifulSoup(html, "html.parser")
     root = soup.find("table", attrs={"width": "99%"})
     if root is None or root.find("tbody") is None:
-        raise RuntimeError(f"No scorecard table for {fixture['fixture_id']}")
+        raise RuntimeError(f"No scorecard table for {fixture['fixture_id']}; response starts: {clean_text(html[:500])}")
     outer = root.find("tbody").find_all("tr", recursive=False)
     if len(outer) < 2:
         raise RuntimeError(f"Malformed scorecard for {fixture['fixture_id']}")
@@ -237,7 +237,7 @@ def count_existing(path: Path) -> int:
 
 def main():
     s = requests.Session()
-    s.headers.update({"User-Agent": UA, "Accept": "text/html,application/xhtml+xml"})
+    s.headers.update({"User-Agent": UA, "Accept": "text/html,application/xhtml+xml", "Referer": RESULTS_URL})
 
     first = s.get(RESULTS_URL, timeout=30)
     first.raise_for_status()
