@@ -85,7 +85,7 @@ async def main():
                 print("Could not inspect open_match:", e)
             # Open one known completed scorecard so we can inspect its DOM.
             try:
-                await page.locator("a[onclick*='UA009094']").click()
+                await page.goto("https://www.trols.org.au/brta/match_popup.php?matchid=UA009094&seasonid=", wait_until="domcontentloaded")
                 await page.wait_for_timeout(1500)
                 await dump(page, "03-scorecard")
             except Exception as e:
