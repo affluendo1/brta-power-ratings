@@ -2,6 +2,8 @@ from __future__ import annotations
 import json, math
 from collections import Counter, defaultdict
 from pathlib import Path
+from datetime import datetime
+from zoneinfo import ZoneInfo
 
 import numpy as np
 import pandas as pd
@@ -190,6 +192,87 @@ def team_rows(single_rows, fixtures):
         rows.append({"team":t,"avg":round(avg,1),"best4":round(best4,1),"qualified":len(vals),"ladder":int(pts[t])})
     return sorted(rows,key=lambda x:x["avg"],reverse=True)
 
+def reconstructed_standings(fixtures):
+    teams = sorted(set(fixtures.home_team) | set(fixtures.away_team))
+    s = {t: dict(team=t, played=0, wins=0, losses=0, rubbersFor=0, rubbersAgainst=0,
+                 gamesFor=0, gamesAgainst=0, points=0) for t in teams}
+    for _, r in fixtures.iterrows():
+        h, a, status = str(r.home_team), str(r.away_team), str(r.status)
+        if status == "Wash Out":
+            s[h]["points"] += 5; s[a]["points"] += 5
+            continue
+        if status != "Completed":
+            continue
+        hr, ar = int(r.home_rubbers), int(r.away_rubbers)
+        hg, ag = int(r.home_games), int(r.away_games)
+        for t in (h, a): s[t]["played"] += 1
+        s[h]["rubbersFor"] += hr; s[h]["rubbersAgainst"] += ar
+        s[a]["rubbersFor"] += ar; s[a]["rubbersAgainst"] += hr
+        s[h]["gamesFor"] += hg; s[h]["gamesAgainst"] += ag
+        s[a]["gamesFor"] += ag; s[a]["gamesAgainst"] += hg
+        s[h]["points"] += hr; s[a]["points"] += ar
+        home_win = hr > ar or (hr == ar and hg > ag)
+        away_win = ar > hr or (hr == ar and ag > hg)
+        if home_win:
+            s[h]["wins"] += 1; s[a]["losses"] += 1; s[h]["points"] += 4
+        elif away_win:
+            s[a]["wins"] += 1; s[h]["losses"] += 1; s[a]["points"] += 4
+        else:
+            s[h]["points"] += 2; s[a]["points"] += 2
+    return sorted(s.values(), key=lambda x: (-x["points"], -(x["rubbersFor"]-x["rubbersAgainst"]),
+                                             -(x["gamesFor"]-x["gamesAgainst"]), x["team"]))
+
+ROUND_DATES = {
+    10: "11 Oct 26", 11: "18 Oct 26", 12: "25 Oct 26",
+    13: "8 Nov 26", 14: "15 Nov 26",
+}
+
+def upcoming_fixtures(fixtures):
+    by_round = defaultdict(list)
+    for _, r in fixtures.iterrows():
+        by_round[int(r["round"])].append((str(r.home_team), str(r.away_team)))
+    # Validate the double-round-robin pattern using the already-published R8/R9.
+    # If R8 == reversed R1 and R9 == reversed R2, the remaining return fixtures
+    # are deterministically R3-R7 with home/away swapped.
+    def norm(xs): return sorted(xs)
+    verified = all(
+        norm(by_round.get(r + 7, [])) == norm([(a, h) for h, a in by_round.get(r, [])])
+        for r in (1, 2)
+    )
+    if not verified:
+        return []
+    latest = max(by_round)
+    out = []
+    for rnd in range(latest + 1, 15):
+        source = rnd - 7
+        games = [{"home": a, "away": h} for h, a in by_round.get(source, [])]
+        if len(games) == 4:
+            out.append({"round": rnd, "date": ROUND_DATES.get(rnd, ""), "fixtures": games,
+                        "source": "reconstructed from verified reverse draw"})
+    return out
+
+def sync_meta():
+    status = json.loads((DATA_DIR / "sync_status.json").read_text()) if (DATA_DIR / "sync_status.json").exists() else {}
+    check = json.loads((DATA_DIR / "last_check.json").read_text()) if (DATA_DIR / "last_check.json").exists() else {}
+    updated = None
+    raw = status.get("results_loaded_by_trols")
+    if raw:
+        try:
+            cleaned = raw.replace("st ", " ").replace("nd ", " ").replace("rd ", " ").replace("th ", " ")
+            dt = datetime.strptime(cleaned, "%d %B %y @ %I:%M:%S %p").replace(tzinfo=ZoneInfo("Australia/Melbourne"))
+            updated = dt.isoformat()
+        except ValueError:
+            pass
+    return {
+        "checkedAt": check.get("checked_at_utc") or status.get("synced_at_utc"),
+        "updatedAt": updated,
+        "latestRound": status.get("latest_round"),
+        "validation": status.get("validation"),
+        "newResultsLastCheck": bool(check.get("new_results", False)),
+        "missingFixtures": int(sum(1 for _, r in pd.read_csv(FIXTURES_CSV).iterrows() if str(r.status) == "Missing Result")),
+        "resultsLoadedByTrols": raw,
+    }
+
 def round_overview(fixtures, singles, rating_map):
     completed_rounds=sorted(set(int(x) for x in singles["round"]))
     latest=max(completed_rounds)
@@ -249,6 +332,9 @@ def main():
         "teams":team_rows(srows,fixtures),
         "note":"Team Power uses qualified singles players. Ladder points are reconstructed from published fixture results; missing fixtures remain uncounted.",
         "roundOverview":round_overview(fixtures,singles,rmap),
+        "standings":reconstructed_standings(fixtures),
+        "upcomingFixtures":upcoming_fixtures(fixtures),
+        "sync":sync_meta(),
     },"model":{
         "version":"V3","centre":int(DISPLAY_CENTRE),"displayScale":int(DISPLAY_SCALE),
         "singlesMinMatches":MIN_MATCHES,"doublesMinMatches":MIN_DOUBLES_MATCHES,
