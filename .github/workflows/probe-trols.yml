@@ -2,12 +2,6 @@ name: Probe TROLS
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "*/5 * * * *"
-  push:
-    paths:
-      - "scraper/probe_trols.py"
-      - ".github/workflows/probe-trols.yml"
 
 permissions:
   contents: read
