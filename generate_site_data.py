@@ -194,7 +194,7 @@ def team_rows(single_rows, fixtures):
 
 def reconstructed_standings(fixtures):
     teams = sorted(set(fixtures.home_team) | set(fixtures.away_team))
-    s = {t: dict(team=t, played=0, wins=0, losses=0, rubbersFor=0, rubbersAgainst=0,
+    s = {t: dict(team=t, played=0, wins=0, draws=0, losses=0, rubbersFor=0, rubbersAgainst=0,
                  gamesFor=0, gamesAgainst=0, points=0) for t in teams}
     for _, r in fixtures.iterrows():
         h, a, status = str(r.home_team), str(r.away_team), str(r.status)
@@ -218,6 +218,7 @@ def reconstructed_standings(fixtures):
         elif away_win:
             s[a]["wins"] += 1; s[h]["losses"] += 1; s[a]["points"] += 4
         else:
+            s[h]["draws"] += 1; s[a]["draws"] += 1
             s[h]["points"] += 2; s[a]["points"] += 2
     return sorted(s.values(), key=lambda x: (-x["points"], -(x["rubbersFor"]-x["rubbersAgainst"]),
                                              -(x["gamesFor"]-x["gamesAgainst"]), x["team"]))
