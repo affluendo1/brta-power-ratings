@@ -92,3 +92,29 @@ if __name__=="__main__":
     if not args.all: ratings=ratings[ratings["qualified"]]
     fmts={"power":"{:.0f}".format,"power_se":"{:.0f}".format,"ci95_low":"{:.0f}".format,"ci95_high":"{:.0f}".format}
     print(ratings.to_string(index=False,formatters=fmts))
+
+
+# ---------------------------------------------------------------------------
+# INDIVIDUAL DOUBLES EXTENSION
+# ---------------------------------------------------------------------------
+# The website's individual-doubles table uses the same scoreline likelihood
+# and V3 constants, but a doubles side's latent strength is the mean of its
+# two players:
+#
+#     theta_team = (theta_player_1 + theta_player_2) / 2
+#
+# Therefore, for A/B vs C/D:
+#
+#     p = logistic((((theta_A + theta_B)/2) -
+#                   ((theta_C + theta_D)/2)) / GAME_SCALE)
+#
+# This separates a player's contribution from the particular partner used.
+# Published individual-doubles ratings require 4 doubles appearances.
+#
+# The website's Overall rating is deliberately transparent rather than a
+# second fitted model:
+#
+#     Overall = (Singles Power + Individual Doubles Power) / 2
+#
+# A ranked Overall entry requires 4 singles and 4 doubles appearances.
+# Entries below any publication threshold may still be shown as provisional.
