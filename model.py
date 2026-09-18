@@ -17,8 +17,8 @@ from scipy.special import expit
 GAME_SCALE = 0.75
 HALF_LIFE_DAYS = 365.0
 L2 = 5.0
-DISPLAY_CENTRE = 1000.0
-DISPLAY_SCALE = 250.0
+DISPLAY_CENTRE = 1500.0
+DISPLAY_SCALE = 600.0
 MIN_MATCHES = 4
 
 def prepare(df):
