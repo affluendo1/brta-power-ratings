@@ -48,9 +48,6 @@ jobs:
             echo "NEW_RESULTS=true" >> "$GITHUB_ENV"
           fi
 
-      - name: Recalculate all ratings and website data
-        run: python generate_site_data.py
-
       - name: Write check heartbeat
         shell: bash
         run: |
@@ -71,6 +68,9 @@ jobs:
           }
           Path("data/current/last_check.json").write_text(json.dumps(heartbeat, indent=2) + "\n")
           PY
+
+      - name: Recalculate all ratings and website data
+        run: python generate_site_data.py
 
       - name: Commit check and any regenerated ratings
         shell: bash
