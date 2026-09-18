@@ -1,4 +1,5 @@
-name: Sync BRTA results\n# Public TROLS source sync with validation gates
+name: Sync BRTA results
+# Public TROLS source sync with validation gates
 
 on:
   workflow_dispatch:
