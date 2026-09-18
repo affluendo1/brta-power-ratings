@@ -1,201 +1,71 @@
 <!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Unofficial BRTA opponent-adjusted singles power ratings">
-  <title>BRTA Power Ratings</title>
-  <link rel="stylesheet" href="style.css?v=5">
-</head>
-<body>
-<div class="wrap">
-  <header>
-    <div class="brand">🎾 BRTA Power Ratings</div>
-    <div class="tag">V3 · UNOFFICIAL MODEL</div>
-  </header>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Unofficial BRTA Section 6 power ratings"><title>BRTA Power Ratings</title>
+<link rel="stylesheet" href="style.css?v=7"></head><body><div class="wrap">
+<header><div class="brand">🎾 BRTA Power Ratings</div><div class="tag">V3 · SECTION 6</div></header>
+<section class="hero"><div class="kicker">OPPONENT-ADJUSTED TENNIS ANALYTICS</div><h1>Power, with uncertainty.</h1>
+<p class="muted">Section 6 singles and doubles ratings on a 1500-centred scale. Singles qualify after <b>4 matches</b>; doubles pairings qualify after <b>2 matches</b>. Provisional entries can be revealed in Settings.</p></section>
+<nav class="tabs"><button class="on" data-v="singles">Singles</button><button data-v="doubles">Doubles</button><button data-v="teams">Teams</button><button data-v="method">Methodology</button><button data-v="settings">Settings</button></nav>
+<main>
+<section id="singles"><div class="card"><div class="kicker">SINGLES LEADERBOARD</div><h2>Section 6 · Spring 2026</h2><p id="singlesSub" class="muted"></p>
+<div class="toolbar two"><input id="sq" placeholder="Search player or team…"><select id="steam"><option value="">All teams</option></select></div>
+<div class="band-panel"><div class="band-panel-title"><span>Adaptive performance bands</span><small>Calculated from qualified singles players only</small></div><div id="slegend" class="bandlegend"></div></div>
+<div class="table ratings-table"><table><thead><tr><th>#</th><th>Player</th><th>Team</th><th>Record</th><th>Games</th><th>Game %</th><th>Power</th><th>Uncertainty</th></tr></thead><tbody id="srows"></tbody></table></div>
+<div class="legend muted">Grey rows are provisional and are excluded from rankings and adaptive band calculations. They only appear when enabled in Settings.</div></div></section>
 
-  <section class="hero">
-    <div class="kicker">OPPONENT-ADJUSTED TENNIS ANALYTICS</div>
-    <h1>Power, with uncertainty.</h1>
-    <p class="muted">V3 uses every game in every scoreline, the whole opponent network, real elapsed time and uncertainty-aware shrinkage. The average player in each section is anchored at <b>1500</b>, with a wider display scale so genuinely dominant players can approach 2000. Publication requires at least four completed singles matches.</p>
-  </section>
+<section id="doubles" class="hidden"><div class="card"><div class="kicker">DOUBLES LEADERBOARD</div><h2>Section 6 · Pairing Power</h2><p id="doublesSub" class="muted"></p>
+<div class="toolbar two"><input id="dq" placeholder="Search pairing, player or team…"><select id="dteam"><option value="">All teams</option></select></div>
+<div class="band-panel"><div class="band-panel-title"><span>Adaptive performance bands</span><small>Calculated from pairings with 2+ matches only</small></div><div id="dlegend" class="bandlegend"></div></div>
+<div class="table ratings-table"><table><thead><tr><th>#</th><th>Pairing</th><th>Team</th><th>Record</th><th>Games</th><th>Game %</th><th>Power</th><th>Uncertainty</th></tr></thead><tbody id="drows"></tbody></table></div>
+<div class="legend muted">Each partnership is rated as its own doubles unit. One-match pairings remain in the model network, but are provisional and unranked.</div></div></section>
 
-  <nav class="tabs">
-    <button class="on" data-v="rank">Rankings</button>
-    <button data-v="teams">Teams</button>
-    <button data-v="method">Methodology</button>
-  </nav>
+<section id="teams" class="hidden"><div class="card"><div class="kicker">SINGLES ROSTER STRENGTH</div><h2>Section 6 · Spring 2026</h2><p class="muted">Whole-roster average and best-four use qualified singles players only.</p><div class="grid" id="cards"></div></div>
+<div class="card"><h2>Power order vs real ladder</h2><div class="table"><table><thead><tr><th>Power</th><th>Team</th><th>Average</th><th>Best 4</th><th>Qualified</th><th>Ladder</th></tr></thead><tbody id="teamrows"></tbody></table></div><div class="note" id="note"></div></div></section>
 
-  <main>
-    <section id="rank">
-      <div class="card">
-        <div class="kicker">LEADERBOARD</div>
-        <h2 id="title"></h2>
-        <p id="sub" class="muted"></p>
+<section id="method" class="hidden"><div class="card"><div class="kicker">V3 METHODOLOGY</div><h2>Same engine, two networks</h2>
+<p class="muted">Singles players and doubles pairings are fitted in separate opponent networks using the same V3 scoreline model. A doubles partnership is treated as one rating entity, regardless of the order the two names were entered.</p>
+<div class="method"><div><b>Game probability</b><div class="formula">p(i,j)=1/[1+exp(−(θᵢ−θⱼ)/0.75)]</div></div><div><b>Score likelihood</b><div class="formula">ℒₘ=gᵢ ln(p)+gⱼ ln(1−p)</div></div><div><b>Recency</b><div class="formula">wₘ=2^(−Δdays/365)</div></div><div><b>Display scale</b><div class="formula">Powerᵢ=1500+600θᵢ</div></div><div><b>Singles qualification</b><div class="formula">matches ≥ 4</div></div><div><b>Doubles qualification</b><div class="formula">pairing matches ≥ 2</div></div></div>
+<h3>Adaptive bands</h3><p class="muted">Only qualified entries determine the colour boundaries. Provisional entries can therefore never distort the bands.</p><div class="formula">σ*=1.4826 · median(|Rᵢ−median(R)|)</div>
+<p class="muted">Band boundaries: M + {1.50, 0.75, 0.20, −0.35, −1.00, −1.65}σ*. Provisional entries are always grey even if their estimated rating falls inside a coloured band.</p></div></section>
 
-        <div class="toolbar">
-          <input id="q" placeholder="Search player or team…">
-          <select id="team"><option value="">All teams</option></select>
-          <select id="sec">
-            <option value="section6">Section 6 · Spring 2026</option>
-            <option value="section9">Section 9 · Autumn 2026</option>
-          </select>
-        </div>
-
-        <div class="band-panel">
-          <div class="band-panel-title">
-            <span>Adaptive performance bands</span>
-            <small>Calculated from this section's rating distribution</small>
-          </div>
-          <div id="bandlegend" class="bandlegend"></div>
-        </div>
-
-        <div class="table ratings-table">
-          <table>
-            <thead><tr><th>#</th><th>Player</th><th>Team</th><th>Record</th><th>Games</th><th>Game %</th><th>Power</th><th>Uncertainty</th></tr></thead>
-            <tbody id="players"></tbody>
-          </table>
-        </div>
-
-        <div class="legend muted">Band cut-offs automatically move with the section using its median and median absolute deviation. The colours are descriptive only and do not affect the rating calculation. Uncertainty is ±1 posterior standard deviation; hover it for the approximate 95% interval.</div>
-        <div class="note" id="note"></div>
-      </div>
-    </section>
-
-    <section id="teams" class="hidden">
-      <div class="card">
-        <div class="kicker">ROSTER STRENGTH</div>
-        <h2 id="ttitle"></h2>
-        <p class="muted">Whole-roster average uses every qualified player. Best four uses the four highest-rated qualified singles players. Team averages describe singles strength, not doubles or lineup efficiency.</p>
-        <div class="grid" id="cards"></div>
-      </div>
-      <div class="card">
-        <h2>Power order vs real ladder</h2>
-        <div class="table"><table><thead><tr><th>Power</th><th>Team</th><th>Average</th><th>Best 4</th><th>Qualified</th><th>Ladder</th></tr></thead><tbody id="teamrows"></tbody></table></div>
-      </div>
-    </section>
-
-    <section id="method" class="hidden">
-      <div class="card">
-        <div class="kicker">V3 METHODOLOGY</div>
-        <h2>A smaller, cleaner model</h2>
-        <p class="muted">V2 separately rewarded the game score and the match win. V3 removes that double-counting. A score such as 6–1 already contains the fact that the player won, so the model fits one coherent game-score likelihood and derives match strength from the same latent ability.</p>
-        <div class="method">
-          <div><b>1 · Latent strength</b><p class="muted">Each player has strength θᵢ. Regularization anchors the section, and the fitted mean is centred on zero.</p><div class="formula">Σ θᵢ = 0</div></div>
-          <div><b>2 · Game probability</b><p class="muted">Opponent strength enters through the difference between the two latent ratings.</p><div class="formula">p(i,j)=1/[1+exp(−(θᵢ−θⱼ)/0.75)]</div></div>
-          <div><b>3 · Score likelihood</b><p class="muted">Every game won and lost contributes. A 6–1 therefore carries stronger evidence than a 7–6 without needing a second W/L bonus.</p><div class="formula">ℒₘ = gᵢ ln(p) + gⱼ ln(1−p)</div></div>
-          <div><b>4 · Real-time recency</b><p class="muted">Decay uses actual elapsed days, not round numbers. Development validation selected a 365-day half-life.</p><div class="formula">wₘ = 2^(−Δdays/365)</div></div>
-          <div><b>5 · Empirical-Bayes shrinkage</b><p class="muted">Sparse players are pulled harder toward the section mean. The penalty strength λ=5 was selected by walk-forward validation rather than hand-picked.</p><div class="formula">penalty = (5/2) Σ θᵢ²</div></div>
-          <div><b>6 · Display scale</b><p class="muted">The public scale is deliberately wider: 1500 is the section average and each latent-strength unit is worth 600 rating points. This changes presentation, not the fitted probabilities.</p><div class="formula">Powerᵢ = 1500 + 600θᵢ</div></div>
-          <div><b>7 · Uncertainty</b><p class="muted">The inverse curvature of the fitted posterior gives an approximate variance for each player. More and better-connected evidence narrows it.</p><div class="formula">Cov(θ) ≈ H⁻¹<br>SE(Powerᵢ)=600√(H⁻¹ᵢᵢ)</div></div>
-          <div><b>8 · Opponent reliability</b><p class="muted">Low-data opponents are naturally shrunk toward the section average and carry wider uncertainty, so shaky evidence has less leverage.</p><div class="formula">θᵢ ~ N(0, 1/λ)</div></div>
-        </div>
-        <h3>Adaptive performance bands</h3>
-        <p class="muted">Bands are distribution-relative. For each section the site calculates the median rating M and robust spread σ* = 1.4826 × median(|Rᵢ−M|). Boundaries are placed at M + {1.50, 0.75, 0.20, −0.35, −1.00, −1.65}σ*. The tiers therefore change automatically as new data changes the field.</p>
-        <div class="formula">σ* = 1.4826 · median(|Rᵢ − median(R)|)</div>
-        <h3>Complete objective</h3>
-        <div class="formula">maximize J(θ)=Σₘ wₘ[gᵢ ln pₘ + gⱼ ln(1−pₘ)] − (5/2)Σᵢθᵢ²</div>
-        <h3>Why these constants?</h3>
-        <p class="muted">The half-life and shrinkage were selected with walk-forward development validation across five BRTA section datasets. On those folds V3 reduced held-out per-game negative log loss from <b>0.6640</b> to <b>0.6406</b> and match-outcome Brier score from <b>0.1683</b> to <b>0.1632</b> versus V2. These are development-validation figures, not an external benchmark.</p>
-        <div class="note">Deliberately excluded: subjective excuses, string breaks, nerves, weather, “should have won” points and other context that is not recorded consistently for every player.</div>
-        <p class="muted">Players below four completed singles matches still participate in the opponent network; they are only hidden from the published leaderboard.</p>
-      </div>
-    </section>
-  </main>
-
-  <footer>Unofficial BRTA statistical project · Singles only · Not affiliated with BRTA, Tennis Australia or UTR.</footer>
-</div>
-
-<script src="data.js?v=3"></script>
-<script>
-let S='section6';
-const $=x=>document.querySelector(x);
-const esc=x=>String(x).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+<section id="settings" class="hidden"><div class="card settings-card"><div class="kicker">SETTINGS</div><h2>Leaderboard display</h2>
+<label class="setting-row"><div><strong>Show provisional entries</strong><p>Reveal singles players with fewer than 4 matches and doubles pairings with fewer than 2 matches.</p></div><span class="switch"><input id="showProv" type="checkbox"><span></span></span></label>
+<div class="setting-example"><span class="dash">—</span><div><strong>How provisional rows work</strong><p>They appear in their rating position, but are grey, have no ranking number and do not consume a rank. So #37 → — → #38 stays exactly that.</p></div></div>
+<p class="muted settings-foot">This setting only changes what is displayed. Provisional results still participate in the statistical network so opponents are not thrown away.</p></div></section>
+</main><footer>Unofficial BRTA statistical project · Singles & doubles · Not affiliated with BRTA, Tennis Australia or UTR.</footer></div>
+<script src="data.js?v=5"></script><script>
+const D=DATA.section6, $=x=>document.querySelector(x), esc=x=>String(x).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const BAND_NAMES=['Apex','Elite','Strong','Middle Class','Developing','Weak','Basement'];
-
-function median(values){
-  const a=[...values].sort((x,y)=>x-y), n=a.length;
-  return n%2 ? a[(n-1)/2] : (a[n/2-1]+a[n/2])/2;
+let showProv=localStorage.getItem('brta-show-provisional')==='1';
+function median(v){const a=[...v].sort((x,y)=>x-y),n=a.length;return n%2?a[(n-1)/2]:(a[n/2-1]+a[n/2])/2}
+function bandModel(entries,min){const q=entries.filter(x=>x.matches>=min),r=q.map(x=>x.rating),m=median(r),mad=median(r.map(x=>Math.abs(x-m))),sig=Math.max(1,1.4826*mad),cuts=[m+1.5*sig,m+.75*sig,m+.2*sig,m-.35*sig,m-1*sig,m-1.65*sig];return{cuts,band(r){let k=cuts.findIndex(c=>r>=c);if(k<0)k=6;return{k,name:BAND_NAMES[k],cls:'band-'+k}}}}
+function bounds(b){return['≥ '+Math.round(b.cuts[0]),Math.round(b.cuts[1])+'–'+Math.round(b.cuts[0]-1),Math.round(b.cuts[2])+'–'+Math.round(b.cuts[1]-1),Math.round(b.cuts[3])+'–'+Math.round(b.cuts[2]-1),Math.round(b.cuts[4])+'–'+Math.round(b.cuts[3]-1),Math.round(b.cuts[5])+'–'+Math.round(b.cuts[4]-1),'< '+Math.round(b.cuts[5])]}
+function legend(el,b){const z=bounds(b);$(el).innerHTML=BAND_NAMES.map((n,k)=>'<span class="bandkey band-'+k+'"><i></i><span>'+n+'</span><small>'+z[k]+'</small></span>').join('')}
+function teams(select,entries){const old=$(select).value,ts=[...new Set(entries.map(x=>x.team))].sort();$(select).innerHTML='<option value="">All teams</option>'+ts.map(x=>'<option>'+esc(x)+'</option>').join('');if(ts.includes(old))$(select).value=old}
+function renderBoard(kind){
+ const isS=kind==='singles', entries=D[kind], min=isS?4:2, qSel=isS?'#sq':'#dq',tSel=isS?'#steam':'#dteam',body=isS?'#srows':'#drows',leg=isS?'#slegend':'#dlegend',sub=isS?'#singlesSub':'#doublesSub';
+ const bm=bandModel(entries,min), z=bounds(bm); legend(leg,bm); teams(tSel,entries);
+ const q=$(qSel).value.toLowerCase(),team=$(tSel).value; let qualRank=0,lastBand=-1,rows='',qualified=0,provisional=0;
+ entries.forEach(x=>{
+   const qual=x.matches>=min;if(qual){qualRank++;qualified++}else provisional++;
+   if(!showProv&&!qual)return;
+   if(team&&x.team!==team)return;
+   if(q&&!(x.player+' '+x.team).toLowerCase().includes(q))return;
+   const pct=(100*x.gf/(x.gf+x.ga)).toFixed(1);
+   if(!qual){
+     rows+='<tr class="player-row provisional"><td class="rank dash">—</td><td><b>'+esc(x.player)+'</b><span class="prov-label">PROVISIONAL · '+x.matches+' '+(x.matches===1?'MATCH':'MATCHES')+'</span></td><td>'+esc(x.team)+'</td><td>'+x.wins+'–'+x.losses+'</td><td>'+x.gf+'–'+x.ga+'</td><td>'+pct+'%</td><td class="rating">'+x.rating+'</td><td class="unc" title="Approx. 95% interval: '+x.lo+'–'+x.hi+'">±'+x.se+'</td></tr>';return;
+   }
+   const b=bm.band(x.rating);
+   if(b.k!==lastBand){rows+='<tr class="band-divider '+b.cls+'"><td colspan="8"><div><span class="band-dot"></span><strong>'+b.name+'</strong><span>'+z[b.k]+'</span></div></td></tr>';lastBand=b.k}
+   rows+='<tr class="player-row '+b.cls+'"><td class="rank">'+qualRank+'</td><td><b>'+esc(x.player)+'</b></td><td>'+esc(x.team)+'</td><td>'+x.wins+'–'+x.losses+'</td><td>'+x.gf+'–'+x.ga+'</td><td>'+pct+'%</td><td class="rating">'+x.rating+'</td><td class="unc" title="Approx. 95% interval: '+x.lo+'–'+x.hi+'">±'+x.se+'</td></tr>';
+ });
+ $(body).innerHTML=rows||'<tr><td colspan="8" class="empty">No entries match this filter.</td></tr>';
+ $(sub).textContent=qualified+' qualified '+(isS?'players':'pairings')+(showProv?' · '+provisional+' provisional shown':'');
 }
-function bandModel(players){
-  const ratings=players.map(x=>x.rating);
-  const m=median(ratings);
-  const mad=median(ratings.map(x=>Math.abs(x-m)));
-  const sigma=Math.max(1,1.4826*mad);
-  const cuts=[m+1.50*sigma,m+0.75*sigma,m+0.20*sigma,m-0.35*sigma,m-1.00*sigma,m-1.65*sigma];
-  return {
-    median:m,sigma,cuts,
-    band(rating){
-      let k=cuts.findIndex(c=>rating>=c);
-      if(k<0) k=BAND_NAMES.length-1;
-      return {k,name:BAND_NAMES[k],cls:'band-'+k};
-    }
-  };
-}
-function bandBounds(bm){
-  return [
-    '≥ '+Math.round(bm.cuts[0]),
-    Math.round(bm.cuts[1])+'–'+Math.round(bm.cuts[0]-1),
-    Math.round(bm.cuts[2])+'–'+Math.round(bm.cuts[1]-1),
-    Math.round(bm.cuts[3])+'–'+Math.round(bm.cuts[2]-1),
-    Math.round(bm.cuts[4])+'–'+Math.round(bm.cuts[3]-1),
-    Math.round(bm.cuts[5])+'–'+Math.round(bm.cuts[4]-1),
-    '< '+Math.round(bm.cuts[5])
-  ];
-}
-function renderBandLegend(bm){
-  const bounds=bandBounds(bm);
-  $('#bandlegend').innerHTML=BAND_NAMES.map((name,k)=>
-    '<span class="bandkey band-'+k+'"><i></i><span>'+name+'</span><small>'+bounds[k]+'</small></span>'
-  ).join('');
-}
-function rp(){
-  const d=DATA[S], q=$('#q').value.toLowerCase();
-  let team=$('#team').value;
-  const bm=bandModel(d.players), bounds=bandBounds(bm);
-
-  $('#title').textContent=d.label;
-  $('#sub').textContent=d.subtitle+' · '+d.players.length+' qualified players';
-  $('#note').textContent=d.note;
-  renderBandLegend(bm);
-
-  const teams=[...new Set(d.players.map(x=>x.team))].sort(), old=team;
-  $('#team').innerHTML='<option value="">All teams</option>'+teams.map(x=>'<option>'+esc(x)+'</option>').join('');
-  if(teams.includes(old)) $('#team').value=old;
-  team=$('#team').value;
-
-  const shown=d.players.filter(x=>(!team||x.team===team)&&(!q||(x.player+' '+x.team).toLowerCase().includes(q)));
-  let lastBand=-1, rows='';
-  shown.forEach(x=>{
-    const rank=d.players.indexOf(x)+1;
-    const pct=(100*x.gf/(x.gf+x.ga)).toFixed(1);
-    const b=bm.band(x.rating);
-
-    if(b.k!==lastBand){
-      rows+='<tr class="band-divider '+b.cls+'"><td colspan="8"><div><span class="band-dot"></span><strong>'+b.name+'</strong><span>'+bounds[b.k]+'</span></div></td></tr>';
-      lastBand=b.k;
-    }
-
-    rows+='<tr class="player-row '+b.cls+'"><td class="rank">'+rank+'</td><td><b>'+esc(x.player)+'</b></td><td>'+esc(x.team)+'</td><td>'+x.wins+'–'+x.losses+'</td><td>'+x.gf+'–'+x.ga+'</td><td>'+pct+'%</td><td class="rating">'+x.rating+'</td><td class="unc" title="Approx. 95% interval: '+x.lo+'–'+x.hi+'">±'+x.se+'</td></tr>';
-  });
-  $('#players').innerHTML=rows || '<tr><td colspan="8" class="empty">No players match this filter.</td></tr>';
-}
-function rt(){
-  const d=DATA[S];
-  $('#ttitle').textContent=d.label;
-  $('#cards').innerHTML=d.teams.map((x,i)=>'<div class="team"><span class="muted">#'+(i+1)+' POWER</span><h3>'+esc(x.team)+'</h3><b>'+x.avg.toFixed(1)+'</b><span class="muted">Best four '+x.best4.toFixed(1)+'</span></div>').join('');
-  $('#teamrows').innerHTML=d.teams.map((x,i)=>'<tr><td>'+(i+1)+'</td><td><b>'+esc(x.team)+'</b></td><td class="rating">'+x.avg.toFixed(1)+'</td><td>'+x.best4.toFixed(1)+'</td><td>'+x.qualified+'</td><td>'+(x.ladder??'—')+'</td></tr>').join('');
-}
-document.querySelectorAll('.tabs button').forEach(b=>b.onclick=()=>{
-  document.querySelectorAll('.tabs button').forEach(x=>x.classList.toggle('on',x===b));
-  ['rank','teams','method'].forEach(x=>$('#'+x).classList.toggle('hidden',x!==b.dataset.v));
-  if(b.dataset.v==='teams') rt();
-});
-$('#sec').onchange=e=>{S=e.target.value;rp();rt()};
-$('#q').oninput=rp;
-$('#team').onchange=rp;
-rp();
-rt();
-</script>
-</body>
-</html>
+function renderTeams(){ $('#cards').innerHTML=D.teams.map((x,i)=>'<div class="team"><span class="muted">#'+(i+1)+' POWER</span><h3>'+esc(x.team)+'</h3><b>'+x.avg.toFixed(1)+'</b><span class="muted">Best four '+x.best4.toFixed(1)+'</span></div>').join('');$('#teamrows').innerHTML=D.teams.map((x,i)=>'<tr><td>'+(i+1)+'</td><td><b>'+esc(x.team)+'</b></td><td class="rating">'+x.avg.toFixed(1)+'</td><td>'+x.best4.toFixed(1)+'</td><td>'+x.qualified+'</td><td>'+x.ladder+'</td></tr>').join('');$('#note').textContent=D.note}
+function renderAll(){renderBoard('singles');renderBoard('doubles');renderTeams()}
+document.querySelectorAll('.tabs button').forEach(b=>b.onclick=()=>{document.querySelectorAll('.tabs button').forEach(x=>x.classList.toggle('on',x===b));['singles','doubles','teams','method','settings'].forEach(x=>$('#'+x).classList.toggle('hidden',x!==b.dataset.v))});
+['#sq','#dq'].forEach(x=>$(x).oninput=()=>renderBoard(x==='#sq'?'singles':'doubles'));['#steam','#dteam'].forEach(x=>$(x).onchange=()=>renderBoard(x==='#steam'?'singles':'doubles'));
+$('#showProv').checked=showProv;$('#showProv').onchange=e=>{showProv=e.target.checked;localStorage.setItem('brta-show-provisional',showProv?'1':'0');renderAll()};
+renderAll();
+</script></body></html>
