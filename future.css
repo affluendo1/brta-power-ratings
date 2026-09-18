@@ -52,3 +52,28 @@ body{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-seri
 @keyframes futureBoot{from{opacity:0}to{opacity:1}}@keyframes dropIn{from{opacity:0;transform:translateY(-10px)}to{opacity:1;transform:none}}@keyframes riseIn{from{opacity:0;transform:translateY(11px)}to{opacity:1;transform:none}}@keyframes panelIn{from{opacity:0;transform:translateY(8px) scale(.995)}to{opacity:1;transform:none}}@keyframes backdropIn{from{opacity:0}to{opacity:1}}@keyframes sheetIn{from{opacity:.35;transform:translateX(48px)}to{opacity:1;transform:none}}@keyframes modalIn{from{opacity:0;transform:translate(-50%,-48%) scale(.98)}to{opacity:1;transform:translate(-50%,-50%) scale(1)}}
 @media(max-width:500px){.profile-sheet,.settings-sheet,.round-sheet{animation:mobileSheetIn .28s ease both}}@keyframes mobileSheetIn{from{opacity:.4;transform:translateY(18px)}to{opacity:1;transform:none}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+
+/* Original futuristic rating-table presentation, intentionally distinct from Classic. */
+html,body{min-height:100%;background-color:var(--bg)}
+#page-ratings .table-wrap{overflow:auto;border:1px solid var(--border);border-radius:14px}
+#page-ratings table{width:100%;border-collapse:collapse;min-width:800px;font-size:15px}
+#page-ratings th,#page-ratings td{padding:11px 12px;border:0;border-bottom:1px solid color-mix(in srgb,var(--border) 78%,transparent);text-align:left;white-space:nowrap}
+#page-ratings th{font-size:11px;color:var(--muted);text-transform:uppercase;background:color-mix(in srgb,var(--panel) 76%,#07120d 24%);letter-spacing:.035em}
+#page-ratings table th:nth-child(2),#page-ratings table td:nth-child(2){min-width:0}
+#page-ratings .rating{color:var(--neon);font-weight:900;font-variant-numeric:tabular-nums}
+#page-ratings .unc{color:color-mix(in srgb,var(--text) 78%,var(--muted));font-variant-numeric:tabular-nums}
+#page-ratings .player-row{background:linear-gradient(90deg,color-mix(in srgb,var(--band-color,#8c959d) 10%,transparent),transparent 34%)}
+#page-ratings .player-row td:first-child{border-left:4px solid var(--band-color,#8c959d)}
+#page-ratings .player-row .rank{color:var(--band-color,#8c959d)}
+#page-ratings .player-row.b0{--band-color:#ffd54a}#page-ratings .player-row.b1{--band-color:#b794ff}#page-ratings .player-row.b2{--band-color:#64e394}#page-ratings .player-row.b3{--band-color:#62b7ff}#page-ratings .player-row.b4{--band-color:#aab7c4}#page-ratings .player-row.b5{--band-color:#ff9f52}#page-ratings .player-row.b6{--band-color:#ff6b73}
+#page-ratings .band-divider td{padding:0!important;border:0!important;background:color-mix(in srgb,var(--panel) 86%,#07120d 14%)!important}
+#page-ratings .band-divider div{display:flex;align-items:center;gap:9px;padding:8px 12px;margin-top:5px;border-left:0;background:linear-gradient(90deg,color-mix(in srgb,var(--band-color) 14%,transparent),transparent);border-block:1px solid color-mix(in srgb,var(--band-color) 35%,transparent)}
+#page-ratings .band-divider.b0{--band-color:#ffd54a}#page-ratings .band-divider.b1{--band-color:#b794ff}#page-ratings .band-divider.b2{--band-color:#64e394}#page-ratings .band-divider.b3{--band-color:#62b7ff}#page-ratings .band-divider.b4{--band-color:#aab7c4}#page-ratings .band-divider.b5{--band-color:#ff9f52}#page-ratings .band-divider.b6{--band-color:#ff6b73}
+#page-ratings .band-divider i{width:8px;height:8px;border-radius:50%;background:var(--band-color);box-shadow:none}
+#page-ratings .band-divider b{font-size:11px;text-transform:uppercase;letter-spacing:.11em;color:var(--band-color)}
+#page-ratings .band-divider span{margin-left:auto;font-size:11px;color:var(--muted)}
+#page-ratings .future-pair{white-space:nowrap}.future-pair .person{font-weight:850}.pair-slash{color:var(--muted)}
+#page-ratings tr.provisional,#page-ratings tr.provisional:nth-child(even),#page-ratings tr.provisional:hover{--band-color:#6f7b75;background:linear-gradient(90deg,rgba(150,160,155,.08),transparent 38%)!important;color:#89958f!important;opacity:.78}
+#page-ratings tr.provisional td{color:#89958f!important;border-bottom-color:color-mix(in srgb,var(--border) 70%,transparent)!important}
+#page-ratings tr.provisional .person,#page-ratings tr.provisional .rating,#page-ratings tr.provisional b{color:#89958f!important}
+@media(max-width:760px){#page-ratings table{min-width:800px}#page-ratings th,#page-ratings td{padding:10px 11px}}
