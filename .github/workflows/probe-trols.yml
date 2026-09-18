@@ -1,7 +1,9 @@
-name: Probe TROLS\n# probe revision 2
+name: Probe TROLS
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: "*/5 * * * *"
   push:
     paths:
       - "scraper/probe_trols.py"
