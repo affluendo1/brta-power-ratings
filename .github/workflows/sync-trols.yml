@@ -30,10 +30,10 @@ jobs:
       - name: Fetch and validate TROLS results
         run: python scraper/sync_trols.py
       - name: Show changes
-        run: git diff --stat && git diff -- data/current/sync_status.json || true
+        run: git status --short data/current && git diff --stat -- data/current || true
       - name: Commit updated results
         run: |
-          if git diff --quiet -- data/current; then
+          if [ -z "$(git status --porcelain -- data/current)" ]; then
             echo "TROLS has no result changes."
             exit 0
           fi
