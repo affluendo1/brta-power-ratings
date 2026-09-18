@@ -1,0 +1,45 @@
+name: Sync BRTA results
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/5 * * * *"
+  push:
+    paths:
+      - "scraper/sync_trols.py"
+      - ".github/workflows/sync-trols.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: brta-results-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install scraper dependencies
+        run: pip install requests beautifulsoup4
+      - name: Fetch and validate TROLS results
+        run: python scraper/sync_trols.py
+      - name: Show changes
+        run: git diff --stat && git diff -- data/current/sync_status.json || true
+      - name: Commit updated results
+        run: |
+          if git diff --quiet -- data/current; then
+            echo "TROLS has no result changes."
+            exit 0
+          fi
+          git config user.name "brta-ratings-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/current
+          ROUND=$(python -c "import json; print(json.load(open('data/current/sync_status.json'))['latest_round'])")
+          git commit -m "Auto-sync BRTA Section 6 through Round $ROUND"
+          git push
