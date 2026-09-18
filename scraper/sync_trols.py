@@ -48,7 +48,7 @@ def clean_team(s: str) -> str:
 def clean_name(s: str) -> str:
     s = clean_text(s)
     s = re.sub(r"^\d+\.\s*", "", s)
-    s = re.sub(r"^(?:E\\s+)?(?:X\\s+)?\\d+\\.\\s*", "", s)
+    s = re.sub(r"^(?:E\s+)?(?:X\s+)?\d+\.\s*", "", s)
     return ALIASES.get(s, s)
 
 def direct_cells(tr):
