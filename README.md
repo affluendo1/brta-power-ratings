@@ -44,3 +44,19 @@ What-if scoreline experiments are excluded from the baseline site.
 ## Note
 
 This is an unofficial statistical project and is not affiliated with BRTA, Tennis Australia or UTR.
+
+
+## Automatic TROLS sync
+
+The repository now fetches the public BRTA Sunday AM Spring 2026 / Sets 6 results directly from TROLS.
+
+- Scraper: `scraper/sync_trols.py`
+- Workflow: `.github/workflows/sync-trols.yml`
+- Current source data: `data/current/`
+- Runs Sunday, Monday and Wednesday at 7:17 PM Australia/Melbourne time
+- Can also be run manually from GitHub Actions
+- Re-downloads the whole section so late entries and score corrections are detected
+- Validates fixture/rubber counts before allowing repository data to be replaced
+- Commits only when the result CSVs actually change
+
+The sync currently maintains the raw fixture, singles and doubles CSVs. Website rating regeneration from those CSVs is a separate pipeline step.
