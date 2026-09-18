@@ -60,3 +60,22 @@ The repository now fetches the public BRTA Sunday AM Spring 2026 / Sets 6 result
 - Commits only when the result CSVs actually change
 
 The sync currently maintains the raw fixture, singles and doubles CSVs. Website rating regeneration from those CSVs is a separate pipeline step.
+
+
+## Automatic site regeneration
+
+Every TROLS check now runs the full data pipeline:
+
+1. Fetch and validate the complete public Section 6 fixture, singles and doubles data.
+2. Refit V3 singles ratings.
+3. Refit recurring doubles-pair ratings.
+4. Refit partner-adjusted individual doubles ratings.
+5. Rebuild team power, ladder points, Player Lab match data and the latest-round overview.
+6. Regenerate `data.js`.
+7. Commit and push the result so GitHub Pages republishes automatically.
+
+The generator is `generate_site_data.py`.
+
+The workflow also commits `data/current/last_check.json` on every scheduled check. This intentionally creates a small heartbeat push even when TROLS has not changed, allowing GitHub's built-in repository push-email notifications to report every check. Result-change commits use the message `NEW BRTA RESULTS OUT: ...`; no-change checks use `TROLS check: no new results ...`.
+
+The site header includes a Latest Round button. Its overlay is generated from the newest published round and includes all four fixtures plus top performance, biggest upset, most dominant singles win and closest singles result.
