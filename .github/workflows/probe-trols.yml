@@ -1,0 +1,32 @@
+name: Probe TROLS
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "scraper/probe_trols.py"
+      - ".github/workflows/probe-trols.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install playwright
+      - run: python -m playwright install --with-deps chromium
+      - name: Probe TROLS
+        run: python scraper/probe_trols.py
+      - name: Upload probe output
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: trols-probe
+          path: debug/trols
+          if-no-files-found: warn
