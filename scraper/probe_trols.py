@@ -77,6 +77,19 @@ async def main():
         if picked_section:
             await page.wait_for_timeout(2000)
             await dump(page, "02-section6")
+            try:
+                fn = await page.evaluate("open_match.toString()")
+                print("OPEN_MATCH_FUNCTION:", fn)
+                (OUT / "open_match.js").write_text(fn, encoding="utf-8")
+            except Exception as e:
+                print("Could not inspect open_match:", e)
+            # Open one known completed scorecard so we can inspect its DOM.
+            try:
+                await page.locator("a[onclick*='UA009094']").click()
+                await page.wait_for_timeout(1500)
+                await dump(page, "03-scorecard")
+            except Exception as e:
+                print("Could not open sample scorecard:", e)
 
         # Save cookies because they reveal which state TROLS uses.
         (OUT / "cookies.json").write_text(json.dumps(await context.cookies(), indent=2), encoding="utf-8")
