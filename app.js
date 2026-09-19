@@ -21,6 +21,22 @@ function resultPerson(name,label=name){const known=singles.some(x=>x.player===na
 function close(id){$(id).classList.add('hidden');if(!$$('.overlay:not(.hidden)').length)document.body.classList.remove('modal-open')}
 function switchPage(page){$$('.main-tab').forEach(b=>b.classList.toggle('active',b.dataset.page===page));$$('.page').forEach(p=>p.classList.toggle('active',p.id==='page-'+page))}
 
+function csvCell(value){const text=String(value??'');return'"'+text.replace(/"/g,'""')+'"'}
+function exportSectionCSV(){
+  if(!D?.meta)return;
+  const header=['record_type','competition','section','fixture_id','date','round','status','home_team','away_team','home_points','away_points','home_rubbers','away_rubbers','home_games','away_games','rubber_type','rubber_position','home_players','away_players','winner','score'];
+  const rows=[header];
+  for(const round of D.results||[])for(const fixture of round.fixtures||[]){
+    const base=['Fixture',D.meta.competition_label,D.meta.section_label,fixture.fixtureId,fixture.date??round.date,fixture.round??round.round,fixture.status,fixture.home,fixture.away,fixture.homePoints,fixture.awayPoints,fixture.homeRubbers,fixture.awayRubbers,fixture.homeGames,fixture.awayGames,'','','','','',''];
+    rows.push(base);
+    for(const rubber of fixture.rubbers||[])rows.push(['Rubber',D.meta.competition_label,D.meta.section_label,fixture.fixtureId,fixture.date??round.date,fixture.round??round.round,fixture.status,fixture.home,fixture.away,fixture.homePoints,fixture.awayPoints,fixture.homeRubbers,fixture.awayRubbers,fixture.homeGames,fixture.awayGames,rubber.type,rubber.position,rubber.home,rubber.away,rubber.winner,rubber.score]);
+  }
+  const csv=rows.map(row=>row.map(csvCell).join(',')).join('\r\n');
+  const filename=(D.meta.competition_label+'-'+D.meta.section_label+'-results').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'')+'.csv';
+  const url=URL.createObjectURL(new Blob(['\ufeff'+csv],{type:'text/csv;charset=utf-8'})),link=document.createElement('a');
+  link.href=url;link.download=filename;document.body.appendChild(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);
+}
+
 function setupSelectors(){
   const comps=[...new Map(DATA.catalog.map(x=>[x.competition_code,x.competition_label])).entries()];
   const saved=localStorage.getItem('brta-section'),available=DATA.catalog.some(x=>x.section_code===saved);
@@ -113,7 +129,7 @@ $$('.main-tab').forEach(b=>b.onclick=()=>switchPage(b.dataset.page));
 $$('.subtab').forEach(b=>b.onclick=()=>{ratingView=b.dataset.rating;$$('.subtab').forEach(x=>x.classList.toggle('active',x===b));renderRatings()});
 $('#competitionSelect').onchange=e=>{fillSections(e.target.value);loadSection($('#sectionSelect').value)};
 $('#sectionSelect').onchange=e=>loadSection(e.target.value);
-$('#search').oninput=renderRatings;$('#teamFilter').onchange=renderRatings;$('#roundBtn').onclick=openRound;$('#settingsBtn').onclick=openSettings;
+$('#search').oninput=renderRatings;$('#teamFilter').onchange=renderRatings;$('#roundBtn').onclick=openRound;$('#settingsBtn').onclick=openSettings;$('#exportSectionBtn').onclick=exportSectionCSV;
 $('#profileClose').onclick=()=>close('#profileOverlay');$('#roundClose').onclick=()=>close('#roundOverlay');$('#settingsClose').onclick=()=>close('#settingsOverlay');$('#resultClose').onclick=()=>close('#resultOverlay');
 document.addEventListener('keydown',e=>{if(e.key==='Escape')$$('.overlay:not(.hidden)').forEach(o=>close('#'+o.id))});
 setupSelectors();showSyncToast();loadSection($('#sectionSelect').value);
