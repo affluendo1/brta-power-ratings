@@ -111,6 +111,9 @@ html[data-theme="dark"][data-accent="blue"]{--neon:#78baff}html[data-theme="dark
 /* Keep the header clear of iPhone's Dynamic Island and status indicators. */
 @supports(padding-top:max(1px,env(safe-area-inset-top))){.site-header{padding-top:max(14px,calc(14px + env(safe-area-inset-top)))}}
 
+/* Full-screen mobile sheets must start below iPhone's status/Dynamic Island area. */
+@supports(padding-top:max(1px,env(safe-area-inset-top))){@media(max-width:760px){.profile-sheet,.settings-sheet,.round-sheet,.result-sheet{padding-top:calc(18px + env(safe-area-inset-top));padding-bottom:calc(18px + env(safe-area-inset-bottom))}}}
+
 /* Futuristic colour schemes: a selection changes the entire visual environment,
    not only the highlight colour. The light/dark setting still controls contrast. */
 html[data-accent="blue"]{--bg:#edf5ff;--panel:#fbfdff;--text:#10233d;--muted:#61748c;--border:#bed0e6;--header:#123f78;--header2:#092852;--link:#176ac7;--soft:#f1f7ff;--good:#1571c9;--warn:#96650f;--bad:#b74151;--row:#f4f8fd;--shadow:0 8px 28px rgba(22,78,142,.12);--neon:#2d91ff}
