@@ -54,3 +54,6 @@ html[data-theme="dark"]{--bg:#171b20;--panel:#22272e;--text:#e7eaed;--muted:#a5a
 
 /* Keep the header clear of iPhone's Dynamic Island and status indicators. */
 @supports(padding-top:max(1px,env(safe-area-inset-top))){.site-header{padding-top:max(14px,calc(14px + env(safe-area-inset-top)))}}
+
+/* Full-screen mobile sheets must start below iPhone's status/Dynamic Island area. */
+@supports(padding-top:max(1px,env(safe-area-inset-top))){@media(max-width:760px){.profile-sheet,.settings-sheet,.round-sheet,.result-sheet{padding-top:calc(18px + env(safe-area-inset-top));padding-bottom:calc(18px + env(safe-area-inset-bottom))}}}
