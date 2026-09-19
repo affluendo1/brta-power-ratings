@@ -16,10 +16,10 @@ from model import (
 )
 
 DATA_DIR = Path("data/current")
-SINGLES_CSV = DATA_DIR / "section6_singles_results.csv"
-DOUBLES_CSV = DATA_DIR / "section6_doubles_results.csv"
-FIXTURES_CSV = DATA_DIR / "section6_fixtures.csv"
+SECTIONS_DIR = DATA_DIR / "sections"
+SITE_SECTIONS_DIR = Path("data/site/sections")
 OUT = Path("data.js")
+DEFAULT_SECTION = "UA009"
 INDIVIDUAL_DOUBLES_MIN = 4
 INDIVIDUAL_DOUBLES_MIN_PARTNERS = 2
 # A player whose loading on an exact unidentifiable direction exceeds this is
@@ -44,7 +44,7 @@ def parse_dates(df):
     out = df.copy()
     out["match_date"] = pd.to_datetime(out["date"], format="%d %b %y", errors="coerce")
     if out["match_date"].isna().any():
-        raise ValueError("All current Section 6 rows should have real dates")
+        raise ValueError("All published rating rows must have real dates")
     return out
 
 
@@ -112,14 +112,14 @@ def fit_pairs(doubles):
     x=doubles.copy()
     x["home_player"]=x["home_pair"].map(canonical_pair)
     x["away_player"]=x["away_pair"].map(canonical_pair)
-    x["winning_player"]=np.where(
-        pd.to_numeric(x["home_games"])>pd.to_numeric(x["away_games"]),
-        x["home_player"],x["away_player"]
-    )
+    x["winning_player"]=x["winning_pair"].map(canonical_pair)
     return fit_power_ratings_from_df(x)
 
 def fit_power_ratings_from_df(df):
-    df=parse_dates(df[df["status"].eq("Completed")].copy())
+    df=df[df["status"].eq("Completed")].copy()
+    if "valid_for_rating" in df:
+        df=df[df["valid_for_rating"].astype(str).str.casefold().isin({"true","1","yes"})].copy()
+    df=parse_dates(df)
     players=sorted(set(df["home_player"])|set(df["away_player"]))
     ix={p:k for k,p in enumerate(players)}; n=len(players)
     i=df["home_player"].map(ix).to_numpy(); j=df["away_player"].map(ix).to_numpy()
@@ -151,14 +151,17 @@ def fit_power_ratings_from_df(df):
             home=r.home_player==player
             gf+=int(r.home_games if home else r.away_games)
             ga+=int(r.away_games if home else r.home_games)
-            wins+=int((home and r.home_games>r.away_games) or ((not home) and r.away_games>r.home_games))
+            wins+=int(str(r.winning_player)==player)
         rows.append(dict(player=player,matches=len(m),wins=wins,losses=len(m)-wins,
                          games_for=gf,games_against=ga,power=power[k],power_se=se[k],
                          ci95_low=power[k]-1.96*se[k],ci95_high=power[k]+1.96*se[k]))
     return pd.DataFrame(rows).sort_values("power",ascending=False)
 
 def fit_individual_doubles(doubles):
-    df=parse_dates(doubles[doubles["status"].eq("Completed")].copy())
+    df=doubles[doubles["status"].eq("Completed")].copy()
+    if "valid_for_rating" in df:
+        df=df[df["valid_for_rating"].astype(str).str.casefold().isin({"true","1","yes"})].copy()
+    df=parse_dates(df)
     home_members=[pair_members(x) for x in df.home_pair]
     away_members=[pair_members(x) for x in df.away_pair]
     players=sorted(set(sum(home_members+away_members,[])))
@@ -189,7 +192,7 @@ def fit_individual_doubles(doubles):
     cov=centred_covariance(np.linalg.inv(H)); se=DISPLAY_SCALE*np.sqrt(np.diag(cov))
     stats={p:dict(matches=0,wins=0,gf=0,ga=0,partners=set()) for p in players}
     for row,r in df.reset_index(drop=True).iterrows():
-        home_win=int(r.home_games)>int(r.away_games)
+        home_win=canonical_pair(r.winning_pair)==canonical_pair(r.home_pair)
         for p0 in home_members[row]:
             s=stats[p0]; s["matches"]+=1; s["wins"]+=int(home_win); s["gf"]+=int(r.home_games); s["ga"]+=int(r.away_games)
             s["partners"].add(next(p for p in home_members[row] if p != p0))
@@ -228,7 +231,10 @@ def fit_pair_synergies(doubles, individual_ratings):
     reassigning individual ability to one-off partnerships and is published as
     an exploratory signal only.
     """
-    df=parse_dates(doubles[doubles["status"].eq("Completed")].copy())
+    df=doubles[doubles["status"].eq("Completed")].copy()
+    if "valid_for_rating" in df:
+        df=df[df["valid_for_rating"].astype(str).str.casefold().isin({"true","1","yes"})].copy()
+    df=parse_dates(df)
     df["home_key"]=df["home_pair"].map(canonical_pair)
     df["away_key"]=df["away_pair"].map(canonical_pair)
     pairs=sorted(set(df.home_key)|set(df.away_key))
@@ -259,21 +265,15 @@ def singles_match_array(singles):
     out=[]
     for _,r in singles.sort_values(["round","fixture_id","position"]).iterrows():
         out.append([int(r["round"]),str(r["date"]),str(r["home_player"]),str(r["away_player"]),
-                    int(r["home_games"]),int(r["away_games"])])
+                    int(r["home_games"]),int(r["away_games"]),str(r["winning_player"]),str(r["score"]),str(r["fixture_id"])])
     return out
 
 def ladder(fixtures):
     pts=Counter()
     for _,r in fixtures.iterrows():
         h,a=str(r.home_team),str(r.away_team); status=str(r.status)
-        if status=="Wash Out":
-            pts[h]+=5; pts[a]+=5; continue
         if status!="Completed": continue
-        hr,ar=int(r.home_rubbers),int(r.away_rubbers); hg,ag=int(r.home_games),int(r.away_games)
-        pts[h]+=hr; pts[a]+=ar
-        if hr>ar or (hr==ar and hg>ag): pts[h]+=4
-        elif ar>hr or (hr==ar and ag>hg): pts[a]+=4
-        else: pts[h]+=2; pts[a]+=2
+        pts[h]+=float(r.home_points); pts[a]+=float(r.away_points)
     return pts
 
 def team_rows(single_rows, fixtures):
@@ -282,23 +282,28 @@ def team_rows(single_rows, fixtures):
         # Team Power measures the active modelled roster, not only the public
         # leaderboard.  Low-sample ratings are already shrunk toward 1500.
         by[x["team"]].append(x["rating"])
-    all_teams=sorted(set(fixtures.home_team)|set(fixtures.away_team))
+    all_teams=sorted((set(fixtures.home_team)|set(fixtures.away_team))-{"Bye"})
     rows=[]
     for t in all_teams:
         vals=by.get(t,[])
         avg=float(np.mean(vals)) if vals else 0.0
         best4=float(np.mean(sorted(vals,reverse=True)[:4])) if vals else 0.0
-        rows.append({"team":t,"avg":round(avg,1),"best4":round(best4,1),"modelled":len(vals),"ladder":int(pts[t])})
+        ladder_points=float(pts[t])
+        rows.append({"team":t,"avg":round(avg,1),"best4":round(best4,1),"modelled":len(vals),
+                     "ladder":int(ladder_points) if ladder_points.is_integer() else ladder_points})
     return sorted(rows,key=lambda x:x["avg"],reverse=True)
 
 def reconstructed_standings(fixtures):
-    teams = sorted(set(fixtures.home_team) | set(fixtures.away_team))
+    teams = sorted((set(fixtures.home_team) | set(fixtures.away_team))-{"Bye"})
     s = {t: dict(team=t, played=0, wins=0, draws=0, losses=0, rubbersFor=0, rubbersAgainst=0,
                  gamesFor=0, gamesAgainst=0, points=0) for t in teams}
+    completed_totals=[float(r.home_points)+float(r.away_points) for _,r in fixtures.iterrows() if str(r.status)=="Completed"]
+    washout_points=(Counter(completed_totals).most_common(1)[0][0]/2) if completed_totals else 0
     for _, r in fixtures.iterrows():
         h, a, status = str(r.home_team), str(r.away_team), str(r.status)
+        if h=="Bye" or a=="Bye": continue
         if status == "Wash Out":
-            s[h]["points"] += 5; s[a]["points"] += 5
+            s[h]["points"] += washout_points; s[a]["points"] += washout_points
             continue
         if status != "Completed":
             continue
@@ -309,53 +314,39 @@ def reconstructed_standings(fixtures):
         s[a]["rubbersFor"] += ar; s[a]["rubbersAgainst"] += hr
         s[h]["gamesFor"] += hg; s[h]["gamesAgainst"] += ag
         s[a]["gamesFor"] += ag; s[a]["gamesAgainst"] += hg
-        s[h]["points"] += hr; s[a]["points"] += ar
+        s[h]["points"] += float(r.home_points); s[a]["points"] += float(r.away_points)
         home_win = hr > ar or (hr == ar and hg > ag)
         away_win = ar > hr or (hr == ar and ag > hg)
         if home_win:
-            s[h]["wins"] += 1; s[a]["losses"] += 1; s[h]["points"] += 4
+            s[h]["wins"] += 1; s[a]["losses"] += 1
         elif away_win:
-            s[a]["wins"] += 1; s[h]["losses"] += 1; s[a]["points"] += 4
+            s[a]["wins"] += 1; s[h]["losses"] += 1
         else:
             s[h]["draws"] += 1; s[a]["draws"] += 1
-            s[h]["points"] += 2; s[a]["points"] += 2
+    for row in s.values():
+        if float(row["points"]).is_integer(): row["points"]=int(row["points"])
     return sorted(s.values(), key=lambda x: (-x["points"], -(x["rubbersFor"]-x["rubbersAgainst"]),
                                              -(x["gamesFor"]-x["gamesAgainst"]), x["team"]))
 
-ROUND_DATES = {
-    10: "11 Oct 26", 11: "18 Oct 26", 12: "25 Oct 26",
-    13: "8 Nov 26", 14: "15 Nov 26",
-}
+def upcoming_fixtures(draw, fixtures):
+    completed={str(r.fixture_id) for _,r in fixtures.iterrows() if str(r.status)=="Completed"}
+    latest_published_round=max(int(value) for value in fixtures["round"])
+    result_by_key={(int(r["round"]),str(r.home_team),str(r.away_team)):str(r.fixture_id) for _,r in fixtures.iterrows()}
+    by_round=defaultdict(list)
+    for _,r in draw.iterrows():
+        if int(r["round"]) <= latest_published_round: continue
+        fid=str(r.fixture_id) if pd.notna(r.fixture_id) else ""
+        fid=fid if fid and fid!="nan" else result_by_key.get((int(r["round"]),str(r.home_team),str(r.away_team)),"")
+        if fid in completed: continue
+        by_round[int(r["round"])].append({"home":str(r.home_team),"away":str(r.away_team),"fixtureId":fid or str(r.draw_id)})
+    return [{"round":rnd,"date":str(draw[draw["round"].astype(int).eq(rnd)].iloc[0]["date"]),
+             "fixtures":games,"source":"official TROLS draw"} for rnd,games in sorted(by_round.items())]
 
-def upcoming_fixtures(fixtures):
-    by_round = defaultdict(list)
-    for _, r in fixtures.iterrows():
-        by_round[int(r["round"])].append((str(r.home_team), str(r.away_team)))
-    # Validate the double-round-robin pattern using the already-published R8/R9.
-    # If R8 == reversed R1 and R9 == reversed R2, the remaining return fixtures
-    # are deterministically R3-R7 with home/away swapped.
-    def norm(xs): return sorted(xs)
-    verified = all(
-        norm(by_round.get(r + 7, [])) == norm([(a, h) for h, a in by_round.get(r, [])])
-        for r in (1, 2)
-    )
-    if not verified:
-        return []
-    latest = max(by_round)
-    out = []
-    for rnd in range(latest + 1, 15):
-        source = rnd - 7
-        games = [{"home": a, "away": h} for h, a in by_round.get(source, [])]
-        if len(games) == 4:
-            out.append({"round": rnd, "date": ROUND_DATES.get(rnd, ""), "fixtures": games,
-                        "source": "reconstructed from verified reverse draw"})
-    return out
-
-def sync_meta():
+def sync_meta(metadata, fixtures):
     status = json.loads((DATA_DIR / "sync_status.json").read_text()) if (DATA_DIR / "sync_status.json").exists() else {}
     check = json.loads((DATA_DIR / "last_check.json").read_text()) if (DATA_DIR / "last_check.json").exists() else {}
     updated = None
-    raw = status.get("results_loaded_by_trols")
+    raw = metadata.get("results_loaded_by_trols")
     if raw:
         try:
             cleaned = raw.replace("st ", " ").replace("nd ", " ").replace("rd ", " ").replace("th ", " ")
@@ -366,10 +357,10 @@ def sync_meta():
     return {
         "checkedAt": check.get("checked_at_utc") or status.get("synced_at_utc"),
         "updatedAt": updated,
-        "latestRound": status.get("latest_round"),
-        "validation": status.get("validation"),
+        "latestRound": metadata.get("latest_round"),
+        "validation": metadata.get("validation"),
         "newResultsLastCheck": bool(check.get("new_results", False)),
-        "missingFixtures": int(sum(1 for _, r in pd.read_csv(FIXTURES_CSV).iterrows() if str(r.status) == "Missing Result")),
+        "missingFixtures": int(sum(1 for _, r in fixtures.iterrows() if str(r.status) == "Missing Result")),
         "resultsLoadedByTrols": raw,
     }
 
@@ -380,7 +371,7 @@ def round_overview(fixtures, singles, rating_map):
     sr=singles[singles["round"].astype(int).eq(latest)].copy()
     fixture_cards=[]
     for _,r in fx.iterrows():
-        card={"home":str(r.home_team),"away":str(r.away_team),"status":str(r.status)}
+        card={"fixtureId":str(r.fixture_id),"home":str(r.home_team),"away":str(r.away_team),"status":str(r.status)}
         if str(r.status)=="Completed":
             card.update({"homeRubbers":int(r.home_rubbers),"awayRubbers":int(r.away_rubbers),
                          "homeGames":int(r.home_games),"awayGames":int(r.away_games)})
@@ -393,7 +384,9 @@ def round_overview(fixtures, singles, rating_map):
     performances=[]; upsets=[]
     for _,r in sr.iterrows():
         hp,ap=str(r.home_player),str(r.away_player); hg,ag=int(r.home_games),int(r.away_games)
-        winner,loser=(hp,ap) if hg>ag else (ap,hp); gf,ga=(hg,ag) if hg>ag else (ag,hg)
+        winner=str(r.winning_player)
+        loser=ap if winner==hp else hp
+        gf,ga=(hg,ag) if winner==hp else (ag,hg)
         wr,lr=rating_map.get(winner,1500),rating_map.get(loser,1500)
         perf=round(lr+450*math.log((gf+.5)/(ga+.5)))
         item={"winner":winner,"loser":loser,"score":f"{gf}–{ga}","winnerRating":wr,"loserRating":lr,
@@ -408,15 +401,40 @@ def round_overview(fixtures, singles, rating_map):
     return {"round":latest,"date":date,"fixtures":fixture_cards,"topPerformance":top,
             "biggestUpset":upset,"dominantWin":dominant,"closestMatch":closest}
 
-def main():
-    singles=pd.read_csv(SINGLES_CSV)
-    doubles=pd.read_csv(DOUBLES_CSV)
-    fixtures=pd.read_csv(FIXTURES_CSV)
+def result_rounds(fixtures, singles, doubles):
+    rubbers=defaultdict(list)
+    for discipline,df,home_col,away_col,winner_col in (
+        ("Singles",singles,"home_player","away_player","winning_player"),
+        ("Doubles",doubles,"home_pair","away_pair","winning_pair"),
+    ):
+        for _,r in df.iterrows():
+            rubbers[str(r.fixture_id)].append({
+                "type":discipline,"position":str(r.position),"home":str(r[home_col]),"away":str(r[away_col]),
+                "winner":str(r[winner_col]),"score":str(r.score),
+            })
+    by_round=defaultdict(list)
+    for _,r in fixtures.iterrows():
+        if str(r.home_team)=="Bye" or str(r.away_team)=="Bye": continue
+        match={"fixtureId":str(r.fixture_id),"date":str(r.date),"round":int(r["round"]),
+               "home":str(r.home_team),"away":str(r.away_team),"status":str(r.status),
+               "rubbers":rubbers.get(str(r.fixture_id),[])}
+        if str(r.status)=="Completed":
+            match.update({"homePoints":float(r.home_points),"awayPoints":float(r.away_points),
+                          "homeRubbers":int(r.home_rubbers),"awayRubbers":int(r.away_rubbers),
+                          "homeGames":int(r.home_games),"awayGames":int(r.away_games)})
+        by_round[int(r["round"])].append(match)
+    return [{"round":rnd,"date":matches[0]["date"],"fixtures":matches} for rnd,matches in sorted(by_round.items(),reverse=True)]
+
+def build_section(meta):
+    section_dir=SECTIONS_DIR/meta["section_code"]
+    singles=pd.read_csv(section_dir/"singles.csv")
+    doubles=pd.read_csv(section_dir/"doubles.csv")
+    fixtures=pd.read_csv(section_dir/"fixtures.csv")
+    draw=pd.read_csv(section_dir/"draw.csv")
     singles=singles[singles.status.eq("Completed")].copy()
     doubles=doubles[doubles.status.eq("Completed")].copy()
     player_teams,pair_teams=team_maps(singles,doubles)
-
-    sr=fit_power_ratings(SINGLES_CSV)
+    sr=fit_power_ratings(section_dir/"singles.csv")
     pr=fit_pairs(doubles)
     dr=fit_individual_doubles(doubles)
     srows=website_rows(sr,player_teams)
@@ -431,18 +449,50 @@ def main():
         pair["pairSynergy"]=round(pair_synergy.get(pair["player"],0))
     rmap={x["player"]:x["rating"] for x in srows}
 
-    payload={"section6":{
+    payload={
+        "meta":meta,
         "singles":srows,
         "doubles":prows,
         "doublesIndividuals":drows,
         "singlesMatches":singles_match_array(singles),
         "teams":team_rows(srows,fixtures),
-        "note":"Team Power uses every modelled singles player; low-sample ratings are already regularised toward the section centre. Ladder points are reconstructed from published fixture results; missing fixtures remain uncounted.",
+        "note":"Team Power uses every modelled singles player; low-sample ratings are already regularised toward the section centre. Standings use the points published by TROLS; missing fixtures remain uncounted.",
         "roundOverview":round_overview(fixtures,singles,rmap),
         "standings":reconstructed_standings(fixtures),
-        "upcomingFixtures":upcoming_fixtures(fixtures),
-        "sync":sync_meta(),
-    },"model":{
+        "results":result_rounds(fixtures,singles,doubles),
+        "upcomingFixtures":upcoming_fixtures(draw,fixtures),
+        "sync":sync_meta(meta,fixtures),
+    }
+    qualified=[row for row in srows if row["matches"]>=MIN_MATCHES]
+    if qualified:
+        leader=qualified[0]; runner=qualified[1] if len(qualified)>1 else None
+        payload["leader"]={"player":leader["player"],"team":leader["team"],"rating":leader["rating"],
+                           "matches":leader["matches"],"wins":leader["wins"],"losses":leader["losses"],
+                           "dominanceGap":leader["rating"]-DISPLAY_CENTRE,
+                           "runnerUpGap":leader["rating"]-(runner["rating"] if runner else DISPLAY_CENTRE),
+                           "expectedGameShare":round(100*float(expit((leader["rating"]-DISPLAY_CENTRE)/450)),1)}
+    return payload
+
+def main():
+    catalog_doc=json.loads((DATA_DIR/"catalog.json").read_text(encoding="utf-8"))
+    SITE_SECTIONS_DIR.mkdir(parents=True,exist_ok=True)
+    section_payloads={}
+    catalog=[]
+    for meta in catalog_doc["sections"]:
+        payload=build_section(meta)
+        code=meta["section_code"]
+        section_payloads[code]=payload
+        summary={**meta}
+        if payload.get("leader"): summary["leader"]=payload["leader"]
+        catalog.append(summary)
+        (SITE_SECTIONS_DIR/f"{code}.json").write_text(json.dumps(payload,separators=(",",":"),ensure_ascii=False,allow_nan=False)+"\n",encoding="utf-8")
+        print(f"Wrote {code}: {len(payload['singles'])} singles ratings")
+    leaders=[{**row["leader"],"sectionCode":row["section_code"],"sectionLabel":row["section_label"],
+              "competitionCode":row["competition_code"],"competitionLabel":row["competition_label"]}
+             for row in catalog if row.get("leader")]
+    leaders.sort(key=lambda row:(-row["expectedGameShare"],-row["runnerUpGap"],row["sectionCode"]))
+    for rank,row in enumerate(leaders,1): row["dominanceRank"]=rank
+    model={
         "version":"V3","centre":int(DISPLAY_CENTRE),"displayScale":int(DISPLAY_SCALE),
         "singlesMinMatches":MIN_MATCHES,"doublesMinMatches":MIN_DOUBLES_MATCHES,
         "doublesIndividualMinMatches":INDIVIDUAL_DOUBLES_MIN,
@@ -450,10 +500,14 @@ def main():
         "overallRule":"50/50 average of singles and individual doubles ratings; ranked overall requires 4 singles matches and an established individual-doubles entry (4 appearances, 2 partners and no exact network identifiability warning).",
         "doublesIndividualRule":"Individual doubles is partner-adjusted and experimental. Ranking requires 4 appearances, 2 distinct partners and no exact unresolved direction in the current doubles network.",
         "pairSynergyRule":"Exploratory, conditional pair-effect signal. It is strongly regularised (lambda=50) and does not affect the published singles, individual-doubles, Overall or Team Power ratings.",
-        "doublesNetworkRank":int(dr["network_rank"].iloc[0]) if len(dr) else 0,
-    }}
-    OUT.write_text("const DATA="+json.dumps(payload,separators=(",",":"),ensure_ascii=False)+";\n",encoding="utf-8")
-    print(f"Wrote {OUT}: {len(srows)} singles, {len(prows)} pairs, {len(drows)} doubles players, latest round {payload['section6']['roundOverview']['round']}")
+        "dominanceRule":"Section leaders are ranked by expected game share against their own section's 1500-rated average player. This measures within-section dominance, not absolute strength between disconnected sections.",
+    }
+    global_sync=json.loads((DATA_DIR/"sync_status.json").read_text()) if (DATA_DIR/"sync_status.json").exists() else {}
+    check=json.loads((DATA_DIR/"last_check.json").read_text()) if (DATA_DIR/"last_check.json").exists() else {}
+    data={"catalog":catalog,"leaders":leaders,"model":model,"globalSync":{**global_sync,"checkedAt":check.get("checked_at_utc") or global_sync.get("synced_at_utc"),"newResultsLastCheck":bool(check.get("new_results",False))},
+          "defaultSectionCode":DEFAULT_SECTION,"defaultSection":section_payloads.get(DEFAULT_SECTION) or next(iter(section_payloads.values()))}
+    OUT.write_text("const DATA="+json.dumps(data,separators=(",",":"),ensure_ascii=False,allow_nan=False)+";\n",encoding="utf-8")
+    print(f"Wrote {OUT}: {len(catalog)} sections and {len(leaders)} qualified section leaders")
 
 if __name__=="__main__":
     main()

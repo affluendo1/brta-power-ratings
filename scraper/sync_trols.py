@@ -4,384 +4,517 @@ import csv
 import json
 import os
 import re
+import threading
 import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urljoin
 
 import requests
 from bs4 import BeautifulSoup
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 
 BASE = "https://www.trols.org.au/brta/"
 RESULTS_URL = urljoin(BASE, "results.php")
+FIXTURE_URL = urljoin(BASE, "fixture.php")
 MATCH_URL = urljoin(BASE, "match_popup.php")
-COMPETITION_LABEL = os.getenv("TROLS_COMPETITION", "Sunday AM - Spring 2026")
-SECTION_LABEL = os.getenv("TROLS_SECTION", "Sets 6")
 OUT = Path(os.getenv("TROLS_OUT", "data/current"))
 UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36"
-
-ALIASES = {
-    "Geoge Si": "George Si",
-}
-EXPECTED_SECTION_CODE = "UA009"
-EXPECTED_TEAMS = {
-    "BLTC", "Beaumaris CC", "Coatesville", "Kings Park",
-    "Kooyong", "Lauriston", "St James", "Victory Park",
-}
+TARGET_COMPETITIONS = {"AA": "Saturday AM - Spring 2026", "UA": "Sunday AM - Spring 2026"}
+ALIASES = {"Geoge Si": "George Si"}
+MAX_WORKERS = int(os.getenv("TROLS_WORKERS", "10"))
+_thread_local = threading.local()
 
 FIXTURE_FIELDS = [
-    "fixture_id","date","round","home_team","away_team","home_rubbers",
-    "away_rubbers","home_games","away_games","status","notes"
+    "fixture_id", "date", "round", "home_team", "away_team",
+    "home_points", "away_points", "home_rubbers", "away_rubbers",
+    "home_sets", "away_sets", "home_games", "away_games", "status", "notes",
 ]
+DRAW_FIELDS = ["draw_id", "date", "round", "home_team", "away_team", "fixture_id"]
 SINGLES_FIELDS = [
-    "fixture_id","date","round","home_team","away_team","position",
-    "home_player","away_player","winning_player","score","home_games",
-    "away_games","status"
+    "fixture_id", "date", "round", "home_team", "away_team", "position",
+    "home_player", "away_player", "winning_player", "score", "home_games",
+    "away_games", "home_sets", "away_sets", "status", "valid_for_rating",
 ]
 DOUBLES_FIELDS = [
-    "fixture_id","date","round","home_team","away_team","position",
-    "home_pair","away_pair","winning_pair","score","home_games",
-    "away_games","status"
+    "fixture_id", "date", "round", "home_team", "away_team", "position",
+    "home_pair", "away_pair", "winning_pair", "score", "home_games",
+    "away_games", "home_sets", "away_sets", "status", "valid_for_rating",
 ]
 
-def clean_text(s: str) -> str:
-    return " ".join((s or "").replace("\xa0", " ").split())
 
-def clean_team(s: str) -> str:
-    return re.sub(r"\s*\([^)]*\)\s*$", "", clean_text(s)).strip()
+def clean_text(value: str) -> str:
+    return " ".join((value or "").replace("\xa0", " ").split())
 
-def clean_name(s: str) -> str:
-    s = clean_text(s)
-    s = re.sub(r"^\d+\.\s*", "", s)
-    s = re.sub(r"^(?:E\s+)?(?:X\s+)?\d+\.\s*", "", s)
-    return ALIASES.get(s, s)
 
-def direct_cells(tr):
-    return tr.find_all(["td","th"], recursive=False)
+def clean_team(value: str) -> str:
+    value = clean_text(value)
+    value = re.sub(r"\s+Playing\s+@.*$", "", value, flags=re.I)
+    value = re.sub(r"\s*\([^)]*\)\s*$", "", value)
+    return value.strip()
+
+
+def clean_name(value: str) -> str:
+    value = clean_text(value)
+    value = re.sub(r"^\d+\.\s*", "", value)
+    value = re.sub(r"^(?:E\s+)?(?:X\s+)?\d+\.\s*", "", value)
+    return ALIASES.get(value, value)
+
+
+def slug(value: str) -> str:
+    return re.sub(r"[^a-z0-9]+", "-", clean_text(value).casefold()).strip("-")
+
+
+def _session() -> requests.Session:
+    session = getattr(_thread_local, "session", None)
+    if session is None:
+        session = requests.Session()
+        retry = Retry(total=4, connect=4, read=4, backoff_factor=0.5, status_forcelist=(429, 500, 502, 503, 504))
+        session.mount("https://", HTTPAdapter(max_retries=retry, pool_connections=MAX_WORKERS, pool_maxsize=MAX_WORKERS))
+        session.headers.update({"User-Agent": UA, "Accept": "text/html,application/xhtml+xml"})
+        _thread_local.session = session
+    return session
+
+
+def _get(url: str, **kwargs) -> requests.Response:
+    response = _session().get(url, timeout=45, **kwargs)
+    response.raise_for_status()
+    return response
+
+
+def _post(url: str, data: dict) -> requests.Response:
+    response = _session().post(url, data=data, timeout=45)
+    response.raise_for_status()
+    return response
+
+
+def select_options(soup: BeautifulSoup, select_id: str) -> list[tuple[str, str]]:
+    select = soup.find("select", id=select_id)
+    if select is None:
+        raise RuntimeError(f"TROLS did not expose #{select_id}")
+    return [
+        (clean_text(option.get_text(" ", strip=True)), option.get("value", ""))
+        for option in select.find_all("option")
+        if clean_text(option.get_text(" ", strip=True)) and option.get("value", "")
+    ]
+
 
 def choose_option(soup: BeautifulSoup, select_id: str, wanted: str) -> str:
-    sel = soup.find("select", id=select_id)
-    if not sel:
-        raise RuntimeError(f"TROLS did not expose #{select_id}")
-    options = [(clean_text(o.get_text()), o.get("value","")) for o in sel.find_all("option")]
+    options = select_options(soup, select_id)
     for label, value in options:
         if label.casefold() == wanted.casefold():
             return value
-    available = ", ".join(label for label, _ in options if label)
-    raise RuntimeError(f"Could not find {wanted!r} in #{select_id}. Available: {available}")
+    raise RuntimeError(f"Could not find {wanted!r} in #{select_id}")
 
-def parse_results_page(html: str):
+
+def discover_sections(competition_code: str) -> list[dict]:
+    response = _post(RESULTS_URL, {"which": "0", "style": "", "daytime": competition_code})
+    options = select_options(BeautifulSoup(response.text, "html.parser"), "section")
+    wanted = {x.strip() for x in os.getenv("TROLS_SECTIONS", "").split(",") if x.strip()}
+    return [
+        {"competition_code": competition_code, "section_code": code, "section_label": label}
+        for label, code in options if not wanted or code in wanted or label in wanted
+    ]
+
+
+def _match_id(cell) -> str | None:
+    anchor = cell.find("a")
+    ids = re.findall(r"['\"]([A-Z]{2}\d{6})['\"]", anchor.get("onclick", "") if anchor else "")
+    return ids[-1] if ids else None
+
+
+def _numeric(value: str) -> int | float:
+    number = float(clean_text(value))
+    return int(number) if number.is_integer() else number
+
+
+def parse_results_page(html: str, section_code: str = "section") -> tuple[list[dict], str | None]:
     soup = BeautifulSoup(html, "html.parser")
-    fixtures = []
-    current_date = None
-    current_round = None
-
-    loaded = None
+    fixtures, current_date, current_round, loaded = [], None, None, None
     for span in soup.find_all("span"):
-        txt = clean_text(span.get_text(" ", strip=True))
-        if txt.startswith("Results Loaded:"):
-            loaded = txt.removeprefix("Results Loaded:").strip()
+        text = clean_text(span.get_text(" ", strip=True))
+        if text.startswith("Results Loaded:"):
+            loaded = text.removeprefix("Results Loaded:").strip()
             break
-
     for tr in soup.find_all("tr"):
-        tds = tr.find_all("td", recursive=False)
-        if len(tds) == 1 and tds[0].get("colspan") == "9":
-            txt = clean_text(tds[0].get_text(" ", strip=True))
-            m = re.search(r"(\d{1,2}\s+[A-Za-z]+\s+\d{2}).*?Rd\.\s*(\d+)", txt)
-            if m:
-                current_date = m.group(1)
-                current_round = int(m.group(2))
+        cells = tr.find_all("td", recursive=False)
+        if len(cells) == 1:
+            text = clean_text(cells[0].get_text(" ", strip=True))
+            match = re.search(r"(\d{1,2}\s+[A-Za-z]+\s+\d{2}).*?Rd\.\s*(\d+)", text)
+            if match:
+                current_date, current_round = match.group(1), int(match.group(2))
             continue
-
-        if current_date is None or len(tds) not in (3, 9):
+        if current_date is None or len(cells) < 3:
             continue
-
-        first = clean_text(tds[0].get_text(" ", strip=True))
-        last = clean_text(tds[-1].get_text(" ", strip=True))
-        if not first or not last or first.lower().startswith("home team"):
+        texts = [clean_text(cell.get_text(" ", strip=True)) for cell in cells]
+        home, away = clean_team(texts[0]), clean_team(texts[-1])
+        if not home or not away or home.casefold().startswith("home team"):
             continue
-
-        home = clean_team(first)
-        away = clean_team(last)
-        match_id = None
-        a = tds[0].find("a")
-        if a:
-            onclick = a.get("onclick", "")
-            m = re.search(r"open_match\([^)]*'([^']+)'\s*\)", onclick)
-            if m:
-                match_id = m.group(1)
-            else:
-                ids = re.findall(r"'(UA\d+)'", onclick)
-                if ids:
-                    match_id = ids[-1]
-        if len(tds) == 3:
-            # TROLS may list a not-yet-played fixture without a scorecard link.
-            # This is a display-only key; it is never passed to match_popup.php.
+        match_id = _match_id(cells[0])
+        blank_indexes = [i for i, text in enumerate(texts[1:-1], 1) if not text]
+        completed = len(cells) >= 9 and bool(blank_indexes)
+        if completed:
+            middle = blank_indexes[len(blank_indexes) // 2]
+            left = [_numeric(value) for value in texts[1:middle] if value]
+            right = [_numeric(value) for value in texts[middle + 1:-1] if value]
+            if len(left) not in (3, 4) or len(right) != len(left):
+                raise RuntimeError(f"Unexpected completed result row: {texts}")
             if not match_id:
-                slug = re.sub(r"[^a-z0-9]+", "-", f"{home}-{away}".casefold()).strip("-")
-                match_id = f"pending-r{current_round}-{slug}"
-            status_text = clean_text(tds[1].get_text(" ", strip=True))
-            status = "Wash Out" if "Wash Out" in status_text else "Missing Result" if "Missing Result" in status_text else status_text
+                raise RuntimeError("MATCH ID PARSER BROKE: completed TROLS fixture has no official match ID")
             fixture = {
                 "fixture_id": match_id, "date": current_date, "round": current_round,
-                "home_team": home, "away_team": away, "home_rubbers": "",
-                "away_rubbers": "", "home_games": "", "away_games": "",
-                "status": status, "notes": "No individual scorecard / no rubbers recorded" if status == "Wash Out" else "TROLS marked Missing Result; no scorecard available"
+                "home_team": home, "away_team": away, "home_points": left[0], "away_points": right[0],
+                "home_rubbers": left[1], "away_rubbers": right[1],
+                "home_sets": left[2] if len(left) == 4 else "", "away_sets": right[2] if len(right) == 4 else "",
+                "home_games": left[-1], "away_games": right[-1], "status": "Completed", "notes": "",
             }
         else:
-            if not match_id:
-                raise RuntimeError(
-                    "MATCH ID PARSER BROKE: completed TROLS fixture row did not expose an official match ID. "
-                    "Refusing to construct a guessed ID in an unattended sync."
-                )
-            try:
-                hr = int(clean_text(tds[2].get_text()))
-                hg = int(clean_text(tds[3].get_text()))
-                ar = int(clean_text(tds[6].get_text()))
-                ag = int(clean_text(tds[7].get_text()))
-            except ValueError as e:
-                raise RuntimeError(f"Could not parse fixture row: {tr.get_text(' ', strip=True)}") from e
+            status_text = texts[1]
+            if home == "Bye" or away == "Bye":
+                status = "Bye"
+            elif "Wash Out" in status_text:
+                status = "Wash Out"
+            elif "Forfeit" in status_text:
+                status = status_text
+            elif "Missing Result" in status_text:
+                status = "Missing Result"
+            else:
+                status = status_text or "Scheduled"
+            match_id = match_id or f"pending-{section_code.lower()}-r{current_round}-{slug(home)}-{slug(away)}"
             fixture = {
                 "fixture_id": match_id, "date": current_date, "round": current_round,
-                "home_team": home, "away_team": away, "home_rubbers": hr,
-                "away_rubbers": ar, "home_games": hg, "away_games": ag,
-                "status": "Completed", "notes": ""
+                "home_team": home, "away_team": away, "home_points": "", "away_points": "",
+                "home_rubbers": "", "away_rubbers": "", "home_sets": "", "away_sets": "",
+                "home_games": "", "away_games": "", "status": status,
+                "notes": "No individual scorecard / no rubbers recorded",
             }
         fixtures.append(fixture)
-
-    fixtures.sort(key=lambda x: (int(x["round"]), x["fixture_id"]))
+    fixtures.sort(key=lambda row: (int(row["round"]), row["fixture_id"]))
     if not fixtures:
-        raise RuntimeError("No Section 6 fixtures were parsed from TROLS")
+        raise RuntimeError(f"No fixtures parsed for {section_code}")
     return fixtures, loaded
 
-def parse_roster(table):
-    names = []
-    for tr in table.find_all("tr"):
-        txt = clean_text(tr.get_text(" ", strip=True))
-        if txt:
-            names.append(clean_name(txt))
-    return names
 
-def pair_from_code(players, code: str) -> str:
-    indexes = [int(x) - 1 for x in code.split("+")]
-    if len(indexes) != 2 or any(i < 0 or i >= len(players) for i in indexes):
-        raise RuntimeError(f"Bad doubles pairing code {code!r} for roster {players}")
-    return " / ".join(players[i] for i in indexes)
+def parse_roster(table) -> list[str]:
+    return [clean_name(tr.get_text(" ", strip=True)) for tr in table.find_all("tr") if clean_text(tr.get_text(" ", strip=True))]
 
-def parse_scorecard(html: str, fixture: dict):
+
+def pair_from_code(players: list[str], code: str) -> str:
+    indexes = [int(value) - 1 for value in code.split("+")]
+    if len(indexes) != 2 or any(index < 0 or index >= len(players) for index in indexes):
+        raise RuntimeError(f"Bad doubles code {code!r} for roster {players}")
+    return " / ".join(players[index] for index in indexes)
+
+
+def _player_from_code(players: list[str], code: str) -> str:
+    if not re.fullmatch(r"\d+", code):
+        raise RuntimeError(f"Bad singles code {code!r}")
+    index = int(code) - 1
+    if index < 0 or index >= len(players):
+        raise RuntimeError(f"Bad singles code {code!r} for roster {players}")
+    return players[index]
+
+
+def parse_scorecard(html: str, fixture: dict) -> tuple[list[dict], list[dict]]:
     soup = BeautifulSoup(html, "html.parser")
     root = soup.find("table", attrs={"width": "99%"})
     if root is None:
-        raise RuntimeError(f"No scorecard table for {fixture['fixture_id']}; response starts: {clean_text(html[:500])}")
-    container = root.find("tbody", recursive=False) or root
-    outer = container.find_all("tr", recursive=False)
+        raise RuntimeError(f"No scorecard table for {fixture['fixture_id']}")
+    outer = (root.find("tbody", recursive=False) or root).find_all("tr", recursive=False)
     if len(outer) < 2:
         raise RuntimeError(f"Malformed scorecard for {fixture['fixture_id']}")
-
     team_cells = outer[0].find_all("td", recursive=False)
-    home_team = clean_team(team_cells[0].get_text(" ", strip=True))
-    away_team = clean_team(team_cells[-1].get_text(" ", strip=True))
+    home_team, away_team = clean_team(team_cells[0].get_text(" ", strip=True)), clean_team(team_cells[-1].get_text(" ", strip=True))
     if home_team != fixture["home_team"] or away_team != fixture["away_team"]:
-        raise RuntimeError(
-            f"Team mismatch {fixture['fixture_id']}: list has {fixture['home_team']} v {fixture['away_team']}, "
-            f"scorecard has {home_team} v {away_team}"
-        )
-
+        raise RuntimeError(f"Team mismatch {fixture['fixture_id']}: {home_team} v {away_team}")
     nested = outer[1].find_all("table")
     if len(nested) != 3:
-        raise RuntimeError(f"Expected 3 nested scorecard tables for {fixture['fixture_id']}, found {len(nested)}")
-    home_players = parse_roster(nested[0])
-    away_players = parse_roster(nested[2])
-    if len(home_players) != 4 or len(away_players) != 4:
-        raise RuntimeError(f"Expected four players per team for {fixture['fixture_id']}: {home_players} / {away_players}")
-
-    score_rows = nested[1].find_all("tr")
-    rubber_rows = score_rows[:6]
-    if len(rubber_rows) != 6:
-        raise RuntimeError(f"Expected six rubbers for {fixture['fixture_id']}")
-
-    singles, doubles = [], []
-    for i, tr in enumerate(rubber_rows):
+        raise RuntimeError(f"Expected three scorecard tables for {fixture['fixture_id']}, found {len(nested)}")
+    home_players, away_players = parse_roster(nested[0]), parse_roster(nested[2])
+    expected_roster = 2 if fixture.get("home_sets", "") != "" else 4
+    if len(home_players) > expected_roster or len(away_players) > expected_roster:
+        raise RuntimeError(f"Unexpected rosters for {fixture['fixture_id']}: {home_players} / {away_players}")
+    # TROLS occasionally publishes a scorecard with an omitted roster name.
+    # Preserve its numbered rubber without inventing an identity, and exclude
+    # that rubber from the rating likelihood.
+    home_players = [f"[Unlisted home player {n} in TROLS]" if re.fullmatch(r"No Player\s*\d*", name, re.I) else name for n, name in enumerate(home_players, 1)]
+    away_players = [f"[Unlisted away player {n} in TROLS]" if re.fullmatch(r"No Player\s*\d*", name, re.I) else name for n, name in enumerate(away_players, 1)]
+    home_players += [f"[Unlisted home player {n} in TROLS]" for n in range(len(home_players) + 1, expected_roster + 1)]
+    away_players += [f"[Unlisted away player {n} in TROLS]" for n in range(len(away_players) + 1, expected_roster + 1)]
+    singles, doubles, singles_position, doubles_position = [], [], 0, 0
+    for tr in nested[1].find_all("tr"):
+        if tr.find("td", class_="separate") is not None:
+            continue
         cells = [clean_text(td.get_text(" ", strip=True)) for td in tr.find_all("td")]
         if len(cells) != 3:
-            raise RuntimeError(f"Malformed rubber row in {fixture['fixture_id']}: {cells}")
-        home_code, score, away_code = cells
-        sm = re.fullmatch(r"(\d+)\s*-\s*(\d+)", score)
-        if not sm:
-            raise RuntimeError(f"Unsupported score {score!r} in {fixture['fixture_id']}")
-        hg, ag = map(int, sm.groups())
-
+            continue
+        home_code, raw_score, away_code = cells
+        # Some incomplete TROLS rosters leave the numbered code blank (or
+        # shorten a doubles code to its listed member). Mirror the opposing
+        # positional code only to preserve the official row; the padded
+        # participant remains visibly unlisted and is never rated.
+        if not home_code and away_code:
+            home_code = away_code
+        if not away_code and home_code:
+            away_code = home_code
+        if "+" in away_code and "+" not in home_code:
+            home_code = away_code
+        if "+" in home_code and "+" not in away_code:
+            away_code = home_code
+        is_pair = "+" in home_code and "+" in away_code
+        is_single = bool(re.fullmatch(r"\d+", home_code or "") and re.fullmatch(r"\d+", away_code or ""))
+        if not is_pair and not is_single:
+            continue
+        if is_single and (int(home_code) > len(home_players) or int(away_code) > len(away_players)):
+            continue
+        scores = [(int(a), int(b)) for a, b in re.findall(r"(\d+)\s*-\s*(\d+)", raw_score)]
+        if not scores:
+            continue
+        home_games, away_games = sum(a for a, _ in scores), sum(b for _, b in scores)
+        home_sets, away_sets = sum(a > b for a, b in scores), sum(b > a for a, b in scores)
+        decisive = home_sets != away_sets and all(a != b and max(a, b) >= 5 for a, b in scores)
         base = {
             "fixture_id": fixture["fixture_id"], "date": fixture["date"], "round": fixture["round"],
-            "home_team": home_team, "away_team": away_team, "position": f"No. {i+1 if i < 4 else i-3}",
-            "score": f"{hg}-{ag}", "home_games": hg, "away_games": ag, "status": "Completed"
+            "home_team": home_team, "away_team": away_team, "score": " ".join(f"{a}-{b}" for a, b in scores),
+            "home_games": home_games, "away_games": away_games, "home_sets": home_sets, "away_sets": away_sets,
+            "status": "Completed", "valid_for_rating": str(decisive).lower(),
         }
-        if i < 4:
-            hp = home_players[int(home_code) - 1]
-            ap = away_players[int(away_code) - 1]
-            singles.append({
-                **base, "home_player": hp, "away_player": ap,
-                "winning_player": hp if hg > ag else ap
-            })
+        if is_pair:
+            doubles_position += 1
+            hp, ap = pair_from_code(home_players, home_code), pair_from_code(away_players, away_code)
+            base["valid_for_rating"] = str(decisive and "[Unlisted" not in hp and "[Unlisted" not in ap).lower()
+            doubles.append({**base, "position": f"No. {doubles_position}", "home_pair": hp, "away_pair": ap,
+                            "winning_pair": hp if home_sets > away_sets else ap if away_sets > home_sets else ""})
         else:
-            hp = pair_from_code(home_players, home_code)
-            ap = pair_from_code(away_players, away_code)
-            doubles.append({
-                **base, "home_pair": hp, "away_pair": ap,
-                "winning_pair": hp if hg > ag else ap
-            })
+            singles_position += 1
+            hp, ap = _player_from_code(home_players, home_code), _player_from_code(away_players, away_code)
+            base["valid_for_rating"] = str(decisive and "[Unlisted" not in hp and "[Unlisted" not in ap).lower()
+            singles.append({**base, "position": f"No. {singles_position}", "home_player": hp, "away_player": ap,
+                            "winning_player": hp if home_sets > away_sets else ap if away_sets > home_sets else ""})
     return singles, doubles
 
-def write_csv(path: Path, rows, fields):
-    path.parent.mkdir(parents=True, exist_ok=True)
-    with path.open("w", newline="", encoding="utf-8") as f:
-        w = csv.DictWriter(f, fieldnames=fields)
-        w.writeheader()
-        w.writerows(rows)
 
-def count_existing(path: Path) -> int:
-    if not path.exists():
-        return 0
-    with path.open(encoding="utf-8") as f:
-        return max(0, sum(1 for _ in f) - 1)
+def parse_draw_page(html: str, section_code: str) -> list[dict]:
+    rows = BeautifulSoup(html, "html.parser").find_all("tr")
+    header_index = None
+    for index, tr in enumerate(rows):
+        cells = [clean_text(cell.get_text(" ", strip=True)) for cell in tr.find_all(["th", "td"], recursive=False)]
+        if cells[:4] == ["Rd", "Date", "Home", "Away"]:
+            header_index = index
+            break
+    if header_index is None:
+        raise RuntimeError(f"No official fixture table for {section_code}")
+    draw = []
+    for tr in rows[header_index + 1:]:
+        cells = [clean_text(cell.get_text(" ", strip=True)) for cell in tr.find_all("td", recursive=False)]
+        if len(cells) < 4 or not cells[0].isdigit():
+            continue
+        round_no, date, home, away = int(cells[0]), cells[1], clean_team(cells[2]), clean_team(cells[3])
+        if not home or not away or home == "Bye" or away == "Bye":
+            continue
+        draw.append({"draw_id": f"draw-{section_code.lower()}-r{round_no}-{slug(home)}-{slug(away)}",
+                     "date": date, "round": round_no, "home_team": home, "away_team": away, "fixture_id": ""})
+    return draw
+
+
+def _section_results(meta: dict) -> dict:
+    response = _post(RESULTS_URL, {"which": "1", "style": "", "daytime": meta["competition_code"], "section": meta["section_code"]})
+    fixtures, loaded = parse_results_page(response.text, meta["section_code"])
+    return {**meta, "fixtures": fixtures, "results_loaded_by_trols": loaded}
+
+
+def _scorecard(fixture: dict) -> tuple[str, list[dict], list[dict]]:
+    response = _get(MATCH_URL, params={"matchid": fixture["fixture_id"], "seasonid": ""})
+    singles, doubles = parse_scorecard(response.text, fixture)
+    return fixture["fixture_id"], singles, doubles
+
+
+def _team_options(meta: dict) -> list[tuple[str, str]]:
+    response = _post(FIXTURE_URL, {"which": "1", "style": "", "daytime": meta["competition_code"], "section": meta["section_code"]})
+    return select_options(BeautifulSoup(response.text, "html.parser"), "team")
+
+
+def _team_draw(meta: dict, team_code: str) -> list[dict]:
+    response = _post(FIXTURE_URL, {"which": "2", "style": "", "daytime": meta["competition_code"],
+                                   "section": meta["section_code"], "team": team_code})
+    return parse_draw_page(response.text, meta["section_code"])
 
 
 def _integer(value, label: str) -> int:
     try:
-        return int(value)
+        return int(float(value))
     except (TypeError, ValueError) as exc:
         raise RuntimeError(f"Invalid {label}: {value!r}") from exc
 
 
-def _validate_score(home_games, away_games, label: str) -> tuple[int, int]:
-    home, away = _integer(home_games, f"home games in {label}"), _integer(away_games, f"away games in {label}")
-    winner, loser = max(home, away), min(home, away)
-    legal = (winner == 6 and 0 <= loser <= 4) or (winner == 7 and loser in (5, 6))
-    if home == away or not legal:
-        raise RuntimeError(f"Illegal BRTA set score in {label}: {home}-{away}")
-    return home, away
-
-
-def validate_dataset(fixtures, singles, doubles, section_code: str) -> None:
-    """Validate internal fixture arithmetic before publishing new source data."""
-    if section_code != EXPECTED_SECTION_CODE:
-        raise RuntimeError(f"Expected section code {EXPECTED_SECTION_CODE}, got {section_code!r}")
-    fixture_ids = [f["fixture_id"] for f in fixtures]
-    if len(set(fixture_ids)) != len(fixture_ids):
-        raise RuntimeError("Duplicate fixture IDs in TROLS results")
-    seen_teams = {f["home_team"] for f in fixtures} | {f["away_team"] for f in fixtures}
-    if seen_teams != EXPECTED_TEAMS:
-        raise RuntimeError(f"Unexpected Section 6 teams: {sorted(seen_teams)}")
-
-    fixture_map = {f["fixture_id"]: f for f in fixtures}
-    if any(r["fixture_id"] not in fixture_map for r in singles + doubles):
-        raise RuntimeError("A rubber references a fixture that is not in the fixture list")
-    seen_positions = set()
+def validate_dataset(fixtures: list[dict], singles: list[dict], doubles: list[dict], section_code: str) -> None:
+    if not re.fullmatch(r"(?:AA|UA)\d{3}", section_code):
+        raise RuntimeError(f"Unexpected section code {section_code!r}")
+    official_ids = [row["fixture_id"] for row in fixtures if row["status"] == "Completed"]
+    if len(official_ids) != len(set(official_ids)):
+        raise RuntimeError(f"Duplicate completed fixture IDs in {section_code}")
+    fixture_map = {row["fixture_id"]: row for row in fixtures}
+    positions = set()
     for discipline, rows in (("singles", singles), ("doubles", doubles)):
         for row in rows:
+            if row["fixture_id"] not in fixture_map:
+                raise RuntimeError(f"{section_code}: rubber references unknown fixture")
             key = (discipline, row["fixture_id"], row["position"])
-            if key in seen_positions:
-                raise RuntimeError(f"Duplicate fixture/position entry: {key[1]} {discipline} {key[2]}")
-            seen_positions.add(key)
-            home, away = _validate_score(row["home_games"], row["away_games"], f"{key[1]} {discipline} {key[2]}")
-            expected_winner = row.get("home_player") or row.get("home_pair")
-            actual_winner = row.get("winning_player") or row.get("winning_pair")
-            if (home > away) != (actual_winner == expected_winner):
-                raise RuntimeError(f"Winner does not agree with score in {key[1]} {discipline} {key[2]}")
-
+            if key in positions:
+                raise RuntimeError(f"Duplicate fixture/position entry: {key}")
+            positions.add(key)
+            if str(row.get("valid_for_rating", "true")).lower() == "true":
+                hs, aws = _integer(row["home_sets"], "home sets"), _integer(row["away_sets"], "away sets")
+                winner = row.get("winning_player") or row.get("winning_pair")
+                home_entry = row.get("home_player") or row.get("home_pair")
+                if (hs > aws) != (winner == home_entry):
+                    raise RuntimeError(f"Winner does not agree with score in {key}")
     for fixture in fixtures:
         if fixture["status"] != "Completed":
             continue
-        fid = fixture["fixture_id"]
-        sr = [r for r in singles if r["fixture_id"] == fid]
-        dr = [r for r in doubles if r["fixture_id"] == fid]
-        if len(sr) != 4 or len(dr) != 2:
-            raise RuntimeError(f"{fid} must contain exactly four singles and two doubles rubbers")
-        home_singles = {r["home_player"] for r in sr}
-        away_singles = {r["away_player"] for r in sr}
-        # Pair strings are already canonical participant records, so validate
-        # each listed roster independently from the scorecard parser.
-        home_doubles = {p.strip() for r in dr for p in r["home_pair"].split("/")}
-        away_doubles = {p.strip() for r in dr for p in r["away_pair"].split("/")}
-        if len(home_singles) != 4 or len(away_singles) != 4 or home_singles != home_doubles or away_singles != away_doubles:
-            raise RuntimeError(f"{fid} does not contain four consistent roster members per team")
-        home_games = sum(_integer(r["home_games"], f"home games in {fid}") for r in sr + dr)
-        away_games = sum(_integer(r["away_games"], f"away games in {fid}") for r in sr + dr)
-        home_rubbers = sum(_integer(r["home_games"], f"home games in {fid}") > _integer(r["away_games"], f"away games in {fid}") for r in sr + dr)
-        away_rubbers = 6 - home_rubbers
-        if home_games != _integer(fixture["home_games"], f"fixture home games for {fid}") or away_games != _integer(fixture["away_games"], f"fixture away games for {fid}"):
-            raise RuntimeError(f"Fixture game totals do not match individual rubbers for {fid}")
-        if home_rubbers != _integer(fixture["home_rubbers"], f"fixture home rubbers for {fid}") or away_rubbers != _integer(fixture["away_rubbers"], f"fixture away rubbers for {fid}"):
-            raise RuntimeError(f"Fixture rubber totals do not match individual rubbers for {fid}")
+        fixture_singles = [row for row in singles if row["fixture_id"] == fixture["fixture_id"]]
+        fixture_doubles = [row for row in doubles if row["fixture_id"] == fixture["fixture_id"]]
+        rows = fixture_singles + fixture_doubles
+        if not rows and any(_integer(fixture[field], field) for field in ("home_rubbers", "away_rubbers", "home_games", "away_games")):
+            raise RuntimeError(f"No scorecard rubbers for {fixture['fixture_id']}")
+        hg = sum(_integer(row["home_games"], "home games") for row in rows)
+        ag = sum(_integer(row["away_games"], "away games") for row in rows)
+        scoring_rows = fixture_singles if fixture["home_sets"] != "" else rows
+        scoring_rows = [row for row in scoring_rows if all(max(int(a), int(b)) >= 5 for a, b in re.findall(r"(\d+)\s*-\s*(\d+)", row["score"]))]
+        hr = sum(_integer(row["home_sets"], "home sets") > _integer(row["away_sets"], "away sets") for row in scoring_rows)
+        ar = sum(_integer(row["away_sets"], "away sets") > _integer(row["home_sets"], "home sets") for row in scoring_rows)
+        if (hg, ag) != (_integer(fixture["home_games"], "fixture home games"), _integer(fixture["away_games"], "fixture away games")):
+            raise RuntimeError(f"Fixture game totals do not match rubbers for {fixture['fixture_id']}")
+        green_ball = section_code in {"AA013", "AA014", "UA026", "UA027"}
+        complete_standard_card = len(rows) == 6 and all("[Unlisted" not in str(row) for row in rows)
+        if fixture["home_sets"] == "" and not green_ball and complete_standard_card and (hr, ar) != (_integer(fixture["home_rubbers"], "fixture home rubbers"), _integer(fixture["away_rubbers"], "fixture away rubbers")):
+            raise RuntimeError(f"Fixture rubber totals do not match rubbers for {fixture['fixture_id']}")
 
-def main():
-    s = requests.Session()
-    s.headers.update({"User-Agent": UA, "Accept": "text/html,application/xhtml+xml", "Referer": RESULTS_URL})
 
-    first = s.get(RESULTS_URL, timeout=30)
-    first.raise_for_status()
-    soup = BeautifulSoup(first.text, "html.parser")
-    daytime = choose_option(soup, "daytime", COMPETITION_LABEL)
+def attach_draw_ids(draw: list[dict], fixtures: list[dict]) -> list[dict]:
+    result_map = {(int(row["round"]), clean_team(row["home_team"]), clean_team(row["away_team"])): row["fixture_id"] for row in fixtures}
+    for row in draw:
+        row["fixture_id"] = result_map.get((int(row["round"]), row["home_team"], row["away_team"]), "")
+    return draw
 
-    second = s.post(RESULTS_URL, data={"daytime": daytime, "section": "", "which": "0", "style": ""}, timeout=30)
-    second.raise_for_status()
-    soup2 = BeautifulSoup(second.text, "html.parser")
-    section = choose_option(soup2, "section", SECTION_LABEL)
-    if section != EXPECTED_SECTION_CODE:
-        raise RuntimeError(f"Selected {SECTION_LABEL!r}, but TROLS returned section code {section!r}")
 
-    final = s.post(RESULTS_URL, data={"daytime": daytime, "section": section, "which": "1", "style": ""}, timeout=30)
-    final.raise_for_status()
-    fixtures, loaded = parse_results_page(final.text)
+def write_csv(path: Path, rows: list[dict], fields: list[str]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("w", newline="", encoding="utf-8") as handle:
+        writer = csv.DictWriter(handle, fieldnames=fields)
+        writer.writeheader()
+        writer.writerows(rows)
 
-    singles, doubles = [], []
-    completed = [f for f in fixtures if f["status"] == "Completed"]
-    for n, fixture in enumerate(completed, 1):
-        r = s.get(MATCH_URL, params={"matchid": fixture["fixture_id"], "seasonid": ""}, timeout=30)
-        r.raise_for_status()
-        ss, dd = parse_scorecard(r.text, fixture)
-        singles.extend(ss)
-        doubles.extend(dd)
-        print(f"[{n:02d}/{len(completed):02d}] {fixture['fixture_id']} {fixture['home_team']} v {fixture['away_team']}")
-        time.sleep(0.10)
 
-    # Hard safety gates. A bad scrape must never replace good repository data.
-    if len(fixtures) < 32:
-        raise RuntimeError(f"Safety gate: only {len(fixtures)} fixtures parsed")
-    if len(singles) != 4 * len(completed):
-        raise RuntimeError(f"Safety gate: {len(singles)} singles rows for {len(completed)} completed fixtures")
-    if len(doubles) != 2 * len(completed):
-        raise RuntimeError(f"Safety gate: {len(doubles)} doubles rows for {len(completed)} completed fixtures")
-    validate_dataset(fixtures, singles, doubles, section)
+def count_existing(path: Path) -> int:
+    if not path.exists():
+        return 0
+    with path.open(encoding="utf-8") as handle:
+        return max(0, sum(1 for _ in handle) - 1)
 
-    old_s = count_existing(OUT / "section6_singles_results.csv")
-    old_d = count_existing(OUT / "section6_doubles_results.csv")
-    if old_s and len(singles) < old_s:
-        raise RuntimeError(f"Dataset shrank. Manual review required: singles {old_s} -> {len(singles)}")
-    if old_d and len(doubles) < old_d:
-        raise RuntimeError(f"Dataset shrank. Manual review required: doubles {old_d} -> {len(doubles)}")
 
-    write_csv(OUT / "section6_fixtures.csv", fixtures, FIXTURE_FIELDS)
-    write_csv(OUT / "section6_singles_results.csv", singles, SINGLES_FIELDS)
-    write_csv(OUT / "section6_doubles_results.csv", doubles, DOUBLES_FIELDS)
+def scrape_all() -> list[dict]:
+    requested = {value.strip() for value in os.getenv("TROLS_COMPETITIONS", "AA,UA").split(",") if value.strip()}
+    sections = []
+    for code, label in TARGET_COMPETITIONS.items():
+        if code in requested or label in requested:
+            sections.extend(discover_sections(code))
+    if not sections:
+        raise RuntimeError("No target TROLS sections discovered")
+    print(f"Discovered {len(sections)} sections; loading result indexes")
+    loaded_sections = []
+    with ThreadPoolExecutor(max_workers=min(MAX_WORKERS, len(sections))) as pool:
+        futures = {pool.submit(_section_results, meta): meta for meta in sections}
+        for future in as_completed(futures):
+            section = future.result()
+            loaded_sections.append(section)
+            print(f"  {section['section_code']} {section['section_label']}: {len(section['fixtures'])} result rows")
+    loaded_sections.sort(key=lambda row: (row["competition_code"], row["section_code"]))
+    fixture_owner, completed = {}, []
+    for section in loaded_sections:
+        section["singles"], section["doubles"] = [], []
+        for fixture in section["fixtures"]:
+            if fixture["status"] == "Completed":
+                fixture_owner[fixture["fixture_id"]] = section
+                completed.append(fixture)
+    print(f"Loading {len(completed)} completed scorecards with {MAX_WORKERS} workers")
+    with ThreadPoolExecutor(max_workers=MAX_WORKERS) as pool:
+        futures = {pool.submit(_scorecard, fixture): fixture for fixture in completed}
+        done = 0
+        for future in as_completed(futures):
+            fixture_id, singles, doubles = future.result()
+            section = fixture_owner[fixture_id]
+            section["singles"].extend(singles)
+            section["doubles"].extend(doubles)
+            done += 1
+            if done % 50 == 0 or done == len(completed):
+                print(f"  scorecards {done}/{len(completed)}")
+    print("Loading official TROLS draws")
+    options_by_code = {}
+    with ThreadPoolExecutor(max_workers=MAX_WORKERS) as pool:
+        futures = {pool.submit(_team_options, section): section for section in loaded_sections}
+        for future in as_completed(futures):
+            section = futures[future]
+            options_by_code[section["section_code"]] = future.result()
+    draw_jobs = [(section, team_code) for section in loaded_sections for _, team_code in options_by_code[section["section_code"]]]
+    draw_by_code = {section["section_code"]: [] for section in loaded_sections}
+    with ThreadPoolExecutor(max_workers=MAX_WORKERS) as pool:
+        futures = {pool.submit(_team_draw, section, team_code): (section, team_code) for section, team_code in draw_jobs}
+        for future in as_completed(futures):
+            section, _ = futures[future]
+            draw_by_code[section["section_code"]].extend(future.result())
+    for section in loaded_sections:
+        unique = {(row["round"], row["date"], row["home_team"], row["away_team"]): row for row in draw_by_code[section["section_code"]]}
+        section["draw"] = attach_draw_ids(sorted(unique.values(), key=lambda row: (row["round"], row["home_team"])), section["fixtures"])
+        section["singles"].sort(key=lambda row: (int(row["round"]), row["fixture_id"], row["position"]))
+        section["doubles"].sort(key=lambda row: (int(row["round"]), row["fixture_id"], row["position"]))
+        validate_dataset(section["fixtures"], section["singles"], section["doubles"], section["section_code"])
+    return loaded_sections
 
+
+def main() -> None:
+    started = time.monotonic()
+    sections = scrape_all()
+    catalog = []
+    for section in sections:
+        code = section["section_code"]
+        section_dir = OUT / "sections" / code
+        old_singles, old_doubles = count_existing(section_dir / "singles.csv"), count_existing(section_dir / "doubles.csv")
+        if old_singles and len(section["singles"]) < old_singles:
+            raise RuntimeError(f"Dataset shrank. Manual review required: {code} singles {old_singles} -> {len(section['singles'])}")
+        if old_doubles and len(section["doubles"]) < old_doubles:
+            raise RuntimeError(f"Dataset shrank. Manual review required: {code} doubles {old_doubles} -> {len(section['doubles'])}")
+        write_csv(section_dir / "fixtures.csv", section["fixtures"], FIXTURE_FIELDS)
+        write_csv(section_dir / "draw.csv", section["draw"], DRAW_FIELDS)
+        write_csv(section_dir / "singles.csv", section["singles"], SINGLES_FIELDS)
+        write_csv(section_dir / "doubles.csv", section["doubles"], DOUBLES_FIELDS)
+        completed = sum(row["status"] == "Completed" for row in section["fixtures"])
+        metadata = {
+            "competition_code": section["competition_code"], "competition_label": TARGET_COMPETITIONS[section["competition_code"]],
+            "section_code": code, "section_label": section["section_label"],
+            "format": "rubbers" if section["section_label"].casefold().startswith("rubbers") else "sets",
+            "green_ball": "green ball" in section["section_label"].casefold(),
+            "results_loaded_by_trols": section["results_loaded_by_trols"],
+            "fixtures": len(section["fixtures"]), "completed_fixtures": completed, "draw_fixtures": len(section["draw"]),
+            "singles_rubbers": len(section["singles"]), "doubles_rubbers": len(section["doubles"]),
+            "latest_round": max(int(row["round"]) for row in section["fixtures"]), "validation": "passed",
+        }
+        (section_dir / "metadata.json").write_text(json.dumps(metadata, indent=2) + "\n", encoding="utf-8")
+        catalog.append(metadata)
+    synced_at = datetime.now(timezone.utc).isoformat()
+    (OUT / "catalog.json").write_text(json.dumps({"synced_at_utc": synced_at, "competitions": TARGET_COMPETITIONS, "sections": catalog}, indent=2) + "\n", encoding="utf-8")
     status = {
-        "source": RESULTS_URL,
-        "competition": COMPETITION_LABEL,
-        "section": SECTION_LABEL,
-        "section_code": section,
-        "results_loaded_by_trols": loaded,
-        "synced_at_utc": datetime.now(timezone.utc).isoformat(),
-        "fixtures": len(fixtures),
-        "completed_fixtures": len(completed),
-        "singles_rubbers": len(singles),
-        "doubles_rubbers": len(doubles),
-        "latest_round": max(int(f["round"]) for f in fixtures),
-        "latest_date": max(fixtures, key=lambda f: int(f["round"]))["date"],
-        "validation": "passed",
+        "source": RESULTS_URL, "fixture_source": FIXTURE_URL, "synced_at_utc": synced_at,
+        "competitions": len(set(row["competition_code"] for row in catalog)), "sections": len(catalog),
+        "fixtures": sum(row["fixtures"] for row in catalog), "completed_fixtures": sum(row["completed_fixtures"] for row in catalog),
+        "singles_rubbers": sum(row["singles_rubbers"] for row in catalog), "doubles_rubbers": sum(row["doubles_rubbers"] for row in catalog),
+        "validation": "passed", "elapsed_seconds": round(time.monotonic() - started, 1),
     }
     (OUT / "sync_status.json").write_text(json.dumps(status, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(status, indent=2))
+
 
 if __name__ == "__main__":
     main()

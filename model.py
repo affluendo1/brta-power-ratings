@@ -37,6 +37,9 @@ def centred_covariance(covariance: np.ndarray) -> np.ndarray:
 
 def prepare(df):
     df = df[df["status"].eq("Completed")].copy()
+    if "valid_for_rating" in df:
+        valid = df["valid_for_rating"].astype(str).str.casefold().isin({"true", "1", "yes"})
+        df = df[valid].copy()
     df = df.dropna(subset=["home_player","away_player","home_games","away_games"])
     for col in ["home_player","away_player","winning_player"]:
         if col in df:

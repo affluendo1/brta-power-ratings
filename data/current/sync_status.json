@@ -1,15 +1,13 @@
 {
   "source": "https://www.trols.org.au/brta/results.php",
-  "competition": "Sunday AM - Spring 2026",
-  "section": "Sets 6",
-  "section_code": "UA009",
-  "results_loaded_by_trols": "17th September 26 @ 09:48:26 AM",
-  "synced_at_utc": "2026-09-19T02:21:47.277979+00:00",
-  "fixtures": 36,
-  "completed_fixtures": 34,
-  "singles_rubbers": 136,
-  "doubles_rubbers": 68,
-  "latest_round": 9,
-  "latest_date": "13 Sep 26",
-  "validation": "passed"
+  "fixture_source": "https://www.trols.org.au/brta/fixture.php",
+  "synced_at_utc": "2026-09-19T03:23:47.075160+00:00",
+  "competitions": 2,
+  "sections": 44,
+  "fixtures": 1557,
+  "completed_fixtures": 1265,
+  "singles_rubbers": 4765,
+  "doubles_rubbers": 2391,
+  "validation": "passed",
+  "elapsed_seconds": 94.0
 }

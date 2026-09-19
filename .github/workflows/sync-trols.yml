@@ -10,6 +10,10 @@ on:
       - "scraper/sync_trols.py"
       - "model.py"
       - "generate_site_data.py"
+      - "app.js"
+      - "index.html"
+      - "style.css"
+      - "future.css"
       - "requirements.txt"
       - ".github/workflows/sync-trols.yml"
 
@@ -23,7 +27,7 @@ concurrency:
 jobs:
   sync:
     runs-on: ubuntu-latest
-    timeout-minutes: 12
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
         with:
@@ -42,7 +46,7 @@ jobs:
         id: changes
         shell: bash
         run: |
-          if git diff --quiet -- data/current/*.csv; then
+          if [ -z "$(git status --porcelain -- data/current/sections)" ]; then
             echo "new_results=false" >> "$GITHUB_OUTPUT"
             echo "NEW_RESULTS=false" >> "$GITHUB_ENV"
           else
@@ -61,7 +65,7 @@ jobs:
           heartbeat = {
               "checked_at_utc": datetime.now(timezone.utc).isoformat(),
               "new_results": os.environ.get("NEW_RESULTS") == "true",
-              "latest_round": sync["latest_round"],
+              "sections": sync["sections"],
               "fixtures": sync["fixtures"],
               "completed_fixtures": sync["completed_fixtures"],
               "singles_rubbers": sync["singles_rubbers"],
@@ -71,6 +75,9 @@ jobs:
           Path("data/current/last_check.json").write_text(json.dumps(heartbeat, indent=2) + "\n")
           PY
 
+      - name: Run model, scraper and generator regression tests
+        run: python -m unittest discover -s tests -v
+
       - name: Recalculate all ratings and website data
         run: python generate_site_data.py
 
@@ -79,12 +86,12 @@ jobs:
         run: |
           git config user.name "brta-ratings-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/current data.js
-          ROUND=$(python -c "import json; print(json.load(open('data/current/sync_status.json'))['latest_round'])")
+          git add data/current data/site data.js
+          SECTIONS=$(python -c "import json; print(json.load(open('data/current/sync_status.json'))['sections'])")
           if [ "$NEW_RESULTS" = "true" ]; then
-            git commit -m "NEW BRTA RESULTS OUT: ratings updated through Round $ROUND"
+            git commit -m "NEW BRTA RESULTS OUT: ratings refreshed across $SECTIONS sections"
           else
-            git commit -m "TROLS check: no new results through Round $ROUND"
+            git commit -m "TROLS check: no new results across $SECTIONS sections"
           fi
           git pull --rebase origin main
           git push
