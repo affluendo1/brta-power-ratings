@@ -51,3 +51,6 @@ html[data-theme="dark"]{--bg:#171b20;--panel:#22272e;--text:#e7eaed;--muted:#a5a
 /* Score is anchored to the overlay's true centre, independent of name length. */
 .rubber-list{width:min(100%,820px);margin-inline:auto}.rubber-row{position:relative;grid-template-columns:34px minmax(0,1fr) minmax(0,1fr)}.rubber-home{grid-column:2;padding-right:46px}.rubber-away{grid-column:3;padding-left:46px}.rubber-row strong{position:absolute;inset:0;display:grid;place-items:center;z-index:1;padding:0;background:transparent;text-align:center;pointer-events:none}.result-detail-head,.result-metrics{width:min(100%,820px);margin-left:auto;margin-right:auto}
 @media(max-width:760px){.rubber-row{grid-template-columns:26px minmax(0,1fr) minmax(0,1fr)}.rubber-home{padding-right:39px}.rubber-away{padding-left:39px}}
+
+/* Keep the header clear of iPhone's Dynamic Island and status indicators. */
+@supports(padding-top:max(1px,env(safe-area-inset-top))){.site-header{padding-top:max(14px,calc(14px + env(safe-area-inset-top)))}}
