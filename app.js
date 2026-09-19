@@ -13,7 +13,7 @@ const ratingInfo={
 };
 
 function resolvedDark(){return theme==='dark'||(theme==='auto'&&matchMedia('(prefers-color-scheme: dark)').matches)}
-function applyTheme(){document.documentElement.dataset.theme=theme;document.documentElement.dataset.accent=accent;const dark=resolvedDark(),future=interfaceMode==='future',colour=future?(dark?'#07120d':'#e8f0eb'):(dark?'#171b20':'#eef1f4');document.documentElement.style.backgroundColor=colour;document.body?.style.setProperty('background-color',colour);$('#themeColor').content=colour;document.documentElement.style.colorScheme=dark?'dark':'light'}
+function applyTheme(){document.documentElement.dataset.theme=theme;document.documentElement.dataset.accent=accent;const dark=resolvedDark(),future=interfaceMode==='future',scheme={green:['#e8f0eb','#07120d'],blue:['#edf5ff','#071426'],red:['#fff0f2','#210b11'],purple:['#f1edff','#120b20'],black:['#f0f2f4','#0b0f13'],white:['#ffffff','#18212a']}[accent]||['#e8f0eb','#07120d'],colour=future?scheme[dark?1:0]:(dark?'#171b20':'#eef1f4');document.documentElement.style.backgroundColor=colour;document.body?.style.setProperty('background-color',colour);$('#themeColor').content=colour;document.documentElement.style.colorScheme=dark?'dark':'light'}
 applyTheme();matchMedia('(prefers-color-scheme: dark)').addEventListener?.('change',()=>{if(theme==='auto')applyTheme()});
 function fmtTime(iso){if(!iso)return'Not available';return new Date(iso).toLocaleString('en-AU',{day:'numeric',month:'short',hour:'numeric',minute:'2-digit'})}
 function personButton(name){return '<button class="person" data-player="'+esc(name)+'">'+esc(name)+'</button>'}
