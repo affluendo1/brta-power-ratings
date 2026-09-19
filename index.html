@@ -6,6 +6,10 @@
   <meta id="themeColor" name="theme-color" content="#eef1f4">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="BRTA Ratings">
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="apple-touch-icon" href="assets/brta-icon.png?v=1">
+  <link rel="manifest" href="manifest.webmanifest?v=1">
   <title>BRTA Power Ratings</title>
   <script>
   (function(){var m=localStorage.getItem('brta-interface')||'classic',t=localStorage.getItem('brta-theme')||'auto',a=localStorage.getItem('brta-accent')||'green',d=t==='dark'||(t==='auto'&&matchMedia('(prefers-color-scheme: dark)').matches),c=m==='future'?(d?'#07120d':'#e8f0eb'):(d?'#171b20':'#eef1f4'),l=document.createElement('link');document.documentElement.dataset.accent=a;document.documentElement.style.backgroundColor=c;document.documentElement.style.colorScheme=d?'dark':'light';l.id='siteStyles';l.rel='stylesheet';l.href=m==='future'?'future.css?v=7':'style.css?v=17';document.head.appendChild(l)})()

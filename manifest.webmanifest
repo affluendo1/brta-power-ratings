@@ -1,0 +1,17 @@
+{
+  "name": "BRTA Power Ratings",
+  "short_name": "BRTA Ratings",
+  "description": "Unofficial BRTA tennis ratings, results and standings.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#07120d",
+  "theme_color": "#07120d",
+  "icons": [
+    {
+      "src": "assets/brta-icon.png",
+      "sizes": "1254x1254",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
