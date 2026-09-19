@@ -23,6 +23,11 @@ UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chr
 ALIASES = {
     "Geoge Si": "George Si",
 }
+EXPECTED_SECTION_CODE = "UA009"
+EXPECTED_TEAMS = {
+    "BLTC", "Beaumaris CC", "Coatesville", "Kings Park",
+    "Kooyong", "Lauriston", "St James", "Victory Park",
+}
 
 FIXTURE_FIELDS = [
     "fixture_id","date","round","home_team","away_team","home_rubbers",
@@ -70,7 +75,6 @@ def parse_results_page(html: str):
     fixtures = []
     current_date = None
     current_round = None
-    match_index = 0
 
     loaded = None
     for span in soup.find_all("span"):
@@ -87,7 +91,6 @@ def parse_results_page(html: str):
             if m:
                 current_date = m.group(1)
                 current_round = int(m.group(2))
-                match_index = 0
             continue
 
         if current_date is None or len(tds) not in (3, 9):
@@ -98,7 +101,6 @@ def parse_results_page(html: str):
         if not first or not last or first.lower().startswith("home team"):
             continue
 
-        match_index += 1
         home = clean_team(first)
         away = clean_team(last)
         match_id = None
@@ -112,10 +114,12 @@ def parse_results_page(html: str):
                 ids = re.findall(r"'(UA\d+)'", onclick)
                 if ids:
                     match_id = ids[-1]
-        if not match_id:
-            match_id = f"UA009{current_round:02d}{match_index}"
-
         if len(tds) == 3:
+            # TROLS may list a not-yet-played fixture without a scorecard link.
+            # This is a display-only key; it is never passed to match_popup.php.
+            if not match_id:
+                slug = re.sub(r"[^a-z0-9]+", "-", f"{home}-{away}".casefold()).strip("-")
+                match_id = f"pending-r{current_round}-{slug}"
             status_text = clean_text(tds[1].get_text(" ", strip=True))
             status = "Wash Out" if "Wash Out" in status_text else "Missing Result" if "Missing Result" in status_text else status_text
             fixture = {
@@ -125,6 +129,11 @@ def parse_results_page(html: str):
                 "status": status, "notes": "No individual scorecard / no rubbers recorded" if status == "Wash Out" else "TROLS marked Missing Result; no scorecard available"
             }
         else:
+            if not match_id:
+                raise RuntimeError(
+                    "MATCH ID PARSER BROKE: completed TROLS fixture row did not expose an official match ID. "
+                    "Refusing to construct a guessed ID in an unattended sync."
+                )
             try:
                 hr = int(clean_text(tds[2].get_text()))
                 hg = int(clean_text(tds[3].get_text()))
@@ -236,6 +245,75 @@ def count_existing(path: Path) -> int:
     with path.open(encoding="utf-8") as f:
         return max(0, sum(1 for _ in f) - 1)
 
+
+def _integer(value, label: str) -> int:
+    try:
+        return int(value)
+    except (TypeError, ValueError) as exc:
+        raise RuntimeError(f"Invalid {label}: {value!r}") from exc
+
+
+def _validate_score(home_games, away_games, label: str) -> tuple[int, int]:
+    home, away = _integer(home_games, f"home games in {label}"), _integer(away_games, f"away games in {label}")
+    winner, loser = max(home, away), min(home, away)
+    legal = (winner == 6 and 0 <= loser <= 4) or (winner == 7 and loser in (5, 6))
+    if home == away or not legal:
+        raise RuntimeError(f"Illegal BRTA set score in {label}: {home}-{away}")
+    return home, away
+
+
+def validate_dataset(fixtures, singles, doubles, section_code: str) -> None:
+    """Validate internal fixture arithmetic before publishing new source data."""
+    if section_code != EXPECTED_SECTION_CODE:
+        raise RuntimeError(f"Expected section code {EXPECTED_SECTION_CODE}, got {section_code!r}")
+    fixture_ids = [f["fixture_id"] for f in fixtures]
+    if len(set(fixture_ids)) != len(fixture_ids):
+        raise RuntimeError("Duplicate fixture IDs in TROLS results")
+    seen_teams = {f["home_team"] for f in fixtures} | {f["away_team"] for f in fixtures}
+    if seen_teams != EXPECTED_TEAMS:
+        raise RuntimeError(f"Unexpected Section 6 teams: {sorted(seen_teams)}")
+
+    fixture_map = {f["fixture_id"]: f for f in fixtures}
+    if any(r["fixture_id"] not in fixture_map for r in singles + doubles):
+        raise RuntimeError("A rubber references a fixture that is not in the fixture list")
+    seen_positions = set()
+    for discipline, rows in (("singles", singles), ("doubles", doubles)):
+        for row in rows:
+            key = (discipline, row["fixture_id"], row["position"])
+            if key in seen_positions:
+                raise RuntimeError(f"Duplicate fixture/position entry: {key[1]} {discipline} {key[2]}")
+            seen_positions.add(key)
+            home, away = _validate_score(row["home_games"], row["away_games"], f"{key[1]} {discipline} {key[2]}")
+            expected_winner = row.get("home_player") or row.get("home_pair")
+            actual_winner = row.get("winning_player") or row.get("winning_pair")
+            if (home > away) != (actual_winner == expected_winner):
+                raise RuntimeError(f"Winner does not agree with score in {key[1]} {discipline} {key[2]}")
+
+    for fixture in fixtures:
+        if fixture["status"] != "Completed":
+            continue
+        fid = fixture["fixture_id"]
+        sr = [r for r in singles if r["fixture_id"] == fid]
+        dr = [r for r in doubles if r["fixture_id"] == fid]
+        if len(sr) != 4 or len(dr) != 2:
+            raise RuntimeError(f"{fid} must contain exactly four singles and two doubles rubbers")
+        home_singles = {r["home_player"] for r in sr}
+        away_singles = {r["away_player"] for r in sr}
+        # Pair strings are already canonical participant records, so validate
+        # each listed roster independently from the scorecard parser.
+        home_doubles = {p.strip() for r in dr for p in r["home_pair"].split("/")}
+        away_doubles = {p.strip() for r in dr for p in r["away_pair"].split("/")}
+        if len(home_singles) != 4 or len(away_singles) != 4 or home_singles != home_doubles or away_singles != away_doubles:
+            raise RuntimeError(f"{fid} does not contain four consistent roster members per team")
+        home_games = sum(_integer(r["home_games"], f"home games in {fid}") for r in sr + dr)
+        away_games = sum(_integer(r["away_games"], f"away games in {fid}") for r in sr + dr)
+        home_rubbers = sum(_integer(r["home_games"], f"home games in {fid}") > _integer(r["away_games"], f"away games in {fid}") for r in sr + dr)
+        away_rubbers = 6 - home_rubbers
+        if home_games != _integer(fixture["home_games"], f"fixture home games for {fid}") or away_games != _integer(fixture["away_games"], f"fixture away games for {fid}"):
+            raise RuntimeError(f"Fixture game totals do not match individual rubbers for {fid}")
+        if home_rubbers != _integer(fixture["home_rubbers"], f"fixture home rubbers for {fid}") or away_rubbers != _integer(fixture["away_rubbers"], f"fixture away rubbers for {fid}"):
+            raise RuntimeError(f"Fixture rubber totals do not match individual rubbers for {fid}")
+
 def main():
     s = requests.Session()
     s.headers.update({"User-Agent": UA, "Accept": "text/html,application/xhtml+xml", "Referer": RESULTS_URL})
@@ -249,6 +327,8 @@ def main():
     second.raise_for_status()
     soup2 = BeautifulSoup(second.text, "html.parser")
     section = choose_option(soup2, "section", SECTION_LABEL)
+    if section != EXPECTED_SECTION_CODE:
+        raise RuntimeError(f"Selected {SECTION_LABEL!r}, but TROLS returned section code {section!r}")
 
     final = s.post(RESULTS_URL, data={"daytime": daytime, "section": section, "which": "1", "style": ""}, timeout=30)
     final.raise_for_status()
@@ -272,13 +352,14 @@ def main():
         raise RuntimeError(f"Safety gate: {len(singles)} singles rows for {len(completed)} completed fixtures")
     if len(doubles) != 2 * len(completed):
         raise RuntimeError(f"Safety gate: {len(doubles)} doubles rows for {len(completed)} completed fixtures")
+    validate_dataset(fixtures, singles, doubles, section)
 
     old_s = count_existing(OUT / "section6_singles_results.csv")
     old_d = count_existing(OUT / "section6_doubles_results.csv")
     if old_s and len(singles) < old_s:
-        raise RuntimeError(f"Safety gate: singles shrank from {old_s} to {len(singles)}")
+        raise RuntimeError(f"Dataset shrank. Manual review required: singles {old_s} -> {len(singles)}")
     if old_d and len(doubles) < old_d:
-        raise RuntimeError(f"Safety gate: doubles shrank from {old_d} to {len(doubles)}")
+        raise RuntimeError(f"Dataset shrank. Manual review required: doubles {old_d} -> {len(doubles)}")
 
     write_csv(OUT / "section6_fixtures.csv", fixtures, FIXTURE_FIELDS)
     write_csv(OUT / "section6_singles_results.csv", singles, SINGLES_FIELDS)

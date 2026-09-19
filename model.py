@@ -22,6 +22,19 @@ DISPLAY_SCALE = 600.0
 MIN_MATCHES = 4
 MIN_DOUBLES_MATCHES = 2
 
+
+def centred_covariance(covariance: np.ndarray) -> np.ndarray:
+    """Return covariance on the displayed, mean-zero strength scale.
+
+    The fitted latent strengths are recentered before they are converted to
+    Power.  Their uncertainty must undergo the same linear transformation;
+    otherwise every displayed standard error retains an irrelevant common
+    shift component.
+    """
+    n = covariance.shape[0]
+    projection = np.eye(n) - np.ones((n, n)) / n
+    return projection @ covariance @ projection.T
+
 def prepare(df):
     df = df[df["status"].eq("Completed")].copy()
     df = df.dropna(subset=["home_player","away_player","home_games","away_games"])
@@ -69,7 +82,7 @@ def fit_power_ratings(csv_path):
     H=L2*np.eye(n_players)
     for a,b,c in zip(i,j,curvature):
         H[a,a]+=c; H[b,b]+=c; H[a,b]-=c; H[b,a]-=c
-    covariance=np.linalg.inv(H)
+    covariance=centred_covariance(np.linalg.inv(H))
     power_se=DISPLAY_SCALE*np.sqrt(np.diag(covariance))
     rows=[]
     for player in players:

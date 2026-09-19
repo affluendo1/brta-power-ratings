@@ -8,7 +8,9 @@ on:
   push:
     paths:
       - "scraper/sync_trols.py"
+      - "model.py"
       - "generate_site_data.py"
+      - "requirements.txt"
       - ".github/workflows/sync-trols.yml"
 
 permissions:
@@ -31,7 +33,7 @@ jobs:
           python-version: "3.12"
 
       - name: Install scraper and rating dependencies
-        run: pip install requests beautifulsoup4 pandas numpy scipy
+        run: pip install -r requirements.txt
 
       - name: Fetch and validate TROLS results
         run: python scraper/sync_trols.py
