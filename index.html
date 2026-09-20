@@ -9,6 +9,7 @@
   <meta name="apple-mobile-web-app-title" content="BRTA Ratings">
   <meta name="mobile-web-app-capable" content="yes">
   <link rel="apple-touch-icon" href="assets/brta-icon.png?v=1">
+  <link rel="icon" type="image/png" href="assets/brta-favicon.png?v=1">
   <link rel="manifest" href="manifest.webmanifest?v=1">
   <title>BRTA Power Ratings</title>
   <script>
@@ -44,12 +45,12 @@
   <nav class="main-nav" aria-label="Main navigation">
     <button class="main-tab" data-page="results">Results</button>
     <button class="main-tab" data-page="standings">Standings</button>
-    <button class="main-tab active" data-page="ratings">Ratings</button>
+    <button class="main-tab" data-page="ratings">Ratings</button>
     <button class="main-tab" data-page="teams">Teams</button>
     <button class="main-tab" data-page="fixtures">Fixtures</button>
   </nav>
 
-  <section id="page-ratings" class="page active">
+  <section id="page-ratings" class="page">
     <div class="toolbar ratings-toolbar">
       <div class="subtabs" id="ratingTabs">
         <button class="subtab active" data-rating="singles">Singles</button>
@@ -75,7 +76,7 @@
     <div class="notice" id="standingsCaveat"></div>
   </section>
 
-  <section id="page-results" class="page">
+  <section id="page-results" class="page active">
     <div class="section-title"><div><h1>Results</h1><p>Official-as-entered TROLS results, with each scorecard’s playing order and rubbers.</p></div></div>
     <div id="resultsList" class="results-list"></div>
   </section>
