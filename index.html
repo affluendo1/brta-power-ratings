@@ -12,7 +12,7 @@
   <link rel="manifest" href="manifest.webmanifest?v=1">
   <title>BRTA Power Ratings</title>
   <script>
-  (function(){var m=localStorage.getItem('brta-interface')||'classic',t=localStorage.getItem('brta-theme')||'auto',a=localStorage.getItem('brta-accent')||'green',d=t==='dark'||(t==='auto'&&matchMedia('(prefers-color-scheme: dark)').matches),p={green:['#e8f0eb','#07120d'],blue:['#edf5ff','#071426'],red:['#fff0f2','#210b11'],purple:['#f1edff','#120b20'],black:['#f0f2f4','#0b0f13'],white:['#ffffff','#18212a']}[a]||['#e8f0eb','#07120d'],c=m==='future'?p[d?1:0]:(d?'#171b20':'#eef1f4'),l=document.createElement('link');document.documentElement.dataset.accent=a;document.documentElement.style.backgroundColor=c;document.documentElement.style.colorScheme=d?'dark':'light';l.id='siteStyles';l.rel='stylesheet';l.href=m==='future'?'future.css?v=10':'style.css?v=19';document.head.appendChild(l)})()
+  (function(){var m=localStorage.getItem('brta-interface')||'future',t=localStorage.getItem('brta-theme')||'auto',a=localStorage.getItem('brta-accent')||'green',d=t==='dark'||(t==='auto'&&matchMedia('(prefers-color-scheme: dark)').matches),p={green:['#e8f0eb','#07120d'],blue:['#edf5ff','#071426'],red:['#fff0f2','#210b11'],purple:['#f1edff','#120b20'],black:['#f0f2f4','#0b0f13'],white:['#ffffff','#18212a']}[a]||['#e8f0eb','#07120d'],c=m==='future'?p[d?1:0]:(d?'#171b20':'#eef1f4'),l=document.createElement('link');document.documentElement.dataset.accent=a;document.documentElement.style.backgroundColor=c;document.documentElement.style.colorScheme=d?'dark':'light';l.id='siteStyles';l.rel='stylesheet';l.href=m==='future'?'future.css?v=11':'style.css?v=20';document.head.appendChild(l)})()
   </script>
 </head>
 <body>
@@ -28,17 +28,24 @@
 </header>
 <main class="wrap">
   <section class="section-picker" aria-label="Competition and section">
-    <label><span>Competition</span><select id="competitionSelect"></select></label>
-    <label><span>Section</span><select id="sectionSelect"></select></label>
-    <button id="exportSectionBtn" class="button secondary" type="button" title="Download the selected section's fixtures and all published rubbers as a CSV file">Export section CSV</button>
-    <span class="section-count" id="sectionCount"></span>
+    <div class="section-choice" id="competitionPicker">
+      <span class="choice-label">Competition</span>
+      <button id="competitionSelect" class="choice-trigger" type="button" aria-haspopup="listbox" aria-expanded="false"><span>Loading competitions</span><i aria-hidden="true"></i></button>
+      <div id="competitionOptions" class="choice-options" role="listbox" aria-label="Competition"></div>
+    </div>
+    <div class="section-choice" id="sectionPicker">
+      <span class="choice-label">Section</span>
+      <button id="sectionSelect" class="choice-trigger" type="button" aria-haspopup="listbox" aria-expanded="false"><span>Loading sections</span><i aria-hidden="true"></i></button>
+      <div id="sectionOptions" class="choice-options" role="listbox" aria-label="Section"></div>
+    </div>
+    <div class="section-picker-footer"><span class="section-count" id="sectionCount"></span><button id="exportSectionBtn" class="export-link" type="button" title="Download this section's fixtures and all published rubbers as a CSV file">Export this section’s CSV</button></div>
   </section>
   <section class="status-strip" id="statusStrip"></section>
   <nav class="main-nav" aria-label="Main navigation">
+    <button class="main-tab" data-page="results">Results</button>
+    <button class="main-tab" data-page="standings">Standings</button>
     <button class="main-tab active" data-page="ratings">Ratings</button>
     <button class="main-tab" data-page="teams">Teams</button>
-    <button class="main-tab" data-page="standings">Standings</button>
-    <button class="main-tab" data-page="results">Results</button>
     <button class="main-tab" data-page="fixtures">Fixtures</button>
   </nav>
 
@@ -74,7 +81,7 @@
   </section>
 
   <section id="page-fixtures" class="page">
-    <div class="section-title"><div><h1>Upcoming Fixtures</h1><p>The remaining draw in the exact home/away order published by TROLS.</p></div><span class="small-note">Official draw</span></div>
+    <div class="section-title"><div><h1>Fixtures</h1><p>The full official draw in TROLS home/away order, including completed and upcoming rounds.</p></div><span class="small-note">Official draw</span></div>
     <div id="fixturesList" class="fixture-rounds"></div>
   </section>
 </main>
@@ -85,7 +92,7 @@
 <div id="resultOverlay" class="overlay hidden"><div class="overlay-backdrop" data-result-close="1"></div><aside class="result-sheet"><button id="resultClose" class="close-btn" aria-label="Close">×</button><div id="resultContent"></div></aside></div>
 <div id="modeSwitchOverlay" class="mode-switch hidden" aria-live="polite"><div class="mode-switch-box"><div class="progress-ring" id="progressRing"><div><b id="progressPct">0%</b></div></div><h2>Switching interface</h2><p id="switchStatus">Preparing layout…</p></div></div>
 <div id="syncToastHost" class="sync-toast-host" aria-live="polite" aria-atomic="true"></div>
-<script src="data.js?v=11"></script>
-<script src="app.js?v=4"></script>
+<script src="data.js?v=12"></script>
+<script src="app.js?v=5"></script>
 </body>
 </html>

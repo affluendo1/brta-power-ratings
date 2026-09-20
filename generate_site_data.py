@@ -157,7 +157,7 @@ def fit_power_ratings_from_df(df):
                          ci95_low=power[k]-1.96*se[k],ci95_high=power[k]+1.96*se[k]))
     return pd.DataFrame(rows).sort_values("power",ascending=False)
 
-def fit_individual_doubles(doubles):
+def fit_individual_doubles(doubles, *, rubbers_format=False):
     df=doubles[doubles["status"].eq("Completed")].copy()
     if "valid_for_rating" in df:
         df=df[df["valid_for_rating"].astype(str).str.casefold().isin({"true","1","yes"})].copy()
@@ -204,10 +204,18 @@ def fit_individual_doubles(doubles):
         k=ix[p0]; s=stats[p0]
         partner_count=len(s["partners"])
         structurally_unidentified=identifiability_exposure[k] >= IDENTIFIABILITY_EXPOSURE_THRESHOLD
+        # Rubbers divisions have two-player teams. Their doubles evidence is
+        # inherently partner-dependent, so hiding every doubles/Overall entry
+        # is less useful than publishing the evidence with that limitation
+        # explicit. Other formats retain the stricter identifiable-network
+        # qualification rule.
         qualified=(s["matches"] >= INDIVIDUAL_DOUBLES_MIN and
-                   partner_count >= INDIVIDUAL_DOUBLES_MIN_PARTNERS and
-                   not structurally_unidentified)
-        if qualified:
+                   (rubbers_format or
+                    (partner_count >= INDIVIDUAL_DOUBLES_MIN_PARTNERS and
+                     not structurally_unidentified)))
+        if rubbers_format and s["matches"] >= INDIVIDUAL_DOUBLES_MIN:
+            ranking_status="Partner-dependent"
+        elif qualified:
             ranking_status="Established"
         elif structurally_unidentified or (s["matches"] >= INDIVIDUAL_DOUBLES_MIN and partner_count < INDIVIDUAL_DOUBLES_MIN_PARTNERS):
             ranking_status="Partner-dependent"
@@ -268,16 +276,72 @@ def singles_match_array(singles):
                     int(r["home_games"]),int(r["away_games"]),str(r["winning_player"]),str(r["score"]),str(r["fixture_id"])])
     return out
 
-def ladder(fixtures):
+def brta_scoring_rules(meta):
+    """Return the 2026 Weekend Junior By-Law scoring constants.
+
+    Rules 2.1–2.4 and 14 use one points system for Sets/Green Ball and a
+    smaller one for two-player Rubbers: team-result points plus one point per
+    won set and half a point per unfinished set. Keeping this here means Team
+    Power and the ladder cannot quietly use different rules.
+    """
+    rubbers = str(meta.get("format", "")).casefold() == "rubbers" or \
+              str(meta.get("section_label", "")).casefold().startswith("rubbers")
+    return {
+        "format": "rubbers" if rubbers else "sets",
+        "team_win": 2.0 if rubbers else 4.0,
+        "team_draw": 1.0 if rubbers else 2.0,
+        "scheduled_sets": 5 if rubbers else 6,
+    }
+
+
+def _number(value):
+    try:
+        if pd.isna(value) or str(value).strip() == "":
+            return None
+        return float(value)
+    except (TypeError, ValueError):
+        return None
+
+
+def fixture_points(r, rules):
+    """Return the official or By-Law-derived ledger for one fixture.
+
+    Completed scorecards retain the published TROLS points. TROLS does not
+    include numeric cells for a washout or a full-team forfeit, so Rule 14 is
+    applied directly instead of guessing from the most common result score.
+    A full forfeit gives every set point to the receiving team, but no game
+    percentage (Rule 14.4).
+    """
+    status = str(r.get("status", ""))
+    home, away = _number(r.get("home_points", "")), _number(r.get("away_points", ""))
+    if home is not None and away is not None:
+        return home, away
+    if status == "Wash Out":
+        each = rules["team_draw"] + rules["scheduled_sets"] * 0.5
+        return each, each
+    # TROLS displays "Forfeited To" between home and away when the home side
+    # concedes to the visitor, and "Forfeited By" when the visitor concedes.
+    if status == "Forfeited To":
+        return 0.0, rules["team_win"] + rules["scheduled_sets"]
+    if status == "Forfeited By":
+        return rules["team_win"] + rules["scheduled_sets"], 0.0
+    return None, None
+
+
+def ladder(fixtures, rules):
     pts=Counter()
     for _,r in fixtures.iterrows():
-        h,a=str(r.home_team),str(r.away_team); status=str(r.status)
-        if status!="Completed": continue
-        pts[h]+=float(r.home_points); pts[a]+=float(r.away_points)
+        h,a=str(r.home_team),str(r.away_team)
+        if str(r.status)=="Bye":
+            continue
+        home_points, away_points=fixture_points(r, rules)
+        if home_points is None or away_points is None:
+            continue
+        pts[h]+=home_points; pts[a]+=away_points
     return pts
 
-def team_rows(single_rows, fixtures):
-    pts=ladder(fixtures); by=defaultdict(list)
+def team_rows(single_rows, fixtures, rules):
+    pts=ladder(fixtures, rules); by=defaultdict(list)
     for x in single_rows:
         # Team Power measures the active modelled roster, not only the public
         # leaderboard.  Low-sample ratings are already shrunk toward 1500.
@@ -293,17 +357,29 @@ def team_rows(single_rows, fixtures):
                      "ladder":int(ladder_points) if ladder_points.is_integer() else ladder_points})
     return sorted(rows,key=lambda x:x["avg"],reverse=True)
 
-def reconstructed_standings(fixtures):
+def reconstructed_standings(fixtures, rules):
     teams = sorted((set(fixtures.home_team) | set(fixtures.away_team))-{"Bye"})
     s = {t: dict(team=t, played=0, wins=0, draws=0, losses=0, rubbersFor=0, rubbersAgainst=0,
                  gamesFor=0, gamesAgainst=0, points=0) for t in teams}
-    completed_totals=[float(r.home_points)+float(r.away_points) for _,r in fixtures.iterrows() if str(r.status)=="Completed"]
-    washout_points=(Counter(completed_totals).most_common(1)[0][0]/2) if completed_totals else 0
     for _, r in fixtures.iterrows():
         h, a, status = str(r.home_team), str(r.away_team), str(r.status)
         if h=="Bye" or a=="Bye": continue
+        home_points, away_points=fixture_points(r, rules)
         if status == "Wash Out":
-            s[h]["points"] += washout_points; s[a]["points"] += washout_points
+            # Rule 14 gives both teams draw points plus a half point per
+            # uncompleted set. With no scorecard this is a draw, but contributes
+            # no game percentage.
+            s[h]["played"] += 1; s[a]["played"] += 1
+            s[h]["draws"] += 1; s[a]["draws"] += 1
+            s[h]["points"] += home_points; s[a]["points"] += away_points
+            continue
+        if status in {"Forfeited To", "Forfeited By"}:
+            s[h]["played"] += 1; s[a]["played"] += 1
+            s[h]["points"] += home_points; s[a]["points"] += away_points
+            if home_points > away_points:
+                s[h]["wins"] += 1; s[a]["losses"] += 1
+            else:
+                s[a]["wins"] += 1; s[h]["losses"] += 1
             continue
         if status != "Completed":
             continue
@@ -314,9 +390,14 @@ def reconstructed_standings(fixtures):
         s[a]["rubbersFor"] += ar; s[a]["rubbersAgainst"] += hr
         s[h]["gamesFor"] += hg; s[h]["gamesAgainst"] += ag
         s[a]["gamesFor"] += ag; s[a]["gamesAgainst"] += hg
-        s[h]["points"] += float(r.home_points); s[a]["points"] += float(r.away_points)
-        home_win = hr > ar or (hr == ar and hg > ag)
-        away_win = ar > hr or (hr == ar and ag > hg)
+        s[h]["points"] += home_points; s[a]["points"] += away_points
+        # Rules 2.1–2.4 decide a tied match on sets, then games. Sets-format
+        # result rows have one set per rubber, so the published rubber figure
+        # is the set total in that format.
+        hs, ass=_number(r.home_sets), _number(r.away_sets)
+        hs, ass=(hs, ass) if hs is not None and ass is not None else (hr, ar)
+        home_win = hs > ass or (hs == ass and hg > ag)
+        away_win = ass > hs or (hs == ass and ag > hg)
         if home_win:
             s[h]["wins"] += 1; s[a]["losses"] += 1
         elif away_win:
@@ -325,20 +406,33 @@ def reconstructed_standings(fixtures):
             s[h]["draws"] += 1; s[a]["draws"] += 1
     for row in s.values():
         if float(row["points"]).is_integer(): row["points"]=int(row["points"])
-    return sorted(s.values(), key=lambda x: (-x["points"], -(x["rubbersFor"]-x["rubbersAgainst"]),
-                                             -(x["gamesFor"]-x["gamesAgainst"]), x["team"]))
+    # Rule 14.4 uses games-for / games-against percentage, not the rubber
+    # difference. Complete forfeits deliberately have no percentage.
+    def standing_key(x):
+        total=x["gamesFor"]+x["gamesAgainst"]
+        percentage=x["gamesFor"] / total if total else -1.0
+        return (-x["points"], -percentage, x["team"])
+    return sorted(s.values(), key=standing_key)
 
-def upcoming_fixtures(draw, fixtures):
-    completed={str(r.fixture_id) for _,r in fixtures.iterrows() if str(r.status)=="Completed"}
-    latest_published_round=max(int(value) for value in fixtures["round"])
-    result_by_key={(int(r["round"]),str(r.home_team),str(r.away_team)):str(r.fixture_id) for _,r in fixtures.iterrows()}
+def draw_fixtures(draw, fixtures, rules):
+    """Return the whole official draw, enriched with published results."""
+    result_by_key={(int(r["round"]),str(r.home_team),str(r.away_team)):r for _,r in fixtures.iterrows()}
     by_round=defaultdict(list)
     for _,r in draw.iterrows():
-        if int(r["round"]) <= latest_published_round: continue
+        key=(int(r["round"]),str(r.home_team),str(r.away_team))
+        result=result_by_key.get(key)
         fid=str(r.fixture_id) if pd.notna(r.fixture_id) else ""
-        fid=fid if fid and fid!="nan" else result_by_key.get((int(r["round"]),str(r.home_team),str(r.away_team)),"")
-        if fid in completed: continue
-        by_round[int(r["round"])].append({"home":str(r.home_team),"away":str(r.away_team),"fixtureId":fid or str(r.draw_id)})
+        fid=fid if fid and fid!="nan" else (str(result.fixture_id) if result is not None else str(r.draw_id))
+        item={"home":str(r.home_team),"away":str(r.away_team),"fixtureId":fid,
+              "status":str(result.status) if result is not None else "Scheduled"}
+        if result is not None:
+            hp,ap=fixture_points(result, rules)
+            if hp is not None and ap is not None:
+                item.update({"homePoints":hp,"awayPoints":ap})
+            if str(result.status)=="Completed":
+                item.update({"homeRubbers":int(result.home_rubbers),"awayRubbers":int(result.away_rubbers),
+                             "homeGames":int(result.home_games),"awayGames":int(result.away_games)})
+        by_round[int(r["round"])].append(item)
     return [{"round":rnd,"date":str(draw[draw["round"].astype(int).eq(rnd)].iloc[0]["date"]),
              "fixtures":games,"source":"official TROLS draw"} for rnd,games in sorted(by_round.items())]
 
@@ -375,9 +469,11 @@ def round_overview(fixtures, singles, rating_map):
         if str(r.status)=="Completed":
             card.update({"homeRubbers":int(r.home_rubbers),"awayRubbers":int(r.away_rubbers),
                          "homeGames":int(r.home_games),"awayGames":int(r.away_games)})
-            if int(r.home_rubbers)>int(r.away_rubbers) or (int(r.home_rubbers)==int(r.away_rubbers) and int(r.home_games)>int(r.away_games)):
+            home_sets, away_sets=_number(r.home_sets), _number(r.away_sets)
+            home_sets, away_sets=(home_sets, away_sets) if home_sets is not None and away_sets is not None else (int(r.home_rubbers), int(r.away_rubbers))
+            if home_sets>away_sets or (home_sets==away_sets and int(r.home_games)>int(r.away_games)):
                 card["winner"]=str(r.home_team)
-            elif int(r.away_rubbers)>int(r.home_rubbers) or (int(r.home_rubbers)==int(r.away_rubbers) and int(r.away_games)>int(r.home_games)):
+            elif away_sets>home_sets or (home_sets==away_sets and int(r.away_games)>int(r.home_games)):
                 card["winner"]=str(r.away_team)
             else: card["winner"]="Draw"
         fixture_cards.append(card)
@@ -401,7 +497,7 @@ def round_overview(fixtures, singles, rating_map):
     return {"round":latest,"date":date,"fixtures":fixture_cards,"topPerformance":top,
             "biggestUpset":upset,"dominantWin":dominant,"closestMatch":closest}
 
-def result_rounds(fixtures, singles, doubles):
+def result_rounds(fixtures, singles, doubles, rules):
     rubbers=defaultdict(list)
     for discipline,df,home_col,away_col,winner_col in (
         ("Singles",singles,"home_player","away_player","winning_player"),
@@ -418,9 +514,12 @@ def result_rounds(fixtures, singles, doubles):
         match={"fixtureId":str(r.fixture_id),"date":str(r.date),"round":int(r["round"]),
                "home":str(r.home_team),"away":str(r.away_team),"status":str(r.status),
                "rubbers":rubbers.get(str(r.fixture_id),[])}
+        home_points, away_points=fixture_points(r, rules)
+        if home_points is not None and away_points is not None:
+            match.update({"homePoints":home_points,"awayPoints":away_points})
         if str(r.status)=="Completed":
-            match.update({"homePoints":float(r.home_points),"awayPoints":float(r.away_points),
-                          "homeRubbers":int(r.home_rubbers),"awayRubbers":int(r.away_rubbers),
+            match.update({"homeRubbers":int(r.home_rubbers),"awayRubbers":int(r.away_rubbers),
+                          "homeSets":_number(r.home_sets),"awaySets":_number(r.away_sets),
                           "homeGames":int(r.home_games),"awayGames":int(r.away_games)})
         by_round[int(r["round"])].append(match)
     return [{"round":rnd,"date":matches[0]["date"],"fixtures":matches} for rnd,matches in sorted(by_round.items(),reverse=True)]
@@ -433,10 +532,11 @@ def build_section(meta):
     draw=pd.read_csv(section_dir/"draw.csv")
     singles=singles[singles.status.eq("Completed")].copy()
     doubles=doubles[doubles.status.eq("Completed")].copy()
+    rules=brta_scoring_rules(meta)
     player_teams,pair_teams=team_maps(singles,doubles)
     sr=fit_power_ratings(section_dir/"singles.csv")
     pr=fit_pairs(doubles)
-    dr=fit_individual_doubles(doubles)
+    dr=fit_individual_doubles(doubles, rubbers_format=rules["format"]=="rubbers")
     srows=website_rows(sr,player_teams)
     prows=website_rows(pr,pair_teams)
     drows=website_rows(dr,player_teams)
@@ -455,12 +555,12 @@ def build_section(meta):
         "doubles":prows,
         "doublesIndividuals":drows,
         "singlesMatches":singles_match_array(singles),
-        "teams":team_rows(srows,fixtures),
-        "note":"Team Power uses every modelled singles player; low-sample ratings are already regularised toward the section centre. Standings use the points published by TROLS; missing fixtures remain uncounted.",
+        "teams":team_rows(srows,fixtures,rules),
+        "note":"Team Power uses every modelled singles player; low-sample ratings are already regularised toward the section centre. Standings use TROLS scorecard points and the 2026 BRTA Weekend Junior By-Laws for washouts and full-team forfeits.",
         "roundOverview":round_overview(fixtures,singles,rmap),
-        "standings":reconstructed_standings(fixtures),
-        "results":result_rounds(fixtures,singles,doubles),
-        "upcomingFixtures":upcoming_fixtures(draw,fixtures),
+        "standings":reconstructed_standings(fixtures,rules),
+        "results":result_rounds(fixtures,singles,doubles,rules),
+        "upcomingFixtures":draw_fixtures(draw,fixtures,rules),
         "sync":sync_meta(meta,fixtures),
     }
     qualified=[row for row in srows if row["matches"]>=MIN_MATCHES]
@@ -497,8 +597,8 @@ def main():
         "singlesMinMatches":MIN_MATCHES,"doublesMinMatches":MIN_DOUBLES_MATCHES,
         "doublesIndividualMinMatches":INDIVIDUAL_DOUBLES_MIN,
         "doublesIndividualMinPartners":INDIVIDUAL_DOUBLES_MIN_PARTNERS,
-        "overallRule":"50/50 average of singles and individual doubles ratings; ranked overall requires 4 singles matches and an established individual-doubles entry (4 appearances, 2 partners and no exact network identifiability warning).",
-        "doublesIndividualRule":"Individual doubles is partner-adjusted and experimental. Ranking requires 4 appearances, 2 distinct partners and no exact unresolved direction in the current doubles network.",
+        "overallRule":"50/50 average of singles and individual doubles ratings; ranked overall requires 4 singles matches and a publishable doubles contribution. In two-player Rubbers sections that doubles component is labelled partner-dependent.",
+        "doublesIndividualRule":"Individual doubles is partner-adjusted and experimental. Sets and Green Ball ranking requires 4 appearances, 2 distinct partners and no exact unresolved direction. Two-player Rubbers sections publish 4+ appearance pair-dependent evidence with that limitation shown.",
         "pairSynergyRule":"Exploratory, conditional pair-effect signal. It is strongly regularised (lambda=50) and does not affect the published singles, individual-doubles, Overall or Team Power ratings.",
         "dominanceRule":"Section leaders are ranked by expected game share against their own section's 1500-rated average player. This measures within-section dominance, not absolute strength between disconnected sections.",
     }
