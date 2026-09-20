@@ -40,7 +40,7 @@ function exportSectionCSV(){
 function choiceValue(id){return $('#'+id).dataset.value||''}
 function closeChoices(except){$$('.section-choice.open').forEach(x=>{if(x.id!==except){x.classList.remove('open');x.querySelector('.choice-trigger').setAttribute('aria-expanded','false')}})}
 function renderChoice(id, options, selected){
-  const trigger=$('#'+id),menu=$('#'+id+'Options'),choice=trigger.closest('.section-choice');
+  const trigger=$('#'+id),menu=$('#'+id.replace('Select','Options')),choice=trigger.closest('.section-choice');
   const chosen=options.find(x=>x[0]===selected)||options[0];
   trigger.dataset.value=chosen?.[0]||'';trigger.querySelector('span').textContent=chosen?.[1]||'No options';
   menu.innerHTML=options.map(([value,label])=>'<button type="button" role="option" class="choice-option '+(value===trigger.dataset.value?'selected':'')+'" aria-selected="'+(value===trigger.dataset.value)+'" data-choice-id="'+id+'" data-choice-value="'+esc(value)+'"><i aria-hidden="true">✓</i><span>'+esc(label)+'</span></button>').join('');
