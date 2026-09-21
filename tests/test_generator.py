@@ -2,7 +2,9 @@ import unittest
 
 import pandas as pd
 
-from generate_site_data import brta_scoring_rules, fixture_points, reconstructed_standings, team_rows
+from generate_site_data import (brta_scoring_rules, fixture_points, reconstructed_standings,
+                                 round_rating_history, strength_of_schedule, team_order_evidence,
+                                 team_rows)
 
 
 class TeamPowerTests(unittest.TestCase):
@@ -45,6 +47,31 @@ class BrtaStandingsTests(unittest.TestCase):
         ])
         rows = reconstructed_standings(fixtures, brta_scoring_rules({"format": "sets"}))
         self.assertEqual([row["team"] for row in rows], ["Gamma", "Alpha", "Beta", "Delta"])
+
+
+class HistoricalDataTests(unittest.TestCase):
+    def setUp(self):
+        self.singles = pd.DataFrame([
+            {"fixture_id":"f1","round":1,"date":"1 Jul 26","status":"Completed","position":"No. 1","home_team":"A","away_team":"B","home_player":"Alice","away_player":"Bob","home_games":6,"away_games":2,"winning_player":"Alice"},
+            {"fixture_id":"f1","round":1,"date":"1 Jul 26","status":"Completed","position":"No. 2","home_team":"A","away_team":"B","home_player":"Amy","away_player":"Ben","home_games":6,"away_games":4,"winning_player":"Amy"},
+            {"fixture_id":"f2","round":2,"date":"8 Jul 26","status":"Completed","position":"No. 1","home_team":"A","away_team":"B","home_player":"Alice","away_player":"Ben","home_games":6,"away_games":1,"winning_player":"Alice"},
+            {"fixture_id":"f2","round":2,"date":"8 Jul 26","status":"Completed","position":"No. 2","home_team":"A","away_team":"B","home_player":"Amy","away_player":"Bob","home_games":4,"away_games":6,"winning_player":"Bob"},
+        ])
+
+    def test_history_is_as_of_each_round_and_schedule_is_ranked(self):
+        teams = {"Alice":"A", "Amy":"A", "Bob":"B", "Ben":"B"}
+        history = round_rating_history(self.singles, teams)
+        self.assertEqual([row["round"] for row in history["rounds"]], [1, 2])
+        self.assertEqual(history["players"]["Alice"][0][3], 1)
+        self.assertEqual(history["players"]["Alice"][1][3], 2)
+        schedule = strength_of_schedule(self.singles, {"Alice":1700,"Amy":1600,"Bob":1400,"Ben":1500}, teams)
+        self.assertEqual(schedule[0]["rank"], 1)
+        self.assertEqual(len(schedule), 4)
+
+    def test_official_order_evidence_records_direct_precedence(self):
+        evidence = team_order_evidence(self.singles, {"Alice":1700,"Amy":1600,"Bob":1400,"Ben":1500}, {})
+        edges = {(row["above"], row["below"]): row["count"] for row in evidence["A"]["precedence"]}
+        self.assertEqual(edges[("Alice", "Amy")], 2)
 
 
 if __name__ == "__main__":
