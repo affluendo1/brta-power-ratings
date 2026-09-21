@@ -23,10 +23,10 @@
     }
     const fiveAll=choose(10,5)*p**5*q**5;
     if(greenBall){
-      const denominator=p*p+q*q;
-      const homeFromFiveAll=denominator?p*p/denominator:.5;
-      addDistribution(map,true,2,fiveAll*homeFromFiveAll);
-      addDistribution(map,false,-2,fiveAll*(1-homeFromFiveAll));
+      // BRTA Green Ball is first to six games with no tiebreak. At 5-5,
+      // the next game ends the set 6-5.
+      addDistribution(map,true,1,fiveAll*p);
+      addDistribution(map,false,-1,fiveAll*q);
     }else{
       addDistribution(map,true,2,fiveAll*p*p);
       addDistribution(map,false,-2,fiveAll*q*q);
