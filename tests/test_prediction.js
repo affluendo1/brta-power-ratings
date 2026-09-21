@@ -19,8 +19,15 @@ function approx(actual,expected,tolerance=1e-9){
   const green=P.shortSetDistribution(.62,{greenBall:true});
   assert.ok(standard.some(row=>Math.abs(row.margin)===1),'standard sets must include 7-6 / 6-7 paths');
   assert.ok(green.some(row=>Math.abs(row.margin)===1),'Green Ball can finish 6-5 because it is first to six');
-  assert.ok(!green.some(row=>Math.abs(row.margin)===2&&row.probability>0&&row.homeWin),'Green Ball must not add 7-5 continuation paths');
   approx(green.reduce((sum,row)=>sum+row.probability,0),1,1e-12);
+  const p=.62,q=1-p;
+  let direct=0;
+  for(let lost=0;lost<=5;lost++){
+    let comb=1;
+    for(let i=1;i<=lost;i++)comb=comb*(5+i)/i;
+    direct+=comb*p**6*q**lost;
+  }
+  approx(P.shortSetWin(p,{greenBall:true}),direct,1e-12);
   approx(P.shortSetWin(.5,{greenBall:true}),.5,1e-12);
 }
 {
