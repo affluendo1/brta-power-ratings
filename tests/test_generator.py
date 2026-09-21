@@ -73,6 +73,15 @@ class HistoricalDataTests(unittest.TestCase):
         edges = {(row["above"], row["below"]): row["count"] for row in evidence["A"]["precedence"]}
         self.assertEqual(edges[("Alice", "Amy")], 2)
 
+    def test_emergency_is_ordered_below_regular_roster_entries(self):
+        rows = pd.DataFrame([
+            {"fixture_id":"f1", "position":"No. 1", "home_team":"A", "away_team":"B", "home_player":"Emergency", "away_player":"Bob", "home_emergency":"true", "away_emergency":"false"},
+            {"fixture_id":"f1", "position":"No. 4", "home_team":"A", "away_team":"B", "home_player":"Regular", "away_player":"Ben", "home_emergency":"false", "away_emergency":"false"},
+        ])
+        evidence = team_order_evidence(rows, {"Emergency":1500,"Regular":1500,"Bob":1500,"Ben":1500}, {})
+        edges = {(row["above"], row["below"]): row["count"] for row in evidence["A"]["precedence"]}
+        self.assertIn(("Regular", "Emergency"), edges)
+
 
 if __name__ == "__main__":
     unittest.main()
