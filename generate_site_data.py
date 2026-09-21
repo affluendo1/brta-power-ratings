@@ -436,6 +436,80 @@ def draw_fixtures(draw, fixtures, rules):
     return [{"round":rnd,"date":str(draw[draw["round"].astype(int).eq(rnd)].iloc[0]["date"]),
              "fixtures":games,"source":"official TROLS draw"} for rnd,games in sorted(by_round.items())]
 
+def round_rating_history(singles, player_teams):
+    """Fit the model as it stood after every published round.
+
+    Each snapshot is deliberately fitted only to results available by that
+    round.  It is therefore a genuine historical record rather than today's
+    ratings merely relabelled with earlier round numbers.
+    """
+    history = defaultdict(list)
+    rounds = []
+    for rnd in sorted({int(value) for value in singles["round"]}):
+        observed = singles[singles["round"].astype(int).le(rnd)].copy()
+        fitted = website_rows(fit_power_ratings_from_df(observed), player_teams)
+        date = str(observed[observed["round"].astype(int).eq(rnd)].iloc[0]["date"])
+        for row in fitted:
+            history[row["player"]].append([rnd, row["rating"], row["se"], row["matches"]])
+        rounds.append({"round": rnd, "date": date, "players": len(fitted)})
+    return {"rounds": rounds, "players": dict(history)}
+
+
+def strength_of_schedule(singles, rating_map, player_teams):
+    """Current-model average opponent rating, ranked across every participant."""
+    opponents = defaultdict(list)
+    for _, row in singles.iterrows():
+        home, away = str(row.home_player), str(row.away_player)
+        if away in rating_map:
+            opponents[home].append(rating_map[away])
+        if home in rating_map:
+            opponents[away].append(rating_map[home])
+    rows = [{"player": player, "team": player_teams.get(player, ""),
+             "matches": len(values), "averageOpponent": round(float(np.mean(values)))}
+            for player, values in opponents.items() if values]
+    rows.sort(key=lambda row: (-row["averageOpponent"], -row["matches"], row["player"].casefold()))
+    for rank, row in enumerate(rows, 1):
+        row["rank"] = rank
+        row["total"] = len(rows)
+    return rows
+
+
+def team_order_evidence(singles, rating_map, player_teams):
+    """Preserve official playing-order continuity for the predictor.
+
+    ``precedence`` records every direct scorecard observation that one player
+    was listed above another.  The client only uses this objective evidence;
+    it never assumes a subjective preferred doubles partnership.
+    """
+    appearances = defaultdict(lambda: defaultdict(list))
+    relations = defaultdict(Counter)
+    for _, fixture in singles.groupby("fixture_id"):
+        for team_col, player_col in (("home_team", "home_player"), ("away_team", "away_player")):
+            team = str(fixture.iloc[0][team_col])
+            listed = []
+            for _, row in fixture.iterrows():
+                digits = "".join(ch for ch in str(row.position) if ch.isdigit())
+                if not digits:
+                    continue
+                player, position = str(row[player_col]), int(digits)
+                appearances[team][player].append(position)
+                listed.append((position, player))
+            for _, (position_a, player_a) in enumerate(listed):
+                for position_b, player_b in listed:
+                    if position_a < position_b:
+                        relations[team][(player_a, player_b)] += 1
+    output = {}
+    for team, players in appearances.items():
+        roster = []
+        for player, positions in players.items():
+            roster.append({"player": player, "rating": rating_map.get(player, DISPLAY_CENTRE),
+                           "appearances": len(positions), "averagePosition": round(float(np.mean(positions)), 2)})
+        roster.sort(key=lambda row: (row["averagePosition"], -row["appearances"], row["player"].casefold()))
+        output[team] = {"players": roster,
+                        "precedence": [{"above": a, "below": b, "count": count}
+                                       for (a, b), count in relations[team].items()]}
+    return output
+
 def sync_meta(metadata, fixtures):
     status = json.loads((DATA_DIR / "sync_status.json").read_text()) if (DATA_DIR / "sync_status.json").exists() else {}
     check = json.loads((DATA_DIR / "last_check.json").read_text()) if (DATA_DIR / "last_check.json").exists() else {}
@@ -458,7 +532,7 @@ def sync_meta(metadata, fixtures):
         "resultsLoadedByTrols": raw,
     }
 
-def round_overview(fixtures, singles, rating_map):
+def round_overview(fixtures, singles, doubles, rating_map, rating_history=None):
     completed_rounds=sorted(set(int(x) for x in singles["round"]))
     latest=max(completed_rounds)
     fx=fixtures[fixtures["round"].astype(int).eq(latest)].copy()
@@ -494,8 +568,24 @@ def round_overview(fixtures, singles, rating_map):
     dominant=max(performances,key=lambda x:(x["margin"],x["performance"])) if performances else None
     closest=min(performances,key=lambda x:(x["margin"],-x["performance"])) if performances else None
     date=str(sr.iloc[0]["date"]) if len(sr) else str(fx.iloc[0]["date"])
+    completed_cards=[card for card in fixture_cards if card["status"]=="Completed"]
+    average_margin=round(float(np.mean([abs(int(row.home_games)-int(row.away_games))
+                                        for _, row in sr.iterrows()])), 1) if len(sr) else None
+    movers=[]
+    if rating_history and latest > min(item["round"] for item in rating_history["rounds"]):
+        for player, values in rating_history["players"].items():
+            current=next((value for value in values if value[0]==latest), None)
+            previous=next((value for value in reversed(values) if value[0]<latest), None)
+            if current and previous:
+                movers.append({"player":player,"change":current[1]-previous[1],"rating":current[1]})
+    movers.sort(key=lambda row:(-row["change"],row["player"].casefold()))
     return {"round":latest,"date":date,"fixtures":fixture_cards,"topPerformance":top,
-            "biggestUpset":upset,"dominantWin":dominant,"closestMatch":closest}
+            "biggestUpset":upset,"dominantWin":dominant,"closestMatch":closest,
+            "summary":{"completedFixtures":len(completed_cards),"singlesRubbers":len(sr),
+                       "doublesRubbers":int(doubles["round"].astype(int).eq(latest).sum()),
+                       "averageSinglesMargin":average_margin,
+                       "topMover":movers[0] if movers else None,
+                       "biggestDrop":min(movers,key=lambda row:row["change"]) if movers else None}}
 
 def result_rounds(fixtures, singles, doubles, rules):
     rubbers=defaultdict(list)
@@ -548,6 +638,13 @@ def build_section(meta):
         pair["pairEffect"]=pair["rating"]-pair["individualAverage"]
         pair["pairSynergy"]=round(pair_synergy.get(pair["player"],0))
     rmap={x["player"]:x["rating"] for x in srows}
+    history=round_rating_history(singles,player_teams)
+    schedule=strength_of_schedule(singles,rmap,player_teams)
+    schedule_by_player={row["player"]:row for row in schedule}
+    for row in srows:
+        row.update({"averageOpponent":schedule_by_player.get(row["player"],{}).get("averageOpponent"),
+                    "scheduleRank":schedule_by_player.get(row["player"],{}).get("rank"),
+                    "scheduleTotal":schedule_by_player.get(row["player"],{}).get("total")})
 
     payload={
         "meta":meta,
@@ -555,9 +652,13 @@ def build_section(meta):
         "doubles":prows,
         "doublesIndividuals":drows,
         "singlesMatches":singles_match_array(singles),
+        "ratingHistory":history,
+        "strengthOfSchedule":schedule,
+        "teamOrderEvidence":team_order_evidence(singles,rmap,player_teams),
+        "format":rules["format"],
         "teams":team_rows(srows,fixtures,rules),
         "note":"Team Power uses every modelled singles player; low-sample ratings are already regularised toward the section centre. Standings use TROLS scorecard points and the 2026 BRTA Weekend Junior By-Laws for washouts and full-team forfeits.",
-        "roundOverview":round_overview(fixtures,singles,rmap),
+        "roundOverview":round_overview(fixtures,singles,doubles,rmap,history),
         "standings":reconstructed_standings(fixtures,rules),
         "results":result_rounds(fixtures,singles,doubles,rules),
         "upcomingFixtures":draw_fixtures(draw,fixtures,rules),
