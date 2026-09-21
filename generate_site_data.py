@@ -29,6 +29,8 @@ IDENTIFIABILITY_EXPOSURE_THRESHOLD = 0.05
 # Conditional pair effects are deliberately much more strongly shrunk than
 # player effects. They are exploratory diagnostics, not a fourth leaderboard.
 PAIR_SYNERGY_L2 = 50.0
+# Generated analysis contracts are intentionally complete enough for client
+# views to consume without reproducing statistical logic in the browser.
 
 def canonical_pair(value: str) -> str:
     names = [x.strip() for x in str(value).split("/") if x.strip()]
