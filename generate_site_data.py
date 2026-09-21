@@ -475,6 +475,8 @@ def strength_of_schedule(singles, rating_map, player_teams):
 
 
 def team_order_evidence(singles, rating_map, player_teams):
+    # TROLS marks emergency players separately from the roster number; retain
+    # that source ordering signal so inferred future line-ups list emergencies last.
     """Preserve official playing-order continuity for the predictor.
 
     ``precedence`` records every direct scorecard observation that one player
