@@ -37,11 +37,13 @@ SINGLES_FIELDS = [
     "fixture_id", "date", "round", "home_team", "away_team", "position",
     "home_player", "away_player", "winning_player", "score", "home_games",
     "away_games", "home_sets", "away_sets", "status", "valid_for_rating",
+    "home_emergency", "away_emergency",
 ]
 DOUBLES_FIELDS = [
     "fixture_id", "date", "round", "home_team", "away_team", "position",
     "home_pair", "away_pair", "winning_pair", "score", "home_games",
     "away_games", "home_sets", "away_sets", "status", "valid_for_rating",
+    "home_emergencies", "away_emergencies",
 ]
 
 
@@ -197,24 +199,72 @@ def parse_results_page(html: str, section_code: str = "section") -> tuple[list[d
     return fixtures, loaded
 
 
-def parse_roster(table) -> list[str]:
-    return [clean_name(tr.get_text(" ", strip=True)) for tr in table.find_all("tr") if clean_text(tr.get_text(" ", strip=True))]
+def parse_roster(table) -> list[dict]:
+    """Read a TROLS roster without losing its emergency marker.
+
+    TROLS renders the emergency flag in the first table cell as a visually
+    hidden ``E`` plus a visible ``X``.  It is deliberately separate from the
+    player's name, so taking only ``tr.get_text`` used to erase that fact.
+    Keeping the original numbered code is essential: the scorecard's ``1``
+    and ``1+2`` references refer to those codes, not a reordered list.
+    """
+    roster = []
+    for fallback, tr in enumerate(table.find_all("tr"), 1):
+        cells = tr.find_all("td", recursive=False)
+        if not cells:
+            continue
+        raw_name = clean_text(cells[-1].get_text(" ", strip=True))
+        if not raw_name:
+            continue
+        number = re.match(r"(\d+)\.\s*", raw_name)
+        marker = cells[0] if len(cells) > 1 else None
+        emergency = bool(marker and (marker.find(class_="xsr") or re.search(r"\bX\b", clean_text(marker.get_text(" ", strip=True)), re.I)))
+        roster.append({
+            "code": int(number.group(1)) if number else fallback,
+            "name": clean_name(raw_name),
+            "emergency": emergency,
+        })
+    return roster
 
 
-def pair_from_code(players: list[str], code: str) -> str:
-    indexes = [int(value) - 1 for value in code.split("+")]
-    if len(indexes) != 2 or any(index < 0 or index >= len(players) for index in indexes):
+def _unnamed_player(fixture_id: str, side: str, code: int, emergency: bool) -> str:
+    label = "Unnamed emergency" if emergency else "Unnamed player"
+    # The source has not supplied an identity.  Do not turn two unknown people
+    # into one fake person or quietly guess from an opponent/partner.
+    return f"[{label} — TROLS {fixture_id} {side} code {code}]"
+
+
+def _is_unnamed_player(name: str) -> bool:
+    return str(name).startswith("[Unnamed ")
+
+
+def _contains_unnamed_identity(value: str) -> bool:
+    return any(_is_unnamed_player(part.strip()) for part in str(value).split("/"))
+
+
+def _contains_source_unknown(value: str) -> bool:
+    return _contains_unnamed_identity(value) or "[Unlisted " in str(value)
+
+
+def pair_from_code(players: list[dict], code: str, fixture_id: str, side: str) -> tuple[str, list[bool]]:
+    codes = code.split("+")
+    if len(codes) != 2:
         raise RuntimeError(f"Bad doubles code {code!r} for roster {players}")
-    return " / ".join(players[index] for index in indexes)
+    entries = [_player_from_code(players, value, fixture_id, side) for value in codes]
+    return " / ".join(entry["name"] for entry in entries), [entry["emergency"] for entry in entries]
 
 
-def _player_from_code(players: list[str], code: str) -> str:
+def _player_from_code(players: list[dict], code: str, fixture_id: str, side: str) -> dict:
     if not re.fullmatch(r"\d+", code):
         raise RuntimeError(f"Bad singles code {code!r}")
-    index = int(code) - 1
-    if index < 0 or index >= len(players):
+    number = int(code)
+    entry = next((row for row in players if row["code"] == number), None)
+    if entry is None:
         raise RuntimeError(f"Bad singles code {code!r} for roster {players}")
-    return players[index]
+    name = entry["name"]
+    if re.fullmatch(r"No Player\s*\d*", name, re.I):
+        name = _unnamed_player(fixture_id, side, number, entry["emergency"])
+    return {**entry, "name": name}
 
 
 def parse_scorecard(html: str, fixture: dict) -> tuple[list[dict], list[dict]]:
@@ -236,13 +286,13 @@ def parse_scorecard(html: str, fixture: dict) -> tuple[list[dict], list[dict]]:
     expected_roster = 2 if fixture.get("home_sets", "") != "" else 4
     if len(home_players) > expected_roster or len(away_players) > expected_roster:
         raise RuntimeError(f"Unexpected rosters for {fixture['fixture_id']}: {home_players} / {away_players}")
-    # TROLS occasionally publishes a scorecard with an omitted roster name.
-    # Preserve its numbered rubber without inventing an identity, and exclude
-    # that rubber from the rating likelihood.
-    home_players = [f"[Unlisted home player {n} in TROLS]" if re.fullmatch(r"No Player\s*\d*", name, re.I) else name for n, name in enumerate(home_players, 1)]
-    away_players = [f"[Unlisted away player {n} in TROLS]" if re.fullmatch(r"No Player\s*\d*", name, re.I) else name for n, name in enumerate(away_players, 1)]
-    home_players += [f"[Unlisted home player {n} in TROLS]" for n in range(len(home_players) + 1, expected_roster + 1)]
-    away_players += [f"[Unlisted away player {n} in TROLS]" for n in range(len(away_players) + 1, expected_roster + 1)]
+    # TROLS occasionally omits a roster name altogether. Preserve the rubber,
+    # but keep an explicit source-limited identity and exclude it from ratings.
+    for side, roster in (("home", home_players), ("away", away_players)):
+        used = {entry["code"] for entry in roster}
+        for code in range(1, expected_roster + 1):
+            if code not in used:
+                roster.append({"code": code, "name": _unnamed_player(fixture["fixture_id"], side, code, False), "emergency": False})
     singles, doubles, singles_position, doubles_position = [], [], 0, 0
     for tr in nested[1].find_all("tr"):
         if tr.find("td", class_="separate") is not None:
@@ -267,8 +317,6 @@ def parse_scorecard(html: str, fixture: dict) -> tuple[list[dict], list[dict]]:
         is_single = bool(re.fullmatch(r"\d+", home_code or "") and re.fullmatch(r"\d+", away_code or ""))
         if not is_pair and not is_single:
             continue
-        if is_single and (int(home_code) > len(home_players) or int(away_code) > len(away_players)):
-            continue
         scores = [(int(a), int(b)) for a, b in re.findall(r"(\d+)\s*-\s*(\d+)", raw_score)]
         if not scores:
             continue
@@ -283,16 +331,22 @@ def parse_scorecard(html: str, fixture: dict) -> tuple[list[dict], list[dict]]:
         }
         if is_pair:
             doubles_position += 1
-            hp, ap = pair_from_code(home_players, home_code), pair_from_code(away_players, away_code)
-            base["valid_for_rating"] = str(decisive and "[Unlisted" not in hp and "[Unlisted" not in ap).lower()
+            hp, he = pair_from_code(home_players, home_code, fixture["fixture_id"], "home")
+            ap, ae = pair_from_code(away_players, away_code, fixture["fixture_id"], "away")
+            base["valid_for_rating"] = str(decisive and not _contains_unnamed_identity(hp) and not _contains_unnamed_identity(ap)).lower()
             doubles.append({**base, "position": f"No. {doubles_position}", "home_pair": hp, "away_pair": ap,
-                            "winning_pair": hp if home_sets > away_sets else ap if away_sets > home_sets else ""})
+                            "winning_pair": hp if home_sets > away_sets else ap if away_sets > home_sets else "",
+                            "home_emergencies": json.dumps(he), "away_emergencies": json.dumps(ae)})
         else:
             singles_position += 1
-            hp, ap = _player_from_code(home_players, home_code), _player_from_code(away_players, away_code)
-            base["valid_for_rating"] = str(decisive and "[Unlisted" not in hp and "[Unlisted" not in ap).lower()
+            home_entry = _player_from_code(home_players, home_code, fixture["fixture_id"], "home")
+            away_entry = _player_from_code(away_players, away_code, fixture["fixture_id"], "away")
+            hp, ap = home_entry["name"], away_entry["name"]
+            base["valid_for_rating"] = str(decisive and not _is_unnamed_player(hp) and not _is_unnamed_player(ap)).lower()
             singles.append({**base, "position": f"No. {singles_position}", "home_player": hp, "away_player": ap,
-                            "winning_player": hp if home_sets > away_sets else ap if away_sets > home_sets else ""})
+                            "winning_player": hp if home_sets > away_sets else ap if away_sets > home_sets else "",
+                            "home_emergency": str(home_entry["emergency"]).lower(),
+                            "away_emergency": str(away_entry["emergency"]).lower()})
     return singles, doubles
 
 
@@ -366,6 +420,8 @@ def validate_dataset(fixtures: list[dict], singles: list[dict], doubles: list[di
                 raise RuntimeError(f"Duplicate fixture/position entry: {key}")
             positions.add(key)
             if str(row.get("valid_for_rating", "true")).lower() == "true":
+                if _contains_source_unknown(row.get("home_player") or row.get("home_pair") or "") or _contains_source_unknown(row.get("away_player") or row.get("away_pair") or ""):
+                    raise RuntimeError(f"Unnamed TROLS participant was incorrectly included in ratings for {key}")
                 hs, aws = _integer(row["home_sets"], "home sets"), _integer(row["away_sets"], "away sets")
                 winner = row.get("winning_player") or row.get("winning_pair")
                 home_entry = row.get("home_player") or row.get("home_pair")
@@ -388,7 +444,7 @@ def validate_dataset(fixtures: list[dict], singles: list[dict], doubles: list[di
         if (hg, ag) != (_integer(fixture["home_games"], "fixture home games"), _integer(fixture["away_games"], "fixture away games")):
             raise RuntimeError(f"Fixture game totals do not match rubbers for {fixture['fixture_id']}")
         green_ball = section_code in {"AA013", "AA014", "UA026", "UA027"}
-        complete_standard_card = len(rows) == 6 and all("[Unlisted" not in str(row) for row in rows)
+        complete_standard_card = len(rows) == 6 and all(not _contains_source_unknown(str(row)) for row in rows)
         if fixture["home_sets"] == "" and not green_ball and complete_standard_card and (hr, ar) != (_integer(fixture["home_rubbers"], "fixture home rubbers"), _integer(fixture["away_rubbers"], "fixture away rubbers")):
             raise RuntimeError(f"Fixture rubber totals do not match rubbers for {fixture['fixture_id']}")
 
