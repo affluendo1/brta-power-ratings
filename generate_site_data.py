@@ -484,7 +484,8 @@ def team_order_evidence(singles, rating_map, player_teams):
     appearances = defaultdict(lambda: defaultdict(list))
     relations = defaultdict(Counter)
     for _, fixture in singles.groupby("fixture_id"):
-        for team_col, player_col in (("home_team", "home_player"), ("away_team", "away_player")):
+        for team_col, player_col, emergency_col in (("home_team", "home_player", "home_emergency"),
+                                                    ("away_team", "away_player", "away_emergency")):
             team = str(fixture.iloc[0][team_col])
             listed = []
             for _, row in fixture.iterrows():
@@ -492,11 +493,22 @@ def team_order_evidence(singles, rating_map, player_teams):
                 if not digits:
                     continue
                 player, position = str(row[player_col]), int(digits)
+                if player.startswith("[Unnamed "):
+                    # A score is retained for transparency, but TROLS did not
+                    # identify this person, so it cannot be a selectable
+                    # future-lineup player.
+                    continue
+                emergency = str(row.get(emergency_col, "")).casefold() in {"true", "1", "yes"}
                 appearances[team][player].append(position)
-                listed.append((position, player))
-            for _, (position_a, player_a) in enumerate(listed):
-                for position_b, player_b in listed:
-                    if position_a < position_b:
+                listed.append((emergency, position, player))
+            # TROLS labels emergency entries with X/E but may still retain a
+            # nominal roster number.  For an inferred selection order they
+            # belong below every listed regular, while their actual scorecard
+            # row remains untouched elsewhere in the data.
+            listed.sort(key=lambda item: (item[0], item[1], item[2].casefold()))
+            for _, (_, position_a, player_a) in enumerate(listed):
+                for _, position_b, player_b in listed:
+                    if player_a != player_b:
                         relations[team][(player_a, player_b)] += 1
     output = {}
     for team, players in appearances.items():
@@ -589,14 +601,24 @@ def round_overview(fixtures, singles, doubles, rating_map, rating_history=None):
 
 def result_rounds(fixtures, singles, doubles, rules):
     rubbers=defaultdict(list)
-    for discipline,df,home_col,away_col,winner_col in (
-        ("Singles",singles,"home_player","away_player","winning_player"),
-        ("Doubles",doubles,"home_pair","away_pair","winning_pair"),
+    for discipline,df,home_col,away_col,winner_col,home_emergency_col,away_emergency_col in (
+        ("Singles",singles,"home_player","away_player","winning_player","home_emergency","away_emergency"),
+        ("Doubles",doubles,"home_pair","away_pair","winning_pair","home_emergencies","away_emergencies"),
     ):
         for _,r in df.iterrows():
+            def emergency_value(column):
+                value=r.get(column, "")
+                if discipline == "Doubles":
+                    try:
+                        return any(json.loads(value)) if isinstance(value, str) else False
+                    except (TypeError, ValueError, json.JSONDecodeError):
+                        return False
+                return str(value).casefold() in {"true", "1", "yes"}
             rubbers[str(r.fixture_id)].append({
                 "type":discipline,"position":str(r.position),"home":str(r[home_col]),"away":str(r[away_col]),
                 "winner":str(r[winner_col]),"score":str(r.score),
+                "homeEmergency":emergency_value(home_emergency_col),
+                "awayEmergency":emergency_value(away_emergency_col),
             })
     by_round=defaultdict(list)
     for _,r in fixtures.iterrows():
