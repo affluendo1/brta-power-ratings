@@ -58,6 +58,34 @@ class DatasetValidationTests(unittest.TestCase):
         draw = parse_draw_page(html, "UA009")
         self.assertEqual((draw[0]["round"], draw[0]["home_team"], draw[0]["away_team"]), (10, "Kings Park", "Kooyong"))
 
+    def test_scorecard_preserves_named_emergency_marker(self):
+        html = """
+        <table width="99%"><tr><td><b>Home</b></td><td></td><td><b>Away</b></td></tr><tr><td>
+        <table><tr><td>&nbsp;</td><td>1. Alice Regular</td></tr><tr><td>&nbsp;</td><td>2. Bob Regular</td></tr><tr><td>&nbsp;</td><td>3. Cara Regular</td></tr><tr><td>&nbsp;</td><td>4. Dan Regular</td></tr></table>
+        </td><td><table><tr><td>1</td><td>6-3</td><td>1</td></tr><tr><td>2</td><td>6-1</td><td>2</td></tr><tr><td>3</td><td>6-2</td><td>3</td></tr><tr><td>4</td><td>6-4</td><td>4</td></tr><tr><td>1+2</td><td>6-4</td><td>1+2</td></tr><tr><td>3+4</td><td>6-2</td><td>3+4</td></tr></table></td><td>
+        <table><tr><td>&nbsp;</td><td>1. Eve Regular</td></tr><tr><td>&nbsp;</td><td>2. Finn Regular</td></tr><tr><td>&nbsp;</td><td>3. Gail Regular</td></tr><tr><td valign="top"><span class="xsr">E</span>&nbsp;</td><td>4. Holly Emergency</td></tr></table>
+        </td></tr></table>
+        """
+        fixture = {"fixture_id":"UA999001", "date":"1 Jul 26", "round":1, "home_team":"Home", "away_team":"Away", "home_sets":""}
+        singles, doubles = parse_scorecard(html, fixture)
+        self.assertEqual(singles[3]["away_player"], "Holly Emergency")
+        self.assertEqual(singles[3]["away_emergency"], "true")
+        self.assertEqual(doubles[1]["away_emergencies"], "[false, true]")
+
+    def test_scorecard_keeps_unknown_emergency_out_of_ratings(self):
+        html = """
+        <table width="99%"><tr><td><b>Home</b></td><td></td><td><b>Away</b></td></tr><tr><td>
+        <table><tr><td valign="top"><span class="xsr">E</span>X</td><td>1. No Player 1</td></tr><tr><td>&nbsp;</td><td>2. Bob</td></tr><tr><td>&nbsp;</td><td>3. Cara</td></tr><tr><td>&nbsp;</td><td>4. Dan</td></tr></table>
+        </td><td><table><tr><td>1</td><td>0-6</td><td>1</td></tr></table></td><td>
+        <table><tr><td>&nbsp;</td><td>1. Eve</td></tr><tr><td>&nbsp;</td><td>2. Finn</td></tr><tr><td>&nbsp;</td><td>3. Gail</td></tr><tr><td>&nbsp;</td><td>4. Holly</td></tr></table>
+        </td></tr></table>
+        """
+        fixture = {"fixture_id":"AA999001", "date":"1 Jul 26", "round":1, "home_team":"Home", "away_team":"Away", "home_sets":""}
+        singles, _ = parse_scorecard(html, fixture)
+        self.assertIn("Unnamed emergency", singles[0]["home_player"])
+        self.assertIn("AA999001", singles[0]["home_player"])
+        self.assertEqual((singles[0]["home_emergency"], singles[0]["valid_for_rating"]), ("true", "false"))
+
 
 if __name__ == "__main__":
     unittest.main()
