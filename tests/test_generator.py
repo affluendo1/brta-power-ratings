@@ -81,6 +81,9 @@ class HistoricalDataTests(unittest.TestCase):
         evidence = team_order_evidence(rows, {"Emergency":1500,"Regular":1500,"Bob":1500,"Ben":1500}, {})
         edges = {(row["above"], row["below"]): row["count"] for row in evidence["A"]["precedence"]}
         self.assertIn(("Regular", "Emergency"), edges)
+        self.assertNotIn(("Emergency", "Regular"), edges)
+        roster = {row["player"]: row for row in evidence["A"]["players"]}
+        self.assertTrue(roster["Emergency"]["emergencyOnly"])
 
 
 if __name__ == "__main__":
