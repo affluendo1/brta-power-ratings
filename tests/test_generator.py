@@ -2,9 +2,9 @@ import unittest
 
 import pandas as pd
 
-from generate_site_data import (brta_scoring_rules, fixture_points, reconstructed_standings,
-                                 round_rating_history, strength_of_schedule, team_order_evidence,
-                                 team_rows)
+from generate_site_data import (brta_scoring_rules, fixture_points, matchup_matrix,
+                                 reconstructed_standings, results_expectation, round_rating_history,
+                                 strength_of_schedule, team_order_evidence, team_rows)
 
 
 class TeamPowerTests(unittest.TestCase):
@@ -47,6 +47,46 @@ class BrtaStandingsTests(unittest.TestCase):
         ])
         rows = reconstructed_standings(fixtures, brta_scoring_rules({"format": "sets"}))
         self.assertEqual([row["team"] for row in rows], ["Gamma", "Alpha", "Beta", "Delta"])
+
+
+class HiddenAnalyticsPayloadTests(unittest.TestCase):
+    def test_matchup_matrix_is_complementary_and_uses_display_order(self):
+        rows = [
+            {"player": "High", "team": "A", "rating": 1800, "matches": 6},
+            {"player": "Mid", "team": "B", "rating": 1500, "matches": 6},
+            {"player": "Low", "team": "C", "rating": 1200, "matches": 6},
+        ]
+        matrix = matchup_matrix(rows, brta_scoring_rules({"format": "sets"}))
+        self.assertEqual([row["player"] for row in matrix["players"]], ["High", "Mid", "Low"])
+        self.assertEqual(matrix["probabilities"][0][0], 0.5)
+        self.assertGreater(matrix["probabilities"][0][2], 0.5)
+        self.assertAlmostEqual(matrix["probabilities"][0][2] + matrix["probabilities"][2][0], 1.0, places=4)
+
+    def test_results_expectation_uses_only_prior_round_state(self):
+        singles = pd.DataFrame([
+            {"fixture_id":"f1","round":1,"date":"1 Jul 26","status":"Completed","position":"No. 1",
+             "home_team":"A","away_team":"B","home_player":"Alice","away_player":"Bob",
+             "home_games":6,"away_games":2,"winning_player":"Alice","score":"6-2"},
+            {"fixture_id":"f2","round":2,"date":"8 Jul 26","status":"Completed","position":"No. 1",
+             "home_team":"A","away_team":"B","home_player":"Alice","away_player":"Bob",
+             "home_games":6,"away_games":3,"winning_player":"Alice","score":"6-3"},
+        ])
+        history = {
+            "rounds": [{"round":1,"date":"1 Jul 26","players":2},{"round":2,"date":"8 Jul 26","players":2}],
+            "players": {
+                "Alice": [[1, 1700, 120, 1], [2, 1750, 110, 2]],
+                "Bob": [[1, 1300, 120, 1], [2, 1250, 110, 2]],
+            },
+        }
+        analysis = results_expectation(
+            singles, history, {"Alice":"A","Bob":"B"}, brta_scoring_rules({"format":"sets"})
+        )
+        self.assertEqual(analysis["matches"][0]["homeWinProbability"], 0.5)
+        self.assertGreater(analysis["matches"][1]["homeWinProbability"], 0.5)
+        alice = next(row for row in analysis["players"] if row["player"] == "Alice")
+        self.assertEqual(alice["actualWins"], 2)
+        self.assertGreater(alice["winsAboveExpected"], 0)
+        self.assertGreater(alice["actualGameShare"], alice["expectedGameShare"])
 
 
 class HistoricalDataTests(unittest.TestCase):

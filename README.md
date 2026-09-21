@@ -29,6 +29,14 @@ V3 uses one scoreline likelihood rather than separately counting the same result
 
 Malformed or incomplete TROLS rows remain visible in Results but are excluded from ratings when a player identity or completed score cannot be established without guessing.
 
+
+Per-section generated payloads also carry client-ready analytical structures for matchup and expectation views:
+
+- a dense current-model player-v-player singles win-probability matrix, with player metadata in matching axis order;
+- a pre-round expectation ledger for every valid singles rubber, plus player-level actual wins, expected wins, results above expectation, and expected-versus-actual game share.
+
+Expectation rows use only rating information that existed before the round being evaluated. Players without an earlier rating snapshot enter that calculation at the neutral 1500 section centre.
+
 ## Cross-section leaders
 
 Sections are disconnected opponent networks, so their raw leader ratings are not presented as proof that one section's player would beat another's. The Section Leaders table instead ranks **within-section dominance**:

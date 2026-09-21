@@ -29,6 +29,8 @@ IDENTIFIABILITY_EXPOSURE_THRESHOLD = 0.05
 # Conditional pair effects are deliberately much more strongly shrunk than
 # player effects. They are exploratory diagnostics, not a fourth leaderboard.
 PAIR_SYNERGY_L2 = 50.0
+# Generated analysis contracts are intentionally complete enough for client
+# views to consume without reproducing statistical logic in the browser.
 
 def canonical_pair(value: str) -> str:
     names = [x.strip() for x in str(value).split("/") if x.strip()]
@@ -455,6 +457,168 @@ def round_rating_history(singles, player_teams):
     return {"rounds": rounds, "players": dict(history)}
 
 
+
+def _short_set_win_probability(game_probability):
+    """Return the same short-set win probability used by Prediction Centre."""
+    p = float(np.clip(game_probability, 0.0, 1.0))
+    q = 1.0 - p
+    win = sum(math.comb(5 + lost, lost) * (p ** 6) * (q ** lost) for lost in range(5))
+    five_all = math.comb(10, 5) * (p ** 5) * (q ** 5)
+    continuation = p * p + 2 * p * q * p
+    return win + five_all * continuation
+
+
+def _singles_match_probability(home_rating, away_rating, rules):
+    """Project one singles contest from displayed Power values."""
+    rating_denominator = DISPLAY_SCALE * GAME_SCALE
+    game_probability = float(expit((home_rating - away_rating) / rating_denominator))
+    set_probability = _short_set_win_probability(game_probability)
+    if rules["format"] == "rubbers":
+        match_probability = (
+            set_probability * set_probability
+            + 2 * set_probability * (1 - set_probability) * game_probability
+        )
+    else:
+        match_probability = set_probability
+    return game_probability, float(match_probability)
+
+
+def matchup_matrix(single_rows, rules):
+    """Precompute every current-model singles matchup in the section.
+
+    The structure is deliberately shaped as a client-ready heatmap contract:
+    player metadata is kept in display order and the dense probability array
+    uses the same index on both axes, avoiding any browser-side model work.
+    """
+    players = [
+        {
+            "player": row["player"],
+            "team": row.get("team", ""),
+            "rating": int(row["rating"]),
+            "matches": int(row["matches"]),
+        }
+        for row in sorted(single_rows, key=lambda row: (-row["rating"], row["player"].casefold()))
+    ]
+    probabilities = []
+    for home in players:
+        row = []
+        for away in players:
+            if home["player"] == away["player"]:
+                probability = 0.5
+            else:
+                _, probability = _singles_match_probability(home["rating"], away["rating"], rules)
+            row.append(round(probability, 4))
+        probabilities.append(row)
+    return {
+        "players": players,
+        "probabilities": probabilities,
+        "projection": "rubbers-best-of-three" if rules["format"] == "rubbers" else "short-set",
+        "ratingDenominator": round(float(DISPLAY_SCALE * GAME_SCALE), 6),
+    }
+
+
+def results_expectation(singles, rating_history, player_teams, rules):
+    """Compare actual singles results with genuinely pre-round expectations.
+
+    Each round is evaluated from the latest rating snapshot strictly before
+    that round. A player with no previous snapshot starts at the neutral
+    section centre. Besides the player summary, match-level rows are retained
+    so a client view can drill from an aggregate value back to its source.
+    """
+    rows = singles[singles["status"].eq("Completed")].copy()
+    if "valid_for_rating" in rows:
+        rows = rows[rows["valid_for_rating"].astype(str).str.casefold().isin({"true", "1", "yes"})].copy()
+
+    histories = rating_history.get("players", {})
+    def rating_before(player, round_number):
+        snapshots = histories.get(player, [])
+        previous = [snapshot for snapshot in snapshots if int(snapshot[0]) < int(round_number)]
+        return int(previous[-1][1]) if previous else int(DISPLAY_CENTRE)
+
+    stats = defaultdict(lambda: {
+        "matches": 0,
+        "actualWins": 0,
+        "expectedWins": 0.0,
+        "actualGames": 0,
+        "expectedGames": 0.0,
+        "totalGames": 0,
+    })
+    match_rows = []
+
+    sort_columns = [column for column in ("round", "fixture_id", "position") if column in rows.columns]
+    for _, row in rows.sort_values(sort_columns).iterrows():
+        rnd = int(row["round"])
+        home, away = str(row.home_player), str(row.away_player)
+        home_rating, away_rating = rating_before(home, rnd), rating_before(away, rnd)
+        game_probability, match_probability = _singles_match_probability(home_rating, away_rating, rules)
+        home_games, away_games = int(row.home_games), int(row.away_games)
+        total_games = home_games + away_games
+        winner = str(row.winning_player)
+
+        for player, actual_games, expected_win, expected_game_share in (
+            (home, home_games, match_probability, game_probability),
+            (away, away_games, 1 - match_probability, 1 - game_probability),
+        ):
+            item = stats[player]
+            item["matches"] += 1
+            item["actualWins"] += int(winner == player)
+            item["expectedWins"] += expected_win
+            item["actualGames"] += actual_games
+            item["expectedGames"] += total_games * expected_game_share
+            item["totalGames"] += total_games
+
+        match_rows.append({
+            "fixtureId": str(row.fixture_id),
+            "round": rnd,
+            "date": str(row.date),
+            "position": str(row.position),
+            "home": home,
+            "away": away,
+            "homeRatingBefore": home_rating,
+            "awayRatingBefore": away_rating,
+            "homeWinProbability": round(match_probability, 4),
+            "homeGameProbability": round(game_probability, 4),
+            "winner": winner,
+            "score": str(row.score),
+        })
+
+    player_rows = []
+    for player, values in stats.items():
+        expected_wins = round(values["expectedWins"], 3)
+        wins_above = round(values["actualWins"] - values["expectedWins"], 3)
+        actual_share = 100 * values["actualGames"] / values["totalGames"] if values["totalGames"] else 0.0
+        expected_share = 100 * values["expectedGames"] / values["totalGames"] if values["totalGames"] else 0.0
+        player_rows.append({
+            "player": player,
+            "team": player_teams.get(player, ""),
+            "matches": values["matches"],
+            "actualWins": values["actualWins"],
+            "expectedWins": expected_wins,
+            "winsAboveExpected": wins_above,
+            "actualGameShare": round(actual_share, 1),
+            "expectedGameShare": round(expected_share, 1),
+            "gameShareAboveExpected": round(actual_share - expected_share, 1),
+        })
+
+    player_rows.sort(key=lambda row: (-row["winsAboveExpected"], -row["gameShareAboveExpected"], row["player"].casefold()))
+    for rank, row in enumerate(player_rows, 1):
+        row["resultsOverExpectationRank"] = rank
+
+    game_order = sorted(player_rows, key=lambda row: (-row["gameShareAboveExpected"], -row["winsAboveExpected"], row["player"].casefold()))
+    for rank, row in enumerate(game_order, 1):
+        row["gameShareOverExpectationRank"] = rank
+
+    return {
+        "players": player_rows,
+        "matches": match_rows,
+        "method": {
+            "ratingState": "latest completed round strictly before each match",
+            "unseenPlayerRating": int(DISPLAY_CENTRE),
+            "matchProjection": "rubbers-best-of-three" if rules["format"] == "rubbers" else "short-set",
+        },
+    }
+
+
 def strength_of_schedule(singles, rating_map, player_teams):
     """Current-model average opponent rating, ranked across every participant."""
     opponents = defaultdict(list)
@@ -672,6 +836,8 @@ def build_section(meta):
         pair["pairSynergy"]=round(pair_synergy.get(pair["player"],0))
     rmap={x["player"]:x["rating"] for x in srows}
     history=round_rating_history(singles,player_teams)
+    matchup=matchup_matrix(srows,rules)
+    expectation=results_expectation(singles,history,player_teams,rules)
     schedule=strength_of_schedule(singles,rmap,player_teams)
     schedule_by_player={row["player"]:row for row in schedule}
     for row in srows:
@@ -686,6 +852,8 @@ def build_section(meta):
         "doublesIndividuals":drows,
         "singlesMatches":singles_match_array(singles),
         "ratingHistory":history,
+        "matchupMatrix":matchup,
+        "resultsExpectation":expectation,
         "strengthOfSchedule":schedule,
         "teamOrderEvidence":team_order_evidence(singles,rmap,player_teams),
         "format":rules["format"],
@@ -735,6 +903,8 @@ def main():
         "doublesIndividualRule":"Individual doubles is partner-adjusted and experimental. Sets and Green Ball ranking requires 4 appearances, 2 distinct partners and no exact unresolved direction. Two-player Rubbers sections publish 4+ appearance pair-dependent evidence with that limitation shown.",
         "pairSynergyRule":"Exploratory, conditional pair-effect signal. It is strongly regularised (lambda=50) and does not affect the published singles, individual-doubles, Overall or Team Power ratings.",
         "dominanceRule":"Section leaders are ranked by expected game share against their own section's 1500-rated average player. This measures within-section dominance, not absolute strength between disconnected sections.",
+        "matchupMatrixRule":"Dense current-model player-v-player singles win probabilities, ordered by the accompanying player axis and projected with the same short-set / Rubbers match logic as fixture predictions.",
+        "resultsExpectationRule":"Actual singles wins and game share compared with expectations from the latest rating snapshot strictly before each round; unseen players start at 1500.",
     }
     global_sync=json.loads((DATA_DIR/"sync_status.json").read_text()) if (DATA_DIR/"sync_status.json").exists() else {}
     check=json.loads((DATA_DIR/"last_check.json").read_text()) if (DATA_DIR/"last_check.json").exists() else {}
