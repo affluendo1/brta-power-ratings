@@ -484,6 +484,7 @@ def team_order_evidence(singles, rating_map, player_teams):
     it never assumes a subjective preferred doubles partnership.
     """
     appearances = defaultdict(lambda: defaultdict(list))
+    emergency_appearances = defaultdict(Counter)
     relations = defaultdict(Counter)
     for _, fixture in singles.groupby("fixture_id"):
         for team_col, player_col, emergency_col in (("home_team", "home_player", "home_emergency"),
@@ -502,23 +503,31 @@ def team_order_evidence(singles, rating_map, player_teams):
                     continue
                 emergency = str(row.get(emergency_col, "")).casefold() in {"true", "1", "yes"}
                 appearances[team][player].append(position)
+                emergency_appearances[team][player] += int(emergency)
                 listed.append((emergency, position, player))
             # TROLS labels emergency entries with X/E but may still retain a
             # nominal roster number.  For an inferred selection order they
             # belong below every listed regular, while their actual scorecard
             # row remains untouched elsewhere in the data.
             listed.sort(key=lambda item: (item[0], item[1], item[2].casefold()))
-            for _, (_, position_a, player_a) in enumerate(listed):
-                for _, position_b, player_b in listed:
-                    if player_a != player_b:
-                        relations[team][(player_a, player_b)] += 1
+            # Every later entry in this sorted official row is below the
+            # current one.  Recording only this direction matters: adding
+            # both directions would erase the precedence evidence entirely.
+            for index, (_, _, player_a) in enumerate(listed):
+                for _, _, player_b in listed[index + 1:]:
+                    relations[team][(player_a, player_b)] += 1
     output = {}
     for team, players in appearances.items():
         roster = []
         for player, positions in players.items():
+            emergency_only = emergency_appearances[team][player] == len(positions)
             roster.append({"player": player, "rating": rating_map.get(player, DISPLAY_CENTRE),
-                           "appearances": len(positions), "averagePosition": round(float(np.mean(positions)), 2)})
-        roster.sort(key=lambda row: (row["averagePosition"], -row["appearances"], row["player"].casefold()))
+                           "appearances": len(positions), "averagePosition": round(float(np.mean(positions)), 2),
+                           "emergencyOnly": emergency_only})
+        # An actual named substitute is still a real player and keeps their
+        # official result, but a player who has only appeared as an emergency
+        # never becomes the default No. 1 in a future fixture prediction.
+        roster.sort(key=lambda row: (row["emergencyOnly"], row["averagePosition"], -row["appearances"], row["player"].casefold()))
         output[team] = {"players": roster,
                         "precedence": [{"above": a, "below": b, "count": count}
                                        for (a, b), count in relations[team].items()]}
