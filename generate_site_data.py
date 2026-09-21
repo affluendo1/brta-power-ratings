@@ -838,20 +838,27 @@ def result_rounds(fixtures, singles, doubles, rules):
         ("Doubles",doubles,"home_pair","away_pair","winning_pair","home_emergencies","away_emergencies"),
     ):
         for _,r in df.iterrows():
-            def emergency_value(column):
+            def emergency_flags(column):
                 value=r.get(column, "")
                 if discipline == "Doubles":
                     try:
-                        return any(json.loads(value)) if isinstance(value, str) else False
+                        parsed=json.loads(value) if isinstance(value,str) else value
+                        return [bool(flag) for flag in parsed] if isinstance(parsed,list) else [False,False]
                     except (TypeError, ValueError, json.JSONDecodeError):
-                        return False
-                return str(value).casefold() in {"true", "1", "yes"}
-            rubbers[str(r.fixture_id)].append({
+                        return [False,False]
+                return [str(value).casefold() in {"true","1","yes"}]
+            home_flags=emergency_flags(home_emergency_col)
+            away_flags=emergency_flags(away_emergency_col)
+            item={
                 "type":discipline,"position":str(r.position),"home":str(r[home_col]),"away":str(r[away_col]),
                 "winner":str(r[winner_col]),"score":str(r.score),
-                "homeEmergency":emergency_value(home_emergency_col),
-                "awayEmergency":emergency_value(away_emergency_col),
-            })
+                "homeEmergency":any(home_flags),
+                "awayEmergency":any(away_flags),
+            }
+            if discipline=="Doubles":
+                item["homeEmergencies"]=home_flags
+                item["awayEmergencies"]=away_flags
+            rubbers[str(r.fixture_id)].append(item)
     by_round=defaultdict(list)
     for _,r in fixtures.iterrows():
         if str(r.home_team)=="Bye" or str(r.away_team)=="Bye": continue
@@ -867,6 +874,7 @@ def result_rounds(fixtures, singles, doubles, rules):
                           "homeGames":int(r.home_games),"awayGames":int(r.away_games)})
         by_round[int(r["round"])].append(match)
     return [{"round":rnd,"date":matches[0]["date"],"fixtures":matches} for rnd,matches in sorted(by_round.items(),reverse=True)]
+
 
 def build_section(meta):
     section_dir=SECTIONS_DIR/meta["section_code"]
