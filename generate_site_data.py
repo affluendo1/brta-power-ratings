@@ -288,8 +288,10 @@ def brta_scoring_rules(meta):
     """
     rubbers = str(meta.get("format", "")).casefold() == "rubbers" or \
               str(meta.get("section_label", "")).casefold().startswith("rubbers")
+    green_ball = bool(meta.get("green_ball", False)) or "green ball" in str(meta.get("section_label", "")).casefold()
     return {
         "format": "rubbers" if rubbers else "sets",
+        "green_ball": green_ball,
         "team_win": 2.0 if rubbers else 4.0,
         "team_draw": 1.0 if rubbers else 2.0,
         "scheduled_sets": 5 if rubbers else 6,
@@ -438,32 +440,68 @@ def draw_fixtures(draw, fixtures, rules):
     return [{"round":rnd,"date":str(draw[draw["round"].astype(int).eq(rnd)].iloc[0]["date"]),
              "fixtures":games,"source":"official TROLS draw"} for rnd,games in sorted(by_round.items())]
 
-def round_rating_history(singles, player_teams):
+def round_rating_history(singles, player_teams, round_calendar=None):
     """Fit the model as it stood after every published round.
 
-    Each snapshot is deliberately fitted only to results available by that
-    round.  It is therefore a genuine historical record rather than today's
-    ratings merely relabelled with earlier round numbers.
+    The official draw supplies the round calendar so washout/no-evidence rounds
+    remain visible. When a round adds no valid singles evidence, the previous
+    model state is carried forward unchanged instead of silently skipping it.
+    Historical snapshots also retain the player's team as known at that point.
     """
     history = defaultdict(list)
     rounds = []
-    for rnd in sorted({int(value) for value in singles["round"]}):
+    if round_calendar is None:
+        round_calendar = [
+            {"round": rnd, "date": str(singles[singles["round"].astype(int).eq(rnd)].iloc[0]["date"])}
+            for rnd in sorted({int(value) for value in singles["round"]})
+        ]
+
+    def valid_rows(frame):
+        if "valid_for_rating" not in frame:
+            return frame
+        valid = frame["valid_for_rating"].astype(str).str.casefold().isin({"true", "1", "yes"})
+        return frame[valid]
+
+    def teams_as_of(frame):
+        counts = defaultdict(Counter)
+        for _, row in frame.iterrows():
+            counts[str(row.home_player)][str(row.home_team)] += 1
+            counts[str(row.away_player)][str(row.away_team)] += 1
+        return {player: team_counts.most_common(1)[0][0] for player, team_counts in counts.items()}
+
+    previous = {}
+    for item in round_calendar:
+        rnd, date = int(item["round"]), str(item["date"])
         observed = singles[singles["round"].astype(int).le(rnd)].copy()
-        fitted = website_rows(fit_power_ratings_from_df(observed), player_teams)
-        date = str(observed[observed["round"].astype(int).eq(rnd)].iloc[0]["date"])
-        for row in fitted:
-            history[row["player"]].append([rnd, row["rating"], row["se"], row["matches"]])
-        rounds.append({"round": rnd, "date": date, "players": len(fitted)})
+        current_round = valid_rows(singles[singles["round"].astype(int).eq(rnd)].copy())
+        if len(valid_rows(observed)) and (len(current_round) or not previous):
+            fitted_teams = teams_as_of(observed)
+            fitted = website_rows(fit_power_ratings_from_df(observed), fitted_teams or player_teams)
+            previous = {
+                row["player"]: [rnd, row["rating"], row["se"], row["matches"], row.get("team", "")]
+                for row in fitted
+            }
+        elif previous:
+            previous = {
+                player: [rnd, snap[1], snap[2], snap[3], snap[4] if len(snap) > 4 else player_teams.get(player, "")]
+                for player, snap in previous.items()
+            }
+        for player, snap in previous.items():
+            history[player].append(snap)
+        rounds.append({"round": rnd, "date": date, "players": len(previous)})
     return {"rounds": rounds, "players": dict(history)}
 
 
-
-def _short_set_win_probability(game_probability):
-    """Return the same short-set win probability used by Prediction Centre."""
+def _short_set_win_probability(game_probability, *, green_ball=False):
+    """Project a BRTA six-game set from an independent game probability."""
     p = float(np.clip(game_probability, 0.0, 1.0))
     q = 1.0 - p
     win = sum(math.comb(5 + lost, lost) * (p ** 6) * (q ** lost) for lost in range(5))
     five_all = math.comb(10, 5) * (p ** 5) * (q ** 5)
+    if green_ball:
+        # BRTA Green Ball is first to six games with no tiebreak. At 5-5,
+        # the next game ends the set 6-5.
+        return win + five_all * p
     continuation = p * p + 2 * p * q * p
     return win + five_all * continuation
 
@@ -472,7 +510,9 @@ def _singles_match_probability(home_rating, away_rating, rules):
     """Project one singles contest from displayed Power values."""
     rating_denominator = DISPLAY_SCALE * GAME_SCALE
     game_probability = float(expit((home_rating - away_rating) / rating_denominator))
-    set_probability = _short_set_win_probability(game_probability)
+    set_probability = _short_set_win_probability(
+        game_probability, green_ball=bool(rules.get("green_ball", False))
+    )
     if rules["format"] == "rubbers":
         match_probability = (
             set_probability * set_probability
@@ -484,12 +524,7 @@ def _singles_match_probability(home_rating, away_rating, rules):
 
 
 def matchup_matrix(single_rows, rules):
-    """Precompute every current-model singles matchup in the section.
-
-    The structure is deliberately shaped as a client-ready heatmap contract:
-    player metadata is kept in display order and the dense probability array
-    uses the same index on both axes, avoiding any browser-side model work.
-    """
+    """Precompute every current-model singles matchup in the section."""
     players = [
         {
             "player": row["player"],
@@ -509,31 +544,33 @@ def matchup_matrix(single_rows, rules):
                 _, probability = _singles_match_probability(home["rating"], away["rating"], rules)
             row.append(round(probability, 4))
         probabilities.append(row)
+    projection = (
+        "rubbers-best-of-three"
+        if rules["format"] == "rubbers"
+        else "green-ball-first-to-six"
+        if rules.get("green_ball")
+        else "short-set"
+    )
     return {
         "players": players,
         "probabilities": probabilities,
-        "projection": "rubbers-best-of-three" if rules["format"] == "rubbers" else "short-set",
+        "projection": projection,
         "ratingDenominator": round(float(DISPLAY_SCALE * GAME_SCALE), 6),
     }
 
 
 def results_expectation(singles, rating_history, player_teams, rules):
-    """Compare actual singles results with genuinely pre-round expectations.
-
-    Each round is evaluated from the latest rating snapshot strictly before
-    that round. A player with no previous snapshot starts at the neutral
-    section centre. Besides the player summary, match-level rows are retained
-    so a client view can drill from an aggregate value back to its source.
-    """
+    """Compare actual singles results with genuinely pre-round expectations."""
     rows = singles[singles["status"].eq("Completed")].copy()
     if "valid_for_rating" in rows:
         rows = rows[rows["valid_for_rating"].astype(str).str.casefold().isin({"true", "1", "yes"})].copy()
 
     histories = rating_history.get("players", {})
+
     def rating_before(player, round_number):
         snapshots = histories.get(player, [])
         previous = [snapshot for snapshot in snapshots if int(snapshot[0]) < int(round_number)]
-        return int(previous[-1][1]) if previous else int(DISPLAY_CENTRE)
+        return (int(previous[-1][1]), True) if previous else (int(DISPLAY_CENTRE), False)
 
     stats = defaultdict(lambda: {
         "matches": 0,
@@ -542,6 +579,7 @@ def results_expectation(singles, rating_history, player_teams, rules):
         "actualGames": 0,
         "expectedGames": 0.0,
         "totalGames": 0,
+        "coldStartMatches": 0,
     })
     match_rows = []
 
@@ -549,15 +587,15 @@ def results_expectation(singles, rating_history, player_teams, rules):
     for _, row in rows.sort_values(sort_columns).iterrows():
         rnd = int(row["round"])
         home, away = str(row.home_player), str(row.away_player)
-        home_rating, away_rating = rating_before(home, rnd), rating_before(away, rnd)
+        (home_rating, home_known), (away_rating, away_known) = rating_before(home, rnd), rating_before(away, rnd)
         game_probability, match_probability = _singles_match_probability(home_rating, away_rating, rules)
         home_games, away_games = int(row.home_games), int(row.away_games)
         total_games = home_games + away_games
         winner = str(row.winning_player)
 
-        for player, actual_games, expected_win, expected_game_share in (
-            (home, home_games, match_probability, game_probability),
-            (away, away_games, 1 - match_probability, 1 - game_probability),
+        for player, actual_games, expected_win, expected_game_share, known in (
+            (home, home_games, match_probability, game_probability, home_known),
+            (away, away_games, 1 - match_probability, 1 - game_probability, away_known),
         ):
             item = stats[player]
             item["matches"] += 1
@@ -566,6 +604,7 @@ def results_expectation(singles, rating_history, player_teams, rules):
             item["actualGames"] += actual_games
             item["expectedGames"] += total_games * expected_game_share
             item["totalGames"] += total_games
+            item["coldStartMatches"] += int(not known)
 
         match_rows.append({
             "fixtureId": str(row.fixture_id),
@@ -576,6 +615,8 @@ def results_expectation(singles, rating_history, player_teams, rules):
             "away": away,
             "homeRatingBefore": home_rating,
             "awayRatingBefore": away_rating,
+            "homeHadPriorRating": home_known,
+            "awayHadPriorRating": away_known,
             "homeWinProbability": round(match_probability, 4),
             "homeGameProbability": round(game_probability, 4),
             "winner": winner,
@@ -598,23 +639,39 @@ def results_expectation(singles, rating_history, player_teams, rules):
             "actualGameShare": round(actual_share, 1),
             "expectedGameShare": round(expected_share, 1),
             "gameShareAboveExpected": round(actual_share - expected_share, 1),
+            "coldStartMatches": values["coldStartMatches"],
+            "qualified": values["matches"] >= MIN_MATCHES,
+            "resultsOverExpectationRank": None,
+            "gameShareOverExpectationRank": None,
         })
 
     player_rows.sort(key=lambda row: (-row["winsAboveExpected"], -row["gameShareAboveExpected"], row["player"].casefold()))
-    for rank, row in enumerate(player_rows, 1):
+    qualified_results = [row for row in player_rows if row["qualified"]]
+    for rank, row in enumerate(qualified_results, 1):
         row["resultsOverExpectationRank"] = rank
 
-    game_order = sorted(player_rows, key=lambda row: (-row["gameShareAboveExpected"], -row["winsAboveExpected"], row["player"].casefold()))
+    game_order = sorted(
+        (row for row in player_rows if row["qualified"]),
+        key=lambda row: (-row["gameShareAboveExpected"], -row["winsAboveExpected"], row["player"].casefold())
+    )
     for rank, row in enumerate(game_order, 1):
         row["gameShareOverExpectationRank"] = rank
 
+    projection = (
+        "rubbers-best-of-three"
+        if rules["format"] == "rubbers"
+        else "green-ball-first-to-six"
+        if rules.get("green_ball")
+        else "short-set"
+    )
     return {
         "players": player_rows,
         "matches": match_rows,
         "method": {
             "ratingState": "latest completed round strictly before each match",
             "unseenPlayerRating": int(DISPLAY_CENTRE),
-            "matchProjection": "rubbers-best-of-three" if rules["format"] == "rubbers" else "short-set",
+            "rankingMinimumMatches": MIN_MATCHES,
+            "matchProjection": projection,
         },
     }
 
@@ -781,20 +838,27 @@ def result_rounds(fixtures, singles, doubles, rules):
         ("Doubles",doubles,"home_pair","away_pair","winning_pair","home_emergencies","away_emergencies"),
     ):
         for _,r in df.iterrows():
-            def emergency_value(column):
+            def emergency_flags(column):
                 value=r.get(column, "")
                 if discipline == "Doubles":
                     try:
-                        return any(json.loads(value)) if isinstance(value, str) else False
+                        parsed=json.loads(value) if isinstance(value,str) else value
+                        return [bool(flag) for flag in parsed] if isinstance(parsed,list) else [False,False]
                     except (TypeError, ValueError, json.JSONDecodeError):
-                        return False
-                return str(value).casefold() in {"true", "1", "yes"}
-            rubbers[str(r.fixture_id)].append({
+                        return [False,False]
+                return [str(value).casefold() in {"true","1","yes"}]
+            home_flags=emergency_flags(home_emergency_col)
+            away_flags=emergency_flags(away_emergency_col)
+            item={
                 "type":discipline,"position":str(r.position),"home":str(r[home_col]),"away":str(r[away_col]),
                 "winner":str(r[winner_col]),"score":str(r.score),
-                "homeEmergency":emergency_value(home_emergency_col),
-                "awayEmergency":emergency_value(away_emergency_col),
-            })
+                "homeEmergency":any(home_flags),
+                "awayEmergency":any(away_flags),
+            }
+            if discipline=="Doubles":
+                item["homeEmergencies"]=home_flags
+                item["awayEmergencies"]=away_flags
+            rubbers[str(r.fixture_id)].append(item)
     by_round=defaultdict(list)
     for _,r in fixtures.iterrows():
         if str(r.home_team)=="Bye" or str(r.away_team)=="Bye": continue
@@ -810,6 +874,7 @@ def result_rounds(fixtures, singles, doubles, rules):
                           "homeGames":int(r.home_games),"awayGames":int(r.away_games)})
         by_round[int(r["round"])].append(match)
     return [{"round":rnd,"date":matches[0]["date"],"fixtures":matches} for rnd,matches in sorted(by_round.items(),reverse=True)]
+
 
 def build_section(meta):
     section_dir=SECTIONS_DIR/meta["section_code"]
@@ -835,7 +900,12 @@ def build_section(meta):
         pair["pairEffect"]=pair["rating"]-pair["individualAverage"]
         pair["pairSynergy"]=round(pair_synergy.get(pair["player"],0))
     rmap={x["player"]:x["rating"] for x in srows}
-    history=round_rating_history(singles,player_teams)
+    latest_round=int(meta.get("latest_round") or singles["round"].astype(int).max())
+    round_calendar=[]
+    for rnd in sorted({int(value) for value in draw["round"] if int(value) <= latest_round}):
+        row=draw[draw["round"].astype(int).eq(rnd)].iloc[0]
+        round_calendar.append({"round":rnd,"date":str(row["date"])})
+    history=round_rating_history(singles,player_teams,round_calendar)
     matchup=matchup_matrix(srows,rules)
     expectation=results_expectation(singles,history,player_teams,rules)
     schedule=strength_of_schedule(singles,rmap,player_teams)
@@ -857,6 +927,7 @@ def build_section(meta):
         "strengthOfSchedule":schedule,
         "teamOrderEvidence":team_order_evidence(singles,rmap,player_teams),
         "format":rules["format"],
+        "greenBall":bool(rules.get("green_ball",False)),
         "teams":team_rows(srows,fixtures,rules),
         "note":"Team Power uses every modelled singles player; low-sample ratings are already regularised toward the section centre. Standings use TROLS scorecard points and the 2026 BRTA Weekend Junior By-Laws for washouts and full-team forfeits.",
         "roundOverview":round_overview(fixtures,singles,doubles,rmap,history),
@@ -889,6 +960,44 @@ def main():
         catalog.append(summary)
         (SITE_SECTIONS_DIR/f"{code}.json").write_text(json.dumps(payload,separators=(",",":"),ensure_ascii=False,allow_nan=False)+"\n",encoding="utf-8")
         print(f"Wrote {code}: {len(payload['singles'])} singles ratings")
+    global_players=[]
+    for meta in catalog:
+        payload=section_payloads[meta["section_code"]]
+        smap={row["player"]:row for row in payload.get("singles",[])}
+        dmap={row["player"]:row for row in payload.get("doublesIndividuals",[])}
+        for player in sorted(set(smap)|set(dmap),key=str.casefold):
+            s=smap.get(player); d=dmap.get(player)
+            both=bool(s and d)
+            overall=round((s["rating"]+d["rating"])/2) if both else (s or d or {}).get("rating")
+            overall_se=round(math.hypot(s["se"],d["se"])/2) if both else (s or d or {}).get("se")
+            global_players.append({
+                "player":player,
+                "team":(s or d or {}).get("team",""),
+                "sectionCode":meta["section_code"],
+                "sectionLabel":meta["section_label"],
+                "competitionCode":meta["competition_code"],
+                "competitionLabel":meta["competition_label"],
+                "singlesRating":s.get("rating") if s else None,
+                "singlesSe":s.get("se") if s else None,
+                "singlesMatches":s.get("matches") if s else 0,
+                "singlesWins":s.get("wins") if s else 0,
+                "singlesLosses":s.get("losses") if s else 0,
+                "singlesGf":s.get("gf") if s else 0,
+                "singlesGa":s.get("ga") if s else 0,
+                "doublesRating":d.get("rating") if d else None,
+                "doublesSe":d.get("se") if d else None,
+                "doublesMatches":d.get("matches") if d else 0,
+                "doublesWins":d.get("wins") if d else 0,
+                "doublesLosses":d.get("losses") if d else 0,
+                "doublesGf":d.get("gf") if d else 0,
+                "doublesGa":d.get("ga") if d else 0,
+                "doublesQualified":bool(d.get("qualified")) if d else False,
+                "doublesStatus":d.get("ranking_status") if d else None,
+                "overallRating":overall,
+                "overallSe":overall_se,
+                "overallQualified":bool(s and s.get("matches",0)>=MIN_MATCHES and d and d.get("qualified")),
+            })
+
     leaders=[{**row["leader"],"sectionCode":row["section_code"],"sectionLabel":row["section_label"],
               "competitionCode":row["competition_code"],"competitionLabel":row["competition_label"]}
              for row in catalog if row.get("leader")]
@@ -904,12 +1013,12 @@ def main():
         "pairSynergyRule":"Exploratory, conditional pair-effect signal. It is strongly regularised (lambda=50) and does not affect the published singles, individual-doubles, Overall or Team Power ratings.",
         "dominanceRule":"Section leaders are ranked by expected game share against their own section's 1500-rated average player. This measures within-section dominance, not absolute strength between disconnected sections.",
         "matchupMatrixRule":"Dense current-model player-v-player singles win probabilities, ordered by the accompanying player axis and projected with the same short-set / Rubbers match logic as fixture predictions.",
-        "resultsExpectationRule":"Actual singles wins and game share compared with expectations from the latest rating snapshot strictly before each round; unseen players start at 1500.",
+        "resultsExpectationRule":"Actual singles wins and game share compared with expectations from the latest rating snapshot strictly before each round; unseen players start at 1500 and ranking requires 4 matches.",
     }
     global_sync=json.loads((DATA_DIR/"sync_status.json").read_text()) if (DATA_DIR/"sync_status.json").exists() else {}
     check=json.loads((DATA_DIR/"last_check.json").read_text()) if (DATA_DIR/"last_check.json").exists() else {}
-    data={"catalog":catalog,"leaders":leaders,"model":model,"globalSync":{**global_sync,"checkedAt":check.get("checked_at_utc") or global_sync.get("synced_at_utc"),"newResultsLastCheck":bool(check.get("new_results",False))},
-          "defaultSectionCode":DEFAULT_SECTION,"defaultSection":section_payloads.get(DEFAULT_SECTION) or next(iter(section_payloads.values()))}
+    data={"catalog":catalog,"leaders":leaders,"globalPlayers":global_players,"model":model,"globalSync":{**global_sync,"checkedAt":check.get("checked_at_utc") or global_sync.get("synced_at_utc"),"newResultsLastCheck":bool(check.get("new_results",False))},
+          "defaultSectionCode":DEFAULT_SECTION}
     OUT.write_text("const DATA="+json.dumps(data,separators=(",",":"),ensure_ascii=False,allow_nan=False)+";\n",encoding="utf-8")
     print(f"Wrote {OUT}: {len(catalog)} sections and {len(leaders)} qualified section leaders")
 
