@@ -334,7 +334,7 @@ document.addEventListener('click',e=>{
   const player=e.target.closest('[data-player]');if(player){e.stopPropagation();close('#resultOverlay');openProfile(player.dataset.player);return}
   const schedule=e.target.closest('[data-sos-open]');if(schedule){openSchedule();return}
   const prediction=e.target.closest('[data-predict-id]');if(prediction){openPrediction(prediction.dataset.predictId);return}
-  const jump=e.target.closest('[data-section-jump]');if(jump){const code=jump.dataset.sectionJump;ratingView='singles';$('.subtab').forEach(x=>x.classList.toggle('active',x.dataset.rating==='singles'));loadSection(code).then(()=>switchPage('ratings'));return}
+  const jump=e.target.closest('[data-section-jump]');if(jump){const code=jump.dataset.sectionJump;ratingView='singles';ratingScope='section';localStorage.setItem('brta-rating-scope',ratingScope);$('#searchScope').value=ratingScope;$('.subtab').forEach(x=>x.classList.toggle('active',x.dataset.rating==='singles'));loadSection(code).then(()=>switchPage('ratings'));return}
   const match=e.target.closest('[data-match-id]');if(match){const sourcePlayer=!$('#profileOverlay').classList.contains('hidden')?activeProfilePlayer:null;close('#roundOverlay');close('#profileOverlay');openMatch(match.dataset.matchId,sourcePlayer);return}
   if(e.target.dataset.close)close('#profileOverlay');if(e.target.dataset.roundClose)close('#roundOverlay');if(e.target.dataset.settingsClose)close('#settingsOverlay');if(e.target.dataset.resultClose)close('#resultOverlay');if(e.target.dataset.predictionClose)close('#predictionOverlay');if(e.target.dataset.sosClose)close('#sosOverlay');
 });
