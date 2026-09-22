@@ -2,7 +2,7 @@ import unittest
 
 import pandas as pd
 
-from generate_site_data import (brta_scoring_rules, fixture_points, matchup_matrix,
+from generate_site_data import (_short_set_win_probability, brta_scoring_rules, fixture_points, matchup_matrix,
                                  reconstructed_standings, results_expectation, round_rating_history,
                                  strength_of_schedule, team_order_evidence, team_rows)
 
@@ -62,6 +62,15 @@ class HiddenAnalyticsPayloadTests(unittest.TestCase):
         self.assertGreater(matrix["probabilities"][0][2], 0.5)
         self.assertAlmostEqual(matrix["probabilities"][0][2] + matrix["probabilities"][2][0], 1.0, places=4)
 
+    def test_green_ball_is_first_to_six_without_tiebreak(self):
+        rules = brta_scoring_rules({"format":"sets","green_ball":True,"section_label":"Sets 1 Green Ball"})
+        self.assertTrue(rules["green_ball"])
+        self.assertAlmostEqual(_short_set_win_probability(0.5, green_ball=True), 0.5)
+        self.assertNotAlmostEqual(
+            _short_set_win_probability(0.62, green_ball=True),
+            _short_set_win_probability(0.62, green_ball=False),
+        )
+
     def test_results_expectation_uses_only_prior_round_state(self):
         singles = pd.DataFrame([
             {"fixture_id":"f1","round":1,"date":"1 Jul 26","status":"Completed","position":"No. 1",
@@ -87,6 +96,8 @@ class HiddenAnalyticsPayloadTests(unittest.TestCase):
         self.assertEqual(alice["actualWins"], 2)
         self.assertGreater(alice["winsAboveExpected"], 0)
         self.assertGreater(alice["actualGameShare"], alice["expectedGameShare"])
+        self.assertIsNone(alice["resultsOverExpectationRank"])
+        self.assertFalse(alice["qualified"])
 
 
 class HistoricalDataTests(unittest.TestCase):
@@ -107,6 +118,19 @@ class HistoricalDataTests(unittest.TestCase):
         schedule = strength_of_schedule(self.singles, {"Alice":1700,"Amy":1600,"Bob":1400,"Ben":1500}, teams)
         self.assertEqual(schedule[0]["rank"], 1)
         self.assertEqual(len(schedule), 4)
+
+    def test_history_carries_forward_a_washout_round(self):
+        teams = {"Alice":"A", "Amy":"A", "Bob":"B", "Ben":"B"}
+        calendar = [
+            {"round":1,"date":"1 Jul 26"},
+            {"round":2,"date":"8 Jul 26"},
+            {"round":3,"date":"15 Jul 26"},
+        ]
+        history = round_rating_history(self.singles, teams, calendar)
+        self.assertEqual([row["round"] for row in history["rounds"]], [1, 2, 3])
+        alice = history["players"]["Alice"]
+        self.assertEqual(alice[-1][0], 3)
+        self.assertEqual(alice[-1][1:4], alice[-2][1:4])
 
     def test_official_order_evidence_records_direct_precedence(self):
         evidence = team_order_evidence(self.singles, {"Alice":1700,"Amy":1600,"Bob":1400,"Ben":1500}, {})
