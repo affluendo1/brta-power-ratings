@@ -122,3 +122,7 @@ html[data-theme="dark"]{--bg:#171b20;--panel:#22272e;--text:#e7eaed;--muted:#a5a
   .prediction-summary{grid-template-columns:1fr 1fr}
   .filters #searchScope{min-width:0}
 }
+
+.model-detail{margin-top:10px;border-top:1px solid var(--border);padding-top:8px}
+.model-detail summary{cursor:pointer;font-weight:750;color:var(--muted)}
+.model-detail p{margin:7px 0 0!important;font-size:12px;color:var(--muted)}
