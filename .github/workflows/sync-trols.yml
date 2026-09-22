@@ -95,5 +95,6 @@ jobs:
           else
             git commit -m "TROLS check: no new results across $SECTIONS sections"
           fi
-          git pull --rebase origin main
-          git push
+          BRANCH="${GITHUB_REF_NAME:-main}"
+          git pull --rebase origin "$BRANCH"
+          git push origin "HEAD:$BRANCH"
