@@ -13,6 +13,8 @@ The automated database discovers sections directly from TROLS rather than keepin
 
 The interface remembers the selected competition and section. Its Results tab reproduces each round and scorecard in a compact mobile-friendly view. Latest Round and Player Lab matches link directly to the corresponding Results panel.
 
+The Ratings page can also search **all current sections** for an individual player. Cross-section search adds the competition/section to every result and opens that player's actual section when selected. It is a discovery tool, not a combined ladder: each section's rating network is fitted independently.
+
 ## V3 model
 
 For player strength `theta`:
@@ -30,16 +32,19 @@ V3 uses one scoreline likelihood rather than separately counting the same result
 Malformed or incomplete TROLS rows remain visible in Results but are excluded from ratings when a player identity or completed score cannot be established without guessing.
 
 
-Per-section generated payloads also carry client-ready analytical structures for matchup and expectation views:
+The Analytics page publishes the generated analytical structures:
 
-- a dense current-model player-v-player singles win-probability matrix, with player metadata in matching axis order;
-- a pre-round expectation ledger for every valid singles rubber, plus player-level actual wins, expected wins, results above expectation, and expected-versus-actual game share.
+- **Matchup Lab**: a dense current-model player-v-player singles projection matrix using the section's actual scoring format;
+- **Results vs expectation**: a pre-round ledger for every valid singles rubber, plus player-level actual wins, expected wins and expected-versus-actual game share;
+- **Section leaders**: within-section dominance against the common 1500 display centre.
 
-Expectation rows use only rating information that existed before the round being evaluated. Players without an earlier rating snapshot enter that calculation at the neutral 1500 section centre.
+Expectation rows use only rating information that existed before the round being evaluated. Players without an earlier rating snapshot enter that match at the neutral 1500 section centre. Public expectation ranks require four singles matches, matching the Singles Power publication threshold.
+
+Historical rating snapshots cover every published round in the official draw. A washout/no-evidence round carries the previous fitted state forward so round timelines remain continuous.
 
 ## Cross-section leaders
 
-Sections are disconnected opponent networks, so their raw leader ratings are not presented as proof that one section's player would beat another's. The Section Leaders table instead ranks **within-section dominance**:
+Sections are disconnected opponent networks, so their raw leader ratings are not presented as proof that one section's player would beat another's. The Analytics **Section Leaders** table ranks **within-section dominance**:
 
 `expected game share vs the section-average 1500 player = logistic((leader_power - 1500) / 450)`
 
@@ -62,7 +67,7 @@ It also displays the leader's gap to the next qualified player. This is a relati
 4. validates match IDs, scorecard teams, duplicate positions, winners and fixture game arithmetic;
 5. writes per-section source files under `data/current/sections/<section-code>/`.
 
-The scraper supports both standard six-rubber Sets scorecards and Rubbers sections with multi-set singles. TROLS's special Rubbers/Green Ball scoring totals are retained as published rather than forced through the ordinary Sets scoring rule.
+The scraper supports standard six-rubber Sets scorecards, Green Ball and Rubbers sections with multi-set singles. TROLS's published team scoring totals are retained. Predictions use format-specific contest logic: ordinary Sets use the standard tiebreak path, Green Ball is first to six games with no tiebreak, and Rubbers singles uses the two-set plus match-tiebreak projection.
 
 `generate_site_data.py` fits every section independently, builds the cross-section summary and writes lazy-loaded site JSON to `data/site/sections/`. Section 6 is embedded in `data.js` as the fast default; other sections load only when selected.
 
@@ -75,6 +80,7 @@ python -m pip install -r requirements.txt
 python scraper/sync_trols.py
 python generate_site_data.py
 python -m unittest discover -s tests -v
+node tests/test_prediction.js
 ```
 
 The full sync currently covers 44 sections, so the workflow uses a 45-minute timeout and concurrent, retrying HTTP requests.
