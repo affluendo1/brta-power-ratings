@@ -181,7 +181,7 @@ function renderRatings(){
     else if(type==='overall')out+='<tr class="'+cls+'"><td>'+(qual?rank:'—')+'</td><td>'+personButton(x.player)+'</td><td>'+esc(x.team)+'</td><td><b>'+x.rating+'</b></td><td>'+(x.s?.rating??'—')+'</td><td>'+(x.d?.rating??'—')+'</td><td>'+(qual?'Ranked':'Provisional')+'</td><td>±'+x.se+'</td></tr>';
     else{const evidence=type==='doublesPlayers'?x.matches+' · '+x.partner_count+' partners · '+esc(x.ranking_status):pct;out+='<tr class="'+cls+'"><td>'+(qual?rank:'—')+'</td><td>'+personButton(x.player)+'</td><td>'+esc(x.team)+'</td><td><b>'+x.rating+'</b></td><td>'+x.wins+'–'+x.losses+'</td><td>'+x.gf+'–'+x.ga+'</td><td>'+evidence+'</td><td>±'+x.se+'</td></tr>'}
   }
-  $('#ratingBody').innerHTML=out||'<tr><td colspan="8">No matching entries.</td></tr>';
+  $('#ratingBody').innerHTML=out||'<tr><td colspan="'+(type==='pair'?9:8)+'">No matching entries.</td></tr>';
   $('#ratingHead').innerHTML=type==='overall'?'<tr><th>#</th><th>Player</th><th>Team</th><th>Overall</th><th>Singles</th><th>Doubles</th><th>Status</th><th>Uncertainty</th></tr>':type==='pair'?'<tr><th>#</th><th>Pair</th><th>Team</th><th>Pair Power</th><th>Individual avg</th><th>Pair effect</th><th>W–L</th><th>Matches</th><th>Uncertainty</th></tr>':'<tr><th>#</th><th>Player</th><th>Team</th><th>Power</th><th>W–L</th><th>Games</th><th>'+(type==='doublesPlayers'?'Evidence':'Game % / Matches')+'</th><th>Uncertainty</th></tr>';
 }
 function renderTeams(){$('#teamsBody').innerHTML=teams.map(x=>'<tr><td><b>'+esc(x.team)+'</b></td><td>'+x.avg.toFixed(1)+'</td><td>'+x.best4.toFixed(1)+'</td><td>'+x.modelled+'</td><td>'+x.ladder+'</td></tr>').join('')}
