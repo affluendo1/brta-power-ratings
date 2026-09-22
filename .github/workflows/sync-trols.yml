@@ -21,8 +21,8 @@ permissions:
   contents: write
 
 concurrency:
-  group: brta-results-sync
-  cancel-in-progress: false
+  group: brta-results-sync-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   sync:
