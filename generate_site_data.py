@@ -1018,7 +1018,7 @@ def main():
     global_sync=json.loads((DATA_DIR/"sync_status.json").read_text()) if (DATA_DIR/"sync_status.json").exists() else {}
     check=json.loads((DATA_DIR/"last_check.json").read_text()) if (DATA_DIR/"last_check.json").exists() else {}
     data={"catalog":catalog,"leaders":leaders,"globalPlayers":global_players,"model":model,"globalSync":{**global_sync,"checkedAt":check.get("checked_at_utc") or global_sync.get("synced_at_utc"),"newResultsLastCheck":bool(check.get("new_results",False))},
-          "defaultSectionCode":DEFAULT_SECTION,"defaultSection":section_payloads.get(DEFAULT_SECTION) or next(iter(section_payloads.values()))}
+          "defaultSectionCode":DEFAULT_SECTION}
     OUT.write_text("const DATA="+json.dumps(data,separators=(",",":"),ensure_ascii=False,allow_nan=False)+";\n",encoding="utf-8")
     print(f"Wrote {OUT}: {len(catalog)} sections and {len(leaders)} qualified section leaders")
 
