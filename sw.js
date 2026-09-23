@@ -1,5 +1,5 @@
 const CACHE_PREFIX="brta-power-ratings-";
-const CACHE_NAME=CACHE_PREFIX+"shell-v3";
+const CACHE_NAME=CACHE_PREFIX+"shell-v4";
 const SHELL_FILES=[
   "./","index.html","site.css","future.css","style.css","app.js",
   "prediction.js","pwa.js","data.js","manifest.webmanifest",
@@ -26,6 +26,7 @@ async function networkFirst(request){
   try{
     const response=await fetch(request);
     if(response.ok){await cache.put(request,response.clone());return response}
+    return await cache.match(request)||await cache.match(request,{ignoreSearch:true})||response;
   }catch{}
   return await cache.match(request,{ignoreSearch:true})
     ||await cache.match(scopedUrl("index.html"))
@@ -39,12 +40,5 @@ self.addEventListener("fetch",event=>{
   if(url.origin!==scope.origin||!url.pathname.startsWith(scope.pathname))return;
   if(request.mode==="navigate"){event.respondWith(networkFirst(request));return}
   if(!/\.(?:js|css|png|webmanifest)$/.test(url.pathname))return;
-  const cachePromise=caches.open(CACHE_NAME);
-  const cachedPromise=cachePromise.then(cache=>cache.match(request,{ignoreSearch:true}));
-  const updatePromise=cachePromise.then(cache=>fetch(request).then(async response=>{
-    if(response.ok)await cache.put(request,response.clone());
-    return response;
-  })).catch(()=>null);
-  event.waitUntil(updatePromise.then(()=>{}));
-  event.respondWith(cachedPromise.then(cached=>cached||updatePromise).then(response=>response||new Response("",{status:504})));
+  event.respondWith(networkFirst(request));
 });
