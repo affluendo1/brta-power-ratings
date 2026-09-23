@@ -109,3 +109,37 @@ html[data-theme="dark"]{
  .main-tab,.subtab,.button,.choice-trigger,.result-match,.fixture-match,.accent-choice{transition:background-color .16s,border-color .16s,color .16s,transform .16s}
  .result-match:hover,.fixture-match:hover{transform:translateY(-1px)}
 }
+
+/* Default: restore the original full-width category separators in the ratings table. */
+#page-ratings .band-divider td{
+ padding:0!important;
+ border-left:1px solid var(--border-color)!important;
+ background:var(--surface-muted)!important;
+}
+#page-ratings .band-divider div{
+ display:flex;
+ align-items:center;
+ gap:8px;
+ width:auto;
+ max-width:none;
+ padding:5px 10px;
+ border-left:4px solid var(--band-color);
+ background:transparent;
+ color:var(--text-color);
+ font-size:inherit;
+ font-weight:inherit;
+}
+#page-ratings .band-divider i{width:7px;height:7px;border-radius:50%;background:var(--band-color)}
+#page-ratings .band-divider b{
+ color:var(--text-color);
+ font-size:10px;
+ font-weight:800;
+ letter-spacing:.08em;
+ text-transform:uppercase;
+}
+#page-ratings .band-divider span{
+ margin-left:auto;
+ color:var(--muted-color);
+ font-size:10px;
+ font-weight:500;
+}
