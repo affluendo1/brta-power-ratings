@@ -1,28 +1,31 @@
 <!doctype html>
-<html lang="en" data-theme="auto">
+<html lang="en" data-theme="auto" data-interface="future" data-accent="yellow">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <meta id="themeColor" name="theme-color" content="#eef1f4">
+  <meta id="themeColor" name="theme-color" content="#101207">
+  <meta name="application-name" content="BRTA Power Ratings">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="BRTA Ratings">
   <meta name="mobile-web-app-capable" content="yes">
-  <link rel="apple-touch-icon" href="assets/brta-icon.png?v=1">
-  <link rel="icon" type="image/svg+xml" href="assets/brta-favicon.svg?v=1">
-  <link rel="manifest" href="manifest.webmanifest?v=1">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/brta-icon-180.png?v=2">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/brta-icon-192.png?v=2">
+  <link rel="manifest" href="manifest.webmanifest?v=2">
   <title>BRTA Power Ratings</title>
   <script>
-    (function(){var m=localStorage.getItem('brta-interface')||'future',t=localStorage.getItem('brta-theme')||'auto',a=localStorage.getItem('brta-accent')||'green',d=t==='dark'||(t==='auto'&&matchMedia('(prefers-color-scheme: dark)').matches),p={green:['#e8f0eb','#07120d'],blue:['#edf5ff','#071426'],red:['#fff0f2','#210b11'],purple:['#f1edff','#120b20'],black:['#f0f2f4','#0b0f13'],white:['#ffffff','#18212a']}[a]||['#e8f0eb','#07120d'],c=m==='future'?p[d?1:0]:(d?'#171b20':'#eef1f4'),l=document.createElement('link');document.documentElement.dataset.accent=a;document.documentElement.style.backgroundColor=c;document.documentElement.style.colorScheme=d?'dark':'light';l.id='siteStyles';l.rel='stylesheet';l.href=m==='future'?'future.css?v=19':'style.css?v=28';document.head.appendChild(l)})()
+    (function(){var m=localStorage.getItem('brta-interface')||'future',t=localStorage.getItem('brta-theme')||'auto',a=localStorage.getItem('brta-accent')||'yellow',d=t==='dark'||(t==='auto'&&matchMedia('(prefers-color-scheme: dark)').matches),future=m!=='classic',c=future?(d?'#101109':'#f3f2e9'):'#173f63',l=document.createElement('link');document.documentElement.dataset.interface=m;document.documentElement.dataset.accent=a;document.documentElement.style.backgroundColor=c;document.documentElement.style.colorScheme=d?'dark':'light';document.getElementById('themeColor').content=c;l.id='siteStyles';l.rel='stylesheet';l.href=future?'future.css?v=20':'style.css?v=29';document.head.appendChild(l)})()
   </script>
 </head>
 <body>
 <header class="site-header">
   <div class="brand-block">
-    <div class="brand">BRTA Power Ratings</div>
-    <div class="subtitle" id="sectionSubtitle">Saturday &amp; Sunday AM · Spring 2026</div>
+    <img class="brand-logo" src="assets/brta-logo.png?v=2" alt="BRTA logo" width="76" height="76">
+    <div class="brand-copy"><div class="brand">BRTA Power Ratings</div>
+    <div class="subtitle" id="sectionSubtitle">Saturday &amp; Sunday AM · Spring 2026</div></div>
   </div>
   <div class="header-actions">
+    <button id="installBtn" class="button secondary" type="button" aria-haspopup="dialog" aria-controls="installOverlay">Install app</button>
     <button id="analyticsBtn" class="button secondary" aria-haspopup="dialog" aria-controls="analyticsOverlay">Analytics</button>
     <button id="roundBtn" class="button secondary">Latest round</button>
     <button id="settingsBtn" class="button secondary">Settings</button>
@@ -88,6 +91,7 @@
   </section>
 
 </main>
+<footer class="site-footer"><span><b>BRTA Power Ratings</b> · Unofficial competition analytics</span><span>Not affiliated with BRTA, Tennis Australia or UTR.</span></footer>
 
 <div id="analyticsOverlay" class="overlay hidden">
   <div class="overlay-backdrop" data-analytics-close="1"></div>
@@ -116,10 +120,12 @@
 <div id="resultOverlay" class="overlay hidden"><div class="overlay-backdrop" data-result-close="1"></div><aside class="result-sheet"><button id="resultClose" class="close-btn" aria-label="Close">×</button><div id="resultContent"></div></aside></div>
 <div id="predictionOverlay" class="overlay hidden"><div class="overlay-backdrop" data-prediction-close="1"></div><aside class="prediction-sheet"><button id="predictionClose" class="close-btn" aria-label="Close">×</button><div id="predictionContent"></div></aside></div>
 <div id="sosOverlay" class="overlay hidden"><div class="overlay-backdrop" data-sos-close="1"></div><aside class="sos-sheet"><button id="sosClose" class="close-btn" aria-label="Close">×</button><div id="sosContent"></div></aside></div>
+<div id="installOverlay" class="overlay hidden"><div class="overlay-backdrop" data-install-close="1"></div><section class="install-sheet" role="dialog" aria-modal="true" aria-labelledby="installTitle"><button id="installClose" class="close-btn" type="button" aria-label="Close install help">×</button><div class="overlay-title"><div class="kicker">BRTA POWER RATINGS</div><h2 id="installTitle">Install the app</h2><p>Keep your section results one tap away.</p></div><div id="installGuide" class="install-guide"></div><div class="install-actions"><button id="nativeInstallBtn" class="button primary hidden" type="button">Install BRTA Ratings</button><button id="installDoneBtn" class="button secondary" type="button">Done</button></div></section></div>
 <div id="modeSwitchOverlay" class="mode-switch hidden" aria-live="polite"><div class="mode-switch-box"><div class="progress-ring" id="progressRing"><div><b id="progressPct">0%</b></div></div><h2>Switching interface</h2><p id="switchStatus">Preparing layout…</p></div></div>
 <div id="syncToastHost" class="sync-toast-host" aria-live="polite" aria-atomic="true"></div>
 <script src="data.js?v=15"></script>
 <script src="prediction.js?v=1"></script>
-<script src="app.js?v=14"></script>
+<script src="app.js?v=15"></script>
+<script src="pwa.js?v=1"></script>
 </body>
 </html>
