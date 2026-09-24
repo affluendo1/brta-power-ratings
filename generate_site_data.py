@@ -33,14 +33,35 @@ PAIR_SYNERGY_L2 = 50.0
 # views to consume without reproducing statistical logic in the browser.
 
 def canonical_pair(value: str) -> str:
-    names = [x.strip() for x in str(value).split("/") if x.strip()]
+    names = pair_members(value)
     return " / ".join(sorted(names, key=str.casefold))
 
 def pair_members(value: str):
-    names = [x.strip() for x in str(value).split("/") if x.strip()]
-    if len(names) != 2:
-        raise ValueError(f"Expected two players in pair: {value!r}")
-    return names
+    raw=str(value).strip()
+    if raw.casefold() in {"", "nan", "none", "null"}:
+        return []
+    return [x.strip() for x in raw.split("/") if x.strip()]
+
+def display_pair(value: str) -> str:
+    return str(value).strip() if pair_members(value) else "Not recorded"
+
+def standard_doubles_rows(doubles):
+    """Keep ordinary two-player pair rubbers for the doubles rating fits.
+
+    Some historical TROLS scorecards list more or fewer than two names on a
+    doubles side. Those official rows still belong in Results, but they do not
+    provide an unambiguous two-player pair for the pair or individual model.
+    Excluding them here lets the archive publish without silently inventing a
+    pairing or dropping the source result from the site.
+    """
+    df = doubles[doubles["status"].eq("Completed")].copy()
+    if "valid_for_rating" in df:
+        df = df[df["valid_for_rating"].astype(str).str.casefold().isin({"true", "1", "yes"})].copy()
+    if df.empty:
+        return df
+    valid = [len(pair_members(home)) == 2 and len(pair_members(away)) == 2
+             for home, away in zip(df["home_pair"], df["away_pair"])]
+    return df.loc[valid].copy()
 
 def parse_dates(df):
     out = df.copy()
@@ -88,9 +109,11 @@ def team_maps(singles, doubles):
         pc[str(r.away_player)][str(r.away_team)] += 1
     for _, r in doubles.iterrows():
         hp = canonical_pair(r.home_pair); ap = canonical_pair(r.away_pair)
-        qc[hp][str(r.home_team)] += 1; qc[ap][str(r.away_team)] += 1
-        for p in pair_members(r.home_pair): pc[p][str(r.home_team)] += 1
-        for p in pair_members(r.away_pair): pc[p][str(r.away_team)] += 1
+        home_members=pair_members(r.home_pair); away_members=pair_members(r.away_pair)
+        if len(home_members)==2: qc[hp][str(r.home_team)] += 1
+        if len(away_members)==2: qc[ap][str(r.away_team)] += 1
+        for p in home_members: pc[p][str(r.home_team)] += 1
+        for p in away_members: pc[p][str(r.away_team)] += 1
     return ({p:c.most_common(1)[0][0] for p,c in pc.items()},
             {p:c.most_common(1)[0][0] for p,c in qc.items()})
 
@@ -116,7 +139,7 @@ def website_rows(ratings, teams):
     return rows
 
 def fit_pairs(doubles):
-    x=doubles.copy()
+    x=standard_doubles_rows(doubles)
     x["home_player"]=x["home_pair"].map(canonical_pair)
     x["away_player"]=x["away_pair"].map(canonical_pair)
     x["winning_player"]=x["winning_pair"].map(canonical_pair)
@@ -167,9 +190,7 @@ def fit_power_ratings_from_df(df):
     return pd.DataFrame(rows).sort_values("power",ascending=False)
 
 def fit_individual_doubles(doubles, *, rubbers_format=False):
-    df=doubles[doubles["status"].eq("Completed")].copy()
-    if "valid_for_rating" in df:
-        df=df[df["valid_for_rating"].astype(str).str.casefold().isin({"true","1","yes"})].copy()
+    df=standard_doubles_rows(doubles)
     if df.empty:
         return pd.DataFrame(columns=["player","matches","wins","losses","games_for","games_against","power","power_se","ci95_low","ci95_high","partners","partner_count","network_rank","identifiability_exposure","qualified","ranking_status"])
     df=parse_dates(df)
@@ -206,10 +227,10 @@ def fit_individual_doubles(doubles, *, rubbers_format=False):
         home_win=canonical_pair(r.winning_pair)==canonical_pair(r.home_pair)
         for p0 in home_members[row]:
             s=stats[p0]; s["matches"]+=1; s["wins"]+=int(home_win); s["gf"]+=int(r.home_games); s["ga"]+=int(r.away_games)
-            s["partners"].add(next(p for p in home_members[row] if p != p0))
+            s["partners"].update(p for p in home_members[row] if p != p0)
         for p0 in away_members[row]:
             s=stats[p0]; s["matches"]+=1; s["wins"]+=int(not home_win); s["gf"]+=int(r.away_games); s["ga"]+=int(r.home_games)
-            s["partners"].add(next(p for p in away_members[row] if p != p0))
+            s["partners"].update(p for p in away_members[row] if p != p0)
     rows=[]
     for p0 in players:
         k=ix[p0]; s=stats[p0]
@@ -616,6 +637,47 @@ def draw_fixtures(draw, fixtures, rules):
                 item.update({"homeRubbers":int(result.home_rubbers),"awayRubbers":int(result.away_rubbers),
                              "homeGames":int(result.home_games),"awayGames":int(result.away_games)})
         by_round[int(r["round"])].append(item)
+    # Some TROLS fixtures pages omit the bye row, leaving seven-team rounds
+    # with only three cards. Reconstruct it only when the full section draw
+    # contains an odd team count and a regular round has the expected number
+    # of real fixtures with exactly one team absent. An incomplete scrape will
+    # therefore not be mistaken for a bye.
+    def is_bye_name(value):
+        return str(value).strip().casefold() == "bye"
+
+    def is_regular_stage(value):
+        return str(value or "regular").strip().casefold() in {"", "regular", "nan", "none"}
+
+    teams=set()
+    for frame in (draw, fixtures):
+        for column in ("home_team", "away_team"):
+            if column not in frame:
+                continue
+            teams.update(
+                str(value).strip() for value in frame[column].dropna()
+                if str(value).strip() and not is_bye_name(value)
+            )
+    if teams and len(teams) % 2:
+        for rnd, games in list(by_round.items()):
+            regular=[game for game in games if is_regular_stage(game.get("stage", "regular"))]
+            if not regular or any(is_bye_name(game["home"]) or is_bye_name(game["away"]) for game in regular):
+                continue
+            expected_fixtures=len(teams)//2
+            if len(regular)!=expected_fixtures:
+                continue
+            participating={team for game in regular for team in (game["home"], game["away"])}
+            absent=teams-participating
+            if len(absent)!=1:
+                continue
+            bye_team=next(iter(absent))
+            sample=regular[0]
+            by_round[rnd].append({
+                "home":"Bye", "away":bye_team,
+                "fixtureId":f"bye:{rnd}",
+                "status":"Bye", "stage":"regular",
+                "label":sample.get("label", f"Round {rnd}"),
+                "date":sample.get("date", ""),
+            })
     return [{"round":rnd,"label":games[0].get("label", f"Round {rnd}"),
              "stage":games[0].get("stage", "regular"),"date":games[0].get("date", ""),
              "fixtures":games,"source":"official TROLS draw"} for rnd,games in sorted(by_round.items())]
@@ -1034,7 +1096,9 @@ def result_rounds(fixtures, singles, doubles, rules):
             home_flags=emergency_flags(home_emergency_col)
             away_flags=emergency_flags(away_emergency_col)
             item={
-                "type":discipline,"position":str(r.position),"home":str(r[home_col]),"away":str(r[away_col]),
+                "type":discipline,"position":str(r.position),
+                "home":display_pair(r[home_col]) if discipline=="Doubles" else str(r[home_col]),
+                "away":display_pair(r[away_col]) if discipline=="Doubles" else str(r[away_col]),
                 "winner":str(r[winner_col]),"score":str(r.score),
                 "homeEmergency":any(home_flags),
                 "awayEmergency":any(away_flags),
@@ -1103,17 +1167,23 @@ def build_section(meta, *, sections_dir=None):
     doubles=doubles[doubles.status.eq("Completed")].copy()
     rules=brta_scoring_rules(meta)
     player_teams,pair_teams=team_maps(singles,doubles)
+    standard_doubles=standard_doubles_rows(doubles)
+    nonstandard_doubles=[{
+        "fixtureId":str(row.fixture_id),"position":str(row.position),"score":str(row.score),
+        "home":display_pair(row.home_pair),"away":display_pair(row.away_pair),
+    } for _,row in doubles.iterrows()
+      if len(pair_members(row.home_pair))!=2 or len(pair_members(row.away_pair))!=2]
     sr=fit_power_ratings_from_df(singles)
-    pr=fit_pairs(doubles)
-    dr=fit_individual_doubles(doubles, rubbers_format=rules["format"]=="rubbers")
+    pr=fit_pairs(standard_doubles)
+    dr=fit_individual_doubles(standard_doubles, rubbers_format=rules["format"]=="rubbers")
     srows=website_rows(sr,player_teams)
     prows=website_rows(pr,pair_teams)
     drows=website_rows(dr,player_teams)
     individual_power={x["player"]:x["rating"] for x in drows}
-    pair_synergy=fit_pair_synergies(doubles,individual_power) if len(doubles) else {}
+    pair_synergy=fit_pair_synergies(standard_doubles,individual_power) if len(standard_doubles) else {}
     for pair in prows:
         members=pair_members(pair["player"])
-        pair["individualAverage"]=round(sum(individual_power[p] for p in members)/2)
+        pair["individualAverage"]=round(sum(individual_power[p] for p in members)/len(members))
         pair["pairEffect"]=pair["rating"]-pair["individualAverage"]
         pair["pairSynergy"]=round(pair_synergy.get(pair["player"],0))
     rmap={x["player"]:x["rating"] for x in srows}
@@ -1175,6 +1245,11 @@ def build_section(meta, *, sections_dir=None):
         "upcomingFixtures":draw_fixtures(draw,fixtures,rules),
         "sync":sync_meta(meta,fixtures),
     }
+    if nonstandard_doubles:
+        payload["dataQuality"]={
+            "nonstandardDoubles":nonstandard_doubles,
+            "note":"Official TROLS doubles results with a side that does not list exactly two players remain in Results, but are excluded from doubles rating calculations because the pairing is ambiguous.",
+        }
     qualified=[row for row in srows if row["matches"]>=MIN_MATCHES]
     if qualified:
         leader=qualified[0]; runner=qualified[1] if len(qualified)>1 else None
