@@ -9,11 +9,21 @@ import pandas as pd
 
 import generate_archive_site_data as archive_generator
 from generate_site_data import apply_official_standings, brta_scoring_rules, build_section, knockout_summary
-from scraper.backfill_history import parse_official_ladder
+from scraper.backfill_history import ARCHIVE_RESULTS_URL, discover_seasons, parse_official_ladder
 from scraper.sync_trols import parse_results_page, parse_scorecard, validate_dataset
 
 
 class HistoryArchiveTests(unittest.TestCase):
+    def test_archive_seasons_are_discovered_from_trols_past_results_page(self):
+        response = type("Response", (), {"text": """<select id='season'>
+          <option value='UA39'>Current Season</option><option value='UA5'>Spring 2009</option>
+        </select>"""})()
+        with patch("scraper.backfill_history.sync._post", return_value=response) as request:
+            seasons = discover_seasons("UA")
+        self.assertEqual(request.call_args.args[0], ARCHIVE_RESULTS_URL)
+        self.assertEqual(request.call_args.args[1]["daytime"], "UA")
+        self.assertEqual(seasons, [{"competition_code": "UA", "season_id": "UA5", "season_label": "Spring 2009"}])
+
     def test_history_catalog_keeps_current_season_and_duplicate_trols_ids(self):
         raw = {
             "seasons": [

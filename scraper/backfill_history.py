@@ -21,7 +21,7 @@ from bs4 import BeautifulSoup
 from scraper import sync_trols as sync
 
 BASE = sync.BASE
-RESULTS_URL = sync.RESULTS_URL
+ARCHIVE_RESULTS_URL = urljoin(BASE, "p_results.php")
 FIXTURE_URL = sync.FIXTURE_URL
 MATCH_URL = sync.MATCH_URL
 LADDER_URL = urljoin(BASE, "p_ladders.php")
@@ -72,7 +72,7 @@ def parse_official_ladder(html: str) -> list[dict]:
 
 
 def discover_seasons(daytime: str) -> list[dict]:
-    response = sync._post(RESULTS_URL, {"which": "0", "style": "", "daytime": daytime})
+    response = sync._post(ARCHIVE_RESULTS_URL, {"which": "0", "style": "", "daytime": daytime})
     options = sync.select_options(BeautifulSoup(response.text, "html.parser"), "season")
     if not options:
         raise RuntimeError(f"TROLS exposed no past seasons for {daytime}")
@@ -89,7 +89,7 @@ def discover_seasons(daytime: str) -> list[dict]:
 
 
 def discover_season_sections(daytime: str, season_id: str) -> list[dict]:
-    response = sync._post(RESULTS_URL, {
+    response = sync._post(ARCHIVE_RESULTS_URL, {
         "which": "0", "style": "", "daytime": daytime, "season": season_id,
     })
     options = [(label, code) for label, code in sync.select_options(BeautifulSoup(response.text, "html.parser"), "section")
@@ -100,7 +100,7 @@ def discover_season_sections(daytime: str, season_id: str) -> list[dict]:
 
 
 def _results(meta: dict) -> dict:
-    response = sync._post(RESULTS_URL, {
+    response = sync._post(ARCHIVE_RESULTS_URL, {
         "which": "1", "style": "", "daytime": meta["competition_code"],
         "season": meta["season_id"], "section": meta["source_section_code"],
     })
