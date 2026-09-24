@@ -6,6 +6,7 @@ import os
 import re
 import threading
 import time
+import unicodedata
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
 from pathlib import Path
@@ -55,7 +56,7 @@ def clean_text(value: str) -> str:
 
 
 def clean_team(value: str) -> str:
-    value = clean_text(value)
+    value = unicodedata.normalize("NFKC", clean_text(value))
     value = re.sub(r"\s+Playing\s+@.*$", "", value, flags=re.I)
     value = re.sub(r"\s*\([^)]*\)\s*[\W_]*$", "", value)
     return value.strip()
@@ -371,10 +372,12 @@ def parse_scorecard(html: str, fixture: dict) -> tuple[list[dict], list[dict]]:
     if len(outer) < 2:
         raise RuntimeError(f"Malformed scorecard for {fixture['fixture_id']}")
     team_cells = outer[0].find_all("td", recursive=False)
-    home_team, away_team = clean_team(team_cells[0].get_text(" ", strip=True)), clean_team(team_cells[-1].get_text(" ", strip=True))
+    raw_home_team, raw_away_team = clean_text(team_cells[0].get_text(" ", strip=True)), clean_text(team_cells[-1].get_text(" ", strip=True))
+    home_team, away_team = clean_team(raw_home_team), clean_team(raw_away_team)
     if home_team != fixture["home_team"] or away_team != fixture["away_team"]:
         raise RuntimeError(
-            f"Team mismatch {fixture['fixture_id']}: scorecard {home_team!r} v {away_team!r}; "
+            f"Team mismatch {fixture['fixture_id']}: scorecard {raw_home_team!r} -> {home_team!r} v "
+            f"{raw_away_team!r} -> {away_team!r}; "
             f"results index {fixture['home_team']!r} v {fixture['away_team']!r}"
         )
     nested = outer[1].find_all("table")

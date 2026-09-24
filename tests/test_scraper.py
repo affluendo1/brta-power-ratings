@@ -130,6 +130,7 @@ class DatasetValidationTests(unittest.TestCase):
     def test_team_normalization_removes_source_invisible_marks_before_comparing_scorecards(self):
         self.assertEqual(clean_team("Mentone (DTC)\u200b"), "Mentone")
         self.assertEqual(clean_team("Mentone (DTC) •"), "Mentone")
+        self.assertEqual(clean_team("Mentone （DTC）"), "Mentone")
 
     def test_rubbers_result_keeps_points_rubbers_sets_and_games(self):
         html = """
