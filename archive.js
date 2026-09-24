@@ -1,6 +1,6 @@
 (()=>{
   const UNLOCK_KEY='brta-extras-unlocked',INTRO_KEY='brta-archive-intro-seen',VISION_KEY='brta-archive-vision',ROUTE='#archive';
-  const archive=document.querySelector('#royalArchive'),entry=document.querySelector('#sidPortalEntry'),extras=document.querySelector('#extrasOverlay'),password=document.querySelector('#extrasPassword'),extrasForm=document.querySelector('#extrasForm'),extrasState=document.querySelector('#extrasState');
+  const archive=document.querySelector('#royalArchive'),entry=document.querySelector('#sidPortalEntry'),homeEntry=document.querySelector('#sidPortalHomeEntry'),homeButton=document.querySelector('#sidPortalHomeButton'),extras=document.querySelector('#extrasOverlay'),password=document.querySelector('#extrasPassword'),extrasForm=document.querySelector('#extrasForm'),extrasState=document.querySelector('#extrasState');
   const reduced=matchMedia('(prefers-reduced-motion: reduce)');
   const tracks=[
     {title:'Hypnotize · The Notorious B.I.G.',src:'assets/hypnotize.mp3'},
@@ -17,15 +17,16 @@
   const music=new Audio(),gong=new Audio('assets/gong.mp3');music.loop=true;music.preload='metadata';music.volume=.55;gong.preload='auto';
 
   const unlocked=()=>sessionStorage.getItem(UNLOCK_KEY)==='1';
-  const updateEntry=()=>entry.classList.toggle('hidden',!unlocked());
+  const updateEntry=()=>{const visible=unlocked();entry.classList.toggle('hidden',!visible);homeEntry.classList.toggle('hidden',!visible)};
   const setHash=(value)=>history.replaceState(null,'',location.pathname+location.search+value);
   const transition=(done,copy)=>{
     if(typeof window.runBRTAInterfaceTransition==='function')window.runBRTAInterfaceTransition(done,copy);
     else done();
   };
   function bindSettings(){
-    const button=document.querySelector('#showExtrasBtn');
-    if(button)button.onclick=openExtras;
+    const show=document.querySelector('#showExtrasBtn'),hide=document.querySelector('#hideExtrasBtn');
+    if(show)show.onclick=openExtras;
+    if(hide)hide.onclick=revokeExtras;
   }
   function openExtras(){
     returnFocus=document.activeElement;extras.classList.remove('hidden');document.body.classList.add('modal-open');password.value='';extrasState.textContent='';extrasState.className='extras-state';setTimeout(()=>password.focus(),0);
@@ -35,6 +36,11 @@
   }
   function unlock(){
     sessionStorage.setItem(UNLOCK_KEY,'1');sessionStorage.removeItem(INTRO_KEY);extrasState.textContent='Yep.';extrasState.className='extras-state good';updateEntry();setTimeout(closeExtras,680);
+  }
+  function revokeExtras(){
+    sessionStorage.removeItem(UNLOCK_KEY);sessionStorage.removeItem(VISION_KEY);sessionStorage.removeItem(INTRO_KEY);updateEntry();
+    const show=document.querySelector('#showExtrasBtn'),hide=document.querySelector('#hideExtrasBtn');
+    show?.classList.remove('hidden');hide?.classList.add('hidden');
   }
   extrasForm.addEventListener('submit',event=>{
     event.preventDefault();
@@ -101,7 +107,7 @@
   function syncVision(){const on=sessionStorage.getItem(VISION_KEY)==='1';document.body.classList.toggle('basavision',on);const control=archive.querySelector('[data-vision]');if(control)control.setAttribute('aria-pressed',String(on))}
   function beginQuotes(){const quote=archive.querySelector('[data-archive-quote]'),quotes=['“The racket chose him.” — Royal Archive','“Four majors. One year. Suspicious.” — Statistical Department'];let index=0;clearInterval(quoteTimer);quoteTimer=setInterval(()=>{if(!portalOpen||!quote)return;quote.classList.add('fading');setTimeout(()=>{index=(index+1)%quotes.length;quote.textContent=quotes[index];quote.classList.remove('fading')},220)},8500)}
   function showIntro(){const intro=archive.querySelector('.archive-intro');if(sessionStorage.getItem(INTRO_KEY)==='1'||reduced.matches){intro.hidden=true;return}intro.hidden=false;setTimeout(()=>{intro.querySelector('p').textContent='SIDDHARTH R. BASA'},560);setTimeout(()=>{intro.classList.add('leaving');sessionStorage.setItem(INTRO_KEY,'1');setTimeout(()=>{intro.hidden=true;intro.classList.remove('leaving')},470)},1350)}
-  function enterPortal(){if(!unlocked())return;returnFocus=document.activeElement;playMusic();transition(()=>{setHash(ROUTE);activatePortal()},{title:'Opening archive',message:'Granting royal access…'})}
+  function enterPortal(){if(!unlocked())return;returnFocus=document.activeElement;playMusic();transition(()=>{setHash(ROUTE);activatePortal()},{title:'THE GLORIOUS SID BASA PORTAL',message:'Unsealing the Royal Archive…',variant:'royal'})}
   function activatePortal(){if(!unlocked()){setHash('');return}renderPortal();portalOpen=true;document.body.classList.add('portal-active');archive.classList.remove('hidden');archive.setAttribute('aria-hidden','false');document.title='Royal Tennis Archive';showIntro();beginQuotes();syncMusic();if(!music.paused)drawSpectrum();setTimeout(()=>archive.querySelector('[data-archive-return]')?.focus(),0)}
   function leavePortal(){if(!portalOpen)return;transition(()=>{portalOpen=false;music.pause();stopSpectrum();clearInterval(quoteTimer);document.body.classList.remove('portal-active','basavision');archive.classList.add('hidden');archive.setAttribute('aria-hidden','true');setHash('');document.title='BRTA Power Ratings';returnFocus?.focus?.()},{title:'Returning to ratings',message:'Restoring BRTA Power Ratings…'})}
   function sidEffect(){
@@ -110,9 +116,9 @@
     for(let i=0;i<34;i++){const piece=document.createElement('i');piece.className='royal-confetti';piece.style.setProperty('--x',`${Math.round((Math.random()-.5)*540)}px`);piece.style.setProperty('--y',`${Math.round(-90-Math.random()*320)}px`);piece.style.setProperty('--r',`${Math.round((Math.random()-.5)*880)}deg`);piece.style.setProperty('--confetti-color',i%3===0?'#fff1bd':i%3===1?'#d89d36':'#a27325');stage.appendChild(piece)}
     const figure=document.createElement('img');figure.className='sid-rise-figure';figure.src='assets/sid-royal-rise-transparent.png';figure.alt='';stage.appendChild(figure);document.body.appendChild(stage);if(!reduced.matches)document.body.classList.add('royal-shake');setTimeout(()=>document.body.classList.remove('royal-shake'),360);setTimeout(()=>{stage.remove();sidBusy=false},reduced.matches?760:2500);
   }
-  entry.addEventListener('click',enterPortal);
+  entry.addEventListener('click',enterPortal);homeButton.addEventListener('click',enterPortal);
   window.addEventListener('hashchange',()=>{if(location.hash===ROUTE){if(unlocked()&&!portalOpen)activatePortal();else if(!unlocked())setHash('')}else if(portalOpen)leavePortal()});
-  window.SidPortal={bindSettings,open:enterPortal,locked:()=>!unlocked()};
+  window.SidPortal={bindSettings,open:enterPortal,isUnlocked:unlocked,locked:()=>!unlocked()};
   updateEntry();bindSettings();
   if(location.hash===ROUTE){if(unlocked())activatePortal();else setHash('')}
 })();
