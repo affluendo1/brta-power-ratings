@@ -5,7 +5,7 @@ from pathlib import Path
 from unittest import mock
 
 from scraper import sync_trols
-from scraper.sync_trols import clean_team, parse_draw_page, parse_results_page, parse_scorecard, validate_dataset
+from scraper.sync_trols import clean_team, is_same_saved_season, parse_draw_page, parse_results_page, parse_scorecard, validate_dataset
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -131,6 +131,28 @@ class DatasetValidationTests(unittest.TestCase):
         self.assertEqual(clean_team("Mentone (DTC)\u200b"), "Mentone")
         self.assertEqual(clean_team("Mentone (DTC) •"), "Mentone")
         self.assertEqual(clean_team("Mentone （DTC）"), "Mentone")
+        self.assertEqual(clean_team("Mentone (DTC) (10:00) Playing @ Dingley"), "Mentone")
+
+    def test_new_season_does_not_compare_its_opening_counts_to_last_season(self):
+        current = {
+            "competition_label": "Sunday AM - Summer 2027",
+            "season_id": "UA42",
+        }
+        previous = {
+            "competition_label": "Sunday AM - Spring 2026",
+            "season_id": "UA41",
+        }
+        self.assertFalse(is_same_saved_season(current, previous))
+        self.assertTrue(is_same_saved_season(
+            {**current, "season_id": "UA41", "competition_label": "Sunday AM - Spring 2026"},
+            previous,
+        ))
+
+    def test_legacy_metadata_uses_competition_label_for_season_comparison(self):
+        self.assertFalse(is_same_saved_season(
+            {"competition_label": "Sunday AM - Summer 2027", "season_id": "UA42"},
+            {"competition_label": "Sunday AM - Spring 2026"},
+        ))
 
     def test_rubbers_result_keeps_points_rubbers_sets_and_games(self):
         html = """

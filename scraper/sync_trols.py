@@ -58,7 +58,14 @@ def clean_text(value: str) -> str:
 def clean_team(value: str) -> str:
     value = unicodedata.normalize("NFKC", clean_text(value))
     value = re.sub(r"\s+Playing\s+@.*$", "", value, flags=re.I)
-    value = re.sub(r"\s*\([^)]*\)\s*[\W_]*$", "", value)
+    # Some scorecards append both a team suffix and its scheduled venue, e.g.
+    # "Mentone (DTC) (10:00) Playing @ Dingley". Remove every trailing
+    # parenthetical annotation, not just the final time annotation.
+    while True:
+        cleaned = re.sub(r"\s*\([^)]*\)\s*[\W_]*$", "", value)
+        if cleaned == value:
+            break
+        value = cleaned
     return value.strip()
 
 
@@ -601,6 +608,27 @@ def current_season_transitions(previous: dict, sections: list[dict]) -> list[dic
     return sorted(transitions, key=lambda row: row["competition_code"])
 
 
+def is_same_saved_season(section: dict, previous_metadata: dict) -> bool:
+    """Whether row-count safety checks should compare against saved files.
+
+    Current section IDs can be reused between seasons. Once TROLS changes its
+    season ID, the previous season's larger CSV must not block the new season's
+    smaller opening round. Older metadata has no season ID, so compare its
+    explicit competition label as a migration fallback.
+    """
+    old_id, current_id = previous_metadata.get("season_id"), section.get("season_id")
+    if old_id and current_id:
+        return str(old_id) == str(current_id)
+
+    old_label = clean_text(previous_metadata.get("competition_label", ""))
+    current_label = clean_text(section.get("competition_label", ""))
+    if old_label and current_label:
+        return old_label.casefold() == current_label.casefold()
+    # Missing metadata is not evidence that the season changed: retain the
+    # conservative shrink guard until the prior season can be identified.
+    return True
+
+
 def _load_previous_current_seasons() -> dict:
     path = OUT / "catalog.json"
     if not path.exists():
@@ -686,10 +714,20 @@ def main() -> None:
         code = section["section_code"]
         section_dir = OUT / "sections" / code
         old_singles, old_doubles = count_existing(section_dir / "singles.csv"), count_existing(section_dir / "doubles.csv")
-        if old_singles and len(section["singles"]) < old_singles:
-            raise RuntimeError(f"Dataset shrank. Manual review required: {code} singles {old_singles} -> {len(section['singles'])}")
-        if old_doubles and len(section["doubles"]) < old_doubles:
-            raise RuntimeError(f"Dataset shrank. Manual review required: {code} doubles {old_doubles} -> {len(section['doubles'])}")
+        old_metadata = {}
+        old_metadata_path = section_dir / "metadata.json"
+        if old_metadata_path.exists():
+            try:
+                old_metadata = json.loads(old_metadata_path.read_text(encoding="utf-8"))
+            except (OSError, json.JSONDecodeError):
+                old_metadata = {}
+        if is_same_saved_season(section, old_metadata):
+            if old_singles and len(section["singles"]) < old_singles:
+                raise RuntimeError(f"Dataset shrank. Manual review required: {code} singles {old_singles} -> {len(section['singles'])}")
+            if old_doubles and len(section["doubles"]) < old_doubles:
+                raise RuntimeError(f"Dataset shrank. Manual review required: {code} doubles {old_doubles} -> {len(section['doubles'])}")
+        elif old_singles or old_doubles:
+            print(f"{code}: TROLS season changed; starting fresh row counts for {section['season_label']}")
         write_csv(section_dir / "fixtures.csv", section["fixtures"], FIXTURE_FIELDS)
         write_csv(section_dir / "draw.csv", section["draw"], DRAW_FIELDS)
         write_csv(section_dir / "singles.csv", section["singles"], SINGLES_FIELDS)
