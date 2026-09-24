@@ -3,10 +3,10 @@ AA010011,18 Jul 26,1,Coatesville,Clarinda,No. 1,Chiraag Mandal,Advith Potharajul
 AA010011,18 Jul 26,1,Coatesville,Clarinda,No. 2,Patrick Vincent,Arush Srinivasa,Arush Srinivasa,2-6,2,6,0,1,Completed,true,false,false
 AA010011,18 Jul 26,1,Coatesville,Clarinda,No. 3,Madhav Mohan,Edward Burland,Edward Burland,4-6,4,6,0,1,Completed,true,false,false
 AA010011,18 Jul 26,1,Coatesville,Clarinda,No. 4,Samuel Cromie,Cairo Perkins,Cairo Perkins,2-6,2,6,0,1,Completed,true,false,false
-AA010012,18 Jul 26,1,Mentone (DTC),St James,No. 1,Isobel Gumbell,Xavier Tingiri,Xavier Tingiri,2-6,2,6,0,1,Completed,true,false,false
-AA010012,18 Jul 26,1,Mentone (DTC),St James,No. 2,Mikayla Jacotine,Luca Tingiri,Luca Tingiri,2-6,2,6,0,1,Completed,true,false,false
-AA010012,18 Jul 26,1,Mentone (DTC),St James,No. 3,Duke Greskie,Bobby Cooksley,Bobby Cooksley,4-6,4,6,0,1,Completed,true,false,false
-AA010012,18 Jul 26,1,Mentone (DTC),St James,No. 4,Matisse Stenhouse,Alex Salem,Alex Salem,0-6,0,6,0,1,Completed,true,false,false
+AA010012,18 Jul 26,1,Mentone,St James,No. 1,Isobel Gumbell,Xavier Tingiri,Xavier Tingiri,2-6,2,6,0,1,Completed,true,false,false
+AA010012,18 Jul 26,1,Mentone,St James,No. 2,Mikayla Jacotine,Luca Tingiri,Luca Tingiri,2-6,2,6,0,1,Completed,true,false,false
+AA010012,18 Jul 26,1,Mentone,St James,No. 3,Duke Greskie,Bobby Cooksley,Bobby Cooksley,4-6,4,6,0,1,Completed,true,false,false
+AA010012,18 Jul 26,1,Mentone,St James,No. 4,Matisse Stenhouse,Alex Salem,Alex Salem,0-6,0,6,0,1,Completed,true,false,false
 AA010013,18 Jul 26,1,St Joan of Arc,Royal Ave,No. 1,Orlando Ganci,Lachlan Robertson,Lachlan Robertson,1-6,1,6,0,1,Completed,true,false,true
 AA010013,18 Jul 26,1,St Joan of Arc,Royal Ave,No. 2,Xavier Williams,Aidan Grigor,Aidan Grigor,3-6,3,6,0,1,Completed,true,false,false
 AA010013,18 Jul 26,1,St Joan of Arc,Royal Ave,No. 3,Theo Linderman,Pierce Drought,Theo Linderman,6-3,6,3,1,0,Completed,true,false,false
@@ -59,10 +59,10 @@ AA010054,15 Aug 26,5,Coatesville,Mentone,No. 1,Chiraag Mandal,Mikayla Jacotine,C
 AA010054,15 Aug 26,5,Coatesville,Mentone,No. 2,Samuel Cromie,Keira Khew,Samuel Cromie,6-3,6,3,1,0,Completed,true,false,false
 AA010054,15 Aug 26,5,Coatesville,Mentone,No. 3,Hunter Bates,Duke Greskie,Duke Greskie,5-7,5,7,0,1,Completed,true,false,false
 AA010054,15 Aug 26,5,Coatesville,Mentone,No. 4,Daniel Yii,Matisse Stenhouse,Daniel Yii,6-1,6,1,1,0,Completed,true,false,false
-AA010061,22 Aug 26,6,Mentone (DTC),St Joan of Arc,No. 1,Mikayla Jacotine,Yu Li,Yu Li,1-6,1,6,0,1,Completed,true,false,true
-AA010061,22 Aug 26,6,Mentone (DTC),St Joan of Arc,No. 2,Duke Greskie,Xavier Williams,Xavier Williams,1-6,1,6,0,1,Completed,true,false,false
-AA010061,22 Aug 26,6,Mentone (DTC),St Joan of Arc,No. 3,Samuel Parcher,Theo Linderman,Theo Linderman,6-7,6,7,0,1,Completed,true,false,false
-AA010061,22 Aug 26,6,Mentone (DTC),St Joan of Arc,No. 4,Matisse Stenhouse,Ollie Chamberlain,Ollie Chamberlain,2-6,2,6,0,1,Completed,true,false,true
+AA010061,22 Aug 26,6,Mentone,St Joan of Arc,No. 1,Mikayla Jacotine,Yu Li,Yu Li,1-6,1,6,0,1,Completed,true,false,true
+AA010061,22 Aug 26,6,Mentone,St Joan of Arc,No. 2,Duke Greskie,Xavier Williams,Xavier Williams,1-6,1,6,0,1,Completed,true,false,false
+AA010061,22 Aug 26,6,Mentone,St Joan of Arc,No. 3,Samuel Parcher,Theo Linderman,Theo Linderman,6-7,6,7,0,1,Completed,true,false,false
+AA010061,22 Aug 26,6,Mentone,St Joan of Arc,No. 4,Matisse Stenhouse,Ollie Chamberlain,Ollie Chamberlain,2-6,2,6,0,1,Completed,true,false,true
 AA010062,22 Aug 26,6,St Louis de Mont,Coatesville,No. 1,Marcus Gonzales,Chiraag Mandal,Chiraag Mandal,1-6,1,6,0,1,Completed,true,false,false
 AA010062,22 Aug 26,6,St Louis de Mont,Coatesville,No. 2,Jean Visser,Patrick Vincent,Jean Visser,6-4,6,4,1,0,Completed,true,false,false
 AA010062,22 Aug 26,6,St Louis de Mont,Coatesville,No. 3,Alp Buyuksor,Hunter Bates,Hunter Bates,3-6,3,6,0,1,Completed,true,false,false
@@ -75,18 +75,18 @@ AA010071,29 Aug 26,7,Coatesville,St Joan of Arc,No. 1,Patrick Vincent,Orlando Ga
 AA010071,29 Aug 26,7,Coatesville,St Joan of Arc,No. 2,Samuel Cromie,Xavier Williams,Xavier Williams,5-7,5,7,0,1,Completed,true,false,false
 AA010071,29 Aug 26,7,Coatesville,St Joan of Arc,No. 3,Hunter Bates,Theo Linderman,Theo Linderman,2-6,2,6,0,1,Completed,true,false,false
 AA010071,29 Aug 26,7,Coatesville,St Joan of Arc,No. 4,Daniel Yii,Ollie Chamberlain,Ollie Chamberlain,2-6,2,6,0,1,Completed,true,false,true
-AA010072,29 Aug 26,7,Mentone (DTC),St Louis de Mont,No. 1,Isobel Gumbell,Marcus Gonzales,Marcus Gonzales,2-6,2,6,0,1,Completed,true,false,false
-AA010072,29 Aug 26,7,Mentone (DTC),St Louis de Mont,No. 2,Keira Khew,Jean Visser,Jean Visser,1-6,1,6,0,1,Completed,true,false,false
-AA010072,29 Aug 26,7,Mentone (DTC),St Louis de Mont,No. 3,Duke Greskie,Tom Fuller,Tom Fuller,2-6,2,6,0,1,Completed,true,false,false
-AA010072,29 Aug 26,7,Mentone (DTC),St Louis de Mont,No. 4,Samuel Parcher,Alp Buyuksor,Samuel Parcher,6-1,6,1,1,0,Completed,true,false,false
+AA010072,29 Aug 26,7,Mentone,St Louis de Mont,No. 1,Isobel Gumbell,Marcus Gonzales,Marcus Gonzales,2-6,2,6,0,1,Completed,true,false,false
+AA010072,29 Aug 26,7,Mentone,St Louis de Mont,No. 2,Keira Khew,Jean Visser,Jean Visser,1-6,1,6,0,1,Completed,true,false,false
+AA010072,29 Aug 26,7,Mentone,St Louis de Mont,No. 3,Duke Greskie,Tom Fuller,Tom Fuller,2-6,2,6,0,1,Completed,true,false,false
+AA010072,29 Aug 26,7,Mentone,St Louis de Mont,No. 4,Samuel Parcher,Alp Buyuksor,Samuel Parcher,6-1,6,1,1,0,Completed,true,false,false
 AA010074,29 Aug 26,7,Royal Ave,Clarinda,No. 1,Pierce Drought,Arush Srinivasa,Pierce Drought,7-5,7,5,1,0,Completed,true,false,false
 AA010074,29 Aug 26,7,Royal Ave,Clarinda,No. 2,Alexander Krake,Cairo Perkins,Cairo Perkins,0-6,0,6,0,1,Completed,true,false,false
 AA010074,29 Aug 26,7,Royal Ave,Clarinda,No. 3,Isaac Tzimos,Vihaan Didolkar,Vihaan Didolkar,2-6,2,6,0,1,Completed,true,false,false
 AA010074,29 Aug 26,7,Royal Ave,Clarinda,No. 4,[Unnamed emergency — TROLS AA010074 home code 4],Viyaan Mirani,Viyaan Mirani,0-6,0,6,0,1,Completed,false,true,false
-AA010092,12 Sep 26,9,Mentone (DTC),Clarinda,No. 1,Isobel Gumbell,Advith Potharajula,Advith Potharajula,3-6,3,6,0,1,Completed,true,false,false
-AA010092,12 Sep 26,9,Mentone (DTC),Clarinda,No. 2,Keira Khew,Edward Burland,Edward Burland,0-6,0,6,0,1,Completed,true,false,false
-AA010092,12 Sep 26,9,Mentone (DTC),Clarinda,No. 3,Duke Greskie,Vihaan Didolkar,Vihaan Didolkar,1-6,1,6,0,1,Completed,true,false,false
-AA010092,12 Sep 26,9,Mentone (DTC),Clarinda,No. 4,Matisse Stenhouse,Viyaan Mirani,Viyaan Mirani,2-6,2,6,0,1,Completed,true,false,false
+AA010092,12 Sep 26,9,Mentone,Clarinda,No. 1,Isobel Gumbell,Advith Potharajula,Advith Potharajula,3-6,3,6,0,1,Completed,true,false,false
+AA010092,12 Sep 26,9,Mentone,Clarinda,No. 2,Keira Khew,Edward Burland,Edward Burland,0-6,0,6,0,1,Completed,true,false,false
+AA010092,12 Sep 26,9,Mentone,Clarinda,No. 3,Duke Greskie,Vihaan Didolkar,Vihaan Didolkar,1-6,1,6,0,1,Completed,true,false,false
+AA010092,12 Sep 26,9,Mentone,Clarinda,No. 4,Matisse Stenhouse,Viyaan Mirani,Viyaan Mirani,2-6,2,6,0,1,Completed,true,false,false
 AA010093,12 Sep 26,9,St Joan of Arc,St James,No. 1,Orlando Ganci,Luca Tingiri,Orlando Ganci,6-3,6,3,1,0,Completed,true,false,false
 AA010093,12 Sep 26,9,St Joan of Arc,St James,No. 2,Xavier Williams,Bobby Cooksley,Xavier Williams,7-6,7,6,1,0,Completed,true,false,false
 AA010093,12 Sep 26,9,St Joan of Arc,St James,No. 3,Theo Linderman,Alex Salem,Theo Linderman,6-2,6,2,1,0,Completed,true,false,false
