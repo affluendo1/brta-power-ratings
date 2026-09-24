@@ -28,11 +28,11 @@ MAX_WORKERS = int(os.getenv("TROLS_WORKERS", "10"))
 _thread_local = threading.local()
 
 FIXTURE_FIELDS = [
-    "fixture_id", "date", "round", "home_team", "away_team",
+    "fixture_id", "date", "round", "stage", "round_label", "home_team", "away_team",
     "home_points", "away_points", "home_rubbers", "away_rubbers",
     "home_sets", "away_sets", "home_games", "away_games", "status", "notes",
 ]
-DRAW_FIELDS = ["draw_id", "date", "round", "home_team", "away_team", "fixture_id"]
+DRAW_FIELDS = ["draw_id", "date", "round", "stage", "round_label", "home_team", "away_team", "fixture_id"]
 SINGLES_FIELDS = [
     "fixture_id", "date", "round", "home_team", "away_team", "position",
     "home_player", "away_player", "winning_player", "score", "home_games",
@@ -134,7 +134,8 @@ def _numeric(value: str) -> int | float:
 
 def parse_results_page(html: str, section_code: str = "section") -> tuple[list[dict], str | None]:
     soup = BeautifulSoup(html, "html.parser")
-    fixtures, current_date, current_round, loaded = [], None, None, None
+    fixtures, current_date, current_round, current_stage, current_label, loaded = [], "", None, "regular", "", None
+    playoff_round, semifinal_events, final_events = 14, 0, 0
     for span in soup.find_all("span"):
         text = clean_text(span.get_text(" ", strip=True))
         if text.startswith("Results Loaded:"):
@@ -144,11 +145,31 @@ def parse_results_page(html: str, section_code: str = "section") -> tuple[list[d
         cells = tr.find_all("td", recursive=False)
         if len(cells) == 1:
             text = clean_text(cells[0].get_text(" ", strip=True))
-            match = re.search(r"(\d{1,2}\s+[A-Za-z]+\s+\d{2}).*?Rd\.\s*(\d+)", text)
+            normalized = re.sub(r"[‐‑‒–—]", "-", text).casefold()
+            date_match = re.search(r"(\d{1,2})(?:st|nd|rd|th)?\s+([A-Za-z]+)\s+(\d{2,4})", text, re.I)
+            stage_date = f"{int(date_match.group(1)):02d} {date_match.group(2)[:3].title()} {date_match.group(3)[-2:]}" if date_match else ""
+            if re.search(r"\bgrand\s*[- ]?\s*final\b", normalized):
+                final_events += 1
+                playoff_round += 1
+                current_date, current_round, current_stage = stage_date, playoff_round, "grand_final"
+                current_label = "Grand final" if final_events == 1 else f"Grand final · TROLS entry {final_events}"
+                continue
+            if re.search(r"\bsemi\s*[- ]?\s*finals?\b", normalized):
+                semifinal_events += 1
+                playoff_round += 1
+                current_date, current_round, current_stage = stage_date, playoff_round, "semi_final"
+                event_number = re.search(r"semi\s*[- ]?\s*final\s*(\d+)", normalized)
+                current_label = f"Semi-final {event_number.group(1)}" if event_number else ("Semi-final" if semifinal_events == 1 else f"Semi-final · TROLS entry {semifinal_events}")
+                continue
+            match = re.search(r"(\d{1,2})(?:st|nd|rd|th)?\s+([A-Za-z]+)\s+(\d{2,4}).*?Rd\.?\s*(\d+)", text, re.I)
             if match:
-                current_date, current_round = match.group(1), int(match.group(2))
+                day, month, year, round_no = match.groups()
+                year = year[-2:]
+                current_date = f"{int(day):02d} {month[:3].title()} {year}"
+                current_round, current_stage = int(round_no), "regular"
+                current_label = f"Round {current_round}"
             continue
-        if current_date is None or len(cells) < 3:
+        if current_round is None or len(cells) < 3:
             continue
         texts = [clean_text(cell.get_text(" ", strip=True)) for cell in cells]
         home, away = clean_team(texts[0]), clean_team(texts[-1])
@@ -167,6 +188,7 @@ def parse_results_page(html: str, section_code: str = "section") -> tuple[list[d
                 raise RuntimeError("MATCH ID PARSER BROKE: completed TROLS fixture has no official match ID")
             fixture = {
                 "fixture_id": match_id, "date": current_date, "round": current_round,
+                "stage": current_stage, "round_label": current_label,
                 "home_team": home, "away_team": away, "home_points": left[0], "away_points": right[0],
                 "home_rubbers": left[1], "away_rubbers": right[1],
                 "home_sets": left[2] if len(left) == 4 else "", "away_sets": right[2] if len(right) == 4 else "",
@@ -187,6 +209,7 @@ def parse_results_page(html: str, section_code: str = "section") -> tuple[list[d
             match_id = match_id or f"pending-{section_code.lower()}-r{current_round}-{slug(home)}-{slug(away)}"
             fixture = {
                 "fixture_id": match_id, "date": current_date, "round": current_round,
+                "stage": current_stage, "round_label": current_label,
                 "home_team": home, "away_team": away, "home_points": "", "away_points": "",
                 "home_rubbers": "", "away_rubbers": "", "home_sets": "", "away_sets": "",
                 "home_games": "", "away_games": "", "status": status,
@@ -194,8 +217,6 @@ def parse_results_page(html: str, section_code: str = "section") -> tuple[list[d
             }
         fixtures.append(fixture)
     fixtures.sort(key=lambda row: (int(row["round"]), row["fixture_id"]))
-    if not fixtures:
-        raise RuntimeError(f"No fixtures parsed for {section_code}")
     return fixtures, loaded
 
 
@@ -320,6 +341,12 @@ def parse_scorecard(html: str, fixture: dict) -> tuple[list[dict], list[dict]]:
         scores = [(int(a), int(b)) for a, b in re.findall(r"(\d+)\s*-\s*(\d+)", raw_score)]
         if not scores:
             continue
+        # Historical TROLS cards append a team-total row such as
+        # ``4 | 28-24 | 2`` after the individual rubbers. It otherwise looks
+        # exactly like another singles row, but a 28-game set cannot be a
+        # player scoreline. Never feed that aggregate into ratings.
+        if any(a > 13 or b > 13 for a, b in scores):
+            continue
         home_games, away_games = sum(a for a, _ in scores), sum(b for _, b in scores)
         home_sets, away_sets = sum(a > b for a, b in scores), sum(b > a for a, b in scores)
         decisive = home_sets != away_sets and all(a != b and max(a, b) >= 5 for a, b in scores)
@@ -369,7 +396,8 @@ def parse_draw_page(html: str, section_code: str) -> list[dict]:
         if not home or not away or home == "Bye" or away == "Bye":
             continue
         draw.append({"draw_id": f"draw-{section_code.lower()}-r{round_no}-{slug(home)}-{slug(away)}",
-                     "date": date, "round": round_no, "home_team": home, "away_team": away, "fixture_id": ""})
+                     "date": date, "round": round_no, "stage": "regular", "round_label": f"Round {round_no}",
+                     "home_team": home, "away_team": away, "fixture_id": ""})
     return draw
 
 
@@ -379,8 +407,8 @@ def _section_results(meta: dict) -> dict:
     return {**meta, "fixtures": fixtures, "results_loaded_by_trols": loaded}
 
 
-def _scorecard(fixture: dict) -> tuple[str, list[dict], list[dict]]:
-    response = _get(MATCH_URL, params={"matchid": fixture["fixture_id"], "seasonid": ""})
+def _scorecard(fixture: dict, season_id: str = "") -> tuple[str, list[dict], list[dict]]:
+    response = _get(MATCH_URL, params={"matchid": fixture["fixture_id"], "seasonid": season_id})
     singles, doubles = parse_scorecard(response.text, fixture)
     return fixture["fixture_id"], singles, doubles
 
@@ -403,7 +431,7 @@ def _integer(value, label: str) -> int:
         raise RuntimeError(f"Invalid {label}: {value!r}") from exc
 
 
-def validate_dataset(fixtures: list[dict], singles: list[dict], doubles: list[dict], section_code: str) -> None:
+def validate_dataset(fixtures: list[dict], singles: list[dict], doubles: list[dict], section_code: str, *, green_ball: bool = False) -> None:
     if not re.fullmatch(r"(?:AA|UA)\d{3}", section_code):
         raise RuntimeError(f"Unexpected section code {section_code!r}")
     official_ids = [row["fixture_id"] for row in fixtures if row["status"] == "Completed"]
@@ -443,7 +471,7 @@ def validate_dataset(fixtures: list[dict], singles: list[dict], doubles: list[di
         ar = sum(_integer(row["away_sets"], "away sets") > _integer(row["home_sets"], "home sets") for row in scoring_rows)
         if (hg, ag) != (_integer(fixture["home_games"], "fixture home games"), _integer(fixture["away_games"], "fixture away games")):
             raise RuntimeError(f"Fixture game totals do not match rubbers for {fixture['fixture_id']}")
-        green_ball = section_code in {"AA013", "AA014", "UA026", "UA027"}
+        green_ball = green_ball or section_code in {"AA013", "AA014", "UA026", "UA027"}
         complete_standard_card = len(rows) == 6 and all(not _contains_source_unknown(str(row)) for row in rows)
         if fixture["home_sets"] == "" and not green_ball and complete_standard_card and (hr, ar) != (_integer(fixture["home_rubbers"], "fixture home rubbers"), _integer(fixture["away_rubbers"], "fixture away rubbers")):
             raise RuntimeError(f"Fixture rubber totals do not match rubbers for {fixture['fixture_id']}")
@@ -453,6 +481,8 @@ def attach_draw_ids(draw: list[dict], fixtures: list[dict]) -> list[dict]:
     result_map = {(int(row["round"]), clean_team(row["home_team"]), clean_team(row["away_team"])): row["fixture_id"] for row in fixtures}
     for row in draw:
         row["fixture_id"] = result_map.get((int(row["round"]), row["home_team"], row["away_team"]), "")
+        row.setdefault("stage", "regular")
+        row.setdefault("round_label", f"Round {int(row['round'])}")
     return draw
 
 
@@ -555,7 +585,7 @@ def main() -> None:
             "results_loaded_by_trols": section["results_loaded_by_trols"],
             "fixtures": len(section["fixtures"]), "completed_fixtures": completed, "draw_fixtures": len(section["draw"]),
             "singles_rubbers": len(section["singles"]), "doubles_rubbers": len(section["doubles"]),
-            "latest_round": max(int(row["round"]) for row in section["fixtures"]), "validation": "passed",
+            "latest_round": max((int(row["round"]) for row in section["fixtures"]), default=0), "validation": "passed",
         }
         (section_dir / "metadata.json").write_text(json.dumps(metadata, indent=2) + "\n", encoding="utf-8")
         catalog.append(metadata)

@@ -1,0 +1,62 @@
+name: Import TROLS historical seasons
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "scraper/backfill_history.py"
+      - "scraper/sync_trols.py"
+      - "generate_archive_site_data.py"
+      - "generate_site_data.py"
+      - "model.py"
+      - "tests/**"
+      - "requirements.txt"
+      - ".github/workflows/import-history.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: brta-archive-history-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  import-history:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    env:
+      TROLS_HISTORY_WORKERS: "5"
+      PYTHONUNBUFFERED: "1"
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install scraper and rating dependencies
+        run: pip install -r requirements.txt
+      - name: Refresh current Spring 2026 site data
+        run: python generate_site_data.py
+      - name: Import published Saturday and Sunday AM archives
+        run: python scraper/backfill_history.py
+      - name: Fit archived seasons and build the history catalogue
+        run: python generate_archive_site_data.py
+      - name: Run scraper, model and prediction regression tests
+        run: |
+          python -m unittest discover -s tests -v
+          node tests/test_prediction.js
+      - name: Commit archive data and site payloads
+        shell: bash
+        run: |
+          git config user.name "brta-ratings-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          BRANCH="${GITHUB_REF_NAME:-main}"
+          git pull --rebase origin "$BRANCH"
+          git add data/archive
+          if [ -z "$(git status --porcelain -- data/archive)" ]; then
+            echo "No historical archive changes to commit."
+            exit 0
+          fi
+          git commit -m "Import TROLS Saturday and Sunday AM history"
+          git push origin "HEAD:$BRANCH"

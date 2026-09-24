@@ -13,6 +13,10 @@ The automated database discovers sections directly from TROLS rather than keepin
 
 The interface remembers the selected competition and section. Its Results tab reproduces each round and scorecard in a compact mobile-friendly view. Latest Round and Player Lab matches link directly to the corresponding Results panel.
 
+The Settings panel's **History** controls browse the seasons TROLS makes available under Past Results. Sunday AM currently reaches Spring 2009; Saturday AM reaches Winter 2012 and has gaps in its published archive. The site preserves TROLS' season IDs and labels, including duplicate labels, and does not create seasons that TROLS does not list. Spring 2026 remains on the live sync path.
+
+Historical sections retain official scorecards, fixture order and final TROLS ladder points/order where published. TROLS-recorded semifinal and grand-final results are shown as recorded; before a semifinal draw is published, the site projects the 1-v-4 and 2-v-3 matchups only after all 14 regular rounds are present and resolved. Repeated grand-final entries, including washouts and later played fixtures, remain separate. Missing official dates stay blank and are displayed as unpublished. Historical ratings are recalculated with the current V3 model and are not presented as historical official ratings.
+
 The Ratings page can also search **all current sections** for an individual player. Cross-section search adds the competition/section to every result and opens that player's actual section when selected. It is a discovery tool, not a combined ladder: each section's rating network is fitted independently.
 
 ## V3 model
@@ -32,23 +36,14 @@ V3 uses one scoreline likelihood rather than separately counting the same result
 Malformed or incomplete TROLS rows remain visible in Results but are excluded from ratings when a player identity or completed score cannot be established without guessing.
 
 
-The Analytics page publishes the generated analytical structures:
+The Analytics panel publishes the generated analytical structures:
 
 - **Matchup Lab**: a dense current-model player-v-player singles projection matrix using the section's actual scoring format;
 - **Results vs expectation**: a pre-round ledger for every valid singles rubber, plus player-level actual wins, expected wins and expected-versus-actual game share;
-- **Section leaders**: within-section dominance against the common 1500 display centre.
 
 Expectation rows use only rating information that existed before the round being evaluated. Players without an earlier rating snapshot enter that match at the neutral 1500 section centre. Public expectation ranks require four singles matches, matching the Singles Power publication threshold.
 
 Historical rating snapshots cover every published round in the official draw. A washout/no-evidence round carries the previous fitted state forward so round timelines remain continuous.
-
-## Cross-section leaders
-
-Sections are disconnected opponent networks, so their raw leader ratings are not presented as proof that one section's player would beat another's. The Analytics **Section Leaders** table ranks **within-section dominance**:
-
-`expected game share vs the section-average 1500 player = logistic((leader_power - 1500) / 450)`
-
-It also displays the leader's gap to the next qualified player. This is a relative dominance comparison, not an absolute cross-section ability ranking.
 
 ## Doubles
 
@@ -70,6 +65,8 @@ It also displays the leader's gap to the next qualified player. This is a relati
 The scraper supports standard six-rubber Sets scorecards, Green Ball and Rubbers sections with multi-set singles. TROLS's published team scoring totals are retained. Predictions use format-specific contest logic: ordinary Sets use the standard tiebreak path, Green Ball is first to six games with no tiebreak, and Rubbers singles uses the two-set plus match-tiebreak projection.
 
 `generate_site_data.py` fits every section independently, builds the cross-section summary and writes lazy-loaded site JSON to `data/site/sections/`. Section 6 is embedded in `data.js` as the fast default; other sections load only when selected.
+
+`scraper/backfill_history.py` imports every non-current season offered by both TROLS Past Results selectors, including scorecards and published final ladders. `generate_archive_site_data.py` fits and writes one lazy-loaded payload per archived season/section under `data/archive/site/sections/` and creates `data/archive/catalog.json` for the History controls. The separate **Import TROLS historical seasons** workflow runs on code changes or manual dispatch; it has a six-hour job limit and does not run on the regular current-season schedule.
 
 The GitHub Actions workflow runs Sunday, Monday and Wednesday at 7:17 PM Australia/Melbourne time and can also be run manually. Every completed check creates a heartbeat, and the site shows a plain-English one-time toast on a browser's first visit after that check.
 

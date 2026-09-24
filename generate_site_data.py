@@ -44,9 +44,14 @@ def pair_members(value: str):
 
 def parse_dates(df):
     out = df.copy()
-    out["match_date"] = pd.to_datetime(out["date"], format="%d %b %y", errors="coerce")
-    if out["match_date"].isna().any():
-        raise ValueError("All published rating rows must have real dates")
+    parsed = pd.to_datetime(out["date"], format="%d %b %y", errors="coerce")
+    # TROLS does not publish dates on some historic playoff scorecards. Keep
+    # their stored date blank for display; for the rating likelihood only,
+    # use the latest known match date so we do not invent a postponement gap.
+    # If it publishes no dates for the season, one neutral common timestamp
+    # makes all observations receive equal recency weight.
+    reference_date = parsed.max() if not parsed.dropna().empty else pd.Timestamp("2000-01-01")
+    out["match_date"] = parsed.fillna(reference_date)
     return out
 
 
@@ -121,6 +126,8 @@ def fit_power_ratings_from_df(df):
     df=df[df["status"].eq("Completed")].copy()
     if "valid_for_rating" in df:
         df=df[df["valid_for_rating"].astype(str).str.casefold().isin({"true","1","yes"})].copy()
+    if df.empty:
+        return pd.DataFrame(columns=["player","matches","wins","losses","games_for","games_against","power","power_se","ci95_low","ci95_high"])
     df=parse_dates(df)
     players=sorted(set(df["home_player"])|set(df["away_player"]))
     ix={p:k for k,p in enumerate(players)}; n=len(players)
@@ -163,6 +170,8 @@ def fit_individual_doubles(doubles, *, rubbers_format=False):
     df=doubles[doubles["status"].eq("Completed")].copy()
     if "valid_for_rating" in df:
         df=df[df["valid_for_rating"].astype(str).str.casefold().isin({"true","1","yes"})].copy()
+    if df.empty:
+        return pd.DataFrame(columns=["player","matches","wins","losses","games_for","games_against","power","power_se","ci95_low","ci95_high","partners","partner_count","network_rank","identifiability_exposure","qualified","ranking_status"])
     df=parse_dates(df)
     home_members=[pair_members(x) for x in df.home_pair]
     away_members=[pair_members(x) for x in df.away_pair]
@@ -362,6 +371,11 @@ def team_rows(single_rows, fixtures, rules):
     return sorted(rows,key=lambda x:x["avg"],reverse=True)
 
 def reconstructed_standings(fixtures, rules):
+    if "stage" in fixtures.columns:
+        stages = fixtures["stage"].fillna("").astype(str).str.casefold()
+        fixtures = fixtures[~stages.isin({"semi_final", "grand_final", "semi-final", "grand-final"})].copy()
+    if "round" in fixtures.columns:
+        fixtures = fixtures[pd.to_numeric(fixtures["round"], errors="coerce").fillna(0).astype(int).le(14)].copy()
     teams = sorted((set(fixtures.home_team) | set(fixtures.away_team))-{"Bye"})
     s = {t: dict(team=t, played=0, wins=0, draws=0, losses=0, rubbersFor=0, rubbersAgainst=0,
                  gamesFor=0, gamesAgainst=0, points=0) for t in teams}
@@ -418,6 +432,163 @@ def reconstructed_standings(fixtures, rules):
         return (-x["points"], -percentage, x["team"])
     return sorted(s.values(), key=standing_key)
 
+
+def apply_official_standings(rows, official_rows):
+    """Use TROLS' published points and order where an archived ladder exists."""
+    if not official_rows:
+        return rows
+    by_team = {str(item.get("team", "")).casefold(): item for item in official_rows}
+    seen = set()
+    for row in rows:
+        official = by_team.get(str(row["team"]).casefold())
+        if not official:
+            continue
+        seen.add(str(row["team"]).casefold())
+        row["officialPosition"] = int(official.get("position", 0) or 0) or None
+        row["officialWins"] = _number(official.get("wins"))
+        if _number(official.get("points")) is not None:
+            row["points"] = _number(official["points"])
+        row["officialPercentage"] = _number(official.get("percentage"))
+        row["officialMarker"] = str(official.get("marker", ""))
+        row["standingsSource"] = "TROLS"
+    for official in official_rows:
+        team = str(official.get("team", ""))
+        if not team or team.casefold() in seen:
+            continue
+        rows.append({"team": team, "played": 0, "wins": 0, "draws": 0, "losses": 0,
+                     "rubbersFor": 0, "rubbersAgainst": 0, "gamesFor": 0, "gamesAgainst": 0,
+                     "points": _number(official.get("points")) or 0,
+                     "officialPosition": int(official.get("position", 0) or 0) or None,
+                     "officialWins": _number(official.get("wins")),
+                     "officialPercentage": _number(official.get("percentage")),
+                     "officialMarker": str(official.get("marker", "")), "standingsSource": "TROLS"})
+    if any(row.get("officialPosition") for row in rows):
+        rows.sort(key=lambda row: (row.get("officialPosition") is None,
+                                   row.get("officialPosition") or 10**6,
+                                   row["team"].casefold()))
+    return rows
+
+
+def _fixture_winner(row, rules):
+    status = str(row.get("status", ""))
+    home, away = str(row.get("home_team", "")), str(row.get("away_team", ""))
+    if status == "Forfeited To": return away
+    if status == "Forfeited By": return home
+    if status != "Completed": return None
+    home_sets, away_sets = _number(row.get("home_sets")), _number(row.get("away_sets"))
+    if home_sets is None or away_sets is None:
+        home_sets, away_sets = _number(row.get("home_rubbers")), _number(row.get("away_rubbers"))
+    home_games, away_games = _number(row.get("home_games")), _number(row.get("away_games"))
+    if home_sets is not None and away_sets is not None and home_sets != away_sets:
+        return home if home_sets > away_sets else away
+    if home_games is not None and away_games is not None and home_games != away_games:
+        return home if home_games > away_games else away
+    return None
+
+
+def _knockout_record(row, rules):
+    home_points, away_points = fixture_points(row, rules)
+    winner = _fixture_winner(row, rules)
+    home_rubbers, away_rubbers = _number(row.get("home_rubbers")), _number(row.get("away_rubbers"))
+    home_games, away_games = _number(row.get("home_games")), _number(row.get("away_games"))
+    date_value = row.get("date", "")
+    date = "" if pd.isna(date_value) else str(date_value or "")
+    stage = str(row.get("stage", "") or "")
+    label = str(row.get("round_label", "") or "")
+    if label.casefold() in {"nan", "none"}: label = ""
+    if not label:
+        label = "Grand final" if stage.casefold() in {"grand_final", "grand-final"} else "Semi-final"
+    return {
+        "fixtureId": str(row.get("fixture_id", "")), "date": date,
+        "home": str(row.get("home_team", "")), "away": str(row.get("away_team", "")),
+        "status": str(row.get("status", "")), "winner": winner, "stage": stage, "label": label,
+        "score": (f"{home_rubbers:g}–{away_rubbers:g}" if home_rubbers is not None and away_rubbers is not None else ""),
+        "homePoints": home_points, "awayPoints": away_points,
+        "homeGames": home_games, "awayGames": away_games,
+    }
+
+
+def knockout_summary(fixtures, standings, rules, meta):
+    """Record TROLS playoff results, or a clearly marked 1v4 / 2v3 projection."""
+    if fixtures.empty:
+        return {"source": "none", "status": "regular_season_in_progress", "regularSeasonComplete": False,
+                "qualifiers": [], "semifinals": [], "grandFinal": None, "champion": None, "runnerUp": None,
+                "semifinalSource": "none", "grandFinalSource": "none"}
+    rounds = pd.to_numeric(fixtures.get("round", pd.Series(dtype=float)), errors="coerce").fillna(0).astype(int)
+    stages = fixtures.get("stage", pd.Series([""] * len(fixtures), index=fixtures.index)).fillna("").astype(str).str.casefold()
+    semi_stage = stages.isin({"semi_final", "semi-final"})
+    final_stage = stages.isin({"grand_final", "grand-final"})
+    semis_mask = semi_stage | (rounds.eq(15) & ~final_stage)
+    final_mask = final_stage | (rounds.ge(16) & ~semi_stage)
+    regular_mask = ~semis_mask & ~final_mask & rounds.le(14)
+    regular = fixtures[regular_mask]
+    unresolved = regular[regular["status"].astype(str).isin({"Missing Result", "Scheduled", "Pending"})]
+    expected_rounds = int(meta.get("regular_season_rounds", 14) or 14)
+    published_rounds = set(rounds[regular_mask].tolist())
+    all_regular_rounds_present = all(round_no in published_rounds for round_no in range(1, expected_rounds + 1))
+    regular_complete = bool(all_regular_rounds_present and unresolved.empty)
+    semi_history = [_knockout_record(row, rules) for _, row in fixtures[semis_mask].iterrows()]
+    final_history = [_knockout_record(row, rules) for _, row in fixtures[final_mask].iterrows()]
+    actual_semi = bool(semi_history)
+    qualifiers = []
+    if actual_semi:
+        seed = {row["team"]: i + 1 for i, row in enumerate(standings)}
+        for match in semi_history:
+            for team in (match["home"], match["away"]):
+                if team and team not in [x["team"] for x in qualifiers]:
+                    qualifiers.append({"team": team, "seed": seed.get(team)})
+        semifinal_matches = semi_history
+    elif regular_complete:
+        qualifiers = [{"team": row["team"], "seed": i + 1} for i, row in enumerate(standings[:4])]
+        semifinal_matches = []
+        if len(qualifiers) >= 4:
+            semifinal_matches = [
+                {"fixtureId": None, "date": "", "home": qualifiers[0]["team"], "away": qualifiers[3]["team"],
+                 "status": "Projected", "winner": None, "score": "", "homePoints": None, "awayPoints": None,
+                 "homeGames": None, "awayGames": None, "label": "Semi-final 1"},
+                {"fixtureId": None, "date": "", "home": qualifiers[1]["team"], "away": qualifiers[2]["team"],
+                 "status": "Projected", "winner": None, "score": "", "homePoints": None, "awayPoints": None,
+                 "homeGames": None, "awayGames": None, "label": "Semi-final 2"},
+            ]
+    else:
+        semifinal_matches = []
+    completed_semis = [match for match in semi_history if match["winner"]]
+    actual_final = next((match for match in reversed(final_history) if match["winner"]), None)
+    grand_final = actual_final or (final_history[-1] if final_history else None)
+    if grand_final is None:
+        if actual_semi:
+            semi_winners = [match["winner"] for match in completed_semis]
+            if len(semi_winners) >= 2:
+                grand_final = {"fixtureId": None, "date": "", "home": semi_winners[0], "away": semi_winners[1],
+                               "status": "Awaiting TROLS result", "winner": None, "score": "",
+                               "homePoints": None, "awayPoints": None, "homeGames": None, "awayGames": None}
+        elif regular_complete and len(qualifiers) >= 4:
+            grand_final = {"fixtureId": None, "date": "", "home": "Semi-final 1 winner", "away": "Semi-final 2 winner",
+                           "status": "Projected", "winner": None, "score": "",
+                           "homePoints": None, "awayPoints": None, "homeGames": None, "awayGames": None}
+    champion = actual_final["winner"] if actual_final else None
+    runner_up = None
+    if actual_final and champion:
+        runner_up = actual_final["away"] if champion == actual_final["home"] else actual_final["home"]
+    if actual_final:
+        status = "complete"
+    elif final_history:
+        status = "grand_final_pending"
+    elif actual_semi:
+        status = "semifinals_recorded"
+    elif regular_complete:
+        status = "projected"
+    else:
+        status = "regular_season_in_progress"
+    semifinal_source = "TROLS" if actual_semi else ("projected" if regular_complete else "none")
+    grand_final_source = "TROLS" if final_history else ("pending" if actual_semi else ("projected" if regular_complete else "none"))
+    return {"source": "TROLS" if actual_semi or final_history else ("projected" if regular_complete else "none"),
+            "status": status, "regularSeasonComplete": regular_complete, "qualifiers": qualifiers,
+            "semifinals": semifinal_matches, "semifinalHistory": semi_history,
+            "grandFinal": grand_final, "grandFinalHistory": final_history,
+            "semifinalSource": semifinal_source, "grandFinalSource": grand_final_source,
+            "champion": champion, "runnerUp": runner_up}
+
 def draw_fixtures(draw, fixtures, rules):
     """Return the whole official draw, enriched with published results."""
     result_by_key={(int(r["round"]),str(r.home_team),str(r.away_team)):r for _,r in fixtures.iterrows()}
@@ -427,8 +598,16 @@ def draw_fixtures(draw, fixtures, rules):
         result=result_by_key.get(key)
         fid=str(r.fixture_id) if pd.notna(r.fixture_id) else ""
         fid=fid if fid and fid!="nan" else (str(result.fixture_id) if result is not None else str(r.draw_id))
+        stage=str(r.get("stage", "regular") or "regular")
+        label=str(r.get("round_label", "") or "")
+        if label.casefold() in {"nan", "none"}: label=""
+        if not label:
+            label={"semi_final":"Semi-final", "grand_final":"Grand final"}.get(stage.casefold(), f"Round {int(r['round'])}")
+        draw_date="" if pd.isna(r.get("date")) else str(r.get("date", ""))
+        result_date="" if result is None or pd.isna(result.get("date")) else str(result.get("date", ""))
         item={"home":str(r.home_team),"away":str(r.away_team),"fixtureId":fid,
-              "status":str(result.status) if result is not None else "Scheduled"}
+              "status":str(result.status) if result is not None else "Scheduled",
+              "stage":stage,"label":label,"date":draw_date or result_date}
         if result is not None:
             hp,ap=fixture_points(result, rules)
             if hp is not None and ap is not None:
@@ -437,7 +616,8 @@ def draw_fixtures(draw, fixtures, rules):
                 item.update({"homeRubbers":int(result.home_rubbers),"awayRubbers":int(result.away_rubbers),
                              "homeGames":int(result.home_games),"awayGames":int(result.away_games)})
         by_round[int(r["round"])].append(item)
-    return [{"round":rnd,"date":str(draw[draw["round"].astype(int).eq(rnd)].iloc[0]["date"]),
+    return [{"round":rnd,"label":games[0].get("label", f"Round {rnd}"),
+             "stage":games[0].get("stage", "regular"),"date":games[0].get("date", ""),
              "fixtures":games,"source":"official TROLS draw"} for rnd,games in sorted(by_round.items())]
 
 def round_rating_history(singles, player_teams, round_calendar=None):
@@ -780,6 +960,9 @@ def round_overview(fixtures, singles, doubles, rating_map, rating_history=None):
     completed_rounds=sorted(set(int(x) for x in singles["round"]))
     latest=max(completed_rounds)
     fx=fixtures[fixtures["round"].astype(int).eq(latest)].copy()
+    round_label=str(fx.iloc[0].get("round_label", "") or "") if len(fx) else ""
+    if round_label.casefold() in {"nan", "none"}: round_label=""
+    if not round_label: round_label=f"Round {latest}"
     sr=singles[singles["round"].astype(int).eq(latest)].copy()
     fixture_cards=[]
     for _,r in fx.iterrows():
@@ -811,7 +994,8 @@ def round_overview(fixtures, singles, doubles, rating_map, rating_history=None):
     upset=max(upsets,key=lambda x:x["gap"]) if upsets else None
     dominant=max(performances,key=lambda x:(x["margin"],x["performance"])) if performances else None
     closest=min(performances,key=lambda x:(x["margin"],-x["performance"])) if performances else None
-    date=str(sr.iloc[0]["date"]) if len(sr) else str(fx.iloc[0]["date"])
+    date_value=sr.iloc[0]["date"] if len(sr) else (fx.iloc[0]["date"] if len(fx) else "")
+    date="" if pd.isna(date_value) else str(date_value or "")
     completed_cards=[card for card in fixture_cards if card["status"]=="Completed"]
     average_margin=round(float(np.mean([abs(int(row.home_games)-int(row.away_games))
                                         for _, row in sr.iterrows()])), 1) if len(sr) else None
@@ -823,7 +1007,7 @@ def round_overview(fixtures, singles, doubles, rating_map, rating_history=None):
             if current and previous:
                 movers.append({"player":player,"change":current[1]-previous[1],"rating":current[1]})
     movers.sort(key=lambda row:(-row["change"],row["player"].casefold()))
-    return {"round":latest,"date":date,"fixtures":fixture_cards,"topPerformance":top,
+    return {"round":latest,"label":round_label,"date":date,"fixtures":fixture_cards,"topPerformance":top,
             "biggestUpset":upset,"dominantWin":dominant,"closestMatch":closest,
             "summary":{"completedFixtures":len(completed_cards),"singlesRubbers":len(sr),
                        "doublesRubbers":int(doubles["round"].astype(int).eq(latest).sum()),
@@ -862,7 +1046,13 @@ def result_rounds(fixtures, singles, doubles, rules):
     by_round=defaultdict(list)
     for _,r in fixtures.iterrows():
         if str(r.home_team)=="Bye" or str(r.away_team)=="Bye": continue
-        match={"fixtureId":str(r.fixture_id),"date":str(r.date),"round":int(r["round"]),
+        stage=str(r.get("stage", "regular") or "regular")
+        label=str(r.get("round_label", "") or "")
+        if label.casefold() in {"nan", "none"}: label=""
+        if not label:
+            label={"semi_final":"Semi-final", "grand_final":"Grand final"}.get(stage.casefold(), f"Round {int(r['round'])}")
+        date="" if pd.isna(r.get("date")) else str(r.get("date", ""))
+        match={"fixtureId":str(r.fixture_id),"date":date,"round":int(r["round"]),"label":label,"stage":stage,
                "home":str(r.home_team),"away":str(r.away_team),"status":str(r.status),
                "rubbers":rubbers.get(str(r.fixture_id),[])}
         home_points, away_points=fixture_points(r, rules)
@@ -873,41 +1063,79 @@ def result_rounds(fixtures, singles, doubles, rules):
                           "homeSets":_number(r.home_sets),"awaySets":_number(r.away_sets),
                           "homeGames":int(r.home_games),"awayGames":int(r.away_games)})
         by_round[int(r["round"])].append(match)
-    return [{"round":rnd,"date":matches[0]["date"],"fixtures":matches} for rnd,matches in sorted(by_round.items(),reverse=True)]
+    return [{"round":rnd,"label":matches[0].get("label", f"Round {rnd}"),"stage":matches[0].get("stage", "regular"),
+             "date":matches[0]["date"],"fixtures":matches} for rnd,matches in sorted(by_round.items(),reverse=True)]
 
 
-def build_section(meta):
-    section_dir=SECTIONS_DIR/meta["section_code"]
+def build_section(meta, *, sections_dir=None):
+    section_dir=(sections_dir or SECTIONS_DIR)/meta["section_code"]
     singles=pd.read_csv(section_dir/"singles.csv")
     doubles=pd.read_csv(section_dir/"doubles.csv")
     fixtures=pd.read_csv(section_dir/"fixtures.csv")
     draw=pd.read_csv(section_dir/"draw.csv")
+    if "stage" not in fixtures: fixtures["stage"]="regular"
+    if "round_label" not in fixtures: fixtures["round_label"]=""
+    if "stage" not in draw: draw["stage"]="regular"
+    if "round_label" not in draw: draw["round_label"]=""
+    # A team's official draw page is the authoritative regular-season order.
+    # TROLS publishes knockout matches on its Results page instead, so retain
+    # those exact source rows in the fixture calendar when the draw omits them.
+    if len(fixtures):
+        draw_keys={(int(row["round"]),str(row["home_team"]),str(row["away_team"])) for _,row in draw.iterrows()}
+        playoff_rows=[]
+        for _,row in fixtures.iterrows():
+            stage=str(row.get("stage", "regular") or "regular").casefold()
+            if stage not in {"semi_final","semi-final","grand_final","grand-final"}:
+                continue
+            key=(int(row["round"]),str(row["home_team"]),str(row["away_team"]))
+            if key in draw_keys: continue
+            playoff_rows.append({
+                "draw_id":str(row.get("fixture_id", "")),
+                "date":"" if pd.isna(row.get("date")) else str(row.get("date", "")),
+                "round":int(row["round"]),"stage":stage,
+                "round_label":str(row.get("round_label", "") or ""),
+                "home_team":str(row["home_team"]),"away_team":str(row["away_team"]),
+                "fixture_id":str(row.get("fixture_id", "")),
+            })
+        if playoff_rows:
+            draw=pd.concat([draw,pd.DataFrame(playoff_rows)],ignore_index=True)
     singles=singles[singles.status.eq("Completed")].copy()
     doubles=doubles[doubles.status.eq("Completed")].copy()
     rules=brta_scoring_rules(meta)
     player_teams,pair_teams=team_maps(singles,doubles)
-    sr=fit_power_ratings(section_dir/"singles.csv")
+    sr=fit_power_ratings_from_df(singles)
     pr=fit_pairs(doubles)
     dr=fit_individual_doubles(doubles, rubbers_format=rules["format"]=="rubbers")
     srows=website_rows(sr,player_teams)
     prows=website_rows(pr,pair_teams)
     drows=website_rows(dr,player_teams)
     individual_power={x["player"]:x["rating"] for x in drows}
-    pair_synergy=fit_pair_synergies(doubles,individual_power)
+    pair_synergy=fit_pair_synergies(doubles,individual_power) if len(doubles) else {}
     for pair in prows:
         members=pair_members(pair["player"])
         pair["individualAverage"]=round(sum(individual_power[p] for p in members)/2)
         pair["pairEffect"]=pair["rating"]-pair["individualAverage"]
         pair["pairSynergy"]=round(pair_synergy.get(pair["player"],0))
     rmap={x["player"]:x["rating"] for x in srows}
-    latest_round=int(meta.get("latest_round") or singles["round"].astype(int).max())
+    latest_round=int(meta.get("latest_round") or (fixtures["round"].astype(int).max() if len(fixtures) else 0))
     round_calendar=[]
     for rnd in sorted({int(value) for value in draw["round"] if int(value) <= latest_round}):
-        row=draw[draw["round"].astype(int).eq(rnd)].iloc[0]
-        round_calendar.append({"round":rnd,"date":str(row["date"])})
+        group=draw[draw["round"].astype(int).eq(rnd)]
+        row=group.iloc[0]
+        date="" if pd.isna(row.get("date")) else str(row.get("date", ""))
+        label=str(row.get("round_label", "") or "")
+        if label.casefold() in {"nan", "none"}: label=""
+        round_calendar.append({"round":rnd,"date":date,"label":label})
+    if not round_calendar and len(fixtures):
+        for rnd in sorted({int(value) for value in fixtures["round"] if int(value) <= latest_round}):
+            row=fixtures[fixtures["round"].astype(int).eq(rnd)].iloc[0]
+            date="" if pd.isna(row.get("date")) else str(row.get("date", ""))
+            label=str(row.get("round_label", "") or "")
+            if label.casefold() in {"nan", "none"}: label=""
+            round_calendar.append({"round":rnd,"date":date,"label":label})
     history=round_rating_history(singles,player_teams,round_calendar)
     matchup=matchup_matrix(srows,rules)
-    expectation=results_expectation(singles,history,player_teams,rules)
+    expectation=results_expectation(singles,history,player_teams,rules) if len(singles) else {"players":[],"matches":[]}
     schedule=strength_of_schedule(singles,rmap,player_teams)
     schedule_by_player={row["player"]:row for row in schedule}
     for row in srows:
@@ -915,6 +1143,16 @@ def build_section(meta):
                     "scheduleRank":schedule_by_player.get(row["player"],{}).get("rank"),
                     "scheduleTotal":schedule_by_player.get(row["player"],{}).get("total")})
 
+    standings=apply_official_standings(reconstructed_standings(fixtures,rules),meta.get("official_standings", []))
+    knockout=knockout_summary(fixtures,standings,rules,meta)
+    team_data=team_rows(srows,fixtures,rules)
+    ladder_points={row["team"]:row["points"] for row in standings}
+    for team in team_data:
+        if team["team"] in ladder_points:
+            team["ladder"]=ladder_points[team["team"]]
+    archive_note=("Historical season. Ratings use the current published V3 model on TROLS-entered results; standings use TROLS' final ladder where available."
+                  if meta.get("is_archive") else
+                  "Team Power uses every modelled singles player; low-sample ratings are regularised toward the section centre. Standings use official TROLS points and current BRTA scoring rules for unresolved washouts and forfeits.")
     payload={
         "meta":meta,
         "singles":srows,
@@ -928,10 +1166,11 @@ def build_section(meta):
         "teamOrderEvidence":team_order_evidence(singles,rmap,player_teams),
         "format":rules["format"],
         "greenBall":bool(rules.get("green_ball",False)),
-        "teams":team_rows(srows,fixtures,rules),
-        "note":"Team Power uses every modelled singles player; low-sample ratings are already regularised toward the section centre. Standings use TROLS scorecard points and the 2026 BRTA Weekend Junior By-Laws for washouts and full-team forfeits.",
-        "roundOverview":round_overview(fixtures,singles,doubles,rmap,history),
-        "standings":reconstructed_standings(fixtures,rules),
+        "teams":team_data,
+        "note":archive_note,
+        "roundOverview":round_overview(fixtures,singles,doubles,rmap,history) if len(singles) else None,
+        "standings":standings,
+        "knockout":knockout,
         "results":result_rounds(fixtures,singles,doubles,rules),
         "upcomingFixtures":draw_fixtures(draw,fixtures,rules),
         "sync":sync_meta(meta,fixtures),

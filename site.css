@@ -98,6 +98,38 @@ tbody tr:last-child td{border-bottom:0}
 .band-divider div{display:flex;align-items:center;gap:7px;width:max-content;max-width:100%;padding:3px 9px;border-left:3px solid var(--band-color);background:var(--surface-muted);color:var(--muted-color);font-size:11px;font-weight:800}
 .band-divider i{width:7px;height:7px;background:var(--band-color)}
 .band-divider span{margin-left:5px;font-weight:500}
+.knockout-summary{margin:0 0 16px;padding:14px;border:1px solid var(--border-color);border-radius:var(--panel-radius,7px);background:var(--surface-muted)}
+.knockout-summary:empty{display:none}
+.knockout-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin:0 0 10px}
+.knockout-head h2{margin:0;font-size:16px}
+.knockout-head small,.knockout-note{color:var(--muted-color);font-size:12px}
+.knockout-rounds{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.knockout-round{min-width:0;padding:10px;border:1px solid var(--border-color);border-radius:var(--panel-radius,6px);background:var(--surface-color)}
+.knockout-round h3{margin:0 0 8px;color:var(--muted-color);font-size:11px;text-transform:uppercase;letter-spacing:.08em}
+.knockout-match{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;gap:8px;padding:7px 0;border-top:1px solid var(--border-color);font-size:13px}
+.knockout-match:first-of-type{border-top:0}
+.knockout-match .knockout-home{text-align:right}
+.knockout-match .knockout-away{text-align:left}
+.knockout-match .knockout-score{min-width:54px;text-align:center;font-weight:800;white-space:nowrap}
+.knockout-match .knockout-winner{color:var(--accent-color);font-weight:800}
+.knockout-match small{display:block;color:var(--muted-color);font-size:10px;font-weight:500}
+.knockout-final{max-width:620px;margin:10px auto 0;border-color:var(--accent-color)}
+.knockout-crown{margin-top:8px;text-align:center;font-weight:800}
+.playoff-cut td{padding:7px 10px;border-top:2px solid var(--accent-color);border-bottom:1px solid var(--border-color);background:var(--surface-muted);color:var(--accent-color);font-size:11px;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
+.standing-qualifier td:first-child{border-left:3px solid var(--accent-color)}
+@media(max-width:640px){.knockout-summary{padding:10px}.knockout-rounds{grid-template-columns:1fr}.knockout-match{gap:5px;font-size:12px}.knockout-match .knockout-score{min-width:44px}}
+.history-settings>p{margin:0 0 12px;color:var(--muted-color)}
+.history-selects{display:grid;grid-template-columns:minmax(150px,.8fr) minmax(180px,1fr) minmax(160px,1fr);gap:10px}
+.history-selects label{display:grid;gap:5px;color:var(--muted-color);font-size:12px;font-weight:700}
+.history-selects select{width:100%;min-width:0;padding:9px 10px;border:1px solid var(--border-color);border-radius:var(--control-radius,5px);background:var(--surface);color:var(--text-color);font:inherit}
+.history-info{margin-top:10px;color:var(--muted-color);font-size:12px}
+.history-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.history-actions button:disabled{opacity:.55;cursor:not-allowed}
+.knockout-match{grid-template-areas:"home score away" "detail detail detail";row-gap:3px}
+.knockout-match .knockout-home{grid-area:home}.knockout-match .knockout-score{grid-area:score}.knockout-match .knockout-away{grid-area:away}
+.knockout-match .knockout-detail{grid-area:detail;text-align:center}
+.knockout-match small{font-size:10px}
+@media(max-width:640px){.history-selects{grid-template-columns:1fr}.history-actions>*{flex:1 1 100%}}
 .notice{margin:12px 0;padding:12px 14px;border:1px solid var(--border-color);border-left:4px solid var(--primary);background:var(--surface);color:var(--muted-color)}
 .fixture-round{margin:0;border:1px solid var(--border-color);border-radius:var(--panel-radius,6px);overflow:hidden;background:var(--surface)}
 .fixture-round-head{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 14px;border-bottom:1px solid var(--border-color);background:var(--surface-muted)}

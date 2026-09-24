@@ -1,4 +1,4 @@
-@import url("./site.css?v=2");
+@import url("./site.css?v=3");
 :root{
  color-scheme:light;
  --display-font:Arial,Helvetica,sans-serif;
@@ -69,4 +69,3 @@ html[data-theme="dark"]{
 .result-match{border-radius:2px}
 .overlay-backdrop{background:rgba(12,24,34,.55);backdrop-filter:none}
 .profile-sheet,.settings-sheet,.round-sheet,.result-sheet,.prediction-sheet,.sos-sheet,.analytics-sheet,.install-sheet{border-radius:2px;box-shadow:0 8px 28px rgba(0,0,0,.22)}
-

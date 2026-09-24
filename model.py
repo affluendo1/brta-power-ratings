@@ -45,18 +45,17 @@ def prepare(df):
         if col in df:
             df[col] = df[col].replace({"Geoge Si":"George Si"})
     parsed = pd.to_datetime(df["date"], format="%d %b %y", errors="coerce")
-    numeric_round = pd.to_numeric(df["round"], errors="coerce")
-    last_regular_date = parsed.max()
-    last_regular_round = int(numeric_round.dropna().max())
+    valid_dates = parsed.dropna()
+    reference_date = valid_dates.max() if not valid_dates.empty else pd.Timestamp("2000-01-01")
     def inferred_date(row):
         dt = pd.to_datetime(row.get("date"), format="%d %b %y", errors="coerce")
         if pd.notna(dt): return dt
-        label=(str(row.get("date",""))+" "+str(row.get("round",""))).lower()
-        if "semi" in label: return last_regular_date+pd.Timedelta(days=7)
-        if "grand" in label: return last_regular_date+pd.Timedelta(days=14)
-        r=pd.to_numeric(pd.Series([row.get("round")]),errors="coerce").iloc[0]
-        if pd.notna(r): return last_regular_date+pd.Timedelta(days=7*(int(r)-last_regular_round))
-        return last_regular_date
+        # TROLS often omits dates for playoff scorecards. Do not invent a
+        # one-week delay: a washout can move finals by any amount. Use the
+        # latest dated result as a neutral recency fallback. If TROLS gives no
+        # dates anywhere in the season, all records receive the same neutral
+        # timestamp so recency weighting cannot invent an order.
+        return reference_date
     df["match_date"]=df.apply(inferred_date,axis=1)
     return df
 

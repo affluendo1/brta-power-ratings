@@ -14,7 +14,7 @@
   <link rel="manifest" href="manifest.webmanifest?v=2">
   <title>BRTA Power Ratings</title>
   <script>
-    (function(){var m=localStorage.getItem('brta-interface')||'future',t=localStorage.getItem('brta-theme')||'auto',a=localStorage.getItem('brta-accent')||'yellow',d=t==='dark'||(t==='auto'&&matchMedia('(prefers-color-scheme: dark)').matches),future=m!=='classic',c=future?(d?'#101109':'#f3f2e9'):'#173f63',l=document.createElement('link');document.documentElement.dataset.interface=m;document.documentElement.dataset.accent=a;document.documentElement.style.backgroundColor=c;document.documentElement.style.colorScheme=d?'dark':'light';document.getElementById('themeColor').content=c;l.id='siteStyles';l.rel='stylesheet';l.href=future?'future.css?v=23':'style.css?v=30';document.head.appendChild(l)})()
+    (function(){var m=localStorage.getItem('brta-interface')||'future',t=localStorage.getItem('brta-theme')||'auto',a=localStorage.getItem('brta-accent')||'yellow',d=t==='dark'||(t==='auto'&&matchMedia('(prefers-color-scheme: dark)').matches),future=m!=='classic',c=future?(d?'#101109':'#f3f2e9'):'#173f63',l=document.createElement('link');document.documentElement.dataset.interface=m;document.documentElement.dataset.accent=a;document.documentElement.style.backgroundColor=c;document.documentElement.style.colorScheme=d?'dark':'light';document.getElementById('themeColor').content=c;l.id='siteStyles';l.rel='stylesheet';l.href=future?'future.css?v=24':'style.css?v=31';document.head.appendChild(l)})()
   </script>
 </head>
 <body>
@@ -75,8 +75,9 @@
   </section>
 
   <section id="page-standings" class="page">
-    <div class="section-title"><div><h1>Standings</h1><p>Reconstructed from the points and score totals published by TROLS.</p></div><span class="small-note" id="standingsNote"></span></div>
-    <div class="table-wrap"><table><thead><tr><th>Pos</th><th>Team</th><th>P</th><th>W</th><th>D</th><th>L</th><th>Rubbers</th><th>Games</th><th>Pts</th></tr></thead><tbody id="standingsBody"></tbody></table></div>
+    <div class="section-title"><div><h1>Standings</h1><p>Regular-season ladder with the semifinal draw and final result.</p></div><span class="small-note" id="standingsNote"></span></div>
+    <div id="knockoutSummary" class="knockout-summary"></div>
+    <div class="table-wrap"><table><thead id="standingsHead"><tr><th>Pos</th><th>Team</th><th>P</th><th>W</th><th>D</th><th>L</th><th>Rubbers</th><th>Games</th><th>Pts</th></tr></thead><tbody id="standingsBody"></tbody></table></div>
     <div class="notice" id="standingsCaveat"></div>
   </section>
 
@@ -123,9 +124,9 @@
 <div id="installOverlay" class="overlay hidden"><div class="overlay-backdrop" data-install-close="1"></div><section class="install-sheet" role="dialog" aria-modal="true" aria-labelledby="installTitle"><button id="installClose" class="close-btn" type="button" aria-label="Close install help">×</button><div class="overlay-title"><div class="kicker">BRTA POWER RATINGS</div><h2 id="installTitle">Install the app</h2><p>Keep your section results one tap away.</p></div><div id="installGuide" class="install-guide"></div><div class="install-actions"><button id="nativeInstallBtn" class="button primary hidden" type="button">Install BRTA Ratings</button><button id="installDoneBtn" class="button secondary" type="button">Done</button></div></section></div>
 <div id="modeSwitchOverlay" class="mode-switch hidden" aria-live="polite"><div class="mode-switch-box"><div class="progress-ring" id="progressRing"><div><b id="progressPct">0%</b></div></div><h2>Switching interface</h2><p id="switchStatus">Preparing layout…</p></div></div>
 <div id="syncToastHost" class="sync-toast-host" aria-live="polite" aria-atomic="true"></div>
-<script src="data.js?v=15"></script>
+<script src="data.js?v=16"></script>
 <script src="prediction.js?v=1"></script>
-<script src="app.js?v=15"></script>
+    <script src="app.js?v=16"></script>
 <script src="pwa.js?v=1"></script>
 </body>
 </html>
