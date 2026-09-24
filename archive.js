@@ -185,5 +185,6 @@
   window.addEventListener('hashchange',()=>{if(location.hash===ROUTE){if(unlocked()&&!portalOpen)activatePortal();else if(!unlocked())setHash('')}else if(portalOpen)leavePortal()});
   window.SidPortal={bindSettings,open:enterPortal,isUnlocked:unlocked,locked:()=>!unlocked()};
   updateEntry();bindSettings();
+  preloadArchiveMedia();
   if(location.hash===ROUTE){if(unlocked())activatePortal();else setHash('')}
 })();

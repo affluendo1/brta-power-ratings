@@ -1,7 +1,7 @@
 const CACHE_PREFIX="brta-power-ratings-";
-const CACHE_NAME=CACHE_PREFIX+"shell-v14";
+const CACHE_NAME=CACHE_PREFIX+"shell-v15";
 const SHELL_FILES=[
-  "./","index.html","site.css","future.css","style.css","archive.css?v=6","app.js?v=22","archive.js?v=5",
+  "./","index.html","site.css","future.css","style.css","archive.css?v=6","app.js?v=22","archive.js?v=6",
   "prediction.js","pwa.js","data.js","manifest.webmanifest",
   "assets/brta-logo.png","assets/brta-icon-180.png",
   "assets/brta-icon-192.png","assets/brta-icon-512.png",
