@@ -1,10 +1,11 @@
 const CACHE_PREFIX="brta-power-ratings-";
-const CACHE_NAME=CACHE_PREFIX+"shell-v13";
+const CACHE_NAME=CACHE_PREFIX+"shell-v14";
 const SHELL_FILES=[
-  "./","index.html","site.css","future.css","style.css","archive.css?v=5","app.js?v=22","archive.js?v=4",
+  "./","index.html","site.css","future.css","style.css","archive.css?v=6","app.js?v=22","archive.js?v=5",
   "prediction.js","pwa.js","data.js","manifest.webmanifest",
   "assets/brta-logo.png","assets/brta-icon-180.png",
-  "assets/brta-icon-192.png","assets/brta-icon-512.png"
+  "assets/brta-icon-192.png","assets/brta-icon-512.png",
+  "assets/sid-wilson-blade.png","assets/royal-court-sunset.jpg","assets/royal-crowd.jpg"
 ];
 const scopedUrl=path=>new URL(path,self.registration.scope).href;
 self.addEventListener("install",event=>{
@@ -39,6 +40,6 @@ self.addEventListener("fetch",event=>{
   const scope=new URL(self.registration.scope);
   if(url.origin!==scope.origin||!url.pathname.startsWith(scope.pathname))return;
   if(request.mode==="navigate"){event.respondWith(networkFirst(request));return}
-  if(!/\.(?:js|css|png|webmanifest)$/.test(url.pathname))return;
+  if(!/\.(?:js|css|png|jpe?g|webmanifest)$/.test(url.pathname))return;
   event.respondWith(networkFirst(request));
 });
