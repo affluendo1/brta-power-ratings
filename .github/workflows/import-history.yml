@@ -39,7 +39,7 @@ jobs:
       - name: Refresh current Spring 2026 site data
         run: python generate_site_data.py
       - name: Import published Saturday and Sunday AM archives
-        run: python scraper/backfill_history.py
+        run: python -m scraper.backfill_history
       - name: Fit archived seasons and build the history catalogue
         run: python generate_archive_site_data.py
       - name: Run scraper, model and prediction regression tests
