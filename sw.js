@@ -1,11 +1,11 @@
 const CACHE_PREFIX="brta-power-ratings-";
-const CACHE_NAME=CACHE_PREFIX+"shell-v15";
+const CACHE_NAME=CACHE_PREFIX+"shell-v16";
 const SHELL_FILES=[
-  "./","index.html","site.css","future.css","style.css","archive.css?v=6","app.js?v=22","archive.js?v=6",
+  "./","index.html","site.css","future.css","style.css","archive.css?v=7","app.js?v=22","archive.js?v=7",
   "prediction.js","pwa.js","data.js","manifest.webmanifest",
   "assets/brta-logo.png","assets/brta-icon-180.png",
   "assets/brta-icon-192.png","assets/brta-icon-512.png",
-  "assets/sid-wilson-blade.png","assets/royal-court-sunset.jpg","assets/royal-crowd.jpg"
+  "assets/sid-wilson-blade-web.png","assets/royal-court-sunset.jpg","assets/royal-crowd-web.jpg"
 ];
 const scopedUrl=path=>new URL(path,self.registration.scope).href;
 self.addEventListener("install",event=>{
