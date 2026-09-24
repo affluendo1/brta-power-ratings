@@ -27,7 +27,9 @@
     const show=document.querySelector('#showExtrasBtn'),hide=document.querySelector('#hideExtrasBtn');
     if(show)show.onclick=openExtras;
     if(hide)hide.onclick=revokeExtras;
+    syncExtrasAccessControls();
   }
+  function syncExtrasAccessControls(){const visible=unlocked(),show=document.querySelector('#showExtrasBtn'),hide=document.querySelector('#hideExtrasBtn');show?.classList.toggle('hidden',visible);hide?.classList.toggle('hidden',!visible)}
   function openExtras(){
     returnFocus=document.activeElement;extras.classList.remove('hidden');document.body.classList.add('modal-open');password.value='';extrasState.textContent='';extrasState.className='extras-state';setTimeout(()=>password.focus(),0);
   }
@@ -35,12 +37,10 @@
     extras.classList.add('hidden');if(!document.querySelector('.overlay:not(.hidden)'))document.body.classList.remove('modal-open');returnFocus?.focus?.();
   }
   function unlock(){
-    sessionStorage.setItem(UNLOCK_KEY,'1');sessionStorage.removeItem(INTRO_KEY);extrasState.textContent='Yep.';extrasState.className='extras-state good';updateEntry();setTimeout(closeExtras,680);
+    sessionStorage.setItem(UNLOCK_KEY,'1');sessionStorage.removeItem(INTRO_KEY);extrasState.textContent='Yep.';extrasState.className='extras-state good';updateEntry();syncExtrasAccessControls();setTimeout(closeExtras,680);
   }
   function revokeExtras(){
-    sessionStorage.removeItem(UNLOCK_KEY);sessionStorage.removeItem(VISION_KEY);sessionStorage.removeItem(INTRO_KEY);updateEntry();
-    const show=document.querySelector('#showExtrasBtn'),hide=document.querySelector('#hideExtrasBtn');
-    show?.classList.remove('hidden');hide?.classList.add('hidden');
+    sessionStorage.removeItem(UNLOCK_KEY);sessionStorage.removeItem(VISION_KEY);sessionStorage.removeItem(INTRO_KEY);updateEntry();syncExtrasAccessControls();
   }
   extrasForm.addEventListener('submit',event=>{
     event.preventDefault();
