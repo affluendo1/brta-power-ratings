@@ -22,6 +22,8 @@ concurrency:
 
 jobs:
   import-history:
+    # Live season-selector updates do not require re-fetching the full archive.
+    if: ${{ github.event_name != 'push' || !contains(github.event.head_commit.message, '[current-sync-only]') }}
     runs-on: ubuntu-latest
     timeout-minutes: 360
     env:
@@ -36,7 +38,7 @@ jobs:
           python-version: "3.12"
       - name: Install scraper and rating dependencies
         run: pip install -r requirements.txt
-      - name: Refresh current Spring 2026 site data
+      - name: Refresh current Saturday and Sunday AM site data
         run: python generate_site_data.py
       - name: Import published Saturday and Sunday AM archives
         run: python -m scraper.backfill_history

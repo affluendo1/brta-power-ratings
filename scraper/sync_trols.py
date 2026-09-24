@@ -18,11 +18,12 @@ from urllib3.util.retry import Retry
 
 BASE = "https://www.trols.org.au/brta/"
 RESULTS_URL = urljoin(BASE, "results.php")
+PAST_RESULTS_URL = urljoin(BASE, "p_results.php")
 FIXTURE_URL = urljoin(BASE, "fixture.php")
 MATCH_URL = urljoin(BASE, "match_popup.php")
 OUT = Path(os.getenv("TROLS_OUT", "data/current"))
 UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36"
-TARGET_COMPETITIONS = {"AA": "Saturday AM - Spring 2026", "UA": "Sunday AM - Spring 2026"}
+DAYTIME_NAMES = {"AA": "Saturday AM", "UA": "Sunday AM"}
 ALIASES = {"Geoge Si": "George Si"}
 MAX_WORKERS = int(os.getenv("TROLS_WORKERS", "10"))
 _thread_local = threading.local()
@@ -111,12 +112,74 @@ def choose_option(soup: BeautifulSoup, select_id: str, wanted: str) -> str:
     raise RuntimeError(f"Could not find {wanted!r} in #{select_id}")
 
 
-def discover_sections(competition_code: str) -> list[dict]:
-    response = _post(RESULTS_URL, {"which": "0", "style": "", "daytime": competition_code})
+def discover_current_season(competition_code: str) -> dict:
+    """Resolve the active season ID from TROLS instead of assuming a season name.
+
+    The Past Results form exposes a stable "Current Season" option for each
+    Saturday/Sunday competition. Its ID changes when TROLS rolls into a new
+    season, so every live request below is explicitly tied to that ID.
+    """
+    if competition_code not in DAYTIME_NAMES:
+        raise RuntimeError(f"Unsupported TROLS competition code {competition_code!r}")
+    response = _post(PAST_RESULTS_URL, {"which": "0", "style": "", "daytime": competition_code})
+    soup = BeautifulSoup(response.text, "html.parser")
+    options = select_options(soup, "season")
+    current = [(label, value) for label, value in options if label.casefold() in {"current season", "current"}]
+    if len(current) != 1:
+        raise RuntimeError(
+            f"Could not identify exactly one current TROLS season for {DAYTIME_NAMES[competition_code]} "
+            f"(found {len(current)} current options)"
+        )
+    option_label, season_id = current[0]
+    season_label = _visible_season_label(soup, season_id, option_label)
+    return {
+        "competition_code": competition_code,
+        "competition_name": DAYTIME_NAMES[competition_code],
+        "season_id": season_id,
+        "season_label": season_label,
+        "competition_label": f"{DAYTIME_NAMES[competition_code]} - {season_label}",
+    }
+
+
+def _visible_season_label(soup: BeautifulSoup, season_id: str, placeholder: str) -> str:
+    """Use an actual season name when TROLS supplies one; never retain a stale label."""
+    select = soup.find("select", id="season")
+    if select is not None:
+        option = select.find("option", value=season_id)
+        if option is not None:
+            label = clean_text(option.get_text(" ", strip=True))
+            if label.casefold() not in {"current season", "current", ""}:
+                return label
+
+    season_pattern = re.compile(r"\b(?:Summer|Autumn|Winter|Spring)\s+\d{4}\b", re.I)
+    # TROLS sometimes writes the current season in a heading/data attribute,
+    # while leaving the selector's option label as "Current Season".
+    candidates = []
+    for node in soup.find_all(["title", "h1", "h2", "h3", "strong", "b"]):
+        candidates.extend(season_pattern.findall(clean_text(node.get_text(" ", strip=True))))
+    for option in soup.select("select option[selected]"):
+        candidates.extend(season_pattern.findall(clean_text(option.get_text(" ", strip=True))))
+    for node in soup.find_all(attrs={"data-season-label": True}):
+        candidates.extend(season_pattern.findall(clean_text(str(node.get("data-season-label", "")))))
+    distinct = list(dict.fromkeys(candidates))
+    if len(distinct) == 1:
+        return distinct[0]
+    # The stable value is intentionally preferred over last season's cached
+    # text when TROLS exposes no name for its active option.
+    return placeholder
+
+
+def discover_sections(current_season: dict) -> list[dict]:
+    """Read section options for one explicitly resolved current season."""
+    competition_code = current_season["competition_code"]
+    response = _post(PAST_RESULTS_URL, {
+        "which": "0", "style": "", "daytime": competition_code,
+        "season": current_season["season_id"],
+    })
     options = select_options(BeautifulSoup(response.text, "html.parser"), "section")
     wanted = {x.strip() for x in os.getenv("TROLS_SECTIONS", "").split(",") if x.strip()}
     return [
-        {"competition_code": competition_code, "section_code": code, "section_label": label}
+        {**current_season, "section_code": code, "section_label": label}
         for label, code in options if not wanted or code in wanted or label in wanted
     ]
 
@@ -402,7 +465,10 @@ def parse_draw_page(html: str, section_code: str) -> list[dict]:
 
 
 def _section_results(meta: dict) -> dict:
-    response = _post(RESULTS_URL, {"which": "1", "style": "", "daytime": meta["competition_code"], "section": meta["section_code"]})
+    response = _post(PAST_RESULTS_URL, {
+        "which": "1", "style": "", "daytime": meta["competition_code"],
+        "season": meta["season_id"], "section": meta["section_code"],
+    })
     fixtures, loaded = parse_results_page(response.text, meta["section_code"])
     return {**meta, "fixtures": fixtures, "results_loaded_by_trols": loaded}
 
@@ -414,13 +480,16 @@ def _scorecard(fixture: dict, season_id: str = "") -> tuple[str, list[dict], lis
 
 
 def _team_options(meta: dict) -> list[tuple[str, str]]:
-    response = _post(FIXTURE_URL, {"which": "1", "style": "", "daytime": meta["competition_code"], "section": meta["section_code"]})
+    response = _post(FIXTURE_URL, {
+        "which": "1", "style": "", "daytime": meta["competition_code"],
+        "season": meta["season_id"], "section": meta["section_code"],
+    })
     return select_options(BeautifulSoup(response.text, "html.parser"), "team")
 
 
 def _team_draw(meta: dict, team_code: str) -> list[dict]:
     response = _post(FIXTURE_URL, {"which": "2", "style": "", "daytime": meta["competition_code"],
-                                   "section": meta["section_code"], "team": team_code})
+                                   "season": meta["season_id"], "section": meta["section_code"], "team": team_code})
     return parse_draw_page(response.text, meta["section_code"])
 
 
@@ -504,9 +573,11 @@ def count_existing(path: Path) -> int:
 def scrape_all() -> list[dict]:
     requested = {value.strip() for value in os.getenv("TROLS_COMPETITIONS", "AA,UA").split(",") if value.strip()}
     sections = []
-    for code, label in TARGET_COMPETITIONS.items():
-        if code in requested or label in requested:
-            sections.extend(discover_sections(code))
+    for code, competition_name in DAYTIME_NAMES.items():
+        if code in requested or competition_name in requested:
+            current_season = discover_current_season(code)
+            print(f"{competition_name}: active TROLS season {current_season['season_label']} ({current_season['season_id']})")
+            sections.extend(discover_sections(current_season))
     if not sections:
         raise RuntimeError("No target TROLS sections discovered")
     print(f"Discovered {len(sections)} sections; loading result indexes")
@@ -527,7 +598,10 @@ def scrape_all() -> list[dict]:
                 completed.append(fixture)
     print(f"Loading {len(completed)} completed scorecards with {MAX_WORKERS} workers")
     with ThreadPoolExecutor(max_workers=MAX_WORKERS) as pool:
-        futures = {pool.submit(_scorecard, fixture): fixture for fixture in completed}
+        futures = {
+            pool.submit(_scorecard, fixture, fixture_owner[fixture["fixture_id"]]["season_id"]): fixture
+            for fixture in completed
+        }
         done = 0
         for future in as_completed(futures):
             fixture_id, singles, doubles = future.result()
@@ -578,7 +652,8 @@ def main() -> None:
         write_csv(section_dir / "doubles.csv", section["doubles"], DOUBLES_FIELDS)
         completed = sum(row["status"] == "Completed" for row in section["fixtures"])
         metadata = {
-            "competition_code": section["competition_code"], "competition_label": TARGET_COMPETITIONS[section["competition_code"]],
+            "competition_code": section["competition_code"], "competition_label": section["competition_label"],
+            "season_id": section["season_id"], "season_label": section["season_label"],
             "section_code": code, "section_label": section["section_label"],
             "format": "rubbers" if section["section_label"].casefold().startswith("rubbers") else "sets",
             "green_ball": "green ball" in section["section_label"].casefold(),
@@ -590,10 +665,18 @@ def main() -> None:
         (section_dir / "metadata.json").write_text(json.dumps(metadata, indent=2) + "\n", encoding="utf-8")
         catalog.append(metadata)
     synced_at = datetime.now(timezone.utc).isoformat()
-    (OUT / "catalog.json").write_text(json.dumps({"synced_at_utc": synced_at, "competitions": TARGET_COMPETITIONS, "sections": catalog}, indent=2) + "\n", encoding="utf-8")
+    competitions = {
+        row["competition_code"]: {
+            "label": row["competition_label"], "season_id": row["season_id"],
+            "season_label": row["season_label"],
+        }
+        for row in catalog
+    }
+    (OUT / "catalog.json").write_text(json.dumps({"synced_at_utc": synced_at, "competitions": competitions, "sections": catalog}, indent=2) + "\n", encoding="utf-8")
     status = {
-        "source": RESULTS_URL, "fixture_source": FIXTURE_URL, "synced_at_utc": synced_at,
+        "source": PAST_RESULTS_URL, "fixture_source": FIXTURE_URL, "synced_at_utc": synced_at,
         "competitions": len(set(row["competition_code"] for row in catalog)), "sections": len(catalog),
+        "current_seasons": competitions,
         "fixtures": sum(row["fixtures"] for row in catalog), "completed_fixtures": sum(row["completed_fixtures"] for row in catalog),
         "singles_rubbers": sum(row["singles_rubbers"] for row in catalog), "doubles_rubbers": sum(row["doubles_rubbers"] for row in catalog),
         "validation": "passed", "elapsed_seconds": round(time.monotonic() - started, 1),

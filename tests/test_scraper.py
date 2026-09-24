@@ -2,7 +2,9 @@ import copy
 import csv
 import unittest
 from pathlib import Path
+from unittest import mock
 
+from scraper import sync_trols
 from scraper.sync_trols import parse_draw_page, parse_results_page, parse_scorecard, validate_dataset
 
 
@@ -19,6 +21,64 @@ class DatasetValidationTests(unittest.TestCase):
         self.fixtures = load_csv("fixtures.csv")
         self.singles = load_csv("singles.csv")
         self.doubles = load_csv("doubles.csv")
+
+    def test_live_season_is_resolved_from_trols_each_run(self):
+        response = type("Response", (), {"text": """<h1>Saturday AM - Summer 2027</h1>
+          <select id='season'><option value='AA99'>Current Season</option>
+          <option value='AA98'>Spring 2026</option></select>"""})()
+        with mock.patch.object(sync_trols, "_post", return_value=response) as request:
+            season = sync_trols.discover_current_season("AA")
+        self.assertEqual(request.call_args.args[0], sync_trols.PAST_RESULTS_URL)
+        self.assertEqual(season, {
+            "competition_code": "AA", "competition_name": "Saturday AM",
+            "season_id": "AA99", "season_label": "Summer 2027",
+            "competition_label": "Saturday AM - Summer 2027",
+        })
+
+    def test_live_season_never_reuses_old_label_when_trols_only_says_current(self):
+        response = type("Response", (), {"text": """<select id='season'>
+          <option value='UA42' selected>Current Season</option><option value='UA41'>Spring 2026</option>
+        </select>"""})()
+        with mock.patch.object(sync_trols, "_post", return_value=response):
+            season = sync_trols.discover_current_season("UA")
+        self.assertEqual(season["season_id"], "UA42")
+        self.assertEqual(season["season_label"], "Current Season")
+        self.assertNotIn("Spring 2026", season["competition_label"])
+
+    def test_current_section_discovery_is_pinned_to_resolved_season(self):
+        current = {"competition_code": "UA", "competition_name": "Sunday AM",
+                   "season_id": "UA42", "season_label": "Current Season",
+                   "competition_label": "Sunday AM - Current Season"}
+        response = type("Response", (), {"text": "<select id='section'><option value='UA001'>Sets 1</option></select>"})()
+        with mock.patch.object(sync_trols, "_post", return_value=response) as request:
+            sections = sync_trols.discover_sections(current)
+        self.assertEqual(request.call_args.args[0], sync_trols.PAST_RESULTS_URL)
+        self.assertEqual(request.call_args.args[1]["season"], "UA42")
+        self.assertEqual(sections, [{**current, "section_code": "UA001", "section_label": "Sets 1"}])
+
+    def test_results_and_fixture_draw_requests_keep_current_season_id(self):
+        meta = {"competition_code": "AA", "season_id": "AA99", "section_code": "AA001"}
+        response = type("Response", (), {"text": "<select id='team'><option value='T1'>Alpha</option></select>"})()
+        with mock.patch.object(sync_trols, "_post", return_value=response) as request:
+            result = sync_trols._section_results(meta)
+        self.assertEqual(request.call_args.args[0], sync_trols.PAST_RESULTS_URL)
+        self.assertEqual(request.call_args.args[1]["season"], "AA99")
+        self.assertEqual(result["fixtures"], [])
+        with mock.patch.object(sync_trols, "_post", return_value=response) as request:
+            sync_trols._team_options(meta)
+        self.assertEqual(request.call_args.args[1]["season"], "AA99")
+        with mock.patch.object(sync_trols, "_post", return_value=type("Response", (), {"text": ""})()) as request, \
+                mock.patch.object(sync_trols, "parse_draw_page", return_value=[]):
+            sync_trols._team_draw(meta, "T1")
+        self.assertEqual(request.call_args.args[1]["season"], "AA99")
+
+    def test_scorecard_lookup_is_pinned_to_current_season_id(self):
+        fixture = {"fixture_id": "AA001001"}
+        with mock.patch.object(sync_trols, "_get", return_value=type("Response", (), {"text": ""})()) as request, \
+                mock.patch.object(sync_trols, "parse_scorecard", return_value=([], [])):
+            sync_trols._scorecard(fixture, "AA99")
+        self.assertEqual(request.call_args.args[0], sync_trols.MATCH_URL)
+        self.assertEqual(request.call_args.kwargs["params"]["seasonid"], "AA99")
 
     def test_current_dataset_passes_internal_arithmetic_checks(self):
         validate_dataset(self.fixtures, self.singles, self.doubles, "UA009")

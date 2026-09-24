@@ -80,7 +80,7 @@ def discover_seasons(daytime: str) -> list[dict]:
     seen = set()
     for label, season_id in options:
         if label.casefold() in CURRENT_LABELS:
-            continue  # Spring 2026 current data is refreshed by the live sync.
+            continue  # The active season is refreshed by the live sync.
         if season_id in seen:
             continue
         seen.add(season_id)

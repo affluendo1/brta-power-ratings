@@ -1,10 +1,10 @@
 # BRTA Power Ratings V3
 
-An unofficial BRTA tennis analytics site covering **every Saturday AM and Sunday AM section in Spring 2026**. It is not affiliated with BRTA, Tennis Australia or UTR.
+An unofficial BRTA tennis analytics site covering **Saturday AM and Sunday AM BRTA sections**. It is not affiliated with BRTA, Tennis Australia or UTR.
 
 ## Coverage
 
-The automated database discovers sections directly from TROLS rather than keeping a hand-written list. The current season contains:
+The automated database discovers the active Saturday AM and Sunday AM seasons and their sections directly from TROLS rather than keeping a hand-written list. Each routine sync follows TROLS' current-season IDs, so a season rollover automatically switches the live data to the newly active season; it does not refetch finished seasons.
 
 - Saturday AM: Rubbers, Sets, Green Ball and Girls sections
 - Sunday AM: Rubbers 1–3, Sets 1–22 and Green Ball
@@ -13,7 +13,7 @@ The automated database discovers sections directly from TROLS rather than keepin
 
 The interface remembers the selected competition and section. Its Results tab reproduces each round and scorecard in a compact mobile-friendly view. Latest Round and Player Lab matches link directly to the corresponding Results panel.
 
-The Settings panel's **History** controls browse the seasons TROLS makes available under Past Results. Sunday AM currently reaches Spring 2009; Saturday AM reaches Winter 2012 and has gaps in its published archive. The site preserves TROLS' season IDs and labels, including duplicate labels, and does not create seasons that TROLS does not list. Spring 2026 remains on the live sync path.
+The Settings panel's **History** controls browse the seasons TROLS makes available under Past Results. Sunday AM currently reaches Spring 2009; Saturday AM reaches Winter 2012 and has gaps in its published archive. The site preserves TROLS' season IDs and labels, including duplicate labels, and does not create seasons that TROLS does not list. Only the active season remains on the routine live sync path.
 
 Historical sections retain official scorecards, fixture order and final TROLS ladder points/order where published. TROLS-recorded semifinal and grand-final results are shown as recorded; before a semifinal draw is published, the site projects the 1-v-4 and 2-v-3 matchups only after all 14 regular rounds are present and resolved. Repeated grand-final entries, including washouts and later played fixtures, remain separate. Missing official dates stay blank and are displayed as unpublished. Historical ratings are recalculated with the current V3 model and are not presented as historical official ratings.
 
