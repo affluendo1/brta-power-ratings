@@ -7,6 +7,7 @@ scorecards. It never invents dates for undated semifinal/final records.
 """
 from __future__ import annotations
 
+import argparse
 import json
 import os
 import re
@@ -210,11 +211,31 @@ def _fetch_section(meta: dict) -> dict:
     return section
 
 
-def _load_all_sections() -> tuple[list[dict], list[dict]]:
+def _load_all_sections(target_seasons: list[dict] | None = None) -> tuple[list[dict], list[dict]]:
     requests = []
     season_rows = []
+    target_ids: dict[str, set[str]] | None = None
+    if target_seasons is not None:
+        target_ids = {}
+        for item in target_seasons:
+            code, season_id = item.get("competition_code"), item.get("season_id")
+            if code not in DAYTIMES or not season_id:
+                raise ValueError(f"Invalid season transition entry: {item!r}")
+            target_ids.setdefault(code, set()).add(str(season_id))
+        if not target_ids:
+            return [], []
+
+    found_targets: set[tuple[str, str]] = set()
     for daytime in DAYTIMES:
-        for season in discover_seasons(daytime):
+        if target_ids is not None and daytime not in target_ids:
+            continue
+        available = discover_seasons(daytime)
+        selected = available if target_ids is None else [
+            season for season in available
+            if season["season_id"] in target_ids.get(daytime, set())
+        ]
+        found_targets.update((daytime, season["season_id"]) for season in selected)
+        for season in selected:
             season_rows.append(season)
             sections = discover_season_sections(daytime, season["season_id"])
             for section in sections:
@@ -226,11 +247,21 @@ def _load_all_sections() -> tuple[list[dict], list[dict]]:
                     "is_archive": True,
                 })
                 requests.append(section)
-    required_earliest = {"UA": "spring 2009", "AA": "winter 2012"}
-    for daytime, earliest in required_earliest.items():
-        published = [row["season_label"].casefold() for row in season_rows if row["competition_code"] == daytime]
-        if not published or earliest not in published:
-            raise RuntimeError(f"TROLS archive coverage check failed for {DAYTIMES[daytime]}: expected {earliest}")
+    if target_ids is not None:
+        missing = sorted(
+            (code, season_id)
+            for code, values in target_ids.items()
+            for season_id in values
+            if (code, season_id) not in found_targets
+        )
+        if missing:
+            raise RuntimeError(f"Finished season(s) were not yet available in TROLS Past Results: {missing}")
+    else:
+        required_earliest = {"UA": "spring 2009", "AA": "winter 2012"}
+        for daytime, earliest in required_earliest.items():
+            published = [row["season_label"].casefold() for row in season_rows if row["competition_code"] == daytime]
+            if not published or earliest not in published:
+                raise RuntimeError(f"TROLS archive coverage check failed for {DAYTIMES[daytime]}: expected {earliest}")
     if not requests:
         raise RuntimeError("No historical sections found on TROLS")
     print(f"Discovered {len(season_rows)} archive seasons and {len(requests)} sections")
@@ -259,6 +290,29 @@ def _load_all_sections() -> tuple[list[dict], list[dict]]:
         )
     results.sort(key=lambda item: (item["competition_code"], item["season_label"], item["source_section_code"]))
     return results, season_rows
+
+
+def merge_archive_catalog(existing: dict, new_seasons: list[dict], new_sections: list[dict]) -> dict:
+    """Append newly closed seasons without replacing the previously imported archive."""
+    season_map = {
+        (row["competition_code"], row["season_id"]): row
+        for row in existing.get("seasons", [])
+    }
+    season_map.update({(row["competition_code"], row["season_id"]): row for row in new_seasons})
+    section_map = {row["asset_id"]: row for row in existing.get("sections", [])}
+    section_map.update({row["asset_id"]: row for row in new_sections})
+    seasons = sorted(season_map.values(), key=lambda row: (row["competition_code"], row["season_label"].casefold(), row["season_id"]))
+    sections = sorted(section_map.values(), key=lambda row: (row["competition_code"], row["season_label"].casefold(), row["section_label"].casefold(), row["asset_id"]))
+    return {
+        "source": "https://www.trols.org.au/brta/p_results.php",
+        "generated_at_utc": datetime.now(timezone.utc).isoformat(),
+        "season_count": len(seasons), "section_count": len(sections),
+        "fixture_count": sum(row.get("fixtures", 0) for row in sections),
+        "completed_fixtures": sum(row.get("completed_fixtures", 0) for row in sections),
+        "singles_rubbers": sum(row.get("singles_rubbers", 0) for row in sections),
+        "doubles_rubbers": sum(row.get("doubles_rubbers", 0) for row in sections),
+        "seasons": seasons, "sections": sections, "validation": "passed",
+    }
 
 
 def _write_section(section: dict) -> dict:
@@ -300,9 +354,24 @@ def _write_section(section: dict) -> dict:
 
 def main() -> None:
     started = time.monotonic()
-    sections, seasons = _load_all_sections()
+    parser = argparse.ArgumentParser(description="Import TROLS Saturday and Sunday AM seasons.")
+    parser.add_argument("--transition-file", type=Path,
+                        help="Import only the just-finished seasons listed in a live-sync transition file.")
+    args = parser.parse_args()
+    targets = None
+    if args.transition_file:
+        transition = json.loads(args.transition_file.read_text(encoding="utf-8"))
+        targets = transition.get("previous_seasons", [])
+        if not targets:
+            print("No season rollover detected; skipped historical TROLS requests.")
+            return
+        if not (OUT / "raw_catalog.json").exists():
+            print("No archive exists yet; importing full published history instead of only the outgoing season.")
+            targets = None
+
+    sections, seasons = _load_all_sections(targets)
     metadata = [_write_section(section) for section in sections]
-    document = {
+    new_document = {
         "source": "https://www.trols.org.au/brta/p_results.php",
         "generated_at_utc": datetime.now(timezone.utc).isoformat(),
         "season_count": len(seasons), "section_count": len(metadata),
@@ -310,11 +379,14 @@ def main() -> None:
         "completed_fixtures": sum(row["completed_fixtures"] for row in metadata),
         "singles_rubbers": sum(row["singles_rubbers"] for row in metadata),
         "doubles_rubbers": sum(row["doubles_rubbers"] for row in metadata),
-        "seasons": seasons,
-        "sections": metadata,
-        "validation": "passed",
+        "seasons": seasons, "sections": metadata, "validation": "passed",
     }
     OUT.mkdir(parents=True, exist_ok=True)
+    if targets is not None:
+        existing = json.loads((OUT / "raw_catalog.json").read_text(encoding="utf-8"))
+        document = merge_archive_catalog(existing, seasons, metadata)
+    else:
+        document = new_document
     (OUT / "raw_catalog.json").write_text(json.dumps(document, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(json.dumps({key: value for key, value in document.items() if key not in {"seasons", "sections"}}, indent=2))
     print(f"Historical import completed in {time.monotonic() - started:.1f}s")

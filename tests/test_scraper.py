@@ -5,7 +5,7 @@ from pathlib import Path
 from unittest import mock
 
 from scraper import sync_trols
-from scraper.sync_trols import parse_draw_page, parse_results_page, parse_scorecard, validate_dataset
+from scraper.sync_trols import clean_team, parse_draw_page, parse_results_page, parse_scorecard, validate_dataset
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -28,7 +28,7 @@ class DatasetValidationTests(unittest.TestCase):
           <option value='AA98'>Spring 2026</option></select>"""})()
         with mock.patch.object(sync_trols, "_post", return_value=response) as request:
             season = sync_trols.discover_current_season("AA")
-        self.assertEqual(request.call_args.args[0], sync_trols.PAST_RESULTS_URL)
+        self.assertEqual(request.call_args_list[0].args[0], sync_trols.PAST_RESULTS_URL)
         self.assertEqual(season, {
             "competition_code": "AA", "competition_name": "Saturday AM",
             "season_id": "AA99", "season_label": "Summer 2027",
@@ -44,6 +44,17 @@ class DatasetValidationTests(unittest.TestCase):
         self.assertEqual(season["season_id"], "UA42")
         self.assertEqual(season["season_label"], "Current Season")
         self.assertNotIn("Spring 2026", season["competition_label"])
+
+    def test_live_results_selector_can_supply_the_actual_current_season_name(self):
+        archive_response = type("Response", (), {"text": """<select id='season'>
+          <option value='UA42'>Current Season</option><option value='UA41'>Spring 2026</option>
+        </select>"""})()
+        live_response = type("Response", (), {"text": """<select id='daytime'>
+          <option value='UA' selected>Sunday AM - Summer 2027</option></select>"""})()
+        with mock.patch.object(sync_trols, "_post", side_effect=[archive_response, live_response]) as request:
+            season = sync_trols.discover_current_season("UA")
+        self.assertEqual(request.call_args_list[1].args[0], sync_trols.RESULTS_URL)
+        self.assertEqual(season["season_label"], "Summer 2027")
 
     def test_current_section_discovery_is_pinned_to_resolved_season(self):
         current = {"competition_code": "UA", "competition_name": "Sunday AM",
@@ -80,6 +91,20 @@ class DatasetValidationTests(unittest.TestCase):
         self.assertEqual(request.call_args.args[0], sync_trols.MATCH_URL)
         self.assertEqual(request.call_args.kwargs["params"]["seasonid"], "AA99")
 
+    def test_season_transition_only_marks_the_finished_competition(self):
+        previous = {
+            "AA": {"season_id": "AA41"},
+            "UA": {"season_id": "UA41"},
+        }
+        sections = [
+            {"competition_code": "AA", "season_id": "AA42"},
+            {"competition_code": "UA", "season_id": "UA41"},
+        ]
+        self.assertEqual(sync_trols.current_season_transitions(previous, sections), [
+            {"competition_code": "AA", "season_id": "AA41"},
+        ])
+        self.assertEqual(sync_trols.current_season_transitions({}, sections), [])
+
     def test_current_dataset_passes_internal_arithmetic_checks(self):
         validate_dataset(self.fixtures, self.singles, self.doubles, "UA009")
 
@@ -101,6 +126,10 @@ class DatasetValidationTests(unittest.TestCase):
         """
         fixtures, _ = parse_results_page(html, "UA009")
         self.assertEqual(fixtures[0]["fixture_id"], "pending-ua009-r9-coatesville-lauriston")
+
+    def test_team_normalization_removes_source_invisible_marks_before_comparing_scorecards(self):
+        self.assertEqual(clean_team("Mentone (DTC)\u200b"), "Mentone")
+        self.assertEqual(clean_team("Mentone (DTC) •"), "Mentone")
 
     def test_rubbers_result_keeps_points_rubbers_sets_and_games(self):
         html = """

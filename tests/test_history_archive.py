@@ -2,14 +2,15 @@ import csv
 import json
 import tempfile
 import unittest
-from pathlib import Path
 from unittest.mock import patch
+from pathlib import Path
 
 import pandas as pd
 
 import generate_archive_site_data as archive_generator
 from generate_site_data import apply_official_standings, brta_scoring_rules, build_section, knockout_summary
-from scraper.backfill_history import ARCHIVE_RESULTS_URL, discover_seasons, parse_official_ladder
+from scraper import backfill_history as history_importer
+from scraper.backfill_history import ARCHIVE_RESULTS_URL, discover_seasons, merge_archive_catalog, parse_official_ladder
 from scraper.sync_trols import parse_results_page, parse_scorecard, validate_dataset
 
 
@@ -67,6 +68,72 @@ class HistoryArchiveTests(unittest.TestCase):
             "data/archive/site/sections/AA42-AA001.json",
             "data/archive/site/sections/AA43-AA001.json",
         })
+
+    def test_current_history_entry_follows_the_live_season_label(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            raw_path, current_path = root / "raw.json", root / "current.json"
+            raw_path.write_text(json.dumps({"seasons": [], "sections": []}))
+            current_path.write_text(json.dumps({"sections": [
+                {"competition_code": "UA", "competition_label": "Sunday AM - Summer 2027",
+                 "section_code": "UA001", "section_label": "Sets 1", "format": "sets"},
+            ]}))
+            with patch.object(archive_generator, "RAW_CATALOG", raw_path), \
+                    patch.object(archive_generator, "CURRENT_CATALOG", current_path):
+                season = archive_generator.build_catalog()["seasons"][0]
+        self.assertTrue(season["is_current"])
+        self.assertEqual(season["season_label"], "Summer 2027")
+
+    def test_rollover_import_requests_only_the_outgoing_season(self):
+        available = {
+            "AA": [
+                {"competition_code": "AA", "season_id": "AA41", "season_label": "Spring 2026"},
+                {"competition_code": "AA", "season_id": "AA40", "season_label": "Winter 2026"},
+            ],
+        }
+        calls = []
+        def fake_fetch(meta):
+            return {**meta, "asset_id": history_importer._asset_id(meta), "fixtures": [], "singles": []}
+        with patch.object(history_importer, "discover_seasons", side_effect=lambda code: calls.append(code) or available[code]) as discover, \
+                patch.object(history_importer, "discover_season_sections", return_value=[
+                    {"source_section_code": "AA001", "section_label": "Sets 1"}
+                ]) as sections, \
+                patch.object(history_importer, "_fetch_section", side_effect=fake_fetch):
+            loaded, seasons = history_importer._load_all_sections([
+                {"competition_code": "AA", "season_id": "AA41"}
+            ])
+        self.assertEqual(calls, ["AA"])
+        self.assertEqual([row["season_id"] for row in seasons], ["AA41"])
+        self.assertEqual([row["season_id"] for row in loaded], ["AA41"])
+        self.assertEqual(sections.call_args.args, ("AA", "AA41"))
+
+    def test_rollover_merge_preserves_existing_archived_seasons(self):
+        existing = {
+            "seasons": [{"competition_code": "UA", "season_id": "UA41", "season_label": "Spring 2026"}],
+            "sections": [{"asset_id": "UA41-UA001", "competition_code": "UA", "season_id": "UA41",
+                          "season_label": "Spring 2026", "section_label": "Sets 1", "fixtures": 14}],
+        }
+        merged = merge_archive_catalog(
+            existing,
+            [{"competition_code": "UA", "season_id": "UA42", "season_label": "Summer 2027"}],
+            [{"asset_id": "UA42-UA001", "competition_code": "UA", "season_id": "UA42",
+              "season_label": "Summer 2027", "section_label": "Sets 1", "fixtures": 2}],
+        )
+        self.assertEqual({row["season_id"] for row in merged["seasons"]}, {"UA41", "UA42"})
+        self.assertEqual({row["asset_id"] for row in merged["sections"]}, {"UA41-UA001", "UA42-UA001"})
+
+    def test_missing_only_generator_does_not_refit_existing_archive_payloads(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            site_sections = Path(tmp) / "site" / "sections"
+            site_sections.mkdir(parents=True)
+            (site_sections / "old.json").write_text("{}")
+            raw = {"sections": [{"asset_id": "old"}, {"asset_id": "new"}]}
+            with patch.object(archive_generator, "SITE_SECTIONS", site_sections), \
+                    patch.object(archive_generator, "ARCHIVE_SECTIONS", Path(tmp) / "raw"), \
+                    patch.object(archive_generator, "build_section", return_value={"results": [], "singles": []}) as fit:
+                count = archive_generator.write_archive_payloads(raw, missing_only=True)
+        self.assertEqual(count, 1)
+        self.assertEqual(fit.call_args.args[0]["asset_id"], "new")
 
     def test_official_ladder_preserves_trols_order_points_and_percentage(self):
         html = """<table><tr><td>1</td><td>Won</td><td>Pts</td><td>%</td><td></td></tr>

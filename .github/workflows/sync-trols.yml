@@ -44,6 +44,19 @@ jobs:
       - name: Fetch and validate TROLS results
         run: python scraper/sync_trols.py
 
+      - name: Move the just-finished season into History on rollover
+        shell: bash
+        run: |
+          TRANSITION_FILE="data/current/season_transition.json"
+          if [ -f "$TRANSITION_FILE" ]; then
+            COUNT=$(python -c "import json; print(len(json.load(open('$TRANSITION_FILE'))['previous_seasons']))")
+            if [ "$COUNT" -gt 0 ]; then
+              python -m scraper.backfill_history --transition-file "$TRANSITION_FILE"
+              python generate_archive_site_data.py --missing-only
+            fi
+            rm -f "$TRANSITION_FILE"
+          fi
+
       - name: Detect new or corrected TROLS results
         id: changes
         shell: bash
@@ -85,12 +98,18 @@ jobs:
       - name: Recalculate all ratings and website data
         run: python generate_site_data.py
 
+      - name: Refresh History season list from current TROLS season
+        run: python generate_archive_site_data.py --catalog-only
+
       - name: Commit check and any regenerated ratings
         shell: bash
         run: |
           git config user.name "brta-ratings-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/current data/site data.js
+          if [ -d data/archive ]; then
+            git add data/archive
+          fi
           SECTIONS=$(python -c "import json; print(json.load(open('data/current/sync_status.json'))['sections'])")
           if [ "$NEW_RESULTS" = "true" ]; then
             git commit -m "NEW BRTA RESULTS OUT: ratings refreshed across $SECTIONS sections"

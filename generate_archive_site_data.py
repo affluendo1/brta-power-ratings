@@ -1,6 +1,7 @@
 """Fit each archived TROLS season and publish its static site payloads."""
 from __future__ import annotations
 
+import argparse
 import json
 import re
 from datetime import datetime, timezone
@@ -115,19 +116,50 @@ def build_catalog() -> dict:
     }
 
 
-def main() -> None:
-    raw = json.loads(RAW_CATALOG.read_text(encoding="utf-8"))
-    SITE_SECTIONS.mkdir(parents=True, exist_ok=True)
-    count = 0
-    for meta in raw["sections"]:
-        payload = build_section(meta, sections_dir=ARCHIVE_SECTIONS)
-        path = SITE_SECTIONS / f"{meta['asset_id']}.json"
-        path.write_text(json.dumps(payload, separators=(",", ":"), ensure_ascii=False, allow_nan=False) + "\n", encoding="utf-8")
-        count += 1
-        print(f"Wrote {meta['asset_id']}: {len(payload['results'])} rounds, {len(payload['singles'])} singles ratings")
+def write_catalog() -> dict | None:
+    if not RAW_CATALOG.exists():
+        print("No historical archive is published yet; skipped the History catalogue refresh.")
+        return None
     catalog = build_catalog()
     SITE_CATALOG.parent.mkdir(parents=True, exist_ok=True)
     SITE_CATALOG.write_text(json.dumps(catalog, separators=(",", ":"), ensure_ascii=False) + "\n", encoding="utf-8")
+    return catalog
+
+
+def write_archive_payloads(raw: dict, *, missing_only: bool = False) -> int:
+    SITE_SECTIONS.mkdir(parents=True, exist_ok=True)
+    count = 0
+    for meta in raw["sections"]:
+        path = SITE_SECTIONS / f"{meta['asset_id']}.json"
+        if missing_only and path.exists():
+            continue
+        payload = build_section(meta, sections_dir=ARCHIVE_SECTIONS)
+        path.write_text(json.dumps(payload, separators=(",", ":"), ensure_ascii=False, allow_nan=False) + "\n", encoding="utf-8")
+        count += 1
+        print(f"Wrote {meta['asset_id']}: {len(payload['results'])} results, {len(payload['singles'])} singles ratings")
+    return count
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description="Build static ratings payloads for TROLS history.")
+    parser.add_argument("--catalog-only", action="store_true",
+                        help="Refresh the current/past season picker without refitting archived sections.")
+    parser.add_argument("--missing-only", action="store_true",
+                        help="Build payloads only for newly imported historical sections, then refresh the picker.")
+    args = parser.parse_args()
+    if args.catalog_only and args.missing_only:
+        parser.error("--catalog-only and --missing-only cannot be used together")
+
+    count = 0
+    if args.catalog_only:
+        if not write_catalog():
+            return
+    else:
+        raw = json.loads(RAW_CATALOG.read_text(encoding="utf-8"))
+        count = write_archive_payloads(raw, missing_only=args.missing_only)
+        catalog = write_catalog()
+        if catalog is None:
+            return
     print(json.dumps({"generated_sections": count, "seasons": catalog["season_count"], "sections": catalog["section_count"]}, indent=2))
 
 

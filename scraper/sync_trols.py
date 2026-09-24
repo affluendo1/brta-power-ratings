@@ -49,13 +49,15 @@ DOUBLES_FIELDS = [
 
 
 def clean_text(value: str) -> str:
-    return " ".join((value or "").replace("\xa0", " ").split())
+    value = (value or "").replace("\xa0", " ")
+    value = re.sub(r"[\u200b-\u200f\u2060\ufeff]", "", value)
+    return " ".join(value.split())
 
 
 def clean_team(value: str) -> str:
     value = clean_text(value)
     value = re.sub(r"\s+Playing\s+@.*$", "", value, flags=re.I)
-    value = re.sub(r"\s*\([^)]*\)\s*$", "", value)
+    value = re.sub(r"\s*\([^)]*\)\s*[\W_]*$", "", value)
     return value.strip()
 
 
@@ -132,6 +134,15 @@ def discover_current_season(competition_code: str) -> dict:
         )
     option_label, season_id = current[0]
     season_label = _visible_season_label(soup, season_id, option_label)
+    if season_label.casefold() in {"current season", "current"}:
+        # The active results page sometimes includes a dated competition name
+        # even though the archive selector uses the generic "Current Season".
+        live_page = _post(RESULTS_URL, {"which": "0", "style": "", "daytime": competition_code})
+        page_label = _visible_season_label(
+            BeautifulSoup(live_page.text, "html.parser"), season_id, option_label
+        )
+        if page_label.casefold() not in {"current season", "current"}:
+            season_label = page_label
     return {
         "competition_code": competition_code,
         "competition_name": DAYTIME_NAMES[competition_code],
@@ -362,7 +373,10 @@ def parse_scorecard(html: str, fixture: dict) -> tuple[list[dict], list[dict]]:
     team_cells = outer[0].find_all("td", recursive=False)
     home_team, away_team = clean_team(team_cells[0].get_text(" ", strip=True)), clean_team(team_cells[-1].get_text(" ", strip=True))
     if home_team != fixture["home_team"] or away_team != fixture["away_team"]:
-        raise RuntimeError(f"Team mismatch {fixture['fixture_id']}: {home_team} v {away_team}")
+        raise RuntimeError(
+            f"Team mismatch {fixture['fixture_id']}: scorecard {home_team!r} v {away_team!r}; "
+            f"results index {fixture['home_team']!r} v {fixture['away_team']!r}"
+        )
     nested = outer[1].find_all("table")
     if len(nested) != 3:
         raise RuntimeError(f"Expected three scorecard tables for {fixture['fixture_id']}, found {len(nested)}")
@@ -570,6 +584,32 @@ def count_existing(path: Path) -> int:
         return max(0, sum(1 for _ in handle) - 1)
 
 
+def current_season_transitions(previous: dict, sections: list[dict]) -> list[dict]:
+    """Return outgoing season IDs only when TROLS has advanced the live selector."""
+    current = {}
+    for section in sections:
+        current[section["competition_code"]] = section["season_id"]
+    transitions = []
+    for code, season_id in current.items():
+        prior = previous.get(code, {})
+        prior_id = prior.get("season_id") if isinstance(prior, dict) else None
+        if prior_id and prior_id != season_id:
+            transitions.append({"competition_code": code, "season_id": prior_id})
+    return sorted(transitions, key=lambda row: row["competition_code"])
+
+
+def _load_previous_current_seasons() -> dict:
+    path = OUT / "catalog.json"
+    if not path.exists():
+        return {}
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return {}
+    stored = data.get("current_seasons")
+    return stored if isinstance(stored, dict) else {}
+
+
 def scrape_all() -> list[dict]:
     requested = {value.strip() for value in os.getenv("TROLS_COMPETITIONS", "AA,UA").split(",") if value.strip()}
     sections = []
@@ -636,6 +676,7 @@ def scrape_all() -> list[dict]:
 
 def main() -> None:
     started = time.monotonic()
+    previous_seasons = _load_previous_current_seasons()
     sections = scrape_all()
     catalog = []
     for section in sections:
@@ -666,22 +707,33 @@ def main() -> None:
         catalog.append(metadata)
     synced_at = datetime.now(timezone.utc).isoformat()
     competitions = {
+        row["competition_code"]: row["competition_label"]
+        for row in catalog
+    }
+    current_seasons = {
         row["competition_code"]: {
-            "label": row["competition_label"], "season_id": row["season_id"],
+            "competition_label": row["competition_label"], "season_id": row["season_id"],
             "season_label": row["season_label"],
         }
         for row in catalog
     }
-    (OUT / "catalog.json").write_text(json.dumps({"synced_at_utc": synced_at, "competitions": competitions, "sections": catalog}, indent=2) + "\n", encoding="utf-8")
+    (OUT / "catalog.json").write_text(json.dumps({
+        "synced_at_utc": synced_at, "competitions": competitions,
+        "current_seasons": current_seasons, "sections": catalog,
+    }, indent=2) + "\n", encoding="utf-8")
     status = {
         "source": PAST_RESULTS_URL, "fixture_source": FIXTURE_URL, "synced_at_utc": synced_at,
         "competitions": len(set(row["competition_code"] for row in catalog)), "sections": len(catalog),
-        "current_seasons": competitions,
+        "current_seasons": current_seasons,
         "fixtures": sum(row["fixtures"] for row in catalog), "completed_fixtures": sum(row["completed_fixtures"] for row in catalog),
         "singles_rubbers": sum(row["singles_rubbers"] for row in catalog), "doubles_rubbers": sum(row["doubles_rubbers"] for row in catalog),
         "validation": "passed", "elapsed_seconds": round(time.monotonic() - started, 1),
     }
     (OUT / "sync_status.json").write_text(json.dumps(status, indent=2) + "\n", encoding="utf-8")
+    transitions = current_season_transitions(previous_seasons, catalog)
+    (OUT / "season_transition.json").write_text(
+        json.dumps({"previous_seasons": transitions}, indent=2) + "\n", encoding="utf-8"
+    )
     print(json.dumps(status, indent=2))
 
 
