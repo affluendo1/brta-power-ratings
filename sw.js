@@ -1,5 +1,5 @@
 const CACHE_PREFIX="brta-power-ratings-";
-const CACHE_NAME=CACHE_PREFIX+"shell-v7";
+const CACHE_NAME=CACHE_PREFIX+"shell-v8";
 const SHELL_FILES=[
   "./","index.html","site.css","future.css","style.css","archive.css","app.js?v=19","archive.js",
   "prediction.js","pwa.js","data.js","manifest.webmanifest",
