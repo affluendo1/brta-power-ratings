@@ -1,83 +1,145 @@
-# BRTA Power Ratings V3
+# BRTA Power Ratings
 
-An unofficial BRTA tennis analytics site covering **Saturday AM and Sunday AM BRTA sections**. It is not affiliated with BRTA, Tennis Australia or UTR.
+[Open the live site](https://affluendo1.github.io/brta-power-ratings/)
 
-## Coverage
+BRTA Power Ratings is an unofficial analytics site for BRTA Saturday AM and Sunday AM junior tennis. It is not affiliated with BRTA, Tennis Australia or UTR. Match records come from TROLS and are treated as official-as-entered records; the site does not claim that a nominated player was necessarily the player who physically took the court.
 
-The automated database discovers the active Saturday AM and Sunday AM seasons and their sections directly from TROLS rather than keeping a hand-written list. Each routine sync follows TROLS' current-season IDs, so a season rollover automatically switches the live data to the newly active season; it does not refetch finished seasons.
+## What the site does
 
-- Saturday AM: Rubbers, Sets, Green Ball and Girls sections
-- Sunday AM: Rubbers 1–3, Sets 1–22 and Green Ball
-- official results, scorecards, player order and individual rubbers
-- the complete official future draw from TROLS's Fixtures pages
+The site lets you select a competition, season and section, then view that section's results, standings, ratings, team summaries and fixtures. Each section is fitted as its own opponent network. Ratings from different sections are not a combined ranking and should not be compared as if the players had all played one another.
 
-The interface remembers the selected competition and section. Its Results tab reproduces each round and scorecard in a compact mobile-friendly view. Latest Round and Player Lab matches link directly to the corresponding Results panel.
+The five main views are:
 
-The Settings panel's **History** controls browse the seasons TROLS makes available under Past Results. Sunday AM currently reaches Spring 2009; Saturday AM reaches Winter 2012 and has gaps in its published archive. The site preserves TROLS' season IDs and labels, including duplicate labels, and does not create seasons that TROLS does not list. Routine checks read only the active season; when TROLS advances its season ID, the newly finished season is imported once into History.
+- **Results** — round-by-round fixture results and scorecards, including singles and doubles order where TROLS provides it.
+- **Standings** — current-season ladder calculations, or the published final TROLS ladder for an archived season when one is available. The standings view also shows recorded or projected semifinals and grand finals.
+- **Ratings** — singles, recurring doubles pairs, individual doubles and Overall tables. Player rows open Player Lab.
+- **Teams** — average modelled singles Power and the average of each team's four strongest modelled singles ratings.
+- **Fixtures** — the official TROLS draw, including completed and future fixtures. A fixture opens the Prediction Centre, where users choose players, review an order inferred from previous scorecards, choose doubles pairings where applicable, and see model-based rubber and team outcome estimates.
 
-Historical sections retain official scorecards, fixture order and final TROLS ladder points/order where published. TROLS-recorded semifinal and grand-final results are shown as recorded; before a semifinal draw is published, the site projects the 1-v-4 and 2-v-3 matchups only after all 14 regular rounds are present and resolved. Repeated grand-final entries, including washouts and later played fixtures, remain separate. Missing official dates stay blank and are displayed as unpublished. Historical ratings are recalculated with the current V3 model and are not presented as historical official ratings.
+Other views are opened from the header or player profiles:
 
-The Ratings page can also search **all current sections** for an individual player. Cross-section search adds the competition/section to every result and opens that player's actual section when selected. It is a discovery tool, not a combined ladder: each section's rating network is fitted independently.
+- **Player Lab** shows rating history, match performance and opponent ratings, strength of schedule, partners and other player-level summaries.
+- **Analytics** provides head-to-head projections and a comparison of results with estimates made before each round.
+- **Latest round** summarizes the latest round and links to its scorecards.
+- **Settings** contains display preferences, season History, methodology and BRTA rules, plus a JSON model-audit export. A separate control exports the selected section's match and fixture data as CSV.
 
-## V3 model
+## Competition and historical coverage
 
-For player strength `theta`:
+The live scraper discovers the active Saturday AM and Sunday AM seasons from TROLS and follows the season IDs TROLS marks as current. Routine checks update those active seasons only; they do not repeatedly fetch finished seasons. The checked-in Spring 2026 live snapshot contains 44 sections. Future section counts depend on what TROLS publishes.
 
-- Game probability: `p(i,j) = logistic((theta_i - theta_j) / 0.75)`
-- Score likelihood: `L_m = g_i*log(p) + g_j*log(1-p)`
-- Match-date weighting: `w_m = 2^(-age_days / 365)`
-- Regularization: `(5/2) * sum(theta_i^2)`
-- Display: `Power_i = 1500 + 600*theta_i`
-- Uncertainty: centred Laplace approximation
-- Singles publication threshold: 4 completed rubbers
+The History selector is backed by a separate archive catalogue and set of section files under `data/archive/`. The archive importer reads the past seasons and sections exposed by TROLS, including published scorecards, official fixture order, final ladders and playoffs. Only seasons successfully imported into that catalogue can be selected. TROLS' archive has gaps, so the feature does not imply a complete year-by-year record for both competitions. Missing results and dates are not fabricated.
 
-V3 uses one scoreline likelihood rather than separately counting the same result as both games and a win/loss. Rubbers-format multi-set singles count as one contest in the public record while all officially recorded games contribute to the likelihood.
+Historical ratings are refitted from the archived match records using the site's current V3 model. They are retrospective estimates, not historical BRTA or TROLS ratings. Where TROLS publishes a final ladder, its recorded order and points are retained. Where the source has no date or an internal score discrepancy, the importer preserves the source record and records the limitation rather than silently correcting it.
 
-Malformed or incomplete TROLS rows remain visible in Results but are excluded from ratings when a player identity or completed score cannot be established without guessing.
+Semifinals and grand finals are shown from TROLS when published. Before a semifinal draw is published, the site projects the 1-v-4 and 2-v-3 matchups only once all 14 regular rounds are present and resolved. Rescheduled or repeated grand-final entries remain separate records; unpublished dates stay blank.
 
+## Ratings
 
-The Analytics panel publishes the generated analytical structures:
+### Singles
 
-- **Matchup Lab**: a dense current-model player-v-player singles projection matrix using the section's actual scoring format;
-- **Results vs expectation**: a pre-round ledger for every valid singles rubber, plus player-level actual wins, expected wins and expected-versus-actual game share;
+For each completed, valid singles rubber, the model treats games as scoreline evidence. If player `i` wins `g_i` games and player `j` wins `g_j` games:
 
-Expectation rows use only rating information that existed before the round being evaluated. Players without an earlier rating snapshot enter that match at the neutral 1500 section centre. Public expectation ranks require four singles matches, matching the Singles Power publication threshold.
+```text
+p_ij = logistic((theta_i - theta_j) / 0.75)
 
-Historical rating snapshots cover every published round in the official draw. A washout/no-evidence round carries the previous fitted state forward so round timelines remain continuous.
+weight_m = 2^(-age_days / 365)
 
-## Doubles
+maximize  sum_m weight_m * [g_i * log(p_ij) + g_j * log(1 - p_ij)]
+          - (5 / 2) * sum_i theta_i^2
 
-- **Doubles pairs** rate a recurring pairing as one unit.
-- **Doubles players** use `theta_pair = (theta_A + theta_B) / 2`.
-- Individual doubles remains experimental. Ranking requires four appearances, two partners and no exact unresolved identifiability direction.
-- Overall is the transparent 50/50 average of Singles Power and established Individual Doubles Power.
+Power_i = 1500 + 600 * theta_i
+```
 
-## Automatic TROLS sync
+`age_days` is measured relative to the newest dated match in that fit, not to the date the site is opened. An undated source record is not assigned an invented postponement interval. The scoreline likelihood already includes whether the player won or lost, so the model does not add a separate win/loss likelihood.
 
-`scraper/sync_trols.py`:
+A 100-point Power gap corresponds to a game probability of approximately 55.5% under the fitted model; in general, `p_ij = logistic((Power_i - Power_j) / 450)`. L2 regularization shrinks estimates toward the section centre when evidence is limited. Every valid player result contributes to the opponent network, but the public singles ranking requires four completed singles rubbers.
 
-1. discovers both target competitions and every listed section;
-2. loads all result indexes and completed scorecards;
-3. loads every team's official TROLS fixture page and deduplicates the section draw;
-4. validates match IDs, scorecard teams, duplicate positions, winners and fixture game arithmetic;
-5. writes per-section source files under `data/current/sections/<section-code>/`.
+Displayed uncertainty uses a centred inverse-Hessian (Laplace) approximation. It is an estimate of rating uncertainty under this model, not a guaranteed range of future performance.
 
-The scraper supports standard six-rubber Sets scorecards, Green Ball and Rubbers sections with multi-set singles. TROLS's published team scoring totals are retained. Predictions use format-specific contest logic: ordinary Sets use the standard tiebreak path, Green Ball is first to six games with no tiebreak, and Rubbers singles uses the two-set plus match-tiebreak projection.
+### Doubles and Overall
 
-`generate_site_data.py` fits every section independently, builds the cross-section summary and writes lazy-loaded site JSON to `data/site/sections/`. Section 6 is embedded in `data.js` as the fast default; other sections load only when selected.
+- **Doubles pairs** treat a recurring pair as one rated entity; a pair needs two recorded appearances to qualify for its table.
+- **Individual doubles** assumes pair strength is the mean of its players' latent strengths: `theta_pair = (theta_A + theta_B) / 2`. It is experimental because partner patterns can leave some player strengths unidentifiable. In formats with enough partner diversity, publication requires four appearances, at least two partners and an identifiable position in the results network. Two-player Rubbers sections can only provide partner-dependent evidence, which is labelled as such.
+- **Overall** is the arithmetic mean of Singles Power and Individual Doubles Power. A ranked Overall entry needs at least four singles rubbers and a publishable doubles contribution; below-threshold entries can be shown as provisional.
+- **Team Power** uses every modelled singles rating for that team's average, including ratings below the individual publication threshold. The best-four figure is the mean of its four strongest modelled ratings.
 
-`scraper/backfill_history.py` imports every non-current season offered by both TROLS Past Results selectors, including scorecards and published final ladders. `generate_archive_site_data.py` fits and writes one lazy-loaded payload per archived season/section under `data/archive/site/sections/` and creates `data/archive/catalog.json` for the History controls. The separate **Import TROLS historical seasons** workflow runs on code changes or manual dispatch; it has a six-hour job limit and does not run on the regular current-season schedule.
+Adaptive rating bands are calculated from qualified entries in the selected section and rating view. They are display groupings; they do not affect fitted Power or ranking order.
 
-The GitHub Actions workflow runs Sunday, Monday and Wednesday at 7:17 PM Australia/Melbourne time and can also be run manually. Every completed check creates a heartbeat, and the site shows a plain-English one-time toast on a browser's first visit after that check.
+### Match predictions and round history
 
-## Development
+The Prediction Centre converts Power differences to game probabilities, then uses the competition format to estimate rubber and team outcomes. It distinguishes standard Sets, Green Ball and Rubbers singles scoring. Selected players' singles order is inferred from continuity in their previous official playing orders and average position, with TROLS emergency markers kept at the bottom; it is not simply sorted by rating. For Sets sections, the user can choose the doubles pairings to evaluate.
+
+Round-by-round snapshots refit the ratings using results available through each round in the official draw. A round without new valid singles evidence carries the previous state forward. Results-versus-expectation calculations use pre-round ratings; players without an earlier snapshot start at the neutral 1500 section centre.
+
+## Results, standings and BRTA scoring
+
+TROLS is the source for entered fixture results, scorecards, fixture order and current published points. For the current season, the site reconstructs standings from the fixture data, retains published points where available, and applies the 2026 BRTA Weekend Junior By-Laws when a washout or full-team forfeit has no numeric points in the source. Under those rules, Sets and Green Ball use a 4-point team-win / 2-point team-draw base; Rubbers use 2 / 1. Set points are added separately. Current reconstructed ties are ordered by points, then games-for divided by total games.
+
+For archived seasons, a published TROLS final ladder takes precedence over a reconstructed table. If no final ladder is published, the site reconstructs the table from the available results and labels that limitation. The full rule summary and official by-law link are in Settings.
+
+## Data flow and automation
+
+```text
+TROLS current results and fixture pages
+            ↓
+scraper/sync_trols.py
+            ↓
+data/current/
+            ↓
+generate_site_data.py  →  data/site/ and data.js
+            ↓
+static site on GitHub Pages
+```
+
+`scraper/sync_trols.py` discovers the active competitions and sections, downloads the results and scorecards, reads each team's official draw, validates the records, and writes the current-season source data. `generate_site_data.py` fits the section models and creates the data consumed by the website. The default section is embedded in `data.js`; other section payloads are loaded when selected.
+
+The routine GitHub Actions sync runs Sunday, Monday and Wednesday at 7:17 PM Australia/Melbourne time, and can also be started manually. It runs the regression tests, regenerates the current-season site data, and records a heartbeat. On a later first visit in a browser, the site shows a short plain-English notice describing whether that check found updated results.
+
+Historical importing is separate from routine sync: `scraper/backfill_history.py` fetches the past seasons listed by TROLS, and `generate_archive_site_data.py` builds their rating payloads and History catalogue. The archive workflow is manually dispatchable and code-triggered; normal scheduled checks do not rescan the past.
+
+The site is a static client-side app. Its manifest and service worker support installation on desktop and iOS and cache the app shell. Section data is loaded on demand, so offline access to every section or archived season is not guaranteed.
+
+## Repository map
+
+| Path | Purpose |
+| --- | --- |
+| `index.html`, `app.js` | Site structure and interface behavior |
+| `prediction.js` | Fixture prediction and tie-probability calculations |
+| `pwa.js`, `sw.js`, `manifest.webmanifest` | Install guidance, app metadata and service-worker caching |
+| `future.css`, `style.css`, `site.css` | Default and Classic presentation styles |
+| `model.py` | V3 singles rating fit and uncertainty |
+| `generate_site_data.py` | Current-section ratings, doubles, history, standings, results and fixtures |
+| `generate_archive_site_data.py` | Archived-section payloads and History catalogue |
+| `scraper/sync_trols.py` | Active-season TROLS scraper |
+| `scraper/backfill_history.py` | Past-season TROLS importer |
+| `data/current/` | Active-season catalogue and source result files |
+| `data/site/` | Generated current-season section payloads |
+| `data/archive/` | Imported historical records and generated archive payloads |
+| `tests/` | Model, scraper, generator and prediction regression tests |
+| `validation/` | Walk-forward V2/V3 evaluation harness and input contract |
+
+## Run locally
+
+Install the pinned Python dependencies, run the tests, then serve the static files over HTTP so the browser can load section JSON:
 
 ```bash
 python -m pip install -r requirements.txt
-python scraper/sync_trols.py
-python generate_site_data.py
 python -m unittest discover -s tests -v
 node tests/test_prediction.js
+python -m http.server 8000
 ```
 
-The full sync currently covers 44 sections, so the workflow uses a 45-minute timeout and concurrent, retrying HTTP requests.
+Open `http://localhost:8000`. To fetch current data and rebuild its site payloads:
+
+```bash
+python scraper/sync_trols.py
+python generate_site_data.py
+```
+
+To run the full historical backfill locally, use `python -m scraper.backfill_history` followed by `python generate_archive_site_data.py`. This is network-intensive and can take substantially longer than a current-season sync.
+
+`validation/validate_v2_v3.py` contains a walk-forward comparison harness for game log loss and match Brier score. The development datasets used for tuning are not included in this repository, so those historical comparison results cannot be reproduced from the checked-in files alone.
+
+## Disclaimer
+
+This project is an independent statistical analysis of publicly entered competition data. BRTA, Tennis Australia and UTR do not endorse or operate it.
