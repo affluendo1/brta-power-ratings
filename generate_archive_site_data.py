@@ -152,7 +152,8 @@ def main() -> None:
 
     count = 0
     if args.catalog_only:
-        if not write_catalog():
+        catalog = write_catalog()
+        if catalog is None:
             return
     else:
         raw = json.loads(RAW_CATALOG.read_text(encoding="utf-8"))

@@ -10,6 +10,7 @@ on:
       - "scraper/sync_trols.py"
       - "model.py"
       - "generate_site_data.py"
+      - "generate_archive_site_data.py"
       - "app.js"
       - "index.html"
       - "style.css"
