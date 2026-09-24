@@ -351,7 +351,7 @@ def _contains_source_unknown(value: str) -> bool:
 
 def pair_from_code(players: list[dict], code: str, fixture_id: str, side: str) -> tuple[str, list[bool]]:
     codes = code.split("+")
-    if len(codes) != 2:
+    if len(codes) < 2 or len(codes) > 6:
         raise RuntimeError(f"Bad doubles code {code!r} for roster {players}")
     entries = [_player_from_code(players, value, fixture_id, side) for value in codes]
     return " / ".join(entry["name"] for entry in entries), [entry["emergency"] for entry in entries]
@@ -361,9 +361,14 @@ def _player_from_code(players: list[dict], code: str, fixture_id: str, side: str
     if not re.fullmatch(r"\d+", code):
         raise RuntimeError(f"Bad singles code {code!r}")
     number = int(code)
+    if number < 1 or number > 6:
+        raise RuntimeError(f"Bad singles code {code!r}; BRTA roster positions are 1 to 6")
     entry = next((row for row in players if row["code"] == number), None)
     if entry is None:
-        raise RuntimeError(f"Bad singles code {code!r} for roster {players}")
+        # An old TROLS scorecard may reference a roster number whose name was
+        # not published. Keep that official rubber visible without inventing a
+        # player identity or admitting it to rating calculations.
+        return {"code": number, "name": _unnamed_player(fixture_id, side, number, False), "emergency": False}
     name = entry["name"]
     if re.fullmatch(r"No Player\s*\d*", name, re.I):
         name = _unnamed_player(fixture_id, side, number, entry["emergency"])
@@ -392,8 +397,10 @@ def parse_scorecard(html: str, fixture: dict) -> tuple[list[dict], list[dict]]:
         raise RuntimeError(f"Expected three scorecard tables for {fixture['fixture_id']}, found {len(nested)}")
     home_players, away_players = parse_roster(nested[0]), parse_roster(nested[2])
     expected_roster = 2 if fixture.get("home_sets", "") != "" else 4
-    if len(home_players) > expected_roster or len(away_players) > expected_roster:
-        raise RuntimeError(f"Unexpected rosters for {fixture['fixture_id']}: {home_players} / {away_players}")
+    for side, roster in (("home", home_players), ("away", away_players)):
+        codes = [entry["code"] for entry in roster]
+        if len(roster) > 6 or any(code < 1 or code > 6 for code in codes) or len(codes) != len(set(codes)):
+            raise RuntimeError(f"Invalid {side} roster for {fixture['fixture_id']}: {roster}")
     # TROLS occasionally omits a roster name altogether. Preserve the rubber,
     # but keep an explicit source-limited identity and exclude it from ratings.
     for side, roster in (("home", home_players), ("away", away_players)):
@@ -447,7 +454,15 @@ def parse_scorecard(html: str, fixture: dict) -> tuple[list[dict], list[dict]]:
             doubles_position += 1
             hp, he = pair_from_code(home_players, home_code, fixture["fixture_id"], "home")
             ap, ae = pair_from_code(away_players, away_code, fixture["fixture_id"], "away")
-            base["valid_for_rating"] = str(decisive and not _contains_unnamed_identity(hp) and not _contains_unnamed_identity(ap)).lower()
+            home_pair_codes, away_pair_codes = home_code.split("+"), away_code.split("+")
+            standard_pairs = (
+                len(home_pair_codes) == len(away_pair_codes) == 2
+                and len(set(home_pair_codes)) == len(set(away_pair_codes)) == 2
+            )
+            base["valid_for_rating"] = str(
+                decisive and standard_pairs
+                and not _contains_unnamed_identity(hp) and not _contains_unnamed_identity(ap)
+            ).lower()
             doubles.append({**base, "position": f"No. {doubles_position}", "home_pair": hp, "away_pair": ap,
                             "winning_pair": hp if home_sets > away_sets else ap if away_sets > home_sets else "",
                             "home_emergencies": json.dumps(he), "away_emergencies": json.dumps(ae)})
@@ -524,7 +539,17 @@ def _integer(value, label: str) -> int:
         raise RuntimeError(f"Invalid {label}: {value!r}") from exc
 
 
-def validate_dataset(fixtures: list[dict], singles: list[dict], doubles: list[dict], section_code: str, *, green_ball: bool = False) -> None:
+def validate_dataset(
+    fixtures: list[dict], singles: list[dict], doubles: list[dict], section_code: str,
+    *, green_ball: bool = False, allow_source_discrepancies: bool = False,
+) -> list[str]:
+    warnings = []
+
+    def source_discrepancy(message: str) -> None:
+        if not allow_source_discrepancies:
+            raise RuntimeError(message)
+        warnings.append(message)
+
     if not re.fullmatch(r"(?:AA|UA)\d{3}", section_code):
         raise RuntimeError(f"Unexpected section code {section_code!r}")
     official_ids = [row["fixture_id"] for row in fixtures if row["status"] == "Completed"]
@@ -546,8 +571,14 @@ def validate_dataset(fixtures: list[dict], singles: list[dict], doubles: list[di
                 hs, aws = _integer(row["home_sets"], "home sets"), _integer(row["away_sets"], "away sets")
                 winner = row.get("winning_player") or row.get("winning_pair")
                 home_entry = row.get("home_player") or row.get("home_pair")
-                if (hs > aws) != (winner == home_entry):
-                    raise RuntimeError(f"Winner does not agree with score in {key}")
+                away_entry = row.get("away_player") or row.get("away_pair")
+                expected_winner = home_entry if hs > aws else away_entry if aws > hs else ""
+                # Names are not globally unique in TROLS. If both opponents
+                # have the same displayed name, the result is still coherent
+                # when that shared name is the recorded winner.
+                agrees = winner == expected_winner
+                if not agrees:
+                    source_discrepancy(f"Winner does not agree with score in {key}")
     for fixture in fixtures:
         if fixture["status"] != "Completed":
             continue
@@ -555,7 +586,7 @@ def validate_dataset(fixtures: list[dict], singles: list[dict], doubles: list[di
         fixture_doubles = [row for row in doubles if row["fixture_id"] == fixture["fixture_id"]]
         rows = fixture_singles + fixture_doubles
         if not rows and any(_integer(fixture[field], field) for field in ("home_rubbers", "away_rubbers", "home_games", "away_games")):
-            raise RuntimeError(f"No scorecard rubbers for {fixture['fixture_id']}")
+            source_discrepancy(f"No scorecard rubbers for {fixture['fixture_id']}")
         hg = sum(_integer(row["home_games"], "home games") for row in rows)
         ag = sum(_integer(row["away_games"], "away games") for row in rows)
         scoring_rows = fixture_singles if fixture["home_sets"] != "" else rows
@@ -563,11 +594,12 @@ def validate_dataset(fixtures: list[dict], singles: list[dict], doubles: list[di
         hr = sum(_integer(row["home_sets"], "home sets") > _integer(row["away_sets"], "away sets") for row in scoring_rows)
         ar = sum(_integer(row["away_sets"], "away sets") > _integer(row["home_sets"], "home sets") for row in scoring_rows)
         if (hg, ag) != (_integer(fixture["home_games"], "fixture home games"), _integer(fixture["away_games"], "fixture away games")):
-            raise RuntimeError(f"Fixture game totals do not match rubbers for {fixture['fixture_id']}")
+            source_discrepancy(f"Fixture game totals do not match rubbers for {fixture['fixture_id']}")
         green_ball = green_ball or section_code in {"AA013", "AA014", "UA026", "UA027"}
         complete_standard_card = len(rows) == 6 and all(not _contains_source_unknown(str(row)) for row in rows)
         if fixture["home_sets"] == "" and not green_ball and complete_standard_card and (hr, ar) != (_integer(fixture["home_rubbers"], "fixture home rubbers"), _integer(fixture["away_rubbers"], "fixture away rubbers")):
-            raise RuntimeError(f"Fixture rubber totals do not match rubbers for {fixture['fixture_id']}")
+            source_discrepancy(f"Fixture rubber totals do not match rubbers for {fixture['fixture_id']}")
+    return warnings
 
 
 def attach_draw_ids(draw: list[dict], fixtures: list[dict]) -> list[dict]:

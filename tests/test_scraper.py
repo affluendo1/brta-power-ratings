@@ -106,7 +106,24 @@ class DatasetValidationTests(unittest.TestCase):
         self.assertEqual(sync_trols.current_season_transitions({}, sections), [])
 
     def test_current_dataset_passes_internal_arithmetic_checks(self):
-        validate_dataset(self.fixtures, self.singles, self.doubles, "UA009")
+        self.assertEqual(validate_dataset(self.fixtures, self.singles, self.doubles, "UA009"), [])
+
+    def test_archive_keeps_scorecards_with_trols_total_discrepancies_and_reports_them(self):
+        fixtures = copy.deepcopy(self.fixtures)
+        fixtures[0]["home_games"] = str(int(fixtures[0]["home_games"]) + 1)
+        with self.assertRaisesRegex(RuntimeError, "Fixture game totals do not match"):
+            validate_dataset(fixtures, self.singles, self.doubles, "UA009")
+        warnings = validate_dataset(
+            fixtures, self.singles, self.doubles, "UA009", allow_source_discrepancies=True
+        )
+        self.assertTrue(any("Fixture game totals do not match" in warning for warning in warnings))
+
+    def test_same_display_name_for_both_opponents_is_not_a_false_winner_error(self):
+        singles = copy.deepcopy(self.singles)
+        row = singles[0]
+        row["away_player"] = row["home_player"]
+        row["winning_player"] = row["home_player"] if int(row["home_sets"]) > int(row["away_sets"]) else row["away_player"]
+        validate_dataset(self.fixtures, singles, self.doubles, "UA009")
 
     def test_wrong_rubber_score_is_rejected(self):
         bad_singles = copy.deepcopy(self.singles)
@@ -183,6 +200,20 @@ class DatasetValidationTests(unittest.TestCase):
         self.assertEqual(singles[3]["away_player"], "Holly Emergency")
         self.assertEqual(singles[3]["away_emergency"], "true")
         self.assertEqual(doubles[1]["away_emergencies"], "[false, true]")
+
+    def test_scorecard_keeps_larger_historical_rosters_and_marks_substitution_doubles_unrated(self):
+        html = """
+        <table width="99%"><tr><td><b>Home</b></td><td></td><td><b>Away</b></td></tr><tr><td>
+        <table><tr><td>&nbsp;</td><td>1. Alice</td></tr><tr><td>&nbsp;</td><td>2. Bob</td></tr><tr><td>&nbsp;</td><td>3. Cara</td></tr><tr><td>&nbsp;</td><td>4. Dan</td></tr><tr><td>&nbsp;</td><td>5. Eve</td></tr></table>
+        </td><td><table><tr><td>1</td><td>6-2</td><td>1</td></tr><tr><td>1+2+3</td><td>6-4</td><td>1+2</td></tr></table></td><td>
+        <table><tr><td>&nbsp;</td><td>1. Finn</td></tr><tr><td>&nbsp;</td><td>2. Gail</td></tr><tr><td>&nbsp;</td><td>3. Holly</td></tr><tr><td>&nbsp;</td><td>4. Ian</td></tr><tr><td>&nbsp;</td><td>5. Jane</td></tr><tr><td>&nbsp;</td><td>6. Kyle</td></tr></table>
+        </td></tr></table>
+        """
+        fixture = {"fixture_id":"UA999002", "date":"1 Jul 26", "round":1, "home_team":"Home", "away_team":"Away", "home_sets":""}
+        singles, doubles = parse_scorecard(html, fixture)
+        self.assertEqual(singles[0]["home_player"], "Alice")
+        self.assertEqual(doubles[0]["home_pair"], "Alice / Bob / Cara")
+        self.assertEqual(doubles[0]["valid_for_rating"], "false")
 
     def test_scorecard_keeps_unknown_emergency_out_of_ratings(self):
         html = """

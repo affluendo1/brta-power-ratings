@@ -204,10 +204,17 @@ def _fetch_section(meta: dict) -> dict:
         section["draw_source"] = "TROLS Results order (fixture page unavailable)"
     section["official_standings"] = _ladder(meta)
     _scorecards(section)
-    sync.validate_dataset(
+    section["validation_warnings"] = sync.validate_dataset(
         section["fixtures"], section["singles"], section["doubles"],
         section["source_section_code"], green_ball=meta["green_ball"],
+        # Published historic pages occasionally contain incomplete scorecards
+        # or aggregate totals that do not match the individual rubber rows.
+        # Retain both TROLS records, record the discrepancy, and keep the live
+        # current-season sync on its stricter validation path.
+        allow_source_discrepancies=True,
     )
+    if section["validation_warnings"]:
+        print(f"  {section['asset_id']}: retained {len(section['validation_warnings'])} TROLS source discrepancy warning(s)")
     return section
 
 
@@ -347,6 +354,7 @@ def _write_section(section: dict) -> dict:
         "validation": "passed",
         "source": "TROLS Past Results and Past Ladders",
         "draw_source": section.get("draw_source", "TROLS Fixtures"),
+        "validation_warnings": section.get("validation_warnings", []),
     })
     (folder / "metadata.json").write_text(json.dumps(meta, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     return meta
