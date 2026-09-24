@@ -12,6 +12,7 @@ const TEAM_COLOUR_WORDS=new RegExp('\\b('+Object.keys(TEAM_COLOURS).join('|')+')
 function teamName(name){return esc(name).replace(TEAM_COLOUR_WORDS,word=>'<span class="team-colour team-colour-'+TEAM_COLOURS[word.toLowerCase()]+'">'+word+'</span>')}
 let D=null,singles=[],dinds=[],pairs=[],teams=[];
 let viewCatalog=DATA.catalog||[],historyCatalog=null,historyCatalogPromise=null,activeHistorySeasonId=null;
+const archiveGlobalRowsCache=new Map();
 let showProv=localStorage.getItem('brta-show-provisional')==='1';
 let ratingScope=localStorage.getItem('brta-rating-scope')||'section';
 let theme=localStorage.getItem('brta-theme')||'auto',interfaceMode=localStorage.getItem('brta-interface')||'future',accent=localStorage.getItem('brta-accent')||'yellow',profilePosition=localStorage.getItem('brta-profile-position')||'right';
@@ -139,8 +140,30 @@ function bandModel(rows,min,type){const vals=rows.filter(x=>ratingQualified(x,mi
 function renderBandInfo(model){$('#bandInfo').innerHTML=model.bounds.length?'<div class="band-info-head"><b>Performance bands</b><span>Adaptive to qualified players in this section</span></div><div class="band-keys">'+BAND_NAMES.map((n,i)=>'<div class="band-key b'+i+'"><i></i><span><b>'+n+'</b><small>'+model.bounds[i]+'</small></span></div>').join('')+'</div>':''}
 function bandDivider(cls,model,colspan=8){const i=Number(cls.slice(1));return'<tr class="band-divider '+cls+'"><td colspan="'+colspan+'"><div><i></i><b>'+BAND_NAMES[i]+'</b><span>'+model.bounds[i]+'</span></div></td></tr>'}
 
-function globalRatingRows(){
-  const rows=DATA.globalPlayers||[];
+function archiveGlobalRowsFromSection(payload,section){
+  const singlesByPlayer=new Map((payload.singles||[]).map(row=>[row.player,row])),doublesByPlayer=new Map((payload.doublesIndividuals||[]).map(row=>[row.player,row]));
+  return[...new Set([...singlesByPlayer.keys(),...doublesByPlayer.keys()])].map(player=>{
+    const s=singlesByPlayer.get(player),d=doublesByPlayer.get(player),both=s&&d;
+    return{
+      player,team:s?.team||d?.team||'',sectionCode:section.section_code,sectionLabel:payload.meta?.section_label||section.section_label,
+      competitionCode:payload.meta?.competition_code||section.competition_code,competitionLabel:payload.meta?.competition_label||section.competition_label||competitionLabel(section.competition_code),
+      singlesRating:s?.rating,singlesSe:s?.se,singlesMatches:s?.matches,singlesWins:s?.wins,singlesLosses:s?.losses,singlesGf:s?.gf,singlesGa:s?.ga,
+      doublesRating:d?.rating,doublesSe:d?.se,doublesMatches:d?.matches,doublesWins:d?.wins,doublesLosses:d?.losses,doublesGf:d?.gf,doublesGa:d?.ga,doublesQualified:!!d?.qualified,doublesStatus:d?.ranking_status,
+      overallRating:both?Math.round((s.rating+d.rating)/2):(s?.rating??d?.rating??null),overallSe:both?Math.round(Math.hypot(s.se||0,d.se||0)/2):(s?.se??d?.se??null),overallQualified:!!(s&&s.matches>=4&&d?.qualified)
+    };
+  });
+}
+function archiveGlobalRows(){
+  const seasonId=activeHistorySeasonId;if(!seasonId)return null;
+  let entry=archiveGlobalRowsCache.get(seasonId);if(entry)return entry;
+  entry={rows:null,error:null};
+  entry.promise=Promise.all(viewCatalog.map(section=>fetch(section.data_path+'?v='+encodeURIComponent(DATA.globalSync.checkedAt||''),{cache:'no-store'}).then(response=>{if(!response.ok)throw Error('One or more archived sections could not be loaded.');return response.json()}).then(payload=>archiveGlobalRowsFromSection(payload,section)))).then(groups=>{entry.rows=groups.flat();return entry.rows}).catch(error=>{entry.error=error;return[]});
+  entry.promise.then(()=>{if(activeHistorySeasonId===seasonId&&ratingScope==='all')renderRatings()});
+  archiveGlobalRowsCache.set(seasonId,entry);
+  return entry;
+}
+function primeArchiveGlobalRows(){if(activeHistorySeasonId)archiveGlobalRows()}
+function globalRatingRows(rows=DATA.globalPlayers||[]){
   if(ratingView==='singles')return rows.filter(x=>x.singlesRating!=null).map(x=>({...x,rating:x.singlesRating,se:x.singlesSe,matches:x.singlesMatches,wins:x.singlesWins,losses:x.singlesLosses,gf:x.singlesGf,ga:x.singlesGa,qualified:x.singlesMatches>=4,type:'player'}));
   if(ratingView==='doublesPlayers')return rows.filter(x=>x.doublesRating!=null).map(x=>({...x,rating:x.doublesRating,se:x.doublesSe,matches:x.doublesMatches,wins:x.doublesWins,losses:x.doublesLosses,gf:x.doublesGf,ga:x.doublesGa,qualified:x.doublesQualified,type:'doublesPlayers'}));
   if(ratingView==='overall')return rows.filter(x=>x.overallRating!=null).map(x=>({...x,rating:x.overallRating,se:x.overallSe,qualified:x.overallQualified,type:'overall'}));
@@ -148,8 +171,9 @@ function globalRatingRows(){
 }
 function renderGlobalRatings(){
   const [title,desc]=ratingInfo[ratingView],q=$('#search').value.trim().toLowerCase();
+  const archive=activeHistorySeasonId?archiveGlobalRows():null,sectionCount=viewCatalog.length,seasonLabel=activeHistorySeasonId?(viewCatalog[0]?.season_label||D?.meta?.season_label||'selected season'):'current season';
   $('#ratingsTitle').textContent='All sections · '+title;
-  $('#ratingsDesc').textContent=desc+' Search spans all '+DATA.catalog.length+' current sections.';
+  $('#ratingsDesc').textContent=desc+' Search spans all '+sectionCount+' sections in '+seasonLabel+'.';
   $('#ratingsHint').textContent='Section ratings are fitted independently and are not cross-section rankings.';
   $('#teamFilter').disabled=true;$('#teamFilter').value='';
   renderBandInfo({bounds:[]});
@@ -160,10 +184,12 @@ function renderGlobalRatings(){
   }
   if(!q){
     $('#ratingHead').innerHTML='<tr><th>Player</th><th>Team</th><th>Section</th><th>Power</th><th>Record</th><th>Evidence</th><th>Status</th><th>Uncertainty</th></tr>';
-    $('#ratingBody').innerHTML='<tr><td colspan="8">Type a player name to search every current section.</td></tr>';
+    $('#ratingBody').innerHTML='<tr><td colspan="8">Type a player name to search every section in '+esc(seasonLabel)+'.</td></tr>';
     return;
   }
-  const rows=globalRatingRows().filter(x=>x.player.toLowerCase().includes(q)).sort((a,b)=>{
+  if(archive?.error){$('#ratingHead').innerHTML='<tr><th>All-section player search</th></tr>';$('#ratingBody').innerHTML='<tr><td>Could not load the selected season’s player index. Please try again.</td></tr>';return}
+  if(archive&&!archive.rows){$('#ratingHead').innerHTML='<tr><th>All-section player search</th></tr>';$('#ratingBody').innerHTML='<tr><td>Loading every section from '+esc(seasonLabel)+'…</td></tr>';return}
+  const rows=globalRatingRows(archive?.rows).filter(x=>x.player.toLowerCase().includes(q)).sort((a,b)=>{
     const ae=a.player.toLowerCase()===q?0:a.player.toLowerCase().startsWith(q)?1:2;
     const be=b.player.toLowerCase()===q?0:b.player.toLowerCase().startsWith(q)?1:2;
     return ae-be||a.player.localeCompare(b.player)||a.competitionLabel.localeCompare(b.competitionLabel)||a.sectionLabel.localeCompare(b.sectionLabel);
@@ -179,7 +205,7 @@ function renderGlobalRatings(){
       out+='<tr class="'+(x.qualified?'':'provisional')+'"><td>'+globalPersonButton(x)+'</td><td>'+teamName(x.team)+'</td><td>'+sectionCell(x)+'</td><td><b>'+x.rating+'</b></td><td>'+x.wins+'–'+x.losses+'</td><td>'+x.gf+'–'+x.ga+'</td><td>'+evidence+'</td><td>±'+(x.se??'—')+'</td></tr>';
     }
   }
-  $('#ratingBody').innerHTML=out||'<tr><td colspan="8">No player found across the '+DATA.catalog.length+' sections.</td></tr>';
+  $('#ratingBody').innerHTML=out||'<tr><td colspan="8">No player found across the '+sectionCount+' sections in '+esc(seasonLabel)+'.</td></tr>';
   $('#ratingHead').innerHTML=ratingView==='overall'
     ?'<tr><th>Player</th><th>Team</th><th>Section</th><th>Overall</th><th>Singles</th><th>Doubles</th><th>Status</th><th>Uncertainty</th></tr>'
     :'<tr><th>Player</th><th>Team</th><th>Section</th><th>Power</th><th>W–L</th><th>Games</th><th>Evidence</th><th>Uncertainty</th></tr>';
@@ -386,7 +412,7 @@ async function openHistoryChoice(){
     const payload=await response.json();
     if(!payload?.meta?.is_archive)throw Error('The selected file is not a historical section.');
     activeHistorySeasonId=season.id;viewCatalog=historicalCatalog;localStorage.setItem('brta-history-selection',JSON.stringify({seasonId:season.id,sectionCode:section.section_code}));
-    setupSelectors();close('#settingsOverlay');switchPage('results');await loadSection(section.section_code);
+    setupSelectors();primeArchiveGlobalRows();close('#settingsOverlay');switchPage('results');await loadSection(section.section_code);
   }catch(error){
     if(info)info.textContent='Could not open this archive: '+error.message+' Your current section has not been changed.';
   }finally{if(button)button.disabled=false}
@@ -443,5 +469,5 @@ $('#search').oninput=renderRatings;$('#teamFilter').onchange=renderRatings;$('#s
 $('#profileClose').onclick=()=>close('#profileOverlay');$('#roundClose').onclick=()=>close('#roundOverlay');$('#settingsClose').onclick=()=>close('#settingsOverlay');$('#resultClose').onclick=()=>close('#resultOverlay');
 $('#predictionClose').onclick=()=>close('#predictionOverlay');$('#sosClose').onclick=()=>close('#sosOverlay');
 document.addEventListener('keydown',e=>{if(e.key==='Escape')$$('.overlay:not(.hidden)').forEach(o=>close('#'+o.id))});
-async function startApp(){applyProfilePosition();viewCatalog=DATA.catalog||[];setupSelectors();$('#searchScope').value=ratingScope;showSyncToast();const saved=readHistorySelection();if(!saved){await loadSection(choiceValue('sectionSelect'));ensureHistoryCatalog();return}const catalog=await ensureHistoryCatalog(),season=catalog?.seasons.find(x=>x.id===saved.seasonId),section=season?.sections.find(x=>x.section_code===saved.sectionCode);if(season&&section){activeHistorySeasonId=season.id;viewCatalog=historySeasonSections(season);setupSelectors();await loadSection(section.section_code)}else{activeHistorySeasonId=null;viewCatalog=DATA.catalog||[];setupSelectors();await loadSection(choiceValue('sectionSelect'))}}
+async function startApp(){applyProfilePosition();viewCatalog=DATA.catalog||[];setupSelectors();$('#searchScope').value=ratingScope;showSyncToast();const saved=readHistorySelection();if(!saved){await loadSection(choiceValue('sectionSelect'));ensureHistoryCatalog();return}const catalog=await ensureHistoryCatalog(),season=catalog?.seasons.find(x=>x.id===saved.seasonId),section=season?.sections.find(x=>x.section_code===saved.sectionCode);if(season&&section){activeHistorySeasonId=season.id;viewCatalog=historySeasonSections(season);setupSelectors();primeArchiveGlobalRows();await loadSection(section.section_code)}else{activeHistorySeasonId=null;viewCatalog=DATA.catalog||[];setupSelectors();await loadSection(choiceValue('sectionSelect'))}}
 startApp();
