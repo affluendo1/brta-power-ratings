@@ -52,6 +52,64 @@
     return Array.isArray(home)&&Array.isArray(away)&&home.length===needed&&away.length===needed&&
       home.every(Boolean)&&away.every(Boolean)&&new Set(home).size===needed&&new Set(away).size===needed;
   }
+  function sampleSet(p,{greenBall=false,rng=Math.random}={}){
+    let home=0,away=0;
+    while(home<6&&away<6){if(rng()<p)home++;else away++}
+    if(!greenBall&&home===6&&away===5||!greenBall&&away===6&&home===5){
+      if(rng()<p)home++;else away++;
+      if(home===6&&away===6){
+        const homeWon=rng()<p;
+        const loserPoints=sampleTiebreakLoserPoints(7,rng);
+        return{homeGames:homeWon?7:6,awayGames:homeWon?6:7,
+          score:(homeWon?'7-6':'6-7')+'['+loserPoints+']',homeWon};
+      }
+    }
+    return{homeGames:home,awayGames:away,score:home+'-'+away,homeWon:home>away};
+  }
+  function sampleTiebreakLoserPoints(target,rng=Math.random){
+    // The rubber model gives the tiebreak winner probability. Score detail is
+    // illustrative conditional on that winner, with a valid win-by-two score.
+    if(rng()<.18)return target+Math.floor(rng()*4)-1;
+    return Math.floor(rng()*(target-1));
+  }
+  function sampleRubber(rubber,{format='sets',greenBall=false,rng=Math.random}={}){
+    const p=clamp01(rubber.gameProbability);
+    if(format!=='rubbers'){
+      const set=sampleSet(p,{greenBall,rng});
+      return{...rubber,score:set.score,homeWon:set.homeWon,homeGames:set.homeGames,
+        awayGames:set.awayGames,homeSets:Number(set.homeWon),awaySets:Number(!set.homeWon)};
+    }
+    if(rubber.label==='Doubles'){
+      const set=sampleSet(p,{rng});
+      return{...rubber,score:set.score,homeWon:set.homeWon,homeGames:set.homeGames,
+        awayGames:set.awayGames,homeSets:Number(set.homeWon),awaySets:Number(!set.homeWon)};
+    }
+    const first=sampleSet(p,{rng}),second=sampleSet(p,{rng});
+    let homeSets=Number(first.homeWon)+Number(second.homeWon),awaySets=2-homeSets;
+    const scores=[first.score,second.score];
+    if(homeSets===1){
+      const homeWon=rng()<p,loserPoints=sampleTiebreakLoserPoints(10,rng);
+      const winnerPoints=Math.max(10,loserPoints+2);
+      scores.push(homeWon?'['+winnerPoints+'-'+loserPoints+']':'['+loserPoints+'-'+winnerPoints+']');
+      if(homeWon)homeSets++;else awaySets++;
+    }
+    return{...rubber,score:scores.join(' '),homeWon:homeSets>awaySets,
+      homeGames:first.homeGames+second.homeGames,awayGames:first.awayGames+second.awayGames,
+      homeSets,awaySets};
+  }
+  function simulateTie(rubbers,{format='sets',greenBall=false,rng=Math.random}={}){
+    const results=rubbers.map(r=>sampleRubber(r,{format,greenBall,rng}));
+    const homeRubbers=results.filter(r=>r.homeWon).length,awayRubbers=results.length-homeRubbers;
+    const homeGames=results.reduce((n,r)=>n+r.homeGames,0),awayGames=results.reduce((n,r)=>n+r.awayGames,0);
+    const homeSets=results.reduce((n,r)=>n+r.homeSets,0),awaySets=results.reduce((n,r)=>n+r.awaySets,0);
+    // Sets ties use rubber wins, then games. Rubbers has three rubbers.
+    const winner=homeRubbers>awayRubbers?1:awayRubbers>homeRubbers?-1:
+      homeGames>awayGames?1:awayGames>homeGames?-1:0;
+    const base=format==='rubbers'?2:4,drawBase=format==='rubbers'?1:2;
+    return{results,homeRubbers,awayRubbers,homeGames,awayGames,homeSets,awaySets,winner,
+      homePoints:(winner===1?base:winner===0?drawBase:0)+homeSets,
+      awayPoints:(winner===-1?base:winner===0?drawBase:0)+awaySets};
+  }
   function teamOutcome(rubbers,{gamesDecideTies=false}={}){
     let states=new Map([['0:0',1]]);
     let expectedRubbers=0;
@@ -98,5 +156,8 @@
     rubbersSinglesWin,
     lineupReady,
     teamOutcome,
+    sampleSet,
+    sampleRubber,
+    simulateTie,
   };
 });

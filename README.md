@@ -10,18 +10,18 @@ The site lets you select a competition, season and section, then view that secti
 
 The five main views are:
 
-- **Results** — round-by-round fixture results and scorecards, including singles and doubles order where TROLS provides it.
+- **Results** — round-by-round fixture results and scorecards, including singles and doubles order where TROLS provides it. A bye occupies its own card in seven-team rounds.
 - **Standings** — current-season ladder calculations, or the published final TROLS ladder for an archived season when one is available. The standings view also shows recorded or projected semifinals and grand finals.
 - **Ratings** — singles, recurring doubles pairs, individual doubles and Overall tables. Player rows open Player Lab.
 - **Teams** — average modelled singles Power and the average of each team's four strongest modelled singles ratings.
-- **Fixtures** — the official TROLS draw, including completed and future fixtures. A fixture opens the Prediction Centre, where users choose players, review an order inferred from previous scorecards, choose doubles pairings where applicable, and see model-based rubber and team outcome estimates.
+- **Fixtures** — the official TROLS draw, including completed and future fixtures. A recorded fixture opens its result; a scheduled fixture opens the Prediction Centre. Upcoming rounds have a button to simulate their scheduled ties.
 
 Other views are opened from the header or player profiles:
 
 - **Player Lab** shows rating history, match performance and opponent ratings, strength of schedule, partners and other player-level summaries.
 - **Analytics** provides head-to-head projections and a comparison of results with estimates made before each round.
 - **Latest round** summarizes the latest round and links to its scorecards.
-- **Settings** contains display preferences, season History, methodology and BRTA rules, plus a JSON model-audit export. A separate control exports the selected section's match and fixture data as CSV.
+- **Settings** contains display preferences, season History, methodology and BRTA rules, plus a JSON model-audit export. The section picker also links directly to past seasons. A separate control exports the selected section's match and fixture data as CSV.
 
 ## Competition and historical coverage
 
@@ -67,7 +67,9 @@ Adaptive rating bands are calculated from qualified entries in the selected sect
 
 ### Match predictions and round history
 
-The Prediction Centre converts Power differences to game probabilities, then uses the competition format to estimate rubber and team outcomes. It distinguishes standard Sets, Green Ball and Rubbers singles scoring. Selected players' singles order is inferred from continuity in their previous official playing orders and average position, with TROLS emergency markers kept at the bottom; it is not simply sorted by rating. For Sets sections, the user can choose the doubles pairings to evaluate.
+The Prediction Centre converts Power differences to game probabilities, then uses the competition format to estimate rubber and team outcomes. It distinguishes standard Sets, Green Ball and Rubbers singles scoring. Selected players' default singles order is inferred from continuity in previous official playing orders and average position, with TROLS emergency markers kept at the bottom; it is not simply sorted by rating. Users may replace the singles order and choose both doubles pairs from the drafted players. For Sets playoffs, each side may draft up to six players, use four in singles and independently choose four for doubles.
+
+Run Simulation samples each rubber from those same game probabilities and displays one possible scorecard, game totals, set totals and estimated team points. The simulated score is illustrative and can change on every run; the projected win percentages are long-run averages, not a promise about any particular set of 100 runs. The round simulator samples each remaining scheduled fixture using its default lineup. These results do not alter the official TROLS data.
 
 Round-by-round snapshots refit the ratings using results available through each round in the official draw. A round without new valid singles evidence carries the previous state forward. Results-versus-expectation calculations use pre-round ratings; players without an earlier snapshot start at the neutral 1500 section centre.
 

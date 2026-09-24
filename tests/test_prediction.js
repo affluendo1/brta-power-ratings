@@ -54,4 +54,41 @@ function approx(actual,expected,tolerance=1e-9){
   approx(result.homeWin,1);
   approx(result.awayWin,0);
 }
+{
+  // Sampling the same set model should converge to the projection, including
+  // the 5-5 and tiebreak branches used for Sets team margins.
+  let seed=4711;
+  const rng=()=>((seed=(1664525*seed+1013904223)>>>0)/4294967296);
+  const p=.61,n=30000;
+  let wins=0;
+  for(let i=0;i<n;i++){
+    const set=P.sampleSet(p,{rng});
+    wins+=Number(set.homeWon);
+    assert.match(set.score,/^(?:[0-7]-[0-7](?:\[\d+\])?)$/);
+    if(set.score.includes('['))assert.match(set.score,/^(?:7-6|6-7)\[\d+\]$/);
+  }
+  approx(wins/n,P.shortSetWin(p),.012);
+}
+{
+  let seed=67891;
+  const rng=()=>((seed=(1664525*seed+1013904223)>>>0)/4294967296);
+  const ratings=[.62,.55,.57,.48,.65,.53];
+  const rubbers=ratings.map((p,i)=>({label:i<4?'Singles '+(i+1):'Doubles '+(i-3),
+    home:'Home '+i,away:'Away '+i,gameProbability:p,p:P.shortSetWin(p),
+    scoreDistribution:P.shortSetDistribution(p)}));
+  const projected=P.teamOutcome(rubbers,{gamesDecideTies:true});
+  const counts=[0,0,0],n=25000;
+  for(let i=0;i<n;i++){
+    const result=P.simulateTie(rubbers,{rng});
+    counts[result.winner===1?0:result.winner===-1?1:2]++;
+    assert.strictEqual(result.homeRubbers+result.awayRubbers,6);
+    assert.strictEqual(result.homePoints+result.awayPoints,
+      (result.winner===0?4:4)+6);
+  }
+  approx(counts[0]/n,projected.homeWin,.014);
+  approx(counts[1]/n,projected.awayWin,.014);
+  approx(counts[2]/n,projected.draw,.014);
+  const tie=P.sampleRubber({label:'Singles 1',gameProbability:.5},{format:'rubbers',rng});
+  assert.match(tie.score,/^\d+-\d+ \d+-\d+(?: \[\d+-\d+\])?$/);
+}
 console.log('prediction engine tests passed');

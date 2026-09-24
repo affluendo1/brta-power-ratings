@@ -42,6 +42,7 @@ a{color:var(--primary)}
 .choice-option i{width:15px;height:15px;display:grid;place-items:center;flex:0 0 15px;border:1px solid var(--border-color);border-radius:50%;font-size:10px;color:transparent}
 .choice-option.selected i{background:var(--primary);border-color:var(--primary);color:var(--primary-ink)}
 .section-picker-footer{grid-column:1/-1;display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:24px;padding-top:1px}
+.picker-links{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:8px 18px}
 .section-count{color:var(--muted-color);font-size:12px}
 .export-link{padding:4px 0;border:0;background:transparent;color:var(--primary);font-weight:800;text-decoration:underline;text-decoration-color:transparent;text-underline-offset:3px}
 .export-link:hover{text-decoration-color:currentColor}
@@ -135,7 +136,13 @@ tbody tr:last-child td{border-bottom:0}
 .fixture-round-head{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 14px;border-bottom:1px solid var(--border-color);background:var(--surface-muted)}
 .fixture-round-head h2{margin:0;font-size:16px}
 .fixture-round-head span{color:var(--muted-color);font-size:12px}
+.fixture-round-actions{display:flex;align-items:center;gap:12px;margin-left:auto}
+.fixture-round-actions .button{min-height:32px;padding:5px 10px;font-size:11px}
 .fixture-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+.fixture-bye{min-height:78px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;padding:10px;border:1px dashed var(--border-color);background:var(--surface-muted);text-align:center}
+.fixture-list .fixture-bye{border:0;border-bottom:1px solid var(--border-color)}
+.fixture-bye small{color:var(--primary);font-size:10px;font-weight:800;letter-spacing:.09em}
+.fixture-bye span{color:var(--muted-color);font-size:11px}
 .fixture-match{position:relative;min-width:0;display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:9px;align-items:center;padding:12px 13px 31px;border:0;border-bottom:1px solid var(--border-color);background:var(--surface);color:var(--text-color);text-align:left;cursor:pointer}
 .fixture-match:nth-child(odd){border-right:1px solid var(--border-color)}
 .fixture-match:hover{background:var(--surface-muted)}
@@ -214,6 +221,22 @@ tbody tr:last-child td{border-bottom:0}
 .lineup-options small{color:var(--muted-color);font-size:10px;white-space:nowrap}
 .predicted-order{margin:10px 0 0;padding-left:23px}
 .predicted-order li{padding:2px}
+.lineup-order-head{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:14px}
+.lineup-order-head h4,.lineup-picker h4{margin:10px 0 6px;font-size:13px}
+.lineup-order-head .button{padding:5px 8px;font-size:10px}
+.lineup-position-grid,.pairing-grid{display:grid;gap:6px}
+.lineup-position-grid label,.pairing-row{display:grid;grid-template-columns:95px minmax(0,1fr);align-items:center;gap:7px;font-size:12px}
+.pairing-row{grid-template-columns:76px repeat(2,minmax(0,1fr))}
+.lineup-position-grid select,.pairing-row select{min-width:0;width:100%;padding:7px 8px;border:1px solid var(--border-color);border-radius:var(--control-radius,4px);background:var(--surface-raised);color:var(--text-color)}
+.simulation-actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:18px}
+.simulation-actions span,.round-simulations>p{color:var(--muted-color);font-size:12px}
+.simulation-result{margin:12px 0;padding:12px;border:1px solid var(--border-color);background:var(--surface-muted)}
+.simulation-result h3,.round-simulations h3{margin:0 0 8px;font-size:15px}
+.simulation-result p{display:grid;gap:5px;margin:0 0 9px}
+.simulation-result p span{font-size:12px}
+.simulation-total{font-size:13px}
+.simulation-result small{display:block;margin-top:6px;color:var(--muted-color)}
+.round-simulations{padding:12px;border-top:1px solid var(--border-color)}
 .prediction-section{margin-top:16px}
 .prediction-rubbers{border:1px solid var(--border-color)}
 .prediction-rubber{min-width:0;display:grid;grid-template-columns:92px minmax(0,1fr) 44px minmax(0,1fr);gap:7px;align-items:center;padding:9px;border-bottom:1px solid var(--border-color);font-size:12px}
