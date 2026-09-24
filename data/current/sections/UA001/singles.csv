@@ -11,16 +11,16 @@ UA001023,26 Jul 26,2,Royal South Yarra,Highmoor Uniting,No. 1,Tom Anderson,Erik 
 UA001023,26 Jul 26,2,Royal South Yarra,Highmoor Uniting,No. 2,Connor Le Page,Lazar Suluburic,Lazar Suluburic,3-6 6-7,9,13,0,2,Completed,true,false,false
 UA001024,26 Jul 26,2,Black Rock,Caulfield Rec,No. 1,Joseph Desmond,Tomas Albani,Tomas Albani,2-6 1-6,3,12,0,2,Completed,true,false,true
 UA001024,26 Jul 26,2,Black Rock,Caulfield Rec,No. 2,Luke Desmond,Pranav Arora,Luke Desmond,6-4 6-3,12,7,2,0,Completed,true,false,false
-UA001031,2 Aug 26,3,BLTC Blue,Black Rock,No. 1,Andrew Livermore,Max Looschilder,Andrew Livermore,6-1 6-2,12,3,2,0,Completed,true,true,false
-UA001031,2 Aug 26,3,BLTC Blue,Black Rock,No. 2,Lucas Hansen,Joseph Desmond,Lucas Hansen,6-4 6-4,12,8,2,0,Completed,true,true,false
-UA001032,2 Aug 26,3,BLTC Green,Mentone,No. 1,William Kallos,Xavier Ashlock,William Kallos,6-2 6-4,12,6,2,0,Completed,true,true,false
-UA001032,2 Aug 26,3,BLTC Green,Mentone,No. 2,William Zichen Wang,Henri De Guzman,Henri De Guzman,3-6 1-6,4,12,0,2,Completed,true,false,false
-UA001033,2 Aug 26,3,Highmoor Uniting,BLTC White,No. 1,Erik Bucko,William Chu,Erik Bucko,3-6 7-5 7-6,17,17,2,1,Completed,true,false,false
-UA001033,2 Aug 26,3,Highmoor Uniting,BLTC White,No. 2,Lazar Suluburic,Lucas Zhou,Lucas Zhou,5-7 7-5 6-7,18,19,1,2,Completed,true,false,true
-UA001034,2 Aug 26,3,Caulfield Rec,Royal South Yarra,No. 1,Min Cheng (duncan) Hung,Thomas Chard,Min Cheng (duncan) Hung,6-4 6-2,12,6,2,0,Completed,true,false,false
-UA001034,2 Aug 26,3,Caulfield Rec,Royal South Yarra,No. 2,Egor Barabanov,Max Shepherd,Egor Barabanov,6-0 6-1,12,1,2,0,Completed,true,false,true
-UA001041,9 Aug 26,4,Royal South Yarra,BLTC Blue,No. 1,Connor Le Page,Adyaan Tata,Adyaan Tata,4-6 4-6,8,12,0,2,Completed,true,false,true
-UA001041,9 Aug 26,4,Royal South Yarra,BLTC Blue,No. 2,Sebastian Parmenov,Andrew Livermore,Andrew Livermore,2-6 0-6,2,12,0,2,Completed,true,true,true
+UA001031,02 Aug 26,3,BLTC Blue,Black Rock,No. 1,Andrew Livermore,Max Looschilder,Andrew Livermore,6-1 6-2,12,3,2,0,Completed,true,true,false
+UA001031,02 Aug 26,3,BLTC Blue,Black Rock,No. 2,Lucas Hansen,Joseph Desmond,Lucas Hansen,6-4 6-4,12,8,2,0,Completed,true,true,false
+UA001032,02 Aug 26,3,BLTC Green,Mentone,No. 1,William Kallos,Xavier Ashlock,William Kallos,6-2 6-4,12,6,2,0,Completed,true,true,false
+UA001032,02 Aug 26,3,BLTC Green,Mentone,No. 2,William Zichen Wang,Henri De Guzman,Henri De Guzman,3-6 1-6,4,12,0,2,Completed,true,false,false
+UA001033,02 Aug 26,3,Highmoor Uniting,BLTC White,No. 1,Erik Bucko,William Chu,Erik Bucko,3-6 7-5 7-6,17,17,2,1,Completed,true,false,false
+UA001033,02 Aug 26,3,Highmoor Uniting,BLTC White,No. 2,Lazar Suluburic,Lucas Zhou,Lucas Zhou,5-7 7-5 6-7,18,19,1,2,Completed,true,false,true
+UA001034,02 Aug 26,3,Caulfield Rec,Royal South Yarra,No. 1,Min Cheng (duncan) Hung,Thomas Chard,Min Cheng (duncan) Hung,6-4 6-2,12,6,2,0,Completed,true,false,false
+UA001034,02 Aug 26,3,Caulfield Rec,Royal South Yarra,No. 2,Egor Barabanov,Max Shepherd,Egor Barabanov,6-0 6-1,12,1,2,0,Completed,true,false,true
+UA001041,09 Aug 26,4,Royal South Yarra,BLTC Blue,No. 1,Connor Le Page,Adyaan Tata,Adyaan Tata,4-6 4-6,8,12,0,2,Completed,true,false,true
+UA001041,09 Aug 26,4,Royal South Yarra,BLTC Blue,No. 2,Sebastian Parmenov,Andrew Livermore,Andrew Livermore,2-6 0-6,2,12,0,2,Completed,true,true,true
 UA001051,16 Aug 26,5,Highmoor Uniting,Caulfield Rec,No. 1,Erik Bucko,Tomas Albani,Erik Bucko,6-4 6-4,12,8,2,0,Completed,true,false,true
 UA001051,16 Aug 26,5,Highmoor Uniting,Caulfield Rec,No. 2,Luka Suluburic,Egor Barabanov,Egor Barabanov,1-6 2-6,3,12,0,2,Completed,true,false,false
 UA001052,16 Aug 26,5,Mentone,Black Rock,No. 1,Xavier Ashlock,Jack James,Jack James,6-2 4-6 6-7,16,15,1,2,Completed,true,false,false
@@ -43,14 +43,14 @@ UA001072,30 Aug 26,7,BLTC Green,Caulfield Rec,No. 1,William Zichen Wang,Kevin Li
 UA001072,30 Aug 26,7,BLTC Green,Caulfield Rec,No. 2,Meredith George,Egor Barabanov,Egor Barabanov,3-6 0-6,3,12,0,2,Completed,true,false,false
 UA001074,30 Aug 26,7,Black Rock,BLTC White,No. 1,Joseph Desmond,Matthew Mizera,Matthew Mizera,2-6 0-6,2,12,0,2,Completed,true,false,true
 UA001074,30 Aug 26,7,Black Rock,BLTC White,No. 2,Luke Desmond,Charlie Pettifer,Charlie Pettifer,3-6 0-6,3,12,0,2,Completed,true,false,true
-UA001081,6 Sep 26,8,BLTC White,BLTC Blue,No. 1,William Chu,Andrew Livermore,William Chu,6-2 6-2,12,4,2,0,Completed,true,false,true
-UA001081,6 Sep 26,8,BLTC White,BLTC Blue,No. 2,Lucas Zhou,Lucas Hansen,Lucas Hansen,6-7 4-6,10,13,0,2,Completed,true,true,true
-UA001082,6 Sep 26,8,Royal South Yarra,BLTC Green,No. 1,Connor Le Page,Edward Ruckel,Edward Ruckel,1-6 0-6,1,12,0,2,Completed,true,false,false
-UA001082,6 Sep 26,8,Royal South Yarra,BLTC Green,No. 2,Sebastian Parmenov,Meredith George,Meredith George,6-4 1-6 6-7,13,17,1,2,Completed,true,true,false
-UA001083,6 Sep 26,8,Black Rock,Highmoor Uniting,No. 1,Jack James,Erik Bucko,Erik Bucko,3-6 1-6,4,12,0,2,Completed,true,false,false
-UA001083,6 Sep 26,8,Black Rock,Highmoor Uniting,No. 2,Luke Desmond,Lazar Suluburic,Lazar Suluburic,7-5 3-6 6-7,16,18,1,2,Completed,true,false,false
-UA001084,6 Sep 26,8,Mentone,Caulfield Rec,No. 1,Xavier Ashlock,Kevin Liang,Kevin Liang,2-6 2-6,4,12,0,2,Completed,true,false,false
-UA001084,6 Sep 26,8,Mentone,Caulfield Rec,No. 2,Joshua Tesler,Pranav Arora,Pranav Arora,5-7 7-5 6-7,18,19,1,2,Completed,true,false,false
+UA001081,06 Sep 26,8,BLTC White,BLTC Blue,No. 1,William Chu,Andrew Livermore,William Chu,6-2 6-2,12,4,2,0,Completed,true,false,true
+UA001081,06 Sep 26,8,BLTC White,BLTC Blue,No. 2,Lucas Zhou,Lucas Hansen,Lucas Hansen,6-7 4-6,10,13,0,2,Completed,true,true,true
+UA001082,06 Sep 26,8,Royal South Yarra,BLTC Green,No. 1,Connor Le Page,Edward Ruckel,Edward Ruckel,1-6 0-6,1,12,0,2,Completed,true,false,false
+UA001082,06 Sep 26,8,Royal South Yarra,BLTC Green,No. 2,Sebastian Parmenov,Meredith George,Meredith George,6-4 1-6 6-7,13,17,1,2,Completed,true,true,false
+UA001083,06 Sep 26,8,Black Rock,Highmoor Uniting,No. 1,Jack James,Erik Bucko,Erik Bucko,3-6 1-6,4,12,0,2,Completed,true,false,false
+UA001083,06 Sep 26,8,Black Rock,Highmoor Uniting,No. 2,Luke Desmond,Lazar Suluburic,Lazar Suluburic,7-5 3-6 6-7,16,18,1,2,Completed,true,false,false
+UA001084,06 Sep 26,8,Mentone,Caulfield Rec,No. 1,Xavier Ashlock,Kevin Liang,Kevin Liang,2-6 2-6,4,12,0,2,Completed,true,false,false
+UA001084,06 Sep 26,8,Mentone,Caulfield Rec,No. 2,Joshua Tesler,Pranav Arora,Pranav Arora,5-7 7-5 6-7,18,19,1,2,Completed,true,false,false
 UA001091,13 Sep 26,9,BLTC Blue,Mentone,No. 1,Adyaan Tata,Xavier Ashlock,Xavier Ashlock,6-2 6-7 6-7,18,16,1,2,Completed,true,true,false
 UA001091,13 Sep 26,9,BLTC Blue,Mentone,No. 2,Lucas Hansen,Joshua Tesler,Lucas Hansen,6-1 6-1,12,2,2,0,Completed,true,true,false
 UA001092,13 Sep 26,9,BLTC Green,BLTC White,No. 1,Edward Ruckel,William Chu,William Chu,1-6 0-6,1,12,0,2,Completed,true,false,false
