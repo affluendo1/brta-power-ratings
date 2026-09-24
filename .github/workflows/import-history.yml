@@ -54,11 +54,15 @@ jobs:
           git config user.name "brta-ratings-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           BRANCH="${GITHUB_REF_NAME:-main}"
-          git pull --rebase origin "$BRANCH"
           git add data/archive
           if [ -z "$(git status --porcelain -- data/archive)" ]; then
             echo "No historical archive changes to commit."
             exit 0
           fi
           git commit -m "Import TROLS Saturday and Sunday AM history"
+          # The generated archive is now safely committed before synchronising
+          # with commits pushed while this long-running import was underway.
+          # Other generated current-season files may still be modified locally.
+          git fetch origin "$BRANCH"
+          git -c rebase.autoStash=true rebase "origin/$BRANCH"
           git push origin "HEAD:$BRANCH"
