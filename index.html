@@ -29,6 +29,7 @@
   <div class="header-actions">
     <button id="installBtn" class="button secondary" type="button" aria-haspopup="dialog" aria-controls="installOverlay">Install app</button>
     <button id="roundBtn" class="button secondary">Latest round</button>
+    <button id="clubZoneBtn" class="button secondary" aria-haspopup="dialog" aria-controls="clubPickerOverlay">Club Zone</button>
     <button id="settingsBtn" class="button secondary">Settings</button>
     <button id="sidPortalEntry" class="sid-portal-entry hidden" type="button">Glorious Sid Basa Portal</button>
   </div>
@@ -101,6 +102,8 @@
 <main id="royalArchive" class="royal-archive hidden" aria-hidden="true"></main>
 <footer class="site-footer"><span><b>BRTA Power Ratings</b> · Unofficial competition analytics</span><span>Not affiliated with BRTA, Tennis Australia or UTR.</span></footer>
 
+<div id="clubPickerOverlay" class="overlay hidden"><div class="overlay-backdrop" data-club-picker-close="1"></div><section class="club-picker-sheet" role="dialog" aria-modal="true" aria-labelledby="clubPickerTitle"><button id="clubPickerClose" class="close-btn" type="button" aria-label="Close Club Zone">×</button><div class="overlay-title"><div class="kicker">CLUB ZONE</div><h2 id="clubPickerTitle">Open a club record</h2><p>Choose the competition first, then a club. Colour teams are combined into their parent club.</p></div><div class="club-picker-fields"><label>Competition<select id="clubPickerCompetition"><option value="">Choose Saturday or Sunday AM</option><option value="AA">Saturday AM</option><option value="UA">Sunday AM</option></select></label><label>Club<select id="clubPickerClub" disabled><option value="">Choose a competition first</option></select></label></div><p id="clubPickerStatus" class="club-picker-status"></p><button id="clubPickerOpen" class="button primary" type="button" disabled>Open Club Zone</button></section></div>
+<div id="clubZoneOverlay" class="overlay hidden"><div class="overlay-backdrop" data-club-zone-close="1"></div><aside class="club-zone-sheet"><button id="clubZoneClose" class="close-btn" aria-label="Close Club Zone">×</button><div id="clubZoneContent"></div></aside></div>
 <div id="profileOverlay" class="overlay hidden"><div class="overlay-backdrop" data-close="1"></div><aside class="profile-sheet"><button id="profileClose" class="close-btn" aria-label="Close">×</button><div id="profileContent"></div></aside></div>
 <div id="roundOverlay" class="overlay hidden"><div class="overlay-backdrop" data-round-close="1"></div><aside class="round-sheet"><button id="roundClose" class="close-btn" aria-label="Close">×</button><div id="roundContent"></div></aside></div>
 <div id="settingsOverlay" class="overlay hidden"><div class="overlay-backdrop" data-settings-close="1"></div><aside class="settings-sheet"><button id="settingsClose" class="close-btn" aria-label="Close">×</button><div id="settingsContent"></div></aside></div>
@@ -113,7 +116,7 @@
 <div id="syncToastHost" class="sync-toast-host" aria-live="polite" aria-atomic="true"></div>
 <script src="data.js?v=16"></script>
 <script src="prediction.js?v=2"></script>
-    <script src="app.js?v=28"></script>
+    <script src="app.js?v=29"></script>
 <script src="archive.js?v=7"></script>
 <script src="pwa.js?v=1"></script>
 </body>

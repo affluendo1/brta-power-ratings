@@ -16,6 +16,8 @@ SITE_SECTIONS = ARCHIVE / "site" / "sections"
 CURRENT_CATALOG = Path("data/current/catalog.json")
 CURRENT_SECTIONS = Path("data/site/sections")
 SITE_CATALOG = ARCHIVE / "catalog.json"
+CLUB_INDEX = ARCHIVE / "clubs.json"
+COLOUR_SUFFIX = re.compile(r"\s+(aqua|azure|beige|black|blue|brown|burgundy|charcoal|coral|cream|crimson|cyan|gold|golden|gray|grey|green|indigo|lime|magenta|maroon|navy|orange|pink|purple|red|scarlet|silver|tan|teal|turquoise|violet|white|yellow)\s*$", re.I)
 
 
 def _season_sort_key(season: dict) -> tuple[int, int, str]:
@@ -123,7 +125,73 @@ def write_catalog() -> dict | None:
     catalog = build_catalog()
     SITE_CATALOG.parent.mkdir(parents=True, exist_ok=True)
     SITE_CATALOG.write_text(json.dumps(catalog, separators=(",", ":"), ensure_ascii=False) + "\n", encoding="utf-8")
+    write_club_index(catalog)
     return catalog
+
+
+
+def _club_name(team: str) -> str:
+    return COLOUR_SUFFIX.sub("", str(team or "")).strip()
+
+
+def _season_order(label: str) -> int:
+    match = re.search(r"(Spring|Autumn|Winter)\s+(\d{4})", str(label), re.I)
+    if not match:
+        return 0
+    term = {"winter": 1, "autumn": 2, "spring": 3}[match.group(1).casefold()]
+    return int(match.group(2)) * 10 + term
+
+
+def write_club_index(catalog: dict) -> None:
+    competitions: dict[str, dict] = {}
+    for season in catalog["seasons"]:
+        code = season["competition_code"]
+        bucket = competitions.setdefault(code, {
+            "label": season["competition_label"], "sections": set(), "clubs": {},
+        })
+        for section in season["sections"]:
+            bucket["sections"].add(section["section_label"])
+            path = Path(section["data_path"])
+            if not path.exists():
+                continue
+            payload = json.loads(path.read_text(encoding="utf-8"))
+            standings = payload.get("standings") or []
+            knockout = payload.get("knockout") or {}
+            champion = _club_name(knockout.get("champion", ""))
+            final = knockout.get("grandFinal") or {}
+            finalists = {_club_name(final.get("home", "")), _club_name(final.get("away", ""))}
+            semifinalists = set()
+            for fixture in knockout.get("semifinalHistory") or knockout.get("semifinals") or []:
+                semifinalists.update({_club_name(fixture.get("home", "")), _club_name(fixture.get("away", ""))})
+            for index, row in enumerate(standings):
+                team = str(row.get("team", "")).strip()
+                club = _club_name(team)
+                if not club:
+                    continue
+                entry = {
+                    "season_id": season["season_id"], "season_label": season["season_label"],
+                    "season_order": _season_order(season["season_label"]),
+                    "section_code": section["section_code"], "section_label": section["section_label"],
+                    "team": team, "position": row.get("officialPosition") or index + 1,
+                    "played": row.get("played", 0), "wins": row.get("officialWins", row.get("wins", 0)),
+                    "draws": row.get("draws", 0), "losses": row.get("losses", 0),
+                    "rubbers_for": row.get("rubbersFor", 0), "rubbers_against": row.get("rubbersAgainst", 0),
+                    "games_for": row.get("gamesFor", 0), "games_against": row.get("gamesAgainst", 0),
+                    "points": row.get("points", 0), "percentage": row.get("officialPercentage"),
+                    "champion": club == champion and bool(champion),
+                    "finalist": club in finalists and bool(finalists - {""}),
+                    "semifinalist": club in semifinalists,
+                }
+                bucket["clubs"].setdefault(club, []).append(entry)
+    result = {"generated_at_utc": datetime.now(timezone.utc).isoformat(), "source": "Official-as-entered TROLS archive and current season data.", "competitions": {}}
+    for code, bucket in competitions.items():
+        clubs = [
+            {"name": name, "entries": sorted(entries, key=lambda entry: (-entry["season_order"], entry["section_label"], entry["team"]))}
+            for name, entries in sorted(bucket["clubs"].items())
+        ]
+        result["competitions"][code] = {"label": bucket["label"], "sections": sorted(bucket["sections"]), "clubs": clubs}
+    CLUB_INDEX.write_text(json.dumps(result, separators=(",", ":"), ensure_ascii=False) + "\n", encoding="utf-8")
+
 
 
 def write_archive_payloads(raw: dict, *, missing_only: bool = False) -> int:
