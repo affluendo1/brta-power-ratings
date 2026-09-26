@@ -18,8 +18,7 @@ The five main views are:
 
 Other views are opened from the header or player profiles:
 
-- **Player Lab** shows rating history, match performance and opponent ratings, strength of schedule, partners and other player-level summaries.
-- **Analytics** provides head-to-head projections and a comparison of results with estimates made before each round.
+- **Player Lab** includes the player's matchup outlook, actual-versus-expected results, schedule difficulty, form, rating history and doubles evidence. Historical Player Lab views use the selected round's ratings and results.
 - **Latest round** summarizes the latest round and links to its scorecards.
 - **Settings** contains display preferences, season History, methodology and BRTA rules, plus a JSON model-audit export. The section picker also links directly to past seasons. A separate control exports the selected section's match and fixture data as CSV.
 

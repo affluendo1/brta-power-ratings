@@ -15,7 +15,7 @@
   <title>BRTA Power Ratings</title>
   <style>#sidPortalHomeEntry.hidden,#sidPortalEntry.hidden,#royalArchive.hidden{display:none!important}</style>
   <script>
-    (function(){var m=localStorage.getItem('brta-interface')||'future',t=localStorage.getItem('brta-theme')||'auto',a=localStorage.getItem('brta-accent')||'yellow',d=t==='dark'||(t==='auto'&&matchMedia('(prefers-color-scheme: dark)').matches),future=m!=='classic',c=future?(d?'#101109':'#f3f2e9'):'#173f63',l=document.createElement('link');document.documentElement.dataset.interface=m;document.documentElement.dataset.accent=a;document.documentElement.style.backgroundColor=c;document.documentElement.style.colorScheme=d?'dark':'light';document.getElementById('themeColor').content=c;l.id='siteStyles';l.rel='stylesheet';l.href=future?'future.css?v=26':'style.css?v=33';document.head.appendChild(l)})()
+    (function(){var m=localStorage.getItem('brta-interface')||'future',t=localStorage.getItem('brta-theme')||'auto',a=localStorage.getItem('brta-accent')||'yellow',d=t==='dark'||(t==='auto'&&matchMedia('(prefers-color-scheme: dark)').matches),future=m!=='classic',c=future?(d?'#101109':'#f3f2e9'):'#173f63',l=document.createElement('link');document.documentElement.dataset.interface=m;document.documentElement.dataset.accent=a;document.documentElement.style.backgroundColor=c;document.documentElement.style.colorScheme=d?'dark':'light';document.getElementById('themeColor').content=c;l.id='siteStyles';l.rel='stylesheet';l.href=future?'future.css?v=27':'style.css?v=33';document.head.appendChild(l)})()
   </script>
   <link rel="stylesheet" href="archive.css?v=7">
 </head>
@@ -28,7 +28,6 @@
   </div>
   <div class="header-actions">
     <button id="installBtn" class="button secondary" type="button" aria-haspopup="dialog" aria-controls="installOverlay">Install app</button>
-    <button id="analyticsBtn" class="button secondary" aria-haspopup="dialog" aria-controls="analyticsOverlay">Analytics</button>
     <button id="roundBtn" class="button secondary">Latest round</button>
     <button id="settingsBtn" class="button secondary">Settings</button>
     <button id="sidPortalEntry" class="sid-portal-entry hidden" type="button">Glorious Sid Basa Portal</button>
@@ -102,27 +101,6 @@
 <main id="royalArchive" class="royal-archive hidden" aria-hidden="true"></main>
 <footer class="site-footer"><span><b>BRTA Power Ratings</b> · Unofficial competition analytics</span><span>Not affiliated with BRTA, Tennis Australia or UTR.</span></footer>
 
-<div id="analyticsOverlay" class="overlay hidden">
-  <div class="overlay-backdrop" data-analytics-close="1"></div>
-  <section class="analytics-sheet" role="dialog" aria-modal="true" aria-labelledby="analyticsTitle">
-    <button id="analyticsClose" class="close-btn" aria-label="Close analytics">×</button>
-    <div class="overlay-title"><div class="kicker">ANALYTICS</div><h2 id="analyticsTitle">Section analytics</h2><p>Matchup projections and results against prior expectations.</p></div>
-    <div class="analytics-grid">
-      <section class="analytics-card matchup-card">
-        <div class="analytics-card-head"><h2>Head to head</h2></div>
-        <div class="matchup-controls">
-          <label><span>Player A</span><select id="matchupPlayerA"></select></label>
-          <label><span>Player B</span><select id="matchupPlayerB"></select></label>
-        </div>
-        <div id="matchupResult" class="matchup-result"></div>
-      </section>
-      <section class="analytics-card analytics-wide">
-        <div class="analytics-card-head"><div><h2>Results versus expectation</h2><p>Prior-round estimates · ranked after four singles matches.</p></div></div>
-        <div class="table-wrap"><table><thead><tr><th>#</th><th>Player</th><th>Team</th><th>W</th><th>Expected W</th><th>W above exp.</th><th>Game share</th><th>Above exp.</th></tr></thead><tbody id="expectationBody"></tbody></table></div>
-      </section>
-    </div>
-  </section>
-</div>
 <div id="profileOverlay" class="overlay hidden"><div class="overlay-backdrop" data-close="1"></div><aside class="profile-sheet"><button id="profileClose" class="close-btn" aria-label="Close">×</button><div id="profileContent"></div></aside></div>
 <div id="roundOverlay" class="overlay hidden"><div class="overlay-backdrop" data-round-close="1"></div><aside class="round-sheet"><button id="roundClose" class="close-btn" aria-label="Close">×</button><div id="roundContent"></div></aside></div>
 <div id="settingsOverlay" class="overlay hidden"><div class="overlay-backdrop" data-settings-close="1"></div><aside class="settings-sheet"><button id="settingsClose" class="close-btn" aria-label="Close">×</button><div id="settingsContent"></div></aside></div>
@@ -135,7 +113,7 @@
 <div id="syncToastHost" class="sync-toast-host" aria-live="polite" aria-atomic="true"></div>
 <script src="data.js?v=16"></script>
 <script src="prediction.js?v=2"></script>
-    <script src="app.js?v=26"></script>
+    <script src="app.js?v=27"></script>
 <script src="archive.js?v=7"></script>
 <script src="pwa.js?v=1"></script>
 </body>
