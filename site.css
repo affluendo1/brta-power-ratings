@@ -324,11 +324,15 @@ html[data-theme="dark"] .team-colour{color:var(--team-colour-dark)}
 .lab-section{margin-top:18px;padding:0;border:0}.lab-section h3{border:0;margin:0;padding:0;font-size:16px}.lab-section-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:9px;padding-bottom:8px;border-bottom:1px solid var(--border-color)}
 .lab-section-head p{margin:2px 0 0;color:var(--muted-color);font-size:12px}.lab-section-head>span{padding:3px 6px;background:var(--surface-muted);color:var(--muted-color);font-size:10px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;white-space:nowrap}
 .lab-momentum-grid,.lab-insight-grid{margin-top:8px;grid-template-columns:repeat(3,minmax(0,1fr))}
+.lab-insight-grid .lab-schedule-card{min-width:0;padding:11px 12px;border-color:var(--border-color);background:var(--surface-raised)}
+.lab-insight-grid .lab-schedule-card:hover{border-color:var(--primary);background:var(--surface-muted)}
+.lab-insight-grid .lab-schedule-card b{font-size:18px}.lab-insight-grid .lab-schedule-card small{font-size:10px}
 .lab-highlights{display:grid;gap:7px}.lab-highlight{display:grid;gap:3px;width:100%;padding:11px;border:1px solid var(--border-color);background:var(--surface);color:var(--text-color);text-align:left}.lab-highlight:hover{border-color:var(--primary);background:var(--surface-muted)}
 .lab-highlight>span{color:var(--muted-color);font-size:10px;font-weight:800;letter-spacing:.06em;text-transform:uppercase}.lab-highlight b{font-size:13px}.lab-highlight small{color:var(--muted-color);font-size:11px}
 .lab-match-list{border:1px solid var(--border-color);border-bottom:0}.lab-match-list .match-row{grid-template-columns:34px minmax(72px,auto) minmax(0,1fr) minmax(95px,auto)}.lab-match-list .match-opponent{display:block}.lab-match-list .match-opponent small{display:block;margin-top:1px;color:var(--muted-color);font-size:10px}.lab-match-list .match-meta{text-align:right}
 .lab-doubles-summary{grid-template-columns:1fr 1fr;margin-bottom:8px}.lab-doubles-summary .lab-metric:last-child:nth-child(odd){grid-column:1/-1}
 .lab-doubles .partner-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}.lab-doubles .partner-list>div{display:grid;gap:2px;padding:9px;border:1px solid var(--border-color);background:var(--surface)}.lab-doubles .partner-list small{color:var(--muted-color);font-size:11px}
+.lab-context-actions{display:flex;flex-wrap:wrap;gap:7px}
 .schedule-card{width:100%;display:grid;grid-template-columns:1fr auto;gap:4px;padding:12px;border:1px solid var(--border-color);background:var(--surface);color:var(--text-color);text-align:left}
 .schedule-card span,.schedule-card small{color:var(--muted-color)}
 .schedule-card>b{font-size:23px}
