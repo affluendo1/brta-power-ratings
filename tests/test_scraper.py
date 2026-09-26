@@ -149,6 +149,7 @@ class DatasetValidationTests(unittest.TestCase):
         self.assertEqual(clean_team("Mentone (DTC) •"), "Mentone")
         self.assertEqual(clean_team("Mentone （DTC）"), "Mentone")
         self.assertEqual(clean_team("Mentone (DTC) (10:00) Playing @ Dingley"), "Mentone")
+        self.assertEqual(clean_team("Ormond White 8.00"), "Ormond White")
 
     def test_new_season_does_not_compare_its_opening_counts_to_last_season(self):
         current = {

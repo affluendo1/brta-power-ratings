@@ -66,6 +66,10 @@ def clean_team(value: str) -> str:
         if cleaned == value:
             break
         value = cleaned
+    # TROLS occasionally appends a percentage-like value to a team cell.
+    # It is not part of the published club/team name (for example,
+    # "Ormond White 8.00").
+    value = re.sub(r"\s+\d+\.\d{2}\s*$", "", value)
     return value.strip()
 
 
