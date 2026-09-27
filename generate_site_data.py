@@ -1097,11 +1097,11 @@ def team_lineup_insights(fixtures, singles, doubles, rules):
     for _, fixture in fixtures.iterrows():
         if str(fixture.get("status", "")) != "Completed":
             continue
-        fixture_id = str(fixture.fixture_id)
+        fixture_id = str(fixture["fixture_id"])
         winner = _fixture_winner(fixture, rules)
         for home_side, team, opponent in (
-            (True, str(fixture.home_team), str(fixture.away_team)),
-            (False, str(fixture.away_team), str(fixture.home_team)),
+            (True, str(fixture["home_team"]), str(fixture["away_team"])),
+            (False, str(fixture["away_team"]), str(fixture["home_team"])),
         ):
             if team == "Bye":
                 continue
@@ -1111,12 +1111,12 @@ def team_lineup_insights(fixtures, singles, doubles, rules):
             lineup = [str(row[player_column]) for row in lineup_rows]
             pairs = [display_pair(row[pair_column]) for row in doubles_by_fixture.get(fixture_id, [])]
             result = "D" if winner is None else ("W" if winner == team else "L")
-            games_for = int(fixture.home_games) if home_side else int(fixture.away_games)
-            games_against = int(fixture.away_games) if home_side else int(fixture.home_games)
+            games_for = int(fixture["home_games"]) if home_side else int(fixture["away_games"])
+            games_against = int(fixture["away_games"]) if home_side else int(fixture["home_games"])
             by_team[team].append({
-                "fixtureId": fixture_id, "round": int(fixture.round), "date": str(fixture.date),
+                "fixtureId": fixture_id, "round": int(fixture["round"]), "date": str(fixture["date"]),
                 "opponent": opponent, "result": result, "gamesFor": games_for, "gamesAgainst": games_against,
-                "score": f"{int(fixture.home_rubbers) if home_side else int(fixture.away_rubbers)}–{int(fixture.away_rubbers) if home_side else int(fixture.home_rubbers)}",
+                "score": f"{int(fixture['home_rubbers']) if home_side else int(fixture['away_rubbers'])}–{int(fixture['away_rubbers']) if home_side else int(fixture['home_rubbers'])}",
                 "lineup": lineup, "pairs": pairs,
             })
     output = {}
