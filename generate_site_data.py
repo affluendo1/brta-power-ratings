@@ -995,22 +995,22 @@ def player_insights(singles, fixtures, expectation, player_teams):
         "emergencyAppearances": 0, "performanceDeltas": [], "score": Counter(),
     })
     for _, row in singles.iterrows():
-        fixture_id = str(row.fixture_id)
-        home_player, away_player = str(row.home_player), str(row.away_player)
+        fixture_id = str(row["fixture_id"])
+        home_player, away_player = str(row["home_player"]), str(row["away_player"])
         for home_side, player, opponent, team, emergency in (
-            (True, home_player, away_player, str(row.home_team), row.get("home_emergency", "")),
-            (False, away_player, home_player, str(row.away_team), row.get("away_emergency", "")),
+            (True, home_player, away_player, str(row["home_team"]), row.get("home_emergency", "")),
+            (False, away_player, home_player, str(row["away_team"]), row.get("away_emergency", "")),
         ):
-            games_for = int(row.home_games) if home_side else int(row.away_games)
-            games_against = int(row.away_games) if home_side else int(row.home_games)
-            won = str(row.winning_player) == player
+            games_for = int(row["home_games"]) if home_side else int(row["away_games"])
+            games_against = int(row["away_games"]) if home_side else int(row["home_games"])
+            won = str(row["winning_player"]) == player
             prior = expected.get((fixture_id, player), {"rating": 1500, "opponentRating": 1500, "winProbability": 0.5})
             performance = round(prior["opponentRating"] + 450 * math.log((games_for + .5) / (games_against + .5)))
-            position = _position_number(row.position)
+            position = _position_number(row["position"])
             entry = {
-                "fixtureId": fixture_id, "round": int(row.round), "date": str(row.date),
+                "fixtureId": fixture_id, "round": int(row["round"]), "date": str(row["date"]),
                 "position": position, "opponent": opponent, "result": "W" if won else "L",
-                "score": _oriented_score(row.score, home_side), "gamesFor": games_for, "gamesAgainst": games_against,
+                "score": _oriented_score(row["score"], home_side), "gamesFor": games_for, "gamesAgainst": games_against,
                 "ratingAtTime": prior["rating"], "opponentRatingAtTime": prior["opponentRating"],
                 "expectedWinProbability": round(prior["winProbability"], 4), "performance": performance,
                 "performanceDelta": performance - prior["rating"],
@@ -1022,7 +1022,7 @@ def player_insights(singles, fixtures, expectation, player_teams):
             item["rivals"][opponent].append(entry)
             item["emergencyAppearances"] += int(str(emergency).casefold() in {"true", "1", "yes"})
             item["performanceDeltas"].append(entry["performanceDelta"])
-            shape = _score_profile(row.score, home_side)
+            shape = _score_profile(row["score"], home_side)
             for key, value in shape.items():
                 item["score"][key] += value
 
@@ -1090,9 +1090,9 @@ def team_lineup_insights(fixtures, singles, doubles, rules):
     singles_by_fixture = defaultdict(list)
     doubles_by_fixture = defaultdict(list)
     for _, row in singles.iterrows():
-        singles_by_fixture[str(row.fixture_id)].append(row)
+        singles_by_fixture[str(row["fixture_id"])].append(row)
     for _, row in doubles.iterrows():
-        doubles_by_fixture[str(row.fixture_id)].append(row)
+        doubles_by_fixture[str(row["fixture_id"])].append(row)
     by_team = defaultdict(list)
     for _, fixture in fixtures.iterrows():
         if str(fixture.get("status", "")) != "Completed":
@@ -1107,7 +1107,7 @@ def team_lineup_insights(fixtures, singles, doubles, rules):
                 continue
             player_column = "home_player" if home_side else "away_player"
             pair_column = "home_pair" if home_side else "away_pair"
-            lineup_rows = sorted(singles_by_fixture.get(fixture_id, []), key=lambda row: (_position_number(row.position) or 99, str(row[player_column]).casefold()))
+            lineup_rows = sorted(singles_by_fixture.get(fixture_id, []), key=lambda row: (_position_number(row["position"]) or 99, str(row[player_column]).casefold()))
             lineup = [str(row[player_column]) for row in lineup_rows]
             pairs = [display_pair(row[pair_column]) for row in doubles_by_fixture.get(fixture_id, [])]
             result = "D" if winner is None else ("W" if winner == team else "L")
