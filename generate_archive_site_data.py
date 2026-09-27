@@ -131,7 +131,22 @@ def write_catalog() -> dict | None:
 
 
 def _club_name(team: str) -> str:
-    return COLOUR_SUFFIX.sub("", str(team or "")).strip()
+    name = re.sub(r"\s+", " ", str(team or "")).strip()
+    colour = r"aqua|azure|beige|black|blue|brown|burgundy|charcoal|coral|cream|crimson|cyan|gold|golden|gray|grey|green|indigo|lime|magenta|maroon|navy|orange|pink|purple|red|scarlet|silver|tan|teal|turquoise|violet|white|yellow"
+    partner = r"ap|gp|gm|gphc|mlc|scot|scotch|xavier|bodley|beech|beec|st\s+kevin'?s?"
+    previous = None
+    while name and name != previous:
+        previous = name
+        name = re.sub(r"\s+(?:no\.?\s*)?#?\d+\s*$", "", name, flags=re.I)
+        name = re.sub(r"\s+(?:" + colour + r")(?:s\d+)?\s*$", "", name, flags=re.I)
+        name = re.sub(r"\s+(?:" + partner + r")#?\s*$", "", name, flags=re.I)
+        name = re.sub(r"\s+(?:" + partner + r")\s*#?\d+\s*$", "", name, flags=re.I)
+    aliases = {
+        "kptc": "Kings Park",
+        "kings park tc": "Kings Park",
+        "kings park tennis club": "Kings Park",
+    }
+    return aliases.get(name.casefold(), name).strip()
 
 
 def _season_order(label: str) -> int:
@@ -142,12 +157,46 @@ def _season_order(label: str) -> int:
     return int(match.group(2)) * 10 + term
 
 
+def _fixture_outcome(fixture: dict, side: str, home_club: str, away_club: str) -> str:
+    opponent = away_club if side == "home" else home_club
+    winner = _club_name(fixture.get("winner", ""))
+    if winner:
+        return "W" if winner == (home_club if side == "home" else away_club) else "L" if winner == opponent else "D"
+    mine = fixture.get(f"{side}Points")
+    theirs = fixture.get("awayPoints" if side == "home" else "homePoints")
+    if mine is None or theirs is None:
+        mine = fixture.get(f"{side}Rubbers")
+        theirs = fixture.get("awayRubbers" if side == "home" else "homeRubbers")
+    if mine is None or theirs is None:
+        return "D"
+    return "W" if mine > theirs else "L" if mine < theirs else "D"
+
+
+def _club_fixture(fixture: dict, section: dict, season: dict, side: str, home_club: str, away_club: str) -> dict:
+    other_side = "away" if side == "home" else "home"
+    return {
+        "fixture_id": fixture.get("fixtureId", ""),
+        "season_id": season["season_id"], "season_label": season["season_label"],
+        "season_order": _season_order(season["season_label"]),
+        "section_code": section["section_code"], "section_label": section["section_label"],
+        "team": fixture.get(side, ""), "opponent": fixture.get(other_side, ""),
+        "opponent_club": away_club if side == "home" else home_club,
+        "date": fixture.get("date", ""), "round": fixture.get("round"),
+        "label": fixture.get("label", ""), "stage": fixture.get("stage", "regular"),
+        "result": _fixture_outcome(fixture, side, home_club, away_club),
+        "points_for": fixture.get(f"{side}Points"), "points_against": fixture.get(f"{other_side}Points"),
+        "rubbers_for": fixture.get(f"{side}Rubbers"), "rubbers_against": fixture.get(f"{other_side}Rubbers"),
+        "games_for": fixture.get(f"{side}Games"), "games_against": fixture.get(f"{other_side}Games"),
+    }
+
+
 def write_club_index(catalog: dict) -> None:
     competitions: dict[str, dict] = {}
     for season in catalog["seasons"]:
         code = season["competition_code"]
         bucket = competitions.setdefault(code, {
             "label": season["competition_label"], "sections": set(), "clubs": {},
+            "fixtures": {}, "players": {},
         })
         for section in season["sections"]:
             bucket["sections"].add(section["section_label"])
@@ -183,14 +232,61 @@ def write_club_index(catalog: dict) -> None:
                     "semifinalist": club in semifinalists,
                 }
                 bucket["clubs"].setdefault(club, []).append(entry)
-    result = {"generated_at_utc": datetime.now(timezone.utc).isoformat(), "source": "Official-as-entered TROLS archive and current season data.", "competitions": {}}
+            seen_fixtures: set[str] = set()
+            for result_round in payload.get("results") or []:
+                for fixture in result_round.get("fixtures") or []:
+                    if fixture.get("status") != "Completed":
+                        continue
+                    fixture_id = str(fixture.get("fixtureId") or f"{section['section_code']}:{fixture.get('round')}:{fixture.get('home')}:{fixture.get('away')}")
+                    if fixture_id in seen_fixtures:
+                        continue
+                    seen_fixtures.add(fixture_id)
+                    home_club, away_club = _club_name(fixture.get("home", "")), _club_name(fixture.get("away", ""))
+                    for side, club in (("home", home_club), ("away", away_club)):
+                        if not club:
+                            continue
+                        bucket["fixtures"].setdefault(club, []).append(_club_fixture(fixture, section, season, side, home_club, away_club))
+                    for rubber in fixture.get("rubbers") or []:
+                        if str(rubber.get("type", "")).casefold() != "singles":
+                            continue
+                        for side, club in (("home", home_club), ("away", away_club)):
+                            player = str(rubber.get(side, "")).strip()
+                            if not club or not player:
+                                continue
+                            player_row = bucket["players"].setdefault(club, {}).setdefault(player, {
+                                "name": player, "appearances": 0, "wins": 0,
+                                "first_order": _season_order(season["season_label"]),
+                                "first_season": season["season_label"],
+                                "last_order": _season_order(season["season_label"]),
+                                "last_season": season["season_label"],
+                            })
+                            player_row["appearances"] += 1
+                            if rubber.get("winner") == player:
+                                player_row["wins"] += 1
+                            order = _season_order(season["season_label"])
+                            if order < player_row["first_order"]:
+                                player_row["first_order"], player_row["first_season"] = order, season["season_label"]
+                            if order > player_row["last_order"]:
+                                player_row["last_order"], player_row["last_season"] = order, season["season_label"]
+    manifest = {"generated_at_utc": datetime.now(timezone.utc).isoformat(), "source": "Official-as-entered TROLS archive and current season data.", "competitions": {}}
     for code, bucket in competitions.items():
-        clubs = [
-            {"name": name, "entries": sorted(entries, key=lambda entry: (-entry["season_order"], entry["section_label"], entry["team"]))}
-            for name, entries in sorted(bucket["clubs"].items())
-        ]
-        result["competitions"][code] = {"label": bucket["label"], "sections": sorted(bucket["sections"]), "clubs": clubs}
-    CLUB_INDEX.write_text(json.dumps(result, separators=(",", ":"), ensure_ascii=False) + "\n", encoding="utf-8")
+        clubs = []
+        for name, entries in sorted(bucket["clubs"].items()):
+            entries = sorted(entries, key=lambda entry: (-entry["season_order"], entry["section_label"], entry["team"]))
+            details = {
+                "name": name, "entries": entries,
+                "fixtures": sorted(bucket["fixtures"].get(name, []), key=lambda item: (-item["season_order"], str(item["date"]), str(item["fixture_id"]))),
+                "players": sorted(bucket["players"].get(name, {}).values(), key=lambda item: (-item["appearances"], -item["wins"], item["name"])),
+            }
+            clubs.append(details)
+        detail_path = ARCHIVE / f"clubs-{code}.json"
+        detail_path.write_text(json.dumps({"code": code, "label": bucket["label"], "sections": sorted(bucket["sections"]), "clubs": clubs}, separators=(",", ":"), ensure_ascii=False) + "\n", encoding="utf-8")
+        manifest["competitions"][code] = {
+            "label": bucket["label"], "sections": sorted(bucket["sections"]),
+            "path": f"data/archive/clubs-{code}.json",
+            "clubs": [{"name": club["name"], "entries": len(club["entries"])} for club in clubs],
+        }
+    CLUB_INDEX.write_text(json.dumps(manifest, separators=(",", ":"), ensure_ascii=False) + "\n", encoding="utf-8")
 
 
 

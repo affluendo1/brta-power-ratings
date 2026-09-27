@@ -60,9 +60,21 @@ jobs:
             exit 0
           fi
           git commit -m "Import TROLS Saturday and Sunday AM history"
-          # The generated archive is now safely committed before synchronising
-          # with commits pushed while this long-running import was underway.
-          # Other generated current-season files may still be modified locally.
+          # The archive build can run for hours. If the site changed in that
+          # time, replay this data-only commit on top of the latest branch.
+          # This job produces the complete archive, so its generated archive
+          # files are the authoritative side of an archive-only conflict.
           git fetch origin "$BRANCH"
-          git -c rebase.autoStash=true rebase "origin/$BRANCH"
+          if ! git -c rebase.autoStash=true rebase "origin/$BRANCH"; then
+            CONFLICTS="$(git diff --name-only --diff-filter=U)"
+            if [ -z "$CONFLICTS" ] || printf '%s\n' "$CONFLICTS" | grep -qv '^data/archive/'; then
+              echo "Unexpected rebase conflict:"
+              printf '%s\n' "$CONFLICTS"
+              git rebase --abort
+              exit 1
+            fi
+            git checkout --theirs -- data/archive
+            git add data/archive
+            GIT_EDITOR=true git rebase --continue
+          fi
           git push origin "HEAD:$BRANCH"

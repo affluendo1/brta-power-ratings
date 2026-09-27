@@ -554,3 +554,79 @@ body.is-offline .site-header::after{position:absolute;right:16px;bottom:-22px;pa
 .club-picker-sheet,.club-zone-sheet{position:absolute;left:50%;top:calc(50% + (env(safe-area-inset-top) - env(safe-area-inset-bottom))/2);transform:translate(-50%,-50%);max-height:calc(100dvh - max(28px,env(safe-area-inset-top)) - max(28px,env(safe-area-inset-bottom)));overflow:auto;background:var(--surface-raised);box-shadow:0 18px 55px rgba(0,0,0,.28)}
 .club-picker-sheet{width:min(560px,calc(100vw - 32px));padding:24px}.club-zone-sheet{width:min(1220px,calc(100vw - 32px));padding:26px}.club-picker-fields{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:18px 0}.club-picker-fields label,.club-zone-filter label{display:grid;gap:6px;color:var(--muted-color);font-size:11px;font-weight:800;letter-spacing:.06em;text-transform:uppercase}.club-picker-fields select,.club-zone-filter select{min-height:40px;padding:8px 10px;border:1px solid var(--border-color);border-radius:var(--control-radius,4px);background:var(--surface);color:var(--text-color);font:inherit;letter-spacing:normal;text-transform:none}.club-picker-status{min-height:22px;margin:0 0 14px;color:var(--muted-color)}.club-zone-filter{display:flex;align-items:end;justify-content:space-between;gap:14px;margin:18px 0;padding:12px;border:1px solid var(--border-color);background:var(--surface)}.club-zone-filter label{width:min(330px,100%)}.club-zone-filter p{margin:0;color:var(--muted-color);font-size:12px}.club-champion{color:var(--primary)}
 @media(max-width:760px){.club-picker-sheet,.club-zone-sheet{width:calc(100vw - 20px);padding:18px}.club-picker-fields{grid-template-columns:1fr}.club-zone-filter{display:grid;align-items:start}.club-zone-filter label{width:100%}}
+
+/* Club Zone: readable archive profile */
+.club-zone-sheet{width:min(1280px,calc(100vw - 32px));padding:28px}
+.club-link{display:inline-flex;align-items:center;gap:5px;max-width:100%;padding:0;border:0;background:none;color:inherit;font:inherit;font-weight:inherit;text-align:inherit;cursor:pointer}
+.club-link::after{content:"↗";flex:0 0 auto;color:var(--primary);font-size:.78em;opacity:.8}
+.club-link:hover,.club-link:focus-visible{color:var(--primary);text-decoration:underline;text-underline-offset:3px}
+.club-zone-head{margin-bottom:10px}
+.club-zone-head h2{margin:3px 0 4px;font-size:clamp(25px,3vw,36px)}
+.club-zone-head p{margin:0;color:var(--muted-color)}
+.club-recap{max-width:880px;margin:0 0 18px;padding:14px 16px;border-left:3px solid var(--primary);background:var(--surface);color:var(--text-color);line-height:1.55}
+.club-zone-controls{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin:18px 0;padding:14px;border:1px solid var(--border-color);border-radius:var(--panel-radius,7px);background:var(--surface)}
+.club-zone-controls label{display:grid;gap:6px;min-width:0;color:var(--muted-color);font-size:10px;font-weight:800;letter-spacing:.07em;text-transform:uppercase}
+.club-zone-controls select{width:100%;min-width:0;min-height:39px;padding:7px 9px;border:1px solid var(--border-color);border-radius:var(--control-radius,4px);background:var(--surface-raised);color:var(--text-color);font:inherit;font-size:13px;letter-spacing:normal;text-transform:none}
+.club-hero-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:0 0 16px}
+.club-metric{min-height:105px;padding:15px;border:1px solid var(--border-color);border-radius:var(--panel-radius,7px);background:linear-gradient(135deg,var(--surface-raised),var(--surface))}
+.club-metric span{display:block;margin-bottom:8px;color:var(--muted-color);font-size:10px;font-weight:800;letter-spacing:.07em;text-transform:uppercase}
+.club-metric b{display:block;font-size:21px;line-height:1.1}
+.club-metric small{display:block;margin-top:7px;color:var(--muted-color);line-height:1.35}
+.club-zone-layout{display:grid;grid-template-columns:minmax(0,1.65fr) minmax(270px,.75fr);gap:16px;align-items:start}
+.club-zone-main,.club-zone-side{display:grid;gap:16px}
+.club-panel{padding:17px;border:1px solid var(--border-color);border-radius:var(--panel-radius,7px);background:var(--surface-raised)}
+.club-panel-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:13px}
+.club-panel-head h3{margin:0;font-size:16px}
+.club-panel-head p{margin:4px 0 0;color:var(--muted-color);font-size:12px;line-height:1.4}
+.club-panel-head>span{flex:0 0 auto;padding:4px 7px;border:1px solid var(--border-color);border-radius:99px;color:var(--muted-color);font-size:11px;font-weight:700}
+.club-season-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.club-season-card{min-width:0;padding:12px;border:1px solid var(--border-color);border-radius:var(--control-radius,4px);background:var(--surface)}
+.club-season-card>div{display:flex;align-items:flex-start;justify-content:space-between;gap:8px}
+.club-season-card span{display:block;color:var(--muted-color);font-size:11px;font-weight:700}
+.club-season-card b{color:var(--primary);font-size:12px;text-align:right}
+.club-season-card>strong{display:block;margin:8px 0 3px;font-size:16px}
+.club-season-card p{margin:0;color:var(--muted-color);font-size:12px;line-height:1.4}
+.club-results-list{display:grid;gap:7px}
+.club-result-row{display:grid;grid-template-columns:30px minmax(0,1fr) auto;gap:5px 11px;align-items:center;padding:9px 10px;border:1px solid var(--border-color);border-radius:var(--control-radius,4px);background:var(--surface)}
+.club-result-badge{display:grid;place-items:center;width:26px;height:26px;border-radius:50%;background:var(--surface-raised);color:var(--muted-color);font-size:11px;font-weight:900}
+.club-result-badge.win{background:color-mix(in srgb,var(--good-color) 18%,var(--surface));color:var(--good-color)}
+.club-result-badge.loss{background:color-mix(in srgb,var(--danger-color) 14%,var(--surface));color:var(--danger-color)}
+.club-result-row b{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:13px}
+.club-result-row b em{color:var(--muted-color);font-style:normal;font-weight:500}
+.club-result-row strong{font-size:14px}
+.club-result-row small{grid-column:2/-1;color:var(--muted-color);font-size:11px}
+.club-results-more{justify-self:start;margin-top:4px;padding:8px 10px;border:1px solid var(--border-color);border-radius:var(--control-radius,4px);background:var(--surface);color:var(--primary);font:inherit;font-size:12px;font-weight:800;cursor:pointer}
+.club-results-more:hover{border-color:var(--primary);background:var(--surface-raised)}
+.club-section-table{width:100%;border-collapse:collapse;font-size:13px}
+.club-section-table th,.club-section-table td{padding:8px 7px;border-bottom:1px solid var(--border-color);text-align:left}
+.club-section-table th{color:var(--muted-color);font-size:10px;letter-spacing:.06em;text-transform:uppercase}
+.club-section-table tbody tr:last-child td{border-bottom:0}
+.club-trend{width:100%;height:auto;overflow:visible}
+.club-trend-grid{stroke:var(--border-color);stroke-width:1}
+.club-trend-line{fill:none;stroke:var(--primary);stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+.club-trend-point{fill:var(--surface-raised);stroke:var(--primary);stroke-width:2}
+.club-trend-label{fill:var(--muted-color);font-size:10px}
+.club-rivals{display:grid;gap:6px}
+.club-rival{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 8px;width:100%;padding:9px;border:1px solid var(--border-color);border-radius:var(--control-radius,4px);background:var(--surface);color:var(--text-color);text-align:left;cursor:pointer}
+.club-rival:hover,.club-rival:focus-visible{border-color:var(--primary)}
+.club-rival span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:13px;font-weight:700}
+.club-rival b{color:var(--primary);font-size:12px}
+.club-rival small{grid-column:1/-1;color:var(--muted-color);font-size:10px}
+.club-players{display:grid;gap:7px}
+.club-players>div{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 8px;padding:8px 0;border-bottom:1px solid var(--border-color)}
+.club-players>div:last-child{border-bottom:0;padding-bottom:0}
+.club-players b{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:13px}
+.club-players span,.club-players small{color:var(--muted-color);font-size:11px}
+.club-players small{text-align:right}
+.club-history-details{padding:0;border:1px solid var(--border-color);border-radius:var(--panel-radius,7px);background:var(--surface)}
+.club-history-details summary{padding:14px 16px;color:var(--primary);font-size:13px;font-weight:800;cursor:pointer}
+.club-history-details[open] summary{border-bottom:1px solid var(--border-color)}
+.club-history-details .table-wrap{max-height:420px;overflow:auto}
+.club-history-table{width:100%;border-collapse:collapse;font-size:12px}
+.club-history-table th,.club-history-table td{padding:9px 10px;border-bottom:1px solid var(--border-color);text-align:left;white-space:nowrap}
+.club-history-table th{position:sticky;top:0;background:var(--surface-raised);color:var(--muted-color);font-size:10px;letter-spacing:.06em;text-transform:uppercase}
+.club-history-table tbody tr:last-child td{border-bottom:0}
+.club-empty{padding:36px 18px;border:1px dashed var(--border-color);border-radius:var(--panel-radius,7px);background:var(--surface);text-align:center}
+.club-empty h3{margin:0 0 5px}.club-empty p{margin:0;color:var(--muted-color)}
+@media(max-width:980px){.club-zone-controls{grid-template-columns:repeat(3,minmax(0,1fr))}.club-zone-layout{grid-template-columns:1fr}.club-zone-side{grid-template-columns:repeat(3,minmax(0,1fr));align-items:start}.club-zone-side .club-panel{height:100%}}
+@media(max-width:760px){.club-zone-sheet{position:absolute;inset:0;transform:none;width:100%;height:100dvh;max-height:none;padding:calc(16px + env(safe-area-inset-top)) 13px calc(18px + env(safe-area-inset-bottom));border:0;border-radius:0}.club-zone-controls{grid-template-columns:repeat(2,minmax(0,1fr));padding:10px}.club-zone-controls label:first-child{grid-column:1/-1}.club-hero-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.club-metric{min-height:92px;padding:12px}.club-metric b{font-size:18px}.club-season-grid{grid-template-columns:1fr}.club-zone-side{display:grid;grid-template-columns:1fr}.club-panel{padding:14px}.club-result-row{grid-template-columns:27px minmax(0,1fr) auto;gap:4px 8px}.club-result-row b{font-size:12px}.club-history-table th,.club-history-table td{padding:8px}.club-picker-sheet{inset:0;transform:none;width:100%;height:100dvh;max-height:none;padding:calc(18px + env(safe-area-inset-top)) 16px calc(18px + env(safe-area-inset-bottom));border:0;border-radius:0}}
