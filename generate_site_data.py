@@ -1,5 +1,5 @@
 from __future__ import annotations
-import json, math
+import json, math, re
 from collections import Counter, defaultdict
 from pathlib import Path
 from datetime import datetime
@@ -918,6 +918,235 @@ def results_expectation(singles, rating_history, player_teams, rules):
     }
 
 
+def _position_number(value):
+    match = re.search(r"\d+", str(value or ""))
+    return int(match.group()) if match else None
+
+
+def _oriented_score(score, home_side):
+    text = str(score or "")
+    if home_side:
+        return text
+    return re.sub(r"(\d+)(\s*[-–]\s*)(\d+)", lambda match: match.group(3) + match.group(2) + match.group(1), text)
+
+
+def _score_profile(score, home_side):
+    """Extract safe set/tiebreak signals from an official score string.
+
+    TROLS score formats vary, so malformed or unrecognised strings simply
+    contribute no set-level statistic rather than inventing an outcome.
+    """
+    text = str(score or "")
+    plain = re.sub(r"[\(\[].*?[\)\]]", "", text)
+    pairs = [(int(a), int(b)) for a, b in re.findall(r"(\d+)\s*[-–]\s*(\d+)", plain)]
+    own_pairs = [(a, b) if home_side else (b, a) for a, b in pairs]
+    match_tiebreak = bool(own_pairs and len(own_pairs) >= 3 and max(own_pairs[-1]) >= 10)
+    normal = own_pairs[:-1] if match_tiebreak else own_pairs
+    won_sets = sum(1 for mine, theirs in normal if mine > theirs)
+    lost_sets = sum(1 for mine, theirs in normal if mine < theirs)
+    tiebreaks = [(mine, theirs) for mine, theirs in normal if max(mine, theirs) == 7 and min(mine, theirs) == 6]
+    straight = int(len(normal) == 2 and ((won_sets == 2 and lost_sets == 0) or (lost_sets == 2 and won_sets == 0)))
+    deciding = int(match_tiebreak or len(normal) >= 3)
+    return {
+        "setsWon": won_sets, "setsLost": lost_sets,
+        "tiebreaksWon": sum(1 for mine, theirs in tiebreaks if mine > theirs),
+        "tiebreaksLost": sum(1 for mine, theirs in tiebreaks if mine < theirs),
+        "decidingMatch": deciding, "straightSets": straight,
+    }
+
+
+def _record_summary(rows):
+    wins = sum(1 for row in rows if row["result"] == "W")
+    losses = sum(1 for row in rows if row["result"] == "L")
+    draws = len(rows) - wins - losses
+    games_for = sum(int(row.get("gamesFor", 0) or 0) for row in rows)
+    games_against = sum(int(row.get("gamesAgainst", 0) or 0) for row in rows)
+    return {
+        "matches": len(rows), "wins": wins, "losses": losses, "draws": draws,
+        "record": f"{wins}–{draws}–{losses}",
+        "gamesFor": games_for, "gamesAgainst": games_against,
+        "gameShare": round(100 * games_for / (games_for + games_against), 1) if games_for + games_against else None,
+    }
+
+
+def player_insights(singles, fixtures, expectation, player_teams):
+    """Build readable player-role, volatility, score and rivalry evidence."""
+    expected = {}
+    for match in expectation.get("matches", []):
+        expected[(str(match["fixtureId"]), str(match["home"]))] = {
+            "rating": int(match["homeRatingBefore"]), "opponentRating": int(match["awayRatingBefore"]),
+            "winProbability": float(match["homeWinProbability"]),
+        }
+        expected[(str(match["fixtureId"]), str(match["away"]))] = {
+            "rating": int(match["awayRatingBefore"]), "opponentRating": int(match["homeRatingBefore"]),
+            "winProbability": 1 - float(match["homeWinProbability"]),
+        }
+
+    completed_ties = Counter()
+    for _, fixture in fixtures.iterrows():
+        if str(fixture.get("status", "")) != "Completed":
+            continue
+        for team in (str(fixture.get("home_team", "")), str(fixture.get("away_team", ""))):
+            if team and team != "Bye":
+                completed_ties[team] += 1
+
+    by_player = defaultdict(lambda: {
+        "matches": [], "positions": defaultdict(list), "rivals": defaultdict(list),
+        "emergencyAppearances": 0, "performanceDeltas": [], "score": Counter(),
+    })
+    for _, row in singles.iterrows():
+        fixture_id = str(row.fixture_id)
+        home_player, away_player = str(row.home_player), str(row.away_player)
+        for home_side, player, opponent, team, emergency in (
+            (True, home_player, away_player, str(row.home_team), row.get("home_emergency", "")),
+            (False, away_player, home_player, str(row.away_team), row.get("away_emergency", "")),
+        ):
+            games_for = int(row.home_games) if home_side else int(row.away_games)
+            games_against = int(row.away_games) if home_side else int(row.home_games)
+            won = str(row.winning_player) == player
+            prior = expected.get((fixture_id, player), {"rating": 1500, "opponentRating": 1500, "winProbability": 0.5})
+            performance = round(prior["opponentRating"] + 450 * math.log((games_for + .5) / (games_against + .5)))
+            position = _position_number(row.position)
+            entry = {
+                "fixtureId": fixture_id, "round": int(row.round), "date": str(row.date),
+                "position": position, "opponent": opponent, "result": "W" if won else "L",
+                "score": _oriented_score(row.score, home_side), "gamesFor": games_for, "gamesAgainst": games_against,
+                "ratingAtTime": prior["rating"], "opponentRatingAtTime": prior["opponentRating"],
+                "expectedWinProbability": round(prior["winProbability"], 4), "performance": performance,
+                "performanceDelta": performance - prior["rating"],
+            }
+            item = by_player[player]
+            item["matches"].append(entry)
+            if position is not None:
+                item["positions"][position].append(entry)
+            item["rivals"][opponent].append(entry)
+            item["emergencyAppearances"] += int(str(emergency).casefold() in {"true", "1", "yes"})
+            item["performanceDeltas"].append(entry["performanceDelta"])
+            shape = _score_profile(row.score, home_side)
+            for key, value in shape.items():
+                item["score"][key] += value
+
+    output = {}
+    for player, item in by_player.items():
+        matches = sorted(item["matches"], key=lambda row: (row["round"], row["fixtureId"], row["position"] or 99))
+        deltas = item["performanceDeltas"]
+        volatility = round(float(np.std(deltas)), 1) if len(deltas) >= 2 else None
+        mean_delta = round(float(np.mean(deltas)), 1) if deltas else None
+        positions = []
+        for position, rows in sorted(item["positions"].items()):
+            wins = sum(row["result"] == "W" for row in rows)
+            games_for = sum(row["gamesFor"] for row in rows)
+            games_against = sum(row["gamesAgainst"] for row in rows)
+            positions.append({
+                "position": position, "matches": len(rows), "wins": int(wins), "losses": len(rows) - int(wins),
+                "record": f"{wins}–{len(rows) - int(wins)}", "gamesFor": games_for, "gamesAgainst": games_against,
+                "gameShare": round(100 * games_for / (games_for + games_against), 1) if games_for + games_against else None,
+                "expectedWins": round(sum(row["expectedWinProbability"] for row in rows), 2),
+            })
+        rivalries = []
+        for opponent, rows in item["rivals"].items():
+            rows = sorted(rows, key=lambda row: (row["round"], row["fixtureId"], row["position"] or 99))
+            wins = sum(row["result"] == "W" for row in rows)
+            games_for = sum(row["gamesFor"] for row in rows)
+            games_against = sum(row["gamesAgainst"] for row in rows)
+            rivalries.append({
+                "opponent": opponent, "matches": len(rows), "wins": int(wins), "losses": len(rows) - int(wins),
+                "record": f"{wins}–{len(rows) - int(wins)}", "gamesFor": games_for, "gamesAgainst": games_against,
+                "expectedWins": round(sum(row["expectedWinProbability"] for row in rows), 2),
+                "winsAboveExpected": round(wins - sum(row["expectedWinProbability"] for row in rows), 2),
+                "rows": rows,
+            })
+        rivalries.sort(key=lambda row: (-row["matches"], row["opponent"].casefold()))
+        score = item["score"]
+        total_sets = score["setsWon"] + score["setsLost"]
+        total_tb = score["tiebreaksWon"] + score["tiebreaksLost"]
+        deciding_wins = sum(row["result"] == "W" for row in matches if _score_profile(row["score"], True)["decidingMatch"])
+        deciding_losses = sum(row["result"] == "L" for row in matches if _score_profile(row["score"], True)["decidingMatch"])
+        team = player_teams.get(player, "")
+        average_position = round(float(np.mean([row["position"] for row in matches if row["position"] is not None])), 2) if any(row["position"] is not None for row in matches) else None
+        output[player] = {
+            "team": team, "roundsPlayed": len({row["fixtureId"] for row in matches}),
+            "teamCompletedTies": int(completed_ties.get(team, 0)),
+            "availabilityPercent": round(100 * len({row["fixtureId"] for row in matches}) / completed_ties[team], 1) if completed_ties.get(team) else None,
+            "averageListedPosition": average_position, "emergencyAppearances": item["emergencyAppearances"],
+            "positions": positions, "rivalries": rivalries,
+            "consistency": {
+                "matches": len(matches), "averagePerformanceDelta": mean_delta, "volatility": volatility,
+                "score": round(100 / (1 + (volatility or 999) / 220)) if volatility is not None else None,
+            },
+            "scoreProfile": {
+                "setsWon": score["setsWon"], "setsLost": score["setsLost"],
+                "tiebreaksWon": score["tiebreaksWon"], "tiebreaksLost": score["tiebreaksLost"],
+                "decidingWins": deciding_wins, "decidingLosses": deciding_losses,
+                "straightSetMatches": score["straightSets"],
+                "scoredMatches": len(matches),
+            },
+        }
+    return output
+
+
+def team_lineup_insights(fixtures, singles, doubles, rules):
+    """Summarise real four-player lineups and doubles pairs from scored ties."""
+    singles_by_fixture = defaultdict(list)
+    doubles_by_fixture = defaultdict(list)
+    for _, row in singles.iterrows():
+        singles_by_fixture[str(row.fixture_id)].append(row)
+    for _, row in doubles.iterrows():
+        doubles_by_fixture[str(row.fixture_id)].append(row)
+    by_team = defaultdict(list)
+    for _, fixture in fixtures.iterrows():
+        if str(fixture.get("status", "")) != "Completed":
+            continue
+        fixture_id = str(fixture.fixture_id)
+        winner = _fixture_winner(fixture, rules)
+        for home_side, team, opponent in (
+            (True, str(fixture.home_team), str(fixture.away_team)),
+            (False, str(fixture.away_team), str(fixture.home_team)),
+        ):
+            if team == "Bye":
+                continue
+            player_column = "home_player" if home_side else "away_player"
+            pair_column = "home_pair" if home_side else "away_pair"
+            lineup_rows = sorted(singles_by_fixture.get(fixture_id, []), key=lambda row: (_position_number(row.position) or 99, str(row[player_column]).casefold()))
+            lineup = [str(row[player_column]) for row in lineup_rows]
+            pairs = [display_pair(row[pair_column]) for row in doubles_by_fixture.get(fixture_id, [])]
+            result = "D" if winner is None else ("W" if winner == team else "L")
+            games_for = int(fixture.home_games) if home_side else int(fixture.away_games)
+            games_against = int(fixture.away_games) if home_side else int(fixture.home_games)
+            by_team[team].append({
+                "fixtureId": fixture_id, "round": int(fixture.round), "date": str(fixture.date),
+                "opponent": opponent, "result": result, "gamesFor": games_for, "gamesAgainst": games_against,
+                "score": f"{int(fixture.home_rubbers) if home_side else int(fixture.away_rubbers)}–{int(fixture.away_rubbers) if home_side else int(fixture.home_rubbers)}",
+                "lineup": lineup, "pairs": pairs,
+            })
+    output = {}
+    for team, rows in by_team.items():
+        lineup_groups = defaultdict(list)
+        pair_groups = defaultdict(list)
+        for row in rows:
+            if row["lineup"]:
+                lineup_groups[" | ".join(row["lineup"])].append(row)
+            for pair in row["pairs"]:
+                if pair != "Not recorded":
+                    pair_groups[canonical_pair(pair)].append(row)
+        lineups = []
+        for key, group in lineup_groups.items():
+            summary = _record_summary(group)
+            lineups.append({"players": key.split(" | "), **summary, "rows": sorted(group, key=lambda row: (row["round"], row["fixtureId"]))})
+        pairs = []
+        for key, group in pair_groups.items():
+            summary = _record_summary(group)
+            pairs.append({"pair": key, **summary, "rows": sorted(group, key=lambda row: (row["round"], row["fixtureId"]))})
+        lineups.sort(key=lambda row: (-row["matches"], -row["wins"], row["players"]))
+        pairs.sort(key=lambda row: (-row["matches"], -row["wins"], row["pair"]))
+        output[team] = {
+            "completedTies": len(rows), "lineupCount": len(lineups),
+            "lineupStability": round(100 * lineups[0]["matches"] / len(rows), 1) if lineups and rows else None,
+            "lineups": lineups, "pairs": pairs,
+        }
+    return output
+
+
 def strength_of_schedule(singles, rating_map, player_teams):
     """Current-model average opponent rating, ranked across every participant."""
     opponents = defaultdict(list)
@@ -1207,6 +1436,8 @@ def build_section(meta, *, sections_dir=None):
     matchup=matchup_matrix(srows,rules)
     expectation=results_expectation(singles,history,player_teams,rules) if len(singles) else {"players":[],"matches":[]}
     schedule=strength_of_schedule(singles,rmap,player_teams)
+    insights=player_insights(singles,fixtures,expectation,player_teams)
+    team_insights=team_lineup_insights(fixtures,singles,doubles,rules)
     schedule_by_player={row["player"]:row for row in schedule}
     for row in srows:
         row.update({"averageOpponent":schedule_by_player.get(row["player"],{}).get("averageOpponent"),
@@ -1233,6 +1464,8 @@ def build_section(meta, *, sections_dir=None):
         "matchupMatrix":matchup,
         "resultsExpectation":expectation,
         "strengthOfSchedule":schedule,
+        "playerInsights":insights,
+        "teamInsights":team_insights,
         "teamOrderEvidence":team_order_evidence(singles,rmap,player_teams),
         "format":rules["format"],
         "greenBall":bool(rules.get("green_ball",False)),

@@ -15,7 +15,7 @@
   <title>BRTA Power Ratings</title>
   <style>#sidPortalHomeEntry.hidden,#sidPortalEntry.hidden,#royalArchive.hidden{display:none!important}</style>
   <script>
-    (function(){var m=localStorage.getItem('brta-interface')||'future',t=localStorage.getItem('brta-theme')||'auto',a=localStorage.getItem('brta-accent')||'yellow',d=t==='dark'||(t==='auto'&&matchMedia('(prefers-color-scheme: dark)').matches),future=m!=='classic',c=future?(d?'#101109':'#f3f2e9'):'#173f63',l=document.createElement('link');document.documentElement.dataset.interface=m;document.documentElement.dataset.accent=a;document.documentElement.style.backgroundColor=c;document.documentElement.style.colorScheme=d?'dark':'light';document.getElementById('themeColor').content=c;l.id='siteStyles';l.rel='stylesheet';l.href=future?'future.css?v=28':'style.css?v=34';document.head.appendChild(l)})()
+    (function(){var m=localStorage.getItem('brta-interface')||'future',t=localStorage.getItem('brta-theme')||'auto',a=localStorage.getItem('brta-accent')||'yellow',d=t==='dark'||(t==='auto'&&matchMedia('(prefers-color-scheme: dark)').matches),future=m!=='classic',c=future?(d?'#101109':'#f3f2e9'):'#173f63',l=document.createElement('link');document.documentElement.dataset.interface=m;document.documentElement.dataset.accent=a;document.documentElement.style.backgroundColor=c;document.documentElement.style.colorScheme=d?'dark':'light';document.getElementById('themeColor').content=c;l.id='siteStyles';l.rel='stylesheet';l.href=future?'future.css?v=29':'style.css?v=35';document.head.appendChild(l)})()
   </script>
   <link rel="stylesheet" href="archive.css?v=7">
 </head>
@@ -69,7 +69,7 @@
         <button class="subtab" data-rating="doublesPlayers">Doubles players</button>
         <button class="subtab" data-rating="overall">Overall</button>
       </div>
-      <div class="filters" id="ratingFilters"><input id="search" placeholder="Search player"><select id="teamFilter"><option value="">All teams</option></select><details class="search-options"><summary>Search options</summary><label for="searchScope">Search within</label><select id="searchScope" title="Choose where player search looks"><option value="section">This section</option><option value="all">All sections</option></select></details></div>
+      <div class="filters" id="ratingFilters"><input id="search" placeholder="Search player"><select id="teamFilter"><option value="">All teams</option></select><details class="search-options"><summary>Search options</summary><div class="search-options-panel"><label for="searchScope">Search within</label><select id="searchScope" title="Choose where player search looks"><option value="section">This section</option><option value="all">All sections</option></select><button type="button" class="search-options-anchor" data-search-options-anchor>Anchor below filters</button></div></details></div>
     </div>
     <div class="section-title"><div><h1 id="ratingsTitle">Singles ratings</h1><p id="ratingsDesc"></p></div><span class="small-note" id="ratingsHint">Tap a player for Player Lab</span></div>
     <div id="bandInfo" class="band-info"></div>
@@ -77,8 +77,8 @@
   </section>
 
   <section id="page-teams" class="page">
-    <div class="section-title"><div><h1>Team Power</h1><p>Average modelled singles Power, with a best-four view for lineup strength.</p></div></div>
-    <div class="table-wrap"><table><thead><tr><th>Team</th><th>Average</th><th>Best 4</th><th>Modelled</th><th>Ladder pts</th></tr></thead><tbody id="teamsBody"></tbody></table></div>
+    <div class="section-title"><div><h1>Team Power & lineups</h1><p>A readable view of team strength, repeat lineups and the doubles pairs actually used.</p></div></div>
+    <div id="teamCards" class="team-cards"></div>
   </section>
 
   <section id="page-standings" class="page">
@@ -110,13 +110,14 @@
 <div id="extrasOverlay" class="overlay hidden"><div class="overlay-backdrop" data-extras-close="1"></div><section class="extras-sheet" role="dialog" aria-modal="true" aria-labelledby="extrasTitle"><button id="extrasClose" class="close-btn" type="button" aria-label="Close extras">×</button><div class="overlay-title"><div class="kicker">EXTRAS</div><h2 id="extrasTitle">Access</h2></div><form id="extrasForm"><label class="extras-password-label" for="extrasPassword">Password</label><input id="extrasPassword" type="password" autocomplete="off" required><p id="extrasState" class="extras-state" aria-live="polite"></p><button class="button primary" type="submit">Continue</button></form></section></div>
 <div id="resultOverlay" class="overlay hidden"><div class="overlay-backdrop" data-result-close="1"></div><aside class="result-sheet"><button id="resultClose" class="close-btn" aria-label="Close">×</button><div id="resultContent"></div></aside></div>
 <div id="predictionOverlay" class="overlay hidden"><div class="overlay-backdrop" data-prediction-close="1"></div><aside class="prediction-sheet"><button id="predictionClose" class="close-btn" aria-label="Close">×</button><div id="predictionContent"></div></aside></div>
+<div id="lineupHistoryOverlay" class="overlay hidden"><div class="overlay-backdrop" data-lineup-history-close="1"></div><aside class="prediction-sheet lineup-history-sheet"><button id="lineupHistoryClose" class="close-btn" aria-label="Close">×</button><div id="lineupHistoryContent"></div></aside></div>
 <div id="sosOverlay" class="overlay hidden"><div class="overlay-backdrop" data-sos-close="1"></div><aside class="sos-sheet"><button id="sosClose" class="close-btn" aria-label="Close">×</button><div id="sosContent"></div></aside></div>
 <div id="installOverlay" class="overlay hidden"><div class="overlay-backdrop" data-install-close="1"></div><section class="install-sheet" role="dialog" aria-modal="true" aria-labelledby="installTitle"><button id="installClose" class="close-btn" type="button" aria-label="Close install help">×</button><div class="overlay-title"><div class="kicker">BRTA POWER RATINGS</div><h2 id="installTitle">Install the app</h2><p>Keep your section results one tap away.</p></div><div id="installGuide" class="install-guide"></div><div class="install-actions"><button id="nativeInstallBtn" class="button primary hidden" type="button">Install BRTA Ratings</button><button id="installDoneBtn" class="button secondary" type="button">Done</button></div></section></div>
 <div id="modeSwitchOverlay" class="mode-switch hidden" aria-live="polite"><div class="mode-switch-box"><div class="progress-ring" id="progressRing"><div><b id="progressPct">0%</b></div></div><h2>Switching interface</h2><p id="switchStatus">Preparing layout…</p></div></div>
 <div id="syncToastHost" class="sync-toast-host" aria-live="polite" aria-atomic="true"></div>
 <script src="data.js?v=16"></script>
 <script src="prediction.js?v=2"></script>
-    <script src="app.js?v=30"></script>
+    <script src="app.js?v=31"></script>
 <script src="archive.js?v=7"></script>
 <script src="pwa.js?v=1"></script>
 </body>
