@@ -157,15 +157,15 @@
         stage.className='sid-rise-stage';
         stage.setAttribute('aria-hidden','true');
         const palette=['#fff7d2','#f4c650','#bc7827','#5f99ff','#f15b65','#75d3c8','#ffe9a1'];
-        for(let i=0;i<460;i++){
-          const piece=document.createElement('i');
+        for(let i=0;i<260;i++){
+          const piece=document.createElement('i'),leftSide=i%2===0,edge=leftSide?Math.round(2+Math.random()*10):Math.round(88+Math.random()*10),outward=leftSide?-1:1;
           piece.className='royal-confetti';
-          piece.style.setProperty('--origin-x',`${Math.round(Math.random()*100)}vw`);
-          piece.style.setProperty('--origin-y',`${Math.round(70+Math.random()*30)}vh`);
-          piece.style.setProperty('--x',`${Math.round((Math.random()-.5)*Math.max(innerWidth*1.72,1100))}px`);
-          piece.style.setProperty('--y',`${Math.round(-innerHeight*(.48+Math.random()*1.18))}px`);
-          piece.style.setProperty('--r',`${Math.round((Math.random()-.5)*1960)}deg`);
-          piece.style.setProperty('--delay',`${Math.random()*.58}s`);
+          piece.style.setProperty('--origin-x',`${edge}vw`);
+          piece.style.setProperty('--origin-y',`${Math.round(66+Math.random()*29)}vh`);
+          piece.style.setProperty('--x',`${outward*Math.round(18+Math.random()*105)}px`);
+          piece.style.setProperty('--y',`${Math.round(-innerHeight*(.32+Math.random()*.72))}px`);
+          piece.style.setProperty('--r',`${Math.round((Math.random()-.5)*1280)}deg`);
+          piece.style.setProperty('--delay',`${Math.random()*.52}s`);
           piece.style.setProperty('--confetti-color',palette[i%palette.length]);
           stage.appendChild(piece);
         }

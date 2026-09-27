@@ -728,3 +728,68 @@ body.is-offline .site-header::after{position:absolute;right:16px;bottom:-22px;pa
   .rivalry-fixture{grid-template-columns:1fr auto}
   .rivalry-fixture small{grid-column:1/-1}
 }
+
+/* Player Lab clarity pass */
+.search-options-button{flex:0 0 auto;align-self:center;padding:7px 9px;border:1px solid var(--border-color);background:var(--surface-raised);color:var(--muted-color);font:700 12px/1 inherit;white-space:nowrap;cursor:pointer}
+.search-options-button:hover{border-color:var(--primary);color:var(--text-color)}
+.search-options-sheet{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:min(330px,calc(100vw - 32px));padding:22px;border:1px solid var(--border-color);background:var(--surface-raised);box-shadow:0 18px 55px rgba(0,0,0,.28)}
+.search-options-sheet>.close-btn{position:absolute;right:8px;top:8px}
+.search-scope-choice{display:grid;gap:7px;margin-top:16px;color:var(--muted-color);font-size:12px;font-weight:800}
+.search-scope-choice select{width:100%;color:var(--text-color)}
+.team-role-metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:8px}
+.team-role-actions{display:grid;grid-template-columns:minmax(0,1fr) minmax(220px,2fr);gap:8px;margin-top:8px}
+.team-role-actions>.lab-metric{margin:0}
+.role-rivalry-button{display:grid;grid-template-columns:1fr auto;align-content:center;gap:3px 12px;min-height:74px;padding:11px 13px;border:1px solid var(--primary);background:linear-gradient(125deg,var(--surface-raised),var(--surface-muted));color:var(--text-color);text-align:left;cursor:pointer}
+.role-rivalry-button:hover{background:var(--surface-muted);box-shadow:inset 3px 0 0 var(--primary)}
+.role-rivalry-button span{font-size:11px;font-weight:800;letter-spacing:.05em;text-transform:uppercase}
+.role-rivalry-button b{grid-column:1;font-size:17px}
+.role-rivalry-button small{grid-column:1/-1;color:var(--muted-color);font-size:11px}
+.role-table-spacer{height:18px}
+.rivalry-sheet{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:min(760px,calc(100vw - 34px));max-height:calc(100dvh - 34px);overflow:auto;padding:24px;border:1px solid var(--border-color);background:var(--surface-raised);box-shadow:0 18px 55px rgba(0,0,0,.32);overscroll-behavior:contain}
+.rivalry-sheet>.close-btn{position:sticky;float:right;top:0;z-index:2;margin:-5px -5px 0 10px}
+.rivalry-list{display:grid;gap:8px}
+.rivalry-card{border:1px solid var(--border-color);background:var(--surface-raised)}
+.rivalry-card>summary{display:grid;grid-template-columns:minmax(0,1fr) auto auto;align-items:center;gap:12px;padding:11px 12px;cursor:pointer;list-style:none}
+.rivalry-card>summary::-webkit-details-marker{display:none}
+.rivalry-card[open]>summary{border-bottom:1px solid var(--border-color);background:var(--surface-muted)}
+.rivalry-opponent,.rivalry-record{display:grid;gap:2px;min-width:0}
+.rivalry-opponent b{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.rivalry-card small,.rivalry-card-meta{color:var(--muted-color);font-size:10px;font-weight:800;letter-spacing:.04em;text-transform:uppercase}
+.rivalry-record{text-align:right}.rivalry-record b{font-size:17px}.rivalry-count{padding:4px 6px;background:var(--surface-muted);color:var(--muted-color);font-size:10px;font-weight:800;white-space:nowrap}
+.rivalry-card-meta{display:flex;gap:12px;padding:7px 12px;border-bottom:1px solid var(--border-color)}
+.rivalry-match-list{display:grid}
+.rivalry-match{display:grid;grid-template-columns:82px minmax(100px,.7fr) minmax(120px,1fr) auto;align-items:center;gap:10px;width:100%;padding:9px 12px;border:0;border-bottom:1px solid var(--border-color);background:transparent;color:var(--text-color);text-align:left;cursor:pointer}
+.rivalry-match:last-child{border-bottom:0}.rivalry-match:hover{background:var(--surface-muted)}
+.rivalry-when{display:grid;gap:2px}.rivalry-when small,.rivalry-facts small{font-size:9px}.rivalry-score{font-size:14px}.rivalry-score.loss{color:var(--danger-color)}.rivalry-facts{display:grid;gap:2px}.rivalry-powers{color:var(--muted-color);font-size:11px;white-space:nowrap}.rivalry-powers i{font-style:normal;color:var(--primary)}
+.profile-match-explorer{display:none}
+.floating-explorer-head{padding:2px 4px 10px;border-bottom:1px solid var(--border-color)}
+.floating-explorer-head h3{margin:3px 0 0;font-size:16px}
+.profile-floating-explorer{margin-top:0}.profile-floating-explorer .lab-section-head{display:none}
+.schedule-band-divider td{padding:7px 10px!important;border-bottom:0!important;background:var(--surface-muted)}
+.schedule-band-divider span{display:block;padding-left:9px;border-left:4px solid var(--primary);color:var(--text-color);font-size:10px;font-weight:900;letter-spacing:.08em;text-transform:uppercase}
+.schedule-band-divider.band-brutal span{border-color:#d95c5c}.schedule-band-divider.band-demanding span{border-color:#df9d45}.schedule-band-divider.band-tough span{border-color:#d9c14b}.schedule-band-divider.band-typical span{border-color:#6d9b7d}.schedule-band-divider.band-friendly span{border-color:#5b9ba7}.schedule-band-divider.band-light span{border-color:#7185a5}
+@media(min-width:1180px){
+  .profile-sheet{width:min(760px,58vw)}
+  .profile-inline-explorer{display:none}
+  .profile-match-explorer:not(.hidden){position:absolute;z-index:1;top:50%;display:block;width:min(350px,27vw);max-height:calc(100dvh - 48px);overflow:auto;padding:18px;border:1px solid var(--border-color);background:var(--surface-raised);box-shadow:0 16px 44px rgba(0,0,0,.25);transform:translateY(-50%);overscroll-behavior:contain}
+  #profileOverlay[data-position="right"] .profile-match-explorer{right:calc(min(760px,58vw) + 18px)}
+  #profileOverlay[data-position="left"] .profile-sheet{width:min(760px,58vw)}
+  #profileOverlay[data-position="left"] .profile-match-explorer{left:calc(min(760px,58vw) + 18px)}
+  #profileOverlay[data-position="center"] .profile-sheet{left:calc(50% - 190px);right:auto;top:50%;width:min(760px,58vw);height:100dvh;max-height:none;transform:translate(-50%,-50%);border-radius:0;border-top:0;border-bottom:0}
+  #profileOverlay[data-position="center"] .profile-match-explorer{left:calc(50% + 210px);right:auto}
+}
+@media(max-width:1179px){
+  .profile-inline-explorer{margin-top:18px}
+}
+@media(max-width:700px){
+  .search-options-button{margin-top:2px}
+  .team-role-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .team-role-actions{grid-template-columns:1fr}
+  .role-rivalry-button{min-height:68px}
+  .rivalry-sheet{width:calc(100vw - 20px);max-height:calc(100dvh - 20px);padding:18px 14px}
+  .rivalry-card>summary{grid-template-columns:minmax(0,1fr) auto;gap:8px}
+  .rivalry-count{grid-column:1/-1;justify-self:start}
+  .rivalry-card-meta{gap:8px}
+  .rivalry-match{grid-template-columns:46px minmax(92px,1fr) auto;gap:7px;padding:9px}
+  .rivalry-when small{display:none}.rivalry-facts{display:none}.rivalry-powers{font-size:10px}
+}
