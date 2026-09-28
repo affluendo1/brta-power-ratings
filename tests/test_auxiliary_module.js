@@ -52,12 +52,12 @@ function section({historical=false,latest=4}={}){
 }
 {
   assert.strictEqual(M.scoreFromRandom(0),0);
-  assert.strictEqual(M.scoreFromRandom(.919999),0);
-  assert.strictEqual(M.scoreFromRandom(.92),1);
-  assert.strictEqual(M.scoreFromRandom(.979999),1);
-  assert.strictEqual(M.scoreFromRandom(.98),2);
-  assert.strictEqual(M.scoreFromRandom(.994999),2);
-  assert.strictEqual(M.scoreFromRandom(.995),3);
+  assert.strictEqual(M.scoreFromRandom(.899999),0);
+  assert.strictEqual(M.scoreFromRandom(.90),1);
+  assert.strictEqual(M.scoreFromRandom(.959999),1);
+  assert.strictEqual(M.scoreFromRandom(.96),2);
+  assert.strictEqual(M.scoreFromRandom(.989999),2);
+  assert.strictEqual(M.scoreFromRandom(.99),3);
   assert.strictEqual(M.scoreFromRandom(.999999),3);
 }
 {
@@ -76,11 +76,9 @@ function section({historical=false,latest=4}={}){
 {
   const first=M.royalScore('fixed-score'),second=M.royalScore('fixed-score');
   assert.deepStrictEqual(first,second,'best-of-three scores are stable');
-  assert.ok(first.score.split(' ').length>=2,'every Royal Match has at least two sets');
-  const deciding=Array.from({length:200},(_,index)=>M.royalScore('decider-'+index)).find(score=>score.matchTiebreak);
-  assert.ok(deciding,'deterministic score generation includes deciding match tiebreaks');
-  assert.match(deciding.score,/\[10-[4-8]\]$/,'a deciding Rubbers match uses a first-to-ten tiebreak');
-  assert.strictEqual(deciding.gamesFor,6+deciding.sets[1][0],'match-tiebreak points do not enter game evidence');
+  const scores=Array.from({length:200},(_,index)=>M.royalScore('straight-'+index));
+  assert.ok(scores.every(score=>score.sets.length===2&&score.sets.every(([a,b])=>a===6&&b>=0&&b<=3)),'Sid wins every set 6-x');
+  assert.ok(scores.every(score=>score.matchTiebreak===null&&score.setsLost===0&&score.score.split(' ').length===2),'Sid never drops a set or reaches a deciding tiebreak');
 }
 {
   assert.deepStrictEqual(M.teamChoices(['North','South'],true),['North','South','Kings Park']);

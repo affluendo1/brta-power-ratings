@@ -7,7 +7,7 @@
   if(typeof module==='object'&&module.exports)module.exports=api;
   root.AuxiliaryModule=api;
 })(typeof globalThis!=='undefined'?globalThis:this,function(){
-  const VERSION='m1';
+  const VERSION='m1',SCORE_VERSION='m2-straight-sets';
   const DISPLAY_CENTRE=1500,DISPLAY_SCALE=600,GAME_SCALE=.75,L2=5;
   const CANONICAL='Sid Basa',ALIASES=new Set(['Sid Basa','Siddharth Basa','Siddharth R. Basa']);
   const KINGS_PARK='Kings Park';
@@ -17,17 +17,12 @@
   function random(seed){return hash(seed)/4294967296}
   function shuffled(rows,seed){const out=rows.slice();for(let i=out.length-1;i>0;i--){const j=Math.floor(random(seed+'|'+i)*(i+1));[out[i],out[j]]=[out[j],out[i]]}return out}
   function logistic(value){return value>=0?1/(1+Math.exp(-value)):Math.exp(value)/(1+Math.exp(value))}
-  function scoreFromRandom(value){return value<.92?0:value<.98?1:value<.995?2:3}
+  function scoreFromRandom(value){return value<.90?0:value<.96?1:value<.99?2:3}
   function royalScore(seed){
-    const first=scoreFromRandom(random(seed+'|set-one')),
-      second=scoreFromRandom(random(seed+'|set-two')),
-      deciding=random(seed+'|format')<.12;
-    if(!deciding){
-      const sets=[[6,first],[6,second]];
-      return{sets,matchTiebreak:null,setsWon:2,setsLost:0,gamesFor:12,gamesAgainst:first+second,score:sets.map(set=>set.join('-')).join(' ')};
-    }
-    const lost=2+Math.floor(random(seed+'|split-set')*3),tiebreakAgainst=4+Math.floor(random(seed+'|match-tiebreak')*5),sets=[[6,first],[lost,6]];
-    return{sets,matchTiebreak:[10,tiebreakAgainst],setsWon:2,setsLost:1,gamesFor:6+lost,gamesAgainst:first+6,score:sets.map(set=>set.join('-')).join(' ')+' ['+[10,tiebreakAgainst].join('-')+']'};
+    const first=scoreFromRandom(random(SCORE_VERSION+'|'+seed+'|set-one')),
+      second=scoreFromRandom(random(SCORE_VERSION+'|'+seed+'|set-two')),
+      sets=[[6,first],[6,second]];
+    return{sets,matchTiebreak:null,setsWon:2,setsLost:0,gamesFor:12,gamesAgainst:first+second,score:sets.map(set=>set.join('-')).join(' ')};
   }
   function validPlayer(value){const name=text(value);return !!name&&/[A-Za-z]/.test(name)&&!/(?:^|\s)(?:bye|unknown|tbc|none|null)(?:\s|$)/i.test(name)}
   function dateValue(value){
