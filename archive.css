@@ -128,3 +128,61 @@ body.portal-active{background:#05070d;color:#f8f1df;overflow-x:hidden;overflow-y
 .archive-lightbox.is-carousel .lightbox-nav{display:flex}.archive-lightbox .lightbox-prev{left:clamp(12px,3vw,42px);right:auto}.archive-lightbox .lightbox-next{right:clamp(12px,3vw,42px);left:auto}
 @media(max-width:760px){.archive-lightbox .lightbox-nav{width:44px;height:58px;margin-top:-29px;font-size:35px;border-radius:12px}.archive-lightbox .lightbox-prev{left:8px}.archive-lightbox .lightbox-next{right:8px}}
 @keyframes sidRiseReduced{0%{opacity:0;transform:translate(-50%,108svh) scale(.84)}45%,72%{opacity:1;transform:translate(-50%,0) scale(1)}100%{opacity:0;transform:translate(-50%,0) scale(1)}}
+
+
+/* Synchronized Sid arrival: keep the motion on its own fixed layer for mobile Safari. */
+.sid-rise-figure{
+  will-change:transform,opacity;
+  -webkit-backface-visibility:hidden;
+  backface-visibility:hidden;
+  animation:sidRiseSynchronized 10.35s cubic-bezier(.14,.76,.2,1) both!important
+}
+.sid-rise-stage.royal-shake{animation:royalQuake .11s linear 30!important}
+.sid-rise-stage::before{animation:royalBloomSynchronized 10.35s ease-in-out both}
+.sid-rise-stage::after{animation:royalRaysSynchronized 10.35s ease-out both}
+.royal-idle-symbol{color:rgba(255,229,146,.37);text-shadow:0 0 16px rgba(255,210,79,.38)}
+.royal-side-quote{
+  color:rgba(255,242,200,.48);
+  animation:quoteDrift 5.2s ease-in-out calc(var(--q)*-.65s) infinite
+}
+.quote-0,.quote-2,.quote-4,.quote-6{left:1.5%}
+.quote-1,.quote-3,.quote-5,.quote-7{right:1.5%}
+@keyframes sidRiseSynchronized{
+  0%{opacity:0;transform:translate3d(-50%,138svh,0) scale(.68)}
+  5%{opacity:.16;transform:translate3d(-50%,118svh,0) scale(.72)}
+  18%{opacity:.86;transform:translate3d(-50%,48svh,0) scale(.88)}
+  32%{opacity:1;transform:translate3d(-50%,0,0) scale(1)}
+  68%{opacity:1;transform:translate3d(-50%,0,0) scale(1)}
+  82%{opacity:.96;transform:translate3d(-50%,-3svh,0) scale(1.035)}
+  100%{opacity:0;transform:translate3d(-50%,-8svh,0) scale(1.09)}
+}
+@keyframes royalBloomSynchronized{
+  0%{opacity:.08;transform:scale(.55)}
+  8%{opacity:.95;transform:scale(.86)}
+  28%{opacity:1;transform:scale(1.06)}
+  40%{opacity:.48;transform:scale(1.14)}
+  55%{opacity:.16;transform:scale(1.26)}
+  100%{opacity:0;transform:scale(1.48)}
+}
+@keyframes royalRaysSynchronized{
+  0%{opacity:.12;transform:rotate(-5deg) scale(.68)}
+  10%{opacity:.84;transform:rotate(1deg) scale(.9)}
+  30%{opacity:.72;transform:rotate(8deg) scale(1.12)}
+  48%{opacity:.2;transform:rotate(13deg) scale(1.25)}
+  100%{opacity:0;transform:rotate(18deg) scale(1.38)}
+}
+@keyframes quoteDrift{
+  0%,100%{transform:translate3d(0,0,0) rotate(-.3deg);opacity:.8}
+  25%{transform:translate3d(7px,-8px,0) rotate(.5deg);opacity:1}
+  50%{transform:translate3d(-3px,-14px,0) rotate(1deg);opacity:.9}
+  75%{transform:translate3d(-8px,-6px,0) rotate(-.6deg);opacity:1}
+}
+@media(max-width:760px){
+  .sid-rise-figure{height:116svh;animation:sidRiseSynchronized 10.35s cubic-bezier(.14,.76,.2,1) both!important}
+}
+@media(prefers-reduced-motion:reduce){
+  .sid-rise-figure{animation:sidRiseReduced .8s ease both!important}
+  .sid-rise-stage.royal-shake{animation:none!important}
+  .sid-rise-stage::before,.sid-rise-stage::after{animation:none!important}
+  .royal-side-quote{animation:none!important}
+}
