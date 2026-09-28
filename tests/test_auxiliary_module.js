@@ -74,6 +74,15 @@ function section({historical=false,latest=4}={}){
   assert.ok(context.history.length<=context.matches.length);
 }
 {
+  const first=M.royalScore('fixed-score'),second=M.royalScore('fixed-score');
+  assert.deepStrictEqual(first,second,'best-of-three scores are stable');
+  assert.ok(first.score.split(' ').length>=2,'every Royal Match has at least two sets');
+  const deciding=Array.from({length:200},(_,index)=>M.royalScore('decider-'+index)).find(score=>score.matchTiebreak);
+  assert.ok(deciding,'deterministic score generation includes deciding match tiebreaks');
+  assert.match(deciding.score,/\[10-[4-8]\]$/,'a deciding Rubbers match uses a first-to-ten tiebreak');
+  assert.strictEqual(deciding.gamesFor,6+deciding.sets[1][0],'match-tiebreak points do not enter game evidence');
+}
+{
   assert.deepStrictEqual(M.teamChoices(['North','South'],true),['North','South','Kings Park']);
   assert.deepStrictEqual(M.teamChoices(['North','Kings Park'],true),['North','Kings Park'],'real Kings Park is never duplicated');
   assert.deepStrictEqual(M.teamChoices(['North'],false),['North'],'the neutral team option is gated');
@@ -81,7 +90,7 @@ function section({historical=false,latest=4}={}){
 {
   const historical=M.buildContext(section({historical:true,latest:1}));
   assert.strictEqual(historical.matches.length,historical.all.length,'historical season is complete');
-  assert.ok(historical.matches.every(match=>match.gf===6&&match.ga>=0&&match.ga<=3));
+  assert.ok(historical.matches.every(match=>match.gf>=8&&match.ga>=0&&match.score.split(' ').length>=2));
   assert.ok(historical.sos.some(row=>row.player==='Sid Basa'));
   assert.ok(historical.sos.some(row=>row.player==='Ava Core'));
 }

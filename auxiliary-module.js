@@ -18,6 +18,17 @@
   function shuffled(rows,seed){const out=rows.slice();for(let i=out.length-1;i>0;i--){const j=Math.floor(random(seed+'|'+i)*(i+1));[out[i],out[j]]=[out[j],out[i]]}return out}
   function logistic(value){return value>=0?1/(1+Math.exp(-value)):Math.exp(value)/(1+Math.exp(value))}
   function scoreFromRandom(value){return value<.92?0:value<.98?1:value<.995?2:3}
+  function royalScore(seed){
+    const first=scoreFromRandom(random(seed+'|set-one')),
+      second=scoreFromRandom(random(seed+'|set-two')),
+      deciding=random(seed+'|format')<.12;
+    if(!deciding){
+      const sets=[[6,first],[6,second]];
+      return{sets,matchTiebreak:null,setsWon:2,setsLost:0,gamesFor:12,gamesAgainst:first+second,score:sets.map(set=>set.join('-')).join(' ')};
+    }
+    const lost=2+Math.floor(random(seed+'|split-set')*3),tiebreakAgainst=4+Math.floor(random(seed+'|match-tiebreak')*5),sets=[[6,first],[lost,6]];
+    return{sets,matchTiebreak:[10,tiebreakAgainst],setsWon:2,setsLost:1,gamesFor:6+lost,gamesAgainst:first+6,score:sets.map(set=>set.join('-')).join(' ')+' ['+[10,tiebreakAgainst].join('-')+']'};
+  }
   function validPlayer(value){const name=text(value);return !!name&&/[A-Za-z]/.test(name)&&!/(?:^|\s)(?:bye|unknown|tbc|none|null)(?:\s|$)/i.test(name)}
   function dateValue(value){
     const match=text(value).match(/^(\d{1,2})\s+([A-Za-z]{3})\s+(\d{2,4})$/);
@@ -88,7 +99,7 @@
     }
     return rows.map((row,index)=>{
       const key=VERSION+'|'+id+'|'+row.kind+'|'+row.player+'|'+row.meeting;
-      return{...row,index,fixtureId:'derived-'+hash(key).toString(36),gamesAgainst:scoreFromRandom(random(key+'|score')),seed:key};
+      return{...row,index,fixtureId:'derived-'+hash(key).toString(36),...royalScore(key),seed:key};
     }).sort((a,b)=>a.round-b.round||a.index-b.index||a.player.localeCompare(b.player));
   }
   function latestPublishedRound(section){
@@ -108,15 +119,15 @@
       let gradient=-L2*theta;hessian=-L2;
       for(const match of matches){
         const dated=dateValue(match.date),age=dated&&referenceDate?Math.max(0,(referenceDate-dated)/86400000):0,weight=Math.pow(2,-age/365);
-        const opponent=(match.opponentRating-DISPLAY_CENTRE)/DISPLAY_SCALE,p=logistic((theta-opponent)/GAME_SCALE),games=6+match.gamesAgainst;
-        gradient+=weight*(6*(1-p)-match.gamesAgainst*p)/GAME_SCALE;
+        const opponent=(match.opponentRating-DISPLAY_CENTRE)/DISPLAY_SCALE,p=logistic((theta-opponent)/GAME_SCALE),games=match.gamesFor+match.gamesAgainst;
+        gradient+=weight*(match.gamesFor*(1-p)-match.gamesAgainst*p)/GAME_SCALE;
         hessian-=weight*games*p*(1-p)/(GAME_SCALE*GAME_SCALE);
       }
       const next=Math.max(-4,Math.min(8,theta-gradient/hessian));
       if(Math.abs(next-theta)<1e-8){theta=next;break}theta=next;
     }
     let curvature=-L2;
-    for(const match of matches){const dated=dateValue(match.date),age=dated&&referenceDate?Math.max(0,(referenceDate-dated)/86400000):0,weight=Math.pow(2,-age/365),opponent=(match.opponentRating-DISPLAY_CENTRE)/DISPLAY_SCALE,p=logistic((theta-opponent)/GAME_SCALE),games=6+match.gamesAgainst;curvature-=weight*games*p*(1-p)/(GAME_SCALE*GAME_SCALE)}
+    for(const match of matches){const dated=dateValue(match.date),age=dated&&referenceDate?Math.max(0,(referenceDate-dated)/86400000):0,weight=Math.pow(2,-age/365),opponent=(match.opponentRating-DISPLAY_CENTRE)/DISPLAY_SCALE,p=logistic((theta-opponent)/GAME_SCALE),games=match.gamesFor+match.gamesAgainst;curvature-=weight*games*p*(1-p)/(GAME_SCALE*GAME_SCALE)}
     return{theta,power:Math.round(DISPLAY_CENTRE+DISPLAY_SCALE*theta),se:Math.max(1,Math.round(DISPLAY_SCALE*Math.sqrt(-1/curvature)))};
   }
   function buildContext(section){
@@ -124,18 +135,20 @@
     const completed=all.filter(match=>match.round<=cutoff).map(match=>({...match,opponentRating:fixedRating(section,match.player,match.round)}));
     const reference=Math.max(...completed.map(match=>dateValue(match.date)||0),0)||null,fitResult=fit(completed,reference),matches=[];
     for(const match of completed){
-      const before=fit(matches,dateValue(match.date)||reference),theta=(before.power-DISPLAY_CENTRE)/DISPLAY_SCALE,opponent=(match.opponentRating-DISPLAY_CENTRE)/DISPLAY_SCALE,p=logistic((theta-opponent)/GAME_SCALE),performance=Math.round(match.opponentRating+450*Math.log(6.5/(match.gamesAgainst+.5)));
-      matches.push({...match,opp:match.player,gf:6,ga:match.gamesAgainst,won:true,score:'6-'+match.gamesAgainst,expectedWinProbability:p,performance,performanceDelta:performance-before.power,position:1,result:'W',ratingAtTime:before.power,opponentRatingAtTime:match.opponentRating});
+      const before=fit(matches,dateValue(match.date)||reference),theta=(before.power-DISPLAY_CENTRE)/DISPLAY_SCALE,opponent=(match.opponentRating-DISPLAY_CENTRE)/DISPLAY_SCALE,p=logistic((theta-opponent)/GAME_SCALE);
+      const performance=Math.round(match.opponentRating+450*Math.log((match.gamesFor+.5)/(match.gamesAgainst+.5)));
+      matches.push({...match,opp:match.player,gf:match.gamesFor,ga:match.gamesAgainst,won:true,expectedWinProbability:p,performance,performanceDelta:performance-before.power,position:1,result:'W',ratingAtTime:before.power,opponentRatingAtTime:match.opponentRating});
     }
-    const gf=matches.length*6,ga=matches.reduce((sum,match)=>sum+match.ga,0),row={player:CANONICAL,team:KINGS_PARK,rating:fitResult.power,se:fitResult.se,matches:matches.length,wins:matches.length,losses:0,gf,ga,qualified:true,synthetic:true};
+    const gf=matches.reduce((sum,match)=>sum+match.gf,0),ga=matches.reduce((sum,match)=>sum+match.ga,0),row={player:CANONICAL,team:KINGS_PARK,rating:fitResult.power,se:fitResult.se,matches:matches.length,wins:matches.length,losses:0,gf,ga,qualified:true,synthetic:true};
     const history=[];for(const round of [...new Set(matches.map(match=>match.round))].sort((a,b)=>a-b)){const slice=matches.filter(match=>match.round<=round),ref=Math.max(...slice.map(match=>dateValue(match.date)||0),0)||null,result=fit(slice,ref);history.push([round,result.power,result.se,slice.length,KINGS_PARK])}
-    const rivalries=new Map();for(const match of matches){const rival=rivalries.get(match.opp)||{opponent:match.opp,rows:[],wins:0,gamesFor:0,gamesAgainst:0,expected:0};rival.rows.push(match);rival.wins++;rival.gamesFor+=6;rival.gamesAgainst+=match.ga;rival.expected+=match.expectedWinProbability;rivalries.set(match.opp,rival)}
+    const rivalries=new Map();for(const match of matches){const rival=rivalries.get(match.opp)||{opponent:match.opp,rows:[],wins:0,gamesFor:0,gamesAgainst:0,expected:0};rival.rows.push(match);rival.wins++;rival.gamesFor+=match.gf;rival.gamesAgainst+=match.ga;rival.expected+=match.expectedWinProbability;rivalries.set(match.opp,rival)}
     const rivalryList=[...rivalries.values()].map(rival=>({...rival,record:rival.wins+'–0',matches:rival.rows.length,winsAboveExpected:rival.wins-rival.expected})).sort((a,b)=>b.matches-a.matches||a.opponent.localeCompare(b.opponent));
     const expected=matches.reduce((sum,match)=>sum+match.expectedWinProbability,0),deltas=matches.map(match=>match.performanceDelta),mean=deltas.length?deltas.reduce((a,b)=>a+b,0)/deltas.length:0,variance=deltas.length>1?deltas.reduce((sum,value)=>sum+(value-mean)**2,0)/deltas.length:0;
-    const insight={team:KINGS_PARK,roundsPlayed:new Set(matches.map(match=>match.round)).size,teamCompletedTies:matches.length,availabilityPercent:null,averageListedPosition:'1.0',emergencyAppearances:0,positions:matches.length?[{position:1,matches:matches.length,wins:matches.length,record:matches.length+'–0',gamesFor:gf,gamesAgainst:ga,gameShare:gf+ga?Math.round(100*gf/(gf+ga)):0,expectedWins:expected.toFixed(1)}]:[],rivalries:rivalryList,consistency:{matches:matches.length,averagePerformanceDelta:Number(mean.toFixed(1)),volatility:Math.sqrt(variance),score:Math.max(0,Math.round(100-Math.sqrt(variance)*4))},scoreProfile:{straightSetMatches:matches.length,scoredMatches:matches.length,setsWon:matches.length,setsLost:0,tiebreaksWon:0,tiebreaksLost:0,decidingWins:0,decidingLosses:0}};
+    const deciding=matches.filter(match=>match.matchTiebreak).length;
+    const insight={team:KINGS_PARK,roundsPlayed:new Set(matches.map(match=>match.round)).size,teamCompletedTies:matches.length,availabilityPercent:null,averageListedPosition:'1.0',emergencyAppearances:0,positions:matches.length?[{position:1,matches:matches.length,wins:matches.length,record:matches.length+'–0',gamesFor:gf,gamesAgainst:ga,gameShare:gf+ga?Math.round(100*gf/(gf+ga)):0,expectedWins:expected.toFixed(1)}]:[],rivalries:rivalryList,consistency:{matches:matches.length,averagePerformanceDelta:Number(mean.toFixed(1)),volatility:Math.sqrt(variance),score:Math.max(0,Math.round(100-Math.sqrt(variance)*4))},scoreProfile:{straightSetMatches:matches.length-deciding,scoredMatches:matches.length,setsWon:matches.reduce((sum,match)=>sum+match.setsWon,0),setsLost:matches.reduce((sum,match)=>sum+match.setsLost,0),tiebreaksWon:deciding,tiebreaksLost:0,decidingWins:deciding,decidingLosses:0}};
     const sos=[...(section?.strengthOfSchedule||[]).map(item=>({...item})),{player:CANONICAL,team:KINGS_PARK,matches:matches.length,averageOpponent:matches.length?Math.round(matches.reduce((sum,match)=>sum+match.opponentRating,0)/matches.length):0,synthetic:true}].sort((a,b)=>b.averageOpponent-a.averageOpponent||a.player.localeCompare(b.player));
     sos.forEach((item,index)=>item.rank=index+1);const schedule=sos.find(item=>item.player===CANONICAL);if(schedule)schedule.total=sos.length;
     return{row,matches,history,insight,rivalries:rivalryList,schedule,sos,all,core:roster(section).core,oneOff:roster(section).oneOff,historical,cutoff,sectionLabel:text(section?.meta?.section_label||section?.section_label)};
   }
-  return{CANONICAL,ALIASES,KINGS_PARK,VERSION,random,scoreFromRandom,firstSundaySection,isHighestSundaySection,exactAlias,delayedAlias,teamChoices,godlyThreshold,discoveryState,roster,generatedSchedule,buildContext,fit,latestPublishedRound};
+  return{CANONICAL,ALIASES,KINGS_PARK,VERSION,random,scoreFromRandom,royalScore,firstSundaySection,isHighestSundaySection,exactAlias,delayedAlias,teamChoices,godlyThreshold,discoveryState,roster,generatedSchedule,buildContext,fit,latestPublishedRound};
 });

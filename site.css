@@ -771,7 +771,9 @@ body.is-offline .site-header::after{position:absolute;right:16px;bottom:-22px;pa
 @media(min-width:1180px){
   .profile-sheet{width:min(760px,58vw)}
   .profile-inline-explorer{display:none}
-  .profile-match-explorer:not(.hidden){position:absolute;z-index:1;top:50%;display:block;width:min(350px,27vw);max-height:calc(100dvh - 48px);overflow:auto;padding:18px;border:1px solid var(--border-color);background:var(--surface-raised);box-shadow:0 16px 44px rgba(0,0,0,.25);transform:translateY(-50%);overscroll-behavior:contain}
+  .profile-match-explorer:not(.hidden){position:absolute;z-index:1;top:50%;display:block;width:min(520px,34vw);max-height:calc(100dvh - 48px);overflow:auto;padding:18px;border:1px solid var(--border-color);background:var(--surface-raised);box-shadow:0 16px 44px rgba(0,0,0,.25);transform:translateY(-50%);overscroll-behavior:contain}
+  .profile-floating-explorer .lab-match-list .match-row{grid-template-columns:38px minmax(84px,auto) minmax(150px,1fr) minmax(120px,auto)}
+  .profile-floating-explorer .match-opponent{overflow:visible;text-overflow:clip;white-space:normal}
   #profileOverlay[data-position="right"] .profile-match-explorer{right:calc(min(760px,58vw) + 18px)}
   #profileOverlay[data-position="left"] .profile-sheet{width:min(760px,58vw)}
   #profileOverlay[data-position="left"] .profile-match-explorer{left:calc(min(760px,58vw) + 18px)}

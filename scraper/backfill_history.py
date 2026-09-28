@@ -166,7 +166,7 @@ def _scorecards(section: dict) -> None:
         if fixture["status"] != "Completed":
             continue
         response = sync._get(MATCH_URL, params={"matchid": fixture["fixture_id"], "seasonid": section["season_id"]})
-        singles_rows, doubles_rows = sync.parse_scorecard(response.text, fixture)
+        singles_rows, doubles_rows = sync.parse_scorecard(response.text, {**fixture, "format": "rubbers" if str(section.get("section_label", "")).casefold().startswith("rubbers") else "sets"})
         singles.extend(singles_rows)
         doubles.extend(doubles_rows)
         done += 1

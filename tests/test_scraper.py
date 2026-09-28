@@ -230,6 +230,13 @@ class DatasetValidationTests(unittest.TestCase):
         self.assertIn("AA999001", singles[0]["home_player"])
         self.assertEqual((singles[0]["home_emergency"], singles[0]["valid_for_rating"]), ("true", "false"))
 
+    def test_rubbers_match_tiebreak_is_not_parsed_as_a_third_set_or_ten_games(self):
+        parsed = sync_trols._rubbers_score("6-4 4-6 10-8", True)
+        self.assertEqual(parsed["score"], "6-4 4-6 [10-8]")
+        self.assertEqual((parsed["home_games"], parsed["away_games"]), (10, 10))
+        self.assertEqual((parsed["home_sets"], parsed["away_sets"]), (2, 1))
+        self.assertTrue(parsed["decisive"])
+
 
 if __name__ == "__main__":
     unittest.main()

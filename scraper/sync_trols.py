@@ -379,6 +379,44 @@ def _player_from_code(players: list[dict], code: str, fixture_id: str, side: str
     return {**entry, "name": name}
 
 
+def _rubbers_score(raw_score: str, rubbers_format: bool) -> dict | None:
+    """Parse a scorecard score without turning a Rubbers match tiebreak into games.
+
+    BRTA Rubbers are best of three short sets.  At one set all the deciding
+    score is a first-to-ten match tiebreak, not a 7–6 third set and not ten
+    additional games for the ratings model or game totals.
+    """
+    values = [(int(a), int(b)) for a, b in re.findall(r"(\d+)\s*-\s*(\d+)", raw_score)]
+    if not values:
+        return None
+    normal, match_tiebreak = values, None
+    if rubbers_format and len(values) >= 3:
+        preceding, candidate = values[:-1], values[-1]
+        home_before = sum(a > b for a, b in preceding)
+        away_before = sum(b > a for a, b in preceding)
+        if home_before == away_before and max(candidate) >= 10 and max(candidate) <= 20 and candidate[0] != candidate[1]:
+            normal, match_tiebreak = preceding, candidate
+    # A historical team-total row can look like a rubber.  A valid deciding
+    # match tiebreak is the sole permitted two-digit score component.
+    if any(a > 13 or b > 13 for a, b in normal):
+        return None
+    if match_tiebreak is None and any(a > 13 or b > 13 for a, b in values):
+        return None
+    home_games = sum(a for a, _ in normal)
+    away_games = sum(b for _, b in normal)
+    home_sets = sum(a > b for a, b in normal)
+    away_sets = sum(b > a for a, b in normal)
+    if match_tiebreak:
+        home_sets += int(match_tiebreak[0] > match_tiebreak[1])
+        away_sets += int(match_tiebreak[1] > match_tiebreak[0])
+    decisive = home_sets != away_sets and all(a != b and max(a, b) >= 5 for a, b in normal)
+    score = " ".join(f"{a}-{b}" for a, b in normal)
+    if match_tiebreak:
+        score += f" [{match_tiebreak[0]}-{match_tiebreak[1]}]"
+    return {"score": score, "home_games": home_games, "away_games": away_games,
+            "home_sets": home_sets, "away_sets": away_sets, "decisive": decisive}
+
+
 def parse_scorecard(html: str, fixture: dict) -> tuple[list[dict], list[dict]]:
     soup = BeautifulSoup(html, "html.parser")
     root = soup.find("table", attrs={"width": "99%"})
@@ -436,21 +474,14 @@ def parse_scorecard(html: str, fixture: dict) -> tuple[list[dict], list[dict]]:
         is_single = bool(re.fullmatch(r"\d+", home_code or "") and re.fullmatch(r"\d+", away_code or ""))
         if not is_pair and not is_single:
             continue
-        scores = [(int(a), int(b)) for a, b in re.findall(r"(\d+)\s*-\s*(\d+)", raw_score)]
-        if not scores:
+        score = _rubbers_score(raw_score, str(fixture.get("format", "")).casefold() == "rubbers")
+        if not score:
             continue
-        # Historical TROLS cards append a team-total row such as
-        # ``4 | 28-24 | 2`` after the individual rubbers. It otherwise looks
-        # exactly like another singles row, but a 28-game set cannot be a
-        # player scoreline. Never feed that aggregate into ratings.
-        if any(a > 13 or b > 13 for a, b in scores):
-            continue
-        home_games, away_games = sum(a for a, _ in scores), sum(b for _, b in scores)
-        home_sets, away_sets = sum(a > b for a, b in scores), sum(b > a for a, b in scores)
-        decisive = home_sets != away_sets and all(a != b and max(a, b) >= 5 for a, b in scores)
+        home_games, away_games = score["home_games"], score["away_games"]
+        home_sets, away_sets, decisive = score["home_sets"], score["away_sets"], score["decisive"]
         base = {
             "fixture_id": fixture["fixture_id"], "date": fixture["date"], "round": fixture["round"],
-            "home_team": home_team, "away_team": away_team, "score": " ".join(f"{a}-{b}" for a, b in scores),
+            "home_team": home_team, "away_team": away_team, "score": score["score"],
             "home_games": home_games, "away_games": away_games, "home_sets": home_sets, "away_sets": away_sets,
             "status": "Completed", "valid_for_rating": str(decisive).lower(),
         }
@@ -516,9 +547,9 @@ def _section_results(meta: dict) -> dict:
     return {**meta, "fixtures": fixtures, "results_loaded_by_trols": loaded}
 
 
-def _scorecard(fixture: dict, season_id: str = "") -> tuple[str, list[dict], list[dict]]:
+def _scorecard(fixture: dict, season_id: str = "", rubbers_format: bool = False) -> tuple[str, list[dict], list[dict]]:
     response = _get(MATCH_URL, params={"matchid": fixture["fixture_id"], "seasonid": season_id})
-    singles, doubles = parse_scorecard(response.text, fixture)
+    singles, doubles = parse_scorecard(response.text, {**fixture, "format": "rubbers" if rubbers_format else "sets"})
     return fixture["fixture_id"], singles, doubles
 
 
@@ -706,7 +737,7 @@ def scrape_all() -> list[dict]:
     print(f"Loading {len(completed)} completed scorecards with {MAX_WORKERS} workers")
     with ThreadPoolExecutor(max_workers=MAX_WORKERS) as pool:
         futures = {
-            pool.submit(_scorecard, fixture, fixture_owner[fixture["fixture_id"]]["season_id"]): fixture
+            pool.submit(_scorecard, fixture, fixture_owner[fixture["fixture_id"]]["season_id"], fixture_owner[fixture["fixture_id"]]["section_label"].casefold().startswith("rubbers")): fixture
             for fixture in completed
         }
         done = 0

@@ -63,7 +63,7 @@
   const sideQuotes=['“The court remembers.”','“No throne without footwork.”','“The racket chose him.”','“Four crowns. One season.”','“The baseline bowed first.”','“Monarch of match point.”','“A blade does not blink.”','“History arrived early.”'];
   const archiveCopy=(chunks,...values)=>String.raw({raw:chunks},...values).replaceAll('FICTIONAL ARCHIVE INTERVIEW · 2027','ROYAL ARCHIVE · 2027').replaceAll('FICTIONAL ARCHIVE PRACTICE NOTE · JAYDEN BONE','PRACTICE NOTE · JAYDEN BONE');
   function portalMarkup(){
-    const symbols=backgroundSymbols.map((symbol,index)=>`<i class="royal-idle-symbol symbol-${index%8}" style="--i:${index};--x:${(index*37)%96};--delay:${-(index%9)*1.2}s" aria-hidden="true">${symbol}</i>`).join('');
+    const symbols=backgroundSymbols.map((symbol,index)=>{const left=index%2===0,x=left?2+(index*11)%14:84+(index*13)%14;return`<i class="royal-idle-symbol symbol-${index%8}" style="--i:${index};--x:${x};--delay:${-(index%9)*1.2}s" aria-hidden="true">${symbol}</i>`}).join('');
     const quotes=sideQuotes.map((quote,index)=>`<p class="royal-side-quote quote-${index}" style="--q:${index}" aria-hidden="true">${quote}</p>`).join('');
     return archiveCopy`<div class="archive-intro" aria-live="polite" aria-atomic="true" hidden><p>ACCESSING ROYAL ARCHIVE…</p></div><div class="royal-atmosphere" aria-hidden="true">${symbols}</div><div class="royal-quote-field">${quotes}</div>
       <div class="archive-utility"><button class="archive-return" type="button" data-archive-return>Return to ratings</button></div>
