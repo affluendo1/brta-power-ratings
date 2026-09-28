@@ -18,6 +18,7 @@ let showProv=localStorage.getItem('brta-show-provisional')==='1';
 let ratingScope=localStorage.getItem('brta-rating-scope')||'section';
 let theme=localStorage.getItem('brta-theme')||'auto',interfaceMode=localStorage.getItem('brta-interface')||'future',accent=localStorage.getItem('brta-accent')||'yellow',profilePosition=localStorage.getItem('brta-profile-position')||'right';
 let ratingView='singles',resultRound=null,selectedMatch=null,selectedPrediction=null,activePredictionMatch=null,activeProfilePlayer=null,loadingToken=0,roundSimulations={};
+let activePage='results',auxiliaryCache=null,auxiliaryCacheKey='',auxiliaryRevealTimer=0,auxiliaryRevealKey='',auxiliaryReadyKey='',auxiliaryFadeKey='';
 const BAND_NAMES=['Apex','Elite','Strong','Middle Class','Developing','Weak','Basement'];
 const ratingInfo={
   singles:['Singles ratings','Opponent-adjusted singles power. Minimum 4 completed singles rubbers for a ranked position.'],
@@ -37,7 +38,34 @@ function personButton(name){return '<button class="person" data-player="'+esc(na
 function globalPersonButton(row){return '<button class="person" data-global-player="'+esc(row.player)+'" data-section-code="'+esc(row.sectionCode)+'">'+esc(row.player)+'</button>'}
 function resultPerson(name,label=name){const known=singles.some(x=>x.player===name)||dinds.some(x=>x.player===name);return known?'<button class="person" data-player="'+esc(name)+'">'+esc(label)+'</button>':esc(label)}
 function close(id){const overlay=$(id);if(!overlay)return;overlay.classList.add('hidden');if(id==='#profileOverlay')$('#profileMatchExplorer')?.classList.add('hidden');if(!document.querySelector('.overlay:not(.hidden)'))document.body.classList.remove('modal-open')}
-function switchPage(page){$$('.main-tab').forEach(b=>b.classList.toggle('active',b.dataset.page===page));$$('.page').forEach(p=>p.classList.toggle('active',p.id==='page-'+page))}
+function switchPage(page){activePage=page;if(page!=='ratings')cancelAuxiliaryReveal();$$('.main-tab').forEach(b=>b.classList.toggle('active',b.dataset.page===page));$$('.page').forEach(p=>p.classList.toggle('active',p.id==='page-'+page))}
+
+function auxiliaryEnabled(){return !!window.AuxiliaryPortal?.isUnlocked?.()}
+function auxiliarySectionEligible(){return !!(D&&window.AuxiliaryModule?.isHighestSundaySection(D.meta,viewCatalog))}
+function auxiliaryState(){return{extras:auxiliaryEnabled(),page:activePage,scope:ratingScope,view:ratingView,team:$('#teamFilter')?.value||'',query:$('#search')?.value||'',section:D?.meta,sections:viewCatalog}}
+function auxiliarySignature(state=auxiliaryState()){return [D?.meta?.season_id,D?.meta?.section_code,state.extras,state.page,state.scope,state.view,state.team,String(state.query).trim()].join('|')}
+function cancelAuxiliaryReveal(){if(auxiliaryRevealTimer)clearTimeout(auxiliaryRevealTimer);auxiliaryRevealTimer=0;auxiliaryRevealKey='';auxiliaryReadyKey='';auxiliaryFadeKey=''}
+function auxiliaryContext(){
+  const state=auxiliaryState();if(!window.AuxiliaryModule?.discoveryState(state))return null;
+  const key=[D?.meta?.season_id,D?.meta?.section_code].join('|');
+  if(!auxiliaryCache||auxiliaryCacheKey!==key){auxiliaryCache=window.AuxiliaryModule.buildContext(D);auxiliaryCacheKey=key}
+  return auxiliaryCache;
+}
+function auxiliaryVisibleContext(){
+  const state=auxiliaryState(),module=window.AuxiliaryModule;
+  if(!module?.discoveryState(state)){cancelAuxiliaryReveal();return null}
+  const key=auxiliarySignature(state);
+  if(module.delayedAlias(state.query)){
+    if(auxiliaryReadyKey===key)return auxiliaryContext();
+    if(auxiliaryRevealKey!==key){
+      cancelAuxiliaryReveal();auxiliaryRevealKey=key;
+      auxiliaryRevealTimer=setTimeout(()=>{if(auxiliarySignature()===key&&module.discoveryState(auxiliaryState())){auxiliaryRevealTimer=0;auxiliaryReadyKey=key;auxiliaryFadeKey=key;renderRatings();setTimeout(()=>{if(auxiliaryFadeKey===key)auxiliaryFadeKey=''},350)}},700);
+    }
+    return null;
+  }
+  cancelAuxiliaryReveal();return auxiliaryContext();
+}
+function auxiliaryPlayer(name){return name===window.AuxiliaryModule?.CANONICAL&&!!auxiliaryCache&&auxiliaryCacheKey===[D?.meta?.season_id,D?.meta?.section_code].join('|')&&auxiliaryEnabled()&&!!window.AuxiliaryModule?.discoveryState(auxiliaryState())}
 
 function csvCell(value){const text=String(value??'');return'"'+text.replace(/"/g,'""')+'"'}
 function exportSectionCSV(){
@@ -114,7 +142,7 @@ function fillSections(comp,selected){
   return code;
 }
 async function loadSection(code){
-  const token=++loadingToken,meta=viewCatalog.find(x=>x.section_code===code);
+  cancelAuxiliaryReveal();const token=++loadingToken,meta=viewCatalog.find(x=>x.section_code===code);
   $('#sectionSubtitle').textContent=(meta?.competition_label||'').replace(' - ',' · ')+' · '+(meta?.section_label||'Loading…');
   document.body.classList.add('section-loading');
   try{
@@ -133,7 +161,12 @@ async function loadSection(code){
 
 function statusStrip(){const s=D.sync||{};if(D.meta?.is_archive){$('#statusStrip').innerHTML='<div><b>Season</b><span>'+esc(D.meta.season_label||'Historical')+'</span></div><div><b>Source</b><span>Official TROLS archive</span></div><div><b>Latest record</b><span>'+esc(D.knockout?.grandFinal?'Grand final':D.knockout?.semifinals?.length?'Semifinals':(D.results?.[0]?.label||'Historical results'))+'</span></div><div><b>Data check</b><span class="status-ok">Validated</span></div>';return}const latestLabel=D.results?.[0]?.label||('Round '+(s.latestRound??D.roundOverview?.round??'—')),updateLabel=s.updatedAt?fmtTime(s.updatedAt):(s.newResultsLastCheck?'Updated in latest check':'No changes in latest check');$('#statusStrip').innerHTML='<div><b>Last checked</b><span>'+esc(fmtTime(s.checkedAt))+'</span></div><div><b>Results updated</b><span>'+esc(updateLabel)+'</span></div><div><b>Latest published round</b><span>'+esc(latestLabel)+'</span></div><div><b>Sync status</b><span class="status-ok">'+(s.validation==='passed'?'Up to date':'Check needed')+'</span></div>'}
 function showSyncToast(){const s=DATA.globalSync||{},check=s.checkedAt;if(!check||localStorage.getItem('brta-sync-toast-seen')===check)return;localStorage.setItem('brta-sync-toast-seen',check);const fresh=!!s.newResultsLastCheck,title=fresh?'Results refreshed':'Results checked',message=fresh?'Official results changed, so the ratings and match pages have been refreshed across Saturday and Sunday AM.':'The latest check found no new official results. Everything already published remains up to date.';const toast=document.createElement('div');toast.className='sync-toast '+(fresh?'updated':'checked');toast.innerHTML='<div class="sync-toast-icon">'+(fresh?'✓':'i')+'</div><div><b>'+title+'</b><p>'+message+'</p></div><button class="sync-toast-close" aria-label="Close update">×</button>';const end=()=>{toast.classList.add('leaving');setTimeout(()=>toast.remove(),220)};toast.querySelector('button').onclick=end;$('#syncToastHost').appendChild(toast);setTimeout(end,10000)}
-function teamOptions(){const names=[...new Set(singles.map(x=>x.team).filter(Boolean))].sort();$('#teamFilter').innerHTML='<option value="">All teams</option>'+names.map(t=>'<option>'+esc(t)+'</option>').join('')}
+function teamOptions(){
+  const selected=$('#teamFilter').value,names=[...new Set(singles.map(x=>x.team).filter(Boolean))].sort();
+  if(auxiliaryEnabled()&&auxiliarySectionEligible())names.splice(0,names.length,...window.AuxiliaryModule.teamChoices(names,true));
+  $('#teamFilter').innerHTML='<option value="">All teams</option>'+names.map(t=>'<option>'+esc(t)+'</option>').join('');
+  if(names.includes(selected))$('#teamFilter').value=selected;
+}
 function overallData(){const sm=new Map(singles.map(x=>[x.player,x])),dm=new Map(dinds.map(x=>[x.player,x]));return[...new Set([...sm.keys(),...dm.keys()])].map(player=>{const s=sm.get(player),d=dm.get(player),both=s&&d;return{player,team:s?.team||d?.team||'',rating:both?Math.round((s.rating+d.rating)/2):(s?.rating||d?.rating||1500),se:both?Math.round(Math.hypot(s.se,d.se)/2):(s?.se||d?.se||0),s,d,qualified:!!(s&&s.matches>=4&&d&&d.qualified)}}).sort((a,b)=>b.rating-a.rating)}
 function currentRows(){if(ratingView==='singles')return{rows:singles,min:4,type:'player'};if(ratingView==='pairs')return{rows:pairs,min:2,type:'pair'};if(ratingView==='doublesPlayers')return{rows:dinds,min:4,type:'doublesPlayers'};return{rows:overallData(),min:0,type:'overall'}}
 function ratingQualified(x,min,type){if(type==='overall')return x.qualified;if(type==='doublesPlayers')return!!x.qualified;return x.matches>=min}
@@ -212,12 +245,20 @@ function renderGlobalRatings(){
     :'<tr><th>Player</th><th>Team</th><th>Section</th><th>Power</th><th>W–L</th><th>Games</th><th>Evidence</th><th>Uncertainty</th></tr>';
 }
 function renderRatings(){
-  if(ratingScope==='all'){renderGlobalRatings();return}
+  if(ratingScope==='all'){cancelAuxiliaryReveal();renderGlobalRatings();return}
   $('#teamFilter').disabled=false;
   const [title,desc]=ratingInfo[ratingView];$('#ratingsTitle').textContent=title;$('#ratingsDesc').textContent=desc;
   $('#ratingFilters').classList.remove('hidden');$('#ratingsHint').textContent='';
-  const {rows,min,type}=currentRows(),q=$('#search').value.toLowerCase(),tf=$('#teamFilter').value,band=bandModel(rows,min,type);renderBandInfo(band);
+  const {rows,min,type}=currentRows(),q=$('#search').value.toLowerCase(),tf=$('#teamFilter').value,band=bandModel(rows,min,type),derived=auxiliaryVisibleContext();
+  renderBandInfo(band);
   let rank=0,out='',lastBand='';
+  if(derived){
+    const fading=auxiliaryFadeKey===auxiliarySignature()?' auxiliary-reveal':'';
+    const godly=window.AuxiliaryModule.godlyThreshold(derived.row);
+    $('#bandInfo').innerHTML='<div class="band-info-head"><b>Performance bands</b></div><div class="band-keys"><div class="band-key b0"><i></i><span><b>Godly</b><small>≥ '+godly+'</small></span></div>'+BAND_NAMES.map((n,i)=>'<div class="band-key b'+i+'"><i></i><span><b>'+n+'</b><small>'+band.bounds[i]+'</small></span></div>').join('')+'</div>';
+    out+='<tr class="band-divider b0"><td colspan="8"><div><i></i><b>Godly</b><span>≥ '+godly+'</span></div></td></tr>';
+    out+='<tr class="b0'+fading+'"><td>0</td><td>'+personButton(derived.row.player)+'</td><td>'+teamName(derived.row.team)+'</td><td><b>'+derived.row.rating+'</b></td><td>'+derived.row.wins+'–0</td><td>'+derived.row.gf+'–'+derived.row.ga+'</td><td>'+(derived.row.gf+derived.row.ga?(100*derived.row.gf/(derived.row.gf+derived.row.ga)).toFixed(1)+'%':'—')+'</td><td>±'+derived.row.se+'</td></tr>';
+  }
   for(const x of rows){const qual=ratingQualified(x,min,type);if(qual)rank++;if(!qual&&!showProv)continue;if(q&&!x.player.toLowerCase().includes(q))continue;if(tf&&x.team!==tf)continue;const cls=qual?band.classFor(x.rating):'provisional';if(qual&&cls!==lastBand){out+=bandDivider(cls,band,type==='pair'?9:8);lastBand=cls}
     const pct=x.gf+x.ga?(100*x.gf/(x.gf+x.ga)).toFixed(1)+'%':'—';
     if(type==='pair'){const pair=x.player.split(' / ').map(personButton).join('<span class="pair-sep"> / </span>'),effect=(x.pairEffect>=0?'+':'')+(x.pairEffect??0);out+='<tr class="'+cls+'"><td>'+(qual?rank:'—')+'</td><td>'+pair+'</td><td>'+teamName(x.team)+'</td><td><b>'+x.rating+'</b></td><td>'+(x.individualAverage??'—')+'</td><td class="'+((x.pairEffect??0)>=0?'performance-above':'performance-below')+'">'+effect+'</td><td>'+x.wins+'–'+x.losses+'</td><td>'+x.matches+'</td><td>±'+x.se+'</td></tr>'}
@@ -269,7 +310,7 @@ function resultDetailHTML(match,contextPlayer=null){
   let rows=(match.rubbers||[]).slice().sort((a,b)=>(a.type==='Doubles'?0:1)-(b.type==='Doubles'?0:1)||String(a.position).localeCompare(String(b.position),undefined,{numeric:true})).map(r=>{const marker=emergency=>emergency?'<i class="emergency-marker" title="Emergency player recorded by TROLS">X</i>':'',home=(r.type==='Doubles'?pairNames(r.home,r.homeEmergencies||[]):resultPerson(r.home)+marker(r.homeEmergency)),away=(r.type==='Doubles'?pairNames(r.away,r.awayEmergencies||[]):resultPerson(r.away)+marker(r.awayEmergency));return'<div class="rubber-row"><small class="rubber-code" title="'+esc(r.type)+' · '+esc(r.position)+'">'+rubberCode(r)+'</small><b class="rubber-home '+(r.winner===r.home?'winner':'')+'" title="'+esc(r.home)+'">'+home+'</b><strong>'+esc(r.score)+'</strong><b class="rubber-away '+(r.winner===r.away?'winner':'')+'" title="'+esc(r.away)+'">'+away+'</b></div>'}).join('');
   return head+(rows?'<div class="rubber-list">'+rows+'</div>':'<div class="notice">TROLS has not published an individual scorecard for this match.</div>')+historicalMatchContext(match,contextPlayer)
 }
-function openMatch(id,sourcePlayer=null){const match=findMatch(id);if(match){selectedMatch=id;switchPage('results');$('#resultContent').innerHTML=resultDetailHTML(match,sourcePlayer);$('#resultOverlay').classList.remove('hidden');document.body.classList.add('modal-open')}}
+function openMatch(id,sourcePlayer=null){const match=findMatch(id);if(match){selectedMatch=id;switchPage('results');$('#resultContent').innerHTML=resultDetailHTML(match,sourcePlayer);$('#resultOverlay').classList.remove('hidden');document.body.classList.add('modal-open');return}if(auxiliaryPlayer(activeProfilePlayer))openAuxiliaryMatch(auxiliaryCache.matches.find(row=>row.fixtureId===id))}
 function renderFixtures(){
   const rounds=D.upcomingFixtures||[];
   $('#fixturesList').innerHTML=rounds.length?rounds.map(r=>'<section class="fixture-round"><div class="fixture-round-head"><h2>'+esc(roundHeading(r))+'</h2><div class="fixture-round-actions"><span>'+esc(roundDate(r.date))+'</span>'+(r.fixtures.some(f=>f.status==='Scheduled'&&!findFixtureResult(f,r.round))?'<button type="button" class="button secondary" data-simulate-round="'+esc(r.round)+'">Simulate round</button>':'')+'</div></div><div class="fixture-list">'+r.fixtures.map(f=>{
@@ -389,7 +430,7 @@ function profileLongestRun(matches,won){let best=0,current=0;for(const match of 
 function profileMetric(label,value,detail='',tone=''){return'<div class="lab-metric '+tone+'"><span>'+esc(label)+'</span><b>'+esc(value??'—')+'</b>'+(detail?'<small>'+detail+'</small>':'')+'</div>'}
 function profileHighlight(label,match,detail=''){if(!match)return'';return'<button class="lab-highlight" type="button" data-match-id="'+esc(match.fixtureId)+'"><span>'+esc(label)+'</span><b><em class="radar-result '+(match.won?'win':'loss')+'">'+(match.won?'W':'L')+'</em> '+esc(match.score)+' · '+esc(match.opp)+'</b><small>'+esc(detail)+'</small></button>'}
 function profileSplit(matches,condition){const rows=matches.filter(condition),wins=rows.filter(match=>match.won).length;return rows.length?wins+'–'+(rows.length-wins):'—'}
-function profileSchedule(schedule){return schedule?'<button class="schedule-card lab-schedule-card" type="button" data-sos-open title="Open the full strength-of-schedule table"><span>Strength of schedule</span><b>'+scheduleBand(schedule.averageOpponent,D.strengthOfSchedule||[])+'</b><small>#'+schedule.rank+' hardest of '+schedule.total+' · '+schedule.matches+' matches · View table</small></button>':profileMetric('Schedule','—','No completed opponents')}
+function profileSchedule(schedule,rows=D.strengthOfSchedule||[]){return schedule?'<button class="schedule-card lab-schedule-card" type="button" data-sos-open title="Open the full strength-of-schedule table"><span>Strength of schedule</span><b>'+scheduleBand(schedule.averageOpponent,rows)+'</b><small>#'+schedule.rank+' hardest of '+schedule.total+' · '+schedule.matches+' matches · View table</small></button>':profileMetric('Schedule','—','No completed opponents')}
 function playerInsight(name){return D.playerInsights?.[name]||null}
 function rivalryMatchesHTML(rival){
   return'<div class="rivalry-match-list">'+(rival.rows||[]).map(row=>'<button type="button" class="rivalry-match" data-rival-fixture="'+esc(row.fixtureId)+'"><span class="rivalry-when"><b>R'+esc(row.round)+'</b><small>'+esc(row.date||'Recorded match')+'</small></span><strong class="rivalry-score '+(row.result==='W'?'win':'loss')+'">'+esc(row.result)+' '+esc(row.score||'Score unavailable')+'</strong><span class="rivalry-facts"><b>No. '+esc(row.position??'—')+'</b><small>Expected '+(row.expectedWinProbability==null?'—':Math.round(100*row.expectedWinProbability)+'%')+' · '+signed(row.performanceDelta,0)+'</small></span><span class="rivalry-powers">'+esc(row.ratingAtTime??'—')+' <i>v</i> '+esc(row.opponentRatingAtTime??'—')+'</span></button>').join('')+'</div>';
@@ -425,7 +466,33 @@ function doublesSection(d,partners,o){
   const cards=partners.length?partners.map(partner=>{const effect=partner.pairEffect??0,synergy=partner.pairSynergy??0;return'<article class="partner-card"><b>'+personButton(partner.partner)+'</b><span>'+partner.wins+'–'+partner.losses+' · '+partner.matches+' ties</span><small>Pair Power '+partner.rating+' · effect '+(effect>=0?'+':'')+effect+' · synergy '+(synergy>=0?'+':'')+synergy+'</small></article>'}).join(''):'<p>No repeated partnerships yet.</p>';
   return'<div class="lab-doubles-summary">'+profileMetric('Individual Power',d.rating,d.ranking_status||'')+profileMetric('Appearances',d.matches,d.partner_count+' partners')+(o?profileMetric('Overall Power',o.rating,'50/50 singles + doubles'):'')+'</div><p class="small-note">Pair effect compares pair Power with the two players’ individual-doubles average. Synergy is the separately fitted, strongly regularised pair residual.</p><div class="partner-list">'+cards+'</div>';
 }
+function auxiliaryHistoryChart(history){
+  if(history.length<2)return'<p class="small-note">A history line appears after results in two rounds.</p>';
+  const values=history.map(row=>row[1]),lo=Math.min(...values)-30,hi=Math.max(...values)+30,coordinates=history.map((row,index)=>({px:100*(index+.5)/history.length,py:92-(row[1]-lo)*84/(hi-lo||1)})),points=coordinates.map(point=>point.px.toFixed(1)+','+point.py.toFixed(1)).join(' '),markers=coordinates.map(point=>'<circle cx="'+point.px.toFixed(1)+'" cy="'+point.py.toFixed(1)+'" r="1.8"/>').join('');
+  return'<div class="history-chart"><svg viewBox="0 0 100 100" preserveAspectRatio="none" role="img" aria-label="Power history"><polyline points="'+points+'"/>'+markers+'</svg><div class="history-chart-labels" style="grid-template-columns:repeat('+history.length+',minmax(0,1fr))">'+history.map(row=>'<span>R'+row[0]+'<b>'+row[1]+'</b></span>').join('')+'</div></div>';
+}
+function openAuxiliaryProfile(context){
+  activeProfilePlayer=context.row.player;
+  const s=context.row,matches=context.matches,insight=context.insight,last=matches.slice(-3),recentGf=last.reduce((sum,match)=>sum+match.gf,0),recentGa=last.reduce((sum,match)=>sum+match.ga,0),gameShare=s.gf+s.ga?100*s.gf/(s.gf+s.ga):null,firstPower=context.history[0]?.[1],powerChange=firstPower==null?null:s.rating-firstPower,run=profileRun(matches),longestWin=profileLongestRun(matches,true),averageMargin=matches.length?matches.reduce((sum,match)=>sum+match.gf-match.ga,0)/matches.length:null,bestPerformance=[...matches].sort((a,b)=>b.performance-a.performance)[0],bestWin=[...matches].sort((a,b)=>b.oppRating-a.oppRating)[0],expected=matches.reduce((sum,match)=>sum+match.expectedWinProbability,0),recentText=last.length?last.length+'–0':'—';
+  let html='<div class="profile-head lab-head"><div><div class="kicker">PLAYER LAB · RANKED</div><h2>'+esc(s.player)+'</h2><p>'+teamName(s.team)+'</p></div><span class="confidence conf-high"><b>High evidence</b><small>'+s.matches+' singles matches · ±'+s.se+'</small></span></div>';
+  html+='<section class="lab-hero"><div class="lab-power"><span>Singles Power</span><strong>'+s.rating+'</strong><small>#0 in '+esc(context.sectionLabel)+'</small></div><div class="lab-hero-grid">'+profileMetric('Record',s.wins+'–0',s.matches+' completed singles')+profileMetric('Game share',gameShare==null?'—':Math.round(gameShare)+'%',s.gf+'–'+s.ga+' games')+profileMetric('Power trend',powerChange==null?'—':(powerChange>=0?'+':'')+powerChange,firstPower!=null?'since first result':'')+profileMetric('Current run',run?'W'+run.length:'—',longestWin?'best win streak '+longestWin:'')+'</div></section>';
+  html+='<section class="profile-section lab-section"><div class="lab-section-head"><div><h3>Match insight</h3></div></div><div class="lab-insight-grid">'+profileMetric('Actual wins',matches.length,'Expected '+expected.toFixed(2)+' wins')+profileMetric('Wins vs expected',signed(matches.length-expected,2)+' wins','Game evidence against fixed opponents')+profileSchedule(context.schedule,context.sos)+profileMetric('vs higher-rated',matches.filter(match=>match.oppRating>s.rating).length+'–0','using current Power as the line')+'</div></section>'+roleSection(insight,s.player)+matchExplorerSection(matches,s.rating);
+  html+='<div class="lab-layout"><div class="lab-main"><section class="profile-section lab-section"><div class="lab-section-head"><div><h3>Momentum</h3></div><span>'+recentText+' last '+last.length+'</span></div>'+auxiliaryHistoryChart(context.history)+'<div class="lab-momentum-grid">'+profileMetric('Last three games',last.length?recentGf+'–'+recentGa:'—',last.length?Math.round(100*recentGf/(recentGf+recentGa))+'% game share':'')+profileMetric('Average margin',averageMargin==null?'—':(averageMargin>=0?'+':'')+averageMargin.toFixed(1),matches.length?'games per match':'')+profileMetric('Uncertainty','±'+s.se,s.matches+' matches modelled')+'</div></section>'+performanceSection(insight)+'</div><aside class="lab-side"><section class="profile-section lab-section"><div class="lab-section-head"><div><h3>Headline results</h3></div></div><div class="lab-highlights">'+profileHighlight('Best-rated win',bestWin,bestWin?'Opponent Power '+bestWin.oppRating:'')+profileHighlight('Top performance',bestPerformance,bestPerformance?'Performance '+bestPerformance.performance:'')+'</div></section><section class="profile-section lab-section lab-doubles"><div class="lab-section-head"><div><h3>Doubles</h3></div></div><p>No doubles evidence recorded.</p></section></aside></div>';
+  html+='<section class="profile-section lab-section"><div class="lab-section-head"><div><h3>Season notes</h3></div></div><div class="lab-context-actions"><button class="button secondary" type="button" data-aux-backstory>See Backstory</button></div></section><section class="profile-section lab-section"><button class="auxiliary-archive-button" type="button" data-aux-open-archive>Open Royal Archive</button></section>';
+  $('#profileContent').innerHTML=html;renderProfileMatchExplorer(matches,s.rating);$('#profileOverlay').classList.remove('hidden');document.body.classList.add('modal-open');
+}
+function openAuxiliaryMatch(match){
+  if(!match)return;
+  $('#resultContent').innerHTML='<div class="result-detail-head"><span>Royal Match · '+esc(match.date||'Date not published')+'</span><h2>'+esc(window.AuxiliaryModule.CANONICAL)+' <b>6–'+match.ga+'</b> '+esc(match.opp)+'</h2><p>Completed singles result</p></div><div class="rubber-list"><div class="rubber-row"><small class="rubber-code" title="Singles 1">Singles 1</small><b class="rubber-home winner">'+esc(window.AuxiliaryModule.CANONICAL)+'</b><strong>6-'+match.ga+'</strong><b class="rubber-away">'+esc(match.opp)+'</b></div></div>';
+  $('#resultOverlay').classList.remove('hidden');document.body.classList.add('modal-open');
+}
+function openAuxiliaryBackstory(context){
+  const s=context.row;
+  $('#roundContent').innerHTML='<div class="overlay-title"><div class="kicker">BACKSTORY</div><h2>'+esc(s.player)+'</h2><p>'+esc(context.sectionLabel)+' · '+esc(D.meta.season_label||'Current season')+'</p></div><p>Across '+s.matches+' completed singles matches, '+esc(s.player)+' has stayed unbeaten while conceding '+s.ga+' games. The schedule has drawn '+context.rivalries.length+' opponents from this section; the rest of the ratings have continued their day entirely normally.</p>';
+  $('#roundOverlay').classList.remove('hidden');document.body.classList.add('modal-open');
+}
 function openProfile(name){
+  if(auxiliaryPlayer(name)){openAuxiliaryProfile(auxiliaryCache);return}
   activeProfilePlayer=name;
   const s=singles.find(row=>row.player===name),d=dinds.find(row=>row.player===name),o=overallData().find(row=>row.player===name),expectation=(D.resultsExpectation?.players||[]).find(row=>row.player===name),matches=playerMatches(name),partners=partnerStats(name),schedule=(D.strengthOfSchedule||[]).find(row=>row.player===name),rank=profileRank(name),cf=confidence(s),history=D.ratingHistory?.players?.[name]||[],insight=playerInsight(name),firstPower=history[0]?.[1],powerChange=s&&firstPower!=null?s.rating-firstPower:null,last=matches.slice(-3),recentWins=last.filter(match=>match.won).length,recentGf=last.reduce((total,match)=>total+match.gf,0),recentGa=last.reduce((total,match)=>total+match.ga,0),gameShare=s&&s.gf+s.ga?100*s.gf/(s.gf+s.ga):null,averageMargin=matches.length?matches.reduce((total,match)=>total+match.gf-match.ga,0)/matches.length:null,run=profileRun(matches),higherRecord=s?profileSplit(matches,match=>(match.oppRating??-Infinity)>s.rating):'—',bestPerformance=[...matches].filter(match=>match.performance!=null).sort((a,b)=>b.performance-a.performance)[0],bestWin=[...matches].filter(match=>match.won&&match.oppRating!=null).sort((a,b)=>b.oppRating-a.oppRating)[0],toughestLoss=[...matches].filter(match=>!match.won&&match.oppRating!=null).sort((a,b)=>b.oppRating-a.oppRating)[0],longestWin=profileLongestRun(matches,true),closest=matches.filter(match=>Math.abs(match.gf-match.ga)<=2).length;
   const titleTeam=s?.team||d?.team||'',record=s?s.wins+'–'+s.losses:'—',qualifier=s?.matches>=4?'Ranked':'Provisional',recentText=last.length?recentWins+'–'+(last.length-recentWins):'—';
@@ -464,7 +531,7 @@ function openHistoricalProfile(name,round){
   $('#profileContent').innerHTML=html;renderProfileMatchExplorer(matches,snap[1],true);$('#profileOverlay').classList.remove('hidden');document.body.classList.add('modal-open');
 }
 function scheduleBand(value, rows){const values=rows.map(row=>row.averageOpponent).sort((a,b)=>a-b),median=values[Math.floor(values.length/2)],spread=Math.max(1,(values[Math.floor(values.length*.75)]-values[Math.floor(values.length*.25)])/1.35),z=(value-median)/spread;return z>=1?'Brutal':z>=.45?'Demanding':z>=-.15?'Tough':z>=-.65?'Typical':z>=-1.1?'Friendly':'Light'}
-function scheduleDivider(label){return'<tr class="schedule-band-divider band-'+label.toLowerCase()+'"><td colspan="5"><span>'+esc(label)+'</span></td></tr>'}function openSchedule(){const rows=D.strengthOfSchedule||[];let last='',body='';for(const row of rows){const band=scheduleBand(row.averageOpponent,rows);if(band!==last){body+=scheduleDivider(band);last=band}body+='<tr><td>#'+row.rank+'</td><td>'+personButton(row.player)+'</td><td>'+teamName(row.team)+'</td><td><b>'+row.averageOpponent+'</b></td><td>'+row.matches+'</td></tr>'}$('#sosContent').innerHTML='<div class="overlay-title"><div class="kicker">STRENGTH OF SCHEDULE</div><h2>Opponent difficulty</h2><p>Higher average opponent Power means a harder schedule.</p></div><div class="table-wrap"><table class="schedule-table"><thead><tr><th>Rank</th><th>Player</th><th>Team</th><th>Average opponent</th><th>Matches</th></tr></thead><tbody>'+body+'</tbody></table></div>';$('#sosOverlay').classList.remove('hidden');document.body.classList.add('modal-open')}
+function scheduleDivider(label){return'<tr class="schedule-band-divider band-'+label.toLowerCase()+'"><td colspan="5"><span>'+esc(label)+'</span></td></tr>'}function openSchedule(){const rows=auxiliaryPlayer(activeProfilePlayer)?auxiliaryCache.sos:(D.strengthOfSchedule||[]);let last='',body='';for(const row of rows){const band=scheduleBand(row.averageOpponent,rows);if(band!==last){body+=scheduleDivider(band);last=band}body+='<tr><td>#'+row.rank+'</td><td>'+personButton(row.player)+'</td><td>'+teamName(row.team)+'</td><td><b>'+row.averageOpponent+'</b></td><td>'+row.matches+'</td></tr>'}$('#sosContent').innerHTML='<div class="overlay-title"><div class="kicker">STRENGTH OF SCHEDULE</div><h2>Opponent difficulty</h2><p>Higher average opponent Power means a harder schedule.</p></div><div class="table-wrap"><table class="schedule-table"><thead><tr><th>Rank</th><th>Player</th><th>Team</th><th>Average opponent</th><th>Matches</th></tr></thead><tbody>'+body+'</tbody></table></div>';$('#sosOverlay').classList.remove('hidden');document.body.classList.add('modal-open')}
 
 function signed(value,digits=1){const n=Number(value);return(Number.isFinite(n)&&n>0?'+':'')+(Number.isFinite(n)?n.toFixed(digits):'—')}
 function profileMatchupResult(name,opponent,round=null){
@@ -607,8 +674,8 @@ function openSettings(){
     <div class="settings-group settings-wide"><h3>Methodology</h3>${methodologyHTML()}</div>
     <div class="settings-group settings-wide history-settings"><h3>History</h3><p>View a past Saturday or Sunday AM season using TROLS results, scorecards and final ladders.</p><div class="history-selects"><label>Competition<select id="historyCompetition"><option value="AA">Saturday AM</option><option value="UA">Sunday AM</option></select></label><label>Season<select id="historySeason"></select></label><label>Section<select id="historySection"></select></label></div><div class="history-info" id="historyInfo">Loading available seasons…</div><div class="history-actions"><button class="button primary" id="historyOpenBtn" type="button">View selected section</button><button class="button secondary" id="historyCurrentBtn" type="button">Return to current season</button></div></div>
     <div class="settings-group settings-wide"><h3>BRTA rules used by the site</h3>${brtaRulesHTML()}</div>
-    <div class="settings-group settings-wide extras-access"><button id="showExtrasBtn" class="button secondary ${window.SidPortal?.isUnlocked?.()?'hidden':''}" type="button">Show Extras</button><button id="hideExtrasBtn" class="button secondary ${window.SidPortal?.isUnlocked?.()?'':'hidden'}" type="button">Hide Extras</button></div>`;
-  $('#settingsOverlay').classList.remove('hidden');document.body.classList.add('modal-open');$('#themeSelect').value=theme;$('#provToggle').onchange=e=>{showProv=e.target.checked;localStorage.setItem('brta-show-provisional',showProv?'1':'0');renderRatings()};$('#themeSelect').onchange=e=>{theme=e.target.value;localStorage.setItem('brta-theme',theme);applyTheme()};$$('[data-accent-choice]').forEach(button=>button.onclick=()=>{accent=button.dataset.accentChoice;localStorage.setItem('brta-accent',accent);applyTheme();$$('[data-accent-choice]').forEach(x=>x.classList.toggle('selected',x===button))});$$('[data-profile-position]').forEach(button=>button.onclick=()=>{profilePosition=button.dataset.profilePosition;localStorage.setItem('brta-profile-position',profilePosition);applyProfilePosition();$$('[data-profile-position]').forEach(x=>x.classList.toggle('selected',x===button))});$('#exportModelAuditBtn').onclick=exportModelAudit;$('#classicModeBtn').onclick=()=>switchInterface('classic');$('#futureModeBtn').onclick=()=>switchInterface('future');hydrateHistorySettings();window.SidPortal?.bindSettings?.()
+    <div class="settings-group settings-wide extras-access"><button id="showExtrasBtn" class="button secondary ${window.AuxiliaryPortal?.isUnlocked?.()?'hidden':''}" type="button">Show Extras</button><button id="hideExtrasBtn" class="button secondary ${window.AuxiliaryPortal?.isUnlocked?.()?'':'hidden'}" type="button">Hide Extras</button></div>`;
+  $('#settingsOverlay').classList.remove('hidden');document.body.classList.add('modal-open');$('#themeSelect').value=theme;$('#provToggle').onchange=e=>{showProv=e.target.checked;localStorage.setItem('brta-show-provisional',showProv?'1':'0');renderRatings()};$('#themeSelect').onchange=e=>{theme=e.target.value;localStorage.setItem('brta-theme',theme);applyTheme()};$$('[data-accent-choice]').forEach(button=>button.onclick=()=>{accent=button.dataset.accentChoice;localStorage.setItem('brta-accent',accent);applyTheme();$$('[data-accent-choice]').forEach(x=>x.classList.toggle('selected',x===button))});$$('[data-profile-position]').forEach(button=>button.onclick=()=>{profilePosition=button.dataset.profilePosition;localStorage.setItem('brta-profile-position',profilePosition);applyProfilePosition();$$('[data-profile-position]').forEach(x=>x.classList.toggle('selected',x===button))});$('#exportModelAuditBtn').onclick=exportModelAudit;$('#classicModeBtn').onclick=()=>switchInterface('classic');$('#futureModeBtn').onclick=()=>switchInterface('future');hydrateHistorySettings();window.AuxiliaryPortal?.bindSettings?.()
 }
 function applyProfilePosition(){$('#profileOverlay').dataset.position=profilePosition}
 function runModeTransition(complete,{title='Switching interface',message='Preparing layout…',variant='default'}={}){const ov=$('#modeSwitchOverlay'),ring=$('#progressRing');ov.classList.toggle('royal-transition',variant==='royal');ov.querySelector('h2').textContent=title;$('#switchStatus').textContent=message;ring.style.setProperty('--progress','0deg');$('#progressPct').textContent='0%';ov.classList.remove('hidden');let p=0;const timer=setInterval(()=>{p=Math.min(100,p+4);ring.style.setProperty('--progress',p*3.6+'deg');$('#progressPct').textContent=p+'%';if(p===100){clearInterval(timer);setTimeout(()=>{try{complete()}finally{ov.classList.add('hidden');ov.classList.remove('royal-transition')}},150)}},20)}
@@ -617,6 +684,8 @@ window.runBRTAInterfaceTransition=runModeTransition;
 function renderAll(){statusStrip();teamOptions();renderRatings();renderTeams();renderStandings();renderResults();renderFixtures();$('#roundBtn').textContent=D.roundOverview?(D.roundOverview.label||('Round '+D.roundOverview.round))+' overview':'Latest round'}
 
 document.addEventListener('click',e=>{
+  if(e.target.closest('[data-aux-backstory]')){if(auxiliaryPlayer(activeProfilePlayer))openAuxiliaryBackstory(auxiliaryCache);return}
+  if(e.target.closest('[data-aux-open-archive]')){if(auxiliaryPlayer(activeProfilePlayer))window.AuxiliaryPortal?.open?.();return}
   const choice=e.target.closest('[data-choice-id]');if(choice){const id=choice.dataset.choiceId,value=choice.dataset.choiceValue;closeChoices();if(id==='competitionSelect'){const code=fillSections(value);loadSection(code)}else loadSection(value);return}
   if(!e.target.closest('.section-choice'))closeChoices();
   const searchScopeChoice=e.target.closest('[data-search-scope]');if(searchScopeChoice){setRatingScope(searchScopeChoice.dataset.searchScope);return}
@@ -634,7 +703,7 @@ document.addEventListener('click',e=>{
   if(e.target.closest('[data-start-custom-prediction]')){startCustomPrediction();return}
   const lineupHistory=e.target.closest('[data-lineup-history]');if(lineupHistory){openTeamLineupHistory(lineupHistory.dataset.lineupHistory);return}
   const lineupFixture=e.target.closest('[data-lineup-fixture]');if(lineupFixture){close('#lineupHistoryOverlay');openMatch(lineupFixture.dataset.lineupFixture);return}
-  const rivalryOpen=e.target.closest('[data-open-rivalries]');if(rivalryOpen){const throughRound=Number(rivalryOpen.dataset.rivalryRound)||0,insight=throughRound?historicalInsight(rivalryOpen.dataset.openRivalries,throughRound):playerInsight(rivalryOpen.dataset.openRivalries);openRivalries(rivalryOpen.dataset.openRivalries,insight,throughRound);return}
+  const rivalryOpen=e.target.closest('[data-open-rivalries]');if(rivalryOpen){const throughRound=Number(rivalryOpen.dataset.rivalryRound)||0,name=rivalryOpen.dataset.openRivalries,insight=auxiliaryPlayer(name)?auxiliaryCache.insight:(throughRound?historicalInsight(name,throughRound):playerInsight(name));openRivalries(name,insight,throughRound);return}
   const rivalryFixture=e.target.closest('[data-rival-fixture]');if(rivalryFixture){close('#rivalryOverlay');close('#profileOverlay');openMatch(rivalryFixture.dataset.rivalFixture,activeProfilePlayer);return}
   if(e.target.closest('[data-run-simulation]')){runPredictionSimulation();return}
   const autoOrder=e.target.closest('[data-auto-order]');if(autoOrder){const side=autoOrder.dataset.autoOrder,match=currentPredictionMatch();if(match){selectedPrediction[side].manualOrder=false;selectedPrediction.simulation=null;refreshPrediction()}return}
@@ -665,5 +734,10 @@ $('#search').oninput=renderRatings;$('#teamFilter').onchange=renderRatings;$('#c
 $('#profileClose').onclick=()=>close('#profileOverlay');$('#roundClose').onclick=()=>close('#roundOverlay');$('#settingsClose').onclick=()=>close('#settingsOverlay');$('#resultClose').onclick=()=>close('#resultOverlay');
 $('#predictionClose').onclick=()=>close('#predictionOverlay');$('#lineupHistoryClose').onclick=()=>close('#lineupHistoryOverlay');$('#sosClose').onclick=()=>close('#sosOverlay');$('#rivalryClose').onclick=()=>close('#rivalryOverlay');$('#searchOptionsBtn').onclick=openSearchOptions;$('#searchOptionsClose').onclick=()=>close('#searchOptionsOverlay');
 document.addEventListener('keydown',e=>{if(e.key==='Escape')$$('.overlay:not(.hidden)').forEach(o=>close('#'+o.id))});
+window.addEventListener('brta-module-toggle',()=>{
+  cancelAuxiliaryReveal();
+  if(!auxiliaryEnabled()){auxiliaryCache=null;auxiliaryCacheKey='';if(activeProfilePlayer===window.AuxiliaryModule?.CANONICAL){activeProfilePlayer=null;close('#profileOverlay');$('#profileMatchExplorer')?.classList.add('hidden')}}
+  if(D){teamOptions();renderRatings()}
+});
 async function startApp(){applyProfilePosition();viewCatalog=DATA.catalog||[];setupSelectors();showSyncToast();const saved=readHistorySelection();if(!saved){await loadSection(choiceValue('sectionSelect'));ensureHistoryCatalog();return}const catalog=await ensureHistoryCatalog(),season=catalog?.seasons.find(x=>x.id===saved.seasonId),section=season?.sections.find(x=>x.section_code===saved.sectionCode);if(season&&section){activeHistorySeasonId=season.id;viewCatalog=historySeasonSections(season);setupSelectors();primeArchiveGlobalRows();await loadSection(section.section_code)}else{activeHistorySeasonId=null;viewCatalog=DATA.catalog||[];setupSelectors();await loadSection(choiceValue('sectionSelect'))}}
 startApp();

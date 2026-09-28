@@ -13,11 +13,18 @@
   <link rel="icon" type="image/png" sizes="192x192" href="assets/brta-icon-192.png?v=2">
   <link rel="manifest" href="manifest.webmanifest?v=2">
   <title>BRTA Power Ratings</title>
-  <style>#sidPortalHomeEntry.hidden,#sidPortalEntry.hidden,#royalArchive.hidden{display:none!important}</style>
+  <style>
+    #royalArchive.hidden{display:none!important}
+    .auxiliary-reveal{animation:auxiliary-row-in .3s ease both}
+    .auxiliary-archive-button{position:relative;width:100%;overflow:hidden;border:1px solid #dca83b;background:linear-gradient(110deg,#2b1b07,#9d701c,#2b1b07);background-size:220% 100%;box-shadow:0 0 18px rgba(215,165,48,.2);color:#fff1c5;padding:13px 16px;font:800 12px/1 var(--display-font,Arial,sans-serif);letter-spacing:.08em;text-transform:uppercase;animation:auxiliary-sheen 5s linear infinite}
+    .auxiliary-archive-button:hover,.auxiliary-archive-button:focus-visible{outline:0;box-shadow:0 0 0 2px rgba(246,200,82,.28),0 0 25px rgba(225,174,54,.35)}
+    @keyframes auxiliary-row-in{from{opacity:0}to{opacity:1}}@keyframes auxiliary-sheen{to{background-position:220% center}}
+    @media(prefers-reduced-motion:reduce){.auxiliary-reveal,.auxiliary-archive-button{animation:none}}
+  </style>
   <script>
     (function(){var m=localStorage.getItem('brta-interface')||'future',t=localStorage.getItem('brta-theme')||'auto',a=localStorage.getItem('brta-accent')||'yellow',d=t==='dark'||(t==='auto'&&matchMedia('(prefers-color-scheme: dark)').matches),future=m!=='classic',c=future?(d?'#101109':'#f3f2e9'):'#173f63',l=document.createElement('link');document.documentElement.dataset.interface=m;document.documentElement.dataset.accent=a;document.documentElement.style.backgroundColor=c;document.documentElement.style.colorScheme=d?'dark':'light';document.getElementById('themeColor').content=c;l.id='siteStyles';l.rel='stylesheet';l.href=future?'future.css?v=30':'style.css?v=36';document.head.appendChild(l)})()
   </script>
-  <link rel="stylesheet" href="archive.css?v=8">
+  <link rel="stylesheet" href="archive.css?v=9">
 </head>
 <body>
 <header class="site-header">
@@ -31,14 +38,9 @@
     <button id="roundBtn" class="button secondary">Latest round</button>
     <button id="clubZoneBtn" class="button secondary" aria-haspopup="dialog" aria-controls="clubPickerOverlay">Club Zone</button>
     <button id="settingsBtn" class="button secondary">Settings</button>
-    <button id="sidPortalEntry" class="sid-portal-entry hidden" type="button">Glorious Sid Basa Portal</button>
   </div>
 </header>
 <main class="wrap">
-  <section id="sidPortalHomeEntry" class="sid-portal-home hidden" aria-label="Glorious Sid Basa Portal">
-    <div class="sid-portal-home-copy"><span>Private collection · royal access</span><h2>Glorious Sid Basa Portal</h2><p>The complete 2027 archive, now unsealed.</p></div>
-    <button id="sidPortalHomeButton" class="sid-portal-home-button" type="button">Enter the Royal Archive <b aria-hidden="true">→</b></button>
-  </section>
   <section class="section-picker" aria-label="Competition and section">
     <div class="section-choice" id="competitionPicker">
       <span class="choice-label">Competition</span>
@@ -107,7 +109,6 @@
 <div id="profileOverlay" class="overlay hidden"><div class="overlay-backdrop" data-close="1"></div><aside class="profile-sheet"><button id="profileClose" class="close-btn" aria-label="Close">×</button><div id="profileContent"></div></aside><aside id="profileMatchExplorer" class="profile-match-explorer hidden" aria-label="Match explorer"><div id="profileMatchExplorerContent"></div></aside></div>
 <div id="searchOptionsOverlay" class="overlay hidden"><div class="overlay-backdrop" data-search-options-close="1"></div><section class="search-options-sheet" role="dialog" aria-modal="true" aria-labelledby="searchOptionsTitle"><button id="searchOptionsClose" class="close-btn" type="button" aria-label="Close">×</button><div class="overlay-title"><div class="kicker">SEARCH</div><h2 id="searchOptionsTitle">Search scope</h2></div><div class="search-scope-choice" role="group" aria-label="Search players in"><button type="button" data-search-scope="section">This section</button><button type="button" data-search-scope="all">All sections</button></div></section></div><div id="rivalryOverlay" class="overlay hidden"><div class="overlay-backdrop" data-rivalry-close="1"></div><aside class="rivalry-sheet"><button id="rivalryClose" class="close-btn" type="button" aria-label="Close">×</button><div id="rivalryContent"></div></aside></div><div id="roundOverlay" class="overlay hidden"><div class="overlay-backdrop" data-round-close="1"></div><aside class="round-sheet"><button id="roundClose" class="close-btn" aria-label="Close">×</button><div id="roundContent"></div></aside></div>
 <div id="settingsOverlay" class="overlay hidden"><div class="overlay-backdrop" data-settings-close="1"></div><aside class="settings-sheet"><button id="settingsClose" class="close-btn" aria-label="Close">×</button><div id="settingsContent"></div></aside></div>
-<div id="extrasOverlay" class="overlay hidden"><div class="overlay-backdrop" data-extras-close="1"></div><section class="extras-sheet" role="dialog" aria-modal="true" aria-labelledby="extrasTitle"><button id="extrasClose" class="close-btn" type="button" aria-label="Close extras">×</button><div class="overlay-title"><div class="kicker">EXTRAS</div><h2 id="extrasTitle">Access</h2></div><form id="extrasForm"><label class="extras-password-label" for="extrasPassword">Password</label><input id="extrasPassword" type="password" autocomplete="off" required><p id="extrasState" class="extras-state" aria-live="polite"></p><button class="button primary" type="submit">Continue</button></form></section></div>
 <div id="resultOverlay" class="overlay hidden"><div class="overlay-backdrop" data-result-close="1"></div><aside class="result-sheet"><button id="resultClose" class="close-btn" aria-label="Close">×</button><div id="resultContent"></div></aside></div>
 <div id="predictionOverlay" class="overlay hidden"><div class="overlay-backdrop" data-prediction-close="1"></div><aside class="prediction-sheet"><button id="predictionClose" class="close-btn" aria-label="Close">×</button><div id="predictionContent"></div></aside></div>
 <div id="lineupHistoryOverlay" class="overlay hidden"><div class="overlay-backdrop" data-lineup-history-close="1"></div><aside class="prediction-sheet lineup-history-sheet"><button id="lineupHistoryClose" class="close-btn" aria-label="Close">×</button><div id="lineupHistoryContent"></div></aside></div>
@@ -117,8 +118,9 @@
 <div id="syncToastHost" class="sync-toast-host" aria-live="polite" aria-atomic="true"></div>
 <script src="data.js?v=16"></script>
 <script src="prediction.js?v=2"></script>
-    <script src="app.js?v=33"></script>
-<script src="archive.js?v=8"></script>
+<script src="auxiliary-module.js?v=1"></script>
+    <script src="app.js?v=34"></script>
+<script src="archive.js?v=9"></script>
 <script src="pwa.js?v=1"></script>
 </body>
 </html>

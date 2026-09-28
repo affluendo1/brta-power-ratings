@@ -1,6 +1,6 @@
 (()=>{
-  const UNLOCK_KEY='brta-extras-unlocked',INTRO_KEY='brta-archive-intro-seen',ROUTE='#archive';
-  const archive=document.querySelector('#royalArchive'),entry=document.querySelector('#sidPortalEntry'),homeEntry=document.querySelector('#sidPortalHomeEntry'),homeButton=document.querySelector('#sidPortalHomeButton'),extras=document.querySelector('#extrasOverlay'),password=document.querySelector('#extrasPassword'),extrasForm=document.querySelector('#extrasForm'),extrasState=document.querySelector('#extrasState');
+  const UNLOCK_KEY='brta-module-enabled-v1',INTRO_KEY='brta-archive-intro-seen';
+  const archive=document.querySelector('#royalArchive');
   const reduced=matchMedia('(prefers-reduced-motion: reduce)');
   const tracks=[
     {title:'Hypnotize · The Notorious B.I.G.',src:'assets/hypnotize.mp3'},
@@ -19,9 +19,8 @@
   let archivePreload=null,gongContext=null,gongSource=null,gongGain=null;
   music.addEventListener('ended',()=>{if(portalOpen)setTrack(track+1,true)});
 
-  const unlocked=()=>sessionStorage.getItem(UNLOCK_KEY)==='1';
-  const updateEntry=()=>{const visible=unlocked();entry.classList.toggle('hidden',!visible);homeEntry.classList.toggle('hidden',!visible)};
-  const setHash=(value)=>history.replaceState(null,'',location.pathname+location.search+value);
+  const unlocked=()=>localStorage.getItem(UNLOCK_KEY)==='1';
+  const updateEntry=()=>{};
   const transition=(done,copy)=>{
     if(typeof window.runBRTAInterfaceTransition==='function')window.runBRTAInterfaceTransition(done,copy);
     else done();
@@ -46,31 +45,18 @@
   }
   function bindSettings(){
     const show=document.querySelector('#showExtrasBtn'),hide=document.querySelector('#hideExtrasBtn');
-    if(show)show.onclick=openExtras;
+    if(show)show.onclick=unlock;
     if(hide)hide.onclick=revokeExtras;
     syncExtrasAccessControls();
   }
   function syncExtrasAccessControls(){const visible=unlocked(),show=document.querySelector('#showExtrasBtn'),hide=document.querySelector('#hideExtrasBtn');show?.classList.toggle('hidden',visible);hide?.classList.toggle('hidden',!visible)}
-  function openExtras(){
-    returnFocus=document.activeElement;extras.classList.remove('hidden');document.body.classList.add('modal-open');password.value='';extrasState.textContent='';extrasState.className='extras-state';setTimeout(()=>password.focus(),0);
-  }
-  function closeExtras(){
-    extras.classList.add('hidden');if(!document.querySelector('.overlay:not(.hidden)'))document.body.classList.remove('modal-open');returnFocus?.focus?.();
-  }
   function unlock(){
-    sessionStorage.setItem(UNLOCK_KEY,'1');sessionStorage.removeItem(INTRO_KEY);extrasState.textContent='Yep.';extrasState.className='extras-state good';updateEntry();syncExtrasAccessControls();setTimeout(closeExtras,680);
+    localStorage.setItem(UNLOCK_KEY,'1');sessionStorage.removeItem(INTRO_KEY);updateEntry();syncExtrasAccessControls();window.dispatchEvent(new Event('brta-module-toggle'));
   }
   function revokeExtras(){
-    sessionStorage.removeItem(UNLOCK_KEY);sessionStorage.removeItem(INTRO_KEY);updateEntry();syncExtrasAccessControls();
+    localStorage.removeItem(UNLOCK_KEY);sessionStorage.removeItem(INTRO_KEY);updateEntry();syncExtrasAccessControls();if(portalOpen)leavePortal();window.dispatchEvent(new Event('brta-module-toggle'));
   }
-  extrasForm.addEventListener('submit',event=>{
-    event.preventDefault();
-    if(password.value==='SIDBASA')unlock();
-    else{extrasState.textContent='Nope.';extrasState.className='extras-state bad';password.select();}
-  });
-  document.querySelector('#extrasClose').addEventListener('click',closeExtras);
-  extras.addEventListener('click',event=>{if(event.target.dataset.extrasClose)closeExtras()});
-  document.addEventListener('keydown',event=>{if(event.key==='Escape'&&!extras.classList.contains('hidden')){closeExtras();return}const box=archive.querySelector('[data-lightbox]');if(box?.classList.contains('hidden'))return;if(event.key==='Escape')closeLightbox();else if(event.key==='ArrowLeft'){event.preventDefault();navigateLightbox(-1)}else if(event.key==='ArrowRight'){event.preventDefault();navigateLightbox(1)}});
+  document.addEventListener('keydown',event=>{const box=archive.querySelector('[data-lightbox]');if(box?.classList.contains('hidden'))return;if(event.key==='Escape')closeLightbox();else if(event.key==='ArrowLeft'){event.preventDefault();navigateLightbox(-1)}else if(event.key==='ArrowRight'){event.preventDefault();navigateLightbox(1)}});
 
   const trophySvg=(label,variant)=>`<svg class="royal-trophy trophy-${variant}" viewBox="0 0 120 128" role="img" aria-label="${label} trophy"><path class="trophy-cup" d="M31 13h58v21c0 25-13 41-29 41S31 59 31 34V13Z"/><path class="trophy-handle" d="M31 23H14c0 25 10 38 29 38M89 23h17c0 25-10 38-29 38"/><path class="trophy-stem" d="M60 75v22M40 106h40M48 97h24"/><circle class="trophy-gem" cx="60" cy="40" r="7"/></svg>`;
   const backgroundSymbols=['♛','♕','♚','♔','♛','♕','♚','♔','🎾','🎾','🎾','🎾','🎾','♛','♕','♚','⚜','⚜','✦','✦','✧','♛','🎾','♔'];
@@ -142,9 +128,9 @@
   function fadeMusic(target,duration,done){clearInterval(fadeTimer);const start=music.volume,steps=Math.max(1,Math.round(duration/45));let tick=0;fadeTimer=setInterval(()=>{tick++;music.volume=start+(target-start)*(tick/steps);syncMusic();if(tick>=steps){clearInterval(fadeTimer);music.volume=target;done?.()}},45)}
   function beginQuotes(){const quote=archive.querySelector('[data-archive-quote]'),quotes=['“The racket chose him.” — Royal Archive','“Four majors. One year. Suspicious.” — Statistical Department','“The throne did not make the champion. It merely fitted.” — Court Historian','“He made the draw look ceremonial.” — Archive Clerk','“Every point was a coronation rehearsal.” — The North Stand'];let index=0;clearInterval(quoteTimer);quoteTimer=setInterval(()=>{if(!portalOpen||!quote)return;quote.classList.add('fading');setTimeout(()=>{index=(index+1)%quotes.length;quote.textContent=quotes[index];quote.classList.remove('fading')},220)},5200)}
   function showIntro(){const intro=archive.querySelector('.archive-intro');if(sessionStorage.getItem(INTRO_KEY)==='1'||reduced.matches){intro.hidden=true;return}intro.hidden=false;setTimeout(()=>{intro.querySelector('p').textContent='SIDDHARTH R. BASA'},560);setTimeout(()=>{intro.classList.add('leaving');sessionStorage.setItem(INTRO_KEY,'1');setTimeout(()=>{intro.hidden=true;intro.classList.remove('leaving')},470)},1350)}
-  function enterPortal(){if(!unlocked())return;returnFocus=document.activeElement;preloadArchiveMedia();playMusic();transition(()=>{setHash(ROUTE);activatePortal()},{title:'THE GLORIOUS SID BASA PORTAL',message:'Summoning the Royal Archive…',variant:'royal'})}
-  function activatePortal(){if(!unlocked()){setHash('');return}preloadArchiveMedia();renderPortal();portalOpen=true;document.body.classList.add('portal-active');archive.classList.remove('hidden');archive.setAttribute('aria-hidden','false');document.title='Royal Tennis Archive';showIntro();beginQuotes();syncMusic();if(!music.paused)drawSpectrum();setTimeout(()=>archive.querySelector('[data-archive-return]')?.focus(),0)}
-  function leavePortal(){if(!portalOpen)return;closeLightbox();transition(()=>{portalOpen=false;music.pause();stopSpectrum();clearInterval(quoteTimer);document.body.classList.remove('portal-active');archive.classList.add('hidden');archive.setAttribute('aria-hidden','true');setHash('');document.title='BRTA Power Ratings';returnFocus?.focus?.()},{title:'Returning to ratings',message:'Restoring BRTA Power Ratings…'})}
+  function enterPortal(){if(!unlocked())return;returnFocus=document.activeElement;preloadArchiveMedia();playMusic();transition(activatePortal,{title:'THE GLORIOUS SID BASA PORTAL',message:'Summoning the Royal Archive…',variant:'royal'})}
+  function activatePortal(){if(!unlocked())return;preloadArchiveMedia();renderPortal();portalOpen=true;document.body.classList.add('portal-active');archive.classList.remove('hidden');archive.setAttribute('aria-hidden','false');document.title='Royal Tennis Archive';showIntro();beginQuotes();syncMusic();if(!music.paused)drawSpectrum();setTimeout(()=>archive.querySelector('[data-archive-return]')?.focus(),0)}
+  function leavePortal(){if(!portalOpen)return;closeLightbox();transition(()=>{portalOpen=false;music.pause();stopSpectrum();clearInterval(quoteTimer);document.body.classList.remove('portal-active');archive.classList.add('hidden');archive.setAttribute('aria-hidden','true');document.title='BRTA Power Ratings';returnFocus?.focus?.()},{title:'Returning to ratings',message:'Restoring BRTA Power Ratings…'})}
   function sidEffect(){
     if(sidBusy||!portalOpen)return;
     sidBusy=true;
@@ -185,10 +171,7 @@
       },780);
     });
   }
-  entry.addEventListener('click',enterPortal);homeButton.addEventListener('click',enterPortal);
-  window.addEventListener('hashchange',()=>{if(location.hash===ROUTE){if(unlocked()&&!portalOpen)activatePortal();else if(!unlocked())setHash('')}else if(portalOpen)leavePortal()});
-  window.SidPortal={bindSettings,open:enterPortal,isUnlocked:unlocked,locked:()=>!unlocked()};
+  window.AuxiliaryPortal={bindSettings,open:enterPortal,isUnlocked:unlocked,locked:()=>!unlocked()};
   updateEntry();bindSettings();
-  preloadArchiveMedia();
-  if(location.hash===ROUTE){if(unlocked())activatePortal();else setHash('')}
+  if(unlocked())queueMicrotask(()=>window.dispatchEvent(new Event('brta-module-toggle')));
 })();
