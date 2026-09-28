@@ -63,7 +63,7 @@
   const sideQuotes=['“The court remembers.”','“No throne without footwork.”','“The racket chose him.”','“Four crowns. One season.”','“The baseline bowed first.”','“Monarch of match point.”','“A blade does not blink.”','“History arrived early.”'];
   const archiveCopy=(chunks,...values)=>String.raw({raw:chunks},...values).replaceAll('FICTIONAL ARCHIVE INTERVIEW · 2027','ROYAL ARCHIVE · 2027').replaceAll('FICTIONAL ARCHIVE PRACTICE NOTE · JAYDEN BONE','PRACTICE NOTE · JAYDEN BONE');
   function portalMarkup(){
-    const symbols=backgroundSymbols.map((symbol,index)=>{const left=index%2===0,x=left?2+(index*11)%14:84+(index*13)%14;return`<i class="royal-idle-symbol symbol-${index%8}" style="--i:${index};--x:${x};--delay:${-(index%9)*1.2}s" aria-hidden="true">${symbol}</i>`}).join('');
+    const symbols=backgroundSymbols.map((symbol,index)=>{const left=index%2===0,x=left?1+(index*5)%8:91+(index*5)%8;return`<i class="royal-idle-symbol symbol-${index%8}" style="--i:${index};--x:${x};--delay:${-(index%9)*1.2}s" aria-hidden="true">${symbol}</i>`}).join('');
     const quotes=sideQuotes.map((quote,index)=>`<p class="royal-side-quote quote-${index}" style="--q:${index}" aria-hidden="true">${quote}</p>`).join('');
     return archiveCopy`<div class="archive-intro" aria-live="polite" aria-atomic="true" hidden><p>ACCESSING ROYAL ARCHIVE…</p></div><div class="royal-atmosphere" aria-hidden="true">${symbols}</div><div class="royal-quote-field">${quotes}</div>
       <div class="archive-utility"><button class="archive-return" type="button" data-archive-return>Return to ratings</button></div>
@@ -138,13 +138,12 @@
     fadeMusic(0,520,()=>{
       if(wasPlaying)music.pause();
       setTimeout(()=>{
-        playRoyalGong();
         const stage=document.createElement('div');
         stage.className='sid-rise-stage';
         stage.setAttribute('aria-hidden','true');
         const palette=['#fff7d2','#f4c650','#bc7827','#5f99ff','#f15b65','#75d3c8','#ffe9a1'];
         for(let i=0;i<260;i++){
-          const piece=document.createElement('i'),leftSide=i%2===0,edge=leftSide?Math.round(2+Math.random()*10):Math.round(88+Math.random()*10),outward=leftSide?-1:1;
+          const piece=document.createElement('i'),leftSide=i%2===0,edge=leftSide?Math.round(2+Math.random()*7):Math.round(91+Math.random()*7),outward=leftSide?-1:1;
           piece.className='royal-confetti';
           piece.style.setProperty('--origin-x',`${edge}vw`);
           piece.style.setProperty('--origin-y',`${Math.round(66+Math.random()*29)}vh`);
@@ -160,14 +159,21 @@
         figure.src='assets/sid-royal-rise-transparent.png';
         figure.alt='';
         stage.appendChild(figure);
-        document.body.appendChild(stage);
-        if(!reduced.matches)document.body.classList.add('royal-shake');
-        setTimeout(()=>document.body.classList.remove('royal-shake'),reduced.matches?500:2750);
-        const stay=reduced.matches?1200:8500;
-        setTimeout(()=>{
-          if(wasPlaying){music.volume=0;playMusic();fadeMusic(restoreVolume,2400)}
-        },stay);
-        setTimeout(()=>{stage.remove();sidBusy=false},stay+(reduced.matches?450:1850));
+        const beginArrival=()=>{
+          if(!portalOpen){sidBusy=false;return}
+          document.body.appendChild(stage);
+          playRoyalGong();
+          if(!reduced.matches)stage.classList.add('royal-shake');
+          setTimeout(()=>stage.classList.remove('royal-shake'),reduced.matches?0:3300);
+          const stay=reduced.matches?1200:8500;
+          setTimeout(()=>{
+            if(wasPlaying){music.volume=0;playMusic();fadeMusic(restoreVolume,2400)}
+          },stay);
+          setTimeout(()=>{stage.remove();sidBusy=false},stay+(reduced.matches?450:1850));
+        };
+        if(typeof figure.decode==='function')figure.decode().then(beginArrival,beginArrival);
+        else if(figure.complete)beginArrival();
+        else{figure.addEventListener('load',beginArrival,{once:true});figure.addEventListener('error',beginArrival,{once:true})}
       },780);
     });
   }
