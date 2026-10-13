@@ -692,6 +692,7 @@ def round_rating_history(singles, player_teams, round_calendar=None):
     """
     history = defaultdict(list)
     rounds = []
+    tables = {}
     if round_calendar is None:
         round_calendar = [
             {"round": rnd, "date": str(singles[singles["round"].astype(int).eq(rnd)].iloc[0]["date"])}
@@ -712,6 +713,7 @@ def round_rating_history(singles, player_teams, round_calendar=None):
         return {player: team_counts.most_common(1)[0][0] for player, team_counts in counts.items()}
 
     previous = {}
+    fitted = []
     for item in round_calendar:
         rnd, date = int(item["round"]), str(item["date"])
         observed = singles[singles["round"].astype(int).le(rnd)].copy()
@@ -730,8 +732,30 @@ def round_rating_history(singles, player_teams, round_calendar=None):
             }
         for player, snap in previous.items():
             history[player].append(snap)
+        tables[str(rnd)] = fitted
         rounds.append({"round": rnd, "date": date, "players": len(previous)})
-    return {"rounds": rounds, "players": dict(history)}
+    return {"rounds": rounds, "players": dict(history), "tables": tables}
+
+
+def round_doubles_history(singles, doubles, round_calendar, *, rubbers_format=False):
+    """Fit doubles using only evidence available at each published round."""
+    tables, previous = {}, {"pairs": [], "doublesPlayers": []}
+    for item in round_calendar:
+        rnd = int(item["round"])
+        observed = standard_doubles_rows(doubles[doubles["round"].astype(int).le(rnd)].copy())
+        valid = observed["valid_for_rating"].astype(str).str.casefold().isin({"true", "1", "yes"}) if "valid_for_rating" in observed else pd.Series(True, index=observed.index)
+        if len(observed[valid & observed["round"].astype(int).eq(rnd)]) or (len(observed[valid]) and not previous["pairs"]):
+            player_teams, pair_teams = team_maps(singles[singles["round"].astype(int).le(rnd)], observed)
+            pair_rows = website_rows(fit_pairs(observed), pair_teams)
+            individual_rows = website_rows(fit_individual_doubles(observed, rubbers_format=rubbers_format), player_teams)
+            powers = {row["player"]: row["rating"] for row in individual_rows}
+            for pair in pair_rows:
+                members = pair_members(pair["player"])
+                pair["individualAverage"] = round(sum(powers[player] for player in members) / len(members))
+                pair["pairEffect"] = pair["rating"] - pair["individualAverage"]
+            previous = {"pairs": pair_rows, "doublesPlayers": individual_rows}
+        tables[str(rnd)] = previous
+    return {"tables": tables}
 
 
 def _short_set_win_probability(game_probability, *, green_ball=False):
@@ -1433,6 +1457,7 @@ def build_section(meta, *, sections_dir=None):
             if label.casefold() in {"nan", "none"}: label=""
             round_calendar.append({"round":rnd,"date":date,"label":label})
     history=round_rating_history(singles,player_teams,round_calendar)
+    doubles_history=round_doubles_history(singles,standard_doubles,round_calendar,rubbers_format=rules["format"]=="rubbers")
     matchup=matchup_matrix(srows,rules)
     expectation=results_expectation(singles,history,player_teams,rules) if len(singles) else {"players":[],"matches":[]}
     schedule=strength_of_schedule(singles,rmap,player_teams)
@@ -1461,6 +1486,7 @@ def build_section(meta, *, sections_dir=None):
         "doublesIndividuals":drows,
         "singlesMatches":singles_match_array(singles),
         "ratingHistory":history,
+        "doublesRatingHistory":doubles_history,
         "matchupMatrix":matchup,
         "resultsExpectation":expectation,
         "strengthOfSchedule":schedule,

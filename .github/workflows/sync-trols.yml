@@ -12,6 +12,7 @@ on:
       - "generate_site_data.py"
       - "generate_archive_site_data.py"
       - "app.js"
+      - "rating-history.js"
       - "index.html"
       - "style.css"
       - "future.css"
@@ -95,6 +96,7 @@ jobs:
         run: |
           python -m unittest discover -s tests -v
           node tests/test_prediction.js
+          node tests/test_rating_history.js
 
       - name: Recalculate all ratings and website data
         run: python generate_site_data.py

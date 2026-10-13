@@ -3,7 +3,7 @@ import unittest
 import pandas as pd
 
 from generate_site_data import (_short_set_win_probability, brta_scoring_rules, fixture_points, matchup_matrix,
-                                 reconstructed_standings, results_expectation, round_rating_history,
+                                 reconstructed_standings, results_expectation, round_rating_history, round_doubles_history,
                                  strength_of_schedule, team_order_evidence, team_rows)
 
 
@@ -115,6 +115,10 @@ class HistoricalDataTests(unittest.TestCase):
         self.assertEqual([row["round"] for row in history["rounds"]], [1, 2])
         self.assertEqual(history["players"]["Alice"][0][3], 1)
         self.assertEqual(history["players"]["Alice"][1][3], 2)
+        first = next(row for row in history["tables"]["1"] if row["player"] == "Alice")
+        second = next(row for row in history["tables"]["2"] if row["player"] == "Alice")
+        self.assertEqual((first["matches"], first["wins"], first["gf"]), (1, 1, 6))
+        self.assertEqual((second["matches"], second["wins"], second["gf"]), (2, 2, 12))
         schedule = strength_of_schedule(self.singles, {"Alice":1700,"Amy":1600,"Bob":1400,"Ben":1500}, teams)
         self.assertEqual(schedule[0]["rank"], 1)
         self.assertEqual(len(schedule), 4)
@@ -131,6 +135,22 @@ class HistoricalDataTests(unittest.TestCase):
         alice = history["players"]["Alice"]
         self.assertEqual(alice[-1][0], 3)
         self.assertEqual(alice[-1][1:4], alice[-2][1:4])
+        self.assertEqual(history["tables"]["3"], history["tables"]["2"])
+
+    def test_doubles_tables_exclude_future_matches_and_carry_washouts(self):
+        doubles = pd.DataFrame([
+            {"round":1,"date":"1 Jul 26","status":"Completed","valid_for_rating":"true",
+             "home_team":"A","away_team":"B","home_pair":"Alice / Amy","away_pair":"Bob / Ben",
+             "home_games":6,"away_games":4,"winning_pair":"Alice / Amy"},
+            {"round":2,"date":"8 Jul 26","status":"Completed","valid_for_rating":"true",
+             "home_team":"A","away_team":"B","home_pair":"Alice / Amy","away_pair":"Bob / Ben",
+             "home_games":2,"away_games":6,"winning_pair":"Bob / Ben"},
+        ])
+        calendar = [{"round":1,"date":"1 Jul 26"},{"round":2,"date":"8 Jul 26"},{"round":3,"date":"15 Jul 26"}]
+        history = round_doubles_history(self.singles, doubles, calendar)["tables"]
+        self.assertTrue(all(row["matches"] == 1 for row in history["1"]["pairs"]))
+        self.assertTrue(all(row["matches"] == 2 for row in history["2"]["pairs"]))
+        self.assertEqual(history["3"], history["2"])
 
     def test_official_order_evidence_records_direct_precedence(self):
         evidence = team_order_evidence(self.singles, {"Alice":1700,"Amy":1600,"Bob":1400,"Ben":1500}, {})
