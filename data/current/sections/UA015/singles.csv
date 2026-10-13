@@ -52,7 +52,7 @@ UA015041,09 Aug 26,4,Tennis World,GPHC,No. 2,Chloe McGilton,Andrew Wang,Andrew W
 UA015041,09 Aug 26,4,Tennis World,GPHC,No. 3,Avyukth Rao,Mike Zhang,Avyukth Rao,6-1,6,1,1,0,Completed,true,false,false
 UA015041,09 Aug 26,4,Tennis World,GPHC,No. 4,Tian Lu,Alex West,Tian Lu,6-1,6,1,1,0,Completed,true,false,false
 UA015042,09 Aug 26,4,Dendy Park Gold,Beaumaris CC,No. 1,Mason Tuckman,Liam Sweeney,Liam Sweeney,3-6,3,6,0,1,Completed,true,false,false
-UA015042,09 Aug 26,4,Dendy Park Gold,Beaumaris CC,No. 2,Cally Cheng,Oliver Naing,Cally Cheng,7-5,7,5,1,0,Completed,true,true,false
+UA015042,09 Aug 26,4,Dendy Park Gold,Beaumaris CC,No. 2,Cally Cheng,Oliver Naing,Cally Cheng,7-5,7,5,1,0,Completed,true,false,false
 UA015042,09 Aug 26,4,Dendy Park Gold,Beaumaris CC,No. 3,Sonny Sterling,Radeen Sayyah,Sonny Sterling,6-1,6,1,1,0,Completed,true,false,false
 UA015042,09 Aug 26,4,Dendy Park Gold,Beaumaris CC,No. 4,Holly Boden-fourie,Antonia Poppleton,Antonia Poppleton,2-6,2,6,0,1,Completed,true,true,false
 UA015044,09 Aug 26,4,St Pats Mentone,Le Page,No. 1,Ryan Piao,Krithik Prabhu,Krithik Prabhu,5-7,5,7,0,1,Completed,true,false,false
@@ -63,7 +63,7 @@ UA015051,16 Aug 26,5,Dendy Park Blue,Le Page,No. 1,Jasper Thomas,Krithik Prabhu,
 UA015051,16 Aug 26,5,Dendy Park Blue,Le Page,No. 2,Patrick Badcock,Omer Alamaru,Patrick Badcock,6-4,6,4,1,0,Completed,true,false,false
 UA015051,16 Aug 26,5,Dendy Park Blue,Le Page,No. 3,Takeru Odagane,Benson James,Benson James,2-6,2,6,0,1,Completed,true,false,false
 UA015051,16 Aug 26,5,Dendy Park Blue,Le Page,No. 4,Billie Corrigan,Harvey James,Harvey James,3-6,3,6,0,1,Completed,true,false,false
-UA015052,16 Aug 26,5,Parkdale,Dendy Park Gold,No. 1,Aidan Roach,Cally Cheng,Aidan Roach,6-4,6,4,1,0,Completed,true,false,true
+UA015052,16 Aug 26,5,Parkdale,Dendy Park Gold,No. 1,Aidan Roach,Cally Cheng,Aidan Roach,6-4,6,4,1,0,Completed,true,false,false
 UA015052,16 Aug 26,5,Parkdale,Dendy Park Gold,No. 2,Gary Zhu,Sonny Sterling,Sonny Sterling,4-6,4,6,0,1,Completed,true,false,false
 UA015052,16 Aug 26,5,Parkdale,Dendy Park Gold,No. 3,Joshua Zordon,Miriam Malton,Joshua Zordon,6-3,6,3,1,0,Completed,true,false,false
 UA015052,16 Aug 26,5,Parkdale,Dendy Park Gold,No. 4,Fionn Dunlevy,Arthur Glyn Jones,Arthur Glyn Jones,3-6,3,6,0,1,Completed,true,false,false
@@ -104,7 +104,7 @@ UA015073,30 Aug 26,7,Parkdale,Tennis World,No. 2,Flynn Wengier,Chloe McGilton,Ch
 UA015073,30 Aug 26,7,Parkdale,Tennis World,No. 3,Fionn Dunlevy,Alex Chin,Alex Chin,1-6,1,6,0,1,Completed,true,false,false
 UA015073,30 Aug 26,7,Parkdale,Tennis World,No. 4,Kieran Edwards,Tian Lu,Kieran Edwards,7-5,7,5,1,0,Completed,true,true,false
 UA015074,30 Aug 26,7,Dendy Park Gold,St Pats Mentone,No. 1,Mason Tuckman,Ryan Piao,Mason Tuckman,6-2,6,2,1,0,Completed,true,false,false
-UA015074,30 Aug 26,7,Dendy Park Gold,St Pats Mentone,No. 2,Cally Cheng,Dominik Buschkuehl,Dominik Buschkuehl,0-6,0,6,0,1,Completed,true,true,false
+UA015074,30 Aug 26,7,Dendy Park Gold,St Pats Mentone,No. 2,Cally Cheng,Dominik Buschkuehl,Dominik Buschkuehl,0-6,0,6,0,1,Completed,true,false,false
 UA015074,30 Aug 26,7,Dendy Park Gold,St Pats Mentone,No. 3,Sonny Sterling,Cameron White,Cameron White,2-6,2,6,0,1,Completed,true,false,false
 UA015074,30 Aug 26,7,Dendy Park Gold,St Pats Mentone,No. 4,Arthur Glyn Jones,Phoenix Quinn,Arthur Glyn Jones,6-2,6,2,1,0,Completed,true,false,false
 UA015081,06 Sep 26,8,St Pats Mentone,GPHC,No. 1,Ryan Piao,Rapheael Spralja,Ryan Piao,6-4,6,4,1,0,Completed,true,false,false
@@ -135,3 +135,19 @@ UA015094,13 Sep 26,9,Le Page,Dendy Park Gold,No. 1,Krithik Prabhu,Miriam Malton,
 UA015094,13 Sep 26,9,Le Page,Dendy Park Gold,No. 2,Omer Alamaru,Arthur Glyn Jones,Omer Alamaru,6-0,6,0,1,0,Completed,true,false,false
 UA015094,13 Sep 26,9,Le Page,Dendy Park Gold,No. 3,Benson James,Holly Boden-fourie,Benson James,7-5,7,5,1,0,Completed,true,false,true
 UA015094,13 Sep 26,9,Le Page,Dendy Park Gold,No. 4,Harvey James,Freddie Rowe,Harvey James,6-2,6,2,1,0,Completed,true,false,true
+UA015101,11 Oct 26,10,Dendy Park Gold,GPHC,No. 1,Mason Tuckman,Patrick Cruickshanks,Mason Tuckman,6-3,6,3,1,0,Completed,true,false,false
+UA015101,11 Oct 26,10,Dendy Park Gold,GPHC,No. 2,Cally Cheng,Andrew Wang,Cally Cheng,6-3,6,3,1,0,Completed,true,false,false
+UA015101,11 Oct 26,10,Dendy Park Gold,GPHC,No. 3,Arthur Glyn Jones,Mike Zhang,Mike Zhang,0-6,0,6,0,1,Completed,true,false,false
+UA015101,11 Oct 26,10,Dendy Park Gold,GPHC,No. 4,Holly Boden-fourie,Alex West,Holly Boden-fourie,6-3,6,3,1,0,Completed,true,true,false
+UA015102,11 Oct 26,10,Parkdale,Beaumaris CC,No. 1,Aidan Roach,Liam Sweeney,Liam Sweeney,2-6,2,6,0,1,Completed,true,false,false
+UA015102,11 Oct 26,10,Parkdale,Beaumaris CC,No. 2,Gary Zhu,Harley Allwright,Harley Allwright,2-6,2,6,0,1,Completed,true,false,false
+UA015102,11 Oct 26,10,Parkdale,Beaumaris CC,No. 3,Josh Kirk,Oliver Naing,Oliver Naing,5-7,5,7,0,1,Completed,true,false,false
+UA015102,11 Oct 26,10,Parkdale,Beaumaris CC,No. 4,Fionn Dunlevy,Antonia Poppleton,Antonia Poppleton,0-6,0,6,0,1,Completed,true,false,false
+UA015103,11 Oct 26,10,St Pats Mentone,Dendy Park Blue,No. 1,Ryan Piao,Jasper Thomas,Ryan Piao,6-2,6,2,1,0,Completed,true,false,false
+UA015103,11 Oct 26,10,St Pats Mentone,Dendy Park Blue,No. 2,Dominik Buschkuehl,Patrick Badcock,Dominik Buschkuehl,6-1,6,1,1,0,Completed,true,false,false
+UA015103,11 Oct 26,10,St Pats Mentone,Dendy Park Blue,No. 3,Max O'Connor,Zavier Galanis,Max O'Connor,6-2,6,2,1,0,Completed,true,false,false
+UA015103,11 Oct 26,10,St Pats Mentone,Dendy Park Blue,No. 4,Wiliam Dormer,Eddie Davies,Eddie Davies,3-6,3,6,0,1,Completed,true,false,true
+UA015104,11 Oct 26,10,Tennis World,Le Page,No. 1,Chloe McGilton,Krithik Prabhu,Krithik Prabhu,0-6,0,6,0,1,Completed,true,false,false
+UA015104,11 Oct 26,10,Tennis World,Le Page,No. 2,Avyukth Rao,Omer Alamaru,Omer Alamaru,4-6,4,6,0,1,Completed,true,false,false
+UA015104,11 Oct 26,10,Tennis World,Le Page,No. 3,Tian Lu,Benson James,Tian Lu,6-4,6,4,1,0,Completed,true,false,false
+UA015104,11 Oct 26,10,Tennis World,Le Page,No. 4,Silah Laidlaw,Harvey James,Silah Laidlaw,7-5,7,5,1,0,Completed,true,false,false

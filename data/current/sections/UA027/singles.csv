@@ -62,7 +62,7 @@ UA027063,23 Aug 26,6,Coatesville,Royal South Yarra,No. 4,Jivraj Oberoi,Will Alde
 UA027064,23 Aug 26,6,Lauriston,BLTC,No. 1,Marcus Kwan,Julia Kilma,Marcus Kwan,6-1,6,1,1,0,Completed,true,false,false
 UA027064,23 Aug 26,6,Lauriston,BLTC,No. 2,Shambhavi Ohja,Siqi Julia Wang,Shambhavi Ohja,6-0,6,0,1,0,Completed,true,false,false
 UA027064,23 Aug 26,6,Lauriston,BLTC,No. 3,Sienna Toohey,William Curtin,Sienna Toohey,6-0,6,0,1,0,Completed,true,false,false
-UA027064,23 Aug 26,6,Lauriston,BLTC,No. 4,Annabelle Physick,Isabella Curtin,Annabelle Physick,6-4,6,4,1,0,Completed,true,true,true
+UA027064,23 Aug 26,6,Lauriston,BLTC,No. 4,Annabelle Physick,Isabella Curtin,Annabelle Physick,6-4,6,4,1,0,Completed,true,true,false
 UA027072,30 Aug 26,7,Kings Park,St Joan of Arc,No. 1,Nikhil Parvathareddi,Isla Hamill,Isla Hamill,1-6,1,6,0,1,Completed,true,false,false
 UA027072,30 Aug 26,7,Kings Park,St Joan of Arc,No. 2,Alex Kealy,Maisy Murchie,Alex Kealy,6-0,6,0,1,0,Completed,true,false,false
 UA027072,30 Aug 26,7,Kings Park,St Joan of Arc,No. 3,Nihal Parvathareddi,Eva Biggins,Eva Biggins,3-6,3,6,0,1,Completed,true,false,false
@@ -70,7 +70,7 @@ UA027072,30 Aug 26,7,Kings Park,St Joan of Arc,No. 4,Anthony Yang,Yuvien Iddamag
 UA027073,30 Aug 26,7,BLTC,Royal South Yarra,No. 1,Siqi Julia Wang,Charlie Nettle,Charlie Nettle,1-6,1,6,0,1,Completed,true,false,false
 UA027073,30 Aug 26,7,BLTC,Royal South Yarra,No. 2,Shirley Zheng,Angus Sampson,Angus Sampson,3-6,3,6,0,1,Completed,true,false,true
 UA027073,30 Aug 26,7,BLTC,Royal South Yarra,No. 3,William Curtin,Mary Fiddes,William Curtin,6-1,6,1,1,0,Completed,true,false,false
-UA027073,30 Aug 26,7,BLTC,Royal South Yarra,No. 4,Isabella Curtin,Lucy Miller,Lucy Miller,2-6,2,6,0,1,Completed,true,true,false
+UA027073,30 Aug 26,7,BLTC,Royal South Yarra,No. 4,Isabella Curtin,Lucy Miller,Lucy Miller,2-6,2,6,0,1,Completed,true,false,false
 UA027082,06 Sep 26,8,Royal South Yarra,Kings Park,No. 1,Archie Fransella,Nikhil Parvathareddi,Archie Fransella,6-3,6,3,1,0,Completed,true,false,false
 UA027082,06 Sep 26,8,Royal South Yarra,Kings Park,No. 2,Charlie Nettle,Nihal Parvathareddi,Charlie Nettle,6-2,6,2,1,0,Completed,true,false,false
 UA027082,06 Sep 26,8,Royal South Yarra,Kings Park,No. 3,Mary Fiddes,Anthony Yang,Mary Fiddes,6-2,6,2,1,0,Completed,true,false,false
@@ -82,7 +82,7 @@ UA027083,06 Sep 26,8,Coatesville,Mentone,No. 4,Jivraj Oberoi,Jaxon Sacris,Jaxon 
 UA027084,06 Sep 26,8,BLTC,St Joan of Arc,No. 1,Siqi Julia Wang,Isla Hamill,Isla Hamill,1-6,1,6,0,1,Completed,true,false,false
 UA027084,06 Sep 26,8,BLTC,St Joan of Arc,No. 2,Julia Kilma,Eva Biggins,Julia Kilma,6-2,6,2,1,0,Completed,true,false,false
 UA027084,06 Sep 26,8,BLTC,St Joan of Arc,No. 3,William Curtin,Poppy Considine,William Curtin,6-1,6,1,1,0,Completed,true,false,false
-UA027084,06 Sep 26,8,BLTC,St Joan of Arc,No. 4,Isabella Curtin,Felix Allson,Felix Allson,0-6,0,6,0,1,Completed,true,true,true
+UA027084,06 Sep 26,8,BLTC,St Joan of Arc,No. 4,Isabella Curtin,Felix Allson,Felix Allson,0-6,0,6,0,1,Completed,true,false,true
 UA027092,13 Sep 26,9,Kings Park,Lauriston,No. 1,Nikhil Parvathareddi,Marcus Kwan,Nikhil Parvathareddi,6-0,6,0,1,0,Completed,true,false,false
 UA027092,13 Sep 26,9,Kings Park,Lauriston,No. 2,Alex Kealy,Harvey Prosser,Alex Kealy,6-2,6,2,1,0,Completed,true,false,false
 UA027092,13 Sep 26,9,Kings Park,Lauriston,No. 3,Jia Tchim,Shambhavi Ohja,Jia Tchim,6-5,6,5,1,0,Completed,true,false,false
@@ -95,3 +95,15 @@ UA027094,13 Sep 26,9,St Joan of Arc,Coatesville,No. 1,Xavier Williams,Nathaniel 
 UA027094,13 Sep 26,9,St Joan of Arc,Coatesville,No. 2,Ollie Chamberlain,Reuben Sandhu,Ollie Chamberlain,6-2,6,2,1,0,Completed,true,true,false
 UA027094,13 Sep 26,9,St Joan of Arc,Coatesville,No. 3,Isla Hamill,James McConchie,Isla Hamill,6-0,6,0,1,0,Completed,true,false,false
 UA027094,13 Sep 26,9,St Joan of Arc,Coatesville,No. 4,Eva Biggins,Jivraj Oberoi,Eva Biggins,6-0,6,0,1,0,Completed,true,false,false
+UA027102,11 Oct 26,10,BLTC,Kings Park,No. 1,Siqi Julia Wang,Nikhil Parvathareddi,Nikhil Parvathareddi,2-6,2,6,0,1,Completed,true,false,false
+UA027102,11 Oct 26,10,BLTC,Kings Park,No. 2,Shirley Zheng,Alex Kealy,Shirley Zheng,6-3,6,3,1,0,Completed,true,false,false
+UA027102,11 Oct 26,10,BLTC,Kings Park,No. 3,William Curtin,Jia Tchim,William Curtin,6-4,6,4,1,0,Completed,true,false,false
+UA027102,11 Oct 26,10,BLTC,Kings Park,No. 4,Isabella Curtin,Nihal Parvathareddi,Nihal Parvathareddi,1-6,1,6,0,1,Completed,true,false,false
+UA027103,11 Oct 26,10,Lauriston,Mentone,No. 1,Marcus Kwan,Xavier Ziola,Xavier Ziola,2-6,2,6,0,1,Completed,true,false,false
+UA027103,11 Oct 26,10,Lauriston,Mentone,No. 2,Harvey Prosser,Sean Edwards,Sean Edwards,4-6,4,6,0,1,Completed,true,false,false
+UA027103,11 Oct 26,10,Lauriston,Mentone,No. 3,Sienna Toohey,Erik Wei,Sienna Toohey,6-5,6,5,1,0,Completed,true,false,false
+UA027103,11 Oct 26,10,Lauriston,Mentone,No. 4,Elizabeth Physick,Jaxon Sacris,Jaxon Sacris,1-6,1,6,0,1,Completed,true,true,false
+UA027104,11 Oct 26,10,Royal South Yarra,St Joan of Arc,No. 1,Archie Fransella,Isla Hamill,Archie Fransella,6-1,6,1,1,0,Completed,true,false,false
+UA027104,11 Oct 26,10,Royal South Yarra,St Joan of Arc,No. 2,Charlie Nettle,Eva Biggins,Charlie Nettle,6-3,6,3,1,0,Completed,true,false,false
+UA027104,11 Oct 26,10,Royal South Yarra,St Joan of Arc,No. 3,Will Alder,Poppy Considine,Will Alder,6-2,6,2,1,0,Completed,true,false,false
+UA027104,11 Oct 26,10,Royal South Yarra,St Joan of Arc,No. 4,Camilla Koidl,Yuvien Iddamagloda,Yuvien Iddamagloda,2-6,2,6,0,1,Completed,true,false,true
