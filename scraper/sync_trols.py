@@ -661,6 +661,56 @@ def count_existing(path: Path) -> int:
         return max(0, sum(1 for _ in handle) - 1)
 
 
+def read_csv(path: Path) -> list[dict]:
+    if not path.exists():
+        return []
+    with path.open(encoding="utf-8", newline="") as handle:
+        return list(csv.DictReader(handle))
+
+
+def validate_saved_results(section: dict, section_dir: Path) -> list[str]:
+    """Accept explicit TROLS bye corrections, but reject unexplained data loss.
+
+    A withdrawn team's old results can be replaced with byes. Compare each
+    saved completed fixture, rather than assuming total row counts only grow.
+    A bye must replace the same team's slot on the same date/round/stage.
+    """
+    code = section["section_code"]
+    previous = read_csv(section_dir / "fixtures.csv")
+    current = {row["fixture_id"]: row for row in section["fixtures"]}
+
+    def slot(row: dict) -> tuple:
+        return (str(row["round"]), row["date"], row.get("stage") or "regular",
+                clean_team(row["home_team"]), clean_team(row["away_team"]))
+
+    bye_slots = {slot(row) for row in section["fixtures"] if row["status"] == "Bye"}
+    revoked, messages = set(), []
+    for old in previous:
+        if old["status"] != "Completed":
+            continue
+        fixture_id = old["fixture_id"]
+        fresh = current.get(fixture_id)
+        if fresh is not None and fresh["status"] == "Completed":
+            continue
+        old_slot = slot(old)
+        replacements = (old_slot[:3] + ("Bye", old_slot[4]),
+                        old_slot[:3] + (old_slot[3], "Bye"))
+        if not any(value in bye_slots for value in replacements):
+            raise RuntimeError(f"Dataset shrank. Manual review required: {code} completed fixture {fixture_id} disappeared without an explicit bye replacement")
+        revoked.add(fixture_id)
+        messages.append(f"{code}: TROLS replaced {fixture_id} ({old['home_team']} v {old['away_team']}) with a bye; removing its superseded rubbers")
+
+    for discipline in ("singles", "doubles"):
+        old_rows = read_csv(section_dir / f"{discipline}.csv")
+        new_keys = {(row["fixture_id"], row["position"]) for row in section[discipline]}
+        missing = [(row["fixture_id"], row["position"]) for row in old_rows
+                   if row["fixture_id"] not in revoked
+                   and (row["fixture_id"], row["position"]) not in new_keys]
+        if missing:
+            raise RuntimeError(f"Dataset shrank. Manual review required: {code} {discipline} lost saved rubbers {missing}")
+    return messages
+
+
 def current_season_transitions(previous: dict, sections: list[dict]) -> list[dict]:
     """Return outgoing season IDs only when TROLS has advanced the live selector."""
     current = {}
@@ -777,6 +827,8 @@ def main() -> None:
     previous_seasons = _load_previous_current_seasons()
     sections = scrape_all()
     catalog = []
+    # Review every section before writing any of them. A failed review must
+    # not leave an output directory mixing old and new section snapshots.
     for section in sections:
         code = section["section_code"]
         section_dir = OUT / "sections" / code
@@ -789,12 +841,13 @@ def main() -> None:
             except (OSError, json.JSONDecodeError):
                 old_metadata = {}
         if is_same_saved_season(section, old_metadata):
-            if old_singles and len(section["singles"]) < old_singles:
-                raise RuntimeError(f"Dataset shrank. Manual review required: {code} singles {old_singles} -> {len(section['singles'])}")
-            if old_doubles and len(section["doubles"]) < old_doubles:
-                raise RuntimeError(f"Dataset shrank. Manual review required: {code} doubles {old_doubles} -> {len(section['doubles'])}")
+            for message in validate_saved_results(section, section_dir):
+                print(message)
         elif old_singles or old_doubles:
             print(f"{code}: TROLS season changed; starting fresh row counts for {section['season_label']}")
+    for section in sections:
+        code = section["section_code"]
+        section_dir = OUT / "sections" / code
         write_csv(section_dir / "fixtures.csv", section["fixtures"], FIXTURE_FIELDS)
         write_csv(section_dir / "draw.csv", section["draw"], DRAW_FIELDS)
         write_csv(section_dir / "singles.csv", section["singles"], SINGLES_FIELDS)

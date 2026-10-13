@@ -1,5 +1,6 @@
 import copy
 import csv
+import tempfile
 import unittest
 from pathlib import Path
 from unittest import mock
@@ -236,6 +237,78 @@ class DatasetValidationTests(unittest.TestCase):
         self.assertEqual((parsed["home_games"], parsed["away_games"]), (10, 10))
         self.assertEqual((parsed["home_sets"], parsed["away_sets"]), (2, 1))
         self.assertTrue(parsed["decisive"])
+
+
+class SavedResultsTests(unittest.TestCase):
+    def setUp(self):
+        self.temp = tempfile.TemporaryDirectory()
+        self.addCleanup(self.temp.cleanup)
+        self.directory = Path(self.temp.name)
+        self.fixture = {"fixture_id": "AA016013", "round": 1, "date": "18 Jul 26",
+                        "stage": "regular", "home_team": "Glen Huntly",
+                        "away_team": "St Joan of Arc", "status": "Completed"}
+        self.rubber = {"fixture_id": "AA016013", "position": "No. 1"}
+        sync_trols.write_csv(self.directory / "fixtures.csv", [self.fixture], list(self.fixture))
+        for discipline in ("singles", "doubles"):
+            sync_trols.write_csv(self.directory / f"{discipline}.csv", [self.rubber], list(self.rubber))
+        self.section = {"section_code": "AA016", "fixtures": [self.fixture.copy()],
+                        "singles": [self.rubber.copy()], "doubles": [self.rubber.copy()]}
+
+    def bye(self):
+        self.section["fixtures"] = [{**self.fixture, "fixture_id": "pending-aa016-r1-glen-huntly-bye",
+                                     "away_team": "Bye", "status": "Bye"}]
+        self.section["singles"], self.section["doubles"] = [], []
+
+    def test_explicit_bye_replacement_accepts_removed_rubbers(self):
+        self.bye()
+        messages = sync_trols.validate_saved_results(self.section, self.directory)
+        self.assertEqual(len(messages), 1)
+        self.assertIn("AA016013", messages[0])
+
+    def test_home_team_can_also_be_replaced_with_bye(self):
+        self.bye()
+        self.section["fixtures"][0].update(home_team="Bye", away_team="St Joan of Arc")
+        self.assertEqual(len(sync_trols.validate_saved_results(self.section, self.directory)), 1)
+
+    def test_unchanged_results_pass(self):
+        self.assertEqual(sync_trols.validate_saved_results(self.section, self.directory), [])
+
+    def test_missing_completed_fixture_is_rejected(self):
+        self.section["fixtures"] = []
+        with self.assertRaisesRegex(RuntimeError, "without an explicit bye"):
+            sync_trols.validate_saved_results(self.section, self.directory)
+
+    def test_unrelated_bye_cannot_explain_missing_fixture(self):
+        for field, value in (("round", 2), ("date", "25 Jul 26"),
+                             ("stage", "semi_final"), ("home_team", "Mentone"),
+                             ("status", "Missing Result")):
+            with self.subTest(field=field):
+                self.bye()
+                self.section["fixtures"][0][field] = value
+                with self.assertRaisesRegex(RuntimeError, "without an explicit bye"):
+                    sync_trols.validate_saved_results(self.section, self.directory)
+
+    def test_completed_card_losing_rubber_is_rejected_even_if_total_grows(self):
+        self.section["singles"] = [{"fixture_id": "AA016102", "position": "No. 1"},
+                                   {"fixture_id": "AA016102", "position": "No. 2"}]
+        with self.assertRaisesRegex(RuntimeError, "singles lost saved rubbers"):
+            sync_trols.validate_saved_results(self.section, self.directory)
+
+    def test_completed_card_losing_doubles_is_rejected(self):
+        self.section["doubles"] = []
+        with self.assertRaisesRegex(RuntimeError, "doubles lost saved rubbers"):
+            sync_trols.validate_saved_results(self.section, self.directory)
+
+    def test_failed_review_writes_no_section_files(self):
+        first = {**self.section, "section_code": "AA015"}
+        second = {**self.section, "section_code": "AA016"}
+        with mock.patch.object(sync_trols, "OUT", self.directory), \
+                mock.patch.object(sync_trols, "scrape_all", return_value=[first, second]), \
+                mock.patch.object(sync_trols, "validate_saved_results", side_effect=[[], RuntimeError("lost results")]), \
+                mock.patch.object(sync_trols, "write_csv") as write:
+            with self.assertRaisesRegex(RuntimeError, "lost results"):
+                sync_trols.main()
+        write.assert_not_called()
 
 
 if __name__ == "__main__":
