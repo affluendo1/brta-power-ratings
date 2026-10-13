@@ -35,6 +35,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
+          # A manual rerun must refresh today's branch, not replay stale data.
+          ref: ${{ github.ref_name }}
           fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
