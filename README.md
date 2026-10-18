@@ -2,6 +2,36 @@
 
 [Open the live site](https://affluendo1.github.io/brta-power-ratings/)
 
+### Local Admin and Section Creator
+
+Turn on **Settings → Show Extras**, then open **Admin Control** beneath it.
+On the first visit, create a password; later visits ask for that password.
+The editor unlock lasts for that page visit and is revoked when Extras is hidden.
+This is a local editor gate, not a server account or shared publishing system.
+
+Create a section and choose its season, match counts, scoring format, and separate
+singles/doubles set lengths. Add teams and named players in their registered order.
+Players can also be unassigned emergency substitutes. Bulk entry accepts one
+`Name | Team | Order | E` record per line.
+
+For each round, choose the date and fixtures. Set the matchday lineups in order,
+generate a scorecard, and then edit every singles matchup, doubles pairing,
+emergency marker, match position, playing order, score, and status. Set scores
+are entered from the home team's perspective. Deciding match tiebreak points
+do not count as games. Forfeits and unfinished/retired matches do not enter the
+rating model. Optional home/away competition-point overrides handle manual
+adjustments without changing the scorecard or player ratings.
+
+**Save section** stores the section in this browser. **View section** opens it in
+the normal Results, Standings, Ratings, Teams, and Fixtures views under
+**My sections**. V3 singles, pair, and individual doubles ratings and as-of-round
+history are calculated locally. Nothing is added to the official TROLS data.
+
+Use **Export backup** or **Back up all** to download JSON copies. **Import backup**
+restores or transfers them to another browser; matching section IDs are replaced
+only after confirmation. Backups contain competition data, not the admin password.
+Clearing site data removes both local sections and the password, so keep backups.
+
 BRTA Power Ratings is an unofficial analytics site for BRTA Saturday AM and Sunday AM junior tennis. It is not affiliated with BRTA, Tennis Australia or UTR. Match records come from TROLS and are treated as official-as-entered records; the site does not claim that a nominated player was necessarily the player who physically took the court.
 
 ## What the site does
