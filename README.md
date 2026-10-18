@@ -28,9 +28,11 @@ turn off the automatic-status checkbox. Tab or Enter moves between score boxes.
 Optional home/away competition-point overrides handle manual
 adjustments without changing the scorecard or player ratings.
 
-**Save section** stores the section in this browser. **View section** opens it in
+**Save changes** stores the section in this browser. **View section** opens it in
 the normal Results, Standings, Ratings, Teams, and Fixtures views under
-**My sections**. V3 singles, pair, and individual doubles ratings and as-of-round
+**My sections**. The blue **Back to editor** button beside Settings returns to
+the same editor tab, round, fixture, expanded panels and scroll position during
+your visit. V3 singles, pair, and individual doubles ratings and as-of-round
 history are calculated locally. Nothing is added to the official TROLS data.
 
 **Rounds & fixtures → Import fixtures** accepts one round or multiple rounds

@@ -156,7 +156,7 @@ async function loadSection(code){
     resultRound=D.results?.[0]?.round??null;selectedMatch=null;selectedPrediction=null;activePredictionMatch=null;roundSimulations={};
     renderChoice('competitionSelect',[...new Map(viewCatalog.map(x=>[x.competition_code,sectionCompetitionLabel(x).replace(' - ',' · ')])).entries()],D.meta.competition_code);fillSections(D.meta.competition_code,code);
     $('#sectionSubtitle').textContent=D.meta.competition_label.replace(' - ',' · ')+' · '+D.meta.section_label;
-    renderAll();
+    window.CustomSections?.bindHeader(D.meta?.is_custom?code:null);renderAll();
   }catch(error){$('#statusStrip').innerHTML='<div class="notice"><b>Could not load this section.</b><span>'+esc(error.message)+'</span></div>'}
   finally{if(token===loadingToken)document.body.classList.remove('section-loading')}
 }
