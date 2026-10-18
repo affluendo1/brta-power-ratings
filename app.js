@@ -97,12 +97,13 @@ function exportModelAudit(){
   const audit={
     export_type:'BRTA Power Ratings calculation audit',
     generated_at:new Date().toISOString(),
-    disclaimer:'Unofficial analysis. Official-as-entered TROLS scorecards are the source data.',
+    disclaimer:D.meta.is_custom?'Custom section calculated from locally entered scorecards.':'Unofficial analysis. Official-as-entered TROLS scorecards are the source data.',
     section:D.meta,
     model:{
-      version:'V3 scoreline likelihood',
+      version:D.meta.ratingModel==='V3B'?'V3B composite scoreline likelihood':'V3 scoreline likelihood',
+      ...(D.meta.ratingModel==='V3B'?{evidence_weights:D.meta.ratingWeights,match_tiebreak_evidence:'2 total game-equivalent units split by points won',uncertainty:'Approximate Hessian uncertainty for correlated composite evidence'}:{}),
       game_probability:'logistic((theta_i - theta_j) / 0.75)',
-      score_likelihood:'games_for * log(p) + games_against * log(1 - p)',
+      score_likelihood:D.meta.ratingModel==='V3B'?'weighted_home_evidence * log(p) + weighted_away_evidence * log(1 - p)':'games_for * log(p) + games_against * log(1 - p)',
       match_date_weight:'2^(-age_days / 365)',
       regularisation:'L2 penalty: (5 / 2) * sum(theta_i^2)',
       displayed_power:'1500 + 600 * theta',
@@ -256,7 +257,7 @@ function renderRatings(){
   renderRatingRoundNotice();if(ratingScope==='all'){cancelAuxiliaryReveal();renderGlobalRatings();return}
   $('#teamFilter').disabled=false;
   const [title,desc]=ratingInfo[ratingView];$('#ratingsTitle').textContent=title;$('#ratingsDesc').textContent=desc+(ratingRound==null?'':' After Round '+ratingRound+'.');
-  $('#ratingFilters').classList.remove('hidden');$('#ratingsHint').textContent='';
+  $('#ratingFilters').classList.remove('hidden');$('#ratingsHint').textContent=D.meta?.is_custom?'Rating model: '+(D.meta.ratingModel||'V3'):'';
   const {rows,min,type}=currentRows(),q=$('#search').value.toLowerCase(),tf=$('#teamFilter').value,band=bandModel(rows,min,type),derived=ratingRound==null?auxiliaryVisibleContext():null;
   renderBandInfo(band);
   let rank=0,out='',lastBand='';
@@ -309,10 +310,11 @@ function roundDate(value){return value||'Date not published by TROLS'}
 function byeCard(f){return'<div class="fixture-bye"><small>BYE</small><b>'+teamName(f.home==='Bye'?f.away:f.home)+'</b><span>No match this round</span></div>'}
 function renderResults(){const rounds=D.results||[];if(!rounds.length){$('#resultsList').innerHTML='<div class="notice">No published results yet.</div>';return}$('#resultsList').innerHTML=rounds.map(round=>{const draw=(D.upcomingFixtures||[]).find(r=>r.round===round.round),byes=(draw?.fixtures||[]).filter(f=>f.status==='Bye');return'<section class="result-round"><header class="result-round-head"><h2>'+esc(roundHeading(round))+'</h2><span>'+esc(roundDate(round.date))+'</span></header><div class="result-round-matches">'+round.fixtures.map(matchCard).join('')+byes.map(byeCard).join('')+'</div></section>'}).join('')}
 function rubberCode(r){const n=String(r.position||'').match(/\d+/)?.[0]||'';return(r.type==='Doubles'?'D':'S')+n}
-function compactDoublesName(name){return String(name).split('/').map(player=>player.trim().split(/\s+/)[0]).join(' / ')}
+function doublesPlayerLabel(name){const parts=String(name).trim().split(/\s+/);return D.meta?.is_custom&&D.meta.doublesSurnames&&parts.length>1?parts.slice(1).join(' '):parts[0]}
+function compactDoublesName(name){return String(name).split('/').map(doublesPlayerLabel).join(' / ')}
 function resultDetailHTML(match,contextPlayer=null){
   if(!match)return'<div class="notice">This fixture does not have a scorecard yet.</div>';
-  const complete=match.status==='Completed',scored=match.homePoints!=null&&match.awayPoints!=null,winner=matchWinner(match),result=complete?match.homeRubbers+'–'+match.awayRubbers:'—',outcome=winner?esc(winner)+(complete?' won the team tie':' received the team points'):(match.status==='Wash Out'?'The fixture was recorded as a washout':'Team tie level'),pairNames=(name,flags=[])=>String(name).split('/').map((player,index)=>{const full=player.trim();return resultPerson(full,full.split(/\s+/)[0])+(flags[index]?'<i class="emergency-marker" title="Emergency player recorded by TROLS">X</i>':'')}).join(' <span class="pair-sep">/</span> ');
+  const complete=match.status==='Completed',scored=match.homePoints!=null&&match.awayPoints!=null,winner=matchWinner(match),result=complete?match.homeRubbers+'–'+match.awayRubbers:'—',outcome=winner?esc(winner)+(complete?' won the team tie':' received the team points'):(match.status==='Wash Out'?'The fixture was recorded as a washout':'Team tie level'),pairNames=(name,flags=[])=>String(name).split('/').map((player,index)=>{const full=player.trim();return resultPerson(full,doublesPlayerLabel(full))+(flags[index]?'<i class="emergency-marker" title="Emergency player recorded by TROLS">X</i>':'')}).join(' <span class="pair-sep">/</span> ');
   let metrics=complete?'<div class="result-metrics"><div><span>Rubbers</span><b>'+match.homeRubbers+'–'+match.awayRubbers+'</b></div><div><span>Games</span><b>'+match.homeGames+'–'+match.awayGames+'</b></div><div><span>Points</span><b>'+match.homePoints+'–'+match.awayPoints+'</b></div></div>':scored?'<div class="result-metrics"><div><span>Team points</span><b>'+match.homePoints+'–'+match.awayPoints+'</b></div><div><span>Games</span><b>Not recorded</b></div></div>':'';
   let head='<div class="result-detail-head"><span>'+esc(match.label||('Round '+match.round))+' · '+esc(roundDate(match.date))+'</span><h2>'+teamName(match.home)+' <b>'+result+'</b> '+teamName(match.away)+'</h2><p>'+outcome+(complete?'':' · '+esc(match.status))+'</p>'+metrics+'</div>';
   let rows=(match.rubbers||[]).slice().sort((a,b)=>D.meta?.is_custom?(a.order??0)-(b.order??0):(a.type==='Doubles'?0:1)-(b.type==='Doubles'?0:1)||String(a.position).localeCompare(String(b.position),undefined,{numeric:true})).map(r=>{const marker=emergency=>emergency?'<i class="emergency-marker" title="Emergency player recorded by TROLS">X</i>':'',home=(r.type==='Doubles'?pairNames(r.home,r.homeEmergencies||[]):resultPerson(r.home)+marker(r.homeEmergency)),away=(r.type==='Doubles'?pairNames(r.away,r.awayEmergencies||[]):resultPerson(r.away)+marker(r.awayEmergency));return'<div class="rubber-row"><small class="rubber-code" title="'+esc(r.type)+' · '+esc(r.position)+'">'+rubberCode(r)+'</small><b class="rubber-home '+(r.winner===r.home?'winner':'')+'" title="'+esc(r.home)+'">'+home+'</b><strong>'+esc(r.score)+'</strong><b class="rubber-away '+(r.winner===r.away?'winner':'')+'" title="'+esc(r.away)+'">'+away+'</b></div>'}).join('');

@@ -28,6 +28,26 @@ turn off the automatic-status checkbox. Tab or Enter moves between score boxes.
 Optional home/away competition-point overrides handle manual
 adjustments without changing the scorecard or player ratings.
 
+**Section setup → Rating calculation model** chooses V3 (default) or V3B for
+that custom section. V3B retains V3's logistic scale (0.75), 365-day half-life,
+L2 penalty (5), and displayed power scale (1500 + 600θ). Its composite likelihood
+adds evidence in game-equivalent units: each normal game has weight 1, each set
+win 2, and each match win 4. A deciding match tiebreak contributes 2 units total,
+split by the share of points won, including extended tiebreaks. The deciding
+tiebreak also counts as a set won. These are explicit initial model weights,
+not tuned against a historical validation set. The components are correlated;
+the Hessian uncertainty is an approximation for this composite objective.
+
+Both models use only completed played matches. Singles, doubles pairs,
+individual doubles, team power and all round snapshots are refitted with the
+selected model after saving. Match counts, actual game totals, game percentages,
+results and competition points stay unchanged. Match-tiebreak points contribute
+to V3B ratings without becoming games. Backups retain the model selection.
+
+**Section setup → Use surnames in doubles pairings** switches compact scorecard
+labels from Novak / Andrey to Djokovic / Rublev. It is off by default, saved per
+section, and keeps the full names for Player Lab links.
+
 **Doubles pairs** sits beneath each matchday squad. Tick two selected squad
 players for D1, D2, and so on; singles order stays independent. Existing pairings
 appear automatically, and **Last round** copies the previous pairs too. Changing
@@ -37,7 +57,7 @@ a scored pair asks before clearing only that doubles match’s score.
 the normal Results, Standings, Ratings, Teams, and Fixtures views under
 **My sections**. The blue **Back to editor** button beside Settings returns to
 the same editor tab, round, fixture, expanded panels and scroll position during
-your visit. V3 singles, pair, and individual doubles ratings and as-of-round
+your visit. Singles, pair, and individual doubles ratings and as-of-round
 history are calculated locally. Nothing is added to the official TROLS data.
 
 **Rounds & fixtures → Import fixtures** accepts one round or multiple rounds

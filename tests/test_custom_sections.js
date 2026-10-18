@@ -8,6 +8,8 @@ function sample(){return {id:'local-test',name:'My league',season:'Spring 2026',
 if(require.main===module){
 const source=sample(),before=JSON.stringify(source),data=M.build(source);
 assert.equal(JSON.stringify(source),before,'Building must not mutate the saved section.');
+assert.equal(data.meta.doublesSurnames,false);
+const surnameSection=sample();surnameSection.doublesSurnames=true;const surnameData=M.build(surnameSection);assert.equal(surnameData.meta.doublesSurnames,true);assert.deepEqual(surnameData.results,data.results,'The display preference must not alter scores or winners.');assert.deepEqual(surnameData.doubles,data.doubles,'The display preference must not alter ratings.');surnameSection.doublesSurnames='false';assert.throws(()=>M.validate(surnameSection),/on or off/);
 assert.equal(data.results.length,4);assert.equal(data.upcomingFixtures.length,5);
 assert.equal(data.results[0].fixtures[0].homePoints,6);assert.equal(data.results[0].fixtures[0].awayPoints,1);
 assert.equal(data.standings[0].team,'A');assert.equal(data.standings[0].points,24);
@@ -41,6 +43,25 @@ assert.equal(M.score({type:'Singles',status:'Unfinished',sets:[{h:3,a:2}]},{form
 assert.throws(()=>M.score({type:'Singles',status:'Retired',sets:[{h:3,a:2}]},{format:'sets',setTarget:6}),/winning side/);
 s=sample();s.rounds[0].fixtures[0].homePointsOverride=9;s.rounds[0].fixtures[0].awayPointsOverride=1;assert.equal(M.build(s).results.at(-1).fixtures[0].homePoints,9);
 s=sample();s.rounds[0].fixtures[0].homePointsOverride=9;assert.throws(()=>M.validate(s),/both competition-point/);
+// V3B uses extra outcome evidence without changing actual results or game statistics.
+const observation={home:['A'],away:['B'],hg:10,ag:10,hs:2,as:1,winner:'home',matchTiebreaks:[{h:10,a:8}],date:'2026-10-01',homeTeam:'X',awayTeam:'Y'};
+assert.deepEqual(M.ratingEvidence(observation),{home:10,away:10});
+const composite=M.ratingEvidence(observation,'V3B');assert(Math.abs(composite.home-(10+4+4+20/18))<1e-10);assert(Math.abs(composite.away-(10+2+16/18))<1e-10);
+assert.deepEqual(M.fit([observation]),M.fit([observation],false,false,'V3'));
+const power=(match,model)=>M.fit(Array(4).fill(match),false,false,model).find(p=>p.player==='A').rating;
+assert.equal(power(observation,'V3'),1500);assert(power(observation,'V3B')>1500);
+assert(power({...observation,winner:'home'},'V3B')>power({...observation,winner:'away'},'V3B'),'Match wins contribute.');
+assert(power({...observation,hs:2,as:1},'V3B')>power({...observation,hs:1,as:2},'V3B'),'Set wins contribute.');
+assert(power({...observation,matchTiebreaks:[{h:10,a:2}]},'V3B')>power({...observation,matchTiebreaks:[{h:10,a:8}]},'V3B'),'Tiebreak score margins contribute.');
+const extended=M.ratingEvidence({...observation,matchTiebreaks:[{h:50,a:48}]},'V3B');assert(Math.abs(extended.home+extended.away-composite.home-composite.away)<1e-10,'Extended tiebreaks keep the same total weight.');
+const reverse={...observation,home:observation.away,away:observation.home,hg:observation.ag,ag:observation.hg,hs:observation.as,as:observation.hs,winner:'away',matchTiebreaks:[{h:8,a:10}],homeTeam:'Y',awayTeam:'X'};assert.deepEqual(M.fit([observation],false,false,'V3B'),M.fit([reverse],false,false,'V3B'),'Home/away reversal must not change ratings.');
+const bestOf=sample();bestOf.singlesBestOf=bestOf.doublesBestOf=3;for(const round of bestOf.rounds)for(const m of round.fixtures[0].rubbers)m.sets=[{h:6,a:4},{h:4,a:6},{h:10,a:8,mt:true}];
+const originalV3=M.build(bestOf);bestOf.ratingModel='V3B';const v3bBefore=JSON.stringify(bestOf),v3b=M.build(bestOf);assert.equal(JSON.stringify(bestOf),v3bBefore);assert.equal(v3b.meta.ratingModel,'V3B');assert.deepEqual(v3b.meta.ratingWeights,M.V3B_WEIGHTS);assert.deepEqual(v3b.results,originalV3.results);assert.deepEqual(v3b.standings,originalV3.standings);assert.deepEqual(v3b.singlesMatches,originalV3.singlesMatches);assert(v3b.singles.find(p=>p.player==='Alice').rating>1500);assert(v3b.doubles.find(p=>p.team==='A').rating>1500);assert(v3b.doublesIndividuals.find(p=>p.player==='Alice').rating>1500);
+for(const p of v3b.singles){const old=originalV3.singles.find(x=>x.player===p.player);for(const key of ['gf','ga','matches','wins','losses'])assert.equal(p[key],old[key]);}
+const prefix=copy(bestOf);prefix.rounds=prefix.rounds.filter(r=>r.number<=3);const prefixData=M.build(prefix);for(const n of [1,2,3]){assert.deepEqual(v3b.ratingHistory.tables[n],prefixData.ratingHistory.tables[n]);assert.deepEqual(v3b.doublesRatingHistory.tables[n],prefixData.doublesRatingHistory.tables[n]);}
+bestOf.ratingModel='V3';assert.deepEqual(M.build(bestOf),originalV3,'Switching back restores V3 exactly.');bestOf.ratingModel='unknown';assert.throws(()=>M.validate(bestOf),/V3 or V3B/);
+const retiredSection=sample();retiredSection.ratingModel='V3B';for(const round of retiredSection.rounds)for(const m of round.fixtures[0].rubbers)if(m.type==='Singles'&&m.position===1){m.status='Retired';m.winner='away';m.sets=[{h:3,a:2}];}const retiredData=M.build(retiredSection);assert(!retiredData.singles.some(p=>p.player==='Alice'),'Retirements stay outside the rating evidence.');
+console.log('V3B outcome weights, tiebreak margins, symmetry, unchanged results/stats, all rating types, round history and V3 rollback: passed');
 console.log('Custom section validation, scorecards, emergencies, team points, model, snapshots and match order: passed');
 if(process.argv.includes('--json'))console.log(JSON.stringify(data));
 }
