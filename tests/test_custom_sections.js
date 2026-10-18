@@ -5,6 +5,7 @@ function sample(){return {id:'local-test',name:'My league',season:'Spring 2026',
   {type:'Doubles',position:1,status:'Completed',home:['p1','p2'],away:['p3','p4'],sets:[{h:4,a:6}],homeEmergencies:[false,false],awayEmergencies:[false,false]},
   {type:'Singles',position:2,status:'Completed',home:['p2'],away:['p4'],sets:[{h:6,a:3}],homeEmergencies:[false],awayEmergencies:[false]},
 ]}]}))}}
+if(require.main===module){
 const source=sample(),before=JSON.stringify(source),data=M.build(source);
 assert.equal(JSON.stringify(source),before,'Building must not mutate the saved section.');
 assert.equal(data.results.length,4);assert.equal(data.upcomingFixtures.length,5);
@@ -42,4 +43,5 @@ s=sample();s.rounds[0].fixtures[0].homePointsOverride=9;s.rounds[0].fixtures[0].
 s=sample();s.rounds[0].fixtures[0].homePointsOverride=9;assert.throws(()=>M.validate(s),/both competition-point/);
 console.log('Custom section validation, scorecards, emergencies, team points, model, snapshots and match order: passed');
 if(process.argv.includes('--json'))console.log(JSON.stringify(data));
+}
 module.exports={sample};

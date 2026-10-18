@@ -14,18 +14,34 @@ singles/doubles set lengths. Add teams and named players in their registered ord
 Players can also be unassigned emergency substitutes. Bulk entry accepts one
 `Name | Team | Order | E` record per line.
 
-For each round, choose the date and fixtures. Set the matchday lineups in order,
-generate a scorecard, and then edit every singles matchup, doubles pairing,
+For each round, choose the date and fixtures. Tick the matchday squad checkboxes;
+registered order is used automatically, and the up/down buttons adjust it.
+**First N** and **Last round** shortcuts fill the squads quickly. Matchups are
+created automatically once both sides are ready. Existing scores are preserved
+unless you explicitly rebuild the matches. You can then edit every singles matchup, doubles pairing,
 emergency marker, match position, playing order, score, and status. Set scores
 are entered from the home team's perspective. Deciding match tiebreak points
 do not count as games. Forfeits and unfinished/retired matches do not enter the
-rating model. Optional home/away competition-point overrides handle manual
+rating model. Quick-score buttons fill common one-set results from either side.
+Typing scores automatically completes finished matches and fixtures unless you
+turn off the automatic-status checkbox. Tab or Enter moves between score boxes.
+Optional home/away competition-point overrides handle manual
 adjustments without changing the scorecard or player ratings.
 
 **Save section** stores the section in this browser. **View section** opens it in
 the normal Results, Standings, Ratings, Teams, and Fixtures views under
 **My sections**. V3 singles, pair, and individual doubles ratings and as-of-round
 history are calculated locally. Nothing is added to the official TROLS data.
+
+**Rounds & fixtures → Import fixtures** accepts one round or multiple rounds
+from plain text, a pasted spreadsheet table, CSV/TSV, or JSON. Use a header such
+as `Round 1 | 2026-10-18`, then one `Home team v Away team` fixture per line.
+Optional `S1 | Player A | Player B | 6-4` and
+`D1 | Player A / Player C | Player B / Player D | 6-3` lines add matchups or scores.
+Teams and players must already exist; they are matched by name without creating
+extra teams. Preview the import, tick the desired rounds, and add them to the draft.
+Existing rounds are preserved unless **Replace selected existing rounds** is
+explicitly checked and confirmed. Save changes after applying an import.
 
 Use **Export backup** or **Back up all** to download JSON copies. **Import backup**
 restores or transfers them to another browser; matching section IDs are replaced

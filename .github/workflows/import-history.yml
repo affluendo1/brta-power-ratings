@@ -50,6 +50,7 @@ jobs:
           node tests/test_prediction.js
           node tests/test_rating_history.js
           node tests/test_custom_sections.js
+          node tests/test_custom_section_tools.js
       - name: Commit archive data and site payloads
         shell: bash
         run: |

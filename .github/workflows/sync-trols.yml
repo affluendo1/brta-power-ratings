@@ -15,6 +15,7 @@ on:
       - "rating-history.js"
       - "custom-section-model.js"
       - "custom-sections.js"
+      - "custom-section-tools.js"
       - "index.html"
       - "style.css"
       - "future.css"
@@ -102,6 +103,7 @@ jobs:
           node tests/test_prediction.js
           node tests/test_rating_history.js
           node tests/test_custom_sections.js
+          node tests/test_custom_section_tools.js
 
       - name: Recalculate all ratings and website data
         run: python generate_site_data.py
