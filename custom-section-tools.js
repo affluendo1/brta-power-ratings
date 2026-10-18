@@ -12,9 +12,24 @@
     const matches=f.rubbers||[],counts=matches.filter(x=>x.type==='Singles').length===Number(section.singlesSlots)&&matches.filter(x=>x.type==='Doubles').length===Number(section.doublesSlots);
     f.status=counts&&matches.length&&matches.every(x=>x.status!=='Scheduled')?'Completed':'Scheduled';
   }
-  function lineup(section,f,side,selected){const current=f[side+'Lineup']||[],team=f[side+'TeamId'],set=new Set(selected);f[side+'Lineup']=current.filter(id=>set.has(id));const extra=section.players.filter(p=>set.has(p.id)&&!f[side+'Lineup'].includes(p.id)).sort((a,b)=>(a.teamId!==team)-(b.teamId!==team)||a.order-b.order||a.name.localeCompare(b.name));f[side+'Lineup'].push(...extra.map(p=>p.id));if(!f[side+'OrderEdited'])f[side+'Lineup'].sort((a,b)=>{const pa=section.players.find(p=>p.id===a),pb=section.players.find(p=>p.id===b);return (pa.teamId!==team)-(pb.teamId!==team)||pa.order-pb.order||pa.name.localeCompare(pb.name)});return f[side+'Lineup']}
+  function lineup(section,f,side,selected){const current=f[side+'Lineup']||[],team=f[side+'TeamId'],set=new Set(selected);f[side+'Lineup']=current.filter(id=>set.has(id));const extra=section.players.filter(p=>set.has(p.id)&&!f[side+'Lineup'].includes(p.id)).sort((a,b)=>(a.teamId!==team)-(b.teamId!==team)||a.order-b.order||a.name.localeCompare(b.name));f[side+'Lineup'].push(...extra.map(p=>p.id));if(!f[side+'OrderEdited'])f[side+'Lineup'].sort((a,b)=>{const pa=section.players.find(p=>p.id===a),pb=section.players.find(p=>p.id===b);return (pa.teamId!==team)-(pb.teamId!==team)||pa.order-pb.order||pa.name.localeCompare(pb.name)});if(f[side+'DoublesPairs'])f[side+'DoublesPairs']=f[side+'DoublesPairs'].map(pair=>pair.filter(id=>set.has(id)));return f[side+'Lineup']}
   function makeMatch(section,f,type,position,home,away){const flags=(ids,side)=>ids.map(id=>{const p=section.players.find(p=>p.id===id);return !!p&&(p.emergency||p.teamId!==f[side+'TeamId'])});return {id:uuid(),type,position,home:home.slice(),away:away.slice(),homeEmergencies:flags(home,'home'),awayEmergencies:flags(away,'away'),sets:[{h:'',a:'',mt:false}],status:'Scheduled',winner:''}}
-  function generate(section,f){const h=f.homeLineup||[],a=f.awayLineup||[],needed=Math.max(Number(section.singlesSlots),Number(section.doublesSlots)?2:0);if(h.length<needed||a.length<needed)throw Error('Select at least '+needed+' players for each side.');const matches=[];for(let i=0;i<Number(section.singlesSlots);i++)matches.push(makeMatch(section,f,'Singles',i+1,[h[i]],[a[i]]));for(let i=0;i<Number(section.doublesSlots);i++)matches.push(makeMatch(section,f,'Doubles',i+1,[h[2*i%h.length],h[(2*i+1)%h.length]],[a[2*i%a.length],a[(2*i+1)%a.length]]));return matches}
+  function doublesPairs(section,f,side){
+    const ids=f[side+'Lineup']||[],chosen=f[side+'DoublesPairs'];
+    return Array.from({length:Number(section.doublesSlots)},(_,i)=>{
+      const existing=(f.rubbers||[]).find(m=>m.type==='Doubles'&&Number(m.position)===i+1);
+      const previous=existing?.[side],pair=chosen?.[i]??(previous?.length===2&&previous.every(id=>ids.includes(id))?previous:null)??(ids.length>=2?[ids[2*i%ids.length],ids[(2*i+1)%ids.length]]:[]);
+      return [...new Set(pair)].filter(id=>ids.includes(id)).slice(0,2);
+    });
+  }
+  function generate(section,f){
+    const h=f.homeLineup||[],a=f.awayLineup||[],needed=Math.max(Number(section.singlesSlots),Number(section.doublesSlots)?2:0);
+    if(h.length<needed||a.length<needed)throw Error('Select at least '+needed+' players for each side.');
+    const hp=doublesPairs(section,f,'home'),ap=doublesPairs(section,f,'away'),matches=[];
+    for(let i=0;i<Number(section.singlesSlots);i++)matches.push(makeMatch(section,f,'Singles',i+1,[h[i]],[a[i]]));
+    for(let i=0;i<Number(section.doublesSlots);i++){if(hp[i].length!==2||ap[i].length!==2)throw Error('Select two players for each D'+(i+1)+' pair.');matches.push(makeMatch(section,f,'Doubles',i+1,hp[i],ap[i]));}
+    return matches;
+  }
   function delimited(text,separator){const rows=[];let row=[],field='',quoted=false;for(let i=0;i<text.length;i++){const c=text[i];if(c==='"'){if(quoted&&text[i+1]==='"'){field+='"';i++}else quoted=!quoted}else if(!quoted&&c===separator){row.push(field.trim());field=''}else if(!quoted&&(c==='\n'||c==='\r')){if(c==='\r'&&text[i+1]==='\n')i++;row.push(field.trim());if(row.some(Boolean))rows.push(row);row=[];field=''}else field+=c}if(quoted)throw Error('Unclosed quotation mark in the imported table.');row.push(field.trim());if(row.some(Boolean))rows.push(row);return rows}
   function parse(text,section,defaults={}){
     if(typeof text!=='string'||!text.trim())throw Error('Paste fixtures or choose a file first.');if(text.length>2*1024*1024)throw Error('Import up to 2 MB at a time.');
@@ -44,5 +59,5 @@
     for(const r of chosen){const old=next.rounds.find(x=>Number(x.number)===Number(r.number));if(old&&!replace){if(old.date!==r.date)throw Error('Round '+r.number+' already has a different date. Choose Replace selected rounds to change it.');old.fixtures.push(...copy(r.fixtures));}else if(old){Object.assign(old,copy(r),{id:old.id})}else next.rounds.push(copy(r));}
     M.validate(next);return next;
   }
-  const api={parse,merge,finish,lineup,generate,makeMatch,scoreSets,date,plusDays};root.CustomSectionTools=api;if(typeof module!=='undefined')module.exports=api;
+  const api={parse,merge,finish,lineup,generate,makeMatch,scoreSets,date,plusDays,doublesPairs};root.CustomSectionTools=api;if(typeof module!=='undefined')module.exports=api;
 })(typeof window!=='undefined'?window:globalThis);

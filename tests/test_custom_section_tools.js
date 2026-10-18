@@ -28,3 +28,12 @@ assert.equal(T.parse(JSON.stringify({number:2,date:'2026-10-25',fixtures:[{home:
 assert.equal(T.parse(JSON.stringify([{home:'A',away:'B'}]),empty(),{number:3,date:'2026-11-01'})[0].number,3);
 const orderFixture={homeTeamId:'a',homeLineup:[]};T.lineup(empty(),orderFixture,'home',['p2']);T.lineup(empty(),orderFixture,'home',['p2','p1']);assert.deepEqual(orderFixture.homeLineup,['p1','p2']);
 console.log('Fixture imports, optional matches, atomic merge, checkbox squad ordering and auto scores: passed');
+
+// Chosen doubles pairs are independent of singles order, including specialists and emergencies.
+s=empty();s.singlesSlots=2;s.doublesSlots=2;s.players.push({id:'p6',name:'Specialist',teamId:'a',order:3});
+f={homeTeamId:'a',awayTeamId:'b',homeLineup:['p1','p2','p6','p5'],awayLineup:['p3','p4'],rubbers:[],homeDoublesPairs:[['p6','p5'],['p2','p1']]};
+const pairingSource=JSON.stringify(f),card=T.generate(s,f);assert.equal(JSON.stringify(f),pairingSource);assert.deepEqual(card.filter(m=>m.type==='Singles').map(m=>m.home),[['p1'],['p2']]);assert.deepEqual(card.filter(m=>m.type==='Doubles').map(m=>m.home),[['p6','p5'],['p2','p1']]);assert.deepEqual(card.find(m=>m.type==='Doubles').homeEmergencies,[false,true]);
+f.rubbers=card;delete f.homeDoublesPairs;assert.deepEqual(T.doublesPairs(s,f,'home'),[['p6','p5'],['p2','p1']],'Existing imported or edited pair order stays intact.');
+f.homeDoublesPairs=[['p6','p5'],['p2','p1']];T.lineup(s,f,'home',['p1','p2','p6']);assert.deepEqual(f.homeDoublesPairs[0],['p6']);assert.throws(()=>T.generate(s,f),/two players.*D1/);f.homeDoublesPairs[0]=['p6','p1'];assert.deepEqual(T.generate(s,f).filter(m=>m.type==='Doubles')[0].home,['p6','p1']);
+delete f.homeDoublesPairs;assert.equal(T.generate(s,f).filter(m=>m.type==='Doubles')[0].home.length,2,'Removing a squad player replaces invalid automatic defaults.');
+console.log('Custom doubles selection, existing pair order, specialists, emergencies and deselection checks: passed');

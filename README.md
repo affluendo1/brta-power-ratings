@@ -28,6 +28,11 @@ turn off the automatic-status checkbox. Tab or Enter moves between score boxes.
 Optional home/away competition-point overrides handle manual
 adjustments without changing the scorecard or player ratings.
 
+**Doubles pairs** sits beneath each matchday squad. Tick two selected squad
+players for D1, D2, and so on; singles order stays independent. Existing pairings
+appear automatically, and **Last round** copies the previous pairs too. Changing
+a scored pair asks before clearing only that doubles match’s score.
+
 **Save changes** stores the section in this browser. **View section** opens it in
 the normal Results, Standings, Ratings, Teams, and Fixtures views under
 **My sections**. The blue **Back to editor** button beside Settings returns to
