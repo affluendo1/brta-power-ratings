@@ -92,3 +92,14 @@ function approx(actual,expected,tolerance=1e-9){
   assert.match(tie.score,/^\d+-\d+ \d+-\d+(?: \[\d+-\d+\])?$/);
 }
 console.log('prediction engine tests passed');
+// Custom sections use their configured set lengths, match lengths and team scoring.
+for(const targetGames of [4,6,8])for(const bestOf of [1,3]){
+  const rows=P.matchDistribution(.63,{targetGames,bestOf});approx(rows.reduce((n,r)=>n+r.probability,0),1,1e-10);approx(P.matchDistribution(.5,{targetGames,bestOf}).filter(r=>r.homeWin).reduce((n,r)=>n+r.probability,0),.5,1e-10);const mirror=P.matchDistribution(.37,{targetGames,bestOf});approx(rows.filter(r=>r.homeWin).reduce((n,r)=>n+r.probability,0)+mirror.filter(r=>r.homeWin).reduce((n,r)=>n+r.probability,0),1,1e-10);
+  const won=P.sampleRubber({label:'Configured',gameProbability:1,bestOf,targetGames},{rng:()=>0});assert.equal(won.homeSets,bestOf===3?2:1);assert.equal(won.awaySets,0);assert.equal(won.homeGames,targetGames*(bestOf===3?2:1));assert.equal(won.awayGames,0);
+}
+approx(P.matchDistribution(.61,{bestOf:3,targetGames:6}).filter(r=>r.homeWin).reduce((n,r)=>n+r.probability,0),P.rubbersSinglesWin(.61),1e-10);
+const customRubbers=[...Array.from({length:2},(_,i)=>({label:'Singles '+i,gameProbability:1,p:1,bestOf:3,targetGames:4})),...Array.from({length:3},(_,i)=>({label:'Doubles '+i,gameProbability:0,p:0,bestOf:1,targetGames:8}))];
+const customTie=P.simulateTie(customRubbers,{custom:true,format:'rubbers',rng:()=>.5});assert.equal(customTie.homeRubbers,2);assert.equal(customTie.awayRubbers,3);assert.equal(customTie.homeSets,4);assert.equal(customTie.awaySets,3);assert.equal(customTie.winner,1);assert.equal(customTie.homePoints,5);assert.equal(customTie.awayPoints,3);
+const setsTie=P.simulateTie(customRubbers,{custom:true,format:'sets',rng:()=>.5});assert.equal(setsTie.winner,-1);assert.equal(setsTie.homePoints,2);assert.equal(setsTie.awayPoints,7);
+const configured=customRubbers.map(r=>({...r,scoreDistribution:P.matchDistribution(r.gameProbability,r)})),projected=P.teamOutcome(configured,{setWinsDecideTies:true,gamesDecideTies:true});assert.equal(projected.homeWin,1);assert.equal(projected.awayWin,0);
+console.log('Custom match counts, 4/6/8-game sets, best-of-three distributions, simulation and set-based team scoring: passed');

@@ -14,6 +14,29 @@ singles/doubles set lengths. Add teams and named players in their registered ord
 Players can also be unassigned emergency substitutes. Bulk entry accepts one
 `Name | Team | Order | E` record per line.
 
+**Teams & players → Edit current roster as text** loads the current active list
+as `Name | Team | Order | E`. Edit or replace it, preview the changes, then apply
+and save. Matching is by name (ignoring case and extra spaces), so moving a line
+or changing registered order preserves the player's ID, matches and scores.
+**Use pasted row order as registered order** numbers each team's players from
+their order in the text, ignoring the old numbers. Otherwise the Order column
+is used; blank orders are numbered automatically. The individual editor also
+shows players by team and registered order, and reorders after an Order change.
+
+Omitted players with saved match, squad or pair references move to **History-only
+players**, retaining their old matches. Omitted unused players are removed.
+Adding a historical name back reactivates the same ID. A changed name is a new
+identity in bulk text: use the existing player's individual Name field first for
+renames. Team transfers retain the registration attached to earlier appearances
+without retroactively marking those appearances as emergencies. Roster previews
+are atomic and report duplicates or invalid rows before changing the draft.
+
+Custom **Teams** shows active registered squads, power, completed ties, actual
+lineup histories and doubles pair histories. Prediction Centre uses the section's
+configured match counts, set lengths and best-of settings, with custom team
+scoring. Club Zone is hidden and disabled for custom sections; it remains
+available for official sections.
+
 For each round, choose the date and fixtures. Tick the matchday squad checkboxes;
 registered order is used automatically, and the up/down buttons adjust it.
 **First N** and **Last round** shortcuts fill the squads quickly. Matchups are

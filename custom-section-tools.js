@@ -59,5 +59,37 @@
     for(const r of chosen){const old=next.rounds.find(x=>Number(x.number)===Number(r.number));if(old&&!replace){if(old.date!==r.date)throw Error('Round '+r.number+' already has a different date. Choose Replace selected rounds to change it.');old.fixtures.push(...copy(r.fixtures));}else if(old){Object.assign(old,copy(r),{id:old.id})}else next.rounds.push(copy(r));}
     M.validate(next);return next;
   }
-  const api={parse,merge,finish,lineup,generate,makeMatch,scoreSets,date,plusDays,doublesPairs};root.CustomSectionTools=api;if(typeof module!=='undefined')module.exports=api;
+  function rosterPlayers(section){const teams=new Map(section.teams.map((t,i)=>[t.id,i]));return section.players.filter(p=>!p.archived).slice().sort((a,b)=>(teams.get(a.teamId)??1e9)-(teams.get(b.teamId)??1e9)||a.order-b.order||a.name.localeCompare(b.name));}
+  function rosterText(section){const teams=new Map(section.teams.map(t=>[t.id,t.name]));return rosterPlayers(section).map(p=>[p.name,teams.get(p.teamId)||'',p.order,p.emergency?'E':''].join(' | ')).join('\n');}
+  function playerReferences(section){const refs=new Set();for(const round of section.rounds)for(const f of round.fixtures)for(const side of ['home','away']){for(const id of f[side+'Lineup']||[])refs.add(id);for(const pair of f[side+'DoublesPairs']||[])for(const id of pair)refs.add(id);for(const m of f.rubbers)for(const id of m[side]||[])if(id)refs.add(id);}return refs;}
+  function replaceRoster(section,text,{replace=true,renumber=false}={}){
+    if(typeof text!=='string'||text.length>200000)throw Error('Paste a roster smaller than 200 KB.');
+    const next=copy(section),old=new Map(section.players.map(p=>[normal(p.name),p])),teams=new Map(next.teams.map(t=>[normal(t.name),t])),seen=new Set(),counts=new Map(),usedIds=new Set(),refs=playerReferences(section),rows=[],summary={retained:[],added:[],updated:[],reactivated:[],archived:[],removed:[],teamsAdded:[]};
+    if(old.size!==section.players.length)throw Error('Some existing names differ only by spaces. Make those names distinct before replacing the roster.');if(teams.size!==section.teams.length)throw Error('Some team names differ only by spaces. Make those names distinct first.');
+    for(const [lineNumber,line] of text.split(/\r?\n/).entries()){
+      if(!line.trim())continue;
+      try{
+        const cells=line.split('|').map(x=>x.trim());if(cells.length>4)throw Error('Use Name | Team | Order | E.');
+        const [name,teamName='',order='',em='']=cells,key=normal(name);if(!key)throw Error('Enter a player name.');if(seen.has(key))throw Error('Duplicate player name: '+name);seen.add(key);
+        if(em&&!/^(e|yes|true|no|false|0)$/i.test(em))throw Error('Use E for an emergency, or leave it blank.');
+        let team=teamName?teams.get(normal(teamName)):null;if(teamName&&!team){team={id:uuid(),name:teamName};teams.set(normal(teamName),team);next.teams.push(team);summary.teamsAdded.push(teamName);}
+        const existing=old.get(key);if(!replace&&existing&&!existing.archived)throw Error(name+' already exists. Use Replace current roster to edit existing players.');
+        const teamId=team?.id||'',position=(counts.get(teamId)||0)+1;counts.set(teamId,position);
+        let registered=renumber||!order?position:Number(order);if(!replace&&!order&&!renumber)registered=Math.max(0,...next.players.filter(p=>p.teamId===teamId&&!p.archived).map(p=>p.order),...rows.filter(p=>p.teamId===teamId).map(p=>p.order))+1;
+        if(!Number.isInteger(registered)||registered<1)throw Error('Order must be a positive whole number.');
+        const p={...existing,id:existing?.id||uuid(),name,teamId,order:registered,emergency:/^(e|yes|true)$/i.test(em)};delete p.archived;rows.push(p);usedIds.add(p.id);
+        if(!existing)summary.added.push(name);else{summary.retained.push(name);if(existing.archived)summary.reactivated.push(name);if(existing.name!==p.name||existing.teamId!==p.teamId||existing.order!==p.order||!!existing.emergency!==p.emergency)summary.updated.push(name);}
+      }catch(e){throw Error('Line '+(lineNumber+1)+': '+e.message);}
+    }
+    if(!replace&&!rows.length)throw Error('Paste at least one player.');
+    // Retain stable IDs for names. Omitted players with scorecards or saved squads
+    // remain historical identities, outside the active roster and future pickers.
+    if(replace){for(const p of section.players)if(!usedIds.has(p.id)){if(refs.has(p.id)){rows.push({...p,archived:true});if(!p.archived)summary.archived.push(p.name);}else summary.removed.push(p.name);}next.players=rows;}
+    else next.players=next.players.filter(p=>!usedIds.has(p.id)).concat(rows);
+    // A transfer must not turn an old appearance into a retroactive emergency.
+    const current=new Map(next.players.map(p=>[p.id,p])),prior=new Map(section.players.map(p=>[p.id,p]));
+    for(const round of next.rounds)for(const f of round.fixtures)for(const m of f.rubbers)for(const side of ['home','away'])if((m[side]||[]).some(id=>prior.get(id)?.teamId!==current.get(id)?.teamId))m[side+'RegisteredTeams']=(m[side]||[]).map((id,i)=>m[side+'RegisteredTeams']?.[i]??prior.get(id)?.teamId??'');
+    M.validate(next);return {section:next,summary};
+  }
+  const api={parse,merge,finish,lineup,generate,makeMatch,scoreSets,date,plusDays,doublesPairs,rosterPlayers,rosterText,replaceRoster,playerReferences};root.CustomSectionTools=api;if(typeof module!=='undefined')module.exports=api;
 })(typeof window!=='undefined'?window:globalThis);
