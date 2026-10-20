@@ -125,7 +125,7 @@ class DatasetValidationTests(unittest.TestCase):
         original = copy.deepcopy(fixtures)
         warnings = validate_dataset(fixtures, self.singles, self.doubles, "UA009",
                                     allow_total_discrepancies=True)
-        self.assertTrue(any("TROLS team total" in warning and "scorecard total" in warning
+        self.assertTrue(any("TROLS team total" in warning and "complete-score total" in warning
                             for warning in warnings))
         self.assertEqual(fixtures, original)
         singles = copy.deepcopy(self.singles)
@@ -138,6 +138,23 @@ class DatasetValidationTests(unittest.TestCase):
         with self.assertRaisesRegex(RuntimeError, "Duplicate fixture/position"):
             validate_dataset(fixtures, self.singles + [self.singles[0]], self.doubles,
                              "UA009", allow_total_discrepancies=True)
+
+    def test_partial_source_score_is_preserved_without_guessing_or_rating(self):
+        html = """<table width="99%"><tr><td>Home</td><td>Away</td></tr><tr><td>
+        <table><tr><td>1. Home Player</td></tr></table>
+        <table><tr><td>1</td><td>6- </td><td>1</td></tr></table>
+        <table><tr><td>1. Away Player</td></tr></table>
+        </td></tr></table>"""
+        fixture = {"fixture_id": "AA007112", "date": "17 Oct 26", "round": 11,
+                   "home_team": "Home", "away_team": "Away", "home_sets": ""}
+        singles, doubles = parse_scorecard(html, fixture)
+        self.assertEqual(len(singles), 1)
+        self.assertEqual(singles[0]["score"], "6-")
+        self.assertEqual(singles[0]["home_player"], "Home Player")
+        self.assertEqual(singles[0]["winning_player"], "")
+        self.assertEqual(singles[0]["status"], "Unfinished")
+        self.assertEqual(singles[0]["valid_for_rating"], "false")
+        self.assertEqual(singles[0]["home_games"] + singles[0]["away_games"], 0)
 
     def test_same_display_name_for_both_opponents_is_not_a_false_winner_error(self):
         singles = copy.deepcopy(self.singles)

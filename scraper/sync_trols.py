@@ -388,6 +388,11 @@ def _rubbers_score(raw_score: str, rubbers_format: bool) -> dict | None:
     """
     values = [(int(a), int(b)) for a, b in re.findall(r"(\d+)\s*-\s*(\d+)", raw_score)]
     if not values:
+        if re.fullmatch(r"(?:\d+\s*-\s*|-\s*\d+)", raw_score.strip()):
+            # Keep the published partial score visible without guessing its
+            # missing side. Zero evidence fields never enter ratings or totals.
+            return {"score": raw_score.strip(), "home_games": 0, "away_games": 0,
+                    "home_sets": 0, "away_sets": 0, "decisive": False, "incomplete": True}
         return None
     normal, match_tiebreak = values, None
     if rubbers_format and len(values) >= 3:
@@ -483,7 +488,7 @@ def parse_scorecard(html: str, fixture: dict) -> tuple[list[dict], list[dict]]:
             "fixture_id": fixture["fixture_id"], "date": fixture["date"], "round": fixture["round"],
             "home_team": home_team, "away_team": away_team, "score": score["score"],
             "home_games": home_games, "away_games": away_games, "home_sets": home_sets, "away_sets": away_sets,
-            "status": "Completed", "valid_for_rating": str(decisive).lower(),
+            "status": "Unfinished" if score.get("incomplete") else "Completed", "valid_for_rating": str(decisive).lower(),
         }
         if is_pair:
             doubles_position += 1
@@ -601,6 +606,10 @@ def validate_dataset(
             if key in positions:
                 raise RuntimeError(f"Duplicate fixture/position entry: {key}")
             positions.add(key)
+            if row.get("status") == "Unfinished":
+                source_discrepancy(
+                    f"Incomplete TROLS score for {row['fixture_id']} {discipline} {row['position']}: "
+                    f"{row['score']!r}. Missing score not inferred; excluded from ratings and game totals.", total=True)
             if str(row.get("valid_for_rating", "true")).lower() == "true":
                 if _contains_source_unknown(row.get("home_player") or row.get("home_pair") or "") or _contains_source_unknown(row.get("away_player") or row.get("away_pair") or ""):
                     raise RuntimeError(f"Unnamed TROLS participant was incorrectly included in ratings for {key}")
@@ -633,7 +642,7 @@ def validate_dataset(
             source_discrepancy(
                 f"Fixture game totals do not match rubbers for {fixture['fixture_id']}: "
                 f"TROLS team total {fixture['home_games']}-{fixture['away_games']}; "
-                f"scorecard total {hg}-{ag}. Both published records retained.", total=bool(rows))
+                f"complete-score total {hg}-{ag}. Both published records retained.", total=bool(rows))
         green_ball = green_ball or section_code in {"AA013", "AA014", "UA026", "UA027"}
         complete_standard_card = len(rows) == 6 and all(not _contains_source_unknown(str(row)) for row in rows)
         if fixture["home_sets"] == "" and not green_ball and complete_standard_card and (hr, ar) != (_integer(fixture["home_rubbers"], "fixture home rubbers"), _integer(fixture["away_rubbers"], "fixture away rubbers")):
