@@ -1266,6 +1266,7 @@ def sync_meta(metadata, fixtures):
         "updatedAt": updated,
         "latestRound": metadata.get("latest_round"),
         "validation": metadata.get("validation"),
+        "sourceWarnings": metadata.get("source_warnings", []),
         "newResultsLastCheck": bool(check.get("new_results", False)),
         "missingFixtures": int(sum(1 for _, r in fixtures.iterrows() if str(r.status) == "Missing Result")),
         "resultsLoadedByTrols": raw,

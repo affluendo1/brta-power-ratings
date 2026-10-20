@@ -577,11 +577,12 @@ def _integer(value, label: str) -> int:
 def validate_dataset(
     fixtures: list[dict], singles: list[dict], doubles: list[dict], section_code: str,
     *, green_ball: bool = False, allow_source_discrepancies: bool = False,
+    allow_total_discrepancies: bool = False,
 ) -> list[str]:
     warnings = []
 
-    def source_discrepancy(message: str) -> None:
-        if not allow_source_discrepancies:
+    def source_discrepancy(message: str, *, total: bool = False) -> None:
+        if not (allow_source_discrepancies or (total and allow_total_discrepancies)):
             raise RuntimeError(message)
         warnings.append(message)
 
@@ -629,11 +630,16 @@ def validate_dataset(
         hr = sum(_integer(row["home_sets"], "home sets") > _integer(row["away_sets"], "away sets") for row in scoring_rows)
         ar = sum(_integer(row["away_sets"], "away sets") > _integer(row["home_sets"], "home sets") for row in scoring_rows)
         if (hg, ag) != (_integer(fixture["home_games"], "fixture home games"), _integer(fixture["away_games"], "fixture away games")):
-            source_discrepancy(f"Fixture game totals do not match rubbers for {fixture['fixture_id']}")
+            source_discrepancy(
+                f"Fixture game totals do not match rubbers for {fixture['fixture_id']}: "
+                f"TROLS team total {fixture['home_games']}-{fixture['away_games']}; "
+                f"scorecard total {hg}-{ag}. Both published records retained.", total=bool(rows))
         green_ball = green_ball or section_code in {"AA013", "AA014", "UA026", "UA027"}
         complete_standard_card = len(rows) == 6 and all(not _contains_source_unknown(str(row)) for row in rows)
         if fixture["home_sets"] == "" and not green_ball and complete_standard_card and (hr, ar) != (_integer(fixture["home_rubbers"], "fixture home rubbers"), _integer(fixture["away_rubbers"], "fixture away rubbers")):
-            source_discrepancy(f"Fixture rubber totals do not match rubbers for {fixture['fixture_id']}")
+            source_discrepancy(f"Fixture rubber totals do not match rubbers for {fixture['fixture_id']}: "
+                               f"TROLS {fixture['home_rubbers']}-{fixture['away_rubbers']}; scorecard {hr}-{ar}. "
+                               "Both published records retained.", total=True)
     return warnings
 
 
@@ -818,7 +824,14 @@ def scrape_all() -> list[dict]:
         section["draw"] = attach_draw_ids(sorted(unique.values(), key=lambda row: (row["round"], row["home_team"])), section["fixtures"])
         section["singles"].sort(key=lambda row: (int(row["round"]), row["fixture_id"], row["position"]))
         section["doubles"].sort(key=lambda row: (int(row["round"]), row["fixture_id"], row["position"]))
-        validate_dataset(section["fixtures"], section["singles"], section["doubles"], section["section_code"])
+        # TROLS team summaries can disagree with its own individual scores.
+        # Preserve both verbatim; structural, identity and winner checks stay strict.
+        section["source_warnings"] = validate_dataset(
+            section["fixtures"], section["singles"], section["doubles"], section["section_code"],
+            allow_total_discrepancies=True,
+        )
+        for warning in section["source_warnings"]:
+            print(f"::warning::{section['section_code']}: {warning}")
     return loaded_sections
 
 
@@ -862,7 +875,9 @@ def main() -> None:
             "results_loaded_by_trols": section["results_loaded_by_trols"],
             "fixtures": len(section["fixtures"]), "completed_fixtures": completed, "draw_fixtures": len(section["draw"]),
             "singles_rubbers": len(section["singles"]), "doubles_rubbers": len(section["doubles"]),
-            "latest_round": max((int(row["round"]) for row in section["fixtures"]), default=0), "validation": "passed",
+            "latest_round": max((int(row["round"]) for row in section["fixtures"]), default=0),
+            "validation": "source discrepancies" if section.get("source_warnings") else "passed",
+            "source_warnings": section.get("source_warnings", []),
         }
         (section_dir / "metadata.json").write_text(json.dumps(metadata, indent=2) + "\n", encoding="utf-8")
         catalog.append(metadata)
@@ -888,7 +903,10 @@ def main() -> None:
         "current_seasons": current_seasons,
         "fixtures": sum(row["fixtures"] for row in catalog), "completed_fixtures": sum(row["completed_fixtures"] for row in catalog),
         "singles_rubbers": sum(row["singles_rubbers"] for row in catalog), "doubles_rubbers": sum(row["doubles_rubbers"] for row in catalog),
-        "validation": "passed", "elapsed_seconds": round(time.monotonic() - started, 1),
+        "validation": "source discrepancies" if any(row["source_warnings"] for row in catalog) else "passed",
+        "source_warnings": [{"section_code": row["section_code"], "message": warning}
+                            for row in catalog for warning in row["source_warnings"]],
+        "elapsed_seconds": round(time.monotonic() - started, 1),
     }
     (OUT / "sync_status.json").write_text(json.dumps(status, indent=2) + "\n", encoding="utf-8")
     transitions = current_season_transitions(previous_seasons, catalog)

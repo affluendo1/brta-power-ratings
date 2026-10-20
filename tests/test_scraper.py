@@ -119,6 +119,26 @@ class DatasetValidationTests(unittest.TestCase):
         )
         self.assertTrue(any("Fixture game totals do not match" in warning for warning in warnings))
 
+    def test_live_total_discrepancy_preserves_source_and_keeps_other_checks_strict(self):
+        fixtures = copy.deepcopy(self.fixtures)
+        fixtures[0]["home_games"] = str(int(fixtures[0]["home_games"]) + 1)
+        original = copy.deepcopy(fixtures)
+        warnings = validate_dataset(fixtures, self.singles, self.doubles, "UA009",
+                                    allow_total_discrepancies=True)
+        self.assertTrue(any("TROLS team total" in warning and "scorecard total" in warning
+                            for warning in warnings))
+        self.assertEqual(fixtures, original)
+        singles = copy.deepcopy(self.singles)
+        row = next(row for row in singles if int(row["home_sets"]) > int(row["away_sets"]))
+        row["winning_player"] = row["away_player"]
+        with self.assertRaisesRegex(RuntimeError, "Winner does not agree"):
+            validate_dataset(fixtures, singles, self.doubles, "UA009", allow_total_discrepancies=True)
+        with self.assertRaisesRegex(RuntimeError, "No scorecard rubbers"):
+            validate_dataset(fixtures, [], [], "UA009", allow_total_discrepancies=True)
+        with self.assertRaisesRegex(RuntimeError, "Duplicate fixture/position"):
+            validate_dataset(fixtures, self.singles + [self.singles[0]], self.doubles,
+                             "UA009", allow_total_discrepancies=True)
+
     def test_same_display_name_for_both_opponents_is_not_a_false_winner_error(self):
         singles = copy.deepcopy(self.singles)
         row = singles[0]
