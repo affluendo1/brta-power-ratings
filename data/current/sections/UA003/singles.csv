@@ -1,7 +1,7 @@
 fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
 UA003012,19 Jul 26,1,Royal South Yarra,BLTC,No. 1,Sebastian Parmenov,Samuel Jena,Sebastian Parmenov,6-2 6-1,12,3,2,0,Completed,true,false,false
 UA003012,19 Jul 26,1,Royal South Yarra,BLTC,No. 2,Mia Ruda,Luke Chapman,Mia Ruda,6-3 5-7 7-6,18,16,2,1,Completed,true,false,false
-UA003013,19 Jul 26,1,Black Rock Navy,Black Rock Maroon,No. 1,Toby Leeds,Jakob Misso,Toby Leeds,6-0 6-0,12,0,2,0,Completed,true,false,true
+UA003013,19 Jul 26,1,Black Rock Navy,Black Rock Maroon,No. 1,Toby Leeds,Jakob Misso,Toby Leeds,6-0 6-0,12,0,2,0,Completed,true,false,false
 UA003013,19 Jul 26,1,Black Rock Navy,Black Rock Maroon,No. 2,Leo Suszko,Lorenzo Liberalli,Leo Suszko,6-2 7-5,13,7,2,0,Completed,true,false,false
 UA003014,19 Jul 26,1,Murrumbeena,Caulfield Rec,No. 1,Phelix Ma,Perry Li,Phelix Ma,6-3 6-2,12,5,2,0,Completed,true,false,false
 UA003014,19 Jul 26,1,Murrumbeena,Caulfield Rec,No. 2,Lucas Yang,Ryan Yang,Lucas Yang,7-5 6-2,13,7,2,0,Completed,true,false,false
@@ -29,7 +29,7 @@ UA003061,23 Aug 26,6,Royal South Yarra,Black Rock Navy,No. 1,Sebastian Parmenov,
 UA003061,23 Aug 26,6,Royal South Yarra,Black Rock Navy,No. 2,Will Steedman,Leo Suszko,Will Steedman,6-1 6-2,12,3,2,0,Completed,true,false,false
 UA003062,23 Aug 26,6,Murrumbeena,Kooyong,No. 1,Phelix Ma,Freddie Tulloch,Phelix Ma,6-0 6-0,12,0,2,0,Completed,true,false,false
 UA003062,23 Aug 26,6,Murrumbeena,Kooyong,No. 2,Jayden Lin,Jihoo Kim,Jayden Lin,6-3 6-2,12,5,2,0,Completed,true,false,false
-UA003063,23 Aug 26,6,Black Rock Maroon,BLTC,No. 1,Jakob Misso,Kewen Zheng,Kewen Zheng,1-6 4-6,5,12,0,2,Completed,true,true,false
+UA003063,23 Aug 26,6,Black Rock Maroon,BLTC,No. 1,Jakob Misso,Kewen Zheng,Kewen Zheng,1-6 4-6,5,12,0,2,Completed,true,false,false
 UA003063,23 Aug 26,6,Black Rock Maroon,BLTC,No. 2,Joshua Gilham,Luke Chapman,Luke Chapman,1-6 5-7,6,13,0,2,Completed,true,true,false
 UA003071,30 Aug 26,7,Kooyong,Black Rock Navy,No. 1,Freddie Tulloch,Leo Suszko,Freddie Tulloch,6-4 1-6 7-6,14,16,2,1,Completed,true,false,false
 UA003071,30 Aug 26,7,Kooyong,Black Rock Navy,No. 2,Jihoo Kim,Evan Yu,Evan Yu,6-2 6-7 6-7,18,16,1,2,Completed,true,false,false
@@ -55,3 +55,9 @@ UA003102,11 Oct 26,10,Caulfield Rec,Royal South Yarra,No. 1,Perry Li,Max Shepher
 UA003102,11 Oct 26,10,Caulfield Rec,Royal South Yarra,No. 2,Aarin Trikannad,Boston Moran,Boston Moran,2-6 1-6,3,12,0,2,Completed,true,false,false
 UA003104,11 Oct 26,10,BLTC,Murrumbeena,No. 1,Samuel Jena,Dennis Xu,Dennis Xu,4-6 6-2 6-7,16,15,1,2,Completed,true,false,true
 UA003104,11 Oct 26,10,BLTC,Murrumbeena,No. 2,Luke Chapman,Jayden Lin,Luke Chapman,6-3 3-6 7-6,16,15,2,1,Completed,true,false,false
+UA003111,18 Oct 26,11,Kooyong,BLTC,No. 1,Freddie Tulloch,Luke Chapman,Luke Chapman,3-6 4-6,7,12,0,2,Completed,true,false,false
+UA003111,18 Oct 26,11,Kooyong,BLTC,No. 2,Jihoo Kim,Ludwik Szymanski,Ludwik Szymanski,1-6 2-6,3,12,0,2,Completed,true,false,true
+UA003112,18 Oct 26,11,Royal South Yarra,Black Rock Maroon,No. 1,Will Steedman,Lorenzo Liberalli,Will Steedman,4-6 7-6 7-6,18,18,2,1,Completed,true,false,false
+UA003112,18 Oct 26,11,Royal South Yarra,Black Rock Maroon,No. 2,Boston Moran,Jakob Misso,Boston Moran,6-2 7-5,13,7,2,0,Completed,true,false,false
+UA003113,18 Oct 26,11,Black Rock Navy,Caulfield Rec,No. 1,Leo Suszko,Hongyou Zhang,Leo Suszko,6-0 6-2,12,2,2,0,Completed,true,false,true
+UA003113,18 Oct 26,11,Black Rock Navy,Caulfield Rec,No. 2,Evan Yu,Thompson Vo,Evan Yu,3-6 6-0 7-6,16,12,2,1,Completed,true,false,true

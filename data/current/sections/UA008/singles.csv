@@ -50,7 +50,7 @@ UA008034,02 Aug 26,3,Elsternwick Park,Tennis World,No. 4,Monty Van Der Sluys,Lee
 UA008043,09 Aug 26,4,Carmelite,Black Rock,No. 1,Archie Ingram,Charlie Schutz,Charlie Schutz,4-6,4,6,0,1,Completed,true,false,false
 UA008043,09 Aug 26,4,Carmelite,Black Rock,No. 2,Madeleine Wilson,Bahya Hamada,Madeleine Wilson,7-5,7,5,1,0,Completed,true,false,false
 UA008043,09 Aug 26,4,Carmelite,Black Rock,No. 3,Ethan Brys,Harper Gehrig,Ethan Brys,6-3,6,3,1,0,Completed,true,false,false
-UA008043,09 Aug 26,4,Carmelite,Black Rock,No. 4,Bryson Walters,Adam Sayers,Adam Sayers,3-6,3,6,0,1,Completed,true,false,true
+UA008043,09 Aug 26,4,Carmelite,Black Rock,No. 4,Bryson Walters,Adam Sayers,Adam Sayers,3-6,3,6,0,1,Completed,true,false,false
 UA008044,09 Aug 26,4,GPHC,Elsternwick Park,No. 1,Harry Mansell,Austin Sun,Austin Sun,1-6,1,6,0,1,Completed,true,false,false
 UA008044,09 Aug 26,4,GPHC,Elsternwick Park,No. 2,Thomas Rogers,Jesse Colberg,Jesse Colberg,5-7,5,7,0,1,Completed,true,false,false
 UA008044,09 Aug 26,4,GPHC,Elsternwick Park,No. 3,Joseph Karalapillai,Tristan Linnett,Joseph Karalapillai,6-4,6,4,1,0,Completed,true,false,false
@@ -114,7 +114,7 @@ UA008082,06 Sep 26,8,Tennis World,BLTC,No. 4,Ian Shim,Jenson Witherington,Jenson
 UA008083,06 Sep 26,8,Le Page,Black Rock,No. 1,Cedric Conway,Evelyn Evdokimov,Cedric Conway,6-3,6,3,1,0,Completed,true,false,false
 UA008083,06 Sep 26,8,Le Page,Black Rock,No. 2,Tome Lazic,Lily Beckett,Lily Beckett,5-7,5,7,0,1,Completed,true,false,false
 UA008083,06 Sep 26,8,Le Page,Black Rock,No. 3,Jonathan Friedman,Harper Gehrig,Jonathan Friedman,6-4,6,4,1,0,Completed,true,false,false
-UA008083,06 Sep 26,8,Le Page,Black Rock,No. 4,Angus Wang,Adam Sayers,Adam Sayers,2-6,2,6,0,1,Completed,true,false,true
+UA008083,06 Sep 26,8,Le Page,Black Rock,No. 4,Angus Wang,Adam Sayers,Adam Sayers,2-6,2,6,0,1,Completed,true,false,false
 UA008084,06 Sep 26,8,Carmelite,Elsternwick Park,No. 1,Archie Ingram,Austin Sun,Austin Sun,1-6,1,6,0,1,Completed,true,false,false
 UA008084,06 Sep 26,8,Carmelite,Elsternwick Park,No. 2,Madeleine Wilson,Jesse Colberg,Madeleine Wilson,6-0,6,0,1,0,Completed,true,false,false
 UA008084,06 Sep 26,8,Carmelite,Elsternwick Park,No. 3,Ethan Brys,Tristan Linnett,Ethan Brys,6-1,6,1,1,0,Completed,true,false,false
@@ -130,7 +130,7 @@ UA008092,13 Sep 26,9,BLTC,GPHC,No. 4,Jenson Witherington,Oscar Cray,Jenson Withe
 UA008093,13 Sep 26,9,Black Rock,Tennis World,No. 1,Evelyn Evdokimov,Carter Apswoude,Carter Apswoude,4-6,4,6,0,1,Completed,true,false,false
 UA008093,13 Sep 26,9,Black Rock,Tennis World,No. 2,Bahya Hamada,Harry Lipe,Harry Lipe,4-6,4,6,0,1,Completed,true,false,false
 UA008093,13 Sep 26,9,Black Rock,Tennis World,No. 3,Harper Gehrig,Lee Dorrington,Harper Gehrig,6-2,6,2,1,0,Completed,true,false,false
-UA008093,13 Sep 26,9,Black Rock,Tennis World,No. 4,Adam Sayers,Ian Shim,Adam Sayers,6-3,6,3,1,0,Completed,true,true,false
+UA008093,13 Sep 26,9,Black Rock,Tennis World,No. 4,Adam Sayers,Ian Shim,Adam Sayers,6-3,6,3,1,0,Completed,true,false,false
 UA008094,13 Sep 26,9,Elsternwick Park,Le Page,No. 1,Austin Sun,Cedric Conway,Austin Sun,6-2,6,2,1,0,Completed,true,false,false
 UA008094,13 Sep 26,9,Elsternwick Park,Le Page,No. 2,Jesse Colberg,Tome Lazic,Jesse Colberg,6-2,6,2,1,0,Completed,true,false,false
 UA008094,13 Sep 26,9,Elsternwick Park,Le Page,No. 3,Tristan Linnett,Yoni Friedman,Yoni Friedman,2-6,2,6,0,1,Completed,true,false,true
@@ -151,3 +151,19 @@ UA008104,11 Oct 26,10,Tennis World,Elsternwick Park,No. 1,Luca Colubriale,Austin
 UA008104,11 Oct 26,10,Tennis World,Elsternwick Park,No. 2,Harry Lipe,Jesse Colberg,Jesse Colberg,6-7,6,7,0,1,Completed,true,false,false
 UA008104,11 Oct 26,10,Tennis World,Elsternwick Park,No. 3,Lee Dorrington,Tristan Linnett,Lee Dorrington,6-3,6,3,1,0,Completed,true,false,false
 UA008104,11 Oct 26,10,Tennis World,Elsternwick Park,No. 4,Ian Shim,James McCallum,James McCallum,2-6,2,6,0,1,Completed,true,false,false
+UA008111,18 Oct 26,11,Mentone,Tennis World,No. 1,Jack Oudshoorn,Carter Apswoude,Carter Apswoude,1-6,1,6,0,1,Completed,true,true,false
+UA008111,18 Oct 26,11,Mentone,Tennis World,No. 2,Phillip Nyamukondiwa,Harry Lipe,Harry Lipe,4-6,4,6,0,1,Completed,true,false,false
+UA008111,18 Oct 26,11,Mentone,Tennis World,No. 3,Yizhe Ma,Lee Dorrington,Lee Dorrington,1-6,1,6,0,1,Completed,true,false,false
+UA008111,18 Oct 26,11,Mentone,Tennis World,No. 4,Jacob Strelnikov,Ian Shim,Jacob Strelnikov,6-1,6,1,1,0,Completed,true,false,false
+UA008112,18 Oct 26,11,BLTC,Le Page,No. 1,Edward Jones,Cedric Conway,Edward Jones,6-4,6,4,1,0,Completed,true,false,false
+UA008112,18 Oct 26,11,BLTC,Le Page,No. 2,Daniel McLean,Tome Lazic,Tome Lazic,0-6,0,6,0,1,Completed,true,false,false
+UA008112,18 Oct 26,11,BLTC,Le Page,No. 3,William Wheeler,Jonathan Friedman,William Wheeler,6-3,6,3,1,0,Completed,true,false,false
+UA008112,18 Oct 26,11,BLTC,Le Page,No. 4,Jenson Witherington,Angus Wang,Jenson Witherington,6-4,6,4,1,0,Completed,true,false,false
+UA008113,18 Oct 26,11,Black Rock,Carmelite,No. 1,Joshua Gilham,Archie Ingram,Joshua Gilham,6-3,6,3,1,0,Completed,true,false,false
+UA008113,18 Oct 26,11,Black Rock,Carmelite,No. 2,Charlie Schutz,Madeleine Wilson,Charlie Schutz,6-4,6,4,1,0,Completed,true,false,false
+UA008113,18 Oct 26,11,Black Rock,Carmelite,No. 3,Bahya Hamada,Ethan Brys,Ethan Brys,4-6,4,6,0,1,Completed,true,false,false
+UA008113,18 Oct 26,11,Black Rock,Carmelite,No. 4,Adam Sayers,Bryson Walters,Adam Sayers,6-3,6,3,1,0,Completed,true,false,false
+UA008114,18 Oct 26,11,Elsternwick Park,GPHC,No. 1,Jesse Colberg,Harry Mansell,Jesse Colberg,6-4,6,4,1,0,Completed,true,false,false
+UA008114,18 Oct 26,11,Elsternwick Park,GPHC,No. 2,Tristan Linnett,Kingsley Layh,Tristan Linnett,6-4,6,4,1,0,Completed,true,false,false
+UA008114,18 Oct 26,11,Elsternwick Park,GPHC,No. 3,James McCallum,Thomas Rogers,James McCallum,6-2,6,2,1,0,Completed,true,false,false
+UA008114,18 Oct 26,11,Elsternwick Park,GPHC,No. 4,Freya Hewitt,Oscar Cray,Freya Hewitt,6-3,6,3,1,0,Completed,true,false,false
