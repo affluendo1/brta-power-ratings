@@ -1,0 +1,8 @@
+
+/* Player search across seasons and direct section navigation. */
+.search-scope-choice [data-search-scope="history"]{grid-column:1/-1}
+.search-scope-choice small{display:block;margin-top:5px;font-size:11px;font-weight:500}
+.profile-section-switch{display:flex;align-items:center;justify-content:space-between;gap:14px;margin:0 0 22px;padding:14px;border:1px solid var(--border-color);background:var(--surface-muted)}
+.profile-section-switch small{display:block;margin-top:4px;color:var(--muted-color)}
+.profile-section-switch .button{white-space:normal;text-align:center}
+@media(max-width:560px){.profile-section-switch{align-items:stretch;flex-direction:column}.profile-section-switch .button{width:100%}}
