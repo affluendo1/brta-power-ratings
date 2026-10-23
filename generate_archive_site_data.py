@@ -8,6 +8,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from generate_site_data import build_section
+from generate_player_search import write_player_search
 
 ARCHIVE = Path("data/archive")
 RAW_CATALOG = ARCHIVE / "raw_catalog.json"
@@ -325,6 +326,7 @@ def main() -> None:
         catalog = write_catalog()
         if catalog is None:
             return
+    write_player_search(catalog)
     print(json.dumps({"generated_sections": count, "seasons": catalog["season_count"], "sections": catalog["section_count"]}, indent=2))
 
 

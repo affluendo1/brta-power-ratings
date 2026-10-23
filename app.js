@@ -14,10 +14,11 @@ function normaliseTeamLabels(value){if(Array.isArray(value)){value.forEach(norma
 let D=null,singles=[],dinds=[],pairs=[],teams=[];
 let viewCatalog=DATA.catalog||[],historyCatalog=null,historyCatalogPromise=null,activeHistorySeasonId=null;
 const archiveGlobalRowsCache=new Map();
+let playerSearchIndex=null,playerSearchPromise=null,playerSearchError=null,historySearchLimit=100,historySearchQuery='';
 let showProv=localStorage.getItem('brta-show-provisional')==='1';
 let ratingScope=localStorage.getItem('brta-rating-scope')||'section';
 let theme=localStorage.getItem('brta-theme')||'auto',interfaceMode=localStorage.getItem('brta-interface')||'future',accent=localStorage.getItem('brta-accent')||'yellow',profilePosition=localStorage.getItem('brta-profile-position')||'right';
-let ratingRound=null;
+let ratingRound=null,focusedSearchPlayer=null;
 let ratingView='singles',resultRound=null,selectedMatch=null,selectedPrediction=null,activePredictionMatch=null,activeProfilePlayer=null,loadingToken=0,roundSimulations={};
 let activePage='results',auxiliaryCache=null,auxiliaryCacheKey='',auxiliaryRevealTimer=0,auxiliaryRevealKey='',auxiliaryReadyKey='',auxiliaryFadeKey='';
 const BAND_NAMES=['Apex','Elite','Strong','Middle Class','Developing','Weak','Basement'];
@@ -36,7 +37,7 @@ function applyTheme(){const root=document.documentElement;root.dataset.theme=the
 applyTheme();matchMedia('(prefers-color-scheme: dark)').addEventListener?.('change',()=>{if(theme==='auto')applyTheme()});
 function fmtTime(iso){if(!iso)return'Not available';return new Date(iso).toLocaleString('en-AU',{day:'numeric',month:'short',hour:'numeric',minute:'2-digit'})}
 function personButton(name){return '<button class="person" data-player="'+esc(name)+'">'+esc(name)+'</button>'}
-function globalPersonButton(row){return '<button class="person" data-global-player="'+esc(row.player)+'" data-section-code="'+esc(row.sectionCode)+'">'+esc(row.player)+'</button>'}
+function globalPersonButton(row){return '<button class="person" data-global-player="'+esc(row.player)+'" data-section-code="'+esc(row.sectionCode)+'" data-season-key="'+esc(row.seasonKey||activeHistorySeasonId||'')+'">'+esc(row.player)+'</button>'}
 function resultPerson(name,label=name){const known=singles.some(x=>x.player===name)||dinds.some(x=>x.player===name);return known?'<button class="person" data-player="'+esc(name)+'">'+esc(label)+'</button>':esc(label)}
 function close(id){const overlay=$(id);if(!overlay)return;overlay.classList.add('hidden');if(id==='#profileOverlay')$('#profileMatchExplorer')?.classList.add('hidden');if(!document.querySelector('.overlay:not(.hidden)'))document.body.classList.remove('modal-open')}
 function switchPage(page){activePage=page;if(page!=='ratings')cancelAuxiliaryReveal();$$('.main-tab').forEach(b=>b.classList.toggle('active',b.dataset.page===page));$$('.page').forEach(p=>p.classList.toggle('active',p.id==='page-'+page))}
@@ -144,13 +145,13 @@ function fillSections(comp,selected){
   renderChoice('sectionSelect',list.map(x=>[x.section_code,x.section_label]),code);
   return code;
 }
-async function loadSection(code){
+async function loadSection(code,preloadedPayload=null){
   cancelAuxiliaryReveal();const token=++loadingToken,meta=viewCatalog.find(x=>x.section_code===code);
   $('#sectionSubtitle').textContent=(meta?.competition_label||'').replace(' - ',' · ')+' · '+(meta?.section_label||'Loading…');
   document.body.classList.add('section-loading');
   try{
     const dataPath=meta?.data_path||('data/site/sections/'+code+'.json');
-    const payload=meta?.is_custom?window.CustomSections.payload(code):await fetch(dataPath+'?v='+encodeURIComponent(DATA.globalSync.checkedAt||''),{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('Section data could not be loaded');return r.json()});
+    const payload=preloadedPayload||(meta?.is_custom?window.CustomSections.payload(code):await fetch(dataPath+'?v='+encodeURIComponent(DATA.globalSync.checkedAt||''),{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('Section data could not be loaded');return r.json()}));
     if(token!==loadingToken)return;
     if(meta?.is_custom)ratingScope='section';ratingRound=null;D=meta?.is_custom?payload:normaliseTeamLabels(payload);singles=D.singles||[];dinds=D.doublesIndividuals||[];pairs=D.doubles||[];teams=D.teams||[];
     if(activeHistorySeasonId){const selection={seasonId:activeHistorySeasonId,sectionCode:code};localStorage.setItem('brta-history-selection',JSON.stringify(selection))}else localStorage.setItem('brta-section',code);
@@ -212,6 +213,38 @@ function globalRatingRows(rows=DATA.globalPlayers||[]){
   if(ratingView==='overall')return rows.filter(x=>x.overallRating!=null).map(x=>({...x,rating:x.overallRating,se:x.overallSe,qualified:x.overallQualified,type:'overall'}));
   return[];
 }
+async function ensurePlayerSearchIndex(){
+  if(playerSearchIndex)return playerSearchIndex;
+  if(!playerSearchPromise){
+    playerSearchError=null;
+    playerSearchPromise=fetch('data/archive/player-search.json?v='+encodeURIComponent(DATA.globalSync.checkedAt||''),{cache:'no-store'})
+      .then(response=>{if(!response.ok)throw Error('The history player index could not be loaded.');return response.json()})
+      .then(index=>{if(index.version!==1||!Array.isArray(index.entries)||!Array.isArray(index.players)||!Array.isArray(index.sections))throw Error('The history player index is unavailable.');playerSearchIndex=index;return index})
+      .catch(error=>{playerSearchError=error;playerSearchPromise=null;return null})
+      .finally(()=>{if(ratingScope==='history')renderRatings()});
+  }
+  return playerSearchPromise;
+}
+function renderHistoryPlayerSearch(){
+  const query=$('#search').value.trim();
+  $('#ratingsTitle').textContent='All history · Player search';
+  $('#ratingsDesc').textContent='Find players across every published Saturday and Sunday AM season, including the current season.';
+  $('#ratingsHint').textContent='Each result is a separate season and section. Matching names may belong to different people.';
+  $('#teamFilter').disabled=true;$('#teamFilter').value='';renderBandInfo({bounds:[]});
+  $('#ratingHead').innerHTML='<tr><th>Player</th><th>Team</th><th>Season</th><th>Competition</th><th>Section</th></tr>';
+  const message=text=>{$('#ratingBody').innerHTML='<tr><td colspan="5">'+text+'</td></tr>'};
+  if(query!==historySearchQuery){historySearchQuery=query;historySearchLimit=100}
+  if(!query){message('Type a player name to search all Saturday and Sunday AM history.');return}
+  if(playerSearchError){message('Could not load history search. <button type="button" class="button secondary" data-history-search-retry>Try again</button>');return}
+  if(!playerSearchIndex){message('Loading the Saturday and Sunday player index…');ensurePlayerSearchIndex();return}
+  const rows=BRTAPlayerSearch.find(playerSearchIndex,query),visible=rows.slice(0,historySearchLimit);
+  $('#ratingsDesc').textContent=rows.length+' appearance'+(rows.length===1?'':'s')+' found across '+playerSearchIndex.sections.length+' Saturday and Sunday sections.';
+  const missing=playerSearchIndex.unavailableSections?.length||0;
+  if(missing)$('#ratingsHint').textContent+=' '+missing+' sections have not yet been published and could not be searched.';
+  if(!rows.length){message('No player found in the published Saturday and Sunday history. Try a surname or part of the name.');return}
+  $('#ratingBody').innerHTML=visible.map(row=>'<tr><td>'+globalPersonButton(row)+'</td><td>'+teamName(row.team)+'</td><td>'+esc(row.seasonOptionLabel||row.seasonLabel)+(row.isCurrent?' <small>Current</small>':'')+'</td><td>'+esc(competitionLabel(row.competitionCode))+'</td><td>'+esc(row.sectionLabel)+'</td></tr>').join('')+
+    (rows.length>visible.length?'<tr><td colspan="5"><button class="button secondary" type="button" data-history-search-more>Show next 100</button><span> Showing '+visible.length+' of '+rows.length+' results</span></td></tr>':'');
+}
 function renderGlobalRatings(){
   const [title,desc]=ratingInfo[ratingView],q=$('#search').value.trim().toLowerCase();
   const archive=activeHistorySeasonId?archiveGlobalRows():null,sectionCount=viewCatalog.length,seasonLabel=activeHistorySeasonId?(viewCatalog[0]?.season_label||D?.meta?.season_label||'selected season'):'current season';
@@ -254,7 +287,7 @@ function renderGlobalRatings(){
     :'<tr><th>Player</th><th>Team</th><th>Section</th><th>Power</th><th>W–L</th><th>Games</th><th>Evidence</th><th>Uncertainty</th></tr>';
 }
 function renderRatings(){
-  renderRatingRoundNotice();if(ratingScope==='all'){cancelAuxiliaryReveal();renderGlobalRatings();return}
+  renderRatingRoundNotice();if(ratingScope==='history'){cancelAuxiliaryReveal();renderHistoryPlayerSearch();return}if(ratingScope==='all'){cancelAuxiliaryReveal();renderGlobalRatings();return}
   $('#teamFilter').disabled=false;
   const [title,desc]=ratingInfo[ratingView];$('#ratingsTitle').textContent=title;$('#ratingsDesc').textContent=desc+(ratingRound==null?'':' After Round '+ratingRound+'.');
   $('#ratingFilters').classList.remove('hidden');$('#ratingsHint').textContent=D.meta?.is_custom?'Rating model: '+(D.meta.ratingModel||'V3'):'';
@@ -268,7 +301,7 @@ function renderRatings(){
     out+='<tr class="band-divider b0"><td colspan="9"><div><i></i><b>Godly</b><span>≥ '+godly+'</span></div></td></tr>';
     out+='<tr class="b0'+fading+'"><td>0</td><td>'+personButton(derived.row.player)+'</td><td>'+teamName(derived.row.team)+'</td><td><b>'+derived.row.rating+'</b></td><td>'+derived.row.wins+'–0</td><td>'+derived.row.gf+'–'+derived.row.ga+'</td><td>'+(derived.row.gf+derived.row.ga?(100*derived.row.gf/(derived.row.gf+derived.row.ga)).toFixed(1)+'%':'—')+'</td><td class="rank-movement rank-still">—</td><td>±'+derived.row.se+'</td></tr>';
   }
-  for(const x of rows){const qual=ratingQualified(x,min,type);if(qual)rank++;if(!qual&&!showProv&&ratingRound==null)continue;if(q&&!x.player.toLowerCase().includes(q))continue;if(tf&&x.team!==tf)continue;const cls=qual?band.classFor(x.rating):'provisional';if(qual&&cls!==lastBand){out+=bandDivider(cls,band,type==='pair'?10:9);lastBand=cls}
+  for(const x of rows){const qual=ratingQualified(x,min,type);if(qual)rank++;if(!qual&&!showProv&&ratingRound==null&&x.player!==focusedSearchPlayer)continue;if(q&&!x.player.toLowerCase().includes(q))continue;if(tf&&x.team!==tf)continue;const cls=qual?band.classFor(x.rating):'provisional';if(qual&&cls!==lastBand){out+=bandDivider(cls,band,type==='pair'?10:9);lastBand=cls}
     const pct=x.gf+x.ga?(100*x.gf/(x.gf+x.ga)).toFixed(1)+'%':'—';
     if(type==='pair'){const pair=x.player.split(' / ').map(personButton).join('<span class="pair-sep"> / </span>'),effect=(x.pairEffect>=0?'+':'')+(x.pairEffect??0);out+='<tr class="'+cls+'"><td>'+rankCell(x)+'</td><td>'+pair+'</td><td>'+teamName(x.team)+'</td><td><b>'+x.rating+'</b></td><td>'+(x.individualAverage??'—')+'</td><td class="'+((x.pairEffect??0)>=0?'performance-above':'performance-below')+'">'+effect+'</td><td>'+(x.wins??'—')+'–'+(x.losses??'—')+'</td><td>'+x.matches+'</td>'+movementCell(x)+'<td>±'+x.se+'</td></tr>'}
     else if(type==='overall')out+='<tr class="'+cls+'"><td>'+rankCell(x)+'</td><td>'+ratingPerson(x)+'</td><td>'+teamName(x.team)+'</td><td><b>'+x.rating+'</b></td><td>'+(x.s?.rating??'—')+'</td><td>'+(x.d?.rating??'—')+'</td><td>'+(qual?'Ranked':'Provisional')+'</td>'+movementCell(x)+'<td>±'+x.se+'</td></tr>';
@@ -588,11 +621,43 @@ function profileMatchupSection(name,matches,round=null){
   const available=new Set(players.map(row=>row.player)),frequent=matches.slice().reverse().find(match=>available.has(match.opp))?.opp,selected=frequent||players[0].player;
   return'<div class="lab-matchup"><label class="lab-matchup-label">Compare with<select data-profile-opponent data-profile-player="'+esc(name)+'" data-profile-round="'+(round||'')+'">'+players.map(row=>'<option value="'+esc(row.player)+'"'+(row.player===selected?' selected':'')+'>'+esc(row.player)+' · '+row.rating+'</option>').join('')+'</select></label><div data-profile-matchup-result>'+profileMatchupResult(name,selected,round)+'</div></div>';
 }
-async function openGlobalPlayer(sectionCode,player){
-  await loadSection(sectionCode);
-  switchPage('ratings');
-  openProfile(player);
+let globalPlayerRequest=0;
+async function openGlobalPlayer(sectionCode,player,seasonKey=''){
+  const request=++globalPlayerRequest;
+  try{
+    let catalog=currentCatalog(),season=null;
+    if(seasonKey){
+      const history=await ensureHistoryCatalog();season=history?.seasons.find(row=>row.id===seasonKey);
+      if(!season)throw Error('That season could not be found.');
+      catalog=historySeasonSections(season);
+    }
+    if(request!==globalPlayerRequest)return;
+    const section=catalog.find(row=>row.section_code===sectionCode);
+    if(!section)throw Error('That section could not be found.');
+    // Check the destination before changing the user's active season.
+    let payload=null;
+    if(!section.is_custom){const response=await fetch(section.data_path||('data/site/sections/'+sectionCode+'.json'),{cache:'no-store'});if(!response.ok)throw Error('That section could not be loaded.');payload=await response.json()}
+    if(request!==globalPlayerRequest)return;
+    activeHistorySeasonId=season&&!season.is_current?season.id:null;
+    viewCatalog=activeHistorySeasonId?catalog:currentCatalog();setupSelectors();
+    if(!activeHistorySeasonId)localStorage.removeItem('brta-history-selection');
+    await loadSection(sectionCode,payload);
+    if(request!==globalPlayerRequest||D?.meta?.section_code!==sectionCode)return;
+    switchPage('ratings');openProfile(player);
+    const banner=document.createElement('div');banner.className='profile-section-switch';
+    banner.innerHTML='<div><b>'+esc(D.meta.season_label||season?.season_label||'Current season')+' · '+esc(D.meta.section_label)+'</b><small>'+esc(competitionLabel(D.meta.competition_code))+'</small></div><button class="button primary" type="button" data-switch-player-section="'+esc(player)+'">Switch to this section</button>';
+    $('#profileContent').prepend(banner);
+  }catch(error){$('#ratingsHint').textContent=error.message+' Please try again.'}
 }
+function switchToPlayerSection(player){
+  ratingScope='section';ratingRound=null;localStorage.setItem('brta-rating-scope','section');
+  $('#search').value=player;$('#teamFilter').value='';focusedSearchPlayer=player;
+  if(!singles.some(row=>row.player===player)&&dinds.some(row=>row.player===player))ratingView='doublesPlayers';
+  else ratingView='singles';
+  $$('.subtab').forEach(button=>button.classList.toggle('active',button.dataset.rating===ratingView));
+  close('#profileOverlay');switchPage('ratings');renderRatings();
+}
+
 
 function roundHighlight(title,item,kind){if(!item)return'<div class="round-highlight '+kind+'"><span>'+title+'</span><b>None this round</b></div>';return'<div class="round-highlight '+kind+'"><span>'+title+'</span><b>'+esc(item.winner)+' '+esc(item.score)+' '+esc(item.loser)+'</b><small>'+(title==='Biggest upset'?'Rating gap '+Math.round(item.gap)+' points':title==='Top performance'?'Performance ≈ '+item.performance:title==='Most dominant'?'Game margin '+item.margin:'Closest scoreline')+'</small></div>'}
 function clubBaseName(value){
@@ -727,11 +792,14 @@ document.addEventListener('click',e=>{
   if(e.target.closest('[data-aux-open-archive]')){if(auxiliaryPlayer(activeProfilePlayer))window.AuxiliaryPortal?.open?.();return}
   const choice=e.target.closest('[data-choice-id]');if(choice){const id=choice.dataset.choiceId,value=choice.dataset.choiceValue;closeChoices();if(id==='competitionSelect'){const code=fillSections(value);loadSection(code)}else loadSection(value);return}
   if(!e.target.closest('.section-choice'))closeChoices();
+  const switchSection=e.target.closest('[data-switch-player-section]');if(switchSection){switchToPlayerSection(switchSection.dataset.switchPlayerSection);return}
+  if(e.target.closest('[data-history-search-retry]')){playerSearchError=null;ensurePlayerSearchIndex();renderRatings();return}
+  if(e.target.closest('[data-history-search-more]')){historySearchLimit+=100;renderRatings();return}
   const searchScopeChoice=e.target.closest('[data-search-scope]');if(searchScopeChoice){setRatingScope(searchScopeChoice.dataset.searchScope);return}
   const historyPlayer=e.target.closest('[data-history-player]');if(historyPlayer){e.stopPropagation();close('#resultOverlay');close('#roundOverlay');openHistoricalProfile(historyPlayer.dataset.historyPlayer,Number(historyPlayer.dataset.historyRound));return}
   const ratingChoice=e.target.closest('[data-rating-round]');if(ratingChoice){selectRatingRound(ratingChoice.dataset.ratingRound);return}
   const historyTable=e.target.closest('[data-history-table]');if(historyTable){e.stopPropagation();openHistoricalTable(Number(historyTable.dataset.historyTable));return}
-  const globalPlayer=e.target.closest('[data-global-player]');if(globalPlayer){e.stopPropagation();openGlobalPlayer(globalPlayer.dataset.sectionCode,globalPlayer.dataset.globalPlayer);return}
+  const globalPlayer=e.target.closest('[data-global-player]');if(globalPlayer){e.stopPropagation();openGlobalPlayer(globalPlayer.dataset.sectionCode,globalPlayer.dataset.globalPlayer,globalPlayer.dataset.seasonKey);return}
   const player=e.target.closest('[data-player]');if(player){e.stopPropagation();close('#resultOverlay');openProfile(player.dataset.player);return}
   const schedule=e.target.closest('[data-sos-open]');if(schedule){openSchedule();return}
   const fixtureResult=e.target.closest('[data-fixture-result-id]');if(fixtureResult){const id=fixtureResult.dataset.fixtureResultId,f=fixtureById(id),result=f&&findFixtureResult(f,f.round);if(result){openMatch(result.fixtureId)}else switchPage('results');return}
@@ -773,12 +841,12 @@ function renderRatingOptions(){
   $('#ratingHistoryChoices').innerHTML='<button type="button" data-rating-round="latest" aria-pressed="'+(ratingRound==null)+'" class="'+(ratingRound==null?'selected':'')+'"><b>Latest ratings</b><span>Current standings</span></button>'+rounds.map(x=>'<button type="button" data-rating-round="'+x.round+'" aria-pressed="'+(ratingRound===Number(x.round))+'" class="'+(ratingRound===Number(x.round)?'selected':'')+'"><b>After Round '+x.round+'</b><span>'+esc(x.date)+'</span></button>').join('')+(!rounds.length?'<p class="small-note">Round history is not available for this rating view yet.</p>':'');
 }
 function selectRatingRound(value){ratingRound=value==='latest'?null:Number(value);if(ratingRound!=null){ratingScope='section';localStorage.setItem('brta-rating-scope','section')}renderRatings();close('#searchOptionsOverlay')}
-function setRatingScope(value){ratingScope=value==='all'?'all':'section';localStorage.setItem('brta-rating-scope',ratingScope);if(ratingScope==='all'){ratingRound=null;if(ratingView==='pairs'){ratingView='singles';document.querySelectorAll('.subtab').forEach(x=>x.classList.toggle('active',x.dataset.rating==='singles'))}}renderRatings();renderRatingOptions()}
+function setRatingScope(value){ratingScope=['all','history'].includes(value)?value:'section';localStorage.setItem('brta-rating-scope',ratingScope);if(ratingScope!=='section'){ratingRound=null;if(ratingView==='pairs'){ratingView='singles';document.querySelectorAll('.subtab').forEach(x=>x.classList.toggle('active',x.dataset.rating==='singles'))}}renderRatings();renderRatingOptions()}
 function openSearchOptions(){if(!D)return;renderRatingOptions();$('#searchOptionsOverlay').classList.remove('hidden');document.body.classList.add('modal-open')}
 
 document.addEventListener('contextmenu',e=>{const schedule=e.target.closest('[data-sos-open]');if(schedule){e.preventDefault();openSchedule()}});
 $$('.main-tab').forEach(b=>b.onclick=()=>switchPage(b.dataset.page));
-document.querySelectorAll('.subtab').forEach(b=>b.onclick=()=>{ratingView=b.dataset.rating;if(ratingRound!=null&&!BRTAHistory.rounds(D,ratingView).some(x=>Number(x.round)===ratingRound))ratingRound=null;if(ratingView==='pairs'&&ratingScope==='all'){ratingScope='section';localStorage.setItem('brta-rating-scope',ratingScope)}document.querySelectorAll('.subtab').forEach(x=>x.classList.toggle('active',x===b));renderRatings()});
+document.querySelectorAll('.subtab').forEach(b=>b.onclick=()=>{ratingView=b.dataset.rating;if(ratingRound!=null&&!BRTAHistory.rounds(D,ratingView).some(x=>Number(x.round)===ratingRound))ratingRound=null;if(ratingView==='pairs'&&ratingScope!=='section'){ratingScope='section';localStorage.setItem('brta-rating-scope',ratingScope)}document.querySelectorAll('.subtab').forEach(x=>x.classList.toggle('active',x===b));renderRatings()});
 $('#search').oninput=renderRatings;$('#teamFilter').onchange=renderRatings;$('#clubZoneBtn').onclick=openClubPicker;$('#clubPickerOpen').onclick=openChosenClubZone;$('#clubPickerClose').onclick=()=>close('#clubPickerOverlay');$('#clubZoneClose').onclick=()=>close('#clubZoneOverlay');$('#roundBtn').onclick=openRound;$('#settingsBtn').onclick=openSettings;$('#exportSectionBtn').onclick=exportSectionCSV;
 $('#profileClose').onclick=()=>close('#profileOverlay');$('#roundClose').onclick=()=>close('#roundOverlay');$('#settingsClose').onclick=()=>close('#settingsOverlay');$('#resultClose').onclick=()=>close('#resultOverlay');
 $('#predictionClose').onclick=()=>close('#predictionOverlay');$('#lineupHistoryClose').onclick=()=>close('#lineupHistoryOverlay');$('#sosClose').onclick=()=>close('#sosOverlay');$('#rivalryClose').onclick=()=>close('#rivalryOverlay');$('#searchOptionsBtn').onclick=openSearchOptions;$('#searchOptionsClose').onclick=()=>close('#searchOptionsOverlay');

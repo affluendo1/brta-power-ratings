@@ -241,3 +241,18 @@ To run the full historical backfill locally, use `python -m scraper.backfill_his
 ## Disclaimer
 
 This project is an independent statistical analysis of publicly entered competition data. BRTA, Tennis Australia and UTR do not endorse or operate it.
+
+### Search every season
+
+Ratings → Options offers **This section**, **All sections** in the selected season,
+and **All history** across all published Saturday and Sunday AM seasons, including
+the current season. History results keep each season and section separate; matching
+names are not treated as proof of the same person. Select a result to open Player
+Lab, then use **Switch to this section** at the top to show that section in the
+correct season. The same action is available from existing all-section search.
+
+`generate_player_search.py` builds the compact `data/archive/player-search.json`
+index from published section payloads, including named doubles-only and unrated
+scorecard participants. `generate_archive_site_data.py` rebuilds it during routine
+catalogue refreshes and archive imports. Unpublished archive gaps are reported
+rather than silently presented as searched. No new historical results are inferred.

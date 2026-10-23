@@ -13,6 +13,8 @@ on:
       - "generate_archive_site_data.py"
       - "app.js"
       - "rating-history.js"
+      - "player-search.js"
+      - "generate_player_search.py"
       - "custom-section-model.js"
       - "custom-sections.js"
       - "custom-section-tools.js"
@@ -102,6 +104,7 @@ jobs:
           python -m unittest discover -s tests -v
           node tests/test_prediction.js
           node tests/test_rating_history.js
+          node tests/test_player_search.js
           node tests/test_custom_sections.js
           node tests/test_custom_section_tools.js
 
