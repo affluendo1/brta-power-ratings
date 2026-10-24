@@ -14,6 +14,9 @@ on:
       - "app.js"
       - "rating-history.js"
       - "player-search.js"
+      - "team-lab.js"
+      - "team-lab-ui.js"
+      - "team-lab.css"
       - "generate_player_search.py"
       - "custom-section-model.js"
       - "custom-sections.js"
@@ -105,6 +108,7 @@ jobs:
           node tests/test_prediction.js
           node tests/test_rating_history.js
           node tests/test_player_search.js
+          node tests/test_team_lab.js
           node tests/test_custom_sections.js
           node tests/test_custom_section_tools.js
 

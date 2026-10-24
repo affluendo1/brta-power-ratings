@@ -31,8 +31,8 @@ renames. Team transfers retain the registration attached to earlier appearances
 without retroactively marking those appearances as emergencies. Roster previews
 are atomic and report duplicates or invalid rows before changing the draft.
 
-Custom **Teams** shows active registered squads, power, completed ties, actual
-lineup histories and doubles pair histories. Prediction Centre uses the section's
+Custom **Team Lab** shows the active registered squad in its saved order, actual
+round-by-round selections, doubles partnerships, emergencies and suggested lineups. Prediction Centre uses the section's
 configured match counts, set lengths and best-of settings, with custom team
 scoring. Club Zone is hidden and disabled for custom sections; it remains
 available for official sections.
@@ -109,7 +109,7 @@ The five main views are:
 - **Results** — round-by-round fixture results and scorecards, including singles and doubles order where TROLS provides it. A bye occupies its own card in seven-team rounds.
 - **Standings** — current-season ladder calculations, or the published final TROLS ladder for an archived season when one is available. The standings view also shows recorded or projected semifinals and grand finals.
 - **Ratings** — singles, recurring doubles pairs, individual doubles and Overall tables. Player rows open Player Lab.
-- **Teams** — average modelled singles Power and the average of each team's four strongest modelled singles ratings.
+- **Teams** — a grid of team pills opening full-screen Team Lab: the squad, chronological selection grid, doubles partnerships, emergencies and suggested lineups.
 - **Fixtures** — the official TROLS draw, including completed and future fixtures. A recorded fixture opens its result; a scheduled fixture opens the Prediction Centre. Upcoming rounds have a button to simulate their scheduled ties.
 
 Other views are opened from the header or player profiles:
@@ -256,3 +256,32 @@ index from published section payloads, including named doubles-only and unrated
 scorecard participants. `generate_archive_site_data.py` rebuilds it during routine
 catalogue refreshes and archive imports. Unpublished archive gaps are reported
 rather than silently presented as searched. No new historical results are inferred.
+
+### Team Lab
+
+Choose a team pill to open a full-screen squad view. Ladder position and points
+lead the view; the roster shows appearances, usual singles position, frequent
+doubles partner and singles Power. The selection grid marks each named player’s
+singles/doubles roles for every recorded round, with emergency flags shown
+separately. A player named in both disciplines counts once for that day’s
+appearance total. Doubles partnership records use the individual doubles match
+winner, not the result of the team tie.
+
+Custom sections use active registered player order and retain former squad
+members separately in historical selections. Official sections show an observed
+squad and usual singles order inferred from scorecards, rather than claiming an
+official registration list. Emergency participants are listed with their recorded
+rounds and available Power, and are excluded from default main-squad suggestions.
+Missing names, incomplete lineups and ambiguous pair-level emergency flags are
+not resolved by guessing.
+
+**Best Power lineup** selects the strongest singles players and then finds distinct
+doubles pairings for that day. **Finals-style squad** permits one extra player, so
+a doubles specialist can play without replacing a member of the singles lineup.
+A fifth unused player is labelled Reserve. Pair estimates use mean individual
+doubles Power plus the fitted partnership effect, weighted by `n / (n + 3)` where
+`n` is that partnership’s recorded appearances; singles Power is an explicit
+fallback when doubles Power is unavailable. Standard Sets and Rubbers pairings
+are searched exhaustively; unusually large custom formats use a bounded search.
+These suggestions follow the section’s match counts and indicate limited or
+untested evidence. They do not establish player availability or finals eligibility.
