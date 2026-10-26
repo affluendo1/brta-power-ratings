@@ -10,7 +10,7 @@ AA004012,18 Jul 26,1,Port Melbourne,St Louis de Mont,No. 4,Matthew Schoemake,Fin
 AA004013,18 Jul 26,1,Ormond,Carmelite,No. 1,Toby Gordon,Ben Lobley,Toby Gordon,6-4,6,4,1,0,Completed,true,false,false
 AA004013,18 Jul 26,1,Ormond,Carmelite,No. 2,Alexandra Ivchenko,Anders Wulff,Alexandra Ivchenko,6-3,6,3,1,0,Completed,true,false,false
 AA004013,18 Jul 26,1,Ormond,Carmelite,No. 3,Jeffrey Lam,Andrew Ferizis,Jeffrey Lam,6-3,6,3,1,0,Completed,true,false,false
-AA004013,18 Jul 26,1,Ormond,Carmelite,No. 4,Kevin Liu,Curtis Brown,Curtis Brown,4-6,4,6,0,1,Completed,true,false,true
+AA004013,18 Jul 26,1,Ormond,Carmelite,No. 4,Kevin Liu,Curtis Brown,Curtis Brown,4-6,4,6,0,1,Completed,true,false,false
 AA004014,18 Jul 26,1,Kings Park,Maccabi,No. 1,Jude Horchner,Asher Brami,Asher Brami,5-7,5,7,0,1,Completed,true,false,false
 AA004014,18 Jul 26,1,Kings Park,Maccabi,No. 2,Nicholas Roselt,Tom Appel,Nicholas Roselt,6-0,6,0,1,0,Completed,true,false,false
 AA004014,18 Jul 26,1,Kings Park,Maccabi,No. 3,Davide Destefanis,Matthew Cashmore,Davide Destefanis,6-3,6,3,1,0,Completed,true,false,false
@@ -23,11 +23,11 @@ AA004023,25 Jul 26,2,St Louis de Mont,Ormond,No. 1,Ethan Taylor,Toby Gordon,Etha
 AA004023,25 Jul 26,2,St Louis de Mont,Ormond,No. 2,Archer Appleby,Alexandra Ivchenko,Archer Appleby,6-0,6,0,1,0,Completed,true,false,false
 AA004023,25 Jul 26,2,St Louis de Mont,Ormond,No. 3,Billy Waters,Jeffrey Lam,Billy Waters,7-5,7,5,1,0,Completed,true,false,false
 AA004023,25 Jul 26,2,St Louis de Mont,Ormond,No. 4,Finn Lalor,Leo Blanksby,Finn Lalor,6-1,6,1,1,0,Completed,true,false,false
-AA004024,25 Jul 26,2,Carmelite,Kings Park,No. 1,Curtis Brown,Eric Wu,Curtis Brown,2-1,2,1,1,0,Completed,false,true,false
+AA004024,25 Jul 26,2,Carmelite,Kings Park,No. 1,Curtis Brown,Eric Wu,Curtis Brown,2-1,2,1,1,0,Completed,false,false,false
 AA004031,01 Aug 26,3,Mentone,Carmelite,No. 1,Phillip Nyamukondiwa,Ben Lobley,Phillip Nyamukondiwa,6-3,6,3,1,0,Completed,true,false,false
 AA004031,01 Aug 26,3,Mentone,Carmelite,No. 2,Pragnay Mitbawkar,Henry Haggett,Pragnay Mitbawkar,6-3,6,3,1,0,Completed,true,false,false
 AA004031,01 Aug 26,3,Mentone,Carmelite,No. 3,Jacob Strelnikov,Andrew Ferizis,Jacob Strelnikov,6-3,6,3,1,0,Completed,true,false,false
-AA004031,01 Aug 26,3,Mentone,Carmelite,No. 4,Nayte Morris,Curtis Brown,Curtis Brown,0-6,0,6,0,1,Completed,true,false,true
+AA004031,01 Aug 26,3,Mentone,Carmelite,No. 4,Nayte Morris,Curtis Brown,Curtis Brown,0-6,0,6,0,1,Completed,true,false,false
 AA004032,01 Aug 26,3,Port Melbourne,Maccabi,No. 1,Stefan Karapandzic,Asher Brami,Stefan Karapandzic,6-0,6,0,1,0,Completed,true,false,false
 AA004032,01 Aug 26,3,Port Melbourne,Maccabi,No. 2,Henry Huynh,Matthew Cashmore,Henry Huynh,7-6,7,6,1,0,Completed,true,false,false
 AA004032,01 Aug 26,3,Port Melbourne,Maccabi,No. 3,Matthew Schoemake,Aiden Woolf,Aiden Woolf,0-6,0,6,0,1,Completed,true,false,false
@@ -139,7 +139,7 @@ AA004111,17 Oct 26,11,Mentone,St Louis de Mont,No. 4,Harry Houlgrave-Fletcher,As
 AA004112,17 Oct 26,11,Port Melbourne,Carmelite,No. 1,Stefan Karapandzic,Ben Lobley,Stefan Karapandzic,6-1,6,1,1,0,Completed,true,false,false
 AA004112,17 Oct 26,11,Port Melbourne,Carmelite,No. 2,Henry Huynh,Henry Haggett,Henry Haggett,2-6,2,6,0,1,Completed,true,false,false
 AA004112,17 Oct 26,11,Port Melbourne,Carmelite,No. 3,Matthew Schoemake,Andrew Ferizis,Matthew Schoemake,6-2,6,2,1,0,Completed,true,false,false
-AA004112,17 Oct 26,11,Port Melbourne,Carmelite,No. 4,Ethan Brys,Curtis Brown,Curtis Brown,2-6,2,6,0,1,Completed,true,true,true
+AA004112,17 Oct 26,11,Port Melbourne,Carmelite,No. 4,Ethan Brys,Curtis Brown,Curtis Brown,2-6,2,6,0,1,Completed,true,true,false
 AA004113,17 Oct 26,11,Ormond,Maccabi,No. 1,Toby Gordon,Tom Appel,Toby Gordon,6-1,6,1,1,0,Completed,true,false,false
 AA004113,17 Oct 26,11,Ormond,Maccabi,No. 2,Jeffrey Lam,Matthew Cashmore,Jeffrey Lam,7-5,7,5,1,0,Completed,true,false,false
 AA004113,17 Oct 26,11,Ormond,Maccabi,No. 3,Kevin Liu,Aiden Woolf,Aiden Woolf,2-6,2,6,0,1,Completed,true,false,false
@@ -148,3 +148,19 @@ AA004114,17 Oct 26,11,Kings Park,Clarinda,No. 1,Jude Horchner,Andrew Holzchuster
 AA004114,17 Oct 26,11,Kings Park,Clarinda,No. 2,Liam Huang,Prayag Patel,Liam Huang,6-3,6,3,1,0,Completed,true,false,false
 AA004114,17 Oct 26,11,Kings Park,Clarinda,No. 3,Ishin Garg,Jovi Kharti,Ishin Garg,6-0,6,0,1,0,Completed,true,false,false
 AA004114,17 Oct 26,11,Kings Park,Clarinda,No. 4,Eric Wu,Shaun Norton,Eric Wu,6-2,6,2,1,0,Completed,true,false,false
+AA004121,24 Oct 26,12,Kings Park,Ormond,No. 1,Jude Horchner,Toby Gordon,Toby Gordon,5-7,5,7,0,1,Completed,true,false,false
+AA004121,24 Oct 26,12,Kings Park,Ormond,No. 2,Nicholas Roselt,Alexandra Ivchenko,Nicholas Roselt,6-2,6,2,1,0,Completed,true,false,false
+AA004121,24 Oct 26,12,Kings Park,Ormond,No. 3,Davide Destefanis,Jeffrey Lam,Jeffrey Lam,2-6,2,6,0,1,Completed,true,false,false
+AA004121,24 Oct 26,12,Kings Park,Ormond,No. 4,Ishin Garg,Leo Blanksby,Leo Blanksby,1-6,1,6,0,1,Completed,true,false,false
+AA004122,24 Oct 26,12,Carmelite,Maccabi,No. 1,Henry Haggett,Asher Brami,Henry Haggett,6-3,6,3,1,0,Completed,true,false,false
+AA004122,24 Oct 26,12,Carmelite,Maccabi,No. 2,Anders Wulff,Tom Appel,Tom Appel,0-6,0,6,0,1,Completed,true,false,false
+AA004122,24 Oct 26,12,Carmelite,Maccabi,No. 3,Andrew Ferizis,Matthew Cashmore,Matthew Cashmore,3-6,3,6,0,1,Completed,true,false,false
+AA004122,24 Oct 26,12,Carmelite,Maccabi,No. 4,Curtis Brown,Nati Mankov,Nati Mankov,1-6,1,6,0,1,Completed,true,false,false
+AA004123,24 Oct 26,12,Clarinda,St Louis de Mont,No. 1,Andrew Holzchuster,Jonas Michelsson,Jonas Michelsson,4-6,4,6,0,1,Completed,true,false,false
+AA004123,24 Oct 26,12,Clarinda,St Louis de Mont,No. 2,Prayag Patel,Archer Appleby,Archer Appleby,2-6,2,6,0,1,Completed,true,false,false
+AA004123,24 Oct 26,12,Clarinda,St Louis de Mont,No. 3,Shaun Norton,Billy Waters,Billy Waters,1-6,1,6,0,1,Completed,true,false,false
+AA004123,24 Oct 26,12,Clarinda,St Louis de Mont,No. 4,Semira Persi,Finn Lalor,Semira Persi,6-4,6,4,1,0,Completed,true,true,false
+AA004124,24 Oct 26,12,Port Melbourne,Mentone,No. 1,Stefan Karapandzic,Phillip Nyamukondiwa,Stefan Karapandzic,7-6,7,6,1,0,Completed,true,false,false
+AA004124,24 Oct 26,12,Port Melbourne,Mentone,No. 2,Henry Huynh,Pragnay Mitbawkar,Pragnay Mitbawkar,0-6,0,6,0,1,Completed,true,false,false
+AA004124,24 Oct 26,12,Port Melbourne,Mentone,No. 3,Luke Travers,Harry Houlgrave-Fletcher,Luke Travers,6-4,6,4,1,0,Completed,true,false,false
+AA004124,24 Oct 26,12,Port Melbourne,Mentone,No. 4,Ethan Brys,Nayte Morris,Ethan Brys,6-2,6,2,1,0,Completed,true,true,false

@@ -42,7 +42,7 @@ AA015041,08 Aug 26,4,Stella Maris,Clarinda,No. 4,Zara Moloney,Kathy Aliss,Kathy 
 AA015042,08 Aug 26,4,Ormond,BLTC,No. 1,Mila Kerstens,Emma Ionescu,Mila Kerstens,6-0,6,0,1,0,Completed,true,false,false
 AA015042,08 Aug 26,4,Ormond,BLTC,No. 2,Sophia Wang,Lucia Cabrera,Sophia Wang,7-6,7,6,1,0,Completed,true,false,false
 AA015042,08 Aug 26,4,Ormond,BLTC,No. 3,Isabella Chen,Antonia Poppleton,Antonia Poppleton,0-6,0,6,0,1,Completed,true,false,false
-AA015042,08 Aug 26,4,Ormond,BLTC,No. 4,Mia Thomas,Emily De Beer,Mia Thomas,6-1,6,1,1,0,Completed,true,false,true
+AA015042,08 Aug 26,4,Ormond,BLTC,No. 4,Mia Thomas,Emily De Beer,Mia Thomas,6-1,6,1,1,0,Completed,true,false,false
 AA015043,08 Aug 26,4,Mordialloc,St Joan of Arc,No. 1,Cecilia Tian,Evie Rowse,Evie Rowse,4-6,4,6,0,1,Completed,true,false,false
 AA015043,08 Aug 26,4,Mordialloc,St Joan of Arc,No. 2,Sophie Donnelly,Madison Blake,Madison Blake,1-6,1,6,0,1,Completed,true,false,false
 AA015043,08 Aug 26,4,Mordialloc,St Joan of Arc,No. 3,India Buchan,Emerson O'Brien,India Buchan,6-1,6,1,1,0,Completed,true,false,false
@@ -76,7 +76,7 @@ AA015091,12 Sep 26,9,Clarinda,Mordialloc,No. 4,Audrey McWatt,Talia Buchan,Talia 
 AA015092,12 Sep 26,9,BLTC,Glen Huntly,No. 1,Emma Ionescu,Veronique Digney,Emma Ionescu,6-2,6,2,1,0,Completed,true,false,false
 AA015092,12 Sep 26,9,BLTC,Glen Huntly,No. 2,Lucia Cabrera,Maisie Lewicki,Maisie Lewicki,2-6,2,6,0,1,Completed,true,false,false
 AA015092,12 Sep 26,9,BLTC,Glen Huntly,No. 3,Antonia Poppleton,Mulan Li,Mulan Li,2-6,2,6,0,1,Completed,true,false,false
-AA015092,12 Sep 26,9,BLTC,Glen Huntly,No. 4,Emily De Beer,Bebe Kushlin,Bebe Kushlin,1-6,1,6,0,1,Completed,true,true,false
+AA015092,12 Sep 26,9,BLTC,Glen Huntly,No. 4,Emily De Beer,Bebe Kushlin,Bebe Kushlin,1-6,1,6,0,1,Completed,true,false,false
 AA015093,12 Sep 26,9,St Joan of Arc,Stella Maris,No. 1,Evie Rowse,Sophie O'Brien,Evie Rowse,6-1,6,1,1,0,Completed,true,false,false
 AA015093,12 Sep 26,9,St Joan of Arc,Stella Maris,No. 2,Amber Sutherland,Lara Roggero,Amber Sutherland,6-1,6,1,1,0,Completed,true,false,false
 AA015093,12 Sep 26,9,St Joan of Arc,Stella Maris,No. 3,Ivy Chaponnel,India Niewalda,Ivy Chaponnel,6-4,6,4,1,0,Completed,true,false,false
@@ -105,3 +105,15 @@ AA015113,17 Oct 26,11,St Joan of Arc,Mordialloc,No. 1,Emily Damen,Cecilia Tian,E
 AA015113,17 Oct 26,11,St Joan of Arc,Mordialloc,No. 2,Betty Liu,India Buchan,India Buchan,3-6,3,6,0,1,Completed,true,true,false
 AA015113,17 Oct 26,11,St Joan of Arc,Mordialloc,No. 3,Ivy Chaponnel,Talia Buchan,Talia Buchan,2-6,2,6,0,1,Completed,true,false,false
 AA015113,17 Oct 26,11,St Joan of Arc,Mordialloc,No. 4,Emerson O'Brien,Sophie Donnelly,Sophie Donnelly,1-6,1,6,0,1,Completed,true,false,false
+AA015122,24 Oct 26,12,Ormond,Mordialloc,No. 1,Mila Kerstens,Cecilia Tian,Mila Kerstens,6-1,6,1,1,0,Completed,true,false,false
+AA015122,24 Oct 26,12,Ormond,Mordialloc,No. 2,Sophia Wang,India Buchan,Sophia Wang,7-6,7,6,1,0,Completed,true,false,false
+AA015122,24 Oct 26,12,Ormond,Mordialloc,No. 3,Isabella Chen,Talia Buchan,Talia Buchan,1-6,1,6,0,1,Completed,true,false,false
+AA015122,24 Oct 26,12,Ormond,Mordialloc,No. 4,Sofia Kljajic,Sophie Donnelly,Sophie Donnelly,4-6,4,6,0,1,Completed,true,true,false
+AA015123,24 Oct 26,12,Glen Huntly,Stella Maris,No. 1,Veronique Digney,Ava Martin,Veronique Digney,6-3,6,3,1,0,Completed,true,false,false
+AA015123,24 Oct 26,12,Glen Huntly,Stella Maris,No. 2,Maisie Lewicki,Sophie O'Brien,Maisie Lewicki,6-2,6,2,1,0,Completed,true,false,false
+AA015123,24 Oct 26,12,Glen Huntly,Stella Maris,No. 3,Lyla Dubs,Demie Staunton,Lyla Dubs,6-2,6,2,1,0,Completed,true,false,false
+AA015123,24 Oct 26,12,Glen Huntly,Stella Maris,No. 4,Bebe Kushlin,Zara Moloney,Bebe Kushlin,6-3,6,3,1,0,Completed,true,false,false
+AA015124,24 Oct 26,12,BLTC,Clarinda,No. 1,Emma Ionescu,Billie Sevastas,Emma Ionescu,6-2,6,2,1,0,Completed,true,false,false
+AA015124,24 Oct 26,12,BLTC,Clarinda,No. 2,Lucia Cabrera,Konstance Tsekas,Konstance Tsekas,3-6,3,6,0,1,Completed,true,false,false
+AA015124,24 Oct 26,12,BLTC,Clarinda,No. 3,Antonia Poppleton,Isabel McWatt,Antonia Poppleton,6-2,6,2,1,0,Completed,true,false,false
+AA015124,24 Oct 26,12,BLTC,Clarinda,No. 4,Emily De Beer,Audrey McWatt,Audrey McWatt,2-6,2,6,0,1,Completed,true,false,false

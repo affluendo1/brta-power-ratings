@@ -3,7 +3,7 @@ AA005011,18 Jul 26,1,Coatesville White,Coatesville Blue,No. 1,Oscar McCallum,Pat
 AA005011,18 Jul 26,1,Coatesville White,Coatesville Blue,No. 2,Martin Curnow,Oliver Simpson,Martin Curnow,6-4,6,4,1,0,Completed,true,false,false
 AA005011,18 Jul 26,1,Coatesville White,Coatesville Blue,No. 3,Thomas Jenner,Hiren Arunkumar,Hiren Arunkumar,5-7,5,7,0,1,Completed,true,false,false
 AA005011,18 Jul 26,1,Coatesville White,Coatesville Blue,No. 4,Maisy McCallum,Max Bersulden,Max Bersulden,6-7,6,7,0,1,Completed,true,false,false
-AA005012,18 Jul 26,1,BLTC,Aspendale,No. 1,Lucas Volum,Tom McCaul,Lucas Volum,6-3,6,3,1,0,Completed,true,true,false
+AA005012,18 Jul 26,1,BLTC,Aspendale,No. 1,Lucas Volum,Tom McCaul,Lucas Volum,6-3,6,3,1,0,Completed,true,false,false
 AA005012,18 Jul 26,1,BLTC,Aspendale,No. 2,Abir Ahuja,Sean Butler,Sean Butler,2-6,2,6,0,1,Completed,true,false,false
 AA005012,18 Jul 26,1,BLTC,Aspendale,No. 3,Aidan Cleland,Conor Butler,Conor Butler,1-6,1,6,0,1,Completed,true,false,false
 AA005012,18 Jul 26,1,BLTC,Aspendale,No. 4,Noah Wang,Joe Corda,Noah Wang,6-4,6,4,1,0,Completed,true,false,false
@@ -51,7 +51,7 @@ AA005041,08 Aug 26,4,Aspendale,Coatesville White,No. 1,Liam Schoots,Oscar McCall
 AA005041,08 Aug 26,4,Aspendale,Coatesville White,No. 2,Tom McCaul,Martin Curnow,Martin Curnow,0-6,0,6,0,1,Completed,true,false,false
 AA005041,08 Aug 26,4,Aspendale,Coatesville White,No. 3,Sean Butler,Thomas Jenner,Sean Butler,6-3,6,3,1,0,Completed,true,false,false
 AA005041,08 Aug 26,4,Aspendale,Coatesville White,No. 4,Joe Corda,Maisy McCallum,Joe Corda,6-2,6,2,1,0,Completed,true,false,false
-AA005042,08 Aug 26,4,Glen Huntly,BLTC,No. 1,Jessica Elsner,Lucas Volum,Jessica Elsner,6-2,6,2,1,0,Completed,true,false,true
+AA005042,08 Aug 26,4,Glen Huntly,BLTC,No. 1,Jessica Elsner,Lucas Volum,Jessica Elsner,6-2,6,2,1,0,Completed,true,false,false
 AA005042,08 Aug 26,4,Glen Huntly,BLTC,No. 2,Peter Kalogeropoulos,Harry Sun,Peter Kalogeropoulos,6-0,6,0,1,0,Completed,true,false,true
 AA005042,08 Aug 26,4,Glen Huntly,BLTC,No. 3,Jadyn Green,Aidan Cleland,Jadyn Green,6-0,6,0,1,0,Completed,true,false,false
 AA005042,08 Aug 26,4,Glen Huntly,BLTC,No. 4,Brian Shu,Noah Wang,Noah Wang,2-6,2,6,0,1,Completed,true,false,false
@@ -120,7 +120,7 @@ AA005101,10 Oct 26,10,Glen Huntly,Coatesville White,No. 1,Jessica Elsner,Oscar M
 AA005101,10 Oct 26,10,Glen Huntly,Coatesville White,No. 2,Peter Kalogeropoulos,Martin Curnow,Peter Kalogeropoulos,7-5,7,5,1,0,Completed,true,false,false
 AA005101,10 Oct 26,10,Glen Huntly,Coatesville White,No. 3,Jadyn Green,Allegra Romagnino,Jadyn Green,6-1,6,1,1,0,Completed,true,false,false
 AA005101,10 Oct 26,10,Glen Huntly,Coatesville White,No. 4,Zac Stub,Maisy McCallum,Zac Stub,6-1,6,1,1,0,Completed,true,false,false
-AA005102,10 Oct 26,10,Kooyong,BLTC,No. 1,Johnny Koidl,Lucas Volum,Lucas Volum,0-6,0,6,0,1,Completed,true,false,true
+AA005102,10 Oct 26,10,Kooyong,BLTC,No. 1,Johnny Koidl,Lucas Volum,Lucas Volum,0-6,0,6,0,1,Completed,true,false,false
 AA005102,10 Oct 26,10,Kooyong,BLTC,No. 2,Jack Jones,Swapneel Sengupta,Jack Jones,7-5,7,5,1,0,Completed,true,false,false
 AA005102,10 Oct 26,10,Kooyong,BLTC,No. 3,Luca Cellante,Miles Ma Sing,Miles Ma Sing,4-6,4,6,0,1,Completed,true,false,false
 AA005102,10 Oct 26,10,Kooyong,BLTC,No. 4,Spencer Tannous,Aidan Cleland,Aidan Cleland,5-7,5,7,0,1,Completed,true,false,false
@@ -136,7 +136,7 @@ AA005111,17 Oct 26,11,Coatesville White,Aspendale,No. 1,Martin Curnow,Tom McCaul
 AA005111,17 Oct 26,11,Coatesville White,Aspendale,No. 2,Isabelle Li Zhang,Leon Schoots,Isabelle Li Zhang,6-1,6,1,1,0,Completed,true,false,false
 AA005111,17 Oct 26,11,Coatesville White,Aspendale,No. 3,Allegra Romagnino,Joe Corda,Joe Corda,2-6,2,6,0,1,Completed,true,false,false
 AA005111,17 Oct 26,11,Coatesville White,Aspendale,No. 4,Maisy McCallum,Skyler Wijendra,Maisy McCallum,6-2,6,2,1,0,Completed,true,false,true
-AA005112,17 Oct 26,11,BLTC,Glen Huntly,No. 1,Lucas Volum,Jadyn Green,Lucas Volum,6-0,6,0,1,0,Completed,true,true,false
+AA005112,17 Oct 26,11,BLTC,Glen Huntly,No. 1,Lucas Volum,Jadyn Green,Lucas Volum,6-0,6,0,1,0,Completed,true,false,false
 AA005112,17 Oct 26,11,BLTC,Glen Huntly,No. 2,Miles Ma Sing,Raphael Samuel,Raphael Samuel,2-6,2,6,0,1,Completed,true,false,true
 AA005112,17 Oct 26,11,BLTC,Glen Huntly,No. 3,Aidan Cleland,Zac Stub,Zac Stub,3-6,3,6,0,1,Completed,true,false,false
 AA005112,17 Oct 26,11,BLTC,Glen Huntly,No. 4,Noah Wang,Brian Shu,Noah Wang,6-0,6,0,1,0,Completed,true,false,false
@@ -148,3 +148,15 @@ AA005114,17 Oct 26,11,Maccabi,Coatesville Blue,No. 1,Aiden Knox,Hiren Arunkumar,
 AA005114,17 Oct 26,11,Maccabi,Coatesville Blue,No. 2,Adam Inbar,Vivaan Shah,Vivaan Shah,3-6,3,6,0,1,Completed,true,false,false
 AA005114,17 Oct 26,11,Maccabi,Coatesville Blue,No. 3,Jasper Gannon,Max Bersulden,Max Bersulden,3-6,3,6,0,1,Completed,true,false,false
 AA005114,17 Oct 26,11,Maccabi,Coatesville Blue,No. 4,Ari Threadgold,Aayan Khanna,Aayan Khanna,2-6,2,6,0,1,Completed,true,true,false
+AA005122,24 Oct 26,12,Glen Huntly,Kooyong,No. 1,Jessica Elsner,Noah Falieros,Noah Falieros,2-6,2,6,0,1,Completed,true,false,false
+AA005122,24 Oct 26,12,Glen Huntly,Kooyong,No. 2,Peter Kalogeropoulos,Johnny Koidl,Peter Kalogeropoulos,6-1,6,1,1,0,Completed,true,false,false
+AA005122,24 Oct 26,12,Glen Huntly,Kooyong,No. 3,Zac Stub,Jack Jones,Zac Stub,6-2,6,2,1,0,Completed,true,false,false
+AA005122,24 Oct 26,12,Glen Huntly,Kooyong,No. 4,Brian Shu,Spencer Tannous,Spencer Tannous,3-6,3,6,0,1,Completed,true,false,false
+AA005123,24 Oct 26,12,Coatesville Blue,Aspendale,No. 1,Oliver Simpson,Tom McCaul,Oliver Simpson,7-5,7,5,1,0,Completed,true,false,false
+AA005123,24 Oct 26,12,Coatesville Blue,Aspendale,No. 2,Hiren Arunkumar,Sean Butler,Sean Butler,4-6,4,6,0,1,Completed,true,false,false
+AA005123,24 Oct 26,12,Coatesville Blue,Aspendale,No. 3,Max Bersulden,Joe Corda,Max Bersulden,6-0,6,0,1,0,Completed,true,false,false
+AA005123,24 Oct 26,12,Coatesville Blue,Aspendale,No. 4,Aayan Khanna,Skyler Wijendra,Skyler Wijendra,4-6,4,6,0,1,Completed,true,false,true
+AA005124,24 Oct 26,12,BLTC,Coatesville White,No. 1,Lucas Volum,Oscar McCallum,Oscar McCallum,6-7,6,7,0,1,Completed,true,false,false
+AA005124,24 Oct 26,12,BLTC,Coatesville White,No. 2,Swapneel Sengupta,Isabelle Li Zhang,Swapneel Sengupta,6-0,6,0,1,0,Completed,true,false,false
+AA005124,24 Oct 26,12,BLTC,Coatesville White,No. 3,Miles Ma Sing,Allegra Romagnino,Miles Ma Sing,6-1,6,1,1,0,Completed,true,false,false
+AA005124,24 Oct 26,12,BLTC,Coatesville White,No. 4,Aidan Cleland,Maisy McCallum,Aidan Cleland,6-4,6,4,1,0,Completed,true,false,false
