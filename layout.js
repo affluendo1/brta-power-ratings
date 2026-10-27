@@ -5,7 +5,7 @@ function layoutDefaultCode(){const c=localStorage.getItem('brta-default-competit
 async function layoutApplyModel(data){
  const model=localStorage.getItem('brta-rating-model')||'RM3';if(model==='RM3'&&data.meta?.ratingModel!=='V3B')return data;
  if(layoutCache.get(data)?.model===model)return layoutCache.get(data).result;
- const result=await new Promise((resolve,reject)=>{const worker=new Worker('rating-worker.js?v=1');worker.onmessage=e=>{worker.terminate();e.data.error?reject(Error(e.data.error)):resolve(e.data.data)};worker.onerror=e=>{worker.terminate();reject(Error(e.message||'Could not calculate RM3b.'))};worker.postMessage({data,model})});layoutCache.set(data,{model,result});return result;
+ const result=await new Promise((resolve,reject)=>{const worker=new Worker('rating-worker.js?v=2');worker.onmessage=e=>{worker.terminate();e.data.error?reject(Error(e.data.error)):resolve(e.data.data)};worker.onerror=e=>{worker.terminate();reject(Error(e.message||'Could not calculate RM3b.'))};worker.postMessage({data,model})});layoutCache.set(data,{model,result});return result;
 }
 function ratingChangeCell(row){const n=row.ratingChange;return '<td class="rating-change '+(n>0?'rank-up':n<0?'rank-down':'rank-still')+'">'+(n==null?'—':(n>0?'+':'')+n)+'</td>'}
 function renderStandings(){

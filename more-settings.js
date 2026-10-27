@@ -37,7 +37,7 @@
     await Promise.all(cups.map((cup,i)=>animate(cup,[{opacity:i===2?1:0,transform:'scale(.8)'},{opacity:1,transform:'translateX(0)'}],{duration:reduced.matches?1:800,easing:'cubic-bezier(.22,.65,.25,1)'})));if(!alive(id))return;
     await wait(1000);if(!alive(id))return;
     const extra=Array.from({length:10},(_,i)=>makeCup(i+5));
-    await Promise.all(extra.map((cup,i)=>animate(cup,[{opacity:0,transform:'translateY('+((i<5?-1:1)*innerHeight*.7)+'px)'},{opacity:1,transform:'translateY(0)'}],{duration:reduced.matches?1:1000,delay:reduced.matches?0:(i%5)*55,easing:'cubic-bezier(.22,.65,.25,1)'})));if(!alive(id))return;
+    await Promise.all(extra.map((cup,i)=>{const point=M.cupPoint(slots[i+5],table.clientWidth,table.clientHeight);return animate(cup,[{opacity:0,transform:'translate('+((point.x-table.clientWidth/2)*1.8)+'px,'+((point.y-table.clientHeight/2)*1.8)+'px)'},{opacity:1,transform:'translate(0,0)'}],{duration:reduced.matches?1:1000,delay:reduced.matches?0:(i%5)*55,easing:'cubic-bezier(.22,.65,.25,1)'})}));if(!alive(id))return;
     $('.ms-game-status').textContent='A few more won’t hurt.';await wait(reduced.matches?100:650);if(!alive(id))return;
     // One continuous compositor animation: no per-move promise gap or collision-prone crossings.
     if(!reduced.matches){await Promise.all(cups.map((cup,i)=>animate(cup,M.cupOrbit(slots[i],table.clientWidth,table.clientHeight),{duration:14000,easing:'linear'})));}
