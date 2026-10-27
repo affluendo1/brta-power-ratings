@@ -2,6 +2,21 @@
 
 [Open the live site](https://affluendo1.github.io/brta-power-ratings/)
 
+### Version and changelog
+
+Open **Settings → Changelog** to see the latest website update or expand entries
+in **Full history**. The Settings version and both views use `changelog-data.js`.
+Entries contain concise user-facing changes; routine results checks are excluded,
+and Easter-egg notes remain deliberately vague. Only major releases have titles.
+Dates use Melbourne time and round to an hour for major/large updates, 30 minutes
+for small updates, and 10 minutes for tiny updates. Release numbers are labels,
+not decimals: `6.10` follows `6.9`, while `6.101` is a small follow-up to `6.1`.
+
+To publish a website release, prepend an entry with its version, commit timestamp,
+size and changes; add a title only for a major release. Bump the data asset version
+in `index.html` and `sw.js`, plus the service-worker cache version. Result-sync
+commits do not change the website version.
+
 ### Local Admin and Section Creator
 
 Turn on **Settings → Show Extras**, then open **Admin Control** beneath it.

@@ -765,6 +765,7 @@ function goToCurrentSeason(){activeHistorySeasonId=null;viewCatalog=currentCatal
 function openSettings(){
   const s=DATA.globalSync||{},classic=interfaceMode==='classic',palette=[['yellow','Tennis yellow'],['green','Green'],['blue','Blue'],['red','Red'],['purple','Purple'],['black','Black'],['white','White']],colourControls=classic?'':'<div class="accent-setting"><span><b>Colour scheme</b><small>Changes the complete Default interface palette.</small></span><div class="accent-picker">'+palette.map(([value,label])=>'<button type="button" class="accent-choice '+(accent===value?'selected':'')+'" data-accent-choice="'+value+'" aria-label="'+label+' colour scheme" title="'+label+'"><i></i><span>'+label+'</span></button>').join('')+'</div></div>';
   $('#settingsContent').innerHTML=`<div class="overlay-title"><div class="kicker">SITE SETTINGS</div><h2>Settings</h2><p>Preferences are stored only on this device.</p></div>
+    ${window.BRTAChangelog?.settingsHTML()||''}
     <div class="settings-grid">
       <div class="settings-group"><h3>Section</h3><p>Your competition and section choice is remembered. Use the selectors above to change it.</p></div>
       <div class="settings-group"><h3>Interface</h3><div class="interface-choice"><div><b>Website style</b><small>Both styles use the same data and features.</small></div><div class="segmented"><button id="futureModeBtn" class="${!classic?'selected':''}">Default</button><button id="classicModeBtn" class="${classic?'selected':''}">Classic</button></div></div></div>
