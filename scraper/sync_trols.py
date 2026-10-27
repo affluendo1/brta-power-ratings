@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import csv
+import copy
 import json
 import os
 import re
@@ -28,6 +29,25 @@ DAYTIME_NAMES = {"AA": "Saturday AM", "UA": "Sunday AM"}
 ALIASES = {"Geoge Si": "George Si"}
 MAX_WORKERS = int(os.getenv("TROLS_WORKERS", "10"))
 _thread_local = threading.local()
+
+# Future source collectors: name -> callable(section_snapshot, request_get).
+# Empty by default: no speculative fields or additional TROLS requests.
+SECTION_ENRICHERS = {}
+
+
+def collect_section_extras(section: dict, collectors=None) -> dict:
+    result = {}
+    for name, collector in (SECTION_ENRICHERS if collectors is None else collectors).items():
+        if not isinstance(name, str) or not name.strip():
+            raise ValueError("Source extension names must be non-empty strings")
+        value = collector(copy.deepcopy(section), _get)
+        if value is not None:
+            if not isinstance(value, dict):
+                raise ValueError(f"Source extension {name} must return an object or None")
+            # Reject invalid data before any section files are written.
+            result[name] = json.loads(json.dumps(value, allow_nan=False))
+    return result
+
 
 FIXTURE_FIELDS = [
     "fixture_id", "date", "round", "stage", "round_label", "home_team", "away_team",
@@ -841,6 +861,8 @@ def scrape_all() -> list[dict]:
         )
         for warning in section["source_warnings"]:
             print(f"::warning::{section['section_code']}: {warning}")
+    for section in loaded_sections:
+        section["source_extras"] = collect_section_extras(section)
     return loaded_sections
 
 
@@ -888,6 +910,8 @@ def main() -> None:
             "validation": "source discrepancies" if section.get("source_warnings") else "passed",
             "source_warnings": section.get("source_warnings", []),
         }
+        if section.get("source_extras"):
+            metadata["source_extras"] = section["source_extras"]
         (section_dir / "metadata.json").write_text(json.dumps(metadata, indent=2) + "\n", encoding="utf-8")
         catalog.append(metadata)
     synced_at = datetime.now(timezone.utc).isoformat()

@@ -1,11 +1,18 @@
 // Website releases, newest first. Routine result checks are not website releases.
 window.BRTA_RELEASES = Object.freeze([
+{
+    "version": "7.1.1.1",
+    "size": "tiny",
+    "committedAt": "2026-10-27T12:51:34+00:00",
+    "changes": [
+        "Preparations for what’s next."
+    ]
+},
   {
       "version": "7.1.1",
       "size": "small",
       "committedAt": "2026-10-27T10:48:38+00:00",
       "changes": [
-          "Added Snake to the More Settings return screen.",
           "Refined animations, celebrations and settings descriptions."
       ]
   },

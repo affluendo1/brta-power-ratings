@@ -1,6 +1,6 @@
 # BRTA Power Ratings
 
-**Current version: 7.1.1**
+**Current version: 7.1.1.1**
 
 [Open the live site](https://affluendo1.github.io/brta-power-ratings/)
 
@@ -53,7 +53,7 @@ are atomic and report duplicates or invalid rows before changing the draft.
 The custom **Teams** tab shows the active registered squad in its saved order, actual
 round-by-round selections, doubles partnerships, emergencies and suggested lineups. Prediction Centre uses the section's
 configured match counts, set lengths and best-of settings, with custom team
-scoring. Club Zone is currently hidden throughout the site.
+scoring. Club Zone entry points currently show a maintenance notice.
 
 For each round, choose the date and fixtures. Tick the matchday squad checkboxes;
 registered order is used automatically, and the up/down buttons adjust it.
