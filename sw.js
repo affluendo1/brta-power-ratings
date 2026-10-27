@@ -1,7 +1,7 @@
 const CACHE_PREFIX="brta-power-ratings-";
-const CACHE_NAME=CACHE_PREFIX+"shell-v43";
+const CACHE_NAME=CACHE_PREFIX+"shell-v44";
 const SHELL_FILES=[
-  "./","index.html","site.css","future.css","style.css","archive.css?v=10","app.js?v=45","changelog-data.js?v=2","changelog.js?v=1","changelog.css?v=1","more-settings-model.js?v=1","more-settings-effects.js?v=1","more-settings.js?v=1","more-settings.css?v=1","assets/kavac-display.woff","team-lab.js?v=1","team-lab-ui.js?v=1","team-lab.css?v=1","player-search.js?v=1","player-search.css?v=1","custom-section-model.js?v=3","custom-section-tools.js?v=3","custom-sections.js?v=7","custom-sections.css?v=6","rating-history.js?v=1","auxiliary-module.js?v=3","archive.js?v=10",
+  "./","index.html","site.css","future.css","style.css","archive.css?v=12","app.js?v=45","changelog-data.js?v=3","changelog.js?v=1","changelog.css?v=1","more-settings-model.js?v=2","more-settings-effects.js?v=1","more-settings.js?v=2","more-settings.css?v=2","assets/kavac-display.woff?v=2","team-lab.js?v=1","team-lab-ui.js?v=1","team-lab.css?v=1","player-search.js?v=1","player-search.css?v=1","custom-section-model.js?v=3","custom-section-tools.js?v=3","custom-sections.js?v=7","custom-sections.css?v=6","rating-history.js?v=1","auxiliary-module.js?v=3","confetti.js?v=1","archive.js?v=12",
   "prediction.js?v=3","pwa.js","data.js","manifest.webmanifest",
   "assets/brta-logo.png","assets/brta-icon-180.png",
   "assets/brta-icon-192.png","assets/brta-icon-512.png","assets/gong.mp3"

@@ -24,12 +24,12 @@
   <script>
     (function(){var m=localStorage.getItem('brta-interface')||'future',t=localStorage.getItem('brta-theme')||'auto',a=localStorage.getItem('brta-accent')||'yellow',d=t==='dark'||t==='black-plus'||(t==='auto'&&matchMedia('(prefers-color-scheme: dark)').matches),future=m!=='classic',c=future?(d?'#101109':'#f3f2e9'):'#173f63',l=document.createElement('link');document.documentElement.dataset.interface=m;document.documentElement.dataset.accent=a;document.documentElement.style.backgroundColor=c;document.documentElement.style.colorScheme=d?'dark':'light';document.getElementById('themeColor').content=c;l.id='siteStyles';l.rel='stylesheet';l.href=future?'future.css?v=31':'style.css?v=37';document.head.appendChild(l)})()
   </script>
-  <link rel="stylesheet" href="archive.css?v=11">
+  <link rel="stylesheet" href="archive.css?v=12">
 <link rel="stylesheet" href="custom-sections.css?v=6">
 <link rel="stylesheet" href="player-search.css?v=1">
 <link rel="stylesheet" href="team-lab.css?v=1">
 <link rel="stylesheet" href="changelog.css?v=1">
-<link rel="stylesheet" href="more-settings.css?v=1">
+<link rel="stylesheet" href="more-settings.css?v=2">
 </head>
 <body>
 <header class="site-header">
@@ -132,13 +132,14 @@
 <script src="player-search.js?v=1"></script>
 <script src="team-lab.js?v=1"></script>
 <script src="team-lab-ui.js?v=1"></script>
-<script src="changelog-data.js?v=2"></script>
+<script src="changelog-data.js?v=3"></script>
 <script src="changelog.js?v=1"></script>
-<script src="more-settings-model.js?v=1"></script>
+<script src="more-settings-model.js?v=2"></script>
 <script src="more-settings-effects.js?v=1"></script>
 <script src="app.js?v=45"></script>
-<script src="archive.js?v=11"></script>
-<script src="more-settings.js?v=1"></script>
+<script src="confetti.js?v=1"></script>
+<script src="archive.js?v=12"></script>
+<script src="more-settings.js?v=2"></script>
 <script src="pwa.js?v=1"></script>
 </body>
 </html>

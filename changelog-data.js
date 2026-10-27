@@ -1,6 +1,14 @@
 // Website releases, newest first. Routine result checks are not website releases.
 window.BRTA_RELEASES = Object.freeze([
   {
+    "version": "8.01",
+    "committedAt": "2026-10-27T04:46:28+00:00",
+    "size": "small",
+    "changes": [
+      "Bug fixes."
+    ]
+  },
+  {
     "version": "8.0",
     "title": "More Settings",
     "committedAt": "2026-10-27T03:42:51+00:00",
