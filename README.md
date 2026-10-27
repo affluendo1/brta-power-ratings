@@ -1,5 +1,7 @@
 # BRTA Power Ratings
 
+**Current version: 7.1.1**
+
 [Open the live site](https://affluendo1.github.io/brta-power-ratings/)
 
 ### Version and changelog
@@ -7,22 +9,24 @@
 Open **Settings → Changelog** to see the latest website update or expand entries
 in **Full history**. The Settings version and both views use `changelog-data.js`.
 Entries contain concise user-facing changes; routine results checks are excluded,
-and Easter-egg notes remain deliberately vague. Only major releases have titles.
+and Easter-egg notes remain deliberately vague. Only substantial updates have titles.
 Dates use Melbourne time and round to an hour for major/large updates, 30 minutes
-for small updates, and 10 minutes for tiny updates. Release numbers are labels,
-not decimals: `6.10` follows `6.9`, while `6.101` is a small follow-up to `6.1`.
+for small updates, and 10 minutes for tiny updates. Release numbers use dotted levels: `7.0` is a major release, `7.1` is a feature
+update, `7.1.1` is a smaller follow-up, and `7.1.1.1` is a further revision.
+Each level counts independently, so `6.10` follows `6.9`. Older compact numbers
+are now dotted too: `6.101` becomes `6.1.1` and `7.01` becomes `7.0.1`.
+Layout Overhaul is `7.1`; its follow-up is `7.1.1`.
 
 To publish a website release, prepend an entry with its version, commit timestamp,
-size and changes; add a title only for a major release. Bump the data asset version
+size and changes; add a short title only for a substantial update. Bump the data asset version
 in `index.html` and `sw.js`, plus the service-worker cache version. Result-sync
 commits do not change the website version.
 
-### Local Admin and Section Creator
+### Custom Section Creator
 
-Turn on **Settings → Show Extras**, then open **Admin Control** beneath it.
-On the first visit, create a password; later visits ask for that password.
-The editor unlock lasts for that page visit and is revoked when Extras is hidden.
-This is a local editor gate, not a server account or shared publishing system.
+Turn on **Settings → Show Extras**, then open **Custom Section Creator** above
+the Extras toggle. No password is required. Sections are stored locally in your
+browser; saving them does not publish them to the official site.
 
 Create a section and choose its season, match counts, scoring format, and separate
 singles/doubles set lengths. Add teams and named players in their registered order.
@@ -46,11 +50,10 @@ renames. Team transfers retain the registration attached to earlier appearances
 without retroactively marking those appearances as emergencies. Roster previews
 are atomic and report duplicates or invalid rows before changing the draft.
 
-Custom **Team Lab** shows the active registered squad in its saved order, actual
+The custom **Teams** tab shows the active registered squad in its saved order, actual
 round-by-round selections, doubles partnerships, emergencies and suggested lineups. Prediction Centre uses the section's
 configured match counts, set lengths and best-of settings, with custom team
-scoring. Club Zone is hidden and disabled for custom sections; it remains
-available for official sections.
+scoring. Club Zone is currently hidden throughout the site.
 
 For each round, choose the date and fixtures. Tick the matchday squad checkboxes;
 registered order is used automatically, and the up/down buttons adjust it.
@@ -110,8 +113,8 @@ explicitly checked and confirmed. Save changes after applying an import.
 
 Use **Export backup** or **Back up all** to download JSON copies. **Import backup**
 restores or transfers them to another browser; matching section IDs are replaced
-only after confirmation. Backups contain competition data, not the admin password.
-Clearing site data removes both local sections and the password, so keep backups.
+only after confirmation. Backups contain your custom competition data.
+Clearing site data removes local sections, so keep backups.
 
 BRTA Power Ratings is an unofficial analytics site for BRTA Saturday AM and Sunday AM junior tennis. It is not affiliated with BRTA, Tennis Australia or UTR. Match records come from TROLS and are treated as official-as-entered records; the site does not claim that a nominated player was necessarily the player who physically took the court.
 
@@ -186,9 +189,24 @@ Round-by-round snapshots refit the ratings using results available through each 
 
 ## Results, standings and BRTA scoring
 
-TROLS is the source for entered fixture results, scorecards, fixture order and current published points. For the current season, the site reconstructs standings from the fixture data, retains published points where available, and applies the 2026 BRTA Weekend Junior By-Laws when a washout or full-team forfeit has no numeric points in the source. Under those rules, Sets and Green Ball use a 4-point team-win / 2-point team-draw base; Rubbers use 2 / 1. Set points are added separately. Current reconstructed ties are ordered by points, then games-for divided by total games.
+TROLS is the source for entered fixture results, scorecards, fixture order and current published points. For the current season, the site reconstructs standings from the fixture data, retains published points where available, and applies the 2026 BRTA Weekend Junior By-Laws when a washout or full-team forfeit has no numeric points in the source. Under those rules, Sets and Green Ball use a 4-point team-win / 2-point team-draw base; Rubbers use 2 / 1. Set points are added separately. Current reconstructed ties are ordered by points, then game percentage (games won divided by games lost, multiplied by 100).
 
-For archived seasons, a published TROLS final ladder takes precedence over a reconstructed table. If no final ladder is published, the site reconstructs the table from the available results and labels that limitation. The full rule summary and official by-law link are in Settings.
+For archived seasons, a published TROLS final ladder takes precedence over a reconstructed table. If no final ladder is published, the site reconstructs the table from the available results and labels that limitation. Open **Settings → BRTA rules** for the rule summary and official by-law link.
+
+## Settings and exports
+
+Settings contains display choices, default competition and section selectors, and
+separate Methodology and BRTA rules overlays. **RM3** is the default rating model;
+**RM3b** is an experimental alternative using game, set, match and match-tiebreak
+evidence. History is opened from the home page, alongside the current version.
+
+**Export Section Results** downloads the results CSV without internal fixture IDs.
+**Export Complete Section** downloads an HTML report containing ratings, bands,
+round history, standings, fixtures and scorecards. Provisional entries can be
+shown with the checkbox beside these export links.
+
+Extras also reveals More Settings. Its return screen includes optional Snake,
+with keyboard controls on desktop and board swipes on mobile.
 
 ## Data flow and automation
 
@@ -206,7 +224,7 @@ static site on GitHub Pages
 
 `scraper/sync_trols.py` discovers the active competitions and sections, downloads the results and scorecards, reads each team's official draw, validates the records, and writes the current-season source data. `generate_site_data.py` fits the section models and creates the data consumed by the website. The default section is embedded in `data.js`; other section payloads are loaded when selected.
 
-The routine GitHub Actions sync runs Sunday, Monday and Wednesday at 7:17 PM Australia/Melbourne time, and can also be started manually. It runs the regression tests, regenerates the current-season site data, and records a heartbeat. On a later first visit in a browser, the site shows a short plain-English notice describing whether that check found updated results.
+The routine GitHub Actions sync runs daily at approximately 3:07 PM Australia/Melbourne time, and can also be started manually. It runs the regression tests, regenerates the current-season site data, and records a heartbeat. On a later first visit in a browser, the site shows a short plain-English notice describing whether that check found updated results.
 
 Historical importing is separate from routine sync: `scraper/backfill_history.py` fetches the past seasons listed by TROLS, and `generate_archive_site_data.py` builds their rating payloads and History catalogue. The archive workflow is manually dispatchable and code-triggered; normal scheduled checks do not rescan the past.
 
@@ -274,7 +292,7 @@ rather than silently presented as searched. No new historical results are inferr
 
 ### Team Lab
 
-Choose a team pill to open a full-screen squad view. Ladder position and points
+Choose a team tab to view its squad directly on the Teams page. Ladder position and points
 lead the view; the roster shows appearances, usual singles position, frequent
 doubles partner and singles Power. The selection grid marks each named player’s
 singles/doubles roles for every recorded round, with emergency flags shown

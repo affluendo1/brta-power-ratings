@@ -1,7 +1,7 @@
 // Website releases, newest first. Routine result checks are not website releases.
 window.BRTA_RELEASES = Object.freeze([
   {
-      "version": "8.01",
+      "version": "7.1.1",
       "size": "small",
       "committedAt": "2026-10-27T10:48:38+00:00",
       "changes": [
@@ -10,10 +10,10 @@ window.BRTA_RELEASES = Object.freeze([
       ]
   },
   {
-      "version": "8.0",
+      "version": "7.1",
       "title": "Layout Overhaul",
       "committedAt": "2026-10-27T10:12:39+00:00",
-      "size": "major",
+      "size": "large",
       "changes": [
           "Redesigned Settings and the home controls, with separate history, methodology and rules panels.",
           "Added complete-section exports, default section choices and the experimental RM3b model.",
@@ -22,7 +22,7 @@ window.BRTA_RELEASES = Object.freeze([
       ]
   },
   {
-    "version": "7.01",
+    "version": "7.0.1",
     "committedAt": "2026-10-27T00:19:30+00:00",
     "size": "small",
     "changes": [
@@ -54,7 +54,7 @@ window.BRTA_RELEASES = Object.freeze([
     ]
   },
   {
-    "version": "6.301",
+    "version": "6.3.1",
     "committedAt": "2026-10-20T17:52:32+11:00",
     "size": "small",
     "changes": [
@@ -82,7 +82,7 @@ window.BRTA_RELEASES = Object.freeze([
     ]
   },
   {
-    "version": "6.101",
+    "version": "6.1.1",
     "committedAt": "2026-10-18T17:39:54+11:00",
     "size": "small",
     "changes": [
@@ -128,7 +128,7 @@ window.BRTA_RELEASES = Object.freeze([
     ]
   },
   {
-    "version": "5.301",
+    "version": "5.3.1",
     "committedAt": "2026-09-28T18:46:44+10:00",
     "size": "small",
     "changes": [
@@ -145,7 +145,7 @@ window.BRTA_RELEASES = Object.freeze([
     ]
   },
   {
-    "version": "5.201",
+    "version": "5.2.1",
     "committedAt": "2026-09-27T22:23:42+10:00",
     "size": "small",
     "changes": [
@@ -209,7 +209,7 @@ window.BRTA_RELEASES = Object.freeze([
     ]
   },
   {
-    "version": "4.201",
+    "version": "4.2.1",
     "committedAt": "2026-09-24T21:19:39+10:00",
     "size": "small",
     "changes": [
@@ -259,7 +259,7 @@ window.BRTA_RELEASES = Object.freeze([
     ]
   },
   {
-    "version": "3.501",
+    "version": "3.5.1",
     "committedAt": "2026-09-23T13:35:14+10:00",
     "size": "small",
     "changes": [
@@ -289,7 +289,7 @@ window.BRTA_RELEASES = Object.freeze([
     ]
   },
   {
-    "version": "3.301",
+    "version": "3.3.1",
     "committedAt": "2026-09-21T15:47:55+10:00",
     "size": "small",
     "changes": [
@@ -308,7 +308,7 @@ window.BRTA_RELEASES = Object.freeze([
     ]
   },
   {
-    "version": "3.201",
+    "version": "3.2.1",
     "committedAt": "2026-09-20T12:57:56+10:00",
     "size": "small",
     "changes": [
@@ -326,7 +326,7 @@ window.BRTA_RELEASES = Object.freeze([
     ]
   },
   {
-    "version": "3.101",
+    "version": "3.1.1",
     "committedAt": "2026-09-19T16:52:13+10:00",
     "size": "small",
     "changes": [

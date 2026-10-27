@@ -1,7 +1,7 @@
 const CACHE_PREFIX="brta-power-ratings-";
-const CACHE_NAME=CACHE_PREFIX+"shell-v49";
+const CACHE_NAME=CACHE_PREFIX+"shell-v50";
 const SHELL_FILES=[
-  "./","index.html","site.css","future.css","style.css","archive.css?v=12","waiting-game.js?v=2","app.js?v=47","layout-model.js?v=2","layout.js?v=3","layout.css?v=4","rating-worker.js?v=2","changelog-data.js?v=5","changelog.js?v=2","changelog.css?v=1","more-settings-model.js?v=4","more-settings-effects.js?v=1","more-settings.js?v=5","more-settings.css?v=4","assets/kavac-display.woff?v=2","team-lab.js?v=1","team-lab-ui.js?v=2","team-lab.css?v=1","player-search.js?v=1","player-search.css?v=1","custom-section-model.js?v=3","custom-section-tools.js?v=3","custom-sections.js?v=8","custom-sections.css?v=6","rating-history.js?v=2","auxiliary-module.js?v=3","confetti.js?v=3","archive.js?v=12",
+  "./","index.html","site.css","future.css","style.css","archive.css?v=12","waiting-game.js?v=2","app.js?v=48","layout-model.js?v=2","layout.js?v=3","layout.css?v=4","rating-worker.js?v=2","changelog-data.js?v=6","changelog.js?v=2","changelog.css?v=1","more-settings-model.js?v=4","more-settings-effects.js?v=1","more-settings.js?v=5","more-settings.css?v=4","assets/kavac-display.woff?v=2","team-lab.js?v=1","team-lab-ui.js?v=2","team-lab.css?v=1","player-search.js?v=1","player-search.css?v=1","custom-section-model.js?v=3","custom-section-tools.js?v=3","custom-sections.js?v=8","custom-sections.css?v=6","rating-history.js?v=2","auxiliary-module.js?v=3","confetti.js?v=3","archive.js?v=12",
   "prediction.js?v=3","pwa.js","data.js","manifest.webmanifest",
   "assets/brta-logo.png","assets/brta-icon-180.png",
   "assets/brta-icon-192.png","assets/brta-icon-512.png","assets/gong.mp3"
