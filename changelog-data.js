@@ -1,21 +1,16 @@
 // Website releases, newest first. Routine result checks are not website releases.
 window.BRTA_RELEASES = Object.freeze([
   {
-    "version": "8.01",
-    "committedAt": "2026-10-27T04:46:28+00:00",
-    "size": "small",
-    "changes": [
-      "Bug fixes."
-    ]
-  },
-  {
-    "version": "8.0",
-    "title": "More Settings",
-    "committedAt": "2026-10-27T03:42:51+00:00",
-    "size": "major",
-    "changes": [
-      "Added more settings."
-    ]
+      "version": "8.0",
+      "title": "Layout Overhaul",
+      "committedAt": "2026-10-27T10:12:39+00:00",
+      "size": "major",
+      "changes": [
+          "Redesigned Settings and the home controls, with separate history, methodology and rules panels.",
+          "Added complete-section exports, default section choices and the experimental RM3b model.",
+          "Refreshed standings, rating bands and movement, team pages and fixture navigation.",
+          "Added more settings, with animation and usability improvements."
+      ]
   },
   {
     "version": "7.01",

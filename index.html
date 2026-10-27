@@ -29,7 +29,8 @@
 <link rel="stylesheet" href="player-search.css?v=1">
 <link rel="stylesheet" href="team-lab.css?v=1">
 <link rel="stylesheet" href="changelog.css?v=1">
-<link rel="stylesheet" href="more-settings.css?v=2">
+<link rel="stylesheet" href="more-settings.css?v=3">
+<link rel="stylesheet" href="layout.css?v=1">
 </head>
 <body>
 <header class="site-header">
@@ -39,7 +40,7 @@
     <div class="subtitle" id="sectionSubtitle">Saturday &amp; Sunday AM · Spring 2026</div></div>
   </div>
   <div class="header-actions">
-    <button id="installBtn" class="button secondary" type="button" aria-haspopup="dialog" aria-controls="installOverlay">Install app</button>
+
     <button id="roundBtn" class="button secondary">Latest round</button>
     <button id="clubZoneBtn" class="button secondary" aria-haspopup="dialog" aria-controls="clubPickerOverlay">Club Zone</button>
     <button id="settingsBtn" class="button secondary">Settings</button>
@@ -58,7 +59,7 @@
       <button id="sectionSelect" class="choice-trigger" type="button" aria-haspopup="listbox" aria-expanded="false"><span>Loading sections</span><i aria-hidden="true"></i></button>
       <div id="sectionOptions" class="choice-options" role="listbox" aria-label="Section"></div>
     </div>
-    <div class="section-picker-footer"><span class="section-count" id="sectionCount"></span><button id="exportSectionBtn" class="export-link" type="button" title="Download this section's fixtures and all published rubbers as a CSV file">Export this section’s CSV</button></div>
+    <div class="section-picker-footer"><div class="section-exports"><button id="exportCompleteBtn" class="export-link" type="button">Export Complete Section</button><button id="exportSectionBtn" class="export-link" type="button">Export Section Results</button></div><label class="provisional-control"><input class="custom-check" id="provToggle" type="checkbox"> Provisional entries</label></div>
   </section>
   <section class="status-strip" id="statusStrip"></section>
   <nav class="main-nav" aria-label="Main navigation">
@@ -85,13 +86,13 @@
   </section>
 
   <section id="page-teams" class="page">
-    <div id="teamCards" class="team-cards"></div>
+    <div id="teamCards" class="team-cards"></div><div id="teamLabContent" class="team-inline" role="tabpanel"></div>
   </section>
 
   <section id="page-standings" class="page">
     <div class="section-title"><div><h1>Standings</h1></div><span class="small-note" id="standingsNote"></span></div>
     <div id="knockoutSummary" class="knockout-summary"></div>
-    <div class="table-wrap"><table><thead id="standingsHead"><tr><th>Pos</th><th>Team</th><th>P</th><th>W</th><th>D</th><th>L</th><th>Rubbers</th><th>Games</th><th>Pts</th></tr></thead><tbody id="standingsBody"></tbody></table></div>
+    <div class="table-wrap"><table><thead id="standingsHead"><tr><th>#</th><th>Team</th><th>W–D–L</th><th>%</th><th>Pts</th></tr></thead><tbody id="standingsBody"></tbody></table></div>
     <div class="notice" id="standingsCaveat"></div>
   </section>
 
@@ -107,13 +108,12 @@
 
 </main>
 <main id="royalArchive" class="royal-archive hidden" aria-hidden="true"></main>
-<footer class="site-footer"><span><b>BRTA Power Ratings</b> · Unofficial competition analytics</span><span>Not affiliated with BRTA, Tennis Australia or UTR.</span></footer>
+
 
 <div id="clubPickerOverlay" class="overlay hidden"><div class="overlay-backdrop" data-club-picker-close="1"></div><section class="club-picker-sheet" role="dialog" aria-modal="true" aria-labelledby="clubPickerTitle"><button id="clubPickerClose" class="close-btn" type="button" aria-label="Close Club Zone">×</button><div class="overlay-title"><div class="kicker">CLUB ZONE</div><h2 id="clubPickerTitle">Open a club record</h2><p>Choose competition, then club.</p></div><div class="club-picker-fields"><label>Competition<select id="clubPickerCompetition"><option value="">Choose Saturday or Sunday AM</option><option value="AA">Saturday AM</option><option value="UA">Sunday AM</option></select></label><label>Club<select id="clubPickerClub" disabled><option value="">Choose a competition first</option></select></label></div><p id="clubPickerStatus" class="club-picker-status"></p><button id="clubPickerOpen" class="button primary" type="button" disabled>Open Club Zone</button></section></div>
 <div id="clubZoneOverlay" class="overlay hidden"><div class="overlay-backdrop" data-club-zone-close="1"></div><aside class="club-zone-sheet"><button id="clubZoneClose" class="close-btn" aria-label="Close Club Zone">×</button><div id="clubZoneContent"></div></aside></div>
-<div id="teamLabOverlay" class="overlay hidden"><section class="tl-sheet" role="dialog" aria-modal="true" aria-labelledby="teamLabTitle" tabindex="-1"><div class="tl-topbar"><span>TEAM LAB</span><button id="teamLabClose" type="button" class="tl-close" data-tl-close aria-label="Close Team Lab">Back to teams ×</button></div><div id="teamLabContent"></div></section></div>
 <div id="profileOverlay" class="overlay hidden"><div class="overlay-backdrop" data-close="1"></div><aside class="profile-sheet"><button id="profileClose" class="close-btn" aria-label="Close">×</button><div id="profileContent"></div></aside><aside id="profileMatchExplorer" class="profile-match-explorer hidden" aria-label="Match explorer"><div id="profileMatchExplorerContent"></div></aside></div>
-<div id="searchOptionsOverlay" class="overlay hidden"><div class="overlay-backdrop" data-search-options-close="1"></div><section class="search-options-sheet" role="dialog" aria-modal="true" aria-labelledby="searchOptionsTitle"><button id="searchOptionsClose" class="close-btn" type="button" aria-label="Close">×</button><div class="overlay-title"><div class="kicker">RATINGS</div><h2 id="searchOptionsTitle">Options</h2></div><h3>Search scope</h3><div class="search-scope-choice" role="group" aria-label="Search players in"><button type="button" data-search-scope="section">This section</button><button type="button" data-search-scope="all">All sections</button><button type="button" data-search-scope="history">All history<small>Saturday + Sunday · all seasons</small></button></div><div class="ratings-history-options"><h3>Rating history</h3><p>View ratings after each round. Movement compares ranked positions with the preceding round.</p><div id="ratingHistoryChoices" class="rating-history-choices"></div></div></section></div><div id="rivalryOverlay" class="overlay hidden"><div class="overlay-backdrop" data-rivalry-close="1"></div><aside class="rivalry-sheet"><button id="rivalryClose" class="close-btn" type="button" aria-label="Close">×</button><div id="rivalryContent"></div></aside></div><div id="roundOverlay" class="overlay hidden"><div class="overlay-backdrop" data-round-close="1"></div><aside class="round-sheet"><button id="roundClose" class="close-btn" aria-label="Close">×</button><div id="roundContent"></div></aside></div>
+<div id="searchOptionsOverlay" class="overlay hidden"><div class="overlay-backdrop" data-search-options-close="1"></div><section class="search-options-sheet" role="dialog" aria-modal="true" aria-labelledby="searchOptionsTitle"><button id="searchOptionsClose" class="close-btn" type="button" aria-label="Close">×</button><div class="overlay-title"><div class="kicker">RATINGS</div><h2 id="searchOptionsTitle">Options</h2></div><h3>Search scope</h3><div class="search-scope-choice" role="group" aria-label="Search players in"><button type="button" data-search-scope="section">This section</button><button type="button" data-search-scope="all">All sections</button><button type="button" data-search-scope="history">All history</button></div><div class="ratings-history-options"><h3>Rating History</h3><div id="ratingHistoryChoices" class="rating-history-choices"></div></div></section></div><div id="rivalryOverlay" class="overlay hidden"><div class="overlay-backdrop" data-rivalry-close="1"></div><aside class="rivalry-sheet"><button id="rivalryClose" class="close-btn" type="button" aria-label="Close">×</button><div id="rivalryContent"></div></aside></div><div id="roundOverlay" class="overlay hidden"><div class="overlay-backdrop" data-round-close="1"></div><aside class="round-sheet"><button id="roundClose" class="close-btn" aria-label="Close">×</button><div id="roundContent"></div></aside></div>
 <div id="settingsOverlay" class="overlay hidden"><div class="overlay-backdrop" data-settings-close="1"></div><aside class="settings-sheet"><button id="settingsClose" class="close-btn" aria-label="Close">×</button><div id="settingsContent"></div></aside></div>
 <div id="resultOverlay" class="overlay hidden"><div class="overlay-backdrop" data-result-close="1"></div><aside class="result-sheet"><button id="resultClose" class="close-btn" aria-label="Close">×</button><div id="resultContent"></div></aside></div>
 <div id="predictionOverlay" class="overlay hidden"><div class="overlay-backdrop" data-prediction-close="1"></div><aside class="prediction-sheet"><button id="predictionClose" class="close-btn" aria-label="Close">×</button><div id="predictionContent"></div></aside></div>
@@ -121,25 +121,28 @@
 <div id="sosOverlay" class="overlay hidden"><div class="overlay-backdrop" data-sos-close="1"></div><aside class="sos-sheet"><button id="sosClose" class="close-btn" aria-label="Close">×</button><div id="sosContent"></div></aside></div>
 <div id="installOverlay" class="overlay hidden"><div class="overlay-backdrop" data-install-close="1"></div><section class="install-sheet" role="dialog" aria-modal="true" aria-labelledby="installTitle"><button id="installClose" class="close-btn" type="button" aria-label="Close install help">×</button><div class="overlay-title"><div class="kicker">BRTA POWER RATINGS</div><h2 id="installTitle">Install the app</h2><p>Keep your section results one tap away.</p></div><div id="installGuide" class="install-guide"></div><div class="install-actions"><button id="nativeInstallBtn" class="button primary hidden" type="button">Install BRTA Ratings</button><button id="installDoneBtn" class="button secondary" type="button">Done</button></div></section></div>
 <div id="modeSwitchOverlay" class="mode-switch hidden" aria-live="polite"><div class="mode-switch-box"><div class="progress-ring" id="progressRing"><div><b id="progressPct">0%</b></div></div><h2>Switching interface</h2><p id="switchStatus">Preparing layout…</p></div></div>
+<div id="installSettingsStash" hidden><button id="installBtn" class="button secondary" type="button" aria-haspopup="dialog" aria-controls="installOverlay">Install app</button></div>
 <div id="syncToastHost" class="sync-toast-host" aria-live="polite" aria-atomic="true"></div>
 <script src="data.js?v=16"></script>
 <script src="prediction.js?v=3"></script>
 <script src="auxiliary-module.js?v=3"></script>
-    <script src="rating-history.js?v=1"></script>
+    <script src="rating-history.js?v=2"></script>
 <script src="custom-section-model.js?v=3"></script>
 <script src="custom-section-tools.js?v=3"></script>
-<script src="custom-sections.js?v=7"></script>
+<script src="custom-sections.js?v=8"></script>
 <script src="player-search.js?v=1"></script>
 <script src="team-lab.js?v=1"></script>
-<script src="team-lab-ui.js?v=1"></script>
-<script src="changelog-data.js?v=3"></script>
-<script src="changelog.js?v=1"></script>
-<script src="more-settings-model.js?v=2"></script>
+<script src="team-lab-ui.js?v=2"></script>
+<script src="changelog-data.js?v=4"></script>
+<script src="changelog.js?v=2"></script>
+<script src="more-settings-model.js?v=3"></script>
 <script src="more-settings-effects.js?v=1"></script>
-<script src="app.js?v=45"></script>
-<script src="confetti.js?v=1"></script>
+<script src="layout-model.js?v=1"></script>
+<script src="app.js?v=46"></script>
+<script src="layout.js?v=1"></script>
+<script src="confetti.js?v=2"></script>
 <script src="archive.js?v=12"></script>
-<script src="more-settings.js?v=2"></script>
+<script src="more-settings.js?v=3"></script>
 <script src="pwa.js?v=1"></script>
 </body>
 </html>

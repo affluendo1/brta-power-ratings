@@ -43,12 +43,16 @@ assert.equal(M.cupWin(()=>0),true);assert.equal(M.cupWin(()=>1/3-Number.EPSILON)
 assert.equal(M.cupWin(()=>1/3),false);assert.equal(M.cupWin(()=>.999999),false);
 assert.equal(Array.from({length:1500},(_,i)=>M.cupWin(()=>(i+.5)/1500)).filter(Boolean).length,500);
 const positions=new Set(Array.from({length:15},(_,i)=>JSON.stringify(M.cupPoint(i,1000,600))));assert.equal(positions.size,15);
-const frames=M.cupPath(0,14,1000,600,()=>.8);
-assert.equal(frames.length,13);assert.equal(frames[0].offset,0);assert.equal(frames.at(-1).offset,1);
-const displacement=frame=>frame.transform.match(/[-+]?\d*\.?\d+(?:e[-+]?\d+)?/gi).map(Number);
-assert.deepEqual(displacement(frames[0]),[-800,-372]);assert(displacement(frames.at(-1)).every(n=>Math.abs(n)<1e-9));
-const loop=M.cupPath(7,7,1000,600,()=>.8);assert(Math.abs(displacement(loop[6])[1])>200);
-assert.notDeepEqual(M.cupPath(0,14,1000,600),M.cupPath(0,14,1000,600));
+for(const [width,height]of [[360,350],[1050,570]]){
+ const size=Math.min(72,Math.min(width*.42,height*.35)*2*Math.sin(Math.PI/15)*.66);
+ const paths=Array.from({length:15},(_,i)=>M.cupOrbit(i,width,height));
+ const numbers=f=>f.transform.match(/[-+]?\d*\.?\d+(?:e[-+]?\d+)?/gi).map(Number);
+ paths.forEach(path=>{assert.equal(path[0].offset,0);assert.equal(path.at(-1).offset,1);assert(numbers(path[0]).every(n=>Math.abs(n)<1e-7));assert(numbers(path.at(-1)).every(n=>Math.abs(n)<1e-7));});
+ for(let frame=0;frame<421;frame++)for(let i=0;i<15;i++)for(let j=i+1;j<15;j++){
+ const a=M.cupPoint(i,width,height),b=M.cupPoint(j,width,height),x=numbers(paths[i][frame]),y=numbers(paths[j][frame]);
+ assert(Math.hypot(a.x+x[0]-b.x-y[0],a.y+x[1]-b.y-y[1])>size*1.25,'cups need clear space throughout the orbit');
+ }
+}
 assert.equal(M.confirmations.length,9);
 assert.equal(M.confirmations[2].phrase,'I CONFIRM');
 assert.equal(M.confirmations[6].phrase,'I will confirm, regardless of the suffering homeless children.');

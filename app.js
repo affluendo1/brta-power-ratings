@@ -21,7 +21,7 @@ let theme=localStorage.getItem('brta-theme')||'auto',interfaceMode=localStorage.
 let ratingRound=null,focusedSearchPlayer=null;
 let ratingView='singles',resultRound=null,selectedMatch=null,selectedPrediction=null,activePredictionMatch=null,activeProfilePlayer=null,loadingToken=0,roundSimulations={};
 let activePage='results',auxiliaryCache=null,auxiliaryCacheKey='',auxiliaryRevealTimer=0,auxiliaryRevealKey='',auxiliaryReadyKey='',auxiliaryFadeKey='';
-const BAND_NAMES=['Apex','Elite','Strong','Middle Class','Developing','Weak','Basement'];
+const BAND_NAMES=['Apex','Elite','Strong','Middle Class','Developing','Basement'];
 const ratingInfo={
   singles:['Singles ratings','Opponent-adjusted singles power. Minimum 4 completed singles rubbers for a ranked position.'],
   pairs:['Doubles pair ratings','Each recurring partnership is one rating entity. Minimum 2 matches to rank.'],
@@ -72,12 +72,12 @@ function auxiliaryPlayer(name){return name===window.AuxiliaryModule?.CANONICAL&&
 function csvCell(value){const text=String(value??'');return'"'+text.replace(/"/g,'""')+'"'}
 function exportSectionCSV(){
   if(!D?.meta)return;
-  const header=['record_type','competition','section','fixture_id','date','round','status','home_team','away_team','home_points','away_points','home_rubbers','away_rubbers','home_games','away_games','rubber_type','rubber_position','home_players','away_players','winner','score'];
+  const header=['record_type','competition','section','date','round','status','home_team','away_team','home_points','away_points','home_rubbers','away_rubbers','home_games','away_games','rubber_type','rubber_position','home_players','away_players','winner','score'];
   const rows=[header];
   for(const round of D.results||[])for(const fixture of round.fixtures||[]){
-    const base=['Fixture',D.meta.competition_label,D.meta.section_label,fixture.fixtureId,fixture.date??round.date,fixture.round??round.round,fixture.status,fixture.home,fixture.away,fixture.homePoints,fixture.awayPoints,fixture.homeRubbers,fixture.awayRubbers,fixture.homeGames,fixture.awayGames,'','','','','',''];
+    const base=['Fixture',D.meta.competition_label,D.meta.section_label,fixture.date??round.date,fixture.round??round.round,fixture.status,fixture.home,fixture.away,fixture.homePoints,fixture.awayPoints,fixture.homeRubbers,fixture.awayRubbers,fixture.homeGames,fixture.awayGames,'','','','','',''];
     rows.push(base);
-    for(const rubber of (fixture.rubbers||[]).slice().sort((a,b)=>(a.type==='Doubles'?0:1)-(b.type==='Doubles'?0:1)||String(a.position).localeCompare(String(b.position),undefined,{numeric:true})))rows.push(['Rubber',D.meta.competition_label,D.meta.section_label,fixture.fixtureId,fixture.date??round.date,fixture.round??round.round,fixture.status,fixture.home,fixture.away,fixture.homePoints,fixture.awayPoints,fixture.homeRubbers,fixture.awayRubbers,fixture.homeGames,fixture.awayGames,rubber.type,rubber.position,rubber.home,rubber.away,rubber.winner,rubber.score]);
+    for(const rubber of (fixture.rubbers||[]).slice().sort((a,b)=>(a.type==='Doubles'?0:1)-(b.type==='Doubles'?0:1)||String(a.position).localeCompare(String(b.position),undefined,{numeric:true})))rows.push(['Rubber',D.meta.competition_label,D.meta.section_label,fixture.date??round.date,fixture.round??round.round,fixture.status,fixture.home,fixture.away,fixture.homePoints,fixture.awayPoints,fixture.homeRubbers,fixture.awayRubbers,fixture.homeGames,fixture.awayGames,rubber.type,rubber.position,rubber.home,rubber.away,rubber.winner,rubber.score]);
   }
   const csv=rows.map(row=>row.map(csvCell).join(',')).join('\r\n');
   const filename=(D.meta.competition_label+'-'+D.meta.section_label+'-results').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'')+'.csv';
@@ -131,13 +131,13 @@ function renderChoice(id, options, selected){
 function currentCatalog(){return [...(DATA.catalog||[]),...(window.CustomSections?.catalog()||[])]}
 function setupSelectors(){
   const comps=[...new Map(viewCatalog.map(x=>[x.competition_code,sectionCompetitionLabel(x)])).entries()];
-  const saved=activeHistorySeasonId?historySectionCode():localStorage.getItem('brta-section'),available=viewCatalog.some(x=>x.section_code===saved);
+  const saved=activeHistorySeasonId?historySectionCode():(layoutDefaultCode()||localStorage.getItem('brta-section')),available=viewCatalog.some(x=>x.section_code===saved);
   const code=available?saved:(activeHistorySeasonId?viewCatalog[0]?.section_code:DATA.defaultSectionCode);
   const meta=viewCatalog.find(x=>x.section_code===code)||viewCatalog[0];
   if(!meta)return;
   renderChoice('competitionSelect',comps.map(([c,l])=>[c,String(l).replace(' - ',' · ')]),meta.competition_code);
   fillSections(meta.competition_code,code);
-  $('#sectionCount').textContent=viewCatalog.length+' section'+(viewCatalog.length===1?'':'s')+' available';
+
 }
 function fillSections(comp,selected){
   const list=viewCatalog.filter(x=>x.competition_code===comp);
@@ -153,17 +153,18 @@ async function loadSection(code,preloadedPayload=null){
     const dataPath=meta?.data_path||('data/site/sections/'+code+'.json');
     const payload=preloadedPayload||(meta?.is_custom?window.CustomSections.payload(code):await fetch(dataPath+'?v='+encodeURIComponent(DATA.globalSync.checkedAt||''),{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('Section data could not be loaded');return r.json()}));
     if(token!==loadingToken)return;
-    if(meta?.is_custom)ratingScope='section';ratingRound=null;D=meta?.is_custom?payload:normaliseTeamLabels(payload);singles=D.singles||[];dinds=D.doublesIndividuals||[];pairs=D.doubles||[];teams=D.teams||[];
+    if(meta?.is_custom)ratingScope='section';ratingRound=null;D=await layoutApplyModel(meta?.is_custom?payload:normaliseTeamLabels(payload));if(token!==loadingToken)return;singles=D.singles||[];dinds=D.doublesIndividuals||[];pairs=D.doubles||[];teams=D.teams||[];
     if(activeHistorySeasonId){const selection={seasonId:activeHistorySeasonId,sectionCode:code};localStorage.setItem('brta-history-selection',JSON.stringify(selection))}else localStorage.setItem('brta-section',code);
     resultRound=D.results?.[0]?.round??null;selectedMatch=null;selectedPrediction=null;activePredictionMatch=null;roundSimulations={};
     renderChoice('competitionSelect',[...new Map(viewCatalog.map(x=>[x.competition_code,sectionCompetitionLabel(x).replace(' - ',' · ')])).entries()],D.meta.competition_code);fillSections(D.meta.competition_code,code);
     $('#sectionSubtitle').textContent=D.meta.competition_label.replace(' - ',' · ')+' · '+D.meta.section_label;
-    window.CustomSections?.bindHeader(D.meta?.is_custom?code:null);renderAll();
-  }catch(error){$('#statusStrip').innerHTML='<div class="notice"><b>Could not load this section.</b><span>'+esc(error.message)+'</span></div>'}
+    window.CustomSections?.bindHeader(D.meta?.is_custom?code:null);renderAll();return true;
+  }catch(error){$('#statusStrip').innerHTML='<div class="notice"><b>Could not load this section.</b><span>'+esc(error.message)+'</span></div>';return false}
   finally{if(token===loadingToken)document.body.classList.remove('section-loading')}
 }
 
-function statusStrip(){const s=D.sync||{};if(D.meta?.is_custom){$('#statusStrip').innerHTML='<div><b>Section</b><span>Custom · this device</span></div><div><b>Saved</b><span>'+esc(fmtTime(s.checkedAt))+'</span></div><div><b>Latest round</b><span>'+esc(s.latestRound||'No results')+'</span></div><div><b>Source</b><span>Your scorecards</span></div>';return;}if(D.meta?.is_archive){$('#statusStrip').innerHTML='<div><b>Season</b><span>'+esc(D.meta.season_label||'Historical')+'</span></div><div><b>Source</b><span>Official TROLS archive</span></div><div><b>Latest record</b><span>'+esc(D.knockout?.grandFinal?'Grand final':D.knockout?.semifinals?.length?'Semifinals':(D.results?.[0]?.label||'Historical results'))+'</span></div><div><b>Data check</b><span class="status-ok">Validated</span></div>';return}const latestLabel=D.results?.[0]?.label||('Round '+(s.latestRound??D.roundOverview?.round??'—')),updateLabel=s.updatedAt?fmtTime(s.updatedAt):(s.newResultsLastCheck?'Updated in latest check':'No changes in latest check');$('#statusStrip').innerHTML='<div><b>Last checked</b><span>'+esc(fmtTime(s.checkedAt))+'</span></div><div><b>Results updated</b><span>'+esc(updateLabel)+'</span></div><div><b>Latest published round</b><span>'+esc(latestLabel)+'</span></div><div><b>Sync status</b><span class="status-ok">'+(s.validation==='passed'?'Up to date':s.sourceWarnings?.length?'Updated · source discrepancy':'Check needed')+'</span></div>'}
+function statusStrip(){const sync=D.sync||{},version=window.BRTAChangelog?.version||'8.0';$('#statusStrip').innerHTML='<div><b>Last checked</b><span>'+esc(fmtTime(sync.checkedAt))+'</span></div><button type="button" data-layout-open="history"><b>History</b><span>Browse seasons</span></button><button type="button" data-changelog-open><b>Version</b><span>'+esc(version)+'</span></button><button type="button" data-layout-settings><b>Rating model</b><span>'+(localStorage.getItem('brta-rating-model')||'RM3')+'</span></button>';}
+
 function showSyncToast(){const s=DATA.globalSync||{},check=s.checkedAt;if(!check||localStorage.getItem('brta-sync-toast-seen')===check)return;localStorage.setItem('brta-sync-toast-seen',check);const fresh=!!s.newResultsLastCheck,title=fresh?'Results refreshed':'Results checked',message=fresh?'Official results changed, so the ratings and match pages have been refreshed across Saturday and Sunday AM.':'The latest check found no new official results. Everything already published remains up to date.';const toast=document.createElement('div');toast.className='sync-toast '+(fresh?'updated':'checked');toast.innerHTML='<div class="sync-toast-icon">'+(fresh?'✓':'i')+'</div><div><b>'+title+'</b><p>'+message+'</p></div><button class="sync-toast-close" aria-label="Close update">×</button>';const end=()=>{toast.classList.add('leaving');setTimeout(()=>toast.remove(),220)};toast.querySelector('button').onclick=end;$('#syncToastHost').appendChild(toast);setTimeout(end,10000)}
 function teamOptions(){
   const selected=$('#teamFilter').value,names=[...new Set(singles.map(x=>x.team).filter(Boolean))].sort();
@@ -174,14 +175,15 @@ function teamOptions(){
 function overallData(){const sm=new Map(singles.map(x=>[x.player,x])),dm=new Map(dinds.map(x=>[x.player,x]));return[...new Set([...sm.keys(),...dm.keys()])].map(player=>{const s=sm.get(player),d=dm.get(player),both=s&&d;return{player,team:s?.team||d?.team||'',rating:both?Math.round((s.rating+d.rating)/2):(s?.rating||d?.rating||1500),se:both?Math.round(Math.hypot(s.se,d.se)/2):(s?.se||d?.se||0),s,d,qualified:!!(s&&s.matches>=4&&d&&d.qualified)}}).sort((a,b)=>b.rating-a.rating)}
 function currentRows(){const rows=BRTAHistory.withMovement(D,ratingView,ratingRound);return {rows,min:ratingView==='pairs'?2:ratingView==='overall'?0:4,type:ratingView==='singles'?'player':ratingView==='pairs'?'pair':ratingView}}
 function rankCell(row){const arrow=row.movement>0?'↑':row.movement<0?'↓':'';return '<span class="rank-position">'+(row.rank??'—')+(arrow?' <span class="rank-arrow '+(row.movement>0?'rank-up':'rank-down')+'" aria-label="Moved '+(row.movement>0?'up':'down')+' '+Math.abs(row.movement)+' spots">'+arrow+'</span>':'')+'</span>'}
-function movementCell(row){const n=row.movement,cls=n>0?'rank-up':n<0?'rank-down':'rank-still',text=n==null?(row.isNew?'New':'—'):n===0?'0':(n>0?'+':'')+n+' spots';return '<td class="rank-movement '+cls+'">'+text+'</td>'}
+function movementCell(row){const n=row.movement,cls=n>0?'rank-up':n<0?'rank-down':'rank-still',text=n==null?(row.isNew?'New':'—'):n===0?'0':(n>0?'+':'')+n;return '<td class="rank-movement '+cls+'">'+text+'</td>'+ratingChangeCell(row)}
 function ratingPerson(row){return ratingRound==null?personButton(row.player):'<button class="person" data-history-player="'+esc(row.player)+'" data-history-round="'+ratingRound+'">'+esc(row.player)+'</button>'}
 function renderRatingRoundNotice(){const box=$('#ratingRoundNotice');box.classList.toggle('hidden',ratingRound==null);box.innerHTML=ratingRound==null?'':'<div><b>After Round '+ratingRound+'</b><span>'+esc(historicalRoundDate(ratingRound))+' · '+esc(ratingInfo[ratingView][0])+'</span></div><button type="button" class="button secondary" data-rating-round="latest">Latest ratings</button>'}
 
 function ratingQualified(x,min,type){if(type==='overall')return x.qualified;if(type==='doublesPlayers')return!!x.qualified;return x.matches>=min}
-function bandModel(rows,min,type){const vals=rows.filter(x=>ratingQualified(x,min,type)).map(x=>x.rating).sort((a,b)=>a-b);if(!vals.length)return{classFor:()=>'',bounds:[]};const med=a=>a.length%2?a[(a.length-1)/2]:(a[a.length/2-1]+a[a.length/2])/2,M=med(vals),dev=vals.map(x=>Math.abs(x-M)).sort((a,b)=>a-b),S=1.4826*med(dev)||1,c=[1.5,.75,.2,-.35,-1,-1.65].map(z=>M+z*S),bounds=['≥ '+Math.round(c[0]),Math.round(c[1])+'–'+Math.round(c[0]-1),Math.round(c[2])+'–'+Math.round(c[1]-1),Math.round(c[3])+'–'+Math.round(c[2]-1),Math.round(c[4])+'–'+Math.round(c[3]-1),Math.round(c[5])+'–'+Math.round(c[4]-1),'< '+Math.round(c[5])];return{bounds,classFor:r=>r>=c[0]?'b0':r>=c[1]?'b1':r>=c[2]?'b2':r>=c[3]?'b3':r>=c[4]?'b4':r>=c[5]?'b5':'b6'}}
+function bandModel(rows,min,type){return BRTALayoutModel.bands(rows,x=>ratingQualified(x,min,type))}
+
 function renderBandInfo(model){$('#bandInfo').innerHTML=model.bounds.length?'<div class="band-info-head"><b>Performance bands</b></div><div class="band-keys">'+BAND_NAMES.map((n,i)=>'<div class="band-key b'+i+'"><i></i><span><b>'+n+'</b><small>'+model.bounds[i]+'</small></span></div>').join('')+'</div>':''}
-function bandDivider(cls,model,colspan=8){const i=Number(cls.slice(1));return'<tr class="band-divider '+cls+'"><td colspan="'+colspan+'"><div><i></i><b>'+BAND_NAMES[i]+'</b><span>'+model.bounds[i]+'</span></div></td></tr>'}
+function bandDivider(cls,model,colspan=10){const i=Number(cls.slice(1));return'<tr class="band-divider '+cls+'"><td colspan="'+colspan+'"><div><i></i><b>'+BAND_NAMES[i]+'</b><span>'+model.bounds[i]+'</span></div></td></tr>'}
 
 function archiveGlobalRowsFromSection(payload,section){
   const singlesByPlayer=new Map((payload.singles||[]).map(row=>[row.player,row])),doublesByPlayer=new Map((payload.doublesIndividuals||[]).map(row=>[row.player,row]));
@@ -208,6 +210,7 @@ function archiveGlobalRows(){
 function primeArchiveGlobalRows(){if(activeHistorySeasonId)archiveGlobalRows()}
 function globalRatingRows(rows=DATA.globalPlayers||[]){
   if(!activeHistorySeasonId&&window.CustomSections)rows=rows.concat(window.CustomSections.catalog().flatMap(meta=>archiveGlobalRowsFromSection(window.CustomSections.payload(meta.section_code),meta)));
+  rows=layoutSearchRatings(rows);
   if(ratingView==='singles')return rows.filter(x=>x.singlesRating!=null).map(x=>({...x,rating:x.singlesRating,se:x.singlesSe,matches:x.singlesMatches,wins:x.singlesWins,losses:x.singlesLosses,gf:x.singlesGf,ga:x.singlesGa,qualified:x.singlesMatches>=4,type:'player'}));
   if(ratingView==='doublesPlayers')return rows.filter(x=>x.doublesRating!=null).map(x=>({...x,rating:x.doublesRating,se:x.doublesSe,matches:x.doublesMatches,wins:x.doublesWins,losses:x.doublesLosses,gf:x.doublesGf,ga:x.doublesGa,qualified:x.doublesQualified,type:'doublesPlayers'}));
   if(ratingView==='overall')return rows.filter(x=>x.overallRating!=null).map(x=>({...x,rating:x.overallRating,se:x.overallSe,qualified:x.overallQualified,type:'overall'}));
@@ -290,7 +293,7 @@ function renderRatings(){
   renderRatingRoundNotice();if(ratingScope==='history'){cancelAuxiliaryReveal();renderHistoryPlayerSearch();return}if(ratingScope==='all'){cancelAuxiliaryReveal();renderGlobalRatings();return}
   $('#teamFilter').disabled=false;
   const [title,desc]=ratingInfo[ratingView];$('#ratingsTitle').textContent=title;$('#ratingsDesc').textContent=desc+(ratingRound==null?'':' After Round '+ratingRound+'.');
-  $('#ratingFilters').classList.remove('hidden');$('#ratingsHint').textContent=D.meta?.is_custom?'Rating model: '+(D.meta.ratingModel||'V3'):'';
+  $('#ratingFilters').classList.remove('hidden');$('#ratingsHint').textContent=D.meta?.is_custom?'Rating model: '+(D.meta.ratingModel==='V3B'?'RM3b':'RM3'):'';
   const {rows,min,type}=currentRows(),q=$('#search').value.toLowerCase(),tf=$('#teamFilter').value,band=bandModel(rows,min,type),derived=ratingRound==null?auxiliaryVisibleContext():null;
   renderBandInfo(band);
   let rank=0,out='',lastBand='';
@@ -298,17 +301,17 @@ function renderRatings(){
     const fading=auxiliaryFadeKey===auxiliarySignature()?' auxiliary-reveal':'';
     const godly=window.AuxiliaryModule.godlyThreshold(derived.row);
     $('#bandInfo').innerHTML='<div class="band-info-head"><b>Performance bands</b></div><div class="band-keys"><div class="band-key b0"><i></i><span><b>Godly</b><small>≥ '+godly+'</small></span></div>'+BAND_NAMES.map((n,i)=>'<div class="band-key b'+i+'"><i></i><span><b>'+n+'</b><small>'+band.bounds[i]+'</small></span></div>').join('')+'</div>';
-    out+='<tr class="band-divider b0"><td colspan="9"><div><i></i><b>Godly</b><span>≥ '+godly+'</span></div></td></tr>';
-    out+='<tr class="b0'+fading+'"><td>0</td><td>'+personButton(derived.row.player)+'</td><td>'+teamName(derived.row.team)+'</td><td><b>'+derived.row.rating+'</b></td><td>'+derived.row.wins+'–0</td><td>'+derived.row.gf+'–'+derived.row.ga+'</td><td>'+(derived.row.gf+derived.row.ga?(100*derived.row.gf/(derived.row.gf+derived.row.ga)).toFixed(1)+'%':'—')+'</td><td class="rank-movement rank-still">—</td><td>±'+derived.row.se+'</td></tr>';
+    out+='<tr class="band-divider b0"><td colspan="10"><div><i></i><b>Godly</b><span>≥ '+godly+'</span></div></td></tr>';
+    out+='<tr class="b0'+fading+'"><td>0</td><td>'+personButton(derived.row.player)+'</td><td>'+teamName(derived.row.team)+'</td><td><b>'+derived.row.rating+'</b></td><td>'+derived.row.wins+'–0</td><td>'+derived.row.gf+'–'+derived.row.ga+'</td><td>'+(derived.row.gf+derived.row.ga?(100*derived.row.gf/(derived.row.gf+derived.row.ga)).toFixed(1)+'%':'—')+'</td><td class="rank-movement rank-still">—</td><td>—</td><td>±'+derived.row.se+'</td></tr>';
   }
-  for(const x of rows){const qual=ratingQualified(x,min,type);if(qual)rank++;if(!qual&&!showProv&&ratingRound==null&&x.player!==focusedSearchPlayer)continue;if(q&&!x.player.toLowerCase().includes(q))continue;if(tf&&x.team!==tf)continue;const cls=qual?band.classFor(x.rating):'provisional';if(qual&&cls!==lastBand){out+=bandDivider(cls,band,type==='pair'?10:9);lastBand=cls}
+  for(const x of rows){const qual=ratingQualified(x,min,type);if(qual)rank++;if(!qual&&!showProv&&ratingRound==null&&x.player!==focusedSearchPlayer)continue;if(q&&!x.player.toLowerCase().includes(q))continue;if(tf&&x.team!==tf)continue;const cls=qual?band.classFor(x.rating):'provisional';if(qual&&cls!==lastBand){out+=bandDivider(cls,band,type==='pair'?11:10);lastBand=cls}
     const pct=x.gf+x.ga?(100*x.gf/(x.gf+x.ga)).toFixed(1)+'%':'—';
     if(type==='pair'){const pair=x.player.split(' / ').map(personButton).join('<span class="pair-sep"> / </span>'),effect=(x.pairEffect>=0?'+':'')+(x.pairEffect??0);out+='<tr class="'+cls+'"><td>'+rankCell(x)+'</td><td>'+pair+'</td><td>'+teamName(x.team)+'</td><td><b>'+x.rating+'</b></td><td>'+(x.individualAverage??'—')+'</td><td class="'+((x.pairEffect??0)>=0?'performance-above':'performance-below')+'">'+effect+'</td><td>'+(x.wins??'—')+'–'+(x.losses??'—')+'</td><td>'+x.matches+'</td>'+movementCell(x)+'<td>±'+x.se+'</td></tr>'}
     else if(type==='overall')out+='<tr class="'+cls+'"><td>'+rankCell(x)+'</td><td>'+ratingPerson(x)+'</td><td>'+teamName(x.team)+'</td><td><b>'+x.rating+'</b></td><td>'+(x.s?.rating??'—')+'</td><td>'+(x.d?.rating??'—')+'</td><td>'+(qual?'Ranked':'Provisional')+'</td>'+movementCell(x)+'<td>±'+x.se+'</td></tr>';
     else{const evidence=type==='doublesPlayers'?x.matches+' · '+x.partner_count+' partners · '+esc(x.ranking_status):pct;out+='<tr class="'+cls+'"><td>'+rankCell(x)+'</td><td>'+ratingPerson(x)+'</td><td>'+teamName(x.team)+'</td><td><b>'+x.rating+'</b></td><td>'+(x.wins??'—')+'–'+(x.losses??'—')+'</td><td>'+(x.gf??'—')+'–'+(x.ga??'—')+'</td><td>'+evidence+'</td>'+movementCell(x)+'<td>±'+x.se+'</td></tr>'}
   }
-  $('#ratingBody').innerHTML=out||'<tr><td colspan="'+(type==='pair'?10:9)+'">No matching entries.</td></tr>';
-  $('#ratingHead').innerHTML=type==='overall'?'<tr><th>#</th><th>Player</th><th>Team</th><th>Overall</th><th>Singles</th><th>Doubles</th><th>Status</th><th>Movement</th><th>Uncertainty</th></tr>':type==='pair'?'<tr><th>#</th><th>Pair</th><th>Team</th><th>Pair Power</th><th>Individual avg</th><th>Pair effect</th><th>W–L</th><th>Matches</th><th>Movement</th><th>Uncertainty</th></tr>':'<tr><th>#</th><th>Player</th><th>Team</th><th>Power</th><th>W–L</th><th>Games</th><th>'+(type==='doublesPlayers'?'Evidence':'Game %')+'</th><th>Movement</th><th>Uncertainty</th></tr>';
+  $('#ratingBody').innerHTML=out||'<tr><td colspan="'+(type==='pair'?11:10)+'">No matching entries.</td></tr>';
+  $('#ratingHead').innerHTML=type==='overall'?'<tr><th>#</th><th>Player</th><th>Team</th><th>Overall</th><th>Singles</th><th>Doubles</th><th>Status</th><th>Movement</th><th>Power Δ</th><th>Uncertainty</th></tr>':type==='pair'?'<tr><th>#</th><th>Pair</th><th>Team</th><th>Pair Power</th><th>Individual avg</th><th>Pair effect</th><th>W–L</th><th>Matches</th><th>Movement</th><th>Power Δ</th><th>Uncertainty</th></tr>':'<tr><th>#</th><th>Player</th><th>Team</th><th>Power</th><th>W–L</th><th>Games</th><th>'+(type==='doublesPlayers'?'Evidence':'Game %')+'</th><th>Movement</th><th>Power Δ</th><th>Uncertainty</th></tr>';
 }
 function teamInsight(team){return D.teamInsights?.[team]||{completedTies:0,lineupCount:0,lineupStability:null,lineups:[],pairs:[]}}
 function recordText(row){return row?(row.wins+'–'+row.losses+(row.draws?'–'+row.draws+' D':'')):'No recorded ties'}
@@ -351,7 +354,7 @@ function resultDetailHTML(match,contextPlayer=null){
   return head+(rows?'<div class="rubber-list">'+rows+'</div>':'<div class="notice">TROLS has not published an individual scorecard for this match.</div>')+historicalMatchContext(match,contextPlayer)
 }
 function openMatch(id,sourcePlayer=null){const match=findMatch(id);if(match){selectedMatch=id;switchPage('results');$('#resultContent').innerHTML=resultDetailHTML(match,sourcePlayer);$('#resultOverlay').classList.remove('hidden');document.body.classList.add('modal-open');return}if(auxiliaryPlayer(activeProfilePlayer))openAuxiliaryMatch(auxiliaryCache.matches.find(row=>row.fixtureId===id))}
-function renderFixtures(){
+function renderFixtureRounds(){
   const rounds=D.upcomingFixtures||[];
   $('#fixturesList').innerHTML=rounds.length?rounds.map(r=>'<section class="fixture-round"><div class="fixture-round-head"><h2>'+esc(roundHeading(r))+'</h2><div class="fixture-round-actions"><span>'+esc(roundDate(r.date))+'</span>'+(r.fixtures.some(f=>f.status==='Scheduled'&&!findFixtureResult(f,r.round))?'<button type="button" class="button secondary" data-simulate-round="'+esc(r.round)+'">Simulate round</button>':'')+'</div></div><div class="fixture-list">'+r.fixtures.map(f=>{
     if(f.status==='Bye')return byeCard(f);
@@ -662,7 +665,8 @@ function clubBaseName(value){
   while(name&&name!==previous){previous=name;name=name.replace(/\s+(?:no\.?\s*)?#?\d+\s*$/i,'').replace(new RegExp('\\s+(?:'+colours+')(?:s\\d+)?\\s*$','i'),'').replace(new RegExp('\\s+(?:'+partner+')#?\\s*$','i'),'').replace(new RegExp('\\s+(?:'+partner+')\\s*#?\\d+\\s*$','i'),'').trim()}
   return ({kptc:'Kings Park','kings park tc':'Kings Park','kings park tennis club':'Kings Park'})[name.toLowerCase()]||name;
 }
-function clubTeamButton(name){if(D.meta?.is_custom)return teamName(name);return '<button class="club-link" type="button" data-club-team="'+esc(name)+'">'+teamName(name)+'</button>'}
+function clubTeamButton(name){return teamName(name)}
+
 function sumClub(rows,key){return rows.reduce((total,row)=>total+(Number(row[key])||0),0)}
 function uniqueClubCount(rows,predicate){return new Set(rows.filter(predicate).map(row=>row.season_id+'|'+row.section_code)).size}
 function clubLabelStats(rows){const played=sumClub(rows,'played'),wins=sumClub(rows,'wins'),draws=sumClub(rows,'draws'),losses=sumClub(rows,'losses'),gamesFor=sumClub(rows,'games_for'),gamesAgainst=sumClub(rows,'games_against');return{played,wins,draws,losses,gamesFor,gamesAgainst,record:wins+'–'+draws+'–'+losses,winRate:played?Math.round(100*(wins+draws*.5)/played)+'%':'—',gameShare:gamesFor+gamesAgainst?Math.round(100*gamesFor/(gamesFor+gamesAgainst))+'%':'—'}}
@@ -756,28 +760,13 @@ async function openHistoryChoice(){
     const payload=await response.json();
     if(!payload?.meta?.is_archive)throw Error('The selected file is not a historical section.');
     activeHistorySeasonId=season.id;viewCatalog=historicalCatalog;localStorage.setItem('brta-history-selection',JSON.stringify({seasonId:season.id,sectionCode:section.section_code}));
-    setupSelectors();primeArchiveGlobalRows();close('#settingsOverlay');switchPage('results');await loadSection(section.section_code);
+    setupSelectors();primeArchiveGlobalRows();closeLayoutOverlay();close('#settingsOverlay');switchPage('results');await loadSection(section.section_code);
   }catch(error){
     if(info)info.textContent='Could not open this archive: '+error.message+' Your current section has not been changed.';
   }finally{if(button)button.disabled=false}
 }
-function goToCurrentSeason(){activeHistorySeasonId=null;viewCatalog=currentCatalog();localStorage.removeItem('brta-history-selection');const code=viewCatalog.some(x=>x.section_code===localStorage.getItem('brta-section'))?localStorage.getItem('brta-section'):DATA.defaultSectionCode;setupSelectors();close('#settingsOverlay');switchPage('results');loadSection(code)}
-function openSettings(){
-  const s=DATA.globalSync||{},classic=interfaceMode==='classic',palette=[['yellow','Tennis yellow'],['green','Green'],['blue','Blue'],['red','Red'],['purple','Purple'],['black','Black'],['white','White']],colourControls=classic?'':'<div class="accent-setting"><span><b>Colour scheme</b><small>Changes the complete Default interface palette.</small></span><div class="accent-picker">'+palette.map(([value,label])=>'<button type="button" class="accent-choice '+(accent===value?'selected':'')+'" data-accent-choice="'+value+'" aria-label="'+label+' colour scheme" title="'+label+'"><i></i><span>'+label+'</span></button>').join('')+'</div></div>';
-  $('#settingsContent').innerHTML=`<div class="overlay-title"><div class="kicker">SITE SETTINGS</div><h2>Settings</h2><p>Preferences are stored only on this device.</p></div>
-    ${window.BRTAChangelog?.settingsHTML()||''}
-    <div class="settings-grid">
-      <div class="settings-group"><h3>Section</h3><p>Your competition and section choice is remembered. Use the selectors above to change it.</p></div>
-      <div class="settings-group"><h3>Interface</h3><div class="interface-choice"><div><b>Website style</b><small>Both styles use the same data and features.</small></div><div class="segmented"><button id="futureModeBtn" class="${!classic?'selected':''}">Default</button><button id="classicModeBtn" class="${classic?'selected':''}">Classic</button></div></div></div>
-      <div class="settings-group"><h3>Display</h3><label class="setting-row"><span><b>Show provisional entries</b><small>Show below-threshold entries as unranked.</small></span><input class="custom-check" type="checkbox" id="provToggle" ${showProv?'checked':''}></label><label class="setting-row"><span><b>Theme</b></span><select id="themeSelect"><option value="auto">Automatic</option><option value="light">Light</option><option value="dark">Dark</option></select></label>${colourControls}<div class="setting-row lab-position"><span><b>Player Lab position</b><small>Choose where a player profile opens on larger screens.</small></span><div class="segmented"><button data-profile-position="right" class="${profilePosition==='right'?'selected':''}">Right</button><button data-profile-position="left" class="${profilePosition==='left'?'selected':''}">Left</button><button data-profile-position="center" class="${profilePosition==='center'?'selected':''}">Centre</button></div></div></div>
-      <div class="settings-group"><h3>BRTA sync</h3><div class="sync-box"><p><b>Last checked:</b> ${esc(fmtTime(s.checkedAt))}<br><b>Coverage:</b> ${esc(s.sections||DATA.catalog.length)} sections<br><b>Validation:</b> ${esc(s.validation||'—')}</p><a class="button primary" href="https://github.com/affluendo1/brta-power-ratings/actions/workflows/sync-trols.yml" target="_blank" rel="noopener">Check BRTA now</a></div></div>
-    </div>
-    <div class="settings-group settings-wide"><h3>Methodology</h3>${methodologyHTML()}</div>
-    <div class="settings-group settings-wide history-settings"><h3>History</h3><p>View a past Saturday or Sunday AM season using TROLS results, scorecards and final ladders.</p><div class="history-selects"><label>Competition<select id="historyCompetition"><option value="AA">Saturday AM</option><option value="UA">Sunday AM</option></select></label><label>Season<select id="historySeason"></select></label><label>Section<select id="historySection"></select></label></div><div class="history-info" id="historyInfo">Loading available seasons…</div><div class="history-actions"><button class="button primary" id="historyOpenBtn" type="button">View selected section</button><button class="button secondary" id="historyCurrentBtn" type="button">Return to current season</button></div></div>
-    <div class="settings-group settings-wide"><h3>BRTA rules used by the site</h3>${brtaRulesHTML()}</div>
-    <div class="settings-group settings-wide extras-access"><button id="showExtrasBtn" class="button secondary ${window.AuxiliaryPortal?.isUnlocked?.()?'hidden':''}" type="button">Show Extras</button><button id="hideExtrasBtn" class="button secondary ${window.AuxiliaryPortal?.isUnlocked?.()?'':'hidden'}" type="button">Hide Extras</button></div><div id="customAdminSettings" class="settings-group settings-wide hidden"></div>`;
-  $('#settingsOverlay').classList.remove('hidden');document.body.classList.add('modal-open');$('#themeSelect').value=theme;$('#provToggle').onchange=e=>{showProv=e.target.checked;localStorage.setItem('brta-show-provisional',showProv?'1':'0');renderRatings()};$('#themeSelect').onchange=e=>{theme=e.target.value;localStorage.setItem('brta-theme',theme);applyTheme()};$$('[data-accent-choice]').forEach(button=>button.onclick=()=>{accent=button.dataset.accentChoice;localStorage.setItem('brta-accent',accent);applyTheme();$$('[data-accent-choice]').forEach(x=>x.classList.toggle('selected',x===button))});$$('[data-profile-position]').forEach(button=>button.onclick=()=>{profilePosition=button.dataset.profilePosition;localStorage.setItem('brta-profile-position',profilePosition);applyProfilePosition();$$('[data-profile-position]').forEach(x=>x.classList.toggle('selected',x===button))});$('#exportModelAuditBtn').onclick=exportModelAudit;$('#classicModeBtn').onclick=()=>switchInterface('classic');$('#futureModeBtn').onclick=()=>switchInterface('future');hydrateHistorySettings();window.AuxiliaryPortal?.bindSettings?.();window.CustomSections?.bindSettings();window.MoreSettings?.bindSettings()
-}
+function goToCurrentSeason(){activeHistorySeasonId=null;viewCatalog=currentCatalog();localStorage.removeItem('brta-history-selection');const code=viewCatalog.some(x=>x.section_code===localStorage.getItem('brta-section'))?localStorage.getItem('brta-section'):DATA.defaultSectionCode;setupSelectors();closeLayoutOverlay();close('#settingsOverlay');switchPage('results');loadSection(code)}
+
 function applyProfilePosition(){$('#profileOverlay').dataset.position=profilePosition}
 function runModeTransition(complete,{title='Switching interface',message='Preparing layout…',variant='default',duration=500,randomProgress=false,statuses=[],quotes=[]}={}){
   const ov=$('#modeSwitchOverlay'),ring=$('#progressRing');ov.classList.toggle('royal-transition',variant==='royal');ov.classList.toggle('ms-void-transition',variant==='void');ov.querySelector('h2').textContent=title;$('#switchStatus').textContent=message;ring.style.setProperty('--progress','0deg');$('#progressPct').textContent='0%';ov.classList.remove('hidden');ov.setAttribute('data-ms-cutscene','');
@@ -796,7 +785,7 @@ function runModeTransition(complete,{title='Switching interface',message='Prepar
 function switchInterface(target){if(target===interfaceMode)return;runModeTransition(()=>{localStorage.setItem('brta-interface',target);location.reload()})}
 window.runBRTAInterfaceTransition=runModeTransition;
 window.BRTASitePreferences={getTheme:()=>theme,setTheme:value=>{theme=value;localStorage.setItem('brta-theme',value);applyTheme()}};
-function renderAll(){document.body.classList.toggle('custom-section',!!D.meta?.is_custom);$('#clubZoneBtn').classList.toggle('hidden',!!D.meta?.is_custom);if(D.meta?.is_custom){close('#clubPickerOverlay');close('#clubZoneOverlay');activeClubZone=null;}statusStrip();teamOptions();renderRatings();renderTeams();renderStandings();renderResults();renderFixtures();if(D.meta?.is_custom){$('#standingsCaveat').textContent='Custom scorecards on this device. Team points use the selected Sets or Rubbers format; tied points are ordered by games percentage.';$('#standingsNote').textContent='';}$('#roundBtn').textContent=D.roundOverview?(D.roundOverview.label||('Round '+D.roundOverview.round))+' overview':'Latest round'}
+function renderAll(){document.body.classList.toggle('custom-section',!!D.meta?.is_custom);$('#clubZoneBtn').classList.add('hidden');if(D.meta?.is_custom){close('#clubPickerOverlay');close('#clubZoneOverlay');activeClubZone=null;}statusStrip();teamOptions();renderRatings();renderTeams();renderStandings();renderResults();renderFixtures();$('#roundBtn').textContent=D.roundOverview?(D.roundOverview.label||('Round '+D.roundOverview.round))+' overview':'Latest round'}
 
 BRTATeamLabUI.configure({getData:()=>D,escape:esc,teamName,close,showTeams:()=>switchPage('teams'),openMatch:id=>{const page=activePage;openMatch(id);switchPage(page)}});
 
@@ -850,7 +839,7 @@ document.addEventListener('change',e=>{
 });
 function renderRatingOptions(){
   document.querySelectorAll('[data-search-scope]').forEach(button=>button.classList.toggle('selected',button.dataset.searchScope===ratingScope));
-  $('.ratings-history-options h3').textContent='Rating history · '+D.meta.section_label;const rounds=BRTAHistory.rounds(D,ratingView).slice().sort((a,b)=>b.round-a.round);
+  $('.ratings-history-options h3').textContent='Rating History ● '+D.meta.section_label;const rounds=BRTAHistory.rounds(D,ratingView).slice().sort((a,b)=>b.round-a.round);
   $('#ratingHistoryChoices').innerHTML='<button type="button" data-rating-round="latest" aria-pressed="'+(ratingRound==null)+'" class="'+(ratingRound==null?'selected':'')+'"><b>Latest ratings</b><span>Current standings</span></button>'+rounds.map(x=>'<button type="button" data-rating-round="'+x.round+'" aria-pressed="'+(ratingRound===Number(x.round))+'" class="'+(ratingRound===Number(x.round)?'selected':'')+'"><b>After Round '+x.round+'</b><span>'+esc(x.date)+'</span></button>').join('')+(!rounds.length?'<p class="small-note">Round history is not available for this rating view yet.</p>':'');
 }
 function selectRatingRound(value){ratingRound=value==='latest'?null:Number(value);if(ratingRound!=null){ratingScope='section';localStorage.setItem('brta-rating-scope','section')}renderRatings();close('#searchOptionsOverlay')}
@@ -860,7 +849,7 @@ function openSearchOptions(){if(!D)return;renderRatingOptions();$('#searchOption
 document.addEventListener('contextmenu',e=>{const schedule=e.target.closest('[data-sos-open]');if(schedule){e.preventDefault();openSchedule()}});
 $$('.main-tab').forEach(b=>b.onclick=()=>switchPage(b.dataset.page));
 document.querySelectorAll('.subtab').forEach(b=>b.onclick=()=>{ratingView=b.dataset.rating;if(ratingRound!=null&&!BRTAHistory.rounds(D,ratingView).some(x=>Number(x.round)===ratingRound))ratingRound=null;if(ratingView==='pairs'&&ratingScope!=='section'){ratingScope='section';localStorage.setItem('brta-rating-scope',ratingScope)}document.querySelectorAll('.subtab').forEach(x=>x.classList.toggle('active',x===b));renderRatings()});
-$('#search').oninput=renderRatings;$('#teamFilter').onchange=renderRatings;$('#clubZoneBtn').onclick=openClubPicker;$('#clubPickerOpen').onclick=openChosenClubZone;$('#clubPickerClose').onclick=()=>close('#clubPickerOverlay');$('#clubZoneClose').onclick=()=>close('#clubZoneOverlay');$('#roundBtn').onclick=openRound;$('#settingsBtn').onclick=openSettings;$('#exportSectionBtn').onclick=exportSectionCSV;
+$('#search').oninput=renderRatings;$('#teamFilter').onchange=renderRatings;$('#clubZoneBtn').onclick=openClubPicker;$('#clubPickerOpen').onclick=openChosenClubZone;$('#clubPickerClose').onclick=()=>close('#clubPickerOverlay');$('#clubZoneClose').onclick=()=>close('#clubZoneOverlay');$('#roundBtn').onclick=openRound;$('#settingsBtn').onclick=()=>openSettings();$('#exportSectionBtn').onclick=exportSectionCSV;
 $('#profileClose').onclick=()=>close('#profileOverlay');$('#roundClose').onclick=()=>close('#roundOverlay');$('#settingsClose').onclick=()=>close('#settingsOverlay');$('#resultClose').onclick=()=>close('#resultOverlay');
 $('#predictionClose').onclick=()=>close('#predictionOverlay');$('#lineupHistoryClose').onclick=()=>close('#lineupHistoryOverlay');$('#sosClose').onclick=()=>close('#sosOverlay');$('#rivalryClose').onclick=()=>close('#rivalryOverlay');$('#searchOptionsBtn').onclick=openSearchOptions;$('#searchOptionsClose').onclick=()=>close('#searchOptionsOverlay');
 document.addEventListener('keydown',e=>{if(e.key==='Escape')$$('.overlay:not(.hidden)').forEach(o=>close('#'+o.id))});
@@ -871,5 +860,5 @@ window.addEventListener('brta-module-toggle',()=>{
 });
 window.addEventListener('brta-custom-sections-change',()=>{if(activeHistorySeasonId)return;const code=D?.meta?.section_code;viewCatalog=currentCatalog();setupSelectors();if(code?.startsWith('local-')){if(viewCatalog.some(x=>x.section_code===code))loadSection(code);else loadSection(DATA.defaultSectionCode)}});
 window.addEventListener('brta-custom-section-open',e=>{activeHistorySeasonId=null;localStorage.removeItem('brta-history-selection');viewCatalog=currentCatalog();setupSelectors();close('#settingsOverlay');switchPage('results');loadSection(e.detail)});
-async function startApp(){applyProfilePosition();viewCatalog=currentCatalog();setupSelectors();showSyncToast();const saved=readHistorySelection();if(!saved){await loadSection(choiceValue('sectionSelect'));ensureHistoryCatalog();return}const catalog=await ensureHistoryCatalog(),season=catalog?.seasons.find(x=>x.id===saved.seasonId),section=season?.sections.find(x=>x.section_code===saved.sectionCode);if(season&&section){activeHistorySeasonId=season.id;viewCatalog=historySeasonSections(season);setupSelectors();primeArchiveGlobalRows();await loadSection(section.section_code)}else{activeHistorySeasonId=null;viewCatalog=currentCatalog();setupSelectors();await loadSection(choiceValue('sectionSelect'))}}
+async function startApp(){applyProfilePosition();viewCatalog=currentCatalog();setupSelectors();showSyncToast();const saved=readHistorySelection();if(!saved||layoutDefaultCode()){await loadSection(choiceValue('sectionSelect'));ensureHistoryCatalog();return}const catalog=await ensureHistoryCatalog(),season=catalog?.seasons.find(x=>x.id===saved.seasonId),section=season?.sections.find(x=>x.section_code===saved.sectionCode);if(season&&section){activeHistorySeasonId=season.id;viewCatalog=historySeasonSections(season);setupSelectors();primeArchiveGlobalRows();await loadSection(section.section_code)}else{activeHistorySeasonId=null;viewCatalog=currentCatalog();setupSelectors();await loadSection(choiceValue('sectionSelect'))}}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',startApp,{once:true});else startApp();

@@ -3,6 +3,7 @@
 
   const releases = root.BRTA_RELEASES;
   const latest = releases[0];
+  const parentRelease=releases.find(r=>['major','large'].includes(r.size))||latest,patches=releases.slice(0,releases.indexOf(parentRelease));
   let overlay;
   let returnFocus;
   let inertState = [];
@@ -54,9 +55,9 @@
       '<button id="changelog-latest-tab" type="button" role="tab" aria-selected="true" aria-controls="changelog-latest" data-changelog-tab="latest">Latest update</button>'+
       '<button id="changelog-history-tab" type="button" role="tab" aria-selected="false" aria-controls="changelog-history" tabindex="-1" data-changelog-tab="history">Full history</button></div>'+
       '<div class="changelog-panels"><div id="changelog-latest" role="tabpanel" aria-labelledby="changelog-latest-tab" tabindex="0">'+
-      '<article class="release-latest"><div class="release-latest-label">LATEST UPDATE</div><div class="release-heading"><h3>'+escape(latest.version)+'</h3>'+(latest.title?'<span>'+escape(latest.title)+'</span>':'')+'</div>'+time(latest)+points(latest)+'</article></div>'+
+      '<article class="release-latest"><div class="release-latest-label">LATEST UPDATE</div><div class="release-heading"><h3>'+escape(parentRelease.version)+'</h3>'+(parentRelease.title?'<span>'+escape(parentRelease.title)+'</span>':'')+'</div>'+time(parentRelease)+points(parentRelease)+patches.slice().reverse().map(r=>'<div class="release-patch"><b>'+escape(r.version)+'</b>'+time(r)+points(r)+'</div>').join('')+'</article></div>'+
       '<div id="changelog-history" role="tabpanel" aria-labelledby="changelog-history-tab" tabindex="0" hidden><p class="changelog-history-hint">Choose an update to see what changed.</p><div class="release-history">'+releases.map(release =>
-        '<details class="release-entry'+(release.title?' release-major':'')+'"><summary><span class="release-version">'+escape(release.version)+'</span><span class="release-name">'+escape(release.title||'')+'</span><span class="release-chevron" aria-hidden="true">⌄</span>'+time(release)+'</summary><div class="release-details">'+points(release)+'</div></details>'
+        '<details class="release-entry'+' release-'+release.size+'"><summary><span class="release-version">'+escape(release.version)+'</span><span class="release-name">'+escape(release.title||'')+'</span><span class="release-chevron" aria-hidden="true">⌄</span>'+time(release)+'</summary><div class="release-details">'+points(release)+'</div></details>'
       ).join('')+'</div></div></div></section>';
     document.body.appendChild(overlay);
     overlay.addEventListener('click', event => {

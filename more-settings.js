@@ -14,7 +14,7 @@
   const save=()=>localStorage.setItem(KEY,JSON.stringify(prefs));
   const wait=ms=>new Promise(resolve=>setTimeout(resolve,ms));
   const alive=id=>id===serial&&enabled();
-  function animate(element,frames,options){const animation=element.animate(frames,{fill:'forwards',...options});animations.add(animation);return animation.finished.catch(()=>{}).finally(()=>animations.delete(animation))}
+  function animate(element,frames,options){const animation=element.animate(frames,{fill:'both',...options});animations.add(animation);return animation.finished.catch(()=>{}).finally(()=>animations.delete(animation))}
   function clearScene(){serial++;for(const a of animations)a.cancel();animations.clear();clearInterval(pressureTimer);pressureTimer=null;pressureTarget=prefs.pressure;clearTimeout(crownTimer);panelHidden=false;overlay?.classList.remove('ms-panel-hidden','ms-crown-visible');busy=false;}
   function panel(title,body,close=false){return '<section class="settings-sheet ms-sheet" role="dialog" aria-modal="true" aria-labelledby="msTitle">'+(close?'<button class="close-btn" type="button" data-ms="close" aria-label="Close">×</button>':'')+'<div class="overlay-title"><div class="kicker">MORE SETTINGS</div><h2 id="msTitle">'+title+'</h2></div>'+body+'</section>'}
   function ensure(){if(overlay)return;overlay=document.createElement('div');overlay.id='moreSettingsOverlay';overlay.className='overlay hidden ms-overlay';overlay.setAttribute('data-ms-cutscene','');document.body.append(overlay);overlay.addEventListener('pointerover',event=>{if(event.target.closest('[data-ms="dodge"]'))dodge();if(event.target.closest('[data-ms="confirm-no"]')&&step===7)swapConfirmation()});overlay.addEventListener('pointerdown',event=>{if(event.pointerType!=='mouse'&&event.target.closest('[data-ms="dodge"]')){event.preventDefault();dodge()}});overlay.addEventListener('click',click);overlay.addEventListener('change',change);overlay.addEventListener('input',input);}
@@ -26,24 +26,22 @@
   async function shuffle(){
     clearScene();phase='shuffle';overlay.setAttribute('data-ms-cutscene','');const id=serial;
     overlay.innerHTML='<div class="ms-game" role="dialog" aria-modal="true" aria-labelledby="msTitle"><h2 id="msTitle">Keep your eye on it.</h2><p class="ms-game-status" aria-live="polite">Just one button.</p><div class="ms-cup-table"></div><button class="ms-game-exit close-btn hidden" data-ms="back" type="button" aria-label="Return">×</button></div>';
-    const table=$('.ms-cup-table'),cups=[];let slots=Array.from({length:15},(_,i)=>i<5?i+5:i<10?i-5:i);
-    function place(cup,slot){const point=M.cupPoint(slot,100,100);cup.style.left=point.x+'%';cup.style.top=point.y+'%';}
-    function makeCup(i){const cup=document.createElement('div');cup.className='ms-cup';cup.dataset.cup=String(i);cup.setAttribute('role','button');cup.setAttribute('aria-label','Cup '+(i+1));cup.tabIndex=-1;place(cup,slots[i]);cup.innerHTML='<span class="ms-cover"></span>';table.append(cup);cups.push(cup);return cup;}
+    const table=$('.ms-cup-table'),cups=[];const size=Math.max(24,Math.min(72,Math.min(table.clientWidth*.42,table.clientHeight*.35)*2*Math.sin(Math.PI/15)*.66));table.style.setProperty('--cup-size',size+'px');let slots=Array.from({length:15},(_,i)=>i<5?i+5:i<10?i-5:i);
+    function place(cup,slot){const point=M.cupPoint(slot,100,100);cup.style.left=point.x+'%';cup.style.top=point.y+'%';const angle=slot/15*Math.PI*2;cup.style.setProperty('--lift-x',Math.cos(angle)*75+'px');cup.style.setProperty('--lift-y',Math.sin(angle)*75+'px');}
+    function makeCup(i){const cup=document.createElement('div');cup.className='ms-cup';cup.dataset.cup=String(i);cup.setAttribute('role','button');cup.setAttribute('aria-label','Cup '+(i+1));cup.tabIndex=-1;place(cup,slots[i]);cup.innerHTML='<span class="ms-cover"></span>';cup.style.opacity='0';table.append(cup);cups.push(cup);return cup;}
     for(let i=0;i<5;i++)makeCup(i);
     const prize=document.createElement('button');prize.className='ms-circle ms-prize';prize.textContent='↗';prize.disabled=true;prize.type='button';prize.dataset.ms='prize';prize.setAttribute('aria-label','Open more settings');cups[2].append(prize);
     cups.forEach((cup,i)=>{cup.style.opacity=i===2?'1':'0';if(i===2)cup.classList.add('ms-lifted')});
     await wait(reduced.matches?200:1100);if(!alive(id))return;cups[2].classList.remove('ms-lifted');$('.ms-game-status').textContent='Under this one. Obviously.';
     await wait(reduced.matches?100:650);if(!alive(id))return;
-    await Promise.all(cups.map((cup,i)=>animate(cup,[{opacity:i===2?1:0,transform:'translateX('+((i-2)*140)+'px)'},{opacity:1,transform:'translateX(0)'}],{duration:reduced.matches?1:800,easing:'cubic-bezier(.22,.65,.25,1)'})));if(!alive(id))return;
+    await Promise.all(cups.map((cup,i)=>animate(cup,[{opacity:i===2?1:0,transform:'scale(.8)'},{opacity:1,transform:'translateX(0)'}],{duration:reduced.matches?1:800,easing:'cubic-bezier(.22,.65,.25,1)'})));if(!alive(id))return;
     await wait(1000);if(!alive(id))return;
     const extra=Array.from({length:10},(_,i)=>makeCup(i+5));
     await Promise.all(extra.map((cup,i)=>animate(cup,[{opacity:0,transform:'translateY('+((i<5?-1:1)*innerHeight*.7)+'px)'},{opacity:1,transform:'translateY(0)'}],{duration:reduced.matches?1:1000,delay:reduced.matches?0:(i%5)*55,easing:'cubic-bezier(.22,.65,.25,1)'})));if(!alive(id))return;
     $('.ms-game-status').textContent='A few more won’t hurt.';await wait(reduced.matches?100:650);if(!alive(id))return;
-    const speeds=[1700,1450,1200,950,720,530,370,250,165,110,75,50,35,28,25,25,25,30,45,65,100,160,260,420,650,950];
-    if(!reduced.matches)for(let round=0;round<speeds.length;round++){
-      const next=M.shuffled(slots);
-      await Promise.all(cups.map((cup,i)=>{const frames=M.cupPath(slots[i],next[i],table.clientWidth,table.clientHeight);place(cup,next[i]);return animate(cup,frames,{duration:speeds[round],easing:'linear'})}));slots=next;if(!alive(id))return;
-    }else{slots=M.shuffled(slots);cups.forEach((cup,i)=>place(cup,slots[i]));}
+    // One continuous compositor animation: no per-move promise gap or collision-prone crossings.
+    if(!reduced.matches){await Promise.all(cups.map((cup,i)=>animate(cup,M.cupOrbit(slots[i],table.clientWidth,table.clientHeight),{duration:14000,easing:'linear'})));}
+    if(!alive(id))return;cups.forEach(cup=>{cup.style.opacity='1';cup.getAnimations().forEach(a=>a.cancel());});
     if(!alive(id))return;phase='choose';$('.ms-game-status').textContent='Which one?';cups.forEach(cup=>cup.tabIndex=0);cups[slots.indexOf(0)].focus();
     table.addEventListener('click',event=>{const cup=event.target.closest('.ms-cup');if(cup&&phase==='choose')choose(cup,cups,prize,id)});
     table.addEventListener('keydown',event=>{if((event.key==='Enter'||event.key===' ')&&event.target.matches('.ms-cup')&&phase==='choose'){event.preventDefault();choose(event.target,cups,prize,id)}});
@@ -62,12 +60,10 @@
   }
   async function celebrate(id){
     const gong=new Audio('assets/gong.mp3');gong.playbackRate=.58;gong.preservesPitch=false;gong.webkitPreservesPitch=false;gong.volume=.75;gong.play().catch(()=>{});
-    const storm=document.createElement('div');storm.className='ms-confetti-storm';storm.setAttribute('aria-hidden','true');overlay.append(storm);
-    await root.BRTAConfetti.burst(storm,{count:500,slow:4});if(!alive(id)){storm.remove();return;}
-    await wait(reduced.matches?100:650);if(!alive(id)){storm.remove();return;}
-    await root.BRTAConfetti.burst(storm,{count:1,slow:1.7,tiny:true});storm.remove();
+    await root.BRTAConfetti.cups(overlay,{reduced:reduced.matches,isActive:()=>alive(id)});
   }
-  function voidBackground(){return '<div class="ms-void-background" aria-hidden="true"><div class="ms-void-glow"></div><svg class="ms-void-sea" viewBox="0 0 1600 700" preserveAspectRatio="none"><defs><linearGradient id="msSeaFade" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#34303e" stop-opacity=".2"/><stop offset="100%" stop-color="#000" stop-opacity="0"/></linearGradient></defs>'+Array.from({length:6},(_,i)=>'<path style="--wave:'+i+'" d="M-300 '+(200+i*32)+' C150 '+(70+i*25)+' 350 '+(360-i*10)+' 800 '+(210+i*24)+' S1350 '+(80+i*30)+' 1900 '+(240+i*28)+' L1900 900 L-300 900Z"/>').join('')+'</svg><svg class="ms-void-crown" viewBox="0 0 100 70"><path d="M12 15 31 36 50 7 69 36 88 15 78 58H22Z"/><path d="M23 64H77"/><circle cx="50" cy="7" r="3"/><circle cx="12" cy="15" r="3"/><circle cx="88" cy="15" r="3"/></svg></div>';}
+
+  function voidBackground(){return '<div class="ms-void-background" aria-hidden="true"><div class="ms-void-glow"></div><div class="ms-void-sea"><i></i><i></i><i></i></div><svg class="ms-void-crown" viewBox="0 0 100 70"><path d="M12 15 31 36 50 7 69 36 88 15 78 58H22Z"/><path d="M23 64H77"/><circle cx="50" cy="7" r="3"/><circle cx="12" cy="15" r="3"/><circle cx="88" cy="15" r="3"/></svg></div>';}
   async function hidePanel(){
     if(phase!=='void'||panelHidden)return;panelHidden=true;overlay.classList.add('ms-panel-hidden');const sheet=overlay.querySelector('.ms-sheet');sheet.inert=true;$('.ms-show-panel').classList.remove('hidden');$('.ms-show-panel').focus();const id=serial;
     crownTimer=setTimeout(()=>{if(alive(id)&&phase==='void'&&panelHidden)overlay.classList.add('ms-crown-visible')},5850);
@@ -75,9 +71,8 @@
   function showPanel(){if(phase!=='void')return;panelHidden=false;clearTimeout(crownTimer);overlay.classList.remove('ms-panel-hidden','ms-crown-visible');overlay.querySelector('.ms-sheet').inert=false;$('.ms-show-panel').classList.add('hidden');$('[data-ms="hide-panel"]').focus({preventScroll:true});}
   function voidSettings(){
     clearScene();phase='void';overlay.removeAttribute('data-ms-cutscene');document.documentElement.setAttribute('data-ms-void','');
-    overlay.innerHTML=voidBackground()+'<button class="button secondary ms-show-panel hidden" data-ms="show-panel" type="button">Show panel ↓</button>'+panel('More Settings',
-      '<button class="button secondary ms-hide-panel" data-ms="hide-panel" type="button">Hide panel ↑</button>'+
-      '<div class="settings-group"><label class="setting-row"><span><b>Black +</b><small>Add this theme to the normal theme selection.</small></span><input type="checkbox" data-ms-pref="black" '+(prefs.black?'checked':'')+'></label></div>'+
+    overlay.innerHTML=voidBackground()+'<button class="button secondary ms-show-panel hidden" data-ms="show-panel" type="button">Show panel ↓</button>'+'<button class="button secondary ms-hide-panel" data-ms="hide-panel" type="button">Hide panel ↑</button>'+panel('More Settings',
+      '<div class="settings-group"><h3>Extra theme</h3><label class="accent-choice ms-black-swatch '+(prefs.black?'selected':'')+'"><i></i><span>Black +</span><input type="checkbox" data-ms-pref="black" '+(prefs.black?'checked':'')+' aria-label="Add Black + theme"></label></div>'+
       '<div class="settings-group ms-pressure" data-ms-pressure><h3>Change Atmospheric Pressure</h3><div class="ms-pressure-controls"></div><button class="ms-pressure-secret" data-ms="hint" type="button">There must be another way.</button><button class="button secondary '+(pressureModeRevealed?'':'hidden')+'" data-ms="slider" type="button">'+(slider?'Display as dropdown':'Display as slider')+'</button></div>'+
       '<div class="settings-group"><label class="setting-row"><span><b>Kâvąc</b><small>Translate the entire website.</small></span><input type="checkbox" data-ms-pref="language" '+(prefs.language?'checked':'')+'></label></div>'+
       '<div class="settings-group"><button class="button secondary" data-ms="admin" type="button">Gain Administrative Powers</button></div>'+
@@ -108,7 +103,8 @@
     await wait(900+Math.random()*700);if(!alive(id))return;
     overlay.innerHTML=voidBackground()+panel('Confirmation',
       '<div class="ms-confirmation '+(step===7?'ms-confirmation-wide':'')+'"><p>'+esc(item.text)+'</p>'+(item.phrase?'<input class="ms-confirm-input" type="text" autocomplete="off" spellcheck="false" data-ms-confirm aria-label="Confirmation phrase">':'')+'<div class="ms-confirm-actions"><button class="button primary" type="button" data-ms="confirm-yes" disabled>'+esc(item.yes)+'</button>'+(item.no?'<button class="button secondary" type="button" data-ms="confirm-no" disabled>'+esc(item.no)+'</button>':'')+'</div></div>');
-    await animate(overlay.querySelector('.ms-sheet'),[{opacity:0,translate:'0 18px'},{opacity:1,translate:'0 0'}],{duration:reduced.matches?1:320,easing:'ease-out'});await wait(350);if(!alive(id))return;
+    const arriving=overlay.querySelector('.ms-sheet');arriving.style.opacity='0';
+    await animate(arriving,[{opacity:0,translate:'0 18px'},{opacity:1,translate:'0 0'}],{duration:reduced.matches?1:320,easing:'ease-out'});await wait(350);if(!alive(id))return;
     phase='confirm';$('[data-ms="confirm-yes"]').disabled=!!item.phrase&&$('[data-ms-confirm]').value!==item.phrase;const no=$('[data-ms="confirm-no"]');if(no)no.disabled=false;overlay.querySelector('input,button').focus();E.refresh();
   }
   function swapConfirmation(){if(phase!=='confirm'||step!==7||busy)return;busy=true;$('.ms-confirm-actions').classList.toggle('ms-confirm-swapped');setTimeout(()=>busy=false,100);}
@@ -137,7 +133,7 @@
     if(action==='return'&&phase==='void')longReturn();
   }
   function input(event){if(event.target.matches('[data-ms-confirm]')){$('[data-ms="confirm-yes"]').disabled=phase!=='confirm'||event.target.value!==M.confirmations[step].phrase;return;}if(event.target.matches('[data-ms-range]')){const target=Number(event.target.value)/100;event.target.value=String(Math.round(prefs.pressure*100));setPressureTarget(target);}}
-  function change(event){const key=event.target.dataset.msPref;if(!key)return;prefs[key]=key==='inverted'?event.target.value==='inverted':event.target.checked;save();applyPreferences();if(key==='narrator'&&prefs.narrator)speak('Narrator enabled.',true);}
+  function change(event){const key=event.target.dataset.msPref;if(!key)return;if(key==='black')event.target.closest('.ms-black-swatch')?.classList.toggle('selected',event.target.checked);prefs[key]=key==='inverted'?event.target.value==='inverted':event.target.checked;save();applyPreferences();if(key==='narrator'&&prefs.narrator)speak('Narrator enabled.',true);}
   function syncThemeOptions(){
     const available=enabled()&&prefs.black;if(!available&&root.BRTASitePreferences?.getTheme()==='black-plus')root.BRTASitePreferences.setTheme('dark');
     const select=$('#themeSelect');if(!select)return;

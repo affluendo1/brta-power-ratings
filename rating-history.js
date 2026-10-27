@@ -30,9 +30,11 @@
   function withMovement(data,view,round=null){
     const calendar=rounds(data,view).map(x=>Number(x.round)).sort((a,b)=>a-b),target=round==null?calendar.at(-1):Number(round);
     const previousRound=calendar.filter(x=>x<target).at(-1);
-    const previous=new Map(previousRound==null?[]:ranked(rowsAt(data,view,previousRound),view).filter(x=>x.rank!=null).map(x=>[x.player,x.rank]));
+    const previous=new Map(previousRound==null?[]:ranked(rowsAt(data,view,previousRound),view).filter(x=>x.rank!=null).map(x=>[x.player,x]));
+    const previousRatings=new Map(previousRound==null?[]:rowsAt(data,view,previousRound).map(x=>[x.player,x.rating]));
     return ranked(rowsAt(data,view,round),view).map(row=>({...row,
-      movement:row.rank!=null&&previous.has(row.player)?previous.get(row.player)-row.rank:null,
+      movement:row.rank!=null&&previous.has(row.player)?previous.get(row.player).rank-row.rank:null,
+      ratingChange:previousRatings.has(row.player)?row.rating-previousRatings.get(row.player):null,
       isNew:row.rank!=null&&previousRound!=null&&!previous.has(row.player),previousRound}));
   }
   const api={rowsAt,rounds,ranked,withMovement,qualified};
