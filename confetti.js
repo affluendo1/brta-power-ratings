@@ -34,7 +34,7 @@
     const run=count=>new Promise(resolve=>{const particles=Array.from({length:count},()=>trajectory(width,height,count===5)),start=performance.now();
       function frame(now){if(!isActive()){resolve();return}ctx.clearRect(0,0,width,height);let active=false;for(const p of particles){const t=(now-start-p.delay)/p.duration;if(t<0){active=true;continue}if(t>=1)continue;active=true;const x=width*.5+(p.target-width*.5)*t,y=p.start+p.v*t+p.g*t*t;ctx.save();ctx.translate(x,y);ctx.rotate(p.rotation+p.spin*t);ctx.fillStyle=p.color;ctx.fillRect(-p.size/2,-p.size,p.size,p.size*1.6);ctx.restore()}if(active)requestAnimationFrame(frame);else{ctx.clearRect(0,0,width,height);resolve()}}requestAnimationFrame(frame);
     });
-    await run(200);if(isActive()){await new Promise(resolve=>setTimeout(resolve,1000));if(isActive())await run(5)}canvas.remove();
+    await run(500);if(isActive()){await new Promise(resolve=>setTimeout(resolve,1000));if(isActive())await run(5)}canvas.remove();
   }
   root.BRTAConfetti=Object.freeze({create,burst,cups,trajectory});
 })(window);

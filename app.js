@@ -773,14 +773,15 @@ function runModeTransition(complete,{title='Switching interface',message='Prepar
   let tip;if(quotes.length){tip=document.createElement('p');tip.className='mode-switch-tip';tip.textContent=quotes[0];ov.querySelector('.mode-switch-box').prepend(tip);}
   const start=performance.now(),total=Math.max(100,duration),milestones=randomProgress?window.MoreSettingsModel.progressPlan(total):null;
   if(milestones)for(let i=1;i<milestones.length;i++)milestones[i].value=Math.max(milestones[i-1].value,milestones[i].value);
-  let lastQuote=0,lastStatus=0;
+  const endGame=randomProgress?window.BRTAWaitingGame?.mount(ov):null;
+  let lastQuote=0,lastStatus=0,shown=0;
   const timer=setInterval(()=>{const elapsed=performance.now()-start;let p;
-    if(randomProgress){p=milestones.filter(point=>point.at<=elapsed).at(-1).value;}else p=Math.min(100,Math.floor(elapsed/total*100));
-    ring.style.setProperty('--progress',p*3.6+'deg');$('#progressPct').textContent=p+'%';
+    if(randomProgress){p=window.MoreSettingsModel.progressAt(milestones,elapsed);}else p=Math.min(100,Math.floor(elapsed/total*100));
+    if(randomProgress){shown=Math.min(100,shown+Number(Math.floor(p)>shown));ring.style.setProperty('--progress',Math.min(p,shown+.999)*3.6+'deg');$('#progressPct').textContent=shown+'%';}else{ring.style.setProperty('--progress',p*3.6+'deg');$('#progressPct').textContent=p+'%';}
     const quote=Math.floor(elapsed/5000);if(tip&&quote!==lastQuote){lastQuote=quote;tip.textContent=quotes[quote%quotes.length];tip.style.animation='none';void tip.offsetWidth;tip.style.animation='';}
     const status=Math.floor(elapsed/3500);if(statuses.length&&status!==lastStatus){lastStatus=status;$('#switchStatus').textContent=statuses[status%statuses.length];}
-    if(elapsed>=total){clearInterval(timer);$('#progressPct').textContent='100%';ring.style.setProperty('--progress','360deg');setTimeout(()=>{try{complete()}finally{ov.classList.add('hidden');ov.classList.remove('royal-transition','ms-void-transition');tip?.remove();}},150);}
-  },randomProgress?100:20);
+    if(elapsed>=total&&(!randomProgress||shown===100)){clearInterval(timer);endGame?.();$('#progressPct').textContent='100%';ring.style.setProperty('--progress','360deg');setTimeout(()=>{try{complete()}finally{ov.classList.add('hidden');ov.classList.remove('royal-transition','ms-void-transition');tip?.remove();}},150);}
+  },randomProgress?16:20);
 }
 function switchInterface(target){if(target===interfaceMode)return;runModeTransition(()=>{localStorage.setItem('brta-interface',target);location.reload()})}
 window.runBRTAInterfaceTransition=runModeTransition;

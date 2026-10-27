@@ -26,23 +26,27 @@
   async function shuffle(){
     clearScene();phase='shuffle';overlay.setAttribute('data-ms-cutscene','');const id=serial;
     overlay.innerHTML='<div class="ms-game" role="dialog" aria-modal="true" aria-labelledby="msTitle"><h2 id="msTitle">Keep your eye on it.</h2><p class="ms-game-status" aria-live="polite">Just one button.</p><div class="ms-cup-table"></div><button class="ms-game-exit close-btn hidden" data-ms="back" type="button" aria-label="Return">×</button></div>';
-    const table=$('.ms-cup-table'),cups=[];const size=Math.max(24,Math.min(72,Math.min(table.clientWidth*.42,table.clientHeight*.35)*2*Math.sin(Math.PI/15)*.66));table.style.setProperty('--cup-size',size+'px');let slots=Array.from({length:15},(_,i)=>i<5?i+5:i<10?i-5:i);
+    const table=$('.ms-cup-table'),cups=[];const size=Math.max(24,Math.min(72,Math.min(table.clientWidth*.42,table.clientHeight*.35)*2*Math.sin(Math.PI/15)*.66));table.style.setProperty('--cup-size',size+'px');let slots=[8,11,14,...Array.from({length:15},(_,i)=>i).filter(i=>![8,11,14].includes(i))];
     function place(cup,slot){const point=M.cupPoint(slot,100,100);cup.style.left=point.x+'%';cup.style.top=point.y+'%';const angle=slot/15*Math.PI*2;cup.style.setProperty('--lift-x',Math.cos(angle)*75+'px');cup.style.setProperty('--lift-y',Math.sin(angle)*75+'px');}
     function makeCup(i){const cup=document.createElement('div');cup.className='ms-cup';cup.dataset.cup=String(i);cup.setAttribute('role','button');cup.setAttribute('aria-label','Cup '+(i+1));cup.tabIndex=-1;place(cup,slots[i]);cup.innerHTML='<span class="ms-cover"></span>';cup.style.opacity='0';table.append(cup);cups.push(cup);return cup;}
-    for(let i=0;i<5;i++)makeCup(i);
-    const prize=document.createElement('button');prize.className='ms-circle ms-prize';prize.textContent='↗';prize.disabled=true;prize.type='button';prize.dataset.ms='prize';prize.setAttribute('aria-label','Open more settings');cups[2].append(prize);
-    cups.forEach((cup,i)=>{cup.style.opacity=i===2?'1':'0';if(i===2)cup.classList.add('ms-lifted')});
-    await wait(reduced.matches?200:1100);if(!alive(id))return;cups[2].classList.remove('ms-lifted');$('.ms-game-status').textContent='Under this one. Obviously.';
-    await wait(reduced.matches?100:650);if(!alive(id))return;
-    await Promise.all(cups.map((cup,i)=>animate(cup,[{opacity:i===2?1:0,transform:'scale(.8)'},{opacity:1,transform:'translateX(0)'}],{duration:reduced.matches?1:800,easing:'cubic-bezier(.22,.65,.25,1)'})));if(!alive(id))return;
-    await wait(1000);if(!alive(id))return;
-    const extra=Array.from({length:10},(_,i)=>makeCup(i+5));
-    await Promise.all(extra.map((cup,i)=>{const point=M.cupPoint(slots[i+5],table.clientWidth,table.clientHeight);return animate(cup,[{opacity:0,transform:'translate('+((point.x-table.clientWidth/2)*1.8)+'px,'+((point.y-table.clientHeight/2)*1.8)+'px)'},{opacity:1,transform:'translate(0,0)'}],{duration:reduced.matches?1:1000,delay:reduced.matches?0:(i%5)*55,easing:'cubic-bezier(.22,.65,.25,1)'})}));if(!alive(id))return;
+    for(let i=0;i<3;i++)makeCup(i);
+    const large=Math.min(140,table.clientWidth*.22),starts=cups.map((cup,i)=>({x:table.clientWidth/2+(i-1)*large*1.6,y:table.clientHeight*.5-large/2}));
+    cups.forEach((cup,i)=>{cup.style.width=large+'px';cup.style.height=large+'px';cup.style.left=starts[i].x+'px';cup.style.top=starts[i].y+'px';cup.style.opacity='1';cup.style.setProperty('--lift-x','0px');cup.style.setProperty('--lift-y',-large+'px');});
+    const prize=document.createElement('button');prize.className='ms-circle ms-prize';prize.textContent='↗';prize.disabled=true;prize.type='button';prize.dataset.ms='prize';prize.setAttribute('aria-label','Open more settings');cups[1].append(prize);cups[1].classList.add('ms-lifted');
+    await wait(reduced.matches?150:1100);if(!alive(id))return;cups[1].classList.remove('ms-lifted');$('.ms-game-status').textContent='Under this one. Obviously.';
+    await wait(reduced.matches?100:750);if(!alive(id))return;
+    await Promise.all(cups.map((cup,i)=>{const start=starts[i];place(cup,slots[i]);cup.style.width=size+'px';cup.style.height=size+'px';const end=M.cupPoint(slots[i],table.clientWidth,table.clientHeight);return animate(cup,[{transform:'translate('+(start.x-end.x)+'px,'+(start.y-end.y)+'px)',width:large+'px',height:large+'px'},{transform:'translate(0,0)',width:size+'px',height:size+'px'}],{duration:reduced.matches?1:1800,easing:'cubic-bezier(.4,0,.2,1)'})}));if(!alive(id))return;
+    const extra=Array.from({length:12},(_,i)=>makeCup(i+3));
+    await Promise.all(extra.map((cup,i)=>{const point=M.cupPoint(slots[i+3],table.clientWidth,table.clientHeight);return animate(cup,[{opacity:0,transform:'translate('+((point.x-table.clientWidth/2)*1.8)+'px,'+((point.y-table.clientHeight/2)*1.8)+'px)'},{opacity:1,transform:'translate(0,0)'}],{duration:reduced.matches?1:1100,delay:reduced.matches?0:i*55,easing:'cubic-bezier(.22,.65,.25,1)'})}));if(!alive(id))return;
     $('.ms-game-status').textContent='A few more won’t hurt.';await wait(reduced.matches?100:650);if(!alive(id))return;
     // One continuous compositor animation: no per-move promise gap or collision-prone crossings.
-    if(!reduced.matches){await Promise.all(cups.map((cup,i)=>animate(cup,M.cupOrbit(slots[i],table.clientWidth,table.clientHeight),{duration:14000,easing:'linear'})));}
+    if(!reduced.matches){
+      const rotation=Math.random()*15,remask=setTimeout(()=>{if(alive(id))M.shuffled(cups)[0].append(prize)},10500);
+      await Promise.all(cups.map((cup,i)=>animate(cup,M.cupOrbit(slots[i],table.clientWidth,table.clientHeight,rotation),{duration:22000,easing:'linear'})));clearTimeout(remask);
+      slots=slots.map(slot=>slot+rotation);cups.forEach((cup,i)=>place(cup,slots[i]));
+    }
     if(!alive(id))return;cups.forEach(cup=>{cup.style.opacity='1';cup.getAnimations().forEach(a=>a.cancel());});
-    if(!alive(id))return;phase='choose';$('.ms-game-status').textContent='Which one?';cups.forEach(cup=>cup.tabIndex=0);cups[slots.indexOf(0)].focus();
+    if(!alive(id))return;phase='choose';$('.ms-game-status').textContent='Which one?';cups.forEach(cup=>cup.tabIndex=0);cups[0].focus();
     table.addEventListener('click',event=>{const cup=event.target.closest('.ms-cup');if(cup&&phase==='choose')choose(cup,cups,prize,id)});
     table.addEventListener('keydown',event=>{if((event.key==='Enter'||event.key===' ')&&event.target.matches('.ms-cup')&&phase==='choose'){event.preventDefault();choose(event.target,cups,prize,id)}});
   }
@@ -194,7 +198,7 @@
   });
   document.addEventListener('pointerout',event=>{if(!event.target.contains(event.relatedTarget))clearTimeout(narratorTimer);});
   document.addEventListener('keydown',event=>{
-    if(phase==='closed'||event.target.closest('#msNarrator'))return;
+    if(phase==='closed'||event.target.closest('#msNarrator,.wg-game'))return;
     if(event.key==='Escape'){event.preventDefault();event.stopImmediatePropagation();if(phase==='gate')close();else if(phase==='lost')gate();return;}
     if(['transition','shuffle','reveal','returning','confirm-loading'].includes(phase)&&['Tab','Enter',' ','ArrowUp','ArrowDown','ArrowLeft','ArrowRight','Home','End'].includes(event.key)){event.preventDefault();event.stopImmediatePropagation();return;}
     if(event.key==='Enter'&&event.target.matches('[data-ms="dodge"]')){event.preventDefault();dodge();}

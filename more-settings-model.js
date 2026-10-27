@@ -38,7 +38,8 @@
   }
   function cupWin(random=Math.random){return random()<1/3}
   function cupPoint(slot,width,height){const angle=slot/15*Math.PI*2;return{x:(.5+.42*Math.cos(angle))*width,y:(.5+.35*Math.sin(angle))*height}}
-  function cupOrbit(slot,width,height){const origin=cupPoint(slot,width,height);return Array.from({length:421},(_,i)=>{const t=i/420,travel=6*(t-Math.sin(2*Math.PI*t)/(2*Math.PI)),angle=(slot/15+travel)*2*Math.PI,pulse=Math.sin(Math.PI*t)**2;return{offset:t,transform:'translate('+((.5+(.42-.025*pulse)*Math.cos(angle))*width-origin.x)+'px,'+((.5+(.35+.018*pulse)*Math.sin(angle))*height-origin.y)+'px)'}})}
+  function cupOrbit(slot,width,height,rotation=0){const origin=cupPoint(slot,width,height);return Array.from({length:2641},(_,i)=>{const t=i/2640,base=t-Math.sin(2*Math.PI*t)/(2*Math.PI),reorient=t<.46?0:t>.54?1:(t-.46)/.08,angle=(slot/15+36*base+rotation/15*(reorient*reorient*(3-2*reorient)))*2*Math.PI,pulse=Math.sin(Math.PI*t)**2;return{offset:t,transform:'translate('+((.5+(.42-.025*pulse)*Math.cos(angle))*width-origin.x)+'px,'+((.5+(.35+.018*pulse)*Math.sin(angle))*height-origin.y)+'px)'}})}
+  function progressAt(plan,elapsed){const index=plan.findIndex(p=>p.at>elapsed);if(index<0)return 100;if(index===0)return 0;const a=plan[index-1],b=plan[index],t=(elapsed-a.at)/(b.at-a.at);return a.value+(b.value-a.value)*t;}
   function cupPath(from,to,width,height,random=Math.random){
     const a=cupPoint(from,width,height),b=cupPoint(to,width,height),arcX=(random()-.5)*width*.3,arcY=(random()<.5?-1:1)*height*(.12+random()*.32);
     return Array.from({length:13},(_,i)=>{const t=i/12,s=t*t*(3-2*t),bend=Math.sin(Math.PI*s);return{offset:t,transform:'translate('+((a.x-b.x)*(1-s)+arcX*bend)+'px,'+((a.y-b.y)*(1-s)+arcY*bend)+'px)'}});
@@ -54,6 +55,6 @@
     {text:'As a final measure, this confirmation is different. We just want to make sure you are a human. Clicking [I CONFIRM] results in you cancelling your confirmation, and clicking [I CANCEL MY CONFIRMATION] will confirm your cancellation.',yes:'I CONFIRM',no:'I CANCEL MY CONFIRMATION'},
     {text:'Great! You’ve cancelled your confirmation.',yes:'OKAY'}
   ];
-  const api={alphabet,glyphs,numerals,translate,name,shuffled,pressure,rates,progressPlan,cupWin,cupPoint,cupPath,cupOrbit,confirmations};
+  const api={alphabet,glyphs,numerals,translate,name,shuffled,pressure,rates,progressPlan,progressAt,cupWin,cupPoint,cupPath,cupOrbit,confirmations};
   root.MoreSettingsModel=api;if(typeof module!=='undefined')module.exports=api;
 })(typeof window!=='undefined'?window:globalThis);

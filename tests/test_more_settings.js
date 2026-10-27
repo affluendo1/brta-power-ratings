@@ -48,7 +48,7 @@ for(const [width,height]of [[360,350],[1050,570]]){
  const paths=Array.from({length:15},(_,i)=>M.cupOrbit(i,width,height));
  const numbers=f=>f.transform.match(/[-+]?\d*\.?\d+(?:e[-+]?\d+)?/gi).map(Number);
  paths.forEach(path=>{assert.equal(path[0].offset,0);assert.equal(path.at(-1).offset,1);assert(numbers(path[0]).every(n=>Math.abs(n)<1e-7));assert(numbers(path.at(-1)).every(n=>Math.abs(n)<1e-7));});
- for(let frame=0;frame<421;frame++)for(let i=0;i<15;i++)for(let j=i+1;j<15;j++){
+ for(let frame=0;frame<paths[0].length;frame++)for(let i=0;i<15;i++)for(let j=i+1;j<15;j++){
  const a=M.cupPoint(i,width,height),b=M.cupPoint(j,width,height),x=numbers(paths[i][frame]),y=numbers(paths[j][frame]);
  assert(Math.abs(a.x+x[0]-b.x-y[0])>size||Math.abs(a.y+x[1]-b.y-y[1])>size,'cup rectangles must not overlap anywhere in the orbit');
  }
