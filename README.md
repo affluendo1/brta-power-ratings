@@ -434,3 +434,16 @@ The historical importer supports all seven competition codes and observed adult
 formats. The history workflow resumes missing sections and publishes each completed
 competition separately. It retains the existing archive and excludes the award
 competition. Only successfully imported and fitted sections appear in History.
+
+### Future TROLS association adapters
+
+The current website and scheduled imports remain BRTA-only. Read-only source
+profiles and a manual discovery probe are prepared for other TROLS associations:
+
+```sh
+python -m scraper.probe_associations --association wdta
+```
+
+Reports go to `debug/trols-associations/`, separate from published data.
+See `internal/association/trols-expansion.md` for observed layout differences,
+limitations and the requirements before enabling another association.

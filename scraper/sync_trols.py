@@ -20,11 +20,13 @@ from urllib3.util.retry import Retry
 if __package__:
     from .club_information import parse_club_information, build_club_network
     from .club_directory import collect_directory
+    from .trols_sources import ASSOCIATIONS
 else:
     from club_information import parse_club_information, build_club_network
     from club_directory import collect_directory
+    from trols_sources import ASSOCIATIONS
 
-BASE = "https://www.trols.org.au/brta/"
+BASE = ASSOCIATIONS["brta"].base_url
 RESULTS_URL = urljoin(BASE, "results.php")
 PAST_RESULTS_URL = urljoin(BASE, "p_results.php")
 FIXTURE_URL = urljoin(BASE, "fixture.php")

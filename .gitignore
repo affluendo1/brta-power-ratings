@@ -1,2 +1,5 @@
 __pycache__/
 *.py[cod]
+
+# Read-only exploratory TROLS probes are never production data.
+debug/trols-associations/
