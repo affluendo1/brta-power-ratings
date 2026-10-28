@@ -1,6 +1,6 @@
 # BRTA Power Ratings
 
-**Current version: 8.0**
+**Current version: 8.0.1**
 
 [Open the live site](https://affluendo1.github.io/brta-power-ratings/)
 
@@ -348,3 +348,6 @@ or a deciding set/tiebreak in Rubbers.
 Opening a scorecard layers it above the current view: it does not change tabs.
 Team selection remains inline with sticky team tabs, compact registered/observed
 lineups, emergencies, doubles configurations and round-selection tables.
+
+Display settings includes a saved match display order for scorecards, labs, predictions and exports. Player Lab lists the selected player first in partnerships; team contexts use lineup order.
+Player Lab charts have independent Rating/Ranking tabs. Display also offers rounded graph lines; changing one chart's tab redraws only that chart. Match Explorer uses bold opponent names, italic partner names, and green/red performance comparisons against the relevant context's rating.

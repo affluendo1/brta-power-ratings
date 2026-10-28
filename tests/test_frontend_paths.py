@@ -16,7 +16,7 @@ class FrontendPathsTests(unittest.TestCase):
             if name == './': continue
             self.assertTrue((ROOT/name).is_file() or name in existing, name)
         for name in ['web/styles/site.css?v=80','web/styles/future.css?v=80','web/styles/style.css?v=80']:
-            self.assertIn(name,shell)
+            self.assertIn(name.split('?')[0],[ref.split('?')[0] for ref in shell])
 
     def test_stylesheet_relative_dependencies(self):
         import subprocess

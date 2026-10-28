@@ -1,5 +1,15 @@
 // Website releases, newest first. Routine result checks are not website releases.
 window.BRTA_RELEASES = Object.freeze([
+{
+  "version": "8.0.1",
+  "size": "small",
+  "committedAt": "2026-10-28T02:14:48+00:00",
+  "changes": [
+    "Added match display order and rounded graph settings.",
+    "Refined Player Lab charts, match explorers and pairing labels.",
+    "Improved team navigation and more settings."
+  ]
+},
   {
     "version": "8.0",
     "title": "Refined",
