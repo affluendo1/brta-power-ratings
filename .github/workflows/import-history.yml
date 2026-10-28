@@ -33,48 +33,32 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          ref: ${{ github.ref_name }}
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
       - name: Install scraper and rating dependencies
         run: pip install -r requirements.txt
-      - name: Refresh current Saturday and Sunday AM site data
-        run: python generate_site_data.py
-      - name: Import published Saturday and Sunday AM archives
-        run: python -m scraper.backfill_history
-      - name: Fit archived seasons and build the history catalogue
-        run: python generate_archive_site_data.py
-      - name: Run scraper, model and prediction regression tests
-        run: |
-          python -m unittest discover -s tests -v
-          for test in tests/*.js; do node "$test"; done
-      - name: Commit archive data and site payloads
+      - name: Validate importer
+        run: python -m unittest discover -s tests -v
+      - name: Expand published BRTA history, resuming completed sections
         shell: bash
+        env:
+          TROLS_HISTORY_MISSING_ONLY: "1"
         run: |
           git config user.name "brta-ratings-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          BRANCH="${GITHUB_REF_NAME:-main}"
-          git add data/archive
-          if [ -z "$(git status --porcelain -- data/archive)" ]; then
-            echo "No historical archive changes to commit."
-            exit 0
-          fi
-          git commit -m "Import TROLS Saturday and Sunday AM history"
-          # The archive build can run for hours. If the site changed in that
-          # time, replay this data-only commit on top of the latest branch.
-          # This job produces the complete archive, so its generated archive
-          # files are the authoritative side of an archive-only conflict.
-          git fetch origin "$BRANCH"
-          if ! git -c rebase.autoStash=true rebase "origin/$BRANCH"; then
-            CONFLICTS="$(git diff --name-only --diff-filter=U)"
-            if [ -z "$CONFLICTS" ] || printf '%s\n' "$CONFLICTS" | grep -qv '^data/archive/'; then
-              echo "Unexpected rebase conflict:"
-              printf '%s\n' "$CONFLICTS"
-              git rebase --abort
-              exit 1
-            fi
-            git checkout --theirs -- data/archive
+          for COMP in TA WA HA TN AP AA UA; do
+            TROLS_HISTORY_COMPETITIONS="$COMP" python -m scraper.backfill_history
+            python generate_archive_site_data.py --missing-only
             git add data/archive
-            GIT_EDITOR=true git rebase --continue
-          fi
-          git push origin "HEAD:$BRANCH"
+            if ! git diff --cached --quiet; then
+              git commit -m "Expand published BRTA history: $COMP"
+              git pull --rebase -X theirs origin "$GITHUB_REF_NAME"
+              git push origin "HEAD:$GITHUB_REF_NAME"
+            fi
+          done
+      - name: Validate expanded archive
+        run: |
+          python -m unittest discover -s tests -v
+          for test in tests/*.js; do node "$test"; done

@@ -1,6 +1,6 @@
 # BRTA Power Ratings
 
-**Current version: 8.2**
+**Current version: 8.2.1**
 
 [Open the live site](https://affluendo1.github.io/brta-power-ratings/)
 
@@ -122,14 +122,13 @@ BRTA Power Ratings is an unofficial analytics site for BRTA Saturday AM/PM, Sund
 
 The site lets you select a competition, season and section, then view that section's results, standings, ratings, team summaries and fixtures. Each section is fitted as its own opponent network. Ratings from different sections are not a combined ranking and should not be compared as if the players had all played one another.
 
-The six main views are:
+The five main views are:
 
 - **Results** — round-by-round fixture results and scorecards, including singles and doubles order where TROLS provides it. A bye occupies its own card in seven-team rounds.
 - **Standings** — current-season ladder calculations, or the published final TROLS ladder for an archived season when one is available. The standings view also shows recorded or projected semifinals and grand finals.
 - **Ratings** — singles, recurring doubles pairs, individual doubles and Overall tables. Player rows open Player Lab.
 - **Teams** — sticky team tabs with compact lineups, doubles configurations, chronological selections, emergencies and suggested squads.
 - **Fixtures** — the official TROLS draw, including completed and future fixtures. A recorded fixture opens its result; a scheduled fixture opens the Prediction Centre. Upcoming rounds have a button to simulate their scheduled ties.
-- **Rounds** — round highlights beside a personalised team calendar and calendar exports.
 
 Other views are opened from the header or player profiles:
 
@@ -419,3 +418,16 @@ backfill of adult competitions.
 identities and result-change comparisons. Separate feature modules own Rounds,
 Following and canvas share cards. `web/future/club-zone-shell.html` is an unmounted
 design template and does not enable Club Zone.
+
+### 8.2.1 presentation and archive expansion
+
+Rounds opens from the header as an overlay. Its month calendar expands individual
+fixtures, breaks and conditional finals dates; the round overview remains beside it.
+Share images use a balanced scoreboard layout, and every aspect ratio fits fully
+inside the preview. Share is available from the small arrow in an opened scorecard.
+Following uses gold star controls, beside the player name and in Ratings.
+
+The historical importer supports all seven competition codes and observed adult
+formats. The history workflow resumes missing sections and publishes each completed
+competition separately. It retains the existing archive and excludes the award
+competition. Only successfully imported and fitted sections appear in History.

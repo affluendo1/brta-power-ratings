@@ -9,9 +9,9 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="BRTA Ratings">
   <meta name="mobile-web-app-capable" content="yes">
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/brta-icon-180.png?v=82">
-  <link rel="icon" type="image/png" sizes="192x192" href="assets/brta-icon-192.png?v=82">
-  <link rel="manifest" href="manifest.webmanifest?v=82">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/brta-icon-180.png?v=821">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/brta-icon-192.png?v=821">
+  <link rel="manifest" href="manifest.webmanifest?v=821">
   <title>BRTA Power Ratings</title>
   <style>
     #royalArchive.hidden{display:none!important}
@@ -22,24 +22,24 @@
     @media(prefers-reduced-motion:reduce){.auxiliary-reveal,.auxiliary-archive-button{animation:none}}
   </style>
   <script>
-    (function(){var m=localStorage.getItem('brta-interface')||'future',t=localStorage.getItem('brta-theme')||'auto',a=localStorage.getItem('brta-accent')||'yellow',d=t==='dark'||t==='black-plus'||(t==='auto'&&matchMedia('(prefers-color-scheme: dark)').matches),future=m!=='classic',c=future?(d?'#101109':'#f3f2e9'):'#173f63',l=document.createElement('link');document.documentElement.dataset.interface=m;document.documentElement.dataset.accent=a;document.documentElement.style.backgroundColor=c;document.documentElement.style.colorScheme=d?'dark':'light';document.getElementById('themeColor').content=c;l.id='siteStyles';l.rel='stylesheet';l.href=future?'web/styles/future.css?v=82':'web/styles/style.css?v=82';document.head.appendChild(l)})()
+    (function(){var m=localStorage.getItem('brta-interface')||'future',t=localStorage.getItem('brta-theme')||'auto',a=localStorage.getItem('brta-accent')||'yellow',d=t==='dark'||t==='black-plus'||(t==='auto'&&matchMedia('(prefers-color-scheme: dark)').matches),future=m!=='classic',c=future?(d?'#101109':'#f3f2e9'):'#173f63',l=document.createElement('link');document.documentElement.dataset.interface=m;document.documentElement.dataset.accent=a;document.documentElement.style.backgroundColor=c;document.documentElement.style.colorScheme=d?'dark':'light';document.getElementById('themeColor').content=c;l.id='siteStyles';l.rel='stylesheet';l.href=future?'web/styles/future.css?v=821':'web/styles/style.css?v=821';document.head.appendChild(l)})()
   </script>
-  <link rel="stylesheet" href="web/optional/collection.css?v=82">
-<link rel="stylesheet" href="web/styles/custom-sections.css?v=82">
-<link rel="stylesheet" href="web/styles/player-search.css?v=82">
-<link rel="stylesheet" href="web/styles/team-lab.css?v=82">
-<link rel="stylesheet" href="web/styles/changelog.css?v=82">
-<link rel="stylesheet" href="web/optional/ambient.css?v=82">
-<link rel="stylesheet" href="web/styles/layout.css?v=82">
-<link rel="stylesheet" href="web/styles/polish.css?v=82">
-  <link rel="stylesheet" href="web/optional/lexicon.css?v=82">
-<link rel="stylesheet" href="web/styles/studio.css?v=82">
-<link rel="stylesheet" href="web/styles/matchday.css?v=82r1">
+  <link rel="stylesheet" href="web/optional/collection.css?v=821">
+<link rel="stylesheet" href="web/styles/custom-sections.css?v=821">
+<link rel="stylesheet" href="web/styles/player-search.css?v=821">
+<link rel="stylesheet" href="web/styles/team-lab.css?v=821">
+<link rel="stylesheet" href="web/styles/changelog.css?v=821">
+<link rel="stylesheet" href="web/optional/ambient.css?v=821">
+<link rel="stylesheet" href="web/styles/layout.css?v=821">
+<link rel="stylesheet" href="web/styles/polish.css?v=821">
+  <link rel="stylesheet" href="web/optional/lexicon.css?v=821">
+<link rel="stylesheet" href="web/styles/studio.css?v=821">
+<link rel="stylesheet" href="web/styles/matchday.css?v=821">
 </head>
 <body>
 <header class="site-header">
   <div class="brand-block">
-    <img class="brand-logo" src="assets/brta-logo.png?v=82" alt="BRTA logo" width="76" height="76">
+    <img class="brand-logo" src="assets/brta-logo.png?v=821" alt="BRTA logo" width="76" height="76">
     <div class="brand-copy"><div class="brand">BRTA Power Ratings</div>
     <div class="subtitle" id="sectionSubtitle">Saturday &amp; Sunday AM · Spring 2026</div></div>
   </div>
@@ -129,46 +129,46 @@
 <div id="modeSwitchOverlay" class="mode-switch hidden" aria-live="polite"><div class="mode-switch-box"><div class="progress-ring" id="progressRing"><div><b id="progressPct">0%</b></div></div><h2>Switching interface</h2><p id="switchStatus">Preparing layout…</p></div></div>
 <div id="installSettingsStash" hidden><button id="installBtn" class="button secondary" type="button" aria-haspopup="dialog" aria-controls="installOverlay">Install app</button></div>
 <div id="syncToastHost" class="sync-toast-host" aria-live="polite" aria-atomic="true"></div>
-<script src="data.js?v=82"></script>
-<script src="web/models/prediction.js?v=82"></script>
-<script src="web/optional/records.js?v=82"></script>
-    <script src="web/models/rating-history.js?v=82"></script>
-<script src="web/models/custom-section-model.js?v=82"></script>
-<script src="web/models/custom-section-tools.js?v=82"></script>
-<script src="web/features/custom-sections.js?v=82"></script>
-<script src="web/features/player-search.js?v=82"></script>
-<script src="web/models/team-lab.js?v=82r2"></script>
-<script src="web/features/team-lab-ui.js?v=82"></script>
-<script src="web/features/changelog-data.js?v=82"></script>
-<script src="web/features/changelog.js?v=82"></script>
-<script src="web/optional/parameters.js?v=82"></script>
-<script src="web/optional/presentation.js?v=82"></script>
-<script src="web/models/layout-model.js?v=82"></script>
-<script src="web/features/maps.js?v=82"></script>
-<script src="web/features/waiting-game.js?v=82"></script>
-<script src="web/core/app.js?v=82"></script>
-<script src="web/core/layout.js?v=82"></script>
-<script src="web/features/confetti.js?v=82"></script>
-<script src="web/features/archive.js?v=82"></script>
-<script src="web/optional/sequence.js?v=82"></script>
-<script src="web/optional/controls.js?v=82"></script>
-<script src="web/models/lab-model.js?v=82"></script>
-<script src="web/features/labs.js?v=82r2"></script>
-<script src="web/core/polish.js?v=82"></script>
-<script src="web/optional/orthography.js?v=82"></script>
-<script src="web/models/search-commands.js?v=82"></script>
-<script src="web/optional/lexicon.js?v=82"></script>
-<script src="web/models/theme-studio.js?v=82"></script>
-<script src="web/features/search-commands.js?v=82"></script>
-<script src="web/features/theme-studio.js?v=82"></script>
-<script src="web/optional/deeds-data.js?v=82"></script>
-<script src="web/optional/deeds.js?v=82"></script>
-<script src="web/features/club-map.js?v=82"></script>
-<script src="web/models/matchday.js?v=82"></script>
-<script src="web/features/matchday.js?v=82"></script>
-<script src="web/features/following.js?v=82"></script>
-<script src="web/features/share-cards.js?v=82r1"></script>
-<script src="web/features/competition-formats.js?v=82"></script>
-<script src="web/core/pwa.js?v=82"></script>
+<script src="data.js?v=821"></script>
+<script src="web/models/prediction.js?v=821"></script>
+<script src="web/optional/records.js?v=821"></script>
+    <script src="web/models/rating-history.js?v=821"></script>
+<script src="web/models/custom-section-model.js?v=821"></script>
+<script src="web/models/custom-section-tools.js?v=821"></script>
+<script src="web/features/custom-sections.js?v=821"></script>
+<script src="web/features/player-search.js?v=821"></script>
+<script src="web/models/team-lab.js?v=821"></script>
+<script src="web/features/team-lab-ui.js?v=821"></script>
+<script src="web/features/changelog-data.js?v=821"></script>
+<script src="web/features/changelog.js?v=821"></script>
+<script src="web/optional/parameters.js?v=821"></script>
+<script src="web/optional/presentation.js?v=821"></script>
+<script src="web/models/layout-model.js?v=821"></script>
+<script src="web/features/maps.js?v=821"></script>
+<script src="web/features/waiting-game.js?v=821"></script>
+<script src="web/core/app.js?v=821"></script>
+<script src="web/core/layout.js?v=821"></script>
+<script src="web/features/confetti.js?v=821"></script>
+<script src="web/features/archive.js?v=821"></script>
+<script src="web/optional/sequence.js?v=821"></script>
+<script src="web/optional/controls.js?v=821"></script>
+<script src="web/models/lab-model.js?v=821a"></script>
+<script src="web/features/labs.js?v=821"></script>
+<script src="web/core/polish.js?v=821"></script>
+<script src="web/optional/orthography.js?v=821"></script>
+<script src="web/models/search-commands.js?v=821"></script>
+<script src="web/optional/lexicon.js?v=821"></script>
+<script src="web/models/theme-studio.js?v=821"></script>
+<script src="web/features/search-commands.js?v=821"></script>
+<script src="web/features/theme-studio.js?v=821"></script>
+<script src="web/optional/deeds-data.js?v=821"></script>
+<script src="web/optional/deeds.js?v=821"></script>
+<script src="web/features/club-map.js?v=821"></script>
+<script src="web/models/matchday.js?v=821"></script>
+<script src="web/features/matchday.js?v=821"></script>
+<script src="web/features/following.js?v=821"></script>
+<script src="web/features/share-cards.js?v=821"></script>
+<script src="web/features/competition-formats.js?v=821"></script>
+<script src="web/core/pwa.js?v=821"></script>
 </body>
 </html>

@@ -23,11 +23,11 @@ COLOUR_SUFFIX = re.compile(r"\s+(aqua|azure|beige|black|blue|brown|burgundy|char
 
 def _season_sort_key(season: dict) -> tuple[int, int, str]:
     label = season.get("season_label", "")
-    match = re.search(r"(Spring|Autumn|Winter)\s+(\d{4})", label, re.I)
+    match = re.search(r"(Spring|Autumn|Winter|Summer)\s+(\d{4})", label, re.I)
     if not match:
         return (0, 0, str(season.get("season_id", "")))
     term, year = match.group(1).casefold(), int(match.group(2))
-    term_order = {"spring": 3, "autumn": 2, "winter": 1}[term]
+    term_order = {"spring": 3, "autumn": 2, "winter": 1, "summer": 4}[term]
     return (year, term_order, str(season.get("season_id", "")))
 
 
@@ -151,7 +151,7 @@ def _club_name(team: str) -> str:
 
 
 def _season_order(label: str) -> int:
-    match = re.search(r"(Spring|Autumn|Winter)\s+(\d{4})", str(label), re.I)
+    match = re.search(r"(Spring|Autumn|Winter|Summer)\s+(\d{4})", str(label), re.I)
     if not match:
         return 0
     term = {"winter": 1, "autumn": 2, "spring": 3}[match.group(1).casefold()]

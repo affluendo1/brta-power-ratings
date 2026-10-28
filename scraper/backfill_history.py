@@ -29,7 +29,7 @@ LADDER_URL = urljoin(BASE, "p_ladders.php")
 OUT = Path(os.getenv("TROLS_HISTORY_OUT", "data/archive"))
 WORKERS = max(1, min(int(os.getenv("TROLS_HISTORY_WORKERS", "5")), 8))
 ALLOW_SHRINK = os.getenv("TROLS_ALLOW_HISTORY_SHRINK") == "1"
-DAYTIMES = {"AA": "Saturday AM", "UA": "Sunday AM"}
+DAYTIMES = dict(sync.DAYTIME_NAMES)
 CURRENT_LABELS = {"current season", "current"}
 
 
@@ -94,7 +94,7 @@ def discover_season_sections(daytime: str, season_id: str) -> list[dict]:
         "which": "0", "style": "", "daytime": daytime, "season": season_id,
     })
     options = [(label, code) for label, code in sync.select_options(BeautifulSoup(response.text, "html.parser"), "section")
-               if re.fullmatch(r"(?:AA|UA)\d{3}", code)]
+               if re.fullmatch(r"(?:AA|AP|UA|TA|TN|WA|HA)\d{3}", code)]
     if not options:
         raise RuntimeError(f"TROLS exposed no sections for {daytime} season {season_id}")
     return [{"source_section_code": code, "section_label": label} for label, code in options]
@@ -166,7 +166,7 @@ def _scorecards(section: dict) -> None:
         if fixture["status"] != "Completed":
             continue
         response = sync._get(MATCH_URL, params={"matchid": fixture["fixture_id"], "seasonid": section["season_id"]})
-        singles_rows, doubles_rows = sync.parse_scorecard(response.text, {**fixture, "format": "rubbers" if str(section.get("section_label", "")).casefold().startswith("rubbers") else "sets"})
+        singles_rows, doubles_rows = sync.parse_scorecard(response.text, {**fixture, "format": "rubbers" if section["competition_code"] not in {"AA","UA"} or str(section.get("section_label", "")).casefold().startswith("rubbers") else "sets"})
         singles.extend(singles_rows)
         doubles.extend(doubles_rows)
         done += 1
@@ -204,6 +204,7 @@ def _fetch_section(meta: dict) -> dict:
         section["draw_source"] = "TROLS Results order (fixture page unavailable)"
     section["official_standings"] = _ladder(meta)
     _scorecards(section)
+    if section["competition_code"] not in {"AA","UA"}: section["competition_rules"] = sync.observed_rules(section)
     section["validation_warnings"] = sync.validate_dataset(
         section["fixtures"], section["singles"], section["doubles"],
         section["source_section_code"], green_ball=meta["green_ball"],
@@ -234,6 +235,8 @@ def _load_all_sections(target_seasons: list[dict] | None = None) -> tuple[list[d
 
     found_targets: set[tuple[str, str]] = set()
     for daytime in DAYTIMES:
+        if os.getenv("TROLS_HISTORY_COMPETITIONS") and daytime not in os.environ["TROLS_HISTORY_COMPETITIONS"].split(","):
+            continue
         if target_ids is not None and daytime not in target_ids:
             continue
         available = discover_seasons(daytime)
@@ -244,7 +247,12 @@ def _load_all_sections(target_seasons: list[dict] | None = None) -> tuple[list[d
         found_targets.update((daytime, season["season_id"]) for season in selected)
         for season in selected:
             season_rows.append(season)
-            sections = discover_season_sections(daytime, season["season_id"])
+            try:
+                sections = discover_season_sections(daytime, season["season_id"])
+            except RuntimeError as error:
+                if "TROLS exposed no sections" not in str(error): raise
+                print(f"::warning::{daytime} {season['season_id']}: no published sections; archive gap retained")
+                continue
             for section in sections:
                 section.update(season)
                 section.update({
@@ -253,7 +261,8 @@ def _load_all_sections(target_seasons: list[dict] | None = None) -> tuple[list[d
                     "green_ball": "green ball" in section["section_label"].casefold(),
                     "is_archive": True,
                 })
-                requests.append(section)
+                if os.getenv("TROLS_HISTORY_MISSING_ONLY") != "1" or not (OUT / "sections" / _asset_id(section) / "metadata.json").exists():
+                    requests.append(section)
     if target_ids is not None:
         missing = sorted(
             (code, season_id)
@@ -267,9 +276,10 @@ def _load_all_sections(target_seasons: list[dict] | None = None) -> tuple[list[d
         required_earliest = {"UA": "spring 2009", "AA": "winter 2012"}
         for daytime, earliest in required_earliest.items():
             published = [row["season_label"].casefold() for row in season_rows if row["competition_code"] == daytime]
-            if not published or earliest not in published:
+            if (not os.getenv("TROLS_HISTORY_COMPETITIONS") or daytime in os.environ["TROLS_HISTORY_COMPETITIONS"].split(",")) and (not published or earliest not in published):
                 raise RuntimeError(f"TROLS archive coverage check failed for {DAYTIMES[daytime]}: expected {earliest}")
     if not requests:
+        if os.getenv("TROLS_HISTORY_MISSING_ONLY") == "1": return [], season_rows
         raise RuntimeError("No historical sections found on TROLS")
     print(f"Discovered {len(season_rows)} archive seasons and {len(requests)} sections")
     results = []
@@ -343,6 +353,7 @@ def _write_section(section: dict) -> dict:
         "results_loaded_by_trols", "official_standings",
     )}
     meta.update({
+        "competition_rules": section.get("competition_rules"),
         "section_code": asset,
         "fixtures": len(section["fixtures"]),
         "completed_fixtures": sum(row["status"] == "Completed" for row in section["fixtures"]),
@@ -390,7 +401,7 @@ def main() -> None:
         "seasons": seasons, "sections": metadata, "validation": "passed",
     }
     OUT.mkdir(parents=True, exist_ok=True)
-    if targets is not None:
+    if (targets is not None or os.getenv("TROLS_HISTORY_MISSING_ONLY") == "1" or os.getenv("TROLS_HISTORY_COMPETITIONS")) and (OUT / "raw_catalog.json").exists():
         existing = json.loads((OUT / "raw_catalog.json").read_text(encoding="utf-8"))
         document = merge_archive_catalog(existing, seasons, metadata)
     else:

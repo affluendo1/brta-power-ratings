@@ -1,6 +1,16 @@
 // Website releases, newest first. Routine result checks are not website releases.
 window.BRTA_RELEASES = Object.freeze([
 {
+  "version": "8.2.1",
+  "size": "small",
+  "committedAt": "2026-10-28T12:23:10.520421+00:00",
+  "changes": [
+    "Redesigned share cards with full-image previews and simpler controls.",
+    "Moved Rounds into an overlay with an interactive calendar.",
+    "Refined Following controls and expanded historical competition support."
+  ]
+},
+{
   "version": "8.2",
   "title": "Matchday",
   "size": "large",

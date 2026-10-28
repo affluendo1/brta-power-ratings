@@ -4,3 +4,7 @@ assert.equal(L.matches(D,'A','singles',1).length,1);assert.equal(L.matches(D,'A'
 assert.equal(L.matches(D,'A','singles',2)[1].preOpponent,1550);assert.equal(L.matches(D,'A','singles',2)[1].higher,true);
 assert.deepEqual(L.pairPower(D,'D / B',1),{rating:1200,fallback:true});assert.equal(L.matches(D,'C / A','pairs',1).length,1);assert.equal(L.matches(D,'A','doublesPlayers',1)[0].partner,'C');assert.equal(L.history(D,'singles','A',1).length,1);assert.equal(L.rank(D,'singles','A',1),null);assert(!L.schedule(D).some(x=>x.player==='P'));assert(L.schedule(D,1,true).length===2);assert.equal(L.contextData(D,1).results.length,1);
 console.log('Lab model: cutoff isolation, pre-match comparisons, round-one tie break, pair identity/fallback, partners, history and provisional schedules passed.');
+const doublesOnly=structuredClone(D);doublesOnly.meta={competition_rules:{singlesSlots:0,doublesSlots:4}};doublesOnly.singles=[];doublesOnly.results.forEach(g=>g.fixtures.forEach(f=>f.rubbers=f.rubbers.filter(r=>r.type==='Doubles')));
+assert.equal(L.discipline(doublesOnly),'doublesPlayers');assert.equal(L.discipline(doublesOnly,true),'pairs');assert.equal(L.discipline(D),'singles');
+const evidence=L.matches(doublesOnly,'A',L.discipline(doublesOnly));assert.equal(evidence.length,1);assert.equal(evidence.filter(m=>m.higher).length+evidence.filter(m=>!m.higher).length,1);assert.equal(evidence[0].partner,'C');
+console.log('Doubles-only summary/detail discipline and partner evidence agree.');
