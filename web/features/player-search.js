@@ -1,6 +1,6 @@
 ((root)=>{
   const normalise=value=>String(value??'').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[’']/g,'').replace(/\s+/g,' ').trim();
-  const seasonOrder=row=>{const year=Number(row.seasonLabel.match(/\d{4}/)?.[0]||0),term=/spring/i.test(row.seasonLabel)?3:/autumn/i.test(row.seasonLabel)?2:1;return year*10+term};
+  const seasonOrder=row=>{const match=/(Spring|Autumn|Winter|Summer)\s+(\d{4}|\d{2})(?!\d)/i.exec(row.seasonLabel);if(!match)return 0;let year=Number(match[2]);if(match[2].length===2)year+=year<70?2000:1900;return year*10+({spring:3,autumn:2,winter:1,summer:4}[match[1].toLowerCase()])};
   function find(index,query){
     const q=normalise(query),tokens=q.split(' ').filter(Boolean);
     if(!q)return [];
