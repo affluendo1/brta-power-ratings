@@ -76,6 +76,14 @@
    composition:{vowels,consonants,other:n-latinLetters.length,distinctVowels,distinctConsonants,vowelShare,entropy,entropyRatio,transitions:transitions.length,dominant:dominant?{letter:dominant[0],count:dominant[1],share:dominant[1]/n}:null},
    combinations:{rare,common,vowelRuns,consonantRuns,palindromes},initials:{letters:initials,distinct:distinctInitials}};
  }
- function rank(rows){let prior=null,place=0;return rows.map(row=>({...row,analysis:analyse(row.player)})).sort((a,b)=>b.analysis.score-a.analysis.score||a.player.localeCompare(b.player)).map((row,i)=>{if(row.analysis.score!==prior)place=i+1;prior=row.analysis.score;return {...row,rating:row.analysis.score,rank:place}})}
- const api={tiles,digraphs,trigraphs,quadgraphs,commonPairs,bandNames,normalise,analyse,rank};root.BRTAOrthography=api;if(typeof module!=='undefined')module.exports=api;
+ function analysePair(name){
+ const members=String(name).split(/\s*\/\s*/).map(analyse),result={name:String(name),members,parts:members.flatMap(m=>m.parts.map(p=>({...p,label:m.name+' · '+p.label})))};
+ for(const key of ['score','grossScore','penaltyPoints','letters','unique','repeats','spaces','tileValue'])result[key]=members.reduce((n,m)=>n+m[key],0);
+ for(const key of ['digraphs','trigraphs','quadgraphs'])result[key]=members.flatMap(m=>m[key]);
+ result.combinations={common:members.flatMap(m=>m.combinations.common)};return result;
+ }
+ function pairScope(){return 'section'}
+ function highest(rows){return rows.filter(r=>r.rating===rows[0]?.rating)}
+ function rank(rows,analyser=analyse){let prior=null,place=0;return rows.map(row=>({...row,analysis:analyser(row.player)})).sort((a,b)=>b.analysis.score-a.analysis.score||a.player.localeCompare(b.player)).map((row,i)=>{if(row.analysis.score!==prior)place=i+1;prior=row.analysis.score;return {...row,rating:row.analysis.score,rank:place}})}
+ const api={tiles,digraphs,trigraphs,quadgraphs,commonPairs,bandNames,normalise,analyse,analysePair,pairScope,highest,rank};root.BRTAOrthography=api;if(typeof module!=='undefined')module.exports=api;
 })(typeof window==='undefined'?globalThis:window);
