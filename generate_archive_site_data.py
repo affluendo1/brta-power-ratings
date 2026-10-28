@@ -21,14 +21,18 @@ CLUB_INDEX = ARCHIVE / "clubs.json"
 COLOUR_SUFFIX = re.compile(r"\s+(aqua|azure|beige|black|blue|brown|burgundy|charcoal|coral|cream|crimson|cyan|gold|golden|gray|grey|green|indigo|lime|magenta|maroon|navy|orange|pink|purple|red|scarlet|silver|tan|teal|turquoise|violet|white|yellow)\s*$", re.I)
 
 
-def _season_sort_key(season: dict) -> tuple[int, int, str]:
-    label = season.get("season_label", "")
-    match = re.search(r"(Spring|Autumn|Winter|Summer)\s+(\d{4})", label, re.I)
+def _season_parts(label: str) -> tuple[int, int]:
+    match = re.search(r"(Spring|Autumn|Winter|Summer)\s+(\d{4}|\d{2})(?!\d)", str(label), re.I)
     if not match:
-        return (0, 0, str(season.get("season_id", "")))
-    term, year = match.group(1).casefold(), int(match.group(2))
-    term_order = {"spring": 3, "autumn": 2, "winter": 1, "summer": 4}[term]
-    return (year, term_order, str(season.get("season_id", "")))
+        return (0, 0)
+    year = int(match.group(2))
+    if len(match.group(2)) == 2:
+        year += 2000 if year < 70 else 1900
+    return year, {"spring": 3, "autumn": 2, "winter": 1, "summer": 4}[match.group(1).casefold()]
+
+
+def _season_sort_key(season: dict) -> tuple[int, int, str]:
+    return (*_season_parts(season.get("season_label", "")), str(season.get("season_id", "")))
 
 
 def _current_seasons() -> list[dict]:
@@ -151,11 +155,8 @@ def _club_name(team: str) -> str:
 
 
 def _season_order(label: str) -> int:
-    match = re.search(r"(Spring|Autumn|Winter|Summer)\s+(\d{4})", str(label), re.I)
-    if not match:
-        return 0
-    term = {"winter": 1, "autumn": 2, "spring": 3, "summer": 4}[match.group(1).casefold()]
-    return int(match.group(2)) * 10 + term
+    year, term = _season_parts(label)
+    return year * 10 + term
 
 
 def _fixture_outcome(fixture: dict, side: str, home_club: str, away_club: str) -> str:

@@ -1,6 +1,9 @@
 # BRTA Power Ratings
 
-**Current version: 8.2.1**
+**Current version: 8.2.1.1**
+
+Returning visitors see the changelog once after a newer release. The Ratings
+star opens Following management, including the followed-player filter.
 
 [Open the live site](https://affluendo1.github.io/brta-power-ratings/)
 

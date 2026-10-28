@@ -46,3 +46,11 @@
  .release-name{font-size:14px}.release-points{font-size:14px}
 }
 @media(prefers-reduced-motion:reduce){.release-chevron{transition:none}}
+
+.release-arrival { animation: release-arrival 2.8s ease-out both; }
+@keyframes release-arrival {
+  0%, 35% { background: color-mix(in srgb, var(--primary, #d2ad53) 22%, transparent); box-shadow: 0 0 24px color-mix(in srgb, var(--primary, #d2ad53) 30%, transparent); }
+  100% { background: transparent; box-shadow: none; }
+}
+@media (prefers-reduced-motion: reduce) { .release-arrival { animation: none; outline: 2px solid var(--primary, #d2ad53); } }
+html[data-animation="off"] .release-arrival { animation: none; outline: 2px solid var(--primary, #d2ad53); }

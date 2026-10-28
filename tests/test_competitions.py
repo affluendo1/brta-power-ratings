@@ -21,4 +21,12 @@ class ExpandedCompetitionTests(unittest.TestCase):
         from generate_archive_site_data import _season_order, _season_sort_key
         self.assertGreater(_season_order('Summer 2026/27'), _season_order('Spring 2026'))
         self.assertGreater(_season_sort_key({'season_label':'Summer 2026/27'}), _season_sort_key({'season_label':'Winter 2026'}))
+    def test_short_summer_seasons_interleave_with_winter(self):
+        from generate_archive_site_data import _season_order, _season_sort_key
+        expected = ['Winter 2026', 'Summer 25/26', 'Winter 2025', 'Summer 24/25', 'Winter 2024', 'Summer 09/10', 'Winter 2009']
+        self.assertEqual(sorted(reversed(expected), key=_season_order, reverse=True), expected)
+        self.assertEqual([x['season_label'] for x in sorted([{'season_label': x} for x in reversed(expected)], key=_season_sort_key, reverse=True)], expected)
+        for year in range(9, 26):
+            self.assertEqual(_season_order(f'Summer {year:02}/{year+1:02}'), _season_order(f'Summer 20{year:02}/{year+1:02}'))
+        self.assertEqual(_season_order('Unknown'), 0)
 if __name__=='__main__':unittest.main()
