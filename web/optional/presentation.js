@@ -1,6 +1,6 @@
 (function(root){
   'use strict';
-  const M=root.MoreSettingsModel;
+  const M=root.AmbientParameters;
   const textRecords=new Map(),attributeRecords=new Map(),baseRates=new WeakMap();
   let translated=false,observer,animationTimer,pressure=1,scheduled=false;
   const attributes=['title','aria-label','aria-description','placeholder','alt','label'];
@@ -49,5 +49,5 @@
     if(element.scrollHeight<=element.clientHeight)return;
     event.preventDefault();element.scrollTop+=delta*M.rates(pressure).scroll;
   },{passive:false});
-  root.MoreSettingsEffects={language,atmosphere,refresh:schedule};
+  root.AmbientPresentation={language,atmosphere,refresh:schedule};
 })(window);

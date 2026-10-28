@@ -47,11 +47,7 @@ jobs:
       - name: Run scraper, model and prediction regression tests
         run: |
           python -m unittest discover -s tests -v
-          node tests/test_prediction.js
-          node tests/test_rating_history.js
-          node tests/test_custom_sections.js
-          node tests/test_custom_section_tools.js
-          node tests/test_more_settings.js
+          for test in tests/*.js; do node "$test"; done
       - name: Commit archive data and site payloads
         shell: bash
         run: |

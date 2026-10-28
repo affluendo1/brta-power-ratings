@@ -1,5 +1,5 @@
 const assert=require('assert');
-const M=require('../auxiliary-module.js');
+const M=require('../web/optional/records.js');
 
 function section({historical=false,latest=4}={}){
   const rubbers=(home,away,homeEmergency=false,awayEmergency=false)=>[{type:'Singles',position:'No. 1',home,away,homeEmergency,awayEmergency}];

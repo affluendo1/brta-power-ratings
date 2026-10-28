@@ -1,5 +1,5 @@
 const assert=require('node:assert/strict');
-const M=require('../more-settings-model');
+const M=require('../web/optional/parameters');
 
 assert.equal(M.translate('Sid Basa'),'Sid Basa');
 assert.equal(M.translate('Find Sid Basa in 2026').includes('Sid Basa'),true);
@@ -39,9 +39,9 @@ for(const duration of [40000,50000,60000])for(let sample=0;sample<30;sample++){
 }
 assert.equal(plans.size,90);
 // Fifteen visual cups, but exactly one of each three equal random intervals wins.
-assert.equal(M.cupWin(()=>0),true);assert.equal(M.cupWin(()=>1/3-Number.EPSILON),true);
-assert.equal(M.cupWin(()=>1/3),false);assert.equal(M.cupWin(()=>.999999),false);
-assert.equal(Array.from({length:1500},(_,i)=>M.cupWin(()=>(i+.5)/1500)).filter(Boolean).length,500);
+assert.equal(M.cupWin(()=>0),true);assert.equal(M.cupWin(()=>1/5-Number.EPSILON),true);
+assert.equal(M.cupWin(()=>.2),false);assert.equal(M.cupWin(()=>.999999),false);
+assert.equal(Array.from({length:1500},(_,i)=>M.cupWin(()=>(i+.5)/1500)).filter(Boolean).length,300);
 const positions=new Set(Array.from({length:15},(_,i)=>JSON.stringify(M.cupPoint(i,1000,600))));assert.equal(positions.size,15);
 for(const [width,height]of [[360,350],[1050,570]]){
  const size=Math.min(72,Math.min(width*.42,height*.35)*2*Math.sin(Math.PI/15)*.66);

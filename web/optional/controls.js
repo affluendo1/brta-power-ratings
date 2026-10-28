@@ -1,13 +1,13 @@
 (function(root){
   'use strict';
-  const M=root.MoreSettingsModel,E=root.MoreSettingsEffects,$=s=>document.querySelector(s);
+  const M=root.AmbientParameters,E=root.AmbientPresentation,$=s=>document.querySelector(s);
   const KEY='brta-more-settings-v1',reduced=matchMedia('(prefers-reduced-motion: reduce)');
-  const defaults={black:false,pressure:1,language:false,inverted:false,narrator:false};
+  const defaults={black:false,pressure:1,language:false,inverted:false,narrator:false,moreBands:false};
   let prefs;try{prefs={...defaults,...JSON.parse(localStorage.getItem(KEY)||'{}')}}catch{prefs={...defaults}}
   prefs.pressure=M.pressure(prefs.pressure);
   let overlay,phase='closed',dodges=0,left=false,busy=false,serial=0,returnFocus,inert=[],pressureTimer,pressureTarget=prefs.pressure,slider=false,step=0;
   let narratorFrame,narratorTimer,voiceTimeout,currentVoice,voiceBusy=false,voiceEpoch=0,voiceLevel=0,lastSpoken='',lastSpokenAt=0;
-  let panelHidden=false,crownTimer,pressureModeRevealed=false;
+  let panelHidden=false,crownTimer,pressureModeRevealed=false,crownCount=0,crownPhrase='';
   const speechQueue=[];
   const animations=new Set(),enabled=()=>!!root.AuxiliaryPortal?.isUnlocked?.();
   const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -20,8 +20,8 @@
   function ensure(){if(overlay)return;overlay=document.createElement('div');overlay.id='moreSettingsOverlay';overlay.className='overlay hidden ms-overlay';overlay.setAttribute('data-ms-cutscene','');document.body.append(overlay);overlay.addEventListener('pointerover',event=>{if(event.target.closest('[data-ms="dodge"]'))dodge();if(event.target.closest('[data-ms="confirm-no"]')&&step===7)swapConfirmation()});overlay.addEventListener('pointerdown',event=>{if(event.pointerType!=='mouse'&&event.target.closest('[data-ms="dodge"]')){event.preventDefault();dodge()}});overlay.addEventListener('click',click);overlay.addEventListener('change',change);overlay.addEventListener('input',input);}
   function show(){ensure();if(phase==='closed'){returnFocus=document.activeElement;inert=[...document.body.children].filter(e=>e!==overlay&&e.id!=='modeSwitchOverlay'&&e.id!=='msNarrator').map(e=>[e,e.inert]);for(const[e]of inert)e.inert=true;}overlay.classList.remove('hidden');document.body.classList.add('modal-open');}
   function close(){clearScene();phase='closed';overlay?.classList.add('hidden');document.documentElement.removeAttribute('data-ms-void');for(const[e,value]of inert)e.inert=value;inert=[];if(!document.querySelector('.overlay:not(.hidden)'))document.body.classList.remove('modal-open');if(returnFocus?.isConnected)returnFocus.focus({preventScroll:true});}
-  function gate(){clearScene();show();phase='gate';overlay.setAttribute('data-ms-cutscene','');overlay.innerHTML='<div class="overlay-backdrop"></div>'+panel('More Settings','<div class="ms-gate-body '+(dodges>=10?'ms-gate-expanded':'')+'"><div class="ms-dodge-track"><button class="ms-circle ms-dodger '+(left?'ms-left':'')+'" type="button" data-ms="dodge" aria-label="Open more settings">↗</button></div><div class="ms-gate-reward '+(dodges>=10?'ms-reward-visible':'')+'"><button class="button primary" type="button" data-ms="try">Try me.</button></div></div>',true);$('.ms-dodger').focus({preventScroll:true});}
-  function dodge(){if(phase!=='gate'||busy)return;busy=true;left=!left;dodges++;$('.ms-dodger').classList.toggle('ms-left',left);if(dodges>=10){$('.ms-gate-body').classList.add('ms-gate-expanded');$('.ms-gate-reward').classList.add('ms-reward-visible')}setTimeout(()=>{busy=false},95);}
+  function gate(){if(localStorage.getItem('brta-ambient-access')==='1'){show();phase='transition';transition(voidSettings,{title:'More Settings',message:'Opening the remaining settings…',variant:'void'});return}clearScene();show();phase='gate';overlay.setAttribute('data-ms-cutscene','');overlay.innerHTML='<div class="overlay-backdrop"></div>'+panel('More Settings','<div class="ms-gate-body '+(dodges>=10?'ms-gate-expanded':'')+'"><div class="ms-dodge-track"><button class="ms-circle ms-dodger '+(left?'ms-left':'')+'" type="button" data-ms="dodge" aria-label="Open more settings">↗</button></div><div class="ms-gate-reward '+(dodges>=10?'ms-reward-visible':'')+'"><button class="button primary" type="button" data-ms="try">Try me.</button></div></div>',true);$('.ms-dodger').focus({preventScroll:true});}
+  function dodge(){if(phase!=='gate'||busy)return;busy=true;left=!left;dodges++;$('.ms-dodger').classList.toggle('ms-left',left);if(dodges>=10){$('.ms-gate-body').classList.add('ms-gate-expanded');$('.ms-gate-reward').classList.add('ms-reward-visible')}setTimeout(()=>{busy=false},260);}
   function transition(done,options={}){if(root.runBRTAInterfaceTransition)root.runBRTAInterfaceTransition(done,options);else done();}
   async function shuffle(){
     clearScene();phase='shuffle';overlay.setAttribute('data-ms-cutscene','');const id=serial;
@@ -41,8 +41,8 @@
     $('.ms-game-status').textContent='A few more won’t hurt.';await wait(reduced.matches?100:650);if(!alive(id))return;
     // One continuous compositor animation: no per-move promise gap or collision-prone crossings.
     if(!reduced.matches){
-      const rotation=Math.random()*15,remask=setTimeout(()=>{if(alive(id))M.shuffled(cups)[0].append(prize)},10500);
-      await Promise.all(cups.map((cup,i)=>animate(cup,M.cupOrbit(slots[i],table.clientWidth,table.clientHeight,rotation),{duration:22000,easing:'linear'})));clearTimeout(remask);
+      const rotation=Math.random()*15,remask=setTimeout(()=>{if(alive(id))M.shuffled(cups)[0].append(prize)},15500);
+      await Promise.all(cups.map((cup,i)=>animate(cup,M.cupOrbit(slots[i],table.clientWidth,table.clientHeight,rotation),{duration:28000,easing:'linear'})));clearTimeout(remask);
       slots=slots.map(slot=>slot+rotation);cups.forEach((cup,i)=>place(cup,slots[i]));
     }
     if(!alive(id))return;cups.forEach(cup=>{cup.style.opacity='1';cup.getAnimations().forEach(a=>a.cancel());});
@@ -57,7 +57,7 @@
     else if(cup.contains(prize))M.shuffled(cups.filter(other=>other!==cup))[0].append(prize);
     cup.classList.add('ms-lifted');
     if(won){
-      $('.ms-game-status').textContent='Well. That was inconvenient.';await celebrate(id);if(!alive(id))return;phase='won';prize.disabled=false;prize.focus();$('.ms-game-status').textContent='Go on, then.';
+      $('.ms-game-status').textContent='Well. That was inconvenient.';await celebrate(id);if(!alive(id))return;phase='won';localStorage.setItem('brta-ambient-access','1');prize.disabled=false;prize.focus();$('.ms-game-status').textContent='Go on, then.';
     }else{
       $('.ms-game-status').textContent='Nothing.';await wait(1100);if(!alive(id))return;const correct=prize.parentElement;correct.classList.add('ms-cup-red');await wait(650);if(!alive(id))return;correct.classList.add('ms-lifted');$('.ms-game-status').textContent='It was here.';await wait(800);if(!alive(id))return;phase='lost';$('.ms-game-exit').classList.remove('hidden');$('.ms-game-exit').focus();
     }
@@ -67,9 +67,9 @@
     await root.BRTAConfetti.cups(overlay,{reduced:reduced.matches,isActive:()=>alive(id)});
   }
 
-  function voidBackground(){return '<div class="ms-void-background" aria-hidden="true"><div class="ms-void-glow"></div><div class="ms-void-sea"><i></i><i></i><i></i></div><svg class="ms-void-crown" viewBox="0 0 100 70"><path d="M12 15 31 36 50 7 69 36 88 15 78 58H22Z"/><path d="M23 64H77"/><circle cx="50" cy="7" r="3"/><circle cx="12" cy="15" r="3"/><circle cx="88" cy="15" r="3"/></svg></div>';}
+  function voidBackground(){return '<div class="ms-void-background" aria-hidden="true"><div class="ms-void-glow"></div><div class="ms-void-sea"><i></i><i></i><i></i></div><svg class="ms-void-crown" role="button" tabindex="0" aria-label="Crown" viewBox="0 0 100 70"><path d="M12 15 31 36 50 7 69 36 88 15 78 58H22Z"/><path d="M23 64H77"/><circle cx="50" cy="7" r="3"/><circle cx="12" cy="15" r="3"/><circle cx="88" cy="15" r="3"/></svg></div>';}
   async function hidePanel(){
-    if(phase!=='void'||panelHidden)return;panelHidden=true;overlay.classList.add('ms-panel-hidden');const sheet=overlay.querySelector('.ms-sheet');sheet.inert=true;$('.ms-show-panel').classList.remove('hidden');$('.ms-show-panel').focus();const id=serial;
+    if(phase!=='void'||panelHidden)return;panelHidden=true;crownCount=0;crownPhrase='';overlay.classList.add('ms-panel-hidden');const sheet=overlay.querySelector('.ms-sheet');sheet.inert=true;$('.ms-show-panel').classList.remove('hidden');$('.ms-show-panel').focus();const id=serial;
     crownTimer=setTimeout(()=>{if(alive(id)&&phase==='void'&&panelHidden)overlay.classList.add('ms-crown-visible')},5850);
   }
   function showPanel(){if(phase!=='void')return;panelHidden=false;clearTimeout(crownTimer);overlay.classList.remove('ms-panel-hidden','ms-crown-visible');overlay.querySelector('.ms-sheet').inert=false;$('.ms-show-panel').classList.add('hidden');$('[data-ms="hide-panel"]').focus({preventScroll:true});}
@@ -82,6 +82,7 @@
       '<div class="settings-group"><button class="button secondary" data-ms="admin" type="button">Gain Administrative Powers</button></div>'+
       '<div class="settings-group"><label class="setting-row"><span><b>Reverse Orientation</b></span><select data-ms-pref="inverted"><option value="normal" '+(!prefs.inverted?'selected':'')+'>Right side up</option><option value="inverted" '+(prefs.inverted?'selected':'')+'>Upside down</option></select></label></div>'+
       '<div class="settings-group"><label class="setting-row"><span><b>Enable Narrator</b></span><input class="ms-switch" role="switch" type="checkbox" data-ms-pref="narrator" '+(prefs.narrator?'checked':'')+'></label></div>'+
+      '<div class="settings-group"><label class="setting-row"><span><b>Enable More Bands</b><small>A less conventional scale.</small></span><input class="ms-switch" type="checkbox" data-ms-pref="moreBands" '+(prefs.moreBands?'checked':'')+'></label></div>'+
       '<button class="button primary ms-return" data-ms="return" type="button">Return</button>');
     pressureControls();overlay.querySelector('input').focus();E.refresh();
   }
@@ -120,6 +121,7 @@
        quotes:['Did you know? This website calculates ratings.','The Settings button opens Settings. Usually.','No administrative powers were gained today.','The void has excellent contrast.','Your cursor has remained a cursor throughout.','Please remain approximately where you are.','A watched progress wheel still takes its time.']});
   }
   function click(event){
+    if(event.target.closest('.ms-void-crown')&&phase==='void'&&panelHidden&&overlay.classList.contains('ms-crown-visible')){crownCount++;crownPhrase='';root.BRTASequence?.prime();return;}
     const option=event.target.closest('[data-ms-pressure-option]');if(option){setPressureTarget(Number(option.dataset.msPressureOption)/100);return;}
     const action=event.target.closest('[data-ms]')?.dataset.ms;if(!action||!enabled())return;
     if(action==='close'&&phase==='gate')close();
@@ -137,7 +139,7 @@
     if(action==='return'&&phase==='void')longReturn();
   }
   function input(event){if(event.target.matches('[data-ms-confirm]')){$('[data-ms="confirm-yes"]').disabled=phase!=='confirm'||event.target.value!==M.confirmations[step].phrase;return;}if(event.target.matches('[data-ms-range]')){const target=Number(event.target.value)/100;event.target.value=String(Math.round(prefs.pressure*100));setPressureTarget(target);}}
-  function change(event){const key=event.target.dataset.msPref;if(!key)return;if(key==='black')event.target.closest('.ms-black-swatch')?.classList.toggle('selected',event.target.checked);prefs[key]=key==='inverted'?event.target.value==='inverted':event.target.checked;save();applyPreferences();if(key==='narrator'&&prefs.narrator)speak('Narrator enabled.',true);}
+  function change(event){const key=event.target.dataset.msPref;if(!key)return;if(key==='black')event.target.closest('.ms-black-swatch')?.classList.toggle('selected',event.target.checked);prefs[key]=key==='inverted'?event.target.value==='inverted':event.target.checked;save();applyPreferences();if(key==='moreBands')root.dispatchEvent(new Event('brta-bands-toggle'));if(key==='narrator'&&prefs.narrator)speak('Narrator enabled.',true);}
   function syncThemeOptions(){
     const available=enabled()&&prefs.black;if(!available&&root.BRTASitePreferences?.getTheme()==='black-plus')root.BRTASitePreferences.setTheme('dark');
     const select=$('#themeSelect');if(!select)return;
@@ -198,6 +200,7 @@
   });
   document.addEventListener('pointerout',event=>{if(!event.target.contains(event.relatedTarget))clearTimeout(narratorTimer);});
   document.addEventListener('keydown',event=>{
+    if(phase==='void'&&panelHidden&&crownCount===13&&event.key.length===1){crownPhrase=(crownPhrase+event.key.toLowerCase()).slice(-12);if(crownPhrase===String.fromCharCode(105,32,108,111,118,101,32,99,114,111,119,110)){phase='sequence';root.BRTASequence?.start(overlay);return;}}
     if(phase==='closed'||event.target.closest('#msNarrator,.wg-game'))return;
     if(event.key==='Escape'){event.preventDefault();event.stopImmediatePropagation();if(phase==='gate')close();else if(phase==='lost')gate();return;}
     if(['transition','shuffle','reveal','returning','confirm-loading'].includes(phase)&&['Tab','Enter',' ','ArrowUp','ArrowDown','ArrowLeft','ArrowRight','Home','End'].includes(event.key)){event.preventDefault();event.stopImmediatePropagation();return;}
@@ -205,5 +208,5 @@
     if(event.key==='Tab'){const focusable=[...overlay.querySelectorAll('button,input,select,[tabindex="0"]'),...document.querySelectorAll('#msNarrator button')].filter(e=>!e.disabled&&!e.closest('.hidden,[inert]')&&e.getClientRects().length);if(!focusable.length){event.preventDefault();return;}const first=focusable[0],last=focusable.at(-1);if(event.shiftKey&&(document.activeElement===first||!overlay.contains(document.activeElement))){event.preventDefault();last.focus()}else if(!event.shiftKey&&(document.activeElement===last||!overlay.contains(document.activeElement))){event.preventDefault();first.focus()}}
   },true);
   root.addEventListener('brta-module-toggle',()=>{if(!enabled()&&phase!=='closed')close();bindSettings();applyPreferences();});
-  root.MoreSettings=Object.freeze({bindSettings});bindSettings();applyPreferences();
+  root.AmbientPanel=Object.freeze({bindSettings});bindSettings();applyPreferences();
 })(window);

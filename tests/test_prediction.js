@@ -1,5 +1,5 @@
 const assert=require('assert');
-const P=require('../prediction.js');
+const P=require('../web/models/prediction.js');
 
 function approx(actual,expected,tolerance=1e-9){
   assert.ok(Math.abs(actual-expected)<=tolerance,`expected ${actual} ≈ ${expected}`);

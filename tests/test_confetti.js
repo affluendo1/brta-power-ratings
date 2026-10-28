@@ -10,7 +10,7 @@ const vm=require('node:vm');
     const piece={style:{setProperty:(key,value)=>values[key]=value},dataset:{},values,remove(){this.removed=true},getAnimations:()=>[{finished}],finish:resolve,cancel:reject};
     elements.push(piece);return piece;
   }}};
-  vm.runInNewContext(fs.readFileSync(require.resolve('../confetti.js'),'utf8'),context);
+  vm.runInNewContext(fs.readFileSync(require.resolve('../web/features/confetti.js'),'utf8'),context);
   const C=context.window.BRTAConfetti,parent={append(...pieces){pending.push(...pieces)}};
   const sid=C.create({count:260}),slow=C.create({count:500,slow:4});
   assert.equal(sid.length,260);assert.equal(slow.length,500);

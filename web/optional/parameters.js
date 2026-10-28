@@ -36,9 +36,9 @@
     for(let i=0;i<count;i++){elapsed+=times[i];progress+=advances[i];plan.push({at:i===count-1?duration:elapsed/totalTime*duration,value:i===count-1?100:Math.min(99,Math.floor(progress/totalProgress*100))});}
     return plan;
   }
-  function cupWin(random=Math.random){return random()<1/3}
+  function cupWin(random=Math.random){return random()<1/5}
   function cupPoint(slot,width,height){const angle=slot/15*Math.PI*2;return{x:(.5+.42*Math.cos(angle))*width,y:(.5+.35*Math.sin(angle))*height}}
-  function cupOrbit(slot,width,height,rotation=0){const origin=cupPoint(slot,width,height);return Array.from({length:2641},(_,i)=>{const t=i/2640,base=t-Math.sin(2*Math.PI*t)/(2*Math.PI),reorient=t<.46?0:t>.54?1:(t-.46)/.08,angle=(slot/15+36*base+rotation/15*(reorient*reorient*(3-2*reorient)))*2*Math.PI,pulse=Math.sin(Math.PI*t)**2;return{offset:t,transform:'translate('+((.5+(.42-.025*pulse)*Math.cos(angle))*width-origin.x)+'px,'+((.5+(.35+.018*pulse)*Math.sin(angle))*height-origin.y)+'px)'}})}
+  function cupOrbit(slot,width,height,rotation=0){const origin=cupPoint(slot,width,height),steps=3600;return Array.from({length:steps+1},(_,i)=>{const t=i/steps;let turns;if(t<=.44){const u=t/.44;turns=2*(u-Math.sin(2*Math.PI*u)/(2*Math.PI))}else{const u=(t-.44)/.56;turns=2+52*(u-Math.sin(2*Math.PI*u)/(2*Math.PI))}const reorient=Math.max(0,Math.min(1,(t-.66)/.08)),angle=(slot/15+turns+rotation/15*(reorient*reorient*(3-2*reorient)))*2*Math.PI,pulse=Math.sin(Math.PI*t)**2;return{offset:t,transform:'translate('+((.5+(.42-.025*pulse)*Math.cos(angle))*width-origin.x)+'px,'+((.5+(.35+.018*pulse)*Math.sin(angle))*height-origin.y)+'px)'}})}
   function progressAt(plan,elapsed){const index=plan.findIndex(p=>p.at>elapsed);if(index<0)return 100;if(index===0)return 0;const a=plan[index-1],b=plan[index],t=(elapsed-a.at)/(b.at-a.at);return a.value+(b.value-a.value)*t;}
   function cupPath(from,to,width,height,random=Math.random){
     const a=cupPoint(from,width,height),b=cupPoint(to,width,height),arcX=(random()-.5)*width*.3,arcY=(random()<.5?-1:1)*height*(.12+random()*.32);
@@ -56,5 +56,5 @@
     {text:'Great! You’ve cancelled your confirmation.',yes:'OKAY'}
   ];
   const api={alphabet,glyphs,numerals,translate,name,shuffled,pressure,rates,progressPlan,progressAt,cupWin,cupPoint,cupPath,cupOrbit,confirmations};
-  root.MoreSettingsModel=api;if(typeof module!=='undefined')module.exports=api;
+  root.AmbientParameters=api;if(typeof module!=='undefined')module.exports=api;
 })(typeof window!=='undefined'?window:globalThis);

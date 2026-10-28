@@ -1,11 +1,6 @@
 const CACHE_PREFIX="brta-power-ratings-";
-const CACHE_NAME=CACHE_PREFIX+"shell-v51";
-const SHELL_FILES=[
-  "./","index.html","maps.js?v=1","site.css","future.css","style.css","archive.css?v=12","waiting-game.js?v=2","app.js?v=49","layout-model.js?v=2","layout.js?v=4","layout.css?v=5","rating-worker.js?v=2","changelog-data.js?v=7","changelog.js?v=2","changelog.css?v=1","more-settings-model.js?v=4","more-settings-effects.js?v=1","more-settings.js?v=5","more-settings.css?v=4","assets/kavac-display.woff?v=2","team-lab.js?v=1","team-lab-ui.js?v=2","team-lab.css?v=1","player-search.js?v=1","player-search.css?v=1","custom-section-model.js?v=3","custom-section-tools.js?v=3","custom-sections.js?v=8","custom-sections.css?v=6","rating-history.js?v=2","auxiliary-module.js?v=3","confetti.js?v=3","archive.js?v=12",
-  "prediction.js?v=3","pwa.js","data.js","manifest.webmanifest",
-  "assets/brta-logo.png","assets/brta-icon-180.png",
-  "assets/brta-icon-192.png","assets/brta-icon-512.png","assets/gong.mp3"
-];
+const CACHE_NAME=CACHE_PREFIX+"shell-v80";
+const SHELL_FILES=["web/styles/site.css?v=80","web/styles/style.css?v=80","web/styles/future.css?v=80","./","index.html","data.js","manifest.webmanifest","web/workers/rating-worker.js?v=80","assets/kavac-display.woff?v=80","assets/sequence-impact.mp3","assets/gong.mp3","assets/brta-icon-180.png?v=80","assets/brta-icon-192.png?v=80","manifest.webmanifest?v=80","web/optional/collection.css?v=80","web/styles/custom-sections.css?v=80","web/styles/player-search.css?v=80","web/styles/team-lab.css?v=80","web/styles/changelog.css?v=80","web/optional/ambient.css?v=80","web/styles/layout.css?v=80","web/styles/polish.css?v=80","assets/brta-logo.png?v=80","data.js?v=80","web/models/prediction.js?v=80","web/optional/records.js?v=80","web/models/rating-history.js?v=80","web/models/custom-section-model.js?v=80","web/models/custom-section-tools.js?v=80","web/features/custom-sections.js?v=80","web/features/player-search.js?v=80","web/models/team-lab.js?v=80","web/features/team-lab-ui.js?v=80","web/features/changelog-data.js?v=80","web/features/changelog.js?v=80","web/optional/parameters.js?v=80","web/optional/presentation.js?v=80","web/models/layout-model.js?v=80","web/features/maps.js?v=80","web/features/waiting-game.js?v=80","web/core/app.js?v=80","web/core/layout.js?v=80","web/features/confetti.js?v=80","web/features/archive.js?v=80","web/optional/sequence.js?v=80","web/optional/controls.js?v=80","web/models/lab-model.js?v=80","web/features/labs.js?v=80","web/core/polish.js?v=80","web/core/pwa.js?v=80"];
 const scopedUrl=path=>new URL(path,self.registration.scope).href;
 self.addEventListener("install",event=>{
   event.waitUntil((async()=>{

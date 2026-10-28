@@ -1,4 +1,4 @@
-const assert=require('assert'),T=require('../custom-section-tools.js'),{sample}=require('./test_custom_sections.js');
+const assert=require('assert'),T=require('../web/models/custom-section-tools.js'),{sample}=require('./test_custom_sections.js');
 const empty=()=>({...sample(),rounds:[]}),copy=x=>JSON.parse(JSON.stringify(x));
 let s=empty(),before=JSON.stringify(s),rounds=T.parse('Round 1 | 18/10/2026\nA v B\n\nRound 2 | 25/10/2026\nB | A',s,{number:1,date:'2026-10-18'});
 assert.equal(rounds.length,2);assert.equal(rounds[0].date,'2026-10-18');assert.equal(rounds[0].fixtures[0].rubbers.length,0);assert.equal(rounds[0].fixtures[0].status,'Scheduled');assert.equal(JSON.stringify(s),before);
@@ -38,7 +38,7 @@ f.homeDoublesPairs=[['p6','p5'],['p2','p1']];T.lineup(s,f,'home',['p1','p2','p6'
 delete f.homeDoublesPairs;assert.equal(T.generate(s,f).filter(m=>m.type==='Doubles')[0].home.length,2,'Removing a squad player replaces invalid automatic defaults.');
 console.log('Custom doubles selection, existing pair order, specialists, emergencies and deselection checks: passed');
 // Roster replacement preserves identities by name, independent of line and registered order.
-const M=require('../custom-section-model.js');
+const M=require('../web/models/custom-section-model.js');
 let roster=sample(),original=JSON.stringify(roster),built=M.build(roster),exported=T.rosterText(roster);
 assert(exported.includes('Alice | A | 1 | '));assert(exported.includes('Emergency |  | 1 | E'));
 let preview=T.replaceRoster(roster,'Amy | A | 99\nAlice | A | 88\nNew Player | A | 55\nBen | B | 8\nBob | B | 7',{renumber:true}),edited=preview.section;

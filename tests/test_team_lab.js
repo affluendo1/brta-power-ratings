@@ -1,4 +1,4 @@
-const assert=require('assert'),M=require('../team-lab.js');
+const assert=require('assert'),M=require('../web/models/team-lab.js');
 const roster=['John Smith','Core Two','Core Three','Core Four','Hudson Jones','Guest Emergency'];
 const payload={meta:{section_code:'local-demo',is_custom:true,customRules:{singlesSlots:4,doublesSlots:2}},format:'sets',
  customRoster:roster.map((name,i)=>({name,team:'A',teamId:'a',order:i+1,emergency:i===5})),

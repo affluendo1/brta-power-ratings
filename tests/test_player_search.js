@@ -1,4 +1,4 @@
-const assert=require('assert'),S=require('../player-search.js');
+const assert=require('assert'),S=require('../web/features/player-search.js');
 const index={players:['José O’Neill','Other Person'],sections:[
   {seasonKey:'AA:2024',seasonLabel:'Spring 2024',competitionCode:'AA',sectionLabel:'2'},
   {seasonKey:'UA:2026',seasonLabel:'Autumn 2026',competitionCode:'UA',sectionLabel:'1'},

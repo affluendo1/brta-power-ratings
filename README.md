@@ -1,13 +1,13 @@
 # BRTA Power Ratings
 
-**Current version: 7.1.1.1**
+**Current version: 8.0**
 
 [Open the live site](https://affluendo1.github.io/brta-power-ratings/)
 
 ### Version and changelog
 
 Open **Settings → Changelog** to see the latest website update or expand entries
-in **Full history**. The Settings version and both views use `changelog-data.js`.
+in **Full history**. The Settings version and both views use `web/features/changelog-data.js`.
 Entries contain concise user-facing changes; routine results checks are excluded,
 and Easter-egg notes remain deliberately vague. Only substantial updates have titles.
 Dates use Melbourne time and round to an hour for major/large updates, 30 minutes
@@ -15,7 +15,7 @@ for small updates, and 10 minutes for tiny updates. Release numbers use dotted l
 update, `7.1.1` is a smaller follow-up, and `7.1.1.1` is a further revision.
 Each level counts independently, so `6.10` follows `6.9`. Older compact numbers
 are now dotted too: `6.101` becomes `6.1.1` and `7.01` becomes `7.0.1`.
-Layout Overhaul is `7.1`; its follow-up is `7.1.1`.
+The work previously labelled `7.1`, `7.1.1` and `7.1.1.1` is consolidated into `8.0`.
 
 To publish a website release, prepend an entry with its version, commit timestamp,
 size and changes; add a short title only for a substantial update. Bump the data asset version
@@ -69,7 +69,7 @@ turn off the automatic-status checkbox. Tab or Enter moves between score boxes.
 Optional home/away competition-point overrides handle manual
 adjustments without changing the scorecard or player ratings.
 
-**Section setup → Rating calculation model** chooses V3 (default) or V3B for
+**Section setup → Rating calculation model** chooses RM3 (default) or RM3b for
 that custom section. V3B retains V3's logistic scale (0.75), 365-day half-life,
 L2 penalty (5), and displayed power scale (1500 + 600θ). Its composite likelihood
 adds evidence in game-equivalent units: each normal game has weight 1, each set
@@ -127,7 +127,7 @@ The five main views are:
 - **Results** — round-by-round fixture results and scorecards, including singles and doubles order where TROLS provides it. A bye occupies its own card in seven-team rounds.
 - **Standings** — current-season ladder calculations, or the published final TROLS ladder for an archived season when one is available. The standings view also shows recorded or projected semifinals and grand finals.
 - **Ratings** — singles, recurring doubles pairs, individual doubles and Overall tables. Player rows open Player Lab.
-- **Teams** — a grid of team pills opening full-screen Team Lab: the squad, chronological selection grid, doubles partnerships, emergencies and suggested lineups.
+- **Teams** — sticky team tabs with compact lineups, doubles configurations, chronological selections, emergencies and suggested squads.
 - **Fixtures** — the official TROLS draw, including completed and future fixtures. A recorded fixture opens its result; a scheduled fixture opens the Prediction Centre. Upcoming rounds have a button to simulate their scheduled ties.
 
 Other views are opened from the header or player profiles:
@@ -203,10 +203,12 @@ evidence. History is opened from the home page, alongside the current version.
 **Export Section Results** downloads the results CSV without internal fixture IDs.
 **Export Complete Section** downloads an HTML report containing ratings, bands,
 round history, standings, fixtures and scorecards. Provisional entries can be
-shown with the checkbox beside these export links.
+shown with the checkbox beside these export links. Rating-model selection lives
+at the bottom of Methodology; enabling RM3b requires confirmation. Display also
+offers persistent animation and system-font preferences. Custom sections can
+choose the number of semifinal positions shown on the ladder.
 
-Extras also reveals More Settings. Its return screen includes optional Snake,
-with keyboard controls on desktop and board swipes on mobile.
+Extras also reveals More Settings, with optional surprises saved on this device.
 
 ## Data flow and automation
 
@@ -230,24 +232,31 @@ Historical importing is separate from routine sync: `scraper/backfill_history.py
 
 The site is a static client-side app. Its manifest and service worker support installation on desktop and iOS and cache the app shell. Section data is loaded on demand, so offline access to every section or archived season is not guaranteed.
 
-## Repository map
+## Frontend architecture
 
-| Path | Purpose |
+The site is a static app with no build step. `index.html` declares dependency order;
+`sw.js` caches that same release’s shell. Data files remain at their established
+URLs so current and archived section payloads continue to load normally.
+
+| Directory | Responsibility |
 | --- | --- |
-| `index.html`, `app.js` | Site structure and interface behavior |
-| `prediction.js` | Fixture prediction and tie-probability calculations |
-| `pwa.js`, `sw.js`, `manifest.webmanifest` | Install guidance, app metadata and service-worker caching |
-| `future.css`, `style.css`, `site.css` | Default and Classic presentation styles |
-| `model.py` | V3 singles rating fit and uncertainty |
-| `generate_site_data.py` | Current-section ratings, doubles, history, standings, results and fixtures |
-| `generate_archive_site_data.py` | Archived-section payloads and History catalogue |
-| `scraper/sync_trols.py` | Active-season TROLS scraper |
-| `scraper/backfill_history.py` | Past-season TROLS importer |
-| `data/current/` | Active-season catalogue and source result files |
-| `data/site/` | Generated current-season section payloads |
-| `data/archive/` | Imported historical records and generated archive payloads |
-| `tests/` | Model, scraper, generator and prediction regression tests |
-| `validation/` | Walk-forward V2/V3 evaluation harness and input contract |
+| `web/core/` | Application state, navigation, settings and progressive installation |
+| `web/models/` | Pure rating, history, prediction, roster and lab computations |
+| `web/features/` | Player/pair labs, Teams, custom editor, search, history and changelog |
+| `web/workers/` | Background rating-model recalculation |
+| `web/styles/` | Shared design, responsive layouts and feature presentation |
+| `web/optional/` | Isolated optional presentation modules |
+| `assets/` | Images, fonts and audio |
+| `scraper/`, `generate_*.py`, `model.py` | Source ingestion and generated section data |
+| `data/current/`, `data/site/`, `data/archive/` | Source records and published payloads |
+| `tests/`, `validation/` | Regression checks and model validation |
+
+Models expose small browser APIs and CommonJS exports for direct Node tests.
+Feature scripts consume those APIs; the lab model scopes records and ratings to
+the selected round before rendering. The background worker imports its model
+scripts relative to `web/workers/`. Browser data and asset URLs stay relative to
+the site root document. Optional modules are deliberately separate from normal
+competition navigation.
 
 ## Run locally
 
@@ -318,3 +327,24 @@ fallback when doubles Power is unavailable. Standard Sets and Rubbers pairings
 are searched exhaustively; unusually large custom formats use a bounded search.
 These suggestions follow the section’s match counts and indicate limited or
 untested evidence. They do not establish player availability or finals eligibility.
+
+### Player and pair labs
+
+Player Lab combines singles, individual doubles and overall Power with section
+ranks, round histories and match explorers. Each chart switches between Power and
+ranking. Lineup cards open the team’s order without losing your place. The match
+explorer includes doubles, compact opponent names and the player’s partner. If
+Pair Power is unavailable, it uses the mean of the two individual doubles ratings
+and marks that fallback. Clicking a partnership or the slash between pair members
+opens Doubles Pair Lab.
+
+Higher/lower-rated records compare opponents immediately before each match. Equal
+pre-match ratings use the selected context’s later rating, then alphabetical
+order if still tied. Historical labs never use rounds after their chosen cutoff.
+Strength-of-schedule rankings exclude provisional players by default, with an
+optional checkbox to include them. Close matches mean a two-game margin in Sets
+or a deciding set/tiebreak in Rubbers.
+
+Opening a scorecard layers it above the current view: it does not change tabs.
+Team selection remains inline with sticky team tabs, compact registered/observed
+lineups, emergencies, doubles configurations and round-selection tables.

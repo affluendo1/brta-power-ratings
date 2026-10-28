@@ -1,5 +1,5 @@
 const assert=require('assert');
-const H=require('../rating-history.js');
+const H=require('../web/models/rating-history.js');
 const row=(player,rating,matches=4)=>({player,rating,matches,se:100,team:'Club'});
 const data={singles:[row('Alice',1600),row('Bob',1700),row('New',1650),row('Provisional',2000,2)],
   ratingHistory:{rounds:[{round:5},{round:6},{round:7}],tables:{

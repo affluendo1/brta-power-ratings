@@ -1,4 +1,4 @@
-const assert=require('assert'),M=require('../custom-section-model.js'),H=require('../rating-history.js');
+const assert=require('assert'),M=require('../web/models/custom-section-model.js'),H=require('../web/models/rating-history.js');
 const copy=x=>JSON.parse(JSON.stringify(x));
 function sample(){return {id:'local-test',name:'My league',season:'Spring 2026',format:'sets',setTarget:6,doublesTarget:6,singlesBestOf:1,doublesBestOf:1,singlesSlots:2,doublesSlots:1,updatedAt:'2026-10-18T04:00:00Z',teams:[{id:'a',name:'A'},{id:'b',name:'B'}],players:[{id:'p1',name:'Alice',teamId:'a',order:1},{id:'p2',name:'Amy',teamId:'a',order:2},{id:'p3',name:'Bob',teamId:'b',order:1},{id:'p4',name:'Ben',teamId:'b',order:2},{id:'p5',name:'Emergency',teamId:'',order:1,emergency:true}],rounds:[1,2,3,4,5].map(number=>({id:'round-'+number,number,date:'2026-10-'+String(number*2).padStart(2,'0'),fixtures:[{id:'match-'+number,homeTeamId:'a',awayTeamId:'b',status:number===5?'Scheduled':'Completed',homeLineup:['p1','p2'],awayLineup:['p3','p4'],rubbers:number===5?[]:[
   {type:'Singles',position:1,status:'Completed',home:['p1'],away:['p3'],sets:[{h:6,a:2}],homeEmergencies:[false],awayEmergencies:[false]},
@@ -66,3 +66,5 @@ console.log('Custom section validation, scorecards, emergencies, team points, mo
 if(process.argv.includes('--json'))console.log(JSON.stringify(data));
 }
 module.exports={sample};
+
+{const section=sample();section.semifinalPlaces=2;assert.equal(M.build(section).meta.semifinalPlaces,2);section.semifinalPlaces=0;assert.equal(M.build(section).meta.semifinalPlaces,0);section.semifinalPlaces=-1;assert.throws(()=>M.validate(section));}

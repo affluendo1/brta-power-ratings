@@ -29,7 +29,7 @@ body.portal-active{background:#05070d;color:#f8f1df;overflow-x:hidden;overflow-y
 @media(prefers-reduced-motion:reduce){.mode-switch.royal-transition::before{animation:none}}
 
 /* Basavision: the throne remains behind every chapter; content is deliberately glass, not a new opaque page. */
-.royal-archive{background:linear-gradient(90deg,rgba(2,5,13,.89),rgba(3,8,21,.63) 52%,rgba(2,5,14,.86)),url('assets/sid-throne-hero.png') center 30%/cover fixed!important}
+.royal-archive{background:linear-gradient(90deg,rgba(2,5,13,.89),rgba(3,8,21,.63) 52%,rgba(2,5,14,.86)),url('../../assets/sid-throne-hero.png') center 30%/cover fixed!important}
 .royal-archive::before{opacity:.52!important;background-image:linear-gradient(90deg,transparent 49.8%,rgba(252,211,118,.12) 50%,transparent 50.2%),linear-gradient(rgba(255,255,255,.024) 1px,transparent 1px)!important}
 .archive-section,.archive-plaque{border-left:1px solid rgba(255,231,164,.12);border-right:1px solid rgba(255,231,164,.12);background:linear-gradient(130deg,rgba(5,10,25,.76),rgba(12,22,49,.48));backdrop-filter:blur(13px) saturate(1.18);box-shadow:0 22px 60px rgba(0,0,0,.24),inset 0 1px rgba(255,239,180,.08)}
 .archive-section{padding-left:clamp(18px,4vw,55px);padding-right:clamp(18px,4vw,55px)}
@@ -50,7 +50,7 @@ body.portal-active{background:#05070d;color:#f8f1df;overflow-x:hidden;overflow-y
 @media(prefers-reduced-motion:reduce){.royal-idle-symbol,.royal-side-quote,.royal-trophy,.crown-item::before,.record-stat::after,.record-stat b,.archive-image-frame::before,.sid-effect-button{animation:none!important}.sid-rise-figure{animation:sidPop .8s ease both!important}.royal-confetti{display:none}}
 
 /* Royal archive, version 25: one uninterrupted glass gallery over Sid's throne. */
-.royal-archive{background:radial-gradient(circle at 50% 12%,rgba(255,223,132,.34),transparent 23%),linear-gradient(90deg,rgba(2,5,13,.88),rgba(13,9,5,.45) 51%,rgba(2,5,14,.83)),url('assets/sid-throne-hero.png') center 30%/cover fixed!important}
+.royal-archive{background:radial-gradient(circle at 50% 12%,rgba(255,223,132,.34),transparent 23%),linear-gradient(90deg,rgba(2,5,13,.88),rgba(13,9,5,.45) 51%,rgba(2,5,14,.83)),url('../../assets/sid-throne-hero.png') center 30%/cover fixed!important}
 .archive-hero{border-bottom:0}
 .hero-copy{width:min(1170px,calc(100% - 24px));padding-left:clamp(8px,1.3vw,19px);padding-right:clamp(8px,1.3vw,19px);overflow:visible}
 .hero-copy h1{display:block;width:fit-content;max-width:100%;margin:0;padding:.055em .07em .13em;overflow:visible;font-size:clamp(34px,7.7vw,118px);line-height:1.035;letter-spacing:.01em;white-space:normal;background-image:repeating-linear-gradient(90deg,#fff7d6 0 56px,#e1aa3d 101px,#fff8d8 152px,#b67821 222px,#fff6d0 282px,#fff7d6 320px);background-size:auto 100%;background-position:0 0;animation:sidGoldContinuum 7.2s linear infinite}

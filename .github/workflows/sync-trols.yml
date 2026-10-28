@@ -11,24 +11,15 @@ on:
       - "model.py"
       - "generate_site_data.py"
       - "generate_archive_site_data.py"
-      - "app.js"
-      - "more-settings-model.js"
-      - "more-settings-effects.js"
-      - "more-settings.js"
-      - "more-settings.css"
-      - "rating-history.js"
-      - "player-search.js"
-      - "team-lab.js"
-      - "team-lab-ui.js"
-      - "team-lab.css"
+      - "web/**"
       - "generate_player_search.py"
-      - "custom-section-model.js"
-      - "custom-sections.js"
-      - "custom-section-tools.js"
+      - "web/models/custom-section-model.js"
+      - "web/features/custom-sections.js"
+      - "web/models/custom-section-tools.js"
       - "index.html"
-      - "style.css"
-      - "future.css"
-      - "prediction.js"
+      - "web/styles/style.css"
+      - "web/styles/future.css"
+      - "web/models/prediction.js"
       - "tests/**"
       - "requirements.txt"
       - ".github/workflows/sync-trols.yml"
@@ -109,13 +100,7 @@ jobs:
       - name: Run model, scraper and generator regression tests
         run: |
           python -m unittest discover -s tests -v
-          node tests/test_prediction.js
-          node tests/test_rating_history.js
-          node tests/test_player_search.js
-          node tests/test_team_lab.js
-          node tests/test_custom_sections.js
-          node tests/test_custom_section_tools.js
-          node tests/test_more_settings.js
+          for test in tests/*.js; do node "$test"; done
 
       - name: Recalculate all ratings and website data
         run: python generate_site_data.py

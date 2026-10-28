@@ -5,7 +5,7 @@ function bands(rows,qualified=()=>true){
  const values=rows.filter(qualified).map(r=>r.rating).filter(Number.isFinite).sort((a,b)=>a-b);
  if(!values.length)return{names,bounds:[],cuts:[],classFor:()=>''};
  // Balanced groups, with each threshold placed in an actual gap. Equal ratings stay together.
- const cuts=[.86,.68,.5,.32,.14].map(q=>{const at=Math.min(values.length-1,Math.max(1,Math.round(values.length*q)));const hi=values[at],lo=[...values.slice(0,at)].reverse().find(v=>v<hi);return lo==null?hi:Math.ceil((lo+hi)/2)});
+ const cuts=[.96,.75,.5,.25,.04].map(q=>{const at=Math.min(values.length-1,Math.max(1,Math.round(values.length*q)));const hi=values[at],lo=[...values.slice(0,at)].reverse().find(v=>v<hi);return lo==null?hi:Math.ceil((lo+hi)/2)});
  if(new Set(values).size===1){const m=values[0];cuts.splice(0,5,m+200,m+100,m+1,m-100,m-200)}else for(let i=3;i>=0;i--)cuts[i]=Math.max(cuts[i],cuts[i+1]+1);
  const bounds=names.map((_,i)=>i===0?'≥ '+cuts[0]:i===5?'< '+cuts[4]:cuts[i]+'–'+(cuts[i-1]-1));
  return{names,bounds,cuts,classFor:rating=>'b'+cuts.filter(c=>rating<c).length};

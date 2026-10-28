@@ -1,32 +1,17 @@
 // Website releases, newest first. Routine result checks are not website releases.
 window.BRTA_RELEASES = Object.freeze([
-{
-    "version": "7.1.1.1",
-    "size": "tiny",
-    "committedAt": "2026-10-27T12:51:34+00:00",
+  {
+    "version": "8.0",
+    "title": "Refined",
+    "size": "major",
+    "committedAt": "2026-10-28T01:32:25+00:00",
     "changes": [
-        "Preparations for what’s next."
+      "Redesigned Player Lab and added Doubles Pair Lab, with richer histories and match explorers.",
+      "Refined Teams, standings navigation, rating bands and section exports.",
+      "Reworked Settings with font and animation controls, defaults and rating-model choices.",
+      "Added more settings and refined their surprises.",
+      "Improved navigation, layout and usability throughout the site."
     ]
-},
-  {
-      "version": "7.1.1",
-      "size": "small",
-      "committedAt": "2026-10-27T10:48:38+00:00",
-      "changes": [
-          "Refined animations, celebrations and settings descriptions."
-      ]
-  },
-  {
-      "version": "7.1",
-      "title": "Layout Overhaul",
-      "committedAt": "2026-10-27T10:12:39+00:00",
-      "size": "large",
-      "changes": [
-          "Redesigned Settings and the home controls, with separate history, methodology and rules panels.",
-          "Added complete-section exports, default section choices and the experimental RM3b model.",
-          "Refreshed standings, rating bands and movement, team pages and fixture navigation.",
-          "Added more settings, with animation and usability improvements."
-      ]
   },
   {
     "version": "7.0.1",

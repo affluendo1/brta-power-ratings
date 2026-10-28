@@ -1,4 +1,4 @@
-const assert=require('node:assert/strict'),{snakeStep}=require('../waiting-game'),M=require('../more-settings-model');
+const assert=require('node:assert/strict'),{snakeStep}=require('../web/features/waiting-game'),M=require('../web/optional/parameters');
 let s={body:[{x:2,y:2},{x:1,y:2},{x:0,y:2}],direction:{x:1,y:0},food:{x:3,y:2},score:0};let r=snakeStep(s,()=>0);assert.equal(r.score,1);assert.equal(r.body.length,4);assert(!r.body.some(p=>p.x===r.food.x&&p.y===r.food.y));assert.equal(s.body.length,3);assert(snakeStep({...s,body:[{x:19,y:2}]}).over);assert(snakeStep({...s,next:{x:0,y:1},body:[{x:2,y:2},{x:2,y:3},{x:1,y:3},{x:1,y:2}]}).over);
 for(let n=0;n<10;n++){const p=M.progressPlan(50000);let last=0;for(let t=0;t<=50000;t+=16){const x=M.progressAt(p,t);assert(x>=last&&x<=100);last=x}assert.equal(M.progressAt(p,50000),100)}
 const path=M.cupOrbit(2,1000,600,4.7),end=path.at(-1).transform.match(/[-+]?\d*\.?\d+(?:e[-+]?\d+)?/gi).map(Number),a=M.cupPoint(2,1000,600),b=M.cupPoint(6.7,1000,600);assert(Math.abs(a.x+end[0]-b.x)<1e-6);assert(Math.abs(a.y+end[1]-b.y)<1e-6);
