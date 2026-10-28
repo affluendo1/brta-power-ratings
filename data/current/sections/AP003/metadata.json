@@ -1,0 +1,113 @@
+{
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 2026/27",
+  "season_id": "AP53",
+  "season_label": "Summer 2026/27",
+  "section_code": "AP003",
+  "section_label": "Mens S/D 2",
+  "format": "sets",
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "calendar_breaks": [
+    {
+      "date": "31 Oct 26",
+      "label": "No Play",
+      "source": "https://www.trols.org.au/brta/fixture.php"
+    }
+  ],
+  "calendar_events": [
+    {
+      "date": "27 Feb 27",
+      "label": "Semi Final \u00b7 if qualified"
+    },
+    {
+      "date": "13 Mar 27",
+      "label": "Grand Final \u00b7 if qualified"
+    },
+    {
+      "date": "20 Mar 27",
+      "label": "Spare \u00b7 if required"
+    }
+  ],
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Willy Central",
+      "wins": 2,
+      "points": 24,
+      "percentage": 105.47,
+      "marker": ""
+    },
+    {
+      "position": 2,
+      "team": "Black Rock",
+      "wins": 2,
+      "points": 23,
+      "percentage": 192.59,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "BLTC",
+      "wins": 1,
+      "points": 20,
+      "percentage": 107.89,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Liston Red",
+      "wins": 1,
+      "points": 18.5,
+      "percentage": 117.65,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Mt Eliza Penins",
+      "wins": 2,
+      "points": 15.5,
+      "percentage": 83.92,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Maccabi",
+      "wins": 0,
+      "points": 10,
+      "percentage": 48.31,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Liston Blue",
+      "wins": 0,
+      "points": 9,
+      "percentage": 83.7,
+      "marker": ""
+    }
+  ],
+  "green_ball": false,
+  "results_loaded_by_trols": null,
+  "fixtures": 16,
+  "completed_fixtures": 9,
+  "draw_fixtures": 56,
+  "singles_rubbers": 34,
+  "doubles_rubbers": 18,
+  "latest_round": 4,
+  "validation": "source discrepancies",
+  "source_warnings": [
+    "Incomplete TROLS score for AP003044 singles No. 1: '0-2'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP003044 singles No. 2: '3-2'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

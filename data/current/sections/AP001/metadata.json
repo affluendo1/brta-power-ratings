@@ -1,0 +1,98 @@
+{
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 2026/27",
+  "season_id": "AP53",
+  "season_label": "Summer 2026/27",
+  "section_code": "AP001",
+  "section_label": "Mens S/D 1 NW",
+  "format": "sets",
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "calendar_breaks": [
+    {
+      "date": "31 Oct 26",
+      "label": "No Play",
+      "source": "https://www.trols.org.au/brta/fixture.php"
+    }
+  ],
+  "calendar_events": [
+    {
+      "date": "13 Mar 27",
+      "label": "Grand Final \u00b7 if qualified"
+    },
+    {
+      "date": "20 Mar 27",
+      "label": "Spare \u00b7 if required"
+    }
+  ],
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Buckley Park",
+      "wins": 2,
+      "points": 24,
+      "percentage": 220.0,
+      "marker": "*"
+    },
+    {
+      "position": 2,
+      "team": "Altona Blue",
+      "wins": 2,
+      "points": 23,
+      "percentage": 120.56,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Liston",
+      "wins": 2,
+      "points": 23,
+      "percentage": 93.7,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Altona Black",
+      "wins": 1,
+      "points": 18,
+      "percentage": 100.0,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Essendon",
+      "wins": 1,
+      "points": 14,
+      "percentage": 74.31,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Altona Gold",
+      "wins": 0,
+      "points": 8,
+      "percentage": 63.0,
+      "marker": "*"
+    }
+  ],
+  "green_ball": false,
+  "results_loaded_by_trols": null,
+  "fixtures": 12,
+  "completed_fixtures": 8,
+  "draw_fixtures": 45,
+  "singles_rubbers": 32,
+  "doubles_rubbers": 16,
+  "latest_round": 4,
+  "validation": "passed",
+  "source_warnings": []
+}

@@ -1,0 +1,104 @@
+{
+  "competition_code": "TN",
+  "competition_label": "Tuesday Night - Spring 2026",
+  "season_id": "TN41",
+  "season_label": "Spring 2026",
+  "section_code": "TN005",
+  "section_label": "Section 5",
+  "format": "sets",
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 6,
+    "doublesBestOf": 1,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "calendar_breaks": [
+    {
+      "date": "22 Sep 26",
+      "label": "No Play",
+      "source": "https://www.trols.org.au/brta/fixture.php"
+    },
+    {
+      "date": "29 Sep 26",
+      "label": "No Play",
+      "source": "https://www.trols.org.au/brta/fixture.php"
+    },
+    {
+      "date": "3 Nov 26",
+      "label": "No Play",
+      "source": "https://www.trols.org.au/brta/fixture.php"
+    }
+  ],
+  "calendar_events": [
+    {
+      "date": "1 Dec 26",
+      "label": "Grand Final \u00b7 if qualified"
+    },
+    {
+      "date": "8 Dec 26",
+      "label": "Spare \u00b7 if required"
+    }
+  ],
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "St Pauls Crusaders",
+      "wins": 6,
+      "points": 61,
+      "percentage": 120.18,
+      "marker": ""
+    },
+    {
+      "position": 2,
+      "team": "Wattle Warriors",
+      "wins": 4,
+      "points": 56,
+      "percentage": 157.05,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Carmelite Middle Park",
+      "wins": 4,
+      "points": 49.5,
+      "percentage": 95.18,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Keysborough Charizards",
+      "wins": 3,
+      "points": 35.5,
+      "percentage": 84.42,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Wattle Bloomers",
+      "wins": 1,
+      "points": 18,
+      "percentage": 60.43,
+      "marker": ""
+    }
+  ],
+  "green_ball": false,
+  "results_loaded_by_trols": null,
+  "fixtures": 33,
+  "completed_fixtures": 19,
+  "draw_fixtures": 45,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 110,
+  "latest_round": 11,
+  "validation": "source discrepancies",
+  "source_warnings": [
+    "Incomplete TROLS score for TN005011 doubles No. 5: '0-2'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for TN005011 doubles No. 6: '1-2'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for TN005052 doubles No. 3: '6-6'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

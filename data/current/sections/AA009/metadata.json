@@ -6,14 +6,55 @@
   "section_code": "AA009",
   "section_label": "Sets 7",
   "format": "sets",
+  "competition_rules": null,
+  "calendar_breaks": [
+    {
+      "date": "19 Sep 26",
+      "label": "No Play",
+      "source": "https://www.trols.org.au/brta/fixture.php"
+    },
+    {
+      "date": "26 Sep 26",
+      "label": "No Play",
+      "source": "https://www.trols.org.au/brta/fixture.php"
+    },
+    {
+      "date": "3 Oct 26",
+      "label": "No Play",
+      "source": "https://www.trols.org.au/brta/fixture.php"
+    },
+    {
+      "date": "31 Oct 26",
+      "label": "No Play",
+      "source": "https://www.trols.org.au/brta/fixture.php"
+    }
+  ],
+  "calendar_events": [
+    {
+      "date": "21 Nov 26",
+      "label": "Semi Final \u00b7 if qualified"
+    },
+    {
+      "date": "28 Nov 26",
+      "label": "Grand Final \u00b7 if qualified"
+    },
+    {
+      "date": "5 Dec 26",
+      "label": "Spare \u00b7 if required"
+    }
+  ],
+  "official_standings": [],
   "green_ball": false,
   "results_loaded_by_trols": null,
   "fixtures": 48,
   "completed_fixtures": 32,
-  "draw_fixtures": 42,
+  "draw_fixtures": 56,
   "singles_rubbers": 128,
   "doubles_rubbers": 64,
   "latest_round": 12,
-  "validation": "passed",
-  "source_warnings": []
+  "validation": "source discrepancies",
+  "source_warnings": [
+    "Incomplete TROLS score for AA009061 singles No. 1: '2-1'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AA009061 singles No. 4: '3-0'. Missing score not inferred; excluded from ratings and game totals."
+  ]
 }

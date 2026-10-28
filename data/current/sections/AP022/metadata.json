@@ -1,0 +1,98 @@
+{
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 2026/27",
+  "season_id": "AP53",
+  "season_label": "Summer 2026/27",
+  "section_code": "AP022",
+  "section_label": "Womens Rubs 2",
+  "format": "sets",
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "calendar_breaks": [
+    {
+      "date": "31 Oct 26",
+      "label": "No Play",
+      "source": "https://www.trols.org.au/brta/fixture.php"
+    }
+  ],
+  "calendar_events": [
+    {
+      "date": "13 Mar 27",
+      "label": "Grand Final \u00b7 if qualified"
+    },
+    {
+      "date": "20 Mar 27",
+      "label": "Spare \u00b7 if required"
+    }
+  ],
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Chadstone",
+      "wins": 2,
+      "points": 20,
+      "percentage": 136.73,
+      "marker": ""
+    },
+    {
+      "position": 2,
+      "team": "Hawthorn",
+      "wins": 2,
+      "points": 20,
+      "percentage": 133.98,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Overport Park Green",
+      "wins": 2,
+      "points": 19,
+      "percentage": 100.0,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Mentone",
+      "wins": 1,
+      "points": 15,
+      "percentage": 100.0,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Overport Park Gold",
+      "wins": 1,
+      "points": 14,
+      "percentage": 90.0,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Ormond",
+      "wins": 0,
+      "points": 8,
+      "percentage": 62.18,
+      "marker": ""
+    }
+  ],
+  "green_ball": false,
+  "results_loaded_by_trols": null,
+  "fixtures": 12,
+  "completed_fixtures": 9,
+  "draw_fixtures": 45,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 36,
+  "latest_round": 4,
+  "validation": "passed",
+  "source_warnings": []
+}

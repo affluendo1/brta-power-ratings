@@ -1,6 +1,6 @@
 # BRTA Power Ratings
 
-**Current version: 8.1.0.1**
+**Current version: 8.2**
 
 [Open the live site](https://affluendo1.github.io/brta-power-ratings/)
 
@@ -116,30 +116,31 @@ restores or transfers them to another browser; matching section IDs are replaced
 only after confirmation. Backups contain your custom competition data.
 Clearing site data removes local sections, so keep backups.
 
-BRTA Power Ratings is an unofficial analytics site for BRTA Saturday AM and Sunday AM junior tennis. It is not affiliated with BRTA, Tennis Australia or UTR. Match records come from TROLS and are treated as official-as-entered records; the site does not claim that a nominated player was necessarily the player who physically took the court.
+BRTA Power Ratings is an unofficial analytics site for BRTA Saturday AM/PM, Sunday AM, Tuesday AM/Night, Wednesday AM and Thursday AM tennis. It is not affiliated with BRTA, Tennis Australia or UTR. Match records come from TROLS and are treated as official-as-entered records; the site does not claim that a nominated player was necessarily the player who physically took the court.
 
 ## What the site does
 
 The site lets you select a competition, season and section, then view that section's results, standings, ratings, team summaries and fixtures. Each section is fitted as its own opponent network. Ratings from different sections are not a combined ranking and should not be compared as if the players had all played one another.
 
-The five main views are:
+The six main views are:
 
 - **Results** — round-by-round fixture results and scorecards, including singles and doubles order where TROLS provides it. A bye occupies its own card in seven-team rounds.
 - **Standings** — current-season ladder calculations, or the published final TROLS ladder for an archived season when one is available. The standings view also shows recorded or projected semifinals and grand finals.
 - **Ratings** — singles, recurring doubles pairs, individual doubles and Overall tables. Player rows open Player Lab.
 - **Teams** — sticky team tabs with compact lineups, doubles configurations, chronological selections, emergencies and suggested squads.
 - **Fixtures** — the official TROLS draw, including completed and future fixtures. A recorded fixture opens its result; a scheduled fixture opens the Prediction Centre. Upcoming rounds have a button to simulate their scheduled ties.
+- **Rounds** — round highlights beside a personalised team calendar and calendar exports.
 
 Other views are opened from the header or player profiles:
 
 - **Player Lab** includes the player's matchup outlook, actual-versus-expected results, schedule difficulty, form, rating history and doubles evidence. Historical Player Lab views use the selected round's ratings and results.
-- **Club Zone** combines colour-suffixed teams into one club and shows its complete Saturday or Sunday AM archive, with club totals and filterable section-by-section standings.
-- **Latest round** summarizes the latest round and links to its scorecards.
-- **Settings** contains display preferences, season History, methodology and BRTA rules, plus a JSON model-audit export. The section picker also links directly to past seasons. A separate control exports the selected section's match and fixture data as CSV.
+- **Club Zone** is under maintenance while the logistics and map experience is prepared.
+- **Rounds** combines round highlights with your team’s week-by-week calendar, published no-play dates, starting times and calendar downloads.
+- **Settings** contains display preferences, Theme Studio, methodology and BRTA rules. The section picker also links directly to past seasons. A separate control exports the selected section's match and fixture data as CSV.
 
 ## Competition and historical coverage
 
-The live scraper discovers the active Saturday AM and Sunday AM seasons from TROLS and follows the season IDs TROLS marks as current. Routine checks update those active seasons only; they do not repeatedly fetch finished seasons. The checked-in Spring 2026 live snapshot contains 44 sections. Future section counts depend on what TROLS publishes.
+The live scraper discovers the active seasons across all seven published BRTA competitions from TROLS and follows the season IDs TROLS marks as current. Routine checks update those active seasons only; they do not repeatedly fetch finished seasons. The 8.2 live snapshot contains 79 sections: 44 junior morning sections and 35 afternoon/weekday sections. Future section counts depend on what TROLS publishes.
 
 The History selector is backed by a separate archive catalogue and set of section files under `data/archive/`. The archive importer reads the past seasons and sections exposed by TROLS, including published scorecards, official fixture order, final ladders and playoffs. Only seasons successfully imported into that catalogue can be selected. TROLS' archive has gaps, so the feature does not imply a complete year-by-year record for both competitions. Missing results and dates are not fabricated.
 
@@ -380,3 +381,41 @@ and passes a club identity to the future Club Zone navigation callback. It is no
 mounted anywhere yet and makes no tile requests until explicitly mounted. Leaflet
 is vendored under its BSD-2-Clause licence; unused CSS image backgrounds are
 omitted because this map uses circle markers and no layer-switcher images.
+
+### Rounds, Following and Share Cards (8.2)
+
+**Rounds** replaces Latest Round. The overview works with official and custom
+sections. Choose a team beside it to see home/away fixtures, published starting
+times, no-play weeks and conditional finals dates. Open predictions or results
+without leaving Rounds; venue links open the Club Zone maintenance screen.
+Download a single fixture or all remaining scheduled fixtures as `.ics` to add
+them to a phone or desktop calendar. Times resolve Australia/Melbourne DST per
+date. Unknown starting times become all-day events. Calendar files are snapshots,
+not subscriptions: re-export after a draw change.
+
+Use **Follow** in Player Lab or Team Lab, then **★ Following** in Ratings. Pins,
+preferences and result baselines are stored in this browser. On return, an in-site
+overlay reports new or corrected scorecards for those entries. There are no push
+notifications or accounts. A pin belongs to one source season and section;
+historical snapshots do not silently switch into the next season.
+
+Every result card offers **Share**, including the opened scorecard. Player Lab
+and Team Lab offer player and lineup cards too. The editor provides a live preview,
+aspect ratios, built-in/custom accent schemes, light/dark backgrounds, and match
+display order. Result cards can show full or compact names and optional totals.
+Download the exact preview as PNG, or use native file sharing where supported.
+
+Current results now include all seven competitions exposed by TROLS: AA, AP, UA,
+TA, TN, WA and HA (79 sections at this release). The Colin and Lin Price Award is
+excluded. Additional competitions use observed scorecard match counts and set
+lengths, including doubles-only days, eight-game singles, ten-game doubles and
+multi-set doubles. Their published ladders and points remain authoritative;
+junior washout/forfeit allocations are not applied. Adult predictions describe
+observed formats and do not project competition points. Historical coverage
+remains the seasons already imported; this release does not claim a new full
+backfill of adult competitions.
+
+`web/models/matchday.js` owns calendar dates, ICS generation, scoped following
+identities and result-change comparisons. Separate feature modules own Rounds,
+Following and canvas share cards. `web/future/club-zone-shell.html` is an unmounted
+design template and does not enable Club Zone.

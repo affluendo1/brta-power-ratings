@@ -1,0 +1,118 @@
+{
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 2026/27",
+  "season_id": "AP53",
+  "season_label": "Summer 2026/27",
+  "section_code": "AP018",
+  "section_label": "Mx Rubbers 2",
+  "format": "sets",
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "calendar_breaks": [
+    {
+      "date": "31 Oct 26",
+      "label": "No Play",
+      "source": "https://www.trols.org.au/brta/fixture.php"
+    }
+  ],
+  "calendar_events": [
+    {
+      "date": "27 Feb 27",
+      "label": "Semi Final \u00b7 if qualified"
+    },
+    {
+      "date": "13 Mar 27",
+      "label": "Grand Final \u00b7 if qualified"
+    },
+    {
+      "date": "20 Mar 27",
+      "label": "Spare \u00b7 if required"
+    }
+  ],
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Hawthorn",
+      "wins": 3,
+      "points": 26,
+      "percentage": 156.52,
+      "marker": ""
+    },
+    {
+      "position": 2,
+      "team": "BLTC",
+      "wins": 3,
+      "points": 25,
+      "percentage": 114.93,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Elwood Yellow",
+      "wins": 2,
+      "points": 20,
+      "percentage": 120.0,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Mordialloc",
+      "wins": 2,
+      "points": 19,
+      "percentage": 101.59,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Elwood Green",
+      "wins": 1,
+      "points": 15,
+      "percentage": 113.79,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Tally Ho",
+      "wins": 1,
+      "points": 11,
+      "percentage": 88.59,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Ormond",
+      "wins": 0,
+      "points": 6,
+      "percentage": 79.63,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "Parkdale",
+      "wins": 0,
+      "points": 6,
+      "percentage": 55.7,
+      "marker": ""
+    }
+  ],
+  "green_ball": false,
+  "results_loaded_by_trols": null,
+  "fixtures": 16,
+  "completed_fixtures": 12,
+  "draw_fixtures": 56,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 48,
+  "latest_round": 4,
+  "validation": "passed",
+  "source_warnings": []
+}

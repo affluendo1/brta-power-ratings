@@ -1,0 +1,49 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP006021,10 Oct 26,2,Hurlingham Park,Kings Park,No. 1,Adam Neilands,Dean Metter,Adam Neilands,8-4,8,4,1,0,Completed,true,false,false
+AP006021,10 Oct 26,2,Hurlingham Park,Kings Park,No. 2,Nick Cookson,Will McLorinan,Will McLorinan,4-8,4,8,0,1,Completed,true,true,false
+AP006021,10 Oct 26,2,Hurlingham Park,Kings Park,No. 3,Adam Halliwell,Tom Dubbeld,Adam Halliwell,8-4,8,4,1,0,Completed,true,false,false
+AP006021,10 Oct 26,2,Hurlingham Park,Kings Park,No. 4,Matt Anstee,Ilan Goldsmith,Matt Anstee,8-4,8,4,1,0,Completed,true,false,false
+AP006022,10 Oct 26,2,Altona,Ormond,No. 1,Ben Chan,Lucas Nenke,Lucas Nenke,0-8,0,8,0,1,Completed,true,false,false
+AP006022,10 Oct 26,2,Altona,Ormond,No. 2,Henri De Guzman,Henry Clifton,Henri De Guzman,8-4,8,4,1,0,Completed,true,false,false
+AP006022,10 Oct 26,2,Altona,Ormond,No. 3,Xavier Ashlock,Andrew Lipson,Xavier Ashlock,8-3,8,3,1,0,Completed,true,false,false
+AP006022,10 Oct 26,2,Altona,Ormond,No. 4,Adam Stevenson,Steve Gelagin,Adam Stevenson,8-2,8,2,1,0,Completed,true,false,true
+AP006023,10 Oct 26,2,Elwood,BLTC,No. 1,Marcelo Scalia,Lochlan Friedrich,Marcelo Scalia,8-3,8,3,1,0,Completed,true,false,false
+AP006023,10 Oct 26,2,Elwood,BLTC,No. 2,James Taylor,Nicholas Alexopoulos,Nicholas Alexopoulos,1-8,1,8,0,1,Completed,true,false,false
+AP006023,10 Oct 26,2,Elwood,BLTC,No. 3,Richard Sharp,Tom Whitson,Richard Sharp,8-6,8,6,1,0,Completed,true,false,false
+AP006023,10 Oct 26,2,Elwood,BLTC,No. 4,Daniel Moynihan,Andreas Tanti,Daniel Moynihan,8-3,8,3,1,0,Completed,true,true,false
+AP006024,10 Oct 26,2,Coatesville,Glen Huntly,No. 1,Michael Burke,Antoine Maziarz,Michael Burke,8-4,8,4,1,0,Completed,true,false,false
+AP006024,10 Oct 26,2,Coatesville,Glen Huntly,No. 2,Jonathon Bong,Tate Nguyen,Tate Nguyen,1-8,1,8,0,1,Completed,true,true,false
+AP006024,10 Oct 26,2,Coatesville,Glen Huntly,No. 3,Marcus Aparo,Timothy Kalapoutis,Timothy Kalapoutis,7-8,7,8,0,1,Completed,true,true,false
+AP006024,10 Oct 26,2,Coatesville,Glen Huntly,No. 4,Jack Langdon,John Thai,Jack Langdon,8-7,8,7,1,0,Completed,true,false,true
+AP006031,17 Oct 26,3,Kings Park,Coatesville,No. 1,Dean Metter,Michael Burke,Dean Metter,8-6,8,6,1,0,Completed,true,false,false
+AP006031,17 Oct 26,3,Kings Park,Coatesville,No. 2,Will McLorinan,Jonathon Bong,Will McLorinan,8-1,8,1,1,0,Completed,true,false,true
+AP006031,17 Oct 26,3,Kings Park,Coatesville,No. 3,Tom Dubbeld,Marcus Aparo,Marcus Aparo,6-8,6,8,0,1,Completed,true,false,true
+AP006031,17 Oct 26,3,Kings Park,Coatesville,No. 4,Ilan Goldsmith,Jack Langdon,Jack Langdon,1-8,1,8,0,1,Completed,true,false,false
+AP006032,17 Oct 26,3,Ormond,Hurlingham Park,No. 1,Calum Roberts,Shannon Keough,Calum Roberts,8-3,8,3,1,0,Completed,true,true,false
+AP006032,17 Oct 26,3,Ormond,Hurlingham Park,No. 2,Lucas Nenke,Roshen Singh,Lucas Nenke,8-2,8,2,1,0,Completed,true,false,false
+AP006032,17 Oct 26,3,Ormond,Hurlingham Park,No. 3,Andrew Lipson,Adam Halliwell,Andrew Lipson,8-7,8,7,1,0,Completed,true,false,false
+AP006032,17 Oct 26,3,Ormond,Hurlingham Park,No. 4,Nathan McCracken,Matt Anstee,Matt Anstee,7-8,7,8,0,1,Completed,true,false,false
+AP006033,17 Oct 26,3,BLTC,Altona,No. 1,Lochlan Friedrich,Keanu Crosher,Lochlan Friedrich,8-6,8,6,1,0,Completed,true,false,false
+AP006033,17 Oct 26,3,BLTC,Altona,No. 2,Nicholas Alexopoulos,Xavier Ashlock,Xavier Ashlock,4-8,4,8,0,1,Completed,true,false,false
+AP006033,17 Oct 26,3,BLTC,Altona,No. 3,Ethan Kearns,Adam Stevenson,Ethan Kearns,8-1,8,1,1,0,Completed,true,false,false
+AP006033,17 Oct 26,3,BLTC,Altona,No. 4,Tom Whitson,Michael Sonephady,Tom Whitson,8-3,8,3,1,0,Completed,true,false,false
+AP006034,17 Oct 26,3,Glen Huntly,Elwood,No. 1,Antoine Maziarz,Marcelo Scalia,Marcelo Scalia,2-8,2,8,0,1,Completed,true,false,false
+AP006034,17 Oct 26,3,Glen Huntly,Elwood,No. 2,Tate Nguyen,Danny Lawrence,Tate Nguyen,8-1,8,1,1,0,Completed,true,false,false
+AP006034,17 Oct 26,3,Glen Huntly,Elwood,No. 3,Pierre Maziarz,Kristian Kostov,Kristian Kostov,0-8,0,8,0,1,Completed,true,false,false
+AP006034,17 Oct 26,3,Glen Huntly,Elwood,No. 4,Timothy Kalapoutis,Todd Perkinson,Todd Perkinson,0-8,0,8,0,1,Completed,true,false,false
+AP006041,24 Oct 26,4,Elwood,Kings Park,No. 1,Danny Lawrence,Dean Metter,Danny Lawrence,8-4,8,4,1,0,Completed,true,false,false
+AP006041,24 Oct 26,4,Elwood,Kings Park,No. 2,Gareth Taylor,Will McLorinan,Will McLorinan,4-8,4,8,0,1,Completed,true,false,false
+AP006041,24 Oct 26,4,Elwood,Kings Park,No. 3,James Taylor,David Sacho,David Sacho,5-8,5,8,0,1,Completed,true,false,false
+AP006041,24 Oct 26,4,Elwood,Kings Park,No. 4,Richard Sharp,Luke Dubbeld,Richard Sharp,8-1,8,1,1,0,Completed,true,false,false
+AP006042,24 Oct 26,4,Coatesville,Ormond,No. 1,Dom Langdon,Lucas Nenke,Lucas Nenke,4-8,4,8,0,1,Completed,true,false,false
+AP006042,24 Oct 26,4,Coatesville,Ormond,No. 2,Jonathon Bong,Kenny Ong,Kenny Ong,1-8,1,8,0,1,Completed,true,true,false
+AP006042,24 Oct 26,4,Coatesville,Ormond,No. 3,Jack Langdon,Andrew Lipson,Andrew Lipson,5-8,5,8,0,1,Completed,true,false,false
+AP006042,24 Oct 26,4,Coatesville,Ormond,No. 4,Michael Gershenzon,Nathan McCracken,Michael Gershenzon,8-6,8,6,1,0,Completed,true,true,false
+AP006043,24 Oct 26,4,Hurlingham Park,BLTC,No. 1,Brad Thomson,Nicholas Alexopoulos,Brad Thomson,8-6,8,6,1,0,Completed,true,false,false
+AP006043,24 Oct 26,4,Hurlingham Park,BLTC,No. 2,Mark Loosschilder,Lochlan Friedrich,Lochlan Friedrich,6-8,6,8,0,1,Completed,true,false,false
+AP006043,24 Oct 26,4,Hurlingham Park,BLTC,No. 3,Adam Neilands,Josh Grunberg,Josh Grunberg,6-8,6,8,0,1,Completed,true,false,true
+AP006043,24 Oct 26,4,Hurlingham Park,BLTC,No. 4,Matt Anstee,William Wang,William Wang,4-8,4,8,0,1,Completed,true,false,true
+AP006044,24 Oct 26,4,Altona,Glen Huntly,No. 1,Henri De Guzman,Antoine Maziarz,Antoine Maziarz,5-8,5,8,0,1,Completed,true,false,false
+AP006044,24 Oct 26,4,Altona,Glen Huntly,No. 2,Keanu Crosher,Clement Manoury,Keanu Crosher,8-7,8,7,1,0,Completed,true,false,false
+AP006044,24 Oct 26,4,Altona,Glen Huntly,No. 3,Xavier Ashlock,Pierre Maziarz,Xavier Ashlock,8-1,8,1,1,0,Completed,true,false,false
+AP006044,24 Oct 26,4,Altona,Glen Huntly,No. 4,Michael Sonephady,Amir Egre,Michael Sonephady,8-5,8,5,1,0,Completed,true,false,true

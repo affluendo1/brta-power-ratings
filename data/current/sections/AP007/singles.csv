@@ -1,0 +1,35 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP007021,10 Oct 26,2,Maccabi,Hawthorn,No. 1,Dean Jackson,Nate Gordon,Nate Gordon,4-8,4,8,0,1,Completed,true,true,false
+AP007021,10 Oct 26,2,Maccabi,Hawthorn,No. 2,Henry Orner,Garth Ebelthite,Garth Ebelthite,0-8,0,8,0,1,Completed,true,false,false
+AP007021,10 Oct 26,2,Maccabi,Hawthorn,No. 3,Jesse Stowe-Lindner,Gerardo Bohorquez,Jesse Stowe-Lindner,8-3,8,3,1,0,Completed,true,false,false
+AP007021,10 Oct 26,2,Maccabi,Hawthorn,No. 4,Blake Golden,Scott Chalmers,Scott Chalmers,5-8,5,8,0,1,Completed,true,false,false
+AP007022,10 Oct 26,2,Kings Park,Kooyong,No. 1,Lucas Tucker,Luis Kennedy,Luis Kennedy,2-8,2,8,0,1,Completed,true,false,false
+AP007022,10 Oct 26,2,Kings Park,Kooyong,No. 2,Miles Hancox,Tyson Kersley,Miles Hancox,8-3,8,3,1,0,Completed,true,false,false
+AP007022,10 Oct 26,2,Kings Park,Kooyong,No. 3,Mason Hancox,Selim Ahmed,Selim Ahmed,1-8,1,8,0,1,Completed,true,false,false
+AP007022,10 Oct 26,2,Kings Park,Kooyong,No. 4,Finn Rasmussen,Ross Begley,Finn Rasmussen,8-4,8,4,1,0,Completed,true,false,true
+AP007023,10 Oct 26,2,Chadstone,Parkdale,No. 1,Hock Tan,Brandan Sison,Brandan Sison,4-8,4,8,0,1,Completed,true,false,false
+AP007023,10 Oct 26,2,Chadstone,Parkdale,No. 2,Tony Lind,Simon Ghattas,Tony Lind,8-6,8,6,1,0,Completed,true,false,false
+AP007023,10 Oct 26,2,Chadstone,Parkdale,No. 3,Steven Yip,Harry Boden Fourie,Harry Boden Fourie,6-8,6,8,0,1,Completed,true,false,false
+AP007023,10 Oct 26,2,Chadstone,Parkdale,No. 4,Min Fu,Andrew Watterson,Andrew Watterson,6-8,6,8,0,1,Completed,true,false,false
+AP007031,17 Oct 26,3,Hawthorn,BLTC,No. 1,Arlyn Swain,Patrick Francese,Arlyn Swain,8-2,8,2,1,0,Completed,true,false,false
+AP007031,17 Oct 26,3,Hawthorn,BLTC,No. 2,Nate Gordon,Josh Grunberg,Nate Gordon,8-6,8,6,1,0,Completed,true,false,false
+AP007031,17 Oct 26,3,Hawthorn,BLTC,No. 3,Garth Ebelthite,Julian Catala Prieto,Garth Ebelthite,8-6,8,6,1,0,Completed,true,false,false
+AP007031,17 Oct 26,3,Hawthorn,BLTC,No. 4,Bruce Mortimer,Harrison Yang,Harrison Yang,3-8,3,8,0,1,Completed,true,false,false
+AP007032,17 Oct 26,3,Kooyong,Maccabi,No. 1,Luis Kennedy,Ryan Behr,Luis Kennedy,8-7,8,7,1,0,Completed,true,false,false
+AP007032,17 Oct 26,3,Kooyong,Maccabi,No. 2,Nicholas Kotros,Dean Jackson,Nicholas Kotros,8-3,8,3,1,0,Completed,true,false,true
+AP007032,17 Oct 26,3,Kooyong,Maccabi,No. 3,Nishant Shukla,Jesse Stowe-Lindner,Nishant Shukla,8-6,8,6,1,0,Completed,true,false,false
+AP007032,17 Oct 26,3,Kooyong,Maccabi,No. 4,Selim Ahmed,Blake Golden,Selim Ahmed,8-1,8,1,1,0,Completed,true,false,false
+AP007033,17 Oct 26,3,Parkdale,Kings Park,No. 1,Brandan Sison,Miles Hancox,Brandan Sison,8-3,8,3,1,0,Completed,true,false,false
+AP007033,17 Oct 26,3,Parkdale,Kings Park,No. 2,Callum Thompson,U-zin Goh,Callum Thompson,8-4,8,4,1,0,Completed,true,false,false
+AP007033,17 Oct 26,3,Parkdale,Kings Park,No. 3,Andrew Watterson,Mason Hancox,Andrew Watterson,8-1,8,1,1,0,Completed,true,false,false
+AP007033,17 Oct 26,3,Parkdale,Kings Park,No. 4,Dante Incani,Julian Wang,Dante Incani,8-6,8,6,1,0,Completed,true,false,true
+AP007041,24 Oct 26,4,Chadstone,Hawthorn,No. 1,Hock Tan,Arlyn Swain,Arlyn Swain,4-8,4,8,0,1,Completed,true,false,false
+AP007041,24 Oct 26,4,Chadstone,Hawthorn,No. 2,Tony Lind,Garth Ebelthite,Tony Lind,8-3,8,3,1,0,Completed,true,false,false
+AP007041,24 Oct 26,4,Chadstone,Hawthorn,No. 3,Steven Yip,Gerardo Bohorquez,Gerardo Bohorquez,3-8,3,8,0,1,Completed,true,false,false
+AP007041,24 Oct 26,4,Chadstone,Hawthorn,No. 4,David Nolan,Bruce Mortimer,Bruce Mortimer,6-8,6,8,0,1,Completed,true,true,false
+AP007042,24 Oct 26,4,BLTC,Kooyong,No. 1,Patrick Francese,Luis Kennedy,Luis Kennedy,1-8,1,8,0,1,Completed,true,false,false
+AP007042,24 Oct 26,4,BLTC,Kooyong,No. 2,Andrew Slesarev,Selim Ahmed,Selim Ahmed,5-7,5,7,0,1,Completed,true,false,false
+AP007042,24 Oct 26,4,BLTC,Kooyong,No. 3,Julian Catala Prieto,Ross Begley,,4-3,4,3,1,0,Unfinished,false,false,true
+AP007043,24 Oct 26,4,Maccabi,Parkdale,No. 1,Ryan Behr,Simon Ghattas,,3-0,3,0,1,0,Unfinished,false,false,false
+AP007043,24 Oct 26,4,Maccabi,Parkdale,No. 2,Nathan Rapoport,Nicholas Charlson,,0-1,0,1,0,1,Unfinished,false,false,false
+AP007043,24 Oct 26,4,Maccabi,Parkdale,No. 3,Jesse Stowe-Lindner,Harry Boden Fourie,Harry Boden Fourie,1-6,1,6,0,1,Completed,true,false,false

@@ -1,0 +1,134 @@
+{
+  "competition_code": "TN",
+  "competition_label": "Tuesday Night - Spring 2026",
+  "season_id": "TN41",
+  "season_label": "Spring 2026",
+  "section_code": "TN004",
+  "section_label": "Section 4",
+  "format": "sets",
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 6,
+    "doublesBestOf": 1,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "calendar_breaks": [
+    {
+      "date": "22 Sep 26",
+      "label": "No Play",
+      "source": "https://www.trols.org.au/brta/fixture.php"
+    },
+    {
+      "date": "29 Sep 26",
+      "label": "No Play",
+      "source": "https://www.trols.org.au/brta/fixture.php"
+    },
+    {
+      "date": "3 Nov 26",
+      "label": "No Play",
+      "source": "https://www.trols.org.au/brta/fixture.php"
+    }
+  ],
+  "calendar_events": [
+    {
+      "date": "24 Nov 26",
+      "label": "Semi Final \u00b7 if qualified"
+    },
+    {
+      "date": "1 Dec 26",
+      "label": "Grand Final \u00b7 if qualified"
+    },
+    {
+      "date": "8 Dec 26",
+      "label": "Spare \u00b7 if required"
+    }
+  ],
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Ormond Dragons",
+      "wins": 8,
+      "points": 76,
+      "percentage": 126.61,
+      "marker": ""
+    },
+    {
+      "position": 2,
+      "team": "Middle Brighton Whompbat",
+      "wins": 6,
+      "points": 74,
+      "percentage": 119.77,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Glen Huntly Dropshots",
+      "wins": 6,
+      "points": 70.5,
+      "percentage": 132.17,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Black Rock Breakers",
+      "wins": 6,
+      "points": 65,
+      "percentage": 129.26,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "St Finbar's Black Sheep",
+      "wins": 5,
+      "points": 62,
+      "percentage": 114.67,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Glen Huntly Moonballs",
+      "wins": 5,
+      "points": 55.5,
+      "percentage": 96.82,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "St Pauls Knights",
+      "wins": 1,
+      "points": 20,
+      "percentage": 55.72,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "Stella Maris Mavericks",
+      "wins": 1,
+      "points": 17,
+      "percentage": 52.67,
+      "marker": ""
+    }
+  ],
+  "green_ball": false,
+  "results_loaded_by_trols": null,
+  "fixtures": 44,
+  "completed_fixtures": 38,
+  "draw_fixtures": 56,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 220,
+  "latest_round": 11,
+  "validation": "source discrepancies",
+  "source_warnings": [
+    "Incomplete TROLS score for TN004011 doubles No. 5: '1-1'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for TN004011 doubles No. 6: '1-0'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for TN004013 doubles No. 2: '3-3'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for TN004014 doubles No. 3: '1-4'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for TN004014 doubles No. 4: '1-2'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

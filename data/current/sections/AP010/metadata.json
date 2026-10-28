@@ -1,0 +1,110 @@
+{
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 2026/27",
+  "season_id": "AP53",
+  "season_label": "Summer 2026/27",
+  "section_code": "AP010",
+  "section_label": "Mens S/D 9",
+  "format": "sets",
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "calendar_breaks": [
+    {
+      "date": "31 Oct 26",
+      "label": "No Play",
+      "source": "https://www.trols.org.au/brta/fixture.php"
+    }
+  ],
+  "calendar_events": [
+    {
+      "date": "27 Feb 27",
+      "label": "Semi Final \u00b7 if qualified"
+    },
+    {
+      "date": "13 Mar 27",
+      "label": "Grand Final \u00b7 if qualified"
+    },
+    {
+      "date": "20 Mar 27",
+      "label": "Spare \u00b7 if required"
+    }
+  ],
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Black Rock",
+      "wins": 3,
+      "points": 31,
+      "percentage": 159.34,
+      "marker": ""
+    },
+    {
+      "position": 2,
+      "team": "Coatesville",
+      "wins": 2,
+      "points": 22,
+      "percentage": 133.75,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Murrumbeena",
+      "wins": 2,
+      "points": 19,
+      "percentage": 128.18,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Maccabi Blue",
+      "wins": 0,
+      "points": 15,
+      "percentage": 92.23,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Gardiner",
+      "wins": 1,
+      "points": 14,
+      "percentage": 66.45,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Hawthorn",
+      "wins": 0,
+      "points": 11,
+      "percentage": 68.75,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Maccabi Green",
+      "wins": 0,
+      "points": 8,
+      "percentage": 63.11,
+      "marker": ""
+    }
+  ],
+  "green_ball": false,
+  "results_loaded_by_trols": null,
+  "fixtures": 16,
+  "completed_fixtures": 8,
+  "draw_fixtures": 56,
+  "singles_rubbers": 32,
+  "doubles_rubbers": 16,
+  "latest_round": 4,
+  "validation": "passed",
+  "source_warnings": []
+}

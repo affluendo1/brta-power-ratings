@@ -39,7 +39,7 @@ def build_player_search(catalog: dict, root: Path = Path('.')) -> dict:
     names, name_ids, sections, entries, unavailable = [], {}, [], [], []
     seen = set()
     for season in catalog.get('seasons', []):
-        if season['competition_code'] not in ('AA', 'UA'):
+        if season['competition_code'] not in ('AA', 'AP', 'UA', 'TA', 'TN', 'WA', 'HA'):
             continue
         for section in season.get('sections', []):
             path = section.get('data_path', '')
@@ -73,7 +73,7 @@ def build_player_search(catalog: dict, root: Path = Path('.')) -> dict:
 def build_rating_search(catalog: dict, root: Path = Path('.')) -> dict:
     result = {view: [] for view in ('singles', 'doublesPlayers', 'pairs', 'overall')}
     for season in catalog.get('seasons', []):
-        if season['competition_code'] not in ('AA', 'UA'):
+        if season['competition_code'] not in ('AA', 'AP', 'UA', 'TA', 'TN', 'WA', 'HA'):
             continue
         for section in season.get('sections', []):
             path = root / section.get('data_path', '__missing__')

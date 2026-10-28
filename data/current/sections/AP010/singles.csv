@@ -1,0 +1,33 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP010022,10 Oct 26,2,Black Rock,Hawthorn,No. 1,Jackson Chaponnel,Reza Nosratpour,Jackson Chaponnel,8-6,8,6,1,0,Completed,true,false,true
+AP010022,10 Oct 26,2,Black Rock,Hawthorn,No. 2,James Fletcher,Jay Xu,Jay Xu,0-8,0,8,0,1,Completed,true,true,true
+AP010022,10 Oct 26,2,Black Rock,Hawthorn,No. 3,Andrew Chaponnel,Mitchell Sparks,Andrew Chaponnel,8-2,8,2,1,0,Completed,true,false,false
+AP010022,10 Oct 26,2,Black Rock,Hawthorn,No. 4,Thyago Liberalli,Herman Choi,Thyago Liberalli,8-7,8,7,1,0,Completed,true,true,true
+AP010023,10 Oct 26,2,Gardiner,Maccabi Green,No. 1,Oliver Berman,Daniel Brami,Daniel Brami,4-8,4,8,0,1,Completed,true,false,false
+AP010023,10 Oct 26,2,Gardiner,Maccabi Green,No. 2,James Thompson,Sebastian Raboy,James Thompson,8-5,8,5,1,0,Completed,true,false,false
+AP010023,10 Oct 26,2,Gardiner,Maccabi Green,No. 3,Caley Wilson,Daniel Fromm,Daniel Fromm,6-8,6,8,0,1,Completed,true,false,false
+AP010023,10 Oct 26,2,Gardiner,Maccabi Green,No. 4,Tom Taylor,Asher Brami,Tom Taylor,8-2,8,2,1,0,Completed,true,false,true
+AP010024,10 Oct 26,2,Maccabi Blue,Murrumbeena,No. 1,Joel Rabinov,Giora Lichtenstein,Joel Rabinov,8-5,8,5,1,0,Completed,true,false,false
+AP010024,10 Oct 26,2,Maccabi Blue,Murrumbeena,No. 2,Ben Pollak,Richard Williams,Ben Pollak,8-1,8,1,1,0,Completed,true,false,true
+AP010024,10 Oct 26,2,Maccabi Blue,Murrumbeena,No. 3,Ashley Raboy,Anshul Vijay,Anshul Vijay,2-8,2,8,0,1,Completed,true,true,false
+AP010024,10 Oct 26,2,Maccabi Blue,Murrumbeena,No. 4,Jack Stock,Ishaan Nagpal,Ishaan Nagpal,0-8,0,8,0,1,Completed,true,false,false
+AP010031,17 Oct 26,3,Coatesville,Maccabi Blue,No. 1,Michael Gershenzon,Ori Diamond,Ori Diamond,2-8,2,8,0,1,Completed,true,false,false
+AP010031,17 Oct 26,3,Coatesville,Maccabi Blue,No. 2,Sam Basman,Ben Pollak,Ben Pollak,3-8,3,8,0,1,Completed,true,true,false
+AP010031,17 Oct 26,3,Coatesville,Maccabi Blue,No. 3,Bayden Hill,Stephen Gorenstein,Bayden Hill,8-2,8,2,1,0,Completed,true,false,false
+AP010031,17 Oct 26,3,Coatesville,Maccabi Blue,No. 4,Trent Misquitta,Jack Stock,Trent Misquitta,8-5,8,5,1,0,Completed,true,true,false
+AP010033,17 Oct 26,3,Maccabi Green,Black Rock,No. 1,Sebastian Raboy,Jackson Chaponnel,Jackson Chaponnel,2-8,2,8,0,1,Completed,true,false,false
+AP010033,17 Oct 26,3,Maccabi Green,Black Rock,No. 2,Jonah Stowe-Lindner,James Fletcher,James Fletcher,3-8,3,8,0,1,Completed,true,false,true
+AP010033,17 Oct 26,3,Maccabi Green,Black Rock,No. 3,Ashley Raboy,Andrew Chaponnel,Andrew Chaponnel,4-8,4,8,0,1,Completed,true,false,false
+AP010033,17 Oct 26,3,Maccabi Green,Black Rock,No. 4,Stephen Kleid,Thyago Liberalli,Thyago Liberalli,4-8,4,8,0,1,Completed,true,false,true
+AP010034,17 Oct 26,3,Murrumbeena,Gardiner,No. 1,Giora Lichtenstein,Oliver Berman,Giora Lichtenstein,8-1,8,1,1,0,Completed,true,false,false
+AP010034,17 Oct 26,3,Murrumbeena,Gardiner,No. 2,Janoah Gray-Taito,James Thompson,Janoah Gray-Taito,8-4,8,4,1,0,Completed,true,false,false
+AP010034,17 Oct 26,3,Murrumbeena,Gardiner,No. 3,Anshul Vijay,Tom Taylor,Anshul Vijay,8-0,8,0,1,0,Completed,true,false,false
+AP010034,17 Oct 26,3,Murrumbeena,Gardiner,No. 4,Ishaan Nagpal,Mark Patrick,Ishaan Nagpal,8-1,8,1,1,0,Completed,true,false,false
+AP010041,24 Oct 26,4,Gardiner,Coatesville,No. 1,Oliver Berman,Theophilus Prokopiou,Theophilus Prokopiou,1-8,1,8,0,1,Completed,true,false,false
+AP010041,24 Oct 26,4,Gardiner,Coatesville,No. 2,James Thompson,Joel McCulloch,Joel McCulloch,6-8,6,8,0,1,Completed,true,false,false
+AP010041,24 Oct 26,4,Gardiner,Coatesville,No. 3,Levin Deleon,Bayden Hill,Bayden Hill,3-8,3,8,0,1,Completed,true,false,false
+AP010041,24 Oct 26,4,Gardiner,Coatesville,No. 4,Mark Patrick,Trent Misquitta,Trent Misquitta,1-8,1,8,0,1,Completed,true,false,true
+AP010044,24 Oct 26,4,Black Rock,Murrumbeena,No. 1,Adam Bishop,Pranav Arora,Pranav Arora,5-8,5,8,0,1,Completed,true,false,false
+AP010044,24 Oct 26,4,Black Rock,Murrumbeena,No. 2,Toby Leeds,Janoah Gray-Taito,Toby Leeds,8-3,8,3,1,0,Completed,true,false,false
+AP010044,24 Oct 26,4,Black Rock,Murrumbeena,No. 3,Andrew Chaponnel,Ishaan Nagpal,Ishaan Nagpal,0-8,0,8,0,1,Completed,true,false,false
+AP010044,24 Oct 26,4,Black Rock,Murrumbeena,No. 4,Leo Suszko,Giora Lichtenstein,Giora Lichtenstein,4-8,4,8,0,1,Completed,true,true,false

@@ -38,7 +38,7 @@ def _current_seasons() -> list[dict]:
         code = item["competition_code"]
         grouped.setdefault(code, []).append(item)
     seasons = []
-    for code in ("AA", "UA"):
+    for code in ("AA", "AP", "UA", "TA", "TN", "WA", "HA"):
         sections = grouped.get(code, [])
         if not sections:
             continue
@@ -79,7 +79,7 @@ def build_catalog() -> dict:
         )
         if not section_rows:
             continue
-        competition = "Saturday AM" if season["competition_code"] == "AA" else "Sunday AM"
+        competition = {"AA":"Saturday AM","AP":"Saturday PM","UA":"Sunday AM","TA":"Tuesday AM","TN":"Tuesday Night","WA":"Wednesday AM","HA":"Thursday AM"}.get(season["competition_code"], season["competition_code"])
         same_label_count = sum(
             1 for other in raw["seasons"]
             if other["competition_code"] == season["competition_code"]

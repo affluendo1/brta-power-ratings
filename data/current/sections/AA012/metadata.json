@@ -6,6 +6,40 @@
   "section_code": "AA012",
   "section_label": "Sets 10",
   "format": "sets",
+  "competition_rules": null,
+  "calendar_breaks": [
+    {
+      "date": "19 Sep 26",
+      "label": "No Play",
+      "source": "https://www.trols.org.au/brta/fixture.php"
+    },
+    {
+      "date": "26 Sep 26",
+      "label": "No Play",
+      "source": "https://www.trols.org.au/brta/fixture.php"
+    },
+    {
+      "date": "3 Oct 26",
+      "label": "No Play",
+      "source": "https://www.trols.org.au/brta/fixture.php"
+    },
+    {
+      "date": "31 Oct 26",
+      "label": "No Play",
+      "source": "https://www.trols.org.au/brta/fixture.php"
+    }
+  ],
+  "calendar_events": [
+    {
+      "date": "28 Nov 26",
+      "label": "Grand Final \u00b7 if qualified"
+    },
+    {
+      "date": "5 Dec 26",
+      "label": "Spare \u00b7 if required"
+    }
+  ],
+  "official_standings": [],
   "green_ball": false,
   "results_loaded_by_trols": null,
   "fixtures": 36,

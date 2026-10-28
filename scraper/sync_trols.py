@@ -31,7 +31,7 @@ FIXTURE_URL = urljoin(BASE, "fixture.php")
 MATCH_URL = urljoin(BASE, "match_popup.php")
 OUT = Path(os.getenv("TROLS_OUT", "data/current"))
 UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36"
-DAYTIME_NAMES = {"AA": "Saturday AM", "UA": "Sunday AM"}
+DAYTIME_NAMES = {"AA": "Saturday AM", "AP": "Saturday PM", "UA": "Sunday AM", "TA": "Tuesday AM", "TN": "Tuesday Night", "WA": "Wednesday AM", "HA": "Thursday AM"}
 ALIASES = {"Geoge Si": "George Si"}
 MAX_WORKERS = int(os.getenv("TROLS_WORKERS", "10"))
 _thread_local = threading.local()
@@ -60,7 +60,7 @@ FIXTURE_FIELDS = [
     "home_points", "away_points", "home_rubbers", "away_rubbers",
     "home_sets", "away_sets", "home_games", "away_games", "status", "notes",
 ]
-DRAW_FIELDS = ["draw_id", "date", "round", "stage", "round_label", "home_team", "away_team", "fixture_id"]
+DRAW_FIELDS = ["draw_id", "date", "round", "stage", "round_label", "home_team", "away_team", "fixture_id", "start_time", "venue"]
 SINGLES_FIELDS = [
     "fixture_id", "date", "round", "home_team", "away_team", "position",
     "home_player", "away_player", "winning_player", "score", "home_games",
@@ -200,7 +200,7 @@ def _visible_season_label(soup: BeautifulSoup, season_id: str, placeholder: str)
             if label.casefold() not in {"current season", "current", ""}:
                 return label
 
-    season_pattern = re.compile(r"\b(?:Summer|Autumn|Winter|Spring)\s+\d{4}\b", re.I)
+    season_pattern = re.compile(r"\b(?:Summer|Autumn|Winter|Spring)\s+\d{4}(?:/\d{2,4})?\b", re.I)
     # TROLS sometimes writes the current season in a heading/data attribute,
     # while leaving the selector's option label as "Current Season".
     candidates = []
@@ -262,12 +262,14 @@ def parse_results_page(html: str, section_code: str = "section") -> tuple[list[d
             stage_date = f"{int(date_match.group(1)):02d} {date_match.group(2)[:3].title()} {date_match.group(3)[-2:]}" if date_match else ""
             if re.search(r"\bgrand\s*[- ]?\s*final\b", normalized):
                 final_events += 1
+                playoff_round = max(playoff_round, current_round or 0)
                 playoff_round += 1
                 current_date, current_round, current_stage = stage_date, playoff_round, "grand_final"
                 current_label = "Grand final" if final_events == 1 else f"Grand final · TROLS entry {final_events}"
                 continue
             if re.search(r"\bsemi\s*[- ]?\s*finals?\b", normalized):
                 semifinal_events += 1
+                playoff_round = max(playoff_round, current_round or 0)
                 playoff_round += 1
                 current_date, current_round, current_stage = stage_date, playoff_round, "semi_final"
                 event_number = re.search(r"semi\s*[- ]?\s*final\s*(\d+)", normalized)
@@ -445,7 +447,7 @@ def _rubbers_score(raw_score: str, rubbers_format: bool) -> dict | None:
     if match_tiebreak:
         score += f" [{match_tiebreak[0]}-{match_tiebreak[1]}]"
     return {"score": score, "home_games": home_games, "away_games": away_games,
-            "home_sets": home_sets, "away_sets": away_sets, "decisive": decisive}
+            "home_sets": home_sets, "away_sets": away_sets, "decisive": decisive, "incomplete": not decisive}
 
 
 def parse_scorecard(html: str, fixture: dict) -> tuple[list[dict], list[dict]]:
@@ -530,7 +532,7 @@ def parse_scorecard(html: str, fixture: dict) -> tuple[list[dict], list[dict]]:
                 and not _contains_unnamed_identity(hp) and not _contains_unnamed_identity(ap)
             ).lower()
             doubles.append({**base, "position": f"No. {doubles_position}", "home_pair": hp, "away_pair": ap,
-                            "winning_pair": hp if home_sets > away_sets else ap if away_sets > home_sets else "",
+                            "winning_pair": (hp if home_sets > away_sets else ap if away_sets > home_sets else "") if decisive else "",
                             "home_emergencies": json.dumps(he), "away_emergencies": json.dumps(ae)})
         else:
             singles_position += 1
@@ -539,7 +541,7 @@ def parse_scorecard(html: str, fixture: dict) -> tuple[list[dict], list[dict]]:
             hp, ap = home_entry["name"], away_entry["name"]
             base["valid_for_rating"] = str(decisive and not _is_unnamed_player(hp) and not _is_unnamed_player(ap)).lower()
             singles.append({**base, "position": f"No. {singles_position}", "home_player": hp, "away_player": ap,
-                            "winning_player": hp if home_sets > away_sets else ap if away_sets > home_sets else "",
+                            "winning_player": (hp if home_sets > away_sets else ap if away_sets > home_sets else "") if decisive else "",
                             "home_emergency": str(home_entry["emergency"]).lower(),
                             "away_emergency": str(away_entry["emergency"]).lower()})
     return singles, doubles
@@ -561,12 +563,52 @@ def parse_draw_page(html: str, section_code: str) -> list[dict]:
         if len(cells) < 4 or not cells[0].isdigit():
             continue
         round_no, date, home, away = int(cells[0]), cells[1], clean_team(cells[2]), clean_team(cells[3])
-        if not home or not away or home == "Bye" or away == "Bye":
+        if not home or not away:
             continue
         draw.append({"draw_id": f"draw-{section_code.lower()}-r{round_no}-{slug(home)}-{slug(away)}",
                      "date": date, "round": round_no, "stage": "regular", "round_label": f"Round {round_no}",
-                     "home_team": home, "away_team": away, "fixture_id": ""})
+                     "home_team": home, "away_team": away, "fixture_id": "",
+                     "start_time": (re.search(r"\((\d{1,2}:\d{2}(?:\s*[ap]m)?)\)", cells[2], re.I).group(1) if re.search(r"\((\d{1,2}:\d{2}(?:\s*[ap]m)?)\)", cells[2], re.I) else ""),
+                     "venue": (clean_team(re.split(r"Playing\s*@", cells[2], flags=re.I)[-1]) if re.search(r"Playing\s*@", cells[2], re.I) else home)})
     return draw
+
+
+def parse_calendar_breaks(html: str) -> list[dict]:
+    result = []
+    for tr in BeautifulSoup(html, "html.parser").find_all("tr"):
+        cells = [clean_text(td.get_text(" ", strip=True)) for td in tr.find_all("td", recursive=False)]
+        if len(cells) >= 3 and re.fullmatch(r"\d{1,2} [A-Za-z]{3} \d{2,4}", cells[1]) and re.search(r"no play|holiday", cells[2], re.I):
+            result.append({"date": cells[1], "label": cells[2], "source": FIXTURE_URL})
+    return list({r["date"]: r for r in result}.values())
+
+
+def parse_calendar_events(html: str) -> list[dict]:
+    text = clean_text(BeautifulSoup(html, "html.parser").get_text(" ", strip=True))
+    return [{"date": date, "label": label + (" · if required" if label.casefold().startswith("spare") else " · if qualified")}
+            for label,date in re.findall(r"(Semi Final|Grand Final|Spare)(?:\s*\(if required\))?\s*-\s*(\d{1,2} [A-Za-z]{3} \d{2,4})", text, re.I)]
+
+
+def observed_rules(section: dict) -> dict:
+    """Describe the actual scorecard format, independently of junior by-laws.
+
+    Doubles-only days and eight/ten-game sets must never inherit four singles.
+    These are projection settings; official points remain source-owned.
+    """
+    from collections import Counter
+    rules = {"source": "observed TROLS scorecards", "teamPoints": "published only"}
+    for kind in ("singles", "doubles"):
+        rows = section[kind]
+        counts = Counter(r["fixture_id"] for r in rows)
+        # Include interrupted cards when measuring slots; prefer complete days.
+        rules[kind + "Slots"] = max(counts.values(), default=0)
+        scores = [[(int(a), int(b)) for a,b in re.findall(r"(\d+)-(\d+)", r["score"])] for r in rows]
+        rules[kind + "BestOf"] = 3 if any(len(v) >= 2 for v in scores) else 1
+        ends = [max(a,b) for values in scores for a,b in values[:2] if max(a,b) >= 6 and max(a,b) <= 11]
+        targets = Counter(10 if x >= 10 else 8 if x >= 8 else 6 for x in ends)
+        rules["setTarget" if kind == "singles" else "doublesTarget"] = targets.most_common(1)[0][0] if targets else 6
+    rules["playersPerTeam"] = max([int(v) for r in section["singles"] for v in re.findall(r"\d+", r["position"])] + [4 if section["doubles"] else 0])
+    rules["matchTiebreak"] = any("[" in r["score"] for r in section["singles"] + section["doubles"])
+    return rules
 
 
 def _section_results(meta: dict) -> dict:
@@ -597,6 +639,8 @@ def _team_draw(meta: dict, team_code: str, *, include_clubs: bool = False):
                                    "season": meta["season_id"], "section": meta["section_code"], "team": team_code})
     draw = parse_draw_page(response.text, meta["section_code"])
     if include_clubs:
+        meta["calendar_breaks"] = parse_calendar_breaks(response.text)
+        meta["calendar_events"] = parse_calendar_events(response.text)
         clubs = parse_club_information(response.text)
         if not clubs:
             raise RuntimeError(f"No fixture club information for {meta['section_code']}")
@@ -623,7 +667,7 @@ def validate_dataset(
             raise RuntimeError(message)
         warnings.append(message)
 
-    if not re.fullmatch(r"(?:AA|UA)\d{3}", section_code):
+    if not re.fullmatch(r"(?:AA|AP|UA|TA|TN|WA|HA)\d{3}", section_code):
         raise RuntimeError(f"Unexpected section code {section_code!r}")
     official_ids = [row["fixture_id"] for row in fixtures if row["status"] == "Completed"]
     if len(official_ids) != len(set(official_ids)):
@@ -677,7 +721,7 @@ def validate_dataset(
                 f"complete-score total {hg}-{ag}. Both published records retained.", total=bool(rows))
         green_ball = green_ball or section_code in {"AA013", "AA014", "UA026", "UA027"}
         complete_standard_card = len(rows) == 6 and all(not _contains_source_unknown(str(row)) for row in rows)
-        if fixture["home_sets"] == "" and not green_ball and complete_standard_card and (hr, ar) != (_integer(fixture["home_rubbers"], "fixture home rubbers"), _integer(fixture["away_rubbers"], "fixture away rubbers")):
+        if section_code[:2] in {"AA", "UA"} and fixture["home_sets"] == "" and not green_ball and complete_standard_card and (hr, ar) != (_integer(fixture["home_rubbers"], "fixture home rubbers"), _integer(fixture["away_rubbers"], "fixture away rubbers")):
             source_discrepancy(f"Fixture rubber totals do not match rubbers for {fixture['fixture_id']}: "
                                f"TROLS {fixture['home_rubbers']}-{fixture['away_rubbers']}; scorecard {hr}-{ar}. "
                                "Both published records retained.", total=True)
@@ -696,7 +740,7 @@ def attach_draw_ids(draw: list[dict], fixtures: list[dict]) -> list[dict]:
 def write_csv(path: Path, rows: list[dict], fields: list[str]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", newline="", encoding="utf-8") as handle:
-        writer = csv.DictWriter(handle, fieldnames=fields)
+        writer = csv.DictWriter(handle, fieldnames=fields, lineterminator="\n")
         writer.writeheader()
         writer.writerows(rows)
 
@@ -806,7 +850,7 @@ def _load_previous_current_seasons() -> dict:
 
 
 def scrape_all() -> list[dict]:
-    requested = {value.strip() for value in os.getenv("TROLS_COMPETITIONS", "AA,UA").split(",") if value.strip()}
+    requested = {value.strip() for value in os.getenv("TROLS_COMPETITIONS", ",".join(DAYTIME_NAMES)).split(",") if value.strip()}
     sections = []
     for code, competition_name in DAYTIME_NAMES.items():
         if code in requested or competition_name in requested:
@@ -878,6 +922,16 @@ def scrape_all() -> list[dict]:
             print(f"::warning::{section['section_code']}: {warning}")
     for section in loaded_sections:
         section["source_extras"] = collect_section_extras(section)
+        if section["competition_code"] not in {"AA", "UA"}:
+            section["competition_rules"] = observed_rules(section)
+            try:
+                from scraper.backfill_history import parse_official_ladder
+            except ModuleNotFoundError:
+                import sys
+                sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+                from scraper.backfill_history import parse_official_ladder
+            raw = _get(urljoin(BASE, "p_ladders.php"), params={"daytime": section["competition_code"], "season": section["season_id"], "section": section["section_code"], "style": ""})
+            section["official_standings"] = parse_official_ladder(raw.text)
     return loaded_sections
 
 
@@ -921,6 +975,10 @@ def main() -> None:
             "season_id": section["season_id"], "season_label": section["season_label"],
             "section_code": code, "section_label": section["section_label"],
             "format": "rubbers" if section["section_label"].casefold().startswith("rubbers") else "sets",
+            "competition_rules": section.get("competition_rules"),
+            "calendar_breaks": section.get("calendar_breaks", []),
+            "calendar_events": section.get("calendar_events", []),
+            "official_standings": section.get("official_standings", []),
             "green_ball": "green ball" in section["section_label"].casefold(),
             "results_loaded_by_trols": section["results_loaded_by_trols"],
             "fixtures": len(section["fixtures"]), "completed_fixtures": completed, "draw_fixtures": len(section["draw"]),

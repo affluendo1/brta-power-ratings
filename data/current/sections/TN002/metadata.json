@@ -1,0 +1,126 @@
+{
+  "competition_code": "TN",
+  "competition_label": "Tuesday Night - Spring 2026",
+  "season_id": "TN41",
+  "season_label": "Spring 2026",
+  "section_code": "TN002",
+  "section_label": "Section 2",
+  "format": "sets",
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 6,
+    "doublesBestOf": 1,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "calendar_breaks": [
+    {
+      "date": "22 Sep 26",
+      "label": "No Play",
+      "source": "https://www.trols.org.au/brta/fixture.php"
+    },
+    {
+      "date": "29 Sep 26",
+      "label": "No Play",
+      "source": "https://www.trols.org.au/brta/fixture.php"
+    },
+    {
+      "date": "3 Nov 26",
+      "label": "No Play",
+      "source": "https://www.trols.org.au/brta/fixture.php"
+    }
+  ],
+  "calendar_events": [
+    {
+      "date": "24 Nov 26",
+      "label": "Semi Final \u00b7 if qualified"
+    },
+    {
+      "date": "1 Dec 26",
+      "label": "Grand Final \u00b7 if qualified"
+    },
+    {
+      "date": "8 Dec 26",
+      "label": "Spare \u00b7 if required"
+    }
+  ],
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Basterfield Park Scratchies",
+      "wins": 4,
+      "points": 50.5,
+      "percentage": 108.81,
+      "marker": ""
+    },
+    {
+      "position": 2,
+      "team": "Hurlingham Park All Stars",
+      "wins": 4,
+      "points": 50,
+      "percentage": 100.37,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "St Finbar's Barbarians",
+      "wins": 5,
+      "points": 50,
+      "percentage": 94.39,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Basterfield Park Lakers",
+      "wins": 4,
+      "points": 48.5,
+      "percentage": 110.19,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Murrumbeena Beasts",
+      "wins": 5,
+      "points": 48,
+      "percentage": 98.43,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "St James Premiers",
+      "wins": 3,
+      "points": 46,
+      "percentage": 103.43,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Hurlingham Park Hammers",
+      "wins": 3,
+      "points": 37,
+      "percentage": 88.06,
+      "marker": ""
+    }
+  ],
+  "green_ball": false,
+  "results_loaded_by_trols": null,
+  "fixtures": 44,
+  "completed_fixtures": 32,
+  "draw_fixtures": 56,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 186,
+  "latest_round": 11,
+  "validation": "source discrepancies",
+  "source_warnings": [
+    "Incomplete TROLS score for TN002013 doubles No. 4: '3-2'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for TN002014 doubles No. 3: '2-3'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for TN002014 doubles No. 4: '0-4'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for TN002034 doubles No. 5: '4-3'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for TN002034 doubles No. 6: '3-2'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

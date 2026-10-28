@@ -1,0 +1,53 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+HA002011,16 Jul 26,1,regular,Round 1,Elwood,Carmelite,6,2,5,4,,,45,47,Completed,
+HA002012,16 Jul 26,1,regular,Round 1,Black Rock,Kooyong Green,1,7,3,6,,,39,45,Completed,
+HA002013,16 Jul 26,1,regular,Round 1,Kooyong Yellow,BLTC Green,1,7,3,6,,,41,47,Completed,
+pending-ha002-r1-bltc-blue-bye,16 Jul 26,1,regular,Round 1,BLTC Blue,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA002022,23 Jul 26,2,regular,Round 2,Carmelite,Black Rock,1,7,2,7,,,28,52,Completed,
+HA002023,23 Jul 26,2,regular,Round 2,Kooyong Green,Kooyong Yellow,6,2,5,4,,,43,39,Completed,
+pending-ha002-r2-bltc-green-bltc-blue,23 Jul 26,2,regular,Round 2,BLTC Green,BLTC Blue,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+pending-ha002-r2-bye-elwood,23 Jul 26,2,regular,Round 2,Bye,Elwood,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA002031,30 Jul 26,3,regular,Round 3,Elwood,BLTC Green,0,8,2,8,,,40,60,Completed,
+HA002033,30 Jul 26,3,regular,Round 3,Kooyong Yellow,Carmelite,7,1,7,2,,,54,35,Completed,
+HA002034,30 Jul 26,3,regular,Round 3,BLTC Blue,Kooyong Green,6,2,5,4,,,45,43,Completed,
+pending-ha002-r3-black-rock-bye,30 Jul 26,3,regular,Round 3,Black Rock,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA002041,06 Aug 26,4,regular,Round 4,Kooyong Green,Elwood,1,7,3,6,,,35,41,Completed,
+HA002042,06 Aug 26,4,regular,Round 4,BLTC Green,Black Rock,6,2,4,4,,,44,41,Completed,
+HA002044,06 Aug 26,4,regular,Round 4,Carmelite,BLTC Blue,1,7,2,6,,,29,47,Completed,
+pending-ha002-r4-bye-kooyong-yellow,06 Aug 26,4,regular,Round 4,Bye,Kooyong Yellow,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA002051,13 Aug 26,5,regular,Round 5,Kooyong Yellow,BLTC Blue,6,2,6,4,,,56,45,Completed,
+HA002053,13 Aug 26,5,regular,Round 5,Kooyong Green,Carmelite,7,1,7,3,,,54,43,Completed,
+HA002054,13 Aug 26,5,regular,Round 5,Elwood,Black Rock,7,1,7,3,,,57,43,Completed,
+pending-ha002-r5-bye-bltc-green,13 Aug 26,5,regular,Round 5,Bye,BLTC Green,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA002061,20 Aug 26,6,regular,Round 6,Black Rock,Kooyong Yellow,1,7,2,7,,,28,54,Completed,
+HA002062,20 Aug 26,6,regular,Round 6,BLTC Blue,Elwood,6,2,6,5,,,58,49,Completed,
+HA002063,20 Aug 26,6,regular,Round 6,BLTC Green,Kooyong Green,6,2,5,4,,,44,36,Completed,
+pending-ha002-r6-carmelite-bye,20 Aug 26,6,regular,Round 6,Carmelite,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA002071,27 Aug 26,7,regular,Round 7,Elwood,Kooyong Yellow,6,2,5,4,,,47,39,Completed,
+HA002072,27 Aug 26,7,regular,Round 7,Black Rock,BLTC Blue,6,2,5,4,,,45,42,Completed,
+HA002074,27 Aug 26,7,regular,Round 7,BLTC Green,Carmelite,7,1,7,3,,,53,39,Completed,
+pending-ha002-r7-bye-kooyong-green,27 Aug 26,7,regular,Round 7,Bye,Kooyong Green,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA002081,03 Sep 26,8,regular,Round 8,Carmelite,Elwood,4,4,1,1,,,14,11,Completed,
+HA002083,03 Sep 26,8,regular,Round 8,BLTC Green,Kooyong Yellow,4,4,1,1,,,8,15,Completed,
+pending-ha002-r8-bye-bltc-blue,03 Sep 26,8,regular,Round 8,Bye,BLTC Blue,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ha002-r8-kooyong-green-black-rock,03 Sep 26,8,regular,Round 8,Kooyong Green,Black Rock,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+HA002092,10 Sep 26,9,regular,Round 9,Black Rock,Carmelite,7,1,7,2,,,54,31,Completed,
+HA002093,10 Sep 26,9,regular,Round 9,Kooyong Yellow,Kooyong Green,2,6,4,6,,,45,58,Completed,
+HA002094,10 Sep 26,9,regular,Round 9,BLTC Blue,BLTC Green,1,7,2,7,,,25,51,Completed,
+pending-ha002-r9-elwood-bye,10 Sep 26,9,regular,Round 9,Elwood,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA002101,17 Sep 26,10,regular,Round 10,BLTC Green,Elwood,7,1,7,2,,,51,29,Completed,
+HA002103,17 Sep 26,10,regular,Round 10,Carmelite,Kooyong Yellow,1,7,3,6,,,36,51,Completed,
+HA002104,17 Sep 26,10,regular,Round 10,Kooyong Green,BLTC Blue,8,0,8,0,,,51,24,Completed,
+pending-ha002-r10-bye-black-rock,17 Sep 26,10,regular,Round 10,Bye,Black Rock,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA002111,08 Oct 26,11,regular,Round 11,Elwood,Kooyong Green,1,7,2,7,,,28,54,Completed,
+HA002112,08 Oct 26,11,regular,Round 11,Black Rock,BLTC Green,0,8,1,8,,,34,54,Completed,
+HA002114,08 Oct 26,11,regular,Round 11,BLTC Blue,Carmelite,2,6,5,5,,,47,51,Completed,
+pending-ha002-r11-kooyong-yellow-bye,08 Oct 26,11,regular,Round 11,Kooyong Yellow,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA002121,15 Oct 26,12,regular,Round 12,BLTC Blue,Kooyong Yellow,8,0,8,0,,,48,5,Completed,
+HA002123,15 Oct 26,12,regular,Round 12,Carmelite,Kooyong Green,6,2,5,5,,,50,46,Completed,
+HA002124,15 Oct 26,12,regular,Round 12,Black Rock,Elwood,6,2,5,4,,,48,42,Completed,
+pending-ha002-r12-bltc-green-bye,15 Oct 26,12,regular,Round 12,BLTC Green,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA002131,22 Oct 26,13,regular,Round 13,Kooyong Yellow,Black Rock,7,1,6,4,,,52,46,Completed,
+HA002132,22 Oct 26,13,regular,Round 13,Elwood,BLTC Blue,0,8,1,8,,,25,54,Completed,
+HA002133,22 Oct 26,13,regular,Round 13,Kooyong Green,BLTC Green,2,6,4,5,,,37,42,Completed,
+pending-ha002-r13-bye-carmelite,22 Oct 26,13,regular,Round 13,Bye,Carmelite,,,,,,,,,Bye,No individual scorecard / no rubbers recorded

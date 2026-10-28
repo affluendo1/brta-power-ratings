@@ -1,0 +1,119 @@
+{
+  "competition_code": "HA",
+  "competition_label": "Thursday AM - Spring 2026",
+  "season_id": "HA38",
+  "season_label": "Spring 2026",
+  "section_code": "HA002",
+  "section_label": "Section 2",
+  "format": "sets",
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "calendar_breaks": [
+    {
+      "date": "24 Sep 26",
+      "label": "No Play",
+      "source": "https://www.trols.org.au/brta/fixture.php"
+    },
+    {
+      "date": "1 Oct 26",
+      "label": "No Play",
+      "source": "https://www.trols.org.au/brta/fixture.php"
+    }
+  ],
+  "calendar_events": [
+    {
+      "date": "5 Nov 26",
+      "label": "Semi Final \u00b7 if qualified"
+    },
+    {
+      "date": "12 Nov 26",
+      "label": "Grand Final \u00b7 if qualified"
+    },
+    {
+      "date": "19 Nov 26",
+      "label": "Spare \u00b7 if required"
+    }
+  ],
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "BLTC Green",
+      "wins": 10,
+      "points": 74,
+      "percentage": 134.72,
+      "marker": ""
+    },
+    {
+      "position": 2,
+      "team": "Kooyong Green",
+      "wins": 6,
+      "points": 54,
+      "percentage": 114.09,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Kooyong Yellow",
+      "wins": 5,
+      "points": 45,
+      "percentage": 102.27,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "BLTC Blue",
+      "wins": 5,
+      "points": 42,
+      "percentage": 107.41,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Black Rock",
+      "wins": 4,
+      "points": 36,
+      "percentage": 95.77,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Elwood",
+      "wins": 4,
+      "points": 36,
+      "percentage": 82.31,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Carmelite",
+      "wins": 2,
+      "points": 25,
+      "percentage": 78.4,
+      "marker": ""
+    }
+  ],
+  "green_ball": false,
+  "results_loaded_by_trols": null,
+  "fixtures": 52,
+  "completed_fixtures": 37,
+  "draw_fixtures": 56,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 144,
+  "latest_round": 13,
+  "validation": "source discrepancies",
+  "source_warnings": [
+    "Incomplete TROLS score for HA002081 doubles No. 1: '5-7 1-1'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for HA002081 doubles No. 2: '6-2 2-1'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for HA002083 doubles No. 1: '6-4 1-0'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 2026/27",
+  "season_id": "AP53",
+  "season_label": "Summer 2026/27",
+  "section_code": "AP006",
+  "section_label": "Mens S/D 5",
+  "format": "sets",
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "calendar_breaks": [
+    {
+      "date": "31 Oct 26",
+      "label": "No Play",
+      "source": "https://www.trols.org.au/brta/fixture.php"
+    }
+  ],
+  "calendar_events": [
+    {
+      "date": "27 Feb 27",
+      "label": "Semi Final \u00b7 if qualified"
+    },
+    {
+      "date": "13 Mar 27",
+      "label": "Grand Final \u00b7 if qualified"
+    },
+    {
+      "date": "20 Mar 27",
+      "label": "Spare \u00b7 if required"
+    }
+  ],
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Elwood",
+      "wins": 3,
+      "points": 30,
+      "percentage": 144.64,
+      "marker": ""
+    },
+    {
+      "position": 2,
+      "team": "Ormond",
+      "wins": 3,
+      "points": 30,
+      "percentage": 132.52,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "BLTC",
+      "wins": 2,
+      "points": 24,
+      "percentage": 107.38,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Glen Huntly",
+      "wins": 2,
+      "points": 21,
+      "percentage": 95.27,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Kings Park",
+      "wins": 1,
+      "points": 17,
+      "percentage": 85.26,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Coatesville",
+      "wins": 1,
+      "points": 15,
+      "percentage": 81.93,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Altona",
+      "wins": 0,
+      "points": 12,
+      "percentage": 87.58,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "Hurlingham Park",
+      "wins": 0,
+      "points": 11,
+      "percentage": 86.75,
+      "marker": ""
+    }
+  ],
+  "green_ball": false,
+  "results_loaded_by_trols": null,
+  "fixtures": 16,
+  "completed_fixtures": 12,
+  "draw_fixtures": 56,
+  "singles_rubbers": 48,
+  "doubles_rubbers": 24,
+  "latest_round": 4,
+  "validation": "passed",
+  "source_warnings": []
+}

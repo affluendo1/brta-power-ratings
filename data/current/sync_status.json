@@ -1,27 +1,60 @@
 {
   "source": "https://www.trols.org.au/brta/p_results.php",
   "fixture_source": "https://www.trols.org.au/brta/fixture.php",
-  "synced_at_utc": "2026-10-28T10:32:02.373204+00:00",
-  "competitions": 2,
-  "sections": 44,
+  "synced_at_utc": "2026-10-28T11:20:45.567284+00:00",
+  "competitions": 7,
+  "sections": 79,
   "current_seasons": {
     "AA": {
       "competition_label": "Saturday AM - Spring 2026",
       "season_id": "AA56",
       "season_label": "Spring 2026"
     },
+    "AP": {
+      "competition_label": "Saturday PM - Summer 2026/27",
+      "season_id": "AP53",
+      "season_label": "Summer 2026/27"
+    },
+    "HA": {
+      "competition_label": "Thursday AM - Spring 2026",
+      "season_id": "HA38",
+      "season_label": "Spring 2026"
+    },
+    "TA": {
+      "competition_label": "Tuesday AM - Spring 2026",
+      "season_id": "TA15",
+      "season_label": "Spring 2026"
+    },
+    "TN": {
+      "competition_label": "Tuesday Night - Spring 2026",
+      "season_id": "TN41",
+      "season_label": "Spring 2026"
+    },
     "UA": {
       "competition_label": "Sunday AM - Spring 2026",
       "season_id": "UA39",
       "season_label": "Spring 2026"
+    },
+    "WA": {
+      "competition_label": "Wednesday AM - Spring 2026",
+      "season_id": "WA15",
+      "season_label": "Spring 2026"
     }
   },
-  "fixtures": 2076,
-  "completed_fixtures": 1606,
-  "singles_rubbers": 6055,
-  "doubles_rubbers": 3037,
+  "fixtures": 2955,
+  "completed_fixtures": 2192,
+  "singles_rubbers": 6626,
+  "doubles_rubbers": 5329,
   "validation": "source discrepancies",
   "source_warnings": [
+    {
+      "section_code": "AA004",
+      "message": "Incomplete TROLS score for AA004024 singles No. 1: '2-1'. Missing score not inferred; excluded from ratings and game totals."
+    },
+    {
+      "section_code": "AA005",
+      "message": "Incomplete TROLS score for AA005021 singles No. 4: '3-3'. Missing score not inferred; excluded from ratings and game totals."
+    },
     {
       "section_code": "AA007",
       "message": "Incomplete TROLS score for AA007112 singles No. 1: '6-'. Missing score not inferred; excluded from ratings and game totals."
@@ -33,7 +66,251 @@
     {
       "section_code": "AA007",
       "message": "Fixture rubber totals do not match rubbers for AA007112: TROLS 3-3; scorecard 2-3. Both published records retained."
+    },
+    {
+      "section_code": "AA009",
+      "message": "Incomplete TROLS score for AA009061 singles No. 1: '2-1'. Missing score not inferred; excluded from ratings and game totals."
+    },
+    {
+      "section_code": "AA009",
+      "message": "Incomplete TROLS score for AA009061 singles No. 4: '3-0'. Missing score not inferred; excluded from ratings and game totals."
+    },
+    {
+      "section_code": "AA011",
+      "message": "Incomplete TROLS score for AA011021 singles No. 4: '3-3'. Missing score not inferred; excluded from ratings and game totals."
+    },
+    {
+      "section_code": "AA014",
+      "message": "Incomplete TROLS score for AA014081 singles No. 1: '4-2'. Missing score not inferred; excluded from ratings and game totals."
+    },
+    {
+      "section_code": "AP002",
+      "message": "Incomplete TROLS score for AP002041 doubles No. 1: '7-5 2-2'. Missing score not inferred; excluded from ratings and game totals."
+    },
+    {
+      "section_code": "AP002",
+      "message": "Incomplete TROLS score for AP002041 doubles No. 2: '6-0 3-2'. Missing score not inferred; excluded from ratings and game totals."
+    },
+    {
+      "section_code": "AP003",
+      "message": "Incomplete TROLS score for AP003044 singles No. 1: '0-2'. Missing score not inferred; excluded from ratings and game totals."
+    },
+    {
+      "section_code": "AP003",
+      "message": "Incomplete TROLS score for AP003044 singles No. 2: '3-2'. Missing score not inferred; excluded from ratings and game totals."
+    },
+    {
+      "section_code": "AP004",
+      "message": "Incomplete TROLS score for AP004044 singles No. 1: '3-0'. Missing score not inferred; excluded from ratings and game totals."
+    },
+    {
+      "section_code": "AP004",
+      "message": "Incomplete TROLS score for AP004044 singles No. 3: '0-1'. Missing score not inferred; excluded from ratings and game totals."
+    },
+    {
+      "section_code": "AP004",
+      "message": "Incomplete TROLS score for AP004042 doubles No. 1: '3-6 1-0'. Missing score not inferred; excluded from ratings and game totals."
+    },
+    {
+      "section_code": "AP005",
+      "message": "Incomplete TROLS score for AP005041 doubles No. 2: '6-4 2-2'. Missing score not inferred; excluded from ratings and game totals."
+    },
+    {
+      "section_code": "AP005",
+      "message": "Incomplete TROLS score for AP005044 doubles No. 2: '6-0 3-1'. Missing score not inferred; excluded from ratings and game totals."
+    },
+    {
+      "section_code": "AP007",
+      "message": "Incomplete TROLS score for AP007042 singles No. 3: '4-3'. Missing score not inferred; excluded from ratings and game totals."
+    },
+    {
+      "section_code": "AP007",
+      "message": "Incomplete TROLS score for AP007043 singles No. 1: '3-0'. Missing score not inferred; excluded from ratings and game totals."
+    },
+    {
+      "section_code": "AP007",
+      "message": "Incomplete TROLS score for AP007043 singles No. 2: '0-1'. Missing score not inferred; excluded from ratings and game totals."
+    },
+    {
+      "section_code": "AP008",
+      "message": "Incomplete TROLS score for AP008042 singles No. 3: '0-1'. Missing score not inferred; excluded from ratings and game totals."
+    },
+    {
+      "section_code": "AP011",
+      "message": "Incomplete TROLS score for AP011042 singles No. 2: '2-3'. Missing score not inferred; excluded from ratings and game totals."
+    },
+    {
+      "section_code": "AP011",
+      "message": "Incomplete TROLS score for AP011044 singles No. 1: '2-2'. Missing score not inferred; excluded from ratings and game totals."
+    },
+    {
+      "section_code": "AP011",
+      "message": "Incomplete TROLS score for AP011044 singles No. 2: '4-1'. Missing score not inferred; excluded from ratings and game totals."
+    },
+    {
+      "section_code": "AP011",
+      "message": "Incomplete TROLS score for AP011044 singles No. 4: '1-1'. Missing score not inferred; excluded from ratings and game totals."
+    },
+    {
+      "section_code": "AP011",
+      "message": "Incomplete TROLS score for AP011042 doubles No. 2: '4-2'. Missing score not inferred; excluded from ratings and game totals."
+    },
+    {
+      "section_code": "AP013",
+      "message": "Incomplete TROLS score for AP013041 singles No. 1: '1-1'. Missing score not inferred; excluded from ratings and game totals."
+    },
+    {
+      "section_code": "AP014",
+      "message": "Incomplete TROLS score for AP014043 singles No. 1: '3-0'. Missing score not inferred; excluded from ratings and game totals."
+    },
+    {
+      "section_code": "AP015",
+      "message": "Incomplete TROLS score for AP015041 singles No. 1: '4-4'. Missing score not inferred; excluded from ratings and game totals."
+    },
+    {
+      "section_code": "AP015",
+      "message": "Incomplete TROLS score for AP015042 singles No. 4: '1-2'. Missing score not inferred; excluded from ratings and game totals."
+    },
+    {
+      "section_code": "HA002",
+      "message": "Incomplete TROLS score for HA002081 doubles No. 1: '5-7 1-1'. Missing score not inferred; excluded from ratings and game totals."
+    },
+    {
+      "section_code": "HA002",
+      "message": "Incomplete TROLS score for HA002081 doubles No. 2: '6-2 2-1'. Missing score not inferred; excluded from ratings and game totals."
+    },
+    {
+      "section_code": "HA002",
+      "message": "Incomplete TROLS score for HA002083 doubles No. 1: '6-4 1-0'. Missing score not inferred; excluded from ratings and game totals."
+    },
+    {
+      "section_code": "TN001",
+      "message": "Incomplete TROLS score for TN001011 doubles No. 3: '2-1'. Missing score not inferred; excluded from ratings and game totals."
+    },
+    {
+      "section_code": "TN001",
+      "message": "Incomplete TROLS score for TN001011 doubles No. 4: '0-2'. Missing score not inferred; excluded from ratings and game totals."
+    },
+    {
+      "section_code": "TN001",
+      "message": "Incomplete TROLS score for TN001031 doubles No. 5: '4-2'. Missing score not inferred; excluded from ratings and game totals."
+    },
+    {
+      "section_code": "TN001",
+      "message": "Incomplete TROLS score for TN001031 doubles No. 6: '2-4'. Missing score not inferred; excluded from ratings and game totals."
+    },
+    {
+      "section_code": "TN001",
+      "message": "Incomplete TROLS score for TN001111 doubles No. 5: '6-6'. Missing score not inferred; excluded from ratings and game totals."
+    },
+    {
+      "section_code": "TN002",
+      "message": "Incomplete TROLS score for TN002013 doubles No. 4: '3-2'. Missing score not inferred; excluded from ratings and game totals."
+    },
+    {
+      "section_code": "TN002",
+      "message": "Incomplete TROLS score for TN002014 doubles No. 3: '2-3'. Missing score not inferred; excluded from ratings and game totals."
+    },
+    {
+      "section_code": "TN002",
+      "message": "Incomplete TROLS score for TN002014 doubles No. 4: '0-4'. Missing score not inferred; excluded from ratings and game totals."
+    },
+    {
+      "section_code": "TN002",
+      "message": "Incomplete TROLS score for TN002034 doubles No. 5: '4-3'. Missing score not inferred; excluded from ratings and game totals."
+    },
+    {
+      "section_code": "TN002",
+      "message": "Incomplete TROLS score for TN002034 doubles No. 6: '3-2'. Missing score not inferred; excluded from ratings and game totals."
+    },
+    {
+      "section_code": "TN003",
+      "message": "Incomplete TROLS score for TN003083 doubles No. 1: '1-0'. Missing score not inferred; excluded from ratings and game totals."
+    },
+    {
+      "section_code": "TN004",
+      "message": "Incomplete TROLS score for TN004011 doubles No. 5: '1-1'. Missing score not inferred; excluded from ratings and game totals."
+    },
+    {
+      "section_code": "TN004",
+      "message": "Incomplete TROLS score for TN004011 doubles No. 6: '1-0'. Missing score not inferred; excluded from ratings and game totals."
+    },
+    {
+      "section_code": "TN004",
+      "message": "Incomplete TROLS score for TN004013 doubles No. 2: '3-3'. Missing score not inferred; excluded from ratings and game totals."
+    },
+    {
+      "section_code": "TN004",
+      "message": "Incomplete TROLS score for TN004014 doubles No. 3: '1-4'. Missing score not inferred; excluded from ratings and game totals."
+    },
+    {
+      "section_code": "TN004",
+      "message": "Incomplete TROLS score for TN004014 doubles No. 4: '1-2'. Missing score not inferred; excluded from ratings and game totals."
+    },
+    {
+      "section_code": "TN005",
+      "message": "Incomplete TROLS score for TN005011 doubles No. 5: '0-2'. Missing score not inferred; excluded from ratings and game totals."
+    },
+    {
+      "section_code": "TN005",
+      "message": "Incomplete TROLS score for TN005011 doubles No. 6: '1-2'. Missing score not inferred; excluded from ratings and game totals."
+    },
+    {
+      "section_code": "TN005",
+      "message": "Incomplete TROLS score for TN005052 doubles No. 3: '6-6'. Missing score not inferred; excluded from ratings and game totals."
+    },
+    {
+      "section_code": "UA011",
+      "message": "Incomplete TROLS score for UA011084 singles No. 4: '3-4'. Missing score not inferred; excluded from ratings and game totals."
+    },
+    {
+      "section_code": "UA015",
+      "message": "Incomplete TROLS score for UA015082 singles No. 4: '2-1'. Missing score not inferred; excluded from ratings and game totals."
+    },
+    {
+      "section_code": "WA002",
+      "message": "Incomplete TROLS score for WA002061 doubles No. 1: '3-6 2-1'. Missing score not inferred; excluded from ratings and game totals."
+    },
+    {
+      "section_code": "WA002",
+      "message": "Incomplete TROLS score for WA002061 doubles No. 2: '3-6 1-3'. Missing score not inferred; excluded from ratings and game totals."
+    },
+    {
+      "section_code": "WA002",
+      "message": "Incomplete TROLS score for WA002062 doubles No. 1: '4-2'. Missing score not inferred; excluded from ratings and game totals."
+    },
+    {
+      "section_code": "WA002",
+      "message": "Incomplete TROLS score for WA002062 doubles No. 2: '4-2'. Missing score not inferred; excluded from ratings and game totals."
+    },
+    {
+      "section_code": "WA002",
+      "message": "Incomplete TROLS score for WA002063 doubles No. 3: '2-1'. Missing score not inferred; excluded from ratings and game totals."
+    },
+    {
+      "section_code": "WA002",
+      "message": "Incomplete TROLS score for WA002063 doubles No. 4: '0-2'. Missing score not inferred; excluded from ratings and game totals."
+    },
+    {
+      "section_code": "WA003",
+      "message": "Incomplete TROLS score for WA003062 doubles No. 1: '3-4'. Missing score not inferred; excluded from ratings and game totals."
+    },
+    {
+      "section_code": "WA003",
+      "message": "Incomplete TROLS score for WA003062 doubles No. 2: '6-1 0-1'. Missing score not inferred; excluded from ratings and game totals."
+    },
+    {
+      "section_code": "WA003",
+      "message": "Incomplete TROLS score for WA003063 doubles No. 4: '2-1'. Missing score not inferred; excluded from ratings and game totals."
+    },
+    {
+      "section_code": "WA004",
+      "message": "Incomplete TROLS score for WA004061 doubles No. 1: '5-5'. Missing score not inferred; excluded from ratings and game totals."
+    },
+    {
+      "section_code": "WA004",
+      "message": "Incomplete TROLS score for WA004061 doubles No. 2: '1-4'. Missing score not inferred; excluded from ratings and game totals."
     }
   ],
-  "elapsed_seconds": 61.6
+  "elapsed_seconds": 15.0
 }

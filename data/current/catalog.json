@@ -1,8 +1,13 @@
 {
-  "synced_at_utc": "2026-10-28T10:32:02.373204+00:00",
+  "synced_at_utc": "2026-10-28T11:20:45.567284+00:00",
   "competitions": {
     "AA": "Saturday AM - Spring 2026",
-    "UA": "Sunday AM - Spring 2026"
+    "AP": "Saturday PM - Summer 2026/27",
+    "HA": "Thursday AM - Spring 2026",
+    "TA": "Tuesday AM - Spring 2026",
+    "TN": "Tuesday Night - Spring 2026",
+    "UA": "Sunday AM - Spring 2026",
+    "WA": "Wednesday AM - Spring 2026"
   },
   "current_seasons": {
     "AA": {
@@ -10,9 +15,34 @@
       "season_id": "AA56",
       "season_label": "Spring 2026"
     },
+    "AP": {
+      "competition_label": "Saturday PM - Summer 2026/27",
+      "season_id": "AP53",
+      "season_label": "Summer 2026/27"
+    },
+    "HA": {
+      "competition_label": "Thursday AM - Spring 2026",
+      "season_id": "HA38",
+      "season_label": "Spring 2026"
+    },
+    "TA": {
+      "competition_label": "Tuesday AM - Spring 2026",
+      "season_id": "TA15",
+      "season_label": "Spring 2026"
+    },
+    "TN": {
+      "competition_label": "Tuesday Night - Spring 2026",
+      "season_id": "TN41",
+      "season_label": "Spring 2026"
+    },
     "UA": {
       "competition_label": "Sunday AM - Spring 2026",
       "season_id": "UA39",
+      "season_label": "Spring 2026"
+    },
+    "WA": {
+      "competition_label": "Wednesday AM - Spring 2026",
+      "season_id": "WA15",
       "season_label": "Spring 2026"
     }
   },
@@ -25,11 +55,49 @@
       "section_code": "AA002",
       "section_label": "Rubbers 2",
       "format": "rubbers",
+      "competition_rules": null,
+      "calendar_breaks": [
+        {
+          "date": "19 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "26 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "3 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "31 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "21 Nov 26",
+          "label": "Semi Final \u00b7 if qualified"
+        },
+        {
+          "date": "28 Nov 26",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "5 Dec 26",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [],
       "green_ball": false,
       "results_loaded_by_trols": null,
       "fixtures": 48,
       "completed_fixtures": 32,
-      "draw_fixtures": 42,
+      "draw_fixtures": 56,
       "singles_rubbers": 64,
       "doubles_rubbers": 32,
       "latest_round": 12,
@@ -44,6 +112,44 @@
       "section_code": "AA003",
       "section_label": "Sets 1",
       "format": "sets",
+      "competition_rules": null,
+      "calendar_breaks": [
+        {
+          "date": "19 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "26 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "3 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "31 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "21 Nov 26",
+          "label": "Semi Final \u00b7 if qualified"
+        },
+        {
+          "date": "28 Nov 26",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "5 Dec 26",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [],
       "green_ball": false,
       "results_loaded_by_trols": null,
       "fixtures": 48,
@@ -63,6 +169,44 @@
       "section_code": "AA004",
       "section_label": "Sets 2",
       "format": "sets",
+      "competition_rules": null,
+      "calendar_breaks": [
+        {
+          "date": "19 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "26 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "3 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "31 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "21 Nov 26",
+          "label": "Semi Final \u00b7 if qualified"
+        },
+        {
+          "date": "28 Nov 26",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "5 Dec 26",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [],
       "green_ball": false,
       "results_loaded_by_trols": null,
       "fixtures": 48,
@@ -71,8 +215,10 @@
       "singles_rubbers": 165,
       "doubles_rubbers": 84,
       "latest_round": 12,
-      "validation": "passed",
-      "source_warnings": []
+      "validation": "source discrepancies",
+      "source_warnings": [
+        "Incomplete TROLS score for AA004024 singles No. 1: '2-1'. Missing score not inferred; excluded from ratings and game totals."
+      ]
     },
     {
       "competition_code": "AA",
@@ -82,6 +228,44 @@
       "section_code": "AA005",
       "section_label": "Sets 3",
       "format": "sets",
+      "competition_rules": null,
+      "calendar_breaks": [
+        {
+          "date": "19 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "26 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "3 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "31 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "21 Nov 26",
+          "label": "Semi Final \u00b7 if qualified"
+        },
+        {
+          "date": "28 Nov 26",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "5 Dec 26",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [],
       "green_ball": false,
       "results_loaded_by_trols": null,
       "fixtures": 48,
@@ -90,8 +274,10 @@
       "singles_rubbers": 161,
       "doubles_rubbers": 81,
       "latest_round": 12,
-      "validation": "passed",
-      "source_warnings": []
+      "validation": "source discrepancies",
+      "source_warnings": [
+        "Incomplete TROLS score for AA005021 singles No. 4: '3-3'. Missing score not inferred; excluded from ratings and game totals."
+      ]
     },
     {
       "competition_code": "AA",
@@ -101,6 +287,44 @@
       "section_code": "AA006",
       "section_label": "Sets 4",
       "format": "sets",
+      "competition_rules": null,
+      "calendar_breaks": [
+        {
+          "date": "19 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "26 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "3 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "31 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "21 Nov 26",
+          "label": "Semi Final \u00b7 if qualified"
+        },
+        {
+          "date": "28 Nov 26",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "5 Dec 26",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [],
       "green_ball": false,
       "results_loaded_by_trols": null,
       "fixtures": 48,
@@ -120,6 +344,44 @@
       "section_code": "AA007",
       "section_label": "Sets 5",
       "format": "sets",
+      "competition_rules": null,
+      "calendar_breaks": [
+        {
+          "date": "19 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "26 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "3 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "31 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "21 Nov 26",
+          "label": "Semi Final \u00b7 if qualified"
+        },
+        {
+          "date": "28 Nov 26",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "5 Dec 26",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [],
       "green_ball": false,
       "results_loaded_by_trols": null,
       "fixtures": 48,
@@ -143,11 +405,49 @@
       "section_code": "AA008",
       "section_label": "Sets 6",
       "format": "sets",
+      "competition_rules": null,
+      "calendar_breaks": [
+        {
+          "date": "19 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "26 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "3 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "31 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "21 Nov 26",
+          "label": "Semi Final \u00b7 if qualified"
+        },
+        {
+          "date": "28 Nov 26",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "5 Dec 26",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [],
       "green_ball": false,
       "results_loaded_by_trols": null,
       "fixtures": 48,
       "completed_fixtures": 31,
-      "draw_fixtures": 42,
+      "draw_fixtures": 56,
       "singles_rubbers": 124,
       "doubles_rubbers": 62,
       "latest_round": 12,
@@ -162,16 +462,57 @@
       "section_code": "AA009",
       "section_label": "Sets 7",
       "format": "sets",
+      "competition_rules": null,
+      "calendar_breaks": [
+        {
+          "date": "19 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "26 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "3 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "31 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "21 Nov 26",
+          "label": "Semi Final \u00b7 if qualified"
+        },
+        {
+          "date": "28 Nov 26",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "5 Dec 26",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [],
       "green_ball": false,
       "results_loaded_by_trols": null,
       "fixtures": 48,
       "completed_fixtures": 32,
-      "draw_fixtures": 42,
+      "draw_fixtures": 56,
       "singles_rubbers": 128,
       "doubles_rubbers": 64,
       "latest_round": 12,
-      "validation": "passed",
-      "source_warnings": []
+      "validation": "source discrepancies",
+      "source_warnings": [
+        "Incomplete TROLS score for AA009061 singles No. 1: '2-1'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for AA009061 singles No. 4: '3-0'. Missing score not inferred; excluded from ratings and game totals."
+      ]
     },
     {
       "competition_code": "AA",
@@ -181,11 +522,49 @@
       "section_code": "AA010",
       "section_label": "Sets 8",
       "format": "sets",
+      "competition_rules": null,
+      "calendar_breaks": [
+        {
+          "date": "19 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "26 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "3 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "31 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "21 Nov 26",
+          "label": "Semi Final \u00b7 if qualified"
+        },
+        {
+          "date": "28 Nov 26",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "5 Dec 26",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [],
       "green_ball": false,
       "results_loaded_by_trols": null,
       "fixtures": 48,
       "completed_fixtures": 33,
-      "draw_fixtures": 42,
+      "draw_fixtures": 56,
       "singles_rubbers": 132,
       "doubles_rubbers": 66,
       "latest_round": 12,
@@ -200,6 +579,40 @@
       "section_code": "AA011",
       "section_label": "Sets 9",
       "format": "sets",
+      "competition_rules": null,
+      "calendar_breaks": [
+        {
+          "date": "19 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "26 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "3 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "31 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "28 Nov 26",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "5 Dec 26",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [],
       "green_ball": false,
       "results_loaded_by_trols": null,
       "fixtures": 36,
@@ -208,8 +621,10 @@
       "singles_rubbers": 124,
       "doubles_rubbers": 62,
       "latest_round": 12,
-      "validation": "passed",
-      "source_warnings": []
+      "validation": "source discrepancies",
+      "source_warnings": [
+        "Incomplete TROLS score for AA011021 singles No. 4: '3-3'. Missing score not inferred; excluded from ratings and game totals."
+      ]
     },
     {
       "competition_code": "AA",
@@ -219,6 +634,40 @@
       "section_code": "AA012",
       "section_label": "Sets 10",
       "format": "sets",
+      "competition_rules": null,
+      "calendar_breaks": [
+        {
+          "date": "19 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "26 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "3 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "31 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "28 Nov 26",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "5 Dec 26",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [],
       "green_ball": false,
       "results_loaded_by_trols": null,
       "fixtures": 36,
@@ -238,6 +687,40 @@
       "section_code": "AA013",
       "section_label": "Sets 1 Green Ball",
       "format": "sets",
+      "competition_rules": null,
+      "calendar_breaks": [
+        {
+          "date": "19 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "26 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "3 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "31 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "28 Nov 26",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "5 Dec 26",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [],
       "green_ball": true,
       "results_loaded_by_trols": null,
       "fixtures": 36,
@@ -257,16 +740,56 @@
       "section_code": "AA014",
       "section_label": "Sets 2 Green Ball",
       "format": "sets",
+      "competition_rules": null,
+      "calendar_breaks": [
+        {
+          "date": "19 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "26 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "3 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "31 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "21 Nov 26",
+          "label": "Semi Final \u00b7 if qualified"
+        },
+        {
+          "date": "28 Nov 26",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "5 Dec 26",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [],
       "green_ball": true,
       "results_loaded_by_trols": null,
       "fixtures": 48,
       "completed_fixtures": 34,
-      "draw_fixtures": 42,
+      "draw_fixtures": 56,
       "singles_rubbers": 136,
       "doubles_rubbers": 68,
       "latest_round": 12,
-      "validation": "passed",
-      "source_warnings": []
+      "validation": "source discrepancies",
+      "source_warnings": [
+        "Incomplete TROLS score for AA014081 singles No. 1: '4-2'. Missing score not inferred; excluded from ratings and game totals."
+      ]
     },
     {
       "competition_code": "AA",
@@ -276,11 +799,49 @@
       "section_code": "AA015",
       "section_label": "GIRLS 1",
       "format": "sets",
+      "competition_rules": null,
+      "calendar_breaks": [
+        {
+          "date": "19 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "26 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "3 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "31 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "21 Nov 26",
+          "label": "Semi Final \u00b7 if qualified"
+        },
+        {
+          "date": "28 Nov 26",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "5 Dec 26",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [],
       "green_ball": false,
       "results_loaded_by_trols": null,
       "fixtures": 48,
       "completed_fixtures": 30,
-      "draw_fixtures": 42,
+      "draw_fixtures": 56,
       "singles_rubbers": 118,
       "doubles_rubbers": 60,
       "latest_round": 12,
@@ -295,11 +856,49 @@
       "section_code": "AA016",
       "section_label": "Girls 2",
       "format": "sets",
+      "competition_rules": null,
+      "calendar_breaks": [
+        {
+          "date": "19 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "26 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "3 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "31 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "21 Nov 26",
+          "label": "Semi Final \u00b7 if qualified"
+        },
+        {
+          "date": "28 Nov 26",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "5 Dec 26",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [],
       "green_ball": false,
       "results_loaded_by_trols": null,
       "fixtures": 48,
       "completed_fixtures": 23,
-      "draw_fixtures": 30,
+      "draw_fixtures": 54,
       "singles_rubbers": 90,
       "doubles_rubbers": 46,
       "latest_round": 12,
@@ -314,11 +913,49 @@
       "section_code": "AA017",
       "section_label": "Girls 3",
       "format": "sets",
+      "competition_rules": null,
+      "calendar_breaks": [
+        {
+          "date": "19 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "26 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "3 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "31 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "21 Nov 26",
+          "label": "Semi Final \u00b7 if qualified"
+        },
+        {
+          "date": "28 Nov 26",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "5 Dec 26",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [],
       "green_ball": false,
       "results_loaded_by_trols": null,
       "fixtures": 48,
       "completed_fixtures": 33,
-      "draw_fixtures": 42,
+      "draw_fixtures": 56,
       "singles_rubbers": 126,
       "doubles_rubbers": 64,
       "latest_round": 12,
@@ -333,16 +970,3617 @@
       "section_code": "AA018",
       "section_label": "Rubbers 1",
       "format": "rubbers",
+      "competition_rules": null,
+      "calendar_breaks": [
+        {
+          "date": "19 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "26 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "3 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "31 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "21 Nov 26",
+          "label": "Semi Final \u00b7 if qualified"
+        },
+        {
+          "date": "28 Nov 26",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "5 Dec 26",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [],
       "green_ball": false,
       "results_loaded_by_trols": null,
       "fixtures": 48,
       "completed_fixtures": 30,
-      "draw_fixtures": 42,
+      "draw_fixtures": 56,
       "singles_rubbers": 60,
       "doubles_rubbers": 30,
       "latest_round": 12,
       "validation": "passed",
       "source_warnings": []
+    },
+    {
+      "competition_code": "AP",
+      "competition_label": "Saturday PM - Summer 2026/27",
+      "season_id": "AP53",
+      "season_label": "Summer 2026/27",
+      "section_code": "AP001",
+      "section_label": "Mens S/D 1 NW",
+      "format": "sets",
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 4,
+        "singlesBestOf": 1,
+        "setTarget": 8,
+        "doublesSlots": 2,
+        "doublesBestOf": 3,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "calendar_breaks": [
+        {
+          "date": "31 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "13 Mar 27",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "20 Mar 27",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Buckley Park",
+          "wins": 2,
+          "points": 24,
+          "percentage": 220.0,
+          "marker": "*"
+        },
+        {
+          "position": 2,
+          "team": "Altona Blue",
+          "wins": 2,
+          "points": 23,
+          "percentage": 120.56,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "Liston",
+          "wins": 2,
+          "points": 23,
+          "percentage": 93.7,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Altona Black",
+          "wins": 1,
+          "points": 18,
+          "percentage": 100.0,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Essendon",
+          "wins": 1,
+          "points": 14,
+          "percentage": 74.31,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Altona Gold",
+          "wins": 0,
+          "points": 8,
+          "percentage": 63.0,
+          "marker": "*"
+        }
+      ],
+      "green_ball": false,
+      "results_loaded_by_trols": null,
+      "fixtures": 12,
+      "completed_fixtures": 8,
+      "draw_fixtures": 45,
+      "singles_rubbers": 32,
+      "doubles_rubbers": 16,
+      "latest_round": 4,
+      "validation": "passed",
+      "source_warnings": []
+    },
+    {
+      "competition_code": "AP",
+      "competition_label": "Saturday PM - Summer 2026/27",
+      "season_id": "AP53",
+      "season_label": "Summer 2026/27",
+      "section_code": "AP002",
+      "section_label": "Mens S/D 1 SE",
+      "format": "sets",
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 4,
+        "singlesBestOf": 1,
+        "setTarget": 8,
+        "doublesSlots": 2,
+        "doublesBestOf": 3,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "calendar_breaks": [
+        {
+          "date": "31 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "13 Mar 27",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "20 Mar 27",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Carmelite Blue",
+          "wins": 2,
+          "points": 23,
+          "percentage": 103.82,
+          "marker": ""
+        },
+        {
+          "position": 2,
+          "team": "Mt Eliza Penins",
+          "wins": 1,
+          "points": 22,
+          "percentage": 136.19,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "BLTC Blue",
+          "wins": 2,
+          "points": 22,
+          "percentage": 123.62,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Overport Park",
+          "wins": 1,
+          "points": 20,
+          "percentage": 96.35,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "BLTC White",
+          "wins": 1,
+          "points": 20,
+          "percentage": 95.2,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Carmelite Red",
+          "wins": 0,
+          "points": 13,
+          "percentage": 56.85,
+          "marker": ""
+        }
+      ],
+      "green_ball": false,
+      "results_loaded_by_trols": null,
+      "fixtures": 12,
+      "completed_fixtures": 9,
+      "draw_fixtures": 45,
+      "singles_rubbers": 36,
+      "doubles_rubbers": 16,
+      "latest_round": 4,
+      "validation": "source discrepancies",
+      "source_warnings": [
+        "Incomplete TROLS score for AP002041 doubles No. 1: '7-5 2-2'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for AP002041 doubles No. 2: '6-0 3-2'. Missing score not inferred; excluded from ratings and game totals."
+      ]
+    },
+    {
+      "competition_code": "AP",
+      "competition_label": "Saturday PM - Summer 2026/27",
+      "season_id": "AP53",
+      "season_label": "Summer 2026/27",
+      "section_code": "AP003",
+      "section_label": "Mens S/D 2",
+      "format": "sets",
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 4,
+        "singlesBestOf": 1,
+        "setTarget": 8,
+        "doublesSlots": 2,
+        "doublesBestOf": 3,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "calendar_breaks": [
+        {
+          "date": "31 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "27 Feb 27",
+          "label": "Semi Final \u00b7 if qualified"
+        },
+        {
+          "date": "13 Mar 27",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "20 Mar 27",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Willy Central",
+          "wins": 2,
+          "points": 24,
+          "percentage": 105.47,
+          "marker": ""
+        },
+        {
+          "position": 2,
+          "team": "Black Rock",
+          "wins": 2,
+          "points": 23,
+          "percentage": 192.59,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "BLTC",
+          "wins": 1,
+          "points": 20,
+          "percentage": 107.89,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Liston Red",
+          "wins": 1,
+          "points": 18.5,
+          "percentage": 117.65,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Mt Eliza Penins",
+          "wins": 2,
+          "points": 15.5,
+          "percentage": 83.92,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Maccabi",
+          "wins": 0,
+          "points": 10,
+          "percentage": 48.31,
+          "marker": ""
+        },
+        {
+          "position": 7,
+          "team": "Liston Blue",
+          "wins": 0,
+          "points": 9,
+          "percentage": 83.7,
+          "marker": ""
+        }
+      ],
+      "green_ball": false,
+      "results_loaded_by_trols": null,
+      "fixtures": 16,
+      "completed_fixtures": 9,
+      "draw_fixtures": 56,
+      "singles_rubbers": 34,
+      "doubles_rubbers": 18,
+      "latest_round": 4,
+      "validation": "source discrepancies",
+      "source_warnings": [
+        "Incomplete TROLS score for AP003044 singles No. 1: '0-2'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for AP003044 singles No. 2: '3-2'. Missing score not inferred; excluded from ratings and game totals."
+      ]
+    },
+    {
+      "competition_code": "AP",
+      "competition_label": "Saturday PM - Summer 2026/27",
+      "season_id": "AP53",
+      "season_label": "Summer 2026/27",
+      "section_code": "AP004",
+      "section_label": "Mens S/D 3",
+      "format": "sets",
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 4,
+        "singlesBestOf": 1,
+        "setTarget": 8,
+        "doublesSlots": 2,
+        "doublesBestOf": 3,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "calendar_breaks": [
+        {
+          "date": "31 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "27 Feb 27",
+          "label": "Semi Final \u00b7 if qualified"
+        },
+        {
+          "date": "13 Mar 27",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "20 Mar 27",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Hurlingham Park",
+          "wins": 2,
+          "points": 26,
+          "percentage": 132.71,
+          "marker": ""
+        },
+        {
+          "position": 2,
+          "team": "BLTC",
+          "wins": 2,
+          "points": 26,
+          "percentage": 119.81,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "Essendon",
+          "wins": 2,
+          "points": 22,
+          "percentage": 126.14,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Mt Martha",
+          "wins": 1,
+          "points": 21,
+          "percentage": 83.13,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Black Rock",
+          "wins": 1,
+          "points": 20,
+          "percentage": 96.53,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Highmoor Uniting",
+          "wins": 1,
+          "points": 19,
+          "percentage": 109.49,
+          "marker": ""
+        },
+        {
+          "position": 7,
+          "team": "Altona",
+          "wins": 1,
+          "points": 18,
+          "percentage": 90.23,
+          "marker": ""
+        },
+        {
+          "position": 8,
+          "team": "Carmelite",
+          "wins": 0,
+          "points": 8,
+          "percentage": 64.71,
+          "marker": ""
+        }
+      ],
+      "green_ball": false,
+      "results_loaded_by_trols": null,
+      "fixtures": 16,
+      "completed_fixtures": 11,
+      "draw_fixtures": 56,
+      "singles_rubbers": 44,
+      "doubles_rubbers": 22,
+      "latest_round": 4,
+      "validation": "source discrepancies",
+      "source_warnings": [
+        "Incomplete TROLS score for AP004044 singles No. 1: '3-0'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for AP004044 singles No. 3: '0-1'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for AP004042 doubles No. 1: '3-6 1-0'. Missing score not inferred; excluded from ratings and game totals."
+      ]
+    },
+    {
+      "competition_code": "AP",
+      "competition_label": "Saturday PM - Summer 2026/27",
+      "season_id": "AP53",
+      "season_label": "Summer 2026/27",
+      "section_code": "AP005",
+      "section_label": "Mens S/D 4",
+      "format": "sets",
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 4,
+        "singlesBestOf": 1,
+        "setTarget": 8,
+        "doublesSlots": 2,
+        "doublesBestOf": 3,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "calendar_breaks": [
+        {
+          "date": "31 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "27 Feb 27",
+          "label": "Semi Final \u00b7 if qualified"
+        },
+        {
+          "date": "13 Mar 27",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "20 Mar 27",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Caulfield Rec",
+          "wins": 2,
+          "points": 29,
+          "percentage": 127.68,
+          "marker": ""
+        },
+        {
+          "position": 2,
+          "team": "Overport Park",
+          "wins": 2,
+          "points": 28,
+          "percentage": 153.33,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "Kooyong Green",
+          "wins": 3,
+          "points": 28,
+          "percentage": 111.43,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "BLTC",
+          "wins": 1,
+          "points": 22,
+          "percentage": 124.77,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Tennis World",
+          "wins": 1,
+          "points": 17,
+          "percentage": 96.8,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Kooyong Purple",
+          "wins": 0,
+          "points": 14,
+          "percentage": 89.26,
+          "marker": ""
+        },
+        {
+          "position": 7,
+          "team": "Ardrie Park",
+          "wins": 1,
+          "points": 13,
+          "percentage": 72.96,
+          "marker": ""
+        },
+        {
+          "position": 8,
+          "team": "Royal South Yarra",
+          "wins": 0,
+          "points": 9,
+          "percentage": 63.13,
+          "marker": ""
+        }
+      ],
+      "green_ball": false,
+      "results_loaded_by_trols": null,
+      "fixtures": 16,
+      "completed_fixtures": 12,
+      "draw_fixtures": 56,
+      "singles_rubbers": 48,
+      "doubles_rubbers": 24,
+      "latest_round": 4,
+      "validation": "source discrepancies",
+      "source_warnings": [
+        "Incomplete TROLS score for AP005041 doubles No. 2: '6-4 2-2'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for AP005044 doubles No. 2: '6-0 3-1'. Missing score not inferred; excluded from ratings and game totals."
+      ]
+    },
+    {
+      "competition_code": "AP",
+      "competition_label": "Saturday PM - Summer 2026/27",
+      "season_id": "AP53",
+      "season_label": "Summer 2026/27",
+      "section_code": "AP006",
+      "section_label": "Mens S/D 5",
+      "format": "sets",
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 4,
+        "singlesBestOf": 1,
+        "setTarget": 8,
+        "doublesSlots": 2,
+        "doublesBestOf": 3,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "calendar_breaks": [
+        {
+          "date": "31 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "27 Feb 27",
+          "label": "Semi Final \u00b7 if qualified"
+        },
+        {
+          "date": "13 Mar 27",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "20 Mar 27",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Elwood",
+          "wins": 3,
+          "points": 30,
+          "percentage": 144.64,
+          "marker": ""
+        },
+        {
+          "position": 2,
+          "team": "Ormond",
+          "wins": 3,
+          "points": 30,
+          "percentage": 132.52,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "BLTC",
+          "wins": 2,
+          "points": 24,
+          "percentage": 107.38,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Glen Huntly",
+          "wins": 2,
+          "points": 21,
+          "percentage": 95.27,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Kings Park",
+          "wins": 1,
+          "points": 17,
+          "percentage": 85.26,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Coatesville",
+          "wins": 1,
+          "points": 15,
+          "percentage": 81.93,
+          "marker": ""
+        },
+        {
+          "position": 7,
+          "team": "Altona",
+          "wins": 0,
+          "points": 12,
+          "percentage": 87.58,
+          "marker": ""
+        },
+        {
+          "position": 8,
+          "team": "Hurlingham Park",
+          "wins": 0,
+          "points": 11,
+          "percentage": 86.75,
+          "marker": ""
+        }
+      ],
+      "green_ball": false,
+      "results_loaded_by_trols": null,
+      "fixtures": 16,
+      "completed_fixtures": 12,
+      "draw_fixtures": 56,
+      "singles_rubbers": 48,
+      "doubles_rubbers": 24,
+      "latest_round": 4,
+      "validation": "passed",
+      "source_warnings": []
+    },
+    {
+      "competition_code": "AP",
+      "competition_label": "Saturday PM - Summer 2026/27",
+      "season_id": "AP53",
+      "season_label": "Summer 2026/27",
+      "section_code": "AP007",
+      "section_label": "Mens S/D 6",
+      "format": "sets",
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 4,
+        "singlesBestOf": 1,
+        "setTarget": 8,
+        "doublesSlots": 2,
+        "doublesBestOf": 3,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "calendar_breaks": [
+        {
+          "date": "31 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "27 Feb 27",
+          "label": "Semi Final \u00b7 if qualified"
+        },
+        {
+          "date": "13 Mar 27",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "20 Mar 27",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Hawthorn",
+          "wins": 3,
+          "points": 31,
+          "percentage": 127.27,
+          "marker": ""
+        },
+        {
+          "position": 2,
+          "team": "Kooyong",
+          "wins": 3,
+          "points": 30.5,
+          "percentage": 176.19,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "Parkdale",
+          "wins": 2,
+          "points": 27,
+          "percentage": 140.0,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Chadstone",
+          "wins": 0,
+          "points": 10,
+          "percentage": 100.93,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Kings Park",
+          "wins": 0,
+          "points": 8,
+          "percentage": 55.66,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "BLTC",
+          "wins": 0,
+          "points": 7.5,
+          "percentage": 55.91,
+          "marker": ""
+        },
+        {
+          "position": 7,
+          "team": "Maccabi",
+          "wins": 0,
+          "points": 6,
+          "percentage": 63.64,
+          "marker": ""
+        }
+      ],
+      "green_ball": false,
+      "results_loaded_by_trols": null,
+      "fixtures": 16,
+      "completed_fixtures": 9,
+      "draw_fixtures": 56,
+      "singles_rubbers": 34,
+      "doubles_rubbers": 18,
+      "latest_round": 4,
+      "validation": "source discrepancies",
+      "source_warnings": [
+        "Incomplete TROLS score for AP007042 singles No. 3: '4-3'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for AP007043 singles No. 1: '3-0'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for AP007043 singles No. 2: '0-1'. Missing score not inferred; excluded from ratings and game totals."
+      ]
+    },
+    {
+      "competition_code": "AP",
+      "competition_label": "Saturday PM - Summer 2026/27",
+      "season_id": "AP53",
+      "season_label": "Summer 2026/27",
+      "section_code": "AP008",
+      "section_label": "Mens S/D 7",
+      "format": "sets",
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 4,
+        "singlesBestOf": 1,
+        "setTarget": 8,
+        "doublesSlots": 2,
+        "doublesBestOf": 3,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "calendar_breaks": [
+        {
+          "date": "31 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "27 Feb 27",
+          "label": "Semi Final \u00b7 if qualified"
+        },
+        {
+          "date": "13 Mar 27",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "20 Mar 27",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Carmelite",
+          "wins": 3,
+          "points": 28,
+          "percentage": 122.05,
+          "marker": ""
+        },
+        {
+          "position": 2,
+          "team": "Clarinda",
+          "wins": 2,
+          "points": 24,
+          "percentage": 106.5,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "Mt Eliza Penins",
+          "wins": 2,
+          "points": 20,
+          "percentage": 137.11,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "BLTC",
+          "wins": 1,
+          "points": 19,
+          "percentage": 104.03,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Sandringham",
+          "wins": 1,
+          "points": 16,
+          "percentage": 106.25,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Tennis World",
+          "wins": 0,
+          "points": 8,
+          "percentage": 72.65,
+          "marker": ""
+        },
+        {
+          "position": 7,
+          "team": "Overport Park",
+          "wins": 0,
+          "points": 5,
+          "percentage": 58.68,
+          "marker": ""
+        }
+      ],
+      "green_ball": false,
+      "results_loaded_by_trols": null,
+      "fixtures": 16,
+      "completed_fixtures": 9,
+      "draw_fixtures": 56,
+      "singles_rubbers": 36,
+      "doubles_rubbers": 18,
+      "latest_round": 4,
+      "validation": "source discrepancies",
+      "source_warnings": [
+        "Incomplete TROLS score for AP008042 singles No. 3: '0-1'. Missing score not inferred; excluded from ratings and game totals."
+      ]
+    },
+    {
+      "competition_code": "AP",
+      "competition_label": "Saturday PM - Summer 2026/27",
+      "season_id": "AP53",
+      "season_label": "Summer 2026/27",
+      "section_code": "AP009",
+      "section_label": "Mens S/D 8",
+      "format": "sets",
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 4,
+        "singlesBestOf": 1,
+        "setTarget": 8,
+        "doublesSlots": 2,
+        "doublesBestOf": 3,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "calendar_breaks": [
+        {
+          "date": "31 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "27 Feb 27",
+          "label": "Semi Final \u00b7 if qualified"
+        },
+        {
+          "date": "13 Mar 27",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "20 Mar 27",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Kooyong",
+          "wins": 2,
+          "points": 22,
+          "percentage": 149.3,
+          "marker": ""
+        },
+        {
+          "position": 2,
+          "team": "Essendon",
+          "wins": 2,
+          "points": 19,
+          "percentage": 174.24,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "Hurlingham Park",
+          "wins": 2,
+          "points": 17,
+          "percentage": 202.08,
+          "marker": "*"
+        },
+        {
+          "position": 4,
+          "team": "Lauriston",
+          "wins": 1,
+          "points": 16,
+          "percentage": 75.84,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Albert Park",
+          "wins": 1,
+          "points": 15,
+          "percentage": 66.45,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Highmoor Uniting",
+          "wins": 1,
+          "points": 14,
+          "percentage": 93.27,
+          "marker": ""
+        },
+        {
+          "position": 7,
+          "team": "BLTC",
+          "wins": 0,
+          "points": 7,
+          "percentage": 65.77,
+          "marker": "*"
+        }
+      ],
+      "green_ball": false,
+      "results_loaded_by_trols": null,
+      "fixtures": 16,
+      "completed_fixtures": 8,
+      "draw_fixtures": 56,
+      "singles_rubbers": 32,
+      "doubles_rubbers": 16,
+      "latest_round": 4,
+      "validation": "passed",
+      "source_warnings": []
+    },
+    {
+      "competition_code": "AP",
+      "competition_label": "Saturday PM - Summer 2026/27",
+      "season_id": "AP53",
+      "season_label": "Summer 2026/27",
+      "section_code": "AP010",
+      "section_label": "Mens S/D 9",
+      "format": "sets",
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 4,
+        "singlesBestOf": 1,
+        "setTarget": 8,
+        "doublesSlots": 2,
+        "doublesBestOf": 3,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "calendar_breaks": [
+        {
+          "date": "31 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "27 Feb 27",
+          "label": "Semi Final \u00b7 if qualified"
+        },
+        {
+          "date": "13 Mar 27",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "20 Mar 27",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Black Rock",
+          "wins": 3,
+          "points": 31,
+          "percentage": 159.34,
+          "marker": ""
+        },
+        {
+          "position": 2,
+          "team": "Coatesville",
+          "wins": 2,
+          "points": 22,
+          "percentage": 133.75,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "Murrumbeena",
+          "wins": 2,
+          "points": 19,
+          "percentage": 128.18,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Maccabi Blue",
+          "wins": 0,
+          "points": 15,
+          "percentage": 92.23,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Gardiner",
+          "wins": 1,
+          "points": 14,
+          "percentage": 66.45,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Hawthorn",
+          "wins": 0,
+          "points": 11,
+          "percentage": 68.75,
+          "marker": ""
+        },
+        {
+          "position": 7,
+          "team": "Maccabi Green",
+          "wins": 0,
+          "points": 8,
+          "percentage": 63.11,
+          "marker": ""
+        }
+      ],
+      "green_ball": false,
+      "results_loaded_by_trols": null,
+      "fixtures": 16,
+      "completed_fixtures": 8,
+      "draw_fixtures": 56,
+      "singles_rubbers": 32,
+      "doubles_rubbers": 16,
+      "latest_round": 4,
+      "validation": "passed",
+      "source_warnings": []
+    },
+    {
+      "competition_code": "AP",
+      "competition_label": "Saturday PM - Summer 2026/27",
+      "season_id": "AP53",
+      "season_label": "Summer 2026/27",
+      "section_code": "AP011",
+      "section_label": "Mens S/D 10",
+      "format": "sets",
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 4,
+        "singlesBestOf": 1,
+        "setTarget": 8,
+        "doublesSlots": 2,
+        "doublesBestOf": 3,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "calendar_breaks": [
+        {
+          "date": "31 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "27 Feb 27",
+          "label": "Semi Final \u00b7 if qualified"
+        },
+        {
+          "date": "13 Mar 27",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "20 Mar 27",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Overport Park",
+          "wins": 3,
+          "points": 31,
+          "percentage": 139.19,
+          "marker": ""
+        },
+        {
+          "position": 2,
+          "team": "Beaumaris CC",
+          "wins": 1,
+          "points": 21.5,
+          "percentage": 107.44,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "Tennis World",
+          "wins": 1,
+          "points": 20.5,
+          "percentage": 100.79,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Highmoor Uniting",
+          "wins": 1,
+          "points": 18.5,
+          "percentage": 126.87,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Kooyong",
+          "wins": 1,
+          "points": 12.5,
+          "percentage": 85.99,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "East Malvern",
+          "wins": 0,
+          "points": 9,
+          "percentage": 76.67,
+          "marker": ""
+        },
+        {
+          "position": 7,
+          "team": "Royal South Yarra",
+          "wins": 0,
+          "points": 7,
+          "percentage": 70.21,
+          "marker": ""
+        }
+      ],
+      "green_ball": false,
+      "results_loaded_by_trols": null,
+      "fixtures": 16,
+      "completed_fixtures": 8,
+      "draw_fixtures": 56,
+      "singles_rubbers": 31,
+      "doubles_rubbers": 16,
+      "latest_round": 4,
+      "validation": "source discrepancies",
+      "source_warnings": [
+        "Incomplete TROLS score for AP011042 singles No. 2: '2-3'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for AP011044 singles No. 1: '2-2'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for AP011044 singles No. 2: '4-1'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for AP011044 singles No. 4: '1-1'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for AP011042 doubles No. 2: '4-2'. Missing score not inferred; excluded from ratings and game totals."
+      ]
+    },
+    {
+      "competition_code": "AP",
+      "competition_label": "Saturday PM - Summer 2026/27",
+      "season_id": "AP53",
+      "season_label": "Summer 2026/27",
+      "section_code": "AP012",
+      "section_label": "Mens S/D 11",
+      "format": "sets",
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 4,
+        "singlesBestOf": 1,
+        "setTarget": 8,
+        "doublesSlots": 2,
+        "doublesBestOf": 3,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "calendar_breaks": [
+        {
+          "date": "31 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "27 Feb 27",
+          "label": "Semi Final \u00b7 if qualified"
+        },
+        {
+          "date": "13 Mar 27",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "20 Mar 27",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Mentone",
+          "wins": 3,
+          "points": 34,
+          "percentage": 217.54,
+          "marker": ""
+        },
+        {
+          "position": 2,
+          "team": "Le Page",
+          "wins": 2,
+          "points": 24,
+          "percentage": 141.03,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "Mordialloc",
+          "wins": 2,
+          "points": 19,
+          "percentage": 224.0,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Royal Ave",
+          "wins": 2,
+          "points": 18,
+          "percentage": 194.74,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "St Louis de Mont Blue",
+          "wins": 1,
+          "points": 15,
+          "percentage": 73.15,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "St Louis de Mont Red",
+          "wins": 0,
+          "points": 7,
+          "percentage": 43.1,
+          "marker": ""
+        },
+        {
+          "position": 7,
+          "team": "BLTC",
+          "wins": 0,
+          "points": 3,
+          "percentage": 62.2,
+          "marker": ""
+        }
+      ],
+      "green_ball": false,
+      "results_loaded_by_trols": null,
+      "fixtures": 16,
+      "completed_fixtures": 7,
+      "draw_fixtures": 56,
+      "singles_rubbers": 28,
+      "doubles_rubbers": 14,
+      "latest_round": 4,
+      "validation": "passed",
+      "source_warnings": []
+    },
+    {
+      "competition_code": "AP",
+      "competition_label": "Saturday PM - Summer 2026/27",
+      "season_id": "AP53",
+      "season_label": "Summer 2026/27",
+      "section_code": "AP013",
+      "section_label": "Womens S/D 1",
+      "format": "sets",
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 4,
+        "singlesBestOf": 1,
+        "setTarget": 8,
+        "doublesSlots": 2,
+        "doublesBestOf": 3,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "calendar_breaks": [
+        {
+          "date": "31 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "27 Feb 27",
+          "label": "Semi Final \u00b7 if qualified"
+        },
+        {
+          "date": "13 Mar 27",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "20 Mar 27",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "BLTC White",
+          "wins": 2,
+          "points": 29,
+          "percentage": 152.58,
+          "marker": ""
+        },
+        {
+          "position": 2,
+          "team": "East Malvern Blue",
+          "wins": 2,
+          "points": 25,
+          "percentage": 147.17,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "BLTC Blue",
+          "wins": 1,
+          "points": 16,
+          "percentage": 106.52,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Royal South Yarra",
+          "wins": 1,
+          "points": 15,
+          "percentage": 101.92,
+          "marker": "*"
+        },
+        {
+          "position": 5,
+          "team": "East Malvern Navy",
+          "wins": 0,
+          "points": 12,
+          "percentage": 91.11,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Altona",
+          "wins": 1,
+          "points": 8,
+          "percentage": 65.7,
+          "marker": ""
+        },
+        {
+          "position": 7,
+          "team": "BLTC Light",
+          "wins": 0,
+          "points": 5,
+          "percentage": 25.0,
+          "marker": "*"
+        }
+      ],
+      "green_ball": false,
+      "results_loaded_by_trols": null,
+      "fixtures": 16,
+      "completed_fixtures": 8,
+      "draw_fixtures": 56,
+      "singles_rubbers": 31,
+      "doubles_rubbers": 16,
+      "latest_round": 4,
+      "validation": "source discrepancies",
+      "source_warnings": [
+        "Incomplete TROLS score for AP013041 singles No. 1: '1-1'. Missing score not inferred; excluded from ratings and game totals."
+      ]
+    },
+    {
+      "competition_code": "AP",
+      "competition_label": "Saturday PM - Summer 2026/27",
+      "season_id": "AP53",
+      "season_label": "Summer 2026/27",
+      "section_code": "AP014",
+      "section_label": "Womens S/D 2",
+      "format": "sets",
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 4,
+        "singlesBestOf": 1,
+        "setTarget": 8,
+        "doublesSlots": 2,
+        "doublesBestOf": 3,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "calendar_breaks": [
+        {
+          "date": "31 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "27 Feb 27",
+          "label": "Semi Final \u00b7 if qualified"
+        },
+        {
+          "date": "13 Mar 27",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "20 Mar 27",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "BLTC White",
+          "wins": 2,
+          "points": 21,
+          "percentage": 230.95,
+          "marker": ""
+        },
+        {
+          "position": 2,
+          "team": "Lauriston",
+          "wins": 2,
+          "points": 20,
+          "percentage": 118.29,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "Hawthorn",
+          "wins": 2,
+          "points": 19,
+          "percentage": 113.6,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "BLTC Blue",
+          "wins": 1,
+          "points": 19,
+          "percentage": 110.79,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Kooyong",
+          "wins": 1,
+          "points": 16,
+          "percentage": 70.77,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Overport Park",
+          "wins": 1,
+          "points": 15,
+          "percentage": 72.14,
+          "marker": ""
+        },
+        {
+          "position": 7,
+          "team": "Royal South Yarra",
+          "wins": 0,
+          "points": 10,
+          "percentage": 74.49,
+          "marker": ""
+        }
+      ],
+      "green_ball": false,
+      "results_loaded_by_trols": null,
+      "fixtures": 16,
+      "completed_fixtures": 9,
+      "draw_fixtures": 56,
+      "singles_rubbers": 36,
+      "doubles_rubbers": 18,
+      "latest_round": 4,
+      "validation": "source discrepancies",
+      "source_warnings": [
+        "Incomplete TROLS score for AP014043 singles No. 1: '3-0'. Missing score not inferred; excluded from ratings and game totals."
+      ]
+    },
+    {
+      "competition_code": "AP",
+      "competition_label": "Saturday PM - Summer 2026/27",
+      "season_id": "AP53",
+      "season_label": "Summer 2026/27",
+      "section_code": "AP015",
+      "section_label": "Womens S/D 3",
+      "format": "sets",
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 4,
+        "singlesBestOf": 1,
+        "setTarget": 8,
+        "doublesSlots": 2,
+        "doublesBestOf": 3,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "calendar_breaks": [
+        {
+          "date": "31 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "27 Feb 27",
+          "label": "Semi Final \u00b7 if qualified"
+        },
+        {
+          "date": "13 Mar 27",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "20 Mar 27",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Kooyong",
+          "wins": 3,
+          "points": 28,
+          "percentage": 236.36,
+          "marker": ""
+        },
+        {
+          "position": 2,
+          "team": "East Malvern Blue",
+          "wins": 2,
+          "points": 25,
+          "percentage": 112.69,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "East Malvern Navy",
+          "wins": 1,
+          "points": 17,
+          "percentage": 98.51,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "BLTC Blue",
+          "wins": 1,
+          "points": 14,
+          "percentage": 89.62,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Chadstone",
+          "wins": 1,
+          "points": 13.5,
+          "percentage": 92.16,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Tennis World",
+          "wins": 0,
+          "points": 13,
+          "percentage": 72.52,
+          "marker": ""
+        },
+        {
+          "position": 7,
+          "team": "BLTC White",
+          "wins": 0,
+          "points": 9.5,
+          "percentage": 65.07,
+          "marker": ""
+        }
+      ],
+      "green_ball": false,
+      "results_loaded_by_trols": null,
+      "fixtures": 16,
+      "completed_fixtures": 9,
+      "draw_fixtures": 56,
+      "singles_rubbers": 33,
+      "doubles_rubbers": 18,
+      "latest_round": 4,
+      "validation": "source discrepancies",
+      "source_warnings": [
+        "Incomplete TROLS score for AP015041 singles No. 1: '4-4'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for AP015042 singles No. 4: '1-2'. Missing score not inferred; excluded from ratings and game totals."
+      ]
+    },
+    {
+      "competition_code": "AP",
+      "competition_label": "Saturday PM - Summer 2026/27",
+      "season_id": "AP53",
+      "season_label": "Summer 2026/27",
+      "section_code": "AP016",
+      "section_label": "Womens S/D 4",
+      "format": "sets",
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 4,
+        "singlesBestOf": 1,
+        "setTarget": 8,
+        "doublesSlots": 2,
+        "doublesBestOf": 3,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "calendar_breaks": [
+        {
+          "date": "31 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "27 Feb 27",
+          "label": "Semi Final \u00b7 if qualified"
+        },
+        {
+          "date": "13 Mar 27",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "20 Mar 27",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Hurlingham Park",
+          "wins": 2,
+          "points": 25,
+          "percentage": 125.36,
+          "marker": ""
+        },
+        {
+          "position": 2,
+          "team": "Kooyong Green",
+          "wins": 2,
+          "points": 25,
+          "percentage": 113.08,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "Kooyong Purple",
+          "wins": 2,
+          "points": 22,
+          "percentage": 115.27,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Tennis World",
+          "wins": 2,
+          "points": 18,
+          "percentage": 106.12,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Glenvale",
+          "wins": 1,
+          "points": 16,
+          "percentage": 95.28,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Mordialloc",
+          "wins": 0,
+          "points": 8,
+          "percentage": 61.86,
+          "marker": ""
+        },
+        {
+          "position": 7,
+          "team": "Royal South Yarra",
+          "wins": 0,
+          "points": 6,
+          "percentage": 67.77,
+          "marker": ""
+        }
+      ],
+      "green_ball": false,
+      "results_loaded_by_trols": null,
+      "fixtures": 16,
+      "completed_fixtures": 9,
+      "draw_fixtures": 56,
+      "singles_rubbers": 36,
+      "doubles_rubbers": 18,
+      "latest_round": 4,
+      "validation": "passed",
+      "source_warnings": []
+    },
+    {
+      "competition_code": "AP",
+      "competition_label": "Saturday PM - Summer 2026/27",
+      "season_id": "AP53",
+      "season_label": "Summer 2026/27",
+      "section_code": "AP017",
+      "section_label": "Mx Rubbers 1",
+      "format": "sets",
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 4,
+        "doublesBestOf": 3,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "calendar_breaks": [
+        {
+          "date": "31 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "13 Mar 27",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "20 Mar 27",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Royal South Yarra",
+          "wins": 3,
+          "points": 24.5,
+          "percentage": 158.43,
+          "marker": ""
+        },
+        {
+          "position": 2,
+          "team": "Parkdale",
+          "wins": 2,
+          "points": 20,
+          "percentage": 105.3,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "Overport Park",
+          "wins": 2,
+          "points": 19,
+          "percentage": 124.39,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Sth Hawthorn",
+          "wins": 2,
+          "points": 18,
+          "percentage": 96.85,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Black Rock",
+          "wins": 0,
+          "points": 7.5,
+          "percentage": 65.71,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Hawthorn",
+          "wins": 0,
+          "points": 7,
+          "percentage": 71.54,
+          "marker": ""
+        }
+      ],
+      "green_ball": false,
+      "results_loaded_by_trols": null,
+      "fixtures": 12,
+      "completed_fixtures": 9,
+      "draw_fixtures": 45,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 36,
+      "latest_round": 4,
+      "validation": "passed",
+      "source_warnings": []
+    },
+    {
+      "competition_code": "AP",
+      "competition_label": "Saturday PM - Summer 2026/27",
+      "season_id": "AP53",
+      "season_label": "Summer 2026/27",
+      "section_code": "AP018",
+      "section_label": "Mx Rubbers 2",
+      "format": "sets",
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 4,
+        "doublesBestOf": 3,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "calendar_breaks": [
+        {
+          "date": "31 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "27 Feb 27",
+          "label": "Semi Final \u00b7 if qualified"
+        },
+        {
+          "date": "13 Mar 27",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "20 Mar 27",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Hawthorn",
+          "wins": 3,
+          "points": 26,
+          "percentage": 156.52,
+          "marker": ""
+        },
+        {
+          "position": 2,
+          "team": "BLTC",
+          "wins": 3,
+          "points": 25,
+          "percentage": 114.93,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "Elwood Yellow",
+          "wins": 2,
+          "points": 20,
+          "percentage": 120.0,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Mordialloc",
+          "wins": 2,
+          "points": 19,
+          "percentage": 101.59,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Elwood Green",
+          "wins": 1,
+          "points": 15,
+          "percentage": 113.79,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Tally Ho",
+          "wins": 1,
+          "points": 11,
+          "percentage": 88.59,
+          "marker": ""
+        },
+        {
+          "position": 7,
+          "team": "Ormond",
+          "wins": 0,
+          "points": 6,
+          "percentage": 79.63,
+          "marker": ""
+        },
+        {
+          "position": 8,
+          "team": "Parkdale",
+          "wins": 0,
+          "points": 6,
+          "percentage": 55.7,
+          "marker": ""
+        }
+      ],
+      "green_ball": false,
+      "results_loaded_by_trols": null,
+      "fixtures": 16,
+      "completed_fixtures": 12,
+      "draw_fixtures": 56,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 48,
+      "latest_round": 4,
+      "validation": "passed",
+      "source_warnings": []
+    },
+    {
+      "competition_code": "AP",
+      "competition_label": "Saturday PM - Summer 2026/27",
+      "season_id": "AP53",
+      "season_label": "Summer 2026/27",
+      "section_code": "AP019",
+      "section_label": "Mx Rubbers 3",
+      "format": "sets",
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 4,
+        "doublesBestOf": 3,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "calendar_breaks": [
+        {
+          "date": "31 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "27 Feb 27",
+          "label": "Semi Final \u00b7 if qualified"
+        },
+        {
+          "date": "13 Mar 27",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "20 Mar 27",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Highmoor Uniting",
+          "wins": 3,
+          "points": 22,
+          "percentage": 174.42,
+          "marker": ""
+        },
+        {
+          "position": 2,
+          "team": "Kings Park",
+          "wins": 2,
+          "points": 20,
+          "percentage": 311.76,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "Coatesville",
+          "wins": 1,
+          "points": 13,
+          "percentage": 160.38,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Hurlingham Park",
+          "wins": 1,
+          "points": 13,
+          "percentage": 78.83,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Parkdale",
+          "wins": 1,
+          "points": 12,
+          "percentage": 61.27,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Port Melbourne",
+          "wins": 1,
+          "points": 11,
+          "percentage": 80.77,
+          "marker": ""
+        },
+        {
+          "position": 7,
+          "team": "Elwood",
+          "wins": 0,
+          "points": 5,
+          "percentage": 67.65,
+          "marker": ""
+        }
+      ],
+      "green_ball": false,
+      "results_loaded_by_trols": null,
+      "fixtures": 16,
+      "completed_fixtures": 8,
+      "draw_fixtures": 56,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 32,
+      "latest_round": 4,
+      "validation": "passed",
+      "source_warnings": []
+    },
+    {
+      "competition_code": "AP",
+      "competition_label": "Saturday PM - Summer 2026/27",
+      "season_id": "AP53",
+      "season_label": "Summer 2026/27",
+      "section_code": "AP020",
+      "section_label": "Mx Rubbers 4",
+      "format": "sets",
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 4,
+        "doublesBestOf": 3,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "calendar_breaks": [
+        {
+          "date": "31 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "27 Feb 27",
+          "label": "Semi Final \u00b7 if qualified"
+        },
+        {
+          "date": "13 Mar 27",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "20 Mar 27",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Le Page",
+          "wins": 2,
+          "points": 22,
+          "percentage": 135.14,
+          "marker": ""
+        },
+        {
+          "position": 2,
+          "team": "Pakenham",
+          "wins": 2,
+          "points": 22,
+          "percentage": 112.17,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "Langwarrin White",
+          "wins": 2,
+          "points": 21,
+          "percentage": 182.19,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Langwarrin Blue",
+          "wins": 1,
+          "points": 16,
+          "percentage": 121.79,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Victory Park",
+          "wins": 1,
+          "points": 15,
+          "percentage": 99.35,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Black Rock",
+          "wins": 1,
+          "points": 14,
+          "percentage": 62.07,
+          "marker": ""
+        },
+        {
+          "position": 7,
+          "team": "Mentone Yellow",
+          "wins": 1,
+          "points": 13,
+          "percentage": 93.38,
+          "marker": ""
+        },
+        {
+          "position": 8,
+          "team": "Mentone Gold",
+          "wins": 0,
+          "points": 5,
+          "percentage": 42.0,
+          "marker": ""
+        }
+      ],
+      "green_ball": false,
+      "results_loaded_by_trols": null,
+      "fixtures": 16,
+      "completed_fixtures": 11,
+      "draw_fixtures": 56,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 44,
+      "latest_round": 4,
+      "validation": "passed",
+      "source_warnings": []
+    },
+    {
+      "competition_code": "AP",
+      "competition_label": "Saturday PM - Summer 2026/27",
+      "season_id": "AP53",
+      "season_label": "Summer 2026/27",
+      "section_code": "AP021",
+      "section_label": "Womens Rubs 1",
+      "format": "sets",
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 4,
+        "doublesBestOf": 3,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "calendar_breaks": [
+        {
+          "date": "31 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "13 Mar 27",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "20 Mar 27",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "St Louis de Mont",
+          "wins": 3,
+          "points": 23,
+          "percentage": 111.86,
+          "marker": ""
+        },
+        {
+          "position": 2,
+          "team": "Kooyong",
+          "wins": 2,
+          "points": 20,
+          "percentage": 164.79,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "Hurlingham Park",
+          "wins": 1,
+          "points": 20,
+          "percentage": 148.91,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Fitzroy",
+          "wins": 1,
+          "points": 14,
+          "percentage": 85.07,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Legend Park",
+          "wins": 1,
+          "points": 12,
+          "percentage": 96.24,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Port Melbourne",
+          "wins": 0,
+          "points": 6,
+          "percentage": 44.44,
+          "marker": ""
+        }
+      ],
+      "green_ball": false,
+      "results_loaded_by_trols": null,
+      "fixtures": 12,
+      "completed_fixtures": 9,
+      "draw_fixtures": 45,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 36,
+      "latest_round": 4,
+      "validation": "passed",
+      "source_warnings": []
+    },
+    {
+      "competition_code": "AP",
+      "competition_label": "Saturday PM - Summer 2026/27",
+      "season_id": "AP53",
+      "season_label": "Summer 2026/27",
+      "section_code": "AP022",
+      "section_label": "Womens Rubs 2",
+      "format": "sets",
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 4,
+        "doublesBestOf": 3,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "calendar_breaks": [
+        {
+          "date": "31 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "13 Mar 27",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "20 Mar 27",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Chadstone",
+          "wins": 2,
+          "points": 20,
+          "percentage": 136.73,
+          "marker": ""
+        },
+        {
+          "position": 2,
+          "team": "Hawthorn",
+          "wins": 2,
+          "points": 20,
+          "percentage": 133.98,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "Overport Park Green",
+          "wins": 2,
+          "points": 19,
+          "percentage": 100.0,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Mentone",
+          "wins": 1,
+          "points": 15,
+          "percentage": 100.0,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Overport Park Gold",
+          "wins": 1,
+          "points": 14,
+          "percentage": 90.0,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Ormond",
+          "wins": 0,
+          "points": 8,
+          "percentage": 62.18,
+          "marker": ""
+        }
+      ],
+      "green_ball": false,
+      "results_loaded_by_trols": null,
+      "fixtures": 12,
+      "completed_fixtures": 9,
+      "draw_fixtures": 45,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 36,
+      "latest_round": 4,
+      "validation": "passed",
+      "source_warnings": []
+    },
+    {
+      "competition_code": "HA",
+      "competition_label": "Thursday AM - Spring 2026",
+      "season_id": "HA38",
+      "season_label": "Spring 2026",
+      "section_code": "HA001",
+      "section_label": "Section A1",
+      "format": "sets",
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 4,
+        "doublesBestOf": 3,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "calendar_breaks": [
+        {
+          "date": "24 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "1 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "12 Nov 26",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "19 Nov 26",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Canterbury",
+          "wins": 8,
+          "points": 70,
+          "percentage": 136.61,
+          "marker": ""
+        },
+        {
+          "position": 2,
+          "team": "Eaglemont",
+          "wins": 7,
+          "points": 66,
+          "percentage": 123.1,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "Glen Waverley",
+          "wins": 6,
+          "points": 55,
+          "percentage": 127.81,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Kooyong",
+          "wins": 1,
+          "points": 32,
+          "percentage": 93.22,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Hampton",
+          "wins": 1,
+          "points": 24,
+          "percentage": 65.12,
+          "marker": ""
+        }
+      ],
+      "green_ball": false,
+      "results_loaded_by_trols": null,
+      "fixtures": 39,
+      "completed_fixtures": 23,
+      "draw_fixtures": 45,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 92,
+      "latest_round": 13,
+      "validation": "passed",
+      "source_warnings": []
+    },
+    {
+      "competition_code": "HA",
+      "competition_label": "Thursday AM - Spring 2026",
+      "season_id": "HA38",
+      "season_label": "Spring 2026",
+      "section_code": "HA002",
+      "section_label": "Section 2",
+      "format": "sets",
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 4,
+        "doublesBestOf": 3,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "calendar_breaks": [
+        {
+          "date": "24 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "1 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "5 Nov 26",
+          "label": "Semi Final \u00b7 if qualified"
+        },
+        {
+          "date": "12 Nov 26",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "19 Nov 26",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "BLTC Green",
+          "wins": 10,
+          "points": 74,
+          "percentage": 134.72,
+          "marker": ""
+        },
+        {
+          "position": 2,
+          "team": "Kooyong Green",
+          "wins": 6,
+          "points": 54,
+          "percentage": 114.09,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "Kooyong Yellow",
+          "wins": 5,
+          "points": 45,
+          "percentage": 102.27,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "BLTC Blue",
+          "wins": 5,
+          "points": 42,
+          "percentage": 107.41,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Black Rock",
+          "wins": 4,
+          "points": 36,
+          "percentage": 95.77,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Elwood",
+          "wins": 4,
+          "points": 36,
+          "percentage": 82.31,
+          "marker": ""
+        },
+        {
+          "position": 7,
+          "team": "Carmelite",
+          "wins": 2,
+          "points": 25,
+          "percentage": 78.4,
+          "marker": ""
+        }
+      ],
+      "green_ball": false,
+      "results_loaded_by_trols": null,
+      "fixtures": 52,
+      "completed_fixtures": 37,
+      "draw_fixtures": 56,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 144,
+      "latest_round": 13,
+      "validation": "source discrepancies",
+      "source_warnings": [
+        "Incomplete TROLS score for HA002081 doubles No. 1: '5-7 1-1'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for HA002081 doubles No. 2: '6-2 2-1'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for HA002083 doubles No. 1: '6-4 1-0'. Missing score not inferred; excluded from ratings and game totals."
+      ]
+    },
+    {
+      "competition_code": "HA",
+      "competition_label": "Thursday AM - Spring 2026",
+      "season_id": "HA38",
+      "season_label": "Spring 2026",
+      "section_code": "HA003",
+      "section_label": "Section 3",
+      "format": "sets",
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 4,
+        "doublesBestOf": 3,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "calendar_breaks": [
+        {
+          "date": "24 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "1 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "12 Nov 26",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "19 Nov 26",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Basterfield Park",
+          "wins": 10,
+          "points": 72,
+          "percentage": 173.74,
+          "marker": ""
+        },
+        {
+          "position": 2,
+          "team": "Parkdale",
+          "wins": 6,
+          "points": 49,
+          "percentage": 109.11,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "Mentone",
+          "wins": 6,
+          "points": 46,
+          "percentage": 105.93,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Black Rock",
+          "wins": 4,
+          "points": 36,
+          "percentage": 100.26,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Dingley",
+          "wins": 0,
+          "points": 5,
+          "percentage": 45.14,
+          "marker": ""
+        }
+      ],
+      "green_ball": false,
+      "results_loaded_by_trols": null,
+      "fixtures": 39,
+      "completed_fixtures": 26,
+      "draw_fixtures": 45,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 104,
+      "latest_round": 13,
+      "validation": "passed",
+      "source_warnings": []
+    },
+    {
+      "competition_code": "HA",
+      "competition_label": "Thursday AM - Spring 2026",
+      "season_id": "HA38",
+      "season_label": "Spring 2026",
+      "section_code": "HA004",
+      "section_label": "Section 4",
+      "format": "sets",
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 4,
+        "doublesBestOf": 3,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "calendar_breaks": [
+        {
+          "date": "24 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "1 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "12 Nov 26",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "19 Nov 26",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Albert Park",
+          "wins": 8,
+          "points": 62,
+          "percentage": 125.37,
+          "marker": ""
+        },
+        {
+          "position": 2,
+          "team": "Kings Park",
+          "wins": 6,
+          "points": 48,
+          "percentage": 128.86,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "Hawksburn",
+          "wins": 5,
+          "points": 42,
+          "percentage": 106.01,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Chadstone",
+          "wins": 5,
+          "points": 37,
+          "percentage": 92.91,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "St Cecilia's",
+          "wins": 2,
+          "points": 19,
+          "percentage": 57.38,
+          "marker": ""
+        }
+      ],
+      "green_ball": false,
+      "results_loaded_by_trols": null,
+      "fixtures": 39,
+      "completed_fixtures": 24,
+      "draw_fixtures": 45,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 96,
+      "latest_round": 13,
+      "validation": "passed",
+      "source_warnings": []
+    },
+    {
+      "competition_code": "TA",
+      "competition_label": "Tuesday AM - Spring 2026",
+      "season_id": "TA15",
+      "season_label": "Spring 2026",
+      "section_code": "TA001",
+      "section_label": "T Section 1",
+      "format": "sets",
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 4,
+        "doublesBestOf": 1,
+        "doublesTarget": 10,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "calendar_breaks": [
+        {
+          "date": "22 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "29 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "10 Nov 26",
+          "label": "Semi Final \u00b7 if qualified"
+        },
+        {
+          "date": "17 Nov 26",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "24 Nov 26",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "BLTC",
+          "wins": 9,
+          "points": 70.5,
+          "percentage": 179.4,
+          "marker": ""
+        },
+        {
+          "position": 2,
+          "team": "Mordialloc White",
+          "wins": 8,
+          "points": 67,
+          "percentage": 178.18,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "Mordialloc Red",
+          "wins": 8,
+          "points": 63,
+          "percentage": 169.54,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Aspendale Gold",
+          "wins": 6,
+          "points": 49,
+          "percentage": 98.93,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Aspendale Green",
+          "wins": 3,
+          "points": 30,
+          "percentage": 81.11,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Stella Maris",
+          "wins": 2,
+          "points": 24.5,
+          "percentage": 69.15,
+          "marker": ""
+        },
+        {
+          "position": 7,
+          "team": "Dingley",
+          "wins": 0,
+          "points": 8,
+          "percentage": 24.61,
+          "marker": ""
+        }
+      ],
+      "green_ball": false,
+      "results_loaded_by_trols": null,
+      "fixtures": 52,
+      "completed_fixtures": 37,
+      "draw_fixtures": 56,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 146,
+      "latest_round": 13,
+      "validation": "passed",
+      "source_warnings": []
+    },
+    {
+      "competition_code": "TN",
+      "competition_label": "Tuesday Night - Spring 2026",
+      "season_id": "TN41",
+      "season_label": "Spring 2026",
+      "section_code": "TN001",
+      "section_label": "Section 1",
+      "format": "sets",
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 6,
+        "doublesBestOf": 1,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "calendar_breaks": [
+        {
+          "date": "22 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "29 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "3 Nov 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "24 Nov 26",
+          "label": "Semi Final \u00b7 if qualified"
+        },
+        {
+          "date": "1 Dec 26",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "8 Dec 26",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Hurlingham Park Gunslingers",
+          "wins": 8,
+          "points": 80,
+          "percentage": 140.37,
+          "marker": ""
+        },
+        {
+          "position": 2,
+          "team": "Black Rock UrbanWarGods",
+          "wins": 7,
+          "points": 71,
+          "percentage": 147.83,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "Hurlingham Park Lobs",
+          "wins": 4,
+          "points": 48,
+          "percentage": 101.9,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Kings Park Royals",
+          "wins": 3,
+          "points": 36,
+          "percentage": 85.47,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Hurlingham Park Battlers",
+          "wins": 1,
+          "points": 35.5,
+          "percentage": 87.5,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Maccabi Turquoise",
+          "wins": 2,
+          "points": 35,
+          "percentage": 82.52,
+          "marker": ""
+        },
+        {
+          "position": 7,
+          "team": "Black Rock Strikers",
+          "wins": 2,
+          "points": 24.5,
+          "percentage": 72.6,
+          "marker": ""
+        }
+      ],
+      "green_ball": false,
+      "results_loaded_by_trols": null,
+      "fixtures": 44,
+      "completed_fixtures": 30,
+      "draw_fixtures": 56,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 174,
+      "latest_round": 11,
+      "validation": "source discrepancies",
+      "source_warnings": [
+        "Incomplete TROLS score for TN001011 doubles No. 3: '2-1'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for TN001011 doubles No. 4: '0-2'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for TN001031 doubles No. 5: '4-2'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for TN001031 doubles No. 6: '2-4'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for TN001111 doubles No. 5: '6-6'. Missing score not inferred; excluded from ratings and game totals."
+      ]
+    },
+    {
+      "competition_code": "TN",
+      "competition_label": "Tuesday Night - Spring 2026",
+      "season_id": "TN41",
+      "season_label": "Spring 2026",
+      "section_code": "TN002",
+      "section_label": "Section 2",
+      "format": "sets",
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 6,
+        "doublesBestOf": 1,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "calendar_breaks": [
+        {
+          "date": "22 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "29 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "3 Nov 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "24 Nov 26",
+          "label": "Semi Final \u00b7 if qualified"
+        },
+        {
+          "date": "1 Dec 26",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "8 Dec 26",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Basterfield Park Scratchies",
+          "wins": 4,
+          "points": 50.5,
+          "percentage": 108.81,
+          "marker": ""
+        },
+        {
+          "position": 2,
+          "team": "Hurlingham Park All Stars",
+          "wins": 4,
+          "points": 50,
+          "percentage": 100.37,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "St Finbar's Barbarians",
+          "wins": 5,
+          "points": 50,
+          "percentage": 94.39,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Basterfield Park Lakers",
+          "wins": 4,
+          "points": 48.5,
+          "percentage": 110.19,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Murrumbeena Beasts",
+          "wins": 5,
+          "points": 48,
+          "percentage": 98.43,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "St James Premiers",
+          "wins": 3,
+          "points": 46,
+          "percentage": 103.43,
+          "marker": ""
+        },
+        {
+          "position": 7,
+          "team": "Hurlingham Park Hammers",
+          "wins": 3,
+          "points": 37,
+          "percentage": 88.06,
+          "marker": ""
+        }
+      ],
+      "green_ball": false,
+      "results_loaded_by_trols": null,
+      "fixtures": 44,
+      "completed_fixtures": 32,
+      "draw_fixtures": 56,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 186,
+      "latest_round": 11,
+      "validation": "source discrepancies",
+      "source_warnings": [
+        "Incomplete TROLS score for TN002013 doubles No. 4: '3-2'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for TN002014 doubles No. 3: '2-3'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for TN002014 doubles No. 4: '0-4'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for TN002034 doubles No. 5: '4-3'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for TN002034 doubles No. 6: '3-2'. Missing score not inferred; excluded from ratings and game totals."
+      ]
+    },
+    {
+      "competition_code": "TN",
+      "competition_label": "Tuesday Night - Spring 2026",
+      "season_id": "TN41",
+      "season_label": "Spring 2026",
+      "section_code": "TN003",
+      "section_label": "Section 3",
+      "format": "sets",
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 6,
+        "doublesBestOf": 1,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "calendar_breaks": [
+        {
+          "date": "22 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "29 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "3 Nov 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "24 Nov 26",
+          "label": "Semi Final \u00b7 if qualified"
+        },
+        {
+          "date": "1 Dec 26",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "8 Dec 26",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "St James Redlegs",
+          "wins": 6,
+          "points": 65,
+          "percentage": 125.38,
+          "marker": ""
+        },
+        {
+          "position": 2,
+          "team": "Keysborough KeysyComeKGo",
+          "wins": 5,
+          "points": 61,
+          "percentage": 128.48,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "Basterfield Park Basterfield",
+          "wins": 5,
+          "points": 57.5,
+          "percentage": 131.03,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "BLTC Tornadoes",
+          "wins": 4,
+          "points": 42,
+          "percentage": 89.53,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Maccabi Magicians",
+          "wins": 2,
+          "points": 41.5,
+          "percentage": 89.33,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Hurlingham Park HPSauce",
+          "wins": 2,
+          "points": 32,
+          "percentage": 84.65,
+          "marker": ""
+        },
+        {
+          "position": 7,
+          "team": "Middle Brighton Warriors",
+          "wins": 2,
+          "points": 31,
+          "percentage": 73.06,
+          "marker": ""
+        }
+      ],
+      "green_ball": false,
+      "results_loaded_by_trols": null,
+      "fixtures": 44,
+      "completed_fixtures": 29,
+      "draw_fixtures": 56,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 164,
+      "latest_round": 11,
+      "validation": "source discrepancies",
+      "source_warnings": [
+        "Incomplete TROLS score for TN003083 doubles No. 1: '1-0'. Missing score not inferred; excluded from ratings and game totals."
+      ]
+    },
+    {
+      "competition_code": "TN",
+      "competition_label": "Tuesday Night - Spring 2026",
+      "season_id": "TN41",
+      "season_label": "Spring 2026",
+      "section_code": "TN004",
+      "section_label": "Section 4",
+      "format": "sets",
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 6,
+        "doublesBestOf": 1,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "calendar_breaks": [
+        {
+          "date": "22 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "29 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "3 Nov 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "24 Nov 26",
+          "label": "Semi Final \u00b7 if qualified"
+        },
+        {
+          "date": "1 Dec 26",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "8 Dec 26",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Ormond Dragons",
+          "wins": 8,
+          "points": 76,
+          "percentage": 126.61,
+          "marker": ""
+        },
+        {
+          "position": 2,
+          "team": "Middle Brighton Whompbat",
+          "wins": 6,
+          "points": 74,
+          "percentage": 119.77,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "Glen Huntly Dropshots",
+          "wins": 6,
+          "points": 70.5,
+          "percentage": 132.17,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Black Rock Breakers",
+          "wins": 6,
+          "points": 65,
+          "percentage": 129.26,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "St Finbar's Black Sheep",
+          "wins": 5,
+          "points": 62,
+          "percentage": 114.67,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Glen Huntly Moonballs",
+          "wins": 5,
+          "points": 55.5,
+          "percentage": 96.82,
+          "marker": ""
+        },
+        {
+          "position": 7,
+          "team": "St Pauls Knights",
+          "wins": 1,
+          "points": 20,
+          "percentage": 55.72,
+          "marker": ""
+        },
+        {
+          "position": 8,
+          "team": "Stella Maris Mavericks",
+          "wins": 1,
+          "points": 17,
+          "percentage": 52.67,
+          "marker": ""
+        }
+      ],
+      "green_ball": false,
+      "results_loaded_by_trols": null,
+      "fixtures": 44,
+      "completed_fixtures": 38,
+      "draw_fixtures": 56,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 220,
+      "latest_round": 11,
+      "validation": "source discrepancies",
+      "source_warnings": [
+        "Incomplete TROLS score for TN004011 doubles No. 5: '1-1'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for TN004011 doubles No. 6: '1-0'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for TN004013 doubles No. 2: '3-3'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for TN004014 doubles No. 3: '1-4'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for TN004014 doubles No. 4: '1-2'. Missing score not inferred; excluded from ratings and game totals."
+      ]
+    },
+    {
+      "competition_code": "TN",
+      "competition_label": "Tuesday Night - Spring 2026",
+      "season_id": "TN41",
+      "season_label": "Spring 2026",
+      "section_code": "TN005",
+      "section_label": "Section 5",
+      "format": "sets",
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 6,
+        "doublesBestOf": 1,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "calendar_breaks": [
+        {
+          "date": "22 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "29 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "3 Nov 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "1 Dec 26",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "8 Dec 26",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "St Pauls Crusaders",
+          "wins": 6,
+          "points": 61,
+          "percentage": 120.18,
+          "marker": ""
+        },
+        {
+          "position": 2,
+          "team": "Wattle Warriors",
+          "wins": 4,
+          "points": 56,
+          "percentage": 157.05,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "Carmelite Middle Park",
+          "wins": 4,
+          "points": 49.5,
+          "percentage": 95.18,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Keysborough Charizards",
+          "wins": 3,
+          "points": 35.5,
+          "percentage": 84.42,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Wattle Bloomers",
+          "wins": 1,
+          "points": 18,
+          "percentage": 60.43,
+          "marker": ""
+        }
+      ],
+      "green_ball": false,
+      "results_loaded_by_trols": null,
+      "fixtures": 33,
+      "completed_fixtures": 19,
+      "draw_fixtures": 45,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 110,
+      "latest_round": 11,
+      "validation": "source discrepancies",
+      "source_warnings": [
+        "Incomplete TROLS score for TN005011 doubles No. 5: '0-2'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for TN005011 doubles No. 6: '1-2'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for TN005052 doubles No. 3: '6-6'. Missing score not inferred; excluded from ratings and game totals."
+      ]
     },
     {
       "competition_code": "UA",
@@ -352,6 +4590,44 @@
       "section_code": "UA001",
       "section_label": "Rubbers 1",
       "format": "rubbers",
+      "competition_rules": null,
+      "calendar_breaks": [
+        {
+          "date": "20 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "27 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "4 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "1 Nov 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "22 Nov 26",
+          "label": "Semi Final \u00b7 if qualified"
+        },
+        {
+          "date": "29 Nov 26",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "6 Dec 26",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [],
       "green_ball": false,
       "results_loaded_by_trols": null,
       "fixtures": 48,
@@ -371,6 +4647,44 @@
       "section_code": "UA002",
       "section_label": "Rubbers 2",
       "format": "rubbers",
+      "competition_rules": null,
+      "calendar_breaks": [
+        {
+          "date": "20 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "27 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "4 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "1 Nov 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "22 Nov 26",
+          "label": "Semi Final \u00b7 if qualified"
+        },
+        {
+          "date": "29 Nov 26",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "6 Dec 26",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [],
       "green_ball": false,
       "results_loaded_by_trols": null,
       "fixtures": 48,
@@ -390,11 +4704,49 @@
       "section_code": "UA003",
       "section_label": "Rubbers 3",
       "format": "rubbers",
+      "competition_rules": null,
+      "calendar_breaks": [
+        {
+          "date": "20 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "27 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "4 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "1 Nov 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "22 Nov 26",
+          "label": "Semi Final \u00b7 if qualified"
+        },
+        {
+          "date": "29 Nov 26",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "6 Dec 26",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [],
       "green_ball": false,
       "results_loaded_by_trols": null,
       "fixtures": 48,
       "completed_fixtures": 32,
-      "draw_fixtures": 42,
+      "draw_fixtures": 56,
       "singles_rubbers": 62,
       "doubles_rubbers": 31,
       "latest_round": 12,
@@ -409,6 +4761,44 @@
       "section_code": "UA004",
       "section_label": "Sets 1",
       "format": "sets",
+      "competition_rules": null,
+      "calendar_breaks": [
+        {
+          "date": "20 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "27 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "4 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "1 Nov 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "22 Nov 26",
+          "label": "Semi Final \u00b7 if qualified"
+        },
+        {
+          "date": "29 Nov 26",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "6 Dec 26",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [],
       "green_ball": false,
       "results_loaded_by_trols": null,
       "fixtures": 48,
@@ -428,6 +4818,44 @@
       "section_code": "UA005",
       "section_label": "Sets 2",
       "format": "sets",
+      "competition_rules": null,
+      "calendar_breaks": [
+        {
+          "date": "20 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "27 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "4 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "1 Nov 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "22 Nov 26",
+          "label": "Semi Final \u00b7 if qualified"
+        },
+        {
+          "date": "29 Nov 26",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "6 Dec 26",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [],
       "green_ball": false,
       "results_loaded_by_trols": null,
       "fixtures": 48,
@@ -447,6 +4875,44 @@
       "section_code": "UA006",
       "section_label": "Sets 3",
       "format": "sets",
+      "competition_rules": null,
+      "calendar_breaks": [
+        {
+          "date": "20 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "27 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "4 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "1 Nov 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "22 Nov 26",
+          "label": "Semi Final \u00b7 if qualified"
+        },
+        {
+          "date": "29 Nov 26",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "6 Dec 26",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [],
       "green_ball": false,
       "results_loaded_by_trols": null,
       "fixtures": 48,
@@ -466,6 +4932,44 @@
       "section_code": "UA007",
       "section_label": "Sets 4",
       "format": "sets",
+      "competition_rules": null,
+      "calendar_breaks": [
+        {
+          "date": "20 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "27 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "4 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "1 Nov 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "22 Nov 26",
+          "label": "Semi Final \u00b7 if qualified"
+        },
+        {
+          "date": "29 Nov 26",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "6 Dec 26",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [],
       "green_ball": false,
       "results_loaded_by_trols": null,
       "fixtures": 48,
@@ -485,6 +4989,44 @@
       "section_code": "UA008",
       "section_label": "Sets 5",
       "format": "sets",
+      "competition_rules": null,
+      "calendar_breaks": [
+        {
+          "date": "20 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "27 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "4 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "1 Nov 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "22 Nov 26",
+          "label": "Semi Final \u00b7 if qualified"
+        },
+        {
+          "date": "29 Nov 26",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "6 Dec 26",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [],
       "green_ball": false,
       "results_loaded_by_trols": null,
       "fixtures": 48,
@@ -504,6 +5046,44 @@
       "section_code": "UA009",
       "section_label": "Sets 6",
       "format": "sets",
+      "competition_rules": null,
+      "calendar_breaks": [
+        {
+          "date": "20 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "27 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "4 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "1 Nov 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "22 Nov 26",
+          "label": "Semi Final \u00b7 if qualified"
+        },
+        {
+          "date": "29 Nov 26",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "6 Dec 26",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [],
       "green_ball": false,
       "results_loaded_by_trols": null,
       "fixtures": 48,
@@ -523,6 +5103,44 @@
       "section_code": "UA010",
       "section_label": "Sets 7",
       "format": "sets",
+      "competition_rules": null,
+      "calendar_breaks": [
+        {
+          "date": "20 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "27 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "4 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "1 Nov 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "22 Nov 26",
+          "label": "Semi Final \u00b7 if qualified"
+        },
+        {
+          "date": "29 Nov 26",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "6 Dec 26",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [],
       "green_ball": false,
       "results_loaded_by_trols": null,
       "fixtures": 48,
@@ -542,6 +5160,44 @@
       "section_code": "UA011",
       "section_label": "Sets 8",
       "format": "sets",
+      "competition_rules": null,
+      "calendar_breaks": [
+        {
+          "date": "20 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "27 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "4 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "1 Nov 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "22 Nov 26",
+          "label": "Semi Final \u00b7 if qualified"
+        },
+        {
+          "date": "29 Nov 26",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "6 Dec 26",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [],
       "green_ball": false,
       "results_loaded_by_trols": null,
       "fixtures": 48,
@@ -550,8 +5206,10 @@
       "singles_rubbers": 167,
       "doubles_rubbers": 84,
       "latest_round": 12,
-      "validation": "passed",
-      "source_warnings": []
+      "validation": "source discrepancies",
+      "source_warnings": [
+        "Incomplete TROLS score for UA011084 singles No. 4: '3-4'. Missing score not inferred; excluded from ratings and game totals."
+      ]
     },
     {
       "competition_code": "UA",
@@ -561,11 +5219,49 @@
       "section_code": "UA012",
       "section_label": "Sets 9",
       "format": "sets",
+      "competition_rules": null,
+      "calendar_breaks": [
+        {
+          "date": "20 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "27 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "4 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "1 Nov 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "22 Nov 26",
+          "label": "Semi Final \u00b7 if qualified"
+        },
+        {
+          "date": "29 Nov 26",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "6 Dec 26",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [],
       "green_ball": false,
       "results_loaded_by_trols": null,
       "fixtures": 48,
       "completed_fixtures": 30,
-      "draw_fixtures": 42,
+      "draw_fixtures": 56,
       "singles_rubbers": 120,
       "doubles_rubbers": 60,
       "latest_round": 12,
@@ -580,6 +5276,44 @@
       "section_code": "UA013",
       "section_label": "Sets 10",
       "format": "sets",
+      "competition_rules": null,
+      "calendar_breaks": [
+        {
+          "date": "20 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "27 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "4 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "1 Nov 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "22 Nov 26",
+          "label": "Semi Final \u00b7 if qualified"
+        },
+        {
+          "date": "29 Nov 26",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "6 Dec 26",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [],
       "green_ball": false,
       "results_loaded_by_trols": null,
       "fixtures": 48,
@@ -599,6 +5333,44 @@
       "section_code": "UA014",
       "section_label": "Sets 11",
       "format": "sets",
+      "competition_rules": null,
+      "calendar_breaks": [
+        {
+          "date": "20 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "27 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "4 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "1 Nov 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "22 Nov 26",
+          "label": "Semi Final \u00b7 if qualified"
+        },
+        {
+          "date": "29 Nov 26",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "6 Dec 26",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [],
       "green_ball": false,
       "results_loaded_by_trols": null,
       "fixtures": 48,
@@ -618,6 +5390,44 @@
       "section_code": "UA015",
       "section_label": "Sets 12",
       "format": "sets",
+      "competition_rules": null,
+      "calendar_breaks": [
+        {
+          "date": "20 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "27 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "4 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "1 Nov 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "22 Nov 26",
+          "label": "Semi Final \u00b7 if qualified"
+        },
+        {
+          "date": "29 Nov 26",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "6 Dec 26",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [],
       "green_ball": false,
       "results_loaded_by_trols": null,
       "fixtures": 48,
@@ -626,8 +5436,10 @@
       "singles_rubbers": 168,
       "doubles_rubbers": 84,
       "latest_round": 12,
-      "validation": "passed",
-      "source_warnings": []
+      "validation": "source discrepancies",
+      "source_warnings": [
+        "Incomplete TROLS score for UA015082 singles No. 4: '2-1'. Missing score not inferred; excluded from ratings and game totals."
+      ]
     },
     {
       "competition_code": "UA",
@@ -637,6 +5449,44 @@
       "section_code": "UA016",
       "section_label": "Sets 13",
       "format": "sets",
+      "competition_rules": null,
+      "calendar_breaks": [
+        {
+          "date": "20 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "27 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "4 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "1 Nov 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "22 Nov 26",
+          "label": "Semi Final \u00b7 if qualified"
+        },
+        {
+          "date": "29 Nov 26",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "6 Dec 26",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [],
       "green_ball": false,
       "results_loaded_by_trols": null,
       "fixtures": 48,
@@ -656,11 +5506,49 @@
       "section_code": "UA017",
       "section_label": "Sets 14",
       "format": "sets",
+      "competition_rules": null,
+      "calendar_breaks": [
+        {
+          "date": "20 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "27 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "4 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "1 Nov 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "22 Nov 26",
+          "label": "Semi Final \u00b7 if qualified"
+        },
+        {
+          "date": "29 Nov 26",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "6 Dec 26",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [],
       "green_ball": false,
       "results_loaded_by_trols": null,
       "fixtures": 48,
       "completed_fixtures": 31,
-      "draw_fixtures": 42,
+      "draw_fixtures": 56,
       "singles_rubbers": 124,
       "doubles_rubbers": 62,
       "latest_round": 12,
@@ -675,6 +5563,44 @@
       "section_code": "UA018",
       "section_label": "Sets 15",
       "format": "sets",
+      "competition_rules": null,
+      "calendar_breaks": [
+        {
+          "date": "20 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "27 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "4 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "1 Nov 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "22 Nov 26",
+          "label": "Semi Final \u00b7 if qualified"
+        },
+        {
+          "date": "29 Nov 26",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "6 Dec 26",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [],
       "green_ball": false,
       "results_loaded_by_trols": null,
       "fixtures": 48,
@@ -694,6 +5620,44 @@
       "section_code": "UA019",
       "section_label": "Sets 16",
       "format": "sets",
+      "competition_rules": null,
+      "calendar_breaks": [
+        {
+          "date": "20 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "27 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "4 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "1 Nov 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "22 Nov 26",
+          "label": "Semi Final \u00b7 if qualified"
+        },
+        {
+          "date": "29 Nov 26",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "6 Dec 26",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [],
       "green_ball": false,
       "results_loaded_by_trols": null,
       "fixtures": 48,
@@ -713,11 +5677,49 @@
       "section_code": "UA020",
       "section_label": "Sets 17",
       "format": "sets",
+      "competition_rules": null,
+      "calendar_breaks": [
+        {
+          "date": "20 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "27 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "4 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "1 Nov 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "22 Nov 26",
+          "label": "Semi Final \u00b7 if qualified"
+        },
+        {
+          "date": "29 Nov 26",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "6 Dec 26",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [],
       "green_ball": false,
       "results_loaded_by_trols": null,
       "fixtures": 48,
       "completed_fixtures": 30,
-      "draw_fixtures": 42,
+      "draw_fixtures": 56,
       "singles_rubbers": 120,
       "doubles_rubbers": 60,
       "latest_round": 12,
@@ -732,6 +5734,44 @@
       "section_code": "UA021",
       "section_label": "Sets 18",
       "format": "sets",
+      "competition_rules": null,
+      "calendar_breaks": [
+        {
+          "date": "20 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "27 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "4 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "1 Nov 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "22 Nov 26",
+          "label": "Semi Final \u00b7 if qualified"
+        },
+        {
+          "date": "29 Nov 26",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "6 Dec 26",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [],
       "green_ball": false,
       "results_loaded_by_trols": null,
       "fixtures": 48,
@@ -751,11 +5791,49 @@
       "section_code": "UA022",
       "section_label": "Sets 19",
       "format": "sets",
+      "competition_rules": null,
+      "calendar_breaks": [
+        {
+          "date": "20 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "27 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "4 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "1 Nov 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "22 Nov 26",
+          "label": "Semi Final \u00b7 if qualified"
+        },
+        {
+          "date": "29 Nov 26",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "6 Dec 26",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [],
       "green_ball": false,
       "results_loaded_by_trols": null,
       "fixtures": 48,
       "completed_fixtures": 32,
-      "draw_fixtures": 42,
+      "draw_fixtures": 56,
       "singles_rubbers": 128,
       "doubles_rubbers": 64,
       "latest_round": 12,
@@ -770,11 +5848,49 @@
       "section_code": "UA023",
       "section_label": "Sets 20",
       "format": "sets",
+      "competition_rules": null,
+      "calendar_breaks": [
+        {
+          "date": "20 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "27 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "4 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "1 Nov 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "22 Nov 26",
+          "label": "Semi Final \u00b7 if qualified"
+        },
+        {
+          "date": "29 Nov 26",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "6 Dec 26",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [],
       "green_ball": false,
       "results_loaded_by_trols": null,
       "fixtures": 48,
       "completed_fixtures": 31,
-      "draw_fixtures": 42,
+      "draw_fixtures": 56,
       "singles_rubbers": 124,
       "doubles_rubbers": 62,
       "latest_round": 12,
@@ -789,11 +5905,49 @@
       "section_code": "UA024",
       "section_label": "Sets 21",
       "format": "sets",
+      "competition_rules": null,
+      "calendar_breaks": [
+        {
+          "date": "20 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "27 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "4 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "1 Nov 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "22 Nov 26",
+          "label": "Semi Final \u00b7 if qualified"
+        },
+        {
+          "date": "29 Nov 26",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "6 Dec 26",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [],
       "green_ball": false,
       "results_loaded_by_trols": null,
       "fixtures": 48,
       "completed_fixtures": 29,
-      "draw_fixtures": 42,
+      "draw_fixtures": 56,
       "singles_rubbers": 116,
       "doubles_rubbers": 58,
       "latest_round": 12,
@@ -808,11 +5962,49 @@
       "section_code": "UA025",
       "section_label": "Sets 22",
       "format": "sets",
+      "competition_rules": null,
+      "calendar_breaks": [
+        {
+          "date": "20 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "27 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "4 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "1 Nov 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "22 Nov 26",
+          "label": "Semi Final \u00b7 if qualified"
+        },
+        {
+          "date": "29 Nov 26",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "6 Dec 26",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [],
       "green_ball": false,
       "results_loaded_by_trols": null,
       "fixtures": 48,
       "completed_fixtures": 30,
-      "draw_fixtures": 42,
+      "draw_fixtures": 56,
       "singles_rubbers": 120,
       "doubles_rubbers": 60,
       "latest_round": 12,
@@ -827,6 +6019,44 @@
       "section_code": "UA026",
       "section_label": "Sets 1 Green Ball",
       "format": "sets",
+      "competition_rules": null,
+      "calendar_breaks": [
+        {
+          "date": "20 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "27 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "4 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "1 Nov 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "22 Nov 26",
+          "label": "Semi Final \u00b7 if qualified"
+        },
+        {
+          "date": "29 Nov 26",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "6 Dec 26",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [],
       "green_ball": true,
       "results_loaded_by_trols": null,
       "fixtures": 48,
@@ -846,16 +6076,369 @@
       "section_code": "UA027",
       "section_label": "Sets 2 Green Ball",
       "format": "sets",
+      "competition_rules": null,
+      "calendar_breaks": [
+        {
+          "date": "20 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "27 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "4 Oct 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "1 Nov 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "22 Nov 26",
+          "label": "Semi Final \u00b7 if qualified"
+        },
+        {
+          "date": "29 Nov 26",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "6 Dec 26",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [],
       "green_ball": true,
       "results_loaded_by_trols": null,
       "fixtures": 48,
       "completed_fixtures": 30,
-      "draw_fixtures": 42,
+      "draw_fixtures": 56,
       "singles_rubbers": 120,
       "doubles_rubbers": 60,
       "latest_round": 12,
       "validation": "passed",
       "source_warnings": []
+    },
+    {
+      "competition_code": "WA",
+      "competition_label": "Wednesday AM - Spring 2026",
+      "season_id": "WA15",
+      "season_label": "Spring 2026",
+      "section_code": "WA002",
+      "section_label": "W Section 1",
+      "format": "sets",
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 4,
+        "doublesBestOf": 3,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "calendar_breaks": [
+        {
+          "date": "23 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "30 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "11 Nov 26",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "18 Nov 26",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Elwood",
+          "wins": 10,
+          "points": 88,
+          "percentage": 203.26,
+          "marker": ""
+        },
+        {
+          "position": 2,
+          "team": "Black Rock Maroon",
+          "wins": 8,
+          "points": 77,
+          "percentage": 212.79,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "St Pats Mentone",
+          "wins": 6,
+          "points": 57,
+          "percentage": 114.55,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Langwarrin",
+          "wins": 6,
+          "points": 57,
+          "percentage": 102.32,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Basterfield Park",
+          "wins": 1,
+          "points": 19,
+          "percentage": 48.6,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Black Rock Navy",
+          "wins": 0,
+          "points": 14,
+          "percentage": 35.87,
+          "marker": ""
+        }
+      ],
+      "green_ball": false,
+      "results_loaded_by_trols": null,
+      "fixtures": 39,
+      "completed_fixtures": 34,
+      "draw_fixtures": 45,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 132,
+      "latest_round": 13,
+      "validation": "source discrepancies",
+      "source_warnings": [
+        "Incomplete TROLS score for WA002061 doubles No. 1: '3-6 2-1'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for WA002061 doubles No. 2: '3-6 1-3'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for WA002062 doubles No. 1: '4-2'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for WA002062 doubles No. 2: '4-2'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for WA002063 doubles No. 3: '2-1'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for WA002063 doubles No. 4: '0-2'. Missing score not inferred; excluded from ratings and game totals."
+      ]
+    },
+    {
+      "competition_code": "WA",
+      "competition_label": "Wednesday AM - Spring 2026",
+      "season_id": "WA15",
+      "season_label": "Spring 2026",
+      "section_code": "WA003",
+      "section_label": "W Section 2",
+      "format": "sets",
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 4,
+        "doublesBestOf": 3,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "calendar_breaks": [
+        {
+          "date": "23 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "30 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "11 Nov 26",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "18 Nov 26",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Kings Park",
+          "wins": 9,
+          "points": 82,
+          "percentage": 194.53,
+          "marker": ""
+        },
+        {
+          "position": 2,
+          "team": "Elwood",
+          "wins": 9,
+          "points": 77,
+          "percentage": 153.06,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "BLTC Blue",
+          "wins": 8,
+          "points": 70,
+          "percentage": 130.42,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Aspendale",
+          "wins": 3,
+          "points": 35,
+          "percentage": 83.68,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "BLTC White",
+          "wins": 1,
+          "points": 27,
+          "percentage": 66.74,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "St Pats Mentone",
+          "wins": 1,
+          "points": 21,
+          "percentage": 42.8,
+          "marker": ""
+        }
+      ],
+      "green_ball": false,
+      "results_loaded_by_trols": null,
+      "fixtures": 39,
+      "completed_fixtures": 34,
+      "draw_fixtures": 45,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 126,
+      "latest_round": 13,
+      "validation": "source discrepancies",
+      "source_warnings": [
+        "Incomplete TROLS score for WA003062 doubles No. 1: '3-4'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for WA003062 doubles No. 2: '6-1 0-1'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for WA003063 doubles No. 4: '2-1'. Missing score not inferred; excluded from ratings and game totals."
+      ]
+    },
+    {
+      "competition_code": "WA",
+      "competition_label": "Wednesday AM - Spring 2026",
+      "season_id": "WA15",
+      "season_label": "Spring 2026",
+      "section_code": "WA004",
+      "section_label": "W Section 3",
+      "format": "sets",
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 4,
+        "doublesBestOf": 3,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "calendar_breaks": [
+        {
+          "date": "23 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        },
+        {
+          "date": "30 Sep 26",
+          "label": "No Play",
+          "source": "https://www.trols.org.au/brta/fixture.php"
+        }
+      ],
+      "calendar_events": [
+        {
+          "date": "11 Nov 26",
+          "label": "Grand Final \u00b7 if qualified"
+        },
+        {
+          "date": "18 Nov 26",
+          "label": "Spare \u00b7 if required"
+        }
+      ],
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Dingley",
+          "wins": 7,
+          "points": 70,
+          "percentage": 240.85,
+          "marker": ""
+        },
+        {
+          "position": 2,
+          "team": "Beaumaris CC",
+          "wins": 6,
+          "points": 50,
+          "percentage": 105.72,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "Kings Park Blue",
+          "wins": 4,
+          "points": 40,
+          "percentage": 106.42,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Black Rock",
+          "wins": 3,
+          "points": 38,
+          "percentage": 96.4,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Kings Park Red",
+          "wins": 0,
+          "points": 10,
+          "percentage": 42.21,
+          "marker": ""
+        }
+      ],
+      "green_ball": false,
+      "results_loaded_by_trols": null,
+      "fixtures": 39,
+      "completed_fixtures": 20,
+      "draw_fixtures": 45,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 78,
+      "latest_round": 13,
+      "validation": "source discrepancies",
+      "source_warnings": [
+        "Incomplete TROLS score for WA004061 doubles No. 1: '5-5'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for WA004061 doubles No. 2: '1-4'. Missing score not inferred; excluded from ratings and game totals."
+      ]
     }
   ]
 }

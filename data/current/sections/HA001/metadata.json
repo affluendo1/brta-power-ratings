@@ -1,0 +1,95 @@
+{
+  "competition_code": "HA",
+  "competition_label": "Thursday AM - Spring 2026",
+  "season_id": "HA38",
+  "season_label": "Spring 2026",
+  "section_code": "HA001",
+  "section_label": "Section A1",
+  "format": "sets",
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "calendar_breaks": [
+    {
+      "date": "24 Sep 26",
+      "label": "No Play",
+      "source": "https://www.trols.org.au/brta/fixture.php"
+    },
+    {
+      "date": "1 Oct 26",
+      "label": "No Play",
+      "source": "https://www.trols.org.au/brta/fixture.php"
+    }
+  ],
+  "calendar_events": [
+    {
+      "date": "12 Nov 26",
+      "label": "Grand Final \u00b7 if qualified"
+    },
+    {
+      "date": "19 Nov 26",
+      "label": "Spare \u00b7 if required"
+    }
+  ],
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Canterbury",
+      "wins": 8,
+      "points": 70,
+      "percentage": 136.61,
+      "marker": ""
+    },
+    {
+      "position": 2,
+      "team": "Eaglemont",
+      "wins": 7,
+      "points": 66,
+      "percentage": 123.1,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Glen Waverley",
+      "wins": 6,
+      "points": 55,
+      "percentage": 127.81,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Kooyong",
+      "wins": 1,
+      "points": 32,
+      "percentage": 93.22,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Hampton",
+      "wins": 1,
+      "points": 24,
+      "percentage": 65.12,
+      "marker": ""
+    }
+  ],
+  "green_ball": false,
+  "results_loaded_by_trols": null,
+  "fixtures": 39,
+  "completed_fixtures": 23,
+  "draw_fixtures": 45,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 92,
+  "latest_round": 13,
+  "validation": "passed",
+  "source_warnings": []
+}

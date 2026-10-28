@@ -1,43 +1,57 @@
-draw_id,date,round,stage,round_label,home_team,away_team,fixture_id
-draw-aa002-r1-bltc-port-melbourne,18 Jul 26,1,regular,Round 1,BLTC,Port Melbourne,AA002012
-draw-aa002-r1-glen-huntly-clarinda,18 Jul 26,1,regular,Round 1,Glen Huntly,Clarinda,AA002011
-draw-aa002-r1-ormond-white-ormond-blue,18 Jul 26,1,regular,Round 1,Ormond White,Ormond Blue,AA002013
-draw-aa002-r2-clarinda-bltc,25 Jul 26,2,regular,Round 2,Clarinda,BLTC,AA002022
-draw-aa002-r2-port-melbourne-ormond-white,25 Jul 26,2,regular,Round 2,Port Melbourne,Ormond White,AA002023
-draw-aa002-r2-royal-ave-glen-huntly,25 Jul 26,2,regular,Round 2,Royal Ave,Glen Huntly,AA002021
-draw-aa002-r3-bltc-royal-ave,1 Aug 26,3,regular,Round 3,BLTC,Royal Ave,AA002032
-draw-aa002-r3-glen-huntly-ormond-blue,1 Aug 26,3,regular,Round 3,Glen Huntly,Ormond Blue,AA002031
-draw-aa002-r3-ormond-white-clarinda,1 Aug 26,3,regular,Round 3,Ormond White,Clarinda,AA002033
-draw-aa002-r4-ormond-blue-bltc,8 Aug 26,4,regular,Round 4,Ormond Blue,BLTC,AA002042
-draw-aa002-r4-port-melbourne-glen-huntly,8 Aug 26,4,regular,Round 4,Port Melbourne,Glen Huntly,AA002041
-draw-aa002-r4-royal-ave-ormond-white,8 Aug 26,4,regular,Round 4,Royal Ave,Ormond White,AA002043
-draw-aa002-r5-glen-huntly-bltc,15 Aug 26,5,regular,Round 5,Glen Huntly,BLTC,AA002054
-draw-aa002-r5-port-melbourne-clarinda,15 Aug 26,5,regular,Round 5,Port Melbourne,Clarinda,AA002053
-draw-aa002-r5-royal-ave-ormond-blue,15 Aug 26,5,regular,Round 5,Royal Ave,Ormond Blue,AA002052
-draw-aa002-r6-bltc-ormond-white,22 Aug 26,6,regular,Round 6,BLTC,Ormond White,AA002061
-draw-aa002-r6-clarinda-royal-ave,22 Aug 26,6,regular,Round 6,Clarinda,Royal Ave,AA002064
-draw-aa002-r6-ormond-blue-port-melbourne,22 Aug 26,6,regular,Round 6,Ormond Blue,Port Melbourne,AA002063
-draw-aa002-r7-glen-huntly-ormond-white,29 Aug 26,7,regular,Round 7,Glen Huntly,Ormond White,AA002071
-draw-aa002-r7-ormond-blue-clarinda,29 Aug 26,7,regular,Round 7,Ormond Blue,Clarinda,AA002074
-draw-aa002-r7-royal-ave-port-melbourne,29 Aug 26,7,regular,Round 7,Royal Ave,Port Melbourne,AA002073
-draw-aa002-r8-clarinda-glen-huntly,5 Sep 26,8,regular,Round 8,Clarinda,Glen Huntly,pending-aa002-r8-clarinda-glen-huntly
-draw-aa002-r8-ormond-blue-ormond-white,5 Sep 26,8,regular,Round 8,Ormond Blue,Ormond White,pending-aa002-r8-ormond-blue-ormond-white
-draw-aa002-r8-port-melbourne-bltc,5 Sep 26,8,regular,Round 8,Port Melbourne,BLTC,pending-aa002-r8-port-melbourne-bltc
-draw-aa002-r9-bltc-clarinda,12 Sep 26,9,regular,Round 9,BLTC,Clarinda,AA002092
-draw-aa002-r9-glen-huntly-royal-ave,12 Sep 26,9,regular,Round 9,Glen Huntly,Royal Ave,AA002091
-draw-aa002-r9-ormond-white-port-melbourne,12 Sep 26,9,regular,Round 9,Ormond White,Port Melbourne,AA002093
-draw-aa002-r10-clarinda-ormond-white,10 Oct 26,10,regular,Round 10,Clarinda,Ormond White,AA002103
-draw-aa002-r10-ormond-blue-glen-huntly,10 Oct 26,10,regular,Round 10,Ormond Blue,Glen Huntly,AA002101
-draw-aa002-r10-royal-ave-bltc,10 Oct 26,10,regular,Round 10,Royal Ave,BLTC,AA002102
-draw-aa002-r11-bltc-ormond-blue,17 Oct 26,11,regular,Round 11,BLTC,Ormond Blue,AA002112
-draw-aa002-r11-glen-huntly-port-melbourne,17 Oct 26,11,regular,Round 11,Glen Huntly,Port Melbourne,AA002111
-draw-aa002-r11-ormond-white-royal-ave,17 Oct 26,11,regular,Round 11,Ormond White,Royal Ave,AA002113
-draw-aa002-r12-bltc-glen-huntly,24 Oct 26,12,regular,Round 12,BLTC,Glen Huntly,pending-aa002-r12-bltc-glen-huntly
-draw-aa002-r12-clarinda-port-melbourne,24 Oct 26,12,regular,Round 12,Clarinda,Port Melbourne,AA002123
-draw-aa002-r12-ormond-blue-royal-ave,24 Oct 26,12,regular,Round 12,Ormond Blue,Royal Ave,AA002122
-draw-aa002-r13-ormond-white-bltc,7 Nov 26,13,regular,Round 13,Ormond White,BLTC,
-draw-aa002-r13-port-melbourne-ormond-blue,7 Nov 26,13,regular,Round 13,Port Melbourne,Ormond Blue,
-draw-aa002-r13-royal-ave-clarinda,7 Nov 26,13,regular,Round 13,Royal Ave,Clarinda,
-draw-aa002-r14-clarinda-ormond-blue,14 Nov 26,14,regular,Round 14,Clarinda,Ormond Blue,
-draw-aa002-r14-ormond-white-glen-huntly,14 Nov 26,14,regular,Round 14,Ormond White,Glen Huntly,
-draw-aa002-r14-port-melbourne-royal-ave,14 Nov 26,14,regular,Round 14,Port Melbourne,Royal Ave,
+draw_id,date,round,stage,round_label,home_team,away_team,fixture_id,start_time,venue
+draw-aa002-r1-bltc-port-melbourne,18 Jul 26,1,regular,Round 1,BLTC,Port Melbourne,AA002012,10:00,BLTC
+draw-aa002-r1-bye-royal-ave,18 Jul 26,1,regular,Round 1,Bye,Royal Ave,pending-aa002-r1-bye-royal-ave,,Bye
+draw-aa002-r1-glen-huntly-clarinda,18 Jul 26,1,regular,Round 1,Glen Huntly,Clarinda,AA002011,10:00,Glen Huntly
+draw-aa002-r1-ormond-white-ormond-blue,18 Jul 26,1,regular,Round 1,Ormond White,Ormond Blue,AA002013,,Ormond White
+draw-aa002-r2-clarinda-bltc,25 Jul 26,2,regular,Round 2,Clarinda,BLTC,AA002022,10:00,Clarinda
+draw-aa002-r2-ormond-blue-bye,25 Jul 26,2,regular,Round 2,Ormond Blue,Bye,pending-aa002-r2-ormond-blue-bye,8:00,Ormond Blue
+draw-aa002-r2-port-melbourne-ormond-white,25 Jul 26,2,regular,Round 2,Port Melbourne,Ormond White,AA002023,8:00,Port Melbourne
+draw-aa002-r2-royal-ave-glen-huntly,25 Jul 26,2,regular,Round 2,Royal Ave,Glen Huntly,AA002021,8:30,Royal Ave
+draw-aa002-r3-bltc-royal-ave,1 Aug 26,3,regular,Round 3,BLTC,Royal Ave,AA002032,10:00,BLTC
+draw-aa002-r3-bye-port-melbourne,1 Aug 26,3,regular,Round 3,Bye,Port Melbourne,pending-aa002-r3-bye-port-melbourne,,Bye
+draw-aa002-r3-glen-huntly-ormond-blue,1 Aug 26,3,regular,Round 3,Glen Huntly,Ormond Blue,AA002031,10:00,Glen Huntly
+draw-aa002-r3-ormond-white-clarinda,1 Aug 26,3,regular,Round 3,Ormond White,Clarinda,AA002033,,Ormond White
+draw-aa002-r4-clarinda-bye,8 Aug 26,4,regular,Round 4,Clarinda,Bye,pending-aa002-r4-clarinda-bye,10:00,Clarinda
+draw-aa002-r4-ormond-blue-bltc,8 Aug 26,4,regular,Round 4,Ormond Blue,BLTC,AA002042,8:00,Ormond Blue
+draw-aa002-r4-port-melbourne-glen-huntly,8 Aug 26,4,regular,Round 4,Port Melbourne,Glen Huntly,AA002041,8:00,Port Melbourne
+draw-aa002-r4-royal-ave-ormond-white,8 Aug 26,4,regular,Round 4,Royal Ave,Ormond White,AA002043,8:30,Royal Ave
+draw-aa002-r5-glen-huntly-bltc,15 Aug 26,5,regular,Round 5,Glen Huntly,BLTC,AA002054,10:00,Glen Huntly
+draw-aa002-r5-ormond-white-bye,15 Aug 26,5,regular,Round 5,Ormond White,Bye,pending-aa002-r5-ormond-white-bye,,Ormond White
+draw-aa002-r5-port-melbourne-clarinda,15 Aug 26,5,regular,Round 5,Port Melbourne,Clarinda,AA002053,8:00,Port Melbourne
+draw-aa002-r5-royal-ave-ormond-blue,15 Aug 26,5,regular,Round 5,Royal Ave,Ormond Blue,AA002052,8:30,Royal Ave
+draw-aa002-r6-bltc-ormond-white,22 Aug 26,6,regular,Round 6,BLTC,Ormond White,AA002061,10:00,BLTC
+draw-aa002-r6-bye-glen-huntly,22 Aug 26,6,regular,Round 6,Bye,Glen Huntly,pending-aa002-r6-bye-glen-huntly,,Bye
+draw-aa002-r6-clarinda-royal-ave,22 Aug 26,6,regular,Round 6,Clarinda,Royal Ave,AA002064,10:00,Clarinda
+draw-aa002-r6-ormond-blue-port-melbourne,22 Aug 26,6,regular,Round 6,Ormond Blue,Port Melbourne,AA002063,8:00,Ormond Blue
+draw-aa002-r7-bltc-bye,29 Aug 26,7,regular,Round 7,BLTC,Bye,pending-aa002-r7-bltc-bye,10:00,BLTC
+draw-aa002-r7-glen-huntly-ormond-white,29 Aug 26,7,regular,Round 7,Glen Huntly,Ormond White,AA002071,10:00,Glen Huntly
+draw-aa002-r7-ormond-blue-clarinda,29 Aug 26,7,regular,Round 7,Ormond Blue,Clarinda,AA002074,8:00,Ormond Blue
+draw-aa002-r7-royal-ave-port-melbourne,29 Aug 26,7,regular,Round 7,Royal Ave,Port Melbourne,AA002073,8:30,Royal Ave
+draw-aa002-r8-clarinda-glen-huntly,5 Sep 26,8,regular,Round 8,Clarinda,Glen Huntly,pending-aa002-r8-clarinda-glen-huntly,10:00,Clarinda
+draw-aa002-r8-ormond-blue-ormond-white,5 Sep 26,8,regular,Round 8,Ormond Blue,Ormond White,pending-aa002-r8-ormond-blue-ormond-white,8:00,Ormond Blue
+draw-aa002-r8-port-melbourne-bltc,5 Sep 26,8,regular,Round 8,Port Melbourne,BLTC,pending-aa002-r8-port-melbourne-bltc,8:00,Port Melbourne
+draw-aa002-r8-royal-ave-bye,5 Sep 26,8,regular,Round 8,Royal Ave,Bye,pending-aa002-r8-royal-ave-bye,8:30,Royal Ave
+draw-aa002-r9-bltc-clarinda,12 Sep 26,9,regular,Round 9,BLTC,Clarinda,AA002092,10:00,BLTC
+draw-aa002-r9-bye-ormond-blue,12 Sep 26,9,regular,Round 9,Bye,Ormond Blue,pending-aa002-r9-bye-ormond-blue,,Bye
+draw-aa002-r9-glen-huntly-royal-ave,12 Sep 26,9,regular,Round 9,Glen Huntly,Royal Ave,AA002091,10:00,Glen Huntly
+draw-aa002-r9-ormond-white-port-melbourne,12 Sep 26,9,regular,Round 9,Ormond White,Port Melbourne,AA002093,,Ormond White
+draw-aa002-r10-clarinda-ormond-white,10 Oct 26,10,regular,Round 10,Clarinda,Ormond White,AA002103,10:00,Clarinda
+draw-aa002-r10-ormond-blue-glen-huntly,10 Oct 26,10,regular,Round 10,Ormond Blue,Glen Huntly,AA002101,8:00,Ormond Blue
+draw-aa002-r10-port-melbourne-bye,10 Oct 26,10,regular,Round 10,Port Melbourne,Bye,pending-aa002-r10-port-melbourne-bye,8:00,Port Melbourne
+draw-aa002-r10-royal-ave-bltc,10 Oct 26,10,regular,Round 10,Royal Ave,BLTC,AA002102,8:30,Royal Ave
+draw-aa002-r11-bltc-ormond-blue,17 Oct 26,11,regular,Round 11,BLTC,Ormond Blue,AA002112,10:00,BLTC
+draw-aa002-r11-bye-clarinda,17 Oct 26,11,regular,Round 11,Bye,Clarinda,pending-aa002-r11-bye-clarinda,,Bye
+draw-aa002-r11-glen-huntly-port-melbourne,17 Oct 26,11,regular,Round 11,Glen Huntly,Port Melbourne,AA002111,10:00,Glen Huntly
+draw-aa002-r11-ormond-white-royal-ave,17 Oct 26,11,regular,Round 11,Ormond White,Royal Ave,AA002113,,Ormond White
+draw-aa002-r12-bltc-glen-huntly,24 Oct 26,12,regular,Round 12,BLTC,Glen Huntly,pending-aa002-r12-bltc-glen-huntly,10:00,BLTC
+draw-aa002-r12-bye-ormond-white,24 Oct 26,12,regular,Round 12,Bye,Ormond White,pending-aa002-r12-bye-ormond-white,,Bye
+draw-aa002-r12-clarinda-port-melbourne,24 Oct 26,12,regular,Round 12,Clarinda,Port Melbourne,AA002123,10:00,Clarinda
+draw-aa002-r12-ormond-blue-royal-ave,24 Oct 26,12,regular,Round 12,Ormond Blue,Royal Ave,AA002122,8:00,Ormond Blue
+draw-aa002-r13-glen-huntly-bye,7 Nov 26,13,regular,Round 13,Glen Huntly,Bye,,10:00,Glen Huntly
+draw-aa002-r13-ormond-white-bltc,7 Nov 26,13,regular,Round 13,Ormond White,BLTC,,,Ormond White
+draw-aa002-r13-port-melbourne-ormond-blue,7 Nov 26,13,regular,Round 13,Port Melbourne,Ormond Blue,,8:00,Port Melbourne
+draw-aa002-r13-royal-ave-clarinda,7 Nov 26,13,regular,Round 13,Royal Ave,Clarinda,,8:30,Royal Ave
+draw-aa002-r14-bye-bltc,14 Nov 26,14,regular,Round 14,Bye,BLTC,,,Bye
+draw-aa002-r14-clarinda-ormond-blue,14 Nov 26,14,regular,Round 14,Clarinda,Ormond Blue,,10:00,Clarinda
+draw-aa002-r14-ormond-white-glen-huntly,14 Nov 26,14,regular,Round 14,Ormond White,Glen Huntly,,,Ormond White
+draw-aa002-r14-port-melbourne-royal-ave,14 Nov 26,14,regular,Round 14,Port Melbourne,Royal Ave,,8:00,Port Melbourne

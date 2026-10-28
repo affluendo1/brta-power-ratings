@@ -5,7 +5,7 @@
   const finite=value=>value!==null&&value!==undefined&&value!==''&&Number.isFinite(Number(value))?Number(value):null;
   const strength=(p,kind='singles')=>finite(p[kind+'Power']);
   const powerSort=kind=>(a,b)=>(strength(b,kind)??-Infinity)-(strength(a,kind)??-Infinity)||b.appearances-a.appearances||a.name.localeCompare(b.name);
-  function rules(data){const r=data.meta?.customRules;return{singles:r?.singlesSlots??(data.format==='rubbers'?2:4),doubles:r?.doublesSlots??(data.format==='rubbers'?1:2)}}
+  function rules(data){const r=data.meta?.customRules||data.meta?.competition_rules;return{singles:r?.singlesSlots??(data.format==='rubbers'?2:4),doubles:r?.doublesSlots??(data.format==='rubbers'?1:2)}}
   function teamNames(data){return [...new Set([...(data.standings||[]).map(x=>x.team),...(data.teams||[]).map(x=>x.team),...(data.customRoster||[]).map(x=>x.team)].filter(Boolean))]}
   function fixtures(data,team){
     const map=new Map();
@@ -102,6 +102,12 @@
   }
   function suggest(model,finals=false){
     const {singles,doubles}=model.rules,eligible=model.core.filter(p=>!p.registeredEmergency),ranked=[...eligible].sort(powerSort('singles')),chosen=ranked.slice(0,singles);
+    if(singles===0){
+      const roster=[...eligible].sort(powerSort('doubles')).slice(0,4).map(p=>p.name),observed=model.pairs.filter(p=>p.names.every(n=>roster.includes(n)));
+      if(roster.length<4||!observed.length)return{unavailable:true,reason:'More doubles evidence is needed to suggest a lineup.'};
+      const pairs=Array.from({length:doubles},(_,i)=>pairProjection(model,observed[i%observed.length].names));
+      return{singles:[],pairs,roster,finals,limited:true,attempts:1,provisional:false,estimatedPairs:pairs.some(p=>p.fallback),score:pairs.reduce((n,p)=>n+(p.power||0),0)};
+    }
     if(chosen.length<singles)return{unavailable:true,reason:'Not enough recorded squad players for this format.'};
     if(chosen.some(p=>p.singlesPower==null))return{unavailable:true,reason:'More singles results are needed to suggest a Power lineup.'};
     const base=chosen.map(p=>p.name),minimum=Math.max(singles,2*doubles),max=minimum+(finals?1:0),extra=eligible.filter(p=>!base.includes(p.name)).sort(powerSort('doubles'));

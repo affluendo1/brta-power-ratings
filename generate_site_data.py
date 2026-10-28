@@ -321,6 +321,7 @@ def brta_scoring_rules(meta):
     green_ball = bool(meta.get("green_ball", False)) or "green ball" in str(meta.get("section_label", "")).casefold()
     return {
         "format": "rubbers" if rubbers else "sets",
+        "published_only": bool(meta.get("competition_rules")),
         "green_ball": green_ball,
         "team_win": 2.0 if rubbers else 4.0,
         "team_draw": 1.0 if rubbers else 2.0,
@@ -350,6 +351,8 @@ def fixture_points(r, rules):
     home, away = _number(r.get("home_points", "")), _number(r.get("away_points", ""))
     if home is not None and away is not None:
         return home, away
+    if rules.get("published_only"):
+        return None, None
     if status == "Wash Out":
         each = rules["team_draw"] + rules["scheduled_sets"] * 0.5
         return each, each
@@ -395,7 +398,7 @@ def reconstructed_standings(fixtures, rules):
     if "stage" in fixtures.columns:
         stages = fixtures["stage"].fillna("").astype(str).str.casefold()
         fixtures = fixtures[~stages.isin({"semi_final", "grand_final", "semi-final", "grand-final"})].copy()
-    if "round" in fixtures.columns:
+    if "round" in fixtures.columns and not rules.get("published_only"):
         fixtures = fixtures[pd.to_numeric(fixtures["round"], errors="coerce").fillna(0).astype(int).le(14)].copy()
     teams = sorted((set(fixtures.home_team) | set(fixtures.away_team))-{"Bye"})
     s = {t: dict(team=t, played=0, wins=0, draws=0, losses=0, rubbersFor=0, rubbersAgainst=0,
@@ -404,6 +407,15 @@ def reconstructed_standings(fixtures, rules):
         h, a, status = str(r.home_team), str(r.away_team), str(r.status)
         if h=="Bye" or a=="Bye": continue
         home_points, away_points=fixture_points(r, rules)
+        if home_points is None or away_points is None:
+            if status == "Wash Out":
+                for t in (h,a):
+                    s[t]["played"] += 1; s[t]["draws"] += 1
+            elif status in {"Forfeited To", "Forfeited By"}:
+                winner, loser = (a,h) if status == "Forfeited To" else (h,a)
+                s[winner]["played"] += 1; s[loser]["played"] += 1
+                s[winner]["wins"] += 1; s[loser]["losses"] += 1
+            continue
         if status == "Wash Out":
             # Rule 14 gives both teams draw points plus a half point per
             # uncompleted set. With no scorecard this is a draw, but contributes
@@ -539,15 +551,15 @@ def knockout_summary(fixtures, standings, rules, meta):
     stages = fixtures.get("stage", pd.Series([""] * len(fixtures), index=fixtures.index)).fillna("").astype(str).str.casefold()
     semi_stage = stages.isin({"semi_final", "semi-final"})
     final_stage = stages.isin({"grand_final", "grand-final"})
-    semis_mask = semi_stage | (rounds.eq(15) & ~final_stage)
-    final_mask = final_stage | (rounds.ge(16) & ~semi_stage)
-    regular_mask = ~semis_mask & ~final_mask & rounds.le(14)
+    semis_mask = semi_stage if rules.get("published_only") else semi_stage | (rounds.eq(15) & ~final_stage)
+    final_mask = final_stage if rules.get("published_only") else final_stage | (rounds.ge(16) & ~semi_stage)
+    regular_mask = ~semis_mask & ~final_mask & (True if rules.get("published_only") else rounds.le(14))
     regular = fixtures[regular_mask]
     unresolved = regular[regular["status"].astype(str).isin({"Missing Result", "Scheduled", "Pending"})]
     expected_rounds = int(meta.get("regular_season_rounds", 14) or 14)
     published_rounds = set(rounds[regular_mask].tolist())
     all_regular_rounds_present = all(round_no in published_rounds for round_no in range(1, expected_rounds + 1))
-    regular_complete = bool(all_regular_rounds_present and unresolved.empty)
+    regular_complete = bool(all_regular_rounds_present and unresolved.empty and not rules.get("published_only"))
     semi_history = [_knockout_record(row, rules) for _, row in fixtures[semis_mask].iterrows()]
     final_history = [_knockout_record(row, rules) for _, row in fixtures[final_mask].iterrows()]
     actual_semi = bool(semi_history)
@@ -628,7 +640,9 @@ def draw_fixtures(draw, fixtures, rules):
         result_date="" if result is None or pd.isna(result.get("date")) else str(result.get("date", ""))
         item={"home":str(r.home_team),"away":str(r.away_team),"fixtureId":fid,
               "status":str(result.status) if result is not None else "Scheduled",
-              "stage":stage,"label":label,"date":draw_date or result_date}
+              "stage":stage,"label":label,"date":draw_date or result_date,
+              "startTime":str(r.get("start_time", "")) if pd.notna(r.get("start_time", "")) else "",
+              "venue":str(r.get("venue", "")) if pd.notna(r.get("venue", "")) else ""}
         if result is not None:
             hp,ap=fixture_points(result, rules)
             if hp is not None and ap is not None:
@@ -1354,6 +1368,8 @@ def result_rounds(fixtures, singles, doubles, rules):
                 "home":display_pair(r[home_col]) if discipline=="Doubles" else str(r[home_col]),
                 "away":display_pair(r[away_col]) if discipline=="Doubles" else str(r[away_col]),
                 "winner":str(r[winner_col]),"score":str(r.score),
+                "status":str(r.get("status", "Completed")),
+                "valid_for_rating":str(r.get("valid_for_rating", "true")).casefold() in {"true","1","yes"},
                 "homeEmergency":any(home_flags),
                 "awayEmergency":any(away_flags),
             }
@@ -1417,6 +1433,7 @@ def build_section(meta, *, sections_dir=None):
             })
         if playoff_rows:
             draw=pd.concat([draw,pd.DataFrame(playoff_rows)],ignore_index=True)
+    result_singles, result_doubles = singles.copy(), doubles.copy()
     singles=singles[singles.status.eq("Completed")].copy()
     doubles=doubles[doubles.status.eq("Completed")].copy()
     rules=brta_scoring_rules(meta)
@@ -1501,8 +1518,10 @@ def build_section(meta, *, sections_dir=None):
         "roundOverview":round_overview(fixtures,singles,doubles,rmap,history) if len(singles) else None,
         "standings":standings,
         "knockout":knockout,
-        "results":result_rounds(fixtures,singles,doubles,rules),
+        "results":result_rounds(fixtures,result_singles,result_doubles,rules),
         "upcomingFixtures":draw_fixtures(draw,fixtures,rules),
+        "calendarBreaks":meta.get("calendar_breaks", []),
+        "calendarEvents":meta.get("calendar_events", []),
         "sync":sync_meta(meta,fixtures),
     }
     if nonstandard_doubles:

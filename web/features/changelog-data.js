@@ -1,6 +1,18 @@
 // Website releases, newest first. Routine result checks are not website releases.
 window.BRTA_RELEASES = Object.freeze([
 {
+  "version": "8.2",
+  "title": "Matchday",
+  "size": "large",
+  "committedAt": "2026-10-28T11:34:03.686597+00:00",
+  "changes": [
+    "Explore Rounds with team calendars, no-play weeks and calendar exports.",
+    "Follow players and teams, with new-result updates when you return.",
+    "Create and share custom player, lineup and result cards.",
+    "Added Saturday afternoon and weekday BRTA competitions."
+  ]
+},
+{
   "version": "8.1.0.1",
   "size": "tiny",
   "committedAt": "2026-10-28T05:42:14.433Z",

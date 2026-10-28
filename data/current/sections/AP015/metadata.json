@@ -1,0 +1,113 @@
+{
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 2026/27",
+  "season_id": "AP53",
+  "season_label": "Summer 2026/27",
+  "section_code": "AP015",
+  "section_label": "Womens S/D 3",
+  "format": "sets",
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "calendar_breaks": [
+    {
+      "date": "31 Oct 26",
+      "label": "No Play",
+      "source": "https://www.trols.org.au/brta/fixture.php"
+    }
+  ],
+  "calendar_events": [
+    {
+      "date": "27 Feb 27",
+      "label": "Semi Final \u00b7 if qualified"
+    },
+    {
+      "date": "13 Mar 27",
+      "label": "Grand Final \u00b7 if qualified"
+    },
+    {
+      "date": "20 Mar 27",
+      "label": "Spare \u00b7 if required"
+    }
+  ],
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Kooyong",
+      "wins": 3,
+      "points": 28,
+      "percentage": 236.36,
+      "marker": ""
+    },
+    {
+      "position": 2,
+      "team": "East Malvern Blue",
+      "wins": 2,
+      "points": 25,
+      "percentage": 112.69,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "East Malvern Navy",
+      "wins": 1,
+      "points": 17,
+      "percentage": 98.51,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "BLTC Blue",
+      "wins": 1,
+      "points": 14,
+      "percentage": 89.62,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Chadstone",
+      "wins": 1,
+      "points": 13.5,
+      "percentage": 92.16,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Tennis World",
+      "wins": 0,
+      "points": 13,
+      "percentage": 72.52,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "BLTC White",
+      "wins": 0,
+      "points": 9.5,
+      "percentage": 65.07,
+      "marker": ""
+    }
+  ],
+  "green_ball": false,
+  "results_loaded_by_trols": null,
+  "fixtures": 16,
+  "completed_fixtures": 9,
+  "draw_fixtures": 56,
+  "singles_rubbers": 33,
+  "doubles_rubbers": 18,
+  "latest_round": 4,
+  "validation": "source discrepancies",
+  "source_warnings": [
+    "Incomplete TROLS score for AP015041 singles No. 1: '4-4'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP015042 singles No. 4: '1-2'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

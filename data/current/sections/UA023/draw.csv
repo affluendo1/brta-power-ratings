@@ -1,43 +1,57 @@
-draw_id,date,round,stage,round_label,home_team,away_team,fixture_id
-draw-ua023-r1-black-rock-maccabi,19 Jul 26,1,regular,Round 1,Black Rock,Maccabi,UA023013
-draw-ua023-r1-gphc-bltc,19 Jul 26,1,regular,Round 1,GPHC,BLTC,UA023011
-draw-ua023-r1-victory-park-dendy-park,19 Jul 26,1,regular,Round 1,Victory Park,Dendy Park,UA023012
-draw-ua023-r2-bltc-victory-park,26 Jul 26,2,regular,Round 2,BLTC,Victory Park,UA023022
-draw-ua023-r2-dendy-park-black-rock,26 Jul 26,2,regular,Round 2,Dendy Park,Black Rock,UA023023
-draw-ua023-r2-le-page-gphc,26 Jul 26,2,regular,Round 2,Le Page,GPHC,UA023021
-draw-ua023-r3-black-rock-bltc,2 Aug 26,3,regular,Round 3,Black Rock,BLTC,UA023033
-draw-ua023-r3-gphc-maccabi,2 Aug 26,3,regular,Round 3,GPHC,Maccabi,UA023031
-draw-ua023-r3-victory-park-le-page,2 Aug 26,3,regular,Round 3,Victory Park,Le Page,UA023032
-draw-ua023-r4-dendy-park-gphc,9 Aug 26,4,regular,Round 4,Dendy Park,GPHC,UA023041
-draw-ua023-r4-le-page-black-rock,9 Aug 26,4,regular,Round 4,Le Page,Black Rock,pending-ua023-r4-le-page-black-rock
-draw-ua023-r4-maccabi-victory-park,9 Aug 26,4,regular,Round 4,Maccabi,Victory Park,pending-ua023-r4-maccabi-victory-park
-draw-ua023-r5-dendy-park-bltc,16 Aug 26,5,regular,Round 5,Dendy Park,BLTC,UA023053
-draw-ua023-r5-gphc-victory-park,16 Aug 26,5,regular,Round 5,GPHC,Victory Park,UA023054
-draw-ua023-r5-le-page-maccabi,16 Aug 26,5,regular,Round 5,Le Page,Maccabi,UA023052
-draw-ua023-r6-bltc-le-page,23 Aug 26,6,regular,Round 6,BLTC,Le Page,UA023064
-draw-ua023-r6-maccabi-dendy-park,23 Aug 26,6,regular,Round 6,Maccabi,Dendy Park,UA023063
-draw-ua023-r6-victory-park-black-rock,23 Aug 26,6,regular,Round 6,Victory Park,Black Rock,UA023061
-draw-ua023-r7-gphc-black-rock,30 Aug 26,7,regular,Round 7,GPHC,Black Rock,UA023071
-draw-ua023-r7-le-page-dendy-park,30 Aug 26,7,regular,Round 7,Le Page,Dendy Park,UA023073
-draw-ua023-r7-maccabi-bltc,30 Aug 26,7,regular,Round 7,Maccabi,BLTC,UA023074
-draw-ua023-r8-bltc-gphc,6 Sep 26,8,regular,Round 8,BLTC,GPHC,UA023081
-draw-ua023-r8-dendy-park-victory-park,6 Sep 26,8,regular,Round 8,Dendy Park,Victory Park,UA023082
-draw-ua023-r8-maccabi-black-rock,6 Sep 26,8,regular,Round 8,Maccabi,Black Rock,UA023083
-draw-ua023-r9-black-rock-dendy-park,13 Sep 26,9,regular,Round 9,Black Rock,Dendy Park,UA023093
-draw-ua023-r9-gphc-le-page,13 Sep 26,9,regular,Round 9,GPHC,Le Page,UA023091
-draw-ua023-r9-victory-park-bltc,13 Sep 26,9,regular,Round 9,Victory Park,BLTC,UA023092
-draw-ua023-r10-bltc-black-rock,11 Oct 26,10,regular,Round 10,BLTC,Black Rock,UA023103
-draw-ua023-r10-le-page-victory-park,11 Oct 26,10,regular,Round 10,Le Page,Victory Park,UA023102
-draw-ua023-r10-maccabi-gphc,11 Oct 26,10,regular,Round 10,Maccabi,GPHC,UA023101
-draw-ua023-r11-black-rock-le-page,18 Oct 26,11,regular,Round 11,Black Rock,Le Page,UA023113
-draw-ua023-r11-gphc-dendy-park,18 Oct 26,11,regular,Round 11,GPHC,Dendy Park,UA023111
-draw-ua023-r11-victory-park-maccabi,18 Oct 26,11,regular,Round 11,Victory Park,Maccabi,UA023112
-draw-ua023-r12-bltc-dendy-park,25 Oct 26,12,regular,Round 12,BLTC,Dendy Park,pending-ua023-r12-bltc-dendy-park
-draw-ua023-r12-maccabi-le-page,25 Oct 26,12,regular,Round 12,Maccabi,Le Page,pending-ua023-r12-maccabi-le-page
-draw-ua023-r12-victory-park-gphc,25 Oct 26,12,regular,Round 12,Victory Park,GPHC,pending-ua023-r12-victory-park-gphc
-draw-ua023-r13-black-rock-victory-park,8 Nov 26,13,regular,Round 13,Black Rock,Victory Park,
-draw-ua023-r13-dendy-park-maccabi,8 Nov 26,13,regular,Round 13,Dendy Park,Maccabi,
-draw-ua023-r13-le-page-bltc,8 Nov 26,13,regular,Round 13,Le Page,BLTC,
-draw-ua023-r14-bltc-maccabi,15 Nov 26,14,regular,Round 14,BLTC,Maccabi,
-draw-ua023-r14-black-rock-gphc,15 Nov 26,14,regular,Round 14,Black Rock,GPHC,
-draw-ua023-r14-dendy-park-le-page,15 Nov 26,14,regular,Round 14,Dendy Park,Le Page,
+draw_id,date,round,stage,round_label,home_team,away_team,fixture_id,start_time,venue
+draw-ua023-r1-black-rock-maccabi,19 Jul 26,1,regular,Round 1,Black Rock,Maccabi,UA023013,8:00,Black Rock
+draw-ua023-r1-bye-le-page,19 Jul 26,1,regular,Round 1,Bye,Le Page,pending-ua023-r1-bye-le-page,,Bye
+draw-ua023-r1-gphc-bltc,19 Jul 26,1,regular,Round 1,GPHC,BLTC,UA023011,8:00,GPHC
+draw-ua023-r1-victory-park-dendy-park,19 Jul 26,1,regular,Round 1,Victory Park,Dendy Park,UA023012,9:00,Victory Park
+draw-ua023-r2-bltc-victory-park,26 Jul 26,2,regular,Round 2,BLTC,Victory Park,UA023022,8:00,BLTC
+draw-ua023-r2-dendy-park-black-rock,26 Jul 26,2,regular,Round 2,Dendy Park,Black Rock,UA023023,9:00,Dendy Park
+draw-ua023-r2-le-page-gphc,26 Jul 26,2,regular,Round 2,Le Page,GPHC,UA023021,8:00,Dingley
+draw-ua023-r2-maccabi-bye,26 Jul 26,2,regular,Round 2,Maccabi,Bye,pending-ua023-r2-maccabi-bye,9:00,Maccabi
+draw-ua023-r3-black-rock-bltc,2 Aug 26,3,regular,Round 3,Black Rock,BLTC,UA023033,8:00,Black Rock
+draw-ua023-r3-bye-dendy-park,2 Aug 26,3,regular,Round 3,Bye,Dendy Park,pending-ua023-r3-bye-dendy-park,,Bye
+draw-ua023-r3-gphc-maccabi,2 Aug 26,3,regular,Round 3,GPHC,Maccabi,UA023031,8:00,GPHC
+draw-ua023-r3-victory-park-le-page,2 Aug 26,3,regular,Round 3,Victory Park,Le Page,UA023032,9:00,Victory Park
+draw-ua023-r4-bltc-bye,9 Aug 26,4,regular,Round 4,BLTC,Bye,pending-ua023-r4-bltc-bye,8:00,BLTC
+draw-ua023-r4-dendy-park-gphc,9 Aug 26,4,regular,Round 4,Dendy Park,GPHC,UA023041,9:00,Dendy Park
+draw-ua023-r4-le-page-black-rock,9 Aug 26,4,regular,Round 4,Le Page,Black Rock,pending-ua023-r4-le-page-black-rock,8:00,Dingley
+draw-ua023-r4-maccabi-victory-park,9 Aug 26,4,regular,Round 4,Maccabi,Victory Park,pending-ua023-r4-maccabi-victory-park,9:00,Maccabi
+draw-ua023-r5-black-rock-bye,16 Aug 26,5,regular,Round 5,Black Rock,Bye,pending-ua023-r5-black-rock-bye,8:00,Black Rock
+draw-ua023-r5-dendy-park-bltc,16 Aug 26,5,regular,Round 5,Dendy Park,BLTC,UA023053,9:00,Dendy Park
+draw-ua023-r5-gphc-victory-park,16 Aug 26,5,regular,Round 5,GPHC,Victory Park,UA023054,8:00,GPHC
+draw-ua023-r5-le-page-maccabi,16 Aug 26,5,regular,Round 5,Le Page,Maccabi,UA023052,8:00,Dingley
+draw-ua023-r6-bltc-le-page,23 Aug 26,6,regular,Round 6,BLTC,Le Page,UA023064,8:00,BLTC
+draw-ua023-r6-bye-gphc,23 Aug 26,6,regular,Round 6,Bye,GPHC,pending-ua023-r6-bye-gphc,,Bye
+draw-ua023-r6-maccabi-dendy-park,23 Aug 26,6,regular,Round 6,Maccabi,Dendy Park,UA023063,9:00,Maccabi
+draw-ua023-r6-victory-park-black-rock,23 Aug 26,6,regular,Round 6,Victory Park,Black Rock,UA023061,9:00,Victory Park
+draw-ua023-r7-gphc-black-rock,30 Aug 26,7,regular,Round 7,GPHC,Black Rock,UA023071,8:00,GPHC
+draw-ua023-r7-le-page-dendy-park,30 Aug 26,7,regular,Round 7,Le Page,Dendy Park,UA023073,8:00,Dingley
+draw-ua023-r7-maccabi-bltc,30 Aug 26,7,regular,Round 7,Maccabi,BLTC,UA023074,9:00,Maccabi
+draw-ua023-r7-victory-park-bye,30 Aug 26,7,regular,Round 7,Victory Park,Bye,pending-ua023-r7-victory-park-bye,9:00,Victory Park
+draw-ua023-r8-bltc-gphc,6 Sep 26,8,regular,Round 8,BLTC,GPHC,UA023081,8:00,BLTC
+draw-ua023-r8-dendy-park-victory-park,6 Sep 26,8,regular,Round 8,Dendy Park,Victory Park,UA023082,9:00,Dendy Park
+draw-ua023-r8-le-page-bye,6 Sep 26,8,regular,Round 8,Le Page,Bye,pending-ua023-r8-le-page-bye,8:00,Dingley
+draw-ua023-r8-maccabi-black-rock,6 Sep 26,8,regular,Round 8,Maccabi,Black Rock,UA023083,9:00,Maccabi
+draw-ua023-r9-black-rock-dendy-park,13 Sep 26,9,regular,Round 9,Black Rock,Dendy Park,UA023093,8:00,Black Rock
+draw-ua023-r9-bye-maccabi,13 Sep 26,9,regular,Round 9,Bye,Maccabi,pending-ua023-r9-bye-maccabi,,Bye
+draw-ua023-r9-gphc-le-page,13 Sep 26,9,regular,Round 9,GPHC,Le Page,UA023091,8:00,GPHC
+draw-ua023-r9-victory-park-bltc,13 Sep 26,9,regular,Round 9,Victory Park,BLTC,UA023092,9:00,Victory Park
+draw-ua023-r10-bltc-black-rock,11 Oct 26,10,regular,Round 10,BLTC,Black Rock,UA023103,8:00,BLTC
+draw-ua023-r10-dendy-park-bye,11 Oct 26,10,regular,Round 10,Dendy Park,Bye,pending-ua023-r10-dendy-park-bye,9:00,Dendy Park
+draw-ua023-r10-le-page-victory-park,11 Oct 26,10,regular,Round 10,Le Page,Victory Park,UA023102,8:00,Dingley
+draw-ua023-r10-maccabi-gphc,11 Oct 26,10,regular,Round 10,Maccabi,GPHC,UA023101,9:00,Maccabi
+draw-ua023-r11-black-rock-le-page,18 Oct 26,11,regular,Round 11,Black Rock,Le Page,UA023113,8:00,Black Rock
+draw-ua023-r11-bye-bltc,18 Oct 26,11,regular,Round 11,Bye,BLTC,pending-ua023-r11-bye-bltc,,Bye
+draw-ua023-r11-gphc-dendy-park,18 Oct 26,11,regular,Round 11,GPHC,Dendy Park,UA023111,8:00,GPHC
+draw-ua023-r11-victory-park-maccabi,18 Oct 26,11,regular,Round 11,Victory Park,Maccabi,UA023112,9:00,Victory Park
+draw-ua023-r12-bltc-dendy-park,25 Oct 26,12,regular,Round 12,BLTC,Dendy Park,pending-ua023-r12-bltc-dendy-park,8:00,BLTC
+draw-ua023-r12-bye-black-rock,25 Oct 26,12,regular,Round 12,Bye,Black Rock,pending-ua023-r12-bye-black-rock,,Bye
+draw-ua023-r12-maccabi-le-page,25 Oct 26,12,regular,Round 12,Maccabi,Le Page,pending-ua023-r12-maccabi-le-page,9:00,Maccabi
+draw-ua023-r12-victory-park-gphc,25 Oct 26,12,regular,Round 12,Victory Park,GPHC,pending-ua023-r12-victory-park-gphc,9:00,Victory Park
+draw-ua023-r13-black-rock-victory-park,8 Nov 26,13,regular,Round 13,Black Rock,Victory Park,,8:00,Black Rock
+draw-ua023-r13-dendy-park-maccabi,8 Nov 26,13,regular,Round 13,Dendy Park,Maccabi,,9:00,Dendy Park
+draw-ua023-r13-gphc-bye,8 Nov 26,13,regular,Round 13,GPHC,Bye,,8:00,GPHC
+draw-ua023-r13-le-page-bltc,8 Nov 26,13,regular,Round 13,Le Page,BLTC,,8:00,Dingley
+draw-ua023-r14-bltc-maccabi,15 Nov 26,14,regular,Round 14,BLTC,Maccabi,,8:00,BLTC
+draw-ua023-r14-black-rock-gphc,15 Nov 26,14,regular,Round 14,Black Rock,GPHC,,8:00,Black Rock
+draw-ua023-r14-bye-victory-park,15 Nov 26,14,regular,Round 14,Bye,Victory Park,,,Bye
+draw-ua023-r14-dendy-park-le-page,15 Nov 26,14,regular,Round 14,Dendy Park,Le Page,,9:00,Dendy Park

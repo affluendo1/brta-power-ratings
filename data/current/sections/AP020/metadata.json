@@ -1,0 +1,118 @@
+{
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 2026/27",
+  "season_id": "AP53",
+  "season_label": "Summer 2026/27",
+  "section_code": "AP020",
+  "section_label": "Mx Rubbers 4",
+  "format": "sets",
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "calendar_breaks": [
+    {
+      "date": "31 Oct 26",
+      "label": "No Play",
+      "source": "https://www.trols.org.au/brta/fixture.php"
+    }
+  ],
+  "calendar_events": [
+    {
+      "date": "27 Feb 27",
+      "label": "Semi Final \u00b7 if qualified"
+    },
+    {
+      "date": "13 Mar 27",
+      "label": "Grand Final \u00b7 if qualified"
+    },
+    {
+      "date": "20 Mar 27",
+      "label": "Spare \u00b7 if required"
+    }
+  ],
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Le Page",
+      "wins": 2,
+      "points": 22,
+      "percentage": 135.14,
+      "marker": ""
+    },
+    {
+      "position": 2,
+      "team": "Pakenham",
+      "wins": 2,
+      "points": 22,
+      "percentage": 112.17,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Langwarrin White",
+      "wins": 2,
+      "points": 21,
+      "percentage": 182.19,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Langwarrin Blue",
+      "wins": 1,
+      "points": 16,
+      "percentage": 121.79,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Victory Park",
+      "wins": 1,
+      "points": 15,
+      "percentage": 99.35,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Black Rock",
+      "wins": 1,
+      "points": 14,
+      "percentage": 62.07,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Mentone Yellow",
+      "wins": 1,
+      "points": 13,
+      "percentage": 93.38,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "Mentone Gold",
+      "wins": 0,
+      "points": 5,
+      "percentage": 42.0,
+      "marker": ""
+    }
+  ],
+  "green_ball": false,
+  "results_loaded_by_trols": null,
+  "fixtures": 16,
+  "completed_fixtures": 11,
+  "draw_fixtures": 56,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 44,
+  "latest_round": 4,
+  "validation": "passed",
+  "source_warnings": []
+}

@@ -1,0 +1,115 @@
+{
+  "competition_code": "TA",
+  "competition_label": "Tuesday AM - Spring 2026",
+  "season_id": "TA15",
+  "season_label": "Spring 2026",
+  "section_code": "TA001",
+  "section_label": "T Section 1",
+  "format": "sets",
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 1,
+    "doublesTarget": 10,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "calendar_breaks": [
+    {
+      "date": "22 Sep 26",
+      "label": "No Play",
+      "source": "https://www.trols.org.au/brta/fixture.php"
+    },
+    {
+      "date": "29 Sep 26",
+      "label": "No Play",
+      "source": "https://www.trols.org.au/brta/fixture.php"
+    }
+  ],
+  "calendar_events": [
+    {
+      "date": "10 Nov 26",
+      "label": "Semi Final \u00b7 if qualified"
+    },
+    {
+      "date": "17 Nov 26",
+      "label": "Grand Final \u00b7 if qualified"
+    },
+    {
+      "date": "24 Nov 26",
+      "label": "Spare \u00b7 if required"
+    }
+  ],
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "BLTC",
+      "wins": 9,
+      "points": 70.5,
+      "percentage": 179.4,
+      "marker": ""
+    },
+    {
+      "position": 2,
+      "team": "Mordialloc White",
+      "wins": 8,
+      "points": 67,
+      "percentage": 178.18,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Mordialloc Red",
+      "wins": 8,
+      "points": 63,
+      "percentage": 169.54,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Aspendale Gold",
+      "wins": 6,
+      "points": 49,
+      "percentage": 98.93,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Aspendale Green",
+      "wins": 3,
+      "points": 30,
+      "percentage": 81.11,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Stella Maris",
+      "wins": 2,
+      "points": 24.5,
+      "percentage": 69.15,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Dingley",
+      "wins": 0,
+      "points": 8,
+      "percentage": 24.61,
+      "marker": ""
+    }
+  ],
+  "green_ball": false,
+  "results_loaded_by_trols": null,
+  "fixtures": 52,
+  "completed_fixtures": 37,
+  "draw_fixtures": 56,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 146,
+  "latest_round": 13,
+  "validation": "passed",
+  "source_warnings": []
+}

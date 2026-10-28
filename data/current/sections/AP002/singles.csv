@@ -1,0 +1,37 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP002021,10 Oct 26,2,BLTC Blue,Carmelite Red,No. 1,Ayden Kousis,Ashton Arms,Ashton Arms,6-8,6,8,0,1,Completed,true,false,false
+AP002021,10 Oct 26,2,BLTC Blue,Carmelite Red,No. 2,Jack Broadbent,Luke Kinsman,Jack Broadbent,8-6,8,6,1,0,Completed,true,false,true
+AP002021,10 Oct 26,2,BLTC Blue,Carmelite Red,No. 3,Alex Boeve,Simon Arms,Alex Boeve,8-2,8,2,1,0,Completed,true,true,false
+AP002021,10 Oct 26,2,BLTC Blue,Carmelite Red,No. 4,Macgregor Anderson,Eoin Ryan,Macgregor Anderson,8-1,8,1,1,0,Completed,true,false,true
+AP002022,10 Oct 26,2,Overport Park,Mt Eliza Penins,No. 1,Michael Turlejski,John McDonald,Michael Turlejski,8-4,8,4,1,0,Completed,true,false,false
+AP002022,10 Oct 26,2,Overport Park,Mt Eliza Penins,No. 2,Alex Ianculescu,Jack Shurdington,Jack Shurdington,3-8,3,8,0,1,Completed,true,false,false
+AP002022,10 Oct 26,2,Overport Park,Mt Eliza Penins,No. 3,Karol Bohm,Enzo Gunther,Enzo Gunther,0-8,0,8,0,1,Completed,true,false,false
+AP002022,10 Oct 26,2,Overport Park,Mt Eliza Penins,No. 4,Nick Wilson,Jarrod Pepper,Nick Wilson,8-6,8,6,1,0,Completed,true,false,false
+AP002023,10 Oct 26,2,Carmelite Blue,BLTC White,No. 1,Aris Androutsopoulos,Ibrahim Kibet Yego,Ibrahim Kibet Yego,7-8,7,8,0,1,Completed,true,false,false
+AP002023,10 Oct 26,2,Carmelite Blue,BLTC White,No. 2,Thomas McKay,Joshua Fairhurst,Thomas McKay,8-4,8,4,1,0,Completed,true,false,false
+AP002023,10 Oct 26,2,Carmelite Blue,BLTC White,No. 3,Kane Chu,Luke Chigwidden,Kane Chu,8-3,8,3,1,0,Completed,true,false,false
+AP002023,10 Oct 26,2,Carmelite Blue,BLTC White,No. 4,Oliver Kalicin,Craig Stewart,Oliver Kalicin,8-0,8,0,1,0,Completed,true,false,false
+AP002031,17 Oct 26,3,Carmelite Red,BLTC White,No. 1,Ashton Arms,Joshua Fairhurst,Ashton Arms,8-6,8,6,1,0,Completed,true,false,false
+AP002031,17 Oct 26,3,Carmelite Red,BLTC White,No. 2,Luke Kinsman,Brodie Moller,Luke Kinsman,8-6,8,6,1,0,Completed,true,true,false
+AP002031,17 Oct 26,3,Carmelite Red,BLTC White,No. 3,Simon Arms,Matvey Roche,Matvey Roche,3-8,3,8,0,1,Completed,true,false,false
+AP002031,17 Oct 26,3,Carmelite Red,BLTC White,No. 4,Olliver Hollis,Matt Reiter,Matt Reiter,4-8,4,8,0,1,Completed,true,true,false
+AP002032,17 Oct 26,3,Mt Eliza Penins,Carmelite Blue,No. 1,Sam Young-Mathers,Aris Androutsopoulos,Sam Young-Mathers,8-0,8,0,1,0,Completed,true,false,false
+AP002032,17 Oct 26,3,Mt Eliza Penins,Carmelite Blue,No. 2,Alex McDonald,Oliver Kalicin,Alex McDonald,8-3,8,3,1,0,Completed,true,false,false
+AP002032,17 Oct 26,3,Mt Eliza Penins,Carmelite Blue,No. 3,Nick Geslicki,Ryan Sweeney,Nick Geslicki,8-2,8,2,1,0,Completed,true,true,false
+AP002032,17 Oct 26,3,Mt Eliza Penins,Carmelite Blue,No. 4,Sean Reekie,Daniel McTear,Sean Reekie,8-3,8,3,1,0,Completed,true,true,true
+AP002033,17 Oct 26,3,BLTC Blue,Overport Park,No. 1,Ayden Kousis,Andrew Scott,Ayden Kousis,8-3,8,3,1,0,Completed,true,false,false
+AP002033,17 Oct 26,3,BLTC Blue,Overport Park,No. 2,Jarrod Broadbent,Michael Turlejski,Michael Turlejski,3-8,3,8,0,1,Completed,true,false,false
+AP002033,17 Oct 26,3,BLTC Blue,Overport Park,No. 3,Jack Broadbent,Jack Bassett,Jack Broadbent,8-2,8,2,1,0,Completed,true,false,true
+AP002033,17 Oct 26,3,BLTC Blue,Overport Park,No. 4,Brady Watts,Alex Ianculescu,Alex Ianculescu,5-8,5,8,0,1,Completed,true,true,false
+AP002041,24 Oct 26,4,Overport Park,Carmelite Red,No. 1,Marcus Neild,Ashton Arms,Marcus Neild,8-4,8,4,1,0,Completed,true,true,false
+AP002041,24 Oct 26,4,Overport Park,Carmelite Red,No. 2,Alex Ianculescu,Luke Kinsman,Alex Ianculescu,8-3,8,3,1,0,Completed,true,false,true
+AP002041,24 Oct 26,4,Overport Park,Carmelite Red,No. 3,Nick Wilson,Simon Arms,Simon Arms,3-8,3,8,0,1,Completed,true,false,false
+AP002041,24 Oct 26,4,Overport Park,Carmelite Red,No. 4,Sebastian Cowan,Olliver Hollis,Olliver Hollis,3-8,3,8,0,1,Completed,true,true,true
+AP002042,24 Oct 26,4,Carmelite Blue,BLTC Blue,No. 1,Tom Neylon,Michael Korobitsen,Tom Neylon,8-5,8,5,1,0,Completed,true,true,true
+AP002042,24 Oct 26,4,Carmelite Blue,BLTC Blue,No. 2,Luc Mascitti,Jarrod Broadbent,Luc Mascitti,8-7,8,7,1,0,Completed,true,false,false
+AP002042,24 Oct 26,4,Carmelite Blue,BLTC Blue,No. 3,Thomas McKay,Macgregor Anderson,Macgregor Anderson,7-8,7,8,0,1,Completed,true,false,false
+AP002042,24 Oct 26,4,Carmelite Blue,BLTC Blue,No. 4,Oliver Kalicin,Chris Preston,Oliver Kalicin,8-5,8,5,1,0,Completed,true,false,true
+AP002043,24 Oct 26,4,BLTC White,Mt Eliza Penins,No. 1,Ibrahim Kibet Yego,Alex McDonald,Alex McDonald,4-8,4,8,0,1,Completed,true,false,false
+AP002043,24 Oct 26,4,BLTC White,Mt Eliza Penins,No. 2,Joshua Fairhurst,John McDonald,Joshua Fairhurst,8-7,8,7,1,0,Completed,true,false,false
+AP002043,24 Oct 26,4,BLTC White,Mt Eliza Penins,No. 3,Matvey Roche,Jack Shurdington,Matvey Roche,8-7,8,7,1,0,Completed,true,false,false
+AP002043,24 Oct 26,4,BLTC White,Mt Eliza Penins,No. 4,Craig Stewart,Enzo Gunther,Enzo Gunther,1-8,1,8,0,1,Completed,true,false,false

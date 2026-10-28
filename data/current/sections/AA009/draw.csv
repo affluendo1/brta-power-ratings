@@ -1,43 +1,57 @@
-draw_id,date,round,stage,round_label,home_team,away_team,fixture_id
-draw-aa009-r1-beaumaris-cc-mentone,18 Jul 26,1,regular,Round 1,Beaumaris CC,Mentone,AA009011
-draw-aa009-r1-kooyong-chelsea-heights,18 Jul 26,1,regular,Round 1,Kooyong,Chelsea Heights,AA009014
-draw-aa009-r1-maccabi-carmelite,18 Jul 26,1,regular,Round 1,Maccabi,Carmelite,AA009012
-draw-aa009-r2-carmelite-ormond,25 Jul 26,2,regular,Round 2,Carmelite,Ormond,AA009023
-draw-aa009-r2-chelsea-heights-beaumaris-cc,25 Jul 26,2,regular,Round 2,Chelsea Heights,Beaumaris CC,AA009021
-draw-aa009-r2-mentone-maccabi,25 Jul 26,2,regular,Round 2,Mentone,Maccabi,AA009022
-draw-aa009-r3-kooyong-carmelite,1 Aug 26,3,regular,Round 3,Kooyong,Carmelite,AA009034
-draw-aa009-r3-maccabi-chelsea-heights,1 Aug 26,3,regular,Round 3,Maccabi,Chelsea Heights,AA009032
-draw-aa009-r3-ormond-mentone,1 Aug 26,3,regular,Round 3,Ormond,Mentone,AA009033
-draw-aa009-r4-carmelite-beaumaris-cc,8 Aug 26,4,regular,Round 4,Carmelite,Beaumaris CC,AA009041
-draw-aa009-r4-chelsea-heights-ormond,8 Aug 26,4,regular,Round 4,Chelsea Heights,Ormond,AA009043
-draw-aa009-r4-mentone-kooyong,8 Aug 26,4,regular,Round 4,Mentone,Kooyong,AA009044
-draw-aa009-r5-beaumaris-cc-maccabi,15 Aug 26,5,regular,Round 5,Beaumaris CC,Maccabi,AA009054
-draw-aa009-r5-carmelite-mentone,15 Aug 26,5,regular,Round 5,Carmelite,Mentone,AA009053
-draw-aa009-r5-ormond-kooyong,15 Aug 26,5,regular,Round 5,Ormond,Kooyong,AA009051
-draw-aa009-r6-kooyong-beaumaris-cc,22 Aug 26,6,regular,Round 6,Kooyong,Beaumaris CC,AA009062
-draw-aa009-r6-maccabi-ormond,22 Aug 26,6,regular,Round 6,Maccabi,Ormond,AA009061
-draw-aa009-r6-mentone-chelsea-heights,22 Aug 26,6,regular,Round 6,Mentone,Chelsea Heights,AA009064
-draw-aa009-r7-beaumaris-cc-ormond,29 Aug 26,7,regular,Round 7,Beaumaris CC,Ormond,AA009071
-draw-aa009-r7-chelsea-heights-carmelite,29 Aug 26,7,regular,Round 7,Chelsea Heights,Carmelite,AA009073
-draw-aa009-r7-maccabi-kooyong,29 Aug 26,7,regular,Round 7,Maccabi,Kooyong,AA009072
-draw-aa009-r8-carmelite-maccabi,5 Sep 26,8,regular,Round 8,Carmelite,Maccabi,pending-aa009-r8-carmelite-maccabi
-draw-aa009-r8-chelsea-heights-kooyong,5 Sep 26,8,regular,Round 8,Chelsea Heights,Kooyong,pending-aa009-r8-chelsea-heights-kooyong
-draw-aa009-r8-mentone-beaumaris-cc,5 Sep 26,8,regular,Round 8,Mentone,Beaumaris CC,AA009081
-draw-aa009-r9-beaumaris-cc-chelsea-heights,12 Sep 26,9,regular,Round 9,Beaumaris CC,Chelsea Heights,AA009091
-draw-aa009-r9-maccabi-mentone,12 Sep 26,9,regular,Round 9,Maccabi,Mentone,pending-aa009-r9-maccabi-mentone
-draw-aa009-r9-ormond-carmelite,12 Sep 26,9,regular,Round 9,Ormond,Carmelite,AA009093
-draw-aa009-r10-carmelite-kooyong,10 Oct 26,10,regular,Round 10,Carmelite,Kooyong,AA009104
-draw-aa009-r10-chelsea-heights-maccabi,10 Oct 26,10,regular,Round 10,Chelsea Heights,Maccabi,AA009102
-draw-aa009-r10-mentone-ormond,10 Oct 26,10,regular,Round 10,Mentone,Ormond,AA009103
-draw-aa009-r11-beaumaris-cc-carmelite,17 Oct 26,11,regular,Round 11,Beaumaris CC,Carmelite,AA009111
-draw-aa009-r11-kooyong-mentone,17 Oct 26,11,regular,Round 11,Kooyong,Mentone,AA009114
-draw-aa009-r11-ormond-chelsea-heights,17 Oct 26,11,regular,Round 11,Ormond,Chelsea Heights,AA009113
-draw-aa009-r12-kooyong-ormond,24 Oct 26,12,regular,Round 12,Kooyong,Ormond,AA009121
-draw-aa009-r12-maccabi-beaumaris-cc,24 Oct 26,12,regular,Round 12,Maccabi,Beaumaris CC,pending-aa009-r12-maccabi-beaumaris-cc
-draw-aa009-r12-mentone-carmelite,24 Oct 26,12,regular,Round 12,Mentone,Carmelite,AA009123
-draw-aa009-r13-beaumaris-cc-kooyong,7 Nov 26,13,regular,Round 13,Beaumaris CC,Kooyong,
-draw-aa009-r13-chelsea-heights-mentone,7 Nov 26,13,regular,Round 13,Chelsea Heights,Mentone,
-draw-aa009-r13-ormond-maccabi,7 Nov 26,13,regular,Round 13,Ormond,Maccabi,
-draw-aa009-r14-carmelite-chelsea-heights,14 Nov 26,14,regular,Round 14,Carmelite,Chelsea Heights,
-draw-aa009-r14-kooyong-maccabi,14 Nov 26,14,regular,Round 14,Kooyong,Maccabi,
-draw-aa009-r14-ormond-beaumaris-cc,14 Nov 26,14,regular,Round 14,Ormond,Beaumaris CC,
+draw_id,date,round,stage,round_label,home_team,away_team,fixture_id,start_time,venue
+draw-aa009-r1-beaumaris-cc-mentone,18 Jul 26,1,regular,Round 1,Beaumaris CC,Mentone,AA009011,8:30,Beaumaris CC
+draw-aa009-r1-kooyong-chelsea-heights,18 Jul 26,1,regular,Round 1,Kooyong,Chelsea Heights,AA009014,8:30,Kooyong
+draw-aa009-r1-maccabi-carmelite,18 Jul 26,1,regular,Round 1,Maccabi,Carmelite,AA009012,8:00,Maccabi
+draw-aa009-r1-ormond-bye,18 Jul 26,1,regular,Round 1,Ormond,Bye,pending-aa009-r1-ormond-bye,10:00,Lauriston
+draw-aa009-r2-bye-kooyong,25 Jul 26,2,regular,Round 2,Bye,Kooyong,pending-aa009-r2-bye-kooyong,,Bye
+draw-aa009-r2-carmelite-ormond,25 Jul 26,2,regular,Round 2,Carmelite,Ormond,AA009023,8:00,Carmelite
+draw-aa009-r2-chelsea-heights-beaumaris-cc,25 Jul 26,2,regular,Round 2,Chelsea Heights,Beaumaris CC,AA009021,8:30,Chelsea Heights
+draw-aa009-r2-mentone-maccabi,25 Jul 26,2,regular,Round 2,Mentone,Maccabi,AA009022,10:00,Mentone
+draw-aa009-r3-beaumaris-cc-bye,1 Aug 26,3,regular,Round 3,Beaumaris CC,Bye,pending-aa009-r3-beaumaris-cc-bye,8:30,Beaumaris CC
+draw-aa009-r3-kooyong-carmelite,1 Aug 26,3,regular,Round 3,Kooyong,Carmelite,AA009034,8:30,Kooyong
+draw-aa009-r3-maccabi-chelsea-heights,1 Aug 26,3,regular,Round 3,Maccabi,Chelsea Heights,AA009032,8:00,Maccabi
+draw-aa009-r3-ormond-mentone,1 Aug 26,3,regular,Round 3,Ormond,Mentone,AA009033,10:00,Lauriston
+draw-aa009-r4-bye-maccabi,8 Aug 26,4,regular,Round 4,Bye,Maccabi,pending-aa009-r4-bye-maccabi,,Bye
+draw-aa009-r4-carmelite-beaumaris-cc,8 Aug 26,4,regular,Round 4,Carmelite,Beaumaris CC,AA009041,8:00,Carmelite
+draw-aa009-r4-chelsea-heights-ormond,8 Aug 26,4,regular,Round 4,Chelsea Heights,Ormond,AA009043,8:30,Chelsea Heights
+draw-aa009-r4-mentone-kooyong,8 Aug 26,4,regular,Round 4,Mentone,Kooyong,AA009044,10:00,Mentone
+draw-aa009-r5-beaumaris-cc-maccabi,15 Aug 26,5,regular,Round 5,Beaumaris CC,Maccabi,AA009054,8:30,Beaumaris CC
+draw-aa009-r5-carmelite-mentone,15 Aug 26,5,regular,Round 5,Carmelite,Mentone,AA009053,8:00,Carmelite
+draw-aa009-r5-chelsea-heights-bye,15 Aug 26,5,regular,Round 5,Chelsea Heights,Bye,pending-aa009-r5-chelsea-heights-bye,8:30,Chelsea Heights
+draw-aa009-r5-ormond-kooyong,15 Aug 26,5,regular,Round 5,Ormond,Kooyong,AA009051,10:00,Lauriston
+draw-aa009-r6-bye-carmelite,22 Aug 26,6,regular,Round 6,Bye,Carmelite,pending-aa009-r6-bye-carmelite,,Bye
+draw-aa009-r6-kooyong-beaumaris-cc,22 Aug 26,6,regular,Round 6,Kooyong,Beaumaris CC,AA009062,8:30,Kooyong
+draw-aa009-r6-maccabi-ormond,22 Aug 26,6,regular,Round 6,Maccabi,Ormond,AA009061,8:00,Maccabi
+draw-aa009-r6-mentone-chelsea-heights,22 Aug 26,6,regular,Round 6,Mentone,Chelsea Heights,AA009064,10:00,Mentone
+draw-aa009-r7-beaumaris-cc-ormond,29 Aug 26,7,regular,Round 7,Beaumaris CC,Ormond,AA009071,8:30,Beaumaris CC
+draw-aa009-r7-bye-mentone,29 Aug 26,7,regular,Round 7,Bye,Mentone,pending-aa009-r7-bye-mentone,,Bye
+draw-aa009-r7-chelsea-heights-carmelite,29 Aug 26,7,regular,Round 7,Chelsea Heights,Carmelite,AA009073,8:30,Chelsea Heights
+draw-aa009-r7-maccabi-kooyong,29 Aug 26,7,regular,Round 7,Maccabi,Kooyong,AA009072,8:00,Maccabi
+draw-aa009-r8-bye-ormond,5 Sep 26,8,regular,Round 8,Bye,Ormond,pending-aa009-r8-bye-ormond,,Bye
+draw-aa009-r8-carmelite-maccabi,5 Sep 26,8,regular,Round 8,Carmelite,Maccabi,pending-aa009-r8-carmelite-maccabi,8:00,Carmelite
+draw-aa009-r8-chelsea-heights-kooyong,5 Sep 26,8,regular,Round 8,Chelsea Heights,Kooyong,pending-aa009-r8-chelsea-heights-kooyong,8:30,Chelsea Heights
+draw-aa009-r8-mentone-beaumaris-cc,5 Sep 26,8,regular,Round 8,Mentone,Beaumaris CC,AA009081,10:00,Mentone
+draw-aa009-r9-beaumaris-cc-chelsea-heights,12 Sep 26,9,regular,Round 9,Beaumaris CC,Chelsea Heights,AA009091,8:30,Beaumaris CC
+draw-aa009-r9-kooyong-bye,12 Sep 26,9,regular,Round 9,Kooyong,Bye,pending-aa009-r9-kooyong-bye,8:30,Kooyong
+draw-aa009-r9-maccabi-mentone,12 Sep 26,9,regular,Round 9,Maccabi,Mentone,pending-aa009-r9-maccabi-mentone,8:00,Maccabi
+draw-aa009-r9-ormond-carmelite,12 Sep 26,9,regular,Round 9,Ormond,Carmelite,AA009093,10:00,Lauriston
+draw-aa009-r10-bye-beaumaris-cc,10 Oct 26,10,regular,Round 10,Bye,Beaumaris CC,pending-aa009-r10-bye-beaumaris-cc,,Bye
+draw-aa009-r10-carmelite-kooyong,10 Oct 26,10,regular,Round 10,Carmelite,Kooyong,AA009104,8:00,Carmelite
+draw-aa009-r10-chelsea-heights-maccabi,10 Oct 26,10,regular,Round 10,Chelsea Heights,Maccabi,AA009102,8:30,Chelsea Heights
+draw-aa009-r10-mentone-ormond,10 Oct 26,10,regular,Round 10,Mentone,Ormond,AA009103,10:00,Mentone
+draw-aa009-r11-beaumaris-cc-carmelite,17 Oct 26,11,regular,Round 11,Beaumaris CC,Carmelite,AA009111,8:30,Beaumaris CC
+draw-aa009-r11-kooyong-mentone,17 Oct 26,11,regular,Round 11,Kooyong,Mentone,AA009114,8:30,Kooyong
+draw-aa009-r11-maccabi-bye,17 Oct 26,11,regular,Round 11,Maccabi,Bye,pending-aa009-r11-maccabi-bye,8:00,Maccabi
+draw-aa009-r11-ormond-chelsea-heights,17 Oct 26,11,regular,Round 11,Ormond,Chelsea Heights,AA009113,10:00,Lauriston
+draw-aa009-r12-bye-chelsea-heights,24 Oct 26,12,regular,Round 12,Bye,Chelsea Heights,pending-aa009-r12-bye-chelsea-heights,,Bye
+draw-aa009-r12-kooyong-ormond,24 Oct 26,12,regular,Round 12,Kooyong,Ormond,AA009121,8:30,Kooyong
+draw-aa009-r12-maccabi-beaumaris-cc,24 Oct 26,12,regular,Round 12,Maccabi,Beaumaris CC,pending-aa009-r12-maccabi-beaumaris-cc,8:00,Maccabi
+draw-aa009-r12-mentone-carmelite,24 Oct 26,12,regular,Round 12,Mentone,Carmelite,AA009123,10:00,Mentone
+draw-aa009-r13-beaumaris-cc-kooyong,7 Nov 26,13,regular,Round 13,Beaumaris CC,Kooyong,,8:30,Beaumaris CC
+draw-aa009-r13-carmelite-bye,7 Nov 26,13,regular,Round 13,Carmelite,Bye,,8:00,Carmelite
+draw-aa009-r13-chelsea-heights-mentone,7 Nov 26,13,regular,Round 13,Chelsea Heights,Mentone,,8:30,Chelsea Heights
+draw-aa009-r13-ormond-maccabi,7 Nov 26,13,regular,Round 13,Ormond,Maccabi,,10:00,Lauriston
+draw-aa009-r14-carmelite-chelsea-heights,14 Nov 26,14,regular,Round 14,Carmelite,Chelsea Heights,,8:00,Carmelite
+draw-aa009-r14-kooyong-maccabi,14 Nov 26,14,regular,Round 14,Kooyong,Maccabi,,8:30,Kooyong
+draw-aa009-r14-mentone-bye,14 Nov 26,14,regular,Round 14,Mentone,Bye,,10:00,Mentone
+draw-aa009-r14-ormond-beaumaris-cc,14 Nov 26,14,regular,Round 14,Ormond,Beaumaris CC,,10:00,Lauriston

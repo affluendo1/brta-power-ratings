@@ -72,15 +72,16 @@
     if(rng()<.18)return target+Math.floor(rng()*4)-1;
     return Math.floor(rng()*(target-1));
   }
-  function matchDistribution(p,{bestOf=1,targetGames=6}={}){
+  function matchDistribution(p,{bestOf=1,targetGames=6,matchTiebreak=true}={}){
     const sets=shortSetDistribution(p,{targetGames});if(bestOf===1)return sets.map(r=>({...r,homeSets:Number(r.homeWin),awaySets:Number(!r.homeWin)}));
     const grouped=new Map(),add=(homeSets,awaySets,margin,probability)=>{const key=[homeSets,awaySets,margin].join(':');if(!grouped.has(key))grouped.set(key,{homeWin:homeSets>awaySets,homeSets,awaySets,margin,probability:0});grouped.get(key).probability+=probability;};
-    for(const first of sets)for(const second of sets){const hs=Number(first.homeWin)+Number(second.homeWin),margin=first.margin+second.margin,probability=first.probability*second.probability;if(hs===2)add(2,0,margin,probability);else if(hs===0)add(0,2,margin,probability);else{add(2,1,margin,probability*p);add(1,2,margin,probability*(1-p));}}
+    for(const first of sets)for(const second of sets){const hs=Number(first.homeWin)+Number(second.homeWin),margin=first.margin+second.margin,probability=first.probability*second.probability;if(hs===2)add(2,0,margin,probability);else if(hs===0)add(0,2,margin,probability);else if(matchTiebreak){add(2,1,margin,probability*p);add(1,2,margin,probability*(1-p));}else for(const third of sets)add(third.homeWin?2:1,third.homeWin?1:2,margin+third.margin,probability*third.probability);}
     return [...grouped.values()];
   }
   function sampleConfiguredRubber(rubber,rng){
     const p=clamp01(rubber.gameProbability),options={targetGames:rubber.targetGames||6,rng},sets=[sampleSet(p,options)];if(rubber.bestOf===3)sets.push(sampleSet(p,options));let homeSets=sets.filter(s=>s.homeWon).length,awaySets=sets.length-homeSets;const scores=sets.map(s=>s.score);
-    if(rubber.bestOf===3&&homeSets===1){const homeWon=rng()<p,loser=sampleTiebreakLoserPoints(10,rng),winner=Math.max(10,loser+2);scores.push(homeWon?'['+winner+'-'+loser+']':'['+loser+'-'+winner+']');homeSets+=Number(homeWon);awaySets+=Number(!homeWon);}
+    if(rubber.bestOf===3&&homeSets===1&&rubber.matchTiebreak===false){const third=sampleSet(p,options);sets.push(third);scores.push(third.score);homeSets+=Number(third.homeWon);awaySets+=Number(!third.homeWon)}
+    if(rubber.bestOf===3&&homeSets===1&&awaySets===1){const homeWon=rng()<p,loser=sampleTiebreakLoserPoints(10,rng),winner=Math.max(10,loser+2);scores.push(homeWon?'['+winner+'-'+loser+']':'['+loser+'-'+winner+']');homeSets+=Number(homeWon);awaySets+=Number(!homeWon);}
     return {...rubber,homeWon:homeSets>awaySets,score:scores.join(' '),homeGames:sets.reduce((n,s)=>n+s.homeGames,0),awayGames:sets.reduce((n,s)=>n+s.awayGames,0),homeSets,awaySets};
   }
   function sampleRubber(rubber,{format='sets',greenBall=false,rng=Math.random}={}){
@@ -109,13 +110,13 @@
       homeGames:first.homeGames+second.homeGames,awayGames:first.awayGames+second.awayGames,
       homeSets,awaySets};
   }
-  function simulateTie(rubbers,{format='sets',greenBall=false,custom=false,rng=Math.random}={}){
+  function simulateTie(rubbers,{format='sets',greenBall=false,custom=false,setWinsDecideTies=false,rng=Math.random}={}){
     const results=rubbers.map(r=>sampleRubber(r,{format,greenBall,rng}));
     const homeRubbers=results.filter(r=>r.homeWon).length,awayRubbers=results.length-homeRubbers;
     const homeGames=results.reduce((n,r)=>n+r.homeGames,0),awayGames=results.reduce((n,r)=>n+r.awayGames,0);
     const homeSets=results.reduce((n,r)=>n+r.homeSets,0),awaySets=results.reduce((n,r)=>n+r.awaySets,0);
     // Sets ties use rubber wins, then games. Rubbers has three rubbers.
-    const decidingHome=custom&&format==='rubbers'?homeSets:homeRubbers,decidingAway=custom&&format==='rubbers'?awaySets:awayRubbers;
+    const bySets=setWinsDecideTies||custom&&format==='rubbers',decidingHome=bySets?homeSets:homeRubbers,decidingAway=bySets?awaySets:awayRubbers;
     const winner=decidingHome>decidingAway?1:decidingAway>decidingHome?-1:
       homeGames>awayGames?1:awayGames>homeGames?-1:0;
     const base=format==='rubbers'?(custom?1:2):4,drawBase=base/2,homeScore=custom&&format!=='rubbers'?homeRubbers:homeSets,awayScore=custom&&format!=='rubbers'?awayRubbers:awaySets;

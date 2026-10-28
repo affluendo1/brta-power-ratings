@@ -1,0 +1,33 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP001021,10 Oct 26,2,Altona Blue,Altona Black,No. 1,Ben Thompson-star,Aleks Jankovic,Ben Thompson-star,8-3,8,3,1,0,Completed,true,false,false
+AP001021,10 Oct 26,2,Altona Blue,Altona Black,No. 2,Matthew Poole,Alex Milanese,Alex Milanese,6-8,6,8,0,1,Completed,true,false,false
+AP001021,10 Oct 26,2,Altona Blue,Altona Black,No. 3,Ben Britton,Heming Hu,Ben Britton,8-3,8,3,1,0,Completed,true,false,true
+AP001021,10 Oct 26,2,Altona Blue,Altona Black,No. 4,David Tan,Xavier Tresidder,Xavier Tresidder,4-8,4,8,0,1,Completed,true,true,true
+AP001022,10 Oct 26,2,Essendon,Buckley Park,No. 1,Zach Ranson,Christian Williams,Christian Williams,0-8,0,8,0,1,Completed,true,false,false
+AP001022,10 Oct 26,2,Essendon,Buckley Park,No. 2,Arya Sharma,Andrew Kotnik,Andrew Kotnik,6-8,6,8,0,1,Completed,true,false,false
+AP001022,10 Oct 26,2,Essendon,Buckley Park,No. 3,Riley Fegan,Leon Suljovic,Leon Suljovic,5-8,5,8,0,1,Completed,true,false,false
+AP001022,10 Oct 26,2,Essendon,Buckley Park,No. 4,Matthew Conroy,Yuri Mijic,Yuri Mijic,7-8,7,8,0,1,Completed,true,false,true
+AP001023,10 Oct 26,2,Liston,Altona Gold,No. 1,Angelantonio Errico,Ben Reese,Angelantonio Errico,8-6,8,6,1,0,Completed,true,false,false
+AP001023,10 Oct 26,2,Liston,Altona Gold,No. 2,Noah Kurti,Grant Thompson,Noah Kurti,8-4,8,4,1,0,Completed,true,true,false
+AP001023,10 Oct 26,2,Liston,Altona Gold,No. 3,Lemuel Sanheeth Alladi,Isai Torres,Lemuel Sanheeth Alladi,8-3,8,3,1,0,Completed,true,true,true
+AP001023,10 Oct 26,2,Liston,Altona Gold,No. 4,Jayden Stewart,Henry Hoult,Jayden Stewart,8-7,8,7,1,0,Completed,true,true,true
+AP001031,17 Oct 26,3,Altona Black,Altona Gold,No. 1,Marcus Newnham,Carlin Grant,Marcus Newnham,8-0,8,0,1,0,Completed,true,false,false
+AP001031,17 Oct 26,3,Altona Black,Altona Gold,No. 2,Aleks Jankovic,Luke Treveil,Luke Treveil,6-8,6,8,0,1,Completed,true,false,false
+AP001031,17 Oct 26,3,Altona Black,Altona Gold,No. 3,Alex Milanese,Henry Hoult,Alex Milanese,8-0,8,0,1,0,Completed,true,false,true
+AP001031,17 Oct 26,3,Altona Black,Altona Gold,No. 4,Xavier Tresidder,Nick Metz,Xavier Tresidder,8-3,8,3,1,0,Completed,true,true,true
+AP001032,17 Oct 26,3,Buckley Park,Liston,No. 1,Christian Williams,Noah Kurti,Christian Williams,8-3,8,3,1,0,Completed,true,false,true
+AP001032,17 Oct 26,3,Buckley Park,Liston,No. 2,Andrew Kotnik,Lemuel Sanheeth Alladi,Lemuel Sanheeth Alladi,6-8,6,8,0,1,Completed,true,false,true
+AP001032,17 Oct 26,3,Buckley Park,Liston,No. 3,Leon Suljovic,Jayden Stewart,Leon Suljovic,8-3,8,3,1,0,Completed,true,false,true
+AP001032,17 Oct 26,3,Buckley Park,Liston,No. 4,Piet Van Der Lans,Andrew Protopapas,Piet Van Der Lans,8-4,8,4,1,0,Completed,true,false,true
+AP001033,17 Oct 26,3,Altona Blue,Essendon,No. 1,Jack Walker,Matthew Conroy,Jack Walker,8-3,8,3,1,0,Completed,true,false,false
+AP001033,17 Oct 26,3,Altona Blue,Essendon,No. 2,Matthew Poole,Rhys Collins,Matthew Poole,8-7,8,7,1,0,Completed,true,false,false
+AP001033,17 Oct 26,3,Altona Blue,Essendon,No. 3,Ben Britton,Harshul Jhanwar,Harshul Jhanwar,1-8,1,8,0,1,Completed,true,false,true
+AP001033,17 Oct 26,3,Altona Blue,Essendon,No. 4,David Tan,Surya Vijayakumar,David Tan,8-2,8,2,1,0,Completed,true,true,true
+AP001041,24 Oct 26,4,Essendon,Altona Black,No. 1,Arya Sharma,Aleks Jankovic,Aleks Jankovic,2-8,2,8,0,1,Completed,true,false,false
+AP001041,24 Oct 26,4,Essendon,Altona Black,No. 2,Riley Fegan,Richard Dodson,Riley Fegan,8-5,8,5,1,0,Completed,true,false,true
+AP001041,24 Oct 26,4,Essendon,Altona Black,No. 3,Matthew Conroy,Mark Separovic,Matthew Conroy,8-1,8,1,1,0,Completed,true,false,false
+AP001041,24 Oct 26,4,Essendon,Altona Black,No. 4,Harshul Jhanwar,Aditya Saini,Harshul Jhanwar,8-0,8,0,1,0,Completed,true,true,true
+AP001042,24 Oct 26,4,Liston,Altona Blue,No. 1,Noah Kurti,Ben Thompson-star,Noah Kurti,8-4,8,4,1,0,Completed,true,true,false
+AP001042,24 Oct 26,4,Liston,Altona Blue,No. 2,Lemuel Sanheeth Alladi,Ben Britton,Lemuel Sanheeth Alladi,8-3,8,3,1,0,Completed,true,true,false
+AP001042,24 Oct 26,4,Liston,Altona Blue,No. 3,Ronan Sweeney,Daniel Micevski,Ronan Sweeney,8-0,8,0,1,0,Completed,true,true,true
+AP001042,24 Oct 26,4,Liston,Altona Blue,No. 4,Isaac Yacoub,David Tan,Isaac Yacoub,8-1,8,1,1,0,Completed,true,true,true

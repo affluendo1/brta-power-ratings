@@ -1,0 +1,122 @@
+{
+  "competition_code": "TN",
+  "competition_label": "Tuesday Night - Spring 2026",
+  "season_id": "TN41",
+  "season_label": "Spring 2026",
+  "section_code": "TN003",
+  "section_label": "Section 3",
+  "format": "sets",
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 6,
+    "doublesBestOf": 1,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "calendar_breaks": [
+    {
+      "date": "22 Sep 26",
+      "label": "No Play",
+      "source": "https://www.trols.org.au/brta/fixture.php"
+    },
+    {
+      "date": "29 Sep 26",
+      "label": "No Play",
+      "source": "https://www.trols.org.au/brta/fixture.php"
+    },
+    {
+      "date": "3 Nov 26",
+      "label": "No Play",
+      "source": "https://www.trols.org.au/brta/fixture.php"
+    }
+  ],
+  "calendar_events": [
+    {
+      "date": "24 Nov 26",
+      "label": "Semi Final \u00b7 if qualified"
+    },
+    {
+      "date": "1 Dec 26",
+      "label": "Grand Final \u00b7 if qualified"
+    },
+    {
+      "date": "8 Dec 26",
+      "label": "Spare \u00b7 if required"
+    }
+  ],
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "St James Redlegs",
+      "wins": 6,
+      "points": 65,
+      "percentage": 125.38,
+      "marker": ""
+    },
+    {
+      "position": 2,
+      "team": "Keysborough KeysyComeKGo",
+      "wins": 5,
+      "points": 61,
+      "percentage": 128.48,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Basterfield Park Basterfield",
+      "wins": 5,
+      "points": 57.5,
+      "percentage": 131.03,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "BLTC Tornadoes",
+      "wins": 4,
+      "points": 42,
+      "percentage": 89.53,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Maccabi Magicians",
+      "wins": 2,
+      "points": 41.5,
+      "percentage": 89.33,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Hurlingham Park HPSauce",
+      "wins": 2,
+      "points": 32,
+      "percentage": 84.65,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Middle Brighton Warriors",
+      "wins": 2,
+      "points": 31,
+      "percentage": 73.06,
+      "marker": ""
+    }
+  ],
+  "green_ball": false,
+  "results_loaded_by_trols": null,
+  "fixtures": 44,
+  "completed_fixtures": 29,
+  "draw_fixtures": 56,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 164,
+  "latest_round": 11,
+  "validation": "source discrepancies",
+  "source_warnings": [
+    "Incomplete TROLS score for TN003083 doubles No. 1: '1-0'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

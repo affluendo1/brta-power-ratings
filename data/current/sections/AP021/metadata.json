@@ -1,0 +1,98 @@
+{
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 2026/27",
+  "season_id": "AP53",
+  "season_label": "Summer 2026/27",
+  "section_code": "AP021",
+  "section_label": "Womens Rubs 1",
+  "format": "sets",
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "calendar_breaks": [
+    {
+      "date": "31 Oct 26",
+      "label": "No Play",
+      "source": "https://www.trols.org.au/brta/fixture.php"
+    }
+  ],
+  "calendar_events": [
+    {
+      "date": "13 Mar 27",
+      "label": "Grand Final \u00b7 if qualified"
+    },
+    {
+      "date": "20 Mar 27",
+      "label": "Spare \u00b7 if required"
+    }
+  ],
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "St Louis de Mont",
+      "wins": 3,
+      "points": 23,
+      "percentage": 111.86,
+      "marker": ""
+    },
+    {
+      "position": 2,
+      "team": "Kooyong",
+      "wins": 2,
+      "points": 20,
+      "percentage": 164.79,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Hurlingham Park",
+      "wins": 1,
+      "points": 20,
+      "percentage": 148.91,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Fitzroy",
+      "wins": 1,
+      "points": 14,
+      "percentage": 85.07,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Legend Park",
+      "wins": 1,
+      "points": 12,
+      "percentage": 96.24,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Port Melbourne",
+      "wins": 0,
+      "points": 6,
+      "percentage": 44.44,
+      "marker": ""
+    }
+  ],
+  "green_ball": false,
+  "results_loaded_by_trols": null,
+  "fixtures": 12,
+  "completed_fixtures": 9,
+  "draw_fixtures": 45,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 36,
+  "latest_round": 4,
+  "validation": "passed",
+  "source_warnings": []
+}
