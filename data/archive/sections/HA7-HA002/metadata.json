@@ -1,0 +1,87 @@
+{
+  "asset_id": "HA7-HA002",
+  "competition_code": "HA",
+  "competition_label": "Thursday AM - Spring 2011",
+  "season_id": "HA7",
+  "season_label": "Spring 2011",
+  "source_section_code": "HA002",
+  "section_label": "Section 1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Hampton",
+      "wins": 10,
+      "points": 86,
+      "percentage": 143.15,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "Glen Iris Valley",
+      "wins": 10,
+      "points": 85,
+      "percentage": 129.09,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "East Malvern 1",
+      "wins": 10,
+      "points": 79,
+      "percentage": 123.12,
+      "marker": "P"
+    },
+    {
+      "position": 4,
+      "team": "Elwood",
+      "wins": 7,
+      "points": 64,
+      "percentage": 101.36,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "St Pauls",
+      "wins": 3,
+      "points": 41,
+      "percentage": 84.79,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "East Malvern 2",
+      "wins": 0,
+      "points": 5,
+      "percentage": 46.69,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "HA7-HA002",
+  "fixtures": 47,
+  "completed_fixtures": 45,
+  "draw_fixtures": 57,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 178,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

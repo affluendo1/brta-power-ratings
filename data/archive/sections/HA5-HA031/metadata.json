@@ -1,0 +1,89 @@
+{
+  "asset_id": "HA5-HA031",
+  "competition_code": "HA",
+  "competition_label": "Thursday AM - Spring 2010",
+  "season_id": "HA5",
+  "season_label": "Spring 2010",
+  "source_section_code": "HA031",
+  "section_label": "Section 1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "East Malvern 1",
+      "wins": 0,
+      "points": 93,
+      "percentage": 141.16,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "Hurlingham Park",
+      "wins": 0,
+      "points": 82.5,
+      "percentage": 127.9,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Elwood",
+      "wins": 0,
+      "points": 72,
+      "percentage": 118.83,
+      "marker": "P"
+    },
+    {
+      "position": 4,
+      "team": "Kooyong",
+      "wins": 0,
+      "points": 62,
+      "percentage": 107.53,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "St Pauls",
+      "wins": 0,
+      "points": 33,
+      "percentage": 75.2,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "East Malvern 2",
+      "wins": 0,
+      "points": 17.5,
+      "percentage": 50.0,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "HA5-HA031",
+  "fixtures": 47,
+  "completed_fixtures": 43,
+  "draw_fixtures": 1,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 169,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for HA031321 doubles No. 4: '6-4 4-4'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

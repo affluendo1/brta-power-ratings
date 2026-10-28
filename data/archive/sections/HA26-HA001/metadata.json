@@ -1,0 +1,81 @@
+{
+  "asset_id": "HA26-HA001",
+  "competition_code": "HA",
+  "competition_label": "Thursday AM - Spring 2020",
+  "season_id": "HA26",
+  "season_label": "Spring 2020",
+  "source_section_code": "HA001",
+  "section_label": "Section A1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Eaglemont",
+      "wins": 2,
+      "points": 21,
+      "percentage": 113.79,
+      "marker": ""
+    },
+    {
+      "position": 2,
+      "team": "Kooyong Purple",
+      "wins": 2,
+      "points": 19,
+      "percentage": 108.81,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Kooyong Green",
+      "wins": 2,
+      "points": 16,
+      "percentage": 107.32,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Kooyong Yellow",
+      "wins": 2,
+      "points": 16,
+      "percentage": 104.49,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Glen Waverley",
+      "wins": 1,
+      "points": 8,
+      "percentage": 71.96,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "HA26-HA001",
+  "fixtures": 15,
+  "completed_fixtures": 10,
+  "draw_fixtures": 45,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 40,
+  "latest_round": 5,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for HA001023 doubles No. 3: '6-1 3-0'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

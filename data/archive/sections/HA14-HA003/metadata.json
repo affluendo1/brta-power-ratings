@@ -1,0 +1,111 @@
+{
+  "asset_id": "HA14-HA003",
+  "competition_code": "HA",
+  "competition_label": "Thursday AM - Autumn 2015",
+  "season_id": "HA14",
+  "season_label": "Autumn 2015",
+  "source_section_code": "HA003",
+  "section_label": "Section 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Caulfield Rec",
+      "wins": 11,
+      "points": 83,
+      "percentage": 134.25,
+      "marker": ""
+    },
+    {
+      "position": 2,
+      "team": "St Finbar's 2",
+      "wins": 10,
+      "points": 82,
+      "percentage": 140.6,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "St Finbar's 1",
+      "wins": 10,
+      "points": 80,
+      "percentage": 134.12,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Albert Park",
+      "wins": 7,
+      "points": 61,
+      "percentage": 113.57,
+      "marker": "P"
+    },
+    {
+      "position": 5,
+      "team": "Belvedere Park",
+      "wins": 4,
+      "points": 43.5,
+      "percentage": 80.38,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Dendy Park",
+      "wins": 3,
+      "points": 38.5,
+      "percentage": 86.94,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Basterfield Park",
+      "wins": 3,
+      "points": 31.5,
+      "percentage": 69.98,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "Mentone",
+      "wins": 2,
+      "points": 28.5,
+      "percentage": 66.08,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "HA14-HA003",
+  "fixtures": 60,
+  "completed_fixtures": 57,
+  "draw_fixtures": 49,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 222,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for HA003074 doubles No. 3: '3-6 7-5'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for HA003123 doubles No. 4: '6-1 2-6 1-1'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for HA003124 doubles No. 1: '7-5 4-1'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for HA003131 doubles No. 1: '6-3 2-3'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for HA003131 doubles No. 2: '6-4 1-0'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for HA003134 doubles No. 1: '2-6 5-3'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for HA003134 doubles No. 2: '6-4 4-2'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

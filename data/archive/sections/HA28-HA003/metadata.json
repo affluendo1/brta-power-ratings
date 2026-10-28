@@ -1,0 +1,95 @@
+{
+  "asset_id": "HA28-HA003",
+  "competition_code": "HA",
+  "competition_label": "Thursday AM - Spring 2021",
+  "season_id": "HA28",
+  "season_label": "Spring 2021",
+  "source_section_code": "HA003",
+  "section_label": "Section 3",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Kooyong Purple",
+      "wins": 2,
+      "points": 34,
+      "percentage": 139.62,
+      "marker": ""
+    },
+    {
+      "position": 2,
+      "team": "Albert Park",
+      "wins": 2,
+      "points": 31,
+      "percentage": 95.1,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Kooyong Green",
+      "wins": 1,
+      "points": 30,
+      "percentage": 105.19,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Beaumaris CC",
+      "wins": 1,
+      "points": 28,
+      "percentage": 88.89,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Elwood",
+      "wins": 1,
+      "points": 25,
+      "percentage": 90.91,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Black Rock",
+      "wins": 1,
+      "points": 23,
+      "percentage": 112.22,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "St James",
+      "wins": 0,
+      "points": 21,
+      "percentage": 77.17,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "HA28-HA003",
+  "fixtures": 36,
+  "completed_fixtures": 12,
+  "draw_fixtures": 45,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 36,
+  "latest_round": 9,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

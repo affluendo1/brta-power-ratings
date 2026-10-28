@@ -1,0 +1,106 @@
+{
+  "asset_id": "HA33-HA003",
+  "competition_code": "HA",
+  "competition_label": "Thursday AM - Autumn 2024",
+  "season_id": "HA33",
+  "season_label": "Autumn 2024",
+  "source_section_code": "HA003",
+  "section_label": "Section 3",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Wattle",
+      "wins": 14,
+      "points": 106,
+      "percentage": 190.37,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "BLTC",
+      "wins": 10,
+      "points": 86,
+      "percentage": 184.64,
+      "marker": "P"
+    },
+    {
+      "position": 3,
+      "team": "Black Rock Maroon",
+      "wins": 11,
+      "points": 84,
+      "percentage": 141.59,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Kooyong Purple",
+      "wins": 8,
+      "points": 60,
+      "percentage": 100.96,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Mentone",
+      "wins": 5,
+      "points": 44,
+      "percentage": 89.08,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Carmelite Pink",
+      "wins": 5,
+      "points": 42,
+      "percentage": 78.21,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Hawksburn Purple",
+      "wins": 1,
+      "points": 15,
+      "percentage": 46.76,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "Black Rock Navy",
+      "wins": 0,
+      "points": 11,
+      "percentage": 57.4,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "HA33-HA003",
+  "fixtures": 59,
+  "completed_fixtures": 57,
+  "draw_fixtures": 48,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 224,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for HA003302 doubles No. 3: '4-6 6-3'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for HA003321 doubles No. 3: '6-2 0-6'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

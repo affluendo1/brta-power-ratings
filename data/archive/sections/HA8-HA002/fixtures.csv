@@ -1,0 +1,48 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+HA002011,09 Feb 12,1,regular,Round 1,Elwood,St Pauls,6,2,4,4,,,36,34,Completed,
+HA002012,09 Feb 12,1,regular,Round 1,Kooyong 1,Beaumaris CC,8,0,8,0,,,48,9,Completed,
+HA002013,09 Feb 12,1,regular,Round 1,Black Rock,Kooyong 2,6,2,5,4,,,35,41,Completed,
+HA002021,16 Feb 12,2,regular,Round 2,Kooyong 2,Elwood,1,7,2,7,,,33,52,Completed,
+HA002022,16 Feb 12,2,regular,Round 2,Beaumaris CC,Black Rock,6,2,5,5,,,51,50,Completed,
+HA002023,16 Feb 12,2,regular,Round 2,St Pauls,Kooyong 1,1,7,3,6,,,35,43,Completed,
+HA002031,23 Feb 12,3,regular,Round 3,Elwood,Kooyong 1,6,2,5,4,,,45,40,Completed,
+HA002032,23 Feb 12,3,regular,Round 3,Black Rock,St Pauls,0,8,0,8,,,7,48,Completed,
+HA002033,23 Feb 12,3,regular,Round 3,Kooyong 2,Beaumaris CC,8,0,8,1,,,53,24,Completed,
+HA002041,01 Mar 12,4,regular,Round 4,Beaumaris CC,Elwood,0.5,7.5,0,6,,,7,38,Completed,
+pending-ha002-r4-kooyong-1-black-rock,01 Mar 12,4,regular,Round 4,Kooyong 1,Black Rock,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha002-r4-st-pauls-kooyong-2,01 Mar 12,4,regular,Round 4,St Pauls,Kooyong 2,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+HA002051,08 Mar 12,5,regular,Round 5,Elwood,Black Rock,8,0,8,1,,,50,24,Completed,
+HA002052,08 Mar 12,5,regular,Round 5,Beaumaris CC,St Pauls,1,7,2,7,,,29,52,Completed,
+HA002053,08 Mar 12,5,regular,Round 5,Kooyong 2,Kooyong 1,0,8,1,8,,,27,55,Completed,
+HA002061,15 Mar 12,6,regular,Round 6,St Pauls,Elwood,2,6,5,5,,,40,43,Completed,
+HA002062,15 Mar 12,6,regular,Round 6,Beaumaris CC,Kooyong 1,0,8,0,8,,,15,48,Completed,
+pending-ha002-r6-kooyong-2-black-rock,15 Mar 12,6,regular,Round 6,Kooyong 2,Black Rock,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+HA002071,22 Mar 12,7,regular,Round 7,Elwood,Kooyong 2,8,0,8,1,,,52,23,Completed,
+HA002072,22 Mar 12,7,regular,Round 7,Black Rock,Beaumaris CC,0,8,1,8,,,32,51,Completed,
+HA002073,22 Mar 12,7,regular,Round 7,Kooyong 1,St Pauls,7,1,6,2,,,47,29,Completed,
+HA002081,29 Mar 12,8,regular,Round 8,Kooyong 1,Elwood,1,7,3,6,,,25,47,Completed,
+HA002082,29 Mar 12,8,regular,Round 8,St Pauls,Black Rock,8,0,8,0,,,48,8,Completed,
+HA002083,29 Mar 12,8,regular,Round 8,Beaumaris CC,Kooyong 2,1,7,2,6,,,28,44,Completed,
+HA002091,19 Apr 12,9,regular,Round 9,Elwood,Beaumaris CC,7,1,7,2,,,43,26,Completed,
+HA002092,19 Apr 12,9,regular,Round 9,Kooyong 2,St Pauls,1,7,4,6,,,40,51,Completed,
+HA002093,19 Apr 12,9,regular,Round 9,Black Rock,Kooyong 1,0,8,0,8,,,11,48,Completed,
+HA002101,26 Apr 12,10,regular,Round 10,Black Rock,Elwood,0,8,0,8,,,13,49,Completed,
+HA002103,26 Apr 12,10,regular,Round 10,Kooyong 1,Kooyong 2,8,0,8,0,,,48,12,Completed,
+pending-ha002-r10-st-pauls-beaumaris-cc,26 Apr 12,10,regular,Round 10,St Pauls,Beaumaris CC,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha002-r11-black-rock-kooyong-2,03 May 12,11,regular,Round 11,Black Rock,Kooyong 2,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha002-r11-elwood-st-pauls,03 May 12,11,regular,Round 11,Elwood,St Pauls,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha002-r11-kooyong-1-beaumaris-cc,03 May 12,11,regular,Round 11,Kooyong 1,Beaumaris CC,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+HA002121,10 May 12,12,regular,Round 12,Kooyong 2,Elwood,0,8,0,8,,,19,48,Completed,
+HA002122,10 May 12,12,regular,Round 12,Beaumaris CC,Black Rock,1,7,2,6,,,20,45,Completed,
+HA002123,10 May 12,12,regular,Round 12,St Pauls,Kooyong 1,0,8,0,8,,,22,48,Completed,
+HA002131,17 May 12,13,regular,Round 13,Elwood,Kooyong 1,2,6,5,5,,,44,45,Completed,
+HA002132,17 May 12,13,regular,Round 13,Black Rock,St Pauls,1,7,3,7,,,29,54,Completed,
+HA002133,17 May 12,13,regular,Round 13,Kooyong 2,Beaumaris CC,8,0,8,1,,,50,32,Completed,
+HA002141,24 May 12,14,regular,Round 14,Beaumaris CC,Elwood,1,7,2,6,,,28,43,Completed,
+HA002142,24 May 12,14,regular,Round 14,St Pauls,Kooyong 2,8,0,8,1,,,51,18,Completed,
+HA002143,24 May 12,14,regular,Round 14,Kooyong 1,Black Rock,8,0,8,0,,,49,15,Completed,
+HA002151,31 May 12,15,regular,Round 15,Elwood,Black Rock,6,2,5,4,,,43,37,Completed,
+HA002152,31 May 12,15,regular,Round 15,Beaumaris CC,St Pauls,0,8,1,8,,,22,50,Completed,
+HA002153,31 May 12,15,regular,Round 15,Kooyong 2,Kooyong 1,1,7,3,7,,,37,52,Completed,
+HA002311,31 May 12,15,regular,Round 15,Kooyong 1,St Pauls,7,1,7,4,,,60,43,Completed,
+HA002321,,16,grand_final,Grand final · TROLS entry 2,Elwood,Kooyong 1,0.5,7.5,1,6,,,33,44,Completed,

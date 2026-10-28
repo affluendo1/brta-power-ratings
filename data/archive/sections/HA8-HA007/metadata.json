@@ -1,0 +1,87 @@
+{
+  "asset_id": "HA8-HA007",
+  "competition_code": "HA",
+  "competition_label": "Thursday AM - Autumn 2012",
+  "season_id": "HA8",
+  "season_label": "Autumn 2012",
+  "source_section_code": "HA007",
+  "section_label": "Section 6",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "East Malvern 1",
+      "wins": 11,
+      "points": 91,
+      "percentage": 152.74,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Chelsea Lawn",
+      "wins": 10,
+      "points": 84,
+      "percentage": 117.47,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Sth Hawthorn",
+      "wins": 8,
+      "points": 68,
+      "percentage": 108.58,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "East Malvern 2",
+      "wins": 7,
+      "points": 60,
+      "percentage": 95.09,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Glen Huntly",
+      "wins": 2,
+      "points": 38,
+      "percentage": 90.09,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Mentone",
+      "wins": 0,
+      "points": 19,
+      "percentage": 58.84,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "HA8-HA007",
+  "fixtures": 47,
+  "completed_fixtures": 41,
+  "draw_fixtures": 1,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 164,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

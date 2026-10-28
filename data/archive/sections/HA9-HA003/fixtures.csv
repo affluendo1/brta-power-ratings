@@ -1,0 +1,48 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+HA003011,26 Jul 12,1,regular,Round 1,Oakleigh,Pearcedale,6,2,4,4,,,38,35,Completed,
+HA003012,26 Jul 12,1,regular,Round 1,St Finbar's 1,Albert Park,6,2,4,4,,,35,32,Completed,
+HA003013,26 Jul 12,1,regular,Round 1,Mentone,St Finbar's 2,6,2,5,5,,,53,49,Completed,
+HA003021,02 Aug 12,2,regular,Round 2,St Finbar's 2,Oakleigh,8,0,8,1,,,53,30,Completed,
+HA003022,02 Aug 12,2,regular,Round 2,Albert Park,Mentone,4,4,4,4,,,31,31,Completed,
+HA003023,02 Aug 12,2,regular,Round 2,Pearcedale,St Finbar's 1,6,2,5,5,,,49,42,Completed,
+HA003033,09 Aug 12,3,regular,Round 3,St Finbar's 2,Albert Park,4,4,0,0,,,3,4,Completed,
+pending-ha003-r3-mentone-pearcedale,09 Aug 12,3,regular,Round 3,Mentone,Pearcedale,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha003-r3-oakleigh-st-finbar-s-1,09 Aug 12,3,regular,Round 3,Oakleigh,St Finbar's 1,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+HA003041,16 Aug 12,4,regular,Round 4,Albert Park,Oakleigh,8,0,8,0,,,50,27,Completed,
+HA003042,16 Aug 12,4,regular,Round 4,Pearcedale,St Finbar's 2,6,2,5,4,,,46,37,Completed,
+HA003043,16 Aug 12,4,regular,Round 4,St Finbar's 1,Mentone,7,1,6,2,,,44,29,Completed,
+HA003051,23 Aug 12,5,regular,Round 5,Oakleigh,Mentone,6,2,6,5,,,47,50,Completed,
+HA003052,23 Aug 12,5,regular,Round 5,Albert Park,Pearcedale,1,7,4,7,,,47,54,Completed,
+HA003053,23 Aug 12,5,regular,Round 5,St Finbar's 2,St Finbar's 1,6,2,6,6,,,54,46,Completed,
+HA003061,30 Aug 12,6,regular,Round 6,Pearcedale,Oakleigh,8,0,8,0,,,48,20,Completed,
+HA003062,30 Aug 12,6,regular,Round 6,Albert Park,St Finbar's 1,1,7,3,7,,,39,45,Completed,
+HA003063,30 Aug 12,6,regular,Round 6,St Finbar's 2,Mentone,6,2,5,4,,,50,37,Completed,
+HA003071,06 Sep 12,7,regular,Round 7,Oakleigh,St Finbar's 2,2,6,4,4,,,30,37,Completed,
+HA003072,06 Sep 12,7,regular,Round 7,Mentone,Albert Park,7,1,7,2,,,49,29,Completed,
+HA003073,06 Sep 12,7,regular,Round 7,St Finbar's 1,Pearcedale,6,2,6,4,,,48,39,Completed,
+HA003081,13 Sep 12,8,regular,Round 8,St Finbar's 1,Oakleigh,5,3,4,1,,,29,15,Completed,
+HA003083,13 Sep 12,8,regular,Round 8,Albert Park,St Finbar's 2,3.5,4.5,1,3,,,19,26,Completed,
+pending-ha003-r8-pearcedale-mentone,13 Sep 12,8,regular,Round 8,Pearcedale,Mentone,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+HA003091,20 Sep 12,9,regular,Round 9,Oakleigh,Albert Park,2,6,4,5,,,35,40,Completed,
+HA003092,20 Sep 12,9,regular,Round 9,St Finbar's 2,Pearcedale,8,0,8,1,,,51,35,Completed,
+HA003093,20 Sep 12,9,regular,Round 9,Mentone,St Finbar's 1,6,2,5,4,,,39,40,Completed,
+HA003101,11 Oct 12,10,regular,Round 10,Mentone,Oakleigh,4,4,3,3,,,33,27,Completed,
+HA003102,11 Oct 12,10,regular,Round 10,Pearcedale,Albert Park,4,4,1,0,,,11,5,Completed,
+pending-ha003-r10-st-finbar-s-1-st-finbar-s-2,11 Oct 12,10,regular,Round 10,St Finbar's 1,St Finbar's 2,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+HA003111,18 Oct 12,11,regular,Round 11,Oakleigh,Pearcedale,1,7,4,6,,,37,48,Completed,
+HA003112,18 Oct 12,11,regular,Round 11,St Finbar's 1,Albert Park,2,6,4,5,,,41,45,Completed,
+HA003113,18 Oct 12,11,regular,Round 11,Mentone,St Finbar's 2,6,2,5,4,,,46,36,Completed,
+HA003121,25 Oct 12,12,regular,Round 12,St Finbar's 2,Oakleigh,8,0,8,0,,,49,26,Completed,
+HA003122,25 Oct 12,12,regular,Round 12,Albert Park,Mentone,7,1,6,2,,,41,29,Completed,
+HA003123,25 Oct 12,12,regular,Round 12,Pearcedale,St Finbar's 1,7,1,6,4,,,45,47,Completed,
+HA003131,01 Nov 12,13,regular,Round 13,Oakleigh,St Finbar's 1,2,6,4,5,,,37,43,Completed,
+HA003133,01 Nov 12,13,regular,Round 13,St Finbar's 2,Albert Park,8,0,8,1,,,54,23,Completed,
+pending-ha003-r13-mentone-pearcedale,01 Nov 12,13,regular,Round 13,Mentone,Pearcedale,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+HA003142,08 Nov 12,14,regular,Round 14,Pearcedale,St Finbar's 2,2,6,5,5,,,46,48,Completed,
+HA003143,08 Nov 12,14,regular,Round 14,St Finbar's 1,Mentone,7,1,7,3,,,53,37,Completed,
+pending-ha003-r14-albert-park-oakleigh,08 Nov 12,14,regular,Round 14,Albert Park,Oakleigh,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+HA003151,15 Nov 12,15,regular,Round 15,Oakleigh,Mentone,1,7,2,6,,,24,39,Completed,
+HA003152,15 Nov 12,15,regular,Round 15,Albert Park,Pearcedale,2,6,4,5,,,38,34,Completed,
+HA003311,15 Nov 12,15,regular,Round 15,St Finbar's 1,Pearcedale,7.5,0.5,6,2,,,41,26,Completed,
+pending-ha003-r15-st-finbar-s-2-st-finbar-s-1,15 Nov 12,15,regular,Round 15,St Finbar's 2,St Finbar's 1,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+HA003321,,16,grand_final,Grand final · TROLS entry 2,St Finbar's 2,St Finbar's 1,2,6,5,6,,,43,56,Completed,

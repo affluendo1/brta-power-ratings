@@ -1,0 +1,90 @@
+{
+  "asset_id": "HA11-HA004",
+  "competition_code": "HA",
+  "competition_label": "Thursday AM - Spring 2013",
+  "season_id": "HA11",
+  "season_label": "Spring 2013",
+  "source_section_code": "HA004",
+  "section_label": "Section 3",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Belvedere Park",
+      "wins": 10,
+      "points": 83.5,
+      "percentage": 131.84,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "Basterfield Park",
+      "wins": 9,
+      "points": 79.5,
+      "percentage": 129.83,
+      "marker": "P"
+    },
+    {
+      "position": 3,
+      "team": "Chadstone",
+      "wins": 7,
+      "points": 60.5,
+      "percentage": 102.6,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Oakleigh",
+      "wins": 5,
+      "points": 49.5,
+      "percentage": 87.91,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Noble Park",
+      "wins": 5,
+      "points": 49.5,
+      "percentage": 85.74,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "St James",
+      "wins": 3,
+      "points": 37.5,
+      "percentage": 77.57,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "HA11-HA004",
+  "fixtures": 47,
+  "completed_fixtures": 46,
+  "draw_fixtures": 46,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 174,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for HA004103 doubles No. 4: '7-5 2-1'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for HA004111 doubles No. 3: '6-1 4-1'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "asset_id": "HA5-HA033",
+  "competition_code": "HA",
+  "competition_label": "Thursday AM - Spring 2010",
+  "season_id": "HA5",
+  "season_label": "Spring 2010",
+  "source_section_code": "HA033",
+  "section_label": "Section 3",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Black Rock",
+      "wins": 0,
+      "points": 93.5,
+      "percentage": 158.58,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Caulfield Rec",
+      "wins": 0,
+      "points": 70,
+      "percentage": 102.46,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Belvedere Park",
+      "wins": 0,
+      "points": 58,
+      "percentage": 97.62,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Albert Park",
+      "wins": 0,
+      "points": 57,
+      "percentage": 113.21,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Chadstone",
+      "wins": 0,
+      "points": 50.5,
+      "percentage": 92.78,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Kooyong",
+      "wins": 0,
+      "points": 48.5,
+      "percentage": 87.74,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Noble Park",
+      "wins": 0,
+      "points": 37,
+      "percentage": 89.49,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "St Leonard's",
+      "wins": 0,
+      "points": 33.5,
+      "percentage": 78.96,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "HA5-HA033",
+  "fixtures": 60,
+  "completed_fixtures": 54,
+  "draw_fixtures": 4,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 215,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for HA033042 doubles No. 3: '6-7 4-4'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for HA033062 doubles No. 3: '5-7 1-2'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

@@ -1,0 +1,47 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+HA001011,13 Jul 23,1,regular,Round 1,Hampton,Eaglemont,6,2,6,5,,,53,55,Completed,
+HA001013,13 Jul 23,1,regular,Round 1,Glen Waverley,Elwood Red,1,7,3,6,,,40,50,Completed,
+pending-ha001-r1-kooyong-yellow-black-rock,13 Jul 23,1,regular,Round 1,Kooyong Yellow,Black Rock,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+HA001021,20 Jul 23,2,regular,Round 2,Elwood Red,Hampton,6,2,5,4,,,48,40,Completed,
+HA001022,20 Jul 23,2,regular,Round 2,Black Rock,Glen Waverley,1,7,2,6,,,31,43,Completed,
+pending-ha001-r2-eaglemont-kooyong-yellow,20 Jul 23,2,regular,Round 2,Eaglemont,Kooyong Yellow,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+HA001031,27 Jul 23,3,regular,Round 3,Hampton,Kooyong Yellow,8,0,8,1,,,53,31,Completed,
+HA001032,27 Jul 23,3,regular,Round 3,Glen Waverley,Eaglemont,8,0,8,0,,,49,20,Completed,
+HA001033,27 Jul 23,3,regular,Round 3,Elwood Red,Black Rock,8,0,8,0,,,48,7,Completed,
+HA001041,03 Aug 23,4,regular,Round 4,Black Rock,Hampton,0,8,0,8,,,14,49,Completed,
+HA001042,03 Aug 23,4,regular,Round 4,Eaglemont,Elwood Red,7,1,6,2,,,44,26,Completed,
+HA001043,03 Aug 23,4,regular,Round 4,Kooyong Yellow,Glen Waverley,0,8,0,8,,,23,48,Completed,
+HA001052,10 Aug 23,5,regular,Round 5,Black Rock,Eaglemont,0,8,0,8,,,13,49,Completed,
+pending-ha001-r5-elwood-red-kooyong-yellow,10 Aug 23,5,regular,Round 5,Elwood Red,Kooyong Yellow,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+pending-ha001-r5-hampton-glen-waverley,10 Aug 23,5,regular,Round 5,Hampton,Glen Waverley,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+HA001061,17 Aug 23,6,regular,Round 6,Eaglemont,Hampton,7,1,6,3,,,46,38,Completed,
+HA001062,17 Aug 23,6,regular,Round 6,Black Rock,Kooyong Yellow,1,7,3,6,,,40,49,Completed,
+pending-ha001-r6-elwood-red-glen-waverley,17 Aug 23,6,regular,Round 6,Elwood Red,Glen Waverley,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+HA001071,24 Aug 23,7,regular,Round 7,Hampton,Elwood Red,7,1,6,3,,,46,40,Completed,
+HA001073,24 Aug 23,7,regular,Round 7,Kooyong Yellow,Eaglemont,1,7,3,6,,,38,53,Completed,
+pending-ha001-r7-glen-waverley-black-rock,24 Aug 23,7,regular,Round 7,Glen Waverley,Black Rock,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+HA001081,31 Aug 23,8,regular,Round 8,Kooyong Yellow,Hampton,7.5,0.5,6,2,,,43,27,Completed,
+HA001082,31 Aug 23,8,regular,Round 8,Eaglemont,Glen Waverley,6.5,1.5,5,3,,,45,38,Completed,
+HA001083,31 Aug 23,8,regular,Round 8,Black Rock,Elwood Red,6,2,4,4,,,37,31,Completed,
+HA001091,07 Sep 23,9,regular,Round 9,Hampton,Black Rock,8,0,8,1,,,57,30,Completed,
+HA001092,07 Sep 23,9,regular,Round 9,Elwood Red,Eaglemont,6,2,5,4,,,43,34,Completed,
+HA001093,07 Sep 23,9,regular,Round 9,Glen Waverley,Kooyong Yellow,7,1,6,2,,,39,23,Completed,
+HA001101,14 Sep 23,10,regular,Round 10,Glen Waverley,Hampton,8,0,8,1,,,51,28,Completed,
+HA001102,14 Sep 23,10,regular,Round 10,Eaglemont,Black Rock,8,0,8,1,,,56,24,Completed,
+HA001103,14 Sep 23,10,regular,Round 10,Kooyong Yellow,Elwood Red,0,8,1,8,,,23,52,Completed,
+HA001111,05 Oct 23,11,regular,Round 11,Hampton,Eaglemont,8,0,8,1,,,55,34,Completed,
+HA001112,05 Oct 23,11,regular,Round 11,Kooyong Yellow,Black Rock,1,7,3,7,,,36,51,Completed,
+HA001113,05 Oct 23,11,regular,Round 11,Glen Waverley,Elwood Red,8,0,8,1,,,52,31,Completed,
+pending-ha001-r12-black-rock-glen-waverley,12 Oct 23,12,regular,Round 12,Black Rock,Glen Waverley,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha001-r12-eaglemont-kooyong-yellow,12 Oct 23,12,regular,Round 12,Eaglemont,Kooyong Yellow,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha001-r12-elwood-red-hampton,12 Oct 23,12,regular,Round 12,Elwood Red,Hampton,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+HA001131,19 Oct 23,13,regular,Round 13,Hampton,Kooyong Yellow,7,1,7,3,,,55,42,Completed,
+HA001132,19 Oct 23,13,regular,Round 13,Glen Waverley,Eaglemont,8,0,8,0,,,48,15,Completed,
+HA001133,19 Oct 23,13,regular,Round 13,Elwood Red,Black Rock,7,1,6,2,,,44,25,Completed,
+HA001141,26 Oct 23,14,regular,Round 14,Black Rock,Hampton,1,7,3,6,,,38,49,Completed,
+HA001142,26 Oct 23,14,regular,Round 14,Eaglemont,Elwood Red,2,6,4,5,,,41,47,Completed,
+pending-ha001-r14-kooyong-yellow-glen-waverley,26 Oct 23,14,regular,Round 14,Kooyong Yellow,Glen Waverley,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+HA001151,02 Nov 23,15,regular,Round 15,Hampton,Glen Waverley,6,2,5,4,,,39,37,Completed,
+HA001152,02 Nov 23,15,regular,Round 15,Black Rock,Eaglemont,2,6,4,5,,,35,49,Completed,
+HA001153,02 Nov 23,15,regular,Round 15,Elwood Red,Kooyong Yellow,7,1,7,2,,,51,29,Completed,
+HA001321,,16,grand_final,Grand final · TROLS entry 2,Glen Waverley,Hampton,7,1,5,1,,,34,16,Completed,

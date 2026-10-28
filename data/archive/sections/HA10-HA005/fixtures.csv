@@ -1,0 +1,48 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+HA005011,07 Feb 13,1,regular,Round 1,Chadstone,Basterfield Park,2,6,4,6,,,43,43,Completed,
+HA005012,07 Feb 13,1,regular,Round 1,Dingley,St James,2,6,4,4,,,33,36,Completed,
+HA005013,07 Feb 13,1,regular,Round 1,St Leonard's,Mentone,8,0,8,1,,,51,30,Completed,
+HA005021,14 Feb 13,2,regular,Round 2,Mentone,Chadstone,1,7,2,7,,,21,48,Completed,
+HA005023,14 Feb 13,2,regular,Round 2,Basterfield Park,Dingley,8,0,8,0,,,48,17,Completed,
+pending-ha005-r2-st-james-st-leonard-s,14 Feb 13,2,regular,Round 2,St James,St Leonard's,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+HA005031,21 Feb 13,3,regular,Round 3,Chadstone,Dingley,8,0,8,2,,,55,31,Completed,
+HA005032,21 Feb 13,3,regular,Round 3,St Leonard's,Basterfield Park,2,6,4,6,,,41,51,Completed,
+HA005033,21 Feb 13,3,regular,Round 3,Mentone,St James,7,1,7,3,,,52,38,Completed,
+HA005041,28 Feb 13,4,regular,Round 4,St James,Chadstone,6,2,6,5,,,57,51,Completed,
+HA005042,28 Feb 13,4,regular,Round 4,Basterfield Park,Mentone,8,0,8,1,,,55,33,Completed,
+HA005043,28 Feb 13,4,regular,Round 4,Dingley,St Leonard's,6,2,4,4,,,35,33,Completed,
+HA005051,07 Mar 13,5,regular,Round 5,Chadstone,St Leonard's,4.5,3.5,3,1,,,24,13,Completed,
+HA005052,07 Mar 13,5,regular,Round 5,St James,Basterfield Park,4,4,4,3,,,35,30,Completed,
+HA005053,07 Mar 13,5,regular,Round 5,Mentone,Dingley,6.5,1.5,5,3,,,38,27,Completed,
+HA005061,14 Mar 13,6,regular,Round 6,Basterfield Park,Chadstone,2,6,4,5,,,47,42,Completed,
+HA005062,14 Mar 13,6,regular,Round 6,St James,Dingley,7,1,6,3,,,49,32,Completed,
+HA005063,14 Mar 13,6,regular,Round 6,Mentone,St Leonard's,1,7,3,7,,,40,51,Completed,
+HA005071,21 Mar 13,7,regular,Round 7,Chadstone,Mentone,7,1,7,2,,,51,25,Completed,
+HA005072,21 Mar 13,7,regular,Round 7,St Leonard's,St James,2,6,4,5,,,39,46,Completed,
+HA005073,21 Mar 13,7,regular,Round 7,Dingley,Basterfield Park,1,7,2,7,,,23,49,Completed,
+HA005081,28 Mar 13,8,regular,Round 8,Dingley,Chadstone,2,6,4,5,,,37,44,Completed,
+HA005082,28 Mar 13,8,regular,Round 8,Basterfield Park,St Leonard's,1,7,2,7,,,35,51,Completed,
+HA005083,28 Mar 13,8,regular,Round 8,St James,Mentone,0,8,0,8,,,20,48,Completed,
+HA005092,18 Apr 13,9,regular,Round 9,Mentone,Basterfield Park,1,7,2,6,,,21,48,Completed,
+pending-ha005-r9-chadstone-st-james,18 Apr 13,9,regular,Round 9,Chadstone,St James,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha005-r9-st-leonard-s-dingley,18 Apr 13,9,regular,Round 9,St Leonard's,Dingley,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+HA005101,02 May 13,10,regular,Round 10,St Leonard's,Chadstone,7,1,7,3,,,50,42,Completed,
+HA005102,02 May 13,10,regular,Round 10,Basterfield Park,St James,7,1,6,2,,,41,30,Completed,
+HA005103,02 May 13,10,regular,Round 10,Dingley,Mentone,7,1,6,3,,,45,30,Completed,
+HA005111,09 May 13,11,regular,Round 11,Chadstone,Basterfield Park,6,2,4,4,,,37,35,Completed,
+HA005112,09 May 13,11,regular,Round 11,Dingley,St James,1,7,3,6,,,36,43,Completed,
+HA005113,09 May 13,11,regular,Round 11,St Leonard's,Mentone,1,7,3,6,,,28,45,Completed,
+pending-ha005-r12-basterfield-park-dingley,16 May 13,12,regular,Round 12,Basterfield Park,Dingley,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha005-r12-mentone-chadstone,16 May 13,12,regular,Round 12,Mentone,Chadstone,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha005-r12-st-james-st-leonard-s,16 May 13,12,regular,Round 12,St James,St Leonard's,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+HA005131,23 May 13,13,regular,Round 13,Chadstone,Dingley,8,0,8,0,,,50,15,Completed,
+HA005132,23 May 13,13,regular,Round 13,St Leonard's,Basterfield Park,1,7,4,6,,,38,51,Completed,
+HA005133,23 May 13,13,regular,Round 13,Mentone,St James,6,2,5,4,,,43,40,Completed,
+HA005141,30 May 13,14,regular,Round 14,St James,Chadstone,3,5,1,4,,,18,30,Completed,
+pending-ha005-r14-basterfield-park-mentone,30 May 13,14,regular,Round 14,Basterfield Park,Mentone,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha005-r14-dingley-st-leonard-s,30 May 13,14,regular,Round 14,Dingley,St Leonard's,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+HA005151,06 Jun 13,15,regular,Round 15,Chadstone,St Leonard's,7,1,6,3,,,46,31,Completed,
+HA005152,06 Jun 13,15,regular,Round 15,St James,Basterfield Park,1,7,3,7,,,36,55,Completed,
+HA005153,06 Jun 13,15,regular,Round 15,Mentone,Dingley,7,1,6,3,,,48,31,Completed,
+HA005311,06 Jun 13,15,regular,Round 15,Chadstone,St James,8,0,8,3,,,58,34,Completed,
+HA005321,,16,grand_final,Grand final · TROLS entry 2,Basterfield Park,Chadstone,7,1,5,0,,,37,21,Completed,

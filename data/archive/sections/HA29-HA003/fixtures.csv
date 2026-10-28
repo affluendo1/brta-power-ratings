@@ -1,0 +1,60 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+HA003011,03 Feb 22,1,regular,Round 1,Albert Park,St James,6,2,6,4,,,56,39,Completed,
+HA003013,03 Feb 22,1,regular,Round 1,Elwood,Belvedere Park,7,1,6,2,,,41,27,Completed,
+HA003014,03 Feb 22,1,regular,Round 1,Kooyong Green,Kooyong Purple,2,6,4,5,,,39,42,Completed,
+pending-ha003-r1-black-rock-bye,03 Feb 22,1,regular,Round 1,Black Rock,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA003021,10 Feb 22,2,regular,Round 2,Kooyong Purple,Albert Park,7,1,7,3,,,56,44,Completed,
+HA003022,10 Feb 22,2,regular,Round 2,St James,Black Rock,2,6,4,6,,,45,58,Completed,
+HA003024,10 Feb 22,2,regular,Round 2,Belvedere Park,Kooyong Green,8,0,8,3,,,65,45,Completed,
+pending-ha003-r2-bye-elwood,10 Feb 22,2,regular,Round 2,Bye,Elwood,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA003031,17 Feb 22,3,regular,Round 3,Albert Park,Belvedere Park,0,8,1,8,,,28,55,Completed,
+HA003032,17 Feb 22,3,regular,Round 3,Black Rock,Kooyong Purple,0,8,1,8,,,17,50,Completed,
+HA003033,17 Feb 22,3,regular,Round 3,Elwood,St James,2,6,4,5,,,46,47,Completed,
+pending-ha003-r3-kooyong-green-bye,17 Feb 22,3,regular,Round 3,Kooyong Green,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA003042,24 Feb 22,4,regular,Round 4,Belvedere Park,Black Rock,6,2,5,4,,,47,35,Completed,
+HA003043,24 Feb 22,4,regular,Round 4,Kooyong Purple,Elwood,8,0,8,0,,,50,25,Completed,
+HA003044,24 Feb 22,4,regular,Round 4,St James,Kooyong Green,2,6,5,5,,,47,48,Completed,
+pending-ha003-r4-bye-albert-park,24 Feb 22,4,regular,Round 4,Bye,Albert Park,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA003051,03 Mar 22,5,regular,Round 5,Elwood,Kooyong Green,0,8,2,8,,,47,61,Completed,
+HA003052,03 Mar 22,5,regular,Round 5,Kooyong Purple,Belvedere Park,7,1,6,2,,,46,31,Completed,
+HA003054,03 Mar 22,5,regular,Round 5,Albert Park,Black Rock,7,1,6,2,,,45,30,Completed,
+pending-ha003-r5-bye-st-james,03 Mar 22,5,regular,Round 5,Bye,St James,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA003061,10 Mar 22,6,regular,Round 6,Black Rock,Elwood,8,0,8,2,,,57,46,Completed,
+HA003062,10 Mar 22,6,regular,Round 6,Kooyong Green,Albert Park,7,1,7,3,,,53,40,Completed,
+HA003064,10 Mar 22,6,regular,Round 6,St James,Kooyong Purple,2,6,5,5,,,42,49,Completed,
+pending-ha003-r6-belvedere-park-bye,10 Mar 22,6,regular,Round 6,Belvedere Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA003071,17 Mar 22,7,regular,Round 7,Albert Park,Elwood,6,2,4,4,,,34,33,Completed,
+HA003072,17 Mar 22,7,regular,Round 7,Black Rock,Kooyong Green,0,8,0,8,,,15,48,Completed,
+HA003074,17 Mar 22,7,regular,Round 7,Belvedere Park,St James,6,2,6,4,,,57,39,Completed,
+pending-ha003-r7-kooyong-purple-bye,17 Mar 22,7,regular,Round 7,Kooyong Purple,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA003081,24 Mar 22,8,regular,Round 8,St James,Albert Park,1,7,3,6,,,40,45,Completed,
+HA003083,24 Mar 22,8,regular,Round 8,Belvedere Park,Elwood,2,6,5,5,,,52,54,Completed,
+HA003084,24 Mar 22,8,regular,Round 8,Kooyong Purple,Kooyong Green,0,8,4,8,,,62,64,Completed,
+pending-ha003-r8-bye-black-rock,24 Mar 22,8,regular,Round 8,Bye,Black Rock,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA003091,31 Mar 22,9,regular,Round 9,Albert Park,Kooyong Purple,6,2,5,4,,,41,35,Completed,
+HA003092,31 Mar 22,9,regular,Round 9,Black Rock,St James,2,6,4,5,,,34,44,Completed,
+HA003094,31 Mar 22,9,regular,Round 9,Kooyong Green,Belvedere Park,7,1,6,3,,,46,49,Completed,
+pending-ha003-r9-elwood-bye,31 Mar 22,9,regular,Round 9,Elwood,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA003101,07 Apr 22,10,regular,Round 10,Belvedere Park,Albert Park,8,0,8,1,,,56,25,Completed,
+HA003102,07 Apr 22,10,regular,Round 10,Kooyong Purple,Black Rock,6,2,6,4,,,57,44,Completed,
+HA003103,07 Apr 22,10,regular,Round 10,St James,Elwood,1,7,3,6,,,33,43,Completed,
+pending-ha003-r10-bye-kooyong-green,07 Apr 22,10,regular,Round 10,Bye,Kooyong Green,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA003112,28 Apr 22,11,regular,Round 11,Black Rock,Belvedere Park,8,0,8,0,,,48,4,Completed,
+HA003113,28 Apr 22,11,regular,Round 11,Elwood,Kooyong Purple,6,2,6,4,,,55,42,Completed,
+HA003114,28 Apr 22,11,regular,Round 11,Kooyong Green,St James,6,2,6,4,,,54,32,Completed,
+pending-ha003-r11-albert-park-bye,28 Apr 22,11,regular,Round 11,Albert Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA003121,05 May 22,12,regular,Round 12,Kooyong Green,Elwood,2,6,5,6,,,49,57,Completed,
+HA003122,05 May 22,12,regular,Round 12,Belvedere Park,Kooyong Purple,1,7,2,6,,,21,38,Completed,
+HA003124,05 May 22,12,regular,Round 12,Black Rock,Albert Park,2,6,4,5,,,40,46,Completed,
+pending-ha003-r12-st-james-bye,05 May 22,12,regular,Round 12,St James,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA003131,12 May 22,13,regular,Round 13,Elwood,Black Rock,8,0,8,0,,,49,11,Completed,
+HA003132,12 May 22,13,regular,Round 13,Albert Park,Kooyong Green,4,4,4,4,,,36,36,Completed,
+HA003134,12 May 22,13,regular,Round 13,Kooyong Purple,St James,8,0,8,1,,,54,19,Completed,
+pending-ha003-r13-bye-belvedere-park,12 May 22,13,regular,Round 13,Bye,Belvedere Park,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA003141,19 May 22,14,regular,Round 14,Elwood,Albert Park,7,1,6,2,,,44,20,Completed,
+HA003142,19 May 22,14,regular,Round 14,Kooyong Green,Black Rock,8,0,8,2,,,58,39,Completed,
+HA003144,19 May 22,14,regular,Round 14,St James,Belvedere Park,1,7,3,7,,,44,54,Completed,
+pending-ha003-r14-bye-kooyong-purple,19 May 22,14,regular,Round 14,Bye,Kooyong Purple,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA003301,,16,semi_final,Semi-final,Kooyong Purple,Belvedere Park,7,1,5,2,,,37,32,Completed,
+HA003302,,16,semi_final,Semi-final,Kooyong Green,Elwood,7,1,7,2,,,49,23,Completed,
+HA003321,,17,grand_final,Grand final · TROLS entry 2,Kooyong Purple,Kooyong Green,7,1,6,3,,,44,37,Completed,

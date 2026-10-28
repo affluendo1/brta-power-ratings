@@ -1,0 +1,89 @@
+{
+  "asset_id": "HA14-HA002",
+  "competition_code": "HA",
+  "competition_label": "Thursday AM - Autumn 2015",
+  "season_id": "HA14",
+  "season_label": "Autumn 2015",
+  "source_section_code": "HA002",
+  "section_label": "Section 1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Glen Iris Valley",
+      "wins": 11,
+      "points": 84,
+      "percentage": 119.93,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "East Malvern",
+      "wins": 10,
+      "points": 77,
+      "percentage": 110.59,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Narre Warren Nth",
+      "wins": 9,
+      "points": 75,
+      "percentage": 110.11,
+      "marker": "P"
+    },
+    {
+      "position": 4,
+      "team": "Elwood",
+      "wins": 6,
+      "points": 63,
+      "percentage": 109.67,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "St Pauls",
+      "wins": 3,
+      "points": 32,
+      "percentage": 81.97,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Kooyong",
+      "wins": 2,
+      "points": 29,
+      "percentage": 76.22,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "HA14-HA002",
+  "fixtures": 47,
+  "completed_fixtures": 44,
+  "draw_fixtures": 57,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 175,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for HA002131 doubles No. 3: '1-0'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

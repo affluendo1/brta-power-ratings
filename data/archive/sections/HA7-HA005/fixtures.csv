@@ -1,0 +1,48 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+HA005011,28 Jul 11,1,regular,Round 1,Dendy Park,Kooyong,7,1,6,2,,,45,23,Completed,
+HA005012,28 Jul 11,1,regular,Round 1,Mentone,St Cecilia's,7,1,7,2,,,52,36,Completed,
+HA005013,28 Jul 11,1,regular,Round 1,St Peter's,St James,2,6,4,4,,,26,31,Completed,
+HA005021,04 Aug 11,2,regular,Round 2,St James,Dendy Park,0,8,1,8,,,38,54,Completed,
+HA005022,04 Aug 11,2,regular,Round 2,St Cecilia's,St Peter's,8,0,8,2,,,52,24,Completed,
+HA005023,04 Aug 11,2,regular,Round 2,Kooyong,Mentone,0,8,2,8,,,36,59,Completed,
+HA005031,11 Aug 11,3,regular,Round 3,Dendy Park,Mentone,8,0,8,0,,,48,21,Completed,
+HA005032,11 Aug 11,3,regular,Round 3,St Peter's,Kooyong,8,0,8,0,,,49,25,Completed,
+HA005033,11 Aug 11,3,regular,Round 3,St James,St Cecilia's,2,6,4,4,,,33,36,Completed,
+pending-ha005-r4-kooyong-st-james,18 Aug 11,4,regular,Round 4,Kooyong,St James,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha005-r4-mentone-st-peter-s,18 Aug 11,4,regular,Round 4,Mentone,St Peter's,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+pending-ha005-r4-st-cecilia-s-dendy-park,18 Aug 11,4,regular,Round 4,St Cecilia's,Dendy Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+HA005051,25 Aug 11,5,regular,Round 5,Dendy Park,St Peter's,8,0,8,0,,,49,16,Completed,
+HA005052,25 Aug 11,5,regular,Round 5,St Cecilia's,Kooyong,8,0,8,0,,,48,20,Completed,
+HA005053,25 Aug 11,5,regular,Round 5,St James,Mentone,1,7,3,6,,,33,41,Completed,
+HA005061,01 Sep 11,6,regular,Round 6,Kooyong,Dendy Park,0,8,1,8,,,27,49,Completed,
+HA005062,01 Sep 11,6,regular,Round 6,St Cecilia's,Mentone,2,6,4,5,,,35,38,Completed,
+HA005063,01 Sep 11,6,regular,Round 6,St James,St Peter's,2,6,4,5,,,41,41,Completed,
+HA005071,08 Sep 11,7,regular,Round 7,Dendy Park,St James,7,1,7,3,,,59,41,Completed,
+HA005072,08 Sep 11,7,regular,Round 7,St Peter's,St Cecilia's,7,1,6,4,,,52,45,Completed,
+HA005073,08 Sep 11,7,regular,Round 7,Mentone,Kooyong,6,2,4,4,,,40,36,Completed,
+HA005081,15 Sep 11,8,regular,Round 8,Mentone,Dendy Park,0,8,0,8,,,19,49,Completed,
+HA005082,15 Sep 11,8,regular,Round 8,Kooyong,St Peter's,0,8,1,8,,,22,51,Completed,
+HA005083,15 Sep 11,8,regular,Round 8,St Cecilia's,St James,7,1,6,2,,,43,25,Completed,
+pending-ha005-r9-dendy-park-st-cecilia-s,22 Sep 11,9,regular,Round 9,Dendy Park,St Cecilia's,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+pending-ha005-r9-st-james-kooyong,22 Sep 11,9,regular,Round 9,St James,Kooyong,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+pending-ha005-r9-st-peter-s-mentone,22 Sep 11,9,regular,Round 9,St Peter's,Mentone,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+HA005101,13 Oct 11,10,regular,Round 10,St Peter's,Dendy Park,1,7,3,6,,,37,44,Completed,
+HA005102,13 Oct 11,10,regular,Round 10,Kooyong,St Cecilia's,2,6,4,6,,,45,53,Completed,
+HA005103,13 Oct 11,10,regular,Round 10,Mentone,St James,7,1,7,2,,,48,35,Completed,
+HA005111,20 Oct 11,11,regular,Round 11,Dendy Park,Kooyong,8,0,8,0,,,49,16,Completed,
+HA005112,20 Oct 11,11,regular,Round 11,Mentone,St Cecilia's,8,0,8,0,,,49,18,Completed,
+pending-ha005-r11-st-peter-s-st-james,20 Oct 11,11,regular,Round 11,St Peter's,St James,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+HA005121,27 Oct 11,12,regular,Round 12,St James,Dendy Park,0,8,1,8,,,25,51,Completed,
+HA005122,27 Oct 11,12,regular,Round 12,St Cecilia's,St Peter's,6,2,5,4,,,46,34,Completed,
+HA005123,27 Oct 11,12,regular,Round 12,Kooyong,Mentone,0,8,2,8,,,38,60,Completed,
+HA005132,03 Nov 11,13,regular,Round 13,St Peter's,Kooyong,0,8,0,8,,,17,49,Completed,
+HA005133,03 Nov 11,13,regular,Round 13,St James,St Cecilia's,7,1,7,2,,,45,33,Completed,
+pending-ha005-r13-dendy-park-mentone,03 Nov 11,13,regular,Round 13,Dendy Park,Mentone,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+HA005141,10 Nov 11,14,regular,Round 14,St Cecilia's,Dendy Park,1,7,3,6,,,37,49,Completed,
+HA005142,10 Nov 11,14,regular,Round 14,Kooyong,St James,2,6,4,4,,,36,37,Completed,
+HA005143,10 Nov 11,14,regular,Round 14,Mentone,St Peter's,2,6,4,5,,,34,38,Completed,
+HA005151,17 Nov 11,15,regular,Round 15,Dendy Park,St Peter's,8,0,8,2,,,51,21,Completed,
+HA005152,17 Nov 11,15,regular,Round 15,St Cecilia's,Kooyong,1,7,4,6,,,39,46,Completed,
+HA005153,17 Nov 11,15,regular,Round 15,St James,Mentone,7,1,7,5,,,65,65,Completed,
+HA005311,17 Nov 11,15,regular,Round 15,Mentone,St Cecilia's,8,0,8,0,,,49,22,Completed,
+HA005321,,16,grand_final,Grand final · TROLS entry 2,Dendy Park,Mentone,8,0,8,0,,,49,18,Completed,

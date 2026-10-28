@@ -1,0 +1,90 @@
+{
+  "asset_id": "HA27-HA002",
+  "competition_code": "HA",
+  "competition_label": "Thursday AM - Autumn 2021",
+  "season_id": "HA27",
+  "season_label": "Autumn 2021",
+  "source_section_code": "HA002",
+  "section_label": "Section 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Elsternwick Park",
+      "wins": 14,
+      "points": 111,
+      "percentage": 267.2,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Elwood",
+      "wins": 10,
+      "points": 79,
+      "percentage": 123.87,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Kooyong Green",
+      "wins": 7,
+      "points": 63,
+      "percentage": 97.81,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Kooyong Yellow",
+      "wins": 6,
+      "points": 54,
+      "percentage": 98.22,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Basterfield Park",
+      "wins": 5,
+      "points": 45,
+      "percentage": 84.91,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Kooyong Purple",
+      "wins": 0,
+      "points": 8,
+      "percentage": 38.37,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "HA27-HA002",
+  "fixtures": 46,
+  "completed_fixtures": 43,
+  "draw_fixtures": 57,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 168,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "No scorecard rubbers for HA002321",
+    "Fixture game totals do not match rubbers for HA002321: TROLS team total 48-0; complete-score total 0-0. Both published records retained."
+  ]
+}

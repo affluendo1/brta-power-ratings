@@ -1,0 +1,61 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+HA003011,23 Jul 15,1,regular,Round 1,Belvedere Park,Albert Park,2,6,4,5,,,41,41,Completed,
+HA003012,23 Jul 15,1,regular,Round 1,St Finbar's 1,St Finbar's 2,6,2,4,4,,,37,30,Completed,
+HA003013,23 Jul 15,1,regular,Round 1,Black Rock,Caulfield Rec,1,7,3,6,,,33,48,Completed,
+pending-ha003-r1-bye-dendy-park,23 Jul 15,1,regular,Round 1,Bye,Dendy Park,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA003021,30 Jul 15,2,regular,Round 2,Dendy Park,Belvedere Park,7,1,6,2,,,42,32,Completed,
+HA003022,30 Jul 15,2,regular,Round 2,Albert Park,St Finbar's 1,1,7,4,6,,,44,51,Completed,
+HA003023,30 Jul 15,2,regular,Round 2,St Finbar's 2,Black Rock,6,2,5,4,,,37,31,Completed,
+pending-ha003-r2-caulfield-rec-bye,30 Jul 15,2,regular,Round 2,Caulfield Rec,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ha003-r3-belvedere-park-caulfield-rec,06 Aug 15,3,regular,Round 3,Belvedere Park,Caulfield Rec,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha003-r3-black-rock-albert-park,06 Aug 15,3,regular,Round 3,Black Rock,Albert Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha003-r3-bye-st-finbar-s-2,06 Aug 15,3,regular,Round 3,Bye,St Finbar's 2,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ha003-r3-st-finbar-s-1-dendy-park,06 Aug 15,3,regular,Round 3,St Finbar's 1,Dendy Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+HA003042,13 Aug 15,4,regular,Round 4,Caulfield Rec,St Finbar's 1,1,7,3,6,,,43,46,Completed,
+HA003043,13 Aug 15,4,regular,Round 4,Dendy Park,Black Rock,7,1,7,2,,,50,25,Completed,
+pending-ha003-r4-albert-park-bye,13 Aug 15,4,regular,Round 4,Albert Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ha003-r4-st-finbar-s-2-belvedere-park,13 Aug 15,4,regular,Round 4,St Finbar's 2,Belvedere Park,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+HA003052,20 Aug 15,5,regular,Round 5,Dendy Park,Caulfield Rec,1,7,2,7,,,30,43,Completed,
+HA003053,20 Aug 15,5,regular,Round 5,St Finbar's 2,Albert Park,8,0,8,0,,,48,14,Completed,
+HA003054,20 Aug 15,5,regular,Round 5,Belvedere Park,St Finbar's 1,0,8,0,8,,,13,48,Completed,
+pending-ha003-r5-black-rock-bye,20 Aug 15,5,regular,Round 5,Black Rock,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA003064,27 Aug 15,6,regular,Round 6,Albert Park,Dendy Park,4,4,0,0,,,0,0,Completed,
+pending-ha003-r6-bye-belvedere-park,27 Aug 15,6,regular,Round 6,Bye,Belvedere Park,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ha003-r6-caulfield-rec-st-finbar-s-2,27 Aug 15,6,regular,Round 6,Caulfield Rec,St Finbar's 2,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha003-r6-st-finbar-s-1-black-rock,27 Aug 15,6,regular,Round 6,St Finbar's 1,Black Rock,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+HA003071,03 Sep 15,7,regular,Round 7,Belvedere Park,Black Rock,0,8,1,8,,,28,50,Completed,
+HA003073,03 Sep 15,7,regular,Round 7,Dendy Park,St Finbar's 2,0,8,2,8,,,31,54,Completed,
+HA003074,03 Sep 15,7,regular,Round 7,Caulfield Rec,Albert Park,7,1,6,3,,,45,28,Completed,
+pending-ha003-r7-st-finbar-s-1-bye,03 Sep 15,7,regular,Round 7,St Finbar's 1,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA003081,10 Sep 15,8,regular,Round 8,Albert Park,Belvedere Park,6,2,5,4,,,48,35,Completed,
+HA003082,10 Sep 15,8,regular,Round 8,St Finbar's 2,St Finbar's 1,7,1,6,3,,,49,43,Completed,
+HA003083,10 Sep 15,8,regular,Round 8,Caulfield Rec,Black Rock,8,0,8,2,,,55,39,Completed,
+pending-ha003-r8-dendy-park-bye,10 Sep 15,8,regular,Round 8,Dendy Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA003091,17 Sep 15,9,regular,Round 9,Belvedere Park,Dendy Park,0,8,0,8,,,22,49,Completed,
+HA003092,17 Sep 15,9,regular,Round 9,St Finbar's 1,Albert Park,7,1,6,2,,,48,26,Completed,
+pending-ha003-r9-black-rock-st-finbar-s-2,17 Sep 15,9,regular,Round 9,Black Rock,St Finbar's 2,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+pending-ha003-r9-bye-caulfield-rec,17 Sep 15,9,regular,Round 9,Bye,Caulfield Rec,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA003101,08 Oct 15,10,regular,Round 10,Caulfield Rec,Belvedere Park,8,0,8,0,,,48,18,Completed,
+HA003102,08 Oct 15,10,regular,Round 10,Dendy Park,St Finbar's 1,0,8,0,8,,,20,50,Completed,
+pending-ha003-r10-albert-park-black-rock,08 Oct 15,10,regular,Round 10,Albert Park,Black Rock,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+pending-ha003-r10-st-finbar-s-2-bye,08 Oct 15,10,regular,Round 10,St Finbar's 2,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA003111,15 Oct 15,11,regular,Round 11,Belvedere Park,St Finbar's 2,0.5,7.5,2,7,,,27,52,Completed,
+HA003112,15 Oct 15,11,regular,Round 11,St Finbar's 1,Caulfield Rec,8,0,8,0,,,48,11,Completed,
+HA003113,15 Oct 15,11,regular,Round 11,Black Rock,Dendy Park,6,2,4,4,,,33,30,Completed,
+pending-ha003-r11-bye-albert-park,15 Oct 15,11,regular,Round 11,Bye,Albert Park,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA003122,22 Oct 15,12,regular,Round 12,Caulfield Rec,Dendy Park,6,2,5,5,,,39,38,Completed,
+HA003123,22 Oct 15,12,regular,Round 12,Albert Park,St Finbar's 2,1,7,3,6,,,37,44,Completed,
+HA003124,22 Oct 15,12,regular,Round 12,St Finbar's 1,Belvedere Park,8,0,8,0,,,48,0,Completed,
+pending-ha003-r12-bye-black-rock,22 Oct 15,12,regular,Round 12,Bye,Black Rock,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA003131,29 Oct 15,13,regular,Round 13,Black Rock,St Finbar's 1,2,6,4,6,,,39,52,Completed,
+HA003133,29 Oct 15,13,regular,Round 13,St Finbar's 2,Caulfield Rec,6,2,6,4,,,45,41,Completed,
+HA003134,29 Oct 15,13,regular,Round 13,Dendy Park,Albert Park,6,2,5,5,,,44,37,Completed,
+pending-ha003-r13-belvedere-park-bye,29 Oct 15,13,regular,Round 13,Belvedere Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ha003-r14-albert-park-caulfield-rec,05 Nov 15,14,regular,Round 14,Albert Park,Caulfield Rec,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha003-r14-black-rock-belvedere-park,05 Nov 15,14,regular,Round 14,Black Rock,Belvedere Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha003-r14-bye-st-finbar-s-1,05 Nov 15,14,regular,Round 14,Bye,St Finbar's 1,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ha003-r14-st-finbar-s-2-dendy-park,05 Nov 15,14,regular,Round 14,St Finbar's 2,Dendy Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+HA003301,,16,semi_final,Semi-final,St Finbar's 2,St Finbar's 1,2,6,4,5,,,41,40,Completed,
+HA003302,,16,semi_final,Semi-final,Caulfield Rec,Dendy Park,2,6,5,6,,,47,51,Completed,
+HA003311,,16,semi_final,Semi-final,St Finbar's 2,Dendy Park,1.5,6.5,3,5,,,27,40,Completed,
+HA003321,,17,grand_final,Grand final · TROLS entry 2,St Finbar's 1,Dendy Park,7,1,4,0,,,27,14,Completed,

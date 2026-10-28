@@ -1,0 +1,89 @@
+{
+  "asset_id": "HA24-HA003",
+  "competition_code": "HA",
+  "competition_label": "Thursday AM - Spring 2019",
+  "season_id": "HA24",
+  "season_label": "Spring 2019",
+  "source_section_code": "HA003",
+  "section_label": "Ladies Rubbers 3",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Basterfield Park",
+      "wins": 8,
+      "points": 69,
+      "percentage": 129.14,
+      "marker": ""
+    },
+    {
+      "position": 2,
+      "team": "Black Rock",
+      "wins": 6,
+      "points": 56,
+      "percentage": 119.31,
+      "marker": "P"
+    },
+    {
+      "position": 3,
+      "team": "St James",
+      "wins": 4,
+      "points": 43.5,
+      "percentage": 97.49,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Belvedere Park",
+      "wins": 3,
+      "points": 41.5,
+      "percentage": 104.22,
+      "marker": "R"
+    },
+    {
+      "position": 5,
+      "team": "Elwood",
+      "wins": 3,
+      "points": 40,
+      "percentage": 98.01,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Chadstone Red",
+      "wins": 2,
+      "points": 35,
+      "percentage": 93.51,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "HA24-HA003",
+  "fixtures": 59,
+  "completed_fixtures": 31,
+  "draw_fixtures": 48,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 120,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for HA003124 doubles No. 3: '6-3 4-3'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

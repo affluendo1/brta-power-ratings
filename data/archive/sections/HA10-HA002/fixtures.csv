@@ -1,0 +1,48 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+HA002011,07 Feb 13,1,regular,Round 1,St Pauls,Glen Iris Valley,1,7,3,7,,,47,56,Completed,
+HA002012,07 Feb 13,1,regular,Round 1,Kooyong 1,East Malvern,7,1,6,3,,,49,43,Completed,
+HA002013,07 Feb 13,1,regular,Round 1,Elwood,Kooyong 2,8,0,8,1,,,52,23,Completed,
+HA002021,14 Feb 13,2,regular,Round 2,Kooyong 2,St Pauls,1,7,3,6,,,34,48,Completed,
+HA002022,14 Feb 13,2,regular,Round 2,East Malvern,Elwood,2,6,4,5,,,40,42,Completed,
+HA002023,14 Feb 13,2,regular,Round 2,Glen Iris Valley,Kooyong 1,8,0,8,1,,,55,30,Completed,
+HA002031,21 Feb 13,3,regular,Round 3,St Pauls,Kooyong 1,1,7,2,6,,,27,41,Completed,
+HA002032,21 Feb 13,3,regular,Round 3,Elwood,Glen Iris Valley,7,1,6,4,,,54,49,Completed,
+HA002033,21 Feb 13,3,regular,Round 3,Kooyong 2,East Malvern,0,8,1,8,,,21,52,Completed,
+HA002041,28 Feb 13,4,regular,Round 4,East Malvern,St Pauls,7,1,7,3,,,53,38,Completed,
+HA002042,28 Feb 13,4,regular,Round 4,Glen Iris Valley,Kooyong 2,8,0,8,1,,,53,26,Completed,
+HA002043,28 Feb 13,4,regular,Round 4,Kooyong 1,Elwood,8,0,8,1,,,50,23,Completed,
+HA002051,07 Mar 13,5,regular,Round 5,St Pauls,Elwood,4,4,2,2,,,17,20,Completed,
+HA002052,07 Mar 13,5,regular,Round 5,East Malvern,Glen Iris Valley,4,4,3,2,,,25,25,Completed,
+HA002053,07 Mar 13,5,regular,Round 5,Kooyong 2,Kooyong 1,1,7,4,6,,,40,53,Completed,
+HA002061,14 Mar 13,6,regular,Round 6,Glen Iris Valley,St Pauls,7,1,7,4,,,55,52,Completed,
+HA002062,14 Mar 13,6,regular,Round 6,East Malvern,Kooyong 1,2,6,5,6,,,53,53,Completed,
+HA002063,14 Mar 13,6,regular,Round 6,Kooyong 2,Elwood,1,7,2,6,,,25,42,Completed,
+HA002071,21 Mar 13,7,regular,Round 7,St Pauls,Kooyong 2,8,0,8,1,,,53,27,Completed,
+HA002072,21 Mar 13,7,regular,Round 7,Elwood,East Malvern,1,7,2,7,,,33,51,Completed,
+pending-ha002-r7-kooyong-1-glen-iris-valley,21 Mar 13,7,regular,Round 7,Kooyong 1,Glen Iris Valley,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+HA002081,28 Mar 13,8,regular,Round 8,Kooyong 1,St Pauls,7,1,6,4,,,48,47,Completed,
+HA002082,28 Mar 13,8,regular,Round 8,Glen Iris Valley,Elwood,7,1,6,3,,,51,38,Completed,
+HA002083,28 Mar 13,8,regular,Round 8,East Malvern,Kooyong 2,8,0,8,2,,,58,36,Completed,
+HA002093,18 Apr 13,9,regular,Round 9,Elwood,Kooyong 1,1,7,3,7,,,39,54,Completed,
+pending-ha002-r9-kooyong-2-glen-iris-valley,18 Apr 13,9,regular,Round 9,Kooyong 2,Glen Iris Valley,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha002-r9-st-pauls-east-malvern,18 Apr 13,9,regular,Round 9,St Pauls,East Malvern,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+HA002101,02 May 13,10,regular,Round 10,Elwood,St Pauls,8,0,8,1,,,52,29,Completed,
+HA002102,02 May 13,10,regular,Round 10,Glen Iris Valley,East Malvern,0,8,2,8,,,36,52,Completed,
+HA002103,02 May 13,10,regular,Round 10,Kooyong 1,Kooyong 2,7,1,7,2,,,43,30,Completed,
+HA002111,09 May 13,11,regular,Round 11,St Pauls,Glen Iris Valley,0,8,0,8,,,20,48,Completed,
+HA002112,09 May 13,11,regular,Round 11,Kooyong 1,East Malvern,7,1,7,3,,,54,49,Completed,
+HA002113,09 May 13,11,regular,Round 11,Elwood,Kooyong 2,7,1,6,4,,,49,45,Completed,
+pending-ha002-r12-east-malvern-elwood,16 May 13,12,regular,Round 12,East Malvern,Elwood,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha002-r12-glen-iris-valley-kooyong-1,16 May 13,12,regular,Round 12,Glen Iris Valley,Kooyong 1,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha002-r12-kooyong-2-st-pauls,16 May 13,12,regular,Round 12,Kooyong 2,St Pauls,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+HA002131,23 May 13,13,regular,Round 13,St Pauls,Kooyong 1,2,6,4,5,,,37,43,Completed,
+HA002132,23 May 13,13,regular,Round 13,Elwood,Glen Iris Valley,7,1,7,5,,,62,50,Completed,
+HA002133,23 May 13,13,regular,Round 13,Kooyong 2,East Malvern,0,8,1,8,,,35,55,Completed,
+HA002141,30 May 13,14,regular,Round 14,East Malvern,St Pauls,8,0,8,0,,,48,15,Completed,
+HA002142,30 May 13,14,regular,Round 14,Glen Iris Valley,Kooyong 2,7.5,0.5,7,3,,,50,27,Completed,
+HA002143,30 May 13,14,regular,Round 14,Kooyong 1,Elwood,4,4,4,2,,,33,23,Completed,
+HA002151,06 Jun 13,15,regular,Round 15,St Pauls,Elwood,6,2,5,4,,,45,40,Completed,
+HA002152,06 Jun 13,15,regular,Round 15,East Malvern,Glen Iris Valley,7,1,6,3,,,48,34,Completed,
+HA002153,06 Jun 13,15,regular,Round 15,Kooyong 2,Kooyong 1,0,8,0,8,,,18,48,Completed,
+HA002311,06 Jun 13,15,regular,Round 15,East Malvern,Glen Iris Valley,7.5,0.5,6,2,,,48,30,Completed,
+pending-ha002-r16-kooyong-1-east-malvern,,16,grand_final,Grand final · TROLS entry 2,Kooyong 1,East Malvern,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded

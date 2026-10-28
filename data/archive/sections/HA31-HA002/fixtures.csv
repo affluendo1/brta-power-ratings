@@ -1,0 +1,60 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+HA002011,09 Feb 23,1,regular,Round 1,Basterfield Park,Elwood Blue,0,8,0,8,,,18,50,Completed,
+HA002012,09 Feb 23,1,regular,Round 1,Kooyong Green,Kooyong Yellow,7,1,6,2,,,43,27,Completed,
+HA002013,09 Feb 23,1,regular,Round 1,Black Rock,Parkdale,6,2,5,4,,,41,40,Completed,
+pending-ha002-r1-bye-elsternwick-park,09 Feb 23,1,regular,Round 1,Bye,Elsternwick Park,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA002021,16 Feb 23,2,regular,Round 2,Elsternwick Park,Basterfield Park,6,2,5,4,,,47,35,Completed,
+HA002022,16 Feb 23,2,regular,Round 2,Elwood Blue,Kooyong Green,6.5,1.5,6,2,,,49,26,Completed,
+HA002023,16 Feb 23,2,regular,Round 2,Kooyong Yellow,Black Rock,5,3,4,0,,,28,22,Completed,
+pending-ha002-r2-parkdale-bye,16 Feb 23,2,regular,Round 2,Parkdale,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA002031,23 Feb 23,3,regular,Round 3,Basterfield Park,Parkdale,0,8,0,8,,,21,48,Completed,
+HA002032,23 Feb 23,3,regular,Round 3,Kooyong Green,Elsternwick Park,8,0,8,0,,,51,31,Completed,
+HA002033,23 Feb 23,3,regular,Round 3,Black Rock,Elwood Blue,0,8,0,8,,,18,48,Completed,
+pending-ha002-r3-bye-kooyong-yellow,23 Feb 23,3,regular,Round 3,Bye,Kooyong Yellow,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA002041,02 Mar 23,4,regular,Round 4,Kooyong Yellow,Basterfield Park,2,6,4,5,,,43,46,Completed,
+HA002042,02 Mar 23,4,regular,Round 4,Parkdale,Kooyong Green,7,1,6,3,,,48,41,Completed,
+HA002043,02 Mar 23,4,regular,Round 4,Elsternwick Park,Black Rock,8,0,8,0,,,48,7,Completed,
+pending-ha002-r4-elwood-blue-bye,02 Mar 23,4,regular,Round 4,Elwood Blue,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA002052,09 Mar 23,5,regular,Round 5,Elsternwick Park,Parkdale,7,1,7,3,,,54,44,Completed,
+HA002053,09 Mar 23,5,regular,Round 5,Kooyong Yellow,Elwood Blue,0,8,0,8,,,20,48,Completed,
+HA002054,09 Mar 23,5,regular,Round 5,Basterfield Park,Kooyong Green,1,7,2,7,,,35,55,Completed,
+pending-ha002-r5-black-rock-bye,09 Mar 23,5,regular,Round 5,Black Rock,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA002061,16 Mar 23,6,regular,Round 6,Kooyong Green,Black Rock,7,1,7,3,,,53,37,Completed,
+HA002063,16 Mar 23,6,regular,Round 6,Parkdale,Kooyong Yellow,7,1,6,5,,,53,56,Completed,
+HA002064,16 Mar 23,6,regular,Round 6,Elwood Blue,Elsternwick Park,8,0,8,0,,,48,15,Completed,
+pending-ha002-r6-bye-basterfield-park,16 Mar 23,6,regular,Round 6,Bye,Basterfield Park,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA002073,23 Mar 23,7,regular,Round 7,Elsternwick Park,Kooyong Yellow,1,7,3,6,,,40,49,Completed,
+pending-ha002-r7-basterfield-park-black-rock,23 Mar 23,7,regular,Round 7,Basterfield Park,Black Rock,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha002-r7-kooyong-green-bye,23 Mar 23,7,regular,Round 7,Kooyong Green,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ha002-r7-parkdale-elwood-blue,23 Mar 23,7,regular,Round 7,Parkdale,Elwood Blue,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+HA002081,30 Mar 23,8,regular,Round 8,Elwood Blue,Basterfield Park,8,0,8,1,,,55,34,Completed,
+HA002082,30 Mar 23,8,regular,Round 8,Kooyong Yellow,Kooyong Green,1,7,2,6,,,29,45,Completed,
+HA002083,30 Mar 23,8,regular,Round 8,Parkdale,Black Rock,7,1,6,2,,,42,25,Completed,
+pending-ha002-r8-elsternwick-park-bye,30 Mar 23,8,regular,Round 8,Elsternwick Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA002091,06 Apr 23,9,regular,Round 9,Basterfield Park,Elsternwick Park,6,2,6,5,,,63,61,Completed,
+HA002092,06 Apr 23,9,regular,Round 9,Kooyong Green,Elwood Blue,6,2,5,4,,,42,38,Completed,
+HA002093,06 Apr 23,9,regular,Round 9,Black Rock,Kooyong Yellow,7,1,6,3,,,49,41,Completed,
+pending-ha002-r9-bye-parkdale,06 Apr 23,9,regular,Round 9,Bye,Parkdale,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA002103,27 Apr 23,10,regular,Round 10,Elwood Blue,Black Rock,4,4,0,0,,,3,6,Completed,
+pending-ha002-r10-elsternwick-park-kooyong-green,27 Apr 23,10,regular,Round 10,Elsternwick Park,Kooyong Green,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha002-r10-kooyong-yellow-bye,27 Apr 23,10,regular,Round 10,Kooyong Yellow,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ha002-r10-parkdale-basterfield-park,27 Apr 23,10,regular,Round 10,Parkdale,Basterfield Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+HA002111,04 May 23,11,regular,Round 11,Basterfield Park,Kooyong Yellow,1,7,4,6,,,52,55,Completed,
+HA002112,04 May 23,11,regular,Round 11,Kooyong Green,Parkdale,8,0,8,1,,,56,31,Completed,
+HA002113,04 May 23,11,regular,Round 11,Black Rock,Elsternwick Park,7,1,6,4,,,52,51,Completed,
+pending-ha002-r11-bye-elwood-blue,04 May 23,11,regular,Round 11,Bye,Elwood Blue,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA002122,11 May 23,12,regular,Round 12,Parkdale,Elsternwick Park,7,1,7,4,,,64,51,Completed,
+HA002123,11 May 23,12,regular,Round 12,Elwood Blue,Kooyong Yellow,1,7,4,6,,,47,43,Completed,
+HA002124,11 May 23,12,regular,Round 12,Kooyong Green,Basterfield Park,7,1,7,2,,,53,31,Completed,
+pending-ha002-r12-bye-black-rock,11 May 23,12,regular,Round 12,Bye,Black Rock,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA002131,18 May 23,13,regular,Round 13,Black Rock,Kooyong Green,1,7,3,6,,,36,53,Completed,
+HA002133,18 May 23,13,regular,Round 13,Kooyong Yellow,Parkdale,2,6,4,5,,,44,48,Completed,
+HA002134,18 May 23,13,regular,Round 13,Elsternwick Park,Elwood Blue,2,6,5,6,,,52,59,Completed,
+pending-ha002-r13-basterfield-park-bye,18 May 23,13,regular,Round 13,Basterfield Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA002141,25 May 23,14,regular,Round 14,Black Rock,Basterfield Park,7,1,6,4,,,50,49,Completed,
+HA002143,25 May 23,14,regular,Round 14,Kooyong Yellow,Elsternwick Park,1,7,3,6,,,39,46,Completed,
+HA002144,25 May 23,14,regular,Round 14,Elwood Blue,Parkdale,2,6,4,6,,,41,53,Completed,
+pending-ha002-r14-bye-kooyong-green,25 May 23,14,regular,Round 14,Bye,Kooyong Green,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA002301,,16,semi_final,Semi-final,Kooyong Green,Black Rock,6.5,1.5,4,2,,,38,23,Completed,
+HA002302,,16,semi_final,Semi-final,Elwood Blue,Parkdale,7,1,6,2,,,45,30,Completed,
+HA002321,,17,grand_final,Grand final · TROLS entry 2,Kooyong Green,Elwood Blue,1.5,6.5,3,4,,,33,37,Completed,

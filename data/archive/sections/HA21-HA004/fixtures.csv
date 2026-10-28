@@ -1,0 +1,61 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+HA004011,01 Feb 18,1,regular,Round 1,Dingley,Hawksburn,6,2,4,4,,,35,30,Completed,
+HA004012,01 Feb 18,1,regular,Round 1,St James,St Cecilia's,8,0,8,1,,,53,26,Completed,
+HA004014,01 Feb 18,1,regular,Round 1,Chadstone Red,Chadstone Blue,6,2,4,4,,,36,32,Completed,
+pending-ha004-r1-sth-hawthorn-bye,01 Feb 18,1,regular,Round 1,Sth Hawthorn,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA004021,08 Feb 18,2,regular,Round 2,Chadstone Blue,Dingley,6,2,5,4,,,42,31,Completed,
+HA004022,08 Feb 18,2,regular,Round 2,Hawksburn,St James,6,2,5,4,,,38,38,Completed,
+HA004023,08 Feb 18,2,regular,Round 2,St Cecilia's,Sth Hawthorn,0,8,1,8,,,30,53,Completed,
+pending-ha004-r2-bye-chadstone-red,08 Feb 18,2,regular,Round 2,Bye,Chadstone Red,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA004032,15 Feb 18,3,regular,Round 3,St James,Chadstone Blue,7,1,6,4,,,52,44,Completed,
+HA004033,15 Feb 18,3,regular,Round 3,Sth Hawthorn,Hawksburn,6,2,5,4,,,45,35,Completed,
+HA004034,15 Feb 18,3,regular,Round 3,Chadstone Red,St Cecilia's,7,1,6,2,,,46,32,Completed,
+pending-ha004-r3-dingley-bye,15 Feb 18,3,regular,Round 3,Dingley,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA004041,22 Feb 18,4,regular,Round 4,St Cecilia's,Dingley,6,2,4,4,,,32,28,Completed,
+HA004043,22 Feb 18,4,regular,Round 4,Chadstone Blue,Sth Hawthorn,8,0,8,2,,,56,35,Completed,
+HA004044,22 Feb 18,4,regular,Round 4,Hawksburn,Chadstone Red,1,7,3,6,,,34,47,Completed,
+pending-ha004-r4-bye-st-james,22 Feb 18,4,regular,Round 4,Bye,St James,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA004051,01 Mar 18,5,regular,Round 5,Sth Hawthorn,Chadstone Red,7,1,7,2,,,51,37,Completed,
+HA004053,01 Mar 18,5,regular,Round 5,St Cecilia's,Hawksburn,4,4,0,0,,,5,0,Completed,
+HA004054,01 Mar 18,5,regular,Round 5,Dingley,St James,1,7,3,6,,,27,42,Completed,
+pending-ha004-r5-chadstone-blue-bye,01 Mar 18,5,regular,Round 5,Chadstone Blue,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA004061,08 Mar 18,6,regular,Round 6,St James,Sth Hawthorn,6,2,4,4,,,33,29,Completed,
+HA004062,08 Mar 18,6,regular,Round 6,Chadstone Red,Dingley,7.5,0.5,7,0,,,42,14,Completed,
+HA004064,08 Mar 18,6,regular,Round 6,Hawksburn,Chadstone Blue,0,8,1,8,,,27,53,Completed,
+pending-ha004-r6-bye-st-cecilia-s,08 Mar 18,6,regular,Round 6,Bye,St Cecilia's,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA004071,15 Mar 18,7,regular,Round 7,Dingley,Sth Hawthorn,2,6,4,5,,,33,37,Completed,
+HA004072,15 Mar 18,7,regular,Round 7,St James,Chadstone Red,6,2,5,5,,,49,39,Completed,
+HA004073,15 Mar 18,7,regular,Round 7,Chadstone Blue,St Cecilia's,8,0,8,2,,,58,40,Completed,
+pending-ha004-r7-bye-hawksburn,15 Mar 18,7,regular,Round 7,Bye,Hawksburn,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA004081,22 Mar 18,8,regular,Round 8,Hawksburn,Dingley,1,7,2,6,,,22,44,Completed,
+HA004082,22 Mar 18,8,regular,Round 8,St Cecilia's,St James,1,7,2,6,,,27,39,Completed,
+HA004084,22 Mar 18,8,regular,Round 8,Chadstone Blue,Chadstone Red,6,2,4,4,,,33,32,Completed,
+pending-ha004-r8-bye-sth-hawthorn,22 Mar 18,8,regular,Round 8,Bye,Sth Hawthorn,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA004091,29 Mar 18,9,regular,Round 9,Dingley,Chadstone Blue,2,6,4,5,,,35,48,Completed,
+HA004092,29 Mar 18,9,regular,Round 9,St James,Hawksburn,2,6,4,4,,,24,25,Completed,
+HA004093,29 Mar 18,9,regular,Round 9,Sth Hawthorn,St Cecilia's,2,6,4,4,,,30,39,Completed,
+pending-ha004-r9-chadstone-red-bye,29 Mar 18,9,regular,Round 9,Chadstone Red,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA004102,19 Apr 18,10,regular,Round 10,Chadstone Blue,St James,6,2,5,5,,,47,41,Completed,
+HA004103,19 Apr 18,10,regular,Round 10,Hawksburn,Sth Hawthorn,1,7,3,6,,,41,49,Completed,
+pending-ha004-r10-bye-dingley,19 Apr 18,10,regular,Round 10,Bye,Dingley,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ha004-r10-st-cecilia-s-chadstone-red,19 Apr 18,10,regular,Round 10,St Cecilia's,Chadstone Red,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+HA004111,26 Apr 18,11,regular,Round 11,Dingley,St Cecilia's,7,1,6,3,,,43,27,Completed,
+HA004113,26 Apr 18,11,regular,Round 11,Sth Hawthorn,Chadstone Blue,0,8,1,8,,,36,55,Completed,
+HA004114,26 Apr 18,11,regular,Round 11,Chadstone Red,Hawksburn,7,1,7,2,,,52,30,Completed,
+pending-ha004-r11-st-james-bye,26 Apr 18,11,regular,Round 11,St James,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA004121,03 May 18,12,regular,Round 12,Chadstone Red,Sth Hawthorn,8,0,8,1,,,53,22,Completed,
+HA004123,03 May 18,12,regular,Round 12,Hawksburn,St Cecilia's,6,2,5,4,,,46,45,Completed,
+HA004124,03 May 18,12,regular,Round 12,St James,Dingley,6,2,4,4,,,35,29,Completed,
+pending-ha004-r12-bye-chadstone-blue,03 May 18,12,regular,Round 12,Bye,Chadstone Blue,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA004131,10 May 18,13,regular,Round 13,Sth Hawthorn,St James,4,4,3,3,,,33,32,Completed,
+HA004132,10 May 18,13,regular,Round 13,Dingley,Chadstone Red,7,1,7,2,,,52,33,Completed,
+HA004134,10 May 18,13,regular,Round 13,Chadstone Blue,Hawksburn,7,1,6,3,,,42,31,Completed,
+pending-ha004-r13-st-cecilia-s-bye,10 May 18,13,regular,Round 13,St Cecilia's,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA004141,17 May 18,14,regular,Round 14,Sth Hawthorn,Dingley,6,2,5,4,,,43,30,Completed,
+HA004142,17 May 18,14,regular,Round 14,Chadstone Red,St James,7,1,6,4,,,53,45,Completed,
+HA004143,17 May 18,14,regular,Round 14,St Cecilia's,Chadstone Blue,1,7,2,6,,,26,44,Completed,
+pending-ha004-r14-hawksburn-bye,17 May 18,14,regular,Round 14,Hawksburn,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA004301,,16,semi_final,Semi-final,Chadstone Blue,St James,6,2,5,4,,,48,38,Completed,
+HA004302,,16,semi_final,Semi-final,Chadstone Red,Sth Hawthorn,7.5,0.5,7,2,,,50,34,Completed,
+HA004311,,16,semi_final,Semi-final,St James,Chadstone Red,2,6,4,5,,,36,39,Completed,
+HA004321,,17,grand_final,Grand final · TROLS entry 2,Chadstone Blue,Chadstone Red,7,1,7,3,,,49,43,Completed,

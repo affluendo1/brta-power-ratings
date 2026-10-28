@@ -1,0 +1,87 @@
+{
+  "asset_id": "HA24-HA002",
+  "competition_code": "HA",
+  "competition_label": "Thursday AM - Spring 2019",
+  "season_id": "HA24",
+  "season_label": "Spring 2019",
+  "source_section_code": "HA002",
+  "section_label": "Ladies Rubbers 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Kooyong Green",
+      "wins": 10,
+      "points": 86,
+      "percentage": 136.5,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Black Rock",
+      "wins": 10,
+      "points": 84,
+      "percentage": 124.42,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Kooyong Yellow",
+      "wins": 8,
+      "points": 68,
+      "percentage": 120.76,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Basterfield Park",
+      "wins": 7,
+      "points": 57,
+      "percentage": 97.96,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Albert Park",
+      "wins": 4,
+      "points": 39,
+      "percentage": 68.9,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Mentone",
+      "wins": 3,
+      "points": 26,
+      "percentage": 70.59,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "HA24-HA002",
+  "fixtures": 46,
+  "completed_fixtures": 43,
+  "draw_fixtures": 57,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 172,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

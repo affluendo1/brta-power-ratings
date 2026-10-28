@@ -1,0 +1,60 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+HA001011,07 Feb 19,1,regular,Round 1,Elwood,Eaglemont,1,7,2,6,,,33,43,Completed,
+HA001013,07 Feb 19,1,regular,Round 1,Hampton,Glen Waverley,6,2,4,4,,,39,35,Completed,
+HA001014,07 Feb 19,1,regular,Round 1,Kooyong Green,Kooyong Yellow,0,8,0,8,,,26,50,Completed,
+pending-ha001-r1-bye-bltc,07 Feb 19,1,regular,Round 1,Bye,BLTC,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA001021,14 Feb 19,2,regular,Round 2,Kooyong Yellow,Elwood,7,1,6,4,,,48,40,Completed,
+HA001023,14 Feb 19,2,regular,Round 2,BLTC,Hampton,2,6,4,4,,,31,32,Completed,
+HA001024,14 Feb 19,2,regular,Round 2,Glen Waverley,Kooyong Green,6,2,5,4,,,45,42,Completed,
+pending-ha001-r2-eaglemont-bye,14 Feb 19,2,regular,Round 2,Eaglemont,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA001031,21 Feb 19,3,regular,Round 3,Elwood,Glen Waverley,0,8,0,8,,,28,49,Completed,
+HA001033,21 Feb 19,3,regular,Round 3,Hampton,Eaglemont,7,1,6,3,,,46,30,Completed,
+HA001034,21 Feb 19,3,regular,Round 3,Kooyong Green,BLTC,2,6,4,6,,,47,54,Completed,
+pending-ha001-r3-bye-kooyong-yellow,21 Feb 19,3,regular,Round 3,Bye,Kooyong Yellow,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA001041,28 Feb 19,4,regular,Round 4,BLTC,Elwood,7.5,0.5,7,0,,,42,10,Completed,
+HA001043,28 Feb 19,4,regular,Round 4,Kooyong Yellow,Hampton,6,2,6,6,,,63,58,Completed,
+HA001044,28 Feb 19,4,regular,Round 4,Eaglemont,Kooyong Green,4,4,3,2,,,27,22,Completed,
+pending-ha001-r4-glen-waverley-bye,28 Feb 19,4,regular,Round 4,Glen Waverley,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA001051,07 Mar 19,5,regular,Round 5,Hampton,Kooyong Green,7,1,6,3,,,44,26,Completed,
+HA001052,07 Mar 19,5,regular,Round 5,Kooyong Yellow,Glen Waverley,2,6,4,5,,,35,41,Completed,
+HA001053,07 Mar 19,5,regular,Round 5,BLTC,Eaglemont,8,0,8,1,,,54,23,Completed,
+pending-ha001-r5-elwood-bye,07 Mar 19,5,regular,Round 5,Elwood,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA001062,14 Mar 19,6,regular,Round 6,Kooyong Green,Elwood,6,2,6,5,,,61,53,Completed,
+HA001063,14 Mar 19,6,regular,Round 6,Glen Waverley,BLTC,7,1,7,5,,,67,55,Completed,
+HA001064,14 Mar 19,6,regular,Round 6,Eaglemont,Kooyong Yellow,1,7,3,6,,,31,45,Completed,
+pending-ha001-r6-bye-hampton,14 Mar 19,6,regular,Round 6,Bye,Hampton,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA001071,21 Mar 19,7,regular,Round 7,Elwood,Hampton,0,8,2,8,,,44,60,Completed,
+HA001073,21 Mar 19,7,regular,Round 7,Kooyong Yellow,BLTC,1,7,3,6,,,39,44,Completed,
+HA001074,21 Mar 19,7,regular,Round 7,Glen Waverley,Eaglemont,2,6,4,5,,,45,44,Completed,
+pending-ha001-r7-bye-kooyong-green,21 Mar 19,7,regular,Round 7,Bye,Kooyong Green,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA001081,28 Mar 19,8,regular,Round 8,Eaglemont,Elwood,7,1,7,3,,,50,31,Completed,
+HA001083,28 Mar 19,8,regular,Round 8,Glen Waverley,Hampton,7,1,6,3,,,39,38,Completed,
+HA001084,28 Mar 19,8,regular,Round 8,Kooyong Yellow,Kooyong Green,7,1,7,3,,,51,35,Completed,
+pending-ha001-r8-bltc-bye,28 Mar 19,8,regular,Round 8,BLTC,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA001091,04 Apr 19,9,regular,Round 9,Elwood,Kooyong Yellow,1,7,3,7,,,32,55,Completed,
+HA001093,04 Apr 19,9,regular,Round 9,Hampton,BLTC,1,7,2,7,,,25,49,Completed,
+HA001094,04 Apr 19,9,regular,Round 9,Kooyong Green,Glen Waverley,2,6,5,5,,,42,47,Completed,
+pending-ha001-r9-bye-eaglemont,04 Apr 19,9,regular,Round 9,Bye,Eaglemont,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA001101,02 May 19,10,regular,Round 10,Glen Waverley,Elwood,8,0,8,0,,,48,16,Completed,
+HA001103,02 May 19,10,regular,Round 10,Eaglemont,Hampton,6,2,5,4,,,40,39,Completed,
+pending-ha001-r10-bltc-kooyong-green,02 May 19,10,regular,Round 10,BLTC,Kooyong Green,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha001-r10-kooyong-yellow-bye,02 May 19,10,regular,Round 10,Kooyong Yellow,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA001111,09 May 19,11,regular,Round 11,Elwood,BLTC,6,2,5,4,,,39,43,Completed,
+HA001113,09 May 19,11,regular,Round 11,Hampton,Kooyong Yellow,6,2,4,4,,,38,32,Completed,
+HA001114,09 May 19,11,regular,Round 11,Kooyong Green,Eaglemont,1,7,3,6,,,37,49,Completed,
+pending-ha001-r11-bye-glen-waverley,09 May 19,11,regular,Round 11,Bye,Glen Waverley,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA001121,16 May 19,12,regular,Round 12,Kooyong Green,Hampton,8,0,8,1,,,51,32,Completed,
+HA001122,16 May 19,12,regular,Round 12,Glen Waverley,Kooyong Yellow,2,6,4,5,,,37,37,Completed,
+HA001123,16 May 19,12,regular,Round 12,Eaglemont,BLTC,1,7,4,6,,,42,51,Completed,
+pending-ha001-r12-bye-elwood,16 May 19,12,regular,Round 12,Bye,Elwood,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA001132,23 May 19,13,regular,Round 13,Elwood,Kooyong Green,2,6,4,5,,,41,49,Completed,
+HA001133,23 May 19,13,regular,Round 13,BLTC,Glen Waverley,1,7,3,7,,,29,50,Completed,
+HA001134,23 May 19,13,regular,Round 13,Kooyong Yellow,Eaglemont,2,6,4,5,,,38,42,Completed,
+pending-ha001-r13-hampton-bye,23 May 19,13,regular,Round 13,Hampton,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA001144,30 May 19,14,regular,Round 14,Eaglemont,Glen Waverley,7,1,6,3,,,45,34,Completed,
+pending-ha001-r14-bltc-kooyong-yellow,30 May 19,14,regular,Round 14,BLTC,Kooyong Yellow,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha001-r14-hampton-elwood,30 May 19,14,regular,Round 14,Hampton,Elwood,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha001-r14-kooyong-green-bye,30 May 19,14,regular,Round 14,Kooyong Green,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA001301,,16,semi_final,Semi-final,Glen Waverley,Eaglemont,7,1,5,1,,,32,21,Completed,
+HA001302,,16,semi_final,Semi-final,Kooyong Yellow,BLTC,0.5,7.5,3,6,,,45,54,Completed,
+HA001321,,17,grand_final,Grand final · TROLS entry 2,Glen Waverley,BLTC,1,7,0,4,,,9,24,Completed,

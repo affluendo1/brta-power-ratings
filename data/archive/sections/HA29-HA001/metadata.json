@@ -1,0 +1,106 @@
+{
+  "asset_id": "HA29-HA001",
+  "competition_code": "HA",
+  "competition_label": "Thursday AM - Autumn 2022",
+  "season_id": "HA29",
+  "season_label": "Autumn 2022",
+  "source_section_code": "HA001",
+  "section_label": "Section A1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Donvale",
+      "wins": 11,
+      "points": 85,
+      "percentage": 122.7,
+      "marker": ""
+    },
+    {
+      "position": 2,
+      "team": "Eaglemont",
+      "wins": 8,
+      "points": 74,
+      "percentage": 131.73,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Glen Waverley",
+      "wins": 7,
+      "points": 61,
+      "percentage": 112.4,
+      "marker": "R"
+    },
+    {
+      "position": 4,
+      "team": "Elsternwick Park Blue",
+      "wins": 8,
+      "points": 61,
+      "percentage": 110.85,
+      "marker": "P"
+    },
+    {
+      "position": 5,
+      "team": "Kooyong Green",
+      "wins": 7,
+      "points": 58,
+      "percentage": 86.0,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Hampton",
+      "wins": 3,
+      "points": 49,
+      "percentage": 95.35,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Kooyong Purple",
+      "wins": 5,
+      "points": 45,
+      "percentage": 91.99,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "Kooyong Yellow",
+      "wins": 0,
+      "points": 15,
+      "percentage": 65.17,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "HA29-HA001",
+  "fixtures": 59,
+  "completed_fixtures": 52,
+  "draw_fixtures": 48,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 208,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for HA001301 doubles No. 3: '2-3'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for HA001302 doubles No. 3: '6-0 3-6'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

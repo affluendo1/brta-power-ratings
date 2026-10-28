@@ -1,0 +1,102 @@
+{
+  "asset_id": "HA36-HA001",
+  "competition_code": "HA",
+  "competition_label": "Thursday AM - Spring 2025",
+  "season_id": "HA36",
+  "season_label": "Spring 2025",
+  "source_section_code": "HA001",
+  "section_label": "Section A1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Canterbury",
+      "wins": 10,
+      "points": 77,
+      "percentage": 133.41,
+      "marker": ""
+    },
+    {
+      "position": 2,
+      "team": "Kooyong Pink",
+      "wins": 9,
+      "points": 72,
+      "percentage": 133.5,
+      "marker": "P"
+    },
+    {
+      "position": 3,
+      "team": "Donvale",
+      "wins": 5,
+      "points": 48,
+      "percentage": 106.43,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Eaglemont",
+      "wins": 5,
+      "points": 46,
+      "percentage": 111.08,
+      "marker": "R"
+    },
+    {
+      "position": 5,
+      "team": "Hampton",
+      "wins": 5,
+      "points": 37,
+      "percentage": 82.72,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "BLTC White",
+      "wins": 3,
+      "points": 31,
+      "percentage": 71.07,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Kooyong Yellow",
+      "wins": 2,
+      "points": 25,
+      "percentage": 77.09,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "HA36-HA001",
+  "fixtures": 59,
+  "completed_fixtures": 44,
+  "draw_fixtures": 48,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 175,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for HA001071 doubles No. 3: '1-2'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for HA001073 doubles No. 3: '1-2'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for HA001073 doubles No. 4: '1-2'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for HA001074 doubles No. 3: '3-1'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for HA001074 doubles No. 4: '2-1'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for HA001321 doubles No. 4: '4-6 5-1'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

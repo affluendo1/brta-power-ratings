@@ -1,0 +1,139 @@
+{
+  "asset_id": "HA16-HA001",
+  "competition_code": "HA",
+  "competition_label": "Thursday AM - Autumn 2016",
+  "season_id": "HA16",
+  "season_label": "Autumn 2016",
+  "source_section_code": "HA001",
+  "section_label": "Section A/1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Glen Waverley A",
+      "wins": 13,
+      "points": 110,
+      "percentage": 179.05,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "Eaglemont A",
+      "wins": 12,
+      "points": 95,
+      "percentage": 136.17,
+      "marker": "P"
+    },
+    {
+      "position": 3,
+      "team": "BLTC A",
+      "wins": 10,
+      "points": 87.5,
+      "percentage": 145.75,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Kooyong Gren A",
+      "wins": 10,
+      "points": 79.5,
+      "percentage": 114.31,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Hampton A",
+      "wins": 8,
+      "points": 73.5,
+      "percentage": 114.2,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Elwood 1",
+      "wins": 7,
+      "points": 66,
+      "percentage": 103.11,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Glen Iris Valley 1",
+      "wins": 6,
+      "points": 57,
+      "percentage": 92.42,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "Kooyong Yell A",
+      "wins": 6,
+      "points": 52,
+      "percentage": 85.65,
+      "marker": ""
+    },
+    {
+      "position": 9,
+      "team": "Narre Warren Nth Blue 1",
+      "wins": 3,
+      "points": 45.5,
+      "percentage": 80.03,
+      "marker": ""
+    },
+    {
+      "position": 10,
+      "team": "Narre Warren Nth Yell 1",
+      "wins": 4,
+      "points": 41,
+      "percentage": 78.87,
+      "marker": ""
+    },
+    {
+      "position": 11,
+      "team": "East Malvern 1",
+      "wins": 4,
+      "points": 38,
+      "percentage": 74.89,
+      "marker": ""
+    },
+    {
+      "position": 12,
+      "team": "St Pauls 1",
+      "wins": 2,
+      "points": 23,
+      "percentage": 60.28,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "HA16-HA001",
+  "fixtures": 98,
+  "completed_fixtures": 88,
+  "draw_fixtures": 46,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 352,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for HA001065 doubles No. 3: '6-4 4-2'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for HA001066 doubles No. 4: '6-2 2-5'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for HA001321 doubles No. 4: '6-3 2-1'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

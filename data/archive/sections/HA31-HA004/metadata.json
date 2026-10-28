@@ -1,0 +1,84 @@
+{
+  "asset_id": "HA31-HA004",
+  "competition_code": "HA",
+  "competition_label": "Thursday AM - Autumn 2023",
+  "season_id": "HA31",
+  "season_label": "Autumn 2023",
+  "source_section_code": "HA004",
+  "section_label": "Section 4",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Hawksburn",
+      "wins": 9,
+      "points": 72,
+      "percentage": 143.84,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Dingley",
+      "wins": 5,
+      "points": 53,
+      "percentage": 115.89,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "St Leonard's",
+      "wins": 4,
+      "points": 50,
+      "percentage": 116.23,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Chadstone Blue",
+      "wins": 4,
+      "points": 46,
+      "percentage": 105.43,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "St Cecilia's",
+      "wins": 1,
+      "points": 19,
+      "percentage": 47.96,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "HA31-HA004",
+  "fixtures": 46,
+  "completed_fixtures": 25,
+  "draw_fixtures": 46,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 92,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for HA004101 doubles No. 1: '0-6 3-2'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for HA004101 doubles No. 2: '6-7 0-1'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for HA004143 doubles No. 4: '6-2 1-2'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for HA004321 doubles No. 3: '6-1 1-6 6-6'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

@@ -1,0 +1,60 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+HA001011,05 Feb 26,1,regular,Round 1,Hampton,Eaglemont,7,1,7,2,,,51,26,Completed,
+HA001012,05 Feb 26,1,regular,Round 1,Kooyong Yellow,BLTC,8,0,8,1,,,55,33,Completed,
+HA001014,05 Feb 26,1,regular,Round 1,Canterbury,Kooyong Mauve,7,1,6,2,,,43,23,Completed,
+pending-ha001-r1-glen-waverley-bye,05 Feb 26,1,regular,Round 1,Glen Waverley,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA001021,19 Feb 26,2,regular,Round 2,Kooyong Mauve,Hampton,1,7,2,7,,,27,53,Completed,
+HA001022,19 Feb 26,2,regular,Round 2,Eaglemont,Kooyong Yellow,6,2,5,4,,,49,36,Completed,
+HA001023,19 Feb 26,2,regular,Round 2,BLTC,Glen Waverley,2,6,4,5,,,36,48,Completed,
+pending-ha001-r2-bye-canterbury,19 Feb 26,2,regular,Round 2,Bye,Canterbury,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA001032,26 Feb 26,3,regular,Round 3,Kooyong Yellow,Kooyong Mauve,0,8,1,8,,,30,52,Completed,
+HA001033,26 Feb 26,3,regular,Round 3,Glen Waverley,Eaglemont,2,6,5,5,,,49,56,Completed,
+HA001034,26 Feb 26,3,regular,Round 3,Canterbury,BLTC,7,1,7,2,,,54,24,Completed,
+pending-ha001-r3-hampton-bye,26 Feb 26,3,regular,Round 3,Hampton,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA001041,05 Mar 26,4,regular,Round 4,BLTC,Hampton,0,8,1,8,,,32,53,Completed,
+HA001043,05 Mar 26,4,regular,Round 4,Kooyong Mauve,Glen Waverley,7,1,7,2,,,51,28,Completed,
+HA001044,05 Mar 26,4,regular,Round 4,Eaglemont,Canterbury,7,1,6,4,,,46,46,Completed,
+pending-ha001-r4-bye-kooyong-yellow,05 Mar 26,4,regular,Round 4,Bye,Kooyong Yellow,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA001051,12 Mar 26,5,regular,Round 5,Glen Waverley,Canterbury,1,7,3,6,,,32,42,Completed,
+HA001053,12 Mar 26,5,regular,Round 5,BLTC,Eaglemont,0,8,0,8,,,25,50,Completed,
+HA001054,12 Mar 26,5,regular,Round 5,Hampton,Kooyong Yellow,4.5,3.5,2,1,,,20,12,Completed,
+pending-ha001-r5-kooyong-mauve-bye,12 Mar 26,5,regular,Round 5,Kooyong Mauve,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA001061,19 Mar 26,6,regular,Round 6,Kooyong Yellow,Glen Waverley,0,8,1,8,,,33,52,Completed,
+HA001062,19 Mar 26,6,regular,Round 6,Canterbury,Hampton,7,1,7,2,,,52,28,Completed,
+HA001064,19 Mar 26,6,regular,Round 6,Eaglemont,Kooyong Mauve,7,1,6,4,,,55,55,Completed,
+pending-ha001-r6-bye-bltc,19 Mar 26,6,regular,Round 6,Bye,BLTC,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA001071,26 Mar 26,7,regular,Round 7,Hampton,Glen Waverley,6.5,1.5,5,4,,,51,47,Completed,
+HA001072,26 Mar 26,7,regular,Round 7,Kooyong Yellow,Canterbury,1,7,2,7,,,31,53,Completed,
+HA001073,26 Mar 26,7,regular,Round 7,Kooyong Mauve,BLTC,8,0,8,0,,,48,11,Completed,
+pending-ha001-r7-bye-eaglemont,26 Mar 26,7,regular,Round 7,Bye,Eaglemont,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA001081,02 Apr 26,8,regular,Round 8,Eaglemont,Hampton,1,7,3,6,,,36,47,Completed,
+HA001084,02 Apr 26,8,regular,Round 8,Kooyong Mauve,Canterbury,6,2,4,4,,,35,32,Completed,
+pending-ha001-r8-bltc-kooyong-yellow,02 Apr 26,8,regular,Round 8,BLTC,Kooyong Yellow,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+pending-ha001-r8-bye-glen-waverley,02 Apr 26,8,regular,Round 8,Bye,Glen Waverley,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA001091,23 Apr 26,9,regular,Round 9,Hampton,Kooyong Mauve,1,7,3,7,,,42,57,Completed,
+HA001092,23 Apr 26,9,regular,Round 9,Kooyong Yellow,Eaglemont,0,8,0,8,,,11,48,Completed,
+HA001093,23 Apr 26,9,regular,Round 9,Glen Waverley,BLTC,8,0,8,0,,,48,9,Completed,
+pending-ha001-r9-canterbury-bye,23 Apr 26,9,regular,Round 9,Canterbury,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA001102,30 Apr 26,10,regular,Round 10,Kooyong Mauve,Kooyong Yellow,8,0,8,2,,,56,40,Completed,
+HA001103,30 Apr 26,10,regular,Round 10,Eaglemont,Glen Waverley,6,2,5,4,,,45,43,Completed,
+HA001104,30 Apr 26,10,regular,Round 10,BLTC,Canterbury,0,8,1,8,,,32,54,Completed,
+pending-ha001-r10-bye-hampton,30 Apr 26,10,regular,Round 10,Bye,Hampton,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ha001-r11-canterbury-eaglemont,07 May 26,11,regular,Round 11,Canterbury,Eaglemont,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha001-r11-glen-waverley-kooyong-mauve,07 May 26,11,regular,Round 11,Glen Waverley,Kooyong Mauve,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha001-r11-hampton-bltc,07 May 26,11,regular,Round 11,Hampton,BLTC,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha001-r11-kooyong-yellow-bye,07 May 26,11,regular,Round 11,Kooyong Yellow,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA001121,14 May 26,12,regular,Round 12,Canterbury,Glen Waverley,6,2,5,4,,,44,40,Completed,
+HA001123,14 May 26,12,regular,Round 12,Eaglemont,BLTC,8,0,8,0,,,48,8,Completed,
+HA001124,14 May 26,12,regular,Round 12,Kooyong Yellow,Hampton,1,7,2,7,,,31,56,Completed,
+pending-ha001-r12-bye-kooyong-mauve,14 May 26,12,regular,Round 12,Bye,Kooyong Mauve,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA001131,21 May 26,13,regular,Round 13,Glen Waverley,Kooyong Yellow,8,0,8,1,,,51,31,Completed,
+HA001132,21 May 26,13,regular,Round 13,Hampton,Canterbury,2,6,4,5,,,39,44,Completed,
+pending-ha001-r13-bltc-bye,21 May 26,13,regular,Round 13,BLTC,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ha001-r13-kooyong-mauve-eaglemont,21 May 26,13,regular,Round 13,Kooyong Mauve,Eaglemont,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+pending-ha001-r14-bltc-kooyong-mauve,28 May 26,14,regular,Round 14,BLTC,Kooyong Mauve,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha001-r14-canterbury-kooyong-yellow,28 May 26,14,regular,Round 14,Canterbury,Kooyong Yellow,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha001-r14-eaglemont-bye,28 May 26,14,regular,Round 14,Eaglemont,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ha001-r14-glen-waverley-hampton,28 May 26,14,regular,Round 14,Glen Waverley,Hampton,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+HA001301,,16,semi_final,Semi-final,Eaglemont,Kooyong Mauve,1,7,2,6,,,32,47,Completed,
+HA001302,,16,semi_final,Semi-final,Canterbury,Hampton,7,1,6,3,,,41,37,Completed,
+HA001321,,17,grand_final,Grand final · TROLS entry 2,Canterbury,Kooyong Mauve,1,7,1,5,,,23,31,Completed,

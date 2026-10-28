@@ -1,0 +1,115 @@
+{
+  "asset_id": "HA9-HA001",
+  "competition_code": "HA",
+  "competition_label": "Thursday AM - Spring 2012",
+  "season_id": "HA9",
+  "season_label": "Spring 2012",
+  "source_section_code": "HA001",
+  "section_label": "A Grade",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Caulfield Rec",
+      "wins": 10,
+      "points": 79,
+      "percentage": 132.52,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Glen Waverley",
+      "wins": 9,
+      "points": 76,
+      "percentage": 130.38,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Kooyong 1",
+      "wins": 7,
+      "points": 73,
+      "percentage": 124.17,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "BLTC",
+      "wins": 7,
+      "points": 69,
+      "percentage": 114.26,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Eaglemont",
+      "wins": 5,
+      "points": 56,
+      "percentage": 93.0,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Hampton",
+      "wins": 4,
+      "points": 50,
+      "percentage": 97.54,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Kooyong 2",
+      "wins": 1,
+      "points": 25,
+      "percentage": 67.32,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "East Malvern",
+      "wins": 1,
+      "points": 20,
+      "percentage": 65.68,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "HA9-HA001",
+  "fixtures": 60,
+  "completed_fixtures": 55,
+  "draw_fixtures": 49,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 208,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for HA001031 doubles No. 1: '0-2'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for HA001031 doubles No. 2: '0-1'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for HA001032 doubles No. 1: '2-2'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for HA001032 doubles No. 2: '2-2'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for HA001034 doubles No. 1: '1-4'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for HA001034 doubles No. 2: '3-3'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for HA001103 doubles No. 3: '6-1 2-0'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for HA001103 doubles No. 4: '2-6 4-2'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for HA001301 doubles No. 4: '6-1 6-7'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for HA001311 doubles No. 3: '6-2 2-1'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for HA001311 doubles No. 4: '1-6 6-0'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

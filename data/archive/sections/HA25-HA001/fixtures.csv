@@ -1,0 +1,19 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+HA001012,06 Feb 20,1,regular,Round 1,Kooyong Green,Glen Waverley,2,6,4,4,,,31,37,Completed,
+HA001013,06 Feb 20,1,regular,Round 1,Hampton,Kooyong Yellow,0,8,0,8,,,18,49,Completed,
+pending-ha001-r1-bltc-eaglemont,06 Feb 20,1,regular,Round 1,BLTC,Eaglemont,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+HA001022,13 Feb 20,2,regular,Round 2,Glen Waverley,Hampton,8,0,8,1,,,55,28,Completed,
+HA001023,13 Feb 20,2,regular,Round 2,Eaglemont,Kooyong Green,7,1,6,2,,,45,32,Completed,
+pending-ha001-r2-kooyong-yellow-bltc,13 Feb 20,2,regular,Round 2,Kooyong Yellow,BLTC,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+HA001031,20 Feb 20,3,regular,Round 3,BLTC,Kooyong Green,8,0,8,1,,,52,24,Completed,
+HA001032,20 Feb 20,3,regular,Round 3,Hampton,Eaglemont,0,8,0,8,,,23,49,Completed,
+HA001033,20 Feb 20,3,regular,Round 3,Kooyong Yellow,Glen Waverley,1,7,3,6,,,39,40,Completed,
+HA001041,27 Feb 20,4,regular,Round 4,Glen Waverley,BLTC,7,1,7,3,,,54,33,Completed,
+HA001042,27 Feb 20,4,regular,Round 4,Eaglemont,Kooyong Yellow,0,8,1,8,,,34,54,Completed,
+HA001043,27 Feb 20,4,regular,Round 4,Kooyong Green,Hampton,7,1,6,3,,,46,37,Completed,
+HA001052,05 Mar 20,5,regular,Round 5,Glen Waverley,Eaglemont,4,4,0,0,,,0,0,Completed,
+pending-ha001-r5-bltc-hampton,05 Mar 20,5,regular,Round 5,BLTC,Hampton,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha001-r5-kooyong-yellow-kooyong-green,05 Mar 20,5,regular,Round 5,Kooyong Yellow,Kooyong Green,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+HA001061,12 Mar 20,6,regular,Round 6,Eaglemont,BLTC,1,7,2,7,,,30,49,Completed,
+HA001062,12 Mar 20,6,regular,Round 6,Glen Waverley,Kooyong Green,2,6,4,5,,,36,41,Completed,
+HA001063,12 Mar 20,6,regular,Round 6,Kooyong Yellow,Hampton,7,1,6,2,,,44,31,Completed,

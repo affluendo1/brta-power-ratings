@@ -1,0 +1,99 @@
+{
+  "asset_id": "HA15-HA003",
+  "competition_code": "HA",
+  "competition_label": "Thursday AM - Spring 2015",
+  "season_id": "HA15",
+  "season_label": "Spring 2015",
+  "source_section_code": "HA003",
+  "section_label": "Section 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "St Finbar's 2",
+      "wins": 7,
+      "points": 75.5,
+      "percentage": 174.33,
+      "marker": ""
+    },
+    {
+      "position": 2,
+      "team": "St Finbar's 1",
+      "wins": 9,
+      "points": 74,
+      "percentage": 171.27,
+      "marker": "P"
+    },
+    {
+      "position": 3,
+      "team": "Caulfield Rec",
+      "wins": 6,
+      "points": 58,
+      "percentage": 114.77,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Dendy Park",
+      "wins": 4,
+      "points": 45,
+      "percentage": 99.7,
+      "marker": "R"
+    },
+    {
+      "position": 5,
+      "team": "Albert Park",
+      "wins": 2,
+      "points": 38,
+      "percentage": 90.73,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Black Rock",
+      "wins": 2,
+      "points": 32,
+      "percentage": 63.13,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Belvedere Park",
+      "wins": 0,
+      "points": 13.5,
+      "percentage": 45.57,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "HA15-HA003",
+  "fixtures": 60,
+  "completed_fixtures": 35,
+  "draw_fixtures": 49,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 134,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for HA003111 doubles No. 3: '2-6 7-5'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for HA003311 doubles No. 3: '6-3 4-6'. Missing score not inferred; excluded from ratings and game totals.",
+    "Fixture game totals do not match rubbers for HA003321: TROLS team total 27-14; complete-score total 26-14. Both published records retained."
+  ]
+}

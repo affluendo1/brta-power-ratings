@@ -1,0 +1,87 @@
+{
+  "asset_id": "HA25-HA001",
+  "competition_code": "HA",
+  "competition_label": "Thursday AM - Autumn 2020",
+  "season_id": "HA25",
+  "season_label": "Autumn 2020",
+  "source_section_code": "HA001",
+  "section_label": "Section A1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Kooyong Yellow",
+      "wins": 3,
+      "points": 36,
+      "percentage": 190.24,
+      "marker": ""
+    },
+    {
+      "position": 2,
+      "team": "Glen Waverley",
+      "wins": 4,
+      "points": 34,
+      "percentage": 129.07,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "BLTC",
+      "wins": 2,
+      "points": 28,
+      "percentage": 116.67,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Kooyong Green",
+      "wins": 2,
+      "points": 20,
+      "percentage": 84.06,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Eaglemont",
+      "wins": 2,
+      "points": 20,
+      "percentage": 76.7,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Hampton",
+      "wins": 0,
+      "points": 6,
+      "percentage": 56.38,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "HA25-HA001",
+  "fixtures": 18,
+  "completed_fixtures": 14,
+  "draw_fixtures": 45,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 52,
+  "latest_round": 6,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

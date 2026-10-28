@@ -1,0 +1,103 @@
+{
+  "asset_id": "HA25-HA003",
+  "competition_code": "HA",
+  "competition_label": "Thursday AM - Autumn 2020",
+  "season_id": "HA25",
+  "season_label": "Autumn 2020",
+  "source_section_code": "HA003",
+  "section_label": "Section 3",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Kooyong",
+      "wins": 4,
+      "points": 35,
+      "percentage": 125.12,
+      "marker": ""
+    },
+    {
+      "position": 2,
+      "team": "Belvedere Park",
+      "wins": 3,
+      "points": 33,
+      "percentage": 153.47,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Chadstone Red",
+      "wins": 3,
+      "points": 29,
+      "percentage": 108.56,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "St James",
+      "wins": 2,
+      "points": 25,
+      "percentage": 118.5,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Basterfield Park",
+      "wins": 2,
+      "points": 22,
+      "percentage": 104.21,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Elwood",
+      "wins": 2,
+      "points": 22,
+      "percentage": 89.72,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Mentone",
+      "wins": 1,
+      "points": 18,
+      "percentage": 91.38,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "St Leonard's",
+      "wins": 0,
+      "points": 8,
+      "percentage": 43.43,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "HA25-HA003",
+  "fixtures": 24,
+  "completed_fixtures": 19,
+  "draw_fixtures": 45,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 76,
+  "latest_round": 6,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

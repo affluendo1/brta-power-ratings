@@ -1,0 +1,94 @@
+{
+  "asset_id": "HA9-HA002",
+  "competition_code": "HA",
+  "competition_label": "Thursday AM - Spring 2012",
+  "season_id": "HA9",
+  "season_label": "Spring 2012",
+  "source_section_code": "HA002",
+  "section_label": "Section 1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Glen Iris Valley",
+      "wins": 10,
+      "points": 94,
+      "percentage": 154.87,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Elwood",
+      "wins": 11,
+      "points": 89,
+      "percentage": 147.86,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Kooyong",
+      "wins": 7,
+      "points": 58.5,
+      "percentage": 97.43,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "St Pauls",
+      "wins": 4,
+      "points": 54,
+      "percentage": 104.96,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Black Rock",
+      "wins": 2,
+      "points": 36,
+      "percentage": 66.54,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Beaumaris CC",
+      "wins": 2,
+      "points": 28.5,
+      "percentage": 56.54,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "HA9-HA002",
+  "fixtures": 47,
+  "completed_fixtures": 43,
+  "draw_fixtures": 57,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 162,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for HA002031 doubles No. 1: '2-6 2-2'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for HA002031 doubles No. 2: '3-6 0-2'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for HA002101 doubles No. 4: '6-3 6-7 1-2'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for HA002102 doubles No. 3: '6-3 3-6 1-1'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for HA002102 doubles No. 4: '6-7 2-1'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for HA002311 doubles No. 3: '4-3'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

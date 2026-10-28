@@ -1,0 +1,47 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+HA003011,05 Feb 26,1,regular,Round 1,Mentone,Black Rock,1,7,3,7,,,41,55,Completed,
+HA003012,05 Feb 26,1,regular,Round 1,Parkdale,Kings Park,6,2,5,5,,,46,44,Completed,
+HA003013,05 Feb 26,1,regular,Round 1,Kooyong,Carmelite,7,1,6,3,,,48,49,Completed,
+HA003021,19 Feb 26,2,regular,Round 2,Carmelite,Mentone,8,0,8,0,,,51,24,Completed,
+HA003022,19 Feb 26,2,regular,Round 2,Kings Park,Kooyong,0,8,0,8,,,27,49,Completed,
+HA003023,19 Feb 26,2,regular,Round 2,Black Rock,Parkdale,0,8,0,8,,,18,50,Completed,
+HA003031,26 Feb 26,3,regular,Round 3,Mentone,Parkdale,1,7,3,7,,,39,54,Completed,
+HA003032,26 Feb 26,3,regular,Round 3,Kooyong,Black Rock,6,2,4,4,,,39,34,Completed,
+HA003033,26 Feb 26,3,regular,Round 3,Carmelite,Kings Park,7,1,6,3,,,49,35,Completed,
+HA003041,05 Mar 26,4,regular,Round 4,Kings Park,Mentone,0,8,0,8,,,27,49,Completed,
+HA003042,05 Mar 26,4,regular,Round 4,Black Rock,Carmelite,2,6,4,4,,,30,36,Completed,
+HA003043,05 Mar 26,4,regular,Round 4,Parkdale,Kooyong,7,1,7,3,,,58,36,Completed,
+HA003051,12 Mar 26,5,regular,Round 5,Mentone,Kooyong,2,6,5,5,,,48,52,Completed,
+HA003053,12 Mar 26,5,regular,Round 5,Carmelite,Parkdale,1,7,3,6,,,39,42,Completed,
+pending-ha003-r5-kings-park-black-rock,12 Mar 26,5,regular,Round 5,Kings Park,Black Rock,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+HA003061,19 Mar 26,6,regular,Round 6,Black Rock,Mentone,7,1,7,3,,,60,48,Completed,
+HA003062,19 Mar 26,6,regular,Round 6,Kings Park,Parkdale,1,7,3,7,,,37,59,Completed,
+HA003063,19 Mar 26,6,regular,Round 6,Carmelite,Kooyong,8,0,8,2,,,54,36,Completed,
+HA003071,26 Mar 26,7,regular,Round 7,Mentone,Carmelite,0,8,1,8,,,35,54,Completed,
+HA003072,26 Mar 26,7,regular,Round 7,Kooyong,Kings Park,8,0,8,1,,,51,27,Completed,
+HA003073,26 Mar 26,7,regular,Round 7,Parkdale,Black Rock,6,2,4,4,,,34,29,Completed,
+HA003081,02 Apr 26,8,regular,Round 8,Parkdale,Mentone,2,6,4,5,,,40,43,Completed,
+HA003083,02 Apr 26,8,regular,Round 8,Kings Park,Carmelite,1,7,2,6,,,25,43,Completed,
+pending-ha003-r8-black-rock-kooyong,02 Apr 26,8,regular,Round 8,Black Rock,Kooyong,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+HA003091,23 Apr 26,9,regular,Round 9,Mentone,Kings Park,1,7,3,6,,,29,44,Completed,
+HA003092,23 Apr 26,9,regular,Round 9,Carmelite,Black Rock,7,1,6,3,,,51,39,Completed,
+HA003093,23 Apr 26,9,regular,Round 9,Kooyong,Parkdale,1,7,3,7,,,38,53,Completed,
+HA003101,30 Apr 26,10,regular,Round 10,Kooyong,Mentone,8,0,8,3,,,67,55,Completed,
+HA003102,30 Apr 26,10,regular,Round 10,Black Rock,Kings Park,7,1,6,3,,,41,35,Completed,
+HA003103,30 Apr 26,10,regular,Round 10,Parkdale,Carmelite,6,2,5,4,,,44,42,Completed,
+pending-ha003-r11-kooyong-carmelite,07 May 26,11,regular,Round 11,Kooyong,Carmelite,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha003-r11-mentone-black-rock,07 May 26,11,regular,Round 11,Mentone,Black Rock,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha003-r11-parkdale-kings-park,07 May 26,11,regular,Round 11,Parkdale,Kings Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+HA003121,14 May 26,12,regular,Round 12,Carmelite,Mentone,8,0,8,0,,,48,25,Completed,
+HA003122,14 May 26,12,regular,Round 12,Kings Park,Kooyong,7,1,6,4,,,58,59,Completed,
+HA003123,14 May 26,12,regular,Round 12,Black Rock,Parkdale,2,6,4,5,,,45,47,Completed,
+HA003131,21 May 26,13,regular,Round 13,Mentone,Parkdale,2,6,5,5,,,45,49,Completed,
+HA003132,21 May 26,13,regular,Round 13,Kooyong,Black Rock,2,6,5,5,,,46,52,Completed,
+HA003133,21 May 26,13,regular,Round 13,Carmelite,Kings Park,7,1,6,2,,,43,32,Completed,
+HA003141,28 May 26,14,regular,Round 14,Kings Park,Mentone,1,7,4,7,,,52,63,Completed,
+pending-ha003-r14-black-rock-carmelite,28 May 26,14,regular,Round 14,Black Rock,Carmelite,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha003-r14-parkdale-kooyong,28 May 26,14,regular,Round 14,Parkdale,Kooyong,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+HA003152,04 Jun 26,15,regular,Round 15,Kings Park,Black Rock,4,4,0,0,,,6,2,Completed,
+pending-ha003-r15-carmelite-parkdale,04 Jun 26,15,regular,Round 15,Carmelite,Parkdale,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha003-r15-mentone-kooyong,04 Jun 26,15,regular,Round 15,Mentone,Kooyong,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+HA003321,,16,grand_final,Grand final · TROLS entry 2,Parkdale,Carmelite,1,7,4,7,,,51,60,Completed,

@@ -1,0 +1,48 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+HA007011,07 Feb 13,1,regular,Round 1,Sth Hawthorn,St Peter's,7,1,7,3,,,52,37,Completed,
+HA007012,07 Feb 13,1,regular,Round 1,Glen Huntly,Elwood,8,0,8,1,,,52,29,Completed,
+pending-ha007-r1-chelsea-lawn-bye,07 Feb 13,1,regular,Round 1,Chelsea Lawn,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA007022,14 Feb 13,2,regular,Round 2,Elwood,Chelsea Lawn,7,1,7,3,,,51,39,Completed,
+HA007023,14 Feb 13,2,regular,Round 2,St Peter's,Glen Huntly,7,1,6,3,,,47,31,Completed,
+pending-ha007-r2-bye-sth-hawthorn,14 Feb 13,2,regular,Round 2,Bye,Sth Hawthorn,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA007031,21 Feb 13,3,regular,Round 3,Sth Hawthorn,Glen Huntly,7,1,7,2,,,47,31,Completed,
+HA007032,21 Feb 13,3,regular,Round 3,Chelsea Lawn,St Peter's,1,7,5,7,,,44,57,Completed,
+pending-ha007-r3-bye-elwood,21 Feb 13,3,regular,Round 3,Bye,Elwood,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA007041,28 Feb 13,4,regular,Round 4,Elwood,Sth Hawthorn,1,7,1,5,,,35,43,Completed,
+HA007043,28 Feb 13,4,regular,Round 4,Glen Huntly,Chelsea Lawn,2,6,4,5,,,34,42,Completed,
+pending-ha007-r4-st-peter-s-bye,28 Feb 13,4,regular,Round 4,St Peter's,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA007051,07 Mar 13,5,regular,Round 5,Sth Hawthorn,Chelsea Lawn,4,4,3,2,,,25,23,Completed,
+pending-ha007-r5-bye-glen-huntly,07 Mar 13,5,regular,Round 5,Bye,Glen Huntly,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ha007-r5-elwood-st-peter-s,07 Mar 13,5,regular,Round 5,Elwood,St Peter's,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+HA007061,14 Mar 13,6,regular,Round 6,St Peter's,Sth Hawthorn,7,1,6,3,,,40,29,Completed,
+HA007062,14 Mar 13,6,regular,Round 6,Elwood,Glen Huntly,8,0,8,1,,,52,29,Completed,
+pending-ha007-r6-bye-chelsea-lawn,14 Mar 13,6,regular,Round 6,Bye,Chelsea Lawn,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA007072,21 Mar 13,7,regular,Round 7,Chelsea Lawn,Elwood,8,0,8,1,,,54,34,Completed,
+HA007073,21 Mar 13,7,regular,Round 7,Glen Huntly,St Peter's,0.5,7.5,1,7,,,23,47,Completed,
+pending-ha007-r7-sth-hawthorn-bye,21 Mar 13,7,regular,Round 7,Sth Hawthorn,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA007082,28 Mar 13,8,regular,Round 8,St Peter's,Chelsea Lawn,2,6,4,4,,,31,40,Completed,
+pending-ha007-r8-elwood-bye,28 Mar 13,8,regular,Round 8,Elwood,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ha007-r8-glen-huntly-sth-hawthorn,28 Mar 13,8,regular,Round 8,Glen Huntly,Sth Hawthorn,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+HA007091,18 Apr 13,9,regular,Round 9,Sth Hawthorn,Elwood,2,6,5,5,,,47,52,Completed,
+HA007093,18 Apr 13,9,regular,Round 9,Chelsea Lawn,Glen Huntly,7,1,7,2,,,50,27,Completed,
+pending-ha007-r9-bye-st-peter-s,18 Apr 13,9,regular,Round 9,Bye,St Peter's,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA007101,02 May 13,10,regular,Round 10,Chelsea Lawn,Sth Hawthorn,8,0,8,2,,,51,28,Completed,
+HA007102,02 May 13,10,regular,Round 10,St Peter's,Elwood,6,2,5,4,,,44,38,Completed,
+pending-ha007-r10-glen-huntly-bye,02 May 13,10,regular,Round 10,Glen Huntly,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA007111,09 May 13,11,regular,Round 11,Sth Hawthorn,St Peter's,2,6,4,5,,,36,41,Completed,
+HA007112,09 May 13,11,regular,Round 11,Glen Huntly,Elwood,0,8,1,8,,,30,54,Completed,
+pending-ha007-r11-chelsea-lawn-bye,09 May 13,11,regular,Round 11,Chelsea Lawn,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA007122,16 May 13,12,regular,Round 12,Elwood,Chelsea Lawn,7.5,0.5,7,2,,,52,30,Completed,
+pending-ha007-r12-bye-sth-hawthorn,16 May 13,12,regular,Round 12,Bye,Sth Hawthorn,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ha007-r12-st-peter-s-glen-huntly,16 May 13,12,regular,Round 12,St Peter's,Glen Huntly,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+HA007132,23 May 13,13,regular,Round 13,Chelsea Lawn,St Peter's,6,2,5,4,,,48,45,Completed,
+pending-ha007-r13-bye-elwood,23 May 13,13,regular,Round 13,Bye,Elwood,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ha007-r13-sth-hawthorn-glen-huntly,23 May 13,13,regular,Round 13,Sth Hawthorn,Glen Huntly,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+HA007141,30 May 13,14,regular,Round 14,Elwood,Sth Hawthorn,2,6,4,5,,,38,40,Completed,
+HA007143,30 May 13,14,regular,Round 14,Glen Huntly,Chelsea Lawn,0,8,0,8,,,26,49,Completed,
+pending-ha007-r14-st-peter-s-bye,30 May 13,14,regular,Round 14,St Peter's,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA007151,06 Jun 13,15,regular,Round 15,Sth Hawthorn,Chelsea Lawn,1,7,4,6,,,44,52,Completed,
+HA007152,06 Jun 13,15,regular,Round 15,Elwood,St Peter's,8,0,8,0,,,48,19,Completed,
+HA007311,06 Jun 13,15,regular,Round 15,St Peter's,Elwood,6.5,1.5,5,4,,,44,37,Completed,
+pending-ha007-r15-bye-glen-huntly,06 Jun 13,15,regular,Round 15,Bye,Glen Huntly,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ha007-r16-chelsea-lawn-st-peter-s,,16,grand_final,Grand final · TROLS entry 2,Chelsea Lawn,St Peter's,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded

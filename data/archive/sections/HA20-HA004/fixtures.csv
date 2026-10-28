@@ -1,0 +1,61 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+HA004011,27 Jul 17,1,regular,Round 1,Hawksburn,Lauriston,8,0,8,0,,,48,8,Completed,
+HA004012,27 Jul 17,1,regular,Round 1,St Cecilia's,Beaumaris CC,2,6,4,6,,,40,52,Completed,
+HA004014,27 Jul 17,1,regular,Round 1,Dingley 1,Dingley 2,8,0,8,1,,,51,22,Completed,
+pending-ha004-r1-sth-hawthorn-bye,27 Jul 17,1,regular,Round 1,Sth Hawthorn,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA004021,03 Aug 17,2,regular,Round 2,Dingley 2,Hawksburn,0,8,2,8,,,22,54,Completed,
+HA004022,03 Aug 17,2,regular,Round 2,Lauriston,St Cecilia's,1,7,3,6,,,38,44,Completed,
+pending-ha004-r2-beaumaris-cc-sth-hawthorn,03 Aug 17,2,regular,Round 2,Beaumaris CC,Sth Hawthorn,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+pending-ha004-r2-bye-dingley-1,03 Aug 17,2,regular,Round 2,Bye,Dingley 1,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA004032,10 Aug 17,3,regular,Round 3,St Cecilia's,Dingley 2,8,0,8,1,,,53,25,Completed,
+HA004033,10 Aug 17,3,regular,Round 3,Sth Hawthorn,Lauriston,7,1,6,2,,,44,18,Completed,
+HA004034,10 Aug 17,3,regular,Round 3,Dingley 1,Beaumaris CC,1,7,2,6,,,18,42,Completed,
+pending-ha004-r3-hawksburn-bye,10 Aug 17,3,regular,Round 3,Hawksburn,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA004041,17 Aug 17,4,regular,Round 4,Beaumaris CC,Hawksburn,8,0,8,2,,,56,32,Completed,
+HA004043,17 Aug 17,4,regular,Round 4,Dingley 2,Sth Hawthorn,1,7,3,6,,,31,49,Completed,
+HA004044,17 Aug 17,4,regular,Round 4,Lauriston,Dingley 1,0,8,0,8,,,20,49,Completed,
+pending-ha004-r4-bye-st-cecilia-s,17 Aug 17,4,regular,Round 4,Bye,St Cecilia's,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA004051,24 Aug 17,5,regular,Round 5,Sth Hawthorn,Dingley 1,7,1,6,3,,,44,31,Completed,
+HA004053,24 Aug 17,5,regular,Round 5,Beaumaris CC,Lauriston,7,1,6,2,,,40,17,Completed,
+HA004054,24 Aug 17,5,regular,Round 5,Hawksburn,St Cecilia's,1,7,5,7,,,62,66,Completed,
+pending-ha004-r5-dingley-2-bye,24 Aug 17,5,regular,Round 5,Dingley 2,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA004061,31 Aug 17,6,regular,Round 6,St Cecilia's,Sth Hawthorn,6,2,5,4,,,46,43,Completed,
+HA004062,31 Aug 17,6,regular,Round 6,Dingley 1,Hawksburn,6,2,4,4,,,32,29,Completed,
+HA004064,31 Aug 17,6,regular,Round 6,Lauriston,Dingley 2,1,7,2,7,,,27,47,Completed,
+pending-ha004-r6-bye-beaumaris-cc,31 Aug 17,6,regular,Round 6,Bye,Beaumaris CC,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA004071,07 Sep 17,7,regular,Round 7,Hawksburn,Sth Hawthorn,1,7,2,7,,,29,50,Completed,
+HA004072,07 Sep 17,7,regular,Round 7,St Cecilia's,Dingley 1,6,2,4,4,,,35,28,Completed,
+HA004073,07 Sep 17,7,regular,Round 7,Dingley 2,Beaumaris CC,0,8,0,8,,,9,48,Completed,
+pending-ha004-r7-bye-lauriston,07 Sep 17,7,regular,Round 7,Bye,Lauriston,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA004082,14 Sep 17,8,regular,Round 8,Beaumaris CC,St Cecilia's,7,1,6,2,,,38,15,Completed,
+HA004084,14 Sep 17,8,regular,Round 8,Dingley 2,Dingley 1,0,8,0,8,,,8,48,Completed,
+pending-ha004-r8-bye-sth-hawthorn,14 Sep 17,8,regular,Round 8,Bye,Sth Hawthorn,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ha004-r8-lauriston-hawksburn,14 Sep 17,8,regular,Round 8,Lauriston,Hawksburn,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+HA004091,21 Sep 17,9,regular,Round 9,Hawksburn,Dingley 2,8,0,8,0,,,48,13,Completed,
+HA004093,21 Sep 17,9,regular,Round 9,Sth Hawthorn,Beaumaris CC,1,7,2,6,,,23,47,Completed,
+pending-ha004-r9-dingley-1-bye,21 Sep 17,9,regular,Round 9,Dingley 1,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ha004-r9-st-cecilia-s-lauriston,21 Sep 17,9,regular,Round 9,St Cecilia's,Lauriston,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+HA004102,12 Oct 17,10,regular,Round 10,Dingley 2,St Cecilia's,0,8,0,8,,,4,48,Completed,
+HA004103,12 Oct 17,10,regular,Round 10,Lauriston,Sth Hawthorn,0,8,0,8,,,16,49,Completed,
+HA004104,12 Oct 17,10,regular,Round 10,Beaumaris CC,Dingley 1,7,1,6,2,,,48,18,Completed,
+pending-ha004-r10-bye-hawksburn,12 Oct 17,10,regular,Round 10,Bye,Hawksburn,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA004113,19 Oct 17,11,regular,Round 11,Sth Hawthorn,Dingley 2,4,4,0,0,,,6,2,Completed,
+pending-ha004-r11-dingley-1-lauriston,19 Oct 17,11,regular,Round 11,Dingley 1,Lauriston,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+pending-ha004-r11-hawksburn-beaumaris-cc,19 Oct 17,11,regular,Round 11,Hawksburn,Beaumaris CC,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha004-r11-st-cecilia-s-bye,19 Oct 17,11,regular,Round 11,St Cecilia's,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA004121,26 Oct 17,12,regular,Round 12,Dingley 1,Sth Hawthorn,4,4,4,4,,,37,37,Completed,
+HA004124,26 Oct 17,12,regular,Round 12,St Cecilia's,Hawksburn,2,6,4,4,,,33,38,Completed,
+pending-ha004-r12-bye-dingley-2,26 Oct 17,12,regular,Round 12,Bye,Dingley 2,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ha004-r12-lauriston-beaumaris-cc,26 Oct 17,12,regular,Round 12,Lauriston,Beaumaris CC,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+HA004131,02 Nov 17,13,regular,Round 13,Sth Hawthorn,St Cecilia's,8,0,8,2,,,58,36,Completed,
+HA004132,02 Nov 17,13,regular,Round 13,Hawksburn,Dingley 1,2,6,4,5,,,39,39,Completed,
+pending-ha004-r13-beaumaris-cc-bye,02 Nov 17,13,regular,Round 13,Beaumaris CC,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ha004-r13-dingley-2-lauriston,02 Nov 17,13,regular,Round 13,Dingley 2,Lauriston,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+HA004141,09 Nov 17,14,regular,Round 14,Sth Hawthorn,Hawksburn,8,0,8,0,,,50,24,Completed,
+HA004142,09 Nov 17,14,regular,Round 14,Dingley 1,St Cecilia's,6,2,5,4,,,38,33,Completed,
+HA004143,09 Nov 17,14,regular,Round 14,Beaumaris CC,Dingley 2,8,0,8,0,,,49,17,Completed,
+pending-ha004-r14-lauriston-bye,09 Nov 17,14,regular,Round 14,Lauriston,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA004301,,16,semi_final,Semi-final,Beaumaris CC,Sth Hawthorn,7.5,0.5,7,0,,,43,17,Completed,
+HA004311,,16,semi_final,Semi-final,Sth Hawthorn,Dingley 1,6,2,5,4,,,39,32,Completed,
+pending-ha004-r16-dingley-1-st-cecilia-s,,16,semi_final,Semi-final,Dingley 1,St Cecilia's,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+HA004321,,17,grand_final,Grand final · TROLS entry 2,Beaumaris CC,Sth Hawthorn,6,2,6,4,,,56,40,Completed,

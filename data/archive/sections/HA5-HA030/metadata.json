@@ -1,0 +1,90 @@
+{
+  "asset_id": "HA5-HA030",
+  "competition_code": "HA",
+  "competition_label": "Thursday AM - Spring 2010",
+  "season_id": "HA5",
+  "season_label": "Spring 2010",
+  "source_section_code": "HA030",
+  "section_label": "Section A",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Caulfield Rec",
+      "wins": 0,
+      "points": 83.5,
+      "percentage": 147.59,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "Hampton",
+      "wins": 0,
+      "points": 77.5,
+      "percentage": 116.1,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Glen Waverley",
+      "wins": 0,
+      "points": 75.5,
+      "percentage": 135.33,
+      "marker": "P"
+    },
+    {
+      "position": 4,
+      "team": "Kooyong",
+      "wins": 0,
+      "points": 47,
+      "percentage": 86.3,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "BLTC",
+      "wins": 0,
+      "points": 40,
+      "percentage": 74.19,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Eaglemont",
+      "wins": 0,
+      "points": 36.5,
+      "percentage": 68.53,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "HA5-HA030",
+  "fixtures": 47,
+  "completed_fixtures": 38,
+  "draw_fixtures": 1,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 150,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for HA030033 doubles No. 2: '6-3 2-3'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for HA030061 doubles No. 3: '6-2 3-6'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

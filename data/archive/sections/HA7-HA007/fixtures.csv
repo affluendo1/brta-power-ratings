@@ -1,0 +1,48 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+HA007011,28 Jul 11,1,regular,Round 1,Glen Huntly,East Malvern,1,7,2,6,,,35,46,Completed,
+HA007012,28 Jul 11,1,regular,Round 1,Dingley,Chelsea Lawn,1,7,3,6,,,29,47,Completed,
+HA007013,28 Jul 11,1,regular,Round 1,Sth Hawthorn,Mentone,7,1,6,3,,,46,29,Completed,
+HA007021,04 Aug 11,2,regular,Round 2,Mentone,Glen Huntly,0,8,2,8,,,30,55,Completed,
+HA007022,04 Aug 11,2,regular,Round 2,Chelsea Lawn,Sth Hawthorn,2,6,4,4,,,30,33,Completed,
+HA007023,04 Aug 11,2,regular,Round 2,East Malvern,Dingley,1,7,2,6,,,36,48,Completed,
+HA007031,11 Aug 11,3,regular,Round 3,Glen Huntly,Dingley,6,2,5,4,,,42,42,Completed,
+HA007032,11 Aug 11,3,regular,Round 3,Sth Hawthorn,East Malvern,2,6,4,4,,,36,43,Completed,
+HA007033,11 Aug 11,3,regular,Round 3,Mentone,Chelsea Lawn,1,7,2,7,,,32,53,Completed,
+HA007041,18 Aug 11,4,regular,Round 4,Chelsea Lawn,Glen Huntly,7,1,7,3,,,54,43,Completed,
+pending-ha007-r4-dingley-sth-hawthorn,18 Aug 11,4,regular,Round 4,Dingley,Sth Hawthorn,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha007-r4-east-malvern-mentone,18 Aug 11,4,regular,Round 4,East Malvern,Mentone,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+HA007051,25 Aug 11,5,regular,Round 5,Glen Huntly,Sth Hawthorn,2,6,5,5,,,46,49,Completed,
+HA007052,25 Aug 11,5,regular,Round 5,Chelsea Lawn,East Malvern,6,2,5,4,,,45,36,Completed,
+HA007053,25 Aug 11,5,regular,Round 5,Mentone,Dingley,1,7,4,7,,,43,52,Completed,
+HA007061,01 Sep 11,6,regular,Round 6,East Malvern,Glen Huntly,7,1,6,3,,,48,43,Completed,
+HA007062,01 Sep 11,6,regular,Round 6,Chelsea Lawn,Dingley,6,2,6,4,,,48,39,Completed,
+HA007063,01 Sep 11,6,regular,Round 6,Mentone,Sth Hawthorn,0,8,1,8,,,29,51,Completed,
+HA007071,08 Sep 11,7,regular,Round 7,Glen Huntly,Mentone,7,1,7,3,,,56,35,Completed,
+HA007072,08 Sep 11,7,regular,Round 7,Sth Hawthorn,Chelsea Lawn,7,1,6,2,,,44,33,Completed,
+HA007073,08 Sep 11,7,regular,Round 7,Dingley,East Malvern,6,2,5,5,,,56,52,Completed,
+HA007081,15 Sep 11,8,regular,Round 8,Dingley,Glen Huntly,2,6,5,5,,,45,47,Completed,
+HA007082,15 Sep 11,8,regular,Round 8,East Malvern,Sth Hawthorn,7,1,7,2,,,55,43,Completed,
+HA007083,15 Sep 11,8,regular,Round 8,Chelsea Lawn,Mentone,7,1,6,3,,,46,33,Completed,
+HA007091,22 Sep 11,9,regular,Round 9,Glen Huntly,Chelsea Lawn,0,8,1,8,,,24,52,Completed,
+HA007092,22 Sep 11,9,regular,Round 9,Mentone,East Malvern,0,8,1,8,,,28,55,Completed,
+pending-ha007-r9-sth-hawthorn-dingley,22 Sep 11,9,regular,Round 9,Sth Hawthorn,Dingley,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+HA007101,13 Oct 11,10,regular,Round 10,Sth Hawthorn,Glen Huntly,8,0,8,1,,,55,34,Completed,
+HA007102,13 Oct 11,10,regular,Round 10,East Malvern,Chelsea Lawn,1,7,3,7,,,42,58,Completed,
+HA007103,13 Oct 11,10,regular,Round 10,Dingley,Mentone,1,7,3,6,,,40,45,Completed,
+HA007112,20 Oct 11,11,regular,Round 11,Dingley,Chelsea Lawn,2,6,4,4,,,36,37,Completed,
+HA007113,20 Oct 11,11,regular,Round 11,Sth Hawthorn,Mentone,8,0,8,0,,,48,15,Completed,
+pending-ha007-r11-glen-huntly-east-malvern,20 Oct 11,11,regular,Round 11,Glen Huntly,East Malvern,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+HA007121,27 Oct 11,12,regular,Round 12,Mentone,Glen Huntly,0,8,2,8,,,39,56,Completed,
+HA007122,27 Oct 11,12,regular,Round 12,Chelsea Lawn,Sth Hawthorn,1,7,3,7,,,36,54,Completed,
+HA007123,27 Oct 11,12,regular,Round 12,East Malvern,Dingley,2,6,4,4,,,32,37,Completed,
+HA007131,03 Nov 11,13,regular,Round 13,Glen Huntly,Dingley,0,8,1,8,,,23,53,Completed,
+pending-ha007-r13-mentone-chelsea-lawn,03 Nov 11,13,regular,Round 13,Mentone,Chelsea Lawn,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+pending-ha007-r13-sth-hawthorn-east-malvern,03 Nov 11,13,regular,Round 13,Sth Hawthorn,East Malvern,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+HA007141,10 Nov 11,14,regular,Round 14,Chelsea Lawn,Glen Huntly,8,0,8,0,,,48,16,Completed,
+HA007142,10 Nov 11,14,regular,Round 14,East Malvern,Mentone,7,1,6,3,,,47,39,Completed,
+pending-ha007-r14-dingley-sth-hawthorn,10 Nov 11,14,regular,Round 14,Dingley,Sth Hawthorn,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+HA007152,17 Nov 11,15,regular,Round 15,Chelsea Lawn,East Malvern,8,0,8,2,,,57,36,Completed,
+HA007153,17 Nov 11,15,regular,Round 15,Mentone,Dingley,0,8,1,8,,,29,50,Completed,
+HA007311,17 Nov 11,15,regular,Round 15,Dingley,Sth Hawthorn,1,7,4,7,,,35,56,Completed,
+pending-ha007-r15-glen-huntly-sth-hawthorn,17 Nov 11,15,regular,Round 15,Glen Huntly,Sth Hawthorn,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+HA007321,,16,grand_final,Grand final · TROLS entry 2,Chelsea Lawn,Sth Hawthorn,8,0,8,0,,,48,19,Completed,

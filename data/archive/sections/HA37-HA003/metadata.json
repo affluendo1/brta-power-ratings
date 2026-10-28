@@ -1,0 +1,90 @@
+{
+  "asset_id": "HA37-HA003",
+  "competition_code": "HA",
+  "competition_label": "Thursday AM - Autumn 2026",
+  "season_id": "HA37",
+  "season_label": "Autumn 2026",
+  "source_section_code": "HA003",
+  "section_label": "Section 3",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Parkdale",
+      "wins": 11,
+      "points": 87,
+      "percentage": 126.59,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "Carmelite",
+      "wins": 9,
+      "points": 82,
+      "percentage": 134.7,
+      "marker": "P"
+    },
+    {
+      "position": 3,
+      "team": "Kooyong",
+      "wins": 6,
+      "points": 60,
+      "percentage": 101.17,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Black Rock",
+      "wins": 5,
+      "points": 60,
+      "percentage": 93.53,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Mentone",
+      "wins": 3,
+      "points": 37,
+      "percentage": 83.31,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Kings Park",
+      "wins": 2,
+      "points": 34,
+      "percentage": 77.02,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "HA37-HA003",
+  "fixtures": 46,
+  "completed_fixtures": 37,
+  "draw_fixtures": 46,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 146,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for HA003152 doubles No. 1: '3-1'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for HA003152 doubles No. 2: '3-1'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

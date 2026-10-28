@@ -1,0 +1,48 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+HA001011,07 Feb 13,1,regular,Round 1,Kooyong,Hampton,1,7,3,7,,,46,58,Completed,
+HA001012,07 Feb 13,1,regular,Round 1,Caulfield Rec,Eaglemont,2,6,5,6,,,54,59,Completed,
+HA001013,07 Feb 13,1,regular,Round 1,Glen Waverley,BLTC,6,2,4,4,,,36,29,Completed,
+HA001021,14 Feb 13,2,regular,Round 2,BLTC,Kooyong,1,7,3,6,,,41,45,Completed,
+HA001022,14 Feb 13,2,regular,Round 2,Eaglemont,Glen Waverley,2,6,4,5,,,38,40,Completed,
+HA001023,14 Feb 13,2,regular,Round 2,Hampton,Caulfield Rec,6,2,5,5,,,48,45,Completed,
+HA001031,21 Feb 13,3,regular,Round 3,Kooyong,Caulfield Rec,1,7,3,7,,,37,56,Completed,
+HA001032,21 Feb 13,3,regular,Round 3,Glen Waverley,Hampton,2,6,4,5,,,43,47,Completed,
+HA001033,21 Feb 13,3,regular,Round 3,BLTC,Eaglemont,6,2,6,5,,,49,50,Completed,
+HA001041,28 Feb 13,4,regular,Round 4,Eaglemont,Kooyong,1,7,2,7,,,36,50,Completed,
+HA001042,28 Feb 13,4,regular,Round 4,Hampton,BLTC,7,1,7,2,,,51,29,Completed,
+HA001043,28 Feb 13,4,regular,Round 4,Caulfield Rec,Glen Waverley,6,2,4,4,,,37,34,Completed,
+HA001051,07 Mar 13,5,regular,Round 5,Kooyong,Glen Waverley,1,7,3,6,,,35,50,Completed,
+HA001052,07 Mar 13,5,regular,Round 5,Eaglemont,Hampton,1,7,2,6,,,20,40,Completed,
+HA001053,07 Mar 13,5,regular,Round 5,BLTC,Caulfield Rec,0,8,0,8,,,8,48,Completed,
+HA001061,14 Mar 13,6,regular,Round 6,Hampton,Kooyong,1,7,2,6,,,33,42,Completed,
+HA001062,14 Mar 13,6,regular,Round 6,Eaglemont,Caulfield Rec,6,2,5,5,,,47,46,Completed,
+HA001063,14 Mar 13,6,regular,Round 6,BLTC,Glen Waverley,1,7,3,7,,,38,57,Completed,
+HA001071,21 Mar 13,7,regular,Round 7,Kooyong,BLTC,1,7,3,6,,,36,44,Completed,
+HA001072,21 Mar 13,7,regular,Round 7,Glen Waverley,Eaglemont,7,1,6,2,,,46,28,Completed,
+pending-ha001-r7-caulfield-rec-hampton,21 Mar 13,7,regular,Round 7,Caulfield Rec,Hampton,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+HA001081,28 Mar 13,8,regular,Round 8,Caulfield Rec,Kooyong,4,4,0,0,,,0,0,Completed,
+HA001082,28 Mar 13,8,regular,Round 8,Hampton,Glen Waverley,7,1,6,3,,,46,35,Completed,
+pending-ha001-r8-eaglemont-bltc,28 Mar 13,8,regular,Round 8,Eaglemont,BLTC,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+HA001092,18 Apr 13,9,regular,Round 9,BLTC,Hampton,1,7,2,7,,,23,51,Completed,
+pending-ha001-r9-glen-waverley-caulfield-rec,18 Apr 13,9,regular,Round 9,Glen Waverley,Caulfield Rec,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha001-r9-kooyong-eaglemont,18 Apr 13,9,regular,Round 9,Kooyong,Eaglemont,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+HA001101,02 May 13,10,regular,Round 10,Glen Waverley,Kooyong,6,2,5,4,,,42,30,Completed,
+HA001102,02 May 13,10,regular,Round 10,Hampton,Eaglemont,7,1,6,2,,,39,28,Completed,
+HA001103,02 May 13,10,regular,Round 10,Caulfield Rec,BLTC,2,6,4,4,,,34,36,Completed,
+HA001111,09 May 13,11,regular,Round 11,Kooyong,Hampton,1,7,2,6,,,26,38,Completed,
+HA001112,09 May 13,11,regular,Round 11,Caulfield Rec,Eaglemont,7,1,6,2,,,44,20,Completed,
+HA001113,09 May 13,11,regular,Round 11,Glen Waverley,BLTC,7,1,6,2,,,41,28,Completed,
+HA001122,16 May 13,12,regular,Round 12,Eaglemont,Glen Waverley,1.5,6.5,3,5,,,29,38,Completed,
+pending-ha001-r12-bltc-kooyong,16 May 13,12,regular,Round 12,BLTC,Kooyong,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha001-r12-hampton-caulfield-rec,16 May 13,12,regular,Round 12,Hampton,Caulfield Rec,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+HA001131,23 May 13,13,regular,Round 13,Kooyong,Caulfield Rec,0,8,0,8,,,20,49,Completed,
+HA001132,23 May 13,13,regular,Round 13,Glen Waverley,Hampton,2,6,5,5,,,45,47,Completed,
+HA001133,23 May 13,13,regular,Round 13,BLTC,Eaglemont,1,7,4,6,,,45,46,Completed,
+HA001141,30 May 13,14,regular,Round 14,Eaglemont,Kooyong,4,4,1,1,,,10,10,Completed,
+pending-ha001-r14-caulfield-rec-glen-waverley,30 May 13,14,regular,Round 14,Caulfield Rec,Glen Waverley,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha001-r14-hampton-bltc,30 May 13,14,regular,Round 14,Hampton,BLTC,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+HA001151,06 Jun 13,15,regular,Round 15,Kooyong,Glen Waverley,6,2,4,4,,,32,29,Completed,
+HA001152,06 Jun 13,15,regular,Round 15,Eaglemont,Hampton,2,6,4,5,,,36,35,Completed,
+HA001153,06 Jun 13,15,regular,Round 15,BLTC,Caulfield Rec,1,7,3,6,,,32,48,Completed,
+HA001311,06 Jun 13,15,regular,Round 15,Glen Waverley,Caulfield Rec,7.5,0.5,6,2,,,46,26,Completed,
+HA001321,,16,grand_final,Grand final · TROLS entry 2,Hampton,Glen Waverley,1,7,4,6,,,45,48,Completed,

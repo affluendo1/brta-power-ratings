@@ -1,0 +1,87 @@
+{
+  "asset_id": "HA8-HA005",
+  "competition_code": "HA",
+  "competition_label": "Thursday AM - Autumn 2012",
+  "season_id": "HA8",
+  "season_label": "Autumn 2012",
+  "source_section_code": "HA005",
+  "section_label": "Section 4",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Mentone",
+      "wins": 10,
+      "points": 86,
+      "percentage": 150.86,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "St Cecilia's",
+      "wins": 6,
+      "points": 73,
+      "percentage": 128.27,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "St Leonard's",
+      "wins": 7,
+      "points": 69,
+      "percentage": 110.25,
+      "marker": "R"
+    },
+    {
+      "position": 4,
+      "team": "St James",
+      "wins": 8,
+      "points": 64,
+      "percentage": 90.84,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Dingley",
+      "wins": 1,
+      "points": 48,
+      "percentage": 97.53,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "St Peter's",
+      "wins": 0,
+      "points": 20,
+      "percentage": 44.95,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "HA8-HA005",
+  "fixtures": 47,
+  "completed_fixtures": 35,
+  "draw_fixtures": 1,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 140,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

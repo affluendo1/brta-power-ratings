@@ -1,0 +1,48 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+HA002011,23 Jul 15,1,regular,Round 1,Elwood,Narre Warren Nth,7,1,6,2,,,43,28,Completed,
+HA002012,23 Jul 15,1,regular,Round 1,Kooyong 1,St Pauls,8,0,8,1,,,51,22,Completed,
+HA002013,23 Jul 15,1,regular,Round 1,East Malvern,Kooyong 2,7,1,6,4,,,50,37,Completed,
+HA002021,30 Jul 15,2,regular,Round 2,Kooyong 2,Elwood,7,1,6,3,,,47,42,Completed,
+HA002022,30 Jul 15,2,regular,Round 2,St Pauls,East Malvern,8,0,8,1,,,48,22,Completed,
+HA002023,30 Jul 15,2,regular,Round 2,Narre Warren Nth,Kooyong 1,1,7,3,7,,,40,60,Completed,
+HA002031,06 Aug 15,3,regular,Round 3,Elwood,Kooyong 1,0,8,1,8,,,20,50,Completed,
+pending-ha002-r3-east-malvern-narre-warren-nth,06 Aug 15,3,regular,Round 3,East Malvern,Narre Warren Nth,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha002-r3-kooyong-2-st-pauls,06 Aug 15,3,regular,Round 3,Kooyong 2,St Pauls,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+HA002041,13 Aug 15,4,regular,Round 4,St Pauls,Elwood,6,2,5,4,,,35,40,Completed,
+HA002042,13 Aug 15,4,regular,Round 4,Narre Warren Nth,Kooyong 2,7,1,7,2,,,50,24,Completed,
+HA002043,13 Aug 15,4,regular,Round 4,Kooyong 1,East Malvern,8,0,8,3,,,61,37,Completed,
+HA002051,20 Aug 15,5,regular,Round 5,Elwood,East Malvern,2,6,4,5,,,44,46,Completed,
+HA002052,20 Aug 15,5,regular,Round 5,St Pauls,Narre Warren Nth,1,7,2,7,,,28,50,Completed,
+HA002053,20 Aug 15,5,regular,Round 5,Kooyong 2,Kooyong 1,0,8,0,8,,,20,49,Completed,
+pending-ha002-r6-kooyong-2-east-malvern,27 Aug 15,6,regular,Round 6,Kooyong 2,East Malvern,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha002-r6-narre-warren-nth-elwood,27 Aug 15,6,regular,Round 6,Narre Warren Nth,Elwood,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha002-r6-st-pauls-kooyong-1,27 Aug 15,6,regular,Round 6,St Pauls,Kooyong 1,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+HA002071,03 Sep 15,7,regular,Round 7,Elwood,Kooyong 2,7,1,6,2,,,44,26,Completed,
+HA002072,03 Sep 15,7,regular,Round 7,East Malvern,St Pauls,8,0,8,2,,,59,48,Completed,
+HA002073,03 Sep 15,7,regular,Round 7,Kooyong 1,Narre Warren Nth,7,1,7,3,,,54,40,Completed,
+HA002081,10 Sep 15,8,regular,Round 8,Kooyong 1,Elwood,8,0,8,1,,,56,30,Completed,
+HA002082,10 Sep 15,8,regular,Round 8,Narre Warren Nth,East Malvern,8,0,8,1,,,53,24,Completed,
+HA002083,10 Sep 15,8,regular,Round 8,St Pauls,Kooyong 2,7,1,6,3,,,48,34,Completed,
+HA002091,17 Sep 15,9,regular,Round 9,Elwood,St Pauls,7,1,6,3,,,48,37,Completed,
+HA002092,17 Sep 15,9,regular,Round 9,Kooyong 2,Narre Warren Nth,0,8,0,8,,,11,48,Completed,
+HA002093,17 Sep 15,9,regular,Round 9,East Malvern,Kooyong 1,0,8,0,8,,,20,48,Completed,
+HA002101,08 Oct 15,10,regular,Round 10,East Malvern,Elwood,8,0,8,1,,,50,34,Completed,
+HA002103,08 Oct 15,10,regular,Round 10,Kooyong 1,Kooyong 2,8,0,8,0,,,49,20,Completed,
+pending-ha002-r10-narre-warren-nth-st-pauls,08 Oct 15,10,regular,Round 10,Narre Warren Nth,St Pauls,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+HA002111,15 Oct 15,11,regular,Round 11,Elwood,Narre Warren Nth,1,7,2,7,,,28,55,Completed,
+HA002112,15 Oct 15,11,regular,Round 11,Kooyong 1,St Pauls,8,0,8,0,,,48,16,Completed,
+HA002113,15 Oct 15,11,regular,Round 11,East Malvern,Kooyong 2,7,1,6,2,,,42,32,Completed,
+HA002121,22 Oct 15,12,regular,Round 12,Kooyong 2,Elwood,1,7,3,6,,,28,43,Completed,
+HA002122,22 Oct 15,12,regular,Round 12,St Pauls,East Malvern,2,6,4,5,,,37,38,Completed,
+HA002123,22 Oct 15,12,regular,Round 12,Narre Warren Nth,Kooyong 1,2,6,4,6,,,48,60,Completed,
+HA002131,29 Oct 05,13,regular,Round 13,Elwood,Kooyong 1,1,7,2,7,,,30,48,Completed,
+HA002132,29 Oct 05,13,regular,Round 13,East Malvern,Narre Warren Nth,6,2,4,4,,,38,25,Completed,
+HA002133,29 Oct 05,13,regular,Round 13,Kooyong 2,St Pauls,2,6,5,5,,,40,46,Completed,
+pending-ha002-r14-kooyong-1-east-malvern,05 Nov 05,14,regular,Round 14,Kooyong 1,East Malvern,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha002-r14-narre-warren-nth-kooyong-2,05 Nov 05,14,regular,Round 14,Narre Warren Nth,Kooyong 2,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha002-r14-st-pauls-elwood,05 Nov 05,14,regular,Round 14,St Pauls,Elwood,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+HA002151,12 Nov 15,15,regular,Round 15,Elwood,East Malvern,8,0,8,1,,,50,24,Completed,
+HA002152,12 Nov 15,15,regular,Round 15,St Pauls,Narre Warren Nth,2,6,4,4,,,33,38,Completed,
+HA002153,12 Nov 15,15,regular,Round 15,Kooyong 2,Kooyong 1,0,8,1,8,,,31,54,Completed,
+HA002311,12 Nov 15,15,regular,Round 15,Narre Warren Nth,East Malvern,7,1,6,3,,,48,29,Completed,
+HA002321,,16,grand_final,Grand final · TROLS entry 2,Kooyong 1,Narre Warren Nth,6.5,1.5,6,3,,,46,37,Completed,

@@ -1,0 +1,90 @@
+{
+  "asset_id": "HA15-HA002",
+  "competition_code": "HA",
+  "competition_label": "Thursday AM - Spring 2015",
+  "season_id": "HA15",
+  "season_label": "Spring 2015",
+  "source_section_code": "HA002",
+  "section_label": "Section 1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Kooyong 1",
+      "wins": 13,
+      "points": 107,
+      "percentage": 183.96,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Narre Warren Nth",
+      "wins": 6,
+      "points": 70,
+      "percentage": 129.78,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "East Malvern",
+      "wins": 7,
+      "points": 60,
+      "percentage": 87.04,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Elwood",
+      "wins": 5,
+      "points": 51,
+      "percentage": 93.58,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "St Pauls",
+      "wins": 4,
+      "points": 45,
+      "percentage": 77.13,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Kooyong 2",
+      "wins": 1,
+      "points": 27,
+      "percentage": 61.95,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "HA15-HA002",
+  "fixtures": 47,
+  "completed_fixtures": 38,
+  "draw_fixtures": 57,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 152,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for HA002311 doubles No. 3: '5-7 6-1'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for HA002311 doubles No. 4: '3-6 6-3'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

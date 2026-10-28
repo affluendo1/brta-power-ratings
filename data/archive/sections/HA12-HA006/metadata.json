@@ -1,0 +1,90 @@
+{
+  "asset_id": "HA12-HA006",
+  "competition_code": "HA",
+  "competition_label": "Thursday AM - Autumn 2014",
+  "season_id": "HA12",
+  "season_label": "Autumn 2014",
+  "source_section_code": "HA006",
+  "section_label": "Section 5",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "East Malvern",
+      "wins": 8,
+      "points": 78,
+      "percentage": 132.14,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "Sth Hawthorn",
+      "wins": 10,
+      "points": 78,
+      "percentage": 113.95,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Elwood",
+      "wins": 8,
+      "points": 68,
+      "percentage": 110.68,
+      "marker": "P"
+    },
+    {
+      "position": 4,
+      "team": "St Peter's",
+      "wins": 5,
+      "points": 55,
+      "percentage": 84.38,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Dingley 1",
+      "wins": 4,
+      "points": 48,
+      "percentage": 95.39,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Dingley 2",
+      "wins": 3,
+      "points": 33,
+      "percentage": 71.1,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "HA12-HA006",
+  "fixtures": 47,
+  "completed_fixtures": 41,
+  "draw_fixtures": 1,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 164,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for HA006011 doubles No. 3: '4-3'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for HA006011 doubles No. 4: '2-3'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "asset_id": "HA6-HA007",
+  "competition_code": "HA",
+  "competition_label": "Thursday AM - Autumn 2011",
+  "season_id": "HA6",
+  "season_label": "Autumn 2011",
+  "source_section_code": "HA007",
+  "section_label": "Section 6",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Chelsea Lawn",
+      "wins": 0,
+      "points": 91,
+      "percentage": 145.24,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "Glen Huntly",
+      "wins": 0,
+      "points": 75.5,
+      "percentage": 114.79,
+      "marker": "P"
+    },
+    {
+      "position": 3,
+      "team": "East Malvern",
+      "wins": 0,
+      "points": 73.5,
+      "percentage": 107.79,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Dingley",
+      "wins": 0,
+      "points": 58,
+      "percentage": 103.69,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Sth Hawthorn",
+      "wins": 0,
+      "points": 43,
+      "percentage": 84.92,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Mentone",
+      "wins": 0,
+      "points": 19,
+      "percentage": 61.73,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "HA6-HA007",
+  "fixtures": 47,
+  "completed_fixtures": 41,
+  "draw_fixtures": 1,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 158,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for HA007073 doubles No. 1: '6-7 6-1 1-0'. Missing score not inferred; excluded from ratings and game totals.",
+    "Fixture game totals do not match rubbers for HA007101: TROLS team total 42-22; complete-score total 46-22. Both published records retained."
+  ]
+}

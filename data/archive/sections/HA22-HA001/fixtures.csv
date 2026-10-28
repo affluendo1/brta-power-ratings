@@ -1,0 +1,60 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+HA001011,26 Jul 18,1,regular,Round 1,BLTC,Black Rock,7,1,6,4,,,46,30,Completed,
+HA001013,26 Jul 18,1,regular,Round 1,Kooyong Yellow,Kooyong Green,0,8,0,8,,,19,49,Completed,
+HA001014,26 Jul 18,1,regular,Round 1,Hampton,Elwood,7,1,6,3,,,49,27,Completed,
+pending-ha001-r1-eaglemont-bye,26 Jul 18,1,regular,Round 1,Eaglemont,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA001021,02 Aug 18,2,regular,Round 2,Elwood,BLTC,0,8,1,8,,,16,52,Completed,
+HA001022,02 Aug 18,2,regular,Round 2,Black Rock,Eaglemont,7,1,6,3,,,47,41,Completed,
+HA001024,02 Aug 18,2,regular,Round 2,Kooyong Green,Hampton,6,2,5,4,,,42,36,Completed,
+pending-ha001-r2-bye-kooyong-yellow,02 Aug 18,2,regular,Round 2,Bye,Kooyong Yellow,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA001031,09 Aug 18,3,regular,Round 3,BLTC,Kooyong Green,2,6,4,5,,,44,51,Completed,
+HA001032,09 Aug 18,3,regular,Round 3,Eaglemont,Elwood,8,0,8,2,,,56,28,Completed,
+HA001033,09 Aug 18,3,regular,Round 3,Kooyong Yellow,Black Rock,0,8,2,8,,,36,56,Completed,
+pending-ha001-r3-hampton-bye,09 Aug 18,3,regular,Round 3,Hampton,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA001042,16 Aug 18,4,regular,Round 4,Kooyong Green,Eaglemont,8,0,8,1,,,53,17,Completed,
+HA001043,16 Aug 18,4,regular,Round 4,Elwood,Kooyong Yellow,7,1,6,4,,,48,46,Completed,
+HA001044,16 Aug 18,4,regular,Round 4,Black Rock,Hampton,7,1,7,3,,,56,34,Completed,
+pending-ha001-r4-bye-bltc,16 Aug 18,4,regular,Round 4,Bye,BLTC,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA001051,23 Aug 18,5,regular,Round 5,Kooyong Yellow,Hampton,7,1,6,3,,,47,41,Completed,
+HA001052,23 Aug 18,5,regular,Round 5,Elwood,Kooyong Green,1,7,3,7,,,38,55,Completed,
+HA001054,23 Aug 18,5,regular,Round 5,BLTC,Eaglemont,7,1,7,3,,,58,46,Completed,
+pending-ha001-r5-bye-black-rock,23 Aug 18,5,regular,Round 5,Bye,Black Rock,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA001061,30 Aug 18,6,regular,Round 6,Eaglemont,Kooyong Yellow,6.5,1.5,6,2,,,47,32,Completed,
+HA001062,30 Aug 18,6,regular,Round 6,Hampton,BLTC,1,7,0,6,,,16,37,Completed,
+HA001064,30 Aug 18,6,regular,Round 6,Black Rock,Elwood,1,7,2,6,,,29,43,Completed,
+pending-ha001-r6-kooyong-green-bye,30 Aug 18,6,regular,Round 6,Kooyong Green,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA001071,06 Sep 18,7,regular,Round 7,BLTC,Kooyong Yellow,8,0,8,0,,,49,22,Completed,
+HA001072,06 Sep 18,7,regular,Round 7,Eaglemont,Hampton,6,2,5,4,,,49,36,Completed,
+HA001074,06 Sep 18,7,regular,Round 7,Kooyong Green,Black Rock,2,6,4,5,,,43,41,Completed,
+pending-ha001-r7-elwood-bye,06 Sep 18,7,regular,Round 7,Elwood,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA001081,13 Sep 18,8,regular,Round 8,Black Rock,BLTC,0,8,1,8,,,22,48,Completed,
+HA001083,13 Sep 18,8,regular,Round 8,Kooyong Green,Kooyong Yellow,8,0,8,2,,,55,30,Completed,
+HA001084,13 Sep 18,8,regular,Round 8,Elwood,Hampton,1,7,3,6,,,38,54,Completed,
+pending-ha001-r8-bye-eaglemont,13 Sep 18,8,regular,Round 8,Bye,Eaglemont,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA001091,20 Sep 18,9,regular,Round 9,BLTC,Elwood,8,0,8,0,,,48,16,Completed,
+HA001094,20 Sep 18,9,regular,Round 9,Hampton,Kooyong Green,1,7,2,7,,,35,54,Completed,
+pending-ha001-r9-eaglemont-black-rock,20 Sep 18,9,regular,Round 9,Eaglemont,Black Rock,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+pending-ha001-r9-kooyong-yellow-bye,20 Sep 18,9,regular,Round 9,Kooyong Yellow,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA001101,11 Oct 18,10,regular,Round 10,Kooyong Green,BLTC,6,2,4,4,,,38,27,Completed,
+HA001102,11 Oct 18,10,regular,Round 10,Elwood,Eaglemont,1,7,2,6,,,31,42,Completed,
+HA001103,11 Oct 18,10,regular,Round 10,Black Rock,Kooyong Yellow,2,6,4,4,,,31,38,Completed,
+pending-ha001-r10-bye-hampton,11 Oct 18,10,regular,Round 10,Bye,Hampton,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA001112,18 Oct 18,11,regular,Round 11,Eaglemont,Kooyong Green,8,0,8,1,,,55,40,Completed,
+HA001113,18 Oct 18,11,regular,Round 11,Kooyong Yellow,Elwood,7,1,7,2,,,50,23,Completed,
+HA001114,18 Oct 18,11,regular,Round 11,Hampton,Black Rock,0,8,1,8,,,29,55,Completed,
+pending-ha001-r11-bltc-bye,18 Oct 18,11,regular,Round 11,BLTC,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA001121,25 Oct 18,12,regular,Round 12,Hampton,Kooyong Yellow,6,2,5,4,,,40,41,Completed,
+HA001122,25 Oct 18,12,regular,Round 12,Kooyong Green,Elwood,8,0,8,0,,,49,12,Completed,
+HA001124,25 Oct 18,12,regular,Round 12,Eaglemont,BLTC,1,7,2,6,,,25,37,Completed,
+pending-ha001-r12-black-rock-bye,25 Oct 18,12,regular,Round 12,Black Rock,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA001131,01 Nov 18,13,regular,Round 13,Kooyong Yellow,Eaglemont,8,0,8,1,,,55,21,Completed,
+HA001132,01 Nov 18,13,regular,Round 13,BLTC,Hampton,7,1,6,2,,,43,22,Completed,
+HA001134,01 Nov 18,13,regular,Round 13,Elwood,Black Rock,0,8,0,8,,,22,51,Completed,
+pending-ha001-r13-bye-kooyong-green,01 Nov 18,13,regular,Round 13,Bye,Kooyong Green,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA001141,08 Nov 18,14,regular,Round 14,Kooyong Yellow,BLTC,1,7,2,6,,,28,39,Completed,
+HA001144,08 Nov 18,14,regular,Round 14,Black Rock,Kooyong Green,7,1,6,3,,,40,30,Completed,
+pending-ha001-r14-bye-elwood,08 Nov 18,14,regular,Round 14,Bye,Elwood,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ha001-r14-hampton-eaglemont,08 Nov 18,14,regular,Round 14,Hampton,Eaglemont,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+HA001301,,16,semi_final,Semi-final,BLTC,Eaglemont,7,1,6,0,,,36,11,Completed,
+HA001302,,16,semi_final,Semi-final,Kooyong Green,Black Rock,2,6,4,5,,,33,38,Completed,
+HA001321,,17,grand_final,Grand final · TROLS entry 2,BLTC,Black Rock,6.5,1.5,5,3,,,36,24,Completed,

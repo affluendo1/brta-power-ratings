@@ -1,0 +1,47 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+HA004011,14 Jul 22,1,regular,Round 1,Chadstone Blue,St Cecilia's,8,0,8,1,,,51,27,Completed,
+HA004012,14 Jul 22,1,regular,Round 1,Dingley,Hawksburn,6,2,5,4,,,45,43,Completed,
+HA004013,14 Jul 22,1,regular,Round 1,St Leonard's,Black Rock,1,7,4,7,,,55,68,Completed,
+HA004021,21 Jul 22,2,regular,Round 2,Black Rock,Chadstone Blue,7,1,6,3,,,52,40,Completed,
+HA004022,21 Jul 22,2,regular,Round 2,Hawksburn,St Leonard's,2,6,4,5,,,43,46,Completed,
+HA004023,21 Jul 22,2,regular,Round 2,St Cecilia's,Dingley,7,1,6,4,,,48,47,Completed,
+HA004031,28 Jul 22,3,regular,Round 3,Chadstone Blue,Dingley,8,0,8,3,,,64,51,Completed,
+HA004032,28 Jul 22,3,regular,Round 3,St Leonard's,St Cecilia's,2,6,4,4,,,33,37,Completed,
+HA004033,28 Jul 22,3,regular,Round 3,Black Rock,Hawksburn,7,1,7,2,,,50,27,Completed,
+HA004041,04 Aug 22,4,regular,Round 4,Hawksburn,Chadstone Blue,7,1,6,3,,,42,31,Completed,
+HA004042,04 Aug 22,4,regular,Round 4,St Cecilia's,Black Rock,0,8,0,8,,,18,50,Completed,
+HA004043,04 Aug 22,4,regular,Round 4,Dingley,St Leonard's,1,7,4,6,,,51,49,Completed,
+HA004051,11 Aug 22,5,regular,Round 5,Chadstone Blue,St Leonard's,0,8,0,8,,,28,50,Completed,
+HA004052,11 Aug 22,5,regular,Round 5,Hawksburn,St Cecilia's,7,1,6,2,,,41,26,Completed,
+pending-ha004-r5-black-rock-dingley,11 Aug 22,5,regular,Round 5,Black Rock,Dingley,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+HA004061,18 Aug 22,6,regular,Round 6,St Cecilia's,Chadstone Blue,0,8,1,8,,,30,50,Completed,
+HA004062,18 Aug 22,6,regular,Round 6,Hawksburn,Dingley,2,6,4,4,,,29,35,Completed,
+HA004063,18 Aug 22,6,regular,Round 6,Black Rock,St Leonard's,8,0,8,1,,,54,27,Completed,
+pending-ha004-r7-chadstone-blue-black-rock,25 Aug 22,7,regular,Round 7,Chadstone Blue,Black Rock,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha004-r7-dingley-st-cecilia-s,25 Aug 22,7,regular,Round 7,Dingley,St Cecilia's,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha004-r7-st-leonard-s-hawksburn,25 Aug 22,7,regular,Round 7,St Leonard's,Hawksburn,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+HA004081,01 Sep 22,8,regular,Round 8,Dingley,Chadstone Blue,7,1,6,3,,,48,40,Completed,
+HA004082,01 Sep 22,8,regular,Round 8,St Cecilia's,St Leonard's,2,6,4,5,,,34,43,Completed,
+HA004083,01 Sep 22,8,regular,Round 8,Hawksburn,Black Rock,2,6,4,4,,,33,37,Completed,
+HA004091,08 Sep 22,9,regular,Round 9,Chadstone Blue,Hawksburn,6,2,6,5,,,60,54,Completed,
+pending-ha004-r9-black-rock-st-cecilia-s,08 Sep 22,9,regular,Round 9,Black Rock,St Cecilia's,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha004-r9-st-leonard-s-dingley,08 Sep 22,9,regular,Round 9,St Leonard's,Dingley,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+HA004101,15 Sep 22,10,regular,Round 10,St Leonard's,Chadstone Blue,1,7,2,7,,,33,55,Completed,
+HA004102,15 Sep 22,10,regular,Round 10,St Cecilia's,Hawksburn,0,8,0,8,,,16,48,Completed,
+HA004103,15 Sep 22,10,regular,Round 10,Dingley,Black Rock,0,8,0,8,,,15,48,Completed,
+HA004111,06 Oct 22,11,regular,Round 11,Chadstone Blue,St Cecilia's,7,1,6,3,,,48,45,Completed,
+HA004113,06 Oct 22,11,regular,Round 11,St Leonard's,Black Rock,0,8,1,8,,,32,52,Completed,
+pending-ha004-r11-dingley-hawksburn,06 Oct 22,11,regular,Round 11,Dingley,Hawksburn,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+HA004123,13 Oct 22,12,regular,Round 12,St Cecilia's,Dingley,4,4,0,0,,,0,0,Completed,
+pending-ha004-r12-black-rock-chadstone-blue,13 Oct 22,12,regular,Round 12,Black Rock,Chadstone Blue,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha004-r12-hawksburn-st-leonard-s,13 Oct 22,12,regular,Round 12,Hawksburn,St Leonard's,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+HA004131,20 Oct 22,13,regular,Round 13,Chadstone Blue,Dingley,6,2,4,4,,,40,38,Completed,
+HA004133,20 Oct 22,13,regular,Round 13,Black Rock,Hawksburn,4,4,4,4,,,39,39,Completed,
+pending-ha004-r13-st-leonard-s-st-cecilia-s,20 Oct 22,13,regular,Round 13,St Leonard's,St Cecilia's,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+pending-ha004-r14-dingley-st-leonard-s,27 Oct 22,14,regular,Round 14,Dingley,St Leonard's,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha004-r14-hawksburn-chadstone-blue,27 Oct 22,14,regular,Round 14,Hawksburn,Chadstone Blue,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha004-r14-st-cecilia-s-black-rock,27 Oct 22,14,regular,Round 14,St Cecilia's,Black Rock,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+HA004152,03 Nov 22,15,regular,Round 15,Hawksburn,St Cecilia's,7,1,7,2,,,48,27,Completed,
+pending-ha004-r15-black-rock-dingley,03 Nov 22,15,regular,Round 15,Black Rock,Dingley,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha004-r15-chadstone-blue-st-leonard-s,03 Nov 22,15,regular,Round 15,Chadstone Blue,St Leonard's,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+HA004321,,16,grand_final,Grand final · TROLS entry 2,Black Rock,Chadstone Blue,6.5,1.5,6,3,,,51,31,Completed,

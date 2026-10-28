@@ -1,0 +1,98 @@
+{
+  "asset_id": "HA29-HA002",
+  "competition_code": "HA",
+  "competition_label": "Thursday AM - Autumn 2022",
+  "season_id": "HA29",
+  "season_label": "Autumn 2022",
+  "source_section_code": "HA002",
+  "section_label": "Section 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Elwood",
+      "wins": 10,
+      "points": 79,
+      "percentage": 156.28,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "Basterfield Park 1",
+      "wins": 7,
+      "points": 58,
+      "percentage": 113.7,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Kooyong Green",
+      "wins": 7,
+      "points": 55,
+      "percentage": 105.3,
+      "marker": "P"
+    },
+    {
+      "position": 4,
+      "team": "Kooyong Yellow",
+      "wins": 5,
+      "points": 51,
+      "percentage": 109.45,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Black Rock",
+      "wins": 4,
+      "points": 42,
+      "percentage": 88.5,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Elsternwick Park Green",
+      "wins": 3,
+      "points": 30,
+      "percentage": 79.51,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Basterfield Park 2",
+      "wins": 1,
+      "points": 21,
+      "percentage": 66.98,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "HA29-HA002",
+  "fixtures": 59,
+  "completed_fixtures": 44,
+  "draw_fixtures": 59,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 176,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for HA002301 doubles No. 3: '6-3 2-2'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for HA002321 doubles No. 4: '6-6'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

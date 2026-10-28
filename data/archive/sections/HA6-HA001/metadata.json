@@ -1,0 +1,111 @@
+{
+  "asset_id": "HA6-HA001",
+  "competition_code": "HA",
+  "competition_label": "Thursday AM - Autumn 2011",
+  "season_id": "HA6",
+  "season_label": "Autumn 2011",
+  "source_section_code": "HA001",
+  "section_label": "A Grade",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "BLTC",
+      "wins": 0,
+      "points": 85,
+      "percentage": 145.27,
+      "marker": ""
+    },
+    {
+      "position": 2,
+      "team": "Glen Waverley",
+      "wins": 0,
+      "points": 80.5,
+      "percentage": 141.93,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Eaglemont",
+      "wins": 0,
+      "points": 78,
+      "percentage": 136.47,
+      "marker": "P"
+    },
+    {
+      "position": 4,
+      "team": "Kooyong",
+      "wins": 0,
+      "points": 61,
+      "percentage": 100.79,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Caulfield Rec",
+      "wins": 0,
+      "points": 48.5,
+      "percentage": 84.46,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Hampton",
+      "wins": 0,
+      "points": 33.5,
+      "percentage": 74.83,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Elwood",
+      "wins": 0,
+      "points": 33,
+      "percentage": 81.91,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "East Malvern",
+      "wins": 0,
+      "points": 28.5,
+      "percentage": 68.72,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "HA6-HA001",
+  "fixtures": 60,
+  "completed_fixtures": 56,
+  "draw_fixtures": 49,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 216,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for HA001071 doubles No. 2: '5-7 3-3'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for HA001072 doubles No. 2: '6-1 2-6 0-1'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for HA001073 doubles No. 3: '0-3'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for HA001073 doubles No. 4: '0-4'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for HA001321 doubles No. 4: '6-3 5-7'. Missing score not inferred; excluded from ratings and game totals.",
+    "No scorecard rubbers for HA001301",
+    "Fixture game totals do not match rubbers for HA001301: TROLS team total 0-48; complete-score total 0-0. Both published records retained."
+  ]
+}

@@ -1,0 +1,61 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+HA004011,28 Jul 11,1,regular,Round 1,Albert Park,Caulfield Rec,8,0,8,0,,,50,20,Completed,
+HA004012,28 Jul 11,1,regular,Round 1,Belvedere Park,Chadstone,6,2,5,4,,,40,43,Completed,
+HA004013,28 Jul 11,1,regular,Round 1,Mentone,Noble Park,8,0,8,2,,,52,27,Completed,
+HA004014,28 Jul 11,1,regular,Round 1,Pearcedale,St Leonard's,8,0,8,0,,,49,19,Completed,
+HA004021,04 Aug 11,2,regular,Round 2,St Leonard's,Albert Park,6,2,4,4,,,36,34,Completed,
+HA004022,04 Aug 11,2,regular,Round 2,Caulfield Rec,Belvedere Park,2,6,4,4,,,31,40,Completed,
+HA004023,04 Aug 11,2,regular,Round 2,Chadstone,Mentone,7,1,6,4,,,52,42,Completed,
+HA004024,04 Aug 11,2,regular,Round 2,Noble Park,Pearcedale,1,7,3,7,,,40,52,Completed,
+HA004031,11 Aug 11,3,regular,Round 3,Albert Park,Noble Park,8,0,8,0,,,49,14,Completed,
+HA004032,11 Aug 11,3,regular,Round 3,Belvedere Park,St Leonard's,6,2,5,4,,,40,38,Completed,
+HA004033,11 Aug 11,3,regular,Round 3,Mentone,Caulfield Rec,2,6,5,5,,,48,49,Completed,
+HA004034,11 Aug 11,3,regular,Round 3,Pearcedale,Chadstone,7,1,6,2,,,41,29,Completed,
+pending-ha004-r4-caulfield-rec-pearcedale,18 Aug 11,4,regular,Round 4,Caulfield Rec,Pearcedale,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha004-r4-chadstone-albert-park,18 Aug 11,4,regular,Round 4,Chadstone,Albert Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha004-r4-noble-park-belvedere-park,18 Aug 11,4,regular,Round 4,Noble Park,Belvedere Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha004-r4-st-leonard-s-mentone,18 Aug 11,4,regular,Round 4,St Leonard's,Mentone,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+HA004051,25 Aug 11,5,regular,Round 5,Mentone,Pearcedale,2,6,4,6,,,39,53,Completed,
+HA004052,25 Aug 11,5,regular,Round 5,St Leonard's,Noble Park,0,8,1,8,,,31,50,Completed,
+HA004053,25 Aug 11,5,regular,Round 5,Chadstone,Caulfield Rec,7,1,6,2,,,42,28,Completed,
+HA004054,25 Aug 11,5,regular,Round 5,Albert Park,Belvedere Park,7,1,6,2,,,43,27,Completed,
+HA004061,01 Sep 11,6,regular,Round 6,Belvedere Park,Mentone,7,1,7,3,,,52,39,Completed,
+HA004062,01 Sep 11,6,regular,Round 6,Pearcedale,Albert Park,7,1,6,4,,,47,43,Completed,
+HA004063,01 Sep 11,6,regular,Round 6,Noble Park,Chadstone,1,7,4,6,,,36,48,Completed,
+pending-ha004-r6-caulfield-rec-st-leonard-s,01 Sep 11,6,regular,Round 6,Caulfield Rec,St Leonard's,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+HA004072,08 Sep 11,7,regular,Round 7,Belvedere Park,Pearcedale,2,6,5,5,,,44,50,Completed,
+HA004073,08 Sep 11,7,regular,Round 7,St Leonard's,Chadstone,1,7,2,7,,,40,51,Completed,
+HA004074,08 Sep 11,7,regular,Round 7,Noble Park,Caulfield Rec,7,1,6,3,,,47,37,Completed,
+pending-ha004-r7-albert-park-mentone,08 Sep 11,7,regular,Round 7,Albert Park,Mentone,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+HA004081,15 Sep 11,8,regular,Round 8,Caulfield Rec,Albert Park,8,0,8,1,,,53,23,Completed,
+HA004082,15 Sep 11,8,regular,Round 8,Chadstone,Belvedere Park,1,7,2,6,,,29,42,Completed,
+HA004083,15 Sep 11,8,regular,Round 8,Noble Park,Mentone,1,7,3,6,,,40,43,Completed,
+HA004084,15 Sep 11,8,regular,Round 8,St Leonard's,Pearcedale,2,6,4,5,,,38,45,Completed,
+HA004091,22 Sep 11,9,regular,Round 9,Albert Park,St Leonard's,6,2,4,4,,,38,34,Completed,
+HA004092,22 Sep 11,9,regular,Round 9,Belvedere Park,Caulfield Rec,8,0,8,1,,,51,23,Completed,
+HA004093,22 Sep 11,9,regular,Round 9,Mentone,Chadstone,8,0,8,1,,,53,32,Completed,
+HA004094,22 Sep 11,9,regular,Round 9,Pearcedale,Noble Park,7,1,6,2,,,44,31,Completed,
+HA004101,13 Oct 11,10,regular,Round 10,Noble Park,Albert Park,1,7,3,6,,,31,47,Completed,
+HA004102,13 Oct 11,10,regular,Round 10,St Leonard's,Belvedere Park,2,6,4,5,,,43,43,Completed,
+HA004103,13 Oct 11,10,regular,Round 10,Caulfield Rec,Mentone,0,8,1,8,,,27,53,Completed,
+pending-ha004-r10-chadstone-pearcedale,13 Oct 11,10,regular,Round 10,Chadstone,Pearcedale,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+HA004111,20 Oct 11,11,regular,Round 11,Albert Park,Chadstone,7,1,6,2,,,43,30,Completed,
+HA004112,20 Oct 11,11,regular,Round 11,Belvedere Park,Noble Park,7,1,6,2,,,44,34,Completed,
+HA004113,20 Oct 11,11,regular,Round 11,Mentone,St Leonard's,7,1,7,2,,,52,36,Completed,
+HA004114,20 Oct 11,11,regular,Round 11,Pearcedale,Caulfield Rec,6,2,6,5,,,51,42,Completed,
+HA004123,27 Oct 11,12,regular,Round 12,Caulfield Rec,Chadstone,7,1,6,2,,,47,30,Completed,
+HA004124,27 Oct 11,12,regular,Round 12,Belvedere Park,Albert Park,6,2,5,5,,,43,42,Completed,
+pending-ha004-r12-noble-park-st-leonard-s,27 Oct 11,12,regular,Round 12,Noble Park,St Leonard's,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+pending-ha004-r12-pearcedale-mentone,27 Oct 11,12,regular,Round 12,Pearcedale,Mentone,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+HA004131,03 Nov 11,13,regular,Round 13,Mentone,Belvedere Park,6,2,6,5,,,56,54,Completed,
+HA004132,03 Nov 11,13,regular,Round 13,Albert Park,Pearcedale,6,2,5,4,,,37,38,Completed,
+HA004133,03 Nov 11,13,regular,Round 13,Chadstone,Noble Park,6,2,5,5,,,46,40,Completed,
+HA004134,03 Nov 11,13,regular,Round 13,St Leonard's,Caulfield Rec,1,7,4,6,,,49,51,Completed,
+HA004141,10 Nov 11,14,regular,Round 14,Mentone,Albert Park,2,6,4,4,,,31,37,Completed,
+HA004142,10 Nov 11,14,regular,Round 14,Pearcedale,Belvedere Park,7,1,6,2,,,43,32,Completed,
+HA004144,10 Nov 11,14,regular,Round 14,Caulfield Rec,Noble Park,2,6,4,5,,,47,43,Completed,
+pending-ha004-r14-chadstone-st-leonard-s,10 Nov 11,14,regular,Round 14,Chadstone,St Leonard's,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+HA004301,,16,semi_final,Semi-final,Pearcedale,Albert Park,2,6,6,6,,,55,58,Completed,
+HA004302,,16,semi_final,Semi-final,Belvedere Park,Mentone,1,7,4,6,,,42,45,Completed,
+HA004311,,16,semi_final,Semi-final,Pearcedale,Mentone,1,7,4,6,,,43,53,Completed,
+HA004321,,17,grand_final,Grand final · TROLS entry 2,Albert Park,Mentone,6.5,1.5,5,3,,,37,34,Completed,

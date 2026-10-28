@@ -1,0 +1,60 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+HA002011,18 Jul 24,1,regular,Round 1,Wattle,Kooyong Green,0,8,0,8,,,12,48,Completed,
+HA002014,18 Jul 24,1,regular,Round 1,Kooyong Yellow,BLTC White,1,7,2,7,,,28,51,Completed,
+pending-ha002-r1-bltc-blue-bltc-green,18 Jul 24,1,regular,Round 1,BLTC Blue,BLTC Green,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha002-r1-carmelite-bye,18 Jul 24,1,regular,Round 1,Carmelite,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ha002-r2-bltc-green-carmelite,25 Jul 24,2,regular,Round 2,BLTC Green,Carmelite,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha002-r2-bltc-white-wattle,25 Jul 24,2,regular,Round 2,BLTC White,Wattle,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+pending-ha002-r2-bye-kooyong-yellow,25 Jul 24,2,regular,Round 2,Bye,Kooyong Yellow,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ha002-r2-kooyong-green-bltc-blue,25 Jul 24,2,regular,Round 2,Kooyong Green,BLTC Blue,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+HA002032,01 Aug 24,3,regular,Round 3,BLTC Blue,BLTC White,0,8,2,8,,,42,62,Completed,
+HA002033,01 Aug 24,3,regular,Round 3,Carmelite,Kooyong Green,6,2,4,4,,,36,34,Completed,
+HA002034,01 Aug 24,3,regular,Round 3,Kooyong Yellow,BLTC Green,7,1,6,2,,,47,33,Completed,
+pending-ha002-r3-wattle-bye,01 Aug 24,3,regular,Round 3,Wattle,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA002041,08 Aug 24,4,regular,Round 4,BLTC Green,Wattle,1,7,4,7,,,55,58,Completed,
+HA002043,08 Aug 24,4,regular,Round 4,BLTC White,Carmelite,6,2,5,5,,,51,49,Completed,
+HA002044,08 Aug 24,4,regular,Round 4,Kooyong Green,Kooyong Yellow,7,1,6,2,,,41,33,Completed,
+pending-ha002-r4-bye-bltc-blue,08 Aug 24,4,regular,Round 4,Bye,BLTC Blue,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA002051,15 Aug 24,5,regular,Round 5,Carmelite,Kooyong Yellow,6,2,5,5,,,50,43,Completed,
+HA002053,15 Aug 24,5,regular,Round 5,BLTC Green,Kooyong Green,7,1,6,2,,,42,21,Completed,
+HA002054,15 Aug 24,5,regular,Round 5,Wattle,BLTC Blue,2,6,5,5,,,48,50,Completed,
+pending-ha002-r5-bltc-white-bye,15 Aug 24,5,regular,Round 5,BLTC White,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA002061,22 Aug 24,6,regular,Round 6,BLTC Blue,Carmelite,1,7,3,6,,,49,53,Completed,
+HA002062,22 Aug 24,6,regular,Round 6,Kooyong Yellow,Wattle,2,6,4,5,,,44,43,Completed,
+HA002064,22 Aug 24,6,regular,Round 6,Kooyong Green,BLTC White,7,1,6,4,,,58,50,Completed,
+pending-ha002-r6-bye-bltc-green,22 Aug 24,6,regular,Round 6,Bye,BLTC Green,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA002071,29 Aug 24,7,regular,Round 7,Wattle,Carmelite,2,6,4,5,,,39,47,Completed,
+HA002072,29 Aug 24,7,regular,Round 7,BLTC Blue,Kooyong Yellow,1,7,2,7,,,29,51,Completed,
+HA002073,29 Aug 24,7,regular,Round 7,BLTC White,BLTC Green,1,7,4,7,,,57,64,Completed,
+pending-ha002-r7-bye-kooyong-green,29 Aug 24,7,regular,Round 7,Bye,Kooyong Green,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA002081,05 Sep 24,8,regular,Round 8,Kooyong Green,Wattle,6,2,6,5,,,61,52,Completed,
+HA002084,05 Sep 24,8,regular,Round 8,BLTC White,Kooyong Yellow,4,4,4,3,,,42,39,Completed,
+pending-ha002-r8-bltc-green-bltc-blue,05 Sep 24,8,regular,Round 8,BLTC Green,BLTC Blue,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha002-r8-bye-carmelite,05 Sep 24,8,regular,Round 8,Bye,Carmelite,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA002091,12 Sep 24,9,regular,Round 9,Wattle,BLTC White,1,7,2,7,,,35,55,Completed,
+HA002092,12 Sep 24,9,regular,Round 9,BLTC Blue,Kooyong Green,7,1,7,2,,,51,25,Completed,
+HA002093,12 Sep 24,9,regular,Round 9,Carmelite,BLTC Green,6,2,5,5,,,50,45,Completed,
+pending-ha002-r9-kooyong-yellow-bye,12 Sep 24,9,regular,Round 9,Kooyong Yellow,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA002102,19 Sep 24,10,regular,Round 10,BLTC White,BLTC Blue,0,8,1,8,,,37,56,Completed,
+HA002103,19 Sep 24,10,regular,Round 10,Kooyong Green,Carmelite,2,6,4,5,,,44,48,Completed,
+HA002104,19 Sep 24,10,regular,Round 10,BLTC Green,Kooyong Yellow,7,1,7,3,,,54,41,Completed,
+pending-ha002-r10-bye-wattle,19 Sep 24,10,regular,Round 10,Bye,Wattle,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA002111,10 Oct 24,11,regular,Round 11,Wattle,BLTC Green,1,7,2,7,,,23,49,Completed,
+HA002113,10 Oct 24,11,regular,Round 11,Carmelite,BLTC White,6,2,5,4,,,44,36,Completed,
+HA002114,10 Oct 24,11,regular,Round 11,Kooyong Yellow,Kooyong Green,0,8,2,8,,,38,62,Completed,
+pending-ha002-r11-bltc-blue-bye,10 Oct 24,11,regular,Round 11,BLTC Blue,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA002121,17 Oct 24,12,regular,Round 12,Kooyong Yellow,Carmelite,7,1,6,4,,,56,51,Completed,
+HA002123,17 Oct 24,12,regular,Round 12,Kooyong Green,BLTC Green,6,2,5,4,,,44,39,Completed,
+HA002124,17 Oct 24,12,regular,Round 12,BLTC Blue,Wattle,7,1,7,2,,,54,26,Completed,
+pending-ha002-r12-bye-bltc-white,17 Oct 24,12,regular,Round 12,Bye,BLTC White,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA002131,24 Oct 24,13,regular,Round 13,Carmelite,BLTC Blue,7,1,6,2,,,44,34,Completed,
+HA002134,24 Oct 24,13,regular,Round 13,BLTC White,Kooyong Green,6,2,6,4,,,56,38,Completed,
+pending-ha002-r13-bltc-green-bye,24 Oct 24,13,regular,Round 13,BLTC Green,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ha002-r13-wattle-kooyong-yellow,24 Oct 24,13,regular,Round 13,Wattle,Kooyong Yellow,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+HA002141,31 Oct 24,14,regular,Round 14,Carmelite,Wattle,8,0,8,1,,,54,25,Completed,
+HA002142,31 Oct 24,14,regular,Round 14,Kooyong Yellow,BLTC Blue,7,1,7,4,,,58,53,Completed,
+HA002143,31 Oct 24,14,regular,Round 14,BLTC Green,BLTC White,2,6,4,6,,,47,61,Completed,
+pending-ha002-r14-kooyong-green-bye,31 Oct 24,14,regular,Round 14,Kooyong Green,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA002301,,16,semi_final,Semi-final,Carmelite,BLTC Green,7,1,6,2,,,42,27,Completed,
+HA002302,,16,semi_final,Semi-final,BLTC White,Kooyong Green,6,2,5,4,,,47,42,Completed,
+HA002321,,17,grand_final,Grand final · TROLS entry 2,Carmelite,BLTC White,1.5,6.5,3,6,,,49,56,Completed,

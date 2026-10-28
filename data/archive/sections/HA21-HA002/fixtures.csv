@@ -1,0 +1,61 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+HA002011,01 Feb 18,1,regular,Round 1,Kooyong,Belvedere Park,7,1,6,3,,,42,34,Completed,
+HA002012,01 Feb 18,1,regular,Round 1,St Finbar's,Albert Park,6,2,6,4,,,54,38,Completed,
+HA002013,01 Feb 18,1,regular,Round 1,East Malvern,Basterfield Park,8,0,8,0,,,48,13,Completed,
+pending-ha002-r1-black-rock-bye,01 Feb 18,1,regular,Round 1,Black Rock,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA002022,08 Feb 18,2,regular,Round 2,Belvedere Park,St Finbar's,0,8,0,8,,,16,48,Completed,
+HA002023,08 Feb 18,2,regular,Round 2,Albert Park,East Malvern,2,6,4,4,,,31,45,Completed,
+HA002024,08 Feb 18,2,regular,Round 2,Basterfield Park,Black Rock,2,6,4,5,,,35,41,Completed,
+pending-ha002-r2-bye-kooyong,08 Feb 18,2,regular,Round 2,Bye,Kooyong,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA002031,15 Feb 18,3,regular,Round 3,Kooyong,Basterfield Park,7,1,6,2,,,41,23,Completed,
+HA002034,15 Feb 18,3,regular,Round 3,Black Rock,Albert Park,6,2,6,4,,,52,38,Completed,
+pending-ha002-r3-east-malvern-belvedere-park,15 Feb 18,3,regular,Round 3,East Malvern,Belvedere Park,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+pending-ha002-r3-st-finbar-s-bye,15 Feb 18,3,regular,Round 3,St Finbar's,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA002041,22 Feb 18,4,regular,Round 4,Albert Park,Kooyong,2,6,4,4,,,28,33,Completed,
+HA002042,22 Feb 18,4,regular,Round 4,Basterfield Park,St Finbar's,1,7,3,6,,,41,49,Completed,
+HA002044,22 Feb 18,4,regular,Round 4,Belvedere Park,Black Rock,1,7,3,7,,,35,50,Completed,
+pending-ha002-r4-bye-east-malvern,22 Feb 18,4,regular,Round 4,Bye,East Malvern,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA002053,01 Mar 18,5,regular,Round 5,Albert Park,Belvedere Park,7,1,6,2,,,40,27,Completed,
+HA002054,01 Mar 18,5,regular,Round 5,Kooyong,St Finbar's,2,6,4,5,,,35,39,Completed,
+pending-ha002-r5-bye-basterfield-park,01 Mar 18,5,regular,Round 5,Bye,Basterfield Park,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ha002-r5-east-malvern-black-rock,01 Mar 18,5,regular,Round 5,East Malvern,Black Rock,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+HA002061,08 Mar 18,6,regular,Round 6,St Finbar's,East Malvern,2,6,4,5,,,41,47,Completed,
+HA002062,08 Mar 18,6,regular,Round 6,Black Rock,Kooyong,7,1,6,2,,,45,28,Completed,
+HA002063,08 Mar 18,6,regular,Round 6,Basterfield Park,Albert Park,1,7,3,7,,,41,58,Completed,
+pending-ha002-r6-belvedere-park-bye,08 Mar 18,6,regular,Round 6,Belvedere Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA002071,15 Mar 18,7,regular,Round 7,Kooyong,East Malvern,1,7,3,6,,,22,45,Completed,
+HA002072,15 Mar 18,7,regular,Round 7,St Finbar's,Black Rock,1,7,3,7,,,34,52,Completed,
+HA002074,15 Mar 18,7,regular,Round 7,Basterfield Park,Belvedere Park,6,2,5,4,,,38,36,Completed,
+pending-ha002-r7-bye-albert-park,15 Mar 18,7,regular,Round 7,Bye,Albert Park,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA002081,22 Mar 18,8,regular,Round 8,Belvedere Park,Kooyong,1,7,2,6,,,25,41,Completed,
+HA002082,22 Mar 18,8,regular,Round 8,Albert Park,St Finbar's,2,6,4,5,,,34,40,Completed,
+HA002083,22 Mar 18,8,regular,Round 8,Basterfield Park,East Malvern,1,7,2,7,,,34,54,Completed,
+pending-ha002-r8-bye-black-rock,22 Mar 18,8,regular,Round 8,Bye,Black Rock,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA002092,29 Mar 18,9,regular,Round 9,St Finbar's,Belvedere Park,7,1,6,2,,,42,19,Completed,
+HA002093,29 Mar 18,9,regular,Round 9,East Malvern,Albert Park,8,0,8,0,,,48,11,Completed,
+HA002094,29 Mar 18,9,regular,Round 9,Black Rock,Basterfield Park,7,1,6,2,,,40,30,Completed,
+pending-ha002-r9-kooyong-bye,29 Mar 18,9,regular,Round 9,Kooyong,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA002101,19 Apr 18,10,regular,Round 10,Basterfield Park,Kooyong,0,8,1,8,,,34,54,Completed,
+HA002103,19 Apr 18,10,regular,Round 10,Belvedere Park,East Malvern,0,8,0,8,,,11,48,Completed,
+HA002104,19 Apr 18,10,regular,Round 10,Albert Park,Black Rock,2,6,4,5,,,40,43,Completed,
+pending-ha002-r10-bye-st-finbar-s,19 Apr 18,10,regular,Round 10,Bye,St Finbar's,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA002111,26 Apr 18,11,regular,Round 11,Kooyong,Albert Park,8,0,8,0,,,48,12,Completed,
+HA002112,26 Apr 18,11,regular,Round 11,St Finbar's,Basterfield Park,7,1,7,2,,,54,31,Completed,
+HA002114,26 Apr 18,11,regular,Round 11,Black Rock,Belvedere Park,8,0,8,1,,,53,21,Completed,
+pending-ha002-r11-east-malvern-bye,26 Apr 18,11,regular,Round 11,East Malvern,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA002121,03 May 18,12,regular,Round 12,Black Rock,East Malvern,1,7,2,7,,,38,54,Completed,
+HA002123,03 May 18,12,regular,Round 12,Belvedere Park,Albert Park,2,6,4,4,,,27,31,Completed,
+HA002124,03 May 18,12,regular,Round 12,St Finbar's,Kooyong,1,7,4,6,,,38,47,Completed,
+pending-ha002-r12-basterfield-park-bye,03 May 18,12,regular,Round 12,Basterfield Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA002131,10 May 18,13,regular,Round 13,East Malvern,St Finbar's,7,1,5,1,,,37,30,Completed,
+HA002132,10 May 18,13,regular,Round 13,Kooyong,Black Rock,4,4,4,3,,,39,35,Completed,
+HA002133,10 May 18,13,regular,Round 13,Albert Park,Basterfield Park,7,1,6,0,,,41,20,Completed,
+pending-ha002-r13-bye-belvedere-park,10 May 18,13,regular,Round 13,Bye,Belvedere Park,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA002141,17 May 18,14,regular,Round 14,East Malvern,Kooyong,7,1,6,3,,,45,29,Completed,
+HA002142,17 May 18,14,regular,Round 14,Black Rock,St Finbar's,0,8,2,8,,,40,60,Completed,
+HA002144,17 May 18,14,regular,Round 14,Belvedere Park,Basterfield Park,4,4,4,4,,,32,32,Completed,
+pending-ha002-r14-albert-park-bye,17 May 18,14,regular,Round 14,Albert Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA002301,,16,semi_final,Semi-final,East Malvern,Black Rock,6.5,1.5,5,2,,,39,25,Completed,
+HA002302,,16,semi_final,Semi-final,St Finbar's,Kooyong,7,1,5,1,,,30,19,Completed,
+HA002311,,16,semi_final,Semi-final,Black Rock,St Finbar's,6,2,6,4,,,52,45,Completed,
+HA002321,,17,grand_final,Grand final · TROLS entry 2,East Malvern,Black Rock,7,1,6,1,,,42,23,Completed,

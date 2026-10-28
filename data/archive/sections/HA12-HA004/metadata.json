@@ -1,0 +1,100 @@
+{
+  "asset_id": "HA12-HA004",
+  "competition_code": "HA",
+  "competition_label": "Thursday AM - Autumn 2014",
+  "season_id": "HA12",
+  "season_label": "Autumn 2014",
+  "source_section_code": "HA004",
+  "section_label": "Section 3",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Albert Park",
+      "wins": 9,
+      "points": 78,
+      "percentage": 165.76,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Belvedere Park",
+      "wins": 6,
+      "points": 56,
+      "percentage": 109.41,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Chadstone",
+      "wins": 6,
+      "points": 52,
+      "percentage": 105.3,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Dendy Park",
+      "wins": 5,
+      "points": 47,
+      "percentage": 110.45,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Berwick",
+      "wins": 5,
+      "points": 38,
+      "percentage": 74.03,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Oakleigh",
+      "wins": 4,
+      "points": 35,
+      "percentage": 83.63,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Noble Park",
+      "wins": 2,
+      "points": 30,
+      "percentage": 82.95,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "HA12-HA004",
+  "fixtures": 60,
+  "completed_fixtures": 42,
+  "draw_fixtures": 49,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 168,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for HA004301 doubles No. 4: '6-3 6-7'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for HA004302 doubles No. 3: '6-3 5-7'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for HA004311 doubles No. 4: '3-6 6-1'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for HA004321 doubles No. 4: '4-2'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

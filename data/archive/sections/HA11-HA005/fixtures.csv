@@ -1,0 +1,61 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+HA005011,25 Jul 13,1,regular,Round 1,Black Rock,East Malvern,4,4,4,4,,,37,37,Completed,
+HA005012,25 Jul 13,1,regular,Round 1,Dingley,Mentone,0,8,0,8,,,12,48,Completed,
+HA005014,25 Jul 13,1,regular,Round 1,St Leonard's,St Cecilia's,6,2,5,4,,,45,38,Completed,
+pending-ha005-r1-beaumaris-cc-bye,25 Jul 13,1,regular,Round 1,Beaumaris CC,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA005021,01 Aug 13,2,regular,Round 2,St Cecilia's,Black Rock,7,1,6,3,,,42,26,Completed,
+HA005022,01 Aug 13,2,regular,Round 2,East Malvern,Dingley,8,0,8,2,,,58,31,Completed,
+HA005023,01 Aug 13,2,regular,Round 2,Mentone,Beaumaris CC,7,1,6,3,,,42,27,Completed,
+pending-ha005-r2-bye-st-leonard-s,01 Aug 13,2,regular,Round 2,Bye,St Leonard's,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA005032,08 Aug 13,3,regular,Round 3,Dingley,St Cecilia's,6,2,5,4,,,38,28,Completed,
+HA005033,08 Aug 13,3,regular,Round 3,Beaumaris CC,East Malvern,8,0,8,2,,,51,35,Completed,
+HA005034,08 Aug 13,3,regular,Round 3,St Leonard's,Mentone,1,7,2,7,,,31,49,Completed,
+pending-ha005-r3-black-rock-bye,08 Aug 13,3,regular,Round 3,Black Rock,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA005041,15 Aug 13,4,regular,Round 4,Mentone,Black Rock,6,2,4,4,,,33,28,Completed,
+HA005043,15 Aug 13,4,regular,Round 4,St Cecilia's,Beaumaris CC,7,1,6,3,,,47,35,Completed,
+HA005044,15 Aug 13,4,regular,Round 4,East Malvern,St Leonard's,4,4,4,4,,,38,38,Completed,
+pending-ha005-r4-bye-dingley,15 Aug 13,4,regular,Round 4,Bye,Dingley,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA005051,22 Aug 13,5,regular,Round 5,Beaumaris CC,St Leonard's,1,7,3,6,,,37,48,Completed,
+HA005053,22 Aug 13,5,regular,Round 5,Mentone,East Malvern,7,1,7,2,,,54,27,Completed,
+HA005054,22 Aug 13,5,regular,Round 5,Black Rock,Dingley,1,7,2,6,,,24,41,Completed,
+pending-ha005-r5-st-cecilia-s-bye,22 Aug 13,5,regular,Round 5,St Cecilia's,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA005061,29 Aug 13,6,regular,Round 6,Dingley,Beaumaris CC,1,7,2,6,,,23,42,Completed,
+HA005062,29 Aug 13,6,regular,Round 6,St Leonard's,Black Rock,8,0,8,0,,,48,12,Completed,
+HA005064,29 Aug 13,6,regular,Round 6,East Malvern,St Cecilia's,1,7,2,7,,,29,49,Completed,
+pending-ha005-r6-bye-mentone,29 Aug 13,6,regular,Round 6,Bye,Mentone,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA005071,05 Sep 13,7,regular,Round 7,Black Rock,Beaumaris CC,4,4,1,1,,,19,15,Completed,
+HA005073,05 Sep 13,7,regular,Round 7,St Cecilia's,Mentone,4,4,2,2,,,15,20,Completed,
+pending-ha005-r7-bye-east-malvern,05 Sep 13,7,regular,Round 7,Bye,East Malvern,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ha005-r7-dingley-st-leonard-s,05 Sep 13,7,regular,Round 7,Dingley,St Leonard's,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+HA005082,12 Sep 13,8,regular,Round 8,Mentone,Dingley,7,1,7,2,,,49,22,Completed,
+HA005084,12 Sep 13,8,regular,Round 8,St Cecilia's,St Leonard's,1,7,4,7,,,54,62,Completed,
+pending-ha005-r8-bye-beaumaris-cc,12 Sep 13,8,regular,Round 8,Bye,Beaumaris CC,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ha005-r8-east-malvern-black-rock,12 Sep 13,8,regular,Round 8,East Malvern,Black Rock,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+HA005091,19 Sep 13,9,regular,Round 9,Black Rock,St Cecilia's,8,0,8,1,,,52,28,Completed,
+HA005092,19 Sep 13,9,regular,Round 9,Dingley,East Malvern,2,6,4,5,,,43,39,Completed,
+HA005093,19 Sep 13,9,regular,Round 9,Beaumaris CC,Mentone,1,7,4,6,,,36,47,Completed,
+pending-ha005-r9-st-leonard-s-bye,19 Sep 13,9,regular,Round 9,St Leonard's,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA005102,10 Oct 13,10,regular,Round 10,St Cecilia's,Dingley,4.5,3.5,3,0,,,19,12,Completed,
+HA005103,10 Oct 13,10,regular,Round 10,East Malvern,Beaumaris CC,3.5,4.5,1,3,,,17,23,Completed,
+HA005104,10 Oct 13,10,regular,Round 10,Mentone,St Leonard's,5,3,4,1,,,28,23,Completed,
+pending-ha005-r10-bye-black-rock,10 Oct 13,10,regular,Round 10,Bye,Black Rock,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA005111,17 Oct 13,11,regular,Round 11,Black Rock,Mentone,6,2,6,4,,,51,45,Completed,
+HA005113,17 Oct 13,11,regular,Round 11,Beaumaris CC,St Cecilia's,4,4,5,2,,,41,33,Completed,
+HA005114,17 Oct 13,11,regular,Round 11,St Leonard's,East Malvern,7,1,6,3,,,53,39,Completed,
+pending-ha005-r11-dingley-bye,17 Oct 13,11,regular,Round 11,Dingley,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA005121,24 Oct 13,12,regular,Round 12,St Leonard's,Beaumaris CC,6,2,5,4,,,43,34,Completed,
+HA005123,24 Oct 13,12,regular,Round 12,East Malvern,Mentone,1,7,2,6,,,25,41,Completed,
+pending-ha005-r12-bye-st-cecilia-s,24 Oct 13,12,regular,Round 12,Bye,St Cecilia's,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ha005-r12-dingley-black-rock,24 Oct 13,12,regular,Round 12,Dingley,Black Rock,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+HA005131,31 Oct 13,13,regular,Round 13,Beaumaris CC,Dingley,7,1,6,3,,,44,28,Completed,
+HA005132,31 Oct 13,13,regular,Round 13,Black Rock,St Leonard's,8,0,8,0,,,48,21,Completed,
+HA005134,31 Oct 13,13,regular,Round 13,St Cecilia's,East Malvern,7,1,7,2,,,48,30,Completed,
+pending-ha005-r13-mentone-bye,31 Oct 13,13,regular,Round 13,Mentone,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA005141,07 Nov 13,14,regular,Round 14,Beaumaris CC,Black Rock,2,6,4,5,,,37,45,Completed,
+HA005142,07 Nov 13,14,regular,Round 14,St Leonard's,Dingley,6,2,4,4,,,33,31,Completed,
+HA005143,07 Nov 13,14,regular,Round 14,Mentone,St Cecilia's,7,1,6,2,,,42,27,Completed,
+pending-ha005-r14-east-malvern-bye,07 Nov 13,14,regular,Round 14,East Malvern,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA005301,,16,semi_final,Semi-final,Mentone,St Leonard's,7,1,6,2,,,38,31,Completed,
+HA005302,,16,semi_final,Semi-final,Black Rock,St Cecilia's,0.5,7.5,1,6,,,17,41,Completed,
+HA005311,,16,semi_final,Semi-final,St Leonard's,St Cecilia's,6,2,5,4,,,44,41,Completed,
+HA005321,,17,grand_final,Grand final · TROLS entry 2,Mentone,St Leonard's,7,1,5,0,,,35,10,Completed,

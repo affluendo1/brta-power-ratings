@@ -1,0 +1,98 @@
+{
+  "asset_id": "HA34-HA003",
+  "competition_code": "HA",
+  "competition_label": "Thursday AM - Spring 2024",
+  "season_id": "HA34",
+  "season_label": "Spring 2024",
+  "source_section_code": "HA003",
+  "section_label": "Section 3",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Basterfield Park",
+      "wins": 11,
+      "points": 86,
+      "percentage": 215.79,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Elwood Blue",
+      "wins": 9,
+      "points": 75,
+      "percentage": 209.33,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Mentone",
+      "wins": 5,
+      "points": 53,
+      "percentage": 113.64,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Kooyong Purple",
+      "wins": 5,
+      "points": 49,
+      "percentage": 111.86,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Carmelite Pink",
+      "wins": 5,
+      "points": 41,
+      "percentage": 87.4,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Chadstone",
+      "wins": 1,
+      "points": 20,
+      "percentage": 41.88,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Kings Park",
+      "wins": 0,
+      "points": 12,
+      "percentage": 38.54,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "HA34-HA003",
+  "fixtures": 58,
+  "completed_fixtures": 40,
+  "draw_fixtures": 47,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 159,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for HA003081 doubles No. 3: '6-1 1-1'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for HA003302 doubles No. 3: '6-0 1-0'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

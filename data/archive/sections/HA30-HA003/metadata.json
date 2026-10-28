@@ -1,0 +1,91 @@
+{
+  "asset_id": "HA30-HA003",
+  "competition_code": "HA",
+  "competition_label": "Thursday AM - Spring 2022",
+  "season_id": "HA30",
+  "season_label": "Spring 2022",
+  "source_section_code": "HA003",
+  "section_label": "Section 3",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Elwood Yellow",
+      "wins": 10,
+      "points": 83,
+      "percentage": 133.97,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Belvedere Park",
+      "wins": 8,
+      "points": 76.5,
+      "percentage": 114.85,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Kooyong Purple",
+      "wins": 7,
+      "points": 63,
+      "percentage": 108.58,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Kooyong Green",
+      "wins": 6,
+      "points": 58,
+      "percentage": 87.97,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Albert Park",
+      "wins": 4,
+      "points": 48,
+      "percentage": 87.32,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Mentone",
+      "wins": 1,
+      "points": 31.5,
+      "percentage": 80.04,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "HA30-HA003",
+  "fixtures": 46,
+  "completed_fixtures": 37,
+  "draw_fixtures": 46,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 148,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for HA003051 doubles No. 3: '7-5 2-1'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for HA003321 doubles No. 4: '0-6 1-1'. Missing score not inferred; excluded from ratings and game totals.",
+    "Fixture game totals do not match rubbers for HA003321: TROLS team total 32-13; complete-score total 31-13. Both published records retained."
+  ]
+}

@@ -1,0 +1,61 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+HA004011,09 Feb 12,1,regular,Round 1,Belvedere Park,Chadstone,7,1,6,3,,,48,41,Completed,
+HA004012,09 Feb 12,1,regular,Round 1,Pearcedale,Mentone,0,8,2,8,,,39,61,Completed,
+HA004013,09 Feb 12,1,regular,Round 1,Dendy Park,Caulfield Rec,7,1,7,3,,,60,43,Completed,
+pending-ha004-r1-noble-park-bye,09 Feb 12,1,regular,Round 1,Noble Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA004022,16 Feb 12,2,regular,Round 2,Chadstone,Pearcedale,6,2,5,4,,,43,38,Completed,
+HA004023,16 Feb 12,2,regular,Round 2,Mentone,Dendy Park,8,0,8,2,,,63,43,Completed,
+HA004024,16 Feb 12,2,regular,Round 2,Caulfield Rec,Noble Park,7,1,6,3,,,47,40,Completed,
+pending-ha004-r2-bye-belvedere-park,16 Feb 12,2,regular,Round 2,Bye,Belvedere Park,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA004031,23 Feb 12,3,regular,Round 3,Belvedere Park,Caulfield Rec,1,7,3,6,,,29,43,Completed,
+HA004033,23 Feb 12,3,regular,Round 3,Dendy Park,Chadstone,7,1,7,3,,,56,41,Completed,
+HA004034,23 Feb 12,3,regular,Round 3,Noble Park,Mentone,0,8,1,8,,,21,53,Completed,
+pending-ha004-r3-pearcedale-bye,23 Feb 12,3,regular,Round 3,Pearcedale,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA004042,01 Mar 12,4,regular,Round 4,Caulfield Rec,Pearcedale,4,4,0,0,,,0,0,Completed,
+pending-ha004-r4-bye-dendy-park,01 Mar 12,4,regular,Round 4,Bye,Dendy Park,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ha004-r4-chadstone-noble-park,01 Mar 12,4,regular,Round 4,Chadstone,Noble Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha004-r4-mentone-belvedere-park,01 Mar 12,4,regular,Round 4,Mentone,Belvedere Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+HA004051,08 Mar 12,5,regular,Round 5,Dendy Park,Noble Park,8,0,8,1,,,53,29,Completed,
+HA004053,08 Mar 12,5,regular,Round 5,Mentone,Chadstone,7,1,7,2,,,50,30,Completed,
+HA004054,08 Mar 12,5,regular,Round 5,Belvedere Park,Pearcedale,2,6,4,5,,,37,40,Completed,
+pending-ha004-r5-bye-caulfield-rec,08 Mar 12,5,regular,Round 5,Bye,Caulfield Rec,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA004061,15 Mar 12,6,regular,Round 6,Pearcedale,Dendy Park,8,0,8,1,,,54,24,Completed,
+HA004062,15 Mar 12,6,regular,Round 6,Noble Park,Belvedere Park,6,2,5,4,,,42,42,Completed,
+HA004063,15 Mar 12,6,regular,Round 6,Caulfield Rec,Mentone,2,6,4,4,,,39,40,Completed,
+pending-ha004-r6-chadstone-bye,15 Mar 12,6,regular,Round 6,Chadstone,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA004071,22 Mar 12,7,regular,Round 7,Belvedere Park,Dendy Park,2,6,4,5,,,37,42,Completed,
+HA004072,22 Mar 12,7,regular,Round 7,Pearcedale,Noble Park,8,0,8,1,,,56,33,Completed,
+HA004074,22 Mar 12,7,regular,Round 7,Caulfield Rec,Chadstone,8,0,8,1,,,51,17,Completed,
+pending-ha004-r7-bye-mentone,22 Mar 12,7,regular,Round 7,Bye,Mentone,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA004081,29 Mar 12,8,regular,Round 8,Chadstone,Belvedere Park,6,2,4,4,,,40,35,Completed,
+HA004082,29 Mar 12,8,regular,Round 8,Mentone,Pearcedale,8,0,8,2,,,59,40,Completed,
+HA004083,29 Mar 12,8,regular,Round 8,Caulfield Rec,Dendy Park,7,1,6,3,,,44,34,Completed,
+pending-ha004-r8-bye-noble-park,29 Mar 12,8,regular,Round 8,Bye,Noble Park,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA004092,19 Apr 12,9,regular,Round 9,Pearcedale,Chadstone,8,0,8,2,,,54,33,Completed,
+HA004093,19 Apr 12,9,regular,Round 9,Dendy Park,Mentone,2,6,5,5,,,46,48,Completed,
+HA004094,19 Apr 12,9,regular,Round 9,Noble Park,Caulfield Rec,2,6,4,4,,,35,38,Completed,
+pending-ha004-r9-belvedere-park-bye,19 Apr 12,9,regular,Round 9,Belvedere Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA004101,26 Apr 12,10,regular,Round 10,Caulfield Rec,Belvedere Park,7,1,6,2,,,42,30,Completed,
+HA004103,26 Apr 12,10,regular,Round 10,Chadstone,Dendy Park,4,4,4,4,,,35,35,Completed,
+HA004104,26 Apr 12,10,regular,Round 10,Mentone,Noble Park,8,0,8,1,,,50,36,Completed,
+pending-ha004-r10-bye-pearcedale,26 Apr 12,10,regular,Round 10,Bye,Pearcedale,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ha004-r11-belvedere-park-mentone,03 May 12,11,regular,Round 11,Belvedere Park,Mentone,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha004-r11-dendy-park-bye,03 May 12,11,regular,Round 11,Dendy Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ha004-r11-noble-park-chadstone,03 May 12,11,regular,Round 11,Noble Park,Chadstone,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha004-r11-pearcedale-caulfield-rec,03 May 12,11,regular,Round 11,Pearcedale,Caulfield Rec,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+HA004121,10 May 12,12,regular,Round 12,Noble Park,Dendy Park,0,8,0,8,,,27,51,Completed,
+HA004123,10 May 12,12,regular,Round 12,Chadstone,Mentone,2,6,4,5,,,35,40,Completed,
+HA004124,10 May 12,12,regular,Round 12,Pearcedale,Belvedere Park,7,1,6,4,,,49,38,Completed,
+pending-ha004-r12-caulfield-rec-bye,10 May 12,12,regular,Round 12,Caulfield Rec,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA004131,17 May 12,13,regular,Round 13,Dendy Park,Pearcedale,1,7,2,6,,,28,36,Completed,
+HA004132,17 May 12,13,regular,Round 13,Belvedere Park,Noble Park,1,7,4,7,,,49,56,Completed,
+HA004133,17 May 12,13,regular,Round 13,Mentone,Caulfield Rec,7,1,6,4,,,52,41,Completed,
+pending-ha004-r13-bye-chadstone,17 May 12,13,regular,Round 13,Bye,Chadstone,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA004141,24 May 12,14,regular,Round 14,Dendy Park,Belvedere Park,0,8,1,8,,,29,53,Completed,
+HA004142,24 May 12,14,regular,Round 14,Noble Park,Pearcedale,0,8,1,8,,,24,54,Completed,
+HA004144,24 May 12,14,regular,Round 14,Chadstone,Caulfield Rec,1,7,3,7,,,41,55,Completed,
+pending-ha004-r14-mentone-bye,24 May 12,14,regular,Round 14,Mentone,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA004302,,16,semi_final,Semi-final,Caulfield Rec,Dendy Park,7.5,0.5,7,2,,,55,30,Completed,
+pending-ha004-r16-mentone-pearcedale,,16,semi_final,Semi-final,Mentone,Pearcedale,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+pending-ha004-r16-pearcedale-caulfield-rec,,16,semi_final,Semi-final,Pearcedale,Caulfield Rec,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+HA004321,,17,grand_final,Grand final · TROLS entry 2,Mentone,Pearcedale,0.5,7.5,2,6,,,34,50,Completed,

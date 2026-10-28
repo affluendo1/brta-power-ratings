@@ -1,0 +1,93 @@
+{
+  "asset_id": "HA31-HA003",
+  "competition_code": "HA",
+  "competition_label": "Thursday AM - Autumn 2023",
+  "season_id": "HA31",
+  "season_label": "Autumn 2023",
+  "source_section_code": "HA003",
+  "section_label": "Section 3",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Elwood Yellow",
+      "wins": 11,
+      "points": 88.5,
+      "percentage": 164.47,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Kooyong Purple",
+      "wins": 11,
+      "points": 88.5,
+      "percentage": 131.01,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Mentone",
+      "wins": 5,
+      "points": 56,
+      "percentage": 94.41,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Belvedere Park",
+      "wins": 4,
+      "points": 55,
+      "percentage": 101.11,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Albert Park",
+      "wins": 3,
+      "points": 39,
+      "percentage": 76.95,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Black Rock",
+      "wins": 2,
+      "points": 33,
+      "percentage": 66.77,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "HA31-HA003",
+  "fixtures": 46,
+  "completed_fixtures": 39,
+  "draw_fixtures": 46,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 152,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for HA003023 doubles No. 3: '4-1'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for HA003023 doubles No. 4: '1-3'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for HA003083 doubles No. 4: '4-6 4-2'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for HA003102 doubles No. 2: '4-4'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for HA003143 doubles No. 3: '5-7 1-3'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

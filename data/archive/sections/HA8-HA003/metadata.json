@@ -1,0 +1,87 @@
+{
+  "asset_id": "HA8-HA003",
+  "competition_code": "HA",
+  "competition_label": "Thursday AM - Autumn 2012",
+  "season_id": "HA8",
+  "season_label": "Autumn 2012",
+  "source_section_code": "HA003",
+  "section_label": "Section 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "East Malvern",
+      "wins": 13,
+      "points": 106,
+      "percentage": 239.0,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Albert Park",
+      "wins": 10,
+      "points": 80,
+      "percentage": 126.67,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "St Finbar's 1",
+      "wins": 7,
+      "points": 63,
+      "percentage": 108.52,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "St Finbar's 2",
+      "wins": 5,
+      "points": 61,
+      "percentage": 113.98,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Oakleigh",
+      "wins": 3,
+      "points": 34,
+      "percentage": 64.55,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Basterfield Park",
+      "wins": 0,
+      "points": 16,
+      "percentage": 37.54,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "HA8-HA003",
+  "fixtures": 47,
+  "completed_fixtures": 41,
+  "draw_fixtures": 46,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 160,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

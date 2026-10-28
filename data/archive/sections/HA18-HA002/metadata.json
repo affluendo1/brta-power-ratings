@@ -1,0 +1,107 @@
+{
+  "asset_id": "HA18-HA002",
+  "competition_code": "HA",
+  "competition_label": "Thursday AM - Autumn 2017",
+  "season_id": "HA18",
+  "season_label": "Autumn 2017",
+  "source_section_code": "HA002",
+  "section_label": "Section 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "St Finbar's",
+      "wins": 12,
+      "points": 90,
+      "percentage": 166.75,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Albert Park",
+      "wins": 9,
+      "points": 71,
+      "percentage": 113.2,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Black Rock 1",
+      "wins": 8,
+      "points": 70,
+      "percentage": 123.79,
+      "marker": "R"
+    },
+    {
+      "position": 4,
+      "team": "Basterfield Park",
+      "wins": 7,
+      "points": 54,
+      "percentage": 92.4,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Caulfield Rec",
+      "wins": 6,
+      "points": 54,
+      "percentage": 89.37,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Kooyong",
+      "wins": 5,
+      "points": 53,
+      "percentage": 101.7,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Black Rock 2",
+      "wins": 3,
+      "points": 32,
+      "percentage": 77.06,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "Mentone",
+      "wins": 2,
+      "points": 24,
+      "percentage": 64.58,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "HA18-HA002",
+  "fixtures": 60,
+  "completed_fixtures": 57,
+  "draw_fixtures": 60,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 228,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for HA002012 doubles No. 3: '6-0 1-0'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for HA002301 doubles No. 3: '6-3 4-6'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for HA002302 doubles No. 3: '4-6 6-2 2-1'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

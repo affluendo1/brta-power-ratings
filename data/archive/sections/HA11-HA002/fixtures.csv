@@ -1,0 +1,48 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+HA002011,25 Jul 13,1,regular,Round 1,East Malvern,Black Rock,8,0,8,1,,,54,29,Completed,
+HA002012,25 Jul 13,1,regular,Round 1,Glen Iris Valley,Kooyong,7,1,7,3,,,53,42,Completed,
+HA002013,25 Jul 13,1,regular,Round 1,St Pauls,Elwood,2,6,4,5,,,33,37,Completed,
+HA002021,01 Aug 13,2,regular,Round 2,Elwood,East Malvern,0,8,2,8,,,30,54,Completed,
+HA002022,01 Aug 13,2,regular,Round 2,Kooyong,St Pauls,6,2,6,6,,,56,55,Completed,
+HA002023,01 Aug 13,2,regular,Round 2,Black Rock,Glen Iris Valley,0,8,1,8,,,16,54,Completed,
+HA002031,08 Aug 13,3,regular,Round 3,East Malvern,Glen Iris Valley,0,8,3,8,,,42,63,Completed,
+HA002033,08 Aug 13,3,regular,Round 3,Elwood,Kooyong,8,0,8,1,,,52,32,Completed,
+pending-ha002-r3-st-pauls-black-rock,08 Aug 13,3,regular,Round 3,St Pauls,Black Rock,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+HA002041,15 Aug 13,4,regular,Round 4,Kooyong,East Malvern,0,8,0,8,,,8,48,Completed,
+HA002042,15 Aug 13,4,regular,Round 4,Black Rock,Elwood,0,8,0,8,,,10,48,Completed,
+HA002043,15 Aug 13,4,regular,Round 4,Glen Iris Valley,St Pauls,7,1,7,4,,,58,49,Completed,
+HA002051,22 Aug 13,5,regular,Round 5,East Malvern,St Pauls,7,1,7,4,,,52,37,Completed,
+HA002052,22 Aug 13,5,regular,Round 5,Kooyong,Black Rock,8,0,8,0,,,48,16,Completed,
+HA002053,22 Aug 13,5,regular,Round 5,Elwood,Glen Iris Valley,6,2,4,4,,,38,34,Completed,
+HA002061,29 Aug 13,6,regular,Round 6,Black Rock,East Malvern,0,8,0,8,,,7,49,Completed,
+HA002062,29 Aug 13,6,regular,Round 6,Kooyong,Glen Iris Valley,1,7,2,7,,,28,50,Completed,
+HA002063,29 Aug 13,6,regular,Round 6,Elwood,St Pauls,2,6,4,5,,,43,41,Completed,
+HA002071,05 Sep 13,7,regular,Round 7,East Malvern,Elwood,7,1,6,0,,,36,11,Completed,
+HA002072,05 Sep 13,7,regular,Round 7,St Pauls,Kooyong,7,1,5,1,,,40,19,Completed,
+HA002073,05 Sep 13,7,regular,Round 7,Glen Iris Valley,Black Rock,8,0,8,0,,,48,8,Completed,
+HA002081,12 Sep 13,8,regular,Round 8,Glen Iris Valley,East Malvern,7,1,7,4,,,59,44,Completed,
+pending-ha002-r8-black-rock-st-pauls,12 Sep 13,8,regular,Round 8,Black Rock,St Pauls,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha002-r8-kooyong-elwood,12 Sep 13,8,regular,Round 8,Kooyong,Elwood,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+HA002091,19 Sep 13,9,regular,Round 9,East Malvern,Kooyong,8,0,8,0,,,49,17,Completed,
+HA002092,19 Sep 13,9,regular,Round 9,Elwood,Black Rock,8,0,8,0,,,48,8,Completed,
+HA002093,19 Sep 13,9,regular,Round 9,St Pauls,Glen Iris Valley,1,7,4,7,,,45,63,Completed,
+HA002101,10 Oct 13,10,regular,Round 10,St Pauls,East Malvern,4,4,2,2,,,21,18,Completed,
+HA002102,10 Oct 13,10,regular,Round 10,Black Rock,Kooyong,0,8,1,8,,,21,55,Completed,
+pending-ha002-r10-glen-iris-valley-elwood,10 Oct 13,10,regular,Round 10,Glen Iris Valley,Elwood,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+HA002112,17 Oct 13,11,regular,Round 11,Glen Iris Valley,Kooyong,8,0,8,1,,,54,29,Completed,
+HA002113,17 Oct 13,11,regular,Round 11,St Pauls,Elwood,0,8,0,8,,,15,49,Completed,
+pending-ha002-r11-east-malvern-black-rock,17 Oct 13,11,regular,Round 11,East Malvern,Black Rock,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+HA002121,24 Oct 13,12,regular,Round 12,Elwood,East Malvern,1,7,3,6,,,35,49,Completed,
+HA002122,24 Oct 13,12,regular,Round 12,Kooyong,St Pauls,0,8,2,8,,,39,61,Completed,
+HA002123,24 Oct 13,12,regular,Round 12,Black Rock,Glen Iris Valley,0,8,0,8,,,19,48,Completed,
+HA002131,31 Oct 13,13,regular,Round 13,East Malvern,Glen Iris Valley,6,2,5,4,,,48,34,Completed,
+HA002132,31 Oct 13,13,regular,Round 13,St Pauls,Black Rock,8,0,8,0,,,48,12,Completed,
+HA002133,31 Oct 13,13,regular,Round 13,Elwood,Kooyong,6,2,5,4,,,42,35,Completed,
+HA002142,07 Nov 13,14,regular,Round 14,Black Rock,Elwood,0,8,1,8,,,23,48,Completed,
+HA002143,07 Nov 13,14,regular,Round 14,Glen Iris Valley,St Pauls,7,1,7,2,,,54,29,Completed,
+pending-ha002-r14-kooyong-east-malvern,07 Nov 13,14,regular,Round 14,Kooyong,East Malvern,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+HA002152,14 Nov 13,15,regular,Round 15,Kooyong,Black Rock,8,0,8,1,,,52,20,Completed,
+HA002153,14 Nov 13,15,regular,Round 15,Elwood,Glen Iris Valley,0,8,0,8,,,18,48,Completed,
+HA002311,14 Nov 13,15,regular,Round 15,East Malvern,Elwood,7.5,0.5,7,2,,,48,39,Completed,
+pending-ha002-r15-east-malvern-st-pauls,14 Nov 13,15,regular,Round 15,East Malvern,St Pauls,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+HA002321,,16,grand_final,Grand final · TROLS entry 2,Glen Iris Valley,East Malvern,7,1,6,4,,,46,40,Completed,

@@ -1,0 +1,101 @@
+{
+  "asset_id": "HA21-HA004",
+  "competition_code": "HA",
+  "competition_label": "Thursday AM - Autumn 2018",
+  "season_id": "HA21",
+  "season_label": "Autumn 2018",
+  "source_section_code": "HA004",
+  "section_label": "Section 4",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Chadstone Blue",
+      "wins": 10,
+      "points": 73,
+      "percentage": 131.28,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "St James",
+      "wins": 7,
+      "points": 58,
+      "percentage": 115.83,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Chadstone Red",
+      "wins": 7,
+      "points": 55.5,
+      "percentage": 106.33,
+      "marker": "R"
+    },
+    {
+      "position": 4,
+      "team": "Sth Hawthorn",
+      "wins": 6,
+      "points": 48,
+      "percentage": 97.68,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Dingley",
+      "wins": 4,
+      "points": 40.5,
+      "percentage": 92.61,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Hawksburn",
+      "wins": 3,
+      "points": 31,
+      "percentage": 74.95,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "St Cecilia's",
+      "wins": 2,
+      "points": 30,
+      "percentage": 85.68,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "HA21-HA004",
+  "fixtures": 60,
+  "completed_fixtures": 45,
+  "draw_fixtures": 49,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 178,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for HA004053 doubles No. 1: '2-'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for HA004053 doubles No. 2: '3-'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for HA004131 doubles No. 4: '3-6 5-3'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for HA004302 doubles No. 4: '6-4 4-6 1-1'. Missing score not inferred; excluded from ratings and game totals.",
+    "Fixture game totals do not match rubbers for HA004053: TROLS team total 5-0; complete-score total 0-0. Both published records retained."
+  ]
+}

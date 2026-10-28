@@ -1,0 +1,89 @@
+{
+  "asset_id": "HA35-HA004",
+  "competition_code": "HA",
+  "competition_label": "Thursday AM - Autumn 2025",
+  "season_id": "HA35",
+  "season_label": "Autumn 2025",
+  "source_section_code": "HA004",
+  "section_label": "Section 4",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Mentone",
+      "wins": 13,
+      "points": 101,
+      "percentage": 173.52,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "Kooyong Purple",
+      "wins": 11,
+      "points": 82,
+      "percentage": 117.16,
+      "marker": "P"
+    },
+    {
+      "position": 3,
+      "team": "Carmelite Pink",
+      "wins": 10,
+      "points": 74,
+      "percentage": 106.78,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Black Rock",
+      "wins": 5,
+      "points": 43,
+      "percentage": 81.79,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Albert Park",
+      "wins": 3,
+      "points": 31,
+      "percentage": 78.91,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Hawksburn",
+      "wins": 3,
+      "points": 29,
+      "percentage": 73.5,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "HA35-HA004",
+  "fixtures": 46,
+  "completed_fixtures": 46,
+  "draw_fixtures": 46,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 184,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for HA004321 doubles No. 4: '6-4 2-6'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

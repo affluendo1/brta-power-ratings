@@ -1,0 +1,48 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+HA005011,26 Jul 12,1,regular,Round 1,Noble Park,St Cecilia's,7,1,7,2,,,44,25,Completed,
+HA005012,26 Jul 12,1,regular,Round 1,Dingley 1,St James,7,1,6,4,,,49,42,Completed,
+HA005013,26 Jul 12,1,regular,Round 1,St Leonard's,Dingley 2,8,0,8,1,,,50,17,Completed,
+HA005021,02 Aug 12,2,regular,Round 2,Dingley 2,Noble Park,0,8,3,8,,,37,64,Completed,
+HA005022,02 Aug 12,2,regular,Round 2,St James,St Leonard's,6,2,5,4,,,43,42,Completed,
+HA005023,02 Aug 12,2,regular,Round 2,St Cecilia's,Dingley 1,8,0,8,2,,,60,33,Completed,
+HA005032,09 Aug 12,3,regular,Round 3,St Leonard's,St Cecilia's,4,4,0,0,,,3,2,Completed,
+pending-ha005-r3-dingley-2-st-james,09 Aug 12,3,regular,Round 3,Dingley 2,St James,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha005-r3-noble-park-dingley-1,09 Aug 12,3,regular,Round 3,Noble Park,Dingley 1,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+HA005041,16 Aug 12,4,regular,Round 4,St James,Noble Park,1,7,2,7,,,37,51,Completed,
+HA005042,16 Aug 12,4,regular,Round 4,St Cecilia's,Dingley 2,2,6,4,5,,,44,39,Completed,
+HA005043,16 Aug 12,4,regular,Round 4,Dingley 1,St Leonard's,2,6,4,4,,,29,39,Completed,
+HA005051,23 Aug 12,5,regular,Round 5,Noble Park,St Leonard's,8,0,8,1,,,51,25,Completed,
+HA005052,23 Aug 12,5,regular,Round 5,St James,St Cecilia's,6,2,6,4,,,47,42,Completed,
+HA005053,23 Aug 12,5,regular,Round 5,Dingley 2,Dingley 1,1,7,3,7,,,35,50,Completed,
+HA005061,30 Aug 12,6,regular,Round 6,St Cecilia's,Noble Park,1,7,2,7,,,31,44,Completed,
+HA005062,30 Aug 12,6,regular,Round 6,St James,Dingley 1,8,0,8,1,,,51,25,Completed,
+HA005063,30 Aug 12,6,regular,Round 6,Dingley 2,St Leonard's,1,7,2,7,,,28,53,Completed,
+HA005072,06 Sep 12,7,regular,Round 7,St Leonard's,St James,6,2,5,4,,,44,33,Completed,
+pending-ha005-r7-dingley-1-st-cecilia-s,06 Sep 12,7,regular,Round 7,Dingley 1,St Cecilia's,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha005-r7-noble-park-dingley-2,06 Sep 12,7,regular,Round 7,Noble Park,Dingley 2,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+HA005081,13 Sep 12,8,regular,Round 8,Dingley 1,Noble Park,2,6,4,6,,,46,50,Completed,
+HA005082,13 Sep 12,8,regular,Round 8,St Cecilia's,St Leonard's,2,6,4,6,,,40,47,Completed,
+HA005083,13 Sep 12,8,regular,Round 8,St James,Dingley 2,7,1,6,3,,,50,37,Completed,
+HA005091,20 Sep 12,9,regular,Round 9,Noble Park,St James,7,1,7,3,,,50,40,Completed,
+HA005092,20 Sep 12,9,regular,Round 9,Dingley 2,St Cecilia's,0,8,1,8,,,31,53,Completed,
+HA005093,20 Sep 12,9,regular,Round 9,St Leonard's,Dingley 1,7,1,6,4,,,50,43,Completed,
+HA005101,11 Oct 12,10,regular,Round 10,St Leonard's,Noble Park,3.5,4.5,1,2,,,15,19,Completed,
+HA005102,11 Oct 12,10,regular,Round 10,St Cecilia's,St James,4,4,2,3,,,27,30,Completed,
+HA005103,11 Oct 12,10,regular,Round 10,Dingley 1,Dingley 2,4,4,3,3,,,28,29,Completed,
+HA005112,18 Oct 12,11,regular,Round 11,Dingley 1,St James,6,2,4,4,,,36,30,Completed,
+HA005113,18 Oct 12,11,regular,Round 11,St Leonard's,Dingley 2,8,0,8,1,,,53,28,Completed,
+pending-ha005-r11-noble-park-st-cecilia-s,18 Oct 12,11,regular,Round 11,Noble Park,St Cecilia's,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+HA005121,25 Oct 12,12,regular,Round 12,Dingley 2,Noble Park,2,6,4,5,,,40,45,Completed,
+HA005122,25 Oct 12,12,regular,Round 12,St James,St Leonard's,7,1,6,2,,,38,20,Completed,
+HA005123,25 Oct 12,12,regular,Round 12,St Cecilia's,Dingley 1,2,6,4,5,,,33,38,Completed,
+pending-ha005-r13-dingley-2-st-james,01 Nov 12,13,regular,Round 13,Dingley 2,St James,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha005-r13-noble-park-dingley-1,01 Nov 12,13,regular,Round 13,Noble Park,Dingley 1,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha005-r13-st-leonard-s-st-cecilia-s,01 Nov 12,13,regular,Round 13,St Leonard's,St Cecilia's,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+HA005141,08 Nov 12,14,regular,Round 14,St James,Noble Park,1,7,2,6,,,32,46,Completed,
+HA005143,08 Nov 12,14,regular,Round 14,Dingley 1,St Leonard's,6,2,5,4,,,39,29,Completed,
+pending-ha005-r14-st-cecilia-s-dingley-2,08 Nov 12,14,regular,Round 14,St Cecilia's,Dingley 2,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+HA005151,15 Nov 12,15,regular,Round 15,Noble Park,St Leonard's,6,2,4,4,,,40,32,Completed,
+HA005152,15 Nov 12,15,regular,Round 15,St James,St Cecilia's,6,2,4,4,,,35,29,Completed,
+HA005153,15 Nov 12,15,regular,Round 15,Dingley 2,Dingley 1,1,7,2,6,,,22,41,Completed,
+HA005311,15 Nov 12,15,regular,Round 15,St Leonard's,St James,2,6,5,6,,,47,53,Completed,
+HA005321,,16,grand_final,Grand final · TROLS entry 2,Noble Park,St James,8,0,8,0,,,49,15,Completed,

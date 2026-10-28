@@ -1,0 +1,105 @@
+{
+  "asset_id": "HA34-HA001",
+  "competition_code": "HA",
+  "competition_label": "Thursday AM - Spring 2024",
+  "season_id": "HA34",
+  "season_label": "Spring 2024",
+  "source_section_code": "HA001",
+  "section_label": "Setion 1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Hampton",
+      "wins": 10,
+      "points": 83,
+      "percentage": 135.6,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "Eaglemont",
+      "wins": 10,
+      "points": 78,
+      "percentage": 144.41,
+      "marker": "P"
+    },
+    {
+      "position": 3,
+      "team": "Canterbury",
+      "wins": 9,
+      "points": 76,
+      "percentage": 136.2,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Kooyong Purple",
+      "wins": 8,
+      "points": 72,
+      "percentage": 116.83,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Kooyong Pink",
+      "wins": 7,
+      "points": 59,
+      "percentage": 118.8,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Hawthorn",
+      "wins": 4,
+      "points": 47,
+      "percentage": 94.43,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Kooyong Yellow",
+      "wins": 1,
+      "points": 18,
+      "percentage": 53.36,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "Elwood Red",
+      "wins": 1,
+      "points": 15,
+      "percentage": 44.65,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "HA34-HA001",
+  "fixtures": 59,
+  "completed_fixtures": 49,
+  "draw_fixtures": 48,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 194,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for HA001022 doubles No. 2: '6-2 4-2'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

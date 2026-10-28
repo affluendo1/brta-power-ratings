@@ -1,0 +1,90 @@
+{
+  "asset_id": "HA16-HA004",
+  "competition_code": "HA",
+  "competition_label": "Thursday AM - Autumn 2016",
+  "season_id": "HA16",
+  "season_label": "Autumn 2016",
+  "source_section_code": "HA004",
+  "section_label": "Section 4",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Mentone",
+      "wins": 13,
+      "points": 94.5,
+      "percentage": 131.58,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "St James",
+      "wins": 8,
+      "points": 70,
+      "percentage": 115.9,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Chadstone Blue",
+      "wins": 6,
+      "points": 62,
+      "percentage": 110.13,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "St Cecilia's",
+      "wins": 5,
+      "points": 45,
+      "percentage": 85.65,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "St Leonard's",
+      "wins": 5,
+      "points": 45,
+      "percentage": 74.77,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Chadstone Red",
+      "wins": 3,
+      "points": 43.5,
+      "percentage": 92.57,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "HA16-HA004",
+  "fixtures": 47,
+  "completed_fixtures": 43,
+  "draw_fixtures": 46,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 168,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for HA004062 doubles No. 3: '7-6 0-1'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for HA004311 doubles No. 3: '6-3 3-6'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

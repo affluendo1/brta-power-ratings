@@ -1,0 +1,47 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+HA002011,14 Jul 22,1,regular,Round 1,Basterfield Park,Elsternwick Park,8,0,8,1,,,54,25,Completed,
+HA002012,14 Jul 22,1,regular,Round 1,Black Rock,Kooyong Purple,7,1,7,3,,,57,36,Completed,
+HA002013,14 Jul 22,1,regular,Round 1,Kooyong Yellow,Parkdale,1,7,2,6,,,28,47,Completed,
+HA002021,21 Jul 22,2,regular,Round 2,Parkdale,Basterfield Park,8,0,8,0,,,48,9,Completed,
+HA002022,21 Jul 22,2,regular,Round 2,Kooyong Purple,Kooyong Yellow,1,7,3,6,,,35,47,Completed,
+HA002023,21 Jul 22,2,regular,Round 2,Elsternwick Park,Black Rock,6,2,4,4,,,32,31,Completed,
+HA002031,28 Jul 22,3,regular,Round 3,Basterfield Park,Black Rock,8,0,8,0,,,50,17,Completed,
+HA002032,28 Jul 22,3,regular,Round 3,Kooyong Yellow,Elsternwick Park,8,0,8,2,,,57,37,Completed,
+HA002033,28 Jul 22,3,regular,Round 3,Parkdale,Kooyong Purple,8,0,8,1,,,56,35,Completed,
+HA002041,04 Aug 22,4,regular,Round 4,Kooyong Purple,Basterfield Park,7,1,6,4,,,44,45,Completed,
+HA002042,04 Aug 22,4,regular,Round 4,Elsternwick Park,Parkdale,0,8,0,8,,,18,48,Completed,
+HA002043,04 Aug 22,4,regular,Round 4,Black Rock,Kooyong Yellow,1,7,3,6,,,35,51,Completed,
+HA002051,11 Aug 22,5,regular,Round 5,Basterfield Park,Kooyong Yellow,6,2,5,4,,,46,37,Completed,
+HA002052,11 Aug 22,5,regular,Round 5,Kooyong Purple,Elsternwick Park,1,7,3,6,,,34,47,Completed,
+HA002053,11 Aug 22,5,regular,Round 5,Parkdale,Black Rock,6,2,4,4,,,32,28,Completed,
+HA002061,18 Aug 22,6,regular,Round 6,Elsternwick Park,Basterfield Park,1,7,3,7,,,40,59,Completed,
+HA002062,18 Aug 22,6,regular,Round 6,Kooyong Purple,Black Rock,0,8,0,8,,,13,49,Completed,
+HA002063,18 Aug 22,6,regular,Round 6,Parkdale,Kooyong Yellow,8,0,8,2,,,60,41,Completed,
+pending-ha002-r7-basterfield-park-parkdale,25 Aug 22,7,regular,Round 7,Basterfield Park,Parkdale,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha002-r7-black-rock-elsternwick-park,25 Aug 22,7,regular,Round 7,Black Rock,Elsternwick Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha002-r7-kooyong-yellow-kooyong-purple,25 Aug 22,7,regular,Round 7,Kooyong Yellow,Kooyong Purple,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+HA002081,01 Sep 22,8,regular,Round 8,Black Rock,Basterfield Park,7,1,7,2,,,50,32,Completed,
+HA002082,01 Sep 22,8,regular,Round 8,Elsternwick Park,Kooyong Yellow,2,6,4,6,,,47,60,Completed,
+HA002083,01 Sep 22,8,regular,Round 8,Kooyong Purple,Parkdale,0,8,0,8,,,15,48,Completed,
+HA002091,08 Sep 22,9,regular,Round 9,Basterfield Park,Kooyong Purple,8,0,8,0,,,50,22,Completed,
+HA002093,08 Sep 22,9,regular,Round 9,Kooyong Yellow,Black Rock,1,7,2,7,,,32,53,Completed,
+pending-ha002-r9-parkdale-elsternwick-park,08 Sep 22,9,regular,Round 9,Parkdale,Elsternwick Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+HA002101,15 Sep 22,10,regular,Round 10,Kooyong Yellow,Basterfield Park,1,7,3,7,,,48,57,Completed,
+HA002102,15 Sep 22,10,regular,Round 10,Elsternwick Park,Kooyong Purple,8,0,8,1,,,50,25,Completed,
+HA002103,15 Sep 22,10,regular,Round 10,Black Rock,Parkdale,7,1,6,3,,,47,40,Completed,
+HA002111,06 Oct 22,11,regular,Round 11,Basterfield Park,Elsternwick Park,7,1,7,3,,,54,49,Completed,
+HA002113,06 Oct 22,11,regular,Round 11,Kooyong Yellow,Parkdale,1,7,2,7,,,43,56,Completed,
+pending-ha002-r11-black-rock-kooyong-purple,06 Oct 22,11,regular,Round 11,Black Rock,Kooyong Purple,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha002-r12-elsternwick-park-black-rock,13 Oct 22,12,regular,Round 12,Elsternwick Park,Black Rock,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha002-r12-kooyong-purple-kooyong-yellow,13 Oct 22,12,regular,Round 12,Kooyong Purple,Kooyong Yellow,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha002-r12-parkdale-basterfield-park,13 Oct 22,12,regular,Round 12,Parkdale,Basterfield Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+HA002131,20 Oct 22,13,regular,Round 13,Basterfield Park,Black Rock,7,1,6,3,,,49,34,Completed,
+HA002132,20 Oct 22,13,regular,Round 13,Kooyong Yellow,Elsternwick Park,7,1,6,2,,,43,22,Completed,
+HA002133,20 Oct 22,13,regular,Round 13,Parkdale,Kooyong Purple,8,0,8,0,,,48,11,Completed,
+pending-ha002-r14-black-rock-kooyong-yellow,27 Oct 22,14,regular,Round 14,Black Rock,Kooyong Yellow,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha002-r14-elsternwick-park-parkdale,27 Oct 22,14,regular,Round 14,Elsternwick Park,Parkdale,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha002-r14-kooyong-purple-basterfield-park,27 Oct 22,14,regular,Round 14,Kooyong Purple,Basterfield Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+HA002152,03 Nov 22,15,regular,Round 15,Kooyong Purple,Elsternwick Park,0,8,1,8,,,34,56,Completed,
+pending-ha002-r15-basterfield-park-kooyong-yellow,03 Nov 22,15,regular,Round 15,Basterfield Park,Kooyong Yellow,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha002-r15-parkdale-black-rock,03 Nov 22,15,regular,Round 15,Parkdale,Black Rock,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+HA002321,,16,grand_final,Grand final · TROLS entry 2,Parkdale,Basterfield Park,6.5,1.5,6,2,,,55,46,Completed,

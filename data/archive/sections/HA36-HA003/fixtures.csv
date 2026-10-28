@@ -1,0 +1,60 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+HA003011,24 Jul 25,1,regular,Round 1,Albert Park,Black Rock,0,8,1,8,,,25,51,Completed,
+HA003012,24 Jul 25,1,regular,Round 1,Carmelite,Basterfield Park,6,2,5,4,,,44,48,Completed,
+HA003013,24 Jul 25,1,regular,Round 1,Mentone,Elwood,1,7,2,6,,,29,43,Completed,
+pending-ha003-r1-kooyong-bye,24 Jul 25,1,regular,Round 1,Kooyong,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA003022,31 Jul 25,2,regular,Round 2,Black Rock,Carmelite,0,8,1,8,,,28,53,Completed,
+HA003023,31 Jul 25,2,regular,Round 2,Basterfield Park,Mentone,6,2,5,4,,,47,38,Completed,
+HA003024,31 Jul 25,2,regular,Round 2,Elwood,Kooyong,8,0,8,0,,,48,10,Completed,
+pending-ha003-r2-bye-albert-park,31 Jul 25,2,regular,Round 2,Bye,Albert Park,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA003031,07 Aug 25,3,regular,Round 3,Albert Park,Elwood,0,8,0,8,,,13,49,Completed,
+HA003033,07 Aug 25,3,regular,Round 3,Mentone,Black Rock,8,0,8,1,,,53,28,Completed,
+HA003034,07 Aug 25,3,regular,Round 3,Kooyong,Basterfield Park,0,8,0,8,,,12,48,Completed,
+pending-ha003-r3-carmelite-bye,07 Aug 25,3,regular,Round 3,Carmelite,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA003041,14 Aug 25,4,regular,Round 4,Basterfield Park,Albert Park,8,0,8,2,,,56,33,Completed,
+HA003042,14 Aug 25,4,regular,Round 4,Elwood,Carmelite,7,1,7,2,,,49,28,Completed,
+HA003044,14 Aug 25,4,regular,Round 4,Black Rock,Kooyong,6,2,4,4,,,33,29,Completed,
+pending-ha003-r4-bye-mentone,14 Aug 25,4,regular,Round 4,Bye,Mentone,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA003051,21 Aug 25,5,regular,Round 5,Mentone,Kooyong,8,0,8,1,,,51,34,Completed,
+HA003053,21 Aug 25,5,regular,Round 5,Basterfield Park,Black Rock,8,0,8,0,,,48,5,Completed,
+HA003054,21 Aug 25,5,regular,Round 5,Albert Park,Carmelite,0,8,0,8,,,10,48,Completed,
+pending-ha003-r5-bye-elwood,21 Aug 25,5,regular,Round 5,Bye,Elwood,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA003061,28 Aug 25,6,regular,Round 6,Carmelite,Mentone,2,6,5,5,,,51,56,Completed,
+HA003062,28 Aug 25,6,regular,Round 6,Kooyong,Albert Park,8,0,8,0,,,48,14,Completed,
+HA003063,28 Aug 25,6,regular,Round 6,Elwood,Basterfield Park,0,8,2,8,,,39,59,Completed,
+pending-ha003-r6-black-rock-bye,28 Aug 25,6,regular,Round 6,Black Rock,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA003071,04 Sep 25,7,regular,Round 7,Albert Park,Mentone,0,8,0,8,,,8,48,Completed,
+HA003072,04 Sep 25,7,regular,Round 7,Carmelite,Kooyong,7,1,6,2,,,45,27,Completed,
+HA003074,04 Sep 25,7,regular,Round 7,Elwood,Black Rock,8,0,8,0,,,48,4,Completed,
+pending-ha003-r7-bye-basterfield-park,04 Sep 25,7,regular,Round 7,Bye,Basterfield Park,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA003081,11 Sep 25,8,regular,Round 8,Black Rock,Albert Park,6,2,5,4,,,46,35,Completed,
+HA003082,11 Sep 25,8,regular,Round 8,Basterfield Park,Carmelite,8,0,8,0,,,48,15,Completed,
+HA003083,11 Sep 25,8,regular,Round 8,Elwood,Mentone,8,0,8,1,,,55,33,Completed,
+pending-ha003-r8-bye-kooyong,11 Sep 25,8,regular,Round 8,Bye,Kooyong,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA003092,18 Sep 25,9,regular,Round 9,Carmelite,Black Rock,1,7,3,6,,,45,49,Completed,
+HA003093,18 Sep 25,9,regular,Round 9,Mentone,Basterfield Park,7,1,6,2,,,42,30,Completed,
+HA003094,18 Sep 25,9,regular,Round 9,Kooyong,Elwood,0,8,1,8,,,34,55,Completed,
+pending-ha003-r9-albert-park-bye,18 Sep 25,9,regular,Round 9,Albert Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA003101,09 Oct 25,10,regular,Round 10,Elwood,Albert Park,8,0,8,0,,,48,7,Completed,
+HA003103,09 Oct 25,10,regular,Round 10,Black Rock,Mentone,0,8,1,8,,,29,52,Completed,
+HA003104,09 Oct 25,10,regular,Round 10,Basterfield Park,Kooyong,8,0,8,0,,,48,15,Completed,
+pending-ha003-r10-bye-carmelite,09 Oct 25,10,regular,Round 10,Bye,Carmelite,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA003111,16 Oct 25,11,regular,Round 11,Albert Park,Basterfield Park,1,7,2,7,,,22,52,Completed,
+HA003112,16 Oct 25,11,regular,Round 11,Carmelite,Elwood,0,8,1,8,,,29,51,Completed,
+HA003114,16 Oct 25,11,regular,Round 11,Kooyong,Black Rock,4,4,4,4,,,37,37,Completed,
+pending-ha003-r11-mentone-bye,16 Oct 25,11,regular,Round 11,Mentone,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA003121,23 Oct 25,12,regular,Round 12,Kooyong,Mentone,1,7,3,7,,,33,53,Completed,
+HA003123,23 Oct 25,12,regular,Round 12,Black Rock,Basterfield Park,1,7,3,7,,,40,53,Completed,
+HA003124,23 Oct 25,12,regular,Round 12,Carmelite,Albert Park,8,0,8,2,,,55,40,Completed,
+pending-ha003-r12-elwood-bye,23 Oct 25,12,regular,Round 12,Elwood,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA003131,30 Oct 25,13,regular,Round 13,Mentone,Carmelite,1,7,3,6,,,42,51,Completed,
+HA003132,30 Oct 25,13,regular,Round 13,Albert Park,Kooyong,1,7,2,7,,,26,52,Completed,
+HA003133,30 Oct 25,13,regular,Round 13,Basterfield Park,Elwood,1,7,3,6,,,36,48,Completed,
+pending-ha003-r13-bye-black-rock,30 Oct 25,13,regular,Round 13,Bye,Black Rock,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA003141,06 Nov 25,14,regular,Round 14,Mentone,Albert Park,8,0,8,0,,,49,19,Completed,
+HA003142,06 Nov 25,14,regular,Round 14,Kooyong,Carmelite,1,7,3,7,,,40,53,Completed,
+HA003144,06 Nov 25,14,regular,Round 14,Black Rock,Elwood,0,8,0,8,,,14,48,Completed,
+pending-ha003-r14-basterfield-park-bye,06 Nov 25,14,regular,Round 14,Basterfield Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA003301,,16,semi_final,Semi-final,Elwood,Carmelite,7,1,5,0,,,33,15,Completed,
+HA003302,,16,semi_final,Semi-final,Basterfield Park,Mentone,7.5,0.5,7,1,,,44,20,Completed,
+HA003321,,17,grand_final,Grand final · TROLS entry 2,Elwood,Basterfield Park,2,6,4,6,,,45,58,Completed,

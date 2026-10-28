@@ -1,0 +1,47 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+HA001011,04 Feb 21,1,regular,Round 1,Kooyong Green,Eaglemont,6,2,5,4,,,43,40,Completed,
+HA001012,04 Feb 21,1,regular,Round 1,Kooyong Purple,Glen Waverley,8,0,8,1,,,51,33,Completed,
+HA001013,04 Feb 21,1,regular,Round 1,Hampton,Kooyong Yellow,7,1,6,5,,,57,63,Completed,
+HA001022,11 Feb 21,2,regular,Round 2,Glen Waverley,Hampton,8,0,8,1,,,53,28,Completed,
+HA001023,11 Feb 21,2,regular,Round 2,Eaglemont,Kooyong Purple,0,0,0,0,,,0,0,Completed,
+pending-ha001-r2-kooyong-yellow-kooyong-green,11 Feb 21,2,regular,Round 2,Kooyong Yellow,Kooyong Green,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+HA001031,18 Feb 21,3,regular,Round 3,Kooyong Green,Kooyong Purple,1,7,3,6,,,42,45,Completed,
+HA001032,18 Feb 21,3,regular,Round 3,Hampton,Eaglemont,7,1,7,3,,,52,44,Completed,
+HA001033,18 Feb 21,3,regular,Round 3,Kooyong Yellow,Glen Waverley,0,8,0,8,,,10,48,Completed,
+HA001041,25 Feb 21,4,regular,Round 4,Glen Waverley,Kooyong Green,6,2,5,4,,,39,32,Completed,
+HA001042,25 Feb 21,4,regular,Round 4,Eaglemont,Kooyong Yellow,4,4,4,4,,,30,30,Completed,
+HA001043,25 Feb 21,4,regular,Round 4,Kooyong Purple,Hampton,2,6,4,4,,,29,42,Completed,
+HA001051,04 Mar 21,5,regular,Round 5,Kooyong Green,Hampton,6,2,5,4,,,49,43,Completed,
+HA001052,04 Mar 21,5,regular,Round 5,Glen Waverley,Eaglemont,8,0,8,1,,,55,28,Completed,
+HA001053,04 Mar 21,5,regular,Round 5,Kooyong Yellow,Kooyong Purple,7,1,6,2,,,42,31,Completed,
+HA001061,11 Mar 21,6,regular,Round 6,Eaglemont,Kooyong Green,2,6,4,6,,,43,53,Completed,
+HA001062,11 Mar 21,6,regular,Round 6,Glen Waverley,Kooyong Purple,6,2,4,4,,,29,27,Completed,
+HA001063,11 Mar 21,6,regular,Round 6,Kooyong Yellow,Hampton,7,1,7,2,,,51,27,Completed,
+HA001071,18 Mar 21,7,regular,Round 7,Kooyong Green,Kooyong Yellow,8,0,8,1,,,51,35,Completed,
+HA001072,18 Mar 21,7,regular,Round 7,Hampton,Glen Waverley,1,7,2,6,,,24,41,Completed,
+HA001073,18 Mar 21,7,regular,Round 7,Kooyong Purple,Eaglemont,7,1,7,3,,,57,45,Completed,
+HA001081,25 Mar 21,8,regular,Round 8,Kooyong Purple,Kooyong Green,0,8,1,8,,,39,57,Completed,
+HA001082,25 Mar 21,8,regular,Round 8,Eaglemont,Hampton,2,6,4,4,,,30,35,Completed,
+HA001083,25 Mar 21,8,regular,Round 8,Glen Waverley,Kooyong Yellow,2,6,4,4,,,35,40,Completed,
+HA001091,01 Apr 21,9,regular,Round 9,Kooyong Green,Glen Waverley,7,1,6,3,,,47,40,Completed,
+pending-ha001-r9-hampton-kooyong-purple,01 Apr 21,9,regular,Round 9,Hampton,Kooyong Purple,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+pending-ha001-r9-kooyong-yellow-eaglemont,01 Apr 21,9,regular,Round 9,Kooyong Yellow,Eaglemont,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+HA001101,22 Apr 21,10,regular,Round 10,Hampton,Kooyong Green,6,2,4,4,,,40,31,Completed,
+HA001102,22 Apr 21,10,regular,Round 10,Eaglemont,Glen Waverley,0,8,2,8,,,44,57,Completed,
+HA001103,22 Apr 21,10,regular,Round 10,Kooyong Purple,Kooyong Yellow,1,7,2,7,,,23,51,Completed,
+HA001111,29 Apr 21,11,regular,Round 11,Kooyong Green,Eaglemont,8,0,8,0,,,49,20,Completed,
+HA001112,29 Apr 21,11,regular,Round 11,Kooyong Purple,Glen Waverley,0,8,0,8,,,9,48,Completed,
+HA001113,29 Apr 21,11,regular,Round 11,Hampton,Kooyong Yellow,7,1,7,2,,,49,29,Completed,
+HA001121,06 May 21,12,regular,Round 12,Kooyong Yellow,Kooyong Green,1,7,2,6,,,20,41,Completed,
+HA001122,06 May 21,12,regular,Round 12,Glen Waverley,Hampton,8,0,8,0,,,48,16,Completed,
+HA001123,06 May 21,12,regular,Round 12,Eaglemont,Kooyong Purple,2,6,4,5,,,36,38,Completed,
+HA001131,13 May 21,13,regular,Round 13,Kooyong Green,Kooyong Purple,8,0,8,0,,,49,13,Completed,
+HA001133,13 May 21,13,regular,Round 13,Kooyong Yellow,Glen Waverley,0,8,2,8,,,38,56,Completed,
+pending-ha001-r13-hampton-eaglemont,13 May 21,13,regular,Round 13,Hampton,Eaglemont,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+HA001141,20 May 21,14,regular,Round 14,Glen Waverley,Kooyong Green,2,6,4,5,,,40,46,Completed,
+HA001142,20 May 21,14,regular,Round 14,Eaglemont,Kooyong Yellow,2,6,4,6,,,46,55,Completed,
+HA001143,20 May 21,14,regular,Round 14,Kooyong Purple,Hampton,2,6,4,5,,,37,46,Completed,
+pending-ha001-r15-glen-waverley-eaglemont,27 May 21,15,regular,Round 15,Glen Waverley,Eaglemont,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha001-r15-kooyong-green-hampton,27 May 21,15,regular,Round 15,Kooyong Green,Hampton,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha001-r15-kooyong-yellow-kooyong-purple,27 May 21,15,regular,Round 15,Kooyong Yellow,Kooyong Purple,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+HA001321,,16,grand_final,Grand final · TROLS entry 2,Kooyong Green,Glen Waverley,1,7,1,6,,,25,41,Completed,

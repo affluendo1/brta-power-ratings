@@ -1,0 +1,61 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+HA004011,23 Jul 15,1,regular,Round 1,Basterfield Park,Noble Park,8,0,8,0,,,48,16,Completed,
+HA004012,23 Jul 15,1,regular,Round 1,St James,St Leonard's,7,1,6,2,,,43,20,Completed,
+HA004013,23 Jul 15,1,regular,Round 1,Mentone,Black Rock,7,1,7,2,,,50,34,Completed,
+HA004014,23 Jul 15,1,regular,Round 1,Chadstone Red,Chadstone Blue,1,7,3,7,,,37,50,Completed,
+HA004021,30 Jul 15,2,regular,Round 2,Chadstone Blue,Basterfield Park,1,7,4,6,,,42,51,Completed,
+HA004022,30 Jul 15,2,regular,Round 2,Noble Park,St James,2,6,4,5,,,42,36,Completed,
+HA004023,30 Jul 15,2,regular,Round 2,St Leonard's,Mentone,0,8,1,8,,,23,53,Completed,
+HA004024,30 Jul 15,2,regular,Round 2,Black Rock,Chadstone Red,6,2,4,4,,,36,29,Completed,
+pending-ha004-r3-basterfield-park-black-rock,06 Aug 15,3,regular,Round 3,Basterfield Park,Black Rock,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha004-r3-chadstone-red-st-leonard-s,06 Aug 15,3,regular,Round 3,Chadstone Red,St Leonard's,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha004-r3-mentone-noble-park,06 Aug 15,3,regular,Round 3,Mentone,Noble Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha004-r3-st-james-chadstone-blue,06 Aug 15,3,regular,Round 3,St James,Chadstone Blue,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+HA004041,13 Aug 15,4,regular,Round 4,St Leonard's,Basterfield Park,1,7,4,6,,,46,49,Completed,
+HA004042,13 Aug 15,4,regular,Round 4,Black Rock,St James,7,1,6,3,,,48,28,Completed,
+HA004043,13 Aug 15,4,regular,Round 4,Chadstone Blue,Mentone,0,8,1,8,,,34,52,Completed,
+HA004044,13 Aug 15,4,regular,Round 4,Noble Park,Chadstone Red,7,1,6,3,,,48,23,Completed,
+HA004051,20 Aug 15,5,regular,Round 5,Mentone,Chadstone Red,7,1,7,2,,,46,23,Completed,
+HA004052,20 Aug 15,5,regular,Round 5,Chadstone Blue,Black Rock,0,8,1,8,,,20,50,Completed,
+HA004053,20 Aug 15,5,regular,Round 5,St Leonard's,Noble Park,1,7,3,6,,,40,44,Completed,
+HA004054,20 Aug 15,5,regular,Round 5,Basterfield Park,St James,2,6,4,5,,,41,37,Completed,
+HA004063,27 Aug 15,6,regular,Round 6,Black Rock,St Leonard's,4,4,0,0,,,0,0,Completed,
+pending-ha004-r6-chadstone-red-basterfield-park,27 Aug 15,6,regular,Round 6,Chadstone Red,Basterfield Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha004-r6-noble-park-chadstone-blue,27 Aug 15,6,regular,Round 6,Noble Park,Chadstone Blue,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha004-r6-st-james-mentone,27 Aug 15,6,regular,Round 6,St James,Mentone,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+HA004071,03 Sep 15,7,regular,Round 7,Basterfield Park,Mentone,8,0,8,1,,,52,33,Completed,
+HA004072,03 Sep 15,7,regular,Round 7,St James,Chadstone Red,2,6,4,5,,,35,37,Completed,
+HA004073,03 Sep 15,7,regular,Round 7,Chadstone Blue,St Leonard's,1,7,2,6,,,34,45,Completed,
+HA004074,03 Sep 15,7,regular,Round 7,Black Rock,Noble Park,2,6,4,4,,,32,35,Completed,
+HA004081,10 Sep 15,8,regular,Round 8,Noble Park,Basterfield Park,2,6,4,4,,,30,36,Completed,
+HA004082,10 Sep 15,8,regular,Round 8,St Leonard's,St James,6,2,4,4,,,38,35,Completed,
+HA004083,10 Sep 15,8,regular,Round 8,Black Rock,Mentone,2,6,4,4,,,37,38,Completed,
+HA004084,10 Sep 15,8,regular,Round 8,Chadstone Blue,Chadstone Red,1,7,2,6,,,30,40,Completed,
+HA004091,17 Sep 15,9,regular,Round 9,Basterfield Park,Chadstone Blue,7,1,6,3,,,50,40,Completed,
+HA004092,17 Sep 15,9,regular,Round 9,St James,Noble Park,1,7,2,6,,,27,38,Completed,
+HA004093,17 Sep 15,9,regular,Round 9,Mentone,St Leonard's,7,1,6,3,,,44,29,Completed,
+HA004094,17 Sep 15,9,regular,Round 9,Chadstone Red,Black Rock,7,1,7,4,,,51,46,Completed,
+HA004101,08 Oct 15,10,regular,Round 10,Black Rock,Basterfield Park,2,6,5,6,,,55,55,Completed,
+HA004102,08 Oct 15,10,regular,Round 10,Chadstone Blue,St James,0,8,1,8,,,27,53,Completed,
+HA004103,08 Oct 15,10,regular,Round 10,Noble Park,Mentone,1,7,4,6,,,40,45,Completed,
+HA004104,08 Oct 15,10,regular,Round 10,St Leonard's,Chadstone Red,6,2,5,5,,,46,39,Completed,
+HA004111,15 Oct 15,11,regular,Round 11,Basterfield Park,St Leonard's,7,1,6,2,,,42,27,Completed,
+HA004112,15 Oct 15,11,regular,Round 11,St James,Black Rock,2,6,5,5,,,41,42,Completed,
+HA004113,15 Oct 15,11,regular,Round 11,Mentone,Chadstone Blue,8,0,8,1,,,51,24,Completed,
+HA004114,15 Oct 15,11,regular,Round 11,Chadstone Red,Noble Park,6,2,4,4,,,33,29,Completed,
+HA004121,22 Oct 15,12,regular,Round 12,Chadstone Red,Mentone,2,6,5,6,,,51,55,Completed,
+HA004122,22 Oct 15,12,regular,Round 12,Black Rock,Chadstone Blue,8,0,8,1,,,54,35,Completed,
+HA004123,22 Oct 15,12,regular,Round 12,Noble Park,St Leonard's,2,6,5,6,,,49,50,Completed,
+HA004124,22 Oct 15,12,regular,Round 12,St James,Basterfield Park,1,7,3,6,,,26,41,Completed,
+HA004131,29 Oct 15,13,regular,Round 13,Mentone,St James,7,1,6,3,,,48,37,Completed,
+HA004132,29 Oct 15,13,regular,Round 13,Basterfield Park,Chadstone Red,7,1,7,2,,,53,36,Completed,
+HA004133,29 Oct 15,13,regular,Round 13,St Leonard's,Black Rock,1,7,2,7,,,26,49,Completed,
+HA004134,29 Oct 15,13,regular,Round 13,Chadstone Blue,Noble Park,7,1,6,4,,,49,35,Completed,
+pending-ha004-r14-chadstone-red-st-james,05 Nov 15,14,regular,Round 14,Chadstone Red,St James,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha004-r14-mentone-basterfield-park,05 Nov 15,14,regular,Round 14,Mentone,Basterfield Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha004-r14-noble-park-black-rock,05 Nov 15,14,regular,Round 14,Noble Park,Black Rock,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha004-r14-st-leonard-s-chadstone-blue,05 Nov 15,14,regular,Round 14,St Leonard's,Chadstone Blue,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+HA004301,,16,semi_final,Semi-final,Basterfield Park,Mentone,6,2,5,5,,,44,38,Completed,
+HA004302,,16,semi_final,Semi-final,Black Rock,Noble Park,6,2,5,4,,,43,30,Completed,
+HA004311,,16,semi_final,Semi-final,Mentone,Black Rock,1,7,4,6,,,40,47,Completed,
+HA004321,,17,grand_final,Grand final · TROLS entry 2,Basterfield Park,Black Rock,0.5,7.5,2,6,,,27,46,Completed,

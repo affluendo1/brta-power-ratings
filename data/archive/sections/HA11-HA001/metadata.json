@@ -1,0 +1,104 @@
+{
+  "asset_id": "HA11-HA001",
+  "competition_code": "HA",
+  "competition_label": "Thursday AM - Spring 2013",
+  "season_id": "HA11",
+  "season_label": "Spring 2013",
+  "source_section_code": "HA001",
+  "section_label": "A grade",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Glen Waverley",
+      "wins": 8,
+      "points": 70.5,
+      "percentage": 145.33,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Kooyong 1",
+      "wins": 7,
+      "points": 58,
+      "percentage": 105.37,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "BLTC",
+      "wins": 6,
+      "points": 51,
+      "percentage": 99.57,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Caulfield Rec",
+      "wins": 5,
+      "points": 49.5,
+      "percentage": 104.95,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Hampton",
+      "wins": 5,
+      "points": 49.5,
+      "percentage": 103.5,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Eaglemont",
+      "wins": 3,
+      "points": 35,
+      "percentage": 80.13,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Kooyong 2",
+      "wins": 1,
+      "points": 22.5,
+      "percentage": 73.35,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "HA11-HA001",
+  "fixtures": 60,
+  "completed_fixtures": 44,
+  "draw_fixtures": 49,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 166,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for HA001072 doubles No. 2: '4-6 6-4'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for HA001074 doubles No. 4: '1-6 3-1'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for HA001101 doubles No. 2: '6-3 4-6'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for HA001103 doubles No. 1: '4-6 3-3'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for HA001103 doubles No. 2: '5-7 0-3'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for HA001114 doubles No. 2: '5-7 4-4'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for HA001311 doubles No. 4: '4-2'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for HA001321 doubles No. 4: '1-6 4-2'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

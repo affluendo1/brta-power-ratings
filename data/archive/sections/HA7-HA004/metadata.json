@@ -1,0 +1,105 @@
+{
+  "asset_id": "HA7-HA004",
+  "competition_code": "HA",
+  "competition_label": "Thursday AM - Spring 2011",
+  "season_id": "HA7",
+  "season_label": "Spring 2011",
+  "source_section_code": "HA004",
+  "section_label": "Section 3",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Pearcedale",
+      "wins": 10,
+      "points": 73,
+      "percentage": 104.69,
+      "marker": ""
+    },
+    {
+      "position": 2,
+      "team": "Albert Park",
+      "wins": 8,
+      "points": 72,
+      "percentage": 132.18,
+      "marker": "P"
+    },
+    {
+      "position": 3,
+      "team": "Belvedere Park",
+      "wins": 9,
+      "points": 69,
+      "percentage": 107.39,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Mentone",
+      "wins": 6,
+      "points": 64,
+      "percentage": 109.66,
+      "marker": "R"
+    },
+    {
+      "position": 5,
+      "team": "Chadstone",
+      "wins": 5,
+      "points": 60,
+      "percentage": 116.81,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Caulfield Rec",
+      "wins": 4,
+      "points": 48,
+      "percentage": 95.45,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Noble Park",
+      "wins": 3,
+      "points": 41,
+      "percentage": 89.07,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "St Leonard's",
+      "wins": 1,
+      "points": 21,
+      "percentage": 60.97,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "HA7-HA004",
+  "fixtures": 60,
+  "completed_fixtures": 50,
+  "draw_fixtures": 49,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 200,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for HA004321 doubles No. 4: '1-6 6-4'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

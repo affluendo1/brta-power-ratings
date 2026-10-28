@@ -1,0 +1,60 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+HA003011,26 Jul 18,1,regular,Round 1,Belvedere Park,Basterfield Park,2,6,4,4,,,32,36,Completed,
+HA003012,26 Jul 18,1,regular,Round 1,Beaumaris CC,Mentone,0,8,1,8,,,30,52,Completed,
+HA003013,26 Jul 18,1,regular,Round 1,Chadstone Red,Chadstone Blue,6,2,5,4,,,45,33,Completed,
+pending-ha003-r1-elwood-bye,26 Jul 18,1,regular,Round 1,Elwood,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA003022,02 Aug 18,2,regular,Round 2,Basterfield Park,Beaumaris CC,6,2,5,4,,,40,33,Completed,
+HA003023,02 Aug 18,2,regular,Round 2,Mentone,Chadstone Red,6,2,4,4,,,34,26,Completed,
+HA003024,02 Aug 18,2,regular,Round 2,Chadstone Blue,Elwood,7,1,7,3,,,49,39,Completed,
+pending-ha003-r2-bye-belvedere-park,02 Aug 18,2,regular,Round 2,Bye,Belvedere Park,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA003031,09 Aug 18,3,regular,Round 3,Belvedere Park,Chadstone Blue,8,0,8,1,,,52,24,Completed,
+HA003033,09 Aug 18,3,regular,Round 3,Chadstone Red,Basterfield Park,6,2,4,4,,,34,26,Completed,
+HA003034,09 Aug 18,3,regular,Round 3,Elwood,Mentone,6,2,5,4,,,47,34,Completed,
+pending-ha003-r3-beaumaris-cc-bye,09 Aug 18,3,regular,Round 3,Beaumaris CC,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA003042,16 Aug 18,4,regular,Round 4,Chadstone Blue,Beaumaris CC,0,8,0,8,,,12,49,Completed,
+HA003044,16 Aug 18,4,regular,Round 4,Basterfield Park,Elwood,7,1,6,3,,,44,42,Completed,
+pending-ha003-r4-bye-chadstone-red,16 Aug 18,4,regular,Round 4,Bye,Chadstone Red,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ha003-r4-mentone-belvedere-park,16 Aug 18,4,regular,Round 4,Mentone,Belvedere Park,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+HA003051,23 Aug 18,5,regular,Round 5,Chadstone Red,Elwood,6,2,4,4,,,40,37,Completed,
+HA003053,23 Aug 18,5,regular,Round 5,Mentone,Basterfield Park,6,2,5,4,,,34,40,Completed,
+HA003054,23 Aug 18,5,regular,Round 5,Belvedere Park,Beaumaris CC,1,7,3,6,,,35,42,Completed,
+pending-ha003-r5-bye-chadstone-blue,23 Aug 18,5,regular,Round 5,Bye,Chadstone Blue,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA003061,30 Aug 18,6,regular,Round 6,Beaumaris CC,Chadstone Red,0.5,7.5,1,6,,,18,37,Completed,
+HA003062,30 Aug 18,6,regular,Round 6,Elwood,Belvedere Park,1,7,2,6,,,38,43,Completed,
+HA003063,30 Aug 18,6,regular,Round 6,Chadstone Blue,Mentone,0,8,1,8,,,25,53,Completed,
+pending-ha003-r6-basterfield-park-bye,30 Aug 18,6,regular,Round 6,Basterfield Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA003071,06 Sep 18,7,regular,Round 7,Belvedere Park,Chadstone Red,7,1,6,2,,,41,28,Completed,
+HA003072,06 Sep 18,7,regular,Round 7,Beaumaris CC,Elwood,0,8,3,8,,,46,56,Completed,
+HA003074,06 Sep 18,7,regular,Round 7,Chadstone Blue,Basterfield Park,0,8,0,8,,,22,49,Completed,
+pending-ha003-r7-bye-mentone,06 Sep 18,7,regular,Round 7,Bye,Mentone,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA003081,13 Sep 18,8,regular,Round 8,Basterfield Park,Belvedere Park,1,7,2,7,,,31,47,Completed,
+HA003082,13 Sep 18,8,regular,Round 8,Mentone,Beaumaris CC,7,1,6,2,,,45,24,Completed,
+HA003083,13 Sep 18,8,regular,Round 8,Chadstone Blue,Chadstone Red,6,2,5,4,,,41,35,Completed,
+pending-ha003-r8-bye-elwood,13 Sep 18,8,regular,Round 8,Bye,Elwood,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA003092,20 Sep 18,9,regular,Round 9,Beaumaris CC,Basterfield Park,1,7,2,7,,,35,52,Completed,
+HA003093,20 Sep 18,9,regular,Round 9,Chadstone Red,Mentone,1,7,3,7,,,39,53,Completed,
+HA003094,20 Sep 18,9,regular,Round 9,Elwood,Chadstone Blue,6,2,4,4,,,37,30,Completed,
+pending-ha003-r9-belvedere-park-bye,20 Sep 18,9,regular,Round 9,Belvedere Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA003101,11 Oct 18,10,regular,Round 10,Chadstone Blue,Belvedere Park,1,7,3,6,,,31,46,Completed,
+HA003103,11 Oct 18,10,regular,Round 10,Basterfield Park,Chadstone Red,6,2,5,5,,,51,46,Completed,
+HA003104,11 Oct 18,10,regular,Round 10,Mentone,Elwood,1,7,3,6,,,33,47,Completed,
+pending-ha003-r10-bye-beaumaris-cc,11 Oct 18,10,regular,Round 10,Bye,Beaumaris CC,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA003111,18 Oct 18,11,regular,Round 11,Belvedere Park,Mentone,3.5,4.5,1,3,,,15,24,Completed,
+HA003112,18 Oct 18,11,regular,Round 11,Beaumaris CC,Chadstone Blue,3,5,2,4,,,26,34,Completed,
+HA003114,18 Oct 18,11,regular,Round 11,Elwood,Basterfield Park,1,7,3,7,,,42,54,Completed,
+pending-ha003-r11-chadstone-red-bye,18 Oct 18,11,regular,Round 11,Chadstone Red,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA003121,25 Oct 18,12,regular,Round 12,Elwood,Chadstone Red,6,2,5,4,,,41,39,Completed,
+HA003123,25 Oct 18,12,regular,Round 12,Basterfield Park,Mentone,7,1,7,2,,,47,19,Completed,
+HA003124,25 Oct 18,12,regular,Round 12,Beaumaris CC,Belvedere Park,2,6,4,5,,,30,46,Completed,
+pending-ha003-r12-chadstone-blue-bye,25 Oct 18,12,regular,Round 12,Chadstone Blue,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA003131,01 Nov 18,13,regular,Round 13,Chadstone Red,Beaumaris CC,7,1,6,2,,,43,21,Completed,
+HA003132,01 Nov 18,13,regular,Round 13,Belvedere Park,Elwood,2,6,4,4,,,31,37,Completed,
+HA003133,01 Nov 18,13,regular,Round 13,Mentone,Chadstone Blue,8,0,8,0,,,48,20,Completed,
+pending-ha003-r13-bye-basterfield-park,01 Nov 18,13,regular,Round 13,Bye,Basterfield Park,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA003141,08 Nov 18,14,regular,Round 14,Chadstone Red,Belvedere Park,6,2,4,4,,,39,32,Completed,
+HA003142,08 Nov 18,14,regular,Round 14,Elwood,Beaumaris CC,8,0,8,1,,,51,20,Completed,
+HA003144,08 Nov 18,14,regular,Round 14,Basterfield Park,Chadstone Blue,7,1,7,4,,,55,39,Completed,
+pending-ha003-r14-mentone-bye,08 Nov 18,14,regular,Round 14,Mentone,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+HA003301,,16,semi_final,Semi-final,Basterfield Park,Elwood,2,6,5,5,,,38,44,Completed,
+HA003302,,16,semi_final,Semi-final,Belvedere Park,Mentone,7,1,6,2,,,41,33,Completed,
+HA003321,,17,grand_final,Grand final · TROLS entry 2,Belvedere Park,Elwood,6,2,5,4,,,37,39,Completed,

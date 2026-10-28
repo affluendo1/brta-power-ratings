@@ -1,0 +1,99 @@
+{
+  "asset_id": "HA24-HA001",
+  "competition_code": "HA",
+  "competition_label": "Thursday AM - Spring 2019",
+  "season_id": "HA24",
+  "season_label": "Spring 2019",
+  "source_section_code": "HA001",
+  "section_label": "Ladies Rubbers A1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Glen Waverley",
+      "wins": 8,
+      "points": 70,
+      "percentage": 141.32,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "BLTC",
+      "wins": 9,
+      "points": 68,
+      "percentage": 131.48,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Kooyong Green",
+      "wins": 6,
+      "points": 57,
+      "percentage": 116.79,
+      "marker": "R"
+    },
+    {
+      "position": 4,
+      "team": "Eaglemont",
+      "wins": 6,
+      "points": 55.5,
+      "percentage": 107.3,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Kooyong Yellow",
+      "wins": 6,
+      "points": 49,
+      "percentage": 91.52,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Hampton",
+      "wins": 2,
+      "points": 24.5,
+      "percentage": 74.91,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Elwood",
+      "wins": 0,
+      "points": 12,
+      "percentage": 66.21,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "HA24-HA001",
+  "fixtures": 59,
+  "completed_fixtures": 43,
+  "draw_fixtures": 48,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 170,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for HA001113 doubles No. 1: '7-5 2-5'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for HA001122 doubles No. 3: '6-2 3-4'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for HA001321 doubles No. 3: '3-6 1-2'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

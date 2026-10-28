@@ -1,0 +1,87 @@
+{
+  "asset_id": "HA8-HA006",
+  "competition_code": "HA",
+  "competition_label": "Thursday AM - Autumn 2012",
+  "season_id": "HA8",
+  "season_label": "Autumn 2012",
+  "source_section_code": "HA006",
+  "section_label": "Section 5",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Beaumaris CC 1",
+      "wins": 8,
+      "points": 78,
+      "percentage": 135.73,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "Beaumaris CC 2",
+      "wins": 9,
+      "points": 78,
+      "percentage": 116.16,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Dingley",
+      "wins": 9,
+      "points": 78,
+      "percentage": 114.05,
+      "marker": "P"
+    },
+    {
+      "position": 4,
+      "team": "Black Rock",
+      "wins": 4,
+      "points": 48,
+      "percentage": 91.88,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Chelsea Lawn",
+      "wins": 4,
+      "points": 47,
+      "percentage": 88.72,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Elwood",
+      "wins": 1,
+      "points": 31,
+      "percentage": 66.08,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "HA8-HA006",
+  "fixtures": 47,
+  "completed_fixtures": 41,
+  "draw_fixtures": 1,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 164,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

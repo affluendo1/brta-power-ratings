@@ -1,0 +1,61 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+HA005011,24 Jul 14,1,regular,Round 1,Elwood,St Cecilia's,0,8,0,8,,,22,49,Completed,
+HA005012,24 Jul 14,1,regular,Round 1,Centenary Park,St Peter's,1,7,4,6,,,42,43,Completed,
+HA005013,24 Jul 14,1,regular,Round 1,St Leonard's,Sth Hawthorn,6,2,5,4,,,40,40,Completed,
+HA005014,24 Jul 14,1,regular,Round 1,Dingley 1,Dingley 2,8,0,8,0,,,48,0,Completed,
+HA005021,31 Jul 14,2,regular,Round 2,Dingley 2,Elwood,6,2,5,4,,,37,31,Completed,
+HA005022,31 Jul 14,2,regular,Round 2,St Cecilia's,Centenary Park,6,2,4,4,,,37,32,Completed,
+HA005024,31 Jul 14,2,regular,Round 2,Sth Hawthorn,Dingley 1,6,2,6,5,,,51,43,Completed,
+pending-ha005-r2-st-peter-s-st-leonard-s,31 Jul 14,2,regular,Round 2,St Peter's,St Leonard's,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+pending-ha005-r3-centenary-park-dingley-2,07 Aug 14,3,regular,Round 3,Centenary Park,Dingley 2,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha005-r3-dingley-1-st-peter-s,07 Aug 14,3,regular,Round 3,Dingley 1,St Peter's,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha005-r3-elwood-sth-hawthorn,07 Aug 14,3,regular,Round 3,Elwood,Sth Hawthorn,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha005-r3-st-leonard-s-st-cecilia-s,07 Aug 14,3,regular,Round 3,St Leonard's,St Cecilia's,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+HA005041,14 Aug 14,4,regular,Round 4,St Peter's,Elwood,0,8,1,8,,,25,51,Completed,
+HA005042,14 Aug 14,4,regular,Round 4,Sth Hawthorn,Centenary Park,2,6,4,6,,,39,48,Completed,
+HA005043,14 Aug 14,4,regular,Round 4,Dingley 2,St Leonard's,1,7,3,6,,,35,46,Completed,
+HA005044,14 Aug 14,4,regular,Round 4,St Cecilia's,Dingley 1,6,2,5,4,,,37,33,Completed,
+HA005051,21 Aug 14,5,regular,Round 5,St Leonard's,Dingley 1,6,2,5,4,,,39,33,Completed,
+HA005052,21 Aug 14,5,regular,Round 5,Dingley 2,Sth Hawthorn,1,7,3,6,,,41,51,Completed,
+HA005053,21 Aug 14,5,regular,Round 5,St Peter's,St Cecilia's,0,8,1,8,,,24,52,Completed,
+HA005054,21 Aug 14,5,regular,Round 5,Elwood,Centenary Park,7,1,6,2,,,40,21,Completed,
+HA005061,28 Aug 14,6,regular,Round 6,Centenary Park,St Leonard's,6,2,5,5,,,46,43,Completed,
+HA005062,28 Aug 14,6,regular,Round 6,Dingley 1,Elwood,2,6,4,5,,,33,42,Completed,
+HA005063,28 Aug 14,6,regular,Round 6,Sth Hawthorn,St Peter's,8,0,8,1,,,54,21,Completed,
+HA005064,28 Aug 14,6,regular,Round 6,St Cecilia's,Dingley 2,8,0,8,0,,,48,8,Completed,
+HA005071,04 Sep 14,7,regular,Round 7,Elwood,St Leonard's,6,2,6,5,,,55,54,Completed,
+HA005072,04 Sep 14,7,regular,Round 7,Centenary Park,Dingley 1,0,8,0,8,,,20,48,Completed,
+HA005073,04 Sep 14,7,regular,Round 7,Dingley 2,St Peter's,7,1,7,2,,,47,23,Completed,
+HA005074,04 Sep 14,7,regular,Round 7,Sth Hawthorn,St Cecilia's,7,1,6,2,,,41,12,Completed,
+HA005081,11 Sep 14,8,regular,Round 8,St Cecilia's,Elwood,7,1,6,3,,,45,34,Completed,
+HA005082,11 Sep 14,8,regular,Round 8,St Peter's,Centenary Park,2,6,4,5,,,43,45,Completed,
+HA005083,11 Sep 14,8,regular,Round 8,Sth Hawthorn,St Leonard's,0,8,1,8,,,23,53,Completed,
+pending-ha005-r8-dingley-2-dingley-1,11 Sep 14,8,regular,Round 8,Dingley 2,Dingley 1,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+HA005091,18 Sep 14,9,regular,Round 9,Elwood,Dingley 2,6,2,5,4,,,50,41,Completed,
+HA005092,18 Sep 14,9,regular,Round 9,Centenary Park,St Cecilia's,0,0,0,0,,,0,0,Completed,
+HA005093,18 Sep 14,9,regular,Round 9,St Leonard's,St Peter's,8,0,8,1,,,52,26,Completed,
+pending-ha005-r9-dingley-1-sth-hawthorn,18 Sep 14,9,regular,Round 9,Dingley 1,Sth Hawthorn,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+HA005101,09 Oct 14,10,regular,Round 10,Sth Hawthorn,Elwood,7,1,6,2,,,44,31,Completed,
+HA005102,09 Oct 14,10,regular,Round 10,Dingley 2,Centenary Park,7,1,6,4,,,52,44,Completed,
+HA005103,09 Oct 14,10,regular,Round 10,St Cecilia's,St Leonard's,0,8,1,8,,,21,51,Completed,
+HA005104,09 Oct 14,10,regular,Round 10,St Peter's,Dingley 1,1,7,3,6,,,23,40,Completed,
+HA005111,16 Oct 14,11,regular,Round 11,Elwood,St Peter's,4,4,0,0,,,10,7,Completed,
+pending-ha005-r11-centenary-park-sth-hawthorn,16 Oct 14,11,regular,Round 11,Centenary Park,Sth Hawthorn,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha005-r11-dingley-1-st-cecilia-s,16 Oct 14,11,regular,Round 11,Dingley 1,St Cecilia's,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ha005-r11-st-leonard-s-dingley-2,16 Oct 14,11,regular,Round 11,St Leonard's,Dingley 2,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+HA005121,23 Oct 14,12,regular,Round 12,Dingley 1,St Leonard's,2,6,4,4,,,31,34,Completed,
+HA005122,23 Oct 14,12,regular,Round 12,Sth Hawthorn,Dingley 2,8,0,8,1,,,51,26,Completed,
+HA005123,23 Oct 14,12,regular,Round 12,St Cecilia's,St Peter's,8,0,8,0,,,49,19,Completed,
+HA005124,23 Oct 14,12,regular,Round 12,Centenary Park,Elwood,6,2,5,4,,,42,35,Completed,
+HA005131,30 Oct 14,13,regular,Round 13,St Leonard's,Centenary Park,8,0,8,0,,,49,10,Completed,
+HA005132,30 Oct 14,13,regular,Round 13,Elwood,Dingley 1,7,1,6,3,,,46,33,Completed,
+HA005133,30 Oct 14,13,regular,Round 13,St Peter's,Sth Hawthorn,1,7,3,7,,,35,53,Completed,
+HA005134,30 Oct 14,13,regular,Round 13,Dingley 2,St Cecilia's,1,7,2,6,,,32,45,Completed,
+HA005141,06 Nov 14,14,regular,Round 14,St Leonard's,Elwood,8,0,8,1,,,55,33,Completed,
+HA005142,06 Nov 14,14,regular,Round 14,Dingley 1,Centenary Park,1,7,3,7,,,36,48,Completed,
+HA005144,06 Nov 14,14,regular,Round 14,St Cecilia's,Sth Hawthorn,7,1,7,2,,,49,36,Completed,
+pending-ha005-r14-st-peter-s-dingley-2,06 Nov 14,14,regular,Round 14,St Peter's,Dingley 2,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+HA005301,,16,semi_final,Semi-final,St Leonard's,St Cecilia's,8,0,8,0,,,48,10,Completed,
+HA005302,,16,semi_final,Semi-final,Sth Hawthorn,Dingley 1,7,1,5,1,,,35,26,Completed,
+HA005311,,16,semi_final,Semi-final,St Cecilia's,Sth Hawthorn,7.5,0.5,7,2,,,48,35,Completed,
+HA005321,,17,grand_final,Grand final · TROLS entry 2,St Leonard's,St Cecilia's,6.5,1.5,6,4,,,53,44,Completed,
