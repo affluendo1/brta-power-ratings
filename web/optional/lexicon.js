@@ -1,15 +1,19 @@
 /* Optional ratings presentation. Loaded after the ordinary labs and preferences. */
 (function(){
  'use strict';
- const model=window.BRTAOrthography,key='orthographic';
+ const model=window.BRTAOrthography,key='orthographic',pairKey='orthographicPairs';
+ ratingInfo[pairKey]=['BETTER doubles pairs','Two names. One combined score.'];
+ const isPair=()=>ratingView===pairKey;
  let revealed=false,revealing=false,labFocus=null,labAnalysis=null;
  ratingInfo[key]=['BETTER singles','RM3ultra — finally, a rating that reads the name.'];
- function pick(){if(!auxiliaryEnabled()||revealing)return;ratingView=key;cancelAuxiliaryReveal();$$('#ratingTabs .subtab').forEach(b=>b.classList.toggle('active',b.dataset.rating===key));renderRatings()}
- async function reveal(){
+ function pick(view=key){if(!auxiliaryEnabled()||revealing)return;ratingView=view;cancelAuxiliaryReveal();$$('#ratingTabs .subtab').forEach(b=>b.classList.toggle('active',b.dataset.rating===view));renderRatings()}
+ async function reveal(pair=false){
+ if(pair){if(!auxiliaryEnabled()||$('#ratingTabs [data-rating="'+pairKey+'"]'))return;const b=document.createElement('button');b.type='button';b.className='subtab lexicon-tab lexicon-pair-tab';b.dataset.rating=pairKey;b.textContent='BETTER doubles pairs';b.onclick=()=>pick(pairKey);$('#ratingTabs [data-rating="pairs"]').after(b);await b.animate?.([{opacity:0,transform:'translateX(-20px)'},{opacity:1,transform:'translateX(0)'}],{duration:3000,easing:'ease-out'})?.finished;return}
+
   if(revealed||revealing||!auxiliaryEnabled()||activePage!=='ratings')return;
   revealed=true;revealing=true;
   const tabs=$('#ratingTabs'),others=[...tabs.children].slice(1),before=others.map(b=>b.getBoundingClientRect()),button=document.createElement('button');
-  button.type='button';button.className='subtab lexicon-tab';button.dataset.rating=key;button.textContent='BETTER singles';button.onclick=pick;button.style.visibility='hidden';tabs.children[0].after(button);
+  button.type='button';button.className='subtab lexicon-tab';button.dataset.rating=key;button.textContent='BETTER singles';button.onclick=()=>pick();button.style.visibility='hidden';tabs.children[0].after(button);
   const motions=others.map((b,i)=>{const after=b.getBoundingClientRect();return b.animate?.([{transform:'translate('+ (before[i].left-after.left)+'px,'+(before[i].top-after.top)+'px)'},{transform:'translate(0,0)'}],{duration:4200,easing:'cubic-bezier(.22,.65,.3,1)'})});
   await Promise.all(motions.map(a=>a?.finished?.catch(()=>{})));
   if(!button.isConnected||!auxiliaryEnabled()){revealing=false;return}
@@ -17,16 +21,17 @@
   revealing=false;
  }
  // On touch devices a long press also supplies the browser's contextmenu gesture.
- $('#ratingTabs').addEventListener('contextmenu',e=>{if(e.target.closest('[data-rating="singles"]')&&auxiliaryEnabled()&&activePage==='ratings'){e.preventDefault();reveal()}});
+ $('#ratingTabs').addEventListener('contextmenu',e=>{if(e.target.closest('[data-rating="singles"]')&&auxiliaryEnabled()&&activePage==='ratings'){e.preventDefault();reveal()}else if(e.target.closest('[data-rating="pairs"]')&&auxiliaryEnabled()&&activePage==='ratings'){e.preventDefault();reveal(true)}});
  function sync(){
   if(!auxiliaryEnabled()){
-   $('#ratingTabs [data-rating="'+key+'"]')?.remove();revealed=false;revealing=false;
-   if(ratingView===key){ratingView='singles';$$('#ratingTabs .subtab').forEach(b=>b.classList.toggle('active',b.dataset.rating==='singles'))}
+   $('#ratingTabs [data-rating="'+key+'"]')?.remove();$('#ratingTabs [data-rating="'+pairKey+'"]')?.remove();revealed=false;revealing=false;
+   if((ratingView===key||isPair())){ratingView='singles';$$('#ratingTabs .subtab').forEach(b=>b.classList.toggle('active',b.dataset.rating==='singles'))}
    closeLab();
   }
-  $('#updatedMethodology')?.classList.toggle('hidden',ratingView!==key||!auxiliaryEnabled());
+  $('#updatedMethodology')?.classList.toggle('hidden',(ratingView!==key&&!isPair())||!auxiliaryEnabled());
  }
  function source(){
+ if(isPair())return {rows:BRTAHistory.withMovement(D,'pairs',ratingRound)};
   if(ratingScope==='history'){
    const q=$('#search').value.trim();if(!q)return {rows:[],notice:'Type a player name to search all Saturday and Sunday history.'};
    if(playerSearchError)return {rows:[],notice:'History search could not load. Switch to Singles to retry.'};
@@ -45,24 +50,25 @@
  }
  function bandInfo(band){$('#bandInfo').innerHTML='<div class="band-info-head"><b>Name bands</b><label>Filter <select id="lexiconBand"><option value="">All bands</option>'+model.bandNames.map((n,i)=>'<option value="b'+i+'">'+esc(n)+'</option>').join('')+'</select></label></div><div class="band-keys">'+model.bandNames.map((n,i)=>'<div class="band-key b'+i+'"><i></i><span><b>'+esc(n)+'</b><small>'+esc(band.bounds[i]||'—')+'</small></span></div>').join('')+'</div>';$('#lexiconBand').value=window.lexiconBandFilter||'';$('#lexiconBand').onchange=e=>{window.lexiconBandFilter=e.target.value;renderRatings()}}
  function render(){
-  const src=source(),rows=model.rank(src.rows),band=BRTALayoutModel.bands(rows),q=$('#search').value.toLowerCase().trim(),tf=$('#teamFilter').value,external=ratingScope!=='section';
-  $('#teamFilter').disabled=external;$('#ratingFilters').classList.remove('hidden');$('#ratingsTitle').textContent=(external?(ratingScope==='history'?'All history':'All sections')+' · ':'')+'BETTER singles';$('#ratingsDesc').textContent='Long names. Rare letters. Absolutely no tennis.';$('#ratingsHint').textContent='RM3ultra';
+  const src=source(),rows=isPair()?src.rows.map(r=>({...r,analysis:pairAnalysis(r.player)})).sort((a,b)=>b.analysis.score-a.analysis.score||a.player.localeCompare(b.player)).map((r,i,all)=>({...r,rating:r.analysis.score,rank:all.findIndex(x=>x.analysis.score===r.analysis.score)+1})):model.rank(src.rows),band=BRTALayoutModel.bands(rows),q=$('#search').value.toLowerCase().trim(),tf=$('#teamFilter').value,external=ratingScope!=='section';
+  $('#teamFilter').disabled=external;$('#ratingFilters').classList.remove('hidden');$('#ratingsTitle').textContent=(external?(ratingScope==='history'?'All history':'All sections')+' · ':'')+(isPair()?'BETTER doubles pairs':'BETTER singles');$('#ratingsDesc').textContent='Long names. Rare letters. Absolutely no tennis.';$('#ratingsHint').textContent='RM3ultra';
   $('#ratingRoundNotice').classList.toggle('hidden',ratingRound==null||external);if(ratingRound!=null&&!external)$('#ratingRoundNotice').innerHTML='<div><b>After Round '+ratingRound+'</b><span>Same name. Same destiny.</span></div><button class="button secondary" data-rating-round="latest">Latest ratings</button>';
   if(!$('#updatedMethodology')){const button=document.createElement('button');button.id='updatedMethodology';button.className='lexicon-method';button.type='button';button.textContent='Updated Methodology';$('.ratings-toolbar').append(button);button.onclick=()=>{openLayoutOverlay('methodology');eightRaise($('#layoutOverlay'));$('#orthographicMethod')?.scrollIntoView({block:'start',behavior:'smooth'})}}
   $('#updatedMethodology').classList.remove('hidden');bandInfo(band);
   $('#ratingHead').innerHTML='<tr>'+['#','Player','Team',...(external?['Section']:[]),'Ultra','Letters','Tile value','Spaces','Digraphs','Trigraphs','Quadgraphs'].map(x=>'<th>'+x+'</th>').join('')+'</tr>';
   let last='',out='';const colspan=external?12:11;
-  for(const r of rows){const a=r.analysis,cls=band.classFor(r.rating);if(q&&!r.player.toLowerCase().includes(q)||!external&&tf&&r.team!==tf||window.lexiconBandFilter&&cls!==window.lexiconBandFilter)continue;
+  for(const r of rows){const a=r.analysis,cls=band.classFor(r.rating);if(q===':highest-score'&&r.rating!==rows[0]?.rating||q&&q!==':highest-score'&&!r.player.toLowerCase().includes(q)||!external&&tf&&r.team!==tf||window.lexiconBandFilter&&cls!==window.lexiconBandFilter)continue;
    if(cls!==last){const i=+cls.slice(1);out+='<tr class="band-divider '+cls+'"><td colspan="'+colspan+'"><div><i></i><b>'+esc(model.bandNames[i])+'</b><span>'+esc(band.bounds[i])+'</span></div></td></tr>';last=cls}
    const section=r.sectionLabel||D.meta.section_label,context=[r.competitionLabel||r.seasonLabel||'',section].filter(Boolean).join(' · ');
    out+='<tr class="'+cls+'"><td>'+r.rank+'</td><td><button class="person" data-lexicon-player="'+esc(r.player)+'" data-lexicon-team="'+esc(r.team)+'" data-lexicon-context="'+esc(context)+'">'+esc(r.player)+'</button></td><td>'+teamName(r.team)+'</td>'+(external?'<td>'+esc(context)+'</td>':'')+'<td><b>'+a.score+'</b></td><td>'+a.letters+'</td><td>'+a.tileValue+'</td><td>'+a.spaces+'</td><td>'+a.digraphs.length+'</td><td>'+a.trigraphs.length+'</td><td>'+a.quadgraphs.length+'</td></tr>';
   }
   $('#ratingBody').innerHTML=out||'<tr><td colspan="'+colspan+'">'+esc(src.notice||'No matching names.')+'</td></tr>';
  }
- const ordinaryRender=renderRatings;renderRatings=function(){sync();if(ratingView===key&&D&&auxiliaryEnabled()){render();return}ordinaryRender()};
+ const ordinaryRender=renderRatings;renderRatings=function(){sync();if((ratingView===key||isPair())&&D&&auxiliaryEnabled()){render();return}ordinaryRender()};
  // The history selector still refers to the rounds in which these names existed.
  const ordinaryOptions=renderRatingOptions;renderRatingOptions=function(){const view=ratingView;try{if(view===key)ratingView='singles';ordinaryOptions()}finally{ratingView=view}};
  const ordinaryMethod=eightMethodologyHTML;eightMethodologyHTML=function(){return ordinaryMethod()+(revealed&&auxiliaryEnabled()?'<section id="orthographicMethod" class="eight-reading lexicon-reading"><h3>RM3ultra: Updated Methodology</h3><p>This is a name-ranking joke. Matches, ability and qualification do not enter it. Every name gets a place. The base allowances are doubled, then bonuses and deductions reward unusual spelling. Scores are deterministic: searching a different section does not change them.</p><p><b>Base points.</b> Every letter earns 24, plus 14 times its English Scrabble tile value. Word gaps earn 44. The low-repeat dividend is 12 × distinct letters + round(60 × distinct / total). The opening letter adds 24 × (tile value − 1).</p><p><b>Patterns.</b> The first occurrence of each listed digraph earns 36, trigraph 100 and quadgraph 180. Further occurrences of that same pattern earn 40%, rounded: 14, 40 and 72. Overlapping patterns count independently. They never cross word or punctuation boundaries.</p><p><b>Composition.</b> Latin vowels (A E I O U) earn 2 each; consonants, including Y, earn 3. Distinct vowel types add 12 each and consonant types 5. Balance earns up to 50 at 40% vowels, falling linearly to zero at 0% or 80%; an all-vowel or all-consonant name earns none. Each vowel/consonant switch adds 4 within a word. Diversity adds round(40 × Shannon entropy / log₂(letter count)); a one-letter name earns zero diversity points.</p><p><b>Unusual features.</b> Each distinct unequal Latin pair with combined tile value ≥ 9 earns 6 × (sum − 8), capped at 42. Vowel runs of 3+ earn 18 × (length − 2), capped at 54 per run. Consonant runs with 3+ distinct letters earn 10 × (distinct − 2), capped at 40. Non-uniform palindrome words of 3+ letters earn 40 each. Each different word initial after the first adds 8.</p><p><b>Deductions.</b> Each listed familiar pair costs 8 per occurrence; each A, E, I, N, O, R, S or T costs 3. Repeated letters after the first cost 6 each. For names of 4+ letters, each occurrence of a letter above ceil(40% × total letters) costs another 10. Repeated word initials cost 12 each and repeated words cost 40 each. Commonness here means these fixed spelling rules, not how popular a person’s name is.</p><p><b>Normalisation.</b> Accents are folded, word gaps normalised and punctuation/digits ignored. Other alphabetic characters count as one-point tiles, with length, variety and repeat rules; they are not guessed to be Latin vowels or consonants. English patterns and Latin-script name combinations are fixed spelling matches, not pronunciation judgements. Equal scores share a rank. Name bands keep the ordinary six-band quantiles. Net Ultra is all earned points minus all deductions, with no hidden multiplier or floor.</p><details><summary>Counted patterns and familiar pairs</summary><p><b>Digraphs</b><br>'+model.digraphs.join(', ')+'</p><p><b>Trigraphs</b><br>'+model.trigraphs.join(', ')+'</p><p><b>Quadgraphs</b><br>'+model.quadgraphs.join(', ')+'</p><p><b>Familiar pairs (−8 each)</b><br>'+model.commonPairs.join(', ')+'</p><p>Pattern references: <a href="https://www.education.vic.gov.au/school/teachers/teachingresources/discipline/english/literacy/readingviewing/Pages/phonics-scoping-sequences.aspx" target="_blank" rel="noopener">Victorian phonics scope and sequence</a>; <a href="https://assets.publishing.service.gov.uk/media/5a7f057ee5274a2e8ab49ab9/phonics_2011_technical_report.pdf" target="_blank" rel="noopener">DfE phonics report</a>; <a href="https://cldr.unicode.org/index/cldr-spec/collation-guidelines" target="_blank" rel="noopener">Unicode CLDR</a>. This is a fixed game inventory, not an exhaustive list of all languages.</p></details></section>':'')};
+ function pairAnalysis(name){const members=name.split(/\s*\/\s*/).map(n=>model.analyse(n)),a=model.analyse(name);for(const k of ['score','grossScore','penaltyPoints','letters','unique','repeats','spaces','tileValue'])a[k]=members.reduce((n,m)=>n+m[k],0);let offset=0;for(const k of ['digraphs','trigraphs','quadgraphs']){offset=0;a[k]=members.flatMap(m=>{const items=m[k].map(x=>({...x,wordIndex:x.wordIndex+offset}));offset+=m.words.length;return items})}a.words=members.flatMap(m=>m.words);a.parts=members.flatMap(m=>m.parts.map(p=>({...p,label:m.name+' · '+p.label})));return a}
  function closeLab(){const lab=$('#lexiconLab');if(!lab||lab.classList.contains('hidden'))return;lab.classList.add('hidden');if(!document.querySelector('.overlay:not(.hidden)'))document.body.classList.remove('modal-open');labFocus?.focus?.({preventScroll:true})}
  const ordinaryPosition=applyProfilePosition;applyProfilePosition=function(){ordinaryPosition();const host=$('#lexiconLab');if(host)host.dataset.position=['left','center','right'].includes(profilePosition)?profilePosition:'right'};
  const signedPoints=n=>(n>0?'+':n<0?'−':'')+Math.abs(n);
@@ -72,7 +78,7 @@
   $$('#lexiconLab [data-lexicon-ledger]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.lexiconLedger===filter)));
  }
  function openLab(name,team,context){
-  const a=model.analyse(name),rows=model.rank(source().rows),r=rows.find(x=>x.player===name&&x.team===team),rank=r?.rank||'—',c=a.composition;labFocus=document.activeElement;labAnalysis=a;
+  const a=isPair()?pairAnalysis(name):model.analyse(name),rows=isPair()?source().rows.map(r=>({...r,analysis:pairAnalysis(r.player)})).sort((a,b)=>b.analysis.score-a.analysis.score).map((r,i)=>({...r,rank:i+1})):model.rank(source().rows),r=rows.find(x=>x.player===name&&x.team===team),rank=r?.rank||'—',c=a.composition;labFocus=document.activeElement;labAnalysis=a;
   let host=$('#lexiconLab');if(!host){host=document.createElement('div');host.id='lexiconLab';host.className='overlay hidden lexicon-lab';document.body.append(host)}
   const metric=(label,value,detail='')=>'<div class="lab-metric"><span>'+label+'</span><b>'+value+'</b>'+(detail?'<small>'+detail+'</small>':'')+'</div>';
   const patternList=(items)=>items.length?items.map(x=>'<span class="lexicon-token '+(x.points<0?'is-penalty':'')+'"><b>'+esc(x.pattern.toUpperCase())+'</b> <strong>'+signedPoints(x.points)+'</strong><small>'+esc(a.words[x.wordIndex])+' · letter '+(x.at+1)+(x.repeat?' · repeat rate':'')+'</small></span>').join(''):'<span class="small-note">None found.</span>';

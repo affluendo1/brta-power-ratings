@@ -25,3 +25,5 @@
 .lexicon-reading{padding-top:24px;border-top:1px solid var(--border-color);margin-top:24px}.lexicon-reading p{overflow-wrap:anywhere}
 @media(max-width:1179px){.lexicon-lab{overflow-y:auto}.lexicon-lab[data-position] .profile-sheet,.lexicon-lab .profile-match-explorer{position:relative;inset:auto;transform:none;width:100%;max-width:100%;height:auto;max-height:none;overflow:visible;margin:0;border-radius:0}.lexicon-lab .profile-match-explorer{padding:24px}.lexicon-lab{display:block;background:var(--surface)}.lexicon-lab.hidden{display:none}.lexicon-ledger-head{top:0}}
 @media(max-width:900px){.ratings-toolbar:has(.lexicon-method:not(.hidden)){grid-template-columns:1fr}.lexicon-method{grid-column:1}}
+
+.lexicon-pair-tab,.lexicon-pair-tab.active,.lexicon-pair-tab:hover{background:linear-gradient(110deg,#075c54,#126c9b,#2457ba);border-color:#65ddcf;color:white}
