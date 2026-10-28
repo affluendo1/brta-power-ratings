@@ -7,7 +7,7 @@ on:
       timezone: "Australia/Melbourne"
   push:
     paths:
-      - "scraper/sync_trols.py"
+      - "scraper/**"
       - "model.py"
       - "generate_site_data.py"
       - "generate_archive_site_data.py"

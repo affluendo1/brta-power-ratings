@@ -1,0 +1,17 @@
+.lexicon-tab{--lexicon-glow:#d654c8;background:linear-gradient(110deg,#5820a3,#b32e83,#116c8c);color:#fff;border-color:#e79ade;box-shadow:inset 0 0 12px #ffffff18;font-weight:900;white-space:nowrap}
+.lexicon-tab:hover,.lexicon-tab.active{background:linear-gradient(110deg,#7131c4,#d342a1,#1485ac);color:#fff;border-color:#f5b4eb;box-shadow:0 0 15px #d654c83a}
+.ratings-toolbar:has(.lexicon-method:not(.hidden)){display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:start}
+.lexicon-method{grid-column:2;text-align:right;justify-self:end;background:none;border:0;padding:0;color:var(--primary);font:700 11px var(--body-font,Arial,sans-serif);cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+.lexicon-metrics{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:20px 0}
+.lexicon-metrics .lab-metric{padding:12px;border-bottom:1px solid var(--border-color)}
+.lexicon-lab .profile-match-explorer{display:block}.lexicon-lab .profile-sheet{padding-top:38px}
+@media(min-width:1180px){.lexicon-lab .profile-match-explorer{right:calc(min(760px,58vw) + 18px)}}
+.lexicon-breakdown>div{display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-bottom:1px solid var(--border-color)}
+.lexicon-breakdown small{display:block;color:var(--muted-color);margin-top:4px}.lexicon-total{font-size:20px;color:var(--primary)}
+.lexicon-tiles,.lexicon-patterns{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0 24px}
+.lexicon-tiles>span{display:grid;grid-template-columns:1fr auto;gap:3px;padding:10px;min-width:42px;background:var(--surface-raised);border:1px solid var(--border-color)}
+.lexicon-tiles b{font-size:22px}.lexicon-tiles em{grid-column:1/-1;font-size:11px;color:var(--muted-color);font-style:normal}
+.lexicon-token{padding:6px 8px;background:var(--surface-raised);font-weight:700}.lexicon-token small{color:var(--primary)}
+.lexicon-reading{padding-top:24px;border-top:1px solid var(--border-color);margin-top:24px}.lexicon-reading p{overflow-wrap:anywhere}
+@media(max-width:1179px){.lexicon-lab{overflow-y:auto}.lexicon-lab .profile-sheet,.lexicon-lab .profile-match-explorer{position:relative;inset:auto;width:100%;max-width:100%;height:auto;max-height:none;overflow:visible;margin:0;border-radius:0}.lexicon-lab .profile-match-explorer{padding:24px}.lexicon-lab{display:block;background:var(--surface)}.lexicon-lab.hidden{display:none}}
+@media(max-width:900px){.ratings-toolbar:has(.lexicon-method:not(.hidden)){grid-template-columns:1fr}.lexicon-method{grid-column:1}}

@@ -1,6 +1,6 @@
 # BRTA Power Ratings
 
-**Current version: 8.0.1**
+**Current version: 8.0.1.1**
 
 [Open the live site](https://affluendo1.github.io/brta-power-ratings/)
 
@@ -351,3 +351,8 @@ lineups, emergencies, doubles configurations and round-selection tables.
 
 Display settings includes a saved match display order for scorecards, labs, predictions and exports. Player Lab lists the selected player first in partnerships; team contexts use lineup order.
 Player Lab charts have independent Rating/Ranking tabs. Display also offers rounded graph lines; changing one chart's tab redraws only that chart. Match Explorer uses bold opponent names, italic partner names, and green/red performance comparisons against the relevant context's rating.
+
+The fixture pipeline also maintains a source-attributed club directory in
+`data/current/clubs.json`, merged across current Saturday and Sunday sections.
+This prepares future Club Zone work; the directory is not displayed in the site.
+Venue and contact variations are retained with their original section context.

@@ -5,12 +5,12 @@ const TEAM_COLOURS={
   aqua:'aqua',azure:'azure',beige:'beige',black:'black',blue:'blue',brown:'brown',
   burgundy:'burgundy',charcoal:'charcoal',coral:'coral',cream:'cream',crimson:'crimson',
   cyan:'cyan',gold:'gold',golden:'gold',gray:'gray',grey:'gray',green:'green',indigo:'indigo',
-  lime:'lime',magenta:'magenta',maroon:'maroon',navy:'navy',orange:'orange',pink:'pink',
+  lime:'lime',magenta:'magenta',maroon:'maroon',moorleigh:'gray',navy:'navy',orange:'orange',pink:'pink',
   purple:'purple',red:'red',scarlet:'scarlet',silver:'silver',tan:'tan',teal:'teal',
   turquoise:'turquoise',violet:'violet',white:'white',yellow:'yellow'
 };
 const TEAM_COLOUR_WORDS=new RegExp('\\b('+Object.keys(TEAM_COLOURS).join('|')+')\\b','gi');
-function teamName(name){return esc(name).replace(TEAM_COLOUR_WORDS,word=>'<span class="team-colour team-colour-'+TEAM_COLOURS[word.toLowerCase()]+'">'+word+'</span>')}
+function teamName(name){return esc(name).replace(TEAM_COLOUR_WORDS,(word,_group,offset,text)=>word.toLowerCase()==='black'&&/^\s+Rock\b/i.test(text.slice(offset+word.length))?word:'<span class="team-colour team-colour-'+TEAM_COLOURS[word.toLowerCase()]+'">'+word+'</span>')}
 function normaliseTeamLabels(value){if(Array.isArray(value)){value.forEach(normaliseTeamLabels);return value}if(!value||typeof value!=='object')return value;for(const [key,item] of Object.entries(value)){if(['team','home','away','home_team','away_team','winner'].includes(key)&&typeof item==='string')value[key]=item.replace(/\s+\d+\.\d{2}\s*$/,'');else normaliseTeamLabels(item)}return value}
 let D=null,singles=[],dinds=[],pairs=[],teams=[];
 let viewCatalog=DATA.catalog||[],historyCatalog=null,historyCatalogPromise=null,activeHistorySeasonId=null;
@@ -164,7 +164,7 @@ async function loadSection(code,preloadedPayload=null){
   finally{if(token===loadingToken)document.body.classList.remove('section-loading')}
 }
 
-function statusStrip(){const sync=D.sync||{},version=window.BRTAChangelog?.version||'8.0.1';$('#statusStrip').innerHTML='<div><b>Last checked</b><span>'+esc(fmtTime(sync.checkedAt))+'</span></div><button type="button" data-layout-open="history"><b>History</b><span>Browse seasons</span></button><button type="button" data-changelog-open><b>Version</b><span>'+esc(version)+'</span></button><button type="button" data-layout-settings><b>Rating model</b><span>'+(localStorage.getItem('brta-rating-model')||'RM3')+'</span></button>';}
+function statusStrip(){const sync=D.sync||{},version=window.BRTAChangelog?.version||'8.0.1.1';$('#statusStrip').innerHTML='<div><b>Last checked</b><span>'+esc(fmtTime(sync.checkedAt))+'</span></div><button type="button" data-layout-open="history"><b>History</b><span>Browse seasons</span></button><button type="button" data-changelog-open><b>Version</b><span>'+esc(version)+'</span></button><button type="button" data-layout-settings><b>Rating model</b><span>'+(localStorage.getItem('brta-rating-model')||'RM3')+'</span></button>';}
 
 function showSyncToast(){const s=DATA.globalSync||{},check=s.checkedAt;if(!check||localStorage.getItem('brta-sync-toast-seen')===check)return;localStorage.setItem('brta-sync-toast-seen',check);const fresh=!!s.newResultsLastCheck,title=fresh?'Results refreshed':'Results checked',message=fresh?'Official results changed, so the ratings and match pages have been refreshed across Saturday and Sunday AM.':'The latest check found no new official results. Everything already published remains up to date.';const toast=document.createElement('div');toast.className='sync-toast '+(fresh?'updated':'checked');toast.innerHTML='<div class="sync-toast-icon">'+(fresh?'✓':'i')+'</div><div><b>'+title+'</b><p>'+message+'</p></div><button class="sync-toast-close" aria-label="Close update">×</button>';const end=()=>{toast.classList.add('leaving');setTimeout(()=>toast.remove(),220)};toast.querySelector('button').onclick=end;$('#syncToastHost').appendChild(toast);setTimeout(end,10000)}
 function teamOptions(){

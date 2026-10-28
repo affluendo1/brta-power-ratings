@@ -17,6 +17,10 @@ import requests
 from bs4 import BeautifulSoup
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
+if __package__:
+    from .club_information import parse_club_information, build_club_network
+else:
+    from club_information import parse_club_information, build_club_network
 
 BASE = "https://www.trols.org.au/brta/"
 RESULTS_URL = urljoin(BASE, "results.php")
@@ -586,10 +590,16 @@ def _team_options(meta: dict) -> list[tuple[str, str]]:
     return select_options(BeautifulSoup(response.text, "html.parser"), "team")
 
 
-def _team_draw(meta: dict, team_code: str) -> list[dict]:
+def _team_draw(meta: dict, team_code: str, *, include_clubs: bool = False):
     response = _post(FIXTURE_URL, {"which": "2", "style": "", "daytime": meta["competition_code"],
                                    "season": meta["season_id"], "section": meta["section_code"], "team": team_code})
-    return parse_draw_page(response.text, meta["section_code"])
+    draw = parse_draw_page(response.text, meta["section_code"])
+    if include_clubs:
+        clubs = parse_club_information(response.text)
+        if not clubs:
+            raise RuntimeError(f"No fixture club information for {meta['section_code']}")
+        return draw, clubs
+    return draw
 
 
 def _integer(value, label: str) -> int:
@@ -841,13 +851,16 @@ def scrape_all() -> list[dict]:
         for future in as_completed(futures):
             section = futures[future]
             options_by_code[section["section_code"]] = future.result()
-    draw_jobs = [(section, team_code) for section in loaded_sections for _, team_code in options_by_code[section["section_code"]]]
+    draw_jobs = [(section, team_code, i == 0) for section in loaded_sections for i, (_, team_code) in enumerate(options_by_code[section["section_code"]])]
     draw_by_code = {section["section_code"]: [] for section in loaded_sections}
     with ThreadPoolExecutor(max_workers=MAX_WORKERS) as pool:
-        futures = {pool.submit(_team_draw, section, team_code): (section, team_code) for section, team_code in draw_jobs}
+        futures = {pool.submit(_team_draw, section, team_code, include_clubs=include_clubs): (section, include_clubs) for section, team_code, include_clubs in draw_jobs}
         for future in as_completed(futures):
-            section, _ = futures[future]
-            draw_by_code[section["section_code"]].extend(future.result())
+            section, include_clubs = futures[future]
+            result = future.result()
+            if include_clubs:
+                result, section["club_information"] = result
+            draw_by_code[section["section_code"]].extend(result)
     for section in loaded_sections:
         unique = {(row["round"], row["date"], row["home_team"], row["away_team"]): row for row in draw_by_code[section["section_code"]]}
         section["draw"] = attach_draw_ids(sorted(unique.values(), key=lambda row: (row["round"], row["home_team"])), section["fixtures"])
@@ -889,6 +902,9 @@ def main() -> None:
                 print(message)
         elif old_singles or old_doubles:
             print(f"{code}: TROLS season changed; starting fresh row counts for {section['season_label']}")
+    network = build_club_network(sections)
+    if len(network["sections"]) != len(sections):
+        raise RuntimeError("Club directory did not cover every synced section")
     for section in sections:
         code = section["section_code"]
         section_dir = OUT / "sections" / code
@@ -915,6 +931,8 @@ def main() -> None:
         (section_dir / "metadata.json").write_text(json.dumps(metadata, indent=2) + "\n", encoding="utf-8")
         catalog.append(metadata)
     synced_at = datetime.now(timezone.utc).isoformat()
+    # Data preparation only: no frontend fetch or Club Zone presentation yet.
+    (OUT / "clubs.json").write_text(json.dumps(network, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     competitions = {
         row["competition_code"]: row["competition_label"]
         for row in catalog
