@@ -29,3 +29,4 @@ html[data-font]:not([data-kavac]) body *{font-family:var(--eight-font)!important
 .lab8-overlay .settings-sheet{left:50%;right:auto;top:50%;transform:translate(-50%,-50%);width:min(650px,calc(100vw - 32px));height:auto;max-height:85dvh;border:1px solid var(--border-color);padding:22px}
 
 .lab8-matches .match-opponent{display:block;white-space:normal;overflow:visible;text-overflow:clip}.lab8-matches .match-opponent small{display:block;margin-top:3px;font-size:10px;line-height:1.4}.lab8-matches .match-meta{grid-column:auto;grid-row:auto;text-align:right;align-self:center}.lab8-matches .match-row{align-items:center}.lab8-graphs:has(>.lab8-graph:only-child){grid-template-columns:1fr}
+.lab8-graph polyline{stroke-dasharray:none;animation:none}.lab8-graph svg{animation:lab8-reveal .8s ease-out both}@keyframes lab8-reveal{from{clip-path:inset(0 100% 0 0);opacity:.4}to{clip-path:inset(0 0 0 0);opacity:1}}@media(prefers-reduced-motion:reduce){.lab8-graph svg{animation:none}}
