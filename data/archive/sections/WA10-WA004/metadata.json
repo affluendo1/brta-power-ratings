@@ -1,0 +1,81 @@
+{
+  "asset_id": "WA10-WA004",
+  "competition_code": "WA",
+  "competition_label": "Wednesday AM - Autumn 2024",
+  "season_id": "WA10",
+  "season_label": "Autumn 2024",
+  "source_section_code": "WA004",
+  "section_label": "W Section 3",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Beaumaris CC",
+      "wins": 9,
+      "points": 73,
+      "percentage": 164.17,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Kings Park Blue",
+      "wins": 8,
+      "points": 66,
+      "percentage": 136.57,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "St Leonard's",
+      "wins": 6,
+      "points": 50,
+      "percentage": 101.85,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Burden Park",
+      "wins": 3,
+      "points": 32,
+      "percentage": 78.92,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Kings Park White",
+      "wins": 1,
+      "points": 19,
+      "percentage": 46.41,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "WA10-WA004",
+  "fixtures": 46,
+  "completed_fixtures": 25,
+  "draw_fixtures": 46,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 100,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for WA004101 doubles No. 3: '2-4'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

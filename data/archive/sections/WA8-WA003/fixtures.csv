@@ -1,0 +1,60 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+WA003011,08 Feb 23,1,regular,Round 1,Aspendale Gold,Black Rock,4,4,4,4,,,26,26,Completed,
+WA003012,08 Feb 23,1,regular,Round 1,Basterfield Park,Kooyong,7,1,7,2,,,54,30,Completed,
+WA003013,08 Feb 23,1,regular,Round 1,Dingley,Coatesville,0,8,0,8,,,14,49,Completed,
+pending-wa003-r1-bye-aspendale-green,08 Feb 23,1,regular,Round 1,Bye,Aspendale Green,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+WA003021,15 Feb 23,2,regular,Round 2,Aspendale Green,Aspendale Gold,2,6,4,4,,,27,31,Completed,
+WA003022,15 Feb 23,2,regular,Round 2,Black Rock,Basterfield Park,6,2,6,5,,,63,54,Completed,
+WA003023,15 Feb 23,2,regular,Round 2,Kooyong,Dingley,6,2,4,4,,,38,36,Completed,
+pending-wa003-r2-coatesville-bye,15 Feb 23,2,regular,Round 2,Coatesville,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+WA003031,22 Feb 23,3,regular,Round 3,Aspendale Gold,Coatesville,1,7,3,6,,,33,47,Completed,
+WA003032,22 Feb 23,3,regular,Round 3,Basterfield Park,Aspendale Green,8,0,8,0,,,48,10,Completed,
+WA003033,22 Feb 23,3,regular,Round 3,Dingley,Black Rock,1,7,2,7,,,37,55,Completed,
+pending-wa003-r3-bye-kooyong,22 Feb 23,3,regular,Round 3,Bye,Kooyong,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+WA003041,01 Mar 23,4,regular,Round 4,Kooyong,Aspendale Gold,7,1,7,2,,,54,33,Completed,
+WA003042,01 Mar 23,4,regular,Round 4,Coatesville,Basterfield Park,8,0,8,1,,,54,28,Completed,
+WA003043,01 Mar 23,4,regular,Round 4,Aspendale Green,Dingley,0,8,0,8,,,20,48,Completed,
+pending-wa003-r4-black-rock-bye,01 Mar 23,4,regular,Round 4,Black Rock,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+WA003052,08 Mar 23,5,regular,Round 5,Aspendale Green,Coatesville,0,8,0,8,,,11,48,Completed,
+WA003053,08 Mar 23,5,regular,Round 5,Kooyong,Black Rock,1,7,4,6,,,50,53,Completed,
+WA003054,08 Mar 23,5,regular,Round 5,Aspendale Gold,Basterfield Park,6,2,4,4,,,33,29,Completed,
+pending-wa003-r5-dingley-bye,08 Mar 23,5,regular,Round 5,Dingley,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+WA003061,15 Mar 23,6,regular,Round 6,Basterfield Park,Dingley,8,0,8,1,,,54,32,Completed,
+WA003063,15 Mar 23,6,regular,Round 6,Coatesville,Kooyong,7,1,6,2,,,40,27,Completed,
+WA003064,15 Mar 23,6,regular,Round 6,Black Rock,Aspendale Green,8,0,8,0,,,48,6,Completed,
+pending-wa003-r6-bye-aspendale-gold,15 Mar 23,6,regular,Round 6,Bye,Aspendale Gold,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+WA003071,22 Mar 23,7,regular,Round 7,Aspendale Gold,Dingley,6,2,4,4,,,32,28,Completed,
+WA003073,22 Mar 23,7,regular,Round 7,Aspendale Green,Kooyong,2,6,4,4,,,36,41,Completed,
+WA003074,22 Mar 23,7,regular,Round 7,Coatesville,Black Rock,6,2,5,4,,,52,51,Completed,
+pending-wa003-r7-basterfield-park-bye,22 Mar 23,7,regular,Round 7,Basterfield Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-wa003-r8-aspendale-green-bye,29 Mar 23,8,regular,Round 8,Aspendale Green,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-wa003-r8-black-rock-aspendale-gold,29 Mar 23,8,regular,Round 8,Black Rock,Aspendale Gold,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-wa003-r8-coatesville-dingley,29 Mar 23,8,regular,Round 8,Coatesville,Dingley,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-wa003-r8-kooyong-basterfield-park,29 Mar 23,8,regular,Round 8,Kooyong,Basterfield Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+WA003091,05 Apr 23,9,regular,Round 9,Aspendale Gold,Aspendale Green,7,1,6,2,,,41,22,Completed,
+WA003092,05 Apr 23,9,regular,Round 9,Basterfield Park,Black Rock,7,1,7,3,,,55,46,Completed,
+WA003093,05 Apr 23,9,regular,Round 9,Dingley,Kooyong,0,8,0,8,,,15,49,Completed,
+pending-wa003-r9-bye-coatesville,05 Apr 23,9,regular,Round 9,Bye,Coatesville,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+WA003101,26 Apr 23,10,regular,Round 10,Coatesville,Aspendale Gold,7,1,6,3,,,41,29,Completed,
+WA003102,26 Apr 23,10,regular,Round 10,Aspendale Green,Basterfield Park,0,8,0,8,,,15,48,Completed,
+WA003103,26 Apr 23,10,regular,Round 10,Black Rock,Dingley,8,0,8,1,,,52,26,Completed,
+pending-wa003-r10-kooyong-bye,26 Apr 23,10,regular,Round 10,Kooyong,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+WA003111,03 May 23,11,regular,Round 11,Aspendale Gold,Kooyong,7,1,6,3,,,41,31,Completed,
+WA003112,03 May 23,11,regular,Round 11,Basterfield Park,Coatesville,1,7,2,6,,,39,41,Completed,
+WA003113,03 May 23,11,regular,Round 11,Dingley,Aspendale Green,8,0,8,0,,,48,12,Completed,
+pending-wa003-r11-bye-black-rock,03 May 23,11,regular,Round 11,Bye,Black Rock,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-wa003-r12-basterfield-park-aspendale-gold,10 May 23,12,regular,Round 12,Basterfield Park,Aspendale Gold,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-wa003-r12-black-rock-kooyong,10 May 23,12,regular,Round 12,Black Rock,Kooyong,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-wa003-r12-bye-dingley,10 May 23,12,regular,Round 12,Bye,Dingley,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-wa003-r12-coatesville-aspendale-green,10 May 23,12,regular,Round 12,Coatesville,Aspendale Green,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+WA003131,17 May 23,13,regular,Round 13,Dingley,Basterfield Park,1,7,3,7,,,37,56,Completed,
+WA003133,17 May 23,13,regular,Round 13,Kooyong,Coatesville,0,8,1,8,,,28,50,Completed,
+WA003134,17 May 23,13,regular,Round 13,Aspendale Green,Black Rock,0,8,0,8,,,13,48,Completed,
+pending-wa003-r13-aspendale-gold-bye,17 May 23,13,regular,Round 13,Aspendale Gold,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+WA003141,24 May 23,14,regular,Round 14,Dingley,Aspendale Gold,6,2,5,4,,,52,40,Completed,
+WA003143,24 May 23,14,regular,Round 14,Kooyong,Aspendale Green,7,1,7,2,,,51,28,Completed,
+WA003144,24 May 23,14,regular,Round 14,Black Rock,Coatesville,6,2,5,4,,,45,44,Completed,
+pending-wa003-r14-bye-basterfield-park,24 May 23,14,regular,Round 14,Bye,Basterfield Park,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+WA003301,,16,semi_final,Semi-final,Coatesville,Aspendale Gold,8,0,8,1,,,52,19,Completed,
+WA003302,,16,semi_final,Semi-final,Black Rock,Basterfield Park,2,6,4,4,,,32,35,Completed,
+WA003321,,17,grand_final,Grand final · TROLS entry 2,Coatesville,Basterfield Park,7.5,0.5,7,1,,,47,27,Completed,

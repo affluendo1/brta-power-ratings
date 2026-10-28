@@ -1,0 +1,79 @@
+{
+  "asset_id": "WA3-WA004",
+  "competition_code": "WA",
+  "competition_label": "Wednesday AM - Spring 2020",
+  "season_id": "WA3",
+  "season_label": "Spring 2020",
+  "source_section_code": "WA004",
+  "section_label": "Section 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Coatesville",
+      "wins": 4,
+      "points": 26,
+      "percentage": 121.18,
+      "marker": ""
+    },
+    {
+      "position": 2,
+      "team": "Elwood",
+      "wins": 2,
+      "points": 17,
+      "percentage": 132.35,
+      "marker": "*"
+    },
+    {
+      "position": 3,
+      "team": "Basterfield Park",
+      "wins": 2,
+      "points": 15,
+      "percentage": 92.52,
+      "marker": "*"
+    },
+    {
+      "position": 4,
+      "team": "Black Rock",
+      "wins": 1,
+      "points": 11,
+      "percentage": 85.55,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Stella Maris",
+      "wins": 0,
+      "points": 3,
+      "percentage": 83.33,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "WA3-WA004",
+  "fixtures": 15,
+  "completed_fixtures": 9,
+  "draw_fixtures": 45,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 36,
+  "latest_round": 5,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

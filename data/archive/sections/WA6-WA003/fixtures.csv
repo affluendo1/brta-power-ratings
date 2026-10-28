@@ -1,0 +1,60 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+WA003011,02 Feb 22,1,regular,Round 1,Basterfield Park,Beaumaris CC,8,0,8,0,,,48,10,Completed,
+WA003012,02 Feb 22,1,regular,Round 1,Stella Maris,Aspendale,6,2,5,4,,,42,37,Completed,
+WA003013,02 Feb 22,1,regular,Round 1,Black Rock 1,Black Rock 2,8,0,8,0,,,48,10,Completed,
+pending-wa003-r1-elwood-yellow-bye,02 Feb 22,1,regular,Round 1,Elwood Yellow,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+WA003022,09 Feb 22,2,regular,Round 2,Beaumaris CC,Stella Maris,0,8,0,8,,,13,48,Completed,
+WA003023,09 Feb 22,2,regular,Round 2,Aspendale,Black Rock 1,0,8,0,8,,,5,48,Completed,
+WA003024,09 Feb 22,2,regular,Round 2,Black Rock 2,Elwood Yellow,0,8,0,8,,,17,48,Completed,
+pending-wa003-r2-bye-basterfield-park,09 Feb 22,2,regular,Round 2,Bye,Basterfield Park,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+WA003031,16 Feb 22,3,regular,Round 3,Basterfield Park,Black Rock 2,8,0,8,1,,,51,25,Completed,
+WA003033,16 Feb 22,3,regular,Round 3,Black Rock 1,Beaumaris CC,8,0,8,1,,,53,28,Completed,
+WA003034,16 Feb 22,3,regular,Round 3,Elwood Yellow,Aspendale,8,0,8,0,,,48,8,Completed,
+pending-wa003-r3-stella-maris-bye,16 Feb 22,3,regular,Round 3,Stella Maris,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+WA003041,23 Feb 22,4,regular,Round 4,Aspendale,Basterfield Park,2,6,4,4,,,30,37,Completed,
+WA003042,23 Feb 22,4,regular,Round 4,Black Rock 2,Stella Maris,1,7,3,6,,,36,46,Completed,
+WA003044,23 Feb 22,4,regular,Round 4,Beaumaris CC,Elwood Yellow,0,8,0,8,,,5,48,Completed,
+pending-wa003-r4-bye-black-rock-1,23 Feb 22,4,regular,Round 4,Bye,Black Rock 1,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+WA003051,02 Mar 22,5,regular,Round 5,Black Rock 1,Elwood Yellow,1,7,3,6,,,35,48,Completed,
+WA003053,02 Mar 22,5,regular,Round 5,Aspendale,Beaumaris CC,8,0,8,1,,,51,28,Completed,
+WA003054,02 Mar 22,5,regular,Round 5,Basterfield Park,Stella Maris,7,1,6,2,,,46,34,Completed,
+pending-wa003-r5-bye-black-rock-2,02 Mar 22,5,regular,Round 5,Bye,Black Rock 2,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+WA003061,09 Mar 22,6,regular,Round 6,Stella Maris,Black Rock 1,7,1,7,3,,,57,44,Completed,
+WA003062,09 Mar 22,6,regular,Round 6,Elwood Yellow,Basterfield Park,7,1,6,3,,,44,30,Completed,
+WA003063,09 Mar 22,6,regular,Round 6,Black Rock 2,Aspendale,0,8,2,8,,,38,58,Completed,
+pending-wa003-r6-beaumaris-cc-bye,09 Mar 22,6,regular,Round 6,Beaumaris CC,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+WA003071,16 Mar 22,7,regular,Round 7,Basterfield Park,Black Rock 1,7,1,7,3,,,57,47,Completed,
+WA003072,16 Mar 22,7,regular,Round 7,Stella Maris,Elwood Yellow,1,7,3,6,,,40,50,Completed,
+WA003074,16 Mar 22,7,regular,Round 7,Black Rock 2,Beaumaris CC,8,0,8,0,,,50,21,Completed,
+pending-wa003-r7-bye-aspendale,16 Mar 22,7,regular,Round 7,Bye,Aspendale,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+WA003081,23 Mar 22,8,regular,Round 8,Beaumaris CC,Basterfield Park,1,7,3,7,,,45,53,Completed,
+WA003082,23 Mar 22,8,regular,Round 8,Aspendale,Stella Maris,1,7,4,6,,,44,46,Completed,
+WA003083,23 Mar 22,8,regular,Round 8,Black Rock 2,Black Rock 1,0,8,1,8,,,27,51,Completed,
+pending-wa003-r8-bye-elwood-yellow,23 Mar 22,8,regular,Round 8,Bye,Elwood Yellow,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+WA003092,30 Mar 22,9,regular,Round 9,Stella Maris,Beaumaris CC,7,1,6,3,,,46,39,Completed,
+WA003093,30 Mar 22,9,regular,Round 9,Black Rock 1,Aspendale,7,1,6,4,,,54,49,Completed,
+WA003094,30 Mar 22,9,regular,Round 9,Elwood Yellow,Black Rock 2,8,0,8,0,,,48,8,Completed,
+pending-wa003-r9-basterfield-park-bye,30 Mar 22,9,regular,Round 9,Basterfield Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+WA003101,06 Apr 22,10,regular,Round 10,Black Rock 2,Basterfield Park,0,8,1,8,,,27,51,Completed,
+WA003103,06 Apr 22,10,regular,Round 10,Beaumaris CC,Black Rock 1,0,8,0,8,,,10,48,Completed,
+WA003104,06 Apr 22,10,regular,Round 10,Aspendale,Elwood Yellow,0,8,1,8,,,25,51,Completed,
+pending-wa003-r10-bye-stella-maris,06 Apr 22,10,regular,Round 10,Bye,Stella Maris,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+WA003111,27 Apr 22,11,regular,Round 11,Basterfield Park,Aspendale,8,0,8,0,,,50,20,Completed,
+WA003112,27 Apr 22,11,regular,Round 11,Stella Maris,Black Rock 2,7,1,6,2,,,49,24,Completed,
+WA003114,27 Apr 22,11,regular,Round 11,Elwood Yellow,Beaumaris CC,8,0,8,0,,,48,8,Completed,
+pending-wa003-r11-black-rock-1-bye,27 Apr 22,11,regular,Round 11,Black Rock 1,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+WA003121,04 May 22,12,regular,Round 12,Elwood Yellow,Black Rock 1,7,1,6,2,,,43,16,Completed,
+WA003123,04 May 22,12,regular,Round 12,Beaumaris CC,Aspendale,1,7,2,6,,,24,40,Completed,
+pending-wa003-r12-black-rock-2-bye,04 May 22,12,regular,Round 12,Black Rock 2,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-wa003-r12-stella-maris-basterfield-park,04 May 22,12,regular,Round 12,Stella Maris,Basterfield Park,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+WA003131,11 May 22,13,regular,Round 13,Black Rock 1,Stella Maris,8,0,8,0,,,50,25,Completed,
+WA003132,11 May 22,13,regular,Round 13,Basterfield Park,Elwood Yellow,1,7,3,6,,,38,50,Completed,
+WA003133,11 May 22,13,regular,Round 13,Aspendale,Black Rock 2,2,6,4,4,,,30,32,Completed,
+pending-wa003-r13-bye-beaumaris-cc,11 May 22,13,regular,Round 13,Bye,Beaumaris CC,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+WA003141,18 May 22,14,regular,Round 14,Black Rock 1,Basterfield Park,2,6,4,4,,,36,41,Completed,
+WA003142,18 May 22,14,regular,Round 14,Elwood Yellow,Stella Maris,6,2,5,4,,,43,30,Completed,
+WA003144,18 May 22,14,regular,Round 14,Beaumaris CC,Black Rock 2,1,7,2,6,,,23,41,Completed,
+pending-wa003-r14-aspendale-bye,18 May 22,14,regular,Round 14,Aspendale,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+WA003301,,16,semi_final,Semi-final,Elwood Yellow,Stella Maris,7,1,7,3,,,59,42,Completed,
+WA003302,,16,semi_final,Semi-final,Basterfield Park,Black Rock 1,1,7,3,7,,,51,54,Completed,
+WA003321,,17,grand_final,Grand final · TROLS entry 2,Elwood Yellow,Black Rock 1,1.5,6.5,3,5,,,42,47,Completed,

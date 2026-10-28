@@ -1,0 +1,98 @@
+{
+  "asset_id": "WA6-WA002",
+  "competition_code": "WA",
+  "competition_label": "Wednesday AM - Autumn 2022",
+  "season_id": "WA6",
+  "season_label": "Autumn 2022",
+  "source_section_code": "WA002",
+  "section_label": "W Section 1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Elwood Blue",
+      "wins": 11,
+      "points": 86,
+      "percentage": 189.74,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Parkdale",
+      "wins": 9,
+      "points": 74,
+      "percentage": 130.79,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Black Rock",
+      "wins": 7,
+      "points": 62,
+      "percentage": 140.75,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Stella Maris",
+      "wins": 6,
+      "points": 47.5,
+      "percentage": 108.67,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "St Pats Mentone",
+      "wins": 4,
+      "points": 30,
+      "percentage": 65.41,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Langwarrin",
+      "wins": 1,
+      "points": 20.5,
+      "percentage": 68.13,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Coatesville",
+      "wins": 0,
+      "points": 16,
+      "percentage": 51.31,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "WA6-WA002",
+  "fixtures": 59,
+  "completed_fixtures": 41,
+  "draw_fixtures": 48,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 164,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for WA002093 doubles No. 3: '7-6 1-6'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for WA002301 doubles No. 3: '3-3'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

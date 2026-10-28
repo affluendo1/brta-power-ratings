@@ -1,0 +1,98 @@
+{
+  "asset_id": "WA7-WA004",
+  "competition_code": "WA",
+  "competition_label": "Wednesday AM - Spring 2022",
+  "season_id": "WA7",
+  "season_label": "Spring 2022",
+  "source_section_code": "WA004",
+  "section_label": "W Section 3",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Dingley",
+      "wins": 8,
+      "points": 77,
+      "percentage": 339.32,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Beaumaris CC",
+      "wins": 8,
+      "points": 72,
+      "percentage": 160.47,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "St Pats Mentone",
+      "wins": 5,
+      "points": 58,
+      "percentage": 128.72,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Kings Park Red",
+      "wins": 3,
+      "points": 42.5,
+      "percentage": 83.02,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Kings Park Blue",
+      "wins": 2,
+      "points": 31.5,
+      "percentage": 65.71,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "St Leonard's",
+      "wins": 2,
+      "points": 31.5,
+      "percentage": 58.88,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Kings Park White",
+      "wins": 0,
+      "points": 23.5,
+      "percentage": 58.33,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "WA7-WA004",
+  "fixtures": 59,
+  "completed_fixtures": 36,
+  "draw_fixtures": 48,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 131,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for WA004012 doubles No. 2: '6-4 1-6'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for WA004321 doubles No. 3: '6-0 1-2'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

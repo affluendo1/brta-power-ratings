@@ -1,0 +1,90 @@
+{
+  "asset_id": "WA9-WA003",
+  "competition_code": "WA",
+  "competition_label": "Wednesday AM - Spring 2023",
+  "season_id": "WA9",
+  "season_label": "Spring 2023",
+  "source_section_code": "WA003",
+  "section_label": "W Section 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "St Pats Mentone",
+      "wins": 9,
+      "points": 79,
+      "percentage": 128.02,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Black Rock Navy",
+      "wins": 8,
+      "points": 74,
+      "percentage": 120.04,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Coatesville",
+      "wins": 8,
+      "points": 74,
+      "percentage": 116.99,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Basterfield Park",
+      "wins": 7,
+      "points": 69,
+      "percentage": 113.35,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Aspendale Gold",
+      "wins": 4,
+      "points": 44,
+      "percentage": 79.24,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Dingley",
+      "wins": 1,
+      "points": 20,
+      "percentage": 58.54,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "WA9-WA003",
+  "fixtures": 46,
+  "completed_fixtures": 40,
+  "draw_fixtures": 46,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 160,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for WA003321 doubles No. 4: '3-6 0-2'. Missing score not inferred; excluded from ratings and game totals.",
+    "Fixture game totals do not match rubbers for WA003321: TROLS team total 35-21; complete-score total 34-21. Both published records retained."
+  ]
+}

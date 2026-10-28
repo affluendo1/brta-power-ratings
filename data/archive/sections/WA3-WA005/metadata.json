@@ -1,0 +1,79 @@
+{
+  "asset_id": "WA3-WA005",
+  "competition_code": "WA",
+  "competition_label": "Wednesday AM - Spring 2020",
+  "season_id": "WA3",
+  "season_label": "Spring 2020",
+  "source_section_code": "WA005",
+  "section_label": "Section 3",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Aspendale",
+      "wins": 4,
+      "points": 27,
+      "percentage": 150.0,
+      "marker": ""
+    },
+    {
+      "position": 2,
+      "team": "Beaumaris CC",
+      "wins": 3,
+      "points": 21,
+      "percentage": 108.7,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Dingley",
+      "wins": 2,
+      "points": 19,
+      "percentage": 125.66,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Black Rock",
+      "wins": 1,
+      "points": 12,
+      "percentage": 104.35,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "St Leonard's",
+      "wins": 0,
+      "points": 1,
+      "percentage": 36.13,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "WA3-WA005",
+  "fixtures": 15,
+  "completed_fixtures": 10,
+  "draw_fixtures": 0,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 40,
+  "latest_round": 5,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

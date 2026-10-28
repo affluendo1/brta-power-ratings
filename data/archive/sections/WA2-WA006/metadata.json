@@ -1,0 +1,79 @@
+{
+  "asset_id": "WA2-WA006",
+  "competition_code": "WA",
+  "competition_label": "Wednesday AM - Autumn 2020",
+  "season_id": "WA2",
+  "season_label": "Autumn 2020",
+  "source_section_code": "WA006",
+  "section_label": "Wednesday Section 3",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Black Rock",
+      "wins": 5,
+      "points": 39,
+      "percentage": 352.17,
+      "marker": ""
+    },
+    {
+      "position": 2,
+      "team": "St Pats Mentone 1",
+      "wins": 4,
+      "points": 30,
+      "percentage": 156.16,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Kings Park 2",
+      "wins": 1,
+      "points": 13.5,
+      "percentage": 73.5,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Kings Park 1",
+      "wins": 1,
+      "points": 11.5,
+      "percentage": 67.46,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "St Pats Mentone 2",
+      "wins": 0,
+      "points": 2,
+      "percentage": 39.09,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "WA2-WA006",
+  "fixtures": 18,
+  "completed_fixtures": 12,
+  "draw_fixtures": 0,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 48,
+  "latest_round": 6,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

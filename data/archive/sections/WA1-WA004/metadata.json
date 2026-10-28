@@ -1,0 +1,107 @@
+{
+  "asset_id": "WA1-WA004",
+  "competition_code": "WA",
+  "competition_label": "Wednesday AM - Spring 2019",
+  "season_id": "WA1",
+  "season_label": "Spring 2019",
+  "source_section_code": "WA004",
+  "section_label": "Section 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "St Pats Mentone",
+      "wins": 10,
+      "points": 82.5,
+      "percentage": 122.3,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "Black Rock",
+      "wins": 11,
+      "points": 81,
+      "percentage": 136.62,
+      "marker": "P"
+    },
+    {
+      "position": 3,
+      "team": "Elwood",
+      "wins": 10,
+      "points": 79.5,
+      "percentage": 134.76,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Basterfield Park",
+      "wins": 11,
+      "points": 79,
+      "percentage": 111.07,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Stella Maris",
+      "wins": 5,
+      "points": 44,
+      "percentage": 89.1,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Kings Park",
+      "wins": 5,
+      "points": 39,
+      "percentage": 88.89,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Dingley",
+      "wins": 2,
+      "points": 35,
+      "percentage": 86.25,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "Aspendale",
+      "wins": 0,
+      "points": 8,
+      "percentage": 52.08,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "WA1-WA004",
+  "fixtures": 59,
+  "completed_fixtures": 59,
+  "draw_fixtures": 48,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 236,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for WA004071 doubles No. 3: '7-5 3-4'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for WA004073 doubles No. 3: '6-3 2-0'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for WA004073 doubles No. 4: '4-6 0-1'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

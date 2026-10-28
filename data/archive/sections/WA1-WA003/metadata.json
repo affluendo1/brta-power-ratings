@@ -1,0 +1,90 @@
+{
+  "asset_id": "WA1-WA003",
+  "competition_code": "WA",
+  "competition_label": "Wednesday AM - Spring 2019",
+  "season_id": "WA1",
+  "season_label": "Spring 2019",
+  "source_section_code": "WA003",
+  "section_label": "Section 1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Elwood",
+      "wins": 11,
+      "points": 91.5,
+      "percentage": 150.44,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Black Rock",
+      "wins": 11,
+      "points": 88.5,
+      "percentage": 143.27,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Parkdale",
+      "wins": 11,
+      "points": 87,
+      "percentage": 140.21,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Stella Maris",
+      "wins": 5,
+      "points": 41.5,
+      "percentage": 75.42,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Langwarrin",
+      "wins": 4,
+      "points": 33.5,
+      "percentage": 66.02,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Beaumaris CC",
+      "wins": 1,
+      "points": 18,
+      "percentage": 65.72,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "WA1-WA003",
+  "fixtures": 46,
+  "completed_fixtures": 45,
+  "draw_fixtures": 46,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 180,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for WA003052 doubles No. 3: '3-3'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for WA003071 doubles No. 3: '0-6 5-4'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

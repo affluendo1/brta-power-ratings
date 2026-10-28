@@ -1,0 +1,103 @@
+{
+  "asset_id": "WA4-WA005",
+  "competition_code": "WA",
+  "competition_label": "Wednesday AM - Autumn 2021",
+  "season_id": "WA4",
+  "season_label": "Autumn 2021",
+  "source_section_code": "WA005",
+  "section_label": "W Section 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Elwood",
+      "wins": 10,
+      "points": 85,
+      "percentage": 144.03,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "Coatesville",
+      "wins": 11,
+      "points": 85,
+      "percentage": 139.09,
+      "marker": "P"
+    },
+    {
+      "position": 3,
+      "team": "Basterfield Park",
+      "wins": 8,
+      "points": 66,
+      "percentage": 115.34,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Black Rock",
+      "wins": 7,
+      "points": 65,
+      "percentage": 127.5,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Stella Maris",
+      "wins": 7,
+      "points": 63,
+      "percentage": 108.05,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Aspendale",
+      "wins": 3,
+      "points": 46,
+      "percentage": 85.75,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Dingley",
+      "wins": 3,
+      "points": 28,
+      "percentage": 65.66,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "Beaumaris CC",
+      "wins": 0,
+      "points": 10,
+      "percentage": 34.68,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "WA4-WA005",
+  "fixtures": 59,
+  "completed_fixtures": 50,
+  "draw_fixtures": 3,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 200,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

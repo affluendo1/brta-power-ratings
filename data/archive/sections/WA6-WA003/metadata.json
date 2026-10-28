@@ -1,0 +1,97 @@
+{
+  "asset_id": "WA6-WA003",
+  "competition_code": "WA",
+  "competition_label": "Wednesday AM - Autumn 2022",
+  "season_id": "WA6",
+  "season_label": "Autumn 2022",
+  "source_section_code": "WA003",
+  "section_label": "W Section 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Elwood Yellow",
+      "wins": 12,
+      "points": 89,
+      "percentage": 218.85,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "Basterfield Park",
+      "wins": 9,
+      "points": 67,
+      "percentage": 120.67,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Black Rock 1",
+      "wins": 7,
+      "points": 61,
+      "percentage": 132.5,
+      "marker": "P"
+    },
+    {
+      "position": 4,
+      "team": "Stella Maris",
+      "wins": 7,
+      "points": 61,
+      "percentage": 119.95,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Aspendale",
+      "wins": 3,
+      "points": 31,
+      "percentage": 79.72,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Black Rock 2",
+      "wins": 3,
+      "points": 23,
+      "percentage": 63.93,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Beaumaris CC",
+      "wins": 0,
+      "points": 4,
+      "percentage": 44.25,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "WA6-WA003",
+  "fixtures": 59,
+  "completed_fixtures": 44,
+  "draw_fixtures": 48,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 176,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for WA003321 doubles No. 4: '7-6 4-0'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

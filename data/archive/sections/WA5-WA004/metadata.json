@@ -1,0 +1,91 @@
+{
+  "asset_id": "WA5-WA004",
+  "competition_code": "WA",
+  "competition_label": "Wednesday AM - Spring 2021",
+  "season_id": "WA5",
+  "season_label": "Spring 2021",
+  "source_section_code": "WA004",
+  "section_label": "W Section 3",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Beaumaris CC",
+      "wins": 5,
+      "points": 69,
+      "percentage": 200.8,
+      "marker": ""
+    },
+    {
+      "position": 2,
+      "team": "St Leonard's",
+      "wins": 3,
+      "points": 57,
+      "percentage": 128.82,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "St Pats Mentone",
+      "wins": 3,
+      "points": 56,
+      "percentage": 120.59,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Kings Park No.3",
+      "wins": 3,
+      "points": 54,
+      "percentage": 101.48,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Kings Park No.2",
+      "wins": 2,
+      "points": 46,
+      "percentage": 86.78,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Kings Park No.1",
+      "wins": 0,
+      "points": 30,
+      "percentage": 35.36,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "WA5-WA004",
+  "fixtures": 45,
+  "completed_fixtures": 22,
+  "draw_fixtures": 45,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 64,
+  "latest_round": 15,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for WA004141 doubles No. 3: '6-2 1-0'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for WA004141 doubles No. 4: '6-1 1-1'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for WA004143 doubles No. 4: '6-4 2-1'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "asset_id": "WA12-WA004",
+  "competition_code": "WA",
+  "competition_label": "Wednesday AM - Autumn 2025",
+  "season_id": "WA12",
+  "season_label": "Autumn 2025",
+  "source_section_code": "WA004",
+  "section_label": "W Section 3",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Kings Park Blue",
+      "wins": 15,
+      "points": 114,
+      "percentage": 228.87,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "St Pats Mentone",
+      "wins": 9,
+      "points": 76,
+      "percentage": 126.97,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Black Rock",
+      "wins": 8,
+      "points": 69,
+      "percentage": 115.96,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Beaumaris CC",
+      "wins": 5,
+      "points": 46,
+      "percentage": 77.4,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "St Leonard's",
+      "wins": 2,
+      "points": 34.5,
+      "percentage": 77.45,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Kings Park Red",
+      "wins": 1,
+      "points": 20.5,
+      "percentage": 54.64,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "WA12-WA004",
+  "fixtures": 46,
+  "completed_fixtures": 43,
+  "draw_fixtures": 46,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 164,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for WA004142 doubles No. 2: '5-7 6-5'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

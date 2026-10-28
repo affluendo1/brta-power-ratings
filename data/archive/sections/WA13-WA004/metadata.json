@@ -1,0 +1,89 @@
+{
+  "asset_id": "WA13-WA004",
+  "competition_code": "WA",
+  "competition_label": "Wednesday AM - Spring 2025",
+  "season_id": "WA13",
+  "season_label": "Spring 2025",
+  "source_section_code": "WA004",
+  "section_label": "W Section 3",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "BLTC",
+      "wins": 13,
+      "points": 107,
+      "percentage": 225.91,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "St Pats Mentone",
+      "wins": 9,
+      "points": 71.5,
+      "percentage": 109.0,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Black Rock",
+      "wins": 7,
+      "points": 67.5,
+      "percentage": 114.51,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Beaumaris CC",
+      "wins": 6,
+      "points": 54.5,
+      "percentage": 92.08,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "St Leonard's",
+      "wins": 3,
+      "points": 37.5,
+      "percentage": 71.82,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Kings Park",
+      "wins": 1,
+      "points": 22,
+      "percentage": 55.64,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "WA13-WA004",
+  "fixtures": 46,
+  "completed_fixtures": 43,
+  "draw_fixtures": 46,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 168,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for WA004062 doubles No. 1: '6-3 4-2'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

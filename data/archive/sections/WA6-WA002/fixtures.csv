@@ -1,0 +1,60 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+WA002011,02 Feb 22,1,regular,Round 1,Black Rock,Parkdale,1,7,2,6,,,36,45,Completed,
+WA002012,02 Feb 22,1,regular,Round 1,St Pats Mentone,Stella Maris,7,1,6,5,,,50,57,Completed,
+WA002013,02 Feb 22,1,regular,Round 1,Langwarrin,Coatesville,7,1,7,2,,,50,27,Completed,
+pending-wa002-r1-bye-elwood-blue,02 Feb 22,1,regular,Round 1,Bye,Elwood Blue,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+WA002021,09 Feb 22,2,regular,Round 2,Elwood Blue,Black Rock,0,8,0,8,,,21,50,Completed,
+WA002022,09 Feb 22,2,regular,Round 2,Parkdale,St Pats Mentone,8,0,8,1,,,52,26,Completed,
+WA002023,09 Feb 22,2,regular,Round 2,Stella Maris,Langwarrin,7,1,7,3,,,58,40,Completed,
+pending-wa002-r2-coatesville-bye,09 Feb 22,2,regular,Round 2,Coatesville,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+WA002031,16 Feb 22,3,regular,Round 3,Black Rock,Coatesville,8,0,8,0,,,49,17,Completed,
+WA002032,16 Feb 22,3,regular,Round 3,St Pats Mentone,Elwood Blue,0,8,0,8,,,13,49,Completed,
+WA002033,16 Feb 22,3,regular,Round 3,Langwarrin,Parkdale,0,8,1,8,,,38,53,Completed,
+pending-wa002-r3-bye-stella-maris,16 Feb 22,3,regular,Round 3,Bye,Stella Maris,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+WA002041,23 Feb 22,4,regular,Round 4,Stella Maris,Black Rock,2,6,4,5,,,39,47,Completed,
+WA002042,23 Feb 22,4,regular,Round 4,Coatesville,St Pats Mentone,1,7,2,6,,,23,43,Completed,
+WA002043,23 Feb 22,4,regular,Round 4,Elwood Blue,Langwarrin,8,0,8,0,,,49,22,Completed,
+pending-wa002-r4-parkdale-bye,23 Feb 22,4,regular,Round 4,Parkdale,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+WA002052,02 Mar 22,5,regular,Round 5,Elwood Blue,Coatesville,8,0,8,0,,,48,12,Completed,
+WA002053,02 Mar 22,5,regular,Round 5,Stella Maris,Parkdale,1,7,3,7,,,38,54,Completed,
+WA002054,02 Mar 22,5,regular,Round 5,Black Rock,St Pats Mentone,7,1,7,2,,,54,32,Completed,
+pending-wa002-r5-langwarrin-bye,02 Mar 22,5,regular,Round 5,Langwarrin,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+WA002061,09 Mar 22,6,regular,Round 6,St Pats Mentone,Langwarrin,6,2,5,4,,,43,36,Completed,
+WA002063,09 Mar 22,6,regular,Round 6,Coatesville,Stella Maris,2,6,4,5,,,35,48,Completed,
+WA002064,09 Mar 22,6,regular,Round 6,Parkdale,Elwood Blue,0,8,1,8,,,27,56,Completed,
+pending-wa002-r6-bye-black-rock,09 Mar 22,6,regular,Round 6,Bye,Black Rock,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+WA002071,16 Mar 22,7,regular,Round 7,Black Rock,Langwarrin,8,0,8,0,,,48,15,Completed,
+WA002073,16 Mar 22,7,regular,Round 7,Elwood Blue,Stella Maris,7,1,7,2,,,52,34,Completed,
+pending-wa002-r7-coatesville-parkdale,16 Mar 22,7,regular,Round 7,Coatesville,Parkdale,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+pending-wa002-r7-st-pats-mentone-bye,16 Mar 22,7,regular,Round 7,St Pats Mentone,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+WA002081,23 Mar 22,8,regular,Round 8,Parkdale,Black Rock,7,1,7,4,,,61,53,Completed,
+WA002082,23 Mar 22,8,regular,Round 8,Stella Maris,St Pats Mentone,7,1,6,3,,,49,39,Completed,
+pending-wa002-r8-coatesville-langwarrin,23 Mar 22,8,regular,Round 8,Coatesville,Langwarrin,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+pending-wa002-r8-elwood-blue-bye,23 Mar 22,8,regular,Round 8,Elwood Blue,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+WA002091,30 Mar 22,9,regular,Round 9,Black Rock,Elwood Blue,0,8,1,8,,,33,55,Completed,
+WA002092,30 Mar 22,9,regular,Round 9,St Pats Mentone,Parkdale,1,7,2,6,,,26,39,Completed,
+WA002093,30 Mar 22,9,regular,Round 9,Langwarrin,Stella Maris,0.5,7.5,1,7,,,17,48,Completed,
+pending-wa002-r9-bye-coatesville,30 Mar 22,9,regular,Round 9,Bye,Coatesville,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+WA002101,06 Apr 22,10,regular,Round 10,Coatesville,Black Rock,2,6,4,5,,,36,48,Completed,
+WA002102,06 Apr 22,10,regular,Round 10,Elwood Blue,St Pats Mentone,8,0,8,0,,,50,25,Completed,
+WA002103,06 Apr 22,10,regular,Round 10,Parkdale,Langwarrin,7,1,6,4,,,52,47,Completed,
+pending-wa002-r10-stella-maris-bye,06 Apr 22,10,regular,Round 10,Stella Maris,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+WA002111,27 Apr 22,11,regular,Round 11,Black Rock,Stella Maris,2,6,5,5,,,47,52,Completed,
+WA002112,27 Apr 22,11,regular,Round 11,St Pats Mentone,Coatesville,7,1,7,2,,,51,27,Completed,
+WA002113,27 Apr 22,11,regular,Round 11,Langwarrin,Elwood Blue,0,8,0,8,,,17,48,Completed,
+pending-wa002-r11-bye-parkdale,27 Apr 22,11,regular,Round 11,Bye,Parkdale,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+WA002122,04 May 22,12,regular,Round 12,Coatesville,Elwood Blue,0,8,0,8,,,7,48,Completed,
+WA002123,04 May 22,12,regular,Round 12,Parkdale,Stella Maris,6,2,5,5,,,57,53,Completed,
+pending-wa002-r12-bye-langwarrin,04 May 22,12,regular,Round 12,Bye,Langwarrin,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-wa002-r12-st-pats-mentone-black-rock,04 May 22,12,regular,Round 12,St Pats Mentone,Black Rock,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+WA002133,11 May 22,13,regular,Round 13,Stella Maris,Coatesville,7,1,7,2,,,53,25,Completed,
+WA002134,11 May 22,13,regular,Round 13,Elwood Blue,Parkdale,7,1,6,2,,,41,27,Completed,
+pending-wa002-r13-black-rock-bye,11 May 22,13,regular,Round 13,Black Rock,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-wa002-r13-langwarrin-st-pats-mentone,11 May 22,13,regular,Round 13,Langwarrin,St Pats Mentone,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+WA002141,18 May 22,14,regular,Round 14,Langwarrin,Black Rock,1,7,2,7,,,27,50,Completed,
+WA002143,18 May 22,14,regular,Round 14,Stella Maris,Elwood Blue,0,8,1,8,,,35,56,Completed,
+WA002144,18 May 22,14,regular,Round 14,Parkdale,Coatesville,8,0,8,0,,,50,18,Completed,
+pending-wa002-r14-bye-st-pats-mentone,18 May 22,14,regular,Round 14,Bye,St Pats Mentone,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+WA002301,,16,semi_final,Semi-final,Elwood Blue,Stella Maris,7,1,5,0,,,34,14,Completed,
+WA002302,,16,semi_final,Semi-final,Parkdale,Black Rock,6,2,4,4,,,37,35,Completed,
+WA002321,,17,grand_final,Grand final · TROLS entry 2,Elwood Blue,Parkdale,7,1,6,3,,,47,35,Completed,

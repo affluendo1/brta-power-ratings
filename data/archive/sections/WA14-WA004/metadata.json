@@ -1,0 +1,82 @@
+{
+  "asset_id": "WA14-WA004",
+  "competition_code": "WA",
+  "competition_label": "Wednesday AM - Autumn 2026",
+  "season_id": "WA14",
+  "season_label": "Autumn 2026",
+  "source_section_code": "WA004",
+  "section_label": "W Section 3",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Black Rock",
+      "wins": 9,
+      "points": 75,
+      "percentage": 178.95,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "St Pats Mentone",
+      "wins": 8,
+      "points": 68,
+      "percentage": 133.24,
+      "marker": "P"
+    },
+    {
+      "position": 3,
+      "team": "Beaumaris CC",
+      "wins": 6,
+      "points": 54,
+      "percentage": 111.11,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Kings Park Blue",
+      "wins": 3,
+      "points": 28,
+      "percentage": 73.13,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Kings Park Red",
+      "wins": 0,
+      "points": 15,
+      "percentage": 54.94,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "WA14-WA004",
+  "fixtures": 46,
+  "completed_fixtures": 28,
+  "draw_fixtures": 46,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 110,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for WA004131 doubles No. 3: '3-6 1-0'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for WA004321 doubles No. 3: '1-6 5-4'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "asset_id": "WA10-WA003",
+  "competition_code": "WA",
+  "competition_label": "Wednesday AM - Autumn 2024",
+  "season_id": "WA10",
+  "season_label": "Autumn 2024",
+  "source_section_code": "WA003",
+  "section_label": "W Section 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Basterfield Park",
+      "wins": 12,
+      "points": 102.5,
+      "percentage": 192.46,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Black Rock Maroon",
+      "wins": 10,
+      "points": 91.5,
+      "percentage": 176.88,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Aspendale Gold",
+      "wins": 8,
+      "points": 73,
+      "percentage": 129.43,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Aspendale Green",
+      "wins": 5,
+      "points": 40,
+      "percentage": 70.44,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "St Pats Mentone",
+      "wins": 4,
+      "points": 39,
+      "percentage": 71.7,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Black Rock Navy",
+      "wins": 0,
+      "points": 14,
+      "percentage": 41.85,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "WA10-WA003",
+  "fixtures": 46,
+  "completed_fixtures": 40,
+  "draw_fixtures": 46,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 160,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for WA003031 doubles No. 3: '6-7 5-5'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for WA003321 doubles No. 4: '6-4 1-1'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

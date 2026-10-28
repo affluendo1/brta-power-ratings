@@ -1,0 +1,82 @@
+{
+  "asset_id": "WA12-WA003",
+  "competition_code": "WA",
+  "competition_label": "Wednesday AM - Autumn 2025",
+  "season_id": "WA12",
+  "season_label": "Autumn 2025",
+  "source_section_code": "WA003",
+  "section_label": "W Section 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Langwarrin",
+      "wins": 12,
+      "points": 93,
+      "percentage": 229.91,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Black Rock Maroon",
+      "wins": 8,
+      "points": 66,
+      "percentage": 115.61,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Basterfield Park",
+      "wins": 6,
+      "points": 43.5,
+      "percentage": 99.09,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Aspendale",
+      "wins": 2,
+      "points": 24.5,
+      "percentage": 76.34,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Dingley",
+      "wins": 1,
+      "points": 13,
+      "percentage": 57.44,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "WA12-WA003",
+  "fixtures": 46,
+  "completed_fixtures": 30,
+  "draw_fixtures": 46,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 120,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for WA003033 doubles No. 3: '6-3 3-5'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for WA003042 doubles No. 4: '7-6 2-6'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "asset_id": "WA2-WA004",
+  "competition_code": "WA",
+  "competition_label": "Wednesday AM - Autumn 2020",
+  "season_id": "WA2",
+  "season_label": "Autumn 2020",
+  "source_section_code": "WA004",
+  "section_label": "Wednesday Section 1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Elwood",
+      "wins": 6,
+      "points": 46,
+      "percentage": 181.21,
+      "marker": ""
+    },
+    {
+      "position": 2,
+      "team": "Black Rock",
+      "wins": 4,
+      "points": 35,
+      "percentage": 143.75,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Parkdale",
+      "wins": 4,
+      "points": 35,
+      "percentage": 139.05,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Stella Maris",
+      "wins": 1,
+      "points": 13,
+      "percentage": 86.11,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Langwarrin",
+      "wins": 2,
+      "points": 13,
+      "percentage": 67.53,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "St Pats Mentone",
+      "wins": 0,
+      "points": 2,
+      "percentage": 45.76,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "WA2-WA004",
+  "fixtures": 18,
+  "completed_fixtures": 18,
+  "draw_fixtures": 45,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 72,
+  "latest_round": 6,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

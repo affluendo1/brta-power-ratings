@@ -1,0 +1,79 @@
+{
+  "asset_id": "WA3-WA003",
+  "competition_code": "WA",
+  "competition_label": "Wednesday AM - Spring 2020",
+  "season_id": "WA3",
+  "season_label": "Spring 2020",
+  "source_section_code": "WA003",
+  "section_label": "Section 1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Elwood",
+      "wins": 3,
+      "points": 25,
+      "percentage": 192.86,
+      "marker": ""
+    },
+    {
+      "position": 2,
+      "team": "Black Rock",
+      "wins": 3,
+      "points": 24,
+      "percentage": 134.48,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Stella Maris",
+      "wins": 3,
+      "points": 20,
+      "percentage": 89.84,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Parkdale",
+      "wins": 1,
+      "points": 10,
+      "percentage": 84.13,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Beaumaris CC",
+      "wins": 0,
+      "points": 1,
+      "percentage": 55.94,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "WA3-WA003",
+  "fixtures": 15,
+  "completed_fixtures": 10,
+  "draw_fixtures": 45,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 40,
+  "latest_round": 5,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

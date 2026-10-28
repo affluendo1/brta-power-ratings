@@ -1,0 +1,79 @@
+{
+  "asset_id": "WA5-WA002",
+  "competition_code": "WA",
+  "competition_label": "Wednesday AM - Spring 2021",
+  "season_id": "WA5",
+  "season_label": "Spring 2021",
+  "source_section_code": "WA002",
+  "section_label": "W Section 1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Elwood Blue",
+      "wins": 3,
+      "points": 60,
+      "percentage": 418.64,
+      "marker": ""
+    },
+    {
+      "position": 2,
+      "team": "Parkdale",
+      "wins": 3,
+      "points": 51,
+      "percentage": 114.4,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Coatesville",
+      "wins": 3,
+      "points": 43,
+      "percentage": 107.14,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "St Pats Mentone",
+      "wins": 1,
+      "points": 32,
+      "percentage": 52.8,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Elwood Yellow",
+      "wins": 0,
+      "points": 22,
+      "percentage": 60.08,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "WA5-WA002",
+  "fixtures": 45,
+  "completed_fixtures": 14,
+  "draw_fixtures": 45,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 40,
+  "latest_round": 15,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

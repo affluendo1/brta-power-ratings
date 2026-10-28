@@ -1,0 +1,60 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+WA004011,02 Feb 22,1,regular,Round 1,Kings Park Blue,Dingley,0,8,0,8,,,4,48,Completed,
+WA004013,02 Feb 22,1,regular,Round 1,St Pats Mentone Gold,St Pats Mentone Silver,7,1,7,2,,,49,24,Completed,
+WA004014,02 Feb 22,1,regular,Round 1,Kings Park Red,Kings Park White,6,2,5,4,,,46,39,Completed,
+pending-wa004-r1-st-leonard-s-bye,02 Feb 22,1,regular,Round 1,St Leonard's,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+WA004021,09 Feb 22,2,regular,Round 2,Kings Park White,Kings Park Blue,6,2,4,4,,,39,31,Completed,
+WA004022,09 Feb 22,2,regular,Round 2,Dingley,St Leonard's,8,0,8,1,,,53,26,Completed,
+WA004024,09 Feb 22,2,regular,Round 2,St Pats Mentone Silver,Kings Park Red,4,4,4,4,,,33,33,Completed,
+pending-wa004-r2-bye-st-pats-mentone-gold,09 Feb 22,2,regular,Round 2,Bye,St Pats Mentone Gold,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+WA004031,16 Feb 22,3,regular,Round 3,Kings Park Blue,St Pats Mentone Silver,6,2,4,4,,,36,35,Completed,
+WA004032,16 Feb 22,3,regular,Round 3,St Leonard's,Kings Park White,6,2,5,4,,,41,42,Completed,
+WA004033,16 Feb 22,3,regular,Round 3,St Pats Mentone Gold,Dingley,0,8,0,8,,,10,48,Completed,
+pending-wa004-r3-kings-park-red-bye,16 Feb 22,3,regular,Round 3,Kings Park Red,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+WA004042,23 Feb 22,4,regular,Round 4,St Pats Mentone Silver,St Leonard's,1,7,2,6,,,23,40,Completed,
+WA004043,23 Feb 22,4,regular,Round 4,Kings Park White,St Pats Mentone Gold,2,6,4,5,,,34,41,Completed,
+WA004044,23 Feb 22,4,regular,Round 4,Dingley,Kings Park Red,8,0,8,0,,,48,4,Completed,
+pending-wa004-r4-bye-kings-park-blue,23 Feb 22,4,regular,Round 4,Bye,Kings Park Blue,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+WA004051,02 Mar 22,5,regular,Round 5,St Pats Mentone Gold,Kings Park Red,7,1,6,3,,,40,32,Completed,
+WA004052,02 Mar 22,5,regular,Round 5,Kings Park White,St Pats Mentone Silver,6,2,4,4,,,40,30,Completed,
+WA004054,02 Mar 22,5,regular,Round 5,Kings Park Blue,St Leonard's,2,6,4,5,,,32,35,Completed,
+pending-wa004-r5-bye-dingley,02 Mar 22,5,regular,Round 5,Bye,Dingley,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+WA004061,09 Mar 22,6,regular,Round 6,St Leonard's,St Pats Mentone Gold,1,7,2,6,,,25,40,Completed,
+WA004062,09 Mar 22,6,regular,Round 6,Kings Park Red,Kings Park Blue,6,2,4,4,,,36,34,Completed,
+WA004064,09 Mar 22,6,regular,Round 6,Dingley,Kings Park White,8,0,8,0,,,48,10,Completed,
+pending-wa004-r6-st-pats-mentone-silver-bye,09 Mar 22,6,regular,Round 6,St Pats Mentone Silver,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+WA004071,16 Mar 22,7,regular,Round 7,Kings Park Blue,St Pats Mentone Gold,0,8,0,8,,,18,49,Completed,
+WA004072,16 Mar 22,7,regular,Round 7,St Leonard's,Kings Park Red,8,0,8,2,,,58,40,Completed,
+pending-wa004-r7-kings-park-white-bye,16 Mar 22,7,regular,Round 7,Kings Park White,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-wa004-r7-st-pats-mentone-silver-dingley,16 Mar 22,7,regular,Round 7,St Pats Mentone Silver,Dingley,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+WA004081,23 Mar 22,8,regular,Round 8,Dingley,Kings Park Blue,8,0,8,0,,,48,7,Completed,
+WA004083,23 Mar 22,8,regular,Round 8,St Pats Mentone Silver,St Pats Mentone Gold,2,6,4,4,,,29,37,Completed,
+WA004084,23 Mar 22,8,regular,Round 8,Kings Park White,Kings Park Red,6,2,4,4,,,38,37,Completed,
+pending-wa004-r8-bye-st-leonard-s,23 Mar 22,8,regular,Round 8,Bye,St Leonard's,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+WA004091,30 Mar 22,9,regular,Round 9,Kings Park Blue,Kings Park White,0,8,0,8,,,10,48,Completed,
+WA004092,30 Mar 22,9,regular,Round 9,St Leonard's,Dingley,0,8,0,8,,,18,48,Completed,
+WA004094,30 Mar 22,9,regular,Round 9,Kings Park Red,St Pats Mentone Silver,2,6,4,5,,,32,44,Completed,
+pending-wa004-r9-st-pats-mentone-gold-bye,30 Mar 22,9,regular,Round 9,St Pats Mentone Gold,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+WA004101,06 Apr 22,10,regular,Round 10,St Pats Mentone Silver,Kings Park Blue,0,8,2,8,,,30,54,Completed,
+WA004102,06 Apr 22,10,regular,Round 10,Kings Park White,St Leonard's,0,8,1,8,,,31,56,Completed,
+WA004103,06 Apr 22,10,regular,Round 10,Dingley,St Pats Mentone Gold,8,0,8,1,,,52,26,Completed,
+pending-wa004-r10-bye-kings-park-red,06 Apr 22,10,regular,Round 10,Bye,Kings Park Red,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+WA004112,27 Apr 22,11,regular,Round 11,St Leonard's,St Pats Mentone Silver,8,0,8,0,,,48,11,Completed,
+WA004113,27 Apr 22,11,regular,Round 11,St Pats Mentone Gold,Kings Park White,8,0,8,0,,,49,17,Completed,
+WA004114,27 Apr 22,11,regular,Round 11,Kings Park Red,Dingley,0,8,0,8,,,5,48,Completed,
+pending-wa004-r11-kings-park-blue-bye,27 Apr 22,11,regular,Round 11,Kings Park Blue,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+WA004121,04 May 22,12,regular,Round 12,Kings Park Red,St Pats Mentone Gold,1,7,2,6,,,29,41,Completed,
+WA004124,04 May 22,12,regular,Round 12,St Leonard's,Kings Park Blue,2,6,4,4,,,25,34,Completed,
+pending-wa004-r12-dingley-bye,04 May 22,12,regular,Round 12,Dingley,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-wa004-r12-st-pats-mentone-silver-kings-park-white,04 May 22,12,regular,Round 12,St Pats Mentone Silver,Kings Park White,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+WA004131,11 May 22,13,regular,Round 13,St Pats Mentone Gold,St Leonard's,8,0,8,2,,,59,37,Completed,
+WA004132,11 May 22,13,regular,Round 13,Kings Park Blue,Kings Park Red,1,7,3,6,,,40,43,Completed,
+WA004134,11 May 22,13,regular,Round 13,Kings Park White,Dingley,0,8,0,8,,,8,48,Completed,
+pending-wa004-r13-bye-st-pats-mentone-silver,11 May 22,13,regular,Round 13,Bye,St Pats Mentone Silver,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+WA004141,18 May 22,14,regular,Round 14,St Pats Mentone Gold,Kings Park Blue,8,0,8,1,,,53,20,Completed,
+WA004142,18 May 22,14,regular,Round 14,Kings Park Red,St Leonard's,1,7,3,6,,,30,42,Completed,
+WA004144,18 May 22,14,regular,Round 14,Dingley,St Pats Mentone Silver,7,1,7,2,,,54,23,Completed,
+pending-wa004-r14-bye-kings-park-white,18 May 22,14,regular,Round 14,Bye,Kings Park White,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+WA004301,,16,semi_final,Semi-final,Dingley,Kings Park White,8,0,8,1,,,53,12,Completed,
+WA004302,,16,semi_final,Semi-final,St Pats Mentone Gold,St Leonard's,7,1,6,2,,,43,28,Completed,
+WA004321,,17,grand_final,Grand final · TROLS entry 2,Dingley,St Pats Mentone Gold,7,1,6,0,,,37,15,Completed,

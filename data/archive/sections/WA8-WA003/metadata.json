@@ -1,0 +1,95 @@
+{
+  "asset_id": "WA8-WA003",
+  "competition_code": "WA",
+  "competition_label": "Wednesday AM - Autumn 2023",
+  "season_id": "WA8",
+  "season_label": "Autumn 2023",
+  "source_section_code": "WA003",
+  "section_label": "W Section 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Coatesville",
+      "wins": 9,
+      "points": 76,
+      "percentage": 152.79,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Black Rock",
+      "wins": 7,
+      "points": 65,
+      "percentage": 134.16,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Basterfield Park",
+      "wins": 6,
+      "points": 58,
+      "percentage": 128.81,
+      "marker": "R"
+    },
+    {
+      "position": 4,
+      "team": "Aspendale Gold",
+      "wins": 5,
+      "points": 49,
+      "percentage": 94.96,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Kooyong",
+      "wins": 5,
+      "points": 46,
+      "percentage": 103.37,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Dingley",
+      "wins": 3,
+      "points": 32,
+      "percentage": 81.62,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Aspendale Green",
+      "wins": 0,
+      "points": 10,
+      "percentage": 40.0,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "WA8-WA003",
+  "fixtures": 59,
+  "completed_fixtures": 39,
+  "draw_fixtures": 48,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 156,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

@@ -1,0 +1,60 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+WA004011,13 Jul 22,1,regular,Round 1,Beaumaris CC,St Pats Mentone,4,4,0,0,,,10,3,Completed,
+WA004012,13 Jul 22,1,regular,Round 1,Kings Park Red,Kings Park Blue,4.5,3.5,3,1,,,19,12,Completed,
+WA004014,13 Jul 22,1,regular,Round 1,Kings Park White,St Leonard's,3.5,4.5,0,2,,,1,12,Completed,
+pending-wa004-r1-dingley-bye,13 Jul 22,1,regular,Round 1,Dingley,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+WA004021,20 Jul 22,2,regular,Round 2,St Leonard's,Beaumaris CC,0,8,0,8,,,20,50,Completed,
+WA004022,20 Jul 22,2,regular,Round 2,St Pats Mentone,Kings Park Red,1,7,3,6,,,29,43,Completed,
+WA004023,20 Jul 22,2,regular,Round 2,Kings Park Blue,Dingley,0,8,0,8,,,11,48,Completed,
+pending-wa004-r2-bye-kings-park-white,20 Jul 22,2,regular,Round 2,Bye,Kings Park White,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+WA004034,27 Jul 22,3,regular,Round 3,Kings Park White,Kings Park Blue,1,7,3,6,,,39,47,Completed,
+pending-wa004-r3-beaumaris-cc-bye,27 Jul 22,3,regular,Round 3,Beaumaris CC,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-wa004-r3-dingley-st-pats-mentone,27 Jul 22,3,regular,Round 3,Dingley,St Pats Mentone,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-wa004-r3-kings-park-red-st-leonard-s,27 Jul 22,3,regular,Round 3,Kings Park Red,St Leonard's,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+WA004041,03 Aug 22,4,regular,Round 4,Kings Park Blue,Beaumaris CC,0,8,0,8,,,32,51,Completed,
+WA004044,03 Aug 22,4,regular,Round 4,St Pats Mentone,Kings Park White,7,1,6,2,,,45,24,Completed,
+pending-wa004-r4-bye-kings-park-red,03 Aug 22,4,regular,Round 4,Bye,Kings Park Red,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-wa004-r4-st-leonard-s-dingley,03 Aug 22,4,regular,Round 4,St Leonard's,Dingley,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+WA004051,10 Aug 22,5,regular,Round 5,Dingley,Kings Park White,8,0,8,0,,,48,10,Completed,
+WA004053,10 Aug 22,5,regular,Round 5,Kings Park Blue,St Pats Mentone,0,8,1,8,,,27,54,Completed,
+WA004054,10 Aug 22,5,regular,Round 5,Beaumaris CC,Kings Park Red,7,1,6,2,,,46,21,Completed,
+pending-wa004-r5-st-leonard-s-bye,10 Aug 22,5,regular,Round 5,St Leonard's,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+WA004061,17 Aug 22,6,regular,Round 6,Kings Park Red,Dingley,1,7,2,7,,,22,53,Completed,
+WA004062,17 Aug 22,6,regular,Round 6,Kings Park White,Beaumaris CC,0,8,0,8,,,24,51,Completed,
+WA004064,17 Aug 22,6,regular,Round 6,St Pats Mentone,St Leonard's,6,2,4,4,,,40,26,Completed,
+pending-wa004-r6-bye-kings-park-blue,17 Aug 22,6,regular,Round 6,Bye,Kings Park Blue,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+WA004071,24 Aug 22,7,regular,Round 7,Beaumaris CC,Dingley,1,7,0,6,,,14,37,Completed,
+WA004072,24 Aug 22,7,regular,Round 7,Kings Park Red,Kings Park White,4,4,2,2,,,15,15,Completed,
+WA004073,24 Aug 22,7,regular,Round 7,St Leonard's,Kings Park Blue,4,4,5,2,,,40,30,Completed,
+pending-wa004-r7-bye-st-pats-mentone,24 Aug 22,7,regular,Round 7,Bye,St Pats Mentone,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+WA004081,31 Aug 22,8,regular,Round 8,St Pats Mentone,Beaumaris CC,2,6,5,5,,,43,53,Completed,
+WA004082,31 Aug 22,8,regular,Round 8,Kings Park Blue,Kings Park Red,1,7,2,6,,,31,36,Completed,
+WA004084,31 Aug 22,8,regular,Round 8,St Leonard's,Kings Park White,7,1,6,2,,,44,29,Completed,
+pending-wa004-r8-bye-dingley,31 Aug 22,8,regular,Round 8,Bye,Dingley,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+WA004091,07 Sep 22,9,regular,Round 9,Beaumaris CC,St Leonard's,8,0,8,1,,,51,24,Completed,
+WA004092,07 Sep 22,9,regular,Round 9,Kings Park Red,St Pats Mentone,1,7,2,6,,,28,41,Completed,
+WA004093,07 Sep 22,9,regular,Round 9,Dingley,Kings Park Blue,8,0,8,0,,,48,13,Completed,
+pending-wa004-r9-kings-park-white-bye,07 Sep 22,9,regular,Round 9,Kings Park White,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+WA004102,14 Sep 22,10,regular,Round 10,St Leonard's,Kings Park Red,7,1,6,2,,,43,24,Completed,
+WA004103,14 Sep 22,10,regular,Round 10,St Pats Mentone,Dingley,2,6,4,6,,,35,43,Completed,
+WA004104,14 Sep 22,10,regular,Round 10,Kings Park Blue,Kings Park White,7,1,6,3,,,46,42,Completed,
+pending-wa004-r10-bye-beaumaris-cc,14 Sep 22,10,regular,Round 10,Bye,Beaumaris CC,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+WA004111,05 Oct 22,11,regular,Round 11,Beaumaris CC,Kings Park Blue,7,1,6,2,,,40,25,Completed,
+WA004113,05 Oct 22,11,regular,Round 11,Dingley,St Leonard's,5,3,4,0,,,24,4,Completed,
+WA004114,05 Oct 22,11,regular,Round 11,Kings Park White,St Pats Mentone,3,5,0,4,,,9,24,Completed,
+pending-wa004-r11-kings-park-red-bye,05 Oct 22,11,regular,Round 11,Kings Park Red,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-wa004-r12-bye-st-leonard-s,12 Oct 22,12,regular,Round 12,Bye,St Leonard's,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-wa004-r12-kings-park-red-beaumaris-cc,12 Oct 22,12,regular,Round 12,Kings Park Red,Beaumaris CC,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-wa004-r12-kings-park-white-dingley,12 Oct 22,12,regular,Round 12,Kings Park White,Dingley,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-wa004-r12-st-pats-mentone-kings-park-blue,12 Oct 22,12,regular,Round 12,St Pats Mentone,Kings Park Blue,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+WA004131,19 Oct 22,13,regular,Round 13,Dingley,Kings Park Red,8,0,8,0,,,48,8,Completed,
+WA004132,19 Oct 22,13,regular,Round 13,Beaumaris CC,Kings Park White,7,1,6,2,,,40,24,Completed,
+WA004134,19 Oct 22,13,regular,Round 13,St Leonard's,St Pats Mentone,0,8,0,8,,,19,49,Completed,
+pending-wa004-r13-kings-park-blue-bye,19 Oct 22,13,regular,Round 13,Kings Park Blue,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-wa004-r14-dingley-beaumaris-cc,26 Oct 22,14,regular,Round 14,Dingley,Beaumaris CC,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-wa004-r14-kings-park-blue-st-leonard-s,26 Oct 22,14,regular,Round 14,Kings Park Blue,St Leonard's,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-wa004-r14-kings-park-white-kings-park-red,26 Oct 22,14,regular,Round 14,Kings Park White,Kings Park Red,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-wa004-r14-st-pats-mentone-bye,26 Oct 22,14,regular,Round 14,St Pats Mentone,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+WA004301,,16,semi_final,Semi-final,Dingley,Kings Park Red,7,1,6,0,,,37,9,Completed,
+WA004302,,16,semi_final,Semi-final,Beaumaris CC,St Pats Mentone,7,1,7,4,,,62,52,Completed,
+WA004321,,17,grand_final,Grand final · TROLS entry 2,Dingley,Beaumaris CC,7,1,6,1,,,39,24,Completed,

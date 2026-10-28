@@ -1,12 +1,12 @@
 {
   "source": "https://www.trols.org.au/brta/p_results.php",
-  "generated_at_utc": "2026-10-28T12:30:33.671952+00:00",
-  "season_count": 72,
-  "section_count": 801,
-  "fixture_count": 43529,
-  "completed_fixtures": 37063,
+  "generated_at_utc": "2026-10-28T12:32:18.427166+00:00",
+  "season_count": 86,
+  "section_count": 844,
+  "fixture_count": 45445,
+  "completed_fixtures": 38475,
   "singles_rubbers": 145342,
-  "doubles_rubbers": 74243,
+  "doubles_rubbers": 79772,
   "seasons": [
     {
       "competition_code": "AA",
@@ -366,6 +366,76 @@
     {
       "competition_code": "UA",
       "season_id": "UA37",
+      "season_label": "Spring 2025"
+    },
+    {
+      "competition_code": "WA",
+      "season_id": "WA2",
+      "season_label": "Autumn 2020"
+    },
+    {
+      "competition_code": "WA",
+      "season_id": "WA4",
+      "season_label": "Autumn 2021"
+    },
+    {
+      "competition_code": "WA",
+      "season_id": "WA6",
+      "season_label": "Autumn 2022"
+    },
+    {
+      "competition_code": "WA",
+      "season_id": "WA8",
+      "season_label": "Autumn 2023"
+    },
+    {
+      "competition_code": "WA",
+      "season_id": "WA10",
+      "season_label": "Autumn 2024"
+    },
+    {
+      "competition_code": "WA",
+      "season_id": "WA12",
+      "season_label": "Autumn 2025"
+    },
+    {
+      "competition_code": "WA",
+      "season_id": "WA14",
+      "season_label": "Autumn 2026"
+    },
+    {
+      "competition_code": "WA",
+      "season_id": "WA1",
+      "season_label": "Spring 2019"
+    },
+    {
+      "competition_code": "WA",
+      "season_id": "WA3",
+      "season_label": "Spring 2020"
+    },
+    {
+      "competition_code": "WA",
+      "season_id": "WA5",
+      "season_label": "Spring 2021"
+    },
+    {
+      "competition_code": "WA",
+      "season_id": "WA7",
+      "season_label": "Spring 2022"
+    },
+    {
+      "competition_code": "WA",
+      "season_id": "WA9",
+      "season_label": "Spring 2023"
+    },
+    {
+      "competition_code": "WA",
+      "season_id": "WA11",
+      "season_label": "Spring 2024"
+    },
+    {
+      "competition_code": "WA",
+      "season_id": "WA13",
       "season_label": "Spring 2025"
     }
   ],
@@ -70823,6 +70893,3826 @@
       "source": "TROLS Past Results and Past Ladders",
       "draw_source": "TROLS Fixtures",
       "validation_warnings": []
+    },
+    {
+      "asset_id": "WA2-WA004",
+      "competition_code": "WA",
+      "competition_label": "Wednesday AM - Autumn 2020",
+      "season_id": "WA2",
+      "season_label": "Autumn 2020",
+      "source_section_code": "WA004",
+      "section_label": "Wednesday Section 1",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Elwood",
+          "wins": 6,
+          "points": 46,
+          "percentage": 181.21,
+          "marker": ""
+        },
+        {
+          "position": 2,
+          "team": "Black Rock",
+          "wins": 4,
+          "points": 35,
+          "percentage": 143.75,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "Parkdale",
+          "wins": 4,
+          "points": 35,
+          "percentage": 139.05,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Stella Maris",
+          "wins": 1,
+          "points": 13,
+          "percentage": 86.11,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Langwarrin",
+          "wins": 2,
+          "points": 13,
+          "percentage": 67.53,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "St Pats Mentone",
+          "wins": 0,
+          "points": 2,
+          "percentage": 45.76,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 4,
+        "doublesBestOf": 3,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "WA2-WA004",
+      "fixtures": 18,
+      "completed_fixtures": 18,
+      "draw_fixtures": 45,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 72,
+      "latest_round": 6,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": []
+    },
+    {
+      "asset_id": "WA2-WA005",
+      "competition_code": "WA",
+      "competition_label": "Wednesday AM - Autumn 2020",
+      "season_id": "WA2",
+      "season_label": "Autumn 2020",
+      "source_section_code": "WA005",
+      "section_label": "Wednesday Section 2",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Coatesville",
+          "wins": 6,
+          "points": 41,
+          "percentage": 138.64,
+          "marker": ""
+        },
+        {
+          "position": 2,
+          "team": "Elwood",
+          "wins": 4,
+          "points": 33,
+          "percentage": 135.71,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "Stella Maris",
+          "wins": 4,
+          "points": 33,
+          "percentage": 112.83,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Basterfield Park",
+          "wins": 4,
+          "points": 32,
+          "percentage": 122.77,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Aspendale",
+          "wins": 0,
+          "points": 17,
+          "percentage": 75.0,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Black Rock",
+          "wins": 1,
+          "points": 16,
+          "percentage": 102.27,
+          "marker": ""
+        },
+        {
+          "position": 7,
+          "team": "Dingley",
+          "wins": 2,
+          "points": 14,
+          "percentage": 67.97,
+          "marker": ""
+        },
+        {
+          "position": 8,
+          "team": "Beaumaris CC",
+          "wins": 0,
+          "points": 6,
+          "percentage": 38.94,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 4,
+        "doublesBestOf": 3,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "WA2-WA005",
+      "fixtures": 24,
+      "completed_fixtures": 21,
+      "draw_fixtures": 0,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 84,
+      "latest_round": 6,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": []
+    },
+    {
+      "asset_id": "WA2-WA006",
+      "competition_code": "WA",
+      "competition_label": "Wednesday AM - Autumn 2020",
+      "season_id": "WA2",
+      "season_label": "Autumn 2020",
+      "source_section_code": "WA006",
+      "section_label": "Wednesday Section 3",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Black Rock",
+          "wins": 5,
+          "points": 39,
+          "percentage": 352.17,
+          "marker": ""
+        },
+        {
+          "position": 2,
+          "team": "St Pats Mentone 1",
+          "wins": 4,
+          "points": 30,
+          "percentage": 156.16,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "Kings Park 2",
+          "wins": 1,
+          "points": 13.5,
+          "percentage": 73.5,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Kings Park 1",
+          "wins": 1,
+          "points": 11.5,
+          "percentage": 67.46,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "St Pats Mentone 2",
+          "wins": 0,
+          "points": 2,
+          "percentage": 39.09,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 4,
+        "doublesBestOf": 3,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "WA2-WA006",
+      "fixtures": 18,
+      "completed_fixtures": 12,
+      "draw_fixtures": 0,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 48,
+      "latest_round": 6,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": []
+    },
+    {
+      "asset_id": "WA4-WA004",
+      "competition_code": "WA",
+      "competition_label": "Wednesday AM - Autumn 2021",
+      "season_id": "WA4",
+      "season_label": "Autumn 2021",
+      "source_section_code": "WA004",
+      "section_label": "W Section 1",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Elwood",
+          "wins": 12,
+          "points": 100,
+          "percentage": 166.13,
+          "marker": "P"
+        },
+        {
+          "position": 2,
+          "team": "Black Rock",
+          "wins": 8,
+          "points": 85,
+          "percentage": 158.55,
+          "marker": "R"
+        },
+        {
+          "position": 3,
+          "team": "Parkdale",
+          "wins": 8,
+          "points": 73,
+          "percentage": 120.0,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Stella Maris",
+          "wins": 3,
+          "points": 39,
+          "percentage": 81.73,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Langwarrin",
+          "wins": 3,
+          "points": 39,
+          "percentage": 72.7,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "St Pats Mentone",
+          "wins": 2,
+          "points": 24,
+          "percentage": 52.46,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 4,
+        "doublesBestOf": 3,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "WA4-WA004",
+      "fixtures": 46,
+      "completed_fixtures": 39,
+      "draw_fixtures": 46,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 154,
+      "latest_round": 16,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": [
+        "Incomplete TROLS score for WA004071 doubles No. 2: '1-0'. Missing score not inferred; excluded from ratings and game totals."
+      ]
+    },
+    {
+      "asset_id": "WA4-WA005",
+      "competition_code": "WA",
+      "competition_label": "Wednesday AM - Autumn 2021",
+      "season_id": "WA4",
+      "season_label": "Autumn 2021",
+      "source_section_code": "WA005",
+      "section_label": "W Section 2",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Elwood",
+          "wins": 10,
+          "points": 85,
+          "percentage": 144.03,
+          "marker": "R"
+        },
+        {
+          "position": 2,
+          "team": "Coatesville",
+          "wins": 11,
+          "points": 85,
+          "percentage": 139.09,
+          "marker": "P"
+        },
+        {
+          "position": 3,
+          "team": "Basterfield Park",
+          "wins": 8,
+          "points": 66,
+          "percentage": 115.34,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Black Rock",
+          "wins": 7,
+          "points": 65,
+          "percentage": 127.5,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Stella Maris",
+          "wins": 7,
+          "points": 63,
+          "percentage": 108.05,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Aspendale",
+          "wins": 3,
+          "points": 46,
+          "percentage": 85.75,
+          "marker": ""
+        },
+        {
+          "position": 7,
+          "team": "Dingley",
+          "wins": 3,
+          "points": 28,
+          "percentage": 65.66,
+          "marker": ""
+        },
+        {
+          "position": 8,
+          "team": "Beaumaris CC",
+          "wins": 0,
+          "points": 10,
+          "percentage": 34.68,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 4,
+        "doublesBestOf": 3,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "WA4-WA005",
+      "fixtures": 59,
+      "completed_fixtures": 50,
+      "draw_fixtures": 3,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 200,
+      "latest_round": 17,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": []
+    },
+    {
+      "asset_id": "WA4-WA006",
+      "competition_code": "WA",
+      "competition_label": "Wednesday AM - Autumn 2021",
+      "season_id": "WA4",
+      "season_label": "Autumn 2021",
+      "source_section_code": "WA006",
+      "section_label": "W Section 3",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Black Rock",
+          "wins": 11,
+          "points": 91,
+          "percentage": 344.3,
+          "marker": "P"
+        },
+        {
+          "position": 2,
+          "team": "St Pats Mentone 1",
+          "wins": 8,
+          "points": 67,
+          "percentage": 148.78,
+          "marker": "R"
+        },
+        {
+          "position": 3,
+          "team": "Kings Park 2",
+          "wins": 3,
+          "points": 40.5,
+          "percentage": 93.05,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Kings Park 1",
+          "wins": 2,
+          "points": 34.5,
+          "percentage": 74.6,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "St Pats Mentone 2",
+          "wins": 0,
+          "points": 7,
+          "percentage": 27.34,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 4,
+        "doublesBestOf": 3,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "WA4-WA006",
+      "fixtures": 46,
+      "completed_fixtures": 26,
+      "draw_fixtures": 1,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 104,
+      "latest_round": 16,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": []
+    },
+    {
+      "asset_id": "WA6-WA002",
+      "competition_code": "WA",
+      "competition_label": "Wednesday AM - Autumn 2022",
+      "season_id": "WA6",
+      "season_label": "Autumn 2022",
+      "source_section_code": "WA002",
+      "section_label": "W Section 1",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Elwood Blue",
+          "wins": 11,
+          "points": 86,
+          "percentage": 189.74,
+          "marker": "P"
+        },
+        {
+          "position": 2,
+          "team": "Parkdale",
+          "wins": 9,
+          "points": 74,
+          "percentage": 130.79,
+          "marker": "R"
+        },
+        {
+          "position": 3,
+          "team": "Black Rock",
+          "wins": 7,
+          "points": 62,
+          "percentage": 140.75,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Stella Maris",
+          "wins": 6,
+          "points": 47.5,
+          "percentage": 108.67,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "St Pats Mentone",
+          "wins": 4,
+          "points": 30,
+          "percentage": 65.41,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Langwarrin",
+          "wins": 1,
+          "points": 20.5,
+          "percentage": 68.13,
+          "marker": ""
+        },
+        {
+          "position": 7,
+          "team": "Coatesville",
+          "wins": 0,
+          "points": 16,
+          "percentage": 51.31,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 4,
+        "doublesBestOf": 3,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "WA6-WA002",
+      "fixtures": 59,
+      "completed_fixtures": 41,
+      "draw_fixtures": 48,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 164,
+      "latest_round": 17,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": [
+        "Incomplete TROLS score for WA002093 doubles No. 3: '7-6 1-6'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for WA002301 doubles No. 3: '3-3'. Missing score not inferred; excluded from ratings and game totals."
+      ]
+    },
+    {
+      "asset_id": "WA6-WA003",
+      "competition_code": "WA",
+      "competition_label": "Wednesday AM - Autumn 2022",
+      "season_id": "WA6",
+      "season_label": "Autumn 2022",
+      "source_section_code": "WA003",
+      "section_label": "W Section 2",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Elwood Yellow",
+          "wins": 12,
+          "points": 89,
+          "percentage": 218.85,
+          "marker": "R"
+        },
+        {
+          "position": 2,
+          "team": "Basterfield Park",
+          "wins": 9,
+          "points": 67,
+          "percentage": 120.67,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "Black Rock 1",
+          "wins": 7,
+          "points": 61,
+          "percentage": 132.5,
+          "marker": "P"
+        },
+        {
+          "position": 4,
+          "team": "Stella Maris",
+          "wins": 7,
+          "points": 61,
+          "percentage": 119.95,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Aspendale",
+          "wins": 3,
+          "points": 31,
+          "percentage": 79.72,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Black Rock 2",
+          "wins": 3,
+          "points": 23,
+          "percentage": 63.93,
+          "marker": ""
+        },
+        {
+          "position": 7,
+          "team": "Beaumaris CC",
+          "wins": 0,
+          "points": 4,
+          "percentage": 44.25,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 4,
+        "doublesBestOf": 3,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "WA6-WA003",
+      "fixtures": 59,
+      "completed_fixtures": 44,
+      "draw_fixtures": 48,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 176,
+      "latest_round": 17,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": [
+        "Incomplete TROLS score for WA003321 doubles No. 4: '7-6 4-0'. Missing score not inferred; excluded from ratings and game totals."
+      ]
+    },
+    {
+      "asset_id": "WA6-WA004",
+      "competition_code": "WA",
+      "competition_label": "Wednesday AM - Autumn 2022",
+      "season_id": "WA6",
+      "season_label": "Autumn 2022",
+      "source_section_code": "WA004",
+      "section_label": "W Section 3",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Dingley",
+          "wins": 11,
+          "points": 95,
+          "percentage": 419.15,
+          "marker": "P"
+        },
+        {
+          "position": 2,
+          "team": "St Pats Mentone Gold",
+          "wins": 10,
+          "points": 72,
+          "percentage": 135.34,
+          "marker": "R"
+        },
+        {
+          "position": 3,
+          "team": "St Leonard's",
+          "wins": 7,
+          "points": 53,
+          "percentage": 101.81,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Kings Park White",
+          "wins": 4,
+          "points": 40,
+          "percentage": 90.16,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Kings Park Red",
+          "wins": 3,
+          "points": 30,
+          "percentage": 72.67,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Kings Park Blue",
+          "wins": 3,
+          "points": 27,
+          "percentage": 65.44,
+          "marker": ""
+        },
+        {
+          "position": 7,
+          "team": "St Pats Mentone Silver",
+          "wins": 1,
+          "points": 19,
+          "percentage": 54.34,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 4,
+        "doublesBestOf": 3,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "WA6-WA004",
+      "fixtures": 59,
+      "completed_fixtures": 43,
+      "draw_fixtures": 48,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 172,
+      "latest_round": 17,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": []
+    },
+    {
+      "asset_id": "WA8-WA002",
+      "competition_code": "WA",
+      "competition_label": "Wednesday AM - Autumn 2023",
+      "season_id": "WA8",
+      "season_label": "Autumn 2023",
+      "source_section_code": "WA002",
+      "section_label": "W Section 1",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Black Rock",
+          "wins": 8,
+          "points": 73,
+          "percentage": 153.72,
+          "marker": "R"
+        },
+        {
+          "position": 2,
+          "team": "Elwood Blue",
+          "wins": 8,
+          "points": 71,
+          "percentage": 147.92,
+          "marker": "P"
+        },
+        {
+          "position": 3,
+          "team": "Parkdale",
+          "wins": 7,
+          "points": 60.5,
+          "percentage": 124.59,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Stella Maris",
+          "wins": 5,
+          "points": 49,
+          "percentage": 101.07,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Elwood Yellow",
+          "wins": 3,
+          "points": 36,
+          "percentage": 85.35,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Langwarrin",
+          "wins": 2,
+          "points": 26,
+          "percentage": 70.58,
+          "marker": ""
+        },
+        {
+          "position": 7,
+          "team": "St Pats Mentone",
+          "wins": 1,
+          "points": 20.5,
+          "percentage": 57.74,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 4,
+        "doublesBestOf": 3,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "WA8-WA002",
+      "fixtures": 59,
+      "completed_fixtures": 36,
+      "draw_fixtures": 48,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 144,
+      "latest_round": 17,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": [
+        "Incomplete TROLS score for WA002074 doubles No. 3: '4-6 6-3 6-6'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for WA002321 doubles No. 3: '3-4'. Missing score not inferred; excluded from ratings and game totals."
+      ]
+    },
+    {
+      "asset_id": "WA8-WA003",
+      "competition_code": "WA",
+      "competition_label": "Wednesday AM - Autumn 2023",
+      "season_id": "WA8",
+      "season_label": "Autumn 2023",
+      "source_section_code": "WA003",
+      "section_label": "W Section 2",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Coatesville",
+          "wins": 9,
+          "points": 76,
+          "percentage": 152.79,
+          "marker": "P"
+        },
+        {
+          "position": 2,
+          "team": "Black Rock",
+          "wins": 7,
+          "points": 65,
+          "percentage": 134.16,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "Basterfield Park",
+          "wins": 6,
+          "points": 58,
+          "percentage": 128.81,
+          "marker": "R"
+        },
+        {
+          "position": 4,
+          "team": "Aspendale Gold",
+          "wins": 5,
+          "points": 49,
+          "percentage": 94.96,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Kooyong",
+          "wins": 5,
+          "points": 46,
+          "percentage": 103.37,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Dingley",
+          "wins": 3,
+          "points": 32,
+          "percentage": 81.62,
+          "marker": ""
+        },
+        {
+          "position": 7,
+          "team": "Aspendale Green",
+          "wins": 0,
+          "points": 10,
+          "percentage": 40.0,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 4,
+        "doublesBestOf": 3,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "WA8-WA003",
+      "fixtures": 59,
+      "completed_fixtures": 39,
+      "draw_fixtures": 48,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 156,
+      "latest_round": 17,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": []
+    },
+    {
+      "asset_id": "WA8-WA004",
+      "competition_code": "WA",
+      "competition_label": "Wednesday AM - Autumn 2023",
+      "season_id": "WA8",
+      "season_label": "Autumn 2023",
+      "source_section_code": "WA004",
+      "section_label": "W Section 3",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Black Rock",
+          "wins": 8,
+          "points": 70,
+          "percentage": 152.52,
+          "marker": "P"
+        },
+        {
+          "position": 2,
+          "team": "Beaumaris CC",
+          "wins": 9,
+          "points": 69,
+          "percentage": 133.07,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "St Pats Mentone",
+          "wins": 6,
+          "points": 57,
+          "percentage": 111.52,
+          "marker": "R"
+        },
+        {
+          "position": 4,
+          "team": "St Leonard's",
+          "wins": 4,
+          "points": 46,
+          "percentage": 102.51,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Kings Park Red",
+          "wins": 3,
+          "points": 34,
+          "percentage": 86.09,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Kings Park Blue",
+          "wins": 2,
+          "points": 31,
+          "percentage": 74.03,
+          "marker": ""
+        },
+        {
+          "position": 7,
+          "team": "Kings Park White",
+          "wins": 2,
+          "points": 29,
+          "percentage": 65.6,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 4,
+        "doublesBestOf": 3,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "WA8-WA004",
+      "fixtures": 59,
+      "completed_fixtures": 36,
+      "draw_fixtures": 48,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 142,
+      "latest_round": 17,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": [
+        "Incomplete TROLS score for WA004321 doubles No. 4: '2-4'. Missing score not inferred; excluded from ratings and game totals."
+      ]
+    },
+    {
+      "asset_id": "WA10-WA002",
+      "competition_code": "WA",
+      "competition_label": "Wednesday AM - Autumn 2024",
+      "season_id": "WA10",
+      "season_label": "Autumn 2024",
+      "source_section_code": "WA002",
+      "section_label": "W Section 1",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Mentone",
+          "wins": 10,
+          "points": 76.5,
+          "percentage": 139.17,
+          "marker": "P"
+        },
+        {
+          "position": 2,
+          "team": "Black Rock",
+          "wins": 9,
+          "points": 74,
+          "percentage": 159.11,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "Elwood Blue",
+          "wins": 8,
+          "points": 69.5,
+          "percentage": 159.67,
+          "marker": "R"
+        },
+        {
+          "position": 4,
+          "team": "Stella Maris",
+          "wins": 7,
+          "points": 57,
+          "percentage": 114.2,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Langwarrin",
+          "wins": 3,
+          "points": 32,
+          "percentage": 80.32,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Elwood Yellow",
+          "wins": 2,
+          "points": 16,
+          "percentage": 44.1,
+          "marker": ""
+        },
+        {
+          "position": 7,
+          "team": "St Pats Mentone",
+          "wins": 0,
+          "points": 11,
+          "percentage": 67.63,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 4,
+        "doublesBestOf": 3,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "WA10-WA002",
+      "fixtures": 59,
+      "completed_fixtures": 42,
+      "draw_fixtures": 48,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 168,
+      "latest_round": 17,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": [
+        "Incomplete TROLS score for WA002033 doubles No. 3: '6-2 6-6'. Missing score not inferred; excluded from ratings and game totals."
+      ]
+    },
+    {
+      "asset_id": "WA10-WA003",
+      "competition_code": "WA",
+      "competition_label": "Wednesday AM - Autumn 2024",
+      "season_id": "WA10",
+      "season_label": "Autumn 2024",
+      "source_section_code": "WA003",
+      "section_label": "W Section 2",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Basterfield Park",
+          "wins": 12,
+          "points": 102.5,
+          "percentage": 192.46,
+          "marker": "P"
+        },
+        {
+          "position": 2,
+          "team": "Black Rock Maroon",
+          "wins": 10,
+          "points": 91.5,
+          "percentage": 176.88,
+          "marker": "R"
+        },
+        {
+          "position": 3,
+          "team": "Aspendale Gold",
+          "wins": 8,
+          "points": 73,
+          "percentage": 129.43,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Aspendale Green",
+          "wins": 5,
+          "points": 40,
+          "percentage": 70.44,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "St Pats Mentone",
+          "wins": 4,
+          "points": 39,
+          "percentage": 71.7,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Black Rock Navy",
+          "wins": 0,
+          "points": 14,
+          "percentage": 41.85,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 4,
+        "doublesBestOf": 3,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "WA10-WA003",
+      "fixtures": 46,
+      "completed_fixtures": 40,
+      "draw_fixtures": 46,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 160,
+      "latest_round": 16,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": [
+        "Incomplete TROLS score for WA003031 doubles No. 3: '6-7 5-5'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for WA003321 doubles No. 4: '6-4 1-1'. Missing score not inferred; excluded from ratings and game totals."
+      ]
+    },
+    {
+      "asset_id": "WA10-WA004",
+      "competition_code": "WA",
+      "competition_label": "Wednesday AM - Autumn 2024",
+      "season_id": "WA10",
+      "season_label": "Autumn 2024",
+      "source_section_code": "WA004",
+      "section_label": "W Section 3",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Beaumaris CC",
+          "wins": 9,
+          "points": 73,
+          "percentage": 164.17,
+          "marker": "P"
+        },
+        {
+          "position": 2,
+          "team": "Kings Park Blue",
+          "wins": 8,
+          "points": 66,
+          "percentage": 136.57,
+          "marker": "R"
+        },
+        {
+          "position": 3,
+          "team": "St Leonard's",
+          "wins": 6,
+          "points": 50,
+          "percentage": 101.85,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Burden Park",
+          "wins": 3,
+          "points": 32,
+          "percentage": 78.92,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Kings Park White",
+          "wins": 1,
+          "points": 19,
+          "percentage": 46.41,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 4,
+        "doublesBestOf": 3,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "WA10-WA004",
+      "fixtures": 46,
+      "completed_fixtures": 25,
+      "draw_fixtures": 46,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 100,
+      "latest_round": 16,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": [
+        "Incomplete TROLS score for WA004101 doubles No. 3: '2-4'. Missing score not inferred; excluded from ratings and game totals."
+      ]
+    },
+    {
+      "asset_id": "WA12-WA002",
+      "competition_code": "WA",
+      "competition_label": "Wednesday AM - Autumn 2025",
+      "season_id": "WA12",
+      "season_label": "Autumn 2025",
+      "source_section_code": "WA002",
+      "section_label": "W Section 1",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Elwood Blue",
+          "wins": 10,
+          "points": 75,
+          "percentage": 149.45,
+          "marker": "P"
+        },
+        {
+          "position": 2,
+          "team": "Black Rock Navy",
+          "wins": 9,
+          "points": 71.5,
+          "percentage": 139.18,
+          "marker": "R"
+        },
+        {
+          "position": 3,
+          "team": "Stella Maris",
+          "wins": 7,
+          "points": 59.5,
+          "percentage": 115.63,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "St Pats Mentone",
+          "wins": 2,
+          "points": 26,
+          "percentage": 81.25,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Elwood Red",
+          "wins": 0,
+          "points": 8,
+          "percentage": 47.04,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 4,
+        "doublesBestOf": 3,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "WA12-WA002",
+      "fixtures": 46,
+      "completed_fixtures": 31,
+      "draw_fixtures": 46,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 124,
+      "latest_round": 16,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": [
+        "Incomplete TROLS score for WA002051 doubles No. 3: '7-6 4-4'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for WA002321 doubles No. 4: '6-4 3-5'. Missing score not inferred; excluded from ratings and game totals."
+      ]
+    },
+    {
+      "asset_id": "WA12-WA003",
+      "competition_code": "WA",
+      "competition_label": "Wednesday AM - Autumn 2025",
+      "season_id": "WA12",
+      "season_label": "Autumn 2025",
+      "source_section_code": "WA003",
+      "section_label": "W Section 2",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Langwarrin",
+          "wins": 12,
+          "points": 93,
+          "percentage": 229.91,
+          "marker": "P"
+        },
+        {
+          "position": 2,
+          "team": "Black Rock Maroon",
+          "wins": 8,
+          "points": 66,
+          "percentage": 115.61,
+          "marker": "R"
+        },
+        {
+          "position": 3,
+          "team": "Basterfield Park",
+          "wins": 6,
+          "points": 43.5,
+          "percentage": 99.09,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Aspendale",
+          "wins": 2,
+          "points": 24.5,
+          "percentage": 76.34,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Dingley",
+          "wins": 1,
+          "points": 13,
+          "percentage": 57.44,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 4,
+        "doublesBestOf": 3,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "WA12-WA003",
+      "fixtures": 46,
+      "completed_fixtures": 30,
+      "draw_fixtures": 46,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 120,
+      "latest_round": 16,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": [
+        "Incomplete TROLS score for WA003033 doubles No. 3: '6-3 3-5'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for WA003042 doubles No. 4: '7-6 2-6'. Missing score not inferred; excluded from ratings and game totals."
+      ]
+    },
+    {
+      "asset_id": "WA12-WA004",
+      "competition_code": "WA",
+      "competition_label": "Wednesday AM - Autumn 2025",
+      "season_id": "WA12",
+      "season_label": "Autumn 2025",
+      "source_section_code": "WA004",
+      "section_label": "W Section 3",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Kings Park Blue",
+          "wins": 15,
+          "points": 114,
+          "percentage": 228.87,
+          "marker": "P"
+        },
+        {
+          "position": 2,
+          "team": "St Pats Mentone",
+          "wins": 9,
+          "points": 76,
+          "percentage": 126.97,
+          "marker": "R"
+        },
+        {
+          "position": 3,
+          "team": "Black Rock",
+          "wins": 8,
+          "points": 69,
+          "percentage": 115.96,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Beaumaris CC",
+          "wins": 5,
+          "points": 46,
+          "percentage": 77.4,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "St Leonard's",
+          "wins": 2,
+          "points": 34.5,
+          "percentage": 77.45,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Kings Park Red",
+          "wins": 1,
+          "points": 20.5,
+          "percentage": 54.64,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 4,
+        "doublesBestOf": 3,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "WA12-WA004",
+      "fixtures": 46,
+      "completed_fixtures": 43,
+      "draw_fixtures": 46,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 164,
+      "latest_round": 16,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": [
+        "Incomplete TROLS score for WA004142 doubles No. 2: '5-7 6-5'. Missing score not inferred; excluded from ratings and game totals."
+      ]
+    },
+    {
+      "asset_id": "WA14-WA002",
+      "competition_code": "WA",
+      "competition_label": "Wednesday AM - Autumn 2026",
+      "season_id": "WA14",
+      "season_label": "Autumn 2026",
+      "source_section_code": "WA002",
+      "section_label": "W Section 1",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Elwood Blue",
+          "wins": 12,
+          "points": 100,
+          "percentage": 182.19,
+          "marker": "P"
+        },
+        {
+          "position": 2,
+          "team": "Black Rock",
+          "wins": 9,
+          "points": 82,
+          "percentage": 135.34,
+          "marker": "R"
+        },
+        {
+          "position": 3,
+          "team": "Stella Maris",
+          "wins": 6,
+          "points": 62,
+          "percentage": 111.89,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Langwarrin",
+          "wins": 7,
+          "points": 57,
+          "percentage": 90.98,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "St Pats Mentone",
+          "wins": 6,
+          "points": 51,
+          "percentage": 89.17,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Elwood Red",
+          "wins": 0,
+          "points": 8,
+          "percentage": 44.33,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 4,
+        "doublesBestOf": 3,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "WA14-WA002",
+      "fixtures": 46,
+      "completed_fixtures": 42,
+      "draw_fixtures": 46,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 164,
+      "latest_round": 16,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": [
+        "Incomplete TROLS score for WA002131 doubles No. 4: '4-4'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for WA002321 doubles No. 3: '6-2 4-3'. Missing score not inferred; excluded from ratings and game totals."
+      ]
+    },
+    {
+      "asset_id": "WA14-WA003",
+      "competition_code": "WA",
+      "competition_label": "Wednesday AM - Autumn 2026",
+      "season_id": "WA14",
+      "season_label": "Autumn 2026",
+      "source_section_code": "WA003",
+      "section_label": "W Section 2",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Basterfield Park",
+          "wins": 9,
+          "points": 73,
+          "percentage": 150.68,
+          "marker": "R"
+        },
+        {
+          "position": 2,
+          "team": "Black Rock",
+          "wins": 8,
+          "points": 67,
+          "percentage": 122.05,
+          "marker": "P"
+        },
+        {
+          "position": 3,
+          "team": "Kings Park",
+          "wins": 5,
+          "points": 50,
+          "percentage": 109.87,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "BLTC",
+          "wins": 4,
+          "points": 38,
+          "percentage": 91.31,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Aspendale",
+          "wins": 1,
+          "points": 12,
+          "percentage": 51.82,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 4,
+        "doublesBestOf": 3,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "WA14-WA003",
+      "fixtures": 46,
+      "completed_fixtures": 28,
+      "draw_fixtures": 46,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 112,
+      "latest_round": 16,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": []
+    },
+    {
+      "asset_id": "WA14-WA004",
+      "competition_code": "WA",
+      "competition_label": "Wednesday AM - Autumn 2026",
+      "season_id": "WA14",
+      "season_label": "Autumn 2026",
+      "source_section_code": "WA004",
+      "section_label": "W Section 3",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Black Rock",
+          "wins": 9,
+          "points": 75,
+          "percentage": 178.95,
+          "marker": "R"
+        },
+        {
+          "position": 2,
+          "team": "St Pats Mentone",
+          "wins": 8,
+          "points": 68,
+          "percentage": 133.24,
+          "marker": "P"
+        },
+        {
+          "position": 3,
+          "team": "Beaumaris CC",
+          "wins": 6,
+          "points": 54,
+          "percentage": 111.11,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Kings Park Blue",
+          "wins": 3,
+          "points": 28,
+          "percentage": 73.13,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Kings Park Red",
+          "wins": 0,
+          "points": 15,
+          "percentage": 54.94,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 4,
+        "doublesBestOf": 3,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "WA14-WA004",
+      "fixtures": 46,
+      "completed_fixtures": 28,
+      "draw_fixtures": 46,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 110,
+      "latest_round": 16,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": [
+        "Incomplete TROLS score for WA004131 doubles No. 3: '3-6 1-0'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for WA004321 doubles No. 3: '1-6 5-4'. Missing score not inferred; excluded from ratings and game totals."
+      ]
+    },
+    {
+      "asset_id": "WA1-WA003",
+      "competition_code": "WA",
+      "competition_label": "Wednesday AM - Spring 2019",
+      "season_id": "WA1",
+      "season_label": "Spring 2019",
+      "source_section_code": "WA003",
+      "section_label": "Section 1",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Elwood",
+          "wins": 11,
+          "points": 91.5,
+          "percentage": 150.44,
+          "marker": "P"
+        },
+        {
+          "position": 2,
+          "team": "Black Rock",
+          "wins": 11,
+          "points": 88.5,
+          "percentage": 143.27,
+          "marker": "R"
+        },
+        {
+          "position": 3,
+          "team": "Parkdale",
+          "wins": 11,
+          "points": 87,
+          "percentage": 140.21,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Stella Maris",
+          "wins": 5,
+          "points": 41.5,
+          "percentage": 75.42,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Langwarrin",
+          "wins": 4,
+          "points": 33.5,
+          "percentage": 66.02,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Beaumaris CC",
+          "wins": 1,
+          "points": 18,
+          "percentage": 65.72,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 4,
+        "doublesBestOf": 3,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "WA1-WA003",
+      "fixtures": 46,
+      "completed_fixtures": 45,
+      "draw_fixtures": 46,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 180,
+      "latest_round": 16,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": [
+        "Incomplete TROLS score for WA003052 doubles No. 3: '3-3'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for WA003071 doubles No. 3: '0-6 5-4'. Missing score not inferred; excluded from ratings and game totals."
+      ]
+    },
+    {
+      "asset_id": "WA1-WA004",
+      "competition_code": "WA",
+      "competition_label": "Wednesday AM - Spring 2019",
+      "season_id": "WA1",
+      "season_label": "Spring 2019",
+      "source_section_code": "WA004",
+      "section_label": "Section 2",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "St Pats Mentone",
+          "wins": 10,
+          "points": 82.5,
+          "percentage": 122.3,
+          "marker": "R"
+        },
+        {
+          "position": 2,
+          "team": "Black Rock",
+          "wins": 11,
+          "points": 81,
+          "percentage": 136.62,
+          "marker": "P"
+        },
+        {
+          "position": 3,
+          "team": "Elwood",
+          "wins": 10,
+          "points": 79.5,
+          "percentage": 134.76,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Basterfield Park",
+          "wins": 11,
+          "points": 79,
+          "percentage": 111.07,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Stella Maris",
+          "wins": 5,
+          "points": 44,
+          "percentage": 89.1,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Kings Park",
+          "wins": 5,
+          "points": 39,
+          "percentage": 88.89,
+          "marker": ""
+        },
+        {
+          "position": 7,
+          "team": "Dingley",
+          "wins": 2,
+          "points": 35,
+          "percentage": 86.25,
+          "marker": ""
+        },
+        {
+          "position": 8,
+          "team": "Aspendale",
+          "wins": 0,
+          "points": 8,
+          "percentage": 52.08,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 4,
+        "doublesBestOf": 3,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "WA1-WA004",
+      "fixtures": 59,
+      "completed_fixtures": 59,
+      "draw_fixtures": 48,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 236,
+      "latest_round": 17,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": [
+        "Incomplete TROLS score for WA004071 doubles No. 3: '7-5 3-4'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for WA004073 doubles No. 3: '6-3 2-0'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for WA004073 doubles No. 4: '4-6 0-1'. Missing score not inferred; excluded from ratings and game totals."
+      ]
+    },
+    {
+      "asset_id": "WA1-WA005",
+      "competition_code": "WA",
+      "competition_label": "Wednesday AM - Spring 2019",
+      "season_id": "WA1",
+      "season_label": "Spring 2019",
+      "source_section_code": "WA005",
+      "section_label": "Section 3",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Beaumaris CC",
+          "wins": 11,
+          "points": 83,
+          "percentage": 198.18,
+          "marker": "P"
+        },
+        {
+          "position": 2,
+          "team": "Black Rock",
+          "wins": 10,
+          "points": 77,
+          "percentage": 197.87,
+          "marker": "R"
+        },
+        {
+          "position": 3,
+          "team": "St Leonard's",
+          "wins": 8,
+          "points": 64,
+          "percentage": 135.68,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Kings Park 2",
+          "wins": 5,
+          "points": 38,
+          "percentage": 81.53,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Kings Park 1",
+          "wins": 4,
+          "points": 36,
+          "percentage": 76.4,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "St Pats Mentone 1",
+          "wins": 3,
+          "points": 32,
+          "percentage": 80.41,
+          "marker": ""
+        },
+        {
+          "position": 7,
+          "team": "St Pats Mentone 2",
+          "wins": 0,
+          "points": 6,
+          "percentage": 38.53,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 4,
+        "doublesBestOf": 3,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "WA1-WA005",
+      "fixtures": 59,
+      "completed_fixtures": 45,
+      "draw_fixtures": 3,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 180,
+      "latest_round": 17,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": [
+        "Incomplete TROLS score for WA005072 doubles No. 3: '1-1'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for WA005072 doubles No. 4: '0-2'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for WA005321 doubles No. 3: '7-6 4-2'. Missing score not inferred; excluded from ratings and game totals."
+      ]
+    },
+    {
+      "asset_id": "WA3-WA003",
+      "competition_code": "WA",
+      "competition_label": "Wednesday AM - Spring 2020",
+      "season_id": "WA3",
+      "season_label": "Spring 2020",
+      "source_section_code": "WA003",
+      "section_label": "Section 1",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Elwood",
+          "wins": 3,
+          "points": 25,
+          "percentage": 192.86,
+          "marker": ""
+        },
+        {
+          "position": 2,
+          "team": "Black Rock",
+          "wins": 3,
+          "points": 24,
+          "percentage": 134.48,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "Stella Maris",
+          "wins": 3,
+          "points": 20,
+          "percentage": 89.84,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Parkdale",
+          "wins": 1,
+          "points": 10,
+          "percentage": 84.13,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Beaumaris CC",
+          "wins": 0,
+          "points": 1,
+          "percentage": 55.94,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 4,
+        "doublesBestOf": 3,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "WA3-WA003",
+      "fixtures": 15,
+      "completed_fixtures": 10,
+      "draw_fixtures": 45,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 40,
+      "latest_round": 5,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": []
+    },
+    {
+      "asset_id": "WA3-WA004",
+      "competition_code": "WA",
+      "competition_label": "Wednesday AM - Spring 2020",
+      "season_id": "WA3",
+      "season_label": "Spring 2020",
+      "source_section_code": "WA004",
+      "section_label": "Section 2",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Coatesville",
+          "wins": 4,
+          "points": 26,
+          "percentage": 121.18,
+          "marker": ""
+        },
+        {
+          "position": 2,
+          "team": "Elwood",
+          "wins": 2,
+          "points": 17,
+          "percentage": 132.35,
+          "marker": "*"
+        },
+        {
+          "position": 3,
+          "team": "Basterfield Park",
+          "wins": 2,
+          "points": 15,
+          "percentage": 92.52,
+          "marker": "*"
+        },
+        {
+          "position": 4,
+          "team": "Black Rock",
+          "wins": 1,
+          "points": 11,
+          "percentage": 85.55,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Stella Maris",
+          "wins": 0,
+          "points": 3,
+          "percentage": 83.33,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 4,
+        "doublesBestOf": 3,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "WA3-WA004",
+      "fixtures": 15,
+      "completed_fixtures": 9,
+      "draw_fixtures": 45,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 36,
+      "latest_round": 5,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": []
+    },
+    {
+      "asset_id": "WA3-WA005",
+      "competition_code": "WA",
+      "competition_label": "Wednesday AM - Spring 2020",
+      "season_id": "WA3",
+      "season_label": "Spring 2020",
+      "source_section_code": "WA005",
+      "section_label": "Section 3",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Aspendale",
+          "wins": 4,
+          "points": 27,
+          "percentage": 150.0,
+          "marker": ""
+        },
+        {
+          "position": 2,
+          "team": "Beaumaris CC",
+          "wins": 3,
+          "points": 21,
+          "percentage": 108.7,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "Dingley",
+          "wins": 2,
+          "points": 19,
+          "percentage": 125.66,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Black Rock",
+          "wins": 1,
+          "points": 12,
+          "percentage": 104.35,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "St Leonard's",
+          "wins": 0,
+          "points": 1,
+          "percentage": 36.13,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 4,
+        "doublesBestOf": 3,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "WA3-WA005",
+      "fixtures": 15,
+      "completed_fixtures": 10,
+      "draw_fixtures": 0,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 40,
+      "latest_round": 5,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": []
+    },
+    {
+      "asset_id": "WA3-WA006",
+      "competition_code": "WA",
+      "competition_label": "Wednesday AM - Spring 2020",
+      "season_id": "WA3",
+      "season_label": "Spring 2020",
+      "source_section_code": "WA006",
+      "section_label": "Section 4",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "St Pats Mentone 1",
+          "wins": 3,
+          "points": 20,
+          "percentage": 160.0,
+          "marker": ""
+        },
+        {
+          "position": 2,
+          "team": "Kings Park 2",
+          "wins": 1,
+          "points": 11,
+          "percentage": 109.43,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "Kings Park 1",
+          "wins": 1,
+          "points": 10,
+          "percentage": 93.69,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "St Pats Mentone 2",
+          "wins": 1,
+          "points": 7,
+          "percentage": 59.84,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 4,
+        "doublesBestOf": 3,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "WA3-WA006",
+      "fixtures": 15,
+      "completed_fixtures": 6,
+      "draw_fixtures": 0,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 24,
+      "latest_round": 5,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": []
+    },
+    {
+      "asset_id": "WA5-WA002",
+      "competition_code": "WA",
+      "competition_label": "Wednesday AM - Spring 2021",
+      "season_id": "WA5",
+      "season_label": "Spring 2021",
+      "source_section_code": "WA002",
+      "section_label": "W Section 1",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Elwood Blue",
+          "wins": 3,
+          "points": 60,
+          "percentage": 418.64,
+          "marker": ""
+        },
+        {
+          "position": 2,
+          "team": "Parkdale",
+          "wins": 3,
+          "points": 51,
+          "percentage": 114.4,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "Coatesville",
+          "wins": 3,
+          "points": 43,
+          "percentage": 107.14,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "St Pats Mentone",
+          "wins": 1,
+          "points": 32,
+          "percentage": 52.8,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Elwood Yellow",
+          "wins": 0,
+          "points": 22,
+          "percentage": 60.08,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 4,
+        "doublesBestOf": 3,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "WA5-WA002",
+      "fixtures": 45,
+      "completed_fixtures": 14,
+      "draw_fixtures": 45,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 40,
+      "latest_round": 15,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": []
+    },
+    {
+      "asset_id": "WA5-WA003",
+      "competition_code": "WA",
+      "competition_label": "Wednesday AM - Spring 2021",
+      "season_id": "WA5",
+      "season_label": "Spring 2021",
+      "source_section_code": "WA003",
+      "section_label": "W Section 2",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Stella Maris",
+          "wins": 3,
+          "points": 66,
+          "percentage": 229.07,
+          "marker": ""
+        },
+        {
+          "position": 2,
+          "team": "Basterfield Park",
+          "wins": 3,
+          "points": 65,
+          "percentage": 199.04,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "Aspendale",
+          "wins": 2,
+          "points": 53.5,
+          "percentage": 114.77,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Black Rock No.1",
+          "wins": 2,
+          "points": 50,
+          "percentage": 104.93,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Dingley",
+          "wins": 1,
+          "points": 43.5,
+          "percentage": 66.22,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Black Rock No.2",
+          "wins": 0,
+          "points": 34,
+          "percentage": 31.91,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 4,
+        "doublesBestOf": 3,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "WA5-WA003",
+      "fixtures": 45,
+      "completed_fixtures": 19,
+      "draw_fixtures": 45,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 50,
+      "latest_round": 15,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": [
+        "Incomplete TROLS score for WA003031 doubles No. 1: '1-0'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for WA003031 doubles No. 2: '2-1'. Missing score not inferred; excluded from ratings and game totals."
+      ]
+    },
+    {
+      "asset_id": "WA5-WA004",
+      "competition_code": "WA",
+      "competition_label": "Wednesday AM - Spring 2021",
+      "season_id": "WA5",
+      "season_label": "Spring 2021",
+      "source_section_code": "WA004",
+      "section_label": "W Section 3",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Beaumaris CC",
+          "wins": 5,
+          "points": 69,
+          "percentage": 200.8,
+          "marker": ""
+        },
+        {
+          "position": 2,
+          "team": "St Leonard's",
+          "wins": 3,
+          "points": 57,
+          "percentage": 128.82,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "St Pats Mentone",
+          "wins": 3,
+          "points": 56,
+          "percentage": 120.59,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Kings Park No.3",
+          "wins": 3,
+          "points": 54,
+          "percentage": 101.48,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Kings Park No.2",
+          "wins": 2,
+          "points": 46,
+          "percentage": 86.78,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Kings Park No.1",
+          "wins": 0,
+          "points": 30,
+          "percentage": 35.36,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 4,
+        "doublesBestOf": 3,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "WA5-WA004",
+      "fixtures": 45,
+      "completed_fixtures": 22,
+      "draw_fixtures": 45,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 64,
+      "latest_round": 15,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": [
+        "Incomplete TROLS score for WA004141 doubles No. 3: '6-2 1-0'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for WA004141 doubles No. 4: '6-1 1-1'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for WA004143 doubles No. 4: '6-4 2-1'. Missing score not inferred; excluded from ratings and game totals."
+      ]
+    },
+    {
+      "asset_id": "WA7-WA002",
+      "competition_code": "WA",
+      "competition_label": "Wednesday AM - Spring 2022",
+      "season_id": "WA7",
+      "season_label": "Spring 2022",
+      "source_section_code": "WA002",
+      "section_label": "W Section 1",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Elwood Blue",
+          "wins": 10,
+          "points": 88,
+          "percentage": 160.75,
+          "marker": "P"
+        },
+        {
+          "position": 2,
+          "team": "Parkdale",
+          "wins": 8,
+          "points": 83,
+          "percentage": 175.43,
+          "marker": "R"
+        },
+        {
+          "position": 3,
+          "team": "Stella Maris",
+          "wins": 7,
+          "points": 73,
+          "percentage": 114.11,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Langwarrin White",
+          "wins": 6,
+          "points": 60,
+          "percentage": 84.29,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "St Pats Mentone",
+          "wins": 2,
+          "points": 29,
+          "percentage": 58.12,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Elwood Yellow",
+          "wins": 0,
+          "points": 27,
+          "percentage": 69.1,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 4,
+        "doublesBestOf": 3,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "WA7-WA002",
+      "fixtures": 46,
+      "completed_fixtures": 34,
+      "draw_fixtures": 46,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 136,
+      "latest_round": 16,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": [
+        "Incomplete TROLS score for WA002073 doubles No. 3: '1-0'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for WA002073 doubles No. 4: '2-2'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for WA002321 doubles No. 3: '6-2 3-3'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for WA002321 doubles No. 4: '0-6 7-5'. Missing score not inferred; excluded from ratings and game totals."
+      ]
+    },
+    {
+      "asset_id": "WA7-WA003",
+      "competition_code": "WA",
+      "competition_label": "Wednesday AM - Spring 2022",
+      "season_id": "WA7",
+      "season_label": "Spring 2022",
+      "source_section_code": "WA003",
+      "section_label": "W Section 2",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Basterfield Park",
+          "wins": 10,
+          "points": 89,
+          "percentage": 161.54,
+          "marker": "R"
+        },
+        {
+          "position": 2,
+          "team": "Coatesville",
+          "wins": 9,
+          "points": 86,
+          "percentage": 174.76,
+          "marker": "P"
+        },
+        {
+          "position": 3,
+          "team": "Black Rock 1",
+          "wins": 6,
+          "points": 65,
+          "percentage": 107.16,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Stella Maris",
+          "wins": 5,
+          "points": 50,
+          "percentage": 82.15,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Aspendale",
+          "wins": 2,
+          "points": 39,
+          "percentage": 70.83,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Black Rock 2",
+          "wins": 2,
+          "points": 31,
+          "percentage": 57.4,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 4,
+        "doublesBestOf": 3,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "WA7-WA003",
+      "fixtures": 46,
+      "completed_fixtures": 36,
+      "draw_fixtures": 46,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 140,
+      "latest_round": 16,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": []
+    },
+    {
+      "asset_id": "WA7-WA004",
+      "competition_code": "WA",
+      "competition_label": "Wednesday AM - Spring 2022",
+      "season_id": "WA7",
+      "season_label": "Spring 2022",
+      "source_section_code": "WA004",
+      "section_label": "W Section 3",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Dingley",
+          "wins": 8,
+          "points": 77,
+          "percentage": 339.32,
+          "marker": "P"
+        },
+        {
+          "position": 2,
+          "team": "Beaumaris CC",
+          "wins": 8,
+          "points": 72,
+          "percentage": 160.47,
+          "marker": "R"
+        },
+        {
+          "position": 3,
+          "team": "St Pats Mentone",
+          "wins": 5,
+          "points": 58,
+          "percentage": 128.72,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Kings Park Red",
+          "wins": 3,
+          "points": 42.5,
+          "percentage": 83.02,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Kings Park Blue",
+          "wins": 2,
+          "points": 31.5,
+          "percentage": 65.71,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "St Leonard's",
+          "wins": 2,
+          "points": 31.5,
+          "percentage": 58.88,
+          "marker": ""
+        },
+        {
+          "position": 7,
+          "team": "Kings Park White",
+          "wins": 0,
+          "points": 23.5,
+          "percentage": 58.33,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 4,
+        "doublesBestOf": 3,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "WA7-WA004",
+      "fixtures": 59,
+      "completed_fixtures": 36,
+      "draw_fixtures": 48,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 131,
+      "latest_round": 17,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": [
+        "Incomplete TROLS score for WA004012 doubles No. 2: '6-4 1-6'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for WA004321 doubles No. 3: '6-0 1-2'. Missing score not inferred; excluded from ratings and game totals."
+      ]
+    },
+    {
+      "asset_id": "WA9-WA002",
+      "competition_code": "WA",
+      "competition_label": "Wednesday AM - Spring 2023",
+      "season_id": "WA9",
+      "season_label": "Spring 2023",
+      "source_section_code": "WA002",
+      "section_label": "W Section 1",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Black Rock",
+          "wins": 10,
+          "points": 83,
+          "percentage": 122.44,
+          "marker": "P"
+        },
+        {
+          "position": 2,
+          "team": "Elwood Blue",
+          "wins": 10,
+          "points": 79,
+          "percentage": 124.0,
+          "marker": "R"
+        },
+        {
+          "position": 3,
+          "team": "Stella Maris",
+          "wins": 6,
+          "points": 66,
+          "percentage": 113.04,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Parkdale",
+          "wins": 7,
+          "points": 65,
+          "percentage": 109.62,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Langwarrin",
+          "wins": 3,
+          "points": 34,
+          "percentage": 73.68,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Elwood Yellow",
+          "wins": 3,
+          "points": 33,
+          "percentage": 70.24,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 4,
+        "doublesBestOf": 3,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "WA9-WA002",
+      "fixtures": 46,
+      "completed_fixtures": 41,
+      "draw_fixtures": 46,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 164,
+      "latest_round": 16,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": [
+        "Incomplete TROLS score for WA002321 doubles No. 4: '7-5 6-7 6-6'. Missing score not inferred; excluded from ratings and game totals."
+      ]
+    },
+    {
+      "asset_id": "WA9-WA003",
+      "competition_code": "WA",
+      "competition_label": "Wednesday AM - Spring 2023",
+      "season_id": "WA9",
+      "season_label": "Spring 2023",
+      "source_section_code": "WA003",
+      "section_label": "W Section 2",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "St Pats Mentone",
+          "wins": 9,
+          "points": 79,
+          "percentage": 128.02,
+          "marker": "P"
+        },
+        {
+          "position": 2,
+          "team": "Black Rock Navy",
+          "wins": 8,
+          "points": 74,
+          "percentage": 120.04,
+          "marker": "R"
+        },
+        {
+          "position": 3,
+          "team": "Coatesville",
+          "wins": 8,
+          "points": 74,
+          "percentage": 116.99,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Basterfield Park",
+          "wins": 7,
+          "points": 69,
+          "percentage": 113.35,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Aspendale Gold",
+          "wins": 4,
+          "points": 44,
+          "percentage": 79.24,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Dingley",
+          "wins": 1,
+          "points": 20,
+          "percentage": 58.54,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 4,
+        "doublesBestOf": 3,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "WA9-WA003",
+      "fixtures": 46,
+      "completed_fixtures": 40,
+      "draw_fixtures": 46,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 160,
+      "latest_round": 16,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": [
+        "Incomplete TROLS score for WA003321 doubles No. 4: '3-6 0-2'. Missing score not inferred; excluded from ratings and game totals.",
+        "Fixture game totals do not match rubbers for WA003321: TROLS team total 35-21; complete-score total 34-21. Both published records retained."
+      ]
+    },
+    {
+      "asset_id": "WA9-WA004",
+      "competition_code": "WA",
+      "competition_label": "Wednesday AM - Spring 2023",
+      "season_id": "WA9",
+      "season_label": "Spring 2023",
+      "source_section_code": "WA004",
+      "section_label": "W Section 3",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Aspendale Green",
+          "wins": 10,
+          "points": 85,
+          "percentage": 145.75,
+          "marker": "P"
+        },
+        {
+          "position": 2,
+          "team": "St Pats Mentone",
+          "wins": 9,
+          "points": 81,
+          "percentage": 123.31,
+          "marker": "R"
+        },
+        {
+          "position": 3,
+          "team": "Beaumaris CC",
+          "wins": 9,
+          "points": 78,
+          "percentage": 122.48,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Kings Park Blue",
+          "wins": 6,
+          "points": 62,
+          "percentage": 105.78,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "St Leonard's",
+          "wins": 3,
+          "points": 38,
+          "percentage": 78.21,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Kings Park White",
+          "wins": 1,
+          "points": 16,
+          "percentage": 51.27,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 4,
+        "doublesBestOf": 3,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "WA9-WA004",
+      "fixtures": 46,
+      "completed_fixtures": 40,
+      "draw_fixtures": 46,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 155,
+      "latest_round": 16,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": [
+        "Incomplete TROLS score for WA004321 doubles No. 3: '0-6 6-6'. Missing score not inferred; excluded from ratings and game totals."
+      ]
+    },
+    {
+      "asset_id": "WA11-WA002",
+      "competition_code": "WA",
+      "competition_label": "Wednesday AM - Spring 2024",
+      "season_id": "WA11",
+      "season_label": "Spring 2024",
+      "source_section_code": "WA002",
+      "section_label": "W Section 1",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Black Rock Navy",
+          "wins": 9,
+          "points": 71,
+          "percentage": 143.72,
+          "marker": "P"
+        },
+        {
+          "position": 2,
+          "team": "Stella Maris",
+          "wins": 10,
+          "points": 70,
+          "percentage": 121.96,
+          "marker": "R"
+        },
+        {
+          "position": 3,
+          "team": "Elwood Blue",
+          "wins": 7,
+          "points": 62,
+          "percentage": 149.14,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Langwarrin",
+          "wins": 4,
+          "points": 34,
+          "percentage": 78.36,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Black Rock Maroon",
+          "wins": 0,
+          "points": 3,
+          "percentage": 44.89,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 4,
+        "doublesBestOf": 3,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "WA11-WA002",
+      "fixtures": 46,
+      "completed_fixtures": 30,
+      "draw_fixtures": 46,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 120,
+      "latest_round": 16,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": [
+        "Incomplete TROLS score for WA002321 doubles No. 4: '1-3'. Missing score not inferred; excluded from ratings and game totals."
+      ]
+    },
+    {
+      "asset_id": "WA11-WA003",
+      "competition_code": "WA",
+      "competition_label": "Wednesday AM - Spring 2024",
+      "season_id": "WA11",
+      "season_label": "Spring 2024",
+      "source_section_code": "WA003",
+      "section_label": "W Section 2",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "St Pats Mentone Green",
+          "wins": 15,
+          "points": 111,
+          "percentage": 264.37,
+          "marker": "P"
+        },
+        {
+          "position": 2,
+          "team": "Elwood Red",
+          "wins": 12,
+          "points": 92,
+          "percentage": 162.5,
+          "marker": "R"
+        },
+        {
+          "position": 3,
+          "team": "Aspendale Gold",
+          "wins": 8,
+          "points": 71,
+          "percentage": 126.38,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Kings Park",
+          "wins": 4,
+          "points": 33,
+          "percentage": 71.41,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Aspendale Green",
+          "wins": 3,
+          "points": 30,
+          "percentage": 58.77,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "St Pats Mentone Gold",
+          "wins": 3,
+          "points": 23,
+          "percentage": 48.8,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 4,
+        "doublesBestOf": 3,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "WA11-WA003",
+      "fixtures": 46,
+      "completed_fixtures": 44,
+      "draw_fixtures": 46,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 176,
+      "latest_round": 16,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": [
+        "Incomplete TROLS score for WA003321 doubles No. 4: '3-6 1-4'. Missing score not inferred; excluded from ratings and game totals."
+      ]
+    },
+    {
+      "asset_id": "WA11-WA004",
+      "competition_code": "WA",
+      "competition_label": "Wednesday AM - Spring 2024",
+      "season_id": "WA11",
+      "season_label": "Spring 2024",
+      "source_section_code": "WA004",
+      "section_label": "W Section 3",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Dingley",
+          "wins": 14,
+          "points": 109,
+          "percentage": 193.5,
+          "marker": "P"
+        },
+        {
+          "position": 2,
+          "team": "Beaumaris CC",
+          "wins": 11,
+          "points": 87,
+          "percentage": 146.58,
+          "marker": "R"
+        },
+        {
+          "position": 3,
+          "team": "Black Rock",
+          "wins": 9,
+          "points": 70,
+          "percentage": 113.8,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "St Leonard's",
+          "wins": 6,
+          "points": 47,
+          "percentage": 88.43,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Burden Park",
+          "wins": 3,
+          "points": 29,
+          "percentage": 70.97,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Kings Park",
+          "wins": 2,
+          "points": 18,
+          "percentage": 46.73,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 4,
+        "doublesBestOf": 3,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "WA11-WA004",
+      "fixtures": 46,
+      "completed_fixtures": 45,
+      "draw_fixtures": 46,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 178,
+      "latest_round": 16,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": [
+        "Incomplete TROLS score for WA004321 doubles No. 1: '6-0 1-1'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for WA004321 doubles No. 2: '1-3'. Missing score not inferred; excluded from ratings and game totals.",
+        "Fixture game totals do not match rubbers for WA004321: TROLS team total 9-4; complete-score total 8-4. Both published records retained."
+      ]
+    },
+    {
+      "asset_id": "WA13-WA002",
+      "competition_code": "WA",
+      "competition_label": "Wednesday AM - Spring 2025",
+      "season_id": "WA13",
+      "season_label": "Spring 2025",
+      "source_section_code": "WA002",
+      "section_label": "W Section 1",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Stella Maris",
+          "wins": 9,
+          "points": 71,
+          "percentage": 125.26,
+          "marker": "R"
+        },
+        {
+          "position": 2,
+          "team": "Elwood",
+          "wins": 7,
+          "points": 55,
+          "percentage": 121.45,
+          "marker": "P"
+        },
+        {
+          "position": 3,
+          "team": "Black Rock",
+          "wins": 6,
+          "points": 53,
+          "percentage": 108.64,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Langwarrin",
+          "wins": 2,
+          "points": 33,
+          "percentage": 81.76,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "St Pats Mentone",
+          "wins": 3,
+          "points": 28,
+          "percentage": 76.15,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 4,
+        "doublesBestOf": 3,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "WA13-WA002",
+      "fixtures": 46,
+      "completed_fixtures": 28,
+      "draw_fixtures": 46,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 110,
+      "latest_round": 16,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": []
+    },
+    {
+      "asset_id": "WA13-WA003",
+      "competition_code": "WA",
+      "competition_label": "Wednesday AM - Spring 2025",
+      "season_id": "WA13",
+      "season_label": "Spring 2025",
+      "source_section_code": "WA003",
+      "section_label": "W Section 2",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Elwood",
+          "wins": 11,
+          "points": 93.5,
+          "percentage": 152.89,
+          "marker": "R"
+        },
+        {
+          "position": 2,
+          "team": "Basterfield Park",
+          "wins": 11,
+          "points": 90,
+          "percentage": 138.33,
+          "marker": "P"
+        },
+        {
+          "position": 3,
+          "team": "Black Rock",
+          "wins": 4,
+          "points": 49.5,
+          "percentage": 96.28,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Aspendale",
+          "wins": 5,
+          "points": 47.5,
+          "percentage": 81.26,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Kings Park",
+          "wins": 4,
+          "points": 43.5,
+          "percentage": 77.91,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Dingley",
+          "wins": 3,
+          "points": 36,
+          "percentage": 76.16,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 4,
+        "doublesBestOf": 3,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "WA13-WA003",
+      "fixtures": 46,
+      "completed_fixtures": 42,
+      "draw_fixtures": 46,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 163,
+      "latest_round": 16,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": [
+        "Incomplete TROLS score for WA003061 doubles No. 3: '1-2'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for WA003063 doubles No. 1: '6-2 3-6'. Missing score not inferred; excluded from ratings and game totals."
+      ]
+    },
+    {
+      "asset_id": "WA13-WA004",
+      "competition_code": "WA",
+      "competition_label": "Wednesday AM - Spring 2025",
+      "season_id": "WA13",
+      "season_label": "Spring 2025",
+      "source_section_code": "WA004",
+      "section_label": "W Section 3",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "BLTC",
+          "wins": 13,
+          "points": 107,
+          "percentage": 225.91,
+          "marker": "P"
+        },
+        {
+          "position": 2,
+          "team": "St Pats Mentone",
+          "wins": 9,
+          "points": 71.5,
+          "percentage": 109.0,
+          "marker": "R"
+        },
+        {
+          "position": 3,
+          "team": "Black Rock",
+          "wins": 7,
+          "points": 67.5,
+          "percentage": 114.51,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Beaumaris CC",
+          "wins": 6,
+          "points": 54.5,
+          "percentage": 92.08,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "St Leonard's",
+          "wins": 3,
+          "points": 37.5,
+          "percentage": 71.82,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Kings Park",
+          "wins": 1,
+          "points": 22,
+          "percentage": 55.64,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 4,
+        "doublesBestOf": 3,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "WA13-WA004",
+      "fixtures": 46,
+      "completed_fixtures": 43,
+      "draw_fixtures": 46,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 168,
+      "latest_round": 16,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": [
+        "Incomplete TROLS score for WA004062 doubles No. 1: '6-3 4-2'. Missing score not inferred; excluded from ratings and game totals."
+      ]
     }
   ],
   "validation": "passed"

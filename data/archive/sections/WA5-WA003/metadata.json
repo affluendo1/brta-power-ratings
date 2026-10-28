@@ -1,0 +1,90 @@
+{
+  "asset_id": "WA5-WA003",
+  "competition_code": "WA",
+  "competition_label": "Wednesday AM - Spring 2021",
+  "season_id": "WA5",
+  "season_label": "Spring 2021",
+  "source_section_code": "WA003",
+  "section_label": "W Section 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Stella Maris",
+      "wins": 3,
+      "points": 66,
+      "percentage": 229.07,
+      "marker": ""
+    },
+    {
+      "position": 2,
+      "team": "Basterfield Park",
+      "wins": 3,
+      "points": 65,
+      "percentage": 199.04,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Aspendale",
+      "wins": 2,
+      "points": 53.5,
+      "percentage": 114.77,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Black Rock No.1",
+      "wins": 2,
+      "points": 50,
+      "percentage": 104.93,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Dingley",
+      "wins": 1,
+      "points": 43.5,
+      "percentage": 66.22,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Black Rock No.2",
+      "wins": 0,
+      "points": 34,
+      "percentage": 31.91,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "WA5-WA003",
+  "fixtures": 45,
+  "completed_fixtures": 19,
+  "draw_fixtures": 45,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 50,
+  "latest_round": 15,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for WA003031 doubles No. 1: '1-0'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for WA003031 doubles No. 2: '2-1'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "asset_id": "WA6-WA004",
+  "competition_code": "WA",
+  "competition_label": "Wednesday AM - Autumn 2022",
+  "season_id": "WA6",
+  "season_label": "Autumn 2022",
+  "source_section_code": "WA004",
+  "section_label": "W Section 3",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Dingley",
+      "wins": 11,
+      "points": 95,
+      "percentage": 419.15,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "St Pats Mentone Gold",
+      "wins": 10,
+      "points": 72,
+      "percentage": 135.34,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "St Leonard's",
+      "wins": 7,
+      "points": 53,
+      "percentage": 101.81,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Kings Park White",
+      "wins": 4,
+      "points": 40,
+      "percentage": 90.16,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Kings Park Red",
+      "wins": 3,
+      "points": 30,
+      "percentage": 72.67,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Kings Park Blue",
+      "wins": 3,
+      "points": 27,
+      "percentage": 65.44,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "St Pats Mentone Silver",
+      "wins": 1,
+      "points": 19,
+      "percentage": 54.34,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "WA6-WA004",
+  "fixtures": 59,
+  "completed_fixtures": 43,
+  "draw_fixtures": 48,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 172,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

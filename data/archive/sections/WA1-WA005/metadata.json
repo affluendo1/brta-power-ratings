@@ -1,0 +1,99 @@
+{
+  "asset_id": "WA1-WA005",
+  "competition_code": "WA",
+  "competition_label": "Wednesday AM - Spring 2019",
+  "season_id": "WA1",
+  "season_label": "Spring 2019",
+  "source_section_code": "WA005",
+  "section_label": "Section 3",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Beaumaris CC",
+      "wins": 11,
+      "points": 83,
+      "percentage": 198.18,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Black Rock",
+      "wins": 10,
+      "points": 77,
+      "percentage": 197.87,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "St Leonard's",
+      "wins": 8,
+      "points": 64,
+      "percentage": 135.68,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Kings Park 2",
+      "wins": 5,
+      "points": 38,
+      "percentage": 81.53,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Kings Park 1",
+      "wins": 4,
+      "points": 36,
+      "percentage": 76.4,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "St Pats Mentone 1",
+      "wins": 3,
+      "points": 32,
+      "percentage": 80.41,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "St Pats Mentone 2",
+      "wins": 0,
+      "points": 6,
+      "percentage": 38.53,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "WA1-WA005",
+  "fixtures": 59,
+  "completed_fixtures": 45,
+  "draw_fixtures": 3,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 180,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for WA005072 doubles No. 3: '1-1'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for WA005072 doubles No. 4: '0-2'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for WA005321 doubles No. 3: '7-6 4-2'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

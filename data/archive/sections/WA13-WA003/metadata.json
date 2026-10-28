@@ -1,0 +1,90 @@
+{
+  "asset_id": "WA13-WA003",
+  "competition_code": "WA",
+  "competition_label": "Wednesday AM - Spring 2025",
+  "season_id": "WA13",
+  "season_label": "Spring 2025",
+  "source_section_code": "WA003",
+  "section_label": "W Section 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Elwood",
+      "wins": 11,
+      "points": 93.5,
+      "percentage": 152.89,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "Basterfield Park",
+      "wins": 11,
+      "points": 90,
+      "percentage": 138.33,
+      "marker": "P"
+    },
+    {
+      "position": 3,
+      "team": "Black Rock",
+      "wins": 4,
+      "points": 49.5,
+      "percentage": 96.28,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Aspendale",
+      "wins": 5,
+      "points": 47.5,
+      "percentage": 81.26,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Kings Park",
+      "wins": 4,
+      "points": 43.5,
+      "percentage": 77.91,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Dingley",
+      "wins": 3,
+      "points": 36,
+      "percentage": 76.16,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "WA13-WA003",
+  "fixtures": 46,
+  "completed_fixtures": 42,
+  "draw_fixtures": 46,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 163,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for WA003061 doubles No. 3: '1-2'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for WA003063 doubles No. 1: '6-2 3-6'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}
