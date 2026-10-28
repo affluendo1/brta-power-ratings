@@ -1,0 +1,106 @@
+{
+  "asset_id": "AP36-AP020",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 17/18",
+  "season_id": "AP36",
+  "season_label": "Summer 17/18",
+  "source_section_code": "AP020",
+  "section_label": "Mens S/D 8",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "East Malvern",
+      "wins": 11,
+      "points": 103.5,
+      "percentage": 136.55,
+      "marker": ""
+    },
+    {
+      "position": 2,
+      "team": "Glen Huntly",
+      "wins": 8,
+      "points": 88,
+      "percentage": 130.33,
+      "marker": "P"
+    },
+    {
+      "position": 3,
+      "team": "Dendy Park 1",
+      "wins": 7,
+      "points": 84,
+      "percentage": 114.94,
+      "marker": "R"
+    },
+    {
+      "position": 4,
+      "team": "Lauriston",
+      "wins": 5,
+      "points": 71,
+      "percentage": 104.97,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Caulfield Rec",
+      "wins": 6,
+      "points": 67,
+      "percentage": 95.36,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Mordialloc",
+      "wins": 5,
+      "points": 63,
+      "percentage": 104.7,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Highmoor Uniting",
+      "wins": 5,
+      "points": 60.5,
+      "percentage": 94.06,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "Dendy Park 2",
+      "wins": 2,
+      "points": 23,
+      "percentage": 43.07,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP36-AP020",
+  "fixtures": 60,
+  "completed_fixtures": 55,
+  "draw_fixtures": 60,
+  "singles_rubbers": 216,
+  "doubles_rubbers": 108,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP020064 doubles No. 1: '6-1 6-6'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP020311 doubles No. 2: '4-6 6-1'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

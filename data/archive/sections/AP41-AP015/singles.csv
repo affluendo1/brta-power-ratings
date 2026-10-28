@@ -1,0 +1,69 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP015011,14 Nov 20,1,Coatesville,Maccabi,No. 1,Michael Burke,Jan Tenenberg,Michael Burke,8-6,8,6,1,0,Completed,true,false,false
+AP015011,14 Nov 20,1,Coatesville,Maccabi,No. 2,Callum Rankin,Ryan Behr,Ryan Behr,7-8,7,8,0,1,Completed,true,false,false
+AP015011,14 Nov 20,1,Coatesville,Maccabi,No. 3,Marcus Aparo,Matias Brener,Matias Brener,1-8,1,8,0,1,Completed,true,false,false
+AP015011,14 Nov 20,1,Coatesville,Maccabi,No. 4,Jack Langdon,Jonny Henquin,Jonny Henquin,2-8,2,8,0,1,Completed,true,false,true
+AP015012,14 Nov 20,1,Hawthorn,Kings Park,No. 1,Paul Wu,Nathan Broadbent,Nathan Broadbent,7-8,7,8,0,1,Completed,true,false,false
+AP015012,14 Nov 20,1,Hawthorn,Kings Park,No. 2,David Sartori,Callum Campbell,David Sartori,8-0,8,0,1,0,Completed,true,false,false
+AP015012,14 Nov 20,1,Hawthorn,Kings Park,No. 3,Mark Tsui,Dom Langdon,Dom Langdon,5-8,5,8,0,1,Completed,true,false,false
+AP015012,14 Nov 20,1,Hawthorn,Kings Park,No. 4,Peter King,Oscar Eden,Oscar Eden,5-8,5,8,0,1,Completed,true,true,false
+AP015021,21 Nov 20,2,Carmelite,Coatesville,No. 1,Ben Kirchet,Michael Burke,Michael Burke,3-8,3,8,0,1,Completed,true,false,false
+AP015021,21 Nov 20,2,Carmelite,Coatesville,No. 2,Victor Blitsas,Callum Rankin,Callum Rankin,5-8,5,8,0,1,Completed,true,false,false
+AP015021,21 Nov 20,2,Carmelite,Coatesville,No. 3,Tim Watts,Jack Langdon,Jack Langdon,6-8,6,8,0,1,Completed,true,true,false
+AP015021,21 Nov 20,2,Carmelite,Coatesville,No. 4,Michael Junkovic,Gabriel Basman,Michael Junkovic,8-3,8,3,1,0,Completed,true,false,false
+AP015023,21 Nov 20,2,Maccabi,Hawthorn,No. 1,Marcus Frajman,Paul Wu,Paul Wu,4-8,4,8,0,1,Completed,true,false,false
+AP015023,21 Nov 20,2,Maccabi,Hawthorn,No. 2,Ryan Behr,Nicholas Kotros,Nicholas Kotros,3-8,3,8,0,1,Completed,true,false,false
+AP015023,21 Nov 20,2,Maccabi,Hawthorn,No. 3,Daniel Henquin,Mark Tsui,Mark Tsui,7-8,7,8,0,1,Completed,true,false,false
+AP015023,21 Nov 20,2,Maccabi,Hawthorn,No. 4,Matias Brener,Peter King,Matias Brener,8-1,8,1,1,0,Completed,true,false,true
+AP015031,28 Nov 20,3,Coatesville,Hawthorn,No. 1,Callum Rankin,Paul Wu,Paul Wu,2-8,2,8,0,1,Completed,true,false,false
+AP015031,28 Nov 20,3,Coatesville,Hawthorn,No. 2,Marcus Aparo,Nicholas Kotros,Marcus Aparo,8-4,8,4,1,0,Completed,true,false,false
+AP015031,28 Nov 20,3,Coatesville,Hawthorn,No. 3,Harry O'Dea,Mark Tsui,Mark Tsui,1-8,1,8,0,1,Completed,true,false,false
+AP015031,28 Nov 20,3,Coatesville,Hawthorn,No. 4,Gabriel Basman,Richard Paine,Gabriel Basman,8-6,8,6,1,0,Completed,true,false,true
+AP015041,05 Dec 20,4,Kings Park,Coatesville,No. 1,Nathan Broadbent,Michael Burke,Nathan Broadbent,8-2,8,2,1,0,Completed,true,false,false
+AP015041,05 Dec 20,4,Kings Park,Coatesville,No. 2,Dom Langdon,Jack Langdon,Dom Langdon,8-3,8,3,1,0,Completed,true,false,false
+AP015041,05 Dec 20,4,Kings Park,Coatesville,No. 3,Oscar Eden,Jonathon Bong,Oscar Eden,8-1,8,1,1,0,Completed,true,false,true
+AP015041,05 Dec 20,4,Kings Park,Coatesville,No. 4,Callum Campbell,Gabriel Basman,Callum Campbell,8-6,8,6,1,0,Completed,true,false,false
+AP015042,05 Dec 20,4,Maccabi,Carmelite,No. 1,Jan Tenenberg,Ben Kirchet,Ben Kirchet,2-8,2,8,0,1,Completed,true,false,false
+AP015042,05 Dec 20,4,Maccabi,Carmelite,No. 2,Marcus Frajman,Victor Blitsas,Victor Blitsas,5-8,5,8,0,1,Completed,true,false,false
+AP015042,05 Dec 20,4,Maccabi,Carmelite,No. 3,Matias Brener,Giancarlo Siclari,Matias Brener,8-3,8,3,1,0,Completed,true,false,true
+AP015042,05 Dec 20,4,Maccabi,Carmelite,No. 4,Joel Rabinov,Simon Kerwin,Joel Rabinov,8-5,8,5,1,0,Completed,true,true,true
+AP015052,12 Dec 20,5,Kings Park,Maccabi,No. 1,Dom Langdon,Jordan Swire,Dom Langdon,8-2,8,2,1,0,Completed,true,false,true
+AP015052,12 Dec 20,5,Kings Park,Maccabi,No. 2,Oscar Eden,Jan Tenenberg,Oscar Eden,8-0,8,0,1,0,Completed,true,false,false
+AP015052,12 Dec 20,5,Kings Park,Maccabi,No. 3,Callum Campbell,Marcus Frajman,Marcus Frajman,1-8,1,8,0,1,Completed,true,false,false
+AP015052,12 Dec 20,5,Kings Park,Maccabi,No. 4,Korben Brough,Matias Brener,Matias Brener,1-8,1,8,0,1,Completed,true,true,false
+AP015053,12 Dec 20,5,Carmelite,Hawthorn,No. 1,Ben Kirchet,Paul Wu,Ben Kirchet,8-7,8,7,1,0,Completed,true,false,false
+AP015053,12 Dec 20,5,Carmelite,Hawthorn,No. 2,Victor Blitsas,Mark Tsui,Victor Blitsas,8-5,8,5,1,0,Completed,true,false,false
+AP015053,12 Dec 20,5,Carmelite,Hawthorn,No. 3,Nick Notaras,Shivkumar Nakayan,Nick Notaras,8-2,8,2,1,0,Completed,true,true,true
+AP015053,12 Dec 20,5,Carmelite,Hawthorn,No. 4,[Unnamed emergency — TROLS AP015053 home code 4],Arian Madani,Arian Madani,0-8,0,8,0,1,Completed,false,true,true
+AP015061,30 Jan 21,6,Maccabi,Coatesville,No. 1,Matias Brener,Callum Rankin,Callum Rankin,1-8,1,8,0,1,Completed,true,false,false
+AP015061,30 Jan 21,6,Maccabi,Coatesville,No. 2,Jan Tenenberg,Jack Callaghan,Jan Tenenberg,8-1,8,1,1,0,Completed,true,false,true
+AP015061,30 Jan 21,6,Maccabi,Coatesville,No. 3,Ryan Behr,Marcus Aparo,Ryan Behr,8-2,8,2,1,0,Completed,true,false,false
+AP015061,30 Jan 21,6,Maccabi,Coatesville,No. 4,Daniel Henquin,Jack Langdon,Daniel Henquin,8-1,8,1,1,0,Completed,true,false,false
+AP015062,30 Jan 21,6,Kings Park,Hawthorn,No. 1,Nathan Broadbent,Paul Wu,Nathan Broadbent,8-2,8,2,1,0,Completed,true,false,false
+AP015062,30 Jan 21,6,Kings Park,Hawthorn,No. 2,Dom Langdon,Mark Tsui,Dom Langdon,8-3,8,3,1,0,Completed,true,false,false
+AP015062,30 Jan 21,6,Kings Park,Hawthorn,No. 3,Finn Rasmussen,Peter King,Finn Rasmussen,8-5,8,5,1,0,Completed,true,false,true
+AP015062,30 Jan 21,6,Kings Park,Hawthorn,No. 4,Oscar Eden,Nao Takata,Nao Takata,4-8,4,8,0,1,Completed,true,false,true
+AP015071,06 Feb 21,7,Coatesville,Carmelite,No. 1,Michael Burke,Ben Kirchet,Michael Burke,8-5,8,5,1,0,Completed,true,false,false
+AP015071,06 Feb 21,7,Coatesville,Carmelite,No. 2,Marcus Aparo,Victor Blitsas,Marcus Aparo,8-6,8,6,1,0,Completed,true,false,false
+AP015071,06 Feb 21,7,Coatesville,Carmelite,No. 3,Harry O'Dea,Adam Gleza,Harry O'Dea,8-6,8,6,1,0,Completed,true,false,true
+AP015071,06 Feb 21,7,Coatesville,Carmelite,No. 4,Gabriel Basman,Michael Junkovic,Michael Junkovic,7-8,7,8,0,1,Completed,true,false,false
+AP015091,27 Feb 21,9,Coatesville,Kings Park,No. 1,Marcus Aparo,Dom Langdon,Dom Langdon,0-8,0,8,0,1,Completed,true,false,false
+AP015091,27 Feb 21,9,Coatesville,Kings Park,No. 2,Jack Langdon,Finn Rasmussen,Finn Rasmussen,7-8,7,8,0,1,Completed,true,false,false
+AP015091,27 Feb 21,9,Coatesville,Kings Park,No. 3,Harry O'Dea,Oscar Eden,Oscar Eden,2-8,2,8,0,1,Completed,true,false,false
+AP015091,27 Feb 21,9,Coatesville,Kings Park,No. 4,Gabriel Basman,Callum Campbell,Callum Campbell,6-8,6,8,0,1,Completed,true,false,false
+AP015092,27 Feb 21,9,Carmelite,Maccabi,No. 1,Ben Kirchet,Jan Tenenberg,Ben Kirchet,8-1,8,1,1,0,Completed,true,false,false
+AP015092,27 Feb 21,9,Carmelite,Maccabi,No. 2,Rohan Booth,Marcus Frajman,Rohan Booth,8-2,8,2,1,0,Completed,true,true,false
+AP015092,27 Feb 21,9,Carmelite,Maccabi,No. 3,Victor Blitsas,Ryan Behr,Victor Blitsas,8-6,8,6,1,0,Completed,true,false,false
+AP015092,27 Feb 21,9,Carmelite,Maccabi,No. 4,Michael Junkovic,Daniel Henquin,Michael Junkovic,8-3,8,3,1,0,Completed,true,false,false
+AP015102,13 Mar 21,10,Maccabi,Kings Park,No. 1,Matias Brener,Dom Langdon,,3-4,3,4,0,1,Unfinished,false,false,false
+AP015102,13 Mar 21,10,Maccabi,Kings Park,No. 2,Jan Tenenberg,Finn Rasmussen,Jan Tenenberg,5-4,5,4,1,0,Completed,true,false,false
+AP015102,13 Mar 21,10,Maccabi,Kings Park,No. 3,Marcus Frajman,Oscar Eden,,4-4,4,4,0,0,Unfinished,false,false,false
+AP015102,13 Mar 21,10,Maccabi,Kings Park,No. 4,Ryan Behr,Callum Campbell,Ryan Behr,8-0,8,0,1,0,Completed,true,false,false
+AP015103,13 Mar 21,10,Hawthorn,Carmelite,No. 1,Mike Zappala,Ben Kirchet,Mike Zappala,8-2,8,2,1,0,Completed,true,true,false
+AP015103,13 Mar 21,10,Hawthorn,Carmelite,No. 2,Paul Wu,Rohan Booth,Rohan Booth,6-8,6,8,0,1,Completed,true,false,true
+AP015103,13 Mar 21,10,Hawthorn,Carmelite,No. 3,David Sartori,Victor Blitsas,David Sartori,8-5,8,5,1,0,Completed,true,false,false
+AP015103,13 Mar 21,10,Hawthorn,Carmelite,No. 4,Mark Tsui,Michael Junkovic,Mark Tsui,8-3,8,3,1,0,Completed,true,false,false
+AP015321,,16,Kings Park,Maccabi,No. 1,Nathan Broadbent,Matias Brener,Matias Brener,5-8,5,8,0,1,Completed,true,false,false
+AP015321,,16,Kings Park,Maccabi,No. 2,Dom Langdon,Jan Tenenberg,Dom Langdon,8-1,8,1,1,0,Completed,true,false,false
+AP015321,,16,Kings Park,Maccabi,No. 3,Finn Rasmussen,Marcus Frajman,Marcus Frajman,3-8,3,8,0,1,Completed,true,false,false
+AP015321,,16,Kings Park,Maccabi,No. 4,Oscar Eden,Ryan Behr,Oscar Eden,8-6,8,6,1,0,Completed,true,false,false

@@ -1,0 +1,95 @@
+{
+  "asset_id": "AP48-AP005",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Winter 2024",
+  "season_id": "AP48",
+  "season_label": "Winter 2024",
+  "source_section_code": "AP005",
+  "section_label": "Mx Rubbers 4",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Mordialloc",
+      "wins": 10,
+      "points": 86,
+      "percentage": 247.72,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Elwood Purple",
+      "wins": 7,
+      "points": 62,
+      "percentage": 124.05,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "BLTC",
+      "wins": 6,
+      "points": 61,
+      "percentage": 124.04,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Pakenham",
+      "wins": 5,
+      "points": 47,
+      "percentage": 95.43,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Glen Huntly",
+      "wins": 2,
+      "points": 33,
+      "percentage": 83.48,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Mentone",
+      "wins": 2,
+      "points": 25,
+      "percentage": 68.34,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Hawthorn",
+      "wins": 1,
+      "points": 22,
+      "percentage": 53.39,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP48-AP005",
+  "fixtures": 59,
+  "completed_fixtures": 36,
+  "draw_fixtures": 59,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 144,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

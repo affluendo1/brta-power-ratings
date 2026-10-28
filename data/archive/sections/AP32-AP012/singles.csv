@@ -1,0 +1,177 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP012012,10 Oct 15,1,Dendy Park,BLTC,No. 1,Jane Edgar,Maddie French,Jane Edgar,8-4,8,4,1,0,Completed,true,false,false
+AP012012,10 Oct 15,1,Dendy Park,BLTC,No. 2,Anna Smith,Jacqui Pacholec,Jacqui Pacholec,3-8,3,8,0,1,Completed,true,false,false
+AP012012,10 Oct 15,1,Dendy Park,BLTC,No. 3,Susie Salmon,Liz Edgecombe,Liz Edgecombe,2-8,2,8,0,1,Completed,true,false,false
+AP012012,10 Oct 15,1,Dendy Park,BLTC,No. 4,Louis Francis,Emma Kate McCarthy,Emma Kate McCarthy,6-8,6,8,0,1,Completed,true,false,false
+AP012013,10 Oct 15,1,Monash University,Albert Reserve,No. 1,Kate Bellott,Chiyo Lam,Chiyo Lam,6-8,6,8,0,1,Completed,true,false,false
+AP012013,10 Oct 15,1,Monash University,Albert Reserve,No. 2,Kay Bottomer,Galina Polekhina,Kay Bottomer,8-6,8,6,1,0,Completed,true,false,false
+AP012013,10 Oct 15,1,Monash University,Albert Reserve,No. 3,Martina Wang,Rebecca Cooper,Rebecca Cooper,1-8,1,8,0,1,Completed,true,false,false
+AP012013,10 Oct 15,1,Monash University,Albert Reserve,No. 4,Caitlyn McNaughton,Chloe Chiem,Caitlyn McNaughton,8-6,8,6,1,0,Completed,true,false,false
+AP012014,10 Oct 15,1,East Malvern,GPHC,No. 1,Nicole Stribbles,Georgia Deacon,Georgia Deacon,1-8,1,8,0,1,Completed,true,false,false
+AP012014,10 Oct 15,1,East Malvern,GPHC,No. 2,Rebeca Hurley,Racquel Ferraro,Racquel Ferraro,4-8,4,8,0,1,Completed,true,false,false
+AP012014,10 Oct 15,1,East Malvern,GPHC,No. 3,Carolyn Bell-Harper,Ruby Smith,Carolyn Bell-Harper,8-5,8,5,1,0,Completed,true,false,false
+AP012014,10 Oct 15,1,East Malvern,GPHC,No. 4,Joanne Bell-Harper,Isabella Sgro,Isabella Sgro,3-8,3,8,0,1,Completed,true,false,false
+AP012022,17 Oct 15,2,Royal South Yarra,Dendy Park,No. 1,Sophie Trotter,Stephanie Mackay,Stephanie Mackay,4-8,4,8,0,1,Completed,true,false,false
+AP012022,17 Oct 15,2,Royal South Yarra,Dendy Park,No. 2,Kate MacNeil,Sophie Francis,Sophie Francis,4-8,4,8,0,1,Completed,true,false,false
+AP012022,17 Oct 15,2,Royal South Yarra,Dendy Park,No. 3,Jennifer Langford,Jane Edgar,Jennifer Langford,9-8,9,8,1,0,Completed,true,false,false
+AP012022,17 Oct 15,2,Royal South Yarra,Dendy Park,No. 4,Skye Douglass,Susie Salmon,Susie Salmon,3-8,3,8,0,1,Completed,true,false,false
+AP012023,17 Oct 15,2,BLTC,Monash University,No. 1,Maddie French,Kate Bellott,Kate Bellott,2-8,2,8,0,1,Completed,true,false,false
+AP012023,17 Oct 15,2,BLTC,Monash University,No. 2,Andrea French,Kathryn Connelly,Kathryn Connelly,6-8,6,8,0,1,Completed,true,false,false
+AP012023,17 Oct 15,2,BLTC,Monash University,No. 3,Jacqui Pacholec,Kay Bottomer,Jacqui Pacholec,8-3,8,3,1,0,Completed,true,false,false
+AP012023,17 Oct 15,2,BLTC,Monash University,No. 4,Emma Kate McCarthy,Caitlyn McNaughton,Caitlyn McNaughton,4-8,4,8,0,1,Completed,true,false,false
+AP012024,17 Oct 15,2,Albert Reserve,East Malvern,No. 1,Luana Rochelli,Rosie Kovacs,Luana Rochelli,8-4,8,4,1,0,Completed,true,false,false
+AP012024,17 Oct 15,2,Albert Reserve,East Malvern,No. 2,Galina Polekhina,Nicole Stribbles,Nicole Stribbles,8-9,8,9,0,1,Completed,true,false,false
+AP012024,17 Oct 15,2,Albert Reserve,East Malvern,No. 3,Aileen Lord,Carolyn Bell-Harper,Aileen Lord,8-0,8,0,1,0,Completed,true,false,false
+AP012024,17 Oct 15,2,Albert Reserve,East Malvern,No. 4,Dana Visescu,Joanne Bell-Harper,Joanne Bell-Harper,2-8,2,8,0,1,Completed,true,false,false
+AP012032,24 Oct 15,3,Dendy Park,GPHC,No. 1,Stephanie Mackay,Ruby Smith,Stephanie Mackay,8-0,8,0,1,0,Completed,true,false,false
+AP012032,24 Oct 15,3,Dendy Park,GPHC,No. 2,Jane Edgar,Niamh Ollquirt,Niamh Ollquirt,6-8,6,8,0,1,Completed,true,false,false
+AP012032,24 Oct 15,3,Dendy Park,GPHC,No. 3,Anna Smith,Hannah Double,Hannah Double,5-8,5,8,0,1,Completed,true,false,false
+AP012032,24 Oct 15,3,Dendy Park,GPHC,No. 4,Susie Salmon,[Unnamed emergency — TROLS AP012032 away code 4],Susie Salmon,8-0,8,0,1,0,Completed,false,false,true
+AP012033,24 Oct 15,3,Monash University,Royal South Yarra,No. 1,Kathryn Connelly,Sophie Trotter,Sophie Trotter,8-9,8,9,0,1,Completed,true,false,false
+AP012033,24 Oct 15,3,Monash University,Royal South Yarra,No. 2,Martina Wang,Charlotte Fenner,Charlotte Fenner,2-8,2,8,0,1,Completed,true,false,false
+AP012033,24 Oct 15,3,Monash University,Royal South Yarra,No. 3,Kay Bottomer,Skye Douglass,Skye Douglass,0-8,0,8,0,1,Completed,true,false,false
+AP012033,24 Oct 15,3,Monash University,Royal South Yarra,No. 4,Camelia Sofrone,Libby Hicks,Libby Hicks,2-8,2,8,0,1,Completed,true,false,false
+AP012034,24 Oct 15,3,East Malvern,BLTC,No. 1,Lesley Digby,Maddie French,Maddie French,1-8,1,8,0,1,Completed,true,false,false
+AP012034,24 Oct 15,3,East Malvern,BLTC,No. 2,Nicole Stribbles,Andrea French,Andrea French,3-8,3,8,0,1,Completed,true,false,false
+AP012034,24 Oct 15,3,East Malvern,BLTC,No. 3,Carolyn Bell-Harper,Emma Kate McCarthy,Carolyn Bell-Harper,9-7,9,7,1,0,Completed,true,false,false
+AP012034,24 Oct 15,3,East Malvern,BLTC,No. 4,Joanne Bell-Harper,Amanda Santorro,Joanne Bell-Harper,8-6,8,6,1,0,Completed,true,false,false
+AP012042,07 Nov 15,4,Albert Reserve,Dendy Park,No. 1,Rebecca Cooper,Sophie Francis,Rebecca Cooper,8-6,8,6,1,0,Completed,true,false,false
+AP012042,07 Nov 15,4,Albert Reserve,Dendy Park,No. 2,Galina Polekhina,Jane Edgar,Jane Edgar,6-8,6,8,0,1,Completed,true,false,false
+AP012042,07 Nov 15,4,Albert Reserve,Dendy Park,No. 3,Aileen Lord,Sophie Salmon,Aileen Lord,8-6,8,6,1,0,Completed,true,false,false
+AP012042,07 Nov 15,4,Albert Reserve,Dendy Park,No. 4,Chloe Chiem,Susie Salmon,Susie Salmon,4-8,4,8,0,1,Completed,true,false,false
+AP012043,07 Nov 15,4,GPHC,Monash University,No. 1,Racquel Ferraro,Kate Bellott,Kate Bellott,1-8,1,8,0,1,Completed,true,false,false
+AP012043,07 Nov 15,4,GPHC,Monash University,No. 2,Ruby Smith,Kathryn Connelly,Ruby Smith,8-4,8,4,1,0,Completed,true,false,false
+AP012043,07 Nov 15,4,GPHC,Monash University,No. 3,Niamh Ollquirt,Kay Bottomer,Niamh Ollquirt,8-1,8,1,1,0,Completed,true,false,false
+AP012043,07 Nov 15,4,GPHC,Monash University,No. 4,Isabella Sgro,Beray Uzunbay,Isabella Sgro,8-2,8,2,1,0,Completed,true,false,false
+AP012044,07 Nov 15,4,Royal South Yarra,East Malvern,No. 1,Jennifer Langford,Nicole Stribbles,Jennifer Langford,9-7,9,7,1,0,Completed,true,false,false
+AP012044,07 Nov 15,4,Royal South Yarra,East Malvern,No. 2,Charlotte Fenner,Rebeca Hurley,Charlotte Fenner,8-3,8,3,1,0,Completed,true,false,false
+AP012044,07 Nov 15,4,Royal South Yarra,East Malvern,No. 3,Skye Douglass,Carolyn Bell-Harper,Carolyn Bell-Harper,4-8,4,8,0,1,Completed,true,false,false
+AP012044,07 Nov 15,4,Royal South Yarra,East Malvern,No. 4,Emam Heeps-Eridsen,Joanne Bell-Harper,Joanne Bell-Harper,0-8,0,8,0,1,Completed,true,false,false
+AP012051,14 Nov 15,5,Monash University,East Malvern,No. 1,Kate Bellott,Nicole Stribbles,Kate Bellott,8-0,8,0,1,0,Completed,true,false,false
+AP012051,14 Nov 15,5,Monash University,East Malvern,No. 2,Kathryn Connelly,Rebeca Hurley,Kathryn Connelly,8-2,8,2,1,0,Completed,true,false,false
+AP012051,14 Nov 15,5,Monash University,East Malvern,No. 3,Martina Wang,Carolyn Bell-Harper,Carolyn Bell-Harper,3-8,3,8,0,1,Completed,true,false,false
+AP012051,14 Nov 15,5,Monash University,East Malvern,No. 4,Beray Uzunbay,Joanne Bell-Harper,Beray Uzunbay,8-2,8,2,1,0,Completed,true,false,false
+AP012052,14 Nov 15,5,GPHC,Albert Reserve,No. 1,Georgia Deacon,Chiyo Lam,Georgia Deacon,8-6,8,6,1,0,Completed,true,false,false
+AP012052,14 Nov 15,5,GPHC,Albert Reserve,No. 2,Racquel Ferraro,Rebecca Cooper,Rebecca Cooper,4-8,4,8,0,1,Completed,true,false,false
+AP012052,14 Nov 15,5,GPHC,Albert Reserve,No. 3,Niamh Ollquirt,Galina Polekhina,Niamh Ollquirt,8-5,8,5,1,0,Completed,true,false,false
+AP012052,14 Nov 15,5,GPHC,Albert Reserve,No. 4,Andrea Ollquirt,Aileen Lord,Aileen Lord,0-8,0,8,0,1,Completed,true,false,false
+AP012053,14 Nov 15,5,BLTC,Royal South Yarra,No. 1,Andrea French,Kate MacNeil,Andrea French,8-5,8,5,1,0,Completed,true,false,false
+AP012053,14 Nov 15,5,BLTC,Royal South Yarra,No. 2,Jacqui Pacholec,Skye Douglass,Skye Douglass,8-9,8,9,0,1,Completed,true,false,false
+AP012053,14 Nov 15,5,BLTC,Royal South Yarra,No. 3,Liz Edgecombe,Emam Heeps-Eridsen,Liz Edgecombe,8-4,8,4,1,0,Completed,true,false,false
+AP012053,14 Nov 15,5,BLTC,Royal South Yarra,No. 4,Emma Kate McCarthy,Annabel McFarlane,Emma Kate McCarthy,8-5,8,5,1,0,Completed,true,false,false
+AP012061,21 Nov 15,6,Dendy Park,Monash University,No. 1,Sophie Francis,Kate Bellott,Sophie Francis,8-5,8,5,1,0,Completed,true,false,false
+AP012061,21 Nov 15,6,Dendy Park,Monash University,No. 2,Jane Edgar,Kathryn Connelly,Jane Edgar,8-6,8,6,1,0,Completed,true,false,false
+AP012061,21 Nov 15,6,Dendy Park,Monash University,No. 3,Emma Palmeri,Martina Wang,Emma Palmeri,8-2,8,2,1,0,Completed,true,false,false
+AP012061,21 Nov 15,6,Dendy Park,Monash University,No. 4,Susie Salmon,Kay Bottomer,Susie Salmon,8-0,8,0,1,0,Completed,true,false,false
+AP012063,21 Nov 15,6,Albert Reserve,BLTC,No. 1,Chiyo Lam,Maddie French,Chiyo Lam,8-6,8,6,1,0,Completed,true,false,false
+AP012063,21 Nov 15,6,Albert Reserve,BLTC,No. 2,Galina Polekhina,Andrea French,Andrea French,7-9,7,9,0,1,Completed,true,false,false
+AP012063,21 Nov 15,6,Albert Reserve,BLTC,No. 3,Chloe Chiem,Jacqui Pacholec,Chloe Chiem,8-5,8,5,1,0,Completed,true,false,false
+AP012063,21 Nov 15,6,Albert Reserve,BLTC,No. 4,Dana Visescu,Emma Kate McCarthy,Emma Kate McCarthy,4-8,4,8,0,1,Completed,true,false,false
+AP012072,28 Nov 15,7,Dendy Park,East Malvern,No. 1,Stephanie Mackay,Lesley Digby,Stephanie Mackay,8-4,8,4,1,0,Completed,true,false,false
+AP012072,28 Nov 15,7,Dendy Park,East Malvern,No. 2,Susie Salmon,Nicole Stribbles,Susie Salmon,8-2,8,2,1,0,Completed,true,false,false
+AP012072,28 Nov 15,7,Dendy Park,East Malvern,No. 3,Vicky Walsh,Carolyn Bell-Harper,Vicky Walsh,8-2,8,2,1,0,Completed,true,false,false
+AP012072,28 Nov 15,7,Dendy Park,East Malvern,No. 4,Louis Francis,Joanne Bell-Harper,Joanne Bell-Harper,2-8,2,8,0,1,Completed,true,false,false
+AP012073,28 Nov 15,7,GPHC,BLTC,No. 1,Racquel Ferraro,Jacqui Pacholec,Racquel Ferraro,8-1,8,1,1,0,Completed,true,false,false
+AP012073,28 Nov 15,7,GPHC,BLTC,No. 2,Ruby Smith,Liz Edgecombe,Liz Edgecombe,4-8,4,8,0,1,Completed,true,false,false
+AP012073,28 Nov 15,7,GPHC,BLTC,No. 3,Niamh Ollquirt,Emma Kate McCarthy,Niamh Ollquirt,8-6,8,6,1,0,Completed,true,false,false
+AP012073,28 Nov 15,7,GPHC,BLTC,No. 4,Isabella Sgro,Rylee Cook,Isabella Sgro,8-0,8,0,1,0,Completed,true,false,false
+AP012074,28 Nov 15,7,Albert Reserve,Royal South Yarra,No. 1,[Unnamed emergency — TROLS AP012074 home code 1],Sue Gatford,Sue Gatford,0-8,0,8,0,1,Completed,false,true,false
+AP012074,28 Nov 15,7,Albert Reserve,Royal South Yarra,No. 2,Galina Polekhina,Belinda Henry,Belinda Henry,4-8,4,8,0,1,Completed,true,false,false
+AP012074,28 Nov 15,7,Albert Reserve,Royal South Yarra,No. 3,Chloe Chiem,Skye Douglass,Chloe Chiem,8-5,8,5,1,0,Completed,true,false,false
+AP012074,28 Nov 15,7,Albert Reserve,Royal South Yarra,No. 4,Dana Visescu,Emam Heeps-Eridsen,Dana Visescu,8-1,8,1,1,0,Completed,true,false,false
+AP012082,05 Dec 15,8,BLTC,Dendy Park,No. 1,Liz Edgecombe,Stephanie Mackay,Stephanie Mackay,7-9,7,9,0,1,Completed,true,false,false
+AP012082,05 Dec 15,8,BLTC,Dendy Park,No. 2,Linda P2 Best,Sophie Francis,Sophie Francis,1-8,1,8,0,1,Completed,true,false,false
+AP012082,05 Dec 15,8,BLTC,Dendy Park,No. 3,Emma Kate McCarthy,Emma Rooke,Emma Rooke,8-9,8,9,0,1,Completed,true,false,false
+AP012082,05 Dec 15,8,BLTC,Dendy Park,No. 4,Amanda Santorro,Susie Salmon,Susie Salmon,7-9,7,9,0,1,Completed,true,false,false
+AP012083,05 Dec 15,8,Albert Reserve,Monash University,No. 1,Chiyo Lam,Kate Bellott,Kate Bellott,6-8,6,8,0,1,Completed,true,false,false
+AP012083,05 Dec 15,8,Albert Reserve,Monash University,No. 2,Rebecca Cooper,Beray Uzunbay,Rebecca Cooper,8-3,8,3,1,0,Completed,true,false,false
+AP012083,05 Dec 15,8,Albert Reserve,Monash University,No. 3,Galina Polekhina,Caitlyn McNaughton,Galina Polekhina,8-4,8,4,1,0,Completed,true,false,false
+AP012083,05 Dec 15,8,Albert Reserve,Monash University,No. 4,Dana Visescu,Camelia Sofrone,Dana Visescu,8-2,8,2,1,0,Completed,true,false,false
+AP012084,05 Dec 15,8,GPHC,East Malvern,No. 1,Georgia Deacon,[Unnamed emergency — TROLS AP012084 away code 1],Georgia Deacon,8-0,8,0,1,0,Completed,false,false,true
+AP012084,05 Dec 15,8,GPHC,East Malvern,No. 2,Ruby Smith,Nicole Stribbles,Nicole Stribbles,4-8,4,8,0,1,Completed,true,false,false
+AP012084,05 Dec 15,8,GPHC,East Malvern,No. 3,Isabella Sgro,Carolyn Bell-Harper,Isabella Sgro,8-6,8,6,1,0,Completed,true,false,false
+AP012084,05 Dec 15,8,GPHC,East Malvern,No. 4,Thuy P8 McKinnon,Joanne Bell-Harper,Joanne Bell-Harper,6-8,6,8,0,1,Completed,true,false,false
+AP012092,12 Dec 15,9,Dendy Park,Royal South Yarra,No. 1,Stephanie Mackay,Jennifer Langford,Stephanie Mackay,8-6,8,6,1,0,Completed,true,false,false
+AP012092,12 Dec 15,9,Dendy Park,Royal South Yarra,No. 2,Jane Edgar,Skye Douglass,Jane Edgar,8-2,8,2,1,0,Completed,true,false,false
+AP012092,12 Dec 15,9,Dendy Park,Royal South Yarra,No. 3,Emma Palmeri,Bridgit Warnock,Emma Palmeri,8-1,8,1,1,0,Completed,true,false,false
+AP012092,12 Dec 15,9,Dendy Park,Royal South Yarra,No. 4,Danaya Malendan,Annabel McFarlane,Danaya Malendan,8-5,8,5,1,0,Completed,true,false,false
+AP012093,12 Dec 15,9,Monash University,BLTC,No. 1,Kathryn Connelly,Jacqui Pacholec,Kathryn Connelly,8-4,8,4,1,0,Completed,true,false,false
+AP012093,12 Dec 15,9,Monash University,BLTC,No. 2,Kay Bottomer,Liz Edgecombe,Kay Bottomer,8-4,8,4,1,0,Completed,true,false,false
+AP012093,12 Dec 15,9,Monash University,BLTC,No. 3,Beray Uzunbay,Linda P2 Best,Linda P2 Best,6-8,6,8,0,1,Completed,true,false,false
+AP012093,12 Dec 15,9,Monash University,BLTC,No. 4,Caitlyn McNaughton,Emma Kate McCarthy,Caitlyn McNaughton,8-5,8,5,1,0,Completed,true,false,false
+AP012094,12 Dec 15,9,East Malvern,Albert Reserve,No. 1,Nicole Stribbles,Luana Rochelli,Luana Rochelli,2-8,2,8,0,1,Completed,true,false,false
+AP012094,12 Dec 15,9,East Malvern,Albert Reserve,No. 2,Carolyn Bell-Harper,Chiyo Lam,Chiyo Lam,4-8,4,8,0,1,Completed,true,false,false
+AP012094,12 Dec 15,9,East Malvern,Albert Reserve,No. 3,Joanne Bell-Harper,Galina Polekhina,Galina Polekhina,3-8,3,8,0,1,Completed,true,false,false
+AP012094,12 Dec 15,9,East Malvern,Albert Reserve,No. 4,Lynette P3 Hovey,Dana Visescu,Lynette P3 Hovey,8-1,8,1,1,0,Completed,true,false,false
+AP012102,30 Jan 16,10,GPHC,Dendy Park,No. 1,Ruby Smith,Stephanie Mackay,Stephanie Mackay,2-8,2,8,0,1,Completed,true,false,false
+AP012102,30 Jan 16,10,GPHC,Dendy Park,No. 2,Niamh Ollquirt,Sophie Francis,Niamh Ollquirt,8-4,8,4,1,0,Completed,true,false,false
+AP012102,30 Jan 16,10,GPHC,Dendy Park,No. 3,Shania Allen,Emma Rooke,Emma Rooke,5-8,5,8,0,1,Completed,true,false,false
+AP012102,30 Jan 16,10,GPHC,Dendy Park,No. 4,Hannah Double,Sophie Salmon,Sophie Salmon,2-8,2,8,0,1,Completed,true,false,false
+AP012103,30 Jan 16,10,Royal South Yarra,Monash University,No. 1,Kate MacNeil,Kate Bellott,Kate Bellott,5-8,5,8,0,1,Completed,true,false,false
+AP012103,30 Jan 16,10,Royal South Yarra,Monash University,No. 2,Charlotte Fenner,Kay Bottomer,Kay Bottomer,5-8,5,8,0,1,Completed,true,false,false
+AP012103,30 Jan 16,10,Royal South Yarra,Monash University,No. 3,Skye Douglass,Beray Uzunbay,Beray Uzunbay,4-8,4,8,0,1,Completed,true,false,false
+AP012103,30 Jan 16,10,Royal South Yarra,Monash University,No. 4,Emam Heeps-Eridsen,Caitlyn McNaughton,Caitlyn McNaughton,3-8,3,8,0,1,Completed,true,false,false
+AP012104,30 Jan 16,10,BLTC,East Malvern,No. 1,Maddie French,Nicole Stribbles,Maddie French,8-6,8,6,1,0,Completed,true,false,false
+AP012104,30 Jan 16,10,BLTC,East Malvern,No. 2,Jacqui Pacholec,Rebeca Hurley,Jacqui Pacholec,8-6,8,6,1,0,Completed,true,false,false
+AP012104,30 Jan 16,10,BLTC,East Malvern,No. 3,Emma Kate McCarthy,Carolyn Bell-Harper,Emma Kate McCarthy,8-2,8,2,1,0,Completed,true,false,false
+AP012104,30 Jan 16,10,BLTC,East Malvern,No. 4,Isabelle Parker,Joanne Bell-Harper,Joanne Bell-Harper,3-8,3,8,0,1,Completed,true,false,false
+AP012112,06 Feb 16,11,Dendy Park,Albert Reserve,No. 1,Sophie Francis,Luana Rochelli,Sophie Francis,8-3,8,3,1,0,Completed,true,false,false
+AP012112,06 Feb 16,11,Dendy Park,Albert Reserve,No. 2,Jane Edgar,Chiyo Lam,Jane Edgar,8-1,8,1,1,0,Completed,true,false,false
+AP012112,06 Feb 16,11,Dendy Park,Albert Reserve,No. 3,Sophie Salmon,Rebecca Cooper,Rebecca Cooper,5-8,5,8,0,1,Completed,true,false,false
+AP012112,06 Feb 16,11,Dendy Park,Albert Reserve,No. 4,Susie Salmon,Galina Polekhina,Susie Salmon,8-2,8,2,1,0,Completed,true,false,false
+AP012113,06 Feb 16,11,Monash University,GPHC,No. 1,Kathryn Connelly,Niamh Ollquirt,Niamh Ollquirt,2-8,2,8,0,1,Completed,true,false,false
+AP012113,06 Feb 16,11,Monash University,GPHC,No. 2,Kay Bottomer,Isabella Sgro,Kay Bottomer,8-4,8,4,1,0,Completed,true,false,false
+AP012113,06 Feb 16,11,Monash University,GPHC,No. 3,Martina Wang,Andrea P5 Browne,Martina Wang,8-5,8,5,1,0,Completed,true,false,false
+AP012113,06 Feb 16,11,Monash University,GPHC,No. 4,Caitlyn McNaughton,Andrea Ollquirt,Caitlyn McNaughton,8-1,8,1,1,0,Completed,true,false,false
+AP012114,06 Feb 16,11,East Malvern,Royal South Yarra,No. 1,Nicole Stribbles,Kate MacNeil,Kate MacNeil,3-8,3,8,0,1,Completed,true,false,false
+AP012114,06 Feb 16,11,East Malvern,Royal South Yarra,No. 2,Rebeca Hurley,Charlotte Fenner,Rebeca Hurley,8-5,8,5,1,0,Completed,true,false,false
+AP012114,06 Feb 16,11,East Malvern,Royal South Yarra,No. 3,Carolyn Bell-Harper,Skye Douglass,Skye Douglass,8-9,8,9,0,1,Completed,true,false,false
+AP012114,06 Feb 16,11,East Malvern,Royal South Yarra,No. 4,Joanne Bell-Harper,Emam Heeps-Eridsen,Joanne Bell-Harper,8-4,8,4,1,0,Completed,true,false,false
+AP012121,13 Feb 16,12,East Malvern,Monash University,No. 1,Nicole Stribbles,Kay Bottomer,Kay Bottomer,8-9,8,9,0,1,Completed,true,false,false
+AP012121,13 Feb 16,12,East Malvern,Monash University,No. 2,Rebeca Hurley,Beray Uzunbay,Beray Uzunbay,4-8,4,8,0,1,Completed,true,false,false
+AP012121,13 Feb 16,12,East Malvern,Monash University,No. 3,Carolyn Bell-Harper,Martina Wang,Carolyn Bell-Harper,8-2,8,2,1,0,Completed,true,false,false
+AP012121,13 Feb 16,12,East Malvern,Monash University,No. 4,Joanne Bell-Harper,Caitlyn McNaughton,Joanne Bell-Harper,9-7,9,7,1,0,Completed,true,false,false
+AP012122,13 Feb 16,12,Albert Reserve,GPHC,No. 1,Chiyo Lam,Ruby Smith,Ruby Smith,4-8,4,8,0,1,Completed,true,false,false
+AP012122,13 Feb 16,12,Albert Reserve,GPHC,No. 2,Rebecca Cooper,Niamh Ollquirt,Rebecca Cooper,8-1,8,1,1,0,Completed,true,false,false
+AP012122,13 Feb 16,12,Albert Reserve,GPHC,No. 3,Aileen Lord,Isabella Sgro,Isabella Sgro,8-9,8,9,0,1,Completed,true,false,false
+AP012122,13 Feb 16,12,Albert Reserve,GPHC,No. 4,Dana Visescu,Hannah Double,Dana Visescu,8-1,8,1,1,0,Completed,true,false,false
+AP012123,13 Feb 16,12,Royal South Yarra,BLTC,No. 1,Kate MacNeil,Maddie French,Kate MacNeil,8-6,8,6,1,0,Completed,true,false,false
+AP012123,13 Feb 16,12,Royal South Yarra,BLTC,No. 2,Jennifer Langford,Jacqui Pacholec,Jacqui Pacholec,6-8,6,8,0,1,Completed,true,false,false
+AP012123,13 Feb 16,12,Royal South Yarra,BLTC,No. 3,Charlotte Fenner,Emma Kate McCarthy,Charlotte Fenner,8-5,8,5,1,0,Completed,true,false,false
+AP012123,13 Feb 16,12,Royal South Yarra,BLTC,No. 4,Emam Heeps-Eridsen,Liesl Doehring,Emam Heeps-Eridsen,8-2,8,2,1,0,Completed,true,false,false
+AP012131,20 Feb 16,13,Monash University,Dendy Park,No. 1,Kay Bottomer,Stephanie Mackay,Stephanie Mackay,2-8,2,8,0,1,Completed,true,false,false
+AP012131,20 Feb 16,13,Monash University,Dendy Park,No. 2,Beray Uzunbay,Sophie Francis,Sophie Francis,4-8,4,8,0,1,Completed,true,false,false
+AP012131,20 Feb 16,13,Monash University,Dendy Park,No. 3,Martina Wang,Jane Edgar,Jane Edgar,4-8,4,8,0,1,Completed,true,false,false
+AP012131,20 Feb 16,13,Monash University,Dendy Park,No. 4,Caitlyn McNaughton,Jordan Trevena,Jordan Trevena,5-8,5,8,0,1,Completed,true,false,false
+AP012133,20 Feb 16,13,BLTC,Albert Reserve,No. 1,Maddie French,Galina Polekhina,Galina Polekhina,8-9,8,9,0,1,Completed,true,false,false
+AP012133,20 Feb 16,13,BLTC,Albert Reserve,No. 2,Andrea French,Aileen Lord,Andrea French,8-4,8,4,1,0,Completed,true,false,false
+AP012133,20 Feb 16,13,BLTC,Albert Reserve,No. 3,Liz Edgecombe,Chloe Chiem,Liz Edgecombe,9-7,9,7,1,0,Completed,true,false,false
+AP012133,20 Feb 16,13,BLTC,Albert Reserve,No. 4,Emma Kate McCarthy,Dana Visescu,Emma Kate McCarthy,8-1,8,1,1,0,Completed,true,false,false
+AP012134,20 Feb 16,13,GPHC,Royal South Yarra,No. 1,Ruby Smith,Kate MacNeil,Kate MacNeil,6-8,6,8,0,1,Completed,true,false,false
+AP012134,20 Feb 16,13,GPHC,Royal South Yarra,No. 2,Niamh Ollquirt,Jennifer Langford,Niamh Ollquirt,8-1,8,1,1,0,Completed,true,false,false
+AP012134,20 Feb 16,13,GPHC,Royal South Yarra,No. 3,Isabella Sgro,Charlotte Fenner,Isabella Sgro,8-2,8,2,1,0,Completed,true,false,false
+AP012134,20 Feb 16,13,GPHC,Royal South Yarra,No. 4,Hannah Double,Emam Heeps-Eridsen,Hannah Double,9-8,9,8,1,0,Completed,true,false,false
+AP012142,27 Feb 16,14,East Malvern,Dendy Park,No. 1,Nicole Stribbles,Stephanie Mackay,Stephanie Mackay,2-8,2,8,0,1,Completed,true,false,false
+AP012142,27 Feb 16,14,East Malvern,Dendy Park,No. 2,Rebeca Hurley,Jane Edgar,Jane Edgar,2-8,2,8,0,1,Completed,true,false,false
+AP012142,27 Feb 16,14,East Malvern,Dendy Park,No. 3,Carolyn Bell-Harper,Emma Rooke,Emma Rooke,2-8,2,8,0,1,Completed,true,false,false
+AP012142,27 Feb 16,14,East Malvern,Dendy Park,No. 4,Joanne Bell-Harper,Sophie Salmon,Joanne Bell-Harper,8-5,8,5,1,0,Completed,true,false,false
+AP012143,27 Feb 16,14,BLTC,GPHC,No. 1,Maddie French,Ruby Smith,Maddie French,8-2,8,2,1,0,Completed,true,false,false
+AP012143,27 Feb 16,14,BLTC,GPHC,No. 2,Andrea French,Niamh Ollquirt,Niamh Ollquirt,2-8,2,8,0,1,Completed,true,false,false
+AP012143,27 Feb 16,14,BLTC,GPHC,No. 3,Liz Edgecombe,Isabella Sgro,Liz Edgecombe,8-6,8,6,1,0,Completed,true,false,false
+AP012143,27 Feb 16,14,BLTC,GPHC,No. 4,Linda P2 Best,Hannah Double,Hannah Double,2-8,2,8,0,1,Completed,true,false,false
+AP012144,27 Feb 16,14,Royal South Yarra,Albert Reserve,No. 1,Kate MacNeil,Chiyo Lam,Kate MacNeil,8-4,8,4,1,0,Completed,true,false,false
+AP012144,27 Feb 16,14,Royal South Yarra,Albert Reserve,No. 2,Jennifer Langford,Rebecca Cooper,Rebecca Cooper,8-9,8,9,0,1,Completed,true,false,false
+AP012144,27 Feb 16,14,Royal South Yarra,Albert Reserve,No. 3,Emam Heeps-Eridsen,Chloe Chiem,Emam Heeps-Eridsen,8-6,8,6,1,0,Completed,true,false,false
+AP012144,27 Feb 16,14,Royal South Yarra,Albert Reserve,No. 4,Virginia Collins,Dana Visescu,Virginia Collins,8-1,8,1,1,0,Completed,true,false,false
+AP012301,,16,Dendy Park,Albert Reserve,No. 1,Stephanie Mackay,Chiyo Lam,Stephanie Mackay,9-7,9,7,1,0,Completed,true,false,false
+AP012301,,16,Dendy Park,Albert Reserve,No. 2,Sophie Francis,Rebecca Cooper,Sophie Francis,9-8,9,8,1,0,Completed,true,false,false
+AP012301,,16,Dendy Park,Albert Reserve,No. 3,Jane Edgar,Galina Polekhina,Jane Edgar,8-2,8,2,1,0,Completed,true,false,false
+AP012301,,16,Dendy Park,Albert Reserve,No. 4,Emma Rooke,Dana Visescu,Emma Rooke,8-1,8,1,1,0,Completed,true,false,false
+AP012302,,16,Royal South Yarra,BLTC,No. 1,Kate MacNeil,Maddie French,Maddie French,4-8,4,8,0,1,Completed,true,false,false
+AP012302,,16,Royal South Yarra,BLTC,No. 2,Jennifer Langford,Andrea French,Andrea French,3-8,3,8,0,1,Completed,true,false,false
+AP012302,,16,Royal South Yarra,BLTC,No. 3,Charlotte Fenner,Liz Edgecombe,Liz Edgecombe,6-8,6,8,0,1,Completed,true,false,false
+AP012302,,16,Royal South Yarra,BLTC,No. 4,Skye Douglass,Emma Kate McCarthy,Skye Douglass,8-2,8,2,1,0,Completed,true,false,false
+AP012321,,17,Dendy Park,BLTC,No. 1,Stephanie Mackay,Andrea French,Stephanie Mackay,8-4,8,4,1,0,Completed,true,false,false
+AP012321,,17,Dendy Park,BLTC,No. 2,Sophie Francis,Linda P2 Best,Sophie Francis,8-0,8,0,1,0,Completed,true,false,true
+AP012321,,17,Dendy Park,BLTC,No. 3,Jane Edgar,Liz Edgecombe,Liz Edgecombe,4-8,4,8,0,1,Completed,true,false,true
+AP012321,,17,Dendy Park,BLTC,No. 4,Emma Palmeri,Emma Kate McCarthy,Emma Palmeri,8-3,8,3,1,0,Completed,true,true,false

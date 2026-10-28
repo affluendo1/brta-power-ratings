@@ -1,0 +1,47 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP001011,05 Oct 19,1,regular,Round 1,Ormond,Legend Park,0,8,0,8,,,9,48,Completed,
+AP001012,05 Oct 19,1,regular,Round 1,Hurlingham Park,Port Melbourne,1,7,3,6,,,35,40,Completed,
+pending-ap001-r1-overport-park-fctc,05 Oct 19,1,regular,Round 1,Overport Park,FCTC,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP001021,12 Oct 19,2,regular,Round 2,FCTC,Ormond,7,1,6,3,,,41,35,Completed,
+AP001022,12 Oct 19,2,regular,Round 2,Port Melbourne,Overport Park,2,6,4,4,,,32,41,Completed,
+pending-ap001-r2-legend-park-hurlingham-park,12 Oct 19,2,regular,Round 2,Legend Park,Hurlingham Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap001-r3-fctc-port-melbourne,19 Oct 19,3,regular,Round 3,FCTC,Port Melbourne,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap001-r3-ormond-hurlingham-park,19 Oct 19,3,regular,Round 3,Ormond,Hurlingham Park,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+pending-ap001-r3-overport-park-legend-park,19 Oct 19,3,regular,Round 3,Overport Park,Legend Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP001041,26 Oct 19,4,regular,Round 4,Port Melbourne,Ormond,8,0,8,0,,,48,12,Completed,
+AP001042,26 Oct 19,4,regular,Round 4,Legend Park,FCTC,8,0,8,0,,,49,16,Completed,
+AP001043,26 Oct 19,4,regular,Round 4,Hurlingham Park,Overport Park,8,0,8,0,,,50,28,Completed,
+AP001051,09 Nov 19,5,regular,Round 5,Ormond,Overport Park,0,8,0,8,,,11,48,Completed,
+AP001052,09 Nov 19,5,regular,Round 5,Port Melbourne,Legend Park,7,1,6,2,,,42,28,Completed,
+AP001053,09 Nov 19,5,regular,Round 5,FCTC,Hurlingham Park,1,7,2,7,,,21,51,Completed,
+AP001061,16 Nov 19,6,regular,Round 6,Legend Park,Ormond,8,0,8,1,,,53,13,Completed,
+AP001062,16 Nov 19,6,regular,Round 6,Port Melbourne,Hurlingham Park,7,1,6,2,,,36,20,Completed,
+AP001063,16 Nov 19,6,regular,Round 6,FCTC,Overport Park,0,8,0,8,,,7,48,Completed,
+AP001071,23 Nov 19,7,regular,Round 7,Ormond,FCTC,6,2,5,5,,,47,45,Completed,
+AP001072,23 Nov 19,7,regular,Round 7,Overport Park,Port Melbourne,6,2,4,4,,,32,28,Completed,
+AP001073,23 Nov 19,7,regular,Round 7,Hurlingham Park,Legend Park,0,8,0,8,,,9,48,Completed,
+AP001081,30 Nov 19,8,regular,Round 8,Hurlingham Park,Ormond,8,0,8,0,,,48,8,Completed,
+AP001082,30 Nov 19,8,regular,Round 8,Legend Park,Overport Park,8,0,8,0,,,49,14,Completed,
+AP001083,30 Nov 19,8,regular,Round 8,Port Melbourne,FCTC,7,1,6,3,,,52,40,Completed,
+AP001091,07 Dec 19,9,regular,Round 9,Ormond,Port Melbourne,0,8,0,8,,,14,48,Completed,
+AP001092,07 Dec 19,9,regular,Round 9,FCTC,Legend Park,0,8,0,8,,,9,48,Completed,
+AP001093,07 Dec 19,9,regular,Round 9,Overport Park,Hurlingham Park,1,7,2,6,,,35,43,Completed,
+AP001101,14 Dec 19,10,regular,Round 10,Overport Park,Ormond,8,0,8,0,,,48,8,Completed,
+AP001102,14 Dec 19,10,regular,Round 10,Legend Park,Port Melbourne,8,0,8,0,,,48,10,Completed,
+AP001103,14 Dec 19,10,regular,Round 10,Hurlingham Park,FCTC,7,1,6,3,,,49,36,Completed,
+pending-ap001-r11-hurlingham-park-port-melbourne,01 Feb 20,11,regular,Round 11,Hurlingham Park,Port Melbourne,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap001-r11-ormond-legend-park,01 Feb 20,11,regular,Round 11,Ormond,Legend Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap001-r11-overport-park-fctc,01 Feb 20,11,regular,Round 11,Overport Park,FCTC,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP001121,08 Feb 20,12,regular,Round 12,FCTC,Ormond,7,1,7,2,,,50,32,Completed,
+AP001122,08 Feb 20,12,regular,Round 12,Port Melbourne,Overport Park,6,2,4,4,,,38,32,Completed,
+AP001123,08 Feb 20,12,regular,Round 12,Legend Park,Hurlingham Park,8,0,8,0,,,48,18,Completed,
+AP001131,15 Feb 20,13,regular,Round 13,Ormond,Hurlingham Park,1,7,2,6,,,18,43,Completed,
+AP001132,15 Feb 20,13,regular,Round 13,Overport Park,Legend Park,1,7,2,7,,,26,52,Completed,
+pending-ap001-r13-fctc-port-melbourne,15 Feb 20,13,regular,Round 13,FCTC,Port Melbourne,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP001141,22 Feb 20,14,regular,Round 14,Port Melbourne,Ormond,7,1,6,2,,,42,21,Completed,
+AP001142,22 Feb 20,14,regular,Round 14,Legend Park,FCTC,7,1,7,3,,,61,34,Completed,
+AP001143,22 Feb 20,14,regular,Round 14,Hurlingham Park,Overport Park,7,1,7,3,,,60,53,Completed,
+AP001151,29 Feb 20,15,regular,Round 15,Ormond,Overport Park,1,7,2,7,,,29,50,Completed,
+AP001152,29 Feb 20,15,regular,Round 15,Port Melbourne,Legend Park,2,6,4,5,,,31,38,Completed,
+pending-ap001-r15-fctc-hurlingham-park,29 Feb 20,15,regular,Round 15,FCTC,Hurlingham Park,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP001321,,16,grand_final,Grand final · TROLS entry 2,Legend Park,Port Melbourne,6,2,0,0,,,1,0,Completed,

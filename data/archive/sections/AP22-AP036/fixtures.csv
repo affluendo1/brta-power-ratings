@@ -1,0 +1,61 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP036012,02 Oct 10,1,regular,Round 1,Melbourne Univ,Caulfield Rec,10,0,8,1,,,64,37,Completed,
+AP036013,02 Oct 10,1,regular,Round 1,East Malvern,Carmelite,1,9,1,7,,,28,57,Completed,
+AP036014,02 Oct 10,1,regular,Round 1,Beaumaris CC,Kings Park,3,7,4,5,,,48,50,Completed,
+pending-ap036-r1-bye-lauriston,02 Oct 10,1,regular,Round 1,Bye,Lauriston,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP036022,09 Oct 10,2,regular,Round 2,Lauriston,Melbourne Univ,7,3,4,4,,,44,30,Completed,
+AP036023,09 Oct 10,2,regular,Round 2,Caulfield Rec,East Malvern,2,8,3,6,,,39,51,Completed,
+AP036024,09 Oct 10,2,regular,Round 2,Carmelite,Beaumaris CC,10,0,8,1,,,60,28,Completed,
+pending-ap036-r2-kings-park-bye,09 Oct 10,2,regular,Round 2,Kings Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP036032,16 Oct 10,3,regular,Round 3,Melbourne Univ,Kings Park,6,4,2,0,,,21,13,Completed,
+AP036033,16 Oct 10,3,regular,Round 3,East Malvern,Lauriston,9,1,7,2,,,56,47,Completed,
+AP036034,16 Oct 10,3,regular,Round 3,Beaumaris CC,Caulfield Rec,2,8,3,6,,,43,54,Completed,
+pending-ap036-r3-bye-carmelite,16 Oct 10,3,regular,Round 3,Bye,Carmelite,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP036042,23 Oct 10,4,regular,Round 4,Carmelite,Melbourne Univ,10,0,8,1,,,62,31,Completed,
+AP036043,23 Oct 10,4,regular,Round 4,Kings Park,East Malvern,3,7,5,5,,,50,53,Completed,
+AP036044,23 Oct 10,4,regular,Round 4,Lauriston,Beaumaris CC,10,0,8,1,,,59,30,Completed,
+pending-ap036-r4-caulfield-rec-bye,23 Oct 10,4,regular,Round 4,Caulfield Rec,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP036051,06 Nov 10,5,regular,Round 5,East Malvern,Beaumaris CC,10,0,8,1,,,61,19,Completed,
+AP036052,06 Nov 10,5,regular,Round 5,Kings Park,Carmelite,3,7,4,4,,,40,41,Completed,
+AP036053,06 Nov 10,5,regular,Round 5,Caulfield Rec,Lauriston,1,9,2,7,,,34,57,Completed,
+pending-ap036-r5-bye-melbourne-univ,06 Nov 10,5,regular,Round 5,Bye,Melbourne Univ,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP036063,13 Nov 10,6,regular,Round 6,Carmelite,Caulfield Rec,9,1,4,0,,,32,4,Completed,
+AP036064,13 Nov 10,6,regular,Round 6,Lauriston,Kings Park,6,4,2,0,,,18,16,Completed,
+pending-ap036-r6-beaumaris-cc-bye,13 Nov 10,6,regular,Round 6,Beaumaris CC,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap036-r6-melbourne-univ-east-malvern,13 Nov 10,6,regular,Round 6,Melbourne Univ,East Malvern,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP036072,20 Nov 10,7,regular,Round 7,Melbourne Univ,Beaumaris CC,8,2,6,3,,,56,44,Completed,
+AP036073,20 Nov 10,7,regular,Round 7,Kings Park,Caulfield Rec,3,7,3,5,,,35,48,Completed,
+AP036074,20 Nov 10,7,regular,Round 7,Carmelite,Lauriston,10,0,8,0,,,57,22,Completed,
+pending-ap036-r7-bye-east-malvern,20 Nov 10,7,regular,Round 7,Bye,East Malvern,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap036-r8-carmelite-east-malvern,27 Nov 10,8,regular,Round 8,Carmelite,East Malvern,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap036-r8-caulfield-rec-melbourne-univ,27 Nov 10,8,regular,Round 8,Caulfield Rec,Melbourne Univ,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap036-r8-kings-park-beaumaris-cc,27 Nov 10,8,regular,Round 8,Kings Park,Beaumaris CC,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap036-r8-lauriston-bye,27 Nov 10,8,regular,Round 8,Lauriston,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP036092,04 Dec 10,9,regular,Round 9,Melbourne Univ,Lauriston,2,8,3,5,,,39,37,Completed,
+AP036093,04 Dec 10,9,regular,Round 9,East Malvern,Caulfield Rec,8,2,6,3,,,56,46,Completed,
+AP036094,04 Dec 10,9,regular,Round 9,Beaumaris CC,Carmelite,0,10,0,8,,,24,58,Completed,
+pending-ap036-r9-bye-kings-park,04 Dec 10,9,regular,Round 9,Bye,Kings Park,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP036102,11 Dec 10,10,regular,Round 10,Kings Park,Melbourne Univ,0,10,1,8,,,31,63,Completed,
+AP036103,11 Dec 10,10,regular,Round 10,Lauriston,East Malvern,10,0,8,1,,,59,25,Completed,
+AP036104,11 Dec 10,10,regular,Round 10,Caulfield Rec,Beaumaris CC,9,1,7,2,,,59,40,Completed,
+pending-ap036-r10-carmelite-bye,11 Dec 10,10,regular,Round 10,Carmelite,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP036112,05 Feb 11,11,regular,Round 11,Melbourne Univ,Carmelite,0,10,1,8,,,33,57,Completed,
+AP036114,05 Feb 11,11,regular,Round 11,Beaumaris CC,Lauriston,1,9,1,7,,,27,53,Completed,
+pending-ap036-r11-bye-caulfield-rec,05 Feb 11,11,regular,Round 11,Bye,Caulfield Rec,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap036-r11-east-malvern-kings-park,05 Feb 11,11,regular,Round 11,East Malvern,Kings Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP036121,12 Feb 11,12,regular,Round 12,Beaumaris CC,East Malvern,7,3,5,4,,,54,46,Completed,
+AP036122,12 Feb 11,12,regular,Round 12,Carmelite,Kings Park,10,0,8,0,,,57,24,Completed,
+AP036123,12 Feb 11,12,regular,Round 12,Lauriston,Caulfield Rec,10,0,8,1,,,61,31,Completed,
+pending-ap036-r12-melbourne-univ-bye,12 Feb 11,12,regular,Round 12,Melbourne Univ,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP036131,19 Feb 11,13,regular,Round 13,East Malvern,Melbourne Univ,9,1,7,2,,,52,35,Completed,
+AP036133,19 Feb 11,13,regular,Round 13,Caulfield Rec,Carmelite,2,8,2,6,,,35,52,Completed,
+AP036134,19 Feb 11,13,regular,Round 13,Kings Park,Lauriston,2,8,3,6,,,50,58,Completed,
+pending-ap036-r13-bye-beaumaris-cc,19 Feb 11,13,regular,Round 13,Bye,Beaumaris CC,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP036142,26 Feb 11,14,regular,Round 14,Beaumaris CC,Melbourne Univ,2,8,3,5,,,45,48,Completed,
+AP036143,26 Feb 11,14,regular,Round 14,Caulfield Rec,Kings Park,2,8,3,6,,,44,58,Completed,
+AP036144,26 Feb 11,14,regular,Round 14,Lauriston,Carmelite,1,9,2,7,,,48,59,Completed,
+pending-ap036-r14-east-malvern-bye,26 Feb 11,14,regular,Round 14,East Malvern,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP036301,,16,semi_final,Semi-final,Carmelite,Lauriston,9,1,7,1,,,56,31,Completed,
+AP036302,,16,semi_final,Semi-final,East Malvern,Melbourne Univ,2,8,3,6,,,47,50,Completed,
+AP036311,,16,semi_final,Semi-final,Lauriston,Melbourne Univ,10,0,8,0,,,57,23,Completed,
+AP036321,,17,grand_final,Grand final · TROLS entry 2,Carmelite,Lauriston,8,2,6,4,,,53,36,Completed,

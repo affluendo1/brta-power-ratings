@@ -1,0 +1,95 @@
+{
+  "asset_id": "AP22-AP037",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 10/11",
+  "season_id": "AP22",
+  "season_label": "Summer 10/11",
+  "source_section_code": "AP037",
+  "section_label": "Mens S/D 9",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Monash University",
+      "wins": 0,
+      "points": 89.5,
+      "percentage": 165.56,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Lauriston",
+      "wins": 0,
+      "points": 81,
+      "percentage": 164.33,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "East Malvern",
+      "wins": 0,
+      "points": 66,
+      "percentage": 101.39,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Port Melbourne",
+      "wins": 0,
+      "points": 63,
+      "percentage": 108.11,
+      "marker": "R"
+    },
+    {
+      "position": 5,
+      "team": "Dendy Park",
+      "wins": 0,
+      "points": 55.5,
+      "percentage": 88.06,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Le Page",
+      "wins": 0,
+      "points": 38,
+      "percentage": 66.18,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "MCC",
+      "wins": 0,
+      "points": 27,
+      "percentage": 57.94,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP22-AP037",
+  "fixtures": 60,
+  "completed_fixtures": 37,
+  "draw_fixtures": 4,
+  "singles_rubbers": 147,
+  "doubles_rubbers": 71,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

@@ -1,0 +1,106 @@
+{
+  "asset_id": "AP22-AP025",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 10/11",
+  "season_id": "AP22",
+  "season_label": "Summer 10/11",
+  "source_section_code": "AP025",
+  "section_label": "Mixed Rubbers 4",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Elwood",
+      "wins": 0,
+      "points": 77,
+      "percentage": 133.42,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Patterson Lakes",
+      "wins": 0,
+      "points": 75,
+      "percentage": 130.39,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Parkdale",
+      "wins": 0,
+      "points": 65,
+      "percentage": 109.49,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Mentone",
+      "wins": 0,
+      "points": 64.5,
+      "percentage": 103.57,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Coatesville",
+      "wins": 0,
+      "points": 51.5,
+      "percentage": 95.92,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Glen Huntly",
+      "wins": 0,
+      "points": 45,
+      "percentage": 84.79,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "BLTC",
+      "wins": 0,
+      "points": 43,
+      "percentage": 85.3,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "Hawthorn",
+      "wins": 0,
+      "points": 27,
+      "percentage": 70.68,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP22-AP025",
+  "fixtures": 60,
+  "completed_fixtures": 50,
+  "draw_fixtures": 4,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 200,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP025033 doubles No. 4: '7-6 0-4'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP025321 doubles No. 3: '7-6 4-3'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

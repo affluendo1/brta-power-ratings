@@ -1,0 +1,95 @@
+{
+  "asset_id": "AP33-AP003",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Winter 2016",
+  "season_id": "AP33",
+  "season_label": "Winter 2016",
+  "source_section_code": "AP003",
+  "section_label": "Mens Sets 1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Parkdale",
+      "wins": 11,
+      "points": 90,
+      "percentage": 391.07,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Sth Murrumbeena",
+      "wins": 7,
+      "points": 67,
+      "percentage": 149.79,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Hurlingham Park",
+      "wins": 6,
+      "points": 49,
+      "percentage": 87.64,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Highmoor Uniting",
+      "wins": 3,
+      "points": 46,
+      "percentage": 98.13,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "St Pats Mentone",
+      "wins": 3,
+      "points": 29,
+      "percentage": 63.39,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Centenary Park",
+      "wins": 2,
+      "points": 28,
+      "percentage": 65.85,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Victory Park",
+      "wins": 3,
+      "points": 27,
+      "percentage": 71.5,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 1,
+    "doublesTarget": 10,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP33-AP003",
+  "fixtures": 60,
+  "completed_fixtures": 41,
+  "draw_fixtures": 60,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 160,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

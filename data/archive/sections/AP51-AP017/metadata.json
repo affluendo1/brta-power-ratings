@@ -1,0 +1,103 @@
+{
+  "asset_id": "AP51-AP017",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 25/26",
+  "season_id": "AP51",
+  "season_label": "Summer 25/26",
+  "source_section_code": "AP017",
+  "section_label": "Mx Rubbers 3",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Middle Brighton",
+      "wins": 11,
+      "points": 87,
+      "percentage": 151.39,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "Parkdale",
+      "wins": 11,
+      "points": 85,
+      "percentage": 134.98,
+      "marker": "P"
+    },
+    {
+      "position": 3,
+      "team": "Mordialloc",
+      "wins": 10,
+      "points": 84,
+      "percentage": 134.49,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Highmoor Uniting",
+      "wins": 7,
+      "points": 56,
+      "percentage": 111.75,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Ormond",
+      "wins": 5,
+      "points": 47,
+      "percentage": 100.19,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Port Melbourne",
+      "wins": 4,
+      "points": 40,
+      "percentage": 82.21,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Langwarrin",
+      "wins": 2,
+      "points": 32,
+      "percentage": 65.03,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "Le Page",
+      "wins": 0,
+      "points": 17,
+      "percentage": 60.99,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP51-AP017",
+  "fixtures": 59,
+  "completed_fixtures": 51,
+  "draw_fixtures": 48,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 200,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

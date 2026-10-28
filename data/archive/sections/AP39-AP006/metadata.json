@@ -1,0 +1,100 @@
+{
+  "asset_id": "AP39-AP006",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Winter 2019",
+  "season_id": "AP39",
+  "season_label": "Winter 2019",
+  "source_section_code": "AP006",
+  "section_label": "Mixed Rubbers 3",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Langwarrin 1",
+      "wins": 5,
+      "points": 60,
+      "percentage": 118.31,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "Highmoor Uniting",
+      "wins": 6,
+      "points": 56,
+      "percentage": 108.31,
+      "marker": "P"
+    },
+    {
+      "position": 3,
+      "team": "Middle Brighton",
+      "wins": 4,
+      "points": 47.5,
+      "percentage": 90.58,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Glen Huntly",
+      "wins": 3,
+      "points": 47,
+      "percentage": 118.48,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Parkdale 1",
+      "wins": 4,
+      "points": 46,
+      "percentage": 97.2,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Langwarrin 2",
+      "wins": 3,
+      "points": 41.5,
+      "percentage": 82.92,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Parkdale 2",
+      "wins": 3,
+      "points": 37,
+      "percentage": 91.0,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP39-AP006",
+  "fixtures": 59,
+  "completed_fixtures": 34,
+  "draw_fixtures": 59,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 136,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP006012 doubles No. 3: '6-7 3-3'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP006053 doubles No. 3: '6-1 2-6 6-6'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP006133 doubles No. 3: '7-5 2-2'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP006133 doubles No. 4: '3-6 0-3'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

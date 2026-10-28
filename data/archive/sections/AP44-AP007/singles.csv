@@ -1,0 +1,125 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP007011,07 May 22,1,Clarinda,Lauriston,No. 1,Kosta Pliatsikas,Om Rao,Om Rao,6-8,6,8,0,1,Completed,true,false,false
+AP007011,07 May 22,1,Clarinda,Lauriston,No. 2,Johnny Pliatsikas,Liam McGill,Liam McGill,4-8,4,8,0,1,Completed,true,false,false
+AP007011,07 May 22,1,Clarinda,Lauriston,No. 3,Zac Sevastas,Aaron Immermann,Aaron Immermann,6-8,6,8,0,1,Completed,true,true,false
+AP007011,07 May 22,1,Clarinda,Lauriston,No. 4,Sher Singh,George Papadimitrious,George Papadimitrious,4-8,4,8,0,1,Completed,true,true,false
+AP007013,07 May 22,1,St Pats Mentone,Elsternwick Park Blue,No. 1,Cameron De Silva,Matt Anstee,Cameron De Silva,8-1,8,1,1,0,Completed,true,false,false
+AP007013,07 May 22,1,St Pats Mentone,Elsternwick Park Blue,No. 2,Alex Chingarev,Adam Halliwell,Alex Chingarev,8-3,8,3,1,0,Completed,true,false,false
+AP007013,07 May 22,1,St Pats Mentone,Elsternwick Park Blue,No. 3,David Lawry,Chris Ride,David Lawry,8-2,8,2,1,0,Completed,true,false,true
+AP007013,07 May 22,1,St Pats Mentone,Elsternwick Park Blue,No. 4,Mike De Silva,Mark Loosschilder,Mike De Silva,8-5,8,5,1,0,Completed,true,false,false
+AP007021,14 May 22,2,Elsternwick Park Blue,Clarinda,No. 1,Matt Anstee,Kosta Pliatsikas,Matt Anstee,8-1,8,1,1,0,Completed,true,false,false
+AP007021,14 May 22,2,Elsternwick Park Blue,Clarinda,No. 2,Ben Wijay,Tung Liam,Tung Liam,7-8,7,8,0,1,Completed,true,false,true
+AP007021,14 May 22,2,Elsternwick Park Blue,Clarinda,No. 3,Mark Loosschilder,Cory Hall,Mark Loosschilder,8-5,8,5,1,0,Completed,true,false,false
+AP007021,14 May 22,2,Elsternwick Park Blue,Clarinda,No. 4,Alex Pun,Johnny Pliatsikas,Alex Pun,8-1,8,1,1,0,Completed,true,false,false
+AP007023,14 May 22,2,Lauriston,Ormond,No. 1,Lucas Nenke,Steve Gelagin,Lucas Nenke,8-5,8,5,1,0,Completed,true,false,false
+AP007023,14 May 22,2,Lauriston,Ormond,No. 2,Om Rao,Ben Darrou,Ben Darrou,3-8,3,8,0,1,Completed,true,false,false
+AP007023,14 May 22,2,Lauriston,Ormond,No. 3,Liam McGill,Susan Harrison,Liam McGill,8-3,8,3,1,0,Completed,true,false,false
+AP007023,14 May 22,2,Lauriston,Ormond,No. 4,George Papadimitrious,Andrew Lipson,Andrew Lipson,3-8,3,8,0,1,Completed,true,false,false
+AP007031,21 May 22,3,Clarinda,Ormond,No. 1,Tri Dinh,Ben Darrou,Ben Darrou,3-8,3,8,0,1,Completed,true,false,false
+AP007031,21 May 22,3,Clarinda,Ormond,No. 2,Kosta Pliatsikas,Andrew Lipson,Andrew Lipson,6-8,6,8,0,1,Completed,true,false,false
+AP007031,21 May 22,3,Clarinda,Ormond,No. 3,Cory Hall,Michael Hudson,Michael Hudson,7-8,7,8,0,1,Completed,true,false,false
+AP007031,21 May 22,3,Clarinda,Ormond,No. 4,Johnny Pliatsikas,Susan Harrison,Johnny Pliatsikas,8-1,8,1,1,0,Completed,true,false,false
+AP007032,21 May 22,3,St Pats Mentone,Lauriston,No. 1,Cameron De Silva,Lucas Nenke,Lucas Nenke,7-8,7,8,0,1,Completed,true,false,false
+AP007032,21 May 22,3,St Pats Mentone,Lauriston,No. 2,Alex Chingarev,Om Rao,Alex Chingarev,8-3,8,3,1,0,Completed,true,false,false
+AP007032,21 May 22,3,St Pats Mentone,Lauriston,No. 3,David Lawry,Aaron Immermann,Aaron Immermann,5-8,5,8,0,1,Completed,true,false,false
+AP007032,21 May 22,3,St Pats Mentone,Lauriston,No. 4,Nick Hall,George Papadimitrious,Nick Hall,8-1,8,1,1,0,Completed,true,false,false
+AP007042,28 May 22,4,Lauriston,Elsternwick Park Blue,No. 1,Lucas Nenke,Matt Anstee,Lucas Nenke,8-5,8,5,1,0,Completed,true,false,false
+AP007042,28 May 22,4,Lauriston,Elsternwick Park Blue,No. 2,Om Rao,Mark Loosschilder,Mark Loosschilder,3-8,3,8,0,1,Completed,true,false,false
+AP007042,28 May 22,4,Lauriston,Elsternwick Park Blue,No. 3,Liam McGill,Roshen Singh,Roshen Singh,4-8,4,8,0,1,Completed,true,false,false
+AP007042,28 May 22,4,Lauriston,Elsternwick Park Blue,No. 4,Aaron Immermann,Alex Pun,Alex Pun,1-8,1,8,0,1,Completed,true,false,false
+AP007043,28 May 22,4,Ormond,St Pats Mentone,No. 1,Steve Gelagin,Cameron De Silva,Cameron De Silva,7-8,7,8,0,1,Completed,true,false,false
+AP007043,28 May 22,4,Ormond,St Pats Mentone,No. 2,Chris Gogoll,David Lawry,David Lawry,7-8,7,8,0,1,Completed,true,false,false
+AP007043,28 May 22,4,Ormond,St Pats Mentone,No. 3,Michael Hudson,Nick Hall,Nick Hall,3-8,3,8,0,1,Completed,true,false,false
+AP007043,28 May 22,4,Ormond,St Pats Mentone,No. 4,Alex Kaminsky,Mike De Silva,Mike De Silva,3-8,3,8,0,1,Completed,true,true,false
+AP007051,04 Jun 22,5,Clarinda,St Pats Mentone,No. 1,Tri Dinh,Cameron De Silva,Cameron De Silva,6-8,6,8,0,1,Completed,true,false,false
+AP007051,04 Jun 22,5,Clarinda,St Pats Mentone,No. 2,Kosta Pliatsikas,Sam Clayton,Sam Clayton,3-8,3,8,0,1,Completed,true,false,false
+AP007051,04 Jun 22,5,Clarinda,St Pats Mentone,No. 3,Cory Hall,Mike De Silva,Cory Hall,8-2,8,2,1,0,Completed,true,false,false
+AP007051,04 Jun 22,5,Clarinda,St Pats Mentone,No. 4,Jackson Balalovski,Madhu Sarvone,Madhu Sarvone,3-8,3,8,0,1,Completed,true,false,true
+AP007053,04 Jun 22,5,Elsternwick Park Blue,Ormond,No. 1,Adam Neilands,Nathan McCracken,Nathan McCracken,3-8,3,8,0,1,Completed,true,false,false
+AP007053,04 Jun 22,5,Elsternwick Park Blue,Ormond,No. 2,[Unnamed emergency — TROLS AP007053 home code 2],Andrew Lipson,Andrew Lipson,0-8,0,8,0,1,Completed,false,true,false
+AP007053,04 Jun 22,5,Elsternwick Park Blue,Ormond,No. 3,Matt Anstee,Chris Gogoll,Matt Anstee,8-7,8,7,1,0,Completed,true,false,false
+AP007053,04 Jun 22,5,Elsternwick Park Blue,Ormond,No. 4,Mark Loosschilder,Michael Hudson,Mark Loosschilder,8-1,8,1,1,0,Completed,true,false,false
+AP007061,18 Jun 22,6,Lauriston,Clarinda,No. 1,Lucas Nenke,Tri Dinh,Lucas Nenke,8-3,8,3,1,0,Completed,true,false,false
+AP007061,18 Jun 22,6,Lauriston,Clarinda,No. 2,Om Rao,Kosta Pliatsikas,Kosta Pliatsikas,3-8,3,8,0,1,Completed,true,false,false
+AP007061,18 Jun 22,6,Lauriston,Clarinda,No. 3,Aaron Immermann,Cory Hall,Cory Hall,3-8,3,8,0,1,Completed,true,false,false
+AP007061,18 Jun 22,6,Lauriston,Clarinda,No. 4,George Papadimitrious,Jackson Balalovski,George Papadimitrious,8-1,8,1,1,0,Completed,true,false,false
+AP007063,18 Jun 22,6,Elsternwick Park Blue,St Pats Mentone,No. 1,Adam Halliwell,Alex Chingarev,Alex Chingarev,4-8,4,8,0,1,Completed,true,false,false
+AP007063,18 Jun 22,6,Elsternwick Park Blue,St Pats Mentone,No. 2,Mark Loosschilder,David Lawry,David Lawry,6-8,6,8,0,1,Completed,true,false,false
+AP007063,18 Jun 22,6,Elsternwick Park Blue,St Pats Mentone,No. 3,Roshen Singh,Sam Clayton,Sam Clayton,3-8,3,8,0,1,Completed,true,false,false
+AP007063,18 Jun 22,6,Elsternwick Park Blue,St Pats Mentone,No. 4,Alex Pun,Nick Hall,Alex Pun,8-2,8,2,1,0,Completed,true,false,false
+AP007071,25 Jun 22,7,Clarinda,Elsternwick Park Blue,No. 1,Tri Dinh,Adam Halliwell,Adam Halliwell,4-8,4,8,0,1,Completed,true,false,false
+AP007071,25 Jun 22,7,Clarinda,Elsternwick Park Blue,No. 2,Cory Hall,Mark Loosschilder,Mark Loosschilder,7-8,7,8,0,1,Completed,true,false,false
+AP007071,25 Jun 22,7,Clarinda,Elsternwick Park Blue,No. 3,Johnny Pliatsikas,Alex Pun,Alex Pun,0-8,0,8,0,1,Completed,true,false,false
+AP007071,25 Jun 22,7,Clarinda,Elsternwick Park Blue,No. 4,Jackson Balalovski,Vincent Fiorello,Vincent Fiorello,3-8,3,8,0,1,Completed,true,false,true
+AP007073,25 Jun 22,7,Ormond,Lauriston,No. 1,Steve Gelagin,Lucas Nenke,Lucas Nenke,2-8,2,8,0,1,Completed,true,false,false
+AP007073,25 Jun 22,7,Ormond,Lauriston,No. 2,Andrew Lipson,Om Rao,Andrew Lipson,8-2,8,2,1,0,Completed,true,false,false
+AP007073,25 Jun 22,7,Ormond,Lauriston,No. 3,Chris Gogoll,Aaron Immermann,Chris Gogoll,8-6,8,6,1,0,Completed,true,false,false
+AP007073,25 Jun 22,7,Ormond,Lauriston,No. 4,Rivka Garson,George Papadimitrious,George Papadimitrious,2-8,2,8,0,1,Completed,true,true,false
+AP007081,09 Jul 22,8,Ormond,Clarinda,No. 1,Nathan McCracken,Kosta Pliatsikas,Nathan McCracken,8-2,8,2,1,0,Completed,true,false,false
+AP007081,09 Jul 22,8,Ormond,Clarinda,No. 2,Andrew Lipson,Cory Hall,Andrew Lipson,8-6,8,6,1,0,Completed,true,false,false
+AP007081,09 Jul 22,8,Ormond,Clarinda,No. 3,Chris Gogoll,Johnny Pliatsikas,Chris Gogoll,8-1,8,1,1,0,Completed,true,false,false
+AP007081,09 Jul 22,8,Ormond,Clarinda,No. 4,Susan Harrison,Jackson Balalovski,Jackson Balalovski,3-8,3,8,0,1,Completed,true,false,false
+AP007082,09 Jul 22,8,Lauriston,St Pats Mentone,No. 1,Lucas Nenke,Cameron De Silva,Lucas Nenke,8-5,8,5,1,0,Completed,true,false,false
+AP007082,09 Jul 22,8,Lauriston,St Pats Mentone,No. 2,Om Rao,Alex Chingarev,Alex Chingarev,0-8,0,8,0,1,Completed,true,false,false
+AP007082,09 Jul 22,8,Lauriston,St Pats Mentone,No. 3,Liam McGill,Nick Hall,Nick Hall,1-8,1,8,0,1,Completed,true,false,false
+AP007082,09 Jul 22,8,Lauriston,St Pats Mentone,No. 4,Aaron Immermann,Mike De Silva,Aaron Immermann,8-5,8,5,1,0,Completed,true,false,false
+AP007092,16 Jul 22,9,Elsternwick Park Blue,Lauriston,No. 1,Adam Neilands,Lucas Nenke,Adam Neilands,8-3,8,3,1,0,Completed,true,false,false
+AP007092,16 Jul 22,9,Elsternwick Park Blue,Lauriston,No. 2,Shannon Keough,Om Rao,Shannon Keough,8-0,8,0,1,0,Completed,true,true,false
+AP007092,16 Jul 22,9,Elsternwick Park Blue,Lauriston,No. 3,Mark Loosschilder,Aaron Immermann,Mark Loosschilder,8-7,8,7,1,0,Completed,true,false,false
+AP007092,16 Jul 22,9,Elsternwick Park Blue,Lauriston,No. 4,Andrew Goggin,George Papadimitrious,Andrew Goggin,8-3,8,3,1,0,Completed,true,true,false
+AP007093,16 Jul 22,9,St Pats Mentone,Ormond,No. 1,Cameron De Silva,Steve Gelagin,Cameron De Silva,8-1,8,1,1,0,Completed,true,false,false
+AP007093,16 Jul 22,9,St Pats Mentone,Ormond,No. 2,Alex Chingarev,Ben Darrou,Alex Chingarev,8-6,8,6,1,0,Completed,true,false,false
+AP007093,16 Jul 22,9,St Pats Mentone,Ormond,No. 3,David Lawry,Chris Gogoll,Chris Gogoll,5-8,5,8,0,1,Completed,true,false,false
+AP007093,16 Jul 22,9,St Pats Mentone,Ormond,No. 4,Sam Clayton,Susan Harrison,Sam Clayton,8-3,8,3,1,0,Completed,true,false,false
+AP007101,23 Jul 22,10,St Pats Mentone,Clarinda,No. 1,Cameron De Silva,Kosta Pliatsikas,Cameron De Silva,8-1,8,1,1,0,Completed,true,false,false
+AP007101,23 Jul 22,10,St Pats Mentone,Clarinda,No. 2,Sam Clayton,Cory Hall,Sam Clayton,8-5,8,5,1,0,Completed,true,false,false
+AP007101,23 Jul 22,10,St Pats Mentone,Clarinda,No. 3,Nick Hall,Johnny Pliatsikas,Nick Hall,8-4,8,4,1,0,Completed,true,false,false
+AP007101,23 Jul 22,10,St Pats Mentone,Clarinda,No. 4,Mike De Silva,Tony Chim,Tony Chim,5-8,5,8,0,1,Completed,true,false,true
+AP007103,23 Jul 22,10,Ormond,Elsternwick Park Blue,No. 1,Nathan McCracken,Matt Anstee,Nathan McCracken,8-5,8,5,1,0,Completed,true,false,false
+AP007103,23 Jul 22,10,Ormond,Elsternwick Park Blue,No. 2,Ben Darrou,Mark Loosschilder,Ben Darrou,8-5,8,5,1,0,Completed,true,false,false
+AP007103,23 Jul 22,10,Ormond,Elsternwick Park Blue,No. 3,Steve Gelagin,Alex Pun,Steve Gelagin,8-5,8,5,1,0,Completed,true,false,false
+AP007103,23 Jul 22,10,Ormond,Elsternwick Park Blue,No. 4,Chris Gogoll,Craig Wolfe,Chris Gogoll,8-3,8,3,1,0,Completed,true,false,true
+AP007111,30 Jul 22,11,Clarinda,Lauriston,No. 1,Tri Dinh,Lucas Nenke,Lucas Nenke,6-8,6,8,0,1,Completed,true,false,false
+AP007111,30 Jul 22,11,Clarinda,Lauriston,No. 2,Kosta Pliatsikas,Liam McGill,Kosta Pliatsikas,8-7,8,7,1,0,Completed,true,false,false
+AP007111,30 Jul 22,11,Clarinda,Lauriston,No. 3,Cory Hall,Aaron Immermann,Cory Hall,8-2,8,2,1,0,Completed,true,false,false
+AP007111,30 Jul 22,11,Clarinda,Lauriston,No. 4,Jackson Balalovski,George Papadimitrious,George Papadimitrious,0-8,0,8,0,1,Completed,true,false,false
+AP007113,30 Jul 22,11,St Pats Mentone,Elsternwick Park Blue,No. 1,Cameron De Silva,Adam Neilands,Cameron De Silva,8-3,8,3,1,0,Completed,true,false,false
+AP007113,30 Jul 22,11,St Pats Mentone,Elsternwick Park Blue,No. 2,Alex Chingarev,Alex Pun,Alex Pun,0-8,0,8,0,1,Completed,true,false,false
+AP007113,30 Jul 22,11,St Pats Mentone,Elsternwick Park Blue,No. 3,David Lawry,Travis Schuldte,David Lawry,8-5,8,5,1,0,Completed,true,false,true
+AP007113,30 Jul 22,11,St Pats Mentone,Elsternwick Park Blue,No. 4,Mike De Silva,Hugh Blacket,Hugh Blacket,2-8,2,8,0,1,Completed,true,false,true
+AP007121,06 Aug 22,12,Elsternwick Park Blue,Clarinda,No. 1,Mark Loosschilder,Tri Dinh,Tri Dinh,7-8,7,8,0,1,Completed,true,false,false
+AP007121,06 Aug 22,12,Elsternwick Park Blue,Clarinda,No. 2,Alex Pun,Kosta Pliatsikas,Alex Pun,8-5,8,5,1,0,Completed,true,false,false
+AP007121,06 Aug 22,12,Elsternwick Park Blue,Clarinda,No. 3,Guillaume Drelon,Johnny Pliatsikas,Guillaume Drelon,8-0,8,0,1,0,Completed,true,true,false
+AP007121,06 Aug 22,12,Elsternwick Park Blue,Clarinda,No. 4,Chris Ride,Jackson Balalovski,Chris Ride,8-0,8,0,1,0,Completed,true,true,false
+AP007123,06 Aug 22,12,Lauriston,Ormond,No. 1,Lucas Nenke,Nathan McCracken,Nathan McCracken,6-8,6,8,0,1,Completed,true,false,false
+AP007123,06 Aug 22,12,Lauriston,Ormond,No. 2,Om Rao,Ben Darrou,Ben Darrou,3-8,3,8,0,1,Completed,true,false,false
+AP007123,06 Aug 22,12,Lauriston,Ormond,No. 3,Liam McGill,Andrew Lipson,Andrew Lipson,4-8,4,8,0,1,Completed,true,false,false
+AP007123,06 Aug 22,12,Lauriston,Ormond,No. 4,George Papadimitrious,Simon Currey,Simon Currey,2-8,2,8,0,1,Completed,true,false,true
+AP007131,13 Aug 22,13,Clarinda,Ormond,No. 1,Tri Dinh,Steve Gelagin,Steve Gelagin,4-8,4,8,0,1,Completed,true,false,false
+AP007131,13 Aug 22,13,Clarinda,Ormond,No. 2,Kosta Pliatsikas,Andrew Lipson,Andrew Lipson,3-8,3,8,0,1,Completed,true,false,false
+AP007131,13 Aug 22,13,Clarinda,Ormond,No. 3,Johnny Pliatsikas,Chris Gogoll,Chris Gogoll,1-8,1,8,0,1,Completed,true,false,false
+AP007131,13 Aug 22,13,Clarinda,Ormond,No. 4,Jackson Balalovski,Susan Harrison,Jackson Balalovski,8-1,8,1,1,0,Completed,true,false,false
+AP007132,13 Aug 22,13,St Pats Mentone,Lauriston,No. 1,Cameron De Silva,Lucas Nenke,Cameron De Silva,8-5,8,5,1,0,Completed,true,false,false
+AP007132,13 Aug 22,13,St Pats Mentone,Lauriston,No. 2,David Lawry,Om Rao,David Lawry,8-1,8,1,1,0,Completed,true,false,false
+AP007132,13 Aug 22,13,St Pats Mentone,Lauriston,No. 3,Sam Clayton,Liam McGill,Sam Clayton,8-0,8,0,1,0,Completed,true,false,false
+AP007132,13 Aug 22,13,St Pats Mentone,Lauriston,No. 4,Hayden De Silva,Aaron Immermann,Aaron Immermann,2-8,2,8,0,1,Completed,true,true,false
+AP007142,20 Aug 22,14,Lauriston,Elsternwick Park Blue,No. 1,Lucas Nenke,Adam Halliwell,Lucas Nenke,8-7,8,7,1,0,Completed,true,false,false
+AP007142,20 Aug 22,14,Lauriston,Elsternwick Park Blue,No. 2,Om Rao,Guillaume Drelon,Guillaume Drelon,3-8,3,8,0,1,Completed,true,false,true
+AP007142,20 Aug 22,14,Lauriston,Elsternwick Park Blue,No. 3,Aaron Immermann,Mark Loosschilder,Mark Loosschilder,0-8,0,8,0,1,Completed,true,false,false
+AP007142,20 Aug 22,14,Lauriston,Elsternwick Park Blue,No. 4,George Papadimitrious,Adam Neilands,George Papadimitrious,8-4,8,4,1,0,Completed,true,false,false
+AP007143,20 Aug 22,14,Ormond,St Pats Mentone,No. 1,Nathan McCracken,Cameron De Silva,Nathan McCracken,8-7,8,7,1,0,Completed,true,false,false
+AP007143,20 Aug 22,14,Ormond,St Pats Mentone,No. 2,Ben Darrou,David Lawry,Ben Darrou,8-5,8,5,1,0,Completed,true,false,false
+AP007143,20 Aug 22,14,Ormond,St Pats Mentone,No. 3,Andrew Lipson,Sam Clayton,Sam Clayton,6-8,6,8,0,1,Completed,true,false,false
+AP007143,20 Aug 22,14,Ormond,St Pats Mentone,No. 4,Simon Currey,Mike De Silva,Simon Currey,8-5,8,5,1,0,Completed,true,true,false
+AP007151,27 Aug 22,15,Clarinda,St Pats Mentone,No. 1,Tri Dinh,Alex Chingarev,Tri Dinh,8-2,8,2,1,0,Completed,true,false,false
+AP007151,27 Aug 22,15,Clarinda,St Pats Mentone,No. 2,Kosta Pliatsikas,David Lawry,David Lawry,0-8,0,8,0,1,Completed,true,false,false
+AP007151,27 Aug 22,15,Clarinda,St Pats Mentone,No. 3,Cory Hall,Sam Clayton,Cory Hall,8-7,8,7,1,0,Completed,true,false,false
+AP007151,27 Aug 22,15,Clarinda,St Pats Mentone,No. 4,Johnny Pliatsikas,Mike De Silva,Mike De Silva,4-8,4,8,0,1,Completed,true,false,false
+AP007153,27 Aug 22,15,Elsternwick Park Blue,Ormond,No. 1,Matt Anstee,Steve Gelagin,Steve Gelagin,3-8,3,8,0,1,Completed,true,false,false
+AP007153,27 Aug 22,15,Elsternwick Park Blue,Ormond,No. 2,Guillaume Drelon,Ben Darrou,Ben Darrou,3-8,3,8,0,1,Completed,true,true,false
+AP007153,27 Aug 22,15,Elsternwick Park Blue,Ormond,No. 3,Mark Loosschilder,Chris Gogoll,Mark Loosschilder,8-6,8,6,1,0,Completed,true,false,false
+AP007153,27 Aug 22,15,Elsternwick Park Blue,Ormond,No. 4,Alex Pun,Simon Currey,Alex Pun,8-4,8,4,1,0,Completed,true,false,true
+AP007321,,16,St Pats Mentone,Ormond,No. 1,Cameron De Silva,Nathan McCracken,Cameron De Silva,8-6,8,6,1,0,Completed,true,false,false
+AP007321,,16,St Pats Mentone,Ormond,No. 2,Alex Chingarev,Ben Darrou,Ben Darrou,2-8,2,8,0,1,Completed,true,false,false
+AP007321,,16,St Pats Mentone,Ormond,No. 3,David Lawry,Andrew Lipson,David Lawry,8-6,8,6,1,0,Completed,true,false,false
+AP007321,,16,St Pats Mentone,Ormond,No. 4,Sam Clayton,Chris Gogoll,Chris Gogoll,3-8,3,8,0,1,Completed,true,false,false

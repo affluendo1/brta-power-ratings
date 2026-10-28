@@ -1,0 +1,60 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP004011,04 May 24,1,regular,Round 1,Le Page,Clarinda,6,2,2,2,4,4,37,34,Completed,
+AP004012,04 May 24,1,regular,Round 1,Langwarrin Blue,Hurlingham Park,7,1,3,1,6,3,43,44,Completed,
+AP004013,04 May 24,1,regular,Round 1,FCTC,Coatesville,6,2,2,2,5,4,43,43,Completed,
+AP004014,04 May 24,1,regular,Round 1,Langwarrin White,Ormond,8,0,4,0,8,2,58,44,Completed,
+AP004021,11 May 24,2,regular,Round 2,Ormond,Le Page,7,1,3,1,7,4,60,54,Completed,
+AP004023,11 May 24,2,regular,Round 2,Hurlingham Park,FCTC,1,7,1,3,3,7,31,53,Completed,
+AP004024,11 May 24,2,regular,Round 2,Coatesville,Langwarrin White,8,0,4,0,8,2,60,40,Completed,
+pending-ap004-r2-clarinda-langwarrin-blue,11 May 24,2,regular,Round 2,Clarinda,Langwarrin Blue,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP004031,18 May 24,3,regular,Round 3,Le Page,Coatesville,1,7,1,3,3,7,45,58,Completed,
+AP004032,18 May 24,3,regular,Round 3,Langwarrin Blue,Ormond,7,1,3,1,6,2,38,21,Completed,
+AP004033,18 May 24,3,regular,Round 3,FCTC,Clarinda,6,2,2,2,5,4,48,34,Completed,
+AP004034,18 May 24,3,regular,Round 3,Langwarrin White,Hurlingham Park,7,1,3,1,7,2,51,32,Completed,
+AP004041,25 May 24,4,regular,Round 4,Hurlingham Park,Le Page,1,7,1,3,2,7,31,50,Completed,
+AP004042,25 May 24,4,regular,Round 4,Coatesville,Langwarrin Blue,7,1,3,1,6,2,43,31,Completed,
+AP004043,25 May 24,4,regular,Round 4,Ormond,FCTC,4.5,3.5,2,1,5,5,52,48,Completed,
+AP004044,25 May 24,4,regular,Round 4,Clarinda,Langwarrin White,1,7,1,3,2,7,30,52,Completed,
+AP004051,01 Jun 24,5,regular,Round 5,FCTC,Langwarrin White,1,7,1,3,3,6,27,42,Completed,
+AP004052,01 Jun 24,5,regular,Round 5,Ormond,Coatesville,2,6,2,2,5,6,53,54,Completed,
+AP004053,01 Jun 24,5,regular,Round 5,Hurlingham Park,Clarinda,6,2,2,2,4,4,45,41,Completed,
+AP004054,01 Jun 24,5,regular,Round 5,Le Page,Langwarrin Blue,7,1,3,1,6,3,42,40,Completed,
+AP004061,15 Jun 24,6,regular,Round 6,Langwarrin Blue,FCTC,6,2,2,2,6,4,47,36,Completed,
+AP004062,15 Jun 24,6,regular,Round 6,Langwarrin White,Le Page,8,0,4,0,8,1,53,29,Completed,
+AP004063,15 Jun 24,6,regular,Round 6,Coatesville,Hurlingham Park,8,0,4,0,8,1,52,30,Completed,
+AP004064,15 Jun 24,6,regular,Round 6,Clarinda,Ormond,1,7,1,3,2,6,29,41,Completed,
+AP004071,22 Jun 24,7,regular,Round 7,Le Page,FCTC,2,6,2,2,4,5,37,44,Completed,
+AP004072,22 Jun 24,7,regular,Round 7,Langwarrin Blue,Langwarrin White,7,1,3,1,6,2,50,38,Completed,
+AP004073,22 Jun 24,7,regular,Round 7,Ormond,Hurlingham Park,8,0,4,0,8,1,54,29,Completed,
+AP004074,22 Jun 24,7,regular,Round 7,Coatesville,Clarinda,7,1,3,1,6,3,45,41,Completed,
+pending-ap004-r8-clarinda-le-page,29 Jun 24,8,regular,Round 8,Clarinda,Le Page,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap004-r8-coatesville-fctc,29 Jun 24,8,regular,Round 8,Coatesville,FCTC,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap004-r8-hurlingham-park-langwarrin-blue,29 Jun 24,8,regular,Round 8,Hurlingham Park,Langwarrin Blue,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap004-r8-ormond-langwarrin-white,29 Jun 24,8,regular,Round 8,Ormond,Langwarrin White,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP004091,13 Jul 24,9,regular,Round 9,Le Page,Ormond,0,8,0,4,0,8,17,48,Completed,
+AP004092,13 Jul 24,9,regular,Round 9,Langwarrin Blue,Clarinda,7,1,3,1,7,3,53,38,Completed,
+AP004094,13 Jul 24,9,regular,Round 9,Langwarrin White,Coatesville,6,2,2,2,6,4,57,43,Completed,
+pending-ap004-r9-fctc-hurlingham-park,13 Jul 24,9,regular,Round 9,FCTC,Hurlingham Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap004-r10-clarinda-fctc,20 Jul 24,10,regular,Round 10,Clarinda,FCTC,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap004-r10-coatesville-le-page,20 Jul 24,10,regular,Round 10,Coatesville,Le Page,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap004-r10-hurlingham-park-langwarrin-white,20 Jul 24,10,regular,Round 10,Hurlingham Park,Langwarrin White,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap004-r10-ormond-langwarrin-blue,20 Jul 24,10,regular,Round 10,Ormond,Langwarrin Blue,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap004-r11-fctc-ormond,27 Jul 24,11,regular,Round 11,FCTC,Ormond,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap004-r11-langwarrin-blue-coatesville,27 Jul 24,11,regular,Round 11,Langwarrin Blue,Coatesville,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap004-r11-langwarrin-white-clarinda,27 Jul 24,11,regular,Round 11,Langwarrin White,Clarinda,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap004-r11-le-page-hurlingham-park,27 Jul 24,11,regular,Round 11,Le Page,Hurlingham Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP004121,03 Aug 24,12,regular,Round 12,Langwarrin White,FCTC,8,0,4,0,8,2,57,37,Completed,
+AP004122,03 Aug 24,12,regular,Round 12,Coatesville,Ormond,2,6,2,2,5,5,47,52,Completed,
+AP004123,03 Aug 24,12,regular,Round 12,Clarinda,Hurlingham Park,8,0,4,0,8,0,49,24,Completed,
+AP004124,03 Aug 24,12,regular,Round 12,Langwarrin Blue,Le Page,8,0,4,0,8,0,49,18,Completed,
+AP004131,10 Aug 24,13,regular,Round 13,FCTC,Langwarrin Blue,1,7,1,3,3,6,30,47,Completed,
+AP004132,10 Aug 24,13,regular,Round 13,Le Page,Langwarrin White,0,8,0,4,1,8,27,54,Completed,
+AP004133,10 Aug 24,13,regular,Round 13,Hurlingham Park,Coatesville,2,6,2,2,4,4,33,36,Completed,
+AP004134,10 Aug 24,13,regular,Round 13,Ormond,Clarinda,2,6,2,2,4,5,40,46,Completed,
+AP004141,17 Aug 24,14,regular,Round 14,FCTC,Le Page,7,1,3,1,6,2,41,36,Completed,
+AP004142,17 Aug 24,14,regular,Round 14,Langwarrin White,Langwarrin Blue,1,7,1,3,4,7,50,64,Completed,
+AP004143,17 Aug 24,14,regular,Round 14,Hurlingham Park,Ormond,1,7,1,3,3,6,38,50,Completed,
+AP004144,17 Aug 24,14,regular,Round 14,Clarinda,Coatesville,1,7,1,3,3,7,37,54,Completed,
+AP004301,,16,semi_final,Semi-final,Coatesville,Ormond,2,6,2,2,4,4,30,37,Completed,
+pending-ap004-r16-langwarrin-white-langwarrin-blue,,16,semi_final,Semi-final,Langwarrin White,Langwarrin Blue,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+AP004321,,17,grand_final,Grand final · TROLS entry 2,Langwarrin Blue,Ormond,6,2,2,2,5,5,51,47,Completed,

@@ -1,0 +1,60 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP001011,07 Oct 23,1,regular,Round 1,BLTC Blue,BLTC White,7,3,5,4,,,51,51,Completed,
+AP001012,07 Oct 23,1,regular,Round 1,Dendy Park Blue,BLTC Black,10,0,8,0,,,56,20,Completed,
+AP001013,07 Oct 23,1,regular,Round 1,Dendy Park Red,Black Rock,0,10,0,8,,,15,57,Completed,
+AP001014,07 Oct 23,1,regular,Round 1,Mt Eliza,Overport Park,1,9,2,7,,,38,58,Completed,
+AP001021,14 Oct 23,2,regular,Round 2,Overport Park,BLTC Blue,2,8,3,6,,,40,53,Completed,
+AP001022,14 Oct 23,2,regular,Round 2,BLTC White,Dendy Park Blue,2,8,3,6,,,39,56,Completed,
+AP001023,14 Oct 23,2,regular,Round 2,BLTC Black,Dendy Park Red,9,1,7,2,,,54,27,Completed,
+AP001024,14 Oct 23,2,regular,Round 2,Black Rock,Mt Eliza,2,8,3,5,,,40,48,Completed,
+AP001031,21 Oct 23,3,regular,Round 3,BLTC Blue,Black Rock,10,0,8,0,,,58,24,Completed,
+AP001032,21 Oct 23,3,regular,Round 3,Dendy Park Blue,Overport Park,9,1,7,2,,,57,38,Completed,
+AP001033,21 Oct 23,3,regular,Round 3,Dendy Park Red,BLTC White,2,8,3,5,,,42,45,Completed,
+AP001034,21 Oct 23,3,regular,Round 3,Mt Eliza,BLTC Black,9,1,7,1,,,54,34,Completed,
+AP001041,28 Oct 23,4,regular,Round 4,BLTC Black,BLTC Blue,1,9,1,7,,,23,54,Completed,
+AP001042,28 Oct 23,4,regular,Round 4,Black Rock,Dendy Park Blue,0,10,0,8,,,29,58,Completed,
+AP001043,28 Oct 23,4,regular,Round 4,Overport Park,Dendy Park Red,10,0,8,0,,,58,26,Completed,
+AP001044,28 Oct 23,4,regular,Round 4,BLTC White,Mt Eliza,8,2,5,4,,,55,40,Completed,
+AP001051,11 Nov 23,5,regular,Round 5,Dendy Park Red,Mt Eliza,1,9,2,7,,,35,59,Completed,
+AP001052,11 Nov 23,5,regular,Round 5,Overport Park,Black Rock,9,1,7,1,,,53,24,Completed,
+AP001053,11 Nov 23,5,regular,Round 5,BLTC Black,BLTC White,7,3,5,4,,,53,41,Completed,
+AP001054,11 Nov 23,5,regular,Round 5,BLTC Blue,Dendy Park Blue,3,7,4,5,,,34,52,Completed,
+AP001061,18 Nov 23,6,regular,Round 6,Dendy Park Blue,Dendy Park Red,8,2,6,2,,,53,34,Completed,
+AP001062,18 Nov 23,6,regular,Round 6,Mt Eliza,BLTC Blue,8,2,5,4,,,56,54,Completed,
+AP001063,18 Nov 23,6,regular,Round 6,Black Rock,BLTC Black,1,9,2,7,,,31,55,Completed,
+AP001064,18 Nov 23,6,regular,Round 6,BLTC White,Overport Park,3,7,4,5,,,43,52,Completed,
+AP001071,25 Nov 23,7,regular,Round 7,BLTC Blue,Dendy Park Red,9,1,7,1,,,52,23,Completed,
+AP001072,25 Nov 23,7,regular,Round 7,Dendy Park Blue,Mt Eliza,9,1,7,2,,,60,47,Completed,
+AP001073,25 Nov 23,7,regular,Round 7,Overport Park,BLTC Black,5.5,4.5,4,3,,,37,37,Completed,
+AP001074,25 Nov 23,7,regular,Round 7,Black Rock,BLTC White,1,9,2,6,,,37,52,Completed,
+pending-ap001-r8-black-rock-dendy-park-red,02 Dec 23,8,regular,Round 8,Black Rock,Dendy Park Red,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap001-r8-bltc-black-dendy-park-blue,02 Dec 23,8,regular,Round 8,BLTC Black,Dendy Park Blue,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap001-r8-bltc-white-bltc-blue,02 Dec 23,8,regular,Round 8,BLTC White,BLTC Blue,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap001-r8-overport-park-mt-eliza,02 Dec 23,8,regular,Round 8,Overport Park,Mt Eliza,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap001-r9-bltc-blue-overport-park,09 Dec 23,9,regular,Round 9,BLTC Blue,Overport Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap001-r9-dendy-park-blue-bltc-white,09 Dec 23,9,regular,Round 9,Dendy Park Blue,BLTC White,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap001-r9-dendy-park-red-bltc-black,09 Dec 23,9,regular,Round 9,Dendy Park Red,BLTC Black,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap001-r9-mt-eliza-black-rock,09 Dec 23,9,regular,Round 9,Mt Eliza,Black Rock,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP001101,16 Dec 23,10,regular,Round 10,Black Rock,BLTC Blue,1,9,2,7,,,38,56,Completed,
+AP001102,16 Dec 23,10,regular,Round 10,Overport Park,Dendy Park Blue,1,9,1,7,,,34,53,Completed,
+AP001103,16 Dec 23,10,regular,Round 10,BLTC White,Dendy Park Red,10,0,8,0,,,56,11,Completed,
+AP001104,16 Dec 23,10,regular,Round 10,BLTC Black,Mt Eliza,8,2,5,3,,,42,36,Completed,
+AP001111,03 Feb 24,11,regular,Round 11,BLTC Blue,BLTC Black,10,0,8,0,,,56,13,Completed,
+AP001112,03 Feb 24,11,regular,Round 11,Dendy Park Blue,Black Rock,8,2,5,3,,,44,40,Completed,
+AP001113,03 Feb 24,11,regular,Round 11,Dendy Park Red,Overport Park,2,8,3,6,,,38,52,Completed,
+AP001114,03 Feb 24,11,regular,Round 11,Mt Eliza,BLTC White,9,1,7,2,,,58,37,Completed,
+AP001121,10 Feb 24,12,regular,Round 12,Mt Eliza,Dendy Park Red,10,0,8,1,,,61,28,Completed,
+AP001122,10 Feb 24,12,regular,Round 12,Black Rock,Overport Park,8,2,5,4,,,54,51,Completed,
+AP001123,10 Feb 24,12,regular,Round 12,BLTC White,BLTC Black,9,1,7,1,,,48,16,Completed,
+AP001124,10 Feb 24,12,regular,Round 12,Dendy Park Blue,BLTC Blue,3,7,4,4,,,42,45,Completed,
+AP001131,17 Feb 24,13,regular,Round 13,Dendy Park Red,Dendy Park Blue,0,10,1,8,,,22,61,Completed,
+AP001132,17 Feb 24,13,regular,Round 13,BLTC Blue,Mt Eliza,2,8,3,5,,,39,46,Completed,
+AP001133,17 Feb 24,13,regular,Round 13,BLTC Black,Black Rock,2,8,3,6,,,35,54,Completed,
+AP001134,17 Feb 24,13,regular,Round 13,Overport Park,BLTC White,8,2,6,2,,,51,39,Completed,
+AP001142,24 Feb 24,14,regular,Round 14,Mt Eliza,Dendy Park Blue,1,9,2,7,,,31,52,Completed,
+pending-ap001-r14-bltc-black-overport-park,24 Feb 24,14,regular,Round 14,BLTC Black,Overport Park,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+pending-ap001-r14-bltc-white-black-rock,24 Feb 24,14,regular,Round 14,BLTC White,Black Rock,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+pending-ap001-r14-dendy-park-red-bltc-blue,24 Feb 24,14,regular,Round 14,Dendy Park Red,BLTC Blue,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+AP001301,,16,semi_final,Semi-final,Dendy Park Blue,BLTC White,8,2,6,3,,,56,40,Completed,
+AP001302,,16,semi_final,Semi-final,BLTC Blue,Overport Park,8,2,6,3,,,55,35,Completed,
+AP001321,,17,grand_final,Grand final · TROLS entry 2,Dendy Park Blue,BLTC Blue,8.5,1.5,6,2,,,54,45,Completed,

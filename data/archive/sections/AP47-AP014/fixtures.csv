@@ -1,0 +1,60 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP014011,07 Oct 23,1,regular,Round 1,Gladeswood,Hawthorn,1,7,1,3,2,6,28,44,Completed,
+AP014012,07 Oct 23,1,regular,Round 1,Royal South Yarra Navy,Pakenham,8,0,4,0,8,1,52,20,Completed,
+AP014013,07 Oct 23,1,regular,Round 1,Royal South Yarra Gold,Black Rock,6,2,2,2,5,4,45,42,Completed,
+AP014014,07 Oct 23,1,regular,Round 1,Overport Park,Kooyong,1,7,1,3,2,7,33,51,Completed,
+AP014021,14 Oct 23,2,regular,Round 2,Kooyong,Gladeswood,1,7,1,3,4,7,52,61,Completed,
+AP014022,14 Oct 23,2,regular,Round 2,Hawthorn,Royal South Yarra Navy,1,7,1,3,2,7,26,53,Completed,
+AP014023,14 Oct 23,2,regular,Round 2,Pakenham,Royal South Yarra Gold,1,7,1,3,2,7,16,51,Completed,
+AP014024,14 Oct 23,2,regular,Round 2,Black Rock,Overport Park,8,0,4,0,8,1,52,25,Completed,
+AP014031,21 Oct 23,3,regular,Round 3,Gladeswood,Black Rock,1,7,1,3,4,6,44,51,Completed,
+AP014033,21 Oct 23,3,regular,Round 3,Royal South Yarra Gold,Hawthorn,2,6,2,2,4,5,35,40,Completed,
+AP014034,21 Oct 23,3,regular,Round 3,Overport Park,Pakenham,7,1,3,1,6,3,53,44,Completed,
+pending-ap014-r3-royal-south-yarra-navy-kooyong,21 Oct 23,3,regular,Round 3,Royal South Yarra Navy,Kooyong,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP014041,28 Oct 23,4,regular,Round 4,Pakenham,Gladeswood,6,2,2,2,5,4,48,44,Completed,
+AP014042,28 Oct 23,4,regular,Round 4,Black Rock,Royal South Yarra Navy,0,8,0,4,1,8,29,54,Completed,
+AP014043,28 Oct 23,4,regular,Round 4,Kooyong,Royal South Yarra Gold,0,8,0,4,0,8,19,48,Completed,
+AP014044,28 Oct 23,4,regular,Round 4,Hawthorn,Overport Park,7,1,3,1,7,5,68,62,Completed,
+AP014051,11 Nov 23,5,regular,Round 5,Royal South Yarra Gold,Overport Park,7,1,3,1,7,4,55,48,Completed,
+AP014052,11 Nov 23,5,regular,Round 5,Kooyong,Black Rock,1,7,1,3,2,6,33,42,Completed,
+AP014053,11 Nov 23,5,regular,Round 5,Pakenham,Hawthorn,0,8,0,4,1,8,30,51,Completed,
+AP014054,11 Nov 23,5,regular,Round 5,Gladeswood,Royal South Yarra Navy,1,7,1,3,5,6,47,48,Completed,
+AP014061,18 Nov 23,6,regular,Round 6,Royal South Yarra Navy,Royal South Yarra Gold,7,1,3,1,6,2,40,26,Completed,
+AP014063,18 Nov 23,6,regular,Round 6,Black Rock,Pakenham,8,0,4,0,8,0,48,14,Completed,
+AP014064,18 Nov 23,6,regular,Round 6,Hawthorn,Kooyong,2,6,2,2,4,4,32,37,Completed,
+pending-ap014-r6-overport-park-gladeswood,18 Nov 23,6,regular,Round 6,Overport Park,Gladeswood,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP014071,25 Nov 23,7,regular,Round 7,Gladeswood,Royal South Yarra Gold,6,2,2,2,4,4,33,32,Completed,
+AP014073,25 Nov 23,7,regular,Round 7,Kooyong,Pakenham,6,2,2,2,5,5,51,50,Completed,
+AP014074,25 Nov 23,7,regular,Round 7,Black Rock,Hawthorn,6,2,2,2,4,4,34,33,Completed,
+pending-ap014-r7-royal-south-yarra-navy-overport-park,25 Nov 23,7,regular,Round 7,Royal South Yarra Navy,Overport Park,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+pending-ap014-r8-black-rock-royal-south-yarra-gold,02 Dec 23,8,regular,Round 8,Black Rock,Royal South Yarra Gold,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap014-r8-hawthorn-gladeswood,02 Dec 23,8,regular,Round 8,Hawthorn,Gladeswood,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap014-r8-kooyong-overport-park,02 Dec 23,8,regular,Round 8,Kooyong,Overport Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap014-r8-pakenham-royal-south-yarra-navy,02 Dec 23,8,regular,Round 8,Pakenham,Royal South Yarra Navy,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap014-r9-gladeswood-kooyong,09 Dec 23,9,regular,Round 9,Gladeswood,Kooyong,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap014-r9-overport-park-black-rock,09 Dec 23,9,regular,Round 9,Overport Park,Black Rock,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap014-r9-royal-south-yarra-gold-pakenham,09 Dec 23,9,regular,Round 9,Royal South Yarra Gold,Pakenham,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap014-r9-royal-south-yarra-navy-hawthorn,09 Dec 23,9,regular,Round 9,Royal South Yarra Navy,Hawthorn,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP014101,16 Dec 23,10,regular,Round 10,Black Rock,Gladeswood,7,1,3,1,6,2,43,29,Completed,
+AP014102,16 Dec 23,10,regular,Round 10,Kooyong,Royal South Yarra Navy,0,8,0,4,0,8,23,50,Completed,
+AP014103,16 Dec 23,10,regular,Round 10,Hawthorn,Royal South Yarra Gold,2,6,2,2,4,4,33,36,Completed,
+AP014104,16 Dec 23,10,regular,Round 10,Pakenham,Overport Park,1,7,1,3,3,7,44,54,Completed,
+AP014111,03 Feb 24,11,regular,Round 11,Gladeswood,Pakenham,6,2,2,2,5,4,37,37,Completed,
+AP014112,03 Feb 24,11,regular,Round 11,Royal South Yarra Navy,Black Rock,8,0,4,0,8,0,48,12,Completed,
+AP014113,03 Feb 24,11,regular,Round 11,Royal South Yarra Gold,Kooyong,7,1,3,1,6,2,47,29,Completed,
+AP014114,03 Feb 24,11,regular,Round 11,Overport Park,Hawthorn,7,1,3,1,6,5,53,55,Completed,
+AP014121,10 Feb 24,12,regular,Round 12,Overport Park,Royal South Yarra Gold,8,0,4,0,8,2,57,41,Completed,
+AP014122,10 Feb 24,12,regular,Round 12,Black Rock,Kooyong,8,0,4,0,8,1,53,37,Completed,
+AP014123,10 Feb 24,12,regular,Round 12,Hawthorn,Pakenham,6,2,2,2,6,4,56,39,Completed,
+AP014124,10 Feb 24,12,regular,Round 12,Royal South Yarra Navy,Gladeswood,6,2,2,2,4,4,40,32,Completed,
+AP014131,17 Feb 24,13,regular,Round 13,Royal South Yarra Gold,Royal South Yarra Navy,4,4,2,2,4,4,38,38,Completed,
+AP014132,17 Feb 24,13,regular,Round 13,Gladeswood,Overport Park,2,6,2,2,4,4,36,37,Completed,
+AP014133,17 Feb 24,13,regular,Round 13,Pakenham,Black Rock,0,8,0,4,0,8,29,51,Completed,
+AP014134,17 Feb 24,13,regular,Round 13,Kooyong,Hawthorn,7,1,3,1,6,3,49,46,Completed,
+AP014141,24 Feb 24,14,regular,Round 14,Royal South Yarra Gold,Gladeswood,0,8,0,4,1,8,9,52,Completed,
+AP014142,24 Feb 24,14,regular,Round 14,Overport Park,Royal South Yarra Navy,2,6,2,2,4,5,37,41,Completed,
+AP014143,24 Feb 24,14,regular,Round 14,Pakenham,Kooyong,1,7,1,3,2,7,39,57,Completed,
+AP014144,24 Feb 24,14,regular,Round 14,Hawthorn,Black Rock,2,6,2,2,4,4,29,31,Completed,
+AP014301,,16,semi_final,Semi-final,Royal South Yarra Navy,Overport Park,8,0,4,0,8,0,48,12,Completed,
+AP014302,,16,semi_final,Semi-final,Black Rock,Royal South Yarra Gold,6,2,2,2,4,4,36,29,Completed,
+AP014321,,17,grand_final,Grand final · TROLS entry 2,Royal South Yarra Navy,Black Rock,7,1,3,1,6,2,40,26,Completed,

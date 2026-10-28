@@ -1,0 +1,92 @@
+{
+  "asset_id": "AP21-AP011",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Winter 2010",
+  "season_id": "AP21",
+  "season_label": "Winter 2010",
+  "source_section_code": "AP011",
+  "section_label": "Singles/Doubles 1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "St Pats Mentone",
+      "wins": 0,
+      "points": 91.5,
+      "percentage": 176.01,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "Lauriston",
+      "wins": 0,
+      "points": 73.5,
+      "percentage": 138.85,
+      "marker": "P"
+    },
+    {
+      "position": 3,
+      "team": "Glen Huntly",
+      "wins": 0,
+      "points": 49.5,
+      "percentage": 87.05,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Le Page",
+      "wins": 0,
+      "points": 49,
+      "percentage": 119.15,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Highmoor Uniting 1",
+      "wins": 0,
+      "points": 38.5,
+      "percentage": 75.46,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Highmoor Uniting 2",
+      "wins": 0,
+      "points": 13,
+      "percentage": 48.68,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 3,
+    "singlesBestOf": 3,
+    "setTarget": 6,
+    "doublesSlots": 3,
+    "doublesBestOf": 1,
+    "doublesTarget": 10,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP21-AP011",
+  "fixtures": 47,
+  "completed_fixtures": 47,
+  "draw_fixtures": 57,
+  "singles_rubbers": 68,
+  "doubles_rubbers": 76,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP011061 singles No. 1: '6-2 1-1'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP011061 singles No. 2: '3-4'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP011063 singles No. 2: '6-3 2-3'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP011311 singles No. 2: '6-1 4-6 0-1'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

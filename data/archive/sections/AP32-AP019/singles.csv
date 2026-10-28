@@ -1,0 +1,237 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP019011,10 Oct 15,1,Le Page,Dendy Park,No. 1,Nathan Coombes,Ian Wilkinson,Nathan Coombes,8-3,8,3,1,0,Completed,true,false,false
+AP019011,10 Oct 15,1,Le Page,Dendy Park,No. 2,Matt Gatti,Bruce Watkins,Matt Gatti,8-0,8,0,1,0,Completed,true,false,false
+AP019011,10 Oct 15,1,Le Page,Dendy Park,No. 3,Tony Sofo,Anthony Murray,Tony Sofo,8-6,8,6,1,0,Completed,true,false,false
+AP019011,10 Oct 15,1,Le Page,Dendy Park,No. 4,Trevor Hastings,John Riley,John Riley,3-8,3,8,0,1,Completed,true,false,false
+AP019012,10 Oct 15,1,Albert Reserve,Parkdale,No. 1,Richmond Phare,Tom Bodley,Tom Bodley,4-8,4,8,0,1,Completed,true,false,false
+AP019012,10 Oct 15,1,Albert Reserve,Parkdale,No. 2,Lukas Kellett,Nick Carlson,Lukas Kellett,8-6,8,6,1,0,Completed,true,false,false
+AP019012,10 Oct 15,1,Albert Reserve,Parkdale,No. 3,Ivan Carrizo,Shaun Vandebrok,Ivan Carrizo,8-1,8,1,1,0,Completed,true,false,false
+AP019012,10 Oct 15,1,Albert Reserve,Parkdale,No. 4,Manoj Kumar,[Unnamed emergency — TROLS AP019012 away code 4],Manoj Kumar,8-0,8,0,1,0,Completed,false,false,true
+AP019013,10 Oct 15,1,East Malvern,Kooyong,No. 1,Marcus Young,Peter May,Marcus Young,8-5,8,5,1,0,Completed,true,false,false
+AP019013,10 Oct 15,1,East Malvern,Kooyong,No. 2,Peter Car,Kris Hyde,Peter Car,8-2,8,2,1,0,Completed,true,false,false
+AP019013,10 Oct 15,1,East Malvern,Kooyong,No. 3,Alan Young,Matt Summers,Alan Young,8-2,8,2,1,0,Completed,true,false,false
+AP019013,10 Oct 15,1,East Malvern,Kooyong,No. 4,Peter Goldberg,Steve Callahan,Steve Callahan,3-8,3,8,0,1,Completed,true,false,false
+AP019014,10 Oct 15,1,Monash University,Kings Park,No. 1,Broc Song,Hayden Broadbent,Hayden Broadbent,6-8,6,8,0,1,Completed,true,false,false
+AP019014,10 Oct 15,1,Monash University,Kings Park,No. 2,Leo Zhu,Finn Rasmussen,Leo Zhu,8-3,8,3,1,0,Completed,true,false,true
+AP019014,10 Oct 15,1,Monash University,Kings Park,No. 3,James Virth,Glen Te Wierik,Glen Te Wierik,4-8,4,8,0,1,Completed,true,false,false
+AP019014,10 Oct 15,1,Monash University,Kings Park,No. 4,Philip Phung,Lyndon Krause,Philip Phung,8-5,8,5,1,0,Completed,true,false,false
+AP019021,17 Oct 15,2,Kings Park,Le Page,No. 1,Nathan Broadbent,Matt Gatti,Matt Gatti,2-8,2,8,0,1,Completed,true,false,false
+AP019021,17 Oct 15,2,Kings Park,Le Page,No. 2,Hayden Broadbent,Tony Sofo,Hayden Broadbent,8-1,8,1,1,0,Completed,true,false,false
+AP019021,17 Oct 15,2,Kings Park,Le Page,No. 3,Callum Campbell,Brian Govan,Callum Campbell,8-3,8,3,1,0,Completed,true,false,false
+AP019021,17 Oct 15,2,Kings Park,Le Page,No. 4,Lyndon Krause,Trevor Hastings,Trevor Hastings,8-9,8,9,0,1,Completed,true,false,false
+AP019022,17 Oct 15,2,Dendy Park,Albert Reserve,No. 1,Ian Wilkinson,Lukas Kellett,Ian Wilkinson,8-3,8,3,1,0,Completed,true,false,false
+AP019022,17 Oct 15,2,Dendy Park,Albert Reserve,No. 2,Bruce Watkins,Danny Thompson,Bruce Watkins,8-1,8,1,1,0,Completed,true,false,false
+AP019022,17 Oct 15,2,Dendy Park,Albert Reserve,No. 3,Anthony Murray,Richmond Phare,Richmond Phare,6-8,6,8,0,1,Completed,true,false,false
+AP019022,17 Oct 15,2,Dendy Park,Albert Reserve,No. 4,Chris Trotter,Manoj Kumar,Chris Trotter,8-0,8,0,1,0,Completed,true,false,false
+AP019023,17 Oct 15,2,Parkdale,East Malvern,No. 1,Tom Bodley,Marcus Young,Tom Bodley,8-4,8,4,1,0,Completed,true,false,false
+AP019023,17 Oct 15,2,Parkdale,East Malvern,No. 2,Nick Carlson,Peter Car,Nick Carlson,8-5,8,5,1,0,Completed,true,false,false
+AP019023,17 Oct 15,2,Parkdale,East Malvern,No. 3,Tyler Bradley,Alan Young,Tyler Bradley,8-6,8,6,1,0,Completed,true,false,false
+AP019023,17 Oct 15,2,Parkdale,East Malvern,No. 4,Damien Basterfield,Andrew Pipingas,Andrew Pipingas,2-8,2,8,0,1,Completed,true,false,false
+AP019024,17 Oct 15,2,Kooyong,Monash University,No. 1,Peter May,Broc Song,Broc Song,3-8,3,8,0,1,Completed,true,false,false
+AP019024,17 Oct 15,2,Kooyong,Monash University,No. 2,Marshall Bull,James Virth,Marshall Bull,8-1,8,1,1,0,Completed,true,false,false
+AP019024,17 Oct 15,2,Kooyong,Monash University,No. 3,Kris Hyde,Philip Phung,Kris Hyde,8-5,8,5,1,0,Completed,true,false,false
+AP019024,17 Oct 15,2,Kooyong,Monash University,No. 4,Steve Callahan,Ken Kennedy,Ken Kennedy,3-8,3,8,0,1,Completed,true,false,false
+AP019031,24 Oct 15,3,Le Page,Kooyong,No. 1,Nathan Coombes,Peter May,Nathan Coombes,8-1,8,1,1,0,Completed,true,false,false
+AP019031,24 Oct 15,3,Le Page,Kooyong,No. 2,Matt Gatti,Kris Hyde,Matt Gatti,8-4,8,4,1,0,Completed,true,false,false
+AP019031,24 Oct 15,3,Le Page,Kooyong,No. 3,Brian Govan,Matt Summers,Brian Govan,8-2,8,2,1,0,Completed,true,false,false
+AP019031,24 Oct 15,3,Le Page,Kooyong,No. 4,Trevor Hastings,Steve Callahan,Trevor Hastings,9-8,9,8,1,0,Completed,true,false,false
+AP019032,24 Oct 15,3,Albert Reserve,Kings Park,No. 1,Viranga Senadipathy,Nathan Broadbent,Nathan Broadbent,5-8,5,8,0,1,Completed,true,false,false
+AP019032,24 Oct 15,3,Albert Reserve,Kings Park,No. 2,Danny Thompson,Hayden Broadbent,Hayden Broadbent,2-8,2,8,0,1,Completed,true,false,false
+AP019032,24 Oct 15,3,Albert Reserve,Kings Park,No. 3,Richmond Phare,Finn Rasmussen,Richmond Phare,8-5,8,5,1,0,Completed,true,false,false
+AP019032,24 Oct 15,3,Albert Reserve,Kings Park,No. 4,Ivan Carrizo,Callum Campbell,Ivan Carrizo,8-4,8,4,1,0,Completed,true,false,false
+AP019033,24 Oct 15,3,East Malvern,Dendy Park,No. 1,Dan Lustri,Ian Wilkinson,Dan Lustri,8-2,8,2,1,0,Completed,true,false,false
+AP019033,24 Oct 15,3,East Malvern,Dendy Park,No. 2,Marcus Young,Peter Fleming,Marcus Young,8-5,8,5,1,0,Completed,true,false,false
+AP019033,24 Oct 15,3,East Malvern,Dendy Park,No. 3,Peter Car,Anthony Murray,Anthony Murray,6-8,6,8,0,1,Completed,true,false,false
+AP019033,24 Oct 15,3,East Malvern,Dendy Park,No. 4,Alan Young,Chris Trotter,Alan Young,9-7,9,7,1,0,Completed,true,false,false
+AP019034,24 Oct 15,3,Monash University,Parkdale,No. 1,Broc Song,Tom Bodley,Broc Song,8-1,8,1,1,0,Completed,true,false,false
+AP019034,24 Oct 15,3,Monash University,Parkdale,No. 2,Minh Hoa Vuong,Nick Carlson,Nick Carlson,5-8,5,8,0,1,Completed,true,false,false
+AP019034,24 Oct 15,3,Monash University,Parkdale,No. 3,Philip Phung,Tyler Bradley,Tyler Bradley,4-8,4,8,0,1,Completed,true,false,false
+AP019034,24 Oct 15,3,Monash University,Parkdale,No. 4,Ken Kennedy,Damien Basterfield,Ken Kennedy,8-1,8,1,1,0,Completed,true,false,false
+AP019041,07 Nov 15,4,Parkdale,Le Page,No. 1,Shaun Vandebrok,Nathan Coombes,Nathan Coombes,4-8,4,8,0,1,Completed,true,false,false
+AP019041,07 Nov 15,4,Parkdale,Le Page,No. 2,Jason Bartonek,Tony Sofo,Tony Sofo,1-8,1,8,0,1,Completed,true,false,false
+AP019041,07 Nov 15,4,Parkdale,Le Page,No. 3,Damien Basterfield,Brian Govan,Brian Govan,6-8,6,8,0,1,Completed,true,false,false
+AP019041,07 Nov 15,4,Parkdale,Le Page,No. 4,Luke Shi,Trevor Hastings,Trevor Hastings,6-8,6,8,0,1,Completed,true,false,false
+AP019042,07 Nov 15,4,Kooyong,Albert Reserve,No. 1,James Rundle,Lukas Kellett,James Rundle,8-1,8,1,1,0,Completed,true,false,false
+AP019042,07 Nov 15,4,Kooyong,Albert Reserve,No. 2,Peter May,Danny Thompson,Peter May,8-6,8,6,1,0,Completed,true,false,false
+AP019042,07 Nov 15,4,Kooyong,Albert Reserve,No. 3,Phillip Hyde,Manoj Kumar,Phillip Hyde,8-6,8,6,1,0,Completed,true,false,false
+AP019042,07 Nov 15,4,Kooyong,Albert Reserve,No. 4,Steve Callahan,Ivan Carrizo,Steve Callahan,9-7,9,7,1,0,Completed,true,false,false
+AP019043,07 Nov 15,4,Kings Park,East Malvern,No. 1,Nathan Broadbent,Patrick Bergin,Nathan Broadbent,8-4,8,4,1,0,Completed,true,false,false
+AP019043,07 Nov 15,4,Kings Park,East Malvern,No. 2,Hayden Broadbent,Peter Car,Hayden Broadbent,8-6,8,6,1,0,Completed,true,false,false
+AP019043,07 Nov 15,4,Kings Park,East Malvern,No. 3,Finn Rasmussen,Andrew Pipingas,Finn Rasmussen,8-3,8,3,1,0,Completed,true,false,false
+AP019043,07 Nov 15,4,Kings Park,East Malvern,No. 4,Cameron Krause,Peter Goldberg,Peter Goldberg,5-8,5,8,0,1,Completed,true,false,false
+AP019044,07 Nov 15,4,Dendy Park,Monash University,No. 1,Ian Wilkinson,Broc Song,Broc Song,6-8,6,8,0,1,Completed,true,false,false
+AP019044,07 Nov 15,4,Dendy Park,Monash University,No. 2,Bruce Watkins,Minh Hoa Vuong,Bruce Watkins,8-5,8,5,1,0,Completed,true,false,false
+AP019044,07 Nov 15,4,Dendy Park,Monash University,No. 3,Peter Fleming,Philip Phung,Peter Fleming,8-4,8,4,1,0,Completed,true,false,false
+AP019044,07 Nov 15,4,Dendy Park,Monash University,No. 4,John Riley,Ken Kennedy,Ken Kennedy,3-8,3,8,0,1,Completed,true,false,false
+AP019051,14 Nov 15,5,East Malvern,Monash University,No. 1,Marcus Young,Broc Song,Broc Song,3-8,3,8,0,1,Completed,true,false,false
+AP019051,14 Nov 15,5,East Malvern,Monash University,No. 2,Peter Car,James Virth,James Virth,3-8,3,8,0,1,Completed,true,false,false
+AP019051,14 Nov 15,5,East Malvern,Monash University,No. 3,Alan Young,Philip Phung,Philip Phung,6-8,6,8,0,1,Completed,true,false,false
+AP019051,14 Nov 15,5,East Malvern,Monash University,No. 4,Andrew Pipingas,Ken Kennedy,Andrew Pipingas,8-6,8,6,1,0,Completed,true,false,false
+AP019052,14 Nov 15,5,Kings Park,Kooyong,No. 1,Nathan Broadbent,Charlie Tulloch,Nathan Broadbent,8-2,8,2,1,0,Completed,true,false,false
+AP019052,14 Nov 15,5,Kings Park,Kooyong,No. 2,Finn Rasmussen,Peter May,Finn Rasmussen,8-3,8,3,1,0,Completed,true,false,false
+AP019052,14 Nov 15,5,Kings Park,Kooyong,No. 3,Callum Campbell,Kris Hyde,Callum Campbell,8-0,8,0,1,0,Completed,true,false,false
+AP019052,14 Nov 15,5,Kings Park,Kooyong,No. 4,Lyndon Krause,Steve Callahan,Steve Callahan,7-9,7,9,0,1,Completed,true,false,false
+AP019053,14 Nov 15,5,Parkdale,Dendy Park,No. 1,Nick Carlson,Bruce Watkins,Bruce Watkins,1-8,1,8,0,1,Completed,true,false,false
+AP019053,14 Nov 15,5,Parkdale,Dendy Park,No. 2,Shaun Vandebrok,Peter Fleming,Shaun Vandebrok,8-6,8,6,1,0,Completed,true,false,false
+AP019053,14 Nov 15,5,Parkdale,Dendy Park,No. 3,Jason Bartonek,Chris Trotter,Jason Bartonek,8-5,8,5,1,0,Completed,true,false,false
+AP019053,14 Nov 15,5,Parkdale,Dendy Park,No. 4,Damien Basterfield,Bill Craig,Bill Craig,2-8,2,8,0,1,Completed,true,false,false
+AP019054,14 Nov 15,5,Le Page,Albert Reserve,No. 1,Nathan Coombes,Lukas Kellett,Nathan Coombes,8-1,8,1,1,0,Completed,true,false,false
+AP019054,14 Nov 15,5,Le Page,Albert Reserve,No. 2,Matt Gatti,Richmond Phare,Matt Gatti,8-2,8,2,1,0,Completed,true,false,false
+AP019054,14 Nov 15,5,Le Page,Albert Reserve,No. 3,Tony Sofo,Manoj Kumar,Tony Sofo,8-0,8,0,1,0,Completed,true,false,false
+AP019054,14 Nov 15,5,Le Page,Albert Reserve,No. 4,Brian Govan,Ivan Carrizo,Ivan Carrizo,6-8,6,8,0,1,Completed,true,false,false
+AP019061,21 Nov 15,6,Albert Reserve,East Malvern,No. 1,Viranga Senadipathy,Matthew Barnes,Matthew Barnes,4-8,4,8,0,1,Completed,true,false,false
+AP019061,21 Nov 15,6,Albert Reserve,East Malvern,No. 2,Danny Thompson,Andrew McDougall,Danny Thompson,8-6,8,6,1,0,Completed,true,false,false
+AP019061,21 Nov 15,6,Albert Reserve,East Malvern,No. 3,Richmond Phare,Peter Car,Richmond Phare,8-5,8,5,1,0,Completed,true,false,false
+AP019061,21 Nov 15,6,Albert Reserve,East Malvern,No. 4,Manoj Kumar,Andrew Pipingas,Andrew Pipingas,3-8,3,8,0,1,Completed,true,false,false
+AP019062,21 Nov 15,6,Monash University,Le Page,No. 1,Broc Song,Nathan Coombes,Nathan Coombes,2-8,2,8,0,1,Completed,true,false,false
+AP019062,21 Nov 15,6,Monash University,Le Page,No. 2,Minh Hoa Vuong,Matt Gatti,Matt Gatti,1-8,1,8,0,1,Completed,true,false,false
+AP019062,21 Nov 15,6,Monash University,Le Page,No. 3,James Virth,Tony Sofo,Tony Sofo,1-8,1,8,0,1,Completed,true,false,false
+AP019062,21 Nov 15,6,Monash University,Le Page,No. 4,Ken Kennedy,Brian Govan,Ken Kennedy,8-6,8,6,1,0,Completed,true,false,false
+AP019063,21 Nov 15,6,Kooyong,Parkdale,No. 1,Dean Seeley,Tom Bodley,Dean Seeley,9-8,9,8,1,0,Completed,true,false,false
+AP019063,21 Nov 15,6,Kooyong,Parkdale,No. 2,Charlie Tulloch,Nick Carlson,Charlie Tulloch,8-2,8,2,1,0,Completed,true,false,false
+AP019063,21 Nov 15,6,Kooyong,Parkdale,No. 3,Peter May,Shaun Vandebrok,Peter May,8-6,8,6,1,0,Completed,true,false,false
+AP019063,21 Nov 15,6,Kooyong,Parkdale,No. 4,Kris Hyde,Damien Basterfield,Kris Hyde,8-3,8,3,1,0,Completed,true,false,false
+AP019064,21 Nov 15,6,Dendy Park,Kings Park,No. 1,Ian Wilkinson,Hayden Broadbent,Hayden Broadbent,6-8,6,8,0,1,Completed,true,false,false
+AP019064,21 Nov 15,6,Dendy Park,Kings Park,No. 2,Bruce Watkins,Finn Rasmussen,Bruce Watkins,9-7,9,7,1,0,Completed,true,false,false
+AP019064,21 Nov 15,6,Dendy Park,Kings Park,No. 3,Tony Saul,Callum Campbell,Callum Campbell,6-8,6,8,0,1,Completed,true,false,false
+AP019064,21 Nov 15,6,Dendy Park,Kings Park,No. 4,Chris Trotter,Lyndon Krause,Chris Trotter,9-7,9,7,1,0,Completed,true,false,false
+AP019071,28 Nov 15,7,Le Page,East Malvern,No. 1,Nathan Coombes,Dan Lustri,Dan Lustri,6-8,6,8,0,1,Completed,true,false,false
+AP019071,28 Nov 15,7,Le Page,East Malvern,No. 2,Matt Gatti,Marcus Young,Matt Gatti,8-1,8,1,1,0,Completed,true,false,false
+AP019071,28 Nov 15,7,Le Page,East Malvern,No. 3,Tony Sofo,Peter Car,Tony Sofo,8-5,8,5,1,0,Completed,true,false,false
+AP019071,28 Nov 15,7,Le Page,East Malvern,No. 4,Trevor Hastings,Alan Young,Alan Young,1-8,1,8,0,1,Completed,true,false,false
+AP019072,28 Nov 15,7,Albert Reserve,Monash University,No. 1,Lukas Kellett,Broc Song,Broc Song,4-8,4,8,0,1,Completed,true,false,false
+AP019072,28 Nov 15,7,Albert Reserve,Monash University,No. 2,Ivan Carrizo,Minh Hoa Vuong,Ivan Carrizo,8-0,8,0,1,0,Completed,true,false,false
+AP019072,28 Nov 15,7,Albert Reserve,Monash University,No. 3,Viranga Senadipathy,Philip Phung,Philip Phung,0-8,0,8,0,1,Completed,true,false,false
+AP019072,28 Nov 15,7,Albert Reserve,Monash University,No. 4,Manoj Kumar,Ken Kennedy,Ken Kennedy,2-8,2,8,0,1,Completed,true,false,false
+AP019073,28 Nov 15,7,Kings Park,Parkdale,No. 1,Nathan Broadbent,Tom Bodley,Tom Bodley,5-8,5,8,0,1,Completed,true,false,false
+AP019073,28 Nov 15,7,Kings Park,Parkdale,No. 2,Hayden Broadbent,Nick Carlson,Hayden Broadbent,8-1,8,1,1,0,Completed,true,false,false
+AP019073,28 Nov 15,7,Kings Park,Parkdale,No. 3,Finn Rasmussen,Shaun Vandebrok,Finn Rasmussen,8-2,8,2,1,0,Completed,true,false,false
+AP019073,28 Nov 15,7,Kings Park,Parkdale,No. 4,Cameron Krause,Jason Bartonek,Jason Bartonek,3-8,3,8,0,1,Completed,true,false,false
+AP019074,28 Nov 15,7,Kooyong,Dendy Park,No. 1,Charlie Geason,Ian Wilkinson,Ian Wilkinson,4-8,4,8,0,1,Completed,true,false,false
+AP019074,28 Nov 15,7,Kooyong,Dendy Park,No. 2,Peter May,Bruce Watkins,Peter May,8-6,8,6,1,0,Completed,true,false,false
+AP019074,28 Nov 15,7,Kooyong,Dendy Park,No. 3,Steve Callahan,Anthony Murray,Steve Callahan,8-6,8,6,1,0,Completed,true,false,false
+AP019074,28 Nov 15,7,Kooyong,Dendy Park,No. 4,Paul Merrigan,Chris Trotter,Paul Merrigan,8-3,8,3,1,0,Completed,true,false,false
+AP019081,05 Dec 15,8,Dendy Park,Le Page,No. 1,Bruce Watkins,Nathan Coombes,Nathan Coombes,2-8,2,8,0,1,Completed,true,false,false
+AP019081,05 Dec 15,8,Dendy Park,Le Page,No. 2,Peter Fleming,Matt Gatti,Matt Gatti,2-8,2,8,0,1,Completed,true,false,false
+AP019081,05 Dec 15,8,Dendy Park,Le Page,No. 3,Anthony Murray,Tony Sofo,Anthony Murray,8-5,8,5,1,0,Completed,true,false,false
+AP019081,05 Dec 15,8,Dendy Park,Le Page,No. 4,John Riley,Brian Govan,Brian Govan,4-8,4,8,0,1,Completed,true,false,false
+AP019082,05 Dec 15,8,Parkdale,Albert Reserve,No. 1,Tom Bodley,Lukas Kellett,Tom Bodley,8-0,8,0,1,0,Completed,true,false,false
+AP019082,05 Dec 15,8,Parkdale,Albert Reserve,No. 2,Tyler Bradley,Danny Thompson,Danny Thompson,3-8,3,8,0,1,Completed,true,false,false
+AP019082,05 Dec 15,8,Parkdale,Albert Reserve,No. 3,Jason Bartonek,Manoj Kumar,Jason Bartonek,8-1,8,1,1,0,Completed,true,false,false
+AP019082,05 Dec 15,8,Parkdale,Albert Reserve,No. 4,Damien Basterfield,Ivan Carrizo,Ivan Carrizo,3-8,3,8,0,1,Completed,true,false,false
+AP019083,05 Dec 15,8,Kooyong,East Malvern,No. 1,Charlie Tulloch,Marcus Young,Marcus Young,8-9,8,9,0,1,Completed,true,false,false
+AP019083,05 Dec 15,8,Kooyong,East Malvern,No. 2,Peter May,Peter Car,Peter May,8-1,8,1,1,0,Completed,true,false,false
+AP019083,05 Dec 15,8,Kooyong,East Malvern,No. 3,Steve Callahan,Alan Young,Alan Young,7-9,7,9,0,1,Completed,true,false,false
+AP019083,05 Dec 15,8,Kooyong,East Malvern,No. 4,Paul Merrigan,Andrew Pipingas,Paul Merrigan,8-6,8,6,1,0,Completed,true,false,false
+AP019084,05 Dec 15,8,Kings Park,Monash University,No. 1,Nathan Broadbent,Broc Song,Broc Song,1-8,1,8,0,1,Completed,true,false,false
+AP019084,05 Dec 15,8,Kings Park,Monash University,No. 2,Hayden Broadbent,Minh Hoa Vuong,Hayden Broadbent,9-7,9,7,1,0,Completed,true,false,false
+AP019084,05 Dec 15,8,Kings Park,Monash University,No. 3,Lyndon Krause,James Virth,Lyndon Krause,8-6,8,6,1,0,Completed,true,false,false
+AP019084,05 Dec 15,8,Kings Park,Monash University,No. 4,Cameron Krause,Philip Phung,Philip Phung,2-8,2,8,0,1,Completed,true,false,false
+AP019091,12 Dec 15,9,Le Page,Kings Park,No. 1,Nathan Coombes,Nathan Broadbent,Nathan Coombes,8-4,8,4,1,0,Completed,true,false,false
+AP019091,12 Dec 15,9,Le Page,Kings Park,No. 2,Matt Gatti,Hayden Broadbent,Matt Gatti,8-0,8,0,1,0,Completed,true,false,false
+AP019091,12 Dec 15,9,Le Page,Kings Park,No. 3,Brian Govan,Callum Campbell,Callum Campbell,6-8,6,8,0,1,Completed,true,false,false
+AP019091,12 Dec 15,9,Le Page,Kings Park,No. 4,Trevor Hastings,Lyndon Krause,Trevor Hastings,9-8,9,8,1,0,Completed,true,false,false
+AP019092,12 Dec 15,9,Albert Reserve,Dendy Park,No. 1,Viranga Senadipathy,Ian Wilkinson,Viranga Senadipathy,8-6,8,6,1,0,Completed,true,false,false
+AP019092,12 Dec 15,9,Albert Reserve,Dendy Park,No. 2,Danny Thompson,Peter Fleming,Danny Thompson,8-4,8,4,1,0,Completed,true,false,false
+AP019092,12 Dec 15,9,Albert Reserve,Dendy Park,No. 3,Ivan Carrizo,Anthony Murray,Anthony Murray,1-8,1,8,0,1,Completed,true,false,false
+AP019092,12 Dec 15,9,Albert Reserve,Dendy Park,No. 4,Manoj Kumar,Bill Craig,Bill Craig,0-8,0,8,0,1,Completed,true,false,false
+AP019093,12 Dec 15,9,East Malvern,Parkdale,No. 1,Marcus Young,Tom Bodley,Tom Bodley,3-8,3,8,0,1,Completed,true,false,false
+AP019093,12 Dec 15,9,East Malvern,Parkdale,No. 2,Andrew McDougall,Nicholas Charlson,Nicholas Charlson,3-8,3,8,0,1,Completed,true,false,false
+AP019093,12 Dec 15,9,East Malvern,Parkdale,No. 3,Alan Young,Jason Bartonek,Alan Young,8-2,8,2,1,0,Completed,true,false,false
+AP019093,12 Dec 15,9,East Malvern,Parkdale,No. 4,Andrew Pipingas,Damien Basterfield,Andrew Pipingas,8-3,8,3,1,0,Completed,true,false,false
+AP019094,12 Dec 15,9,Monash University,Kooyong,No. 1,Broc Song,Dean Seeley,Dean Seeley,4-8,4,8,0,1,Completed,true,false,false
+AP019094,12 Dec 15,9,Monash University,Kooyong,No. 2,[Unnamed emergency — TROLS AP019094 home code 2],Peter May,Peter May,0-8,0,8,0,1,Completed,false,true,false
+AP019094,12 Dec 15,9,Monash University,Kooyong,No. 3,Philip Phung,Kris Hyde,Kris Hyde,5-8,5,8,0,1,Completed,true,false,false
+AP019094,12 Dec 15,9,Monash University,Kooyong,No. 4,Ken Kennedy,Steve Callahan,Ken Kennedy,9-7,9,7,1,0,Completed,true,false,false
+AP019101,30 Jan 16,10,Kooyong,Le Page,No. 1,James Rundle,Nathan Coombes,James Rundle,8-2,8,2,1,0,Completed,true,false,false
+AP019101,30 Jan 16,10,Kooyong,Le Page,No. 2,Peter May,Matt Gatti,Matt Gatti,1-8,1,8,0,1,Completed,true,false,false
+AP019101,30 Jan 16,10,Kooyong,Le Page,No. 3,Kris Hyde,Brian Govan,Kris Hyde,8-5,8,5,1,0,Completed,true,false,false
+AP019101,30 Jan 16,10,Kooyong,Le Page,No. 4,Steve Callahan,Trevor Hastings,Steve Callahan,8-6,8,6,1,0,Completed,true,false,false
+AP019102,30 Jan 16,10,Kings Park,Albert Reserve,No. 1,Hayden Broadbent,Viranga Senadipathy,Viranga Senadipathy,6-8,6,8,0,1,Completed,true,false,false
+AP019102,30 Jan 16,10,Kings Park,Albert Reserve,No. 2,Finn Rasmussen,Danny Thompson,Finn Rasmussen,8-6,8,6,1,0,Completed,true,false,false
+AP019102,30 Jan 16,10,Kings Park,Albert Reserve,No. 3,Callum Campbell,Lance Gentle-king,Lance Gentle-king,6-8,6,8,0,1,Completed,true,false,false
+AP019102,30 Jan 16,10,Kings Park,Albert Reserve,No. 4,Cameron Krause,[Unnamed emergency — TROLS AP019102 away code 4],Cameron Krause,8-0,8,0,1,0,Completed,false,false,true
+AP019103,30 Jan 16,10,Dendy Park,East Malvern,No. 1,Bruce Watkins,Damien Mescher,Bruce Watkins,8-5,8,5,1,0,Completed,true,false,false
+AP019103,30 Jan 16,10,Dendy Park,East Malvern,No. 2,Peter Fleming,Matthew Barnes,Peter Fleming,8-4,8,4,1,0,Completed,true,false,false
+AP019103,30 Jan 16,10,Dendy Park,East Malvern,No. 3,Chris Trotter,Peter Car,Chris Trotter,8-3,8,3,1,0,Completed,true,false,false
+AP019103,30 Jan 16,10,Dendy Park,East Malvern,No. 4,John Riley,Alan Young,John Riley,8-4,8,4,1,0,Completed,true,false,false
+AP019104,30 Jan 16,10,Parkdale,Monash University,No. 1,Tom Bodley,Philip Phung,Philip Phung,3-8,3,8,0,1,Completed,true,false,false
+AP019104,30 Jan 16,10,Parkdale,Monash University,No. 2,Nick Carlson,Ken Kennedy,Ken Kennedy,2-8,2,8,0,1,Completed,true,false,false
+AP019104,30 Jan 16,10,Parkdale,Monash University,No. 3,Shaun Vandebrok,Chamaka Wisesinghe,Shaun Vandebrok,8-2,8,2,1,0,Completed,true,false,false
+AP019104,30 Jan 16,10,Parkdale,Monash University,No. 4,Jason Bartonek,Daniel Cookson,Jason Bartonek,8-5,8,5,1,0,Completed,true,false,false
+AP019111,06 Feb 16,11,Le Page,Parkdale,No. 1,Nathan Coombes,Nick Carlson,Nathan Coombes,8-1,8,1,1,0,Completed,true,false,false
+AP019111,06 Feb 16,11,Le Page,Parkdale,No. 2,Matt Gatti,Shaun Vandebrok,Matt Gatti,8-2,8,2,1,0,Completed,true,false,false
+AP019111,06 Feb 16,11,Le Page,Parkdale,No. 3,Brian Govan,Jason Bartonek,Jason Bartonek,3-8,3,8,0,1,Completed,true,false,false
+AP019111,06 Feb 16,11,Le Page,Parkdale,No. 4,Trevor Hastings,Damien Basterfield,Trevor Hastings,8-0,8,0,1,0,Completed,true,false,false
+AP019112,06 Feb 16,11,Albert Reserve,Kooyong,No. 1,Viranga Senadipathy,Charlie Tulloch,Charlie Tulloch,1-8,1,8,0,1,Completed,true,false,false
+AP019112,06 Feb 16,11,Albert Reserve,Kooyong,No. 2,Danny Thompson,Peter May,Danny Thompson,8-5,8,5,1,0,Completed,true,false,false
+AP019112,06 Feb 16,11,Albert Reserve,Kooyong,No. 3,Ivan Carrizo,Steve Callahan,Steve Callahan,8-9,8,9,0,1,Completed,true,false,false
+AP019112,06 Feb 16,11,Albert Reserve,Kooyong,No. 4,Lukas Kellett,James Nguyen,James Nguyen,0-8,0,8,0,1,Completed,true,false,false
+AP019113,06 Feb 16,11,East Malvern,Kings Park,No. 1,Marcus Young,Nathan Broadbent,Nathan Broadbent,5-8,5,8,0,1,Completed,true,false,false
+AP019113,06 Feb 16,11,East Malvern,Kings Park,No. 2,John McCristal,Hayden Broadbent,Hayden Broadbent,0-8,0,8,0,1,Completed,true,false,false
+AP019113,06 Feb 16,11,East Malvern,Kings Park,No. 3,Peter Car,Finn Rasmussen,Finn Rasmussen,1-8,1,8,0,1,Completed,true,false,false
+AP019113,06 Feb 16,11,East Malvern,Kings Park,No. 4,Alan Young,Callum Campbell,Callum Campbell,6-8,6,8,0,1,Completed,true,false,false
+AP019114,06 Feb 16,11,Monash University,Dendy Park,No. 1,Broc Song,Bruce Watkins,Bruce Watkins,5-8,5,8,0,1,Completed,true,false,false
+AP019114,06 Feb 16,11,Monash University,Dendy Park,No. 2,Minh Hoa Vuong,Peter Fleming,Minh Hoa Vuong,8-4,8,4,1,0,Completed,true,false,false
+AP019114,06 Feb 16,11,Monash University,Dendy Park,No. 3,Stanley Yeoh,Chris Trotter,Stanley Yeoh,8-5,8,5,1,0,Completed,true,false,false
+AP019114,06 Feb 16,11,Monash University,Dendy Park,No. 4,Ken Kennedy,Bill Craig,Ken Kennedy,9-7,9,7,1,0,Completed,true,false,false
+AP019121,13 Feb 16,12,Monash University,East Malvern,No. 1,Titus Ting,Gene Hogan,Titus Ting,8-6,8,6,1,0,Completed,true,false,false
+AP019121,13 Feb 16,12,Monash University,East Malvern,No. 2,James Virth,John McCristal,James Virth,9-7,9,7,1,0,Completed,true,false,false
+AP019121,13 Feb 16,12,Monash University,East Malvern,No. 3,Philip Phung,Peter Car,Philip Phung,8-3,8,3,1,0,Completed,true,false,false
+AP019121,13 Feb 16,12,Monash University,East Malvern,No. 4,Ken Kennedy,Andrew Pipingas,Ken Kennedy,8-2,8,2,1,0,Completed,true,false,false
+AP019122,13 Feb 16,12,Kooyong,Kings Park,No. 1,Charlie Tulloch,Nathan Broadbent,Nathan Broadbent,8-9,8,9,0,1,Completed,true,false,false
+AP019122,13 Feb 16,12,Kooyong,Kings Park,No. 2,Peter May,Hayden Broadbent,Hayden Broadbent,3-8,3,8,0,1,Completed,true,false,false
+AP019122,13 Feb 16,12,Kooyong,Kings Park,No. 3,Kris Hyde,Callum Campbell,Kris Hyde,8-6,8,6,1,0,Completed,true,false,false
+AP019122,13 Feb 16,12,Kooyong,Kings Park,No. 4,Steve Callahan,Lyndon Krause,Steve Callahan,8-4,8,4,1,0,Completed,true,false,false
+AP019123,13 Feb 16,12,Dendy Park,Parkdale,No. 1,Ian Wilkinson,Shaun Vandebrok,Ian Wilkinson,8-3,8,3,1,0,Completed,true,false,false
+AP019123,13 Feb 16,12,Dendy Park,Parkdale,No. 2,Bruce Watkins,Jason Bartonek,Bruce Watkins,8-0,8,0,1,0,Completed,true,false,false
+AP019123,13 Feb 16,12,Dendy Park,Parkdale,No. 3,Peter Fleming,Damien Basterfield,Peter Fleming,8-4,8,4,1,0,Completed,true,false,false
+AP019123,13 Feb 16,12,Dendy Park,Parkdale,No. 4,John Riley,Samuel Herschu,John Riley,8-1,8,1,1,0,Completed,true,false,false
+AP019124,13 Feb 16,12,Albert Reserve,Le Page,No. 1,Viranga Senadipathy,Nathan Coombes,Nathan Coombes,0-8,0,8,0,1,Completed,true,false,false
+AP019124,13 Feb 16,12,Albert Reserve,Le Page,No. 2,[Unnamed emergency — TROLS AP019124 home code 2],Matt Gatti,[Unnamed emergency — TROLS AP019124 home code 2],8-0,8,0,1,0,Completed,false,true,false
+AP019124,13 Feb 16,12,Albert Reserve,Le Page,No. 3,Ivan Carrizo,Brian Govan,Ivan Carrizo,8-3,8,3,1,0,Completed,true,false,false
+AP019124,13 Feb 16,12,Albert Reserve,Le Page,No. 4,Lukas Kellett,Trevor Hastings,Trevor Hastings,0-8,0,8,0,1,Completed,true,false,false
+AP019131,20 Feb 16,13,East Malvern,Albert Reserve,No. 1,Jordan Rozman,Viranga Senadipathy,Viranga Senadipathy,5-8,5,8,0,1,Completed,true,true,false
+AP019131,20 Feb 16,13,East Malvern,Albert Reserve,No. 2,[Unnamed emergency — TROLS AP019131 home code 2],Danny Thompson,Danny Thompson,0-8,0,8,0,1,Completed,false,true,false
+AP019131,20 Feb 16,13,East Malvern,Albert Reserve,No. 3,Peter Car,Ivan Carrizo,Peter Car,9-7,9,7,1,0,Completed,true,false,false
+AP019131,20 Feb 16,13,East Malvern,Albert Reserve,No. 4,Peter Goldberg,Lukas Kellett,Peter Goldberg,8-0,8,0,1,0,Completed,true,false,false
+AP019132,20 Feb 16,13,Le Page,Monash University,No. 1,Nathan Coombes,Broc Song,Nathan Coombes,8-1,8,1,1,0,Completed,true,false,false
+AP019132,20 Feb 16,13,Le Page,Monash University,No. 2,Matt Gatti,James Virth,Matt Gatti,8-2,8,2,1,0,Completed,true,false,false
+AP019132,20 Feb 16,13,Le Page,Monash University,No. 3,Brian Govan,Philip Phung,Philip Phung,3-8,3,8,0,1,Completed,true,false,false
+AP019132,20 Feb 16,13,Le Page,Monash University,No. 4,Trevor Hastings,Ken Kennedy,Trevor Hastings,8-5,8,5,1,0,Completed,true,false,false
+AP019133,20 Feb 16,13,Parkdale,Kooyong,No. 1,Tom Bodley,Peter May,Tom Bodley,9-7,9,7,1,0,Completed,true,false,false
+AP019133,20 Feb 16,13,Parkdale,Kooyong,No. 2,Nick Carlson,Kris Hyde,Nick Carlson,8-5,8,5,1,0,Completed,true,false,false
+AP019133,20 Feb 16,13,Parkdale,Kooyong,No. 3,Shaun Vandebrok,Steve Callahan,Shaun Vandebrok,9-7,9,7,1,0,Completed,true,false,false
+AP019133,20 Feb 16,13,Parkdale,Kooyong,No. 4,Damien Basterfield,Paul Merrigan,Paul Merrigan,2-8,2,8,0,1,Completed,true,false,false
+AP019134,20 Feb 16,13,Kings Park,Dendy Park,No. 1,Hayden Broadbent,Ian Wilkinson,Hayden Broadbent,8-5,8,5,1,0,Completed,true,false,false
+AP019134,20 Feb 16,13,Kings Park,Dendy Park,No. 2,Finn Rasmussen,Bruce Watkins,Finn Rasmussen,8-5,8,5,1,0,Completed,true,false,false
+AP019134,20 Feb 16,13,Kings Park,Dendy Park,No. 3,Callum Campbell,Anthony Murray,Callum Campbell,8-5,8,5,1,0,Completed,true,false,false
+AP019134,20 Feb 16,13,Kings Park,Dendy Park,No. 4,Cameron Krause,Bill Craig,Bill Craig,5-8,5,8,0,1,Completed,true,false,false
+AP019141,27 Feb 16,14,East Malvern,Le Page,No. 1,Gene Hogan,Nathan Coombes,Nathan Coombes,1-8,1,8,0,1,Completed,true,false,false
+AP019141,27 Feb 16,14,East Malvern,Le Page,No. 2,Matthew Barnes,Matt Gatti,Matt Gatti,2-8,2,8,0,1,Completed,true,false,false
+AP019141,27 Feb 16,14,East Malvern,Le Page,No. 3,Peter Car,Brian Govan,Brian Govan,8-9,8,9,0,1,Completed,true,false,false
+AP019141,27 Feb 16,14,East Malvern,Le Page,No. 4,John McCristal,Tony Gatti,John McCristal,8-2,8,2,1,0,Completed,true,false,false
+AP019142,27 Feb 16,14,Monash University,Albert Reserve,No. 1,Broc Song,Viranga Senadipathy,Broc Song,8-5,8,5,1,0,Completed,true,false,false
+AP019142,27 Feb 16,14,Monash University,Albert Reserve,No. 2,Philip Phung,Lukas Kellett,Philip Phung,8-5,8,5,1,0,Completed,true,false,false
+AP019142,27 Feb 16,14,Monash University,Albert Reserve,No. 3,Ken Kennedy,Danny Thompson,Danny Thompson,4-8,4,8,0,1,Completed,true,false,false
+AP019142,27 Feb 16,14,Monash University,Albert Reserve,No. 4,Shaun Yeoh,Ivan Carrizo,Ivan Carrizo,4-8,4,8,0,1,Completed,true,false,false
+AP019143,27 Feb 16,14,Parkdale,Kings Park,No. 1,Nick Carlson,Nathan Broadbent,Nathan Broadbent,4-8,4,8,0,1,Completed,true,false,false
+AP019143,27 Feb 16,14,Parkdale,Kings Park,No. 2,Shaun Vandebrok,Hayden Broadbent,Hayden Broadbent,7-9,7,9,0,1,Completed,true,false,false
+AP019143,27 Feb 16,14,Parkdale,Kings Park,No. 3,Damien Basterfield,Finn Rasmussen,Finn Rasmussen,0-8,0,8,0,1,Completed,true,false,false
+AP019143,27 Feb 16,14,Parkdale,Kings Park,No. 4,Samuel Herschu,Lyndon Krause,Lyndon Krause,1-8,1,8,0,1,Completed,true,false,false
+AP019144,27 Feb 16,14,Dendy Park,Kooyong,No. 1,Ian Wilkinson,James Rundle,James Rundle,2-8,2,8,0,1,Completed,true,false,false
+AP019144,27 Feb 16,14,Dendy Park,Kooyong,No. 2,Peter Fleming,Charlie Tulloch,Charlie Tulloch,6-8,6,8,0,1,Completed,true,false,false
+AP019144,27 Feb 16,14,Dendy Park,Kooyong,No. 3,Anthony Murray,Peter May,Peter May,4-8,4,8,0,1,Completed,true,false,false
+AP019144,27 Feb 16,14,Dendy Park,Kooyong,No. 4,Chris Trotter,Kris Hyde,Kris Hyde,3-8,3,8,0,1,Completed,true,false,false
+AP019301,,16,Kings Park,Dendy Park,No. 1,Nathan Broadbent,Ian Wilkinson,Nathan Broadbent,8-1,8,1,1,0,Completed,true,false,false
+AP019301,,16,Kings Park,Dendy Park,No. 2,Hayden Broadbent,Bruce Watkins,Hayden Broadbent,9-8,9,8,1,0,Completed,true,false,false
+AP019301,,16,Kings Park,Dendy Park,No. 3,Finn Rasmussen,Peter Fleming,Finn Rasmussen,8-2,8,2,1,0,Completed,true,false,false
+AP019301,,16,Kings Park,Dendy Park,No. 4,Callum Campbell,Anthony Murray,Anthony Murray,7-9,7,9,0,1,Completed,true,false,false
+AP019302,,16,Le Page,Kooyong,No. 1,Nathan Coombes,Charlie Tulloch,Nathan Coombes,8-5,8,5,1,0,Completed,true,false,false
+AP019302,,16,Le Page,Kooyong,No. 2,Matt Gatti,Peter May,Matt Gatti,8-2,8,2,1,0,Completed,true,false,false
+AP019302,,16,Le Page,Kooyong,No. 3,Brian Govan,Kris Hyde,Kris Hyde,3-8,3,8,0,1,Completed,true,false,false
+AP019302,,16,Le Page,Kooyong,No. 4,Trevor Hastings,Steve Callahan,Steve Callahan,6-8,6,8,0,1,Completed,true,false,false
+AP019321,,17,Kings Park,Le Page,No. 1,Nathan Broadbent,Nathan Coombes,Nathan Broadbent,8-4,8,4,1,0,Completed,true,false,false
+AP019321,,17,Kings Park,Le Page,No. 2,Hayden Broadbent,Matt Gatti,Matt Gatti,2-8,2,8,0,1,Completed,true,false,false
+AP019321,,17,Kings Park,Le Page,No. 3,Finn Rasmussen,Brian Govan,Finn Rasmussen,8-1,8,1,1,0,Completed,true,false,false
+AP019321,,17,Kings Park,Le Page,No. 4,Callum Campbell,Trevor Hastings,Callum Campbell,8-2,8,2,1,0,Completed,true,false,false

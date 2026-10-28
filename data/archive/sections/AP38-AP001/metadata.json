@@ -1,0 +1,82 @@
+{
+  "asset_id": "AP38-AP001",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 18/19",
+  "season_id": "AP38",
+  "season_label": "Summer 18/19",
+  "source_section_code": "AP001",
+  "section_label": "Ladies Rubbers 1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Kooyong",
+      "wins": 11,
+      "points": 87.5,
+      "percentage": 201.09,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "BLTC",
+      "wins": 7,
+      "points": 57,
+      "percentage": 117.0,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Legend Park",
+      "wins": 5,
+      "points": 46,
+      "percentage": 96.23,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "St Louis de Mont",
+      "wins": 1,
+      "points": 29,
+      "percentage": 73.04,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Elwood",
+      "wins": 2,
+      "points": 20.5,
+      "percentage": 62.41,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP38-AP001",
+  "fixtures": 46,
+  "completed_fixtures": 28,
+  "draw_fixtures": 46,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 110,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP001032 doubles No. 4: '6-4 3-6'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP001321 doubles No. 4: '6-1 6-7'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

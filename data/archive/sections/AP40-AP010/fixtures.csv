@@ -1,0 +1,60 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP010012,05 Oct 19,1,regular,Round 1,Royal South Yarra,BLTC 1,10,0,8,1,,,58,25,Completed,
+AP010013,05 Oct 19,1,regular,Round 1,MCC Glen Iris,GPHC,7,3,4,4,,,37,31,Completed,
+AP010014,05 Oct 19,1,regular,Round 1,BLTC 2,Mt Eliza,0,10,0,8,,,12,56,Completed,
+pending-ap010-r1-bye-dendy-park,05 Oct 19,1,regular,Round 1,Bye,Dendy Park,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP010022,12 Oct 19,2,regular,Round 2,Dendy Park,Royal South Yarra,1,9,1,7,,,29,50,Completed,
+AP010023,12 Oct 19,2,regular,Round 2,BLTC 1,MCC Glen Iris,1,9,2,7,,,39,51,Completed,
+AP010024,12 Oct 19,2,regular,Round 2,GPHC,BLTC 2,9,1,7,1,,,53,20,Completed,
+pending-ap010-r2-mt-eliza-bye,12 Oct 19,2,regular,Round 2,Mt Eliza,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP010032,19 Oct 19,3,regular,Round 3,Royal South Yarra,Mt Eliza,2,8,3,5,,,42,54,Completed,
+AP010033,19 Oct 19,3,regular,Round 3,MCC Glen Iris,Dendy Park,5,5,2,2,,,27,24,Completed,
+AP010034,19 Oct 19,3,regular,Round 3,BLTC 2,BLTC 1,3,7,4,4,,,35,38,Completed,
+pending-ap010-r3-bye-gphc,19 Oct 19,3,regular,Round 3,Bye,GPHC,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP010043,26 Oct 19,4,regular,Round 4,Mt Eliza,MCC Glen Iris,0,10,0,8,,,21,58,Completed,
+AP010044,26 Oct 19,4,regular,Round 4,Dendy Park,BLTC 2,8,2,5,4,,,56,40,Completed,
+pending-ap010-r4-bltc-1-bye,26 Oct 19,4,regular,Round 4,BLTC 1,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap010-r4-gphc-royal-south-yarra,26 Oct 19,4,regular,Round 4,GPHC,Royal South Yarra,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP010052,09 Nov 19,5,regular,Round 5,Mt Eliza,GPHC,2,8,4,5,,,51,50,Completed,
+AP010053,09 Nov 19,5,regular,Round 5,BLTC 1,Dendy Park,8,2,6,2,,,50,35,Completed,
+pending-ap010-r5-bye-royal-south-yarra,09 Nov 19,5,regular,Round 5,Bye,Royal South Yarra,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap010-r5-mcc-glen-iris-bltc-2,09 Nov 19,5,regular,Round 5,MCC Glen Iris,BLTC 2,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP010061,16 Nov 19,6,regular,Round 6,Royal South Yarra,MCC Glen Iris,8,2,6,2,,,48,33,Completed,
+AP010064,16 Nov 19,6,regular,Round 6,Dendy Park,Mt Eliza,3,7,4,5,,,53,52,Completed,
+pending-ap010-r6-bltc-2-bye,16 Nov 19,6,regular,Round 6,BLTC 2,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap010-r6-gphc-bltc-1,16 Nov 19,6,regular,Round 6,GPHC,BLTC 1,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP010072,23 Nov 19,7,regular,Round 7,Royal South Yarra,BLTC 2,8,2,6,3,,,52,37,Completed,
+AP010074,23 Nov 19,7,regular,Round 7,GPHC,Dendy Park,9,1,7,1,,,56,29,Completed,
+pending-ap010-r7-bye-mcc-glen-iris,23 Nov 19,7,regular,Round 7,Bye,MCC Glen Iris,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap010-r7-mt-eliza-bltc-1,23 Nov 19,7,regular,Round 7,Mt Eliza,BLTC 1,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+AP010082,30 Nov 19,8,regular,Round 8,BLTC 1,Royal South Yarra,0,10,0,8,,,15,56,Completed,
+AP010083,30 Nov 19,8,regular,Round 8,GPHC,MCC Glen Iris,2,8,3,6,,,41,49,Completed,
+AP010084,30 Nov 19,8,regular,Round 8,Mt Eliza,BLTC 2,9,1,7,2,,,62,36,Completed,
+pending-ap010-r8-dendy-park-bye,30 Nov 19,8,regular,Round 8,Dendy Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP010092,07 Dec 19,9,regular,Round 9,Royal South Yarra,Dendy Park,9,1,7,1,,,49,16,Completed,
+AP010093,07 Dec 19,9,regular,Round 9,MCC Glen Iris,BLTC 1,9,1,7,1,,,53,29,Completed,
+AP010094,07 Dec 19,9,regular,Round 9,BLTC 2,GPHC,3,7,4,4,,,37,43,Completed,
+pending-ap010-r9-bye-mt-eliza,07 Dec 19,9,regular,Round 9,Bye,Mt Eliza,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP010102,14 Dec 19,10,regular,Round 10,Mt Eliza,Royal South Yarra,8,2,5,4,,,48,49,Completed,
+AP010103,14 Dec 19,10,regular,Round 10,Dendy Park,MCC Glen Iris,0,10,0,8,,,8,56,Completed,
+AP010104,14 Dec 19,10,regular,Round 10,BLTC 1,BLTC 2,8,2,5,3,,,41,36,Completed,
+pending-ap010-r10-gphc-bye,14 Dec 19,10,regular,Round 10,GPHC,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap010-r11-bltc-2-dendy-park,01 Feb 20,11,regular,Round 11,BLTC 2,Dendy Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap010-r11-bye-bltc-1,01 Feb 20,11,regular,Round 11,Bye,BLTC 1,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap010-r11-mcc-glen-iris-mt-eliza,01 Feb 20,11,regular,Round 11,MCC Glen Iris,Mt Eliza,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap010-r11-royal-south-yarra-gphc,01 Feb 20,11,regular,Round 11,Royal South Yarra,GPHC,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP010121,08 Feb 20,12,regular,Round 12,BLTC 2,MCC Glen Iris,1,9,2,6,,,29,53,Completed,
+AP010122,08 Feb 20,12,regular,Round 12,GPHC,Mt Eliza,2,8,3,6,,,40,52,Completed,
+AP010123,08 Feb 20,12,regular,Round 12,Dendy Park,BLTC 1,7,3,5,4,,,50,44,Completed,
+pending-ap010-r12-royal-south-yarra-bye,08 Feb 20,12,regular,Round 12,Royal South Yarra,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP010133,15 Feb 20,13,regular,Round 13,BLTC 1,GPHC,1,9,1,7,,,29,51,Completed,
+AP010134,15 Feb 20,13,regular,Round 13,Mt Eliza,Dendy Park,10,0,8,0,,,56,24,Completed,
+pending-ap010-r13-bye-bltc-2,15 Feb 20,13,regular,Round 13,Bye,BLTC 2,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap010-r13-mcc-glen-iris-royal-south-yarra,15 Feb 20,13,regular,Round 13,MCC Glen Iris,Royal South Yarra,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP010143,22 Feb 20,14,regular,Round 14,BLTC 1,Mt Eliza,0,10,0,8,,,5,56,Completed,
+AP010144,22 Feb 20,14,regular,Round 14,Dendy Park,GPHC,6,4,3,5,,,31,36,Completed,
+pending-ap010-r14-bltc-2-royal-south-yarra,22 Feb 20,14,regular,Round 14,BLTC 2,Royal South Yarra,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+pending-ap010-r14-mcc-glen-iris-bye,22 Feb 20,14,regular,Round 14,MCC Glen Iris,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP010301,,16,semi_final,Semi-final,MCC Glen Iris,Royal South Yarra,2,8,3,5,,,30,44,Completed,
+AP010302,,16,semi_final,Semi-final,Mt Eliza,GPHC,8,2,6,2,,,43,21,Completed,
+AP010321,,17,grand_final,Grand final · TROLS entry 2,Mt Eliza,Royal South Yarra,5,5,0,0,,,0,0,Completed,

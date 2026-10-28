@@ -1,0 +1,105 @@
+{
+  "asset_id": "AP30-AP018",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 14/15",
+  "season_id": "AP30",
+  "season_label": "Summer 14/15",
+  "source_section_code": "AP018",
+  "section_label": "Men's S/D 5",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Black Rock",
+      "wins": 12,
+      "points": 113,
+      "percentage": 166.91,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "BLTC",
+      "wins": 8,
+      "points": 80,
+      "percentage": 96.28,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Hawthorn",
+      "wins": 7,
+      "points": 79,
+      "percentage": 119.24,
+      "marker": "R"
+    },
+    {
+      "position": 4,
+      "team": "Lauriston",
+      "wins": 7,
+      "points": 76,
+      "percentage": 99.18,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Maccabi",
+      "wins": 6,
+      "points": 70,
+      "percentage": 102.21,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Mordialloc",
+      "wins": 5,
+      "points": 62,
+      "percentage": 98.63,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Kooyong 1",
+      "wins": 4,
+      "points": 46,
+      "percentage": 82.58,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "Kooyong 2",
+      "wins": 2,
+      "points": 34,
+      "percentage": 65.58,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP30-AP018",
+  "fixtures": 60,
+  "completed_fixtures": 57,
+  "draw_fixtures": 60,
+  "singles_rubbers": 228,
+  "doubles_rubbers": 110,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP018302 doubles No. 1: '6-4 6-7'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

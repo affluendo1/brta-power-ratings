@@ -1,0 +1,89 @@
+{
+  "asset_id": "AP24-AP013",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 11/12",
+  "season_id": "AP24",
+  "season_label": "Summer 11/12",
+  "source_section_code": "AP013",
+  "section_label": "Ladies S/D 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Mt Eliza",
+      "wins": 8,
+      "points": 121,
+      "percentage": 343.04,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "MCC",
+      "wins": 7,
+      "points": 101.5,
+      "percentage": 170.29,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Monash University",
+      "wins": 4,
+      "points": 66,
+      "percentage": 81.76,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Melbourne Univ 1",
+      "wins": 3,
+      "points": 63,
+      "percentage": 66.67,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Melbourne Univ 2",
+      "wins": 3,
+      "points": 57.5,
+      "percentage": 65.47,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Dendy Park",
+      "wins": 1,
+      "points": 41,
+      "percentage": 54.74,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP24-AP013",
+  "fixtures": 47,
+  "completed_fixtures": 30,
+  "draw_fixtures": 57,
+  "singles_rubbers": 113,
+  "doubles_rubbers": 55,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP013021 doubles No. 1: '4-6 6-4 3-4'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

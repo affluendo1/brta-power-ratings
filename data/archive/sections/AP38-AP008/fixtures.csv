@@ -1,0 +1,60 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP008012,06 Oct 18,1,regular,Round 1,Middle Brighton,Langwarrin,6,2,2,2,6,4,47,46,Completed,
+AP008013,06 Oct 18,1,regular,Round 1,Le Page,Hawthorn,0,8,0,4,0,8,16,49,Completed,
+AP008014,06 Oct 18,1,regular,Round 1,Chadstone,Ormond,7,1,3,1,6,3,45,34,Completed,
+pending-ap008-r1-fctc-bye,06 Oct 18,1,regular,Round 1,FCTC,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP008021,13 Oct 18,2,regular,Round 2,Ormond,FCTC,6,2,2,2,4,4,39,35,Completed,
+AP008023,13 Oct 18,2,regular,Round 2,Langwarrin,Le Page,7,1,3,1,7,2,51,32,Completed,
+AP008024,13 Oct 18,2,regular,Round 2,Hawthorn,Chadstone,8,0,4,0,8,0,49,23,Completed,
+pending-ap008-r2-bye-middle-brighton,13 Oct 18,2,regular,Round 2,Bye,Middle Brighton,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP008032,20 Oct 18,3,regular,Round 3,Middle Brighton,Ormond,7,1,3,1,6,4,48,43,Completed,
+AP008034,20 Oct 18,3,regular,Round 3,Chadstone,Langwarrin,7,1,3,1,6,3,46,42,Completed,
+pending-ap008-r3-fctc-hawthorn,20 Oct 18,3,regular,Round 3,FCTC,Hawthorn,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap008-r3-le-page-bye,20 Oct 18,3,regular,Round 3,Le Page,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP008041,27 Oct 18,4,regular,Round 4,Langwarrin,FCTC,8,0,4,0,8,0,48,14,Completed,
+AP008042,27 Oct 18,4,regular,Round 4,Hawthorn,Middle Brighton,8,0,4,0,8,0,49,18,Completed,
+AP008043,27 Oct 18,4,regular,Round 4,Ormond,Le Page,7,1,3,1,7,2,52,36,Completed,
+pending-ap008-r4-bye-chadstone,27 Oct 18,4,regular,Round 4,Bye,Chadstone,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP008051,10 Nov 18,5,regular,Round 5,Le Page,Chadstone,0,8,0,4,1,8,33,54,Completed,
+AP008052,10 Nov 18,5,regular,Round 5,Ormond,Hawthorn,2,6,2,2,5,5,46,47,Completed,
+AP008054,10 Nov 18,5,regular,Round 5,FCTC,Middle Brighton,2,6,2,2,4,5,40,44,Completed,
+pending-ap008-r5-langwarrin-bye,10 Nov 18,5,regular,Round 5,Langwarrin,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP008061,17 Nov 18,6,regular,Round 6,Middle Brighton,Le Page,7,1,3,1,7,3,57,43,Completed,
+AP008062,17 Nov 18,6,regular,Round 6,Chadstone,FCTC,6,2,2,2,5,5,46,44,Completed,
+AP008063,17 Nov 18,6,regular,Round 6,Hawthorn,Langwarrin,7,1,3,1,7,2,51,32,Completed,
+pending-ap008-r6-bye-ormond,17 Nov 18,6,regular,Round 6,Bye,Ormond,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP008072,24 Nov 18,7,regular,Round 7,Middle Brighton,Chadstone,7,1,3,1,7,4,49,45,Completed,
+AP008073,24 Nov 18,7,regular,Round 7,Ormond,Langwarrin,1,7,1,3,2,7,30,48,Completed,
+pending-ap008-r7-fctc-le-page,24 Nov 18,7,regular,Round 7,FCTC,Le Page,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+pending-ap008-r7-hawthorn-bye,24 Nov 18,7,regular,Round 7,Hawthorn,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP008082,01 Dec 18,8,regular,Round 8,Langwarrin,Middle Brighton,2,6,2,2,4,6,45,47,Completed,
+AP008083,01 Dec 18,8,regular,Round 8,Hawthorn,Le Page,8,0,4,0,8,0,49,17,Completed,
+AP008084,01 Dec 18,8,regular,Round 8,Ormond,Chadstone,7,1,3,1,6,4,52,46,Completed,
+pending-ap008-r8-bye-fctc,01 Dec 18,8,regular,Round 8,Bye,FCTC,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP008091,08 Dec 18,9,regular,Round 9,FCTC,Ormond,6,2,2,2,4,4,35,34,Completed,
+AP008093,08 Dec 18,9,regular,Round 9,Le Page,Langwarrin,0,8,0,4,1,8,21,52,Completed,
+AP008094,08 Dec 18,9,regular,Round 9,Chadstone,Hawthorn,1,7,1,3,3,6,45,50,Completed,
+pending-ap008-r9-middle-brighton-bye,08 Dec 18,9,regular,Round 9,Middle Brighton,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP008101,15 Dec 18,10,regular,Round 10,Hawthorn,FCTC,4,4,0,0,1,1,11,15,Completed,
+AP008102,15 Dec 18,10,regular,Round 10,Ormond,Middle Brighton,2,6,2,2,4,5,44,45,Completed,
+AP008104,15 Dec 18,10,regular,Round 10,Langwarrin,Chadstone,7,1,3,1,7,3,52,35,Completed,
+pending-ap008-r10-bye-le-page,15 Dec 18,10,regular,Round 10,Bye,Le Page,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP008111,02 Feb 19,11,regular,Round 11,FCTC,Langwarrin,7,1,3,1,6,2,43,33,Completed,
+AP008112,02 Feb 19,11,regular,Round 11,Middle Brighton,Hawthorn,7,1,3,1,7,3,57,42,Completed,
+AP008113,02 Feb 19,11,regular,Round 11,Le Page,Ormond,2,6,2,2,5,6,56,65,Completed,
+pending-ap008-r11-chadstone-bye,02 Feb 19,11,regular,Round 11,Chadstone,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP008121,09 Feb 19,12,regular,Round 12,Chadstone,Le Page,8,0,4,0,8,1,57,45,Completed,
+AP008122,09 Feb 19,12,regular,Round 12,Hawthorn,Ormond,8,0,4,0,8,1,49,25,Completed,
+AP008124,09 Feb 19,12,regular,Round 12,Middle Brighton,FCTC,6,2,2,2,6,4,53,39,Completed,
+pending-ap008-r12-bye-langwarrin,09 Feb 19,12,regular,Round 12,Bye,Langwarrin,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP008131,16 Feb 19,13,regular,Round 13,Le Page,Middle Brighton,0,8,0,4,0,8,16,50,Completed,
+AP008132,16 Feb 19,13,regular,Round 13,FCTC,Chadstone,2,6,2,2,4,4,33,35,Completed,
+AP008133,16 Feb 19,13,regular,Round 13,Langwarrin,Hawthorn,4,4,2,2,5,5,46,46,Completed,
+pending-ap008-r13-ormond-bye,16 Feb 19,13,regular,Round 13,Ormond,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP008141,23 Feb 19,14,regular,Round 14,Le Page,FCTC,2,6,2,2,4,4,39,41,Completed,
+AP008142,23 Feb 19,14,regular,Round 14,Chadstone,Middle Brighton,7,1,3,1,7,3,54,46,Completed,
+AP008143,23 Feb 19,14,regular,Round 14,Langwarrin,Ormond,8,0,4,0,8,1,52,31,Completed,
+pending-ap008-r14-bye-hawthorn,23 Feb 19,14,regular,Round 14,Bye,Hawthorn,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP008301,,16,semi_final,Semi-final,Hawthorn,Chadstone,2,6,2,2,5,5,47,48,Completed,
+AP008302,,16,semi_final,Semi-final,Middle Brighton,Langwarrin,6,2,2,2,6,6,55,52,Completed,
+AP008321,,17,grand_final,Grand final · TROLS entry 2,Middle Brighton,Chadstone,8,0,4,0,8,1,53,30,Completed,

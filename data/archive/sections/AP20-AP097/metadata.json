@@ -1,0 +1,103 @@
+{
+  "asset_id": "AP20-AP097",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 09/10",
+  "season_id": "AP20",
+  "season_label": "Summer 09/10",
+  "source_section_code": "AP097",
+  "section_label": "Ladies S/D 1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "GPHC",
+      "wins": 0,
+      "points": 102,
+      "percentage": 146.51,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "MCC",
+      "wins": 0,
+      "points": 90,
+      "percentage": 130.74,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Dendy Park 1",
+      "wins": 0,
+      "points": 87,
+      "percentage": 106.31,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Glen Iris Valley",
+      "wins": 0,
+      "points": 69,
+      "percentage": 103.52,
+      "marker": "P"
+    },
+    {
+      "position": 5,
+      "team": "Dendy Park 2",
+      "wins": 0,
+      "points": 68,
+      "percentage": 98.72,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Kings Park",
+      "wins": 0,
+      "points": 58,
+      "percentage": 95.74,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Dendy Park 3",
+      "wins": 0,
+      "points": 44,
+      "percentage": 69.9,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "Caulfield Rec",
+      "wins": 0,
+      "points": 42,
+      "percentage": 72.7,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP20-AP097",
+  "fixtures": 60,
+  "completed_fixtures": 59,
+  "draw_fixtures": 4,
+  "singles_rubbers": 236,
+  "doubles_rubbers": 118,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

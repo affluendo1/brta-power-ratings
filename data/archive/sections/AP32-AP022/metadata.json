@@ -1,0 +1,95 @@
+{
+  "asset_id": "AP32-AP022",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 15/16",
+  "season_id": "AP32",
+  "season_label": "Summer 15/16",
+  "source_section_code": "AP022",
+  "section_label": "Mens S/D 9",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Ormond",
+      "wins": 10,
+      "points": 100,
+      "percentage": 164.46,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Dendy Park",
+      "wins": 8,
+      "points": 85,
+      "percentage": 136.54,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "BLTC",
+      "wins": 7,
+      "points": 60,
+      "percentage": 92.01,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Highmoor Uniting",
+      "wins": 6,
+      "points": 59,
+      "percentage": 98.04,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Caulfield Rec",
+      "wins": 4,
+      "points": 49,
+      "percentage": 93.02,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Murrumbeena",
+      "wins": 3,
+      "points": 35,
+      "percentage": 70.91,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "East Malvern",
+      "wins": 2,
+      "points": 32,
+      "percentage": 76.21,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP32-AP022",
+  "fixtures": 59,
+  "completed_fixtures": 44,
+  "draw_fixtures": 48,
+  "singles_rubbers": 176,
+  "doubles_rubbers": 88,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

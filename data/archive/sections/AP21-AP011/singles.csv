@@ -1,0 +1,69 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP011021,08 May 10,2,Le Page,St Pats Mentone,No. 1,Nathan Coombes,Mick Musson,Mick Musson,3-6 1-6,4,12,0,2,Completed,true,false,false
+AP011021,08 May 10,2,Le Page,St Pats Mentone,No. 2,Tyson Coombes,Alex Quinn,Alex Quinn,3-6 3-6,6,12,0,2,Completed,true,false,false
+AP011021,08 May 10,2,Le Page,St Pats Mentone,No. 3,Trevor Hastings,Andrew Rolfe,Andrew Rolfe,2-6 1-6,3,12,0,2,Completed,true,false,false
+AP011022,08 May 10,2,Highmoor Uniting 1,Highmoor Uniting 2,No. 1,Patrick Meehan,Neil Roberts,Patrick Meehan,6-3 6-2,12,5,2,0,Completed,true,false,false
+AP011022,08 May 10,2,Highmoor Uniting 1,Highmoor Uniting 2,No. 2,Scott Lyons,Dong Il Lee,Scott Lyons,6-1 6-2,12,3,2,0,Completed,true,false,false
+AP011022,08 May 10,2,Highmoor Uniting 1,Highmoor Uniting 2,No. 3,Jayden Moorfoot,Michael Bane,Jayden Moorfoot,6-2 6-3,12,5,2,0,Completed,true,false,false
+AP011023,08 May 10,2,Lauriston,Glen Huntly,No. 1,Ray Turss,Rodney Boonsinlapa,Rodney Boonsinlapa,2-6 6-3 3-6,11,15,1,2,Completed,true,false,false
+AP011023,08 May 10,2,Lauriston,Glen Huntly,No. 2,Ray Musster,Ramsay Taylor,Ramsay Taylor,6-7 4-6,10,13,0,2,Completed,true,false,false
+AP011023,08 May 10,2,Lauriston,Glen Huntly,No. 3,Noel Baker,Kon Chingasev,Noel Baker,2-6 7-5 6-4,15,15,2,1,Completed,true,false,false
+AP011041,22 May 10,4,Highmoor Uniting 1,St Pats Mentone,No. 1,Patrick Meehan,Mick Musson,Mick Musson,5-7 1-6,6,13,0,2,Completed,true,false,false
+AP011041,22 May 10,4,Highmoor Uniting 1,St Pats Mentone,No. 2,Scott Lyons,Alex Quinn,Alex Quinn,3-6 6-7,9,13,0,2,Completed,true,false,false
+AP011041,22 May 10,4,Highmoor Uniting 1,St Pats Mentone,No. 3,Frank Collins,Richard Morley,Frank Collins,1-6 7-6 7-6,15,18,2,1,Completed,true,false,false
+AP011042,22 May 10,4,Lauriston,Le Page,No. 1,Andrew Gelfand,Nathan Coombes,Andrew Gelfand,6-3 2-6 6-3,14,12,2,1,Completed,true,false,false
+AP011042,22 May 10,4,Lauriston,Le Page,No. 2,Ray Turss,Tyson Coombes,Ray Turss,6-4 7-6,13,10,2,0,Completed,true,false,false
+AP011042,22 May 10,4,Lauriston,Le Page,No. 3,Ray Musster,Trevor Hastings,Trevor Hastings,1-6 5-7,6,13,0,2,Completed,true,false,false
+AP011043,22 May 10,4,Glen Huntly,Highmoor Uniting 2,No. 1,Rodney Boonsinlapa,Michael Bane,Rodney Boonsinlapa,6-3 6-1,12,4,2,0,Completed,true,false,false
+AP011043,22 May 10,4,Glen Huntly,Highmoor Uniting 2,No. 2,Ramsay Taylor,Clemens Lee,Ramsay Taylor,6-0 6-1,12,1,2,0,Completed,true,false,false
+AP011043,22 May 10,4,Glen Huntly,Highmoor Uniting 2,No. 3,Srinavas Chakravarthy,John Smak,John Smak,3-6 3-6,6,12,0,2,Completed,true,false,false
+AP011061,05 Jun 10,6,Lauriston,St Pats Mentone,No. 1,Andrew Gelfand,Mick Musson,,6-2 1-1,7,3,1,0,Unfinished,false,false,false
+AP011061,05 Jun 10,6,Lauriston,St Pats Mentone,No. 2,Ray Turss,Alex Quinn,,3-4,3,4,0,1,Unfinished,false,false,false
+AP011061,05 Jun 10,6,Lauriston,St Pats Mentone,No. 3,Ray Musster,Andrew Rolfe,Andrew Rolfe,3-5,3,5,0,1,Completed,true,false,false
+AP011062,05 Jun 10,6,Highmoor Uniting 1,Glen Huntly,No. 1,Patrick Meehan,Rodney Boonsinlapa,Patrick Meehan,7-6,7,6,1,0,Completed,true,false,false
+AP011062,05 Jun 10,6,Highmoor Uniting 1,Glen Huntly,No. 2,Scott Lyons,Ramsay Taylor,Ramsay Taylor,6-7,6,7,0,1,Completed,true,false,false
+AP011063,05 Jun 10,6,Le Page,Highmoor Uniting 2,No. 1,Nathan Coombes,Dong Il Lee,Nathan Coombes,6-1 6-1,12,2,2,0,Completed,true,false,false
+AP011063,05 Jun 10,6,Le Page,Highmoor Uniting 2,No. 2,Tyson Coombes,John Smak,,6-3 2-3,8,6,1,1,Unfinished,false,false,false
+AP011063,05 Jun 10,6,Le Page,Highmoor Uniting 2,No. 3,Trevor Hastings,Maurice Pattison,Trevor Hastings,6-0,6,0,1,0,Completed,true,false,false
+AP011081,26 Jun 10,8,Glen Huntly,St Pats Mentone,No. 1,Ramsay Taylor,Ben Dix,Ben Dix,1-6 0-6,1,12,0,2,Completed,true,false,false
+AP011081,26 Jun 10,8,Glen Huntly,St Pats Mentone,No. 2,Kon Chingasev,Alex Quinn,Alex Quinn,1-6 5-7,6,13,0,2,Completed,true,false,false
+AP011081,26 Jun 10,8,Glen Huntly,St Pats Mentone,No. 3,Thang Minh Tran,Andrew Rolfe,Andrew Rolfe,2-6 3-6,5,12,0,2,Completed,true,false,false
+AP011082,26 Jun 10,8,Lauriston,Highmoor Uniting 2,No. 1,Andrew Gelfand,Neil Roberts,Andrew Gelfand,6-1 6-0,12,1,2,0,Completed,true,false,false
+AP011082,26 Jun 10,8,Lauriston,Highmoor Uniting 2,No. 2,Ray Turss,Michael Bane,Ray Turss,6-0 6-1,12,1,2,0,Completed,true,false,false
+AP011082,26 Jun 10,8,Lauriston,Highmoor Uniting 2,No. 3,Ray Musster,Maurice Pattison,Ray Musster,6-0 6-0,12,0,2,0,Completed,true,false,false
+AP011083,26 Jun 10,8,Highmoor Uniting 1,Le Page,No. 1,Patrick Meehan,Nathan Coombes,Nathan Coombes,0-6 2-6,2,12,0,2,Completed,true,false,false
+AP011083,26 Jun 10,8,Highmoor Uniting 1,Le Page,No. 2,Scott Lyons,Tyson Coombes,Tyson Coombes,2-6 0-6,2,12,0,2,Completed,true,false,false
+AP011083,26 Jun 10,8,Highmoor Uniting 1,Le Page,No. 3,Jayden Moorfoot,Trevor Hastings,Jayden Moorfoot,6-4 5-7 6-3,17,14,2,1,Completed,true,false,false
+AP011101,10 Jul 10,10,Highmoor Uniting 2,St Pats Mentone,No. 1,Dong Il Lee,Alex Quinn,Alex Quinn,1-6 0-6,1,12,0,2,Completed,true,false,false
+AP011101,10 Jul 10,10,Highmoor Uniting 2,St Pats Mentone,No. 2,Michael Bane,Andrew Rolfe,Andrew Rolfe,7-6 0-6 1-6,8,18,1,2,Completed,true,false,false
+AP011101,10 Jul 10,10,Highmoor Uniting 2,St Pats Mentone,No. 3,Clemens Lee,Richard Morley,Richard Morley,2-6 3-6,5,12,0,2,Completed,true,false,false
+AP011102,10 Jul 10,10,Lauriston,Highmoor Uniting 1,No. 1,Andrew Gelfand,Patrick Meehan,Andrew Gelfand,6-3 7-5,13,8,2,0,Completed,true,false,false
+AP011102,10 Jul 10,10,Lauriston,Highmoor Uniting 1,No. 2,Ray Turss,Jayden Moorfoot,Ray Turss,6-3 6-3,12,6,2,0,Completed,true,false,false
+AP011102,10 Jul 10,10,Lauriston,Highmoor Uniting 1,No. 3,Warren Geyer,Mitya Argentor,Warren Geyer,6-1 6-1,12,2,2,0,Completed,true,false,false
+AP011103,10 Jul 10,10,Glen Huntly,Le Page,No. 1,Rodney Boonsinlapa,Nathan Coombes,Nathan Coombes,0-6 1-6,1,12,0,2,Completed,true,false,false
+AP011103,10 Jul 10,10,Glen Huntly,Le Page,No. 2,Ramsay Taylor,Tyson Coombes,Tyson Coombes,1-6 1-6,2,12,0,2,Completed,true,false,false
+AP011103,10 Jul 10,10,Glen Huntly,Le Page,No. 3,Kon Chingasev,Trevor Hastings,Trevor Hastings,0-6 1-6,1,12,0,2,Completed,true,false,false
+AP011121,24 Jul 10,12,Le Page,St Pats Mentone,No. 1,Nathan Coombes,Ben Dix,Ben Dix,1-6 6-4 4-6,11,16,1,2,Completed,true,false,false
+AP011121,24 Jul 10,12,Le Page,St Pats Mentone,No. 2,Tyson Coombes,Alex Quinn,Alex Quinn,4-6 4-6,8,12,0,2,Completed,true,false,false
+AP011121,24 Jul 10,12,Le Page,St Pats Mentone,No. 3,Trevor Hastings,Andrew Rolfe,Andrew Rolfe,2-6 4-6,6,12,0,2,Completed,true,false,false
+AP011122,24 Jul 10,12,Highmoor Uniting 1,Highmoor Uniting 2,No. 1,Patrick Meehan,Neil Roberts,Patrick Meehan,6-3 7-6,13,9,2,0,Completed,true,false,false
+AP011122,24 Jul 10,12,Highmoor Uniting 1,Highmoor Uniting 2,No. 2,Frank Collins,Michael Bane,Frank Collins,4-6 6-4 6-4,16,14,2,1,Completed,true,false,false
+AP011122,24 Jul 10,12,Highmoor Uniting 1,Highmoor Uniting 2,No. 3,Mitya Argentor,Clemens Lee,Clemens Lee,3-6 2-6,5,12,0,2,Completed,true,false,false
+AP011123,24 Jul 10,12,Lauriston,Glen Huntly,No. 1,Andrew Gelfand,Rodney Boonsinlapa,Andrew Gelfand,6-0 6-2,12,2,2,0,Completed,true,false,false
+AP011123,24 Jul 10,12,Lauriston,Glen Huntly,No. 2,Ray Turss,Ramsay Taylor,Ray Turss,5-7 7-5 6-4,18,16,2,1,Completed,true,false,false
+AP011123,24 Jul 10,12,Lauriston,Glen Huntly,No. 3,Warren Geyer,Thang Minh Tran,Warren Geyer,6-0 6-2,12,2,2,0,Completed,true,false,false
+AP011141,07 Aug 10,14,Highmoor Uniting 1,St Pats Mentone,No. 1,Scott Lyons,Alex Quinn,Scott Lyons,3-6 7-5 6-4,16,15,2,1,Completed,true,false,false
+AP011141,07 Aug 10,14,Highmoor Uniting 1,St Pats Mentone,No. 2,Maurice Pattison,Andrew Rolfe,Andrew Rolfe,2-6 1-6,3,12,0,2,Completed,true,false,false
+AP011141,07 Aug 10,14,Highmoor Uniting 1,St Pats Mentone,No. 3,Mitya Argentor,Richard Morley,Richard Morley,2-6 2-6,4,12,0,2,Completed,true,false,false
+AP011142,07 Aug 10,14,Lauriston,Le Page,No. 1,Andrew Gelfand,Nathan Coombes,Nathan Coombes,6-7 3-6,9,13,0,2,Completed,true,false,false
+AP011142,07 Aug 10,14,Lauriston,Le Page,No. 2,Ray Turss,Tyson Coombes,Tyson Coombes,4-6 0-6,4,12,0,2,Completed,true,false,false
+AP011142,07 Aug 10,14,Lauriston,Le Page,No. 3,Warren Geyer,Trevor Hastings,Warren Geyer,6-3 6-3,12,6,2,0,Completed,true,false,false
+AP011143,07 Aug 10,14,Glen Huntly,Highmoor Uniting 2,No. 1,Rodney Boonsinlapa,Neil Roberts,Rodney Boonsinlapa,6-0 6-1,12,1,2,0,Completed,true,false,false
+AP011143,07 Aug 10,14,Glen Huntly,Highmoor Uniting 2,No. 2,Ramsay Taylor,Dong Il Lee,Ramsay Taylor,6-2 6-1,12,3,2,0,Completed,true,false,false
+AP011143,07 Aug 10,14,Glen Huntly,Highmoor Uniting 2,No. 3,Kon Chingasev,Michael Bane,Kon Chingasev,6-3 7-5,13,8,2,0,Completed,true,false,false
+AP011311,14 Aug 10,15,Lauriston,Glen Huntly,No. 1,Andrew Gelfand,Rodney Boonsinlapa,Andrew Gelfand,6-2 6-2,12,4,2,0,Completed,true,false,false
+AP011311,14 Aug 10,15,Lauriston,Glen Huntly,No. 2,Ray Turss,Ramsay Taylor,,6-1 4-6 0-1,10,8,1,2,Unfinished,false,false,false
+AP011311,14 Aug 10,15,Lauriston,Glen Huntly,No. 3,Ray Musster,Kon Chingasev,Ray Musster,6-1,6,1,1,0,Completed,true,false,false
+AP011321,,16,St Pats Mentone,Lauriston,No. 1,Alex Quinn,Andrew Gelfand,Andrew Gelfand,4-6 2-6,6,12,0,2,Completed,true,true,false
+AP011321,,16,St Pats Mentone,Lauriston,No. 2,Andrew Rolfe,Ray Turss,Ray Turss,4-6 6-7,10,13,0,2,Completed,true,false,false
+AP011321,,16,St Pats Mentone,Lauriston,No. 3,Tony Quinn,Ray Musster,Ray Musster,4-6,4,6,0,1,Completed,true,false,false

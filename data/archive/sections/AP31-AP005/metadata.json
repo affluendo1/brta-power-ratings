@@ -1,0 +1,93 @@
+{
+  "asset_id": "AP31-AP005",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Winter 2015",
+  "season_id": "AP31",
+  "season_label": "Winter 2015",
+  "source_section_code": "AP005",
+  "section_label": "Mixed Rubbers 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Highmoor Uniting",
+      "wins": 11,
+      "points": 79.5,
+      "percentage": 112.28,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "Parkdale",
+      "wins": 8,
+      "points": 77,
+      "percentage": 130.74,
+      "marker": "P"
+    },
+    {
+      "position": 3,
+      "team": "Clarinda",
+      "wins": 9,
+      "points": 76,
+      "percentage": 117.87,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "St Pats Mentone",
+      "wins": 8,
+      "points": 72,
+      "percentage": 112.71,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "St Johns",
+      "wins": 2,
+      "points": 32.5,
+      "percentage": 83.95,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Centenary Park",
+      "wins": 1,
+      "points": 23,
+      "percentage": 55.84,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP31-AP005",
+  "fixtures": 47,
+  "completed_fixtures": 43,
+  "draw_fixtures": 57,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 170,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP005023 doubles No. 3: '6-7 7-5 2-3'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP005042 doubles No. 4: '2-6 5-5'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP005062 doubles No. 3: '2-6 6-4 3-0'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP005062 doubles No. 4: '7-5 2-3'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP005093 doubles No. 3: '3-6 0-2'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

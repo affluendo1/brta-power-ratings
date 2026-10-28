@@ -1,0 +1,103 @@
+{
+  "asset_id": "AP30-AP021",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 14/15",
+  "season_id": "AP30",
+  "season_label": "Summer 14/15",
+  "source_section_code": "AP021",
+  "section_label": "Men's S/D 8",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "BLTC",
+      "wins": 10,
+      "points": 98,
+      "percentage": 124.36,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "GPHC",
+      "wins": 10,
+      "points": 94.5,
+      "percentage": 134.77,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "East Malvern",
+      "wins": 8,
+      "points": 80.5,
+      "percentage": 112.81,
+      "marker": "P"
+    },
+    {
+      "position": 4,
+      "team": "Maccabi 1",
+      "wins": 8,
+      "points": 77.5,
+      "percentage": 113.66,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Maccabi 2",
+      "wins": 5,
+      "points": 65,
+      "percentage": 99.84,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Le Page",
+      "wins": 5,
+      "points": 55,
+      "percentage": 83.95,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Ormond",
+      "wins": 4,
+      "points": 49,
+      "percentage": 82.13,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "Murrumbeena",
+      "wins": 1,
+      "points": 34.5,
+      "percentage": 69.47,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP30-AP021",
+  "fixtures": 60,
+  "completed_fixtures": 58,
+  "draw_fixtures": 49,
+  "singles_rubbers": 226,
+  "doubles_rubbers": 114,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

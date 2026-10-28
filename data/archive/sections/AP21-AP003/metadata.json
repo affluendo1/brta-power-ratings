@@ -1,0 +1,91 @@
+{
+  "asset_id": "AP21-AP003",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Winter 2010",
+  "season_id": "AP21",
+  "season_label": "Winter 2010",
+  "source_section_code": "AP003",
+  "section_label": "Ladies Sets 3",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "St Pats Mentone 1",
+      "wins": 0,
+      "points": 102,
+      "percentage": 168.89,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "Beaumaris CC",
+      "wins": 0,
+      "points": 93,
+      "percentage": 171.84,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Port Melbourne",
+      "wins": 0,
+      "points": 81,
+      "percentage": 150.0,
+      "marker": "P"
+    },
+    {
+      "position": 4,
+      "team": "Ormond",
+      "wins": 0,
+      "points": 39,
+      "percentage": 66.67,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Parkdale",
+      "wins": 0,
+      "points": 33,
+      "percentage": 75.54,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "St Pats Mentone 2",
+      "wins": 0,
+      "points": 12,
+      "percentage": 39.56,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 1,
+    "doublesTarget": 10,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP21-AP003",
+  "fixtures": 47,
+  "completed_fixtures": 46,
+  "draw_fixtures": 57,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 182,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP003061 doubles No. 3: '1-1'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP003061 doubles No. 4: '1-0'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP003063 doubles No. 3: '3-3'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

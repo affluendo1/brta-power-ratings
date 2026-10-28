@@ -1,0 +1,47 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP006011,04 May 24,1,regular,Round 1,Elwood Blue,Port Melbourne,8,0,8,0,,,48,2,Completed,
+AP006012,04 May 24,1,regular,Round 1,Albert Park,Sth Murrumbeena,1,7,2,6,,,30,48,Completed,
+AP006013,04 May 24,1,regular,Round 1,Hurlingham Park,Clarinda,0,8,0,8,,,9,48,Completed,
+AP006021,11 May 24,2,regular,Round 2,Clarinda,Elwood Blue,6,2,4,4,,,36,32,Completed,
+AP006022,11 May 24,2,regular,Round 2,Sth Murrumbeena,Hurlingham Park,8,0,8,2,,,61,44,Completed,
+AP006023,11 May 24,2,regular,Round 2,Port Melbourne,Albert Park,0,8,0,8,,,8,48,Completed,
+AP006032,18 May 24,3,regular,Round 3,Hurlingham Park,Port Melbourne,7,1,7,2,,,52,32,Completed,
+AP006033,18 May 24,3,regular,Round 3,Clarinda,Sth Murrumbeena,7,1,6,2,,,47,37,Completed,
+pending-ap006-r3-elwood-blue-albert-park,18 May 24,3,regular,Round 3,Elwood Blue,Albert Park,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP006041,25 May 24,4,regular,Round 4,Sth Murrumbeena,Elwood Blue,2,6,4,4,,,30,44,Completed,
+AP006042,25 May 24,4,regular,Round 4,Port Melbourne,Clarinda,0,8,0,8,,,8,48,Completed,
+AP006043,25 May 24,4,regular,Round 4,Albert Park,Hurlingham Park,8,0,8,1,,,55,38,Completed,
+AP006051,01 Jun 24,5,regular,Round 5,Elwood Blue,Hurlingham Park,8,0,8,0,,,48,9,Completed,
+AP006052,01 Jun 24,5,regular,Round 5,Sth Murrumbeena,Port Melbourne,8,0,8,1,,,55,28,Completed,
+AP006053,01 Jun 24,5,regular,Round 5,Clarinda,Albert Park,4.5,3.5,3,0,,,24,10,Completed,
+AP006061,15 Jun 24,6,regular,Round 6,Port Melbourne,Elwood Blue,0,8,0,8,,,10,49,Completed,
+AP006062,15 Jun 24,6,regular,Round 6,Sth Murrumbeena,Albert Park,8,0,8,0,,,49,21,Completed,
+AP006063,15 Jun 24,6,regular,Round 6,Clarinda,Hurlingham Park,8,0,8,0,,,48,14,Completed,
+AP006071,22 Jun 24,7,regular,Round 7,Elwood Blue,Clarinda,7,1,7,2,,,52,34,Completed,
+AP006072,22 Jun 24,7,regular,Round 7,Hurlingham Park,Sth Murrumbeena,1,7,3,7,,,44,62,Completed,
+AP006073,22 Jun 24,7,regular,Round 7,Albert Park,Port Melbourne,7,1,7,2,,,53,28,Completed,
+pending-ap006-r8-albert-park-elwood-blue,29 Jun 24,8,regular,Round 8,Albert Park,Elwood Blue,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap006-r8-port-melbourne-hurlingham-park,29 Jun 24,8,regular,Round 8,Port Melbourne,Hurlingham Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap006-r8-sth-murrumbeena-clarinda,29 Jun 24,8,regular,Round 8,Sth Murrumbeena,Clarinda,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP006091,13 Jul 24,9,regular,Round 9,Elwood Blue,Sth Murrumbeena,7,1,6,2,,,41,22,Completed,
+AP006092,13 Jul 24,9,regular,Round 9,Clarinda,Port Melbourne,8,0,8,0,,,48,16,Completed,
+AP006093,13 Jul 24,9,regular,Round 9,Hurlingham Park,Albert Park,1,7,5,6,,,56,62,Completed,
+AP006103,20 Jul 24,10,regular,Round 10,Albert Park,Clarinda,3.5,4.5,0,3,,,3,19,Completed,
+pending-ap006-r10-hurlingham-park-elwood-blue,20 Jul 24,10,regular,Round 10,Hurlingham Park,Elwood Blue,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap006-r10-port-melbourne-sth-murrumbeena,20 Jul 24,10,regular,Round 10,Port Melbourne,Sth Murrumbeena,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap006-r11-albert-park-sth-murrumbeena,27 Jul 24,11,regular,Round 11,Albert Park,Sth Murrumbeena,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap006-r11-elwood-blue-port-melbourne,27 Jul 24,11,regular,Round 11,Elwood Blue,Port Melbourne,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap006-r11-hurlingham-park-clarinda,27 Jul 24,11,regular,Round 11,Hurlingham Park,Clarinda,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP006121,03 Aug 24,12,regular,Round 12,Clarinda,Elwood Blue,1,7,3,7,,,42,55,Completed,
+AP006122,03 Aug 24,12,regular,Round 12,Sth Murrumbeena,Hurlingham Park,8,0,8,0,,,48,20,Completed,
+AP006123,03 Aug 24,12,regular,Round 12,Port Melbourne,Albert Park,0,8,0,8,,,14,49,Completed,
+AP006131,10 Aug 24,13,regular,Round 13,Elwood Blue,Albert Park,8,0,8,0,,,48,14,Completed,
+AP006132,10 Aug 24,13,regular,Round 13,Hurlingham Park,Port Melbourne,7,1,6,2,,,43,24,Completed,
+AP006133,10 Aug 24,13,regular,Round 13,Clarinda,Sth Murrumbeena,8,0,8,1,,,57,42,Completed,
+AP006141,17 Aug 24,14,regular,Round 14,Sth Murrumbeena,Elwood Blue,2,6,4,5,,,38,47,Completed,
+AP006142,17 Aug 24,14,regular,Round 14,Port Melbourne,Clarinda,0,8,0,8,,,6,48,Completed,
+AP006143,17 Aug 24,14,regular,Round 14,Albert Park,Hurlingham Park,7,1,7,2,,,53,29,Completed,
+AP006151,24 Aug 24,15,regular,Round 15,Elwood Blue,Hurlingham Park,6,2,5,4,,,48,31,Completed,
+AP006152,24 Aug 24,15,regular,Round 15,Sth Murrumbeena,Port Melbourne,8,0,8,0,,,48,20,Completed,
+pending-ap006-r15-clarinda-albert-park,24 Aug 24,15,regular,Round 15,Clarinda,Albert Park,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP006321,,16,grand_final,Grand final · TROLS entry 2,Elwood Blue,Clarinda,7,1,6,3,,,50,42,Completed,

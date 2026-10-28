@@ -1,0 +1,92 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP013021,08 May 10,2,MCC,St Pats Mentone,No. 1,Auke de Vries,Gemma Savage,Auke de Vries,7-5 6-4,13,9,2,0,Completed,true,false,false
+AP013021,08 May 10,2,MCC,St Pats Mentone,No. 2,John Gregory,Edwina Brinkley,John Gregory,6-1 6-2,12,3,2,0,Completed,true,false,false
+AP013021,08 May 10,2,MCC,St Pats Mentone,No. 3,Iain Stewart,Cassie Lawrence,Iain Stewart,6-0 6-0,12,0,2,0,Completed,true,false,false
+AP013022,08 May 10,2,Melbourne Univ,East Malvern,No. 1,Matthew Robertson,Karia Kavanaugh,Karia Kavanaugh,2-6 1-6,3,12,0,2,Completed,true,false,false
+AP013022,08 May 10,2,Melbourne Univ,East Malvern,No. 2,Taner Kucukyuruk,Emma Bland,Taner Kucukyuruk,6-2 7-5,13,7,2,0,Completed,true,false,false
+AP013022,08 May 10,2,Melbourne Univ,East Malvern,No. 3,Brad Bennetts,Peta Bond,Brad Bennetts,7-5 6-3,13,8,2,0,Completed,true,false,false
+AP013023,08 May 10,2,Port Melbourne,Lauriston,No. 1,Peter Sakis,Phil Murphy,Phil Murphy,3-6 4-6,7,12,0,2,Completed,true,false,false
+AP013023,08 May 10,2,Port Melbourne,Lauriston,No. 2,Billy Sakis,Danny Zielin,Billy Sakis,6-3 6-2,12,5,2,0,Completed,true,false,false
+AP013023,08 May 10,2,Port Melbourne,Lauriston,No. 3,James Faye,David Newton,David Newton,0-6 0-6,0,12,0,2,Completed,true,false,false
+AP013024,08 May 10,2,Le Page,Beaumaris CC,No. 1,Marcus Shanahan,Sean MacPherson,Sean MacPherson,0-6 2-6,2,12,0,2,Completed,true,false,false
+AP013024,08 May 10,2,Le Page,Beaumaris CC,No. 2,Dylan Taylor,Angus Todd,Angus Todd,4-6 1-6,5,12,0,2,Completed,true,false,false
+AP013024,08 May 10,2,Le Page,Beaumaris CC,No. 3,Yanni Bakaniozos,Lauren Kinsey,Lauren Kinsey,6-2 3-6 2-6,11,14,1,2,Completed,true,false,false
+AP013041,22 May 10,4,Port Melbourne,St Pats Mentone,No. 1,Billy Sakis,Brad Sykes,Brad Sykes,3-6 1-6,4,12,0,2,Completed,true,false,false
+AP013041,22 May 10,4,Port Melbourne,St Pats Mentone,No. 2,James Faye,Chloe Jackson,James Faye,6-2 6-3,12,5,2,0,Completed,true,false,false
+AP013041,22 May 10,4,Port Melbourne,St Pats Mentone,No. 3,Nikos Riegler,Cassie Lawrence,Nikos Riegler,6-0 6-1,12,1,2,0,Completed,true,false,false
+AP013042,22 May 10,4,Le Page,East Malvern,No. 1,Dylan Taylor,Josh Weberruss,Dylan Taylor,6-3 6-1,12,4,2,0,Completed,true,false,false
+AP013042,22 May 10,4,Le Page,East Malvern,No. 2,Josh Groves,Emma Bland,Josh Groves,6-1 6-7 6-4,18,12,2,1,Completed,true,false,false
+AP013042,22 May 10,4,Le Page,East Malvern,No. 3,Yanni Bakaniozos,Peta Bond,Yanni Bakaniozos,6-4 6-1,12,5,2,0,Completed,true,false,false
+AP013043,22 May 10,4,MCC,Lauriston,No. 1,Stephen Pearson,Phil Murphy,Phil Murphy,2-6 3-6,5,12,0,2,Completed,true,false,false
+AP013043,22 May 10,4,MCC,Lauriston,No. 2,Auke de Vries,Luke Smith,Luke Smith,2-6 3-6,5,12,0,2,Completed,true,false,false
+AP013043,22 May 10,4,MCC,Lauriston,No. 3,John Gregory,Danny Zielin,Danny Zielin,0-6 2-6,2,12,0,2,Completed,true,false,false
+AP013044,22 May 10,4,Melbourne Univ,Beaumaris CC,No. 1,Raymond Lumantarna,Angus Todd,Raymond Lumantarna,6-3 6-4,12,7,2,0,Completed,true,false,false
+AP013044,22 May 10,4,Melbourne Univ,Beaumaris CC,No. 2,Hin Tse Sai,Tim Edmonds,Hin Tse Sai,6-3 6-3,12,6,2,0,Completed,true,false,false
+AP013044,22 May 10,4,Melbourne Univ,Beaumaris CC,No. 3,Brad Bennetts,Blake Thompson,Blake Thompson,4-6 6-7,10,13,0,2,Completed,true,false,false
+AP013061,05 Jun 10,6,East Malvern,Lauriston,No. 1,Peter Hillier,Luke Smith,Peter Hillier,6-0 6-3,12,3,2,0,Completed,true,false,false
+AP013061,05 Jun 10,6,East Malvern,Lauriston,No. 2,Emma Bland,Danny Zielin,Danny Zielin,4-6 0-6,4,12,0,2,Completed,true,false,false
+AP013061,05 Jun 10,6,East Malvern,Lauriston,No. 3,Peta Bond,David Newton,David Newton,2-6 0-6,2,12,0,2,Completed,true,false,false
+AP013062,05 Jun 10,6,Beaumaris CC,St Pats Mentone,No. 1,Angus Todd,Chloe Jackson,,3-2,3,2,1,0,Unfinished,false,false,false
+AP013062,05 Jun 10,6,Beaumaris CC,St Pats Mentone,No. 2,Daniel Wotherspoon,Gemma Savage,,4-2,4,2,1,0,Unfinished,false,false,false
+AP013062,05 Jun 10,6,Beaumaris CC,St Pats Mentone,No. 3,Jessica Elliot,[Unnamed emergency — TROLS AP013062 away code 3],Jessica Elliot,6-0 6-0,12,0,2,0,Completed,false,false,true
+AP013063,05 Jun 10,6,Le Page,Port Melbourne,No. 1,Dylan Taylor,Billy Sakis,Dylan Taylor,6-1,6,1,1,0,Completed,true,false,false
+AP013063,05 Jun 10,6,Le Page,Port Melbourne,No. 2,Josh Groves,Callum Sinclair,Josh Groves,6-0,6,0,1,0,Completed,true,false,false
+AP013064,05 Jun 10,6,Melbourne Univ,MCC,No. 1,Veera Ramanathan,Aakash Madnani,Veera Ramanathan,6-1 6-3,12,4,2,0,Completed,true,false,false
+AP013064,05 Jun 10,6,Melbourne Univ,MCC,No. 2,Raymond Lumantarna,Auke de Vries,Raymond Lumantarna,6-2 1-6 6-2,13,10,2,1,Completed,true,false,false
+AP013064,05 Jun 10,6,Melbourne Univ,MCC,No. 3,Brad Bennetts,Philip Meyer,Brad Bennetts,6-3,6,3,1,0,Completed,true,false,false
+AP013082,26 Jun 10,8,Port Melbourne,East Malvern,No. 1,Billy Sakis,Karia Kavanaugh,Karia Kavanaugh,1-6 2-6,3,12,0,2,Completed,true,false,false
+AP013082,26 Jun 10,8,Port Melbourne,East Malvern,No. 2,James Faye,Emma Bland,James Faye,7-6 5-7 6-4,18,17,2,1,Completed,true,false,false
+AP013082,26 Jun 10,8,Port Melbourne,East Malvern,No. 3,Nikos Riegler,Peta Bond,Peta Bond,2-6 6-7,8,13,0,2,Completed,true,false,false
+AP013083,26 Jun 10,8,Le Page,Lauriston,No. 1,Aaron Gribben,Luke Smith,Luke Smith,7-5 4-6 1-6,12,17,1,2,Completed,true,false,false
+AP013083,26 Jun 10,8,Le Page,Lauriston,No. 2,Marcus Shanahan,Morris Trabsky,Marcus Shanahan,6-1 6-1,12,2,2,0,Completed,true,false,false
+AP013083,26 Jun 10,8,Le Page,Lauriston,No. 3,Dylan Taylor,Andre Saville,Dylan Taylor,4-6 6-3 6-0,16,9,2,1,Completed,true,false,false
+AP013084,26 Jun 10,8,MCC,Beaumaris CC,No. 1,Stephen Pearson,Angus Todd,Stephen Pearson,5-7 6-3 6-3,17,13,2,1,Completed,true,false,false
+AP013084,26 Jun 10,8,MCC,Beaumaris CC,No. 2,John Gregory,Jessica Elliot,Jessica Elliot,6-4 3-6 4-6,13,16,1,2,Completed,true,false,false
+AP013084,26 Jun 10,8,MCC,Beaumaris CC,No. 3,Iain Stewart,Michael Todd,Iain Stewart,6-3 6-2,12,5,2,0,Completed,true,false,false
+AP013101,10 Jul 10,10,Le Page,St Pats Mentone,No. 1,Marcus Shanahan,Chloe Jackson,Marcus Shanahan,6-0 6-1,12,1,2,0,Completed,true,false,false
+AP013101,10 Jul 10,10,Le Page,St Pats Mentone,No. 2,Josh Groves,Gemma Savage,Josh Groves,6-0 6-7 6-2,18,9,2,1,Completed,true,false,false
+AP013101,10 Jul 10,10,Le Page,St Pats Mentone,No. 3,Yanni Bakaniozos,Cassie Lawrence,Yanni Bakaniozos,6-2 6-2,12,4,2,0,Completed,true,false,false
+AP013102,10 Jul 10,10,MCC,East Malvern,No. 1,Steve Worthington,Leona Knapman,Leona Knapman,7-6 5-7 2-6,14,19,1,2,Completed,true,false,false
+AP013102,10 Jul 10,10,MCC,East Malvern,No. 2,John Gregory,Emma Bland,Emma Bland,3-6 4-6,7,12,0,2,Completed,true,false,false
+AP013102,10 Jul 10,10,MCC,East Malvern,No. 3,Philip Meyer,Peta Bond,Peta Bond,2-6 7-5 2-6,11,17,1,2,Completed,true,false,false
+AP013103,10 Jul 10,10,Melbourne Univ,Lauriston,No. 1,Veera Ramanathan,Phil Murphy,Phil Murphy,4-6 6-0 5-7,15,13,1,2,Completed,true,false,false
+AP013103,10 Jul 10,10,Melbourne Univ,Lauriston,No. 2,Taner Kucukyuruk,Luke Smith,Taner Kucukyuruk,6-4 7-6,13,10,2,0,Completed,true,false,false
+AP013103,10 Jul 10,10,Melbourne Univ,Lauriston,No. 3,Brad Bennetts,David Newton,David Newton,2-6 1-6,3,12,0,2,Completed,true,false,false
+AP013104,10 Jul 10,10,Port Melbourne,Beaumaris CC,No. 1,Peter Sakis,Angus Todd,Peter Sakis,6-2 6-1,12,3,2,0,Completed,true,false,false
+AP013104,10 Jul 10,10,Port Melbourne,Beaumaris CC,No. 2,Billy Sakis,Daniel Wotherspoon,Daniel Wotherspoon,4-6 1-6,5,12,0,2,Completed,true,false,false
+AP013104,10 Jul 10,10,Port Melbourne,Beaumaris CC,No. 3,James Faye,Jessica Elliot,James Faye,4-6 6-1 6-1,16,8,2,1,Completed,true,false,false
+AP013121,24 Jul 10,12,Beaumaris CC,Lauriston,No. 1,Sean MacPherson,Phil Murphy,Phil Murphy,3-6 3-6,6,12,0,2,Completed,true,false,false
+AP013121,24 Jul 10,12,Beaumaris CC,Lauriston,No. 2,Angus Todd,Luke Smith,Angus Todd,6-7 6-2 7-5,19,14,2,1,Completed,true,false,false
+AP013121,24 Jul 10,12,Beaumaris CC,Lauriston,No. 3,Daniel Wotherspoon,David Newton,Daniel Wotherspoon,6-2 6-4,12,6,2,0,Completed,true,false,false
+AP013122,24 Jul 10,12,Le Page,MCC,No. 1,Dylan Taylor,Stephen Pearson,Stephen Pearson,6-2 3-6 3-6,12,14,1,2,Completed,true,false,false
+AP013122,24 Jul 10,12,Le Page,MCC,No. 2,Yanni Bakaniozos,Auke de Vries,Auke de Vries,1-6 3-6,4,12,0,2,Completed,true,false,false
+AP013122,24 Jul 10,12,Le Page,MCC,No. 3,Ryan Beeby,John Gregory,Ryan Beeby,6-1 6-4,12,5,2,0,Completed,true,false,false
+AP013123,24 Jul 10,12,Melbourne Univ,Port Melbourne,No. 1,Taner Kucukyuruk,James Faye,Taner Kucukyuruk,6-3 6-3,12,6,2,0,Completed,true,false,false
+AP013123,24 Jul 10,12,Melbourne Univ,Port Melbourne,No. 2,Matthew Robertson,Billy Sakis,Matthew Robertson,6-4 6-4,12,8,2,0,Completed,true,false,false
+AP013123,24 Jul 10,12,Melbourne Univ,Port Melbourne,No. 3,Brad Bennetts,Nikos Riegler,Nikos Riegler,4-6 3-6,7,12,0,2,Completed,true,false,false
+AP013124,24 Jul 10,12,East Malvern,St Pats Mentone,No. 1,Emma Bland,Chloe Jackson,Emma Bland,6-4 6-2,12,6,2,0,Completed,true,false,false
+AP013124,24 Jul 10,12,East Malvern,St Pats Mentone,No. 2,Peta Bond,Gemma Savage,Gemma Savage,6-4 1-6 2-6,9,16,1,2,Completed,true,false,false
+AP013124,24 Jul 10,12,East Malvern,St Pats Mentone,No. 3,Leonie Collins,Cassie Lawrence,Leonie Collins,6-4 6-4,12,8,2,0,Completed,true,false,false
+AP013141,07 Aug 10,14,Lauriston,St Pats Mentone,No. 1,Luke Smith,Chloe Jackson,Luke Smith,6-0 6-3,12,3,2,0,Completed,true,false,false
+AP013141,07 Aug 10,14,Lauriston,St Pats Mentone,No. 2,Danny Zielin,[Unnamed emergency — TROLS AP013141 away code 2],Danny Zielin,6-0 6-0,12,0,2,0,Completed,false,false,true
+AP013141,07 Aug 10,14,Lauriston,St Pats Mentone,No. 3,David Newton,Cassie Lawrence,David Newton,6-0 6-0,12,0,2,0,Completed,true,false,false
+AP013142,07 Aug 10,14,Beaumaris CC,East Malvern,No. 1,Angus Todd,Karia Kavanaugh,Karia Kavanaugh,7-5 4-6 1-6,12,17,1,2,Completed,true,false,false
+AP013142,07 Aug 10,14,Beaumaris CC,East Malvern,No. 2,Daniel Wotherspoon,Rion Casey,Daniel Wotherspoon,6-1 6-2,12,3,2,0,Completed,true,false,false
+AP013142,07 Aug 10,14,Beaumaris CC,East Malvern,No. 3,Andrew Todd,Emma Bland,Emma Bland,6-7 4-6,10,13,0,2,Completed,true,false,false
+AP013143,07 Aug 10,14,Port Melbourne,MCC,No. 1,Billy Sakis,Stephen Pearson,Stephen Pearson,2-6 2-6,4,12,0,2,Completed,true,false,false
+AP013143,07 Aug 10,14,Port Melbourne,MCC,No. 2,James Faye,Steve Worthington,Steve Worthington,4-6 2-6,6,12,0,2,Completed,true,false,false
+AP013143,07 Aug 10,14,Port Melbourne,MCC,No. 3,Pierce O'Donovan,Auke de Vries,Pierce O'Donovan,6-4 6-3,12,7,2,0,Completed,true,false,false
+AP013144,07 Aug 10,14,Melbourne Univ,Le Page,No. 1,Veera Ramanathan,Marcus Shanahan,Veera Ramanathan,6-2 6-1,12,3,2,0,Completed,true,false,false
+AP013144,07 Aug 10,14,Melbourne Univ,Le Page,No. 2,Taner Kucukyuruk,Dylan Taylor,Taner Kucukyuruk,7-5 6-7 6-1,19,13,2,1,Completed,true,false,false
+AP013144,07 Aug 10,14,Melbourne Univ,Le Page,No. 3,Brad Bennetts,Yanni Bakaniozos,Brad Bennetts,5-7 6-4 6-1,17,12,2,1,Completed,true,false,false
+AP013301,,16,Lauriston,Melbourne Univ,No. 1,Phil Murphy,Veera Ramanathan,Phil Murphy,7-5 7-5,14,10,2,0,Completed,true,false,false
+AP013301,,16,Lauriston,Melbourne Univ,No. 2,Luke Smith,Matthew Robertson,Luke Smith,6-0 6-1,12,1,2,0,Completed,true,false,false
+AP013301,,16,Lauriston,Melbourne Univ,No. 3,Danny Zielin,Brad Bennetts,Danny Zielin,6-3 6-4,12,7,2,0,Completed,true,false,false
+AP013302,,16,Beaumaris CC,East Malvern,No. 1,Angus Todd,Karia Kavanaugh,Karia Kavanaugh,3-6 3-6,6,12,0,2,Completed,true,false,true
+AP013302,,16,Beaumaris CC,East Malvern,No. 2,Daniel Wotherspoon,Alan Young,Daniel Wotherspoon,6-4 6-4,12,8,2,0,Completed,true,false,true
+AP013302,,16,Beaumaris CC,East Malvern,No. 3,Andrew Todd,Emma Bland,Emma Bland,2-6 2-6,4,12,0,2,Completed,true,false,false
+AP013311,,16,Melbourne Univ,Beaumaris CC,No. 1,Veera Ramanathan,Angus Todd,Veera Ramanathan,6-4 6-2,12,6,2,0,Completed,true,false,false
+AP013311,,16,Melbourne Univ,Beaumaris CC,No. 2,Taner Kucukyuruk,Andrew Todd,Taner Kucukyuruk,7-5 7-6,14,11,2,0,Completed,true,false,false
+AP013321,,17,Lauriston,Melbourne Univ,No. 1,Phil Murphy,Veera Ramanathan,Veera Ramanathan,6-0 4-6 3-6,13,12,1,2,Completed,true,false,false
+AP013321,,17,Lauriston,Melbourne Univ,No. 2,Luke Smith,Raymond Lumantarna,Raymond Lumantarna,2-6 4-6,6,12,0,2,Completed,true,false,false
+AP013321,,17,Lauriston,Melbourne Univ,No. 3,David Newton,Matthew Robertson,David Newton,6-1 6-1,12,2,2,0,Completed,true,false,false

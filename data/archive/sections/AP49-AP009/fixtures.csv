@@ -1,0 +1,60 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP009011,05 Oct 24,1,regular,Round 1,BLTC Blue,BLTC White,5,5,0,1,,,7,12,Completed,
+AP009012,05 Oct 24,1,regular,Round 1,Dendy Park,Tennis World,5.5,4.5,2,1,,,27,17,Completed,
+AP009014,05 Oct 24,1,regular,Round 1,Maccabi,Clarinda,5.5,4.5,2,1,,,28,15,Completed,
+pending-ap009-r1-bye-royal-south-yarra,05 Oct 24,1,regular,Round 1,Bye,Royal South Yarra,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009021,12 Oct 24,2,regular,Round 2,Clarinda,BLTC Blue,8,2,6,3,,,53,34,Completed,
+AP009022,12 Oct 24,2,regular,Round 2,BLTC White,Dendy Park,1,9,2,6,,,36,46,Completed,
+AP009024,12 Oct 24,2,regular,Round 2,Royal South Yarra,Maccabi,2,8,4,6,,,59,62,Completed,
+pending-ap009-r2-tennis-world-bye,12 Oct 24,2,regular,Round 2,Tennis World,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009031,19 Oct 24,3,regular,Round 3,BLTC Blue,Royal South Yarra,9,1,7,3,,,59,48,Completed,
+AP009032,19 Oct 24,3,regular,Round 3,Dendy Park,Clarinda,2,8,3,5,,,35,47,Completed,
+AP009034,19 Oct 24,3,regular,Round 3,Maccabi,Tennis World,7,3,4,4,,,49,45,Completed,
+pending-ap009-r3-bye-bltc-white,19 Oct 24,3,regular,Round 3,Bye,BLTC White,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009041,26 Oct 24,4,regular,Round 4,Tennis World,BLTC Blue,2,8,3,6,,,40,46,Completed,
+AP009042,26 Oct 24,4,regular,Round 4,Royal South Yarra,Dendy Park,2,8,3,5,,,40,45,Completed,
+AP009044,26 Oct 24,4,regular,Round 4,BLTC White,Maccabi,1,9,1,7,,,32,53,Completed,
+pending-ap009-r4-clarinda-bye,26 Oct 24,4,regular,Round 4,Clarinda,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009052,09 Nov 24,5,regular,Round 5,Clarinda,Royal South Yarra,3,7,4,5,,,55,47,Completed,
+AP009053,09 Nov 24,5,regular,Round 5,Tennis World,BLTC White,7,3,5,4,,,52,41,Completed,
+AP009054,09 Nov 24,5,regular,Round 5,BLTC Blue,Dendy Park,2,8,3,6,,,42,49,Completed,
+pending-ap009-r5-bye-maccabi,09 Nov 24,5,regular,Round 5,Bye,Maccabi,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009062,16 Nov 24,6,regular,Round 6,Maccabi,BLTC Blue,8,2,5,4,,,57,49,Completed,
+AP009063,16 Nov 24,6,regular,Round 6,Royal South Yarra,Tennis World,7,3,5,3,,,48,38,Completed,
+AP009064,16 Nov 24,6,regular,Round 6,BLTC White,Clarinda,3,7,4,5,,,41,48,Completed,
+pending-ap009-r6-dendy-park-bye,16 Nov 24,6,regular,Round 6,Dendy Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009073,23 Nov 24,7,regular,Round 7,Clarinda,Tennis World,5,5,2,3,,,23,28,Completed,
+AP009074,23 Nov 24,7,regular,Round 7,Royal South Yarra,BLTC White,7,3,5,4,,,49,43,Completed,
+pending-ap009-r7-bltc-blue-bye,23 Nov 24,7,regular,Round 7,BLTC Blue,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap009-r7-dendy-park-maccabi,23 Nov 24,7,regular,Round 7,Dendy Park,Maccabi,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP009082,30 Nov 24,8,regular,Round 8,Tennis World,Dendy Park,5,5,0,0,,,0,0,Completed,
+pending-ap009-r8-bltc-white-bltc-blue,30 Nov 24,8,regular,Round 8,BLTC White,BLTC Blue,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap009-r8-clarinda-maccabi,30 Nov 24,8,regular,Round 8,Clarinda,Maccabi,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap009-r8-royal-south-yarra-bye,30 Nov 24,8,regular,Round 8,Royal South Yarra,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009091,07 Dec 24,9,regular,Round 9,BLTC Blue,Clarinda,8,2,5,4,,,53,49,Completed,
+AP009092,07 Dec 24,9,regular,Round 9,Dendy Park,BLTC White,3,7,4,5,,,40,53,Completed,
+AP009094,07 Dec 24,9,regular,Round 9,Maccabi,Royal South Yarra,2,8,4,6,,,48,58,Completed,
+pending-ap009-r9-bye-tennis-world,07 Dec 24,9,regular,Round 9,Bye,Tennis World,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009101,14 Dec 24,10,regular,Round 10,Royal South Yarra,BLTC Blue,2,8,3,6,,,43,59,Completed,
+AP009102,14 Dec 24,10,regular,Round 10,Clarinda,Dendy Park,8,2,6,3,,,56,38,Completed,
+AP009104,14 Dec 24,10,regular,Round 10,Tennis World,Maccabi,9,1,7,3,,,59,42,Completed,
+pending-ap009-r10-bltc-white-bye,14 Dec 24,10,regular,Round 10,BLTC White,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009111,01 Feb 25,11,regular,Round 11,BLTC Blue,Tennis World,0,10,0,8,,,19,56,Completed,
+AP009112,01 Feb 25,11,regular,Round 11,Dendy Park,Royal South Yarra,2,8,3,6,,,34,54,Completed,
+AP009114,01 Feb 25,11,regular,Round 11,Maccabi,BLTC White,9,1,7,2,,,53,42,Completed,
+pending-ap009-r11-bye-clarinda,01 Feb 25,11,regular,Round 11,Bye,Clarinda,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009122,08 Feb 25,12,regular,Round 12,Royal South Yarra,Clarinda,1,9,2,7,,,32,59,Completed,
+AP009123,08 Feb 25,12,regular,Round 12,BLTC White,Tennis World,0,10,0,8,,,15,56,Completed,
+AP009124,08 Feb 25,12,regular,Round 12,Dendy Park,BLTC Blue,2,8,3,6,,,34,56,Completed,
+pending-ap009-r12-maccabi-bye,08 Feb 25,12,regular,Round 12,Maccabi,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009132,15 Feb 25,13,regular,Round 13,BLTC Blue,Maccabi,5,5,0,0,,,5,5,Completed,
+AP009134,15 Feb 25,13,regular,Round 13,Clarinda,BLTC White,7,3,4,4,,,42,38,Completed,
+pending-ap009-r13-bye-dendy-park,15 Feb 25,13,regular,Round 13,Bye,Dendy Park,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap009-r13-tennis-world-royal-south-yarra,15 Feb 25,13,regular,Round 13,Tennis World,Royal South Yarra,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP009142,22 Feb 25,14,regular,Round 14,Maccabi,Dendy Park,7,3,4,4,,,39,32,Completed,
+AP009143,22 Feb 25,14,regular,Round 14,Tennis World,Clarinda,7,3,4,4,,,37,35,Completed,
+AP009144,22 Feb 25,14,regular,Round 14,BLTC White,Royal South Yarra,8,2,6,2,,,46,35,Completed,
+pending-ap009-r14-bye-bltc-blue,22 Feb 25,14,regular,Round 14,Bye,BLTC Blue,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009301,,16,semi_final,Semi-final,Maccabi,BLTC Blue,1,9,2,7,,,45,59,Completed,
+AP009302,,16,semi_final,Semi-final,Tennis World,Clarinda,2,8,3,6,,,40,58,Completed,
+AP009321,,17,grand_final,Grand final · TROLS entry 2,Clarinda,BLTC Blue,7,3,4,4,,,48,41,Completed,

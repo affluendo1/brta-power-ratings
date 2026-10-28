@@ -1,0 +1,60 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP006012,07 Oct 23,1,regular,Round 1,Maccabi,Kings Park Red,8,2,6,3,,,57,44,Completed,
+AP006013,07 Oct 23,1,regular,Round 1,Elsternwick Park,BLTC Blue,10,0,8,1,,,60,34,Completed,
+AP006014,07 Oct 23,1,regular,Round 1,Parkdale,Tennis World,3,7,4,5,,,52,47,Completed,
+pending-ap006-r1-st-pats-mentone-bye,07 Oct 23,1,regular,Round 1,St Pats Mentone,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP006021,14 Oct 23,2,regular,Round 2,Tennis World,St Pats Mentone,10,0,8,0,,,56,19,Completed,
+AP006023,14 Oct 23,2,regular,Round 2,Kings Park Red,Elsternwick Park,1,9,3,7,,,49,62,Completed,
+AP006024,14 Oct 23,2,regular,Round 2,BLTC Blue,Parkdale,10,0,8,0,,,56,23,Completed,
+pending-ap006-r2-bye-maccabi,14 Oct 23,2,regular,Round 2,Bye,Maccabi,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP006031,21 Oct 23,3,regular,Round 3,St Pats Mentone,BLTC Blue,3,7,4,5,,,41,47,Completed,
+AP006032,21 Oct 23,3,regular,Round 3,Maccabi,Tennis World,8,2,6,3,,,57,47,Completed,
+AP006034,21 Oct 23,3,regular,Round 3,Parkdale,Kings Park Red,2,8,3,5,,,36,48,Completed,
+pending-ap006-r3-elsternwick-park-bye,21 Oct 23,3,regular,Round 3,Elsternwick Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP006041,28 Oct 23,4,regular,Round 4,Kings Park Red,St Pats Mentone,8,2,6,2,,,47,31,Completed,
+AP006042,28 Oct 23,4,regular,Round 4,BLTC Blue,Maccabi,2,8,3,6,,,46,56,Completed,
+AP006043,28 Oct 23,4,regular,Round 4,Tennis World,Elsternwick Park,1,9,1,7,,,28,53,Completed,
+pending-ap006-r4-bye-parkdale,28 Oct 23,4,regular,Round 4,Bye,Parkdale,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP006051,11 Nov 23,5,regular,Round 5,Elsternwick Park,Parkdale,9,1,7,1,,,53,24,Completed,
+AP006052,11 Nov 23,5,regular,Round 5,Tennis World,BLTC Blue,7,3,5,4,,,53,47,Completed,
+AP006054,11 Nov 23,5,regular,Round 5,St Pats Mentone,Maccabi,1,9,2,6,,,25,48,Completed,
+pending-ap006-r5-kings-park-red-bye,11 Nov 23,5,regular,Round 5,Kings Park Red,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP006061,18 Nov 23,6,regular,Round 6,Maccabi,Elsternwick Park,3,7,3,5,,,45,48,Completed,
+AP006062,18 Nov 23,6,regular,Round 6,Parkdale,St Pats Mentone,8,2,5,3,,,55,50,Completed,
+AP006063,18 Nov 23,6,regular,Round 6,BLTC Blue,Kings Park Red,8,2,5,3,,,52,42,Completed,
+pending-ap006-r6-bye-tennis-world,18 Nov 23,6,regular,Round 6,Bye,Tennis World,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP006071,25 Nov 23,7,regular,Round 7,St Pats Mentone,Elsternwick Park,1,9,1,7,,,16,55,Completed,
+AP006072,25 Nov 23,7,regular,Round 7,Maccabi,Parkdale,8,2,5,3,,,44,38,Completed,
+AP006073,25 Nov 23,7,regular,Round 7,Tennis World,Kings Park Red,3,7,4,5,,,46,54,Completed,
+pending-ap006-r7-bltc-blue-bye,25 Nov 23,7,regular,Round 7,BLTC Blue,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap006-r8-bltc-blue-elsternwick-park,02 Dec 23,8,regular,Round 8,BLTC Blue,Elsternwick Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap006-r8-bye-st-pats-mentone,02 Dec 23,8,regular,Round 8,Bye,St Pats Mentone,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap006-r8-kings-park-red-maccabi,02 Dec 23,8,regular,Round 8,Kings Park Red,Maccabi,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap006-r8-tennis-world-parkdale,02 Dec 23,8,regular,Round 8,Tennis World,Parkdale,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap006-r9-elsternwick-park-kings-park-red,09 Dec 23,9,regular,Round 9,Elsternwick Park,Kings Park Red,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap006-r9-maccabi-bye,09 Dec 23,9,regular,Round 9,Maccabi,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap006-r9-parkdale-bltc-blue,09 Dec 23,9,regular,Round 9,Parkdale,BLTC Blue,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap006-r9-st-pats-mentone-tennis-world,09 Dec 23,9,regular,Round 9,St Pats Mentone,Tennis World,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP006101,16 Dec 23,10,regular,Round 10,BLTC Blue,St Pats Mentone,9,1,7,3,,,64,48,Completed,
+AP006102,16 Dec 23,10,regular,Round 10,Tennis World,Maccabi,1,9,1,7,,,26,55,Completed,
+AP006104,16 Dec 23,10,regular,Round 10,Kings Park Red,Parkdale,8,2,6,4,,,59,47,Completed,
+pending-ap006-r10-bye-elsternwick-park,16 Dec 23,10,regular,Round 10,Bye,Elsternwick Park,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP006111,03 Feb 24,11,regular,Round 11,St Pats Mentone,Kings Park Red,1,9,1,7,,,22,51,Completed,
+AP006112,03 Feb 24,11,regular,Round 11,Maccabi,BLTC Blue,7,3,5,4,,,54,50,Completed,
+AP006113,03 Feb 24,11,regular,Round 11,Elsternwick Park,Tennis World,10,0,8,1,,,63,38,Completed,
+pending-ap006-r11-parkdale-bye,03 Feb 24,11,regular,Round 11,Parkdale,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP006121,10 Feb 24,12,regular,Round 12,Parkdale,Elsternwick Park,8,2,5,3,,,47,40,Completed,
+AP006122,10 Feb 24,12,regular,Round 12,BLTC Blue,Tennis World,9,1,7,1,,,55,29,Completed,
+AP006124,10 Feb 24,12,regular,Round 12,Maccabi,St Pats Mentone,9,1,7,1,,,55,27,Completed,
+pending-ap006-r12-bye-kings-park-red,10 Feb 24,12,regular,Round 12,Bye,Kings Park Red,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP006131,17 Feb 24,13,regular,Round 13,Elsternwick Park,Maccabi,8,2,6,3,,,57,55,Completed,
+AP006132,17 Feb 24,13,regular,Round 13,St Pats Mentone,Parkdale,3,7,5,5,,,44,51,Completed,
+AP006133,17 Feb 24,13,regular,Round 13,Kings Park Red,BLTC Blue,8,2,6,3,,,49,32,Completed,
+pending-ap006-r13-tennis-world-bye,17 Feb 24,13,regular,Round 13,Tennis World,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP006142,24 Feb 24,14,regular,Round 14,Parkdale,Maccabi,1,9,2,7,,,32,59,Completed,
+AP006143,24 Feb 24,14,regular,Round 14,Kings Park Red,Tennis World,10,0,8,0,,,56,17,Completed,
+pending-ap006-r14-bye-bltc-blue,24 Feb 24,14,regular,Round 14,Bye,BLTC Blue,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap006-r14-elsternwick-park-st-pats-mentone,24 Feb 24,14,regular,Round 14,Elsternwick Park,St Pats Mentone,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP006301,,16,semi_final,Semi-final,Elsternwick Park,BLTC Blue,8,2,6,2,,,53,39,Completed,
+AP006302,,16,semi_final,Semi-final,Maccabi,Kings Park Red,3,7,4,5,,,44,57,Completed,
+AP006321,,17,grand_final,Grand final · TROLS entry 2,Elsternwick Park,Kings Park Red,1,9,3,7,,,46,53,Completed,

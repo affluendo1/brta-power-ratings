@@ -1,0 +1,87 @@
+{
+  "asset_id": "AP30-AP004",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 14/15",
+  "season_id": "AP30",
+  "season_label": "Summer 14/15",
+  "source_section_code": "AP004",
+  "section_label": "Men's Rubbers 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Victory Park",
+      "wins": 13,
+      "points": 93,
+      "percentage": 131.42,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Centenary Park 2",
+      "wins": 11,
+      "points": 85,
+      "percentage": 136.09,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Centenary Park 1",
+      "wins": 10,
+      "points": 81,
+      "percentage": 128.46,
+      "marker": "R"
+    },
+    {
+      "position": 4,
+      "team": "St Pats Mentone",
+      "wins": 4,
+      "points": 38,
+      "percentage": 80.39,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Caulfield Grammar",
+      "wins": 3,
+      "points": 32,
+      "percentage": 75.61,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Patterson Lakes",
+      "wins": 3,
+      "points": 31,
+      "percentage": 76.96,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP30-AP004",
+  "fixtures": 47,
+  "completed_fixtures": 47,
+  "draw_fixtures": 57,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 188,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

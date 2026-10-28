@@ -1,0 +1,98 @@
+{
+  "asset_id": "AP26-AP011",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 12/13",
+  "season_id": "AP26",
+  "season_label": "Summer 12/13",
+  "source_section_code": "AP011",
+  "section_label": "Ladies S/D 1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "MCC",
+      "wins": 10,
+      "points": 92,
+      "percentage": 168.25,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "Kooyong",
+      "wins": 8,
+      "points": 75,
+      "percentage": 120.51,
+      "marker": "P"
+    },
+    {
+      "position": 3,
+      "team": "GPHC",
+      "wins": 6,
+      "points": 67,
+      "percentage": 111.87,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Dendy Park",
+      "wins": 6,
+      "points": 66,
+      "percentage": 112.2,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Mt Eliza",
+      "wins": 6,
+      "points": 59,
+      "percentage": 87.35,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Clarinda",
+      "wins": 2,
+      "points": 40.5,
+      "percentage": 77.49,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Kings Park",
+      "wins": 0,
+      "points": 20.5,
+      "percentage": 59.9,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP26-AP011",
+  "fixtures": 60,
+  "completed_fixtures": 42,
+  "draw_fixtures": 60,
+  "singles_rubbers": 168,
+  "doubles_rubbers": 83,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP011094 doubles No. 1: '6-1 2-6'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP011321 doubles No. 1: '2-6 6-4'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

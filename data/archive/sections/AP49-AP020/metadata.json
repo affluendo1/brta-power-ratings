@@ -1,0 +1,112 @@
+{
+  "asset_id": "AP49-AP020",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 24/25",
+  "season_id": "AP49",
+  "season_label": "Summer 24/25",
+  "source_section_code": "AP020",
+  "section_label": "Mx Rubbers 5",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "BLTC",
+      "wins": 10,
+      "points": 89,
+      "percentage": 198.95,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Elwood Purple",
+      "wins": 8,
+      "points": 81,
+      "percentage": 154.77,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Pakenham",
+      "wins": 7,
+      "points": 70.5,
+      "percentage": 119.79,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Glen Huntly",
+      "wins": 5,
+      "points": 52,
+      "percentage": 89.26,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Black Rock",
+      "wins": 3,
+      "points": 42,
+      "percentage": 83.73,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Chadstone",
+      "wins": 3,
+      "points": 41,
+      "percentage": 79.87,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Mentone",
+      "wins": 3,
+      "points": 40.5,
+      "percentage": 83.36,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "Hawthorn",
+      "wins": 2,
+      "points": 32,
+      "percentage": 61.48,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP49-AP020",
+  "fixtures": 59,
+  "completed_fixtures": 52,
+  "draw_fixtures": 59,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 198,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP020011 doubles No. 2: '6-7 0-3'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP020012 doubles No. 1: '2-6 3-2'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP020012 doubles No. 2: '6-2 2-4'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP020014 doubles No. 3: '2-2'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP020014 doubles No. 4: '3-1'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP020071 doubles No. 2: '3-6 4-3'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP020141 doubles No. 3: '3-6 2-3'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP020141 doubles No. 4: '5-5'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

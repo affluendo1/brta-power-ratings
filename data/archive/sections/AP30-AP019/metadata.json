@@ -1,0 +1,108 @@
+{
+  "asset_id": "AP30-AP019",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 14/15",
+  "season_id": "AP30",
+  "season_label": "Summer 14/15",
+  "source_section_code": "AP019",
+  "section_label": "Men's S/D 6",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Le Page",
+      "wins": 12,
+      "points": 112,
+      "percentage": 151.72,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "Mordialloc 2",
+      "wins": 9,
+      "points": 90,
+      "percentage": 126.65,
+      "marker": "P"
+    },
+    {
+      "position": 3,
+      "team": "Kings Park",
+      "wins": 9,
+      "points": 79.5,
+      "percentage": 105.56,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "East Malvern",
+      "wins": 8,
+      "points": 79,
+      "percentage": 104.46,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Mordialloc 1",
+      "wins": 4,
+      "points": 74,
+      "percentage": 130.1,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Carmelite",
+      "wins": 7,
+      "points": 65.5,
+      "percentage": 94.75,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Dendy Park",
+      "wins": 4,
+      "points": 43,
+      "percentage": 69.79,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "Highmoor Uniting",
+      "wins": 1,
+      "points": 17,
+      "percentage": 48.62,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP30-AP019",
+  "fixtures": 60,
+  "completed_fixtures": 58,
+  "draw_fixtures": 60,
+  "singles_rubbers": 232,
+  "doubles_rubbers": 114,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP019131 doubles No. 1: '2-6 7-5'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP019302 doubles No. 1: '6-2 4-6 2-2'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP019311 doubles No. 1: '6-1 6-7'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP019321 doubles No. 2: '1-6 7-6'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

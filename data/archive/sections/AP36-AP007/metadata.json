@@ -1,0 +1,97 @@
+{
+  "asset_id": "AP36-AP007",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 17/18",
+  "season_id": "AP36",
+  "season_label": "Summer 17/18",
+  "source_section_code": "AP007",
+  "section_label": "Mixed Rubbers 3",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Kings Park",
+      "wins": 9,
+      "points": 73,
+      "percentage": 124.0,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "Hurlingham Park",
+      "wins": 8,
+      "points": 63,
+      "percentage": 117.66,
+      "marker": "P"
+    },
+    {
+      "position": 3,
+      "team": "Parkdale 1",
+      "wins": 7,
+      "points": 58,
+      "percentage": 111.16,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "St Johns",
+      "wins": 6,
+      "points": 53,
+      "percentage": 114.83,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Parkdale 2",
+      "wins": 4,
+      "points": 38,
+      "percentage": 93.91,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Le Page",
+      "wins": 4,
+      "points": 35,
+      "percentage": 85.49,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "FCTC",
+      "wins": 1,
+      "points": 16,
+      "percentage": 60.83,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP36-AP007",
+  "fixtures": 60,
+  "completed_fixtures": 43,
+  "draw_fixtures": 60,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 172,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP007302 doubles No. 3: '6-3 4-6'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

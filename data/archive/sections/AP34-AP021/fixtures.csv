@@ -1,0 +1,61 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP021011,08 Oct 16,1,regular,Round 1,Monash University,Ormond CR,1,9,2,7,,,26,58,Completed,
+AP021013,08 Oct 16,1,regular,Round 1,BLTC,Hampton Park,8,2,5,3,,,52,30,Completed,
+AP021014,08 Oct 16,1,regular,Round 1,Mordialloc,Caulfield Rec,8,2,5,4,,,48,47,Completed,
+pending-ap021-r1-bye-lauriston,08 Oct 16,1,regular,Round 1,Bye,Lauriston,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP021021,15 Oct 16,2,regular,Round 2,Caulfield Rec,Monash University,7,3,5,5,,,53,52,Completed,
+AP021023,15 Oct 16,2,regular,Round 2,Lauriston,BLTC,7,3,5,4,,,52,49,Completed,
+AP021024,15 Oct 16,2,regular,Round 2,Hampton Park,Mordialloc,1,9,1,7,,,24,55,Completed,
+pending-ap021-r2-ormond-cr-bye,15 Oct 16,2,regular,Round 2,Ormond CR,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap021-r3-bltc-ormond-cr,22 Oct 16,3,regular,Round 3,BLTC,Ormond CR,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap021-r3-bye-caulfield-rec,22 Oct 16,3,regular,Round 3,Bye,Caulfield Rec,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap021-r3-monash-university-hampton-park,22 Oct 16,3,regular,Round 3,Monash University,Hampton Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap021-r3-mordialloc-lauriston,22 Oct 16,3,regular,Round 3,Mordialloc,Lauriston,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP021041,05 Nov 16,4,regular,Round 4,Lauriston,Monash University,10,0,8,1,,,62,41,Completed,
+AP021043,05 Nov 16,4,regular,Round 4,Caulfield Rec,BLTC,3,7,4,5,,,45,53,Completed,
+AP021044,05 Nov 16,4,regular,Round 4,Ormond CR,Mordialloc,8,2,6,3,,,42,37,Completed,
+pending-ap021-r4-hampton-park-bye,05 Nov 16,4,regular,Round 4,Hampton Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP021051,12 Nov 16,5,regular,Round 5,BLTC,Mordialloc,3,7,4,4,,,39,45,Completed,
+AP021052,12 Nov 16,5,regular,Round 5,Caulfield Rec,Hampton Park,9,1,7,2,,,55,28,Completed,
+AP021053,12 Nov 16,5,regular,Round 5,Lauriston,Ormond CR,9,1,7,1,,,51,23,Completed,
+pending-ap021-r5-monash-university-bye,12 Nov 16,5,regular,Round 5,Monash University,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP021062,19 Nov 16,6,regular,Round 6,Mordialloc,Monash University,10,0,8,0,,,56,18,Completed,
+AP021063,19 Nov 16,6,regular,Round 6,Hampton Park,Lauriston,2,8,3,6,,,36,51,Completed,
+AP021064,19 Nov 16,6,regular,Round 6,Ormond CR,Caulfield Rec,8,2,5,3,,,52,36,Completed,
+pending-ap021-r6-bye-bltc,19 Nov 16,6,regular,Round 6,Bye,BLTC,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP021071,26 Nov 16,7,regular,Round 7,Monash University,BLTC,2,8,3,5,,,38,46,Completed,
+AP021073,26 Nov 16,7,regular,Round 7,Caulfield Rec,Lauriston,3,7,4,4,,,35,47,Completed,
+AP021074,26 Nov 16,7,regular,Round 7,Hampton Park,Ormond CR,8,2,5,3,,,43,38,Completed,
+pending-ap021-r7-bye-mordialloc,26 Nov 16,7,regular,Round 7,Bye,Mordialloc,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP021081,03 Dec 16,8,regular,Round 8,Ormond CR,Monash University,9,1,7,2,,,61,31,Completed,
+AP021083,03 Dec 16,8,regular,Round 8,Hampton Park,BLTC,2,8,3,5,,,37,42,Completed,
+AP021084,03 Dec 16,8,regular,Round 8,Caulfield Rec,Mordialloc,2,8,3,5,,,33,47,Completed,
+pending-ap021-r8-lauriston-bye,03 Dec 16,8,regular,Round 8,Lauriston,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP021091,10 Dec 16,9,regular,Round 9,Monash University,Caulfield Rec,2,8,3,6,,,46,57,Completed,
+AP021093,10 Dec 16,9,regular,Round 9,BLTC,Lauriston,7,3,5,4,,,56,50,Completed,
+AP021094,10 Dec 16,9,regular,Round 9,Mordialloc,Hampton Park,8,2,6,3,,,51,41,Completed,
+pending-ap021-r9-bye-ormond-cr,10 Dec 16,9,regular,Round 9,Bye,Ormond CR,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP021101,17 Dec 16,10,regular,Round 10,Hampton Park,Monash University,3,7,4,4,,,40,46,Completed,
+AP021103,17 Dec 16,10,regular,Round 10,Ormond CR,BLTC,8,2,6,3,,,57,43,Completed,
+AP021104,17 Dec 16,10,regular,Round 10,Lauriston,Mordialloc,8,2,6,3,,,60,52,Completed,
+pending-ap021-r10-caulfield-rec-bye,17 Dec 16,10,regular,Round 10,Caulfield Rec,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP021111,04 Feb 17,11,regular,Round 11,Monash University,Lauriston,2,8,3,6,,,38,54,Completed,
+AP021113,04 Feb 17,11,regular,Round 11,BLTC,Caulfield Rec,3,7,4,4,,,39,44,Completed,
+AP021114,04 Feb 17,11,regular,Round 11,Mordialloc,Ormond CR,3,7,4,5,,,43,45,Completed,
+pending-ap021-r11-bye-hampton-park,04 Feb 17,11,regular,Round 11,Bye,Hampton Park,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP021121,11 Feb 17,12,regular,Round 12,Mordialloc,BLTC,2,8,3,6,,,40,56,Completed,
+AP021122,11 Feb 17,12,regular,Round 12,Hampton Park,Caulfield Rec,1,9,3,7,,,48,59,Completed,
+AP021123,11 Feb 17,12,regular,Round 12,Ormond CR,Lauriston,7,3,5,4,,,54,46,Completed,
+pending-ap021-r12-bye-monash-university,11 Feb 17,12,regular,Round 12,Bye,Monash University,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP021132,18 Feb 17,13,regular,Round 13,Monash University,Mordialloc,3,7,4,5,,,47,41,Completed,
+AP021133,18 Feb 17,13,regular,Round 13,Lauriston,Hampton Park,8,2,6,3,,,57,29,Completed,
+AP021134,18 Feb 17,13,regular,Round 13,Caulfield Rec,Ormond CR,9,1,6,2,,,49,36,Completed,
+pending-ap021-r13-bltc-bye,18 Feb 17,13,regular,Round 13,BLTC,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP021141,25 Feb 17,14,regular,Round 14,BLTC,Monash University,9,1,7,2,,,57,29,Completed,
+AP021143,25 Feb 17,14,regular,Round 14,Lauriston,Caulfield Rec,2,8,2,6,,,40,50,Completed,
+pending-ap021-r14-mordialloc-bye,25 Feb 17,14,regular,Round 14,Mordialloc,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap021-r14-ormond-cr-hampton-park,25 Feb 17,14,regular,Round 14,Ormond CR,Hampton Park,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP021301,,16,semi_final,Semi-final,Lauriston,Ormond CR,8,2,6,4,,,53,41,Completed,
+AP021302,,16,semi_final,Semi-final,Mordialloc,BLTC,0,10,1,8,,,30,63,Completed,
+AP021311,,16,semi_final,Semi-final,Ormond CR,BLTC,2,8,3,6,,,44,60,Completed,
+AP021321,,17,grand_final,Grand final · TROLS entry 2,Lauriston,BLTC,1.5,8.5,2,5,,,37,53,Completed,

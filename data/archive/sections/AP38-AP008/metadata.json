@@ -1,0 +1,98 @@
+{
+  "asset_id": "AP38-AP008",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 18/19",
+  "season_id": "AP38",
+  "season_label": "Summer 18/19",
+  "source_section_code": "AP008",
+  "section_label": "Mixed Rubbers 4",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Hawthorn",
+      "wins": 8,
+      "points": 73,
+      "percentage": 144.71,
+      "marker": ""
+    },
+    {
+      "position": 2,
+      "team": "Middle Brighton",
+      "wins": 10,
+      "points": 67,
+      "percentage": 110.87,
+      "marker": "P"
+    },
+    {
+      "position": 3,
+      "team": "Langwarrin",
+      "wins": 6,
+      "points": 56,
+      "percentage": 123.48,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Chadstone",
+      "wins": 7,
+      "points": 53,
+      "percentage": 100.38,
+      "marker": "R"
+    },
+    {
+      "position": 5,
+      "team": "FCTC",
+      "wins": 3,
+      "points": 45,
+      "percentage": 101.31,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Ormond",
+      "wins": 4,
+      "points": 35,
+      "percentage": 91.33,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Le Page",
+      "wins": 0,
+      "points": 7,
+      "percentage": 56.64,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP38-AP008",
+  "fixtures": 59,
+  "completed_fixtures": 43,
+  "draw_fixtures": 59,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 170,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP008101 doubles No. 1: '1-6 3-3'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP008101 doubles No. 2: '6-4 1-2'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

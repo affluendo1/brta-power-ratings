@@ -1,0 +1,60 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP016011,05 Oct 24,1,regular,Round 1,Gladeswood,Sth Hawthorn,4,4,0,0,1,0,9,9,Completed,
+AP016013,05 Oct 24,1,regular,Round 1,Hawthorn BCC,Royal South Yarra,4,4,0,0,0,0,7,8,Completed,
+AP016014,05 Oct 24,1,regular,Round 1,Glen Huntly,Overport Park,4,4,0,0,1,1,7,10,Completed,
+pending-ap016-r1-black-rock-bye,05 Oct 24,1,regular,Round 1,Black Rock,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP016021,12 Oct 24,2,regular,Round 2,Overport Park,Gladeswood,7,1,3,1,7,2,48,45,Completed,
+AP016022,12 Oct 24,2,regular,Round 2,Sth Hawthorn,Black Rock,0,8,0,4,1,8,23,52,Completed,
+AP016024,12 Oct 24,2,regular,Round 2,Royal South Yarra,Glen Huntly,7,1,3,1,7,2,51,19,Completed,
+pending-ap016-r2-bye-hawthorn-bcc,12 Oct 24,2,regular,Round 2,Bye,Hawthorn BCC,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP016031,19 Oct 24,3,regular,Round 3,Gladeswood,Royal South Yarra,7,1,3,1,6,3,41,37,Completed,
+AP016032,19 Oct 24,3,regular,Round 3,Black Rock,Overport Park,0,8,0,4,0,8,20,48,Completed,
+AP016033,19 Oct 24,3,regular,Round 3,Hawthorn BCC,Sth Hawthorn,8,0,4,0,8,1,54,28,Completed,
+pending-ap016-r3-glen-huntly-bye,19 Oct 24,3,regular,Round 3,Glen Huntly,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP016042,26 Oct 24,4,regular,Round 4,Royal South Yarra,Black Rock,6,2,2,2,5,5,51,44,Completed,
+AP016043,26 Oct 24,4,regular,Round 4,Overport Park,Hawthorn BCC,0,8,0,4,0,8,19,49,Completed,
+AP016044,26 Oct 24,4,regular,Round 4,Sth Hawthorn,Glen Huntly,2,6,2,2,4,4,31,35,Completed,
+pending-ap016-r4-bye-gladeswood,26 Oct 24,4,regular,Round 4,Bye,Gladeswood,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP016051,09 Nov 24,5,regular,Round 5,Hawthorn BCC,Glen Huntly,7,1,3,1,7,2,53,28,Completed,
+AP016052,09 Nov 24,5,regular,Round 5,Overport Park,Royal South Yarra,0,8,0,4,1,8,14,52,Completed,
+AP016054,09 Nov 24,5,regular,Round 5,Gladeswood,Black Rock,7,1,3,1,6,4,51,45,Completed,
+pending-ap016-r5-bye-sth-hawthorn,09 Nov 24,5,regular,Round 5,Bye,Sth Hawthorn,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP016061,16 Nov 24,6,regular,Round 6,Black Rock,Hawthorn BCC,2,6,2,2,4,4,29,38,Completed,
+AP016062,16 Nov 24,6,regular,Round 6,Glen Huntly,Gladeswood,0,8,0,4,0,8,19,49,Completed,
+AP016064,16 Nov 24,6,regular,Round 6,Sth Hawthorn,Overport Park,1,7,1,3,2,7,29,50,Completed,
+pending-ap016-r6-royal-south-yarra-bye,16 Nov 24,6,regular,Round 6,Royal South Yarra,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP016072,23 Nov 24,7,regular,Round 7,Black Rock,Glen Huntly,5,3,2,0,4,0,24,10,Completed,
+pending-ap016-r7-gladeswood-hawthorn-bcc,23 Nov 24,7,regular,Round 7,Gladeswood,Hawthorn BCC,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap016-r7-overport-park-bye,23 Nov 24,7,regular,Round 7,Overport Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap016-r7-royal-south-yarra-sth-hawthorn,23 Nov 24,7,regular,Round 7,Royal South Yarra,Sth Hawthorn,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap016-r8-bye-black-rock,30 Nov 24,8,regular,Round 8,Bye,Black Rock,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap016-r8-overport-park-glen-huntly,30 Nov 24,8,regular,Round 8,Overport Park,Glen Huntly,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap016-r8-royal-south-yarra-hawthorn-bcc,30 Nov 24,8,regular,Round 8,Royal South Yarra,Hawthorn BCC,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap016-r8-sth-hawthorn-gladeswood,30 Nov 24,8,regular,Round 8,Sth Hawthorn,Gladeswood,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP016091,07 Dec 24,9,regular,Round 9,Gladeswood,Overport Park,6,2,2,2,5,5,45,40,Completed,
+AP016092,07 Dec 24,9,regular,Round 9,Black Rock,Sth Hawthorn,0,8,0,4,1,8,41,58,Completed,
+AP016094,07 Dec 24,9,regular,Round 9,Glen Huntly,Royal South Yarra,1,7,1,3,3,6,32,50,Completed,
+pending-ap016-r9-hawthorn-bcc-bye,07 Dec 24,9,regular,Round 9,Hawthorn BCC,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP016101,14 Dec 24,10,regular,Round 10,Royal South Yarra,Gladeswood,1,7,1,3,3,6,40,53,Completed,
+AP016102,14 Dec 24,10,regular,Round 10,Overport Park,Black Rock,1,7,1,3,4,6,42,51,Completed,
+AP016103,14 Dec 24,10,regular,Round 10,Sth Hawthorn,Hawthorn BCC,0,8,0,4,0,8,21,50,Completed,
+pending-ap016-r10-bye-glen-huntly,14 Dec 24,10,regular,Round 10,Bye,Glen Huntly,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP016112,01 Feb 25,11,regular,Round 11,Black Rock,Royal South Yarra,1,7,1,3,2,7,30,50,Completed,
+AP016113,01 Feb 25,11,regular,Round 11,Hawthorn BCC,Overport Park,1,7,1,3,4,6,38,46,Completed,
+AP016114,01 Feb 25,11,regular,Round 11,Glen Huntly,Sth Hawthorn,7,1,3,1,6,3,48,34,Completed,
+pending-ap016-r11-gladeswood-bye,01 Feb 25,11,regular,Round 11,Gladeswood,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP016121,08 Feb 25,12,regular,Round 12,Glen Huntly,Hawthorn BCC,7,1,3,1,6,4,51,51,Completed,
+AP016122,08 Feb 25,12,regular,Round 12,Royal South Yarra,Overport Park,8,0,4,0,8,2,55,46,Completed,
+AP016124,08 Feb 25,12,regular,Round 12,Black Rock,Gladeswood,0,8,0,4,0,8,14,48,Completed,
+pending-ap016-r12-sth-hawthorn-bye,08 Feb 25,12,regular,Round 12,Sth Hawthorn,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP016131,15 Feb 25,13,regular,Round 13,Hawthorn BCC,Black Rock,7,1,3,1,6,2,42,25,Completed,
+AP016132,15 Feb 25,13,regular,Round 13,Gladeswood,Glen Huntly,6,2,2,2,5,4,48,34,Completed,
+AP016134,15 Feb 25,13,regular,Round 13,Overport Park,Sth Hawthorn,6,2,2,2,5,4,47,34,Completed,
+pending-ap016-r13-bye-royal-south-yarra,15 Feb 25,13,regular,Round 13,Bye,Royal South Yarra,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP016141,22 Feb 25,14,regular,Round 14,Hawthorn BCC,Gladeswood,0.5,7.5,0,3,0,7,21,44,Completed,
+pending-ap016-r14-bye-overport-park,22 Feb 25,14,regular,Round 14,Bye,Overport Park,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap016-r14-glen-huntly-black-rock,22 Feb 25,14,regular,Round 14,Glen Huntly,Black Rock,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+pending-ap016-r14-sth-hawthorn-royal-south-yarra,22 Feb 25,14,regular,Round 14,Sth Hawthorn,Royal South Yarra,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP016301,,16,semi_final,Semi-final,Gladeswood,Overport Park,1,7,1,3,3,6,39,40,Completed,
+AP016302,,16,semi_final,Semi-final,Royal South Yarra,Hawthorn BCC,7,1,2,0,6,1,41,29,Completed,
+AP016321,,17,grand_final,Grand final · TROLS entry 2,Royal South Yarra,Overport Park,8,0,4,0,8,0,48,14,Completed,

@@ -1,0 +1,205 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP017011,05 Oct 19,1,BLTC 1,BLTC 2,No. 1,Alan Thomas,Shadi Taleb,Shadi Taleb,1-8,1,8,0,1,Completed,true,true,false
+AP017011,05 Oct 19,1,BLTC 1,BLTC 2,No. 2,Thomas Gannon,Andrew Bartholomeusz,Andrew Bartholomeusz,0-8,0,8,0,1,Completed,true,true,false
+AP017011,05 Oct 19,1,BLTC 1,BLTC 2,No. 3,James P1 Dossan,Anthony Lawrence,Anthony Lawrence,4-8,4,8,0,1,Completed,true,true,false
+AP017011,05 Oct 19,1,BLTC 1,BLTC 2,No. 4,Darcy Henschke,Austin Taleb,Darcy Henschke,8-1,8,1,1,0,Completed,true,true,false
+AP017012,05 Oct 19,1,Tennis World,GPHC,No. 1,Ethan Brooke,Dimitri Bagaric,Dimitri Bagaric,6-8,6,8,0,1,Completed,true,false,false
+AP017012,05 Oct 19,1,Tennis World,GPHC,No. 2,Joshua McKenzie,Mirko Bagaric,Mirko Bagaric,1-8,1,8,0,1,Completed,true,false,false
+AP017012,05 Oct 19,1,Tennis World,GPHC,No. 3,[Unnamed emergency — TROLS AP017012 home code 3],[Unnamed emergency — TROLS AP017012 away code 3],[Unnamed emergency — TROLS AP017012 away code 3],0-8,0,8,0,1,Completed,false,true,true
+AP017012,05 Oct 19,1,Tennis World,GPHC,No. 4,[Unnamed emergency — TROLS AP017012 home code 4],[Unnamed emergency — TROLS AP017012 away code 4],[Unnamed emergency — TROLS AP017012 away code 4],0-8,0,8,0,1,Completed,false,true,true
+AP017013,05 Oct 19,1,Coatesville,Patterson Lakes,No. 1,Michael Burke,Tyler Armitt,Tyler Armitt,3-8,3,8,0,1,Completed,true,false,false
+AP017013,05 Oct 19,1,Coatesville,Patterson Lakes,No. 2,Marcus Aparo,Steffen Jensen,Steffen Jensen,1-8,1,8,0,1,Completed,true,false,false
+AP017013,05 Oct 19,1,Coatesville,Patterson Lakes,No. 3,Harry O'Dea,Marcelo Grosso,Marcelo Grosso,2-8,2,8,0,1,Completed,true,false,false
+AP017013,05 Oct 19,1,Coatesville,Patterson Lakes,No. 4,James Rametta,Nick Higgins,Nick Higgins,2-8,2,8,0,1,Completed,true,false,false
+AP017014,05 Oct 19,1,Clarinda,Mountain Gate,No. 1,Tri Dinh,Enrique Lopez,Enrique Lopez,3-8,3,8,0,1,Completed,true,false,false
+AP017014,05 Oct 19,1,Clarinda,Mountain Gate,No. 2,Cory Hall,Michael McCurdy,Michael McCurdy,2-8,2,8,0,1,Completed,true,false,false
+AP017014,05 Oct 19,1,Clarinda,Mountain Gate,No. 3,Joe Littieri,Patrick Gould,Patrick Gould,6-8,6,8,0,1,Completed,true,false,false
+AP017014,05 Oct 19,1,Clarinda,Mountain Gate,No. 4,Kosta Pliatsikikas,Ryan Haggett,Ryan Haggett,0-8,0,8,0,1,Completed,true,true,false
+AP017021,12 Oct 19,2,Mountain Gate,BLTC 1,No. 1,Enrique Lopez,Ayden Kousis,Enrique Lopez,8-7,8,7,1,0,Completed,true,false,false
+AP017021,12 Oct 19,2,Mountain Gate,BLTC 1,No. 2,Warren Seedsman,Hayden Heng,Warren Seedsman,8-1,8,1,1,0,Completed,true,true,false
+AP017021,12 Oct 19,2,Mountain Gate,BLTC 1,No. 3,Allen Luu,Jack Malasek,Allen Luu,8-1,8,1,1,0,Completed,true,false,false
+AP017021,12 Oct 19,2,Mountain Gate,BLTC 1,No. 4,Patrick Gould,Marcus Brittain,Patrick Gould,8-4,8,4,1,0,Completed,true,false,false
+AP017022,12 Oct 19,2,BLTC 2,Tennis World,No. 1,Shadi Taleb,[Unnamed emergency — TROLS AP017022 away code 1],Shadi Taleb,8-0,8,0,1,0,Completed,false,false,true
+AP017022,12 Oct 19,2,BLTC 2,Tennis World,No. 2,Andrew Bartholomeusz,Ethan Brooke,Andrew Bartholomeusz,8-6,8,6,1,0,Completed,true,false,false
+AP017022,12 Oct 19,2,BLTC 2,Tennis World,No. 3,Kurtis Bartholomeusz,Joshua McKenzie,Kurtis Bartholomeusz,8-5,8,5,1,0,Completed,true,false,false
+AP017022,12 Oct 19,2,BLTC 2,Tennis World,No. 4,Ryan Taylor,Georgio Psallas,Ryan Taylor,8-5,8,5,1,0,Completed,true,false,false
+AP017023,12 Oct 19,2,GPHC,Coatesville,No. 1,Charlie Debrotiwir,Michael Burke,Michael Burke,2-8,2,8,0,1,Completed,true,false,false
+AP017023,12 Oct 19,2,GPHC,Coatesville,No. 2,Dimitri Bagaric,Callum Rankin,Dimitri Bagaric,8-0,8,0,1,0,Completed,true,false,false
+AP017023,12 Oct 19,2,GPHC,Coatesville,No. 3,Jacob Leaf,Jack Langdon,Jacob Leaf,8-0,8,0,1,0,Completed,true,false,false
+AP017023,12 Oct 19,2,GPHC,Coatesville,No. 4,Mirko Bagaric,Gabi Basman,Mirko Bagaric,8-6,8,6,1,0,Completed,true,false,false
+AP017024,12 Oct 19,2,Patterson Lakes,Clarinda,No. 1,Tyler Armitt,Patrick Berawn,Tyler Armitt,8-2,8,2,1,0,Completed,true,false,false
+AP017024,12 Oct 19,2,Patterson Lakes,Clarinda,No. 2,Kane Bailey,Tri Dinh,Kane Bailey,8-3,8,3,1,0,Completed,true,false,false
+AP017024,12 Oct 19,2,Patterson Lakes,Clarinda,No. 3,Marcelo Grosso,Cory Hall,Marcelo Grosso,8-3,8,3,1,0,Completed,true,false,false
+AP017024,12 Oct 19,2,Patterson Lakes,Clarinda,No. 4,Nick Higgins,Tung Lam,Nick Higgins,8-3,8,3,1,0,Completed,true,false,false
+AP017031,19 Oct 19,3,BLTC 1,Patterson Lakes,No. 1,Ayden Kousis,Tyler Armitt,Tyler Armitt,0-8,0,8,0,1,Completed,true,false,false
+AP017031,19 Oct 19,3,BLTC 1,Patterson Lakes,No. 2,Hayden Heng,Kane Bailey,Kane Bailey,1-8,1,8,0,1,Completed,true,false,false
+AP017031,19 Oct 19,3,BLTC 1,Patterson Lakes,No. 3,Ryan Taylor,Steffen Jensen,Ryan Taylor,8-6,8,6,1,0,Completed,true,true,false
+AP017031,19 Oct 19,3,BLTC 1,Patterson Lakes,No. 4,Liai Manor,Nick Higgins,Nick Higgins,0-8,0,8,0,1,Completed,true,true,false
+AP017032,19 Oct 19,3,Tennis World,Mountain Gate,No. 1,Cooper Rowlands,David McCallum,David McCallum,6-8,6,8,0,1,Completed,true,false,true
+AP017032,19 Oct 19,3,Tennis World,Mountain Gate,No. 2,Ethan Brooke,Diliman Jayawardena,Ethan Brooke,8-2,8,2,1,0,Completed,true,false,false
+AP017032,19 Oct 19,3,Tennis World,Mountain Gate,No. 3,Joshua McKenzie,Ryan Haggett,Ryan Haggett,3-8,3,8,0,1,Completed,true,false,false
+AP017032,19 Oct 19,3,Tennis World,Mountain Gate,No. 4,Tristan ???,Robbie Dademe,Tristan ???,8-4,8,4,1,0,Completed,true,true,true
+AP017033,19 Oct 19,3,Coatesville,BLTC 2,No. 1,Callum Rankin,Shadi Taleb,Callum Rankin,8-7,8,7,1,0,Completed,true,false,false
+AP017033,19 Oct 19,3,Coatesville,BLTC 2,No. 2,Marcus Aparo,Andrew Bartholomeusz,Marcus Aparo,8-4,8,4,1,0,Completed,true,false,false
+AP017033,19 Oct 19,3,Coatesville,BLTC 2,No. 3,Harry O'Dea,Kurtis Bartholomeusz,Harry O'Dea,8-6,8,6,1,0,Completed,true,false,false
+AP017033,19 Oct 19,3,Coatesville,BLTC 2,No. 4,Jack Langdon,Austin Taleb,Jack Langdon,8-1,8,1,1,0,Completed,true,false,false
+AP017034,19 Oct 19,3,Clarinda,GPHC,No. 1,Marco Persi,Charlie Debrotiwir,Marco Persi,8-2,8,2,1,0,Completed,true,true,false
+AP017034,19 Oct 19,3,Clarinda,GPHC,No. 2,Tung Lam,Dimitri Bagaric,Dimitri Bagaric,3-8,3,8,0,1,Completed,true,false,false
+AP017034,19 Oct 19,3,Clarinda,GPHC,No. 3,Sebastian Allebi,Jacob Leaf,Jacob Leaf,4-8,4,8,0,1,Completed,true,false,false
+AP017034,19 Oct 19,3,Clarinda,GPHC,No. 4,Kosta Pliatsikikas,Mirko Bagaric,Mirko Bagaric,1-8,1,8,0,1,Completed,true,true,false
+AP017042,26 Oct 19,4,Patterson Lakes,Tennis World,No. 1,Tyler Armitt,Cooper Rowlands,Tyler Armitt,8-3,8,3,1,0,Completed,true,false,false
+AP017042,26 Oct 19,4,Patterson Lakes,Tennis World,No. 2,Kane Bailey,Ethan Brooke,Kane Bailey,8-1,8,1,1,0,Completed,true,false,false
+AP017042,26 Oct 19,4,Patterson Lakes,Tennis World,No. 3,Marcelo Grosso,Joshua McKenzie,Marcelo Grosso,8-0,8,0,1,0,Completed,true,false,false
+AP017042,26 Oct 19,4,Patterson Lakes,Tennis World,No. 4,Nick Higgins,Luc Mascitti,Nick Higgins,8-0,8,0,1,0,Completed,true,false,false
+AP017043,26 Oct 19,4,Mountain Gate,Coatesville,No. 1,Allen Luu,Michael Burke,Michael Burke,5-8,5,8,0,1,Completed,true,false,false
+AP017043,26 Oct 19,4,Mountain Gate,Coatesville,No. 2,Patrick Gould,Marcus Aparo,Patrick Gould,8-1,8,1,1,0,Completed,true,false,false
+AP017043,26 Oct 19,4,Mountain Gate,Coatesville,No. 3,Nipuna Madanayake,Gabi Basman,Nipuna Madanayake,8-1,8,1,1,0,Completed,true,true,false
+AP017043,26 Oct 19,4,Mountain Gate,Coatesville,No. 4,Ryan Haggett,Jonathon Bong,Jonathon Bong,4-8,4,8,0,1,Completed,true,false,true
+AP017044,26 Oct 19,4,BLTC 2,Clarinda,No. 1,Shadi Taleb,Cory Hall,Shadi Taleb,8-3,8,3,1,0,Completed,true,false,false
+AP017044,26 Oct 19,4,BLTC 2,Clarinda,No. 2,Andrew Bartholomeusz,Tung Lam,Andrew Bartholomeusz,8-7,8,7,1,0,Completed,true,false,false
+AP017044,26 Oct 19,4,BLTC 2,Clarinda,No. 3,Kurtis Bartholomeusz,Joe Littieri,Joe Littieri,3-8,3,8,0,1,Completed,true,false,false
+AP017044,26 Oct 19,4,BLTC 2,Clarinda,No. 4,Austin Taleb,Sebastian Allebi,Sebastian Allebi,2-8,2,8,0,1,Completed,true,false,false
+AP017051,09 Nov 19,5,Coatesville,Clarinda,No. 1,Michael Burke,Patrick Berawn,Michael Burke,8-3,8,3,1,0,Completed,true,false,false
+AP017051,09 Nov 19,5,Coatesville,Clarinda,No. 2,Callum Rankin,Tri Dinh,Callum Rankin,8-2,8,2,1,0,Completed,true,false,false
+AP017051,09 Nov 19,5,Coatesville,Clarinda,No. 3,Harry O'Dea,Tung Lam,Tung Lam,2-8,2,8,0,1,Completed,true,false,false
+AP017051,09 Nov 19,5,Coatesville,Clarinda,No. 4,James Rametta,Sebastian Allebi,Sebastian Allebi,5-8,5,8,0,1,Completed,true,false,false
+AP017052,09 Nov 19,5,Mountain Gate,Patterson Lakes,No. 1,Enrique Lopez,Tyler Armitt,Tyler Armitt,5-8,5,8,0,1,Completed,true,false,false
+AP017052,09 Nov 19,5,Mountain Gate,Patterson Lakes,No. 2,Michael McCurdy,Kane Bailey,Michael McCurdy,8-5,8,5,1,0,Completed,true,false,false
+AP017052,09 Nov 19,5,Mountain Gate,Patterson Lakes,No. 3,Allen Luu,Tom Cochran,Allen Luu,8-0,8,0,1,0,Completed,true,false,true
+AP017052,09 Nov 19,5,Mountain Gate,Patterson Lakes,No. 4,Patrick Gould,James Thomas,Patrick Gould,8-5,8,5,1,0,Completed,true,false,true
+AP017053,09 Nov 19,5,GPHC,BLTC 2,No. 1,Mote Dambo,Shadi Taleb,Shadi Taleb,4-8,4,8,0,1,Completed,true,false,false
+AP017053,09 Nov 19,5,GPHC,BLTC 2,No. 2,Charlie Debrotiwir,Anthony Lawrence,Anthony Lawrence,3-8,3,8,0,1,Completed,true,false,false
+AP017053,09 Nov 19,5,GPHC,BLTC 2,No. 3,Jacob Leaf,Ryan Taylor,Jacob Leaf,8-3,8,3,1,0,Completed,true,false,false
+AP017053,09 Nov 19,5,GPHC,BLTC 2,No. 4,Carlo Domingo,Austin Taleb,Carlo Domingo,8-2,8,2,1,0,Completed,true,true,false
+AP017054,09 Nov 19,5,BLTC 1,Tennis World,No. 1,Liai Manor,Cooper Rowlands,Cooper Rowlands,3-8,3,8,0,1,Completed,true,true,false
+AP017054,09 Nov 19,5,BLTC 1,Tennis World,No. 2,Ayden Kousis,Ethan Brooke,Ethan Brooke,2-8,2,8,0,1,Completed,true,false,false
+AP017054,09 Nov 19,5,BLTC 1,Tennis World,No. 3,Hayden Heng,Luc Mascitti,Luc Mascitti,2-8,2,8,0,1,Completed,true,false,false
+AP017054,09 Nov 19,5,BLTC 1,Tennis World,No. 4,Jack Malasek,Georgio Psallas,Georgio Psallas,1-8,1,8,0,1,Completed,true,false,false
+AP017061,16 Nov 19,6,Tennis World,Coatesville,No. 1,Luc Mascitti,Michael Burke,Luc Mascitti,8-1,8,1,1,0,Completed,true,false,false
+AP017061,16 Nov 19,6,Tennis World,Coatesville,No. 2,[Unnamed emergency — TROLS AP017061 home code 2],Callum Rankin,Callum Rankin,0-8,0,8,0,1,Completed,false,true,false
+AP017061,16 Nov 19,6,Tennis World,Coatesville,No. 3,Ethan Brooke,Jack Callaghan,Ethan Brooke,8-3,8,3,1,0,Completed,true,false,true
+AP017061,16 Nov 19,6,Tennis World,Coatesville,No. 4,Georgio Psallas,Sam Basman,Georgio Psallas,8-5,8,5,1,0,Completed,true,false,true
+AP017062,16 Nov 19,6,Clarinda,BLTC 1,No. 1,Tri Dinh,Patrick Flood,Patrick Flood,3-8,3,8,0,1,Completed,true,false,true
+AP017062,16 Nov 19,6,Clarinda,BLTC 1,No. 2,Cory Hall,Ayden Kousis,Cory Hall,8-5,8,5,1,0,Completed,true,false,false
+AP017062,16 Nov 19,6,Clarinda,BLTC 1,No. 3,Tung Lam,Marcus Brittain,Tung Lam,8-2,8,2,1,0,Completed,true,false,false
+AP017062,16 Nov 19,6,Clarinda,BLTC 1,No. 4,Joe Littieri,Tom Davoren,Tom Davoren,3-8,3,8,0,1,Completed,true,false,false
+AP017063,16 Nov 19,6,Patterson Lakes,GPHC,No. 1,Tyler Armitt,Mote Dambo,Tyler Armitt,8-5,8,5,1,0,Completed,true,false,false
+AP017063,16 Nov 19,6,Patterson Lakes,GPHC,No. 2,Kane Bailey,Dimitri Bagaric,Kane Bailey,8-0,8,0,1,0,Completed,true,false,false
+AP017063,16 Nov 19,6,Patterson Lakes,GPHC,No. 3,Nick Higgins,Jacob Leaf,Nick Higgins,8-2,8,2,1,0,Completed,true,false,false
+AP017063,16 Nov 19,6,Patterson Lakes,GPHC,No. 4,Tom Beard,Mirko Bagaric,Tom Beard,8-3,8,3,1,0,Completed,true,true,false
+AP017064,16 Nov 19,6,BLTC 2,Mountain Gate,No. 1,Shadi Taleb,Michael McCurdy,Shadi Taleb,8-3,8,3,1,0,Completed,true,false,false
+AP017064,16 Nov 19,6,BLTC 2,Mountain Gate,No. 2,Anthony Lawrence,Allen Luu,Anthony Lawrence,8-6,8,6,1,0,Completed,true,false,false
+AP017064,16 Nov 19,6,BLTC 2,Mountain Gate,No. 3,Kurtis Bartholomeusz,Patrick Gould,Patrick Gould,1-8,1,8,0,1,Completed,true,false,false
+AP017064,16 Nov 19,6,BLTC 2,Mountain Gate,No. 4,Ryan Taylor,Ryan Haggett,Ryan Taylor,8-3,8,3,1,0,Completed,true,false,false
+AP017071,23 Nov 19,7,BLTC 1,Coatesville,No. 1,Patrick Flood,Michael Burke,Michael Burke,3-8,3,8,0,1,Completed,true,true,false
+AP017071,23 Nov 19,7,BLTC 1,Coatesville,No. 2,Ayden Kousis,Marcus Aparo,Ayden Kousis,8-7,8,7,1,0,Completed,true,false,false
+AP017071,23 Nov 19,7,BLTC 1,Coatesville,No. 3,Hayden Heng,Harry O'Dea,Hayden Heng,8-2,8,2,1,0,Completed,true,false,false
+AP017071,23 Nov 19,7,BLTC 1,Coatesville,No. 4,Marcus Brittain,James Rametta,Marcus Brittain,8-1,8,1,1,0,Completed,true,false,false
+AP017072,23 Nov 19,7,Tennis World,Clarinda,No. 1,Cooper Rowlands,Patrick Berawn,Cooper Rowlands,8-5,8,5,1,0,Completed,true,false,false
+AP017072,23 Nov 19,7,Tennis World,Clarinda,No. 2,Luc Mascitti,Tri Dinh,Luc Mascitti,8-1,8,1,1,0,Completed,true,false,false
+AP017072,23 Nov 19,7,Tennis World,Clarinda,No. 3,Georgio Psallas,Cory Hall,Georgio Psallas,8-1,8,1,1,0,Completed,true,false,false
+AP017072,23 Nov 19,7,Tennis World,Clarinda,No. 4,Joshua McKenzie,Sebastian Allebi,Sebastian Allebi,2-8,2,8,0,1,Completed,true,false,false
+AP017073,23 Nov 19,7,Mountain Gate,GPHC,No. 1,Enrique Lopez,Mote Dambo,Enrique Lopez,8-7,8,7,1,0,Completed,true,false,false
+AP017073,23 Nov 19,7,Mountain Gate,GPHC,No. 2,Allen Luu,Charlie Debrotiwir,Charlie Debrotiwir,5-8,5,8,0,1,Completed,true,false,false
+AP017073,23 Nov 19,7,Mountain Gate,GPHC,No. 3,Patrick Gould,Mirko Bagaric,Patrick Gould,8-1,8,1,1,0,Completed,true,false,false
+AP017073,23 Nov 19,7,Mountain Gate,GPHC,No. 4,Sam Baker,Xavier Aitken,Sam Baker,8-0,8,0,1,0,Completed,true,true,true
+AP017074,23 Nov 19,7,Patterson Lakes,BLTC 2,No. 1,Tyler Armitt,Shadi Taleb,Shadi Taleb,2-8,2,8,0,1,Completed,true,false,false
+AP017074,23 Nov 19,7,Patterson Lakes,BLTC 2,No. 2,Nick Higgins,Andrew Bartholomeusz,Nick Higgins,8-6,8,6,1,0,Completed,true,false,false
+AP017074,23 Nov 19,7,Patterson Lakes,BLTC 2,No. 3,Rhys Solomons,Kurtis Bartholomeusz,Rhys Solomons,8-2,8,2,1,0,Completed,true,true,false
+AP017074,23 Nov 19,7,Patterson Lakes,BLTC 2,No. 4,Marcelo Grosso,Austin Taleb,Marcelo Grosso,8-0,8,0,1,0,Completed,true,false,false
+AP017081,30 Nov 19,8,BLTC 2,BLTC 1,No. 1,Shadi Taleb,Ayden Kousis,Shadi Taleb,8-2,8,2,1,0,Completed,true,false,false
+AP017081,30 Nov 19,8,BLTC 2,BLTC 1,No. 2,Andrew Bartholomeusz,Hayden Heng,Hayden Heng,2-8,2,8,0,1,Completed,true,false,false
+AP017081,30 Nov 19,8,BLTC 2,BLTC 1,No. 3,Kurtis Bartholomeusz,Marcus Brittain,Marcus Brittain,5-8,5,8,0,1,Completed,true,false,false
+AP017081,30 Nov 19,8,BLTC 2,BLTC 1,No. 4,Austin Taleb,Tom Davoren,Tom Davoren,2-8,2,8,0,1,Completed,true,false,false
+AP017082,30 Nov 19,8,GPHC,Tennis World,No. 1,Mote Dambo,Ethan Brooke,Ethan Brooke,5-8,5,8,0,1,Completed,true,false,false
+AP017082,30 Nov 19,8,GPHC,Tennis World,No. 2,Charlie Debrotiwir,[Unnamed emergency — TROLS AP017082 away code 2],Charlie Debrotiwir,8-0,8,0,1,0,Completed,false,false,true
+AP017082,30 Nov 19,8,GPHC,Tennis World,No. 3,Dimitri Bagaric,[Unnamed emergency — TROLS AP017082 away code 3],Dimitri Bagaric,8-0,8,0,1,0,Completed,false,false,true
+AP017082,30 Nov 19,8,GPHC,Tennis World,No. 4,Jacob Leaf,Joshua McKenzie,Jacob Leaf,8-0,8,0,1,0,Completed,true,false,false
+AP017083,30 Nov 19,8,Patterson Lakes,Coatesville,No. 1,Tyler Armitt,Michael Burke,Tyler Armitt,8-1,8,1,1,0,Completed,true,false,false
+AP017083,30 Nov 19,8,Patterson Lakes,Coatesville,No. 2,Steffen Jensen,Marcus Aparo,Steffen Jensen,8-2,8,2,1,0,Completed,true,false,false
+AP017083,30 Nov 19,8,Patterson Lakes,Coatesville,No. 3,Nick Higgins,Jack Langdon,Nick Higgins,8-1,8,1,1,0,Completed,true,false,false
+AP017083,30 Nov 19,8,Patterson Lakes,Coatesville,No. 4,Marcelo Grosso,Christian Locantro,Marcelo Grosso,8-2,8,2,1,0,Completed,true,false,false
+AP017084,30 Nov 19,8,Mountain Gate,Clarinda,No. 1,Enrique Lopez,Tri Dinh,Enrique Lopez,8-5,8,5,1,0,Completed,true,false,false
+AP017084,30 Nov 19,8,Mountain Gate,Clarinda,No. 2,Allen Luu,Cory Hall,Allen Luu,8-3,8,3,1,0,Completed,true,false,false
+AP017084,30 Nov 19,8,Mountain Gate,Clarinda,No. 3,Diliman Jayawardena,Tung Lam,Diliman Jayawardena,8-1,8,1,1,0,Completed,true,false,false
+AP017084,30 Nov 19,8,Mountain Gate,Clarinda,No. 4,Ryan Haggett,Sebastian Allebi,Ryan Haggett,8-5,8,5,1,0,Completed,true,false,false
+AP017091,07 Dec 19,9,BLTC 1,Mountain Gate,No. 1,Ayden Kousis,Enrique Lopez,Ayden Kousis,8-6,8,6,1,0,Completed,true,false,false
+AP017091,07 Dec 19,9,BLTC 1,Mountain Gate,No. 2,Hayden Heng,Allen Luu,Hayden Heng,8-6,8,6,1,0,Completed,true,false,false
+AP017091,07 Dec 19,9,BLTC 1,Mountain Gate,No. 3,Marcus Brittain,Patrick Gould,Marcus Brittain,8-1,8,1,1,0,Completed,true,false,false
+AP017091,07 Dec 19,9,BLTC 1,Mountain Gate,No. 4,Tom Davoren,Ryan Haggett,Tom Davoren,8-2,8,2,1,0,Completed,true,false,false
+AP017092,07 Dec 19,9,Tennis World,BLTC 2,No. 1,Cooper Rowlands,Shadi Taleb,Shadi Taleb,2-8,2,8,0,1,Completed,true,false,false
+AP017092,07 Dec 19,9,Tennis World,BLTC 2,No. 2,Ethan Brooke,Andrew Bartholomeusz,Ethan Brooke,8-0,8,0,1,0,Completed,true,false,false
+AP017092,07 Dec 19,9,Tennis World,BLTC 2,No. 3,Joshua McKenzie,Kurtis Bartholomeusz,Kurtis Bartholomeusz,1-8,1,8,0,1,Completed,true,false,false
+AP017092,07 Dec 19,9,Tennis World,BLTC 2,No. 4,Georgio Psallas,Austin Taleb,Georgio Psallas,8-0,8,0,1,0,Completed,true,false,false
+AP017093,07 Dec 19,9,Coatesville,GPHC,No. 1,Marcus Aparo,Mote Dambo,Mote Dambo,4-8,4,8,0,1,Completed,true,false,false
+AP017093,07 Dec 19,9,Coatesville,GPHC,No. 2,Harry O'Dea,Charlie Debrotiwir,Charlie Debrotiwir,2-8,2,8,0,1,Completed,true,false,false
+AP017093,07 Dec 19,9,Coatesville,GPHC,No. 3,James Rametta,Dimitri Bagaric,Dimitri Bagaric,1-8,1,8,0,1,Completed,true,false,false
+AP017093,07 Dec 19,9,Coatesville,GPHC,No. 4,Sam Basman,Jacob Leaf,Jacob Leaf,3-8,3,8,0,1,Completed,true,true,false
+AP017094,07 Dec 19,9,Clarinda,Patterson Lakes,No. 1,Patrick Berawn,Tyler Armitt,Patrick Berawn,8-3,8,3,1,0,Completed,true,false,false
+AP017094,07 Dec 19,9,Clarinda,Patterson Lakes,No. 2,Cory Hall,Steffen Jensen,Steffen Jensen,4-8,4,8,0,1,Completed,true,false,false
+AP017094,07 Dec 19,9,Clarinda,Patterson Lakes,No. 3,Joe Littieri,Nick Higgins,Nick Higgins,0-8,0,8,0,1,Completed,true,false,false
+AP017094,07 Dec 19,9,Clarinda,Patterson Lakes,No. 4,Sebastian Allebi,Marcelo Grosso,Marcelo Grosso,2-8,2,8,0,1,Completed,true,false,false
+AP017101,14 Dec 19,10,Patterson Lakes,BLTC 1,No. 1,Tyler Armitt,Josh Baldsing,Tyler Armitt,8-6,8,6,1,0,Completed,true,false,false
+AP017101,14 Dec 19,10,Patterson Lakes,BLTC 1,No. 2,Steffen Jensen,Ayden Kousis,Steffen Jensen,8-4,8,4,1,0,Completed,true,false,false
+AP017101,14 Dec 19,10,Patterson Lakes,BLTC 1,No. 3,Koos Kunneke,Hayden Heng,Koos Kunneke,8-1,8,1,1,0,Completed,true,true,false
+AP017101,14 Dec 19,10,Patterson Lakes,BLTC 1,No. 4,Marcelo Grosso,Samasidh P1 Siva Ram,Marcelo Grosso,8-4,8,4,1,0,Completed,true,false,true
+AP017103,14 Dec 19,10,BLTC 2,Coatesville,No. 1,Anthony Lawrence,Michael Burke,Michael Burke,2-8,2,8,0,1,Completed,true,false,false
+AP017103,14 Dec 19,10,BLTC 2,Coatesville,No. 2,Patrick Flood,Marcus Aparo,Patrick Flood,8-7,8,7,1,0,Completed,true,true,false
+AP017103,14 Dec 19,10,BLTC 2,Coatesville,No. 3,Kurtis Bartholomeusz,Gabi Basman,Kurtis Bartholomeusz,8-3,8,3,1,0,Completed,true,false,false
+AP017103,14 Dec 19,10,BLTC 2,Coatesville,No. 4,Ryan Taylor,Daniel Gershenzen,Ryan Taylor,8-3,8,3,1,0,Completed,true,false,true
+AP017104,14 Dec 19,10,GPHC,Clarinda,No. 1,Mote Dambo,Marco Persi,Marco Persi,2-8,2,8,0,1,Completed,true,false,true
+AP017104,14 Dec 19,10,GPHC,Clarinda,No. 2,Dimitri Bagaric,Sebastian Allebi,Dimitri Bagaric,8-1,8,1,1,0,Completed,true,false,false
+AP017104,14 Dec 19,10,GPHC,Clarinda,No. 3,Jacob Leaf,Joe Littieri,Jacob Leaf,8-0,8,0,1,0,Completed,true,false,false
+AP017104,14 Dec 19,10,GPHC,Clarinda,No. 4,Xavier Aitken,Giordano Russo,Xavier Aitken,8-4,8,4,1,0,Completed,true,true,true
+AP017121,08 Feb 20,12,Clarinda,Coatesville,No. 1,Tri Dinh,Callum Rankin,Callum Rankin,1-8,1,8,0,1,Completed,true,false,false
+AP017121,08 Feb 20,12,Clarinda,Coatesville,No. 2,Cory Hall,Marcus Aparo,Cory Hall,8-4,8,4,1,0,Completed,true,false,false
+AP017121,08 Feb 20,12,Clarinda,Coatesville,No. 3,Tung Lam,Harry O'Dea,Tung Lam,8-0,8,0,1,0,Completed,true,false,false
+AP017121,08 Feb 20,12,Clarinda,Coatesville,No. 4,Sebastian Allebi,Jack Langdon,Sebastian Allebi,8-6,8,6,1,0,Completed,true,false,false
+AP017122,08 Feb 20,12,Patterson Lakes,Mountain Gate,No. 1,Tyler Armitt,Enrique Lopez,Enrique Lopez,4-8,4,8,0,1,Completed,true,false,false
+AP017122,08 Feb 20,12,Patterson Lakes,Mountain Gate,No. 2,Steffen Jensen,Allen Luu,Steffen Jensen,8-3,8,3,1,0,Completed,true,false,false
+AP017122,08 Feb 20,12,Patterson Lakes,Mountain Gate,No. 3,Marcelo Grosso,Patrick Gould,Marcelo Grosso,8-5,8,5,1,0,Completed,true,false,false
+AP017122,08 Feb 20,12,Patterson Lakes,Mountain Gate,No. 4,Koos Kunneke,Ryan Haggett,Koos Kunneke,8-4,8,4,1,0,Completed,true,true,false
+AP017123,08 Feb 20,12,BLTC 2,GPHC,No. 1,Anthony Lawrence,Charlie Debrotiwir,Charlie Debrotiwir,2-8,2,8,0,1,Completed,true,false,false
+AP017123,08 Feb 20,12,BLTC 2,GPHC,No. 2,Kurtis Bartholomeusz,Dimitri Bagaric,Dimitri Bagaric,2-8,2,8,0,1,Completed,true,false,false
+AP017123,08 Feb 20,12,BLTC 2,GPHC,No. 3,Patrick Flood,Jacob Leaf,Patrick Flood,8-2,8,2,1,0,Completed,true,true,false
+AP017123,08 Feb 20,12,BLTC 2,GPHC,No. 4,Ryan Taylor,Xavier Aitken,Ryan Taylor,8-4,8,4,1,0,Completed,true,false,true
+AP017124,08 Feb 20,12,Tennis World,BLTC 1,No. 1,Ethan Brooke,Josh Baldsing,Josh Baldsing,7-8,7,8,0,1,Completed,true,false,false
+AP017124,08 Feb 20,12,Tennis World,BLTC 1,No. 2,Luc Mascitti,Ayden Kousis,Luc Mascitti,8-3,8,3,1,0,Completed,true,false,false
+AP017124,08 Feb 20,12,Tennis World,BLTC 1,No. 3,Joshua McKenzie,Hayden Heng,Hayden Heng,2-8,2,8,0,1,Completed,true,false,false
+AP017124,08 Feb 20,12,Tennis World,BLTC 1,No. 4,[Unnamed emergency — TROLS AP017124 home code 4],Tom Davoren,Tom Davoren,0-8,0,8,0,1,Completed,false,true,false
+AP017131,15 Feb 20,13,Coatesville,Tennis World,No. 1,Michael Burke,Ethan Brooke,Michael Burke,8-3,8,3,1,0,Completed,true,false,false
+AP017131,15 Feb 20,13,Coatesville,Tennis World,No. 2,Callum Rankin,Luc Mascitti,Luc Mascitti,4-8,4,8,0,1,Completed,true,false,false
+AP017131,15 Feb 20,13,Coatesville,Tennis World,No. 3,Marcus Aparo,Joshua McKenzie,Marcus Aparo,8-5,8,5,1,0,Completed,true,false,false
+AP017131,15 Feb 20,13,Coatesville,Tennis World,No. 4,Jack Langdon,Alex Ferrer,Alex Ferrer,3-8,3,8,0,1,Completed,true,false,true
+AP017132,15 Feb 20,13,BLTC 1,Clarinda,No. 1,Josh Baldsing,Cory Hall,Josh Baldsing,8-3,8,3,1,0,Completed,true,false,false
+AP017132,15 Feb 20,13,BLTC 1,Clarinda,No. 2,Ayden Kousis,Tung Lam,Ayden Kousis,8-7,8,7,1,0,Completed,true,false,false
+AP017132,15 Feb 20,13,BLTC 1,Clarinda,No. 3,Hayden Heng,Sebastian Allebi,Hayden Heng,8-2,8,2,1,0,Completed,true,false,false
+AP017132,15 Feb 20,13,BLTC 1,Clarinda,No. 4,Tom Davoren,Giordano Russo,Tom Davoren,8-1,8,1,1,0,Completed,true,false,true
+AP017134,15 Feb 20,13,Mountain Gate,BLTC 2,No. 1,Enrique Lopez,Shadi Taleb,Shadi Taleb,4-8,4,8,0,1,Completed,true,false,false
+AP017134,15 Feb 20,13,Mountain Gate,BLTC 2,No. 2,Diliman Jayawardena,Anthony Lawrence,Diliman Jayawardena,7-4,7,4,1,0,Completed,true,false,false
+AP017134,15 Feb 20,13,Mountain Gate,BLTC 2,No. 3,Patrick Gould,Kurtis Bartholomeusz,Patrick Gould,8-3,8,3,1,0,Completed,true,false,false
+AP017134,15 Feb 20,13,Mountain Gate,BLTC 2,No. 4,Ryan Haggett,Austin Taleb,,4-2,4,2,1,0,Unfinished,false,false,false
+AP017141,22 Feb 20,14,Coatesville,BLTC 1,No. 1,Callum Rankin,Josh Baldsing,Josh Baldsing,3-8,3,8,0,1,Completed,true,false,false
+AP017141,22 Feb 20,14,Coatesville,BLTC 1,No. 2,Marcus Aparo,Ayden Kousis,Ayden Kousis,6-8,6,8,0,1,Completed,true,false,false
+AP017141,22 Feb 20,14,Coatesville,BLTC 1,No. 3,Jack Langdon,Hayden Heng,Hayden Heng,2-8,2,8,0,1,Completed,true,false,false
+AP017141,22 Feb 20,14,Coatesville,BLTC 1,No. 4,Gabi Basman,Marcus Brittain,Marcus Brittain,7-8,7,8,0,1,Completed,true,false,false
+AP017142,22 Feb 20,14,Clarinda,Tennis World,No. 1,Patrick Berawn,Cooper Rowlands,Patrick Berawn,8-3,8,3,1,0,Completed,true,false,false
+AP017142,22 Feb 20,14,Clarinda,Tennis World,No. 2,Cory Hall,Ethan Brooke,Ethan Brooke,4-8,4,8,0,1,Completed,true,false,false
+AP017142,22 Feb 20,14,Clarinda,Tennis World,No. 3,Tung Lam,Luc Mascitti,Luc Mascitti,1-8,1,8,0,1,Completed,true,false,false
+AP017142,22 Feb 20,14,Clarinda,Tennis World,No. 4,Sebastian Allebi,Joshua McKenzie,Sebastian Allebi,8-5,8,5,1,0,Completed,true,false,false
+AP017143,22 Feb 20,14,GPHC,Mountain Gate,No. 1,Charlie Debrotiwir,Enrique Lopez,Enrique Lopez,6-8,6,8,0,1,Completed,true,false,false
+AP017143,22 Feb 20,14,GPHC,Mountain Gate,No. 2,Dimitri Bagaric,Diliman Jayawardena,Dimitri Bagaric,8-2,8,2,1,0,Completed,true,false,false
+AP017143,22 Feb 20,14,GPHC,Mountain Gate,No. 3,[Unnamed emergency — TROLS AP017143 home code 3],Patrick Gould,Patrick Gould,3-8,3,8,0,1,Completed,false,true,false
+AP017143,22 Feb 20,14,GPHC,Mountain Gate,No. 4,Mirko Bagaric,Ryan Haggett,Mirko Bagaric,8-3,8,3,1,0,Completed,true,false,false
+AP017144,22 Feb 20,14,BLTC 2,Patterson Lakes,No. 1,Shadi Taleb,Tyler Armitt,Shadi Taleb,8-5,8,5,1,0,Completed,true,false,false
+AP017144,22 Feb 20,14,BLTC 2,Patterson Lakes,No. 2,Patrick Flood,Marcelo Grosso,Marcelo Grosso,6-8,6,8,0,1,Completed,true,true,false
+AP017144,22 Feb 20,14,BLTC 2,Patterson Lakes,No. 3,Kurtis Bartholomeusz,Nick Higgins,Nick Higgins,1-8,1,8,0,1,Completed,true,false,false
+AP017144,22 Feb 20,14,BLTC 2,Patterson Lakes,No. 4,Ryan Taylor,James Thomas,James Thomas,6-8,6,8,0,1,Completed,true,false,true
+AP017301,,16,Patterson Lakes,BLTC 1,No. 1,Tyler Armitt,Josh Baldsing,Tyler Armitt,8-7,8,7,1,0,Completed,true,false,false
+AP017301,,16,Patterson Lakes,BLTC 1,No. 2,Steffen Jensen,Ayden Kousis,Steffen Jensen,8-3,8,3,1,0,Completed,true,false,false
+AP017301,,16,Patterson Lakes,BLTC 1,No. 3,Marcelo Grosso,Hayden Heng,Hayden Heng,4-8,4,8,0,1,Completed,true,false,false
+AP017301,,16,Patterson Lakes,BLTC 1,No. 4,Nick Higgins,Tom Davoren,Nick Higgins,8-5,8,5,1,0,Completed,true,false,false
+AP017302,,16,Mountain Gate,GPHC,No. 1,Enrique Lopez,Charlie Debrotiwir,Enrique Lopez,8-7,8,7,1,0,Completed,true,false,false
+AP017302,,16,Mountain Gate,GPHC,No. 2,Diliman Jayawardena,Dimitri Bagaric,Dimitri Bagaric,4-8,4,8,0,1,Completed,true,false,false
+AP017302,,16,Mountain Gate,GPHC,No. 3,Allen Luu,Jacob Leaf,Allen Luu,8-3,8,3,1,0,Completed,true,false,false
+AP017302,,16,Mountain Gate,GPHC,No. 4,Patrick Gould,Mirko Bagaric,Patrick Gould,8-7,8,7,1,0,Completed,true,false,false

@@ -1,0 +1,83 @@
+{
+  "asset_id": "AP40-AP003",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 19/20",
+  "season_id": "AP40",
+  "season_label": "Summer 19/20",
+  "source_section_code": "AP003",
+  "section_label": "Mens Rubbers 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Centenary Park Blue",
+      "wins": 11,
+      "points": 88,
+      "percentage": 189.53,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Hurlingham Park",
+      "wins": 8,
+      "points": 65,
+      "percentage": 126.28,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Centenary Park Red",
+      "wins": 4,
+      "points": 35,
+      "percentage": 75.73,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "St Pats Mentone",
+      "wins": 4,
+      "points": 33,
+      "percentage": 83.97,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Victory Park",
+      "wins": 0,
+      "points": 18,
+      "percentage": 62.97,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP40-AP003",
+  "fixtures": 46,
+  "completed_fixtures": 29,
+  "draw_fixtures": 57,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 112,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP003031 doubles No. 4: '6-1 5-6'. Missing score not inferred; excluded from ratings and game totals.",
+    "No scorecard rubbers for AP003321",
+    "Fixture game totals do not match rubbers for AP003321: TROLS team total 1-0; complete-score total 0-0. Both published records retained."
+  ]
+}

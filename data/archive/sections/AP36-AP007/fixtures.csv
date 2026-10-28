@@ -1,0 +1,61 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP007011,07 Oct 17,1,regular,Round 1,Kings Park,Parkdale 1,8,0,4,0,8,2,62,49,Completed,
+AP007012,07 Oct 17,1,regular,Round 1,FCTC,Hurlingham Park,0,8,0,4,2,8,29,58,Completed,
+AP007014,07 Oct 17,1,regular,Round 1,Parkdale 2,Le Page,2,6,2,2,4,5,49,51,Completed,
+pending-ap007-r1-st-johns-bye,07 Oct 17,1,regular,Round 1,St Johns,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007021,14 Oct 17,2,regular,Round 2,Le Page,Kings Park,1,7,1,3,2,7,26,48,Completed,
+AP007022,14 Oct 17,2,regular,Round 2,Parkdale 1,FCTC,8,0,4,0,8,0,48,16,Completed,
+AP007023,14 Oct 17,2,regular,Round 2,Hurlingham Park,St Johns,6,2,2,2,5,4,46,29,Completed,
+pending-ap007-r2-bye-parkdale-2,14 Oct 17,2,regular,Round 2,Bye,Parkdale 2,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007032,21 Oct 17,3,regular,Round 3,FCTC,Le Page,1,7,1,3,2,7,27,48,Completed,
+AP007033,21 Oct 17,3,regular,Round 3,St Johns,Parkdale 1,7,1,3,1,7,3,59,45,Completed,
+AP007034,21 Oct 17,3,regular,Round 3,Parkdale 2,Hurlingham Park,1,7,1,3,3,6,41,52,Completed,
+pending-ap007-r3-kings-park-bye,21 Oct 17,3,regular,Round 3,Kings Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007041,28 Oct 17,4,regular,Round 4,Hurlingham Park,Kings Park,6,2,2,2,6,5,55,53,Completed,
+AP007043,28 Oct 17,4,regular,Round 4,Le Page,St Johns,1,7,1,3,3,7,38,56,Completed,
+AP007044,28 Oct 17,4,regular,Round 4,Parkdale 1,Parkdale 2,6,2,2,2,5,4,44,37,Completed,
+pending-ap007-r4-bye-fctc,28 Oct 17,4,regular,Round 4,Bye,FCTC,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007051,11 Nov 17,5,regular,Round 5,St Johns,Parkdale 2,2,6,2,2,4,4,33,38,Completed,
+AP007053,11 Nov 17,5,regular,Round 5,Hurlingham Park,Parkdale 1,7,1,3,1,7,3,51,35,Completed,
+AP007054,11 Nov 17,5,regular,Round 5,Kings Park,FCTC,7,1,3,1,7,4,55,43,Completed,
+pending-ap007-r5-le-page-bye,11 Nov 17,5,regular,Round 5,Le Page,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007061,18 Nov 17,6,regular,Round 6,FCTC,St Johns,0,8,0,4,0,8,14,49,Completed,
+AP007062,18 Nov 17,6,regular,Round 6,Parkdale 2,Kings Park,1,7,1,3,3,7,41,53,Completed,
+AP007064,18 Nov 17,6,regular,Round 6,Parkdale 1,Le Page,8,0,4,0,8,1,53,28,Completed,
+pending-ap007-r6-bye-hurlingham-park,18 Nov 17,6,regular,Round 6,Bye,Hurlingham Park,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007071,25 Nov 17,7,regular,Round 7,Kings Park,St Johns,7,1,3,1,7,3,56,46,Completed,
+AP007072,25 Nov 17,7,regular,Round 7,FCTC,Parkdale 2,2,6,2,2,4,4,35,39,Completed,
+AP007073,25 Nov 17,7,regular,Round 7,Le Page,Hurlingham Park,7,1,3,1,7,4,56,36,Completed,
+pending-ap007-r7-bye-parkdale-1,25 Nov 17,7,regular,Round 7,Bye,Parkdale 1,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap007-r8-bye-st-johns,02 Dec 17,8,regular,Round 8,Bye,St Johns,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap007-r8-hurlingham-park-fctc,02 Dec 17,8,regular,Round 8,Hurlingham Park,FCTC,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap007-r8-le-page-parkdale-2,02 Dec 17,8,regular,Round 8,Le Page,Parkdale 2,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap007-r8-parkdale-1-kings-park,02 Dec 17,8,regular,Round 8,Parkdale 1,Kings Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP007091,09 Dec 17,9,regular,Round 9,Kings Park,Le Page,8,0,4,0,8,2,54,29,Completed,
+AP007092,09 Dec 17,9,regular,Round 9,FCTC,Parkdale 1,1,7,1,3,3,6,34,45,Completed,
+AP007093,09 Dec 17,9,regular,Round 9,St Johns,Hurlingham Park,6,2,2,2,6,4,47,48,Completed,
+pending-ap007-r9-parkdale-2-bye,09 Dec 17,9,regular,Round 9,Parkdale 2,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007102,16 Dec 17,10,regular,Round 10,Le Page,FCTC,8,0,4,0,8,2,52,31,Completed,
+AP007103,16 Dec 17,10,regular,Round 10,Parkdale 1,St Johns,6,2,2,2,6,4,48,43,Completed,
+AP007104,16 Dec 17,10,regular,Round 10,Hurlingham Park,Parkdale 2,6,2,2,2,6,6,62,54,Completed,
+pending-ap007-r10-bye-kings-park,16 Dec 17,10,regular,Round 10,Bye,Kings Park,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007111,03 Feb 18,11,regular,Round 11,Kings Park,Hurlingham Park,6,2,2,2,5,4,45,45,Completed,
+AP007113,03 Feb 18,11,regular,Round 11,St Johns,Le Page,8,0,4,0,8,1,53,30,Completed,
+AP007114,03 Feb 18,11,regular,Round 11,Parkdale 2,Parkdale 1,0,8,0,4,3,8,50,58,Completed,
+pending-ap007-r11-fctc-bye,03 Feb 18,11,regular,Round 11,FCTC,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007121,10 Feb 18,12,regular,Round 12,Parkdale 2,St Johns,6,2,2,2,5,4,33,41,Completed,
+AP007123,10 Feb 18,12,regular,Round 12,Parkdale 1,Hurlingham Park,1,7,1,3,3,6,38,45,Completed,
+AP007124,10 Feb 18,12,regular,Round 12,FCTC,Kings Park,0,8,0,4,1,8,34,52,Completed,
+pending-ap007-r12-bye-le-page,10 Feb 18,12,regular,Round 12,Bye,Le Page,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007131,17 Feb 18,13,regular,Round 13,St Johns,FCTC,2,6,2,2,4,5,44,40,Completed,
+AP007132,17 Feb 18,13,regular,Round 13,Kings Park,Parkdale 2,7,1,3,1,6,3,44,40,Completed,
+AP007134,17 Feb 18,13,regular,Round 13,Le Page,Parkdale 1,0,8,0,4,1,8,41,55,Completed,
+pending-ap007-r13-hurlingham-park-bye,17 Feb 18,13,regular,Round 13,Hurlingham Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007141,24 Feb 18,14,regular,Round 14,St Johns,Kings Park,6,2,2,2,5,4,42,36,Completed,
+AP007142,24 Feb 18,14,regular,Round 14,Parkdale 2,FCTC,7,1,3,1,6,2,41,20,Completed,
+AP007143,24 Feb 18,14,regular,Round 14,Hurlingham Park,Le Page,7,1,3,1,7,4,55,43,Completed,
+pending-ap007-r14-parkdale-1-bye,24 Feb 18,14,regular,Round 14,Parkdale 1,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007301,,16,semi_final,Semi-final,Kings Park,Hurlingham Park,7,1,3,1,6,3,48,35,Completed,
+AP007302,,16,semi_final,Semi-final,Parkdale 1,St Johns,7.5,0.5,3,0,7,3,49,40,Completed,
+AP007311,,16,semi_final,Semi-final,Hurlingham Park,Parkdale 1,6,2,2,2,6,5,48,40,Completed,
+AP007321,,17,grand_final,Grand final · TROLS entry 2,Kings Park,Hurlingham Park,1,7,1,3,3,6,32,45,Completed,

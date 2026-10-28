@@ -1,0 +1,95 @@
+{
+  "asset_id": "AP30-AP010",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 14/15",
+  "season_id": "AP30",
+  "season_label": "Summer 14/15",
+  "source_section_code": "AP010",
+  "section_label": "Mixed Rubbers 5",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Hurlingham Park",
+      "wins": 11,
+      "points": 83,
+      "percentage": 156.4,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "BLTC 2",
+      "wins": 9,
+      "points": 73,
+      "percentage": 142.78,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "BLTC 1",
+      "wins": 6,
+      "points": 60,
+      "percentage": 121.7,
+      "marker": "R"
+    },
+    {
+      "position": 4,
+      "team": "Glen Huntly",
+      "wins": 4,
+      "points": 38,
+      "percentage": 86.11,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Albert Reserve",
+      "wins": 4,
+      "points": 34,
+      "percentage": 73.6,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Kings Park",
+      "wins": 3,
+      "points": 29,
+      "percentage": 80.54,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Hawthorn",
+      "wins": 0,
+      "points": 19,
+      "percentage": 74.19,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP30-AP010",
+  "fixtures": 60,
+  "completed_fixtures": 42,
+  "draw_fixtures": 60,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 166,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

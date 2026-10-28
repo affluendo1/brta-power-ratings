@@ -1,0 +1,95 @@
+{
+  "asset_id": "AP34-AP012",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 16/17",
+  "season_id": "AP34",
+  "season_label": "Summer 16/17",
+  "source_section_code": "AP012",
+  "section_label": "Ladies S/D 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Albert Reserve",
+      "wins": 11,
+      "points": 101,
+      "percentage": 168.79,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Monash University",
+      "wins": 8,
+      "points": 81,
+      "percentage": 126.87,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Royal South Yarra",
+      "wins": 6,
+      "points": 68,
+      "percentage": 117.09,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Dandenong",
+      "wins": 4,
+      "points": 44,
+      "percentage": 76.89,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Burwood",
+      "wins": 4,
+      "points": 44,
+      "percentage": 74.9,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Hawthorn",
+      "wins": 2,
+      "points": 42,
+      "percentage": 86.49,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "BLTC",
+      "wins": 2,
+      "points": 40,
+      "percentage": 77.82,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP34-AP012",
+  "fixtures": 60,
+  "completed_fixtures": 43,
+  "draw_fixtures": 60,
+  "singles_rubbers": 168,
+  "doubles_rubbers": 81,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

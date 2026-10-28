@@ -1,0 +1,47 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP001012,06 May 23,1,regular,Round 1,Chadstone,Legend Park,0,10,0,6,,,20,48,Completed,
+pending-ap001-r1-port-melbourne-fitzroy,06 May 23,1,regular,Round 1,Port Melbourne,Fitzroy,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap001-r1-st-louis-de-mont-bye,06 May 23,1,regular,Round 1,St Louis de Mont,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP001022,13 May 23,2,regular,Round 2,Legend Park,St Louis de Mont,2,8,2,4,,,24,45,Completed,
+AP001023,13 May 23,2,regular,Round 2,Fitzroy,Chadstone,5,5,3,3,,,39,39,Completed,
+pending-ap001-r2-bye-port-melbourne,13 May 23,2,regular,Round 2,Bye,Port Melbourne,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP001031,20 May 23,3,regular,Round 3,Port Melbourne,Chadstone,8,2,4,2,,,39,39,Completed,
+AP001032,20 May 23,3,regular,Round 3,St Louis de Mont,Fitzroy,10,0,6,0,,,49,24,Completed,
+pending-ap001-r3-bye-legend-park,20 May 23,3,regular,Round 3,Bye,Legend Park,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP001041,27 May 23,4,regular,Round 4,Legend Park,Port Melbourne,9,1,5,1,,,45,20,Completed,
+AP001043,27 May 23,4,regular,Round 4,Chadstone,St Louis de Mont,3,7,3,3,,,38,41,Completed,
+pending-ap001-r4-fitzroy-bye,27 May 23,4,regular,Round 4,Fitzroy,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap001-r5-bye-chadstone,03 Jun 23,5,regular,Round 5,Bye,Chadstone,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap001-r5-legend-park-fitzroy,03 Jun 23,5,regular,Round 5,Legend Park,Fitzroy,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap001-r5-port-melbourne-st-louis-de-mont,03 Jun 23,5,regular,Round 5,Port Melbourne,St Louis de Mont,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP001061,17 Jun 23,6,regular,Round 6,Fitzroy,Port Melbourne,9,1,5,1,,,47,21,Completed,
+AP001062,17 Jun 23,6,regular,Round 6,Legend Park,Chadstone,10,0,6,0,,,48,20,Completed,
+pending-ap001-r6-bye-st-louis-de-mont,17 Jun 23,6,regular,Round 6,Bye,St Louis de Mont,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP001072,24 Jun 23,7,regular,Round 7,St Louis de Mont,Legend Park,9,1,4,0,,,40,15,Completed,
+AP001073,24 Jun 23,7,regular,Round 7,Chadstone,Fitzroy,5.5,4.5,2,1,,,27,22,Completed,
+pending-ap001-r7-port-melbourne-bye,24 Jun 23,7,regular,Round 7,Port Melbourne,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP001081,08 Jul 23,8,regular,Round 8,Chadstone,Port Melbourne,7,3,3,3,,,36,30,Completed,
+AP001082,08 Jul 23,8,regular,Round 8,Fitzroy,St Louis de Mont,2,8,2,4,,,30,39,Completed,
+pending-ap001-r8-legend-park-bye,08 Jul 23,8,regular,Round 8,Legend Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP001091,15 Jul 23,9,regular,Round 9,Port Melbourne,Legend Park,0,10,0,6,,,20,48,Completed,
+pending-ap001-r9-bye-fitzroy,15 Jul 23,9,regular,Round 9,Bye,Fitzroy,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap001-r9-st-louis-de-mont-chadstone,15 Jul 23,9,regular,Round 9,St Louis de Mont,Chadstone,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP001101,22 Jul 23,10,regular,Round 10,St Louis de Mont,Port Melbourne,10,0,6,0,,,48,18,Completed,
+AP001102,22 Jul 23,10,regular,Round 10,Fitzroy,Legend Park,3,7,3,3,,,31,41,Completed,
+pending-ap001-r10-chadstone-bye,22 Jul 23,10,regular,Round 10,Chadstone,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP001111,29 Jul 23,11,regular,Round 11,Port Melbourne,Fitzroy,0,10,0,6,,,10,48,Completed,
+AP001112,29 Jul 23,11,regular,Round 11,Chadstone,Legend Park,0,10,0,6,,,19,48,Completed,
+pending-ap001-r11-st-louis-de-mont-bye,29 Jul 23,11,regular,Round 11,St Louis de Mont,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP001122,05 Aug 23,12,regular,Round 12,Legend Park,St Louis de Mont,1.5,8.5,1,4,,,23,39,Completed,
+pending-ap001-r12-bye-port-melbourne,05 Aug 23,12,regular,Round 12,Bye,Port Melbourne,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap001-r12-fitzroy-chadstone,05 Aug 23,12,regular,Round 12,Fitzroy,Chadstone,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+AP001131,12 Aug 23,13,regular,Round 13,Port Melbourne,Chadstone,8,2,4,2,,,47,22,Completed,
+AP001132,12 Aug 23,13,regular,Round 13,St Louis de Mont,Fitzroy,9,1,5,1,,,46,23,Completed,
+pending-ap001-r13-bye-legend-park,12 Aug 23,13,regular,Round 13,Bye,Legend Park,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP001141,19 Aug 23,14,regular,Round 14,Legend Park,Port Melbourne,9,1,5,1,,,46,30,Completed,
+AP001143,19 Aug 23,14,regular,Round 14,Chadstone,St Louis de Mont,1,9,1,5,,,14,44,Completed,
+pending-ap001-r14-fitzroy-bye,19 Aug 23,14,regular,Round 14,Fitzroy,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP001151,26 Aug 23,15,regular,Round 15,Port Melbourne,St Louis de Mont,0,10,0,6,,,28,49,Completed,
+AP001152,26 Aug 23,15,regular,Round 15,Legend Park,Fitzroy,8,2,4,2,,,39,30,Completed,
+pending-ap001-r15-bye-chadstone,26 Aug 23,15,regular,Round 15,Bye,Chadstone,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP001321,,16,grand_final,Grand final · TROLS entry 2,St Louis de Mont,Legend Park,2,8,2,4,,,34,39,Completed,

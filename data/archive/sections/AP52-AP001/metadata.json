@@ -1,0 +1,89 @@
+{
+  "asset_id": "AP52-AP001",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Winter 2026",
+  "season_id": "AP52",
+  "season_label": "Winter 2026",
+  "source_section_code": "AP001",
+  "section_label": "Womens Sets 1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "St Louis de Mont",
+      "wins": 12,
+      "points": 109,
+      "percentage": 135.32,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Mordialloc",
+      "wins": 11,
+      "points": 100,
+      "percentage": 128.88,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Glenvale",
+      "wins": 8,
+      "points": 80,
+      "percentage": 99.6,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Fitzroy",
+      "wins": 8,
+      "points": 79,
+      "percentage": 106.05,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Port Melbourne",
+      "wins": 4,
+      "points": 43,
+      "percentage": 68.05,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Legend Park",
+      "wins": 2,
+      "points": 39,
+      "percentage": 79.49,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 6,
+    "doublesBestOf": 1,
+    "doublesTarget": 8,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP52-AP001",
+  "fixtures": 46,
+  "completed_fixtures": 44,
+  "draw_fixtures": 46,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 263,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP001063 doubles No. 5: '0-1'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

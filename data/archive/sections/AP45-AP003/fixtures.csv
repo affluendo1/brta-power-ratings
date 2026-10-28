@@ -1,0 +1,60 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP003011,01 Oct 22,1,regular,Round 1,BLTC White,BLTC Blue,8,2,5,3,,,43,36,Completed,
+AP003012,01 Oct 22,1,regular,Round 1,Hawthorn,Highmoor Uniting,0,10,0,8,,,15,56,Completed,
+pending-ap003-r1-caulfield-rec-le-page,01 Oct 22,1,regular,Round 1,Caulfield Rec,Le Page,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+pending-ap003-r1-langwarrin-caulfield-park-blue,01 Oct 22,1,regular,Round 1,Langwarrin,Caulfield Park Blue,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP003021,08 Oct 22,2,regular,Round 2,Caulfield Park Blue,BLTC White,9,1,7,2,,,60,37,Completed,
+AP003022,08 Oct 22,2,regular,Round 2,BLTC Blue,Hawthorn,6,4,4,1,,,27,15,Completed,
+AP003023,08 Oct 22,2,regular,Round 2,Highmoor Uniting,Caulfield Rec,5.5,4.5,1,0,,,15,11,Completed,
+AP003024,08 Oct 22,2,regular,Round 2,Le Page,Langwarrin,4,6,0,4,,,9,26,Completed,
+AP003031,15 Oct 22,3,regular,Round 3,BLTC White,Le Page,8,2,5,3,,,49,34,Completed,
+AP003032,15 Oct 22,3,regular,Round 3,Hawthorn,Caulfield Park Blue,0,10,0,8,,,20,57,Completed,
+AP003033,15 Oct 22,3,regular,Round 3,Caulfield Rec,BLTC Blue,8,2,5,4,,,53,45,Completed,
+AP003034,15 Oct 22,3,regular,Round 3,Langwarrin,Highmoor Uniting,2,8,4,6,,,45,54,Completed,
+AP003044,22 Oct 22,4,regular,Round 4,BLTC Blue,Langwarrin,1,9,1,7,,,39,54,Completed,
+pending-ap003-r4-caulfield-park-blue-caulfield-rec,22 Oct 22,4,regular,Round 4,Caulfield Park Blue,Caulfield Rec,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap003-r4-highmoor-uniting-bltc-white,22 Oct 22,4,regular,Round 4,Highmoor Uniting,BLTC White,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap003-r4-le-page-hawthorn,22 Oct 22,4,regular,Round 4,Le Page,Hawthorn,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP003051,05 Nov 22,5,regular,Round 5,Caulfield Rec,Langwarrin,8,2,6,4,,,58,45,Completed,
+AP003052,05 Nov 22,5,regular,Round 5,Caulfield Park Blue,Le Page,10,0,8,0,,,56,10,Completed,
+AP003053,05 Nov 22,5,regular,Round 5,Highmoor Uniting,BLTC Blue,3,7,4,5,,,45,44,Completed,
+AP003054,05 Nov 22,5,regular,Round 5,BLTC White,Hawthorn,10,0,8,1,,,60,24,Completed,
+AP003061,12 Nov 22,6,regular,Round 6,Hawthorn,Caulfield Rec,1,9,2,7,,,35,55,Completed,
+AP003062,12 Nov 22,6,regular,Round 6,Langwarrin,BLTC White,2,8,3,6,,,43,47,Completed,
+AP003064,12 Nov 22,6,regular,Round 6,BLTC Blue,Caulfield Park Blue,2,8,3,5,,,32,46,Completed,
+pending-ap003-r6-le-page-highmoor-uniting,12 Nov 22,6,regular,Round 6,Le Page,Highmoor Uniting,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+AP003073,19 Nov 22,7,regular,Round 7,Caulfield Park Blue,Highmoor Uniting,5,5,5,5,,,48,48,Completed,
+AP003074,19 Nov 22,7,regular,Round 7,Le Page,BLTC Blue,5,5,0,0,,,3,2,Completed,
+pending-ap003-r7-bltc-white-caulfield-rec,19 Nov 22,7,regular,Round 7,BLTC White,Caulfield Rec,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap003-r7-hawthorn-langwarrin,19 Nov 22,7,regular,Round 7,Hawthorn,Langwarrin,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP003081,26 Nov 22,8,regular,Round 8,BLTC Blue,BLTC White,1,9,2,7,,,40,58,Completed,
+AP003082,26 Nov 22,8,regular,Round 8,Highmoor Uniting,Hawthorn,10,0,8,0,,,56,20,Completed,
+AP003083,26 Nov 22,8,regular,Round 8,Le Page,Caulfield Rec,2,8,3,5,,,39,48,Completed,
+AP003084,26 Nov 22,8,regular,Round 8,Caulfield Park Blue,Langwarrin,7,3,5,5,,,64,48,Completed,
+AP003092,03 Dec 22,9,regular,Round 9,Hawthorn,BLTC Blue,3,7,4,5,,,39,56,Completed,
+AP003093,03 Dec 22,9,regular,Round 9,Caulfield Rec,Highmoor Uniting,7,3,5,4,,,55,37,Completed,
+AP003094,03 Dec 22,9,regular,Round 9,Langwarrin,Le Page,7,3,4,4,,,43,37,Completed,
+pending-ap003-r9-bltc-white-caulfield-park-blue,03 Dec 22,9,regular,Round 9,BLTC White,Caulfield Park Blue,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP003101,10 Dec 22,10,regular,Round 10,Le Page,BLTC White,2,8,3,5,,,39,49,Completed,
+AP003102,10 Dec 22,10,regular,Round 10,Caulfield Park Blue,Hawthorn,9,1,7,1,,,51,32,Completed,
+AP003103,10 Dec 22,10,regular,Round 10,BLTC Blue,Caulfield Rec,1,9,3,7,,,53,62,Completed,
+AP003104,10 Dec 22,10,regular,Round 10,Highmoor Uniting,Langwarrin,9,1,7,1,,,53,34,Completed,
+AP003111,04 Feb 23,11,regular,Round 11,BLTC White,Highmoor Uniting,1,9,1,7,,,37,54,Completed,
+AP003112,04 Feb 23,11,regular,Round 11,Hawthorn,Le Page,8,2,5,3,,,43,35,Completed,
+AP003113,04 Feb 23,11,regular,Round 11,Caulfield Rec,Caulfield Park Blue,0,10,0,8,,,33,58,Completed,
+AP003114,04 Feb 23,11,regular,Round 11,Langwarrin,BLTC Blue,9,1,7,1,,,50,16,Completed,
+AP003121,11 Feb 23,12,regular,Round 12,Langwarrin,Caulfield Rec,9,1,7,1,,,52,39,Completed,
+AP003122,11 Feb 23,12,regular,Round 12,Le Page,Caulfield Park Blue,3,7,4,5,,,45,42,Completed,
+AP003123,11 Feb 23,12,regular,Round 12,BLTC Blue,Highmoor Uniting,2,8,3,6,,,43,52,Completed,
+AP003124,11 Feb 23,12,regular,Round 12,Hawthorn,BLTC White,1,9,2,6,,,30,50,Completed,
+AP003131,18 Feb 23,13,regular,Round 13,Caulfield Rec,Hawthorn,9,1,6,2,,,51,39,Completed,
+AP003132,18 Feb 23,13,regular,Round 13,BLTC White,Langwarrin,9,1,6,2,,,49,26,Completed,
+AP003134,18 Feb 23,13,regular,Round 13,Caulfield Park Blue,BLTC Blue,9,1,7,3,,,60,48,Completed,
+pending-ap003-r13-highmoor-uniting-le-page,18 Feb 23,13,regular,Round 13,Highmoor Uniting,Le Page,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP003141,25 Feb 23,14,regular,Round 14,Caulfield Rec,BLTC White,7,3,5,4,,,54,48,Completed,
+AP003142,25 Feb 23,14,regular,Round 14,Langwarrin,Hawthorn,6,4,5,1,,,47,29,Completed,
+AP003143,25 Feb 23,14,regular,Round 14,Highmoor Uniting,Caulfield Park Blue,4,6,1,3,,,21,34,Completed,
+AP003144,25 Feb 23,14,regular,Round 14,BLTC Blue,Le Page,10,0,8,0,,,56,11,Completed,
+AP003301,,16,semi_final,Semi-final,Highmoor Uniting,Caulfield Rec,9,1,4,0,,,32,13,Completed,
+AP003302,,16,semi_final,Semi-final,Caulfield Park Blue,BLTC White,3,7,4,5,,,40,53,Completed,
+AP003321,,17,grand_final,Grand final · TROLS entry 2,Highmoor Uniting,BLTC White,1.5,8.5,2,6,,,36,53,Completed,

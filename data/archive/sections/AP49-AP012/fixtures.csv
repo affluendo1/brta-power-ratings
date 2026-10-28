@@ -1,0 +1,60 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP012011,05 Oct 24,1,regular,Round 1,East Malvern,Mt Eliza,5,5,0,0,,,9,7,Completed,
+AP012012,05 Oct 24,1,regular,Round 1,BLTC Blue,BLTC White,5,5,0,0,,,7,9,Completed,
+AP012013,05 Oct 24,1,regular,Round 1,Royal South Yarra,Hawthorn,5,5,1,0,,,11,4,Completed,
+pending-ap012-r1-overport-park-bye,05 Oct 24,1,regular,Round 1,Overport Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP012022,12 Oct 24,2,regular,Round 2,Mt Eliza,BLTC Blue,0,10,0,8,,,8,56,Completed,
+AP012023,12 Oct 24,2,regular,Round 2,BLTC White,Royal South Yarra,9,1,7,1,,,54,20,Completed,
+AP012024,12 Oct 24,2,regular,Round 2,Hawthorn,Overport Park,1,9,2,7,,,36,55,Completed,
+pending-ap012-r2-bye-east-malvern,12 Oct 24,2,regular,Round 2,Bye,East Malvern,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP012031,19 Oct 24,3,regular,Round 3,East Malvern,Hawthorn,8,2,5,4,,,47,45,Completed,
+AP012033,19 Oct 24,3,regular,Round 3,Royal South Yarra,Mt Eliza,7,3,5,3,,,41,41,Completed,
+AP012034,19 Oct 24,3,regular,Round 3,Overport Park,BLTC White,0,10,0,8,,,17,57,Completed,
+pending-ap012-r3-bltc-blue-bye,19 Oct 24,3,regular,Round 3,BLTC Blue,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP012041,26 Oct 24,4,regular,Round 4,BLTC White,East Malvern,8,2,6,4,,,57,60,Completed,
+AP012042,26 Oct 24,4,regular,Round 4,Hawthorn,BLTC Blue,0,10,0,8,,,6,56,Completed,
+AP012044,26 Oct 24,4,regular,Round 4,Mt Eliza,Overport Park,3,7,4,5,,,44,50,Completed,
+pending-ap012-r4-bye-royal-south-yarra,26 Oct 24,4,regular,Round 4,Bye,Royal South Yarra,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP012051,09 Nov 24,5,regular,Round 5,Royal South Yarra,Overport Park,9,1,7,1,,,52,34,Completed,
+AP012053,09 Nov 24,5,regular,Round 5,BLTC White,Mt Eliza,9,1,7,1,,,52,25,Completed,
+AP012054,09 Nov 24,5,regular,Round 5,East Malvern,BLTC Blue,8,2,6,4,,,56,52,Completed,
+pending-ap012-r5-bye-hawthorn,09 Nov 24,5,regular,Round 5,Bye,Hawthorn,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP012061,16 Nov 24,6,regular,Round 6,BLTC Blue,Royal South Yarra,7,3,5,4,,,49,46,Completed,
+AP012062,16 Nov 24,6,regular,Round 6,Overport Park,East Malvern,1,9,2,7,,,36,57,Completed,
+AP012063,16 Nov 24,6,regular,Round 6,Hawthorn,BLTC White,1,9,3,7,,,48,57,Completed,
+pending-ap012-r6-mt-eliza-bye,16 Nov 24,6,regular,Round 6,Mt Eliza,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP012071,23 Nov 24,7,regular,Round 7,East Malvern,Royal South Yarra,5,5,0,0,,,0,0,Completed,
+pending-ap012-r7-bltc-blue-overport-park,23 Nov 24,7,regular,Round 7,BLTC Blue,Overport Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap012-r7-bye-bltc-white,23 Nov 24,7,regular,Round 7,Bye,BLTC White,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap012-r7-hawthorn-mt-eliza,23 Nov 24,7,regular,Round 7,Hawthorn,Mt Eliza,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap012-r8-bltc-white-bltc-blue,30 Nov 24,8,regular,Round 8,BLTC White,BLTC Blue,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap012-r8-bye-overport-park,30 Nov 24,8,regular,Round 8,Bye,Overport Park,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap012-r8-hawthorn-royal-south-yarra,30 Nov 24,8,regular,Round 8,Hawthorn,Royal South Yarra,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap012-r8-mt-eliza-east-malvern,30 Nov 24,8,regular,Round 8,Mt Eliza,East Malvern,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP012092,07 Dec 24,9,regular,Round 9,BLTC Blue,Mt Eliza,9,1,7,1,,,53,11,Completed,
+AP012093,07 Dec 24,9,regular,Round 9,Royal South Yarra,BLTC White,2,8,3,5,,,29,43,Completed,
+AP012094,07 Dec 24,9,regular,Round 9,Overport Park,Hawthorn,8,2,6,2,,,41,28,Completed,
+pending-ap012-r9-east-malvern-bye,07 Dec 24,9,regular,Round 9,East Malvern,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP012101,14 Dec 24,10,regular,Round 10,Hawthorn,East Malvern,1,9,1,7,,,26,52,Completed,
+AP012103,14 Dec 24,10,regular,Round 10,Mt Eliza,Royal South Yarra,9,1,7,2,,,63,40,Completed,
+AP012104,14 Dec 24,10,regular,Round 10,BLTC White,Overport Park,2,8,4,6,,,53,53,Completed,
+pending-ap012-r10-bye-bltc-blue,14 Dec 24,10,regular,Round 10,Bye,BLTC Blue,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP012111,01 Feb 25,11,regular,Round 11,East Malvern,BLTC White,2,8,3,5,,,28,42,Completed,
+AP012112,01 Feb 25,11,regular,Round 11,BLTC Blue,Hawthorn,9,1,7,1,,,55,24,Completed,
+AP012114,01 Feb 25,11,regular,Round 11,Overport Park,Mt Eliza,8,2,6,3,,,57,37,Completed,
+pending-ap012-r11-royal-south-yarra-bye,01 Feb 25,11,regular,Round 11,Royal South Yarra,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP012121,08 Feb 25,12,regular,Round 12,Overport Park,Royal South Yarra,3,7,5,5,,,50,52,Completed,
+AP012123,08 Feb 25,12,regular,Round 12,Mt Eliza,BLTC White,1,9,1,7,,,17,49,Completed,
+AP012124,08 Feb 25,12,regular,Round 12,BLTC Blue,East Malvern,10,0,8,0,,,56,23,Completed,
+pending-ap012-r12-hawthorn-bye,08 Feb 25,12,regular,Round 12,Hawthorn,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP012131,15 Feb 25,13,regular,Round 13,Royal South Yarra,BLTC Blue,0,10,0,8,,,27,57,Completed,
+AP012132,15 Feb 25,13,regular,Round 13,East Malvern,Overport Park,3,7,4,4,,,34,41,Completed,
+AP012133,15 Feb 25,13,regular,Round 13,BLTC White,Hawthorn,10,0,8,0,,,56,9,Completed,
+pending-ap012-r13-bye-mt-eliza,15 Feb 25,13,regular,Round 13,Bye,Mt Eliza,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP012141,22 Feb 25,14,regular,Round 14,Royal South Yarra,East Malvern,4,6,1,4,,,22,26,Completed,
+AP012142,22 Feb 25,14,regular,Round 14,Overport Park,BLTC Blue,4.5,5.5,0,3,,,7,22,Completed,
+pending-ap012-r14-bltc-white-bye,22 Feb 25,14,regular,Round 14,BLTC White,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap012-r14-mt-eliza-hawthorn,22 Feb 25,14,regular,Round 14,Mt Eliza,Hawthorn,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP012301,,16,semi_final,Semi-final,BLTC White,Overport Park,9,1,4,0,,,32,8,Completed,
+AP012302,,16,semi_final,Semi-final,BLTC Blue,East Malvern,9,1,5,0,,,38,15,Completed,
+AP012321,,17,grand_final,Grand final · TROLS entry 2,BLTC White,BLTC Blue,7,3,5,4,,,49,56,Completed,

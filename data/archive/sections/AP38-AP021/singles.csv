@@ -1,0 +1,231 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP021011,06 Oct 18,1,Black Rock,BLTC,No. 1,Adam Bishop,Scott Harrop,Scott Harrop,2-8,2,8,0,1,Completed,true,false,false
+AP021011,06 Oct 18,1,Black Rock,BLTC,No. 2,Michael Watts,Cameron Bell,Michael Watts,8-5,8,5,1,0,Completed,true,false,false
+AP021011,06 Oct 18,1,Black Rock,BLTC,No. 3,Andrew Cole,Tom Sheppard,Andrew Cole,8-5,8,5,1,0,Completed,true,false,false
+AP021011,06 Oct 18,1,Black Rock,BLTC,No. 4,Arthur Stack,Charlie Harrop,Charlie Harrop,3-8,3,8,0,1,Completed,true,false,false
+AP021012,06 Oct 18,1,Tennis World,Maccabi,No. 1,Luke Perilli,Ben Pollack,Luke Perilli,8-4,8,4,1,0,Completed,true,false,false
+AP021012,06 Oct 18,1,Tennis World,Maccabi,No. 2,Teri Kourabis,Joel Rabinov,Joel Rabinov,0-8,0,8,0,1,Completed,true,false,false
+AP021012,06 Oct 18,1,Tennis World,Maccabi,No. 3,Simon Reeves,Daniel Goodrich,Daniel Goodrich,0-8,0,8,0,1,Completed,true,false,false
+AP021012,06 Oct 18,1,Tennis World,Maccabi,No. 4,Darren Marr,Jordan Davis,Jordan Davis,2-8,2,8,0,1,Completed,true,false,false
+AP021013,06 Oct 18,1,East Malvern,Le Page,No. 1,Chris Woods,Trevor Hastings,Trevor Hastings,3-8,3,8,0,1,Completed,true,false,false
+AP021013,06 Oct 18,1,East Malvern,Le Page,No. 2,John McCristal,Tony Sofo,Tony Sofo,2-8,2,8,0,1,Completed,true,false,false
+AP021013,06 Oct 18,1,East Malvern,Le Page,No. 3,Alan Young,Brian Govan,Brian Govan,6-8,6,8,0,1,Completed,true,false,false
+AP021013,06 Oct 18,1,East Malvern,Le Page,No. 4,Oliver Alexander,Kleo Mandikos,Kleo Mandikos,6-8,6,8,0,1,Completed,true,false,false
+AP021014,06 Oct 18,1,Caulfield Rec,Highmoor Uniting,No. 1,Adam Klas,Brett Collins,Adam Klas,8-5,8,5,1,0,Completed,true,false,false
+AP021014,06 Oct 18,1,Caulfield Rec,Highmoor Uniting,No. 2,Tanu Bhaskar,Steffen Raab,Steffen Raab,2-8,2,8,0,1,Completed,true,false,false
+AP021014,06 Oct 18,1,Caulfield Rec,Highmoor Uniting,No. 3,Josh Dosser,Michael Lynch,Josh Dosser,8-3,8,3,1,0,Completed,true,false,false
+AP021014,06 Oct 18,1,Caulfield Rec,Highmoor Uniting,No. 4,Matthew Kreiger,Sam Hooppell,Matthew Kreiger,8-2,8,2,1,0,Completed,true,false,false
+AP021021,13 Oct 18,2,Highmoor Uniting,Black Rock,No. 1,Nick Martin,Adam Bishop,Adam Bishop,2-8,2,8,0,1,Completed,true,false,false
+AP021021,13 Oct 18,2,Highmoor Uniting,Black Rock,No. 2,Richard Elvins,Michael Kernahan,Michael Kernahan,5-8,5,8,0,1,Completed,true,false,false
+AP021021,13 Oct 18,2,Highmoor Uniting,Black Rock,No. 3,Mitch Swain,Nick Lambert,Nick Lambert,6-8,6,8,0,1,Completed,true,false,false
+AP021021,13 Oct 18,2,Highmoor Uniting,Black Rock,No. 4,Sam Hooppell,Andrew Cole,Andrew Cole,1-8,1,8,0,1,Completed,true,false,false
+AP021022,13 Oct 18,2,BLTC,Tennis World,No. 1,Cameron Bell,Alon Faingertz,Cameron Bell,8-6,8,6,1,0,Completed,true,false,false
+AP021022,13 Oct 18,2,BLTC,Tennis World,No. 2,Tom Sheppard,Tom Ranger,Tom Sheppard,8-1,8,1,1,0,Completed,true,false,false
+AP021022,13 Oct 18,2,BLTC,Tennis World,No. 3,David Monaghan,Albert Japar,David Monaghan,8-2,8,2,1,0,Completed,true,false,false
+AP021022,13 Oct 18,2,BLTC,Tennis World,No. 4,Daniel Brewer,Terry Kowubis,Terry Kowubis,1-8,1,8,0,1,Completed,true,false,false
+AP021023,13 Oct 18,2,Maccabi,East Malvern,No. 1,Ben Pollack,Matt Bourke,Ben Pollack,8-5,8,5,1,0,Completed,true,false,false
+AP021023,13 Oct 18,2,Maccabi,East Malvern,No. 2,Joel Rabinov,Paul Tamburro,Joel Rabinov,8-0,8,0,1,0,Completed,true,false,false
+AP021023,13 Oct 18,2,Maccabi,East Malvern,No. 3,Miguel Donnenfeld,Chris Woods,Chris Woods,5-8,5,8,0,1,Completed,true,false,false
+AP021023,13 Oct 18,2,Maccabi,East Malvern,No. 4,Josh Hutson,John McCristal,John McCristal,0-8,0,8,0,1,Completed,true,false,false
+AP021024,13 Oct 18,2,Le Page,Caulfield Rec,No. 1,Kosta Mandikos,Adam Klas,Kosta Mandikos,8-7,8,7,1,0,Completed,true,false,false
+AP021024,13 Oct 18,2,Le Page,Caulfield Rec,No. 2,Trevor Hastings,Tanu Bhaskar,Trevor Hastings,8-1,8,1,1,0,Completed,true,false,false
+AP021024,13 Oct 18,2,Le Page,Caulfield Rec,No. 3,Tony Sofo,Matt Taylor,Tony Sofo,8-4,8,4,1,0,Completed,true,false,false
+AP021024,13 Oct 18,2,Le Page,Caulfield Rec,No. 4,Brian Govan,Nigel Appelboom,Nigel Appelboom,5-8,5,8,0,1,Completed,true,false,false
+AP021031,20 Oct 18,3,Black Rock,Le Page,No. 1,Adam Bishop,Kosta Mandikos,Adam Bishop,8-3,8,3,1,0,Completed,true,false,false
+AP021031,20 Oct 18,3,Black Rock,Le Page,No. 2,Peter Boekeman,Tony Sofo,Tony Sofo,0-8,0,8,0,1,Completed,true,false,false
+AP021031,20 Oct 18,3,Black Rock,Le Page,No. 3,Bruce Everett,Brian Govan,Bruce Everett,8-0,8,0,1,0,Completed,true,false,false
+AP021031,20 Oct 18,3,Black Rock,Le Page,No. 4,Hugh O'Conner,Kleo Mandikos,Kleo Mandikos,7-8,7,8,0,1,Completed,true,false,false
+AP021032,20 Oct 18,3,Tennis World,Highmoor Uniting,No. 1,Tom Ranger,Steve Mitrovic,,5-5,5,5,0,0,Unfinished,false,false,false
+AP021032,20 Oct 18,3,Tennis World,Highmoor Uniting,No. 2,Teri Kourabis,Michael Lynch,Teri Kourabis,5-4,5,4,1,0,Completed,true,false,false
+AP021034,20 Oct 18,3,Caulfield Rec,Maccabi,No. 1,Josh Dosser,Ben Pollack,Josh Dosser,8-1,8,1,1,0,Completed,true,false,false
+AP021034,20 Oct 18,3,Caulfield Rec,Maccabi,No. 2,Matt Taylor,Joel Rabinov,Joel Rabinov,2-8,2,8,0,1,Completed,true,false,false
+AP021034,20 Oct 18,3,Caulfield Rec,Maccabi,No. 3,Nigel Appelboom,Avi Gigi,Nigel Appelboom,8-2,8,2,1,0,Completed,true,false,false
+AP021034,20 Oct 18,3,Caulfield Rec,Maccabi,No. 4,Matthew Kreiger,Jack Stock,Jack Stock,5-8,5,8,0,1,Completed,true,false,false
+AP021041,27 Oct 18,4,Maccabi,Black Rock,No. 1,Ben Pollack,Matt Coleman,Matt Coleman,2-8,2,8,0,1,Completed,true,false,false
+AP021041,27 Oct 18,4,Maccabi,Black Rock,No. 2,Joel Rabinov,Nick Lambert,Joel Rabinov,8-6,8,6,1,0,Completed,true,false,false
+AP021041,27 Oct 18,4,Maccabi,Black Rock,No. 3,Jordan Davis,Andrew Cole,Andrew Cole,5-8,5,8,0,1,Completed,true,false,false
+AP021041,27 Oct 18,4,Maccabi,Black Rock,No. 4,Jack Stock,Gabe Coleman,Jack Stock,8-0,8,0,1,0,Completed,true,false,false
+AP021042,27 Oct 18,4,Le Page,Tennis World,No. 1,Trevor Hastings,Luke Perilli,Trevor Hastings,8-1,8,1,1,0,Completed,true,false,false
+AP021042,27 Oct 18,4,Le Page,Tennis World,No. 2,Tony Sofo,Albert Japar,Tony Sofo,8-0,8,0,1,0,Completed,true,false,false
+AP021042,27 Oct 18,4,Le Page,Tennis World,No. 3,Brian Govan,Teri Kourabis,Brian Govan,8-7,8,7,1,0,Completed,true,false,false
+AP021042,27 Oct 18,4,Le Page,Tennis World,No. 4,Kleo Mandikos,Simon Reeves,Kleo Mandikos,8-0,8,0,1,0,Completed,true,false,false
+AP021043,27 Oct 18,4,Highmoor Uniting,East Malvern,No. 1,Brett Collins,Matt Bourke,Brett Collins,8-5,8,5,1,0,Completed,true,false,false
+AP021043,27 Oct 18,4,Highmoor Uniting,East Malvern,No. 2,Nick Martin,Paul Tamburro,Paul Tamburro,6-8,6,8,0,1,Completed,true,false,false
+AP021043,27 Oct 18,4,Highmoor Uniting,East Malvern,No. 3,Richard Elvins,Chris Woods,Chris Woods,1-8,1,8,0,1,Completed,true,false,false
+AP021043,27 Oct 18,4,Highmoor Uniting,East Malvern,No. 4,Steve Mitrovic,Oliver Alexander,Steve Mitrovic,8-2,8,2,1,0,Completed,true,false,false
+AP021044,27 Oct 18,4,BLTC,Caulfield Rec,No. 1,Cameron Bell,Adam Klas,Adam Klas,6-8,6,8,0,1,Completed,true,false,false
+AP021044,27 Oct 18,4,BLTC,Caulfield Rec,No. 2,Tom Sheppard,Tanu Bhaskar,Tom Sheppard,8-4,8,4,1,0,Completed,true,false,false
+AP021044,27 Oct 18,4,BLTC,Caulfield Rec,No. 3,David Monaghan,Matt Taylor,David Monaghan,8-2,8,2,1,0,Completed,true,false,false
+AP021044,27 Oct 18,4,BLTC,Caulfield Rec,No. 4,Charlie Harrop,Nigel Appelboom,Charlie Harrop,8-6,8,6,1,0,Completed,true,false,false
+AP021051,10 Nov 18,5,East Malvern,Caulfield Rec,No. 1,Matt Bourke,Adam Klas,Adam Klas,0-8,0,8,0,1,Completed,true,false,false
+AP021051,10 Nov 18,5,East Malvern,Caulfield Rec,No. 2,Paul Tamburro,Josh Dosser,Josh Dosser,6-8,6,8,0,1,Completed,true,false,false
+AP021051,10 Nov 18,5,East Malvern,Caulfield Rec,No. 3,John McCristal,Matt Taylor,John McCristal,8-7,8,7,1,0,Completed,true,false,false
+AP021051,10 Nov 18,5,East Malvern,Caulfield Rec,No. 4,Oliver Alexander,Matthew Kreiger,Matthew Kreiger,3-8,3,8,0,1,Completed,true,false,false
+AP021052,10 Nov 18,5,Highmoor Uniting,Le Page,No. 1,Nick Martin,Trevor Hastings,Trevor Hastings,5-8,5,8,0,1,Completed,true,false,false
+AP021052,10 Nov 18,5,Highmoor Uniting,Le Page,No. 2,Michael Lynch,Tony Sofo,Tony Sofo,3-8,3,8,0,1,Completed,true,false,false
+AP021052,10 Nov 18,5,Highmoor Uniting,Le Page,No. 3,Mitch Swain,Brian Govan,Mitch Swain,8-3,8,3,1,0,Completed,true,false,false
+AP021052,10 Nov 18,5,Highmoor Uniting,Le Page,No. 4,A J Brokeman,Kleo Mandikos,A J Brokeman,8-0,8,0,1,0,Completed,true,false,false
+AP021053,10 Nov 18,5,Maccabi,BLTC,No. 1,Ben Pollack,Cameron Bell,Ben Pollack,8-6,8,6,1,0,Completed,true,false,false
+AP021053,10 Nov 18,5,Maccabi,BLTC,No. 2,Joel Rabinov,Tom Sheppard,Tom Sheppard,0-8,0,8,0,1,Completed,true,false,false
+AP021053,10 Nov 18,5,Maccabi,BLTC,No. 3,Jack Eydlish,David Monaghan,David Monaghan,1-8,1,8,0,1,Completed,true,false,false
+AP021053,10 Nov 18,5,Maccabi,BLTC,No. 4,Jack Stock,Daniel Brewer,Jack Stock,8-3,8,3,1,0,Completed,true,false,false
+AP021054,10 Nov 18,5,Black Rock,Tennis World,No. 1,Adam Bishop,Luke Perilli,Adam Bishop,8-4,8,4,1,0,Completed,true,false,false
+AP021054,10 Nov 18,5,Black Rock,Tennis World,No. 2,Nick Lambert,Teri Kourabis,Nick Lambert,8-3,8,3,1,0,Completed,true,false,false
+AP021054,10 Nov 18,5,Black Rock,Tennis World,No. 3,Andrew Cole,Simon Reeves,Andrew Cole,8-1,8,1,1,0,Completed,true,false,false
+AP021054,10 Nov 18,5,Black Rock,Tennis World,No. 4,Gabe Coleman,Tom Day,Gabe Coleman,8-5,8,5,1,0,Completed,true,false,false
+AP021061,17 Nov 18,6,Tennis World,East Malvern,No. 1,Luke Perilli,Paul Tamburro,Paul Tamburro,4-8,4,8,0,1,Completed,true,false,false
+AP021061,17 Nov 18,6,Tennis World,East Malvern,No. 2,Albert Japar,Peter Goldberg,Albert Japar,8-6,8,6,1,0,Completed,true,false,false
+AP021061,17 Nov 18,6,Tennis World,East Malvern,No. 3,Teri Kourabis,Chris Woods,Teri Kourabis,8-7,8,7,1,0,Completed,true,false,false
+AP021061,17 Nov 18,6,Tennis World,East Malvern,No. 4,Simon Reeves,John McCristal,John McCristal,2-8,2,8,0,1,Completed,true,false,false
+AP021062,17 Nov 18,6,Caulfield Rec,Black Rock,No. 1,Adam Klas,Adam Bishop,Adam Klas,8-4,8,4,1,0,Completed,true,false,false
+AP021062,17 Nov 18,6,Caulfield Rec,Black Rock,No. 2,Matt Taylor,Peter Boekeman,Matt Taylor,8-2,8,2,1,0,Completed,true,false,false
+AP021062,17 Nov 18,6,Caulfield Rec,Black Rock,No. 3,Nigel Appelboom,Tim Neales,Tim Neales,7-8,7,8,0,1,Completed,true,false,false
+AP021062,17 Nov 18,6,Caulfield Rec,Black Rock,No. 4,Matthew Kreiger,Gabe Coleman,Matthew Kreiger,8-3,8,3,1,0,Completed,true,false,false
+AP021063,17 Nov 18,6,Le Page,Maccabi,No. 1,Trevor Hastings,Ben Pollack,Trevor Hastings,8-7,8,7,1,0,Completed,true,false,false
+AP021063,17 Nov 18,6,Le Page,Maccabi,No. 2,Tony Sofo,Joel Rabinov,Joel Rabinov,6-8,6,8,0,1,Completed,true,false,false
+AP021063,17 Nov 18,6,Le Page,Maccabi,No. 3,Brian Govan,Daniel Goodrich,Daniel Goodrich,1-8,1,8,0,1,Completed,true,false,false
+AP021063,17 Nov 18,6,Le Page,Maccabi,No. 4,Kleo Mandikos,Roman Maevsky,Kleo Mandikos,8-5,8,5,1,0,Completed,true,false,false
+AP021064,17 Nov 18,6,BLTC,Highmoor Uniting,No. 1,Scott Harrop,Brett Collins,Scott Harrop,8-1,8,1,1,0,Completed,true,false,false
+AP021064,17 Nov 18,6,BLTC,Highmoor Uniting,No. 2,Cameron Bell,Steffen Raab,Steffen Raab,2-8,2,8,0,1,Completed,true,false,false
+AP021064,17 Nov 18,6,BLTC,Highmoor Uniting,No. 3,Charlie Harrop,Richard Elvins,Richard Elvins,6-8,6,8,0,1,Completed,true,false,false
+AP021064,17 Nov 18,6,BLTC,Highmoor Uniting,No. 4,Daniel Brewer,Michael Lynch,Michael Lynch,2-8,2,8,0,1,Completed,true,false,false
+AP021071,24 Nov 18,7,Black Rock,East Malvern,No. 1,Michael Kernahan,Matt Bourke,Michael Kernahan,8-4,8,4,1,0,Completed,true,false,false
+AP021071,24 Nov 18,7,Black Rock,East Malvern,No. 2,Vince Vaughan,Paul Tamburro,Vince Vaughan,8-5,8,5,1,0,Completed,true,false,false
+AP021071,24 Nov 18,7,Black Rock,East Malvern,No. 3,Nick Lambert,Heath Poustie,Nick Lambert,8-5,8,5,1,0,Completed,true,false,false
+AP021071,24 Nov 18,7,Black Rock,East Malvern,No. 4,Andrew Cole,John McCristal,John McCristal,5-8,5,8,0,1,Completed,true,false,false
+AP021072,24 Nov 18,7,Tennis World,Caulfield Rec,No. 1,Luke Perilli,Adam Klas,Adam Klas,3-8,3,8,0,1,Completed,true,false,false
+AP021072,24 Nov 18,7,Tennis World,Caulfield Rec,No. 2,Teri Kourabis,Tanu Bhaskar,Tanu Bhaskar,3-8,3,8,0,1,Completed,true,false,false
+AP021072,24 Nov 18,7,Tennis World,Caulfield Rec,No. 3,Simon Reeves,Matt Taylor,Matt Taylor,1-8,1,8,0,1,Completed,true,false,false
+AP021072,24 Nov 18,7,Tennis World,Caulfield Rec,No. 4,Raymond Lee,Nigel Appelboom,Nigel Appelboom,3-8,3,8,0,1,Completed,true,false,false
+AP021073,24 Nov 18,7,Highmoor Uniting,Maccabi,No. 1,Nick Martin,Ben Pollack,Ben Pollack,4-8,4,8,0,1,Completed,true,false,false
+AP021073,24 Nov 18,7,Highmoor Uniting,Maccabi,No. 2,Steffen Raab,Joel Rabinov,Steffen Raab,8-5,8,5,1,0,Completed,true,false,false
+AP021073,24 Nov 18,7,Highmoor Uniting,Maccabi,No. 3,Steve Mitrovic,Daniel Goodrich,Daniel Goodrich,0-8,0,8,0,1,Completed,true,false,false
+AP021073,24 Nov 18,7,Highmoor Uniting,Maccabi,No. 4,Mitch Swain,Jordan Davis,Jordan Davis,1-8,1,8,0,1,Completed,true,false,false
+AP021074,24 Nov 18,7,Le Page,BLTC,No. 1,Nathan Coombes,Scott Harrop,Scott Harrop,1-8,1,8,0,1,Completed,true,false,false
+AP021074,24 Nov 18,7,Le Page,BLTC,No. 2,Trevor Hastings,Cameron Bell,Cameron Bell,5-8,5,8,0,1,Completed,true,false,false
+AP021074,24 Nov 18,7,Le Page,BLTC,No. 3,Tony Sofo,David Monaghan,Tony Sofo,8-6,8,6,1,0,Completed,true,false,false
+AP021074,24 Nov 18,7,Le Page,BLTC,No. 4,Kleo Mandikos,Charlie Harrop,Charlie Harrop,6-8,6,8,0,1,Completed,true,false,false
+AP021081,01 Dec 18,8,BLTC,Black Rock,No. 1,Scott Harrop,Adam Bishop,Scott Harrop,8-1,8,1,1,0,Completed,true,false,false
+AP021081,01 Dec 18,8,BLTC,Black Rock,No. 2,Tom Sheppard,Nick Lambert,Tom Sheppard,8-5,8,5,1,0,Completed,true,false,false
+AP021081,01 Dec 18,8,BLTC,Black Rock,No. 3,David Monaghan,Andrew Cole,Andrew Cole,7-8,7,8,0,1,Completed,true,false,false
+AP021081,01 Dec 18,8,BLTC,Black Rock,No. 4,Charlie Harrop,Alan Murnane,Charlie Harrop,8-5,8,5,1,0,Completed,true,false,false
+AP021082,01 Dec 18,8,Maccabi,Tennis World,No. 1,Ben Pollack,Luke Perilli,Luke Perilli,7-8,7,8,0,1,Completed,true,false,false
+AP021082,01 Dec 18,8,Maccabi,Tennis World,No. 2,Joel Rabinov,Teri Kourabis,Joel Rabinov,8-5,8,5,1,0,Completed,true,false,false
+AP021082,01 Dec 18,8,Maccabi,Tennis World,No. 3,Daniel Goodrich,Simon Reeves,Daniel Goodrich,8-0,8,0,1,0,Completed,true,false,false
+AP021082,01 Dec 18,8,Maccabi,Tennis World,No. 4,Ron Kotev,Rhys Thomas,Ron Kotev,8-1,8,1,1,0,Completed,true,false,false
+AP021083,01 Dec 18,8,Le Page,East Malvern,No. 1,Kosta Mandikos,Matt Bourke,Kosta Mandikos,8-2,8,2,1,0,Completed,true,false,false
+AP021083,01 Dec 18,8,Le Page,East Malvern,No. 2,Trevor Hastings,Paul Tamburro,Trevor Hastings,8-6,8,6,1,0,Completed,true,false,false
+AP021083,01 Dec 18,8,Le Page,East Malvern,No. 3,Brian Govan,John McCristal,John McCristal,1-8,1,8,0,1,Completed,true,false,false
+AP021083,01 Dec 18,8,Le Page,East Malvern,No. 4,Kleo Mandikos,Heath Poustie,Kleo Mandikos,8-0,8,0,1,0,Completed,true,false,false
+AP021084,01 Dec 18,8,Highmoor Uniting,Caulfield Rec,No. 1,Brett Collins,Adam Klas,Adam Klas,0-8,0,8,0,1,Completed,true,false,false
+AP021084,01 Dec 18,8,Highmoor Uniting,Caulfield Rec,No. 2,Nick Martin,Tanu Bhaskar,Nick Martin,8-2,8,2,1,0,Completed,true,false,false
+AP021084,01 Dec 18,8,Highmoor Uniting,Caulfield Rec,No. 3,Richard Elvins,Nigel Appelboom,Nigel Appelboom,4-8,4,8,0,1,Completed,true,false,false
+AP021084,01 Dec 18,8,Highmoor Uniting,Caulfield Rec,No. 4,Michael Lynch,Matthew Kreiger,Michael Lynch,8-1,8,1,1,0,Completed,true,false,false
+AP021091,08 Dec 18,9,Black Rock,Highmoor Uniting,No. 1,Michael Kernahan,Nick Martin,Michael Kernahan,8-1,8,1,1,0,Completed,true,false,false
+AP021091,08 Dec 18,9,Black Rock,Highmoor Uniting,No. 2,Nick Lambert,Steve Mitrovic,Nick Lambert,8-4,8,4,1,0,Completed,true,false,false
+AP021091,08 Dec 18,9,Black Rock,Highmoor Uniting,No. 3,Andrew Cole,Michael Lynch,Michael Lynch,1-8,1,8,0,1,Completed,true,false,false
+AP021091,08 Dec 18,9,Black Rock,Highmoor Uniting,No. 4,James Fletcher,Sam Hooppell,James Fletcher,8-0,8,0,1,0,Completed,true,false,false
+AP021092,08 Dec 18,9,Tennis World,BLTC,No. 1,Teri Kourabis,Scott Harrop,Scott Harrop,0-8,0,8,0,1,Completed,true,false,false
+AP021092,08 Dec 18,9,Tennis World,BLTC,No. 2,Simon Reeves,Cameron Bell,Cameron Bell,1-8,1,8,0,1,Completed,true,false,false
+AP021092,08 Dec 18,9,Tennis World,BLTC,No. 3,Raymond Lee,Tom Sheppard,Tom Sheppard,0-8,0,8,0,1,Completed,true,false,false
+AP021092,08 Dec 18,9,Tennis World,BLTC,No. 4,Rhys Thomas,David Monaghan,David Monaghan,0-8,0,8,0,1,Completed,true,false,false
+AP021093,08 Dec 18,9,East Malvern,Maccabi,No. 1,Paul Tamburro,Joel Rabinov,Paul Tamburro,8-2,8,2,1,0,Completed,true,false,false
+AP021093,08 Dec 18,9,East Malvern,Maccabi,No. 2,Heath Poustie,Daniel Goodrich,Heath Poustie,8-4,8,4,1,0,Completed,true,false,false
+AP021093,08 Dec 18,9,East Malvern,Maccabi,No. 3,John McCristal,Jack Eydlish,John McCristal,8-3,8,3,1,0,Completed,true,false,false
+AP021093,08 Dec 18,9,East Malvern,Maccabi,No. 4,Chris Woods,Miguel Donnenfeld,Chris Woods,8-3,8,3,1,0,Completed,true,false,false
+AP021094,08 Dec 18,9,Caulfield Rec,Le Page,No. 1,Adam Klas,Nathan Coombes,Nathan Coombes,5-8,5,8,0,1,Completed,true,false,false
+AP021094,08 Dec 18,9,Caulfield Rec,Le Page,No. 2,Matt Taylor,Trevor Hastings,Matt Taylor,8-6,8,6,1,0,Completed,true,false,false
+AP021094,08 Dec 18,9,Caulfield Rec,Le Page,No. 3,Nigel Appelboom,Tony Sofo,Nigel Appelboom,8-5,8,5,1,0,Completed,true,false,false
+AP021094,08 Dec 18,9,Caulfield Rec,Le Page,No. 4,Matthew Kreiger,Brian Govan,Brian Govan,6-8,6,8,0,1,Completed,true,false,false
+AP021101,15 Dec 18,10,Le Page,Black Rock,No. 1,Nathan Coombes,Jamie Pfahl,Jamie Pfahl,4-8,4,8,0,1,Completed,true,false,false
+AP021101,15 Dec 18,10,Le Page,Black Rock,No. 2,Trevor Hastings,Adam Bishop,Adam Bishop,5-8,5,8,0,1,Completed,true,false,false
+AP021101,15 Dec 18,10,Le Page,Black Rock,No. 3,Tony Sofo,Vince Vaughan,Tony Sofo,8-2,8,2,1,0,Completed,true,false,false
+AP021101,15 Dec 18,10,Le Page,Black Rock,No. 4,Brian Govan,Tim Neales,Tim Neales,0-8,0,8,0,1,Completed,true,false,false
+AP021102,15 Dec 18,10,Highmoor Uniting,Tennis World,No. 1,Brett Collins,Luke Perilli,Brett Collins,8-4,8,4,1,0,Completed,true,false,false
+AP021102,15 Dec 18,10,Highmoor Uniting,Tennis World,No. 2,Nick Martin,Albert Japar,Nick Martin,8-1,8,1,1,0,Completed,true,false,false
+AP021102,15 Dec 18,10,Highmoor Uniting,Tennis World,No. 3,John Aristodimou,Teri Kourabis,John Aristodimou,8-6,8,6,1,0,Completed,true,false,false
+AP021102,15 Dec 18,10,Highmoor Uniting,Tennis World,No. 4,Steve Mitrovic,Rhys Thomas,Steve Mitrovic,8-1,8,1,1,0,Completed,true,false,false
+AP021103,15 Dec 18,10,BLTC,East Malvern,No. 1,Scott Harrop,Matt Bourke,Scott Harrop,8-0,8,0,1,0,Completed,true,false,false
+AP021103,15 Dec 18,10,BLTC,East Malvern,No. 2,David Monaghan,Heath Poustie,David Monaghan,8-5,8,5,1,0,Completed,true,false,false
+AP021103,15 Dec 18,10,BLTC,East Malvern,No. 3,Charlie Harrop,John McCristal,John McCristal,4-8,4,8,0,1,Completed,true,false,false
+AP021103,15 Dec 18,10,BLTC,East Malvern,No. 4,Daniel Brewer,Chris Woods,Chris Woods,1-8,1,8,0,1,Completed,true,false,false
+AP021104,15 Dec 18,10,Maccabi,Caulfield Rec,No. 1,Ben Pollack,Adam Klas,Adam Klas,6-8,6,8,0,1,Completed,true,false,false
+AP021104,15 Dec 18,10,Maccabi,Caulfield Rec,No. 2,Joel Rabinov,Nigel Appelboom,Joel Rabinov,8-6,8,6,1,0,Completed,true,false,false
+AP021104,15 Dec 18,10,Maccabi,Caulfield Rec,No. 3,Daniel Goodrich,Matthew Kreiger,Daniel Goodrich,8-3,8,3,1,0,Completed,true,false,false
+AP021104,15 Dec 18,10,Maccabi,Caulfield Rec,No. 4,Miguel Donnenfeld,Chris Liolios,Miguel Donnenfeld,8-7,8,7,1,0,Completed,true,false,false
+AP021111,02 Feb 19,11,Black Rock,Maccabi,No. 1,Adam Bishop,Ben Pollack,Adam Bishop,8-4,8,4,1,0,Completed,true,false,false
+AP021111,02 Feb 19,11,Black Rock,Maccabi,No. 2,Nick Lambert,Joel Rabinov,Joel Rabinov,4-8,4,8,0,1,Completed,true,false,false
+AP021111,02 Feb 19,11,Black Rock,Maccabi,No. 3,Andrew Cole,Miguel Donnenfeld,Andrew Cole,8-6,8,6,1,0,Completed,true,false,false
+AP021111,02 Feb 19,11,Black Rock,Maccabi,No. 4,Peter Boekeman,Jack Stock,Peter Boekeman,8-1,8,1,1,0,Completed,true,false,false
+AP021112,02 Feb 19,11,Tennis World,Le Page,No. 1,Alon Faingertz,Kosta Mandikos,Kosta Mandikos,4-8,4,8,0,1,Completed,true,false,false
+AP021112,02 Feb 19,11,Tennis World,Le Page,No. 2,Luke Perilli,Trevor Hastings,Luke Perilli,8-2,8,2,1,0,Completed,true,false,false
+AP021112,02 Feb 19,11,Tennis World,Le Page,No. 3,Teri Kourabis,Tony Sofo,Tony Sofo,2-8,2,8,0,1,Completed,true,false,false
+AP021112,02 Feb 19,11,Tennis World,Le Page,No. 4,Simon Reeves,Brian Govan,Brian Govan,0-8,0,8,0,1,Completed,true,false,false
+AP021113,02 Feb 19,11,East Malvern,Highmoor Uniting,No. 1,Selim Ahmed,Brett Collins,Brett Collins,6-8,6,8,0,1,Completed,true,false,false
+AP021113,02 Feb 19,11,East Malvern,Highmoor Uniting,No. 2,Paul Tamburro,Richard Elvins,Paul Tamburro,8-1,8,1,1,0,Completed,true,false,false
+AP021113,02 Feb 19,11,East Malvern,Highmoor Uniting,No. 3,Heath Poustie,Michael Lynch,Heath Poustie,8-1,8,1,1,0,Completed,true,false,false
+AP021113,02 Feb 19,11,East Malvern,Highmoor Uniting,No. 4,Peter Goldberg,Mitch Swain,Peter Goldberg,8-1,8,1,1,0,Completed,true,false,false
+AP021114,02 Feb 19,11,Caulfield Rec,BLTC,No. 1,Adam Klas,Scott Harrop,Scott Harrop,3-8,3,8,0,1,Completed,true,false,false
+AP021114,02 Feb 19,11,Caulfield Rec,BLTC,No. 2,Tanu Bhaskar,Cameron Bell,Tanu Bhaskar,8-4,8,4,1,0,Completed,true,false,false
+AP021114,02 Feb 19,11,Caulfield Rec,BLTC,No. 3,Josh Dosser,David Monaghan,Josh Dosser,8-4,8,4,1,0,Completed,true,false,false
+AP021114,02 Feb 19,11,Caulfield Rec,BLTC,No. 4,Matt Taylor,Charlie Harrop,Charlie Harrop,7-8,7,8,0,1,Completed,true,false,false
+AP021121,09 Feb 19,12,Caulfield Rec,East Malvern,No. 1,Adam Klas,Matt Bourke,Adam Klas,8-1,8,1,1,0,Completed,true,false,false
+AP021121,09 Feb 19,12,Caulfield Rec,East Malvern,No. 2,Tanu Bhaskar,Heath Poustie,Heath Poustie,1-8,1,8,0,1,Completed,true,false,false
+AP021121,09 Feb 19,12,Caulfield Rec,East Malvern,No. 3,Matthew Adams,John McCristal,Matthew Adams,8-5,8,5,1,0,Completed,true,false,false
+AP021121,09 Feb 19,12,Caulfield Rec,East Malvern,No. 4,Matthew Kreiger,Chris Woods,Chris Woods,3-8,3,8,0,1,Completed,true,false,false
+AP021122,09 Feb 19,12,Le Page,Highmoor Uniting,No. 1,Kosta Mandikos,Brett Collins,Kosta Mandikos,8-6,8,6,1,0,Completed,true,false,false
+AP021122,09 Feb 19,12,Le Page,Highmoor Uniting,No. 2,Trevor Hastings,Nick Martin,Trevor Hastings,8-7,8,7,1,0,Completed,true,false,false
+AP021122,09 Feb 19,12,Le Page,Highmoor Uniting,No. 3,Tony Sofo,Michael Lynch,Tony Sofo,8-4,8,4,1,0,Completed,true,false,false
+AP021122,09 Feb 19,12,Le Page,Highmoor Uniting,No. 4,Brian Govan,Mitch Swain,Mitch Swain,6-8,6,8,0,1,Completed,true,false,false
+AP021123,09 Feb 19,12,BLTC,Maccabi,No. 1,Tom Sheppard,Ben Pollack,Tom Sheppard,8-0,8,0,1,0,Completed,true,false,false
+AP021123,09 Feb 19,12,BLTC,Maccabi,No. 2,David Monaghan,Joel Rabinov,Joel Rabinov,6-8,6,8,0,1,Completed,true,false,false
+AP021123,09 Feb 19,12,BLTC,Maccabi,No. 3,Ben Gerresheim,Daniel Goodrich,Ben Gerresheim,8-2,8,2,1,0,Completed,true,false,false
+AP021123,09 Feb 19,12,BLTC,Maccabi,No. 4,Adam Marrow,Ron Kofeu,Adam Marrow,8-6,8,6,1,0,Completed,true,false,false
+AP021124,09 Feb 19,12,Tennis World,Black Rock,No. 1,Alon Faingertz,Adam Bishop,Adam Bishop,2-8,2,8,0,1,Completed,true,false,false
+AP021124,09 Feb 19,12,Tennis World,Black Rock,No. 2,Luke Perilli,Nick Lambert,Luke Perilli,8-6,8,6,1,0,Completed,true,false,false
+AP021124,09 Feb 19,12,Tennis World,Black Rock,No. 3,Teri Kourabis,James Fletcher,James Fletcher,1-8,1,8,0,1,Completed,true,false,false
+AP021124,09 Feb 19,12,Tennis World,Black Rock,No. 4,Simon Reeves,Bruce Everett,Bruce Everett,0-8,0,8,0,1,Completed,true,false,false
+AP021131,16 Feb 19,13,East Malvern,Tennis World,No. 1,Matt Bourke,Luke Perilli,Matt Bourke,8-5,8,5,1,0,Completed,true,false,false
+AP021131,16 Feb 19,13,East Malvern,Tennis World,No. 2,Paul Tamburro,Teri Kourabis,Paul Tamburro,8-2,8,2,1,0,Completed,true,false,false
+AP021131,16 Feb 19,13,East Malvern,Tennis World,No. 3,Heath Poustie,Simon Reeves,Heath Poustie,8-1,8,1,1,0,Completed,true,false,false
+AP021131,16 Feb 19,13,East Malvern,Tennis World,No. 4,John McCristal,Raymond Lee,John McCristal,8-3,8,3,1,0,Completed,true,false,false
+AP021132,16 Feb 19,13,Black Rock,Caulfield Rec,No. 1,Adam Bishop,Adam Klas,Adam Bishop,8-5,8,5,1,0,Completed,true,false,false
+AP021132,16 Feb 19,13,Black Rock,Caulfield Rec,No. 2,Marcin Pont,Josh Dosser,Josh Dosser,7-8,7,8,0,1,Completed,true,false,false
+AP021132,16 Feb 19,13,Black Rock,Caulfield Rec,No. 3,Andrew Cole,Matt Taylor,Matt Taylor,6-8,6,8,0,1,Completed,true,false,false
+AP021132,16 Feb 19,13,Black Rock,Caulfield Rec,No. 4,Bruce Everett,Matthew Kreiger,Bruce Everett,8-4,8,4,1,0,Completed,true,false,false
+AP021133,16 Feb 19,13,Maccabi,Le Page,No. 1,Ben Pollack,Kosta Mandikos,Kosta Mandikos,2-8,2,8,0,1,Completed,true,false,false
+AP021133,16 Feb 19,13,Maccabi,Le Page,No. 2,Joel Rabinov,Trevor Hastings,Joel Rabinov,8-6,8,6,1,0,Completed,true,false,false
+AP021133,16 Feb 19,13,Maccabi,Le Page,No. 3,Daniel Goodrich,Brian Govan,Brian Govan,4-8,4,8,0,1,Completed,true,false,false
+AP021133,16 Feb 19,13,Maccabi,Le Page,No. 4,Jack Stock,Kleo Mandikos,Kleo Mandikos,5-8,5,8,0,1,Completed,true,false,false
+AP021134,16 Feb 19,13,Highmoor Uniting,BLTC,No. 1,Nick Martin,Jamie Reh,Jamie Reh,0-8,0,8,0,1,Completed,true,false,false
+AP021134,16 Feb 19,13,Highmoor Uniting,BLTC,No. 2,Richard Elvins,Scott Harrop,Scott Harrop,0-8,0,8,0,1,Completed,true,false,false
+AP021134,16 Feb 19,13,Highmoor Uniting,BLTC,No. 3,Michael Lynch,David Monaghan,David Monaghan,2-8,2,8,0,1,Completed,true,false,false
+AP021134,16 Feb 19,13,Highmoor Uniting,BLTC,No. 4,Mitch Swain,Charlie Harrop,Charlie Harrop,3-8,3,8,0,1,Completed,true,false,false
+AP021141,23 Feb 19,14,East Malvern,Black Rock,No. 1,Paul Tamburro,Adam Bishop,Adam Bishop,6-8,6,8,0,1,Completed,true,false,false
+AP021141,23 Feb 19,14,East Malvern,Black Rock,No. 2,Heath Poustie,Nick Lambert,Heath Poustie,8-5,8,5,1,0,Completed,true,false,false
+AP021141,23 Feb 19,14,East Malvern,Black Rock,No. 3,John McCristal,Andrew Cole,Andrew Cole,3-8,3,8,0,1,Completed,true,false,false
+AP021141,23 Feb 19,14,East Malvern,Black Rock,No. 4,Chris Woods,Bruce Everett,Bruce Everett,5-8,5,8,0,1,Completed,true,false,false
+AP021142,23 Feb 19,14,Caulfield Rec,Tennis World,No. 1,Josh Dosser,Tom Ranger,Josh Dosser,8-2,8,2,1,0,Completed,true,false,false
+AP021142,23 Feb 19,14,Caulfield Rec,Tennis World,No. 2,Matt Taylor,Teri Kourabis,Matt Taylor,8-4,8,4,1,0,Completed,true,false,false
+AP021142,23 Feb 19,14,Caulfield Rec,Tennis World,No. 3,Matthew Kreiger,Albert Japar,Albert Japar,6-8,6,8,0,1,Completed,true,false,false
+AP021142,23 Feb 19,14,Caulfield Rec,Tennis World,No. 4,Chris Liolios,Simon Reeves,Chris Liolios,8-2,8,2,1,0,Completed,true,false,false
+AP021143,23 Feb 19,14,Maccabi,Highmoor Uniting,No. 1,Ben Pollack,Brett Collins,Ben Pollack,8-3,8,3,1,0,Completed,true,false,false
+AP021143,23 Feb 19,14,Maccabi,Highmoor Uniting,No. 2,Joel Rabinov,Nick Martin,Joel Rabinov,8-2,8,2,1,0,Completed,true,false,false
+AP021143,23 Feb 19,14,Maccabi,Highmoor Uniting,No. 3,Ron Kotev,Richard Elvins,Ron Kotev,8-6,8,6,1,0,Completed,true,false,false
+AP021143,23 Feb 19,14,Maccabi,Highmoor Uniting,No. 4,Jack Stock,Michael Lynch,Jack Stock,8-4,8,4,1,0,Completed,true,false,false
+AP021144,23 Feb 19,14,BLTC,Le Page,No. 1,Scott Harrop,Kosta Mandikos,Scott Harrop,8-5,8,5,1,0,Completed,true,false,false
+AP021144,23 Feb 19,14,BLTC,Le Page,No. 2,Tom Sheppard,Tony Sofo,Tom Sheppard,8-1,8,1,1,0,Completed,true,false,false
+AP021144,23 Feb 19,14,BLTC,Le Page,No. 3,David Monaghan,Brian Govan,David Monaghan,8-3,8,3,1,0,Completed,true,false,false
+AP021144,23 Feb 19,14,BLTC,Le Page,No. 4,Charlie Harrop,Kleo Mandikos,Charlie Harrop,8-5,8,5,1,0,Completed,true,false,false
+AP021301,,16,Black Rock,Le Page,No. 1,Adam Bishop,Kosta Mandikos,Kosta Mandikos,2-8,2,8,0,1,Completed,true,false,false
+AP021301,,16,Black Rock,Le Page,No. 2,Michael Kernahan,Trevor Hastings,Michael Kernahan,8-5,8,5,1,0,Completed,true,false,false
+AP021301,,16,Black Rock,Le Page,No. 3,Nick Lambert,Tony Sofo,Tony Sofo,2-8,2,8,0,1,Completed,true,false,false
+AP021301,,16,Black Rock,Le Page,No. 4,Andrew Cole,Brian Govan,Andrew Cole,8-7,8,7,1,0,Completed,true,false,false
+AP021302,,16,BLTC,East Malvern,No. 1,Scott Harrop,Matt Bourke,Scott Harrop,8-3,8,3,1,0,Completed,true,false,false
+AP021302,,16,BLTC,East Malvern,No. 2,Tom Sheppard,Paul Tamburro,Tom Sheppard,8-1,8,1,1,0,Completed,true,false,false
+AP021302,,16,BLTC,East Malvern,No. 3,David Monaghan,Heath Poustie,Heath Poustie,5-8,5,8,0,1,Completed,true,false,false
+AP021302,,16,BLTC,East Malvern,No. 4,Charlie Harrop,Chris Woods,Charlie Harrop,8-2,8,2,1,0,Completed,true,false,false
+AP021321,,17,Black Rock,BLTC,No. 1,Adam Bishop,Scott Harrop,Scott Harrop,2-8,2,8,0,1,Completed,true,false,false
+AP021321,,17,Black Rock,BLTC,No. 2,Michael Kernahan,Tom Sheppard,Tom Sheppard,2-8,2,8,0,1,Completed,true,false,false
+AP021321,,17,Black Rock,BLTC,No. 3,Nick Lambert,David Monaghan,Nick Lambert,8-6,8,6,1,0,Completed,true,false,false
+AP021321,,17,Black Rock,BLTC,No. 4,Andrew Cole,Charlie Harrop,Charlie Harrop,2-8,2,8,0,1,Completed,true,false,false

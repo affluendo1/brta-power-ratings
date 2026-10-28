@@ -1,0 +1,60 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP009011,04 Oct 25,1,regular,Round 1,Lauriston,Glen Huntly,8,2,6,2,,,46,31,Completed,
+AP009012,04 Oct 25,1,regular,Round 1,Maccabi,Kooyong,10,0,8,0,,,56,14,Completed,
+AP009013,04 Oct 25,1,regular,Round 1,BLTC Blue,BLTC White,9,1,7,1,,,54,27,Completed,
+pending-ap009-r1-bye-highmoor-uniting,04 Oct 25,1,regular,Round 1,Bye,Highmoor Uniting,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009021,11 Oct 25,2,regular,Round 2,Highmoor Uniting,Lauriston,3,7,4,5,,,42,55,Completed,
+AP009022,11 Oct 25,2,regular,Round 2,Glen Huntly,Maccabi,1,9,3,7,,,54,66,Completed,
+AP009023,11 Oct 25,2,regular,Round 2,Kooyong,BLTC Blue,1,9,1,7,,,22,53,Completed,
+pending-ap009-r2-bltc-white-bye,11 Oct 25,2,regular,Round 2,BLTC White,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009031,18 Oct 25,3,regular,Round 3,Lauriston,BLTC White,8,2,6,2,,,52,38,Completed,
+AP009032,18 Oct 25,3,regular,Round 3,Maccabi,Highmoor Uniting,8,2,5,3,,,47,31,Completed,
+AP009033,18 Oct 25,3,regular,Round 3,BLTC Blue,Glen Huntly,10,0,8,0,,,56,19,Completed,
+pending-ap009-r3-bye-kooyong,18 Oct 25,3,regular,Round 3,Bye,Kooyong,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009041,25 Oct 25,4,regular,Round 4,Kooyong,Lauriston,0,10,1,8,,,22,62,Completed,
+AP009042,25 Oct 25,4,regular,Round 4,BLTC White,Maccabi,9,1,7,2,,,60,42,Completed,
+AP009043,25 Oct 25,4,regular,Round 4,Highmoor Uniting,BLTC Blue,1,9,1,7,,,36,54,Completed,
+pending-ap009-r4-glen-huntly-bye,25 Oct 25,4,regular,Round 4,Glen Huntly,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap009-r5-bltc-blue-bye,08 Nov 25,5,regular,Round 5,BLTC Blue,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap009-r5-highmoor-uniting-bltc-white,08 Nov 25,5,regular,Round 5,Highmoor Uniting,BLTC White,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap009-r5-kooyong-glen-huntly,08 Nov 25,5,regular,Round 5,Kooyong,Glen Huntly,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap009-r5-lauriston-maccabi,08 Nov 25,5,regular,Round 5,Lauriston,Maccabi,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP009061,15 Nov 25,6,regular,Round 6,Maccabi,BLTC Blue,1,9,2,7,,,28,58,Completed,
+AP009063,15 Nov 25,6,regular,Round 6,BLTC White,Kooyong,10,0,8,0,,,56,15,Completed,
+AP009064,15 Nov 25,6,regular,Round 6,Glen Huntly,Highmoor Uniting,0,10,1,8,,,38,64,Completed,
+pending-ap009-r6-bye-lauriston,15 Nov 25,6,regular,Round 6,Bye,Lauriston,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009071,22 Nov 25,7,regular,Round 7,Lauriston,BLTC Blue,0,10,0,8,,,28,56,Completed,
+AP009073,22 Nov 25,7,regular,Round 7,Highmoor Uniting,Kooyong,7,3,5,4,,,42,48,Completed,
+AP009074,22 Nov 25,7,regular,Round 7,BLTC White,Glen Huntly,9,1,7,2,,,53,34,Completed,
+pending-ap009-r7-maccabi-bye,22 Nov 25,7,regular,Round 7,Maccabi,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009081,29 Nov 25,8,regular,Round 8,Glen Huntly,Lauriston,1,9,2,7,,,47,61,Completed,
+AP009082,29 Nov 25,8,regular,Round 8,Kooyong,Maccabi,2,8,3,6,,,35,56,Completed,
+AP009083,29 Nov 25,8,regular,Round 8,BLTC White,BLTC Blue,2,8,3,5,,,27,42,Completed,
+pending-ap009-r8-highmoor-uniting-bye,29 Nov 25,8,regular,Round 8,Highmoor Uniting,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009091,06 Dec 25,9,regular,Round 9,Lauriston,Highmoor Uniting,7,3,5,5,,,59,56,Completed,
+pending-ap009-r9-bltc-blue-kooyong,06 Dec 25,9,regular,Round 9,BLTC Blue,Kooyong,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap009-r9-bye-bltc-white,06 Dec 25,9,regular,Round 9,Bye,BLTC White,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap009-r9-maccabi-glen-huntly,06 Dec 25,9,regular,Round 9,Maccabi,Glen Huntly,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP009101,13 Dec 25,10,regular,Round 10,BLTC White,Lauriston,2,8,3,5,,,41,42,Completed,
+AP009102,13 Dec 25,10,regular,Round 10,Highmoor Uniting,Maccabi,2,8,3,5,,,34,48,Completed,
+AP009103,13 Dec 25,10,regular,Round 10,Glen Huntly,BLTC Blue,2,8,2,6,,,33,53,Completed,
+pending-ap009-r10-kooyong-bye,13 Dec 25,10,regular,Round 10,Kooyong,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009111,07 Feb 26,11,regular,Round 11,Lauriston,Kooyong,7,3,4,4,,,39,38,Completed,
+AP009112,07 Feb 26,11,regular,Round 11,Maccabi,BLTC White,7,3,4,4,,,47,41,Completed,
+AP009113,07 Feb 26,11,regular,Round 11,BLTC Blue,Highmoor Uniting,9,1,7,3,,,60,42,Completed,
+pending-ap009-r11-bye-glen-huntly,07 Feb 26,11,regular,Round 11,Bye,Glen Huntly,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009122,14 Feb 26,12,regular,Round 12,BLTC White,Highmoor Uniting,10,0,8,0,,,57,17,Completed,
+AP009123,14 Feb 26,12,regular,Round 12,Glen Huntly,Kooyong,8,2,5,3,,,43,37,Completed,
+AP009124,14 Feb 26,12,regular,Round 12,Maccabi,Lauriston,3,7,5,5,,,53,63,Completed,
+pending-ap009-r12-bye-bltc-blue,14 Feb 26,12,regular,Round 12,Bye,BLTC Blue,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009131,21 Feb 26,13,regular,Round 13,BLTC Blue,Maccabi,8,2,5,3,,,44,33,Completed,
+AP009133,21 Feb 26,13,regular,Round 13,Kooyong,BLTC White,0,10,0,8,,,4,56,Completed,
+AP009134,21 Feb 26,13,regular,Round 13,Highmoor Uniting,Glen Huntly,8,2,5,3,,,49,33,Completed,
+pending-ap009-r13-lauriston-bye,21 Feb 26,13,regular,Round 13,Lauriston,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009143,28 Feb 26,14,regular,Round 14,Kooyong,Highmoor Uniting,0,10,0,8,,,10,56,Completed,
+AP009144,28 Feb 26,14,regular,Round 14,Glen Huntly,BLTC White,1,9,1,7,,,16,55,Completed,
+pending-ap009-r14-bltc-blue-lauriston,28 Feb 26,14,regular,Round 14,BLTC Blue,Lauriston,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+pending-ap009-r14-bye-maccabi,28 Feb 26,14,regular,Round 14,Bye,Maccabi,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009301,,16,semi_final,Semi-final,BLTC Blue,Maccabi,9,1,7,1,,,55,34,Completed,
+AP009302,,16,semi_final,Semi-final,Lauriston,BLTC White,2,8,3,6,,,49,53,Completed,
+AP009321,,17,grand_final,Grand final · TROLS entry 2,BLTC Blue,BLTC White,8.5,1.5,5,1,,,41,25,Completed,

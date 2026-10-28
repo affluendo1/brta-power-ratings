@@ -1,0 +1,205 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP005011,04 Oct 25,1,BLTC Blue,BLTC White,No. 1,Ray Lai,Ted Bitting,Ray Lai,8-5,8,5,1,0,Completed,true,false,false
+AP005011,04 Oct 25,1,BLTC Blue,BLTC White,No. 2,Jackson Trigger,Adam Livermoore,Adam Livermoore,4-8,4,8,0,1,Completed,true,false,false
+AP005011,04 Oct 25,1,BLTC Blue,BLTC White,No. 3,Mathew Mizera,Lucas Sleep,Lucas Sleep,4-8,4,8,0,1,Completed,true,true,false
+AP005011,04 Oct 25,1,BLTC Blue,BLTC White,No. 4,Dean Trigger,Tobias Malone-marty,Tobias Malone-marty,6-8,6,8,0,1,Completed,true,false,false
+AP005013,04 Oct 25,1,Kings Park Blue,Kings Park Red,No. 1,Nathan Broadbent,Dean Metter,Nathan Broadbent,8-6,8,6,1,0,Completed,true,false,false
+AP005013,04 Oct 25,1,Kings Park Blue,Kings Park Red,No. 2,Josh Quigley,Will McLorinan,Josh Quigley,8-4,8,4,1,0,Completed,true,false,false
+AP005013,04 Oct 25,1,Kings Park Blue,Kings Park Red,No. 3,George Georgakas,Tom Dubbeld,Tom Dubbeld,2-8,2,8,0,1,Completed,true,false,false
+AP005013,04 Oct 25,1,Kings Park Blue,Kings Park Red,No. 4,Dom Langdon,Michael Cooper,Dom Langdon,8-3,8,3,1,0,Completed,true,false,false
+AP005014,04 Oct 25,1,Coatesville,Hurlingham Park,No. 1,Michael Burke,Tom McKerrow,Tom McKerrow,3-8,3,8,0,1,Completed,true,false,false
+AP005014,04 Oct 25,1,Coatesville,Hurlingham Park,No. 2,Lachlan Newby,Shannon Keough,Lachlan Newby,8-7,8,7,1,0,Completed,true,false,false
+AP005014,04 Oct 25,1,Coatesville,Hurlingham Park,No. 3,Callum Rankin,Mark Loosschilder,Callum Rankin,8-4,8,4,1,0,Completed,true,false,false
+AP005014,04 Oct 25,1,Coatesville,Hurlingham Park,No. 4,Jack Langdon,Adam Neilands,Adam Neilands,5-8,5,8,0,1,Completed,true,true,false
+AP005021,11 Oct 25,2,Hurlingham Park,BLTC Blue,No. 1,Shannon Keough,Ray Lai,Shannon Keough,8-5,8,5,1,0,Completed,true,false,false
+AP005021,11 Oct 25,2,Hurlingham Park,BLTC Blue,No. 2,Adam Halliwell,Jackson Trigger,Jackson Trigger,0-8,0,8,0,1,Completed,true,false,false
+AP005021,11 Oct 25,2,Hurlingham Park,BLTC Blue,No. 3,Matt Anstee,Kevin Wang,Kevin Wang,0-8,0,8,0,1,Completed,true,false,false
+AP005021,11 Oct 25,2,Hurlingham Park,BLTC Blue,No. 4,Roshen Singh,Sebastian Maddams,Sebastian Maddams,2-8,2,8,0,1,Completed,true,false,false
+AP005022,11 Oct 25,2,BLTC White,Maccabi,No. 1,Adam Livermoore,Luka Federman,Adam Livermoore,8-2,8,2,1,0,Completed,true,false,false
+AP005022,11 Oct 25,2,BLTC White,Maccabi,No. 2,Lucas Sleep,Charlie Landau,Lucas Sleep,8-3,8,3,1,0,Completed,true,false,true
+AP005022,11 Oct 25,2,BLTC White,Maccabi,No. 3,Kabeer Gursahani,Ethan Kleiman,Ethan Kleiman,7-8,7,8,0,1,Completed,true,false,true
+AP005022,11 Oct 25,2,BLTC White,Maccabi,No. 4,Harry Boden Fourie,Stephen Gorenstein,Harry Boden Fourie,8-5,8,5,1,0,Completed,true,false,true
+AP005023,11 Oct 25,2,Mentone,Kings Park Blue,No. 1,Eyal Friedman,Nathan Broadbent,Nathan Broadbent,6-8,6,8,0,1,Completed,true,false,false
+AP005023,11 Oct 25,2,Mentone,Kings Park Blue,No. 2,Paul Huynh,Josh Quigley,Josh Quigley,5-8,5,8,0,1,Completed,true,false,false
+AP005023,11 Oct 25,2,Mentone,Kings Park Blue,No. 3,Michael Lawes,Dom Langdon,Michael Lawes,8-0,8,0,1,0,Completed,true,false,false
+AP005023,11 Oct 25,2,Mentone,Kings Park Blue,No. 4,Alex Cameron,Tom Keenan,Alex Cameron,8-3,8,3,1,0,Completed,true,false,true
+AP005024,11 Oct 25,2,Kings Park Red,Coatesville,No. 1,Dean Metter,Callum Rankin,Dean Metter,8-1,8,1,1,0,Completed,true,false,false
+AP005024,11 Oct 25,2,Kings Park Red,Coatesville,No. 2,Tom Dubbeld,Bradley Larkins,Bradley Larkins,6-8,6,8,0,1,Completed,true,false,false
+AP005024,11 Oct 25,2,Kings Park Red,Coatesville,No. 3,Michael Cooper,Jonathon Bong,Michael Cooper,8-5,8,5,1,0,Completed,true,false,false
+AP005024,11 Oct 25,2,Kings Park Red,Coatesville,No. 4,Ilan Goldsmith,Jack Langdon,Jack Langdon,4-8,4,8,0,1,Completed,true,false,true
+AP005031,18 Oct 25,3,BLTC Blue,Kings Park Red,No. 1,Kevin Wang,Will McLorinan,Kevin Wang,8-0,8,0,1,0,Completed,true,false,false
+AP005031,18 Oct 25,3,BLTC Blue,Kings Park Red,No. 2,Sebastian Maddams,Michael Cooper,Sebastian Maddams,8-7,8,7,1,0,Completed,true,false,false
+AP005031,18 Oct 25,3,BLTC Blue,Kings Park Red,No. 3,Kensei Golec,David Sacho,Kensei Golec,8-6,8,6,1,0,Completed,true,false,false
+AP005031,18 Oct 25,3,BLTC Blue,Kings Park Red,No. 4,Noam Barel,Ilan Goldsmith,Noam Barel,8-1,8,1,1,0,Completed,true,false,false
+AP005032,18 Oct 25,3,Maccabi,Hurlingham Park,No. 1,Damon Flicker,Adam Halliwell,Damon Flicker,8-6,8,6,1,0,Completed,true,false,false
+AP005032,18 Oct 25,3,Maccabi,Hurlingham Park,No. 2,Luka Federman,Adam Neilands,Luka Federman,8-1,8,1,1,0,Completed,true,false,false
+AP005032,18 Oct 25,3,Maccabi,Hurlingham Park,No. 3,Ethan Kleiman,Roshen Singh,Ethan Kleiman,8-7,8,7,1,0,Completed,true,true,false
+AP005032,18 Oct 25,3,Maccabi,Hurlingham Park,No. 4,Blake Golden,Max Loosschilder,Max Loosschilder,2-8,2,8,0,1,Completed,true,true,true
+AP005033,18 Oct 25,3,Kings Park Blue,BLTC White,No. 1,Josh Quigley,Ted Bitting,Ted Bitting,7-8,7,8,0,1,Completed,true,false,false
+AP005033,18 Oct 25,3,Kings Park Blue,BLTC White,No. 2,George Georgakas,Lucas Sleep,Lucas Sleep,3-8,3,8,0,1,Completed,true,false,false
+AP005033,18 Oct 25,3,Kings Park Blue,BLTC White,No. 3,Dom Langdon,Harry Boden Fourie,Dom Langdon,8-6,8,6,1,0,Completed,true,false,false
+AP005033,18 Oct 25,3,Kings Park Blue,BLTC White,No. 4,Nick Richards,Tobias Malone-marty,Nick Richards,8-5,8,5,1,0,Completed,true,true,false
+AP005034,18 Oct 25,3,Coatesville,Mentone,No. 1,Lachlan Newby,Paul Huynh,Lachlan Newby,8-7,8,7,1,0,Completed,true,false,false
+AP005034,18 Oct 25,3,Coatesville,Mentone,No. 2,Callum Rankin,Michael Lawes,Michael Lawes,6-8,6,8,0,1,Completed,true,false,false
+AP005034,18 Oct 25,3,Coatesville,Mentone,No. 3,Bradley Larkins,Alberto Polintan,Bradley Larkins,8-5,8,5,1,0,Completed,true,false,false
+AP005034,18 Oct 25,3,Coatesville,Mentone,No. 4,Charlie Garcia,Tom Carroll,Charlie Garcia,8-7,8,7,1,0,Completed,true,true,false
+AP005041,25 Oct 25,4,Mentone,BLTC Blue,No. 1,Michael Lawes,Jackson Trigger,Jackson Trigger,3-8,3,8,0,1,Completed,true,false,false
+AP005041,25 Oct 25,4,Mentone,BLTC Blue,No. 2,Lennox Carroll,Kevin Wang,Kevin Wang,1-8,1,8,0,1,Completed,true,false,false
+AP005041,25 Oct 25,4,Mentone,BLTC Blue,No. 3,Tom Carroll,Sebastian Maddams,Sebastian Maddams,1-8,1,8,0,1,Completed,true,false,false
+AP005041,25 Oct 25,4,Mentone,BLTC Blue,No. 4,Alberto Polintan,Noam Barel,Noam Barel,5-8,5,8,0,1,Completed,true,false,false
+AP005042,25 Oct 25,4,Kings Park Red,Maccabi,No. 1,Dean Metter,Jesse Flicker,Jesse Flicker,2-8,2,8,0,1,Completed,true,false,true
+AP005042,25 Oct 25,4,Kings Park Red,Maccabi,No. 2,Will McLorinan,Marcus Frajman,Will McLorinan,8-3,8,3,1,0,Completed,true,false,false
+AP005042,25 Oct 25,4,Kings Park Red,Maccabi,No. 3,Tom Dubbeld,Luka Federman,Luka Federman,5-8,5,8,0,1,Completed,true,false,false
+AP005042,25 Oct 25,4,Kings Park Red,Maccabi,No. 4,Michael Cooper,Ben Pollak,Michael Cooper,8-7,8,7,1,0,Completed,true,false,true
+AP005043,25 Oct 25,4,Hurlingham Park,Kings Park Blue,No. 1,Adam Halliwell,Josh Quigley,Josh Quigley,5-8,5,8,0,1,Completed,true,false,false
+AP005043,25 Oct 25,4,Hurlingham Park,Kings Park Blue,No. 2,Mark Loosschilder,George Georgakas,Mark Loosschilder,8-1,8,1,1,0,Completed,true,false,false
+AP005043,25 Oct 25,4,Hurlingham Park,Kings Park Blue,No. 3,Roshen Singh,Dom Langdon,Dom Langdon,7-8,7,8,0,1,Completed,true,false,false
+AP005043,25 Oct 25,4,Hurlingham Park,Kings Park Blue,No. 4,Ben Wijay,Mathew Gaal,Mathew Gaal,5-8,5,8,0,1,Completed,true,false,false
+AP005044,25 Oct 25,4,BLTC White,Coatesville,No. 1,Ted Bitting,Michael Burke,Ted Bitting,8-7,8,7,1,0,Completed,true,false,false
+AP005044,25 Oct 25,4,BLTC White,Coatesville,No. 2,Adam Livermoore,Bradley Larkins,Adam Livermoore,8-1,8,1,1,0,Completed,true,false,false
+AP005044,25 Oct 25,4,BLTC White,Coatesville,No. 3,Lucas Sleep,Jack Langdon,Lucas Sleep,8-2,8,2,1,0,Completed,true,false,true
+AP005044,25 Oct 25,4,BLTC White,Coatesville,No. 4,Harry Boden Fourie,Christopher Chia,Harry Boden Fourie,8-0,8,0,1,0,Completed,true,false,true
+AP005061,15 Nov 25,6,Maccabi,Kings Park Blue,No. 1,Ilay Givoni,Nathan Broadbent,Nathan Broadbent,4-8,4,8,0,1,Completed,true,false,false
+AP005061,15 Nov 25,6,Maccabi,Kings Park Blue,No. 2,Saul Muscatel,Josh Quigley,Josh Quigley,6-8,6,8,0,1,Completed,true,false,false
+AP005061,15 Nov 25,6,Maccabi,Kings Park Blue,No. 3,Marcus Frajman,Dom Langdon,Marcus Frajman,8-3,8,3,1,0,Completed,true,false,false
+AP005061,15 Nov 25,6,Maccabi,Kings Park Blue,No. 4,Luka Federman,Mathew Gaal,Luka Federman,8-3,8,3,1,0,Completed,true,false,false
+AP005062,15 Nov 25,6,Coatesville,BLTC Blue,No. 1,Lachlan Newby,Jackson Trigger,Jackson Trigger,3-8,3,8,0,1,Completed,true,false,false
+AP005062,15 Nov 25,6,Coatesville,BLTC Blue,No. 2,Callum Rankin,Noam Barel,Noam Barel,5-8,5,8,0,1,Completed,true,false,false
+AP005062,15 Nov 25,6,Coatesville,BLTC Blue,No. 3,Jonathon Bong,Dean Trigger,Jonathon Bong,8-4,8,4,1,0,Completed,true,false,false
+AP005062,15 Nov 25,6,Coatesville,BLTC Blue,No. 4,Jack Langdon,Samuel Jena,Jack Langdon,8-6,8,6,1,0,Completed,true,true,true
+AP005063,15 Nov 25,6,Kings Park Red,Mentone,No. 1,Will McLorinan,Michael Lawes,Michael Lawes,2-8,2,8,0,1,Completed,true,false,false
+AP005063,15 Nov 25,6,Kings Park Red,Mentone,No. 2,Michael Cooper,Alex Cameron,Alex Cameron,7-8,7,8,0,1,Completed,true,false,false
+AP005063,15 Nov 25,6,Kings Park Red,Mentone,No. 3,David Sacho,Tom Carroll,David Sacho,8-5,8,5,1,0,Completed,true,false,false
+AP005063,15 Nov 25,6,Kings Park Red,Mentone,No. 4,Ilan Goldsmith,Alberto Polintan,Ilan Goldsmith,8-3,8,3,1,0,Completed,true,false,false
+AP005064,15 Nov 25,6,BLTC White,Hurlingham Park,No. 1,Ted Bitting,Mark Loosschilder,Mark Loosschilder,6-8,6,8,0,1,Completed,true,false,false
+AP005064,15 Nov 25,6,BLTC White,Hurlingham Park,No. 2,Adam Livermoore,Adam Neilands,Adam Livermoore,8-5,8,5,1,0,Completed,true,false,false
+AP005064,15 Nov 25,6,BLTC White,Hurlingham Park,No. 3,Harry Boden Fourie,Matt Anstee,Harry Boden Fourie,8-4,8,4,1,0,Completed,true,false,false
+AP005064,15 Nov 25,6,BLTC White,Hurlingham Park,No. 4,Tobias Malone-marty,Roshen Singh,Tobias Malone-marty,8-1,8,1,1,0,Completed,true,false,false
+AP005071,22 Nov 25,7,BLTC Blue,Kings Park Blue,No. 1,Jackson Trigger,Nathan Broadbent,Nathan Broadbent,6-8,6,8,0,1,Completed,true,false,false
+AP005071,22 Nov 25,7,BLTC Blue,Kings Park Blue,No. 2,Sebastian Maddams,Josh Quigley,Sebastian Maddams,8-7,8,7,1,0,Completed,true,false,false
+AP005071,22 Nov 25,7,BLTC Blue,Kings Park Blue,No. 3,Kensei Golec,Dom Langdon,Kensei Golec,8-4,8,4,1,0,Completed,true,false,false
+AP005071,22 Nov 25,7,BLTC Blue,Kings Park Blue,No. 4,Noam Barel,Mathew Gaal,Mathew Gaal,3-8,3,8,0,1,Completed,true,false,false
+AP005072,22 Nov 25,7,Maccabi,Coatesville,No. 1,Ilay Givoni,Michael Burke,Ilay Givoni,8-4,8,4,1,0,Completed,true,false,false
+AP005072,22 Nov 25,7,Maccabi,Coatesville,No. 2,Saul Muscatel,Bradley Larkins,Saul Muscatel,8-1,8,1,1,0,Completed,true,false,false
+AP005072,22 Nov 25,7,Maccabi,Coatesville,No. 3,Marcus Frajman,Jack Langdon,Marcus Frajman,8-1,8,1,1,0,Completed,true,false,true
+AP005072,22 Nov 25,7,Maccabi,Coatesville,No. 4,Luka Federman,Theophilus Prokopiou,Luka Federman,8-3,8,3,1,0,Completed,true,false,true
+AP005073,22 Nov 25,7,Hurlingham Park,Mentone,No. 1,Adam Halliwell,Alex Cameron,Alex Cameron,3-8,3,8,0,1,Completed,true,false,false
+AP005073,22 Nov 25,7,Hurlingham Park,Mentone,No. 2,Mark Loosschilder,Lennox Carroll,Mark Loosschilder,8-6,8,6,1,0,Completed,true,false,false
+AP005073,22 Nov 25,7,Hurlingham Park,Mentone,No. 3,Adam Neilands,Tom Carroll,Adam Neilands,8-4,8,4,1,0,Completed,true,false,false
+AP005073,22 Nov 25,7,Hurlingham Park,Mentone,No. 4,Ben Wijay,Alberto Polintan,Ben Wijay,8-1,8,1,1,0,Completed,true,false,false
+AP005074,22 Nov 25,7,Kings Park Red,BLTC White,No. 1,Dean Metter,Ted Bitting,Dean Metter,8-2,8,2,1,0,Completed,true,false,false
+AP005074,22 Nov 25,7,Kings Park Red,BLTC White,No. 2,Will McLorinan,Adam Livermoore,Adam Livermoore,3-8,3,8,0,1,Completed,true,false,false
+AP005074,22 Nov 25,7,Kings Park Red,BLTC White,No. 3,Michael Cooper,Lucas Sleep,Lucas Sleep,1-8,1,8,0,1,Completed,true,false,false
+AP005074,22 Nov 25,7,Kings Park Red,BLTC White,No. 4,David Sacho,Harry Boden Fourie,David Sacho,8-3,8,3,1,0,Completed,true,false,false
+AP005081,29 Nov 25,8,BLTC White,BLTC Blue,No. 1,Ted Bitting,Kevin Wang,Kevin Wang,5-8,5,8,0,1,Completed,true,false,false
+AP005081,29 Nov 25,8,BLTC White,BLTC Blue,No. 2,Adam Livermoore,Sebastian Maddams,Adam Livermoore,8-7,8,7,1,0,Completed,true,false,false
+AP005081,29 Nov 25,8,BLTC White,BLTC Blue,No. 3,Harry Boden Fourie,Kensei Golec,Harry Boden Fourie,8-5,8,5,1,0,Completed,true,false,false
+AP005081,29 Nov 25,8,BLTC White,BLTC Blue,No. 4,Max Henderson,Noam Barel,Noam Barel,6-8,6,8,0,1,Completed,true,true,false
+AP005082,29 Nov 25,8,Mentone,Maccabi,No. 1,Alex Cameron,Rafael Epstein,Rafael Epstein,3-8,3,8,0,1,Completed,true,false,true
+AP005082,29 Nov 25,8,Mentone,Maccabi,No. 2,Lennox Carroll,Saul Muscatel,Saul Muscatel,4-8,4,8,0,1,Completed,true,false,false
+AP005082,29 Nov 25,8,Mentone,Maccabi,No. 3,Tom Carroll,Luka Federman,Tom Carroll,8-3,8,3,1,0,Completed,true,false,false
+AP005082,29 Nov 25,8,Mentone,Maccabi,No. 4,Alberto Polintan,Nathan Rapoport,Nathan Rapoport,3-8,3,8,0,1,Completed,true,false,true
+AP005083,29 Nov 25,8,Kings Park Red,Kings Park Blue,No. 1,Dean Metter,Nathan Broadbent,Dean Metter,8-6,8,6,1,0,Completed,true,false,false
+AP005083,29 Nov 25,8,Kings Park Red,Kings Park Blue,No. 2,Tom Dubbeld,Josh Quigley,Josh Quigley,6-8,6,8,0,1,Completed,true,false,false
+AP005083,29 Nov 25,8,Kings Park Red,Kings Park Blue,No. 3,David Sacho,Dom Langdon,Dom Langdon,5-8,5,8,0,1,Completed,true,false,false
+AP005083,29 Nov 25,8,Kings Park Red,Kings Park Blue,No. 4,Ilan Goldsmith,Mathew Gaal,Mathew Gaal,3-8,3,8,0,1,Completed,true,false,false
+AP005084,29 Nov 25,8,Hurlingham Park,Coatesville,No. 1,Tom McKerrow,Lachlan Newby,Tom McKerrow,8-2,8,2,1,0,Completed,true,false,false
+AP005084,29 Nov 25,8,Hurlingham Park,Coatesville,No. 2,Shannon Keough,Bradley Larkins,Bradley Larkins,7-8,7,8,0,1,Completed,true,false,false
+AP005084,29 Nov 25,8,Hurlingham Park,Coatesville,No. 3,Mark Loosschilder,Jack Langdon,Mark Loosschilder,8-2,8,2,1,0,Completed,true,false,true
+AP005084,29 Nov 25,8,Hurlingham Park,Coatesville,No. 4,Matt Anstee,Hiren Arunkumar,Matt Anstee,8-0,8,0,1,0,Completed,true,false,true
+AP005094,06 Dec 25,9,Coatesville,Kings Park Red,No. 1,Michael Burke,Will McLorinan,Will McLorinan,5-8,5,8,0,1,Completed,true,false,false
+AP005094,06 Dec 25,9,Coatesville,Kings Park Red,No. 2,Lachlan Newby,Tom Dubbeld,Lachlan Newby,8-1,8,1,1,0,Completed,true,false,false
+AP005094,06 Dec 25,9,Coatesville,Kings Park Red,No. 3,Callum Rankin,Michael Cooper,Michael Cooper,4-8,4,8,0,1,Completed,true,false,false
+AP005094,06 Dec 25,9,Coatesville,Kings Park Red,No. 4,Bradley Larkins,Ilan Goldsmith,Bradley Larkins,8-5,8,5,1,0,Completed,true,false,false
+AP005101,13 Dec 25,10,Kings Park Red,BLTC Blue,No. 1,Will McLorinan,Jackson Trigger,Jackson Trigger,6-8,6,8,0,1,Completed,true,false,false
+AP005101,13 Dec 25,10,Kings Park Red,BLTC Blue,No. 2,Tom Dubbeld,Sebastian Maddams,Tom Dubbeld,8-6,8,6,1,0,Completed,true,false,false
+AP005101,13 Dec 25,10,Kings Park Red,BLTC Blue,No. 3,Michael Cooper,Ray Lai,Michael Cooper,8-0,8,0,1,0,Completed,true,false,false
+AP005101,13 Dec 25,10,Kings Park Red,BLTC Blue,No. 4,Ilan Goldsmith,[Unnamed emergency — TROLS AP005101 away code 4],Ilan Goldsmith,8-0,8,0,1,0,Completed,false,false,true
+AP005102,13 Dec 25,10,Hurlingham Park,Maccabi,No. 1,Shannon Keough,Ilay Givoni,Ilay Givoni,2-8,2,8,0,1,Completed,true,false,false
+AP005102,13 Dec 25,10,Hurlingham Park,Maccabi,No. 2,Mark Loosschilder,Saul Muscatel,Mark Loosschilder,8-5,8,5,1,0,Completed,true,false,false
+AP005102,13 Dec 25,10,Hurlingham Park,Maccabi,No. 3,Matt Anstee,Luka Federman,Luka Federman,5-8,5,8,0,1,Completed,true,false,false
+AP005102,13 Dec 25,10,Hurlingham Park,Maccabi,No. 4,Ben Wijay,Arvid Kreimer,Ben Wijay,8-5,8,5,1,0,Completed,true,false,false
+AP005103,13 Dec 25,10,BLTC White,Kings Park Blue,No. 1,Ted Bitting,Josh Quigley,Josh Quigley,7-8,7,8,0,1,Completed,true,false,false
+AP005103,13 Dec 25,10,BLTC White,Kings Park Blue,No. 2,Adam Livermoore,George Georgakas,Adam Livermoore,8-1,8,1,1,0,Completed,true,false,false
+AP005103,13 Dec 25,10,BLTC White,Kings Park Blue,No. 3,Lucas Sleep,Dom Langdon,Dom Langdon,5-8,5,8,0,1,Completed,true,false,false
+AP005103,13 Dec 25,10,BLTC White,Kings Park Blue,No. 4,Harry Boden Fourie,Mathew Gaal,Harry Boden Fourie,8-7,8,7,1,0,Completed,true,false,false
+AP005104,13 Dec 25,10,Mentone,Coatesville,No. 1,Paul Huynh,Lachlan Newby,Paul Huynh,8-3,8,3,1,0,Completed,true,false,false
+AP005104,13 Dec 25,10,Mentone,Coatesville,No. 2,Michael Lawes,Jack Langdon,Michael Lawes,8-3,8,3,1,0,Completed,true,false,true
+AP005104,13 Dec 25,10,Mentone,Coatesville,No. 3,Alex Cameron,Ben Gouralnik,Alex Cameron,8-7,8,7,1,0,Completed,true,false,true
+AP005104,13 Dec 25,10,Mentone,Coatesville,No. 4,Alberto Polintan,Mark Santagada,Mark Santagada,4-8,4,8,0,1,Completed,true,false,true
+AP005111,07 Feb 26,11,BLTC Blue,Mentone,No. 1,Sebastian Maddams,Paul Huynh,Sebastian Maddams,8-6,8,6,1,0,Completed,true,false,false
+AP005111,07 Feb 26,11,BLTC Blue,Mentone,No. 2,Kensei Golec,Michael Lawes,Kensei Golec,8-6,8,6,1,0,Completed,true,false,false
+AP005111,07 Feb 26,11,BLTC Blue,Mentone,No. 3,Noam Barel,Lennox Carroll,Lennox Carroll,7-8,7,8,0,1,Completed,true,false,false
+AP005111,07 Feb 26,11,BLTC Blue,Mentone,No. 4,Dean Trigger,Tom Carroll,Tom Carroll,7-8,7,8,0,1,Completed,true,false,false
+AP005112,07 Feb 26,11,Maccabi,Kings Park Red,No. 1,Ilay Givoni,Dean Metter,Ilay Givoni,8-7,8,7,1,0,Completed,true,false,false
+AP005112,07 Feb 26,11,Maccabi,Kings Park Red,No. 2,Ryan Sharp,Tom Dubbeld,Ryan Sharp,8-1,8,1,1,0,Completed,true,false,false
+AP005112,07 Feb 26,11,Maccabi,Kings Park Red,No. 3,Marcus Frajman,David Sacho,Marcus Frajman,8-5,8,5,1,0,Completed,true,false,false
+AP005112,07 Feb 26,11,Maccabi,Kings Park Red,No. 4,Arvid Kreimer,Ilan Goldsmith,Arvid Kreimer,8-2,8,2,1,0,Completed,true,false,false
+AP005113,07 Feb 26,11,Kings Park Blue,Hurlingham Park,No. 1,Josh Quigley,Shannon Keough,Shannon Keough,7-8,7,8,0,1,Completed,true,false,false
+AP005113,07 Feb 26,11,Kings Park Blue,Hurlingham Park,No. 2,George Georgakas,Brad Fenech,George Georgakas,8-4,8,4,1,0,Completed,true,false,false
+AP005113,07 Feb 26,11,Kings Park Blue,Hurlingham Park,No. 3,Dom Langdon,Adam Halliwell,Dom Langdon,8-3,8,3,1,0,Completed,true,false,false
+AP005113,07 Feb 26,11,Kings Park Blue,Hurlingham Park,No. 4,Johnson Duong,Adam Neilands,Adam Neilands,7-8,7,8,0,1,Completed,true,false,false
+AP005114,07 Feb 26,11,Coatesville,BLTC White,No. 1,Michael Burke,Ted Bitting,Ted Bitting,7-8,7,8,0,1,Completed,true,false,false
+AP005114,07 Feb 26,11,Coatesville,BLTC White,No. 2,Lachlan Newby,Adam Livermoore,Adam Livermoore,1-8,1,8,0,1,Completed,true,false,false
+AP005114,07 Feb 26,11,Coatesville,BLTC White,No. 3,George Verakis,Kabeer Gursahani,George Verakis,8-2,8,2,1,0,Completed,true,true,false
+AP005114,07 Feb 26,11,Coatesville,BLTC White,No. 4,Ben Gouralnik,Jensen Srisuwan,Ben Gouralnik,8-2,8,2,1,0,Completed,true,true,true
+AP005121,14 Feb 26,12,Coatesville,Kings Park Blue,No. 1,Lachlan Newby,George Georgakas,George Georgakas,4-8,4,8,0,1,Completed,true,false,false
+AP005121,14 Feb 26,12,Coatesville,Kings Park Blue,No. 2,Jonathon Bong,Dom Langdon,Dom Langdon,4-8,4,8,0,1,Completed,true,false,false
+AP005121,14 Feb 26,12,Coatesville,Kings Park Blue,No. 3,Jack Langdon,Johnson Duong,Jack Langdon,8-0,8,0,1,0,Completed,true,true,false
+AP005121,14 Feb 26,12,Coatesville,Kings Park Blue,No. 4,Ben Gouralnik,Nick Richards,Ben Gouralnik,8-3,8,3,1,0,Completed,true,true,true
+AP005122,14 Feb 26,12,Kings Park Red,Hurlingham Park,No. 1,Will McLorinan,Tom McKerrow,Tom McKerrow,7-8,7,8,0,1,Completed,true,false,false
+AP005122,14 Feb 26,12,Kings Park Red,Hurlingham Park,No. 2,Michael Cooper,Adam Neilands,Michael Cooper,8-5,8,5,1,0,Completed,true,false,false
+AP005122,14 Feb 26,12,Kings Park Red,Hurlingham Park,No. 3,David Sacho,Matt Anstee,David Sacho,8-6,8,6,1,0,Completed,true,false,false
+AP005122,14 Feb 26,12,Kings Park Red,Hurlingham Park,No. 4,Ilan Goldsmith,Atef Fakri,Ilan Goldsmith,8-3,8,3,1,0,Completed,true,false,true
+AP005123,14 Feb 26,12,BLTC White,Mentone,No. 1,Ted Bitting,Alex Cameron,Ted Bitting,8-6,8,6,1,0,Completed,true,false,false
+AP005123,14 Feb 26,12,BLTC White,Mentone,No. 2,Adam Livermoore,Lennox Carroll,Adam Livermoore,8-6,8,6,1,0,Completed,true,false,false
+AP005123,14 Feb 26,12,BLTC White,Mentone,No. 3,Lucas Sleep,Tom Carroll,Lucas Sleep,8-2,8,2,1,0,Completed,true,false,false
+AP005123,14 Feb 26,12,BLTC White,Mentone,No. 4,Harry Boden Fourie,Alberto Polintan,Harry Boden Fourie,8-1,8,1,1,0,Completed,true,false,false
+AP005124,14 Feb 26,12,Maccabi,BLTC Blue,No. 1,Damon Flicker,Sebastian Maddams,Sebastian Maddams,6-8,6,8,0,1,Completed,true,false,false
+AP005124,14 Feb 26,12,Maccabi,BLTC Blue,No. 2,Ilay Givoni,Noam Barel,Ilay Givoni,8-6,8,6,1,0,Completed,true,false,false
+AP005124,14 Feb 26,12,Maccabi,BLTC Blue,No. 3,Marcus Frajman,Dean Trigger,Marcus Frajman,8-3,8,3,1,0,Completed,true,false,false
+AP005124,14 Feb 26,12,Maccabi,BLTC Blue,No. 4,Luka Federman,Dean Chalatzoukas,Dean Chalatzoukas,3-8,3,8,0,1,Completed,true,false,true
+AP005131,21 Feb 26,13,Kings Park Blue,Maccabi,No. 1,Nathan Broadbent,Ilay Givoni,Ilay Givoni,0-8,0,8,0,1,Completed,true,false,false
+AP005131,21 Feb 26,13,Kings Park Blue,Maccabi,No. 2,Dom Langdon,Ryan Sharp,Dom Langdon,8-7,8,7,1,0,Completed,true,false,false
+AP005131,21 Feb 26,13,Kings Park Blue,Maccabi,No. 3,Mathew Gaal,Luka Federman,Mathew Gaal,8-2,8,2,1,0,Completed,true,false,false
+AP005131,21 Feb 26,13,Kings Park Blue,Maccabi,No. 4,Thomas Piclin,Arvid Kreimer,Arvid Kreimer,5-8,5,8,0,1,Completed,true,true,false
+AP005132,21 Feb 26,13,BLTC Blue,Coatesville,No. 1,Sebastian Maddams,Lachlan Newby,Sebastian Maddams,8-6,8,6,1,0,Completed,true,false,false
+AP005132,21 Feb 26,13,BLTC Blue,Coatesville,No. 2,Kensei Golec,Callum Rankin,Kensei Golec,8-6,8,6,1,0,Completed,true,false,false
+AP005132,21 Feb 26,13,BLTC Blue,Coatesville,No. 3,Noam Barel,Jack Langdon,Noam Barel,8-3,8,3,1,0,Completed,true,false,true
+AP005132,21 Feb 26,13,BLTC Blue,Coatesville,No. 4,Bashir Riachi,Charlie Garcia,Charlie Garcia,4-8,4,8,0,1,Completed,true,true,true
+AP005133,21 Feb 26,13,Mentone,Kings Park Red,No. 1,Lennox Carroll,Dean Metter,Dean Metter,6-8,6,8,0,1,Completed,true,false,false
+AP005133,21 Feb 26,13,Mentone,Kings Park Red,No. 2,Tom Carroll,Will McLorinan,Will McLorinan,4-8,4,8,0,1,Completed,true,false,false
+AP005133,21 Feb 26,13,Mentone,Kings Park Red,No. 3,Alberto Polintan,Tom Dubbeld,Tom Dubbeld,3-8,3,8,0,1,Completed,true,false,false
+AP005133,21 Feb 26,13,Mentone,Kings Park Red,No. 4,Jitesh Gursahani,Michael Cooper,Michael Cooper,1-8,1,8,0,1,Completed,true,true,false
+AP005134,21 Feb 26,13,Hurlingham Park,BLTC White,No. 1,Tom McKerrow,Adam Livermoore,Tom McKerrow,8-5,8,5,1,0,Completed,true,false,false
+AP005134,21 Feb 26,13,Hurlingham Park,BLTC White,No. 2,Shannon Keough,Lucas Sleep,Lucas Sleep,2-8,2,8,0,1,Completed,true,false,false
+AP005134,21 Feb 26,13,Hurlingham Park,BLTC White,No. 3,Mark Loosschilder,Tobias Malone-marty,Mark Loosschilder,8-7,8,7,1,0,Completed,true,false,false
+AP005134,21 Feb 26,13,Hurlingham Park,BLTC White,No. 4,Roshen Singh,Harry Boden Fourie,Roshen Singh,8-7,8,7,1,0,Completed,true,false,false
+AP005141,28 Feb 26,14,Kings Park Blue,BLTC Blue,No. 1,Nathan Broadbent,Sebastian Maddams,Nathan Broadbent,8-6,8,6,1,0,Completed,true,false,false
+AP005141,28 Feb 26,14,Kings Park Blue,BLTC Blue,No. 2,Henry Hoult,Kensei Golec,Henry Hoult,8-7,8,7,1,0,Completed,true,true,false
+AP005141,28 Feb 26,14,Kings Park Blue,BLTC Blue,No. 3,Dom Langdon,Noam Barel,Noam Barel,7-8,7,8,0,1,Completed,true,false,false
+AP005141,28 Feb 26,14,Kings Park Blue,BLTC Blue,No. 4,Mathew Gaal,Dean Trigger,Mathew Gaal,8-4,8,4,1,0,Completed,true,false,false
+AP005142,28 Feb 26,14,Coatesville,Maccabi,No. 1,Michael Burke,Damon Flicker,Michael Burke,8-5,8,5,1,0,Completed,true,false,false
+AP005142,28 Feb 26,14,Coatesville,Maccabi,No. 2,Lachlan Newby,Saul Muscatel,Lachlan Newby,8-4,8,4,1,0,Completed,true,false,false
+AP005142,28 Feb 26,14,Coatesville,Maccabi,No. 3,Bradley Larkins,Ryan Sharp,Bradley Larkins,8-0,8,0,1,0,Completed,true,false,false
+AP005142,28 Feb 26,14,Coatesville,Maccabi,No. 4,Jack Langdon,Luka Federman,Luka Federman,1-8,1,8,0,1,Completed,true,true,false
+AP005143,28 Feb 26,14,Mentone,Hurlingham Park,No. 1,Michael Lawes,Shannon Keough,Shannon Keough,5-8,5,8,0,1,Completed,true,false,false
+AP005143,28 Feb 26,14,Mentone,Hurlingham Park,No. 2,Lennox Carroll,Adam Halliwell,Lennox Carroll,8-7,8,7,1,0,Completed,true,false,false
+AP005143,28 Feb 26,14,Mentone,Hurlingham Park,No. 3,Alberto Polintan,Mark Loosschilder,Mark Loosschilder,6-8,6,8,0,1,Completed,true,false,false
+AP005143,28 Feb 26,14,Mentone,Hurlingham Park,No. 4,Jitesh Gursahani,Adam Neilands,Adam Neilands,1-8,1,8,0,1,Completed,true,true,false
+AP005144,28 Feb 26,14,BLTC White,Kings Park Red,No. 1,Ted Bitting,Dean Metter,Ted Bitting,8-4,8,4,1,0,Completed,true,false,false
+AP005144,28 Feb 26,14,BLTC White,Kings Park Red,No. 2,Adam Livermoore,Will McLorinan,Adam Livermoore,8-2,8,2,1,0,Completed,true,false,false
+AP005144,28 Feb 26,14,BLTC White,Kings Park Red,No. 3,Tobias Malone-marty,Tom Dubbeld,Tobias Malone-marty,8-5,8,5,1,0,Completed,true,false,false
+AP005144,28 Feb 26,14,BLTC White,Kings Park Red,No. 4,Harry Boden Fourie,David Sacho,Harry Boden Fourie,8-2,8,2,1,0,Completed,true,false,false
+AP005301,,16,BLTC White,Hurlingham Park,No. 1,Ted Bitting,Tom McKerrow,Tom McKerrow,6-8,6,8,0,1,Completed,true,false,false
+AP005301,,16,BLTC White,Hurlingham Park,No. 2,Adam Livermoore,Shannon Keough,Adam Livermoore,8-4,8,4,1,0,Completed,true,false,false
+AP005301,,16,BLTC White,Hurlingham Park,No. 3,Lucas Sleep,Mark Loosschilder,Lucas Sleep,8-6,8,6,1,0,Completed,true,false,false
+AP005301,,16,BLTC White,Hurlingham Park,No. 4,Harry Boden Fourie,Adam Neilands,Adam Neilands,4-8,4,8,0,1,Completed,true,false,false
+AP005302,,16,Kings Park Blue,Maccabi,No. 1,Nathan Broadbent,Ilay Givoni,Nathan Broadbent,8-5,8,5,1,0,Completed,true,false,false
+AP005302,,16,Kings Park Blue,Maccabi,No. 2,George Georgakas,Saul Muscatel,Saul Muscatel,7-8,7,8,0,1,Completed,true,false,false
+AP005302,,16,Kings Park Blue,Maccabi,No. 3,Dom Langdon,Ryan Sharp,Ryan Sharp,4-8,4,8,0,1,Completed,true,false,false
+AP005302,,16,Kings Park Blue,Maccabi,No. 4,Mathew Gaal,Luka Federman,Mathew Gaal,8-4,8,4,1,0,Completed,true,false,false
+AP005321,,17,BLTC White,Kings Park Blue,No. 1,Ted Bitting,Nathan Broadbent,Nathan Broadbent,2-8,2,8,0,1,Completed,true,false,false
+AP005321,,17,BLTC White,Kings Park Blue,No. 2,Adam Livermoore,George Georgakas,Adam Livermoore,8-3,8,3,1,0,Completed,true,false,false
+AP005321,,17,BLTC White,Kings Park Blue,No. 3,Lucas Sleep,Dom Langdon,Lucas Sleep,8-3,8,3,1,0,Completed,true,false,false
+AP005321,,17,BLTC White,Kings Park Blue,No. 4,Harry Boden Fourie,Mathew Gaal,Mathew Gaal,5-8,5,8,0,1,Completed,true,false,false

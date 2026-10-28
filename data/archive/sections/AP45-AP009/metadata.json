@@ -1,0 +1,91 @@
+{
+  "asset_id": "AP45-AP009",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 22/23",
+  "season_id": "AP45",
+  "season_label": "Summer 22/23",
+  "source_section_code": "AP009",
+  "section_label": "Mens S/D 9",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "East Malvern Chris",
+      "wins": 9,
+      "points": 103,
+      "percentage": 152.07,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Monash University",
+      "wins": 10,
+      "points": 100,
+      "percentage": 131.39,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Lauriston",
+      "wins": 7,
+      "points": 76,
+      "percentage": 109.04,
+      "marker": "*"
+    },
+    {
+      "position": 4,
+      "team": "Dendy Park",
+      "wins": 6,
+      "points": 67.5,
+      "percentage": 91.09,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Royal Ave",
+      "wins": 2,
+      "points": 49,
+      "percentage": 70.6,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Clarinda",
+      "wins": 3,
+      "points": 44.5,
+      "percentage": 76.28,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP45-AP009",
+  "fixtures": 46,
+  "completed_fixtures": 40,
+  "draw_fixtures": 57,
+  "singles_rubbers": 160,
+  "doubles_rubbers": 78,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP009023 doubles No. 1: '3-2'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP009023 doubles No. 2: '3-0'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP009142 doubles No. 1: '1-6 6-4'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

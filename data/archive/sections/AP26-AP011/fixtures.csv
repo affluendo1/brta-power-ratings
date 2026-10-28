@@ -1,0 +1,61 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP011011,06 Oct 12,1,regular,Round 1,MCC,Kooyong,10,0,8,0,,,57,15,Completed,
+AP011013,06 Oct 12,1,regular,Round 1,Mt Eliza,Kings Park,10,0,8,0,,,56,16,Completed,
+pending-ap011-r1-clarinda-gphc,06 Oct 12,1,regular,Round 1,Clarinda,GPHC,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap011-r1-dendy-park-bye,06 Oct 12,1,regular,Round 1,Dendy Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP011021,13 Oct 12,2,regular,Round 2,GPHC,MCC,1,9,2,7,,,34,51,Completed,
+AP011022,13 Oct 12,2,regular,Round 2,Kooyong,Dendy Park,8,2,5,3,,,42,32,Completed,
+AP011024,13 Oct 12,2,regular,Round 2,Kings Park,Clarinda,1,9,2,7,,,39,55,Completed,
+pending-ap011-r2-bye-mt-eliza,13 Oct 12,2,regular,Round 2,Bye,Mt Eliza,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP011031,20 Oct 12,3,regular,Round 3,MCC,Kings Park,10,0,8,0,,,56,3,Completed,
+AP011032,20 Oct 12,3,regular,Round 3,Dendy Park,GPHC,10,0,8,0,,,56,12,Completed,
+AP011033,20 Oct 12,3,regular,Round 3,Mt Eliza,Kooyong,1,9,1,7,,,28,54,Completed,
+pending-ap011-r3-clarinda-bye,20 Oct 12,3,regular,Round 3,Clarinda,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP011042,27 Oct 12,4,regular,Round 4,Kings Park,Dendy Park,1,9,1,7,,,28,54,Completed,
+AP011043,27 Oct 12,4,regular,Round 4,GPHC,Mt Eliza,2,8,3,6,,,40,53,Completed,
+AP011044,27 Oct 12,4,regular,Round 4,Kooyong,Clarinda,9,1,6,2,,,51,29,Completed,
+pending-ap011-r4-bye-mcc,27 Oct 12,4,regular,Round 4,Bye,MCC,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP011052,10 Nov 12,5,regular,Round 5,GPHC,Kings Park,10,0,8,1,,,62,21,Completed,
+AP011054,10 Nov 12,5,regular,Round 5,MCC,Dendy Park,9,1,7,1,,,49,20,Completed,
+pending-ap011-r5-bye-kooyong,10 Nov 12,5,regular,Round 5,Bye,Kooyong,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap011-r5-mt-eliza-clarinda,10 Nov 12,5,regular,Round 5,Mt Eliza,Clarinda,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+AP011061,17 Nov 12,6,regular,Round 6,Dendy Park,Mt Eliza,8,2,6,4,,,62,44,Completed,
+AP011062,17 Nov 12,6,regular,Round 6,Clarinda,MCC,1,9,1,7,,,16,54,Completed,
+AP011064,17 Nov 12,6,regular,Round 6,Kooyong,GPHC,7,3,5,4,,,54,45,Completed,
+pending-ap011-r6-kings-park-bye,17 Nov 12,6,regular,Round 6,Kings Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP011071,24 Nov 12,7,regular,Round 7,MCC,Mt Eliza,10,0,8,0,,,56,14,Completed,
+AP011072,24 Nov 12,7,regular,Round 7,Dendy Park,Clarinda,8,2,5,4,,,52,42,Completed,
+AP011074,24 Nov 12,7,regular,Round 7,Kings Park,Kooyong,0,10,0,8,,,18,56,Completed,
+pending-ap011-r7-gphc-bye,24 Nov 12,7,regular,Round 7,GPHC,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP011081,01 Dec 12,8,regular,Round 8,Kooyong,MCC,3,7,4,4,,,36,42,Completed,
+AP011083,01 Dec 12,8,regular,Round 8,Kings Park,Mt Eliza,3,7,4,5,,,47,44,Completed,
+AP011084,01 Dec 12,8,regular,Round 8,GPHC,Clarinda,10,0,8,2,,,60,29,Completed,
+pending-ap011-r8-bye-dendy-park,01 Dec 12,8,regular,Round 8,Bye,Dendy Park,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP011091,08 Dec 12,9,regular,Round 9,MCC,GPHC,1,9,1,7,,,15,51,Completed,
+AP011094,08 Dec 12,9,regular,Round 9,Clarinda,Kings Park,8.5,1.5,6,2,,,47,30,Completed,
+pending-ap011-r9-dendy-park-kooyong,08 Dec 12,9,regular,Round 9,Dendy Park,Kooyong,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+pending-ap011-r9-mt-eliza-bye,08 Dec 12,9,regular,Round 9,Mt Eliza,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP011102,15 Dec 12,10,regular,Round 10,GPHC,Dendy Park,9,1,7,1,,,52,30,Completed,
+AP011103,15 Dec 12,10,regular,Round 10,Kooyong,Mt Eliza,8,2,6,2,,,51,25,Completed,
+pending-ap011-r10-bye-clarinda,15 Dec 12,10,regular,Round 10,Bye,Clarinda,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap011-r10-kings-park-mcc,15 Dec 12,10,regular,Round 10,Kings Park,MCC,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP011112,02 Feb 13,11,regular,Round 11,Dendy Park,Kings Park,8,2,6,3,,,54,40,Completed,
+AP011113,02 Feb 13,11,regular,Round 11,Mt Eliza,GPHC,8,2,5,3,,,42,34,Completed,
+AP011114,02 Feb 13,11,regular,Round 11,Clarinda,Kooyong,1,9,2,7,,,31,57,Completed,
+pending-ap011-r11-mcc-bye,02 Feb 13,11,regular,Round 11,MCC,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP011121,09 Feb 13,12,regular,Round 12,Clarinda,Mt Eliza,2,8,3,5,,,35,43,Completed,
+AP011122,09 Feb 13,12,regular,Round 12,Kings Park,GPHC,2,8,3,6,,,36,46,Completed,
+AP011124,09 Feb 13,12,regular,Round 12,Dendy Park,MCC,0,10,0,8,,,22,56,Completed,
+pending-ap011-r12-kooyong-bye,09 Feb 13,12,regular,Round 12,Kooyong,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP011131,16 Feb 13,13,regular,Round 13,Mt Eliza,Dendy Park,10,0,8,0,,,58,18,Completed,
+AP011132,16 Feb 13,13,regular,Round 13,MCC,Clarinda,10,0,8,0,,,57,13,Completed,
+AP011134,16 Feb 13,13,regular,Round 13,GPHC,Kooyong,8,2,6,3,,,54,51,Completed,
+pending-ap011-r13-bye-kings-park,16 Feb 13,13,regular,Round 13,Bye,Kings Park,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP011141,23 Feb 13,14,regular,Round 14,Mt Eliza,MCC,3,7,4,4,,,35,37,Completed,
+AP011142,23 Feb 13,14,regular,Round 14,Clarinda,Dendy Park,1,9,2,7,,,36,59,Completed,
+AP011144,23 Feb 13,14,regular,Round 14,Kooyong,Kings Park,10,0,8,0,,,56,17,Completed,
+pending-ap011-r14-bye-gphc,23 Feb 13,14,regular,Round 14,Bye,GPHC,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP011301,,16,semi_final,Semi-final,MCC,Kooyong,2,8,3,5,,,39,41,Completed,
+AP011302,,16,semi_final,Semi-final,GPHC,Dendy Park,7,3,5,5,,,46,43,Completed,
+AP011311,,16,semi_final,Semi-final,MCC,GPHC,9,1,5,0,,,44,22,Completed,
+AP011321,,17,grand_final,Grand final · TROLS entry 2,Kooyong,MCC,7.5,2.5,5,3,,,42,45,Completed,

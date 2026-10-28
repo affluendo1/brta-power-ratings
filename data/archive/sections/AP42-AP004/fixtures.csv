@@ -1,0 +1,47 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP004011,01 May 21,1,regular,Round 1,Highmoor Uniting,Parkdale,0,8,0,4,1,8,27,53,Completed,
+AP004012,01 May 21,1,regular,Round 1,Kings Park,Tally Ho,7,1,3,1,6,3,51,38,Completed,
+AP004013,01 May 21,1,regular,Round 1,St Pats Mentone,Black Rock,1,7,1,3,3,6,39,49,Completed,
+AP004021,08 May 21,2,regular,Round 2,Black Rock,Highmoor Uniting,6,2,2,2,4,4,38,32,Completed,
+AP004022,08 May 21,2,regular,Round 2,Tally Ho,St Pats Mentone,2,6,2,2,4,4,32,36,Completed,
+AP004023,08 May 21,2,regular,Round 2,Parkdale,Kings Park,1.5,6.5,1,2,4,6,39,48,Completed,
+AP004031,15 May 21,3,regular,Round 3,Highmoor Uniting,Kings Park,0,8,0,4,0,8,25,49,Completed,
+AP004032,15 May 21,3,regular,Round 3,St Pats Mentone,Parkdale,1,7,1,3,4,6,33,48,Completed,
+AP004033,15 May 21,3,regular,Round 3,Black Rock,Tally Ho,0,8,0,4,1,8,38,55,Completed,
+AP004041,22 May 21,4,regular,Round 4,Tally Ho,Highmoor Uniting,8,0,4,0,8,2,57,35,Completed,
+AP004042,22 May 21,4,regular,Round 4,Parkdale,Black Rock,7,1,3,1,6,3,46,35,Completed,
+AP004043,22 May 21,4,regular,Round 4,Kings Park,St Pats Mentone,8,0,4,0,8,0,50,29,Completed,
+pending-ap004-r5-black-rock-kings-park,29 May 21,5,regular,Round 5,Black Rock,Kings Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap004-r5-highmoor-uniting-st-pats-mentone,29 May 21,5,regular,Round 5,Highmoor Uniting,St Pats Mentone,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap004-r5-tally-ho-parkdale,29 May 21,5,regular,Round 5,Tally Ho,Parkdale,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap004-r6-black-rock-st-pats-mentone,05 Jun 21,6,regular,Round 6,Black Rock,St Pats Mentone,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap004-r6-parkdale-highmoor-uniting,05 Jun 21,6,regular,Round 6,Parkdale,Highmoor Uniting,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap004-r6-tally-ho-kings-park,05 Jun 21,6,regular,Round 6,Tally Ho,Kings Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP004071,19 Jun 21,7,regular,Round 7,Highmoor Uniting,Black Rock,2,6,2,2,4,5,32,50,Completed,
+AP004072,19 Jun 21,7,regular,Round 7,St Pats Mentone,Tally Ho,6,2,2,2,4,4,40,37,Completed,
+AP004073,19 Jun 21,7,regular,Round 7,Kings Park,Parkdale,7,1,3,1,6,3,50,42,Completed,
+AP004081,26 Jun 21,8,regular,Round 8,Kings Park,Highmoor Uniting,8,0,4,0,8,2,56,33,Completed,
+AP004082,26 Jun 21,8,regular,Round 8,Parkdale,St Pats Mentone,2,6,2,2,4,5,38,50,Completed,
+AP004083,26 Jun 21,8,regular,Round 8,Tally Ho,Black Rock,2,6,2,2,4,4,29,38,Completed,
+AP004091,10 Jul 21,9,regular,Round 9,Highmoor Uniting,Tally Ho,7,1,3,1,7,3,56,40,Completed,
+AP004092,10 Jul 21,9,regular,Round 9,Black Rock,Parkdale,1,7,1,3,5,7,53,59,Completed,
+AP004093,10 Jul 21,9,regular,Round 9,St Pats Mentone,Kings Park,1,7,1,3,2,6,35,44,Completed,
+pending-ap004-r10-kings-park-black-rock,17 Jul 21,10,regular,Round 10,Kings Park,Black Rock,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap004-r10-parkdale-tally-ho,17 Jul 21,10,regular,Round 10,Parkdale,Tally Ho,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap004-r10-st-pats-mentone-highmoor-uniting,17 Jul 21,10,regular,Round 10,St Pats Mentone,Highmoor Uniting,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap004-r11-highmoor-uniting-parkdale,24 Jul 21,11,regular,Round 11,Highmoor Uniting,Parkdale,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap004-r11-kings-park-tally-ho,24 Jul 21,11,regular,Round 11,Kings Park,Tally Ho,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap004-r11-st-pats-mentone-black-rock,24 Jul 21,11,regular,Round 11,St Pats Mentone,Black Rock,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP004121,31 Jul 21,12,regular,Round 12,Black Rock,Highmoor Uniting,7,1,3,1,6,2,42,24,Completed,
+AP004122,31 Jul 21,12,regular,Round 12,Tally Ho,St Pats Mentone,6,2,2,2,6,4,58,40,Completed,
+AP004123,31 Jul 21,12,regular,Round 12,Parkdale,Kings Park,8,0,4,0,8,1,52,25,Completed,
+pending-ap004-r13-black-rock-tally-ho,07 Aug 21,13,regular,Round 13,Black Rock,Tally Ho,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap004-r13-highmoor-uniting-kings-park,07 Aug 21,13,regular,Round 13,Highmoor Uniting,Kings Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap004-r13-st-pats-mentone-parkdale,07 Aug 21,13,regular,Round 13,St Pats Mentone,Parkdale,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap004-r14-kings-park-st-pats-mentone,14 Aug 21,14,regular,Round 14,Kings Park,St Pats Mentone,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap004-r14-parkdale-black-rock,14 Aug 21,14,regular,Round 14,Parkdale,Black Rock,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap004-r14-tally-ho-highmoor-uniting,14 Aug 21,14,regular,Round 14,Tally Ho,Highmoor Uniting,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap004-r15-black-rock-kings-park,21 Aug 21,15,regular,Round 15,Black Rock,Kings Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap004-r15-highmoor-uniting-st-pats-mentone,21 Aug 21,15,regular,Round 15,Highmoor Uniting,St Pats Mentone,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap004-r15-tally-ho-parkdale,21 Aug 21,15,regular,Round 15,Tally Ho,Parkdale,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap004-r16-kings-park-parkdale,,16,grand_final,Grand final · TROLS entry 2,Kings Park,Parkdale,,,,,,,,,Missing Result,No individual scorecard / no rubbers recorded

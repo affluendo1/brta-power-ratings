@@ -1,0 +1,100 @@
+{
+  "asset_id": "AP38-AP006",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 18/19",
+  "season_id": "AP38",
+  "season_label": "Summer 18/19",
+  "source_section_code": "AP006",
+  "section_label": "Mixed Rubbers 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Parkdale 1",
+      "wins": 10,
+      "points": 83,
+      "percentage": 159.18,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Overport Park",
+      "wins": 9,
+      "points": 69,
+      "percentage": 128.04,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Elwood",
+      "wins": 8,
+      "points": 56,
+      "percentage": 108.4,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Tally Ho",
+      "wins": 4,
+      "points": 48.5,
+      "percentage": 94.13,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Parkdale 2",
+      "wins": 4,
+      "points": 37,
+      "percentage": 87.42,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "BLTC",
+      "wins": 2,
+      "points": 22,
+      "percentage": 71.13,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Highmoor Uniting RA",
+      "wins": 1,
+      "points": 20.5,
+      "percentage": 71.26,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP38-AP006",
+  "fixtures": 59,
+  "completed_fixtures": 43,
+  "draw_fixtures": 59,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 170,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP006031 doubles No. 3: '6-3 2-0'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP006031 doubles No. 4: '1-6 1-2'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP006111 doubles No. 2: '6-7 4-4'. Missing score not inferred; excluded from ratings and game totals.",
+    "Fixture game totals do not match rubbers for AP006321: TROLS team total 42-35; complete-score total 41-35. Both published records retained."
+  ]
+}

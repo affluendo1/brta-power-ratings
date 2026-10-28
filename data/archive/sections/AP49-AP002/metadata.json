@@ -1,0 +1,109 @@
+{
+  "asset_id": "AP49-AP002",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 24/25",
+  "season_id": "AP49",
+  "season_label": "Summer 24/25",
+  "source_section_code": "AP002",
+  "section_label": "Mens S/D 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Altona Black",
+      "wins": 9,
+      "points": 99.5,
+      "percentage": 142.23,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Carmelite Red",
+      "wins": 7,
+      "points": 92.5,
+      "percentage": 126.32,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Bruce Park Blue",
+      "wins": 7,
+      "points": 79.5,
+      "percentage": 114.58,
+      "marker": "R"
+    },
+    {
+      "position": 4,
+      "team": "Carmelite Green",
+      "wins": 7,
+      "points": 76.5,
+      "percentage": 106.97,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Mt Eliza",
+      "wins": 5,
+      "points": 71.5,
+      "percentage": 108.63,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Dendy Park",
+      "wins": 4,
+      "points": 58.5,
+      "percentage": 86.73,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Langwarrin",
+      "wins": 2,
+      "points": 44,
+      "percentage": 79.59,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "Willy Central",
+      "wins": 3,
+      "points": 38,
+      "percentage": 55.08,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP49-AP002",
+  "fixtures": 59,
+  "completed_fixtures": 52,
+  "draw_fixtures": 48,
+  "singles_rubbers": 203,
+  "doubles_rubbers": 94,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP002014 singles No. 1: '3-4'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP002014 singles No. 4: '3-1'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP002133 singles No. 3: '6-6'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP002144 singles No. 1: '1-4'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP002141 doubles No. 1: '6-3 3-0'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

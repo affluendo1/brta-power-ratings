@@ -1,0 +1,79 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP012012,08 Oct 11,1,Kings Park,Dendy Park,No. 1,Kim Turzi,Kavisha Hersey-Kilner,Kavisha Hersey-Kilner,1-8,1,8,0,1,Completed,true,false,false
+AP012012,08 Oct 11,1,Kings Park,Dendy Park,No. 2,Kate Bellott,Julia Multoff,Julia Multoff,4-8,4,8,0,1,Completed,true,false,false
+AP012012,08 Oct 11,1,Kings Park,Dendy Park,No. 3,Stephanie Turzi,Sommer Jenkins,Sommer Jenkins,5-8,5,8,0,1,Completed,true,false,false
+AP012012,08 Oct 11,1,Kings Park,Dendy Park,No. 4,Montana Muir,Wendy Thompson,Wendy Thompson,3-8,3,8,0,1,Completed,true,false,false
+AP012022,15 Oct 11,2,Dendy Park,GPHC,No. 1,Emma Rooke,Alison Simmons,Alison Simmons,2-8,2,8,0,1,Completed,true,false,false
+AP012022,15 Oct 11,2,Dendy Park,GPHC,No. 2,Jacqueline Kos,Sarah Macmillan,Sarah Macmillan,2-8,2,8,0,1,Completed,true,false,false
+AP012022,15 Oct 11,2,Dendy Park,GPHC,No. 3,Sommer Jenkins,Michelle Grocock,Sommer Jenkins,8-6,8,6,1,0,Completed,true,false,false
+AP012022,15 Oct 11,2,Dendy Park,GPHC,No. 4,Wendy Thompson,Nicola Simmons,Wendy Thompson,8-5,8,5,1,0,Completed,true,false,false
+AP012023,15 Oct 11,2,Dandenong,Kings Park,No. 1,Cornelia Lopaticki,Kim Turzi,Kim Turzi,4-8,4,8,0,1,Completed,true,false,false
+AP012023,15 Oct 11,2,Dandenong,Kings Park,No. 2,Julie Anne Simoni,Kate Bellott,Kate Bellott,4-8,4,8,0,1,Completed,true,false,false
+AP012023,15 Oct 11,2,Dandenong,Kings Park,No. 3,Beth Gubbins,Stephanie Turzi,Beth Gubbins,8-4,8,4,1,0,Completed,true,false,false
+AP012023,15 Oct 11,2,Dandenong,Kings Park,No. 4,Robyn Kent,Montana Muir,Robyn Kent,8-4,8,4,1,0,Completed,true,false,false
+AP012042,05 Nov 11,4,Dandenong,Caulfield Rec,No. 1,Ainsley O'Sullivan,Michelle McKinlay,Michelle McKinlay,1-8,1,8,0,1,Completed,true,false,false
+AP012042,05 Nov 11,4,Dandenong,Caulfield Rec,No. 2,Beth Gubbins,Diane Cotterell,Beth Gubbins,8-4,8,4,1,0,Completed,true,false,false
+AP012042,05 Nov 11,4,Dandenong,Caulfield Rec,No. 3,Robyn Kent,Belinda May,Robyn Kent,9-7,9,7,1,0,Completed,true,false,false
+AP012042,05 Nov 11,4,Dandenong,Caulfield Rec,No. 4,Shivani Ranjanan,Bronwyn Galloway,Shivani Ranjanan,8-5,8,5,1,0,Completed,true,false,false
+AP012043,05 Nov 11,4,Kings Park,GPHC,No. 1,Kim Turzi,Alison Simmons,Alison Simmons,3-8,3,8,0,1,Completed,true,false,false
+AP012043,05 Nov 11,4,Kings Park,GPHC,No. 2,Kate Bellott,Michelle Grocock,Michelle Grocock,3-8,3,8,0,1,Completed,true,false,false
+AP012043,05 Nov 11,4,Kings Park,GPHC,No. 3,Stephanie Turzi,Kate Griffiths,Stephanie Turzi,8-6,8,6,1,0,Completed,true,false,false
+AP012043,05 Nov 11,4,Kings Park,GPHC,No. 4,Montana Muir,Jane Brodie,Jane Brodie,2-8,2,8,0,1,Completed,true,false,false
+AP012053,12 Nov 11,5,Caulfield Rec,Kings Park,No. 1,Kerrin Tulloch,Kim Turzi,Kim Turzi,2-8,2,8,0,1,Completed,true,false,false
+AP012053,12 Nov 11,5,Caulfield Rec,Kings Park,No. 2,Michelle McKinlay,Kate Bellott,Michelle McKinlay,8-1,8,1,1,0,Completed,true,false,false
+AP012053,12 Nov 11,5,Caulfield Rec,Kings Park,No. 3,Diane Cotterell,Stephanie Turzi,Diane Cotterell,8-6,8,6,1,0,Completed,true,false,false
+AP012053,12 Nov 11,5,Caulfield Rec,Kings Park,No. 4,Shannon Hunkin,Montana Muir,Shannon Hunkin,8-3,8,3,1,0,Completed,true,false,false
+AP012082,03 Dec 11,8,Dandenong,GPHC,No. 1,Cornelia Lopaticki,Alison Simmons,Alison Simmons,0-8,0,8,0,1,Completed,true,false,false
+AP012082,03 Dec 11,8,Dandenong,GPHC,No. 2,Ainsley O'Sullivan,Louise Martin,Louise Martin,2-8,2,8,0,1,Completed,true,false,false
+AP012082,03 Dec 11,8,Dandenong,GPHC,No. 3,Julie Anne Simoni,Michelle Grocock,Michelle Grocock,2-8,2,8,0,1,Completed,true,false,false
+AP012082,03 Dec 11,8,Dandenong,GPHC,No. 4,Beth Gubbins,Kate Griffiths,Beth Gubbins,8-4,8,4,1,0,Completed,true,false,false
+AP012083,03 Dec 11,8,Dendy Park,Caulfield Rec,No. 1,Emma Rooke,Kerrin Tulloch,Kerrin Tulloch,4-8,4,8,0,1,Completed,true,false,false
+AP012083,03 Dec 11,8,Dendy Park,Caulfield Rec,No. 2,Jacqueline Kos,Michelle McKinlay,Jacqueline Kos,8-1,8,1,1,0,Completed,true,false,false
+AP012083,03 Dec 11,8,Dendy Park,Caulfield Rec,No. 3,Julia Multoff,Belinda May,Julia Multoff,8-2,8,2,1,0,Completed,true,false,false
+AP012083,03 Dec 11,8,Dendy Park,Caulfield Rec,No. 4,Wendy Thompson,Bronwyn Galloway,Wendy Thompson,8-3,8,3,1,0,Completed,true,false,false
+AP012092,10 Dec 11,9,Caulfield Rec,Dandenong,No. 1,Joyce Rogers,Cornelia Lopaticki,Joyce Rogers,8-0,8,0,1,0,Completed,true,false,false
+AP012092,10 Dec 11,9,Caulfield Rec,Dandenong,No. 2,Shannon Hunkin,Julie Anne Simoni,Shannon Hunkin,8-5,8,5,1,0,Completed,true,false,false
+AP012092,10 Dec 11,9,Caulfield Rec,Dandenong,No. 3,Michelle McKinlay,Beth Gubbins,Beth Gubbins,0-8,0,8,0,1,Completed,true,false,false
+AP012092,10 Dec 11,9,Caulfield Rec,Dandenong,No. 4,Bronwyn Galloway,Robyn Kent,Robyn Kent,2-8,2,8,0,1,Completed,true,false,false
+AP012093,10 Dec 11,9,GPHC,Kings Park,No. 1,Alison Simmons,Kim Turzi,Alison Simmons,8-1,8,1,1,0,Completed,true,false,false
+AP012093,10 Dec 11,9,GPHC,Kings Park,No. 2,Louise Martin,Kate Bellott,Louise Martin,8-6,8,6,1,0,Completed,true,false,false
+AP012093,10 Dec 11,9,GPHC,Kings Park,No. 3,Nicola Simmons,Stephanie Turzi,Nicola Simmons,8-3,8,3,1,0,Completed,true,false,false
+AP012093,10 Dec 11,9,GPHC,Kings Park,No. 4,Kate Griffiths,Ruby Wardlaw,Ruby Wardlaw,0-8,0,8,0,1,Completed,true,false,false
+AP012103,17 Dec 11,10,Kings Park,Caulfield Rec,No. 1,Kim Turzi,Kerrin Tulloch,Kerrin Tulloch,6-8,6,8,0,1,Completed,true,false,false
+AP012103,17 Dec 11,10,Kings Park,Caulfield Rec,No. 2,Kate Bellott,Shannon Hunkin,Kate Bellott,8-5,8,5,1,0,Completed,true,false,false
+AP012103,17 Dec 11,10,Kings Park,Caulfield Rec,No. 3,Stephanie Turzi,Belinda May,Stephanie Turzi,8-0,8,0,1,0,Completed,true,false,false
+AP012103,17 Dec 11,10,Kings Park,Caulfield Rec,No. 4,Montana Muir,Bronwyn Galloway,Bronwyn Galloway,2-8,2,8,0,1,Completed,true,false,false
+AP012112,04 Feb 12,11,Kings Park,Dendy Park,No. 1,Kim Turzi,Emma Rooke,Kim Turzi,9-7,9,7,1,0,Completed,true,false,false
+AP012112,04 Feb 12,11,Kings Park,Dendy Park,No. 2,Stephanie Turzi,Kavisha Hersey-Kilner,Kavisha Hersey-Kilner,3-8,3,8,0,1,Completed,true,false,false
+AP012112,04 Feb 12,11,Kings Park,Dendy Park,No. 3,Montana Muir,Julia Multoff,Julia Multoff,0-8,0,8,0,1,Completed,true,false,false
+AP012112,04 Feb 12,11,Kings Park,Dendy Park,No. 4,Sophie Robertson,Wendy Thompson,Wendy Thompson,1-8,1,8,0,1,Completed,true,false,false
+AP012113,04 Feb 12,11,GPHC,Caulfield Rec,No. 1,Alison Simmons,Kerrin Tulloch,Alison Simmons,8-1,8,1,1,0,Completed,true,false,false
+AP012113,04 Feb 12,11,GPHC,Caulfield Rec,No. 2,Louise Martin,Michelle McKinlay,Michelle McKinlay,1-8,1,8,0,1,Completed,true,false,false
+AP012113,04 Feb 12,11,GPHC,Caulfield Rec,No. 3,Michelle Grocock,Shannon Hunkin,Michelle Grocock,8-6,8,6,1,0,Completed,true,false,false
+AP012113,04 Feb 12,11,GPHC,Caulfield Rec,No. 4,Sasha Kenna,Bronwyn Galloway,Bronwyn Galloway,1-8,1,8,0,1,Completed,true,false,false
+AP012122,11 Feb 12,12,Dendy Park,GPHC,No. 1,Kavisha Hersey-Kilner,Alison Simmons,Alison Simmons,5-8,5,8,0,1,Completed,true,false,false
+AP012122,11 Feb 12,12,Dendy Park,GPHC,No. 2,Sommer Jenkins,Sarah Macmillan,Sommer Jenkins,8-2,8,2,1,0,Completed,true,false,false
+AP012122,11 Feb 12,12,Dendy Park,GPHC,No. 3,Rana Humby,Nicola Simmons,Rana Humby,8-2,8,2,1,0,Completed,true,false,false
+AP012122,11 Feb 12,12,Dendy Park,GPHC,No. 4,Wendy Thompson,Kathryn Considire,Wendy Thompson,8-5,8,5,1,0,Completed,true,false,false
+AP012123,11 Feb 12,12,Dandenong,Kings Park,No. 1,Cornelia Lopaticki,Kim Turzi,Kim Turzi,0-8,0,8,0,1,Completed,true,false,false
+AP012123,11 Feb 12,12,Dandenong,Kings Park,No. 2,Julie Anne Simoni,Stephanie Turzi,Julie Anne Simoni,8-3,8,3,1,0,Completed,true,false,false
+AP012123,11 Feb 12,12,Dandenong,Kings Park,No. 3,Beth Gubbins,Montana Muir,Beth Gubbins,8-1,8,1,1,0,Completed,true,false,false
+AP012123,11 Feb 12,12,Dandenong,Kings Park,No. 4,Robyn Kent,Ally Mobbs,Robyn Kent,8-6,8,6,1,0,Completed,true,false,false
+AP012132,18 Feb 12,13,GPHC,Dandenong,No. 1,Alison Simmons,Cornelia Lopaticki,Alison Simmons,8-0,8,0,1,0,Completed,true,false,false
+AP012132,18 Feb 12,13,GPHC,Dandenong,No. 2,Sarah Macmillan,Caitlyn Illangasinghe,Sarah Macmillan,8-3,8,3,1,0,Completed,true,false,false
+AP012132,18 Feb 12,13,GPHC,Dandenong,No. 3,Kate Griffiths,Ainsley O'Sullivan,Ainsley O'Sullivan,0-8,0,8,0,1,Completed,true,false,false
+AP012132,18 Feb 12,13,GPHC,Dandenong,No. 4,Nicola Simmons,Robyn Kent,Robyn Kent,8-9,8,9,0,1,Completed,true,false,false
+AP012133,18 Feb 12,13,Caulfield Rec,Dendy Park,No. 1,Kerrin Tulloch,Emma Rooke,Kerrin Tulloch,8-6,8,6,1,0,Completed,true,false,false
+AP012133,18 Feb 12,13,Caulfield Rec,Dendy Park,No. 2,Kerry Dundas,Kavisha Hersey-Kilner,Kerry Dundas,9-7,9,7,1,0,Completed,true,false,false
+AP012133,18 Feb 12,13,Caulfield Rec,Dendy Park,No. 3,Shannon Hunkin,Julia Multoff,Julia Multoff,6-8,6,8,0,1,Completed,true,false,false
+AP012133,18 Feb 12,13,Caulfield Rec,Dendy Park,No. 4,Bronwyn Galloway,Sommer Jenkins,Sommer Jenkins,2-8,2,8,0,1,Completed,true,false,false
+AP012143,25 Feb 12,14,Kings Park,GPHC,No. 1,Kim Turzi,Alison Simmons,Alison Simmons,3-6,3,6,0,1,Completed,true,false,false
+AP012143,25 Feb 12,14,Kings Park,GPHC,No. 2,Stephanie Turzi,Sarah Macmillan,Sarah Macmillan,4-6,4,6,0,1,Completed,true,false,false
+AP012143,25 Feb 12,14,Kings Park,GPHC,No. 3,Ally Mobbs,Kate Griffiths,Kate Griffiths,2-6,2,6,0,1,Completed,true,false,false
+AP012311,03 Mar 12,15,Dandenong,GPHC,No. 1,Ainsley O'Sullivan,Alison Simmons,Alison Simmons,1-8,1,8,0,1,Completed,true,false,false
+AP012311,03 Mar 12,15,Dandenong,GPHC,No. 2,Julie Anne Simoni,Sarah Macmillan,Sarah Macmillan,0-8,0,8,0,1,Completed,true,false,false
+AP012311,03 Mar 12,15,Dandenong,GPHC,No. 3,Beth Gubbins,Louise Martin,Louise Martin,3-8,3,8,0,1,Completed,true,false,false
+AP012321,,16,Dendy Park,GPHC,No. 1,Emma Rooke,Alison Simmons,Alison Simmons,3-8,3,8,0,1,Completed,true,false,false
+AP012321,,16,Dendy Park,GPHC,No. 2,Kavisha Hersey-Kilner,Sarah Macmillan,Kavisha Hersey-Kilner,9-8,9,8,1,0,Completed,true,false,false
+AP012321,,16,Dendy Park,GPHC,No. 3,Julia Multoff,Louise Martin,Julia Multoff,9-7,9,7,1,0,Completed,true,false,false
+AP012321,,16,Dendy Park,GPHC,No. 4,Sommer Jenkins,Nicola Simmons,Sommer Jenkins,8-0,8,0,1,0,Completed,true,false,false

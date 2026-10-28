@@ -1,0 +1,103 @@
+{
+  "asset_id": "AP40-AP022",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 19/20",
+  "season_id": "AP40",
+  "season_label": "Summer 19/20",
+  "source_section_code": "AP022",
+  "section_label": "Mens S/D 10",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Ardrie Park",
+      "wins": 10,
+      "points": 104,
+      "percentage": 151.95,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Highmoor Uniting",
+      "wins": 10,
+      "points": 103.5,
+      "percentage": 187.07,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Mentone",
+      "wins": 9,
+      "points": 95,
+      "percentage": 137.18,
+      "marker": "R"
+    },
+    {
+      "position": 4,
+      "team": "Royal South Yarra",
+      "wins": 5,
+      "points": 85,
+      "percentage": 143.72,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Clarinda",
+      "wins": 5,
+      "points": 61.5,
+      "percentage": 87.77,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "East Malvern",
+      "wins": 3,
+      "points": 53,
+      "percentage": 71.34,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Patterson Lakes",
+      "wins": 3,
+      "points": 49,
+      "percentage": 77.08,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "St Pats Mentone",
+      "wins": 0,
+      "points": 9,
+      "percentage": 33.75,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP40-AP022",
+  "fixtures": 59,
+  "completed_fixtures": 48,
+  "draw_fixtures": 48,
+  "singles_rubbers": 186,
+  "doubles_rubbers": 94,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

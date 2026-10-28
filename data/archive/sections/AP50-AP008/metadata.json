@@ -1,0 +1,92 @@
+{
+  "asset_id": "AP50-AP008",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Winter 2025",
+  "season_id": "AP50",
+  "season_label": "Winter 2025",
+  "source_section_code": "AP008",
+  "section_label": "Open S/D 1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Sandringham",
+      "wins": 13,
+      "points": 122,
+      "percentage": 164.41,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "Clarinda",
+      "wins": 11,
+      "points": 111,
+      "percentage": 148.44,
+      "marker": "P"
+    },
+    {
+      "position": 3,
+      "team": "Chadstone",
+      "wins": 7,
+      "points": 74,
+      "percentage": 106.1,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Caulfield Rec",
+      "wins": 6,
+      "points": 57,
+      "percentage": 80.83,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Highmoor Uniting",
+      "wins": 5,
+      "points": 56,
+      "percentage": 79.77,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Mentone",
+      "wins": 1,
+      "points": 30,
+      "percentage": 52.5,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP50-AP008",
+  "fixtures": 46,
+  "completed_fixtures": 44,
+  "draw_fixtures": 57,
+  "singles_rubbers": 174,
+  "doubles_rubbers": 88,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP008031 singles No. 1: '2-3'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP008031 doubles No. 1: '7-6 4-1'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP008143 doubles No. 2: '6-3 6-7'. Missing score not inferred; excluded from ratings and game totals.",
+    "Fixture game totals do not match rubbers for AP008143: TROLS team total 57-38; complete-score total 57-32. Both published records retained."
+  ]
+}

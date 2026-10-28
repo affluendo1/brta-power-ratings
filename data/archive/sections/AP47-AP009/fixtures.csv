@@ -1,0 +1,60 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP009012,07 Oct 23,1,regular,Round 1,Maccabi,Dendy Park,9,1,7,2,,,56,43,Completed,
+AP009013,07 Oct 23,1,regular,Round 1,Clarinda,Carmelite,8,2,6,3,,,52,43,Completed,
+AP009014,07 Oct 23,1,regular,Round 1,Mentone,Caulfield Rec,10,0,8,0,,,56,16,Completed,
+pending-ap009-r1-bye-bltc,07 Oct 23,1,regular,Round 1,Bye,BLTC,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009022,14 Oct 23,2,regular,Round 2,BLTC,Maccabi,2,8,2,6,,,42,45,Completed,
+AP009023,14 Oct 23,2,regular,Round 2,Dendy Park,Clarinda,1,9,1,7,,,25,48,Completed,
+AP009024,14 Oct 23,2,regular,Round 2,Carmelite,Mentone,8,2,6,2,,,48,44,Completed,
+pending-ap009-r2-caulfield-rec-bye,14 Oct 23,2,regular,Round 2,Caulfield Rec,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009032,21 Oct 23,3,regular,Round 3,Maccabi,Caulfield Rec,10,0,8,0,,,56,13,Completed,
+AP009033,21 Oct 23,3,regular,Round 3,Clarinda,BLTC,7,3,5,4,,,50,42,Completed,
+AP009034,21 Oct 23,3,regular,Round 3,Mentone,Dendy Park,2,8,4,6,,,51,55,Completed,
+pending-ap009-r3-bye-carmelite,21 Oct 23,3,regular,Round 3,Bye,Carmelite,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009042,28 Oct 23,4,regular,Round 4,Carmelite,Maccabi,2,8,4,5,,,43,50,Completed,
+AP009043,28 Oct 23,4,regular,Round 4,Caulfield Rec,Clarinda,3,7,4,5,,,42,54,Completed,
+AP009044,28 Oct 23,4,regular,Round 4,BLTC,Mentone,9,1,7,1,,,52,40,Completed,
+pending-ap009-r4-dendy-park-bye,28 Oct 23,4,regular,Round 4,Dendy Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009051,11 Nov 23,5,regular,Round 5,Clarinda,Mentone,1,9,3,7,,,47,67,Completed,
+AP009052,11 Nov 23,5,regular,Round 5,Caulfield Rec,Carmelite,1,9,1,7,,,31,53,Completed,
+AP009053,11 Nov 23,5,regular,Round 5,Dendy Park,BLTC,7,3,5,4,,,52,47,Completed,
+pending-ap009-r5-bye-maccabi,11 Nov 23,5,regular,Round 5,Bye,Maccabi,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009061,18 Nov 23,6,regular,Round 6,Maccabi,Clarinda,8,2,5,3,,,43,31,Completed,
+AP009063,18 Nov 23,6,regular,Round 6,Carmelite,Dendy Park,2,8,2,6,,,36,54,Completed,
+AP009064,18 Nov 23,6,regular,Round 6,BLTC,Caulfield Rec,8,2,6,3,,,55,44,Completed,
+pending-ap009-r6-mentone-bye,18 Nov 23,6,regular,Round 6,Mentone,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009072,25 Nov 23,7,regular,Round 7,Maccabi,Mentone,7,3,5,4,,,51,36,Completed,
+AP009073,25 Nov 23,7,regular,Round 7,Caulfield Rec,Dendy Park,1,9,2,7,,,32,57,Completed,
+AP009074,25 Nov 23,7,regular,Round 7,Carmelite,BLTC,2,8,3,6,,,48,58,Completed,
+pending-ap009-r7-bye-clarinda,25 Nov 23,7,regular,Round 7,Bye,Clarinda,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009083,02 Dec 23,8,regular,Round 8,Carmelite,Clarinda,5,5,0,0,,,0,0,Completed,
+pending-ap009-r8-bltc-bye,02 Dec 23,8,regular,Round 8,BLTC,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap009-r8-caulfield-rec-mentone,02 Dec 23,8,regular,Round 8,Caulfield Rec,Mentone,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap009-r8-dendy-park-maccabi,02 Dec 23,8,regular,Round 8,Dendy Park,Maccabi,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap009-r9-bye-caulfield-rec,09 Dec 23,9,regular,Round 9,Bye,Caulfield Rec,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap009-r9-clarinda-dendy-park,09 Dec 23,9,regular,Round 9,Clarinda,Dendy Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap009-r9-maccabi-bltc,09 Dec 23,9,regular,Round 9,Maccabi,BLTC,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap009-r9-mentone-carmelite,09 Dec 23,9,regular,Round 9,Mentone,Carmelite,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP009102,16 Dec 23,10,regular,Round 10,Caulfield Rec,Maccabi,2,8,3,6,,,32,57,Completed,
+AP009103,16 Dec 23,10,regular,Round 10,BLTC,Clarinda,8,2,5,3,,,49,32,Completed,
+AP009104,16 Dec 23,10,regular,Round 10,Dendy Park,Mentone,9,1,7,1,,,49,22,Completed,
+pending-ap009-r10-carmelite-bye,16 Dec 23,10,regular,Round 10,Carmelite,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009112,03 Feb 24,11,regular,Round 11,Maccabi,Carmelite,3,7,4,5,,,51,41,Completed,
+AP009113,03 Feb 24,11,regular,Round 11,Clarinda,Caulfield Rec,2,8,3,6,,,37,53,Completed,
+AP009114,03 Feb 24,11,regular,Round 11,Mentone,BLTC,2,8,3,5,,,33,44,Completed,
+pending-ap009-r11-bye-dendy-park,03 Feb 24,11,regular,Round 11,Bye,Dendy Park,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009121,10 Feb 24,12,regular,Round 12,Mentone,Clarinda,0,10,0,8,,,20,58,Completed,
+AP009122,10 Feb 24,12,regular,Round 12,Carmelite,Caulfield Rec,9,1,7,1,,,53,26,Completed,
+AP009123,10 Feb 24,12,regular,Round 12,BLTC,Dendy Park,8,2,6,3,,,56,42,Completed,
+pending-ap009-r12-maccabi-bye,10 Feb 24,12,regular,Round 12,Maccabi,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009131,17 Feb 24,13,regular,Round 13,Clarinda,Maccabi,3,7,4,5,,,41,43,Completed,
+AP009133,17 Feb 24,13,regular,Round 13,Dendy Park,Carmelite,3,7,4,4,,,36,44,Completed,
+AP009134,17 Feb 24,13,regular,Round 13,Caulfield Rec,BLTC,2,8,4,6,,,52,57,Completed,
+pending-ap009-r13-bye-mentone,17 Feb 24,13,regular,Round 13,Bye,Mentone,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009142,24 Feb 24,14,regular,Round 14,Mentone,Maccabi,8,2,6,4,,,55,52,Completed,
+AP009144,24 Feb 24,14,regular,Round 14,BLTC,Carmelite,2,8,2,6,,,43,51,Completed,
+pending-ap009-r14-clarinda-bye,24 Feb 24,14,regular,Round 14,Clarinda,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap009-r14-dendy-park-caulfield-rec,24 Feb 24,14,regular,Round 14,Dendy Park,Caulfield Rec,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP009301,,16,semi_final,Semi-final,Maccabi,Carmelite,2,8,3,5,,,45,47,Completed,
+AP009302,,16,semi_final,Semi-final,BLTC,Dendy Park,8,2,6,3,,,52,40,Completed,
+AP009321,,17,grand_final,Grand final · TROLS entry 2,BLTC,Carmelite,9,1,7,1,,,55,37,Completed,

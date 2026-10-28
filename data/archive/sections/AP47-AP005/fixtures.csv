@@ -1,0 +1,60 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP005012,07 Oct 23,1,regular,Round 1,Royal South Yarra Gold,Royal South Yarra Navy,7,3,5,4,,,44,53,Completed,
+AP005013,07 Oct 23,1,regular,Round 1,Carmelite,St Anthony's,8,2,5,4,,,54,40,Completed,
+AP005014,07 Oct 23,1,regular,Round 1,Caulfield Rec,Kings Park Blue,9,1,7,2,,,61,42,Completed,
+pending-ap005-r1-bye-bltc,07 Oct 23,1,regular,Round 1,Bye,BLTC,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP005022,14 Oct 23,2,regular,Round 2,BLTC,Royal South Yarra Gold,1,9,1,7,,,37,54,Completed,
+AP005023,14 Oct 23,2,regular,Round 2,Royal South Yarra Navy,Carmelite,7,3,5,4,,,52,41,Completed,
+AP005024,14 Oct 23,2,regular,Round 2,St Anthony's,Caulfield Rec,9,1,7,3,,,63,53,Completed,
+pending-ap005-r2-kings-park-blue-bye,14 Oct 23,2,regular,Round 2,Kings Park Blue,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP005032,21 Oct 23,3,regular,Round 3,Royal South Yarra Gold,Kings Park Blue,10,0,8,0,,,57,17,Completed,
+AP005033,21 Oct 23,3,regular,Round 3,Carmelite,BLTC,8,2,5,3,,,45,38,Completed,
+AP005034,21 Oct 23,3,regular,Round 3,Caulfield Rec,Royal South Yarra Navy,7,3,5,4,,,49,50,Completed,
+pending-ap005-r3-bye-st-anthony-s,21 Oct 23,3,regular,Round 3,Bye,St Anthony's,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP005042,28 Oct 23,4,regular,Round 4,St Anthony's,Royal South Yarra Gold,8,2,4,4,,,48,44,Completed,
+AP005043,28 Oct 23,4,regular,Round 4,Kings Park Blue,Carmelite,2,8,4,5,,,47,52,Completed,
+AP005044,28 Oct 23,4,regular,Round 4,BLTC,Caulfield Rec,3,7,4,4,,,41,42,Completed,
+pending-ap005-r4-royal-south-yarra-navy-bye,28 Oct 23,4,regular,Round 4,Royal South Yarra Navy,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP005051,11 Nov 23,5,regular,Round 5,Carmelite,Caulfield Rec,8,2,6,3,,,59,48,Completed,
+AP005052,11 Nov 23,5,regular,Round 5,Kings Park Blue,St Anthony's,2,8,3,6,,,39,56,Completed,
+AP005053,11 Nov 23,5,regular,Round 5,Royal South Yarra Navy,BLTC,2,8,3,5,,,35,44,Completed,
+pending-ap005-r5-bye-royal-south-yarra-gold,11 Nov 23,5,regular,Round 5,Bye,Royal South Yarra Gold,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP005061,18 Nov 23,6,regular,Round 6,Royal South Yarra Gold,Carmelite,9,1,7,1,,,50,35,Completed,
+AP005063,18 Nov 23,6,regular,Round 6,St Anthony's,Royal South Yarra Navy,7,3,5,4,,,53,51,Completed,
+AP005064,18 Nov 23,6,regular,Round 6,BLTC,Kings Park Blue,9,1,7,1,,,54,31,Completed,
+pending-ap005-r6-caulfield-rec-bye,18 Nov 23,6,regular,Round 6,Caulfield Rec,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP005072,25 Nov 23,7,regular,Round 7,Royal South Yarra Gold,Caulfield Rec,9,1,7,1,,,56,32,Completed,
+AP005073,25 Nov 23,7,regular,Round 7,Kings Park Blue,Royal South Yarra Navy,1,9,3,7,,,43,65,Completed,
+AP005074,25 Nov 23,7,regular,Round 7,St Anthony's,BLTC,1,9,3,7,,,52,58,Completed,
+pending-ap005-r7-bye-carmelite,25 Nov 23,7,regular,Round 7,Bye,Carmelite,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap005-r8-bltc-bye,02 Dec 23,8,regular,Round 8,BLTC,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap005-r8-kings-park-blue-caulfield-rec,02 Dec 23,8,regular,Round 8,Kings Park Blue,Caulfield Rec,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap005-r8-royal-south-yarra-navy-royal-south-yarra-gold,02 Dec 23,8,regular,Round 8,Royal South Yarra Navy,Royal South Yarra Gold,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap005-r8-st-anthony-s-carmelite,02 Dec 23,8,regular,Round 8,St Anthony's,Carmelite,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap005-r9-bye-kings-park-blue,09 Dec 23,9,regular,Round 9,Bye,Kings Park Blue,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap005-r9-carmelite-royal-south-yarra-navy,09 Dec 23,9,regular,Round 9,Carmelite,Royal South Yarra Navy,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap005-r9-caulfield-rec-st-anthony-s,09 Dec 23,9,regular,Round 9,Caulfield Rec,St Anthony's,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap005-r9-royal-south-yarra-gold-bltc,09 Dec 23,9,regular,Round 9,Royal South Yarra Gold,BLTC,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP005102,16 Dec 23,10,regular,Round 10,Kings Park Blue,Royal South Yarra Gold,0,10,1,8,,,32,63,Completed,
+AP005103,16 Dec 23,10,regular,Round 10,BLTC,Carmelite,9,1,7,1,,,55,32,Completed,
+AP005104,16 Dec 23,10,regular,Round 10,Royal South Yarra Navy,Caulfield Rec,7,3,4,4,,,46,38,Completed,
+pending-ap005-r10-st-anthony-s-bye,16 Dec 23,10,regular,Round 10,St Anthony's,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP005112,03 Feb 24,11,regular,Round 11,Royal South Yarra Gold,St Anthony's,8,2,6,3,,,58,44,Completed,
+AP005113,03 Feb 24,11,regular,Round 11,Carmelite,Kings Park Blue,3,7,4,5,,,47,53,Completed,
+AP005114,03 Feb 24,11,regular,Round 11,Caulfield Rec,BLTC,8,2,6,2,,,49,34,Completed,
+pending-ap005-r11-bye-royal-south-yarra-navy,03 Feb 24,11,regular,Round 11,Bye,Royal South Yarra Navy,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP005121,10 Feb 24,12,regular,Round 12,Caulfield Rec,Carmelite,9,1,7,1,,,51,39,Completed,
+AP005122,10 Feb 24,12,regular,Round 12,St Anthony's,Kings Park Blue,9,1,7,2,,,62,30,Completed,
+AP005123,10 Feb 24,12,regular,Round 12,BLTC,Royal South Yarra Navy,1,9,2,7,,,44,59,Completed,
+pending-ap005-r12-royal-south-yarra-gold-bye,10 Feb 24,12,regular,Round 12,Royal South Yarra Gold,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP005133,17 Feb 24,13,regular,Round 13,Royal South Yarra Navy,St Anthony's,0,10,0,8,,,19,57,Completed,
+AP005134,17 Feb 24,13,regular,Round 13,Kings Park Blue,BLTC,2,8,3,6,,,41,59,Completed,
+pending-ap005-r13-bye-caulfield-rec,17 Feb 24,13,regular,Round 13,Bye,Caulfield Rec,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap005-r13-carmelite-royal-south-yarra-gold,17 Feb 24,13,regular,Round 13,Carmelite,Royal South Yarra Gold,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP005142,24 Feb 24,14,regular,Round 14,Caulfield Rec,Royal South Yarra Gold,3,7,4,4,,,30,37,Completed,
+AP005143,24 Feb 24,14,regular,Round 14,Royal South Yarra Navy,Kings Park Blue,10,0,8,0,,,58,31,Completed,
+AP005144,24 Feb 24,14,regular,Round 14,BLTC,St Anthony's,7,3,5,4,,,48,49,Completed,
+pending-ap005-r14-carmelite-bye,24 Feb 24,14,regular,Round 14,Carmelite,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP005301,,16,semi_final,Semi-final,Royal South Yarra Gold,Royal South Yarra Navy,3,7,4,5,,,44,49,Completed,
+AP005302,,16,semi_final,Semi-final,St Anthony's,BLTC,8,2,6,3,,,55,33,Completed,
+AP005321,,17,grand_final,Grand final · TROLS entry 2,St Anthony's,Royal South Yarra Navy,2,8,4,6,,,43,65,Completed,

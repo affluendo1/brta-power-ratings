@@ -1,0 +1,86 @@
+{
+  "asset_id": "AP37-AP004",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Winter 2018",
+  "season_id": "AP37",
+  "season_label": "Winter 2018",
+  "source_section_code": "AP004",
+  "section_label": "Mens Rubbers 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Centenary Park Blue",
+      "wins": 10,
+      "points": 89,
+      "percentage": 209.7,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Hurlingham Park",
+      "wins": 5,
+      "points": 51,
+      "percentage": 110.58,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Victory Park 1",
+      "wins": 6,
+      "points": 51,
+      "percentage": 104.99,
+      "marker": "R"
+    },
+    {
+      "position": 4,
+      "team": "Centenary Park Red",
+      "wins": 4,
+      "points": 43,
+      "percentage": 97.69,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Victory Park 2",
+      "wins": 0,
+      "points": 6,
+      "percentage": 40.17,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP37-AP004",
+  "fixtures": 47,
+  "completed_fixtures": 30,
+  "draw_fixtures": 57,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 120,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP004011 doubles No. 4: '2-4'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP004013 doubles No. 3: '1-2'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP004013 doubles No. 4: '0-3'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP004142 doubles No. 3: '4-6 1-1'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP004142 doubles No. 4: '3-6 1-4'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP004321 doubles No. 4: '2-6 4-3'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

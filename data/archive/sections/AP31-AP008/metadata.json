@@ -1,0 +1,79 @@
+{
+  "asset_id": "AP31-AP008",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Winter 2015",
+  "season_id": "AP31",
+  "season_label": "Winter 2015",
+  "source_section_code": "AP008",
+  "section_label": "Mixed Rubbers 5",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Glen Huntly",
+      "wins": 8,
+      "points": 73,
+      "percentage": 145.74,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "St Pats Mentone",
+      "wins": 7,
+      "points": 55,
+      "percentage": 101.75,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Ormond",
+      "wins": 6,
+      "points": 53,
+      "percentage": 110.64,
+      "marker": "R"
+    },
+    {
+      "position": 4,
+      "team": "Hawthorn",
+      "wins": 3,
+      "points": 31,
+      "percentage": 77.26,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Kings Park",
+      "wins": 3,
+      "points": 28,
+      "percentage": 80.8,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP31-AP008",
+  "fixtures": 47,
+  "completed_fixtures": 29,
+  "draw_fixtures": 57,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 116,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

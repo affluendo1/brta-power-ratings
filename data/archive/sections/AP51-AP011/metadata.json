@@ -1,0 +1,109 @@
+{
+  "asset_id": "AP51-AP011",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 25/26",
+  "season_id": "AP51",
+  "season_label": "Summer 25/26",
+  "source_section_code": "AP011",
+  "section_label": "Womens S/D 1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "BLTC Blue",
+      "wins": 10,
+      "points": 105,
+      "percentage": 166.02,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Royal South Yarra",
+      "wins": 8,
+      "points": 86,
+      "percentage": 120.5,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "BLTC White",
+      "wins": 7,
+      "points": 82,
+      "percentage": 118.96,
+      "marker": "R"
+    },
+    {
+      "position": 4,
+      "team": "East Malvern",
+      "wins": 7,
+      "points": 78,
+      "percentage": 105.29,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "BLTC Green",
+      "wins": 5,
+      "points": 69,
+      "percentage": 100.94,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Mt Eliza",
+      "wins": 5,
+      "points": 63,
+      "percentage": 89.3,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Overport Park",
+      "wins": 3,
+      "points": 50,
+      "percentage": 80.1,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "Hawthorn",
+      "wins": 1,
+      "points": 26,
+      "percentage": 51.64,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP51-AP011",
+  "fixtures": 59,
+  "completed_fixtures": 52,
+  "draw_fixtures": 59,
+  "singles_rubbers": 201,
+  "doubles_rubbers": 102,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP011093 singles No. 1: '0-1'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP011093 singles No. 2: '0-1'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP011094 doubles No. 1: '1-3'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP011094 doubles No. 2: '2-2'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP011321 doubles No. 1: '3-6 2-2'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

@@ -1,0 +1,61 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP007011,01 May 10,1,regular,Round 1,Lauriston,Oakleigh,1,7,1,3,3,6,39,43,Completed,
+AP007012,01 May 10,1,regular,Round 1,St Andrews MB,Mordialloc,7,1,3,1,6,3,47,32,Completed,
+AP007013,01 May 10,1,regular,Round 1,St Pauls,Kings Park,7,1,3,1,6,2,41,28,Completed,
+pending-ap007-r1-frankston-east-bye,01 May 10,1,regular,Round 1,Frankston East,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007022,08 May 10,2,regular,Round 2,Oakleigh,St Andrews MB,7,1,3,1,6,2,43,26,Completed,
+AP007023,08 May 10,2,regular,Round 2,Mordialloc,St Pauls,1,7,1,3,3,7,42,50,Completed,
+AP007024,08 May 10,2,regular,Round 2,Kings Park,Frankston East,2,6,2,2,5,5,45,51,Completed,
+pending-ap007-r2-bye-lauriston,08 May 10,2,regular,Round 2,Bye,Lauriston,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007031,15 May 10,3,regular,Round 3,Lauriston,Kings Park,7,1,3,1,6,2,42,31,Completed,
+AP007033,15 May 10,3,regular,Round 3,St Pauls,Oakleigh,7,1,3,1,7,2,52,37,Completed,
+AP007034,15 May 10,3,regular,Round 3,Frankston East,Mordialloc,8,0,4,0,8,0,48,12,Completed,
+pending-ap007-r3-st-andrews-mb-bye,15 May 10,3,regular,Round 3,St Andrews MB,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007041,22 May 10,4,regular,Round 4,Mordialloc,Lauriston,1.5,6.5,1,2,3,6,42,55,Completed,
+AP007042,22 May 10,4,regular,Round 4,Kings Park,St Andrews MB,6,2,2,2,5,4,46,37,Completed,
+AP007044,22 May 10,4,regular,Round 4,Oakleigh,Frankston East,2,6,2,2,5,6,49,53,Completed,
+pending-ap007-r4-bye-st-pauls,22 May 10,4,regular,Round 4,Bye,St Pauls,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007051,29 May 10,5,regular,Round 5,St Pauls,Frankston East,5,3,1,3,2,6,37,38,Completed,
+AP007053,29 May 10,5,regular,Round 5,Mordialloc,Oakleigh,7,1,3,1,7,4,59,49,Completed,
+AP007054,29 May 10,5,regular,Round 5,Lauriston,St Andrews MB,8,0,4,0,8,1,53,13,Completed,
+pending-ap007-r5-bye-kings-park,29 May 10,5,regular,Round 5,Bye,Kings Park,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap007-r6-frankston-east-lauriston,05 Jun 10,6,regular,Round 6,Frankston East,Lauriston,,,,,,,,,Missing Result,No individual scorecard / no rubbers recorded
+pending-ap007-r6-kings-park-mordialloc,05 Jun 10,6,regular,Round 6,Kings Park,Mordialloc,,,,,,,,,Missing Result,No individual scorecard / no rubbers recorded
+pending-ap007-r6-oakleigh-bye,05 Jun 10,6,regular,Round 6,Oakleigh,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap007-r6-st-andrews-mb-st-pauls,05 Jun 10,6,regular,Round 6,St Andrews MB,St Pauls,,,,,,,,,Missing Result,No individual scorecard / no rubbers recorded
+AP007071,19 Jun 10,7,regular,Round 7,Lauriston,St Pauls,7,1,3,1,6,3,49,34,Completed,
+AP007072,19 Jun 10,7,regular,Round 7,St Andrews MB,Frankston East,1,7,1,3,2,6,28,42,Completed,
+AP007074,19 Jun 10,7,regular,Round 7,Kings Park,Oakleigh,6,2,2,2,5,4,46,44,Completed,
+pending-ap007-r7-bye-mordialloc,19 Jun 10,7,regular,Round 7,Bye,Mordialloc,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007082,26 Jun 10,8,regular,Round 8,Mordialloc,St Andrews MB,7,1,3,1,6,2,43,25,Completed,
+AP007083,26 Jun 10,8,regular,Round 8,Kings Park,St Pauls,6,2,2,2,4,4,37,35,Completed,
+pending-ap007-r8-bye-frankston-east,26 Jun 10,8,regular,Round 8,Bye,Frankston East,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap007-r8-oakleigh-lauriston,26 Jun 10,8,regular,Round 8,Oakleigh,Lauriston,,,,,,,,,Missing Result,No individual scorecard / no rubbers recorded
+AP007092,03 Jul 10,9,regular,Round 9,St Andrews MB,Oakleigh,1,7,1,3,3,6,38,50,Completed,
+AP007093,03 Jul 10,9,regular,Round 9,St Pauls,Mordialloc,7,1,3,1,7,3,52,35,Completed,
+AP007094,03 Jul 10,9,regular,Round 9,Frankston East,Kings Park,8,0,4,0,8,0,49,23,Completed,
+pending-ap007-r9-lauriston-bye,03 Jul 10,9,regular,Round 9,Lauriston,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007103,10 Jul 10,10,regular,Round 10,Oakleigh,St Pauls,7,1,3,1,7,3,56,39,Completed,
+AP007104,10 Jul 10,10,regular,Round 10,Mordialloc,Frankston East,1,7,1,3,2,7,38,48,Completed,
+pending-ap007-r10-bye-st-andrews-mb,10 Jul 10,10,regular,Round 10,Bye,St Andrews MB,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap007-r10-kings-park-lauriston,10 Jul 10,10,regular,Round 10,Kings Park,Lauriston,,,,,,,,,Missing Result,No individual scorecard / no rubbers recorded
+AP007111,17 Jul 10,11,regular,Round 11,Lauriston,Mordialloc,8,0,4,0,8,1,49,28,Completed,
+AP007112,17 Jul 10,11,regular,Round 11,St Andrews MB,Kings Park,0,8,0,4,2,8,33,57,Completed,
+AP007114,17 Jul 10,11,regular,Round 11,Frankston East,Oakleigh,8,0,4,0,8,2,53,40,Completed,
+pending-ap007-r11-st-pauls-bye,17 Jul 10,11,regular,Round 11,St Pauls,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007123,24 Jul 10,12,regular,Round 12,Oakleigh,Mordialloc,7,1,3,1,6,3,45,30,Completed,
+AP007124,24 Jul 10,12,regular,Round 12,St Andrews MB,Lauriston,1,7,1,3,2,6,28,44,Completed,
+pending-ap007-r12-frankston-east-st-pauls,24 Jul 10,12,regular,Round 12,Frankston East,St Pauls,,,,,,,,,Missing Result,No individual scorecard / no rubbers recorded
+pending-ap007-r12-kings-park-bye,24 Jul 10,12,regular,Round 12,Kings Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007131,31 Jul 10,13,regular,Round 13,St Pauls,St Andrews MB,6,2,2,2,5,5,46,42,Completed,
+AP007132,31 Jul 10,13,regular,Round 13,Lauriston,Frankston East,8,0,4,0,8,1,53,23,Completed,
+AP007133,31 Jul 10,13,regular,Round 13,Mordialloc,Kings Park,6,2,2,2,6,5,52,44,Completed,
+pending-ap007-r13-bye-oakleigh,31 Jul 10,13,regular,Round 13,Bye,Oakleigh,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007141,07 Aug 10,14,regular,Round 14,St Pauls,Lauriston,6,2,2,2,4,4,38,31,Completed,
+AP007142,07 Aug 10,14,regular,Round 14,Frankston East,St Andrews MB,8,0,4,0,8,0,48,14,Completed,
+AP007144,07 Aug 10,14,regular,Round 14,Oakleigh,Kings Park,8,0,4,0,8,1,53,31,Completed,
+pending-ap007-r14-mordialloc-bye,07 Aug 10,14,regular,Round 14,Mordialloc,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007301,,16,semi_final,Semi-final,Frankston East,Lauriston,7,1,2,0,6,1,39,20,Completed,
+AP007302,,16,semi_final,Semi-final,St Pauls,Oakleigh,1,7,1,3,3,6,39,47,Completed,
+pending-ap007-r16-lauriston-oakleigh,,16,semi_final,Semi-final,Lauriston,Oakleigh,,,,,,,,,Scheduled,No individual scorecard / no rubbers recorded
+AP007321,,17,grand_final,Grand final · TROLS entry 2,Frankston East,Oakleigh,7,1,2,0,6,0,37,14,Completed,

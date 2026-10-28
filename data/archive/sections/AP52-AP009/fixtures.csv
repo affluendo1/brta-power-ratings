@@ -1,0 +1,60 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP009012,02 May 26,1,regular,Round 1,Le Page,Mordialloc,2,8,3,6,,,54,54,Completed,
+AP009013,02 May 26,1,regular,Round 1,East Malvern Blue,East Malvern Navy,8,2,5,3,,,42,27,Completed,
+AP009014,02 May 26,1,regular,Round 1,St Louis de Mont Blue,St Louis de Mont Red,1,9,2,7,,,34,57,Completed,
+pending-ap009-r1-mentone-bye,02 May 26,1,regular,Round 1,Mentone,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009021,09 May 26,2,regular,Round 2,St Louis de Mont Red,Mentone,1,9,2,7,,,35,58,Completed,
+AP009023,09 May 26,2,regular,Round 2,Mordialloc,East Malvern Blue,3,7,3,5,,,31,43,Completed,
+pending-ap009-r2-bye-le-page,09 May 26,2,regular,Round 2,Bye,Le Page,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap009-r2-east-malvern-navy-st-louis-de-mont-blue,09 May 26,2,regular,Round 2,East Malvern Navy,St Louis de Mont Blue,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP009031,16 May 26,3,regular,Round 3,Mentone,East Malvern Navy,2,8,3,6,,,45,56,Completed,
+AP009032,16 May 26,3,regular,Round 3,Le Page,St Louis de Mont Red,9,1,7,1,,,51,18,Completed,
+AP009034,16 May 26,3,regular,Round 3,St Louis de Mont Blue,Mordialloc,1,9,2,6,,,31,49,Completed,
+pending-ap009-r3-east-malvern-blue-bye,16 May 26,3,regular,Round 3,East Malvern Blue,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009041,23 May 26,4,regular,Round 4,Mordialloc,Mentone,1,9,3,7,,,52,57,Completed,
+AP009042,23 May 26,4,regular,Round 4,East Malvern Navy,Le Page,7,3,5,5,,,59,55,Completed,
+AP009043,23 May 26,4,regular,Round 4,St Louis de Mont Red,East Malvern Blue,8,2,5,3,,,43,24,Completed,
+pending-ap009-r4-bye-st-louis-de-mont-blue,23 May 26,4,regular,Round 4,Bye,St Louis de Mont Blue,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009051,30 May 26,5,regular,Round 5,East Malvern Blue,St Louis de Mont Blue,10,0,8,1,,,60,15,Completed,
+AP009052,30 May 26,5,regular,Round 5,St Louis de Mont Red,East Malvern Navy,3,7,4,5,,,44,55,Completed,
+AP009054,30 May 26,5,regular,Round 5,Mentone,Le Page,10,0,8,0,,,58,26,Completed,
+pending-ap009-r5-mordialloc-bye,30 May 26,5,regular,Round 5,Mordialloc,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009061,13 Jun 26,6,regular,Round 6,Le Page,East Malvern Blue,2,8,2,6,,,23,48,Completed,
+AP009062,13 Jun 26,6,regular,Round 6,St Louis de Mont Blue,Mentone,1.5,8.5,2,6,,,30,56,Completed,
+AP009063,13 Jun 26,6,regular,Round 6,East Malvern Navy,Mordialloc,7,3,5,4,,,48,43,Completed,
+pending-ap009-r6-bye-st-louis-de-mont-red,13 Jun 26,6,regular,Round 6,Bye,St Louis de Mont Red,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009071,20 Jun 26,7,regular,Round 7,Mentone,East Malvern Blue,2,8,3,5,,,22,49,Completed,
+AP009072,20 Jun 26,7,regular,Round 7,Le Page,St Louis de Mont Blue,9,1,7,1,,,51,25,Completed,
+AP009073,20 Jun 26,7,regular,Round 7,St Louis de Mont Red,Mordialloc,1,9,1,7,,,22,51,Completed,
+pending-ap009-r7-east-malvern-navy-bye,20 Jun 26,7,regular,Round 7,East Malvern Navy,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009082,27 Jun 26,8,regular,Round 8,Mordialloc,Le Page,8,2,6,4,,,59,56,Completed,
+AP009083,27 Jun 26,8,regular,Round 8,East Malvern Navy,East Malvern Blue,7,3,5,4,,,45,37,Completed,
+AP009084,27 Jun 26,8,regular,Round 8,St Louis de Mont Red,St Louis de Mont Blue,1,9,1,7,,,36,55,Completed,
+pending-ap009-r8-bye-mentone,27 Jun 26,8,regular,Round 8,Bye,Mentone,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009091,11 Jul 26,9,regular,Round 9,Mentone,St Louis de Mont Red,9,1,7,2,,,57,34,Completed,
+AP009093,11 Jul 26,9,regular,Round 9,East Malvern Blue,Mordialloc,10,0,8,1,,,64,35,Completed,
+AP009094,11 Jul 26,9,regular,Round 9,St Louis de Mont Blue,East Malvern Navy,1,9,2,7,,,25,58,Completed,
+pending-ap009-r9-le-page-bye,11 Jul 26,9,regular,Round 9,Le Page,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009101,18 Jul 26,10,regular,Round 10,East Malvern Navy,Mentone,9,1,7,2,,,58,36,Completed,
+AP009102,18 Jul 26,10,regular,Round 10,St Louis de Mont Red,Le Page,8,2,6,4,,,60,49,Completed,
+AP009104,18 Jul 26,10,regular,Round 10,Mordialloc,St Louis de Mont Blue,10,0,8,0,,,56,12,Completed,
+pending-ap009-r10-bye-east-malvern-blue,18 Jul 26,10,regular,Round 10,Bye,East Malvern Blue,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009111,25 Jul 26,11,regular,Round 11,Mentone,Mordialloc,8,2,6,3,,,50,44,Completed,
+AP009112,25 Jul 26,11,regular,Round 11,Le Page,East Malvern Navy,1,9,2,7,,,41,60,Completed,
+AP009113,25 Jul 26,11,regular,Round 11,East Malvern Blue,St Louis de Mont Red,9,1,7,1,,,52,19,Completed,
+pending-ap009-r11-st-louis-de-mont-blue-bye,25 Jul 26,11,regular,Round 11,St Louis de Mont Blue,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009121,01 Aug 26,12,regular,Round 12,St Louis de Mont Blue,East Malvern Blue,0,10,0,8,,,18,56,Completed,
+AP009122,01 Aug 26,12,regular,Round 12,East Malvern Navy,St Louis de Mont Red,9,1,7,1,,,50,28,Completed,
+AP009124,01 Aug 26,12,regular,Round 12,Le Page,Mentone,9,1,7,2,,,55,39,Completed,
+pending-ap009-r12-bye-mordialloc,01 Aug 26,12,regular,Round 12,Bye,Mordialloc,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009131,08 Aug 26,13,regular,Round 13,East Malvern Blue,Le Page,0,10,0,8,,,19,56,Completed,
+AP009132,08 Aug 26,13,regular,Round 13,Mentone,St Louis de Mont Blue,10,0,8,0,,,56,24,Completed,
+AP009133,08 Aug 26,13,regular,Round 13,Mordialloc,East Malvern Navy,2,8,2,6,,,32,48,Completed,
+pending-ap009-r13-st-louis-de-mont-red-bye,08 Aug 26,13,regular,Round 13,St Louis de Mont Red,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009141,15 Aug 26,14,regular,Round 14,East Malvern Blue,Mentone,10,0,8,0,,,57,28,Completed,
+AP009142,15 Aug 26,14,regular,Round 14,St Louis de Mont Blue,Le Page,1,9,1,7,,,25,52,Completed,
+AP009143,15 Aug 26,14,regular,Round 14,Mordialloc,St Louis de Mont Red,9,1,7,1,,,52,26,Completed,
+pending-ap009-r14-bye-east-malvern-navy,15 Aug 26,14,regular,Round 14,Bye,East Malvern Navy,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009301,,16,semi_final,Semi-final,East Malvern Navy,Mordialloc,9,1,7,3,,,63,54,Completed,
+AP009302,,16,semi_final,Semi-final,East Malvern Blue,Mentone,9,1,7,2,,,62,34,Completed,
+AP009321,,17,grand_final,Grand final · TROLS entry 2,East Malvern Navy,East Malvern Blue,7,3,5,4,,,49,48,Completed,

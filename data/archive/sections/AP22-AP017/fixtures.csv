@@ -1,0 +1,48 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP017011,02 Oct 10,1,regular,Round 1,Parkdale,Albert Park,6,2,4,4,,,35,29,Completed,
+AP017012,02 Oct 10,1,regular,Round 1,East Malvern 1,Patterson Lakes,8,0,8,2,,,60,42,Completed,
+AP017013,02 Oct 10,1,regular,Round 1,Kooyong,East Malvern 2,7,1,6,2,,,39,24,Completed,
+AP017021,09 Oct 10,2,regular,Round 2,East Malvern 2,Parkdale,1,7,3,6,,,30,42,Completed,
+AP017022,09 Oct 10,2,regular,Round 2,Patterson Lakes,Kooyong,6,2,5,4,,,40,44,Completed,
+AP017023,09 Oct 10,2,regular,Round 2,Albert Park,East Malvern 1,6,2,5,4,,,42,35,Completed,
+AP017031,16 Oct 10,3,regular,Round 3,Parkdale,East Malvern 1,7,1,6,2,,,46,27,Completed,
+AP017032,16 Oct 10,3,regular,Round 3,Kooyong,Albert Park,8,0,8,0,,,48,9,Completed,
+pending-ap017-r3-east-malvern-2-patterson-lakes,16 Oct 10,3,regular,Round 3,East Malvern 2,Patterson Lakes,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+AP017041,23 Oct 10,4,regular,Round 4,Patterson Lakes,Parkdale,2,6,4,4,,,33,38,Completed,
+AP017043,23 Oct 10,4,regular,Round 4,East Malvern 1,Kooyong,0,8,0,8,,,13,49,Completed,
+pending-ap017-r4-albert-park-east-malvern-2,23 Oct 10,4,regular,Round 4,Albert Park,East Malvern 2,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP017051,06 Nov 10,5,regular,Round 5,Parkdale,Kooyong,6,2,5,4,,,44,36,Completed,
+AP017052,06 Nov 10,5,regular,Round 5,Patterson Lakes,Albert Park,7,1,6,2,,,42,23,Completed,
+AP017053,06 Nov 10,5,regular,Round 5,East Malvern 2,East Malvern 1,1,7,3,6,,,38,44,Completed,
+pending-ap017-r6-albert-park-parkdale,13 Nov 10,6,regular,Round 6,Albert Park,Parkdale,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap017-r6-east-malvern-2-kooyong,13 Nov 10,6,regular,Round 6,East Malvern 2,Kooyong,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap017-r6-patterson-lakes-east-malvern-1,13 Nov 10,6,regular,Round 6,Patterson Lakes,East Malvern 1,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP017072,20 Nov 10,7,regular,Round 7,Kooyong,Patterson Lakes,8,0,8,0,,,48,9,Completed,
+AP017073,20 Nov 10,7,regular,Round 7,East Malvern 1,Albert Park,7,1,6,3,,,50,38,Completed,
+pending-ap017-r7-parkdale-east-malvern-2,20 Nov 10,7,regular,Round 7,Parkdale,East Malvern 2,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+pending-ap017-r8-albert-park-kooyong,27 Nov 10,8,regular,Round 8,Albert Park,Kooyong,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap017-r8-east-malvern-1-parkdale,27 Nov 10,8,regular,Round 8,East Malvern 1,Parkdale,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap017-r8-patterson-lakes-east-malvern-2,27 Nov 10,8,regular,Round 8,Patterson Lakes,East Malvern 2,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP017092,04 Dec 10,9,regular,Round 9,East Malvern 2,Albert Park,0,8,0,8,,,18,50,Completed,
+AP017093,04 Dec 10,9,regular,Round 9,Kooyong,East Malvern 1,8,0,8,0,,,48,20,Completed,
+pending-ap017-r9-parkdale-patterson-lakes,04 Dec 10,9,regular,Round 9,Parkdale,Patterson Lakes,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP017101,11 Dec 10,10,regular,Round 10,Kooyong,Parkdale,0,8,1,8,,,29,51,Completed,
+AP017102,11 Dec 10,10,regular,Round 10,Albert Park,Patterson Lakes,1,7,2,6,,,32,45,Completed,
+AP017103,11 Dec 10,10,regular,Round 10,East Malvern 1,East Malvern 2,1,7,2,7,,,33,50,Completed,
+pending-ap017-r11-east-malvern-1-patterson-lakes,05 Feb 11,11,regular,Round 11,East Malvern 1,Patterson Lakes,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap017-r11-kooyong-east-malvern-2,05 Feb 11,11,regular,Round 11,Kooyong,East Malvern 2,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap017-r11-parkdale-albert-park,05 Feb 11,11,regular,Round 11,Parkdale,Albert Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP017121,12 Feb 11,12,regular,Round 12,East Malvern 2,Parkdale,0,8,0,8,,,17,49,Completed,
+AP017122,12 Feb 11,12,regular,Round 12,Patterson Lakes,Kooyong,1,7,2,6,,,24,44,Completed,
+AP017123,12 Feb 11,12,regular,Round 12,Albert Park,East Malvern 1,7,1,7,3,,,57,39,Completed,
+AP017131,19 Feb 11,13,regular,Round 13,Parkdale,East Malvern 1,8,0,8,0,,,48,15,Completed,
+AP017132,19 Feb 11,13,regular,Round 13,Kooyong,Albert Park,8,0,8,0,,,49,18,Completed,
+AP017133,19 Feb 11,13,regular,Round 13,East Malvern 2,Patterson Lakes,1,7,2,7,,,34,52,Completed,
+AP017141,26 Feb 11,14,regular,Round 14,Patterson Lakes,Parkdale,6,2,5,5,,,47,44,Completed,
+AP017143,26 Feb 11,14,regular,Round 14,East Malvern 1,Kooyong,0,8,1,8,,,18,48,Completed,
+pending-ap017-r14-albert-park-east-malvern-2,26 Feb 11,14,regular,Round 14,Albert Park,East Malvern 2,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP017152,05 Mar 11,15,regular,Round 15,Patterson Lakes,Albert Park,2,6,4,5,,,41,49,Completed,
+AP017153,05 Mar 11,15,regular,Round 15,East Malvern 2,East Malvern 1,4,4,4,4,,,39,39,Completed,
+AP017311,05 Mar 11,15,regular,Round 15,Kooyong,Patterson Lakes,7,1,6,0,,,37,17,Completed,
+pending-ap017-r15-parkdale-kooyong,05 Mar 11,15,regular,Round 15,Parkdale,Kooyong,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP017321,,16,grand_final,Grand final · TROLS entry 2,Parkdale,Kooyong,1.5,6.5,3,4,,,23,34,Completed,

@@ -1,0 +1,106 @@
+{
+  "asset_id": "AP32-AP017",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 15/16",
+  "season_id": "AP32",
+  "season_label": "Summer 15/16",
+  "source_section_code": "AP017",
+  "section_label": "Mens S/D 4",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "East Malvern",
+      "wins": 14,
+      "points": 120,
+      "percentage": 163.82,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Ormond",
+      "wins": 7,
+      "points": 82,
+      "percentage": 127.22,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Hawthorn",
+      "wins": 7,
+      "points": 73,
+      "percentage": 99.54,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Fitzroy",
+      "wins": 7,
+      "points": 71,
+      "percentage": 103.63,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Port Melbourne",
+      "wins": 5,
+      "points": 66,
+      "percentage": 92.86,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Old Scotch",
+      "wins": 6,
+      "points": 63,
+      "percentage": 100.0,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Kings Park",
+      "wins": 5,
+      "points": 62,
+      "percentage": 94.79,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "BLTC",
+      "wins": 2,
+      "points": 23,
+      "percentage": 50.61,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP32-AP017",
+  "fixtures": 59,
+  "completed_fixtures": 56,
+  "draw_fixtures": 48,
+  "singles_rubbers": 224,
+  "doubles_rubbers": 110,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP017302 doubles No. 2: '4-3'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP017321 doubles No. 1: '7-5 2-2'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

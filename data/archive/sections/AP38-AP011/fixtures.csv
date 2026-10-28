@@ -1,0 +1,60 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP011012,06 Oct 18,1,regular,Round 1,Melbourne Univ,BLTC,2,8,3,6,,,38,53,Completed,
+AP011013,06 Oct 18,1,regular,Round 1,Mt Eliza,Royal South Yarra,2,8,2,6,,,37,52,Completed,
+AP011014,06 Oct 18,1,regular,Round 1,Kooyong,Hawthorn,10,0,8,0,,,57,29,Completed,
+pending-ap011-r1-dendy-park-liston,06 Oct 18,1,regular,Round 1,Dendy Park,Liston,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP011021,13 Oct 18,2,regular,Round 2,Hawthorn,Dendy Park,2,8,3,6,,,35,54,Completed,
+AP011023,13 Oct 18,2,regular,Round 2,BLTC,Mt Eliza,8,2,5,3,,,46,29,Completed,
+AP011024,13 Oct 18,2,regular,Round 2,Royal South Yarra,Kooyong,1,9,1,7,,,31,51,Completed,
+pending-ap011-r2-liston-melbourne-univ,13 Oct 18,2,regular,Round 2,Liston,Melbourne Univ,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP011032,20 Oct 18,3,regular,Round 3,Melbourne Univ,Hawthorn,5,5,1,1,,,10,10,Completed,
+pending-ap011-r3-dendy-park-royal-south-yarra,20 Oct 18,3,regular,Round 3,Dendy Park,Royal South Yarra,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap011-r3-kooyong-bltc,20 Oct 18,3,regular,Round 3,Kooyong,BLTC,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap011-r3-mt-eliza-liston,20 Oct 18,3,regular,Round 3,Mt Eliza,Liston,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP011041,27 Oct 18,4,regular,Round 4,BLTC,Dendy Park,10,0,8,0,,,56,25,Completed,
+AP011042,27 Oct 18,4,regular,Round 4,Royal South Yarra,Melbourne Univ,9,1,7,2,,,59,42,Completed,
+AP011043,27 Oct 18,4,regular,Round 4,Hawthorn,Mt Eliza,7,3,5,3,,,46,35,Completed,
+AP011044,27 Oct 18,4,regular,Round 4,Liston,Kooyong,2,8,3,6,,,42,51,Completed,
+AP011051,10 Nov 18,5,regular,Round 5,Mt Eliza,Kooyong,2,8,2,6,,,37,52,Completed,
+AP011052,10 Nov 18,5,regular,Round 5,Hawthorn,Royal South Yarra,0,10,0,8,,,25,56,Completed,
+AP011054,10 Nov 18,5,regular,Round 5,Dendy Park,Melbourne Univ,7,3,5,3,,,40,27,Completed,
+pending-ap011-r5-bltc-liston,10 Nov 18,5,regular,Round 5,BLTC,Liston,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP011062,17 Nov 18,6,regular,Round 6,Kooyong,Dendy Park,9,1,7,1,,,54,25,Completed,
+AP011063,17 Nov 18,6,regular,Round 6,Royal South Yarra,BLTC,2,8,3,5,,,38,45,Completed,
+pending-ap011-r6-liston-hawthorn,17 Nov 18,6,regular,Round 6,Liston,Hawthorn,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+pending-ap011-r6-melbourne-univ-mt-eliza,17 Nov 18,6,regular,Round 6,Melbourne Univ,Mt Eliza,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP011071,24 Nov 18,7,regular,Round 7,Dendy Park,Mt Eliza,8,2,5,3,,,45,34,Completed,
+AP011072,24 Nov 18,7,regular,Round 7,Melbourne Univ,Kooyong,0.5,9.5,1,7,,,28,51,Completed,
+AP011073,24 Nov 18,7,regular,Round 7,Hawthorn,BLTC,1,9,2,7,,,29,55,Completed,
+AP011074,24 Nov 18,7,regular,Round 7,Royal South Yarra,Liston,0,10,0,8,,,21,56,Completed,
+AP011082,01 Dec 18,8,regular,Round 8,BLTC,Melbourne Univ,9,1,7,1,,,52,25,Completed,
+AP011083,01 Dec 18,8,regular,Round 8,Royal South Yarra,Mt Eliza,8,2,6,2,,,50,28,Completed,
+AP011084,01 Dec 18,8,regular,Round 8,Hawthorn,Kooyong,2,8,3,6,,,33,53,Completed,
+pending-ap011-r8-liston-dendy-park,01 Dec 18,8,regular,Round 8,Liston,Dendy Park,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+AP011091,08 Dec 18,9,regular,Round 9,Dendy Park,Hawthorn,3,7,4,5,,,38,50,Completed,
+AP011092,08 Dec 18,9,regular,Round 9,Melbourne Univ,Liston,8,2,6,3,,,53,34,Completed,
+AP011093,08 Dec 18,9,regular,Round 9,Mt Eliza,BLTC,0,10,0,8,,,9,56,Completed,
+AP011094,08 Dec 18,9,regular,Round 9,Kooyong,Royal South Yarra,9,1,7,2,,,55,30,Completed,
+AP011101,15 Dec 18,10,regular,Round 10,Royal South Yarra,Dendy Park,10,0,8,0,,,56,13,Completed,
+AP011104,15 Dec 18,10,regular,Round 10,BLTC,Kooyong,9,1,6,2,,,50,35,Completed,
+pending-ap011-r10-hawthorn-melbourne-univ,15 Dec 18,10,regular,Round 10,Hawthorn,Melbourne Univ,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+pending-ap011-r10-liston-mt-eliza,15 Dec 18,10,regular,Round 10,Liston,Mt Eliza,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP011111,02 Feb 19,11,regular,Round 11,Dendy Park,BLTC,1,9,1,7,,,13,53,Completed,
+AP011112,02 Feb 19,11,regular,Round 11,Melbourne Univ,Royal South Yarra,2,8,2,6,,,38,43,Completed,
+AP011113,02 Feb 19,11,regular,Round 11,Mt Eliza,Hawthorn,8,2,5,3,,,44,40,Completed,
+AP011114,02 Feb 19,11,regular,Round 11,Kooyong,Liston,1,9,3,6,,,39,50,Completed,
+AP011124,09 Feb 19,12,regular,Round 12,Melbourne Univ,Dendy Park,8,2,6,3,,,50,37,Completed,
+pending-ap011-r12-kooyong-mt-eliza,09 Feb 19,12,regular,Round 12,Kooyong,Mt Eliza,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap011-r12-liston-bltc,09 Feb 19,12,regular,Round 12,Liston,BLTC,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap011-r12-royal-south-yarra-hawthorn,09 Feb 19,12,regular,Round 12,Royal South Yarra,Hawthorn,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP011131,16 Feb 19,13,regular,Round 13,Mt Eliza,Melbourne Univ,3,7,4,4,,,37,49,Completed,
+AP011132,16 Feb 19,13,regular,Round 13,Dendy Park,Kooyong,8,2,5,3,,,47,34,Completed,
+AP011133,16 Feb 19,13,regular,Round 13,BLTC,Royal South Yarra,10,0,8,0,,,57,23,Completed,
+AP011134,16 Feb 19,13,regular,Round 13,Hawthorn,Liston,0,10,1,8,,,30,62,Completed,
+AP011141,23 Feb 19,14,regular,Round 14,Mt Eliza,Dendy Park,3,7,4,4,,,42,43,Completed,
+AP011144,23 Feb 19,14,regular,Round 14,Liston,Royal South Yarra,9,1,7,1,,,50,29,Completed,
+pending-ap011-r14-bltc-hawthorn,23 Feb 19,14,regular,Round 14,BLTC,Hawthorn,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+pending-ap011-r14-kooyong-melbourne-univ,23 Feb 19,14,regular,Round 14,Kooyong,Melbourne Univ,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+AP011301,,16,semi_final,Semi-final,BLTC,Dendy Park,8.5,1.5,6,1,,,52,32,Completed,
+pending-ap011-r16-kooyong-liston,,16,semi_final,Semi-final,Kooyong,Liston,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP011321,,17,grand_final,Grand final · TROLS entry 2,BLTC,Kooyong,7.5,2.5,5,4,,,55,49,Completed,

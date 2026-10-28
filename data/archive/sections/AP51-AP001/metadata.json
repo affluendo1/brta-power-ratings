@@ -1,0 +1,106 @@
+{
+  "asset_id": "AP51-AP001",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 25/26",
+  "season_id": "AP51",
+  "season_label": "Summer 25/26",
+  "source_section_code": "AP001",
+  "section_label": "Mens S/D 1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "BLTC",
+      "wins": 10,
+      "points": 101,
+      "percentage": 132.24,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Hurlingham Park",
+      "wins": 8,
+      "points": 86,
+      "percentage": 123.15,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Overport Park",
+      "wins": 8,
+      "points": 84,
+      "percentage": 118.83,
+      "marker": "R"
+    },
+    {
+      "position": 4,
+      "team": "Mt Eliza",
+      "wins": 7,
+      "points": 80,
+      "percentage": 118.94,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Altona",
+      "wins": 8,
+      "points": 79,
+      "percentage": 116.93,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Essendon",
+      "wins": 4,
+      "points": 47,
+      "percentage": 73.09,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Carmelite",
+      "wins": 3,
+      "points": 46.5,
+      "percentage": 73.1,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "Dendy Park",
+      "wins": 0,
+      "points": 29.5,
+      "percentage": 61.54,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP51-AP001",
+  "fixtures": 59,
+  "completed_fixtures": 52,
+  "draw_fixtures": 48,
+  "singles_rubbers": 206,
+  "doubles_rubbers": 101,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP001023 singles No. 2: '7-7'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP001301 doubles No. 2: '3-6 6-6'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

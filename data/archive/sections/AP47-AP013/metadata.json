@@ -1,0 +1,95 @@
+{
+  "asset_id": "AP47-AP013",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 23/24",
+  "season_id": "AP47",
+  "season_label": "Summer 23/24",
+  "source_section_code": "AP013",
+  "section_label": "Womens S/D 3",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Royal South Yarra",
+      "wins": 10,
+      "points": 95,
+      "percentage": 156.0,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "East Malvern Stribb",
+      "wins": 9,
+      "points": 81,
+      "percentage": 128.85,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "East Malvern Woods",
+      "wins": 6,
+      "points": 74,
+      "percentage": 115.34,
+      "marker": "R"
+    },
+    {
+      "position": 4,
+      "team": "Tennis World",
+      "wins": 5,
+      "points": 54,
+      "percentage": 91.81,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Mordialloc",
+      "wins": 4,
+      "points": 50,
+      "percentage": 87.89,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Kooyong",
+      "wins": 2,
+      "points": 33,
+      "percentage": 79.41,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "BLTC",
+      "wins": 1,
+      "points": 33,
+      "percentage": 62.23,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP47-AP013",
+  "fixtures": 59,
+  "completed_fixtures": 38,
+  "draw_fixtures": 59,
+  "singles_rubbers": 152,
+  "doubles_rubbers": 76,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

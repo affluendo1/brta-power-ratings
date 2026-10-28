@@ -1,0 +1,60 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP007011,05 Oct 24,1,regular,Round 1,Patterson Lakes,BLTC Blue,9,1,7,1,,,53,22,Completed,
+AP007013,05 Oct 24,1,regular,Round 1,Carmelite Blue,Parkdale,5,5,1,0,,,10,4,Completed,
+AP007014,05 Oct 24,1,regular,Round 1,Sandringham,Coatesville,4,6,2,4,,,35,35,Completed,
+pending-ap007-r1-kooyong-bye,05 Oct 24,1,regular,Round 1,Kooyong,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007021,12 Oct 24,2,regular,Round 2,Coatesville,Patterson Lakes,8,2,6,4,,,60,51,Completed,
+AP007022,12 Oct 24,2,regular,Round 2,BLTC Blue,Kooyong,3,7,4,5,,,43,44,Completed,
+AP007024,12 Oct 24,2,regular,Round 2,Parkdale,Sandringham,3,7,4,5,,,55,53,Completed,
+pending-ap007-r2-bye-carmelite-blue,12 Oct 24,2,regular,Round 2,Bye,Carmelite Blue,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007032,19 Oct 24,3,regular,Round 3,Kooyong,Coatesville,8,2,6,3,,,54,38,Completed,
+AP007033,19 Oct 24,3,regular,Round 3,Carmelite Blue,BLTC Blue,8,2,5,3,,,52,37,Completed,
+pending-ap007-r3-patterson-lakes-parkdale,19 Oct 24,3,regular,Round 3,Patterson Lakes,Parkdale,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap007-r3-sandringham-bye,19 Oct 24,3,regular,Round 3,Sandringham,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007042,26 Oct 24,4,regular,Round 4,Parkdale,Kooyong,5,5,4,4,,,43,43,Completed,
+AP007043,26 Oct 24,4,regular,Round 4,Coatesville,Carmelite Blue,2,8,2,6,,,27,52,Completed,
+AP007044,26 Oct 24,4,regular,Round 4,BLTC Blue,Sandringham,2,8,2,6,,,35,49,Completed,
+pending-ap007-r4-bye-patterson-lakes,26 Oct 24,4,regular,Round 4,Bye,Patterson Lakes,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007051,09 Nov 24,5,regular,Round 5,Carmelite Blue,Sandringham,8,2,5,4,,,57,38,Completed,
+AP007052,09 Nov 24,5,regular,Round 5,Coatesville,Parkdale,2,8,3,6,,,43,51,Completed,
+AP007054,09 Nov 24,5,regular,Round 5,Patterson Lakes,Kooyong,8,2,5,4,,,53,46,Completed,
+pending-ap007-r5-bye-bltc-blue,09 Nov 24,5,regular,Round 5,Bye,BLTC Blue,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007061,16 Nov 24,6,regular,Round 6,Kooyong,Carmelite Blue,1,9,3,7,,,47,59,Completed,
+AP007062,16 Nov 24,6,regular,Round 6,Sandringham,Patterson Lakes,2,8,3,5,,,46,44,Completed,
+AP007064,16 Nov 24,6,regular,Round 6,BLTC Blue,Coatesville,9,1,7,1,,,53,30,Completed,
+pending-ap007-r6-parkdale-bye,16 Nov 24,6,regular,Round 6,Parkdale,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007071,23 Nov 24,7,regular,Round 7,Patterson Lakes,Carmelite Blue,6,4,3,1,,,31,20,Completed,
+AP007072,23 Nov 24,7,regular,Round 7,Kooyong,Sandringham,8.5,1.5,5,1,,,39,26,Completed,
+pending-ap007-r7-coatesville-bye,23 Nov 24,7,regular,Round 7,Coatesville,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap007-r7-parkdale-bltc-blue,23 Nov 24,7,regular,Round 7,Parkdale,BLTC Blue,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap007-r8-bltc-blue-patterson-lakes,30 Nov 24,8,regular,Round 8,BLTC Blue,Patterson Lakes,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap007-r8-bye-kooyong,30 Nov 24,8,regular,Round 8,Bye,Kooyong,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap007-r8-coatesville-sandringham,30 Nov 24,8,regular,Round 8,Coatesville,Sandringham,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap007-r8-parkdale-carmelite-blue,30 Nov 24,8,regular,Round 8,Parkdale,Carmelite Blue,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP007091,07 Dec 24,9,regular,Round 9,Patterson Lakes,Coatesville,10,0,8,0,,,56,16,Completed,
+AP007092,07 Dec 24,9,regular,Round 9,Kooyong,BLTC Blue,3,7,4,5,,,47,51,Completed,
+AP007094,07 Dec 24,9,regular,Round 9,Sandringham,Parkdale,3,7,4,5,,,44,52,Completed,
+pending-ap007-r9-carmelite-blue-bye,07 Dec 24,9,regular,Round 9,Carmelite Blue,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007101,14 Dec 24,10,regular,Round 10,Parkdale,Patterson Lakes,8,2,5,3,,,47,36,Completed,
+AP007102,14 Dec 24,10,regular,Round 10,Coatesville,Kooyong,1,9,1,7,,,17,55,Completed,
+AP007103,14 Dec 24,10,regular,Round 10,BLTC Blue,Carmelite Blue,1,9,3,6,,,48,53,Completed,
+pending-ap007-r10-bye-sandringham,14 Dec 24,10,regular,Round 10,Bye,Sandringham,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007112,01 Feb 25,11,regular,Round 11,Kooyong,Parkdale,8,2,6,3,,,49,42,Completed,
+AP007113,01 Feb 25,11,regular,Round 11,Carmelite Blue,Coatesville,10,0,8,1,,,62,33,Completed,
+AP007114,01 Feb 25,11,regular,Round 11,Sandringham,BLTC Blue,8,2,6,3,,,53,34,Completed,
+pending-ap007-r11-patterson-lakes-bye,01 Feb 25,11,regular,Round 11,Patterson Lakes,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007121,08 Feb 25,12,regular,Round 12,Sandringham,Carmelite Blue,9,1,7,1,,,56,32,Completed,
+AP007122,08 Feb 25,12,regular,Round 12,Parkdale,Coatesville,8,2,5,4,,,49,46,Completed,
+AP007124,08 Feb 25,12,regular,Round 12,Kooyong,Patterson Lakes,9,1,6,2,,,49,25,Completed,
+pending-ap007-r12-bltc-blue-bye,08 Feb 25,12,regular,Round 12,BLTC Blue,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007131,15 Feb 25,13,regular,Round 13,Carmelite Blue,Kooyong,1,9,2,7,,,37,60,Completed,
+AP007134,15 Feb 25,13,regular,Round 13,Coatesville,BLTC Blue,5.5,4.5,2,1,,,19,18,Completed,
+pending-ap007-r13-bye-parkdale,15 Feb 25,13,regular,Round 13,Bye,Parkdale,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap007-r13-patterson-lakes-sandringham,15 Feb 25,13,regular,Round 13,Patterson Lakes,Sandringham,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP007141,22 Feb 25,14,regular,Round 14,Carmelite Blue,Patterson Lakes,2,8,3,5,,,38,44,Completed,
+AP007142,22 Feb 25,14,regular,Round 14,Sandringham,Kooyong,1.5,8.5,2,6,,,44,52,Completed,
+AP007144,22 Feb 25,14,regular,Round 14,BLTC Blue,Parkdale,5,5,0,1,,,5,10,Completed,
+pending-ap007-r14-bye-coatesville,22 Feb 25,14,regular,Round 14,Bye,Coatesville,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007301,,16,semi_final,Semi-final,Kooyong,Parkdale,3,7,4,4,,,39,47,Completed,
+AP007302,,16,semi_final,Semi-final,Carmelite Blue,Patterson Lakes,7,3,5,4,,,51,48,Completed,
+AP007321,,17,grand_final,Grand final · TROLS entry 2,Carmelite Blue,Parkdale,8,2,5,3,,,45,45,Completed,

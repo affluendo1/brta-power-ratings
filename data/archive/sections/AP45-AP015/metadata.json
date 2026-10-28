@@ -1,0 +1,97 @@
+{
+  "asset_id": "AP45-AP015",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 22/23",
+  "season_id": "AP45",
+  "season_label": "Summer 22/23",
+  "source_section_code": "AP015",
+  "section_label": "Mx Rubbers 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "St Pauls",
+      "wins": 8,
+      "points": 70,
+      "percentage": 147.31,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Parkdale Blue",
+      "wins": 7,
+      "points": 57,
+      "percentage": 109.76,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Glen Huntly",
+      "wins": 6,
+      "points": 55,
+      "percentage": 119.3,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Kings Park",
+      "wins": 5,
+      "points": 51,
+      "percentage": 103.84,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Elwood Green",
+      "wins": 5,
+      "points": 48.5,
+      "percentage": 104.03,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Tally Ho",
+      "wins": 4,
+      "points": 46.5,
+      "percentage": 107.29,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Langwarrin",
+      "wins": 0,
+      "points": 8,
+      "percentage": 36.64,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP45-AP015",
+  "fixtures": 59,
+  "completed_fixtures": 37,
+  "draw_fixtures": 59,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 146,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP015144 doubles No. 3: '7-6 1-0'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "asset_id": "AP36-AP006",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 17/18",
+  "season_id": "AP36",
+  "season_label": "Summer 17/18",
+  "source_section_code": "AP006",
+  "section_label": "Mixed Rubbers 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Black Rock",
+      "wins": 11,
+      "points": 84,
+      "percentage": 154.15,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "Tally Ho",
+      "wins": 5,
+      "points": 59,
+      "percentage": 132.8,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Highmoor Uniting LA",
+      "wins": 7,
+      "points": 54,
+      "percentage": 103.36,
+      "marker": "P"
+    },
+    {
+      "position": 4,
+      "team": "Tennis World MP",
+      "wins": 5,
+      "points": 43,
+      "percentage": 94.73,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "St Pats Mentone",
+      "wins": 5,
+      "points": 43,
+      "percentage": 92.24,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "BLTC 1",
+      "wins": 3,
+      "points": 36,
+      "percentage": 90.61,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "BLTC 2",
+      "wins": 1,
+      "points": 17,
+      "percentage": 61.66,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP36-AP006",
+  "fixtures": 60,
+  "completed_fixtures": 43,
+  "draw_fixtures": 60,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 168,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP006063 doubles No. 3: '6-3 1-6 2-1'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP006063 doubles No. 4: '6-7 3-2'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP006301 doubles No. 4: '7-6 4-4'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP006311 doubles No. 3: '1-4'. Missing score not inferred; excluded from ratings and game totals.",
+    "Fixture game totals do not match rubbers for AP006021: TROLS team total 27-51; complete-score total 29-51. Both published records retained."
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "asset_id": "AP29-AP006",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Winter 2014",
+  "season_id": "AP29",
+  "season_label": "Winter 2014",
+  "source_section_code": "AP006",
+  "section_label": "Mixed Rubbers 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Centenary Park",
+      "wins": 9,
+      "points": 73,
+      "percentage": 108.32,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "St Anthony's",
+      "wins": 8,
+      "points": 70.5,
+      "percentage": 126.53,
+      "marker": "P"
+    },
+    {
+      "position": 3,
+      "team": "Parkdale",
+      "wins": 7,
+      "points": 70,
+      "percentage": 117.65,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "St Johns",
+      "wins": 6,
+      "points": 61,
+      "percentage": 95.72,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Kings Park",
+      "wins": 5,
+      "points": 54,
+      "percentage": 99.61,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "St Pats Mentone",
+      "wins": 5,
+      "points": 51.5,
+      "percentage": 101.29,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "East Malvern",
+      "wins": 2,
+      "points": 36.5,
+      "percentage": 87.97,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "Hampton",
+      "wins": 1,
+      "points": 31.5,
+      "percentage": 72.37,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP29-AP006",
+  "fixtures": 60,
+  "completed_fixtures": 58,
+  "draw_fixtures": 60,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 222,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP006011 doubles No. 3: '3-4'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP006012 doubles No. 2: '7-5 4-6'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP006013 doubles No. 1: '2-3'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP006013 doubles No. 2: '4-2'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP006014 doubles No. 3: '6-4 1-6 3-2'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP006034 doubles No. 3: '3-6 6-4'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP006034 doubles No. 4: '5-7 2-3'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP006061 doubles No. 4: '1-2'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP006064 doubles No. 4: '5-7 6-0 1-0'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP006072 doubles No. 3: '2-6 6-1 4-2'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP006114 doubles No. 4: '6-7 6-3 4-3'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP006121 doubles No. 4: '4-6 2-3'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP006122 doubles No. 3: '7-5 3-3'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP006123 doubles No. 3: '3-2'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP006123 doubles No. 4: '2-6 1-2'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP006124 doubles No. 3: '1-0'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP006124 doubles No. 4: '3-1'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP006132 doubles No. 3: '5-7 7-6 4-2'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP006142 doubles No. 4: '3-6 7-6 4-2'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP006311 doubles No. 4: '4-6 6-2'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

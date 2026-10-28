@@ -1,0 +1,89 @@
+{
+  "asset_id": "AP52-AP008",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Winter 2026",
+  "season_id": "AP52",
+  "season_label": "Winter 2026",
+  "source_section_code": "AP008",
+  "section_label": "Open S/D 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Albert Park",
+      "wins": 10,
+      "points": 96,
+      "percentage": 119.02,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Hurlingham Park",
+      "wins": 9,
+      "points": 86,
+      "percentage": 113.95,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Highmoor Uniting",
+      "wins": 9,
+      "points": 85,
+      "percentage": 103.48,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Royal Ave",
+      "wins": 6,
+      "points": 64,
+      "percentage": 88.36,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Mordialloc",
+      "wins": 4,
+      "points": 60,
+      "percentage": 89.0,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Chadstone",
+      "wins": 6,
+      "points": 59,
+      "percentage": 91.5,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP52-AP008",
+  "fixtures": 46,
+  "completed_fixtures": 45,
+  "draw_fixtures": 57,
+  "singles_rubbers": 180,
+  "doubles_rubbers": 90,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP008063 singles No. 4: '3-2'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "asset_id": "AP39-AP010",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Winter 2019",
+  "season_id": "AP39",
+  "season_label": "Winter 2019",
+  "source_section_code": "AP010",
+  "section_label": "Open S/D 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Le Page",
+      "wins": 9,
+      "points": 98,
+      "percentage": 178.86,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Glen Huntly",
+      "wins": 6,
+      "points": 96,
+      "percentage": 187.82,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Mentone",
+      "wins": 6,
+      "points": 87,
+      "percentage": 137.09,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Maccabi",
+      "wins": 7,
+      "points": 87,
+      "percentage": 121.83,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Highmoor Uniting RA",
+      "wins": 3,
+      "points": 64,
+      "percentage": 100.0,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "MCC Glen Iris Roy",
+      "wins": 4,
+      "points": 46,
+      "percentage": 48.5,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "East Malvern",
+      "wins": 0,
+      "points": 45,
+      "percentage": 64.97,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "Ormond CR",
+      "wins": 2,
+      "points": 37,
+      "percentage": 55.46,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP39-AP010",
+  "fixtures": 59,
+  "completed_fixtures": 41,
+  "draw_fixtures": 59,
+  "singles_rubbers": 160,
+  "doubles_rubbers": 80,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

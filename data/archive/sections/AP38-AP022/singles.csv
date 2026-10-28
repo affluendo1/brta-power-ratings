@@ -1,0 +1,217 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP022011,06 Oct 18,1,MCC Glen Iris Roy,Mentone,No. 1,Grant Elmes,Ivan Payung,Grant Elmes,8-1,8,1,1,0,Completed,true,false,false
+AP022011,06 Oct 18,1,MCC Glen Iris Roy,Mentone,No. 2,Tarun Soni,Andrew Fifield,Tarun Soni,8-4,8,4,1,0,Completed,true,false,false
+AP022011,06 Oct 18,1,MCC Glen Iris Roy,Mentone,No. 3,Auke de Vries,Bruce Anderson,Bruce Anderson,6-8,6,8,0,1,Completed,true,false,false
+AP022011,06 Oct 18,1,MCC Glen Iris Roy,Mentone,No. 4,John Gregory,Paolo Friscina,John Gregory,8-5,8,5,1,0,Completed,true,false,false
+AP022012,06 Oct 18,1,East Malvern 1,East Malvern 2,No. 1,Josh Weberruss,Tommy Stevens,Josh Weberruss,8-1,8,1,1,0,Completed,true,false,false
+AP022012,06 Oct 18,1,East Malvern 1,East Malvern 2,No. 2,Tim Davies,Martin Giffard,Martin Giffard,2-8,2,8,0,1,Completed,true,false,false
+AP022012,06 Oct 18,1,East Malvern 1,East Malvern 2,No. 3,Simon Huggard,Stuart Cox,Stuart Cox,1-8,1,8,0,1,Completed,true,false,false
+AP022012,06 Oct 18,1,East Malvern 1,East Malvern 2,No. 4,Lachlan Duckett,Gary Lyons,Lachlan Duckett,8-6,8,6,1,0,Completed,true,false,false
+AP022013,06 Oct 18,1,Maccabi,Ormond CR,No. 1,Nathan Rapoport,Steve Gelagin,Steve Gelagin,1-8,1,8,0,1,Completed,true,false,false
+AP022013,06 Oct 18,1,Maccabi,Ormond CR,No. 2,Joshua Duieb,Brown Chen,Brown Chen,3-8,3,8,0,1,Completed,true,false,false
+AP022013,06 Oct 18,1,Maccabi,Ormond CR,No. 3,Bradley Bergman,Michael Hudson,Michael Hudson,1-8,1,8,0,1,Completed,true,false,false
+AP022013,06 Oct 18,1,Maccabi,Ormond CR,No. 4,Paul Kovacs,Dylan Helm,Paul Kovacs,8-2,8,2,1,0,Completed,true,false,false
+AP022014,06 Oct 18,1,Clarinda,Carmelite,No. 1,Brendan Bayly,Oliver Jenz,Oliver Jenz,3-8,3,8,0,1,Completed,true,false,false
+AP022014,06 Oct 18,1,Clarinda,Carmelite,No. 2,Renn Opt Hoog,Ryan Sweeney,Ryan Sweeney,7-8,7,8,0,1,Completed,true,false,false
+AP022014,06 Oct 18,1,Clarinda,Carmelite,No. 3,Gabriel Young,Xavier Aitken,Gabriel Young,8-0,8,0,1,0,Completed,true,false,false
+AP022014,06 Oct 18,1,Clarinda,Carmelite,No. 4,James Hatzinicolaou,Leon Katelis,Leon Katelis,4-8,4,8,0,1,Completed,true,false,false
+AP022021,13 Oct 18,2,Carmelite,MCC Glen Iris Roy,No. 1,Xavier Aitken,Grant Elmes,Grant Elmes,0-8,0,8,0,1,Completed,true,false,false
+AP022021,13 Oct 18,2,Carmelite,MCC Glen Iris Roy,No. 2,Vincent McDonald,Tarun Soni,Tarun Soni,7-8,7,8,0,1,Completed,true,false,false
+AP022021,13 Oct 18,2,Carmelite,MCC Glen Iris Roy,No. 3,Ryan Sweeney,Cameron Bayre,Cameron Bayre,2-8,2,8,0,1,Completed,true,false,false
+AP022021,13 Oct 18,2,Carmelite,MCC Glen Iris Roy,No. 4,Gus McDonald,John Gregory,Gus McDonald,8-5,8,5,1,0,Completed,true,false,false
+AP022022,13 Oct 18,2,Mentone,East Malvern 1,No. 1,Ivan Payung,Peter Goldberg,Ivan Payung,8-7,8,7,1,0,Completed,true,false,false
+AP022022,13 Oct 18,2,Mentone,East Malvern 1,No. 2,Andrew Fifield,Tim Davies,Andrew Fifield,8-2,8,2,1,0,Completed,true,false,false
+AP022022,13 Oct 18,2,Mentone,East Malvern 1,No. 3,Bruce Anderson,Simon Huggard,Simon Huggard,7-8,7,8,0,1,Completed,true,false,false
+AP022022,13 Oct 18,2,Mentone,East Malvern 1,No. 4,Paolo Friscina,Lachlan Duckett,Lachlan Duckett,2-8,2,8,0,1,Completed,true,false,false
+AP022023,13 Oct 18,2,East Malvern 2,Maccabi,No. 1,Tommy Stevens,Nathan Rapoport,Tommy Stevens,8-5,8,5,1,0,Completed,true,false,false
+AP022023,13 Oct 18,2,East Malvern 2,Maccabi,No. 2,Martin Giffard,Ben Needleman,Martin Giffard,8-3,8,3,1,0,Completed,true,false,false
+AP022023,13 Oct 18,2,East Malvern 2,Maccabi,No. 3,Stuart Cox,Sam Strunin,Sam Strunin,1-8,1,8,0,1,Completed,true,false,false
+AP022023,13 Oct 18,2,East Malvern 2,Maccabi,No. 4,Haydn Scott,Joshua Dorfan,Haydn Scott,8-0,8,0,1,0,Completed,true,false,false
+AP022024,13 Oct 18,2,Ormond CR,Clarinda,No. 1,Steve Gelagin,Renn Opt Hoog,Steve Gelagin,8-1,8,1,1,0,Completed,true,false,false
+AP022024,13 Oct 18,2,Ormond CR,Clarinda,No. 2,Brown Chen,Gabriel Young,Brown Chen,8-1,8,1,1,0,Completed,true,false,false
+AP022024,13 Oct 18,2,Ormond CR,Clarinda,No. 3,Michael Hudson,James Hatzinicolaou,Michael Hudson,8-4,8,4,1,0,Completed,true,false,false
+AP022024,13 Oct 18,2,Ormond CR,Clarinda,No. 4,Dylan Helm,James Michael,Dylan Helm,8-2,8,2,1,0,Completed,true,false,false
+AP022031,20 Oct 18,3,MCC Glen Iris Roy,Ormond CR,No. 1,Tarun Soni,Brown Chen,Brown Chen,2-8,2,8,0,1,Completed,true,false,false
+AP022031,20 Oct 18,3,MCC Glen Iris Roy,Ormond CR,No. 2,Steve Worthington,Andrew Lipson,Steve Worthington,8-5,8,5,1,0,Completed,true,false,false
+AP022031,20 Oct 18,3,MCC Glen Iris Roy,Ormond CR,No. 3,Auke de Vries,Miron Meydan,Auke de Vries,8-6,8,6,1,0,Completed,true,false,false
+AP022031,20 Oct 18,3,MCC Glen Iris Roy,Ormond CR,No. 4,John Gregory,Dylan Helm,Dylan Helm,3-8,3,8,0,1,Completed,true,false,false
+AP022041,27 Oct 18,4,East Malvern 2,MCC Glen Iris Roy,No. 1,Tommy Stevens,Matthew Dodds,Tommy Stevens,8-3,8,3,1,0,Completed,true,false,false
+AP022041,27 Oct 18,4,East Malvern 2,MCC Glen Iris Roy,No. 2,Martin Giffard,Tarun Soni,Tarun Soni,7-8,7,8,0,1,Completed,true,false,false
+AP022041,27 Oct 18,4,East Malvern 2,MCC Glen Iris Roy,No. 3,James Bryden,Steve Worthington,Steve Worthington,0-8,0,8,0,1,Completed,true,false,false
+AP022041,27 Oct 18,4,East Malvern 2,MCC Glen Iris Roy,No. 4,David Bryden,Auke de Vries,Auke de Vries,4-8,4,8,0,1,Completed,true,false,false
+AP022042,27 Oct 18,4,Ormond CR,East Malvern 1,No. 1,Steve Gelagin,Alan Young,Steve Gelagin,8-3,8,3,1,0,Completed,true,false,true
+AP022042,27 Oct 18,4,Ormond CR,East Malvern 1,No. 2,Brown Chen,Josh Weberruss,Brown Chen,8-1,8,1,1,0,Completed,true,false,false
+AP022042,27 Oct 18,4,Ormond CR,East Malvern 1,No. 3,Michael Hudson,Tim Davies,Michael Hudson,8-5,8,5,1,0,Completed,true,false,false
+AP022042,27 Oct 18,4,Ormond CR,East Malvern 1,No. 4,Eugene Mougerman,Lachlan Duckett,Lachlan Duckett,7-8,7,8,0,1,Completed,true,false,false
+AP022043,27 Oct 18,4,Carmelite,Maccabi,No. 1,Oliver Jenz,Nathan Rapoport,Oliver Jenz,8-4,8,4,1,0,Completed,true,false,false
+AP022043,27 Oct 18,4,Carmelite,Maccabi,No. 2,Xavier Aitken,Joshua Duieb,Joshua Duieb,1-8,1,8,0,1,Completed,true,false,false
+AP022043,27 Oct 18,4,Carmelite,Maccabi,No. 3,Vincent McDonald,Ben Needleman,Vincent McDonald,8-0,8,0,1,0,Completed,true,false,false
+AP022043,27 Oct 18,4,Carmelite,Maccabi,No. 4,Gus McDonald,Paul Kovacs,Paul Kovacs,2-8,2,8,0,1,Completed,true,false,false
+AP022044,27 Oct 18,4,Mentone,Clarinda,No. 1,Ivan Payung,Brendan Bayly,Ivan Payung,8-3,8,3,1,0,Completed,true,false,false
+AP022044,27 Oct 18,4,Mentone,Clarinda,No. 2,Andrew Fifield,Renn Opt Hoog,Andrew Fifield,8-1,8,1,1,0,Completed,true,false,false
+AP022044,27 Oct 18,4,Mentone,Clarinda,No. 3,Bruce Anderson,Gabriel Young,Gabriel Young,5-8,5,8,0,1,Completed,true,false,false
+AP022044,27 Oct 18,4,Mentone,Clarinda,No. 4,Paolo Friscina,James Hatzinicolaou,James Hatzinicolaou,1-8,1,8,0,1,Completed,true,false,false
+AP022051,10 Nov 18,5,Maccabi,Clarinda,No. 1,Joshua Duieb,Brendan Bayly,Joshua Duieb,8-3,8,3,1,0,Completed,true,false,false
+AP022051,10 Nov 18,5,Maccabi,Clarinda,No. 2,Ben Needleman,Renn Opt Hoog,Ben Needleman,8-6,8,6,1,0,Completed,true,false,false
+AP022051,10 Nov 18,5,Maccabi,Clarinda,No. 3,Joshua Dorfan,Gabriel Young,Gabriel Young,1-8,1,8,0,1,Completed,true,false,false
+AP022051,10 Nov 18,5,Maccabi,Clarinda,No. 4,Sam Strunin,Mitchell Bayly,Sam Strunin,8-1,8,1,1,0,Completed,true,false,false
+AP022052,10 Nov 18,5,Carmelite,Ormond CR,No. 1,Oliver Jenz,Brown Chen,Brown Chen,5-8,5,8,0,1,Completed,true,false,false
+AP022052,10 Nov 18,5,Carmelite,Ormond CR,No. 2,Xavier Aitken,Rob Lawson,Xavier Aitken,8-4,8,4,1,0,Completed,true,false,false
+AP022052,10 Nov 18,5,Carmelite,Ormond CR,No. 3,Vincent McDonald,Michael Hudson,Vincent McDonald,8-5,8,5,1,0,Completed,true,false,false
+AP022052,10 Nov 18,5,Carmelite,Ormond CR,No. 4,Ryan Sweeney,Dylan Helm,Dylan Helm,6-8,6,8,0,1,Completed,true,false,false
+AP022053,10 Nov 18,5,East Malvern 2,Mentone,No. 1,Tommy Stevens,Zdenek Babek,Tommy Stevens,8-3,8,3,1,0,Completed,true,false,false
+AP022053,10 Nov 18,5,East Malvern 2,Mentone,No. 2,Martin Giffard,Craig Penny,Martin Giffard,8-6,8,6,1,0,Completed,true,false,false
+AP022053,10 Nov 18,5,East Malvern 2,Mentone,No. 3,James Bryden,Bruce Anderson,James Bryden,8-6,8,6,1,0,Completed,true,false,false
+AP022053,10 Nov 18,5,East Malvern 2,Mentone,No. 4,KC Wong,Renato Siragusano,KC Wong,8-3,8,3,1,0,Completed,true,false,false
+AP022054,10 Nov 18,5,MCC Glen Iris Roy,East Malvern 1,No. 1,Matthew Dodds,Andrew McDougall,Andrew McDougall,4-8,4,8,0,1,Completed,true,false,false
+AP022054,10 Nov 18,5,MCC Glen Iris Roy,East Malvern 1,No. 2,Tarun Soni,Josh Weberruss,Tarun Soni,8-4,8,4,1,0,Completed,true,false,false
+AP022054,10 Nov 18,5,MCC Glen Iris Roy,East Malvern 1,No. 3,Steve Worthington,Tim Davies,Steve Worthington,8-6,8,6,1,0,Completed,true,false,false
+AP022054,10 Nov 18,5,MCC Glen Iris Roy,East Malvern 1,No. 4,Auke de Vries,Lachlan Duckett,Lachlan Duckett,6-8,6,8,0,1,Completed,true,false,false
+AP022061,17 Nov 18,6,East Malvern 1,Maccabi,No. 1,Alan Young,Nathan Rapoport,Alan Young,8-5,8,5,1,0,Completed,true,false,false
+AP022061,17 Nov 18,6,East Malvern 1,Maccabi,No. 2,Josh Weberruss,Joshua Duieb,Joshua Duieb,5-8,5,8,0,1,Completed,true,false,false
+AP022061,17 Nov 18,6,East Malvern 1,Maccabi,No. 3,Tim Davies,Ben Needleman,Tim Davies,8-3,8,3,1,0,Completed,true,false,false
+AP022061,17 Nov 18,6,East Malvern 1,Maccabi,No. 4,Lachlan Duckett,Paul Kovacs,Paul Kovacs,5-8,5,8,0,1,Completed,true,false,false
+AP022063,17 Nov 18,6,Ormond CR,East Malvern 2,No. 1,Brown Chen,Tommy Stevens,Brown Chen,8-6,8,6,1,0,Completed,true,false,false
+AP022063,17 Nov 18,6,Ormond CR,East Malvern 2,No. 2,Daniel Olshansky,Martin Giffard,Martin Giffard,5-8,5,8,0,1,Completed,true,false,false
+AP022063,17 Nov 18,6,Ormond CR,East Malvern 2,No. 3,Michael Hudson,David Bryden,Michael Hudson,8-3,8,3,1,0,Completed,true,false,false
+AP022063,17 Nov 18,6,Ormond CR,East Malvern 2,No. 4,Dylan Helm,Robin Borchard,Dylan Helm,8-2,8,2,1,0,Completed,true,false,false
+AP022064,17 Nov 18,6,Mentone,Carmelite,No. 1,Ivan Payung,Oliver Jenz,Oliver Jenz,7-8,7,8,0,1,Completed,true,false,false
+AP022064,17 Nov 18,6,Mentone,Carmelite,No. 2,Zdenek Babek,Vincent McDonald,Zdenek Babek,8-5,8,5,1,0,Completed,true,false,false
+AP022064,17 Nov 18,6,Mentone,Carmelite,No. 3,Craig Penny,Ryan Sweeney,Ryan Sweeney,6-8,6,8,0,1,Completed,true,false,false
+AP022064,17 Nov 18,6,Mentone,Carmelite,No. 4,Renato Siragusano,Gus McDonald,Gus McDonald,1-8,1,8,0,1,Completed,true,false,false
+AP022071,24 Nov 18,7,MCC Glen Iris Roy,Maccabi,No. 1,Grant Elmes,Joshua Duieb,Grant Elmes,8-0,8,0,1,0,Completed,true,false,false
+AP022071,24 Nov 18,7,MCC Glen Iris Roy,Maccabi,No. 2,Steve Worthington,Paul Kovacs,Paul Kovacs,1-8,1,8,0,1,Completed,true,false,false
+AP022071,24 Nov 18,7,MCC Glen Iris Roy,Maccabi,No. 3,Auke de Vries,Joshua Dorfan,Auke de Vries,8-0,8,0,1,0,Completed,true,false,false
+AP022071,24 Nov 18,7,MCC Glen Iris Roy,Maccabi,No. 4,John Gregory,Lachie Zuker,Lachie Zuker,2-8,2,8,0,1,Completed,true,false,true
+AP022072,24 Nov 18,7,East Malvern 1,Clarinda,No. 1,Alan Young,Brendan Bayly,Alan Young,8-0,8,0,1,0,Completed,true,false,false
+AP022072,24 Nov 18,7,East Malvern 1,Clarinda,No. 2,Josh Weberruss,Renn Opt Hoog,Josh Weberruss,8-1,8,1,1,0,Completed,true,false,false
+AP022072,24 Nov 18,7,East Malvern 1,Clarinda,No. 3,Tim Davies,Gabriel Young,Gabriel Young,1-8,1,8,0,1,Completed,true,false,false
+AP022072,24 Nov 18,7,East Malvern 1,Clarinda,No. 4,Lachlan Duckett,James Hatzinicolaou,Lachlan Duckett,8-2,8,2,1,0,Completed,true,false,false
+AP022073,24 Nov 18,7,Carmelite,East Malvern 2,No. 1,Vincent McDonald,Tommy Stevens,Tommy Stevens,4-8,4,8,0,1,Completed,true,false,false
+AP022073,24 Nov 18,7,Carmelite,East Malvern 2,No. 2,Ryan Sweeney,Martin Giffard,Ryan Sweeney,8-2,8,2,1,0,Completed,true,false,false
+AP022073,24 Nov 18,7,Carmelite,East Malvern 2,No. 3,Gus McDonald,James Bryden,Gus McDonald,8-2,8,2,1,0,Completed,true,false,false
+AP022073,24 Nov 18,7,Carmelite,East Malvern 2,No. 4,Angus Leckey,David Bryden,Angus Leckey,8-3,8,3,1,0,Completed,true,true,false
+AP022074,24 Nov 18,7,Ormond CR,Mentone,No. 1,Steve Gelagin,Ivan Payung,Steve Gelagin,8-3,8,3,1,0,Completed,true,false,false
+AP022074,24 Nov 18,7,Ormond CR,Mentone,No. 2,Daniel Olshansky,Jeremy Smale,Daniel Olshansky,8-7,8,7,1,0,Completed,true,false,false
+AP022074,24 Nov 18,7,Ormond CR,Mentone,No. 3,Michael Hudson,Bruce Anderson,Michael Hudson,8-1,8,1,1,0,Completed,true,false,false
+AP022074,24 Nov 18,7,Ormond CR,Mentone,No. 4,Byron Gelagin,Renato Siragusano,Byron Gelagin,8-1,8,1,1,0,Completed,true,false,false
+AP022081,01 Dec 18,8,Mentone,MCC Glen Iris Roy,No. 1,Jeremy Smale,Grant Elmes,Grant Elmes,2-8,2,8,0,1,Completed,true,false,false
+AP022081,01 Dec 18,8,Mentone,MCC Glen Iris Roy,No. 2,Jack Constantine,Tarun Soni,Tarun Soni,2-8,2,8,0,1,Completed,true,false,false
+AP022081,01 Dec 18,8,Mentone,MCC Glen Iris Roy,No. 3,Bruce Anderson,Steve Worthington,Steve Worthington,4-8,4,8,0,1,Completed,true,false,false
+AP022081,01 Dec 18,8,Mentone,MCC Glen Iris Roy,No. 4,Renato Siragusano,Auke de Vries,Auke de Vries,3-8,3,8,0,1,Completed,true,false,false
+AP022082,01 Dec 18,8,East Malvern 2,East Malvern 1,No. 1,Tommy Stevens,Matt Barnes,Tommy Stevens,8-1,8,1,1,0,Completed,true,false,false
+AP022082,01 Dec 18,8,East Malvern 2,East Malvern 1,No. 2,James Bryden,Lachie Appleton,Lachie Appleton,3-8,3,8,0,1,Completed,true,false,false
+AP022082,01 Dec 18,8,East Malvern 2,East Malvern 1,No. 3,David Bryden,Tim Davies,David Bryden,8-6,8,6,1,0,Completed,true,false,false
+AP022082,01 Dec 18,8,East Malvern 2,East Malvern 1,No. 4,KC Wong,Lachlan Duckett,Lachlan Duckett,2-8,2,8,0,1,Completed,true,false,false
+AP022083,01 Dec 18,8,Ormond CR,Maccabi,No. 1,Steve Gelagin,David Gelbart,Steve Gelagin,8-1,8,1,1,0,Completed,true,false,false
+AP022083,01 Dec 18,8,Ormond CR,Maccabi,No. 2,Daniel Olshansky,Joshua Duieb,Joshua Duieb,4-8,4,8,0,1,Completed,true,false,false
+AP022083,01 Dec 18,8,Ormond CR,Maccabi,No. 3,Byron Gelagin,Sam Strunin,Byron Gelagin,8-1,8,1,1,0,Completed,true,false,false
+AP022083,01 Dec 18,8,Ormond CR,Maccabi,No. 4,Dylan Helm,Paul Kovacs,Paul Kovacs,1-8,1,8,0,1,Completed,true,false,false
+AP022084,01 Dec 18,8,Carmelite,Clarinda,No. 1,Oliver Jenz,Brendan Bayly,Brendan Bayly,4-8,4,8,0,1,Completed,true,false,false
+AP022084,01 Dec 18,8,Carmelite,Clarinda,No. 2,Xavier Aitken,Renn Opt Hoog,Xavier Aitken,8-2,8,2,1,0,Completed,true,false,false
+AP022084,01 Dec 18,8,Carmelite,Clarinda,No. 3,Vincent McDonald,Gabriel Young,Vincent McDonald,8-0,8,0,1,0,Completed,true,false,false
+AP022084,01 Dec 18,8,Carmelite,Clarinda,No. 4,Gus McDonald,Finn Opt Hoog,Gus McDonald,8-0,8,0,1,0,Completed,true,false,false
+AP022091,08 Dec 18,9,MCC Glen Iris Roy,Carmelite,No. 1,Grant Elmes,Xavier Aitken,Grant Elmes,8-1,8,1,1,0,Completed,true,false,false
+AP022091,08 Dec 18,9,MCC Glen Iris Roy,Carmelite,No. 2,Matthew Dodds,Vincent McDonald,Vincent McDonald,5-8,5,8,0,1,Completed,true,false,false
+AP022091,08 Dec 18,9,MCC Glen Iris Roy,Carmelite,No. 3,Tarun Soni,Ryan Sweeney,Tarun Soni,8-3,8,3,1,0,Completed,true,false,false
+AP022091,08 Dec 18,9,MCC Glen Iris Roy,Carmelite,No. 4,John Gregory,Gus McDonald,Gus McDonald,2-8,2,8,0,1,Completed,true,false,false
+AP022092,08 Dec 18,9,East Malvern 1,Mentone,No. 1,Andrew McDougall,Zdenek Babek,Andrew McDougall,8-6,8,6,1,0,Completed,true,false,false
+AP022092,08 Dec 18,9,East Malvern 1,Mentone,No. 2,Martin Hill,Jack Constantine,Martin Hill,8-1,8,1,1,0,Completed,true,false,false
+AP022092,08 Dec 18,9,East Malvern 1,Mentone,No. 3,Tim Davies,Bruce Anderson,Tim Davies,8-1,8,1,1,0,Completed,true,false,false
+AP022092,08 Dec 18,9,East Malvern 1,Mentone,No. 4,Joel Posters,Renato Siragusano,Joel Posters,8-0,8,0,1,0,Completed,true,false,false
+AP022093,08 Dec 18,9,Maccabi,East Malvern 2,No. 1,Nathan Rapoport,Tommy Stevens,Tommy Stevens,4-8,4,8,0,1,Completed,true,false,false
+AP022093,08 Dec 18,9,Maccabi,East Malvern 2,No. 2,Joshua Duieb,Martin Giffard,Joshua Duieb,8-5,8,5,1,0,Completed,true,false,false
+AP022093,08 Dec 18,9,Maccabi,East Malvern 2,No. 3,Sam Strunin,James Bryden,Sam Strunin,8-2,8,2,1,0,Completed,true,false,false
+AP022093,08 Dec 18,9,Maccabi,East Malvern 2,No. 4,Robert Schattner,KC Wong,KC Wong,0-8,0,8,0,1,Completed,true,false,false
+AP022094,08 Dec 18,9,Clarinda,Ormond CR,No. 1,Brendan Bayly,Brown Chen,Brown Chen,7-8,7,8,0,1,Completed,true,false,false
+AP022094,08 Dec 18,9,Clarinda,Ormond CR,No. 2,Renn Opt Hoog,Daniel Olshansky,Daniel Olshansky,2-8,2,8,0,1,Completed,true,false,false
+AP022094,08 Dec 18,9,Clarinda,Ormond CR,No. 3,Gabriel Young,Byron Gelagin,Byron Gelagin,5-8,5,8,0,1,Completed,true,false,false
+AP022094,08 Dec 18,9,Clarinda,Ormond CR,No. 4,James Hatzinicolaou,Dylan Helm,Dylan Helm,3-8,3,8,0,1,Completed,true,false,false
+AP022101,15 Dec 18,10,Ormond CR,MCC Glen Iris Roy,No. 1,Brown Chen,Tarun Soni,Brown Chen,8-4,8,4,1,0,Completed,true,false,false
+AP022101,15 Dec 18,10,Ormond CR,MCC Glen Iris Roy,No. 2,Rob Lawson,Steve Worthington,Rob Lawson,8-3,8,3,1,0,Completed,true,false,false
+AP022101,15 Dec 18,10,Ormond CR,MCC Glen Iris Roy,No. 3,Michael Hudson,John Gregory,Michael Hudson,8-1,8,1,1,0,Completed,true,false,false
+AP022101,15 Dec 18,10,Ormond CR,MCC Glen Iris Roy,No. 4,Dylan Helm,David Cutler,Dylan Helm,8-6,8,6,1,0,Completed,true,false,false
+AP022102,15 Dec 18,10,Carmelite,East Malvern 1,No. 1,Oliver Jenz,Martin Hill,Oliver Jenz,8-5,8,5,1,0,Completed,true,false,false
+AP022102,15 Dec 18,10,Carmelite,East Malvern 1,No. 2,Gus McDonald,Alan Young,Alan Young,6-8,6,8,0,1,Completed,true,false,false
+AP022102,15 Dec 18,10,Carmelite,East Malvern 1,No. 3,Leon Katelis,Tim Davies,Leon Katelis,8-5,8,5,1,0,Completed,true,false,false
+AP022102,15 Dec 18,10,Carmelite,East Malvern 1,No. 4,Charlie Boston,Rajat Dang,Rajat Dang,3-8,3,8,0,1,Completed,true,false,false
+AP022103,15 Dec 18,10,Mentone,Maccabi,No. 1,Ivan Payung,David Gelbart,Ivan Payung,8-6,8,6,1,0,Completed,true,false,false
+AP022103,15 Dec 18,10,Mentone,Maccabi,No. 2,Zdenek Babek,Joshua Duieb,Zdenek Babek,8-4,8,4,1,0,Completed,true,false,false
+AP022103,15 Dec 18,10,Mentone,Maccabi,No. 3,Jeremy Smale,Ben Needleman,Jeremy Smale,8-0,8,0,1,0,Completed,true,false,false
+AP022103,15 Dec 18,10,Mentone,Maccabi,No. 4,Jack Constantine,Bradley Bergman,Jack Constantine,8-2,8,2,1,0,Completed,true,false,false
+AP022104,15 Dec 18,10,East Malvern 2,Clarinda,No. 1,Martin Giffard,Brendan Bayly,Martin Giffard,8-7,8,7,1,0,Completed,true,false,false
+AP022104,15 Dec 18,10,East Malvern 2,Clarinda,No. 2,James Bryden,Renn Opt Hoog,James Bryden,8-4,8,4,1,0,Completed,true,false,false
+AP022104,15 Dec 18,10,East Malvern 2,Clarinda,No. 3,David Bryden,Gabriel Young,Gabriel Young,6-8,6,8,0,1,Completed,true,false,false
+AP022104,15 Dec 18,10,East Malvern 2,Clarinda,No. 4,KC Wong,James Hatzinicolaou,KC Wong,8-0,8,0,1,0,Completed,true,false,false
+AP022111,02 Feb 19,11,MCC Glen Iris Roy,East Malvern 2,No. 1,Matthew Dodds,Tommy Stevens,Tommy Stevens,3-8,3,8,0,1,Completed,true,false,false
+AP022111,02 Feb 19,11,MCC Glen Iris Roy,East Malvern 2,No. 2,Steve Worthington,Martin Giffard,Martin Giffard,6-8,6,8,0,1,Completed,true,false,false
+AP022111,02 Feb 19,11,MCC Glen Iris Roy,East Malvern 2,No. 3,Auke de Vries,James Bryden,James Bryden,6-8,6,8,0,1,Completed,true,false,false
+AP022111,02 Feb 19,11,MCC Glen Iris Roy,East Malvern 2,No. 4,John Gregory,David Bryden,David Bryden,3-8,3,8,0,1,Completed,true,false,false
+AP022112,02 Feb 19,11,East Malvern 1,Ormond CR,No. 1,Josh Weberruss,Steve Gelagin,Steve Gelagin,3-8,3,8,0,1,Completed,true,false,false
+AP022112,02 Feb 19,11,East Malvern 1,Ormond CR,No. 2,Tim Davies,Michael Hudson,Michael Hudson,7-8,7,8,0,1,Completed,true,false,false
+AP022112,02 Feb 19,11,East Malvern 1,Ormond CR,No. 3,Lachlan Duckett,Eugene Mougerman,Eugene Mougerman,5-8,5,8,0,1,Completed,true,false,false
+AP022112,02 Feb 19,11,East Malvern 1,Ormond CR,No. 4,Robin Borchard,Dylan Helm,Dylan Helm,4-8,4,8,0,1,Completed,true,false,false
+AP022113,02 Feb 19,11,Maccabi,Carmelite,No. 1,Nathan Rapoport,Xavier Aitken,Xavier Aitken,5-8,5,8,0,1,Completed,true,false,false
+AP022113,02 Feb 19,11,Maccabi,Carmelite,No. 2,Joshua Duieb,Ryan Sweeney,Joshua Duieb,8-5,8,5,1,0,Completed,true,false,false
+AP022113,02 Feb 19,11,Maccabi,Carmelite,No. 3,Ben Needleman,[Unnamed emergency — TROLS AP022113 away code 3],Ben Needleman,8-0,8,0,1,0,Completed,false,false,true
+AP022113,02 Feb 19,11,Maccabi,Carmelite,No. 4,Bradley Bergman,Angus Leckey,Angus Leckey,6-8,6,8,0,1,Completed,true,false,false
+AP022114,02 Feb 19,11,Clarinda,Mentone,No. 1,Brendan Bayly,Ivan Payung,Ivan Payung,1-8,1,8,0,1,Completed,true,false,false
+AP022114,02 Feb 19,11,Clarinda,Mentone,No. 2,Renn Opt Hoog,Zdenek Babek,Zdenek Babek,2-8,2,8,0,1,Completed,true,false,false
+AP022114,02 Feb 19,11,Clarinda,Mentone,No. 3,Gabriel Young,James Constantine,Gabriel Young,8-0,8,0,1,0,Completed,true,false,false
+AP022114,02 Feb 19,11,Clarinda,Mentone,No. 4,James Hatzinicolaou,Bruce Anderson,Bruce Anderson,3-8,3,8,0,1,Completed,true,false,false
+AP022121,09 Feb 19,12,Clarinda,Maccabi,No. 1,Brendan Bayly,Ben Needleman,Ben Needleman,4-8,4,8,0,1,Completed,true,false,false
+AP022121,09 Feb 19,12,Clarinda,Maccabi,No. 2,Renn Opt Hoog,Bradley Bergman,Renn Opt Hoog,8-2,8,2,1,0,Completed,true,false,false
+AP022121,09 Feb 19,12,Clarinda,Maccabi,No. 3,Gabriel Young,Paul Kovacs,Paul Kovacs,2-8,2,8,0,1,Completed,true,false,false
+AP022121,09 Feb 19,12,Clarinda,Maccabi,No. 4,James Hatzinicolaou,Joshua Dorfan,James Hatzinicolaou,8-2,8,2,1,0,Completed,true,false,false
+AP022122,09 Feb 19,12,Ormond CR,Carmelite,No. 1,Steve Gelagin,Oliver Jenz,Steve Gelagin,8-0,8,0,1,0,Completed,true,false,false
+AP022122,09 Feb 19,12,Ormond CR,Carmelite,No. 2,Michael Hudson,Xavier Aitken,Xavier Aitken,7-8,7,8,0,1,Completed,true,false,false
+AP022122,09 Feb 19,12,Ormond CR,Carmelite,No. 3,Dylan Helm,Ryan Sweeney,Ryan Sweeney,0-8,0,8,0,1,Completed,true,false,false
+AP022122,09 Feb 19,12,Ormond CR,Carmelite,No. 4,Peter King,Leon Katelis,Peter King,8-3,8,3,1,0,Completed,true,false,false
+AP022123,09 Feb 19,12,Mentone,East Malvern 2,No. 1,Ivan Payung,Tommy Stevens,Tommy Stevens,4-8,4,8,0,1,Completed,true,false,false
+AP022123,09 Feb 19,12,Mentone,East Malvern 2,No. 2,Zdenek Babek,Martin Giffard,Martin Giffard,3-8,3,8,0,1,Completed,true,false,false
+AP022123,09 Feb 19,12,Mentone,East Malvern 2,No. 3,Jack Constantine,James Bryden,James Bryden,3-8,3,8,0,1,Completed,true,false,false
+AP022123,09 Feb 19,12,Mentone,East Malvern 2,No. 4,Bruce Anderson,KC Wong,KC Wong,2-8,2,8,0,1,Completed,true,false,false
+AP022131,16 Feb 19,13,Maccabi,East Malvern 1,No. 1,Nathan Rapoport,Andrew McDougall,Nathan Rapoport,8-7,8,7,1,0,Completed,true,false,false
+AP022131,16 Feb 19,13,Maccabi,East Malvern 1,No. 2,Joshua Duieb,Josh Weberruss,Joshua Duieb,8-3,8,3,1,0,Completed,true,false,false
+AP022131,16 Feb 19,13,Maccabi,East Malvern 1,No. 3,Bradley Bergman,Tim Davies,Tim Davies,4-8,4,8,0,1,Completed,true,false,false
+AP022131,16 Feb 19,13,Maccabi,East Malvern 1,No. 4,Joshua Dorfan,Rajat Dang,Rajat Dang,1-8,1,8,0,1,Completed,true,false,false
+AP022132,16 Feb 19,13,MCC Glen Iris Roy,Clarinda,No. 1,Tarun Soni,Brendan Bayly,Tarun Soni,8-5,8,5,1,0,Completed,true,false,false
+AP022132,16 Feb 19,13,MCC Glen Iris Roy,Clarinda,No. 2,Auke de Vries,Renn Opt Hoog,Auke de Vries,8-2,8,2,1,0,Completed,true,false,false
+AP022132,16 Feb 19,13,MCC Glen Iris Roy,Clarinda,No. 3,John Gregory,Gabriel Young,Gabriel Young,5-8,5,8,0,1,Completed,true,false,false
+AP022132,16 Feb 19,13,MCC Glen Iris Roy,Clarinda,No. 4,Philip Meyer,James Hatzinicolaou,Philip Meyer,8-6,8,6,1,0,Completed,true,false,false
+AP022133,16 Feb 19,13,East Malvern 2,Ormond CR,No. 1,Tommy Stevens,Steve Gelagin,Steve Gelagin,4-8,4,8,0,1,Completed,true,false,false
+AP022133,16 Feb 19,13,East Malvern 2,Ormond CR,No. 2,Martin Giffard,Michael Hudson,Michael Hudson,2-8,2,8,0,1,Completed,true,false,false
+AP022133,16 Feb 19,13,East Malvern 2,Ormond CR,No. 3,James Bryden,Eugene Mougerman,Eugene Mougerman,1-8,1,8,0,1,Completed,true,false,false
+AP022133,16 Feb 19,13,East Malvern 2,Ormond CR,No. 4,David Bryden,Peter King,David Bryden,8-6,8,6,1,0,Completed,true,false,false
+AP022134,16 Feb 19,13,Carmelite,Mentone,No. 1,Oliver Jenz,Dan Wood,Dan Wood,2-8,2,8,0,1,Completed,true,false,false
+AP022134,16 Feb 19,13,Carmelite,Mentone,No. 2,Xavier Aitken,Jack Constantine,Xavier Aitken,8-2,8,2,1,0,Completed,true,false,false
+AP022134,16 Feb 19,13,Carmelite,Mentone,No. 3,Ryan Sweeney,Richard Kemp,Ryan Sweeney,8-6,8,6,1,0,Completed,true,false,false
+AP022134,16 Feb 19,13,Carmelite,Mentone,No. 4,Gus McDonald,Bruce Anderson,Gus McDonald,8-4,8,4,1,0,Completed,true,false,false
+AP022141,23 Feb 19,14,Maccabi,MCC Glen Iris Roy,No. 1,Joshua Duieb,Rudra Pathak,Rudra Pathak,6-8,6,8,0,1,Completed,true,false,false
+AP022141,23 Feb 19,14,Maccabi,MCC Glen Iris Roy,No. 2,Ben Needleman,Matthew Dodds,Matthew Dodds,1-8,1,8,0,1,Completed,true,false,false
+AP022141,23 Feb 19,14,Maccabi,MCC Glen Iris Roy,No. 3,Bradley Bergman,Tarun Soni,Tarun Soni,0-8,0,8,0,1,Completed,true,false,false
+AP022141,23 Feb 19,14,Maccabi,MCC Glen Iris Roy,No. 4,Sam Strunin,Steve Worthington,Sam Strunin,8-2,8,2,1,0,Completed,true,false,false
+AP022142,23 Feb 19,14,Clarinda,East Malvern 1,No. 1,Brendan Bayly,Martin Hill,Martin Hill,3-8,3,8,0,1,Completed,true,false,false
+AP022142,23 Feb 19,14,Clarinda,East Malvern 1,No. 2,Renn Opt Hoog,Alan Young,Alan Young,1-8,1,8,0,1,Completed,true,false,false
+AP022142,23 Feb 19,14,Clarinda,East Malvern 1,No. 3,Gabriel Young,Tim Davies,Gabriel Young,8-5,8,5,1,0,Completed,true,false,false
+AP022142,23 Feb 19,14,Clarinda,East Malvern 1,No. 4,James Hatzinicolaou,Rajat Dang,Rajat Dang,1-8,1,8,0,1,Completed,true,false,false
+AP022143,23 Feb 19,14,East Malvern 2,Carmelite,No. 1,Tommy Stevens,Oliver Jenz,Oliver Jenz,6-8,6,8,0,1,Completed,true,false,false
+AP022143,23 Feb 19,14,East Malvern 2,Carmelite,No. 2,Martin Giffard,Xavier Aitken,Xavier Aitken,7-8,7,8,0,1,Completed,true,false,false
+AP022143,23 Feb 19,14,East Malvern 2,Carmelite,No. 3,David Bryden,Ryan Sweeney,Ryan Sweeney,1-8,1,8,0,1,Completed,true,false,false
+AP022143,23 Feb 19,14,East Malvern 2,Carmelite,No. 4,KC Wong,Leon Katelis,KC Wong,8-2,8,2,1,0,Completed,true,false,false
+AP022144,23 Feb 19,14,Mentone,Ormond CR,No. 1,Jeremy Smale,Daniel Olshansky,Jeremy Smale,8-3,8,3,1,0,Completed,true,false,false
+AP022144,23 Feb 19,14,Mentone,Ormond CR,No. 2,Mathew Williams,Eugene Mougerman,Mathew Williams,8-7,8,7,1,0,Completed,true,false,false
+AP022144,23 Feb 19,14,Mentone,Ormond CR,No. 3,Bruce Anderson,Dylan Helm,Dylan Helm,7-8,7,8,0,1,Completed,true,false,false
+AP022144,23 Feb 19,14,Mentone,Ormond CR,No. 4,Greg P2 Foster,Peter King,Peter King,2-8,2,8,0,1,Completed,true,false,false
+AP022301,,16,Ormond CR,Carmelite,No. 1,Steve Gelagin,Oliver Jenz,Steve Gelagin,6-5,6,5,1,0,Completed,true,false,false
+AP022301,,16,Ormond CR,Carmelite,No. 2,Daniel Olshansky,Xavier Aitken,Daniel Olshansky,8-1,8,1,1,0,Completed,true,false,false
+AP022301,,16,Ormond CR,Carmelite,No. 3,Michael Hudson,Ryan Sweeney,Michael Hudson,8-7,8,7,1,0,Completed,true,false,false
+AP022301,,16,Ormond CR,Carmelite,No. 4,Dylan Helm,Gus McDonald,Gus McDonald,0-8,0,8,0,1,Completed,true,false,false
+AP022302,,16,MCC Glen Iris Roy,East Malvern 1,No. 1,Grant Elmes,Martin Hill,Grant Elmes,8-5,8,5,1,0,Completed,true,false,false
+AP022302,,16,MCC Glen Iris Roy,East Malvern 1,No. 2,Tarun Soni,Josh Weberruss,Tarun Soni,8-3,8,3,1,0,Completed,true,false,false
+AP022302,,16,MCC Glen Iris Roy,East Malvern 1,No. 3,Steve Worthington,Tim Davies,Tim Davies,4-8,4,8,0,1,Completed,true,false,false
+AP022302,,16,MCC Glen Iris Roy,East Malvern 1,No. 4,Auke de Vries,Lachlan Duckett,Auke de Vries,8-6,8,6,1,0,Completed,true,false,false
+AP022321,,17,Ormond CR,MCC Glen Iris Roy,No. 1,Brown Chen,Grant Elmes,Grant Elmes,4-8,4,8,0,1,Completed,true,false,false
+AP022321,,17,Ormond CR,MCC Glen Iris Roy,No. 2,Daniel Olshansky,Matthew Dodds,Matthew Dodds,4-8,4,8,0,1,Completed,true,false,false
+AP022321,,17,Ormond CR,MCC Glen Iris Roy,No. 3,Byron Gelagin,Tarun Soni,Byron Gelagin,8-5,8,5,1,0,Completed,true,false,false
+AP022321,,17,Ormond CR,MCC Glen Iris Roy,No. 4,Dylan Helm,Steve Worthington,Steve Worthington,3-8,3,8,0,1,Completed,true,false,false

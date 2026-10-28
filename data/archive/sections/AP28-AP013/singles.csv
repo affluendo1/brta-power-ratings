@@ -1,0 +1,221 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP013011,05 Oct 13,1,Mt Eliza,BLTC,No. 1,Jake McKenzie,Jarrod Broadbent,Jarrod Broadbent,0-8,0,8,0,1,Completed,true,false,false
+AP013011,05 Oct 13,1,Mt Eliza,BLTC,No. 2,Corey Child,Pat Fitzgerald,Pat Fitzgerald,8-9,8,9,0,1,Completed,true,false,false
+AP013011,05 Oct 13,1,Mt Eliza,BLTC,No. 3,Craig Ryan,Matt Levey,Craig Ryan,9-7,9,7,1,0,Completed,true,false,false
+AP013011,05 Oct 13,1,Mt Eliza,BLTC,No. 4,Hamish McLeod,Simon Young,Hamish McLeod,8-6,8,6,1,0,Completed,true,false,false
+AP013012,05 Oct 13,1,Mountain Gate,GPHC,No. 1,Michael Turlejski,Anthony Hampson,Anthony Hampson,5-8,5,8,0,1,Completed,true,false,false
+AP013012,05 Oct 13,1,Mountain Gate,GPHC,No. 2,Steve Giamarco,Jordan Cowling,Jordan Cowling,8-9,8,9,0,1,Completed,true,false,false
+AP013012,05 Oct 13,1,Mountain Gate,GPHC,No. 3,Jon Longridge,Andrew Lewis,Jon Longridge,8-4,8,4,1,0,Completed,true,false,false
+AP013012,05 Oct 13,1,Mountain Gate,GPHC,No. 4,Seb Krivohlavy,Mykal Benham,Seb Krivohlavy,8-1,8,1,1,0,Completed,true,false,false
+AP013013,05 Oct 13,1,Clarinda,Carmelite,No. 1,Mitch Higgins,Andrew Kotnik,Mitch Higgins,8-6,8,6,1,0,Completed,true,false,false
+AP013013,05 Oct 13,1,Clarinda,Carmelite,No. 2,Zoran Josic,James Fry,James Fry,5-8,5,8,0,1,Completed,true,false,false
+AP013013,05 Oct 13,1,Clarinda,Carmelite,No. 3,James Carlson,Stefan Konstantinidis,James Carlson,8-2,8,2,1,0,Completed,true,false,false
+AP013013,05 Oct 13,1,Clarinda,Carmelite,No. 4,Rob Cvitkovic,Victor Blitsas,Rob Cvitkovic,8-2,8,2,1,0,Completed,true,false,false
+AP013014,05 Oct 13,1,Hampton,MCC,No. 1,Chris Quinn,Paul Munoz,Chris Quinn,9-8,9,8,1,0,Completed,true,false,false
+AP013014,05 Oct 13,1,Hampton,MCC,No. 2,Phil Holm,Zachary Grabovic,Zachary Grabovic,6-8,6,8,0,1,Completed,true,false,false
+AP013014,05 Oct 13,1,Hampton,MCC,No. 3,Hamilton Hobkirk,Nick Batsilas,Hamilton Hobkirk,8-2,8,2,1,0,Completed,true,false,false
+AP013014,05 Oct 13,1,Hampton,MCC,No. 4,Adam Brown,Tim Batsilas,Adam Brown,8-2,8,2,1,0,Completed,true,false,false
+AP013021,12 Oct 13,2,MCC,Mt Eliza,No. 1,Zachary Grabovic,Brad Grose,Brad Grose,2-8,2,8,0,1,Completed,true,false,false
+AP013021,12 Oct 13,2,MCC,Mt Eliza,No. 2,Andi Wessner,Jake McKenzie,Jake McKenzie,3-8,3,8,0,1,Completed,true,false,false
+AP013021,12 Oct 13,2,MCC,Mt Eliza,No. 3,Nick Batsilas,Mike Stephenson,Mike Stephenson,2-8,2,8,0,1,Completed,true,false,false
+AP013021,12 Oct 13,2,MCC,Mt Eliza,No. 4,Tim Batsilas,Craig Ryan,Craig Ryan,3-8,3,8,0,1,Completed,true,false,false
+AP013022,12 Oct 13,2,BLTC,Mountain Gate,No. 1,Jarrod Broadbent,Michael Turlejski,Jarrod Broadbent,8-1,8,1,1,0,Completed,true,false,false
+AP013022,12 Oct 13,2,BLTC,Mountain Gate,No. 2,Pat Fitzgerald,Steve Giamarco,Steve Giamarco,5-8,5,8,0,1,Completed,true,false,false
+AP013022,12 Oct 13,2,BLTC,Mountain Gate,No. 3,Ned Whitaker,Jon Longridge,Jon Longridge,2-8,2,8,0,1,Completed,true,false,false
+AP013022,12 Oct 13,2,BLTC,Mountain Gate,No. 4,Eddie Myers,Seb Krivohlavy,Seb Krivohlavy,0-8,0,8,0,1,Completed,true,false,false
+AP013023,12 Oct 13,2,GPHC,Clarinda,No. 1,Anthony Hampson,Nedal Daoud,Anthony Hampson,8-1,8,1,1,0,Completed,true,false,false
+AP013023,12 Oct 13,2,GPHC,Clarinda,No. 2,Tom Zaleski,James Carlson,Tom Zaleski,8-5,8,5,1,0,Completed,true,false,false
+AP013023,12 Oct 13,2,GPHC,Clarinda,No. 3,Simeon Press,Rob Cvitkovic,Simeon Press,8-5,8,5,1,0,Completed,true,false,false
+AP013023,12 Oct 13,2,GPHC,Clarinda,No. 4,Andrew Lewis,Adrian Fazliu,Andrew Lewis,8-2,8,2,1,0,Completed,true,false,false
+AP013031,19 Oct 13,3,Mt Eliza,Carmelite,No. 1,Brad Grose,Simon Arms,Brad Grose,8-1,8,1,1,0,Completed,true,false,false
+AP013031,19 Oct 13,3,Mt Eliza,Carmelite,No. 2,Jake McKenzie,Stefan Konstantinidis,Jake McKenzie,8-6,8,6,1,0,Completed,true,false,false
+AP013031,19 Oct 13,3,Mt Eliza,Carmelite,No. 3,Mike Stephenson,Damien Pound,Mike Stephenson,8-2,8,2,1,0,Completed,true,false,false
+AP013031,19 Oct 13,3,Mt Eliza,Carmelite,No. 4,Corey Child,Chris Arms,Chris Arms,7-9,7,9,0,1,Completed,true,false,false
+AP013033,19 Oct 13,3,Clarinda,BLTC,No. 1,Zoran Josic,Pat Fitzgerald,Zoran Josic,9-8,9,8,1,0,Completed,true,false,false
+AP013033,19 Oct 13,3,Clarinda,BLTC,No. 2,Nedal Daoud,Ned Whitaker,Ned Whitaker,3-8,3,8,0,1,Completed,true,false,false
+AP013033,19 Oct 13,3,Clarinda,BLTC,No. 3,James Carlson,Morgan Young,Morgan Young,7-9,7,9,0,1,Completed,true,false,false
+AP013033,19 Oct 13,3,Clarinda,BLTC,No. 4,Rob Cvitkovic,Mal Pearson,Rob Cvitkovic,8-4,8,4,1,0,Completed,true,false,false
+AP013034,19 Oct 13,3,Hampton,GPHC,No. 1,Evan Warring,Andrew Thomas,Andrew Thomas,5-8,5,8,0,1,Completed,true,false,false
+AP013034,19 Oct 13,3,Hampton,GPHC,No. 2,Miguel Francis,Tom Zaleski,Miguel Francis,8-5,8,5,1,0,Completed,true,false,false
+AP013034,19 Oct 13,3,Hampton,GPHC,No. 3,Sven Carlson,Simeon Press,Simeon Press,3-8,3,8,0,1,Completed,true,false,false
+AP013034,19 Oct 13,3,Hampton,GPHC,No. 4,Phil Holm,Daniel Oltvay,Phil Holm,8-4,8,4,1,0,Completed,true,false,false
+AP013041,26 Oct 13,4,GPHC,Mt Eliza,No. 1,Andrew Thomas,Brad Grose,Andrew Thomas,8-5,8,5,1,0,Completed,true,false,false
+AP013041,26 Oct 13,4,GPHC,Mt Eliza,No. 2,Simeon Press,Mike Stephenson,Mike Stephenson,6-8,6,8,0,1,Completed,true,false,false
+AP013041,26 Oct 13,4,GPHC,Mt Eliza,No. 3,Andrew Lewis,Corey Child,Corey Child,7-9,7,9,0,1,Completed,true,false,false
+AP013041,26 Oct 13,4,GPHC,Mt Eliza,No. 4,Daniel Oltvay,Craig Ryan,Craig Ryan,3-8,3,8,0,1,Completed,true,false,false
+AP013042,26 Oct 13,4,Carmelite,Mountain Gate,No. 1,Simon Arms,Michael Turlejski,Michael Turlejski,4-8,4,8,0,1,Completed,true,false,false
+AP013042,26 Oct 13,4,Carmelite,Mountain Gate,No. 2,Stefan Konstantinidis,Steve Giamarco,Steve Giamarco,3-8,3,8,0,1,Completed,true,false,false
+AP013042,26 Oct 13,4,Carmelite,Mountain Gate,No. 3,Damien Pound,Michael Lancefield,Michael Lancefield,3-8,3,8,0,1,Completed,true,false,false
+AP013042,26 Oct 13,4,Carmelite,Mountain Gate,No. 4,George Kypriotis,Jon Longridge,Jon Longridge,3-8,3,8,0,1,Completed,true,false,false
+AP013043,26 Oct 13,4,MCC,Clarinda,No. 1,Zachary Grabovic,Mitch Higgins,Mitch Higgins,4-8,4,8,0,1,Completed,true,false,false
+AP013043,26 Oct 13,4,MCC,Clarinda,No. 2,Andi Wessner,Zoran Josic,Andi Wessner,9-8,9,8,1,0,Completed,true,false,false
+AP013043,26 Oct 13,4,MCC,Clarinda,No. 3,Dilan Yariz,James Carlson,James Carlson,1-8,1,8,0,1,Completed,true,false,false
+AP013043,26 Oct 13,4,MCC,Clarinda,No. 4,Tom Scofield,Rob Cvitkovic,Tom Scofield,8-6,8,6,1,0,Completed,true,false,false
+AP013044,26 Oct 13,4,BLTC,Hampton,No. 1,Jarrod Broadbent,Marvin Barker,Jarrod Broadbent,8-1,8,1,1,0,Completed,true,false,false
+AP013044,26 Oct 13,4,BLTC,Hampton,No. 2,Ned Whitaker,Chris Quinn,Ned Whitaker,8-4,8,4,1,0,Completed,true,false,false
+AP013044,26 Oct 13,4,BLTC,Hampton,No. 3,Eddie Myers,Miguel Francis,Eddie Myers,9-7,9,7,1,0,Completed,true,false,false
+AP013044,26 Oct 13,4,BLTC,Hampton,No. 4,Morgan Young,Phil Holm,Morgan Young,8-2,8,2,1,0,Completed,true,false,false
+AP013051,09 Nov 13,5,Clarinda,Hampton,No. 1,Mitch Higgins,Evan Warring,Evan Warring,8-9,8,9,0,1,Completed,true,false,false
+AP013051,09 Nov 13,5,Clarinda,Hampton,No. 2,Zoran Josic,Luke Thwaites,Luke Thwaites,6-8,6,8,0,1,Completed,true,false,false
+AP013051,09 Nov 13,5,Clarinda,Hampton,No. 3,James Carlson,Pat Landy,James Carlson,8-6,8,6,1,0,Completed,true,false,false
+AP013051,09 Nov 13,5,Clarinda,Hampton,No. 4,Rob Cvitkovic,Chris Quinn,Chris Quinn,1-8,1,8,0,1,Completed,true,false,false
+AP013052,09 Nov 13,5,MCC,Carmelite,No. 1,Paul Munoz,Simon Arms,Simon Arms,4-8,4,8,0,1,Completed,true,false,false
+AP013052,09 Nov 13,5,MCC,Carmelite,No. 2,Zachary Grabovic,Damien Pound,Zachary Grabovic,9-7,9,7,1,0,Completed,true,false,false
+AP013052,09 Nov 13,5,MCC,Carmelite,No. 3,Tyler Tranquille,Chris Arms,Tyler Tranquille,8-4,8,4,1,0,Completed,true,false,false
+AP013052,09 Nov 13,5,MCC,Carmelite,No. 4,Scott Kaiser,James White,James White,2-8,2,8,0,1,Completed,true,false,false
+AP013053,09 Nov 13,5,GPHC,BLTC,No. 1,Tom Zaleski,Jarrod Broadbent,Jarrod Broadbent,3-8,3,8,0,1,Completed,true,false,false
+AP013053,09 Nov 13,5,GPHC,BLTC,No. 2,Andrew Lewis,Pat Fitzgerald,Pat Fitzgerald,6-8,6,8,0,1,Completed,true,false,false
+AP013053,09 Nov 13,5,GPHC,BLTC,No. 3,Daniel Oltvay,Eddie Myers,Eddie Myers,2-8,2,8,0,1,Completed,true,false,false
+AP013053,09 Nov 13,5,GPHC,BLTC,No. 4,Mykal Benham,Mal Pearson,Mykal Benham,8-2,8,2,1,0,Completed,true,false,false
+AP013054,09 Nov 13,5,Mt Eliza,Mountain Gate,No. 1,Brad Grose,Michael Turlejski,Michael Turlejski,4-8,4,8,0,1,Completed,true,false,false
+AP013054,09 Nov 13,5,Mt Eliza,Mountain Gate,No. 2,Jake McKenzie,Steve Giamarco,Jake McKenzie,9-8,9,8,1,0,Completed,true,false,false
+AP013054,09 Nov 13,5,Mt Eliza,Mountain Gate,No. 3,Mike Stephenson,Jon Longridge,Jon Longridge,6-8,6,8,0,1,Completed,true,false,false
+AP013054,09 Nov 13,5,Mt Eliza,Mountain Gate,No. 4,Steve Foot,Seb Krivohlavy,Steve Foot,8-1,8,1,1,0,Completed,true,false,false
+AP013061,16 Nov 13,6,Mountain Gate,Clarinda,No. 1,Michael Turlejski,Mitch Higgins,Michael Turlejski,8-4,8,4,1,0,Completed,true,false,false
+AP013061,16 Nov 13,6,Mountain Gate,Clarinda,No. 2,Steve Giamarco,Zoran Josic,Steve Giamarco,8-2,8,2,1,0,Completed,true,false,false
+AP013061,16 Nov 13,6,Mountain Gate,Clarinda,No. 3,Jon Longridge,James Carlson,Jon Longridge,8-6,8,6,1,0,Completed,true,false,false
+AP013061,16 Nov 13,6,Mountain Gate,Clarinda,No. 4,Seb Krivohlavy,Rob Cvitkovic,Seb Krivohlavy,9-8,9,8,1,0,Completed,true,false,false
+AP013062,16 Nov 13,6,Hampton,Mt Eliza,No. 1,Marvin Barker,Jake McKenzie,Jake McKenzie,5-8,5,8,0,1,Completed,true,false,false
+AP013062,16 Nov 13,6,Hampton,Mt Eliza,No. 2,Chris Quinn,Mike Stephenson,Mike Stephenson,2-8,2,8,0,1,Completed,true,false,false
+AP013062,16 Nov 13,6,Hampton,Mt Eliza,No. 3,Phil Holm,Corey Child,Corey Child,6-8,6,8,0,1,Completed,true,false,false
+AP013062,16 Nov 13,6,Hampton,Mt Eliza,No. 4,Anthony Tamborriello,Craig Ryan,Craig Ryan,6-8,6,8,0,1,Completed,true,false,false
+AP013063,16 Nov 13,6,Carmelite,GPHC,No. 1,Simon Arms,Andrew Thomas,Andrew Thomas,3-8,3,8,0,1,Completed,true,false,false
+AP013063,16 Nov 13,6,Carmelite,GPHC,No. 2,Stefan Konstantinidis,Anthony Hampson,Stefan Konstantinidis,8-2,8,2,1,0,Completed,true,false,false
+AP013063,16 Nov 13,6,Carmelite,GPHC,No. 3,Damien Pound,Tom Zaleski,Tom Zaleski,8-9,8,9,0,1,Completed,true,false,false
+AP013063,16 Nov 13,6,Carmelite,GPHC,No. 4,Chris Arms,Andrew Lewis,Chris Arms,9-8,9,8,1,0,Completed,true,false,false
+AP013064,16 Nov 13,6,BLTC,MCC,No. 1,Jarrod Broadbent,Paul Munoz,Jarrod Broadbent,8-1,8,1,1,0,Completed,true,false,false
+AP013064,16 Nov 13,6,BLTC,MCC,No. 2,Ned Whitaker,Zachary Grabovic,Ned Whitaker,8-3,8,3,1,0,Completed,true,false,false
+AP013064,16 Nov 13,6,BLTC,MCC,No. 3,Eddie Myers,Dilan Yariz,Eddie Myers,8-1,8,1,1,0,Completed,true,false,false
+AP013064,16 Nov 13,6,BLTC,MCC,No. 4,Mal Pearson,Tyler Tranquille,Mal Pearson,8-4,8,4,1,0,Completed,true,false,false
+AP013071,23 Nov 13,7,Mt Eliza,Clarinda,No. 1,Brad Grose,Mitch Higgins,Brad Grose,8-4,8,4,1,0,Completed,true,false,false
+AP013071,23 Nov 13,7,Mt Eliza,Clarinda,No. 2,Jake McKenzie,Zoran Josic,Zoran Josic,8-9,8,9,0,1,Completed,true,false,false
+AP013071,23 Nov 13,7,Mt Eliza,Clarinda,No. 3,Mike Stephenson,Rob Cvitkovic,Mike Stephenson,8-2,8,2,1,0,Completed,true,false,false
+AP013071,23 Nov 13,7,Mt Eliza,Clarinda,No. 4,Steve Foot,Antoine Haddad,Steve Foot,8-0,8,0,1,0,Completed,true,false,false
+AP013074,23 Nov 13,7,Carmelite,BLTC,No. 1,Simon Arms,Jarrod Broadbent,Jarrod Broadbent,5-8,5,8,0,1,Completed,true,false,false
+AP013074,23 Nov 13,7,Carmelite,BLTC,No. 2,Stefan Konstantinidis,Eddie Myers,Eddie Myers,5-8,5,8,0,1,Completed,true,false,false
+AP013074,23 Nov 13,7,Carmelite,BLTC,No. 3,Damien Pound,Morgan Young,Morgan Young,4-8,4,8,0,1,Completed,true,false,false
+AP013074,23 Nov 13,7,Carmelite,BLTC,No. 4,Ian Anderson,Matt Levey,Ian Anderson,8-3,8,3,1,0,Completed,true,false,false
+AP013081,30 Nov 13,8,BLTC,Mt Eliza,No. 1,Jarrod Broadbent,Jake McKenzie,Jarrod Broadbent,8-5,8,5,1,0,Completed,true,false,false
+AP013081,30 Nov 13,8,BLTC,Mt Eliza,No. 2,Eddie Myers,Corey Child,Eddie Myers,8-5,8,5,1,0,Completed,true,false,false
+AP013081,30 Nov 13,8,BLTC,Mt Eliza,No. 3,Socrates Borotis,Craig Ryan,Socrates Borotis,8-1,8,1,1,0,Completed,true,false,false
+AP013081,30 Nov 13,8,BLTC,Mt Eliza,No. 4,Matt Levey,Hamish McLeod,Hamish McLeod,4-8,4,8,0,1,Completed,true,false,false
+AP013082,30 Nov 13,8,GPHC,Mountain Gate,No. 1,Andrew Thomas,Michael Turlejski,Andrew Thomas,8-0,8,0,1,0,Completed,true,false,false
+AP013082,30 Nov 13,8,GPHC,Mountain Gate,No. 2,Tom Zaleski,Paul Ferguson,Paul Ferguson,6-8,6,8,0,1,Completed,true,false,false
+AP013082,30 Nov 13,8,GPHC,Mountain Gate,No. 3,Simeon Press,Jon Longridge,Jon Longridge,5-8,5,8,0,1,Completed,true,false,false
+AP013082,30 Nov 13,8,GPHC,Mountain Gate,No. 4,Felix Bruemmer,Seb Krivohlavy,Seb Krivohlavy,6-8,6,8,0,1,Completed,true,false,false
+AP013083,30 Nov 13,8,Carmelite,Clarinda,No. 1,Simon Arms,Zoran Josic,Zoran Josic,6-8,6,8,0,1,Completed,true,false,false
+AP013083,30 Nov 13,8,Carmelite,Clarinda,No. 2,Stefan Konstantinidis,James Carlson,James Carlson,5-8,5,8,0,1,Completed,true,false,false
+AP013083,30 Nov 13,8,Carmelite,Clarinda,No. 3,Damien Pound,Rob Cvitkovic,Rob Cvitkovic,2-8,2,8,0,1,Completed,true,false,false
+AP013083,30 Nov 13,8,Carmelite,Clarinda,No. 4,Chris Arms,Antoine Haddad,Chris Arms,8-2,8,2,1,0,Completed,true,false,false
+AP013084,30 Nov 13,8,MCC,Hampton,No. 1,Zachary Grabovic,Pat Landy,Zachary Grabovic,8-2,8,2,1,0,Completed,true,false,false
+AP013084,30 Nov 13,8,MCC,Hampton,No. 2,Dilan Yariz,Chris Quinn,Chris Quinn,3-8,3,8,0,1,Completed,true,false,false
+AP013084,30 Nov 13,8,MCC,Hampton,No. 3,Stephen Schweier,Miguel Francis,Miguel Francis,0-8,0,8,0,1,Completed,true,false,false
+AP013084,30 Nov 13,8,MCC,Hampton,No. 4,Geoff Patsouris,Anthony Tamborriello,Anthony Tamborriello,8-9,8,9,0,1,Completed,true,false,false
+AP013091,07 Dec 13,9,Mt Eliza,MCC,No. 1,Mike Stephenson,Dilan Yariz,Mike Stephenson,8-2,8,2,1,0,Completed,true,false,false
+AP013091,07 Dec 13,9,Mt Eliza,MCC,No. 2,Corey Child,Stephen Schweier,Corey Child,8-1,8,1,1,0,Completed,true,false,false
+AP013091,07 Dec 13,9,Mt Eliza,MCC,No. 3,Steve Foot,Arthur Kokoris,Steve Foot,8-1,8,1,1,0,Completed,true,false,false
+AP013091,07 Dec 13,9,Mt Eliza,MCC,No. 4,David Laird,Tom Ranger,David Laird,8-0,8,0,1,0,Completed,true,false,false
+AP013092,07 Dec 13,9,Mountain Gate,BLTC,No. 1,Michael Turlejski,Ned Whitaker,Michael Turlejski,8-5,8,5,1,0,Completed,true,false,false
+AP013092,07 Dec 13,9,Mountain Gate,BLTC,No. 2,Paul Ferguson,Eddie Myers,Eddie Myers,5-8,5,8,0,1,Completed,true,false,false
+AP013092,07 Dec 13,9,Mountain Gate,BLTC,No. 3,Jon Longridge,Socrates Borotis,Socrates Borotis,7-9,7,9,0,1,Completed,true,false,false
+AP013092,07 Dec 13,9,Mountain Gate,BLTC,No. 4,Seb Krivohlavy,Mal Pearson,Mal Pearson,8-9,8,9,0,1,Completed,true,false,false
+AP013093,07 Dec 13,9,Clarinda,GPHC,No. 1,Mitch Higgins,Andrew Thomas,Andrew Thomas,1-8,1,8,0,1,Completed,true,false,false
+AP013093,07 Dec 13,9,Clarinda,GPHC,No. 2,James Carlson,Anthony Hampson,Anthony Hampson,1-8,1,8,0,1,Completed,true,false,false
+AP013093,07 Dec 13,9,Clarinda,GPHC,No. 3,Rob Cvitkovic,Tom Zaleski,Rob Cvitkovic,8-4,8,4,1,0,Completed,true,false,false
+AP013093,07 Dec 13,9,Clarinda,GPHC,No. 4,Antoine Haddad,Andrew Lewis,Andrew Lewis,1-8,1,8,0,1,Completed,true,false,false
+AP013094,07 Dec 13,9,Hampton,Carmelite,No. 1,Evan Warring,Simon Arms,Simon Arms,6-8,6,8,0,1,Completed,true,false,false
+AP013094,07 Dec 13,9,Hampton,Carmelite,No. 2,Chris Quinn,Stefan Konstantinidis,Chris Quinn,8-3,8,3,1,0,Completed,true,false,false
+AP013094,07 Dec 13,9,Hampton,Carmelite,No. 3,Anthony Tamborriello,George Kypriotis,George Kypriotis,8-9,8,9,0,1,Completed,true,false,false
+AP013094,07 Dec 13,9,Hampton,Carmelite,No. 4,Macgregor Anderson,Frederico Barbieri,Frederico Barbieri,2-8,2,8,0,1,Completed,true,false,false
+AP013101,14 Dec 13,10,Carmelite,Mt Eliza,No. 1,Simon Arms,Mike Stephenson,Mike Stephenson,4-8,4,8,0,1,Completed,true,false,false
+AP013101,14 Dec 13,10,Carmelite,Mt Eliza,No. 2,Stefan Konstantinidis,Corey Child,Corey Child,3-8,3,8,0,1,Completed,true,false,false
+AP013101,14 Dec 13,10,Carmelite,Mt Eliza,No. 3,Chris Arms,David Laird,David Laird,5-8,5,8,0,1,Completed,true,false,false
+AP013101,14 Dec 13,10,Carmelite,Mt Eliza,No. 4,James White,Craig Ryan,Craig Ryan,2-8,2,8,0,1,Completed,true,false,false
+AP013102,14 Dec 13,10,MCC,Mountain Gate,No. 1,Dilan Yariz,Michael Turlejski,Michael Turlejski,4-8,4,8,0,1,Completed,true,false,false
+AP013102,14 Dec 13,10,MCC,Mountain Gate,No. 2,Geoff Patsouris,Steve Giamarco,Steve Giamarco,0-8,0,8,0,1,Completed,true,false,false
+AP013102,14 Dec 13,10,MCC,Mountain Gate,No. 3,Stephen Schweier,Jon Longridge,Jon Longridge,3-8,3,8,0,1,Completed,true,false,false
+AP013102,14 Dec 13,10,MCC,Mountain Gate,No. 4,Arthur Kokoris,Seb Krivohlavy,Seb Krivohlavy,4-8,4,8,0,1,Completed,true,false,false
+AP013103,14 Dec 13,10,BLTC,Clarinda,No. 1,Jarrod Broadbent,Zoran Josic,Jarrod Broadbent,8-1,8,1,1,0,Completed,true,false,false
+AP013103,14 Dec 13,10,BLTC,Clarinda,No. 2,Pat Fitzgerald,James Carlson,Pat Fitzgerald,8-5,8,5,1,0,Completed,true,false,false
+AP013103,14 Dec 13,10,BLTC,Clarinda,No. 3,Eddie Myers,Rob Cvitkovic,Eddie Myers,8-2,8,2,1,0,Completed,true,false,false
+AP013103,14 Dec 13,10,BLTC,Clarinda,No. 4,Morgan Young,Antoine Haddad,Morgan Young,8-1,8,1,1,0,Completed,true,false,false
+AP013104,14 Dec 13,10,GPHC,Hampton,No. 1,Andrew Thomas,Evan Warring,Andrew Thomas,8-4,8,4,1,0,Completed,true,false,false
+AP013104,14 Dec 13,10,GPHC,Hampton,No. 2,Anthony Hampson,Pat Landy,Anthony Hampson,8-3,8,3,1,0,Completed,true,false,false
+AP013104,14 Dec 13,10,GPHC,Hampton,No. 3,Tom Zaleski,Chris Quinn,Tom Zaleski,9-8,9,8,1,0,Completed,true,false,false
+AP013104,14 Dec 13,10,GPHC,Hampton,No. 4,Andrew Lewis,Phil Holm,Andrew Lewis,8-4,8,4,1,0,Completed,true,false,false
+AP013111,01 Feb 14,11,Mt Eliza,GPHC,No. 1,Brad Grose,Andrew Thomas,Andrew Thomas,6-8,6,8,0,1,Completed,true,false,false
+AP013111,01 Feb 14,11,Mt Eliza,GPHC,No. 2,Jake McKenzie,Anthony Hampson,Anthony Hampson,6-8,6,8,0,1,Completed,true,false,false
+AP013111,01 Feb 14,11,Mt Eliza,GPHC,No. 3,Corey Child,Andrew Lewis,Corey Child,8-5,8,5,1,0,Completed,true,false,false
+AP013111,01 Feb 14,11,Mt Eliza,GPHC,No. 4,David Laird,Barry Schmidt,Barry Schmidt,6-8,6,8,0,1,Completed,true,false,false
+AP013112,01 Feb 14,11,Mountain Gate,Carmelite,No. 1,Michael Turlejski,Simon Arms,Michael Turlejski,8-2,8,2,1,0,Completed,true,false,false
+AP013112,01 Feb 14,11,Mountain Gate,Carmelite,No. 2,Steve Giamarco,Stefan Konstantinidis,Steve Giamarco,8-6,8,6,1,0,Completed,true,false,false
+AP013112,01 Feb 14,11,Mountain Gate,Carmelite,No. 3,Jon Longridge,Damien Pound,Jon Longridge,8-6,8,6,1,0,Completed,true,false,false
+AP013112,01 Feb 14,11,Mountain Gate,Carmelite,No. 4,Seb Krivohlavy,James Fry,Seb Krivohlavy,8-5,8,5,1,0,Completed,true,false,false
+AP013113,01 Feb 14,11,Clarinda,MCC,No. 1,Zoran Josic,Paul Munoz,Paul Munoz,6-8,6,8,0,1,Completed,true,false,false
+AP013113,01 Feb 14,11,Clarinda,MCC,No. 2,James Carlson,Zachary Grabovic,James Carlson,8-5,8,5,1,0,Completed,true,false,false
+AP013113,01 Feb 14,11,Clarinda,MCC,No. 3,Rob Cvitkovic,Nick Batsilas,Rob Cvitkovic,8-4,8,4,1,0,Completed,true,false,false
+AP013113,01 Feb 14,11,Clarinda,MCC,No. 4,Antoine Haddad,Geoff Patsouris,Antoine Haddad,8-4,8,4,1,0,Completed,true,false,false
+AP013114,01 Feb 14,11,Hampton,BLTC,No. 1,Evan Warring,Pat Fitzgerald,Pat Fitzgerald,6-8,6,8,0,1,Completed,true,false,false
+AP013114,01 Feb 14,11,Hampton,BLTC,No. 2,Pat Landy,Ned Whitaker,Ned Whitaker,3-8,3,8,0,1,Completed,true,false,false
+AP013114,01 Feb 14,11,Hampton,BLTC,No. 3,Chris Quinn,Eddie Myers,Chris Quinn,8-3,8,3,1,0,Completed,true,false,false
+AP013114,01 Feb 14,11,Hampton,BLTC,No. 4,Anthony Tamborriello,Morgan Young,Morgan Young,2-8,2,8,0,1,Completed,true,false,false
+AP013121,08 Feb 14,12,Hampton,Clarinda,No. 1,Chris Quinn,Mitch Higgins,Chris Quinn,8-4,8,4,1,0,Completed,true,false,false
+AP013121,08 Feb 14,12,Hampton,Clarinda,No. 2,Miguel Francis,Zoran Josic,Miguel Francis,8-3,8,3,1,0,Completed,true,false,false
+AP013121,08 Feb 14,12,Hampton,Clarinda,No. 3,Frank Tamborriello,James Carlson,James Carlson,1-8,1,8,0,1,Completed,true,false,false
+AP013121,08 Feb 14,12,Hampton,Clarinda,No. 4,Anthony Tamborriello,Rob Cvitkovic,Rob Cvitkovic,7-9,7,9,0,1,Completed,true,false,false
+AP013122,08 Feb 14,12,Carmelite,MCC,No. 1,Simon Arms,Paul Munoz,Simon Arms,8-2,8,2,1,0,Completed,true,false,false
+AP013122,08 Feb 14,12,Carmelite,MCC,No. 2,Stefan Konstantinidis,Nick Batsilas,Stefan Konstantinidis,8-2,8,2,1,0,Completed,true,false,false
+AP013122,08 Feb 14,12,Carmelite,MCC,No. 3,Damien Pound,Dilan Yariz,Damien Pound,8-0,8,0,1,0,Completed,true,false,false
+AP013122,08 Feb 14,12,Carmelite,MCC,No. 4,James White,Geoff Patsouris,James White,8-5,8,5,1,0,Completed,true,false,false
+AP013123,08 Feb 14,12,BLTC,GPHC,No. 1,Jarrod Broadbent,Tom Zaleski,Jarrod Broadbent,8-3,8,3,1,0,Completed,true,false,false
+AP013123,08 Feb 14,12,BLTC,GPHC,No. 2,Ned Whitaker,Andrew Lewis,Ned Whitaker,9-8,9,8,1,0,Completed,true,false,false
+AP013123,08 Feb 14,12,BLTC,GPHC,No. 3,Eddie Myers,Daniel Oltvay,Eddie Myers,8-3,8,3,1,0,Completed,true,false,false
+AP013123,08 Feb 14,12,BLTC,GPHC,No. 4,Mal Pearson,Felix Bruemmer,Mal Pearson,8-2,8,2,1,0,Completed,true,false,false
+AP013131,15 Feb 14,13,Clarinda,Mountain Gate,No. 1,Mitch Higgins,Michael Lancefield,Michael Lancefield,2-8,2,8,0,1,Completed,true,false,false
+AP013131,15 Feb 14,13,Clarinda,Mountain Gate,No. 2,James Carlson,Steve Giamarco,James Carlson,8-2,8,2,1,0,Completed,true,false,false
+AP013131,15 Feb 14,13,Clarinda,Mountain Gate,No. 3,Rob Cvitkovic,Jon Longridge,Jon Longridge,7-9,7,9,0,1,Completed,true,false,false
+AP013131,15 Feb 14,13,Clarinda,Mountain Gate,No. 4,Antoine Haddad,Seb Krivohlavy,Seb Krivohlavy,6-8,6,8,0,1,Completed,true,false,false
+AP013132,15 Feb 14,13,Mt Eliza,Hampton,No. 1,Jake McKenzie,Evan Warring,Jake McKenzie,9-7,9,7,1,0,Completed,true,false,false
+AP013132,15 Feb 14,13,Mt Eliza,Hampton,No. 2,Mike Stephenson,Chris Quinn,Mike Stephenson,9-8,9,8,1,0,Completed,true,false,false
+AP013132,15 Feb 14,13,Mt Eliza,Hampton,No. 3,David Laird,Phil Holm,Phil Holm,6-8,6,8,0,1,Completed,true,false,false
+AP013132,15 Feb 14,13,Mt Eliza,Hampton,No. 4,Craig Dungey,Anthony Tamborriello,Craig Dungey,9-7,9,7,1,0,Completed,true,false,false
+AP013133,15 Feb 14,13,GPHC,Carmelite,No. 1,Simeon Press,Simon Arms,Simon Arms,8-9,8,9,0,1,Completed,true,false,false
+AP013133,15 Feb 14,13,GPHC,Carmelite,No. 2,Andrew Lewis,Stefan Konstantinidis,Stefan Konstantinidis,5-8,5,8,0,1,Completed,true,false,false
+AP013133,15 Feb 14,13,GPHC,Carmelite,No. 3,Daniel Oltvay,Damien Pound,Daniel Oltvay,8-3,8,3,1,0,Completed,true,false,false
+AP013133,15 Feb 14,13,GPHC,Carmelite,No. 4,Mykal Benham,Chris Arms,Mykal Benham,8-6,8,6,1,0,Completed,true,false,false
+AP013134,15 Feb 14,13,MCC,BLTC,No. 1,Paul Munoz,Jarrod Broadbent,Jarrod Broadbent,2-8,2,8,0,1,Completed,true,false,false
+AP013134,15 Feb 14,13,MCC,BLTC,No. 2,Nick Batsilas,Eddie Myers,Eddie Myers,1-8,1,8,0,1,Completed,true,false,false
+AP013134,15 Feb 14,13,MCC,BLTC,No. 3,Dilan Yariz,Morgan Young,Morgan Young,0-8,0,8,0,1,Completed,true,false,false
+AP013134,15 Feb 14,13,MCC,BLTC,No. 4,Geoff Patsouris,Mal Pearson,Mal Pearson,4-8,4,8,0,1,Completed,true,false,false
+AP013141,22 Feb 14,14,Clarinda,Mt Eliza,No. 1,Mitch Higgins,Jake McKenzie,Jake McKenzie,2-8,2,8,0,1,Completed,true,false,false
+AP013141,22 Feb 14,14,Clarinda,Mt Eliza,No. 2,James Carlson,Mike Stephenson,Mike Stephenson,2-8,2,8,0,1,Completed,true,false,false
+AP013141,22 Feb 14,14,Clarinda,Mt Eliza,No. 3,Rob Cvitkovic,Corey Child,Corey Child,6-8,6,8,0,1,Completed,true,false,false
+AP013141,22 Feb 14,14,Clarinda,Mt Eliza,No. 4,Antoine Haddad,David Laird,David Laird,6-8,6,8,0,1,Completed,true,false,false
+AP013142,22 Feb 14,14,Hampton,Mountain Gate,No. 1,Evan Warring,Michael Turlejski,Evan Warring,8-6,8,6,1,0,Completed,true,false,false
+AP013142,22 Feb 14,14,Hampton,Mountain Gate,No. 2,Chris Quinn,Steve Giamarco,Chris Quinn,8-6,8,6,1,0,Completed,true,false,false
+AP013142,22 Feb 14,14,Hampton,Mountain Gate,No. 3,Miguel Francis,Jon Longridge,Jon Longridge,2-8,2,8,0,1,Completed,true,false,false
+AP013142,22 Feb 14,14,Hampton,Mountain Gate,No. 4,Anthony Tamborriello,Seb Krivohlavy,Seb Krivohlavy,3-8,3,8,0,1,Completed,true,false,false
+AP013143,22 Feb 14,14,GPHC,MCC,No. 1,Anthony Hampson,Paul Munoz,Anthony Hampson,8-3,8,3,1,0,Completed,true,false,false
+AP013143,22 Feb 14,14,GPHC,MCC,No. 2,Simeon Press,Dilan Yariz,Simeon Press,8-0,8,0,1,0,Completed,true,false,false
+AP013143,22 Feb 14,14,GPHC,MCC,No. 3,Mykal Benham,Geoff Patsouris,Mykal Benham,8-6,8,6,1,0,Completed,true,false,false
+AP013143,22 Feb 14,14,GPHC,MCC,No. 4,Cory McCallum,Hus Yariz,Cory McCallum,8-0,8,0,1,0,Completed,true,false,false
+AP013144,22 Feb 14,14,BLTC,Carmelite,No. 1,Jarrod Broadbent,Simon Arms,Jarrod Broadbent,8-1,8,1,1,0,Completed,true,false,false
+AP013144,22 Feb 14,14,BLTC,Carmelite,No. 2,Eddie Myers,James Fry,Eddie Myers,8-4,8,4,1,0,Completed,true,false,false
+AP013144,22 Feb 14,14,BLTC,Carmelite,No. 3,Morgan Young,Stefan Konstantinidis,Stefan Konstantinidis,7-9,7,9,0,1,Completed,true,false,false
+AP013144,22 Feb 14,14,BLTC,Carmelite,No. 4,Mal Pearson,Damien Pound,Mal Pearson,9-7,9,7,1,0,Completed,true,false,false
+AP013301,,16,BLTC,Mountain Gate,No. 1,Jarrod Broadbent,Michael Turlejski,Michael Turlejski,4-8,4,8,0,1,Completed,true,false,false
+AP013301,,16,BLTC,Mountain Gate,No. 2,Pat Fitzgerald,Steve Giamarco,Steve Giamarco,7-9,7,9,0,1,Completed,true,false,false
+AP013301,,16,BLTC,Mountain Gate,No. 3,Ned Whitaker,Jon Longridge,Jon Longridge,7-9,7,9,0,1,Completed,true,false,false
+AP013301,,16,BLTC,Mountain Gate,No. 4,Morgan Young,Seb Krivohlavy,Morgan Young,8-1,8,1,1,0,Completed,true,false,false
+AP013302,,16,GPHC,Mt Eliza,No. 1,Anthony Hampson,Brad Grose,Anthony Hampson,9-7,9,7,1,0,Completed,true,false,false
+AP013302,,16,GPHC,Mt Eliza,No. 2,Tom Zaleski,Jake McKenzie,Jake McKenzie,2-8,2,8,0,1,Completed,true,false,false
+AP013302,,16,GPHC,Mt Eliza,No. 3,Simeon Press,Mike Stephenson,Simeon Press,8-2,8,2,1,0,Completed,true,false,true
+AP013302,,16,GPHC,Mt Eliza,No. 4,Andrew Lewis,David Laird,Andrew Lewis,8-6,8,6,1,0,Completed,true,true,false
+AP013311,,16,BLTC,GPHC,No. 1,Jarrod Broadbent,Andrew Thomas,Jarrod Broadbent,8-3,8,3,1,0,Completed,true,false,false
+AP013311,,16,BLTC,GPHC,No. 2,Ned Whitaker,Anthony Hampson,Anthony Hampson,4-8,4,8,0,1,Completed,true,false,false
+AP013311,,16,BLTC,GPHC,No. 3,Eddie Myers,Simeon Press,Eddie Myers,8-5,8,5,1,0,Completed,true,false,false
+AP013311,,16,BLTC,GPHC,No. 4,Morgan Young,Andrew Lewis,Morgan Young,8-5,8,5,1,0,Completed,true,false,false
+AP013321,,17,Mountain Gate,BLTC,No. 1,Michael Turlejski,Jarrod Broadbent,Michael Turlejski,9-8,9,8,1,0,Completed,true,false,false
+AP013321,,17,Mountain Gate,BLTC,No. 2,Steve Giamarco,Ned Whitaker,Ned Whitaker,5-8,5,8,0,1,Completed,true,false,false
+AP013321,,17,Mountain Gate,BLTC,No. 3,Michael Lancefield,Eddie Myers,Michael Lancefield,8-3,8,3,1,0,Completed,true,true,false
+AP013321,,17,Mountain Gate,BLTC,No. 4,Seb Krivohlavy,Morgan Young,Morgan Young,5-8,5,8,0,1,Completed,true,false,false

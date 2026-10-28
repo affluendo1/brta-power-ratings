@@ -1,0 +1,105 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP009011,14 Nov 20,1,BLTC,Dendy Park,No. 1,Lisa Fitzgerald,Juliet McKenzie,Lisa Fitzgerald,8-2,8,2,1,0,Completed,true,false,false
+AP009011,14 Nov 20,1,BLTC,Dendy Park,No. 2,Charlotte Bartholomeusz,Zahra Kelana,Charlotte Bartholomeusz,8-3,8,3,1,0,Completed,true,false,false
+AP009011,14 Nov 20,1,BLTC,Dendy Park,No. 3,Simone Dunker,Emily Collins,Simone Dunker,8-5,8,5,1,0,Completed,true,false,false
+AP009011,14 Nov 20,1,BLTC,Dendy Park,No. 4,Sophie Christie,Elizabeth Carnes,Sophie Christie,8-2,8,2,1,0,Completed,true,false,false
+AP009012,14 Nov 20,1,Chadstone,Royal South Yarra,No. 1,Louisa Han,Audrey Teo,Audrey Teo,7-8,7,8,0,1,Completed,true,false,false
+AP009012,14 Nov 20,1,Chadstone,Royal South Yarra,No. 2,Chloe Dredge,Molly Reiger,Chloe Dredge,8-3,8,3,1,0,Completed,true,false,false
+AP009012,14 Nov 20,1,Chadstone,Royal South Yarra,No. 3,Sophie Elvey,Vivian Fidantsis,Vivian Fidantsis,6-8,6,8,0,1,Completed,true,false,true
+AP009012,14 Nov 20,1,Chadstone,Royal South Yarra,No. 4,Danielle Fisher,Charmaine Kong,Danielle Fisher,8-0,8,0,1,0,Completed,true,false,true
+AP009013,14 Nov 20,1,Mt Eliza,Hawthorn,No. 1,Emily Martin,Renae Aron,Emily Martin,8-3,8,3,1,0,Completed,true,false,false
+AP009013,14 Nov 20,1,Mt Eliza,Hawthorn,No. 2,Victoria Stewart,Tina Bianchi,Victoria Stewart,8-5,8,5,1,0,Completed,true,false,false
+AP009013,14 Nov 20,1,Mt Eliza,Hawthorn,No. 3,Summer Jones,Nadine Maloney,Summer Jones,8-5,8,5,1,0,Completed,true,false,false
+AP009013,14 Nov 20,1,Mt Eliza,Hawthorn,No. 4,Lara Bond,Madeleine Penny,Lara Bond,8-6,8,6,1,0,Completed,true,false,false
+AP009021,21 Nov 20,2,Hawthorn,BLTC,No. 1,Renae Aron,Lisa Fitzgerald,Lisa Fitzgerald,0-8,0,8,0,1,Completed,true,false,false
+AP009021,21 Nov 20,2,Hawthorn,BLTC,No. 2,Tina Bianchi,Simone Dunker,Tina Bianchi,8-1,8,1,1,0,Completed,true,false,false
+AP009021,21 Nov 20,2,Hawthorn,BLTC,No. 3,Lyn Robinson,Charlotte Anderson,Charlotte Anderson,3-8,3,8,0,1,Completed,true,false,false
+AP009021,21 Nov 20,2,Hawthorn,BLTC,No. 4,Madeleine Penny,Sophie Christie,Sophie Christie,4-8,4,8,0,1,Completed,true,false,false
+AP009022,21 Nov 20,2,Royal South Yarra,Mt Eliza,No. 1,Zoe Theodorakopoulos,Emily Martin,Emily Martin,5-8,5,8,0,1,Completed,true,false,false
+AP009022,21 Nov 20,2,Royal South Yarra,Mt Eliza,No. 2,Audrey Teo,Victoria Stewart,Audrey Teo,8-2,8,2,1,0,Completed,true,false,false
+AP009022,21 Nov 20,2,Royal South Yarra,Mt Eliza,No. 3,Natasha Van Bemmel,Summer Jones,Natasha Van Bemmel,8-0,8,0,1,0,Completed,true,false,false
+AP009022,21 Nov 20,2,Royal South Yarra,Mt Eliza,No. 4,Molly Reiger,Hope Backx,Hope Backx,6-8,6,8,0,1,Completed,true,false,false
+AP009023,21 Nov 20,2,Dendy Park,Chadstone,No. 1,Juliet McKenzie,Louisa Han,Louisa Han,4-8,4,8,0,1,Completed,true,false,false
+AP009023,21 Nov 20,2,Dendy Park,Chadstone,No. 2,Jasmine Ellis,Chloe Dredge,Chloe Dredge,5-8,5,8,0,1,Completed,true,false,false
+AP009023,21 Nov 20,2,Dendy Park,Chadstone,No. 3,Emily Collins,Sophie Elvey,Emily Collins,8-7,8,7,1,0,Completed,true,false,false
+AP009023,21 Nov 20,2,Dendy Park,Chadstone,No. 4,Elizabeth Carnes,Danielle Fisher,Danielle Fisher,0-8,0,8,0,1,Completed,true,false,false
+AP009031,28 Nov 20,3,BLTC,Chadstone,No. 1,Simone Dunker,Chloe Dredge,Chloe Dredge,5-8,5,8,0,1,Completed,true,false,false
+AP009031,28 Nov 20,3,BLTC,Chadstone,No. 2,Charlotte Anderson,Sophie Elvey,Charlotte Anderson,8-6,8,6,1,0,Completed,true,false,false
+AP009031,28 Nov 20,3,BLTC,Chadstone,No. 3,Sophie Christie,Danielle Fisher,Danielle Fisher,4-8,4,8,0,1,Completed,true,false,false
+AP009031,28 Nov 20,3,BLTC,Chadstone,No. 4,Stacey Southern,Natalie Menchikova,Natalie Menchikova,3-8,3,8,0,1,Completed,true,true,false
+AP009032,28 Nov 20,3,Mt Eliza,Dendy Park,No. 1,Victoria Stewart,Juliet McKenzie,Victoria Stewart,8-3,8,3,1,0,Completed,true,false,false
+AP009032,28 Nov 20,3,Mt Eliza,Dendy Park,No. 2,Summer Jones,Jasmine Ellis,Summer Jones,8-6,8,6,1,0,Completed,true,false,false
+AP009032,28 Nov 20,3,Mt Eliza,Dendy Park,No. 3,Lara Bond,Zahra Kelana,Lara Bond,8-3,8,3,1,0,Completed,true,false,false
+AP009032,28 Nov 20,3,Mt Eliza,Dendy Park,No. 4,Hope Backx,Emily Collins,Hope Backx,8-0,8,0,1,0,Completed,true,false,false
+AP009041,05 Dec 20,4,Royal South Yarra,BLTC,No. 1,Zoe Theodorakopoulos,Lisa Fitzgerald,Zoe Theodorakopoulos,8-3,8,3,1,0,Completed,true,false,false
+AP009041,05 Dec 20,4,Royal South Yarra,BLTC,No. 2,Pearl Jansz,Charlotte Bartholomeusz,Pearl Jansz,8-1,8,1,1,0,Completed,true,true,false
+AP009041,05 Dec 20,4,Royal South Yarra,BLTC,No. 3,Natasha Van Bemmel,Charlotte Anderson,Natasha Van Bemmel,8-7,8,7,1,0,Completed,true,false,false
+AP009041,05 Dec 20,4,Royal South Yarra,BLTC,No. 4,Loretta Sheales,Sophie Christie,Loretta Sheales,8-1,8,1,1,0,Completed,true,false,false
+AP009042,05 Dec 20,4,Dendy Park,Hawthorn,No. 1,Zahra Kelana,Lyn Robinson,Zahra Kelana,8-0,8,0,1,0,Completed,true,false,false
+AP009042,05 Dec 20,4,Dendy Park,Hawthorn,No. 2,Danaya Malendan,Madeleine Penny,Madeleine Penny,2-8,2,8,0,1,Completed,true,true,false
+AP009042,05 Dec 20,4,Dendy Park,Hawthorn,No. 3,Elizabeth Carnes,Leona Dowman,Elizabeth Carnes,8-5,8,5,1,0,Completed,true,false,true
+AP009042,05 Dec 20,4,Dendy Park,Hawthorn,No. 4,Savannah James,Marion Hoffman,Savannah James,8-3,8,3,1,0,Completed,true,true,true
+AP009043,05 Dec 20,4,Chadstone,Mt Eliza,No. 1,Louisa Han,Emily Martin,Emily Martin,5-8,5,8,0,1,Completed,true,false,false
+AP009043,05 Dec 20,4,Chadstone,Mt Eliza,No. 2,Chloe Dredge,Victoria Stewart,Chloe Dredge,8-6,8,6,1,0,Completed,true,false,false
+AP009043,05 Dec 20,4,Chadstone,Mt Eliza,No. 3,Sophie Elvey,Lara Bond,Lara Bond,7-8,7,8,0,1,Completed,true,false,false
+AP009043,05 Dec 20,4,Chadstone,Mt Eliza,No. 4,Danielle Fisher,Kirra Bond-Scott,Danielle Fisher,8-0,8,0,1,0,Completed,true,false,false
+AP009051,12 Dec 20,5,BLTC,Mt Eliza,No. 1,Lisa Fitzgerald,Emily Martin,Emily Martin,3-8,3,8,0,1,Completed,true,false,false
+AP009051,12 Dec 20,5,BLTC,Mt Eliza,No. 2,Monica Biernat,Victoria Stewart,Monica Biernat,8-1,8,1,1,0,Completed,true,true,false
+AP009051,12 Dec 20,5,BLTC,Mt Eliza,No. 3,Charlotte Bartholomeusz,Summer Jones,Summer Jones,6-8,6,8,0,1,Completed,true,false,false
+AP009051,12 Dec 20,5,BLTC,Mt Eliza,No. 4,Charlotte Anderson,Hope Backx,Hope Backx,0-8,0,8,0,1,Completed,true,false,false
+AP009052,12 Dec 20,5,Royal South Yarra,Dendy Park,No. 1,Zoe Theodorakopoulos,Jasmine Ellis,Zoe Theodorakopoulos,8-7,8,7,1,0,Completed,true,false,false
+AP009052,12 Dec 20,5,Royal South Yarra,Dendy Park,No. 2,Audrey Teo,Zoe Barbakos,Audrey Teo,8-2,8,2,1,0,Completed,true,false,true
+AP009052,12 Dec 20,5,Royal South Yarra,Dendy Park,No. 3,Natasha Van Bemmel,Zahra Kelana,Natasha Van Bemmel,8-1,8,1,1,0,Completed,true,false,false
+AP009052,12 Dec 20,5,Royal South Yarra,Dendy Park,No. 4,Loretta Sheales,Danaya Malendan,Loretta Sheales,8-2,8,2,1,0,Completed,true,false,true
+AP009061,30 Jan 21,6,Dendy Park,BLTC,No. 1,Jasmine Ellis,Lisa Fitzgerald,Lisa Fitzgerald,3-8,3,8,0,1,Completed,true,false,false
+AP009061,30 Jan 21,6,Dendy Park,BLTC,No. 2,Zahra Kelana,Monica Biernat,Monica Biernat,0-8,0,8,0,1,Completed,true,false,true
+AP009061,30 Jan 21,6,Dendy Park,BLTC,No. 3,Celina Yang,Charlotte Bartholomeusz,Charlotte Bartholomeusz,2-8,2,8,0,1,Completed,true,false,false
+AP009061,30 Jan 21,6,Dendy Park,BLTC,No. 4,Emily Collins,Sophie Christie,Sophie Christie,5-8,5,8,0,1,Completed,true,false,false
+AP009062,30 Jan 21,6,Royal South Yarra,Chadstone,No. 1,Zoe Theodorakopoulos,Chloe Dredge,Zoe Theodorakopoulos,8-1,8,1,1,0,Completed,true,false,false
+AP009062,30 Jan 21,6,Royal South Yarra,Chadstone,No. 2,Audrey Teo,Likitha Sitapurem,Audrey Teo,8-3,8,3,1,0,Completed,true,false,true
+AP009062,30 Jan 21,6,Royal South Yarra,Chadstone,No. 3,Natasha Van Bemmel,Sophie Elvey,Natasha Van Bemmel,8-0,8,0,1,0,Completed,true,false,false
+AP009062,30 Jan 21,6,Royal South Yarra,Chadstone,No. 4,Georgia Pugh,Danielle Fisher,Danielle Fisher,3-8,3,8,0,1,Completed,true,false,false
+AP009063,30 Jan 21,6,Hawthorn,Mt Eliza,No. 1,Fiona Walker,Victoria Stewart,Victoria Stewart,0-8,0,8,0,1,Completed,true,false,false
+AP009063,30 Jan 21,6,Hawthorn,Mt Eliza,No. 2,Lyn Robinson,Summer Jones,Summer Jones,0-8,0,8,0,1,Completed,true,false,false
+AP009063,30 Jan 21,6,Hawthorn,Mt Eliza,No. 3,Madeleine Penny,Kirra Bond-Scott,Kirra Bond-Scott,5-8,5,8,0,1,Completed,true,false,false
+AP009063,30 Jan 21,6,Hawthorn,Mt Eliza,No. 4,Leona Dowman,Hope Backx,Hope Backx,3-8,3,8,0,1,Completed,true,true,false
+AP009071,06 Feb 21,7,BLTC,Hawthorn,No. 1,Sienna Di Natase,Nadine Maloney,Sienna Di Natase,8-1,8,1,1,0,Completed,true,true,false
+AP009071,06 Feb 21,7,BLTC,Hawthorn,No. 2,Charlotte Bartholomeusz,Madeleine Penny,Charlotte Bartholomeusz,8-6,8,6,1,0,Completed,true,false,false
+AP009071,06 Feb 21,7,BLTC,Hawthorn,No. 3,Simone Dunker,Leona Dowman,Leona Dowman,5-8,5,8,0,1,Completed,true,false,true
+AP009071,06 Feb 21,7,BLTC,Hawthorn,No. 4,Sophie Christie,Marion Hoffman,Sophie Christie,8-3,8,3,1,0,Completed,true,false,true
+AP009072,06 Feb 21,7,Mt Eliza,Royal South Yarra,No. 1,Victoria Stewart,Zoe Theodorakopoulos,Victoria Stewart,8-4,8,4,1,0,Completed,true,false,false
+AP009072,06 Feb 21,7,Mt Eliza,Royal South Yarra,No. 2,Summer Jones,Natasha Van Bemmel,Natasha Van Bemmel,4-8,4,8,0,1,Completed,true,false,false
+AP009072,06 Feb 21,7,Mt Eliza,Royal South Yarra,No. 3,Hope Backx,Molly Reiger,Hope Backx,8-0,8,0,1,0,Completed,true,false,false
+AP009072,06 Feb 21,7,Mt Eliza,Royal South Yarra,No. 4,Kirrally Gardener,Georgia Pugh,Kirrally Gardener,8-1,8,1,1,0,Completed,true,true,false
+AP009073,06 Feb 21,7,Chadstone,Dendy Park,No. 1,Chloe Dredge,Juliet McKenzie,Chloe Dredge,8-1,8,1,1,0,Completed,true,false,false
+AP009073,06 Feb 21,7,Chadstone,Dendy Park,No. 2,Likitha Sitapurem,Zahra Kelana,Zahra Kelana,3-8,3,8,0,1,Completed,true,true,false
+AP009073,06 Feb 21,7,Chadstone,Dendy Park,No. 3,Sophie Elvey,Celina Yang,Sophie Elvey,8-4,8,4,1,0,Completed,true,false,false
+AP009073,06 Feb 21,7,Chadstone,Dendy Park,No. 4,Natalie Menchikova,Elizabeth Carnes,Natalie Menchikova,8-0,8,0,1,0,Completed,true,false,false
+AP009081,20 Feb 21,8,Chadstone,BLTC,No. 1,Chloe Dredge,Lisa Fitzgerald,Lisa Fitzgerald,3-8,3,8,0,1,Completed,true,false,false
+AP009081,20 Feb 21,8,Chadstone,BLTC,No. 2,Likitha Sitapurem,Charlotte Bartholomeusz,Charlotte Bartholomeusz,7-8,7,8,0,1,Completed,true,true,false
+AP009081,20 Feb 21,8,Chadstone,BLTC,No. 3,Sophie Elvey,Simone Dunker,Simone Dunker,0-8,0,8,0,1,Completed,true,false,false
+AP009081,20 Feb 21,8,Chadstone,BLTC,No. 4,Danielle Fisher,Sophie Christie,Sophie Christie,6-8,6,8,0,1,Completed,true,false,false
+AP009082,20 Feb 21,8,Dendy Park,Mt Eliza,No. 1,Juliet McKenzie,Emily Martin,Emily Martin,4-8,4,8,0,1,Completed,true,false,false
+AP009082,20 Feb 21,8,Dendy Park,Mt Eliza,No. 2,Jasmine Ellis,Summer Jones,Summer Jones,7-8,7,8,0,1,Completed,true,false,false
+AP009082,20 Feb 21,8,Dendy Park,Mt Eliza,No. 3,Zahra Kelana,Kirra Bond-Scott,Kirra Bond-Scott,3-8,3,8,0,1,Completed,true,false,false
+AP009082,20 Feb 21,8,Dendy Park,Mt Eliza,No. 4,Emily Collins,Hope Backx,Hope Backx,3-8,3,8,0,1,Completed,true,false,false
+AP009083,20 Feb 21,8,Royal South Yarra,Hawthorn,No. 1,Audrey Teo,Tiffany Gourlay,Audrey Teo,8-2,8,2,1,0,Completed,true,false,false
+AP009083,20 Feb 21,8,Royal South Yarra,Hawthorn,No. 2,Natasha Van Bemmel,Nadine Maloney,Natasha Van Bemmel,8-1,8,1,1,0,Completed,true,false,false
+AP009083,20 Feb 21,8,Royal South Yarra,Hawthorn,No. 3,Molly Reiger,Fiona Walker,Molly Reiger,8-4,8,4,1,0,Completed,true,false,false
+AP009083,20 Feb 21,8,Royal South Yarra,Hawthorn,No. 4,Georgia Pugh,Madeleine Penny,Georgia Pugh,8-3,8,3,1,0,Completed,true,false,false
+AP009091,27 Feb 21,9,BLTC,Royal South Yarra,No. 1,Lisa Fitzgerald,Audrey Teo,Lisa Fitzgerald,8-2,8,2,1,0,Completed,true,false,false
+AP009091,27 Feb 21,9,BLTC,Royal South Yarra,No. 2,Simone Dunker,Loretta Sheales,Loretta Sheales,0-8,0,8,0,1,Completed,true,false,false
+AP009091,27 Feb 21,9,BLTC,Royal South Yarra,No. 3,Charlotte Anderson,Danielja Mijic,Danielja Mijic,3-8,3,8,0,1,Completed,true,false,true
+AP009091,27 Feb 21,9,BLTC,Royal South Yarra,No. 4,Sophie Christie,Mia Savio,Sophie Christie,8-5,8,5,1,0,Completed,true,false,true
+AP009093,27 Feb 21,9,Mt Eliza,Chadstone,No. 1,Emily Martin,Louisa Han,Emily Martin,8-2,8,2,1,0,Completed,true,false,false
+AP009093,27 Feb 21,9,Mt Eliza,Chadstone,No. 2,Summer Jones,Zoe Dredge,Zoe Dredge,6-8,6,8,0,1,Completed,true,false,true
+AP009093,27 Feb 21,9,Mt Eliza,Chadstone,No. 3,Lara Bond,Sophie Elvey,Lara Bond,8-3,8,3,1,0,Completed,true,false,false
+AP009093,27 Feb 21,9,Mt Eliza,Chadstone,No. 4,Helena Zubovic,Danielle Fisher,Danielle Fisher,7-8,7,8,0,1,Completed,true,true,false
+AP009102,13 Mar 21,10,Dendy Park,Royal South Yarra,No. 1,Zahra Kelana,Audrey Teo,Audrey Teo,2-8,2,8,0,1,Completed,true,false,false
+AP009102,13 Mar 21,10,Dendy Park,Royal South Yarra,No. 2,Danaya Malendan,Natasha Van Bemmel,Natasha Van Bemmel,1-8,1,8,0,1,Completed,true,true,false
+AP009102,13 Mar 21,10,Dendy Park,Royal South Yarra,No. 3,Bec Bytheway,Molly Reiger,Bec Bytheway,8-2,8,2,1,0,Completed,true,true,false
+AP009102,13 Mar 21,10,Dendy Park,Royal South Yarra,No. 4,Ciara Ennis,Emily Colin,Emily Colin,1-8,1,8,0,1,Completed,true,true,true
+AP009321,,16,Mt Eliza,Royal South Yarra,No. 1,Emily Martin,Zoe Theodorakopoulos,Emily Martin,8-3,8,3,1,0,Completed,true,false,false
+AP009321,,16,Mt Eliza,Royal South Yarra,No. 2,Victoria Stewart,Audrey Teo,Audrey Teo,0-8,0,8,0,1,Completed,true,false,false
+AP009321,,16,Mt Eliza,Royal South Yarra,No. 3,Summer Jones,Natasha Van Bemmel,Natasha Van Bemmel,3-8,3,8,0,1,Completed,true,false,false
+AP009321,,16,Mt Eliza,Royal South Yarra,No. 4,Hope Backx,Molly Reiger,Hope Backx,8-6,8,6,1,0,Completed,true,false,false

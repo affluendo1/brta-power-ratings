@@ -1,0 +1,109 @@
+{
+  "asset_id": "AP40-AP005",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 19/20",
+  "season_id": "AP40",
+  "season_label": "Summer 19/20",
+  "source_section_code": "AP005",
+  "section_label": "Mixed Rubbers 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Overport Park",
+      "wins": 9,
+      "points": 86.5,
+      "percentage": 157.22,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Kings Park",
+      "wins": 9,
+      "points": 81.5,
+      "percentage": 137.66,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Black Rock",
+      "wins": 8,
+      "points": 65.5,
+      "percentage": 109.57,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Langwarrin",
+      "wins": 5,
+      "points": 51.5,
+      "percentage": 103.91,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "BLTC",
+      "wins": 6,
+      "points": 51,
+      "percentage": 85.63,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Tally Ho",
+      "wins": 4,
+      "points": 45,
+      "percentage": 90.44,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Elwood",
+      "wins": 4,
+      "points": 42,
+      "percentage": 84.21,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "St Pats Mentone",
+      "wins": 2,
+      "points": 25,
+      "percentage": 65.81,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP40-AP005",
+  "fixtures": 59,
+  "completed_fixtures": 51,
+  "draw_fixtures": 59,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 198,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP005033 doubles No. 3: '6-1 6-7'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP005034 doubles No. 2: '6-4 4-5'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP005302 doubles No. 4: '4-6 6-2'. Missing score not inferred; excluded from ratings and game totals.",
+    "No scorecard rubbers for AP005321",
+    "Fixture game totals do not match rubbers for AP005321: TROLS team total 1-0; complete-score total 0-0. Both published records retained."
+  ]
+}

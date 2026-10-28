@@ -1,0 +1,48 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP001011,08 Oct 11,1,regular,Round 1,Clarinda,Legend Park,8,0,8,0,,,49,20,Completed,
+AP001013,08 Oct 11,1,regular,Round 1,St Louis de Mont,East Malvern,0,8,0,8,,,8,48,Completed,
+pending-ap001-r1-kooyong-olgc,08 Oct 11,1,regular,Round 1,Kooyong,OLGC,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP001021,15 Oct 11,2,regular,Round 2,East Malvern,Clarinda,7,1,6,2,,,36,21,Completed,
+AP001022,15 Oct 11,2,regular,Round 2,OLGC,St Louis de Mont,7.5,0.5,6,2,,,52,31,Completed,
+AP001023,15 Oct 11,2,regular,Round 2,Legend Park,Kooyong,8,0,8,0,,,48,10,Completed,
+AP001031,22 Oct 11,3,regular,Round 3,Clarinda,Kooyong,8,0,8,1,,,54,26,Completed,
+pending-ap001-r3-east-malvern-olgc,22 Oct 11,3,regular,Round 3,East Malvern,OLGC,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+pending-ap001-r3-st-louis-de-mont-legend-park,22 Oct 11,3,regular,Round 3,St Louis de Mont,Legend Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP001041,05 Nov 11,4,regular,Round 4,OLGC,Clarinda,7,1,7,4,,,65,54,Completed,
+AP001042,05 Nov 11,4,regular,Round 4,Legend Park,East Malvern,7,1,6,4,,,49,48,Completed,
+AP001043,05 Nov 11,4,regular,Round 4,Kooyong,St Louis de Mont,2,6,4,5,,,43,40,Completed,
+AP001051,12 Nov 11,5,regular,Round 5,Clarinda,St Louis de Mont,6,2,5,4,,,48,46,Completed,
+AP001052,12 Nov 11,5,regular,Round 5,OLGC,Legend Park,8,0,8,0,,,48,16,Completed,
+AP001053,12 Nov 11,5,regular,Round 5,East Malvern,Kooyong,8,0,8,0,,,48,6,Completed,
+AP001062,19 Nov 11,6,regular,Round 6,OLGC,Kooyong,8,0,8,0,,,48,13,Completed,
+pending-ap001-r6-east-malvern-st-louis-de-mont,19 Nov 11,6,regular,Round 6,East Malvern,St Louis de Mont,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap001-r6-legend-park-clarinda,19 Nov 11,6,regular,Round 6,Legend Park,Clarinda,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap001-r7-clarinda-east-malvern,26 Nov 11,7,regular,Round 7,Clarinda,East Malvern,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap001-r7-kooyong-legend-park,26 Nov 11,7,regular,Round 7,Kooyong,Legend Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap001-r7-st-louis-de-mont-olgc,26 Nov 11,7,regular,Round 7,St Louis de Mont,OLGC,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP001081,03 Dec 11,8,regular,Round 8,Kooyong,Clarinda,0,8,1,8,,,22,52,Completed,
+AP001082,03 Dec 11,8,regular,Round 8,Legend Park,St Louis de Mont,7,1,6,3,,,41,31,Completed,
+AP001083,03 Dec 11,8,regular,Round 8,OLGC,East Malvern,0,8,2,8,,,39,60,Completed,
+AP001092,10 Dec 11,9,regular,Round 9,East Malvern,Legend Park,8,0,8,0,,,48,20,Completed,
+AP001093,10 Dec 11,9,regular,Round 9,St Louis de Mont,Kooyong,2,6,4,4,,,38,44,Completed,
+pending-ap001-r9-clarinda-olgc,10 Dec 11,9,regular,Round 9,Clarinda,OLGC,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP001102,17 Dec 11,10,regular,Round 10,Legend Park,OLGC,1,7,3,7,,,45,58,Completed,
+AP001103,17 Dec 11,10,regular,Round 10,Kooyong,East Malvern,2,6,4,5,,,38,47,Completed,
+pending-ap001-r10-st-louis-de-mont-clarinda,17 Dec 11,10,regular,Round 10,St Louis de Mont,Clarinda,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+AP001111,04 Feb 12,11,regular,Round 11,Clarinda,Legend Park,7,1,7,4,,,62,51,Completed,
+AP001112,04 Feb 12,11,regular,Round 11,Kooyong,OLGC,0,8,0,8,,,14,49,Completed,
+AP001113,04 Feb 12,11,regular,Round 11,St Louis de Mont,East Malvern,1,7,2,7,,,31,49,Completed,
+AP001121,11 Feb 12,12,regular,Round 12,East Malvern,Clarinda,8,0,8,0,,,48,6,Completed,
+AP001122,11 Feb 12,12,regular,Round 12,OLGC,St Louis de Mont,7,1,7,2,,,56,37,Completed,
+AP001123,11 Feb 12,12,regular,Round 12,Legend Park,Kooyong,6,2,4,4,,,33,31,Completed,
+AP001131,18 Feb 12,13,regular,Round 13,Clarinda,Kooyong,8,0,8,0,,,48,17,Completed,
+AP001132,18 Feb 12,13,regular,Round 13,St Louis de Mont,Legend Park,6,2,5,4,,,49,41,Completed,
+AP001133,18 Feb 12,13,regular,Round 13,East Malvern,OLGC,6,2,6,5,,,61,47,Completed,
+AP001141,25 Feb 12,14,regular,Round 14,OLGC,Clarinda,4,4,0,0,,,0,0,Completed,
+AP001143,25 Feb 12,14,regular,Round 14,Kooyong,St Louis de Mont,3,5,0,4,,,13,26,Completed,
+pending-ap001-r14-legend-park-east-malvern,25 Feb 12,14,regular,Round 14,Legend Park,East Malvern,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP001311,03 Mar 12,15,regular,Round 15,Clarinda,OLGC,1,7,2,7,,,33,50,Completed,
+pending-ap001-r15-clarinda-st-louis-de-mont,03 Mar 12,15,regular,Round 15,Clarinda,St Louis de Mont,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap001-r15-east-malvern-kooyong,03 Mar 12,15,regular,Round 15,East Malvern,Kooyong,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap001-r15-olgc-legend-park,03 Mar 12,15,regular,Round 15,OLGC,Legend Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP001321,,16,grand_final,Grand final · TROLS entry 2,East Malvern,OLGC,7,1,6,2,,,45,29,Completed,

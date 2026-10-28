@@ -1,0 +1,87 @@
+{
+  "asset_id": "AP51-AP019",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 25/26",
+  "season_id": "AP51",
+  "season_label": "Summer 25/26",
+  "source_section_code": "AP019",
+  "section_label": "Mens Rubs 1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Elwood",
+      "wins": 11,
+      "points": 94,
+      "percentage": 154.98,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Glen Huntly",
+      "wins": 11,
+      "points": 91,
+      "percentage": 149.01,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Chadstone",
+      "wins": 8,
+      "points": 68,
+      "percentage": 107.41,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Kooyong",
+      "wins": 7,
+      "points": 62,
+      "percentage": 112.08,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Albert Park",
+      "wins": 3,
+      "points": 35,
+      "percentage": 76.12,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Hurlingham Park",
+      "wins": 0,
+      "points": 10,
+      "percentage": 49.35,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP51-AP019",
+  "fixtures": 46,
+  "completed_fixtures": 39,
+  "draw_fixtures": 57,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 156,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

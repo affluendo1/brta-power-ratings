@@ -1,0 +1,60 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP005012,04 May 24,1,regular,Round 1,Hawthorn,Elwood Purple,0,8,0,4,0,8,22,49,Completed,
+AP005013,04 May 24,1,regular,Round 1,Pakenham,Mordialloc,1,7,1,3,2,6,25,43,Completed,
+AP005014,04 May 24,1,regular,Round 1,BLTC,Glen Huntly,8,0,4,0,8,2,59,42,Completed,
+pending-ap005-r1-bye-mentone,04 May 24,1,regular,Round 1,Bye,Mentone,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP005022,11 May 24,2,regular,Round 2,Mentone,Hawthorn,8,0,4,0,8,0,50,19,Completed,
+AP005023,11 May 24,2,regular,Round 2,Elwood Purple,Pakenham,2,6,2,2,4,4,33,37,Completed,
+AP005024,11 May 24,2,regular,Round 2,Mordialloc,BLTC,8,0,4,0,8,0,49,16,Completed,
+pending-ap005-r2-glen-huntly-bye,11 May 24,2,regular,Round 2,Glen Huntly,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP005032,18 May 24,3,regular,Round 3,Hawthorn,Glen Huntly,1,7,1,3,3,6,38,51,Completed,
+AP005033,18 May 24,3,regular,Round 3,Pakenham,Mentone,8,0,4,0,8,3,59,48,Completed,
+AP005034,18 May 24,3,regular,Round 3,BLTC,Elwood Purple,1,7,1,3,2,6,30,41,Completed,
+pending-ap005-r3-bye-mordialloc,18 May 24,3,regular,Round 3,Bye,Mordialloc,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP005042,25 May 24,4,regular,Round 4,Mordialloc,Hawthorn,8,0,4,0,8,0,48,5,Completed,
+AP005043,25 May 24,4,regular,Round 4,Glen Huntly,Pakenham,1,7,1,3,2,7,38,50,Completed,
+AP005044,25 May 24,4,regular,Round 4,Mentone,BLTC,0,8,0,4,1,8,32,55,Completed,
+pending-ap005-r4-elwood-purple-bye,25 May 24,4,regular,Round 4,Elwood Purple,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP005051,01 Jun 24,5,regular,Round 5,Pakenham,BLTC,0,8,0,4,0,8,24,49,Completed,
+AP005052,01 Jun 24,5,regular,Round 5,Glen Huntly,Mordialloc,0,8,0,4,0,8,13,48,Completed,
+AP005053,01 Jun 24,5,regular,Round 5,Elwood Purple,Mentone,8,0,4,0,8,0,48,10,Completed,
+pending-ap005-r5-bye-hawthorn,01 Jun 24,5,regular,Round 5,Bye,Hawthorn,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP005061,15 Jun 24,6,regular,Round 6,Hawthorn,Pakenham,1,7,1,3,2,6,22,45,Completed,
+AP005063,15 Jun 24,6,regular,Round 6,Mordialloc,Elwood Purple,7,1,3,1,6,3,48,35,Completed,
+AP005064,15 Jun 24,6,regular,Round 6,Mentone,Glen Huntly,0,8,0,4,2,8,44,58,Completed,
+pending-ap005-r6-bltc-bye,15 Jun 24,6,regular,Round 6,BLTC,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP005072,22 Jun 24,7,regular,Round 7,Hawthorn,BLTC,0,8,0,4,1,8,24,50,Completed,
+AP005073,22 Jun 24,7,regular,Round 7,Glen Huntly,Elwood Purple,2,6,2,2,4,4,30,37,Completed,
+AP005074,22 Jun 24,7,regular,Round 7,Mordialloc,Mentone,8,0,4,0,8,0,48,16,Completed,
+pending-ap005-r7-bye-pakenham,22 Jun 24,7,regular,Round 7,Bye,Pakenham,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap005-r8-elwood-purple-hawthorn,29 Jun 24,8,regular,Round 8,Elwood Purple,Hawthorn,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap005-r8-glen-huntly-bltc,29 Jun 24,8,regular,Round 8,Glen Huntly,BLTC,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap005-r8-mentone-bye,29 Jun 24,8,regular,Round 8,Mentone,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap005-r8-mordialloc-pakenham,29 Jun 24,8,regular,Round 8,Mordialloc,Pakenham,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP005092,13 Jul 24,9,regular,Round 9,Hawthorn,Mentone,6,2,2,2,5,4,44,40,Completed,
+AP005093,13 Jul 24,9,regular,Round 9,Pakenham,Elwood Purple,0,8,0,4,2,8,38,53,Completed,
+AP005094,13 Jul 24,9,regular,Round 9,BLTC,Mordialloc,0,8,0,4,1,8,23,52,Completed,
+pending-ap005-r9-bye-glen-huntly,13 Jul 24,9,regular,Round 9,Bye,Glen Huntly,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap005-r10-elwood-purple-bltc,20 Jul 24,10,regular,Round 10,Elwood Purple,BLTC,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap005-r10-glen-huntly-hawthorn,20 Jul 24,10,regular,Round 10,Glen Huntly,Hawthorn,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap005-r10-mentone-pakenham,20 Jul 24,10,regular,Round 10,Mentone,Pakenham,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap005-r10-mordialloc-bye,20 Jul 24,10,regular,Round 10,Mordialloc,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap005-r11-bltc-mentone,27 Jul 24,11,regular,Round 11,BLTC,Mentone,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap005-r11-bye-elwood-purple,27 Jul 24,11,regular,Round 11,Bye,Elwood Purple,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap005-r11-hawthorn-mordialloc,27 Jul 24,11,regular,Round 11,Hawthorn,Mordialloc,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap005-r11-pakenham-glen-huntly,27 Jul 24,11,regular,Round 11,Pakenham,Glen Huntly,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP005121,03 Aug 24,12,regular,Round 12,BLTC,Pakenham,8,0,4,0,8,2,57,37,Completed,
+AP005122,03 Aug 24,12,regular,Round 12,Mordialloc,Glen Huntly,8,0,4,0,8,1,55,33,Completed,
+AP005123,03 Aug 24,12,regular,Round 12,Mentone,Elwood Purple,0,8,0,4,1,8,20,51,Completed,
+pending-ap005-r12-hawthorn-bye,03 Aug 24,12,regular,Round 12,Hawthorn,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP005131,10 Aug 24,13,regular,Round 13,Pakenham,Hawthorn,6,2,2,2,6,5,61,51,Completed,
+AP005133,10 Aug 24,13,regular,Round 13,Elwood Purple,Mordialloc,0,8,0,4,0,8,14,48,Completed,
+AP005134,10 Aug 24,13,regular,Round 13,Glen Huntly,Mentone,1,7,1,3,4,6,46,49,Completed,
+pending-ap005-r13-bye-bltc,10 Aug 24,13,regular,Round 13,Bye,BLTC,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP005142,17 Aug 24,14,regular,Round 14,BLTC,Hawthorn,8,0,4,0,8,0,48,11,Completed,
+AP005143,17 Aug 24,14,regular,Round 14,Elwood Purple,Glen Huntly,6,2,2,2,6,5,62,58,Completed,
+AP005144,17 Aug 24,14,regular,Round 14,Mentone,Mordialloc,0,8,0,4,0,8,17,49,Completed,
+pending-ap005-r14-pakenham-bye,17 Aug 24,14,regular,Round 14,Pakenham,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP005301,,16,semi_final,Semi-final,Mordialloc,Pakenham,8,0,4,0,8,1,54,31,Completed,
+AP005302,,16,semi_final,Semi-final,Elwood Purple,BLTC,6,2,2,2,4,4,40,35,Completed,
+AP005321,,17,grand_final,Grand final · TROLS entry 2,Mordialloc,Elwood Purple,8,0,4,0,8,1,54,25,Completed,

@@ -1,0 +1,79 @@
+{
+  "asset_id": "AP41-AP011",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 20/21",
+  "season_id": "AP41",
+  "season_label": "Summer 20/21",
+  "source_section_code": "AP011",
+  "section_label": "Ladies s/d 3",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Kooyong",
+      "wins": 8,
+      "points": 67,
+      "percentage": 164.98,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "BLTC",
+      "wins": 3,
+      "points": 41,
+      "percentage": 105.19,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Burwood",
+      "wins": 4,
+      "points": 41,
+      "percentage": 96.23,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Maccabi",
+      "wins": 3,
+      "points": 33,
+      "percentage": 85.58,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "East Malvern",
+      "wins": 1,
+      "points": 18,
+      "percentage": 70.32,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP41-AP011",
+  "fixtures": 31,
+  "completed_fixtures": 21,
+  "draw_fixtures": 57,
+  "singles_rubbers": 80,
+  "doubles_rubbers": 40,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

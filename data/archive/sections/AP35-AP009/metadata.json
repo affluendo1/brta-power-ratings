@@ -1,0 +1,103 @@
+{
+  "asset_id": "AP35-AP009",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Winter 2017",
+  "season_id": "AP35",
+  "season_label": "Winter 2017",
+  "source_section_code": "AP009",
+  "section_label": "Singles/Doubles 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "East Malvern 1",
+      "wins": 13,
+      "points": 121,
+      "percentage": 177.97,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "Glen Huntly",
+      "wins": 10,
+      "points": 107,
+      "percentage": 162.78,
+      "marker": "P"
+    },
+    {
+      "position": 3,
+      "team": "Ormond",
+      "wins": 7,
+      "points": 74,
+      "percentage": 108.01,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "East Malvern 2",
+      "wins": 6,
+      "points": 64.5,
+      "percentage": 91.11,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Port Melbourne",
+      "wins": 4,
+      "points": 55,
+      "percentage": 85.62,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Monash University",
+      "wins": 4,
+      "points": 54,
+      "percentage": 89.94,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Maccabi",
+      "wins": 4,
+      "points": 48.5,
+      "percentage": 73.9,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "MCC Glen Iris Roy",
+      "wins": 2,
+      "points": 36,
+      "percentage": 63.19,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP35-AP009",
+  "fixtures": 60,
+  "completed_fixtures": 57,
+  "draw_fixtures": 60,
+  "singles_rubbers": 218,
+  "doubles_rubbers": 110,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

@@ -1,0 +1,90 @@
+{
+  "asset_id": "AP50-AP009",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Winter 2025",
+  "season_id": "AP50",
+  "season_label": "Winter 2025",
+  "source_section_code": "AP009",
+  "section_label": "Open S/D 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Royal Ave Green",
+      "wins": 9,
+      "points": 92,
+      "percentage": 123.62,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Mordialloc",
+      "wins": 10,
+      "points": 88,
+      "percentage": 111.58,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Royal Ave Purple",
+      "wins": 7,
+      "points": 82,
+      "percentage": 104.75,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "East Malvern Navy",
+      "wins": 5,
+      "points": 74,
+      "percentage": 105.2,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "St Louis de Mont",
+      "wins": 6,
+      "points": 64,
+      "percentage": 89.6,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "East Malvern Blue",
+      "wins": 5,
+      "points": 50,
+      "percentage": 72.51,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP50-AP009",
+  "fixtures": 46,
+  "completed_fixtures": 46,
+  "draw_fixtures": 57,
+  "singles_rubbers": 184,
+  "doubles_rubbers": 90,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP009033 doubles No. 1: '1-2'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP009033 doubles No. 2: '2-0'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

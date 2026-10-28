@@ -1,0 +1,98 @@
+{
+  "asset_id": "AP20-AP107",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 09/10",
+  "season_id": "AP20",
+  "season_label": "Summer 09/10",
+  "source_section_code": "AP107",
+  "section_label": "Mens S/D 8",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Dendy Park",
+      "wins": 0,
+      "points": 80,
+      "percentage": 116.7,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Black Rock",
+      "wins": 0,
+      "points": 78.5,
+      "percentage": 115.27,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Murrumbeena",
+      "wins": 0,
+      "points": 76,
+      "percentage": 131.24,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Carmelite",
+      "wins": 0,
+      "points": 74.5,
+      "percentage": 132.03,
+      "marker": "R"
+    },
+    {
+      "position": 5,
+      "team": "St Pats Mentone",
+      "wins": 0,
+      "points": 56,
+      "percentage": 92.17,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Lauriston",
+      "wins": 0,
+      "points": 39,
+      "percentage": 74.6,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "East Malvern",
+      "wins": 0,
+      "points": 16,
+      "percentage": 63.04,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP20-AP107",
+  "fixtures": 60,
+  "completed_fixtures": 45,
+  "draw_fixtures": 4,
+  "singles_rubbers": 180,
+  "doubles_rubbers": 88,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP107083 doubles No. 2: '3-6 7-5'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP107321 doubles No. 2: '3-6 5-2'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

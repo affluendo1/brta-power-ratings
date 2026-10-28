@@ -1,0 +1,92 @@
+{
+  "asset_id": "AP33-AP004",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Winter 2016",
+  "season_id": "AP33",
+  "season_label": "Winter 2016",
+  "source_section_code": "AP004",
+  "section_label": "Mixed Rubbers 1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Elwood",
+      "wins": 12,
+      "points": 93,
+      "percentage": 137.28,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "St Pauls",
+      "wins": 10,
+      "points": 78,
+      "percentage": 122.79,
+      "marker": "P"
+    },
+    {
+      "position": 3,
+      "team": "Kings Park",
+      "wins": 7,
+      "points": 61.5,
+      "percentage": 104.32,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "St Andrews MB",
+      "wins": 7,
+      "points": 57,
+      "percentage": 100.65,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Highmoor Uniting",
+      "wins": 3,
+      "points": 41,
+      "percentage": 67.04,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Tally Ho",
+      "wins": 1,
+      "points": 29.5,
+      "percentage": 75.16,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP33-AP004",
+  "fixtures": 47,
+  "completed_fixtures": 43,
+  "draw_fixtures": 57,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 172,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP004052 doubles No. 4: '6-0 2-6 2-1'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP004123 doubles No. 3: '4-4'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP004311 doubles No. 3: '6-3 6-7'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP004321 doubles No. 4: '6-7 7-6 5-5'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

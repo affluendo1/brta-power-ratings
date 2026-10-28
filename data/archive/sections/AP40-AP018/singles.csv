@@ -1,0 +1,197 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP018011,05 Oct 19,1,Royal Ave,St Pats Mentone,No. 1,Nate Hollis,Cameron De Silva,Cameron De Silva,5-8,5,8,0,1,Completed,true,true,false
+AP018011,05 Oct 19,1,Royal Ave,St Pats Mentone,No. 2,Roch Dargan,David Lawry,David Lawry,6-8,6,8,0,1,Completed,true,false,false
+AP018011,05 Oct 19,1,Royal Ave,St Pats Mentone,No. 3,Justin Alway,Sam Clayton,Sam Clayton,7-8,7,8,0,1,Completed,true,false,false
+AP018011,05 Oct 19,1,Royal Ave,St Pats Mentone,No. 4,Liam Peppard,Mike De Silva,Liam Peppard,8-4,8,4,1,0,Completed,true,false,false
+AP018012,05 Oct 19,1,Langwarrin,Maccabi,No. 1,Adrian Moore,Brad Lowe,Adrian Moore,8-1,8,1,1,0,Completed,true,false,false
+AP018012,05 Oct 19,1,Langwarrin,Maccabi,No. 2,Haris Siakallis,Steven Kleytman,Haris Siakallis,8-4,8,4,1,0,Completed,true,false,false
+AP018012,05 Oct 19,1,Langwarrin,Maccabi,No. 3,Michael Robertson,Adam Needleman,Michael Robertson,8-7,8,7,1,0,Completed,true,false,false
+AP018012,05 Oct 19,1,Langwarrin,Maccabi,No. 4,Matthew Belsten,Albert Leon-boyer,Albert Leon-boyer,0-8,0,8,0,1,Completed,true,false,true
+AP018013,05 Oct 19,1,Carmelite,BLTC,No. 1,Victor Blitsas,David Monaghan,Victor Blitsas,8-3,8,3,1,0,Completed,true,false,false
+AP018013,05 Oct 19,1,Carmelite,BLTC,No. 2,Mark Doherty,Lachlan Friedrich,Lachlan Friedrich,7-8,7,8,0,1,Completed,true,false,false
+AP018013,05 Oct 19,1,Carmelite,BLTC,No. 3,Louis Horsley,Bernie Friedrich,Louis Horsley,8-6,8,6,1,0,Completed,true,false,false
+AP018013,05 Oct 19,1,Carmelite,BLTC,No. 4,Michael Junkovic,Andrew Naughton,Andrew Naughton,2-8,2,8,0,1,Completed,true,false,false
+AP018014,05 Oct 19,1,Kings Park,Ormond LA,No. 1,Finn Rasmussen,Thomas Abourizk,Thomas Abourizk,5-8,5,8,0,1,Completed,true,false,false
+AP018014,05 Oct 19,1,Kings Park,Ormond LA,No. 2,Dom Langdon,Abe Sobel,Abe Sobel,5-8,5,8,0,1,Completed,true,false,true
+AP018014,05 Oct 19,1,Kings Park,Ormond LA,No. 3,Cedric Cornelis,Steve Bendel,Cedric Cornelis,8-2,8,2,1,0,Completed,true,false,false
+AP018014,05 Oct 19,1,Kings Park,Ormond LA,No. 4,Ben Eden,Steve Gelagin,Ben Eden,8-4,8,4,1,0,Completed,true,true,false
+AP018021,12 Oct 19,2,Ormond LA,Royal Ave,No. 1,Thomas Abourizk,Josh Chu,Josh Chu,5-8,5,8,0,1,Completed,true,false,false
+AP018021,12 Oct 19,2,Ormond LA,Royal Ave,No. 2,Steve Julian-Fraser,Roch Dargan,Steve Julian-Fraser,8-6,8,6,1,0,Completed,true,false,false
+AP018021,12 Oct 19,2,Ormond LA,Royal Ave,No. 3,Steve Bendel,Justin Alway,Steve Bendel,8-0,8,0,1,0,Completed,true,false,false
+AP018021,12 Oct 19,2,Ormond LA,Royal Ave,No. 4,Anthony Murray,Liam Peppard,Anthony Murray,8-1,8,1,1,0,Completed,true,false,false
+AP018022,12 Oct 19,2,St Pats Mentone,Langwarrin,No. 1,Cameron De Silva,Adrian Moore,Adrian Moore,3-8,3,8,0,1,Completed,true,false,false
+AP018022,12 Oct 19,2,St Pats Mentone,Langwarrin,No. 2,David Lawry,Michael Robertson,Michael Robertson,3-8,3,8,0,1,Completed,true,false,false
+AP018022,12 Oct 19,2,St Pats Mentone,Langwarrin,No. 3,Sam Clayton,Ben Kowald,Sam Clayton,8-4,8,4,1,0,Completed,true,false,false
+AP018022,12 Oct 19,2,St Pats Mentone,Langwarrin,No. 4,Nick Hall,Steve Robertson,Steve Robertson,3-8,3,8,0,1,Completed,true,false,false
+AP018023,12 Oct 19,2,Maccabi,Carmelite,No. 1,Brad Lowe,Nick Rowe,Nick Rowe,6-8,6,8,0,1,Completed,true,false,false
+AP018023,12 Oct 19,2,Maccabi,Carmelite,No. 2,Steven Kleytman,Ben Kirchet,Ben Kirchet,0-8,0,8,0,1,Completed,true,false,false
+AP018023,12 Oct 19,2,Maccabi,Carmelite,No. 3,Adam Needleman,Tim Watts,Adam Needleman,8-2,8,2,1,0,Completed,true,false,false
+AP018023,12 Oct 19,2,Maccabi,Carmelite,No. 4,Darren Seymour,Giancarlo Siclari,Giancarlo Siclari,7-8,7,8,0,1,Completed,true,false,false
+AP018024,12 Oct 19,2,BLTC,Kings Park,No. 1,David Monaghan,Craig Stewart,Craig Stewart,6-8,6,8,0,1,Completed,true,false,false
+AP018024,12 Oct 19,2,BLTC,Kings Park,No. 2,Lachlan Friedrich,Finn Rasmussen,Lachlan Friedrich,8-4,8,4,1,0,Completed,true,false,false
+AP018024,12 Oct 19,2,BLTC,Kings Park,No. 3,James Dobson,Dom Langdon,Dom Langdon,1-8,1,8,0,1,Completed,true,false,false
+AP018024,12 Oct 19,2,BLTC,Kings Park,No. 4,Darcy Henschke,George Georgakas,George Georgakas,4-8,4,8,0,1,Completed,true,false,false
+AP018031,19 Oct 19,3,Royal Ave,BLTC,No. 1,Josh Chu,David Monaghan,Josh Chu,8-4,8,4,1,0,Completed,true,false,false
+AP018031,19 Oct 19,3,Royal Ave,BLTC,No. 2,Roch Dargan,Andrew Naughton,Andrew Naughton,5-8,5,8,0,1,Completed,true,false,false
+AP018031,19 Oct 19,3,Royal Ave,BLTC,No. 3,Justin Alway,James Dobson,Justin Alway,8-1,8,1,1,0,Completed,true,false,false
+AP018031,19 Oct 19,3,Royal Ave,BLTC,No. 4,Conor Mooney,Darcy Henschke,Conor Mooney,8-3,8,3,1,0,Completed,true,true,false
+AP018033,19 Oct 19,3,Carmelite,St Pats Mentone,No. 1,Nick Rowe,Cameron De Silva,Nick Rowe,8-5,8,5,1,0,Completed,true,false,false
+AP018033,19 Oct 19,3,Carmelite,St Pats Mentone,No. 2,Ben Kirchet,David Lawry,Ben Kirchet,8-4,8,4,1,0,Completed,true,false,false
+AP018033,19 Oct 19,3,Carmelite,St Pats Mentone,No. 3,Victor Blitsas,Sam Clayton,Victor Blitsas,8-2,8,2,1,0,Completed,true,false,false
+AP018033,19 Oct 19,3,Carmelite,St Pats Mentone,No. 4,Michael Junkovic,Mike De Silva,Michael Junkovic,8-6,8,6,1,0,Completed,true,false,false
+AP018034,19 Oct 19,3,Kings Park,Maccabi,No. 1,Craig Stewart,Brad Lowe,Craig Stewart,8-6,8,6,1,0,Completed,true,false,false
+AP018034,19 Oct 19,3,Kings Park,Maccabi,No. 2,Finn Rasmussen,Steven Kleytman,Finn Rasmussen,8-5,8,5,1,0,Completed,true,false,false
+AP018034,19 Oct 19,3,Kings Park,Maccabi,No. 3,Stefan Djorbjic,Jan Tenenberg,Jan Tenenberg,7-8,7,8,0,1,Completed,true,false,false
+AP018034,19 Oct 19,3,Kings Park,Maccabi,No. 4,Zane Pierzchalski,David Kenley,David Kenley,7-8,7,8,0,1,Completed,true,false,false
+AP018041,26 Oct 19,4,Maccabi,Royal Ave,No. 1,Brad Lowe,Josh Chu,Josh Chu,3-8,3,8,0,1,Completed,true,false,false
+AP018041,26 Oct 19,4,Maccabi,Royal Ave,No. 2,Jan Tenenberg,Roch Dargan,Jan Tenenberg,8-2,8,2,1,0,Completed,true,false,false
+AP018041,26 Oct 19,4,Maccabi,Royal Ave,No. 3,Adam Needleman,Liam Peppard,Adam Needleman,8-0,8,0,1,0,Completed,true,false,false
+AP018041,26 Oct 19,4,Maccabi,Royal Ave,No. 4,Darren Seymour,Conor Mooney,Darren Seymour,8-7,8,7,1,0,Completed,true,false,true
+AP018043,26 Oct 19,4,Ormond LA,Carmelite,No. 1,Steve Julian-Fraser,Ben Kirchet,Ben Kirchet,5-8,5,8,0,1,Completed,true,false,false
+AP018043,26 Oct 19,4,Ormond LA,Carmelite,No. 2,Steve Bendel,Victor Blitsas,Victor Blitsas,1-8,1,8,0,1,Completed,true,false,false
+AP018043,26 Oct 19,4,Ormond LA,Carmelite,No. 3,Anthony Murray,Giancarlo Siclari,Anthony Murray,8-5,8,5,1,0,Completed,true,false,false
+AP018043,26 Oct 19,4,Ormond LA,Carmelite,No. 4,Steve Gelagin,Michael Junkovic,Steve Gelagin,8-1,8,1,1,0,Completed,true,false,false
+AP018044,26 Oct 19,4,St Pats Mentone,Kings Park,No. 1,Cameron De Silva,Craig Stewart,Cameron De Silva,8-0,8,0,1,0,Completed,true,false,false
+AP018044,26 Oct 19,4,St Pats Mentone,Kings Park,No. 2,David Lawry,Dom Langdon,Dom Langdon,2-8,2,8,0,1,Completed,true,false,false
+AP018044,26 Oct 19,4,St Pats Mentone,Kings Park,No. 3,Sam Clayton,George Georgakas,Sam Clayton,8-4,8,4,1,0,Completed,true,false,false
+AP018044,26 Oct 19,4,St Pats Mentone,Kings Park,No. 4,Nick Hall,Zane Pierzchalski,Nick Hall,8-6,8,6,1,0,Completed,true,false,false
+AP018051,09 Nov 19,5,Carmelite,Kings Park,No. 1,Nick Rowe,Finn Rasmussen,Nick Rowe,8-7,8,7,1,0,Completed,true,false,false
+AP018051,09 Nov 19,5,Carmelite,Kings Park,No. 2,Ben Kirchet,Glenn Te Wiert,Ben Kirchet,8-3,8,3,1,0,Completed,true,false,true
+AP018051,09 Nov 19,5,Carmelite,Kings Park,No. 3,Victor Blitsas,Cedric De Aurelian,Victor Blitsas,8-2,8,2,1,0,Completed,true,false,true
+AP018051,09 Nov 19,5,Carmelite,Kings Park,No. 4,Michael Junkovic,Ben Eden,Ben Eden,2-8,2,8,0,1,Completed,true,false,true
+AP018052,09 Nov 19,5,Ormond LA,BLTC,No. 1,Steve Julian-Fraser,Lachlan Friedrich,Lachlan Friedrich,4-8,4,8,0,1,Completed,true,false,false
+AP018052,09 Nov 19,5,Ormond LA,BLTC,No. 2,Jeff Klyne,Bernie Friedrich,Bernie Friedrich,7-8,7,8,0,1,Completed,true,true,false
+AP018052,09 Nov 19,5,Ormond LA,BLTC,No. 3,Steve Bendel,Andrew Naughton,Steve Bendel,8-0,8,0,1,0,Completed,true,false,false
+AP018052,09 Nov 19,5,Ormond LA,BLTC,No. 4,Steve Gelagin,James Dobson,Steve Gelagin,8-4,8,4,1,0,Completed,true,false,false
+AP018053,09 Nov 19,5,Maccabi,St Pats Mentone,No. 1,Brad Lowe,Sam Clayton,Brad Lowe,8-5,8,5,1,0,Completed,true,false,false
+AP018053,09 Nov 19,5,Maccabi,St Pats Mentone,No. 2,Steven Kleytman,Andrew Rolfe,Steven Kleytman,8-4,8,4,1,0,Completed,true,false,true
+AP018053,09 Nov 19,5,Maccabi,St Pats Mentone,No. 3,Jan Tenenberg,Nick Hall,Jan Tenenberg,8-4,8,4,1,0,Completed,true,false,false
+AP018053,09 Nov 19,5,Maccabi,St Pats Mentone,No. 4,David Kenley,Mike De Silva,David Kenley,8-3,8,3,1,0,Completed,true,false,false
+AP018054,09 Nov 19,5,Royal Ave,Langwarrin,No. 1,Josh Chu,Haris Siakallis,Josh Chu,8-0,8,0,1,0,Completed,true,false,false
+AP018054,09 Nov 19,5,Royal Ave,Langwarrin,No. 2,Roch Dargan,Michael Robertson,Michael Robertson,3-8,3,8,0,1,Completed,true,false,false
+AP018054,09 Nov 19,5,Royal Ave,Langwarrin,No. 3,Meiji Forni,Ben Kowald,Meiji Forni,8-3,8,3,1,0,Completed,true,true,false
+AP018054,09 Nov 19,5,Royal Ave,Langwarrin,No. 4,Justin Alway,Matthew Belsten,Matthew Belsten,6-8,6,8,0,1,Completed,true,false,false
+AP018062,16 Nov 19,6,Kings Park,Royal Ave,No. 1,Finn Rasmussen,Josh Chu,Finn Rasmussen,8-1,8,1,1,0,Completed,true,false,false
+AP018062,16 Nov 19,6,Kings Park,Royal Ave,No. 2,Dom Langdon,Roch Dargan,Dom Langdon,8-6,8,6,1,0,Completed,true,false,false
+AP018062,16 Nov 19,6,Kings Park,Royal Ave,No. 3,Stefan Djorbjic,Justin Alway,Stefan Djorbjic,8-3,8,3,1,0,Completed,true,false,false
+AP018062,16 Nov 19,6,Kings Park,Royal Ave,No. 4,Zane Pierzchalski,Liam Peppard,Liam Peppard,3-8,3,8,0,1,Completed,true,false,false
+AP018063,16 Nov 19,6,BLTC,Maccabi,No. 1,David Monaghan,Brad Lowe,Brad Lowe,0-8,0,8,0,1,Completed,true,false,false
+AP018063,16 Nov 19,6,BLTC,Maccabi,No. 2,Lachlan Friedrich,Jan Tenenberg,Jan Tenenberg,3-8,3,8,0,1,Completed,true,false,false
+AP018063,16 Nov 19,6,BLTC,Maccabi,No. 3,Bernie Friedrich,David Kenley,Bernie Friedrich,8-2,8,2,1,0,Completed,true,false,false
+AP018063,16 Nov 19,6,BLTC,Maccabi,No. 4,Andrew Naughton,Darren Seymour,Darren Seymour,1-8,1,8,0,1,Completed,true,false,false
+AP018064,16 Nov 19,6,St Pats Mentone,Ormond LA,No. 1,Cameron De Silva,Thomas Abourizk,Cameron De Silva,8-7,8,7,1,0,Completed,true,false,false
+AP018064,16 Nov 19,6,St Pats Mentone,Ormond LA,No. 2,David Lawry,Steve Julian-Fraser,Steve Julian-Fraser,2-8,2,8,0,1,Completed,true,false,false
+AP018064,16 Nov 19,6,St Pats Mentone,Ormond LA,No. 3,Sam Clayton,Steve Bendel,Steve Bendel,7-8,7,8,0,1,Completed,true,false,false
+AP018064,16 Nov 19,6,St Pats Mentone,Ormond LA,No. 4,Mike De Silva,Steve Gelagin,Steve Gelagin,1-8,1,8,0,1,Completed,true,false,false
+AP018071,23 Nov 19,7,Royal Ave,Carmelite,No. 1,Josh Chu,Nick Rowe,Nick Rowe,6-8,6,8,0,1,Completed,true,false,false
+AP018071,23 Nov 19,7,Royal Ave,Carmelite,No. 2,Roch Dargan,Ben Kirchet,Ben Kirchet,1-8,1,8,0,1,Completed,true,false,false
+AP018071,23 Nov 19,7,Royal Ave,Carmelite,No. 3,Justin Alway,Victor Blitsas,Victor Blitsas,1-8,1,8,0,1,Completed,true,false,false
+AP018071,23 Nov 19,7,Royal Ave,Carmelite,No. 4,Conor Mooney,Michael Junkovic,Michael Junkovic,2-8,2,8,0,1,Completed,true,true,false
+AP018072,23 Nov 19,7,Langwarrin,Kings Park,No. 1,Adrian Moore,Finn Rasmussen,Adrian Moore,8-2,8,2,1,0,Completed,true,false,false
+AP018072,23 Nov 19,7,Langwarrin,Kings Park,No. 2,Haris Siakallis,Dom Langdon,Dom Langdon,7-8,7,8,0,1,Completed,true,false,false
+AP018072,23 Nov 19,7,Langwarrin,Kings Park,No. 3,Michael Robertson,George Georgakas,George Georgakas,0-8,0,8,0,1,Completed,true,false,false
+AP018072,23 Nov 19,7,Langwarrin,Kings Park,No. 4,Matthew Belsten,Cedric De Aurelian,Cedric De Aurelian,4-8,4,8,0,1,Completed,true,false,true
+AP018073,23 Nov 19,7,Ormond LA,Maccabi,No. 1,Steve Julian-Fraser,Brad Lowe,Brad Lowe,3-8,3,8,0,1,Completed,true,false,false
+AP018073,23 Nov 19,7,Ormond LA,Maccabi,No. 2,Andrew Martin,Steven Kleytman,Steven Kleytman,6-8,6,8,0,1,Completed,true,false,false
+AP018073,23 Nov 19,7,Ormond LA,Maccabi,No. 3,Steve Bendel,Dean Steinberg,Dean Steinberg,5-8,5,8,0,1,Completed,true,false,false
+AP018073,23 Nov 19,7,Ormond LA,Maccabi,No. 4,Steve Gelagin,Albert Leon-boyer,Albert Leon-boyer,4-8,4,8,0,1,Completed,true,false,true
+AP018074,23 Nov 19,7,BLTC,St Pats Mentone,No. 1,Lachlan Friedrich,Cameron De Silva,Cameron De Silva,6-8,6,8,0,1,Completed,true,false,false
+AP018074,23 Nov 19,7,BLTC,St Pats Mentone,No. 2,Bernie Friedrich,David Lawry,Bernie Friedrich,8-6,8,6,1,0,Completed,true,false,false
+AP018074,23 Nov 19,7,BLTC,St Pats Mentone,No. 3,James Dobson,Mike De Silva,James Dobson,8-3,8,3,1,0,Completed,true,false,false
+AP018074,23 Nov 19,7,BLTC,St Pats Mentone,No. 4,Darcy Henschke,Paul Huyntt,Paul Huyntt,4-8,4,8,0,1,Completed,true,false,true
+AP018081,30 Nov 19,8,St Pats Mentone,Royal Ave,No. 1,Cameron De Silva,Josh Chu,Cameron De Silva,8-1,8,1,1,0,Completed,true,false,false
+AP018081,30 Nov 19,8,St Pats Mentone,Royal Ave,No. 2,Sam Clayton,Roch Dargan,Roch Dargan,7-8,7,8,0,1,Completed,true,false,false
+AP018081,30 Nov 19,8,St Pats Mentone,Royal Ave,No. 3,Nick Hall,Justin Alway,Justin Alway,4-8,4,8,0,1,Completed,true,false,false
+AP018081,30 Nov 19,8,St Pats Mentone,Royal Ave,No. 4,Mike De Silva,Liam Peppard,Liam Peppard,3-8,3,8,0,1,Completed,true,false,false
+AP018082,30 Nov 19,8,Maccabi,Langwarrin,No. 1,Brad Lowe,Adrian Moore,Brad Lowe,8-6,8,6,1,0,Completed,true,false,false
+AP018082,30 Nov 19,8,Maccabi,Langwarrin,No. 2,Steven Kleytman,Haris Siakallis,Haris Siakallis,6-8,6,8,0,1,Completed,true,false,false
+AP018082,30 Nov 19,8,Maccabi,Langwarrin,No. 3,Dean Steinberg,Ben Kowald,Dean Steinberg,8-3,8,3,1,0,Completed,true,false,false
+AP018082,30 Nov 19,8,Maccabi,Langwarrin,No. 4,David Kenley,Steve Robertson,David Kenley,8-2,8,2,1,0,Completed,true,false,false
+AP018083,30 Nov 19,8,BLTC,Carmelite,No. 1,David Monaghan,Nick Rowe,Nick Rowe,4-8,4,8,0,1,Completed,true,false,false
+AP018083,30 Nov 19,8,BLTC,Carmelite,No. 2,Lachlan Friedrich,Ben Kirchet,Ben Kirchet,0-8,0,8,0,1,Completed,true,false,false
+AP018083,30 Nov 19,8,BLTC,Carmelite,No. 3,Bernie Friedrich,Victor Blitsas,Victor Blitsas,0-8,0,8,0,1,Completed,true,false,false
+AP018083,30 Nov 19,8,BLTC,Carmelite,No. 4,James Dobson,Michael Junkovic,Michael Junkovic,1-8,1,8,0,1,Completed,true,false,false
+AP018084,30 Nov 19,8,Ormond LA,Kings Park,No. 1,Steve Julian-Fraser,Dom Langdon,Dom Langdon,7-8,7,8,0,1,Completed,true,false,false
+AP018084,30 Nov 19,8,Ormond LA,Kings Park,No. 2,Jeff Klyne,George Georgakas,George Georgakas,3-8,3,8,0,1,Completed,true,true,false
+AP018084,30 Nov 19,8,Ormond LA,Kings Park,No. 3,Anthony Murray,Stefan Djorbjic,Stefan Djorbjic,3-8,3,8,0,1,Completed,true,false,false
+AP018084,30 Nov 19,8,Ormond LA,Kings Park,No. 4,Steve Gelagin,Zane Pierzchalski,Zane Pierzchalski,5-8,5,8,0,1,Completed,true,false,false
+AP018091,07 Dec 19,9,Royal Ave,Ormond LA,No. 1,Josh Chu,Steve Julian-Fraser,Josh Chu,8-6,8,6,1,0,Completed,true,false,false
+AP018091,07 Dec 19,9,Royal Ave,Ormond LA,No. 2,Liam Peppard,Andrew Martin,Liam Peppard,8-4,8,4,1,0,Completed,true,false,false
+AP018091,07 Dec 19,9,Royal Ave,Ormond LA,No. 3,Harley Chessells,Anthony Murray,Anthony Murray,3-8,3,8,0,1,Completed,true,true,false
+AP018091,07 Dec 19,9,Royal Ave,Ormond LA,No. 4,Gabi Zafrin,Glenn Felsenthal,Gabi Zafrin,8-6,8,6,1,0,Completed,true,true,false
+AP018092,07 Dec 19,9,Langwarrin,St Pats Mentone,No. 1,Haris Siakallis,Cameron De Silva,Haris Siakallis,8-6,8,6,1,0,Completed,true,false,false
+AP018092,07 Dec 19,9,Langwarrin,St Pats Mentone,No. 2,Ben Kowald,David Lawry,David Lawry,6-8,6,8,0,1,Completed,true,false,false
+AP018092,07 Dec 19,9,Langwarrin,St Pats Mentone,No. 3,Matthew Belsten,Sam Clayton,Sam Clayton,3-8,3,8,0,1,Completed,true,false,false
+AP018092,07 Dec 19,9,Langwarrin,St Pats Mentone,No. 4,Steve Robertson,Mike De Silva,Steve Robertson,8-2,8,2,1,0,Completed,true,false,false
+AP018093,07 Dec 19,9,Carmelite,Maccabi,No. 1,Ben Kirchet,Steven Kleytman,Ben Kirchet,8-4,8,4,1,0,Completed,true,false,false
+AP018093,07 Dec 19,9,Carmelite,Maccabi,No. 2,Tim Watts,Dean Steinberg,Dean Steinberg,3-8,3,8,0,1,Completed,true,false,false
+AP018093,07 Dec 19,9,Carmelite,Maccabi,No. 3,Victor Blitsas,Adam Needleman,Adam Needleman,5-8,5,8,0,1,Completed,true,false,false
+AP018093,07 Dec 19,9,Carmelite,Maccabi,No. 4,Michael Junkovic,Darren Seymour,Michael Junkovic,8-1,8,1,1,0,Completed,true,false,false
+AP018094,07 Dec 19,9,Kings Park,BLTC,No. 1,Finn Rasmussen,David Monaghan,Finn Rasmussen,8-1,8,1,1,0,Completed,true,false,false
+AP018094,07 Dec 19,9,Kings Park,BLTC,No. 2,George Georgakas,Lachlan Friedrich,George Georgakas,8-6,8,6,1,0,Completed,true,false,false
+AP018094,07 Dec 19,9,Kings Park,BLTC,No. 3,Cedric Cornelis,Bernie Friedrich,Cedric Cornelis,8-5,8,5,1,0,Completed,true,false,false
+AP018094,07 Dec 19,9,Kings Park,BLTC,No. 4,Stefan Djorbjic,[Unnamed emergency — TROLS AP018094 away code 4],Stefan Djorbjic,8-0,8,0,1,0,Completed,false,false,true
+AP018101,14 Dec 19,10,BLTC,Royal Ave,No. 1,David Monaghan,Josh Chu,Josh Chu,0-8,0,8,0,1,Completed,true,false,false
+AP018101,14 Dec 19,10,BLTC,Royal Ave,No. 2,Lachlan Friedrich,Roch Dargan,Lachlan Friedrich,8-2,8,2,1,0,Completed,true,false,false
+AP018101,14 Dec 19,10,BLTC,Royal Ave,No. 3,Bernie Friedrich,Liam Peppard,Bernie Friedrich,8-3,8,3,1,0,Completed,true,false,false
+AP018101,14 Dec 19,10,BLTC,Royal Ave,No. 4,James Dobson,Harley Chessells,Harley Chessells,3-8,3,8,0,1,Completed,true,false,true
+AP018102,14 Dec 19,10,Ormond LA,Langwarrin,No. 1,Steve Julian-Fraser,Adrian Moore,Adrian Moore,1-8,1,8,0,1,Completed,true,false,false
+AP018102,14 Dec 19,10,Ormond LA,Langwarrin,No. 2,Andrew Martin,Haris Siakallis,Haris Siakallis,7-8,7,8,0,1,Completed,true,false,false
+AP018102,14 Dec 19,10,Ormond LA,Langwarrin,No. 3,Anthony Murray,Ben Kowald,Anthony Murray,8-0,8,0,1,0,Completed,true,false,false
+AP018102,14 Dec 19,10,Ormond LA,Langwarrin,No. 4,Steve Gelagin,Matthew Belsten,Steve Gelagin,8-3,8,3,1,0,Completed,true,false,false
+AP018103,14 Dec 19,10,St Pats Mentone,Carmelite,No. 1,Cameron De Silva,Nick Rowe,Nick Rowe,4-8,4,8,0,1,Completed,true,false,false
+AP018103,14 Dec 19,10,St Pats Mentone,Carmelite,No. 2,David Lawry,Ben Kirchet,Ben Kirchet,4-8,4,8,0,1,Completed,true,false,false
+AP018103,14 Dec 19,10,St Pats Mentone,Carmelite,No. 3,Sam Clayton,Victor Blitsas,Victor Blitsas,3-8,3,8,0,1,Completed,true,false,false
+AP018103,14 Dec 19,10,St Pats Mentone,Carmelite,No. 4,Nick Hall,Michael Junkovic,Nick Hall,8-2,8,2,1,0,Completed,true,false,false
+AP018104,14 Dec 19,10,Maccabi,Kings Park,No. 1,Steven Kleytman,Finn Rasmussen,Steven Kleytman,8-7,8,7,1,0,Completed,true,false,false
+AP018104,14 Dec 19,10,Maccabi,Kings Park,No. 2,Dean Steinberg,George Georgakas,Dean Steinberg,8-1,8,1,1,0,Completed,true,false,false
+AP018104,14 Dec 19,10,Maccabi,Kings Park,No. 3,Adam Needleman,Zane Pierzchalski,Adam Needleman,8-0,8,0,1,0,Completed,true,false,false
+AP018104,14 Dec 19,10,Maccabi,Kings Park,No. 4,Darren Seymour,Tristian Johnstone,Darren Seymour,8-3,8,3,1,0,Completed,true,false,true
+AP018121,08 Feb 20,12,Kings Park,Carmelite,No. 1,Finn Rasmussen,Nick Rowe,Nick Rowe,1-8,1,8,0,1,Completed,true,false,false
+AP018121,08 Feb 20,12,Kings Park,Carmelite,No. 2,Dom Langdon,Ben Kirchet,Ben Kirchet,3-8,3,8,0,1,Completed,true,false,false
+AP018121,08 Feb 20,12,Kings Park,Carmelite,No. 3,George Georgakas,Victor Blitsas,Victor Blitsas,5-8,5,8,0,1,Completed,true,false,false
+AP018121,08 Feb 20,12,Kings Park,Carmelite,No. 4,Zane Pierzchalski,Michael Junkovic,Michael Junkovic,0-8,0,8,0,1,Completed,true,false,false
+AP018122,08 Feb 20,12,BLTC,Ormond LA,No. 1,Lachlan Friedrich,Steve Julian-Fraser,Steve Julian-Fraser,4-8,4,8,0,1,Completed,true,false,false
+AP018122,08 Feb 20,12,BLTC,Ormond LA,No. 2,Bernie Friedrich,Andrew Martin,Andrew Martin,2-8,2,8,0,1,Completed,true,false,false
+AP018122,08 Feb 20,12,BLTC,Ormond LA,No. 3,Andrew Naughton,Steve Bendel,Steve Bendel,0-8,0,8,0,1,Completed,true,false,false
+AP018122,08 Feb 20,12,BLTC,Ormond LA,No. 4,James Dobson,Steve Gelagin,Steve Gelagin,3-8,3,8,0,1,Completed,true,false,false
+AP018123,08 Feb 20,12,St Pats Mentone,Maccabi,No. 1,Cameron De Silva,Brad Lowe,Cameron De Silva,8-3,8,3,1,0,Completed,true,false,false
+AP018123,08 Feb 20,12,St Pats Mentone,Maccabi,No. 2,David Lawry,Steven Kleytman,Steven Kleytman,7-8,7,8,0,1,Completed,true,false,false
+AP018123,08 Feb 20,12,St Pats Mentone,Maccabi,No. 3,Sam Clayton,Adam Needleman,Adam Needleman,2-8,2,8,0,1,Completed,true,false,false
+AP018123,08 Feb 20,12,St Pats Mentone,Maccabi,No. 4,Nick Hall,David Kenley,David Kenley,6-8,6,8,0,1,Completed,true,false,false
+AP018124,08 Feb 20,12,Langwarrin,Royal Ave,No. 1,Adrian Moore,Josh Chu,Josh Chu,5-8,5,8,0,1,Completed,true,false,false
+AP018124,08 Feb 20,12,Langwarrin,Royal Ave,No. 2,Haris Siakallis,Roch Dargan,Haris Siakallis,8-1,8,1,1,0,Completed,true,false,false
+AP018124,08 Feb 20,12,Langwarrin,Royal Ave,No. 3,Ben Kowald,Justin Alway,Ben Kowald,8-5,8,5,1,0,Completed,true,false,false
+AP018124,08 Feb 20,12,Langwarrin,Royal Ave,No. 4,Matthew Belsten,Liam Peppard,Matthew Belsten,8-2,8,2,1,0,Completed,true,false,false
+AP018132,15 Feb 20,13,Royal Ave,Kings Park,No. 1,Josh Chu,Finn Rasmussen,Finn Rasmussen,6-8,6,8,0,1,Completed,true,false,false
+AP018132,15 Feb 20,13,Royal Ave,Kings Park,No. 2,Roch Dargan,Dom Langdon,Dom Langdon,1-8,1,8,0,1,Completed,true,false,false
+AP018132,15 Feb 20,13,Royal Ave,Kings Park,No. 3,Justin Alway,George Georgakas,George Georgakas,2-8,2,8,0,1,Completed,true,false,false
+AP018132,15 Feb 20,13,Royal Ave,Kings Park,No. 4,Jacob Wise,Zane Pierzchalski,Zane Pierzchalski,3-8,3,8,0,1,Completed,true,true,false
+AP018134,15 Feb 20,13,Ormond LA,St Pats Mentone,No. 1,Thomas Abourizk,Cameron De Silva,Thomas Abourizk,8-4,8,4,1,0,Completed,true,false,false
+AP018134,15 Feb 20,13,Ormond LA,St Pats Mentone,No. 2,Steve Julian-Fraser,David Lawry,Steve Julian-Fraser,8-7,8,7,1,0,Completed,true,false,false
+AP018134,15 Feb 20,13,Ormond LA,St Pats Mentone,No. 3,Andrew Martin,Nick Hall,Andrew Martin,8-4,8,4,1,0,Completed,true,false,false
+AP018134,15 Feb 20,13,Ormond LA,St Pats Mentone,No. 4,Steve Bendel,Mike De Silva,Steve Bendel,8-0,8,0,1,0,Completed,true,false,false
+AP018141,22 Feb 20,14,Carmelite,Royal Ave,No. 1,Ben Kirchet,Josh Chu,Ben Kirchet,8-5,8,5,1,0,Completed,true,false,false
+AP018141,22 Feb 20,14,Carmelite,Royal Ave,No. 2,Tim Watts,Roch Dargan,Roch Dargan,4-8,4,8,0,1,Completed,true,false,false
+AP018141,22 Feb 20,14,Carmelite,Royal Ave,No. 3,Louis Horsley,Justin Alway,Louis Horsley,8-1,8,1,1,0,Completed,true,false,false
+AP018141,22 Feb 20,14,Carmelite,Royal Ave,No. 4,Josh Kempin,Liam Peppard,Josh Kempin,8-6,8,6,1,0,Completed,true,true,false
+AP018142,22 Feb 20,14,Kings Park,Langwarrin,No. 1,Finn Rasmussen,Adrian Moore,Adrian Moore,5-8,5,8,0,1,Completed,true,false,false
+AP018142,22 Feb 20,14,Kings Park,Langwarrin,No. 2,Dom Langdon,Michael Robertson,Dom Langdon,8-2,8,2,1,0,Completed,true,false,false
+AP018142,22 Feb 20,14,Kings Park,Langwarrin,No. 3,George Georgakas,Ben Kowald,George Georgakas,8-0,8,0,1,0,Completed,true,false,false
+AP018142,22 Feb 20,14,Kings Park,Langwarrin,No. 4,Zane Pierzchalski,Steve Robertson,Zane Pierzchalski,8-7,8,7,1,0,Completed,true,false,false
+AP018143,22 Feb 20,14,Maccabi,Ormond LA,No. 1,Brad Lowe,Steve Julian-Fraser,Brad Lowe,8-5,8,5,1,0,Completed,true,false,false
+AP018143,22 Feb 20,14,Maccabi,Ormond LA,No. 2,Jan Tenenberg,Andrew Martin,Jan Tenenberg,8-3,8,3,1,0,Completed,true,false,false
+AP018143,22 Feb 20,14,Maccabi,Ormond LA,No. 3,Dean Steinberg,Steve Bendel,Dean Steinberg,8-1,8,1,1,0,Completed,true,false,false
+AP018143,22 Feb 20,14,Maccabi,Ormond LA,No. 4,Darren Seymour,Anthony Murray,Anthony Murray,4-8,4,8,0,1,Completed,true,false,false
+AP018144,22 Feb 20,14,St Pats Mentone,BLTC,No. 1,Cameron De Silva,Lachlan Friedrich,Cameron De Silva,8-4,8,4,1,0,Completed,true,false,false
+AP018144,22 Feb 20,14,St Pats Mentone,BLTC,No. 2,Sam Clayton,Bernie Friedrich,Sam Clayton,8-3,8,3,1,0,Completed,true,false,false
+AP018144,22 Feb 20,14,St Pats Mentone,BLTC,No. 3,Nick Hall,Andrew Naughton,Andrew Naughton,2-8,2,8,0,1,Completed,true,false,false
+AP018144,22 Feb 20,14,St Pats Mentone,BLTC,No. 4,Mike De Silva,James Dobson,Mike De Silva,8-6,8,6,1,0,Completed,true,false,false
+AP018301,,16,Carmelite,Kings Park,No. 1,Nick Rowe,Finn Rasmussen,Finn Rasmussen,1-8,1,8,0,1,Completed,true,false,false
+AP018301,,16,Carmelite,Kings Park,No. 2,Ben Kirchet,Dom Langdon,Dom Langdon,6-8,6,8,0,1,Completed,true,false,false
+AP018301,,16,Carmelite,Kings Park,No. 3,Victor Blitsas,George Georgakas,George Georgakas,4-8,4,8,0,1,Completed,true,false,false
+AP018301,,16,Carmelite,Kings Park,No. 4,Michael Junkovic,Stefan Djorbjic,Michael Junkovic,8-7,8,7,1,0,Completed,true,false,false
+AP018302,,16,Maccabi,Ormond LA,No. 1,Brad Lowe,Thomas Abourizk,Thomas Abourizk,6-8,6,8,0,1,Completed,true,false,false
+AP018302,,16,Maccabi,Ormond LA,No. 2,Dean Steinberg,Steve Julian-Fraser,Dean Steinberg,8-5,8,5,1,0,Completed,true,false,false
+AP018302,,16,Maccabi,Ormond LA,No. 3,Adam Needleman,Andrew Martin,Adam Needleman,8-1,8,1,1,0,Completed,true,false,false
+AP018302,,16,Maccabi,Ormond LA,No. 4,David Kenley,Anthony Murray,Anthony Murray,7-8,7,8,0,1,Completed,true,false,false

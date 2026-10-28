@@ -1,0 +1,89 @@
+{
+  "asset_id": "AP38-AP004",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 18/19",
+  "season_id": "AP38",
+  "season_label": "Summer 18/19",
+  "source_section_code": "AP004",
+  "section_label": "Mens Rubbers 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Centenary Park White",
+      "wins": 12,
+      "points": 93,
+      "percentage": 151.02,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "St Anthony's",
+      "wins": 10,
+      "points": 76,
+      "percentage": 116.09,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Black Rock",
+      "wins": 7,
+      "points": 70.5,
+      "percentage": 120.63,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Sth Murrumbeena",
+      "wins": 8,
+      "points": 67,
+      "percentage": 111.38,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Centenary Park Red",
+      "wins": 3,
+      "points": 30,
+      "percentage": 72.36,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Victory Park",
+      "wins": 2,
+      "points": 23.5,
+      "percentage": 60.06,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP38-AP004",
+  "fixtures": 46,
+  "completed_fixtures": 45,
+  "draw_fixtures": 57,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 176,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP004151 doubles No. 1: '6-7 7-6'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

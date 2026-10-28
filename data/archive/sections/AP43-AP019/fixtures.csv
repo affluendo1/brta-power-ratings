@@ -1,0 +1,60 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP019011,16 Oct 21,1,regular,Round 1,Legend Park,Fitzroy,0,0,0,0,,,0,0,Completed,
+AP019012,16 Oct 21,1,regular,Round 1,Overport Park,MCC Glen Iris,0,0,0,0,,,0,0,Completed,
+AP019013,16 Oct 21,1,regular,Round 1,Port Melbourne,Coatesville,0,0,0,0,,,0,0,Completed,
+AP019014,16 Oct 21,1,regular,Round 1,Chadstone,Ormond,0,0,0,0,,,0,0,Completed,
+AP019021,23 Oct 21,2,regular,Round 2,Ormond,Legend Park,0,0,0,0,,,0,0,Completed,
+AP019022,23 Oct 21,2,regular,Round 2,Fitzroy,Overport Park,0,0,0,0,,,0,0,Completed,
+AP019023,23 Oct 21,2,regular,Round 2,MCC Glen Iris,Port Melbourne,0,0,0,0,,,0,0,Completed,
+AP019024,23 Oct 21,2,regular,Round 2,Coatesville,Chadstone,0,0,0,0,,,0,0,Completed,
+AP019031,06 Nov 21,3,regular,Round 3,Legend Park,Coatesville,8,0,8,0,,,50,21,Completed,
+AP019032,06 Nov 21,3,regular,Round 3,Overport Park,Ormond,8,0,8,0,,,48,12,Completed,
+AP019033,06 Nov 21,3,regular,Round 3,Port Melbourne,Fitzroy,5,3,5,1,,,31,19,Completed,
+pending-ap019-r3-chadstone-mcc-glen-iris,06 Nov 21,3,regular,Round 3,Chadstone,MCC Glen Iris,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+pending-ap019-r4-coatesville-overport-park,13 Nov 21,4,regular,Round 4,Coatesville,Overport Park,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+pending-ap019-r4-fitzroy-chadstone,13 Nov 21,4,regular,Round 4,Fitzroy,Chadstone,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap019-r4-mcc-glen-iris-legend-park,13 Nov 21,4,regular,Round 4,MCC Glen Iris,Legend Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap019-r4-ormond-port-melbourne,13 Nov 21,4,regular,Round 4,Ormond,Port Melbourne,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP019051,20 Nov 21,5,regular,Round 5,Port Melbourne,Chadstone,7,1,5,1,,,34,26,Completed,
+AP019052,20 Nov 21,5,regular,Round 5,Ormond,Coatesville,0,8,0,8,,,27,50,Completed,
+AP019053,20 Nov 21,5,regular,Round 5,MCC Glen Iris,Fitzroy,7,1,6,2,,,43,26,Completed,
+AP019054,20 Nov 21,5,regular,Round 5,Legend Park,Overport Park,8,0,8,1,,,53,24,Completed,
+AP019062,27 Nov 21,6,regular,Round 6,Chadstone,Legend Park,2,6,5,5,,,50,51,Completed,
+AP019063,27 Nov 21,6,regular,Round 6,Coatesville,MCC Glen Iris,0,8,0,8,,,18,49,Completed,
+AP019064,27 Nov 21,6,regular,Round 6,Fitzroy,Ormond,8,0,8,0,,,48,7,Completed,
+pending-ap019-r6-overport-park-port-melbourne,27 Nov 21,6,regular,Round 6,Overport Park,Port Melbourne,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+AP019072,04 Dec 21,7,regular,Round 7,Overport Park,Chadstone,2,6,5,5,,,47,48,Completed,
+AP019073,04 Dec 21,7,regular,Round 7,Ormond,MCC Glen Iris,0,8,0,8,,,6,48,Completed,
+AP019074,04 Dec 21,7,regular,Round 7,Coatesville,Fitzroy,2,6,5,5,,,39,43,Completed,
+pending-ap019-r7-legend-park-port-melbourne,04 Dec 21,7,regular,Round 7,Legend Park,Port Melbourne,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP019081,11 Dec 21,8,regular,Round 8,Fitzroy,Legend Park,0,8,0,8,,,19,49,Completed,
+AP019082,11 Dec 21,8,regular,Round 8,MCC Glen Iris,Overport Park,8,0,8,2,,,58,36,Completed,
+AP019083,11 Dec 21,8,regular,Round 8,Coatesville,Port Melbourne,2,6,4,4,,,29,30,Completed,
+AP019084,11 Dec 21,8,regular,Round 8,Ormond,Chadstone,0,8,0,8,,,12,49,Completed,
+AP019091,29 Jan 22,9,regular,Round 9,Legend Park,Ormond,8,0,8,0,,,48,6,Completed,
+AP019092,29 Jan 22,9,regular,Round 9,Overport Park,Fitzroy,1,7,3,7,,,46,54,Completed,
+AP019093,29 Jan 22,9,regular,Round 9,Port Melbourne,MCC Glen Iris,2,6,4,5,,,41,31,Completed,
+AP019094,29 Jan 22,9,regular,Round 9,Chadstone,Coatesville,7,1,7,3,,,57,38,Completed,
+AP019101,05 Feb 22,10,regular,Round 10,Coatesville,Legend Park,1,7,3,6,,,32,46,Completed,
+AP019102,05 Feb 22,10,regular,Round 10,Ormond,Overport Park,0,8,0,8,,,14,49,Completed,
+AP019103,05 Feb 22,10,regular,Round 10,Fitzroy,Port Melbourne,7,1,6,2,,,50,32,Completed,
+AP019104,05 Feb 22,10,regular,Round 10,MCC Glen Iris,Chadstone,7,1,7,2,,,51,22,Completed,
+AP019111,12 Feb 22,11,regular,Round 11,Legend Park,MCC Glen Iris,1,7,2,7,,,40,54,Completed,
+AP019113,12 Feb 22,11,regular,Round 11,Port Melbourne,Ormond,7.5,0.5,7,1,,,48,22,Completed,
+AP019114,12 Feb 22,11,regular,Round 11,Chadstone,Fitzroy,6,2,5,4,,,48,46,Completed,
+pending-ap019-r11-overport-park-coatesville,12 Feb 22,11,regular,Round 11,Overport Park,Coatesville,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+AP019121,19 Feb 22,12,regular,Round 12,Chadstone,Port Melbourne,6,2,5,4,,,47,37,Completed,
+AP019122,19 Feb 22,12,regular,Round 12,Coatesville,Ormond,7,1,6,3,,,52,44,Completed,
+AP019124,19 Feb 22,12,regular,Round 12,Overport Park,Legend Park,6,2,4,4,,,32,24,Completed,
+pending-ap019-r12-fitzroy-mcc-glen-iris,19 Feb 22,12,regular,Round 12,Fitzroy,MCC Glen Iris,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP019131,26 Feb 22,13,regular,Round 13,Port Melbourne,Overport Park,0,8,2,8,,,33,57,Completed,
+AP019132,26 Feb 22,13,regular,Round 13,Legend Park,Chadstone,8,0,8,0,,,48,7,Completed,
+AP019133,26 Feb 22,13,regular,Round 13,MCC Glen Iris,Coatesville,8,0,8,0,,,49,20,Completed,
+AP019134,26 Feb 22,13,regular,Round 13,Ormond,Fitzroy,0,8,0,8,,,10,48,Completed,
+AP019142,05 Mar 22,14,regular,Round 14,Chadstone,Overport Park,8,0,8,1,,,51,25,Completed,
+AP019144,05 Mar 22,14,regular,Round 14,Fitzroy,Coatesville,8,0,8,0,,,48,6,Completed,
+pending-ap019-r14-mcc-glen-iris-ormond,05 Mar 22,14,regular,Round 14,MCC Glen Iris,Ormond,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+pending-ap019-r14-port-melbourne-legend-park,05 Mar 22,14,regular,Round 14,Port Melbourne,Legend Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP019301,,16,semi_final,Semi-final,Legend Park,Chadstone,7.5,0.5,7,0,,,42,9,Completed,
+AP019302,,16,semi_final,Semi-final,MCC Glen Iris,Fitzroy,8,0,8,1,,,53,30,Completed,
+AP019321,,17,grand_final,Grand final · TROLS entry 2,Legend Park,MCC Glen Iris,1,7,2,6,,,23,44,Completed,

@@ -1,0 +1,113 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP010011,14 Nov 20,1,Dendy Park,BLTC,No. 1,Susan Hodgman,Olivia Moir,Olivia Moir,3-8,3,8,0,1,Completed,true,false,false
+AP010011,14 Nov 20,1,Dendy Park,BLTC,No. 2,Melinda Batt,Ruby Ward,Ruby Ward,0-8,0,8,0,1,Completed,true,false,false
+AP010011,14 Nov 20,1,Dendy Park,BLTC,No. 3,Laura Furze,Rachael Dickinson,Rachael Dickinson,2-8,2,8,0,1,Completed,true,false,false
+AP010011,14 Nov 20,1,Dendy Park,BLTC,No. 4,Danusia Szafranski,Cassandra Neylon,Danusia Szafranski,8-7,8,7,1,0,Completed,true,false,false
+AP010012,14 Nov 20,1,Royal South Yarra 1,Hawthorn,No. 1,Vicky Lynagh,Leona Dowman,Leona Dowman,3-8,3,8,0,1,Completed,true,false,false
+AP010012,14 Nov 20,1,Royal South Yarra 1,Hawthorn,No. 2,Fiona Ralph,Michelle Harrison,Michelle Harrison,2-8,2,8,0,1,Completed,true,false,true
+AP010012,14 Nov 20,1,Royal South Yarra 1,Hawthorn,No. 3,Kitty Park,Tamara Jangwirth,Tamara Jangwirth,4-8,4,8,0,1,Completed,true,false,false
+AP010012,14 Nov 20,1,Royal South Yarra 1,Hawthorn,No. 4,Susie Salmon,Elissa Henderson,Elissa Henderson,3-8,3,8,0,1,Completed,true,false,true
+AP010013,14 Nov 20,1,Royal South Yarra 2,East Malvern,No. 1,Virginia Wallace,Therese Oyston,Therese Oyston,1-8,1,8,0,1,Completed,true,false,false
+AP010013,14 Nov 20,1,Royal South Yarra 2,East Malvern,No. 2,Peta Kowalski,Jane Feile,Jane Feile,1-8,1,8,0,1,Completed,true,false,false
+AP010013,14 Nov 20,1,Royal South Yarra 2,East Malvern,No. 3,Sophie Davies,Jody P2 Simpson,Jody P2 Simpson,0-8,0,8,0,1,Completed,true,false,false
+AP010013,14 Nov 20,1,Royal South Yarra 2,East Malvern,No. 4,Stella Kephala,Taihla Roberts,Taihla Roberts,5-8,5,8,0,1,Completed,true,false,true
+AP010021,21 Nov 20,2,East Malvern,Dendy Park,No. 1,Therese Oyston,Susan Hodgman,Therese Oyston,8-7,8,7,1,0,Completed,true,false,false
+AP010021,21 Nov 20,2,East Malvern,Dendy Park,No. 2,Jane Feile,Jane Edgar,Jane Feile,8-0,8,0,1,0,Completed,true,false,false
+AP010021,21 Nov 20,2,East Malvern,Dendy Park,No. 3,Jody P2 Simpson,Sophie Salmon,Jody P2 Simpson,8-1,8,1,1,0,Completed,true,false,false
+AP010021,21 Nov 20,2,East Malvern,Dendy Park,No. 4,Rebecca Richardson,Laura Furze,Rebecca Richardson,8-1,8,1,1,0,Completed,true,true,false
+AP010022,21 Nov 20,2,Hawthorn,Royal South Yarra 2,No. 1,Mirjana Stegnaic,Virginia Wallace,Virginia Wallace,0-8,0,8,0,1,Completed,true,false,false
+AP010022,21 Nov 20,2,Hawthorn,Royal South Yarra 2,No. 2,Tamara Jangwirth,Laura O'Farrell,Tamara Jangwirth,8-1,8,1,1,0,Completed,true,false,false
+AP010022,21 Nov 20,2,Hawthorn,Royal South Yarra 2,No. 3,Demetra Giannakopoulos,Sophie Davies,Sophie Davies,3-8,3,8,0,1,Completed,true,true,false
+AP010022,21 Nov 20,2,Hawthorn,Royal South Yarra 2,No. 4,Marion Hoffman,Stella Kephala,Marion Hoffman,8-3,8,3,1,0,Completed,true,false,false
+AP010023,21 Nov 20,2,BLTC,Royal South Yarra 1,No. 1,Olivia Moir,Vicky Lynagh,Olivia Moir,8-2,8,2,1,0,Completed,true,false,false
+AP010023,21 Nov 20,2,BLTC,Royal South Yarra 1,No. 2,Ruby Ward,Sophie Richards,Ruby Ward,8-0,8,0,1,0,Completed,true,false,false
+AP010023,21 Nov 20,2,BLTC,Royal South Yarra 1,No. 3,Rachael Dickinson,Steph Kortum,Rachael Dickinson,8-7,8,7,1,0,Completed,true,false,false
+AP010023,21 Nov 20,2,BLTC,Royal South Yarra 1,No. 4,Cassandra Neylon,Fiona Ralph,Fiona Ralph,2-8,2,8,0,1,Completed,true,false,false
+AP010031,28 Nov 20,3,Dendy Park,Royal South Yarra 1,No. 1,Jane Edgar,Vicky Lynagh,Vicky Lynagh,3-8,3,8,0,1,Completed,true,false,false
+AP010031,28 Nov 20,3,Dendy Park,Royal South Yarra 1,No. 2,Melinda Batt,Sophie Richards,Sophie Richards,6-8,6,8,0,1,Completed,true,false,false
+AP010031,28 Nov 20,3,Dendy Park,Royal South Yarra 1,No. 3,Laura Furze,Steph Kortum,Steph Kortum,1-8,1,8,0,1,Completed,true,false,false
+AP010031,28 Nov 20,3,Dendy Park,Royal South Yarra 1,No. 4,Danusia Szafranski,Fiona Ralph,Fiona Ralph,4-8,4,8,0,1,Completed,true,false,false
+AP010032,28 Nov 20,3,Royal South Yarra 2,BLTC,No. 1,Virginia Wallace,Olivia Moir,Olivia Moir,4-8,4,8,0,1,Completed,true,false,false
+AP010032,28 Nov 20,3,Royal South Yarra 2,BLTC,No. 2,Peta Kowalski,Ruby Ward,Ruby Ward,0-8,0,8,0,1,Completed,true,false,false
+AP010032,28 Nov 20,3,Royal South Yarra 2,BLTC,No. 3,Laura O'Farrell,Rachael Dickinson,Rachael Dickinson,1-8,1,8,0,1,Completed,true,false,false
+AP010032,28 Nov 20,3,Royal South Yarra 2,BLTC,No. 4,Sophie Davies,Maya Ferguson,Maya Ferguson,2-8,2,8,0,1,Completed,true,false,false
+AP010033,28 Nov 20,3,East Malvern,Hawthorn,No. 1,Therese Oyston,Leona Dowman,Therese Oyston,8-6,8,6,1,0,Completed,true,false,false
+AP010033,28 Nov 20,3,East Malvern,Hawthorn,No. 2,Stephanie Prvcic,Mirjana Stegnaic,Stephanie Prvcic,8-6,8,6,1,0,Completed,true,false,false
+AP010033,28 Nov 20,3,East Malvern,Hawthorn,No. 3,Jane Feile,Marion Hoffman,Jane Feile,8-1,8,1,1,0,Completed,true,false,false
+AP010033,28 Nov 20,3,East Malvern,Hawthorn,No. 4,Rebecca Richardson,Galina Polekhina,Rebecca Richardson,8-2,8,2,1,0,Completed,true,true,true
+AP010041,05 Dec 20,4,Hawthorn,Dendy Park,No. 1,Michelle McKinlay,Jane Edgar,Michelle McKinlay,8-5,8,5,1,0,Completed,true,false,false
+AP010041,05 Dec 20,4,Hawthorn,Dendy Park,No. 2,Tamara Jangwirth,Melinda Batt,Tamara Jangwirth,8-7,8,7,1,0,Completed,true,false,false
+AP010041,05 Dec 20,4,Hawthorn,Dendy Park,No. 3,Mirjana Stegnaic,Sophie Salmon,Sophie Salmon,5-8,5,8,0,1,Completed,true,false,false
+AP010041,05 Dec 20,4,Hawthorn,Dendy Park,No. 4,Georgina Holloway,Laura Furze,Laura Furze,0-8,0,8,0,1,Completed,true,false,false
+AP010042,05 Dec 20,4,BLTC,East Malvern,No. 1,Olivia Moir,Therese Oyston,Olivia Moir,8-4,8,4,1,0,Completed,true,false,false
+AP010042,05 Dec 20,4,BLTC,East Malvern,No. 2,Ruby Ward,Jane Feile,Jane Feile,7-8,7,8,0,1,Completed,true,false,false
+AP010042,05 Dec 20,4,BLTC,East Malvern,No. 3,Rachael Dickinson,Tamara Pudelka,Rachael Dickinson,8-7,8,7,1,0,Completed,true,false,false
+AP010042,05 Dec 20,4,BLTC,East Malvern,No. 4,Maya Ferguson,Rebecca Richardson,Rebecca Richardson,3-8,3,8,0,1,Completed,true,false,true
+AP010043,05 Dec 20,4,Royal South Yarra 1,Royal South Yarra 2,No. 1,Sophie Richards,Virginia Wallace,Virginia Wallace,1-8,1,8,0,1,Completed,true,false,false
+AP010043,05 Dec 20,4,Royal South Yarra 1,Royal South Yarra 2,No. 2,Steph Kortum,Peta Kowalski,,2-3,2,3,0,1,Unfinished,false,false,false
+AP010043,05 Dec 20,4,Royal South Yarra 1,Royal South Yarra 2,No. 3,Susie Salmon,Laura O'Farrell,Laura O'Farrell,2-8,2,8,0,1,Completed,true,false,false
+AP010043,05 Dec 20,4,Royal South Yarra 1,Royal South Yarra 2,No. 4,Alex Ritter,Sophie Davies,Sophie Davies,1-8,1,8,0,1,Completed,true,false,false
+AP010051,12 Dec 20,5,Dendy Park,Royal South Yarra 2,No. 1,Susan Hodgman,Virginia Wallace,Susan Hodgman,8-7,8,7,1,0,Completed,true,false,false
+AP010051,12 Dec 20,5,Dendy Park,Royal South Yarra 2,No. 2,Jane Edgar,Peta Kowalski,Jane Edgar,8-5,8,5,1,0,Completed,true,false,false
+AP010051,12 Dec 20,5,Dendy Park,Royal South Yarra 2,No. 3,Melinda Batt,Sophie Davies,Melinda Batt,8-4,8,4,1,0,Completed,true,false,false
+AP010051,12 Dec 20,5,Dendy Park,Royal South Yarra 2,No. 4,Chantal Millis,Ada Taylor,Chantal Millis,8-0,8,0,1,0,Completed,true,true,false
+AP010052,12 Dec 20,5,Hawthorn,BLTC,No. 1,Leona Dowman,Ruby Ward,Ruby Ward,1-8,1,8,0,1,Completed,true,false,false
+AP010052,12 Dec 20,5,Hawthorn,BLTC,No. 2,Michelle Harrison,Rachael Dickinson,Rachael Dickinson,7-8,7,8,0,1,Completed,true,true,false
+AP010052,12 Dec 20,5,Hawthorn,BLTC,No. 3,Marion Hoffman,Cassandra Neylon,Cassandra Neylon,2-8,2,8,0,1,Completed,true,false,false
+AP010052,12 Dec 20,5,Hawthorn,BLTC,No. 4,Elissa Henderson,Wendy Harrison,Elissa Henderson,8-4,8,4,1,0,Completed,true,true,true
+AP010053,12 Dec 20,5,East Malvern,Royal South Yarra 1,No. 1,Therese Oyston,Vicky Lynagh,Therese Oyston,8-4,8,4,1,0,Completed,true,false,false
+AP010053,12 Dec 20,5,East Malvern,Royal South Yarra 1,No. 2,Stephanie Prvcic,Sophie Richards,Stephanie Prvcic,8-0,8,0,1,0,Completed,true,false,false
+AP010053,12 Dec 20,5,East Malvern,Royal South Yarra 1,No. 3,Jane Feile,Steph Kortum,Jane Feile,8-4,8,4,1,0,Completed,true,false,false
+AP010053,12 Dec 20,5,East Malvern,Royal South Yarra 1,No. 4,Tamara Pudelka,Alex Ritter,Tamara Pudelka,8-0,8,0,1,0,Completed,true,false,false
+AP010061,30 Jan 21,6,BLTC,Dendy Park,No. 1,Olivia Moir,Susan Hodgman,Olivia Moir,8-3,8,3,1,0,Completed,true,false,false
+AP010061,30 Jan 21,6,BLTC,Dendy Park,No. 2,[Unnamed emergency — TROLS AP010061 home code 2],Jane Edgar,Jane Edgar,0-8,0,8,0,1,Completed,false,true,false
+AP010061,30 Jan 21,6,BLTC,Dendy Park,No. 3,Rachael Dickinson,Laura Furze,Rachael Dickinson,8-4,8,4,1,0,Completed,true,false,false
+AP010061,30 Jan 21,6,BLTC,Dendy Park,No. 4,Maya Ferguson,Danusia Szafranski,Maya Ferguson,8-3,8,3,1,0,Completed,true,false,false
+AP010062,30 Jan 21,6,Hawthorn,Royal South Yarra 1,No. 1,Michelle McKinlay,Vicky Lynagh,Michelle McKinlay,8-2,8,2,1,0,Completed,true,false,false
+AP010062,30 Jan 21,6,Hawthorn,Royal South Yarra 1,No. 2,Tamara Jangwirth,Steph Kortum,Tamara Jangwirth,8-3,8,3,1,0,Completed,true,false,false
+AP010062,30 Jan 21,6,Hawthorn,Royal South Yarra 1,No. 3,Mirjana Stegnaic,Fiona Ralph,Mirjana Stegnaic,8-2,8,2,1,0,Completed,true,false,false
+AP010062,30 Jan 21,6,Hawthorn,Royal South Yarra 1,No. 4,Georgina Holloway,Susie Salmon,Susie Salmon,0-8,0,8,0,1,Completed,true,false,false
+AP010063,30 Jan 21,6,East Malvern,Royal South Yarra 2,No. 1,Therese Oyston,Virginia Wallace,Therese Oyston,8-6,8,6,1,0,Completed,true,false,false
+AP010063,30 Jan 21,6,East Malvern,Royal South Yarra 2,No. 2,Stephanie Prvcic,Peta Kowalski,Stephanie Prvcic,8-0,8,0,1,0,Completed,true,false,false
+AP010063,30 Jan 21,6,East Malvern,Royal South Yarra 2,No. 3,Tamara Pudelka,Sophie Davies,Tamara Pudelka,8-1,8,1,1,0,Completed,true,false,false
+AP010063,30 Jan 21,6,East Malvern,Royal South Yarra 2,No. 4,Jody P2 Simpson,Zoe Browning,Jody P2 Simpson,8-0,8,0,1,0,Completed,true,false,true
+AP010071,06 Feb 21,7,Dendy Park,East Malvern,No. 1,Susan Hodgman,Therese Oyston,Therese Oyston,7-8,7,8,0,1,Completed,true,false,false
+AP010071,06 Feb 21,7,Dendy Park,East Malvern,No. 2,Jane Edgar,Stephanie Prvcic,Stephanie Prvcic,1-8,1,8,0,1,Completed,true,false,false
+AP010071,06 Feb 21,7,Dendy Park,East Malvern,No. 3,Laura Furze,Jane Feile,Jane Feile,2-8,2,8,0,1,Completed,true,false,false
+AP010071,06 Feb 21,7,Dendy Park,East Malvern,No. 4,Danusia Szafranski,Jody P2 Simpson,Jody P2 Simpson,6-8,6,8,0,1,Completed,true,false,false
+AP010072,06 Feb 21,7,Royal South Yarra 2,Hawthorn,No. 1,Virginia Wallace,Michelle McKinlay,Michelle McKinlay,2-8,2,8,0,1,Completed,true,false,false
+AP010072,06 Feb 21,7,Royal South Yarra 2,Hawthorn,No. 2,Peta Kowalski,Tamara Jangwirth,Tamara Jangwirth,1-8,1,8,0,1,Completed,true,false,false
+AP010072,06 Feb 21,7,Royal South Yarra 2,Hawthorn,No. 3,Ada Taylor,Mirjana Stegnaic,Mirjana Stegnaic,4-8,4,8,0,1,Completed,true,false,false
+AP010072,06 Feb 21,7,Royal South Yarra 2,Hawthorn,No. 4,Zoe Browning,Galina Polekhina,Zoe Browning,8-1,8,1,1,0,Completed,true,true,true
+AP010073,06 Feb 21,7,Royal South Yarra 1,BLTC,No. 1,Vicky Lynagh,Ruby Ward,Ruby Ward,1-8,1,8,0,1,Completed,true,false,false
+AP010073,06 Feb 21,7,Royal South Yarra 1,BLTC,No. 2,Sylvie Hutchins,Rachael Dickinson,Rachael Dickinson,2-8,2,8,0,1,Completed,true,true,false
+AP010073,06 Feb 21,7,Royal South Yarra 1,BLTC,No. 3,Fiona Ralph,Cassandra Neylon,Fiona Ralph,8-5,8,5,1,0,Completed,true,false,false
+AP010073,06 Feb 21,7,Royal South Yarra 1,BLTC,No. 4,Kitty Park,Maya Ferguson,Maya Ferguson,6-8,6,8,0,1,Completed,true,false,false
+AP010081,20 Feb 21,8,Royal South Yarra 1,Dendy Park,No. 1,Sophie Richards,Jane Edgar,Jane Edgar,5-8,5,8,0,1,Completed,true,false,false
+AP010081,20 Feb 21,8,Royal South Yarra 1,Dendy Park,No. 2,Steph Kortum,Melinda Batt,Steph Kortum,8-5,8,5,1,0,Completed,true,false,false
+AP010081,20 Feb 21,8,Royal South Yarra 1,Dendy Park,No. 3,Kitty Park,Laura Furze,Kitty Park,8-3,8,3,1,0,Completed,true,false,false
+AP010081,20 Feb 21,8,Royal South Yarra 1,Dendy Park,No. 4,Susie Salmon,Danusia Szafranski,Danusia Szafranski,0-8,0,8,0,1,Completed,true,false,false
+AP010082,20 Feb 21,8,BLTC,Royal South Yarra 2,No. 1,Olivia Moir,Virginia Wallace,Olivia Moir,8-1,8,1,1,0,Completed,true,false,false
+AP010082,20 Feb 21,8,BLTC,Royal South Yarra 2,No. 2,Ruby Ward,Peta Kowalski,Ruby Ward,8-1,8,1,1,0,Completed,true,false,false
+AP010082,20 Feb 21,8,BLTC,Royal South Yarra 2,No. 3,Rachael Dickinson,Sophie Davies,Rachael Dickinson,8-0,8,0,1,0,Completed,true,false,false
+AP010082,20 Feb 21,8,BLTC,Royal South Yarra 2,No. 4,Cassandra Neylon,Jennifer Langford,Cassandra Neylon,8-3,8,3,1,0,Completed,true,false,true
+AP010083,20 Feb 21,8,Hawthorn,East Malvern,No. 1,Tamara Jangwirth,Therese Oyston,Therese Oyston,7-8,7,8,0,1,Completed,true,false,false
+AP010083,20 Feb 21,8,Hawthorn,East Malvern,No. 2,Mirjana Stegnaic,Stephanie Prvcic,Mirjana Stegnaic,8-5,8,5,1,0,Completed,true,false,false
+AP010083,20 Feb 21,8,Hawthorn,East Malvern,No. 3,Galina Polekhina,Jane Feile,Jane Feile,2-8,2,8,0,1,Completed,true,true,false
+AP010083,20 Feb 21,8,Hawthorn,East Malvern,No. 4,Vicki Blatt,Phillipa P2 Rehe,Phillipa P2 Rehe,1-8,1,8,0,1,Completed,true,true,true
+AP010091,27 Feb 21,9,Dendy Park,Hawthorn,No. 1,Susan Hodgman,Michelle McKinlay,Michelle McKinlay,1-8,1,8,0,1,Completed,true,false,false
+AP010091,27 Feb 21,9,Dendy Park,Hawthorn,No. 2,Jane Edgar,Tamara Jangwirth,Tamara Jangwirth,0-8,0,8,0,1,Completed,true,false,false
+AP010091,27 Feb 21,9,Dendy Park,Hawthorn,No. 3,Melinda Batt,Mirjana Stegnaic,Mirjana Stegnaic,6-8,6,8,0,1,Completed,true,false,false
+AP010091,27 Feb 21,9,Dendy Park,Hawthorn,No. 4,Laura Furze,Georgina Holloway,Laura Furze,8-0,8,0,1,0,Completed,true,false,false
+AP010092,27 Feb 21,9,East Malvern,BLTC,No. 1,Therese Oyston,Rachael Dickinson,Therese Oyston,8-4,8,4,1,0,Completed,true,false,false
+AP010092,27 Feb 21,9,East Malvern,BLTC,No. 2,Stephanie Prvcic,Cassandra Neylon,Stephanie Prvcic,8-3,8,3,1,0,Completed,true,false,false
+AP010092,27 Feb 21,9,East Malvern,BLTC,No. 3,Jane Feile,Pauleen Suttie,Jane Feile,8-7,8,7,1,0,Completed,true,false,true
+AP010092,27 Feb 21,9,East Malvern,BLTC,No. 4,Tamara Pudelka,Eirenie Nimorakiotakis,Tamara Pudelka,8-0,8,0,1,0,Completed,true,false,true
+AP010093,27 Feb 21,9,Royal South Yarra 2,Royal South Yarra 1,No. 1,Virginia Wallace,Vicky Lynagh,Virginia Wallace,8-2,8,2,1,0,Completed,true,false,false
+AP010093,27 Feb 21,9,Royal South Yarra 2,Royal South Yarra 1,No. 2,Peta Kowalski,Steph Kortum,Steph Kortum,4-8,4,8,0,1,Completed,true,false,false
+AP010093,27 Feb 21,9,Royal South Yarra 2,Royal South Yarra 1,No. 3,Ada Taylor,Fiona Ralph,Fiona Ralph,1-8,1,8,0,1,Completed,true,false,false
+AP010093,27 Feb 21,9,Royal South Yarra 2,Royal South Yarra 1,No. 4,Sophie Davies,Susie Salmon,Sophie Davies,8-5,8,5,1,0,Completed,true,false,false
+AP010321,,16,East Malvern,BLTC,No. 1,Therese Oyston,Olivia Moir,Olivia Moir,2-8,2,8,0,1,Completed,true,false,false
+AP010321,,16,East Malvern,BLTC,No. 2,Stephanie Prvcic,Ruby Ward,Ruby Ward,2-8,2,8,0,1,Completed,true,false,false
+AP010321,,16,East Malvern,BLTC,No. 3,Jane Feile,Rachael Dickinson,Jane Feile,8-4,8,4,1,0,Completed,true,false,false
+AP010321,,16,East Malvern,BLTC,No. 4,Tamara Pudelka,Cassandra Neylon,Tamara Pudelka,8-2,8,2,1,0,Completed,true,false,false

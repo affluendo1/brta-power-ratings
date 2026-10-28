@@ -1,0 +1,91 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP011012,01 Oct 22,1,BLTC,Dendy Park,No. 1,Sophia Nimorakiotakis,Jasmine Ellis,Jasmine Ellis,2-8,2,8,0,1,Completed,true,false,false
+AP011012,01 Oct 22,1,BLTC,Dendy Park,No. 2,Marsha Kagan,Angelee Singh,Marsha Kagan,8-5,8,5,1,0,Completed,true,false,false
+AP011012,01 Oct 22,1,BLTC,Dendy Park,No. 3,Serena Lee,Danaya Malendan,Danaya Malendan,7-8,7,8,0,1,Completed,true,false,false
+AP011012,01 Oct 22,1,BLTC,Dendy Park,No. 4,Jessica Wu,Elizabeth Carnes,Jessica Wu,8-3,8,3,1,0,Completed,true,true,false
+AP011021,08 Oct 22,2,Mt Eliza,Hawthorn,No. 1,Hope Backx,Simone Dunker,Simone Dunker,2-8,2,8,0,1,Completed,true,false,false
+AP011021,08 Oct 22,2,Mt Eliza,Hawthorn,No. 2,Victoria Stewart,Chantelle Khoury,Victoria Stewart,8-2,8,2,1,0,Completed,true,false,false
+AP011021,08 Oct 22,2,Mt Eliza,Hawthorn,No. 3,Lara Bond,Mirjana Stegnaic,Lara Bond,8-1,8,1,1,0,Completed,true,false,false
+AP011021,08 Oct 22,2,Mt Eliza,Hawthorn,No. 4,Courtney Skene,Demetra Giannakopoulos,Courtney Skene,8-0,8,0,1,0,Completed,true,false,false
+AP011022,08 Oct 22,2,Dendy Park,Hampton,No. 1,Danaya Malendan,Madison King,,1-3,1,3,0,1,Unfinished,false,false,false
+AP011022,08 Oct 22,2,Dendy Park,Hampton,No. 2,Ciara Ennis,Grace Thomas,,1-3,1,3,0,1,Unfinished,false,false,false
+AP011031,15 Oct 22,3,Hawthorn,BLTC,No. 1,Simone Dunker,Maya Milosevic,Simone Dunker,8-6,8,6,1,0,Completed,true,false,false
+AP011031,15 Oct 22,3,Hawthorn,BLTC,No. 2,Tamara Jungwirth,Eirene Nimorakiotakis,Eirene Nimorakiotakis,1-8,1,8,0,1,Completed,true,false,false
+AP011031,15 Oct 22,3,Hawthorn,BLTC,No. 3,Michelle McKinlay,Lola Grigor,Michelle McKinlay,8-1,8,1,1,0,Completed,true,false,false
+AP011031,15 Oct 22,3,Hawthorn,BLTC,No. 4,Mirjana Stegnaic,Serena Lee,Serena Lee,2-8,2,8,0,1,Completed,true,false,false
+AP011033,15 Oct 22,3,Mt Eliza,Dendy Park,No. 1,Victoria Stewart,Jasmine Ellis,Victoria Stewart,8-3,8,3,1,0,Completed,true,false,false
+AP011033,15 Oct 22,3,Mt Eliza,Dendy Park,No. 2,Veronika Harangozo,Angelee Singh,Veronika Harangozo,8-6,8,6,1,0,Completed,true,false,false
+AP011033,15 Oct 22,3,Mt Eliza,Dendy Park,No. 3,Alice Rogers,Celina Yang,Alice Rogers,8-4,8,4,1,0,Completed,true,true,false
+AP011033,15 Oct 22,3,Mt Eliza,Dendy Park,No. 4,Courtney Skene,Juliet McKenzie,Courtney Skene,8-3,8,3,1,0,Completed,true,false,true
+AP011051,05 Nov 22,5,Hawthorn,Hampton,No. 1,Tamara Jungwirth,Naima Luthra,Naima Luthra,2-8,2,8,0,1,Completed,true,false,false
+AP011051,05 Nov 22,5,Hawthorn,Hampton,No. 2,Marion Hoffman,Shalyn Phillips,Shalyn Phillips,6-8,6,8,0,1,Completed,true,false,false
+AP011051,05 Nov 22,5,Hawthorn,Hampton,No. 3,Georgina Holloway,Anhelina Cherkashnya,Anhelina Cherkashnya,0-8,0,8,0,1,Completed,true,true,false
+AP011051,05 Nov 22,5,Hawthorn,Hampton,No. 4,Niamh Ollquist,Katelyn Argent,Katelyn Argent,5-8,5,8,0,1,Completed,true,true,false
+AP011053,05 Nov 22,5,Mt Eliza,BLTC,No. 1,Victoria Stewart,Maya Milosevic,Maya Milosevic,6-8,6,8,0,1,Completed,true,false,false
+AP011053,05 Nov 22,5,Mt Eliza,BLTC,No. 2,Helena Zubovic,Pauline Ma,Pauline Ma,1-8,1,8,0,1,Completed,true,false,false
+AP011053,05 Nov 22,5,Mt Eliza,BLTC,No. 3,Veronika Harangozo,Lola Grigor,Lola Grigor,0-8,0,8,0,1,Completed,true,false,false
+AP011053,05 Nov 22,5,Mt Eliza,BLTC,No. 4,Sunny Green,Marsha Kagan,Marsha Kagan,2-8,2,8,0,1,Completed,true,true,false
+AP011062,12 Nov 22,6,Dendy Park,BLTC,No. 1,Jasmine Ellis,Eirene Nimorakiotakis,Jasmine Ellis,8-7,8,7,1,0,Completed,true,false,false
+AP011062,12 Nov 22,6,Dendy Park,BLTC,No. 2,Angelee Singh,Sophia Nimorakiotakis,Sophia Nimorakiotakis,5-8,5,8,0,1,Completed,true,false,false
+AP011062,12 Nov 22,6,Dendy Park,BLTC,No. 3,Juliet McKenzie,Pauline Ma,Pauline Ma,1-8,1,8,0,1,Completed,true,true,false
+AP011062,12 Nov 22,6,Dendy Park,BLTC,No. 4,Ciara Ennis,Lola Grigor,Lola Grigor,2-8,2,8,0,1,Completed,true,false,false
+AP011063,12 Nov 22,6,Mt Eliza,Hampton,No. 1,Hope Backx,Sienna Yokoto-Ho,Sienna Yokoto-Ho,6-8,6,8,0,1,Completed,true,false,false
+AP011063,12 Nov 22,6,Mt Eliza,Hampton,No. 2,Lara Bond,Madison King,Madison King,2-8,2,8,0,1,Completed,true,false,false
+AP011063,12 Nov 22,6,Mt Eliza,Hampton,No. 3,Helena Zubovic,Anhelina Cherkashnya,Helena Zubovic,8-3,8,3,1,0,Completed,true,false,false
+AP011063,12 Nov 22,6,Mt Eliza,Hampton,No. 4,Courtney Skene,Katelyn Argent,Courtney Skene,8-2,8,2,1,0,Completed,true,false,false
+AP011081,26 Nov 22,8,BLTC,Hawthorn,No. 1,Maya Milosevic,Simone Dunker,Maya Milosevic,8-7,8,7,1,0,Completed,true,false,false
+AP011081,26 Nov 22,8,BLTC,Hawthorn,No. 2,Eirene Nimorakiotakis,Tamara Jungwirth,Eirene Nimorakiotakis,8-3,8,3,1,0,Completed,true,false,false
+AP011081,26 Nov 22,8,BLTC,Hawthorn,No. 3,Lola Grigor,Marion Hoffman,Lola Grigor,8-1,8,1,1,0,Completed,true,false,false
+AP011081,26 Nov 22,8,BLTC,Hawthorn,No. 4,Serena Lee,Mirjana Stegnaic,Serena Lee,8-1,8,1,1,0,Completed,true,false,false
+AP011083,26 Nov 22,8,Dendy Park,Mt Eliza,No. 1,Jasmine Ellis,Veronika Harangozo,Jasmine Ellis,8-4,8,4,1,0,Completed,true,false,false
+AP011083,26 Nov 22,8,Dendy Park,Mt Eliza,No. 2,Emily Collins,Alice Rogers,Emily Collins,8-6,8,6,1,0,Completed,true,false,true
+AP011083,26 Nov 22,8,Dendy Park,Mt Eliza,No. 3,Elizabeth Carnes,Brook Levine,Brook Levine,2-8,2,8,0,1,Completed,true,false,true
+AP011083,26 Nov 22,8,Dendy Park,Mt Eliza,No. 4,Ciara Ennis,[Unnamed emergency — TROLS AP011083 away code 4],Ciara Ennis,8-0,8,0,1,0,Completed,false,false,true
+AP011091,03 Dec 22,9,Hawthorn,Dendy Park,No. 1,Tamara Jungwirth,Angelee Singh,Tamara Jungwirth,8-5,8,5,1,0,Completed,true,false,false
+AP011091,03 Dec 22,9,Hawthorn,Dendy Park,No. 2,Michelle McKinlay,Emily Collins,Michelle McKinlay,8-5,8,5,1,0,Completed,true,false,false
+AP011091,03 Dec 22,9,Hawthorn,Dendy Park,No. 3,Leona Dowman,Ines Bescond,Ines Bescond,0-8,0,8,0,1,Completed,true,false,false
+AP011091,03 Dec 22,9,Hawthorn,Dendy Park,No. 4,Demetra Giannakopoulos,Ellie Roger,Demetra Giannakopoulos,8-2,8,2,1,0,Completed,true,false,true
+AP011101,10 Dec 22,10,Hampton,Hawthorn,No. 1,Savannah James,Leona Dowman,Savannah James,8-0,8,0,1,0,Completed,true,false,false
+AP011101,10 Dec 22,10,Hampton,Hawthorn,No. 2,Naima Luthra,Khushi Talkad,Naima Luthra,8-1,8,1,1,0,Completed,true,false,true
+AP011101,10 Dec 22,10,Hampton,Hawthorn,No. 3,Sophie Christie,Marion Hoffman,Sophie Christie,8-0,8,0,1,0,Completed,true,false,false
+AP011101,10 Dec 22,10,Hampton,Hawthorn,No. 4,Grace Thomas,Georgina Holloway,Grace Thomas,8-1,8,1,1,0,Completed,true,false,true
+AP011103,10 Dec 22,10,BLTC,Mt Eliza,No. 1,Sophia Nimorakiotakis,Hope Backx,Hope Backx,3-8,3,8,0,1,Completed,true,false,false
+AP011103,10 Dec 22,10,BLTC,Mt Eliza,No. 2,Pauline Ma,Victoria Stewart,Pauline Ma,8-1,8,1,1,0,Completed,true,false,false
+AP011103,10 Dec 22,10,BLTC,Mt Eliza,No. 3,Serena Lee,Helena Zubovic,Helena Zubovic,3-8,3,8,0,1,Completed,true,false,false
+AP011103,10 Dec 22,10,BLTC,Mt Eliza,No. 4,Jessica Wu,Courtney Skene,Courtney Skene,0-8,0,8,0,1,Completed,true,true,false
+AP011112,04 Feb 23,11,BLTC,Dendy Park,No. 1,Sophia Nimorakiotakis,Emily Collins,Sophia Nimorakiotakis,8-1,8,1,1,0,Completed,true,false,false
+AP011112,04 Feb 23,11,BLTC,Dendy Park,No. 2,Pauline Ma,Celina Yang,Pauline Ma,8-1,8,1,1,0,Completed,true,false,false
+AP011112,04 Feb 23,11,BLTC,Dendy Park,No. 3,Lola Grigor,Elizabeth Carnes,Lola Grigor,8-0,8,0,1,0,Completed,true,false,false
+AP011112,04 Feb 23,11,BLTC,Dendy Park,No. 4,Anika Moller,Ellie Roger,Anika Moller,8-3,8,3,1,0,Completed,true,true,true
+AP011113,04 Feb 23,11,Hampton,Mt Eliza,No. 1,Savannah James,Victoria Stewart,Savannah James,8-0,8,0,1,0,Completed,true,false,false
+AP011113,04 Feb 23,11,Hampton,Mt Eliza,No. 2,Sienna Yokoto-Ho,Lara Bond,Lara Bond,7-8,7,8,0,1,Completed,true,false,false
+AP011113,04 Feb 23,11,Hampton,Mt Eliza,No. 3,Anhelina Cherkashnya,Courtney Skene,Anhelina Cherkashnya,8-5,8,5,1,0,Completed,true,false,false
+AP011113,04 Feb 23,11,Hampton,Mt Eliza,No. 4,Bec Bytheway,Morgan Storm,Bec Bytheway,8-0,8,0,1,0,Completed,true,true,true
+AP011121,11 Feb 23,12,Mt Eliza,Hawthorn,No. 1,Hope Backx,Tamara Jungwirth,Hope Backx,8-0,8,0,1,0,Completed,true,false,false
+AP011121,11 Feb 23,12,Mt Eliza,Hawthorn,No. 2,Victoria Stewart,Michelle McKinlay,Victoria Stewart,8-4,8,4,1,0,Completed,true,false,false
+AP011121,11 Feb 23,12,Mt Eliza,Hawthorn,No. 3,Lara Bond,Marion Hoffman,Lara Bond,8-1,8,1,1,0,Completed,true,false,false
+AP011121,11 Feb 23,12,Mt Eliza,Hawthorn,No. 4,Courtney Skene,Demetra Giannakopoulos,Courtney Skene,8-0,8,0,1,0,Completed,true,false,false
+AP011122,11 Feb 23,12,Dendy Park,Hampton,No. 1,Jasmine Ellis,Savannah James,Jasmine Ellis,8-7,8,7,1,0,Completed,true,false,false
+AP011122,11 Feb 23,12,Dendy Park,Hampton,No. 2,Angelee Singh,Madison King,Madison King,7-8,7,8,0,1,Completed,true,false,false
+AP011122,11 Feb 23,12,Dendy Park,Hampton,No. 3,Emily Collins,Anhelina Cherkashnya,Anhelina Cherkashnya,5-8,5,8,0,1,Completed,true,false,false
+AP011122,11 Feb 23,12,Dendy Park,Hampton,No. 4,Ellie Roger,Katelyn Argent,Katelyn Argent,0-8,0,8,0,1,Completed,true,true,false
+AP011131,18 Feb 23,13,Hawthorn,BLTC,No. 1,Tamara Jungwirth,Sophia Nimorakiotakis,Tamara Jungwirth,8-0,8,0,1,0,Completed,true,false,false
+AP011131,18 Feb 23,13,Hawthorn,BLTC,No. 2,Marion Hoffman,Pauline Ma,Pauline Ma,2-8,2,8,0,1,Completed,true,false,false
+AP011131,18 Feb 23,13,Hawthorn,BLTC,No. 3,Demetra Giannakopoulos,Marsha Kagan,Marsha Kagan,3-8,3,8,0,1,Completed,true,false,false
+AP011131,18 Feb 23,13,Hawthorn,BLTC,No. 4,Mirjana Stegnaic,[Unnamed emergency — TROLS AP011131 away code 4],Mirjana Stegnaic,8-0,8,0,1,0,Completed,false,false,true
+AP011143,25 Feb 23,14,BLTC,Hampton,No. 1,Maya Milosevic,Katelyn Argent,Maya Milosevic,8-2,8,2,1,0,Completed,true,false,false
+AP011143,25 Feb 23,14,BLTC,Hampton,No. 2,Sophia Nimorakiotakis,Zeynep Belis Gulener,Sophia Nimorakiotakis,8-4,8,4,1,0,Completed,true,false,true
+AP011143,25 Feb 23,14,BLTC,Hampton,No. 3,Marsha Kagan,Bec Bytheway,Marsha Kagan,8-6,8,6,1,0,Completed,true,false,true
+AP011143,25 Feb 23,14,BLTC,Hampton,No. 4,Anika Moller,Rosie Widmann,Rosie Widmann,4-8,4,8,0,1,Completed,true,true,true
+AP011151,04 Mar 23,15,Hawthorn,Hampton,No. 1,Tamara Jungwirth,Savannah James,Savannah James,1-8,1,8,0,1,Completed,true,false,false
+AP011151,04 Mar 23,15,Hawthorn,Hampton,No. 2,Leona Dowman,Sienna Yokoto-Ho,Sienna Yokoto-Ho,0-8,0,8,0,1,Completed,true,false,false
+AP011151,04 Mar 23,15,Hawthorn,Hampton,No. 3,Michelle McKinlay,Madison King,Madison King,5-8,5,8,0,1,Completed,true,false,false
+AP011151,04 Mar 23,15,Hawthorn,Hampton,No. 4,Demetra Giannakopoulos,Katelyn Argent,Katelyn Argent,1-8,1,8,0,1,Completed,true,false,false
+AP011153,04 Mar 23,15,Mt Eliza,BLTC,No. 1,Victoria Stewart,Sophia Nimorakiotakis,Victoria Stewart,8-4,8,4,1,0,Completed,true,false,false
+AP011153,04 Mar 23,15,Mt Eliza,BLTC,No. 2,Lara Bond,Pauline Ma,Lara Bond,8-7,8,7,1,0,Completed,true,false,false
+AP011153,04 Mar 23,15,Mt Eliza,BLTC,No. 3,Veronika Harangozo,Lola Grigor,Veronika Harangozo,8-6,8,6,1,0,Completed,true,false,false
+AP011153,04 Mar 23,15,Mt Eliza,BLTC,No. 4,Jasmyn Heriot,Serena Lee,Jasmyn Heriot,8-4,8,4,1,0,Completed,true,true,false
+AP011321,,16,Hampton,Mt Eliza,No. 1,Sienna Yokoto-Ho,Hope Backx,Hope Backx,1-8,1,8,0,1,Completed,true,false,false
+AP011321,,16,Hampton,Mt Eliza,No. 2,Madison King,Victoria Stewart,Madison King,8-6,8,6,1,0,Completed,true,false,false
+AP011321,,16,Hampton,Mt Eliza,No. 3,Anhelina Cherkashnya,Lara Bond,Lara Bond,6-8,6,8,0,1,Completed,true,false,false
+AP011321,,16,Hampton,Mt Eliza,No. 4,Grace Thomas,Veronika Harangozo,Grace Thomas,8-0,8,0,1,0,Completed,true,false,false

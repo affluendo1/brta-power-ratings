@@ -1,0 +1,97 @@
+{
+  "asset_id": "AP36-AP018",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 17/18",
+  "season_id": "AP36",
+  "season_label": "Summer 17/18",
+  "source_section_code": "AP018",
+  "section_label": "Mens S/D 6",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Carmelite",
+      "wins": 9,
+      "points": 90,
+      "percentage": 167.71,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "Dendy Park 2",
+      "wins": 6,
+      "points": 83.5,
+      "percentage": 170.7,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Port Melbourne",
+      "wins": 7,
+      "points": 68,
+      "percentage": 104.05,
+      "marker": "P"
+    },
+    {
+      "position": 4,
+      "team": "Dendy Park 1",
+      "wins": 6,
+      "points": 67,
+      "percentage": 119.13,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Tennis World MP",
+      "wins": 6,
+      "points": 59,
+      "percentage": 81.34,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Royal South Yarra",
+      "wins": 1,
+      "points": 29.5,
+      "percentage": 52.0,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Monash University",
+      "wins": 0,
+      "points": 23,
+      "percentage": 60.92,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP36-AP018",
+  "fixtures": 60,
+  "completed_fixtures": 39,
+  "draw_fixtures": 60,
+  "singles_rubbers": 156,
+  "doubles_rubbers": 72,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP018061 doubles No. 2: '6-3 4-3'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

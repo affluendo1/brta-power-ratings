@@ -1,0 +1,60 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP014011,05 Oct 19,1,regular,Round 1,Elsternwick Park,Dendy Park,0,10,0,8,,,19,56,Completed,
+AP014012,05 Oct 19,1,regular,Round 1,Maccabi,Kooyong,9,1,7,1,,,50,24,Completed,
+AP014013,05 Oct 19,1,regular,Round 1,Patterson Lakes,GPHC,10,0,8,1,,,62,34,Completed,
+AP014014,05 Oct 19,1,regular,Round 1,Mt Eliza,Highmoor Uniting,10,0,8,0,,,56,9,Completed,
+AP014021,12 Oct 19,2,regular,Round 2,Highmoor Uniting,Elsternwick Park,7,3,4,4,,,42,41,Completed,
+AP014022,12 Oct 19,2,regular,Round 2,Dendy Park,Maccabi,8,2,6,3,,,53,39,Completed,
+AP014023,12 Oct 19,2,regular,Round 2,Kooyong,Patterson Lakes,1,9,1,7,,,24,56,Completed,
+AP014024,12 Oct 19,2,regular,Round 2,GPHC,Mt Eliza,1,9,2,7,,,39,57,Completed,
+AP014031,19 Oct 19,3,regular,Round 3,Elsternwick Park,GPHC,3,7,4,4,,,35,45,Completed,
+AP014032,19 Oct 19,3,regular,Round 3,Maccabi,Highmoor Uniting,6,4,2,0,,,17,11,Completed,
+AP014033,19 Oct 19,3,regular,Round 3,Patterson Lakes,Dendy Park,8,2,5,3,,,52,47,Completed,
+AP014034,19 Oct 19,3,regular,Round 3,Mt Eliza,Kooyong,5.5,4.5,2,1,,,29,15,Completed,
+AP014041,26 Oct 19,4,regular,Round 4,Kooyong,Elsternwick Park,5,5,3,3,,,37,37,Completed,
+AP014042,26 Oct 19,4,regular,Round 4,GPHC,Maccabi,5,5,1,1,,,12,10,Completed,
+AP014043,26 Oct 19,4,regular,Round 4,Highmoor Uniting,Patterson Lakes,1,9,1,7,,,26,55,Completed,
+AP014044,26 Oct 19,4,regular,Round 4,Dendy Park,Mt Eliza,1,9,2,7,,,39,56,Completed,
+AP014051,09 Nov 19,5,regular,Round 5,Patterson Lakes,Mt Eliza,9,1,7,1,,,54,35,Completed,
+AP014052,09 Nov 19,5,regular,Round 5,Highmoor Uniting,GPHC,7,3,5,3,,,50,43,Completed,
+AP014053,09 Nov 19,5,regular,Round 5,Kooyong,Dendy Park,0,10,1,8,,,31,63,Completed,
+AP014054,09 Nov 19,5,regular,Round 5,Elsternwick Park,Maccabi,9,1,7,1,,,55,31,Completed,
+AP014061,16 Nov 19,6,regular,Round 6,Maccabi,Patterson Lakes,9,1,7,3,,,63,42,Completed,
+AP014063,16 Nov 19,6,regular,Round 6,GPHC,Kooyong,7,3,4,4,,,41,38,Completed,
+AP014064,16 Nov 19,6,regular,Round 6,Dendy Park,Highmoor Uniting,2,8,3,5,,,38,44,Completed,
+pending-ap014-r6-mt-eliza-elsternwick-park,16 Nov 19,6,regular,Round 6,Mt Eliza,Elsternwick Park,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP014071,23 Nov 19,7,regular,Round 7,Elsternwick Park,Patterson Lakes,7,3,4,4,,,42,41,Completed,
+AP014072,23 Nov 19,7,regular,Round 7,Maccabi,Mt Eliza,2,8,3,5,,,34,41,Completed,
+AP014073,23 Nov 19,7,regular,Round 7,Highmoor Uniting,Kooyong,1,9,2,6,,,38,49,Completed,
+AP014074,23 Nov 19,7,regular,Round 7,GPHC,Dendy Park,10,0,8,1,,,62,31,Completed,
+AP014081,30 Nov 19,8,regular,Round 8,Dendy Park,Elsternwick Park,9,1,6,2,,,53,24,Completed,
+AP014082,30 Nov 19,8,regular,Round 8,Kooyong,Maccabi,1,9,1,7,,,35,52,Completed,
+AP014083,30 Nov 19,8,regular,Round 8,GPHC,Patterson Lakes,2,8,3,6,,,40,55,Completed,
+AP014084,30 Nov 19,8,regular,Round 8,Highmoor Uniting,Mt Eliza,3,7,4,5,,,51,58,Completed,
+AP014091,07 Dec 19,9,regular,Round 9,Elsternwick Park,Highmoor Uniting,1,5,1,7,,,17,48,Completed,
+AP014092,07 Dec 19,9,regular,Round 9,Maccabi,Dendy Park,8,2,4,4,,,49,47,Completed,
+AP014093,07 Dec 19,9,regular,Round 9,Patterson Lakes,Kooyong,10,0,8,0,,,56,17,Completed,
+pending-ap014-r9-mt-eliza-gphc,07 Dec 19,9,regular,Round 9,Mt Eliza,GPHC,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP014101,14 Dec 19,10,regular,Round 10,GPHC,Elsternwick Park,10,0,8,0,,,56,15,Completed,
+AP014102,14 Dec 19,10,regular,Round 10,Highmoor Uniting,Maccabi,2,8,3,6,,,37,57,Completed,
+AP014103,14 Dec 19,10,regular,Round 10,Dendy Park,Patterson Lakes,3,7,4,5,,,48,45,Completed,
+AP014104,14 Dec 19,10,regular,Round 10,Kooyong,Mt Eliza,0,10,0,8,,,32,57,Completed,
+pending-ap014-r11-elsternwick-park-kooyong,01 Feb 20,11,regular,Round 11,Elsternwick Park,Kooyong,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap014-r11-maccabi-gphc,01 Feb 20,11,regular,Round 11,Maccabi,GPHC,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap014-r11-mt-eliza-dendy-park,01 Feb 20,11,regular,Round 11,Mt Eliza,Dendy Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap014-r11-patterson-lakes-highmoor-uniting,01 Feb 20,11,regular,Round 11,Patterson Lakes,Highmoor Uniting,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP014121,08 Feb 20,12,regular,Round 12,Mt Eliza,Patterson Lakes,8,2,5,3,,,49,44,Completed,
+AP014122,08 Feb 20,12,regular,Round 12,GPHC,Highmoor Uniting,10,0,8,0,,,56,16,Completed,
+AP014123,08 Feb 20,12,regular,Round 12,Dendy Park,Kooyong,3,7,4,5,,,50,50,Completed,
+pending-ap014-r12-maccabi-elsternwick-park,08 Feb 20,12,regular,Round 12,Maccabi,Elsternwick Park,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP014132,15 Feb 20,13,regular,Round 13,Elsternwick Park,Mt Eliza,0,10,0,8,,,10,56,Completed,
+pending-ap014-r13-highmoor-uniting-dendy-park,15 Feb 20,13,regular,Round 13,Highmoor Uniting,Dendy Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap014-r13-kooyong-gphc,15 Feb 20,13,regular,Round 13,Kooyong,GPHC,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap014-r13-patterson-lakes-maccabi,15 Feb 20,13,regular,Round 13,Patterson Lakes,Maccabi,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP014141,22 Feb 20,14,regular,Round 14,Patterson Lakes,Elsternwick Park,10,0,8,0,,,56,8,Completed,
+AP014142,22 Feb 20,14,regular,Round 14,Mt Eliza,Maccabi,9,1,7,3,,,62,40,Completed,
+AP014143,22 Feb 20,14,regular,Round 14,Kooyong,Highmoor Uniting,2,8,2,6,,,27,48,Completed,
+AP014144,22 Feb 20,14,regular,Round 14,Dendy Park,GPHC,10,0,8,0,,,56,18,Completed,
+AP014301,,16,semi_final,Semi-final,Mt Eliza,Dendy Park,9,1,7,3,,,60,52,Completed,
+AP014302,,16,semi_final,Semi-final,Patterson Lakes,Maccabi,9,1,7,3,,,71,52,Completed,
+AP014321,,17,grand_final,Grand final · TROLS entry 2,Mt Eliza,Patterson Lakes,5,5,0,0,,,0,0,Completed,

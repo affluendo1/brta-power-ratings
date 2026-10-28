@@ -1,0 +1,47 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP005011,01 May 21,1,regular,Round 1,Parkdale,Elwood,1,7,1,3,3,7,44,55,Completed,
+AP005012,01 May 21,1,regular,Round 1,Langwarrin,Glen Huntly,1,7,1,3,2,6,28,44,Completed,
+AP005013,01 May 21,1,regular,Round 1,Tyabb,Kings Park,1,7,1,3,2,7,33,49,Completed,
+AP005021,08 May 21,2,regular,Round 2,Kings Park,Parkdale,1,7,1,3,3,6,37,48,Completed,
+AP005022,08 May 21,2,regular,Round 2,Glen Huntly,Tyabb,7,1,3,1,7,2,48,26,Completed,
+AP005023,08 May 21,2,regular,Round 2,Elwood,Langwarrin,8,0,4,0,8,0,50,21,Completed,
+AP005031,15 May 21,3,regular,Round 3,Parkdale,Langwarrin,8,0,4,0,8,2,56,31,Completed,
+AP005033,15 May 21,3,regular,Round 3,Kings Park,Glen Huntly,6,2,2,2,5,4,39,41,Completed,
+pending-ap005-r3-tyabb-elwood,15 May 21,3,regular,Round 3,Tyabb,Elwood,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP005041,22 May 21,4,regular,Round 4,Glen Huntly,Parkdale,6,2,2,2,6,4,56,43,Completed,
+AP005042,22 May 21,4,regular,Round 4,Elwood,Kings Park,6,2,2,2,6,5,54,45,Completed,
+AP005043,22 May 21,4,regular,Round 4,Langwarrin,Tyabb,8,0,4,0,8,0,49,14,Completed,
+pending-ap005-r5-glen-huntly-elwood,29 May 21,5,regular,Round 5,Glen Huntly,Elwood,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap005-r5-kings-park-langwarrin,29 May 21,5,regular,Round 5,Kings Park,Langwarrin,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap005-r5-parkdale-tyabb,29 May 21,5,regular,Round 5,Parkdale,Tyabb,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap005-r6-elwood-parkdale,05 Jun 21,6,regular,Round 6,Elwood,Parkdale,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap005-r6-glen-huntly-langwarrin,05 Jun 21,6,regular,Round 6,Glen Huntly,Langwarrin,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap005-r6-kings-park-tyabb,05 Jun 21,6,regular,Round 6,Kings Park,Tyabb,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP005071,19 Jun 21,7,regular,Round 7,Parkdale,Kings Park,8,0,4,0,8,0,49,20,Completed,
+AP005072,19 Jun 21,7,regular,Round 7,Tyabb,Glen Huntly,0,8,0,4,0,8,13,48,Completed,
+AP005073,19 Jun 21,7,regular,Round 7,Langwarrin,Elwood,1,7,1,3,2,6,35,47,Completed,
+AP005081,26 Jun 21,8,regular,Round 8,Langwarrin,Parkdale,7,1,3,1,6,3,47,37,Completed,
+AP005082,26 Jun 21,8,regular,Round 8,Elwood,Tyabb,7,1,3,1,6,2,44,24,Completed,
+AP005083,26 Jun 21,8,regular,Round 8,Glen Huntly,Kings Park,7.5,0.5,3,0,6,3,49,35,Completed,
+AP005091,10 Jul 21,9,regular,Round 9,Parkdale,Glen Huntly,7,1,3,1,6,4,47,45,Completed,
+AP005092,10 Jul 21,9,regular,Round 9,Kings Park,Elwood,2,6,2,2,4,5,34,44,Completed,
+AP005093,10 Jul 21,9,regular,Round 9,Tyabb,Langwarrin,6,2,2,2,4,4,33,32,Completed,
+pending-ap005-r10-elwood-glen-huntly,17 Jul 21,10,regular,Round 10,Elwood,Glen Huntly,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap005-r10-langwarrin-kings-park,17 Jul 21,10,regular,Round 10,Langwarrin,Kings Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap005-r10-tyabb-parkdale,17 Jul 21,10,regular,Round 10,Tyabb,Parkdale,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap005-r11-langwarrin-glen-huntly,24 Jul 21,11,regular,Round 11,Langwarrin,Glen Huntly,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap005-r11-parkdale-elwood,24 Jul 21,11,regular,Round 11,Parkdale,Elwood,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap005-r11-tyabb-kings-park,24 Jul 21,11,regular,Round 11,Tyabb,Kings Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP005121,31 Jul 21,12,regular,Round 12,Kings Park,Parkdale,0,8,0,4,3,8,44,62,Completed,
+AP005122,31 Jul 21,12,regular,Round 12,Glen Huntly,Tyabb,8,0,4,0,8,1,58,37,Completed,
+AP005123,31 Jul 21,12,regular,Round 12,Elwood,Langwarrin,6,2,2,2,4,4,37,36,Completed,
+pending-ap005-r13-kings-park-glen-huntly,07 Aug 21,13,regular,Round 13,Kings Park,Glen Huntly,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap005-r13-parkdale-langwarrin,07 Aug 21,13,regular,Round 13,Parkdale,Langwarrin,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap005-r13-tyabb-elwood,07 Aug 21,13,regular,Round 13,Tyabb,Elwood,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap005-r14-elwood-kings-park,14 Aug 21,14,regular,Round 14,Elwood,Kings Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap005-r14-glen-huntly-parkdale,14 Aug 21,14,regular,Round 14,Glen Huntly,Parkdale,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap005-r14-langwarrin-tyabb,14 Aug 21,14,regular,Round 14,Langwarrin,Tyabb,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap005-r15-glen-huntly-elwood,21 Aug 21,15,regular,Round 15,Glen Huntly,Elwood,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap005-r15-kings-park-langwarrin,21 Aug 21,15,regular,Round 15,Kings Park,Langwarrin,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap005-r15-parkdale-tyabb,21 Aug 21,15,regular,Round 15,Parkdale,Tyabb,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap005-r16-elwood-glen-huntly,,16,grand_final,Grand final · TROLS entry 2,Elwood,Glen Huntly,,,,,,,,,Missing Result,No individual scorecard / no rubbers recorded

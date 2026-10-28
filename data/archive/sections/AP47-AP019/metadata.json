@@ -1,0 +1,87 @@
+{
+  "asset_id": "AP47-AP019",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 23/24",
+  "season_id": "AP47",
+  "season_label": "Summer 23/24",
+  "source_section_code": "AP019",
+  "section_label": "Mx Rubbers 6",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Hurlingham Park White",
+      "wins": 11,
+      "points": 97,
+      "percentage": 190.74,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Mentone",
+      "wins": 11,
+      "points": 86,
+      "percentage": 132.35,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Glen Huntly",
+      "wins": 8,
+      "points": 74,
+      "percentage": 104.83,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Hawthorn",
+      "wins": 4,
+      "points": 42,
+      "percentage": 85.09,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Pakenham",
+      "wins": 2,
+      "points": 32,
+      "percentage": 62.22,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "BLTC",
+      "wins": 2,
+      "points": 29,
+      "percentage": 73.15,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP47-AP019",
+  "fixtures": 46,
+  "completed_fixtures": 39,
+  "draw_fixtures": 57,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 156,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

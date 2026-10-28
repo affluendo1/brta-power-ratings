@@ -1,0 +1,105 @@
+{
+  "asset_id": "AP34-AP014",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 16/17",
+  "season_id": "AP34",
+  "season_label": "Summer 16/17",
+  "source_section_code": "AP014",
+  "section_label": "Mens S/D 1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "BLTC",
+      "wins": 11,
+      "points": 108,
+      "percentage": 166.59,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "Carmelite",
+      "wins": 9,
+      "points": 82,
+      "percentage": 92.73,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "GPHC",
+      "wins": 8,
+      "points": 78,
+      "percentage": 97.24,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Mt Eliza",
+      "wins": 6,
+      "points": 77.5,
+      "percentage": 112.5,
+      "marker": "P"
+    },
+    {
+      "position": 5,
+      "team": "MCC Glen Iris",
+      "wins": 5,
+      "points": 65.5,
+      "percentage": 98.42,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Liston",
+      "wins": 3,
+      "points": 59,
+      "percentage": 98.67,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Albert Reserve",
+      "wins": 5,
+      "points": 56,
+      "percentage": 87.92,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "Langwarrin",
+      "wins": 2,
+      "points": 34,
+      "percentage": 71.77,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP34-AP014",
+  "fixtures": 60,
+  "completed_fixtures": 54,
+  "draw_fixtures": 60,
+  "singles_rubbers": 212,
+  "doubles_rubbers": 104,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP014054 doubles No. 2: '6-7 7-5'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

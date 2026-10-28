@@ -1,0 +1,177 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP001031,06 Nov 21,3,Dendy Park Blue,Mt Eliza,No. 1,Arnav Bharadwaz,Mike Vaughan,Mike Vaughan,2-8,2,8,0,1,Completed,true,false,false
+AP001031,06 Nov 21,3,Dendy Park Blue,Mt Eliza,No. 2,Dean Ellis,Alex McDonald,Alex McDonald,5-8,5,8,0,1,Completed,true,false,false
+AP001031,06 Nov 21,3,Dendy Park Blue,Mt Eliza,No. 3,Darko Pasara,John McDonald,John McDonald,0-8,0,8,0,1,Completed,true,true,false
+AP001031,06 Nov 21,3,Dendy Park Blue,Mt Eliza,No. 4,James Rodgers,Jack Shurdington,Jack Shurdington,3-8,3,8,0,1,Completed,true,true,false
+AP001032,06 Nov 21,3,BLTC Blue,Carmelite,No. 1,Jarrod Broadbent,Alf Sammasimo,Jarrod Broadbent,8-3,8,3,1,0,Completed,true,false,false
+AP001032,06 Nov 21,3,BLTC Blue,Carmelite,No. 2,Morgan Young,Simon Arms,Morgan Young,8-1,8,1,1,0,Completed,true,false,false
+AP001032,06 Nov 21,3,BLTC Blue,Carmelite,No. 3,Joshua Dewhurst,Damien Pound,Joshua Dewhurst,8-6,8,6,1,0,Completed,true,false,false
+AP001032,06 Nov 21,3,BLTC Blue,Carmelite,No. 4,Eddie Myers,Richard Dobson,Eddie Myers,8-2,8,2,1,0,Completed,true,false,false
+AP001033,06 Nov 21,3,Royal South Yarra,Dendy Park White,No. 1,Himakesh Sankineni,Michael Kos,Michael Kos,3-8,3,8,0,1,Completed,true,false,false
+AP001033,06 Nov 21,3,Royal South Yarra,Dendy Park White,No. 2,Tom Neylon,Christian Williams,Tom Neylon,8-7,8,7,1,0,Completed,true,false,false
+AP001033,06 Nov 21,3,Royal South Yarra,Dendy Park White,No. 3,Yuri Mijic,Garion Rowe,Yuri Mijic,8-7,8,7,1,0,Completed,true,false,false
+AP001033,06 Nov 21,3,Royal South Yarra,Dendy Park White,No. 4,Harley Simon,Nicholas Williams,Harley Simon,8-2,8,2,1,0,Completed,true,true,false
+AP001034,06 Nov 21,3,BLTC White,Eildon Park,No. 1,Jack Broadbent,Asbjorn Williamson,Jack Broadbent,8-3,8,3,1,0,Completed,true,false,false
+AP001034,06 Nov 21,3,BLTC White,Eildon Park,No. 2,Jordan Batis,Jacob De La Paz,Jacob De La Paz,5-8,5,8,0,1,Completed,true,false,false
+AP001034,06 Nov 21,3,BLTC White,Eildon Park,No. 3,Brady Watts,Yamaan Bushnaq,Brady Watts,8-3,8,3,1,0,Completed,true,false,false
+AP001034,06 Nov 21,3,BLTC White,Eildon Park,No. 4,Macgregor Anderson,Simon Young,Macgregor Anderson,8-3,8,3,1,0,Completed,true,false,false
+AP001042,13 Nov 21,4,Mt Eliza,BLTC Blue,No. 1,Alex McDonald,Jarrod Broadbent,Jarrod Broadbent,6-8,6,8,0,1,Completed,true,false,false
+AP001042,13 Nov 21,4,Mt Eliza,BLTC Blue,No. 2,Corey Child,Morgan Young,Corey Child,8-7,8,7,1,0,Completed,true,false,false
+AP001042,13 Nov 21,4,Mt Eliza,BLTC Blue,No. 3,John McDonald,Josh Dawson,Josh Dawson,3-8,3,8,0,1,Completed,true,false,false
+AP001042,13 Nov 21,4,Mt Eliza,BLTC Blue,No. 4,Jack Shurdington,Joshua Dewhurst,Joshua Dewhurst,2-8,2,8,0,1,Completed,true,false,false
+AP001044,13 Nov 21,4,Dendy Park White,BLTC White,No. 1,Michael Kos,Jack Broadbent,Michael Kos,8-1,8,1,1,0,Completed,true,false,false
+AP001044,13 Nov 21,4,Dendy Park White,BLTC White,No. 2,Christian Williams,Jordan Batis,Christian Williams,8-3,8,3,1,0,Completed,true,false,false
+AP001044,13 Nov 21,4,Dendy Park White,BLTC White,No. 3,Garion Rowe,Brady Watts,Brady Watts,4-8,4,8,0,1,Completed,true,false,false
+AP001044,13 Nov 21,4,Dendy Park White,BLTC White,No. 4,Hayden Fricke,Macgregor Anderson,Macgregor Anderson,2-8,2,8,0,1,Completed,true,false,false
+AP001051,20 Nov 21,5,Royal South Yarra,BLTC White,No. 1,Himakesh Sankineni,Peter Jovic,Peter Jovic,7-8,7,8,0,1,Completed,true,false,true
+AP001051,20 Nov 21,5,Royal South Yarra,BLTC White,No. 2,Tom Neylon,Jordan Batis,Jordan Batis,6-8,6,8,0,1,Completed,true,false,false
+AP001051,20 Nov 21,5,Royal South Yarra,BLTC White,No. 3,Yuri Mijic,Cody Gunn,Yuri Mijic,8-4,8,4,1,0,Completed,true,false,false
+AP001051,20 Nov 21,5,Royal South Yarra,BLTC White,No. 4,Angus Roberts,Macgregor Anderson,Macgregor Anderson,7-8,7,8,0,1,Completed,true,false,false
+AP001052,20 Nov 21,5,Carmelite,Mt Eliza,No. 1,Alf Sammasimo,Alex McDonald,Alf Sammasimo,8-2,8,2,1,0,Completed,true,false,false
+AP001052,20 Nov 21,5,Carmelite,Mt Eliza,No. 2,Simon Arms,John McDonald,John McDonald,3-8,3,8,0,1,Completed,true,false,false
+AP001052,20 Nov 21,5,Carmelite,Mt Eliza,No. 3,Damien Pound,Jake Young-Mathers,Jake Young-Mathers,2-8,2,8,0,1,Completed,true,false,false
+AP001052,20 Nov 21,5,Carmelite,Mt Eliza,No. 4,Richard Dobson,Jack Shurdington,Richard Dobson,8-5,8,5,1,0,Completed,true,false,false
+AP001053,20 Nov 21,5,Eildon Park,Dendy Park White,No. 1,Ryan Draffin,Christian Williams,Christian Williams,6-8,6,8,0,1,Completed,true,false,false
+AP001053,20 Nov 21,5,Eildon Park,Dendy Park White,No. 2,Simon Young,Nicholas Williams,Simon Young,8-3,8,3,1,0,Completed,true,false,false
+AP001053,20 Nov 21,5,Eildon Park,Dendy Park White,No. 3,Kerem Bekir,Jackson Pasara,Kerem Bekir,8-3,8,3,1,0,Completed,true,true,true
+AP001053,20 Nov 21,5,Eildon Park,Dendy Park White,No. 4,Stuart King,Hayden Fricke,Hayden Fricke,1-8,1,8,0,1,Completed,true,true,false
+AP001054,20 Nov 21,5,Dendy Park Blue,BLTC Blue,No. 1,Arnav Bharadwaz,Morgan Young,Arnav Bharadwaz,8-6,8,6,1,0,Completed,true,false,false
+AP001054,20 Nov 21,5,Dendy Park Blue,BLTC Blue,No. 2,Anthony Albore,Josh Dawson,Josh Dawson,2-8,2,8,0,1,Completed,true,false,false
+AP001054,20 Nov 21,5,Dendy Park Blue,BLTC Blue,No. 3,Dean Ellis,Joshua Dewhurst,Joshua Dewhurst,4-8,4,8,0,1,Completed,true,false,false
+AP001054,20 Nov 21,5,Dendy Park Blue,BLTC Blue,No. 4,James McGregor,Eddie Myers,Eddie Myers,0-8,0,8,0,1,Completed,true,false,false
+AP001061,27 Nov 21,6,BLTC Blue,Royal South Yarra,No. 1,Josh Dawson,Himakesh Sankineni,Himakesh Sankineni,4-8,4,8,0,1,Completed,true,false,false
+AP001061,27 Nov 21,6,BLTC Blue,Royal South Yarra,No. 2,Joshua Dewhurst,Yuri Mijic,Yuri Mijic,7-8,7,8,0,1,Completed,true,false,false
+AP001061,27 Nov 21,6,BLTC Blue,Royal South Yarra,No. 3,James Elia,Angus Roberts,Angus Roberts,5-8,5,8,0,1,Completed,true,true,false
+AP001061,27 Nov 21,6,BLTC Blue,Royal South Yarra,No. 4,Matt Gatti,Harley Simon,Harley Simon,2-8,2,8,0,1,Completed,true,true,true
+AP001062,27 Nov 21,6,BLTC White,Dendy Park Blue,No. 1,Cody Gunn,Arnav Bharadwaz,Arnav Bharadwaz,7-8,7,8,0,1,Completed,true,false,false
+AP001062,27 Nov 21,6,BLTC White,Dendy Park Blue,No. 2,Brady Watts,Anthony Albore,Brady Watts,8-1,8,1,1,0,Completed,true,false,false
+AP001062,27 Nov 21,6,BLTC White,Dendy Park Blue,No. 3,Macgregor Anderson,Dean Ellis,Macgregor Anderson,8-3,8,3,1,0,Completed,true,false,false
+AP001062,27 Nov 21,6,BLTC White,Dendy Park Blue,No. 4,Ayden Kousis,James McGregor,Ayden Kousis,8-3,8,3,1,0,Completed,true,true,false
+AP001063,27 Nov 21,6,Mt Eliza,Eildon Park,No. 1,Mike Vaughan,Ryan Draffin,Mike Vaughan,8-4,8,4,1,0,Completed,true,false,false
+AP001063,27 Nov 21,6,Mt Eliza,Eildon Park,No. 2,Sam Young-Mathers,Jacob De La Paz,Sam Young-Mathers,8-2,8,2,1,0,Completed,true,false,false
+AP001063,27 Nov 21,6,Mt Eliza,Eildon Park,No. 3,Corey Child,Simon Young,Corey Child,8-2,8,2,1,0,Completed,true,false,false
+AP001063,27 Nov 21,6,Mt Eliza,Eildon Park,No. 4,Jake Young-Mathers,Kerem Bekir,Jake Young-Mathers,8-3,8,3,1,0,Completed,true,false,true
+AP001071,04 Dec 21,7,Dendy Park Blue,Royal South Yarra,No. 1,Arnav Bharadwaz,Himakesh Sankineni,Himakesh Sankineni,5-8,5,8,0,1,Completed,true,false,false
+AP001071,04 Dec 21,7,Dendy Park Blue,Royal South Yarra,No. 2,Dean Ellis,Tom Neylon,Tom Neylon,4-8,4,8,0,1,Completed,true,false,false
+AP001071,04 Dec 21,7,Dendy Park Blue,Royal South Yarra,No. 3,Ronan Brown,Yuri Mijic,Yuri Mijic,0-8,0,8,0,1,Completed,true,true,false
+AP001071,04 Dec 21,7,Dendy Park Blue,Royal South Yarra,No. 4,James McGregor,Angus Roberts,Angus Roberts,0-8,0,8,0,1,Completed,true,false,false
+AP001072,04 Dec 21,7,BLTC Blue,BLTC White,No. 1,Morgan Young,Luke Sorenson,Luke Sorenson,2-8,2,8,0,1,Completed,true,false,true
+AP001072,04 Dec 21,7,BLTC Blue,BLTC White,No. 2,Josh Dawson,Jordan Batis,Josh Dawson,8-7,8,7,1,0,Completed,true,false,false
+AP001072,04 Dec 21,7,BLTC Blue,BLTC White,No. 3,Joshua Dewhurst,Brady Watts,Brady Watts,7-8,7,8,0,1,Completed,true,false,false
+AP001072,04 Dec 21,7,BLTC Blue,BLTC White,No. 4,Eddie Myers,Macgregor Anderson,Eddie Myers,8-6,8,6,1,0,Completed,true,false,false
+AP001073,04 Dec 21,7,Carmelite,Eildon Park,No. 1,James Fry,Ryan Draffin,Ryan Draffin,7-8,7,8,0,1,Completed,true,false,false
+AP001073,04 Dec 21,7,Carmelite,Eildon Park,No. 2,Alf Sammasimo,Jacob De La Paz,Alf Sammasimo,8-2,8,2,1,0,Completed,true,false,false
+AP001073,04 Dec 21,7,Carmelite,Eildon Park,No. 3,Mitchell Ayton,Simon Young,Mitchell Ayton,8-3,8,3,1,0,Completed,true,false,false
+AP001073,04 Dec 21,7,Carmelite,Eildon Park,No. 4,Richard Dobson,Stefan Woolley,Stefan Woolley,3-8,3,8,0,1,Completed,true,false,false
+AP001074,04 Dec 21,7,Mt Eliza,Dendy Park White,No. 1,Mike Vaughan,Michael Kos,Michael Kos,3-8,3,8,0,1,Completed,true,false,false
+AP001074,04 Dec 21,7,Mt Eliza,Dendy Park White,No. 2,Alex McDonald,Christian Williams,Christian Williams,1-8,1,8,0,1,Completed,true,false,false
+AP001074,04 Dec 21,7,Mt Eliza,Dendy Park White,No. 3,Sam Young-Mathers,Nicholas Williams,Nicholas Williams,6-8,6,8,0,1,Completed,true,false,false
+AP001074,04 Dec 21,7,Mt Eliza,Dendy Park White,No. 4,John McDonald,Hayden Fricke,John McDonald,8-7,8,7,1,0,Completed,true,false,false
+AP001081,11 Dec 21,8,Dendy Park White,Dendy Park Blue,No. 1,Christian Williams,Arnav Bharadwaz,Christian Williams,8-6,8,6,1,0,Completed,true,false,false
+AP001081,11 Dec 21,8,Dendy Park White,Dendy Park Blue,No. 2,Garion Rowe,Anthony Albore,Anthony Albore,5-8,5,8,0,1,Completed,true,false,false
+AP001081,11 Dec 21,8,Dendy Park White,Dendy Park Blue,No. 3,Nicholas Williams,Dean Ellis,Dean Ellis,7-8,7,8,0,1,Completed,true,false,false
+AP001081,11 Dec 21,8,Dendy Park White,Dendy Park Blue,No. 4,Hayden Fricke,James McGregor,Hayden Fricke,8-6,8,6,1,0,Completed,true,false,false
+AP001082,11 Dec 21,8,Eildon Park,BLTC Blue,No. 1,Ryan Draffin,Jarrod Broadbent,Jarrod Broadbent,4-8,4,8,0,1,Completed,true,false,false
+AP001082,11 Dec 21,8,Eildon Park,BLTC Blue,No. 2,Simon Young,Morgan Young,Morgan Young,2-8,2,8,0,1,Completed,true,false,false
+AP001082,11 Dec 21,8,Eildon Park,BLTC Blue,No. 3,Heath Dufty-Miller,Daniel Wendler,Daniel Wendler,4-8,4,8,0,1,Completed,true,false,false
+AP001082,11 Dec 21,8,Eildon Park,BLTC Blue,No. 4,Stefan Woolley,Eddie Myers,Eddie Myers,3-8,3,8,0,1,Completed,true,false,false
+AP001083,11 Dec 21,8,Mt Eliza,Royal South Yarra,No. 1,Broden Cox,Himakesh Sankineni,Himakesh Sankineni,0-8,0,8,0,1,Completed,true,false,false
+AP001083,11 Dec 21,8,Mt Eliza,Royal South Yarra,No. 2,Jack Shurdington,Tom Neylon,Tom Neylon,3-8,3,8,0,1,Completed,true,false,false
+AP001083,11 Dec 21,8,Mt Eliza,Royal South Yarra,No. 3,Craig Dungey,Yuri Mijic,Yuri Mijic,5-8,5,8,0,1,Completed,true,true,false
+AP001083,11 Dec 21,8,Mt Eliza,Royal South Yarra,No. 4,Jarred Dungey,Angus Roberts,Angus Roberts,1-8,1,8,0,1,Completed,true,true,false
+AP001091,29 Jan 22,9,Dendy Park Blue,Carmelite,No. 1,Andrew Kotnik,Mitchell Ayton,Andrew Kotnik,8-2,8,2,1,0,Completed,true,false,false
+AP001091,29 Jan 22,9,Dendy Park Blue,Carmelite,No. 2,Jack Bishop,Matt Geddes,Matt Geddes,0-8,0,8,0,1,Completed,true,false,true
+AP001091,29 Jan 22,9,Dendy Park Blue,Carmelite,No. 3,Anthony Albore,Richard Dobson,Richard Dobson,2-8,2,8,0,1,Completed,true,false,false
+AP001091,29 Jan 22,9,Dendy Park Blue,Carmelite,No. 4,Dean Ellis,Ashton Arms,Dean Ellis,8-1,8,1,1,0,Completed,true,false,true
+AP001092,29 Jan 22,9,BLTC Blue,Dendy Park White,No. 1,Morgan Young,Michael Kos,Michael Kos,2-8,2,8,0,1,Completed,true,false,false
+AP001092,29 Jan 22,9,BLTC Blue,Dendy Park White,No. 2,Josh Dawson,Christian Williams,Josh Dawson,8-7,8,7,1,0,Completed,true,false,false
+AP001092,29 Jan 22,9,BLTC Blue,Dendy Park White,No. 3,Joshua Dewhurst,Nicholas Williams,Nicholas Williams,6-8,6,8,0,1,Completed,true,false,false
+AP001092,29 Jan 22,9,BLTC Blue,Dendy Park White,No. 4,Eddie Myers,[Unnamed emergency — TROLS AP001092 away code 4],Eddie Myers,8-0,8,0,1,0,Completed,false,false,true
+AP001093,29 Jan 22,9,Royal South Yarra,Eildon Park,No. 1,Himakesh Sankineni,Andrew Ziaras,Himakesh Sankineni,8-6,8,6,1,0,Completed,true,false,true
+AP001093,29 Jan 22,9,Royal South Yarra,Eildon Park,No. 2,Tom Neylon,Asbjorn Williamson,Asbjorn Williamson,3-8,3,8,0,1,Completed,true,false,false
+AP001093,29 Jan 22,9,Royal South Yarra,Eildon Park,No. 3,Yuri Mijic,Ryan Draffin,Yuri Mijic,8-3,8,3,1,0,Completed,true,false,false
+AP001093,29 Jan 22,9,Royal South Yarra,Eildon Park,No. 4,Angus Roberts,Simon Young,Angus Roberts,8-0,8,0,1,0,Completed,true,false,false
+AP001094,29 Jan 22,9,BLTC White,Mt Eliza,No. 1,Jack Broadbent,Mike Vaughan,Jack Broadbent,8-6,8,6,1,0,Completed,true,false,false
+AP001094,29 Jan 22,9,BLTC White,Mt Eliza,No. 2,Jordan Batis,Sam Young-Mathers,Sam Young-Mathers,1-8,1,8,0,1,Completed,true,false,false
+AP001094,29 Jan 22,9,BLTC White,Mt Eliza,No. 3,Brady Watts,Corey Child,Brady Watts,8-5,8,5,1,0,Completed,true,false,false
+AP001094,29 Jan 22,9,BLTC White,Mt Eliza,No. 4,Macgregor Anderson,John McDonald,Macgregor Anderson,8-7,8,7,1,0,Completed,true,false,false
+AP001101,05 Feb 22,10,Mt Eliza,Dendy Park Blue,No. 1,Alex McDonald,Andrew Kotnik,Andrew Kotnik,4-8,4,8,0,1,Completed,true,false,false
+AP001101,05 Feb 22,10,Mt Eliza,Dendy Park Blue,No. 2,Sam Young-Mathers,Dean Ellis,Sam Young-Mathers,8-1,8,1,1,0,Completed,true,false,false
+AP001101,05 Feb 22,10,Mt Eliza,Dendy Park Blue,No. 3,Corey Child,James McGregor,Corey Child,8-3,8,3,1,0,Completed,true,false,false
+AP001101,05 Feb 22,10,Mt Eliza,Dendy Park Blue,No. 4,Jack Shurdington,Fred Turner,Jack Shurdington,8-4,8,4,1,0,Completed,true,false,true
+AP001102,05 Feb 22,10,Carmelite,BLTC Blue,No. 1,Michael Telesky,Daniel Wendler,Michael Telesky,8-5,8,5,1,0,Completed,true,true,false
+AP001102,05 Feb 22,10,Carmelite,BLTC Blue,No. 2,James Fry,Morgan Young,James Fry,8-6,8,6,1,0,Completed,true,false,false
+AP001102,05 Feb 22,10,Carmelite,BLTC Blue,No. 3,Mitchell Ayton,Josh Dawson,Josh Dawson,4-8,4,8,0,1,Completed,true,false,false
+AP001102,05 Feb 22,10,Carmelite,BLTC Blue,No. 4,Richard Dobson,Joshua Dewhurst,Joshua Dewhurst,1-8,1,8,0,1,Completed,true,false,false
+AP001103,05 Feb 22,10,Dendy Park White,Royal South Yarra,No. 1,Michael Kos,Himakesh Sankineni,Himakesh Sankineni,5-8,5,8,0,1,Completed,true,false,false
+AP001103,05 Feb 22,10,Dendy Park White,Royal South Yarra,No. 2,Christian Williams,Tom Neylon,Tom Neylon,1-8,1,8,0,1,Completed,true,false,false
+AP001103,05 Feb 22,10,Dendy Park White,Royal South Yarra,No. 3,Nicholas Williams,Yuri Mijic,Yuri Mijic,5-8,5,8,0,1,Completed,true,false,false
+AP001103,05 Feb 22,10,Dendy Park White,Royal South Yarra,No. 4,Jackson Pasara,Angus Roberts,Angus Roberts,2-8,2,8,0,1,Completed,true,true,false
+AP001104,05 Feb 22,10,Eildon Park,BLTC White,No. 1,Asbjorn Williamson,Jack Broadbent,Asbjorn Williamson,8-6,8,6,1,0,Completed,true,false,false
+AP001104,05 Feb 22,10,Eildon Park,BLTC White,No. 2,Ryan Draffin,Jordan Batis,Jordan Batis,7-8,7,8,0,1,Completed,true,false,false
+AP001104,05 Feb 22,10,Eildon Park,BLTC White,No. 3,Jacob De La Paz,Brady Watts,Brady Watts,7-8,7,8,0,1,Completed,true,false,false
+AP001104,05 Feb 22,10,Eildon Park,BLTC White,No. 4,Heath Dufty-Miller,Macgregor Anderson,Macgregor Anderson,4-8,4,8,0,1,Completed,true,false,false
+AP001111,12 Feb 22,11,Dendy Park Blue,Eildon Park,No. 1,Anthony Albore,Asbjorn Williamson,Asbjorn Williamson,4-8,4,8,0,1,Completed,true,false,false
+AP001111,12 Feb 22,11,Dendy Park Blue,Eildon Park,No. 2,Dean Ellis,Jacob De La Paz,Jacob De La Paz,2-8,2,8,0,1,Completed,true,false,false
+AP001111,12 Feb 22,11,Dendy Park Blue,Eildon Park,No. 3,James McGregor,Will Abraham,Will Abraham,0-8,0,8,0,1,Completed,true,false,true
+AP001111,12 Feb 22,11,Dendy Park Blue,Eildon Park,No. 4,Fred Turner,Heath Dufty-Miller,Heath Dufty-Miller,3-8,3,8,0,1,Completed,true,true,false
+AP001112,12 Feb 22,11,BLTC Blue,Mt Eliza,No. 1,Jarrod Broadbent,Sam Young-Mathers,Jarrod Broadbent,8-7,8,7,1,0,Completed,true,false,false
+AP001112,12 Feb 22,11,BLTC Blue,Mt Eliza,No. 2,Morgan Young,Corey Child,Corey Child,7-8,7,8,0,1,Completed,true,false,false
+AP001112,12 Feb 22,11,BLTC Blue,Mt Eliza,No. 3,Ziggy Cheriout,John McDonald,John McDonald,6-8,6,8,0,1,Completed,true,true,false
+AP001112,12 Feb 22,11,BLTC Blue,Mt Eliza,No. 4,Eddie Myers,Jake Young-Mathers,Eddie Myers,8-4,8,4,1,0,Completed,true,false,false
+AP001114,12 Feb 22,11,BLTC White,Dendy Park White,No. 1,Jack Broadbent,Michael Kos,Michael Kos,3-8,3,8,0,1,Completed,true,false,false
+AP001114,12 Feb 22,11,BLTC White,Dendy Park White,No. 2,Jordan Batis,Christian Williams,Jordan Batis,8-7,8,7,1,0,Completed,true,false,false
+AP001114,12 Feb 22,11,BLTC White,Dendy Park White,No. 3,Brady Watts,Garion Rowe,Brady Watts,8-4,8,4,1,0,Completed,true,false,false
+AP001114,12 Feb 22,11,BLTC White,Dendy Park White,No. 4,James Elia,Nicholas Williams,Nicholas Williams,2-8,2,8,0,1,Completed,true,true,false
+AP001121,19 Feb 22,12,BLTC White,Royal South Yarra,No. 1,Jack Broadbent,Himakesh Sankineni,Himakesh Sankineni,6-8,6,8,0,1,Completed,true,false,false
+AP001121,19 Feb 22,12,BLTC White,Royal South Yarra,No. 2,Brady Watts,Tom Neylon,Brady Watts,8-3,8,3,1,0,Completed,true,false,false
+AP001121,19 Feb 22,12,BLTC White,Royal South Yarra,No. 3,Macgregor Anderson,Yuri Mijic,Macgregor Anderson,8-5,8,5,1,0,Completed,true,false,false
+AP001121,19 Feb 22,12,BLTC White,Royal South Yarra,No. 4,James Elia,Brodic Martin,James Elia,8-3,8,3,1,0,Completed,true,true,true
+AP001123,19 Feb 22,12,Dendy Park White,Eildon Park,No. 1,Michael Kos,Asbjorn Williamson,Asbjorn Williamson,4-8,4,8,0,1,Completed,true,false,false
+AP001123,19 Feb 22,12,Dendy Park White,Eildon Park,No. 2,Garion Rowe,Ryan Draffin,Ryan Draffin,3-8,3,8,0,1,Completed,true,false,false
+AP001123,19 Feb 22,12,Dendy Park White,Eildon Park,No. 3,Calum Bennett,Jacob De La Paz,Jacob De La Paz,3-8,3,8,0,1,Completed,true,true,false
+AP001123,19 Feb 22,12,Dendy Park White,Eildon Park,No. 4,Billy Friend,Simon Young,Simon Young,2-8,2,8,0,1,Completed,true,true,false
+AP001124,19 Feb 22,12,BLTC Blue,Dendy Park Blue,No. 1,Jarrod Broadbent,Andrew Kotnik,Jarrod Broadbent,8-3,8,3,1,0,Completed,true,false,false
+AP001124,19 Feb 22,12,BLTC Blue,Dendy Park Blue,No. 2,Daniel Wendler,Anthony Albore,Daniel Wendler,8-2,8,2,1,0,Completed,true,false,false
+AP001124,19 Feb 22,12,BLTC Blue,Dendy Park Blue,No. 3,Josh Dawson,Dean Ellis,Josh Dawson,8-2,8,2,1,0,Completed,true,false,false
+AP001124,19 Feb 22,12,BLTC Blue,Dendy Park Blue,No. 4,Eddie Myers,James McGregor,Eddie Myers,8-1,8,1,1,0,Completed,true,false,false
+AP001131,26 Feb 22,13,Royal South Yarra,BLTC Blue,No. 1,Himakesh Sankineni,Jarrod Broadbent,Jarrod Broadbent,2-8,2,8,0,1,Completed,true,false,false
+AP001131,26 Feb 22,13,Royal South Yarra,BLTC Blue,No. 2,Alessandro Paderno,Morgan Young,Alessandro Paderno,8-2,8,2,1,0,Completed,true,true,false
+AP001131,26 Feb 22,13,Royal South Yarra,BLTC Blue,No. 3,Angus Roberts,Josh Dawson,Angus Roberts,8-7,8,7,1,0,Completed,true,false,false
+AP001131,26 Feb 22,13,Royal South Yarra,BLTC Blue,No. 4,Alexandros Yiappos,Joshua Dewhurst,Joshua Dewhurst,4-8,4,8,0,1,Completed,true,true,false
+AP001132,26 Feb 22,13,Dendy Park Blue,BLTC White,No. 1,Andrew Kotnik,Jordan Batis,Jordan Batis,1-8,1,8,0,1,Completed,true,false,false
+AP001132,26 Feb 22,13,Dendy Park Blue,BLTC White,No. 2,Anthony Albore,Cody Gunn,Cody Gunn,2-8,2,8,0,1,Completed,true,false,false
+AP001132,26 Feb 22,13,Dendy Park Blue,BLTC White,No. 3,James McGregor,Brady Watts,Brady Watts,6-8,6,8,0,1,Completed,true,false,false
+AP001132,26 Feb 22,13,Dendy Park Blue,BLTC White,No. 4,Riley Walker,Macgregor Anderson,Macgregor Anderson,1-8,1,8,0,1,Completed,true,true,false
+AP001133,26 Feb 22,13,Eildon Park,Mt Eliza,No. 1,Jacob De La Paz,Sam Young-Mathers,Sam Young-Mathers,6-8,6,8,0,1,Completed,true,false,false
+AP001133,26 Feb 22,13,Eildon Park,Mt Eliza,No. 2,Simon Young,Corey Child,Corey Child,2-8,2,8,0,1,Completed,true,false,false
+AP001133,26 Feb 22,13,Eildon Park,Mt Eliza,No. 3,Heath Dufty-Miller,John McDonald,John McDonald,6-8,6,8,0,1,Completed,true,false,false
+AP001133,26 Feb 22,13,Eildon Park,Mt Eliza,No. 4,Stefan Woolley,Jake Young-Mathers,Stefan Woolley,8-1,8,1,1,0,Completed,true,false,false
+AP001134,26 Feb 22,13,Carmelite,Dendy Park White,No. 1,James Fry,Michael Kos,James Fry,8-5,8,5,1,0,Completed,true,false,false
+AP001134,26 Feb 22,13,Carmelite,Dendy Park White,No. 2,Jeremy Saunders,Christian Williams,Christian Williams,2-8,2,8,0,1,Completed,true,true,false
+AP001134,26 Feb 22,13,Carmelite,Dendy Park White,No. 3,Mitchell Ayton,Gurkirt Singh,Mitchell Ayton,8-2,8,2,1,0,Completed,true,false,false
+AP001134,26 Feb 22,13,Carmelite,Dendy Park White,No. 4,Ashton Arms,Nicholas Williams,Nicholas Williams,2-8,2,8,0,1,Completed,true,true,false
+AP001141,05 Mar 22,14,Royal South Yarra,Dendy Park Blue,No. 1,Yuri Mijic,Anthony Albore,Yuri Mijic,8-1,8,1,1,0,Completed,true,false,false
+AP001141,05 Mar 22,14,Royal South Yarra,Dendy Park Blue,No. 2,Angus Roberts,Dean Ellis,Dean Ellis,4-8,4,8,0,1,Completed,true,false,false
+AP001141,05 Mar 22,14,Royal South Yarra,Dendy Park Blue,No. 3,Liam Albrecht,James McGregor,Liam Albrecht,8-0,8,0,1,0,Completed,true,true,false
+AP001141,05 Mar 22,14,Royal South Yarra,Dendy Park Blue,No. 4,Jack Webb,Riley Walker,Riley Walker,6-8,6,8,0,1,Completed,true,true,true
+AP001142,05 Mar 22,14,BLTC White,BLTC Blue,No. 1,Jack Broadbent,Jarrod Broadbent,Jarrod Broadbent,7-8,7,8,0,1,Completed,true,false,false
+AP001142,05 Mar 22,14,BLTC White,BLTC Blue,No. 2,Jordan Batis,Morgan Young,Jordan Batis,8-2,8,2,1,0,Completed,true,false,false
+AP001142,05 Mar 22,14,BLTC White,BLTC Blue,No. 3,Brady Watts,Josh Dawson,Brady Watts,8-2,8,2,1,0,Completed,true,false,false
+AP001142,05 Mar 22,14,BLTC White,BLTC Blue,No. 4,Macgregor Anderson,Eddie Myers,Macgregor Anderson,8-4,8,4,1,0,Completed,true,false,false
+AP001144,05 Mar 22,14,Dendy Park White,Mt Eliza,No. 1,Michael Kos,Mike Vaughan,Michael Kos,8-5,8,5,1,0,Completed,true,false,false
+AP001144,05 Mar 22,14,Dendy Park White,Mt Eliza,No. 2,Christian Williams,Corey Child,Christian Williams,8-7,8,7,1,0,Completed,true,false,false
+AP001144,05 Mar 22,14,Dendy Park White,Mt Eliza,No. 3,Garion Rowe,Broden Cox,Broden Cox,7-8,7,8,0,1,Completed,true,false,false
+AP001144,05 Mar 22,14,Dendy Park White,Mt Eliza,No. 4,Nicholas Williams,Jack Shurdington,Nicholas Williams,8-2,8,2,1,0,Completed,true,false,false
+AP001301,,16,BLTC White,Mt Eliza,No. 1,Jack Broadbent,Mike Vaughan,Jack Broadbent,8-4,8,4,1,0,Completed,true,false,false
+AP001301,,16,BLTC White,Mt Eliza,No. 2,Jordan Batis,Corey Child,Jordan Batis,8-4,8,4,1,0,Completed,true,false,false
+AP001301,,16,BLTC White,Mt Eliza,No. 3,Brady Watts,John McDonald,John McDonald,6-8,6,8,0,1,Completed,true,false,false
+AP001301,,16,BLTC White,Mt Eliza,No. 4,Macgregor Anderson,Jake Young-Mathers,Macgregor Anderson,8-3,8,3,1,0,Completed,true,false,false
+AP001302,,16,Royal South Yarra,BLTC Blue,No. 1,Himakesh Sankineni,Jarrod Broadbent,Jarrod Broadbent,5-8,5,8,0,1,Completed,true,false,false
+AP001302,,16,Royal South Yarra,BLTC Blue,No. 2,Tom Neylon,Morgan Young,Tom Neylon,8-0,8,0,1,0,Completed,true,false,false
+AP001302,,16,Royal South Yarra,BLTC Blue,No. 3,Yuri Mijic,Josh Dawson,Josh Dawson,4-8,4,8,0,1,Completed,true,false,false
+AP001302,,16,Royal South Yarra,BLTC Blue,No. 4,Angus Roberts,Eddie Myers,Angus Roberts,8-3,8,3,1,0,Completed,true,false,false
+AP001321,,17,BLTC White,BLTC Blue,No. 1,Jack Broadbent,Jarrod Broadbent,Jack Broadbent,8-3,8,3,1,0,Completed,true,false,false
+AP001321,,17,BLTC White,BLTC Blue,No. 2,Jordan Batis,Daniel Wendler,Daniel Wendler,6-8,6,8,0,1,Completed,true,false,false
+AP001321,,17,BLTC White,BLTC Blue,No. 3,Brady Watts,Josh Dawson,Josh Dawson,5-8,5,8,0,1,Completed,true,false,false
+AP001321,,17,BLTC White,BLTC Blue,No. 4,Macgregor Anderson,Eddie Myers,Macgregor Anderson,8-3,8,3,1,0,Completed,true,false,false

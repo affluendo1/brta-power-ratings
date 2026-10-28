@@ -1,0 +1,97 @@
+{
+  "asset_id": "AP42-AP011",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Winter 2021",
+  "season_id": "AP42",
+  "season_label": "Winter 2021",
+  "source_section_code": "AP011",
+  "section_label": "Open S/D 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Maccabi",
+      "wins": 6,
+      "points": 78.5,
+      "percentage": 139.42,
+      "marker": ""
+    },
+    {
+      "position": 2,
+      "team": "Patterson Lakes",
+      "wins": 5,
+      "points": 78,
+      "percentage": 162.12,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Royal Ave 1",
+      "wins": 5,
+      "points": 74,
+      "percentage": 139.62,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Chelsea Heights",
+      "wins": 4,
+      "points": 63,
+      "percentage": 108.67,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Glen Huntly",
+      "wins": 3,
+      "points": 55,
+      "percentage": 100.66,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Royal Ave 2",
+      "wins": 1,
+      "points": 38,
+      "percentage": 46.86,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "East Malvern",
+      "wins": 0,
+      "points": 33.5,
+      "percentage": 59.56,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP42-AP011",
+  "fixtures": 58,
+  "completed_fixtures": 24,
+  "draw_fixtures": 58,
+  "singles_rubbers": 96,
+  "doubles_rubbers": 48,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP011124 singles No. 1: '6-6'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

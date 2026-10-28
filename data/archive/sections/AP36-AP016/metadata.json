@@ -1,0 +1,103 @@
+{
+  "asset_id": "AP36-AP016",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 17/18",
+  "season_id": "AP36",
+  "season_label": "Summer 17/18",
+  "source_section_code": "AP016",
+  "section_label": "Mens S/D 4",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Long Beach",
+      "wins": 10,
+      "points": 102,
+      "percentage": 143.15,
+      "marker": ""
+    },
+    {
+      "position": 2,
+      "team": "Kings Park",
+      "wins": 10,
+      "points": 100,
+      "percentage": 125.38,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Overport Park",
+      "wins": 7,
+      "points": 74,
+      "percentage": 104.69,
+      "marker": "P"
+    },
+    {
+      "position": 4,
+      "team": "Tennis World MP",
+      "wins": 7,
+      "points": 71,
+      "percentage": 92.12,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Ormond CR",
+      "wins": 6,
+      "points": 69,
+      "percentage": 108.25,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Tennis World",
+      "wins": 5,
+      "points": 60,
+      "percentage": 80.75,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Langwarrin",
+      "wins": 3,
+      "points": 47,
+      "percentage": 85.28,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "Maccabi",
+      "wins": 2,
+      "points": 37,
+      "percentage": 77.3,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP36-AP016",
+  "fixtures": 60,
+  "completed_fixtures": 56,
+  "draw_fixtures": 60,
+  "singles_rubbers": 220,
+  "doubles_rubbers": 108,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

@@ -1,0 +1,71 @@
+{
+  "asset_id": "AP46-AP002",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Winter 2023",
+  "season_id": "AP46",
+  "season_label": "Winter 2023",
+  "source_section_code": "AP002",
+  "section_label": "Womens Sets 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Mordialloc",
+      "wins": 14,
+      "points": 140,
+      "percentage": 345.16,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Overport Park",
+      "wins": 7,
+      "points": 88.5,
+      "percentage": 134.54,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Ormond",
+      "wins": 2,
+      "points": 36,
+      "percentage": 56.6,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Hawthorn",
+      "wins": 3,
+      "points": 35.5,
+      "percentage": 41.99,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 6,
+    "doublesBestOf": 1,
+    "doublesTarget": 8,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP46-AP002",
+  "fixtures": 31,
+  "completed_fixtures": 27,
+  "draw_fixtures": 46,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 154,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

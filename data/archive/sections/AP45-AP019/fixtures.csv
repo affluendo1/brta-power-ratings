@@ -1,0 +1,60 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP019012,01 Oct 22,1,regular,Round 1,Beaumaris CC,Sth Murrumbeena,7,1,7,2,,,52,27,Completed,
+AP019013,01 Oct 22,1,regular,Round 1,Hurlingham Park,Victory Park,8,0,8,0,,,48,13,Completed,
+AP019014,01 Oct 22,1,regular,Round 1,Kooyong,Black Rock,1,7,2,6,,,21,41,Completed,
+pending-ap019-r1-albert-park-bye,01 Oct 22,1,regular,Round 1,Albert Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP019021,08 Oct 22,2,regular,Round 2,Black Rock,Albert Park,4.5,3.5,2,2,,,26,28,Completed,
+AP019023,08 Oct 22,2,regular,Round 2,Sth Murrumbeena,Hurlingham Park,4,4,2,2,,,17,15,Completed,
+AP019024,08 Oct 22,2,regular,Round 2,Victory Park,Kooyong,1,7,0,5,,,5,33,Completed,
+pending-ap019-r2-bye-beaumaris-cc,08 Oct 22,2,regular,Round 2,Bye,Beaumaris CC,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP019031,15 Oct 22,3,regular,Round 3,Albert Park,Victory Park,8,0,8,0,,,49,13,Completed,
+AP019032,15 Oct 22,3,regular,Round 3,Beaumaris CC,Black Rock,6,2,4,4,,,34,33,Completed,
+AP019034,15 Oct 22,3,regular,Round 3,Kooyong,Sth Murrumbeena,6,2,4,4,,,45,33,Completed,
+pending-ap019-r3-hurlingham-park-bye,15 Oct 22,3,regular,Round 3,Hurlingham Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap019-r4-black-rock-hurlingham-park,22 Oct 22,4,regular,Round 4,Black Rock,Hurlingham Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap019-r4-bye-kooyong,22 Oct 22,4,regular,Round 4,Bye,Kooyong,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap019-r4-sth-murrumbeena-albert-park,22 Oct 22,4,regular,Round 4,Sth Murrumbeena,Albert Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap019-r4-victory-park-beaumaris-cc,22 Oct 22,4,regular,Round 4,Victory Park,Beaumaris CC,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP019051,05 Nov 22,5,regular,Round 5,Hurlingham Park,Kooyong,1,7,2,6,,,20,43,Completed,
+AP019052,05 Nov 22,5,regular,Round 5,Black Rock,Victory Park,6,2,5,4,,,46,41,Completed,
+AP019054,05 Nov 22,5,regular,Round 5,Albert Park,Beaumaris CC,8,0,8,0,,,48,6,Completed,
+pending-ap019-r5-sth-murrumbeena-bye,05 Nov 22,5,regular,Round 5,Sth Murrumbeena,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP019061,12 Nov 22,6,regular,Round 6,Beaumaris CC,Hurlingham Park,8,0,8,1,,,53,27,Completed,
+AP019062,12 Nov 22,6,regular,Round 6,Kooyong,Albert Park,0,8,2,8,,,36,56,Completed,
+AP019063,12 Nov 22,6,regular,Round 6,Victory Park,Sth Murrumbeena,0,8,0,8,,,9,48,Completed,
+pending-ap019-r6-bye-black-rock,12 Nov 22,6,regular,Round 6,Bye,Black Rock,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP019071,19 Nov 22,7,regular,Round 7,Albert Park,Hurlingham Park,8,0,8,1,,,52,31,Completed,
+pending-ap019-r7-beaumaris-cc-kooyong,19 Nov 22,7,regular,Round 7,Beaumaris CC,Kooyong,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap019-r7-black-rock-sth-murrumbeena,19 Nov 22,7,regular,Round 7,Black Rock,Sth Murrumbeena,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap019-r7-victory-park-bye,19 Nov 22,7,regular,Round 7,Victory Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP019082,26 Nov 22,8,regular,Round 8,Sth Murrumbeena,Beaumaris CC,6,2,5,4,,,47,38,Completed,
+AP019083,26 Nov 22,8,regular,Round 8,Victory Park,Hurlingham Park,0,8,0,8,,,13,48,Completed,
+AP019084,26 Nov 22,8,regular,Round 8,Black Rock,Kooyong,6,2,6,4,,,53,51,Completed,
+pending-ap019-r8-bye-albert-park,26 Nov 22,8,regular,Round 8,Bye,Albert Park,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP019091,03 Dec 22,9,regular,Round 9,Albert Park,Black Rock,7,1,6,3,,,43,33,Completed,
+AP019093,03 Dec 22,9,regular,Round 9,Hurlingham Park,Sth Murrumbeena,0,8,1,8,,,28,51,Completed,
+AP019094,03 Dec 22,9,regular,Round 9,Kooyong,Victory Park,8,0,8,0,,,49,10,Completed,
+pending-ap019-r9-beaumaris-cc-bye,03 Dec 22,9,regular,Round 9,Beaumaris CC,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP019101,10 Dec 22,10,regular,Round 10,Victory Park,Albert Park,0,8,1,8,,,30,55,Completed,
+AP019102,10 Dec 22,10,regular,Round 10,Black Rock,Beaumaris CC,7,1,6,2,,,43,23,Completed,
+AP019104,10 Dec 22,10,regular,Round 10,Sth Murrumbeena,Kooyong,2,6,4,4,,,31,36,Completed,
+pending-ap019-r10-bye-hurlingham-park,10 Dec 22,10,regular,Round 10,Bye,Hurlingham Park,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP019112,04 Feb 23,11,regular,Round 11,Beaumaris CC,Victory Park,8,0,8,2,,,57,45,Completed,
+AP019113,04 Feb 23,11,regular,Round 11,Hurlingham Park,Black Rock,0,8,0,8,,,18,48,Completed,
+pending-ap019-r11-albert-park-sth-murrumbeena,04 Feb 23,11,regular,Round 11,Albert Park,Sth Murrumbeena,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap019-r11-kooyong-bye,04 Feb 23,11,regular,Round 11,Kooyong,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP019121,11 Feb 23,12,regular,Round 12,Kooyong,Hurlingham Park,6,2,4,4,,,38,31,Completed,
+AP019122,11 Feb 23,12,regular,Round 12,Victory Park,Black Rock,1,7,2,7,,,21,51,Completed,
+AP019124,11 Feb 23,12,regular,Round 12,Beaumaris CC,Albert Park,8,0,8,1,,,56,34,Completed,
+pending-ap019-r12-bye-sth-murrumbeena,11 Feb 23,12,regular,Round 12,Bye,Sth Murrumbeena,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP019131,18 Feb 23,13,regular,Round 13,Hurlingham Park,Beaumaris CC,6,2,5,5,,,54,46,Completed,
+AP019132,18 Feb 23,13,regular,Round 13,Albert Park,Kooyong,8,0,8,1,,,53,33,Completed,
+AP019133,18 Feb 23,13,regular,Round 13,Sth Murrumbeena,Victory Park,8,0,8,0,,,49,14,Completed,
+pending-ap019-r13-black-rock-bye,18 Feb 23,13,regular,Round 13,Black Rock,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP019142,25 Feb 23,14,regular,Round 14,Kooyong,Beaumaris CC,4,4,2,3,,,25,28,Completed,
+AP019143,25 Feb 23,14,regular,Round 14,Sth Murrumbeena,Black Rock,7,1,7,4,,,61,46,Completed,
+pending-ap019-r14-bye-victory-park,25 Feb 23,14,regular,Round 14,Bye,Victory Park,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap019-r14-hurlingham-park-albert-park,25 Feb 23,14,regular,Round 14,Hurlingham Park,Albert Park,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP019301,,16,semi_final,Semi-final,Albert Park,Beaumaris CC,7,1,7,3,,,56,43,Completed,
+AP019302,,16,semi_final,Semi-final,Sth Murrumbeena,Black Rock,7,1,7,3,,,59,50,Completed,
+AP019321,,17,grand_final,Grand final · TROLS entry 2,Albert Park,Sth Murrumbeena,6,2,4,4,,,34,32,Completed,

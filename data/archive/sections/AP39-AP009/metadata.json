@@ -1,0 +1,95 @@
+{
+  "asset_id": "AP39-AP009",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Winter 2019",
+  "season_id": "AP39",
+  "season_label": "Winter 2019",
+  "source_section_code": "AP009",
+  "section_label": "Open S/D 1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Ormond CR",
+      "wins": 8,
+      "points": 87,
+      "percentage": 173.31,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "St Pats Mentone",
+      "wins": 7,
+      "points": 85,
+      "percentage": 152.82,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Carmelite",
+      "wins": 7,
+      "points": 76.5,
+      "percentage": 137.5,
+      "marker": "P"
+    },
+    {
+      "position": 4,
+      "team": "Lauriston",
+      "wins": 4,
+      "points": 56,
+      "percentage": 93.57,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Black Rock",
+      "wins": 4,
+      "points": 48.5,
+      "percentage": 73.55,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Coatesville",
+      "wins": 1,
+      "points": 40,
+      "percentage": 66.81,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Chadstone",
+      "wins": 0,
+      "points": 27,
+      "percentage": 58.67,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP39-AP009",
+  "fixtures": 59,
+  "completed_fixtures": 36,
+  "draw_fixtures": 59,
+  "singles_rubbers": 144,
+  "doubles_rubbers": 68,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

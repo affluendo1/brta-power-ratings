@@ -1,0 +1,103 @@
+{
+  "asset_id": "AP26-AP015",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 12/13",
+  "season_id": "AP26",
+  "season_label": "Summer 12/13",
+  "source_section_code": "AP015",
+  "section_label": "Mens S/D 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Glen Iris Valley",
+      "wins": 13,
+      "points": 117,
+      "percentage": 167.15,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Caulfield Rec",
+      "wins": 10,
+      "points": 97,
+      "percentage": 121.36,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Black Rock",
+      "wins": 6,
+      "points": 81,
+      "percentage": 119.13,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "GPHC 1",
+      "wins": 6,
+      "points": 74,
+      "percentage": 112.69,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Carmelite",
+      "wins": 5,
+      "points": 71,
+      "percentage": 101.66,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Mordialloc",
+      "wins": 4,
+      "points": 51,
+      "percentage": 73.75,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Old Scotch",
+      "wins": 4,
+      "points": 47,
+      "percentage": 76.42,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "GPHC 2",
+      "wins": 1,
+      "points": 22,
+      "percentage": 63.06,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP26-AP015",
+  "fixtures": 60,
+  "completed_fixtures": 54,
+  "draw_fixtures": 60,
+  "singles_rubbers": 216,
+  "doubles_rubbers": 108,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

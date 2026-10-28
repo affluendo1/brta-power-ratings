@@ -1,0 +1,109 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP014011,04 Oct 25,1,BLTC,East Malvern,No. 1,Sarah Walker,Hayli Tan,Hayli Tan,2-8,2,8,0,1,Completed,true,false,false
+AP014011,04 Oct 25,1,BLTC,East Malvern,No. 2,Ruby Murray,Carolyn Widdup,Ruby Murray,8-5,8,5,1,0,Completed,true,false,false
+AP014011,04 Oct 25,1,BLTC,East Malvern,No. 3,Sonia Rapota,Nicole Stribbles,Sonia Rapota,8-6,8,6,1,0,Completed,true,false,false
+AP014011,04 Oct 25,1,BLTC,East Malvern,No. 4,Olivia Hansen,Genevieve Gardner,Olivia Hansen,8-7,8,7,1,0,Completed,true,false,false
+AP014013,04 Oct 25,1,Hurlingham Park,Tennis World,No. 1,Olena Smushkov,Azusa Davey,Olena Smushkov,8-7,8,7,1,0,Completed,true,false,false
+AP014013,04 Oct 25,1,Hurlingham Park,Tennis World,No. 2,Hannah Lawrence,Michelle Sawyer,Hannah Lawrence,8-7,8,7,1,0,Completed,true,false,false
+AP014013,04 Oct 25,1,Hurlingham Park,Tennis World,No. 3,Caroline Burgess,Sheena Reyes,Caroline Burgess,8-6,8,6,1,0,Completed,true,false,false
+AP014013,04 Oct 25,1,Hurlingham Park,Tennis World,No. 4,Sarah Unger,Ivy Walls,Sarah Unger,8-3,8,3,1,0,Completed,true,false,false
+AP014021,11 Oct 25,2,Tennis World,BLTC,No. 1,Anais Charles-Nelson,Sarah Walker,Sarah Walker,7-8,7,8,0,1,Completed,true,false,false
+AP014021,11 Oct 25,2,Tennis World,BLTC,No. 2,Michelle Sawyer,Ruby Murray,Ruby Murray,7-8,7,8,0,1,Completed,true,false,false
+AP014021,11 Oct 25,2,Tennis World,BLTC,No. 3,Emma McCash,Jessica Clarke,Jessica Clarke,7-8,7,8,0,1,Completed,true,false,false
+AP014021,11 Oct 25,2,Tennis World,BLTC,No. 4,Ivy Walls,Sonia Rapota,Sonia Rapota,0-8,0,8,0,1,Completed,true,false,false
+AP014022,11 Oct 25,2,Kooyong,Hurlingham Park,No. 1,Kate Wraith-Bell,Caroline Burgess,Kate Wraith-Bell,8-4,8,4,1,0,Completed,true,false,false
+AP014022,11 Oct 25,2,Kooyong,Hurlingham Park,No. 2,Anthea Nolan,Sarah-Jane Stratford,Sarah-Jane Stratford,4-8,4,8,0,1,Completed,true,false,false
+AP014022,11 Oct 25,2,Kooyong,Hurlingham Park,No. 3,Loan Kien,Sarah Unger,Loan Kien,8-3,8,3,1,0,Completed,true,false,false
+AP014022,11 Oct 25,2,Kooyong,Hurlingham Park,No. 4,Danielle Nizzero,Cath Hunter,Cath Hunter,7-8,7,8,0,1,Completed,true,false,false
+AP014032,18 Oct 25,3,Hurlingham Park,East Malvern,No. 1,Olena Smushkov,Vanessa Sam,Vanessa Sam,2-8,2,8,0,1,Completed,true,false,false
+AP014032,18 Oct 25,3,Hurlingham Park,East Malvern,No. 2,Hannah Lawrence,Carolyn Widdup,Carolyn Widdup,7-8,7,8,0,1,Completed,true,false,false
+AP014032,18 Oct 25,3,Hurlingham Park,East Malvern,No. 3,Kathryn Nelson,Nicole Stribbles,Kathryn Nelson,8-2,8,2,1,0,Completed,true,false,false
+AP014032,18 Oct 25,3,Hurlingham Park,East Malvern,No. 4,Amy Moralis,Amy Nguyen,Amy Moralis,8-7,8,7,1,0,Completed,true,false,false
+AP014033,18 Oct 25,3,Tennis World,Kooyong,No. 1,Anais Charles-Nelson,Kat Lazzaro,Anais Charles-Nelson,8-2,8,2,1,0,Completed,true,false,false
+AP014033,18 Oct 25,3,Tennis World,Kooyong,No. 2,Michelle Sawyer,Jeanette Meagher,Michelle Sawyer,8-6,8,6,1,0,Completed,true,false,false
+AP014033,18 Oct 25,3,Tennis World,Kooyong,No. 3,Fiona Reilly,Nell Carswell,Fiona Reilly,8-1,8,1,1,0,Completed,true,false,false
+AP014033,18 Oct 25,3,Tennis World,Kooyong,No. 4,Emma McCash,Carolina Palazzo,Carolina Palazzo,7-8,7,8,0,1,Completed,true,false,true
+AP014041,25 Oct 25,4,Kooyong,BLTC,No. 1,Anthea Nolan,Lia Benjamin,Lia Benjamin,1-8,1,8,0,1,Completed,true,false,true
+AP014041,25 Oct 25,4,Kooyong,BLTC,No. 2,Kat Lazzaro,Georgia O'Donoghue,Georgia O'Donoghue,5-8,5,8,0,1,Completed,true,false,false
+AP014041,25 Oct 25,4,Kooyong,BLTC,No. 3,Loan Kien,Jessica Clarke,Loan Kien,8-3,8,3,1,0,Completed,true,false,false
+AP014041,25 Oct 25,4,Kooyong,BLTC,No. 4,Jeanette Meagher,Katarina Martinic,Katarina Martinic,2-8,2,8,0,1,Completed,true,false,false
+AP014042,25 Oct 25,4,East Malvern,Tennis World,No. 1,Vanessa Sam,Anais Charles-Nelson,Vanessa Sam,8-7,8,7,1,0,Completed,true,false,false
+AP014042,25 Oct 25,4,East Malvern,Tennis World,No. 2,Nicole Stribbles,Azusa Davey,Azusa Davey,4-8,4,8,0,1,Completed,true,false,false
+AP014042,25 Oct 25,4,East Malvern,Tennis World,No. 3,Genevieve Gardner,Michelle Sawyer,Michelle Sawyer,3-8,3,8,0,1,Completed,true,false,false
+AP014042,25 Oct 25,4,East Malvern,Tennis World,No. 4,Amy Nguyen,Ivy Walls,Amy Nguyen,8-5,8,5,1,0,Completed,true,false,false
+AP014061,15 Nov 25,6,East Malvern,BLTC,No. 1,Hayli Tan,Ruby Murray,Hayli Tan,8-6,8,6,1,0,Completed,true,false,false
+AP014061,15 Nov 25,6,East Malvern,BLTC,No. 2,Jiayun Lu,Olivia Hansen,Olivia Hansen,5-8,5,8,0,1,Completed,true,true,false
+AP014061,15 Nov 25,6,East Malvern,BLTC,No. 3,Carolyn Widdup,Georgia O'Donoghue,Carolyn Widdup,8-0,8,0,1,0,Completed,true,false,false
+AP014061,15 Nov 25,6,East Malvern,BLTC,No. 4,Amy Nguyen,Jessica Clarke,Jessica Clarke,7-8,7,8,0,1,Completed,true,false,false
+AP014063,15 Nov 25,6,Tennis World,Hurlingham Park,No. 1,Anais Charles-Nelson,Olena Smushkov,Anais Charles-Nelson,8-4,8,4,1,0,Completed,true,false,false
+AP014063,15 Nov 25,6,Tennis World,Hurlingham Park,No. 2,Azusa Davey,Michelle McKenzie,Azusa Davey,8-1,8,1,1,0,Completed,true,false,false
+AP014063,15 Nov 25,6,Tennis World,Hurlingham Park,No. 3,Michelle Sawyer,Sarah-Jane Stratford,Michelle Sawyer,8-2,8,2,1,0,Completed,true,false,false
+AP014063,15 Nov 25,6,Tennis World,Hurlingham Park,No. 4,Emma McCash,Ewa Foroncewicz,Emma McCash,8-4,8,4,1,0,Completed,true,false,true
+AP014071,22 Nov 25,7,BLTC,Tennis World,No. 1,Olivia Hansen,Anais Charles-Nelson,Anais Charles-Nelson,3-8,3,8,0,1,Completed,true,false,false
+AP014071,22 Nov 25,7,BLTC,Tennis World,No. 2,Georgia O'Donoghue,Azusa Davey,Azusa Davey,0-8,0,8,0,1,Completed,true,false,false
+AP014071,22 Nov 25,7,BLTC,Tennis World,No. 3,Sonia Rapota,Michelle Sawyer,Michelle Sawyer,5-8,5,8,0,1,Completed,true,false,false
+AP014071,22 Nov 25,7,BLTC,Tennis World,No. 4,Katarina Martinic,Emma McCash,Katarina Martinic,8-5,8,5,1,0,Completed,true,false,false
+AP014072,22 Nov 25,7,Hurlingham Park,Kooyong,No. 1,Hannah Lawrence,Sarah Meagher,Sarah Meagher,2-8,2,8,0,1,Completed,true,false,true
+AP014072,22 Nov 25,7,Hurlingham Park,Kooyong,No. 2,Michelle McKenzie,Kate Wraith-Bell,Kate Wraith-Bell,3-8,3,8,0,1,Completed,true,false,false
+AP014072,22 Nov 25,7,Hurlingham Park,Kooyong,No. 3,Caroline Burgess,Sherene Loi,Caroline Burgess,8-7,8,7,1,0,Completed,true,false,false
+AP014072,22 Nov 25,7,Hurlingham Park,Kooyong,No. 4,Sarah-Jane Stratford,Danielle Nizzero,Danielle Nizzero,2-8,2,8,0,1,Completed,true,false,false
+AP014082,29 Nov 25,8,East Malvern,Hurlingham Park,No. 1,Asha Bhattacharjee,Hannah Lawrence,Asha Bhattacharjee,8-4,8,4,1,0,Completed,true,true,false
+AP014082,29 Nov 25,8,East Malvern,Hurlingham Park,No. 2,Vanessa Sam,Kathryn Nelson,Vanessa Sam,8-3,8,3,1,0,Completed,true,false,false
+AP014082,29 Nov 25,8,East Malvern,Hurlingham Park,No. 3,Carolyn Widdup,Cath Hunter,Carolyn Widdup,8-7,8,7,1,0,Completed,true,false,false
+AP014082,29 Nov 25,8,East Malvern,Hurlingham Park,No. 4,Genevieve Gardner,Amy Moralis,Genevieve Gardner,8-3,8,3,1,0,Completed,true,false,false
+AP014083,29 Nov 25,8,Kooyong,Tennis World,No. 1,Danielle Nizzero,Anais Charles-Nelson,Anais Charles-Nelson,5-8,5,8,0,1,Completed,true,false,false
+AP014083,29 Nov 25,8,Kooyong,Tennis World,No. 2,Kate Wraith-Bell,Azusa Davey,Azusa Davey,2-8,2,8,0,1,Completed,true,false,false
+AP014083,29 Nov 25,8,Kooyong,Tennis World,No. 3,Jeanette Meagher,Michelle Sawyer,Michelle Sawyer,3-8,3,8,0,1,Completed,true,false,false
+AP014083,29 Nov 25,8,Kooyong,Tennis World,No. 4,Nell Carswell,Fiona Reilly,Fiona Reilly,1-8,1,8,0,1,Completed,true,false,false
+AP014101,13 Dec 25,10,Hurlingham Park,BLTC,No. 1,Olena Smushkov,Sarah Walker,Olena Smushkov,8-3,8,3,1,0,Completed,true,false,false
+AP014101,13 Dec 25,10,Hurlingham Park,BLTC,No. 2,Kathryn Nelson,Ruby Murray,Ruby Murray,4-8,4,8,0,1,Completed,true,false,false
+AP014101,13 Dec 25,10,Hurlingham Park,BLTC,No. 3,Cath Hunter,Olivia Hansen,Olivia Hansen,4-8,4,8,0,1,Completed,true,false,false
+AP014101,13 Dec 25,10,Hurlingham Park,BLTC,No. 4,Amy Moralis,Katarina Martinic,Katarina Martinic,7-8,7,8,0,1,Completed,true,false,false
+AP014102,13 Dec 25,10,East Malvern,Kooyong,No. 1,Hayli Tan,Kate Wraith-Bell,Hayli Tan,8-1,8,1,1,0,Completed,true,false,false
+AP014102,13 Dec 25,10,East Malvern,Kooyong,No. 2,Vanessa Sam,Anthea Nolan,Vanessa Sam,8-2,8,2,1,0,Completed,true,false,false
+AP014102,13 Dec 25,10,East Malvern,Kooyong,No. 3,Carolyn Widdup,Danielle Nizzero,Carolyn Widdup,8-5,8,5,1,0,Completed,true,false,false
+AP014102,13 Dec 25,10,East Malvern,Kooyong,No. 4,Amy Nguyen,Caroline Myers,Amy Nguyen,8-6,8,6,1,0,Completed,true,false,true
+AP014111,07 Feb 26,11,BLTC,East Malvern,No. 1,Ruby Murray,Vanessa Sam,Vanessa Sam,0-8,0,8,0,1,Completed,true,false,false
+AP014111,07 Feb 26,11,BLTC,East Malvern,No. 2,Sarah Walker,Jemma Rayment,Jemma Rayment,3-8,3,8,0,1,Completed,true,false,true
+AP014111,07 Feb 26,11,BLTC,East Malvern,No. 3,Kalani Boyd,Celeste Rayment,Celeste Rayment,4-8,4,8,0,1,Completed,true,true,true
+AP014111,07 Feb 26,11,BLTC,East Malvern,No. 4,Katarina Martinic,Carolyn Widdup,Carolyn Widdup,6-8,6,8,0,1,Completed,true,false,false
+AP014113,07 Feb 26,11,Hurlingham Park,Tennis World,No. 1,Olena Smushkov,Anais Charles-Nelson,Olena Smushkov,8-7,8,7,1,0,Completed,true,false,false
+AP014113,07 Feb 26,11,Hurlingham Park,Tennis World,No. 2,Hannah Lawrence,Michelle Sawyer,Hannah Lawrence,8-4,8,4,1,0,Completed,true,false,false
+AP014113,07 Feb 26,11,Hurlingham Park,Tennis World,No. 3,Sarah-Jane Stratford,Fiona Reilly,Fiona Reilly,5-8,5,8,0,1,Completed,true,false,false
+AP014113,07 Feb 26,11,Hurlingham Park,Tennis World,No. 4,Sarah Unger,Emma McCash,Emma McCash,4-8,4,8,0,1,Completed,true,false,false
+AP014121,14 Feb 26,12,Tennis World,BLTC,No. 1,Anais Charles-Nelson,Olivia Hansen,Anais Charles-Nelson,8-1,8,1,1,0,Completed,true,false,false
+AP014121,14 Feb 26,12,Tennis World,BLTC,No. 2,Michelle Sawyer,Georgie Henzell,Michelle Sawyer,8-0,8,0,1,0,Completed,true,false,true
+AP014121,14 Feb 26,12,Tennis World,BLTC,No. 3,Fiona Reilly,Katarina Martinic,Fiona Reilly,8-1,8,1,1,0,Completed,true,false,false
+AP014121,14 Feb 26,12,Tennis World,BLTC,No. 4,Emma McCash,Sara Catala,Emma McCash,8-3,8,3,1,0,Completed,true,false,true
+AP014122,14 Feb 26,12,Kooyong,Hurlingham Park,No. 1,Belinda McLean,Olena Smushkov,Belinda McLean,8-7,8,7,1,0,Completed,true,true,false
+AP014122,14 Feb 26,12,Kooyong,Hurlingham Park,No. 2,Danielle Nizzero,Hannah Lawrence,Danielle Nizzero,8-2,8,2,1,0,Completed,true,false,false
+AP014122,14 Feb 26,12,Kooyong,Hurlingham Park,No. 3,Anthea Nolan,Kathryn Nelson,Anthea Nolan,8-4,8,4,1,0,Completed,true,false,false
+AP014122,14 Feb 26,12,Kooyong,Hurlingham Park,No. 4,Nell Carswell,Sarah-Jane Stratford,Sarah-Jane Stratford,4-8,4,8,0,1,Completed,true,false,false
+AP014132,21 Feb 26,13,Hurlingham Park,East Malvern,No. 1,Hannah Lawrence,Hayli Tan,Hayli Tan,5-8,5,8,0,1,Completed,true,false,false
+AP014132,21 Feb 26,13,Hurlingham Park,East Malvern,No. 2,Caroline Burgess,Vanessa Sam,Vanessa Sam,1-8,1,8,0,1,Completed,true,false,false
+AP014132,21 Feb 26,13,Hurlingham Park,East Malvern,No. 3,Sarah Unger,Jemma Rayment,Jemma Rayment,0-8,0,8,0,1,Completed,true,false,true
+AP014132,21 Feb 26,13,Hurlingham Park,East Malvern,No. 4,Amy Moralis,Amy Nguyen,Amy Nguyen,4-8,4,8,0,1,Completed,true,false,false
+AP014133,21 Feb 26,13,Tennis World,Kooyong,No. 1,Anais Charles-Nelson,Belinda McLean,Anais Charles-Nelson,8-0,8,0,1,0,Completed,true,false,true
+AP014133,21 Feb 26,13,Tennis World,Kooyong,No. 2,Michelle Sawyer,Kat Lazzaro,Michelle Sawyer,8-7,8,7,1,0,Completed,true,false,false
+AP014133,21 Feb 26,13,Tennis World,Kooyong,No. 3,Fiona Reilly,Emma Green,Fiona Reilly,8-1,8,1,1,0,Completed,true,false,true
+AP014133,21 Feb 26,13,Tennis World,Kooyong,No. 4,Emma McCash,Catherine Tanna,Emma McCash,8-7,8,7,1,0,Completed,true,false,true
+AP014141,28 Feb 26,14,Kooyong,BLTC,No. 1,Kate Wraith-Bell,Georgia O'Donoghue,Kate Wraith-Bell,8-2,8,2,1,0,Completed,true,false,false
+AP014141,28 Feb 26,14,Kooyong,BLTC,No. 2,Anthea Nolan,Jessica Clarke,Anthea Nolan,8-1,8,1,1,0,Completed,true,false,false
+AP014141,28 Feb 26,14,Kooyong,BLTC,No. 3,Kat Lazzaro,Sonia Rapota,Kat Lazzaro,8-4,8,4,1,0,Completed,true,false,false
+AP014141,28 Feb 26,14,Kooyong,BLTC,No. 4,Loan Kien,Katarina Martinic,Katarina Martinic,4-8,4,8,0,1,Completed,true,false,false
+AP014142,28 Feb 26,14,East Malvern,Tennis World,No. 1,Hayli Tan,Michelle Sawyer,Hayli Tan,8-6,8,6,1,0,Completed,true,false,false
+AP014142,28 Feb 26,14,East Malvern,Tennis World,No. 2,Vanessa Sam,Fiona Reilly,Vanessa Sam,8-5,8,5,1,0,Completed,true,false,false
+AP014142,28 Feb 26,14,East Malvern,Tennis World,No. 3,Celeste Rayment,Emma McCash,Celeste Rayment,8-7,8,7,1,0,Completed,true,true,false
+AP014142,28 Feb 26,14,East Malvern,Tennis World,No. 4,Genevieve Gardner,Ivy Walls,Genevieve Gardner,8-1,8,1,1,0,Completed,true,false,false
+AP014151,14 Mar 26,15,BLTC,Hurlingham Park,No. 1,Ruby Murray,Caroline Burgess,Ruby Murray,8-1,8,1,1,0,Completed,true,false,false
+AP014151,14 Mar 26,15,BLTC,Hurlingham Park,No. 2,Kalani Boyd,Sarah-Jane Stratford,Sarah-Jane Stratford,1-8,1,8,0,1,Completed,true,true,false
+AP014151,14 Mar 26,15,BLTC,Hurlingham Park,No. 3,Olivia Hansen,Cath Hunter,Olivia Hansen,8-5,8,5,1,0,Completed,true,false,false
+AP014151,14 Mar 26,15,BLTC,Hurlingham Park,No. 4,Michelle Bleakley,Ewa Foroncewicz,Ewa Foroncewicz,2-8,2,8,0,1,Completed,true,true,true
+AP014152,14 Mar 26,15,Kooyong,East Malvern,No. 1,Kate Wraith-Bell,Asha Bhattacharjee,Asha Bhattacharjee,2-8,2,8,0,1,Completed,true,false,true
+AP014152,14 Mar 26,15,Kooyong,East Malvern,No. 2,Danielle Nizzero,Vanessa Sam,Danielle Nizzero,8-3,8,3,1,0,Completed,true,false,false
+AP014152,14 Mar 26,15,Kooyong,East Malvern,No. 3,Nell Carswell,Jemma Rayment,Nell Carswell,8-7,8,7,1,0,Completed,true,false,true
+AP014152,14 Mar 26,15,Kooyong,East Malvern,No. 4,Fiona Lee,Amy Nguyen,Amy Nguyen,0-8,0,8,0,1,Completed,true,false,false
+AP014321,,16,East Malvern,Tennis World,No. 1,Hayli Tan,Anais Charles-Nelson,Hayli Tan,8-3,8,3,1,0,Completed,true,false,false
+AP014321,,16,East Malvern,Tennis World,No. 2,Vanessa Sam,Michelle Sawyer,Vanessa Sam,8-1,8,1,1,0,Completed,true,false,false
+AP014321,,16,East Malvern,Tennis World,No. 3,Carolyn Widdup,Fiona Reilly,Fiona Reilly,6-8,6,8,0,1,Completed,true,false,false
+AP014321,,16,East Malvern,Tennis World,No. 4,Amy Nguyen,Emma McCash,Amy Nguyen,8-6,8,6,1,0,Completed,true,false,false

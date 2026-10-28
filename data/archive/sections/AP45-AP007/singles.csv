@@ -1,0 +1,157 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP007011,01 Oct 22,1,Carmelite,Elsternwick Park Blue,No. 1,Ryan Sweeney,Ben Nguyen,Ben Nguyen,4-8,4,8,0,1,Completed,true,false,false
+AP007011,01 Oct 22,1,Carmelite,Elsternwick Park Blue,No. 2,Angus Leckey,Alex Pun,Alex Pun,1-8,1,8,0,1,Completed,true,false,false
+AP007011,01 Oct 22,1,Carmelite,Elsternwick Park Blue,No. 3,Oscar Gillespie,Viranga Senadipathy,Viranga Senadipathy,5-8,5,8,0,1,Completed,true,true,false
+AP007011,01 Oct 22,1,Carmelite,Elsternwick Park Blue,No. 4,Nic Pyrel,Matt Anstee,Matt Anstee,1-8,1,8,0,1,Completed,true,true,false
+AP007013,01 Oct 22,1,Coatesville,Caulfield Rec,No. 1,Daniel Gershenzen,Ian Eddington,Daniel Gershenzen,8-5,8,5,1,0,Completed,true,false,false
+AP007013,01 Oct 22,1,Coatesville,Caulfield Rec,No. 2,Gabriel Basman,Harsha Limay,Gabriel Basman,8-5,8,5,1,0,Completed,true,false,false
+AP007013,01 Oct 22,1,Coatesville,Caulfield Rec,No. 3,Ashton Eikelis,Miguel Sison,Ashton Eikelis,8-1,8,1,1,0,Completed,true,true,false
+AP007013,01 Oct 22,1,Coatesville,Caulfield Rec,No. 4,Nick Chau,Lauren Yarrow,Nick Chau,8-5,8,5,1,0,Completed,true,true,false
+AP007014,01 Oct 22,1,Caulfield Park Red,St Anthony's Blue,No. 1,Gerard Kemp,Chris Gain,Chris Gain,4-8,4,8,0,1,Completed,true,false,false
+AP007014,01 Oct 22,1,Caulfield Park Red,St Anthony's Blue,No. 2,Rossatorn Aksharanugraha,Vincent Macassa,Rossatorn Aksharanugraha,8-0,8,0,1,0,Completed,true,true,false
+AP007014,01 Oct 22,1,Caulfield Park Red,St Anthony's Blue,No. 3,Dominique Kemp,Cam Wilkinson,Cam Wilkinson,3-8,3,8,0,1,Completed,true,false,false
+AP007014,01 Oct 22,1,Caulfield Park Red,St Anthony's Blue,No. 4,Cassandra Ballard,Chris Doherty,Cassandra Ballard,8-5,8,5,1,0,Completed,true,false,true
+AP007021,08 Oct 22,2,St Anthony's Blue,Carmelite,No. 1,Chris Gain,Victor Blitsas,Victor Blitsas,6-8,6,8,0,1,Completed,true,false,false
+AP007021,08 Oct 22,2,St Anthony's Blue,Carmelite,No. 2,Brendan Sitters,Josh Kempin,Brendan Sitters,8-5,8,5,1,0,Completed,true,false,false
+AP007021,08 Oct 22,2,St Anthony's Blue,Carmelite,No. 3,Shaddi Elgani,Ryan Sweeney,Ryan Sweeney,4-8,4,8,0,1,Completed,true,true,false
+AP007021,08 Oct 22,2,St Anthony's Blue,Carmelite,No. 4,Cam Wilkinson,Vladimir Spencer,Vladimir Spencer,6-8,6,8,0,1,Completed,true,false,false
+AP007023,08 Oct 22,2,Ormond,Coatesville,No. 1,Nathan McCracken,Daniel Gershenzen,Nathan McCracken,8-5,8,5,1,0,Completed,true,false,false
+AP007023,08 Oct 22,2,Ormond,Coatesville,No. 2,Steve Gelagin,Jonathon Bong,Steve Gelagin,8-5,8,5,1,0,Completed,true,false,false
+AP007023,08 Oct 22,2,Ormond,Coatesville,No. 3,Michael Hudson,Gabriel Basman,Michael Hudson,8-7,8,7,1,0,Completed,true,false,false
+AP007023,08 Oct 22,2,Ormond,Coatesville,No. 4,Mason Campbell,Jack Langdon,Jack Langdon,0-8,0,8,0,1,Completed,true,true,false
+AP007024,08 Oct 22,2,Caulfield Rec,Caulfield Park Red,No. 1,Josh Dosser,Gerard Kemp,Josh Dosser,8-5,8,5,1,0,Completed,true,false,false
+AP007024,08 Oct 22,2,Caulfield Rec,Caulfield Park Red,No. 2,Harsha Limay,Rossatorn Aksharanugraha,Rossatorn Aksharanugraha,3-8,3,8,0,1,Completed,true,false,true
+AP007024,08 Oct 22,2,Caulfield Rec,Caulfield Park Red,No. 3,Lauren Yarrow,Dennis Petrie,Dennis Petrie,0-8,0,8,0,1,Completed,true,false,false
+AP007024,08 Oct 22,2,Caulfield Rec,Caulfield Park Red,No. 4,Tarun Soni,Dominique Kemp,Tarun Soni,8-1,8,1,1,0,Completed,true,false,false
+AP007031,15 Oct 22,3,Carmelite,Caulfield Rec,No. 1,Josh Kempin,Josh Dosser,Josh Dosser,3-8,3,8,0,1,Completed,true,false,false
+AP007031,15 Oct 22,3,Carmelite,Caulfield Rec,No. 2,Angus Leckey,Lauren Yarrow,Lauren Yarrow,5-8,5,8,0,1,Completed,true,false,false
+AP007031,15 Oct 22,3,Carmelite,Caulfield Rec,No. 3,Max Fergie,Tarun Soni,Max Fergie,8-4,8,4,1,0,Completed,true,false,false
+AP007031,15 Oct 22,3,Carmelite,Caulfield Rec,No. 4,Harrison Hughes,Miguel Sison,Harrison Hughes,8-6,8,6,1,0,Completed,true,false,false
+AP007033,15 Oct 22,3,Coatesville,Elsternwick Park Blue,No. 1,Daniel Gershenzen,Adam Neilands,Daniel Gershenzen,8-2,8,2,1,0,Completed,true,false,false
+AP007033,15 Oct 22,3,Coatesville,Elsternwick Park Blue,No. 2,George Verakis,Matt Anstee,Matt Anstee,5-8,5,8,0,1,Completed,true,false,false
+AP007033,15 Oct 22,3,Coatesville,Elsternwick Park Blue,No. 3,Gabriel Basman,Dror Collins,Gabriel Basman,8-3,8,3,1,0,Completed,true,false,false
+AP007033,15 Oct 22,3,Coatesville,Elsternwick Park Blue,No. 4,Jack Langdon,Joe Barr,Jack Langdon,8-0,8,0,1,0,Completed,true,false,false
+AP007034,15 Oct 22,3,Caulfield Park Red,Ormond,No. 1,Gerard Kemp,Nathan McCracken,Nathan McCracken,5-8,5,8,0,1,Completed,true,false,false
+AP007034,15 Oct 22,3,Caulfield Park Red,Ormond,No. 2,Rossatorn Aksharanugraha,Ben Darrou,Ben Darrou,4-8,4,8,0,1,Completed,true,true,false
+AP007034,15 Oct 22,3,Caulfield Park Red,Ormond,No. 3,Dennis Petrie,Andrew Lipson,Dennis Petrie,8-5,8,5,1,0,Completed,true,false,false
+AP007034,15 Oct 22,3,Caulfield Park Red,Ormond,No. 4,Dominique Kemp,Michael Hudson,Michael Hudson,7-8,7,8,0,1,Completed,true,false,false
+AP007044,22 Oct 22,4,Elsternwick Park Blue,Caulfield Park Red,No. 1,Shannon Keough,Gerard Kemp,Shannon Keough,8-0,8,0,1,0,Completed,true,false,false
+AP007044,22 Oct 22,4,Elsternwick Park Blue,Caulfield Park Red,No. 2,Adam Neilands,Rossatorn Aksharanugraha,Adam Neilands,8-2,8,2,1,0,Completed,true,false,true
+AP007044,22 Oct 22,4,Elsternwick Park Blue,Caulfield Park Red,No. 3,Brad Fenech,Dominique Kemp,Brad Fenech,8-3,8,3,1,0,Completed,true,false,false
+AP007044,22 Oct 22,4,Elsternwick Park Blue,Caulfield Park Red,No. 4,Viranga Senadipathy,Cassandra Ballard,Viranga Senadipathy,8-0,8,0,1,0,Completed,true,false,false
+AP007051,05 Nov 22,5,Coatesville,Caulfield Park Red,No. 1,Daniel Gershenzen,Gerard Kemp,Daniel Gershenzen,8-4,8,4,1,0,Completed,true,false,false
+AP007051,05 Nov 22,5,Coatesville,Caulfield Park Red,No. 2,Jonathon Bong,Rossatorn Aksharanugraha,Jonathon Bong,8-4,8,4,1,0,Completed,true,false,true
+AP007051,05 Nov 22,5,Coatesville,Caulfield Park Red,No. 3,George Verakis,Dennis Petrie,George Verakis,8-7,8,7,1,0,Completed,true,false,false
+AP007051,05 Nov 22,5,Coatesville,Caulfield Park Red,No. 4,Gabriel Basman,Dominique Kemp,Gabriel Basman,8-3,8,3,1,0,Completed,true,false,false
+AP007052,05 Nov 22,5,St Anthony's Blue,Caulfield Rec,No. 1,Joseph Obsioma,Lauren Yarrow,Joseph Obsioma,8-2,8,2,1,0,Completed,true,false,false
+AP007052,05 Nov 22,5,St Anthony's Blue,Caulfield Rec,No. 2,Chris Gain,Tarun Soni,Chris Gain,8-0,8,0,1,0,Completed,true,false,false
+AP007052,05 Nov 22,5,St Anthony's Blue,Caulfield Rec,No. 3,Vincent Macassa,Miguel Sison,Vincent Macassa,8-2,8,2,1,0,Completed,true,false,false
+AP007052,05 Nov 22,5,St Anthony's Blue,Caulfield Rec,No. 4,Cam Wilkinson,Matthew Krieger,Cam Wilkinson,8-2,8,2,1,0,Completed,true,false,true
+AP007053,05 Nov 22,5,Ormond,Elsternwick Park Blue,No. 1,Ben Darrou,Shannon Keough,Ben Darrou,8-7,8,7,1,0,Completed,true,false,false
+AP007053,05 Nov 22,5,Ormond,Elsternwick Park Blue,No. 2,Andrew Lipson,Alex Pun,Andrew Lipson,8-7,8,7,1,0,Completed,true,false,false
+AP007053,05 Nov 22,5,Ormond,Elsternwick Park Blue,No. 3,Simon Currey,Dror Collins,Simon Currey,8-2,8,2,1,0,Completed,true,false,false
+AP007053,05 Nov 22,5,Ormond,Elsternwick Park Blue,No. 4,Michael Hudson,Viranga Senadipathy,Viranga Senadipathy,4-8,4,8,0,1,Completed,true,false,false
+AP007062,12 Nov 22,6,Caulfield Park Red,Carmelite,No. 1,Gerard Kemp,Victor Blitsas,Gerard Kemp,8-2,8,2,1,0,Completed,true,false,false
+AP007062,12 Nov 22,6,Caulfield Park Red,Carmelite,No. 2,Justin Cox,Josh Kempin,Josh Kempin,2-8,2,8,0,1,Completed,true,true,false
+AP007062,12 Nov 22,6,Caulfield Park Red,Carmelite,No. 3,Dominique Kemp,Max Fergie,Dominique Kemp,8-7,8,7,1,0,Completed,true,false,false
+AP007062,12 Nov 22,6,Caulfield Park Red,Carmelite,No. 4,Cassandra Ballard,Joshua McKenzie,Joshua McKenzie,3-8,3,8,0,1,Completed,true,false,false
+AP007063,12 Nov 22,6,Caulfield Rec,Ormond,No. 1,Borja Ramirez,Ben Darrou,Ben Darrou,0-8,0,8,0,1,Completed,true,true,false
+AP007063,12 Nov 22,6,Caulfield Rec,Ormond,No. 2,Tarun Soni,Kenny Ong,Kenny Ong,3-8,3,8,0,1,Completed,true,false,true
+AP007063,12 Nov 22,6,Caulfield Rec,Ormond,No. 3,Miguel Sison,Steve Gelagin,Steve Gelagin,1-8,1,8,0,1,Completed,true,false,false
+AP007063,12 Nov 22,6,Caulfield Rec,Ormond,No. 4,Matthew Krieger,Mason Campbell,Mason Campbell,6-8,6,8,0,1,Completed,true,true,true
+AP007064,12 Nov 22,6,Elsternwick Park Blue,St Anthony's Blue,No. 1,Adam Neilands,Joseph Obsioma,Adam Neilands,8-2,8,2,1,0,Completed,true,false,false
+AP007064,12 Nov 22,6,Elsternwick Park Blue,St Anthony's Blue,No. 2,Matt Anstee,Chris Gain,Chris Gain,6-8,6,8,0,1,Completed,true,false,false
+AP007064,12 Nov 22,6,Elsternwick Park Blue,St Anthony's Blue,No. 3,Ben Wijay,Brendan Sitters,Ben Wijay,8-4,8,4,1,0,Completed,true,false,false
+AP007064,12 Nov 22,6,Elsternwick Park Blue,St Anthony's Blue,No. 4,Dror Collins,Cam Wilkinson,Dror Collins,8-5,8,5,1,0,Completed,true,false,false
+AP007073,19 Nov 22,7,St Anthony's Blue,Ormond,No. 1,Joseph Obsioma,Nathan McCracken,Nathan McCracken,3-8,3,8,0,1,Completed,true,false,false
+AP007073,19 Nov 22,7,St Anthony's Blue,Ormond,No. 2,Chris Gain,Ben Darrou,Chris Gain,8-4,8,4,1,0,Completed,true,false,false
+AP007073,19 Nov 22,7,St Anthony's Blue,Ormond,No. 3,Vincent Macassa,Andrew Lipson,Andrew Lipson,4-8,4,8,0,1,Completed,true,false,false
+AP007073,19 Nov 22,7,St Anthony's Blue,Ormond,No. 4,Cam Wilkinson,Michael Hudson,Cam Wilkinson,8-4,8,4,1,0,Completed,true,false,false
+AP007081,26 Nov 22,8,Elsternwick Park Blue,Carmelite,No. 1,Alex Pun,Josh Kempin,Alex Pun,8-7,8,7,1,0,Completed,true,false,false
+AP007081,26 Nov 22,8,Elsternwick Park Blue,Carmelite,No. 2,Matt Anstee,Ryan Sweeney,Matt Anstee,8-6,8,6,1,0,Completed,true,false,false
+AP007081,26 Nov 22,8,Elsternwick Park Blue,Carmelite,No. 3,Dror Collins,Joshua McKenzie,Dror Collins,8-2,8,2,1,0,Completed,true,false,false
+AP007081,26 Nov 22,8,Elsternwick Park Blue,Carmelite,No. 4,Joe Barr,Vladimir Spencer,Vladimir Spencer,6-8,6,8,0,1,Completed,true,false,false
+AP007083,26 Nov 22,8,Caulfield Rec,Coatesville,No. 1,Josh Dosser,Jonathon Bong,Jonathon Bong,2-8,2,8,0,1,Completed,true,false,false
+AP007083,26 Nov 22,8,Caulfield Rec,Coatesville,No. 2,Harsha Limay,Gabriel Basman,Harsha Limay,8-2,8,2,1,0,Completed,true,false,false
+AP007083,26 Nov 22,8,Caulfield Rec,Coatesville,No. 3,Miguel Sison,Jack Langdon,Jack Langdon,0-8,0,8,0,1,Completed,true,false,false
+AP007083,26 Nov 22,8,Caulfield Rec,Coatesville,No. 4,Matthew Krieger,Charlie Garcia,Charlie Garcia,5-8,5,8,0,1,Completed,true,true,false
+AP007084,26 Nov 22,8,St Anthony's Blue,Caulfield Park Red,No. 1,Chris Gain,Gerard Kemp,Chris Gain,8-2,8,2,1,0,Completed,true,false,false
+AP007084,26 Nov 22,8,St Anthony's Blue,Caulfield Park Red,No. 2,Vincent Macassa,Simon Lindsay,Vincent Macassa,8-1,8,1,1,0,Completed,true,false,true
+AP007084,26 Nov 22,8,St Anthony's Blue,Caulfield Park Red,No. 3,Peter McDiarmid,Sally Fiddes,Peter McDiarmid,8-6,8,6,1,0,Completed,true,true,true
+AP007084,26 Nov 22,8,St Anthony's Blue,Caulfield Park Red,No. 4,Luke Monsour,Dominique Kemp,Luke Monsour,8-6,8,6,1,0,Completed,true,true,false
+AP007091,03 Dec 22,9,Carmelite,St Anthony's Blue,No. 1,Josh Kempin,Joseph Obsioma,Josh Kempin,8-6,8,6,1,0,Completed,true,false,false
+AP007091,03 Dec 22,9,Carmelite,St Anthony's Blue,No. 2,Ryan Sweeney,Chris Gain,Ryan Sweeney,8-4,8,4,1,0,Completed,true,false,false
+AP007091,03 Dec 22,9,Carmelite,St Anthony's Blue,No. 3,Harrison Hughes,Vincent Macassa,Vincent Macassa,2-8,2,8,0,1,Completed,true,false,false
+AP007091,03 Dec 22,9,Carmelite,St Anthony's Blue,No. 4,Vladimir Spencer,Cam Wilkinson,Vladimir Spencer,8-1,8,1,1,0,Completed,true,false,false
+AP007093,03 Dec 22,9,Coatesville,Ormond,No. 1,George Verakis,Nathan McCracken,Nathan McCracken,5-8,5,8,0,1,Completed,true,false,false
+AP007093,03 Dec 22,9,Coatesville,Ormond,No. 2,Gabriel Basman,Ben Darrou,Ben Darrou,4-8,4,8,0,1,Completed,true,false,false
+AP007093,03 Dec 22,9,Coatesville,Ormond,No. 3,Charlie Garcia,Andrew Lipson,Andrew Lipson,1-8,1,8,0,1,Completed,true,false,false
+AP007093,03 Dec 22,9,Coatesville,Ormond,No. 4,Max Bruten,Chris Gogoll,Chris Gogoll,0-8,0,8,0,1,Completed,true,true,false
+AP007094,03 Dec 22,9,Caulfield Park Red,Caulfield Rec,No. 1,Gerard Kemp,Josh Dosser,Josh Dosser,4-8,4,8,0,1,Completed,true,false,false
+AP007094,03 Dec 22,9,Caulfield Park Red,Caulfield Rec,No. 2,Rossatorn Aksharanugraha,Harsha Limay,Rossatorn Aksharanugraha,8-1,8,1,1,0,Completed,true,true,false
+AP007094,03 Dec 22,9,Caulfield Park Red,Caulfield Rec,No. 3,Dennis Petrie,Lauren Yarrow,Lauren Yarrow,6-8,6,8,0,1,Completed,true,false,false
+AP007094,03 Dec 22,9,Caulfield Park Red,Caulfield Rec,No. 4,Dominique Kemp,Chris Liolios,Chris Liolios,6-8,6,8,0,1,Completed,true,false,true
+AP007101,10 Dec 22,10,Caulfield Rec,Carmelite,No. 1,Harsha Limay,Josh Kempin,Josh Kempin,0-8,0,8,0,1,Completed,true,false,false
+AP007101,10 Dec 22,10,Caulfield Rec,Carmelite,No. 2,Lauren Yarrow,David Baumholzer,David Baumholzer,1-8,1,8,0,1,Completed,true,false,true
+AP007101,10 Dec 22,10,Caulfield Rec,Carmelite,No. 3,Miguel Sison,Max Fergie,Max Fergie,0-8,0,8,0,1,Completed,true,false,false
+AP007101,10 Dec 22,10,Caulfield Rec,Carmelite,No. 4,Lachie Mathieson,Harrison Hughes,Harrison Hughes,0-8,0,8,0,1,Completed,true,true,false
+AP007103,10 Dec 22,10,Elsternwick Park Blue,Coatesville,No. 1,Adam Neilands,Jonathon Bong,Adam Neilands,8-3,8,3,1,0,Completed,true,false,false
+AP007103,10 Dec 22,10,Elsternwick Park Blue,Coatesville,No. 2,Alex Pun,George Verakis,George Verakis,4-8,4,8,0,1,Completed,true,false,false
+AP007103,10 Dec 22,10,Elsternwick Park Blue,Coatesville,No. 3,Brad Fenech,Gabriel Basman,Brad Fenech,8-4,8,4,1,0,Completed,true,false,false
+AP007103,10 Dec 22,10,Elsternwick Park Blue,Coatesville,No. 4,Ben Wijay,Charlie Garcia,Ben Wijay,8-2,8,2,1,0,Completed,true,false,false
+AP007104,10 Dec 22,10,Ormond,Caulfield Park Red,No. 1,Ben Darrou,Gerard Kemp,Ben Darrou,8-4,8,4,1,0,Completed,true,false,false
+AP007104,10 Dec 22,10,Ormond,Caulfield Park Red,No. 2,Kenny Ong,Dennis Petrie,Kenny Ong,8-1,8,1,1,0,Completed,true,true,false
+AP007104,10 Dec 22,10,Ormond,Caulfield Park Red,No. 3,Steve Gelagin,Dominique Kemp,Steve Gelagin,8-4,8,4,1,0,Completed,true,false,false
+AP007104,10 Dec 22,10,Ormond,Caulfield Park Red,No. 4,Chris Gogoll,Cassandra Ballard,Chris Gogoll,8-1,8,1,1,0,Completed,true,false,false
+AP007111,04 Feb 23,11,Carmelite,Ormond,No. 1,Josh Kempin,Nathan McCracken,Nathan McCracken,6-8,6,8,0,1,Completed,true,false,false
+AP007111,04 Feb 23,11,Carmelite,Ormond,No. 2,Ryan Sweeney,Steve Gelagin,Steve Gelagin,1-8,1,8,0,1,Completed,true,false,false
+AP007111,04 Feb 23,11,Carmelite,Ormond,No. 3,Angus Leckey,Andrew Lipson,Andrew Lipson,0-8,0,8,0,1,Completed,true,false,false
+AP007111,04 Feb 23,11,Carmelite,Ormond,No. 4,Harrison Hughes,Chris Gogoll,Chris Gogoll,1-8,1,8,0,1,Completed,true,false,false
+AP007113,04 Feb 23,11,Coatesville,St Anthony's Blue,No. 1,Daniel Gershenzen,Chris Gain,Chris Gain,5-8,5,8,0,1,Completed,true,false,false
+AP007113,04 Feb 23,11,Coatesville,St Anthony's Blue,No. 2,Jonathon Bong,Brendan Sitters,Jonathon Bong,8-4,8,4,1,0,Completed,true,false,false
+AP007113,04 Feb 23,11,Coatesville,St Anthony's Blue,No. 3,George Verakis,Vincent Macassa,George Verakis,8-0,8,0,1,0,Completed,true,false,false
+AP007113,04 Feb 23,11,Coatesville,St Anthony's Blue,No. 4,Charlie Garcia,Cam Wilkinson,Cam Wilkinson,6-8,6,8,0,1,Completed,true,false,false
+AP007114,04 Feb 23,11,Caulfield Park Red,Elsternwick Park Blue,No. 1,Gerard Kemp,Ben Nguyen,Ben Nguyen,7-8,7,8,0,1,Completed,true,false,false
+AP007114,04 Feb 23,11,Caulfield Park Red,Elsternwick Park Blue,No. 2,Rossatorn Aksharanugraha,Shannon Keough,Shannon Keough,3-8,3,8,0,1,Completed,true,true,false
+AP007114,04 Feb 23,11,Caulfield Park Red,Elsternwick Park Blue,No. 3,Dennis Petrie,Matt Anstee,Dennis Petrie,8-5,8,5,1,0,Completed,true,false,false
+AP007114,04 Feb 23,11,Caulfield Park Red,Elsternwick Park Blue,No. 4,Dominique Kemp,Dror Collins,Dror Collins,1-8,1,8,0,1,Completed,true,false,false
+AP007122,11 Feb 23,12,Caulfield Rec,St Anthony's Blue,No. 1,Chris Liolios,Joseph Obsioma,Chris Liolios,8-7,8,7,1,0,Completed,true,true,false
+AP007122,11 Feb 23,12,Caulfield Rec,St Anthony's Blue,No. 2,Tarun Soni,Chris Gain,Chris Gain,0-8,0,8,0,1,Completed,true,false,false
+AP007122,11 Feb 23,12,Caulfield Rec,St Anthony's Blue,No. 3,Alistair Dimmock,Brendan Sitters,Brendan Sitters,3-8,3,8,0,1,Completed,true,true,false
+AP007122,11 Feb 23,12,Caulfield Rec,St Anthony's Blue,No. 4,Miguel Sison,Cam Wilkinson,Cam Wilkinson,0-8,0,8,0,1,Completed,true,false,false
+AP007123,11 Feb 23,12,Elsternwick Park Blue,Ormond,No. 1,Adam Neilands,Nathan McCracken,Nathan McCracken,6-8,6,8,0,1,Completed,true,false,false
+AP007123,11 Feb 23,12,Elsternwick Park Blue,Ormond,No. 2,Brad Fenech,Ben Darrou,Brad Fenech,8-7,8,7,1,0,Completed,true,false,false
+AP007123,11 Feb 23,12,Elsternwick Park Blue,Ormond,No. 3,Matt Anstee,Andrew Lipson,Matt Anstee,8-6,8,6,1,0,Completed,true,false,false
+AP007123,11 Feb 23,12,Elsternwick Park Blue,Ormond,No. 4,Ben Wijay,Chris Gogoll,Chris Gogoll,4-8,4,8,0,1,Completed,true,false,false
+AP007133,18 Feb 23,13,Ormond,Caulfield Rec,No. 1,Nathan McCracken,Josh Dosser,Nathan McCracken,8-7,8,7,1,0,Completed,true,false,false
+AP007133,18 Feb 23,13,Ormond,Caulfield Rec,No. 2,Andrew Lipson,[Unnamed emergency — TROLS AP007133 away code 2],Andrew Lipson,8-0,8,0,1,0,Completed,false,false,true
+AP007133,18 Feb 23,13,Ormond,Caulfield Rec,No. 3,Simon Currey,Tarun Soni,Simon Currey,8-2,8,2,1,0,Completed,true,false,false
+AP007133,18 Feb 23,13,Ormond,Caulfield Rec,No. 4,Mason Campbell,Miguel Sison,Mason Campbell,8-7,8,7,1,0,Completed,true,true,false
+AP007134,18 Feb 23,13,St Anthony's Blue,Elsternwick Park Blue,No. 1,Joseph Obsioma,Ben Nguyen,Ben Nguyen,1-8,1,8,0,1,Completed,true,false,false
+AP007134,18 Feb 23,13,St Anthony's Blue,Elsternwick Park Blue,No. 2,Chris Gain,Alex Pun,Alex Pun,7-8,7,8,0,1,Completed,true,false,false
+AP007134,18 Feb 23,13,St Anthony's Blue,Elsternwick Park Blue,No. 3,Vincent Macassa,Brad Fenech,Brad Fenech,1-8,1,8,0,1,Completed,true,false,false
+AP007134,18 Feb 23,13,St Anthony's Blue,Elsternwick Park Blue,No. 4,Cam Wilkinson,Ben Wijay,Ben Wijay,1-8,1,8,0,1,Completed,true,false,false
+AP007141,25 Feb 23,14,Coatesville,Carmelite,No. 1,Daniel Gershenzen,Josh Kempin,Josh Kempin,2-8,2,8,0,1,Completed,true,false,false
+AP007141,25 Feb 23,14,Coatesville,Carmelite,No. 2,George Verakis,Ryan Sweeney,George Verakis,8-7,8,7,1,0,Completed,true,false,false
+AP007141,25 Feb 23,14,Coatesville,Carmelite,No. 3,Jack Langdon,Angus Leckey,Jack Langdon,8-6,8,6,1,0,Completed,true,false,false
+AP007141,25 Feb 23,14,Coatesville,Carmelite,No. 4,Charlie Garcia,Vladimir Spencer,Vladimir Spencer,4-8,4,8,0,1,Completed,true,false,false
+AP007143,25 Feb 23,14,Ormond,St Anthony's Blue,No. 1,Ben Darrou,Chris Gain,Ben Darrou,8-6,8,6,1,0,Completed,true,false,false
+AP007143,25 Feb 23,14,Ormond,St Anthony's Blue,No. 2,Kenny Ong,Brendan Sitters,Kenny Ong,8-1,8,1,1,0,Completed,true,true,false
+AP007143,25 Feb 23,14,Ormond,St Anthony's Blue,No. 3,Andrew Lipson,Vincent Macassa,Andrew Lipson,8-0,8,0,1,0,Completed,true,false,false
+AP007143,25 Feb 23,14,Ormond,St Anthony's Blue,No. 4,Simon Currey,Cam Wilkinson,Cam Wilkinson,4-8,4,8,0,1,Completed,true,false,false
+AP007144,25 Feb 23,14,Elsternwick Park Blue,Caulfield Rec,No. 1,Alex Pun,Chris Liolios,Alex Pun,8-3,8,3,1,0,Completed,true,false,true
+AP007144,25 Feb 23,14,Elsternwick Park Blue,Caulfield Rec,No. 2,Dror Collins,Lauren Yarrow,Dror Collins,8-0,8,0,1,0,Completed,true,false,false
+AP007144,25 Feb 23,14,Elsternwick Park Blue,Caulfield Rec,No. 3,Viranga Senadipathy,Miguel Sison,Viranga Senadipathy,8-1,8,1,1,0,Completed,true,false,false
+AP007144,25 Feb 23,14,Elsternwick Park Blue,Caulfield Rec,No. 4,Joe Barr,Jessie Wilson,Joe Barr,8-1,8,1,1,0,Completed,true,false,true
+AP007301,,16,Ormond,Carmelite,No. 1,Nathan McCracken,Josh Kempin,Nathan McCracken,8-4,8,4,1,0,Completed,true,false,false
+AP007301,,16,Ormond,Carmelite,No. 2,Ben Darrou,Ryan Sweeney,Ben Darrou,8-6,8,6,1,0,Completed,true,false,false
+AP007301,,16,Ormond,Carmelite,No. 3,Andrew Lipson,Angus Leckey,Andrew Lipson,8-0,8,0,1,0,Completed,true,false,false
+AP007301,,16,Ormond,Carmelite,No. 4,Chris Gogoll,Joshua McKenzie,Chris Gogoll,8-0,8,0,1,0,Completed,true,false,false
+AP007302,,16,Elsternwick Park Blue,Coatesville,No. 1,Ben Nguyen,Jonathon Bong,Ben Nguyen,8-2,8,2,1,0,Completed,true,false,false
+AP007302,,16,Elsternwick Park Blue,Coatesville,No. 2,Shannon Keough,Jack Langdon,Shannon Keough,8-3,8,3,1,0,Completed,true,false,false
+AP007302,,16,Elsternwick Park Blue,Coatesville,No. 3,Adam Neilands,Daniel Gershenzen,Daniel Gershenzen,3-8,3,8,0,1,Completed,true,false,false
+AP007302,,16,Elsternwick Park Blue,Coatesville,No. 4,Brad Fenech,Gabriel Basman,Gabriel Basman,4-8,4,8,0,1,Completed,true,false,false
+AP007321,,17,Ormond,Elsternwick Park Blue,No. 1,Nathan McCracken,Ben Nguyen,Ben Nguyen,3-8,3,8,0,1,Completed,true,false,false
+AP007321,,17,Ormond,Elsternwick Park Blue,No. 2,Ben Darrou,Shannon Keough,Shannon Keough,2-8,2,8,0,1,Completed,true,false,false
+AP007321,,17,Ormond,Elsternwick Park Blue,No. 3,Andrew Lipson,Adam Neilands,Andrew Lipson,8-7,8,7,1,0,Completed,true,false,false
+AP007321,,17,Ormond,Elsternwick Park Blue,No. 4,Chris Gogoll,Brad Fenech,Chris Gogoll,8-7,8,7,1,0,Completed,true,false,false

@@ -1,0 +1,165 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP036012,02 Oct 10,1,Melbourne Univ,Caulfield Rec,No. 1,Alex Bartle-Smith,Anurag Vijay,Alex Bartle-Smith,8-5,8,5,1,0,Completed,true,false,false
+AP036012,02 Oct 10,1,Melbourne Univ,Caulfield Rec,No. 2,Navin Gunasagran,Tanu Bhaskar,Navin Gunasagran,9-7,9,7,1,0,Completed,true,false,false
+AP036012,02 Oct 10,1,Melbourne Univ,Caulfield Rec,No. 3,Raymond Lumantarna,Michael Patti,Raymond Lumantarna,8-4,8,4,1,0,Completed,true,false,false
+AP036012,02 Oct 10,1,Melbourne Univ,Caulfield Rec,No. 4,Marvin Ng,Fransisco Sison,Marvin Ng,8-1,8,1,1,0,Completed,true,false,false
+AP036013,02 Oct 10,1,East Malvern,Carmelite,No. 1,Rion Casey,Elko Haas,Elko Haas,1-8,1,8,0,1,Completed,true,false,false
+AP036013,02 Oct 10,1,East Malvern,Carmelite,No. 2,Sam Zhao,Michael Junkovic,Michael Junkovic,0-8,0,8,0,1,Completed,true,false,false
+AP036013,02 Oct 10,1,East Malvern,Carmelite,No. 3,Paul Tamburro,James Trowsdale,James Trowsdale,5-8,5,8,0,1,Completed,true,false,false
+AP036013,02 Oct 10,1,East Malvern,Carmelite,No. 4,James Bland,Ted Murphy,James Bland,9-7,9,7,1,0,Completed,true,false,false
+AP036014,02 Oct 10,1,Beaumaris CC,Kings Park,No. 1,Sean MacPherson,Lyndon Krause,Sean MacPherson,8-6,8,6,1,0,Completed,true,false,false
+AP036014,02 Oct 10,1,Beaumaris CC,Kings Park,No. 2,Daniel Wotherspoon,Callum Campbell,Callum Campbell,5-8,5,8,0,1,Completed,true,false,false
+AP036014,02 Oct 10,1,Beaumaris CC,Kings Park,No. 3,Angus Todd,John Kende,Angus Todd,8-5,8,5,1,0,Completed,true,false,false
+AP036014,02 Oct 10,1,Beaumaris CC,Kings Park,No. 4,Andrew Todd,Thomas Kowal,Thomas Kowal,1-8,1,8,0,1,Completed,true,false,false
+AP036022,09 Oct 10,2,Lauriston,Melbourne Univ,No. 1,David Newton,Alex Bartle-Smith,David Newton,8-2,8,2,1,0,Completed,true,false,false
+AP036022,09 Oct 10,2,Lauriston,Melbourne Univ,No. 2,Graeme Renfrey,Dean Wood,Graeme Renfrey,8-0,8,0,1,0,Completed,true,false,true
+AP036022,09 Oct 10,2,Lauriston,Melbourne Univ,No. 3,David Smith,Raymond Lumantarna,Raymond Lumantarna,6-8,6,8,0,1,Completed,true,false,false
+AP036022,09 Oct 10,2,Lauriston,Melbourne Univ,No. 4,Jean Isaacs,Berlin Lu,Berlin Lu,3-8,3,8,0,1,Completed,true,false,false
+AP036023,09 Oct 10,2,Caulfield Rec,East Malvern,No. 1,Adam Klas,Hugo Mylecharane,Hugo Mylecharane,7-9,7,9,0,1,Completed,true,false,false
+AP036023,09 Oct 10,2,Caulfield Rec,East Malvern,No. 2,Tanu Bhaskar,Rion Casey,Tanu Bhaskar,8-4,8,4,1,0,Completed,true,false,false
+AP036023,09 Oct 10,2,Caulfield Rec,East Malvern,No. 3,Matthew Adams,Sam Zhao,Matthew Adams,8-3,8,3,1,0,Completed,true,false,false
+AP036023,09 Oct 10,2,Caulfield Rec,East Malvern,No. 4,Matt Brown,Paul Tamburro,Paul Tamburro,0-8,0,8,0,1,Completed,true,false,false
+AP036024,09 Oct 10,2,Carmelite,Beaumaris CC,No. 1,Elko Haas,Jordan Caligiore,Elko Haas,8-2,8,2,1,0,Completed,true,false,false
+AP036024,09 Oct 10,2,Carmelite,Beaumaris CC,No. 2,Michael Junkovic,Daniel Wotherspoon,Michael Junkovic,8-4,8,4,1,0,Completed,true,false,false
+AP036024,09 Oct 10,2,Carmelite,Beaumaris CC,No. 3,Alex Toohey,Angus Todd,Alex Toohey,8-5,8,5,1,0,Completed,true,false,false
+AP036024,09 Oct 10,2,Carmelite,Beaumaris CC,No. 4,Matt Nicol,Andrew Todd,Matt Nicol,8-3,8,3,1,0,Completed,true,false,false
+AP036032,16 Oct 10,3,Melbourne Univ,Kings Park,No. 1,Alex Bartle-Smith,Hayden Broadbent,Alex Bartle-Smith,8-4,8,4,1,0,Completed,true,false,false
+AP036032,16 Oct 10,3,Melbourne Univ,Kings Park,No. 2,Dean Wood,Callum Campbell,Dean Wood,8-6,8,6,1,0,Completed,true,false,false
+AP036032,16 Oct 10,3,Melbourne Univ,Kings Park,No. 3,Taner Kucukyuruk,John Kende,,3-3,3,3,0,0,Unfinished,false,false,false
+AP036032,16 Oct 10,3,Melbourne Univ,Kings Park,No. 4,Berlin Lu,Thomas Kowal,,2-0,2,0,1,0,Unfinished,false,false,false
+AP036033,16 Oct 10,3,East Malvern,Lauriston,No. 1,Hugo Mylecharane,David Newton,Hugo Mylecharane,9-8,9,8,1,0,Completed,true,false,false
+AP036033,16 Oct 10,3,East Malvern,Lauriston,No. 2,Rion Casey,Graeme Renfrey,Rion Casey,8-6,8,6,1,0,Completed,true,false,false
+AP036033,16 Oct 10,3,East Malvern,Lauriston,No. 3,Josh Buxton,David Smith,David Smith,1-8,1,8,0,1,Completed,true,false,false
+AP036033,16 Oct 10,3,East Malvern,Lauriston,No. 4,Paul Tamburro,Jean Isaacs,Paul Tamburro,8-3,8,3,1,0,Completed,true,false,false
+AP036034,16 Oct 10,3,Beaumaris CC,Caulfield Rec,No. 1,Sean MacPherson,Anurag Vijay,Anurag Vijay,8-9,8,9,0,1,Completed,true,false,false
+AP036034,16 Oct 10,3,Beaumaris CC,Caulfield Rec,No. 2,Daniel Wotherspoon,Tanu Bhaskar,Daniel Wotherspoon,8-1,8,1,1,0,Completed,true,false,false
+AP036034,16 Oct 10,3,Beaumaris CC,Caulfield Rec,No. 3,Jordan Caligiore,Matthew Adams,Matthew Adams,6-8,6,8,0,1,Completed,true,false,false
+AP036034,16 Oct 10,3,Beaumaris CC,Caulfield Rec,No. 4,Jack Broadbent,Michael Patti,Michael Patti,0-8,0,8,0,1,Completed,true,false,false
+AP036042,23 Oct 10,4,Carmelite,Melbourne Univ,No. 1,Elko Haas,Alex Bartle-Smith,Elko Haas,8-2,8,2,1,0,Completed,true,false,false
+AP036042,23 Oct 10,4,Carmelite,Melbourne Univ,No. 2,Michael Junkovic,Dean Wood,Michael Junkovic,8-0,8,0,1,0,Completed,true,false,false
+AP036042,23 Oct 10,4,Carmelite,Melbourne Univ,No. 3,Alex Toohey,Raymond Lumantarna,Alex Toohey,8-5,8,5,1,0,Completed,true,false,false
+AP036042,23 Oct 10,4,Carmelite,Melbourne Univ,No. 4,Matt Nicol,Matthew Robertson,Matt Nicol,8-5,8,5,1,0,Completed,true,false,false
+AP036043,23 Oct 10,4,Kings Park,East Malvern,No. 1,Nathan Broadbent,Hugo Mylecharane,Nathan Broadbent,9-7,9,7,1,0,Completed,true,false,false
+AP036043,23 Oct 10,4,Kings Park,East Malvern,No. 2,Lyndon Krause,Rion Casey,Rion Casey,4-8,4,8,0,1,Completed,true,false,false
+AP036043,23 Oct 10,4,Kings Park,East Malvern,No. 3,John Kende,Sam Zhao,John Kende,8-0,8,0,1,0,Completed,true,false,false
+AP036043,23 Oct 10,4,Kings Park,East Malvern,No. 4,Tom Hungerford,Paul Tamburro,Paul Tamburro,4-8,4,8,0,1,Completed,true,false,false
+AP036044,23 Oct 10,4,Lauriston,Beaumaris CC,No. 1,Phil Murphy,Sean MacPherson,Phil Murphy,8-1,8,1,1,0,Completed,true,false,false
+AP036044,23 Oct 10,4,Lauriston,Beaumaris CC,No. 2,David Newton,Jordan Caligiore,David Newton,8-5,8,5,1,0,Completed,true,false,false
+AP036044,23 Oct 10,4,Lauriston,Beaumaris CC,No. 3,Graeme Renfrey,Angus Todd,Graeme Renfrey,8-6,8,6,1,0,Completed,true,false,false
+AP036044,23 Oct 10,4,Lauriston,Beaumaris CC,No. 4,David Smith,Jack Broadbent,David Smith,8-1,8,1,1,0,Completed,true,false,false
+AP036051,06 Nov 10,5,East Malvern,Beaumaris CC,No. 1,Hugo Mylecharane,Sean MacPherson,Hugo Mylecharane,8-3,8,3,1,0,Completed,true,false,false
+AP036051,06 Nov 10,5,East Malvern,Beaumaris CC,No. 2,Rion Casey,Jordan Caligiore,Rion Casey,8-3,8,3,1,0,Completed,true,false,false
+AP036051,06 Nov 10,5,East Malvern,Beaumaris CC,No. 3,Sam Zhao,Andrew Todd,Sam Zhao,8-2,8,2,1,0,Completed,true,false,false
+AP036051,06 Nov 10,5,East Malvern,Beaumaris CC,No. 4,Paul Tamburro,Michael Todd,Paul Tamburro,8-0,8,0,1,0,Completed,true,false,false
+AP036052,06 Nov 10,5,Kings Park,Carmelite,No. 1,Hayden Broadbent,Elko Haas,Elko Haas,4-8,4,8,0,1,Completed,true,false,false
+AP036052,06 Nov 10,5,Kings Park,Carmelite,No. 2,Callum Campbell,Michael Junkovic,Michael Junkovic,0-8,0,8,0,1,Completed,true,false,false
+AP036052,06 Nov 10,5,Kings Park,Carmelite,No. 3,Lyndon Krause,Neil Mackie,Lyndon Krause,8-1,8,1,1,0,Completed,true,false,false
+AP036052,06 Nov 10,5,Kings Park,Carmelite,No. 4,John Kende,Ted Murphy,John Kende,8-5,8,5,1,0,Completed,true,false,false
+AP036053,06 Nov 10,5,Caulfield Rec,Lauriston,No. 1,Adam Klas,Phil Murphy,Phil Murphy,2-8,2,8,0,1,Completed,true,false,false
+AP036053,06 Nov 10,5,Caulfield Rec,Lauriston,No. 2,Tanu Bhaskar,David Newton,David Newton,3-8,3,8,0,1,Completed,true,false,false
+AP036053,06 Nov 10,5,Caulfield Rec,Lauriston,No. 3,Matthew Adams,David Smith,David Smith,1-8,1,8,0,1,Completed,true,false,false
+AP036053,06 Nov 10,5,Caulfield Rec,Lauriston,No. 4,Michael Patti,Jean Isaacs,Michael Patti,8-5,8,5,1,0,Completed,true,false,false
+AP036063,13 Nov 10,6,Carmelite,Caulfield Rec,No. 1,Elko Haas,Anurag Vijay,Elko Haas,8-0,8,0,1,0,Completed,true,false,false
+AP036063,13 Nov 10,6,Carmelite,Caulfield Rec,No. 2,Michael Junkovic,Adam Klas,Michael Junkovic,8-2,8,2,1,0,Completed,true,false,false
+AP036063,13 Nov 10,6,Carmelite,Caulfield Rec,No. 3,James Trowsdale,Michael Patti,James Trowsdale,8-1,8,1,1,0,Completed,true,false,false
+AP036063,13 Nov 10,6,Carmelite,Caulfield Rec,No. 4,Alex Toohey,Matt Brown,Alex Toohey,8-1,8,1,1,0,Completed,true,false,false
+AP036064,13 Nov 10,6,Lauriston,Kings Park,No. 1,Phil Murphy,Nathan Broadbent,Phil Murphy,8-0,8,0,1,0,Completed,true,false,false
+AP036064,13 Nov 10,6,Lauriston,Kings Park,No. 2,David Newton,Lyndon Krause,David Newton,8-6,8,6,1,0,Completed,true,false,false
+AP036064,13 Nov 10,6,Lauriston,Kings Park,No. 3,David Smith,Callum Campbell,,1-4,1,4,0,1,Unfinished,false,false,false
+AP036064,13 Nov 10,6,Lauriston,Kings Park,No. 4,Jean Isaacs,John Kende,John Kende,1-6,1,6,0,1,Completed,true,false,false
+AP036072,20 Nov 10,7,Melbourne Univ,Beaumaris CC,No. 1,Alex Bartle-Smith,Sean MacPherson,Alex Bartle-Smith,8-3,8,3,1,0,Completed,true,false,false
+AP036072,20 Nov 10,7,Melbourne Univ,Beaumaris CC,No. 2,Dean Wood,Jordan Caligiore,Dean Wood,8-4,8,4,1,0,Completed,true,false,false
+AP036072,20 Nov 10,7,Melbourne Univ,Beaumaris CC,No. 3,Matthew Robertson,Angus Todd,Angus Todd,3-8,3,8,0,1,Completed,true,false,false
+AP036072,20 Nov 10,7,Melbourne Univ,Beaumaris CC,No. 4,Berlin Lu,Andrew Todd,Andrew Todd,6-8,6,8,0,1,Completed,true,false,false
+AP036073,20 Nov 10,7,Kings Park,Caulfield Rec,No. 1,Hayden Broadbent,Adam Klas,Hayden Broadbent,8-6,8,6,1,0,Completed,true,false,false
+AP036073,20 Nov 10,7,Kings Park,Caulfield Rec,No. 2,Lyndon Krause,Tanu Bhaskar,Lyndon Krause,8-6,8,6,1,0,Completed,true,false,false
+AP036073,20 Nov 10,7,Kings Park,Caulfield Rec,No. 3,John Kende,Matthew Adams,Matthew Adams,4-8,4,8,0,1,Completed,true,false,false
+AP036073,20 Nov 10,7,Kings Park,Caulfield Rec,No. 4,Ben Lindsey,Matt Brown,Ben Lindsey,8-4,8,4,1,0,Completed,true,false,false
+AP036074,20 Nov 10,7,Carmelite,Lauriston,No. 1,Elko Haas,Michael Pritchard,Elko Haas,8-4,8,4,1,0,Completed,true,false,false
+AP036074,20 Nov 10,7,Carmelite,Lauriston,No. 2,Michael Junkovic,Graeme Renfrey,Michael Junkovic,8-0,8,0,1,0,Completed,true,false,false
+AP036074,20 Nov 10,7,Carmelite,Lauriston,No. 3,James Trowsdale,David Smith,James Trowsdale,8-6,8,6,1,0,Completed,true,false,false
+AP036074,20 Nov 10,7,Carmelite,Lauriston,No. 4,Alex Toohey,Jean Isaacs,Alex Toohey,8-3,8,3,1,0,Completed,true,false,false
+AP036092,04 Dec 10,9,Melbourne Univ,Lauriston,No. 1,Dean Wood,Michael Pritchard,Michael Pritchard,2-8,2,8,0,1,Completed,true,false,false
+AP036092,04 Dec 10,9,Melbourne Univ,Lauriston,No. 2,Raymond Lumantarna,Phil Murphy,Phil Murphy,3-8,3,8,0,1,Completed,true,false,false
+AP036092,04 Dec 10,9,Melbourne Univ,Lauriston,No. 3,Matthew Robertson,David Newton,David Newton,6-8,6,8,0,1,Completed,true,false,false
+AP036092,04 Dec 10,9,Melbourne Univ,Lauriston,No. 4,Berlin Lu,[Unnamed emergency — TROLS AP036092 away code 4],Berlin Lu,8-0,8,0,1,0,Completed,false,false,true
+AP036093,04 Dec 10,9,East Malvern,Caulfield Rec,No. 1,Hugo Mylecharane,Anurag Vijay,Anurag Vijay,7-9,7,9,0,1,Completed,true,false,false
+AP036093,04 Dec 10,9,East Malvern,Caulfield Rec,No. 2,Sam Zhao,Matthew Adams,Sam Zhao,8-5,8,5,1,0,Completed,true,false,false
+AP036093,04 Dec 10,9,East Malvern,Caulfield Rec,No. 3,Paul Tamburro,Michael Patti,Michael Patti,7-9,7,9,0,1,Completed,true,false,false
+AP036093,04 Dec 10,9,East Malvern,Caulfield Rec,No. 4,Fabien Zanchi,Matt Brown,Fabien Zanchi,8-4,8,4,1,0,Completed,true,false,false
+AP036094,04 Dec 10,9,Beaumaris CC,Carmelite,No. 1,Sean MacPherson,Elko Haas,Elko Haas,2-8,2,8,0,1,Completed,true,false,false
+AP036094,04 Dec 10,9,Beaumaris CC,Carmelite,No. 2,Angus Todd,Michael Junkovic,Michael Junkovic,2-8,2,8,0,1,Completed,true,false,false
+AP036094,04 Dec 10,9,Beaumaris CC,Carmelite,No. 3,Tim Edmonds,James Trowsdale,James Trowsdale,7-9,7,9,0,1,Completed,true,false,false
+AP036094,04 Dec 10,9,Beaumaris CC,Carmelite,No. 4,Andrew Todd,Alex Toohey,Alex Toohey,1-8,1,8,0,1,Completed,true,false,false
+AP036102,11 Dec 10,10,Kings Park,Melbourne Univ,No. 1,Lyndon Krause,Alex Bartle-Smith,Alex Bartle-Smith,8-9,8,9,0,1,Completed,true,false,false
+AP036102,11 Dec 10,10,Kings Park,Melbourne Univ,No. 2,John Kende,Dean Wood,Dean Wood,1-8,1,8,0,1,Completed,true,false,false
+AP036102,11 Dec 10,10,Kings Park,Melbourne Univ,No. 3,Lachlan Peters,Raymond Lumantarna,Raymond Lumantarna,6-8,6,8,0,1,Completed,true,false,false
+AP036102,11 Dec 10,10,Kings Park,Melbourne Univ,No. 4,Tom Hungerford,Taner Kucukyuruk,Taner Kucukyuruk,1-8,1,8,0,1,Completed,true,false,false
+AP036103,11 Dec 10,10,Lauriston,East Malvern,No. 1,David Newton,Hugo Mylecharane,David Newton,8-1,8,1,1,0,Completed,true,false,false
+AP036103,11 Dec 10,10,Lauriston,East Malvern,No. 2,David Smith,Rion Casey,David Smith,8-3,8,3,1,0,Completed,true,false,false
+AP036103,11 Dec 10,10,Lauriston,East Malvern,No. 3,Sean Giacometti,Sam Zhao,Sean Giacometti,8-0,8,0,1,0,Completed,true,false,false
+AP036103,11 Dec 10,10,Lauriston,East Malvern,No. 4,Scott Newton,Paul Tamburro,Scott Newton,8-5,8,5,1,0,Completed,true,false,false
+AP036104,11 Dec 10,10,Caulfield Rec,Beaumaris CC,No. 1,Anurag Vijay,Sean MacPherson,Sean MacPherson,7-9,7,9,0,1,Completed,true,false,false
+AP036104,11 Dec 10,10,Caulfield Rec,Beaumaris CC,No. 2,Adam Klas,Jordan Caligiore,Adam Klas,8-5,8,5,1,0,Completed,true,false,false
+AP036104,11 Dec 10,10,Caulfield Rec,Beaumaris CC,No. 3,Tanu Bhaskar,Angus Todd,Tanu Bhaskar,8-6,8,6,1,0,Completed,true,false,false
+AP036104,11 Dec 10,10,Caulfield Rec,Beaumaris CC,No. 4,Matthew Adams,Andrew Todd,Matthew Adams,8-1,8,1,1,0,Completed,true,false,false
+AP036112,05 Feb 11,11,Melbourne Univ,Carmelite,No. 1,Alex Bartle-Smith,Michael Baird,Michael Baird,4-8,4,8,0,1,Completed,true,false,false
+AP036112,05 Feb 11,11,Melbourne Univ,Carmelite,No. 2,Raymond Lumantarna,Elko Haas,Elko Haas,3-8,3,8,0,1,Completed,true,false,false
+AP036112,05 Feb 11,11,Melbourne Univ,Carmelite,No. 3,Matthew Robertson,James Trowsdale,James Trowsdale,2-8,2,8,0,1,Completed,true,false,false
+AP036112,05 Feb 11,11,Melbourne Univ,Carmelite,No. 4,Berlin Lu,Alex Toohey,Alex Toohey,6-8,6,8,0,1,Completed,true,false,false
+AP036114,05 Feb 11,11,Beaumaris CC,Lauriston,No. 1,Daniel Wotherspoon,Michael Pritchard,Daniel Wotherspoon,8-5,8,5,1,0,Completed,true,false,false
+AP036114,05 Feb 11,11,Beaumaris CC,Lauriston,No. 2,Jordan Caligiore,Phil Murphy,Phil Murphy,4-8,4,8,0,1,Completed,true,false,false
+AP036114,05 Feb 11,11,Beaumaris CC,Lauriston,No. 3,Angus Todd,David Newton,David Newton,2-8,2,8,0,1,Completed,true,false,false
+AP036114,05 Feb 11,11,Beaumaris CC,Lauriston,No. 4,Andrew Todd,Sean Giacometti,Sean Giacometti,0-8,0,8,0,1,Completed,true,false,false
+AP036121,12 Feb 11,12,Beaumaris CC,East Malvern,No. 1,Sean MacPherson,Rion Casey,Rion Casey,5-8,5,8,0,1,Completed,true,false,false
+AP036121,12 Feb 11,12,Beaumaris CC,East Malvern,No. 2,Daniel Wotherspoon,Sam Zhao,Daniel Wotherspoon,8-4,8,4,1,0,Completed,true,false,false
+AP036121,12 Feb 11,12,Beaumaris CC,East Malvern,No. 3,Jordan Caligiore,David Gilmore,David Gilmore,4-8,4,8,0,1,Completed,true,false,false
+AP036121,12 Feb 11,12,Beaumaris CC,East Malvern,No. 4,Angus Todd,Josh Weberruss,Angus Todd,8-1,8,1,1,0,Completed,true,false,false
+AP036122,12 Feb 11,12,Carmelite,Kings Park,No. 1,Elko Haas,Nathan Broadbent,Elko Haas,9-8,9,8,1,0,Completed,true,false,false
+AP036122,12 Feb 11,12,Carmelite,Kings Park,No. 2,Michael Junkovic,Hayden Broadbent,Michael Junkovic,8-1,8,1,1,0,Completed,true,false,false
+AP036122,12 Feb 11,12,Carmelite,Kings Park,No. 3,James Trowsdale,Lyndon Krause,James Trowsdale,8-3,8,3,1,0,Completed,true,false,false
+AP036122,12 Feb 11,12,Carmelite,Kings Park,No. 4,Alex Toohey,John Kende,Alex Toohey,8-6,8,6,1,0,Completed,true,false,false
+AP036123,12 Feb 11,12,Lauriston,Caulfield Rec,No. 1,Sean Giacometti,Anurag Vijay,Sean Giacometti,8-3,8,3,1,0,Completed,true,false,false
+AP036123,12 Feb 11,12,Lauriston,Caulfield Rec,No. 2,David Smith,Tanu Bhaskar,David Smith,8-4,8,4,1,0,Completed,true,false,false
+AP036123,12 Feb 11,12,Lauriston,Caulfield Rec,No. 3,Scott Newton,Michael Patti,Scott Newton,9-8,9,8,1,0,Completed,true,false,false
+AP036123,12 Feb 11,12,Lauriston,Caulfield Rec,No. 4,Jean Isaacs,Andrew Barry,Jean Isaacs,9-7,9,7,1,0,Completed,true,false,false
+AP036131,19 Feb 11,13,East Malvern,Melbourne Univ,No. 1,Hugo Mylecharane,Dean Wood,Hugo Mylecharane,8-2,8,2,1,0,Completed,true,false,false
+AP036131,19 Feb 11,13,East Malvern,Melbourne Univ,No. 2,Rion Casey,Raymond Lumantarna,Rion Casey,8-4,8,4,1,0,Completed,true,false,false
+AP036131,19 Feb 11,13,East Malvern,Melbourne Univ,No. 3,Sam Zhao,Sai Hiu Tse,Sai Hiu Tse,4-8,4,8,0,1,Completed,true,false,false
+AP036131,19 Feb 11,13,East Malvern,Melbourne Univ,No. 4,Paul Tamburro,Berlin Lu,Paul Tamburro,8-5,8,5,1,0,Completed,true,false,false
+AP036133,19 Feb 11,13,Caulfield Rec,Carmelite,No. 1,Anurag Vijay,Elko Haas,Anurag Vijay,8-6,8,6,1,0,Completed,true,false,false
+AP036133,19 Feb 11,13,Caulfield Rec,Carmelite,No. 2,Tanu Bhaskar,James Trowsdale,James Trowsdale,5-8,5,8,0,1,Completed,true,false,false
+AP036133,19 Feb 11,13,Caulfield Rec,Carmelite,No. 3,Matthew Adams,Alex Toohey,Alex Toohey,5-8,5,8,0,1,Completed,true,false,false
+AP036133,19 Feb 11,13,Caulfield Rec,Carmelite,No. 4,Michael Patti,Matt Nicol,Michael Patti,8-6,8,6,1,0,Completed,true,false,false
+AP036134,19 Feb 11,13,Kings Park,Lauriston,No. 1,Nathan Broadbent,David Newton,Nathan Broadbent,8-2,8,2,1,0,Completed,true,false,false
+AP036134,19 Feb 11,13,Kings Park,Lauriston,No. 2,Hayden Broadbent,Sean Giacometti,Sean Giacometti,5-8,5,8,0,1,Completed,true,false,false
+AP036134,19 Feb 11,13,Kings Park,Lauriston,No. 3,Lyndon Krause,David Smith,Lyndon Krause,9-8,9,8,1,0,Completed,true,false,false
+AP036134,19 Feb 11,13,Kings Park,Lauriston,No. 4,Callum Campbell,Scott Newton,Scott Newton,3-8,3,8,0,1,Completed,true,false,false
+AP036142,26 Feb 11,14,Beaumaris CC,Melbourne Univ,No. 1,Sean MacPherson,Alex Bartle-Smith,Alex Bartle-Smith,5-8,5,8,0,1,Completed,true,false,false
+AP036142,26 Feb 11,14,Beaumaris CC,Melbourne Univ,No. 2,Daniel Wotherspoon,Raymond Lumantarna,Daniel Wotherspoon,8-5,8,5,1,0,Completed,true,false,false
+AP036142,26 Feb 11,14,Beaumaris CC,Melbourne Univ,No. 3,Angus Todd,Sai Hiu Tse,Sai Hiu Tse,6-8,6,8,0,1,Completed,true,false,false
+AP036142,26 Feb 11,14,Beaumaris CC,Melbourne Univ,No. 4,Andrew Todd,Berlin Lu,Berlin Lu,6-8,6,8,0,1,Completed,true,false,false
+AP036143,26 Feb 11,14,Caulfield Rec,Kings Park,No. 1,Anurag Vijay,Nathan Broadbent,Nathan Broadbent,5-8,5,8,0,1,Completed,true,false,false
+AP036143,26 Feb 11,14,Caulfield Rec,Kings Park,No. 2,Tanu Bhaskar,Lyndon Krause,Tanu Bhaskar,8-6,8,6,1,0,Completed,true,false,false
+AP036143,26 Feb 11,14,Caulfield Rec,Kings Park,No. 3,Michael Patti,Callum Campbell,Michael Patti,8-5,8,5,1,0,Completed,true,false,false
+AP036143,26 Feb 11,14,Caulfield Rec,Kings Park,No. 4,Matt Brown,John Kende,John Kende,0-8,0,8,0,1,Completed,true,false,false
+AP036144,26 Feb 11,14,Lauriston,Carmelite,No. 1,Michael Pritchard,Michael Baird,Michael Baird,8-9,8,9,0,1,Completed,true,false,false
+AP036144,26 Feb 11,14,Lauriston,Carmelite,No. 2,Phil Murphy,Michael Junkovic,Michael Junkovic,4-8,4,8,0,1,Completed,true,false,false
+AP036144,26 Feb 11,14,Lauriston,Carmelite,No. 3,Graeme Renfrey,James Trowsdale,James Trowsdale,8-9,8,9,0,1,Completed,true,false,false
+AP036144,26 Feb 11,14,Lauriston,Carmelite,No. 4,Scott Newton,Alex Toohey,Scott Newton,8-3,8,3,1,0,Completed,true,false,false
+AP036301,,16,Carmelite,Lauriston,No. 1,Michael Baird,David Newton,Michael Baird,8-6,8,6,1,0,Completed,true,false,false
+AP036301,,16,Carmelite,Lauriston,No. 2,Michael Junkovic,Graeme Renfrey,Michael Junkovic,8-2,8,2,1,0,Completed,true,false,false
+AP036301,,16,Carmelite,Lauriston,No. 3,James Trowsdale,David Smith,David Smith,7-9,7,9,0,1,Completed,true,false,false
+AP036301,,16,Carmelite,Lauriston,No. 4,Alex Toohey,Scott Newton,Alex Toohey,8-4,8,4,1,0,Completed,true,false,false
+AP036302,,16,East Malvern,Melbourne Univ,No. 1,Rion Casey,Alex Bartle-Smith,Alex Bartle-Smith,8-9,8,9,0,1,Completed,true,false,false
+AP036302,,16,East Malvern,Melbourne Univ,No. 2,Sam Zhao,Dean Wood,Dean Wood,4-8,4,8,0,1,Completed,true,false,true
+AP036302,,16,East Malvern,Melbourne Univ,No. 3,Paul Tamburro,Matthew Robertson,Paul Tamburro,8-3,8,3,1,0,Completed,true,false,false
+AP036302,,16,East Malvern,Melbourne Univ,No. 4,James Bland,Berlin Lu,Berlin Lu,2-8,2,8,0,1,Completed,true,false,false
+AP036311,,16,Lauriston,Melbourne Univ,No. 1,Michael Pritchard,Alex Bartle-Smith,Michael Pritchard,8-3,8,3,1,0,Completed,true,false,false
+AP036311,,16,Lauriston,Melbourne Univ,No. 2,Phil Murphy,Dean Wood,Phil Murphy,8-4,8,4,1,0,Completed,true,false,false
+AP036311,,16,Lauriston,Melbourne Univ,No. 3,David Newton,Matthew Robertson,David Newton,8-2,8,2,1,0,Completed,true,false,false
+AP036311,,16,Lauriston,Melbourne Univ,No. 4,Sean Giacometti,Berlin Lu,Sean Giacometti,8-0,8,0,1,0,Completed,true,false,false
+AP036321,,17,Carmelite,Lauriston,No. 1,Michael Baird,Michael Pritchard,Michael Baird,8-1,8,1,1,0,Completed,true,false,false
+AP036321,,17,Carmelite,Lauriston,No. 2,Elko Haas,Phil Murphy,Phil Murphy,6-8,6,8,0,1,Completed,true,true,false
+AP036321,,17,Carmelite,Lauriston,No. 3,Michael Junkovic,David Newton,Michael Junkovic,8-0,8,0,1,0,Completed,true,false,false
+AP036321,,17,Carmelite,Lauriston,No. 4,James Trowsdale,Sean Giacometti,Sean Giacometti,0-8,0,8,0,1,Completed,true,false,true

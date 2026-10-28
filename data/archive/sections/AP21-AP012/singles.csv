@@ -1,0 +1,69 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP012021,08 May 10,2,Le Page,Melbourne Univ,No. 1,Tony Sofo,Ain Simpson,Tony Sofo,4-6 6-2 6-0,16,8,2,1,Completed,true,false,false
+AP012021,08 May 10,2,Le Page,Melbourne Univ,No. 2,Brian Govan,Alex Bartle-Smith,Brian Govan,6-3 6-2,12,5,2,0,Completed,true,false,false
+AP012021,08 May 10,2,Le Page,Melbourne Univ,No. 3,George Crebbin,Joseph McArdle,Joseph McArdle,1-6 3-6,4,12,0,2,Completed,true,false,false
+AP012022,08 May 10,2,Murrumbeena 1,Murrumbeena 2,No. 1,Dale Larkins,Ron Schweitzer,Dale Larkins,4-6 6-1 6-1,16,8,2,1,Completed,true,false,false
+AP012022,08 May 10,2,Murrumbeena 1,Murrumbeena 2,No. 2,Lance Davey,Zvi Schweitzer,Lance Davey,6-0 6-1,12,1,2,0,Completed,true,false,false
+AP012022,08 May 10,2,Murrumbeena 1,Murrumbeena 2,No. 3,Alister Dimmick,Luke Miller,Luke Miller,4-6 0-6,4,12,0,2,Completed,true,false,false
+AP012023,08 May 10,2,Ormond 1,Ormond 2,No. 1,Steve Bendel,Igor Vorsovski,Steve Bendel,6-1 6-2,12,3,2,0,Completed,true,false,false
+AP012023,08 May 10,2,Ormond 1,Ormond 2,No. 2,Thomas Abourizk,Paul Koltun,Thomas Abourizk,6-7 6-4 6-2,18,13,2,1,Completed,true,false,false
+AP012023,08 May 10,2,Ormond 1,Ormond 2,No. 3,Rick Mayers,Vlad Orda,Vlad Orda,3-6 4-6,7,12,0,2,Completed,true,false,false
+AP012041,22 May 10,4,Murrumbeena 1,Melbourne Univ,No. 1,Dale Larkins,Ain Simpson,Dale Larkins,3-6 6-2 6-4,15,12,2,1,Completed,true,false,false
+AP012041,22 May 10,4,Murrumbeena 1,Melbourne Univ,No. 2,Lance Davey,Alex Bartle-Smith,Lance Davey,6-3 6-2,12,5,2,0,Completed,true,false,false
+AP012041,22 May 10,4,Murrumbeena 1,Melbourne Univ,No. 3,Alister Dimmick,Joseph McArdle,Joseph McArdle,3-6 4-6,7,12,0,2,Completed,true,false,false
+AP012042,22 May 10,4,Ormond 1,Le Page,No. 1,Steve Bendel,Brian Govan,Steve Bendel,6-3 7-5,13,8,2,0,Completed,true,false,false
+AP012042,22 May 10,4,Ormond 1,Le Page,No. 2,Stefan Voorham,Tony Gatti,Stefan Voorham,6-1 6-1,12,2,2,0,Completed,true,false,false
+AP012042,22 May 10,4,Ormond 1,Le Page,No. 3,Bill Pollock,George Crebbin,Bill Pollock,6-1 6-1,12,2,2,0,Completed,true,false,false
+AP012043,22 May 10,4,Ormond 2,Murrumbeena 2,No. 1,Igor Vorsovski,Ron Schweitzer,Ron Schweitzer,4-6 2-6,6,12,0,2,Completed,true,false,false
+AP012043,22 May 10,4,Ormond 2,Murrumbeena 2,No. 2,Vlad Orda,Zvi Schweitzer,Vlad Orda,6-3 0-6 6-4,12,13,2,1,Completed,true,false,false
+AP012043,22 May 10,4,Ormond 2,Murrumbeena 2,No. 3,Eugene Mougerman,Luke Miller,Luke Miller,2-6 0-6,2,12,0,2,Completed,true,false,false
+AP012061,05 Jun 10,6,Ormond 1,Melbourne Univ,No. 1,Steve Bendel,Ain Simpson,Steve Bendel,6-4 6-4,12,8,2,0,Completed,true,false,false
+AP012061,05 Jun 10,6,Ormond 1,Melbourne Univ,No. 2,Thomas Abourizk,Alex Bartle-Smith,Thomas Abourizk,6-3 7-5,13,8,2,0,Completed,true,false,false
+AP012061,05 Jun 10,6,Ormond 1,Melbourne Univ,No. 3,Rick Mayers,Joseph McArdle,Joseph McArdle,1-6 0-6,1,12,0,2,Completed,true,false,false
+AP012062,05 Jun 10,6,Murrumbeena 1,Ormond 2,No. 1,Dale Larkins,Igor Vorsovski,,6-2 2-3,8,5,1,1,Unfinished,false,false,false
+AP012062,05 Jun 10,6,Murrumbeena 1,Ormond 2,No. 2,Lance Davey,Vlad Orda,Lance Davey,7-6 6-4,13,10,2,0,Completed,true,false,false
+AP012062,05 Jun 10,6,Murrumbeena 1,Ormond 2,No. 3,Guru Prasad,Eugene Mougerman,Eugene Mougerman,1-6 1-6,2,12,0,2,Completed,true,false,false
+AP012063,05 Jun 10,6,Le Page,Murrumbeena 2,No. 1,Tony Sofo,Ron Schweitzer,,3-2,3,2,1,0,Unfinished,false,false,false
+AP012063,05 Jun 10,6,Le Page,Murrumbeena 2,No. 2,Brian Govan,Zvi Schweitzer,,6-3 1-0,7,3,2,0,Unfinished,false,false,false
+AP012081,26 Jun 10,8,Ormond 2,Melbourne Univ,No. 1,Paul Koltun,Ain Simpson,Ain Simpson,3-6 2-6,5,12,0,2,Completed,true,false,false
+AP012081,26 Jun 10,8,Ormond 2,Melbourne Univ,No. 2,Igor Vorsovski,Alex Bartle-Smith,Igor Vorsovski,6-2 6-2,12,4,2,0,Completed,true,false,false
+AP012081,26 Jun 10,8,Ormond 2,Melbourne Univ,No. 3,Vlad Orda,Joseph McArdle,Vlad Orda,6-4 6-2,12,6,2,0,Completed,true,false,false
+AP012082,26 Jun 10,8,Ormond 1,Murrumbeena 2,No. 1,Stefan Voorham,Ron Schweitzer,Stefan Voorham,6-3 6-4,12,7,2,0,Completed,true,false,false
+AP012082,26 Jun 10,8,Ormond 1,Murrumbeena 2,No. 2,Thomas Abourizk,Luke Miller,Luke Miller,4-6 2-6,6,12,0,2,Completed,true,false,false
+AP012082,26 Jun 10,8,Ormond 1,Murrumbeena 2,No. 3,Alex Maxwell-Anderson,Brendan Jinks,Brendan Jinks,6-7 2-6,8,13,0,2,Completed,true,false,false
+AP012083,26 Jun 10,8,Murrumbeena 1,Le Page,No. 1,Dale Larkins,Brian Govan,Brian Govan,7-5 1-6 4-6,12,17,1,2,Completed,true,false,false
+AP012083,26 Jun 10,8,Murrumbeena 1,Le Page,No. 2,Alister Dimmick,Tony Gatti,Tony Gatti,3-6 1-6,4,12,0,2,Completed,true,false,false
+AP012083,26 Jun 10,8,Murrumbeena 1,Le Page,No. 3,Guru Prasad,George Crebbin,Guru Prasad,2-6 6-2 6-3,14,11,2,1,Completed,true,false,false
+AP012101,10 Jul 10,10,Murrumbeena 2,Melbourne Univ,No. 1,Ron Schweitzer,Ain Simpson,Ron Schweitzer,4-6 6-1 6-4,16,11,2,1,Completed,true,false,false
+AP012101,10 Jul 10,10,Murrumbeena 2,Melbourne Univ,No. 2,Zvi Schweitzer,Joseph McArdle,Joseph McArdle,4-6 6-2 3-6,13,14,1,2,Completed,true,false,false
+AP012101,10 Jul 10,10,Murrumbeena 2,Melbourne Univ,No. 3,Brendan Jinks,Abdul Omar,Abdul Omar,0-6 2-6,2,12,0,2,Completed,true,false,false
+AP012102,10 Jul 10,10,Ormond 1,Murrumbeena 1,No. 1,Steve Bendel,Dale Larkins,Dale Larkins,4-6 6-4 5-7,15,17,1,2,Completed,true,false,false
+AP012102,10 Jul 10,10,Ormond 1,Murrumbeena 1,No. 2,Stefan Voorham,Lance Davey,Stefan Voorham,6-2 6-0,12,2,2,0,Completed,true,false,false
+AP012102,10 Jul 10,10,Ormond 1,Murrumbeena 1,No. 3,Bill Pollock,Jared Thompson,Bill Pollock,6-1 6-0,12,1,2,0,Completed,true,false,false
+AP012103,10 Jul 10,10,Ormond 2,Le Page,No. 1,Igor Vorsovski,Tony Sofo,Tony Sofo,5-7 4-6,9,13,0,2,Completed,true,false,false
+AP012103,10 Jul 10,10,Ormond 2,Le Page,No. 2,Paul Koltun,Brian Govan,Brian Govan,6-4 3-6 0-6,9,16,1,2,Completed,true,false,false
+AP012103,10 Jul 10,10,Ormond 2,Le Page,No. 3,Vlad Orda,George Crebbin,Vlad Orda,6-0 6-0,12,0,2,0,Completed,true,false,false
+AP012121,24 Jul 10,12,Le Page,Melbourne Univ,No. 1,Tony Sofo,Ain Simpson,Tony Sofo,6-3 6-2,12,5,2,0,Completed,true,false,false
+AP012121,24 Jul 10,12,Le Page,Melbourne Univ,No. 2,Brian Govan,Alex Bartle-Smith,Brian Govan,7-5 6-2,13,7,2,0,Completed,true,false,false
+AP012121,24 Jul 10,12,Le Page,Melbourne Univ,No. 3,Tony Gatti,Joseph McArdle,Tony Gatti,6-2 6-4,12,6,2,0,Completed,true,false,false
+AP012122,24 Jul 10,12,Murrumbeena 1,Murrumbeena 2,No. 1,Dale Larkins,Ron Schweitzer,Dale Larkins,6-4 6-7 6-2,18,13,2,1,Completed,true,false,false
+AP012122,24 Jul 10,12,Murrumbeena 1,Murrumbeena 2,No. 2,Lance Davey,Luke Miller,Lance Davey,4-6 6-4 6-3,16,13,2,1,Completed,true,false,false
+AP012122,24 Jul 10,12,Murrumbeena 1,Murrumbeena 2,No. 3,Alister Dimmick,Zvi Schweitzer,Zvi Schweitzer,4-6 3-6,7,12,0,2,Completed,true,false,false
+AP012123,24 Jul 10,12,Ormond 1,Ormond 2,No. 1,Stefan Voorham,Igor Vorsovski,Igor Vorsovski,4-6 7-5 3-6,14,17,1,2,Completed,true,false,false
+AP012123,24 Jul 10,12,Ormond 1,Ormond 2,No. 2,Bill Pollock,Paul Koltun,Bill Pollock,6-3 7-6,13,9,2,0,Completed,true,false,false
+AP012123,24 Jul 10,12,Ormond 1,Ormond 2,No. 3,Rick Mayers,Vlad Orda,Vlad Orda,5-7 6-1 4-6,15,14,1,2,Completed,true,false,false
+AP012141,07 Aug 10,14,Murrumbeena 1,Melbourne Univ,No. 1,Dale Larkins,Ain Simpson,Dale Larkins,6-1 4-6 7-6,17,13,2,1,Completed,true,false,false
+AP012141,07 Aug 10,14,Murrumbeena 1,Melbourne Univ,No. 2,Lance Davey,Alex Bartle-Smith,Alex Bartle-Smith,0-6 2-6,2,12,0,2,Completed,true,false,false
+AP012141,07 Aug 10,14,Murrumbeena 1,Melbourne Univ,No. 3,Alister Dimmick,Abdul Omar,Abdul Omar,4-6 1-6,5,12,0,2,Completed,true,false,false
+AP012142,07 Aug 10,14,Ormond 1,Le Page,No. 1,Stefan Voorham,Tony Sofo,Stefan Voorham,5-7 6-4 6-4,17,15,2,1,Completed,true,false,false
+AP012142,07 Aug 10,14,Ormond 1,Le Page,No. 2,Rick Mayers,Brian Govan,Brian Govan,1-6 0-6,1,12,0,2,Completed,true,false,false
+AP012142,07 Aug 10,14,Ormond 1,Le Page,No. 3,Alex Maxwell-Anderson,George Crebbin,Alex Maxwell-Anderson,6-0 6-1,12,1,2,0,Completed,true,false,false
+AP012143,07 Aug 10,14,Ormond 2,Murrumbeena 2,No. 1,Igor Vorsovski,Ron Schweitzer,Igor Vorsovski,6-4 6-0,12,4,2,0,Completed,true,false,false
+AP012143,07 Aug 10,14,Ormond 2,Murrumbeena 2,No. 2,Paul Koltun,Luke Miller,Luke Miller,1-6 1-6,2,12,0,2,Completed,true,false,false
+AP012143,07 Aug 10,14,Ormond 2,Murrumbeena 2,No. 3,Vlad Orda,Zvi Schweitzer,Vlad Orda,3-6 6-3 6-2,15,11,2,1,Completed,true,false,false
+AP012311,14 Aug 10,15,Murrumbeena 2,Murrumbeena 1,No. 1,Ron Schweitzer,Dale Larkins,Dale Larkins,4-6 6-3 5-7,15,16,1,2,Completed,true,false,false
+AP012311,14 Aug 10,15,Murrumbeena 2,Murrumbeena 1,No. 2,Luke Miller,Lance Davey,Luke Miller,6-4 7-5,13,9,2,0,Completed,true,false,false
+AP012311,14 Aug 10,15,Murrumbeena 2,Murrumbeena 1,No. 3,Zvi Schweitzer,Alister Dimmick,Zvi Schweitzer,6-4 6-0,12,4,2,0,Completed,true,false,false
+AP012321,,16,Ormond 1,Murrumbeena 2,No. 1,Steve Bendel,Ron Schweitzer,Steve Bendel,7-5 6-0,13,5,2,0,Completed,true,false,false
+AP012321,,16,Ormond 1,Murrumbeena 2,No. 2,Stefan Voorham,Luke Miller,Stefan Voorham,6-4 6-4,12,8,2,0,Completed,true,false,false
+AP012321,,16,Ormond 1,Murrumbeena 2,No. 3,Bill Pollock,Zvi Schweitzer,Zvi Schweitzer,7-5 2-6 5-7,14,18,1,2,Completed,true,false,false

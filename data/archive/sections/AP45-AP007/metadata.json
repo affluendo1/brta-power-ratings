@@ -1,0 +1,95 @@
+{
+  "asset_id": "AP45-AP007",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 22/23",
+  "season_id": "AP45",
+  "season_label": "Summer 22/23",
+  "source_section_code": "AP007",
+  "section_label": "Mens S/D 7",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Ormond",
+      "wins": 10,
+      "points": 99,
+      "percentage": 167.04,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "Elsternwick Park Blue",
+      "wins": 9,
+      "points": 87,
+      "percentage": 151.29,
+      "marker": "P"
+    },
+    {
+      "position": 3,
+      "team": "Coatesville",
+      "wins": 6,
+      "points": 72,
+      "percentage": 124.94,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Carmelite",
+      "wins": 6,
+      "points": 67,
+      "percentage": 119.63,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "St Anthony's Blue",
+      "wins": 4,
+      "points": 55,
+      "percentage": 97.61,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Caulfield Rec",
+      "wins": 2,
+      "points": 24,
+      "percentage": 50.66,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Caulfield Park Red",
+      "wins": 1,
+      "points": 16,
+      "percentage": 53.43,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP45-AP007",
+  "fixtures": 59,
+  "completed_fixtures": 39,
+  "draw_fixtures": 59,
+  "singles_rubbers": 156,
+  "doubles_rubbers": 78,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

@@ -1,0 +1,87 @@
+{
+  "asset_id": "AP31-AP002",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Winter 2015",
+  "season_id": "AP31",
+  "season_label": "Winter 2015",
+  "source_section_code": "AP002",
+  "section_label": "Ladies 10 Game set 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Port Melbourne",
+      "wins": 11,
+      "points": 90,
+      "percentage": 175.19,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Clarinda",
+      "wins": 10,
+      "points": 80,
+      "percentage": 124.2,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Hawthorn",
+      "wins": 6,
+      "points": 59,
+      "percentage": 98.66,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Maccabi",
+      "wins": 6,
+      "points": 55,
+      "percentage": 82.89,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Ormond",
+      "wins": 3,
+      "points": 38,
+      "percentage": 85.53,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "St Pats Mentone",
+      "wins": 4,
+      "points": 38,
+      "percentage": 70.46,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 1,
+    "doublesTarget": 10,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP31-AP002",
+  "fixtures": 47,
+  "completed_fixtures": 42,
+  "draw_fixtures": 46,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 168,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

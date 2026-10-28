@@ -1,0 +1,91 @@
+{
+  "asset_id": "AP22-AP021",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 10/11",
+  "season_id": "AP22",
+  "season_label": "Summer 10/11",
+  "source_section_code": "AP021",
+  "section_label": "Mixed Rubbers A",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "BLTC",
+      "wins": 0,
+      "points": 89,
+      "percentage": 165.84,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Hawthorn",
+      "wins": 0,
+      "points": 71.5,
+      "percentage": 114.61,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Mordialloc",
+      "wins": 0,
+      "points": 61,
+      "percentage": 97.93,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Lauriston",
+      "wins": 0,
+      "points": 53.5,
+      "percentage": 94.49,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Frankston East",
+      "wins": 0,
+      "points": 49,
+      "percentage": 86.43,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Oakleigh",
+      "wins": 0,
+      "points": 36,
+      "percentage": 67.78,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP22-AP021",
+  "fixtures": 47,
+  "completed_fixtures": 37,
+  "draw_fixtures": 46,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 144,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP021061 doubles No. 2: '2-3'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP021062 doubles No. 2: '4-6 1-3'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP021321 doubles No. 3: '7-5 2-1'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

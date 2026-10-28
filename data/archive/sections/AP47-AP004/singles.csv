@@ -1,0 +1,153 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP004012,07 Oct 23,1,Hurlingham Park,Maccabi,No. 1,Anton Van Heerdan,Jonny Henquin,Anton Van Heerdan,8-0,8,0,1,0,Completed,true,false,false
+AP004012,07 Oct 23,1,Hurlingham Park,Maccabi,No. 2,Alexander Hatziladas,Marcus Frajman,Alexander Hatziladas,8-5,8,5,1,0,Completed,true,false,false
+AP004012,07 Oct 23,1,Hurlingham Park,Maccabi,No. 3,Alan Liebowitz,Ryan Behr,Ryan Behr,7-8,7,8,0,1,Completed,true,false,false
+AP004012,07 Oct 23,1,Hurlingham Park,Maccabi,No. 4,Taro Kanazawa,Lachie Zuker,Taro Kanazawa,8-1,8,1,1,0,Completed,true,false,false
+AP004013,07 Oct 23,1,Le Page,BLTC,No. 1,Mark Petkoff,Nicholas Higgins,Mark Petkoff,8-1,8,1,1,0,Completed,true,false,false
+AP004013,07 Oct 23,1,Le Page,BLTC,No. 2,Nicholas Collins,Ilai Manor,Ilai Manor,5-8,5,8,0,1,Completed,true,false,false
+AP004013,07 Oct 23,1,Le Page,BLTC,No. 3,Julius Schulze,Ingo Bahlken,Julius Schulze,8-5,8,5,1,0,Completed,true,false,false
+AP004013,07 Oct 23,1,Le Page,BLTC,No. 4,Jake Daniels,Jeremy Mitchell,Jake Daniels,8-4,8,4,1,0,Completed,true,true,false
+AP004014,07 Oct 23,1,Kooyong,Mentone,No. 1,Matthew Lincoln,Jordan Dean,Matthew Lincoln,8-1,8,1,1,0,Completed,true,false,false
+AP004014,07 Oct 23,1,Kooyong,Mentone,No. 2,Jordan Swire,Paul Huynh,Jordan Swire,8-1,8,1,1,0,Completed,true,false,false
+AP004014,07 Oct 23,1,Kooyong,Mentone,No. 3,Adam Klein,Jack Dooley,Jack Dooley,0-8,0,8,0,1,Completed,true,false,false
+AP004014,07 Oct 23,1,Kooyong,Mentone,No. 4,Joel Bassat,Ivan Payung,Ivan Payung,1-8,1,8,0,1,Completed,true,true,false
+AP004021,14 Oct 23,2,Mentone,Ardrie Park,No. 1,Paul Huynh,Tom Miller,Tom Miller,0-8,0,8,0,1,Completed,true,false,false
+AP004021,14 Oct 23,2,Mentone,Ardrie Park,No. 2,Jack Dooley,Will Nolan,Will Nolan,4-8,4,8,0,1,Completed,true,false,false
+AP004021,14 Oct 23,2,Mentone,Ardrie Park,No. 3,Alex Cameron,Sam Cohen,Alex Cameron,8-4,8,4,1,0,Completed,true,false,false
+AP004021,14 Oct 23,2,Mentone,Ardrie Park,No. 4,Ivan Payung,Philip Cassou-Desus,Ivan Payung,8-6,8,6,1,0,Completed,true,false,false
+AP004023,14 Oct 23,2,Maccabi,Le Page,No. 1,Jan Tenenberg,Mark Petkoff,Jan Tenenberg,8-6,8,6,1,0,Completed,true,false,false
+AP004023,14 Oct 23,2,Maccabi,Le Page,No. 2,Marcus Frajman,Nicholas Collins,Marcus Frajman,8-5,8,5,1,0,Completed,true,false,false
+AP004023,14 Oct 23,2,Maccabi,Le Page,No. 3,Lachie Zuker,Diesel Reid,Lachie Zuker,8-5,8,5,1,0,Completed,true,false,false
+AP004023,14 Oct 23,2,Maccabi,Le Page,No. 4,Daniel Henquin,Jonathan Deriboklou,Daniel Henquin,8-6,8,6,1,0,Completed,true,true,false
+AP004024,14 Oct 23,2,BLTC,Kooyong,No. 1,Yile Li,Matthew Lincoln,Matthew Lincoln,3-8,3,8,0,1,Completed,true,false,false
+AP004024,14 Oct 23,2,BLTC,Kooyong,No. 2,Nicholas Higgins,Jordan Swire,Jordan Swire,2-8,2,8,0,1,Completed,true,false,false
+AP004024,14 Oct 23,2,BLTC,Kooyong,No. 3,Adam Majdan,Adam Klein,Adam Klein,4-8,4,8,0,1,Completed,true,false,false
+AP004024,14 Oct 23,2,BLTC,Kooyong,No. 4,Ingo Bahlken,[Unnamed emergency — TROLS AP004024 away code 4],Ingo Bahlken,8-0,8,0,1,0,Completed,false,false,true
+AP004031,21 Oct 23,3,Ardrie Park,BLTC,No. 1,Tom Miller,Yile Li,Tom Miller,8-6,8,6,1,0,Completed,true,false,false
+AP004031,21 Oct 23,3,Ardrie Park,BLTC,No. 2,Tim Bayley,Ilai Manor,Tim Bayley,8-4,8,4,1,0,Completed,true,false,false
+AP004031,21 Oct 23,3,Ardrie Park,BLTC,No. 3,Will Nolan,Adam Majdan,Adam Majdan,3-8,3,8,0,1,Completed,true,false,false
+AP004031,21 Oct 23,3,Ardrie Park,BLTC,No. 4,Brandt Kakulas,Ingo Bahlken,Ingo Bahlken,2-8,2,8,0,1,Completed,true,false,false
+AP004032,21 Oct 23,3,Hurlingham Park,Mentone,No. 1,Anton Van Heerdan,Paul Huynh,Anton Van Heerdan,8-3,8,3,1,0,Completed,true,false,false
+AP004032,21 Oct 23,3,Hurlingham Park,Mentone,No. 2,Alexander Hatziladas,Robert Donat,Alexander Hatziladas,8-4,8,4,1,0,Completed,true,false,false
+AP004032,21 Oct 23,3,Hurlingham Park,Mentone,No. 3,Alan Liebowitz,Alex Cameron,Alan Liebowitz,8-3,8,3,1,0,Completed,true,false,false
+AP004032,21 Oct 23,3,Hurlingham Park,Mentone,No. 4,Amar Naik,Ivan Payung,Amar Naik,8-5,8,5,1,0,Completed,true,false,false
+AP004034,21 Oct 23,3,Kooyong,Maccabi,No. 1,Jordan Swire,Saul Muscatel,Jordan Swire,8-6,8,6,1,0,Completed,true,false,false
+AP004034,21 Oct 23,3,Kooyong,Maccabi,No. 2,Adam Klein,Jan Tenenberg,Jan Tenenberg,5-8,5,8,0,1,Completed,true,false,false
+AP004034,21 Oct 23,3,Kooyong,Maccabi,No. 3,Quentin Miller,Marcus Frajman,Marcus Frajman,1-8,1,8,0,1,Completed,true,false,false
+AP004034,21 Oct 23,3,Kooyong,Maccabi,No. 4,Hudson Levine,Ryan Behr,Ryan Behr,1-8,1,8,0,1,Completed,true,true,false
+AP004041,28 Oct 23,4,Maccabi,Ardrie Park,No. 1,Jonny Henquin,Tom Miller,Tom Miller,5-8,5,8,0,1,Completed,true,false,false
+AP004041,28 Oct 23,4,Maccabi,Ardrie Park,No. 2,Saul Muscatel,Will Nolan,Will Nolan,7-8,7,8,0,1,Completed,true,false,false
+AP004041,28 Oct 23,4,Maccabi,Ardrie Park,No. 3,Jan Tenenberg,Sam Cohen,Jan Tenenberg,8-5,8,5,1,0,Completed,true,false,false
+AP004041,28 Oct 23,4,Maccabi,Ardrie Park,No. 4,Lachie Zuker,Brandt Kakulas,Lachie Zuker,8-6,8,6,1,0,Completed,true,false,false
+AP004042,28 Oct 23,4,BLTC,Hurlingham Park,No. 1,Yile Li,Tony Schiavello,Yile Li,8-7,8,7,1,0,Completed,true,false,false
+AP004042,28 Oct 23,4,BLTC,Hurlingham Park,No. 2,Nicholas Higgins,Anton Van Heerdan,Anton Van Heerdan,3-8,3,8,0,1,Completed,true,false,false
+AP004042,28 Oct 23,4,BLTC,Hurlingham Park,No. 3,Adam Majdan,Alan Liebowitz,Adam Majdan,8-2,8,2,1,0,Completed,true,false,false
+AP004042,28 Oct 23,4,BLTC,Hurlingham Park,No. 4,Ingo Bahlken,Paul Absalom,Paul Absalom,1-8,1,8,0,1,Completed,true,false,true
+AP004043,28 Oct 23,4,Mentone,Le Page,No. 1,Jordan Dean,Mark Petkoff,Mark Petkoff,4-8,4,8,0,1,Completed,true,false,false
+AP004043,28 Oct 23,4,Mentone,Le Page,No. 2,Jack Dooley,Eyal Friedman,Eyal Friedman,4-8,4,8,0,1,Completed,true,false,false
+AP004043,28 Oct 23,4,Mentone,Le Page,No. 3,Robert Donat,Nicholas Collins,Nicholas Collins,7-8,7,8,0,1,Completed,true,false,false
+AP004043,28 Oct 23,4,Mentone,Le Page,No. 4,Alex Cameron,Julius Schulze,Alex Cameron,8-4,8,4,1,0,Completed,true,false,false
+AP004051,11 Nov 23,5,Le Page,Kooyong,No. 1,Nicholas Collins,Jordan Swire,Jordan Swire,4-8,4,8,0,1,Completed,true,false,false
+AP004051,11 Nov 23,5,Le Page,Kooyong,No. 2,Julius Schulze,Adam Klein,Adam Klein,0-8,0,8,0,1,Completed,true,false,false
+AP004051,11 Nov 23,5,Le Page,Kooyong,No. 3,Jake Daniels,Quentin Miller,Quentin Miller,4-8,4,8,0,1,Completed,true,true,false
+AP004051,11 Nov 23,5,Le Page,Kooyong,No. 4,Alan McIntyre,Yoni Lipshatz,Yoni Lipshatz,1-8,1,8,0,1,Completed,true,true,true
+AP004052,11 Nov 23,5,Mentone,BLTC,No. 1,Jordan Dean,Yile Li,Yile Li,5-8,5,8,0,1,Completed,true,false,false
+AP004052,11 Nov 23,5,Mentone,BLTC,No. 2,Jack Dooley,Ilai Manor,Ilai Manor,2-8,2,8,0,1,Completed,true,false,false
+AP004052,11 Nov 23,5,Mentone,BLTC,No. 3,Dan Wood,Adam Majdan,Adam Majdan,4-8,4,8,0,1,Completed,true,false,false
+AP004052,11 Nov 23,5,Mentone,BLTC,No. 4,Ivan Payung,Jeremy Mitchell,Ivan Payung,8-5,8,5,1,0,Completed,true,false,false
+AP004054,11 Nov 23,5,Ardrie Park,Hurlingham Park,No. 1,Tom Miller,Anton Van Heerdan,Tom Miller,8-1,8,1,1,0,Completed,true,false,false
+AP004054,11 Nov 23,5,Ardrie Park,Hurlingham Park,No. 2,Will Nolan,Alexander Hatziladas,Alexander Hatziladas,4-8,4,8,0,1,Completed,true,false,false
+AP004054,11 Nov 23,5,Ardrie Park,Hurlingham Park,No. 3,Sam Cohen,Alan Liebowitz,Alan Liebowitz,3-8,3,8,0,1,Completed,true,false,false
+AP004054,11 Nov 23,5,Ardrie Park,Hurlingham Park,No. 4,Philip Cassou-Desus,Steve Kovacs,Philip Cassou-Desus,8-2,8,2,1,0,Completed,true,false,false
+AP004061,18 Nov 23,6,Hurlingham Park,Le Page,No. 1,Tony Schiavello,Mark Petkoff,Mark Petkoff,7-8,7,8,0,1,Completed,true,false,false
+AP004061,18 Nov 23,6,Hurlingham Park,Le Page,No. 2,Anton Van Heerdan,Eyal Friedman,Anton Van Heerdan,8-5,8,5,1,0,Completed,true,false,false
+AP004061,18 Nov 23,6,Hurlingham Park,Le Page,No. 3,Alexander Hatziladas,Nicholas Collins,Alexander Hatziladas,8-1,8,1,1,0,Completed,true,false,false
+AP004061,18 Nov 23,6,Hurlingham Park,Le Page,No. 4,Paul Absalom,Jonathan Deriboklou,Paul Absalom,8-2,8,2,1,0,Completed,true,true,false
+AP004062,18 Nov 23,6,Kooyong,Ardrie Park,No. 1,Matthew Lincoln,Tom Miller,Tom Miller,6-8,6,8,0,1,Completed,true,false,false
+AP004062,18 Nov 23,6,Kooyong,Ardrie Park,No. 2,Jordan Swire,Will Nolan,Jordan Swire,8-1,8,1,1,0,Completed,true,false,false
+AP004062,18 Nov 23,6,Kooyong,Ardrie Park,No. 3,Adam Klein,Sam Cohen,Adam Klein,8-2,8,2,1,0,Completed,true,false,false
+AP004062,18 Nov 23,6,Kooyong,Ardrie Park,No. 4,Quentin Miller,Philip Cassou-Desus,Quentin Miller,8-4,8,4,1,0,Completed,true,false,false
+AP004063,18 Nov 23,6,BLTC,Maccabi,No. 1,Yile Li,Jonny Henquin,Jonny Henquin,0-8,0,8,0,1,Completed,true,false,false
+AP004063,18 Nov 23,6,BLTC,Maccabi,No. 2,Nicholas Higgins,Jan Tenenberg,Jan Tenenberg,5-8,5,8,0,1,Completed,true,false,false
+AP004063,18 Nov 23,6,BLTC,Maccabi,No. 3,Ilai Manor,Marcus Frajman,Ilai Manor,8-5,8,5,1,0,Completed,true,false,false
+AP004063,18 Nov 23,6,BLTC,Maccabi,No. 4,Ingo Bahlken,Ryan Behr,Ryan Behr,7-8,7,8,0,1,Completed,true,false,false
+AP004071,25 Nov 23,7,Ardrie Park,Le Page,No. 1,Tom Miller,Nicholas Collins,Tom Miller,8-0,8,0,1,0,Completed,true,false,false
+AP004071,25 Nov 23,7,Ardrie Park,Le Page,No. 2,Sam Cohen,Diesel Reid,Diesel Reid,4-8,4,8,0,1,Completed,true,false,false
+AP004071,25 Nov 23,7,Ardrie Park,Le Page,No. 3,Philip Cassou-Desus,Julius Schulze,Julius Schulze,5-8,5,8,0,1,Completed,true,false,false
+AP004071,25 Nov 23,7,Ardrie Park,Le Page,No. 4,Brandt Kakulas,Jake Daniels,Jake Daniels,3-8,3,8,0,1,Completed,true,false,true
+AP004072,25 Nov 23,7,Hurlingham Park,Kooyong,No. 1,Tony Schiavello,Matthew Lincoln,Matthew Lincoln,4-8,4,8,0,1,Completed,true,false,false
+AP004072,25 Nov 23,7,Hurlingham Park,Kooyong,No. 2,Alan Liebowitz,Jordan Swire,Jordan Swire,7-8,7,8,0,1,Completed,true,false,false
+AP004072,25 Nov 23,7,Hurlingham Park,Kooyong,No. 3,Steve Kovacs,Quentin Miller,Steve Kovacs,8-5,8,5,1,0,Completed,true,false,false
+AP004072,25 Nov 23,7,Hurlingham Park,Kooyong,No. 4,Amar Naik,Toby Smorgan,Amar Naik,8-1,8,1,1,0,Completed,true,false,false
+AP004073,25 Nov 23,7,Mentone,Maccabi,No. 1,Jordan Dean,Saul Muscatel,Jordan Dean,8-7,8,7,1,0,Completed,true,false,false
+AP004073,25 Nov 23,7,Mentone,Maccabi,No. 2,Robert Donat,Marcus Frajman,Robert Donat,8-5,8,5,1,0,Completed,true,false,false
+AP004073,25 Nov 23,7,Mentone,Maccabi,No. 3,Dan Wood,Lachie Zuker,Lachie Zuker,3-8,3,8,0,1,Completed,true,false,false
+AP004073,25 Nov 23,7,Mentone,Maccabi,No. 4,Alex Cameron,Stephen Kleid,Alex Cameron,8-0,8,0,1,0,Completed,true,false,true
+AP004101,16 Dec 23,10,BLTC,Ardrie Park,No. 1,Nicholas Higgins,Tom Miller,Tom Miller,4-8,4,8,0,1,Completed,true,false,false
+AP004101,16 Dec 23,10,BLTC,Ardrie Park,No. 2,Adam Majdan,Will Nolan,Will Nolan,7-8,7,8,0,1,Completed,true,false,false
+AP004101,16 Dec 23,10,BLTC,Ardrie Park,No. 3,Ingo Bahlken,Phillip Lasson,Ingo Bahlken,8-4,8,4,1,0,Completed,true,false,true
+AP004101,16 Dec 23,10,BLTC,Ardrie Park,No. 4,Jeremy Mitchell,Brandt Kakulas,Jeremy Mitchell,8-3,8,3,1,0,Completed,true,false,false
+AP004102,16 Dec 23,10,Mentone,Hurlingham Park,No. 1,Jordan Dean,Tony Schiavello,Jordan Dean,8-4,8,4,1,0,Completed,true,false,false
+AP004102,16 Dec 23,10,Mentone,Hurlingham Park,No. 2,Paul Huynh,Anton Van Heerdan,Anton Van Heerdan,2-8,2,8,0,1,Completed,true,false,false
+AP004102,16 Dec 23,10,Mentone,Hurlingham Park,No. 3,Robert Donat,Alexander Hatziladas,Robert Donat,8-3,8,3,1,0,Completed,true,false,false
+AP004102,16 Dec 23,10,Mentone,Hurlingham Park,No. 4,Alex Cameron,Alan Liebowitz,Alan Liebowitz,6-8,6,8,0,1,Completed,true,false,false
+AP004104,16 Dec 23,10,Maccabi,Kooyong,No. 1,Saul Muscatel,Matthew Lincoln,Matthew Lincoln,3-8,3,8,0,1,Completed,true,false,false
+AP004104,16 Dec 23,10,Maccabi,Kooyong,No. 2,Jamie Muscatel,Adam Klein,Adam Klein,5-8,5,8,0,1,Completed,true,true,false
+AP004104,16 Dec 23,10,Maccabi,Kooyong,No. 3,Ryan Behr,Hudson Levine,Ryan Behr,8-0,8,0,1,0,Completed,true,false,true
+AP004104,16 Dec 23,10,Maccabi,Kooyong,No. 4,Aaron Kramer,Daniel Cajkusic,Aaron Kramer,8-3,8,3,1,0,Completed,true,true,true
+AP004111,03 Feb 24,11,Ardrie Park,Maccabi,No. 1,Tom Miller,Jonny Henquin,Tom Miller,8-3,8,3,1,0,Completed,true,false,false
+AP004111,03 Feb 24,11,Ardrie Park,Maccabi,No. 2,Max Rabor,Jan Tenenberg,Max Rabor,8-2,8,2,1,0,Completed,true,true,false
+AP004111,03 Feb 24,11,Ardrie Park,Maccabi,No. 3,Sam Cohen,Marcus Frajman,Marcus Frajman,5-8,5,8,0,1,Completed,true,false,false
+AP004111,03 Feb 24,11,Ardrie Park,Maccabi,No. 4,Brandt Kakulas,Lachie Zuker,Lachie Zuker,4-8,4,8,0,1,Completed,true,false,false
+AP004112,03 Feb 24,11,Hurlingham Park,BLTC,No. 1,Tony Schiavello,Nicholas Higgins,Tony Schiavello,8-0,8,0,1,0,Completed,true,false,false
+AP004112,03 Feb 24,11,Hurlingham Park,BLTC,No. 2,Alexander Hatziladas,Ilai Manor,Alexander Hatziladas,8-6,8,6,1,0,Completed,true,false,false
+AP004112,03 Feb 24,11,Hurlingham Park,BLTC,No. 3,Alan Liebowitz,Ingo Bahlken,Alan Liebowitz,8-4,8,4,1,0,Completed,true,false,false
+AP004112,03 Feb 24,11,Hurlingham Park,BLTC,No. 4,Amar Naik,Jeremy Mitchell,Amar Naik,8-1,8,1,1,0,Completed,true,false,false
+AP004113,03 Feb 24,11,Le Page,Mentone,No. 1,Mark Petkoff,Jordan Dean,Mark Petkoff,8-2,8,2,1,0,Completed,true,false,false
+AP004113,03 Feb 24,11,Le Page,Mentone,No. 2,Nicholas Collins,Robert Donat,Robert Donat,4-8,4,8,0,1,Completed,true,false,false
+AP004113,03 Feb 24,11,Le Page,Mentone,No. 3,Julius Schulze,Ivan Payung,Ivan Payung,2-8,2,8,0,1,Completed,true,false,false
+AP004113,03 Feb 24,11,Le Page,Mentone,No. 4,Jack Malasek,Dan Wood,Dan Wood,0-8,0,8,0,1,Completed,true,true,false
+AP004121,10 Feb 24,12,Kooyong,Le Page,No. 1,Matthew Lincoln,Mark Petkoff,Mark Petkoff,5-8,5,8,0,1,Completed,true,false,false
+AP004121,10 Feb 24,12,Kooyong,Le Page,No. 2,Jordan Swire,Nicholas Collins,Jordan Swire,8-4,8,4,1,0,Completed,true,false,false
+AP004121,10 Feb 24,12,Kooyong,Le Page,No. 3,Adam Klein,Julius Schulze,Adam Klein,8-1,8,1,1,0,Completed,true,false,false
+AP004121,10 Feb 24,12,Kooyong,Le Page,No. 4,Quentin Miller,Sam Choplin,Quentin Miller,8-3,8,3,1,0,Completed,true,false,true
+AP004122,10 Feb 24,12,BLTC,Mentone,No. 1,Nicholas Higgins,Jordan Dean,Jordan Dean,2-8,2,8,0,1,Completed,true,false,false
+AP004122,10 Feb 24,12,BLTC,Mentone,No. 2,Ilai Manor,Robert Donat,Robert Donat,4-8,4,8,0,1,Completed,true,false,false
+AP004122,10 Feb 24,12,BLTC,Mentone,No. 3,Adam Majdan,Ivan Payung,Adam Majdan,8-6,8,6,1,0,Completed,true,false,false
+AP004122,10 Feb 24,12,BLTC,Mentone,No. 4,Ingo Bahlken,Dan Wood,Ingo Bahlken,8-3,8,3,1,0,Completed,true,false,false
+AP004124,10 Feb 24,12,Hurlingham Park,Ardrie Park,No. 1,Tony Schiavello,Tim Bayley,Tim Bayley,7-8,7,8,0,1,Completed,true,false,false
+AP004124,10 Feb 24,12,Hurlingham Park,Ardrie Park,No. 2,Alan Liebowitz,Max Rabor,Max Rabor,7-8,7,8,0,1,Completed,true,false,true
+AP004124,10 Feb 24,12,Hurlingham Park,Ardrie Park,No. 3,Wojtek Foroncewicz,Phillip Lasson,Wojtek Foroncewicz,8-4,8,4,1,0,Completed,true,false,true
+AP004124,10 Feb 24,12,Hurlingham Park,Ardrie Park,No. 4,Paul Absalom,Brandt Kakulas,Brandt Kakulas,4-8,4,8,0,1,Completed,true,true,false
+AP004131,17 Feb 24,13,Le Page,Hurlingham Park,No. 1,Mark Petkoff,Tony Schiavello,Mark Petkoff,8-3,8,3,1,0,Completed,true,false,false
+AP004131,17 Feb 24,13,Le Page,Hurlingham Park,No. 2,Eyal Friedman,Anton Van Heerdan,Anton Van Heerdan,5-8,5,8,0,1,Completed,true,false,false
+AP004131,17 Feb 24,13,Le Page,Hurlingham Park,No. 3,Julius Schulze,Alexander Hatziladas,Alexander Hatziladas,2-8,2,8,0,1,Completed,true,false,false
+AP004131,17 Feb 24,13,Le Page,Hurlingham Park,No. 4,James Polygenis,Alan Liebowitz,Alan Liebowitz,3-8,3,8,0,1,Completed,true,true,false
+AP004132,17 Feb 24,13,Ardrie Park,Kooyong,No. 1,Will Nolan,Matthew Lincoln,Matthew Lincoln,5-8,5,8,0,1,Completed,true,false,false
+AP004132,17 Feb 24,13,Ardrie Park,Kooyong,No. 2,Max Rabor,Jordan Swire,Max Rabor,8-6,8,6,1,0,Completed,true,true,false
+AP004132,17 Feb 24,13,Ardrie Park,Kooyong,No. 3,Sam Cohen,Adam Klein,Adam Klein,5-8,5,8,0,1,Completed,true,false,false
+AP004132,17 Feb 24,13,Ardrie Park,Kooyong,No. 4,Brandt Kakulas,Quentin Miller,Brandt Kakulas,8-4,8,4,1,0,Completed,true,false,false
+AP004133,17 Feb 24,13,Maccabi,BLTC,No. 1,Jonny Henquin,Ilai Manor,Jonny Henquin,8-4,8,4,1,0,Completed,true,false,false
+AP004133,17 Feb 24,13,Maccabi,BLTC,No. 2,Saul Muscatel,Adam Majdan,Saul Muscatel,8-6,8,6,1,0,Completed,true,false,false
+AP004133,17 Feb 24,13,Maccabi,BLTC,No. 3,Ryan Behr,Ingo Bahlken,Ryan Behr,8-4,8,4,1,0,Completed,true,false,false
+AP004133,17 Feb 24,13,Maccabi,BLTC,No. 4,Lachie Zuker,Jeremy Mitchell,Lachie Zuker,8-3,8,3,1,0,Completed,true,false,false
+AP004141,24 Feb 24,14,Le Page,Ardrie Park,No. 1,Mark Petkoff,Tom Miller,Tom Miller,1-8,1,8,0,1,Completed,true,false,false
+AP004141,24 Feb 24,14,Le Page,Ardrie Park,No. 2,Eyal Friedman,Will Nolan,Eyal Friedman,8-1,8,1,1,0,Completed,true,false,false
+AP004141,24 Feb 24,14,Le Page,Ardrie Park,No. 3,Andres Ramires,Sam Cohen,Andres Ramires,8-2,8,2,1,0,Completed,true,true,false
+AP004141,24 Feb 24,14,Le Page,Ardrie Park,No. 4,Julius Schulze,Brandt Kakulas,Brandt Kakulas,6-8,6,8,0,1,Completed,true,false,false
+AP004142,24 Feb 24,14,Kooyong,Hurlingham Park,No. 1,Matthew Lincoln,Tony Schiavello,Matthew Lincoln,8-7,8,7,1,0,Completed,true,false,false
+AP004142,24 Feb 24,14,Kooyong,Hurlingham Park,No. 2,Jordan Swire,Alexander Hatziladas,Jordan Swire,8-6,8,6,1,0,Completed,true,false,false
+AP004142,24 Feb 24,14,Kooyong,Hurlingham Park,No. 3,Adam Klein,Alan Liebowitz,Adam Klein,8-4,8,4,1,0,Completed,true,false,false
+AP004142,24 Feb 24,14,Kooyong,Hurlingham Park,No. 4,Archie Rosenberg,Taro Kanazawa,Taro Kanazawa,2-8,2,8,0,1,Completed,true,true,false
+AP004143,24 Feb 24,14,Maccabi,Mentone,No. 1,Jonny Henquin,Jordan Dean,Jonny Henquin,8-5,8,5,1,0,Completed,true,false,false
+AP004143,24 Feb 24,14,Maccabi,Mentone,No. 2,Saul Muscatel,Paul Huynh,Saul Muscatel,8-1,8,1,1,0,Completed,true,false,false
+AP004143,24 Feb 24,14,Maccabi,Mentone,No. 3,Jan Tenenberg,Robert Donat,Robert Donat,2-8,2,8,0,1,Completed,true,false,false
+AP004143,24 Feb 24,14,Maccabi,Mentone,No. 4,Marcus Frajman,Dan Wood,Marcus Frajman,8-3,8,3,1,0,Completed,true,false,false
+AP004301,,16,Hurlingham Park,Kooyong,No. 1,Tony Schiavello,Matthew Lincoln,Matthew Lincoln,4-8,4,8,0,1,Completed,true,false,false
+AP004301,,16,Hurlingham Park,Kooyong,No. 2,Alexander Hatziladas,Jordan Swire,Jordan Swire,1-8,1,8,0,1,Completed,true,false,false
+AP004301,,16,Hurlingham Park,Kooyong,No. 3,Alan Liebowitz,Adam Klein,Alan Liebowitz,8-5,8,5,1,0,Completed,true,false,false
+AP004301,,16,Hurlingham Park,Kooyong,No. 4,Amar Naik,Quentin Miller,Amar Naik,8-6,8,6,1,0,Completed,true,false,false
+AP004302,,16,Maccabi,Ardrie Park,No. 1,Jonny Henquin,Tom Miller,Tom Miller,2-8,2,8,0,1,Completed,true,false,false
+AP004302,,16,Maccabi,Ardrie Park,No. 2,Saul Muscatel,Will Nolan,Will Nolan,3-8,3,8,0,1,Completed,true,false,false
+AP004302,,16,Maccabi,Ardrie Park,No. 3,Jan Tenenberg,Sam Cohen,Jan Tenenberg,8-3,8,3,1,0,Completed,true,false,false
+AP004302,,16,Maccabi,Ardrie Park,No. 4,Ryan Behr,Brandt Kakulas,Ryan Behr,8-6,8,6,1,0,Completed,true,false,false

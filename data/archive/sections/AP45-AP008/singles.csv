@@ -1,0 +1,206 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP008011,01 Oct 22,1,Highmoor Uniting,BLTC Blue,No. 1,Jason Mahmoud,Lochlan Friedrich,Jason Mahmoud,8-5,8,5,1,0,Completed,true,false,false
+AP008011,01 Oct 22,1,Highmoor Uniting,BLTC Blue,No. 2,Glenn Collins,Emerson Schillaci,Glenn Collins,8-5,8,5,1,0,Completed,true,false,false
+AP008011,01 Oct 22,1,Highmoor Uniting,BLTC Blue,No. 3,Brett Collins,Christian Tomasic,Brett Collins,8-6,8,6,1,0,Completed,true,false,false
+AP008011,01 Oct 22,1,Highmoor Uniting,BLTC Blue,No. 4,Vikram Jangra,James Dossan,Vikram Jangra,8-1,8,1,1,0,Completed,true,false,true
+AP008012,01 Oct 22,1,Royal South Yarra,Maccabi 1,No. 1,Dean Park,Joel Rabinov,Dean Park,8-3,8,3,1,0,Completed,true,true,false
+AP008012,01 Oct 22,1,Royal South Yarra,Maccabi 1,No. 2,Stanislav Tabain,Nathan Rapoport,Nathan Rapoport,2-8,2,8,0,1,Completed,true,false,false
+AP008012,01 Oct 22,1,Royal South Yarra,Maccabi 1,No. 3,Adrian Anderson,Adam Rapoport,Adrian Anderson,8-0,8,0,1,0,Completed,true,false,true
+AP008012,01 Oct 22,1,Royal South Yarra,Maccabi 1,No. 4,Wes Albert,Paul Kovacs,Wes Albert,8-4,8,4,1,0,Completed,true,true,true
+AP008013,01 Oct 22,1,Sth Hawthorn,Coatesville,No. 1,Steffan Raab,Marcus Aparo,Marcus Aparo,5-8,5,8,0,1,Completed,true,false,false
+AP008013,01 Oct 22,1,Sth Hawthorn,Coatesville,No. 2,Hugh Blacket,Sam Basman,Hugh Blacket,8-2,8,2,1,0,Completed,true,false,false
+AP008013,01 Oct 22,1,Sth Hawthorn,Coatesville,No. 3,Andrew Antonopoulos,Noah Winik,Noah Winik,4-8,4,8,0,1,Completed,true,false,false
+AP008013,01 Oct 22,1,Sth Hawthorn,Coatesville,No. 4,Liam Greening,Michael Gershenzon,Liam Greening,8-4,8,4,1,0,Completed,true,false,false
+AP008014,01 Oct 22,1,Maccabi 2,Monash University,No. 1,Ben Pollak,Philip Phung,Ben Pollak,8-5,8,5,1,0,Completed,true,false,false
+AP008014,01 Oct 22,1,Maccabi 2,Monash University,No. 2,Jack Stock,Joseph Tran,Jack Stock,8-7,8,7,1,0,Completed,true,false,false
+AP008014,01 Oct 22,1,Maccabi 2,Monash University,No. 3,Daniel Vertes,Zac Kwek,Zac Kwek,7-8,7,8,0,1,Completed,true,false,false
+AP008014,01 Oct 22,1,Maccabi 2,Monash University,No. 4,Mark Lazarovits,Hann Ong,Mark Lazarovits,8-1,8,1,1,0,Completed,true,false,true
+AP008021,08 Oct 22,2,Monash University,Highmoor Uniting,No. 1,Joseph Tran,Jason Mahmoud,Jason Mahmoud,0-8,0,8,0,1,Completed,true,false,false
+AP008021,08 Oct 22,2,Monash University,Highmoor Uniting,No. 2,Zac Kwek,Glenn Collins,Zac Kwek,8-6,8,6,1,0,Completed,true,false,false
+AP008021,08 Oct 22,2,Monash University,Highmoor Uniting,No. 3,John Qian,Richard Elvins,John Qian,8-1,8,1,1,0,Completed,true,false,false
+AP008021,08 Oct 22,2,Monash University,Highmoor Uniting,No. 4,Shaun Yeoh,Michael Lynch,Shaun Yeoh,8-7,8,7,1,0,Completed,true,true,false
+AP008023,08 Oct 22,2,Maccabi 1,Sth Hawthorn,No. 1,Joel Rabinov,Steffan Raab,Steffan Raab,2-8,2,8,0,1,Completed,true,false,false
+AP008023,08 Oct 22,2,Maccabi 1,Sth Hawthorn,No. 2,Nathan Rapoport,Simon Corrie,Nathan Rapoport,8-0,8,0,1,0,Completed,true,false,false
+AP008023,08 Oct 22,2,Maccabi 1,Sth Hawthorn,No. 3,Stephen Kleid,Hugh Blacket,Hugh Blacket,3-8,3,8,0,1,Completed,true,false,false
+AP008023,08 Oct 22,2,Maccabi 1,Sth Hawthorn,No. 4,Stephen Gorenstein,Andrew Antonopoulos,Andrew Antonopoulos,2-8,2,8,0,1,Completed,true,false,false
+AP008024,08 Oct 22,2,Coatesville,Maccabi 2,No. 1,Michael Gershenzon,Joshua Duieb,Joshua Duieb,5-8,5,8,0,1,Completed,true,false,false
+AP008031,15 Oct 22,3,Highmoor Uniting,Coatesville,No. 1,Brett Collins,Marcus Aparo,Brett Collins,8-3,8,3,1,0,Completed,true,false,false
+AP008031,15 Oct 22,3,Highmoor Uniting,Coatesville,No. 2,Nick Martin,Harry O'Dea,Nick Martin,8-6,8,6,1,0,Completed,true,false,false
+AP008031,15 Oct 22,3,Highmoor Uniting,Coatesville,No. 3,Richard Elvins,Noah Winik,Richard Elvins,8-5,8,5,1,0,Completed,true,false,false
+AP008031,15 Oct 22,3,Highmoor Uniting,Coatesville,No. 4,Vikram Jangra,Michael Gershenzon,Vikram Jangra,8-7,8,7,1,0,Completed,true,false,false
+AP008032,15 Oct 22,3,Royal South Yarra,Monash University,No. 1,Charlie Anderson,Philip Phung,Charlie Anderson,8-3,8,3,1,0,Completed,true,false,false
+AP008032,15 Oct 22,3,Royal South Yarra,Monash University,No. 2,Peter Tabain,Joseph Tran,Peter Tabain,8-3,8,3,1,0,Completed,true,false,false
+AP008032,15 Oct 22,3,Royal South Yarra,Monash University,No. 3,Stanislav Tabain,Zac Kwek,Stanislav Tabain,8-2,8,2,1,0,Completed,true,false,false
+AP008032,15 Oct 22,3,Royal South Yarra,Monash University,No. 4,Stuart Webb,John Qian,John Qian,5-8,5,8,0,1,Completed,true,false,false
+AP008033,15 Oct 22,3,Sth Hawthorn,BLTC Blue,No. 1,Steffan Raab,Bashir Riachi,Steffan Raab,8-6,8,6,1,0,Completed,true,false,false
+AP008033,15 Oct 22,3,Sth Hawthorn,BLTC Blue,No. 2,Simon Corrie,Emerson Schillaci,Emerson Schillaci,4-8,4,8,0,1,Completed,true,false,false
+AP008033,15 Oct 22,3,Sth Hawthorn,BLTC Blue,No. 3,Liam Greening,Liam Parsons,Liam Greening,8-4,8,4,1,0,Completed,true,false,false
+AP008033,15 Oct 22,3,Sth Hawthorn,BLTC Blue,No. 4,Andrew Antonopoulos,Julian Catala Prieto,Andrew Antonopoulos,8-0,8,0,1,0,Completed,true,false,false
+AP008034,15 Oct 22,3,Maccabi 2,Maccabi 1,No. 1,Ben Pollak,Joel Rabinov,Joel Rabinov,7-8,7,8,0,1,Completed,true,false,false
+AP008034,15 Oct 22,3,Maccabi 2,Maccabi 1,No. 2,Errol Dorfan,Daniel Goodrich,Errol Dorfan,8-4,8,4,1,0,Completed,true,false,false
+AP008034,15 Oct 22,3,Maccabi 2,Maccabi 1,No. 3,Jack Stock,Stephen Kleid,Stephen Kleid,6-8,6,8,0,1,Completed,true,false,false
+AP008034,15 Oct 22,3,Maccabi 2,Maccabi 1,No. 4,Daniel Vertes,Stephen Gorenstein,Daniel Vertes,8-1,8,1,1,0,Completed,true,false,false
+AP008044,22 Oct 22,4,BLTC Blue,Maccabi 2,No. 1,Bashir Riachi,Errol Dorfan,Errol Dorfan,6-8,6,8,0,1,Completed,true,false,false
+AP008044,22 Oct 22,4,BLTC Blue,Maccabi 2,No. 2,Lochlan Friedrich,Joel Rabinov,Lochlan Friedrich,8-0,8,0,1,0,Completed,true,false,true
+AP008044,22 Oct 22,4,BLTC Blue,Maccabi 2,No. 3,Emerson Schillaci,Joshua Duieb,Emerson Schillaci,8-2,8,2,1,0,Completed,true,false,false
+AP008044,22 Oct 22,4,BLTC Blue,Maccabi 2,No. 4,Christian Tomasic,Ben Pollak,Christian Tomasic,8-0,8,0,1,0,Completed,true,false,false
+AP008051,05 Nov 22,5,Sth Hawthorn,Maccabi 2,No. 1,Steffan Raab,Errol Dorfan,Errol Dorfan,5-8,5,8,0,1,Completed,true,false,false
+AP008051,05 Nov 22,5,Sth Hawthorn,Maccabi 2,No. 2,Hugh Blacket,Jack Stock,Hugh Blacket,8-3,8,3,1,0,Completed,true,false,false
+AP008051,05 Nov 22,5,Sth Hawthorn,Maccabi 2,No. 3,Andrew Antonopoulos,Daniel Vertes,Daniel Vertes,7-8,7,8,0,1,Completed,true,false,false
+AP008051,05 Nov 22,5,Sth Hawthorn,Maccabi 2,No. 4,Jeff Greening,Joshua Duieb,Joshua Duieb,6-8,6,8,0,1,Completed,true,false,false
+AP008052,05 Nov 22,5,Monash University,Coatesville,No. 1,Philip Phung,Marcus Aparo,Philip Phung,8-6,8,6,1,0,Completed,true,false,false
+AP008052,05 Nov 22,5,Monash University,Coatesville,No. 2,Joseph Tran,Sam Basman,Joseph Tran,8-2,8,2,1,0,Completed,true,false,false
+AP008052,05 Nov 22,5,Monash University,Coatesville,No. 3,John Qian,Harry O'Dea,Harry O'Dea,0-8,0,8,0,1,Completed,true,false,false
+AP008052,05 Nov 22,5,Monash University,Coatesville,No. 4,Shaun Yeoh,Michael Gershenzon,Shaun Yeoh,8-1,8,1,1,0,Completed,true,true,false
+AP008053,05 Nov 22,5,Maccabi 1,BLTC Blue,No. 1,Joel Rabinov,Lochlan Friedrich,Lochlan Friedrich,2-8,2,8,0,1,Completed,true,false,false
+AP008053,05 Nov 22,5,Maccabi 1,BLTC Blue,No. 2,Nathan Rapoport,Emerson Schillaci,Nathan Rapoport,8-2,8,2,1,0,Completed,true,false,false
+AP008053,05 Nov 22,5,Maccabi 1,BLTC Blue,No. 3,Evgeni Grishin,Julian Catala Prieto,Julian Catala Prieto,4-8,4,8,0,1,Completed,true,true,false
+AP008053,05 Nov 22,5,Maccabi 1,BLTC Blue,No. 4,Stephen Gorenstein,Liam Parsons,Liam Parsons,1-8,1,8,0,1,Completed,true,false,false
+AP008054,05 Nov 22,5,Highmoor Uniting,Royal South Yarra,No. 1,Nick Martin,Adrian Anderson,Nick Martin,8-5,8,5,1,0,Completed,true,false,false
+AP008054,05 Nov 22,5,Highmoor Uniting,Royal South Yarra,No. 2,Dong Il Lee,Stanislav Tabain,Stanislav Tabain,2-8,2,8,0,1,Completed,true,true,false
+AP008054,05 Nov 22,5,Highmoor Uniting,Royal South Yarra,No. 3,Richard Elvins,Simon Martin,Simon Martin,5-8,5,8,0,1,Completed,true,false,true
+AP008054,05 Nov 22,5,Highmoor Uniting,Royal South Yarra,No. 4,Michael Lynch,Marco Mazzaro,Marco Mazzaro,4-8,4,8,0,1,Completed,true,false,true
+AP008061,12 Nov 22,6,Royal South Yarra,Sth Hawthorn,No. 1,Richard Ralph,Steffan Raab,Steffan Raab,3-8,3,8,0,1,Completed,true,true,false
+AP008061,12 Nov 22,6,Royal South Yarra,Sth Hawthorn,No. 2,Adrian Anderson,Liam Greening,Liam Greening,3-8,3,8,0,1,Completed,true,false,false
+AP008061,12 Nov 22,6,Royal South Yarra,Sth Hawthorn,No. 3,Stanislav Tabain,Lester Lai,Stanislav Tabain,8-2,8,2,1,0,Completed,true,false,true
+AP008061,12 Nov 22,6,Royal South Yarra,Sth Hawthorn,No. 4,Stuart Webb,Jeff Greening,Stuart Webb,8-2,8,2,1,0,Completed,true,false,false
+AP008062,12 Nov 22,6,Maccabi 2,Highmoor Uniting,No. 1,Ben Pollak,Glenn Collins,Ben Pollak,8-3,8,3,1,0,Completed,true,false,false
+AP008062,12 Nov 22,6,Maccabi 2,Highmoor Uniting,No. 2,Errol Dorfan,Brett Collins,Errol Dorfan,8-6,8,6,1,0,Completed,true,false,false
+AP008062,12 Nov 22,6,Maccabi 2,Highmoor Uniting,No. 3,Jack Stock,Vikram Jangra,Jack Stock,8-5,8,5,1,0,Completed,true,false,false
+AP008062,12 Nov 22,6,Maccabi 2,Highmoor Uniting,No. 4,Joshua Duieb,Michael Lynch,Joshua Duieb,8-5,8,5,1,0,Completed,true,false,false
+AP008063,12 Nov 22,6,Coatesville,Maccabi 1,No. 1,Sam Basman,Joel Rabinov,Joel Rabinov,5-8,5,8,0,1,Completed,true,false,false
+AP008063,12 Nov 22,6,Coatesville,Maccabi 1,No. 2,Harry O'Dea,Nathan Rapoport,Nathan Rapoport,5-8,5,8,0,1,Completed,true,false,false
+AP008063,12 Nov 22,6,Coatesville,Maccabi 1,No. 3,Noah Winik,Daniel Goodrich,Daniel Goodrich,4-8,4,8,0,1,Completed,true,false,false
+AP008063,12 Nov 22,6,Coatesville,Maccabi 1,No. 4,Theophilus Prokopiou,Paul Kovacs,Paul Kovacs,1-8,1,8,0,1,Completed,true,true,true
+AP008064,12 Nov 22,6,BLTC Blue,Monash University,No. 1,Lochlan Friedrich,Zac Kwek,Lochlan Friedrich,8-4,8,4,1,0,Completed,true,false,false
+AP008064,12 Nov 22,6,BLTC Blue,Monash University,No. 2,Julian Catala Prieto,Philip Phung,Philip Phung,6-8,6,8,0,1,Completed,true,false,false
+AP008064,12 Nov 22,6,BLTC Blue,Monash University,No. 3,Christian Tomasic,Joseph Tran,Christian Tomasic,8-4,8,4,1,0,Completed,true,false,false
+AP008064,12 Nov 22,6,BLTC Blue,Monash University,No. 4,Liam Parsons,John Qian,Liam Parsons,8-3,8,3,1,0,Completed,true,false,false
+AP008072,19 Nov 22,7,Royal South Yarra,Maccabi 2,No. 1,Adrian Anderson,Ben Pollak,Ben Pollak,4-8,4,8,0,1,Completed,true,false,false
+AP008072,19 Nov 22,7,Royal South Yarra,Maccabi 2,No. 2,Stanislav Tabain,Jack Stock,Stanislav Tabain,8-0,8,0,1,0,Completed,true,false,false
+AP008072,19 Nov 22,7,Royal South Yarra,Maccabi 2,No. 3,Stuart Webb,Daniel Vertes,Stuart Webb,8-5,8,5,1,0,Completed,true,false,false
+AP008072,19 Nov 22,7,Royal South Yarra,Maccabi 2,No. 4,Michael Stanford,Mark Lazarovits,Michael Stanford,8-1,8,1,1,0,Completed,true,true,false
+AP008081,26 Nov 22,8,BLTC Blue,Highmoor Uniting,No. 1,Bashir Riachi,Jason Mahmoud,Jason Mahmoud,2-8,2,8,0,1,Completed,true,false,false
+AP008081,26 Nov 22,8,BLTC Blue,Highmoor Uniting,No. 2,Lochlan Friedrich,Brett Collins,Brett Collins,6-8,6,8,0,1,Completed,true,false,false
+AP008081,26 Nov 22,8,BLTC Blue,Highmoor Uniting,No. 3,Julian Catala Prieto,Nick Martin,Nick Martin,3-8,3,8,0,1,Completed,true,false,false
+AP008081,26 Nov 22,8,BLTC Blue,Highmoor Uniting,No. 4,Liam Parsons,Michael Lynch,Liam Parsons,8-1,8,1,1,0,Completed,true,false,false
+AP008082,26 Nov 22,8,Maccabi 1,Royal South Yarra,No. 1,Joel Rabinov,Charlie Anderson,Charlie Anderson,5-8,5,8,0,1,Completed,true,false,false
+AP008082,26 Nov 22,8,Maccabi 1,Royal South Yarra,No. 2,David Kenley,Peter Tabain,Peter Tabain,3-8,3,8,0,1,Completed,true,true,false
+AP008082,26 Nov 22,8,Maccabi 1,Royal South Yarra,No. 3,Daniel Goodrich,Andrew Walker,Andrew Walker,2-8,2,8,0,1,Completed,true,false,false
+AP008082,26 Nov 22,8,Maccabi 1,Royal South Yarra,No. 4,Evgeni Grishin,Adrian Anderson,Adrian Anderson,3-8,3,8,0,1,Completed,true,true,false
+AP008083,26 Nov 22,8,Coatesville,Sth Hawthorn,No. 1,Marcus Aparo,Hugh Blacket,Marcus Aparo,8-7,8,7,1,0,Completed,true,false,false
+AP008083,26 Nov 22,8,Coatesville,Sth Hawthorn,No. 2,Harry O'Dea,Simon Corrie,Harry O'Dea,8-6,8,6,1,0,Completed,true,false,false
+AP008083,26 Nov 22,8,Coatesville,Sth Hawthorn,No. 3,Noah Winik,Andrew Antonopoulos,Noah Winik,8-5,8,5,1,0,Completed,true,false,false
+AP008083,26 Nov 22,8,Coatesville,Sth Hawthorn,No. 4,Michael Gershenzon,Jeff Greening,Michael Gershenzon,8-5,8,5,1,0,Completed,true,false,false
+AP008084,26 Nov 22,8,Monash University,Maccabi 2,No. 1,Zac Kwek,Ben Pollak,Ben Pollak,6-8,6,8,0,1,Completed,true,false,false
+AP008084,26 Nov 22,8,Monash University,Maccabi 2,No. 2,Philip Phung,Errol Dorfan,Philip Phung,8-7,8,7,1,0,Completed,true,false,false
+AP008084,26 Nov 22,8,Monash University,Maccabi 2,No. 3,Joseph Tran,Daniel Vertes,Joseph Tran,8-7,8,7,1,0,Completed,true,false,false
+AP008084,26 Nov 22,8,Monash University,Maccabi 2,No. 4,Chau Pham,Ian Altman,Ian Altman,2-8,2,8,0,1,Completed,true,true,true
+AP008091,03 Dec 22,9,Highmoor Uniting,Monash University,No. 1,Jason Mahmoud,Philip Phung,Philip Phung,6-8,6,8,0,1,Completed,true,false,false
+AP008091,03 Dec 22,9,Highmoor Uniting,Monash University,No. 2,Glenn Collins,John Qian,Glenn Collins,8-1,8,1,1,0,Completed,true,false,false
+AP008091,03 Dec 22,9,Highmoor Uniting,Monash University,No. 3,Richard Elvins,Chau Pham,Richard Elvins,8-3,8,3,1,0,Completed,true,false,true
+AP008091,03 Dec 22,9,Highmoor Uniting,Monash University,No. 4,Vikram Jangra,Jake Taala,Vikram Jangra,8-1,8,1,1,0,Completed,true,false,true
+AP008092,03 Dec 22,9,Royal South Yarra,BLTC Blue,No. 1,Charlie Anderson,Bashir Riachi,Charlie Anderson,8-2,8,2,1,0,Completed,true,false,false
+AP008092,03 Dec 22,9,Royal South Yarra,BLTC Blue,No. 2,Peter Tabain,Julian Catala Prieto,Julian Catala Prieto,5-8,5,8,0,1,Completed,true,false,false
+AP008092,03 Dec 22,9,Royal South Yarra,BLTC Blue,No. 3,Stuart Webb,Christian Tomasic,Christian Tomasic,0-8,0,8,0,1,Completed,true,false,false
+AP008092,03 Dec 22,9,Royal South Yarra,BLTC Blue,No. 4,Tom Anderson,Liam Parsons,Liam Parsons,0-8,0,8,0,1,Completed,true,true,false
+AP008093,03 Dec 22,9,Sth Hawthorn,Maccabi 1,No. 1,Steffan Raab,Joel Rabinov,Joel Rabinov,4-8,4,8,0,1,Completed,true,false,false
+AP008093,03 Dec 22,9,Sth Hawthorn,Maccabi 1,No. 2,Hugh Blacket,Daniel Goodrich,Hugh Blacket,8-7,8,7,1,0,Completed,true,false,false
+AP008093,03 Dec 22,9,Sth Hawthorn,Maccabi 1,No. 3,Joseph James Braithwaite,Stephen Kleid,Joseph James Braithwaite,8-3,8,3,1,0,Completed,true,true,false
+AP008093,03 Dec 22,9,Sth Hawthorn,Maccabi 1,No. 4,Andrew Antonopoulos,Stephen Gorenstein,Andrew Antonopoulos,8-2,8,2,1,0,Completed,true,false,false
+AP008094,03 Dec 22,9,Maccabi 2,Coatesville,No. 1,Ben Pollak,Marcus Aparo,Ben Pollak,8-5,8,5,1,0,Completed,true,false,false
+AP008094,03 Dec 22,9,Maccabi 2,Coatesville,No. 2,Errol Dorfan,Sam Basman,Errol Dorfan,8-4,8,4,1,0,Completed,true,false,false
+AP008094,03 Dec 22,9,Maccabi 2,Coatesville,No. 3,Evgeni Grishin,Harry O'Dea,Harry O'Dea,0-8,0,8,0,1,Completed,true,true,false
+AP008094,03 Dec 22,9,Maccabi 2,Coatesville,No. 4,Joshua Duieb,Noah Winik,Noah Winik,4-8,4,8,0,1,Completed,true,false,false
+AP008101,10 Dec 22,10,Coatesville,Highmoor Uniting,No. 1,Marcus Aparo,Glenn Collins,Marcus Aparo,8-4,8,4,1,0,Completed,true,false,false
+AP008101,10 Dec 22,10,Coatesville,Highmoor Uniting,No. 2,Sam Basman,Brett Collins,Sam Basman,8-4,8,4,1,0,Completed,true,false,false
+AP008101,10 Dec 22,10,Coatesville,Highmoor Uniting,No. 3,Noah Winik,Vikram Jangra,Noah Winik,8-7,8,7,1,0,Completed,true,false,false
+AP008101,10 Dec 22,10,Coatesville,Highmoor Uniting,No. 4,Michael Gershenzon,Michael Lynch,Michael Gershenzon,8-1,8,1,1,0,Completed,true,false,false
+AP008102,10 Dec 22,10,Monash University,Royal South Yarra,No. 1,Chau Pham,Peter Tabain,Peter Tabain,1-8,1,8,0,1,Completed,true,true,false
+AP008102,10 Dec 22,10,Monash University,Royal South Yarra,No. 2,Hann Ong,Andrew Walker,Andrew Walker,1-8,1,8,0,1,Completed,true,true,false
+AP008102,10 Dec 22,10,Monash University,Royal South Yarra,No. 3,Jake Taala,Adrian Anderson,Adrian Anderson,2-8,2,8,0,1,Completed,true,true,false
+AP008102,10 Dec 22,10,Monash University,Royal South Yarra,No. 4,Pranay Prasad,Stuart Webb,Stuart Webb,2-8,2,8,0,1,Completed,true,true,false
+AP008103,10 Dec 22,10,BLTC Blue,Sth Hawthorn,No. 1,Bashir Riachi,Hugh Blacket,Hugh Blacket,6-8,6,8,0,1,Completed,true,false,false
+AP008103,10 Dec 22,10,BLTC Blue,Sth Hawthorn,No. 2,Lochlan Friedrich,Joseph James Braithwaite,Lochlan Friedrich,8-3,8,3,1,0,Completed,true,false,true
+AP008103,10 Dec 22,10,BLTC Blue,Sth Hawthorn,No. 3,Christian Tomasic,Marcelo Scalia,Marcelo Scalia,3-8,3,8,0,1,Completed,true,false,true
+AP008103,10 Dec 22,10,BLTC Blue,Sth Hawthorn,No. 4,Liam Parsons,Andrew Antonopoulos,Liam Parsons,8-2,8,2,1,0,Completed,true,false,false
+AP008104,10 Dec 22,10,Maccabi 1,Maccabi 2,No. 1,Joel Rabinov,Ben Pollak,Ben Pollak,6-8,6,8,0,1,Completed,true,false,false
+AP008104,10 Dec 22,10,Maccabi 1,Maccabi 2,No. 2,Daniel Goodrich,Errol Dorfan,Daniel Goodrich,8-6,8,6,1,0,Completed,true,false,false
+AP008104,10 Dec 22,10,Maccabi 1,Maccabi 2,No. 3,Evgeni Grishin,Jack Stock,Jack Stock,7-8,7,8,0,1,Completed,true,true,false
+AP008104,10 Dec 22,10,Maccabi 1,Maccabi 2,No. 4,Ilay Givoni,Daniel Vertes,Daniel Vertes,6-8,6,8,0,1,Completed,true,true,false
+AP008111,04 Feb 23,11,Highmoor Uniting,Maccabi 1,No. 1,Glenn Collins,Joel Rabinov,Joel Rabinov,3-8,3,8,0,1,Completed,true,false,false
+AP008111,04 Feb 23,11,Highmoor Uniting,Maccabi 1,No. 2,Brett Collins,Daniel Goodrich,Daniel Goodrich,7-8,7,8,0,1,Completed,true,false,false
+AP008111,04 Feb 23,11,Highmoor Uniting,Maccabi 1,No. 3,Richard Elvins,Stephen Kleid,Stephen Kleid,5-8,5,8,0,1,Completed,true,false,false
+AP008111,04 Feb 23,11,Highmoor Uniting,Maccabi 1,No. 4,Michael Lynch,Stephen Gorenstein,Michael Lynch,8-4,8,4,1,0,Completed,true,false,false
+AP008112,04 Feb 23,11,Royal South Yarra,Coatesville,No. 1,Charlie Anderson,Marcus Aparo,Charlie Anderson,8-3,8,3,1,0,Completed,true,false,false
+AP008112,04 Feb 23,11,Royal South Yarra,Coatesville,No. 2,Andrew Walker,Sam Basman,Andrew Walker,8-3,8,3,1,0,Completed,true,false,false
+AP008112,04 Feb 23,11,Royal South Yarra,Coatesville,No. 3,Adrian Anderson,Harry O'Dea,Adrian Anderson,8-3,8,3,1,0,Completed,true,false,false
+AP008112,04 Feb 23,11,Royal South Yarra,Coatesville,No. 4,Tom Anderson,Noah Winik,Noah Winik,0-8,0,8,0,1,Completed,true,true,false
+AP008113,04 Feb 23,11,Sth Hawthorn,Monash University,No. 1,Steffan Raab,Philip Phung,Steffan Raab,8-4,8,4,1,0,Completed,true,false,false
+AP008113,04 Feb 23,11,Sth Hawthorn,Monash University,No. 2,Hugh Blacket,Kelvin Taylor,Hugh Blacket,8-4,8,4,1,0,Completed,true,false,true
+AP008113,04 Feb 23,11,Sth Hawthorn,Monash University,No. 3,Liam Greening,Joseph Tran,Liam Greening,8-7,8,7,1,0,Completed,true,false,false
+AP008113,04 Feb 23,11,Sth Hawthorn,Monash University,No. 4,Andrew Antonopoulos,John Qian,Andrew Antonopoulos,8-2,8,2,1,0,Completed,true,false,false
+AP008114,04 Feb 23,11,Maccabi 2,BLTC Blue,No. 1,Ben Pollak,Bashir Riachi,Bashir Riachi,7-8,7,8,0,1,Completed,true,false,false
+AP008114,04 Feb 23,11,Maccabi 2,BLTC Blue,No. 2,Jack Stock,Lochlan Friedrich,Lochlan Friedrich,7-8,7,8,0,1,Completed,true,false,false
+AP008114,04 Feb 23,11,Maccabi 2,BLTC Blue,No. 3,Daniel Vertes,Julian Catala Prieto,Julian Catala Prieto,5-8,5,8,0,1,Completed,true,false,false
+AP008114,04 Feb 23,11,Maccabi 2,BLTC Blue,No. 4,Joshua Duieb,Tim McCartney,Tim McCartney,5-8,5,8,0,1,Completed,true,false,true
+AP008121,11 Feb 23,12,Maccabi 2,Sth Hawthorn,No. 1,Ben Pollak,Hugh Blacket,Ben Pollak,8-4,8,4,1,0,Completed,true,false,false
+AP008121,11 Feb 23,12,Maccabi 2,Sth Hawthorn,No. 2,Errol Dorfan,Joseph James Braithwaite,Errol Dorfan,8-7,8,7,1,0,Completed,true,false,true
+AP008121,11 Feb 23,12,Maccabi 2,Sth Hawthorn,No. 3,Jack Stock,David Wegener,Jack Stock,8-2,8,2,1,0,Completed,true,false,true
+AP008121,11 Feb 23,12,Maccabi 2,Sth Hawthorn,No. 4,Daniel Vertes,Andrew Antonopoulos,Daniel Vertes,8-6,8,6,1,0,Completed,true,false,false
+AP008122,11 Feb 23,12,Coatesville,Monash University,No. 1,Marcus Aparo,Philip Phung,Marcus Aparo,8-6,8,6,1,0,Completed,true,false,false
+AP008122,11 Feb 23,12,Coatesville,Monash University,No. 2,Sam Basman,Joseph Tran,Joseph Tran,4-8,4,8,0,1,Completed,true,false,false
+AP008122,11 Feb 23,12,Coatesville,Monash University,No. 3,Harry O'Dea,John Qian,Harry O'Dea,8-0,8,0,1,0,Completed,true,false,false
+AP008122,11 Feb 23,12,Coatesville,Monash University,No. 4,Michael Gershenzon,Yihua Fang,Michael Gershenzon,8-3,8,3,1,0,Completed,true,false,true
+AP008123,11 Feb 23,12,BLTC Blue,Maccabi 1,No. 1,Lochlan Friedrich,Nathan Rapoport,Lochlan Friedrich,8-7,8,7,1,0,Completed,true,false,false
+AP008123,11 Feb 23,12,BLTC Blue,Maccabi 1,No. 2,Julian Catala Prieto,Joel Rabinov,Julian Catala Prieto,8-3,8,3,1,0,Completed,true,false,false
+AP008123,11 Feb 23,12,BLTC Blue,Maccabi 1,No. 3,Christian Tomasic,Stephen Kleid,Christian Tomasic,8-3,8,3,1,0,Completed,true,false,false
+AP008123,11 Feb 23,12,BLTC Blue,Maccabi 1,No. 4,Liam Parsons,Stephen Gorenstein,Liam Parsons,8-2,8,2,1,0,Completed,true,false,false
+AP008124,11 Feb 23,12,Royal South Yarra,Highmoor Uniting,No. 1,Ben Frewin,Jason Mahmoud,Ben Frewin,8-2,8,2,1,0,Completed,true,true,false
+AP008124,11 Feb 23,12,Royal South Yarra,Highmoor Uniting,No. 2,Adrian Anderson,Glenn Collins,Glenn Collins,4-8,4,8,0,1,Completed,true,false,false
+AP008124,11 Feb 23,12,Royal South Yarra,Highmoor Uniting,No. 3,Stanislav Tabain,Nick Martin,Stanislav Tabain,8-3,8,3,1,0,Completed,true,false,false
+AP008124,11 Feb 23,12,Royal South Yarra,Highmoor Uniting,No. 4,Richard Boyce,Vikram Jangra,Vikram Jangra,3-8,3,8,0,1,Completed,true,true,false
+AP008131,18 Feb 23,13,Sth Hawthorn,Royal South Yarra,No. 1,Steffan Raab,Brodie Martin,Steffan Raab,8-6,8,6,1,0,Completed,true,false,true
+AP008131,18 Feb 23,13,Sth Hawthorn,Royal South Yarra,No. 2,Hugh Blacket,Adrian Anderson,Hugh Blacket,8-2,8,2,1,0,Completed,true,false,false
+AP008131,18 Feb 23,13,Sth Hawthorn,Royal South Yarra,No. 3,Liam Greening,Stanislav Tabain,Liam Greening,8-4,8,4,1,0,Completed,true,false,false
+AP008131,18 Feb 23,13,Sth Hawthorn,Royal South Yarra,No. 4,Andrew Antonopoulos,Stuart Webb,Stuart Webb,7-8,7,8,0,1,Completed,true,false,false
+AP008132,18 Feb 23,13,Highmoor Uniting,Maccabi 2,No. 1,Jason Mahmoud,Ben Pollak,Jason Mahmoud,8-2,8,2,1,0,Completed,true,false,false
+AP008132,18 Feb 23,13,Highmoor Uniting,Maccabi 2,No. 2,Brett Collins,Errol Dorfan,Errol Dorfan,2-8,2,8,0,1,Completed,true,false,false
+AP008132,18 Feb 23,13,Highmoor Uniting,Maccabi 2,No. 3,Nick Martin,Jack Stock,Nick Martin,8-4,8,4,1,0,Completed,true,false,false
+AP008132,18 Feb 23,13,Highmoor Uniting,Maccabi 2,No. 4,Michael Lynch,Daniel Vertes,Daniel Vertes,4-8,4,8,0,1,Completed,true,false,false
+AP008133,18 Feb 23,13,Maccabi 1,Coatesville,No. 1,Nathan Rapoport,Marcus Aparo,Marcus Aparo,5-8,5,8,0,1,Completed,true,false,false
+AP008133,18 Feb 23,13,Maccabi 1,Coatesville,No. 2,Daniel Goodrich,Harry O'Dea,Daniel Goodrich,8-5,8,5,1,0,Completed,true,false,false
+AP008133,18 Feb 23,13,Maccabi 1,Coatesville,No. 3,Stephen Kleid,Michael Gershenzon,Stephen Kleid,8-4,8,4,1,0,Completed,true,false,false
+AP008133,18 Feb 23,13,Maccabi 1,Coatesville,No. 4,Stephen Gorenstein,Theophilus Prokopiou,Theophilus Prokopiou,6-8,6,8,0,1,Completed,true,false,true
+AP008134,18 Feb 23,13,Monash University,BLTC Blue,No. 1,Zac Kwek,Bashir Riachi,Bashir Riachi,1-8,1,8,0,1,Completed,true,false,false
+AP008134,18 Feb 23,13,Monash University,BLTC Blue,No. 2,Philip Phung,Julian Catala Prieto,Julian Catala Prieto,2-8,2,8,0,1,Completed,true,false,false
+AP008134,18 Feb 23,13,Monash University,BLTC Blue,No. 3,Shrey Singh,Christian Tomasic,Shrey Singh,8-3,8,3,1,0,Completed,true,false,false
+AP008134,18 Feb 23,13,Monash University,BLTC Blue,No. 4,Joseph Tran,Liam Parsons,Joseph Tran,8-3,8,3,1,0,Completed,true,false,false
+AP008141,25 Feb 23,14,Sth Hawthorn,Highmoor Uniting,No. 1,Steffan Raab,Glenn Collins,Steffan Raab,8-6,8,6,1,0,Completed,true,false,false
+AP008141,25 Feb 23,14,Sth Hawthorn,Highmoor Uniting,No. 2,Hugh Blacket,Nick Martin,Hugh Blacket,8-6,8,6,1,0,Completed,true,false,false
+AP008141,25 Feb 23,14,Sth Hawthorn,Highmoor Uniting,No. 3,Simon Corrie,Richard Elvins,Simon Corrie,8-5,8,5,1,0,Completed,true,false,false
+AP008141,25 Feb 23,14,Sth Hawthorn,Highmoor Uniting,No. 4,David Wegener,Vikram Jangra,Vikram Jangra,2-8,2,8,0,1,Completed,true,true,false
+AP008142,25 Feb 23,14,Maccabi 2,Royal South Yarra,No. 1,Ben Pollak,Andrew Walker,Andrew Walker,4-8,4,8,0,1,Completed,true,false,false
+AP008142,25 Feb 23,14,Maccabi 2,Royal South Yarra,No. 2,Errol Dorfan,Stuart Webb,Errol Dorfan,8-3,8,3,1,0,Completed,true,false,false
+AP008142,25 Feb 23,14,Maccabi 2,Royal South Yarra,No. 3,Jack Stock,Simon Martin,Jack Stock,8-7,8,7,1,0,Completed,true,false,true
+AP008142,25 Feb 23,14,Maccabi 2,Royal South Yarra,No. 4,Joshua Duieb,Marco Mazzaro,Joshua Duieb,8-6,8,6,1,0,Completed,true,false,true
+AP008143,25 Feb 23,14,Maccabi 1,Monash University,No. 1,Nathan Rapoport,Zac Kwek,Zac Kwek,6-8,6,8,0,1,Completed,true,false,false
+AP008143,25 Feb 23,14,Maccabi 1,Monash University,No. 2,Daniel Goodrich,Philip Phung,,5-5,5,5,0,0,Unfinished,false,false,false
+AP008143,25 Feb 23,14,Maccabi 1,Monash University,No. 3,Stephen Kleid,Shrey Singh,Shrey Singh,2-8,2,8,0,1,Completed,true,false,false
+AP008143,25 Feb 23,14,Maccabi 1,Monash University,No. 4,Stephen Gorenstein,Joseph Tran,Joseph Tran,2-7,2,7,0,1,Completed,true,false,false
+AP008144,25 Feb 23,14,BLTC Blue,Coatesville,No. 1,Lochlan Friedrich,Marcus Aparo,Marcus Aparo,6-8,6,8,0,1,Completed,true,false,false
+AP008144,25 Feb 23,14,BLTC Blue,Coatesville,No. 2,Emerson Schillaci,Harry O'Dea,Harry O'Dea,4-8,4,8,0,1,Completed,true,false,false
+AP008144,25 Feb 23,14,BLTC Blue,Coatesville,No. 3,Julian Catala Prieto,Noah Winik,Noah Winik,7-8,7,8,0,1,Completed,true,false,false
+AP008144,25 Feb 23,14,BLTC Blue,Coatesville,No. 4,Liam Parsons,Michael Gershenzon,Michael Gershenzon,7-8,7,8,0,1,Completed,true,false,false
+AP008301,,16,Royal South Yarra,Sth Hawthorn,No. 1,Charlie Anderson,Hugh Blacket,Charlie Anderson,8-5,8,5,1,0,Completed,true,false,false
+AP008301,,16,Royal South Yarra,Sth Hawthorn,No. 2,Andrew Walker,Liam Greening,Andrew Walker,8-5,8,5,1,0,Completed,true,false,false
+AP008301,,16,Royal South Yarra,Sth Hawthorn,No. 3,Adrian Anderson,Simon Corrie,Adrian Anderson,8-2,8,2,1,0,Completed,true,false,false
+AP008301,,16,Royal South Yarra,Sth Hawthorn,No. 4,Stanislav Tabain,Andrew Antonopoulos,Stanislav Tabain,8-0,8,0,1,0,Completed,true,false,false
+AP008302,,16,Coatesville,Highmoor Uniting,No. 1,Marcus Aparo,Jason Mahmoud,Marcus Aparo,8-5,8,5,1,0,Completed,true,false,false
+AP008302,,16,Coatesville,Highmoor Uniting,No. 2,Harry O'Dea,Glenn Collins,Glenn Collins,3-8,3,8,0,1,Completed,true,false,false
+AP008302,,16,Coatesville,Highmoor Uniting,No. 3,Noah Winik,Nick Martin,Nick Martin,3-8,3,8,0,1,Completed,true,false,false
+AP008302,,16,Coatesville,Highmoor Uniting,No. 4,Michael Gershenzon,Vikram Jangra,Michael Gershenzon,8-4,8,4,1,0,Completed,true,false,false
+AP008321,,17,Royal South Yarra,Highmoor Uniting,No. 1,Charlie Anderson,Jason Mahmoud,Charlie Anderson,8-4,8,4,1,0,Completed,true,false,false
+AP008321,,17,Royal South Yarra,Highmoor Uniting,No. 2,Andrew Walker,Glenn Collins,Andrew Walker,8-4,8,4,1,0,Completed,true,false,false
+AP008321,,17,Royal South Yarra,Highmoor Uniting,No. 3,Stanislav Tabain,Brett Collins,Stanislav Tabain,8-6,8,6,1,0,Completed,true,false,false
+AP008321,,17,Royal South Yarra,Highmoor Uniting,No. 4,Stuart Webb,Nick Martin,Nick Martin,6-8,6,8,0,1,Completed,true,false,false

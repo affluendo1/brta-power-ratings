@@ -1,0 +1,164 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP005011,01 Oct 22,1,Ardrie Park,St Pats Mentone,No. 1,Tom Miller,Cameron De Silva,Tom Miller,8-1,8,1,1,0,Completed,true,false,false
+AP005011,01 Oct 22,1,Ardrie Park,St Pats Mentone,No. 2,Joe Monteiro,Alex Chingarev,Joe Monteiro,8-3,8,3,1,0,Completed,true,true,false
+AP005011,01 Oct 22,1,Ardrie Park,St Pats Mentone,No. 3,Sam Cohen,David Lawry,David Lawry,4-8,4,8,0,1,Completed,true,false,false
+AP005011,01 Oct 22,1,Ardrie Park,St Pats Mentone,No. 4,Will Nolan,Mike De Silva,Will Nolan,8-2,8,2,1,0,Completed,true,false,false
+AP005012,01 Oct 22,1,Dendy Park,BLTC Blue,No. 1,Dean Metter,Lachlann Murphy,Dean Metter,8-6,8,6,1,0,Completed,true,false,false
+AP005012,01 Oct 22,1,Dendy Park,BLTC Blue,No. 2,Mitchell Cooper,Ilai Manor,Mitchell Cooper,8-6,8,6,1,0,Completed,true,false,false
+AP005012,01 Oct 22,1,Dendy Park,BLTC Blue,No. 3,Tom Dubbeld,Will Vucic,Will Vucic,7-8,7,8,0,1,Completed,true,false,false
+AP005012,01 Oct 22,1,Dendy Park,BLTC Blue,No. 4,Ilan Goldsmith,[Unnamed emergency — TROLS AP005012 away code 4],Ilan Goldsmith,8-0,8,0,1,0,Completed,false,false,true
+AP005014,01 Oct 22,1,Mentone,Maccabi,No. 1,Jack Dooley,Steve Bendel,Steve Bendel,5-8,5,8,0,1,Completed,true,false,false
+AP005014,01 Oct 22,1,Mentone,Maccabi,No. 2,Jordan Dean,Marcus Frajman,Jordan Dean,8-5,8,5,1,0,Completed,true,false,false
+AP005014,01 Oct 22,1,Mentone,Maccabi,No. 3,Robert Donat,Anthony Murray,Robert Donat,8-2,8,2,1,0,Completed,true,false,false
+AP005014,01 Oct 22,1,Mentone,Maccabi,No. 4,Alex Cameron,Darren Seymour,Alex Cameron,8-2,8,2,1,0,Completed,true,false,false
+AP005021,08 Oct 22,2,Maccabi,Ardrie Park,No. 1,Steve Bendel,Tom Miller,Tom Miller,0-8,0,8,0,1,Completed,true,false,false
+AP005021,08 Oct 22,2,Maccabi,Ardrie Park,No. 2,Marcus Frajman,Sam Cohen,Marcus Frajman,8-4,8,4,1,0,Completed,true,false,false
+AP005021,08 Oct 22,2,Maccabi,Ardrie Park,No. 3,Ryan Behr,Will Nolan,Ryan Behr,8-1,8,1,1,0,Completed,true,false,false
+AP005021,08 Oct 22,2,Maccabi,Ardrie Park,No. 4,Adam Needleman,Brandt Kakulas,Adam Needleman,8-0,8,0,1,0,Completed,true,false,false
+AP005022,08 Oct 22,2,St Pats Mentone,Dendy Park,No. 1,Cameron De Silva,Dean Metter,Cameron De Silva,8-6,8,6,1,0,Completed,true,false,false
+AP005022,08 Oct 22,2,St Pats Mentone,Dendy Park,No. 2,David Lawry,Tom Dubbeld,David Lawry,8-0,8,0,1,0,Completed,true,false,false
+AP005022,08 Oct 22,2,St Pats Mentone,Dendy Park,No. 3,Sam Clayton,David Sacho,Sam Clayton,8-3,8,3,1,0,Completed,true,false,false
+AP005022,08 Oct 22,2,St Pats Mentone,Dendy Park,No. 4,Mike De Silva,Ilan Goldsmith,Ilan Goldsmith,6-8,6,8,0,1,Completed,true,false,false
+AP005023,08 Oct 22,2,BLTC Blue,Tennis World,No. 1,Evan Inavolu,Mathew Broadbent,Mathew Broadbent,2-8,2,8,0,1,Completed,true,false,false
+AP005023,08 Oct 22,2,BLTC Blue,Tennis World,No. 2,Lachlann Murphy,Wayne Smith,Lachlann Murphy,8-2,8,2,1,0,Completed,true,false,false
+AP005023,08 Oct 22,2,BLTC Blue,Tennis World,No. 3,Will Vucic,Benjamin Lambell,,1-1,1,1,0,0,Unfinished,false,false,false
+AP005023,08 Oct 22,2,BLTC Blue,Tennis World,No. 4,Joshua Newfield,Michael Quinn,,2-0,2,0,1,0,Unfinished,false,false,false
+AP005032,15 Oct 22,3,Dendy Park,Maccabi,No. 1,Mitchell Cooper,Steve Bendel,Mitchell Cooper,8-5,8,5,1,0,Completed,true,false,false
+AP005032,15 Oct 22,3,Dendy Park,Maccabi,No. 2,Tom Dubbeld,Ryan Behr,Ryan Behr,0-8,0,8,0,1,Completed,true,false,false
+AP005032,15 Oct 22,3,Dendy Park,Maccabi,No. 3,David Sacho,Adam Needleman,David Sacho,8-2,8,2,1,0,Completed,true,false,false
+AP005032,15 Oct 22,3,Dendy Park,Maccabi,No. 4,Ilan Goldsmith,Anthony Murray,Anthony Murray,1-8,1,8,0,1,Completed,true,false,false
+AP005033,15 Oct 22,3,Tennis World,St Pats Mentone,No. 1,Benjamin Lambell,Cameron De Silva,Cameron De Silva,2-8,2,8,0,1,Completed,true,false,false
+AP005033,15 Oct 22,3,Tennis World,St Pats Mentone,No. 2,Michael Quinn,Sam Clayton,Sam Clayton,2-8,2,8,0,1,Completed,true,false,false
+AP005033,15 Oct 22,3,Tennis World,St Pats Mentone,No. 3,Toan Nguyen,Nick Hall,Toan Nguyen,8-5,8,5,1,0,Completed,true,true,false
+AP005033,15 Oct 22,3,Tennis World,St Pats Mentone,No. 4,Nate Woot,Mike De Silva,Nate Woot,8-1,8,1,1,0,Completed,true,true,false
+AP005034,15 Oct 22,3,Mentone,BLTC Blue,No. 1,Dan Wood,Ilai Manor,Dan Wood,8-1,8,1,1,0,Completed,true,false,false
+AP005034,15 Oct 22,3,Mentone,BLTC Blue,No. 2,Robert Donat,Joshua Newfield,Robert Donat,8-5,8,5,1,0,Completed,true,false,false
+AP005034,15 Oct 22,3,Mentone,BLTC Blue,No. 3,Ivan Payung,Costa Papasotiriou,Ivan Payung,8-0,8,0,1,0,Completed,true,false,false
+AP005034,15 Oct 22,3,Mentone,BLTC Blue,No. 4,Alex Cameron,Darcy Henschke,Alex Cameron,8-3,8,3,1,0,Completed,true,false,false
+AP005041,22 Oct 22,4,BLTC Blue,Ardrie Park,No. 1,Evan Inavolu,Tom Miller,Tom Miller,1-8,1,8,0,1,Completed,true,false,false
+AP005041,22 Oct 22,4,BLTC Blue,Ardrie Park,No. 2,Lachlann Murphy,Sam Cohen,Lachlann Murphy,8-1,8,1,1,0,Completed,true,false,false
+AP005041,22 Oct 22,4,BLTC Blue,Ardrie Park,No. 3,Ilai Manor,Will Nolan,Ilai Manor,8-4,8,4,1,0,Completed,true,false,false
+AP005041,22 Oct 22,4,BLTC Blue,Ardrie Park,No. 4,Darcy Henschke,Brandt Kakulas,Darcy Henschke,8-4,8,4,1,0,Completed,true,false,false
+AP005044,22 Oct 22,4,St Pats Mentone,Mentone,No. 1,Cameron De Silva,Jack Dooley,Cameron De Silva,8-2,8,2,1,0,Completed,true,false,false
+AP005044,22 Oct 22,4,St Pats Mentone,Mentone,No. 2,David Lawry,Dan Wood,Dan Wood,7-8,7,8,0,1,Completed,true,false,false
+AP005044,22 Oct 22,4,St Pats Mentone,Mentone,No. 3,Sam Clayton,Robert Donat,Robert Donat,4-8,4,8,0,1,Completed,true,false,false
+AP005044,22 Oct 22,4,St Pats Mentone,Mentone,No. 4,Mike De Silva,Ivan Payung,Ivan Payung,7-8,7,8,0,1,Completed,true,false,false
+AP005051,05 Nov 22,5,Tennis World,Mentone,No. 1,Wayne Smith,Jordan Dean,Jordan Dean,6-8,6,8,0,1,Completed,true,false,false
+AP005051,05 Nov 22,5,Tennis World,Mentone,No. 2,Benjamin Lambell,Robert Donat,Robert Donat,7-8,7,8,0,1,Completed,true,false,false
+AP005051,05 Nov 22,5,Tennis World,Mentone,No. 3,Michael Quinn,Ivan Payung,Michael Quinn,8-2,8,2,1,0,Completed,true,false,false
+AP005051,05 Nov 22,5,Tennis World,Mentone,No. 4,David Cameron,Alex Cameron,Alex Cameron,0-8,0,8,0,1,Completed,true,false,false
+AP005053,05 Nov 22,5,BLTC Blue,St Pats Mentone,No. 1,Evan Inavolu,Cameron De Silva,Evan Inavolu,8-5,8,5,1,0,Completed,true,false,false
+AP005053,05 Nov 22,5,BLTC Blue,St Pats Mentone,No. 2,Lachlann Murphy,David Lawry,Lachlann Murphy,8-1,8,1,1,0,Completed,true,false,false
+AP005053,05 Nov 22,5,BLTC Blue,St Pats Mentone,No. 3,Joshua Newfield,Sam Clayton,Sam Clayton,5-8,5,8,0,1,Completed,true,false,false
+AP005053,05 Nov 22,5,BLTC Blue,St Pats Mentone,No. 4,Costa Papasotiriou,Nick Hall,Nick Hall,6-8,6,8,0,1,Completed,true,false,false
+AP005054,05 Nov 22,5,Ardrie Park,Dendy Park,No. 1,Tom Miller,Dean Metter,Tom Miller,8-1,8,1,1,0,Completed,true,false,false
+AP005054,05 Nov 22,5,Ardrie Park,Dendy Park,No. 2,Sam Cohen,Jackson Follett,Sam Cohen,8-6,8,6,1,0,Completed,true,false,false
+AP005054,05 Nov 22,5,Ardrie Park,Dendy Park,No. 3,Will Nolan,David Sacho,David Sacho,5-8,5,8,0,1,Completed,true,false,false
+AP005054,05 Nov 22,5,Ardrie Park,Dendy Park,No. 4,Brandt Kakulas,Ilan Goldsmith,Brandt Kakulas,8-4,8,4,1,0,Completed,true,false,false
+AP005061,12 Nov 22,6,Dendy Park,Tennis World,No. 1,Dean Metter,Mathew Broadbent,Dean Metter,8-7,8,7,1,0,Completed,true,false,false
+AP005061,12 Nov 22,6,Dendy Park,Tennis World,No. 2,Mitchell Cooper,Wayne Smith,Mitchell Cooper,8-7,8,7,1,0,Completed,true,false,false
+AP005061,12 Nov 22,6,Dendy Park,Tennis World,No. 3,Tom Dubbeld,Benjamin Lambell,Benjamin Lambell,0-8,0,8,0,1,Completed,true,false,false
+AP005061,12 Nov 22,6,Dendy Park,Tennis World,No. 4,Ilan Goldsmith,Toan Nguyen,Toan Nguyen,5-8,5,8,0,1,Completed,true,false,true
+AP005062,12 Nov 22,6,Mentone,Ardrie Park,No. 1,Jack Dooley,Tom Miller,Tom Miller,1-8,1,8,0,1,Completed,true,false,false
+AP005062,12 Nov 22,6,Mentone,Ardrie Park,No. 2,Dan Wood,Sam Cohen,Dan Wood,8-5,8,5,1,0,Completed,true,false,false
+AP005062,12 Nov 22,6,Mentone,Ardrie Park,No. 3,Jordan Dean,Will Nolan,Jordan Dean,8-6,8,6,1,0,Completed,true,false,false
+AP005062,12 Nov 22,6,Mentone,Ardrie Park,No. 4,Alex Cameron,Brandt Kakulas,Alex Cameron,8-5,8,5,1,0,Completed,true,false,false
+AP005064,12 Nov 22,6,St Pats Mentone,Maccabi,No. 1,Alex Chingarev,Marcus Frajman,Marcus Frajman,3-8,3,8,0,1,Completed,true,false,false
+AP005064,12 Nov 22,6,St Pats Mentone,Maccabi,No. 2,David Lawry,Ryan Behr,Ryan Behr,4-8,4,8,0,1,Completed,true,false,false
+AP005064,12 Nov 22,6,St Pats Mentone,Maccabi,No. 3,Nick Hall,Daniel Henquin,Daniel Henquin,3-8,3,8,0,1,Completed,true,false,false
+AP005064,12 Nov 22,6,St Pats Mentone,Maccabi,No. 4,Mike De Silva,Anthony Murray,Anthony Murray,6-8,6,8,0,1,Completed,true,false,false
+AP005071,19 Nov 22,7,Ardrie Park,Tennis World,No. 1,Tom Miller,Mathew Broadbent,Mathew Broadbent,7-8,7,8,0,1,Completed,true,false,false
+AP005071,19 Nov 22,7,Ardrie Park,Tennis World,No. 2,Tim Bayley,Wayne Smith,Wayne Smith,3-8,3,8,0,1,Completed,true,false,false
+AP005071,19 Nov 22,7,Ardrie Park,Tennis World,No. 3,Will Nolan,Michael Quinn,Will Nolan,8-4,8,4,1,0,Completed,true,false,false
+AP005071,19 Nov 22,7,Ardrie Park,Tennis World,No. 4,Philip Cassou-Desus,David Cameron,David Cameron,4-8,4,8,0,1,Completed,true,false,false
+AP005081,26 Nov 22,8,St Pats Mentone,Ardrie Park,No. 1,Cameron De Silva,Tom Miller,Tom Miller,2-8,2,8,0,1,Completed,true,false,false
+AP005081,26 Nov 22,8,St Pats Mentone,Ardrie Park,No. 2,Alex Chingarev,Sam Cohen,Alex Chingarev,8-4,8,4,1,0,Completed,true,false,false
+AP005081,26 Nov 22,8,St Pats Mentone,Ardrie Park,No. 3,David Lawry,Will Nolan,Will Nolan,6-8,6,8,0,1,Completed,true,false,false
+AP005081,26 Nov 22,8,St Pats Mentone,Ardrie Park,No. 4,Sam Clayton,Brandt Kakulas,Sam Clayton,8-2,8,2,1,0,Completed,true,false,false
+AP005082,26 Nov 22,8,BLTC Blue,Dendy Park,No. 1,Evan Inavolu,Dean Metter,Evan Inavolu,8-3,8,3,1,0,Completed,true,false,false
+AP005082,26 Nov 22,8,BLTC Blue,Dendy Park,No. 2,Ilai Manor,David Sacho,Ilai Manor,8-4,8,4,1,0,Completed,true,false,false
+AP005082,26 Nov 22,8,BLTC Blue,Dendy Park,No. 3,Bobby Chen,Michael Cooper,Bobby Chen,8-5,8,5,1,0,Completed,true,true,false
+AP005082,26 Nov 22,8,BLTC Blue,Dendy Park,No. 4,Darcy Henschke,Ilan Goldsmith,Ilan Goldsmith,7-8,7,8,0,1,Completed,true,false,false
+AP005084,26 Nov 22,8,Maccabi,Mentone,No. 1,Steve Bendel,Jack Dooley,Jack Dooley,4-8,4,8,0,1,Completed,true,false,false
+AP005084,26 Nov 22,8,Maccabi,Mentone,No. 2,Marcus Frajman,Dan Wood,Marcus Frajman,8-2,8,2,1,0,Completed,true,false,false
+AP005084,26 Nov 22,8,Maccabi,Mentone,No. 3,Daniel Henquin,Jordan Dean,Jordan Dean,2-8,2,8,0,1,Completed,true,false,false
+AP005084,26 Nov 22,8,Maccabi,Mentone,No. 4,Natalie Nahoom,Ivan Payung,Ivan Payung,0-8,0,8,0,1,Completed,true,true,false
+AP005091,03 Dec 22,9,Ardrie Park,Maccabi,No. 1,Tom Miller,Steve Bendel,Tom Miller,8-0,8,0,1,0,Completed,true,false,false
+AP005091,03 Dec 22,9,Ardrie Park,Maccabi,No. 2,Sam Cohen,Marcus Frajman,Marcus Frajman,2-8,2,8,0,1,Completed,true,false,false
+AP005091,03 Dec 22,9,Ardrie Park,Maccabi,No. 3,Will Nolan,Daniel Henquin,Will Nolan,8-2,8,2,1,0,Completed,true,false,false
+AP005091,03 Dec 22,9,Ardrie Park,Maccabi,No. 4,Brandt Kakulas,Brian Watson,Brian Watson,7-8,7,8,0,1,Completed,true,false,true
+AP005092,03 Dec 22,9,Dendy Park,St Pats Mentone,No. 1,Jackson Follett,Cameron De Silva,Cameron De Silva,5-8,5,8,0,1,Completed,true,false,false
+AP005092,03 Dec 22,9,Dendy Park,St Pats Mentone,No. 2,David Sacho,Alex Chingarev,Alex Chingarev,5-8,5,8,0,1,Completed,true,false,false
+AP005092,03 Dec 22,9,Dendy Park,St Pats Mentone,No. 3,Noam Barel,Sam Clayton,Sam Clayton,7-8,7,8,0,1,Completed,true,true,false
+AP005092,03 Dec 22,9,Dendy Park,St Pats Mentone,No. 4,Cooper Follett,Nick Hall,Nick Hall,5-8,5,8,0,1,Completed,true,true,false
+AP005093,03 Dec 22,9,Tennis World,BLTC Blue,No. 1,Wayne Smith,Evan Inavolu,Evan Inavolu,2-8,2,8,0,1,Completed,true,false,false
+AP005093,03 Dec 22,9,Tennis World,BLTC Blue,No. 2,Benjamin Lambell,Ilai Manor,Ilai Manor,5-8,5,8,0,1,Completed,true,false,false
+AP005093,03 Dec 22,9,Tennis World,BLTC Blue,No. 3,David Cameron,Joshua Newfield,Joshua Newfield,2-8,2,8,0,1,Completed,true,false,false
+AP005093,03 Dec 22,9,Tennis World,BLTC Blue,No. 4,Dirk Kramer,Costa Papasotiriou,Costa Papasotiriou,4-8,4,8,0,1,Completed,true,true,false
+AP005102,10 Dec 22,10,Maccabi,Dendy Park,No. 1,Steve Bendel,Dean Metter,Dean Metter,6-8,6,8,0,1,Completed,true,false,false
+AP005102,10 Dec 22,10,Maccabi,Dendy Park,No. 2,Ryan Behr,Tom Dubbeld,Ryan Behr,8-2,8,2,1,0,Completed,true,false,false
+AP005102,10 Dec 22,10,Maccabi,Dendy Park,No. 3,Adam Needleman,David Sacho,David Sacho,3-8,3,8,0,1,Completed,true,false,false
+AP005102,10 Dec 22,10,Maccabi,Dendy Park,No. 4,Anthony Murray,Michael Cooper,Anthony Murray,8-7,8,7,1,0,Completed,true,false,false
+AP005103,10 Dec 22,10,St Pats Mentone,Tennis World,No. 1,Cameron De Silva,Mathew Broadbent,Cameron De Silva,8-4,8,4,1,0,Completed,true,false,false
+AP005103,10 Dec 22,10,St Pats Mentone,Tennis World,No. 2,Alex Chingarev,Benjamin Lambell,Alex Chingarev,8-5,8,5,1,0,Completed,true,false,false
+AP005103,10 Dec 22,10,St Pats Mentone,Tennis World,No. 3,Nick Hall,Michael Quinn,Nick Hall,8-6,8,6,1,0,Completed,true,false,false
+AP005103,10 Dec 22,10,St Pats Mentone,Tennis World,No. 4,Mike De Silva,[Unnamed emergency — TROLS AP005103 away code 4],Mike De Silva,8-0,8,0,1,0,Completed,false,false,true
+AP005104,10 Dec 22,10,BLTC Blue,Mentone,No. 1,Evan Inavolu,Jack Dooley,Evan Inavolu,8-4,8,4,1,0,Completed,true,false,false
+AP005104,10 Dec 22,10,BLTC Blue,Mentone,No. 2,Ilai Manor,Jordan Dean,Ilai Manor,8-3,8,3,1,0,Completed,true,false,false
+AP005104,10 Dec 22,10,BLTC Blue,Mentone,No. 3,Will Vucic,Ivan Payung,Ivan Payung,2-8,2,8,0,1,Completed,true,false,false
+AP005104,10 Dec 22,10,BLTC Blue,Mentone,No. 4,Darcy Henschke,Alex Cameron,Alex Cameron,0-8,0,8,0,1,Completed,true,false,false
+AP005111,04 Feb 23,11,Ardrie Park,BLTC Blue,No. 1,Tom Miller,Lachlann Murphy,Tom Miller,8-0,8,0,1,0,Completed,true,false,false
+AP005111,04 Feb 23,11,Ardrie Park,BLTC Blue,No. 2,Tim Bayley,Joshua Newfield,Tim Bayley,8-1,8,1,1,0,Completed,true,false,false
+AP005111,04 Feb 23,11,Ardrie Park,BLTC Blue,No. 3,Will Nolan,Bobby Chen,Will Nolan,8-7,8,7,1,0,Completed,true,false,true
+AP005111,04 Feb 23,11,Ardrie Park,BLTC Blue,No. 4,Philip Cassou-Desus,Nico Shaw,Philip Cassou-Desus,8-4,8,4,1,0,Completed,true,false,true
+AP005113,04 Feb 23,11,Tennis World,Maccabi,No. 1,Mathew Broadbent,Steve Bendel,Mathew Broadbent,8-6,8,6,1,0,Completed,true,false,false
+AP005113,04 Feb 23,11,Tennis World,Maccabi,No. 2,Wayne Smith,Ryan Behr,Ryan Behr,4-8,4,8,0,1,Completed,true,false,false
+AP005113,04 Feb 23,11,Tennis World,Maccabi,No. 3,Benjamin Lambell,Adam Needleman,Adam Needleman,6-8,6,8,0,1,Completed,true,false,false
+AP005113,04 Feb 23,11,Tennis World,Maccabi,No. 4,David Cameron,Darren Seymour,Darren Seymour,5-8,5,8,0,1,Completed,true,false,false
+AP005114,04 Feb 23,11,Mentone,St Pats Mentone,No. 1,Jack Dooley,Cameron De Silva,Jack Dooley,8-7,8,7,1,0,Completed,true,false,false
+AP005114,04 Feb 23,11,Mentone,St Pats Mentone,No. 2,Dan Wood,Alex Chingarev,Alex Chingarev,3-8,3,8,0,1,Completed,true,false,false
+AP005114,04 Feb 23,11,Mentone,St Pats Mentone,No. 3,Ivan Payung,Nick Hall,Ivan Payung,8-4,8,4,1,0,Completed,true,false,false
+AP005114,04 Feb 23,11,Mentone,St Pats Mentone,No. 4,Alex Cameron,Mike De Silva,Alex Cameron,8-1,8,1,1,0,Completed,true,false,false
+AP005121,11 Feb 23,12,Mentone,Tennis World,No. 1,Dan Wood,Mathew Broadbent,Mathew Broadbent,3-8,3,8,0,1,Completed,true,false,false
+AP005121,11 Feb 23,12,Mentone,Tennis World,No. 2,Jordan Dean,Benjamin Lambell,Jordan Dean,8-0,8,0,1,0,Completed,true,false,false
+AP005121,11 Feb 23,12,Mentone,Tennis World,No. 3,Robert Donat,Matthew Stanbridge,Robert Donat,8-0,8,0,1,0,Completed,true,false,true
+AP005121,11 Feb 23,12,Mentone,Tennis World,No. 4,Ivan Payung,[Unnamed emergency — TROLS AP005121 away code 4],Ivan Payung,8-0,8,0,1,0,Completed,false,false,true
+AP005123,11 Feb 23,12,St Pats Mentone,BLTC Blue,No. 1,Cameron De Silva,Evan Inavolu,Evan Inavolu,7-8,7,8,0,1,Completed,true,false,false
+AP005123,11 Feb 23,12,St Pats Mentone,BLTC Blue,No. 2,Alex Chingarev,Lachlann Murphy,Alex Chingarev,8-6,8,6,1,0,Completed,true,false,false
+AP005123,11 Feb 23,12,St Pats Mentone,BLTC Blue,No. 3,David Lawry,Ilai Manor,Ilai Manor,3-8,3,8,0,1,Completed,true,false,false
+AP005123,11 Feb 23,12,St Pats Mentone,BLTC Blue,No. 4,Mike De Silva,Darcy Henschke,Mike De Silva,8-2,8,2,1,0,Completed,true,false,false
+AP005124,11 Feb 23,12,Dendy Park,Ardrie Park,No. 1,Dean Metter,Tom Miller,Tom Miller,2-8,2,8,0,1,Completed,true,false,false
+AP005124,11 Feb 23,12,Dendy Park,Ardrie Park,No. 2,Tom Dubbeld,Tim Bayley,Tim Bayley,4-8,4,8,0,1,Completed,true,false,false
+AP005124,11 Feb 23,12,Dendy Park,Ardrie Park,No. 3,David Sacho,Sam Cohen,David Sacho,8-6,8,6,1,0,Completed,true,false,false
+AP005124,11 Feb 23,12,Dendy Park,Ardrie Park,No. 4,Michael Cooper,Philip Cassou-Desus,Michael Cooper,8-2,8,2,1,0,Completed,true,false,false
+AP005131,18 Feb 23,13,Tennis World,Dendy Park,No. 1,Mathew Broadbent,Dean Metter,Mathew Broadbent,8-2,8,2,1,0,Completed,true,false,false
+AP005131,18 Feb 23,13,Tennis World,Dendy Park,No. 2,Wayne Smith,Tom Dubbeld,Wayne Smith,8-4,8,4,1,0,Completed,true,false,false
+AP005131,18 Feb 23,13,Tennis World,Dendy Park,No. 3,Benjamin Lambell,David Sacho,David Sacho,2-8,2,8,0,1,Completed,true,false,false
+AP005131,18 Feb 23,13,Tennis World,Dendy Park,No. 4,Jeremy Broadbent,Michael Cooper,Jeremy Broadbent,8-6,8,6,1,0,Completed,true,true,false
+AP005134,18 Feb 23,13,Maccabi,St Pats Mentone,No. 1,Marcus Frajman,Cameron De Silva,Marcus Frajman,8-5,8,5,1,0,Completed,true,false,false
+AP005134,18 Feb 23,13,Maccabi,St Pats Mentone,No. 2,Ryan Behr,Alex Chingarev,Alex Chingarev,5-8,5,8,0,1,Completed,true,false,false
+AP005134,18 Feb 23,13,Maccabi,St Pats Mentone,No. 3,Daniel Henquin,David Lawry,Daniel Henquin,8-6,8,6,1,0,Completed,true,false,false
+AP005134,18 Feb 23,13,Maccabi,St Pats Mentone,No. 4,Darren Seymour,Nick Hall,Nick Hall,6-8,6,8,0,1,Completed,true,false,false
+AP005141,25 Feb 23,14,Tennis World,Ardrie Park,No. 1,Mathew Broadbent,Tom Miller,Tom Miller,4-8,4,8,0,1,Completed,true,false,false
+AP005141,25 Feb 23,14,Tennis World,Ardrie Park,No. 2,Benjamin Lambell,Sam Cohen,Benjamin Lambell,8-5,8,5,1,0,Completed,true,false,false
+AP005141,25 Feb 23,14,Tennis World,Ardrie Park,No. 3,Jeremy Broadbent,Will Nolan,Will Nolan,7-8,7,8,0,1,Completed,true,true,false
+AP005141,25 Feb 23,14,Tennis World,Ardrie Park,No. 4,Dirk Kramer,Philip Cassou-Desus,Philip Cassou-Desus,0-8,0,8,0,1,Completed,true,true,false
+AP005142,25 Feb 23,14,Mentone,Dendy Park,No. 1,Dan Wood,Dean Metter,Dean Metter,0-8,0,8,0,1,Completed,true,false,false
+AP005142,25 Feb 23,14,Mentone,Dendy Park,No. 2,Jordan Dean,David Sacho,,3-4,3,4,0,1,Unfinished,false,false,false
+AP005142,25 Feb 23,14,Mentone,Dendy Park,No. 3,Robert Donat,Michael Cooper,Michael Cooper,4-5,4,5,0,1,Completed,true,false,false
+AP005143,25 Feb 23,14,BLTC Blue,Maccabi,No. 1,Evan Inavolu,Steve Bendel,Steve Bendel,5-8,5,8,0,1,Completed,true,false,false
+AP005143,25 Feb 23,14,BLTC Blue,Maccabi,No. 2,Lachlann Murphy,Marcus Frajman,Lachlann Murphy,8-3,8,3,1,0,Completed,true,false,false
+AP005143,25 Feb 23,14,BLTC Blue,Maccabi,No. 3,Ilai Manor,Daniel Henquin,Ilai Manor,8-3,8,3,1,0,Completed,true,false,false
+AP005143,25 Feb 23,14,BLTC Blue,Maccabi,No. 4,Will Vucic,Anthony Murray,Anthony Murray,5-8,5,8,0,1,Completed,true,false,false
+AP005301,,16,Mentone,St Pats Mentone,No. 1,Dan Wood,Cameron De Silva,Cameron De Silva,4-8,4,8,0,1,Completed,true,false,false
+AP005301,,16,Mentone,St Pats Mentone,No. 2,Jordan Dean,Alex Chingarev,Jordan Dean,8-5,8,5,1,0,Completed,true,false,false
+AP005301,,16,Mentone,St Pats Mentone,No. 3,Robert Donat,Nick Hall,Robert Donat,8-3,8,3,1,0,Completed,true,false,false
+AP005301,,16,Mentone,St Pats Mentone,No. 4,Ivan Payung,Mike De Silva,Ivan Payung,8-3,8,3,1,0,Completed,true,false,false
+AP005302,,16,Ardrie Park,Maccabi,No. 1,Tom Miller,Steve Bendel,Tom Miller,8-0,8,0,1,0,Completed,true,false,false
+AP005302,,16,Ardrie Park,Maccabi,No. 2,Tim Bayley,Marcus Frajman,Tim Bayley,8-7,8,7,1,0,Completed,true,false,false
+AP005302,,16,Ardrie Park,Maccabi,No. 3,Will Nolan,Ryan Behr,Ryan Behr,5-8,5,8,0,1,Completed,true,false,false
+AP005302,,16,Ardrie Park,Maccabi,No. 4,Philip Cassou-Desus,Anthony Murray,Philip Cassou-Desus,8-5,8,5,1,0,Completed,true,false,false
+AP005321,,17,Mentone,Ardrie Park,No. 1,Dan Wood,Tom Miller,Tom Miller,4-8,4,8,0,1,Completed,true,false,false
+AP005321,,17,Mentone,Ardrie Park,No. 2,Jordan Dean,Tim Bayley,Tim Bayley,3-8,3,8,0,1,Completed,true,false,false
+AP005321,,17,Mentone,Ardrie Park,No. 3,Robert Donat,Will Nolan,Will Nolan,1-8,1,8,0,1,Completed,true,false,false
+AP005321,,17,Mentone,Ardrie Park,No. 4,Ivan Payung,Philip Cassou-Desus,Ivan Payung,8-1,8,1,1,0,Completed,true,false,false

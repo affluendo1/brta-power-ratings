@@ -1,0 +1,82 @@
+{
+  "asset_id": "AP24-AP003",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 11/12",
+  "season_id": "AP24",
+  "season_label": "Summer 11/12",
+  "source_section_code": "AP003",
+  "section_label": "Ladies Rubber 3",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "St Pats Mentone",
+      "wins": 9,
+      "points": 85,
+      "percentage": 194.32,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "BLTC",
+      "wins": 4,
+      "points": 53,
+      "percentage": 105.6,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Kings Park",
+      "wins": 4,
+      "points": 51.5,
+      "percentage": 118.71,
+      "marker": "P"
+    },
+    {
+      "position": 4,
+      "team": "Port Melbourne",
+      "wins": 3,
+      "points": 40.5,
+      "percentage": 85.28,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Ormond",
+      "wins": 0,
+      "points": 18,
+      "percentage": 43.39,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP24-AP003",
+  "fixtures": 47,
+  "completed_fixtures": 25,
+  "draw_fixtures": 57,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 94,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP003143 doubles No. 1: '6-3 4-6'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP003143 doubles No. 2: '4-6 6-6'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

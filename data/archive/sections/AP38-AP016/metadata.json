@@ -1,0 +1,106 @@
+{
+  "asset_id": "AP38-AP016",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 18/19",
+  "season_id": "AP38",
+  "season_label": "Summer 18/19",
+  "source_section_code": "AP016",
+  "section_label": "Mens S/D 3",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Dendy Park",
+      "wins": 11,
+      "points": 102,
+      "percentage": 125.22,
+      "marker": ""
+    },
+    {
+      "position": 2,
+      "team": "Patterson Lakes",
+      "wins": 9,
+      "points": 98.5,
+      "percentage": 152.85,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Overport Park",
+      "wins": 8,
+      "points": 93,
+      "percentage": 131.78,
+      "marker": "R"
+    },
+    {
+      "position": 4,
+      "team": "Highmoor Uniting",
+      "wins": 10,
+      "points": 90,
+      "percentage": 114.8,
+      "marker": "P"
+    },
+    {
+      "position": 5,
+      "team": "BLTC",
+      "wins": 5,
+      "points": 65,
+      "percentage": 98.87,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Caulfield Rec",
+      "wins": 6,
+      "points": 57,
+      "percentage": 85.67,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Tennis World",
+      "wins": 3,
+      "points": 35.5,
+      "percentage": 71.64,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "Hawthorn",
+      "wins": 0,
+      "points": 19,
+      "percentage": 50.0,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP38-AP016",
+  "fixtures": 59,
+  "completed_fixtures": 57,
+  "draw_fixtures": 59,
+  "singles_rubbers": 225,
+  "doubles_rubbers": 112,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP016031 singles No. 3: '1-3'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP016103 singles No. 2: '4-3'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "asset_id": "AP43-AP005",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 21/22",
+  "season_id": "AP43",
+  "season_label": "Summer 21/22",
+  "source_section_code": "AP005",
+  "section_label": "Mens S/D 5",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "St Anthony's",
+      "wins": 9,
+      "points": 101,
+      "percentage": 193.16,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Hawthorn",
+      "wins": 7,
+      "points": 85,
+      "percentage": 147.67,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Tennis World",
+      "wins": 5,
+      "points": 67,
+      "percentage": 109.75,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "BLTC",
+      "wins": 4,
+      "points": 58,
+      "percentage": 97.05,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Ardrie Park",
+      "wins": 4,
+      "points": 46,
+      "percentage": 75.72,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "St Pats Mentone",
+      "wins": 4,
+      "points": 45,
+      "percentage": 79.3,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Patterson Lakes",
+      "wins": 1,
+      "points": 42,
+      "percentage": 86.14,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "Eaglemont",
+      "wins": 1,
+      "points": 36,
+      "percentage": 62.33,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP43-AP005",
+  "fixtures": 59,
+  "completed_fixtures": 46,
+  "draw_fixtures": 59,
+  "singles_rubbers": 152,
+  "doubles_rubbers": 76,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

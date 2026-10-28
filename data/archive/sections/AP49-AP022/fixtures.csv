@@ -1,0 +1,60 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP022011,05 Oct 24,1,regular,Round 1,Legend Park,Fitzroy,4,4,0,2,,,6,18,Completed,
+AP022012,05 Oct 24,1,regular,Round 1,St Louis de Mont,Overport Park,7.5,0.5,7,0,,,47,11,Completed,
+AP022013,05 Oct 24,1,regular,Round 1,Chadstone,Hurlingham Park,3.5,4.5,1,2,,,10,15,Completed,
+AP022014,05 Oct 24,1,regular,Round 1,Port Melbourne,Ormond,7.5,0.5,7,0,,,45,14,Completed,
+AP022021,12 Oct 24,2,regular,Round 2,Ormond,Legend Park,0,8,0,8,,,6,48,Completed,
+AP022023,12 Oct 24,2,regular,Round 2,Overport Park,Chadstone,7,1,6,2,,,41,33,Completed,
+AP022024,12 Oct 24,2,regular,Round 2,Hurlingham Park,Port Melbourne,2,6,4,4,,,41,42,Completed,
+pending-ap022-r2-fitzroy-st-louis-de-mont,12 Oct 24,2,regular,Round 2,Fitzroy,St Louis de Mont,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP022031,19 Oct 24,3,regular,Round 3,Legend Park,Hurlingham Park,6,2,4,4,,,41,39,Completed,
+AP022032,19 Oct 24,3,regular,Round 3,St Louis de Mont,Ormond,8,0,8,0,,,48,3,Completed,
+AP022033,19 Oct 24,3,regular,Round 3,Chadstone,Fitzroy,7,1,6,3,,,46,40,Completed,
+AP022034,19 Oct 24,3,regular,Round 3,Port Melbourne,Overport Park,7,1,7,3,,,61,47,Completed,
+AP022041,26 Oct 24,4,regular,Round 4,Overport Park,Legend Park,1,7,2,6,,,24,43,Completed,
+AP022042,26 Oct 24,4,regular,Round 4,Hurlingham Park,St Louis de Mont,2,6,4,5,,,42,49,Completed,
+AP022043,26 Oct 24,4,regular,Round 4,Ormond,Chadstone,2,6,4,5,,,30,49,Completed,
+AP022044,26 Oct 24,4,regular,Round 4,Fitzroy,Port Melbourne,2,6,4,5,,,39,46,Completed,
+AP022051,09 Nov 24,5,regular,Round 5,Chadstone,Port Melbourne,2,6,4,4,,,32,36,Completed,
+AP022052,09 Nov 24,5,regular,Round 5,Ormond,Hurlingham Park,0,8,0,8,,,13,48,Completed,
+AP022053,09 Nov 24,5,regular,Round 5,Overport Park,Fitzroy,0,8,1,8,,,25,53,Completed,
+AP022054,09 Nov 24,5,regular,Round 5,Legend Park,St Louis de Mont,1,7,3,7,,,34,55,Completed,
+AP022061,16 Nov 24,6,regular,Round 6,St Louis de Mont,Chadstone,4,4,4,4,,,38,38,Completed,
+AP022063,16 Nov 24,6,regular,Round 6,Hurlingham Park,Overport Park,5,3,4,1,,,28,15,Completed,
+AP022064,16 Nov 24,6,regular,Round 6,Fitzroy,Ormond,8,0,8,0,,,48,3,Completed,
+pending-ap022-r6-port-melbourne-legend-park,16 Nov 24,6,regular,Round 6,Port Melbourne,Legend Park,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP022072,23 Nov 24,7,regular,Round 7,St Louis de Mont,Port Melbourne,7,1,6,2,,,41,28,Completed,
+pending-ap022-r7-hurlingham-park-fitzroy,23 Nov 24,7,regular,Round 7,Hurlingham Park,Fitzroy,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap022-r7-legend-park-chadstone,23 Nov 24,7,regular,Round 7,Legend Park,Chadstone,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap022-r7-ormond-overport-park,23 Nov 24,7,regular,Round 7,Ormond,Overport Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap022-r8-fitzroy-legend-park,30 Nov 24,8,regular,Round 8,Fitzroy,Legend Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap022-r8-hurlingham-park-chadstone,30 Nov 24,8,regular,Round 8,Hurlingham Park,Chadstone,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap022-r8-ormond-port-melbourne,30 Nov 24,8,regular,Round 8,Ormond,Port Melbourne,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap022-r8-overport-park-st-louis-de-mont,30 Nov 24,8,regular,Round 8,Overport Park,St Louis de Mont,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP022091,07 Dec 24,9,regular,Round 9,Legend Park,Ormond,8,0,8,0,,,48,10,Completed,
+AP022092,07 Dec 24,9,regular,Round 9,St Louis de Mont,Fitzroy,7,1,7,2,,,53,26,Completed,
+AP022093,07 Dec 24,9,regular,Round 9,Chadstone,Overport Park,0,8,1,8,,,28,57,Completed,
+AP022094,07 Dec 24,9,regular,Round 9,Port Melbourne,Hurlingham Park,1,7,3,7,,,47,58,Completed,
+AP022101,14 Dec 24,10,regular,Round 10,Hurlingham Park,Legend Park,1,7,2,6,,,29,42,Completed,
+AP022102,14 Dec 24,10,regular,Round 10,Ormond,St Louis de Mont,0,8,0,8,,,3,48,Completed,
+AP022103,14 Dec 24,10,regular,Round 10,Fitzroy,Chadstone,1,7,2,6,,,22,43,Completed,
+AP022104,14 Dec 24,10,regular,Round 10,Overport Park,Port Melbourne,8,0,8,1,,,52,34,Completed,
+AP022111,01 Feb 25,11,regular,Round 11,Legend Park,Overport Park,4,4,1,0,,,9,6,Completed,
+AP022112,01 Feb 25,11,regular,Round 11,St Louis de Mont,Hurlingham Park,7,1,6,3,,,44,32,Completed,
+AP022113,01 Feb 25,11,regular,Round 11,Chadstone,Ormond,8,0,8,0,,,48,2,Completed,
+AP022114,01 Feb 25,11,regular,Round 11,Port Melbourne,Fitzroy,2,6,4,5,,,42,43,Completed,
+AP022121,08 Feb 25,12,regular,Round 12,Port Melbourne,Chadstone,7,1,7,2,,,54,25,Completed,
+AP022122,08 Feb 25,12,regular,Round 12,Hurlingham Park,Ormond,8,0,8,0,,,48,5,Completed,
+AP022123,08 Feb 25,12,regular,Round 12,Fitzroy,Overport Park,8,0,8,0,,,48,15,Completed,
+AP022124,08 Feb 25,12,regular,Round 12,St Louis de Mont,Legend Park,7,1,6,2,,,39,21,Completed,
+AP022131,15 Feb 25,13,regular,Round 13,Chadstone,St Louis de Mont,0,8,1,8,,,20,51,Completed,
+AP022132,15 Feb 25,13,regular,Round 13,Legend Park,Port Melbourne,4.5,3.5,3,0,,,23,14,Completed,
+AP022133,15 Feb 25,13,regular,Round 13,Overport Park,Hurlingham Park,1,7,3,6,,,30,47,Completed,
+AP022134,15 Feb 25,13,regular,Round 13,Ormond,Fitzroy,3,5,0,4,,,3,24,Completed,
+pending-ap022-r14-chadstone-legend-park,22 Feb 25,14,regular,Round 14,Chadstone,Legend Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap022-r14-fitzroy-hurlingham-park,22 Feb 25,14,regular,Round 14,Fitzroy,Hurlingham Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap022-r14-overport-park-ormond,22 Feb 25,14,regular,Round 14,Overport Park,Ormond,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap022-r14-port-melbourne-st-louis-de-mont,22 Feb 25,14,regular,Round 14,Port Melbourne,St Louis de Mont,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP022301,,16,semi_final,Semi-final,St Louis de Mont,Legend Park,7,1,6,3,,,51,41,Completed,
+AP022302,,16,semi_final,Semi-final,Fitzroy,Port Melbourne,2,6,4,5,,,43,46,Completed,
+AP022321,,17,grand_final,Grand final · TROLS entry 2,St Louis de Mont,Port Melbourne,7,1,6,1,,,44,26,Completed,

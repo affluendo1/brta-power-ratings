@@ -1,0 +1,90 @@
+{
+  "asset_id": "AP21-AP002",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Winter 2010",
+  "season_id": "AP21",
+  "season_label": "Winter 2010",
+  "source_section_code": "AP002",
+  "section_label": "Ladies Sets 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Beaumaris CC",
+      "wins": 0,
+      "points": 93,
+      "percentage": 144.21,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "Victory Park",
+      "wins": 0,
+      "points": 75,
+      "percentage": 128.0,
+      "marker": "P"
+    },
+    {
+      "position": 3,
+      "team": "East Malvern",
+      "wins": 0,
+      "points": 67.5,
+      "percentage": 100.47,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Highmoor Uniting",
+      "wins": 0,
+      "points": 64,
+      "percentage": 104.66,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Mentone",
+      "wins": 0,
+      "points": 51,
+      "percentage": 99.77,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Kings Park",
+      "wins": 0,
+      "points": 9.5,
+      "percentage": 50.54,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 1,
+    "doublesTarget": 10,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP21-AP002",
+  "fixtures": 47,
+  "completed_fixtures": 47,
+  "draw_fixtures": 46,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 184,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP002063 doubles No. 1: '1-1'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP002063 doubles No. 2: '0-1'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

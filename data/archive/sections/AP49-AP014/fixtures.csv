@@ -1,0 +1,47 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP014011,05 Oct 24,1,regular,Round 1,Eaglemont,Monash University,8.5,1.5,4,0,,,31,9,Completed,
+AP014012,05 Oct 24,1,regular,Round 1,Royal South Yarra Navy,Kooyong,5,5,0,1,,,7,11,Completed,
+AP014013,05 Oct 24,1,regular,Round 1,Tennis World,Royal South Yarra Gold,5,5,1,1,,,8,8,Completed,
+AP014021,12 Oct 24,2,regular,Round 2,Royal South Yarra Gold,Eaglemont,3,7,4,5,,,47,50,Completed,
+AP014022,12 Oct 24,2,regular,Round 2,Kooyong,Tennis World,8,2,6,3,,,53,36,Completed,
+AP014023,12 Oct 24,2,regular,Round 2,Monash University,Royal South Yarra Navy,9,1,7,2,,,60,44,Completed,
+AP014031,19 Oct 24,3,regular,Round 3,Eaglemont,Royal South Yarra Navy,2,8,3,5,,,32,45,Completed,
+AP014032,19 Oct 24,3,regular,Round 3,Tennis World,Monash University,0,10,0,8,,,25,56,Completed,
+AP014033,19 Oct 24,3,regular,Round 3,Royal South Yarra Gold,Kooyong,2,8,2,6,,,31,44,Completed,
+AP014041,26 Oct 24,4,regular,Round 4,Kooyong,Eaglemont,0,10,1,8,,,38,62,Completed,
+AP014042,26 Oct 24,4,regular,Round 4,Monash University,Royal South Yarra Gold,10,0,8,1,,,60,32,Completed,
+AP014043,26 Oct 24,4,regular,Round 4,Royal South Yarra Navy,Tennis World,9,1,7,1,,,54,36,Completed,
+AP014051,09 Nov 24,5,regular,Round 5,Eaglemont,Tennis World,10,0,8,0,,,56,22,Completed,
+AP014052,09 Nov 24,5,regular,Round 5,Kooyong,Monash University,6,4,4,5,,,47,40,Completed,
+AP014053,09 Nov 24,5,regular,Round 5,Royal South Yarra Gold,Royal South Yarra Navy,9,1,7,2,,,59,37,Completed,
+AP014061,16 Nov 24,6,regular,Round 6,Monash University,Eaglemont,0,10,0,8,,,6,56,Completed,
+AP014062,16 Nov 24,6,regular,Round 6,Kooyong,Royal South Yarra Navy,7,3,5,3,,,45,34,Completed,
+AP014063,16 Nov 24,6,regular,Round 6,Royal South Yarra Gold,Tennis World,0,10,0,8,,,25,57,Completed,
+pending-ap014-r7-eaglemont-royal-south-yarra-gold,23 Nov 24,7,regular,Round 7,Eaglemont,Royal South Yarra Gold,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap014-r7-royal-south-yarra-navy-monash-university,23 Nov 24,7,regular,Round 7,Royal South Yarra Navy,Monash University,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap014-r7-tennis-world-kooyong,23 Nov 24,7,regular,Round 7,Tennis World,Kooyong,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap014-r8-kooyong-royal-south-yarra-gold,30 Nov 24,8,regular,Round 8,Kooyong,Royal South Yarra Gold,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap014-r8-monash-university-tennis-world,30 Nov 24,8,regular,Round 8,Monash University,Tennis World,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap014-r8-royal-south-yarra-navy-eaglemont,30 Nov 24,8,regular,Round 8,Royal South Yarra Navy,Eaglemont,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP014091,07 Dec 24,9,regular,Round 9,Eaglemont,Kooyong,8,2,6,2,,,49,42,Completed,
+AP014092,07 Dec 24,9,regular,Round 9,Royal South Yarra Gold,Monash University,7,3,5,4,,,51,58,Completed,
+AP014093,07 Dec 24,9,regular,Round 9,Tennis World,Royal South Yarra Navy,7,3,4,4,,,36,33,Completed,
+AP014101,14 Dec 24,10,regular,Round 10,Tennis World,Eaglemont,0,10,0,8,,,27,57,Completed,
+AP014103,14 Dec 24,10,regular,Round 10,Royal South Yarra Navy,Royal South Yarra Gold,8,2,6,3,,,48,42,Completed,
+pending-ap014-r10-monash-university-kooyong,14 Dec 24,10,regular,Round 10,Monash University,Kooyong,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+AP014112,01 Feb 25,11,regular,Round 11,Royal South Yarra Navy,Kooyong,8,2,6,3,,,50,37,Completed,
+AP014113,01 Feb 25,11,regular,Round 11,Tennis World,Royal South Yarra Gold,2,8,2,6,,,35,46,Completed,
+pending-ap014-r11-eaglemont-monash-university,01 Feb 25,11,regular,Round 11,Eaglemont,Monash University,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP014121,08 Feb 25,12,regular,Round 12,Royal South Yarra Gold,Eaglemont,1,9,2,7,,,43,61,Completed,
+AP014122,08 Feb 25,12,regular,Round 12,Kooyong,Tennis World,9,1,7,1,,,53,28,Completed,
+AP014123,08 Feb 25,12,regular,Round 12,Monash University,Royal South Yarra Navy,2,8,3,5,,,23,45,Completed,
+AP014131,15 Feb 25,13,regular,Round 13,Eaglemont,Royal South Yarra Navy,5,5,0,0,,,5,3,Completed,
+AP014133,15 Feb 25,13,regular,Round 13,Royal South Yarra Gold,Kooyong,2,8,3,6,,,40,54,Completed,
+pending-ap014-r13-tennis-world-monash-university,15 Feb 25,13,regular,Round 13,Tennis World,Monash University,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP014143,22 Feb 25,14,regular,Round 14,Royal South Yarra Navy,Tennis World,5,5,2,2,,,18,17,Completed,
+pending-ap014-r14-kooyong-eaglemont,22 Feb 25,14,regular,Round 14,Kooyong,Eaglemont,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap014-r14-monash-university-royal-south-yarra-gold,22 Feb 25,14,regular,Round 14,Monash University,Royal South Yarra Gold,,,,,,,,,Missing Result,No individual scorecard / no rubbers recorded
+AP014151,01 Mar 25,15,regular,Round 15,Eaglemont,Tennis World,10,0,8,1,,,63,34,Completed,
+AP014153,01 Mar 25,15,regular,Round 15,Royal South Yarra Gold,Royal South Yarra Navy,8,2,6,3,,,59,37,Completed,
+pending-ap014-r15-kooyong-monash-university,01 Mar 25,15,regular,Round 15,Kooyong,Monash University,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP014321,,16,grand_final,Grand final · TROLS entry 2,Eaglemont,Kooyong,8,2,6,3,,,59,52,Completed,

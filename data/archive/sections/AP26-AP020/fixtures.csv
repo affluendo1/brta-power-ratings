@@ -1,0 +1,61 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP020013,06 Oct 12,1,regular,Round 1,East Malvern,Mordialloc,4.5,5.5,1,3,,,15,24,Completed,
+AP020014,06 Oct 12,1,regular,Round 1,Kings Park,Highmoor Uniting,8,2,6,3,,,56,47,Completed,
+pending-ap020-r1-bye-lauriston,06 Oct 12,1,regular,Round 1,Bye,Lauriston,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap020-r1-hawthorn-hampton,06 Oct 12,1,regular,Round 1,Hawthorn,Hampton,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP020023,13 Oct 12,2,regular,Round 2,Lauriston,East Malvern,2,8,3,6,,,45,58,Completed,
+AP020024,13 Oct 12,2,regular,Round 2,Mordialloc,Kings Park,2,8,3,6,,,45,56,Completed,
+pending-ap020-r2-hampton-bye,13 Oct 12,2,regular,Round 2,Hampton,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap020-r2-highmoor-uniting-hawthorn,13 Oct 12,2,regular,Round 2,Highmoor Uniting,Hawthorn,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP020031,20 Oct 12,3,regular,Round 3,Hawthorn,Mordialloc,0,10,0,8,,,15,56,Completed,
+AP020033,20 Oct 12,3,regular,Round 3,East Malvern,Hampton,4,6,5,3,,,36,34,Completed,
+AP020034,20 Oct 12,3,regular,Round 3,Kings Park,Lauriston,2,8,3,5,,,29,48,Completed,
+pending-ap020-r3-bye-highmoor-uniting,20 Oct 12,3,regular,Round 3,Bye,Highmoor Uniting,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP020041,27 Oct 12,4,regular,Round 4,Lauriston,Hawthorn,10,0,8,0,,,56,11,Completed,
+AP020043,27 Oct 12,4,regular,Round 4,Highmoor Uniting,East Malvern,9,1,7,2,,,62,43,Completed,
+AP020044,27 Oct 12,4,regular,Round 4,Hampton,Kings Park,1,9,1,7,,,34,56,Completed,
+pending-ap020-r4-mordialloc-bye,27 Oct 12,4,regular,Round 4,Mordialloc,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP020051,10 Nov 12,5,regular,Round 5,East Malvern,Kings Park,1,9,3,7,,,38,55,Completed,
+AP020052,10 Nov 12,5,regular,Round 5,Highmoor Uniting,Mordialloc,3,7,4,5,,,47,47,Completed,
+AP020053,10 Nov 12,5,regular,Round 5,Lauriston,Hampton,9,1,7,1,,,53,33,Completed,
+pending-ap020-r5-hawthorn-bye,10 Nov 12,5,regular,Round 5,Hawthorn,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP020062,17 Nov 12,6,regular,Round 6,Kings Park,Hawthorn,10,0,8,0,,,56,13,Completed,
+AP020063,17 Nov 12,6,regular,Round 6,Mordialloc,Lauriston,3,7,4,5,,,46,49,Completed,
+AP020064,17 Nov 12,6,regular,Round 6,Hampton,Highmoor Uniting,2,8,2,6,,,31,47,Completed,
+pending-ap020-r6-bye-east-malvern,17 Nov 12,6,regular,Round 6,Bye,East Malvern,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP020071,24 Nov 12,7,regular,Round 7,Hawthorn,East Malvern,0,10,0,8,,,22,57,Completed,
+AP020073,24 Nov 12,7,regular,Round 7,Highmoor Uniting,Lauriston,8,2,6,3,,,58,53,Completed,
+AP020074,24 Nov 12,7,regular,Round 7,Mordialloc,Hampton,7,3,5,4,,,50,45,Completed,
+pending-ap020-r7-bye-kings-park,24 Nov 12,7,regular,Round 7,Bye,Kings Park,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP020083,01 Dec 12,8,regular,Round 8,Mordialloc,East Malvern,7,3,5,4,,,49,40,Completed,
+AP020084,01 Dec 12,8,regular,Round 8,Highmoor Uniting,Kings Park,2,8,3,6,,,39,53,Completed,
+pending-ap020-r8-hampton-hawthorn,01 Dec 12,8,regular,Round 8,Hampton,Hawthorn,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+pending-ap020-r8-lauriston-bye,01 Dec 12,8,regular,Round 8,Lauriston,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP020091,08 Dec 12,9,regular,Round 9,Hawthorn,Highmoor Uniting,2,8,3,6,,,36,56,Completed,
+AP020093,08 Dec 12,9,regular,Round 9,East Malvern,Lauriston,5,5,2,3,,,33,27,Completed,
+AP020094,08 Dec 12,9,regular,Round 9,Kings Park,Mordialloc,9,1,7,1,,,56,33,Completed,
+pending-ap020-r9-bye-hampton,08 Dec 12,9,regular,Round 9,Bye,Hampton,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP020101,15 Dec 12,10,regular,Round 10,Mordialloc,Hawthorn,10,0,8,0,,,56,3,Completed,
+AP020103,15 Dec 12,10,regular,Round 10,Hampton,East Malvern,7,3,4,4,,,40,37,Completed,
+AP020104,15 Dec 12,10,regular,Round 10,Lauriston,Kings Park,1,9,2,7,,,48,62,Completed,
+pending-ap020-r10-highmoor-uniting-bye,15 Dec 12,10,regular,Round 10,Highmoor Uniting,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP020111,02 Feb 13,11,regular,Round 11,Hawthorn,Lauriston,0,10,0,8,,,22,56,Completed,
+AP020113,02 Feb 13,11,regular,Round 11,East Malvern,Highmoor Uniting,1,9,2,7,,,36,56,Completed,
+AP020114,02 Feb 13,11,regular,Round 11,Kings Park,Hampton,10,0,8,1,,,59,24,Completed,
+pending-ap020-r11-bye-mordialloc,02 Feb 13,11,regular,Round 11,Bye,Mordialloc,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP020121,09 Feb 13,12,regular,Round 12,Kings Park,East Malvern,9,1,7,2,,,54,34,Completed,
+AP020122,09 Feb 13,12,regular,Round 12,Mordialloc,Highmoor Uniting,7,3,3,5,,,44,43,Completed,
+pending-ap020-r12-bye-hawthorn,09 Feb 13,12,regular,Round 12,Bye,Hawthorn,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap020-r12-hampton-lauriston,09 Feb 13,12,regular,Round 12,Hampton,Lauriston,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+AP020133,16 Feb 13,13,regular,Round 13,Lauriston,Mordialloc,7,3,4,4,,,39,34,Completed,
+AP020134,16 Feb 13,13,regular,Round 13,Highmoor Uniting,Hampton,10,0,8,1,,,59,31,Completed,
+pending-ap020-r13-east-malvern-bye,16 Feb 13,13,regular,Round 13,East Malvern,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap020-r13-hawthorn-kings-park,16 Feb 13,13,regular,Round 13,Hawthorn,Kings Park,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+pending-ap020-r14-east-malvern-hawthorn,23 Feb 13,14,regular,Round 14,East Malvern,Hawthorn,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+pending-ap020-r14-hampton-mordialloc,23 Feb 13,14,regular,Round 14,Hampton,Mordialloc,,,,,,,,,Missing Result,No individual scorecard / no rubbers recorded
+pending-ap020-r14-kings-park-bye,23 Feb 13,14,regular,Round 14,Kings Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap020-r14-lauriston-highmoor-uniting,23 Feb 13,14,regular,Round 14,Lauriston,Highmoor Uniting,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+AP020301,,16,semi_final,Semi-final,Kings Park,Highmoor Uniting,10,0,8,1,,,58,36,Completed,
+AP020302,,16,semi_final,Semi-final,Lauriston,Mordialloc,1,9,1,7,,,30,51,Completed,
+AP020311,,16,semi_final,Semi-final,Highmoor Uniting,Mordialloc,2,8,4,5,,,42,46,Completed,
+AP020321,,17,grand_final,Grand final · TROLS entry 2,Kings Park,Mordialloc,9,1,7,1,,,51,38,Completed,

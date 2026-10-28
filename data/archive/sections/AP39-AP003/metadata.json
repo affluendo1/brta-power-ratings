@@ -1,0 +1,103 @@
+{
+  "asset_id": "AP39-AP003",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Winter 2019",
+  "season_id": "AP39",
+  "season_label": "Winter 2019",
+  "source_section_code": "AP003",
+  "section_label": "Mens Rubbers 1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Sth Murrumbeena",
+      "wins": 10,
+      "points": 90,
+      "percentage": 153.62,
+      "marker": ""
+    },
+    {
+      "position": 2,
+      "team": "St Anthony's",
+      "wins": 8,
+      "points": 77,
+      "percentage": 141.22,
+      "marker": "P"
+    },
+    {
+      "position": 3,
+      "team": "Hurlingham Park",
+      "wins": 7,
+      "points": 70,
+      "percentage": 124.88,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Centenary Park Blue",
+      "wins": 7,
+      "points": 66,
+      "percentage": 119.45,
+      "marker": "R"
+    },
+    {
+      "position": 5,
+      "team": "Centenary Park Red",
+      "wins": 4,
+      "points": 42,
+      "percentage": 73.97,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Middle Brighton",
+      "wins": 1,
+      "points": 38,
+      "percentage": 90.48,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Victory Park",
+      "wins": 3,
+      "points": 34,
+      "percentage": 54.09,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "St Pats Mentone",
+      "wins": 2,
+      "points": 31,
+      "percentage": 73.35,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP39-AP003",
+  "fixtures": 59,
+  "completed_fixtures": 45,
+  "draw_fixtures": 59,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 180,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

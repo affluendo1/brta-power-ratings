@@ -1,0 +1,103 @@
+{
+  "asset_id": "AP47-AP021",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 23/24",
+  "season_id": "AP47",
+  "season_label": "Summer 23/24",
+  "source_section_code": "AP021",
+  "section_label": "Womens Rubs 1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "St Louis de Mont",
+      "wins": 12,
+      "points": 96,
+      "percentage": 183.16,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Legend Park",
+      "wins": 8,
+      "points": 70,
+      "percentage": 169.82,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Port Melbourne",
+      "wins": 7,
+      "points": 67,
+      "percentage": 116.9,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Fitzroy",
+      "wins": 7,
+      "points": 58,
+      "percentage": 119.88,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Overport Park",
+      "wins": 6,
+      "points": 57,
+      "percentage": 106.7,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Chadstone",
+      "wins": 4,
+      "points": 44,
+      "percentage": 91.63,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Ormond",
+      "wins": 3,
+      "points": 34,
+      "percentage": 39.5,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "Hawthorn",
+      "wins": 1,
+      "points": 22,
+      "percentage": 44.59,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP47-AP021",
+  "fixtures": 59,
+  "completed_fixtures": 47,
+  "draw_fixtures": 48,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 188,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

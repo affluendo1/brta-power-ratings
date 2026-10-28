@@ -1,0 +1,91 @@
+{
+  "asset_id": "AP41-AP012",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 20/21",
+  "season_id": "AP41",
+  "season_label": "Summer 20/21",
+  "source_section_code": "AP012",
+  "section_label": "Ladies s/d 4",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Patterson Lakes Navy",
+      "wins": 8,
+      "points": 83,
+      "percentage": 236.87,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Patterson Lakes Gold",
+      "wins": 8,
+      "points": 77,
+      "percentage": 172.32,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Royal South Yarra",
+      "wins": 7,
+      "points": 71,
+      "percentage": 173.72,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Fitzroy",
+      "wins": 3,
+      "points": 36,
+      "percentage": 71.99,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Royal Ave",
+      "wins": 2,
+      "points": 22,
+      "percentage": 53.32,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Mordialloc",
+      "wins": 0,
+      "points": 11,
+      "percentage": 39.11,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP41-AP012",
+  "fixtures": 31,
+  "completed_fixtures": 31,
+  "draw_fixtures": 57,
+  "singles_rubbers": 117,
+  "doubles_rubbers": 60,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP012103 singles No. 1: '2-4'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP012101 doubles No. 1: '1-6 0-1'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP012101 doubles No. 2: '3-3'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

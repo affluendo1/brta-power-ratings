@@ -1,0 +1,95 @@
+{
+  "asset_id": "AP28-AP018",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 13/14",
+  "season_id": "AP28",
+  "season_label": "Summer 13/14",
+  "source_section_code": "AP018",
+  "section_label": "Mens S/D 6",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Black Rock",
+      "wins": 9,
+      "points": 87,
+      "percentage": 132.15,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "Kings Park",
+      "wins": 9,
+      "points": 83,
+      "percentage": 119.09,
+      "marker": "P"
+    },
+    {
+      "position": 3,
+      "team": "Mordialloc",
+      "wins": 8,
+      "points": 77,
+      "percentage": 127.62,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Coatesville",
+      "wins": 5,
+      "points": 54,
+      "percentage": 96.61,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Hawthorn",
+      "wins": 4,
+      "points": 50,
+      "percentage": 94.61,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Glen Huntly",
+      "wins": 3,
+      "points": 45,
+      "percentage": 87.78,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Highmoor Uniting BP",
+      "wins": 1,
+      "points": 24,
+      "percentage": 59.56,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP28-AP018",
+  "fixtures": 60,
+  "completed_fixtures": 44,
+  "draw_fixtures": 60,
+  "singles_rubbers": 176,
+  "doubles_rubbers": 87,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

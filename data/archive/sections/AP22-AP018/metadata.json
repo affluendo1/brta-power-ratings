@@ -1,0 +1,87 @@
+{
+  "asset_id": "AP22-AP018",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 10/11",
+  "season_id": "AP22",
+  "season_label": "Summer 10/11",
+  "source_section_code": "AP018",
+  "section_label": "Mens Rubbers 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Glen Huntly",
+      "wins": 0,
+      "points": 95,
+      "percentage": 139.6,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "St Leonard's",
+      "wins": 0,
+      "points": 71,
+      "percentage": 129.41,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Highmoor Uniting",
+      "wins": 0,
+      "points": 63,
+      "percentage": 92.49,
+      "marker": "R"
+    },
+    {
+      "position": 4,
+      "team": "Hampton U/C",
+      "wins": 0,
+      "points": 57,
+      "percentage": 100.38,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Black Rock",
+      "wins": 0,
+      "points": 44,
+      "percentage": 87.36,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Bentleigh Rec",
+      "wins": 0,
+      "points": 30,
+      "percentage": 71.4,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP22-AP018",
+  "fixtures": 47,
+  "completed_fixtures": 36,
+  "draw_fixtures": 57,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 144,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

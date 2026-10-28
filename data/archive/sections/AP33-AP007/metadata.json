@@ -1,0 +1,103 @@
+{
+  "asset_id": "AP33-AP007",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Winter 2016",
+  "season_id": "AP33",
+  "season_label": "Winter 2016",
+  "source_section_code": "AP007",
+  "section_label": "Mixed Rubbers 4",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "BLTC",
+      "wins": 9,
+      "points": 75,
+      "percentage": 151.94,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Le Page",
+      "wins": 9,
+      "points": 61.5,
+      "percentage": 107.83,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Coatesville",
+      "wins": 4,
+      "points": 51,
+      "percentage": 112.53,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Glen Huntly",
+      "wins": 5,
+      "points": 51,
+      "percentage": 101.93,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "OLGC",
+      "wins": 4,
+      "points": 40,
+      "percentage": 91.0,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "St Finbar's",
+      "wins": 3,
+      "points": 31.5,
+      "percentage": 81.53,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Middle Brighton",
+      "wins": 2,
+      "points": 26,
+      "percentage": 72.12,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP33-AP007",
+  "fixtures": 60,
+  "completed_fixtures": 43,
+  "draw_fixtures": 60,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 172,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP007014 doubles No. 4: '2-6 6-3 3-4'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP007051 doubles No. 4: '5-7 6-3 3-4'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP007053 doubles No. 4: '6-0 0-1'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP007071 doubles No. 3: '2-2'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP007084 doubles No. 3: '3-6 5-5'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP007302 doubles No. 3: '3-6 6-4 4-4'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP007302 doubles No. 4: '7-6 4-6 1-1'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

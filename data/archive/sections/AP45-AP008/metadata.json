@@ -1,0 +1,108 @@
+{
+  "asset_id": "AP45-AP008",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 22/23",
+  "season_id": "AP45",
+  "season_label": "Summer 22/23",
+  "source_section_code": "AP008",
+  "section_label": "Mens S/D 8",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Royal South Yarra",
+      "wins": 9,
+      "points": 95,
+      "percentage": 140.1,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Coatesville",
+      "wins": 7,
+      "points": 82.5,
+      "percentage": 115.34,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Highmoor Uniting",
+      "wins": 8,
+      "points": 80,
+      "percentage": 108.54,
+      "marker": "R"
+    },
+    {
+      "position": 4,
+      "team": "Sth Hawthorn",
+      "wins": 6,
+      "points": 76,
+      "percentage": 111.83,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Maccabi 2",
+      "wins": 6,
+      "points": 71.5,
+      "percentage": 94.62,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "BLTC Blue",
+      "wins": 6,
+      "points": 69,
+      "percentage": 99.31,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Monash University",
+      "wins": 3,
+      "points": 48,
+      "percentage": 75.72,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "Maccabi 1",
+      "wins": 1,
+      "points": 38,
+      "percentage": 72.65,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP45-AP008",
+  "fixtures": 59,
+  "completed_fixtures": 53,
+  "draw_fixtures": 59,
+  "singles_rubbers": 205,
+  "doubles_rubbers": 106,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP008143 singles No. 2: '5-5'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP008023 doubles No. 1: '0-2'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP008023 doubles No. 2: '0-2'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP008142 doubles No. 2: '4-6 4-0'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "asset_id": "AP20-AP105",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 09/10",
+  "season_id": "AP20",
+  "season_label": "Summer 09/10",
+  "source_section_code": "AP105",
+  "section_label": "Mens S/D 6",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Black Rock",
+      "wins": 0,
+      "points": 102,
+      "percentage": 153.52,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Carmelite",
+      "wins": 0,
+      "points": 79,
+      "percentage": 128.13,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Glen Huntly",
+      "wins": 0,
+      "points": 69,
+      "percentage": 122.51,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Mordialloc",
+      "wins": 0,
+      "points": 67,
+      "percentage": 108.13,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Ormond 2",
+      "wins": 0,
+      "points": 44,
+      "percentage": 86.53,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Ormond 1",
+      "wins": 0,
+      "points": 39,
+      "percentage": 78.71,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Clarinda",
+      "wins": 0,
+      "points": 20,
+      "percentage": 51.76,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP20-AP105",
+  "fixtures": 60,
+  "completed_fixtures": 46,
+  "draw_fixtures": 4,
+  "singles_rubbers": 184,
+  "doubles_rubbers": 92,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

@@ -1,0 +1,185 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP009011,03 May 25,1,Mordialloc,St Louis de Mont,No. 1,Drew Blanchfield,Ethan Dunley,Drew Blanchfield,8-2,8,2,1,0,Completed,true,false,false
+AP009011,03 May 25,1,Mordialloc,St Louis de Mont,No. 2,Pippa Collier-Watts,Michael Lindfield,Pippa Collier-Watts,8-4,8,4,1,0,Completed,true,false,false
+AP009011,03 May 25,1,Mordialloc,St Louis de Mont,No. 3,Jack Pooley,Tom Vella,Jack Pooley,8-3,8,3,1,0,Completed,true,false,false
+AP009011,03 May 25,1,Mordialloc,St Louis de Mont,No. 4,Elise Blanchfield,Dylan Joughin,Dylan Joughin,2-8,2,8,0,1,Completed,true,false,false
+AP009012,03 May 25,1,East Malvern Blue,Royal Ave Green,No. 1,Frantzeskos Triantafyllou,Justin Alway,Justin Alway,6-8,6,8,0,1,Completed,true,false,false
+AP009012,03 May 25,1,East Malvern Blue,Royal Ave Green,No. 2,James Bryden,Dean Craig,James Bryden,8-7,8,7,1,0,Completed,true,false,false
+AP009012,03 May 25,1,East Malvern Blue,Royal Ave Green,No. 3,Patrick King,Jimi Weir,Jimi Weir,3-8,3,8,0,1,Completed,true,false,false
+AP009012,03 May 25,1,East Malvern Blue,Royal Ave Green,No. 4,David Bryden,Paul Power,Paul Power,0-8,0,8,0,1,Completed,true,false,false
+AP009013,03 May 25,1,Royal Ave Purple,East Malvern Navy,No. 1,Lachie Scott,Peter Goldberg,Lachie Scott,8-3,8,3,1,0,Completed,true,false,false
+AP009013,03 May 25,1,Royal Ave Purple,East Malvern Navy,No. 2,James Janse,Robert Wyld,James Janse,8-5,8,5,1,0,Completed,true,false,false
+AP009013,03 May 25,1,Royal Ave Purple,East Malvern Navy,No. 3,Michael Poulos,James Thompson,Michael Poulos,8-0,8,0,1,0,Completed,true,false,false
+AP009013,03 May 25,1,Royal Ave Purple,East Malvern Navy,No. 4,Max Missen,Mark Patrick,Max Missen,8-4,8,4,1,0,Completed,true,false,false
+AP009021,10 May 25,2,East Malvern Navy,Mordialloc,No. 1,Levin De Leon,Drew Blanchfield,Drew Blanchfield,0-8,0,8,0,1,Completed,true,false,false
+AP009021,10 May 25,2,East Malvern Navy,Mordialloc,No. 2,Kim Hoang,Pippa Collier-Watts,Kim Hoang,8-7,8,7,1,0,Completed,true,true,false
+AP009021,10 May 25,2,East Malvern Navy,Mordialloc,No. 3,Tom Taylor,Jack Pooley,Tom Taylor,8-4,8,4,1,0,Completed,true,true,false
+AP009021,10 May 25,2,East Malvern Navy,Mordialloc,No. 4,James Thompson,Elise Blanchfield,James Thompson,8-2,8,2,1,0,Completed,true,false,false
+AP009022,10 May 25,2,Royal Ave Green,Royal Ave Purple,No. 1,Dean Craig,Lachie Scott,Lachie Scott,3-8,3,8,0,1,Completed,true,false,false
+AP009022,10 May 25,2,Royal Ave Green,Royal Ave Purple,No. 2,Anthony Power,James Janse,James Janse,4-8,4,8,0,1,Completed,true,false,false
+AP009022,10 May 25,2,Royal Ave Green,Royal Ave Purple,No. 3,Paul Power,Michael Poulos,Michael Poulos,3-8,3,8,0,1,Completed,true,false,false
+AP009022,10 May 25,2,Royal Ave Green,Royal Ave Purple,No. 4,Luke Eaton,Max Missen,Luke Eaton,8-2,8,2,1,0,Completed,true,true,false
+AP009023,10 May 25,2,St Louis de Mont,East Malvern Blue,No. 1,Ethan Dunley,Peter Car,Ethan Dunley,8-3,8,3,1,0,Completed,true,false,false
+AP009023,10 May 25,2,St Louis de Mont,East Malvern Blue,No. 2,Nicholas Shipham,Martin Giffard,Nicholas Shipham,8-4,8,4,1,0,Completed,true,false,false
+AP009023,10 May 25,2,St Louis de Mont,East Malvern Blue,No. 3,Tom Vella,James Bryden,Tom Vella,8-5,8,5,1,0,Completed,true,false,false
+AP009023,10 May 25,2,St Louis de Mont,East Malvern Blue,No. 4,Patrick Devlin,Patrick King,Patrick King,5-8,5,8,0,1,Completed,true,false,false
+AP009031,17 May 25,3,Mordialloc,East Malvern Blue,No. 1,Drew Blanchfield,Frantzeskos Triantafyllou,Drew Blanchfield,8-1,8,1,1,0,Completed,true,false,false
+AP009031,17 May 25,3,Mordialloc,East Malvern Blue,No. 2,Jonathan Petridis,Martin Giffard,Jonathan Petridis,8-1,8,1,1,0,Completed,true,false,false
+AP009031,17 May 25,3,Mordialloc,East Malvern Blue,No. 3,Ryan Farnfield,James Bryden,James Bryden,6-8,6,8,0,1,Completed,true,true,false
+AP009031,17 May 25,3,Mordialloc,East Malvern Blue,No. 4,Elise Blanchfield,Patrick King,Elise Blanchfield,8-3,8,3,1,0,Completed,true,false,false
+AP009032,17 May 25,3,Royal Ave Purple,St Louis de Mont,No. 1,Lachie Scott,Michael Lindfield,Lachie Scott,8-5,8,5,1,0,Completed,true,false,false
+AP009032,17 May 25,3,Royal Ave Purple,St Louis de Mont,No. 2,James Janse,Nicholas Shipham,James Janse,8-2,8,2,1,0,Completed,true,false,false
+AP009032,17 May 25,3,Royal Ave Purple,St Louis de Mont,No. 3,Michael Poulos,Dylan Joughin,Michael Poulos,8-6,8,6,1,0,Completed,true,false,false
+AP009032,17 May 25,3,Royal Ave Purple,St Louis de Mont,No. 4,Will Smith,Patrick Devlin,Patrick Devlin,1-8,1,8,0,1,Completed,true,true,false
+AP009033,17 May 25,3,East Malvern Navy,Royal Ave Green,No. 1,Levin De Leon,Justin Alway,Justin Alway,0-8,0,8,0,1,Completed,true,false,false
+AP009033,17 May 25,3,East Malvern Navy,Royal Ave Green,No. 2,James Thompson,Jimi Weir,James Thompson,8-4,8,4,1,0,Completed,true,false,false
+AP009033,17 May 25,3,East Malvern Navy,Royal Ave Green,No. 3,Caley Wilson,Anthony Power,Anthony Power,4-8,4,8,0,1,Completed,true,false,false
+AP009033,17 May 25,3,East Malvern Navy,Royal Ave Green,No. 4,Mark Patrick,Paul Power,Paul Power,4-8,4,8,0,1,Completed,true,false,false
+AP009041,24 May 25,4,Royal Ave Green,Mordialloc,No. 1,Dean Craig,Drew Blanchfield,Drew Blanchfield,1-8,1,8,0,1,Completed,true,false,false
+AP009041,24 May 25,4,Royal Ave Green,Mordialloc,No. 2,Jimi Weir,Pippa Collier-Watts,Jimi Weir,8-5,8,5,1,0,Completed,true,false,false
+AP009041,24 May 25,4,Royal Ave Green,Mordialloc,No. 3,Anthony Power,Jack Pooley,Anthony Power,8-6,8,6,1,0,Completed,true,false,false
+AP009041,24 May 25,4,Royal Ave Green,Mordialloc,No. 4,Paul Power,Elise Blanchfield,Paul Power,8-3,8,3,1,0,Completed,true,false,false
+AP009042,24 May 25,4,St Louis de Mont,East Malvern Navy,No. 1,Ethan Dunley,Levin De Leon,Ethan Dunley,8-2,8,2,1,0,Completed,true,false,false
+AP009042,24 May 25,4,St Louis de Mont,East Malvern Navy,No. 2,Tom Vella,Tom Wyld,Tom Wyld,6-8,6,8,0,1,Completed,true,false,true
+AP009042,24 May 25,4,St Louis de Mont,East Malvern Navy,No. 3,Dylan Joughin,James Thompson,James Thompson,6-8,6,8,0,1,Completed,true,false,false
+AP009042,24 May 25,4,St Louis de Mont,East Malvern Navy,No. 4,Patrick Devlin,Caley Wilson,Caley Wilson,2-8,2,8,0,1,Completed,true,false,false
+AP009043,24 May 25,4,East Malvern Blue,Royal Ave Purple,No. 1,Peter Car,Lachie Scott,Lachie Scott,3-8,3,8,0,1,Completed,true,false,false
+AP009043,24 May 25,4,East Malvern Blue,Royal Ave Purple,No. 2,Martin Giffard,James Janse,James Janse,3-8,3,8,0,1,Completed,true,false,false
+AP009043,24 May 25,4,East Malvern Blue,Royal Ave Purple,No. 3,James Bryden,Zach Dimachki,Zach Dimachki,2-8,2,8,0,1,Completed,true,false,false
+AP009043,24 May 25,4,East Malvern Blue,Royal Ave Purple,No. 4,Patrick King,Raphael Urpani,Raphael Urpani,5-8,5,8,0,1,Completed,true,false,true
+AP009051,31 May 25,5,Mordialloc,Royal Ave Purple,No. 1,Drew Blanchfield,Lachie Scott,Drew Blanchfield,8-1,8,1,1,0,Completed,true,false,false
+AP009051,31 May 25,5,Mordialloc,Royal Ave Purple,No. 2,Pippa Collier-Watts,James Janse,James Janse,4-8,4,8,0,1,Completed,true,false,false
+AP009051,31 May 25,5,Mordialloc,Royal Ave Purple,No. 3,Jack Pooley,Michael Poulos,Michael Poulos,6-8,6,8,0,1,Completed,true,false,false
+AP009051,31 May 25,5,Mordialloc,Royal Ave Purple,No. 4,Elise Blanchfield,Max Missen,Elise Blanchfield,8-5,8,5,1,0,Completed,true,false,false
+AP009052,31 May 25,5,Royal Ave Green,St Louis de Mont,No. 1,Charles Tanti,Ethan Dunley,Ethan Dunley,2-8,2,8,0,1,Completed,true,true,false
+AP009052,31 May 25,5,Royal Ave Green,St Louis de Mont,No. 2,Anthony Power,Michael Lindfield,Michael Lindfield,6-8,6,8,0,1,Completed,true,false,false
+AP009052,31 May 25,5,Royal Ave Green,St Louis de Mont,No. 3,Chris Gibson,Tom Vella,Tom Vella,5-8,5,8,0,1,Completed,true,false,false
+AP009052,31 May 25,5,Royal Ave Green,St Louis de Mont,No. 4,Paul Power,Patrick Devlin,Paul Power,8-3,8,3,1,0,Completed,true,false,false
+AP009053,31 May 25,5,East Malvern Navy,East Malvern Blue,No. 1,Robert Wyld,Aaron Moonsammy,Aaron Moonsammy,1-8,1,8,0,1,Completed,true,false,true
+AP009053,31 May 25,5,East Malvern Navy,East Malvern Blue,No. 2,James Thompson,Martin Giffard,James Thompson,8-7,8,7,1,0,Completed,true,false,false
+AP009053,31 May 25,5,East Malvern Navy,East Malvern Blue,No. 3,Caley Wilson,James Bryden,Caley Wilson,8-5,8,5,1,0,Completed,true,false,false
+AP009053,31 May 25,5,East Malvern Navy,East Malvern Blue,No. 4,Mark Patrick,Patrick King,Patrick King,6-8,6,8,0,1,Completed,true,false,false
+AP009061,14 Jun 25,6,St Louis de Mont,Mordialloc,No. 1,Ethan Dunley,Drew Blanchfield,Ethan Dunley,8-2,8,2,1,0,Completed,true,false,false
+AP009061,14 Jun 25,6,St Louis de Mont,Mordialloc,No. 2,Nicholas Shipham,Jonathan Petridis,Jonathan Petridis,3-8,3,8,0,1,Completed,true,false,false
+AP009061,14 Jun 25,6,St Louis de Mont,Mordialloc,No. 3,Tom Vella,Pippa Collier-Watts,Pippa Collier-Watts,5-8,5,8,0,1,Completed,true,false,false
+AP009061,14 Jun 25,6,St Louis de Mont,Mordialloc,No. 4,Dylan Joughin,Elise Blanchfield,Elise Blanchfield,2-8,2,8,0,1,Completed,true,false,false
+AP009062,14 Jun 25,6,Royal Ave Green,East Malvern Blue,No. 1,Justin Alway,Frantzeskos Triantafyllou,Justin Alway,8-7,8,7,1,0,Completed,true,false,false
+AP009062,14 Jun 25,6,Royal Ave Green,East Malvern Blue,No. 2,Dean Craig,James Bryden,Dean Craig,8-4,8,4,1,0,Completed,true,false,false
+AP009062,14 Jun 25,6,Royal Ave Green,East Malvern Blue,No. 3,Jimi Weir,Patrick King,Jimi Weir,8-4,8,4,1,0,Completed,true,false,false
+AP009062,14 Jun 25,6,Royal Ave Green,East Malvern Blue,No. 4,Chris Gibson,David Bryden,Chris Gibson,8-0,8,0,1,0,Completed,true,false,false
+AP009063,14 Jun 25,6,East Malvern Navy,Royal Ave Purple,No. 1,Ben Elliot,Lachie Scott,Ben Elliot,8-4,8,4,1,0,Completed,true,true,false
+AP009063,14 Jun 25,6,East Malvern Navy,Royal Ave Purple,No. 2,Tom Taylor,James Janse,Tom Taylor,8-7,8,7,1,0,Completed,true,true,false
+AP009063,14 Jun 25,6,East Malvern Navy,Royal Ave Purple,No. 3,James Thompson,Johnny Tsou,James Thompson,8-4,8,4,1,0,Completed,true,false,true
+AP009063,14 Jun 25,6,East Malvern Navy,Royal Ave Purple,No. 4,Mark Patrick,Magnus Anderson,Mark Patrick,8-2,8,2,1,0,Completed,true,false,true
+AP009071,21 Jun 25,7,Mordialloc,East Malvern Navy,No. 1,Drew Blanchfield,Peter Goldberg,Drew Blanchfield,8-1,8,1,1,0,Completed,true,false,false
+AP009071,21 Jun 25,7,Mordialloc,East Malvern Navy,No. 2,Jonathan Petridis,Ben Elliot,Jonathan Petridis,8-1,8,1,1,0,Completed,true,false,true
+AP009071,21 Jun 25,7,Mordialloc,East Malvern Navy,No. 3,Pippa Collier-Watts,James Thompson,James Thompson,3-8,3,8,0,1,Completed,true,false,false
+AP009071,21 Jun 25,7,Mordialloc,East Malvern Navy,No. 4,Elise Blanchfield,Caley Wilson,Caley Wilson,3-8,3,8,0,1,Completed,true,false,false
+AP009072,21 Jun 25,7,Royal Ave Purple,Royal Ave Green,No. 1,Lachie Scott,Dean Craig,Dean Craig,7-8,7,8,0,1,Completed,true,false,false
+AP009072,21 Jun 25,7,Royal Ave Purple,Royal Ave Green,No. 2,James Janse,Jimi Weir,James Janse,8-0,8,0,1,0,Completed,true,false,false
+AP009072,21 Jun 25,7,Royal Ave Purple,Royal Ave Green,No. 3,Zach Dimachki,Anthony Power,Zach Dimachki,8-5,8,5,1,0,Completed,true,false,false
+AP009072,21 Jun 25,7,Royal Ave Purple,Royal Ave Green,No. 4,Raphael Urpani,Paul Power,Paul Power,6-8,6,8,0,1,Completed,true,true,false
+AP009073,21 Jun 25,7,East Malvern Blue,St Louis de Mont,No. 1,Frantzeskos Triantafyllou,Michael Lindfield,Frantzeskos Triantafyllou,8-2,8,2,1,0,Completed,true,false,false
+AP009073,21 Jun 25,7,East Malvern Blue,St Louis de Mont,No. 2,James Bryden,Nicholas Shipham,James Bryden,8-0,8,0,1,0,Completed,true,false,false
+AP009073,21 Jun 25,7,East Malvern Blue,St Louis de Mont,No. 3,Patrick King,Tom Vella,Patrick King,8-2,8,2,1,0,Completed,true,false,false
+AP009073,21 Jun 25,7,East Malvern Blue,St Louis de Mont,No. 4,David Bryden,Patrick Devlin,Patrick Devlin,2-8,2,8,0,1,Completed,true,false,false
+AP009081,28 Jun 25,8,East Malvern Blue,Mordialloc,No. 1,Ben Elliot,Drew Blanchfield,Drew Blanchfield,5-8,5,8,0,1,Completed,true,true,false
+AP009081,28 Jun 25,8,East Malvern Blue,Mordialloc,No. 2,Frantzeskos Triantafyllou,Pippa Collier-Watts,Frantzeskos Triantafyllou,8-3,8,3,1,0,Completed,true,false,false
+AP009081,28 Jun 25,8,East Malvern Blue,Mordialloc,No. 3,Martin Giffard,Jack Pooley,Jack Pooley,0-8,0,8,0,1,Completed,true,false,false
+AP009081,28 Jun 25,8,East Malvern Blue,Mordialloc,No. 4,James Bryden,Elise Blanchfield,James Bryden,8-6,8,6,1,0,Completed,true,false,false
+AP009082,28 Jun 25,8,St Louis de Mont,Royal Ave Purple,No. 1,Ethan Dunley,Lachie Scott,Ethan Dunley,8-2,8,2,1,0,Completed,true,false,false
+AP009082,28 Jun 25,8,St Louis de Mont,Royal Ave Purple,No. 2,Nicholas Shipham,James Janse,Nicholas Shipham,8-5,8,5,1,0,Completed,true,false,false
+AP009082,28 Jun 25,8,St Louis de Mont,Royal Ave Purple,No. 3,Dylan Joughin,Michael Poulos,Michael Poulos,4-8,4,8,0,1,Completed,true,false,false
+AP009082,28 Jun 25,8,St Louis de Mont,Royal Ave Purple,No. 4,Patrick Devlin,Zach Dimachki,Zach Dimachki,3-8,3,8,0,1,Completed,true,false,false
+AP009083,28 Jun 25,8,Royal Ave Green,East Malvern Navy,No. 1,Justin Alway,Levin De Leon,Justin Alway,8-0,8,0,1,0,Completed,true,false,false
+AP009083,28 Jun 25,8,Royal Ave Green,East Malvern Navy,No. 2,Jimi Weir,James Thompson,James Thompson,6-8,6,8,0,1,Completed,true,false,false
+AP009083,28 Jun 25,8,Royal Ave Green,East Malvern Navy,No. 3,Chris Gibson,Caley Wilson,Caley Wilson,6-8,6,8,0,1,Completed,true,false,false
+AP009083,28 Jun 25,8,Royal Ave Green,East Malvern Navy,No. 4,Paul Power,Mark Patrick,Paul Power,8-5,8,5,1,0,Completed,true,false,false
+AP009091,05 Jul 25,9,Mordialloc,Royal Ave Green,No. 1,Jonathan Petridis,Jimi Weir,Jonathan Petridis,8-1,8,1,1,0,Completed,true,false,false
+AP009091,05 Jul 25,9,Mordialloc,Royal Ave Green,No. 2,Pippa Collier-Watts,Chris Gibson,Pippa Collier-Watts,8-4,8,4,1,0,Completed,true,false,false
+AP009091,05 Jul 25,9,Mordialloc,Royal Ave Green,No. 3,Jack Pooley,Luke Eaton,Luke Eaton,2-8,2,8,0,1,Completed,true,false,true
+AP009091,05 Jul 25,9,Mordialloc,Royal Ave Green,No. 4,Ryan Farnfield,Paul Power,Paul Power,2-8,2,8,0,1,Completed,true,true,false
+AP009092,05 Jul 25,9,East Malvern Navy,St Louis de Mont,No. 1,Levin De Leon,Ethan Dunley,Ethan Dunley,2-8,2,8,0,1,Completed,true,false,false
+AP009092,05 Jul 25,9,East Malvern Navy,St Louis de Mont,No. 2,James Thompson,Michael Lindfield,James Thompson,8-7,8,7,1,0,Completed,true,false,false
+AP009092,05 Jul 25,9,East Malvern Navy,St Louis de Mont,No. 3,Caley Wilson,Dylan Joughin,Caley Wilson,8-1,8,1,1,0,Completed,true,false,false
+AP009092,05 Jul 25,9,East Malvern Navy,St Louis de Mont,No. 4,Mark Patrick,Patrick Devlin,Patrick Devlin,6-8,6,8,0,1,Completed,true,false,false
+AP009093,05 Jul 25,9,Royal Ave Purple,East Malvern Blue,No. 1,Lachie Scott,Aaron Moonsammy,Aaron Moonsammy,2-8,2,8,0,1,Completed,true,false,true
+AP009093,05 Jul 25,9,Royal Ave Purple,East Malvern Blue,No. 2,James Janse,Frantzeskos Triantafyllou,Frantzeskos Triantafyllou,5-8,5,8,0,1,Completed,true,false,false
+AP009093,05 Jul 25,9,Royal Ave Purple,East Malvern Blue,No. 3,Michael Poulos,Ben Elliot,Ben Elliot,7-8,7,8,0,1,Completed,true,false,true
+AP009093,05 Jul 25,9,Royal Ave Purple,East Malvern Blue,No. 4,Zach Dimachki,Martin Giffard,Zach Dimachki,8-3,8,3,1,0,Completed,true,false,false
+AP009101,19 Jul 25,10,Royal Ave Purple,Mordialloc,No. 1,Lachie Scott,Drew Blanchfield,Drew Blanchfield,2-8,2,8,0,1,Completed,true,false,false
+AP009101,19 Jul 25,10,Royal Ave Purple,Mordialloc,No. 2,Michael Poulos,Pippa Collier-Watts,Michael Poulos,8-5,8,5,1,0,Completed,true,false,false
+AP009101,19 Jul 25,10,Royal Ave Purple,Mordialloc,No. 3,Sam Cooke,Jack Pooley,Sam Cooke,8-1,8,1,1,0,Completed,true,true,false
+AP009101,19 Jul 25,10,Royal Ave Purple,Mordialloc,No. 4,Marc Banks,Elise Blanchfield,Marc Banks,8-2,8,2,1,0,Completed,true,true,false
+AP009102,19 Jul 25,10,St Louis de Mont,Royal Ave Green,No. 1,Ethan Dunley,Justin Alway,Ethan Dunley,8-2,8,2,1,0,Completed,true,false,false
+AP009102,19 Jul 25,10,St Louis de Mont,Royal Ave Green,No. 2,Michael Lindfield,Jimi Weir,Jimi Weir,2-8,2,8,0,1,Completed,true,false,false
+AP009102,19 Jul 25,10,St Louis de Mont,Royal Ave Green,No. 3,Thomas Gellie,Anthony Power,Thomas Gellie,8-4,8,4,1,0,Completed,true,true,false
+AP009102,19 Jul 25,10,St Louis de Mont,Royal Ave Green,No. 4,Tom Vella,Chris Gibson,Tom Vella,8-1,8,1,1,0,Completed,true,false,false
+AP009103,19 Jul 25,10,East Malvern Blue,East Malvern Navy,No. 1,Frantzeskos Triantafyllou,Robert Wyld,Frantzeskos Triantafyllou,8-1,8,1,1,0,Completed,true,false,false
+AP009103,19 Jul 25,10,East Malvern Blue,East Malvern Navy,No. 2,Peter Car,James Thompson,James Thompson,2-8,2,8,0,1,Completed,true,false,false
+AP009103,19 Jul 25,10,East Malvern Blue,East Malvern Navy,No. 3,James Bryden,Caley Wilson,Caley Wilson,5-8,5,8,0,1,Completed,true,false,false
+AP009103,19 Jul 25,10,East Malvern Blue,East Malvern Navy,No. 4,Patrick King,Mark Patrick,Patrick King,8-4,8,4,1,0,Completed,true,false,false
+AP009111,26 Jul 25,11,Mordialloc,St Louis de Mont,No. 1,Drew Blanchfield,Nicholas Shipham,Drew Blanchfield,8-0,8,0,1,0,Completed,true,false,false
+AP009111,26 Jul 25,11,Mordialloc,St Louis de Mont,No. 2,Pippa Collier-Watts,Tom Vella,Pippa Collier-Watts,8-7,8,7,1,0,Completed,true,false,false
+AP009111,26 Jul 25,11,Mordialloc,St Louis de Mont,No. 3,Jack Pooley,Jonas Michelsson,Jonas Michelsson,7-8,7,8,0,1,Completed,true,false,true
+AP009111,26 Jul 25,11,Mordialloc,St Louis de Mont,No. 4,Elise Blanchfield,Patrick Devlin,Elise Blanchfield,8-6,8,6,1,0,Completed,true,false,false
+AP009112,26 Jul 25,11,East Malvern Blue,Royal Ave Green,No. 1,Andrew McVean,Dean Craig,Andrew McVean,8-2,8,2,1,0,Completed,true,true,false
+AP009112,26 Jul 25,11,East Malvern Blue,Royal Ave Green,No. 2,Frantzeskos Triantafyllou,Jimi Weir,Jimi Weir,7-8,7,8,0,1,Completed,true,false,false
+AP009112,26 Jul 25,11,East Malvern Blue,Royal Ave Green,No. 3,Martin Giffard,Chris Gibson,Chris Gibson,7-8,7,8,0,1,Completed,true,false,false
+AP009112,26 Jul 25,11,East Malvern Blue,Royal Ave Green,No. 4,James Bryden,Paul Power,Paul Power,2-8,2,8,0,1,Completed,true,false,false
+AP009113,26 Jul 25,11,Royal Ave Purple,East Malvern Navy,No. 1,Lachie Scott,Peter Goldberg,Peter Goldberg,7-8,7,8,0,1,Completed,true,false,false
+AP009113,26 Jul 25,11,Royal Ave Purple,East Malvern Navy,No. 2,James Janse,Oliver Berman,Oliver Berman,2-8,2,8,0,1,Completed,true,false,false
+AP009113,26 Jul 25,11,Royal Ave Purple,East Malvern Navy,No. 3,Michael Poulos,Caley Wilson,Michael Poulos,8-4,8,4,1,0,Completed,true,false,false
+AP009113,26 Jul 25,11,Royal Ave Purple,East Malvern Navy,No. 4,Zach Dimachki,Mark Patrick,Zach Dimachki,8-2,8,2,1,0,Completed,true,false,false
+AP009121,02 Aug 25,12,East Malvern Navy,Mordialloc,No. 1,Oliver Berman,Drew Blanchfield,Oliver Berman,8-3,8,3,1,0,Completed,true,false,false
+AP009121,02 Aug 25,12,East Malvern Navy,Mordialloc,No. 2,Levin De Leon,Pippa Collier-Watts,Levin De Leon,8-6,8,6,1,0,Completed,true,false,false
+AP009121,02 Aug 25,12,East Malvern Navy,Mordialloc,No. 3,Robert Wyld,Jack Pooley,Robert Wyld,8-5,8,5,1,0,Completed,true,false,false
+AP009121,02 Aug 25,12,East Malvern Navy,Mordialloc,No. 4,James Thompson,Elise Blanchfield,James Thompson,8-3,8,3,1,0,Completed,true,false,false
+AP009122,02 Aug 25,12,Royal Ave Green,Royal Ave Purple,No. 1,Dean Craig,Lachie Scott,Lachie Scott,4-8,4,8,0,1,Completed,true,false,false
+AP009122,02 Aug 25,12,Royal Ave Green,Royal Ave Purple,No. 2,Jimi Weir,Zach Dimachki,Zach Dimachki,3-8,3,8,0,1,Completed,true,false,false
+AP009122,02 Aug 25,12,Royal Ave Green,Royal Ave Purple,No. 3,Anthony Power,Sam Cooke,Sam Cooke,1-8,1,8,0,1,Completed,true,false,true
+AP009122,02 Aug 25,12,Royal Ave Green,Royal Ave Purple,No. 4,Paul Power,Raphael Urpani,Paul Power,8-6,8,6,1,0,Completed,true,false,true
+AP009123,02 Aug 25,12,St Louis de Mont,East Malvern Blue,No. 1,Ethan Dunley,Frantzeskos Triantafyllou,Ethan Dunley,8-3,8,3,1,0,Completed,true,false,false
+AP009123,02 Aug 25,12,St Louis de Mont,East Malvern Blue,No. 2,Michael Lindfield,Peter Car,Michael Lindfield,8-1,8,1,1,0,Completed,true,false,false
+AP009123,02 Aug 25,12,St Louis de Mont,East Malvern Blue,No. 3,Nicholas Shipham,Martin Giffard,Nicholas Shipham,8-6,8,6,1,0,Completed,true,false,false
+AP009123,02 Aug 25,12,St Louis de Mont,East Malvern Blue,No. 4,Patrick Devlin,James Bryden,James Bryden,3-8,3,8,0,1,Completed,true,false,false
+AP009131,09 Aug 25,13,Mordialloc,East Malvern Blue,No. 1,Drew Blanchfield,Kyla Guirguis,Kyla Guirguis,1-8,1,8,0,1,Completed,true,false,true
+AP009131,09 Aug 25,13,Mordialloc,East Malvern Blue,No. 2,Pippa Collier-Watts,Nicole Darawshi,Nicole Darawshi,6-8,6,8,0,1,Completed,true,false,true
+AP009131,09 Aug 25,13,Mordialloc,East Malvern Blue,No. 3,Jack Pooley,Martin Giffard,Martin Giffard,5-8,5,8,0,1,Completed,true,false,false
+AP009131,09 Aug 25,13,Mordialloc,East Malvern Blue,No. 4,Elise Blanchfield,James Bryden,James Bryden,6-8,6,8,0,1,Completed,true,false,false
+AP009132,09 Aug 25,13,Royal Ave Purple,St Louis de Mont,No. 1,Lachie Scott,Ethan Dunley,Ethan Dunley,0-8,0,8,0,1,Completed,true,false,false
+AP009132,09 Aug 25,13,Royal Ave Purple,St Louis de Mont,No. 2,Zach Dimachki,Michael Lindfield,Zach Dimachki,8-3,8,3,1,0,Completed,true,false,false
+AP009132,09 Aug 25,13,Royal Ave Purple,St Louis de Mont,No. 3,Sam Cooke,Tom Vella,Sam Cooke,8-0,8,0,1,0,Completed,true,true,false
+AP009132,09 Aug 25,13,Royal Ave Purple,St Louis de Mont,No. 4,Magnus Anderson,Dylan Joughin,Dylan Joughin,4-8,4,8,0,1,Completed,true,true,false
+AP009133,09 Aug 25,13,East Malvern Navy,Royal Ave Green,No. 1,Levin De Leon,Justin Alway,Justin Alway,2-8,2,8,0,1,Completed,true,false,false
+AP009133,09 Aug 25,13,East Malvern Navy,Royal Ave Green,No. 2,Robert Wyld,Dean Craig,Robert Wyld,8-5,8,5,1,0,Completed,true,false,false
+AP009133,09 Aug 25,13,East Malvern Navy,Royal Ave Green,No. 3,James Thompson,Jimi Weir,Jimi Weir,3-8,3,8,0,1,Completed,true,false,false
+AP009133,09 Aug 25,13,East Malvern Navy,Royal Ave Green,No. 4,Caley Wilson,Paul Power,Caley Wilson,8-5,8,5,1,0,Completed,true,false,false
+AP009141,16 Aug 25,14,Royal Ave Green,Mordialloc,No. 1,Justin Alway,Drew Blanchfield,Drew Blanchfield,2-8,2,8,0,1,Completed,true,false,false
+AP009141,16 Aug 25,14,Royal Ave Green,Mordialloc,No. 2,Jimi Weir,Pippa Collier-Watts,Jimi Weir,8-7,8,7,1,0,Completed,true,false,false
+AP009141,16 Aug 25,14,Royal Ave Green,Mordialloc,No. 3,Chris Gibson,Jack Pooley,Jack Pooley,7-8,7,8,0,1,Completed,true,false,false
+AP009141,16 Aug 25,14,Royal Ave Green,Mordialloc,No. 4,Paul Power,Elise Blanchfield,Paul Power,8-0,8,0,1,0,Completed,true,false,false
+AP009142,16 Aug 25,14,St Louis de Mont,East Malvern Navy,No. 1,Ethan Dunley,Oliver Berman,Ethan Dunley,8-5,8,5,1,0,Completed,true,false,false
+AP009142,16 Aug 25,14,St Louis de Mont,East Malvern Navy,No. 2,Nicholas Shipham,Robert Wyld,Nicholas Shipham,8-5,8,5,1,0,Completed,true,false,false
+AP009142,16 Aug 25,14,St Louis de Mont,East Malvern Navy,No. 3,Dylan Joughin,James Thompson,James Thompson,3-8,3,8,0,1,Completed,true,false,false
+AP009142,16 Aug 25,14,St Louis de Mont,East Malvern Navy,No. 4,Patrick Devlin,Caley Wilson,Caley Wilson,5-8,5,8,0,1,Completed,true,false,false
+AP009143,16 Aug 25,14,East Malvern Blue,Royal Ave Purple,No. 1,Andrew McVean,Lachie Scott,Andrew McVean,8-6,8,6,1,0,Completed,true,true,false
+AP009143,16 Aug 25,14,East Malvern Blue,Royal Ave Purple,No. 2,Martin Giffard,James Janse,James Janse,7-8,7,8,0,1,Completed,true,false,false
+AP009143,16 Aug 25,14,East Malvern Blue,Royal Ave Purple,No. 3,James Bryden,Michael Poulos,Michael Poulos,1-8,1,8,0,1,Completed,true,false,false
+AP009143,16 Aug 25,14,East Malvern Blue,Royal Ave Purple,No. 4,Emma Pidgeon,Zach Dimachki,Zach Dimachki,3-8,3,8,0,1,Completed,true,true,false
+AP009151,23 Aug 25,15,Mordialloc,Royal Ave Purple,No. 1,Drew Blanchfield,Lachie Scott,Drew Blanchfield,8-3,8,3,1,0,Completed,true,false,false
+AP009151,23 Aug 25,15,Mordialloc,Royal Ave Purple,No. 2,Jonathan Petridis,James Janse,Jonathan Petridis,8-1,8,1,1,0,Completed,true,false,false
+AP009151,23 Aug 25,15,Mordialloc,Royal Ave Purple,No. 3,Pippa Collier-Watts,Michael Poulos,Michael Poulos,5-8,5,8,0,1,Completed,true,false,false
+AP009151,23 Aug 25,15,Mordialloc,Royal Ave Purple,No. 4,Jack Pooley,Zach Dimachki,Zach Dimachki,4-8,4,8,0,1,Completed,true,false,false
+AP009152,23 Aug 25,15,Royal Ave Green,St Louis de Mont,No. 1,Dean Craig,Michael Lindfield,Dean Craig,8-5,8,5,1,0,Completed,true,false,false
+AP009152,23 Aug 25,15,Royal Ave Green,St Louis de Mont,No. 2,Jimi Weir,Tom Vella,Jimi Weir,8-3,8,3,1,0,Completed,true,false,false
+AP009152,23 Aug 25,15,Royal Ave Green,St Louis de Mont,No. 3,Anthony Power,Dylan Joughin,Anthony Power,8-3,8,3,1,0,Completed,true,false,false
+AP009152,23 Aug 25,15,Royal Ave Green,St Louis de Mont,No. 4,Paul Power,Patrick Devlin,Paul Power,8-1,8,1,1,0,Completed,true,false,false
+AP009153,23 Aug 25,15,East Malvern Navy,East Malvern Blue,No. 1,Oliver Berman,Peter Car,Oliver Berman,8-0,8,0,1,0,Completed,true,false,false
+AP009153,23 Aug 25,15,East Malvern Navy,East Malvern Blue,No. 2,Robert Wyld,Alan Young,Robert Wyld,8-3,8,3,1,0,Completed,true,false,true
+AP009153,23 Aug 25,15,East Malvern Navy,East Malvern Blue,No. 3,James Thompson,Martin Giffard,James Thompson,8-0,8,0,1,0,Completed,true,false,false
+AP009153,23 Aug 25,15,East Malvern Navy,East Malvern Blue,No. 4,Caley Wilson,James Bryden,Caley Wilson,8-0,8,0,1,0,Completed,true,false,false
+AP009321,,16,Royal Ave Green,Mordialloc,No. 1,Justin Alway,Drew Blanchfield,Justin Alway,8-6,8,6,1,0,Completed,true,false,false
+AP009321,,16,Royal Ave Green,Mordialloc,No. 2,Dean Craig,Jonathan Petridis,Jonathan Petridis,0-8,0,8,0,1,Completed,true,false,false
+AP009321,,16,Royal Ave Green,Mordialloc,No. 3,Jimi Weir,Pippa Collier-Watts,Jimi Weir,8-5,8,5,1,0,Completed,true,false,false
+AP009321,,16,Royal Ave Green,Mordialloc,No. 4,Paul Power,Jack Pooley,Paul Power,8-6,8,6,1,0,Completed,true,false,false

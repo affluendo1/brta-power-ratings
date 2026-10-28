@@ -1,0 +1,106 @@
+{
+  "asset_id": "AP22-AP029",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 10/11",
+  "season_id": "AP22",
+  "season_label": "Summer 10/11",
+  "source_section_code": "AP029",
+  "section_label": "Mens S/D 1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Carmelite",
+      "wins": 0,
+      "points": 90,
+      "percentage": 119.0,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "Dandenong",
+      "wins": 0,
+      "points": 85,
+      "percentage": 137.27,
+      "marker": "P"
+    },
+    {
+      "position": 3,
+      "team": "Dendy Park",
+      "wins": 0,
+      "points": 81,
+      "percentage": 117.88,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Clarinda",
+      "wins": 0,
+      "points": 78,
+      "percentage": 106.33,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Lauriston",
+      "wins": 0,
+      "points": 71,
+      "percentage": 100.0,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Caulfield Rec",
+      "wins": 0,
+      "points": 68.5,
+      "percentage": 95.83,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "BLTC",
+      "wins": 0,
+      "points": 49.5,
+      "percentage": 83.22,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "GPHC",
+      "wins": 0,
+      "points": 37,
+      "percentage": 60.11,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP22-AP029",
+  "fixtures": 60,
+  "completed_fixtures": 46,
+  "draw_fixtures": 4,
+  "singles_rubbers": 183,
+  "doubles_rubbers": 86,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP029064 singles No. 3: '3-0'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP029032 doubles No. 2: '5-7 7-6 3-1'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "asset_id": "AP34-AP018",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 16/17",
+  "season_id": "AP34",
+  "season_label": "Summer 16/17",
+  "source_section_code": "AP018",
+  "section_label": "Mens S/D 5",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Dendy Park 1",
+      "wins": 10,
+      "points": 102,
+      "percentage": 133.61,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Mordialloc",
+      "wins": 9,
+      "points": 85,
+      "percentage": 112.38,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Kings Park",
+      "wins": 8,
+      "points": 77,
+      "percentage": 98.68,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Albert Reserve",
+      "wins": 7,
+      "points": 76,
+      "percentage": 107.65,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Maccabi",
+      "wins": 6,
+      "points": 71,
+      "percentage": 109.34,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Dendy Park 2",
+      "wins": 6,
+      "points": 67,
+      "percentage": 93.02,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Parkdale",
+      "wins": 3,
+      "points": 43,
+      "percentage": 73.69,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "Monash University",
+      "wins": 2,
+      "points": 39,
+      "percentage": 84.57,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP34-AP018",
+  "fixtures": 60,
+  "completed_fixtures": 57,
+  "draw_fixtures": 60,
+  "singles_rubbers": 224,
+  "doubles_rubbers": 110,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

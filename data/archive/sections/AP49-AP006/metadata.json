@@ -1,0 +1,105 @@
+{
+  "asset_id": "AP49-AP006",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 24/25",
+  "season_id": "AP49",
+  "season_label": "Summer 24/25",
+  "source_section_code": "AP006",
+  "section_label": "Mens S/D 6",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Caulfield Rec",
+      "wins": 10,
+      "points": 103.5,
+      "percentage": 160.7,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Maccabi",
+      "wins": 7,
+      "points": 92.5,
+      "percentage": 118.63,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Tennis World",
+      "wins": 8,
+      "points": 86,
+      "percentage": 105.17,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Kings Park Red",
+      "wins": 7,
+      "points": 77.5,
+      "percentage": 114.47,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "BLTC Blue",
+      "wins": 4,
+      "points": 66,
+      "percentage": 101.48,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Royal South Yarra",
+      "wins": 3,
+      "points": 51.5,
+      "percentage": 85.55,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "BLTC White",
+      "wins": 3,
+      "points": 48,
+      "percentage": 75.88,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "Kings Park Blue",
+      "wins": 2,
+      "points": 35,
+      "percentage": 72.33,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP49-AP006",
+  "fixtures": 59,
+  "completed_fixtures": 47,
+  "draw_fixtures": 59,
+  "singles_rubbers": 178,
+  "doubles_rubbers": 89,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP006013 doubles No. 2: '4-6 3-2'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

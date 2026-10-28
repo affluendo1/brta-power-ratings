@@ -1,0 +1,103 @@
+{
+  "asset_id": "AP43-AP015",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 21/22",
+  "season_id": "AP43",
+  "season_label": "Summer 21/22",
+  "source_section_code": "AP015",
+  "section_label": "Mx Rubbers 3",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Elwood",
+      "wins": 10,
+      "points": 83,
+      "percentage": 185.81,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Parkdale",
+      "wins": 8,
+      "points": 66,
+      "percentage": 119.63,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Glen Huntly",
+      "wins": 6,
+      "points": 52,
+      "percentage": 102.78,
+      "marker": "R"
+    },
+    {
+      "position": 4,
+      "team": "Ormond",
+      "wins": 5,
+      "points": 43,
+      "percentage": 88.82,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Highmoor Uniting RA",
+      "wins": 4,
+      "points": 41,
+      "percentage": 101.29,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Langwarrin",
+      "wins": 4,
+      "points": 39,
+      "percentage": 89.08,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Kings Park",
+      "wins": 4,
+      "points": 36,
+      "percentage": 82.44,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "Middle Brighton",
+      "wins": 2,
+      "points": 24,
+      "percentage": 69.92,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP43-AP015",
+  "fixtures": 59,
+  "completed_fixtures": 54,
+  "draw_fixtures": 59,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 184,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

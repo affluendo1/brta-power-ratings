@@ -1,0 +1,95 @@
+{
+  "asset_id": "AP27-AP008",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Winter 2013",
+  "season_id": "AP27",
+  "season_label": "Winter 2013",
+  "source_section_code": "AP008",
+  "section_label": "Open S/D 1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Port Melbourne",
+      "wins": 9,
+      "points": 66,
+      "percentage": 142.01,
+      "marker": ""
+    },
+    {
+      "position": 2,
+      "team": "Highmoor Uniting A",
+      "wins": 8,
+      "points": 59.5,
+      "percentage": 144.24,
+      "marker": "P"
+    },
+    {
+      "position": 3,
+      "team": "Ormond",
+      "wins": 6,
+      "points": 46.5,
+      "percentage": 119.68,
+      "marker": "R"
+    },
+    {
+      "position": 4,
+      "team": "Le Page",
+      "wins": 6,
+      "points": 43,
+      "percentage": 103.53,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Highmoor Uniting B",
+      "wins": 3,
+      "points": 30.5,
+      "percentage": 87.13,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Lauriston",
+      "wins": 3,
+      "points": 28,
+      "percentage": 78.15,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "St Pats Mentone",
+      "wins": 2,
+      "points": 20.5,
+      "percentage": 57.56,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 3,
+    "singlesBestOf": 3,
+    "setTarget": 6,
+    "doublesSlots": 3,
+    "doublesBestOf": 1,
+    "doublesTarget": 10,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP27-AP008",
+  "fixtures": 60,
+  "completed_fixtures": 41,
+  "draw_fixtures": 60,
+  "singles_rubbers": 73,
+  "doubles_rubbers": 59,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

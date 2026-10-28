@@ -1,0 +1,185 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP003011,01 Oct 22,1,BLTC White,BLTC Blue,No. 1,Simon Young,Eddie Andrews,Eddie Andrews,4-8,4,8,0,1,Completed,true,true,false
+AP003011,01 Oct 22,1,BLTC White,BLTC Blue,No. 2,Josh Baldsing,Warren Kenard,Josh Baldsing,8-2,8,2,1,0,Completed,true,false,false
+AP003011,01 Oct 22,1,BLTC White,BLTC Blue,No. 3,Austin Taleb,Roger Boyd,Austin Taleb,8-2,8,2,1,0,Completed,true,false,false
+AP003011,01 Oct 22,1,BLTC White,BLTC Blue,No. 4,Adam Livermoore,Eddie Ivanka,Adam Livermoore,8-3,8,3,1,0,Completed,true,true,false
+AP003012,01 Oct 22,1,Hawthorn,Highmoor Uniting,No. 1,Mike Zappala,Paul Luke,Paul Luke,2-8,2,8,0,1,Completed,true,false,false
+AP003012,01 Oct 22,1,Hawthorn,Highmoor Uniting,No. 2,Paul Wu,Nathan Coombes,Nathan Coombes,5-8,5,8,0,1,Completed,true,false,false
+AP003012,01 Oct 22,1,Hawthorn,Highmoor Uniting,No. 3,Ryan Duckett,Yves Zenou,Yves Zenou,0-8,0,8,0,1,Completed,true,false,false
+AP003012,01 Oct 22,1,Hawthorn,Highmoor Uniting,No. 4,David McWha,Lachlan Peters,Lachlan Peters,1-8,1,8,0,1,Completed,true,false,false
+AP003021,08 Oct 22,2,Caulfield Park Blue,BLTC White,No. 1,James Bruce-Smith,Geoff Bellingham,James Bruce-Smith,8-0,8,0,1,0,Completed,true,false,false
+AP003021,08 Oct 22,2,Caulfield Park Blue,BLTC White,No. 2,Jose Mainella,Aleksey Granitsa,Jose Mainella,8-4,8,4,1,0,Completed,true,false,false
+AP003021,08 Oct 22,2,Caulfield Park Blue,BLTC White,No. 3,Eduardo Dominguez,Shadi Taleb,Shadi Taleb,7-8,7,8,0,1,Completed,true,false,false
+AP003021,08 Oct 22,2,Caulfield Park Blue,BLTC White,No. 4,Jack Glennane,Austin Taleb,Jack Glennane,8-1,8,1,1,0,Completed,true,true,false
+AP003022,08 Oct 22,2,BLTC Blue,Hawthorn,No. 1,Warren Kenard,Ryan Duckett,Warren Kenard,8-0,8,0,1,0,Completed,true,false,false
+AP003023,08 Oct 22,2,Highmoor Uniting,Caulfield Rec,No. 1,Tom Pope,Vlad Gisca,Tom Pope,8-4,8,4,1,0,Completed,true,false,true
+AP003023,08 Oct 22,2,Highmoor Uniting,Caulfield Rec,No. 2,Nathan Coombes,Vikrim Prakash,,7-7,7,7,0,0,Unfinished,false,false,false
+AP003024,08 Oct 22,2,Le Page,Langwarrin,No. 1,Jonathan Deriboklou,Kyle Ebblewhite,,3-2,3,2,1,0,Unfinished,false,false,false
+AP003031,15 Oct 22,3,BLTC White,Le Page,No. 1,Aleksey Granitsa,Mark Petkoff,Aleksey Granitsa,8-4,8,4,1,0,Completed,true,false,false
+AP003031,15 Oct 22,3,BLTC White,Le Page,No. 2,Josh Baldsing,Oliver Kalicin,Josh Baldsing,8-6,8,6,1,0,Completed,true,false,false
+AP003031,15 Oct 22,3,BLTC White,Le Page,No. 3,Kai Ballantyne,Jonathan Deriboklou,Kai Ballantyne,8-0,8,0,1,0,Completed,true,false,false
+AP003031,15 Oct 22,3,BLTC White,Le Page,No. 4,Austin Taleb,Hugh Moir,Hugh Moir,7-8,7,8,0,1,Completed,true,false,false
+AP003032,15 Oct 22,3,Hawthorn,Caulfield Park Blue,No. 1,Alistair Young,James Bruce-Smith,James Bruce-Smith,1-8,1,8,0,1,Completed,true,false,false
+AP003032,15 Oct 22,3,Hawthorn,Caulfield Park Blue,No. 2,Paul Wu,Jose Mainella,Jose Mainella,4-8,4,8,0,1,Completed,true,false,false
+AP003032,15 Oct 22,3,Hawthorn,Caulfield Park Blue,No. 3,Nick Taylor,Adrian Medina,Adrian Medina,0-8,0,8,0,1,Completed,true,false,false
+AP003032,15 Oct 22,3,Hawthorn,Caulfield Park Blue,No. 4,Nicholas Kotros,Eduardo Dominguez,Eduardo Dominguez,5-8,5,8,0,1,Completed,true,false,false
+AP003033,15 Oct 22,3,Caulfield Rec,BLTC Blue,No. 1,Michael Hickey,Eddie Andrews,Eddie Andrews,3-8,3,8,0,1,Completed,true,false,false
+AP003033,15 Oct 22,3,Caulfield Rec,BLTC Blue,No. 2,Mateo Munoz,Warren Kenard,Mateo Munoz,8-3,8,3,1,0,Completed,true,false,false
+AP003033,15 Oct 22,3,Caulfield Rec,BLTC Blue,No. 3,Gabriel Giber,Roger Boyd,Gabriel Giber,8-3,8,3,1,0,Completed,true,false,false
+AP003033,15 Oct 22,3,Caulfield Rec,BLTC Blue,No. 4,Vikrim Prakash,Eddie Ivanka,Vikrim Prakash,8-6,8,6,1,0,Completed,true,false,false
+AP003034,15 Oct 22,3,Langwarrin,Highmoor Uniting,No. 1,Julian McKay,Lachlan Peters,Julian McKay,8-2,8,2,1,0,Completed,true,false,false
+AP003034,15 Oct 22,3,Langwarrin,Highmoor Uniting,No. 2,Kyle Ebblewhite,Tom Pope,Tom Pope,3-8,3,8,0,1,Completed,true,false,false
+AP003034,15 Oct 22,3,Langwarrin,Highmoor Uniting,No. 3,Haris Siakallis,Paul Luke,Haris Siakallis,8-3,8,3,1,0,Completed,true,false,false
+AP003034,15 Oct 22,3,Langwarrin,Highmoor Uniting,No. 4,William Blair,Craig Steward,Craig Steward,1-8,1,8,0,1,Completed,true,false,false
+AP003044,22 Oct 22,4,BLTC Blue,Langwarrin,No. 1,Greg Kluge,Julian McKay,Julian McKay,6-8,6,8,0,1,Completed,true,false,false
+AP003044,22 Oct 22,4,BLTC Blue,Langwarrin,No. 2,Warren Kenard,Kyle Ebblewhite,Warren Kenard,8-5,8,5,1,0,Completed,true,false,false
+AP003044,22 Oct 22,4,BLTC Blue,Langwarrin,No. 3,Roger Boyd,Haris Siakallis,Haris Siakallis,4-8,4,8,0,1,Completed,true,false,false
+AP003044,22 Oct 22,4,BLTC Blue,Langwarrin,No. 4,Eddie Ivanka,William Blair,William Blair,7-8,7,8,0,1,Completed,true,false,false
+AP003051,05 Nov 22,5,Caulfield Rec,Langwarrin,No. 1,Michael Hickey,Julian McKay,Michael Hickey,8-4,8,4,1,0,Completed,true,false,false
+AP003051,05 Nov 22,5,Caulfield Rec,Langwarrin,No. 2,Mateo Munoz,Kyle Ebblewhite,Mateo Munoz,8-6,8,6,1,0,Completed,true,false,false
+AP003051,05 Nov 22,5,Caulfield Rec,Langwarrin,No. 3,Gabriel Giber,Haris Siakallis,Gabriel Giber,8-6,8,6,1,0,Completed,true,false,false
+AP003051,05 Nov 22,5,Caulfield Rec,Langwarrin,No. 4,Vikrim Prakash,William Blair,William Blair,7-8,7,8,0,1,Completed,true,false,false
+AP003052,05 Nov 22,5,Caulfield Park Blue,Le Page,No. 1,James Bruce-Smith,Mark Petkoff,James Bruce-Smith,8-0,8,0,1,0,Completed,true,false,false
+AP003052,05 Nov 22,5,Caulfield Park Blue,Le Page,No. 2,Jose Mainella,Jonathan Deriboklou,Jose Mainella,8-0,8,0,1,0,Completed,true,false,false
+AP003052,05 Nov 22,5,Caulfield Park Blue,Le Page,No. 3,Adrian Medina,Diesel Reid,Adrian Medina,8-4,8,4,1,0,Completed,true,false,false
+AP003052,05 Nov 22,5,Caulfield Park Blue,Le Page,No. 4,Eduardo Dominguez,Andrew Clarke,Eduardo Dominguez,8-1,8,1,1,0,Completed,true,false,false
+AP003053,05 Nov 22,5,Highmoor Uniting,BLTC Blue,No. 1,Nathan Coombes,Greg Kluge,Nathan Coombes,8-4,8,4,1,0,Completed,true,false,false
+AP003053,05 Nov 22,5,Highmoor Uniting,BLTC Blue,No. 2,Kyle Malligan,Warren Kenard,Kyle Malligan,8-3,8,3,1,0,Completed,true,false,false
+AP003053,05 Nov 22,5,Highmoor Uniting,BLTC Blue,No. 3,Craig Steward,Roger Boyd,Craig Steward,8-2,8,2,1,0,Completed,true,false,false
+AP003053,05 Nov 22,5,Highmoor Uniting,BLTC Blue,No. 4,Fred Bernard,Eddie Ivanka,Eddie Ivanka,7-8,7,8,0,1,Completed,true,true,false
+AP003054,05 Nov 22,5,BLTC White,Hawthorn,No. 1,Aleksey Granitsa,Mike Zappala,Aleksey Granitsa,8-3,8,3,1,0,Completed,true,false,false
+AP003054,05 Nov 22,5,BLTC White,Hawthorn,No. 2,Josh Baldsing,Ryan Duckett,Josh Baldsing,8-0,8,0,1,0,Completed,true,false,false
+AP003054,05 Nov 22,5,BLTC White,Hawthorn,No. 3,Shadi Taleb,Paul Wu,Shadi Taleb,8-2,8,2,1,0,Completed,true,false,false
+AP003054,05 Nov 22,5,BLTC White,Hawthorn,No. 4,Kai Ballantyne,Nicholas Kotros,Kai Ballantyne,8-7,8,7,1,0,Completed,true,false,false
+AP003061,12 Nov 22,6,Hawthorn,Caulfield Rec,No. 1,Mike Zappala,Michael Hickey,Mike Zappala,8-6,8,6,1,0,Completed,true,false,false
+AP003061,12 Nov 22,6,Hawthorn,Caulfield Rec,No. 2,Julian Butera,Mateo Munoz,Mateo Munoz,1-8,1,8,0,1,Completed,true,true,false
+AP003061,12 Nov 22,6,Hawthorn,Caulfield Rec,No. 3,David Sartori,Vikrim Prakash,Vikrim Prakash,5-8,5,8,0,1,Completed,true,true,false
+AP003061,12 Nov 22,6,Hawthorn,Caulfield Rec,No. 4,Mark Tsui,Michael Martin,Michael Martin,5-8,5,8,0,1,Completed,true,true,true
+AP003062,12 Nov 22,6,Langwarrin,BLTC White,No. 1,Julian McKay,Aleksey Granitsa,Aleksey Granitsa,6-8,6,8,0,1,Completed,true,false,false
+AP003062,12 Nov 22,6,Langwarrin,BLTC White,No. 2,Kyle Ebblewhite,Shadi Taleb,Shadi Taleb,6-8,6,8,0,1,Completed,true,false,false
+AP003062,12 Nov 22,6,Langwarrin,BLTC White,No. 3,Haris Siakallis,Kai Ballantyne,Kai Ballantyne,1-8,1,8,0,1,Completed,true,false,false
+AP003062,12 Nov 22,6,Langwarrin,BLTC White,No. 4,William Blair,Austin Taleb,William Blair,8-1,8,1,1,0,Completed,true,false,false
+AP003064,12 Nov 22,6,BLTC Blue,Caulfield Park Blue,No. 1,Warren Kenard,James Bruce-Smith,James Bruce-Smith,0-8,0,8,0,1,Completed,true,false,false
+AP003064,12 Nov 22,6,BLTC Blue,Caulfield Park Blue,No. 2,Roger Boyd,Jose Mainella,Jose Mainella,4-8,4,8,0,1,Completed,true,false,false
+AP003064,12 Nov 22,6,BLTC Blue,Caulfield Park Blue,No. 3,Eddie Ivanka,Sonaal Asthana,Sonaal Asthana,6-8,6,8,0,1,Completed,true,false,false
+AP003064,12 Nov 22,6,BLTC Blue,Caulfield Park Blue,No. 4,Andrew Bartholomeusz,Noah Wooldridge,Andrew Bartholomeusz,8-4,8,4,1,0,Completed,true,true,true
+AP003073,19 Nov 22,7,Caulfield Park Blue,Highmoor Uniting,No. 1,James Bruce-Smith,Tom Pope,James Bruce-Smith,8-1,8,1,1,0,Completed,true,false,false
+AP003073,19 Nov 22,7,Caulfield Park Blue,Highmoor Uniting,No. 2,Jack Webb,Paul Luke,Jack Webb,8-4,8,4,1,0,Completed,true,true,false
+AP003073,19 Nov 22,7,Caulfield Park Blue,Highmoor Uniting,No. 3,Eduardo Dominguez,Kyle Malligan,Kyle Malligan,2-8,2,8,0,1,Completed,true,false,false
+AP003073,19 Nov 22,7,Caulfield Park Blue,Highmoor Uniting,No. 4,Rossatorn Aksharanugraha,Craig Steward,Craig Steward,1-8,1,8,0,1,Completed,true,true,false
+AP003081,26 Nov 22,8,BLTC Blue,BLTC White,No. 1,Greg Kluge,Geoff Bellingham,Geoff Bellingham,5-8,5,8,0,1,Completed,true,false,false
+AP003081,26 Nov 22,8,BLTC Blue,BLTC White,No. 2,Warren Kenard,Aleksey Granitsa,Aleksey Granitsa,7-8,7,8,0,1,Completed,true,false,false
+AP003081,26 Nov 22,8,BLTC Blue,BLTC White,No. 3,Roger Boyd,Josh Baldsing,Josh Baldsing,2-8,2,8,0,1,Completed,true,false,false
+AP003081,26 Nov 22,8,BLTC Blue,BLTC White,No. 4,Eddie Ivanka,Austin Taleb,Eddie Ivanka,8-3,8,3,1,0,Completed,true,false,false
+AP003082,26 Nov 22,8,Highmoor Uniting,Hawthorn,No. 1,Tom Pope,Alistair Young,Tom Pope,8-3,8,3,1,0,Completed,true,false,false
+AP003082,26 Nov 22,8,Highmoor Uniting,Hawthorn,No. 2,Paul Luke,Mike Zappala,Paul Luke,8-5,8,5,1,0,Completed,true,false,false
+AP003082,26 Nov 22,8,Highmoor Uniting,Hawthorn,No. 3,Nathan Coombes,Nicholas Kotros,Nathan Coombes,8-4,8,4,1,0,Completed,true,false,false
+AP003082,26 Nov 22,8,Highmoor Uniting,Hawthorn,No. 4,Yves Zenou,David McWha,Yves Zenou,8-2,8,2,1,0,Completed,true,false,false
+AP003083,26 Nov 22,8,Le Page,Caulfield Rec,No. 1,Jake Daniels,Michael Hickey,Michael Hickey,0-8,0,8,0,1,Completed,true,true,false
+AP003083,26 Nov 22,8,Le Page,Caulfield Rec,No. 2,Jonathan Deriboklou,Vikrim Prakash,Vikrim Prakash,4-8,4,8,0,1,Completed,true,false,false
+AP003083,26 Nov 22,8,Le Page,Caulfield Rec,No. 3,Diesel Reid,Gary Slapar,Gary Slapar,7-8,7,8,0,1,Completed,true,false,false
+AP003083,26 Nov 22,8,Le Page,Caulfield Rec,No. 4,Hayato Sata,Jose Munoz,Hayato Sata,8-3,8,3,1,0,Completed,true,true,true
+AP003084,26 Nov 22,8,Caulfield Park Blue,Langwarrin,No. 1,James Bruce-Smith,Julian McKay,James Bruce-Smith,8-0,8,0,1,0,Completed,true,false,false
+AP003084,26 Nov 22,8,Caulfield Park Blue,Langwarrin,No. 2,Jack Webb,Kyle Ebblewhite,Jack Webb,8-3,8,3,1,0,Completed,true,true,false
+AP003084,26 Nov 22,8,Caulfield Park Blue,Langwarrin,No. 3,Sonaal Asthana,Haris Siakallis,Haris Siakallis,7-8,7,8,0,1,Completed,true,false,false
+AP003084,26 Nov 22,8,Caulfield Park Blue,Langwarrin,No. 4,Eduardo Dominguez,William Blair,William Blair,7-8,7,8,0,1,Completed,true,false,false
+AP003092,03 Dec 22,9,Hawthorn,BLTC Blue,No. 1,Mike Zappala,Eddie Andrews,Mike Zappala,8-6,8,6,1,0,Completed,true,false,false
+AP003092,03 Dec 22,9,Hawthorn,BLTC Blue,No. 2,Ryan Duckett,Roger Boyd,Roger Boyd,2-8,2,8,0,1,Completed,true,false,false
+AP003092,03 Dec 22,9,Hawthorn,BLTC Blue,No. 3,Mark Tsui,Eddie Ivanka,Mark Tsui,8-6,8,6,1,0,Completed,true,true,false
+AP003092,03 Dec 22,9,Hawthorn,BLTC Blue,No. 4,David McWha,Andrew Bartholomeusz,Andrew Bartholomeusz,4-8,4,8,0,1,Completed,true,false,true
+AP003093,03 Dec 22,9,Caulfield Rec,Highmoor Uniting,No. 1,Mateo Munoz,Paul Luke,Paul Luke,7-8,7,8,0,1,Completed,true,false,false
+AP003093,03 Dec 22,9,Caulfield Rec,Highmoor Uniting,No. 2,Gabriel Giber,Yves Zenou,Yves Zenou,5-8,5,8,0,1,Completed,true,false,false
+AP003093,03 Dec 22,9,Caulfield Rec,Highmoor Uniting,No. 3,Vikrim Prakash,Fred Bernard,Vikrim Prakash,8-3,8,3,1,0,Completed,true,false,true
+AP003093,03 Dec 22,9,Caulfield Rec,Highmoor Uniting,No. 4,Gary Slapar,Ben Abbott,Ben Abbott,7-8,7,8,0,1,Completed,true,false,false
+AP003094,03 Dec 22,9,Langwarrin,Le Page,No. 1,Kyle Ebblewhite,Mark Petkoff,Kyle Ebblewhite,8-2,8,2,1,0,Completed,true,false,false
+AP003094,03 Dec 22,9,Langwarrin,Le Page,No. 2,Haris Siakallis,Oliver Kalicin,Oliver Kalicin,7-8,7,8,0,1,Completed,true,false,false
+AP003094,03 Dec 22,9,Langwarrin,Le Page,No. 3,William Blair,Jonathan Deriboklou,William Blair,8-1,8,1,1,0,Completed,true,false,false
+AP003094,03 Dec 22,9,Langwarrin,Le Page,No. 4,Alex Ianculescu,Diesel Reid,Diesel Reid,7-8,7,8,0,1,Completed,true,true,false
+AP003101,10 Dec 22,10,Le Page,BLTC White,No. 1,Mark Petkoff,Simon Young,Mark Petkoff,8-7,8,7,1,0,Completed,true,false,true
+AP003101,10 Dec 22,10,Le Page,BLTC White,No. 2,Oliver Kalicin,Shadi Taleb,Shadi Taleb,7-8,7,8,0,1,Completed,true,false,false
+AP003101,10 Dec 22,10,Le Page,BLTC White,No. 3,Jonathan Deriboklou,Kai Ballantyne,Kai Ballantyne,3-8,3,8,0,1,Completed,true,false,false
+AP003101,10 Dec 22,10,Le Page,BLTC White,No. 4,Diesel Reid,Austin Taleb,Austin Taleb,3-8,3,8,0,1,Completed,true,false,false
+AP003102,10 Dec 22,10,Caulfield Park Blue,Hawthorn,No. 1,James Bruce-Smith,Alistair Young,James Bruce-Smith,8-3,8,3,1,0,Completed,true,false,false
+AP003102,10 Dec 22,10,Caulfield Park Blue,Hawthorn,No. 2,Jose Mainella,Mike Zappala,Jose Mainella,8-7,8,7,1,0,Completed,true,false,false
+AP003102,10 Dec 22,10,Caulfield Park Blue,Hawthorn,No. 3,Eduardo Dominguez,Paul Wu,Paul Wu,3-8,3,8,0,1,Completed,true,false,false
+AP003102,10 Dec 22,10,Caulfield Park Blue,Hawthorn,No. 4,Rossatorn Aksharanugraha,Richard Paine,Rossatorn Aksharanugraha,8-3,8,3,1,0,Completed,true,true,true
+AP003103,10 Dec 22,10,BLTC Blue,Caulfield Rec,No. 1,Eddie Andrews,Michael Hickey,Michael Hickey,7-8,7,8,0,1,Completed,true,false,false
+AP003103,10 Dec 22,10,BLTC Blue,Caulfield Rec,No. 2,Warren Kenard,Gabriel Giber,Warren Kenard,8-6,8,6,1,0,Completed,true,false,false
+AP003103,10 Dec 22,10,BLTC Blue,Caulfield Rec,No. 3,Roger Boyd,Vikrim Prakash,Vikrim Prakash,3-8,3,8,0,1,Completed,true,false,false
+AP003103,10 Dec 22,10,BLTC Blue,Caulfield Rec,No. 4,Eddie Ivanka,Gary Slapar,Gary Slapar,7-8,7,8,0,1,Completed,true,false,false
+AP003104,10 Dec 22,10,Highmoor Uniting,Langwarrin,No. 1,Tom Pope,Julian McKay,Julian McKay,5-8,5,8,0,1,Completed,true,false,false
+AP003104,10 Dec 22,10,Highmoor Uniting,Langwarrin,No. 2,Nathan Coombes,Kyle Ebblewhite,Nathan Coombes,8-5,8,5,1,0,Completed,true,false,false
+AP003104,10 Dec 22,10,Highmoor Uniting,Langwarrin,No. 3,Yves Zenou,Haris Siakallis,Yves Zenou,8-7,8,7,1,0,Completed,true,false,false
+AP003104,10 Dec 22,10,Highmoor Uniting,Langwarrin,No. 4,Kyle Malligan,Ben Kowald,Kyle Malligan,8-2,8,2,1,0,Completed,true,false,true
+AP003111,04 Feb 23,11,BLTC White,Highmoor Uniting,No. 1,Geoff Bellingham,Lachlan Peters,Geoff Bellingham,8-5,8,5,1,0,Completed,true,false,false
+AP003111,04 Feb 23,11,BLTC White,Highmoor Uniting,No. 2,Simon Young,Paul Luke,Paul Luke,5-8,5,8,0,1,Completed,true,true,false
+AP003111,04 Feb 23,11,BLTC White,Highmoor Uniting,No. 3,Kai Ballantyne,Nathan Coombes,Nathan Coombes,6-8,6,8,0,1,Completed,true,false,false
+AP003111,04 Feb 23,11,BLTC White,Highmoor Uniting,No. 4,Austin Taleb,Yves Zenou,Yves Zenou,7-8,7,8,0,1,Completed,true,false,false
+AP003112,04 Feb 23,11,Hawthorn,Le Page,No. 1,Alistair Young,Mark Petkoff,Mark Petkoff,1-8,1,8,0,1,Completed,true,false,false
+AP003112,04 Feb 23,11,Hawthorn,Le Page,No. 2,Mike Zappala,Diesel Reid,Mike Zappala,8-5,8,5,1,0,Completed,true,false,false
+AP003112,04 Feb 23,11,Hawthorn,Le Page,No. 3,Paul Wu,Eyal Friedman,Paul Wu,8-5,8,5,1,0,Completed,true,false,false
+AP003112,04 Feb 23,11,Hawthorn,Le Page,No. 4,Shaan Talkad,Hugh Moir,Shaan Talkad,8-1,8,1,1,0,Completed,true,true,false
+AP003113,04 Feb 23,11,Caulfield Rec,Caulfield Park Blue,No. 1,Michael Hickey,James Bruce-Smith,James Bruce-Smith,3-8,3,8,0,1,Completed,true,false,false
+AP003113,04 Feb 23,11,Caulfield Rec,Caulfield Park Blue,No. 2,Mateo Munoz,Jose Mainella,Jose Mainella,4-8,4,8,0,1,Completed,true,false,false
+AP003113,04 Feb 23,11,Caulfield Rec,Caulfield Park Blue,No. 3,Vikrim Prakash,Adrian Medina,Adrian Medina,4-8,4,8,0,1,Completed,true,false,false
+AP003113,04 Feb 23,11,Caulfield Rec,Caulfield Park Blue,No. 4,Gary Slapar,Eduardo Dominguez,Eduardo Dominguez,4-8,4,8,0,1,Completed,true,false,false
+AP003114,04 Feb 23,11,Langwarrin,BLTC Blue,No. 1,Julian McKay,Eddie Andrews,Eddie Andrews,2-8,2,8,0,1,Completed,true,false,false
+AP003114,04 Feb 23,11,Langwarrin,BLTC Blue,No. 2,Kyle Ebblewhite,Warren Kenard,Kyle Ebblewhite,8-0,8,0,1,0,Completed,true,false,false
+AP003114,04 Feb 23,11,Langwarrin,BLTC Blue,No. 3,Haris Siakallis,Roger Boyd,Haris Siakallis,8-1,8,1,1,0,Completed,true,false,false
+AP003114,04 Feb 23,11,Langwarrin,BLTC Blue,No. 4,William Blair,Eddie Ivanka,William Blair,8-3,8,3,1,0,Completed,true,false,false
+AP003121,11 Feb 23,12,Langwarrin,Caulfield Rec,No. 1,Julian McKay,Michael Hickey,Julian McKay,8-3,8,3,1,0,Completed,true,false,false
+AP003121,11 Feb 23,12,Langwarrin,Caulfield Rec,No. 2,Kyle Ebblewhite,Mateo Munoz,Mateo Munoz,2-8,2,8,0,1,Completed,true,false,false
+AP003121,11 Feb 23,12,Langwarrin,Caulfield Rec,No. 3,Haris Siakallis,Gabriel Giber,Haris Siakallis,8-6,8,6,1,0,Completed,true,false,false
+AP003121,11 Feb 23,12,Langwarrin,Caulfield Rec,No. 4,William Blair,Vikrim Prakash,William Blair,8-3,8,3,1,0,Completed,true,false,false
+AP003122,11 Feb 23,12,Le Page,Caulfield Park Blue,No. 1,Mark Petkoff,James Bruce-Smith,James Bruce-Smith,3-8,3,8,0,1,Completed,true,false,false
+AP003122,11 Feb 23,12,Le Page,Caulfield Park Blue,No. 2,Oliver Kalicin,Adrian Medina,Oliver Kalicin,8-0,8,0,1,0,Completed,true,false,false
+AP003122,11 Feb 23,12,Le Page,Caulfield Park Blue,No. 3,Jonathan Deriboklou,Eduardo Dominguez,Eduardo Dominguez,6-8,6,8,0,1,Completed,true,false,false
+AP003122,11 Feb 23,12,Le Page,Caulfield Park Blue,No. 4,Eyal Friedman,Rossatorn Aksharanugraha,Eyal Friedman,8-6,8,6,1,0,Completed,true,false,true
+AP003123,11 Feb 23,12,BLTC Blue,Highmoor Uniting,No. 1,Eddie Andrews,Lachlan Peters,Eddie Andrews,8-5,8,5,1,0,Completed,true,false,false
+AP003123,11 Feb 23,12,BLTC Blue,Highmoor Uniting,No. 2,Juan Sanchez,Tom Pope,Tom Pope,0-8,0,8,0,1,Completed,true,false,false
+AP003123,11 Feb 23,12,BLTC Blue,Highmoor Uniting,No. 3,Warren Kenard,Craig Steward,Craig Steward,6-8,6,8,0,1,Completed,true,false,false
+AP003123,11 Feb 23,12,BLTC Blue,Highmoor Uniting,No. 4,Roger Boyd,Ben Abbott,Roger Boyd,8-3,8,3,1,0,Completed,true,false,false
+AP003124,11 Feb 23,12,Hawthorn,BLTC White,No. 1,Alistair Young,Aleksey Granitsa,Aleksey Granitsa,7-8,7,8,0,1,Completed,true,false,false
+AP003124,11 Feb 23,12,Hawthorn,BLTC White,No. 2,Ryan Duckett,Josh Baldsing,Josh Baldsing,0-8,0,8,0,1,Completed,true,false,false
+AP003124,11 Feb 23,12,Hawthorn,BLTC White,No. 3,Paul Wu,Kai Ballantyne,Kai Ballantyne,0-8,0,8,0,1,Completed,true,false,false
+AP003124,11 Feb 23,12,Hawthorn,BLTC White,No. 4,Nicholas Kotros,Austin Taleb,Austin Taleb,4-8,4,8,0,1,Completed,true,false,false
+AP003131,18 Feb 23,13,Caulfield Rec,Hawthorn,No. 1,Mateo Munoz,Alistair Young,Mateo Munoz,8-4,8,4,1,0,Completed,true,false,false
+AP003131,18 Feb 23,13,Caulfield Rec,Hawthorn,No. 2,Gabriel Giber,Paul Wu,Gabriel Giber,8-6,8,6,1,0,Completed,true,false,false
+AP003131,18 Feb 23,13,Caulfield Rec,Hawthorn,No. 3,Vikrim Prakash,Michael Edmunds,Vikrim Prakash,8-7,8,7,1,0,Completed,true,false,true
+AP003131,18 Feb 23,13,Caulfield Rec,Hawthorn,No. 4,Gary Slapar,Richard Paine,Gary Slapar,8-2,8,2,1,0,Completed,true,false,true
+AP003132,18 Feb 23,13,BLTC White,Langwarrin,No. 1,Geoff Bellingham,Julian McKay,Geoff Bellingham,8-2,8,2,1,0,Completed,true,false,false
+AP003132,18 Feb 23,13,BLTC White,Langwarrin,No. 2,Aleksey Granitsa,Kyle Ebblewhite,Aleksey Granitsa,8-4,8,4,1,0,Completed,true,false,false
+AP003132,18 Feb 23,13,BLTC White,Langwarrin,No. 3,Josh Baldsing,Haris Siakallis,Josh Baldsing,8-0,8,0,1,0,Completed,true,false,false
+AP003132,18 Feb 23,13,BLTC White,Langwarrin,No. 4,Kai Ballantyne,William Blair,Kai Ballantyne,8-4,8,4,1,0,Completed,true,false,false
+AP003134,18 Feb 23,13,Caulfield Park Blue,BLTC Blue,No. 1,James Bruce-Smith,Juan Sanchez,James Bruce-Smith,8-5,8,5,1,0,Completed,true,false,false
+AP003134,18 Feb 23,13,Caulfield Park Blue,BLTC Blue,No. 2,Jose Mainella,Eddie Andrews,Jose Mainella,8-4,8,4,1,0,Completed,true,false,false
+AP003134,18 Feb 23,13,Caulfield Park Blue,BLTC Blue,No. 3,Eduardo Dominguez,Roger Boyd,Roger Boyd,4-8,4,8,0,1,Completed,true,false,false
+AP003134,18 Feb 23,13,Caulfield Park Blue,BLTC Blue,No. 4,Rossatorn Aksharanugraha,Eddie Ivanka,Rossatorn Aksharanugraha,8-7,8,7,1,0,Completed,true,true,false
+AP003141,25 Feb 23,14,Caulfield Rec,BLTC White,No. 1,Michael Hickey,Aleksey Granitsa,Aleksey Granitsa,6-8,6,8,0,1,Completed,true,false,false
+AP003141,25 Feb 23,14,Caulfield Rec,BLTC White,No. 2,Mateo Munoz,Josh Baldsing,Mateo Munoz,8-3,8,3,1,0,Completed,true,false,false
+AP003141,25 Feb 23,14,Caulfield Rec,BLTC White,No. 3,Gabriel Giber,Kai Ballantyne,Kai Ballantyne,2-8,2,8,0,1,Completed,true,false,false
+AP003141,25 Feb 23,14,Caulfield Rec,BLTC White,No. 4,Gary Slapar,Austin Taleb,Gary Slapar,8-3,8,3,1,0,Completed,true,false,false
+AP003142,25 Feb 23,14,Langwarrin,Hawthorn,No. 1,Julian McKay,Alistair Young,Julian McKay,8-4,8,4,1,0,Completed,true,false,false
+AP003142,25 Feb 23,14,Langwarrin,Hawthorn,No. 2,Kyle Ebblewhite,Mike Zappala,Mike Zappala,7-8,7,8,0,1,Completed,true,false,false
+AP003142,25 Feb 23,14,Langwarrin,Hawthorn,No. 3,Haris Siakallis,Paul Wu,Haris Siakallis,8-4,8,4,1,0,Completed,true,false,false
+AP003142,25 Feb 23,14,Langwarrin,Hawthorn,No. 4,William Blair,Nicholas Kotros,William Blair,8-5,8,5,1,0,Completed,true,false,false
+AP003143,25 Feb 23,14,Highmoor Uniting,Caulfield Park Blue,No. 1,Tom Pope,James Bruce-Smith,James Bruce-Smith,5-8,5,8,0,1,Completed,true,false,false
+AP003143,25 Feb 23,14,Highmoor Uniting,Caulfield Park Blue,No. 2,Paul Luke,Jose Mainella,Jose Mainella,2-8,2,8,0,1,Completed,true,false,false
+AP003143,25 Feb 23,14,Highmoor Uniting,Caulfield Park Blue,No. 3,Nathan Coombes,Adrian Medina,Adrian Medina,6-8,6,8,0,1,Completed,true,false,false
+AP003143,25 Feb 23,14,Highmoor Uniting,Caulfield Park Blue,No. 4,Yves Zenou,Rossatorn Aksharanugraha,Yves Zenou,8-7,8,7,1,0,Completed,true,false,true
+AP003144,25 Feb 23,14,BLTC Blue,Le Page,No. 1,Eddie Andrews,Jonathan Deriboklou,Eddie Andrews,8-0,8,0,1,0,Completed,true,false,false
+AP003144,25 Feb 23,14,BLTC Blue,Le Page,No. 2,Greg Kluge,Eyal Friedman,Greg Kluge,8-6,8,6,1,0,Completed,true,false,false
+AP003144,25 Feb 23,14,BLTC Blue,Le Page,No. 3,Warren Kenard,Matt Maycock,Warren Kenard,8-1,8,1,1,0,Completed,true,false,true
+AP003144,25 Feb 23,14,BLTC Blue,Le Page,No. 4,Roger Boyd,Andrew Clarke,Roger Boyd,8-0,8,0,1,0,Completed,true,false,false
+AP003301,,16,Highmoor Uniting,Caulfield Rec,No. 1,Tom Pope,Michael Hickey,Tom Pope,8-4,8,4,1,0,Completed,true,false,false
+AP003301,,16,Highmoor Uniting,Caulfield Rec,No. 2,Paul Luke,Mateo Munoz,Paul Luke,8-6,8,6,1,0,Completed,true,false,false
+AP003301,,16,Highmoor Uniting,Caulfield Rec,No. 3,Yves Zenou,Gabriel Giber,Yves Zenou,8-3,8,3,1,0,Completed,true,false,false
+AP003301,,16,Highmoor Uniting,Caulfield Rec,No. 4,Craig Steward,Vikrim Prakash,Craig Steward,8-0,8,0,1,0,Completed,true,false,false
+AP003302,,16,Caulfield Park Blue,BLTC White,No. 1,James Bruce-Smith,Geoff Bellingham,James Bruce-Smith,8-3,8,3,1,0,Completed,true,false,false
+AP003302,,16,Caulfield Park Blue,BLTC White,No. 2,Adrian Medina,Aleksey Granitsa,Aleksey Granitsa,5-8,5,8,0,1,Completed,true,false,false
+AP003302,,16,Caulfield Park Blue,BLTC White,No. 3,Eduardo Dominguez,Kai Ballantyne,Kai Ballantyne,0-8,0,8,0,1,Completed,true,false,false
+AP003302,,16,Caulfield Park Blue,BLTC White,No. 4,Rossatorn Aksharanugraha,Austin Taleb,Rossatorn Aksharanugraha,8-7,8,7,1,0,Completed,true,true,false
+AP003321,,17,Highmoor Uniting,BLTC White,No. 1,Tom Pope,Geoff Bellingham,Geoff Bellingham,6-8,6,8,0,1,Completed,true,false,false
+AP003321,,17,Highmoor Uniting,BLTC White,No. 2,Paul Luke,Aleksey Granitsa,Paul Luke,8-6,8,6,1,0,Completed,true,false,false
+AP003321,,17,Highmoor Uniting,BLTC White,No. 3,Yves Zenou,Josh Baldsing,Josh Baldsing,2-8,2,8,0,1,Completed,true,false,false
+AP003321,,17,Highmoor Uniting,BLTC White,No. 4,Craig Steward,Kai Ballantyne,Kai Ballantyne,2-8,2,8,0,1,Completed,true,false,false

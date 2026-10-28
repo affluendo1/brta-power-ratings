@@ -1,0 +1,99 @@
+{
+  "asset_id": "AP20-AP093",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 09/10",
+  "season_id": "AP20",
+  "season_label": "Summer 09/10",
+  "source_section_code": "AP093",
+  "section_label": "Mixed Rubbers 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Sth Hawthorn",
+      "wins": 0,
+      "points": 73,
+      "percentage": 143.91,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "Stella Maris",
+      "wins": 0,
+      "points": 59,
+      "percentage": 112.69,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Parkdale",
+      "wins": 0,
+      "points": 53,
+      "percentage": 102.28,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Mordialloc",
+      "wins": 0,
+      "points": 51,
+      "percentage": 112.16,
+      "marker": "P"
+    },
+    {
+      "position": 5,
+      "team": "Kooyong",
+      "wins": 0,
+      "points": 39,
+      "percentage": 93.35,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Highmoor Uniting",
+      "wins": 0,
+      "points": 34,
+      "percentage": 78.37,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Sth Murrumbeena",
+      "wins": 0,
+      "points": 27,
+      "percentage": 74.7,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP20-AP093",
+  "fixtures": 60,
+  "completed_fixtures": 45,
+  "draw_fixtures": 4,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 178,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP093301 doubles No. 4: '6-1 6-7 2-2'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP093311 doubles No. 4: '3-6 0-3'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP093321 doubles No. 3: '2-6 2-4'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

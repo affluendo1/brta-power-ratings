@@ -1,0 +1,143 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP007011,05 Oct 24,1,Patterson Lakes,BLTC Blue,No. 1,Grigore Lotca,Jeremy Mitchell,Grigore Lotca,8-3,8,3,1,0,Completed,true,false,false
+AP007011,05 Oct 24,1,Patterson Lakes,BLTC Blue,No. 2,John Bertsias,Bob McCarthy,John Bertsias,8-0,8,0,1,0,Completed,true,false,false
+AP007011,05 Oct 24,1,Patterson Lakes,BLTC Blue,No. 3,Jonathan Ichim,Matthew Barber,Jonathan Ichim,8-2,8,2,1,0,Completed,true,false,false
+AP007011,05 Oct 24,1,Patterson Lakes,BLTC Blue,No. 4,Fletcher Willmott,Robert Howes,Robert Howes,4-8,4,8,0,1,Completed,true,false,false
+AP007014,05 Oct 24,1,Sandringham,Coatesville,No. 1,Paul Claxton,Marcus Aparo,Marcus Aparo,6-8,6,8,0,1,Completed,true,false,false
+AP007014,05 Oct 24,1,Sandringham,Coatesville,No. 2,Jason Clarke,Theophilus Prokopiou,Theophilus Prokopiou,4-8,4,8,0,1,Completed,true,false,false
+AP007014,05 Oct 24,1,Sandringham,Coatesville,No. 3,Craig Shwerdt,James Rametta,Craig Shwerdt,8-0,8,0,1,0,Completed,true,false,false
+AP007014,05 Oct 24,1,Sandringham,Coatesville,No. 4,Paul Woff,Giordano Russo,Giordano Russo,4-8,4,8,0,1,Completed,true,false,true
+AP007021,12 Oct 24,2,Coatesville,Patterson Lakes,No. 1,Marcus Aparo,Brett Willmott,Marcus Aparo,8-7,8,7,1,0,Completed,true,false,false
+AP007021,12 Oct 24,2,Coatesville,Patterson Lakes,No. 2,Theophilus Prokopiou,Jonathan Ichim,Theophilus Prokopiou,8-5,8,5,1,0,Completed,true,false,false
+AP007021,12 Oct 24,2,Coatesville,Patterson Lakes,No. 3,Joel McCulloch,John Bertsias,Joel McCulloch,8-0,8,0,1,0,Completed,true,false,false
+AP007021,12 Oct 24,2,Coatesville,Patterson Lakes,No. 4,James Rametta,Fletcher Willmott,Fletcher Willmott,2-8,2,8,0,1,Completed,true,false,false
+AP007022,12 Oct 24,2,BLTC Blue,Kooyong,No. 1,Ingo Bahlken,Luis Kennedy,Ingo Bahlken,8-0,8,0,1,0,Completed,true,false,false
+AP007022,12 Oct 24,2,BLTC Blue,Kooyong,No. 2,Bob McCarthy,Nicholas Kotros,Nicholas Kotros,1-8,1,8,0,1,Completed,true,false,false
+AP007022,12 Oct 24,2,BLTC Blue,Kooyong,No. 3,Nicholas Higgins,Selim Ahmed,Selim Ahmed,6-8,6,8,0,1,Completed,true,false,false
+AP007022,12 Oct 24,2,BLTC Blue,Kooyong,No. 4,Robert Howes,Joshua Tebb,Robert Howes,8-2,8,2,1,0,Completed,true,false,false
+AP007024,12 Oct 24,2,Parkdale,Sandringham,No. 1,Andrew Watterson,Paul Claxton,Paul Claxton,7-8,7,8,0,1,Completed,true,false,false
+AP007024,12 Oct 24,2,Parkdale,Sandringham,No. 2,Dante Incani,Jason Clarke,Dante Incani,8-5,8,5,1,0,Completed,true,false,false
+AP007024,12 Oct 24,2,Parkdale,Sandringham,No. 3,Sam Umeonusulu,Craig Shwerdt,Sam Umeonusulu,8-4,8,4,1,0,Completed,true,false,false
+AP007024,12 Oct 24,2,Parkdale,Sandringham,No. 4,Xander Louey,Mark Creelman,Mark Creelman,6-8,6,8,0,1,Completed,true,false,false
+AP007032,19 Oct 24,3,Kooyong,Coatesville,No. 1,Luis Kennedy,Marcus Aparo,Luis Kennedy,8-7,8,7,1,0,Completed,true,false,false
+AP007032,19 Oct 24,3,Kooyong,Coatesville,No. 2,Nishant Shukla,Harry O'Dea,Nishant Shukla,8-2,8,2,1,0,Completed,true,false,false
+AP007032,19 Oct 24,3,Kooyong,Coatesville,No. 3,Selim Ahmed,Joel McCulloch,Selim Ahmed,8-2,8,2,1,0,Completed,true,false,false
+AP007032,19 Oct 24,3,Kooyong,Coatesville,No. 4,Kayaan Saluja,Jonathon Bong,Jonathon Bong,6-8,6,8,0,1,Completed,true,false,false
+AP007033,19 Oct 24,3,Carmelite Blue,BLTC Blue,No. 1,Daniil Levashov,Ingo Bahlken,Daniil Levashov,8-3,8,3,1,0,Completed,true,false,false
+AP007033,19 Oct 24,3,Carmelite Blue,BLTC Blue,No. 2,Lachlan Gordon,Jeremy Mitchell,Jeremy Mitchell,7-8,7,8,0,1,Completed,true,false,false
+AP007033,19 Oct 24,3,Carmelite Blue,BLTC Blue,No. 3,Charlie Smit,Matthew Barber,Charlie Smit,8-3,8,3,1,0,Completed,true,false,false
+AP007033,19 Oct 24,3,Carmelite Blue,BLTC Blue,No. 4,Omar Kamel,Robert Howes,Omar Kamel,8-7,8,7,1,0,Completed,true,false,false
+AP007042,26 Oct 24,4,Parkdale,Kooyong,No. 1,Brandan Sison,Luis Kennedy,Brandan Sison,8-3,8,3,1,0,Completed,true,false,false
+AP007042,26 Oct 24,4,Parkdale,Kooyong,No. 2,Andrew Watterson,Nishant Shukla,Andrew Watterson,8-6,8,6,1,0,Completed,true,false,false
+AP007042,26 Oct 24,4,Parkdale,Kooyong,No. 3,Sam Umeonusulu,Selim Ahmed,Selim Ahmed,6-8,6,8,0,1,Completed,true,false,false
+AP007042,26 Oct 24,4,Parkdale,Kooyong,No. 4,Xander Louey,Kayaan Saluja,Kayaan Saluja,4-8,4,8,0,1,Completed,true,false,false
+AP007043,26 Oct 24,4,Coatesville,Carmelite Blue,No. 1,Marcus Aparo,Daniil Levashov,Daniil Levashov,2-8,2,8,0,1,Completed,true,false,false
+AP007043,26 Oct 24,4,Coatesville,Carmelite Blue,No. 2,Joel McCulloch,Lachlan Gordon,Joel McCulloch,8-5,8,5,1,0,Completed,true,false,false
+AP007043,26 Oct 24,4,Coatesville,Carmelite Blue,No. 3,Giordano Russo,Omar Kamel,Giordano Russo,8-7,8,7,1,0,Completed,true,true,false
+AP007043,26 Oct 24,4,Coatesville,Carmelite Blue,No. 4,Nicholas Aparo,Michael Smit,Michael Smit,1-8,1,8,0,1,Completed,true,true,false
+AP007044,26 Oct 24,4,BLTC Blue,Sandringham,No. 1,Ingo Bahlken,Jason Clarke,Jason Clarke,6-8,6,8,0,1,Completed,true,false,false
+AP007044,26 Oct 24,4,BLTC Blue,Sandringham,No. 2,Bob McCarthy,Gavan Wright,Gavan Wright,3-8,3,8,0,1,Completed,true,false,false
+AP007044,26 Oct 24,4,BLTC Blue,Sandringham,No. 3,Jeremy Mitchell,Mark Creelman,Jeremy Mitchell,8-2,8,2,1,0,Completed,true,false,false
+AP007044,26 Oct 24,4,BLTC Blue,Sandringham,No. 4,Grant Burnell,Frank Bourke,Grant Burnell,8-7,8,7,1,0,Completed,true,true,false
+AP007051,09 Nov 24,5,Carmelite Blue,Sandringham,No. 1,Daniil Levashov,Paul Claxton,Daniil Levashov,8-1,8,1,1,0,Completed,true,false,false
+AP007051,09 Nov 24,5,Carmelite Blue,Sandringham,No. 2,Lachlan Gordon,Jason Clarke,Lachlan Gordon,8-1,8,1,1,0,Completed,true,false,false
+AP007051,09 Nov 24,5,Carmelite Blue,Sandringham,No. 3,Charlie Smit,Gavan Wright,Charlie Smit,8-6,8,6,1,0,Completed,true,false,false
+AP007051,09 Nov 24,5,Carmelite Blue,Sandringham,No. 4,Omar Kamel,Craig Shwerdt,Omar Kamel,8-0,8,0,1,0,Completed,true,false,false
+AP007052,09 Nov 24,5,Coatesville,Parkdale,No. 1,Theophilus Prokopiou,Andrew Watterson,Andrew Watterson,4-8,4,8,0,1,Completed,true,false,false
+AP007052,09 Nov 24,5,Coatesville,Parkdale,No. 2,Joel McCulloch,Dante Incani,Joel McCulloch,8-2,8,2,1,0,Completed,true,false,false
+AP007052,09 Nov 24,5,Coatesville,Parkdale,No. 3,Jonathon Bong,Simon Ghattas,Simon Ghattas,3-8,3,8,0,1,Completed,true,false,false
+AP007052,09 Nov 24,5,Coatesville,Parkdale,No. 4,James Rametta,Xander Louey,James Rametta,8-7,8,7,1,0,Completed,true,false,false
+AP007054,09 Nov 24,5,Patterson Lakes,Kooyong,No. 1,Grigore Lotca,Nishant Shukla,Grigore Lotca,8-5,8,5,1,0,Completed,true,false,false
+AP007054,09 Nov 24,5,Patterson Lakes,Kooyong,No. 2,John Bertsias,Selim Ahmed,John Bertsias,8-4,8,4,1,0,Completed,true,false,false
+AP007054,09 Nov 24,5,Patterson Lakes,Kooyong,No. 3,Jonathan Ichim,Joshua Tebb,Jonathan Ichim,8-1,8,1,1,0,Completed,true,false,false
+AP007054,09 Nov 24,5,Patterson Lakes,Kooyong,No. 4,Brett Willmott,Tyson Kersley,Tyson Kersley,6-8,6,8,0,1,Completed,true,false,true
+AP007061,16 Nov 24,6,Kooyong,Carmelite Blue,No. 1,Luis Kennedy,Daniil Levashov,Daniil Levashov,2-8,2,8,0,1,Completed,true,false,false
+AP007061,16 Nov 24,6,Kooyong,Carmelite Blue,No. 2,Selim Ahmed,Lachlan Gordon,Lachlan Gordon,5-8,5,8,0,1,Completed,true,false,false
+AP007061,16 Nov 24,6,Kooyong,Carmelite Blue,No. 3,Joshua Tebb,Charlie Smit,Charlie Smit,3-8,3,8,0,1,Completed,true,false,false
+AP007061,16 Nov 24,6,Kooyong,Carmelite Blue,No. 4,Kayaan Saluja,Omar Kamel,Kayaan Saluja,8-4,8,4,1,0,Completed,true,false,false
+AP007062,16 Nov 24,6,Sandringham,Patterson Lakes,No. 1,Paul Claxton,Grigore Lotca,Grigore Lotca,6-8,6,8,0,1,Completed,true,false,false
+AP007062,16 Nov 24,6,Sandringham,Patterson Lakes,No. 2,Jason Clarke,Jonathan Ichim,Jonathan Ichim,5-8,5,8,0,1,Completed,true,false,false
+AP007062,16 Nov 24,6,Sandringham,Patterson Lakes,No. 3,Craig Shwerdt,Brett Willmott,Brett Willmott,6-8,6,8,0,1,Completed,true,false,false
+AP007062,16 Nov 24,6,Sandringham,Patterson Lakes,No. 4,Chris Nguyen,Lambros Ichim,Chris Nguyen,8-1,8,1,1,0,Completed,true,true,true
+AP007064,16 Nov 24,6,BLTC Blue,Coatesville,No. 1,Ingo Bahlken,Marcus Aparo,Marcus Aparo,5-8,5,8,0,1,Completed,true,false,false
+AP007064,16 Nov 24,6,BLTC Blue,Coatesville,No. 2,Bob McCarthy,Harry O'Dea,Bob McCarthy,8-0,8,0,1,0,Completed,true,false,false
+AP007064,16 Nov 24,6,BLTC Blue,Coatesville,No. 3,Nicholas Higgins,Jonathon Bong,Nicholas Higgins,8-6,8,6,1,0,Completed,true,false,false
+AP007064,16 Nov 24,6,BLTC Blue,Coatesville,No. 4,Jeremy Mitchell,James Rametta,Jeremy Mitchell,8-6,8,6,1,0,Completed,true,false,false
+AP007071,23 Nov 24,7,Patterson Lakes,Carmelite Blue,No. 1,Grigore Lotca,Daniil Levashov,Grigore Lotca,8-6,8,6,1,0,Completed,true,false,false
+AP007071,23 Nov 24,7,Patterson Lakes,Carmelite Blue,No. 2,John Bertsias,Lachlan Gordon,Lachlan Gordon,7-8,7,8,0,1,Completed,true,false,false
+AP007071,23 Nov 24,7,Patterson Lakes,Carmelite Blue,No. 3,Jonathan Ichim,Charlie Smit,Jonathan Ichim,8-0,8,0,1,0,Completed,true,false,false
+AP007071,23 Nov 24,7,Patterson Lakes,Carmelite Blue,No. 4,Brett Willmott,Omar Kamel,Brett Willmott,8-6,8,6,1,0,Completed,true,false,false
+AP007072,23 Nov 24,7,Kooyong,Sandringham,No. 1,Nishant Shukla,Craig Shwerdt,Nishant Shukla,8-5,8,5,1,0,Completed,true,false,false
+AP007091,07 Dec 24,9,Patterson Lakes,Coatesville,No. 1,Grigore Lotca,Marcus Aparo,Grigore Lotca,8-7,8,7,1,0,Completed,true,false,false
+AP007091,07 Dec 24,9,Patterson Lakes,Coatesville,No. 2,John Bertsias,Harry O'Dea,John Bertsias,8-3,8,3,1,0,Completed,true,false,false
+AP007091,07 Dec 24,9,Patterson Lakes,Coatesville,No. 3,Jonathan Ichim,James Rametta,Jonathan Ichim,8-0,8,0,1,0,Completed,true,false,false
+AP007091,07 Dec 24,9,Patterson Lakes,Coatesville,No. 4,Fletcher Willmott,Oscar Yuen,Fletcher Willmott,8-0,8,0,1,0,Completed,true,false,true
+AP007092,07 Dec 24,9,Kooyong,BLTC Blue,No. 1,Luis Kennedy,Ingo Bahlken,Ingo Bahlken,7-8,7,8,0,1,Completed,true,false,false
+AP007092,07 Dec 24,9,Kooyong,BLTC Blue,No. 2,Nishant Shukla,Bob McCarthy,Nishant Shukla,8-3,8,3,1,0,Completed,true,false,false
+AP007092,07 Dec 24,9,Kooyong,BLTC Blue,No. 3,Joshua Tebb,Nicholas Higgins,Nicholas Higgins,1-8,1,8,0,1,Completed,true,false,false
+AP007092,07 Dec 24,9,Kooyong,BLTC Blue,No. 4,Kayaan Saluja,Jeremy Mitchell,Kayaan Saluja,8-3,8,3,1,0,Completed,true,false,false
+AP007094,07 Dec 24,9,Sandringham,Parkdale,No. 1,Jason Clarke,Brandan Sison,Brandan Sison,3-8,3,8,0,1,Completed,true,false,false
+AP007094,07 Dec 24,9,Sandringham,Parkdale,No. 2,Gavan Wright,Andrew Watterson,Gavan Wright,8-5,8,5,1,0,Completed,true,false,false
+AP007094,07 Dec 24,9,Sandringham,Parkdale,No. 3,Craig Shwerdt,Dante Incani,Dante Incani,3-8,3,8,0,1,Completed,true,false,false
+AP007094,07 Dec 24,9,Sandringham,Parkdale,No. 4,David Byrne,Sam Umeonusulu,David Byrne,8-6,8,6,1,0,Completed,true,true,false
+AP007101,14 Dec 24,10,Parkdale,Patterson Lakes,No. 1,Dante Incani,Grigore Lotca,Grigore Lotca,3-8,3,8,0,1,Completed,true,false,false
+AP007101,14 Dec 24,10,Parkdale,Patterson Lakes,No. 2,Simon Ghattas,Brett Willmott,Simon Ghattas,8-7,8,7,1,0,Completed,true,false,false
+AP007101,14 Dec 24,10,Parkdale,Patterson Lakes,No. 3,Xander Louey,Riley Kernutt,Xander Louey,8-5,8,5,1,0,Completed,true,false,true
+AP007101,14 Dec 24,10,Parkdale,Patterson Lakes,No. 4,Herschel Fitzroy,Blake Houlihan,Herschel Fitzroy,8-0,8,0,1,0,Completed,true,true,true
+AP007102,14 Dec 24,10,Coatesville,Kooyong,No. 1,Theophilus Prokopiou,Luis Kennedy,Luis Kennedy,1-8,1,8,0,1,Completed,true,false,false
+AP007102,14 Dec 24,10,Coatesville,Kooyong,No. 2,Joel McCulloch,Nicholas Kotros,Nicholas Kotros,4-8,4,8,0,1,Completed,true,false,false
+AP007102,14 Dec 24,10,Coatesville,Kooyong,No. 3,James Rametta,Joshua Tebb,James Rametta,8-7,8,7,1,0,Completed,true,false,false
+AP007102,14 Dec 24,10,Coatesville,Kooyong,No. 4,Matthew Strupl,Rolf Tesmer,Rolf Tesmer,0-8,0,8,0,1,Completed,true,true,true
+AP007103,14 Dec 24,10,BLTC Blue,Carmelite Blue,No. 1,Ingo Bahlken,Daniil Levashov,Daniil Levashov,4-8,4,8,0,1,Completed,true,false,false
+AP007103,14 Dec 24,10,BLTC Blue,Carmelite Blue,No. 2,Bob McCarthy,Lachlan Gordon,Lachlan Gordon,7-8,7,8,0,1,Completed,true,false,false
+AP007103,14 Dec 24,10,BLTC Blue,Carmelite Blue,No. 3,Jeremy Mitchell,Charlie Smit,Charlie Smit,3-8,3,8,0,1,Completed,true,false,false
+AP007103,14 Dec 24,10,BLTC Blue,Carmelite Blue,No. 4,Robert Howes,Omar Kamel,Omar Kamel,4-8,4,8,0,1,Completed,true,false,false
+AP007112,01 Feb 25,11,Kooyong,Parkdale,No. 1,Nicholas Kotros,Andrew Watterson,Nicholas Kotros,8-3,8,3,1,0,Completed,true,false,false
+AP007112,01 Feb 25,11,Kooyong,Parkdale,No. 2,Nishant Shukla,Dante Incani,Nishant Shukla,8-4,8,4,1,0,Completed,true,false,false
+AP007112,01 Feb 25,11,Kooyong,Parkdale,No. 3,Selim Ahmed,Simon Ghattas,Simon Ghattas,6-8,6,8,0,1,Completed,true,false,false
+AP007112,01 Feb 25,11,Kooyong,Parkdale,No. 4,Luis Kennedy,Sam Umeonusulu,Sam Umeonusulu,0-8,0,8,0,1,Completed,true,false,false
+AP007113,01 Feb 25,11,Carmelite Blue,Coatesville,No. 1,Daniil Levashov,Marcus Aparo,Daniil Levashov,8-1,8,1,1,0,Completed,true,false,false
+AP007113,01 Feb 25,11,Carmelite Blue,Coatesville,No. 2,Lachlan Gordon,Theophilus Prokopiou,Lachlan Gordon,8-6,8,6,1,0,Completed,true,false,false
+AP007113,01 Feb 25,11,Carmelite Blue,Coatesville,No. 3,Charlie Smit,Joel McCulloch,Charlie Smit,8-0,8,0,1,0,Completed,true,false,false
+AP007113,01 Feb 25,11,Carmelite Blue,Coatesville,No. 4,Omar Kamel,James Rametta,Omar Kamel,8-3,8,3,1,0,Completed,true,false,false
+AP007114,01 Feb 25,11,Sandringham,BLTC Blue,No. 1,Paul Claxton,Bob McCarthy,Paul Claxton,8-0,8,0,1,0,Completed,true,false,false
+AP007114,01 Feb 25,11,Sandringham,BLTC Blue,No. 2,Craig Shwerdt,Nicholas Higgins,Nicholas Higgins,3-8,3,8,0,1,Completed,true,false,false
+AP007114,01 Feb 25,11,Sandringham,BLTC Blue,No. 3,Mark Creelman,Jeremy Mitchell,Jeremy Mitchell,4-8,4,8,0,1,Completed,true,false,false
+AP007114,01 Feb 25,11,Sandringham,BLTC Blue,No. 4,Paul Woff,Matthew Barber,Paul Woff,8-5,8,5,1,0,Completed,true,false,false
+AP007121,08 Feb 25,12,Sandringham,Carmelite Blue,No. 1,Paul Claxton,Daniil Levashov,Paul Claxton,8-1,8,1,1,0,Completed,true,false,false
+AP007121,08 Feb 25,12,Sandringham,Carmelite Blue,No. 2,Jason Clarke,Charlie Smit,Jason Clarke,8-6,8,6,1,0,Completed,true,false,false
+AP007121,08 Feb 25,12,Sandringham,Carmelite Blue,No. 3,Mark Creelman,Omar Kamel,Mark Creelman,8-5,8,5,1,0,Completed,true,false,false
+AP007121,08 Feb 25,12,Sandringham,Carmelite Blue,No. 4,Paul Woff,Tim Watts,Tim Watts,7-8,7,8,0,1,Completed,true,false,true
+AP007122,08 Feb 25,12,Parkdale,Coatesville,No. 1,Brandan Sison,Marcus Aparo,Brandan Sison,8-3,8,3,1,0,Completed,true,false,false
+AP007122,08 Feb 25,12,Parkdale,Coatesville,No. 2,Simon Ghattas,Harry O'Dea,Simon Ghattas,8-3,8,3,1,0,Completed,true,false,false
+AP007122,08 Feb 25,12,Parkdale,Coatesville,No. 3,Sam Umeonusulu,Jonathon Bong,Jonathon Bong,1-8,1,8,0,1,Completed,true,false,false
+AP007122,08 Feb 25,12,Parkdale,Coatesville,No. 4,Xander Louey,James Rametta,Xander Louey,8-6,8,6,1,0,Completed,true,false,false
+AP007124,08 Feb 25,12,Kooyong,Patterson Lakes,No. 1,Lloyd Havlik,Grigore Lotca,Lloyd Havlik,8-1,8,1,1,0,Completed,true,true,false
+AP007124,08 Feb 25,12,Kooyong,Patterson Lakes,No. 2,Nicholas Kotros,Brett Willmott,Nicholas Kotros,8-2,8,2,1,0,Completed,true,false,false
+AP007124,08 Feb 25,12,Kooyong,Patterson Lakes,No. 3,Selim Ahmed,John Bertsias,Selim Ahmed,8-0,8,0,1,0,Completed,true,false,false
+AP007124,08 Feb 25,12,Kooyong,Patterson Lakes,No. 4,Joshua Tebb,Fletcher Willmott,Joshua Tebb,8-7,8,7,1,0,Completed,true,false,false
+AP007131,15 Feb 25,13,Carmelite Blue,Kooyong,No. 1,Daniil Levashov,Lloyd Havlik,Lloyd Havlik,4-8,4,8,0,1,Completed,true,false,true
+AP007131,15 Feb 25,13,Carmelite Blue,Kooyong,No. 2,Lachlan Gordon,Luis Kennedy,Luis Kennedy,3-8,3,8,0,1,Completed,true,false,false
+AP007131,15 Feb 25,13,Carmelite Blue,Kooyong,No. 3,Charlie Smit,Nishant Shukla,Charlie Smit,8-7,8,7,1,0,Completed,true,false,false
+AP007131,15 Feb 25,13,Carmelite Blue,Kooyong,No. 4,Omar Kamel,Selim Ahmed,Selim Ahmed,5-8,5,8,0,1,Completed,true,false,false
+AP007134,15 Feb 25,13,Coatesville,BLTC Blue,No. 1,Marcus Aparo,Bob McCarthy,,1-0,1,0,1,0,Unfinished,false,false,false
+AP007141,22 Feb 25,14,Carmelite Blue,Patterson Lakes,No. 1,Daniil Levashov,Ilie Lotca,Daniil Levashov,8-2,8,2,1,0,Completed,true,false,true
+AP007141,22 Feb 25,14,Carmelite Blue,Patterson Lakes,No. 2,Lachlan Gordon,John Bertsias,John Bertsias,5-8,5,8,0,1,Completed,true,false,false
+AP007141,22 Feb 25,14,Carmelite Blue,Patterson Lakes,No. 3,Charlie Smit,Jonathan Ichim,Jonathan Ichim,5-8,5,8,0,1,Completed,true,false,false
+AP007141,22 Feb 25,14,Carmelite Blue,Patterson Lakes,No. 4,Omar Kamel,Brett Willmott,Brett Willmott,0-8,0,8,0,1,Completed,true,false,false
+AP007142,22 Feb 25,14,Sandringham,Kooyong,No. 1,Paul Claxton,Luis Kennedy,Luis Kennedy,6-8,6,8,0,1,Completed,true,false,false
+AP007142,22 Feb 25,14,Sandringham,Kooyong,No. 2,Jason Clarke,Nishant Shukla,Jason Clarke,8-3,8,3,1,0,Completed,true,false,false
+AP007142,22 Feb 25,14,Sandringham,Kooyong,No. 3,Craig Shwerdt,Selim Ahmed,Selim Ahmed,2-8,2,8,0,1,Completed,true,false,false
+AP007142,22 Feb 25,14,Sandringham,Kooyong,No. 4,Mark Creelman,Kayaan Saluja,Kayaan Saluja,4-8,4,8,0,1,Completed,true,false,false
+AP007301,,16,Kooyong,Parkdale,No. 1,Luis Kennedy,Brandan Sison,Brandan Sison,4-8,4,8,0,1,Completed,true,false,false
+AP007301,,16,Kooyong,Parkdale,No. 2,Nishant Shukla,Andrew Watterson,Nishant Shukla,8-6,8,6,1,0,Completed,true,false,false
+AP007301,,16,Kooyong,Parkdale,No. 3,Selim Ahmed,Simon Ghattas,Selim Ahmed,8-4,8,4,1,0,Completed,true,false,false
+AP007301,,16,Kooyong,Parkdale,No. 4,Joshua Tebb,Sam Umeonusulu,Sam Umeonusulu,3-8,3,8,0,1,Completed,true,false,false
+AP007302,,16,Carmelite Blue,Patterson Lakes,No. 1,Daniil Levashov,Grigore Lotca,Daniil Levashov,8-5,8,5,1,0,Completed,true,false,false
+AP007302,,16,Carmelite Blue,Patterson Lakes,No. 2,Lachlan Gordon,John Bertsias,John Bertsias,4-8,4,8,0,1,Completed,true,false,false
+AP007302,,16,Carmelite Blue,Patterson Lakes,No. 3,Charlie Smit,Jonathan Ichim,Jonathan Ichim,6-8,6,8,0,1,Completed,true,false,false
+AP007302,,16,Carmelite Blue,Patterson Lakes,No. 4,Omar Kamel,Brett Willmott,Brett Willmott,3-8,3,8,0,1,Completed,true,false,false
+AP007321,,17,Carmelite Blue,Parkdale,No. 1,Daniil Levashov,Brandan Sison,Daniil Levashov,8-6,8,6,1,0,Completed,true,false,false
+AP007321,,17,Carmelite Blue,Parkdale,No. 2,Lachlan Gordon,Andrew Watterson,Lachlan Gordon,8-6,8,6,1,0,Completed,true,false,false
+AP007321,,17,Carmelite Blue,Parkdale,No. 3,Charlie Smit,Simon Ghattas,Charlie Smit,8-4,8,4,1,0,Completed,true,false,false
+AP007321,,17,Carmelite Blue,Parkdale,No. 4,Omar Kamel,Sam Umeonusulu,Sam Umeonusulu,6-8,6,8,0,1,Completed,true,false,false

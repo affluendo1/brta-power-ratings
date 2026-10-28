@@ -1,0 +1,95 @@
+{
+  "asset_id": "AP42-AP009",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Winter 2021",
+  "season_id": "AP42",
+  "season_label": "Winter 2021",
+  "source_section_code": "AP009",
+  "section_label": "Mens Rubs 1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Aspendale",
+      "wins": 7,
+      "points": 75,
+      "percentage": 247.92,
+      "marker": ""
+    },
+    {
+      "position": 2,
+      "team": "St Anthony's",
+      "wins": 4,
+      "points": 54,
+      "percentage": 136.77,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Sth Murrumbeena",
+      "wins": 4,
+      "points": 54,
+      "percentage": 120.28,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Albert Park",
+      "wins": 4,
+      "points": 51,
+      "percentage": 112.36,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Hurlingham Park",
+      "wins": 3,
+      "points": 46,
+      "percentage": 98.71,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Centenary Park",
+      "wins": 2,
+      "points": 35,
+      "percentage": 64.77,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Victory Park",
+      "wins": 0,
+      "points": 21,
+      "percentage": 31.55,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP42-AP009",
+  "fixtures": 58,
+  "completed_fixtures": 24,
+  "draw_fixtures": 58,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 96,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

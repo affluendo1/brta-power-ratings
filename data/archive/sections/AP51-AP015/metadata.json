@@ -1,0 +1,87 @@
+{
+  "asset_id": "AP51-AP015",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 25/26",
+  "season_id": "AP51",
+  "season_label": "Summer 25/26",
+  "source_section_code": "AP015",
+  "section_label": "Mx Rubbers 1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Gladeswood",
+      "wins": 9,
+      "points": 77,
+      "percentage": 119.57,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "Hawthorn",
+      "wins": 9,
+      "points": 73,
+      "percentage": 103.32,
+      "marker": "P"
+    },
+    {
+      "position": 3,
+      "team": "Black Rock",
+      "wins": 7,
+      "points": 68,
+      "percentage": 109.35,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Parkdale",
+      "wins": 7,
+      "points": 56,
+      "percentage": 90.05,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Sth Hawthorn",
+      "wins": 4,
+      "points": 44,
+      "percentage": 94.96,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Overport Park",
+      "wins": 4,
+      "points": 42,
+      "percentage": 86.9,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP51-AP015",
+  "fixtures": 46,
+  "completed_fixtures": 40,
+  "draw_fixtures": 57,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 156,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

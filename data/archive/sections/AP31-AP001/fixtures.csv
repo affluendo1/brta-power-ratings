@@ -1,0 +1,48 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP001011,02 May 15,1,regular,Round 1,Patterson Lakes,Victory Park,1,7,1,3,,,25,36,Completed,
+AP001012,02 May 15,1,regular,Round 1,Le Page,Highmoor Uniting,2,6,2,2,,,27,30,Completed,
+pending-ap001-r1-legend-park-bye,02 May 15,1,regular,Round 1,Legend Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP001022,09 May 15,2,regular,Round 2,Highmoor Uniting,Legend Park,0,8,0,4,,,19,40,Completed,
+AP001023,09 May 15,2,regular,Round 2,Victory Park,Le Page,8,0,4,0,,,40,23,Completed,
+pending-ap001-r2-bye-patterson-lakes,09 May 15,2,regular,Round 2,Bye,Patterson Lakes,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP001032,16 May 15,3,regular,Round 3,Legend Park,Victory Park,7,1,3,1,,,33,23,Completed,
+pending-ap001-r3-bye-highmoor-uniting,16 May 15,3,regular,Round 3,Bye,Highmoor Uniting,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap001-r3-patterson-lakes-le-page,16 May 15,3,regular,Round 3,Patterson Lakes,Le Page,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+AP001041,23 May 15,4,regular,Round 4,Highmoor Uniting,Patterson Lakes,1,7,1,3,,,21,36,Completed,
+AP001043,23 May 15,4,regular,Round 4,Le Page,Legend Park,1,7,1,3,,,22,37,Completed,
+pending-ap001-r4-victory-park-bye,23 May 15,4,regular,Round 4,Victory Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP001051,30 May 15,5,regular,Round 5,Patterson Lakes,Legend Park,6,2,2,2,,,34,30,Completed,
+AP001052,30 May 15,5,regular,Round 5,Highmoor Uniting,Victory Park,1,7,1,3,,,23,37,Completed,
+pending-ap001-r5-bye-le-page,30 May 15,5,regular,Round 5,Bye,Le Page,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP001061,13 Jun 15,6,regular,Round 6,Victory Park,Patterson Lakes,2,6,2,2,,,29,32,Completed,
+AP001062,13 Jun 15,6,regular,Round 6,Highmoor Uniting,Le Page,1,7,1,3,,,24,39,Completed,
+pending-ap001-r6-bye-legend-park,13 Jun 15,6,regular,Round 6,Bye,Legend Park,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP001072,20 Jun 15,7,regular,Round 7,Legend Park,Highmoor Uniting,8,0,4,0,,,40,18,Completed,
+AP001073,20 Jun 15,7,regular,Round 7,Le Page,Victory Park,0,8,0,4,,,14,40,Completed,
+pending-ap001-r7-patterson-lakes-bye,20 Jun 15,7,regular,Round 7,Patterson Lakes,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP001081,27 Jun 15,8,regular,Round 8,Le Page,Patterson Lakes,1,7,1,3,,,27,36,Completed,
+AP001082,27 Jun 15,8,regular,Round 8,Victory Park,Legend Park,8,0,4,0,,,40,30,Completed,
+pending-ap001-r8-highmoor-uniting-bye,27 Jun 15,8,regular,Round 8,Highmoor Uniting,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap001-r9-bye-victory-park,04 Jul 15,9,regular,Round 9,Bye,Victory Park,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap001-r9-legend-park-le-page,04 Jul 15,9,regular,Round 9,Legend Park,Le Page,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+pending-ap001-r9-patterson-lakes-highmoor-uniting,04 Jul 15,9,regular,Round 9,Patterson Lakes,Highmoor Uniting,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap001-r10-le-page-bye,11 Jul 15,10,regular,Round 10,Le Page,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap001-r10-legend-park-patterson-lakes,11 Jul 15,10,regular,Round 10,Legend Park,Patterson Lakes,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap001-r10-victory-park-highmoor-uniting,11 Jul 15,10,regular,Round 10,Victory Park,Highmoor Uniting,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP001111,18 Jul 15,11,regular,Round 11,Patterson Lakes,Victory Park,7,1,3,1,,,32,25,Completed,
+AP001112,18 Jul 15,11,regular,Round 11,Le Page,Highmoor Uniting,2,6,2,2,,,30,31,Completed,
+pending-ap001-r11-legend-park-bye,18 Jul 15,11,regular,Round 11,Legend Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP001122,25 Jul 15,12,regular,Round 12,Highmoor Uniting,Legend Park,1,7,1,3,,,20,38,Completed,
+AP001123,25 Jul 15,12,regular,Round 12,Victory Park,Le Page,8,0,4,0,,,40,20,Completed,
+pending-ap001-r12-bye-patterson-lakes,25 Jul 15,12,regular,Round 12,Bye,Patterson Lakes,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP001131,01 Aug 15,13,regular,Round 13,Patterson Lakes,Le Page,4,4,2,2,,,28,28,Completed,
+AP001132,01 Aug 15,13,regular,Round 13,Legend Park,Victory Park,7,1,3,1,,,37,22,Completed,
+pending-ap001-r13-bye-highmoor-uniting,01 Aug 15,13,regular,Round 13,Bye,Highmoor Uniting,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP001141,08 Aug 15,14,regular,Round 14,Highmoor Uniting,Patterson Lakes,4,4,2,2,,,26,26,Completed,
+AP001143,08 Aug 15,14,regular,Round 14,Le Page,Legend Park,0,8,0,4,,,19,40,Completed,
+pending-ap001-r14-victory-park-bye,08 Aug 15,14,regular,Round 14,Victory Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP001151,15 Aug 15,15,regular,Round 15,Patterson Lakes,Legend Park,8,0,4,0,,,40,14,Completed,
+AP001152,15 Aug 15,15,regular,Round 15,Highmoor Uniting,Victory Park,0,8,0,4,,,27,40,Completed,
+AP001311,15 Aug 15,15,regular,Round 15,Legend Park,Patterson Lakes,1,7,1,3,,,31,38,Completed,
+pending-ap001-r15-bye-le-page,15 Aug 15,15,regular,Round 15,Bye,Le Page,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP001321,,16,grand_final,Grand final · TROLS entry 2,Victory Park,Patterson Lakes,0,8,0,4,,,24,40,Completed,

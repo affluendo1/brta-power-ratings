@@ -1,0 +1,60 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP005011,16 Oct 21,1,regular,Round 1,St Pats Mentone,Eaglemont,0,0,0,0,,,0,0,Completed,
+AP005012,16 Oct 21,1,regular,Round 1,Ardrie Park,BLTC,0,0,0,0,,,0,0,Completed,
+AP005013,16 Oct 21,1,regular,Round 1,Patterson Lakes,Tennis World,0,0,0,0,,,0,0,Completed,
+AP005014,16 Oct 21,1,regular,Round 1,St Anthony's,Hawthorn,0,0,0,0,,,0,0,Completed,
+AP005021,23 Oct 21,2,regular,Round 2,Hawthorn,St Pats Mentone,0,0,0,0,,,0,0,Completed,
+AP005022,23 Oct 21,2,regular,Round 2,Eaglemont,Ardrie Park,0,0,0,0,,,0,0,Completed,
+AP005023,23 Oct 21,2,regular,Round 2,BLTC,Patterson Lakes,0,0,0,0,,,0,0,Completed,
+AP005024,23 Oct 21,2,regular,Round 2,Tennis World,St Anthony's,0,0,0,0,,,0,0,Completed,
+AP005031,06 Nov 21,3,regular,Round 3,St Pats Mentone,Tennis World,9,1,7,2,,,53,42,Completed,
+AP005032,06 Nov 21,3,regular,Round 3,Ardrie Park,Hawthorn,3,7,4,5,,,36,45,Completed,
+AP005034,06 Nov 21,3,regular,Round 3,St Anthony's,BLTC,9,1,7,2,,,61,42,Completed,
+pending-ap005-r3-patterson-lakes-eaglemont,06 Nov 21,3,regular,Round 3,Patterson Lakes,Eaglemont,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+pending-ap005-r4-bltc-st-pats-mentone,13 Nov 21,4,regular,Round 4,BLTC,St Pats Mentone,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap005-r4-eaglemont-st-anthony-s,13 Nov 21,4,regular,Round 4,Eaglemont,St Anthony's,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap005-r4-hawthorn-patterson-lakes,13 Nov 21,4,regular,Round 4,Hawthorn,Patterson Lakes,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap005-r4-tennis-world-ardrie-park,13 Nov 21,4,regular,Round 4,Tennis World,Ardrie Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP005051,20 Nov 21,5,regular,Round 5,Patterson Lakes,St Anthony's,2,8,3,5,,,35,48,Completed,
+AP005052,20 Nov 21,5,regular,Round 5,Hawthorn,Tennis World,7,3,4,4,,,39,37,Completed,
+AP005053,20 Nov 21,5,regular,Round 5,BLTC,Eaglemont,8,2,5,4,,,50,49,Completed,
+AP005054,20 Nov 21,5,regular,Round 5,St Pats Mentone,Ardrie Park,8,2,5,3,,,47,32,Completed,
+AP005061,27 Nov 21,6,regular,Round 6,Ardrie Park,Patterson Lakes,8,2,6,3,,,53,46,Completed,
+AP005062,27 Nov 21,6,regular,Round 6,St Anthony's,St Pats Mentone,10,0,8,0,,,56,31,Completed,
+AP005063,27 Nov 21,6,regular,Round 6,Tennis World,BLTC,9,1,7,1,,,50,16,Completed,
+pending-ap005-r6-eaglemont-hawthorn,27 Nov 21,6,regular,Round 6,Eaglemont,Hawthorn,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP005071,04 Dec 21,7,regular,Round 7,St Pats Mentone,Patterson Lakes,2,8,3,6,,,34,49,Completed,
+AP005072,04 Dec 21,7,regular,Round 7,Ardrie Park,St Anthony's,0,10,0,8,,,16,57,Completed,
+AP005073,04 Dec 21,7,regular,Round 7,Hawthorn,BLTC,2,8,3,5,,,32,41,Completed,
+pending-ap005-r7-tennis-world-eaglemont,04 Dec 21,7,regular,Round 7,Tennis World,Eaglemont,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP005081,11 Dec 21,8,regular,Round 8,Eaglemont,St Pats Mentone,2,8,3,6,,,48,51,Completed,
+AP005082,11 Dec 21,8,regular,Round 8,BLTC,Ardrie Park,2,8,2,6,,,25,46,Completed,
+AP005083,11 Dec 21,8,regular,Round 8,Tennis World,Patterson Lakes,9,1,7,1,,,54,32,Completed,
+AP005084,11 Dec 21,8,regular,Round 8,Hawthorn,St Anthony's,8,2,5,3,,,53,37,Completed,
+AP005091,29 Jan 22,9,regular,Round 9,St Pats Mentone,Hawthorn,0,10,1,8,,,36,61,Completed,
+AP005092,29 Jan 22,9,regular,Round 9,Ardrie Park,Eaglemont,8,2,6,3,,,53,50,Completed,
+AP005093,29 Jan 22,9,regular,Round 9,Patterson Lakes,BLTC,1,9,2,7,,,33,55,Completed,
+pending-ap005-r9-st-anthony-s-tennis-world,29 Jan 22,9,regular,Round 9,St Anthony's,Tennis World,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP005101,05 Feb 22,10,regular,Round 10,Tennis World,St Pats Mentone,9,1,7,1,,,54,28,Completed,
+AP005102,05 Feb 22,10,regular,Round 10,Hawthorn,Ardrie Park,8,2,5,3,,,45,32,Completed,
+AP005103,05 Feb 22,10,regular,Round 10,Eaglemont,Patterson Lakes,10,0,8,0,,,56,11,Completed,
+AP005104,05 Feb 22,10,regular,Round 10,BLTC,St Anthony's,2,8,3,6,,,39,51,Completed,
+AP005111,12 Feb 22,11,regular,Round 11,St Pats Mentone,BLTC,1,9,2,7,,,39,57,Completed,
+AP005112,12 Feb 22,11,regular,Round 11,Ardrie Park,Tennis World,2,8,4,5,,,42,47,Completed,
+AP005113,12 Feb 22,11,regular,Round 11,Patterson Lakes,Hawthorn,1,9,2,7,,,27,62,Completed,
+AP005114,12 Feb 22,11,regular,Round 11,St Anthony's,Eaglemont,10,0,8,0,,,57,19,Completed,
+AP005121,19 Feb 22,12,regular,Round 12,St Anthony's,Patterson Lakes,10,0,8,1,,,59,23,Completed,
+AP005124,19 Feb 22,12,regular,Round 12,Ardrie Park,St Pats Mentone,7,3,5,4,,,50,46,Completed,
+pending-ap005-r12-eaglemont-bltc,19 Feb 22,12,regular,Round 12,Eaglemont,BLTC,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+pending-ap005-r12-tennis-world-hawthorn,19 Feb 22,12,regular,Round 12,Tennis World,Hawthorn,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+AP005132,26 Feb 22,13,regular,Round 13,St Pats Mentone,St Anthony's,0,10,0,8,,,16,56,Completed,
+AP005133,26 Feb 22,13,regular,Round 13,BLTC,Tennis World,2,8,2,6,,,37,54,Completed,
+pending-ap005-r13-hawthorn-eaglemont,26 Feb 22,13,regular,Round 13,Hawthorn,Eaglemont,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+pending-ap005-r13-patterson-lakes-ardrie-park,26 Feb 22,13,regular,Round 13,Patterson Lakes,Ardrie Park,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP005141,05 Mar 22,14,regular,Round 14,Patterson Lakes,St Pats Mentone,2,8,4,5,,,36,48,Completed,
+AP005142,05 Mar 22,14,regular,Round 14,St Anthony's,Ardrie Park,9,1,7,2,,,55,33,Completed,
+AP005143,05 Mar 22,14,regular,Round 14,BLTC,Hawthorn,1,9,2,7,,,42,59,Completed,
+pending-ap005-r14-eaglemont-tennis-world,05 Mar 22,14,regular,Round 14,Eaglemont,Tennis World,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP005301,,16,semi_final,Semi-final,St Anthony's,BLTC,8,2,6,2,,,52,28,Completed,
+AP005302,,16,semi_final,Semi-final,Hawthorn,Tennis World,9,1,6,2,,,52,32,Completed,
+AP005321,,17,grand_final,Grand final · TROLS entry 2,St Anthony's,Hawthorn,8,2,6,3,,,57,43,Completed,

@@ -1,0 +1,97 @@
+{
+  "asset_id": "AP34-AP021",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 16/17",
+  "season_id": "AP34",
+  "season_label": "Summer 16/17",
+  "source_section_code": "AP021",
+  "section_label": "Mens S/D 8",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Lauriston",
+      "wins": 8,
+      "points": 78,
+      "percentage": 123.11,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "Ormond CR",
+      "wins": 7,
+      "points": 75,
+      "percentage": 128.89,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Mordialloc",
+      "wins": 7,
+      "points": 71,
+      "percentage": 113.94,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "BLTC",
+      "wins": 7,
+      "points": 71,
+      "percentage": 113.92,
+      "marker": "P"
+    },
+    {
+      "position": 5,
+      "team": "Caulfield Rec",
+      "wins": 7,
+      "points": 69,
+      "percentage": 105.04,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Hampton Park",
+      "wins": 1,
+      "points": 29,
+      "percentage": 63.35,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Monash University",
+      "wins": 1,
+      "points": 27,
+      "percentage": 70.43,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP34-AP021",
+  "fixtures": 60,
+  "completed_fixtures": 42,
+  "draw_fixtures": 49,
+  "singles_rubbers": 168,
+  "doubles_rubbers": 84,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP021321 doubles No. 2: '7-6 2-4'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

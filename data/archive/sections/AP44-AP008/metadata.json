@@ -1,0 +1,79 @@
+{
+  "asset_id": "AP44-AP008",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Winter 2022",
+  "season_id": "AP44",
+  "season_label": "Winter 2022",
+  "source_section_code": "AP008",
+  "section_label": "Open S/D 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Elsternwick Park Red",
+      "wins": 11,
+      "points": 101.5,
+      "percentage": 166.32,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Royal Ave",
+      "wins": 8,
+      "points": 81.5,
+      "percentage": 131.34,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Maccabi",
+      "wins": 4,
+      "points": 47,
+      "percentage": 77.08,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Glen Huntly",
+      "wins": 3,
+      "points": 39,
+      "percentage": 84.9,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "East Malvern",
+      "wins": 2,
+      "points": 31,
+      "percentage": 69.32,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP44-AP008",
+  "fixtures": 46,
+  "completed_fixtures": 29,
+  "draw_fixtures": 57,
+  "singles_rubbers": 116,
+  "doubles_rubbers": 58,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

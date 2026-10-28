@@ -1,0 +1,101 @@
+{
+  "asset_id": "AP46-AP003",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Winter 2023",
+  "season_id": "AP46",
+  "season_label": "Winter 2023",
+  "source_section_code": "AP003",
+  "section_label": "Mx Rubbers 1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Overport Park",
+      "wins": 11,
+      "points": 92.5,
+      "percentage": 181.91,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Pakenham",
+      "wins": 9,
+      "points": 80,
+      "percentage": 125.87,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Gladeswood",
+      "wins": 9,
+      "points": 79.5,
+      "percentage": 137.58,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "St Pauls",
+      "wins": 5,
+      "points": 58,
+      "percentage": 98.13,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Parkdale",
+      "wins": 2,
+      "points": 27,
+      "percentage": 65.37,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Kings Park",
+      "wins": 0,
+      "points": 23,
+      "percentage": 57.8,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP46-AP003",
+  "fixtures": 46,
+  "completed_fixtures": 39,
+  "draw_fixtures": 57,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 154,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP003031 doubles No. 3: '7-6 5-7'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP003032 doubles No. 3: '3-6 0-3'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP003033 doubles No. 3: '3-6 1-2'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP003033 doubles No. 4: '3-6 2-0'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP003042 doubles No. 3: '6-4 4-2'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP003042 doubles No. 4: '1-6 3-4'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP003053 doubles No. 4: '3-6 5-5'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP003063 doubles No. 3: '6-7 6-3 1-2'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP003071 doubles No. 3: '6-2 0-1'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP003071 doubles No. 4: '6-1 1-1'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP003072 doubles No. 3: '2-0'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP003072 doubles No. 4: '2-0'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP003073 doubles No. 1: '5-7 7-6 2-3'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "asset_id": "AP36-AP017",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 17/18",
+  "season_id": "AP36",
+  "season_label": "Summer 17/18",
+  "source_section_code": "AP017",
+  "section_label": "Mens S/D 5",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "East Malvern",
+      "wins": 9,
+      "points": 104,
+      "percentage": 163.29,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "Mordialloc",
+      "wins": 7,
+      "points": 83,
+      "percentage": 115.28,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Coatesville",
+      "wins": 8,
+      "points": 81,
+      "percentage": 106.08,
+      "marker": "P"
+    },
+    {
+      "position": 4,
+      "team": "St Pats Mentone",
+      "wins": 6,
+      "points": 69,
+      "percentage": 99.01,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Maccabi",
+      "wins": 6,
+      "points": 65,
+      "percentage": 92.7,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Kings Park",
+      "wins": 5,
+      "points": 63,
+      "percentage": 99.35,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Hawthorn",
+      "wins": 4,
+      "points": 50,
+      "percentage": 85.97,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "Langwarrin",
+      "wins": 4,
+      "points": 45,
+      "percentage": 64.43,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP36-AP017",
+  "fixtures": 60,
+  "completed_fixtures": 53,
+  "draw_fixtures": 49,
+  "singles_rubbers": 212,
+  "doubles_rubbers": 104,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP017311 doubles No. 2: '6-7 1-2'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

@@ -1,0 +1,60 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP007011,06 Oct 18,1,regular,Round 1,Parkdale 1,Parkdale 2,1,7,1,3,2,6,29,43,Completed,
+AP007012,06 Oct 18,1,regular,Round 1,Langwarrin,St Pats Mentone,8,0,4,0,8,0,49,16,Completed,
+AP007013,06 Oct 18,1,regular,Round 1,St Johns,Glen Huntly,7,1,3,1,6,2,46,28,Completed,
+pending-ap007-r1-bye-kings-park,06 Oct 18,1,regular,Round 1,Bye,Kings Park,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007021,13 Oct 18,2,regular,Round 2,Kings Park,Parkdale 1,7,1,3,1,7,3,47,37,Completed,
+AP007022,13 Oct 18,2,regular,Round 2,Parkdale 2,Langwarrin,1,7,1,3,2,6,29,45,Completed,
+AP007023,13 Oct 18,2,regular,Round 2,St Pats Mentone,St Johns,8,0,4,0,8,1,49,27,Completed,
+pending-ap007-r2-glen-huntly-bye,13 Oct 18,2,regular,Round 2,Glen Huntly,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007032,20 Oct 18,3,regular,Round 3,Langwarrin,Kings Park,8,0,4,0,8,0,49,19,Completed,
+AP007033,20 Oct 18,3,regular,Round 3,St Johns,Parkdale 2,1,7,1,3,4,6,32,48,Completed,
+pending-ap007-r3-bye-st-pats-mentone,20 Oct 18,3,regular,Round 3,Bye,St Pats Mentone,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap007-r3-parkdale-1-glen-huntly,20 Oct 18,3,regular,Round 3,Parkdale 1,Glen Huntly,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP007041,27 Oct 18,4,regular,Round 4,St Pats Mentone,Parkdale 1,8,0,4,0,8,0,48,17,Completed,
+AP007042,27 Oct 18,4,regular,Round 4,Glen Huntly,Langwarrin,0,8,0,4,1,8,27,54,Completed,
+AP007043,27 Oct 18,4,regular,Round 4,Kings Park,St Johns,0,8,0,4,1,8,26,50,Completed,
+pending-ap007-r4-parkdale-2-bye,27 Oct 18,4,regular,Round 4,Parkdale 2,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007052,10 Nov 18,5,regular,Round 5,Kings Park,Glen Huntly,0,8,0,4,1,8,32,55,Completed,
+AP007053,10 Nov 18,5,regular,Round 5,St Pats Mentone,Parkdale 2,8,0,4,0,8,2,55,30,Completed,
+AP007054,10 Nov 18,5,regular,Round 5,Parkdale 1,Langwarrin,2,6,2,2,4,5,44,46,Completed,
+pending-ap007-r5-st-johns-bye,10 Nov 18,5,regular,Round 5,St Johns,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007061,17 Nov 18,6,regular,Round 6,Langwarrin,St Johns,8,0,4,0,8,0,50,25,Completed,
+AP007063,17 Nov 18,6,regular,Round 6,Glen Huntly,St Pats Mentone,1,7,1,3,2,7,41,52,Completed,
+AP007064,17 Nov 18,6,regular,Round 6,Parkdale 2,Kings Park,8,0,4,0,8,2,56,33,Completed,
+pending-ap007-r6-bye-parkdale-1,17 Nov 18,6,regular,Round 6,Bye,Parkdale 1,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007071,24 Nov 18,7,regular,Round 7,Parkdale 1,St Johns,6,2,2,2,4,4,40,35,Completed,
+AP007073,24 Nov 18,7,regular,Round 7,Kings Park,St Pats Mentone,1,7,1,3,2,7,41,57,Completed,
+AP007074,24 Nov 18,7,regular,Round 7,Glen Huntly,Parkdale 2,8,0,4,0,8,1,56,39,Completed,
+pending-ap007-r7-langwarrin-bye,24 Nov 18,7,regular,Round 7,Langwarrin,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007081,01 Dec 18,8,regular,Round 8,Parkdale 2,Parkdale 1,0,8,0,4,2,8,36,58,Completed,
+AP007082,01 Dec 18,8,regular,Round 8,St Pats Mentone,Langwarrin,0,8,0,4,0,8,18,49,Completed,
+AP007083,01 Dec 18,8,regular,Round 8,Glen Huntly,St Johns,6,2,2,2,5,4,42,29,Completed,
+pending-ap007-r8-kings-park-bye,01 Dec 18,8,regular,Round 8,Kings Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007091,08 Dec 18,9,regular,Round 9,Parkdale 1,Kings Park,7,1,3,1,6,3,47,45,Completed,
+AP007092,08 Dec 18,9,regular,Round 9,Langwarrin,Parkdale 2,8,0,4,0,8,0,48,19,Completed,
+AP007093,08 Dec 18,9,regular,Round 9,St Johns,St Pats Mentone,1,7,1,3,3,6,38,49,Completed,
+pending-ap007-r9-bye-glen-huntly,08 Dec 18,9,regular,Round 9,Bye,Glen Huntly,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007101,15 Dec 18,10,regular,Round 10,Glen Huntly,Parkdale 1,2,6,2,2,4,5,34,40,Completed,
+AP007102,15 Dec 18,10,regular,Round 10,Kings Park,Langwarrin,0,8,0,4,0,8,7,48,Completed,
+AP007103,15 Dec 18,10,regular,Round 10,Parkdale 2,St Johns,8,0,4,0,8,1,55,31,Completed,
+pending-ap007-r10-st-pats-mentone-bye,15 Dec 18,10,regular,Round 10,St Pats Mentone,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007111,02 Feb 19,11,regular,Round 11,Parkdale 1,St Pats Mentone,2,6,2,2,5,6,53,53,Completed,
+AP007112,02 Feb 19,11,regular,Round 11,Langwarrin,Glen Huntly,4,4,1,1,2,2,26,15,Completed,
+AP007113,02 Feb 19,11,regular,Round 11,St Johns,Kings Park,3,5,0,2,0,4,12,25,Completed,
+pending-ap007-r11-bye-parkdale-2,02 Feb 19,11,regular,Round 11,Bye,Parkdale 2,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007123,09 Feb 19,12,regular,Round 12,Parkdale 2,St Pats Mentone,1,7,1,3,3,6,35,49,Completed,
+AP007124,09 Feb 19,12,regular,Round 12,Langwarrin,Parkdale 1,7,1,3,1,6,3,46,36,Completed,
+pending-ap007-r12-bye-st-johns,09 Feb 19,12,regular,Round 12,Bye,St Johns,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap007-r12-glen-huntly-kings-park,09 Feb 19,12,regular,Round 12,Glen Huntly,Kings Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP007131,16 Feb 19,13,regular,Round 13,St Johns,Langwarrin,0,8,0,4,0,8,15,48,Completed,
+AP007133,16 Feb 19,13,regular,Round 13,St Pats Mentone,Glen Huntly,7,1,3,1,6,2,43,37,Completed,
+AP007134,16 Feb 19,13,regular,Round 13,Kings Park,Parkdale 2,2,6,2,2,4,5,40,41,Completed,
+pending-ap007-r13-parkdale-1-bye,16 Feb 19,13,regular,Round 13,Parkdale 1,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007141,23 Feb 19,14,regular,Round 14,St Johns,Parkdale 1,0,8,0,4,0,8,28,50,Completed,
+AP007143,23 Feb 19,14,regular,Round 14,St Pats Mentone,Kings Park,7,1,3,1,7,4,62,54,Completed,
+AP007144,23 Feb 19,14,regular,Round 14,Parkdale 2,Glen Huntly,1,7,1,3,2,7,36,52,Completed,
+pending-ap007-r14-bye-langwarrin,23 Feb 19,14,regular,Round 14,Bye,Langwarrin,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007301,,16,semi_final,Semi-final,Langwarrin,Glen Huntly,6,2,0,0,0,0,0,0,Completed,
+AP007302,,16,semi_final,Semi-final,St Pats Mentone,Parkdale 1,6,2,2,2,6,4,55,39,Completed,
+AP007321,,17,grand_final,Grand final · TROLS entry 2,Langwarrin,St Pats Mentone,7.5,0.5,3,0,7,0,44,20,Completed,

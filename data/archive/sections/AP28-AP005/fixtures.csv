@@ -1,0 +1,48 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP005011,05 Oct 13,1,regular,Round 1,BLTC,Oakleigh,8,0,4,0,8,2,58,32,Completed,
+AP005012,05 Oct 13,1,regular,Round 1,Hawthorn 1,Kooyong,0,8,0,4,0,8,30,51,Completed,
+pending-ap005-r1-bye-hawthorn-2,05 Oct 13,1,regular,Round 1,Bye,Hawthorn 2,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP005021,12 Oct 13,2,regular,Round 2,Hawthorn 2,BLTC,7,1,3,1,6,3,46,37,Completed,
+AP005023,12 Oct 13,2,regular,Round 2,Oakleigh,Hawthorn 1,8,0,4,0,8,0,48,12,Completed,
+pending-ap005-r2-kooyong-bye,12 Oct 13,2,regular,Round 2,Kooyong,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP005031,19 Oct 13,3,regular,Round 3,BLTC,Hawthorn 1,8,0,4,0,8,1,51,25,Completed,
+AP005033,19 Oct 13,3,regular,Round 3,Hawthorn 2,Kooyong,7,1,3,1,6,3,49,39,Completed,
+pending-ap005-r3-bye-oakleigh,19 Oct 13,3,regular,Round 3,Bye,Oakleigh,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP005041,26 Oct 13,4,regular,Round 4,Kooyong,BLTC,2,6,2,2,4,5,38,44,Completed,
+AP005042,26 Oct 13,4,regular,Round 4,Oakleigh,Hawthorn 2,7,1,3,1,7,4,58,51,Completed,
+pending-ap005-r4-hawthorn-1-bye,26 Oct 13,4,regular,Round 4,Hawthorn 1,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP005052,09 Nov 13,5,regular,Round 5,Kooyong,Oakleigh,6,2,2,2,5,4,41,38,Completed,
+AP005053,09 Nov 13,5,regular,Round 5,Hawthorn 2,Hawthorn 1,6,2,2,2,4,4,37,35,Completed,
+pending-ap005-r5-bltc-bye,09 Nov 13,5,regular,Round 5,BLTC,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP005061,16 Nov 13,6,regular,Round 6,Oakleigh,BLTC,8,0,4,0,8,1,54,26,Completed,
+AP005062,16 Nov 13,6,regular,Round 6,Kooyong,Hawthorn 1,1,7,1,3,3,6,40,46,Completed,
+pending-ap005-r6-hawthorn-2-bye,16 Nov 13,6,regular,Round 6,Hawthorn 2,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP005073,23 Nov 13,7,regular,Round 7,Hawthorn 1,Oakleigh,6,2,2,2,6,4,49,39,Completed,
+pending-ap005-r7-bltc-hawthorn-2,23 Nov 13,7,regular,Round 7,BLTC,Hawthorn 2,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+pending-ap005-r7-bye-kooyong,23 Nov 13,7,regular,Round 7,Bye,Kooyong,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP005081,30 Nov 13,8,regular,Round 8,Hawthorn 1,BLTC,0,8,0,4,1,8,35,54,Completed,
+AP005083,30 Nov 13,8,regular,Round 8,Kooyong,Hawthorn 2,0,8,0,4,1,8,26,51,Completed,
+pending-ap005-r8-oakleigh-bye,30 Nov 13,8,regular,Round 8,Oakleigh,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP005091,07 Dec 13,9,regular,Round 9,BLTC,Kooyong,7,1,3,1,6,3,44,34,Completed,
+AP005092,07 Dec 13,9,regular,Round 9,Hawthorn 2,Oakleigh,0,8,0,4,1,8,22,49,Completed,
+pending-ap005-r9-bye-hawthorn-1,07 Dec 13,9,regular,Round 9,Bye,Hawthorn 1,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP005103,14 Dec 13,10,regular,Round 10,Hawthorn 1,Hawthorn 2,7,1,3,1,7,3,55,29,Completed,
+pending-ap005-r10-bye-bltc,14 Dec 13,10,regular,Round 10,Bye,BLTC,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap005-r10-oakleigh-kooyong,14 Dec 13,10,regular,Round 10,Oakleigh,Kooyong,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP005111,01 Feb 14,11,regular,Round 11,BLTC,Oakleigh,0,8,0,4,1,8,24,52,Completed,
+AP005112,01 Feb 14,11,regular,Round 11,Hawthorn 1,Kooyong,8,0,4,0,8,1,58,37,Completed,
+pending-ap005-r11-bye-hawthorn-2,01 Feb 14,11,regular,Round 11,Bye,Hawthorn 2,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP005121,08 Feb 14,12,regular,Round 12,Hawthorn 2,BLTC,3,5,0,2,0,4,14,24,Completed,
+AP005123,08 Feb 14,12,regular,Round 12,Oakleigh,Hawthorn 1,8,0,4,0,8,0,50,14,Completed,
+pending-ap005-r12-kooyong-bye,08 Feb 14,12,regular,Round 12,Kooyong,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP005131,15 Feb 14,13,regular,Round 13,BLTC,Hawthorn 1,7,1,3,1,6,4,44,45,Completed,
+pending-ap005-r13-bye-oakleigh,15 Feb 14,13,regular,Round 13,Bye,Oakleigh,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap005-r13-hawthorn-2-kooyong,15 Feb 14,13,regular,Round 13,Hawthorn 2,Kooyong,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP005142,22 Feb 14,14,regular,Round 14,Oakleigh,Hawthorn 2,8,0,4,0,8,0,48,10,Completed,
+pending-ap005-r14-hawthorn-1-bye,22 Feb 14,14,regular,Round 14,Hawthorn 1,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap005-r14-kooyong-bltc,22 Feb 14,14,regular,Round 14,Kooyong,BLTC,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+AP005152,01 Mar 14,15,regular,Round 15,Kooyong,Oakleigh,0,8,0,4,0,8,12,49,Completed,
+AP005153,01 Mar 14,15,regular,Round 15,Hawthorn 2,Hawthorn 1,6,2,2,2,6,6,54,52,Completed,
+AP005311,01 Mar 14,15,regular,Round 15,BLTC,Hawthorn 2,0.5,7.5,0,3,2,7,31,50,Completed,
+pending-ap005-r15-bltc-bye,01 Mar 14,15,regular,Round 15,BLTC,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP005321,,16,grand_final,Grand final · TROLS entry 2,Oakleigh,Hawthorn 2,8,0,4,0,8,1,52,28,Completed,

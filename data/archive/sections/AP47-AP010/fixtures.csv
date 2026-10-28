@@ -1,0 +1,60 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP010011,07 Oct 23,1,regular,Round 1,Ormond,Mentone,2,8,3,6,,,31,51,Completed,
+AP010012,07 Oct 23,1,regular,Round 1,Lauriston,Royal Ave,7,3,4,4,,,40,34,Completed,
+AP010014,07 Oct 23,1,regular,Round 1,Tennis World,East Malvern,8,2,6,4,,,57,44,Completed,
+pending-ap010-r1-bye-glen-huntly,07 Oct 23,1,regular,Round 1,Bye,Glen Huntly,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP010021,14 Oct 23,2,regular,Round 2,East Malvern,Ormond,3,7,3,5,,,46,42,Completed,
+AP010022,14 Oct 23,2,regular,Round 2,Mentone,Lauriston,9,1,7,1,,,51,18,Completed,
+AP010024,14 Oct 23,2,regular,Round 2,Glen Huntly,Tennis World,8,2,5,3,,,46,30,Completed,
+pending-ap010-r2-royal-ave-bye,14 Oct 23,2,regular,Round 2,Royal Ave,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP010031,21 Oct 23,3,regular,Round 3,Ormond,Glen Huntly,1,9,3,7,,,47,65,Completed,
+AP010032,21 Oct 23,3,regular,Round 3,Lauriston,East Malvern,8,2,6,3,,,48,40,Completed,
+AP010034,21 Oct 23,3,regular,Round 3,Tennis World,Royal Ave,8,2,6,4,,,61,47,Completed,
+pending-ap010-r3-bye-mentone,21 Oct 23,3,regular,Round 3,Bye,Mentone,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP010041,28 Oct 23,4,regular,Round 4,Royal Ave,Ormond,2,8,4,6,,,58,53,Completed,
+AP010042,28 Oct 23,4,regular,Round 4,Glen Huntly,Lauriston,2,8,4,5,,,47,47,Completed,
+AP010044,28 Oct 23,4,regular,Round 4,Mentone,Tennis World,9,1,7,2,,,58,38,Completed,
+pending-ap010-r4-east-malvern-bye,28 Oct 23,4,regular,Round 4,East Malvern,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP010052,11 Nov 23,5,regular,Round 5,East Malvern,Glen Huntly,0,10,0,8,,,37,57,Completed,
+AP010053,11 Nov 23,5,regular,Round 5,Royal Ave,Mentone,2,8,4,6,,,45,62,Completed,
+AP010054,11 Nov 23,5,regular,Round 5,Ormond,Lauriston,8,2,5,4,,,50,44,Completed,
+pending-ap010-r5-bye-tennis-world,11 Nov 23,5,regular,Round 5,Bye,Tennis World,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP010062,18 Nov 23,6,regular,Round 6,Tennis World,Ormond,8,2,6,2,,,47,26,Completed,
+AP010063,18 Nov 23,6,regular,Round 6,Glen Huntly,Royal Ave,7,3,4,4,,,46,36,Completed,
+AP010064,18 Nov 23,6,regular,Round 6,Mentone,East Malvern,9,1,7,2,,,62,30,Completed,
+pending-ap010-r6-lauriston-bye,18 Nov 23,6,regular,Round 6,Lauriston,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP010072,25 Nov 23,7,regular,Round 7,Lauriston,Tennis World,9,1,7,1,,,49,24,Completed,
+AP010073,25 Nov 23,7,regular,Round 7,East Malvern,Royal Ave,9,1,7,1,,,50,22,Completed,
+AP010074,25 Nov 23,7,regular,Round 7,Glen Huntly,Mentone,9,1,6,2,,,50,44,Completed,
+pending-ap010-r7-ormond-bye,25 Nov 23,7,regular,Round 7,Ormond,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap010-r8-east-malvern-tennis-world,02 Dec 23,8,regular,Round 8,East Malvern,Tennis World,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap010-r8-glen-huntly-bye,02 Dec 23,8,regular,Round 8,Glen Huntly,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap010-r8-mentone-ormond,02 Dec 23,8,regular,Round 8,Mentone,Ormond,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap010-r8-royal-ave-lauriston,02 Dec 23,8,regular,Round 8,Royal Ave,Lauriston,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap010-r9-bye-royal-ave,09 Dec 23,9,regular,Round 9,Bye,Royal Ave,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap010-r9-lauriston-mentone,09 Dec 23,9,regular,Round 9,Lauriston,Mentone,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap010-r9-ormond-east-malvern,09 Dec 23,9,regular,Round 9,Ormond,East Malvern,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap010-r9-tennis-world-glen-huntly,09 Dec 23,9,regular,Round 9,Tennis World,Glen Huntly,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP010101,16 Dec 23,10,regular,Round 10,Glen Huntly,Ormond,5,5,4,4,,,45,45,Completed,
+AP010102,16 Dec 23,10,regular,Round 10,East Malvern,Lauriston,8,2,6,3,,,59,42,Completed,
+AP010104,16 Dec 23,10,regular,Round 10,Royal Ave,Tennis World,9,1,6,2,,,53,31,Completed,
+pending-ap010-r10-mentone-bye,16 Dec 23,10,regular,Round 10,Mentone,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP010111,03 Feb 24,11,regular,Round 11,Ormond,Royal Ave,9,1,7,2,,,57,40,Completed,
+AP010112,03 Feb 24,11,regular,Round 11,Lauriston,Glen Huntly,0,10,0,8,,,30,56,Completed,
+AP010114,03 Feb 24,11,regular,Round 11,Tennis World,Mentone,8,2,6,3,,,59,42,Completed,
+pending-ap010-r11-bye-east-malvern,03 Feb 24,11,regular,Round 11,Bye,East Malvern,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP010122,10 Feb 24,12,regular,Round 12,Glen Huntly,East Malvern,9,1,7,1,,,55,28,Completed,
+AP010123,10 Feb 24,12,regular,Round 12,Mentone,Royal Ave,7,3,4,4,,,42,37,Completed,
+pending-ap010-r12-lauriston-ormond,10 Feb 24,12,regular,Round 12,Lauriston,Ormond,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+pending-ap010-r12-tennis-world-bye,10 Feb 24,12,regular,Round 12,Tennis World,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP010132,17 Feb 24,13,regular,Round 13,Ormond,Tennis World,8,2,6,3,,,50,39,Completed,
+AP010133,17 Feb 24,13,regular,Round 13,Royal Ave,Glen Huntly,3,7,4,4,,,39,46,Completed,
+AP010134,17 Feb 24,13,regular,Round 13,East Malvern,Mentone,2,8,3,6,,,42,60,Completed,
+pending-ap010-r13-bye-lauriston,17 Feb 24,13,regular,Round 13,Bye,Lauriston,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP010142,24 Feb 24,14,regular,Round 14,Tennis World,Lauriston,7,3,5,4,,,43,48,Completed,
+AP010143,24 Feb 24,14,regular,Round 14,Royal Ave,East Malvern,8,2,6,4,,,63,43,Completed,
+AP010144,24 Feb 24,14,regular,Round 14,Mentone,Glen Huntly,3,7,4,5,,,54,53,Completed,
+pending-ap010-r14-bye-ormond,24 Feb 24,14,regular,Round 14,Bye,Ormond,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP010301,,16,semi_final,Semi-final,Glen Huntly,Tennis World,1,9,2,7,,,47,59,Completed,
+AP010302,,16,semi_final,Semi-final,Mentone,Ormond,2,8,4,5,,,51,44,Completed,
+AP010321,,17,grand_final,Grand final · TROLS entry 2,Ormond,Tennis World,8.5,1.5,5,1,,,47,21,Completed,

@@ -1,0 +1,90 @@
+{
+  "asset_id": "AP29-AP004",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Winter 2014",
+  "season_id": "AP29",
+  "season_label": "Winter 2014",
+  "source_section_code": "AP004",
+  "section_label": "Mens Sets 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Sth Murrumbeena",
+      "wins": 11,
+      "points": 96,
+      "percentage": 194.94,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "Hurlingham Park",
+      "wins": 9,
+      "points": 78,
+      "percentage": 121.04,
+      "marker": "P"
+    },
+    {
+      "position": 3,
+      "team": "Victory Park",
+      "wins": 10,
+      "points": 75,
+      "percentage": 117.91,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Caulfield Grammar",
+      "wins": 4,
+      "points": 43,
+      "percentage": 76.22,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Patterson Lakes",
+      "wins": 1,
+      "points": 35,
+      "percentage": 68.48,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Coatesville",
+      "wins": 2,
+      "points": 33,
+      "percentage": 67.26,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 1,
+    "doublesTarget": 10,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP29-AP004",
+  "fixtures": 47,
+  "completed_fixtures": 41,
+  "draw_fixtures": 57,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 162,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP004103 doubles No. 3: '1-1'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP004103 doubles No. 4: '0-3'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

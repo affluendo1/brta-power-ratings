@@ -1,0 +1,98 @@
+{
+  "asset_id": "AP26-AP013",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 12/13",
+  "season_id": "AP26",
+  "season_label": "Summer 12/13",
+  "source_section_code": "AP013",
+  "section_label": "Ladies S/D 3",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "East Malvern",
+      "wins": 10,
+      "points": 100,
+      "percentage": 194.93,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Le Page",
+      "wins": 6,
+      "points": 69,
+      "percentage": 116.98,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Kings Park",
+      "wins": 6,
+      "points": 67.5,
+      "percentage": 110.33,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Maccabi",
+      "wins": 8,
+      "points": 66,
+      "percentage": 89.17,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Highmoor Uniting",
+      "wins": 4,
+      "points": 54,
+      "percentage": 95.53,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "BLTC",
+      "wins": 1,
+      "points": 35,
+      "percentage": 76.98,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Melbourne Univ",
+      "wins": 1,
+      "points": 28.5,
+      "percentage": 64.95,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP26-AP013",
+  "fixtures": 60,
+  "completed_fixtures": 41,
+  "draw_fixtures": 60,
+  "singles_rubbers": 162,
+  "doubles_rubbers": 81,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP013082 doubles No. 1: '6-7 7-6 3-2'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP013321 doubles No. 2: '3-6 7-5'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

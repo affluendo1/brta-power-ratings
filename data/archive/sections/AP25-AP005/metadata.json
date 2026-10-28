@@ -1,0 +1,79 @@
+{
+  "asset_id": "AP25-AP005",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Winter 2012",
+  "season_id": "AP25",
+  "season_label": "Winter 2012",
+  "source_section_code": "AP005",
+  "section_label": "Mens Sets 3",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Sth Murrumbeena",
+      "wins": 9,
+      "points": 77,
+      "percentage": 168.37,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Glen Huntly 1",
+      "wins": 6,
+      "points": 60,
+      "percentage": 125.93,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Glen Huntly 2",
+      "wins": 3,
+      "points": 38,
+      "percentage": 73.06,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Caulfield Grammar",
+      "wins": 3,
+      "points": 35,
+      "percentage": 84.55,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Victory Park",
+      "wins": 1,
+      "points": 30,
+      "percentage": 82.65,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 1,
+    "doublesTarget": 10,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP25-AP005",
+  "fixtures": 47,
+  "completed_fixtures": 25,
+  "draw_fixtures": 57,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 100,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

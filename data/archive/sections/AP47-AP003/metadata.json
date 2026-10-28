@@ -1,0 +1,105 @@
+{
+  "asset_id": "AP47-AP003",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 23/24",
+  "season_id": "AP47",
+  "season_label": "Summer 23/24",
+  "source_section_code": "AP003",
+  "section_label": "Mens S/D 3",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Langwarrin",
+      "wins": 12,
+      "points": 111,
+      "percentage": 139.69,
+      "marker": ""
+    },
+    {
+      "position": 2,
+      "team": "Ormond",
+      "wins": 7,
+      "points": 79,
+      "percentage": 113.52,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Maccabi",
+      "wins": 7,
+      "points": 77,
+      "percentage": 113.17,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "BLTC",
+      "wins": 7,
+      "points": 76,
+      "percentage": 103.39,
+      "marker": "P"
+    },
+    {
+      "position": 5,
+      "team": "Kings Park",
+      "wins": 6,
+      "points": 68,
+      "percentage": 92.03,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Hawthorn",
+      "wins": 5,
+      "points": 64,
+      "percentage": 97.14,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Tennis World",
+      "wins": 2,
+      "points": 45,
+      "percentage": 81.25,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "Black Rock",
+      "wins": 2,
+      "points": 40,
+      "percentage": 74.33,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP47-AP003",
+  "fixtures": 59,
+  "completed_fixtures": 51,
+  "draw_fixtures": 59,
+  "singles_rubbers": 204,
+  "doubles_rubbers": 102,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP003321 doubles No. 2: '6-4 3-0'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

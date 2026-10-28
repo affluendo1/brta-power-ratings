@@ -1,0 +1,61 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP108012,03 Oct 09,1,regular,Round 1,Murrumbeena,Sandringham,10,0,8,0,,,56,12,Completed,
+AP108013,03 Oct 09,1,regular,Round 1,Le Page,Port Melbourne,9,1,7,2,,,62,43,Completed,
+pending-ap108-r1-beaumaris-cc-1-beaumaris-cc-2,03 Oct 09,1,regular,Round 1,Beaumaris CC 1,Beaumaris CC 2,,,,,,,,,Scheduled,No individual scorecard / no rubbers recorded
+pending-ap108-r1-mcc-bye,03 Oct 09,1,regular,Round 1,MCC,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP108021,10 Oct 09,2,regular,Round 2,Beaumaris CC 2,MCC,9,1,7,2,,,61,53,Completed,
+AP108023,10 Oct 09,2,regular,Round 2,Sandringham,Le Page,1,9,3,7,,,54,61,Completed,
+pending-ap108-r2-bye-murrumbeena,10 Oct 09,2,regular,Round 2,Bye,Murrumbeena,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap108-r2-port-melbourne-beaumaris-cc-1,10 Oct 09,2,regular,Round 2,Port Melbourne,Beaumaris CC 1,,,,,,,,,Scheduled,No individual scorecard / no rubbers recorded
+AP108031,17 Oct 09,3,regular,Round 3,MCC,Port Melbourne,2,8,3,6,,,47,57,Completed,
+AP108032,17 Oct 09,3,regular,Round 3,Murrumbeena,Beaumaris CC 2,9,1,7,1,,,52,26,Completed,
+AP108034,17 Oct 09,3,regular,Round 3,Beaumaris CC 1,Sandringham,8,2,5,3,,,46,34,Completed,
+pending-ap108-r3-le-page-bye,17 Oct 09,3,regular,Round 3,Le Page,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP108041,24 Oct 09,4,regular,Round 4,Sandringham,MCC,7,3,5,4,,,48,48,Completed,
+AP108042,24 Oct 09,4,regular,Round 4,Port Melbourne,Murrumbeena,1,9,1,7,,,17,51,Completed,
+AP108043,24 Oct 09,4,regular,Round 4,Beaumaris CC 2,Le Page,8,2,6,4,,,64,55,Completed,
+pending-ap108-r4-bye-beaumaris-cc-1,24 Oct 09,4,regular,Round 4,Bye,Beaumaris CC 1,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP108051,07 Nov 09,5,regular,Round 5,Le Page,Beaumaris CC 1,8,2,6,3,,,52,41,Completed,
+AP108052,07 Nov 09,5,regular,Round 5,Beaumaris CC 2,Port Melbourne,10,0,8,0,,,56,25,Completed,
+AP108054,07 Nov 09,5,regular,Round 5,MCC,Murrumbeena,0,10,0,8,,,22,56,Completed,
+pending-ap108-r5-sandringham-bye,07 Nov 09,5,regular,Round 5,Sandringham,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP108061,14 Nov 09,6,regular,Round 6,Murrumbeena,Le Page,7,3,4,4,,,47,45,Completed,
+AP108063,14 Nov 09,6,regular,Round 6,Port Melbourne,Sandringham,8,2,5,4,,,48,46,Completed,
+pending-ap108-r6-beaumaris-cc-1-mcc,14 Nov 09,6,regular,Round 6,Beaumaris CC 1,MCC,,,,,,,,,Scheduled,No individual scorecard / no rubbers recorded
+pending-ap108-r6-bye-beaumaris-cc-2,14 Nov 09,6,regular,Round 6,Bye,Beaumaris CC 2,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP108071,21 Nov 09,7,regular,Round 7,MCC,Le Page,1,9,2,7,,,30,55,Completed,
+AP108072,21 Nov 09,7,regular,Round 7,Murrumbeena,Beaumaris CC 1,9,1,7,1,,,53,25,Completed,
+AP108073,21 Nov 09,7,regular,Round 7,Beaumaris CC 2,Sandringham,8.5,1.5,6,3,,,59,51,Completed,
+pending-ap108-r7-port-melbourne-bye,21 Nov 09,7,regular,Round 7,Port Melbourne,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP108082,28 Nov 09,8,regular,Round 8,Sandringham,Murrumbeena,1,9,1,7,,,31,55,Completed,
+AP108084,28 Nov 09,8,regular,Round 8,Beaumaris CC 2,Beaumaris CC 1,9,1,7,2,,,58,30,Completed,
+pending-ap108-r8-bye-mcc,28 Nov 09,8,regular,Round 8,Bye,MCC,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap108-r8-port-melbourne-le-page,28 Nov 09,8,regular,Round 8,Port Melbourne,Le Page,,,,,,,,,Scheduled,No individual scorecard / no rubbers recorded
+AP108091,05 Dec 09,9,regular,Round 9,MCC,Beaumaris CC 2,1,9,3,6,,,52,53,Completed,
+AP108093,05 Dec 09,9,regular,Round 9,Le Page,Sandringham,7,3,5,5,,,56,49,Completed,
+AP108094,05 Dec 09,9,regular,Round 9,Beaumaris CC 1,Port Melbourne,8,2,6,3,,,48,37,Completed,
+pending-ap108-r9-murrumbeena-bye,05 Dec 09,9,regular,Round 9,Murrumbeena,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP108101,12 Dec 09,10,regular,Round 10,Port Melbourne,MCC,3,7,4,5,,,39,48,Completed,
+AP108102,12 Dec 09,10,regular,Round 10,Beaumaris CC 2,Murrumbeena,1,9,2,7,,,43,55,Completed,
+AP108104,12 Dec 09,10,regular,Round 10,Sandringham,Beaumaris CC 1,8,2,6,3,,,59,44,Completed,
+pending-ap108-r10-bye-le-page,12 Dec 09,10,regular,Round 10,Bye,Le Page,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP108111,30 Jan 10,11,regular,Round 11,MCC,Sandringham,8,2,6,3,,,53,39,Completed,
+AP108112,30 Jan 10,11,regular,Round 11,Murrumbeena,Port Melbourne,10,0,8,0,,,56,18,Completed,
+AP108113,30 Jan 10,11,regular,Round 11,Le Page,Beaumaris CC 2,0,10,0,8,,,17,56,Completed,
+pending-ap108-r11-beaumaris-cc-1-bye,30 Jan 10,11,regular,Round 11,Beaumaris CC 1,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP108121,06 Feb 10,12,regular,Round 12,Beaumaris CC 1,Le Page,8,2,6,3,,,49,36,Completed,
+AP108122,06 Feb 10,12,regular,Round 12,Port Melbourne,Beaumaris CC 2,2,8,4,6,,,48,56,Completed,
+AP108124,06 Feb 10,12,regular,Round 12,Murrumbeena,MCC,10,0,8,0,,,58,27,Completed,
+pending-ap108-r12-bye-sandringham,06 Feb 10,12,regular,Round 12,Bye,Sandringham,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP108131,13 Feb 10,13,regular,Round 13,Le Page,Murrumbeena,1,9,2,7,,,36,56,Completed,
+AP108132,13 Feb 10,13,regular,Round 13,MCC,Beaumaris CC 1,3,7,4,5,,,48,48,Completed,
+AP108133,13 Feb 10,13,regular,Round 13,Sandringham,Port Melbourne,7,3,5,4,,,53,45,Completed,
+pending-ap108-r13-beaumaris-cc-2-bye,13 Feb 10,13,regular,Round 13,Beaumaris CC 2,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP108141,20 Feb 10,14,regular,Round 14,Le Page,MCC,5,5,2,2,,,23,21,Completed,
+AP108143,20 Feb 10,14,regular,Round 14,Sandringham,Beaumaris CC 2,2,8,3,6,,,42,52,Completed,
+pending-ap108-r14-beaumaris-cc-1-murrumbeena,20 Feb 10,14,regular,Round 14,Beaumaris CC 1,Murrumbeena,,,,,,,,,Scheduled,No individual scorecard / no rubbers recorded
+pending-ap108-r14-bye-port-melbourne,20 Feb 10,14,regular,Round 14,Bye,Port Melbourne,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP108301,,16,semi_final,Semi-final,Murrumbeena,Beaumaris CC 2,7,3,4,4,,,45,34,Completed,
+AP108302,,16,semi_final,Semi-final,Le Page,Beaumaris CC 1,10,0,8,0,,,59,34,Completed,
+AP108311,,16,semi_final,Semi-final,Beaumaris CC 2,Le Page,8,2,5,4,,,60,49,Completed,
+AP108321,,17,grand_final,Grand final · TROLS entry 2,Murrumbeena,Beaumaris CC 2,7,3,5,4,,,48,43,Completed,

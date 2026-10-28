@@ -1,0 +1,94 @@
+{
+  "asset_id": "AP38-AP002",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 18/19",
+  "season_id": "AP38",
+  "season_label": "Summer 18/19",
+  "source_section_code": "AP002",
+  "section_label": "Ladies Rubbers 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Overport Park",
+      "wins": 9,
+      "points": 90.5,
+      "percentage": 177.23,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Hawthorn",
+      "wins": 9,
+      "points": 85.5,
+      "percentage": 126.75,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Hurlingham Park",
+      "wins": 7,
+      "points": 74,
+      "percentage": 133.19,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Mordialloc",
+      "wins": 7,
+      "points": 56,
+      "percentage": 89.02,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "FCTC",
+      "wins": 3,
+      "points": 34,
+      "percentage": 63.15,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Ormond",
+      "wins": 0,
+      "points": 20,
+      "percentage": 56.08,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP38-AP002",
+  "fixtures": 46,
+  "completed_fixtures": 40,
+  "draw_fixtures": 46,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 152,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP002102 doubles No. 1: '6-1 4-4'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP002102 doubles No. 2: '6-2 2-1'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP002103 doubles No. 1: '6-3 3-5'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP002103 doubles No. 2: '6-3 3-2'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP002112 doubles No. 1: '6-4 3-0'. Missing score not inferred; excluded from ratings and game totals.",
+    "Fixture game totals do not match rubbers for AP002321: TROLS team total 35-20; complete-score total 34-20. Both published records retained."
+  ]
+}

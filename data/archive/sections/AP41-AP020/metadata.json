@@ -1,0 +1,89 @@
+{
+  "asset_id": "AP41-AP020",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 20/21",
+  "season_id": "AP41",
+  "season_label": "Summer 20/21",
+  "source_section_code": "AP020",
+  "section_label": "Mens s/d 10",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Mentone",
+      "wins": 8,
+      "points": 79,
+      "percentage": 149.29,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "Patterson Lakes",
+      "wins": 6,
+      "points": 60,
+      "percentage": 116.0,
+      "marker": "P"
+    },
+    {
+      "position": 3,
+      "team": "Highmoor Uniting",
+      "wins": 5,
+      "points": 54.5,
+      "percentage": 112.5,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Chadstone",
+      "wins": 4,
+      "points": 49,
+      "percentage": 99.02,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Maccabi",
+      "wins": 2,
+      "points": 31,
+      "percentage": 79.34,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "BLTC",
+      "wins": 1,
+      "points": 26.5,
+      "percentage": 57.95,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP41-AP020",
+  "fixtures": 31,
+  "completed_fixtures": 30,
+  "draw_fixtures": 57,
+  "singles_rubbers": 116,
+  "doubles_rubbers": 57,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP020101 doubles No. 1: '6-3 3-3'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "asset_id": "AP50-AP002",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Winter 2025",
+  "season_id": "AP50",
+  "season_label": "Winter 2025",
+  "source_section_code": "AP002",
+  "section_label": "Womens Sets 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Hurlingham Park",
+      "wins": 13,
+      "points": 125,
+      "percentage": 207.96,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Overport Park Green",
+      "wins": 10,
+      "points": 98.5,
+      "percentage": 140.57,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Mentone Gold",
+      "wins": 11,
+      "points": 98,
+      "percentage": 123.64,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Chadstone",
+      "wins": 5,
+      "points": 68,
+      "percentage": 103.46,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Mentone Green",
+      "wins": 4,
+      "points": 53.5,
+      "percentage": 80.69,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Ormond",
+      "wins": 0,
+      "points": 7,
+      "percentage": 20.72,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 6,
+    "doublesBestOf": 1,
+    "doublesTarget": 8,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP50-AP002",
+  "fixtures": 46,
+  "completed_fixtures": 45,
+  "draw_fixtures": 46,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 270,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

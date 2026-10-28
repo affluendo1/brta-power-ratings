@@ -1,0 +1,99 @@
+{
+  "asset_id": "AP30-AP008",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 14/15",
+  "season_id": "AP30",
+  "season_label": "Summer 14/15",
+  "source_section_code": "AP008",
+  "section_label": "Mixed Rubbers 3",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "East Malvern",
+      "wins": 9,
+      "points": 73,
+      "percentage": 142.07,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Hawthorn",
+      "wins": 6,
+      "points": 61,
+      "percentage": 121.75,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Le Page",
+      "wins": 6,
+      "points": 50.5,
+      "percentage": 102.28,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Hampton Green",
+      "wins": 5,
+      "points": 47,
+      "percentage": 108.87,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Hampton Purple",
+      "wins": 5,
+      "points": 44.5,
+      "percentage": 85.12,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Kings Park",
+      "wins": 4,
+      "points": 36,
+      "percentage": 86.17,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Parkdale",
+      "wins": 1,
+      "points": 24,
+      "percentage": 76.3,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP30-AP008",
+  "fixtures": 60,
+  "completed_fixtures": 43,
+  "draw_fixtures": 60,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 166,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP008132 doubles No. 1: '6-3 1-0'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP008134 doubles No. 2: '6-2 2-1'. Missing score not inferred; excluded from ratings and game totals.",
+    "Fixture game totals do not match rubbers for AP008311: TROLS team total 49-18; complete-score total 43-18. Both published records retained."
+  ]
+}

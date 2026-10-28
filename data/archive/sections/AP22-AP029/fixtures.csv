@@ -1,0 +1,61 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP029011,02 Oct 10,1,regular,Round 1,Lauriston,Clarinda,5,5,4,4,,,42,42,Completed,
+AP029012,02 Oct 10,1,regular,Round 1,Caulfield Rec,Dandenong,5,5,4,4,,,51,51,Completed,
+AP029013,02 Oct 10,1,regular,Round 1,Carmelite,GPHC,9,1,7,1,,,57,30,Completed,
+pending-ap029-r1-dendy-park-bltc,02 Oct 10,1,regular,Round 1,Dendy Park,BLTC,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP029021,09 Oct 10,2,regular,Round 2,BLTC,Lauriston,1,9,2,7,,,34,57,Completed,
+AP029022,09 Oct 10,2,regular,Round 2,Clarinda,Caulfield Rec,9,1,6,2,,,55,34,Completed,
+AP029023,09 Oct 10,2,regular,Round 2,Dandenong,Carmelite,2,8,3,5,,,44,52,Completed,
+AP029024,09 Oct 10,2,regular,Round 2,GPHC,Dendy Park,9,1,7,2,,,57,41,Completed,
+AP029032,16 Oct 10,3,regular,Round 3,Caulfield Rec,BLTC,5.5,4.5,4,4,,,51,53,Completed,
+AP029033,16 Oct 10,3,regular,Round 3,Carmelite,Clarinda,8,2,6,4,,,58,52,Completed,
+pending-ap029-r3-dendy-park-dandenong,16 Oct 10,3,regular,Round 3,Dendy Park,Dandenong,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap029-r3-lauriston-gphc,16 Oct 10,3,regular,Round 3,Lauriston,GPHC,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP029041,23 Oct 10,4,regular,Round 4,Dandenong,Lauriston,9,1,6,2,,,54,28,Completed,
+AP029042,23 Oct 10,4,regular,Round 4,GPHC,Caulfield Rec,2,8,3,6,,,45,51,Completed,
+AP029043,23 Oct 10,4,regular,Round 4,BLTC,Carmelite,8,2,5,3,,,53,44,Completed,
+AP029044,23 Oct 10,4,regular,Round 4,Clarinda,Dendy Park,1,9,2,7,,,38,55,Completed,
+AP029051,06 Nov 10,5,regular,Round 5,Carmelite,Dendy Park,8,2,6,2,,,49,26,Completed,
+AP029052,06 Nov 10,5,regular,Round 5,BLTC,GPHC,10,0,8,0,,,56,23,Completed,
+AP029053,06 Nov 10,5,regular,Round 5,Dandenong,Clarinda,3,7,4,5,,,46,46,Completed,
+AP029054,06 Nov 10,5,regular,Round 5,Lauriston,Caulfield Rec,7,3,5,4,,,58,48,Completed,
+AP029064,13 Nov 10,6,regular,Round 6,Clarinda,BLTC,6,4,2,0,,,19,10,Completed,
+pending-ap029-r6-caulfield-rec-carmelite,13 Nov 10,6,regular,Round 6,Caulfield Rec,Carmelite,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap029-r6-dendy-park-lauriston,13 Nov 10,6,regular,Round 6,Dendy Park,Lauriston,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap029-r6-gphc-dandenong,13 Nov 10,6,regular,Round 6,GPHC,Dandenong,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP029071,20 Nov 10,7,regular,Round 7,Lauriston,Carmelite,1,9,1,7,,,20,49,Completed,
+AP029072,20 Nov 10,7,regular,Round 7,Caulfield Rec,Dendy Park,1,9,2,7,,,38,54,Completed,
+AP029073,20 Nov 10,7,regular,Round 7,BLTC,Dandenong,2,8,4,5,,,44,53,Completed,
+AP029074,20 Nov 10,7,regular,Round 7,GPHC,Clarinda,0,10,0,8,,,32,58,Completed,
+pending-ap029-r8-bltc-dendy-park,27 Nov 10,8,regular,Round 8,BLTC,Dendy Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap029-r8-clarinda-lauriston,27 Nov 10,8,regular,Round 8,Clarinda,Lauriston,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap029-r8-dandenong-caulfield-rec,27 Nov 10,8,regular,Round 8,Dandenong,Caulfield Rec,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap029-r8-gphc-carmelite,27 Nov 10,8,regular,Round 8,GPHC,Carmelite,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP029091,04 Dec 10,9,regular,Round 9,Lauriston,BLTC,8,2,5,3,,,46,42,Completed,
+AP029092,04 Dec 10,9,regular,Round 9,Caulfield Rec,Clarinda,3,7,5,5,,,58,59,Completed,
+AP029093,04 Dec 10,9,regular,Round 9,Carmelite,Dandenong,1,9,1,7,,,24,51,Completed,
+AP029094,04 Dec 10,9,regular,Round 9,Dendy Park,GPHC,9,1,7,1,,,55,34,Completed,
+AP029101,11 Dec 10,10,regular,Round 10,GPHC,Lauriston,0,10,0,8,,,21,57,Completed,
+AP029102,11 Dec 10,10,regular,Round 10,BLTC,Caulfield Rec,1,9,2,6,,,34,50,Completed,
+AP029103,11 Dec 10,10,regular,Round 10,Clarinda,Carmelite,2,8,3,6,,,42,52,Completed,
+AP029104,11 Dec 10,10,regular,Round 10,Dandenong,Dendy Park,2,8,3,5,,,44,47,Completed,
+AP029113,05 Feb 11,11,regular,Round 11,Carmelite,BLTC,8,2,6,2,,,52,40,Completed,
+pending-ap029-r11-caulfield-rec-gphc,05 Feb 11,11,regular,Round 11,Caulfield Rec,GPHC,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap029-r11-dendy-park-clarinda,05 Feb 11,11,regular,Round 11,Dendy Park,Clarinda,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap029-r11-lauriston-dandenong,05 Feb 11,11,regular,Round 11,Lauriston,Dandenong,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP029121,12 Feb 11,12,regular,Round 12,Dendy Park,Carmelite,1,9,1,7,,,38,57,Completed,
+AP029122,12 Feb 11,12,regular,Round 12,GPHC,BLTC,2,8,3,6,,,36,53,Completed,
+AP029123,12 Feb 11,12,regular,Round 12,Clarinda,Dandenong,3,7,4,5,,,47,56,Completed,
+AP029124,12 Feb 11,12,regular,Round 12,Caulfield Rec,Lauriston,8,2,5,3,,,46,43,Completed,
+AP029131,19 Feb 11,13,regular,Round 13,Carmelite,Caulfield Rec,7,3,5,5,,,56,53,Completed,
+AP029132,19 Feb 11,13,regular,Round 13,Lauriston,Dendy Park,1,9,1,7,,,31,52,Completed,
+AP029134,19 Feb 11,13,regular,Round 13,BLTC,Clarinda,2,8,3,6,,,48,58,Completed,
+pending-ap029-r13-dandenong-gphc,19 Feb 11,13,regular,Round 13,Dandenong,GPHC,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP029141,26 Feb 11,14,regular,Round 14,Carmelite,Lauriston,3,7,4,5,,,45,51,Completed,
+AP029142,26 Feb 11,14,regular,Round 14,Dendy Park,Caulfield Rec,3,7,3,5,,,44,49,Completed,
+AP029143,26 Feb 11,14,regular,Round 14,Dandenong,BLTC,10,0,8,0,,,57,34,Completed,
+AP029144,26 Feb 11,14,regular,Round 14,Clarinda,GPHC,8,2,5,4,,,55,46,Completed,
+AP029301,,16,semi_final,Semi-final,Carmelite,Dandenong,8,2,6,4,,,60,52,Completed,
+AP029302,,16,semi_final,Semi-final,Dendy Park,Clarinda,9,1,7,1,,,52,43,Completed,
+AP029311,,16,semi_final,Semi-final,Dandenong,Dendy Park,9,1,4,0,,,32,14,Completed,
+AP029321,,17,grand_final,Grand final · TROLS entry 2,Carmelite,Dandenong,1,9,0,4,,,17,32,Completed,

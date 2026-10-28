@@ -1,0 +1,153 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP010011,07 Oct 23,1,Ormond,Mentone,No. 1,Michael Hudson,Yarden Lashchover,Michael Hudson,8-4,8,4,1,0,Completed,true,false,false
+AP010011,07 Oct 23,1,Ormond,Mentone,No. 2,Mason Campbell,Alberto Polintan,Alberto Polintan,1-8,1,8,0,1,Completed,true,false,false
+AP010011,07 Oct 23,1,Ormond,Mentone,No. 3,Rex Chen,Simon Xue,Simon Xue,2-8,2,8,0,1,Completed,true,true,false
+AP010011,07 Oct 23,1,Ormond,Mentone,No. 4,Susan Harrison,Aaron Tsui,Aaron Tsui,1-8,1,8,0,1,Completed,true,false,false
+AP010012,07 Oct 23,1,Lauriston,Royal Ave,No. 1,Aaron Immermann,Paul Harrap,Paul Harrap,2-8,2,8,0,1,Completed,true,false,true
+AP010012,07 Oct 23,1,Lauriston,Royal Ave,No. 2,Om Rao,Charles Tanti,Om Rao,8-6,8,6,1,0,Completed,true,false,true
+AP010012,07 Oct 23,1,Lauriston,Royal Ave,No. 3,Eric Bai,Dean Craig,Dean Craig,5-8,5,8,0,1,Completed,true,false,false
+AP010012,07 Oct 23,1,Lauriston,Royal Ave,No. 4,Ethan Tsui,[Unnamed emergency — TROLS AP010012 away code 4],Ethan Tsui,8-0,8,0,1,0,Completed,false,false,true
+AP010014,07 Oct 23,1,Tennis World,East Malvern,No. 1,Brian Amadio,Faran Mazloomi,Faran Mazloomi,3-8,3,8,0,1,Completed,true,false,false
+AP010014,07 Oct 23,1,Tennis World,East Malvern,No. 2,Alex Mitsopoulos,Martin Giffard,Martin Giffard,4-8,4,8,0,1,Completed,true,false,false
+AP010014,07 Oct 23,1,Tennis World,East Malvern,No. 3,Toan Nguyen,Robert Wyld,Toan Nguyen,8-0,8,0,1,0,Completed,true,true,true
+AP010014,07 Oct 23,1,Tennis World,East Malvern,No. 4,Carl Smargiassi,Frantzeskos Triantafyllou,Carl Smargiassi,8-6,8,6,1,0,Completed,true,false,false
+AP010021,14 Oct 23,2,East Malvern,Ormond,No. 1,Rajat Dang,Michael Hudson,Rajat Dang,8-7,8,7,1,0,Completed,true,false,false
+AP010021,14 Oct 23,2,East Malvern,Ormond,No. 2,Faran Mazloomi,Mason Campbell,Mason Campbell,6-8,6,8,0,1,Completed,true,false,false
+AP010021,14 Oct 23,2,East Malvern,Ormond,No. 3,Frantzeskos Triantafyllou,Phil Bai,Frantzeskos Triantafyllou,8-0,8,0,1,0,Completed,true,false,false
+AP010021,14 Oct 23,2,East Malvern,Ormond,No. 4,David Bryden,Susan Harrison,David Bryden,8-2,8,2,1,0,Completed,true,true,false
+AP010022,14 Oct 23,2,Mentone,Lauriston,No. 1,Daniel Carroll,Aaron Immermann,Daniel Carroll,8-3,8,3,1,0,Completed,true,false,false
+AP010022,14 Oct 23,2,Mentone,Lauriston,No. 2,Alberto Polintan,Om Rao,Om Rao,3-8,3,8,0,1,Completed,true,false,false
+AP010022,14 Oct 23,2,Mentone,Lauriston,No. 3,Simon Xue,Eric Bai,Simon Xue,8-2,8,2,1,0,Completed,true,false,false
+AP010022,14 Oct 23,2,Mentone,Lauriston,No. 4,Aaron Tsui,Ethan Tsui,Aaron Tsui,8-2,8,2,1,0,Completed,true,false,false
+AP010024,14 Oct 23,2,Glen Huntly,Tennis World,No. 1,Gerald Pereria,Toan Nguyen,Toan Nguyen,5-8,5,8,0,1,Completed,true,false,true
+AP010024,14 Oct 23,2,Glen Huntly,Tennis World,No. 2,Blake Pfeiffer,Ashwin Kovil,Blake Pfeiffer,8-3,8,3,1,0,Completed,true,false,false
+AP010024,14 Oct 23,2,Glen Huntly,Tennis World,No. 3,Daniel Katanov,Brian Amadio,Daniel Katanov,8-0,8,0,1,0,Completed,true,false,false
+AP010024,14 Oct 23,2,Glen Huntly,Tennis World,No. 4,Paul Egre,Alex Mitsopoulos,Paul Egre,8-3,8,3,1,0,Completed,true,false,false
+AP010031,21 Oct 23,3,Ormond,Glen Huntly,No. 1,Steve Gelagin,Gerald Pereria,Steve Gelagin,8-2,8,2,1,0,Completed,true,false,false
+AP010031,21 Oct 23,3,Ormond,Glen Huntly,No. 2,Phil Bai,Blake Pfeiffer,Blake Pfeiffer,1-8,1,8,0,1,Completed,true,false,false
+AP010031,21 Oct 23,3,Ormond,Glen Huntly,No. 3,Rex Chen,Daniel Katanov,Daniel Katanov,0-8,0,8,0,1,Completed,true,true,false
+AP010031,21 Oct 23,3,Ormond,Glen Huntly,No. 4,Carole Pywell,Paul Egre,Paul Egre,2-8,2,8,0,1,Completed,true,false,false
+AP010032,21 Oct 23,3,Lauriston,East Malvern,No. 1,Aaron Immermann,Rajat Dang,Rajat Dang,3-8,3,8,0,1,Completed,true,false,false
+AP010032,21 Oct 23,3,Lauriston,East Malvern,No. 2,Om Rao,Tom Taylor,Om Rao,8-3,8,3,1,0,Completed,true,false,true
+AP010032,21 Oct 23,3,Lauriston,East Malvern,No. 3,Eric Bai,Frantzeskos Triantafyllou,Frantzeskos Triantafyllou,2-8,2,8,0,1,Completed,true,false,false
+AP010032,21 Oct 23,3,Lauriston,East Malvern,No. 4,Ethan Tsui,James Bryden,Ethan Tsui,8-1,8,1,1,0,Completed,true,false,false
+AP010034,21 Oct 23,3,Tennis World,Royal Ave,No. 1,Toan Nguyen,Justin Alway,Toan Nguyen,8-3,8,3,1,0,Completed,true,true,false
+AP010034,21 Oct 23,3,Tennis World,Royal Ave,No. 2,Alex Mitsopoulos,Dean Craig,Alex Mitsopoulos,8-3,8,3,1,0,Completed,true,false,false
+AP010034,21 Oct 23,3,Tennis World,Royal Ave,No. 3,Ashwin Kovil,Jeremy Rouch,Ashwin Kovil,8-6,8,6,1,0,Completed,true,false,false
+AP010034,21 Oct 23,3,Tennis World,Royal Ave,No. 4,Sam Emerson,Toby Brett,Sam Emerson,8-0,8,0,1,0,Completed,true,false,false
+AP010041,28 Oct 23,4,Royal Ave,Ormond,No. 1,Justin Alway,Michael Hudson,Justin Alway,8-2,8,2,1,0,Completed,true,false,false
+AP010041,28 Oct 23,4,Royal Ave,Ormond,No. 2,Dean Craig,Mason Campbell,Mason Campbell,7-8,7,8,0,1,Completed,true,false,false
+AP010041,28 Oct 23,4,Royal Ave,Ormond,No. 3,Toby Brett,Phil Bai,Phil Bai,5-8,5,8,0,1,Completed,true,false,false
+AP010041,28 Oct 23,4,Royal Ave,Ormond,No. 4,Jimi Weir,Susan Harrison,Jimi Weir,8-2,8,2,1,0,Completed,true,false,false
+AP010042,28 Oct 23,4,Glen Huntly,Lauriston,No. 1,Anirudh Devanathan,Aaron Immermann,Aaron Immermann,4-8,4,8,0,1,Completed,true,false,false
+AP010042,28 Oct 23,4,Glen Huntly,Lauriston,No. 2,Franck Morin,Om Rao,Om Rao,4-8,4,8,0,1,Completed,true,false,false
+AP010042,28 Oct 23,4,Glen Huntly,Lauriston,No. 3,Daniel Katanov,Liam McHill,Liam McHill,3-8,3,8,0,1,Completed,true,false,true
+AP010042,28 Oct 23,4,Glen Huntly,Lauriston,No. 4,Paul Egre,Ethan Tsui,Paul Egre,8-2,8,2,1,0,Completed,true,false,false
+AP010044,28 Oct 23,4,Mentone,Tennis World,No. 1,Yarden Lashchover,Brian Amadio,Yarden Lashchover,8-1,8,1,1,0,Completed,true,false,false
+AP010044,28 Oct 23,4,Mentone,Tennis World,No. 2,Dante Ortega,Alex Mitsopoulos,Dante Ortega,8-4,8,4,1,0,Completed,true,false,false
+AP010044,28 Oct 23,4,Mentone,Tennis World,No. 3,Simon Xue,Ashwin Kovil,Simon Xue,8-6,8,6,1,0,Completed,true,false,false
+AP010044,28 Oct 23,4,Mentone,Tennis World,No. 4,Arun Gulur,Sam Emerson,Sam Emerson,3-8,3,8,0,1,Completed,true,false,false
+AP010052,11 Nov 23,5,East Malvern,Glen Huntly,No. 1,Alex Dusek,Gerald Pereria,Gerald Pereria,4-8,4,8,0,1,Completed,true,false,false
+AP010052,11 Nov 23,5,East Malvern,Glen Huntly,No. 2,Martin Giffard,Nasik Ahmed,Nasik Ahmed,4-8,4,8,0,1,Completed,true,false,false
+AP010052,11 Nov 23,5,East Malvern,Glen Huntly,No. 3,Frantzeskos Triantafyllou,Paul Egre,Paul Egre,7-8,7,8,0,1,Completed,true,false,false
+AP010052,11 Nov 23,5,East Malvern,Glen Huntly,No. 4,James Bryden,William Gort,William Gort,6-8,6,8,0,1,Completed,true,false,true
+AP010053,11 Nov 23,5,Royal Ave,Mentone,No. 1,Dean Craig,Yarden Lashchover,Yarden Lashchover,6-8,6,8,0,1,Completed,true,false,false
+AP010053,11 Nov 23,5,Royal Ave,Mentone,No. 2,Jeremy Rouch,Alberto Polintan,Alberto Polintan,2-8,2,8,0,1,Completed,true,false,false
+AP010053,11 Nov 23,5,Royal Ave,Mentone,No. 3,Toby Brett,Aaron Tsui,Aaron Tsui,0-8,0,8,0,1,Completed,true,false,false
+AP010053,11 Nov 23,5,Royal Ave,Mentone,No. 4,Jimi Weir,Arun Gulur,Jimi Weir,8-7,8,7,1,0,Completed,true,false,false
+AP010054,11 Nov 23,5,Ormond,Lauriston,No. 1,Steve Gelagin,Aaron Immermann,Steve Gelagin,8-2,8,2,1,0,Completed,true,false,false
+AP010054,11 Nov 23,5,Ormond,Lauriston,No. 2,Michael Hudson,Om Rao,Michael Hudson,8-4,8,4,1,0,Completed,true,false,false
+AP010054,11 Nov 23,5,Ormond,Lauriston,No. 3,Mason Campbell,Eric Bai,Mason Campbell,8-5,8,5,1,0,Completed,true,false,false
+AP010054,11 Nov 23,5,Ormond,Lauriston,No. 4,Rivka Garson,Ethan Tsui,Ethan Tsui,2-8,2,8,0,1,Completed,true,false,false
+AP010062,18 Nov 23,6,Tennis World,Ormond,No. 1,Toan Nguyen,Steve Gelagin,Steve Gelagin,7-8,7,8,0,1,Completed,true,true,false
+AP010062,18 Nov 23,6,Tennis World,Ormond,No. 2,Vitas Rernglertpricha,Phil Bai,Vitas Rernglertpricha,8-2,8,2,1,0,Completed,true,false,false
+AP010062,18 Nov 23,6,Tennis World,Ormond,No. 3,Brian Amadio,Carole Pywell,Carole Pywell,0-8,0,8,0,1,Completed,true,false,false
+AP010062,18 Nov 23,6,Tennis World,Ormond,No. 4,Sam Emerson,Rivka Garson,Sam Emerson,8-2,8,2,1,0,Completed,true,false,false
+AP010063,18 Nov 23,6,Glen Huntly,Royal Ave,No. 1,Gerald Pereria,Justin Alway,Justin Alway,7-8,7,8,0,1,Completed,true,false,false
+AP010063,18 Nov 23,6,Glen Huntly,Royal Ave,No. 2,Blake Pfeiffer,Toby Brett,Blake Pfeiffer,8-3,8,3,1,0,Completed,true,false,false
+AP010063,18 Nov 23,6,Glen Huntly,Royal Ave,No. 3,Paul Egre,Jimi Weir,Paul Egre,8-0,8,0,1,0,Completed,true,false,false
+AP010063,18 Nov 23,6,Glen Huntly,Royal Ave,No. 4,Isaac Egre,Rohan Bardwell,Rohan Bardwell,5-8,5,8,0,1,Completed,true,true,true
+AP010064,18 Nov 23,6,Mentone,East Malvern,No. 1,Alberto Polintan,Rajat Dang,Alberto Polintan,8-4,8,4,1,0,Completed,true,false,false
+AP010064,18 Nov 23,6,Mentone,East Malvern,No. 2,Dante Ortega,Frantzeskos Triantafyllou,Frantzeskos Triantafyllou,7-8,7,8,0,1,Completed,true,false,false
+AP010064,18 Nov 23,6,Mentone,East Malvern,No. 3,Aaron Tsui,[Unnamed emergency — TROLS AP010064 away code 3],Aaron Tsui,8-0,8,0,1,0,Completed,false,false,true
+AP010064,18 Nov 23,6,Mentone,East Malvern,No. 4,Arun Gulur,James Bryden,Arun Gulur,8-2,8,2,1,0,Completed,true,false,false
+AP010072,25 Nov 23,7,Lauriston,Tennis World,No. 1,Eric Bai,Vitas Rernglertpricha,Vitas Rernglertpricha,0-8,0,8,0,1,Completed,true,false,false
+AP010072,25 Nov 23,7,Lauriston,Tennis World,No. 2,Igor Vorsovskii,Alex Mitsopoulos,Igor Vorsovskii,8-1,8,1,1,0,Completed,true,true,false
+AP010072,25 Nov 23,7,Lauriston,Tennis World,No. 3,Ray Turss,Sam Emerson,Ray Turss,8-3,8,3,1,0,Completed,true,true,false
+AP010072,25 Nov 23,7,Lauriston,Tennis World,No. 4,George Papadimitrious,Ashwin Kovil,George Papadimitrious,8-0,8,0,1,0,Completed,true,true,false
+AP010073,25 Nov 23,7,East Malvern,Royal Ave,No. 1,Faran Mazloomi,Dean Craig,Dean Craig,2-8,2,8,0,1,Completed,true,false,false
+AP010073,25 Nov 23,7,East Malvern,Royal Ave,No. 2,Alex Dusek,[Unnamed emergency — TROLS AP010073 away code 2],Alex Dusek,8-0,8,0,1,0,Completed,false,false,true
+AP010073,25 Nov 23,7,East Malvern,Royal Ave,No. 3,Frantzeskos Triantafyllou,John Richardson,Frantzeskos Triantafyllou,8-3,8,3,1,0,Completed,true,false,true
+AP010073,25 Nov 23,7,East Malvern,Royal Ave,No. 4,David Bryden,Robert Stebbins,David Bryden,8-5,8,5,1,0,Completed,true,true,true
+AP010074,25 Nov 23,7,Glen Huntly,Mentone,No. 1,Gerald Pereria,Yarden Lashchover,Gerald Pereria,8-6,8,6,1,0,Completed,true,false,false
+AP010074,25 Nov 23,7,Glen Huntly,Mentone,No. 2,Blake Pfeiffer,Alberto Polintan,Blake Pfeiffer,8-5,8,5,1,0,Completed,true,false,false
+AP010074,25 Nov 23,7,Glen Huntly,Mentone,No. 3,Paul Egre,Dante Ortega,Paul Egre,8-7,8,7,1,0,Completed,true,false,false
+AP010074,25 Nov 23,7,Glen Huntly,Mentone,No. 4,Franck Morin,Aaron Tsui,Franck Morin,8-6,8,6,1,0,Completed,true,false,false
+AP010101,16 Dec 23,10,Glen Huntly,Ormond,No. 1,Blake Pfeiffer,Steve Gelagin,Steve Gelagin,4-8,4,8,0,1,Completed,true,false,false
+AP010101,16 Dec 23,10,Glen Huntly,Ormond,No. 2,Nasik Ahmed,Michael Hudson,Nasik Ahmed,8-7,8,7,1,0,Completed,true,false,false
+AP010101,16 Dec 23,10,Glen Huntly,Ormond,No. 3,Paul Egre,Mason Campbell,Mason Campbell,6-8,6,8,0,1,Completed,true,false,false
+AP010101,16 Dec 23,10,Glen Huntly,Ormond,No. 4,Daniel Katanov,Carole Pywell,Daniel Katanov,8-2,8,2,1,0,Completed,true,false,false
+AP010102,16 Dec 23,10,East Malvern,Lauriston,No. 1,Rajat Dang,Aaron Immermann,Rajat Dang,8-1,8,1,1,0,Completed,true,false,false
+AP010102,16 Dec 23,10,East Malvern,Lauriston,No. 2,Faran Mazloomi,Eric Bai,Eric Bai,6-8,6,8,0,1,Completed,true,false,false
+AP010102,16 Dec 23,10,East Malvern,Lauriston,No. 3,Alex Dusek,George Papadimitrious,George Papadimitrious,7-8,7,8,0,1,Completed,true,false,true
+AP010102,16 Dec 23,10,East Malvern,Lauriston,No. 4,Frantzeskos Triantafyllou,Ethan Tsui,Frantzeskos Triantafyllou,8-6,8,6,1,0,Completed,true,false,false
+AP010104,16 Dec 23,10,Royal Ave,Tennis World,No. 1,Justin Alway,Vitas Rernglertpricha,Justin Alway,8-2,8,2,1,0,Completed,true,false,false
+AP010104,16 Dec 23,10,Royal Ave,Tennis World,No. 2,Dean Craig,Brian Amadio,Dean Craig,8-0,8,0,1,0,Completed,true,false,false
+AP010104,16 Dec 23,10,Royal Ave,Tennis World,No. 3,Toby Brett,Alex Mitsopoulos,Toby Brett,8-5,8,5,1,0,Completed,true,false,false
+AP010104,16 Dec 23,10,Royal Ave,Tennis World,No. 4,Jeremy Rouch,Sam Emerson,Jeremy Rouch,8-4,8,4,1,0,Completed,true,false,false
+AP010111,03 Feb 24,11,Ormond,Royal Ave,No. 1,Steve Gelagin,Dean Craig,Steve Gelagin,8-2,8,2,1,0,Completed,true,false,false
+AP010111,03 Feb 24,11,Ormond,Royal Ave,No. 2,Michael Hudson,[Unnamed emergency — TROLS AP010111 away code 2],Michael Hudson,8-0,8,0,1,0,Completed,false,false,true
+AP010111,03 Feb 24,11,Ormond,Royal Ave,No. 3,Mason Campbell,Toby Brett,Mason Campbell,8-5,8,5,1,0,Completed,true,false,false
+AP010111,03 Feb 24,11,Ormond,Royal Ave,No. 4,Rivka Garson,Robin Smith,Robin Smith,4-8,4,8,0,1,Completed,true,false,true
+AP010112,03 Feb 24,11,Lauriston,Glen Huntly,No. 1,Aaron Immermann,Gerald Pereria,Gerald Pereria,7-8,7,8,0,1,Completed,true,false,false
+AP010112,03 Feb 24,11,Lauriston,Glen Huntly,No. 2,Om Rao,Blake Pfeiffer,Blake Pfeiffer,4-8,4,8,0,1,Completed,true,false,false
+AP010112,03 Feb 24,11,Lauriston,Glen Huntly,No. 3,Eric Bai,Michael Haynes,Michael Haynes,3-8,3,8,0,1,Completed,true,false,false
+AP010112,03 Feb 24,11,Lauriston,Glen Huntly,No. 4,Ethan Tsui,Paul Egre,Paul Egre,2-8,2,8,0,1,Completed,true,false,false
+AP010114,03 Feb 24,11,Tennis World,Mentone,No. 1,Toan Nguyen,Alberto Polintan,Toan Nguyen,8-2,8,2,1,0,Completed,true,true,false
+AP010114,03 Feb 24,11,Tennis World,Mentone,No. 2,Brian Amadio,Dante Ortega,Dante Ortega,4-8,4,8,0,1,Completed,true,false,false
+AP010114,03 Feb 24,11,Tennis World,Mentone,No. 3,Carl Smargiassi,Aaron Tsui,Carl Smargiassi,8-5,8,5,1,0,Completed,true,false,false
+AP010114,03 Feb 24,11,Tennis World,Mentone,No. 4,Alex Mitsopoulos,Jordan Nicholas,Alex Mitsopoulos,8-3,8,3,1,0,Completed,true,false,true
+AP010122,10 Feb 24,12,Glen Huntly,East Malvern,No. 1,Blake Pfeiffer,Faran Mazloomi,Blake Pfeiffer,8-3,8,3,1,0,Completed,true,false,false
+AP010122,10 Feb 24,12,Glen Huntly,East Malvern,No. 2,Anirudh Devanathan,Alex Dusek,Anirudh Devanathan,8-6,8,6,1,0,Completed,true,false,false
+AP010122,10 Feb 24,12,Glen Huntly,East Malvern,No. 3,Franck Morin,Robert Wyld,Robert Wyld,7-8,7,8,0,1,Completed,true,false,true
+AP010122,10 Feb 24,12,Glen Huntly,East Malvern,No. 4,Daniel Katanov,James Bryden,Daniel Katanov,8-2,8,2,1,0,Completed,true,false,false
+AP010123,10 Feb 24,12,Mentone,Royal Ave,No. 1,Alberto Polintan,Justin Alway,Alberto Polintan,8-2,8,2,1,0,Completed,true,false,false
+AP010123,10 Feb 24,12,Mentone,Royal Ave,No. 2,Dante Ortega,Jimi Weir,Dante Ortega,8-3,8,3,1,0,Completed,true,false,false
+AP010123,10 Feb 24,12,Mentone,Royal Ave,No. 3,Aaron Tsui,Robin Smith,Robin Smith,2-8,2,8,0,1,Completed,true,false,true
+AP010123,10 Feb 24,12,Mentone,Royal Ave,No. 4,Arun Gulur,Sam Pennell,Sam Pennell,5-8,5,8,0,1,Completed,true,false,true
+AP010132,17 Feb 24,13,Ormond,Tennis World,No. 1,Steve Gelagin,Vitas Rernglertpricha,Steve Gelagin,8-6,8,6,1,0,Completed,true,false,false
+AP010132,17 Feb 24,13,Ormond,Tennis World,No. 2,Michael Hudson,Carl Smargiassi,Michael Hudson,8-1,8,1,1,0,Completed,true,false,false
+AP010132,17 Feb 24,13,Ormond,Tennis World,No. 3,Mason Campbell,Alex Mitsopoulos,Mason Campbell,8-6,8,6,1,0,Completed,true,false,false
+AP010132,17 Feb 24,13,Ormond,Tennis World,No. 4,Rivka Garson,Sam Emerson,Sam Emerson,0-8,0,8,0,1,Completed,true,false,false
+AP010133,17 Feb 24,13,Royal Ave,Glen Huntly,No. 1,Justin Alway,Gerald Pereria,Justin Alway,8-2,8,2,1,0,Completed,true,false,false
+AP010133,17 Feb 24,13,Royal Ave,Glen Huntly,No. 2,Dean Craig,Anirudh Devanathan,Anirudh Devanathan,2-8,2,8,0,1,Completed,true,false,false
+AP010133,17 Feb 24,13,Royal Ave,Glen Huntly,No. 3,Toby Brett,Paul Egre,Paul Egre,2-8,2,8,0,1,Completed,true,false,false
+AP010133,17 Feb 24,13,Royal Ave,Glen Huntly,No. 4,Jimi Weir,William Gort,Jimi Weir,8-6,8,6,1,0,Completed,true,false,true
+AP010134,17 Feb 24,13,East Malvern,Mentone,No. 1,Rajat Dang,Daniel Carroll,Daniel Carroll,3-8,3,8,0,1,Completed,true,false,false
+AP010134,17 Feb 24,13,East Malvern,Mentone,No. 2,Faran Mazloomi,Yarden Lashchover,Yarden Lashchover,2-8,2,8,0,1,Completed,true,false,false
+AP010134,17 Feb 24,13,East Malvern,Mentone,No. 3,Alex Dusek,Alberto Polintan,Alberto Polintan,5-8,5,8,0,1,Completed,true,false,false
+AP010134,17 Feb 24,13,East Malvern,Mentone,No. 4,Martin Giffard,Arun Gulur,Martin Giffard,8-6,8,6,1,0,Completed,true,false,false
+AP010142,24 Feb 24,14,Tennis World,Lauriston,No. 1,Vitas Rernglertpricha,Aaron Immermann,Vitas Rernglertpricha,8-3,8,3,1,0,Completed,true,false,false
+AP010142,24 Feb 24,14,Tennis World,Lauriston,No. 2,Alex Mitsopoulos,Eric Bai,Eric Bai,1-8,1,8,0,1,Completed,true,false,false
+AP010142,24 Feb 24,14,Tennis World,Lauriston,No. 3,Sam Emerson,Ethan Tsui,Sam Emerson,8-6,8,6,1,0,Completed,true,false,false
+AP010142,24 Feb 24,14,Tennis World,Lauriston,No. 4,Ashwin Kovil,George Papadimitrious,George Papadimitrious,0-8,0,8,0,1,Completed,true,false,true
+AP010143,24 Feb 24,14,Royal Ave,East Malvern,No. 1,Justin Alway,Martin Giffard,Justin Alway,8-2,8,2,1,0,Completed,true,false,false
+AP010143,24 Feb 24,14,Royal Ave,East Malvern,No. 2,Toby Brett,Frantzeskos Triantafyllou,Frantzeskos Triantafyllou,6-8,6,8,0,1,Completed,true,false,false
+AP010143,24 Feb 24,14,Royal Ave,East Malvern,No. 3,Jeremy Rouch,Robert Wyld,Jeremy Rouch,8-7,8,7,1,0,Completed,true,false,true
+AP010143,24 Feb 24,14,Royal Ave,East Malvern,No. 4,Jimi Weir,David Bryden,Jimi Weir,8-0,8,0,1,0,Completed,true,false,true
+AP010144,24 Feb 24,14,Mentone,Glen Huntly,No. 1,Alberto Polintan,Paul Egre,Alberto Polintan,8-6,8,6,1,0,Completed,true,false,false
+AP010144,24 Feb 24,14,Mentone,Glen Huntly,No. 2,Simon Xue,Franck Morin,Simon Xue,8-3,8,3,1,0,Completed,true,false,false
+AP010144,24 Feb 24,14,Mentone,Glen Huntly,No. 3,Aaron Tsui,Daniel Katanov,Daniel Katanov,6-8,6,8,0,1,Completed,true,false,false
+AP010144,24 Feb 24,14,Mentone,Glen Huntly,No. 4,Arun Gulur,William Gort,Arun Gulur,8-7,8,7,1,0,Completed,true,false,true
+AP010301,,16,Glen Huntly,Tennis World,No. 1,Gerald Pereria,Toan Nguyen,Toan Nguyen,5-8,5,8,0,1,Completed,true,false,true
+AP010301,,16,Glen Huntly,Tennis World,No. 2,Michael Haynes,Carl Smargiassi,Carl Smargiassi,6-8,6,8,0,1,Completed,true,false,false
+AP010301,,16,Glen Huntly,Tennis World,No. 3,Paul Egre,Vitas Rernglertpricha,Vitas Rernglertpricha,5-8,5,8,0,1,Completed,true,false,false
+AP010301,,16,Glen Huntly,Tennis World,No. 4,Daniel Katanov,Alex Mitsopoulos,Daniel Katanov,8-5,8,5,1,0,Completed,true,false,false
+AP010302,,16,Mentone,Ormond,No. 1,Yarden Lashchover,Steve Gelagin,Steve Gelagin,7-8,7,8,0,1,Completed,true,false,false
+AP010302,,16,Mentone,Ormond,No. 2,Alberto Polintan,Michael Hudson,Michael Hudson,4-8,4,8,0,1,Completed,true,false,false
+AP010302,,16,Mentone,Ormond,No. 3,Aaron Tsui,Mason Campbell,Mason Campbell,5-8,5,8,0,1,Completed,true,false,false
+AP010302,,16,Mentone,Ormond,No. 4,Arun Gulur,Susan Harrison,Arun Gulur,8-0,8,0,1,0,Completed,true,false,false
+AP010321,,17,Ormond,Tennis World,No. 1,Steve Gelagin,Brian Amadio,Steve Gelagin,8-1,8,1,1,0,Completed,true,false,false
+AP010321,,17,Ormond,Tennis World,No. 2,Michael Hudson,Vitas Rernglertpricha,Michael Hudson,8-3,8,3,1,0,Completed,true,false,false
+AP010321,,17,Ormond,Tennis World,No. 3,Mason Campbell,Carl Smargiassi,Mason Campbell,8-6,8,6,1,0,Completed,true,false,false
+AP010321,,17,Ormond,Tennis World,No. 4,Rivka Garson,Alex Mitsopoulos,Alex Mitsopoulos,7-8,7,8,0,1,Completed,true,false,false

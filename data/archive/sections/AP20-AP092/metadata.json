@@ -1,0 +1,98 @@
+{
+  "asset_id": "AP20-AP092",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 09/10",
+  "season_id": "AP20",
+  "season_label": "Summer 09/10",
+  "source_section_code": "AP092",
+  "section_label": "Mixed Rubbers 1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Hawthorn",
+      "wins": 0,
+      "points": 74,
+      "percentage": 150.67,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Oakleigh",
+      "wins": 0,
+      "points": 71,
+      "percentage": 131.51,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "St Pauls",
+      "wins": 0,
+      "points": 68,
+      "percentage": 118.74,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Lauriston",
+      "wins": 0,
+      "points": 53,
+      "percentage": 108.28,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Kings Park",
+      "wins": 0,
+      "points": 33,
+      "percentage": 89.9,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Frankston East",
+      "wins": 0,
+      "points": 30,
+      "percentage": 71.79,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "St Andrews MB",
+      "wins": 0,
+      "points": 7,
+      "percentage": 58.45,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP20-AP092",
+  "fixtures": 60,
+  "completed_fixtures": 46,
+  "draw_fixtures": 4,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 184,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP092311 doubles No. 4: '7-5 2-5'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP092321 doubles No. 4: '6-2 2-6'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

@@ -1,0 +1,184 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP029011,02 Oct 10,1,Lauriston,Clarinda,No. 1,Brandon Bryant,Andrew Kotnik,Brandon Bryant,8-4,8,4,1,0,Completed,true,false,false
+AP029011,02 Oct 10,1,Lauriston,Clarinda,No. 2,Luke Thwaites,Zoran Josic,Zoran Josic,6-8,6,8,0,1,Completed,true,false,false
+AP029011,02 Oct 10,1,Lauriston,Clarinda,No. 3,Evan Warring,Matt Glico,Evan Warring,8-4,8,4,1,0,Completed,true,false,false
+AP029011,02 Oct 10,1,Lauriston,Clarinda,No. 4,Matthew Russell,Rob Cvitkovic,Rob Cvitkovic,2-8,2,8,0,1,Completed,true,false,false
+AP029012,02 Oct 10,1,Caulfield Rec,Dandenong,No. 1,Barry Golightly,Robert McKenzie,Robert McKenzie,4-8,4,8,0,1,Completed,true,false,false
+AP029012,02 Oct 10,1,Caulfield Rec,Dandenong,No. 2,Nick Vicary,Michael Turlejski,Nick Vicary,9-7,9,7,1,0,Completed,true,false,false
+AP029012,02 Oct 10,1,Caulfield Rec,Dandenong,No. 3,Michael Hickey,Jonny Longridge,Jonny Longridge,8-9,8,9,0,1,Completed,true,false,false
+AP029012,02 Oct 10,1,Caulfield Rec,Dandenong,No. 4,Gary Slapar,Valoja Illangasinghe,Gary Slapar,9-8,9,8,1,0,Completed,true,false,false
+AP029013,02 Oct 10,1,Carmelite,GPHC,No. 1,Alfonso Sammassimo,O Jones,Alfonso Sammassimo,8-2,8,2,1,0,Completed,true,false,false
+AP029013,02 Oct 10,1,Carmelite,GPHC,No. 2,Stefan Konstantinidis,Julian O'Donnell,Julian O'Donnell,8-9,8,9,0,1,Completed,true,false,false
+AP029013,02 Oct 10,1,Carmelite,GPHC,No. 3,Paul Munoz,Sebastion Sauvey,Paul Munoz,8-5,8,5,1,0,Completed,true,false,false
+AP029013,02 Oct 10,1,Carmelite,GPHC,No. 4,Chris Stratford,Mykal Benham,Chris Stratford,8-2,8,2,1,0,Completed,true,false,false
+AP029021,09 Oct 10,2,BLTC,Lauriston,No. 1,Eddie Myers,Brandon Bryant,Brandon Bryant,5-8,5,8,0,1,Completed,true,false,false
+AP029021,09 Oct 10,2,BLTC,Lauriston,No. 2,Mal Pearson,Luke Thwaites,Luke Thwaites,2-8,2,8,0,1,Completed,true,false,false
+AP029021,09 Oct 10,2,BLTC,Lauriston,No. 3,Shadi Taleb,Matthew Russell,Matthew Russell,6-8,6,8,0,1,Completed,true,false,false
+AP029021,09 Oct 10,2,BLTC,Lauriston,No. 4,David Henry,Andrew Twist,David Henry,8-6,8,6,1,0,Completed,true,false,false
+AP029022,09 Oct 10,2,Clarinda,Caulfield Rec,No. 1,Andrew Kotnik,Barry Golightly,Andrew Kotnik,8-2,8,2,1,0,Completed,true,false,false
+AP029022,09 Oct 10,2,Clarinda,Caulfield Rec,No. 2,Zoran Josic,Nick Vicary,Zoran Josic,8-6,8,6,1,0,Completed,true,false,false
+AP029022,09 Oct 10,2,Clarinda,Caulfield Rec,No. 3,Adrian Fazliu,Michael Hickey,Adrian Fazliu,8-0,8,0,1,0,Completed,true,false,false
+AP029022,09 Oct 10,2,Clarinda,Caulfield Rec,No. 4,Rob Cvitkovic,Matt Walsh,Rob Cvitkovic,9-8,9,8,1,0,Completed,true,false,false
+AP029023,09 Oct 10,2,Dandenong,Carmelite,No. 1,Steve Giamarco,Simon Arms,Simon Arms,4-8,4,8,0,1,Completed,true,false,false
+AP029023,09 Oct 10,2,Dandenong,Carmelite,No. 2,Jonny Longridge,Paul Kleverlaan,Paul Kleverlaan,7-9,7,9,0,1,Completed,true,false,false
+AP029023,09 Oct 10,2,Dandenong,Carmelite,No. 3,Valoja Illangasinghe,Stefan Konstantinidis,Valoja Illangasinghe,8-4,8,4,1,0,Completed,true,false,false
+AP029023,09 Oct 10,2,Dandenong,Carmelite,No. 4,Seb Postlethwaite,Damien Pound,Damien Pound,5-8,5,8,0,1,Completed,true,false,false
+AP029024,09 Oct 10,2,GPHC,Dendy Park,No. 1,Adam Stone,Jai Corbett,Adam Stone,8-5,8,5,1,0,Completed,true,false,false
+AP029024,09 Oct 10,2,GPHC,Dendy Park,No. 2,Julian O'Donnell,Liam Goldberg,Julian O'Donnell,8-6,8,6,1,0,Completed,true,false,false
+AP029024,09 Oct 10,2,GPHC,Dendy Park,No. 3,Sebastion Sauvey,Jonathon Desira,Sebastion Sauvey,8-5,8,5,1,0,Completed,true,false,false
+AP029024,09 Oct 10,2,GPHC,Dendy Park,No. 4,Mykal Benham,Darko Pasara,Mykal Benham,8-5,8,5,1,0,Completed,true,false,false
+AP029032,16 Oct 10,3,Caulfield Rec,BLTC,No. 1,Nick Vicary,Eddie Myers,Nick Vicary,9-7,9,7,1,0,Completed,true,false,false
+AP029032,16 Oct 10,3,Caulfield Rec,BLTC,No. 2,Michael Hickey,Mal Pearson,Michael Hickey,8-6,8,6,1,0,Completed,true,false,false
+AP029032,16 Oct 10,3,Caulfield Rec,BLTC,No. 3,Gary Slapar,Shadi Taleb,Shadi Taleb,3-8,3,8,0,1,Completed,true,false,false
+AP029032,16 Oct 10,3,Caulfield Rec,BLTC,No. 4,Matt Walsh,David Henry,Matt Walsh,8-5,8,5,1,0,Completed,true,false,false
+AP029033,16 Oct 10,3,Carmelite,Clarinda,No. 1,Simon Arms,Andrew Kotnik,Simon Arms,8-2,8,2,1,0,Completed,true,false,false
+AP029033,16 Oct 10,3,Carmelite,Clarinda,No. 2,Alfonso Sammassimo,Zoran Josic,Alfonso Sammassimo,8-5,8,5,1,0,Completed,true,false,false
+AP029033,16 Oct 10,3,Carmelite,Clarinda,No. 3,Stefan Konstantinidis,Matt Glico,Matt Glico,4-8,4,8,0,1,Completed,true,false,false
+AP029033,16 Oct 10,3,Carmelite,Clarinda,No. 4,Damien Pound,Rob Cvitkovic,Rob Cvitkovic,4-8,4,8,0,1,Completed,true,false,false
+AP029041,23 Oct 10,4,Dandenong,Lauriston,No. 1,Steve Giamarco,Luke Thwaites,Steve Giamarco,8-3,8,3,1,0,Completed,true,false,false
+AP029041,23 Oct 10,4,Dandenong,Lauriston,No. 2,Jonny Longridge,Evan Warring,Jonny Longridge,8-5,8,5,1,0,Completed,true,false,false
+AP029041,23 Oct 10,4,Dandenong,Lauriston,No. 3,Valoja Illangasinghe,Simon Fava,Valoja Illangasinghe,8-3,8,3,1,0,Completed,true,false,false
+AP029041,23 Oct 10,4,Dandenong,Lauriston,No. 4,Seb Postlethwaite,Anh Tuan,Seb Postlethwaite,8-2,8,2,1,0,Completed,true,false,false
+AP029042,23 Oct 10,4,GPHC,Caulfield Rec,No. 1,Taila Donald,Barry Golightly,Barry Golightly,6-8,6,8,0,1,Completed,true,false,false
+AP029042,23 Oct 10,4,GPHC,Caulfield Rec,No. 2,Julian O'Donnell,Nick Vicary,Nick Vicary,6-8,6,8,0,1,Completed,true,false,false
+AP029042,23 Oct 10,4,GPHC,Caulfield Rec,No. 3,O Jones,Michael Hickey,O Jones,9-7,9,7,1,0,Completed,true,false,false
+AP029042,23 Oct 10,4,GPHC,Caulfield Rec,No. 4,Mykal Benham,Gary Slapar,Mykal Benham,8-1,8,1,1,0,Completed,true,false,false
+AP029043,23 Oct 10,4,BLTC,Carmelite,No. 1,Eddie Myers,Simon Arms,Eddie Myers,8-6,8,6,1,0,Completed,true,false,false
+AP029043,23 Oct 10,4,BLTC,Carmelite,No. 2,Mal Pearson,Stefan Konstantinidis,Stefan Konstantinidis,6-8,6,8,0,1,Completed,true,false,false
+AP029043,23 Oct 10,4,BLTC,Carmelite,No. 3,Shadi Taleb,Damien Pound,Shadi Taleb,8-6,8,6,1,0,Completed,true,false,false
+AP029043,23 Oct 10,4,BLTC,Carmelite,No. 4,Ian Bailey,C Arms,Ian Bailey,9-7,9,7,1,0,Completed,true,false,false
+AP029044,23 Oct 10,4,Clarinda,Dendy Park,No. 1,Zoran Josic,Dean Ellis,Dean Ellis,5-8,5,8,0,1,Completed,true,false,false
+AP029044,23 Oct 10,4,Clarinda,Dendy Park,No. 2,Matt Glico,Jai Corbett,Jai Corbett,5-8,5,8,0,1,Completed,true,false,false
+AP029044,23 Oct 10,4,Clarinda,Dendy Park,No. 3,Adrian Fazliu,Liam Goldberg,Liam Goldberg,5-8,5,8,0,1,Completed,true,false,false
+AP029044,23 Oct 10,4,Clarinda,Dendy Park,No. 4,Rob Cvitkovic,Michael Kos,Michael Kos,6-8,6,8,0,1,Completed,true,false,false
+AP029051,06 Nov 10,5,Carmelite,Dendy Park,No. 1,Simon Arms,Jai Corbett,Simon Arms,8-3,8,3,1,0,Completed,true,false,false
+AP029051,06 Nov 10,5,Carmelite,Dendy Park,No. 2,Alfonso Sammassimo,Liam Goldberg,Alfonso Sammassimo,8-1,8,1,1,0,Completed,true,false,false
+AP029051,06 Nov 10,5,Carmelite,Dendy Park,No. 3,Stefan Konstantinidis,Luke Goldberg,Luke Goldberg,8-9,8,9,0,1,Completed,true,false,false
+AP029051,06 Nov 10,5,Carmelite,Dendy Park,No. 4,Damien Pound,Michael Kos,Michael Kos,1-8,1,8,0,1,Completed,true,false,false
+AP029052,06 Nov 10,5,BLTC,GPHC,No. 1,Ryan Thomas,Julian O'Donnell,Ryan Thomas,8-0,8,0,1,0,Completed,true,false,false
+AP029052,06 Nov 10,5,BLTC,GPHC,No. 2,Edward Brophy,Sebastion Sauvey,Edward Brophy,8-6,8,6,1,0,Completed,true,false,false
+AP029052,06 Nov 10,5,BLTC,GPHC,No. 3,Mal Pearson,O Jones,Mal Pearson,8-5,8,5,1,0,Completed,true,false,false
+AP029052,06 Nov 10,5,BLTC,GPHC,No. 4,Shadi Taleb,Mykal Benham,Shadi Taleb,8-3,8,3,1,0,Completed,true,false,false
+AP029053,06 Nov 10,5,Dandenong,Clarinda,No. 1,Michael Turlejski,Andrew Kotnik,Andrew Kotnik,5-8,5,8,0,1,Completed,true,false,false
+AP029053,06 Nov 10,5,Dandenong,Clarinda,No. 2,Steve Giamarco,Zoran Josic,Steve Giamarco,8-2,8,2,1,0,Completed,true,false,false
+AP029053,06 Nov 10,5,Dandenong,Clarinda,No. 3,Jonny Longridge,Matt Glico,Jonny Longridge,8-5,8,5,1,0,Completed,true,false,false
+AP029053,06 Nov 10,5,Dandenong,Clarinda,No. 4,Seb Postlethwaite,Adrian Fazliu,Adrian Fazliu,4-8,4,8,0,1,Completed,true,false,false
+AP029054,06 Nov 10,5,Lauriston,Caulfield Rec,No. 1,Evan Warring,Barry Golightly,Evan Warring,9-8,9,8,1,0,Completed,true,false,false
+AP029054,06 Nov 10,5,Lauriston,Caulfield Rec,No. 2,Jon Hampson,Nick Vicary,Jon Hampson,8-3,8,3,1,0,Completed,true,false,false
+AP029054,06 Nov 10,5,Lauriston,Caulfield Rec,No. 3,Matthew Russell,Michael Hickey,Michael Hickey,7-9,7,9,0,1,Completed,true,false,false
+AP029054,06 Nov 10,5,Lauriston,Caulfield Rec,No. 4,Sven Karlsson,Gary Slapar,Gary Slapar,6-8,6,8,0,1,Completed,true,false,false
+AP029064,13 Nov 10,6,Clarinda,BLTC,No. 1,Andrew Kotnik,Eddie Myers,Andrew Kotnik,8-6,8,6,1,0,Completed,true,false,false
+AP029064,13 Nov 10,6,Clarinda,BLTC,No. 2,Matt Glico,Mal Pearson,Matt Glico,8-4,8,4,1,0,Completed,true,false,false
+AP029064,13 Nov 10,6,Clarinda,BLTC,No. 3,Adrian Fazliu,Shadi Taleb,,3-0,3,0,1,0,Unfinished,false,false,false
+AP029071,20 Nov 10,7,Lauriston,Carmelite,No. 1,Luke Thwaites,Simon Arms,Simon Arms,0-8,0,8,0,1,Completed,true,false,false
+AP029071,20 Nov 10,7,Lauriston,Carmelite,No. 2,Evan Warring,Alfonso Sammassimo,Alfonso Sammassimo,6-8,6,8,0,1,Completed,true,false,false
+AP029071,20 Nov 10,7,Lauriston,Carmelite,No. 3,Andrew Twist,Paul Munoz,Andrew Twist,8-1,8,1,1,0,Completed,true,false,false
+AP029071,20 Nov 10,7,Lauriston,Carmelite,No. 4,Sven Karlsson,Chris Stratford,Chris Stratford,0-8,0,8,0,1,Completed,true,false,false
+AP029072,20 Nov 10,7,Caulfield Rec,Dendy Park,No. 1,Nick Vicary,Asaf Nagar,Asaf Nagar,3-8,3,8,0,1,Completed,true,false,false
+AP029072,20 Nov 10,7,Caulfield Rec,Dendy Park,No. 2,Jacob Grills,Dean Ellis,Jacob Grills,8-3,8,3,1,0,Completed,true,false,false
+AP029072,20 Nov 10,7,Caulfield Rec,Dendy Park,No. 3,Michael Hickey,Michael Kos,Michael Kos,6-8,6,8,0,1,Completed,true,false,false
+AP029072,20 Nov 10,7,Caulfield Rec,Dendy Park,No. 4,Gary Slapar,Luke Goldberg,Luke Goldberg,3-8,3,8,0,1,Completed,true,false,false
+AP029073,20 Nov 10,7,BLTC,Dandenong,No. 1,Eddie Myers,Robert McKenzie,Robert McKenzie,3-8,3,8,0,1,Completed,true,false,false
+AP029073,20 Nov 10,7,BLTC,Dandenong,No. 2,Mal Pearson,Steve Giamarco,Steve Giamarco,4-8,4,8,0,1,Completed,true,false,false
+AP029073,20 Nov 10,7,BLTC,Dandenong,No. 3,Shadi Taleb,Jonny Longridge,Jonny Longridge,3-8,3,8,0,1,Completed,true,false,false
+AP029073,20 Nov 10,7,BLTC,Dandenong,No. 4,Marco Dogliotti,Valoja Illangasinghe,Valoja Illangasinghe,4-8,4,8,0,1,Completed,true,false,false
+AP029074,20 Nov 10,7,GPHC,Clarinda,No. 1,Taila Donald,Andrew Kotnik,Andrew Kotnik,3-8,3,8,0,1,Completed,true,false,false
+AP029074,20 Nov 10,7,GPHC,Clarinda,No. 2,Julian O'Donnell,Matt Glico,Matt Glico,4-8,4,8,0,1,Completed,true,false,false
+AP029074,20 Nov 10,7,GPHC,Clarinda,No. 3,Tom Oliver,Petros Goutziomitros,Petros Goutziomitros,5-8,5,8,0,1,Completed,true,false,false
+AP029074,20 Nov 10,7,GPHC,Clarinda,No. 4,Sebastion Sauvey,Rob Cvitkovic,Rob Cvitkovic,1-8,1,8,0,1,Completed,true,false,false
+AP029091,04 Dec 10,9,Lauriston,BLTC,No. 1,Jayden Neilson,Ryan Thomas,Ryan Thomas,1-8,1,8,0,1,Completed,true,false,false
+AP029091,04 Dec 10,9,Lauriston,BLTC,No. 2,Evan Warring,Eddie Myers,Evan Warring,8-2,8,2,1,0,Completed,true,false,false
+AP029091,04 Dec 10,9,Lauriston,BLTC,No. 3,Jon Hampson,Mal Pearson,Jon Hampson,8-5,8,5,1,0,Completed,true,false,false
+AP029091,04 Dec 10,9,Lauriston,BLTC,No. 4,Sven Karlsson,Shadi Taleb,Sven Karlsson,8-6,8,6,1,0,Completed,true,false,false
+AP029092,04 Dec 10,9,Caulfield Rec,Clarinda,No. 1,Nick Vicary,Andrew Kotnik,Andrew Kotnik,8-9,8,9,0,1,Completed,true,false,false
+AP029092,04 Dec 10,9,Caulfield Rec,Clarinda,No. 2,Michael Hickey,Matt Glico,Matt Glico,5-8,5,8,0,1,Completed,true,false,false
+AP029092,04 Dec 10,9,Caulfield Rec,Clarinda,No. 3,Gary Slapar,Petros Goutziomitros,Petros Goutziomitros,3-8,3,8,0,1,Completed,true,false,false
+AP029092,04 Dec 10,9,Caulfield Rec,Clarinda,No. 4,Matt Walsh,Rob Cvitkovic,Matt Walsh,9-8,9,8,1,0,Completed,true,false,false
+AP029093,04 Dec 10,9,Carmelite,Dandenong,No. 1,Chris Young,Robert McKenzie,Robert McKenzie,1-8,1,8,0,1,Completed,true,false,false
+AP029093,04 Dec 10,9,Carmelite,Dandenong,No. 2,Stefan Konstantinidis,Michael Turlejski,Stefan Konstantinidis,8-3,8,3,1,0,Completed,true,false,false
+AP029093,04 Dec 10,9,Carmelite,Dandenong,No. 3,Damien Pound,Steve Giamarco,Steve Giamarco,2-8,2,8,0,1,Completed,true,false,false
+AP029093,04 Dec 10,9,Carmelite,Dandenong,No. 4,Dimi Hatzianou,Valoja Illangasinghe,Valoja Illangasinghe,6-8,6,8,0,1,Completed,true,false,false
+AP029094,04 Dec 10,9,Dendy Park,GPHC,No. 1,Luke Goldberg,Adam Stone,Adam Stone,6-8,6,8,0,1,Completed,true,false,false
+AP029094,04 Dec 10,9,Dendy Park,GPHC,No. 2,Liam Goldberg,Tom Oliver,Liam Goldberg,8-5,8,5,1,0,Completed,true,false,false
+AP029094,04 Dec 10,9,Dendy Park,GPHC,No. 3,Michael Kos,Sebastion Sauvey,Michael Kos,8-1,8,1,1,0,Completed,true,false,false
+AP029094,04 Dec 10,9,Dendy Park,GPHC,No. 4,Jonathon Desira,James L,Jonathon Desira,8-6,8,6,1,0,Completed,true,false,false
+AP029101,11 Dec 10,10,GPHC,Lauriston,No. 1,Tom Oliver,Brandon Bryant,Brandon Bryant,3-8,3,8,0,1,Completed,true,false,false
+AP029101,11 Dec 10,10,GPHC,Lauriston,No. 2,Sebastion Sauvey,Luke Thwaites,Luke Thwaites,3-8,3,8,0,1,Completed,true,false,false
+AP029101,11 Dec 10,10,GPHC,Lauriston,No. 3,O Jones,Evan Warring,Evan Warring,0-8,0,8,0,1,Completed,true,false,false
+AP029101,11 Dec 10,10,GPHC,Lauriston,No. 4,Mykal Benham,Matthew Russell,Matthew Russell,5-8,5,8,0,1,Completed,true,false,false
+AP029102,11 Dec 10,10,BLTC,Caulfield Rec,No. 1,Eddie Myers,Michael Martin,Michael Martin,3-8,3,8,0,1,Completed,true,false,false
+AP029102,11 Dec 10,10,BLTC,Caulfield Rec,No. 2,Mal Pearson,Nick Vicary,Nick Vicary,4-8,4,8,0,1,Completed,true,false,false
+AP029102,11 Dec 10,10,BLTC,Caulfield Rec,No. 3,Taylor Ward,Michael Hickey,Michael Hickey,2-8,2,8,0,1,Completed,true,false,false
+AP029102,11 Dec 10,10,BLTC,Caulfield Rec,No. 4,David Henry,Gary Slapar,Gary Slapar,4-8,4,8,0,1,Completed,true,false,false
+AP029103,11 Dec 10,10,Clarinda,Carmelite,No. 1,Andrew Kotnik,C Arms,C Arms,3-8,3,8,0,1,Completed,true,false,false
+AP029103,11 Dec 10,10,Clarinda,Carmelite,No. 2,Matt Glico,Alfonso Sammassimo,Alfonso Sammassimo,5-8,5,8,0,1,Completed,true,false,false
+AP029103,11 Dec 10,10,Clarinda,Carmelite,No. 3,Petros Goutziomitros,Stefan Konstantinidis,Stefan Konstantinidis,7-9,7,9,0,1,Completed,true,false,false
+AP029103,11 Dec 10,10,Clarinda,Carmelite,No. 4,Rob Cvitkovic,Damien Pound,Rob Cvitkovic,8-2,8,2,1,0,Completed,true,false,false
+AP029104,11 Dec 10,10,Dandenong,Dendy Park,No. 1,Michael Turlejski,Robert Trower,Robert Trower,8-9,8,9,0,1,Completed,true,false,false
+AP029104,11 Dec 10,10,Dandenong,Dendy Park,No. 2,Jonny Longridge,Liam Goldberg,Liam Goldberg,6-8,6,8,0,1,Completed,true,false,false
+AP029104,11 Dec 10,10,Dandenong,Dendy Park,No. 3,Valoja Illangasinghe,Michael Kos,Valoja Illangasinghe,8-2,8,2,1,0,Completed,true,false,false
+AP029104,11 Dec 10,10,Dandenong,Dendy Park,No. 4,Mitchell Illangasinghe,Darko Pasara,Darko Pasara,5-8,5,8,0,1,Completed,true,false,false
+AP029113,05 Feb 11,11,Carmelite,BLTC,No. 1,Simon Arms,Eddie Myers,Eddie Myers,4-8,4,8,0,1,Completed,true,false,false
+AP029113,05 Feb 11,11,Carmelite,BLTC,No. 2,Alfonso Sammassimo,Taylor Ward,Taylor Ward,6-8,6,8,0,1,Completed,true,false,false
+AP029113,05 Feb 11,11,Carmelite,BLTC,No. 3,Stefan Konstantinidis,David Henry,Stefan Konstantinidis,8-3,8,3,1,0,Completed,true,false,false
+AP029113,05 Feb 11,11,Carmelite,BLTC,No. 4,Damien Pound,Marco Dogliotti,Damien Pound,9-8,9,8,1,0,Completed,true,false,false
+AP029121,12 Feb 11,12,Dendy Park,Carmelite,No. 1,Dean Ellis,Simon Arms,Simon Arms,3-8,3,8,0,1,Completed,true,false,false
+AP029121,12 Feb 11,12,Dendy Park,Carmelite,No. 2,Jai Corbett,Alfonso Sammassimo,Alfonso Sammassimo,7-9,7,9,0,1,Completed,true,false,false
+AP029121,12 Feb 11,12,Dendy Park,Carmelite,No. 3,Liam Goldberg,Stefan Konstantinidis,Stefan Konstantinidis,7-9,7,9,0,1,Completed,true,false,false
+AP029121,12 Feb 11,12,Dendy Park,Carmelite,No. 4,Michael Kos,Damien Pound,Michael Kos,8-6,8,6,1,0,Completed,true,false,false
+AP029122,12 Feb 11,12,GPHC,BLTC,No. 1,Julian O'Donnell,Eddie Myers,Eddie Myers,0-8,0,8,0,1,Completed,true,false,false
+AP029122,12 Feb 11,12,GPHC,BLTC,No. 2,Tom Oliver,Mal Pearson,Mal Pearson,3-8,3,8,0,1,Completed,true,false,false
+AP029122,12 Feb 11,12,GPHC,BLTC,No. 3,O Jones,Shadi Taleb,O Jones,8-3,8,3,1,0,Completed,true,false,false
+AP029122,12 Feb 11,12,GPHC,BLTC,No. 4,Mykal Benham,David Henry,Mykal Benham,8-6,8,6,1,0,Completed,true,false,false
+AP029123,12 Feb 11,12,Clarinda,Dandenong,No. 1,Andrew Kotnik,Michael Turlejski,Michael Turlejski,6-8,6,8,0,1,Completed,true,false,false
+AP029123,12 Feb 11,12,Clarinda,Dandenong,No. 2,Zoran Josic,Steve Giamarco,Zoran Josic,9-8,9,8,1,0,Completed,true,false,false
+AP029123,12 Feb 11,12,Clarinda,Dandenong,No. 3,Matt Glico,Jonny Longridge,Matt Glico,8-6,8,6,1,0,Completed,true,false,false
+AP029123,12 Feb 11,12,Clarinda,Dandenong,No. 4,Rob Cvitkovic,Robert Hilbig,Robert Hilbig,4-8,4,8,0,1,Completed,true,false,false
+AP029124,12 Feb 11,12,Caulfield Rec,Lauriston,No. 1,Michael Martin,Brandon Bryant,Brandon Bryant,5-8,5,8,0,1,Completed,true,false,false
+AP029124,12 Feb 11,12,Caulfield Rec,Lauriston,No. 2,Nick Vicary,Jon Hampson,Nick Vicary,8-5,8,5,1,0,Completed,true,false,false
+AP029124,12 Feb 11,12,Caulfield Rec,Lauriston,No. 3,Michael Hickey,Matthew Russell,Michael Hickey,8-6,8,6,1,0,Completed,true,false,false
+AP029124,12 Feb 11,12,Caulfield Rec,Lauriston,No. 4,Matt Walsh,Sven Karlsson,Matt Walsh,8-3,8,3,1,0,Completed,true,false,false
+AP029131,19 Feb 11,13,Carmelite,Caulfield Rec,No. 1,Alfonso Sammassimo,Michael Martin,Alfonso Sammassimo,8-4,8,4,1,0,Completed,true,false,false
+AP029131,19 Feb 11,13,Carmelite,Caulfield Rec,No. 2,Stefan Konstantinidis,Nick Vicary,Nick Vicary,8-9,8,9,0,1,Completed,true,false,false
+AP029131,19 Feb 11,13,Carmelite,Caulfield Rec,No. 3,Chris Stratford,Barry Golightly,Chris Stratford,8-4,8,4,1,0,Completed,true,false,false
+AP029131,19 Feb 11,13,Carmelite,Caulfield Rec,No. 4,Damien Pound,Michael Hickey,Michael Hickey,3-8,3,8,0,1,Completed,true,false,false
+AP029132,19 Feb 11,13,Lauriston,Dendy Park,No. 1,Brandon Bryant,Dean Ellis,Brandon Bryant,8-4,8,4,1,0,Completed,true,false,false
+AP029132,19 Feb 11,13,Lauriston,Dendy Park,No. 2,Evan Warring,Luke Goldberg,Luke Goldberg,3-8,3,8,0,1,Completed,true,false,false
+AP029132,19 Feb 11,13,Lauriston,Dendy Park,No. 3,Matthew Russell,Jai Corbett,Jai Corbett,3-8,3,8,0,1,Completed,true,false,false
+AP029132,19 Feb 11,13,Lauriston,Dendy Park,No. 4,Andrew Twist,Liam Goldberg,Liam Goldberg,3-8,3,8,0,1,Completed,true,false,false
+AP029134,19 Feb 11,13,BLTC,Clarinda,No. 1,Taylor Ward,Zoran Josic,Zoran Josic,5-8,5,8,0,1,Completed,true,false,false
+AP029134,19 Feb 11,13,BLTC,Clarinda,No. 2,Mal Pearson,Matt Glico,Matt Glico,5-8,5,8,0,1,Completed,true,false,false
+AP029134,19 Feb 11,13,BLTC,Clarinda,No. 3,Marco Dogliotti,Petros Goutziomitros,Marco Dogliotti,8-4,8,4,1,0,Completed,true,false,false
+AP029134,19 Feb 11,13,BLTC,Clarinda,No. 4,Roger Boyd,Rob Cvitkovic,Rob Cvitkovic,2-8,2,8,0,1,Completed,true,false,false
+AP029141,26 Feb 11,14,Carmelite,Lauriston,No. 1,Alfonso Sammassimo,Brandon Bryant,Alfonso Sammassimo,9-8,9,8,1,0,Completed,true,false,false
+AP029141,26 Feb 11,14,Carmelite,Lauriston,No. 2,Stefan Konstantinidis,Evan Warring,Evan Warring,6-8,6,8,0,1,Completed,true,false,false
+AP029141,26 Feb 11,14,Carmelite,Lauriston,No. 3,Chris Stratford,Nyall Langmeade,Chris Stratford,8-3,8,3,1,0,Completed,true,false,false
+AP029141,26 Feb 11,14,Carmelite,Lauriston,No. 4,Damien Pound,Andrew Twist,Andrew Twist,3-8,3,8,0,1,Completed,true,false,false
+AP029142,26 Feb 11,14,Dendy Park,Caulfield Rec,No. 1,Luke Goldberg,Michael Martin,Luke Goldberg,8-6,8,6,1,0,Completed,true,false,false
+AP029142,26 Feb 11,14,Dendy Park,Caulfield Rec,No. 2,Michael Kos,Nick Vicary,Michael Kos,8-6,8,6,1,0,Completed,true,false,false
+AP029142,26 Feb 11,14,Dendy Park,Caulfield Rec,No. 3,Zach Fischer,Barry Golightly,Zach Fischer,8-4,8,4,1,0,Completed,true,false,false
+AP029142,26 Feb 11,14,Dendy Park,Caulfield Rec,No. 4,Arthur Vainbrant,Michael Hickey,Michael Hickey,4-8,4,8,0,1,Completed,true,false,false
+AP029143,26 Feb 11,14,Dandenong,BLTC,No. 1,Robert McKenzie,Eddie Myers,Robert McKenzie,8-6,8,6,1,0,Completed,true,false,false
+AP029143,26 Feb 11,14,Dandenong,BLTC,No. 2,Michael Turlejski,Mal Pearson,Michael Turlejski,8-4,8,4,1,0,Completed,true,false,false
+AP029143,26 Feb 11,14,Dandenong,BLTC,No. 3,Jonny Longridge,Shadi Taleb,Jonny Longridge,8-1,8,1,1,0,Completed,true,false,false
+AP029143,26 Feb 11,14,Dandenong,BLTC,No. 4,Valoja Illangasinghe,David Henry,Valoja Illangasinghe,8-6,8,6,1,0,Completed,true,false,false
+AP029144,26 Feb 11,14,Clarinda,GPHC,No. 1,Zoran Josic,Tom Oliver,Zoran Josic,8-3,8,3,1,0,Completed,true,false,false
+AP029144,26 Feb 11,14,Clarinda,GPHC,No. 2,Matt Glico,Sebastion Sauvey,Matt Glico,8-2,8,2,1,0,Completed,true,false,false
+AP029144,26 Feb 11,14,Clarinda,GPHC,No. 3,Petros Goutziomitros,O Jones,Petros Goutziomitros,8-6,8,6,1,0,Completed,true,false,false
+AP029144,26 Feb 11,14,Clarinda,GPHC,No. 4,Rob Cvitkovic,Mykal Benham,Rob Cvitkovic,8-6,8,6,1,0,Completed,true,false,false
+AP029301,,16,Carmelite,Dandenong,No. 1,Simon Arms,Michael Turlejski,Michael Turlejski,6-8,6,8,0,1,Completed,true,false,false
+AP029301,,16,Carmelite,Dandenong,No. 2,Alfonso Sammassimo,Jonny Longridge,Alfonso Sammassimo,8-1,8,1,1,0,Completed,true,false,false
+AP029301,,16,Carmelite,Dandenong,No. 3,Stefan Konstantinidis,Valoja Illangasinghe,Stefan Konstantinidis,9-8,9,8,1,0,Completed,true,false,false
+AP029301,,16,Carmelite,Dandenong,No. 4,Damien Pound,Robert Hilbig,Robert Hilbig,4-8,4,8,0,1,Completed,true,false,false
+AP029302,,16,Dendy Park,Clarinda,No. 1,Dean Ellis,Andrew Kotnik,Andrew Kotnik,1-8,1,8,0,1,Completed,true,false,false
+AP029302,,16,Dendy Park,Clarinda,No. 2,Luke Goldberg,Zoran Josic,Luke Goldberg,8-6,8,6,1,0,Completed,true,false,false
+AP029302,,16,Dendy Park,Clarinda,No. 3,Liam Goldberg,Matt Glico,Liam Goldberg,8-3,8,3,1,0,Completed,true,false,false
+AP029302,,16,Dendy Park,Clarinda,No. 4,Michael Kos,Rob Cvitkovic,Michael Kos,9-8,9,8,1,0,Completed,true,false,false
+AP029311,,16,Dandenong,Dendy Park,No. 1,Robert McKenzie,Dean Ellis,Robert McKenzie,8-2,8,2,1,0,Completed,true,false,false
+AP029311,,16,Dandenong,Dendy Park,No. 2,Michael Turlejski,Jai Corbett,Michael Turlejski,8-2,8,2,1,0,Completed,true,false,false
+AP029311,,16,Dandenong,Dendy Park,No. 3,Steve Giamarco,Liam Goldberg,Steve Giamarco,8-5,8,5,1,0,Completed,true,false,false
+AP029311,,16,Dandenong,Dendy Park,No. 4,Jonny Longridge,Michael Kos,Jonny Longridge,8-5,8,5,1,0,Completed,true,false,false
+AP029321,,17,Carmelite,Dandenong,No. 1,Simon Arms,Robert McKenzie,Robert McKenzie,2-8,2,8,0,1,Completed,true,false,false
+AP029321,,17,Carmelite,Dandenong,No. 2,Alfonso Sammassimo,Michael Turlejski,Michael Turlejski,5-8,5,8,0,1,Completed,true,false,false
+AP029321,,17,Carmelite,Dandenong,No. 3,Chris Stratford,Steve Giamarco,Steve Giamarco,6-8,6,8,0,1,Completed,true,false,false
+AP029321,,17,Carmelite,Dandenong,No. 4,Damien Pound,Jonny Longridge,Jonny Longridge,4-8,4,8,0,1,Completed,true,false,false

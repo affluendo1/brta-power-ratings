@@ -1,0 +1,113 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP016011,14 Nov 20,1,Albert Park,BLTC,No. 1,Dean Stewart,Ryan Taylor,Ryan Taylor,6-8,6,8,0,1,Completed,true,false,false
+AP016011,14 Nov 20,1,Albert Park,BLTC,No. 2,Leon Katelis,Kurtis Bartholomeusz,Kurtis Bartholomeusz,0-8,0,8,0,1,Completed,true,false,false
+AP016011,14 Nov 20,1,Albert Park,BLTC,No. 3,Nostis Bobolas,Andrew Bartholomeusz,Andrew Bartholomeusz,6-8,6,8,0,1,Completed,true,false,false
+AP016011,14 Nov 20,1,Albert Park,BLTC,No. 4,Dennis Klapas,Ian Davey,Ian Davey,4-8,4,8,0,1,Completed,true,false,false
+AP016012,14 Nov 20,1,Clarinda,Dendy Park,No. 1,Patrick Beraun,Steven Julian-Fraser,Steven Julian-Fraser,5-8,5,8,0,1,Completed,true,false,false
+AP016012,14 Nov 20,1,Clarinda,Dendy Park,No. 2,Tri Dinh,Steve Bendel,Steve Bendel,4-8,4,8,0,1,Completed,true,false,false
+AP016012,14 Nov 20,1,Clarinda,Dendy Park,No. 3,Sebastian Allebi,Anthony Murray,Anthony Murray,0-8,0,8,0,1,Completed,true,false,false
+AP016012,14 Nov 20,1,Clarinda,Dendy Park,No. 4,Tung Lam,Andrew Lipson,Tung Lam,8-6,8,6,1,0,Completed,true,false,false
+AP016013,14 Nov 20,1,Maccabi,Le Page,No. 1,Dean Steinberg,Julian Blainey,Julian Blainey,6-8,6,8,0,1,Completed,true,false,false
+AP016013,14 Nov 20,1,Maccabi,Le Page,No. 2,Steven Kleytman,Mark Petkoff,Mark Petkoff,2-8,2,8,0,1,Completed,true,false,false
+AP016013,14 Nov 20,1,Maccabi,Le Page,No. 3,Adam Needleman,Lawrence Vlahos,Lawrence Vlahos,7-8,7,8,0,1,Completed,true,false,false
+AP016013,14 Nov 20,1,Maccabi,Le Page,No. 4,David Kenley,Cameron Bach,Cameron Bach,1-8,1,8,0,1,Completed,true,false,false
+AP016021,21 Nov 20,2,Le Page,Albert Park,No. 1,Julian Blainey,Nick Hinneberg,Julian Blainey,8-4,8,4,1,0,Completed,true,false,false
+AP016021,21 Nov 20,2,Le Page,Albert Park,No. 2,Mark Petkoff,Leon Katelis,Mark Petkoff,8-3,8,3,1,0,Completed,true,false,false
+AP016021,21 Nov 20,2,Le Page,Albert Park,No. 3,Cameron Bach,Billy Katelis,Cameron Bach,8-0,8,0,1,0,Completed,true,false,false
+AP016021,21 Nov 20,2,Le Page,Albert Park,No. 4,Adam Majdan,Alan Attwood,Adam Majdan,8-2,8,2,1,0,Completed,true,true,false
+AP016022,21 Nov 20,2,Dendy Park,Maccabi,No. 1,Steven Julian-Fraser,Dean Steinberg,Dean Steinberg,2-8,2,8,0,1,Completed,true,false,false
+AP016022,21 Nov 20,2,Dendy Park,Maccabi,No. 2,Steve Bendel,Warren Steinberg,Warren Steinberg,3-8,3,8,0,1,Completed,true,false,false
+AP016022,21 Nov 20,2,Dendy Park,Maccabi,No. 3,Anthony Murray,Alan Liebowitz,Anthony Murray,8-2,8,2,1,0,Completed,true,false,false
+AP016022,21 Nov 20,2,Dendy Park,Maccabi,No. 4,Andrew Lipson,David Kenley,David Kenley,7-8,7,8,0,1,Completed,true,false,false
+AP016023,21 Nov 20,2,BLTC,Clarinda,No. 1,Ryan Taylor,Patrick Beraun,Patrick Beraun,4-8,4,8,0,1,Completed,true,false,false
+AP016023,21 Nov 20,2,BLTC,Clarinda,No. 2,Kurtis Bartholomeusz,Tri Dinh,Tri Dinh,4-8,4,8,0,1,Completed,true,false,false
+AP016023,21 Nov 20,2,BLTC,Clarinda,No. 3,Andrew Bartholomeusz,Sebastian Allebi,Andrew Bartholomeusz,8-4,8,4,1,0,Completed,true,false,false
+AP016023,21 Nov 20,2,BLTC,Clarinda,No. 4,Ian Davey,Tung Lam,Tung Lam,3-8,3,8,0,1,Completed,true,false,false
+AP016031,28 Nov 20,3,Albert Park,Clarinda,No. 1,Billy Katelis,Tri Dinh,Tri Dinh,6-8,6,8,0,1,Completed,true,false,false
+AP016031,28 Nov 20,3,Albert Park,Clarinda,No. 2,Nostis Bobolas,Sebastian Allebi,Sebastian Allebi,2-8,2,8,0,1,Completed,true,false,false
+AP016031,28 Nov 20,3,Albert Park,Clarinda,No. 3,Dennis Klapas,Tung Lam,Tung Lam,3-8,3,8,0,1,Completed,true,false,false
+AP016031,28 Nov 20,3,Albert Park,Clarinda,No. 4,Bruce Easton,Tony Chim,Tony Chim,2-8,2,8,0,1,Completed,true,false,false
+AP016032,28 Nov 20,3,Maccabi,BLTC,No. 1,Arthur Vainbrant,Ryan Taylor,Arthur Vainbrant,8-6,8,6,1,0,Completed,true,true,false
+AP016032,28 Nov 20,3,Maccabi,BLTC,No. 2,Alan Liebowitz,Kurtis Bartholomeusz,Alan Liebowitz,8-5,8,5,1,0,Completed,true,false,false
+AP016032,28 Nov 20,3,Maccabi,BLTC,No. 3,Steven Kleytman,Andrew Bartholomeusz,Steven Kleytman,8-3,8,3,1,0,Completed,true,false,false
+AP016032,28 Nov 20,3,Maccabi,BLTC,No. 4,Adam Needleman,Ian Davey,Adam Needleman,8-4,8,4,1,0,Completed,true,false,false
+AP016033,28 Nov 20,3,Le Page,Dendy Park,No. 1,Julian Blainey,Steven Julian-Fraser,Julian Blainey,8-5,8,5,1,0,Completed,true,false,false
+AP016033,28 Nov 20,3,Le Page,Dendy Park,No. 2,Mark Petkoff,Rhys Nezza,Mark Petkoff,8-4,8,4,1,0,Completed,true,false,false
+AP016033,28 Nov 20,3,Le Page,Dendy Park,No. 3,Cameron Bach,Steve Bendel,Cameron Bach,8-5,8,5,1,0,Completed,true,false,false
+AP016033,28 Nov 20,3,Le Page,Dendy Park,No. 4,Adam Majdan,Andrew Lipson,Adam Majdan,8-6,8,6,1,0,Completed,true,true,false
+AP016041,05 Dec 20,4,Dendy Park,Albert Park,No. 1,Steven Julian-Fraser,Lachlan Jones,Steven Julian-Fraser,8-1,8,1,1,0,Completed,true,false,false
+AP016041,05 Dec 20,4,Dendy Park,Albert Park,No. 2,Steve Bendel,Bruce Easton,Steve Bendel,8-1,8,1,1,0,Completed,true,false,false
+AP016041,05 Dec 20,4,Dendy Park,Albert Park,No. 3,Anthony Murray,Paul Robinson,Anthony Murray,8-2,8,2,1,0,Completed,true,false,false
+AP016041,05 Dec 20,4,Dendy Park,Albert Park,No. 4,Andrew Martin,Alan Attwood,Andrew Martin,8-5,8,5,1,0,Completed,true,false,false
+AP016042,05 Dec 20,4,BLTC,Le Page,No. 1,Andrew Bartholomeusz,Julian Blainey,Julian Blainey,3-8,3,8,0,1,Completed,true,false,false
+AP016042,05 Dec 20,4,BLTC,Le Page,No. 2,Kurtis Bartholomeusz,Mark Petkoff,Mark Petkoff,0-8,0,8,0,1,Completed,true,false,false
+AP016042,05 Dec 20,4,BLTC,Le Page,No. 3,Ian Davey,Cameron Bach,Cameron Bach,1-8,1,8,0,1,Completed,true,false,false
+AP016042,05 Dec 20,4,BLTC,Le Page,No. 4,[Unnamed emergency — TROLS AP016042 home code 4],Jeoff Bach,Jeoff Bach,0-8,0,8,0,1,Completed,false,true,true
+AP016043,05 Dec 20,4,Clarinda,Maccabi,No. 1,Patrick Beraun,Dean Steinberg,Patrick Beraun,8-5,8,5,1,0,Completed,true,false,false
+AP016043,05 Dec 20,4,Clarinda,Maccabi,No. 2,Tri Dinh,Steven Kleytman,Steven Kleytman,6-8,6,8,0,1,Completed,true,false,false
+AP016043,05 Dec 20,4,Clarinda,Maccabi,No. 3,Sebastian Allebi,Nathan Needleman,Nathan Needleman,6-8,6,8,0,1,Completed,true,false,false
+AP016043,05 Dec 20,4,Clarinda,Maccabi,No. 4,Cory Hall,Lachie Zucher,Cory Hall,8-3,8,3,1,0,Completed,true,true,true
+AP016051,12 Dec 20,5,Albert Park,Maccabi,No. 1,Nick Hinneberg,Dean Steinberg,Nick Hinneberg,8-5,8,5,1,0,Completed,true,false,false
+AP016051,12 Dec 20,5,Albert Park,Maccabi,No. 2,Leon Katelis,Alan Liebowitz,Leon Katelis,8-7,8,7,1,0,Completed,true,false,false
+AP016051,12 Dec 20,5,Albert Park,Maccabi,No. 3,Billy Katelis,Adam Needleman,Adam Needleman,1-8,1,8,0,1,Completed,true,false,false
+AP016051,12 Dec 20,5,Albert Park,Maccabi,No. 4,Dennis Klapas,David Kenley,David Kenley,7-8,7,8,0,1,Completed,true,false,false
+AP016052,12 Dec 20,5,Dendy Park,BLTC,No. 1,Steve Bendel,Patrick Flood,Patrick Flood,6-8,6,8,0,1,Completed,true,false,true
+AP016052,12 Dec 20,5,Dendy Park,BLTC,No. 2,Anthony Murray,Kurtis Bartholomeusz,Anthony Murray,8-2,8,2,1,0,Completed,true,false,false
+AP016052,12 Dec 20,5,Dendy Park,BLTC,No. 3,Andrew Martin,Andrew Bartholomeusz,Andrew Bartholomeusz,4-8,4,8,0,1,Completed,true,false,false
+AP016052,12 Dec 20,5,Dendy Park,BLTC,No. 4,Andrew Lipson,Ian Davey,Andrew Lipson,8-6,8,6,1,0,Completed,true,false,false
+AP016053,12 Dec 20,5,Le Page,Clarinda,No. 1,Julian Blainey,Patrick Beraun,Julian Blainey,8-3,8,3,1,0,Completed,true,false,false
+AP016053,12 Dec 20,5,Le Page,Clarinda,No. 2,Mark Petkoff,Tri Dinh,Mark Petkoff,8-4,8,4,1,0,Completed,true,false,false
+AP016053,12 Dec 20,5,Le Page,Clarinda,No. 3,Lawrence Vlahos,Sebastian Allebi,Lawrence Vlahos,8-1,8,1,1,0,Completed,true,false,false
+AP016053,12 Dec 20,5,Le Page,Clarinda,No. 4,Cameron Bach,Tony Chim,Cameron Bach,8-0,8,0,1,0,Completed,true,false,false
+AP016061,30 Jan 21,6,BLTC,Albert Park,No. 1,Ryan Taylor,Nick Hinneberg,Nick Hinneberg,1-8,1,8,0,1,Completed,true,false,false
+AP016061,30 Jan 21,6,BLTC,Albert Park,No. 2,Kurtis Bartholomeusz,Leon Katelis,Leon Katelis,4-8,4,8,0,1,Completed,true,false,false
+AP016061,30 Jan 21,6,BLTC,Albert Park,No. 3,Andrew Bartholomeusz,Dominique Giraud,Andrew Bartholomeusz,8-2,8,2,1,0,Completed,true,false,false
+AP016061,30 Jan 21,6,BLTC,Albert Park,No. 4,Ian Davey,Alan Attwood,Alan Attwood,1-8,1,8,0,1,Completed,true,false,false
+AP016062,30 Jan 21,6,Dendy Park,Clarinda,No. 1,Steven Julian-Fraser,Patrick Beraun,Steven Julian-Fraser,8-5,8,5,1,0,Completed,true,false,false
+AP016062,30 Jan 21,6,Dendy Park,Clarinda,No. 2,Rhys Nezza,Tri Dinh,Rhys Nezza,8-2,8,2,1,0,Completed,true,false,false
+AP016062,30 Jan 21,6,Dendy Park,Clarinda,No. 3,Steve Bendel,Sebastian Allebi,Steve Bendel,8-2,8,2,1,0,Completed,true,false,false
+AP016062,30 Jan 21,6,Dendy Park,Clarinda,No. 4,Anthony Murray,Tung Lam,Anthony Murray,8-6,8,6,1,0,Completed,true,false,false
+AP016063,30 Jan 21,6,Le Page,Maccabi,No. 1,Luc Mascitti,Dean Steinberg,Luc Mascitti,8-0,8,0,1,0,Completed,true,true,false
+AP016063,30 Jan 21,6,Le Page,Maccabi,No. 2,Mark Petkoff,Warren Steinberg,Mark Petkoff,8-3,8,3,1,0,Completed,true,false,false
+AP016063,30 Jan 21,6,Le Page,Maccabi,No. 3,Lawrence Vlahos,Steven Kleytman,Lawrence Vlahos,8-3,8,3,1,0,Completed,true,false,false
+AP016063,30 Jan 21,6,Le Page,Maccabi,No. 4,Cameron Bach,David Kenley,Cameron Bach,8-3,8,3,1,0,Completed,true,false,false
+AP016071,06 Feb 21,7,Albert Park,Le Page,No. 1,Nick Hinneberg,Julian Blainey,Julian Blainey,7-8,7,8,0,1,Completed,true,false,false
+AP016071,06 Feb 21,7,Albert Park,Le Page,No. 2,Leon Katelis,Mark Petkoff,Mark Petkoff,1-8,1,8,0,1,Completed,true,false,false
+AP016071,06 Feb 21,7,Albert Park,Le Page,No. 3,Nostis Bobolas,Lawrence Vlahos,Lawrence Vlahos,7-8,7,8,0,1,Completed,true,false,false
+AP016071,06 Feb 21,7,Albert Park,Le Page,No. 4,Alan Attwood,Cameron Bach,Cameron Bach,0-8,0,8,0,1,Completed,true,false,false
+AP016072,06 Feb 21,7,Maccabi,Dendy Park,No. 1,Dean Steinberg,Steven Julian-Fraser,Dean Steinberg,8-5,8,5,1,0,Completed,true,false,false
+AP016072,06 Feb 21,7,Maccabi,Dendy Park,No. 2,Warren Steinberg,Rhys Nezza,Warren Steinberg,8-5,8,5,1,0,Completed,true,false,false
+AP016072,06 Feb 21,7,Maccabi,Dendy Park,No. 3,Steven Kleytman,Steve Bendel,Steve Bendel,5-8,5,8,0,1,Completed,true,false,false
+AP016072,06 Feb 21,7,Maccabi,Dendy Park,No. 4,Adam Needleman,[Unnamed emergency — TROLS AP016072 away code 4],Adam Needleman,8-0,8,0,1,0,Completed,false,false,true
+AP016073,06 Feb 21,7,Clarinda,BLTC,No. 1,Patrick Beraun,Ryan Taylor,Patrick Beraun,8-3,8,3,1,0,Completed,true,false,false
+AP016073,06 Feb 21,7,Clarinda,BLTC,No. 2,Tri Dinh,Kurtis Bartholomeusz,Tri Dinh,8-4,8,4,1,0,Completed,true,false,false
+AP016073,06 Feb 21,7,Clarinda,BLTC,No. 3,Sebastian Allebi,Andrew Bartholomeusz,Andrew Bartholomeusz,3-8,3,8,0,1,Completed,true,false,false
+AP016073,06 Feb 21,7,Clarinda,BLTC,No. 4,Tung Lam,Anthony Lawrence,Tung Lam,8-0,8,0,1,0,Completed,true,false,false
+AP016081,20 Feb 21,8,Clarinda,Albert Park,No. 1,Patrick Beraun,Leon Katelis,Patrick Beraun,8-2,8,2,1,0,Completed,true,false,false
+AP016081,20 Feb 21,8,Clarinda,Albert Park,No. 2,Tri Dinh,Dominique Giraud,Dominique Giraud,5-8,5,8,0,1,Completed,true,false,false
+AP016081,20 Feb 21,8,Clarinda,Albert Park,No. 3,Tung Lam,Nostis Bobolas,Tung Lam,8-5,8,5,1,0,Completed,true,false,false
+AP016081,20 Feb 21,8,Clarinda,Albert Park,No. 4,Tony Chim,Dennis Klapas,Tony Chim,8-4,8,4,1,0,Completed,true,false,false
+AP016082,20 Feb 21,8,BLTC,Maccabi,No. 1,Ryan Taylor,Dean Steinberg,Dean Steinberg,6-8,6,8,0,1,Completed,true,false,false
+AP016082,20 Feb 21,8,BLTC,Maccabi,No. 2,Kurtis Bartholomeusz,Warren Steinberg,Warren Steinberg,2-8,2,8,0,1,Completed,true,false,false
+AP016082,20 Feb 21,8,BLTC,Maccabi,No. 3,Andrew Bartholomeusz,Steven Kleytman,Steven Kleytman,1-8,1,8,0,1,Completed,true,false,false
+AP016082,20 Feb 21,8,BLTC,Maccabi,No. 4,Ian Davey,Adam Needleman,Adam Needleman,1-8,1,8,0,1,Completed,true,false,false
+AP016083,20 Feb 21,8,Dendy Park,Le Page,No. 1,Steven Julian-Fraser,Julian Blainey,Julian Blainey,3-8,3,8,0,1,Completed,true,false,false
+AP016083,20 Feb 21,8,Dendy Park,Le Page,No. 2,Rhys Nezza,Mark Petkoff,Mark Petkoff,3-8,3,8,0,1,Completed,true,false,false
+AP016083,20 Feb 21,8,Dendy Park,Le Page,No. 3,Steve Bendel,Lawrence Vlahos,Steve Bendel,8-5,8,5,1,0,Completed,true,false,false
+AP016083,20 Feb 21,8,Dendy Park,Le Page,No. 4,Andrew Martin,Cameron Bach,Cameron Bach,1-8,1,8,0,1,Completed,true,false,false
+AP016091,27 Feb 21,9,Albert Park,Dendy Park,No. 1,Leon Katelis,Steven Julian-Fraser,Steven Julian-Fraser,4-8,4,8,0,1,Completed,true,false,false
+AP016091,27 Feb 21,9,Albert Park,Dendy Park,No. 2,Neale Jolly,Rhys Nezza,Rhys Nezza,1-8,1,8,0,1,Completed,true,false,false
+AP016091,27 Feb 21,9,Albert Park,Dendy Park,No. 3,Bruce Easton,Steve Bendel,Steve Bendel,0-8,0,8,0,1,Completed,true,false,false
+AP016091,27 Feb 21,9,Albert Park,Dendy Park,No. 4,Alan Attwood,Anthony Murray,Anthony Murray,0-8,0,8,0,1,Completed,true,false,false
+AP016093,27 Feb 21,9,Maccabi,Clarinda,No. 1,Warren Steinberg,Patrick Beraun,Patrick Beraun,4-8,4,8,0,1,Completed,true,false,false
+AP016093,27 Feb 21,9,Maccabi,Clarinda,No. 2,Michael Selzer,Tony Chim,Michael Selzer,8-1,8,1,1,0,Completed,true,true,false
+AP016093,27 Feb 21,9,Maccabi,Clarinda,No. 3,Steven Kleytman,Sebastian Allebi,Steven Kleytman,8-2,8,2,1,0,Completed,true,false,false
+AP016093,27 Feb 21,9,Maccabi,Clarinda,No. 4,Adam Needleman,Tung Lam,Tung Lam,1-8,1,8,0,1,Completed,true,false,false
+AP016103,13 Mar 21,10,Clarinda,Le Page,No. 1,Patrick Beraun,Julian Blainey,Julian Blainey,4-8,4,8,0,1,Completed,true,false,false
+AP016103,13 Mar 21,10,Clarinda,Le Page,No. 2,Tri Dinh,Lawrence Vlahos,Lawrence Vlahos,2-8,2,8,0,1,Completed,true,false,false
+AP016103,13 Mar 21,10,Clarinda,Le Page,No. 3,Sebastian Allebi,Cameron Bach,Cameron Bach,0-8,0,8,0,1,Completed,true,false,false
+AP016103,13 Mar 21,10,Clarinda,Le Page,No. 4,Tung Lam,Adam Majdan,Tung Lam,8-4,8,4,1,0,Completed,true,false,true
+AP016321,,16,Le Page,Maccabi,No. 1,Julian Blainey,Dean Steinberg,Julian Blainey,8-0,8,0,1,0,Completed,true,false,false
+AP016321,,16,Le Page,Maccabi,No. 2,Mark Petkoff,Warren Steinberg,Mark Petkoff,8-7,8,7,1,0,Completed,true,false,false
+AP016321,,16,Le Page,Maccabi,No. 3,Lawrence Vlahos,Steven Kleytman,Lawrence Vlahos,8-5,8,5,1,0,Completed,true,false,false
+AP016321,,16,Le Page,Maccabi,No. 4,Cameron Bach,Adam Needleman,Cameron Bach,8-1,8,1,1,0,Completed,true,false,false

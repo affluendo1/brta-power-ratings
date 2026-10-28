@@ -1,0 +1,61 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP027012,02 Oct 10,1,regular,Round 1,Dandenong,Dendy Park,10,0,8,0,,,56,14,Completed,
+AP027013,02 Oct 10,1,regular,Round 1,MCC,Royal South Yarra,7,3,4,4,,,40,33,Completed,
+AP027014,02 Oct 10,1,regular,Round 1,Highmoor Uniting,Monash University,7,3,5,4,,,57,52,Completed,
+pending-ap027-r1-clarinda-bye,02 Oct 10,1,regular,Round 1,Clarinda,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP027021,09 Oct 10,2,regular,Round 2,Monash University,Clarinda,2,8,4,6,,,53,60,Completed,
+AP027023,09 Oct 10,2,regular,Round 2,Dendy Park,MCC,0,10,0,8,,,22,57,Completed,
+AP027024,09 Oct 10,2,regular,Round 2,Royal South Yarra,Highmoor Uniting,2,8,3,6,,,45,50,Completed,
+pending-ap027-r2-bye-dandenong,09 Oct 10,2,regular,Round 2,Bye,Dandenong,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP027032,16 Oct 10,3,regular,Round 3,Dandenong,Monash University,10,0,8,0,,,56,8,Completed,
+AP027034,16 Oct 10,3,regular,Round 3,Highmoor Uniting,Dendy Park,1,9,1,7,,,28,57,Completed,
+pending-ap027-r3-clarinda-royal-south-yarra,16 Oct 10,3,regular,Round 3,Clarinda,Royal South Yarra,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap027-r3-mcc-bye,16 Oct 10,3,regular,Round 3,MCC,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP027042,23 Oct 10,4,regular,Round 4,Royal South Yarra,Dandenong,3,7,4,5,,,38,48,Completed,
+AP027043,23 Oct 10,4,regular,Round 4,Monash University,MCC,2,8,2,6,,,33,50,Completed,
+pending-ap027-r4-bye-highmoor-uniting,23 Oct 10,4,regular,Round 4,Bye,Highmoor Uniting,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap027-r4-dendy-park-clarinda,23 Oct 10,4,regular,Round 4,Dendy Park,Clarinda,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP027051,06 Nov 10,5,regular,Round 5,MCC,Highmoor Uniting,9,1,7,1,,,55,24,Completed,
+AP027052,06 Nov 10,5,regular,Round 5,Monash University,Royal South Yarra,10,0,8,0,,,57,19,Completed,
+AP027054,06 Nov 10,5,regular,Round 5,Clarinda,Dandenong,2,8,2,6,,,34,49,Completed,
+pending-ap027-r5-dendy-park-bye,06 Nov 10,5,regular,Round 5,Dendy Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP027062,13 Nov 10,6,regular,Round 6,Highmoor Uniting,Clarinda,5.5,4.5,3,0,,,18,7,Completed,
+pending-ap027-r6-bye-monash-university,13 Nov 10,6,regular,Round 6,Bye,Monash University,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap027-r6-dandenong-mcc,13 Nov 10,6,regular,Round 6,Dandenong,MCC,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap027-r6-royal-south-yarra-dendy-park,13 Nov 10,6,regular,Round 6,Royal South Yarra,Dendy Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP027071,20 Nov 10,7,regular,Round 7,Clarinda,MCC,5,5,4,4,,,37,37,Completed,
+AP027072,20 Nov 10,7,regular,Round 7,Dandenong,Highmoor Uniting,10,0,8,0,,,57,15,Completed,
+AP027073,20 Nov 10,7,regular,Round 7,Monash University,Dendy Park,9,1,7,1,,,54,18,Completed,
+pending-ap027-r7-royal-south-yarra-bye,20 Nov 10,7,regular,Round 7,Royal South Yarra,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap027-r8-bye-clarinda,27 Nov 10,8,regular,Round 8,Bye,Clarinda,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap027-r8-dendy-park-dandenong,27 Nov 10,8,regular,Round 8,Dendy Park,Dandenong,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap027-r8-monash-university-highmoor-uniting,27 Nov 10,8,regular,Round 8,Monash University,Highmoor Uniting,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap027-r8-royal-south-yarra-mcc,27 Nov 10,8,regular,Round 8,Royal South Yarra,MCC,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP027091,04 Dec 10,9,regular,Round 9,Clarinda,Monash University,3,7,4,5,,,46,45,Completed,
+AP027093,04 Dec 10,9,regular,Round 9,MCC,Dendy Park,8,2,6,2,,,51,33,Completed,
+AP027094,04 Dec 10,9,regular,Round 9,Highmoor Uniting,Royal South Yarra,9,1,7,3,,,54,46,Completed,
+pending-ap027-r9-dandenong-bye,04 Dec 10,9,regular,Round 9,Dandenong,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP027101,11 Dec 10,10,regular,Round 10,Royal South Yarra,Clarinda,7,3,4,4,,,48,42,Completed,
+AP027102,11 Dec 10,10,regular,Round 10,Monash University,Dandenong,2,8,3,6,,,35,49,Completed,
+AP027104,11 Dec 10,10,regular,Round 10,Dendy Park,Highmoor Uniting,9,1,7,2,,,51,25,Completed,
+pending-ap027-r10-bye-mcc,11 Dec 10,10,regular,Round 10,Bye,MCC,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP027112,05 Feb 11,11,regular,Round 11,Dandenong,Royal South Yarra,8,2,6,2,,,47,27,Completed,
+pending-ap027-r11-clarinda-dendy-park,05 Feb 11,11,regular,Round 11,Clarinda,Dendy Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap027-r11-highmoor-uniting-bye,05 Feb 11,11,regular,Round 11,Highmoor Uniting,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap027-r11-mcc-monash-university,05 Feb 11,11,regular,Round 11,MCC,Monash University,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP027121,12 Feb 11,12,regular,Round 12,Highmoor Uniting,MCC,1,9,2,6,,,27,51,Completed,
+AP027122,12 Feb 11,12,regular,Round 12,Royal South Yarra,Monash University,3,7,4,5,,,43,48,Completed,
+AP027124,12 Feb 11,12,regular,Round 12,Dandenong,Clarinda,8,2,5,3,,,45,30,Completed,
+pending-ap027-r12-bye-dendy-park,12 Feb 11,12,regular,Round 12,Bye,Dendy Park,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP027131,19 Feb 11,13,regular,Round 13,MCC,Dandenong,2,8,3,6,,,46,56,Completed,
+AP027132,19 Feb 11,13,regular,Round 13,Clarinda,Highmoor Uniting,2,8,3,5,,,32,43,Completed,
+AP027133,19 Feb 11,13,regular,Round 13,Dendy Park,Royal South Yarra,2,8,3,6,,,35,47,Completed,
+pending-ap027-r13-monash-university-bye,19 Feb 11,13,regular,Round 13,Monash University,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP027141,26 Feb 11,14,regular,Round 14,MCC,Clarinda,8,2,6,3,,,59,39,Completed,
+AP027142,26 Feb 11,14,regular,Round 14,Highmoor Uniting,Dandenong,2,8,2,6,,,25,52,Completed,
+AP027143,26 Feb 11,14,regular,Round 14,Dendy Park,Monash University,3,7,4,4,,,33,36,Completed,
+pending-ap027-r14-bye-royal-south-yarra,26 Feb 11,14,regular,Round 14,Bye,Royal South Yarra,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP027301,,16,semi_final,Semi-final,Dandenong,MCC,8,2,6,3,,,50,41,Completed,
+AP027302,,16,semi_final,Semi-final,Monash University,Dendy Park,2,8,3,5,,,33,49,Completed,
+AP027311,,16,semi_final,Semi-final,MCC,Dendy Park,8,2,6,3,,,44,45,Completed,
+AP027321,,17,grand_final,Grand final · TROLS entry 2,Dandenong,MCC,9,1,7,2,,,59,30,Completed,

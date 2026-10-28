@@ -1,0 +1,47 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP015011,05 Oct 24,1,regular,Round 1,BLTC,Mordialloc,5,5,1,0,,,12,8,Completed,
+AP015012,05 Oct 24,1,regular,Round 1,East Malvern Navy,Tennis World,9,1,5,0,,,42,10,Completed,
+AP015013,05 Oct 24,1,regular,Round 1,Kooyong,East Malvern Blue,5,5,0,0,,,7,5,Completed,
+AP015021,12 Oct 24,2,regular,Round 2,East Malvern Blue,BLTC,7,3,5,4,,,56,50,Completed,
+AP015022,12 Oct 24,2,regular,Round 2,Tennis World,Kooyong,0,10,0,8,,,8,56,Completed,
+AP015023,12 Oct 24,2,regular,Round 2,Mordialloc,East Malvern Navy,2,8,3,5,,,41,52,Completed,
+AP015031,19 Oct 24,3,regular,Round 3,BLTC,East Malvern Navy,9,1,7,1,,,54,26,Completed,
+AP015032,19 Oct 24,3,regular,Round 3,Kooyong,Mordialloc,8,2,6,3,,,57,38,Completed,
+AP015033,19 Oct 24,3,regular,Round 3,East Malvern Blue,Tennis World,10,0,8,0,,,56,10,Completed,
+AP015041,26 Oct 24,4,regular,Round 4,Tennis World,BLTC,1,9,2,6,,,22,53,Completed,
+AP015042,26 Oct 24,4,regular,Round 4,Mordialloc,East Malvern Blue,1,9,2,7,,,36,61,Completed,
+AP015043,26 Oct 24,4,regular,Round 4,East Malvern Navy,Kooyong,3,7,4,4,,,42,50,Completed,
+AP015051,09 Nov 24,5,regular,Round 5,BLTC,Kooyong,0,10,0,8,,,23,56,Completed,
+AP015052,09 Nov 24,5,regular,Round 5,Tennis World,Mordialloc,3,7,4,5,,,43,47,Completed,
+AP015053,09 Nov 24,5,regular,Round 5,East Malvern Blue,East Malvern Navy,2,8,4,5,,,42,53,Completed,
+AP015061,16 Nov 24,6,regular,Round 6,Mordialloc,BLTC,9,1,7,1,,,49,30,Completed,
+AP015062,16 Nov 24,6,regular,Round 6,Tennis World,East Malvern Navy,0,10,0,8,,,24,56,Completed,
+AP015063,16 Nov 24,6,regular,Round 6,East Malvern Blue,Kooyong,3,7,4,5,,,43,54,Completed,
+pending-ap015-r7-bltc-east-malvern-blue,23 Nov 24,7,regular,Round 7,BLTC,East Malvern Blue,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap015-r7-east-malvern-navy-mordialloc,23 Nov 24,7,regular,Round 7,East Malvern Navy,Mordialloc,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap015-r7-kooyong-tennis-world,23 Nov 24,7,regular,Round 7,Kooyong,Tennis World,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap015-r8-east-malvern-navy-bltc,30 Nov 24,8,regular,Round 8,East Malvern Navy,BLTC,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap015-r8-mordialloc-kooyong,30 Nov 24,8,regular,Round 8,Mordialloc,Kooyong,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap015-r8-tennis-world-east-malvern-blue,30 Nov 24,8,regular,Round 8,Tennis World,East Malvern Blue,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP015091,07 Dec 24,9,regular,Round 9,BLTC,Tennis World,8,2,5,3,,,45,33,Completed,
+AP015092,07 Dec 24,9,regular,Round 9,East Malvern Blue,Mordialloc,8,2,6,2,,,53,28,Completed,
+AP015093,07 Dec 24,9,regular,Round 9,Kooyong,East Malvern Navy,8,2,6,2,,,47,36,Completed,
+AP015101,14 Dec 24,10,regular,Round 10,Kooyong,BLTC,2,8,3,5,,,50,41,Completed,
+AP015102,14 Dec 24,10,regular,Round 10,Mordialloc,Tennis World,9,1,7,2,,,60,28,Completed,
+AP015103,14 Dec 24,10,regular,Round 10,East Malvern Navy,East Malvern Blue,1,9,1,7,,,20,54,Completed,
+AP015111,01 Feb 25,11,regular,Round 11,BLTC,Mordialloc,3,7,4,5,,,42,53,Completed,
+AP015112,01 Feb 25,11,regular,Round 11,East Malvern Navy,Tennis World,2,8,3,4,,,29,36,Completed,
+AP015113,01 Feb 25,11,regular,Round 11,Kooyong,East Malvern Blue,7,3,5,3,,,35,38,Completed,
+AP015121,08 Feb 25,12,regular,Round 12,East Malvern Blue,BLTC,2,8,3,6,,,45,51,Completed,
+AP015122,08 Feb 25,12,regular,Round 12,Tennis World,Kooyong,9,1,7,1,,,51,20,Completed,
+AP015123,08 Feb 25,12,regular,Round 12,Mordialloc,East Malvern Navy,9,1,7,1,,,54,29,Completed,
+AP015131,15 Feb 25,13,regular,Round 13,BLTC,East Malvern Navy,5,5,0,0,,,12,10,Completed,
+AP015132,15 Feb 25,13,regular,Round 13,Kooyong,Mordialloc,2,8,4,5,,,42,55,Completed,
+AP015133,15 Feb 25,13,regular,Round 13,East Malvern Blue,Tennis World,8,2,4,1,,,33,10,Completed,
+pending-ap015-r14-east-malvern-navy-kooyong,22 Feb 25,14,regular,Round 14,East Malvern Navy,Kooyong,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap015-r14-mordialloc-east-malvern-blue,22 Feb 25,14,regular,Round 14,Mordialloc,East Malvern Blue,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap015-r14-tennis-world-bltc,22 Feb 25,14,regular,Round 14,Tennis World,BLTC,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP015151,01 Mar 25,15,regular,Round 15,BLTC,Kooyong,1,9,1,7,,,30,48,Completed,
+AP015152,01 Mar 25,15,regular,Round 15,Tennis World,Mordialloc,1,9,1,7,,,29,56,Completed,
+AP015153,01 Mar 25,15,regular,Round 15,East Malvern Blue,East Malvern Navy,8,2,6,2,,,48,37,Completed,
+AP015321,,16,grand_final,Grand final · TROLS entry 2,Kooyong,East Malvern Blue,1,9,0,4,,,8,32,Completed,

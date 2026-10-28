@@ -1,0 +1,105 @@
+{
+  "asset_id": "AP24-AP004",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 11/12",
+  "season_id": "AP24",
+  "season_label": "Summer 11/12",
+  "source_section_code": "AP004",
+  "section_label": "Mens Rubbers 1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Patterson Lakes",
+      "wins": 10,
+      "points": 85.5,
+      "percentage": 181.47,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Kooyong",
+      "wins": 6,
+      "points": 67,
+      "percentage": 117.19,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Parkdale",
+      "wins": 4,
+      "points": 55,
+      "percentage": 100.22,
+      "marker": "R"
+    },
+    {
+      "position": 4,
+      "team": "Albert Park",
+      "wins": 5,
+      "points": 54.5,
+      "percentage": 100.0,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Glen Huntly",
+      "wins": 5,
+      "points": 53,
+      "percentage": 95.15,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Mordialloc",
+      "wins": 5,
+      "points": 53,
+      "percentage": 85.17,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "St Pats Mentone",
+      "wins": 5,
+      "points": 50,
+      "percentage": 81.82,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "Black Rock",
+      "wins": 2,
+      "points": 30,
+      "percentage": 69.4,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP24-AP004",
+  "fixtures": 60,
+  "completed_fixtures": 51,
+  "draw_fixtures": 60,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 196,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP004064 doubles No. 2: '6-7 3-3'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

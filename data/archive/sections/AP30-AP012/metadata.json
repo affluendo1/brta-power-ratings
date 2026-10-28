@@ -1,0 +1,98 @@
+{
+  "asset_id": "AP30-AP012",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 14/15",
+  "season_id": "AP30",
+  "season_label": "Summer 14/15",
+  "source_section_code": "AP012",
+  "section_label": "Ladies S/D 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Albert Reserve 2",
+      "wins": 10,
+      "points": 98,
+      "percentage": 166.76,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Monash University",
+      "wins": 7,
+      "points": 75,
+      "percentage": 115.94,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "BLTC",
+      "wins": 7,
+      "points": 68,
+      "percentage": 104.52,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Dendy Park",
+      "wins": 6,
+      "points": 64,
+      "percentage": 116.24,
+      "marker": "R"
+    },
+    {
+      "position": 5,
+      "team": "Albert Reserve 1",
+      "wins": 5,
+      "points": 58,
+      "percentage": 98.45,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Royal South Yarra",
+      "wins": 2,
+      "points": 34,
+      "percentage": 73.44,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "MCC",
+      "wins": 2,
+      "points": 23,
+      "percentage": 59.88,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP30-AP012",
+  "fixtures": 60,
+  "completed_fixtures": 46,
+  "draw_fixtures": 60,
+  "singles_rubbers": 180,
+  "doubles_rubbers": 90,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP012131 doubles No. 1: '0-4'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP012311 doubles No. 1: '4-1'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

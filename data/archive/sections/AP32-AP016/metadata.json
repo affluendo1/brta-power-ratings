@@ -1,0 +1,105 @@
+{
+  "asset_id": "AP32-AP016",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 15/16",
+  "season_id": "AP32",
+  "season_label": "Summer 15/16",
+  "source_section_code": "AP016",
+  "section_label": "Mens S/D 3",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Royal South Yarra",
+      "wins": 9,
+      "points": 99,
+      "percentage": 145.82,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Mt Eliza",
+      "wins": 9,
+      "points": 91,
+      "percentage": 123.94,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Highmoor Uniting",
+      "wins": 11,
+      "points": 86,
+      "percentage": 110.52,
+      "marker": "R"
+    },
+    {
+      "position": 4,
+      "team": "Old Scotch",
+      "wins": 7,
+      "points": 78,
+      "percentage": 103.13,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Kooyong",
+      "wins": 7,
+      "points": 76,
+      "percentage": 110.55,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Maccabi",
+      "wins": 6,
+      "points": 67,
+      "percentage": 97.52,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "BLTC",
+      "wins": 1,
+      "points": 54,
+      "percentage": 94.15,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "Mornington",
+      "wins": 0,
+      "points": 9,
+      "percentage": 43.23,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP32-AP016",
+  "fixtures": 59,
+  "completed_fixtures": 54,
+  "draw_fixtures": 59,
+  "singles_rubbers": 216,
+  "doubles_rubbers": 106,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP016302 doubles No. 2: '3-6 2-1'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

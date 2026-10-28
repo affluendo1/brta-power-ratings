@@ -1,0 +1,79 @@
+{
+  "asset_id": "AP47-AP020",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 23/24",
+  "season_id": "AP47",
+  "season_label": "Summer 23/24",
+  "source_section_code": "AP020",
+  "section_label": "Mens Rubs 1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Kooyong",
+      "wins": 8,
+      "points": 73,
+      "percentage": 169.23,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "Elwood Blue",
+      "wins": 8,
+      "points": 68,
+      "percentage": 150.18,
+      "marker": "P"
+    },
+    {
+      "position": 3,
+      "team": "Albert Park",
+      "wins": 5,
+      "points": 47,
+      "percentage": 95.45,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Sth Murrumbeena",
+      "wins": 3,
+      "points": 41,
+      "percentage": 88.67,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Hurlingham Park",
+      "wins": 0,
+      "points": 11,
+      "percentage": 55.71,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP47-AP020",
+  "fixtures": 46,
+  "completed_fixtures": 25,
+  "draw_fixtures": 57,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 100,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

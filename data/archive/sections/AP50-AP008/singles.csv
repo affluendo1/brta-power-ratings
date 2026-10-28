@@ -1,0 +1,175 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP008011,03 May 25,1,Clarinda,Mentone,No. 1,David James,Owen Richardson,David James,8-2,8,2,1,0,Completed,true,false,false
+AP008011,03 May 25,1,Clarinda,Mentone,No. 2,Tri Dinh,Eric Strelnikov,Tri Dinh,8-5,8,5,1,0,Completed,true,false,false
+AP008011,03 May 25,1,Clarinda,Mentone,No. 3,Sher Sidhu,Robert Proudfoot,Sher Sidhu,8-1,8,1,1,0,Completed,true,false,false
+AP008011,03 May 25,1,Clarinda,Mentone,No. 4,Vincent Wen,Letheri Tsitsiras,Vincent Wen,8-1,8,1,1,0,Completed,true,false,true
+AP008012,03 May 25,1,Caulfield Rec,Chadstone,No. 1,Ian Eddington,Ran Li,Ran Li,0-8,0,8,0,1,Completed,true,false,true
+AP008012,03 May 25,1,Caulfield Rec,Chadstone,No. 2,Peter Fekete,Greg Piper,Greg Piper,3-8,3,8,0,1,Completed,true,true,false
+AP008012,03 May 25,1,Caulfield Rec,Chadstone,No. 3,Tiago Caldore,Sam Thompson,Tiago Caldore,8-1,8,1,1,0,Completed,true,false,true
+AP008012,03 May 25,1,Caulfield Rec,Chadstone,No. 4,Miguel Sison,Laura Mazzarella,Laura Mazzarella,2-8,2,8,0,1,Completed,true,false,false
+AP008013,03 May 25,1,Highmoor Uniting,Sandringham,No. 1,Richard Elvins,Jason Clarke,Jason Clarke,2-8,2,8,0,1,Completed,true,false,false
+AP008013,03 May 25,1,Highmoor Uniting,Sandringham,No. 2,Esmatullah Niazi,Craig Shwerdt,Craig Shwerdt,1-8,1,8,0,1,Completed,true,false,false
+AP008013,03 May 25,1,Highmoor Uniting,Sandringham,No. 3,Michael Lynch,Scott Farndell,Scott Farndell,6-8,6,8,0,1,Completed,true,false,false
+AP008013,03 May 25,1,Highmoor Uniting,Sandringham,No. 4,Charlie Daalder,Paul Woff,Charlie Daalder,8-6,8,6,1,0,Completed,true,false,false
+AP008021,10 May 25,2,Sandringham,Clarinda,No. 1,Jason Clarke,David James,David James,7-8,7,8,0,1,Completed,true,false,false
+AP008021,10 May 25,2,Sandringham,Clarinda,No. 2,Craig Shwerdt,Tri Dinh,Tri Dinh,6-8,6,8,0,1,Completed,true,false,false
+AP008021,10 May 25,2,Sandringham,Clarinda,No. 3,Mark Creelman,Roland Detterbeck,Mark Creelman,8-6,8,6,1,0,Completed,true,false,false
+AP008021,10 May 25,2,Sandringham,Clarinda,No. 4,Scott Farndell,Vincent Wen,Vincent Wen,5-8,5,8,0,1,Completed,true,false,false
+AP008022,10 May 25,2,Chadstone,Highmoor Uniting,No. 1,Craig Jendra,Richard Elvins,Craig Jendra,8-3,8,3,1,0,Completed,true,false,false
+AP008022,10 May 25,2,Chadstone,Highmoor Uniting,No. 2,Greg Piper,Ben Campbell,Ben Campbell,4-8,4,8,0,1,Completed,true,false,false
+AP008022,10 May 25,2,Chadstone,Highmoor Uniting,No. 3,Laura Mazzarella,Charlie Daalder,Charlie Daalder,4-8,4,8,0,1,Completed,true,false,false
+AP008022,10 May 25,2,Chadstone,Highmoor Uniting,No. 4,Ivana Bogut,Vikram Jangra,Vikram Jangra,5-8,5,8,0,1,Completed,true,false,false
+AP008031,17 May 25,3,Clarinda,Caulfield Rec,No. 1,Roland Detterbeck,Peter Fekete,,2-3,2,3,0,1,Unfinished,false,false,true
+AP008031,17 May 25,3,Clarinda,Caulfield Rec,No. 2,Vincent Wen,Con Fabiotis,Con Fabiotis,1-8,1,8,0,1,Completed,true,false,false
+AP008033,17 May 25,3,Sandringham,Chadstone,No. 1,Jason Clarke,Craig Jendra,Craig Jendra,4-8,4,8,0,1,Completed,true,false,false
+AP008033,17 May 25,3,Sandringham,Chadstone,No. 2,Craig Shwerdt,Greg Piper,Craig Shwerdt,8-3,8,3,1,0,Completed,true,false,false
+AP008033,17 May 25,3,Sandringham,Chadstone,No. 3,Mark Creelman,Ben Martin,Mark Creelman,8-0,8,0,1,0,Completed,true,false,false
+AP008033,17 May 25,3,Sandringham,Chadstone,No. 4,Scott Farndell,Peter Sullivan,Scott Farndell,8-6,8,6,1,0,Completed,true,false,true
+AP008041,24 May 25,4,Chadstone,Clarinda,No. 1,Craig Jendra,David James,David James,5-8,5,8,0,1,Completed,true,false,false
+AP008041,24 May 25,4,Chadstone,Clarinda,No. 2,Max Ingram,Tri Dinh,Tri Dinh,2-8,2,8,0,1,Completed,true,false,false
+AP008041,24 May 25,4,Chadstone,Clarinda,No. 3,Greg Piper,Roland Detterbeck,Greg Piper,8-6,8,6,1,0,Completed,true,false,false
+AP008041,24 May 25,4,Chadstone,Clarinda,No. 4,Ivana Bogut,Vincent Wen,Vincent Wen,3-8,3,8,0,1,Completed,true,false,false
+AP008042,24 May 25,4,Mentone,Sandringham,No. 1,Owen Richardson,Jason Clarke,Jason Clarke,1-8,1,8,0,1,Completed,true,false,false
+AP008042,24 May 25,4,Mentone,Sandringham,No. 2,Matt Williams,Craig Shwerdt,Craig Shwerdt,2-8,2,8,0,1,Completed,true,false,false
+AP008042,24 May 25,4,Mentone,Sandringham,No. 3,Robert Proudfoot,Mark Creelman,Mark Creelman,5-8,5,8,0,1,Completed,true,false,false
+AP008042,24 May 25,4,Mentone,Sandringham,No. 4,Jack Forster,Scott Farndell,Scott Farndell,4-8,4,8,0,1,Completed,true,false,false
+AP008043,24 May 25,4,Caulfield Rec,Highmoor Uniting,No. 1,Ian Eddington,Esmatullah Niazi,Ian Eddington,8-1,8,1,1,0,Completed,true,false,false
+AP008043,24 May 25,4,Caulfield Rec,Highmoor Uniting,No. 2,Peter Fekete,Michael Lynch,Peter Fekete,8-7,8,7,1,0,Completed,true,true,false
+AP008043,24 May 25,4,Caulfield Rec,Highmoor Uniting,No. 3,Con Fabiotis,Vikram Jangra,Con Fabiotis,8-2,8,2,1,0,Completed,true,false,false
+AP008043,24 May 25,4,Caulfield Rec,Highmoor Uniting,No. 4,Miguel Sison,Tyson Allison,Tyson Allison,7-8,7,8,0,1,Completed,true,false,false
+AP008051,31 May 25,5,Clarinda,Highmoor Uniting,No. 1,David James,Esmatullah Niazi,David James,8-3,8,3,1,0,Completed,true,false,false
+AP008051,31 May 25,5,Clarinda,Highmoor Uniting,No. 2,Tri Dinh,Michael Lynch,Tri Dinh,8-3,8,3,1,0,Completed,true,false,false
+AP008051,31 May 25,5,Clarinda,Highmoor Uniting,No. 3,Vincent Wen,Charlie Daalder,Vincent Wen,8-3,8,3,1,0,Completed,true,false,false
+AP008051,31 May 25,5,Clarinda,Highmoor Uniting,No. 4,Bryce Hall,Vikram Jangra,Bryce Hall,8-6,8,6,1,0,Completed,true,false,false
+AP008052,31 May 25,5,Chadstone,Mentone,No. 1,Craig Jendra,Owen Richardson,Craig Jendra,8-2,8,2,1,0,Completed,true,false,false
+AP008052,31 May 25,5,Chadstone,Mentone,No. 2,Ben Martin,Eric Strelnikov,Eric Strelnikov,6-8,6,8,0,1,Completed,true,false,false
+AP008052,31 May 25,5,Chadstone,Mentone,No. 3,John Grant,Robert Proudfoot,Robert Proudfoot,7-8,7,8,0,1,Completed,true,true,false
+AP008052,31 May 25,5,Chadstone,Mentone,No. 4,Ivana Bogut,Josh Tesler,Josh Tesler,1-8,1,8,0,1,Completed,true,false,false
+AP008053,31 May 25,5,Sandringham,Caulfield Rec,No. 1,Jason Clarke,Ian Eddington,Jason Clarke,8-1,8,1,1,0,Completed,true,false,false
+AP008053,31 May 25,5,Sandringham,Caulfield Rec,No. 2,Craig Shwerdt,Tiago Caldore,Craig Shwerdt,8-2,8,2,1,0,Completed,true,false,false
+AP008053,31 May 25,5,Sandringham,Caulfield Rec,No. 3,Mark Creelman,Con Fabiotis,Mark Creelman,8-4,8,4,1,0,Completed,true,false,false
+AP008053,31 May 25,5,Sandringham,Caulfield Rec,No. 4,Steuart Roe,Miguel Sison,Steuart Roe,8-4,8,4,1,0,Completed,true,false,false
+AP008061,14 Jun 25,6,Mentone,Clarinda,No. 1,Owen Richardson,David James,David James,0-8,0,8,0,1,Completed,true,false,false
+AP008061,14 Jun 25,6,Mentone,Clarinda,No. 2,Eric Strelnikov,Tri Dinh,Tri Dinh,6-8,6,8,0,1,Completed,true,false,false
+AP008061,14 Jun 25,6,Mentone,Clarinda,No. 3,Josh Tesler,Roland Detterbeck,Josh Tesler,8-6,8,6,1,0,Completed,true,false,false
+AP008061,14 Jun 25,6,Mentone,Clarinda,No. 4,Jack Forster,Vincent Wen,Vincent Wen,4-8,4,8,0,1,Completed,true,false,false
+AP008062,14 Jun 25,6,Chadstone,Caulfield Rec,No. 1,Max Ingram,Tiago Caldore,Tiago Caldore,3-8,3,8,0,1,Completed,true,false,false
+AP008062,14 Jun 25,6,Chadstone,Caulfield Rec,No. 2,Greg Piper,Harsha Limay,Greg Piper,8-2,8,2,1,0,Completed,true,false,false
+AP008062,14 Jun 25,6,Chadstone,Caulfield Rec,No. 3,Laura Mazzarella,Ian Eddington,Ian Eddington,4-8,4,8,0,1,Completed,true,false,false
+AP008062,14 Jun 25,6,Chadstone,Caulfield Rec,No. 4,Ivana Bogut,Con Fabiotis,Con Fabiotis,0-8,0,8,0,1,Completed,true,false,false
+AP008063,14 Jun 25,6,Sandringham,Highmoor Uniting,No. 1,Jason Clarke,Ben Campbell,Jason Clarke,8-1,8,1,1,0,Completed,true,false,false
+AP008063,14 Jun 25,6,Sandringham,Highmoor Uniting,No. 2,Paul Claxton,Esmatullah Niazi,Esmatullah Niazi,0-8,0,8,0,1,Completed,true,false,false
+AP008063,14 Jun 25,6,Sandringham,Highmoor Uniting,No. 3,Craig Shwerdt,Charlie Daalder,Craig Shwerdt,8-7,8,7,1,0,Completed,true,false,false
+AP008063,14 Jun 25,6,Sandringham,Highmoor Uniting,No. 4,Mark Creelman,Tyson Allison,Mark Creelman,8-0,8,0,1,0,Completed,true,false,false
+AP008071,21 Jun 25,7,Clarinda,Sandringham,No. 1,David James,Paul Claxton,David James,8-5,8,5,1,0,Completed,true,false,false
+AP008071,21 Jun 25,7,Clarinda,Sandringham,No. 2,Tri Dinh,Craig Shwerdt,Tri Dinh,8-4,8,4,1,0,Completed,true,false,false
+AP008071,21 Jun 25,7,Clarinda,Sandringham,No. 3,Roland Detterbeck,Mark Creelman,Mark Creelman,3-8,3,8,0,1,Completed,true,false,false
+AP008071,21 Jun 25,7,Clarinda,Sandringham,No. 4,Vincent Wen,Scott Farndell,Scott Farndell,5-8,5,8,0,1,Completed,true,false,false
+AP008072,21 Jun 25,7,Highmoor Uniting,Chadstone,No. 1,Tony McCulloch,Craig Jendra,Craig Jendra,1-8,1,8,0,1,Completed,true,true,false
+AP008072,21 Jun 25,7,Highmoor Uniting,Chadstone,No. 2,Michael Lynch,Max Ingram,Michael Lynch,8-4,8,4,1,0,Completed,true,false,false
+AP008072,21 Jun 25,7,Highmoor Uniting,Chadstone,No. 3,Charlie Daalder,Greg Piper,Greg Piper,3-8,3,8,0,1,Completed,true,false,false
+AP008072,21 Jun 25,7,Highmoor Uniting,Chadstone,No. 4,Vikram Jangra,Ivana Bogut,Vikram Jangra,8-5,8,5,1,0,Completed,true,false,false
+AP008073,21 Jun 25,7,Caulfield Rec,Mentone,No. 1,Tiago Caldore,Owen Richardson,Owen Richardson,5-8,5,8,0,1,Completed,true,false,false
+AP008073,21 Jun 25,7,Caulfield Rec,Mentone,No. 2,Harsha Limay,Eric Strelnikov,Harsha Limay,8-3,8,3,1,0,Completed,true,false,false
+AP008073,21 Jun 25,7,Caulfield Rec,Mentone,No. 3,Ian Eddington,Robert Proudfoot,Robert Proudfoot,6-8,6,8,0,1,Completed,true,false,false
+AP008073,21 Jun 25,7,Caulfield Rec,Mentone,No. 4,Con Fabiotis,Jack Forster,Con Fabiotis,8-4,8,4,1,0,Completed,true,false,false
+AP008081,28 Jun 25,8,Caulfield Rec,Clarinda,No. 1,Tiago Caldore,David James,David James,1-8,1,8,0,1,Completed,true,false,false
+AP008081,28 Jun 25,8,Caulfield Rec,Clarinda,No. 2,Ian Eddington,Sher Sidhu,Sher Sidhu,4-8,4,8,0,1,Completed,true,false,false
+AP008081,28 Jun 25,8,Caulfield Rec,Clarinda,No. 3,Con Fabiotis,Veer Sidhu,Veer Sidhu,7-8,7,8,0,1,Completed,true,false,false
+AP008081,28 Jun 25,8,Caulfield Rec,Clarinda,No. 4,Miguel Sison,Bryce Hall,Bryce Hall,1-8,1,8,0,1,Completed,true,false,false
+AP008082,28 Jun 25,8,Mentone,Highmoor Uniting,No. 1,Paris Stenhouse,Tony McCulloch,Tony McCulloch,3-8,3,8,0,1,Completed,true,true,true
+AP008082,28 Jun 25,8,Mentone,Highmoor Uniting,No. 2,Eric Strelnikov,Esmatullah Niazi,Eric Strelnikov,8-6,8,6,1,0,Completed,true,false,false
+AP008082,28 Jun 25,8,Mentone,Highmoor Uniting,No. 3,Robert Proudfoot,Michael Lynch,Michael Lynch,7-8,7,8,0,1,Completed,true,false,false
+AP008082,28 Jun 25,8,Mentone,Highmoor Uniting,No. 4,Josh Tesler,Charlie Daalder,Charlie Daalder,5-8,5,8,0,1,Completed,true,false,false
+AP008083,28 Jun 25,8,Chadstone,Sandringham,No. 1,Craig Jendra,Craig Shwerdt,Craig Jendra,8-1,8,1,1,0,Completed,true,false,false
+AP008083,28 Jun 25,8,Chadstone,Sandringham,No. 2,Max Ingram,Mark Creelman,Mark Creelman,5-8,5,8,0,1,Completed,true,false,false
+AP008083,28 Jun 25,8,Chadstone,Sandringham,No. 3,Laura Mazzarella,Steuart Roe,Steuart Roe,6-8,6,8,0,1,Completed,true,false,false
+AP008083,28 Jun 25,8,Chadstone,Sandringham,No. 4,Peter Sullivan,Scott Farndell,Scott Farndell,6-8,6,8,0,1,Completed,true,true,false
+AP008091,05 Jul 25,9,Clarinda,Chadstone,No. 1,David James,Craig Jendra,David James,8-5,8,5,1,0,Completed,true,false,false
+AP008091,05 Jul 25,9,Clarinda,Chadstone,No. 2,Vincent Wen,Robert Datson,Robert Datson,3-8,3,8,0,1,Completed,true,false,true
+AP008091,05 Jul 25,9,Clarinda,Chadstone,No. 3,Roland Detterbeck,Greg Piper,Roland Detterbeck,8-3,8,3,1,0,Completed,true,false,false
+AP008091,05 Jul 25,9,Clarinda,Chadstone,No. 4,Steven Gu,Laura Mazzarella,Laura Mazzarella,2-8,2,8,0,1,Completed,true,true,false
+AP008092,05 Jul 25,9,Sandringham,Mentone,No. 1,Paul Claxton,Eric Strelnikov,Paul Claxton,8-4,8,4,1,0,Completed,true,false,false
+AP008092,05 Jul 25,9,Sandringham,Mentone,No. 2,Craig Shwerdt,Robert Proudfoot,Craig Shwerdt,8-0,8,0,1,0,Completed,true,false,false
+AP008092,05 Jul 25,9,Sandringham,Mentone,No. 3,Steuart Roe,Josh Tesler,Josh Tesler,5-8,5,8,0,1,Completed,true,false,false
+AP008092,05 Jul 25,9,Sandringham,Mentone,No. 4,Scott Farndell,Jack Forster,Scott Farndell,8-2,8,2,1,0,Completed,true,false,false
+AP008093,05 Jul 25,9,Highmoor Uniting,Caulfield Rec,No. 1,Nick Martin,Tiago Caldore,Nick Martin,8-2,8,2,1,0,Completed,true,true,false
+AP008093,05 Jul 25,9,Highmoor Uniting,Caulfield Rec,No. 2,Michael Lynch,Ian Eddington,Michael Lynch,8-3,8,3,1,0,Completed,true,false,false
+AP008093,05 Jul 25,9,Highmoor Uniting,Caulfield Rec,No. 3,Charlie Daalder,Con Fabiotis,Charlie Daalder,8-7,8,7,1,0,Completed,true,false,false
+AP008093,05 Jul 25,9,Highmoor Uniting,Caulfield Rec,No. 4,Neil Bellamy,Miguel Sison,Neil Bellamy,8-3,8,3,1,0,Completed,true,true,false
+AP008101,19 Jul 25,10,Highmoor Uniting,Clarinda,No. 1,Callum Elvins,David James,David James,0-8,0,8,0,1,Completed,true,false,false
+AP008101,19 Jul 25,10,Highmoor Uniting,Clarinda,No. 2,Richard Elvins,Vincent Wen,Vincent Wen,3-8,3,8,0,1,Completed,true,false,false
+AP008101,19 Jul 25,10,Highmoor Uniting,Clarinda,No. 3,Ben Campbell,Roland Detterbeck,Roland Detterbeck,7-8,7,8,0,1,Completed,true,false,false
+AP008101,19 Jul 25,10,Highmoor Uniting,Clarinda,No. 4,Charlie Daalder,Bryce Hall,Charlie Daalder,8-1,8,1,1,0,Completed,true,false,false
+AP008102,19 Jul 25,10,Mentone,Chadstone,No. 1,Owen Richardson,Craig Jendra,Craig Jendra,1-8,1,8,0,1,Completed,true,false,false
+AP008102,19 Jul 25,10,Mentone,Chadstone,No. 2,Matt Williams,Max Ingram,Max Ingram,6-8,6,8,0,1,Completed,true,false,false
+AP008102,19 Jul 25,10,Mentone,Chadstone,No. 3,Robert Proudfoot,Greg Piper,Greg Piper,2-8,2,8,0,1,Completed,true,false,false
+AP008102,19 Jul 25,10,Mentone,Chadstone,No. 4,Jack Forster,Laura Mazzarella,Jack Forster,8-7,8,7,1,0,Completed,true,false,false
+AP008103,19 Jul 25,10,Caulfield Rec,Sandringham,No. 1,Gary Slapar,Paul Claxton,Paul Claxton,6-8,6,8,0,1,Completed,true,true,false
+AP008103,19 Jul 25,10,Caulfield Rec,Sandringham,No. 2,Mark Findlay,Jason Clarke,Jason Clarke,4-8,4,8,0,1,Completed,true,false,false
+AP008103,19 Jul 25,10,Caulfield Rec,Sandringham,No. 3,Ian Eddington,Craig Shwerdt,Ian Eddington,8-3,8,3,1,0,Completed,true,false,false
+AP008103,19 Jul 25,10,Caulfield Rec,Sandringham,No. 4,Con Fabiotis,Mark Creelman,Mark Creelman,3-8,3,8,0,1,Completed,true,false,false
+AP008111,26 Jul 25,11,Clarinda,Mentone,No. 1,David James,Owen Richardson,David James,8-2,8,2,1,0,Completed,true,false,false
+AP008111,26 Jul 25,11,Clarinda,Mentone,No. 2,Tri Dinh,Matt Williams,Tri Dinh,8-0,8,0,1,0,Completed,true,false,false
+AP008111,26 Jul 25,11,Clarinda,Mentone,No. 3,Sher Sidhu,Eric Strelnikov,Sher Sidhu,8-4,8,4,1,0,Completed,true,false,false
+AP008111,26 Jul 25,11,Clarinda,Mentone,No. 4,Veer Sidhu,Robert Proudfoot,Veer Sidhu,8-0,8,0,1,0,Completed,true,false,false
+AP008112,26 Jul 25,11,Caulfield Rec,Chadstone,No. 1,Tiago Caldore,Craig Jendra,Craig Jendra,4-8,4,8,0,1,Completed,true,false,false
+AP008112,26 Jul 25,11,Caulfield Rec,Chadstone,No. 2,Mark Findlay,Greg Piper,Mark Findlay,8-5,8,5,1,0,Completed,true,false,false
+AP008112,26 Jul 25,11,Caulfield Rec,Chadstone,No. 3,Ian Eddington,Laura Mazzarella,Ian Eddington,8-2,8,2,1,0,Completed,true,false,false
+AP008112,26 Jul 25,11,Caulfield Rec,Chadstone,No. 4,Con Fabiotis,Ivana Bogut,Con Fabiotis,8-0,8,0,1,0,Completed,true,false,false
+AP008113,26 Jul 25,11,Highmoor Uniting,Sandringham,No. 1,Callum Elvins,Jason Clarke,Jason Clarke,5-8,5,8,0,1,Completed,true,false,false
+AP008113,26 Jul 25,11,Highmoor Uniting,Sandringham,No. 2,Richard Elvins,Craig Shwerdt,Craig Shwerdt,1-8,1,8,0,1,Completed,true,false,false
+AP008113,26 Jul 25,11,Highmoor Uniting,Sandringham,No. 3,Esmatullah Niazi,Mark Creelman,Mark Creelman,0-8,0,8,0,1,Completed,true,false,false
+AP008113,26 Jul 25,11,Highmoor Uniting,Sandringham,No. 4,Ben Campbell,Scott Farndell,Scott Farndell,0-8,0,8,0,1,Completed,true,false,false
+AP008121,02 Aug 25,12,Sandringham,Clarinda,No. 1,Paul Claxton,David James,David James,3-8,3,8,0,1,Completed,true,false,false
+AP008121,02 Aug 25,12,Sandringham,Clarinda,No. 2,Jason Clarke,Tri Dinh,Jason Clarke,8-2,8,2,1,0,Completed,true,false,false
+AP008121,02 Aug 25,12,Sandringham,Clarinda,No. 3,Craig Shwerdt,Roland Detterbeck,Craig Shwerdt,8-7,8,7,1,0,Completed,true,false,false
+AP008121,02 Aug 25,12,Sandringham,Clarinda,No. 4,Steuart Roe,Vincent Wen,Vincent Wen,3-8,3,8,0,1,Completed,true,false,false
+AP008122,02 Aug 25,12,Chadstone,Highmoor Uniting,No. 1,Max Ingram,Richard Elvins,Max Ingram,8-5,8,5,1,0,Completed,true,false,false
+AP008122,02 Aug 25,12,Chadstone,Highmoor Uniting,No. 2,Greg Piper,Ben Campbell,Ben Campbell,7-8,7,8,0,1,Completed,true,false,false
+AP008122,02 Aug 25,12,Chadstone,Highmoor Uniting,No. 3,Ben Martin,Charlie Daalder,Ben Martin,8-6,8,6,1,0,Completed,true,false,false
+AP008122,02 Aug 25,12,Chadstone,Highmoor Uniting,No. 4,Ivana Bogut,Vikram Jangra,Vikram Jangra,5-8,5,8,0,1,Completed,true,false,false
+AP008123,02 Aug 25,12,Mentone,Caulfield Rec,No. 1,Matt Williams,Tiago Caldore,Tiago Caldore,3-8,3,8,0,1,Completed,true,false,false
+AP008123,02 Aug 25,12,Mentone,Caulfield Rec,No. 2,Eric Strelnikov,Mark Findlay,Mark Findlay,6-8,6,8,0,1,Completed,true,false,false
+AP008123,02 Aug 25,12,Mentone,Caulfield Rec,No. 3,Josh Tesler,Ian Eddington,Ian Eddington,1-8,1,8,0,1,Completed,true,false,false
+AP008123,02 Aug 25,12,Mentone,Caulfield Rec,No. 4,Jack Forster,Con Fabiotis,Con Fabiotis,3-8,3,8,0,1,Completed,true,false,false
+AP008131,09 Aug 25,13,Clarinda,Caulfield Rec,No. 1,David James,Tiago Caldore,David James,8-1,8,1,1,0,Completed,true,false,false
+AP008131,09 Aug 25,13,Clarinda,Caulfield Rec,No. 2,Tri Dinh,Mark Findlay,Tri Dinh,8-5,8,5,1,0,Completed,true,false,false
+AP008131,09 Aug 25,13,Clarinda,Caulfield Rec,No. 3,Sher Sidhu,Ian Eddington,Sher Sidhu,8-2,8,2,1,0,Completed,true,false,false
+AP008131,09 Aug 25,13,Clarinda,Caulfield Rec,No. 4,Veer Sidhu,Miguel Sison,Veer Sidhu,8-1,8,1,1,0,Completed,true,false,false
+AP008132,09 Aug 25,13,Highmoor Uniting,Mentone,No. 1,Callum Elvins,Matt Williams,Callum Elvins,8-4,8,4,1,0,Completed,true,false,false
+AP008132,09 Aug 25,13,Highmoor Uniting,Mentone,No. 2,Ben Campbell,Robert Proudfoot,Ben Campbell,8-5,8,5,1,0,Completed,true,false,false
+AP008132,09 Aug 25,13,Highmoor Uniting,Mentone,No. 3,Esmatullah Niazi,Josh Tesler,Josh Tesler,5-8,5,8,0,1,Completed,true,false,false
+AP008132,09 Aug 25,13,Highmoor Uniting,Mentone,No. 4,Vikram Jangra,Jack Forster,Jack Forster,4-8,4,8,0,1,Completed,true,false,false
+AP008133,09 Aug 25,13,Sandringham,Chadstone,No. 1,Paul Claxton,Craig Jendra,Craig Jendra,2-8,2,8,0,1,Completed,true,false,false
+AP008133,09 Aug 25,13,Sandringham,Chadstone,No. 2,Craig Shwerdt,Max Ingram,Craig Shwerdt,8-4,8,4,1,0,Completed,true,false,false
+AP008133,09 Aug 25,13,Sandringham,Chadstone,No. 3,Mark Creelman,Greg Piper,Mark Creelman,8-5,8,5,1,0,Completed,true,false,false
+AP008133,09 Aug 25,13,Sandringham,Chadstone,No. 4,Ben Dennett,Ben Martin,Ben Dennett,8-4,8,4,1,0,Completed,true,true,false
+AP008141,16 Aug 25,14,Chadstone,Clarinda,No. 1,Craig Jendra,David James,David James,6-8,6,8,0,1,Completed,true,false,false
+AP008141,16 Aug 25,14,Chadstone,Clarinda,No. 2,Tim Lind,Tri Dinh,Tim Lind,8-3,8,3,1,0,Completed,true,false,false
+AP008141,16 Aug 25,14,Chadstone,Clarinda,No. 3,Greg Piper,Vincent Wen,Greg Piper,8-6,8,6,1,0,Completed,true,false,false
+AP008141,16 Aug 25,14,Chadstone,Clarinda,No. 4,Laura Mazzarella,Bryce Hall,Bryce Hall,6-8,6,8,0,1,Completed,true,false,false
+AP008142,16 Aug 25,14,Mentone,Sandringham,No. 1,Matt Williams,Jason Clarke,Jason Clarke,3-8,3,8,0,1,Completed,true,false,false
+AP008142,16 Aug 25,14,Mentone,Sandringham,No. 2,Eric Strelnikov,Randall Mance,Eric Strelnikov,8-3,8,3,1,0,Completed,true,false,true
+AP008142,16 Aug 25,14,Mentone,Sandringham,No. 3,Robert Proudfoot,Nick Yannopoulos,Nick Yannopoulos,5-8,5,8,0,1,Completed,true,false,true
+AP008142,16 Aug 25,14,Mentone,Sandringham,No. 4,Jack Forster,Andrew Stoneham,Andrew Stoneham,6-8,6,8,0,1,Completed,true,false,true
+AP008143,16 Aug 25,14,Caulfield Rec,Highmoor Uniting,No. 1,Tiago Caldore,Richard Elvins,Tiago Caldore,8-4,8,4,1,0,Completed,true,false,false
+AP008143,16 Aug 25,14,Caulfield Rec,Highmoor Uniting,No. 2,Mark Findlay,Ben Campbell,Mark Findlay,8-5,8,5,1,0,Completed,true,false,false
+AP008143,16 Aug 25,14,Caulfield Rec,Highmoor Uniting,No. 3,Ian Eddington,Michael Lynch,Ian Eddington,8-3,8,3,1,0,Completed,true,false,false
+AP008143,16 Aug 25,14,Caulfield Rec,Highmoor Uniting,No. 4,Con Fabiotis,Charlie Daalder,Con Fabiotis,8-2,8,2,1,0,Completed,true,false,false
+AP008151,23 Aug 25,15,Clarinda,Highmoor Uniting,No. 1,David James,Esmatullah Niazi,David James,8-4,8,4,1,0,Completed,true,false,false
+AP008151,23 Aug 25,15,Clarinda,Highmoor Uniting,No. 2,Tri Dinh,Michael Lynch,Tri Dinh,8-5,8,5,1,0,Completed,true,false,false
+AP008151,23 Aug 25,15,Clarinda,Highmoor Uniting,No. 3,Sher Sidhu,Charlie Daalder,Sher Sidhu,8-4,8,4,1,0,Completed,true,false,false
+AP008151,23 Aug 25,15,Clarinda,Highmoor Uniting,No. 4,Vincent Wen,Vikram Jangra,Vincent Wen,8-3,8,3,1,0,Completed,true,false,false
+AP008152,23 Aug 25,15,Chadstone,Mentone,No. 1,Craig Jendra,Owen Richardson,Craig Jendra,8-1,8,1,1,0,Completed,true,false,false
+AP008152,23 Aug 25,15,Chadstone,Mentone,No. 2,Max Ingram,Eric Strelnikov,Eric Strelnikov,0-8,0,8,0,1,Completed,true,false,false
+AP008152,23 Aug 25,15,Chadstone,Mentone,No. 3,Greg Piper,Robert Proudfoot,Greg Piper,8-1,8,1,1,0,Completed,true,false,false
+AP008152,23 Aug 25,15,Chadstone,Mentone,No. 4,John Grant,Josh Tesler,John Grant,8-6,8,6,1,0,Completed,true,true,false
+AP008153,23 Aug 25,15,Sandringham,Caulfield Rec,No. 1,Paul Claxton,Tiago Caldore,Paul Claxton,8-2,8,2,1,0,Completed,true,false,false
+AP008153,23 Aug 25,15,Sandringham,Caulfield Rec,No. 2,Jason Clarke,Ian Eddington,Jason Clarke,8-4,8,4,1,0,Completed,true,false,false
+AP008153,23 Aug 25,15,Sandringham,Caulfield Rec,No. 3,Craig Shwerdt,Con Fabiotis,Craig Shwerdt,8-3,8,3,1,0,Completed,true,false,false
+AP008153,23 Aug 25,15,Sandringham,Caulfield Rec,No. 4,Mark Creelman,Miguel Sison,Mark Creelman,8-0,8,0,1,0,Completed,true,false,false
+AP008321,,16,Sandringham,Clarinda,No. 1,Paul Claxton,David James,David James,0-8,0,8,0,1,Completed,true,false,false
+AP008321,,16,Sandringham,Clarinda,No. 2,Jason Clarke,Sher Sidhu,Sher Sidhu,7-8,7,8,0,1,Completed,true,false,false
+AP008321,,16,Sandringham,Clarinda,No. 3,Craig Shwerdt,Veer Sidhu,Veer Sidhu,4-8,4,8,0,1,Completed,true,false,false
+AP008321,,16,Sandringham,Clarinda,No. 4,Mark Creelman,Vincent Wen,Mark Creelman,8-3,8,3,1,0,Completed,true,false,false

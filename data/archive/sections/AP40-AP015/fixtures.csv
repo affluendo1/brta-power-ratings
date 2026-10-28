@@ -1,0 +1,60 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP015011,05 Oct 19,1,regular,Round 1,BLTC 1,BLTC 2,9,1,7,2,,,51,32,Completed,
+AP015012,05 Oct 19,1,regular,Round 1,Overport Park,Langwarrin,0,10,1,8,,,25,62,Completed,
+AP015013,05 Oct 19,1,regular,Round 1,Tennis World 1,Tennis World 2,3,7,4,5,,,43,43,Completed,
+AP015014,05 Oct 19,1,regular,Round 1,Caulfield Rec,Kings Park,8,2,6,3,,,55,41,Completed,
+AP015021,12 Oct 19,2,regular,Round 2,Kings Park,BLTC 1,1,9,1,7,,,34,53,Completed,
+AP015022,12 Oct 19,2,regular,Round 2,BLTC 2,Overport Park,8,2,5,4,,,54,46,Completed,
+AP015023,12 Oct 19,2,regular,Round 2,Langwarrin,Tennis World 1,9,1,7,1,,,56,29,Completed,
+AP015024,12 Oct 19,2,regular,Round 2,Tennis World 2,Caulfield Rec,3,7,4,5,,,49,54,Completed,
+AP015031,19 Oct 19,3,regular,Round 3,BLTC 1,Tennis World 2,1,9,1,7,,,33,55,Completed,
+AP015032,19 Oct 19,3,regular,Round 3,Overport Park,Kings Park,9,1,4,0,,,32,23,Completed,
+AP015033,19 Oct 19,3,regular,Round 3,Tennis World 1,BLTC 2,10,0,8,0,,,56,18,Completed,
+AP015034,19 Oct 19,3,regular,Round 3,Caulfield Rec,Langwarrin,8,2,6,3,,,53,38,Completed,
+AP015041,26 Oct 19,4,regular,Round 4,Langwarrin,BLTC 1,8,2,6,2,,,47,33,Completed,
+AP015043,26 Oct 19,4,regular,Round 4,Kings Park,Tennis World 1,2,8,4,6,,,47,59,Completed,
+AP015044,26 Oct 19,4,regular,Round 4,BLTC 2,Caulfield Rec,0,10,0,8,,,31,56,Completed,
+pending-ap015-r4-tennis-world-2-overport-park,26 Oct 19,4,regular,Round 4,Tennis World 2,Overport Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP015051,09 Nov 19,5,regular,Round 5,Tennis World 1,Caulfield Rec,5.5,4.5,3,2,,,35,36,Completed,
+AP015052,09 Nov 19,5,regular,Round 5,Kings Park,Tennis World 2,8,2,5,3,,,44,36,Completed,
+AP015054,09 Nov 19,5,regular,Round 5,BLTC 1,Overport Park,2,8,3,6,,,43,57,Completed,
+pending-ap015-r5-langwarrin-bltc-2,09 Nov 19,5,regular,Round 5,Langwarrin,BLTC 2,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP015062,16 Nov 19,6,regular,Round 6,Caulfield Rec,BLTC 1,2,8,4,5,,,41,51,Completed,
+AP015063,16 Nov 19,6,regular,Round 6,Tennis World 2,Langwarrin,7,3,4,4,,,42,39,Completed,
+AP015064,16 Nov 19,6,regular,Round 6,BLTC 2,Kings Park,8,2,6,4,,,55,46,Completed,
+pending-ap015-r6-overport-park-tennis-world-1,16 Nov 19,6,regular,Round 6,Overport Park,Tennis World 1,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP015071,23 Nov 19,7,regular,Round 7,BLTC 1,Tennis World 1,2,8,3,5,,,38,46,Completed,
+AP015072,23 Nov 19,7,regular,Round 7,Overport Park,Caulfield Rec,2,8,3,6,,,46,53,Completed,
+AP015073,23 Nov 19,7,regular,Round 7,Kings Park,Langwarrin,0,10,1,8,,,43,62,Completed,
+AP015074,23 Nov 19,7,regular,Round 7,Tennis World 2,BLTC 2,9,1,7,2,,,57,24,Completed,
+AP015081,30 Nov 19,8,regular,Round 8,BLTC 2,BLTC 1,2,8,4,4,,,44,52,Completed,
+AP015082,30 Nov 19,8,regular,Round 8,Langwarrin,Overport Park,9,1,7,2,,,57,40,Completed,
+AP015083,30 Nov 19,8,regular,Round 8,Tennis World 2,Tennis World 1,8,2,6,3,,,54,44,Completed,
+AP015084,30 Nov 19,8,regular,Round 8,Kings Park,Caulfield Rec,9,1,6,2,,,52,38,Completed,
+AP015091,07 Dec 19,9,regular,Round 9,BLTC 1,Kings Park,8,2,6,2,,,51,38,Completed,
+AP015092,07 Dec 19,9,regular,Round 9,Overport Park,BLTC 2,1,9,1,7,,,34,57,Completed,
+AP015093,07 Dec 19,9,regular,Round 9,Tennis World 1,Langwarrin,10,0,8,1,,,59,34,Completed,
+AP015094,07 Dec 19,9,regular,Round 9,Caulfield Rec,Tennis World 2,1,9,2,7,,,47,55,Completed,
+AP015101,14 Dec 19,10,regular,Round 10,Tennis World 2,BLTC 1,7,3,5,4,,,54,45,Completed,
+AP015102,14 Dec 19,10,regular,Round 10,Kings Park,Overport Park,8,2,6,3,,,53,40,Completed,
+AP015104,14 Dec 19,10,regular,Round 10,Langwarrin,Caulfield Rec,8,2,6,3,,,53,40,Completed,
+pending-ap015-r10-bltc-2-tennis-world-1,14 Dec 19,10,regular,Round 10,BLTC 2,Tennis World 1,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+pending-ap015-r11-bltc-1-langwarrin,01 Feb 20,11,regular,Round 11,BLTC 1,Langwarrin,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap015-r11-caulfield-rec-bltc-2,01 Feb 20,11,regular,Round 11,Caulfield Rec,BLTC 2,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap015-r11-overport-park-tennis-world-2,01 Feb 20,11,regular,Round 11,Overport Park,Tennis World 2,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap015-r11-tennis-world-1-kings-park,01 Feb 20,11,regular,Round 11,Tennis World 1,Kings Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP015121,08 Feb 20,12,regular,Round 12,Caulfield Rec,Tennis World 1,7,3,5,5,,,55,54,Completed,
+AP015122,08 Feb 20,12,regular,Round 12,Tennis World 2,Kings Park,2,8,4,5,,,43,47,Completed,
+AP015123,08 Feb 20,12,regular,Round 12,BLTC 2,Langwarrin,1,9,1,7,,,18,51,Completed,
+AP015124,08 Feb 20,12,regular,Round 12,Overport Park,BLTC 1,1,9,2,6,,,42,56,Completed,
+AP015132,15 Feb 20,13,regular,Round 13,BLTC 1,Caulfield Rec,1,9,2,7,,,37,54,Completed,
+AP015133,15 Feb 20,13,regular,Round 13,Langwarrin,Tennis World 2,9,1,7,1,,,51,23,Completed,
+AP015134,15 Feb 20,13,regular,Round 13,Kings Park,BLTC 2,10,0,8,1,,,63,40,Completed,
+pending-ap015-r13-tennis-world-1-overport-park,15 Feb 20,13,regular,Round 13,Tennis World 1,Overport Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP015141,22 Feb 20,14,regular,Round 14,Tennis World 1,BLTC 1,8,2,4,4,,,46,38,Completed,
+AP015142,22 Feb 20,14,regular,Round 14,Caulfield Rec,Overport Park,3,7,4,4,,,45,46,Completed,
+AP015144,22 Feb 20,14,regular,Round 14,BLTC 2,Tennis World 2,1,9,2,7,,,39,61,Completed,
+pending-ap015-r14-langwarrin-kings-park,22 Feb 20,14,regular,Round 14,Langwarrin,Kings Park,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP015301,,16,semi_final,Semi-final,Langwarrin,BLTC 1,8,2,5,3,,,45,36,Completed,
+AP015302,,16,semi_final,Semi-final,Tennis World 2,Caulfield Rec,8,2,5,3,,,49,34,Completed,
+AP015321,,17,grand_final,Grand final · TROLS entry 2,Langwarrin,Tennis World 2,5,5,0,0,,,0,0,Completed,

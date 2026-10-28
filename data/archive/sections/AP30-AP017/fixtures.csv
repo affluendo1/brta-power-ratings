@@ -1,0 +1,61 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP017011,04 Oct 14,1,regular,Round 1,Albert Reserve,Port Melbourne,7,3,4,4,,,43,42,Completed,
+AP017012,04 Oct 14,1,regular,Round 1,BLTC,Kings Park,2,8,3,6,,,49,51,Completed,
+AP017013,04 Oct 14,1,regular,Round 1,Ormond,Glen Iris Valley,9,1,7,2,,,56,37,Completed,
+pending-ap017-r1-maccabi-bye,04 Oct 14,1,regular,Round 1,Maccabi,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP017022,11 Oct 14,2,regular,Round 2,Port Melbourne,BLTC,8,2,6,3,,,49,45,Completed,
+AP017023,11 Oct 14,2,regular,Round 2,Kings Park,Ormond,3,7,3,5,,,39,48,Completed,
+AP017024,11 Oct 14,2,regular,Round 2,Glen Iris Valley,Maccabi,8,2,6,3,,,54,42,Completed,
+pending-ap017-r2-bye-albert-reserve,11 Oct 14,2,regular,Round 2,Bye,Albert Reserve,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP017033,18 Oct 14,3,regular,Round 3,Ormond,Port Melbourne,8,2,6,2,,,50,27,Completed,
+AP017034,18 Oct 14,3,regular,Round 3,Maccabi,Kings Park,3,7,4,5,,,46,44,Completed,
+pending-ap017-r3-albert-reserve-glen-iris-valley,18 Oct 14,3,regular,Round 3,Albert Reserve,Glen Iris Valley,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+pending-ap017-r3-bltc-bye,18 Oct 14,3,regular,Round 3,BLTC,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP017044,25 Oct 14,4,regular,Round 4,Port Melbourne,Maccabi,7,3,4,4,,,40,36,Completed,
+pending-ap017-r4-bye-ormond,25 Oct 14,4,regular,Round 4,Bye,Ormond,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap017-r4-glen-iris-valley-bltc,25 Oct 14,4,regular,Round 4,Glen Iris Valley,BLTC,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+pending-ap017-r4-kings-park-albert-reserve,25 Oct 14,4,regular,Round 4,Kings Park,Albert Reserve,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP017051,08 Nov 14,5,regular,Round 5,Ormond,Maccabi,8,2,6,3,,,52,43,Completed,
+AP017053,08 Nov 14,5,regular,Round 5,Kings Park,Port Melbourne,7,3,5,4,,,48,37,Completed,
+AP017054,08 Nov 14,5,regular,Round 5,Albert Reserve,BLTC,2,8,3,6,,,48,50,Completed,
+pending-ap017-r5-bye-glen-iris-valley,08 Nov 14,5,regular,Round 5,Bye,Glen Iris Valley,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP017061,15 Nov 14,6,regular,Round 6,BLTC,Ormond,2,8,3,5,,,35,52,Completed,
+AP017062,15 Nov 14,6,regular,Round 6,Maccabi,Albert Reserve,3,7,4,4,,,46,49,Completed,
+AP017063,15 Nov 14,6,regular,Round 6,Glen Iris Valley,Kings Park,9,1,7,1,,,53,21,Completed,
+pending-ap017-r6-port-melbourne-bye,15 Nov 14,6,regular,Round 6,Port Melbourne,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP017071,22 Nov 14,7,regular,Round 7,Albert Reserve,Ormond,3,7,4,5,,,37,47,Completed,
+AP017072,22 Nov 14,7,regular,Round 7,BLTC,Maccabi,2,8,4,5,,,41,50,Completed,
+AP017074,22 Nov 14,7,regular,Round 7,Glen Iris Valley,Port Melbourne,7,3,5,4,,,43,43,Completed,
+pending-ap017-r7-bye-kings-park,22 Nov 14,7,regular,Round 7,Bye,Kings Park,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP017081,29 Nov 14,8,regular,Round 8,Port Melbourne,Albert Reserve,8,2,6,2,,,48,44,Completed,
+AP017082,29 Nov 14,8,regular,Round 8,Kings Park,BLTC,8,2,6,3,,,58,46,Completed,
+AP017083,29 Nov 14,8,regular,Round 8,Glen Iris Valley,Ormond,0,10,2,8,,,24,65,Completed,
+pending-ap017-r8-bye-maccabi,29 Nov 14,8,regular,Round 8,Bye,Maccabi,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP017092,06 Dec 14,9,regular,Round 9,BLTC,Port Melbourne,7,3,5,4,,,48,41,Completed,
+AP017093,06 Dec 14,9,regular,Round 9,Ormond,Kings Park,2,8,2,6,,,36,50,Completed,
+AP017094,06 Dec 14,9,regular,Round 9,Maccabi,Glen Iris Valley,2,8,4,5,,,39,43,Completed,
+pending-ap017-r9-albert-reserve-bye,06 Dec 14,9,regular,Round 9,Albert Reserve,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP017101,13 Dec 14,10,regular,Round 10,Glen Iris Valley,Albert Reserve,8,2,6,3,,,51,34,Completed,
+AP017103,13 Dec 14,10,regular,Round 10,Port Melbourne,Ormond,2,8,3,6,,,41,57,Completed,
+AP017104,13 Dec 14,10,regular,Round 10,Kings Park,Maccabi,2,8,2,6,,,38,46,Completed,
+pending-ap017-r10-bye-bltc,13 Dec 14,10,regular,Round 10,Bye,BLTC,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP017111,07 Feb 15,11,regular,Round 11,Albert Reserve,Kings Park,7,3,4,4,,,48,47,Completed,
+AP017112,07 Feb 15,11,regular,Round 11,BLTC,Glen Iris Valley,0,10,0,8,,,24,57,Completed,
+AP017114,07 Feb 15,11,regular,Round 11,Maccabi,Port Melbourne,8,2,5,4,,,50,48,Completed,
+pending-ap017-r11-ormond-bye,07 Feb 15,11,regular,Round 11,Ormond,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP017121,14 Feb 15,12,regular,Round 12,Maccabi,Ormond,3,7,5,5,,,52,54,Completed,
+AP017124,14 Feb 15,12,regular,Round 12,BLTC,Albert Reserve,7,3,5,4,,,53,42,Completed,
+pending-ap017-r12-glen-iris-valley-bye,14 Feb 15,12,regular,Round 12,Glen Iris Valley,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap017-r12-port-melbourne-kings-park,14 Feb 15,12,regular,Round 12,Port Melbourne,Kings Park,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+AP017131,21 Feb 15,13,regular,Round 13,Ormond,BLTC,2,8,3,6,,,40,55,Completed,
+AP017132,21 Feb 15,13,regular,Round 13,Albert Reserve,Maccabi,5,5,0,0,,,0,0,Completed,
+AP017133,21 Feb 15,13,regular,Round 13,Kings Park,Glen Iris Valley,7,3,5,3,,,46,38,Completed,
+pending-ap017-r13-bye-port-melbourne,21 Feb 15,13,regular,Round 13,Bye,Port Melbourne,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP017141,28 Feb 15,14,regular,Round 14,Ormond,Albert Reserve,8,2,6,2,,,47,25,Completed,
+AP017142,28 Feb 15,14,regular,Round 14,Maccabi,BLTC,8,2,5,4,,,50,42,Completed,
+AP017144,28 Feb 15,14,regular,Round 14,Port Melbourne,Glen Iris Valley,9,1,7,1,,,52,24,Completed,
+pending-ap017-r14-kings-park-bye,28 Feb 15,14,regular,Round 14,Kings Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP017301,,16,semi_final,Semi-final,Ormond,Kings Park,7,3,4,4,,,51,47,Completed,
+AP017302,,16,semi_final,Semi-final,Glen Iris Valley,Maccabi,2.5,7.5,2,5,,,41,51,Completed,
+AP017311,,16,semi_final,Semi-final,Kings Park,Maccabi,8,2,6,2,,,53,37,Completed,
+AP017321,,17,grand_final,Grand final · TROLS entry 2,Ormond,Kings Park,8,2,5,3,,,42,35,Completed,

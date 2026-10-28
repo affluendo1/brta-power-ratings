@@ -1,0 +1,79 @@
+{
+  "asset_id": "AP46-AP008",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Winter 2023",
+  "season_id": "AP46",
+  "season_label": "Winter 2023",
+  "source_section_code": "AP008",
+  "section_label": "Open S/D 1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "St Anthony's",
+      "wins": 11,
+      "points": 103,
+      "percentage": 189.33,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "St Pats Mentone",
+      "wins": 8,
+      "points": 84,
+      "percentage": 149.08,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Ormond",
+      "wins": 6,
+      "points": 64.5,
+      "percentage": 108.16,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Sth Hawthorn",
+      "wins": 2,
+      "points": 40.5,
+      "percentage": 76.74,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Royal Ave",
+      "wins": 0,
+      "points": 8,
+      "percentage": 30.83,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP46-AP008",
+  "fixtures": 46,
+  "completed_fixtures": 29,
+  "draw_fixtures": 57,
+  "singles_rubbers": 116,
+  "doubles_rubbers": 54,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

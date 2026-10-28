@@ -1,0 +1,48 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP010011,03 May 14,1,regular,Round 1,East Malvern,Murrumbeena,4,6,1,3,,,17,28,Completed,
+AP010012,03 May 14,1,regular,Round 1,Parkdale,Le Page,6,4,2,0,,,19,14,Completed,
+pending-ap010-r1-mcc-bye,03 May 14,1,regular,Round 1,MCC,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap010-r2-bye-east-malvern,10 May 14,2,regular,Round 2,Bye,East Malvern,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap010-r2-le-page-mcc,10 May 14,2,regular,Round 2,Le Page,MCC,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap010-r2-murrumbeena-parkdale,10 May 14,2,regular,Round 2,Murrumbeena,Parkdale,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP010031,17 May 14,3,regular,Round 3,East Malvern,Parkdale,10,0,8,0,,,56,23,Completed,
+AP010032,17 May 14,3,regular,Round 3,MCC,Murrumbeena,1,9,1,7,,,26,50,Completed,
+pending-ap010-r3-bye-le-page,17 May 14,3,regular,Round 3,Bye,Le Page,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP010041,24 May 14,4,regular,Round 4,Le Page,East Malvern,2,8,3,6,,,35,51,Completed,
+AP010043,24 May 14,4,regular,Round 4,Parkdale,MCC,7,3,5,4,,,46,40,Completed,
+pending-ap010-r4-murrumbeena-bye,24 May 14,4,regular,Round 4,Murrumbeena,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP010051,31 May 14,5,regular,Round 5,East Malvern,MCC,10,0,8,0,,,56,12,Completed,
+AP010052,31 May 14,5,regular,Round 5,Le Page,Murrumbeena,7,3,5,4,,,48,41,Completed,
+pending-ap010-r5-bye-parkdale,31 May 14,5,regular,Round 5,Bye,Parkdale,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP010061,14 Jun 14,6,regular,Round 6,Murrumbeena,East Malvern,5,5,2,2,,,24,35,Completed,
+AP010062,14 Jun 14,6,regular,Round 6,Le Page,Parkdale,5,5,2,2,,,26,21,Completed,
+pending-ap010-r6-bye-mcc,14 Jun 14,6,regular,Round 6,Bye,MCC,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP010072,21 Jun 14,7,regular,Round 7,MCC,Le Page,7,3,5,4,,,46,41,Completed,
+AP010073,21 Jun 14,7,regular,Round 7,Parkdale,Murrumbeena,0,10,0,8,,,19,57,Completed,
+pending-ap010-r7-east-malvern-bye,21 Jun 14,7,regular,Round 7,East Malvern,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP010081,28 Jun 14,8,regular,Round 8,Parkdale,East Malvern,1,9,2,7,,,32,55,Completed,
+AP010082,28 Jun 14,8,regular,Round 8,Murrumbeena,MCC,10,0,8,1,,,61,26,Completed,
+pending-ap010-r8-le-page-bye,28 Jun 14,8,regular,Round 8,Le Page,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP010091,05 Jul 14,9,regular,Round 9,East Malvern,Le Page,0,10,1,8,,,29,62,Completed,
+AP010093,05 Jul 14,9,regular,Round 9,MCC,Parkdale,1,9,2,7,,,34,55,Completed,
+pending-ap010-r9-bye-murrumbeena,05 Jul 14,9,regular,Round 9,Bye,Murrumbeena,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP010102,12 Jul 14,10,regular,Round 10,Murrumbeena,Le Page,7,3,5,4,,,49,35,Completed,
+pending-ap010-r10-mcc-east-malvern,12 Jul 14,10,regular,Round 10,MCC,East Malvern,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap010-r10-parkdale-bye,12 Jul 14,10,regular,Round 10,Parkdale,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP010111,19 Jul 14,11,regular,Round 11,East Malvern,Murrumbeena,8,2,5,3,,,43,35,Completed,
+AP010112,19 Jul 14,11,regular,Round 11,Parkdale,Le Page,0,10,0,8,,,12,56,Completed,
+pending-ap010-r11-mcc-bye,19 Jul 14,11,regular,Round 11,MCC,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP010122,26 Jul 14,12,regular,Round 12,Le Page,MCC,9,1,7,1,,,55,31,Completed,
+AP010123,26 Jul 14,12,regular,Round 12,Murrumbeena,Parkdale,8.5,1.5,5,2,,,46,30,Completed,
+pending-ap010-r12-bye-east-malvern,26 Jul 14,12,regular,Round 12,Bye,East Malvern,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP010131,02 Aug 14,13,regular,Round 13,East Malvern,Parkdale,9,1,7,2,,,54,34,Completed,
+pending-ap010-r13-bye-le-page,02 Aug 14,13,regular,Round 13,Bye,Le Page,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap010-r13-mcc-murrumbeena,02 Aug 14,13,regular,Round 13,MCC,Murrumbeena,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP010141,09 Aug 14,14,regular,Round 14,Le Page,East Malvern,2,8,4,5,,,48,50,Completed,
+AP010143,09 Aug 14,14,regular,Round 14,Parkdale,MCC,2,8,3,5,,,27,39,Completed,
+pending-ap010-r14-murrumbeena-bye,09 Aug 14,14,regular,Round 14,Murrumbeena,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP010151,16 Aug 14,15,regular,Round 15,East Malvern,MCC,8,2,5,3,,,55,42,Completed,
+AP010152,16 Aug 14,15,regular,Round 15,Le Page,Murrumbeena,8,2,6,3,,,55,39,Completed,
+AP010311,16 Aug 14,15,regular,Round 15,Murrumbeena,Le Page,0,10,0,8,,,18,56,Completed,
+pending-ap010-r15-bye-parkdale,16 Aug 14,15,regular,Round 15,Bye,Parkdale,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP010321,,16,grand_final,Grand final · TROLS entry 2,East Malvern,Le Page,7,3,5,4,,,50,46,Completed,

@@ -1,0 +1,235 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP016011,06 Oct 12,1,Kooyong,Dendy Park,No. 1,Scott Donnellan,Nick Jeffery,Nick Jeffery,2-8,2,8,0,1,Completed,true,false,false
+AP016011,06 Oct 12,1,Kooyong,Dendy Park,No. 2,Ron Gerendasi,Garion Rowe,Ron Gerendasi,8-3,8,3,1,0,Completed,true,false,false
+AP016011,06 Oct 12,1,Kooyong,Dendy Park,No. 3,Bryce Mitchelson,Brenton Kos,Bryce Mitchelson,8-3,8,3,1,0,Completed,true,false,false
+AP016011,06 Oct 12,1,Kooyong,Dendy Park,No. 4,Brent Vermalis,Alex Bulmaga,Alex Bulmaga,7-9,7,9,0,1,Completed,true,false,false
+AP016012,06 Oct 12,1,BLTC,Maccabi,No. 1,Masoud Ahmed,Alon Karp,Masoud Ahmed,9-8,9,8,1,0,Completed,true,false,false
+AP016012,06 Oct 12,1,BLTC,Maccabi,No. 2,Ian Thomas,Jonathon Roseman,Ian Thomas,8-5,8,5,1,0,Completed,true,false,false
+AP016012,06 Oct 12,1,BLTC,Maccabi,No. 3,San Derooy,Tim Hall,Tim Hall,2-8,2,8,0,1,Completed,true,false,false
+AP016012,06 Oct 12,1,BLTC,Maccabi,No. 4,Stuart Macfarlane,Luke Miller,Stuart Macfarlane,9-8,9,8,1,0,Completed,true,false,false
+AP016013,06 Oct 12,1,Fitzroy,Coatesville,No. 1,Gianfranco Natale,Jack Callaghan,Gianfranco Natale,8-3,8,3,1,0,Completed,true,false,false
+AP016013,06 Oct 12,1,Fitzroy,Coatesville,No. 2,Callum Metcher,Fikret Suleyman,Fikret Suleyman,8-9,8,9,0,1,Completed,true,false,false
+AP016013,06 Oct 12,1,Fitzroy,Coatesville,No. 3,John Ratten,Callum Rankin,John Ratten,8-3,8,3,1,0,Completed,true,false,false
+AP016013,06 Oct 12,1,Fitzroy,Coatesville,No. 4,Joe Spano,Michael Bourke,Joe Spano,8-3,8,3,1,0,Completed,true,false,false
+AP016014,06 Oct 12,1,Highmoor Uniting,Carmelite,No. 1,Paul Luke,Stephen Schweier,,3-0,3,0,1,0,Unfinished,false,false,false
+AP016014,06 Oct 12,1,Highmoor Uniting,Carmelite,No. 2,Glenn Collins,Alex Molnar,,2-3,2,3,0,1,Unfinished,false,false,false
+AP016021,13 Oct 12,2,Carmelite,Kooyong,No. 1,Stephen Schweier,Mars Njoo,Mars Njoo,4-8,4,8,0,1,Completed,true,false,false
+AP016021,13 Oct 12,2,Carmelite,Kooyong,No. 2,Jason Bronts,Ron Gerendasi,Jason Bronts,8-3,8,3,1,0,Completed,true,false,false
+AP016021,13 Oct 12,2,Carmelite,Kooyong,No. 3,Alex Molnar,Bobby Lim,Bobby Lim,5-8,5,8,0,1,Completed,true,false,false
+AP016021,13 Oct 12,2,Carmelite,Kooyong,No. 4,Geoff Patsouris,Bryce Mitchelson,Bryce Mitchelson,2-8,2,8,0,1,Completed,true,false,false
+AP016022,13 Oct 12,2,Dendy Park,BLTC,No. 1,Nick Jeffery,Masoud Ahmed,Masoud Ahmed,6-8,6,8,0,1,Completed,true,false,false
+AP016022,13 Oct 12,2,Dendy Park,BLTC,No. 2,Garion Rowe,Anatole Shramkova,Garion Rowe,8-4,8,4,1,0,Completed,true,false,false
+AP016022,13 Oct 12,2,Dendy Park,BLTC,No. 3,Brenton Kos,Roger Boyd,Brenton Kos,8-0,8,0,1,0,Completed,true,false,false
+AP016022,13 Oct 12,2,Dendy Park,BLTC,No. 4,Alex Bulmaga,Oliver Florent,Oliver Florent,3-8,3,8,0,1,Completed,true,false,false
+AP016023,13 Oct 12,2,Maccabi,Fitzroy,No. 1,Alon Karp,Gianfranco Natale,Alon Karp,8-3,8,3,1,0,Completed,true,false,false
+AP016023,13 Oct 12,2,Maccabi,Fitzroy,No. 2,Jonathon Roseman,Rob Conkie,Rob Conkie,1-8,1,8,0,1,Completed,true,false,false
+AP016023,13 Oct 12,2,Maccabi,Fitzroy,No. 3,Saul Muscatel,Callum Metcher,Callum Metcher,5-8,5,8,0,1,Completed,true,false,false
+AP016023,13 Oct 12,2,Maccabi,Fitzroy,No. 4,Luke Miller,John Ratten,Luke Miller,8-4,8,4,1,0,Completed,true,false,false
+AP016024,13 Oct 12,2,Coatesville,Highmoor Uniting,No. 1,Jack Callaghan,Paul Luke,Paul Luke,5-8,5,8,0,1,Completed,true,false,false
+AP016024,13 Oct 12,2,Coatesville,Highmoor Uniting,No. 2,Fikret Suleyman,Ben Abbott,Ben Abbott,3-8,3,8,0,1,Completed,true,false,false
+AP016024,13 Oct 12,2,Coatesville,Highmoor Uniting,No. 3,Callum Rankin,Glenn Collins,Callum Rankin,8-6,8,6,1,0,Completed,true,false,false
+AP016024,13 Oct 12,2,Coatesville,Highmoor Uniting,No. 4,Cameron James,Scott Lyons,Scott Lyons,0-8,0,8,0,1,Completed,true,false,false
+AP016031,20 Oct 12,3,Kooyong,Coatesville,No. 1,Mars Njoo,Fikret Suleyman,Mars Njoo,8-5,8,5,1,0,Completed,true,false,false
+AP016031,20 Oct 12,3,Kooyong,Coatesville,No. 2,Ron Gerendasi,Callum Rankin,Ron Gerendasi,8-3,8,3,1,0,Completed,true,false,false
+AP016031,20 Oct 12,3,Kooyong,Coatesville,No. 3,Bobby Lim,James Rate,Bobby Lim,8-3,8,3,1,0,Completed,true,false,false
+AP016031,20 Oct 12,3,Kooyong,Coatesville,No. 4,Bryce Mitchelson,Michael Bourke,Bryce Mitchelson,8-1,8,1,1,0,Completed,true,false,false
+AP016032,20 Oct 12,3,BLTC,Carmelite,No. 1,Roger Boyd,Stephen Schweier,Stephen Schweier,1-8,1,8,0,1,Completed,true,false,false
+AP016032,20 Oct 12,3,BLTC,Carmelite,No. 2,Oliver Florent,Alex Molnar,Oliver Florent,8-6,8,6,1,0,Completed,true,false,false
+AP016032,20 Oct 12,3,BLTC,Carmelite,No. 3,San Derooy,Brendon Luve,San Derooy,8-1,8,1,1,0,Completed,true,false,false
+AP016032,20 Oct 12,3,BLTC,Carmelite,No. 4,Stuart Macfarlane,Edwin Jupp,Stuart Macfarlane,9-8,9,8,1,0,Completed,true,false,false
+AP016033,20 Oct 12,3,Fitzroy,Dendy Park,No. 1,Gianfranco Natale,Nick Jeffery,Nick Jeffery,8-9,8,9,0,1,Completed,true,false,false
+AP016033,20 Oct 12,3,Fitzroy,Dendy Park,No. 2,Rob Conkie,Garion Rowe,Rob Conkie,8-3,8,3,1,0,Completed,true,false,false
+AP016033,20 Oct 12,3,Fitzroy,Dendy Park,No. 3,Callum Metcher,Brenton Kos,Brenton Kos,5-8,5,8,0,1,Completed,true,false,false
+AP016033,20 Oct 12,3,Fitzroy,Dendy Park,No. 4,John Ratten,Stefan Woolley,Stefan Woolley,6-8,6,8,0,1,Completed,true,false,false
+AP016034,20 Oct 12,3,Highmoor Uniting,Maccabi,No. 1,Ben Abbott,Alon Karp,Ben Abbott,8-6,8,6,1,0,Completed,true,false,false
+AP016034,20 Oct 12,3,Highmoor Uniting,Maccabi,No. 2,Pat Meehan,Steven Gostin,Steven Gostin,4-8,4,8,0,1,Completed,true,false,false
+AP016034,20 Oct 12,3,Highmoor Uniting,Maccabi,No. 3,Jason Mahmoud,Jonathon Roseman,Jason Mahmoud,8-6,8,6,1,0,Completed,true,false,false
+AP016034,20 Oct 12,3,Highmoor Uniting,Maccabi,No. 4,Scott Lyons,Saul Muscatel,Saul Muscatel,6-8,6,8,0,1,Completed,true,false,false
+AP016041,27 Oct 12,4,Maccabi,Kooyong,No. 1,Arthur Vainbrandt,Anthony Coxen,Arthur Vainbrandt,9-7,9,7,1,0,Completed,true,false,false
+AP016041,27 Oct 12,4,Maccabi,Kooyong,No. 2,Alon Karp,Ron Gerendasi,Alon Karp,8-3,8,3,1,0,Completed,true,false,false
+AP016041,27 Oct 12,4,Maccabi,Kooyong,No. 3,Steven Gostin,Bryce Mitchelson,Steven Gostin,8-1,8,1,1,0,Completed,true,false,false
+AP016041,27 Oct 12,4,Maccabi,Kooyong,No. 4,Saul Muscatel,Brent Vermalis,Brent Vermalis,3-8,3,8,0,1,Completed,true,false,false
+AP016042,27 Oct 12,4,Coatesville,BLTC,No. 1,Jack Callaghan,Ian Thomas,Ian Thomas,8-9,8,9,0,1,Completed,true,false,false
+AP016042,27 Oct 12,4,Coatesville,BLTC,No. 2,Callum Rankin,Anatole Shramkova,Anatole Shramkova,6-8,6,8,0,1,Completed,true,false,false
+AP016042,27 Oct 12,4,Coatesville,BLTC,No. 3,Michael Bourke,San Derooy,San Derooy,6-8,6,8,0,1,Completed,true,false,false
+AP016042,27 Oct 12,4,Coatesville,BLTC,No. 4,Cameron James,Stuart Macfarlane,Stuart Macfarlane,0-8,0,8,0,1,Completed,true,false,false
+AP016043,27 Oct 12,4,Carmelite,Fitzroy,No. 1,Stephen Schweier,Gianfranco Natale,Gianfranco Natale,4-8,4,8,0,1,Completed,true,false,false
+AP016043,27 Oct 12,4,Carmelite,Fitzroy,No. 2,Jason Bronts,Rob Conkie,Rob Conkie,5-8,5,8,0,1,Completed,true,false,false
+AP016043,27 Oct 12,4,Carmelite,Fitzroy,No. 3,Alex Molnar,Callum Metcher,Callum Metcher,7-9,7,9,0,1,Completed,true,false,false
+AP016043,27 Oct 12,4,Carmelite,Fitzroy,No. 4,Geoff Patsouris,Joe Spano,Geoff Patsouris,8-6,8,6,1,0,Completed,true,false,false
+AP016044,27 Oct 12,4,Dendy Park,Highmoor Uniting,No. 1,Nick Jeffery,Paul Luke,Paul Luke,5-8,5,8,0,1,Completed,true,false,false
+AP016044,27 Oct 12,4,Dendy Park,Highmoor Uniting,No. 2,Garion Rowe,Ben Abbott,Ben Abbott,4-8,4,8,0,1,Completed,true,false,false
+AP016044,27 Oct 12,4,Dendy Park,Highmoor Uniting,No. 3,Brenton Kos,Glenn Collins,Brenton Kos,8-5,8,5,1,0,Completed,true,false,false
+AP016044,27 Oct 12,4,Dendy Park,Highmoor Uniting,No. 4,Stefan Woolley,Jason Mahmoud,Stefan Woolley,8-4,8,4,1,0,Completed,true,false,false
+AP016051,10 Nov 12,5,Fitzroy,Highmoor Uniting,No. 1,Gianfranco Natale,Paul Luke,Paul Luke,6-8,6,8,0,1,Completed,true,false,false
+AP016051,10 Nov 12,5,Fitzroy,Highmoor Uniting,No. 2,Callum Metcher,Glenn Collins,Callum Metcher,8-4,8,4,1,0,Completed,true,false,false
+AP016051,10 Nov 12,5,Fitzroy,Highmoor Uniting,No. 3,Joe Spano,Pat Meehan,Pat Meehan,6-8,6,8,0,1,Completed,true,false,false
+AP016051,10 Nov 12,5,Fitzroy,Highmoor Uniting,No. 4,Daniel Potenza,Scott Lyons,Daniel Potenza,8-0,8,0,1,0,Completed,true,false,false
+AP016052,10 Nov 12,5,Carmelite,Coatesville,No. 1,Stephen Schweier,Jack Callaghan,Stephen Schweier,8-6,8,6,1,0,Completed,true,false,false
+AP016052,10 Nov 12,5,Carmelite,Coatesville,No. 2,Alex Molnar,Fikret Suleyman,Alex Molnar,8-6,8,6,1,0,Completed,true,false,false
+AP016052,10 Nov 12,5,Carmelite,Coatesville,No. 3,Brendon Luve,Cameron James,Cameron James,3-8,3,8,0,1,Completed,true,false,false
+AP016052,10 Nov 12,5,Carmelite,Coatesville,No. 4,Geoff Patsouris,Michael Bourke,Geoff Patsouris,8-5,8,5,1,0,Completed,true,false,false
+AP016053,10 Nov 12,5,Maccabi,Dendy Park,No. 1,Alon Karp,Nick Jeffery,Alon Karp,8-2,8,2,1,0,Completed,true,false,false
+AP016053,10 Nov 12,5,Maccabi,Dendy Park,No. 2,Steven Gostin,Garion Rowe,Steven Gostin,8-3,8,3,1,0,Completed,true,false,false
+AP016053,10 Nov 12,5,Maccabi,Dendy Park,No. 3,Naveh Dvir-Ovadia,Brenton Kos,Brenton Kos,2-8,2,8,0,1,Completed,true,false,false
+AP016053,10 Nov 12,5,Maccabi,Dendy Park,No. 4,Saul Muscatel,Stefan Woolley,Stefan Woolley,3-8,3,8,0,1,Completed,true,false,false
+AP016054,10 Nov 12,5,Kooyong,BLTC,No. 1,Mars Njoo,Ian Thomas,Mars Njoo,8-1,8,1,1,0,Completed,true,false,false
+AP016054,10 Nov 12,5,Kooyong,BLTC,No. 2,Ron Gerendasi,Anatole Shramkova,Anatole Shramkova,3-8,3,8,0,1,Completed,true,false,false
+AP016054,10 Nov 12,5,Kooyong,BLTC,No. 3,Bryce Mitchelson,Roger Boyd,Bryce Mitchelson,8-2,8,2,1,0,Completed,true,false,false
+AP016054,10 Nov 12,5,Kooyong,BLTC,No. 4,Brent Vermalis,Greg Kluge,Greg Kluge,5-8,5,8,0,1,Completed,true,false,false
+AP016061,17 Nov 12,6,BLTC,Fitzroy,No. 1,Masoud Ahmed,Gianfranco Natale,Gianfranco Natale,6-8,6,8,0,1,Completed,true,false,false
+AP016061,17 Nov 12,6,BLTC,Fitzroy,No. 2,Ian Thomas,Rob Conkie,Rob Conkie,8-9,8,9,0,1,Completed,true,false,false
+AP016061,17 Nov 12,6,BLTC,Fitzroy,No. 3,Anatole Shramkova,Callum Metcher,Anatole Shramkova,8-5,8,5,1,0,Completed,true,false,false
+AP016061,17 Nov 12,6,BLTC,Fitzroy,No. 4,Stuart Macfarlane,John Ratten,John Ratten,4-8,4,8,0,1,Completed,true,false,false
+AP016062,17 Nov 12,6,Highmoor Uniting,Kooyong,No. 1,Paul Luke,Mars Njoo,Paul Luke,8-6,8,6,1,0,Completed,true,false,false
+AP016062,17 Nov 12,6,Highmoor Uniting,Kooyong,No. 2,Ben Abbott,Ron Gerendasi,Ron Gerendasi,8-9,8,9,0,1,Completed,true,false,false
+AP016062,17 Nov 12,6,Highmoor Uniting,Kooyong,No. 3,Scott Lyons,Bobby Lim,Bobby Lim,4-8,4,8,0,1,Completed,true,false,false
+AP016062,17 Nov 12,6,Highmoor Uniting,Kooyong,No. 4,Jayden Moorfoot,Peter Solin,Jayden Moorfoot,8-5,8,5,1,0,Completed,true,false,false
+AP016063,17 Nov 12,6,Coatesville,Maccabi,No. 1,Fikret Suleyman,Alon Karp,Alon Karp,4-8,4,8,0,1,Completed,true,false,false
+AP016063,17 Nov 12,6,Coatesville,Maccabi,No. 2,Cameron James,Jared Krowitz,Jared Krowitz,0-8,0,8,0,1,Completed,true,false,false
+AP016063,17 Nov 12,6,Coatesville,Maccabi,No. 3,James Rate,Naveh Dvir-Ovadia,Naveh Dvir-Ovadia,2-8,2,8,0,1,Completed,true,false,false
+AP016063,17 Nov 12,6,Coatesville,Maccabi,No. 4,Michael Bourke,Jonathon Roseman,Jonathon Roseman,4-8,4,8,0,1,Completed,true,false,false
+AP016064,17 Nov 12,6,Dendy Park,Carmelite,No. 1,Nick Jeffery,Stephen Schweier,Nick Jeffery,8-1,8,1,1,0,Completed,true,false,false
+AP016064,17 Nov 12,6,Dendy Park,Carmelite,No. 2,Garion Rowe,Victor Blitsas,Garion Rowe,8-4,8,4,1,0,Completed,true,false,false
+AP016064,17 Nov 12,6,Dendy Park,Carmelite,No. 3,Brenton Kos,Edwin Jupp,Brenton Kos,8-3,8,3,1,0,Completed,true,false,false
+AP016064,17 Nov 12,6,Dendy Park,Carmelite,No. 4,Stefan Woolley,Brendon Luve,Stefan Woolley,8-1,8,1,1,0,Completed,true,false,false
+AP016071,24 Nov 12,7,Kooyong,Fitzroy,No. 1,Mars Njoo,Gianfranco Natale,Mars Njoo,9-7,9,7,1,0,Completed,true,false,false
+AP016071,24 Nov 12,7,Kooyong,Fitzroy,No. 2,Bobby Lim,Rob Conkie,Rob Conkie,5-8,5,8,0,1,Completed,true,false,false
+AP016071,24 Nov 12,7,Kooyong,Fitzroy,No. 3,Bryce Mitchelson,Callum Metcher,Callum Metcher,4-8,4,8,0,1,Completed,true,false,false
+AP016071,24 Nov 12,7,Kooyong,Fitzroy,No. 4,Brent Vermalis,Joe Spano,Brent Vermalis,8-6,8,6,1,0,Completed,true,false,false
+AP016072,24 Nov 12,7,BLTC,Highmoor Uniting,No. 1,Masoud Ahmed,Paul Luke,Paul Luke,3-8,3,8,0,1,Completed,true,false,false
+AP016072,24 Nov 12,7,BLTC,Highmoor Uniting,No. 2,Ian Thomas,Glenn Collins,Ian Thomas,8-1,8,1,1,0,Completed,true,false,false
+AP016072,24 Nov 12,7,BLTC,Highmoor Uniting,No. 3,Anatole Shramkova,Jason Mahmoud,Anatole Shramkova,8-5,8,5,1,0,Completed,true,false,false
+AP016072,24 Nov 12,7,BLTC,Highmoor Uniting,No. 4,Oliver Florent,Scott Lyons,Oliver Florent,8-3,8,3,1,0,Completed,true,false,false
+AP016073,24 Nov 12,7,Carmelite,Maccabi,No. 1,Stephen Schweier,Alon Karp,Alon Karp,2-8,2,8,0,1,Completed,true,false,false
+AP016073,24 Nov 12,7,Carmelite,Maccabi,No. 2,Alex Molnar,Steven Gostin,Steven Gostin,5-8,5,8,0,1,Completed,true,false,false
+AP016073,24 Nov 12,7,Carmelite,Maccabi,No. 3,Brendon Luve,Naveh Dvir-Ovadia,Naveh Dvir-Ovadia,5-8,5,8,0,1,Completed,true,false,false
+AP016073,24 Nov 12,7,Carmelite,Maccabi,No. 4,Stephen Bridges,Jonathon Roseman,Jonathon Roseman,1-8,1,8,0,1,Completed,true,false,false
+AP016081,01 Dec 12,8,Dendy Park,Kooyong,No. 1,Garion Rowe,Ross Green,Ross Green,5-8,5,8,0,1,Completed,true,false,false
+AP016081,01 Dec 12,8,Dendy Park,Kooyong,No. 2,Brenton Kos,Bryce Mitchelson,Brenton Kos,8-3,8,3,1,0,Completed,true,false,false
+AP016081,01 Dec 12,8,Dendy Park,Kooyong,No. 3,Stefan Woolley,Brent Vermalis,Brent Vermalis,3-8,3,8,0,1,Completed,true,false,false
+AP016081,01 Dec 12,8,Dendy Park,Kooyong,No. 4,Kerry Sindell,Peter Solin,Peter Solin,3-8,3,8,0,1,Completed,true,false,false
+AP016082,01 Dec 12,8,Maccabi,BLTC,No. 1,Arthur Vainbrandt,Masoud Ahmed,Masoud Ahmed,5-8,5,8,0,1,Completed,true,false,false
+AP016082,01 Dec 12,8,Maccabi,BLTC,No. 2,Jared Krowitz,Anatole Shramkova,Anatole Shramkova,5-8,5,8,0,1,Completed,true,false,false
+AP016082,01 Dec 12,8,Maccabi,BLTC,No. 3,Steven Gostin,Roger Boyd,Steven Gostin,8-1,8,1,1,0,Completed,true,false,false
+AP016082,01 Dec 12,8,Maccabi,BLTC,No. 4,Jonathon Roseman,Oliver Florent,Oliver Florent,6-8,6,8,0,1,Completed,true,false,false
+AP016083,01 Dec 12,8,Coatesville,Fitzroy,No. 1,Fikret Suleyman,Gianfranco Natale,Gianfranco Natale,4-8,4,8,0,1,Completed,true,false,false
+AP016083,01 Dec 12,8,Coatesville,Fitzroy,No. 2,Callum Rankin,John Ratten,Callum Rankin,8-4,8,4,1,0,Completed,true,false,false
+AP016083,01 Dec 12,8,Coatesville,Fitzroy,No. 3,James Rate,Daniel Potenza,Daniel Potenza,7-9,7,9,0,1,Completed,true,false,false
+AP016083,01 Dec 12,8,Coatesville,Fitzroy,No. 4,Michael Bourke,Kevin Warwick,Kevin Warwick,8-9,8,9,0,1,Completed,true,false,false
+AP016084,01 Dec 12,8,Carmelite,Highmoor Uniting,No. 1,Jason Bronts,Paul Luke,Paul Luke,4-8,4,8,0,1,Completed,true,false,false
+AP016084,01 Dec 12,8,Carmelite,Highmoor Uniting,No. 2,Alex Molnar,Ben Abbott,Ben Abbott,4-8,4,8,0,1,Completed,true,false,false
+AP016084,01 Dec 12,8,Carmelite,Highmoor Uniting,No. 3,Victor Blitsas,Pat Meehan,Victor Blitsas,8-2,8,2,1,0,Completed,true,false,false
+AP016084,01 Dec 12,8,Carmelite,Highmoor Uniting,No. 4,Geoff Patsouris,Scott Lyons,Geoff Patsouris,8-5,8,5,1,0,Completed,true,false,false
+AP016091,08 Dec 12,9,Kooyong,Carmelite,No. 1,Mars Njoo,Stephen Schweier,Mars Njoo,9-7,9,7,1,0,Completed,true,false,false
+AP016091,08 Dec 12,9,Kooyong,Carmelite,No. 2,Ron Gerendasi,Alex Molnar,Alex Molnar,5-8,5,8,0,1,Completed,true,false,false
+AP016091,08 Dec 12,9,Kooyong,Carmelite,No. 3,Bobby Lim,Geoff Patsouris,Bobby Lim,8-5,8,5,1,0,Completed,true,false,false
+AP016091,08 Dec 12,9,Kooyong,Carmelite,No. 4,Peter Solin,Edwin Jupp,Peter Solin,8-5,8,5,1,0,Completed,true,false,false
+AP016092,08 Dec 12,9,BLTC,Dendy Park,No. 1,Masoud Ahmed,Nick Jeffery,Masoud Ahmed,8-5,8,5,1,0,Completed,true,false,false
+AP016092,08 Dec 12,9,BLTC,Dendy Park,No. 2,Ian Thomas,Garion Rowe,Ian Thomas,8-5,8,5,1,0,Completed,true,false,false
+AP016092,08 Dec 12,9,BLTC,Dendy Park,No. 3,Roger Boyd,Brenton Kos,Brenton Kos,4-8,4,8,0,1,Completed,true,false,false
+AP016092,08 Dec 12,9,BLTC,Dendy Park,No. 4,San Derooy,Stefan Woolley,Stefan Woolley,3-8,3,8,0,1,Completed,true,false,false
+AP016093,08 Dec 12,9,Fitzroy,Maccabi,No. 1,Rob Conkie,Steven Gostin,Rob Conkie,8-4,8,4,1,0,Completed,true,false,false
+AP016093,08 Dec 12,9,Fitzroy,Maccabi,No. 2,John Ratten,Jonathon Roseman,John Ratten,8-4,8,4,1,0,Completed,true,false,false
+AP016093,08 Dec 12,9,Fitzroy,Maccabi,No. 3,Joe Spano,Saul Muscatel,Joe Spano,6-4,6,4,1,0,Completed,true,false,false
+AP016093,08 Dec 12,9,Fitzroy,Maccabi,No. 4,Kevin Warwick,Max Needleman,,3-2,3,2,1,0,Unfinished,false,false,false
+AP016094,08 Dec 12,9,Highmoor Uniting,Coatesville,No. 1,Ben Abbott,Fikret Suleyman,Fikret Suleyman,5-8,5,8,0,1,Completed,true,false,false
+AP016094,08 Dec 12,9,Highmoor Uniting,Coatesville,No. 2,Glenn Collins,Callum Rankin,Glenn Collins,8-3,8,3,1,0,Completed,true,false,false
+AP016094,08 Dec 12,9,Highmoor Uniting,Coatesville,No. 3,Jason Mahmoud,Cameron James,Cameron James,5-8,5,8,0,1,Completed,true,false,false
+AP016094,08 Dec 12,9,Highmoor Uniting,Coatesville,No. 4,Scott Lyons,[Unnamed emergency — TROLS AP016094 away code 4],Scott Lyons,8-0,8,0,1,0,Completed,false,false,true
+AP016101,15 Dec 12,10,Coatesville,Kooyong,No. 1,Jack Callaghan,Ron Gerendasi,Ron Gerendasi,3-8,3,8,0,1,Completed,true,false,false
+AP016101,15 Dec 12,10,Coatesville,Kooyong,No. 2,Fikret Suleyman,Bobby Lim,Bobby Lim,5-8,5,8,0,1,Completed,true,false,false
+AP016101,15 Dec 12,10,Coatesville,Kooyong,No. 3,Callum Rankin,Bryce Mitchelson,Bryce Mitchelson,6-8,6,8,0,1,Completed,true,false,false
+AP016101,15 Dec 12,10,Coatesville,Kooyong,No. 4,Michael Bourke,Peter Solin,Peter Solin,1-8,1,8,0,1,Completed,true,false,false
+AP016102,15 Dec 12,10,Carmelite,BLTC,No. 1,Stephen Schweier,Ian Thomas,Stephen Schweier,8-3,8,3,1,0,Completed,true,false,false
+AP016102,15 Dec 12,10,Carmelite,BLTC,No. 2,Alex Molnar,Anatole Shramkova,Anatole Shramkova,8-9,8,9,0,1,Completed,true,false,false
+AP016102,15 Dec 12,10,Carmelite,BLTC,No. 3,Brendon Luve,Oliver Florent,Oliver Florent,3-8,3,8,0,1,Completed,true,false,false
+AP016102,15 Dec 12,10,Carmelite,BLTC,No. 4,L Horesley,San Derooy,San Derooy,4-8,4,8,0,1,Completed,true,false,false
+AP016103,15 Dec 12,10,Dendy Park,Fitzroy,No. 1,Nick Jeffery,Gianfranco Natale,Gianfranco Natale,5-8,5,8,0,1,Completed,true,false,false
+AP016103,15 Dec 12,10,Dendy Park,Fitzroy,No. 2,Garion Rowe,Rob Conkie,Rob Conkie,5-8,5,8,0,1,Completed,true,false,false
+AP016103,15 Dec 12,10,Dendy Park,Fitzroy,No. 3,Brenton Kos,Callum Metcher,Callum Metcher,4-8,4,8,0,1,Completed,true,false,false
+AP016103,15 Dec 12,10,Dendy Park,Fitzroy,No. 4,Stefan Woolley,Joe Spano,Stefan Woolley,8-4,8,4,1,0,Completed,true,false,false
+AP016104,15 Dec 12,10,Maccabi,Highmoor Uniting,No. 1,Arthur Vainbrandt,Paul Luke,Paul Luke,2-8,2,8,0,1,Completed,true,false,false
+AP016104,15 Dec 12,10,Maccabi,Highmoor Uniting,No. 2,Steven Gostin,Glenn Collins,Steven Gostin,8-2,8,2,1,0,Completed,true,false,false
+AP016104,15 Dec 12,10,Maccabi,Highmoor Uniting,No. 3,Naveh Dvir-Ovadia,Pat Meehan,Naveh Dvir-Ovadia,8-2,8,2,1,0,Completed,true,false,false
+AP016104,15 Dec 12,10,Maccabi,Highmoor Uniting,No. 4,Jonathon Roseman,Jason Mahmoud,Jonathon Roseman,8-1,8,1,1,0,Completed,true,false,false
+AP016111,02 Feb 13,11,Kooyong,Maccabi,No. 1,Bobby Lim,Arthur Vainbrandt,Bobby Lim,9-8,9,8,1,0,Completed,true,false,false
+AP016111,02 Feb 13,11,Kooyong,Maccabi,No. 2,Ben Bobos,Alon Karp,Ben Bobos,8-2,8,2,1,0,Completed,true,false,false
+AP016111,02 Feb 13,11,Kooyong,Maccabi,No. 3,Bryce Mitchelson,Steven Gostin,Steven Gostin,3-8,3,8,0,1,Completed,true,false,false
+AP016111,02 Feb 13,11,Kooyong,Maccabi,No. 4,Peter Solin,Jonathon Roseman,Jonathon Roseman,3-8,3,8,0,1,Completed,true,false,false
+AP016112,02 Feb 13,11,BLTC,Coatesville,No. 1,Masoud Ahmed,Jack Callaghan,Masoud Ahmed,9-7,9,7,1,0,Completed,true,false,false
+AP016112,02 Feb 13,11,BLTC,Coatesville,No. 2,Ian Thomas,Kelvin Callaghan,Ian Thomas,8-0,8,0,1,0,Completed,true,false,false
+AP016112,02 Feb 13,11,BLTC,Coatesville,No. 3,Anatole Shramkova,Callum Rankin,Anatole Shramkova,8-3,8,3,1,0,Completed,true,false,false
+AP016112,02 Feb 13,11,BLTC,Coatesville,No. 4,San Derooy,Michael Bourke,San Derooy,8-1,8,1,1,0,Completed,true,false,false
+AP016113,02 Feb 13,11,Fitzroy,Carmelite,No. 1,Callum Metcher,Stephen Schweier,Stephen Schweier,6-8,6,8,0,1,Completed,true,false,false
+AP016113,02 Feb 13,11,Fitzroy,Carmelite,No. 2,John Ratten,Alex Molnar,Alex Molnar,2-8,2,8,0,1,Completed,true,false,false
+AP016113,02 Feb 13,11,Fitzroy,Carmelite,No. 3,Joe Spano,Victor Blitsas,Victor Blitsas,2-8,2,8,0,1,Completed,true,false,false
+AP016113,02 Feb 13,11,Fitzroy,Carmelite,No. 4,Kevin Warwick,Geoff Patsouris,Geoff Patsouris,3-8,3,8,0,1,Completed,true,false,false
+AP016114,02 Feb 13,11,Highmoor Uniting,Dendy Park,No. 1,Paul Luke,Nick Jeffery,Nick Jeffery,8-9,8,9,0,1,Completed,true,false,false
+AP016114,02 Feb 13,11,Highmoor Uniting,Dendy Park,No. 2,Ben Abbott,Garion Rowe,Garion Rowe,8-9,8,9,0,1,Completed,true,false,false
+AP016114,02 Feb 13,11,Highmoor Uniting,Dendy Park,No. 3,Glenn Collins,Brenton Kos,Brenton Kos,7-9,7,9,0,1,Completed,true,false,false
+AP016114,02 Feb 13,11,Highmoor Uniting,Dendy Park,No. 4,Pat Meehan,Stefan Woolley,Stefan Woolley,1-8,1,8,0,1,Completed,true,false,false
+AP016121,09 Feb 13,12,Highmoor Uniting,Fitzroy,No. 1,Paul Luke,Peter Geha,Paul Luke,8-3,8,3,1,0,Completed,true,false,false
+AP016121,09 Feb 13,12,Highmoor Uniting,Fitzroy,No. 2,Ben Abbott,Gianfranco Natale,Gianfranco Natale,1-8,1,8,0,1,Completed,true,false,false
+AP016121,09 Feb 13,12,Highmoor Uniting,Fitzroy,No. 3,Pat Meehan,Rob Conkie,Rob Conkie,2-8,2,8,0,1,Completed,true,false,false
+AP016121,09 Feb 13,12,Highmoor Uniting,Fitzroy,No. 4,Scott Lyons,John Ratten,John Ratten,5-8,5,8,0,1,Completed,true,false,false
+AP016122,09 Feb 13,12,Coatesville,Carmelite,No. 1,Jack Callaghan,Stephen Schweier,Stephen Schweier,4-8,4,8,0,1,Completed,true,false,false
+AP016122,09 Feb 13,12,Coatesville,Carmelite,No. 2,Fikret Suleyman,Jason Bronts,Jason Bronts,2-8,2,8,0,1,Completed,true,false,false
+AP016122,09 Feb 13,12,Coatesville,Carmelite,No. 3,Callum Rankin,Alex Molnar,Callum Rankin,8-4,8,4,1,0,Completed,true,false,false
+AP016122,09 Feb 13,12,Coatesville,Carmelite,No. 4,Michael Bourke,Geoff Patsouris,Geoff Patsouris,5-8,5,8,0,1,Completed,true,false,false
+AP016123,09 Feb 13,12,Dendy Park,Maccabi,No. 1,Nick Jeffery,Arthur Vainbrandt,Nick Jeffery,8-4,8,4,1,0,Completed,true,false,false
+AP016123,09 Feb 13,12,Dendy Park,Maccabi,No. 2,Garion Rowe,Alon Karp,Garion Rowe,8-3,8,3,1,0,Completed,true,false,false
+AP016123,09 Feb 13,12,Dendy Park,Maccabi,No. 3,Brenton Kos,Steven Gostin,Brenton Kos,8-3,8,3,1,0,Completed,true,false,false
+AP016123,09 Feb 13,12,Dendy Park,Maccabi,No. 4,Stefan Woolley,Naveh Dvir-Ovadia,Naveh Dvir-Ovadia,5-8,5,8,0,1,Completed,true,false,false
+AP016124,09 Feb 13,12,BLTC,Kooyong,No. 1,Masoud Ahmed,Mars Njoo,Masoud Ahmed,8-5,8,5,1,0,Completed,true,false,false
+AP016124,09 Feb 13,12,BLTC,Kooyong,No. 2,Ian Thomas,Scott Donnellan,Ian Thomas,8-5,8,5,1,0,Completed,true,false,false
+AP016124,09 Feb 13,12,BLTC,Kooyong,No. 3,Anatole Shramkova,Ben Bobos,Anatole Shramkova,8-3,8,3,1,0,Completed,true,false,false
+AP016124,09 Feb 13,12,BLTC,Kooyong,No. 4,Roger Boyd,Bryce Mitchelson,Bryce Mitchelson,1-8,1,8,0,1,Completed,true,false,false
+AP016131,16 Feb 13,13,Fitzroy,BLTC,No. 1,Gianfranco Natale,Masoud Ahmed,Gianfranco Natale,8-5,8,5,1,0,Completed,true,false,false
+AP016131,16 Feb 13,13,Fitzroy,BLTC,No. 2,Rob Conkie,Ian Thomas,Rob Conkie,9-7,9,7,1,0,Completed,true,false,false
+AP016131,16 Feb 13,13,Fitzroy,BLTC,No. 3,Joe Spano,Oliver Florent,Oliver Florent,3-8,3,8,0,1,Completed,true,false,false
+AP016131,16 Feb 13,13,Fitzroy,BLTC,No. 4,Kevin Warwick,San Derooy,San Derooy,4-8,4,8,0,1,Completed,true,false,false
+AP016132,16 Feb 13,13,Kooyong,Highmoor Uniting,No. 1,Mars Njoo,Paul Luke,Paul Luke,4-8,4,8,0,1,Completed,true,false,false
+AP016132,16 Feb 13,13,Kooyong,Highmoor Uniting,No. 2,Bobby Lim,Ben Abbott,Bobby Lim,8-6,8,6,1,0,Completed,true,false,false
+AP016132,16 Feb 13,13,Kooyong,Highmoor Uniting,No. 3,Ben Bobos,Pat Meehan,Ben Bobos,8-2,8,2,1,0,Completed,true,false,false
+AP016132,16 Feb 13,13,Kooyong,Highmoor Uniting,No. 4,Peter Solin,Jason Mahmoud,Peter Solin,8-1,8,1,1,0,Completed,true,false,false
+AP016133,16 Feb 13,13,Maccabi,Coatesville,No. 1,Alon Karp,Fikret Suleyman,Alon Karp,8-0,8,0,1,0,Completed,true,false,false
+AP016133,16 Feb 13,13,Maccabi,Coatesville,No. 2,Steven Gostin,Callum Rankin,Steven Gostin,8-2,8,2,1,0,Completed,true,false,false
+AP016133,16 Feb 13,13,Maccabi,Coatesville,No. 3,Tim Hall,Michael Bourke,Tim Hall,8-1,8,1,1,0,Completed,true,false,false
+AP016133,16 Feb 13,13,Maccabi,Coatesville,No. 4,Saul Muscatel,Cameron James,Saul Muscatel,8-2,8,2,1,0,Completed,true,false,false
+AP016134,16 Feb 13,13,Carmelite,Dendy Park,No. 1,Stephen Schweier,Nick Jeffery,Nick Jeffery,1-8,1,8,0,1,Completed,true,false,false
+AP016134,16 Feb 13,13,Carmelite,Dendy Park,No. 2,Jason Bronts,Garion Rowe,Garion Rowe,8-9,8,9,0,1,Completed,true,false,false
+AP016134,16 Feb 13,13,Carmelite,Dendy Park,No. 3,Geoff Patsouris,Brenton Kos,Brenton Kos,8-9,8,9,0,1,Completed,true,false,false
+AP016134,16 Feb 13,13,Carmelite,Dendy Park,No. 4,Josh Kaporowski,Stefan Woolley,Stefan Woolley,6-8,6,8,0,1,Completed,true,false,false
+AP016141,23 Feb 13,14,Fitzroy,Kooyong,No. 1,Peter Geha,Ross Green,Ross Green,6-8,6,8,0,1,Completed,true,false,false
+AP016141,23 Feb 13,14,Fitzroy,Kooyong,No. 2,Gianfranco Natale,Bobby Lim,Gianfranco Natale,8-4,8,4,1,0,Completed,true,false,false
+AP016141,23 Feb 13,14,Fitzroy,Kooyong,No. 3,John Ratten,Bryce Mitchelson,Bryce Mitchelson,4-8,4,8,0,1,Completed,true,false,false
+AP016141,23 Feb 13,14,Fitzroy,Kooyong,No. 4,Joe Spano,Peter Solin,Peter Solin,6-8,6,8,0,1,Completed,true,false,false
+AP016142,23 Feb 13,14,Highmoor Uniting,BLTC,No. 1,Pat Meehan,Ian Thomas,Ian Thomas,3-8,3,8,0,1,Completed,true,false,false
+AP016142,23 Feb 13,14,Highmoor Uniting,BLTC,No. 2,Jason Mahmoud,Anatole Shramkova,Anatole Shramkova,0-8,0,8,0,1,Completed,true,false,false
+AP016142,23 Feb 13,14,Highmoor Uniting,BLTC,No. 3,Scott Lyons,Roger Boyd,Roger Boyd,4-8,4,8,0,1,Completed,true,false,false
+AP016142,23 Feb 13,14,Highmoor Uniting,BLTC,No. 4,John Smak,San Derooy,San Derooy,3-8,3,8,0,1,Completed,true,false,false
+AP016143,23 Feb 13,14,Maccabi,Carmelite,No. 1,Alon Karp,Stephen Schweier,Alon Karp,8-3,8,3,1,0,Completed,true,false,false
+AP016143,23 Feb 13,14,Maccabi,Carmelite,No. 2,Steven Gostin,Geoff Patsouris,Steven Gostin,8-2,8,2,1,0,Completed,true,false,false
+AP016143,23 Feb 13,14,Maccabi,Carmelite,No. 3,Naveh Dvir-Ovadia,Ben Nakic,Naveh Dvir-Ovadia,8-2,8,2,1,0,Completed,true,false,false
+AP016143,23 Feb 13,14,Maccabi,Carmelite,No. 4,Saul Muscatel,Ferruccio Lunardi,Saul Muscatel,9-8,9,8,1,0,Completed,true,false,false
+AP016144,23 Feb 13,14,Dendy Park,Coatesville,No. 1,Nick Jeffery,Jack Callaghan,Nick Jeffery,8-1,8,1,1,0,Completed,true,false,false
+AP016144,23 Feb 13,14,Dendy Park,Coatesville,No. 2,Garion Rowe,Fikret Suleyman,Garion Rowe,8-2,8,2,1,0,Completed,true,false,false
+AP016144,23 Feb 13,14,Dendy Park,Coatesville,No. 3,Brenton Kos,Callum Rankin,Brenton Kos,8-3,8,3,1,0,Completed,true,false,false
+AP016144,23 Feb 13,14,Dendy Park,Coatesville,No. 4,Stefan Woolley,Michael Bourke,Stefan Woolley,8-5,8,5,1,0,Completed,true,false,false
+AP016301,,16,Kooyong,Fitzroy,No. 1,Mars Njoo,Gianfranco Natale,Gianfranco Natale,4-8,4,8,0,1,Completed,true,false,false
+AP016301,,16,Kooyong,Fitzroy,No. 2,Ross Green,Rob Conkie,Rob Conkie,5-8,5,8,0,1,Completed,true,false,false
+AP016301,,16,Kooyong,Fitzroy,No. 3,Bobby Lim,Callum Metcher,Bobby Lim,9-8,9,8,1,0,Completed,true,false,false
+AP016301,,16,Kooyong,Fitzroy,No. 4,Bryce Mitchelson,John Ratten,John Ratten,5-8,5,8,0,1,Completed,true,false,false
+AP016302,,16,BLTC,Dendy Park,No. 1,Masoud Ahmed,Nick Jeffery,Nick Jeffery,2-8,2,8,0,1,Completed,true,false,false
+AP016302,,16,BLTC,Dendy Park,No. 2,Ian Thomas,Garion Rowe,Ian Thomas,8-4,8,4,1,0,Completed,true,false,false
+AP016302,,16,BLTC,Dendy Park,No. 3,Anatole Shramkova,Brenton Kos,Brenton Kos,4-8,4,8,0,1,Completed,true,false,false
+AP016302,,16,BLTC,Dendy Park,No. 4,Roger Boyd,Stefan Woolley,Roger Boyd,8-3,8,3,1,0,Completed,true,false,false
+AP016311,,16,Kooyong,Dendy Park,No. 1,Mars Njoo,Nick Jeffery,Nick Jeffery,5-8,5,8,0,1,Completed,true,true,false
+AP016311,,16,Kooyong,Dendy Park,No. 2,Ross Green,Garion Rowe,Ross Green,8-4,8,4,1,0,Completed,true,true,false
+AP016311,,16,Kooyong,Dendy Park,No. 3,Ben Bobos,Brenton Kos,Ben Bobos,8-2,8,2,1,0,Completed,true,true,false
+AP016311,,16,Kooyong,Dendy Park,No. 4,Bryce Mitchelson,Stefan Woolley,Bryce Mitchelson,8-4,8,4,1,0,Completed,true,false,false
+AP016321,,17,Fitzroy,Kooyong,No. 1,Gianfranco Natale,Mars Njoo,Mars Njoo,4-8,4,8,0,1,Completed,true,false,true
+AP016321,,17,Fitzroy,Kooyong,No. 2,Peter Geha,Ross Green,Ross Green,4-8,4,8,0,1,Completed,true,true,true
+AP016321,,17,Fitzroy,Kooyong,No. 3,Rob Conkie,Bobby Lim,Rob Conkie,8-6,8,6,1,0,Completed,true,false,true
+AP016321,,17,Fitzroy,Kooyong,No. 4,Callum Metcher,Ben Bobos,Callum Metcher,8-5,8,5,1,0,Completed,true,true,true

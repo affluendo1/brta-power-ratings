@@ -1,0 +1,69 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP021012,14 Nov 20,1,East Malvern,Patterson Lakes,No. 1,Rajat Dang,Paul Pavel,Rajat Dang,8-3,8,3,1,0,Completed,true,false,false
+AP021012,14 Nov 20,1,East Malvern,Patterson Lakes,No. 2,Faran Mazloomi,Joshua Hurst,Joshua Hurst,7-8,7,8,0,1,Completed,true,false,false
+AP021012,14 Nov 20,1,East Malvern,Patterson Lakes,No. 3,James Bryden,Joe Zabeneh,Joe Zabeneh,1-8,1,8,0,1,Completed,true,false,false
+AP021012,14 Nov 20,1,East Malvern,Patterson Lakes,No. 4,Ashkan Mazloomi,Tom Horn,Ashkan Mazloomi,8-3,8,3,1,0,Completed,true,false,false
+AP021013,14 Nov 20,1,Glen Huntly,Mentone,No. 1,John Van Der Meulen,Jordan Dean,Jordan Dean,3-8,3,8,0,1,Completed,true,false,false
+AP021013,14 Nov 20,1,Glen Huntly,Mentone,No. 2,Dean Russell,Jerome Dean,Dean Russell,8-4,8,4,1,0,Completed,true,false,false
+AP021013,14 Nov 20,1,Glen Huntly,Mentone,No. 3,Anirudh Devanathan,Nathan Van Der Heide,Anirudh Devanathan,8-4,8,4,1,0,Completed,true,false,false
+AP021013,14 Nov 20,1,Glen Huntly,Mentone,No. 4,William Gort,Han Pan,William Gort,8-4,8,4,1,0,Completed,true,false,false
+AP021021,21 Nov 20,2,Mentone,Royal Ave,No. 1,Jordan Dean,Stefan Harrer,Jordan Dean,8-2,8,2,1,0,Completed,true,false,false
+AP021021,21 Nov 20,2,Mentone,Royal Ave,No. 2,Jerome Dean,Milan Bandur,Jerome Dean,8-7,8,7,1,0,Completed,true,false,false
+AP021021,21 Nov 20,2,Mentone,Royal Ave,No. 3,Nathan Van Der Heide,David Urpani,Nathan Van Der Heide,8-6,8,6,1,0,Completed,true,false,false
+AP021021,21 Nov 20,2,Mentone,Royal Ave,No. 4,Han Pan,Dean Barr,Han Pan,8-5,8,5,1,0,Completed,true,false,true
+AP021022,21 Nov 20,2,Patterson Lakes,Glen Huntly,No. 1,Joshua Hurst,John Van Der Meulen,John Van Der Meulen,7-8,7,8,0,1,Completed,true,false,false
+AP021022,21 Nov 20,2,Patterson Lakes,Glen Huntly,No. 2,Paul Pavel,[Unnamed emergency — TROLS AP021022 away code 2],Paul Pavel,8-0,8,0,1,0,Completed,false,false,true
+AP021022,21 Nov 20,2,Patterson Lakes,Glen Huntly,No. 3,Joe Zabeneh,Anirudh Devanathan,Anirudh Devanathan,5-8,5,8,0,1,Completed,true,false,false
+AP021022,21 Nov 20,2,Patterson Lakes,Glen Huntly,No. 4,Tom Horn,William Gort,William Gort,5-8,5,8,0,1,Completed,true,false,false
+AP021031,28 Nov 20,3,Royal Ave,East Malvern,No. 1,Milan Bandur,Rajat Dang,Rajat Dang,1-8,1,8,0,1,Completed,true,false,false
+AP021031,28 Nov 20,3,Royal Ave,East Malvern,No. 2,Fraser McMillan,Lachlan Bayley,Lachlan Bayley,1-8,1,8,0,1,Completed,true,false,true
+AP021031,28 Nov 20,3,Royal Ave,East Malvern,No. 3,Tal Zafrin,James Bryden,Tal Zafrin,8-5,8,5,1,0,Completed,true,false,false
+AP021031,28 Nov 20,3,Royal Ave,East Malvern,No. 4,Shaun Campbell,Mose Rabe,Mose Rabe,3-8,3,8,0,1,Completed,true,false,true
+AP021033,28 Nov 20,3,Mentone,Patterson Lakes,No. 1,Jordan Dean,Joshua Hurst,Jordan Dean,8-1,8,1,1,0,Completed,true,false,false
+AP021033,28 Nov 20,3,Mentone,Patterson Lakes,No. 2,Jerome Dean,Paul Pavel,Jerome Dean,8-6,8,6,1,0,Completed,true,false,false
+AP021033,28 Nov 20,3,Mentone,Patterson Lakes,No. 3,Nathan Van Der Heide,Joe Zabeneh,Joe Zabeneh,7-8,7,8,0,1,Completed,true,false,false
+AP021033,28 Nov 20,3,Mentone,Patterson Lakes,No. 4,Han Pan,Tom Horn,Han Pan,8-3,8,3,1,0,Completed,true,false,false
+AP021041,05 Dec 20,4,Patterson Lakes,Royal Ave,No. 1,Joshua Hurst,Stefan Harrer,Stefan Harrer,3-8,3,8,0,1,Completed,true,false,false
+AP021041,05 Dec 20,4,Patterson Lakes,Royal Ave,No. 2,Anders Lang,Milan Bandur,Anders Lang,8-6,8,6,1,0,Completed,true,true,false
+AP021041,05 Dec 20,4,Patterson Lakes,Royal Ave,No. 3,Andrew Cook,David Urpani,David Urpani,1-8,1,8,0,1,Completed,true,true,false
+AP021041,05 Dec 20,4,Patterson Lakes,Royal Ave,No. 4,Tom Horn,Shaun Campbell,Shaun Campbell,7-8,7,8,0,1,Completed,true,false,false
+AP021043,05 Dec 20,4,East Malvern,Glen Huntly,No. 1,Rajat Dang,John Van Der Meulen,John Van Der Meulen,5-8,5,8,0,1,Completed,true,false,false
+AP021043,05 Dec 20,4,East Malvern,Glen Huntly,No. 2,Faran Mazloomi,Dean Russell,Dean Russell,0-8,0,8,0,1,Completed,true,false,false
+AP021043,05 Dec 20,4,East Malvern,Glen Huntly,No. 3,James Bryden,Anirudh Devanathan,Anirudh Devanathan,2-8,2,8,0,1,Completed,true,false,false
+AP021043,05 Dec 20,4,East Malvern,Glen Huntly,No. 4,Ashkan Mazloomi,William Gort,William Gort,6-8,6,8,0,1,Completed,true,false,false
+AP021051,12 Dec 20,5,Royal Ave,Glen Huntly,No. 1,Stefan Harrer,John Van Der Meulen,John Van Der Meulen,6-8,6,8,0,1,Completed,true,false,false
+AP021051,12 Dec 20,5,Royal Ave,Glen Huntly,No. 2,Milan Bandur,Dean Russell,Dean Russell,3-8,3,8,0,1,Completed,true,false,false
+AP021051,12 Dec 20,5,Royal Ave,Glen Huntly,No. 3,Fraser McMillan,Anirudh Devanathan,Anirudh Devanathan,1-8,1,8,0,1,Completed,true,false,false
+AP021051,12 Dec 20,5,Royal Ave,Glen Huntly,No. 4,Shaun Campbell,William Gort,Shaun Campbell,8-3,8,3,1,0,Completed,true,false,false
+AP021053,12 Dec 20,5,Mentone,East Malvern,No. 1,Jordan Dean,Rajat Dang,Jordan Dean,8-5,8,5,1,0,Completed,true,false,false
+AP021053,12 Dec 20,5,Mentone,East Malvern,No. 2,Jerome Dean,Faran Mazloomi,Faran Mazloomi,4-8,4,8,0,1,Completed,true,false,false
+AP021053,12 Dec 20,5,Mentone,East Malvern,No. 3,Nathan Van Der Heide,James Bryden,Nathan Van Der Heide,8-2,8,2,1,0,Completed,true,false,false
+AP021053,12 Dec 20,5,Mentone,East Malvern,No. 4,Bruce Anderson,Ashkan Mazloomi,Bruce Anderson,8-5,8,5,1,0,Completed,true,false,false
+AP021063,30 Jan 21,6,Mentone,Glen Huntly,No. 1,Jordan Dean,John Van Der Meulen,Jordan Dean,8-0,8,0,1,0,Completed,true,false,false
+AP021063,30 Jan 21,6,Mentone,Glen Huntly,No. 2,Jerome Dean,Grant Fikaris,Grant Fikaris,0-8,0,8,0,1,Completed,true,false,false
+AP021063,30 Jan 21,6,Mentone,Glen Huntly,No. 3,Nathan Van Der Heide,Anirudh Devanathan,Nathan Van Der Heide,8-0,8,0,1,0,Completed,true,false,false
+AP021063,30 Jan 21,6,Mentone,Glen Huntly,No. 4,Han Pan,William Gort,Han Pan,8-2,8,2,1,0,Completed,true,false,false
+AP021071,06 Feb 21,7,Royal Ave,Mentone,No. 1,Stefan Harrer,Jordan Dean,Jordan Dean,6-8,6,8,0,1,Completed,true,false,false
+AP021071,06 Feb 21,7,Royal Ave,Mentone,No. 2,Milan Bandur,Jerome Dean,Milan Bandur,8-1,8,1,1,0,Completed,true,false,false
+AP021071,06 Feb 21,7,Royal Ave,Mentone,No. 3,Fraser McMillan,Nathan Van Der Heide,Fraser McMillan,8-2,8,2,1,0,Completed,true,false,false
+AP021071,06 Feb 21,7,Royal Ave,Mentone,No. 4,Tal Zafrin,Han Pan,Tal Zafrin,8-5,8,5,1,0,Completed,true,false,false
+AP021072,06 Feb 21,7,Glen Huntly,Patterson Lakes,No. 1,John Van Der Meulen,Pavel Capitan,John Van Der Meulen,8-1,8,1,1,0,Completed,true,false,true
+AP021072,06 Feb 21,7,Glen Huntly,Patterson Lakes,No. 2,Dean Russell,Andrew Cook,Dean Russell,8-7,8,7,1,0,Completed,true,false,true
+AP021072,06 Feb 21,7,Glen Huntly,Patterson Lakes,No. 3,Anirudh Devanathan,Tom Horn,Anirudh Devanathan,8-1,8,1,1,0,Completed,true,false,false
+AP021072,06 Feb 21,7,Glen Huntly,Patterson Lakes,No. 4,Grant Fikaris,Jay Gould,Grant Fikaris,8-3,8,3,1,0,Completed,true,false,false
+AP021081,20 Feb 21,8,East Malvern,Royal Ave,No. 1,Rajat Dang,David Urpani,Rajat Dang,8-3,8,3,1,0,Completed,true,false,false
+AP021081,20 Feb 21,8,East Malvern,Royal Ave,No. 2,Faran Mazloomi,Shaun Campbell,Shaun Campbell,1-8,1,8,0,1,Completed,true,false,false
+AP021081,20 Feb 21,8,East Malvern,Royal Ave,No. 3,Juan Nolan,Tal Zafrin,Juan Nolan,8-0,8,0,1,0,Completed,true,false,false
+AP021081,20 Feb 21,8,East Malvern,Royal Ave,No. 4,James Bryden,Justin Alway,Justin Alway,1-8,1,8,0,1,Completed,true,false,true
+AP021093,27 Feb 21,9,Glen Huntly,East Malvern,No. 1,John Van Der Meulen,Rajat Dang,John Van Der Meulen,8-7,8,7,1,0,Completed,true,false,false
+AP021093,27 Feb 21,9,Glen Huntly,East Malvern,No. 2,Anirudh Devanathan,Faran Mazloomi,Anirudh Devanathan,8-2,8,2,1,0,Completed,true,false,false
+AP021093,27 Feb 21,9,Glen Huntly,East Malvern,No. 3,William Gort,Juan Nolan,Juan Nolan,5-8,5,8,0,1,Completed,true,false,false
+AP021093,27 Feb 21,9,Glen Huntly,East Malvern,No. 4,Grant Fikaris,James Bryden,James Bryden,0-8,0,8,0,1,Completed,true,false,false
+AP021101,13 Mar 21,10,Glen Huntly,Royal Ave,No. 1,John Van Der Meulen,Stefan Harrer,Stefan Harrer,5-8,5,8,0,1,Completed,true,false,false
+AP021101,13 Mar 21,10,Glen Huntly,Royal Ave,No. 2,Anirudh Devanathan,David Urpani,Anirudh Devanathan,8-1,8,1,1,0,Completed,true,false,false
+AP021101,13 Mar 21,10,Glen Huntly,Royal Ave,No. 3,Grant Fikaris,Tal Zafrin,Grant Fikaris,8-0,8,0,1,0,Completed,true,false,false
+AP021101,13 Mar 21,10,Glen Huntly,Royal Ave,No. 4,William Gort,Shaun Campbell,Shaun Campbell,6-8,6,8,0,1,Completed,true,false,false
+AP021321,,16,Glen Huntly,Mentone,No. 1,John Van Der Meulen,Jordan Dean,Jordan Dean,2-8,2,8,0,1,Completed,true,false,false
+AP021321,,16,Glen Huntly,Mentone,No. 2,Anirudh Devanathan,Jerome Dean,Anirudh Devanathan,8-2,8,2,1,0,Completed,true,false,false
+AP021321,,16,Glen Huntly,Mentone,No. 3,Grant Fikaris,Nathan Van Der Heide,Grant Fikaris,8-3,8,3,1,0,Completed,true,false,false
+AP021321,,16,Glen Huntly,Mentone,No. 4,William Gort,Han Pan,William Gort,8-6,8,6,1,0,Completed,true,false,false

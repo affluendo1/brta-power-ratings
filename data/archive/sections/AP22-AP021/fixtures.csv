@@ -1,0 +1,48 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP021011,02 Oct 10,1,regular,Round 1,Lauriston,Hawthorn,0,8,0,4,0,8,12,48,Completed,
+AP021013,02 Oct 10,1,regular,Round 1,BLTC,Oakleigh,7,1,3,1,7,2,56,34,Completed,
+pending-ap021-r1-frankston-east-mordialloc,02 Oct 10,1,regular,Round 1,Frankston East,Mordialloc,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP021021,09 Oct 10,2,regular,Round 2,Oakleigh,Lauriston,6,2,2,2,5,5,51,48,Completed,
+AP021022,09 Oct 10,2,regular,Round 2,Mordialloc,BLTC,0,8,0,4,2,8,38,59,Completed,
+AP021023,09 Oct 10,2,regular,Round 2,Hawthorn,Frankston East,8,0,4,0,8,0,49,21,Completed,
+pending-ap021-r3-bltc-hawthorn,16 Oct 10,3,regular,Round 3,BLTC,Hawthorn,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap021-r3-lauriston-frankston-east,16 Oct 10,3,regular,Round 3,Lauriston,Frankston East,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+pending-ap021-r3-oakleigh-mordialloc,16 Oct 10,3,regular,Round 3,Oakleigh,Mordialloc,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP021041,23 Oct 10,4,regular,Round 4,Mordialloc,Lauriston,6,2,2,2,4,4,38,32,Completed,
+AP021042,23 Oct 10,4,regular,Round 4,Hawthorn,Oakleigh,7,1,3,1,6,3,49,35,Completed,
+AP021043,23 Oct 10,4,regular,Round 4,Frankston East,BLTC,6,2,2,2,4,4,40,36,Completed,
+AP021051,06 Nov 10,5,regular,Round 5,Lauriston,BLTC,6,2,2,2,5,4,43,34,Completed,
+AP021052,06 Nov 10,5,regular,Round 5,Mordialloc,Hawthorn,8,0,4,0,8,0,48,0,Completed,
+AP021053,06 Nov 10,5,regular,Round 5,Oakleigh,Frankston East,1,7,1,3,2,6,21,45,Completed,
+AP021061,13 Nov 10,6,regular,Round 6,Hawthorn,Lauriston,4.5,3.5,1,0,2,0,14,5,Completed,
+AP021062,13 Nov 10,6,regular,Round 6,Mordialloc,Frankston East,4,4,0,0,0,1,11,14,Completed,
+pending-ap021-r6-oakleigh-bltc,13 Nov 10,6,regular,Round 6,Oakleigh,BLTC,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP021071,20 Nov 10,7,regular,Round 7,Lauriston,Oakleigh,7,1,3,1,6,3,46,41,Completed,
+AP021072,20 Nov 10,7,regular,Round 7,BLTC,Mordialloc,7,1,3,1,7,2,49,28,Completed,
+AP021073,20 Nov 10,7,regular,Round 7,Frankston East,Hawthorn,0,8,0,4,0,8,21,48,Completed,
+pending-ap021-r8-frankston-east-lauriston,27 Nov 10,8,regular,Round 8,Frankston East,Lauriston,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap021-r8-hawthorn-bltc,27 Nov 10,8,regular,Round 8,Hawthorn,BLTC,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap021-r8-mordialloc-oakleigh,27 Nov 10,8,regular,Round 8,Mordialloc,Oakleigh,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP021091,04 Dec 10,9,regular,Round 9,Lauriston,Mordialloc,2,6,2,2,5,5,43,44,Completed,
+AP021092,04 Dec 10,9,regular,Round 9,Oakleigh,Hawthorn,8,0,4,0,8,0,48,0,Completed,
+AP021093,04 Dec 10,9,regular,Round 9,BLTC,Frankston East,8,0,4,0,8,0,49,16,Completed,
+AP021101,11 Dec 10,10,regular,Round 10,BLTC,Lauriston,8,0,4,0,8,0,50,17,Completed,
+AP021102,11 Dec 10,10,regular,Round 10,Hawthorn,Mordialloc,8,0,4,0,8,0,49,15,Completed,
+AP021103,11 Dec 10,10,regular,Round 10,Frankston East,Oakleigh,8,0,4,0,8,0,48,9,Completed,
+AP021112,05 Feb 11,11,regular,Round 11,Frankston East,Mordialloc,2,6,2,2,4,4,32,37,Completed,
+pending-ap021-r11-bltc-oakleigh,05 Feb 11,11,regular,Round 11,BLTC,Oakleigh,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap021-r11-lauriston-hawthorn,05 Feb 11,11,regular,Round 11,Lauriston,Hawthorn,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP021121,12 Feb 11,12,regular,Round 12,Oakleigh,Lauriston,1,7,1,3,2,7,35,48,Completed,
+AP021122,12 Feb 11,12,regular,Round 12,Mordialloc,BLTC,0,8,0,4,1,8,33,51,Completed,
+AP021123,12 Feb 11,12,regular,Round 12,Hawthorn,Frankston East,8,0,4,0,8,0,48,0,Completed,
+AP021131,19 Feb 11,13,regular,Round 13,Lauriston,Frankston East,7,1,3,1,7,4,57,50,Completed,
+AP021132,19 Feb 11,13,regular,Round 13,BLTC,Hawthorn,8,0,4,0,8,0,48,0,Completed,
+AP021133,19 Feb 11,13,regular,Round 13,Oakleigh,Mordialloc,1,7,1,3,2,6,24,40,Completed,
+AP021141,26 Feb 11,14,regular,Round 14,Mordialloc,Lauriston,7,1,3,1,6,2,46,34,Completed,
+AP021142,26 Feb 11,14,regular,Round 14,Hawthorn,Oakleigh,8,0,4,0,8,0,48,7,Completed,
+AP021143,26 Feb 11,14,regular,Round 14,Frankston East,BLTC,1,7,1,3,3,6,26,45,Completed,
+AP021151,05 Mar 11,15,regular,Round 15,Lauriston,BLTC,0,8,0,4,2,8,47,57,Completed,
+AP021152,05 Mar 11,15,regular,Round 15,Mordialloc,Hawthorn,8,0,4,0,8,0,48,0,Completed,
+AP021153,05 Mar 11,15,regular,Round 15,Oakleigh,Frankston East,0,8,0,4,1,8,21,53,Completed,
+AP021311,05 Mar 11,15,regular,Round 15,Hawthorn,Mordialloc,8,0,4,0,8,0,48,23,Completed,
+AP021321,,16,grand_final,Grand final · TROLS entry 2,BLTC,Hawthorn,6.5,1.5,2,1,6,3,50,32,Completed,

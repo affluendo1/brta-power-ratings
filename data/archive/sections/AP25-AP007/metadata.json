@@ -1,0 +1,101 @@
+{
+  "asset_id": "AP25-AP007",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Winter 2012",
+  "season_id": "AP25",
+  "season_label": "Winter 2012",
+  "source_section_code": "AP007",
+  "section_label": "Mixed Rubbers 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "St Andrews MB",
+      "wins": 9,
+      "points": 83,
+      "percentage": 124.03,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "Kings Park",
+      "wins": 9,
+      "points": 80.5,
+      "percentage": 127.35,
+      "marker": "P"
+    },
+    {
+      "position": 3,
+      "team": "St Pats Mentone",
+      "wins": 6,
+      "points": 63.5,
+      "percentage": 107.88,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Parkdale",
+      "wins": 3,
+      "points": 46.5,
+      "percentage": 88.57,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Highmoor Uniting",
+      "wins": 4,
+      "points": 46,
+      "percentage": 77.15,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Sth Murrumbeena",
+      "wins": 3,
+      "points": 40.5,
+      "percentage": 85.22,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP25-AP007",
+  "fixtures": 47,
+  "completed_fixtures": 42,
+  "draw_fixtures": 57,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 168,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP007072 doubles No. 3: '6-2 1-0'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP007072 doubles No. 4: '6-3 2-1'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP007073 doubles No. 4: '4-4'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP007081 doubles No. 3: '7-6 3-3'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP007083 doubles No. 4: '1-6 3-4'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP007103 doubles No. 3: '7-5 0-1'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP007112 doubles No. 3: '6-3 6-7'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP007121 doubles No. 3: '1-6 1-1'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP007122 doubles No. 3: '3-3'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP007122 doubles No. 4: '2-4'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP007123 doubles No. 3: '6-2 1-1'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP007123 doubles No. 4: '2-6 3-0'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP007143 doubles No. 3: '7-5 2-6 2-3'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

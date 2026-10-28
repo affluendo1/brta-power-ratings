@@ -1,0 +1,205 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP017011,06 Oct 18,1,Mordialloc,Ormond,No. 1,Curtis Burge,Leon Obrenov,Leon Obrenov,4-8,4,8,0,1,Completed,true,false,false
+AP017011,06 Oct 18,1,Mordialloc,Ormond,No. 2,Matt Parousiatis,Thomas Abourizk,Thomas Abourizk,3-8,3,8,0,1,Completed,true,false,false
+AP017011,06 Oct 18,1,Mordialloc,Ormond,No. 3,Matt Carlson,Harry Nicola,Harry Nicola,7-8,7,8,0,1,Completed,true,false,false
+AP017011,06 Oct 18,1,Mordialloc,Ormond,No. 4,Drew Blanchfield,Peter Whalan,Peter Whalan,0-8,0,8,0,1,Completed,true,false,false
+AP017012,06 Oct 18,1,Langwarrin,Hurlingham Park,No. 1,Broden Cox,James Parkinson,James Parkinson,6-8,6,8,0,1,Completed,true,false,false
+AP017012,06 Oct 18,1,Langwarrin,Hurlingham Park,No. 2,Julian McKay,Karpoh Lee,Julian McKay,8-3,8,3,1,0,Completed,true,false,false
+AP017012,06 Oct 18,1,Langwarrin,Hurlingham Park,No. 3,Jack Shurdington,Tom Kertapati,Jack Shurdington,8-2,8,2,1,0,Completed,true,false,false
+AP017012,06 Oct 18,1,Langwarrin,Hurlingham Park,No. 4,Jarrod Pepper,Tyson Kersley,Jarrod Pepper,8-4,8,4,1,0,Completed,true,false,false
+AP017013,06 Oct 18,1,Old Scotch,Tennis World 1,No. 1,Tom Cohen,Joel Paule,Joel Paule,1-8,1,8,0,1,Completed,true,false,false
+AP017013,06 Oct 18,1,Old Scotch,Tennis World 1,No. 2,George Hurley,Johnny Karalis,George Hurley,8-3,8,3,1,0,Completed,true,false,false
+AP017013,06 Oct 18,1,Old Scotch,Tennis World 1,No. 3,James Brownell,Guillermo Andres,Guillermo Andres,7-8,7,8,0,1,Completed,true,false,false
+AP017013,06 Oct 18,1,Old Scotch,Tennis World 1,No. 4,John Hurley,Luis Carlos Libreros,Luis Carlos Libreros,5-8,5,8,0,1,Completed,true,false,false
+AP017014,06 Oct 18,1,Kings Park,Tennis World 2 MP,No. 1,Tyler Vestal,Conor Kelly,Conor Kelly,4-8,4,8,0,1,Completed,true,false,false
+AP017014,06 Oct 18,1,Kings Park,Tennis World 2 MP,No. 2,Joe Lyttleton,Denis Rasidovski,Denis Rasidovski,0-8,0,8,0,1,Completed,true,false,false
+AP017014,06 Oct 18,1,Kings Park,Tennis World 2 MP,No. 3,Dom Langdon,Matteo Manassero,Matteo Manassero,3-8,3,8,0,1,Completed,true,false,false
+AP017014,06 Oct 18,1,Kings Park,Tennis World 2 MP,No. 4,Oscar Eden,Billy Makarewicz,Oscar Eden,8-4,8,4,1,0,Completed,true,false,false
+AP017021,13 Oct 18,2,Tennis World 2 MP,Mordialloc,No. 1,Conor Kelly,Lachlan Gallagher,Conor Kelly,8-1,8,1,1,0,Completed,true,false,false
+AP017021,13 Oct 18,2,Tennis World 2 MP,Mordialloc,No. 2,Denis Rasidovski,Curtis Burge,Denis Rasidovski,8-1,8,1,1,0,Completed,true,false,false
+AP017021,13 Oct 18,2,Tennis World 2 MP,Mordialloc,No. 3,Matthew Owen,Matt Parousiatis,Matthew Owen,8-2,8,2,1,0,Completed,true,false,false
+AP017021,13 Oct 18,2,Tennis World 2 MP,Mordialloc,No. 4,Jason Palmer,Matt Carlson,Jason Palmer,8-4,8,4,1,0,Completed,true,false,false
+AP017022,13 Oct 18,2,Ormond,Langwarrin,No. 1,Marco Bragagnolo,Broden Cox,Marco Bragagnolo,8-4,8,4,1,0,Completed,true,false,false
+AP017022,13 Oct 18,2,Ormond,Langwarrin,No. 2,Leon Obrenov,Julian McKay,Leon Obrenov,8-7,8,7,1,0,Completed,true,false,false
+AP017022,13 Oct 18,2,Ormond,Langwarrin,No. 3,Thomas Abourizk,Jack Shurdington,Thomas Abourizk,8-5,8,5,1,0,Completed,true,false,false
+AP017022,13 Oct 18,2,Ormond,Langwarrin,No. 4,Harry Nicola,Jarrod Pepper,Jarrod Pepper,4-8,4,8,0,1,Completed,true,false,false
+AP017024,13 Oct 18,2,Tennis World 1,Kings Park,No. 1,Mil Urban,Zac Adam-Gedge,Zac Adam-Gedge,1-8,1,8,0,1,Completed,true,false,false
+AP017024,13 Oct 18,2,Tennis World 1,Kings Park,No. 2,Guillermo Andres,Joe Lyttleton,Joe Lyttleton,7-8,7,8,0,1,Completed,true,false,false
+AP017024,13 Oct 18,2,Tennis World 1,Kings Park,No. 3,Luis Carlos Libreros,Dom Langdon,Dom Langdon,3-8,3,8,0,1,Completed,true,false,false
+AP017024,13 Oct 18,2,Tennis World 1,Kings Park,No. 4,Nat Bates,Oscar Eden,Oscar Eden,4-8,4,8,0,1,Completed,true,false,false
+AP017031,20 Oct 18,3,Mordialloc,Tennis World 1,No. 1,Curtis Burge,Mil Urban,Mil Urban,4-8,4,8,0,1,Completed,true,false,false
+AP017031,20 Oct 18,3,Mordialloc,Tennis World 1,No. 2,Ben Myles,Luckas Kellett,Ben Myles,8-0,8,0,1,0,Completed,true,false,false
+AP017031,20 Oct 18,3,Mordialloc,Tennis World 1,No. 3,Matt Carlson,Nat Bates,Matt Carlson,8-4,8,4,1,0,Completed,true,false,false
+AP017031,20 Oct 18,3,Mordialloc,Tennis World 1,No. 4,Daniel Campbell,Rohan Shukla,Daniel Campbell,8-0,8,0,1,0,Completed,true,false,false
+AP017032,20 Oct 18,3,Langwarrin,Tennis World 2 MP,No. 1,Broden Cox,Myekal Benham,Broden Cox,8-3,8,3,1,0,Completed,true,false,false
+AP017032,20 Oct 18,3,Langwarrin,Tennis World 2 MP,No. 2,Curtis Bond,David Tan,Curtis Bond,8-2,8,2,1,0,Completed,true,false,false
+AP017032,20 Oct 18,3,Langwarrin,Tennis World 2 MP,No. 3,Julian McKay,Peter Tang,Julian McKay,8-1,8,1,1,0,Completed,true,false,false
+AP017032,20 Oct 18,3,Langwarrin,Tennis World 2 MP,No. 4,Jarrod Pepper,Billy Makarewicz,Jarrod Pepper,8-1,8,1,1,0,Completed,true,false,false
+AP017033,20 Oct 18,3,Old Scotch,Ormond,No. 1,George Hurley,Marco Bragagnolo,George Hurley,8-3,8,3,1,0,Completed,true,false,false
+AP017033,20 Oct 18,3,Old Scotch,Ormond,No. 2,James Brownell,Leon Obrenov,James Brownell,8-5,8,5,1,0,Completed,true,false,false
+AP017033,20 Oct 18,3,Old Scotch,Ormond,No. 3,John Hurley,Harry Nicola,Harry Nicola,4-8,4,8,0,1,Completed,true,false,false
+AP017033,20 Oct 18,3,Old Scotch,Ormond,No. 4,Braden Pitcher,Loic Grzembielewski,Loic Grzembielewski,1-8,1,8,0,1,Completed,true,false,false
+AP017034,20 Oct 18,3,Kings Park,Hurlingham Park,No. 1,Zac Adam-Gedge,James Parkinson,Zac Adam-Gedge,8-2,8,2,1,0,Completed,true,false,false
+AP017034,20 Oct 18,3,Kings Park,Hurlingham Park,No. 2,Tyler Vestal,Hosea Gall,Tyler Vestal,8-3,8,3,1,0,Completed,true,false,false
+AP017034,20 Oct 18,3,Kings Park,Hurlingham Park,No. 3,[Unnamed emergency — TROLS AP017034 home code 3],Brian McDonaugh,Brian McDonaugh,7-8,7,8,0,1,Completed,false,true,false
+AP017034,20 Oct 18,3,Kings Park,Hurlingham Park,No. 4,Archie Antonopoulos,Stephen Earp,Archie Antonopoulos,8-3,8,3,1,0,Completed,true,false,false
+AP017042,27 Oct 18,4,Tennis World 1,Langwarrin,No. 1,Guillermo Andres,Broden Cox,Broden Cox,4-8,4,8,0,1,Completed,true,false,false
+AP017042,27 Oct 18,4,Tennis World 1,Langwarrin,No. 2,Edouardo Gallifa,Curtis Bond,Curtis Bond,2-8,2,8,0,1,Completed,true,false,false
+AP017042,27 Oct 18,4,Tennis World 1,Langwarrin,No. 3,Luis Carlos Libreros,Julian McKay,Julian McKay,1-8,1,8,0,1,Completed,true,false,false
+AP017042,27 Oct 18,4,Tennis World 1,Langwarrin,No. 4,Nat Bates,Jarrod Pepper,Jarrod Pepper,2-8,2,8,0,1,Completed,true,false,false
+AP017043,27 Oct 18,4,Tennis World 2 MP,Old Scotch,No. 1,Myekal Benham,George Hurley,George Hurley,3-8,3,8,0,1,Completed,true,false,false
+AP017043,27 Oct 18,4,Tennis World 2 MP,Old Scotch,No. 2,Denis Rasidovski,James Brownell,Denis Rasidovski,8-1,8,1,1,0,Completed,true,false,false
+AP017043,27 Oct 18,4,Tennis World 2 MP,Old Scotch,No. 3,Matthew Owen,Cam Mason,Matthew Owen,8-1,8,1,1,0,Completed,true,false,false
+AP017043,27 Oct 18,4,Tennis World 2 MP,Old Scotch,No. 4,David Tan,Peter McDiarmid,David Tan,8-1,8,1,1,0,Completed,true,false,false
+AP017044,27 Oct 18,4,Ormond,Kings Park,No. 1,Leon Obrenov,Zac Adam-Gedge,Zac Adam-Gedge,3-8,3,8,0,1,Completed,true,false,false
+AP017044,27 Oct 18,4,Ormond,Kings Park,No. 2,Chris Price,Joe Lyttleton,Joe Lyttleton,1-8,1,8,0,1,Completed,true,false,false
+AP017044,27 Oct 18,4,Ormond,Kings Park,No. 3,Harry Nicola,Dom Langdon,Dom Langdon,5-8,5,8,0,1,Completed,true,false,false
+AP017044,27 Oct 18,4,Ormond,Kings Park,No. 4,Loic Grzembielewski,Archie Antonopoulos,Loic Grzembielewski,8-2,8,2,1,0,Completed,true,false,false
+AP017052,10 Nov 18,5,Tennis World 2 MP,Tennis World 1,No. 1,Myekal Benham,Mil Urban,Myekal Benham,8-3,8,3,1,0,Completed,true,false,false
+AP017052,10 Nov 18,5,Tennis World 2 MP,Tennis World 1,No. 2,Denis Rasidovski,Guillermo Andres,Denis Rasidovski,8-0,8,0,1,0,Completed,true,false,false
+AP017052,10 Nov 18,5,Tennis World 2 MP,Tennis World 1,No. 3,David Tan,Luis Carlos Libreros,David Tan,8-1,8,1,1,0,Completed,true,false,false
+AP017052,10 Nov 18,5,Tennis World 2 MP,Tennis World 1,No. 4,Duane Merchant,Alejandro G,Duane Merchant,8-0,8,0,1,0,Completed,true,false,false
+AP017054,10 Nov 18,5,Mordialloc,Langwarrin,No. 1,Cameron Clark,Julian McKay,Cameron Clark,8-5,8,5,1,0,Completed,true,false,false
+AP017054,10 Nov 18,5,Mordialloc,Langwarrin,No. 2,Curtis Burge,Jack Shurdington,Jack Shurdington,7-8,7,8,0,1,Completed,true,false,false
+AP017054,10 Nov 18,5,Mordialloc,Langwarrin,No. 3,Matt Carlson,Jarrod Pepper,Jarrod Pepper,4-8,4,8,0,1,Completed,true,false,false
+AP017054,10 Nov 18,5,Mordialloc,Langwarrin,No. 4,Tim Clement,Brandon Borg,Tim Clement,8-5,8,5,1,0,Completed,true,false,false
+AP017061,17 Nov 18,6,Langwarrin,Old Scotch,No. 1,Broden Cox,George Hurley,George Hurley,6-8,6,8,0,1,Completed,true,false,false
+AP017061,17 Nov 18,6,Langwarrin,Old Scotch,No. 2,Curtis Bond,Cam Mason,Curtis Bond,8-2,8,2,1,0,Completed,true,false,false
+AP017061,17 Nov 18,6,Langwarrin,Old Scotch,No. 3,Jack Shurdington,John Hurley,Jack Shurdington,8-5,8,5,1,0,Completed,true,false,false
+AP017061,17 Nov 18,6,Langwarrin,Old Scotch,No. 4,Brandon Borg,Braden Pitcher,Braden Pitcher,6-8,6,8,0,1,Completed,true,false,false
+AP017062,17 Nov 18,6,Kings Park,Mordialloc,No. 1,Junyi Tang,Lachlan Gallagher,Junyi Tang,8-0,8,0,1,0,Completed,true,false,false
+AP017062,17 Nov 18,6,Kings Park,Mordialloc,No. 2,Zac Adam-Gedge,Cameron Clark,Zac Adam-Gedge,8-2,8,2,1,0,Completed,true,false,false
+AP017062,17 Nov 18,6,Kings Park,Mordialloc,No. 3,Tyler Vestal,Matt Parousiatis,Tyler Vestal,8-1,8,1,1,0,Completed,true,false,false
+AP017062,17 Nov 18,6,Kings Park,Mordialloc,No. 4,Dom Langdon,Matt Carlson,Matt Carlson,6-8,6,8,0,1,Completed,true,false,false
+AP017063,17 Nov 18,6,Tennis World 1,Hurlingham Park,No. 1,Mil Urban,James Parkinson,James Parkinson,5-8,5,8,0,1,Completed,true,false,false
+AP017063,17 Nov 18,6,Tennis World 1,Hurlingham Park,No. 2,Luckas Kellett,Steve Kovacs,Steve Kovacs,0-8,0,8,0,1,Completed,true,false,false
+AP017063,17 Nov 18,6,Tennis World 1,Hurlingham Park,No. 3,Clint Steele,Hosea Gall,Hosea Gall,7-8,7,8,0,1,Completed,true,false,false
+AP017063,17 Nov 18,6,Tennis World 1,Hurlingham Park,No. 4,Luis Carlos Libreros,Wojtek Foroncewicz,Luis Carlos Libreros,8-4,8,4,1,0,Completed,true,false,false
+AP017064,17 Nov 18,6,Ormond,Tennis World 2 MP,No. 1,Sahil Dabra,Denis Rasidovski,Denis Rasidovski,4-8,4,8,0,1,Completed,true,false,false
+AP017064,17 Nov 18,6,Ormond,Tennis World 2 MP,No. 2,Chris Price,David Tan,Chris Price,8-3,8,3,1,0,Completed,true,false,false
+AP017064,17 Nov 18,6,Ormond,Tennis World 2 MP,No. 3,Thomas Abourizk,Billy Makarewicz,Thomas Abourizk,8-3,8,3,1,0,Completed,true,false,false
+AP017064,17 Nov 18,6,Ormond,Tennis World 2 MP,No. 4,Amal Fernando,Justin Robertson,Amal Fernando,8-0,8,0,1,0,Completed,true,false,false
+AP017071,24 Nov 18,7,Mordialloc,Old Scotch,No. 1,Lachlan Gallagher,George Hurley,George Hurley,1-8,1,8,0,1,Completed,true,false,false
+AP017071,24 Nov 18,7,Mordialloc,Old Scotch,No. 2,Cameron Clark,James Brownell,James Brownell,6-8,6,8,0,1,Completed,true,false,false
+AP017071,24 Nov 18,7,Mordialloc,Old Scotch,No. 3,Curtis Burge,John Hurley,Curtis Burge,8-3,8,3,1,0,Completed,true,false,false
+AP017071,24 Nov 18,7,Mordialloc,Old Scotch,No. 4,Matt Parousiatis,Braden Pitcher,Matt Parousiatis,8-5,8,5,1,0,Completed,true,false,false
+AP017074,24 Nov 18,7,Tennis World 1,Ormond,No. 1,Alejandro Gomez,Leon Obrenov,Leon Obrenov,2-8,2,8,0,1,Completed,true,false,false
+AP017074,24 Nov 18,7,Tennis World 1,Ormond,No. 2,Antonio Bonillo,Thomas Abourizk,Thomas Abourizk,0-8,0,8,0,1,Completed,true,false,false
+AP017074,24 Nov 18,7,Tennis World 1,Ormond,No. 3,Nat Bates,Amal Fernando,Amal Fernando,7-8,7,8,0,1,Completed,true,false,false
+AP017074,24 Nov 18,7,Tennis World 1,Ormond,No. 4,Rohan Shukla,Harry Nicola,Harry Nicola,0-8,0,8,0,1,Completed,true,false,false
+AP017081,01 Dec 18,8,Ormond,Mordialloc,No. 1,Chris Price,Lachlan Gallagher,Lachlan Gallagher,4-8,4,8,0,1,Completed,true,false,false
+AP017081,01 Dec 18,8,Ormond,Mordialloc,No. 2,Thomas Abourizk,Cameron Clark,Cameron Clark,6-8,6,8,0,1,Completed,true,false,false
+AP017081,01 Dec 18,8,Ormond,Mordialloc,No. 3,Amal Fernando,Matt Parousiatis,Amal Fernando,8-4,8,4,1,0,Completed,true,false,false
+AP017081,01 Dec 18,8,Ormond,Mordialloc,No. 4,Harry Nicola,Matt Carlson,Harry Nicola,8-1,8,1,1,0,Completed,true,false,false
+AP017082,01 Dec 18,8,Hurlingham Park,Langwarrin,No. 1,James Parkinson,Curtis Bond,Curtis Bond,7-8,7,8,0,1,Completed,true,false,false
+AP017082,01 Dec 18,8,Hurlingham Park,Langwarrin,No. 2,Steve Kovacs,Julian McKay,Steve Kovacs,8-6,8,6,1,0,Completed,true,false,false
+AP017082,01 Dec 18,8,Hurlingham Park,Langwarrin,No. 3,Hosea Gall,Jack Shurdington,Jack Shurdington,3-8,3,8,0,1,Completed,true,false,false
+AP017082,01 Dec 18,8,Hurlingham Park,Langwarrin,No. 4,Brian McDonaugh,Jarrod Pepper,Brian McDonaugh,8-4,8,4,1,0,Completed,true,false,false
+AP017083,01 Dec 18,8,Tennis World 1,Old Scotch,No. 1,Mil Urban,George Hurley,George Hurley,5-8,5,8,0,1,Completed,true,false,false
+AP017083,01 Dec 18,8,Tennis World 1,Old Scotch,No. 2,Luckas Kellett,James Brownell,James Brownell,0-8,0,8,0,1,Completed,true,false,false
+AP017083,01 Dec 18,8,Tennis World 1,Old Scotch,No. 3,Guilllermo Davilla,John Hurley,John Hurley,7-8,7,8,0,1,Completed,true,false,false
+AP017083,01 Dec 18,8,Tennis World 1,Old Scotch,No. 4,Luis Carlos Libreros,Chris Hey,Luis Carlos Libreros,8-5,8,5,1,0,Completed,true,false,false
+AP017084,01 Dec 18,8,Tennis World 2 MP,Kings Park,No. 1,Myekal Benham,Tyler Vestal,Tyler Vestal,7-8,7,8,0,1,Completed,true,false,false
+AP017084,01 Dec 18,8,Tennis World 2 MP,Kings Park,No. 2,Denis Rasidovski,Dom Langdon,Denis Rasidovski,8-3,8,3,1,0,Completed,true,false,false
+AP017084,01 Dec 18,8,Tennis World 2 MP,Kings Park,No. 3,Matthew Owen,Oscar Eden,Matthew Owen,8-5,8,5,1,0,Completed,true,false,false
+AP017084,01 Dec 18,8,Tennis World 2 MP,Kings Park,No. 4,David Tan,George Gorgski,George Gorgski,4-8,4,8,0,1,Completed,true,false,false
+AP017091,08 Dec 18,9,Mordialloc,Tennis World 2 MP,No. 1,Cameron Clark,Myekal Benham,Cameron Clark,8-6,8,6,1,0,Completed,true,false,false
+AP017091,08 Dec 18,9,Mordialloc,Tennis World 2 MP,No. 2,Curtis Burge,Matthew Owen,Matthew Owen,4-8,4,8,0,1,Completed,true,false,false
+AP017091,08 Dec 18,9,Mordialloc,Tennis World 2 MP,No. 3,Matt Parousiatis,David Tan,Matt Parousiatis,8-6,8,6,1,0,Completed,true,false,false
+AP017091,08 Dec 18,9,Mordialloc,Tennis World 2 MP,No. 4,Tim Clement,Duane Merchant,Duane Merchant,0-8,0,8,0,1,Completed,true,false,false
+AP017092,08 Dec 18,9,Langwarrin,Ormond,No. 1,Curtis Bond,Sahil Dabra,Sahil Dabra,4-8,4,8,0,1,Completed,true,false,false
+AP017092,08 Dec 18,9,Langwarrin,Ormond,No. 2,Julian McKay,Marco Bragagnolo,Marco Bragagnolo,3-8,3,8,0,1,Completed,true,false,false
+AP017092,08 Dec 18,9,Langwarrin,Ormond,No. 3,Jack Shurdington,Harry Nicola,Jack Shurdington,8-7,8,7,1,0,Completed,true,false,false
+AP017092,08 Dec 18,9,Langwarrin,Ormond,No. 4,Jarrod Pepper,Andrew Martin,Jarrod Pepper,8-6,8,6,1,0,Completed,true,false,false
+AP017093,08 Dec 18,9,Old Scotch,Hurlingham Park,No. 1,George Hurley,James Parkinson,George Hurley,8-4,8,4,1,0,Completed,true,false,false
+AP017093,08 Dec 18,9,Old Scotch,Hurlingham Park,No. 2,Nick Harding,Hosea Gall,Hosea Gall,5-8,5,8,0,1,Completed,true,false,false
+AP017093,08 Dec 18,9,Old Scotch,Hurlingham Park,No. 3,John Hurley,Brian McDonaugh,Brian McDonaugh,3-8,3,8,0,1,Completed,true,false,false
+AP017093,08 Dec 18,9,Old Scotch,Hurlingham Park,No. 4,Jack Lynch,Amon Gall,Jack Lynch,8-0,8,0,1,0,Completed,true,false,false
+AP017094,08 Dec 18,9,Kings Park,Tennis World 1,No. 1,Hamish Styring,Mil Urban,Mil Urban,5-8,5,8,0,1,Completed,true,false,false
+AP017094,08 Dec 18,9,Kings Park,Tennis World 1,No. 2,Tyler Vestal,Luckas Kellett,Tyler Vestal,8-0,8,0,1,0,Completed,true,false,false
+AP017094,08 Dec 18,9,Kings Park,Tennis World 1,No. 3,Dom Langdon,Nat Bates,Dom Langdon,8-0,8,0,1,0,Completed,true,false,false
+AP017094,08 Dec 18,9,Kings Park,Tennis World 1,No. 4,Oscar Eden,Rohan Shukla,Oscar Eden,8-2,8,2,1,0,Completed,true,false,false
+AP017103,15 Dec 18,10,Ormond,Old Scotch,No. 1,Chris Price,Tom Cohen,Chris Price,8-3,8,3,1,0,Completed,true,false,false
+AP017103,15 Dec 18,10,Ormond,Old Scotch,No. 2,Thomas Abourizk,George Hurley,Thomas Abourizk,8-7,8,7,1,0,Completed,true,false,false
+AP017103,15 Dec 18,10,Ormond,Old Scotch,No. 3,Steve Fraser,James Brownell,James Brownell,5-8,5,8,0,1,Completed,true,false,false
+AP017103,15 Dec 18,10,Ormond,Old Scotch,No. 4,Mitchell Aarons,John Hurley,Mitchell Aarons,8-7,8,7,1,0,Completed,true,false,false
+AP017104,15 Dec 18,10,Hurlingham Park,Kings Park,No. 1,James Parkinson,Josh Vestal,Josh Vestal,3-8,3,8,0,1,Completed,true,false,false
+AP017104,15 Dec 18,10,Hurlingham Park,Kings Park,No. 2,Steve Kovacs,Tyler Vestal,Steve Kovacs,8-7,8,7,1,0,Completed,true,false,false
+AP017104,15 Dec 18,10,Hurlingham Park,Kings Park,No. 3,Brian McDonaugh,Dom Langdon,Dom Langdon,3-8,3,8,0,1,Completed,true,false,false
+AP017104,15 Dec 18,10,Hurlingham Park,Kings Park,No. 4,Tom Kertapati,Oscar Eden,Tom Kertapati,8-7,8,7,1,0,Completed,true,false,false
+AP017111,02 Feb 19,11,Mordialloc,Hurlingham Park,No. 1,Lachlan Gallagher,James Parkinson,Lachlan Gallagher,8-4,8,4,1,0,Completed,true,false,false
+AP017111,02 Feb 19,11,Mordialloc,Hurlingham Park,No. 2,Curtis Burge,Hosea Gall,Curtis Burge,8-6,8,6,1,0,Completed,true,false,false
+AP017111,02 Feb 19,11,Mordialloc,Hurlingham Park,No. 3,Matt Parousiatis,Brian McDonaugh,Brian McDonaugh,7-8,7,8,0,1,Completed,true,false,false
+AP017111,02 Feb 19,11,Mordialloc,Hurlingham Park,No. 4,Harrison Davis,Wojtek Foroncewicz,Harrison Davis,8-4,8,4,1,0,Completed,true,false,false
+AP017112,02 Feb 19,11,Langwarrin,Tennis World 1,No. 1,Broden Cox,Mil Urban,Broden Cox,8-3,8,3,1,0,Completed,true,false,false
+AP017112,02 Feb 19,11,Langwarrin,Tennis World 1,No. 2,Jack Shurdington,Luckas Kellett,Jack Shurdington,8-0,8,0,1,0,Completed,true,false,false
+AP017112,02 Feb 19,11,Langwarrin,Tennis World 1,No. 3,Jarrod Pepper,Guilllermo Davilla,Jarrod Pepper,8-0,8,0,1,0,Completed,true,false,false
+AP017112,02 Feb 19,11,Langwarrin,Tennis World 1,No. 4,Brandon Borg,Rohan Shukla,Brandon Borg,8-3,8,3,1,0,Completed,true,false,false
+AP017113,02 Feb 19,11,Old Scotch,Tennis World 2 MP,No. 1,Tom Cohen,Myekal Benham,Myekal Benham,0-8,0,8,0,1,Completed,true,false,false
+AP017113,02 Feb 19,11,Old Scotch,Tennis World 2 MP,No. 2,George Hurley,Denis Rasidovski,Denis Rasidovski,5-8,5,8,0,1,Completed,true,false,false
+AP017113,02 Feb 19,11,Old Scotch,Tennis World 2 MP,No. 3,Nick Harding,David Tan,Nick Harding,8-4,8,4,1,0,Completed,true,false,false
+AP017113,02 Feb 19,11,Old Scotch,Tennis World 2 MP,No. 4,John Hurley,Duane Merchant,Duane Merchant,0-8,0,8,0,1,Completed,true,false,false
+AP017114,02 Feb 19,11,Kings Park,Ormond,No. 1,Tyler Vestal,Leon Obrenov,Tyler Vestal,8-6,8,6,1,0,Completed,true,false,false
+AP017114,02 Feb 19,11,Kings Park,Ormond,No. 2,Joe Lyttleton,Thomas Abourizk,Joe Lyttleton,8-6,8,6,1,0,Completed,true,false,false
+AP017114,02 Feb 19,11,Kings Park,Ormond,No. 3,Dom Langdon,Mitchell Aarons,Dom Langdon,8-3,8,3,1,0,Completed,true,false,false
+AP017114,02 Feb 19,11,Kings Park,Ormond,No. 4,Archie Barrie,Harry Nicola,Harry Nicola,1-8,1,8,0,1,Completed,true,false,false
+AP017121,09 Feb 19,12,Kings Park,Old Scotch,No. 1,Zac Adam-Gedge,George Hurley,Zac Adam-Gedge,8-5,8,5,1,0,Completed,true,false,false
+AP017121,09 Feb 19,12,Kings Park,Old Scotch,No. 2,Tyler Vestal,James Brownell,Tyler Vestal,8-1,8,1,1,0,Completed,true,false,false
+AP017121,09 Feb 19,12,Kings Park,Old Scotch,No. 3,Dom Langdon,Nick Harding,Dom Langdon,8-3,8,3,1,0,Completed,true,false,false
+AP017121,09 Feb 19,12,Kings Park,Old Scotch,No. 4,Archie Barrie,Braden Pitcher,Archie Barrie,8-1,8,1,1,0,Completed,true,false,false
+AP017122,09 Feb 19,12,Tennis World 1,Tennis World 2 MP,No. 1,Luckas Kellett,Myekal Benham,Myekal Benham,3-8,3,8,0,1,Completed,true,false,false
+AP017122,09 Feb 19,12,Tennis World 1,Tennis World 2 MP,No. 2,Guillermo Andres,Denis Rasidovski,Denis Rasidovski,4-8,4,8,0,1,Completed,true,false,false
+AP017122,09 Feb 19,12,Tennis World 1,Tennis World 2 MP,No. 3,Luis Carlos Libreros,Matthew Owen,Matthew Owen,2-8,2,8,0,1,Completed,true,false,false
+AP017122,09 Feb 19,12,Tennis World 1,Tennis World 2 MP,No. 4,Rohan Shukla,David Tan,David Tan,2-8,2,8,0,1,Completed,true,false,false
+AP017123,09 Feb 19,12,Ormond,Hurlingham Park,No. 1,Marco Bragagnolo,Brian McDonaugh,Marco Bragagnolo,8-2,8,2,1,0,Completed,true,false,false
+AP017123,09 Feb 19,12,Ormond,Hurlingham Park,No. 2,Leon Obrenov,Amon Gall,Leon Obrenov,8-0,8,0,1,0,Completed,true,false,false
+AP017123,09 Feb 19,12,Ormond,Hurlingham Park,No. 3,Chris Price,Tom Kertapati,Tom Kertapati,6-8,6,8,0,1,Completed,true,false,false
+AP017123,09 Feb 19,12,Ormond,Hurlingham Park,No. 4,Thomas Abourizk,Tony Schiavelli,Thomas Abourizk,8-3,8,3,1,0,Completed,true,false,false
+AP017124,09 Feb 19,12,Langwarrin,Mordialloc,No. 1,Curtis Bond,Lachlan Gallagher,Curtis Bond,8-1,8,1,1,0,Completed,true,false,false
+AP017124,09 Feb 19,12,Langwarrin,Mordialloc,No. 2,Jack Shurdington,Cameron Clark,Jack Shurdington,8-4,8,4,1,0,Completed,true,false,false
+AP017124,09 Feb 19,12,Langwarrin,Mordialloc,No. 3,Jarrod Pepper,Matt Parousiatis,Jarrod Pepper,8-1,8,1,1,0,Completed,true,false,false
+AP017124,09 Feb 19,12,Langwarrin,Mordialloc,No. 4,Brandon Borg,Matt Carlson,Matt Carlson,5-8,5,8,0,1,Completed,true,false,false
+AP017131,16 Feb 19,13,Old Scotch,Langwarrin,No. 1,Tom Cohen,Broden Cox,Broden Cox,6-8,6,8,0,1,Completed,true,false,false
+AP017131,16 Feb 19,13,Old Scotch,Langwarrin,No. 2,James Brownell,Curtis Bond,Curtis Bond,4-8,4,8,0,1,Completed,true,false,false
+AP017131,16 Feb 19,13,Old Scotch,Langwarrin,No. 3,John Hurley,Jack Shurdington,Jack Shurdington,4-8,4,8,0,1,Completed,true,false,false
+AP017131,16 Feb 19,13,Old Scotch,Langwarrin,No. 4,Peter McDiarmid,Jarrod Pepper,Jarrod Pepper,4-8,4,8,0,1,Completed,true,false,false
+AP017132,16 Feb 19,13,Mordialloc,Kings Park,No. 1,Cameron Clark,Zac Adam-Gedge,Cameron Clark,8-0,8,0,1,0,Completed,true,false,false
+AP017132,16 Feb 19,13,Mordialloc,Kings Park,No. 2,Curtis Burge,Tyler Vestal,Tyler Vestal,2-8,2,8,0,1,Completed,true,false,false
+AP017132,16 Feb 19,13,Mordialloc,Kings Park,No. 3,Matt Parousiatis,Joe Lyttleton,Joe Lyttleton,3-8,3,8,0,1,Completed,true,false,false
+AP017132,16 Feb 19,13,Mordialloc,Kings Park,No. 4,Matt Carlson,George Gorgski,Matt Carlson,8-7,8,7,1,0,Completed,true,false,false
+AP017133,16 Feb 19,13,Hurlingham Park,Tennis World 1,No. 1,James Parkinson,Mil Urban,Mil Urban,7-8,7,8,0,1,Completed,true,false,false
+AP017133,16 Feb 19,13,Hurlingham Park,Tennis World 1,No. 2,Tom Kertapati,Jerome Bengley,Jerome Bengley,1-8,1,8,0,1,Completed,true,false,false
+AP017133,16 Feb 19,13,Hurlingham Park,Tennis World 1,No. 3,Tony Schiavelli,Luckas Kellett,Tony Schiavelli,8-5,8,5,1,0,Completed,true,false,false
+AP017133,16 Feb 19,13,Hurlingham Park,Tennis World 1,No. 4,James Sandor,Guilllermo Davilla,Guilllermo Davilla,0-8,0,8,0,1,Completed,true,false,false
+AP017134,16 Feb 19,13,Tennis World 2 MP,Ormond,No. 1,Denis Rasidovski,Sahil Dabra,Denis Rasidovski,8-7,8,7,1,0,Completed,true,false,false
+AP017134,16 Feb 19,13,Tennis World 2 MP,Ormond,No. 2,Matthew Owen,Leon Obrenov,Leon Obrenov,6-8,6,8,0,1,Completed,true,false,false
+AP017134,16 Feb 19,13,Tennis World 2 MP,Ormond,No. 3,David Tan,Chris Price,David Tan,8-6,8,6,1,0,Completed,true,false,false
+AP017134,16 Feb 19,13,Tennis World 2 MP,Ormond,No. 4,Duane Merchant,Mitchell Aarons,Duane Merchant,8-2,8,2,1,0,Completed,true,false,false
+AP017141,23 Feb 19,14,Old Scotch,Mordialloc,No. 1,James Brownell,Hugh Callaghan,Hugh Callaghan,2-8,2,8,0,1,Completed,true,false,false
+AP017141,23 Feb 19,14,Old Scotch,Mordialloc,No. 2,Chris Hey,Cameron Clark,Cameron Clark,6-8,6,8,0,1,Completed,true,false,false
+AP017141,23 Feb 19,14,Old Scotch,Mordialloc,No. 3,Andrew Eckersley,Curtis Burge,Curtis Burge,5-8,5,8,0,1,Completed,true,false,false
+AP017141,23 Feb 19,14,Old Scotch,Mordialloc,No. 4,Peter McDiarmid,Scott Beanka,Scott Beanka,6-8,6,8,0,1,Completed,true,false,false
+AP017142,23 Feb 19,14,Kings Park,Langwarrin,No. 1,Zac Adam-Gedge,Broden Cox,Zac Adam-Gedge,8-1,8,1,1,0,Completed,true,false,false
+AP017142,23 Feb 19,14,Kings Park,Langwarrin,No. 2,Tyler Vestal,Curtis Bond,Curtis Bond,3-8,3,8,0,1,Completed,true,false,false
+AP017142,23 Feb 19,14,Kings Park,Langwarrin,No. 3,Joe Lyttleton,Grant Thompson,Joe Lyttleton,8-5,8,5,1,0,Completed,true,false,false
+AP017142,23 Feb 19,14,Kings Park,Langwarrin,No. 4,Dom Langdon,Kyle Ebblewhite,Dom Langdon,8-4,8,4,1,0,Completed,true,false,false
+AP017143,23 Feb 19,14,Hurlingham Park,Tennis World 2 MP,No. 1,James Parkinson,Denis Rasidovski,Denis Rasidovski,5-8,5,8,0,1,Completed,true,false,false
+AP017143,23 Feb 19,14,Hurlingham Park,Tennis World 2 MP,No. 2,Hosea Gall,David Tan,Hosea Gall,8-7,8,7,1,0,Completed,true,false,false
+AP017143,23 Feb 19,14,Hurlingham Park,Tennis World 2 MP,No. 3,Brian McDonaugh,Duane Merchant,Brian McDonaugh,8-5,8,5,1,0,Completed,true,false,false
+AP017143,23 Feb 19,14,Hurlingham Park,Tennis World 2 MP,No. 4,Tony Schiavelli,Justin Robertson,Justin Robertson,3-8,3,8,0,1,Completed,true,false,false
+AP017144,23 Feb 19,14,Ormond,Tennis World 1,No. 1,Marco Bragagnolo,Jerome Bengley,Marco Bragagnolo,8-6,8,6,1,0,Completed,true,false,false
+AP017144,23 Feb 19,14,Ormond,Tennis World 1,No. 2,Leon Obrenov,Guilllermo Davilla,Leon Obrenov,8-6,8,6,1,0,Completed,true,false,false
+AP017144,23 Feb 19,14,Ormond,Tennis World 1,No. 3,Amal Fernando,Luis Carlos Libreros,Amal Fernando,8-6,8,6,1,0,Completed,true,false,false
+AP017144,23 Feb 19,14,Ormond,Tennis World 1,No. 4,Harry Nicola,Nat Bates,Harry Nicola,8-0,8,0,1,0,Completed,true,false,false
+AP017301,,16,Kings Park,Tennis World 2 MP,No. 1,Zac Adam-Gedge,Denis Rasidovski,Zac Adam-Gedge,8-3,8,3,1,0,Completed,true,false,false
+AP017301,,16,Kings Park,Tennis World 2 MP,No. 2,Tyler Vestal,Matthew Owen,Tyler Vestal,8-7,8,7,1,0,Completed,true,false,false
+AP017301,,16,Kings Park,Tennis World 2 MP,No. 3,Joe Lyttleton,David Tan,David Tan,3-8,3,8,0,1,Completed,true,false,false
+AP017301,,16,Kings Park,Tennis World 2 MP,No. 4,Dom Langdon,Duane Merchant,Duane Merchant,4-8,4,8,0,1,Completed,true,false,false
+AP017302,,16,Ormond,Langwarrin,No. 1,Marco Bragagnolo,Broden Cox,Marco Bragagnolo,8-4,8,4,1,0,Completed,true,false,false
+AP017302,,16,Ormond,Langwarrin,No. 2,Leon Obrenov,Curtis Bond,Curtis Bond,1-8,1,8,0,1,Completed,true,false,false
+AP017302,,16,Ormond,Langwarrin,No. 3,Chris Price,Julian McKay,Julian McKay,5-8,5,8,0,1,Completed,true,false,false
+AP017302,,16,Ormond,Langwarrin,No. 4,Harry Nicola,Jarrod Pepper,Jarrod Pepper,2-8,2,8,0,1,Completed,true,false,false
+AP017321,,17,Kings Park,Langwarrin,No. 1,Zac Adam-Gedge,Broden Cox,Zac Adam-Gedge,8-0,8,0,1,0,Completed,true,false,false
+AP017321,,17,Kings Park,Langwarrin,No. 2,Tyler Vestal,Curtis Bond,Curtis Bond,2-8,2,8,0,1,Completed,true,false,false
+AP017321,,17,Kings Park,Langwarrin,No. 3,Joe Lyttleton,Julian McKay,Julian McKay,1-8,1,8,0,1,Completed,true,false,false
+AP017321,,17,Kings Park,Langwarrin,No. 4,Dom Langdon,Jarrod Pepper,Dom Langdon,8-7,8,7,1,0,Completed,true,false,false

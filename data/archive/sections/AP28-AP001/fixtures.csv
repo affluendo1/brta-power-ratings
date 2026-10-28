@@ -1,0 +1,61 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP001011,05 Oct 13,1,regular,Round 1,St Pauls Genazz,MCC,6,2,4,4,,,32,30,Completed,
+AP001012,05 Oct 13,1,regular,Round 1,Legend Park,St Louis de Mont,6,2,5,5,,,53,40,Completed,
+AP001014,05 Oct 13,1,regular,Round 1,Highmoor Uniting,Kooyong,0,8,0,8,,,19,48,Completed,
+pending-ap001-r1-victory-park-bye,05 Oct 13,1,regular,Round 1,Victory Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP001021,12 Oct 13,2,regular,Round 2,Kooyong,St Pauls Genazz,2,6,6,6,,,60,62,Completed,
+AP001022,12 Oct 13,2,regular,Round 2,MCC,Legend Park,1,7,3,7,,,35,55,Completed,
+AP001023,12 Oct 13,2,regular,Round 2,St Louis de Mont,Victory Park,6,2,4,4,,,39,36,Completed,
+pending-ap001-r2-bye-highmoor-uniting,12 Oct 13,2,regular,Round 2,Bye,Highmoor Uniting,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP001032,19 Oct 13,3,regular,Round 3,Legend Park,Kooyong,7,1,7,3,,,55,45,Completed,
+AP001033,19 Oct 13,3,regular,Round 3,Victory Park,MCC,1,7,3,6,,,32,48,Completed,
+AP001034,19 Oct 13,3,regular,Round 3,Highmoor Uniting,St Louis de Mont,1,7,2,6,,,20,44,Completed,
+pending-ap001-r3-st-pauls-genazz-bye,19 Oct 13,3,regular,Round 3,St Pauls Genazz,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP001041,26 Oct 13,4,regular,Round 4,St Louis de Mont,St Pauls Genazz,1,7,3,6,,,38,50,Completed,
+AP001043,26 Oct 13,4,regular,Round 4,Kooyong,Victory Park,6,2,6,5,,,59,58,Completed,
+AP001044,26 Oct 13,4,regular,Round 4,MCC,Highmoor Uniting,8,0,8,0,,,48,10,Completed,
+pending-ap001-r4-bye-legend-park,26 Oct 13,4,regular,Round 4,Bye,Legend Park,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP001051,09 Nov 13,5,regular,Round 5,Victory Park,Highmoor Uniting,7,1,6,2,,,44,22,Completed,
+AP001053,09 Nov 13,5,regular,Round 5,St Louis de Mont,MCC,6,2,5,4,,,45,37,Completed,
+AP001054,09 Nov 13,5,regular,Round 5,St Pauls Genazz,Legend Park,7,1,7,3,,,58,46,Completed,
+pending-ap001-r5-kooyong-bye,09 Nov 13,5,regular,Round 5,Kooyong,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP001061,16 Nov 13,6,regular,Round 6,Legend Park,Victory Park,8,0,8,1,,,55,32,Completed,
+AP001062,16 Nov 13,6,regular,Round 6,Highmoor Uniting,St Pauls Genazz,0,8,0,8,,,13,48,Completed,
+AP001064,16 Nov 13,6,regular,Round 6,MCC,Kooyong,7,1,6,2,,,39,25,Completed,
+pending-ap001-r6-bye-st-louis-de-mont,16 Nov 13,6,regular,Round 6,Bye,St Louis de Mont,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP001071,23 Nov 13,7,regular,Round 7,St Pauls Genazz,Victory Park,4,4,2,2,,,28,27,Completed,
+AP001072,23 Nov 13,7,regular,Round 7,Legend Park,Highmoor Uniting,8,0,8,0,,,49,15,Completed,
+AP001073,23 Nov 13,7,regular,Round 7,Kooyong,St Louis de Mont,4,4,3,3,,,36,36,Completed,
+pending-ap001-r7-bye-mcc,23 Nov 13,7,regular,Round 7,Bye,MCC,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP001081,30 Nov 13,8,regular,Round 8,MCC,St Pauls Genazz,7,1,6,3,,,52,42,Completed,
+AP001082,30 Nov 13,8,regular,Round 8,St Louis de Mont,Legend Park,1,7,3,7,,,37,55,Completed,
+AP001084,30 Nov 13,8,regular,Round 8,Kooyong,Highmoor Uniting,8,0,8,0,,,48,18,Completed,
+pending-ap001-r8-bye-victory-park,30 Nov 13,8,regular,Round 8,Bye,Victory Park,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP001092,07 Dec 13,9,regular,Round 9,Legend Park,MCC,6,2,5,5,,,51,43,Completed,
+AP001093,07 Dec 13,9,regular,Round 9,Victory Park,St Louis de Mont,6,2,4,4,,,37,33,Completed,
+pending-ap001-r9-highmoor-uniting-bye,07 Dec 13,9,regular,Round 9,Highmoor Uniting,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap001-r9-st-pauls-genazz-kooyong,07 Dec 13,9,regular,Round 9,St Pauls Genazz,Kooyong,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+AP001103,14 Dec 13,10,regular,Round 10,MCC,Victory Park,6,2,6,4,,,46,42,Completed,
+AP001104,14 Dec 13,10,regular,Round 10,St Louis de Mont,Highmoor Uniting,8,0,8,0,,,48,6,Completed,
+pending-ap001-r10-bye-st-pauls-genazz,14 Dec 13,10,regular,Round 10,Bye,St Pauls Genazz,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap001-r10-kooyong-legend-park,14 Dec 13,10,regular,Round 10,Kooyong,Legend Park,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP001111,01 Feb 14,11,regular,Round 11,St Pauls Genazz,St Louis de Mont,5,3,4,0,,,25,11,Completed,
+AP001113,01 Feb 14,11,regular,Round 11,Victory Park,Kooyong,1,7,3,7,,,42,57,Completed,
+AP001114,01 Feb 14,11,regular,Round 11,Highmoor Uniting,MCC,0,8,1,8,,,22,51,Completed,
+pending-ap001-r11-legend-park-bye,01 Feb 14,11,regular,Round 11,Legend Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP001123,08 Feb 14,12,regular,Round 12,MCC,St Louis de Mont,8,0,8,1,,,52,25,Completed,
+pending-ap001-r12-bye-kooyong,08 Feb 14,12,regular,Round 12,Bye,Kooyong,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap001-r12-highmoor-uniting-victory-park,08 Feb 14,12,regular,Round 12,Highmoor Uniting,Victory Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap001-r12-legend-park-st-pauls-genazz,08 Feb 14,12,regular,Round 12,Legend Park,St Pauls Genazz,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP001131,15 Feb 14,13,regular,Round 13,Victory Park,Legend Park,6,2,5,4,,,47,44,Completed,
+AP001132,15 Feb 14,13,regular,Round 13,St Pauls Genazz,Highmoor Uniting,8,0,8,0,,,49,20,Completed,
+AP001134,15 Feb 14,13,regular,Round 13,Kooyong,MCC,4,4,3,3,,,30,37,Completed,
+pending-ap001-r13-st-louis-de-mont-bye,15 Feb 14,13,regular,Round 13,St Louis de Mont,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP001141,22 Feb 14,14,regular,Round 14,Victory Park,St Pauls Genazz,2,6,4,5,,,39,45,Completed,
+AP001142,22 Feb 14,14,regular,Round 14,Highmoor Uniting,Legend Park,0,8,1,8,,,20,51,Completed,
+AP001143,22 Feb 14,14,regular,Round 14,St Louis de Mont,Kooyong,2,6,4,4,,,33,37,Completed,
+pending-ap001-r14-mcc-bye,22 Feb 14,14,regular,Round 14,MCC,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP001301,,16,semi_final,Semi-final,Legend Park,Kooyong,1,7,2,6,,,15,38,Completed,
+AP001302,,16,semi_final,Semi-final,MCC,St Pauls Genazz,1,7,3,6,,,39,49,Completed,
+AP001311,,16,semi_final,Semi-final,Legend Park,St Pauls Genazz,7,1,6,3,,,49,36,Completed,
+AP001321,,17,grand_final,Grand final · TROLS entry 2,Kooyong,Legend Park,6.5,1.5,5,3,,,37,25,Completed,

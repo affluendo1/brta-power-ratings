@@ -1,0 +1,48 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP013011,08 Oct 11,1,regular,Round 1,MCC,Mt Eliza,1,9,2,7,,,24,53,Completed,
+AP013012,08 Oct 11,1,regular,Round 1,Melbourne Univ 1,Monash University,10,0,8,0,,,56,8,Completed,
+AP013013,08 Oct 11,1,regular,Round 1,Dendy Park,Melbourne Univ 2,8,2,5,3,,,47,30,Completed,
+AP013021,15 Oct 11,2,regular,Round 2,Melbourne Univ 2,MCC,1.5,8.5,2,6,,,29,52,Completed,
+AP013022,15 Oct 11,2,regular,Round 2,Monash University,Dendy Park,9,1,7,1,,,56,28,Completed,
+pending-ap013-r2-mt-eliza-melbourne-univ-1,15 Oct 11,2,regular,Round 2,Mt Eliza,Melbourne Univ 1,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+pending-ap013-r3-dendy-park-mt-eliza,22 Oct 11,3,regular,Round 3,Dendy Park,Mt Eliza,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap013-r3-mcc-melbourne-univ-1,22 Oct 11,3,regular,Round 3,MCC,Melbourne Univ 1,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap013-r3-melbourne-univ-2-monash-university,22 Oct 11,3,regular,Round 3,Melbourne Univ 2,Monash University,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP013041,05 Nov 11,4,regular,Round 4,Monash University,MCC,2,8,4,6,,,46,60,Completed,
+AP013042,05 Nov 11,4,regular,Round 4,Mt Eliza,Melbourne Univ 2,9,1,6,2,,,51,23,Completed,
+AP013043,05 Nov 11,4,regular,Round 4,Melbourne Univ 1,Dendy Park,9,1,7,2,,,52,22,Completed,
+AP013051,12 Nov 11,5,regular,Round 5,MCC,Dendy Park,10,0,8,1,,,62,37,Completed,
+AP013052,12 Nov 11,5,regular,Round 5,Monash University,Mt Eliza,0,10,0,8,,,14,57,Completed,
+AP013053,12 Nov 11,5,regular,Round 5,Melbourne Univ 2,Melbourne Univ 1,7,3,4,4,,,31,28,Completed,
+pending-ap013-r6-melbourne-univ-2-dendy-park,19 Nov 11,6,regular,Round 6,Melbourne Univ 2,Dendy Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap013-r6-monash-university-melbourne-univ-1,19 Nov 11,6,regular,Round 6,Monash University,Melbourne Univ 1,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap013-r6-mt-eliza-mcc,19 Nov 11,6,regular,Round 6,Mt Eliza,MCC,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap013-r7-dendy-park-monash-university,26 Nov 11,7,regular,Round 7,Dendy Park,Monash University,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap013-r7-mcc-melbourne-univ-2,26 Nov 11,7,regular,Round 7,MCC,Melbourne Univ 2,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+pending-ap013-r7-melbourne-univ-1-mt-eliza,26 Nov 11,7,regular,Round 7,Melbourne Univ 1,Mt Eliza,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP013082,03 Dec 11,8,regular,Round 8,Mt Eliza,Dendy Park,10,0,8,0,,,57,22,Completed,
+AP013083,03 Dec 11,8,regular,Round 8,Monash University,Melbourne Univ 2,7,3,4,4,,,40,33,Completed,
+pending-ap013-r8-melbourne-univ-1-mcc,03 Dec 11,8,regular,Round 8,Melbourne Univ 1,MCC,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+AP013091,10 Dec 11,9,regular,Round 9,MCC,Monash University,7,3,4,4,,,47,38,Completed,
+AP013092,10 Dec 11,9,regular,Round 9,Melbourne Univ 2,Mt Eliza,0,10,0,8,,,0,56,Completed,
+AP013093,10 Dec 11,9,regular,Round 9,Dendy Park,Melbourne Univ 1,0,10,0,8,,,5,56,Completed,
+AP013101,17 Dec 11,10,regular,Round 10,Dendy Park,MCC,2,8,2,6,,,29,47,Completed,
+AP013102,17 Dec 11,10,regular,Round 10,Mt Eliza,Monash University,10,0,8,0,,,56,20,Completed,
+pending-ap013-r10-melbourne-univ-1-melbourne-univ-2,17 Dec 11,10,regular,Round 10,Melbourne Univ 1,Melbourne Univ 2,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+AP013111,04 Feb 12,11,regular,Round 11,MCC,Mt Eliza,2,8,3,5,,,34,39,Completed,
+AP013112,04 Feb 12,11,regular,Round 11,Melbourne Univ 1,Monash University,1,9,1,7,,,22,49,Completed,
+AP013113,04 Feb 12,11,regular,Round 11,Dendy Park,Melbourne Univ 2,3,7,4,5,,,40,45,Completed,
+AP013121,11 Feb 12,12,regular,Round 12,Melbourne Univ 2,MCC,1,9,1,7,,,20,50,Completed,
+AP013122,11 Feb 12,12,regular,Round 12,Monash University,Dendy Park,9,1,6,2,,,51,32,Completed,
+pending-ap013-r12-mt-eliza-melbourne-univ-1,11 Feb 12,12,regular,Round 12,Mt Eliza,Melbourne Univ 1,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP013131,18 Feb 12,13,regular,Round 13,MCC,Melbourne Univ 1,8,2,6,2,,,45,22,Completed,
+AP013132,18 Feb 12,13,regular,Round 13,Dendy Park,Mt Eliza,0,10,1,8,,,21,61,Completed,
+AP013133,18 Feb 12,13,regular,Round 13,Melbourne Univ 2,Monash University,8,2,5,3,,,42,32,Completed,
+pending-ap013-r14-melbourne-univ-1-dendy-park,25 Feb 12,14,regular,Round 14,Melbourne Univ 1,Dendy Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap013-r14-monash-university-mcc,25 Feb 12,14,regular,Round 14,Monash University,MCC,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap013-r14-mt-eliza-melbourne-univ-2,25 Feb 12,14,regular,Round 14,Mt Eliza,Melbourne Univ 2,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP013152,03 Mar 12,15,regular,Round 15,Monash University,Mt Eliza,5,5,0,0,,,0,0,Completed,
+AP013153,03 Mar 12,15,regular,Round 15,Melbourne Univ 2,Melbourne Univ 1,2,8,0,3,,,0,20,Completed,
+AP013311,03 Mar 12,15,regular,Round 15,MCC,Monash University,8,2,6,2,,,50,40,Completed,
+pending-ap013-r15-mcc-dendy-park,03 Mar 12,15,regular,Round 15,MCC,Dendy Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP013321,,16,grand_final,Grand final · TROLS entry 2,Mt Eliza,MCC,9,1,4,0,,,32,7,Completed,

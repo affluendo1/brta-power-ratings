@@ -1,0 +1,197 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP003011,04 Oct 25,1,Mt Martha,Overport Park,No. 1,Robert Chipp,Josh Adams,Robert Chipp,8-2,8,2,1,0,Completed,true,false,false
+AP003011,04 Oct 25,1,Mt Martha,Overport Park,No. 2,Hayden Thomas,Steve Dumsday,Hayden Thomas,8-2,8,2,1,0,Completed,true,false,false
+AP003011,04 Oct 25,1,Mt Martha,Overport Park,No. 3,Adam Snow,Michael Neylan,Adam Snow,8-1,8,1,1,0,Completed,true,false,false
+AP003011,04 Oct 25,1,Mt Martha,Overport Park,No. 4,William Burnell,Christian Tomasic,William Burnell,8-7,8,7,1,0,Completed,true,false,false
+AP003012,04 Oct 25,1,BLTC,Dendy Park,No. 1,Christian Safko,Andrew Buchanan,Christian Safko,8-2,8,2,1,0,Completed,true,true,false
+AP003012,04 Oct 25,1,BLTC,Dendy Park,No. 2,Jaiden Watts,Marcelo Scalia,Jaiden Watts,8-2,8,2,1,0,Completed,true,true,false
+AP003012,04 Oct 25,1,BLTC,Dendy Park,No. 3,Luca Magro,Darko Pasara,Luca Magro,8-5,8,5,1,0,Completed,true,false,false
+AP003012,04 Oct 25,1,BLTC,Dendy Park,No. 4,Juan Sanchez,Brad Piner,Juan Sanchez,8-2,8,2,1,0,Completed,true,false,false
+AP003013,04 Oct 25,1,Maccabi,Langwarrin,No. 1,Jordan Jaffe,Julian McKay,Jordan Jaffe,8-2,8,2,1,0,Completed,true,false,false
+AP003013,04 Oct 25,1,Maccabi,Langwarrin,No. 2,Jonny Henquin,Tim Scott-Sandvik,Tim Scott-Sandvik,4-8,4,8,0,1,Completed,true,false,false
+AP003013,04 Oct 25,1,Maccabi,Langwarrin,No. 3,Marty Schwarz,Kyle Ebblewhite,Marty Schwarz,8-5,8,5,1,0,Completed,true,false,false
+AP003013,04 Oct 25,1,Maccabi,Langwarrin,No. 4,Robert Minc,Jack Smith,Robert Minc,8-3,8,3,1,0,Completed,true,false,true
+AP003014,04 Oct 25,1,Carmelite,Highmoor Uniting,No. 1,Oliver Kalicin,Paul Luke,Paul Luke,4-8,4,8,0,1,Completed,true,false,false
+AP003014,04 Oct 25,1,Carmelite,Highmoor Uniting,No. 2,Tony Strupl,Yves Zenou,Tony Strupl,8-3,8,3,1,0,Completed,true,false,false
+AP003014,04 Oct 25,1,Carmelite,Highmoor Uniting,No. 3,Ryan Sweeney,Sinbad Kozelski,Ryan Sweeney,8-7,8,7,1,0,Completed,true,true,false
+AP003014,04 Oct 25,1,Carmelite,Highmoor Uniting,No. 4,Matthew Strupl,Chris Longton,Chris Longton,2-8,2,8,0,1,Completed,true,true,true
+AP003021,11 Oct 25,2,Highmoor Uniting,Mt Martha,No. 1,Erik Bucko,Robert Chipp,Robert Chipp,0-8,0,8,0,1,Completed,true,false,false
+AP003021,11 Oct 25,2,Highmoor Uniting,Mt Martha,No. 2,Yves Zenou,Hayden Thomas,Hayden Thomas,4-8,4,8,0,1,Completed,true,false,false
+AP003021,11 Oct 25,2,Highmoor Uniting,Mt Martha,No. 3,Sinbad Kozelski,Liam Walsh,Liam Walsh,3-8,3,8,0,1,Completed,true,false,false
+AP003021,11 Oct 25,2,Highmoor Uniting,Mt Martha,No. 4,Chris Longton,Luca Salpietro,Luca Salpietro,5-8,5,8,0,1,Completed,true,true,false
+AP003022,11 Oct 25,2,Overport Park,BLTC,No. 1,Josh Adams,Christian Safko,Christian Safko,2-8,2,8,0,1,Completed,true,false,true
+AP003022,11 Oct 25,2,Overport Park,BLTC,No. 2,Michael Neylan,Stami Arthur,Stami Arthur,4-8,4,8,0,1,Completed,true,false,true
+AP003022,11 Oct 25,2,Overport Park,BLTC,No. 3,Beno Siebermann,Luca Magro,Luca Magro,3-8,3,8,0,1,Completed,true,false,false
+AP003022,11 Oct 25,2,Overport Park,BLTC,No. 4,Christian Tomasic,Warren Kennard,Warren Kennard,0-8,0,8,0,1,Completed,true,false,false
+AP003023,11 Oct 25,2,Dendy Park,Maccabi,No. 1,Eddie Myers,Assaf Drori,Assaf Drori,1-8,1,8,0,1,Completed,true,false,false
+AP003023,11 Oct 25,2,Dendy Park,Maccabi,No. 2,Andrew Buchanan,Asaf Nagar,Asaf Nagar,0-8,0,8,0,1,Completed,true,false,false
+AP003023,11 Oct 25,2,Dendy Park,Maccabi,No. 3,Darko Pasara,Daniel Sneider,Daniel Sneider,5-8,5,8,0,1,Completed,true,false,false
+AP003023,11 Oct 25,2,Dendy Park,Maccabi,No. 4,Zulu Kumar,Robert Minc,Robert Minc,0-8,0,8,0,1,Completed,true,true,false
+AP003024,11 Oct 25,2,Langwarrin,Carmelite,No. 1,Julian McKay,Mark Petkoff,Julian McKay,8-3,8,3,1,0,Completed,true,false,false
+AP003024,11 Oct 25,2,Langwarrin,Carmelite,No. 2,Tim Scott-Sandvik,Tony Strupl,Tim Scott-Sandvik,8-2,8,2,1,0,Completed,true,false,false
+AP003024,11 Oct 25,2,Langwarrin,Carmelite,No. 3,Kyle Ebblewhite,Ryan Sweeney,Kyle Ebblewhite,8-2,8,2,1,0,Completed,true,false,true
+AP003024,11 Oct 25,2,Langwarrin,Carmelite,No. 4,Jack Smith,George Kypriotis,Jack Smith,8-7,8,7,1,0,Completed,true,true,false
+AP003032,18 Oct 25,3,BLTC,Highmoor Uniting,No. 1,Edward Andrews,Paul Luke,Paul Luke,7-8,7,8,0,1,Completed,true,false,false
+AP003032,18 Oct 25,3,BLTC,Highmoor Uniting,No. 2,Luca Magro,Yves Zenou,Luca Magro,8-3,8,3,1,0,Completed,true,false,false
+AP003032,18 Oct 25,3,BLTC,Highmoor Uniting,No. 3,Warren Kennard,Sinbad Kozelski,Warren Kennard,8-1,8,1,1,0,Completed,true,false,false
+AP003032,18 Oct 25,3,BLTC,Highmoor Uniting,No. 4,Roger Boyd,[Unnamed emergency — TROLS AP003032 away code 4],Roger Boyd,8-0,8,0,1,0,Completed,false,false,true
+AP003033,18 Oct 25,3,Maccabi,Overport Park,No. 1,Assaf Drori,Frans Verheij,Assaf Drori,8-0,8,0,1,0,Completed,true,false,false
+AP003033,18 Oct 25,3,Maccabi,Overport Park,No. 2,Asaf Nagar,Joel Treveil,Asaf Nagar,8-2,8,2,1,0,Completed,true,false,false
+AP003033,18 Oct 25,3,Maccabi,Overport Park,No. 3,Jordan Jaffe,Michael Neylan,Jordan Jaffe,8-2,8,2,1,0,Completed,true,false,false
+AP003033,18 Oct 25,3,Maccabi,Overport Park,No. 4,Jonny Henquin,Christian Tomasic,Jonny Henquin,8-5,8,5,1,0,Completed,true,false,false
+AP003034,18 Oct 25,3,Carmelite,Dendy Park,No. 1,Oliver Kalicin,Dean Ellis,Oliver Kalicin,8-3,8,3,1,0,Completed,true,false,false
+AP003034,18 Oct 25,3,Carmelite,Dendy Park,No. 2,Tony Strupl,Andrew Buchanan,Andrew Buchanan,4-8,4,8,0,1,Completed,true,false,false
+AP003034,18 Oct 25,3,Carmelite,Dendy Park,No. 3,Nick Rowe,Marcelo Scalia,Marcelo Scalia,4-8,4,8,0,1,Completed,true,true,false
+AP003034,18 Oct 25,3,Carmelite,Dendy Park,No. 4,Theo Mitsinikos,Darko Pasara,Darko Pasara,6-8,6,8,0,1,Completed,true,true,false
+AP003041,25 Oct 25,4,Dendy Park,Mt Martha,No. 1,Dean Ellis,Christopher Arms,Christopher Arms,7-8,7,8,0,1,Completed,true,false,false
+AP003041,25 Oct 25,4,Dendy Park,Mt Martha,No. 2,Andrew Buchanan,Hayden Thomas,Hayden Thomas,2-8,2,8,0,1,Completed,true,false,false
+AP003041,25 Oct 25,4,Dendy Park,Mt Martha,No. 3,Marcelo Scalia,Liam Walsh,Marcelo Scalia,8-6,8,6,1,0,Completed,true,false,false
+AP003041,25 Oct 25,4,Dendy Park,Mt Martha,No. 4,Brad Piner,Luca Salpietro,Luca Salpietro,7-8,7,8,0,1,Completed,true,false,false
+AP003042,25 Oct 25,4,Langwarrin,BLTC,No. 1,Julian McKay,Christian Safko,Christian Safko,1-8,1,8,0,1,Completed,true,false,true
+AP003042,25 Oct 25,4,Langwarrin,BLTC,No. 2,Tim Scott-Sandvik,Edward Andrews,Tim Scott-Sandvik,8-2,8,2,1,0,Completed,true,false,false
+AP003042,25 Oct 25,4,Langwarrin,BLTC,No. 3,Kyle Ebblewhite,Luca Magro,Luca Magro,2-8,2,8,0,1,Completed,true,false,false
+AP003042,25 Oct 25,4,Langwarrin,BLTC,No. 4,Haris Siakallis,Warren Kennard,Warren Kennard,3-8,3,8,0,1,Completed,true,false,false
+AP003043,25 Oct 25,4,Highmoor Uniting,Maccabi,No. 1,Tom Pope,Joel Fredman,Joel Fredman,2-8,2,8,0,1,Completed,true,false,false
+AP003043,25 Oct 25,4,Highmoor Uniting,Maccabi,No. 2,Paul Luke,Marty Schwarz,Paul Luke,8-2,8,2,1,0,Completed,true,false,false
+AP003043,25 Oct 25,4,Highmoor Uniting,Maccabi,No. 3,Yves Zenou,Daniel Sneider,Yves Zenou,8-6,8,6,1,0,Completed,true,false,false
+AP003043,25 Oct 25,4,Highmoor Uniting,Maccabi,No. 4,Erik Bucko,Robert Minc,Robert Minc,0-8,0,8,0,1,Completed,true,false,false
+AP003044,25 Oct 25,4,Overport Park,Carmelite,No. 1,Josh Adams,Ilkka Riikonen,Ilkka Riikonen,1-8,1,8,0,1,Completed,true,false,true
+AP003044,25 Oct 25,4,Overport Park,Carmelite,No. 2,Joel Treveil,Francisco Gallardo,Joel Treveil,8-1,8,1,1,0,Completed,true,false,true
+AP003044,25 Oct 25,4,Overport Park,Carmelite,No. 3,Michael Neylan,Tony Strupl,Tony Strupl,4-8,4,8,0,1,Completed,true,false,false
+AP003044,25 Oct 25,4,Overport Park,Carmelite,No. 4,Beno Siebermann,Ryan Sweeney,Ryan Sweeney,0-8,0,8,0,1,Completed,true,false,true
+AP003061,15 Nov 25,6,BLTC,Maccabi,No. 1,Luca Magro,Jordan Jaffe,Luca Magro,8-3,8,3,1,0,Completed,true,false,false
+AP003061,15 Nov 25,6,BLTC,Maccabi,No. 2,Roger Boyd,Jonny Henquin,Jonny Henquin,1-8,1,8,0,1,Completed,true,false,false
+AP003061,15 Nov 25,6,BLTC,Maccabi,No. 3,Greg Kluge,Jarred Krowitz,Jarred Krowitz,2-8,2,8,0,1,Completed,true,true,true
+AP003061,15 Nov 25,6,BLTC,Maccabi,No. 4,Dean Chalatzoukas,Robert Minc,Dean Chalatzoukas,8-5,8,5,1,0,Completed,true,true,false
+AP003062,15 Nov 25,6,Carmelite,Mt Martha,No. 1,Oliver Kalicin,Robert Chipp,Robert Chipp,7-8,7,8,0,1,Completed,true,false,false
+AP003062,15 Nov 25,6,Carmelite,Mt Martha,No. 2,Tony Strupl,Hayden Thomas,Hayden Thomas,1-8,1,8,0,1,Completed,true,false,false
+AP003062,15 Nov 25,6,Carmelite,Mt Martha,No. 3,Ryan Sweeney,William Burnell,Ryan Sweeney,8-3,8,3,1,0,Completed,true,true,false
+AP003062,15 Nov 25,6,Carmelite,Mt Martha,No. 4,Nick Rowe,Xavier Tresidder,Xavier Tresidder,6-8,6,8,0,1,Completed,true,true,true
+AP003063,15 Nov 25,6,Langwarrin,Dendy Park,No. 1,Julian McKay,Dean Ellis,Julian McKay,8-7,8,7,1,0,Completed,true,false,false
+AP003063,15 Nov 25,6,Langwarrin,Dendy Park,No. 2,Tim Scott-Sandvik,Darko Pasara,Tim Scott-Sandvik,8-1,8,1,1,0,Completed,true,false,false
+AP003063,15 Nov 25,6,Langwarrin,Dendy Park,No. 3,Kyle Ebblewhite,[Unnamed emergency — TROLS AP003063 away code 3],Kyle Ebblewhite,8-0,8,0,1,0,Completed,false,false,true
+AP003063,15 Nov 25,6,Langwarrin,Dendy Park,No. 4,Haris Siakallis,Brad Piner,Haris Siakallis,8-1,8,1,1,0,Completed,true,false,false
+AP003064,15 Nov 25,6,Overport Park,Highmoor Uniting,No. 1,Frans Verheij,Lachlan Peters,Frans Verheij,8-3,8,3,1,0,Completed,true,false,false
+AP003064,15 Nov 25,6,Overport Park,Highmoor Uniting,No. 2,Josh Toy,Yves Zenou,Yves Zenou,7-8,7,8,0,1,Completed,true,false,false
+AP003064,15 Nov 25,6,Overport Park,Highmoor Uniting,No. 3,Josh Adams,Kyle Malligan,Josh Adams,8-2,8,2,1,0,Completed,true,false,false
+AP003064,15 Nov 25,6,Overport Park,Highmoor Uniting,No. 4,Steve Dumsday,Sinbad Kozelski,Sinbad Kozelski,4-8,4,8,0,1,Completed,true,false,false
+AP003071,22 Nov 25,7,Mt Martha,Maccabi,No. 1,Robert Chipp,Assaf Drori,Assaf Drori,6-8,6,8,0,1,Completed,true,false,false
+AP003071,22 Nov 25,7,Mt Martha,Maccabi,No. 2,Hayden Thomas,Asaf Nagar,Asaf Nagar,2-8,2,8,0,1,Completed,true,false,false
+AP003071,22 Nov 25,7,Mt Martha,Maccabi,No. 3,Liam Walsh,Jordan Jaffe,Jordan Jaffe,6-8,6,8,0,1,Completed,true,false,false
+AP003071,22 Nov 25,7,Mt Martha,Maccabi,No. 4,Adam Snow,Robert Minc,Adam Snow,8-6,8,6,1,0,Completed,true,false,false
+AP003072,22 Nov 25,7,BLTC,Carmelite,No. 1,Jaiden Watts,Oliver Kalicin,Jaiden Watts,8-4,8,4,1,0,Completed,true,true,false
+AP003072,22 Nov 25,7,BLTC,Carmelite,No. 2,Luca Magro,Mark Petkoff,Luca Magro,8-0,8,0,1,0,Completed,true,false,false
+AP003072,22 Nov 25,7,BLTC,Carmelite,No. 3,Warren Kennard,Ryan Sweeney,Ryan Sweeney,3-8,3,8,0,1,Completed,true,false,true
+AP003072,22 Nov 25,7,BLTC,Carmelite,No. 4,Roger Boyd,Nick Rowe,Nick Rowe,0-8,0,8,0,1,Completed,true,false,true
+AP003074,22 Nov 25,7,Langwarrin,Overport Park,No. 1,Julian McKay,Frans Verheij,Julian McKay,8-6,8,6,1,0,Completed,true,false,false
+AP003074,22 Nov 25,7,Langwarrin,Overport Park,No. 2,Tim Scott-Sandvik,Josh Toy,Tim Scott-Sandvik,8-1,8,1,1,0,Completed,true,false,false
+AP003074,22 Nov 25,7,Langwarrin,Overport Park,No. 3,Kyle Ebblewhite,Josh Adams,Kyle Ebblewhite,8-1,8,1,1,0,Completed,true,false,false
+AP003074,22 Nov 25,7,Langwarrin,Overport Park,No. 4,Haris Siakallis,Michael Neylan,Haris Siakallis,8-5,8,5,1,0,Completed,true,false,false
+AP003082,29 Nov 25,8,Dendy Park,BLTC,No. 1,Marcelo Scalia,Christian Safko,Christian Safko,5-8,5,8,0,1,Completed,true,false,true
+AP003082,29 Nov 25,8,Dendy Park,BLTC,No. 2,Darko Pasara,Edward Andrews,Edward Andrews,3-8,3,8,0,1,Completed,true,false,false
+AP003082,29 Nov 25,8,Dendy Park,BLTC,No. 3,Brad Piner,Luca Magro,Luca Magro,4-8,4,8,0,1,Completed,true,false,false
+AP003082,29 Nov 25,8,Dendy Park,BLTC,No. 4,Brett Holdway,Roger Boyd,Roger Boyd,6-8,6,8,0,1,Completed,true,true,false
+AP003083,29 Nov 25,8,Langwarrin,Maccabi,No. 1,Julian McKay,Assaf Drori,Assaf Drori,1-8,1,8,0,1,Completed,true,false,false
+AP003083,29 Nov 25,8,Langwarrin,Maccabi,No. 2,Tim Scott-Sandvik,Asaf Nagar,Asaf Nagar,4-8,4,8,0,1,Completed,true,false,false
+AP003083,29 Nov 25,8,Langwarrin,Maccabi,No. 3,Kyle Ebblewhite,Marty Schwarz,Kyle Ebblewhite,8-5,8,5,1,0,Completed,true,false,false
+AP003083,29 Nov 25,8,Langwarrin,Maccabi,No. 4,Haris Siakallis,Robert Minc,Haris Siakallis,8-1,8,1,1,0,Completed,true,false,false
+AP003084,29 Nov 25,8,Highmoor Uniting,Carmelite,No. 1,Lachlan Peters,Oliver Kalicin,Oliver Kalicin,1-8,1,8,0,1,Completed,true,false,false
+AP003084,29 Nov 25,8,Highmoor Uniting,Carmelite,No. 2,Yves Zenou,Mark Petkoff,Mark Petkoff,2-8,2,8,0,1,Completed,true,false,false
+AP003084,29 Nov 25,8,Highmoor Uniting,Carmelite,No. 3,Kyle Malligan,Tony Strupl,Tony Strupl,2-8,2,8,0,1,Completed,true,false,false
+AP003084,29 Nov 25,8,Highmoor Uniting,Carmelite,No. 4,Sinbad Kozelski,Ryan Sweeney,Ryan Sweeney,6-8,6,8,0,1,Completed,true,false,true
+AP003091,06 Dec 25,9,Mt Martha,Highmoor Uniting,No. 1,Hayden Thomas,Erik Bucko,Hayden Thomas,8-4,8,4,1,0,Completed,true,false,false
+AP003091,06 Dec 25,9,Mt Martha,Highmoor Uniting,No. 2,Adam Snow,Yves Zenou,Adam Snow,8-7,8,7,1,0,Completed,true,false,false
+AP003091,06 Dec 25,9,Mt Martha,Highmoor Uniting,No. 3,William Burnell,Sinbad Kozelski,Sinbad Kozelski,4-8,4,8,0,1,Completed,true,false,false
+AP003091,06 Dec 25,9,Mt Martha,Highmoor Uniting,No. 4,Thomas Floyd,Kokoro Bremmell,Thomas Floyd,8-1,8,1,1,0,Completed,true,true,true
+AP003101,13 Dec 25,10,Langwarrin,Mt Martha,No. 1,Tim Scott-Sandvik,Robert Chipp,Tim Scott-Sandvik,8-4,8,4,1,0,Completed,true,false,false
+AP003101,13 Dec 25,10,Langwarrin,Mt Martha,No. 2,Kyle Ebblewhite,Hayden Thomas,Kyle Ebblewhite,8-4,8,4,1,0,Completed,true,false,false
+AP003101,13 Dec 25,10,Langwarrin,Mt Martha,No. 3,Haris Siakallis,Adam Snow,Adam Snow,7-8,7,8,0,1,Completed,true,false,false
+AP003101,13 Dec 25,10,Langwarrin,Mt Martha,No. 4,Dylan Schmitt,Luca Salpietro,Luca Salpietro,7-8,7,8,0,1,Completed,true,false,false
+AP003102,13 Dec 25,10,Highmoor Uniting,BLTC,No. 1,Paul Luke,Christian Safko,Christian Safko,1-8,1,8,0,1,Completed,true,false,true
+AP003102,13 Dec 25,10,Highmoor Uniting,BLTC,No. 2,Yves Zenou,Edward Andrews,Edward Andrews,1-8,1,8,0,1,Completed,true,false,false
+AP003102,13 Dec 25,10,Highmoor Uniting,BLTC,No. 3,Kyle Malligan,Warren Kennard,Kyle Malligan,8-5,8,5,1,0,Completed,true,false,false
+AP003102,13 Dec 25,10,Highmoor Uniting,BLTC,No. 4,Sinbad Kozelski,Roger Boyd,Sinbad Kozelski,8-7,8,7,1,0,Completed,true,false,false
+AP003103,13 Dec 25,10,Overport Park,Maccabi,No. 1,Josh Adams,Jonny Henquin,Josh Adams,8-6,8,6,1,0,Completed,true,false,false
+AP003103,13 Dec 25,10,Overport Park,Maccabi,No. 2,Joel Treveil,Marty Schwarz,Joel Treveil,8-4,8,4,1,0,Completed,true,false,false
+AP003103,13 Dec 25,10,Overport Park,Maccabi,No. 3,Michael Neylan,Joey Pat,Joey Pat,3-8,3,8,0,1,Completed,true,false,true
+AP003103,13 Dec 25,10,Overport Park,Maccabi,No. 4,Christian Tomasic,Robert Minc,Christian Tomasic,8-5,8,5,1,0,Completed,true,false,false
+AP003104,13 Dec 25,10,Dendy Park,Carmelite,No. 1,Dean Ellis,Oliver Kalicin,Dean Ellis,8-5,8,5,1,0,Completed,true,false,false
+AP003104,13 Dec 25,10,Dendy Park,Carmelite,No. 2,Darko Pasara,Tony Strupl,Tony Strupl,6-8,6,8,0,1,Completed,true,false,false
+AP003104,13 Dec 25,10,Dendy Park,Carmelite,No. 3,Brad Piner,Ryan Sweeney,Ryan Sweeney,1-8,1,8,0,1,Completed,true,false,true
+AP003104,13 Dec 25,10,Dendy Park,Carmelite,No. 4,Eddie Myers,George Kypriotis,George Kypriotis,0-8,0,8,0,1,Completed,true,false,false
+AP003111,07 Feb 26,11,Mt Martha,Dendy Park,No. 1,Christopher Arms,Dean Ellis,Christopher Arms,8-3,8,3,1,0,Completed,true,false,false
+AP003111,07 Feb 26,11,Mt Martha,Dendy Park,No. 2,Robert Chipp,Marcelo Scalia,Robert Chipp,8-1,8,1,1,0,Completed,true,false,false
+AP003111,07 Feb 26,11,Mt Martha,Dendy Park,No. 3,Adam Snow,Darko Pasara,Adam Snow,8-5,8,5,1,0,Completed,true,false,false
+AP003111,07 Feb 26,11,Mt Martha,Dendy Park,No. 4,Luca Salpietro,Brad Piner,Luca Salpietro,8-7,8,7,1,0,Completed,true,false,false
+AP003112,07 Feb 26,11,BLTC,Langwarrin,No. 1,Christian Safko,Tim Scott-Sandvik,Tim Scott-Sandvik,0-8,0,8,0,1,Completed,true,true,false
+AP003112,07 Feb 26,11,BLTC,Langwarrin,No. 2,Luca Magro,Kyle Ebblewhite,Luca Magro,8-7,8,7,1,0,Completed,true,false,false
+AP003112,07 Feb 26,11,BLTC,Langwarrin,No. 3,Warren Kennard,Haris Siakallis,Warren Kennard,8-4,8,4,1,0,Completed,true,false,false
+AP003112,07 Feb 26,11,BLTC,Langwarrin,No. 4,Roger Boyd,Dylan Schmitt,Dylan Schmitt,5-8,5,8,0,1,Completed,true,false,false
+AP003113,07 Feb 26,11,Maccabi,Highmoor Uniting,No. 1,Jordan Jaffe,Lachlan Peters,Jordan Jaffe,8-0,8,0,1,0,Completed,true,false,false
+AP003113,07 Feb 26,11,Maccabi,Highmoor Uniting,No. 2,Jonny Henquin,Yves Zenou,Jonny Henquin,8-1,8,1,1,0,Completed,true,false,false
+AP003113,07 Feb 26,11,Maccabi,Highmoor Uniting,No. 3,Daniel Sneider,Nemo Yao,Daniel Sneider,8-0,8,0,1,0,Completed,true,false,true
+AP003113,07 Feb 26,11,Maccabi,Highmoor Uniting,No. 4,Robert Minc,Daniel Gao,Robert Minc,8-0,8,0,1,0,Completed,true,false,true
+AP003114,07 Feb 26,11,Carmelite,Overport Park,No. 1,Oliver Kalicin,Josh Adams,Oliver Kalicin,8-1,8,1,1,0,Completed,true,false,false
+AP003114,07 Feb 26,11,Carmelite,Overport Park,No. 2,Mark Petkoff,Joel Treveil,Mark Petkoff,8-2,8,2,1,0,Completed,true,false,false
+AP003114,07 Feb 26,11,Carmelite,Overport Park,No. 3,Tony Strupl,Michael Neylan,Tony Strupl,8-2,8,2,1,0,Completed,true,false,false
+AP003114,07 Feb 26,11,Carmelite,Overport Park,No. 4,Nick Rowe,Beno Siebermann,Nick Rowe,8-0,8,0,1,0,Completed,true,true,false
+AP003121,14 Feb 26,12,Carmelite,Maccabi,No. 1,Oliver Kalicin,Jonny Henquin,Oliver Kalicin,8-4,8,4,1,0,Completed,true,false,false
+AP003121,14 Feb 26,12,Carmelite,Maccabi,No. 2,Damien Pound,Marty Schwarz,Marty Schwarz,6-8,6,8,0,1,Completed,true,true,false
+AP003121,14 Feb 26,12,Carmelite,Maccabi,No. 3,Tony Strupl,Daniel Sneider,Daniel Sneider,7-8,7,8,0,1,Completed,true,false,false
+AP003121,14 Feb 26,12,Carmelite,Maccabi,No. 4,Ryan Sweeney,Jarred Krowitz,Ryan Sweeney,8-4,8,4,1,0,Completed,true,true,true
+AP003122,14 Feb 26,12,Langwarrin,Highmoor Uniting,No. 1,Julian McKay,Lachlan Peters,Julian McKay,8-5,8,5,1,0,Completed,true,false,false
+AP003122,14 Feb 26,12,Langwarrin,Highmoor Uniting,No. 2,Tim Scott-Sandvik,Yves Zenou,Tim Scott-Sandvik,8-2,8,2,1,0,Completed,true,false,false
+AP003122,14 Feb 26,12,Langwarrin,Highmoor Uniting,No. 3,Haris Siakallis,Ben Abbott,Haris Siakallis,8-3,8,3,1,0,Completed,true,false,false
+AP003122,14 Feb 26,12,Langwarrin,Highmoor Uniting,No. 4,Dylan Schmitt,Kyle Malligan,Dylan Schmitt,8-4,8,4,1,0,Completed,true,false,false
+AP003123,14 Feb 26,12,Overport Park,Dendy Park,No. 1,Josh Adams,Dean Ellis,Dean Ellis,2-8,2,8,0,1,Completed,true,false,false
+AP003123,14 Feb 26,12,Overport Park,Dendy Park,No. 2,Joel Treveil,Marcelo Scalia,Marcelo Scalia,4-8,4,8,0,1,Completed,true,false,false
+AP003123,14 Feb 26,12,Overport Park,Dendy Park,No. 3,Steve Dumsday,Darko Pasara,Darko Pasara,6-8,6,8,0,1,Completed,true,false,false
+AP003123,14 Feb 26,12,Overport Park,Dendy Park,No. 4,Michael Neylan,Brad Piner,Michael Neylan,8-4,8,4,1,0,Completed,true,false,false
+AP003124,14 Feb 26,12,BLTC,Mt Martha,No. 1,Matt Reiter,Christopher Arms,Christopher Arms,4-8,4,8,0,1,Completed,true,true,false
+AP003124,14 Feb 26,12,BLTC,Mt Martha,No. 2,Edward Andrews,Hayden Thomas,Edward Andrews,8-6,8,6,1,0,Completed,true,false,false
+AP003124,14 Feb 26,12,BLTC,Mt Martha,No. 3,Luca Magro,Liam Walsh,Luca Magro,8-3,8,3,1,0,Completed,true,false,false
+AP003124,14 Feb 26,12,BLTC,Mt Martha,No. 4,Warren Kennard,Luca Salpietro,Warren Kennard,8-6,8,6,1,0,Completed,true,false,false
+AP003131,21 Feb 26,13,Maccabi,BLTC,No. 1,Assaf Drori,Christian Safko,Assaf Drori,8-6,8,6,1,0,Completed,true,false,true
+AP003131,21 Feb 26,13,Maccabi,BLTC,No. 2,Asaf Nagar,Edward Andrews,Asaf Nagar,8-3,8,3,1,0,Completed,true,false,false
+AP003131,21 Feb 26,13,Maccabi,BLTC,No. 3,Jonny Henquin,Luca Magro,Luca Magro,6-8,6,8,0,1,Completed,true,false,false
+AP003131,21 Feb 26,13,Maccabi,BLTC,No. 4,Marty Schwarz,Roger Boyd,Marty Schwarz,8-4,8,4,1,0,Completed,true,false,false
+AP003132,21 Feb 26,13,Mt Martha,Carmelite,No. 1,Christopher Arms,Damien Pound,Christopher Arms,8-3,8,3,1,0,Completed,true,false,true
+AP003132,21 Feb 26,13,Mt Martha,Carmelite,No. 2,Robert Chipp,Tony Strupl,Robert Chipp,8-3,8,3,1,0,Completed,true,false,false
+AP003132,21 Feb 26,13,Mt Martha,Carmelite,No. 3,Hayden Thomas,Ryan Sweeney,Hayden Thomas,8-2,8,2,1,0,Completed,true,false,true
+AP003132,21 Feb 26,13,Mt Martha,Carmelite,No. 4,Liam Walsh,Nick Rowe,Liam Walsh,8-3,8,3,1,0,Completed,true,false,true
+AP003133,21 Feb 26,13,Dendy Park,Langwarrin,No. 1,Dean Ellis,Julian McKay,Dean Ellis,8-2,8,2,1,0,Completed,true,false,false
+AP003133,21 Feb 26,13,Dendy Park,Langwarrin,No. 2,Marcelo Scalia,Kyle Ebblewhite,Kyle Ebblewhite,4-8,4,8,0,1,Completed,true,false,false
+AP003133,21 Feb 26,13,Dendy Park,Langwarrin,No. 3,Darko Pasara,Haris Siakallis,Haris Siakallis,3-8,3,8,0,1,Completed,true,false,false
+AP003133,21 Feb 26,13,Dendy Park,Langwarrin,No. 4,Brad Piner,Dylan Schmitt,Dylan Schmitt,3-8,3,8,0,1,Completed,true,false,false
+AP003134,21 Feb 26,13,Highmoor Uniting,Overport Park,No. 1,Lachlan Peters,Josh Adams,Josh Adams,5-8,5,8,0,1,Completed,true,false,false
+AP003134,21 Feb 26,13,Highmoor Uniting,Overport Park,No. 2,Erik Bucko,Joel Treveil,Erik Bucko,8-7,8,7,1,0,Completed,true,false,false
+AP003134,21 Feb 26,13,Highmoor Uniting,Overport Park,No. 3,Yves Zenou,Steve Dumsday,Yves Zenou,8-2,8,2,1,0,Completed,true,false,false
+AP003134,21 Feb 26,13,Highmoor Uniting,Overport Park,No. 4,Sinbad Kozelski,Michael Neylan,Michael Neylan,4-8,4,8,0,1,Completed,true,false,false
+AP003141,28 Feb 26,14,Maccabi,Mt Martha,No. 1,Joel Fredman,Robert Chipp,Joel Fredman,8-7,8,7,1,0,Completed,true,false,false
+AP003141,28 Feb 26,14,Maccabi,Mt Martha,No. 2,Jordan Jaffe,Hayden Thomas,Jordan Jaffe,8-4,8,4,1,0,Completed,true,false,false
+AP003141,28 Feb 26,14,Maccabi,Mt Martha,No. 3,Jonny Henquin,Liam Walsh,Jonny Henquin,8-5,8,5,1,0,Completed,true,false,false
+AP003141,28 Feb 26,14,Maccabi,Mt Martha,No. 4,Marty Schwarz,Adam Snow,Marty Schwarz,8-4,8,4,1,0,Completed,true,false,false
+AP003142,28 Feb 26,14,Carmelite,BLTC,No. 1,Oliver Kalicin,Edward Andrews,Oliver Kalicin,8-3,8,3,1,0,Completed,true,false,false
+AP003142,28 Feb 26,14,Carmelite,BLTC,No. 2,Damien Pound,Luca Magro,Luca Magro,4-8,4,8,0,1,Completed,true,true,false
+AP003142,28 Feb 26,14,Carmelite,BLTC,No. 3,Ryan Sweeney,Warren Kennard,Ryan Sweeney,8-2,8,2,1,0,Completed,true,true,false
+AP003142,28 Feb 26,14,Carmelite,BLTC,No. 4,Angus Leckey,Roger Boyd,Roger Boyd,0-8,0,8,0,1,Completed,true,false,false
+AP003143,28 Feb 26,14,Dendy Park,Highmoor Uniting,No. 1,Dean Ellis,Paul Luke,Paul Luke,3-8,3,8,0,1,Completed,true,false,false
+AP003143,28 Feb 26,14,Dendy Park,Highmoor Uniting,No. 2,Marcelo Scalia,Erik Bucko,Marcelo Scalia,8-1,8,1,1,0,Completed,true,false,false
+AP003143,28 Feb 26,14,Dendy Park,Highmoor Uniting,No. 3,Darko Pasara,Yves Zenou,Darko Pasara,8-2,8,2,1,0,Completed,true,false,false
+AP003143,28 Feb 26,14,Dendy Park,Highmoor Uniting,No. 4,Gavin McLay,Ben Abbott,Gavin McLay,8-5,8,5,1,0,Completed,true,true,false
+AP003144,28 Feb 26,14,Overport Park,Langwarrin,No. 1,Josh Adams,Julian McKay,Julian McKay,1-8,1,8,0,1,Completed,true,false,false
+AP003144,28 Feb 26,14,Overport Park,Langwarrin,No. 2,Joel Treveil,Tim Scott-Sandvik,Tim Scott-Sandvik,1-8,1,8,0,1,Completed,true,false,false
+AP003144,28 Feb 26,14,Overport Park,Langwarrin,No. 3,Steve Dumsday,Haris Siakallis,Haris Siakallis,3-8,3,8,0,1,Completed,true,false,false
+AP003144,28 Feb 26,14,Overport Park,Langwarrin,No. 4,Beno Siebermann,Dylan Schmitt,Dylan Schmitt,3-8,3,8,0,1,Completed,true,false,false
+AP003301,,16,Langwarrin,BLTC,No. 1,Julian McKay,Christian Safko,Christian Safko,3-8,3,8,0,1,Completed,true,false,true
+AP003301,,16,Langwarrin,BLTC,No. 2,Tim Scott-Sandvik,Edward Andrews,Tim Scott-Sandvik,8-7,8,7,1,0,Completed,true,false,false
+AP003301,,16,Langwarrin,BLTC,No. 3,Haris Siakallis,Luca Magro,Luca Magro,2-8,2,8,0,1,Completed,true,false,false
+AP003301,,16,Langwarrin,BLTC,No. 4,Dylan Schmitt,Warren Kennard,Dylan Schmitt,8-6,8,6,1,0,Completed,true,false,false
+AP003302,,16,Maccabi,Mt Martha,No. 1,Assaf Drori,Christopher Arms,Assaf Drori,8-1,8,1,1,0,Completed,true,false,false
+AP003302,,16,Maccabi,Mt Martha,No. 2,Asaf Nagar,Robert Chipp,Asaf Nagar,8-6,8,6,1,0,Completed,true,false,false
+AP003302,,16,Maccabi,Mt Martha,No. 3,Jordan Jaffe,Hayden Thomas,Jordan Jaffe,8-3,8,3,1,0,Completed,true,false,false
+AP003302,,16,Maccabi,Mt Martha,No. 4,Jonny Henquin,Luca Salpietro,Jonny Henquin,8-6,8,6,1,0,Completed,true,false,false
+AP003321,,17,Maccabi,BLTC,No. 1,Assaf Drori,Christian Safko,Assaf Drori,8-3,8,3,1,0,Completed,true,false,true
+AP003321,,17,Maccabi,BLTC,No. 2,Asaf Nagar,Edward Andrews,Asaf Nagar,8-1,8,1,1,0,Completed,true,false,false
+AP003321,,17,Maccabi,BLTC,No. 3,Jordan Jaffe,Luca Magro,Luca Magro,5-8,5,8,0,1,Completed,true,false,false
+AP003321,,17,Maccabi,BLTC,No. 4,Jonny Henquin,Warren Kennard,Jonny Henquin,8-4,8,4,1,0,Completed,true,false,false

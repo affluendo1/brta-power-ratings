@@ -1,0 +1,48 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP022011,02 Oct 10,1,regular,Round 1,Clarinda,Hawthorn,1,7,1,3,4,6,44,53,Completed,
+AP022012,02 Oct 10,1,regular,Round 1,Caulfield Rec,Sth Hawthorn,0,8,0,4,1,8,24,51,Completed,
+AP022013,02 Oct 10,1,regular,Round 1,Kings Park,St Pauls,1,7,1,3,3,6,39,44,Completed,
+AP022021,09 Oct 10,2,regular,Round 2,St Pauls,Clarinda,7,1,3,1,7,2,50,23,Completed,
+AP022022,09 Oct 10,2,regular,Round 2,Sth Hawthorn,Kings Park,8,0,4,0,8,0,48,19,Completed,
+AP022023,09 Oct 10,2,regular,Round 2,Hawthorn,Caulfield Rec,6,2,2,2,4,4,33,32,Completed,
+AP022031,16 Oct 10,3,regular,Round 3,Clarinda,Caulfield Rec,0,8,0,4,1,8,26,53,Completed,
+AP022032,16 Oct 10,3,regular,Round 3,Kings Park,Hawthorn,6,2,2,2,5,5,53,51,Completed,
+AP022033,16 Oct 10,3,regular,Round 3,St Pauls,Sth Hawthorn,2,6,2,2,4,5,41,37,Completed,
+AP022041,23 Oct 10,4,regular,Round 4,Sth Hawthorn,Clarinda,7,1,3,1,6,2,38,20,Completed,
+AP022042,23 Oct 10,4,regular,Round 4,Hawthorn,St Pauls,0,8,0,4,0,8,21,50,Completed,
+AP022043,23 Oct 10,4,regular,Round 4,Caulfield Rec,Kings Park,7,1,3,1,6,2,40,22,Completed,
+AP022051,06 Nov 10,5,regular,Round 5,Clarinda,Kings Park,8,0,4,0,8,1,52,29,Completed,
+AP022052,06 Nov 10,5,regular,Round 5,Sth Hawthorn,Hawthorn,8,0,4,0,8,0,48,17,Completed,
+AP022053,06 Nov 10,5,regular,Round 5,St Pauls,Caulfield Rec,7,1,3,1,6,2,44,22,Completed,
+AP022062,13 Nov 10,6,regular,Round 6,Sth Hawthorn,Caulfield Rec,4.5,3.5,1,0,2,0,15,8,Completed,
+pending-ap022-r6-hawthorn-clarinda,13 Nov 10,6,regular,Round 6,Hawthorn,Clarinda,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap022-r6-st-pauls-kings-park,13 Nov 10,6,regular,Round 6,St Pauls,Kings Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP022071,20 Nov 10,7,regular,Round 7,Clarinda,St Pauls,0,8,0,4,1,8,29,54,Completed,
+AP022072,20 Nov 10,7,regular,Round 7,Kings Park,Sth Hawthorn,0,8,0,4,0,8,16,48,Completed,
+AP022073,20 Nov 10,7,regular,Round 7,Caulfield Rec,Hawthorn,8,0,4,0,8,1,52,31,Completed,
+pending-ap022-r8-caulfield-rec-clarinda,27 Nov 10,8,regular,Round 8,Caulfield Rec,Clarinda,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap022-r8-hawthorn-kings-park,27 Nov 10,8,regular,Round 8,Hawthorn,Kings Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap022-r8-sth-hawthorn-st-pauls,27 Nov 10,8,regular,Round 8,Sth Hawthorn,St Pauls,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP022091,04 Dec 10,9,regular,Round 9,Clarinda,Sth Hawthorn,0,8,0,4,1,8,24,56,Completed,
+AP022092,04 Dec 10,9,regular,Round 9,St Pauls,Hawthorn,8,0,4,0,8,1,55,31,Completed,
+AP022093,04 Dec 10,9,regular,Round 9,Kings Park,Caulfield Rec,6,2,2,2,5,4,47,44,Completed,
+AP022101,11 Dec 10,10,regular,Round 10,Kings Park,Clarinda,7,1,3,1,7,3,49,48,Completed,
+AP022102,11 Dec 10,10,regular,Round 10,Hawthorn,Sth Hawthorn,1,7,1,3,3,6,30,49,Completed,
+AP022103,11 Dec 10,10,regular,Round 10,Caulfield Rec,St Pauls,7,1,3,1,6,4,52,41,Completed,
+pending-ap022-r11-caulfield-rec-sth-hawthorn,05 Feb 11,11,regular,Round 11,Caulfield Rec,Sth Hawthorn,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap022-r11-clarinda-hawthorn,05 Feb 11,11,regular,Round 11,Clarinda,Hawthorn,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap022-r11-kings-park-st-pauls,05 Feb 11,11,regular,Round 11,Kings Park,St Pauls,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP022121,12 Feb 11,12,regular,Round 12,St Pauls,Clarinda,7,1,3,1,7,2,49,27,Completed,
+AP022122,12 Feb 11,12,regular,Round 12,Sth Hawthorn,Kings Park,8,0,4,0,8,1,52,20,Completed,
+AP022123,12 Feb 11,12,regular,Round 12,Hawthorn,Caulfield Rec,2,6,2,2,4,5,40,46,Completed,
+AP022131,19 Feb 11,13,regular,Round 13,Clarinda,Caulfield Rec,1,7,1,3,3,6,32,47,Completed,
+AP022132,19 Feb 11,13,regular,Round 13,Kings Park,Hawthorn,7,1,3,1,7,2,52,35,Completed,
+AP022133,19 Feb 11,13,regular,Round 13,St Pauls,Sth Hawthorn,1,7,1,3,4,7,46,62,Completed,
+AP022141,26 Feb 11,14,regular,Round 14,Sth Hawthorn,Clarinda,8,0,4,0,8,0,48,22,Completed,
+AP022142,26 Feb 11,14,regular,Round 14,Hawthorn,St Pauls,0,8,0,4,0,8,29,51,Completed,
+AP022143,26 Feb 11,14,regular,Round 14,Caulfield Rec,Kings Park,7,1,3,1,7,4,54,43,Completed,
+AP022151,05 Mar 11,15,regular,Round 15,Clarinda,Kings Park,8,0,4,0,8,3,61,46,Completed,
+AP022152,05 Mar 11,15,regular,Round 15,Sth Hawthorn,Hawthorn,8,0,4,0,8,1,53,28,Completed,
+AP022153,05 Mar 11,15,regular,Round 15,St Pauls,Caulfield Rec,4,4,2,2,4,4,35,35,Completed,
+AP022311,05 Mar 11,15,regular,Round 15,St Pauls,Caulfield Rec,8,0,4,0,8,0,48,0,Completed,
+AP022321,,16,grand_final,Grand final · TROLS entry 2,Sth Hawthorn,St Pauls,2,6,2,2,4,4,38,39,Completed,

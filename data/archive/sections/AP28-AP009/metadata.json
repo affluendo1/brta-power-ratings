@@ -1,0 +1,97 @@
+{
+  "asset_id": "AP28-AP009",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 13/14",
+  "season_id": "AP28",
+  "season_label": "Summer 13/14",
+  "source_section_code": "AP009",
+  "section_label": "Mixed Rubbers 4",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Glen Huntly",
+      "wins": 9,
+      "points": 74,
+      "percentage": 143.95,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Elwood",
+      "wins": 9,
+      "points": 69.5,
+      "percentage": 130.25,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "BLTC",
+      "wins": 7,
+      "points": 59,
+      "percentage": 115.76,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Coatesville",
+      "wins": 6,
+      "points": 52,
+      "percentage": 95.69,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Kings Park",
+      "wins": 3,
+      "points": 39.5,
+      "percentage": 96.83,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Albert Park",
+      "wins": 3,
+      "points": 30,
+      "percentage": 88.39,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Hawthorn",
+      "wins": 0,
+      "points": 12,
+      "percentage": 49.0,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP28-AP009",
+  "fixtures": 60,
+  "completed_fixtures": 44,
+  "draw_fixtures": 60,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 174,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP009121 doubles No. 2: '4-6 0-3'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

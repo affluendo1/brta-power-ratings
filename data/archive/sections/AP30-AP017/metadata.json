@@ -1,0 +1,97 @@
+{
+  "asset_id": "AP30-AP017",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 14/15",
+  "season_id": "AP30",
+  "season_label": "Summer 14/15",
+  "source_section_code": "AP017",
+  "section_label": "Men's S/D 4",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Ormond",
+      "wins": 10,
+      "points": 84,
+      "percentage": 129.89,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Kings Park",
+      "wins": 6,
+      "points": 74,
+      "percentage": 123.94,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Glen Iris Valley",
+      "wins": 6,
+      "points": 65,
+      "percentage": 100.42,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Maccabi",
+      "wins": 4,
+      "points": 55,
+      "percentage": 99.01,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Albert Reserve",
+      "wins": 3,
+      "points": 50,
+      "percentage": 87.47,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Port Melbourne",
+      "wins": 4,
+      "points": 50,
+      "percentage": 86.03,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "BLTC",
+      "wins": 4,
+      "points": 42,
+      "percentage": 82.15,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP30-AP017",
+  "fixtures": 60,
+  "completed_fixtures": 42,
+  "draw_fixtures": 49,
+  "singles_rubbers": 164,
+  "doubles_rubbers": 82,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP017302 doubles No. 2: '5-7 2-4'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

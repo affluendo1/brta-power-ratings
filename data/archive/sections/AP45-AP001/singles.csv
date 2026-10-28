@@ -1,0 +1,145 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP001012,01 Oct 22,1,Overport Park,Royal South Yarra,No. 1,Grant Thompson,Himakesh Sankineni,Himakesh Sankineni,2-8,2,8,0,1,Completed,true,false,false
+AP001012,01 Oct 22,1,Overport Park,Royal South Yarra,No. 2,Courtney Smith,Tom Neylon,Tom Neylon,4-8,4,8,0,1,Completed,true,true,false
+AP001012,01 Oct 22,1,Overport Park,Royal South Yarra,No. 3,David Hassett,Angus Roberts,Angus Roberts,1-8,1,8,0,1,Completed,true,true,false
+AP001012,01 Oct 22,1,Overport Park,Royal South Yarra,No. 4,Jason Iles,Yuri Mijic,Yuri Mijic,5-8,5,8,0,1,Completed,true,true,false
+AP001013,01 Oct 22,1,Dendy Park 1,Dendy Park 2,No. 1,Christian Williams,Jose Sebastien Herrera,Christian Williams,8-4,8,4,1,0,Completed,true,false,false
+AP001013,01 Oct 22,1,Dendy Park 1,Dendy Park 2,No. 2,Michael Kos,Geoffrey Herbet,Michael Kos,8-6,8,6,1,0,Completed,true,false,false
+AP001013,01 Oct 22,1,Dendy Park 1,Dendy Park 2,No. 3,Nicholas Williams,James McGregor,Nicholas Williams,8-5,8,5,1,0,Completed,true,false,false
+AP001013,01 Oct 22,1,Dendy Park 1,Dendy Park 2,No. 4,Andrew Kotnik,Adam Poole,Andrew Kotnik,8-6,8,6,1,0,Completed,true,false,false
+AP001021,08 Oct 22,2,Mt Eliza,BLTC,No. 1,Corey Child,Jarrod Broadbent,Jarrod Broadbent,0-8,0,8,0,1,Completed,true,false,false
+AP001021,08 Oct 22,2,Mt Eliza,BLTC,No. 2,Jack Shurdington,Jordan Batis,Jordan Batis,4-8,4,8,0,1,Completed,true,false,false
+AP001021,08 Oct 22,2,Mt Eliza,BLTC,No. 3,Ben Cummins,Morgan Young,Morgan Young,3-8,3,8,0,1,Completed,true,false,false
+AP001021,08 Oct 22,2,Mt Eliza,BLTC,No. 4,David Laird,Richard Dodson,Richard Dodson,0-8,0,8,0,1,Completed,true,true,false
+AP001023,08 Oct 22,2,Royal South Yarra,Dendy Park 1,No. 1,Himakesh Sankineni,Christian Williams,Christian Williams,5-8,5,8,0,1,Completed,true,false,false
+AP001023,08 Oct 22,2,Royal South Yarra,Dendy Park 1,No. 2,Tom Neylon,Garion Rowe,Tom Neylon,8-1,8,1,1,0,Completed,true,false,false
+AP001023,08 Oct 22,2,Royal South Yarra,Dendy Park 1,No. 3,Angus Roberts,Nicholas Williams,Nicholas Williams,7-8,7,8,0,1,Completed,true,false,false
+AP001023,08 Oct 22,2,Royal South Yarra,Dendy Park 1,No. 4,Yuri Mijic,Andrew Kotnik,Yuri Mijic,8-5,8,5,1,0,Completed,true,false,false
+AP001031,15 Oct 22,3,BLTC,Dendy Park 2,No. 1,Jarrod Broadbent,Jose Sebastien Herrera,Jarrod Broadbent,8-4,8,4,1,0,Completed,true,false,false
+AP001031,15 Oct 22,3,BLTC,Dendy Park 2,No. 2,Jayden Watts,James McGregor,Jayden Watts,8-3,8,3,1,0,Completed,true,true,false
+AP001031,15 Oct 22,3,BLTC,Dendy Park 2,No. 3,Morgan Young,Adam Poole,Morgan Young,8-0,8,0,1,0,Completed,true,false,false
+AP001031,15 Oct 22,3,BLTC,Dendy Park 2,No. 4,Richard Dodson,Loic Grzembielewski,Richard Dodson,8-3,8,3,1,0,Completed,true,false,false
+AP001032,15 Oct 22,3,Overport Park,Mt Eliza,No. 1,Seb Tring,John McDonald,Seb Tring,8-7,8,7,1,0,Completed,true,false,false
+AP001032,15 Oct 22,3,Overport Park,Mt Eliza,No. 2,Grant Thompson,Stefan Harangozo,Grant Thompson,8-5,8,5,1,0,Completed,true,false,false
+AP001032,15 Oct 22,3,Overport Park,Mt Eliza,No. 3,Jayden Cox,Jack Shurdington,Jack Shurdington,2-8,2,8,0,1,Completed,true,true,false
+AP001032,15 Oct 22,3,Overport Park,Mt Eliza,No. 4,Nick Wilson,Ben Cummins,Ben Cummins,3-8,3,8,0,1,Completed,true,true,false
+AP001034,15 Oct 22,3,Liston,Royal South Yarra,No. 1,Benjamin Ancheta,Tom Neylon,Tom Neylon,5-8,5,8,0,1,Completed,true,false,false
+AP001034,15 Oct 22,3,Liston,Royal South Yarra,No. 2,Ben Britton,Angus Roberts,Angus Roberts,4-8,4,8,0,1,Completed,true,false,false
+AP001034,15 Oct 22,3,Liston,Royal South Yarra,No. 3,Aleksandar Jankovic,Yuri Mijic,Yuri Mijic,4-8,4,8,0,1,Completed,true,true,false
+AP001034,15 Oct 22,3,Liston,Royal South Yarra,No. 4,Huon Russell,Heath Dufty-Miller,Huon Russell,8-6,8,6,1,0,Completed,true,false,true
+AP001043,22 Oct 22,4,Mt Eliza,Dendy Park 1,No. 1,Sam Young-Mathers,Christian Williams,Christian Williams,7-8,7,8,0,1,Completed,true,false,false
+AP001043,22 Oct 22,4,Mt Eliza,Dendy Park 1,No. 2,John McDonald,Michael Kos,Michael Kos,3-8,3,8,0,1,Completed,true,false,false
+AP001043,22 Oct 22,4,Mt Eliza,Dendy Park 1,No. 3,Jack Shurdington,Garion Rowe,Garion Rowe,2-8,2,8,0,1,Completed,true,false,false
+AP001043,22 Oct 22,4,Mt Eliza,Dendy Park 1,No. 4,Archie Stringer,Nicholas Williams,Nicholas Williams,0-8,0,8,0,1,Completed,true,true,false
+AP001051,05 Nov 22,5,Dendy Park 1,Liston,No. 1,Christian Williams,Sean Spralja,Christian Williams,8-7,8,7,1,0,Completed,true,false,false
+AP001051,05 Nov 22,5,Dendy Park 1,Liston,No. 2,Michael Kos,Ben Britton,Michael Kos,8-6,8,6,1,0,Completed,true,false,false
+AP001051,05 Nov 22,5,Dendy Park 1,Liston,No. 3,Garion Rowe,Mathew Spiteri,Garion Rowe,8-2,8,2,1,0,Completed,true,false,false
+AP001051,05 Nov 22,5,Dendy Park 1,Liston,No. 4,Nicholas Williams,Adam Dunscombe,Nicholas Williams,8-0,8,0,1,0,Completed,true,false,false
+AP001052,05 Nov 22,5,Mt Eliza,Dendy Park 2,No. 1,Sam Young-Mathers,Geoffrey Herbet,Geoffrey Herbet,6-8,6,8,0,1,Completed,true,false,false
+AP001052,05 Nov 22,5,Mt Eliza,Dendy Park 2,No. 2,John McDonald,James McGregor,John McDonald,8-0,8,0,1,0,Completed,true,false,false
+AP001052,05 Nov 22,5,Mt Eliza,Dendy Park 2,No. 3,Jack Shurdington,Brad Piner,Jack Shurdington,8-6,8,6,1,0,Completed,true,false,false
+AP001052,05 Nov 22,5,Mt Eliza,Dendy Park 2,No. 4,Ben Cummins,[Unnamed emergency — TROLS AP001052 away code 4],Ben Cummins,8-0,8,0,1,0,Completed,false,false,true
+AP001054,05 Nov 22,5,BLTC,Overport Park,No. 1,Peter Jevic,Andrew Scott,Andrew Scott,3-8,3,8,0,1,Completed,true,true,false
+AP001054,05 Nov 22,5,BLTC,Overport Park,No. 2,Josh Dawson,Seb Tring,Josh Dawson,8-0,8,0,1,0,Completed,true,false,false
+AP001054,05 Nov 22,5,BLTC,Overport Park,No. 3,Morgan Young,Bailey Smith,Morgan Young,8-5,8,5,1,0,Completed,true,false,false
+AP001054,05 Nov 22,5,BLTC,Overport Park,No. 4,Richard Dodson,Luke Treveil,Richard Dodson,8-1,8,1,1,0,Completed,true,false,false
+AP001061,12 Nov 22,6,Overport Park,Dendy Park 1,No. 1,Andrew Scott,Christian Williams,Christian Williams,5-8,5,8,0,1,Completed,true,false,false
+AP001061,12 Nov 22,6,Overport Park,Dendy Park 1,No. 2,Bailey Smith,Michael Kos,Michael Kos,1-8,1,8,0,1,Completed,true,false,false
+AP001061,12 Nov 22,6,Overport Park,Dendy Park 1,No. 3,Grant Thompson,Garion Rowe,Grant Thompson,8-4,8,4,1,0,Completed,true,false,false
+AP001061,12 Nov 22,6,Overport Park,Dendy Park 1,No. 4,Luke Treveil,Nicholas Williams,Luke Treveil,8-6,8,6,1,0,Completed,true,false,false
+AP001062,12 Nov 22,6,Liston,BLTC,No. 1,Sean Spralja,Brady Watts,Brady Watts,3-8,3,8,0,1,Completed,true,false,false
+AP001062,12 Nov 22,6,Liston,BLTC,No. 2,Mathew Spiteri,Josh Dawson,Josh Dawson,0-8,0,8,0,1,Completed,true,false,false
+AP001062,12 Nov 22,6,Liston,BLTC,No. 3,Huon Russell,Macgregor Anderson,Macgregor Anderson,1-8,1,8,0,1,Completed,true,false,true
+AP001062,12 Nov 22,6,Liston,BLTC,No. 4,Adam Dunscombe,Ayden Kousis,Ayden Kousis,2-8,2,8,0,1,Completed,true,false,true
+AP001063,12 Nov 22,6,Dendy Park 2,Royal South Yarra,No. 1,James McGregor,Angus Roberts,Angus Roberts,2-8,2,8,0,1,Completed,true,false,false
+AP001063,12 Nov 22,6,Dendy Park 2,Royal South Yarra,No. 2,Loic Grzembielewski,Yuri Mijic,Yuri Mijic,2-8,2,8,0,1,Completed,true,false,false
+AP001063,12 Nov 22,6,Dendy Park 2,Royal South Yarra,No. 3,Brad Piner,Harley Simon,Harley Simon,0-8,0,8,0,1,Completed,true,false,false
+AP001063,12 Nov 22,6,Dendy Park 2,Royal South Yarra,No. 4,Craig Dungey,Harrison Lister,Craig Dungey,8-1,8,1,1,0,Completed,true,true,true
+AP001082,26 Nov 22,8,Royal South Yarra,Overport Park,No. 1,Himakesh Sankineni,Seb Tring,Himakesh Sankineni,8-1,8,1,1,0,Completed,true,false,false
+AP001082,26 Nov 22,8,Royal South Yarra,Overport Park,No. 2,Tom Neylon,Bailey Smith,Tom Neylon,8-1,8,1,1,0,Completed,true,false,false
+AP001082,26 Nov 22,8,Royal South Yarra,Overport Park,No. 3,Angus Roberts,Luke Treveil,Angus Roberts,8-2,8,2,1,0,Completed,true,false,false
+AP001082,26 Nov 22,8,Royal South Yarra,Overport Park,No. 4,Yuri Mijic,Adam Wade,Yuri Mijic,8-2,8,2,1,0,Completed,true,false,true
+AP001083,26 Nov 22,8,Dendy Park 2,Dendy Park 1,No. 1,Jose Sebastien Herrera,Christian Williams,Christian Williams,5-8,5,8,0,1,Completed,true,false,false
+AP001083,26 Nov 22,8,Dendy Park 2,Dendy Park 1,No. 2,Geoffrey Herbet,Michael Kos,Michael Kos,5-8,5,8,0,1,Completed,true,false,false
+AP001083,26 Nov 22,8,Dendy Park 2,Dendy Park 1,No. 3,James McGregor,Nicholas Williams,Nicholas Williams,3-8,3,8,0,1,Completed,true,false,false
+AP001083,26 Nov 22,8,Dendy Park 2,Dendy Park 1,No. 4,Adam Poole,Andrew Kotnik,Andrew Kotnik,4-8,4,8,0,1,Completed,true,false,false
+AP001084,26 Nov 22,8,Mt Eliza,Liston,No. 1,John McDonald,Robert Carpio,John McDonald,8-4,8,4,1,0,Completed,true,false,false
+AP001084,26 Nov 22,8,Mt Eliza,Liston,No. 2,Corey Child,Sean Spralja,Corey Child,8-4,8,4,1,0,Completed,true,false,false
+AP001084,26 Nov 22,8,Mt Eliza,Liston,No. 3,Jack Shurdington,Aidan Biyan,Jack Shurdington,8-7,8,7,1,0,Completed,true,false,true
+AP001084,26 Nov 22,8,Mt Eliza,Liston,No. 4,Ben Cummins,[Unnamed emergency — TROLS AP001084 away code 4],Ben Cummins,8-0,8,0,1,0,Completed,false,false,true
+AP001091,03 Dec 22,9,BLTC,Mt Eliza,No. 1,Jack Broadbent,John McDonald,John McDonald,2-8,2,8,0,1,Completed,true,false,false
+AP001091,03 Dec 22,9,BLTC,Mt Eliza,No. 2,Jarrod Broadbent,Jack Shurdington,Jarrod Broadbent,8-0,8,0,1,0,Completed,true,false,false
+AP001091,03 Dec 22,9,BLTC,Mt Eliza,No. 3,Morgan Young,Ben Cummins,Morgan Young,8-4,8,4,1,0,Completed,true,false,false
+AP001091,03 Dec 22,9,BLTC,Mt Eliza,No. 4,Richard Dodson,Craig Dungey,Richard Dodson,8-7,8,7,1,0,Completed,true,false,true
+AP001093,03 Dec 22,9,Dendy Park 1,Royal South Yarra,No. 1,Christian Williams,Himakesh Sankineni,Himakesh Sankineni,7-8,7,8,0,1,Completed,true,false,false
+AP001093,03 Dec 22,9,Dendy Park 1,Royal South Yarra,No. 2,Michael Kos,Angus Roberts,Michael Kos,8-1,8,1,1,0,Completed,true,false,false
+AP001093,03 Dec 22,9,Dendy Park 1,Royal South Yarra,No. 3,Garion Rowe,Yuri Mijic,Yuri Mijic,4-8,4,8,0,1,Completed,true,false,false
+AP001093,03 Dec 22,9,Dendy Park 1,Royal South Yarra,No. 4,Nicholas Williams,Stefan Woolley,Nicholas Williams,8-1,8,1,1,0,Completed,true,false,true
+AP001094,03 Dec 22,9,Liston,Dendy Park 2,No. 1,Ben Britton,Geoffrey Herbet,Geoffrey Herbet,4-8,4,8,0,1,Completed,true,false,false
+AP001094,03 Dec 22,9,Liston,Dendy Park 2,No. 2,Mathew Spiteri,James McGregor,James McGregor,6-8,6,8,0,1,Completed,true,false,false
+AP001094,03 Dec 22,9,Liston,Dendy Park 2,No. 3,Huon Russell,Anthony Albore,Anthony Albore,2-8,2,8,0,1,Completed,true,false,true
+AP001094,03 Dec 22,9,Liston,Dendy Park 2,No. 4,Adam Dunscombe,Dean Ellis,Dean Ellis,6-8,6,8,0,1,Completed,true,false,false
+AP001101,10 Dec 22,10,Dendy Park 2,BLTC,No. 1,Jose Sebastien Herrera,Jarrod Broadbent,Jarrod Broadbent,1-8,1,8,0,1,Completed,true,false,false
+AP001101,10 Dec 22,10,Dendy Park 2,BLTC,No. 2,Geoffrey Herbet,Jack Broadbent,Geoffrey Herbet,8-2,8,2,1,0,Completed,true,false,false
+AP001101,10 Dec 22,10,Dendy Park 2,BLTC,No. 3,Dean Ellis,Morgan Young,Morgan Young,2-8,2,8,0,1,Completed,true,false,false
+AP001101,10 Dec 22,10,Dendy Park 2,BLTC,No. 4,Loic Grzembielewski,Richard Dodson,Richard Dodson,1-8,1,8,0,1,Completed,true,false,false
+AP001102,10 Dec 22,10,Mt Eliza,Overport Park,No. 1,Corey Child,Seb Tring,Seb Tring,5-8,5,8,0,1,Completed,true,false,false
+AP001102,10 Dec 22,10,Mt Eliza,Overport Park,No. 2,Jack Shurdington,Grant Thompson,Grant Thompson,6-8,6,8,0,1,Completed,true,false,false
+AP001102,10 Dec 22,10,Mt Eliza,Overport Park,No. 3,Broden Cox,Jayden Cox,Jayden Cox,3-8,3,8,0,1,Completed,true,true,true
+AP001102,10 Dec 22,10,Mt Eliza,Overport Park,No. 4,Alex McDonald,Alex Prattico,Alex Prattico,3-8,3,8,0,1,Completed,true,true,true
+AP001104,10 Dec 22,10,Royal South Yarra,Liston,No. 1,Himakesh Sankineni,Sean Spralja,Himakesh Sankineni,8-2,8,2,1,0,Completed,true,false,false
+AP001104,10 Dec 22,10,Royal South Yarra,Liston,No. 2,Grant McMurtrie,Ben Britton,Ben Britton,2-8,2,8,0,1,Completed,true,true,false
+AP001104,10 Dec 22,10,Royal South Yarra,Liston,No. 3,Jake Zerman,Jesse Hart,Jesse Hart,4-8,4,8,0,1,Completed,true,true,true
+AP001104,10 Dec 22,10,Royal South Yarra,Liston,No. 4,Declan Sullivan,Adam Dunscombe,Declan Sullivan,8-5,8,5,1,0,Completed,true,true,false
+AP001111,04 Feb 23,11,BLTC,Royal South Yarra,No. 1,Jack Broadbent,Himakesh Sankineni,Himakesh Sankineni,4-8,4,8,0,1,Completed,true,false,false
+AP001111,04 Feb 23,11,BLTC,Royal South Yarra,No. 2,Kibet Yego,Angus Roberts,Kibet Yego,8-4,8,4,1,0,Completed,true,true,false
+AP001111,04 Feb 23,11,BLTC,Royal South Yarra,No. 3,Brady Watts,David Tarascio,Brady Watts,8-4,8,4,1,0,Completed,true,false,true
+AP001111,04 Feb 23,11,BLTC,Royal South Yarra,No. 4,Jordan Batis,Jason Pinenta,Jordan Batis,8-6,8,6,1,0,Completed,true,false,true
+AP001112,04 Feb 23,11,Overport Park,Dendy Park 2,No. 1,Andrew Scott,Jose Sebastien Herrera,Andrew Scott,8-4,8,4,1,0,Completed,true,false,false
+AP001112,04 Feb 23,11,Overport Park,Dendy Park 2,No. 2,Bailey Smith,Geoffrey Herbet,Geoffrey Herbet,3-8,3,8,0,1,Completed,true,false,false
+AP001112,04 Feb 23,11,Overport Park,Dendy Park 2,No. 3,Grant Thompson,Julian Blainey,Julian Blainey,5-8,5,8,0,1,Completed,true,false,false
+AP001112,04 Feb 23,11,Overport Park,Dendy Park 2,No. 4,Jayden Cox,James McGregor,Jayden Cox,8-4,8,4,1,0,Completed,true,true,false
+AP001113,04 Feb 23,11,Dendy Park 1,Mt Eliza,No. 1,Christian Williams,Sam Young-Mathers,Christian Williams,8-5,8,5,1,0,Completed,true,false,false
+AP001113,04 Feb 23,11,Dendy Park 1,Mt Eliza,No. 2,Michael Kos,John McDonald,John McDonald,7-8,7,8,0,1,Completed,true,false,false
+AP001113,04 Feb 23,11,Dendy Park 1,Mt Eliza,No. 3,Garion Rowe,Corey Child,Corey Child,5-8,5,8,0,1,Completed,true,false,false
+AP001113,04 Feb 23,11,Dendy Park 1,Mt Eliza,No. 4,Nicholas Williams,Stefan Harangozo,Nicholas Williams,8-7,8,7,1,0,Completed,true,false,false
+AP001121,11 Feb 23,12,Liston,Dendy Park 1,No. 1,Sean Spralja,Michael Kos,Michael Kos,0-8,0,8,0,1,Completed,true,false,false
+AP001121,11 Feb 23,12,Liston,Dendy Park 1,No. 2,Mathew Spiteri,Garion Rowe,Garion Rowe,2-8,2,8,0,1,Completed,true,false,false
+AP001121,11 Feb 23,12,Liston,Dendy Park 1,No. 3,Huon Russell,Nicholas Williams,Nicholas Williams,6-8,6,8,0,1,Completed,true,false,false
+AP001121,11 Feb 23,12,Liston,Dendy Park 1,No. 4,Adam Dunscombe,Hayden Fricke,Hayden Fricke,0-8,0,8,0,1,Completed,true,false,true
+AP001122,11 Feb 23,12,Dendy Park 2,Mt Eliza,No. 1,Jose Sebastien Herrera,John McDonald,John McDonald,5-8,5,8,0,1,Completed,true,false,false
+AP001122,11 Feb 23,12,Dendy Park 2,Mt Eliza,No. 2,Geoffrey Herbet,Corey Child,Corey Child,7-8,7,8,0,1,Completed,true,false,false
+AP001122,11 Feb 23,12,Dendy Park 2,Mt Eliza,No. 3,Julian Blainey,Jack Shurdington,Jack Shurdington,5-8,5,8,0,1,Completed,true,false,false
+AP001122,11 Feb 23,12,Dendy Park 2,Mt Eliza,No. 4,Dean Ellis,Ben Cummins,Ben Cummins,1-8,1,8,0,1,Completed,true,false,false
+AP001124,11 Feb 23,12,Overport Park,BLTC,No. 1,Andrew Scott,Jack Broadbent,Andrew Scott,8-1,8,1,1,0,Completed,true,false,false
+AP001124,11 Feb 23,12,Overport Park,BLTC,No. 2,Seb Tring,Brady Watts,Seb Tring,8-4,8,4,1,0,Completed,true,false,false
+AP001124,11 Feb 23,12,Overport Park,BLTC,No. 3,Grant Thompson,Josh Dawson,Josh Dawson,2-8,2,8,0,1,Completed,true,false,false
+AP001124,11 Feb 23,12,Overport Park,BLTC,No. 4,Luke Treveil,Morgan Young,Morgan Young,2-8,2,8,0,1,Completed,true,false,false
+AP001131,18 Feb 23,13,Dendy Park 1,Overport Park,No. 1,Christian Williams,Andrew Scott,Andrew Scott,1-8,1,8,0,1,Completed,true,false,false
+AP001131,18 Feb 23,13,Dendy Park 1,Overport Park,No. 2,Michael Kos,Seb Tring,Michael Kos,8-2,8,2,1,0,Completed,true,false,false
+AP001131,18 Feb 23,13,Dendy Park 1,Overport Park,No. 3,Nicholas Williams,Bailey Smith,Nicholas Williams,8-5,8,5,1,0,Completed,true,false,false
+AP001131,18 Feb 23,13,Dendy Park 1,Overport Park,No. 4,Sam Kaolan,Jayden Cox,Sam Kaolan,8-3,8,3,1,0,Completed,true,true,true
+AP001132,18 Feb 23,13,BLTC,Liston,No. 1,Jarrod Broadbent,Sean Spralja,Jarrod Broadbent,8-2,8,2,1,0,Completed,true,false,false
+AP001132,18 Feb 23,13,BLTC,Liston,No. 2,Jack Broadbent,Ben Britton,Jack Broadbent,8-5,8,5,1,0,Completed,true,false,false
+AP001132,18 Feb 23,13,BLTC,Liston,No. 3,Morgan Young,Huon Russell,Morgan Young,8-0,8,0,1,0,Completed,true,false,false
+AP001132,18 Feb 23,13,BLTC,Liston,No. 4,Richard Dodson,Adam Dunscombe,Richard Dodson,8-5,8,5,1,0,Completed,true,false,false
+AP001141,25 Feb 23,14,Dendy Park 1,BLTC,No. 1,Michael Kos,Jarrod Broadbent,Jarrod Broadbent,5-8,5,8,0,1,Completed,true,false,false
+AP001141,25 Feb 23,14,Dendy Park 1,BLTC,No. 2,Garion Rowe,Brady Watts,Brady Watts,7-8,7,8,0,1,Completed,true,false,false
+AP001141,25 Feb 23,14,Dendy Park 1,BLTC,No. 3,Nicholas Williams,Josh Dawson,Nicholas Williams,8-6,8,6,1,0,Completed,true,false,false
+AP001141,25 Feb 23,14,Dendy Park 1,BLTC,No. 4,Andrew Kotnik,Jordan Batis,Jordan Batis,7-8,7,8,0,1,Completed,true,false,false
+AP001143,25 Feb 23,14,Royal South Yarra,Mt Eliza,No. 1,Himakesh Sankineni,John McDonald,John McDonald,6-8,6,8,0,1,Completed,true,false,false
+AP001143,25 Feb 23,14,Royal South Yarra,Mt Eliza,No. 2,Tom Neylon,Corey Child,Corey Child,3-8,3,8,0,1,Completed,true,false,false
+AP001143,25 Feb 23,14,Royal South Yarra,Mt Eliza,No. 3,Heath Dufty-Miller,Stefan Harangozo,Stefan Harangozo,2-8,2,8,0,1,Completed,true,true,false
+AP001143,25 Feb 23,14,Royal South Yarra,Mt Eliza,No. 4,Harrison Lister,Jack Shurdington,Jack Shurdington,2-8,2,8,0,1,Completed,true,true,false
+AP001301,,16,BLTC,Overport Park,No. 1,Jarrod Broadbent,Andrew Scott,Andrew Scott,6-8,6,8,0,1,Completed,true,false,false
+AP001301,,16,BLTC,Overport Park,No. 2,Jack Broadbent,Seb Tring,Seb Tring,6-8,6,8,0,1,Completed,true,false,false
+AP001301,,16,BLTC,Overport Park,No. 3,Brady Watts,Bailey Smith,Bailey Smith,6-8,6,8,0,1,Completed,true,false,false
+AP001301,,16,BLTC,Overport Park,No. 4,Jordan Batis,Grant Thompson,Jordan Batis,8-6,8,6,1,0,Completed,true,false,false
+AP001302,,16,Dendy Park 1,Royal South Yarra,No. 1,Michael Kos,Himakesh Sankineni,Michael Kos,8-7,8,7,1,0,Completed,true,false,false
+AP001302,,16,Dendy Park 1,Royal South Yarra,No. 2,Garion Rowe,Tom Neylon,Garion Rowe,8-6,8,6,1,0,Completed,true,false,false
+AP001302,,16,Dendy Park 1,Royal South Yarra,No. 3,Nicholas Williams,Jason Pinenta,Jason Pinenta,5-8,5,8,0,1,Completed,true,false,true
+AP001302,,16,Dendy Park 1,Royal South Yarra,No. 4,Andrew Kotnik,Yuri Mijic,Andrew Kotnik,8-5,8,5,1,0,Completed,true,false,false
+AP001321,,17,Dendy Park 1,Overport Park,No. 1,Christian Williams,Andrew Scott,Andrew Scott,5-8,5,8,0,1,Completed,true,false,false
+AP001321,,17,Dendy Park 1,Overport Park,No. 2,Michael Kos,Seb Tring,Seb Tring,7-8,7,8,0,1,Completed,true,false,false
+AP001321,,17,Dendy Park 1,Overport Park,No. 3,Garion Rowe,Bailey Smith,Bailey Smith,5-8,5,8,0,1,Completed,true,false,false
+AP001321,,17,Dendy Park 1,Overport Park,No. 4,Nicholas Williams,Luke Treveil,Nicholas Williams,8-4,8,4,1,0,Completed,true,false,false

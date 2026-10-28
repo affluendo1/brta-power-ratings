@@ -1,0 +1,165 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP009012,06 May 23,1,Chadstone Red,Chadstone Blue,No. 1,Greg Piper,John Grant,Greg Piper,8-2,8,2,1,0,Completed,true,false,false
+AP009012,06 May 23,1,Chadstone Red,Chadstone Blue,No. 2,Danielle Fisher,Ben Martin,Danielle Fisher,8-1,8,1,1,0,Completed,true,false,false
+AP009012,06 May 23,1,Chadstone Red,Chadstone Blue,No. 3,Thomas Fisher,Anesti Bubulya,Anesti Bubulya,3-8,3,8,0,1,Completed,true,false,false
+AP009012,06 May 23,1,Chadstone Red,Chadstone Blue,No. 4,Laura Mazzarella,Julia Merkouris,Laura Mazzarella,8-7,8,7,1,0,Completed,true,false,false
+AP009014,06 May 23,1,Clarinda,Glen Huntly,No. 1,Cory Hall,Gerald Pereria,Cory Hall,8-3,8,3,1,0,Completed,true,false,false
+AP009014,06 May 23,1,Clarinda,Glen Huntly,No. 2,Tri Dinh,Michael Haynes,Tri Dinh,8-2,8,2,1,0,Completed,true,false,false
+AP009014,06 May 23,1,Clarinda,Glen Huntly,No. 3,Roland Detterbeck,Daniel Katanov,Roland Detterbeck,8-2,8,2,1,0,Completed,true,true,false
+AP009014,06 May 23,1,Clarinda,Glen Huntly,No. 4,Johnny Pliatsikas,Gaurav Jain,Johnny Pliatsikas,8-3,8,3,1,0,Completed,true,false,false
+AP009021,13 May 23,2,Glen Huntly,East Malvern,No. 1,Gerald Pereria,Rajat Dang,Rajat Dang,4-8,4,8,0,1,Completed,true,false,false
+AP009021,13 May 23,2,Glen Huntly,East Malvern,No. 2,Franck Morin,Faran Mazloomi,Faran Mazloomi,2-8,2,8,0,1,Completed,true,false,false
+AP009021,13 May 23,2,Glen Huntly,East Malvern,No. 3,Daniel Katanov,Martin Giffard,Martin Giffard,0-8,0,8,0,1,Completed,true,false,false
+AP009021,13 May 23,2,Glen Huntly,East Malvern,No. 4,Gaurav Jain,James Boal,James Boal,1-8,1,8,0,1,Completed,true,false,false
+AP009022,13 May 23,2,St Anthony's,Chadstone Red,No. 1,Vincent Macassa,Greg Piper,Vincent Macassa,8-5,8,5,1,0,Completed,true,false,false
+AP009022,13 May 23,2,St Anthony's,Chadstone Red,No. 2,Chris Doherty,Danielle Fisher,Danielle Fisher,1-8,1,8,0,1,Completed,true,true,false
+AP009022,13 May 23,2,St Anthony's,Chadstone Red,No. 3,Jim Harrison,Laura Mazzarella,Jim Harrison,8-4,8,4,1,0,Completed,true,false,false
+AP009022,13 May 23,2,St Anthony's,Chadstone Red,No. 4,Arthur Asimenias,Aiden Cruse,Arthur Asimenias,8-3,8,3,1,0,Completed,true,false,false
+AP009024,13 May 23,2,Ormond,Clarinda,No. 1,Mason Campbell,Cory Hall,Cory Hall,3-8,3,8,0,1,Completed,true,false,false
+AP009024,13 May 23,2,Ormond,Clarinda,No. 2,Rivka Garson,Tri Dinh,Tri Dinh,0-8,0,8,0,1,Completed,true,false,false
+AP009024,13 May 23,2,Ormond,Clarinda,No. 3,Carole Pywell,Johnny Pliatsikas,Johnny Pliatsikas,0-8,0,8,0,1,Completed,true,false,false
+AP009024,13 May 23,2,Ormond,Clarinda,No. 4,Jasmine Yu,Jackson Balalovski,Jackson Balalovski,2-8,2,8,0,1,Completed,true,false,false
+AP009031,20 May 23,3,East Malvern,Ormond,No. 1,Faran Mazloomi,Phil Bai,Phil Bai,5-8,5,8,0,1,Completed,true,false,true
+AP009031,20 May 23,3,East Malvern,Ormond,No. 2,Martin Giffard,Susan Harrison,Martin Giffard,8-1,8,1,1,0,Completed,true,false,false
+AP009031,20 May 23,3,East Malvern,Ormond,No. 3,James Bryden,Rivka Garson,James Bryden,8-3,8,3,1,0,Completed,true,false,false
+AP009031,20 May 23,3,East Malvern,Ormond,No. 4,James Boal,Carole Pywell,James Boal,8-0,8,0,1,0,Completed,true,false,false
+AP009032,20 May 23,3,Chadstone Red,Glen Huntly,No. 1,Greg Piper,Gerald Pereria,Gerald Pereria,7-8,7,8,0,1,Completed,true,false,false
+AP009032,20 May 23,3,Chadstone Red,Glen Huntly,No. 2,Danielle Fisher,Michael Haynes,Danielle Fisher,8-6,8,6,1,0,Completed,true,false,false
+AP009032,20 May 23,3,Chadstone Red,Glen Huntly,No. 3,Thomas Fisher,Paul Egre,Paul Egre,6-8,6,8,0,1,Completed,true,false,false
+AP009032,20 May 23,3,Chadstone Red,Glen Huntly,No. 4,Aiden Cruse,Isaac Egre,Aiden Cruse,8-4,8,4,1,0,Completed,true,false,true
+AP009034,20 May 23,3,Clarinda,Chadstone Blue,No. 1,Cory Hall,Ben Martin,Cory Hall,8-4,8,4,1,0,Completed,true,false,false
+AP009034,20 May 23,3,Clarinda,Chadstone Blue,No. 2,Tri Dinh,Anesti Bubulya,Tri Dinh,8-3,8,3,1,0,Completed,true,false,false
+AP009034,20 May 23,3,Clarinda,Chadstone Blue,No. 3,Johnny Pliatsikas,Stephanie Merkouris,Johnny Pliatsikas,8-0,8,0,1,0,Completed,true,false,false
+AP009034,20 May 23,3,Clarinda,Chadstone Blue,No. 4,Jackson Balalovski,Tina Johnston,Tina Johnston,0-8,0,8,0,1,Completed,true,false,false
+AP009041,27 May 23,4,Chadstone Blue,East Malvern,No. 1,Ben Martin,Martin Giffard,Ben Martin,8-2,8,2,1,0,Completed,true,false,false
+AP009041,27 May 23,4,Chadstone Blue,East Malvern,No. 2,Julia Merkouris,Alex Dusek,Alex Dusek,0-8,0,8,0,1,Completed,true,false,false
+AP009041,27 May 23,4,Chadstone Blue,East Malvern,No. 3,Stephanie Merkouris,James Bryden,James Bryden,3-8,3,8,0,1,Completed,true,false,false
+AP009041,27 May 23,4,Chadstone Blue,East Malvern,No. 4,Tina Johnston,Frantzeskos Triantafyllou,Frantzeskos Triantafyllou,1-8,1,8,0,1,Completed,true,false,false
+AP009042,27 May 23,4,Ormond,Chadstone Red,No. 1,Susan Harrison,Greg Piper,Greg Piper,2-8,2,8,0,1,Completed,true,false,false
+AP009042,27 May 23,4,Ormond,Chadstone Red,No. 2,Raine Xiao,Danielle Fisher,Danielle Fisher,1-8,1,8,0,1,Completed,true,false,false
+AP009042,27 May 23,4,Ormond,Chadstone Red,No. 3,Carole Pywell,Thomas Fisher,Thomas Fisher,3-8,3,8,0,1,Completed,true,false,false
+AP009042,27 May 23,4,Ormond,Chadstone Red,No. 4,Jasmine Yu,Aiden Cruse,Aiden Cruse,1-8,1,8,0,1,Completed,true,false,false
+AP009044,27 May 23,4,St Anthony's,Clarinda,No. 1,Vincent Macassa,Cory Hall,Cory Hall,7-8,7,8,0,1,Completed,true,false,false
+AP009044,27 May 23,4,St Anthony's,Clarinda,No. 2,Jayden Lewis,Tung Lam,Tung Lam,2-8,2,8,0,1,Completed,true,false,true
+AP009044,27 May 23,4,St Anthony's,Clarinda,No. 3,Jim Harrison,Johnny Pliatsikas,Johnny Pliatsikas,5-8,5,8,0,1,Completed,true,false,false
+AP009044,27 May 23,4,St Anthony's,Clarinda,No. 4,Arthur Asimenias,Jackson Balalovski,Arthur Asimenias,8-1,8,1,1,0,Completed,true,false,false
+AP009053,03 Jun 23,5,Chadstone Blue,St Anthony's,No. 1,John Grant,Jayden Lewis,John Grant,8-6,8,6,1,0,Completed,true,false,false
+AP009053,03 Jun 23,5,Chadstone Blue,St Anthony's,No. 2,Ben Martin,Cam Wilkinson,Ben Martin,8-7,8,7,1,0,Completed,true,false,false
+AP009053,03 Jun 23,5,Chadstone Blue,St Anthony's,No. 3,Ray Turss,Jim Harrison,Ray Turss,8-4,8,4,1,0,Completed,true,true,false
+AP009053,03 Jun 23,5,Chadstone Blue,St Anthony's,No. 4,Tina Johnston,Arthur Asimenias,Arthur Asimenias,0-8,0,8,0,1,Completed,true,false,false
+AP009054,03 Jun 23,5,East Malvern,Chadstone Red,No. 1,Martin Giffard,Greg Piper,Greg Piper,1-8,1,8,0,1,Completed,true,false,false
+AP009054,03 Jun 23,5,East Malvern,Chadstone Red,No. 2,Alex Dusek,Danielle Fisher,Danielle Fisher,1-8,1,8,0,1,Completed,true,false,false
+AP009054,03 Jun 23,5,East Malvern,Chadstone Red,No. 3,James Bryden,Aiden Cruse,James Bryden,8-2,8,2,1,0,Completed,true,false,false
+AP009054,03 Jun 23,5,East Malvern,Chadstone Red,No. 4,Frantzeskos Triantafyllou,Laura Mazzarella,Frantzeskos Triantafyllou,8-2,8,2,1,0,Completed,true,false,false
+AP009062,17 Jun 23,6,Clarinda,East Malvern,No. 1,Cory Hall,Rajat Dang,Cory Hall,8-6,8,6,1,0,Completed,true,false,false
+AP009062,17 Jun 23,6,Clarinda,East Malvern,No. 2,Tri Dinh,Faran Mazloomi,Tri Dinh,8-3,8,3,1,0,Completed,true,false,false
+AP009062,17 Jun 23,6,Clarinda,East Malvern,No. 3,Zac Sevastas,Alex Dusek,Zac Sevastas,8-2,8,2,1,0,Completed,true,false,false
+AP009062,17 Jun 23,6,Clarinda,East Malvern,No. 4,Johnny Pliatsikas,Frantzeskos Triantafyllou,Frantzeskos Triantafyllou,2-8,2,8,0,1,Completed,true,false,false
+AP009063,17 Jun 23,6,Ormond,Chadstone Blue,No. 1,Mason Campbell,John Grant,John Grant,5-8,5,8,0,1,Completed,true,false,false
+AP009063,17 Jun 23,6,Ormond,Chadstone Blue,No. 2,Susan Harrison,Ben Martin,Ben Martin,1-8,1,8,0,1,Completed,true,false,false
+AP009063,17 Jun 23,6,Ormond,Chadstone Blue,No. 3,Rivka Garson,Anesti Bubulya,Anesti Bubulya,2-8,2,8,0,1,Completed,true,false,false
+AP009063,17 Jun 23,6,Ormond,Chadstone Blue,No. 4,Jasmine Yu,Tina Johnston,Tina Johnston,0-8,0,8,0,1,Completed,true,false,false
+AP009064,17 Jun 23,6,St Anthony's,Glen Huntly,No. 1,Vincent Macassa,Gerald Pereria,Gerald Pereria,5-8,5,8,0,1,Completed,true,false,false
+AP009064,17 Jun 23,6,St Anthony's,Glen Huntly,No. 2,Jayden Lewis,Michael Haynes,Michael Haynes,2-8,2,8,0,1,Completed,true,false,false
+AP009064,17 Jun 23,6,St Anthony's,Glen Huntly,No. 3,Jim Harrison,William Gort,Jim Harrison,8-7,8,7,1,0,Completed,true,false,true
+AP009064,17 Jun 23,6,St Anthony's,Glen Huntly,No. 4,Arthur Asimenias,Anirudh Devanathan,Anirudh Devanathan,3-8,3,8,0,1,Completed,true,false,true
+AP009073,24 Jun 23,7,Glen Huntly,Chadstone Blue,No. 1,Nasik Ahmed,John Grant,John Grant,3-8,3,8,0,1,Completed,true,false,false
+AP009073,24 Jun 23,7,Glen Huntly,Chadstone Blue,No. 2,Michael Haynes,Ben Martin,Michael Haynes,8-5,8,5,1,0,Completed,true,false,false
+AP009073,24 Jun 23,7,Glen Huntly,Chadstone Blue,No. 3,William Gort,Julia Merkouris,William Gort,8-7,8,7,1,0,Completed,true,true,false
+AP009073,24 Jun 23,7,Glen Huntly,Chadstone Blue,No. 4,Daniel Katanov,Stephanie Merkouris,Daniel Katanov,8-6,8,6,1,0,Completed,true,false,false
+AP009074,24 Jun 23,7,Ormond,St Anthony's,No. 1,Susan Harrison,Vincent Macassa,,0-2,0,2,0,1,Unfinished,false,false,false
+AP009074,24 Jun 23,7,Ormond,St Anthony's,No. 2,Rivka Garson,Cam Wilkinson,,0-3,0,3,0,1,Unfinished,false,false,false
+AP009074,24 Jun 23,7,Ormond,St Anthony's,No. 3,Carole Pywell,Jim Harrison,Jim Harrison,0-8,0,8,0,1,Completed,true,false,false
+AP009074,24 Jun 23,7,Ormond,St Anthony's,No. 4,Melissa Cogdon,Arthur Asimenias,Arthur Asimenias,1-8,1,8,0,1,Completed,true,false,false
+AP009081,08 Jul 23,8,St Anthony's,East Malvern,No. 1,Vincent Macassa,Rajat Dang,Vincent Macassa,8-5,8,5,1,0,Completed,true,false,false
+AP009081,08 Jul 23,8,St Anthony's,East Malvern,No. 2,Joseph Obsioma,Faran Mazloomi,Joseph Obsioma,8-3,8,3,1,0,Completed,true,true,false
+AP009081,08 Jul 23,8,St Anthony's,East Malvern,No. 3,Jayden Lewis,Martin Giffard,Jayden Lewis,8-3,8,3,1,0,Completed,true,false,false
+AP009081,08 Jul 23,8,St Anthony's,East Malvern,No. 4,Cam Wilkinson,Frantzeskos Triantafyllou,Cam Wilkinson,8-5,8,5,1,0,Completed,true,false,false
+AP009082,08 Jul 23,8,Chadstone Blue,Chadstone Red,No. 1,John Grant,Greg Piper,Greg Piper,4-8,4,8,0,1,Completed,true,false,false
+AP009082,08 Jul 23,8,Chadstone Blue,Chadstone Red,No. 2,Ben Martin,Danielle Fisher,Danielle Fisher,7-8,7,8,0,1,Completed,true,false,false
+AP009082,08 Jul 23,8,Chadstone Blue,Chadstone Red,No. 3,Anesti Bubulya,Thomas Fisher,Anesti Bubulya,8-6,8,6,1,0,Completed,true,false,false
+AP009082,08 Jul 23,8,Chadstone Blue,Chadstone Red,No. 4,Stephanie Merkouris,Laura Mazzarella,Stephanie Merkouris,8-6,8,6,1,0,Completed,true,false,false
+AP009084,08 Jul 23,8,Glen Huntly,Clarinda,No. 1,Gerald Pereria,Cory Hall,Cory Hall,6-8,6,8,0,1,Completed,true,false,false
+AP009084,08 Jul 23,8,Glen Huntly,Clarinda,No. 2,Pei Yuan Li,Tri Dinh,Tri Dinh,4-8,4,8,0,1,Completed,true,true,false
+AP009084,08 Jul 23,8,Glen Huntly,Clarinda,No. 3,Michael Haynes,Zac Sevastas,Michael Haynes,8-4,8,4,1,0,Completed,true,false,false
+AP009084,08 Jul 23,8,Glen Huntly,Clarinda,No. 4,Daniel Katanov,Roland Detterbeck,Roland Detterbeck,5-8,5,8,0,1,Completed,true,false,true
+AP009091,15 Jul 23,9,East Malvern,Glen Huntly,No. 1,Martin Giffard,William Gort,William Gort,7-8,7,8,0,1,Completed,true,false,true
+AP009091,15 Jul 23,9,East Malvern,Glen Huntly,No. 2,Alex Dusek,Daniel Katanov,Daniel Katanov,7-8,7,8,0,1,Completed,true,false,false
+AP009091,15 Jul 23,9,East Malvern,Glen Huntly,No. 3,James Bryden,Paul Egre,Paul Egre,2-8,2,8,0,1,Completed,true,false,false
+AP009091,15 Jul 23,9,East Malvern,Glen Huntly,No. 4,Frantzeskos Triantafyllou,Gaurav Jain,Frantzeskos Triantafyllou,8-6,8,6,1,0,Completed,true,false,false
+AP009092,15 Jul 23,9,Chadstone Red,St Anthony's,No. 1,Joshua Fisher,Vincent Macassa,Joshua Fisher,8-0,8,0,1,0,Completed,true,false,false
+AP009092,15 Jul 23,9,Chadstone Red,St Anthony's,No. 2,Greg Piper,Jayden Lewis,Greg Piper,8-1,8,1,1,0,Completed,true,false,false
+AP009092,15 Jul 23,9,Chadstone Red,St Anthony's,No. 3,Thomas Fisher,Jim Harrison,Jim Harrison,7-8,7,8,0,1,Completed,true,false,false
+AP009092,15 Jul 23,9,Chadstone Red,St Anthony's,No. 4,Natalie Menchikova,Arthur Asimenias,Natalie Menchikova,8-1,8,1,1,0,Completed,true,true,false
+AP009094,15 Jul 23,9,Clarinda,Ormond,No. 1,Cory Hall,Mason Campbell,Cory Hall,8-2,8,2,1,0,Completed,true,false,false
+AP009094,15 Jul 23,9,Clarinda,Ormond,No. 2,Tri Dinh,Rachel Levine,Rachel Levine,3-8,3,8,0,1,Completed,true,false,true
+AP009094,15 Jul 23,9,Clarinda,Ormond,No. 3,Johnny Pliatsikas,Susan Harrison,Johnny Pliatsikas,8-3,8,3,1,0,Completed,true,false,false
+AP009094,15 Jul 23,9,Clarinda,Ormond,No. 4,Jackson Balalovski,Raine Xiao,Jackson Balalovski,8-2,8,2,1,0,Completed,true,false,false
+AP009101,22 Jul 23,10,Ormond,East Malvern,No. 1,Susan Harrison,Rajat Dang,Rajat Dang,1-8,1,8,0,1,Completed,true,false,false
+AP009101,22 Jul 23,10,Ormond,East Malvern,No. 2,Rivka Garson,Faran Mazloomi,Faran Mazloomi,0-8,0,8,0,1,Completed,true,false,false
+AP009101,22 Jul 23,10,Ormond,East Malvern,No. 3,Carole Pywell,James Bryden,James Bryden,5-8,5,8,0,1,Completed,true,false,false
+AP009101,22 Jul 23,10,Ormond,East Malvern,No. 4,Melissa Cogdon,David Bryden,David Bryden,0-8,0,8,0,1,Completed,true,false,true
+AP009102,22 Jul 23,10,Glen Huntly,Chadstone Red,No. 1,Gerald Pereria,Greg Piper,Greg Piper,7-8,7,8,0,1,Completed,true,false,false
+AP009102,22 Jul 23,10,Glen Huntly,Chadstone Red,No. 2,Michael Haynes,Thomas Fisher,Michael Haynes,8-3,8,3,1,0,Completed,true,false,false
+AP009102,22 Jul 23,10,Glen Huntly,Chadstone Red,No. 3,Daniel Katanov,Sam Thompson,Daniel Katanov,8-7,8,7,1,0,Completed,true,false,true
+AP009102,22 Jul 23,10,Glen Huntly,Chadstone Red,No. 4,Paul Egre,Laura Mazzarella,Paul Egre,8-5,8,5,1,0,Completed,true,false,false
+AP009104,22 Jul 23,10,Chadstone Blue,Clarinda,No. 1,Antosh Emelianov,Cory Hall,Antosh Emelianov,8-3,8,3,1,0,Completed,true,true,false
+AP009104,22 Jul 23,10,Chadstone Blue,Clarinda,No. 2,Julia Merkouris,Michael Grosso,Michael Grosso,1-8,1,8,0,1,Completed,true,false,true
+AP009104,22 Jul 23,10,Chadstone Blue,Clarinda,No. 3,Stephanie Merkouris,Johnny Pliatsikas,Johnny Pliatsikas,2-8,2,8,0,1,Completed,true,false,false
+AP009104,22 Jul 23,10,Chadstone Blue,Clarinda,No. 4,Tina Johnston,Jackson Balalovski,Jackson Balalovski,7-8,7,8,0,1,Completed,true,false,false
+AP009111,29 Jul 23,11,East Malvern,Chadstone Blue,No. 1,Faran Mazloomi,John Grant,John Grant,2-8,2,8,0,1,Completed,true,false,false
+AP009111,29 Jul 23,11,East Malvern,Chadstone Blue,No. 2,Alex Dusek,Ben Martin,Ben Martin,5-8,5,8,0,1,Completed,true,false,false
+AP009111,29 Jul 23,11,East Malvern,Chadstone Blue,No. 3,James Bryden,Stephanie Merkouris,Stephanie Merkouris,4-8,4,8,0,1,Completed,true,false,false
+AP009111,29 Jul 23,11,East Malvern,Chadstone Blue,No. 4,Tom Taylor,Tina Johnston,Tom Taylor,8-1,8,1,1,0,Completed,true,true,false
+AP009112,29 Jul 23,11,Chadstone Red,Ormond,No. 1,Greg Piper,Melissa Cogdon,Greg Piper,8-0,8,0,1,0,Completed,true,false,false
+AP009112,29 Jul 23,11,Chadstone Red,Ormond,No. 2,Thomas Fisher,[Unnamed emergency — TROLS AP009112 away code 2],Thomas Fisher,8-0,8,0,1,0,Completed,false,false,true
+AP009112,29 Jul 23,11,Chadstone Red,Ormond,No. 3,Sam Thompson,Carole Pywell,Sam Thompson,8-4,8,4,1,0,Completed,true,true,false
+AP009112,29 Jul 23,11,Chadstone Red,Ormond,No. 4,Laura Mazzarella,Jasmine Yu,Laura Mazzarella,8-0,8,0,1,0,Completed,true,false,false
+AP009114,29 Jul 23,11,Clarinda,St Anthony's,No. 1,Cory Hall,Jayden Lewis,Cory Hall,8-3,8,3,1,0,Completed,true,false,false
+AP009114,29 Jul 23,11,Clarinda,St Anthony's,No. 2,Zac Sevastas,Cam Wilkinson,Zac Sevastas,8-2,8,2,1,0,Completed,true,false,false
+AP009114,29 Jul 23,11,Clarinda,St Anthony's,No. 3,Johnny Pliatsikas,Jim Harrison,Jim Harrison,1-8,1,8,0,1,Completed,true,false,false
+AP009114,29 Jul 23,11,Clarinda,St Anthony's,No. 4,Jackson Balalovski,Arthur Asimenias,Arthur Asimenias,1-8,1,8,0,1,Completed,true,false,false
+AP009122,05 Aug 23,12,Ormond,Glen Huntly,No. 1,Mason Campbell,Gerald Pereria,Gerald Pereria,0-8,0,8,0,1,Completed,true,false,false
+AP009122,05 Aug 23,12,Ormond,Glen Huntly,No. 2,Rex Chan,Pei Yuan Li,Pei Yuan Li,1-8,1,8,0,1,Completed,true,true,true
+AP009122,05 Aug 23,12,Ormond,Glen Huntly,No. 3,Raine Xiao,Michael Haynes,Michael Haynes,2-8,2,8,0,1,Completed,true,false,false
+AP009122,05 Aug 23,12,Ormond,Glen Huntly,No. 4,Melissa Cogdon,Paul Egre,Paul Egre,0-8,0,8,0,1,Completed,true,false,false
+AP009123,05 Aug 23,12,St Anthony's,Chadstone Blue,No. 1,Jayden Lewis,John Grant,John Grant,4-8,4,8,0,1,Completed,true,false,false
+AP009123,05 Aug 23,12,St Anthony's,Chadstone Blue,No. 2,Ray Tesoriero,Ben Martin,Ray Tesoriero,8-4,8,4,1,0,Completed,true,true,false
+AP009123,05 Aug 23,12,St Anthony's,Chadstone Blue,No. 3,Jim Harrison,Julia Merkouris,Jim Harrison,8-2,8,2,1,0,Completed,true,false,false
+AP009123,05 Aug 23,12,St Anthony's,Chadstone Blue,No. 4,Arthur Asimenias,Stephanie Merkouris,Arthur Asimenias,8-2,8,2,1,0,Completed,true,false,false
+AP009124,05 Aug 23,12,Chadstone Red,East Malvern,No. 1,Joshua Fisher,Rajat Dang,Joshua Fisher,8-1,8,1,1,0,Completed,true,false,false
+AP009124,05 Aug 23,12,Chadstone Red,East Malvern,No. 2,Greg Piper,Alex Dusek,Greg Piper,8-5,8,5,1,0,Completed,true,false,false
+AP009124,05 Aug 23,12,Chadstone Red,East Malvern,No. 3,Thomas Fisher,Tom Taylor,Tom Taylor,1-8,1,8,0,1,Completed,true,false,true
+AP009124,05 Aug 23,12,Chadstone Red,East Malvern,No. 4,Laura Mazzarella,James Boal,James Boal,0-8,0,8,0,1,Completed,true,false,false
+AP009133,12 Aug 23,13,Chadstone Blue,Ormond,No. 1,John Grant,Phil Bai,John Grant,8-1,8,1,1,0,Completed,true,false,true
+AP009133,12 Aug 23,13,Chadstone Blue,Ormond,No. 2,Jerry Badrock,Rachel Levine,Rachel Levine,5-8,5,8,0,1,Completed,true,true,true
+AP009133,12 Aug 23,13,Chadstone Blue,Ormond,No. 3,Natalie Menchikova,Carole Pywell,Natalie Menchikova,8-0,8,0,1,0,Completed,true,true,false
+AP009133,12 Aug 23,13,Chadstone Blue,Ormond,No. 4,Julia Merkouris,Melissa Cogdon,Julia Merkouris,8-0,8,0,1,0,Completed,true,false,false
+AP009134,12 Aug 23,13,Glen Huntly,St Anthony's,No. 1,Nathan Stagg,Vincent Macassa,Nathan Stagg,8-5,8,5,1,0,Completed,true,true,false
+AP009134,12 Aug 23,13,Glen Huntly,St Anthony's,No. 2,Gerald Pereria,Jayden Lewis,Gerald Pereria,8-4,8,4,1,0,Completed,true,false,false
+AP009134,12 Aug 23,13,Glen Huntly,St Anthony's,No. 3,Michael Haynes,Jim Harrison,Michael Haynes,8-6,8,6,1,0,Completed,true,false,false
+AP009134,12 Aug 23,13,Glen Huntly,St Anthony's,No. 4,Paul Egre,Arthur Asimenias,Arthur Asimenias,2-8,2,8,0,1,Completed,true,false,false
+AP009142,19 Aug 23,14,Clarinda,Chadstone Red,No. 1,Cory Hall,Joshua Fisher,Joshua Fisher,2-8,2,8,0,1,Completed,true,false,false
+AP009142,19 Aug 23,14,Clarinda,Chadstone Red,No. 2,Zac Sevastas,Greg Piper,Zac Sevastas,8-7,8,7,1,0,Completed,true,false,false
+AP009142,19 Aug 23,14,Clarinda,Chadstone Red,No. 3,Johnny Pliatsikas,Thomas Fisher,Johnny Pliatsikas,8-1,8,1,1,0,Completed,true,false,false
+AP009142,19 Aug 23,14,Clarinda,Chadstone Red,No. 4,Jackson Balalovski,Natalie Menchikova,Natalie Menchikova,1-8,1,8,0,1,Completed,true,false,true
+AP009143,19 Aug 23,14,Chadstone Blue,Glen Huntly,No. 1,Ben Martin,Nathan Stagg,Nathan Stagg,2-8,2,8,0,1,Completed,true,false,true
+AP009143,19 Aug 23,14,Chadstone Blue,Glen Huntly,No. 2,Anesti Bubulya,Gerald Pereria,Gerald Pereria,6-8,6,8,0,1,Completed,true,false,false
+AP009143,19 Aug 23,14,Chadstone Blue,Glen Huntly,No. 3,Julia Merkouris,Michael Haynes,Michael Haynes,3-8,3,8,0,1,Completed,true,false,false
+AP009143,19 Aug 23,14,Chadstone Blue,Glen Huntly,No. 4,Tina Johnston,Franck Morin,Franck Morin,3-8,3,8,0,1,Completed,true,false,false
+AP009144,19 Aug 23,14,St Anthony's,Ormond,No. 1,Vincent Macassa,Phil Bai,Vincent Macassa,8-1,8,1,1,0,Completed,true,false,true
+AP009144,19 Aug 23,14,St Anthony's,Ormond,No. 2,Jayden Lewis,Mason Campbell,Jayden Lewis,8-1,8,1,1,0,Completed,true,false,false
+AP009144,19 Aug 23,14,St Anthony's,Ormond,No. 3,Jim Harrison,Raine Xiao,Jim Harrison,8-0,8,0,1,0,Completed,true,false,false
+AP009144,19 Aug 23,14,St Anthony's,Ormond,No. 4,Arthur Asimenias,Melissa Cogdon,Arthur Asimenias,8-0,8,0,1,0,Completed,true,false,false
+AP009301,,16,Clarinda,East Malvern,No. 1,Cory Hall,Rajat Dang,Cory Hall,8-2,8,2,1,0,Completed,true,false,false
+AP009301,,16,Clarinda,East Malvern,No. 2,Tri Dinh,Faran Mazloomi,Tri Dinh,8-2,8,2,1,0,Completed,true,false,false
+AP009301,,16,Clarinda,East Malvern,No. 3,Zac Sevastas,Martin Giffard,Zac Sevastas,8-3,8,3,1,0,Completed,true,false,false
+AP009301,,16,Clarinda,East Malvern,No. 4,Johnny Pliatsikas,Frantzeskos Triantafyllou,Johnny Pliatsikas,8-3,8,3,1,0,Completed,true,false,false
+AP009302,,16,Chadstone Red,St Anthony's,No. 1,Joshua Fisher,Vincent Macassa,Joshua Fisher,8-0,8,0,1,0,Completed,true,false,false
+AP009302,,16,Chadstone Red,St Anthony's,No. 2,Greg Piper,Jayden Lewis,Greg Piper,8-2,8,2,1,0,Completed,true,false,false
+AP009302,,16,Chadstone Red,St Anthony's,No. 3,Danielle Fisher,Jim Harrison,Danielle Fisher,8-1,8,1,1,0,Completed,true,false,false
+AP009302,,16,Chadstone Red,St Anthony's,No. 4,Thomas Fisher,Arthur Asimenias,Arthur Asimenias,6-8,6,8,0,1,Completed,true,false,false
+AP009321,,17,Clarinda,Chadstone Red,No. 1,Cory Hall,Joshua Fisher,Joshua Fisher,1-8,1,8,0,1,Completed,true,false,false
+AP009321,,17,Clarinda,Chadstone Red,No. 2,Tri Dinh,Greg Piper,Tri Dinh,8-6,8,6,1,0,Completed,true,false,false
+AP009321,,17,Clarinda,Chadstone Red,No. 3,Zac Sevastas,Danielle Fisher,Danielle Fisher,3-8,3,8,0,1,Completed,true,false,false
+AP009321,,17,Clarinda,Chadstone Red,No. 4,Johnny Pliatsikas,Laura Mazzarella,Johnny Pliatsikas,8-4,8,4,1,0,Completed,true,false,false

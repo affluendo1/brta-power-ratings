@@ -1,0 +1,61 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP019012,05 Oct 13,1,regular,Round 1,Dendy Park,East Malvern,8,2,5,3,,,45,35,Completed,
+AP019013,05 Oct 13,1,regular,Round 1,Le Page,St Pats Mentone,3,7,4,5,,,45,51,Completed,
+AP019014,05 Oct 13,1,regular,Round 1,Maccabi Murr,Lauriston,1,9,2,7,,,34,53,Completed,
+pending-ap019-r1-bye-mordialloc,05 Oct 13,1,regular,Round 1,Bye,Mordialloc,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP019022,12 Oct 13,2,regular,Round 2,Mordialloc,Dendy Park,1.5,8.5,1,6,,,23,48,Completed,
+AP019023,12 Oct 13,2,regular,Round 2,East Malvern,Le Page,0,10,0,8,,,23,56,Completed,
+AP019024,12 Oct 13,2,regular,Round 2,St Pats Mentone,Maccabi Murr,8,2,5,3,,,41,41,Completed,
+pending-ap019-r2-lauriston-bye,12 Oct 13,2,regular,Round 2,Lauriston,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP019032,19 Oct 13,3,regular,Round 3,Dendy Park,Lauriston,8,2,6,4,,,59,53,Completed,
+AP019033,19 Oct 13,3,regular,Round 3,Le Page,Mordialloc,8,2,6,3,,,56,48,Completed,
+AP019034,19 Oct 13,3,regular,Round 3,Maccabi Murr,East Malvern,2,8,3,6,,,37,53,Completed,
+pending-ap019-r3-bye-st-pats-mentone,19 Oct 13,3,regular,Round 3,Bye,St Pats Mentone,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP019042,26 Oct 13,4,regular,Round 4,St Pats Mentone,Dendy Park,7,3,4,4,,,41,39,Completed,
+AP019043,26 Oct 13,4,regular,Round 4,Lauriston,Le Page,0,10,0,8,,,28,56,Completed,
+AP019044,26 Oct 13,4,regular,Round 4,Mordialloc,Maccabi Murr,1,9,2,7,,,41,57,Completed,
+pending-ap019-r4-east-malvern-bye,26 Oct 13,4,regular,Round 4,East Malvern,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP019051,09 Nov 13,5,regular,Round 5,Le Page,Maccabi Murr,8,2,5,3,,,45,34,Completed,
+AP019052,09 Nov 13,5,regular,Round 5,Lauriston,St Pats Mentone,2,8,2,6,,,26,49,Completed,
+AP019053,09 Nov 13,5,regular,Round 5,East Malvern,Mordialloc,8,2,5,3,,,45,38,Completed,
+pending-ap019-r5-bye-dendy-park,09 Nov 13,5,regular,Round 5,Bye,Dendy Park,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP019061,16 Nov 13,6,regular,Round 6,Dendy Park,Le Page,1,9,1,7,,,27,55,Completed,
+AP019063,16 Nov 13,6,regular,Round 6,St Pats Mentone,East Malvern,2,8,3,5,,,30,42,Completed,
+AP019064,16 Nov 13,6,regular,Round 6,Mordialloc,Lauriston,7,3,5,3,,,46,29,Completed,
+pending-ap019-r6-maccabi-murr-bye,16 Nov 13,6,regular,Round 6,Maccabi Murr,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP019072,23 Nov 13,7,regular,Round 7,Dendy Park,Maccabi Murr,3,7,4,5,,,47,40,Completed,
+AP019073,23 Nov 13,7,regular,Round 7,Lauriston,East Malvern,3,7,4,4,,,31,43,Completed,
+AP019074,23 Nov 13,7,regular,Round 7,St Pats Mentone,Mordialloc,9,1,7,1,,,49,27,Completed,
+pending-ap019-r7-bye-le-page,23 Nov 13,7,regular,Round 7,Bye,Le Page,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP019082,30 Nov 13,8,regular,Round 8,East Malvern,Dendy Park,2,8,3,6,,,30,49,Completed,
+AP019083,30 Nov 13,8,regular,Round 8,St Pats Mentone,Le Page,0,10,0,8,,,23,56,Completed,
+pending-ap019-r8-lauriston-maccabi-murr,30 Nov 13,8,regular,Round 8,Lauriston,Maccabi Murr,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+pending-ap019-r8-mordialloc-bye,30 Nov 13,8,regular,Round 8,Mordialloc,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP019092,07 Dec 13,9,regular,Round 9,Dendy Park,Mordialloc,2,8,3,5,,,39,47,Completed,
+AP019093,07 Dec 13,9,regular,Round 9,Le Page,East Malvern,10,0,8,0,,,56,19,Completed,
+AP019094,07 Dec 13,9,regular,Round 9,Maccabi Murr,St Pats Mentone,3,7,5,5,,,53,59,Completed,
+pending-ap019-r9-bye-lauriston,07 Dec 13,9,regular,Round 9,Bye,Lauriston,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP019102,14 Dec 13,10,regular,Round 10,Lauriston,Dendy Park,3,7,4,5,,,46,55,Completed,
+AP019103,14 Dec 13,10,regular,Round 10,Mordialloc,Le Page,1,9,1,7,,,28,56,Completed,
+AP019104,14 Dec 13,10,regular,Round 10,East Malvern,Maccabi Murr,2,8,3,5,,,39,47,Completed,
+pending-ap019-r10-st-pats-mentone-bye,14 Dec 13,10,regular,Round 10,St Pats Mentone,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP019112,01 Feb 14,11,regular,Round 11,Dendy Park,St Pats Mentone,2,8,3,6,,,42,59,Completed,
+AP019113,01 Feb 14,11,regular,Round 11,Le Page,Lauriston,10,0,8,0,,,56,14,Completed,
+AP019114,01 Feb 14,11,regular,Round 11,Maccabi Murr,Mordialloc,8,2,5,3,,,44,35,Completed,
+pending-ap019-r11-bye-east-malvern,01 Feb 14,11,regular,Round 11,Bye,East Malvern,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP019121,08 Feb 14,12,regular,Round 12,Maccabi Murr,Le Page,8,2,6,2,,,51,31,Completed,
+pending-ap019-r12-dendy-park-bye,08 Feb 14,12,regular,Round 12,Dendy Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap019-r12-mordialloc-east-malvern,08 Feb 14,12,regular,Round 12,Mordialloc,East Malvern,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap019-r12-st-pats-mentone-lauriston,08 Feb 14,12,regular,Round 12,St Pats Mentone,Lauriston,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP019131,15 Feb 14,13,regular,Round 13,Le Page,Dendy Park,3,7,4,4,,,38,45,Completed,
+AP019133,15 Feb 14,13,regular,Round 13,East Malvern,St Pats Mentone,1,9,1,7,,,33,56,Completed,
+AP019134,15 Feb 14,13,regular,Round 13,Lauriston,Mordialloc,2,8,4,5,,,50,52,Completed,
+pending-ap019-r13-bye-maccabi-murr,15 Feb 14,13,regular,Round 13,Bye,Maccabi Murr,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP019142,22 Feb 14,14,regular,Round 14,Maccabi Murr,Dendy Park,8,2,6,3,,,50,37,Completed,
+AP019143,22 Feb 14,14,regular,Round 14,East Malvern,Lauriston,3,7,4,5,,,52,46,Completed,
+AP019144,22 Feb 14,14,regular,Round 14,Mordialloc,St Pats Mentone,2,8,3,6,,,48,53,Completed,
+pending-ap019-r14-le-page-bye,22 Feb 14,14,regular,Round 14,Le Page,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP019301,,16,semi_final,Semi-final,Le Page,St Pats Mentone,9,1,6,2,,,53,30,Completed,
+AP019302,,16,semi_final,Semi-final,Maccabi Murr,Dendy Park,8,2,6,3,,,58,41,Completed,
+AP019311,,16,semi_final,Semi-final,St Pats Mentone,Maccabi Murr,8.5,1.5,6,2,,,47,42,Completed,
+AP019321,,17,grand_final,Grand final · TROLS entry 2,Le Page,St Pats Mentone,9,1,7,1,,,57,32,Completed,

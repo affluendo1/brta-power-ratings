@@ -1,0 +1,91 @@
+{
+  "asset_id": "AP21-AP008",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Winter 2010",
+  "season_id": "AP21",
+  "season_label": "Winter 2010",
+  "source_section_code": "AP008",
+  "section_label": "Mixed Rubbers 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Sth Hawthorn",
+      "wins": 0,
+      "points": 97,
+      "percentage": 185.58,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "Hampton",
+      "wins": 0,
+      "points": 89.5,
+      "percentage": 126.3,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Oakleigh",
+      "wins": 0,
+      "points": 80,
+      "percentage": 159.29,
+      "marker": "P"
+    },
+    {
+      "position": 4,
+      "team": "Parkdale",
+      "wins": 0,
+      "points": 49.5,
+      "percentage": 86.96,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Stella Maris",
+      "wins": 0,
+      "points": 26,
+      "percentage": 67.83,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "St Finbar's",
+      "wins": 0,
+      "points": 18,
+      "percentage": 54.15,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP21-AP008",
+  "fixtures": 47,
+  "completed_fixtures": 42,
+  "draw_fixtures": 57,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 168,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP008061 doubles No. 3: '2-6 1-3'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP008061 doubles No. 4: '2-6 2-2'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP008083 doubles No. 4: '3-6 6-3 2-4'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

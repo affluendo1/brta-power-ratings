@@ -1,0 +1,97 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP011021,14 May 11,2,Le Page 3,Highmoor Uniting,No. 1,Julie Kheng,Dong Il Lee,Dong Il Lee,0-6 0-6,0,12,0,2,Completed,true,false,false
+AP011021,14 May 11,2,Le Page 3,Highmoor Uniting,No. 2,Tonicha Heaton,Sam Hooppell,Sam Hooppell,3-6 2-6,5,12,0,2,Completed,true,false,false
+AP011021,14 May 11,2,Le Page 3,Highmoor Uniting,No. 3,Angie Tanner,Clemens Lee,Clemens Lee,0-6 0-6,0,12,0,2,Completed,true,false,false
+AP011022,14 May 11,2,Le Page 1,St Pats Mentone,No. 1,Tino Rossi,Nick Hall,Nick Hall,3-6 1-6,4,12,0,2,Completed,true,false,false
+AP011022,14 May 11,2,Le Page 1,St Pats Mentone,No. 2,George Crebbin,Chloe Jackson,George Crebbin,6-3 6-3,12,6,2,0,Completed,true,false,false
+AP011022,14 May 11,2,Le Page 1,St Pats Mentone,No. 3,Will Peters,Cassie Lawrence,Will Peters,6-2 6-1,12,3,2,0,Completed,true,false,false
+AP011023,14 May 11,2,MCC,Glen Huntly,No. 1,Steve Worthington,Kathryn Nelson,Steve Worthington,6-2 6-2,12,4,2,0,Completed,true,false,false
+AP011023,14 May 11,2,MCC,Glen Huntly,No. 2,Auke de Vries,Linda Naylor,Auke de Vries,6-4 6-1,12,5,2,0,Completed,true,false,false
+AP011023,14 May 11,2,MCC,Glen Huntly,No. 3,Iain Stewart,Kate Stitz,Iain Stewart,6-1 6-3,12,4,2,0,Completed,true,false,false
+AP011024,14 May 11,2,Beaumaris CC,Le Page 2,No. 1,Amanda Thomas,Josh Groves,Josh Groves,2-6 2-6,4,12,0,2,Completed,true,false,false
+AP011024,14 May 11,2,Beaumaris CC,Le Page 2,No. 2,Emily Baber,Adam Binns,Adam Binns,3-6 1-6,4,12,0,2,Completed,true,false,false
+AP011024,14 May 11,2,Beaumaris CC,Le Page 2,No. 3,Nathalie Chicoine,Yanni Bakaniozos,Yanni Bakaniozos,3-6 0-6,3,12,0,2,Completed,true,false,false
+AP011041,28 May 11,4,MCC,Highmoor Uniting,No. 1,Steve Worthington,Dong Il Lee,Dong Il Lee,0-6 1-6,1,12,0,2,Completed,true,false,false
+AP011041,28 May 11,4,MCC,Highmoor Uniting,No. 2,Auke de Vries,Brooke Abrahams,Brooke Abrahams,2-6 3-6,5,12,0,2,Completed,true,false,false
+AP011041,28 May 11,4,MCC,Highmoor Uniting,No. 3,John Gregory,Clemens Lee,Clemens Lee,5-7 3-6,8,13,0,2,Completed,true,false,false
+AP011042,28 May 11,4,Beaumaris CC,St Pats Mentone,No. 1,Angus Todd,Chloe Jackson,Angus Todd,6-1 6-2,12,3,2,0,Completed,true,false,false
+AP011042,28 May 11,4,Beaumaris CC,St Pats Mentone,No. 2,Emily Baber,Edwina Brinkley,Emily Baber,6-0 6-4,12,4,2,0,Completed,true,false,false
+AP011042,28 May 11,4,Beaumaris CC,St Pats Mentone,No. 3,Nathalie Chicoine,Cassie Lawrence,Nathalie Chicoine,6-1 6-1,12,2,2,0,Completed,true,false,false
+AP011043,28 May 11,4,Le Page 3,Glen Huntly,No. 1,Julie Kheng,Stan Angelidis,Stan Angelidis,1-6 3-6,4,12,0,2,Completed,true,false,false
+AP011043,28 May 11,4,Le Page 3,Glen Huntly,No. 2,Tonicha Heaton,Melissa Lim,Tonicha Heaton,6-3 2-6 7-6,15,15,2,1,Completed,true,false,false
+AP011043,28 May 11,4,Le Page 3,Glen Huntly,No. 3,Shanice Heaton,Kate Stitz,Kate Stitz,0-6 0-6,0,12,0,2,Completed,true,false,false
+AP011044,28 May 11,4,Le Page 1,Le Page 2,No. 1,Tony Gatti,Adam Binns,Tony Gatti,6-2 6-1,12,3,2,0,Completed,true,false,false
+AP011044,28 May 11,4,Le Page 1,Le Page 2,No. 2,Tino Rossi,Dylan Taylor,Dylan Taylor,2-6 6-1 3-6,11,13,1,2,Completed,true,false,false
+AP011044,28 May 11,4,Le Page 1,Le Page 2,No. 3,George Crebbin,Josh Groves,Josh Groves,1-6 2-6,3,12,0,2,Completed,true,false,false
+AP011061,18 Jun 11,6,St Pats Mentone,Glen Huntly,No. 1,Chloe Jackson,Linda Naylor,Linda Naylor,0-6 0-6,0,12,0,2,Completed,true,false,false
+AP011061,18 Jun 11,6,St Pats Mentone,Glen Huntly,No. 2,Orly Zuker,Melissa Lim,Melissa Lim,7-6 6-7 3-6,16,19,1,2,Completed,true,false,false
+AP011061,18 Jun 11,6,St Pats Mentone,Glen Huntly,No. 3,Cassie Lawrence,Kathryn Nelson,Kathryn Nelson,1-6 2-6,3,12,0,2,Completed,true,false,false
+AP011062,18 Jun 11,6,Le Page 2,Highmoor Uniting,No. 1,Dylan Taylor,Frank Collins,Frank Collins,2-6 1-6,3,12,0,2,Completed,true,false,false
+AP011062,18 Jun 11,6,Le Page 2,Highmoor Uniting,No. 2,Yanni Bakaniozos,Sam Hooppell,Sam Hooppell,1-6 5-7,6,13,0,2,Completed,true,false,false
+AP011062,18 Jun 11,6,Le Page 2,Highmoor Uniting,No. 3,Tim McMahon,Clemens Lee,Clemens Lee,6-7 0-6,6,13,0,2,Completed,true,false,false
+AP011063,18 Jun 11,6,Beaumaris CC,MCC,No. 1,Daniel Wotherspoon,Steve Worthington,Daniel Wotherspoon,7-6 6-2,13,8,2,0,Completed,true,false,false
+AP011063,18 Jun 11,6,Beaumaris CC,MCC,No. 2,Emily Baber,Auke de Vries,Auke de Vries,1-6 0-6,1,12,0,2,Completed,true,false,false
+AP011063,18 Jun 11,6,Beaumaris CC,MCC,No. 3,Nathalie Chicoine,John Gregory,John Gregory,5-7 1-6,6,13,0,2,Completed,true,false,false
+AP011064,18 Jun 11,6,Le Page 1,Le Page 3,No. 1,Tony Gatti,Julie Kheng,Tony Gatti,6-1 6-1,12,2,2,0,Completed,true,false,false
+AP011064,18 Jun 11,6,Le Page 1,Le Page 3,No. 2,George Crebbin,Tonicha Heaton,George Crebbin,7-6 6-1,13,7,2,0,Completed,true,false,false
+AP011064,18 Jun 11,6,Le Page 1,Le Page 3,No. 3,Will Peters,Sam Bridges,Sam Bridges,5-7 1-6,6,13,0,2,Completed,true,false,false
+AP011081,02 Jul 11,8,Le Page 1,Highmoor Uniting,No. 1,Stephen Cleary,Frank Collins,Frank Collins,0-6 5-7,5,13,0,2,Completed,true,false,false
+AP011081,02 Jul 11,8,Le Page 1,Highmoor Uniting,No. 2,Tino Rossi,Brooke Abrahams,Tino Rossi,3-6 6-3 6-4,15,13,2,1,Completed,true,false,false
+AP011081,02 Jul 11,8,Le Page 1,Highmoor Uniting,No. 3,George Crebbin,Janelle Burns,George Crebbin,6-2 6-1,12,3,2,0,Completed,true,false,false
+AP011082,02 Jul 11,8,MCC,St Pats Mentone,No. 1,Auke de Vries,Chloe Jackson,Auke de Vries,6-1 6-2,12,3,2,0,Completed,true,false,false
+AP011082,02 Jul 11,8,MCC,St Pats Mentone,No. 2,John Gregory,Edwina Brinkley,John Gregory,6-2 6-1,12,3,2,0,Completed,true,false,false
+AP011082,02 Jul 11,8,MCC,St Pats Mentone,No. 3,Philip Meyer,Cassie Lawrence,Philip Meyer,6-0 6-0,12,0,2,0,Completed,true,false,false
+AP011083,02 Jul 11,8,Beaumaris CC,Glen Huntly,No. 1,Angus Todd,Linda Naylor,Angus Todd,6-1 6-0,12,1,2,0,Completed,true,false,false
+AP011083,02 Jul 11,8,Beaumaris CC,Glen Huntly,No. 2,Amanda Thomas,Kathryn Nelson,Amanda Thomas,6-3 6-3,12,6,2,0,Completed,true,false,false
+AP011083,02 Jul 11,8,Beaumaris CC,Glen Huntly,No. 3,Nathalie Chicoine,Kate Stitz,Nathalie Chicoine,6-1 7-6,13,7,2,0,Completed,true,false,false
+AP011084,02 Jul 11,8,Le Page 3,Le Page 2,No. 1,Julie Kheng,Adam Binns,Adam Binns,3-6 3-6,6,12,0,2,Completed,true,false,false
+AP011084,02 Jul 11,8,Le Page 3,Le Page 2,No. 2,Tonicha Heaton,Dylan Taylor,Dylan Taylor,2-6 1-6,3,12,0,2,Completed,true,false,false
+AP011084,02 Jul 11,8,Le Page 3,Le Page 2,No. 3,Sam Bridges,Yanni Bakaniozos,Sam Bridges,4-6 6-4 6-0,16,10,2,1,Completed,true,false,false
+AP011101,16 Jul 11,10,Beaumaris CC,Highmoor Uniting,No. 1,Daniel Wotherspoon,Sam Hooppell,Daniel Wotherspoon,6-3 6-2,12,5,2,0,Completed,true,false,false
+AP011101,16 Jul 11,10,Beaumaris CC,Highmoor Uniting,No. 2,Amanda Thomas,Brooke Abrahams,Brooke Abrahams,1-6 0-6,1,12,0,2,Completed,true,false,false
+AP011101,16 Jul 11,10,Beaumaris CC,Highmoor Uniting,No. 3,Jessica Elliot,Clemens Lee,Clemens Lee,1-6 1-6,2,12,0,2,Completed,true,false,false
+AP011102,16 Jul 11,10,Le Page 3,St Pats Mentone,No. 1,Julie Kheng,Chloe Jackson,Chloe Jackson,0-6 2-6,2,12,0,2,Completed,true,false,false
+AP011102,16 Jul 11,10,Le Page 3,St Pats Mentone,No. 2,Tonicha Heaton,Gemma Savage,Gemma Savage,0-6 1-6,1,12,0,2,Completed,true,false,false
+AP011102,16 Jul 11,10,Le Page 3,St Pats Mentone,No. 3,Shanice Heaton,Edwina Brinkley,Edwina Brinkley,1-6 1-6,2,12,0,2,Completed,true,false,false
+AP011103,16 Jul 11,10,Le Page 1,Glen Huntly,No. 1,Tony Gatti,Kathryn Nelson,Tony Gatti,6-0 6-0,12,0,2,0,Completed,true,false,false
+AP011103,16 Jul 11,10,Le Page 1,Glen Huntly,No. 2,Tino Rossi,Melissa Lim,Tino Rossi,6-2 6-3,12,5,2,0,Completed,true,false,false
+AP011103,16 Jul 11,10,Le Page 1,Glen Huntly,No. 3,Will Peters,Kate Stitz,Kate Stitz,1-6 1-6,2,12,0,2,Completed,true,false,false
+AP011104,16 Jul 11,10,MCC,Le Page 2,No. 1,Auke de Vries,Marcus Shanahan,Marcus Shanahan,3-6 1-6,4,12,0,2,Completed,true,false,false
+AP011104,16 Jul 11,10,MCC,Le Page 2,No. 2,John Gregory,Josh Groves,Josh Groves,3-6 3-6,6,12,0,2,Completed,true,false,false
+AP011104,16 Jul 11,10,MCC,Le Page 2,No. 3,Philip Meyer,Yanni Bakaniozos,Philip Meyer,6-2 7-5,13,7,2,0,Completed,true,false,false
+AP011121,30 Jul 11,12,Le Page 2,Glen Huntly,No. 1,Marcus Shanahan,Graeme Ihlein,Graeme Ihlein,1-6 0-6,1,12,0,2,Completed,true,false,false
+AP011121,30 Jul 11,12,Le Page 2,Glen Huntly,No. 2,Josh Groves,Kathryn Nelson,Josh Groves,6-2 6-0,12,2,2,0,Completed,true,false,false
+AP011121,30 Jul 11,12,Le Page 2,Glen Huntly,No. 3,Dylan Taylor,Kate Stitz,Dylan Taylor,6-1 6-2,12,3,2,0,Completed,true,false,false
+AP011122,30 Jul 11,12,Beaumaris CC,Le Page 3,No. 1,Angus Todd,Tonicha Heaton,Angus Todd,6-1 6-2,12,3,2,0,Completed,true,false,false
+AP011122,30 Jul 11,12,Beaumaris CC,Le Page 3,No. 2,Emily Baber,Angie Tanner,Angie Tanner,3-6 4-6,7,12,0,2,Completed,true,false,false
+AP011122,30 Jul 11,12,Beaumaris CC,Le Page 3,No. 3,Nathalie Chicoine,Shanice Heaton,Nathalie Chicoine,6-0 6-0,12,0,2,0,Completed,true,false,false
+AP011123,30 Jul 11,12,Le Page 1,MCC,No. 1,Tony Gatti,Steve Worthington,Tony Gatti,6-2 6-1,12,3,2,0,Completed,true,false,false
+AP011123,30 Jul 11,12,Le Page 1,MCC,No. 2,Tino Rossi,Auke de Vries,Tino Rossi,7-6 6-4,13,10,2,0,Completed,true,false,false
+AP011123,30 Jul 11,12,Le Page 1,MCC,No. 3,George Crebbin,Iain Stewart,George Crebbin,2-6 6-2 6-4,14,12,2,1,Completed,true,false,false
+AP011124,30 Jul 11,12,St Pats Mentone,Highmoor Uniting,No. 1,Chloe Jackson,Frank Collins,Frank Collins,0-6 0-6,0,12,0,2,Completed,true,false,false
+AP011124,30 Jul 11,12,St Pats Mentone,Highmoor Uniting,No. 2,Gemma Savage,Brooke Abrahams,Brooke Abrahams,0-6 0-6,0,12,0,2,Completed,true,false,false
+AP011124,30 Jul 11,12,St Pats Mentone,Highmoor Uniting,No. 3,Edwina Brinkley,Clemens Lee,Clemens Lee,0-6 0-6,0,12,0,2,Completed,true,false,false
+AP011141,13 Aug 11,14,Glen Huntly,Highmoor Uniting,No. 1,Graeme Ihlein,Dong Il Lee,Dong Il Lee,4-6 0-6,4,12,0,2,Completed,true,false,false
+AP011141,13 Aug 11,14,Glen Huntly,Highmoor Uniting,No. 2,Kathryn Nelson,Michael Bane,Michael Bane,0-6 0-6,0,12,0,2,Completed,true,false,false
+AP011141,13 Aug 11,14,Glen Huntly,Highmoor Uniting,No. 3,Kate Stitz,Sam Hooppell,Sam Hooppell,0-6 0-6,0,12,0,2,Completed,true,false,false
+AP011142,13 Aug 11,14,Le Page 2,St Pats Mentone,No. 1,Josh Groves,Gemma Savage,Josh Groves,6-1 6-0,12,1,2,0,Completed,true,false,false
+AP011142,13 Aug 11,14,Le Page 2,St Pats Mentone,No. 2,Dylan Taylor,Edwina Brinkley,Dylan Taylor,6-1 6-3,12,4,2,0,Completed,true,false,false
+AP011142,13 Aug 11,14,Le Page 2,St Pats Mentone,No. 3,Adam Binns,Cassie Lawrence,Adam Binns,6-0 6-0,12,0,2,0,Completed,true,false,false
+AP011143,13 Aug 11,14,MCC,Le Page 3,No. 1,Steve Worthington,Julie Kheng,Steve Worthington,6-1 6-2,12,3,2,0,Completed,true,false,false
+AP011143,13 Aug 11,14,MCC,Le Page 3,No. 2,Auke de Vries,Tonicha Heaton,Auke de Vries,6-3 6-0,12,3,2,0,Completed,true,false,false
+AP011143,13 Aug 11,14,MCC,Le Page 3,No. 3,John Gregory,Angie Tanner,John Gregory,6-0 6-1,12,1,2,0,Completed,true,false,false
+AP011144,13 Aug 11,14,Le Page 1,Beaumaris CC,No. 1,Tony Gatti,Angus Todd,Angus Todd,2-6 6-4 5-7,13,17,1,2,Completed,true,false,false
+AP011144,13 Aug 11,14,Le Page 1,Beaumaris CC,No. 2,George Crebbin,Amanda Thomas,Amanda Thomas,3-6 6-4 4-6,13,16,1,2,Completed,true,false,false
+AP011144,13 Aug 11,14,Le Page 1,Beaumaris CC,No. 3,Will Peters,Emily Baber,Will Peters,4-6 6-0 6-1,16,7,2,1,Completed,true,false,false
+AP011301,,16,Highmoor Uniting,Le Page 2,No. 1,Dong Il Lee,Marcus Shanahan,Marcus Shanahan,7-6 4-6 6-7,17,19,1,2,Completed,true,false,false
+AP011301,,16,Highmoor Uniting,Le Page 2,No. 2,Frank Collins,Dylan Taylor,Dylan Taylor,4-6 6-0 0-6,10,12,1,2,Completed,true,false,false
+AP011301,,16,Highmoor Uniting,Le Page 2,No. 3,Sam Hooppell,Josh Groves,Josh Groves,6-7 3-6,9,13,0,2,Completed,true,false,false
+AP011302,,16,MCC,Le Page 1,No. 1,Steve Worthington,Tony Gatti,Tony Gatti,0-6 3-6,3,12,0,2,Completed,true,false,false
+AP011302,,16,MCC,Le Page 1,No. 2,Auke de Vries,Tino Rossi,Tino Rossi,1-6 0-6,1,12,0,2,Completed,true,false,false
+AP011302,,16,MCC,Le Page 1,No. 3,John Gregory,George Crebbin,John Gregory,6-3 6-3,12,6,2,0,Completed,true,false,false
+AP011311,,16,Highmoor Uniting,Le Page 1,No. 1,Dong Il Lee,Tony Gatti,Tony Gatti,3-6 0-6,3,12,0,2,Completed,true,false,false
+AP011311,,16,Highmoor Uniting,Le Page 1,No. 2,Frank Collins,Tino Rossi,Frank Collins,6-3 6-2,12,5,2,0,Completed,true,false,false
+AP011311,,16,Highmoor Uniting,Le Page 1,No. 3,Sam Hooppell,George Crebbin,Sam Hooppell,6-2 6-3,12,5,2,0,Completed,true,false,false
+AP011321,,17,Le Page 2,Highmoor Uniting,No. 1,Marcus Shanahan,Dong Il Lee,Dong Il Lee,4-6 6-7,10,13,0,2,Completed,true,false,false
+AP011321,,17,Le Page 2,Highmoor Uniting,No. 2,Josh Groves,Frank Collins,Josh Groves,4-6 6-3 6-4,16,13,2,1,Completed,true,false,false
+AP011321,,17,Le Page 2,Highmoor Uniting,No. 3,Adam Binns,Sam Hooppell,Sam Hooppell,2-6 1-6,3,12,0,2,Completed,true,false,false

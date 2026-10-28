@@ -1,0 +1,157 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP009011,04 Oct 25,1,Lauriston,Glen Huntly,No. 1,Jude Teo,Michael Haynes,Jude Teo,8-2,8,2,1,0,Completed,true,false,false
+AP009011,04 Oct 25,1,Lauriston,Glen Huntly,No. 2,Aaron Nazaretian,Daniel Katanov,Aaron Nazaretian,8-2,8,2,1,0,Completed,true,false,false
+AP009011,04 Oct 25,1,Lauriston,Glen Huntly,No. 3,Om Rao,Anirudh Devanathan,Anirudh Devanathan,4-8,4,8,0,1,Completed,true,false,false
+AP009011,04 Oct 25,1,Lauriston,Glen Huntly,No. 4,Matthew McArthur,Oscar Sun,Oscar Sun,2-8,2,8,0,1,Completed,true,false,false
+AP009012,04 Oct 25,1,Maccabi,Kooyong,No. 1,Jesse Stowe-Lindner,Ivor Van Der Sluys,Jesse Stowe-Lindner,8-2,8,2,1,0,Completed,true,false,false
+AP009012,04 Oct 25,1,Maccabi,Kooyong,No. 2,Ben Pollak,Theo Schlicht,Ben Pollak,8-2,8,2,1,0,Completed,true,false,false
+AP009012,04 Oct 25,1,Maccabi,Kooyong,No. 3,Sebastian Raboy,Xavier Teoh,Sebastian Raboy,8-0,8,0,1,0,Completed,true,false,false
+AP009012,04 Oct 25,1,Maccabi,Kooyong,No. 4,Ashley Raboy,Thomas Lam,Ashley Raboy,8-0,8,0,1,0,Completed,true,false,false
+AP009013,04 Oct 25,1,BLTC Blue,BLTC White,No. 1,Dan Whitson,Casper Stisen Billing,Casper Stisen Billing,5-8,5,8,0,1,Completed,true,false,false
+AP009013,04 Oct 25,1,BLTC Blue,BLTC White,No. 2,Tom Whitson,John Van Der Meulen,Tom Whitson,8-2,8,2,1,0,Completed,true,false,false
+AP009013,04 Oct 25,1,BLTC Blue,BLTC White,No. 3,Ethan Kearns,Nick Jackson,Ethan Kearns,8-4,8,4,1,0,Completed,true,false,false
+AP009013,04 Oct 25,1,BLTC Blue,BLTC White,No. 4,Jack Giblin,Tin Dang,Jack Giblin,8-3,8,3,1,0,Completed,true,false,true
+AP009021,11 Oct 25,2,Highmoor Uniting,Lauriston,No. 1,Richard Elvins,Jude Teo,Jude Teo,1-8,1,8,0,1,Completed,true,false,false
+AP009021,11 Oct 25,2,Highmoor Uniting,Lauriston,No. 2,Esmatullah Niazi,Aaron Nazaretian,Aaron Nazaretian,5-8,5,8,0,1,Completed,true,false,false
+AP009021,11 Oct 25,2,Highmoor Uniting,Lauriston,No. 3,Charlie Daalder,Andrew Meek,Charlie Daalder,8-5,8,5,1,0,Completed,true,false,false
+AP009021,11 Oct 25,2,Highmoor Uniting,Lauriston,No. 4,Vikram Jangra,Om Rao,Vikram Jangra,8-6,8,6,1,0,Completed,true,false,false
+AP009022,11 Oct 25,2,Glen Huntly,Maccabi,No. 1,Nicholas Chong,Jesse Stowe-Lindner,Jesse Stowe-Lindner,3-8,3,8,0,1,Completed,true,false,false
+AP009022,11 Oct 25,2,Glen Huntly,Maccabi,No. 2,Michael Haynes,Ashley Raboy,Ashley Raboy,7-8,7,8,0,1,Completed,true,false,false
+AP009022,11 Oct 25,2,Glen Huntly,Maccabi,No. 3,Daniel Katanov,Stephen Kleid,Daniel Katanov,8-6,8,6,1,0,Completed,true,false,false
+AP009022,11 Oct 25,2,Glen Huntly,Maccabi,No. 4,Franck Morin,Paul Kovacs,Paul Kovacs,2-8,2,8,0,1,Completed,true,false,false
+AP009023,11 Oct 25,2,Kooyong,BLTC Blue,No. 1,Theo Schlicht,Dan Whitson,Dan Whitson,1-8,1,8,0,1,Completed,true,false,false
+AP009023,11 Oct 25,2,Kooyong,BLTC Blue,No. 2,Xavier Teoh,Tom Whitson,Tom Whitson,2-8,2,8,0,1,Completed,true,false,false
+AP009023,11 Oct 25,2,Kooyong,BLTC Blue,No. 3,Patrick Brimacombe,Ethan Kearns,Patrick Brimacombe,8-5,8,5,1,0,Completed,true,false,false
+AP009023,11 Oct 25,2,Kooyong,BLTC Blue,No. 4,Sakthi Navaneetharaja,Trent Mailing,Trent Mailing,3-8,3,8,0,1,Completed,true,false,false
+AP009031,18 Oct 25,3,Lauriston,BLTC White,No. 1,Jude Teo,Casper Stisen Billing,Jude Teo,8-2,8,2,1,0,Completed,true,false,false
+AP009031,18 Oct 25,3,Lauriston,BLTC White,No. 2,Aaron Nazaretian,Andrew Livermore,Andrew Livermore,6-8,6,8,0,1,Completed,true,false,false
+AP009031,18 Oct 25,3,Lauriston,BLTC White,No. 3,Andrew Meek,John Van Der Meulen,Andrew Meek,8-2,8,2,1,0,Completed,true,false,false
+AP009031,18 Oct 25,3,Lauriston,BLTC White,No. 4,Matthew McArthur,William Zichen Wang,William Zichen Wang,4-8,4,8,0,1,Completed,true,false,false
+AP009032,18 Oct 25,3,Maccabi,Highmoor Uniting,No. 1,Ben Pollak,Callum Elvins,Callum Elvins,4-8,4,8,0,1,Completed,true,false,false
+AP009032,18 Oct 25,3,Maccabi,Highmoor Uniting,No. 2,Sebastian Raboy,Charlie Daalder,Sebastian Raboy,8-4,8,4,1,0,Completed,true,false,false
+AP009032,18 Oct 25,3,Maccabi,Highmoor Uniting,No. 3,Stephen Kleid,Matthew Tonciuc,Stephen Kleid,8-0,8,0,1,0,Completed,true,false,false
+AP009032,18 Oct 25,3,Maccabi,Highmoor Uniting,No. 4,Jacob Nathan,Ben Reidy,Jacob Nathan,8-0,8,0,1,0,Completed,true,false,false
+AP009033,18 Oct 25,3,BLTC Blue,Glen Huntly,No. 1,Dan Whitson,Nasik Ahmed,Dan Whitson,8-3,8,3,1,0,Completed,true,false,false
+AP009033,18 Oct 25,3,BLTC Blue,Glen Huntly,No. 2,Tom Whitson,Michael Haynes,Tom Whitson,8-2,8,2,1,0,Completed,true,false,false
+AP009033,18 Oct 25,3,BLTC Blue,Glen Huntly,No. 3,Ethan Kearns,Daniel Katanov,Ethan Kearns,8-3,8,3,1,0,Completed,true,false,false
+AP009033,18 Oct 25,3,BLTC Blue,Glen Huntly,No. 4,Trent Mailing,Franck Morin,Trent Mailing,8-5,8,5,1,0,Completed,true,false,false
+AP009041,25 Oct 25,4,Kooyong,Lauriston,No. 1,Ivor Van Der Sluys,Jude Teo,Jude Teo,2-8,2,8,0,1,Completed,true,false,false
+AP009041,25 Oct 25,4,Kooyong,Lauriston,No. 2,Theo Schlicht,Aaron Nazaretian,Aaron Nazaretian,0-8,0,8,0,1,Completed,true,false,false
+AP009041,25 Oct 25,4,Kooyong,Lauriston,No. 3,Sakthi Navaneetharaja,Andrew Meek,Andrew Meek,0-8,0,8,0,1,Completed,true,false,false
+AP009041,25 Oct 25,4,Kooyong,Lauriston,No. 4,Maxim Leveque,Om Rao,Om Rao,1-8,1,8,0,1,Completed,true,false,false
+AP009042,25 Oct 25,4,BLTC White,Maccabi,No. 1,Max Henderson,Jesse Stowe-Lindner,Max Henderson,8-5,8,5,1,0,Completed,true,true,false
+AP009042,25 Oct 25,4,BLTC White,Maccabi,No. 2,Andrew Livermore,Ashley Raboy,Andrew Livermore,8-5,8,5,1,0,Completed,true,false,false
+AP009042,25 Oct 25,4,BLTC White,Maccabi,No. 3,John Van Der Meulen,Jacob Nathan,John Van Der Meulen,8-5,8,5,1,0,Completed,true,false,false
+AP009042,25 Oct 25,4,BLTC White,Maccabi,No. 4,William Zichen Wang,Paul Kovacs,William Zichen Wang,8-4,8,4,1,0,Completed,true,false,false
+AP009043,25 Oct 25,4,Highmoor Uniting,BLTC Blue,No. 1,Callum Elvins,Dan Whitson,Dan Whitson,3-8,3,8,0,1,Completed,true,false,false
+AP009043,25 Oct 25,4,Highmoor Uniting,BLTC Blue,No. 2,Richard Elvins,Tom Whitson,Tom Whitson,4-8,4,8,0,1,Completed,true,false,false
+AP009043,25 Oct 25,4,Highmoor Uniting,BLTC Blue,No. 3,Murtaza Yusufi,Ethan Kearns,Ethan Kearns,4-8,4,8,0,1,Completed,true,true,false
+AP009043,25 Oct 25,4,Highmoor Uniting,BLTC Blue,No. 4,Vikram Jangra,Trent Mailing,Vikram Jangra,8-4,8,4,1,0,Completed,true,false,false
+AP009061,15 Nov 25,6,Maccabi,BLTC Blue,No. 1,Ben Pollak,Dan Whitson,Dan Whitson,1-8,1,8,0,1,Completed,true,false,false
+AP009061,15 Nov 25,6,Maccabi,BLTC Blue,No. 2,Sebastian Raboy,Tom Whitson,Tom Whitson,2-8,2,8,0,1,Completed,true,false,false
+AP009061,15 Nov 25,6,Maccabi,BLTC Blue,No. 3,Ashley Raboy,Ethan Kearns,Ethan Kearns,3-8,3,8,0,1,Completed,true,false,false
+AP009061,15 Nov 25,6,Maccabi,BLTC Blue,No. 4,Stephen Kleid,Trent Mailing,Trent Mailing,4-8,4,8,0,1,Completed,true,false,false
+AP009063,15 Nov 25,6,BLTC White,Kooyong,No. 1,Andrew Livermore,Ivor Van Der Sluys,Andrew Livermore,8-2,8,2,1,0,Completed,true,false,false
+AP009063,15 Nov 25,6,BLTC White,Kooyong,No. 2,Casper Stisen Billing,Theo Schlicht,Casper Stisen Billing,8-0,8,0,1,0,Completed,true,false,false
+AP009063,15 Nov 25,6,BLTC White,Kooyong,No. 3,John Van Der Meulen,Thomas Lam,John Van Der Meulen,8-1,8,1,1,0,Completed,true,false,false
+AP009063,15 Nov 25,6,BLTC White,Kooyong,No. 4,Nick Jackson,Sakthi Navaneetharaja,Nick Jackson,8-4,8,4,1,0,Completed,true,false,false
+AP009064,15 Nov 25,6,Glen Huntly,Highmoor Uniting,No. 1,Paul Egre,Callum Elvins,Callum Elvins,6-8,6,8,0,1,Completed,true,false,false
+AP009064,15 Nov 25,6,Glen Huntly,Highmoor Uniting,No. 2,Daniel Katanov,Richard Elvins,Richard Elvins,3-8,3,8,0,1,Completed,true,false,false
+AP009064,15 Nov 25,6,Glen Huntly,Highmoor Uniting,No. 3,Anirudh Devanathan,Esmatullah Niazi,Esmatullah Niazi,3-8,3,8,0,1,Completed,true,false,false
+AP009064,15 Nov 25,6,Glen Huntly,Highmoor Uniting,No. 4,Amir Egre,Matthew Tonciuc,Matthew Tonciuc,6-8,6,8,0,1,Completed,true,false,false
+AP009071,22 Nov 25,7,Lauriston,BLTC Blue,No. 1,Jude Teo,Dan Whitson,Dan Whitson,2-8,2,8,0,1,Completed,true,false,false
+AP009071,22 Nov 25,7,Lauriston,BLTC Blue,No. 2,Dean Smith,Tom Whitson,Tom Whitson,5-8,5,8,0,1,Completed,true,false,false
+AP009071,22 Nov 25,7,Lauriston,BLTC Blue,No. 3,Andrew Meek,Ethan Kearns,Ethan Kearns,5-8,5,8,0,1,Completed,true,false,false
+AP009071,22 Nov 25,7,Lauriston,BLTC Blue,No. 4,Matthew McArthur,Jack Giblin,Jack Giblin,6-8,6,8,0,1,Completed,true,false,false
+AP009073,22 Nov 25,7,Highmoor Uniting,Kooyong,No. 1,Esmatullah Niazi,Ivor Van Der Sluys,Ivor Van Der Sluys,3-8,3,8,0,1,Completed,true,false,false
+AP009073,22 Nov 25,7,Highmoor Uniting,Kooyong,No. 2,Michael Lynch,Theo Schlicht,Michael Lynch,8-7,8,7,1,0,Completed,true,false,false
+AP009073,22 Nov 25,7,Highmoor Uniting,Kooyong,No. 3,Matthew Tonciuc,Patrick Brimacombe,Patrick Brimacombe,2-8,2,8,0,1,Completed,true,false,false
+AP009073,22 Nov 25,7,Highmoor Uniting,Kooyong,No. 4,Ben Reidy,Thomas Lam,Thomas Lam,0-8,0,8,0,1,Completed,true,false,false
+AP009074,22 Nov 25,7,BLTC White,Glen Huntly,No. 1,Mali Nayna,Paul Egre,Mali Nayna,8-4,8,4,1,0,Completed,true,false,false
+AP009074,22 Nov 25,7,BLTC White,Glen Huntly,No. 2,Casper Stisen Billing,Daniel Katanov,Casper Stisen Billing,8-4,8,4,1,0,Completed,true,false,false
+AP009074,22 Nov 25,7,BLTC White,Glen Huntly,No. 3,John Van Der Meulen,Isaac Egre,Isaac Egre,4-8,4,8,0,1,Completed,true,false,true
+AP009074,22 Nov 25,7,BLTC White,Glen Huntly,No. 4,William Zichen Wang,Amir Egre,William Zichen Wang,8-2,8,2,1,0,Completed,true,false,false
+AP009081,29 Nov 25,8,Glen Huntly,Lauriston,No. 1,Martin Maziarz,Jude Teo,Jude Teo,4-8,4,8,0,1,Completed,true,true,false
+AP009081,29 Nov 25,8,Glen Huntly,Lauriston,No. 2,Paul Egre,Aaron Nazaretian,Aaron Nazaretian,6-8,6,8,0,1,Completed,true,false,false
+AP009081,29 Nov 25,8,Glen Huntly,Lauriston,No. 3,Daniel Katanov,Dean Smith,Daniel Katanov,8-7,8,7,1,0,Completed,true,false,false
+AP009081,29 Nov 25,8,Glen Huntly,Lauriston,No. 4,Franck Morin,Matthew McArthur,Matthew McArthur,6-8,6,8,0,1,Completed,true,false,false
+AP009082,29 Nov 25,8,Kooyong,Maccabi,No. 1,Theo Schlicht,Jesse Stowe-Lindner,Jesse Stowe-Lindner,3-8,3,8,0,1,Completed,true,false,false
+AP009082,29 Nov 25,8,Kooyong,Maccabi,No. 2,Sakthi Navaneetharaja,Jack Stock,Jack Stock,0-8,0,8,0,1,Completed,true,false,false
+AP009082,29 Nov 25,8,Kooyong,Maccabi,No. 3,Daniel Cajkusic,Jacob Nathan,Daniel Cajkusic,8-3,8,3,1,0,Completed,true,true,false
+AP009082,29 Nov 25,8,Kooyong,Maccabi,No. 4,Maxim Leveque,Paul Kovacs,Maxim Leveque,8-7,8,7,1,0,Completed,true,false,false
+AP009083,29 Nov 25,8,BLTC White,BLTC Blue,No. 1,Andrew Livermore,Tom Whitson,Tom Whitson,1-8,1,8,0,1,Completed,true,false,false
+AP009083,29 Nov 25,8,BLTC White,BLTC Blue,No. 2,Casper Stisen Billing,Ethan Kearns,Ethan Kearns,4-8,4,8,0,1,Completed,true,false,false
+AP009083,29 Nov 25,8,BLTC White,BLTC Blue,No. 3,William Zichen Wang,Alex Khakham,William Zichen Wang,8-4,8,4,1,0,Completed,true,false,true
+AP009083,29 Nov 25,8,BLTC White,BLTC Blue,No. 4,Nick Jackson,Trent Mailing,Trent Mailing,0-8,0,8,0,1,Completed,true,false,false
+AP009091,06 Dec 25,9,Lauriston,Highmoor Uniting,No. 1,Aaron Nazaretian,Richard Elvins,Aaron Nazaretian,8-1,8,1,1,0,Completed,true,false,false
+AP009091,06 Dec 25,9,Lauriston,Highmoor Uniting,No. 2,Andrew Meek,Ben Campbell,Ben Campbell,5-8,5,8,0,1,Completed,true,false,false
+AP009091,06 Dec 25,9,Lauriston,Highmoor Uniting,No. 3,Nikunj Surniya,Charlie Daalder,Charlie Daalder,3-8,3,8,0,1,Completed,true,true,false
+AP009091,06 Dec 25,9,Lauriston,Highmoor Uniting,No. 4,Arjun Nair,Vikram Jangra,Arjun Nair,8-3,8,3,1,0,Completed,true,true,false
+AP009101,13 Dec 25,10,BLTC White,Lauriston,No. 1,Emil Zmak,Jude Teo,Emil Zmak,8-0,8,0,1,0,Completed,true,true,false
+AP009101,13 Dec 25,10,BLTC White,Lauriston,No. 2,Andrew Livermore,Ben Dis,Ben Dis,5-8,5,8,0,1,Completed,true,false,true
+AP009101,13 Dec 25,10,BLTC White,Lauriston,No. 3,John Van Der Meulen,Aaron Nazaretian,Aaron Nazaretian,5-8,5,8,0,1,Completed,true,false,false
+AP009101,13 Dec 25,10,BLTC White,Lauriston,No. 4,Nick Jackson,Matthew McArthur,Matthew McArthur,6-8,6,8,0,1,Completed,true,false,false
+AP009102,13 Dec 25,10,Highmoor Uniting,Maccabi,No. 1,Callum Elvins,Jesse Stowe-Lindner,Callum Elvins,8-6,8,6,1,0,Completed,true,false,false
+AP009102,13 Dec 25,10,Highmoor Uniting,Maccabi,No. 2,Michael Lynch,Ben Pollak,Ben Pollak,3-8,3,8,0,1,Completed,true,false,false
+AP009102,13 Dec 25,10,Highmoor Uniting,Maccabi,No. 3,Ben Campbell,Sebastian Raboy,Sebastian Raboy,0-8,0,8,0,1,Completed,true,false,false
+AP009102,13 Dec 25,10,Highmoor Uniting,Maccabi,No. 4,Matthew Tonciuc,Jack Stock,Jack Stock,5-8,5,8,0,1,Completed,true,false,false
+AP009103,13 Dec 25,10,Glen Huntly,BLTC Blue,No. 1,Paul Egre,Dan Whitson,Dan Whitson,0-8,0,8,0,1,Completed,true,false,false
+AP009103,13 Dec 25,10,Glen Huntly,BLTC Blue,No. 2,Daniel Katanov,Tom Whitson,Tom Whitson,2-8,2,8,0,1,Completed,true,false,false
+AP009103,13 Dec 25,10,Glen Huntly,BLTC Blue,No. 3,Oscar Sun,Trent Mailing,Oscar Sun,8-6,8,6,1,0,Completed,true,false,false
+AP009103,13 Dec 25,10,Glen Huntly,BLTC Blue,No. 4,Amir Egre,Jack Giblin,Amir Egre,8-6,8,6,1,0,Completed,true,false,false
+AP009111,07 Feb 26,11,Lauriston,Kooyong,No. 1,Dean Smith,Ivor Van Der Sluys,Ivor Van Der Sluys,3-8,3,8,0,1,Completed,true,false,false
+AP009111,07 Feb 26,11,Lauriston,Kooyong,No. 2,Andrew Meek,Theo Schlicht,Andrew Meek,8-6,8,6,1,0,Completed,true,false,false
+AP009111,07 Feb 26,11,Lauriston,Kooyong,No. 3,Om Rao,Xavier Teoh,Om Rao,8-0,8,0,1,0,Completed,true,false,false
+AP009111,07 Feb 26,11,Lauriston,Kooyong,No. 4,Matthew McArthur,Sakthi Navaneetharaja,Sakthi Navaneetharaja,4-8,4,8,0,1,Completed,true,false,false
+AP009112,07 Feb 26,11,Maccabi,BLTC White,No. 1,Jesse Stowe-Lindner,Mali Nayna,Mali Nayna,7-8,7,8,0,1,Completed,true,false,false
+AP009112,07 Feb 26,11,Maccabi,BLTC White,No. 2,Ben Pollak,William Zichen Wang,William Zichen Wang,5-8,5,8,0,1,Completed,true,false,false
+AP009112,07 Feb 26,11,Maccabi,BLTC White,No. 3,Jack Stock,John Van Der Meulen,Jack Stock,8-0,8,0,1,0,Completed,true,false,false
+AP009112,07 Feb 26,11,Maccabi,BLTC White,No. 4,Stephen Kleid,Nick Jackson,Stephen Kleid,8-5,8,5,1,0,Completed,true,false,false
+AP009113,07 Feb 26,11,BLTC Blue,Highmoor Uniting,No. 1,Tom Whitson,Richard Elvins,Tom Whitson,8-0,8,0,1,0,Completed,true,false,false
+AP009113,07 Feb 26,11,BLTC Blue,Highmoor Uniting,No. 2,Jack Giblin,Michael Lynch,Jack Giblin,8-1,8,1,1,0,Completed,true,false,false
+AP009113,07 Feb 26,11,BLTC Blue,Highmoor Uniting,No. 3,Ethan Kearns,Charlie Daalder,Charlie Daalder,0-8,0,8,0,1,Completed,true,false,false
+AP009113,07 Feb 26,11,BLTC Blue,Highmoor Uniting,No. 4,Trent Mailing,Murtaza Yusufi,Trent Mailing,8-2,8,2,1,0,Completed,true,false,true
+AP009122,14 Feb 26,12,BLTC White,Highmoor Uniting,No. 1,Mali Nayna,Richard Elvins,Mali Nayna,8-1,8,1,1,0,Completed,true,false,false
+AP009122,14 Feb 26,12,BLTC White,Highmoor Uniting,No. 2,Casper Stisen Billing,Michael Lynch,Casper Stisen Billing,8-1,8,1,1,0,Completed,true,false,false
+AP009122,14 Feb 26,12,BLTC White,Highmoor Uniting,No. 3,John Van Der Meulen,Charlie Daalder,John Van Der Meulen,8-4,8,4,1,0,Completed,true,false,false
+AP009122,14 Feb 26,12,BLTC White,Highmoor Uniting,No. 4,William Zichen Wang,Ben Reidy,William Zichen Wang,8-0,8,0,1,0,Completed,true,false,false
+AP009123,14 Feb 26,12,Glen Huntly,Kooyong,No. 1,Amir Egre,Ivor Van Der Sluys,Ivor Van Der Sluys,0-8,0,8,0,1,Completed,true,false,false
+AP009123,14 Feb 26,12,Glen Huntly,Kooyong,No. 2,Paul Egre,Theo Schlicht,Paul Egre,8-5,8,5,1,0,Completed,true,false,false
+AP009123,14 Feb 26,12,Glen Huntly,Kooyong,No. 3,Daniel Katanov,Xavier Teoh,Daniel Katanov,8-6,8,6,1,0,Completed,true,false,false
+AP009123,14 Feb 26,12,Glen Huntly,Kooyong,No. 4,Anirudh Devanathan,Sakthi Navaneetharaja,Anirudh Devanathan,8-3,8,3,1,0,Completed,true,false,false
+AP009124,14 Feb 26,12,Maccabi,Lauriston,No. 1,Jesse Stowe-Lindner,Jude Teo,Jude Teo,7-8,7,8,0,1,Completed,true,false,false
+AP009124,14 Feb 26,12,Maccabi,Lauriston,No. 2,Sebastian Raboy,Aaron Nazaretian,Aaron Nazaretian,5-8,5,8,0,1,Completed,true,false,false
+AP009124,14 Feb 26,12,Maccabi,Lauriston,No. 3,Ashley Raboy,Dean Smith,Ashley Raboy,8-7,8,7,1,0,Completed,true,false,false
+AP009124,14 Feb 26,12,Maccabi,Lauriston,No. 4,Jacob Nathan,Om Rao,Om Rao,1-8,1,8,0,1,Completed,true,false,false
+AP009131,21 Feb 26,13,BLTC Blue,Maccabi,No. 1,Tom Whitson,Ben Pollak,Tom Whitson,8-2,8,2,1,0,Completed,true,false,false
+AP009131,21 Feb 26,13,BLTC Blue,Maccabi,No. 2,Ethan Kearns,Sebastian Raboy,Ethan Kearns,8-2,8,2,1,0,Completed,true,false,false
+AP009131,21 Feb 26,13,BLTC Blue,Maccabi,No. 3,Jack Giblin,Jack Stock,Jack Giblin,8-5,8,5,1,0,Completed,true,false,false
+AP009131,21 Feb 26,13,BLTC Blue,Maccabi,No. 4,Trent Mailing,Paul Kovacs,Paul Kovacs,0-8,0,8,0,1,Completed,true,false,false
+AP009133,21 Feb 26,13,Kooyong,BLTC White,No. 1,Patrick Brimacombe,Mali Nayna,Mali Nayna,0-8,0,8,0,1,Completed,true,false,false
+AP009133,21 Feb 26,13,Kooyong,BLTC White,No. 2,Theo Schlicht,Casper Stisen Billing,Casper Stisen Billing,0-8,0,8,0,1,Completed,true,false,false
+AP009133,21 Feb 26,13,Kooyong,BLTC White,No. 3,Thomas Lam,Nick Jackson,Nick Jackson,1-8,1,8,0,1,Completed,true,false,false
+AP009133,21 Feb 26,13,Kooyong,BLTC White,No. 4,Sakthi Navaneetharaja,William Zichen Wang,William Zichen Wang,0-8,0,8,0,1,Completed,true,false,false
+AP009134,21 Feb 26,13,Highmoor Uniting,Glen Huntly,No. 1,Callum Elvins,Tom Kalapoutis,Callum Elvins,8-4,8,4,1,0,Completed,true,false,true
+AP009134,21 Feb 26,13,Highmoor Uniting,Glen Huntly,No. 2,Ben Campbell,Paul Egre,Ben Campbell,8-2,8,2,1,0,Completed,true,false,false
+AP009134,21 Feb 26,13,Highmoor Uniting,Glen Huntly,No. 3,Charlie Daalder,Will Krawczuk,Charlie Daalder,8-1,8,1,1,0,Completed,true,false,true
+AP009134,21 Feb 26,13,Highmoor Uniting,Glen Huntly,No. 4,Matthew Tonciuc,Daniel Katanov,Daniel Katanov,4-8,4,8,0,1,Completed,true,false,false
+AP009143,28 Feb 26,14,Kooyong,Highmoor Uniting,No. 1,Theo Schlicht,Callum Elvins,Callum Elvins,0-8,0,8,0,1,Completed,true,false,false
+AP009143,28 Feb 26,14,Kooyong,Highmoor Uniting,No. 2,Xavier Teoh,Richard Elvins,Richard Elvins,4-8,4,8,0,1,Completed,true,false,false
+AP009143,28 Feb 26,14,Kooyong,Highmoor Uniting,No. 3,Thomas Lam,Ben Campbell,Ben Campbell,0-8,0,8,0,1,Completed,true,false,false
+AP009143,28 Feb 26,14,Kooyong,Highmoor Uniting,No. 4,Sakthi Navaneetharaja,Vikram Jangra,Vikram Jangra,1-8,1,8,0,1,Completed,true,false,false
+AP009144,28 Feb 26,14,Glen Huntly,BLTC White,No. 1,Paul Egre,Mali Nayna,Mali Nayna,0-8,0,8,0,1,Completed,true,false,false
+AP009144,28 Feb 26,14,Glen Huntly,BLTC White,No. 2,Daniel Katanov,Casper Stisen Billing,Casper Stisen Billing,2-8,2,8,0,1,Completed,true,false,false
+AP009144,28 Feb 26,14,Glen Huntly,BLTC White,No. 3,Anirudh Devanathan,John Van Der Meulen,Anirudh Devanathan,8-7,8,7,1,0,Completed,true,false,false
+AP009144,28 Feb 26,14,Glen Huntly,BLTC White,No. 4,Will Krawczuk,William Zichen Wang,William Zichen Wang,0-8,0,8,0,1,Completed,true,true,false
+AP009301,,16,BLTC Blue,Maccabi,No. 1,Dan Whitson,Jesse Stowe-Lindner,Dan Whitson,8-4,8,4,1,0,Completed,true,false,false
+AP009301,,16,BLTC Blue,Maccabi,No. 2,Tom Whitson,Ben Pollak,Tom Whitson,8-4,8,4,1,0,Completed,true,false,false
+AP009301,,16,BLTC Blue,Maccabi,No. 3,Ethan Kearns,Sebastian Raboy,Ethan Kearns,8-5,8,5,1,0,Completed,true,false,false
+AP009301,,16,BLTC Blue,Maccabi,No. 4,Trent Mailing,Jack Stock,Jack Stock,6-8,6,8,0,1,Completed,true,false,false
+AP009302,,16,Lauriston,BLTC White,No. 1,Jude Teo,Mali Nayna,Jude Teo,8-7,8,7,1,0,Completed,true,false,false
+AP009302,,16,Lauriston,BLTC White,No. 2,Aaron Nazaretian,Casper Stisen Billing,Casper Stisen Billing,6-8,6,8,0,1,Completed,true,false,false
+AP009302,,16,Lauriston,BLTC White,No. 3,Dean Smith,John Van Der Meulen,Dean Smith,8-2,8,2,1,0,Completed,true,false,false
+AP009302,,16,Lauriston,BLTC White,No. 4,Andrew Meek,William Zichen Wang,William Zichen Wang,3-8,3,8,0,1,Completed,true,false,false
+AP009321,,17,BLTC Blue,BLTC White,No. 1,Dan Whitson,Mali Nayna,Dan Whitson,8-6,8,6,1,0,Completed,true,false,false
+AP009321,,17,BLTC Blue,BLTC White,No. 2,Tom Whitson,Casper Stisen Billing,Casper Stisen Billing,5-8,5,8,0,1,Completed,true,false,false
+AP009321,,17,BLTC Blue,BLTC White,No. 3,Ethan Kearns,John Van Der Meulen,Ethan Kearns,8-1,8,1,1,0,Completed,true,false,false
+AP009321,,17,BLTC Blue,BLTC White,No. 4,Jack Giblin,William Zichen Wang,Jack Giblin,8-7,8,7,1,0,Completed,true,false,false

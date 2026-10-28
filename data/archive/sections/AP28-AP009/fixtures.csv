@@ -1,0 +1,61 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP009011,05 Oct 13,1,regular,Round 1,Glen Huntly,Albert Park,8,0,4,0,8,0,48,14,Completed,
+AP009013,05 Oct 13,1,regular,Round 1,Elwood,Hawthorn,7,1,3,1,7,2,54,25,Completed,
+AP009014,05 Oct 13,1,regular,Round 1,Kings Park,Coatesville,2,6,2,2,5,5,48,50,Completed,
+pending-ap009-r1-bye-bltc,05 Oct 13,1,regular,Round 1,Bye,BLTC,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009021,12 Oct 13,2,regular,Round 2,Coatesville,Glen Huntly,0,8,0,4,2,8,39,58,Completed,
+AP009023,12 Oct 13,2,regular,Round 2,BLTC,Elwood,2,6,2,2,4,4,33,42,Completed,
+AP009024,12 Oct 13,2,regular,Round 2,Hawthorn,Kings Park,0,8,0,4,1,8,25,53,Completed,
+pending-ap009-r2-albert-park-bye,12 Oct 13,2,regular,Round 2,Albert Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009031,19 Oct 13,3,regular,Round 3,Glen Huntly,Hawthorn,7,1,3,1,7,2,51,27,Completed,
+AP009033,19 Oct 13,3,regular,Round 3,Elwood,Albert Park,8,0,4,0,8,1,52,28,Completed,
+AP009034,19 Oct 13,3,regular,Round 3,Kings Park,BLTC,1,7,1,3,3,6,36,47,Completed,
+pending-ap009-r3-bye-coatesville,19 Oct 13,3,regular,Round 3,Bye,Coatesville,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009041,26 Oct 13,4,regular,Round 4,BLTC,Glen Huntly,0,8,0,4,1,8,39,53,Completed,
+AP009043,26 Oct 13,4,regular,Round 4,Coatesville,Elwood,7,1,3,1,7,5,62,53,Completed,
+AP009044,26 Oct 13,4,regular,Round 4,Albert Park,Kings Park,6,2,2,2,6,4,54,42,Completed,
+pending-ap009-r4-hawthorn-bye,26 Oct 13,4,regular,Round 4,Hawthorn,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009051,09 Nov 13,5,regular,Round 5,Elwood,Kings Park,6,2,2,2,5,4,51,45,Completed,
+AP009052,09 Nov 13,5,regular,Round 5,Coatesville,Hawthorn,8,0,4,0,8,0,48,7,Completed,
+AP009053,09 Nov 13,5,regular,Round 5,BLTC,Albert Park,6,2,2,2,4,4,41,35,Completed,
+pending-ap009-r5-glen-huntly-bye,09 Nov 13,5,regular,Round 5,Glen Huntly,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009062,16 Nov 13,6,regular,Round 6,Kings Park,Glen Huntly,0,8,0,4,1,8,26,51,Completed,
+AP009063,16 Nov 13,6,regular,Round 6,Hawthorn,BLTC,0,8,0,4,0,8,11,48,Completed,
+AP009064,16 Nov 13,6,regular,Round 6,Albert Park,Coatesville,1,7,1,3,4,6,50,43,Completed,
+pending-ap009-r6-bye-elwood,16 Nov 13,6,regular,Round 6,Bye,Elwood,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009071,23 Nov 13,7,regular,Round 7,Glen Huntly,Elwood,1,7,1,3,3,6,36,47,Completed,
+AP009073,23 Nov 13,7,regular,Round 7,Coatesville,BLTC,1,7,1,3,2,6,29,41,Completed,
+AP009074,23 Nov 13,7,regular,Round 7,Hawthorn,Albert Park,0,8,0,4,0,8,20,48,Completed,
+pending-ap009-r7-bye-kings-park,23 Nov 13,7,regular,Round 7,Bye,Kings Park,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009081,30 Nov 13,8,regular,Round 8,Albert Park,Glen Huntly,0,8,0,4,2,8,33,56,Completed,
+AP009083,30 Nov 13,8,regular,Round 8,Hawthorn,Elwood,0,8,0,4,1,8,24,55,Completed,
+AP009084,30 Nov 13,8,regular,Round 8,Coatesville,Kings Park,7,1,3,1,7,4,53,56,Completed,
+pending-ap009-r8-bltc-bye,30 Nov 13,8,regular,Round 8,BLTC,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009091,07 Dec 13,9,regular,Round 9,Glen Huntly,Coatesville,4,4,2,2,5,5,43,43,Completed,
+AP009093,07 Dec 13,9,regular,Round 9,Elwood,BLTC,1,7,1,3,4,6,43,49,Completed,
+AP009094,07 Dec 13,9,regular,Round 9,Kings Park,Hawthorn,6,2,2,2,5,4,37,38,Completed,
+pending-ap009-r9-bye-albert-park,07 Dec 13,9,regular,Round 9,Bye,Albert Park,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009101,14 Dec 13,10,regular,Round 10,Hawthorn,Glen Huntly,0,8,0,4,0,8,8,48,Completed,
+AP009103,14 Dec 13,10,regular,Round 10,Albert Park,Elwood,1,7,1,3,2,6,36,43,Completed,
+AP009104,14 Dec 13,10,regular,Round 10,BLTC,Kings Park,4,4,2,2,5,5,44,44,Completed,
+pending-ap009-r10-coatesville-bye,14 Dec 13,10,regular,Round 10,Coatesville,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009111,01 Feb 14,11,regular,Round 11,Glen Huntly,BLTC,6,2,2,2,6,4,49,43,Completed,
+AP009113,01 Feb 14,11,regular,Round 11,Elwood,Coatesville,8,0,4,0,8,1,57,34,Completed,
+AP009114,01 Feb 14,11,regular,Round 11,Kings Park,Albert Park,8,0,4,0,8,1,56,36,Completed,
+pending-ap009-r11-bye-hawthorn,01 Feb 14,11,regular,Round 11,Bye,Hawthorn,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009121,08 Feb 14,12,regular,Round 12,Kings Park,Elwood,4.5,3.5,1,0,2,1,16,11,Completed,
+pending-ap009-r12-albert-park-bltc,08 Feb 14,12,regular,Round 12,Albert Park,BLTC,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap009-r12-bye-glen-huntly,08 Feb 14,12,regular,Round 12,Bye,Glen Huntly,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap009-r12-hawthorn-coatesville,08 Feb 14,12,regular,Round 12,Hawthorn,Coatesville,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP009132,15 Feb 14,13,regular,Round 13,Glen Huntly,Kings Park,7,1,3,1,6,2,45,30,Completed,
+AP009133,15 Feb 14,13,regular,Round 13,BLTC,Hawthorn,6,2,2,2,6,4,53,41,Completed,
+AP009134,15 Feb 14,13,regular,Round 13,Coatesville,Albert Park,6,2,2,2,5,4,46,44,Completed,
+pending-ap009-r13-elwood-bye,15 Feb 14,13,regular,Round 13,Elwood,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009141,22 Feb 14,14,regular,Round 14,Elwood,Glen Huntly,7,1,3,1,7,4,56,45,Completed,
+AP009143,22 Feb 14,14,regular,Round 14,BLTC,Coatesville,6,2,2,2,5,5,54,42,Completed,
+AP009144,22 Feb 14,14,regular,Round 14,Albert Park,Hawthorn,6,2,2,2,6,4,56,44,Completed,
+pending-ap009-r14-kings-park-bye,22 Feb 14,14,regular,Round 14,Kings Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009301,,16,semi_final,Semi-final,Glen Huntly,Elwood,1,7,1,3,2,6,29,42,Completed,
+AP009302,,16,semi_final,Semi-final,BLTC,Coatesville,7,1,3,1,6,3,49,27,Completed,
+AP009311,,16,semi_final,Semi-final,Glen Huntly,BLTC,7,1,3,1,6,2,45,23,Completed,
+AP009321,,17,grand_final,Grand final · TROLS entry 2,Elwood,Glen Huntly,1,7,1,3,2,7,40,55,Completed,

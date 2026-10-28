@@ -1,0 +1,157 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP006011,01 Oct 22,1,Stella Maris Blue,Royal South Yarra,No. 1,Cameron Clark,Xavier Kiley,Xavier Kiley,6-8,6,8,0,1,Completed,true,false,false
+AP006011,01 Oct 22,1,Stella Maris Blue,Royal South Yarra,No. 2,Matt Carlson,Matthew Mukhtar,Matthew Mukhtar,2-8,2,8,0,1,Completed,true,false,false
+AP006011,01 Oct 22,1,Stella Maris Blue,Royal South Yarra,No. 3,Jonathan Clark,Oscar Lyagh,Oscar Lyagh,1-8,1,8,0,1,Completed,true,false,false
+AP006011,01 Oct 22,1,Stella Maris Blue,Royal South Yarra,No. 4,Simon O'Loughlin,Sanjeeva Pathinayake,Sanjeeva Pathinayake,4-8,4,8,0,1,Completed,true,false,false
+AP006013,01 Oct 22,1,Kings Park,Parkdale,No. 1,Nick Richards,Brandan Sison,Brandan Sison,6-8,6,8,0,1,Completed,true,false,false
+AP006013,01 Oct 22,1,Kings Park,Parkdale,No. 2,James Taylor,Simon Ghattas,Simon Ghattas,0-8,0,8,0,1,Completed,true,false,false
+AP006013,01 Oct 22,1,Kings Park,Parkdale,No. 3,Callum Campbell,Philip Efthimiadis,Callum Campbell,8-3,8,3,1,0,Completed,true,false,true
+AP006013,01 Oct 22,1,Kings Park,Parkdale,No. 4,Thomas Piclin,Sam Umeonusulu,Thomas Piclin,8-7,8,7,1,0,Completed,true,false,false
+AP006014,01 Oct 22,1,St Anthony's,Liston,No. 1,Anthony Straford,Tom Winter,Tom Winter,7-8,7,8,0,1,Completed,true,false,false
+AP006014,01 Oct 22,1,St Anthony's,Liston,No. 2,Johnny Asimenias,Andrew Vincent,Andrew Vincent,5-8,5,8,0,1,Completed,true,false,false
+AP006014,01 Oct 22,1,St Anthony's,Liston,No. 3,Ray Tesoriero,Paul Patrick,Paul Patrick,4-8,4,8,0,1,Completed,true,false,false
+AP006014,01 Oct 22,1,St Anthony's,Liston,No. 4,Jim Harrison,Daniel Pederick,Daniel Pederick,1-8,1,8,0,1,Completed,true,false,true
+AP006021,08 Oct 22,2,Liston,Stella Maris Blue,No. 1,Tom Winter,Cameron Clark,Tom Winter,8-3,8,3,1,0,Completed,true,false,false
+AP006021,08 Oct 22,2,Liston,Stella Maris Blue,No. 2,Andrew Vincent,Simon O'Loughlin,Andrew Vincent,8-5,8,5,1,0,Completed,true,false,false
+AP006021,08 Oct 22,2,Liston,Stella Maris Blue,No. 3,Paul Patrick,Adam Davis,Paul Patrick,8-3,8,3,1,0,Completed,true,false,true
+AP006021,08 Oct 22,2,Liston,Stella Maris Blue,No. 4,Mario Chrisanthou,Ian O'Loughlin,Mario Chrisanthou,8-5,8,5,1,0,Completed,true,true,true
+AP006022,08 Oct 22,2,Royal South Yarra,BLTC White,No. 1,Xavier Kiley,Ingo Bahlken,Xavier Kiley,8-2,8,2,1,0,Completed,true,false,false
+AP006022,08 Oct 22,2,Royal South Yarra,BLTC White,No. 2,Matthew Mukhtar,Serge Neduzhyi,Matthew Mukhtar,8-0,8,0,1,0,Completed,true,false,false
+AP006022,08 Oct 22,2,Royal South Yarra,BLTC White,No. 3,Oscar Lyagh,Jeremy Mitchell,Oscar Lyagh,8-4,8,4,1,0,Completed,true,false,false
+AP006022,08 Oct 22,2,Royal South Yarra,BLTC White,No. 4,Alasdair Fairbairn,Grant Burnell,Alasdair Fairbairn,8-0,8,0,1,0,Completed,true,false,false
+AP006031,15 Oct 22,3,Stella Maris Blue,Parkdale,No. 1,Cameron Clark,Brandan Sison,Brandan Sison,2-8,2,8,0,1,Completed,true,false,false
+AP006031,15 Oct 22,3,Stella Maris Blue,Parkdale,No. 2,Tim Clement,Simon Ghattas,Tim Clement,8-6,8,6,1,0,Completed,true,false,false
+AP006031,15 Oct 22,3,Stella Maris Blue,Parkdale,No. 3,Jonathan Clark,Andrew Watterson,Jonathan Clark,8-5,8,5,1,0,Completed,true,false,false
+AP006031,15 Oct 22,3,Stella Maris Blue,Parkdale,No. 4,Simon O'Loughlin,Jack O'Brien,Simon O'Loughlin,8-6,8,6,1,0,Completed,true,false,false
+AP006032,15 Oct 22,3,BLTC White,Liston,No. 1,Ingo Bahlken,Tory Dickson,Tory Dickson,4-8,4,8,0,1,Completed,true,false,false
+AP006032,15 Oct 22,3,BLTC White,Liston,No. 2,Serge Neduzhyi,Trav Minns,Trav Minns,0-8,0,8,0,1,Completed,true,false,false
+AP006032,15 Oct 22,3,BLTC White,Liston,No. 3,John Van Der Meulen,Tom Winter,Tom Winter,4-8,4,8,0,1,Completed,true,false,false
+AP006032,15 Oct 22,3,BLTC White,Liston,No. 4,Jeremy Mitchell,Alex Manos,Alex Manos,5-8,5,8,0,1,Completed,true,false,false
+AP006033,15 Oct 22,3,Kings Park,Royal South Yarra,No. 1,James Taylor,Oscar Lyagh,Oscar Lyagh,3-8,3,8,0,1,Completed,true,false,false
+AP006033,15 Oct 22,3,Kings Park,Royal South Yarra,No. 2,Nick Richards,Matthew Mukhtar,Matthew Mukhtar,4-8,4,8,0,1,Completed,true,false,false
+AP006033,15 Oct 22,3,Kings Park,Royal South Yarra,No. 3,Jimmy Bui,James Kimpton,James Kimpton,6-8,6,8,0,1,Completed,true,true,false
+AP006033,15 Oct 22,3,Kings Park,Royal South Yarra,No. 4,Thomas Piclin,Alasdair Fairbairn,Alasdair Fairbairn,6-8,6,8,0,1,Completed,true,false,false
+AP006042,22 Oct 22,4,Parkdale,BLTC White,No. 1,Brandan Sison,Nicholas Higgins,Brandan Sison,8-2,8,2,1,0,Completed,true,false,false
+AP006042,22 Oct 22,4,Parkdale,BLTC White,No. 2,Simon Ghattas,Serge Neduzhyi,Simon Ghattas,8-1,8,1,1,0,Completed,true,false,false
+AP006042,22 Oct 22,4,Parkdale,BLTC White,No. 3,Andrew Watterson,Jeremy Mitchell,Andrew Watterson,8-5,8,5,1,0,Completed,true,false,false
+AP006042,22 Oct 22,4,Parkdale,BLTC White,No. 4,Jack O'Brien,John Van Der Meulen,Jack O'Brien,8-0,8,0,1,0,Completed,true,false,false
+AP006043,22 Oct 22,4,Liston,Kings Park,No. 1,Tom Winter,James Taylor,Tom Winter,8-4,8,4,1,0,Completed,true,false,false
+AP006043,22 Oct 22,4,Liston,Kings Park,No. 2,Andrew Vincent,Callum Campbell,Andrew Vincent,8-3,8,3,1,0,Completed,true,false,false
+AP006043,22 Oct 22,4,Liston,Kings Park,No. 3,Daniel Pederick,Mars Njoo,Mars Njoo,2-8,2,8,0,1,Completed,true,true,true
+AP006043,22 Oct 22,4,Liston,Kings Park,No. 4,Jason Wyatt,Bobby Lim,Bobby Lim,4-8,4,8,0,1,Completed,true,false,true
+AP006051,05 Nov 22,5,Kings Park,St Anthony's,No. 1,Nick Richards,Anthony Straford,Anthony Straford,2-8,2,8,0,1,Completed,true,false,false
+AP006051,05 Nov 22,5,Kings Park,St Anthony's,No. 2,Callum Campbell,Johnny Asimenias,Johnny Asimenias,4-8,4,8,0,1,Completed,true,false,false
+AP006051,05 Nov 22,5,Kings Park,St Anthony's,No. 3,Trevor Cohen,Jim Harrison,Trevor Cohen,8-1,8,1,1,0,Completed,true,false,false
+AP006051,05 Nov 22,5,Kings Park,St Anthony's,No. 4,Thomas Piclin,Arthur Asimenias,Thomas Piclin,8-0,8,0,1,0,Completed,true,false,false
+AP006052,05 Nov 22,5,Liston,Parkdale,No. 1,Tory Dickson,Brandan Sison,Tory Dickson,8-5,8,5,1,0,Completed,true,false,false
+AP006052,05 Nov 22,5,Liston,Parkdale,No. 2,Tom Winter,Andrew Watterson,Tom Winter,8-2,8,2,1,0,Completed,true,false,false
+AP006052,05 Nov 22,5,Liston,Parkdale,No. 3,Alex Manos,Sam Umeonusulu,Alex Manos,8-1,8,1,1,0,Completed,true,false,false
+AP006052,05 Nov 22,5,Liston,Parkdale,No. 4,Jarryd Cramer,James Watterson,Jarryd Cramer,8-2,8,2,1,0,Completed,true,true,true
+AP006054,05 Nov 22,5,Stella Maris Blue,BLTC White,No. 1,Cameron Clark,Nicholas Higgins,Cameron Clark,8-7,8,7,1,0,Completed,true,false,false
+AP006054,05 Nov 22,5,Stella Maris Blue,BLTC White,No. 2,Tim Clement,Ingo Bahlken,Ingo Bahlken,4-8,4,8,0,1,Completed,true,false,false
+AP006054,05 Nov 22,5,Stella Maris Blue,BLTC White,No. 3,Matt Ballas,Jeremy Mitchell,Matt Ballas,8-6,8,6,1,0,Completed,true,true,false
+AP006054,05 Nov 22,5,Stella Maris Blue,BLTC White,No. 4,Simon O'Loughlin,Grant Burnell,Simon O'Loughlin,8-1,8,1,1,0,Completed,true,false,false
+AP006061,12 Nov 22,6,BLTC White,Kings Park,No. 1,Nicholas Higgins,Trevor Cohen,Nicholas Higgins,8-1,8,1,1,0,Completed,true,false,false
+AP006061,12 Nov 22,6,BLTC White,Kings Park,No. 2,Jeremy Mitchell,Tom Keenan,Tom Keenan,3-8,3,8,0,1,Completed,true,false,true
+AP006061,12 Nov 22,6,BLTC White,Kings Park,No. 3,Serge Neduzhyi,Neil Bellamy,Serge Neduzhyi,8-3,8,3,1,0,Completed,true,false,true
+AP006061,12 Nov 22,6,BLTC White,Kings Park,No. 4,Grant Burnell,Charles Tanti,Grant Burnell,8-4,8,4,1,0,Completed,true,false,true
+AP006062,12 Nov 22,6,St Anthony's,Stella Maris Blue,No. 1,Anthony Straford,Cameron Clark,Anthony Straford,8-7,8,7,1,0,Completed,true,false,false
+AP006062,12 Nov 22,6,St Anthony's,Stella Maris Blue,No. 2,Anthony Nosek,Matt Carlson,Anthony Nosek,8-1,8,1,1,0,Completed,true,false,false
+AP006062,12 Nov 22,6,St Anthony's,Stella Maris Blue,No. 3,Ray Tesoriero,Tim Clement,Tim Clement,3-8,3,8,0,1,Completed,true,false,false
+AP006062,12 Nov 22,6,St Anthony's,Stella Maris Blue,No. 4,Arthur Asimenias,Simon O'Loughlin,Simon O'Loughlin,1-8,1,8,0,1,Completed,true,false,false
+AP006064,12 Nov 22,6,Royal South Yarra,Liston,No. 1,Oscar Lyagh,Tom Winter,Tom Winter,7-8,7,8,0,1,Completed,true,false,false
+AP006064,12 Nov 22,6,Royal South Yarra,Liston,No. 2,Xavier Kiley,Andrew White,Xavier Kiley,8-3,8,3,1,0,Completed,true,false,true
+AP006064,12 Nov 22,6,Royal South Yarra,Liston,No. 3,Matthew Mukhtar,Jason Wyatt,Matthew Mukhtar,8-1,8,1,1,0,Completed,true,false,false
+AP006064,12 Nov 22,6,Royal South Yarra,Liston,No. 4,Sanjeeva Pathinayake,Jonathan Rigas,Sanjeeva Pathinayake,8-2,8,2,1,0,Completed,true,false,true
+AP006081,26 Nov 22,8,Royal South Yarra,Stella Maris Blue,No. 1,Oscar Lyagh,Cameron Clark,Oscar Lyagh,8-3,8,3,1,0,Completed,true,false,false
+AP006081,26 Nov 22,8,Royal South Yarra,Stella Maris Blue,No. 2,Richard Ralph,Tim Clement,Richard Ralph,8-5,8,5,1,0,Completed,true,false,false
+AP006081,26 Nov 22,8,Royal South Yarra,Stella Maris Blue,No. 3,Alasdair Fairbairn,Simon O'Loughlin,Simon O'Loughlin,5-8,5,8,0,1,Completed,true,false,false
+AP006081,26 Nov 22,8,Royal South Yarra,Stella Maris Blue,No. 4,James Boston,Tony Quach,Tony Quach,1-8,1,8,0,1,Completed,true,false,true
+AP006083,26 Nov 22,8,Parkdale,Kings Park,No. 1,Brandan Sison,Nick Richards,Nick Richards,5-8,5,8,0,1,Completed,true,false,false
+AP006083,26 Nov 22,8,Parkdale,Kings Park,No. 2,Andrew Watterson,Callum Campbell,Andrew Watterson,8-6,8,6,1,0,Completed,true,false,false
+AP006083,26 Nov 22,8,Parkdale,Kings Park,No. 3,Jack O'Brien,Trevor Cohen,Jack O'Brien,8-4,8,4,1,0,Completed,true,false,false
+AP006083,26 Nov 22,8,Parkdale,Kings Park,No. 4,Sam Umeonusulu,Thomas Piclin,Thomas Piclin,3-8,3,8,0,1,Completed,true,false,false
+AP006084,26 Nov 22,8,Liston,St Anthony's,No. 1,Trav Minns,Anthony Straford,Trav Minns,8-6,8,6,1,0,Completed,true,false,false
+AP006084,26 Nov 22,8,Liston,St Anthony's,No. 2,Tom Winter,Anthony Nosek,Tom Winter,8-6,8,6,1,0,Completed,true,false,false
+AP006084,26 Nov 22,8,Liston,St Anthony's,No. 3,Paul Patrick,Jim Harrison,Paul Patrick,8-1,8,1,1,0,Completed,true,false,false
+AP006084,26 Nov 22,8,Liston,St Anthony's,No. 4,Stuart Fechner,Arthur Asimenias,Stuart Fechner,8-0,8,0,1,0,Completed,true,true,false
+AP006091,03 Dec 22,9,Stella Maris Blue,Liston,No. 1,Matt Carlson,Tory Dickson,Tory Dickson,0-8,0,8,0,1,Completed,true,false,false
+AP006091,03 Dec 22,9,Stella Maris Blue,Liston,No. 2,Simon O'Loughlin,Tom Winter,Tom Winter,6-8,6,8,0,1,Completed,true,false,false
+AP006091,03 Dec 22,9,Stella Maris Blue,Liston,No. 3,Dylan Bradley,Andrew Vincent,Andrew Vincent,1-8,1,8,0,1,Completed,true,true,false
+AP006091,03 Dec 22,9,Stella Maris Blue,Liston,No. 4,Flynn Morely,Paul Patrick,Paul Patrick,5-8,5,8,0,1,Completed,true,true,false
+AP006092,03 Dec 22,9,BLTC White,Royal South Yarra,No. 1,Nicholas Higgins,Xavier Kiley,Xavier Kiley,7-8,7,8,0,1,Completed,true,false,false
+AP006092,03 Dec 22,9,BLTC White,Royal South Yarra,No. 2,Ingo Bahlken,Matthew Mukhtar,Ingo Bahlken,8-7,8,7,1,0,Completed,true,false,false
+AP006092,03 Dec 22,9,BLTC White,Royal South Yarra,No. 3,Serge Neduzhyi,Alasdair Fairbairn,Alasdair Fairbairn,3-8,3,8,0,1,Completed,true,false,false
+AP006092,03 Dec 22,9,BLTC White,Royal South Yarra,No. 4,Grant Burnell,Sanjeeva Pathinayake,Sanjeeva Pathinayake,1-8,1,8,0,1,Completed,true,false,false
+AP006101,10 Dec 22,10,Parkdale,Stella Maris Blue,No. 1,Simon Ghattas,Cameron Clark,Cameron Clark,5-8,5,8,0,1,Completed,true,false,false
+AP006101,10 Dec 22,10,Parkdale,Stella Maris Blue,No. 2,Andrew Watterson,Matt Carlson,Andrew Watterson,8-2,8,2,1,0,Completed,true,false,false
+AP006101,10 Dec 22,10,Parkdale,Stella Maris Blue,No. 3,Jack O'Brien,Tim Clement,Tim Clement,5-8,5,8,0,1,Completed,true,false,false
+AP006101,10 Dec 22,10,Parkdale,Stella Maris Blue,No. 4,Sam Umeonusulu,Simon O'Loughlin,Simon O'Loughlin,1-8,1,8,0,1,Completed,true,false,false
+AP006102,10 Dec 22,10,Liston,BLTC White,No. 1,Tory Dickson,John Van Der Meulen,Tory Dickson,8-0,8,0,1,0,Completed,true,false,false
+AP006102,10 Dec 22,10,Liston,BLTC White,No. 2,Tom Winter,Serge Neduzhyi,Tom Winter,8-0,8,0,1,0,Completed,true,false,false
+AP006102,10 Dec 22,10,Liston,BLTC White,No. 3,Andrew Vincent,Nico Shaw,Andrew Vincent,8-6,8,6,1,0,Completed,true,false,true
+AP006102,10 Dec 22,10,Liston,BLTC White,No. 4,Alex Manos,Grant Burnell,Alex Manos,8-2,8,2,1,0,Completed,true,false,false
+AP006103,10 Dec 22,10,Royal South Yarra,Kings Park,No. 1,Xavier Kiley,Nick Richards,Xavier Kiley,8-1,8,1,1,0,Completed,true,false,false
+AP006103,10 Dec 22,10,Royal South Yarra,Kings Park,No. 2,Matthew Mukhtar,Callum Campbell,Matthew Mukhtar,8-0,8,0,1,0,Completed,true,false,false
+AP006103,10 Dec 22,10,Royal South Yarra,Kings Park,No. 3,Alasdair Fairbairn,Trevor Cohen,Alasdair Fairbairn,8-6,8,6,1,0,Completed,true,false,false
+AP006103,10 Dec 22,10,Royal South Yarra,Kings Park,No. 4,Sanjeeva Pathinayake,Thomas Piclin,Sanjeeva Pathinayake,8-3,8,3,1,0,Completed,true,false,false
+AP006112,04 Feb 23,11,BLTC White,Parkdale,No. 1,Ingo Bahlken,Brandan Sison,Brandan Sison,4-8,4,8,0,1,Completed,true,false,false
+AP006112,04 Feb 23,11,BLTC White,Parkdale,No. 2,John Van Der Meulen,Andrew Watterson,Andrew Watterson,2-8,2,8,0,1,Completed,true,false,false
+AP006112,04 Feb 23,11,BLTC White,Parkdale,No. 3,Serge Neduzhyi,Jack O'Brien,Serge Neduzhyi,8-4,8,4,1,0,Completed,true,false,false
+AP006112,04 Feb 23,11,BLTC White,Parkdale,No. 4,Grant Burnell,Sam Umeonusulu,Sam Umeonusulu,4-8,4,8,0,1,Completed,true,false,false
+AP006113,04 Feb 23,11,Kings Park,Liston,No. 1,Rintanl Cole,Tory Dickson,Tory Dickson,2-8,2,8,0,1,Completed,true,true,false
+AP006113,04 Feb 23,11,Kings Park,Liston,No. 2,Duong Johnson,Trav Minns,Trav Minns,5-8,5,8,0,1,Completed,true,true,false
+AP006113,04 Feb 23,11,Kings Park,Liston,No. 3,Callum Campbell,Paul Patrick,Paul Patrick,7-8,7,8,0,1,Completed,true,false,false
+AP006113,04 Feb 23,11,Kings Park,Liston,No. 4,Trevor Cohen,Sam Salter,Trevor Cohen,8-2,8,2,1,0,Completed,true,false,true
+AP006114,04 Feb 23,11,St Anthony's,Royal South Yarra,No. 1,Johnny Asimenias,Xavier Kiley,Xavier Kiley,2-8,2,8,0,1,Completed,true,false,false
+AP006114,04 Feb 23,11,St Anthony's,Royal South Yarra,No. 2,Jim Harrison,Alasdair Fairbairn,Alasdair Fairbairn,0-8,0,8,0,1,Completed,true,false,false
+AP006114,04 Feb 23,11,St Anthony's,Royal South Yarra,No. 3,Chris Doherty,Sanjeeva Pathinayake,Sanjeeva Pathinayake,1-8,1,8,0,1,Completed,true,true,false
+AP006114,04 Feb 23,11,St Anthony's,Royal South Yarra,No. 4,Arthur Asimenias,Freddie Hunt,Freddie Hunt,3-8,3,8,0,1,Completed,true,false,true
+AP006121,11 Feb 23,12,St Anthony's,Kings Park,No. 1,Anthony Straford,Johnson Duong,Johnson Duong,3-8,3,8,0,1,Completed,true,false,true
+AP006121,11 Feb 23,12,St Anthony's,Kings Park,No. 2,Anthony Nosek,Trevor Cohen,Anthony Nosek,8-2,8,2,1,0,Completed,true,false,false
+AP006121,11 Feb 23,12,St Anthony's,Kings Park,No. 3,Ray Tesoriero,Thomas Piclin,Thomas Piclin,4-8,4,8,0,1,Completed,true,false,false
+AP006121,11 Feb 23,12,St Anthony's,Kings Park,No. 4,Arthur Asimenias,Tom Keenan,Tom Keenan,6-8,6,8,0,1,Completed,true,false,true
+AP006122,11 Feb 23,12,Parkdale,Liston,No. 1,Brandan Sison,Trav Minns,Brandan Sison,8-4,8,4,1,0,Completed,true,false,false
+AP006122,11 Feb 23,12,Parkdale,Liston,No. 2,Simon Ghattas,Paul Patrick,Paul Patrick,7-8,7,8,0,1,Completed,true,false,false
+AP006122,11 Feb 23,12,Parkdale,Liston,No. 3,Jack O'Brien,Alex Manos,Alex Manos,1-8,1,8,0,1,Completed,true,false,false
+AP006122,11 Feb 23,12,Parkdale,Liston,No. 4,Sam Umeonusulu,Sam Salter,Sam Umeonusulu,8-3,8,3,1,0,Completed,true,false,true
+AP006124,11 Feb 23,12,BLTC White,Stella Maris Blue,No. 1,Ingo Bahlken,Cameron Clark,Cameron Clark,7-8,7,8,0,1,Completed,true,false,false
+AP006124,11 Feb 23,12,BLTC White,Stella Maris Blue,No. 2,John Van Der Meulen,Tim Clement,Tim Clement,1-8,1,8,0,1,Completed,true,false,false
+AP006124,11 Feb 23,12,BLTC White,Stella Maris Blue,No. 3,Jeremy Mitchell,Simon O'Loughlin,Jeremy Mitchell,8-6,8,6,1,0,Completed,true,false,false
+AP006124,11 Feb 23,12,BLTC White,Stella Maris Blue,No. 4,Grant Burnell,Flynn Morely,Grant Burnell,8-4,8,4,1,0,Completed,true,false,true
+AP006131,18 Feb 23,13,Kings Park,BLTC White,No. 1,Johnson Duong,Nicholas Higgins,Nicholas Higgins,4-8,4,8,0,1,Completed,true,true,false
+AP006131,18 Feb 23,13,Kings Park,BLTC White,No. 2,Callum Campbell,Ingo Bahlken,Ingo Bahlken,2-8,2,8,0,1,Completed,true,false,false
+AP006131,18 Feb 23,13,Kings Park,BLTC White,No. 3,Trevor Cohen,Serge Neduzhyi,Trevor Cohen,8-6,8,6,1,0,Completed,true,false,false
+AP006131,18 Feb 23,13,Kings Park,BLTC White,No. 4,Thomas Piclin,Grant Burnell,Thomas Piclin,8-4,8,4,1,0,Completed,true,false,false
+AP006132,18 Feb 23,13,Stella Maris Blue,St Anthony's,No. 1,Simon O'Loughlin,Anthony Straford,Anthony Straford,6-8,6,8,0,1,Completed,true,false,false
+AP006132,18 Feb 23,13,Stella Maris Blue,St Anthony's,No. 2,Flynn Morely,Anthony Nosek,Anthony Nosek,0-8,0,8,0,1,Completed,true,true,false
+AP006132,18 Feb 23,13,Stella Maris Blue,St Anthony's,No. 3,Ian O'Loughlin,Ray Tesoriero,Ray Tesoriero,4-8,4,8,0,1,Completed,true,true,false
+AP006132,18 Feb 23,13,Stella Maris Blue,St Anthony's,No. 4,Laz Smith,Jim Harrison,Laz Smith,8-3,8,3,1,0,Completed,true,true,false
+AP006134,18 Feb 23,13,Liston,Royal South Yarra,No. 1,Tory Dickson,Matthew Mukhtar,Tory Dickson,8-0,8,0,1,0,Completed,true,false,false
+AP006134,18 Feb 23,13,Liston,Royal South Yarra,No. 2,Tom Winter,Richard Ralph,Tom Winter,8-2,8,2,1,0,Completed,true,false,false
+AP006134,18 Feb 23,13,Liston,Royal South Yarra,No. 3,Paul Patrick,James Kimpton,Paul Patrick,8-0,8,0,1,0,Completed,true,false,false
+AP006134,18 Feb 23,13,Liston,Royal South Yarra,No. 4,Alex Manos,Sanjeeva Pathinayake,Sanjeeva Pathinayake,6-8,6,8,0,1,Completed,true,false,false
+AP006141,25 Feb 23,14,Kings Park,Stella Maris Blue,No. 1,Johnson Duong,Cameron Clark,Cameron Clark,3-8,3,8,0,1,Completed,true,true,false
+AP006141,25 Feb 23,14,Kings Park,Stella Maris Blue,No. 2,Nick Richards,Matt Carlson,Nick Richards,8-7,8,7,1,0,Completed,true,false,false
+AP006141,25 Feb 23,14,Kings Park,Stella Maris Blue,No. 3,Callum Campbell,Matt Ballas,Callum Campbell,8-1,8,1,1,0,Completed,true,false,true
+AP006141,25 Feb 23,14,Kings Park,Stella Maris Blue,No. 4,Thomas Piclin,Adam Davis,Thomas Piclin,8-4,8,4,1,0,Completed,true,false,true
+AP006142,25 Feb 23,14,St Anthony's,BLTC White,No. 1,Anthony Straford,Ingo Bahlken,Anthony Straford,8-7,8,7,1,0,Completed,true,false,false
+AP006142,25 Feb 23,14,St Anthony's,BLTC White,No. 2,Anthony Nosek,John Van Der Meulen,Anthony Nosek,8-0,8,0,1,0,Completed,true,false,false
+AP006142,25 Feb 23,14,St Anthony's,BLTC White,No. 3,Johnny Asimenias,Jeremy Mitchell,Johnny Asimenias,8-7,8,7,1,0,Completed,true,false,false
+AP006142,25 Feb 23,14,St Anthony's,BLTC White,No. 4,Ray Tesoriero,Nico Shaw,Ray Tesoriero,8-5,8,5,1,0,Completed,true,false,true
+AP006144,25 Feb 23,14,Royal South Yarra,Parkdale,No. 1,Xavier Kiley,Brandan Sison,Brandan Sison,4-8,4,8,0,1,Completed,true,false,false
+AP006144,25 Feb 23,14,Royal South Yarra,Parkdale,No. 2,Matthew Mukhtar,Simon Ghattas,Matthew Mukhtar,8-1,8,1,1,0,Completed,true,false,false
+AP006144,25 Feb 23,14,Royal South Yarra,Parkdale,No. 3,Richard Ralph,Andrew Watterson,Andrew Watterson,7-8,7,8,0,1,Completed,true,false,false
+AP006144,25 Feb 23,14,Royal South Yarra,Parkdale,No. 4,Alasdair Fairbairn,Callum Thompson,Callum Thompson,7-8,7,8,0,1,Completed,true,false,true
+AP006301,,16,Liston,St Anthony's,No. 1,Tory Dickson,Anthony Straford,Tory Dickson,8-2,8,2,1,0,Completed,true,false,false
+AP006301,,16,Liston,St Anthony's,No. 2,Trav Minns,Anthony Nosek,Trav Minns,8-4,8,4,1,0,Completed,true,false,false
+AP006301,,16,Liston,St Anthony's,No. 3,Tom Winter,Johnny Asimenias,Johnny Asimenias,0-8,0,8,0,1,Completed,true,false,false
+AP006301,,16,Liston,St Anthony's,No. 4,Alex Manos,Jim Harrison,Alex Manos,8-1,8,1,1,0,Completed,true,false,false
+AP006302,,16,Royal South Yarra,Parkdale,No. 1,Oscar Lyagh,Brandan Sison,Brandan Sison,6-8,6,8,0,1,Completed,true,false,false
+AP006302,,16,Royal South Yarra,Parkdale,No. 2,Xavier Kiley,Simon Ghattas,Xavier Kiley,8-3,8,3,1,0,Completed,true,false,false
+AP006302,,16,Royal South Yarra,Parkdale,No. 3,Matthew Mukhtar,Andrew Watterson,Matthew Mukhtar,8-6,8,6,1,0,Completed,true,false,false
+AP006302,,16,Royal South Yarra,Parkdale,No. 4,Sanjeeva Pathinayake,Jack O'Brien,Sanjeeva Pathinayake,8-1,8,1,1,0,Completed,true,false,false
+AP006321,,17,Liston,Royal South Yarra,No. 1,Tom Winter,Oscar Lyagh,Oscar Lyagh,6-8,6,8,0,1,Completed,true,false,false
+AP006321,,17,Liston,Royal South Yarra,No. 2,Andrew Vincent,Xavier Kiley,Xavier Kiley,2-8,2,8,0,1,Completed,true,false,false
+AP006321,,17,Liston,Royal South Yarra,No. 3,Paul Patrick,Matthew Mukhtar,Matthew Mukhtar,2-8,2,8,0,1,Completed,true,false,false
+AP006321,,17,Liston,Royal South Yarra,No. 4,Jason Wyatt,Sanjeeva Pathinayake,Sanjeeva Pathinayake,5-6,5,6,0,1,Completed,true,true,false

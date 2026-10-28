@@ -1,0 +1,213 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP010011,04 Oct 25,1,Hawthorn,Royal Ave,No. 1,Dirk Kramer,Dean Craig,Dean Craig,0-8,0,8,0,1,Completed,true,false,false
+AP010011,04 Oct 25,1,Hawthorn,Royal Ave,No. 2,Ben McAdams,Lachie Scott,Lachie Scott,2-8,2,8,0,1,Completed,true,true,true
+AP010011,04 Oct 25,1,Hawthorn,Royal Ave,No. 3,Simon Scally,Jimi Weir,Jimi Weir,1-8,1,8,0,1,Completed,true,true,false
+AP010011,04 Oct 25,1,Hawthorn,Royal Ave,No. 4,Oliver Rodrigues,Anthony Power,Anthony Power,0-8,0,8,0,1,Completed,true,false,false
+AP010012,04 Oct 25,1,Mentone,Tennis World,No. 1,Matt Williams,Pratik Shetty,Pratik Shetty,6-8,6,8,0,1,Completed,true,false,false
+AP010012,04 Oct 25,1,Mentone,Tennis World,No. 2,Arun Gulur,Nick Karopoulos,Nick Karopoulos,3-8,3,8,0,1,Completed,true,true,false
+AP010012,04 Oct 25,1,Mentone,Tennis World,No. 3,Jack Forster,Alon Faingertz,Alon Faingertz,5-8,5,8,0,1,Completed,true,false,false
+AP010012,04 Oct 25,1,Mentone,Tennis World,No. 4,Dante Ortega,Alex Mitsopoulos,Alex Mitsopoulos,5-8,5,8,0,1,Completed,true,true,false
+AP010013,04 Oct 25,1,East Malvern Navy,East Malvern Blue,No. 1,Oliver Berman,Frantzeskos Triantafyllou,Oliver Berman,8-2,8,2,1,0,Completed,true,false,false
+AP010013,04 Oct 25,1,East Malvern Navy,East Malvern Blue,No. 2,James Thompson,Luke Barber,Luke Barber,1-8,1,8,0,1,Completed,true,false,false
+AP010013,04 Oct 25,1,East Malvern Navy,East Malvern Blue,No. 3,Caley Wilson,James Bryden,James Bryden,6-8,6,8,0,1,Completed,true,false,false
+AP010013,04 Oct 25,1,East Malvern Navy,East Malvern Blue,No. 4,Robert Wyld,Patrick King,Patrick King,2-8,2,8,0,1,Completed,true,false,false
+AP010014,04 Oct 25,1,St Louis de Mont,BLTC,No. 1,Michael Lindfield,Patrick Pawlak-Bloch,Michael Lindfield,8-7,8,7,1,0,Completed,true,false,false
+AP010014,04 Oct 25,1,St Louis de Mont,BLTC,No. 2,Thomas Gellie,Peter Maroudas,Peter Maroudas,4-8,4,8,0,1,Completed,true,false,false
+AP010014,04 Oct 25,1,St Louis de Mont,BLTC,No. 3,Tom Vella,Jeremy Gomeze,Jeremy Gomeze,7-8,7,8,0,1,Completed,true,false,false
+AP010014,04 Oct 25,1,St Louis de Mont,BLTC,No. 4,Dylan Joughin,Alex Khakham,Alex Khakham,6-8,6,8,0,1,Completed,true,false,false
+AP010021,11 Oct 25,2,BLTC,Hawthorn,No. 1,Manol Atanasov,Jay Xu,Jay Xu,2-8,2,8,0,1,Completed,true,false,false
+AP010021,11 Oct 25,2,BLTC,Hawthorn,No. 2,Patrick Pawlak-Bloch,Bryn Rowland,Bryn Rowland,5-8,5,8,0,1,Completed,true,false,true
+AP010021,11 Oct 25,2,BLTC,Hawthorn,No. 3,Jeremy Gomeze,Cai Rowland,Cai Rowland,2-8,2,8,0,1,Completed,true,false,false
+AP010021,11 Oct 25,2,BLTC,Hawthorn,No. 4,Tin Dang,Oliver Rodrigues,Tin Dang,8-1,8,1,1,0,Completed,true,false,false
+AP010022,11 Oct 25,2,Royal Ave,Mentone,No. 1,Justin Alway,Owen Richardson,Justin Alway,8-1,8,1,1,0,Completed,true,false,false
+AP010022,11 Oct 25,2,Royal Ave,Mentone,No. 2,Dean Craig,Eric Strelnikov,Eric Strelnikov,6-8,6,8,0,1,Completed,true,false,false
+AP010022,11 Oct 25,2,Royal Ave,Mentone,No. 3,Jimi Weir,Josh Tesler,Josh Tesler,4-8,4,8,0,1,Completed,true,false,false
+AP010022,11 Oct 25,2,Royal Ave,Mentone,No. 4,Chris Gibson,Robert Proudfoot,Chris Gibson,8-0,8,0,1,0,Completed,true,false,false
+AP010023,11 Oct 25,2,Tennis World,East Malvern Navy,No. 1,Pratik Shetty,Oliver Berman,Oliver Berman,4-8,4,8,0,1,Completed,true,false,false
+AP010023,11 Oct 25,2,Tennis World,East Malvern Navy,No. 2,Nick Karopoulos,Caley Wilson,Caley Wilson,7-8,7,8,0,1,Completed,true,false,false
+AP010023,11 Oct 25,2,Tennis World,East Malvern Navy,No. 3,Alon Faingertz,Robert Wyld,Alon Faingertz,8-1,8,1,1,0,Completed,true,false,false
+AP010023,11 Oct 25,2,Tennis World,East Malvern Navy,No. 4,Alex Mitsopoulos,Mark Patrick,Alex Mitsopoulos,8-5,8,5,1,0,Completed,true,false,false
+AP010024,11 Oct 25,2,East Malvern Blue,St Louis de Mont,No. 1,Frantzeskos Triantafyllou,Ethan Dunlea,Ethan Dunlea,2-8,2,8,0,1,Completed,true,false,false
+AP010024,11 Oct 25,2,East Malvern Blue,St Louis de Mont,No. 2,Luke Barber,Nicholas Shipham,Luke Barber,8-3,8,3,1,0,Completed,true,false,false
+AP010024,11 Oct 25,2,East Malvern Blue,St Louis de Mont,No. 3,Patrick King,Tom Vella,Patrick King,8-6,8,6,1,0,Completed,true,false,false
+AP010024,11 Oct 25,2,East Malvern Blue,St Louis de Mont,No. 4,Martin Giffard,Patrick Devlin,Martin Giffard,8-0,8,0,1,0,Completed,true,false,false
+AP010031,18 Oct 25,3,Hawthorn,East Malvern Blue,No. 1,Jay Xu,Ben Elliot,Ben Elliot,7-8,7,8,0,1,Completed,true,false,true
+AP010031,18 Oct 25,3,Hawthorn,East Malvern Blue,No. 2,Mitchell Sparks,Frantzeskos Triantafyllou,Frantzeskos Triantafyllou,2-8,2,8,0,1,Completed,true,false,false
+AP010031,18 Oct 25,3,Hawthorn,East Malvern Blue,No. 3,Daniel Palavestra,Patrick King,Daniel Palavestra,8-5,8,5,1,0,Completed,true,false,false
+AP010031,18 Oct 25,3,Hawthorn,East Malvern Blue,No. 4,Oliver Rodrigues,James Bryden,James Bryden,1-8,1,8,0,1,Completed,true,false,false
+AP010032,18 Oct 25,3,Mentone,BLTC,No. 1,Robert Proudfoot,Manol Atanasov,Manol Atanasov,2-8,2,8,0,1,Completed,true,false,false
+AP010032,18 Oct 25,3,Mentone,BLTC,No. 2,Josh Tesler,Patrick Pawlak-Bloch,Josh Tesler,8-4,8,4,1,0,Completed,true,false,false
+AP010032,18 Oct 25,3,Mentone,BLTC,No. 3,Matt Williams,Peter Maroudas,Matt Williams,8-5,8,5,1,0,Completed,true,false,false
+AP010032,18 Oct 25,3,Mentone,BLTC,No. 4,Jack Forster,Jeremy Gomeze,Jack Forster,8-5,8,5,1,0,Completed,true,false,false
+AP010033,18 Oct 25,3,East Malvern Navy,Royal Ave,No. 1,Oliver Berman,Justin Alway,Justin Alway,7-8,7,8,0,1,Completed,true,false,false
+AP010033,18 Oct 25,3,East Malvern Navy,Royal Ave,No. 2,James Thompson,Jimi Weir,James Thompson,8-3,8,3,1,0,Completed,true,false,false
+AP010033,18 Oct 25,3,East Malvern Navy,Royal Ave,No. 3,Levin De Leon,Tom O'Brien,Tom O'Brien,5-8,5,8,0,1,Completed,true,false,true
+AP010033,18 Oct 25,3,East Malvern Navy,Royal Ave,No. 4,Robert Wyld,Paul Power,Paul Power,6-8,6,8,0,1,Completed,true,false,false
+AP010034,18 Oct 25,3,St Louis de Mont,Tennis World,No. 1,Michael Lindfield,Dario Latina,Michael Lindfield,8-6,8,6,1,0,Completed,true,false,false
+AP010034,18 Oct 25,3,St Louis de Mont,Tennis World,No. 2,Thomas Gellie,Alon Faingertz,Alon Faingertz,6-8,6,8,0,1,Completed,true,false,false
+AP010034,18 Oct 25,3,St Louis de Mont,Tennis World,No. 3,Dylan Joughin,Joel Dalidowicz,Dylan Joughin,8-2,8,2,1,0,Completed,true,false,true
+AP010034,18 Oct 25,3,St Louis de Mont,Tennis World,No. 4,Patrick Devlin,Alex Mitsopoulos,Patrick Devlin,8-6,8,6,1,0,Completed,true,false,false
+AP010041,25 Oct 25,4,Tennis World,Hawthorn,No. 1,Pratik Shetty,Dirk Kramer,Pratik Shetty,8-0,8,0,1,0,Completed,true,false,false
+AP010041,25 Oct 25,4,Tennis World,Hawthorn,No. 2,Dario Latina,Mitchell Sparks,Dario Latina,8-2,8,2,1,0,Completed,true,false,false
+AP010041,25 Oct 25,4,Tennis World,Hawthorn,No. 3,Alon Faingertz,Nycky Ved Ashwin,Nycky Ved Ashwin,4-8,4,8,0,1,Completed,true,false,true
+AP010041,25 Oct 25,4,Tennis World,Hawthorn,No. 4,Alex Mitsopoulos,Oliver Rodrigues,Alex Mitsopoulos,8-0,8,0,1,0,Completed,true,false,false
+AP010042,25 Oct 25,4,East Malvern Blue,Mentone,No. 1,Frantzeskos Triantafyllou,Owen Richardson,Owen Richardson,5-8,5,8,0,1,Completed,true,false,false
+AP010042,25 Oct 25,4,East Malvern Blue,Mentone,No. 2,Luke Barber,Eric Strelnikov,Eric Strelnikov,2-8,2,8,0,1,Completed,true,false,false
+AP010042,25 Oct 25,4,East Malvern Blue,Mentone,No. 3,Patrick Bergin,Josh Tesler,Patrick Bergin,8-2,8,2,1,0,Completed,true,true,false
+AP010042,25 Oct 25,4,East Malvern Blue,Mentone,No. 4,James Bryden,Matt Williams,Matt Williams,3-8,3,8,0,1,Completed,true,false,false
+AP010043,25 Oct 25,4,BLTC,East Malvern Navy,No. 1,Michael Kernahan,James Thompson,Michael Kernahan,8-3,8,3,1,0,Completed,true,false,false
+AP010043,25 Oct 25,4,BLTC,East Malvern Navy,No. 2,Adam Bishop,Caley Wilson,Adam Bishop,8-5,8,5,1,0,Completed,true,true,false
+AP010043,25 Oct 25,4,BLTC,East Malvern Navy,No. 3,Jakob Misso,Robert Wyld,Robert Wyld,7-8,7,8,0,1,Completed,true,false,false
+AP010043,25 Oct 25,4,BLTC,East Malvern Navy,No. 4,Alex Khakham,Mark Patrick,Mark Patrick,7-8,7,8,0,1,Completed,true,false,false
+AP010044,25 Oct 25,4,Royal Ave,St Louis de Mont,No. 1,Justin Alway,Ethan Dunlea,Ethan Dunlea,3-8,3,8,0,1,Completed,true,false,false
+AP010044,25 Oct 25,4,Royal Ave,St Louis de Mont,No. 2,Anthony Power,Thomas Gellie,Anthony Power,8-3,8,3,1,0,Completed,true,false,false
+AP010044,25 Oct 25,4,Royal Ave,St Louis de Mont,No. 3,Paul Power,Nicholas Shipham,Paul Power,8-3,8,3,1,0,Completed,true,false,false
+AP010044,25 Oct 25,4,Royal Ave,St Louis de Mont,No. 4,Chris Gibson,Tom Vella,Tom Vella,7-8,7,8,0,1,Completed,true,false,false
+AP010061,15 Nov 25,6,Mentone,East Malvern Navy,No. 1,Robert Proudfoot,James Thompson,James Thompson,4-8,4,8,0,1,Completed,true,false,false
+AP010061,15 Nov 25,6,Mentone,East Malvern Navy,No. 2,Josh Tesler,Caley Wilson,Josh Tesler,8-3,8,3,1,0,Completed,true,false,false
+AP010061,15 Nov 25,6,Mentone,East Malvern Navy,No. 3,Matt Williams,Robert Wyld,Robert Wyld,4-8,4,8,0,1,Completed,true,false,false
+AP010061,15 Nov 25,6,Mentone,East Malvern Navy,No. 4,Jack Forster,Mark Patrick,Jack Forster,8-4,8,4,1,0,Completed,true,false,false
+AP010062,15 Nov 25,6,St Louis de Mont,Hawthorn,No. 1,Ethan Dunlea,Mitchell Sparks,Ethan Dunlea,8-2,8,2,1,0,Completed,true,false,false
+AP010062,15 Nov 25,6,St Louis de Mont,Hawthorn,No. 2,Thomas Gellie,Dirk Kramer,Thomas Gellie,8-1,8,1,1,0,Completed,true,false,false
+AP010062,15 Nov 25,6,St Louis de Mont,Hawthorn,No. 3,Nicholas Shipham,Alan Kurby,Nicholas Shipham,8-0,8,0,1,0,Completed,true,false,true
+AP010062,15 Nov 25,6,St Louis de Mont,Hawthorn,No. 4,Tom Vella,Oliver Rodrigues,Tom Vella,8-1,8,1,1,0,Completed,true,false,false
+AP010063,15 Nov 25,6,East Malvern Blue,Tennis World,No. 1,Alex Dusek,Pratik Shetty,Alex Dusek,8-5,8,5,1,0,Completed,true,false,false
+AP010063,15 Nov 25,6,East Malvern Blue,Tennis World,No. 2,Frantzeskos Triantafyllou,Dario Latina,Frantzeskos Triantafyllou,8-4,8,4,1,0,Completed,true,false,false
+AP010063,15 Nov 25,6,East Malvern Blue,Tennis World,No. 3,Patrick King,Alon Faingertz,Patrick King,8-5,8,5,1,0,Completed,true,false,false
+AP010063,15 Nov 25,6,East Malvern Blue,Tennis World,No. 4,James Bryden,Alex Mitsopoulos,James Bryden,8-4,8,4,1,0,Completed,true,false,false
+AP010064,15 Nov 25,6,Royal Ave,BLTC,No. 1,Dean Craig,Patrick Pawlak-Bloch,Dean Craig,8-7,8,7,1,0,Completed,true,false,false
+AP010064,15 Nov 25,6,Royal Ave,BLTC,No. 2,Tom O'Brien,Jakob Misso,Tom O'Brien,8-5,8,5,1,0,Completed,true,true,false
+AP010064,15 Nov 25,6,Royal Ave,BLTC,No. 3,Paul Power,Jeremy Gomeze,Jeremy Gomeze,3-8,3,8,0,1,Completed,true,false,false
+AP010064,15 Nov 25,6,Royal Ave,BLTC,No. 4,Chris Gibson,Tin Dang,Tin Dang,7-8,7,8,0,1,Completed,true,false,false
+AP010071,22 Nov 25,7,Hawthorn,East Malvern Navy,No. 1,Dirk Kramer,James Thompson,James Thompson,1-8,1,8,0,1,Completed,true,false,false
+AP010071,22 Nov 25,7,Hawthorn,East Malvern Navy,No. 2,Mitchell Sparks,Levin De Leon,Mitchell Sparks,8-6,8,6,1,0,Completed,true,false,false
+AP010071,22 Nov 25,7,Hawthorn,East Malvern Navy,No. 3,Nycky Ved Ashwin,Robert Wyld,Nycky Ved Ashwin,8-7,8,7,1,0,Completed,true,true,false
+AP010071,22 Nov 25,7,Hawthorn,East Malvern Navy,No. 4,Oliver Rodrigues,Mark Patrick,Mark Patrick,4-8,4,8,0,1,Completed,true,false,false
+AP010072,22 Nov 25,7,Mentone,St Louis de Mont,No. 1,Owen Richardson,Ethan Dunlea,Ethan Dunlea,2-8,2,8,0,1,Completed,true,false,false
+AP010072,22 Nov 25,7,Mentone,St Louis de Mont,No. 2,Eric Strelnikov,Michael Lindfield,Eric Strelnikov,8-3,8,3,1,0,Completed,true,false,false
+AP010072,22 Nov 25,7,Mentone,St Louis de Mont,No. 3,Josh Tesler,Dylan Joughin,Dylan Joughin,4-8,4,8,0,1,Completed,true,false,false
+AP010072,22 Nov 25,7,Mentone,St Louis de Mont,No. 4,Matt Williams,Patrick Devlin,Matt Williams,8-1,8,1,1,0,Completed,true,false,false
+AP010073,22 Nov 25,7,BLTC,Tennis World,No. 1,Jakob Misso,Tim Metcalfe,Tim Metcalfe,2-8,2,8,0,1,Completed,true,false,false
+AP010073,22 Nov 25,7,BLTC,Tennis World,No. 2,Peter Maroudas,Dario Latina,Peter Maroudas,8-4,8,4,1,0,Completed,true,false,false
+AP010073,22 Nov 25,7,BLTC,Tennis World,No. 3,Tin Dang,Connor Hindle,Connor Hindle,3-8,3,8,0,1,Completed,true,false,false
+AP010073,22 Nov 25,7,BLTC,Tennis World,No. 4,Alex Khakham,Alex Mitsopoulos,Alex Khakham,8-7,8,7,1,0,Completed,true,false,false
+AP010074,22 Nov 25,7,East Malvern Blue,Royal Ave,No. 1,Frantzeskos Triantafyllou,Dean Craig,Frantzeskos Triantafyllou,8-5,8,5,1,0,Completed,true,false,false
+AP010074,22 Nov 25,7,East Malvern Blue,Royal Ave,No. 2,Atticus Dhimann,Jimi Weir,Atticus Dhimann,8-1,8,1,1,0,Completed,true,true,false
+AP010074,22 Nov 25,7,East Malvern Blue,Royal Ave,No. 3,Luke Barber,Anthony Power,Luke Barber,8-6,8,6,1,0,Completed,true,false,false
+AP010074,22 Nov 25,7,East Malvern Blue,Royal Ave,No. 4,James Bryden,Chris Gibson,Chris Gibson,2-8,2,8,0,1,Completed,true,false,false
+AP010081,29 Nov 25,8,Royal Ave,Hawthorn,No. 1,Dean Craig,Dirk Kramer,Dean Craig,8-2,8,2,1,0,Completed,true,false,false
+AP010081,29 Nov 25,8,Royal Ave,Hawthorn,No. 2,Anthony Power,Mitchell Sparks,Anthony Power,8-6,8,6,1,0,Completed,true,false,false
+AP010081,29 Nov 25,8,Royal Ave,Hawthorn,No. 3,Paul Power,Cai Rowland,Paul Power,8-6,8,6,1,0,Completed,true,false,false
+AP010081,29 Nov 25,8,Royal Ave,Hawthorn,No. 4,Chris Gibson,Nycky Ved Ashwin,Chris Gibson,8-5,8,5,1,0,Completed,true,false,true
+AP010082,29 Nov 25,8,Tennis World,Mentone,No. 1,Pratik Shetty,Eric Strelnikov,Pratik Shetty,8-5,8,5,1,0,Completed,true,false,false
+AP010082,29 Nov 25,8,Tennis World,Mentone,No. 2,Connor Hindle,Robert Proudfoot,Connor Hindle,8-3,8,3,1,0,Completed,true,false,false
+AP010082,29 Nov 25,8,Tennis World,Mentone,No. 3,Alon Faingertz,Josh Tesler,Alon Faingertz,8-3,8,3,1,0,Completed,true,false,false
+AP010082,29 Nov 25,8,Tennis World,Mentone,No. 4,Joel Dalidowicz,Jack Forster,Joel Dalidowicz,8-6,8,6,1,0,Completed,true,true,false
+AP010083,29 Nov 25,8,East Malvern Blue,East Malvern Navy,No. 1,Frantzeskos Triantafyllou,James Thompson,James Thompson,7-8,7,8,0,1,Completed,true,false,false
+AP010083,29 Nov 25,8,East Malvern Blue,East Malvern Navy,No. 2,Luke Barber,Caley Wilson,Luke Barber,8-5,8,5,1,0,Completed,true,false,false
+AP010083,29 Nov 25,8,East Malvern Blue,East Malvern Navy,No. 3,Patrick King,Robert Wyld,Robert Wyld,6-8,6,8,0,1,Completed,true,false,false
+AP010083,29 Nov 25,8,East Malvern Blue,East Malvern Navy,No. 4,James Bryden,Mark Patrick,James Bryden,8-7,8,7,1,0,Completed,true,false,false
+AP010084,29 Nov 25,8,BLTC,St Louis de Mont,No. 1,Manol Atanasov,Michael Lindfield,Manol Atanasov,8-3,8,3,1,0,Completed,true,false,false
+AP010084,29 Nov 25,8,BLTC,St Louis de Mont,No. 2,Patrick Pawlak-Bloch,Thomas Gellie,Thomas Gellie,6-8,6,8,0,1,Completed,true,false,false
+AP010084,29 Nov 25,8,BLTC,St Louis de Mont,No. 3,Peter Maroudas,Nicholas Shipham,Nicholas Shipham,6-8,6,8,0,1,Completed,true,false,false
+AP010084,29 Nov 25,8,BLTC,St Louis de Mont,No. 4,Tin Dang,Tom Vella,Tom Vella,2-8,2,8,0,1,Completed,true,false,false
+AP010092,06 Dec 25,9,Mentone,Royal Ave,No. 1,Owen Richardson,Justin Alway,Justin Alway,5-8,5,8,0,1,Completed,true,false,false
+AP010092,06 Dec 25,9,Mentone,Royal Ave,No. 2,Eric Strelnikov,Anthony Power,Eric Strelnikov,8-5,8,5,1,0,Completed,true,false,false
+AP010092,06 Dec 25,9,Mentone,Royal Ave,No. 3,Robert Proudfoot,Paul Power,Robert Proudfoot,8-5,8,5,1,0,Completed,true,false,false
+AP010092,06 Dec 25,9,Mentone,Royal Ave,No. 4,Matt Williams,Jeremy Rouch,Matt Williams,8-6,8,6,1,0,Completed,true,false,true
+AP010094,06 Dec 25,9,St Louis de Mont,East Malvern Blue,No. 1,Michael Lindfield,Frantzeskos Triantafyllou,Michael Lindfield,8-5,8,5,1,0,Completed,true,false,false
+AP010094,06 Dec 25,9,St Louis de Mont,East Malvern Blue,No. 2,Nicholas Shipham,Luke Barber,Nicholas Shipham,8-3,8,3,1,0,Completed,true,false,false
+AP010094,06 Dec 25,9,St Louis de Mont,East Malvern Blue,No. 3,Tom Vella,Martin Giffard,Martin Giffard,2-8,2,8,0,1,Completed,true,false,false
+AP010094,06 Dec 25,9,St Louis de Mont,East Malvern Blue,No. 4,Dylan Joughin,James Bryden,Dylan Joughin,8-5,8,5,1,0,Completed,true,false,false
+AP010101,13 Dec 25,10,East Malvern Blue,Hawthorn,No. 1,Atticus Dhimann,Dirk Kramer,Atticus Dhimann,8-2,8,2,1,0,Completed,true,true,false
+AP010101,13 Dec 25,10,East Malvern Blue,Hawthorn,No. 2,Frantzeskos Triantafyllou,Mitchell Sparks,Mitchell Sparks,6-8,6,8,0,1,Completed,true,false,false
+AP010101,13 Dec 25,10,East Malvern Blue,Hawthorn,No. 3,Patrick King,Jay Xu,Jay Xu,2-8,2,8,0,1,Completed,true,false,false
+AP010101,13 Dec 25,10,East Malvern Blue,Hawthorn,No. 4,Martin Giffard,Cai Rowland,Cai Rowland,0-8,0,8,0,1,Completed,true,false,false
+AP010102,13 Dec 25,10,BLTC,Mentone,No. 1,Michael Kernahan,Josh Tesler,Michael Kernahan,8-1,8,1,1,0,Completed,true,false,false
+AP010102,13 Dec 25,10,BLTC,Mentone,No. 2,Jakob Misso,Matt Williams,Matt Williams,3-8,3,8,0,1,Completed,true,false,false
+AP010102,13 Dec 25,10,BLTC,Mentone,No. 3,Peter Maroudas,Jack Forster,Peter Maroudas,8-7,8,7,1,0,Completed,true,false,false
+AP010102,13 Dec 25,10,BLTC,Mentone,No. 4,Alex Khakham,Dante Ortega,Dante Ortega,4-8,4,8,0,1,Completed,true,false,true
+AP010103,13 Dec 25,10,Royal Ave,East Malvern Navy,No. 1,Justin Alway,Caley Wilson,Justin Alway,8-2,8,2,1,0,Completed,true,false,false
+AP010103,13 Dec 25,10,Royal Ave,East Malvern Navy,No. 2,Dean Craig,Lucca Biesse,Lucca Biesse,6-8,6,8,0,1,Completed,true,false,true
+AP010103,13 Dec 25,10,Royal Ave,East Malvern Navy,No. 3,Jimi Weir,Robert Wyld,Jimi Weir,8-4,8,4,1,0,Completed,true,false,false
+AP010103,13 Dec 25,10,Royal Ave,East Malvern Navy,No. 4,Anthony Power,Mark Patrick,Anthony Power,8-0,8,0,1,0,Completed,true,false,false
+AP010104,13 Dec 25,10,Tennis World,St Louis de Mont,No. 1,Connor Hindle,Ethan Dunlea,Ethan Dunlea,2-8,2,8,0,1,Completed,true,false,false
+AP010104,13 Dec 25,10,Tennis World,St Louis de Mont,No. 2,Tim Metcalfe,Thomas Gellie,Tim Metcalfe,8-1,8,1,1,0,Completed,true,false,false
+AP010104,13 Dec 25,10,Tennis World,St Louis de Mont,No. 3,Alon Faingertz,Tom Vella,Alon Faingertz,8-7,8,7,1,0,Completed,true,false,false
+AP010104,13 Dec 25,10,Tennis World,St Louis de Mont,No. 4,Alex Mitsopoulos,Patrick Devlin,Alex Mitsopoulos,8-5,8,5,1,0,Completed,true,false,false
+AP010111,07 Feb 26,11,Hawthorn,Tennis World,No. 1,Mitchell Sparks,Connor Hindle,Connor Hindle,5-8,5,8,0,1,Completed,true,false,false
+AP010111,07 Feb 26,11,Hawthorn,Tennis World,No. 2,Jay Xu,Tim Metcalfe,Jay Xu,8-2,8,2,1,0,Completed,true,false,false
+AP010111,07 Feb 26,11,Hawthorn,Tennis World,No. 3,Guy Horseman,Dario Latina,Guy Horseman,8-0,8,0,1,0,Completed,true,true,false
+AP010111,07 Feb 26,11,Hawthorn,Tennis World,No. 4,Oliver Rodrigues,Alex Mitsopoulos,Alex Mitsopoulos,3-8,3,8,0,1,Completed,true,false,false
+AP010112,07 Feb 26,11,Mentone,East Malvern Blue,No. 1,Eric Strelnikov,Alex Dusek,Eric Strelnikov,8-4,8,4,1,0,Completed,true,false,false
+AP010112,07 Feb 26,11,Mentone,East Malvern Blue,No. 2,Josh Tesler,Frantzeskos Triantafyllou,Josh Tesler,8-4,8,4,1,0,Completed,true,false,false
+AP010112,07 Feb 26,11,Mentone,East Malvern Blue,No. 3,Matt Williams,Patrick King,Patrick King,3-8,3,8,0,1,Completed,true,false,false
+AP010112,07 Feb 26,11,Mentone,East Malvern Blue,No. 4,Jack Forster,James Bryden,James Bryden,7-8,7,8,0,1,Completed,true,false,false
+AP010113,07 Feb 26,11,East Malvern Navy,BLTC,No. 1,Oliver Berman,Patrick Pawlak-Bloch,Oliver Berman,8-2,8,2,1,0,Completed,true,false,false
+AP010113,07 Feb 26,11,East Malvern Navy,BLTC,No. 2,James Thompson,Jakob Misso,James Thompson,8-6,8,6,1,0,Completed,true,false,false
+AP010113,07 Feb 26,11,East Malvern Navy,BLTC,No. 3,Caley Wilson,Jeremy Gomeze,Caley Wilson,8-2,8,2,1,0,Completed,true,false,false
+AP010113,07 Feb 26,11,East Malvern Navy,BLTC,No. 4,Mark Patrick,Alex Khakham,Alex Khakham,2-8,2,8,0,1,Completed,true,false,false
+AP010114,07 Feb 26,11,St Louis de Mont,Royal Ave,No. 1,Michael Lindfield,Justin Alway,Justin Alway,2-8,2,8,0,1,Completed,true,false,false
+AP010114,07 Feb 26,11,St Louis de Mont,Royal Ave,No. 2,Nicholas Shipham,Jimi Weir,Nicholas Shipham,8-3,8,3,1,0,Completed,true,false,false
+AP010114,07 Feb 26,11,St Louis de Mont,Royal Ave,No. 3,Tom Vella,Anthony Power,Anthony Power,0-8,0,8,0,1,Completed,true,false,false
+AP010114,07 Feb 26,11,St Louis de Mont,Royal Ave,No. 4,Patrick Devlin,Chris Gibson,Chris Gibson,2-8,2,8,0,1,Completed,true,false,false
+AP010121,14 Feb 26,12,St Louis de Mont,East Malvern Navy,No. 1,Aaron Vu,James Thompson,Aaron Vu,8-1,8,1,1,0,Completed,true,true,false
+AP010121,14 Feb 26,12,St Louis de Mont,East Malvern Navy,No. 2,Thomas Gellie,Robert Wyld,Thomas Gellie,8-1,8,1,1,0,Completed,true,false,false
+AP010121,14 Feb 26,12,St Louis de Mont,East Malvern Navy,No. 3,Nicholas Shipham,Tom Taylor,Tom Taylor,4-8,4,8,0,1,Completed,true,false,true
+AP010121,14 Feb 26,12,St Louis de Mont,East Malvern Navy,No. 4,Patrick Devlin,Mark Patrick,Patrick Devlin,8-7,8,7,1,0,Completed,true,false,false
+AP010122,14 Feb 26,12,East Malvern Blue,BLTC,No. 1,Sam Seaberry,Jakob Misso,Sam Seaberry,8-1,8,1,1,0,Completed,true,true,false
+AP010122,14 Feb 26,12,East Malvern Blue,BLTC,No. 2,Frantzeskos Triantafyllou,Peter Maroudas,Frantzeskos Triantafyllou,8-1,8,1,1,0,Completed,true,false,false
+AP010122,14 Feb 26,12,East Malvern Blue,BLTC,No. 3,Patrick King,Tin Dang,Patrick King,8-5,8,5,1,0,Completed,true,false,false
+AP010122,14 Feb 26,12,East Malvern Blue,BLTC,No. 4,James Bryden,Alex Khakham,Alex Khakham,4-8,4,8,0,1,Completed,true,false,false
+AP010123,14 Feb 26,12,Royal Ave,Tennis World,No. 1,Dean Craig,Pratik Shetty,Pratik Shetty,6-8,6,8,0,1,Completed,true,false,false
+AP010123,14 Feb 26,12,Royal Ave,Tennis World,No. 2,Anthony Power,Tim Metcalfe,Anthony Power,8-5,8,5,1,0,Completed,true,false,false
+AP010123,14 Feb 26,12,Royal Ave,Tennis World,No. 3,Paul Power,Dario Latina,Paul Power,8-5,8,5,1,0,Completed,true,false,false
+AP010123,14 Feb 26,12,Royal Ave,Tennis World,No. 4,Chris Gibson,Alon Faingertz,Chris Gibson,8-7,8,7,1,0,Completed,true,false,false
+AP010124,14 Feb 26,12,Mentone,Hawthorn,No. 1,Robert Proudfoot,Dirk Kramer,Robert Proudfoot,8-4,8,4,1,0,Completed,true,false,false
+AP010124,14 Feb 26,12,Mentone,Hawthorn,No. 2,Josh Tesler,Mitchell Sparks,Josh Tesler,8-4,8,4,1,0,Completed,true,false,false
+AP010124,14 Feb 26,12,Mentone,Hawthorn,No. 3,Matt Williams,Jay Xu,Jay Xu,2-8,2,8,0,1,Completed,true,false,false
+AP010124,14 Feb 26,12,Mentone,Hawthorn,No. 4,Jack Forster,Oliver Rodrigues,Jack Forster,8-5,8,5,1,0,Completed,true,false,false
+AP010131,21 Feb 26,13,East Malvern Navy,Mentone,No. 1,James Thompson,Eric Strelnikov,Eric Strelnikov,6-8,6,8,0,1,Completed,true,false,false
+AP010131,21 Feb 26,13,East Malvern Navy,Mentone,No. 2,Caley Wilson,Josh Tesler,Josh Tesler,5-8,5,8,0,1,Completed,true,false,false
+AP010131,21 Feb 26,13,East Malvern Navy,Mentone,No. 3,Levin De Leon,Robert Proudfoot,Levin De Leon,8-0,8,0,1,0,Completed,true,false,false
+AP010131,21 Feb 26,13,East Malvern Navy,Mentone,No. 4,Mark Patrick,Matt Williams,Matt Williams,3-8,3,8,0,1,Completed,true,false,false
+AP010132,21 Feb 26,13,Hawthorn,St Louis de Mont,No. 1,Dirk Kramer,Ethan Dunlea,Ethan Dunlea,0-8,0,8,0,1,Completed,true,false,false
+AP010132,21 Feb 26,13,Hawthorn,St Louis de Mont,No. 2,Jay Xu,Michael Lindfield,Jay Xu,8-3,8,3,1,0,Completed,true,false,false
+AP010132,21 Feb 26,13,Hawthorn,St Louis de Mont,No. 3,Mitchell Sparks,Thomas Gellie,Mitchell Sparks,8-2,8,2,1,0,Completed,true,false,false
+AP010132,21 Feb 26,13,Hawthorn,St Louis de Mont,No. 4,Oliver Rodrigues,Tom Vella,Tom Vella,0-8,0,8,0,1,Completed,true,false,false
+AP010133,21 Feb 26,13,Tennis World,East Malvern Blue,No. 1,Pratik Shetty,Alex Dusek,Alex Dusek,3-8,3,8,0,1,Completed,true,false,false
+AP010133,21 Feb 26,13,Tennis World,East Malvern Blue,No. 2,Connor Hindle,Frantzeskos Triantafyllou,Connor Hindle,8-5,8,5,1,0,Completed,true,false,false
+AP010133,21 Feb 26,13,Tennis World,East Malvern Blue,No. 3,Dario Latina,Patrick King,Dario Latina,8-7,8,7,1,0,Completed,true,false,false
+AP010133,21 Feb 26,13,Tennis World,East Malvern Blue,No. 4,Alex Mitsopoulos,James Bryden,Alex Mitsopoulos,8-7,8,7,1,0,Completed,true,false,false
+AP010134,21 Feb 26,13,BLTC,Royal Ave,No. 1,Jess Tale,Justin Alway,Justin Alway,5-8,5,8,0,1,Completed,true,true,false
+AP010134,21 Feb 26,13,BLTC,Royal Ave,No. 2,Patrick Pawlak-Bloch,Jimi Weir,Jimi Weir,7-8,7,8,0,1,Completed,true,false,false
+AP010134,21 Feb 26,13,BLTC,Royal Ave,No. 3,Peter Maroudas,Paul Power,Peter Maroudas,8-5,8,5,1,0,Completed,true,false,false
+AP010134,21 Feb 26,13,BLTC,Royal Ave,No. 4,Tin Dang,Chris Gibson,Chris Gibson,6-8,6,8,0,1,Completed,true,false,false
+AP010141,28 Feb 26,14,East Malvern Navy,Hawthorn,No. 1,James Thompson,Jay Xu,James Thompson,8-3,8,3,1,0,Completed,true,false,false
+AP010141,28 Feb 26,14,East Malvern Navy,Hawthorn,No. 2,Caley Wilson,Dirk Kramer,Dirk Kramer,3-8,3,8,0,1,Completed,true,false,false
+AP010141,28 Feb 26,14,East Malvern Navy,Hawthorn,No. 3,Levin De Leon,Mitchell Sparks,Mitchell Sparks,6-8,6,8,0,1,Completed,true,false,false
+AP010141,28 Feb 26,14,East Malvern Navy,Hawthorn,No. 4,Mark Patrick,Oliver Rodrigues,Mark Patrick,8-4,8,4,1,0,Completed,true,false,false
+AP010142,28 Feb 26,14,St Louis de Mont,Mentone,No. 1,Ethan Dunlea,Eric Strelnikov,Ethan Dunlea,8-5,8,5,1,0,Completed,true,false,false
+AP010142,28 Feb 26,14,St Louis de Mont,Mentone,No. 2,Nicholas Shipham,Josh Tesler,Josh Tesler,4-8,4,8,0,1,Completed,true,false,false
+AP010142,28 Feb 26,14,St Louis de Mont,Mentone,No. 3,Dylan Joughin,Matt Williams,Dylan Joughin,8-5,8,5,1,0,Completed,true,false,false
+AP010142,28 Feb 26,14,St Louis de Mont,Mentone,No. 4,Patrick Devlin,Jack Forster,Jack Forster,1-8,1,8,0,1,Completed,true,false,false
+AP010143,28 Feb 26,14,Tennis World,BLTC,No. 1,Dario Latina,Manol Atanasov,Manol Atanasov,2-8,2,8,0,1,Completed,true,false,false
+AP010143,28 Feb 26,14,Tennis World,BLTC,No. 2,Alon Faingertz,Jeremy Gomeze,Alon Faingertz,8-4,8,4,1,0,Completed,true,false,false
+AP010143,28 Feb 26,14,Tennis World,BLTC,No. 3,Joel Dalidowicz,Tin Dang,Joel Dalidowicz,8-5,8,5,1,0,Completed,true,true,false
+AP010143,28 Feb 26,14,Tennis World,BLTC,No. 4,Alex Mitsopoulos,Alex Khakham,Alex Khakham,4-8,4,8,0,1,Completed,true,false,false
+AP010144,28 Feb 26,14,Royal Ave,East Malvern Blue,No. 1,Justin Alway,Atticus Dhimann,Justin Alway,8-6,8,6,1,0,Completed,true,false,true
+AP010144,28 Feb 26,14,Royal Ave,East Malvern Blue,No. 2,Jimi Weir,Frantzeskos Triantafyllou,Jimi Weir,8-7,8,7,1,0,Completed,true,false,false
+AP010144,28 Feb 26,14,Royal Ave,East Malvern Blue,No. 3,Anthony Power,Martin Giffard,Anthony Power,8-2,8,2,1,0,Completed,true,false,false
+AP010144,28 Feb 26,14,Royal Ave,East Malvern Blue,No. 4,Jeremy Rouch,James Bryden,James Bryden,3-8,3,8,0,1,Completed,true,true,false
+AP010301,,16,Royal Ave,East Malvern Blue,No. 1,Justin Alway,Alex Dusek,Alex Dusek,7-8,7,8,0,1,Completed,true,false,false
+AP010301,,16,Royal Ave,East Malvern Blue,No. 2,Dean Craig,Frantzeskos Triantafyllou,Frantzeskos Triantafyllou,4-8,4,8,0,1,Completed,true,false,false
+AP010301,,16,Royal Ave,East Malvern Blue,No. 3,Jimi Weir,Patrick King,Jimi Weir,8-3,8,3,1,0,Completed,true,false,false
+AP010301,,16,Royal Ave,East Malvern Blue,No. 4,Anthony Power,James Bryden,Anthony Power,8-2,8,2,1,0,Completed,true,false,false
+AP010302,,16,Tennis World,St Louis de Mont,No. 1,Pratik Shetty,Ethan Dunlea,Ethan Dunlea,5-8,5,8,0,1,Completed,true,false,false
+AP010302,,16,Tennis World,St Louis de Mont,No. 2,Connor Hindle,Michael Lindfield,Connor Hindle,8-3,8,3,1,0,Completed,true,false,false
+AP010302,,16,Tennis World,St Louis de Mont,No. 3,Dario Latina,Tom Vella,Dario Latina,8-5,8,5,1,0,Completed,true,false,false
+AP010302,,16,Tennis World,St Louis de Mont,No. 4,Alex Mitsopoulos,Dylan Joughin,Alex Mitsopoulos,8-2,8,2,1,0,Completed,true,false,false
+AP010321,,17,Royal Ave,Tennis World,No. 1,Justin Alway,Pratik Shetty,Justin Alway,8-0,8,0,1,0,Completed,true,false,false
+AP010321,,17,Royal Ave,Tennis World,No. 2,Jimi Weir,Connor Hindle,Connor Hindle,6-8,6,8,0,1,Completed,true,false,false
+AP010321,,17,Royal Ave,Tennis World,No. 3,Anthony Power,Dario Latina,Anthony Power,8-2,8,2,1,0,Completed,true,false,false
+AP010321,,17,Royal Ave,Tennis World,No. 4,Paul Power,Alon Faingertz,Paul Power,8-4,8,4,1,0,Completed,true,false,false

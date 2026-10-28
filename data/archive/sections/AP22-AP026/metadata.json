@@ -1,0 +1,79 @@
+{
+  "asset_id": "AP22-AP026",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 10/11",
+  "season_id": "AP22",
+  "season_label": "Summer 10/11",
+  "source_section_code": "AP026",
+  "section_label": "Ladies S/D 1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "GPHC",
+      "wins": 0,
+      "points": 90,
+      "percentage": 210.73,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "MCC",
+      "wins": 0,
+      "points": 80,
+      "percentage": 141.01,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Caulfield Rec",
+      "wins": 0,
+      "points": 51,
+      "percentage": 79.25,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Dendy Park",
+      "wins": 0,
+      "points": 40,
+      "percentage": 58.97,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Dromana",
+      "wins": 0,
+      "points": 39,
+      "percentage": 78.61,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP22-AP026",
+  "fixtures": 47,
+  "completed_fixtures": 23,
+  "draw_fixtures": 1,
+  "singles_rubbers": 90,
+  "doubles_rubbers": 46,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

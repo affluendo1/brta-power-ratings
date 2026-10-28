@@ -1,0 +1,103 @@
+{
+  "asset_id": "AP26-AP022",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 12/13",
+  "season_id": "AP26",
+  "season_label": "Summer 12/13",
+  "source_section_code": "AP022",
+  "section_label": "Mens S/D 9",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Royal Ave",
+      "wins": 10,
+      "points": 94,
+      "percentage": 158.66,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "Clarinda",
+      "wins": 8,
+      "points": 84,
+      "percentage": 153.44,
+      "marker": "P"
+    },
+    {
+      "position": 3,
+      "team": "Dendy Park",
+      "wins": 7,
+      "points": 74,
+      "percentage": 116.17,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Beaumaris CC",
+      "wins": 6,
+      "points": 65,
+      "percentage": 116.25,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Lauriston 1",
+      "wins": 5,
+      "points": 51,
+      "percentage": 95.61,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "MCC",
+      "wins": 2,
+      "points": 44,
+      "percentage": 83.02,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Lauriston 2",
+      "wins": 0,
+      "points": 8,
+      "percentage": 25.72,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP26-AP022",
+  "fixtures": 60,
+  "completed_fixtures": 44,
+  "draw_fixtures": 49,
+  "singles_rubbers": 176,
+  "doubles_rubbers": 88,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP022094 singles No. 1: '0-'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP022094 singles No. 2: '0-'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP022094 singles No. 3: '0-'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP022094 doubles No. 1: '7-6 4-3 6-6'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP022094 doubles No. 2: '4-6 7-4'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP022311 doubles No. 2: '7-5 1-5'. Missing score not inferred; excluded from ratings and game totals.",
+    "Fixture game totals do not match rubbers for AP022094: TROLS team total 30-34; complete-score total 28-30. Both published records retained."
+  ]
+}

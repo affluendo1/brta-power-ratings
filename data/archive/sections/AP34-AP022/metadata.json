@@ -1,0 +1,95 @@
+{
+  "asset_id": "AP34-AP022",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 16/17",
+  "season_id": "AP34",
+  "season_label": "Summer 16/17",
+  "source_section_code": "AP022",
+  "section_label": "Mens S/D 9",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "East Malvern 1",
+      "wins": 9,
+      "points": 80,
+      "percentage": 116.03,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Highmoor Uniting",
+      "wins": 8,
+      "points": 76,
+      "percentage": 120.08,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "MCC Glen Iris Roy",
+      "wins": 7,
+      "points": 70,
+      "percentage": 108.03,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Maccabi",
+      "wins": 5,
+      "points": 69,
+      "percentage": 110.54,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "East Malvern 3",
+      "wins": 3,
+      "points": 52,
+      "percentage": 116.17,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "East Malvern 2",
+      "wins": 3,
+      "points": 41,
+      "percentage": 78.02,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Murrumbeena",
+      "wins": 1,
+      "points": 32,
+      "percentage": 62.52,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP34-AP022",
+  "fixtures": 60,
+  "completed_fixtures": 42,
+  "draw_fixtures": 49,
+  "singles_rubbers": 164,
+  "doubles_rubbers": 82,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

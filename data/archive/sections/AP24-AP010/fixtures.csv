@@ -1,0 +1,61 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP010011,08 Oct 11,1,regular,Round 1,Coatesville,Royal South Yarra,8,0,4,0,8,1,49,19,Completed,
+AP010012,08 Oct 11,1,regular,Round 1,Parkdale 1,Parkdale 2,0,8,0,4,0,8,28,49,Completed,
+AP010013,08 Oct 11,1,regular,Round 1,Hawthorn,St Finbar's,8,0,4,0,8,1,53,31,Completed,
+AP010014,08 Oct 11,1,regular,Round 1,Elwood,East Malvern,6,2,2,2,5,5,45,39,Completed,
+AP010021,15 Oct 11,2,regular,Round 2,East Malvern,Coatesville,6,2,2,2,6,4,52,38,Completed,
+AP010022,15 Oct 11,2,regular,Round 2,Royal South Yarra,Parkdale 1,0,8,0,4,0,8,8,48,Completed,
+AP010023,15 Oct 11,2,regular,Round 2,Parkdale 2,Hawthorn,1,7,1,3,3,6,28,47,Completed,
+AP010024,15 Oct 11,2,regular,Round 2,St Finbar's,Elwood,7,1,3,1,7,3,53,44,Completed,
+AP010031,22 Oct 11,3,regular,Round 3,Coatesville,St Finbar's,6,2,2,2,5,5,45,41,Completed,
+AP010032,22 Oct 11,3,regular,Round 3,Parkdale 1,East Malvern,0,8,0,4,0,8,20,48,Completed,
+AP010034,22 Oct 11,3,regular,Round 3,Elwood,Parkdale 2,7.5,0.5,3,0,7,2,52,36,Completed,
+pending-ap010-r3-hawthorn-royal-south-yarra,22 Oct 11,3,regular,Round 3,Hawthorn,Royal South Yarra,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP010041,05 Nov 11,4,regular,Round 4,Parkdale 2,Coatesville,7,1,3,1,7,4,54,45,Completed,
+AP010042,05 Nov 11,4,regular,Round 4,St Finbar's,Parkdale 1,2,6,2,2,4,5,47,48,Completed,
+AP010043,05 Nov 11,4,regular,Round 4,East Malvern,Hawthorn,7,1,3,1,6,4,56,42,Completed,
+AP010044,05 Nov 11,4,regular,Round 4,Royal South Yarra,Elwood,0,8,0,4,0,8,16,48,Completed,
+AP010051,12 Nov 11,5,regular,Round 5,Hawthorn,Elwood,8,0,4,0,8,4,67,56,Completed,
+AP010052,12 Nov 11,5,regular,Round 5,East Malvern,St Finbar's,6,2,2,2,6,4,51,35,Completed,
+AP010053,12 Nov 11,5,regular,Round 5,Parkdale 2,Royal South Yarra,8,0,4,0,8,0,49,15,Completed,
+AP010054,12 Nov 11,5,regular,Round 5,Coatesville,Parkdale 1,2,6,2,2,4,5,33,43,Completed,
+pending-ap010-r6-elwood-coatesville,19 Nov 11,6,regular,Round 6,Elwood,Coatesville,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap010-r6-parkdale-1-hawthorn,19 Nov 11,6,regular,Round 6,Parkdale 1,Hawthorn,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap010-r6-royal-south-yarra-east-malvern,19 Nov 11,6,regular,Round 6,Royal South Yarra,East Malvern,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+pending-ap010-r6-st-finbar-s-parkdale-2,19 Nov 11,6,regular,Round 6,St Finbar's,Parkdale 2,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap010-r7-coatesville-hawthorn,26 Nov 11,7,regular,Round 7,Coatesville,Hawthorn,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap010-r7-east-malvern-parkdale-2,26 Nov 11,7,regular,Round 7,East Malvern,Parkdale 2,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap010-r7-parkdale-1-elwood,26 Nov 11,7,regular,Round 7,Parkdale 1,Elwood,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap010-r7-st-finbar-s-royal-south-yarra,26 Nov 11,7,regular,Round 7,St Finbar's,Royal South Yarra,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP010081,03 Dec 11,8,regular,Round 8,Royal South Yarra,Coatesville,0,8,0,4,0,8,8,48,Completed,
+AP010082,03 Dec 11,8,regular,Round 8,Parkdale 2,Parkdale 1,1,7,1,3,3,6,32,43,Completed,
+AP010083,03 Dec 11,8,regular,Round 8,St Finbar's,Hawthorn,8,0,4,0,8,2,52,37,Completed,
+AP010084,03 Dec 11,8,regular,Round 8,East Malvern,Elwood,1,7,1,3,3,7,35,49,Completed,
+AP010091,10 Dec 11,9,regular,Round 9,Coatesville,East Malvern,1,7,1,3,3,7,41,53,Completed,
+AP010092,10 Dec 11,9,regular,Round 9,Parkdale 1,Royal South Yarra,8,0,4,0,8,0,48,5,Completed,
+AP010093,10 Dec 11,9,regular,Round 9,Hawthorn,Parkdale 2,8,0,4,0,8,1,55,31,Completed,
+AP010094,10 Dec 11,9,regular,Round 9,Elwood,St Finbar's,7,1,3,1,6,4,44,39,Completed,
+AP010101,17 Dec 11,10,regular,Round 10,St Finbar's,Coatesville,6,2,2,2,4,4,34,32,Completed,
+AP010102,17 Dec 11,10,regular,Round 10,East Malvern,Parkdale 1,7,1,3,1,7,2,53,36,Completed,
+AP010103,17 Dec 11,10,regular,Round 10,Royal South Yarra,Hawthorn,0,8,0,4,0,8,5,48,Completed,
+AP010104,17 Dec 11,10,regular,Round 10,Parkdale 2,Elwood,7,1,3,1,7,2,47,34,Completed,
+AP010111,04 Feb 12,11,regular,Round 11,Coatesville,Parkdale 2,2,6,2,2,5,5,49,51,Completed,
+AP010112,04 Feb 12,11,regular,Round 11,Parkdale 1,St Finbar's,6,2,2,2,4,4,32,30,Completed,
+AP010113,04 Feb 12,11,regular,Round 11,Hawthorn,East Malvern,2,6,2,2,4,5,39,44,Completed,
+AP010114,04 Feb 12,11,regular,Round 11,Elwood,Royal South Yarra,8,0,4,0,8,0,48,5,Completed,
+AP010121,11 Feb 12,12,regular,Round 12,Elwood,Hawthorn,1,7,1,3,4,6,36,50,Completed,
+AP010122,11 Feb 12,12,regular,Round 12,St Finbar's,East Malvern,0,8,0,4,1,8,38,56,Completed,
+AP010123,11 Feb 12,12,regular,Round 12,Royal South Yarra,Parkdale 2,0,8,0,4,0,8,14,49,Completed,
+AP010124,11 Feb 12,12,regular,Round 12,Parkdale 1,Coatesville,0,8,0,4,1,8,26,54,Completed,
+AP010131,18 Feb 12,13,regular,Round 13,Hawthorn,Parkdale 1,8,0,4,0,8,2,56,31,Completed,
+AP010132,18 Feb 12,13,regular,Round 13,Coatesville,Elwood,6,2,2,2,5,4,42,44,Completed,
+AP010133,18 Feb 12,13,regular,Round 13,Parkdale 2,St Finbar's,2,6,2,2,5,6,55,56,Completed,
+AP010134,18 Feb 12,13,regular,Round 13,East Malvern,Royal South Yarra,8,0,4,0,8,0,49,9,Completed,
+AP010141,25 Feb 12,14,regular,Round 14,Hawthorn,Coatesville,7.5,0.5,3,0,7,1,45,17,Completed,
+AP010143,25 Feb 12,14,regular,Round 14,Parkdale 2,East Malvern,4,4,0,0,0,0,0,0,Completed,
+pending-ap010-r14-elwood-parkdale-1,25 Feb 12,14,regular,Round 14,Elwood,Parkdale 1,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+pending-ap010-r14-royal-south-yarra-st-finbar-s,25 Feb 12,14,regular,Round 14,Royal South Yarra,St Finbar's,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP010301,,16,semi_final,Semi-final,East Malvern,Hawthorn,0,8,0,4,0,8,22,48,Completed,
+AP010302,,16,semi_final,Semi-final,Elwood,Parkdale 2,7,1,3,1,6,3,46,38,Completed,
+AP010311,,16,semi_final,Semi-final,East Malvern,Elwood,7,1,3,1,6,2,44,28,Completed,
+AP010321,,17,grand_final,Grand final · TROLS entry 2,Hawthorn,East Malvern,6,2,2,2,5,4,45,42,Completed,

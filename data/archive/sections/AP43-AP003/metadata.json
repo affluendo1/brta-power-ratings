@@ -1,0 +1,95 @@
+{
+  "asset_id": "AP43-AP003",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 21/22",
+  "season_id": "AP43",
+  "season_label": "Summer 21/22",
+  "source_section_code": "AP003",
+  "section_label": "Mens S/D 3",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Ormond",
+      "wins": 7,
+      "points": 71,
+      "percentage": 125.12,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "Patterson Lakes",
+      "wins": 5,
+      "points": 64,
+      "percentage": 119.59,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "BLTC White",
+      "wins": 6,
+      "points": 62,
+      "percentage": 112.53,
+      "marker": "P"
+    },
+    {
+      "position": 4,
+      "team": "Maccabi",
+      "wins": 6,
+      "points": 53,
+      "percentage": 89.87,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Highmoor Uniting",
+      "wins": 3,
+      "points": 47,
+      "percentage": 104.61,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Caulfield Rec",
+      "wins": 3,
+      "points": 36,
+      "percentage": 82.97,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "BLTC Blue",
+      "wins": 1,
+      "points": 27,
+      "percentage": 77.45,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP43-AP003",
+  "fixtures": 59,
+  "completed_fixtures": 40,
+  "draw_fixtures": 59,
+  "singles_rubbers": 136,
+  "doubles_rubbers": 68,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

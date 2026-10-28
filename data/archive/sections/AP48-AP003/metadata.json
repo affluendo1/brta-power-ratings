@@ -1,0 +1,97 @@
+{
+  "asset_id": "AP48-AP003",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Winter 2024",
+  "season_id": "AP48",
+  "season_label": "Winter 2024",
+  "source_section_code": "AP003",
+  "section_label": "Mx Rubbers 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Elwood Green",
+      "wins": 9,
+      "points": 70,
+      "percentage": 126.9,
+      "marker": ""
+    },
+    {
+      "position": 2,
+      "team": "Kings Park",
+      "wins": 7,
+      "points": 69,
+      "percentage": 150.87,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Parkdale Blue",
+      "wins": 6,
+      "points": 55,
+      "percentage": 110.02,
+      "marker": "R"
+    },
+    {
+      "position": 4,
+      "team": "BLTC",
+      "wins": 5,
+      "points": 49,
+      "percentage": 103.0,
+      "marker": "P"
+    },
+    {
+      "position": 5,
+      "team": "Elwood Red",
+      "wins": 4,
+      "points": 43,
+      "percentage": 87.47,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Highmoor Uniting",
+      "wins": 1,
+      "points": 26,
+      "percentage": 69.4,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Parkdale White",
+      "wins": 1,
+      "points": 24,
+      "percentage": 73.14,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP48-AP003",
+  "fixtures": 59,
+  "completed_fixtures": 36,
+  "draw_fixtures": 59,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 144,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Fixture game totals do not match rubbers for AP003321: TROLS team total 33-46; complete-score total 33-45. Both published records retained."
+  ]
+}

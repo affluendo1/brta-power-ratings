@@ -1,0 +1,105 @@
+{
+  "asset_id": "AP43-AP007",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 21/22",
+  "season_id": "AP43",
+  "season_label": "Summer 21/22",
+  "source_section_code": "AP007",
+  "section_label": "Mens S/D 7",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Dendy Park Blue",
+      "wins": 9,
+      "points": 90.5,
+      "percentage": 165.62,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Monash University",
+      "wins": 6,
+      "points": 83,
+      "percentage": 170.69,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Tennis World",
+      "wins": 7,
+      "points": 76.5,
+      "percentage": 123.27,
+      "marker": "R"
+    },
+    {
+      "position": 4,
+      "team": "Coatesville",
+      "wins": 6,
+      "points": 66,
+      "percentage": 108.71,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Le Page",
+      "wins": 6,
+      "points": 63,
+      "percentage": 102.27,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Mentone",
+      "wins": 4,
+      "points": 46,
+      "percentage": 67.3,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Highmoor Uniting",
+      "wins": 4,
+      "points": 43,
+      "percentage": 77.66,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "Dendy Park White",
+      "wins": 0,
+      "points": 12,
+      "percentage": 39.27,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP43-AP007",
+  "fixtures": 59,
+  "completed_fixtures": 53,
+  "draw_fixtures": 59,
+  "singles_rubbers": 180,
+  "doubles_rubbers": 90,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP007041 doubles No. 2: '4-6 7-6'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

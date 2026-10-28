@@ -1,0 +1,60 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP017012,07 Oct 23,1,regular,Round 1,Pakenham,Port Melbourne Blue,6,2,2,2,5,5,48,43,Completed,
+AP017013,07 Oct 23,1,regular,Round 1,Black Rock,Clarinda,8,0,4,0,8,0,48,16,Completed,
+AP017014,07 Oct 23,1,regular,Round 1,FCTC,Langwarrin White,1,7,1,3,3,6,27,47,Completed,
+pending-ap017-r1-bye-ormond,07 Oct 23,1,regular,Round 1,Bye,Ormond,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP017022,14 Oct 23,2,regular,Round 2,Ormond,Pakenham,0,8,0,4,0,8,24,50,Completed,
+AP017023,14 Oct 23,2,regular,Round 2,Port Melbourne Blue,Black Rock,6,2,2,2,4,4,31,24,Completed,
+AP017024,14 Oct 23,2,regular,Round 2,Clarinda,FCTC,8,0,4,0,8,0,49,17,Completed,
+pending-ap017-r2-langwarrin-white-bye,14 Oct 23,2,regular,Round 2,Langwarrin White,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP017032,21 Oct 23,3,regular,Round 3,Pakenham,Langwarrin White,7,1,3,1,7,3,57,41,Completed,
+AP017033,21 Oct 23,3,regular,Round 3,Black Rock,Ormond,0,8,0,4,1,8,33,51,Completed,
+AP017034,21 Oct 23,3,regular,Round 3,FCTC,Port Melbourne Blue,7,1,3,1,6,2,42,25,Completed,
+pending-ap017-r3-bye-clarinda,21 Oct 23,3,regular,Round 3,Bye,Clarinda,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP017042,28 Oct 23,4,regular,Round 4,Clarinda,Pakenham,2,6,2,2,4,4,32,37,Completed,
+AP017043,28 Oct 23,4,regular,Round 4,Langwarrin White,Black Rock,2,6,2,2,4,5,31,47,Completed,
+AP017044,28 Oct 23,4,regular,Round 4,Ormond,FCTC,6,2,2,2,4,4,37,33,Completed,
+pending-ap017-r4-port-melbourne-blue-bye,28 Oct 23,4,regular,Round 4,Port Melbourne Blue,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP017051,11 Nov 23,5,regular,Round 5,Black Rock,FCTC,8,0,4,0,8,1,54,19,Completed,
+AP017052,11 Nov 23,5,regular,Round 5,Langwarrin White,Clarinda,1,7,1,3,3,6,37,48,Completed,
+AP017053,11 Nov 23,5,regular,Round 5,Port Melbourne Blue,Ormond,2,6,2,2,4,5,42,49,Completed,
+pending-ap017-r5-bye-pakenham,11 Nov 23,5,regular,Round 5,Bye,Pakenham,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP017061,18 Nov 23,6,regular,Round 6,Pakenham,Black Rock,0,8,0,4,1,8,33,52,Completed,
+AP017063,18 Nov 23,6,regular,Round 6,Clarinda,Port Melbourne Blue,8,0,4,0,8,2,58,44,Completed,
+AP017064,18 Nov 23,6,regular,Round 6,Ormond,Langwarrin White,7,1,3,1,7,3,59,44,Completed,
+pending-ap017-r6-fctc-bye,18 Nov 23,6,regular,Round 6,FCTC,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP017072,25 Nov 23,7,regular,Round 7,Pakenham,FCTC,8,0,4,0,8,0,49,14,Completed,
+AP017073,25 Nov 23,7,regular,Round 7,Langwarrin White,Port Melbourne Blue,5,3,2,0,4,3,38,32,Completed,
+AP017074,25 Nov 23,7,regular,Round 7,Clarinda,Ormond,2,6,2,2,4,5,37,43,Completed,
+pending-ap017-r7-bye-black-rock,25 Nov 23,7,regular,Round 7,Bye,Black Rock,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap017-r8-clarinda-black-rock,02 Dec 23,8,regular,Round 8,Clarinda,Black Rock,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap017-r8-langwarrin-white-fctc,02 Dec 23,8,regular,Round 8,Langwarrin White,FCTC,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap017-r8-ormond-bye,02 Dec 23,8,regular,Round 8,Ormond,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap017-r8-port-melbourne-blue-pakenham,02 Dec 23,8,regular,Round 8,Port Melbourne Blue,Pakenham,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap017-r9-black-rock-port-melbourne-blue,09 Dec 23,9,regular,Round 9,Black Rock,Port Melbourne Blue,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap017-r9-bye-langwarrin-white,09 Dec 23,9,regular,Round 9,Bye,Langwarrin White,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap017-r9-fctc-clarinda,09 Dec 23,9,regular,Round 9,FCTC,Clarinda,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap017-r9-pakenham-ormond,09 Dec 23,9,regular,Round 9,Pakenham,Ormond,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP017102,16 Dec 23,10,regular,Round 10,Langwarrin White,Pakenham,0,8,0,4,1,8,35,55,Completed,
+AP017103,16 Dec 23,10,regular,Round 10,Ormond,Black Rock,1,7,1,3,3,7,44,54,Completed,
+AP017104,16 Dec 23,10,regular,Round 10,Port Melbourne Blue,FCTC,8,0,4,0,8,0,49,26,Completed,
+pending-ap017-r10-clarinda-bye,16 Dec 23,10,regular,Round 10,Clarinda,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP017112,03 Feb 24,11,regular,Round 11,Pakenham,Clarinda,7,1,3,1,6,2,44,26,Completed,
+AP017113,03 Feb 24,11,regular,Round 11,Black Rock,Langwarrin White,2,6,2,2,4,6,42,52,Completed,
+AP017114,03 Feb 24,11,regular,Round 11,FCTC,Ormond,1,7,1,3,2,6,17,40,Completed,
+pending-ap017-r11-bye-port-melbourne-blue,03 Feb 24,11,regular,Round 11,Bye,Port Melbourne Blue,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP017121,10 Feb 24,12,regular,Round 12,FCTC,Black Rock,0,8,0,4,3,8,34,59,Completed,
+AP017122,10 Feb 24,12,regular,Round 12,Clarinda,Langwarrin White,6,2,2,2,5,4,43,36,Completed,
+AP017123,10 Feb 24,12,regular,Round 12,Ormond,Port Melbourne Blue,7,1,3,1,7,3,58,41,Completed,
+pending-ap017-r12-pakenham-bye,10 Feb 24,12,regular,Round 12,Pakenham,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP017131,17 Feb 24,13,regular,Round 13,Black Rock,Pakenham,7,1,3,1,6,3,47,32,Completed,
+AP017133,17 Feb 24,13,regular,Round 13,Port Melbourne Blue,Clarinda,0,8,0,4,0,8,9,48,Completed,
+AP017134,17 Feb 24,13,regular,Round 13,Langwarrin White,Ormond,7,1,3,1,6,2,44,24,Completed,
+pending-ap017-r13-bye-fctc,17 Feb 24,13,regular,Round 13,Bye,FCTC,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP017142,24 Feb 24,14,regular,Round 14,FCTC,Pakenham,1,7,1,3,3,6,41,45,Completed,
+AP017143,24 Feb 24,14,regular,Round 14,Port Melbourne Blue,Langwarrin White,8,0,4,0,8,3,64,50,Completed,
+AP017144,24 Feb 24,14,regular,Round 14,Ormond,Clarinda,2,6,2,2,4,5,45,45,Completed,
+pending-ap017-r14-black-rock-bye,24 Feb 24,14,regular,Round 14,Black Rock,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP017302,,16,semi_final,Semi-final,Black Rock,Clarinda,7,1,3,1,7,2,54,35,Completed,
+pending-ap017-r16-pakenham-ormond,,16,semi_final,Semi-final,Pakenham,Ormond,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+AP017321,,17,grand_final,Grand final · TROLS entry 2,Black Rock,Ormond,8,0,4,0,8,0,49,24,Completed,

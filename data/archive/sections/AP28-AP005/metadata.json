@@ -1,0 +1,81 @@
+{
+  "asset_id": "AP28-AP005",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 13/14",
+  "season_id": "AP28",
+  "season_label": "Summer 13/14",
+  "source_section_code": "AP005",
+  "section_label": "Mixed Rubbers A",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Oakleigh",
+      "wins": 8,
+      "points": 75,
+      "percentage": 177.12,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "BLTC",
+      "wins": 6,
+      "points": 66,
+      "percentage": 133.87,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Hawthorn 2",
+      "wins": 5,
+      "points": 47,
+      "percentage": 87.26,
+      "marker": "R"
+    },
+    {
+      "position": 4,
+      "team": "Hawthorn 1",
+      "wins": 4,
+      "points": 33,
+      "percentage": 85.39,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Kooyong",
+      "wins": 2,
+      "points": 19,
+      "percentage": 57.5,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP28-AP005",
+  "fixtures": 47,
+  "completed_fixtures": 28,
+  "draw_fixtures": 57,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 110,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP005311 doubles No. 4: '5-7 7-5'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

@@ -1,0 +1,60 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP003012,05 Oct 24,1,regular,Round 1,Overport Park,Hawthorn,5.5,4.5,1,0,,,18,13,Completed,
+AP003013,05 Oct 24,1,regular,Round 1,Maccabi,Coatesville,9,1,4,0,,,43,6,Completed,
+pending-ap003-r1-highmoor-uniting-ormond,05 Oct 24,1,regular,Round 1,Highmoor Uniting,Ormond,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap003-r1-mt-martha-bltc,05 Oct 24,1,regular,Round 1,Mt Martha,BLTC,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP003021,12 Oct 24,2,regular,Round 2,Ormond,Mt Martha,0,10,0,8,,,20,56,Completed,
+AP003022,12 Oct 24,2,regular,Round 2,BLTC,Overport Park,3,7,4,5,,,50,48,Completed,
+AP003023,12 Oct 24,2,regular,Round 2,Hawthorn,Maccabi,8,2,5,4,,,45,51,Completed,
+AP003024,12 Oct 24,2,regular,Round 2,Coatesville,Highmoor Uniting,2,8,3,5,,,36,52,Completed,
+AP003031,19 Oct 24,3,regular,Round 3,Mt Martha,Coatesville,7,3,5,5,,,65,53,Completed,
+AP003032,19 Oct 24,3,regular,Round 3,Overport Park,Ormond,9,1,7,1,,,54,23,Completed,
+AP003033,19 Oct 24,3,regular,Round 3,Maccabi,BLTC,7,3,4,4,,,50,33,Completed,
+AP003034,19 Oct 24,3,regular,Round 3,Highmoor Uniting,Hawthorn,9,1,7,2,,,61,41,Completed,
+AP003041,26 Oct 24,4,regular,Round 4,Hawthorn,Mt Martha,0,10,1,8,,,33,62,Completed,
+AP003042,26 Oct 24,4,regular,Round 4,Coatesville,Overport Park,3,7,4,4,,,35,43,Completed,
+AP003043,26 Oct 24,4,regular,Round 4,Ormond,Maccabi,9,1,7,2,,,55,38,Completed,
+AP003044,26 Oct 24,4,regular,Round 4,BLTC,Highmoor Uniting,9,1,7,3,,,56,40,Completed,
+AP003051,09 Nov 24,5,regular,Round 5,Maccabi,Highmoor Uniting,2,8,3,6,,,44,51,Completed,
+AP003052,09 Nov 24,5,regular,Round 5,Ormond,Coatesville,8,2,6,3,,,50,46,Completed,
+AP003053,09 Nov 24,5,regular,Round 5,Hawthorn,BLTC,1,9,2,7,,,46,56,Completed,
+AP003054,09 Nov 24,5,regular,Round 5,Mt Martha,Overport Park,9,1,7,2,,,58,45,Completed,
+AP003061,16 Nov 24,6,regular,Round 6,Overport Park,Maccabi,8,2,5,3,,,45,27,Completed,
+AP003062,16 Nov 24,6,regular,Round 6,Highmoor Uniting,Mt Martha,2,8,3,5,,,33,41,Completed,
+AP003063,16 Nov 24,6,regular,Round 6,Coatesville,Hawthorn,2,8,3,5,,,43,44,Completed,
+AP003064,16 Nov 24,6,regular,Round 6,BLTC,Ormond,7,3,4,4,,,49,39,Completed,
+AP003071,23 Nov 24,7,regular,Round 7,Mt Martha,Maccabi,8,2,6,3,,,55,47,Completed,
+AP003072,23 Nov 24,7,regular,Round 7,Overport Park,Highmoor Uniting,5,5,0,0,,,0,0,Completed,
+AP003073,23 Nov 24,7,regular,Round 7,Ormond,Hawthorn,8,2,5,3,,,45,37,Completed,
+pending-ap003-r7-coatesville-bltc,23 Nov 24,7,regular,Round 7,Coatesville,BLTC,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap003-r8-bltc-mt-martha,30 Nov 24,8,regular,Round 8,BLTC,Mt Martha,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap003-r8-coatesville-maccabi,30 Nov 24,8,regular,Round 8,Coatesville,Maccabi,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap003-r8-hawthorn-overport-park,30 Nov 24,8,regular,Round 8,Hawthorn,Overport Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap003-r8-ormond-highmoor-uniting,30 Nov 24,8,regular,Round 8,Ormond,Highmoor Uniting,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP003091,07 Dec 24,9,regular,Round 9,Mt Martha,Ormond,9,1,7,1,,,53,39,Completed,
+AP003092,07 Dec 24,9,regular,Round 9,Overport Park,BLTC,2,8,3,6,,,38,54,Completed,
+AP003093,07 Dec 24,9,regular,Round 9,Maccabi,Hawthorn,2,8,3,5,,,42,42,Completed,
+AP003094,07 Dec 24,9,regular,Round 9,Highmoor Uniting,Coatesville,9,1,7,1,,,54,25,Completed,
+AP003101,14 Dec 24,10,regular,Round 10,Coatesville,Mt Martha,0,10,1,8,,,34,59,Completed,
+AP003102,14 Dec 24,10,regular,Round 10,Ormond,Overport Park,8,2,6,3,,,50,50,Completed,
+AP003103,14 Dec 24,10,regular,Round 10,BLTC,Maccabi,2,8,4,5,,,56,57,Completed,
+AP003104,14 Dec 24,10,regular,Round 10,Hawthorn,Highmoor Uniting,2,8,2,6,,,33,50,Completed,
+AP003113,01 Feb 25,11,regular,Round 11,Maccabi,Ormond,3,7,3,5,,,33,43,Completed,
+AP003114,01 Feb 25,11,regular,Round 11,Highmoor Uniting,BLTC,8,2,6,3,,,53,37,Completed,
+pending-ap003-r11-mt-martha-hawthorn,01 Feb 25,11,regular,Round 11,Mt Martha,Hawthorn,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+pending-ap003-r11-overport-park-coatesville,01 Feb 25,11,regular,Round 11,Overport Park,Coatesville,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP003121,08 Feb 25,12,regular,Round 12,Highmoor Uniting,Maccabi,9,1,7,2,,,54,27,Completed,
+AP003122,08 Feb 25,12,regular,Round 12,Coatesville,Ormond,2,8,2,6,,,30,52,Completed,
+AP003123,08 Feb 25,12,regular,Round 12,BLTC,Hawthorn,8,2,6,4,,,49,52,Completed,
+AP003124,08 Feb 25,12,regular,Round 12,Overport Park,Mt Martha,10,0,8,0,,,56,30,Completed,
+AP003133,15 Feb 25,13,regular,Round 13,Hawthorn,Coatesville,8,2,5,3,,,43,34,Completed,
+AP003134,15 Feb 25,13,regular,Round 13,Ormond,BLTC,5.5,4.5,1,0,,,11,6,Completed,
+pending-ap003-r13-maccabi-overport-park,15 Feb 25,13,regular,Round 13,Maccabi,Overport Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap003-r13-mt-martha-highmoor-uniting,15 Feb 25,13,regular,Round 13,Mt Martha,Highmoor Uniting,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP003141,22 Feb 25,14,regular,Round 14,Maccabi,Mt Martha,9,1,7,2,,,60,31,Completed,
+AP003143,22 Feb 25,14,regular,Round 14,Hawthorn,Ormond,8.5,1.5,5,3,,,50,47,Completed,
+pending-ap003-r14-bltc-coatesville,22 Feb 25,14,regular,Round 14,BLTC,Coatesville,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+pending-ap003-r14-highmoor-uniting-overport-park,22 Feb 25,14,regular,Round 14,Highmoor Uniting,Overport Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP003301,,16,semi_final,Semi-final,Mt Martha,BLTC,7,3,5,3,,,45,40,Completed,
+AP003302,,16,semi_final,Semi-final,Highmoor Uniting,Overport Park,2,8,3,5,,,43,42,Completed,
+AP003321,,17,grand_final,Grand final · TROLS entry 2,Mt Martha,Overport Park,8.5,1.5,6,3,,,53,47,Completed,

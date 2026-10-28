@@ -1,0 +1,60 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP006011,01 Oct 22,1,regular,Round 1,Stella Maris Blue,Royal South Yarra,0,10,0,8,,,22,56,Completed,
+AP006013,01 Oct 22,1,regular,Round 1,Kings Park,Parkdale,3,7,4,5,,,43,52,Completed,
+AP006014,01 Oct 22,1,regular,Round 1,St Anthony's,Liston,1,9,2,7,,,40,57,Completed,
+pending-ap006-r1-bltc-white-bye,01 Oct 22,1,regular,Round 1,BLTC White,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP006021,08 Oct 22,2,regular,Round 2,Liston,Stella Maris Blue,10,0,8,2,,,67,45,Completed,
+AP006022,08 Oct 22,2,regular,Round 2,Royal South Yarra,BLTC White,10,0,8,2,,,65,33,Completed,
+AP006024,08 Oct 22,2,regular,Round 2,Parkdale,St Anthony's,5,5,1,2,,,15,20,Completed,
+pending-ap006-r2-bye-kings-park,08 Oct 22,2,regular,Round 2,Bye,Kings Park,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP006031,15 Oct 22,3,regular,Round 3,Stella Maris Blue,Parkdale,3,7,4,5,,,47,53,Completed,
+AP006032,15 Oct 22,3,regular,Round 3,BLTC White,Liston,0,10,0,8,,,19,56,Completed,
+AP006033,15 Oct 22,3,regular,Round 3,Kings Park,Royal South Yarra,1,9,2,6,,,36,51,Completed,
+pending-ap006-r3-st-anthony-s-bye,15 Oct 22,3,regular,Round 3,St Anthony's,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP006042,22 Oct 22,4,regular,Round 4,Parkdale,BLTC White,10,0,8,0,,,57,23,Completed,
+AP006043,22 Oct 22,4,regular,Round 4,Liston,Kings Park,8,2,6,3,,,49,45,Completed,
+pending-ap006-r4-bye-stella-maris-blue,22 Oct 22,4,regular,Round 4,Bye,Stella Maris Blue,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap006-r4-royal-south-yarra-st-anthony-s,22 Oct 22,4,regular,Round 4,Royal South Yarra,St Anthony's,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP006051,05 Nov 22,5,regular,Round 5,Kings Park,St Anthony's,8,2,6,2,,,48,33,Completed,
+AP006052,05 Nov 22,5,regular,Round 5,Liston,Parkdale,10,0,8,0,,,56,17,Completed,
+AP006054,05 Nov 22,5,regular,Round 5,Stella Maris Blue,BLTC White,8,2,6,3,,,57,44,Completed,
+pending-ap006-r5-bye-royal-south-yarra,05 Nov 22,5,regular,Round 5,Bye,Royal South Yarra,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP006061,12 Nov 22,6,regular,Round 6,BLTC White,Kings Park,9,1,7,1,,,52,28,Completed,
+AP006062,12 Nov 22,6,regular,Round 6,St Anthony's,Stella Maris Blue,3,7,4,5,,,47,51,Completed,
+AP006064,12 Nov 22,6,regular,Round 6,Royal South Yarra,Liston,9,1,7,1,,,55,19,Completed,
+pending-ap006-r6-parkdale-bye,12 Nov 22,6,regular,Round 6,Parkdale,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap006-r7-bltc-white-st-anthony-s,19 Nov 22,7,regular,Round 7,BLTC White,St Anthony's,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap006-r7-liston-bye,19 Nov 22,7,regular,Round 7,Liston,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap006-r7-parkdale-royal-south-yarra,19 Nov 22,7,regular,Round 7,Parkdale,Royal South Yarra,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap006-r7-stella-maris-blue-kings-park,19 Nov 22,7,regular,Round 7,Stella Maris Blue,Kings Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP006081,26 Nov 22,8,regular,Round 8,Royal South Yarra,Stella Maris Blue,3,7,4,4,,,39,45,Completed,
+AP006083,26 Nov 22,8,regular,Round 8,Parkdale,Kings Park,3,7,4,5,,,49,55,Completed,
+AP006084,26 Nov 22,8,regular,Round 8,Liston,St Anthony's,10,0,8,0,,,57,30,Completed,
+pending-ap006-r8-bye-bltc-white,26 Nov 22,8,regular,Round 8,Bye,BLTC White,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP006091,03 Dec 22,9,regular,Round 9,Stella Maris Blue,Liston,0,10,1,8,,,29,59,Completed,
+AP006092,03 Dec 22,9,regular,Round 9,BLTC White,Royal South Yarra,1,9,1,7,,,29,55,Completed,
+pending-ap006-r9-kings-park-bye,03 Dec 22,9,regular,Round 9,Kings Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap006-r9-st-anthony-s-parkdale,03 Dec 22,9,regular,Round 9,St Anthony's,Parkdale,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+AP006101,10 Dec 22,10,regular,Round 10,Parkdale,Stella Maris Blue,2,8,4,6,,,52,59,Completed,
+AP006102,10 Dec 22,10,regular,Round 10,Liston,BLTC White,10,0,8,0,,,56,14,Completed,
+AP006103,10 Dec 22,10,regular,Round 10,Royal South Yarra,Kings Park,10,0,8,1,,,64,32,Completed,
+pending-ap006-r10-bye-st-anthony-s,10 Dec 22,10,regular,Round 10,Bye,St Anthony's,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP006112,04 Feb 23,11,regular,Round 11,BLTC White,Parkdale,1,9,1,7,,,28,52,Completed,
+AP006113,04 Feb 23,11,regular,Round 11,Kings Park,Liston,1,9,1,7,,,32,50,Completed,
+AP006114,04 Feb 23,11,regular,Round 11,St Anthony's,Royal South Yarra,0,10,0,8,,,12,57,Completed,
+pending-ap006-r11-stella-maris-blue-bye,04 Feb 23,11,regular,Round 11,Stella Maris Blue,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP006121,11 Feb 23,12,regular,Round 12,St Anthony's,Kings Park,7,3,5,3,,,46,41,Completed,
+AP006122,11 Feb 23,12,regular,Round 12,Parkdale,Liston,8,2,6,3,,,53,42,Completed,
+AP006124,11 Feb 23,12,regular,Round 12,BLTC White,Stella Maris Blue,8,2,6,3,,,54,48,Completed,
+pending-ap006-r12-royal-south-yarra-bye,11 Feb 23,12,regular,Round 12,Royal South Yarra,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP006131,18 Feb 23,13,regular,Round 13,Kings Park,BLTC White,2,8,3,6,,,41,56,Completed,
+AP006132,18 Feb 23,13,regular,Round 13,Stella Maris Blue,St Anthony's,1,9,1,7,,,32,51,Completed,
+AP006134,18 Feb 23,13,regular,Round 13,Liston,Royal South Yarra,8,2,6,3,,,58,28,Completed,
+pending-ap006-r13-bye-parkdale,18 Feb 23,13,regular,Round 13,Bye,Parkdale,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP006141,25 Feb 23,14,regular,Round 14,Kings Park,Stella Maris Blue,9,1,7,2,,,56,43,Completed,
+AP006142,25 Feb 23,14,regular,Round 14,St Anthony's,BLTC White,10,0,8,0,,,56,26,Completed,
+AP006144,25 Feb 23,14,regular,Round 14,Royal South Yarra,Parkdale,7,3,5,4,,,54,45,Completed,
+pending-ap006-r14-bye-liston,25 Feb 23,14,regular,Round 14,Bye,Liston,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP006301,,16,semi_final,Semi-final,Liston,St Anthony's,9,1,7,2,,,55,38,Completed,
+AP006302,,16,semi_final,Semi-final,Royal South Yarra,Parkdale,9,1,7,1,,,55,31,Completed,
+AP006321,,17,grand_final,Grand final · TROLS entry 2,Liston,Royal South Yarra,0.5,9.5,0,7,,,23,54,Completed,

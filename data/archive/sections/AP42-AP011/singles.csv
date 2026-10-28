@@ -1,0 +1,97 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP011011,01 May 21,1,Maccabi,Glen Huntly,No. 1,Mor Dahan,John Van Der Meulen,Mor Dahan,8-4,8,4,1,0,Completed,true,false,false
+AP011011,01 May 21,1,Maccabi,Glen Huntly,No. 2,Lauren Yarrow,Grant Fikaris,Lauren Yarrow,8-7,8,7,1,0,Completed,true,false,false
+AP011011,01 May 21,1,Maccabi,Glen Huntly,No. 3,Daniel Vertes,Anirudh Devanathan,Daniel Vertes,8-6,8,6,1,0,Completed,true,false,false
+AP011011,01 May 21,1,Maccabi,Glen Huntly,No. 4,Mark Lazarovits,Gaurav Jain,Mark Lazarovits,8-7,8,7,1,0,Completed,true,false,false
+AP011012,01 May 21,1,East Malvern,Chelsea Heights,No. 1,Juan Nolan,Jack O'Brien,Jack O'Brien,7-8,7,8,0,1,Completed,true,false,false
+AP011012,01 May 21,1,East Malvern,Chelsea Heights,No. 2,James Bryden,William Harris,William Harris,3-8,3,8,0,1,Completed,true,false,false
+AP011012,01 May 21,1,East Malvern,Chelsea Heights,No. 3,Alex Duesk,Matthew Harris,Matthew Harris,3-8,3,8,0,1,Completed,true,true,false
+AP011012,01 May 21,1,East Malvern,Chelsea Heights,No. 4,David Bryden,Nicholas Harris,Nicholas Harris,6-8,6,8,0,1,Completed,true,false,false
+AP011014,01 May 21,1,Royal Ave 1,Royal Ave 2,No. 1,Stefan Harrer,Elliott Tay,Stefan Harrer,8-2,8,2,1,0,Completed,true,false,true
+AP011014,01 May 21,1,Royal Ave 1,Royal Ave 2,No. 2,Milan Bandur,Nina Forkas,Nina Forkas,1-8,1,8,0,1,Completed,true,false,false
+AP011014,01 May 21,1,Royal Ave 1,Royal Ave 2,No. 3,David Urpani,Harrison Moller,David Urpani,8-2,8,2,1,0,Completed,true,false,true
+AP011014,01 May 21,1,Royal Ave 1,Royal Ave 2,No. 4,Fraser McMillan,Bev Always,Fraser McMillan,8-0,8,0,1,0,Completed,true,false,false
+AP011021,08 May 21,2,Royal Ave 2,Maccabi,No. 1,Justin Alway,Lauren Yarrow,Justin Alway,8-0,8,0,1,0,Completed,true,false,false
+AP011021,08 May 21,2,Royal Ave 2,Maccabi,No. 2,John Richardson,Daniel Vertes,Daniel Vertes,4-8,4,8,0,1,Completed,true,true,false
+AP011021,08 May 21,2,Royal Ave 2,Maccabi,No. 3,Anna Rolland,Nathan Rapoport,Nathan Rapoport,1-8,1,8,0,1,Completed,true,false,false
+AP011021,08 May 21,2,Royal Ave 2,Maccabi,No. 4,Anika Moller,Paul Kovacs,Paul Kovacs,1-8,1,8,0,1,Completed,true,true,false
+AP011022,08 May 21,2,Glen Huntly,East Malvern,No. 1,John Van Der Meulen,Faran Mazloomi,John Van Der Meulen,8-3,8,3,1,0,Completed,true,false,false
+AP011022,08 May 21,2,Glen Huntly,East Malvern,No. 2,Grant Fikaris,James Bryden,Grant Fikaris,8-2,8,2,1,0,Completed,true,false,false
+AP011022,08 May 21,2,Glen Huntly,East Malvern,No. 3,William Gort,Alex Duesk,William Gort,8-3,8,3,1,0,Completed,true,false,true
+AP011022,08 May 21,2,Glen Huntly,East Malvern,No. 4,Gaurav Jain,Marina Woods,Gaurav Jain,8-1,8,1,1,0,Completed,true,false,true
+AP011023,08 May 21,2,Chelsea Heights,Patterson Lakes,No. 1,Jack O'Brien,Brendan Sison,Brendan Sison,4-8,4,8,0,1,Completed,true,false,false
+AP011023,08 May 21,2,Chelsea Heights,Patterson Lakes,No. 2,William Harris,Zoe Gorozidis,William Harris,8-3,8,3,1,0,Completed,true,false,false
+AP011023,08 May 21,2,Chelsea Heights,Patterson Lakes,No. 3,Matthew Harris,Paris Gorozidis,Matthew Harris,8-4,8,4,1,0,Completed,true,false,false
+AP011023,08 May 21,2,Chelsea Heights,Patterson Lakes,No. 4,Nicholas Harris,Sophia Kefos,Nicholas Harris,8-5,8,5,1,0,Completed,true,false,true
+AP011032,15 May 21,3,East Malvern,Royal Ave 2,No. 1,Rajat Dang,Justin Alway,Justin Alway,1-8,1,8,0,1,Completed,true,false,false
+AP011032,15 May 21,3,East Malvern,Royal Ave 2,No. 2,Faran Mazloomi,Chris Bowman,Chris Bowman,2-8,2,8,0,1,Completed,true,false,true
+AP011032,15 May 21,3,East Malvern,Royal Ave 2,No. 3,Juan Nolan,John Richardson,Juan Nolan,8-4,8,4,1,0,Completed,true,false,true
+AP011032,15 May 21,3,East Malvern,Royal Ave 2,No. 4,Alex Dursk,Oliver Shepard,Oliver Shepard,4-8,4,8,0,1,Completed,true,true,true
+AP011033,15 May 21,3,Patterson Lakes,Glen Huntly,No. 1,Callum Thompson,John Van Der Meulen,Callum Thompson,8-3,8,3,1,0,Completed,true,false,false
+AP011033,15 May 21,3,Patterson Lakes,Glen Huntly,No. 2,Brendan Sison,Anirudh Devanathan,Brendan Sison,8-0,8,0,1,0,Completed,true,false,false
+AP011033,15 May 21,3,Patterson Lakes,Glen Huntly,No. 3,Zoe Gorozidis,William Gort,Zoe Gorozidis,8-2,8,2,1,0,Completed,true,false,false
+AP011033,15 May 21,3,Patterson Lakes,Glen Huntly,No. 4,Paris Gorozidis,Gaurav Jain,Paris Gorozidis,8-4,8,4,1,0,Completed,true,false,false
+AP011034,15 May 21,3,Royal Ave 1,Chelsea Heights,No. 1,James Cornish,Jack O'Brien,James Cornish,8-6,8,6,1,0,Completed,true,false,false
+AP011034,15 May 21,3,Royal Ave 1,Chelsea Heights,No. 2,Stefan Harrer,William Harris,William Harris,7-8,7,8,0,1,Completed,true,false,false
+AP011034,15 May 21,3,Royal Ave 1,Chelsea Heights,No. 3,David Urpani,Matthew Harris,Matthew Harris,1-8,1,8,0,1,Completed,true,false,false
+AP011034,15 May 21,3,Royal Ave 1,Chelsea Heights,No. 4,Shaun Campbell,Nicholas Harris,Shaun Campbell,8-1,8,1,1,0,Completed,true,false,false
+AP011041,22 May 21,4,Chelsea Heights,Maccabi,No. 1,Jack O'Brien,Mor Dahan,Mor Dahan,2-8,2,8,0,1,Completed,true,false,false
+AP011041,22 May 21,4,Chelsea Heights,Maccabi,No. 2,William Harris,Lauren Yarrow,William Harris,8-5,8,5,1,0,Completed,true,false,false
+AP011041,22 May 21,4,Chelsea Heights,Maccabi,No. 3,Matthew Harris,Mark Lazarovits,Matthew Harris,8-3,8,3,1,0,Completed,true,false,false
+AP011041,22 May 21,4,Chelsea Heights,Maccabi,No. 4,Nicholas Harris,Paul Kovacs,Paul Kovacs,3-8,3,8,0,1,Completed,true,false,false
+AP011043,22 May 21,4,Royal Ave 2,Patterson Lakes,No. 1,Justin Alway,Brendan Sison,Brendan Sison,1-8,1,8,0,1,Completed,true,false,false
+AP011043,22 May 21,4,Royal Ave 2,Patterson Lakes,No. 2,Nina Forkas,Callum Thompson,Callum Thompson,1-8,1,8,0,1,Completed,true,false,false
+AP011043,22 May 21,4,Royal Ave 2,Patterson Lakes,No. 3,Anna Rolland,Victoria Hatzikiriazis,Victoria Hatzikiriazis,1-8,1,8,0,1,Completed,true,false,true
+AP011043,22 May 21,4,Royal Ave 2,Patterson Lakes,No. 4,Anika Moller,Sophia Kefos,Sophia Kefos,0-8,0,8,0,1,Completed,true,true,true
+AP011044,22 May 21,4,Glen Huntly,Royal Ave 1,No. 1,Grant Fikaris,James Cornish,James Cornish,1-8,1,8,0,1,Completed,true,false,false
+AP011044,22 May 21,4,Glen Huntly,Royal Ave 1,No. 2,Anirudh Devanathan,Milan Bandur,Anirudh Devanathan,8-3,8,3,1,0,Completed,true,false,false
+AP011044,22 May 21,4,Glen Huntly,Royal Ave 1,No. 3,William Gort,Fraser McMillan,William Gort,8-2,8,2,1,0,Completed,true,false,false
+AP011044,22 May 21,4,Glen Huntly,Royal Ave 1,No. 4,Gaurav Jain,Shaun Campbell,Shaun Campbell,7-8,7,8,0,1,Completed,true,false,false
+AP011071,19 Jun 21,7,Maccabi,Patterson Lakes,No. 1,Mor Dahan,Brendan Sison,Brendan Sison,1-8,1,8,0,1,Completed,true,false,false
+AP011071,19 Jun 21,7,Maccabi,Patterson Lakes,No. 2,Daniel Vertes,Callum Thompson,Callum Thompson,2-8,2,8,0,1,Completed,true,false,false
+AP011071,19 Jun 21,7,Maccabi,Patterson Lakes,No. 3,Nathan Rapoport,Zoe Gorozidis,Nathan Rapoport,8-6,8,6,1,0,Completed,true,false,false
+AP011071,19 Jun 21,7,Maccabi,Patterson Lakes,No. 4,Mark Lazarovits,Victoria Hatzikiriazis,Victoria Hatzikiriazis,5-8,5,8,0,1,Completed,true,false,true
+AP011072,19 Jun 21,7,East Malvern,Royal Ave 1,No. 1,Rajat Dang,Stefan Harrer,Stefan Harrer,5-8,5,8,0,1,Completed,true,false,false
+AP011072,19 Jun 21,7,East Malvern,Royal Ave 1,No. 2,Faran Mazloomi,Milan Bandur,Milan Bandur,3-8,3,8,0,1,Completed,true,false,false
+AP011072,19 Jun 21,7,East Malvern,Royal Ave 1,No. 3,Chris Woods,David Urpani,Chris Woods,8-4,8,4,1,0,Completed,true,true,false
+AP011072,19 Jun 21,7,East Malvern,Royal Ave 1,No. 4,James Bryden,Shaun Campbell,Shaun Campbell,1-8,1,8,0,1,Completed,true,false,false
+AP011073,19 Jun 21,7,Royal Ave 2,Chelsea Heights,No. 1,Justin Alway,Jack O'Brien,Justin Alway,8-6,8,6,1,0,Completed,true,false,false
+AP011073,19 Jun 21,7,Royal Ave 2,Chelsea Heights,No. 2,Nina Forkas,William Harris,William Harris,7-8,7,8,0,1,Completed,true,false,false
+AP011073,19 Jun 21,7,Royal Ave 2,Chelsea Heights,No. 3,Anna Rolland,Matthew Harris,Matthew Harris,1-8,1,8,0,1,Completed,true,false,false
+AP011073,19 Jun 21,7,Royal Ave 2,Chelsea Heights,No. 4,Tim Asome,Nicholas Harris,Nicholas Harris,0-8,0,8,0,1,Completed,true,true,false
+AP011081,26 Jun 21,8,Glen Huntly,Maccabi,No. 1,John Van Der Meulen,Mor Dahan,Mor Dahan,4-8,4,8,0,1,Completed,true,false,false
+AP011081,26 Jun 21,8,Glen Huntly,Maccabi,No. 2,Anirudh Devanathan,Daniel Vertes,Daniel Vertes,5-8,5,8,0,1,Completed,true,false,false
+AP011081,26 Jun 21,8,Glen Huntly,Maccabi,No. 3,William Gort,Nathan Rapoport,William Gort,8-2,8,2,1,0,Completed,true,false,false
+AP011081,26 Jun 21,8,Glen Huntly,Maccabi,No. 4,Gaurav Jain,Paul Kovacs,Paul Kovacs,1-8,1,8,0,1,Completed,true,false,false
+AP011082,26 Jun 21,8,Chelsea Heights,East Malvern,No. 1,Jack O'Brien,Rajat Dang,Jack O'Brien,8-2,8,2,1,0,Completed,true,false,false
+AP011082,26 Jun 21,8,Chelsea Heights,East Malvern,No. 2,William Harris,Juan Nolan,William Harris,8-7,8,7,1,0,Completed,true,false,false
+AP011082,26 Jun 21,8,Chelsea Heights,East Malvern,No. 3,Matthew Harris,Chris Woods,Chris Woods,2-8,2,8,0,1,Completed,true,false,true
+AP011082,26 Jun 21,8,Chelsea Heights,East Malvern,No. 4,Nicholas Harris,James Bryden,Nicholas Harris,8-5,8,5,1,0,Completed,true,false,false
+AP011084,26 Jun 21,8,Royal Ave 2,Royal Ave 1,No. 1,Justin Alway,James Cornish,James Cornish,1-8,1,8,0,1,Completed,true,false,false
+AP011084,26 Jun 21,8,Royal Ave 2,Royal Ave 1,No. 2,Elliott Tay,Stefan Harrer,Stefan Harrer,3-8,3,8,0,1,Completed,true,true,false
+AP011084,26 Jun 21,8,Royal Ave 2,Royal Ave 1,No. 3,Anna Rolland,David Urpani,David Urpani,1-8,1,8,0,1,Completed,true,false,false
+AP011084,26 Jun 21,8,Royal Ave 2,Royal Ave 1,No. 4,Bryn Sherwood,Shaun Campbell,Shaun Campbell,3-8,3,8,0,1,Completed,true,true,false
+AP011091,10 Jul 21,9,Maccabi,Royal Ave 2,No. 1,Ben Pollak,Declan Hughes,Ben Pollak,8-7,8,7,1,0,Completed,true,true,true
+AP011091,10 Jul 21,9,Maccabi,Royal Ave 2,No. 2,Daniel Vertes,Tom Hughes,Daniel Vertes,8-7,8,7,1,0,Completed,true,false,true
+AP011091,10 Jul 21,9,Maccabi,Royal Ave 2,No. 3,Nathan Rapoport,Nina Forkas,Nathan Rapoport,8-0,8,0,1,0,Completed,true,false,false
+AP011091,10 Jul 21,9,Maccabi,Royal Ave 2,No. 4,Mark Lazarovits,Anna Rolland,Mark Lazarovits,8-0,8,0,1,0,Completed,true,false,false
+AP011092,10 Jul 21,9,East Malvern,Glen Huntly,No. 1,Rajat Dang,John Van Der Meulen,Rajat Dang,8-6,8,6,1,0,Completed,true,false,false
+AP011092,10 Jul 21,9,East Malvern,Glen Huntly,No. 2,Juan Nolan,Anirudh Devanathan,Anirudh Devanathan,5-8,5,8,0,1,Completed,true,false,false
+AP011092,10 Jul 21,9,East Malvern,Glen Huntly,No. 3,James Bryden,William Gort,William Gort,0-8,0,8,0,1,Completed,true,false,false
+AP011092,10 Jul 21,9,East Malvern,Glen Huntly,No. 4,Alex Duesk,Gaurav Jain,Gaurav Jain,4-8,4,8,0,1,Completed,true,true,false
+AP011093,10 Jul 21,9,Patterson Lakes,Chelsea Heights,No. 1,Brendan Sison,Jack O'Brien,Brendan Sison,8-5,8,5,1,0,Completed,true,false,false
+AP011093,10 Jul 21,9,Patterson Lakes,Chelsea Heights,No. 2,Zoe Gorozidis,William Harris,Zoe Gorozidis,8-5,8,5,1,0,Completed,true,false,false
+AP011093,10 Jul 21,9,Patterson Lakes,Chelsea Heights,No. 3,Paris Gorozidis,Matthew Harris,Matthew Harris,5-8,5,8,0,1,Completed,true,false,false
+AP011093,10 Jul 21,9,Patterson Lakes,Chelsea Heights,No. 4,Victoria Hatzikiriazis,Nicholas Harris,Victoria Hatzikiriazis,8-5,8,5,1,0,Completed,true,true,false
+AP011121,31 Jul 21,12,Royal Ave 1,Patterson Lakes,No. 1,James Cornish,Brendan Sison,Brendan Sison,7-8,7,8,0,1,Completed,true,false,false
+AP011121,31 Jul 21,12,Royal Ave 1,Patterson Lakes,No. 2,Stefan Harrer,Callum Thompson,Callum Thompson,2-8,2,8,0,1,Completed,true,false,false
+AP011121,31 Jul 21,12,Royal Ave 1,Patterson Lakes,No. 3,Milan Bandur,Zoe Gorozidis,Zoe Gorozidis,5-8,5,8,0,1,Completed,true,false,false
+AP011121,31 Jul 21,12,Royal Ave 1,Patterson Lakes,No. 4,David Urpani,Paris Gorozidis,David Urpani,8-1,8,1,1,0,Completed,true,false,false
+AP011123,31 Jul 21,12,Glen Huntly,Chelsea Heights,No. 1,John Van Der Meulen,Jack O'Brien,Jack O'Brien,7-8,7,8,0,1,Completed,true,false,false
+AP011123,31 Jul 21,12,Glen Huntly,Chelsea Heights,No. 2,Anirudh Devanathan,William Harris,Anirudh Devanathan,8-5,8,5,1,0,Completed,true,false,false
+AP011123,31 Jul 21,12,Glen Huntly,Chelsea Heights,No. 3,William Gort,Matthew Harris,Matthew Harris,5-8,5,8,0,1,Completed,true,false,false
+AP011123,31 Jul 21,12,Glen Huntly,Chelsea Heights,No. 4,Gaurav Jain,Nicholas Harris,Gaurav Jain,8-2,8,2,1,0,Completed,true,false,false
+AP011124,31 Jul 21,12,East Malvern,Maccabi,No. 1,Rajat Dang,Lauren Yarrow,,6-6,6,6,0,0,Unfinished,false,false,false
+AP011124,31 Jul 21,12,East Malvern,Maccabi,No. 2,Faran Mazloomi,Daniel Vertes,Daniel Vertes,2-8,2,8,0,1,Completed,true,false,false
+AP011124,31 Jul 21,12,East Malvern,Maccabi,No. 3,James Bryden,Nathan Rapoport,Nathan Rapoport,1-8,1,8,0,1,Completed,true,false,false
+AP011124,31 Jul 21,12,East Malvern,Maccabi,No. 4,Robert Wyld,Paul Kovacs,Robert Wyld,8-0,8,0,1,0,Completed,true,true,false

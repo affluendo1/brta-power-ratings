@@ -1,0 +1,106 @@
+{
+  "asset_id": "AP43-AP019",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 21/22",
+  "season_id": "AP43",
+  "season_label": "Summer 21/22",
+  "source_section_code": "AP019",
+  "section_label": "Ladies Rubs 1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Legend Park",
+      "wins": 7,
+      "points": 72,
+      "percentage": 186.53,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "MCC Glen Iris",
+      "wins": 8,
+      "points": 63,
+      "percentage": 108.5,
+      "marker": "P"
+    },
+    {
+      "position": 3,
+      "team": "Fitzroy",
+      "wins": 6,
+      "points": 62,
+      "percentage": 144.37,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Chadstone",
+      "wins": 6,
+      "points": 57,
+      "percentage": 116.45,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Port Melbourne",
+      "wins": 3,
+      "points": 46.5,
+      "percentage": 101.52,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Coatesville",
+      "wins": 2,
+      "points": 37,
+      "percentage": 90.52,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Overport Park",
+      "wins": 4,
+      "points": 33,
+      "percentage": 74.13,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "Ormond",
+      "wins": 0,
+      "points": 13.5,
+      "percentage": 42.62,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP43-AP019",
+  "fixtures": 59,
+  "completed_fixtures": 48,
+  "draw_fixtures": 59,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 159,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP019051 doubles No. 2: '6-2 1-6'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP019113 doubles No. 1: '6-2 6-7'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

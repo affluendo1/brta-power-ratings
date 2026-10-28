@@ -1,0 +1,61 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP007011,30 Apr 16,1,regular,Round 1,St Finbar's,Middle Brighton,2,6,2,2,4,5,37,39,Completed,
+AP007012,30 Apr 16,1,regular,Round 1,BLTC,OLGC,7,1,3,1,7,3,60,38,Completed,
+AP007014,30 Apr 16,1,regular,Round 1,Coatesville,Glen Huntly,3.5,4.5,1,2,5,5,53,49,Completed,
+pending-ap007-r1-le-page-bye,30 Apr 16,1,regular,Round 1,Le Page,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007021,07 May 16,2,regular,Round 2,Glen Huntly,St Finbar's,6,2,2,2,6,4,59,47,Completed,
+AP007022,07 May 16,2,regular,Round 2,Middle Brighton,BLTC,0,8,0,4,1,8,26,52,Completed,
+AP007023,07 May 16,2,regular,Round 2,OLGC,Le Page,1,7,1,3,2,6,37,44,Completed,
+pending-ap007-r2-bye-coatesville,07 May 16,2,regular,Round 2,Bye,Coatesville,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007032,14 May 16,3,regular,Round 3,BLTC,Glen Huntly,8,0,4,0,8,1,51,34,Completed,
+AP007033,14 May 16,3,regular,Round 3,Le Page,Middle Brighton,7,1,3,1,7,3,52,36,Completed,
+AP007034,14 May 16,3,regular,Round 3,Coatesville,OLGC,2,6,2,2,4,4,32,39,Completed,
+pending-ap007-r3-st-finbar-s-bye,14 May 16,3,regular,Round 3,St Finbar's,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007041,21 May 16,4,regular,Round 4,OLGC,St Finbar's,2,6,2,2,4,5,36,42,Completed,
+AP007043,21 May 16,4,regular,Round 4,Glen Huntly,Le Page,2,6,2,2,4,4,34,39,Completed,
+AP007044,21 May 16,4,regular,Round 4,Middle Brighton,Coatesville,0,8,0,4,3,8,43,58,Completed,
+pending-ap007-r4-bye-bltc,21 May 16,4,regular,Round 4,Bye,BLTC,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007051,28 May 16,5,regular,Round 5,Le Page,Coatesville,7,1,2,0,6,3,54,47,Completed,
+AP007053,28 May 16,5,regular,Round 5,OLGC,Middle Brighton,3,5,0,2,2,4,32,34,Completed,
+AP007054,28 May 16,5,regular,Round 5,St Finbar's,BLTC,1,7,1,3,3,7,49,55,Completed,
+pending-ap007-r5-glen-huntly-bye,28 May 16,5,regular,Round 5,Glen Huntly,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007061,04 Jun 16,6,regular,Round 6,BLTC,Le Page,2,6,2,2,4,5,38,41,Completed,
+pending-ap007-r6-bye-olgc,04 Jun 16,6,regular,Round 6,Bye,OLGC,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap007-r6-coatesville-st-finbar-s,04 Jun 16,6,regular,Round 6,Coatesville,St Finbar's,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap007-r6-middle-brighton-glen-huntly,04 Jun 16,6,regular,Round 6,Middle Brighton,Glen Huntly,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP007071,18 Jun 16,7,regular,Round 7,St Finbar's,Le Page,1.5,6.5,1,2,2,5,30,41,Completed,
+AP007073,18 Jun 16,7,regular,Round 7,Glen Huntly,OLGC,6,2,2,2,4,4,36,31,Completed,
+pending-ap007-r7-bltc-coatesville,18 Jun 16,7,regular,Round 7,BLTC,Coatesville,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap007-r7-bye-middle-brighton,18 Jun 16,7,regular,Round 7,Bye,Middle Brighton,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007081,25 Jun 16,8,regular,Round 8,Middle Brighton,St Finbar's,2,6,2,2,5,5,45,48,Completed,
+AP007082,25 Jun 16,8,regular,Round 8,OLGC,BLTC,1,7,1,3,3,6,21,48,Completed,
+AP007084,25 Jun 16,8,regular,Round 8,Glen Huntly,Coatesville,4.5,3.5,2,1,4,4,38,41,Completed,
+pending-ap007-r8-bye-le-page,25 Jun 16,8,regular,Round 8,Bye,Le Page,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007091,02 Jul 16,9,regular,Round 9,St Finbar's,Glen Huntly,6,2,2,2,6,4,53,49,Completed,
+AP007092,02 Jul 16,9,regular,Round 9,BLTC,Middle Brighton,8,0,4,0,8,0,48,12,Completed,
+AP007093,02 Jul 16,9,regular,Round 9,Le Page,OLGC,6,2,2,2,4,4,36,25,Completed,
+pending-ap007-r9-coatesville-bye,02 Jul 16,9,regular,Round 9,Coatesville,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007102,09 Jul 16,10,regular,Round 10,Glen Huntly,BLTC,6,2,2,2,5,5,48,47,Completed,
+AP007103,09 Jul 16,10,regular,Round 10,Middle Brighton,Le Page,7,1,3,1,7,2,47,37,Completed,
+AP007104,09 Jul 16,10,regular,Round 10,OLGC,Coatesville,1,7,1,3,4,6,48,48,Completed,
+pending-ap007-r10-bye-st-finbar-s,09 Jul 16,10,regular,Round 10,Bye,St Finbar's,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007111,16 Jul 16,11,regular,Round 11,St Finbar's,OLGC,1,7,1,3,2,6,30,38,Completed,
+AP007113,16 Jul 16,11,regular,Round 11,Le Page,Glen Huntly,1,7,1,3,3,7,31,47,Completed,
+AP007114,16 Jul 16,11,regular,Round 11,Coatesville,Middle Brighton,8,0,4,0,8,0,48,14,Completed,
+pending-ap007-r11-bltc-bye,16 Jul 16,11,regular,Round 11,BLTC,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007121,23 Jul 16,12,regular,Round 12,Coatesville,Le Page,1,7,1,3,3,6,38,46,Completed,
+AP007123,23 Jul 16,12,regular,Round 12,Middle Brighton,OLGC,1,7,1,3,3,7,49,56,Completed,
+AP007124,23 Jul 16,12,regular,Round 12,BLTC,St Finbar's,7,1,3,1,6,2,42,28,Completed,
+pending-ap007-r12-bye-glen-huntly,23 Jul 16,12,regular,Round 12,Bye,Glen Huntly,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007131,30 Jul 16,13,regular,Round 13,Le Page,BLTC,0,8,0,4,1,8,24,53,Completed,
+AP007132,30 Jul 16,13,regular,Round 13,St Finbar's,Coatesville,0,8,0,4,1,8,23,54,Completed,
+AP007134,30 Jul 16,13,regular,Round 13,Glen Huntly,Middle Brighton,8,0,4,0,8,1,52,30,Completed,
+pending-ap007-r13-olgc-bye,30 Jul 16,13,regular,Round 13,OLGC,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007141,06 Aug 16,14,regular,Round 14,Le Page,St Finbar's,7,1,3,1,7,2,51,28,Completed,
+AP007142,06 Aug 16,14,regular,Round 14,Coatesville,BLTC,1,7,1,3,2,7,39,53,Completed,
+AP007143,06 Aug 16,14,regular,Round 14,OLGC,Glen Huntly,7,1,3,1,6,2,44,30,Completed,
+pending-ap007-r14-middle-brighton-bye,06 Aug 16,14,regular,Round 14,Middle Brighton,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007301,,16,semi_final,Semi-final,BLTC,Le Page,8,0,4,0,8,2,56,31,Completed,
+AP007302,,16,semi_final,Semi-final,Coatesville,Glen Huntly,1,7,0,2,3,6,46,54,Completed,
+AP007311,,16,semi_final,Semi-final,Le Page,Glen Huntly,8,0,4,0,8,2,53,29,Completed,
+AP007321,,17,grand_final,Grand final · TROLS entry 2,BLTC,Le Page,8,0,4,0,8,1,53,19,Completed,

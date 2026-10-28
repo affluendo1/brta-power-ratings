@@ -1,0 +1,100 @@
+{
+  "asset_id": "AP45-AP004",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 22/23",
+  "season_id": "AP45",
+  "season_label": "Summer 22/23",
+  "source_section_code": "AP004",
+  "section_label": "Mens S/D 4",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Hurlingham Park",
+      "wins": 7,
+      "points": 70,
+      "percentage": 107.6,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "Coatesville",
+      "wins": 6,
+      "points": 68.5,
+      "percentage": 109.31,
+      "marker": "P"
+    },
+    {
+      "position": 3,
+      "team": "Overport Park",
+      "wins": 5,
+      "points": 61,
+      "percentage": 99.52,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Maccabi",
+      "wins": 4,
+      "points": 60,
+      "percentage": 104.42,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "BLTC White",
+      "wins": 5,
+      "points": 58,
+      "percentage": 91.73,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Black Rock",
+      "wins": 5,
+      "points": 57.5,
+      "percentage": 102.88,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Kings Park",
+      "wins": 3,
+      "points": 45,
+      "percentage": 86.19,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP45-AP004",
+  "fixtures": 59,
+  "completed_fixtures": 42,
+  "draw_fixtures": 59,
+  "singles_rubbers": 160,
+  "doubles_rubbers": 80,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP004021 doubles No. 2: '7-5 4-2'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP004073 doubles No. 2: '0-2'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP004142 doubles No. 1: '6-2 2-4'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP004142 doubles No. 2: '6-1 4-0'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

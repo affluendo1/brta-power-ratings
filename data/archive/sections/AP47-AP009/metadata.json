@@ -1,0 +1,95 @@
+{
+  "asset_id": "AP47-AP009",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 23/24",
+  "season_id": "AP47",
+  "season_label": "Summer 23/24",
+  "source_section_code": "AP009",
+  "section_label": "Mens S/D 9",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Maccabi",
+      "wins": 8,
+      "points": 80,
+      "percentage": 133.69,
+      "marker": ""
+    },
+    {
+      "position": 2,
+      "team": "BLTC",
+      "wins": 7,
+      "points": 72,
+      "percentage": 111.45,
+      "marker": "P"
+    },
+    {
+      "position": 3,
+      "team": "Dendy Park",
+      "wins": 6,
+      "points": 68,
+      "percentage": 105.36,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Carmelite",
+      "wins": 6,
+      "points": 66,
+      "percentage": 103.37,
+      "marker": "R"
+    },
+    {
+      "position": 5,
+      "team": "Clarinda",
+      "wins": 5,
+      "points": 61,
+      "percentage": 105.39,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Mentone",
+      "wins": 3,
+      "points": 48,
+      "percentage": 89.83,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Caulfield Rec",
+      "wins": 1,
+      "points": 25,
+      "percentage": 63.74,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP47-AP009",
+  "fixtures": 59,
+  "completed_fixtures": 39,
+  "draw_fixtures": 59,
+  "singles_rubbers": 152,
+  "doubles_rubbers": 76,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

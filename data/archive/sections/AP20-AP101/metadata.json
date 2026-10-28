@@ -1,0 +1,105 @@
+{
+  "asset_id": "AP20-AP101",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 09/10",
+  "season_id": "AP20",
+  "season_label": "Summer 09/10",
+  "source_section_code": "AP101",
+  "section_label": "Mens S/D 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Kings Park",
+      "wins": 0,
+      "points": 104,
+      "percentage": 141.15,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "GPHC",
+      "wins": 0,
+      "points": 94,
+      "percentage": 124.48,
+      "marker": "P"
+    },
+    {
+      "position": 3,
+      "team": "MCC",
+      "wins": 0,
+      "points": 81,
+      "percentage": 106.45,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Mt Eliza",
+      "wins": 0,
+      "points": 72,
+      "percentage": 106.27,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Royal South Yarra",
+      "wins": 0,
+      "points": 58,
+      "percentage": 90.82,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Carmelite",
+      "wins": 0,
+      "points": 58,
+      "percentage": 89.38,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Dendy Park",
+      "wins": 0,
+      "points": 47,
+      "percentage": 79.15,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "BLTC",
+      "wins": 0,
+      "points": 46,
+      "percentage": 77.69,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP20-AP101",
+  "fixtures": 60,
+  "completed_fixtures": 58,
+  "draw_fixtures": 4,
+  "singles_rubbers": 232,
+  "doubles_rubbers": 114,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP101302 doubles No. 1: '6-7 2-4'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

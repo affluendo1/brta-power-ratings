@@ -1,0 +1,61 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP010011,05 May 18,1,regular,Round 1,Le Page,Glen Huntly,8,2,6,3,,,54,47,Completed,
+AP010012,05 May 18,1,regular,Round 1,Highmoor Uniting,Port Melbourne,8.5,1.5,6,2,,,54,30,Completed,
+AP010013,05 May 18,1,regular,Round 1,Lauriston,St Pats Mentone,4,6,3,4,,,34,40,Completed,
+pending-ap010-r1-carmelite-bye,05 May 18,1,regular,Round 1,Carmelite,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP010022,12 May 18,2,regular,Round 2,Glen Huntly,Highmoor Uniting,0,10,0,8,,,18,56,Completed,
+AP010023,12 May 18,2,regular,Round 2,Port Melbourne,Lauriston,9,1,7,1,,,53,16,Completed,
+AP010024,12 May 18,2,regular,Round 2,St Pats Mentone,Carmelite,3,7,4,4,,,45,52,Completed,
+pending-ap010-r2-bye-le-page,12 May 18,2,regular,Round 2,Bye,Le Page,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP010031,19 May 18,3,regular,Round 3,Le Page,St Pats Mentone,3,7,5,5,,,44,54,Completed,
+AP010033,19 May 18,3,regular,Round 3,Lauriston,Glen Huntly,7,3,4,4,,,42,38,Completed,
+AP010034,19 May 18,3,regular,Round 3,Carmelite,Port Melbourne,1,9,2,7,,,35,54,Completed,
+pending-ap010-r3-highmoor-uniting-bye,19 May 18,3,regular,Round 3,Highmoor Uniting,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP010041,26 May 18,4,regular,Round 4,Port Melbourne,Le Page,9,1,6,2,,,57,31,Completed,
+AP010042,26 May 18,4,regular,Round 4,St Pats Mentone,Highmoor Uniting,2,8,3,5,,,34,46,Completed,
+AP010044,26 May 18,4,regular,Round 4,Glen Huntly,Carmelite,8,2,6,3,,,58,36,Completed,
+pending-ap010-r4-bye-lauriston,26 May 18,4,regular,Round 4,Bye,Lauriston,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP010053,02 Jun 18,5,regular,Round 5,Port Melbourne,Glen Huntly,9,1,7,1,,,54,20,Completed,
+AP010054,02 Jun 18,5,regular,Round 5,Le Page,Highmoor Uniting,1,9,1,7,,,27,51,Completed,
+pending-ap010-r5-bye-st-pats-mentone,02 Jun 18,5,regular,Round 5,Bye,St Pats Mentone,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap010-r5-lauriston-carmelite,02 Jun 18,5,regular,Round 5,Lauriston,Carmelite,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP010061,16 Jun 18,6,regular,Round 6,Highmoor Uniting,Lauriston,10,0,8,1,,,60,22,Completed,
+AP010062,16 Jun 18,6,regular,Round 6,Carmelite,Le Page,8,2,6,3,,,53,37,Completed,
+AP010063,16 Jun 18,6,regular,Round 6,St Pats Mentone,Port Melbourne,2,8,4,5,,,49,53,Completed,
+pending-ap010-r6-glen-huntly-bye,16 Jun 18,6,regular,Round 6,Glen Huntly,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP010071,23 Jun 18,7,regular,Round 7,Le Page,Lauriston,2,8,3,5,,,40,46,Completed,
+AP010072,23 Jun 18,7,regular,Round 7,Highmoor Uniting,Carmelite,9,1,7,1,,,48,20,Completed,
+AP010074,23 Jun 18,7,regular,Round 7,St Pats Mentone,Glen Huntly,9,1,7,2,,,58,35,Completed,
+pending-ap010-r7-bye-port-melbourne,23 Jun 18,7,regular,Round 7,Bye,Port Melbourne,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP010082,30 Jun 18,8,regular,Round 8,Port Melbourne,Highmoor Uniting,5,5,0,0,,,0,0,Completed,
+AP010083,30 Jun 18,8,regular,Round 8,St Pats Mentone,Lauriston,7,3,5,5,,,50,48,Completed,
+pending-ap010-r8-bye-carmelite,30 Jun 18,8,regular,Round 8,Bye,Carmelite,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap010-r8-glen-huntly-le-page,30 Jun 18,8,regular,Round 8,Glen Huntly,Le Page,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+AP010092,07 Jul 18,9,regular,Round 9,Highmoor Uniting,Glen Huntly,10,0,8,0,,,56,25,Completed,
+AP010093,07 Jul 18,9,regular,Round 9,Lauriston,Port Melbourne,3,7,5,5,,,55,61,Completed,
+AP010094,07 Jul 18,9,regular,Round 9,Carmelite,St Pats Mentone,9,1,7,2,,,58,42,Completed,
+pending-ap010-r9-le-page-bye,07 Jul 18,9,regular,Round 9,Le Page,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP010101,14 Jul 18,10,regular,Round 10,St Pats Mentone,Le Page,9,1,7,1,,,50,32,Completed,
+AP010103,14 Jul 18,10,regular,Round 10,Glen Huntly,Lauriston,1,9,3,7,,,46,59,Completed,
+AP010104,14 Jul 18,10,regular,Round 10,Port Melbourne,Carmelite,9,1,7,2,,,55,38,Completed,
+pending-ap010-r10-bye-highmoor-uniting,14 Jul 18,10,regular,Round 10,Bye,Highmoor Uniting,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP010111,21 Jul 18,11,regular,Round 11,Le Page,Port Melbourne,9,1,7,2,,,62,30,Completed,
+AP010112,21 Jul 18,11,regular,Round 11,Highmoor Uniting,St Pats Mentone,9,1,7,2,,,60,26,Completed,
+AP010114,21 Jul 18,11,regular,Round 11,Carmelite,Glen Huntly,10,0,8,0,,,56,21,Completed,
+pending-ap010-r11-lauriston-bye,21 Jul 18,11,regular,Round 11,Lauriston,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP010121,28 Jul 18,12,regular,Round 12,Carmelite,Lauriston,3,7,4,4,,,39,46,Completed,
+AP010124,28 Jul 18,12,regular,Round 12,Highmoor Uniting,Le Page,10,0,8,1,,,59,19,Completed,
+pending-ap010-r12-glen-huntly-port-melbourne,28 Jul 18,12,regular,Round 12,Glen Huntly,Port Melbourne,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap010-r12-st-pats-mentone-bye,28 Jul 18,12,regular,Round 12,St Pats Mentone,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP010131,04 Aug 18,13,regular,Round 13,Lauriston,Highmoor Uniting,9,1,7,2,,,57,33,Completed,
+AP010133,04 Aug 18,13,regular,Round 13,Port Melbourne,St Pats Mentone,10,0,8,0,,,56,23,Completed,
+pending-ap010-r13-bye-glen-huntly,04 Aug 18,13,regular,Round 13,Bye,Glen Huntly,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap010-r13-le-page-carmelite,04 Aug 18,13,regular,Round 13,Le Page,Carmelite,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP010141,11 Aug 18,14,regular,Round 14,Lauriston,Le Page,1.5,8.5,2,6,,,37,44,Completed,
+AP010144,11 Aug 18,14,regular,Round 14,Glen Huntly,St Pats Mentone,8,2,5,2,,,48,33,Completed,
+pending-ap010-r14-carmelite-highmoor-uniting,11 Aug 18,14,regular,Round 14,Carmelite,Highmoor Uniting,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap010-r14-port-melbourne-bye,11 Aug 18,14,regular,Round 14,Port Melbourne,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP010301,,16,semi_final,Semi-final,Highmoor Uniting,Port Melbourne,8,2,5,2,,,41,34,Completed,
+AP010302,,16,semi_final,Semi-final,Lauriston,Le Page,8,2,6,4,,,57,43,Completed,
+AP010311,,16,semi_final,Semi-final,Port Melbourne,Lauriston,8.5,1.5,6,1,,,48,26,Completed,
+AP010321,,17,grand_final,Grand final · TROLS entry 2,Highmoor Uniting,Port Melbourne,8,2,6,2,,,45,37,Completed,

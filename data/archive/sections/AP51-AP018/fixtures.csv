@@ -1,0 +1,60 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP018012,04 Oct 25,1,regular,Round 1,Parkdale,Pakenham,7,1,3,1,7,3,58,42,Completed,
+AP018013,04 Oct 25,1,regular,Round 1,Langwarrin,Mentone,7,1,3,1,6,3,49,42,Completed,
+AP018014,04 Oct 25,1,regular,Round 1,Black Rock,Victory Park,0,8,0,4,1,8,34,50,Completed,
+pending-ap018-r1-elwood-bye,04 Oct 25,1,regular,Round 1,Elwood,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP018021,11 Oct 25,2,regular,Round 2,Victory Park,Elwood,2,6,2,2,4,5,39,47,Completed,
+AP018023,11 Oct 25,2,regular,Round 2,Pakenham,Langwarrin,1,7,1,3,3,7,31,56,Completed,
+AP018024,11 Oct 25,2,regular,Round 2,Mentone,Black Rock,8,0,4,0,8,1,53,33,Completed,
+pending-ap018-r2-bye-parkdale,11 Oct 25,2,regular,Round 2,Bye,Parkdale,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP018031,18 Oct 25,3,regular,Round 3,Elwood,Mentone,8,0,4,0,8,1,55,22,Completed,
+AP018032,18 Oct 25,3,regular,Round 3,Parkdale,Victory Park,7,1,3,1,7,3,55,45,Completed,
+AP018034,18 Oct 25,3,regular,Round 3,Black Rock,Pakenham,1,7,1,3,2,6,18,38,Completed,
+pending-ap018-r3-langwarrin-bye,18 Oct 25,3,regular,Round 3,Langwarrin,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP018041,25 Oct 25,4,regular,Round 4,Pakenham,Elwood,1,7,1,3,2,7,26,49,Completed,
+AP018042,25 Oct 25,4,regular,Round 4,Mentone,Parkdale,1,7,1,3,3,6,46,49,Completed,
+AP018043,25 Oct 25,4,regular,Round 4,Victory Park,Langwarrin,2,6,2,2,4,5,41,43,Completed,
+pending-ap018-r4-bye-black-rock,25 Oct 25,4,regular,Round 4,Bye,Black Rock,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap018-r5-elwood-parkdale,08 Nov 25,5,regular,Round 5,Elwood,Parkdale,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap018-r5-langwarrin-black-rock,08 Nov 25,5,regular,Round 5,Langwarrin,Black Rock,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap018-r5-pakenham-bye,08 Nov 25,5,regular,Round 5,Pakenham,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap018-r5-victory-park-mentone,08 Nov 25,5,regular,Round 5,Victory Park,Mentone,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP018061,15 Nov 25,6,regular,Round 6,Parkdale,Langwarrin,7,1,3,1,6,2,46,27,Completed,
+AP018062,15 Nov 25,6,regular,Round 6,Black Rock,Elwood,2,6,2,2,4,4,32,38,Completed,
+AP018063,15 Nov 25,6,regular,Round 6,Mentone,Pakenham,0,8,0,4,0,8,25,49,Completed,
+pending-ap018-r6-bye-victory-park,15 Nov 25,6,regular,Round 6,Bye,Victory Park,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP018071,22 Nov 25,7,regular,Round 7,Elwood,Langwarrin,2,6,2,2,4,5,45,50,Completed,
+AP018072,22 Nov 25,7,regular,Round 7,Parkdale,Black Rock,8,0,4,0,8,0,48,10,Completed,
+AP018073,22 Nov 25,7,regular,Round 7,Victory Park,Pakenham,8,0,4,0,8,0,49,21,Completed,
+pending-ap018-r7-mentone-bye,22 Nov 25,7,regular,Round 7,Mentone,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP018082,29 Nov 25,8,regular,Round 8,Pakenham,Parkdale,2,6,2,2,4,5,41,47,Completed,
+AP018083,29 Nov 25,8,regular,Round 8,Mentone,Langwarrin,7,1,3,1,7,4,66,58,Completed,
+AP018084,29 Nov 25,8,regular,Round 8,Victory Park,Black Rock,7,1,3,1,6,2,45,22,Completed,
+pending-ap018-r8-bye-elwood,29 Nov 25,8,regular,Round 8,Bye,Elwood,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP018091,06 Dec 25,9,regular,Round 9,Elwood,Victory Park,7,1,3,1,7,2,51,36,Completed,
+pending-ap018-r9-black-rock-mentone,06 Dec 25,9,regular,Round 9,Black Rock,Mentone,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap018-r9-langwarrin-pakenham,06 Dec 25,9,regular,Round 9,Langwarrin,Pakenham,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap018-r9-parkdale-bye,06 Dec 25,9,regular,Round 9,Parkdale,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP018101,13 Dec 25,10,regular,Round 10,Mentone,Elwood,2,6,2,2,4,4,33,37,Completed,
+AP018102,13 Dec 25,10,regular,Round 10,Victory Park,Parkdale,1,7,1,3,4,6,55,45,Completed,
+AP018104,13 Dec 25,10,regular,Round 10,Pakenham,Black Rock,6,2,2,2,4,4,31,30,Completed,
+pending-ap018-r10-bye-langwarrin,13 Dec 25,10,regular,Round 10,Bye,Langwarrin,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP018111,07 Feb 26,11,regular,Round 11,Elwood,Pakenham,7,1,3,1,7,2,50,28,Completed,
+AP018112,07 Feb 26,11,regular,Round 11,Parkdale,Mentone,8,0,4,0,8,1,52,31,Completed,
+AP018113,07 Feb 26,11,regular,Round 11,Langwarrin,Victory Park,7,1,3,1,6,3,40,35,Completed,
+pending-ap018-r11-black-rock-bye,07 Feb 26,11,regular,Round 11,Black Rock,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP018121,14 Feb 26,12,regular,Round 12,Black Rock,Langwarrin,2,6,2,2,5,5,48,50,Completed,
+AP018122,14 Feb 26,12,regular,Round 12,Mentone,Victory Park,2,6,2,2,4,5,35,49,Completed,
+AP018124,14 Feb 26,12,regular,Round 12,Parkdale,Elwood,7,1,3,1,7,4,58,47,Completed,
+pending-ap018-r12-bye-pakenham,14 Feb 26,12,regular,Round 12,Bye,Pakenham,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP018131,21 Feb 26,13,regular,Round 13,Langwarrin,Parkdale,8,0,4,0,8,1,55,30,Completed,
+AP018132,21 Feb 26,13,regular,Round 13,Elwood,Black Rock,8,0,4,0,8,3,62,49,Completed,
+AP018133,21 Feb 26,13,regular,Round 13,Pakenham,Mentone,8,0,4,0,8,0,48,11,Completed,
+pending-ap018-r13-victory-park-bye,21 Feb 26,13,regular,Round 13,Victory Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP018141,28 Feb 26,14,regular,Round 14,Langwarrin,Elwood,1,7,1,3,4,6,49,54,Completed,
+AP018142,28 Feb 26,14,regular,Round 14,Black Rock,Parkdale,0,8,0,4,0,8,6,48,Completed,
+AP018143,28 Feb 26,14,regular,Round 14,Pakenham,Victory Park,8,0,4,0,8,1,53,23,Completed,
+pending-ap018-r14-bye-mentone,28 Feb 26,14,regular,Round 14,Bye,Mentone,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP018301,,16,semi_final,Semi-final,Parkdale,Pakenham,8,0,4,0,8,0,48,17,Completed,
+AP018302,,16,semi_final,Semi-final,Elwood,Langwarrin,6,2,2,2,4,4,37,36,Completed,
+AP018321,,17,grand_final,Grand final · TROLS entry 2,Parkdale,Elwood,6,2,2,2,5,5,52,43,Completed,

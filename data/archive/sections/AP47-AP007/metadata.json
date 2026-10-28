@@ -1,0 +1,95 @@
+{
+  "asset_id": "AP47-AP007",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 23/24",
+  "season_id": "AP47",
+  "season_label": "Summer 23/24",
+  "source_section_code": "AP007",
+  "section_label": "Mens S/D 7",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Langwarrin",
+      "wins": 8,
+      "points": 82,
+      "percentage": 120.22,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "BLTC White",
+      "wins": 7,
+      "points": 78,
+      "percentage": 119.79,
+      "marker": "P"
+    },
+    {
+      "position": 3,
+      "team": "Dendy Park",
+      "wins": 6,
+      "points": 74,
+      "percentage": 112.34,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Coatesville",
+      "wins": 6,
+      "points": 70,
+      "percentage": 123.47,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Kooyong Green",
+      "wins": 3,
+      "points": 46,
+      "percentage": 91.41,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Tennis World",
+      "wins": 3,
+      "points": 40,
+      "percentage": 76.21,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Royal South Yarra",
+      "wins": 2,
+      "points": 30,
+      "percentage": 75.26,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP47-AP007",
+  "fixtures": 59,
+  "completed_fixtures": 37,
+  "draw_fixtures": 59,
+  "singles_rubbers": 144,
+  "doubles_rubbers": 72,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

@@ -1,0 +1,60 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP003011,07 May 22,1,regular,Round 1,Glen Huntly,Tally Ho,7,1,3,1,7,2,49,38,Completed,
+AP003012,07 May 22,1,regular,Round 1,Highmoor Uniting,Ormond,4.5,3.5,1,0,2,0,17,4,Completed,
+AP003014,07 May 22,1,regular,Round 1,Elwood Green,Parkdale White,8,0,4,0,8,0,52,31,Completed,
+pending-ap003-r1-parkdale-blue-bye,07 May 22,1,regular,Round 1,Parkdale Blue,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap003-r2-bye-elwood-green,14 May 22,2,regular,Round 2,Bye,Elwood Green,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap003-r2-ormond-parkdale-blue,14 May 22,2,regular,Round 2,Ormond,Parkdale Blue,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap003-r2-parkdale-white-glen-huntly,14 May 22,2,regular,Round 2,Parkdale White,Glen Huntly,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap003-r2-tally-ho-highmoor-uniting,14 May 22,2,regular,Round 2,Tally Ho,Highmoor Uniting,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP003032,21 May 22,3,regular,Round 3,Highmoor Uniting,Parkdale White,1,7,1,3,3,6,40,49,Completed,
+AP003033,21 May 22,3,regular,Round 3,Parkdale Blue,Tally Ho,6,2,2,2,5,4,39,38,Completed,
+AP003034,21 May 22,3,regular,Round 3,Elwood Green,Ormond,8,0,4,0,8,2,58,35,Completed,
+pending-ap003-r3-glen-huntly-bye,21 May 22,3,regular,Round 3,Glen Huntly,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP003041,28 May 22,4,regular,Round 4,Ormond,Glen Huntly,0,8,0,4,0,8,18,49,Completed,
+AP003043,28 May 22,4,regular,Round 4,Parkdale White,Parkdale Blue,8,0,4,0,8,1,52,26,Completed,
+AP003044,28 May 22,4,regular,Round 4,Tally Ho,Elwood Green,1,7,1,3,2,7,40,52,Completed,
+pending-ap003-r4-bye-highmoor-uniting,28 May 22,4,regular,Round 4,Bye,Highmoor Uniting,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP003051,04 Jun 22,5,regular,Round 5,Parkdale Blue,Elwood Green,7,1,3,1,7,2,50,36,Completed,
+AP003053,04 Jun 22,5,regular,Round 5,Ormond,Tally Ho,0,8,0,4,0,8,12,48,Completed,
+AP003054,04 Jun 22,5,regular,Round 5,Glen Huntly,Highmoor Uniting,8,0,4,0,8,0,48,6,Completed,
+pending-ap003-r5-parkdale-white-bye,04 Jun 22,5,regular,Round 5,Parkdale White,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP003061,18 Jun 22,6,regular,Round 6,Highmoor Uniting,Parkdale Blue,7,1,3,1,6,3,44,38,Completed,
+AP003062,18 Jun 22,6,regular,Round 6,Elwood Green,Glen Huntly,8,0,4,0,8,1,53,28,Completed,
+AP003064,18 Jun 22,6,regular,Round 6,Tally Ho,Parkdale White,7,1,3,1,6,2,45,28,Completed,
+pending-ap003-r6-bye-ormond,18 Jun 22,6,regular,Round 6,Bye,Ormond,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP003071,25 Jun 22,7,regular,Round 7,Glen Huntly,Parkdale Blue,6,2,2,2,5,4,46,38,Completed,
+AP003072,25 Jun 22,7,regular,Round 7,Highmoor Uniting,Elwood Green,0,8,0,4,1,8,34,56,Completed,
+AP003073,25 Jun 22,7,regular,Round 7,Parkdale White,Ormond,8,0,4,0,8,0,48,12,Completed,
+pending-ap003-r7-bye-tally-ho,25 Jun 22,7,regular,Round 7,Bye,Tally Ho,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP003081,09 Jul 22,8,regular,Round 8,Tally Ho,Glen Huntly,7,1,3,1,7,2,48,31,Completed,
+AP003084,09 Jul 22,8,regular,Round 8,Parkdale White,Elwood Green,1,7,1,3,3,6,40,51,Completed,
+pending-ap003-r8-bye-parkdale-blue,09 Jul 22,8,regular,Round 8,Bye,Parkdale Blue,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap003-r8-ormond-highmoor-uniting,09 Jul 22,8,regular,Round 8,Ormond,Highmoor Uniting,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP003091,16 Jul 22,9,regular,Round 9,Glen Huntly,Parkdale White,1,7,1,3,3,6,35,47,Completed,
+AP003092,16 Jul 22,9,regular,Round 9,Highmoor Uniting,Tally Ho,7,1,3,1,7,2,52,30,Completed,
+AP003093,16 Jul 22,9,regular,Round 9,Parkdale Blue,Ormond,8,0,4,0,8,2,59,36,Completed,
+pending-ap003-r9-elwood-green-bye,16 Jul 22,9,regular,Round 9,Elwood Green,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP003103,23 Jul 22,10,regular,Round 10,Tally Ho,Parkdale Blue,4.5,3.5,1,0,3,0,19,11,Completed,
+AP003104,23 Jul 22,10,regular,Round 10,Ormond,Elwood Green,0,8,0,4,0,8,14,48,Completed,
+pending-ap003-r10-bye-glen-huntly,23 Jul 22,10,regular,Round 10,Bye,Glen Huntly,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap003-r10-parkdale-white-highmoor-uniting,23 Jul 22,10,regular,Round 10,Parkdale White,Highmoor Uniting,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP003111,30 Jul 22,11,regular,Round 11,Glen Huntly,Ormond,8,0,4,0,8,0,49,16,Completed,
+AP003113,30 Jul 22,11,regular,Round 11,Parkdale Blue,Parkdale White,0,8,0,4,1,8,23,51,Completed,
+AP003114,30 Jul 22,11,regular,Round 11,Elwood Green,Tally Ho,8,0,4,0,8,0,49,24,Completed,
+pending-ap003-r11-highmoor-uniting-bye,30 Jul 22,11,regular,Round 11,Highmoor Uniting,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP003121,06 Aug 22,12,regular,Round 12,Elwood Green,Parkdale Blue,8,0,4,0,8,2,55,29,Completed,
+AP003123,06 Aug 22,12,regular,Round 12,Tally Ho,Ormond,7,1,3,1,7,3,57,36,Completed,
+AP003124,06 Aug 22,12,regular,Round 12,Highmoor Uniting,Glen Huntly,1,7,1,3,2,7,36,47,Completed,
+pending-ap003-r12-bye-parkdale-white,06 Aug 22,12,regular,Round 12,Bye,Parkdale White,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP003131,13 Aug 22,13,regular,Round 13,Parkdale Blue,Highmoor Uniting,1,7,1,3,4,7,49,62,Completed,
+AP003132,13 Aug 22,13,regular,Round 13,Glen Huntly,Elwood Green,6,2,2,2,5,4,45,37,Completed,
+AP003134,13 Aug 22,13,regular,Round 13,Parkdale White,Tally Ho,8,0,4,0,8,0,49,26,Completed,
+pending-ap003-r13-ormond-bye,13 Aug 22,13,regular,Round 13,Ormond,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP003141,20 Aug 22,14,regular,Round 14,Parkdale Blue,Glen Huntly,2,6,2,2,4,5,40,46,Completed,
+AP003142,20 Aug 22,14,regular,Round 14,Elwood Green,Highmoor Uniting,8,0,4,0,8,1,52,20,Completed,
+AP003143,20 Aug 22,14,regular,Round 14,Ormond,Parkdale White,0,8,0,4,1,8,24,50,Completed,
+pending-ap003-r14-tally-ho-bye,20 Aug 22,14,regular,Round 14,Tally Ho,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP003301,,16,semi_final,Semi-final,Elwood Green,Tally Ho,1,7,1,3,4,7,56,57,Completed,
+AP003302,,16,semi_final,Semi-final,Parkdale White,Glen Huntly,1,7,1,3,3,6,36,44,Completed,
+AP003321,,17,grand_final,Grand final · TROLS entry 2,Glen Huntly,Tally Ho,6,2,2,2,5,5,45,44,Completed,

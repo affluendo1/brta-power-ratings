@@ -1,0 +1,61 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP014011,04 Oct 14,1,regular,Round 1,Mountain Gate,Dendy Park 1,2,8,4,6,,,52,56,Completed,
+AP014012,04 Oct 14,1,regular,Round 1,GPHC,BLTC,10,0,8,0,,,58,26,Completed,
+AP014014,04 Oct 14,1,regular,Round 1,Clarinda,Dendy Park 2,9,1,7,2,,,57,33,Completed,
+pending-ap014-r1-mt-eliza-bye,04 Oct 14,1,regular,Round 1,Mt Eliza,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP014022,11 Oct 14,2,regular,Round 2,Dendy Park 1,GPHC,0,10,0,8,,,15,56,Completed,
+AP014023,11 Oct 14,2,regular,Round 2,BLTC,Mt Eliza,9,1,7,1,,,53,20,Completed,
+pending-ap014-r2-bye-clarinda,11 Oct 14,2,regular,Round 2,Bye,Clarinda,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap014-r2-dendy-park-2-mountain-gate,11 Oct 14,2,regular,Round 2,Dendy Park 2,Mountain Gate,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP014032,18 Oct 14,3,regular,Round 3,GPHC,Dendy Park 2,10,0,8,1,,,59,27,Completed,
+AP014033,18 Oct 14,3,regular,Round 3,Mt Eliza,Dendy Park 1,10,0,8,0,,,57,25,Completed,
+AP014034,18 Oct 14,3,regular,Round 3,Clarinda,BLTC,2,8,3,5,,,37,54,Completed,
+pending-ap014-r3-mountain-gate-bye,18 Oct 14,3,regular,Round 3,Mountain Gate,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP014043,25 Oct 14,4,regular,Round 4,Dendy Park 2,Mt Eliza,0,10,0,8,,,18,56,Completed,
+AP014044,25 Oct 14,4,regular,Round 4,Dendy Park 1,Clarinda,2,8,3,6,,,43,55,Completed,
+pending-ap014-r4-bltc-mountain-gate,25 Oct 14,4,regular,Round 4,BLTC,Mountain Gate,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+pending-ap014-r4-bye-gphc,25 Oct 14,4,regular,Round 4,Bye,GPHC,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP014051,08 Nov 14,5,regular,Round 5,Mt Eliza,Clarinda,10,0,8,0,,,57,10,Completed,
+AP014053,08 Nov 14,5,regular,Round 5,BLTC,Dendy Park 1,8,2,6,3,,,53,34,Completed,
+AP014054,08 Nov 14,5,regular,Round 5,Mountain Gate,GPHC,10,0,8,0,,,56,21,Completed,
+pending-ap014-r5-dendy-park-2-bye,08 Nov 14,5,regular,Round 5,Dendy Park 2,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP014061,15 Nov 14,6,regular,Round 6,GPHC,Mt Eliza,9,1,7,2,,,60,36,Completed,
+AP014062,15 Nov 14,6,regular,Round 6,Clarinda,Mountain Gate,0,10,0,8,,,16,56,Completed,
+AP014064,15 Nov 14,6,regular,Round 6,Dendy Park 1,Dendy Park 2,9,1,7,1,,,55,38,Completed,
+pending-ap014-r6-bye-bltc,15 Nov 14,6,regular,Round 6,Bye,BLTC,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP014071,22 Nov 14,7,regular,Round 7,Mountain Gate,Mt Eliza,8,2,5,4,,,53,54,Completed,
+AP014072,22 Nov 14,7,regular,Round 7,GPHC,Clarinda,8,2,5,3,,,43,25,Completed,
+AP014073,22 Nov 14,7,regular,Round 7,Dendy Park 2,BLTC,0,10,0,8,,,16,56,Completed,
+pending-ap014-r7-bye-dendy-park-1,22 Nov 14,7,regular,Round 7,Bye,Dendy Park 1,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP014081,29 Nov 14,8,regular,Round 8,Dendy Park 1,Mountain Gate,0,10,0,8,,,21,56,Completed,
+AP014082,29 Nov 14,8,regular,Round 8,BLTC,GPHC,3,7,3,5,,,39,50,Completed,
+AP014084,29 Nov 14,8,regular,Round 8,Dendy Park 2,Clarinda,2,8,3,6,,,34,52,Completed,
+pending-ap014-r8-bye-mt-eliza,29 Nov 14,8,regular,Round 8,Bye,Mt Eliza,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP014091,06 Dec 14,9,regular,Round 9,Mountain Gate,Dendy Park 2,10,0,8,0,,,56,19,Completed,
+AP014092,06 Dec 14,9,regular,Round 9,GPHC,Dendy Park 1,9,1,7,2,,,58,34,Completed,
+AP014093,06 Dec 14,9,regular,Round 9,Mt Eliza,BLTC,7,3,5,4,,,58,46,Completed,
+pending-ap014-r9-clarinda-bye,06 Dec 14,9,regular,Round 9,Clarinda,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP014103,13 Dec 14,10,regular,Round 10,Dendy Park 1,Mt Eliza,0,10,0,8,,,19,56,Completed,
+AP014104,13 Dec 14,10,regular,Round 10,BLTC,Clarinda,10,0,8,0,,,56,22,Completed,
+pending-ap014-r10-bye-mountain-gate,13 Dec 14,10,regular,Round 10,Bye,Mountain Gate,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap014-r10-dendy-park-2-gphc,13 Dec 14,10,regular,Round 10,Dendy Park 2,GPHC,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP014113,07 Feb 15,11,regular,Round 11,Mt Eliza,Dendy Park 2,9,1,6,3,,,50,44,Completed,
+AP014114,07 Feb 15,11,regular,Round 11,Clarinda,Dendy Park 1,8,2,6,4,,,51,47,Completed,
+pending-ap014-r11-gphc-bye,07 Feb 15,11,regular,Round 11,GPHC,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap014-r11-mountain-gate-bltc,07 Feb 15,11,regular,Round 11,Mountain Gate,BLTC,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP014121,14 Feb 15,12,regular,Round 12,Clarinda,Mt Eliza,3,7,4,5,,,41,50,Completed,
+AP014123,14 Feb 15,12,regular,Round 12,Dendy Park 1,BLTC,1,9,1,7,,,23,54,Completed,
+AP014124,14 Feb 15,12,regular,Round 12,GPHC,Mountain Gate,8,2,4,4,,,49,48,Completed,
+pending-ap014-r12-bye-dendy-park-2,14 Feb 15,12,regular,Round 12,Bye,Dendy Park 2,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP014132,21 Feb 15,13,regular,Round 13,Mountain Gate,Clarinda,3,7,4,4,,,31,38,Completed,
+AP014134,21 Feb 15,13,regular,Round 13,Dendy Park 2,Dendy Park 1,2,8,4,6,,,47,58,Completed,
+pending-ap014-r13-bltc-bye,21 Feb 15,13,regular,Round 13,BLTC,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap014-r13-mt-eliza-gphc,21 Feb 15,13,regular,Round 13,Mt Eliza,GPHC,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP014141,28 Feb 15,14,regular,Round 14,Mt Eliza,Mountain Gate,8,2,6,3,,,55,43,Completed,
+AP014142,28 Feb 15,14,regular,Round 14,Clarinda,GPHC,0,10,0,8,,,28,56,Completed,
+AP014143,28 Feb 15,14,regular,Round 14,BLTC,Dendy Park 2,10,0,8,0,,,56,10,Completed,
+pending-ap014-r14-dendy-park-1-bye,28 Feb 15,14,regular,Round 14,Dendy Park 1,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP014301,,16,semi_final,Semi-final,BLTC,Mt Eliza,8,2,6,3,,,58,48,Completed,
+AP014302,,16,semi_final,Semi-final,GPHC,Mountain Gate,2,8,3,5,,,39,47,Completed,
+AP014311,,16,semi_final,Semi-final,Mt Eliza,Mountain Gate,3,7,4,4,,,46,48,Completed,
+AP014321,,17,grand_final,Grand final · TROLS entry 2,BLTC,Mountain Gate,0,10,0,8,,,0,56,Completed,

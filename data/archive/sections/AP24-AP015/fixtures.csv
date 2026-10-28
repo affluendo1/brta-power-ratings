@@ -1,0 +1,61 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP015011,08 Oct 11,1,regular,Round 1,Dendy Park,Scoresby,2,8,3,6,,,42,54,Completed,
+AP015013,08 Oct 11,1,regular,Round 1,Carmelite,Mordialloc,3,7,4,5,,,45,39,Completed,
+AP015014,08 Oct 11,1,regular,Round 1,Old Scotch,Hampton,0,10,1,8,,,36,61,Completed,
+pending-ap015-r1-gphc-bye,08 Oct 11,1,regular,Round 1,GPHC,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP015021,15 Oct 11,2,regular,Round 2,Hampton,Dendy Park,8,2,6,4,,,65,58,Completed,
+AP015022,15 Oct 11,2,regular,Round 2,Scoresby,GPHC,8,2,6,2,,,55,36,Completed,
+AP015024,15 Oct 11,2,regular,Round 2,Mordialloc,Old Scotch,9,1,7,2,,,55,34,Completed,
+pending-ap015-r2-bye-carmelite,15 Oct 11,2,regular,Round 2,Bye,Carmelite,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP015033,22 Oct 11,3,regular,Round 3,Carmelite,Scoresby,1,9,1,7,,,34,55,Completed,
+pending-ap015-r3-dendy-park-mordialloc,22 Oct 11,3,regular,Round 3,Dendy Park,Mordialloc,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap015-r3-gphc-hampton,22 Oct 11,3,regular,Round 3,GPHC,Hampton,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap015-r3-old-scotch-bye,22 Oct 11,3,regular,Round 3,Old Scotch,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP015042,05 Nov 11,4,regular,Round 4,Mordialloc,GPHC,2,8,4,6,,,49,58,Completed,
+AP015043,05 Nov 11,4,regular,Round 4,Hampton,Carmelite,0,10,0,8,,,30,57,Completed,
+AP015044,05 Nov 11,4,regular,Round 4,Scoresby,Old Scotch,10,0,8,0,,,58,28,Completed,
+pending-ap015-r4-bye-dendy-park,05 Nov 11,4,regular,Round 4,Bye,Dendy Park,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP015051,12 Nov 11,5,regular,Round 5,Carmelite,Old Scotch,10,0,8,1,,,58,28,Completed,
+AP015052,12 Nov 11,5,regular,Round 5,Hampton,Mordialloc,9,1,7,1,,,54,27,Completed,
+AP015054,12 Nov 11,5,regular,Round 5,Dendy Park,GPHC,8,2,6,3,,,54,42,Completed,
+pending-ap015-r5-bye-scoresby,12 Nov 11,5,regular,Round 5,Bye,Scoresby,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap015-r6-gphc-carmelite,19 Nov 11,6,regular,Round 6,GPHC,Carmelite,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap015-r6-mordialloc-bye,19 Nov 11,6,regular,Round 6,Mordialloc,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap015-r6-old-scotch-dendy-park,19 Nov 11,6,regular,Round 6,Old Scotch,Dendy Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap015-r6-scoresby-hampton,19 Nov 11,6,regular,Round 6,Scoresby,Hampton,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap015-r7-dendy-park-carmelite,26 Nov 11,7,regular,Round 7,Dendy Park,Carmelite,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap015-r7-gphc-old-scotch,26 Nov 11,7,regular,Round 7,GPHC,Old Scotch,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap015-r7-hampton-bye,26 Nov 11,7,regular,Round 7,Hampton,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap015-r7-mordialloc-scoresby,26 Nov 11,7,regular,Round 7,Mordialloc,Scoresby,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP015081,03 Dec 11,8,regular,Round 8,Scoresby,Dendy Park,10,0,8,0,,,58,37,Completed,
+AP015083,03 Dec 11,8,regular,Round 8,Mordialloc,Carmelite,1,9,2,7,,,28,54,Completed,
+AP015084,03 Dec 11,8,regular,Round 8,Hampton,Old Scotch,10,0,8,0,,,56,13,Completed,
+pending-ap015-r8-bye-gphc,03 Dec 11,8,regular,Round 8,Bye,GPHC,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP015091,10 Dec 11,9,regular,Round 9,Dendy Park,Hampton,2,8,4,6,,,57,61,Completed,
+AP015094,10 Dec 11,9,regular,Round 9,Old Scotch,Mordialloc,7,3,5,4,,,48,39,Completed,
+pending-ap015-r9-carmelite-bye,10 Dec 11,9,regular,Round 9,Carmelite,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap015-r9-gphc-scoresby,10 Dec 11,9,regular,Round 9,GPHC,Scoresby,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP015101,17 Dec 11,10,regular,Round 10,Mordialloc,Dendy Park,7,3,5,3,,,44,45,Completed,
+AP015103,17 Dec 11,10,regular,Round 10,Scoresby,Carmelite,8,2,6,3,,,56,40,Completed,
+pending-ap015-r10-bye-old-scotch,17 Dec 11,10,regular,Round 10,Bye,Old Scotch,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap015-r10-hampton-gphc,17 Dec 11,10,regular,Round 10,Hampton,GPHC,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP015112,04 Feb 12,11,regular,Round 11,GPHC,Mordialloc,2,8,4,5,,,53,54,Completed,
+AP015113,04 Feb 12,11,regular,Round 11,Carmelite,Hampton,8,2,6,3,,,55,48,Completed,
+AP015114,04 Feb 12,11,regular,Round 11,Old Scotch,Scoresby,2,8,3,6,,,41,51,Completed,
+pending-ap015-r11-dendy-park-bye,04 Feb 12,11,regular,Round 11,Dendy Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP015121,11 Feb 12,12,regular,Round 12,Old Scotch,Carmelite,1,9,2,7,,,36,56,Completed,
+AP015122,11 Feb 12,12,regular,Round 12,Mordialloc,Hampton,9,1,7,2,,,59,42,Completed,
+AP015124,11 Feb 12,12,regular,Round 12,GPHC,Dendy Park,2,8,4,6,,,61,66,Completed,
+pending-ap015-r12-scoresby-bye,11 Feb 12,12,regular,Round 12,Scoresby,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP015131,18 Feb 12,13,regular,Round 13,Carmelite,GPHC,8,2,6,4,,,65,53,Completed,
+AP015132,18 Feb 12,13,regular,Round 13,Dendy Park,Old Scotch,8,2,6,4,,,59,54,Completed,
+AP015134,18 Feb 12,13,regular,Round 13,Hampton,Scoresby,10,0,8,0,,,59,43,Completed,
+pending-ap015-r13-bye-mordialloc,18 Feb 12,13,regular,Round 13,Bye,Mordialloc,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP015141,25 Feb 12,14,regular,Round 14,Carmelite,Dendy Park,9,1,7,2,,,57,33,Completed,
+AP015142,25 Feb 12,14,regular,Round 14,Old Scotch,GPHC,1,9,3,7,,,47,61,Completed,
+AP015144,25 Feb 12,14,regular,Round 14,Scoresby,Mordialloc,5,5,2,2,,,25,21,Completed,
+pending-ap015-r14-bye-hampton,25 Feb 12,14,regular,Round 14,Bye,Hampton,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP015301,,16,semi_final,Semi-final,Carmelite,Hampton,7,3,4,4,,,44,43,Completed,
+AP015302,,16,semi_final,Semi-final,Scoresby,Mordialloc,8.5,1.5,6,1,,,51,32,Completed,
+AP015311,,16,semi_final,Semi-final,Hampton,Scoresby,3,7,5,5,,,46,51,Completed,
+AP015321,,17,grand_final,Grand final · TROLS entry 2,Carmelite,Scoresby,1.5,8.5,2,5,,,34,46,Completed,

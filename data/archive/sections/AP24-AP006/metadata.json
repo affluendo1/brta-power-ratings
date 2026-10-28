@@ -1,0 +1,98 @@
+{
+  "asset_id": "AP24-AP006",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 11/12",
+  "season_id": "AP24",
+  "season_label": "Summer 11/12",
+  "source_section_code": "AP006",
+  "section_label": "Mens Rubbers 3",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Hampton U/C",
+      "wins": 9,
+      "points": 77,
+      "percentage": 153.78,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "St Pats Mentone 1",
+      "wins": 6,
+      "points": 57,
+      "percentage": 101.48,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Patterson Lakes",
+      "wins": 4,
+      "points": 53.5,
+      "percentage": 124.24,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Caulfield Grammar",
+      "wins": 6,
+      "points": 49,
+      "percentage": 94.96,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Victory Park",
+      "wins": 4,
+      "points": 45.5,
+      "percentage": 91.54,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "St Pats Mentone 2",
+      "wins": 2,
+      "points": 31,
+      "percentage": 83.22,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Sacred Heart Kew",
+      "wins": 0,
+      "points": 23,
+      "percentage": 63.57,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP24-AP006",
+  "fixtures": 60,
+  "completed_fixtures": 37,
+  "draw_fixtures": 60,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 144,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP006062 doubles No. 3: '1-1'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP006062 doubles No. 4: '2-1'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

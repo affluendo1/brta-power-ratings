@@ -1,0 +1,95 @@
+{
+  "asset_id": "AP47-AP005",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 23/24",
+  "season_id": "AP47",
+  "season_label": "Summer 23/24",
+  "source_section_code": "AP005",
+  "section_label": "Mens S/D 5",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Royal South Yarra Gold",
+      "wins": 8,
+      "points": 81,
+      "percentage": 141.16,
+      "marker": ""
+    },
+    {
+      "position": 2,
+      "team": "St Anthony's",
+      "wins": 6,
+      "points": 69,
+      "percentage": 115.42,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "BLTC",
+      "wins": 6,
+      "points": 64,
+      "percentage": 104.7,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Royal South Yarra Navy",
+      "wins": 5,
+      "points": 63,
+      "percentage": 109.91,
+      "marker": "P"
+    },
+    {
+      "position": 5,
+      "team": "Carmelite",
+      "wins": 5,
+      "points": 61,
+      "percentage": 93.09,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Caulfield Rec",
+      "wins": 5,
+      "points": 60,
+      "percentage": 97.0,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Kings Park Blue",
+      "wins": 1,
+      "points": 22,
+      "percentage": 64.04,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP47-AP005",
+  "fixtures": 59,
+  "completed_fixtures": 38,
+  "draw_fixtures": 59,
+  "singles_rubbers": 152,
+  "doubles_rubbers": 76,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

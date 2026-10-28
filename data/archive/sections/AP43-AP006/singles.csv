@@ -1,0 +1,185 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP006031,06 Nov 21,3,BLTC,Dendy Park,No. 1,Shadi Taleb,Steve Bendel,Shadi Taleb,8-2,8,2,1,0,Completed,true,false,false
+AP006031,06 Nov 21,3,BLTC,Dendy Park,No. 2,Ilai Manor,Anthony Murray,Anthony Murray,6-8,6,8,0,1,Completed,true,false,false
+AP006031,06 Nov 21,3,BLTC,Dendy Park,No. 3,Kai Ballantyne,Trevor Cohen,Kai Ballantyne,8-6,8,6,1,0,Completed,true,false,false
+AP006031,06 Nov 21,3,BLTC,Dendy Park,No. 4,Austin Taleb,Bruce Watkins,Bruce Watkins,3-8,3,8,0,1,Completed,true,false,false
+AP006032,06 Nov 21,3,Maccabi,Mentone,No. 1,Marcus Frajman,Alex Hatziladas,Marcus Frajman,8-2,8,2,1,0,Completed,true,false,false
+AP006032,06 Nov 21,3,Maccabi,Mentone,No. 2,Ryan Behr,Travis Kinsman,Travis Kinsman,0-8,0,8,0,1,Completed,true,false,false
+AP006032,06 Nov 21,3,Maccabi,Mentone,No. 3,Adam Needleman,Luke Kinsman,Adam Needleman,8-1,8,1,1,0,Completed,true,false,false
+AP006032,06 Nov 21,3,Maccabi,Mentone,No. 4,Stephen Kleid,Demetri Kogas,Demetri Kogas,3-8,3,8,0,1,Completed,true,true,false
+AP006033,06 Nov 21,3,Caulfield Rec,Elsternwick Park,No. 1,Josh Dosser,Joe Abadi,Josh Dosser,8-7,8,7,1,0,Completed,true,false,true
+AP006033,06 Nov 21,3,Caulfield Rec,Elsternwick Park,No. 2,Gary Allan,Adam Neilands,Adam Neilands,6-8,6,8,0,1,Completed,true,false,false
+AP006033,06 Nov 21,3,Caulfield Rec,Elsternwick Park,No. 3,Tanu Bhaskar,Shannon Keough,Shannon Keough,0-8,0,8,0,1,Completed,true,false,false
+AP006033,06 Nov 21,3,Caulfield Rec,Elsternwick Park,No. 4,Matt Taylor,Brad Fenech,Brad Fenech,5-8,5,8,0,1,Completed,true,false,false
+AP006034,06 Nov 21,3,Coatesville,Clarinda,No. 1,Bradley Larkins,Tri Dinh,Bradley Larkins,8-5,8,5,1,0,Completed,true,false,false
+AP006034,06 Nov 21,3,Coatesville,Clarinda,No. 2,Luke McDonald,Kosta Pliatsikas,Luke McDonald,8-0,8,0,1,0,Completed,true,false,false
+AP006034,06 Nov 21,3,Coatesville,Clarinda,No. 3,Callum Rankin,Cory Hall,Cory Hall,0-8,0,8,0,1,Completed,true,false,false
+AP006034,06 Nov 21,3,Coatesville,Clarinda,No. 4,Daniel Dela Cruz,Johnny Pliatsikas,Daniel Dela Cruz,8-0,8,0,1,0,Completed,true,true,false
+AP006051,20 Nov 21,5,Caulfield Rec,Coatesville,No. 1,Josh Dosser,Vince Ho,Vince Ho,2-8,2,8,0,1,Completed,true,false,false
+AP006051,20 Nov 21,5,Caulfield Rec,Coatesville,No. 2,Gary Allan,Bradley Larkins,Gary Allan,8-7,8,7,1,0,Completed,true,false,false
+AP006051,20 Nov 21,5,Caulfield Rec,Coatesville,No. 3,Matt Taylor,Jenson Yakota-Ho,Jenson Yakota-Ho,4-8,4,8,0,1,Completed,true,false,false
+AP006051,20 Nov 21,5,Caulfield Rec,Coatesville,No. 4,Miguel Sison,Daniel Dela Cruz,Daniel Dela Cruz,2-8,2,8,0,1,Completed,true,false,true
+AP006052,20 Nov 21,5,Mentone,Dendy Park,No. 1,Nikola Rakovic,Steve Bendel,Steve Bendel,6-8,6,8,0,1,Completed,true,false,false
+AP006052,20 Nov 21,5,Mentone,Dendy Park,No. 2,Alex Hatziladas,Anthony Murray,Alex Hatziladas,8-6,8,6,1,0,Completed,true,false,false
+AP006052,20 Nov 21,5,Mentone,Dendy Park,No. 3,Demetri Kogas,Glen Felsenthal,Glen Felsenthal,6-8,6,8,0,1,Completed,true,false,false
+AP006052,20 Nov 21,5,Mentone,Dendy Park,No. 4,Yarden Lashchover,Anthony Saul,Anthony Saul,6-8,6,8,0,1,Completed,true,false,false
+AP006053,20 Nov 21,5,Clarinda,Elsternwick Park,No. 1,Tri Dinh,Daniel Thompson,Daniel Thompson,2-8,2,8,0,1,Completed,true,false,false
+AP006053,20 Nov 21,5,Clarinda,Elsternwick Park,No. 2,Kosta Pliatsikas,Adam Neilands,Adam Neilands,1-8,1,8,0,1,Completed,true,false,false
+AP006053,20 Nov 21,5,Clarinda,Elsternwick Park,No. 3,Cory Hall,Shannon Keough,Shannon Keough,1-8,1,8,0,1,Completed,true,false,false
+AP006053,20 Nov 21,5,Clarinda,Elsternwick Park,No. 4,David James,Viranga Senadipathy,Viranga Senadipathy,7-8,7,8,0,1,Completed,true,true,false
+AP006054,20 Nov 21,5,BLTC,Maccabi,No. 1,[Unnamed emergency — TROLS AP006054 home code 1],Jonny Henquin,Jonny Henquin,0-8,0,8,0,1,Completed,false,true,false
+AP006054,20 Nov 21,5,BLTC,Maccabi,No. 2,Ilai Manor,Lachie Zuker,Lachie Zuker,3-8,3,8,0,1,Completed,true,false,false
+AP006054,20 Nov 21,5,BLTC,Maccabi,No. 3,Kai Ballantyne,Marcus Frajman,Marcus Frajman,5-8,5,8,0,1,Completed,true,false,false
+AP006054,20 Nov 21,5,BLTC,Maccabi,No. 4,[Unnamed emergency — TROLS AP006054 home code 4],Adam Needleman,Adam Needleman,0-8,0,8,0,1,Completed,false,true,false
+AP006061,27 Nov 21,6,Maccabi,Caulfield Rec,No. 1,Jonny Henquin,Gary Allan,Gary Allan,7-8,7,8,0,1,Completed,true,false,false
+AP006061,27 Nov 21,6,Maccabi,Caulfield Rec,No. 2,Lachie Zuker,Ian Eddington,Lachie Zuker,8-2,8,2,1,0,Completed,true,false,false
+AP006061,27 Nov 21,6,Maccabi,Caulfield Rec,No. 3,Marcus Frajman,Tanu Bhaskar,Marcus Frajman,8-2,8,2,1,0,Completed,true,false,false
+AP006061,27 Nov 21,6,Maccabi,Caulfield Rec,No. 4,Ryan Behr,Michael Klas,Ryan Behr,8-2,8,2,1,0,Completed,true,false,true
+AP006062,27 Nov 21,6,Coatesville,BLTC,No. 1,Vince Ho,Shadi Taleb,Shadi Taleb,4-8,4,8,0,1,Completed,true,false,false
+AP006062,27 Nov 21,6,Coatesville,BLTC,No. 2,Christopher Chia,Kai Ballantyne,Kai Ballantyne,6-8,6,8,0,1,Completed,true,false,false
+AP006062,27 Nov 21,6,Coatesville,BLTC,No. 3,Callum Rankin,Austin Taleb,Callum Rankin,8-2,8,2,1,0,Completed,true,false,false
+AP006062,27 Nov 21,6,Coatesville,BLTC,No. 4,Jenson Yakota-Ho,Harrison Tzounos,Jenson Yakota-Ho,8-0,8,0,1,0,Completed,true,false,true
+AP006063,27 Nov 21,6,Dendy Park,Clarinda,No. 1,Anthony Murray,Tri Dinh,Anthony Murray,8-7,8,7,1,0,Completed,true,false,false
+AP006063,27 Nov 21,6,Dendy Park,Clarinda,No. 2,Trevor Cohen,Kosta Pliatsikas,Trevor Cohen,8-1,8,1,1,0,Completed,true,false,false
+AP006063,27 Nov 21,6,Dendy Park,Clarinda,No. 3,Bruce Watkins,Cory Hall,Bruce Watkins,8-6,8,6,1,0,Completed,true,false,false
+AP006063,27 Nov 21,6,Dendy Park,Clarinda,No. 4,Peter Fleming,Johnny Pliatsikas,Peter Fleming,8-2,8,2,1,0,Completed,true,false,false
+AP006064,27 Nov 21,6,Elsternwick Park,Mentone,No. 1,Daniel Thompson,Travis Kinsman,Travis Kinsman,5-8,5,8,0,1,Completed,true,false,false
+AP006064,27 Nov 21,6,Elsternwick Park,Mentone,No. 2,Shannon Keough,Alex Hatziladas,Shannon Keough,8-3,8,3,1,0,Completed,true,false,false
+AP006064,27 Nov 21,6,Elsternwick Park,Mentone,No. 3,Ben Nguyen,Luke Kinsman,Ben Nguyen,8-0,8,0,1,0,Completed,true,false,false
+AP006064,27 Nov 21,6,Elsternwick Park,Mentone,No. 4,Ben Wijay,Demetri Kogas,Ben Wijay,8-6,8,6,1,0,Completed,true,true,false
+AP006071,04 Dec 21,7,BLTC,Caulfield Rec,No. 1,Shadi Taleb,Josh Dosser,Shadi Taleb,8-1,8,1,1,0,Completed,true,false,false
+AP006071,04 Dec 21,7,BLTC,Caulfield Rec,No. 2,Ilai Manor,Gary Allan,Gary Allan,3-8,3,8,0,1,Completed,true,false,false
+AP006071,04 Dec 21,7,BLTC,Caulfield Rec,No. 3,Kai Ballantyne,Matt Taylor,Kai Ballantyne,8-1,8,1,1,0,Completed,true,false,false
+AP006071,04 Dec 21,7,BLTC,Caulfield Rec,No. 4,Austin Taleb,Miguel Sison,Austin Taleb,8-1,8,1,1,0,Completed,true,false,false
+AP006072,04 Dec 21,7,Maccabi,Coatesville,No. 1,Lachie Zuker,Bradley Larkins,Bradley Larkins,5-8,5,8,0,1,Completed,true,false,false
+AP006072,04 Dec 21,7,Maccabi,Coatesville,No. 2,Marcus Frajman,Christopher Chia,Marcus Frajman,8-3,8,3,1,0,Completed,true,false,false
+AP006072,04 Dec 21,7,Maccabi,Coatesville,No. 3,Ryan Behr,Callum Rankin,Callum Rankin,6-8,6,8,0,1,Completed,true,false,false
+AP006072,04 Dec 21,7,Maccabi,Coatesville,No. 4,Daniel Henquin,Daniel Dela Cruz,Daniel Dela Cruz,5-8,5,8,0,1,Completed,true,false,true
+AP006073,04 Dec 21,7,Mentone,Clarinda,No. 1,Nikola Rakovic,Kosta Pliatsikas,Nikola Rakovic,8-1,8,1,1,0,Completed,true,false,false
+AP006073,04 Dec 21,7,Mentone,Clarinda,No. 2,Alex Hatziladas,David James,Alex Hatziladas,8-3,8,3,1,0,Completed,true,false,true
+AP006073,04 Dec 21,7,Mentone,Clarinda,No. 3,Demetri Kogas,Johnny Pliatsikas,Demetri Kogas,8-1,8,1,1,0,Completed,true,false,false
+AP006073,04 Dec 21,7,Mentone,Clarinda,No. 4,Yarden Lashchover,Jackson Balalovski,Yarden Lashchover,8-0,8,0,1,0,Completed,true,false,false
+AP006074,04 Dec 21,7,Dendy Park,Elsternwick Park,No. 1,Steve Bendel,Adam Neilands,Steve Bendel,8-0,8,0,1,0,Completed,true,false,false
+AP006074,04 Dec 21,7,Dendy Park,Elsternwick Park,No. 2,Glen Felsenthal,Shannon Keough,Shannon Keough,5-8,5,8,0,1,Completed,true,false,false
+AP006074,04 Dec 21,7,Dendy Park,Elsternwick Park,No. 3,Bruce Watkins,Viranga Senadipathy,Bruce Watkins,8-3,8,3,1,0,Completed,true,false,false
+AP006074,04 Dec 21,7,Dendy Park,Elsternwick Park,No. 4,Bill Craig,Ben Nguyen,Ben Nguyen,2-8,2,8,0,1,Completed,true,true,false
+AP006081,11 Dec 21,8,Elsternwick Park,BLTC,No. 1,Daniel Thompson,Shadi Taleb,Shadi Taleb,1-8,1,8,0,1,Completed,true,false,false
+AP006081,11 Dec 21,8,Elsternwick Park,BLTC,No. 2,Adam Neilands,Ilai Manor,Adam Neilands,8-5,8,5,1,0,Completed,true,false,false
+AP006081,11 Dec 21,8,Elsternwick Park,BLTC,No. 3,Ben Nguyen,Stefan Desovski,Ben Nguyen,8-5,8,5,1,0,Completed,true,false,true
+AP006081,11 Dec 21,8,Elsternwick Park,BLTC,No. 4,Viranga Senadipathy,Austin Taleb,Viranga Senadipathy,8-7,8,7,1,0,Completed,true,false,false
+AP006082,11 Dec 21,8,Clarinda,Maccabi,No. 1,Tri Dinh,Ryan Behr,Ryan Behr,4-8,4,8,0,1,Completed,true,false,false
+AP006082,11 Dec 21,8,Clarinda,Maccabi,No. 2,Kosta Pliatsikas,Adam Needleman,Adam Needleman,1-8,1,8,0,1,Completed,true,false,false
+AP006082,11 Dec 21,8,Clarinda,Maccabi,No. 3,Johnny Pliatsikas,Daniel Henquin,Daniel Henquin,2-8,2,8,0,1,Completed,true,false,false
+AP006082,11 Dec 21,8,Clarinda,Maccabi,No. 4,Jackson Balalovski,Stephen Kleid,Stephen Kleid,0-8,0,8,0,1,Completed,true,false,true
+AP006083,11 Dec 21,8,Dendy Park,Caulfield Rec,No. 1,Steve Bendel,Josh Dosser,Josh Dosser,0-8,0,8,0,1,Completed,true,false,false
+AP006083,11 Dec 21,8,Dendy Park,Caulfield Rec,No. 2,Anthony Murray,Gary Allan,Anthony Murray,8-4,8,4,1,0,Completed,true,false,false
+AP006083,11 Dec 21,8,Dendy Park,Caulfield Rec,No. 3,Peter Fleming,Ian Eddington,Ian Eddington,2-8,2,8,0,1,Completed,true,false,false
+AP006083,11 Dec 21,8,Dendy Park,Caulfield Rec,No. 4,Anthony Saul,Matt Taylor,Anthony Saul,8-3,8,3,1,0,Completed,true,false,false
+AP006084,11 Dec 21,8,Mentone,Coatesville,No. 1,Koli Loto'aniu,Vince Ho,Vince Ho,7-8,7,8,0,1,Completed,true,true,false
+AP006084,11 Dec 21,8,Mentone,Coatesville,No. 2,Alex Hatziladas,Bradley Larkins,Alex Hatziladas,8-6,8,6,1,0,Completed,true,false,false
+AP006084,11 Dec 21,8,Mentone,Coatesville,No. 3,Yarden Lashchover,Callum Rankin,Callum Rankin,3-8,3,8,0,1,Completed,true,false,false
+AP006084,11 Dec 21,8,Mentone,Coatesville,No. 4,Julian Prieto,Jack Callaghan,Jack Callaghan,3-8,3,8,0,1,Completed,true,true,false
+AP006091,29 Jan 22,9,BLTC,Mentone,No. 1,Shadi Taleb,Nikola Rakovic,Shadi Taleb,8-2,8,2,1,0,Completed,true,false,false
+AP006091,29 Jan 22,9,BLTC,Mentone,No. 2,Ilai Manor,Alex Hatziladas,Alex Hatziladas,7-8,7,8,0,1,Completed,true,false,false
+AP006091,29 Jan 22,9,BLTC,Mentone,No. 3,Kai Ballantyne,Demetri Kogas,Kai Ballantyne,8-4,8,4,1,0,Completed,true,false,false
+AP006091,29 Jan 22,9,BLTC,Mentone,No. 4,Austin Taleb,Yarden Lashchover,Yarden Lashchover,4-8,4,8,0,1,Completed,true,false,false
+AP006092,29 Jan 22,9,Maccabi,Elsternwick Park,No. 1,Jonny Henquin,Adam Neilands,Jonny Henquin,8-4,8,4,1,0,Completed,true,false,false
+AP006092,29 Jan 22,9,Maccabi,Elsternwick Park,No. 2,Lachie Zuker,Shannon Keough,Lachie Zuker,8-2,8,2,1,0,Completed,true,false,false
+AP006092,29 Jan 22,9,Maccabi,Elsternwick Park,No. 3,Marcus Frajman,Marcelo Scalia,Marcus Frajman,8-5,8,5,1,0,Completed,true,false,true
+AP006092,29 Jan 22,9,Maccabi,Elsternwick Park,No. 4,Ryan Behr,Dror Collins,Ryan Behr,8-2,8,2,1,0,Completed,true,false,false
+AP006093,29 Jan 22,9,Caulfield Rec,Clarinda,No. 1,Josh Dosser,Kosta Pliatsikas,Josh Dosser,8-2,8,2,1,0,Completed,true,false,false
+AP006093,29 Jan 22,9,Caulfield Rec,Clarinda,No. 2,Gary Allan,Cory Hall,Gary Allan,8-0,8,0,1,0,Completed,true,false,false
+AP006093,29 Jan 22,9,Caulfield Rec,Clarinda,No. 3,Ian Eddington,Johnny Pliatsikas,Ian Eddington,8-3,8,3,1,0,Completed,true,false,false
+AP006093,29 Jan 22,9,Caulfield Rec,Clarinda,No. 4,Chris Liolios,Jackson Balalovski,Chris Liolios,8-3,8,3,1,0,Completed,true,true,false
+AP006094,29 Jan 22,9,Coatesville,Dendy Park,No. 1,Bradley Larkins,Steve Bendel,Bradley Larkins,8-5,8,5,1,0,Completed,true,false,false
+AP006094,29 Jan 22,9,Coatesville,Dendy Park,No. 2,Christopher Chia,Chris Odgers,Christopher Chia,8-5,8,5,1,0,Completed,true,false,false
+AP006094,29 Jan 22,9,Coatesville,Dendy Park,No. 3,Luke McDonald,Bruce Watkins,Luke McDonald,8-6,8,6,1,0,Completed,true,false,false
+AP006094,29 Jan 22,9,Coatesville,Dendy Park,No. 4,Callum Rankin,Ian Wilkinson,Callum Rankin,8-1,8,1,1,0,Completed,true,false,false
+AP006101,05 Feb 22,10,Dendy Park,BLTC,No. 1,Steve Bendel,Shadi Taleb,Shadi Taleb,2-8,2,8,0,1,Completed,true,false,false
+AP006101,05 Feb 22,10,Dendy Park,BLTC,No. 2,Anthony Murray,Ilai Manor,Ilai Manor,5-8,5,8,0,1,Completed,true,false,false
+AP006101,05 Feb 22,10,Dendy Park,BLTC,No. 3,Chris Odgers,Kai Ballantyne,Kai Ballantyne,1-8,1,8,0,1,Completed,true,false,false
+AP006101,05 Feb 22,10,Dendy Park,BLTC,No. 4,Peter Fleming,Austin Taleb,Peter Fleming,8-7,8,7,1,0,Completed,true,false,false
+AP006102,05 Feb 22,10,Mentone,Maccabi,No. 1,Nikola Rakovic,Jonny Henquin,Nikola Rakovic,8-2,8,2,1,0,Completed,true,false,false
+AP006102,05 Feb 22,10,Mentone,Maccabi,No. 2,Luke Kinsman,Lachie Zuker,Lachie Zuker,1-8,1,8,0,1,Completed,true,false,false
+AP006102,05 Feb 22,10,Mentone,Maccabi,No. 3,Demetri Kogas,Marcus Frajman,Demetri Kogas,8-7,8,7,1,0,Completed,true,false,false
+AP006102,05 Feb 22,10,Mentone,Maccabi,No. 4,Yarden Lashchover,Ryan Behr,Ryan Behr,0-8,0,8,0,1,Completed,true,false,false
+AP006103,05 Feb 22,10,Elsternwick Park,Caulfield Rec,No. 1,Daniel Thompson,Gary Allan,Daniel Thompson,8-5,8,5,1,0,Completed,true,false,false
+AP006103,05 Feb 22,10,Elsternwick Park,Caulfield Rec,No. 2,Shannon Keough,Ian Eddington,Shannon Keough,8-3,8,3,1,0,Completed,true,false,false
+AP006103,05 Feb 22,10,Elsternwick Park,Caulfield Rec,No. 3,Ben Wijay,Matt Taylor,Ben Wijay,8-4,8,4,1,0,Completed,true,true,false
+AP006103,05 Feb 22,10,Elsternwick Park,Caulfield Rec,No. 4,Matthew Duran,Miguel Sison,Matthew Duran,8-0,8,0,1,0,Completed,true,true,false
+AP006104,05 Feb 22,10,Clarinda,Coatesville,No. 1,Tri Dinh,Bradley Larkins,Bradley Larkins,1-8,1,8,0,1,Completed,true,false,false
+AP006104,05 Feb 22,10,Clarinda,Coatesville,No. 2,Kosta Pliatsikas,Christopher Chia,Christopher Chia,1-8,1,8,0,1,Completed,true,false,false
+AP006104,05 Feb 22,10,Clarinda,Coatesville,No. 3,Johnny Pliatsikas,Luke McDonald,Luke McDonald,1-8,1,8,0,1,Completed,true,false,false
+AP006104,05 Feb 22,10,Clarinda,Coatesville,No. 4,Jackson Balalovski,Callum Rankin,Callum Rankin,2-8,2,8,0,1,Completed,true,false,false
+AP006111,12 Feb 22,11,BLTC,Clarinda,No. 1,Shadi Taleb,Tri Dinh,Shadi Taleb,8-1,8,1,1,0,Completed,true,false,false
+AP006111,12 Feb 22,11,BLTC,Clarinda,No. 2,Ilai Manor,Kosta Pliatsikas,Ilai Manor,8-2,8,2,1,0,Completed,true,false,false
+AP006111,12 Feb 22,11,BLTC,Clarinda,No. 3,Kai Ballantyne,Johnny Pliatsikas,Kai Ballantyne,8-1,8,1,1,0,Completed,true,false,false
+AP006111,12 Feb 22,11,BLTC,Clarinda,No. 4,Austin Taleb,Jackson Balalovski,Austin Taleb,8-0,8,0,1,0,Completed,true,false,false
+AP006112,12 Feb 22,11,Maccabi,Dendy Park,No. 1,Alan Liebowitz,Steve Bendel,Steve Bendel,3-8,3,8,0,1,Completed,true,true,false
+AP006112,12 Feb 22,11,Maccabi,Dendy Park,No. 2,Lachie Zuker,Anthony Murray,Lachie Zuker,8-6,8,6,1,0,Completed,true,false,false
+AP006112,12 Feb 22,11,Maccabi,Dendy Park,No. 3,Ryan Behr,Bruce Watkins,Ryan Behr,8-0,8,0,1,0,Completed,true,false,false
+AP006112,12 Feb 22,11,Maccabi,Dendy Park,No. 4,Adam Needleman,Peter Fleming,Adam Needleman,8-2,8,2,1,0,Completed,true,false,false
+AP006113,12 Feb 22,11,Caulfield Rec,Mentone,No. 1,Josh Dosser,Nikola Rakovic,Nikola Rakovic,4-8,4,8,0,1,Completed,true,false,false
+AP006113,12 Feb 22,11,Caulfield Rec,Mentone,No. 2,Gary Allan,Travis Kinsman,Travis Kinsman,2-8,2,8,0,1,Completed,true,false,false
+AP006113,12 Feb 22,11,Caulfield Rec,Mentone,No. 3,Ian Eddington,Alex Hatziladas,Alex Hatziladas,7-8,7,8,0,1,Completed,true,false,false
+AP006113,12 Feb 22,11,Caulfield Rec,Mentone,No. 4,Matt Taylor,Luke Kinsman,Matt Taylor,8-4,8,4,1,0,Completed,true,false,false
+AP006114,12 Feb 22,11,Coatesville,Elsternwick Park,No. 1,Luke McDonald,Daniel Thompson,Luke McDonald,8-1,8,1,1,0,Completed,true,false,false
+AP006114,12 Feb 22,11,Coatesville,Elsternwick Park,No. 2,Callum Rankin,Adam Neilands,Callum Rankin,8-5,8,5,1,0,Completed,true,false,false
+AP006114,12 Feb 22,11,Coatesville,Elsternwick Park,No. 3,Jack Callaghan,Shannon Keough,Shannon Keough,6-8,6,8,0,1,Completed,true,false,false
+AP006114,12 Feb 22,11,Coatesville,Elsternwick Park,No. 4,Daniel McDonald,Brad Fenech,Brad Fenech,5-8,5,8,0,1,Completed,true,true,false
+AP006121,19 Feb 22,12,Coatesville,Caulfield Rec,No. 1,Bradley Larkins,Josh Dosser,Bradley Larkins,8-5,8,5,1,0,Completed,true,false,false
+AP006121,19 Feb 22,12,Coatesville,Caulfield Rec,No. 2,Luke McDonald,Gary Allan,Luke McDonald,8-2,8,2,1,0,Completed,true,false,false
+AP006121,19 Feb 22,12,Coatesville,Caulfield Rec,No. 3,Callum Rankin,Matt Taylor,Callum Rankin,8-1,8,1,1,0,Completed,true,false,false
+AP006121,19 Feb 22,12,Coatesville,Caulfield Rec,No. 4,Jenson Yakota-Ho,Miguel Sison,Jenson Yakota-Ho,8-0,8,0,1,0,Completed,true,false,false
+AP006122,19 Feb 22,12,Dendy Park,Mentone,No. 1,Steve Bendel,Koli Loto'aniu,Koli Loto'aniu,3-8,3,8,0,1,Completed,true,false,true
+AP006122,19 Feb 22,12,Dendy Park,Mentone,No. 2,Anthony Murray,Alex Hatziladas,Alex Hatziladas,2-8,2,8,0,1,Completed,true,false,false
+AP006122,19 Feb 22,12,Dendy Park,Mentone,No. 3,Chris Odgers,Demetri Kogas,Demetri Kogas,0-8,0,8,0,1,Completed,true,false,false
+AP006122,19 Feb 22,12,Dendy Park,Mentone,No. 4,Peter Fleming,Yarden Lashchover,Yarden Lashchover,4-8,4,8,0,1,Completed,true,false,false
+AP006123,19 Feb 22,12,Elsternwick Park,Clarinda,No. 1,Ben Nguyen,Kosta Pliatsikas,Ben Nguyen,8-1,8,1,1,0,Completed,true,false,false
+AP006123,19 Feb 22,12,Elsternwick Park,Clarinda,No. 2,Daniel Thompson,Cory Hall,Daniel Thompson,8-5,8,5,1,0,Completed,true,false,false
+AP006123,19 Feb 22,12,Elsternwick Park,Clarinda,No. 3,Dror Collins,Johnny Pliatsikas,Dror Collins,8-0,8,0,1,0,Completed,true,false,false
+AP006123,19 Feb 22,12,Elsternwick Park,Clarinda,No. 4,Brad Fenech,Zac Sevastas,Brad Fenech,8-0,8,0,1,0,Completed,true,false,true
+AP006124,19 Feb 22,12,Maccabi,BLTC,No. 1,Jonny Henquin,Shadi Taleb,Shadi Taleb,4-8,4,8,0,1,Completed,true,false,false
+AP006124,19 Feb 22,12,Maccabi,BLTC,No. 2,Lachie Zuker,Ilai Manor,Ilai Manor,5-8,5,8,0,1,Completed,true,false,false
+AP006124,19 Feb 22,12,Maccabi,BLTC,No. 3,Adam Needleman,Kai Ballantyne,Kai Ballantyne,7-8,7,8,0,1,Completed,true,false,false
+AP006124,19 Feb 22,12,Maccabi,BLTC,No. 4,Hugh Warren-smith,Austin Taleb,Austin Taleb,7-8,7,8,0,1,Completed,true,true,false
+AP006131,26 Feb 22,13,Caulfield Rec,Maccabi,No. 1,Josh Dosser,Jonny Henquin,Josh Dosser,8-5,8,5,1,0,Completed,true,false,false
+AP006131,26 Feb 22,13,Caulfield Rec,Maccabi,No. 2,Gary Allan,Ryan Behr,Ryan Behr,3-8,3,8,0,1,Completed,true,false,false
+AP006131,26 Feb 22,13,Caulfield Rec,Maccabi,No. 3,Ian Eddington,Adam Needleman,Adam Needleman,7-8,7,8,0,1,Completed,true,false,false
+AP006131,26 Feb 22,13,Caulfield Rec,Maccabi,No. 4,Frankie Hillier,Alan Liebowitz,Alan Liebowitz,1-8,1,8,0,1,Completed,true,true,true
+AP006132,26 Feb 22,13,BLTC,Coatesville,No. 1,Shadi Taleb,Bradley Larkins,Shadi Taleb,8-0,8,0,1,0,Completed,true,false,false
+AP006132,26 Feb 22,13,BLTC,Coatesville,No. 2,Ilai Manor,Luke McDonald,Luke McDonald,5-8,5,8,0,1,Completed,true,false,false
+AP006132,26 Feb 22,13,BLTC,Coatesville,No. 3,Kai Ballantyne,Jack Callaghan,Jack Callaghan,1-8,1,8,0,1,Completed,true,false,false
+AP006132,26 Feb 22,13,BLTC,Coatesville,No. 4,Stefan Desovski,Daniel McDonald,Stefan Desovski,8-0,8,0,1,0,Completed,true,true,true
+AP006133,26 Feb 22,13,Clarinda,Dendy Park,No. 1,Tri Dinh,Anthony Murray,Tri Dinh,8-3,8,3,1,0,Completed,true,false,false
+AP006133,26 Feb 22,13,Clarinda,Dendy Park,No. 2,Kosta Pliatsikas,Trevor Cohen,Trevor Cohen,5-8,5,8,0,1,Completed,true,false,false
+AP006133,26 Feb 22,13,Clarinda,Dendy Park,No. 3,Cory Hall,Bruce Watkins,Bruce Watkins,3-8,3,8,0,1,Completed,true,false,false
+AP006133,26 Feb 22,13,Clarinda,Dendy Park,No. 4,Johnny Pliatsikas,Peter Fleming,Peter Fleming,3-8,3,8,0,1,Completed,true,false,false
+AP006134,26 Feb 22,13,Mentone,Elsternwick Park,No. 1,Nikola Rakovic,Daniel Thompson,Nikola Rakovic,8-0,8,0,1,0,Completed,true,false,false
+AP006134,26 Feb 22,13,Mentone,Elsternwick Park,No. 2,Travis Kinsman,Adam Neilands,Travis Kinsman,8-6,8,6,1,0,Completed,true,false,false
+AP006134,26 Feb 22,13,Mentone,Elsternwick Park,No. 3,Demetri Kogas,Brad Fenech,Brad Fenech,7-8,7,8,0,1,Completed,true,false,false
+AP006134,26 Feb 22,13,Mentone,Elsternwick Park,No. 4,Jim Hatziladas,Roshen Singh,Jim Hatziladas,8-0,8,0,1,0,Completed,true,false,true
+AP006141,05 Mar 22,14,Caulfield Rec,BLTC,No. 1,Vlad Gisca,Shadi Taleb,Shadi Taleb,5-8,5,8,0,1,Completed,true,true,false
+AP006141,05 Mar 22,14,Caulfield Rec,BLTC,No. 2,Gary Allan,Ilai Manor,Ilai Manor,3-8,3,8,0,1,Completed,true,false,false
+AP006141,05 Mar 22,14,Caulfield Rec,BLTC,No. 3,Ian Eddington,Stefan Desovski,Stefan Desovski,4-8,4,8,0,1,Completed,true,false,true
+AP006141,05 Mar 22,14,Caulfield Rec,BLTC,No. 4,Chris Liolios,Austin Taleb,Chris Liolios,8-4,8,4,1,0,Completed,true,true,false
+AP006143,05 Mar 22,14,Clarinda,Mentone,No. 1,Tri Dinh,Nikola Rakovic,Nikola Rakovic,3-8,3,8,0,1,Completed,true,false,false
+AP006143,05 Mar 22,14,Clarinda,Mentone,No. 2,Cory Hall,Luke Kinsman,Luke Kinsman,7-8,7,8,0,1,Completed,true,false,false
+AP006143,05 Mar 22,14,Clarinda,Mentone,No. 3,Johnny Pliatsikas,Demetri Kogas,Demetri Kogas,1-8,1,8,0,1,Completed,true,false,false
+AP006143,05 Mar 22,14,Clarinda,Mentone,No. 4,Zac Sevastas,Yarden Lashchover,Yarden Lashchover,6-8,6,8,0,1,Completed,true,true,false
+AP006144,05 Mar 22,14,Elsternwick Park,Dendy Park,No. 1,Ben Nguyen,Steve Bendel,Ben Nguyen,8-6,8,6,1,0,Completed,true,false,false
+AP006144,05 Mar 22,14,Elsternwick Park,Dendy Park,No. 2,Brad Fenech,Anthony Murray,Anthony Murray,0-8,0,8,0,1,Completed,true,false,false
+AP006144,05 Mar 22,14,Elsternwick Park,Dendy Park,No. 3,Matthew Duran,Bruce Watkins,Bruce Watkins,6-8,6,8,0,1,Completed,true,true,false
+AP006144,05 Mar 22,14,Elsternwick Park,Dendy Park,No. 4,Roshen Singh,Ian Wilkinson,Roshen Singh,8-6,8,6,1,0,Completed,true,true,false
+AP006301,,16,Coatesville,Elsternwick Park,No. 1,Vince Ho,Ben Nguyen,Vince Ho,8-2,8,2,1,0,Completed,true,false,false
+AP006301,,16,Coatesville,Elsternwick Park,No. 2,Bradley Larkins,Daniel Thompson,Bradley Larkins,8-5,8,5,1,0,Completed,true,false,false
+AP006301,,16,Coatesville,Elsternwick Park,No. 3,Luke McDonald,Adam Neilands,Luke McDonald,8-3,8,3,1,0,Completed,true,false,false
+AP006301,,16,Coatesville,Elsternwick Park,No. 4,Callum Rankin,Brad Fenech,Callum Rankin,8-6,8,6,1,0,Completed,true,false,false
+AP006302,,16,Maccabi,BLTC,No. 1,Jonny Henquin,Shadi Taleb,Jonny Henquin,8-1,8,1,1,0,Completed,true,false,false
+AP006302,,16,Maccabi,BLTC,No. 2,Lachie Zuker,Ilai Manor,Lachie Zuker,8-6,8,6,1,0,Completed,true,false,false
+AP006302,,16,Maccabi,BLTC,No. 3,Marcus Frajman,Kai Ballantyne,Kai Ballantyne,0-8,0,8,0,1,Completed,true,false,false
+AP006302,,16,Maccabi,BLTC,No. 4,Ryan Behr,Austin Taleb,Ryan Behr,8-2,8,2,1,0,Completed,true,false,false
+AP006321,,17,Coatesville,Maccabi,No. 1,Vince Ho,Jonny Henquin,Vince Ho,8-5,8,5,1,0,Completed,true,false,false
+AP006321,,17,Coatesville,Maccabi,No. 2,Bradley Larkins,Lachie Zuker,Lachie Zuker,2-8,2,8,0,1,Completed,true,false,false
+AP006321,,17,Coatesville,Maccabi,No. 3,Luke McDonald,Marcus Frajman,Luke McDonald,8-4,8,4,1,0,Completed,true,false,false
+AP006321,,17,Coatesville,Maccabi,No. 4,Jenson Yakota-Ho,Ryan Behr,Jenson Yakota-Ho,8-0,8,0,1,0,Completed,true,false,false

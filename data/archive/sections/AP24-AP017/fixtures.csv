@@ -1,0 +1,61 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP017012,08 Oct 11,1,regular,Round 1,Kooyong,GPHC,7,3,5,3,,,38,34,Completed,
+AP017013,08 Oct 11,1,regular,Round 1,Melbourne Univ,Black Rock,10,0,8,1,,,64,38,Completed,
+AP017014,08 Oct 11,1,regular,Round 1,Old Scotch,BLTC,1,9,2,7,,,40,61,Completed,
+pending-ap017-r1-mt-eliza-maccabi,08 Oct 11,1,regular,Round 1,Mt Eliza,Maccabi,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP017021,15 Oct 11,2,regular,Round 2,BLTC,Mt Eliza,2,8,3,5,,,34,45,Completed,
+AP017022,15 Oct 11,2,regular,Round 2,Maccabi,Kooyong,2,8,3,6,,,43,45,Completed,
+AP017023,15 Oct 11,2,regular,Round 2,GPHC,Melbourne Univ,3,7,4,4,,,36,40,Completed,
+AP017024,15 Oct 11,2,regular,Round 2,Black Rock,Old Scotch,10,0,8,0,,,56,9,Completed,
+AP017032,22 Oct 11,3,regular,Round 3,Kooyong,BLTC,8,2,6,2,,,47,38,Completed,
+AP017034,22 Oct 11,3,regular,Round 3,Old Scotch,GPHC,3,7,4,5,,,43,51,Completed,
+pending-ap017-r3-melbourne-univ-maccabi,22 Oct 11,3,regular,Round 3,Melbourne Univ,Maccabi,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap017-r3-mt-eliza-black-rock,22 Oct 11,3,regular,Round 3,Mt Eliza,Black Rock,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP017041,05 Nov 11,4,regular,Round 4,GPHC,Mt Eliza,1,9,3,6,,,41,53,Completed,
+AP017042,05 Nov 11,4,regular,Round 4,Black Rock,Kooyong,9,1,7,2,,,57,43,Completed,
+AP017043,05 Nov 11,4,regular,Round 4,BLTC,Melbourne Univ,9,1,6,2,,,50,35,Completed,
+AP017044,05 Nov 11,4,regular,Round 4,Maccabi,Old Scotch,8,2,5,3,,,42,37,Completed,
+AP017051,12 Nov 11,5,regular,Round 5,Melbourne Univ,Old Scotch,9,1,7,3,,,63,46,Completed,
+AP017052,12 Nov 11,5,regular,Round 5,BLTC,Black Rock,0,10,0,8,,,12,56,Completed,
+AP017053,12 Nov 11,5,regular,Round 5,GPHC,Maccabi,9,1,7,1,,,54,20,Completed,
+AP017054,12 Nov 11,5,regular,Round 5,Mt Eliza,Kooyong,7,3,4,4,,,36,35,Completed,
+pending-ap017-r6-black-rock-gphc,19 Nov 11,6,regular,Round 6,Black Rock,GPHC,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap017-r6-kooyong-melbourne-univ,19 Nov 11,6,regular,Round 6,Kooyong,Melbourne Univ,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap017-r6-maccabi-bltc,19 Nov 11,6,regular,Round 6,Maccabi,BLTC,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap017-r6-old-scotch-mt-eliza,19 Nov 11,6,regular,Round 6,Old Scotch,Mt Eliza,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP017072,26 Nov 11,7,regular,Round 7,Kooyong,Old Scotch,10,0,8,0,,,59,29,Completed,
+pending-ap017-r7-black-rock-maccabi,26 Nov 11,7,regular,Round 7,Black Rock,Maccabi,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap017-r7-bltc-gphc,26 Nov 11,7,regular,Round 7,BLTC,GPHC,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap017-r7-mt-eliza-melbourne-univ,26 Nov 11,7,regular,Round 7,Mt Eliza,Melbourne Univ,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP017081,03 Dec 11,8,regular,Round 8,Maccabi,Mt Eliza,9,1,6,2,,,53,41,Completed,
+AP017082,03 Dec 11,8,regular,Round 8,GPHC,Kooyong,8,2,6,2,,,47,30,Completed,
+AP017083,03 Dec 11,8,regular,Round 8,Black Rock,Melbourne Univ,9,1,7,2,,,61,49,Completed,
+AP017084,03 Dec 11,8,regular,Round 8,BLTC,Old Scotch,8,2,5,3,,,46,33,Completed,
+AP017091,10 Dec 11,9,regular,Round 9,Mt Eliza,BLTC,0,10,0,8,,,0,56,Completed,
+AP017092,10 Dec 11,9,regular,Round 9,Kooyong,Maccabi,8,2,6,3,,,51,37,Completed,
+AP017093,10 Dec 11,9,regular,Round 9,Melbourne Univ,GPHC,7,3,5,4,,,47,45,Completed,
+AP017094,10 Dec 11,9,regular,Round 9,Old Scotch,Black Rock,0,10,0,8,,,18,56,Completed,
+AP017101,17 Dec 11,10,regular,Round 10,Black Rock,Mt Eliza,7,3,5,4,,,55,43,Completed,
+AP017102,17 Dec 11,10,regular,Round 10,BLTC,Kooyong,1,9,1,7,,,24,50,Completed,
+AP017103,17 Dec 11,10,regular,Round 10,Maccabi,Melbourne Univ,8,2,6,3,,,54,45,Completed,
+AP017104,17 Dec 11,10,regular,Round 10,GPHC,Old Scotch,9,1,7,2,,,56,36,Completed,
+AP017111,04 Feb 12,11,regular,Round 11,Mt Eliza,GPHC,0,10,0,8,,,28,58,Completed,
+AP017112,04 Feb 12,11,regular,Round 11,Kooyong,Black Rock,1,9,1,7,,,31,52,Completed,
+AP017113,04 Feb 12,11,regular,Round 11,Melbourne Univ,BLTC,9,1,7,1,,,54,25,Completed,
+AP017114,04 Feb 12,11,regular,Round 11,Old Scotch,Maccabi,1,9,1,7,,,26,52,Completed,
+AP017121,11 Feb 12,12,regular,Round 12,Old Scotch,Melbourne Univ,2,8,4,5,,,48,50,Completed,
+AP017122,11 Feb 12,12,regular,Round 12,Black Rock,BLTC,4,6,6,3,,,45,30,Completed,
+AP017123,11 Feb 12,12,regular,Round 12,Maccabi,GPHC,9,1,6,2,,,50,40,Completed,
+AP017124,11 Feb 12,12,regular,Round 12,Kooyong,Mt Eliza,9,1,7,1,,,49,25,Completed,
+AP017131,18 Feb 12,13,regular,Round 13,Melbourne Univ,Kooyong,9,1,7,2,,,57,45,Completed,
+AP017132,18 Feb 12,13,regular,Round 13,Mt Eliza,Old Scotch,2,8,2,6,,,35,49,Completed,
+AP017133,18 Feb 12,13,regular,Round 13,GPHC,Black Rock,2,8,4,5,,,36,45,Completed,
+AP017134,18 Feb 12,13,regular,Round 13,BLTC,Maccabi,1,9,1,7,,,36,53,Completed,
+AP017141,25 Feb 12,14,regular,Round 14,Melbourne Univ,Mt Eliza,5,5,0,0,,,0,0,Completed,
+AP017142,25 Feb 12,14,regular,Round 14,Old Scotch,Kooyong,1,9,1,7,,,27,56,Completed,
+AP017143,25 Feb 12,14,regular,Round 14,GPHC,BLTC,10,0,8,0,,,57,15,Completed,
+pending-ap017-r14-maccabi-black-rock,25 Feb 12,14,regular,Round 14,Maccabi,Black Rock,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP017301,,16,semi_final,Semi-final,Black Rock,Melbourne Univ,9,1,7,1,,,55,28,Completed,
+AP017302,,16,semi_final,Semi-final,Kooyong,Maccabi,7,3,4,4,,,40,37,Completed,
+AP017311,,16,semi_final,Semi-final,Melbourne Univ,Kooyong,3,7,3,5,,,37,51,Completed,
+AP017321,,17,grand_final,Grand final · TROLS entry 2,Black Rock,Kooyong,9,1,4,0,,,32,15,Completed,

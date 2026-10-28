@@ -1,0 +1,106 @@
+{
+  "asset_id": "AP34-AP010",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 16/17",
+  "season_id": "AP34",
+  "season_label": "Summer 16/17",
+  "source_section_code": "AP010",
+  "section_label": "Mixed Rubbers 6",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Hawthorn 2",
+      "wins": 11,
+      "points": 85,
+      "percentage": 135.53,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "Mordialloc",
+      "wins": 9,
+      "points": 73,
+      "percentage": 121.55,
+      "marker": "P"
+    },
+    {
+      "position": 3,
+      "team": "MCC Glen Iris",
+      "wins": 8,
+      "points": 66,
+      "percentage": 121.71,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Hawthorn 1",
+      "wins": 6,
+      "points": 58,
+      "percentage": 110.89,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Kings Park",
+      "wins": 6,
+      "points": 50,
+      "percentage": 83.97,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "St Pats Mentone",
+      "wins": 3,
+      "points": 40,
+      "percentage": 87.08,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "BLTC",
+      "wins": 4,
+      "points": 38,
+      "percentage": 80.71,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "Albert Reserve",
+      "wins": 4,
+      "points": 38,
+      "percentage": 75.25,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP34-AP010",
+  "fixtures": 60,
+  "completed_fixtures": 56,
+  "draw_fixtures": 60,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 222,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP010301 doubles No. 3: '6-4 6-7'. Missing score not inferred; excluded from ratings and game totals.",
+    "Fixture game totals do not match rubbers for AP010311: TROLS team total 41-27; complete-score total 40-27. Both published records retained."
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "asset_id": "AP49-AP012",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 24/25",
+  "season_id": "AP49",
+  "season_label": "Summer 24/25",
+  "source_section_code": "AP012",
+  "section_label": "Womens S/D 1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "BLTC White",
+      "wins": 9,
+      "points": 92,
+      "percentage": 169.01,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "BLTC Blue",
+      "wins": 7,
+      "points": 87.5,
+      "percentage": 213.36,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "East Malvern",
+      "wins": 4,
+      "points": 62,
+      "percentage": 102.08,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Overport Park",
+      "wins": 6,
+      "points": 61.5,
+      "percentage": 93.43,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Royal South Yarra",
+      "wins": 3,
+      "points": 49,
+      "percentage": 80.76,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Mt Eliza",
+      "wins": 1,
+      "points": 40,
+      "percentage": 62.16,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Hawthorn",
+      "wins": 0,
+      "points": 28,
+      "percentage": 52.56,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP49-AP012",
+  "fixtures": 59,
+  "completed_fixtures": 39,
+  "draw_fixtures": 59,
+  "singles_rubbers": 132,
+  "doubles_rubbers": 73,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP012012 doubles No. 1: '4-4'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP012142 doubles No. 1: '6-7 0-3'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

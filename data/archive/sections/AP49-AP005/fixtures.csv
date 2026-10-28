@@ -1,0 +1,60 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP005011,05 Oct 24,1,regular,Round 1,Elsternwick Park,BLTC Blue,6,4,4,2,,,33,29,Completed,
+AP005012,05 Oct 24,1,regular,Round 1,Mentone,Maccabi,5,5,0,2,,,8,14,Completed,
+AP005013,05 Oct 24,1,regular,Round 1,Royal South Yarra,Carmelite Teal,5,5,0,0,,,7,4,Completed,
+pending-ap005-r1-coatesville-chadstone,05 Oct 24,1,regular,Round 1,Coatesville,Chadstone,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP005021,12 Oct 24,2,regular,Round 2,Chadstone,Elsternwick Park,9,1,7,2,,,60,39,Completed,
+AP005022,12 Oct 24,2,regular,Round 2,BLTC Blue,Mentone,9,1,7,1,,,51,17,Completed,
+AP005023,12 Oct 24,2,regular,Round 2,Maccabi,Royal South Yarra,0,10,0,8,,,32,57,Completed,
+AP005024,12 Oct 24,2,regular,Round 2,Carmelite Teal,Coatesville,9,1,7,1,,,54,27,Completed,
+AP005031,19 Oct 24,3,regular,Round 3,Elsternwick Park,Carmelite Teal,10,0,8,0,,,56,22,Completed,
+AP005032,19 Oct 24,3,regular,Round 3,Mentone,Chadstone,1,9,1,7,,,24,53,Completed,
+AP005033,19 Oct 24,3,regular,Round 3,Royal South Yarra,BLTC Blue,8,2,6,3,,,56,44,Completed,
+AP005034,19 Oct 24,3,regular,Round 3,Coatesville,Maccabi,1,9,1,7,,,33,52,Completed,
+AP005041,26 Oct 24,4,regular,Round 4,Maccabi,Elsternwick Park,7,3,5,4,,,53,48,Completed,
+AP005042,26 Oct 24,4,regular,Round 4,Carmelite Teal,Mentone,1,9,2,7,,,27,56,Completed,
+AP005043,26 Oct 24,4,regular,Round 4,Chadstone,Royal South Yarra,8,2,5,3,,,47,29,Completed,
+AP005044,26 Oct 24,4,regular,Round 4,BLTC Blue,Coatesville,9,1,7,2,,,57,41,Completed,
+AP005051,09 Nov 24,5,regular,Round 5,Royal South Yarra,Coatesville,8,2,6,3,,,57,38,Completed,
+AP005052,09 Nov 24,5,regular,Round 5,Chadstone,Carmelite Teal,10,0,8,0,,,56,25,Completed,
+AP005053,09 Nov 24,5,regular,Round 5,Maccabi,BLTC Blue,9,1,7,3,,,64,50,Completed,
+AP005054,09 Nov 24,5,regular,Round 5,Elsternwick Park,Mentone,7,3,5,5,,,59,56,Completed,
+AP005061,16 Nov 24,6,regular,Round 6,Mentone,Royal South Yarra,1,9,1,7,,,31,50,Completed,
+AP005062,16 Nov 24,6,regular,Round 6,Coatesville,Elsternwick Park,1,9,1,7,,,31,54,Completed,
+AP005063,16 Nov 24,6,regular,Round 6,Carmelite Teal,Maccabi,7,3,4,4,,,44,37,Completed,
+AP005064,16 Nov 24,6,regular,Round 6,BLTC Blue,Chadstone,1,9,1,7,,,29,53,Completed,
+AP005071,23 Nov 24,7,regular,Round 7,Elsternwick Park,Royal South Yarra,2,8,2,6,,,33,54,Completed,
+pending-ap005-r7-carmelite-teal-bltc-blue,23 Nov 24,7,regular,Round 7,Carmelite Teal,BLTC Blue,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap005-r7-chadstone-maccabi,23 Nov 24,7,regular,Round 7,Chadstone,Maccabi,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap005-r7-mentone-coatesville,23 Nov 24,7,regular,Round 7,Mentone,Coatesville,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap005-r8-bltc-blue-elsternwick-park,30 Nov 24,8,regular,Round 8,BLTC Blue,Elsternwick Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap005-r8-carmelite-teal-royal-south-yarra,30 Nov 24,8,regular,Round 8,Carmelite Teal,Royal South Yarra,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap005-r8-chadstone-coatesville,30 Nov 24,8,regular,Round 8,Chadstone,Coatesville,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap005-r8-maccabi-mentone,30 Nov 24,8,regular,Round 8,Maccabi,Mentone,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP005091,07 Dec 24,9,regular,Round 9,Elsternwick Park,Chadstone,1,9,1,7,,,30,55,Completed,
+AP005092,07 Dec 24,9,regular,Round 9,Mentone,BLTC Blue,8,2,5,3,,,45,37,Completed,
+AP005093,07 Dec 24,9,regular,Round 9,Royal South Yarra,Maccabi,2,8,3,6,,,49,53,Completed,
+AP005094,07 Dec 24,9,regular,Round 9,Coatesville,Carmelite Teal,0,10,0,8,,,20,56,Completed,
+AP005101,14 Dec 24,10,regular,Round 10,Carmelite Teal,Elsternwick Park,9,1,7,1,,,49,29,Completed,
+AP005102,14 Dec 24,10,regular,Round 10,Chadstone,Mentone,9,1,7,2,,,61,42,Completed,
+AP005103,14 Dec 24,10,regular,Round 10,BLTC Blue,Royal South Yarra,0,10,2,8,,,46,69,Completed,
+AP005104,14 Dec 24,10,regular,Round 10,Maccabi,Coatesville,10,0,8,0,,,56,16,Completed,
+AP005111,01 Feb 25,11,regular,Round 11,Elsternwick Park,Maccabi,2,8,3,6,,,44,50,Completed,
+AP005112,01 Feb 25,11,regular,Round 11,Mentone,Carmelite Teal,8,2,5,3,,,42,32,Completed,
+AP005113,01 Feb 25,11,regular,Round 11,Royal South Yarra,Chadstone,10,0,8,0,,,57,29,Completed,
+pending-ap005-r11-coatesville-bltc-blue,01 Feb 25,11,regular,Round 11,Coatesville,BLTC Blue,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+AP005121,08 Feb 25,12,regular,Round 12,Coatesville,Royal South Yarra,1,9,1,7,,,36,50,Completed,
+AP005122,08 Feb 25,12,regular,Round 12,Carmelite Teal,Chadstone,1,9,2,7,,,35,55,Completed,
+AP005123,08 Feb 25,12,regular,Round 12,BLTC Blue,Maccabi,8,2,6,2,,,49,32,Completed,
+AP005124,08 Feb 25,12,regular,Round 12,Mentone,Elsternwick Park,2,8,3,6,,,43,55,Completed,
+AP005131,15 Feb 25,13,regular,Round 13,Royal South Yarra,Mentone,9,1,7,1,,,55,33,Completed,
+AP005132,15 Feb 25,13,regular,Round 13,Elsternwick Park,Coatesville,9,1,7,1,,,50,15,Completed,
+AP005133,15 Feb 25,13,regular,Round 13,Maccabi,Carmelite Teal,5,5,0,0,,,7,4,Completed,
+AP005134,15 Feb 25,13,regular,Round 13,Chadstone,BLTC Blue,8,2,6,3,,,61,46,Completed,
+AP005141,22 Feb 25,14,regular,Round 14,Royal South Yarra,Elsternwick Park,5.5,4.5,3,2,,,30,21,Completed,
+AP005143,22 Feb 25,14,regular,Round 14,Maccabi,Chadstone,2,8,2,6,,,30,53,Completed,
+AP005144,22 Feb 25,14,regular,Round 14,BLTC Blue,Carmelite Teal,7,3,4,4,,,37,35,Completed,
+pending-ap005-r14-coatesville-mentone,22 Feb 25,14,regular,Round 14,Coatesville,Mentone,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP005301,,16,semi_final,Semi-final,Chadstone,Elsternwick Park,9,1,7,2,,,57,37,Completed,
+AP005302,,16,semi_final,Semi-final,Royal South Yarra,Maccabi,9,1,4,0,,,32,15,Completed,
+AP005321,,17,grand_final,Grand final · TROLS entry 2,Chadstone,Royal South Yarra,9,1,4,0,,,32,16,Completed,

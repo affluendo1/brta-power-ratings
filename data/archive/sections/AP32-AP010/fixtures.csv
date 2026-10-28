@@ -1,0 +1,60 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP010011,10 Oct 15,1,regular,Round 1,Ormond,St Finbar's,1,7,1,3,4,7,50,57,Completed,
+AP010013,10 Oct 15,1,regular,Round 1,Coatesville,Kings Park,8,0,4,0,8,1,50,22,Completed,
+AP010014,10 Oct 15,1,regular,Round 1,St Pats Mentone,Hawthorn,0,8,0,4,1,8,35,56,Completed,
+pending-ap010-r1-bye-bltc,10 Oct 15,1,regular,Round 1,Bye,BLTC,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP010021,17 Oct 15,2,regular,Round 2,Hawthorn,Ormond,6,2,2,2,5,4,46,44,Completed,
+AP010023,17 Oct 15,2,regular,Round 2,BLTC,Coatesville,2,6,2,2,4,4,31,32,Completed,
+AP010024,17 Oct 15,2,regular,Round 2,Kings Park,St Pats Mentone,1,7,1,3,3,7,54,62,Completed,
+pending-ap010-r2-st-finbar-s-bye,17 Oct 15,2,regular,Round 2,St Finbar's,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP010031,24 Oct 15,3,regular,Round 3,Ormond,Kings Park,8,0,4,0,8,1,50,27,Completed,
+AP010033,24 Oct 15,3,regular,Round 3,Coatesville,St Finbar's,7,1,3,1,6,4,50,47,Completed,
+AP010034,24 Oct 15,3,regular,Round 3,St Pats Mentone,BLTC,1,7,1,3,2,7,33,47,Completed,
+pending-ap010-r3-bye-hawthorn,24 Oct 15,3,regular,Round 3,Bye,Hawthorn,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP010041,07 Nov 15,4,regular,Round 4,BLTC,Ormond,7,1,3,1,7,2,50,29,Completed,
+AP010043,07 Nov 15,4,regular,Round 4,Hawthorn,Coatesville,1,7,1,3,3,6,40,44,Completed,
+pending-ap010-r4-kings-park-bye,07 Nov 15,4,regular,Round 4,Kings Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap010-r4-st-finbar-s-st-pats-mentone,07 Nov 15,4,regular,Round 4,St Finbar's,St Pats Mentone,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP010051,14 Nov 15,5,regular,Round 5,Coatesville,St Pats Mentone,8,0,4,0,8,0,48,14,Completed,
+AP010052,14 Nov 15,5,regular,Round 5,Hawthorn,Kings Park,8,0,4,0,8,0,50,20,Completed,
+AP010053,14 Nov 15,5,regular,Round 5,BLTC,St Finbar's,7,1,3,1,7,3,54,36,Completed,
+pending-ap010-r5-ormond-bye,14 Nov 15,5,regular,Round 5,Ormond,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP010062,21 Nov 15,6,regular,Round 6,St Pats Mentone,Ormond,2,6,2,2,4,4,34,35,Completed,
+AP010063,21 Nov 15,6,regular,Round 6,Kings Park,BLTC,0,8,0,4,1,8,26,53,Completed,
+AP010064,21 Nov 15,6,regular,Round 6,St Finbar's,Hawthorn,7,1,3,1,7,3,47,29,Completed,
+pending-ap010-r6-bye-coatesville,21 Nov 15,6,regular,Round 6,Bye,Coatesville,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP010071,28 Nov 15,7,regular,Round 7,Ormond,Coatesville,2,6,2,2,4,4,34,35,Completed,
+AP010073,28 Nov 15,7,regular,Round 7,Hawthorn,BLTC,6,2,2,2,4,4,37,35,Completed,
+AP010074,28 Nov 15,7,regular,Round 7,Kings Park,St Finbar's,0,8,0,4,2,8,33,59,Completed,
+pending-ap010-r7-bye-st-pats-mentone,28 Nov 15,7,regular,Round 7,Bye,St Pats Mentone,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP010081,05 Dec 15,8,regular,Round 8,St Finbar's,Ormond,7,1,3,1,6,2,46,20,Completed,
+AP010083,05 Dec 15,8,regular,Round 8,Kings Park,Coatesville,0,8,0,4,0,8,24,50,Completed,
+AP010084,05 Dec 15,8,regular,Round 8,Hawthorn,St Pats Mentone,8,0,4,0,8,0,48,13,Completed,
+pending-ap010-r8-bltc-bye,05 Dec 15,8,regular,Round 8,BLTC,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP010091,12 Dec 15,9,regular,Round 9,Ormond,Hawthorn,7,1,3,1,6,4,50,46,Completed,
+AP010093,12 Dec 15,9,regular,Round 9,Coatesville,BLTC,6,2,2,2,4,4,35,33,Completed,
+AP010094,12 Dec 15,9,regular,Round 9,St Pats Mentone,Kings Park,6,2,2,2,5,5,53,47,Completed,
+pending-ap010-r9-bye-st-finbar-s,12 Dec 15,9,regular,Round 9,Bye,St Finbar's,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP010101,30 Jan 16,10,regular,Round 10,Kings Park,Ormond,0,8,0,4,0,8,17,49,Completed,
+AP010103,30 Jan 16,10,regular,Round 10,St Finbar's,Coatesville,1,7,1,3,3,7,43,51,Completed,
+AP010104,30 Jan 16,10,regular,Round 10,BLTC,St Pats Mentone,8,0,4,0,8,0,49,19,Completed,
+pending-ap010-r10-hawthorn-bye,30 Jan 16,10,regular,Round 10,Hawthorn,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP010111,06 Feb 16,11,regular,Round 11,Ormond,BLTC,7,1,3,1,7,2,54,38,Completed,
+AP010113,06 Feb 16,11,regular,Round 11,Coatesville,Hawthorn,7,1,3,1,6,4,47,47,Completed,
+AP010114,06 Feb 16,11,regular,Round 11,St Pats Mentone,St Finbar's,0,8,0,4,3,8,50,60,Completed,
+pending-ap010-r11-bye-kings-park,06 Feb 16,11,regular,Round 11,Bye,Kings Park,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP010121,13 Feb 16,12,regular,Round 12,St Pats Mentone,Coatesville,1,7,1,3,2,6,25,40,Completed,
+AP010122,13 Feb 16,12,regular,Round 12,Kings Park,Hawthorn,0,8,0,4,0,8,14,48,Completed,
+AP010123,13 Feb 16,12,regular,Round 12,St Finbar's,BLTC,8,0,4,0,8,1,52,35,Completed,
+pending-ap010-r12-bye-ormond,13 Feb 16,12,regular,Round 12,Bye,Ormond,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP010132,20 Feb 16,13,regular,Round 13,Ormond,St Pats Mentone,7,1,3,1,7,2,52,37,Completed,
+AP010133,20 Feb 16,13,regular,Round 13,BLTC,Kings Park,8,0,4,0,8,0,48,10,Completed,
+AP010134,20 Feb 16,13,regular,Round 13,Hawthorn,St Finbar's,2,6,2,2,4,4,34,38,Completed,
+pending-ap010-r13-coatesville-bye,20 Feb 16,13,regular,Round 13,Coatesville,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP010141,27 Feb 16,14,regular,Round 14,Coatesville,Ormond,7,1,3,1,6,3,49,38,Completed,
+AP010143,27 Feb 16,14,regular,Round 14,BLTC,Hawthorn,1,7,1,3,2,7,32,51,Completed,
+AP010144,27 Feb 16,14,regular,Round 14,St Finbar's,Kings Park,7,1,3,1,7,2,49,31,Completed,
+pending-ap010-r14-st-pats-mentone-bye,27 Feb 16,14,regular,Round 14,St Pats Mentone,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP010301,,16,semi_final,Semi-final,Coatesville,BLTC,6,2,2,2,5,4,43,43,Completed,
+AP010302,,16,semi_final,Semi-final,St Finbar's,Hawthorn,7,1,3,1,6,4,41,44,Completed,
+AP010321,,17,grand_final,Grand final · TROLS entry 2,Coatesville,St Finbar's,7,1,3,1,6,2,44,32,Completed,

@@ -1,0 +1,61 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP009012,04 Oct 14,1,regular,Round 1,Parkdale 1,Parkdale 2,0,8,0,4,2,8,31,56,Completed,
+AP009013,04 Oct 14,1,regular,Round 1,St Finbar's,Hawthorn,8,0,4,0,8,1,52,24,Completed,
+AP009014,04 Oct 14,1,regular,Round 1,Glen Huntly,Elwood,0,8,0,4,1,8,33,53,Completed,
+pending-ap009-r1-coatesville-bye,04 Oct 14,1,regular,Round 1,Coatesville,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009021,11 Oct 14,2,regular,Round 2,Elwood,Coatesville,7,1,3,1,6,2,40,23,Completed,
+AP009023,11 Oct 14,2,regular,Round 2,Parkdale 2,St Finbar's,7,1,3,1,6,2,43,22,Completed,
+AP009024,11 Oct 14,2,regular,Round 2,Hawthorn,Glen Huntly,2,6,2,2,4,5,45,38,Completed,
+pending-ap009-r2-bye-parkdale-1,11 Oct 14,2,regular,Round 2,Bye,Parkdale 1,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009031,18 Oct 14,3,regular,Round 3,Coatesville,Hawthorn,2,6,2,2,4,5,37,40,Completed,
+AP009032,18 Oct 14,3,regular,Round 3,Parkdale 1,Elwood,7,1,3,1,7,4,55,50,Completed,
+AP009034,18 Oct 14,3,regular,Round 3,Glen Huntly,Parkdale 2,0,8,0,4,3,8,39,59,Completed,
+pending-ap009-r3-st-finbar-s-bye,18 Oct 14,3,regular,Round 3,St Finbar's,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009041,25 Oct 14,4,regular,Round 4,Parkdale 2,Coatesville,7,1,3,1,6,2,43,28,Completed,
+AP009042,25 Oct 14,4,regular,Round 4,Hawthorn,Parkdale 1,6,2,2,2,6,4,57,46,Completed,
+AP009043,25 Oct 14,4,regular,Round 4,Elwood,St Finbar's,8,0,4,0,8,0,48,17,Completed,
+pending-ap009-r4-bye-glen-huntly,25 Oct 14,4,regular,Round 4,Bye,Glen Huntly,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009051,08 Nov 14,5,regular,Round 5,St Finbar's,Glen Huntly,0,8,0,4,1,8,30,52,Completed,
+AP009052,08 Nov 14,5,regular,Round 5,Elwood,Hawthorn,8,0,4,0,8,0,49,10,Completed,
+AP009054,08 Nov 14,5,regular,Round 5,Coatesville,Parkdale 1,6,2,2,2,5,5,43,38,Completed,
+pending-ap009-r5-parkdale-2-bye,08 Nov 14,5,regular,Round 5,Parkdale 2,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009061,15 Nov 14,6,regular,Round 6,Parkdale 1,St Finbar's,7,1,3,1,6,3,46,39,Completed,
+AP009062,15 Nov 14,6,regular,Round 6,Glen Huntly,Coatesville,7,1,3,1,6,3,47,38,Completed,
+AP009063,15 Nov 14,6,regular,Round 6,Hawthorn,Parkdale 2,1,7,1,3,4,7,52,59,Completed,
+pending-ap009-r6-bye-elwood,15 Nov 14,6,regular,Round 6,Bye,Elwood,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009071,22 Nov 14,7,regular,Round 7,Coatesville,St Finbar's,8,0,4,0,8,1,55,31,Completed,
+AP009072,22 Nov 14,7,regular,Round 7,Parkdale 1,Glen Huntly,6,2,2,2,5,4,43,40,Completed,
+AP009073,22 Nov 14,7,regular,Round 7,Elwood,Parkdale 2,7,1,3,1,6,4,42,35,Completed,
+pending-ap009-r7-hawthorn-bye,22 Nov 14,7,regular,Round 7,Hawthorn,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009082,29 Nov 14,8,regular,Round 8,Parkdale 2,Parkdale 1,7,1,3,1,6,4,54,32,Completed,
+AP009083,29 Nov 14,8,regular,Round 8,Hawthorn,St Finbar's,1,7,1,3,3,6,37,47,Completed,
+AP009084,29 Nov 14,8,regular,Round 8,Elwood,Glen Huntly,1,7,1,3,2,7,38,56,Completed,
+pending-ap009-r8-bye-coatesville,29 Nov 14,8,regular,Round 8,Bye,Coatesville,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009091,06 Dec 14,9,regular,Round 9,Coatesville,Elwood,7,1,3,1,6,3,44,32,Completed,
+AP009093,06 Dec 14,9,regular,Round 9,St Finbar's,Parkdale 2,1,7,1,3,3,6,38,49,Completed,
+AP009094,06 Dec 14,9,regular,Round 9,Glen Huntly,Hawthorn,8,0,4,0,8,0,49,14,Completed,
+pending-ap009-r9-parkdale-1-bye,06 Dec 14,9,regular,Round 9,Parkdale 1,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009101,13 Dec 14,10,regular,Round 10,Hawthorn,Coatesville,2,6,2,2,4,5,45,45,Completed,
+AP009102,13 Dec 14,10,regular,Round 10,Elwood,Parkdale 1,8,0,4,0,8,1,52,30,Completed,
+AP009104,13 Dec 14,10,regular,Round 10,Parkdale 2,Glen Huntly,2,6,2,2,4,6,36,53,Completed,
+pending-ap009-r10-bye-st-finbar-s,13 Dec 14,10,regular,Round 10,Bye,St Finbar's,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009111,07 Feb 15,11,regular,Round 11,Coatesville,Parkdale 2,7,1,3,1,6,2,38,32,Completed,
+AP009113,07 Feb 15,11,regular,Round 11,St Finbar's,Elwood,2,6,2,2,4,5,41,48,Completed,
+pending-ap009-r11-glen-huntly-bye,07 Feb 15,11,regular,Round 11,Glen Huntly,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap009-r11-parkdale-1-hawthorn,07 Feb 15,11,regular,Round 11,Parkdale 1,Hawthorn,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP009121,14 Feb 15,12,regular,Round 12,Glen Huntly,St Finbar's,7,1,3,1,6,4,53,43,Completed,
+AP009122,14 Feb 15,12,regular,Round 12,Hawthorn,Elwood,0,8,0,4,1,8,31,55,Completed,
+AP009124,14 Feb 15,12,regular,Round 12,Parkdale 1,Coatesville,1,7,1,3,4,7,44,56,Completed,
+pending-ap009-r12-bye-parkdale-2,14 Feb 15,12,regular,Round 12,Bye,Parkdale 2,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009131,21 Feb 15,13,regular,Round 13,St Finbar's,Parkdale 1,4,4,1,1,2,3,22,25,Completed,
+AP009132,21 Feb 15,13,regular,Round 13,Coatesville,Glen Huntly,3.5,4.5,0,1,1,2,13,16,Completed,
+AP009133,21 Feb 15,13,regular,Round 13,Parkdale 2,Hawthorn,4.5,3.5,1,0,2,0,15,11,Completed,
+pending-ap009-r13-elwood-bye,21 Feb 15,13,regular,Round 13,Elwood,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009141,28 Feb 15,14,regular,Round 14,St Finbar's,Coatesville,6,2,2,2,6,4,54,45,Completed,
+AP009142,28 Feb 15,14,regular,Round 14,Glen Huntly,Parkdale 1,8,0,4,0,8,2,52,29,Completed,
+AP009143,28 Feb 15,14,regular,Round 14,Parkdale 2,Elwood,1,7,1,3,4,6,44,57,Completed,
+pending-ap009-r14-bye-hawthorn,28 Feb 15,14,regular,Round 14,Bye,Hawthorn,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009301,,16,semi_final,Semi-final,Elwood,Glen Huntly,7,1,3,1,7,3,60,39,Completed,
+AP009302,,16,semi_final,Semi-final,Parkdale 2,Coatesville,8,0,4,0,8,0,52,32,Completed,
+AP009311,,16,semi_final,Semi-final,Glen Huntly,Parkdale 2,2,6,2,2,4,5,39,48,Completed,
+AP009321,,17,grand_final,Grand final · TROLS entry 2,Elwood,Parkdale 2,7,1,3,1,6,2,45,34,Completed,

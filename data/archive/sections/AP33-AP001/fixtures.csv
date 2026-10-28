@@ -1,0 +1,48 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP001011,30 Apr 16,1,regular,Round 1,Port Melbourne,Hampton,2,6,2,2,,,29,30,Completed,
+AP001012,30 Apr 16,1,regular,Round 1,Dandenong,Legend Park,2,6,2,2,,,24,25,Completed,
+pending-ap001-r1-bye-highmoor-uniting,30 Apr 16,1,regular,Round 1,Bye,Highmoor Uniting,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP001021,07 May 16,2,regular,Round 2,Highmoor Uniting,Port Melbourne,0,8,0,4,,,11,40,Completed,
+AP001023,07 May 16,2,regular,Round 2,Hampton,Dandenong,8,0,4,0,,,40,21,Completed,
+pending-ap001-r2-legend-park-bye,07 May 16,2,regular,Round 2,Legend Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP001031,14 May 16,3,regular,Round 3,Port Melbourne,Dandenong,1,7,1,3,,,20,39,Completed,
+AP001033,14 May 16,3,regular,Round 3,Highmoor Uniting,Legend Park,0,8,0,4,,,5,40,Completed,
+pending-ap001-r3-bye-hampton,14 May 16,3,regular,Round 3,Bye,Hampton,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP001041,21 May 16,4,regular,Round 4,Legend Park,Port Melbourne,1,7,1,3,,,27,34,Completed,
+AP001042,21 May 16,4,regular,Round 4,Hampton,Highmoor Uniting,8,0,4,0,,,40,12,Completed,
+pending-ap001-r4-dandenong-bye,21 May 16,4,regular,Round 4,Dandenong,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP001052,28 May 16,5,regular,Round 5,Legend Park,Hampton,2,6,2,2,,,26,31,Completed,
+pending-ap001-r5-highmoor-uniting-dandenong,28 May 16,5,regular,Round 5,Highmoor Uniting,Dandenong,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap001-r5-port-melbourne-bye,28 May 16,5,regular,Round 5,Port Melbourne,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap001-r6-hampton-port-melbourne,04 Jun 16,6,regular,Round 6,Hampton,Port Melbourne,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap001-r6-highmoor-uniting-bye,04 Jun 16,6,regular,Round 6,Highmoor Uniting,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap001-r6-legend-park-dandenong,04 Jun 16,6,regular,Round 6,Legend Park,Dandenong,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP001071,18 Jun 16,7,regular,Round 7,Port Melbourne,Highmoor Uniting,8,0,4,0,,,40,11,Completed,
+AP001073,18 Jun 16,7,regular,Round 7,Dandenong,Hampton,6,2,2,2,,,32,25,Completed,
+pending-ap001-r7-bye-legend-park,18 Jun 16,7,regular,Round 7,Bye,Legend Park,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP001081,25 Jun 16,8,regular,Round 8,Dandenong,Port Melbourne,8,0,4,0,,,40,20,Completed,
+AP001083,25 Jun 16,8,regular,Round 8,Legend Park,Highmoor Uniting,7,1,3,1,,,39,26,Completed,
+pending-ap001-r8-hampton-bye,25 Jun 16,8,regular,Round 8,Hampton,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP001091,02 Jul 16,9,regular,Round 9,Port Melbourne,Legend Park,8,0,4,0,,,40,23,Completed,
+AP001092,02 Jul 16,9,regular,Round 9,Highmoor Uniting,Hampton,1,7,1,3,,,23,39,Completed,
+pending-ap001-r9-bye-dandenong,02 Jul 16,9,regular,Round 9,Bye,Dandenong,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP001102,09 Jul 16,10,regular,Round 10,Hampton,Legend Park,2,6,2,2,,,28,32,Completed,
+AP001103,09 Jul 16,10,regular,Round 10,Dandenong,Highmoor Uniting,8,0,4,0,,,40,10,Completed,
+pending-ap001-r10-bye-port-melbourne,09 Jul 16,10,regular,Round 10,Bye,Port Melbourne,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP001111,16 Jul 16,11,regular,Round 11,Port Melbourne,Hampton,6,2,2,2,,,36,27,Completed,
+AP001112,16 Jul 16,11,regular,Round 11,Dandenong,Legend Park,6,2,2,2,,,35,24,Completed,
+pending-ap001-r11-bye-highmoor-uniting,16 Jul 16,11,regular,Round 11,Bye,Highmoor Uniting,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP001121,23 Jul 16,12,regular,Round 12,Highmoor Uniting,Port Melbourne,4,4,1,1,,,26,30,Completed,
+AP001123,23 Jul 16,12,regular,Round 12,Hampton,Dandenong,3,5,0,2,,,11,20,Completed,
+pending-ap001-r12-legend-park-bye,23 Jul 16,12,regular,Round 12,Legend Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP001131,30 Jul 16,13,regular,Round 13,Port Melbourne,Dandenong,6,2,2,2,,,35,26,Completed,
+AP001133,30 Jul 16,13,regular,Round 13,Highmoor Uniting,Legend Park,0,8,0,4,,,22,40,Completed,
+pending-ap001-r13-bye-hampton,30 Jul 16,13,regular,Round 13,Bye,Hampton,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP001141,06 Aug 16,14,regular,Round 14,Legend Park,Port Melbourne,2,6,2,2,,,32,37,Completed,
+AP001142,06 Aug 16,14,regular,Round 14,Hampton,Highmoor Uniting,8,0,4,0,,,40,16,Completed,
+pending-ap001-r14-dandenong-bye,06 Aug 16,14,regular,Round 14,Dandenong,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP001152,13 Aug 16,15,regular,Round 15,Legend Park,Hampton,2,6,2,2,,,28,30,Completed,
+AP001153,13 Aug 16,15,regular,Round 15,Highmoor Uniting,Dandenong,0,8,0,4,,,16,40,Completed,
+AP001311,13 Aug 16,15,regular,Round 15,Dandenong,Port Melbourne,2,6,2,2,,,26,34,Completed,
+pending-ap001-r15-port-melbourne-bye,13 Aug 16,15,regular,Round 15,Port Melbourne,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP001321,,16,grand_final,Grand final · TROLS entry 2,Hampton,Port Melbourne,8,0,4,0,,,40,11,Completed,

@@ -1,0 +1,47 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP011011,07 Oct 23,1,regular,Round 1,Royal South Yarra Navy,Dendy Park,10,0,8,0,,,57,21,Completed,
+AP011012,07 Oct 23,1,regular,Round 1,Overport Park,BLTC Blue,3,7,4,5,,,42,57,Completed,
+AP011013,07 Oct 23,1,regular,Round 1,BLTC White,Hawthorn,2,8,3,6,,,40,57,Completed,
+AP011021,14 Oct 23,2,regular,Round 2,Hawthorn,Royal South Yarra Navy,2,8,3,5,,,36,44,Completed,
+AP011022,14 Oct 23,2,regular,Round 2,BLTC Blue,BLTC White,8,2,6,3,,,52,43,Completed,
+AP011023,14 Oct 23,2,regular,Round 2,Dendy Park,Overport Park,3,7,4,5,,,49,51,Completed,
+AP011032,21 Oct 23,3,regular,Round 3,BLTC White,Dendy Park,7,3,5,4,,,51,39,Completed,
+AP011033,21 Oct 23,3,regular,Round 3,Hawthorn,BLTC Blue,3,7,4,5,,,48,53,Completed,
+pending-ap011-r3-royal-south-yarra-navy-overport-park,21 Oct 23,3,regular,Round 3,Royal South Yarra Navy,Overport Park,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP011041,28 Oct 23,4,regular,Round 4,BLTC Blue,Royal South Yarra Navy,9,1,7,1,,,49,24,Completed,
+AP011042,28 Oct 23,4,regular,Round 4,Dendy Park,Hawthorn,3,7,4,4,,,32,47,Completed,
+AP011043,28 Oct 23,4,regular,Round 4,Overport Park,BLTC White,8,2,6,3,,,48,44,Completed,
+AP011051,11 Nov 23,5,regular,Round 5,Royal South Yarra Navy,BLTC White,3,7,4,5,,,40,49,Completed,
+AP011052,11 Nov 23,5,regular,Round 5,BLTC Blue,Dendy Park,10,0,8,0,,,57,19,Completed,
+AP011053,11 Nov 23,5,regular,Round 5,Hawthorn,Overport Park,8,2,5,3,,,38,39,Completed,
+AP011061,18 Nov 23,6,regular,Round 6,Dendy Park,Royal South Yarra Navy,8,2,5,3,,,41,36,Completed,
+AP011063,18 Nov 23,6,regular,Round 6,Hawthorn,BLTC White,10,0,8,0,,,57,23,Completed,
+pending-ap011-r6-bltc-blue-overport-park,18 Nov 23,6,regular,Round 6,BLTC Blue,Overport Park,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP011071,25 Nov 23,7,regular,Round 7,Royal South Yarra Navy,Hawthorn,3,7,4,4,,,33,41,Completed,
+AP011072,25 Nov 23,7,regular,Round 7,BLTC White,BLTC Blue,2,2,2,3,,,23,27,Completed,
+AP011073,25 Nov 23,7,regular,Round 7,Overport Park,Dendy Park,10,0,8,0,,,56,13,Completed,
+pending-ap011-r8-bltc-blue-hawthorn,02 Dec 23,8,regular,Round 8,BLTC Blue,Hawthorn,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap011-r8-dendy-park-bltc-white,02 Dec 23,8,regular,Round 8,Dendy Park,BLTC White,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap011-r8-overport-park-royal-south-yarra-navy,02 Dec 23,8,regular,Round 8,Overport Park,Royal South Yarra Navy,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap011-r9-bltc-white-overport-park,09 Dec 23,9,regular,Round 9,BLTC White,Overport Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap011-r9-hawthorn-dendy-park,09 Dec 23,9,regular,Round 9,Hawthorn,Dendy Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap011-r9-royal-south-yarra-navy-bltc-blue,09 Dec 23,9,regular,Round 9,Royal South Yarra Navy,BLTC Blue,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP011101,16 Dec 23,10,regular,Round 10,BLTC White,Royal South Yarra Navy,8,2,5,4,,,55,45,Completed,
+AP011102,16 Dec 23,10,regular,Round 10,Dendy Park,BLTC Blue,2,8,2,6,,,32,49,Completed,
+AP011103,16 Dec 23,10,regular,Round 10,Overport Park,Hawthorn,1,9,2,6,,,27,51,Completed,
+AP011111,03 Feb 24,11,regular,Round 11,Royal South Yarra Navy,Dendy Park,9,1,7,2,,,58,42,Completed,
+AP011112,03 Feb 24,11,regular,Round 11,Overport Park,BLTC Blue,0,10,0,8,,,26,56,Completed,
+AP011113,03 Feb 24,11,regular,Round 11,BLTC White,Hawthorn,1,9,2,7,,,23,53,Completed,
+AP011121,10 Feb 24,12,regular,Round 12,Hawthorn,Royal South Yarra Navy,8,2,5,3,,,47,32,Completed,
+AP011122,10 Feb 24,12,regular,Round 12,BLTC Blue,BLTC White,9,1,7,1,,,55,24,Completed,
+AP011123,10 Feb 24,12,regular,Round 12,Dendy Park,Overport Park,8,2,5,3,,,42,29,Completed,
+AP011131,17 Feb 24,13,regular,Round 13,Royal South Yarra Navy,Overport Park,7,3,4,4,,,40,37,Completed,
+AP011132,17 Feb 24,13,regular,Round 13,BLTC White,Dendy Park,10,0,8,0,,,56,19,Completed,
+AP011133,17 Feb 24,13,regular,Round 13,Hawthorn,BLTC Blue,2,8,4,6,,,49,61,Completed,
+AP011141,24 Feb 24,14,regular,Round 14,BLTC Blue,Royal South Yarra Navy,7,3,5,4,,,45,48,Completed,
+AP011142,24 Feb 24,14,regular,Round 14,Dendy Park,Hawthorn,7,3,4,4,,,38,32,Completed,
+AP011143,24 Feb 24,14,regular,Round 14,Overport Park,BLTC White,7,3,4,4,,,44,41,Completed,
+AP011151,02 Mar 24,15,regular,Round 15,Royal South Yarra Navy,BLTC White,2,8,3,6,,,43,51,Completed,
+AP011152,02 Mar 24,15,regular,Round 15,BLTC Blue,Dendy Park,3,7,4,4,,,33,39,Completed,
+AP011153,02 Mar 24,15,regular,Round 15,Hawthorn,Overport Park,9,1,7,1,,,55,31,Completed,
+AP011321,,16,grand_final,Grand final · TROLS entry 2,BLTC Blue,Hawthorn,10,0,8,1,,,62,31,Completed,

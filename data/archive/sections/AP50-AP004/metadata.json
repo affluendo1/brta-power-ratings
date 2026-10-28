@@ -1,0 +1,99 @@
+{
+  "asset_id": "AP50-AP004",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Winter 2025",
+  "season_id": "AP50",
+  "season_label": "Winter 2025",
+  "source_section_code": "AP004",
+  "section_label": "Mx Rubbers 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Tally Ho",
+      "wins": 10,
+      "points": 77.5,
+      "percentage": 133.77,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Elwood Green",
+      "wins": 10,
+      "points": 73,
+      "percentage": 142.82,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Parkdale Blue",
+      "wins": 7,
+      "points": 57.5,
+      "percentage": 118.08,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Elwood Red",
+      "wins": 5,
+      "points": 42,
+      "percentage": 92.63,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Parkdale White",
+      "wins": 4,
+      "points": 35,
+      "percentage": 82.49,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Highmoor Uniting",
+      "wins": 2,
+      "points": 32,
+      "percentage": 90.48,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Ormond",
+      "wins": 2,
+      "points": 19,
+      "percentage": 64.73,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP50-AP004",
+  "fixtures": 59,
+  "completed_fixtures": 44,
+  "draw_fixtures": 59,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 176,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP004014 doubles No. 3: '6-3 3-4'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP004014 doubles No. 4: '3-6 4-4'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP004034 doubles No. 4: '3-6 4-2'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

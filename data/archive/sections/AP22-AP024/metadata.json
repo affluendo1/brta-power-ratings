@@ -1,0 +1,105 @@
+{
+  "asset_id": "AP22-AP024",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 10/11",
+  "season_id": "AP22",
+  "season_label": "Summer 10/11",
+  "source_section_code": "AP024",
+  "section_label": "Mixed Rubbers 3",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Ardrie Park",
+      "wins": 0,
+      "points": 77,
+      "percentage": 129.21,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "St Johns",
+      "wins": 0,
+      "points": 69.5,
+      "percentage": 112.18,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Beaumaris CC",
+      "wins": 0,
+      "points": 61,
+      "percentage": 102.44,
+      "marker": "P"
+    },
+    {
+      "position": 4,
+      "team": "Kings Park",
+      "wins": 0,
+      "points": 58,
+      "percentage": 111.51,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Le Page",
+      "wins": 0,
+      "points": 55.5,
+      "percentage": 95.97,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "St Finbar's",
+      "wins": 0,
+      "points": 51,
+      "percentage": 99.12,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Parkdale",
+      "wins": 0,
+      "points": 41,
+      "percentage": 82.43,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "Hawthorn",
+      "wins": 0,
+      "points": 35,
+      "percentage": 71.08,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP22-AP024",
+  "fixtures": 60,
+  "completed_fixtures": 46,
+  "draw_fixtures": 4,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 184,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP024034 doubles No. 4: '1-6 6-2 5-5'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

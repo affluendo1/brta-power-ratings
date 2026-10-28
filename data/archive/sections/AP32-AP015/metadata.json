@@ -1,0 +1,103 @@
+{
+  "asset_id": "AP32-AP015",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 15/16",
+  "season_id": "AP32",
+  "season_label": "Summer 15/16",
+  "source_section_code": "AP015",
+  "section_label": "Mens S/D 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Carmelite",
+      "wins": 10,
+      "points": 96,
+      "percentage": 128.99,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "Albert Reserve 2",
+      "wins": 9,
+      "points": 82,
+      "percentage": 111.42,
+      "marker": "P"
+    },
+    {
+      "position": 3,
+      "team": "Albert Reserve 1",
+      "wins": 7,
+      "points": 81,
+      "percentage": 119.32,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Dendy Park 1",
+      "wins": 10,
+      "points": 81,
+      "percentage": 102.93,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Dendy Park 2",
+      "wins": 7,
+      "points": 74,
+      "percentage": 106.55,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "BLTC",
+      "wins": 4,
+      "points": 51,
+      "percentage": 81.43,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Black Rock",
+      "wins": 4,
+      "points": 48,
+      "percentage": 79.17,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "GPHC",
+      "wins": 3,
+      "points": 47,
+      "percentage": 81.39,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP32-AP015",
+  "fixtures": 59,
+  "completed_fixtures": 58,
+  "draw_fixtures": 59,
+  "singles_rubbers": 232,
+  "doubles_rubbers": 114,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

@@ -1,0 +1,204 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP002011,05 Oct 24,1,Willy Central,Bruce Park Blue,No. 1,Rob McMahon,Sebastian Cowan,Sebastian Cowan,0-8,0,8,0,1,Completed,true,false,false
+AP002011,05 Oct 24,1,Willy Central,Bruce Park Blue,No. 2,Noah Kurti,Chandler Zahra,Chandler Zahra,3-6,3,6,0,1,Completed,true,false,true
+AP002011,05 Oct 24,1,Willy Central,Bruce Park Blue,No. 3,Koray Soylemez,Luca Cowan,Koray Soylemez,7-3,7,3,1,0,Completed,true,false,false
+AP002011,05 Oct 24,1,Willy Central,Bruce Park Blue,No. 4,Oscar Roeling,Matthew Zandona,Matthew Zandona,2-6,2,6,0,1,Completed,true,false,true
+AP002012,05 Oct 24,1,Langwarrin,Dendy Park,No. 1,Alex Ianculescu,Eddie Myers,Eddie Myers,6-8,6,8,0,1,Completed,true,false,false
+AP002012,05 Oct 24,1,Langwarrin,Dendy Park,No. 2,Julian McKay,Hayden Fricke,Julian McKay,7-5,7,5,1,0,Completed,true,false,false
+AP002012,05 Oct 24,1,Langwarrin,Dendy Park,No. 3,Haris Siakallis,James McGregor,Haris Siakallis,8-0,8,0,1,0,Completed,true,false,false
+AP002012,05 Oct 24,1,Langwarrin,Dendy Park,No. 4,Harley Edmonds,Darko Pasara,Darko Pasara,1-7,1,7,0,1,Completed,true,false,false
+AP002013,05 Oct 24,1,Carmelite Green,Carmelite Red,No. 1,Stefan Konstantinidis,Ashton Arms,Ashton Arms,5-6,5,6,0,1,Completed,true,false,false
+AP002013,05 Oct 24,1,Carmelite Green,Carmelite Red,No. 2,Ryan Sweeney,Nikola Rakovic,Ryan Sweeney,6-3,6,3,1,0,Completed,true,false,false
+AP002014,05 Oct 24,1,Altona Black,Mt Eliza,No. 1,Ben Britton,Patrick Flood,,3-4,3,4,0,1,Unfinished,false,false,false
+AP002014,05 Oct 24,1,Altona Black,Mt Eliza,No. 2,Josh Fleming,Kento Nguyen,Josh Fleming,8-2,8,2,1,0,Completed,true,false,false
+AP002014,05 Oct 24,1,Altona Black,Mt Eliza,No. 3,Huon Russell,Alex McDonald,Alex McDonald,1-6,1,6,0,1,Completed,true,false,false
+AP002014,05 Oct 24,1,Altona Black,Mt Eliza,No. 4,Jesse Hart,Charlie Hollow,,3-1,3,1,1,0,Unfinished,false,false,true
+AP002021,12 Oct 24,2,Mt Eliza,Willy Central,No. 1,Patrick Flood,Cihan Soylemez,Patrick Flood,8-2,8,2,1,0,Completed,true,false,false
+AP002021,12 Oct 24,2,Mt Eliza,Willy Central,No. 2,Jack Shurdington,Noah Kurti,Jack Shurdington,8-1,8,1,1,0,Completed,true,false,false
+AP002021,12 Oct 24,2,Mt Eliza,Willy Central,No. 3,Noah Dergham,Koray Soylemez,Noah Dergham,8-1,8,1,1,0,Completed,true,false,false
+AP002021,12 Oct 24,2,Mt Eliza,Willy Central,No. 4,Walker Majera,Hunter George,Walker Majera,8-1,8,1,1,0,Completed,true,false,true
+AP002022,12 Oct 24,2,Bruce Park Blue,Langwarrin,No. 1,Jackson Shadbolt,Alex Ianculescu,Jackson Shadbolt,8-5,8,5,1,0,Completed,true,false,false
+AP002022,12 Oct 24,2,Bruce Park Blue,Langwarrin,No. 2,Tom Carter,Kyle Ebblewhite,Kyle Ebblewhite,7-8,7,8,0,1,Completed,true,false,false
+AP002022,12 Oct 24,2,Bruce Park Blue,Langwarrin,No. 3,Luca Cowan,Haris Siakallis,Luca Cowan,8-4,8,4,1,0,Completed,true,false,false
+AP002022,12 Oct 24,2,Bruce Park Blue,Langwarrin,No. 4,Daniel McCulloch,Harley Edmonds,Daniel McCulloch,8-5,8,5,1,0,Completed,true,false,false
+AP002023,12 Oct 24,2,Dendy Park,Carmelite Green,No. 1,Eddie Myers,Stefan Konstantinidis,Eddie Myers,8-3,8,3,1,0,Completed,true,false,false
+AP002023,12 Oct 24,2,Dendy Park,Carmelite Green,No. 2,Dean Ellis,Juan Llatse,Juan Llatse,2-8,2,8,0,1,Completed,true,false,false
+AP002023,12 Oct 24,2,Dendy Park,Carmelite Green,No. 3,James McGregor,Francisco Gallardo,Francisco Gallardo,3-8,3,8,0,1,Completed,true,false,false
+AP002023,12 Oct 24,2,Dendy Park,Carmelite Green,No. 4,Darko Pasara,Nick Rowe,Nick Rowe,3-8,3,8,0,1,Completed,true,false,false
+AP002024,12 Oct 24,2,Carmelite Red,Altona Black,No. 1,Ashton Arms,Ben Thompson-star,Ashton Arms,8-6,8,6,1,0,Completed,true,false,false
+AP002024,12 Oct 24,2,Carmelite Red,Altona Black,No. 2,Simon Arms,Robert Carpio,Simon Arms,8-1,8,1,1,0,Completed,true,false,true
+AP002024,12 Oct 24,2,Carmelite Red,Altona Black,No. 3,Matthew Fraanje,Josh Fleming,Matthew Fraanje,8-7,8,7,1,0,Completed,true,false,false
+AP002024,12 Oct 24,2,Carmelite Red,Altona Black,No. 4,Luke Kinsman,Huon Russell,Luke Kinsman,8-7,8,7,1,0,Completed,true,false,false
+AP002031,19 Oct 24,3,Willy Central,Carmelite Red,No. 1,Cihan Soylemez,Ashton Arms,Ashton Arms,5-8,5,8,0,1,Completed,true,false,false
+AP002031,19 Oct 24,3,Willy Central,Carmelite Red,No. 2,Noah Kurti,Simon Arms,Simon Arms,3-8,3,8,0,1,Completed,true,false,false
+AP002031,19 Oct 24,3,Willy Central,Carmelite Red,No. 3,Koray Soylemez,Andrew Ross,Andrew Ross,3-8,3,8,0,1,Completed,true,false,true
+AP002031,19 Oct 24,3,Willy Central,Carmelite Red,No. 4,Oscar Roeling,Luke Kinsman,Luke Kinsman,0-8,0,8,0,1,Completed,true,false,false
+AP002032,19 Oct 24,3,Langwarrin,Mt Eliza,No. 1,Alex Ianculescu,Kento Nguyen,Alex Ianculescu,8-6,8,6,1,0,Completed,true,false,false
+AP002032,19 Oct 24,3,Langwarrin,Mt Eliza,No. 2,Julian McKay,Noah Dergham,Noah Dergham,0-8,0,8,0,1,Completed,true,false,false
+AP002032,19 Oct 24,3,Langwarrin,Mt Eliza,No. 3,Haris Siakallis,Walker Majera,Walker Majera,3-8,3,8,0,1,Completed,true,false,false
+AP002032,19 Oct 24,3,Langwarrin,Mt Eliza,No. 4,Harley Edmonds,Jarrod Dungey,Harley Edmonds,8-7,8,7,1,0,Completed,true,false,true
+AP002033,19 Oct 24,3,Carmelite Green,Bruce Park Blue,No. 1,Stefan Konstantinidis,Jackson Shadbolt,Stefan Konstantinidis,8-6,8,6,1,0,Completed,true,false,false
+AP002033,19 Oct 24,3,Carmelite Green,Bruce Park Blue,No. 2,Juan Llatse,Sebastian Cowan,Sebastian Cowan,7-8,7,8,0,1,Completed,true,false,false
+AP002033,19 Oct 24,3,Carmelite Green,Bruce Park Blue,No. 3,Francisco Gallardo,Tom Carter,Francisco Gallardo,8-4,8,4,1,0,Completed,true,false,false
+AP002033,19 Oct 24,3,Carmelite Green,Bruce Park Blue,No. 4,Ryan Sweeney,Luca Cowan,Luca Cowan,6-8,6,8,0,1,Completed,true,false,false
+AP002034,19 Oct 24,3,Altona Black,Dendy Park,No. 1,Ben Britton,Eddie Myers,Eddie Myers,4-8,4,8,0,1,Completed,true,false,false
+AP002034,19 Oct 24,3,Altona Black,Dendy Park,No. 2,Josh Fleming,Dean Ellis,Dean Ellis,7-8,7,8,0,1,Completed,true,false,false
+AP002034,19 Oct 24,3,Altona Black,Dendy Park,No. 3,Huon Russell,Hayden Fricke,Hayden Fricke,3-8,3,8,0,1,Completed,true,false,false
+AP002034,19 Oct 24,3,Altona Black,Dendy Park,No. 4,Jesse Hart,James McGregor,Jesse Hart,8-1,8,1,1,0,Completed,true,false,false
+AP002041,26 Oct 24,4,Dendy Park,Willy Central,No. 1,Eddie Myers,Noah Kurti,Eddie Myers,8-0,8,0,1,0,Completed,true,false,false
+AP002041,26 Oct 24,4,Dendy Park,Willy Central,No. 2,Paul Mackey,Koray Soylemez,Paul Mackey,8-6,8,6,1,0,Completed,true,false,false
+AP002041,26 Oct 24,4,Dendy Park,Willy Central,No. 3,Dean Ellis,Oscar Roeling,Dean Ellis,8-2,8,2,1,0,Completed,true,false,false
+AP002041,26 Oct 24,4,Dendy Park,Willy Central,No. 4,Darko Pasara,Hunter George,Darko Pasara,8-1,8,1,1,0,Completed,true,false,true
+AP002042,26 Oct 24,4,Carmelite Red,Langwarrin,No. 1,Ashton Arms,Alex Ianculescu,Ashton Arms,8-5,8,5,1,0,Completed,true,false,false
+AP002042,26 Oct 24,4,Carmelite Red,Langwarrin,No. 2,Simon Arms,Kyle Ebblewhite,Simon Arms,8-1,8,1,1,0,Completed,true,false,false
+AP002042,26 Oct 24,4,Carmelite Red,Langwarrin,No. 3,Nikola Rakovic,Haris Siakallis,Nikola Rakovic,8-5,8,5,1,0,Completed,true,false,false
+AP002042,26 Oct 24,4,Carmelite Red,Langwarrin,No. 4,Luke Kinsman,Harley Edmonds,Luke Kinsman,8-3,8,3,1,0,Completed,true,false,false
+AP002043,26 Oct 24,4,Mt Eliza,Carmelite Green,No. 1,Patrick Flood,Stefan Konstantinidis,Patrick Flood,8-3,8,3,1,0,Completed,true,false,false
+AP002043,26 Oct 24,4,Mt Eliza,Carmelite Green,No. 2,Jarrod Pepper,Francisco Gallardo,Jarrod Pepper,8-3,8,3,1,0,Completed,true,false,false
+AP002043,26 Oct 24,4,Mt Eliza,Carmelite Green,No. 3,Walker Majera,Ryan Sweeney,Walker Majera,8-5,8,5,1,0,Completed,true,false,false
+AP002043,26 Oct 24,4,Mt Eliza,Carmelite Green,No. 4,Charlie Hollow,Nick Rowe,Nick Rowe,2-8,2,8,0,1,Completed,true,true,false
+AP002044,26 Oct 24,4,Bruce Park Blue,Altona Black,No. 1,Jackson Shadbolt,Ben Thompson-star,Ben Thompson-star,7-8,7,8,0,1,Completed,true,false,false
+AP002044,26 Oct 24,4,Bruce Park Blue,Altona Black,No. 2,Sebastian Cowan,Ben Britton,Sebastian Cowan,8-6,8,6,1,0,Completed,true,false,false
+AP002044,26 Oct 24,4,Bruce Park Blue,Altona Black,No. 3,Tom Carter,Josh Fleming,Josh Fleming,2-8,2,8,0,1,Completed,true,false,false
+AP002044,26 Oct 24,4,Bruce Park Blue,Altona Black,No. 4,Luca Cowan,David Tan,David Tan,6-8,6,8,0,1,Completed,true,false,false
+AP002051,09 Nov 24,5,Carmelite Green,Altona Black,No. 1,Stefan Konstantinidis,Ben Thompson-star,Ben Thompson-star,1-8,1,8,0,1,Completed,true,false,false
+AP002051,09 Nov 24,5,Carmelite Green,Altona Black,No. 2,Juan Llatse,Ben Britton,Ben Britton,5-8,5,8,0,1,Completed,true,false,false
+AP002051,09 Nov 24,5,Carmelite Green,Altona Black,No. 3,Francisco Gallardo,Josh Fleming,Francisco Gallardo,8-6,8,6,1,0,Completed,true,false,false
+AP002051,09 Nov 24,5,Carmelite Green,Altona Black,No. 4,Ryan Sweeney,Mathew Spiteri,Mathew Spiteri,2-8,2,8,0,1,Completed,true,false,false
+AP002052,09 Nov 24,5,Mt Eliza,Carmelite Red,No. 1,Jack Shurdington,Ashton Arms,Ashton Arms,1-8,1,8,0,1,Completed,true,false,false
+AP002052,09 Nov 24,5,Mt Eliza,Carmelite Red,No. 2,Jarrod Dungey,Nikola Rakovic,Nikola Rakovic,1-8,1,8,0,1,Completed,true,true,false
+AP002052,09 Nov 24,5,Mt Eliza,Carmelite Red,No. 3,Alex McDonald,Matthew Fraanje,Matthew Fraanje,3-8,3,8,0,1,Completed,true,false,false
+AP002052,09 Nov 24,5,Mt Eliza,Carmelite Red,No. 4,Charlie Hollow,Luke Kinsman,Luke Kinsman,1-8,1,8,0,1,Completed,true,true,false
+AP002053,09 Nov 24,5,Dendy Park,Bruce Park Blue,No. 1,Dean Ellis,Tim Karpinski,Tim Karpinski,4-8,4,8,0,1,Completed,true,false,false
+AP002053,09 Nov 24,5,Dendy Park,Bruce Park Blue,No. 2,Hayden Fricke,Jackson Shadbolt,Hayden Fricke,8-2,8,2,1,0,Completed,true,false,false
+AP002053,09 Nov 24,5,Dendy Park,Bruce Park Blue,No. 3,James McGregor,Tom Carter,Tom Carter,0-8,0,8,0,1,Completed,true,false,false
+AP002053,09 Nov 24,5,Dendy Park,Bruce Park Blue,No. 4,Darko Pasara,Daniel McCulloch,Darko Pasara,8-6,8,6,1,0,Completed,true,false,false
+AP002061,16 Nov 24,6,Langwarrin,Carmelite Green,No. 1,Alex Ianculescu,Oliver Kalicin,Oliver Kalicin,6-8,6,8,0,1,Completed,true,false,false
+AP002061,16 Nov 24,6,Langwarrin,Carmelite Green,No. 2,Julian McKay,Tony Strupl,Julian McKay,8-7,8,7,1,0,Completed,true,false,false
+AP002061,16 Nov 24,6,Langwarrin,Carmelite Green,No. 3,Kyle Ebblewhite,Daniel Auld,Kyle Ebblewhite,8-5,8,5,1,0,Completed,true,false,false
+AP002061,16 Nov 24,6,Langwarrin,Carmelite Green,No. 4,Harley Edmonds,Angus Lockey,Angus Lockey,5-8,5,8,0,1,Completed,true,false,true
+AP002062,16 Nov 24,6,Altona Black,Willy Central,No. 1,Ben Thompson-star,Noah Kurti,Ben Thompson-star,8-3,8,3,1,0,Completed,true,false,false
+AP002062,16 Nov 24,6,Altona Black,Willy Central,No. 2,Ben Britton,Koray Soylemez,Ben Britton,8-5,8,5,1,0,Completed,true,false,false
+AP002062,16 Nov 24,6,Altona Black,Willy Central,No. 3,Mathew Spiteri,Luca Milinovic,Mathew Spiteri,8-6,8,6,1,0,Completed,true,false,true
+AP002062,16 Nov 24,6,Altona Black,Willy Central,No. 4,Huon Russell,Oscar Roeling,Huon Russell,8-1,8,1,1,0,Completed,true,false,false
+AP002063,16 Nov 24,6,Carmelite Red,Dendy Park,No. 1,Ashton Arms,Dean Ellis,Ashton Arms,8-5,8,5,1,0,Completed,true,false,false
+AP002063,16 Nov 24,6,Carmelite Red,Dendy Park,No. 2,Simon Arms,Hayden Fricke,Hayden Fricke,3-8,3,8,0,1,Completed,true,false,false
+AP002063,16 Nov 24,6,Carmelite Red,Dendy Park,No. 3,Andrew Ross,James McGregor,Andrew Ross,8-4,8,4,1,0,Completed,true,true,false
+AP002063,16 Nov 24,6,Carmelite Red,Dendy Park,No. 4,Luke Kinsman,Darko Pasara,Luke Kinsman,8-1,8,1,1,0,Completed,true,false,false
+AP002064,16 Nov 24,6,Bruce Park Blue,Mt Eliza,No. 1,Tim Karpinski,Jarrod Pepper,Tim Karpinski,8-2,8,2,1,0,Completed,true,false,false
+AP002064,16 Nov 24,6,Bruce Park Blue,Mt Eliza,No. 2,Jackson Shadbolt,Kento Nguyen,Jackson Shadbolt,8-4,8,4,1,0,Completed,true,false,false
+AP002064,16 Nov 24,6,Bruce Park Blue,Mt Eliza,No. 3,Sebastian Cowan,Walker Majera,Walker Majera,1-8,1,8,0,1,Completed,true,false,false
+AP002064,16 Nov 24,6,Bruce Park Blue,Mt Eliza,No. 4,Luca Cowan,Alex McDonald,Luca Cowan,8-6,8,6,1,0,Completed,true,false,false
+AP002071,23 Nov 24,7,Willy Central,Carmelite Green,No. 1,Gim Kurti,Juan Llatse,Juan Llatse,4-8,4,8,0,1,Completed,true,false,false
+AP002071,23 Nov 24,7,Willy Central,Carmelite Green,No. 2,Noah Kurti,Oliver Kalicin,Noah Kurti,8-5,8,5,1,0,Completed,true,false,false
+AP002071,23 Nov 24,7,Willy Central,Carmelite Green,No. 3,Koray Soylemez,Ryan Sweeney,Ryan Sweeney,5-8,5,8,0,1,Completed,true,false,false
+AP002071,23 Nov 24,7,Willy Central,Carmelite Green,No. 4,Oscar Roeling,Tony Strupl,Tony Strupl,3-8,3,8,0,1,Completed,true,false,false
+AP002074,23 Nov 24,7,Carmelite Red,Bruce Park Blue,No. 1,Ashton Arms,Tim Karpinski,Ashton Arms,8-6,8,6,1,0,Completed,true,false,false
+AP002074,23 Nov 24,7,Carmelite Red,Bruce Park Blue,No. 2,Nikola Rakovic,Sebastian Cowan,Nikola Rakovic,8-3,8,3,1,0,Completed,true,false,false
+AP002074,23 Nov 24,7,Carmelite Red,Bruce Park Blue,No. 3,Matthew Fraanje,Tom Carter,Tom Carter,0-8,0,8,0,1,Completed,true,false,false
+AP002074,23 Nov 24,7,Carmelite Red,Bruce Park Blue,No. 4,Luke Kinsman,Daniel McCulloch,Luke Kinsman,8-6,8,6,1,0,Completed,true,false,false
+AP002091,07 Dec 24,9,Willy Central,Mt Eliza,No. 1,Rob McMahon,Jack Shurdington,Jack Shurdington,6-8,6,8,0,1,Completed,true,false,false
+AP002091,07 Dec 24,9,Willy Central,Mt Eliza,No. 2,Noah Kurti,Kento Nguyen,Noah Kurti,8-5,8,5,1,0,Completed,true,false,false
+AP002091,07 Dec 24,9,Willy Central,Mt Eliza,No. 3,Koray Soylemez,Walker Majera,Walker Majera,3-8,3,8,0,1,Completed,true,false,false
+AP002091,07 Dec 24,9,Willy Central,Mt Eliza,No. 4,Oscar Roeling,Alex McDonald,Alex McDonald,2-8,2,8,0,1,Completed,true,false,false
+AP002092,07 Dec 24,9,Langwarrin,Bruce Park Blue,No. 1,Alex Ianculescu,Sebastian Cowan,Alex Ianculescu,8-3,8,3,1,0,Completed,true,false,false
+AP002092,07 Dec 24,9,Langwarrin,Bruce Park Blue,No. 2,Julian McKay,Tom Carter,Tom Carter,7-8,7,8,0,1,Completed,true,false,false
+AP002092,07 Dec 24,9,Langwarrin,Bruce Park Blue,No. 3,Haris Siakallis,Luca Cowan,Luca Cowan,5-8,5,8,0,1,Completed,true,false,false
+AP002092,07 Dec 24,9,Langwarrin,Bruce Park Blue,No. 4,Harley Edmonds,Daniel McCulloch,Daniel McCulloch,1-8,1,8,0,1,Completed,true,false,false
+AP002093,07 Dec 24,9,Carmelite Green,Dendy Park,No. 1,Juan Llatse,Eddie Myers,Eddie Myers,0-8,0,8,0,1,Completed,true,false,false
+AP002093,07 Dec 24,9,Carmelite Green,Dendy Park,No. 2,Nicholas Mitsinikos,Dean Ellis,Nicholas Mitsinikos,8-4,8,4,1,0,Completed,true,true,false
+AP002093,07 Dec 24,9,Carmelite Green,Dendy Park,No. 3,Oliver Kalicin,James McGregor,Oliver Kalicin,8-1,8,1,1,0,Completed,true,false,false
+AP002093,07 Dec 24,9,Carmelite Green,Dendy Park,No. 4,Ryan Sweeney,Darko Pasara,Ryan Sweeney,8-4,8,4,1,0,Completed,true,false,false
+AP002094,07 Dec 24,9,Altona Black,Carmelite Red,No. 1,Ben Britton,Ashton Arms,Ben Britton,8-2,8,2,1,0,Completed,true,false,false
+AP002094,07 Dec 24,9,Altona Black,Carmelite Red,No. 2,Josh Fleming,Nikola Rakovic,Josh Fleming,8-6,8,6,1,0,Completed,true,false,false
+AP002094,07 Dec 24,9,Altona Black,Carmelite Red,No. 3,Mathew Spiteri,Matthew Fraanje,Mathew Spiteri,8-1,8,1,1,0,Completed,true,false,false
+AP002094,07 Dec 24,9,Altona Black,Carmelite Red,No. 4,David Tan,Andrew Ross,Andrew Ross,6-8,6,8,0,1,Completed,true,false,true
+AP002101,14 Dec 24,10,Carmelite Red,Willy Central,No. 1,Ashton Arms,Rob McMahon,Ashton Arms,8-4,8,4,1,0,Completed,true,false,false
+AP002101,14 Dec 24,10,Carmelite Red,Willy Central,No. 2,Simon Arms,Noah Kurti,Simon Arms,8-2,8,2,1,0,Completed,true,false,false
+AP002101,14 Dec 24,10,Carmelite Red,Willy Central,No. 3,Nikola Rakovic,Koray Soylemez,Nikola Rakovic,8-2,8,2,1,0,Completed,true,false,false
+AP002101,14 Dec 24,10,Carmelite Red,Willy Central,No. 4,Matthew Fraanje,Oscar Roeling,Matthew Fraanje,8-4,8,4,1,0,Completed,true,false,false
+AP002102,14 Dec 24,10,Mt Eliza,Langwarrin,No. 1,Patrick Flood,Alex Ianculescu,Patrick Flood,8-5,8,5,1,0,Completed,true,false,false
+AP002102,14 Dec 24,10,Mt Eliza,Langwarrin,No. 2,Jack Shurdington,Julian McKay,Jack Shurdington,8-2,8,2,1,0,Completed,true,false,false
+AP002102,14 Dec 24,10,Mt Eliza,Langwarrin,No. 3,Jarrod Pepper,Kyle Ebblewhite,Jarrod Pepper,8-5,8,5,1,0,Completed,true,false,false
+AP002102,14 Dec 24,10,Mt Eliza,Langwarrin,No. 4,Walker Majera,Haris Siakallis,Walker Majera,8-4,8,4,1,0,Completed,true,false,false
+AP002103,14 Dec 24,10,Bruce Park Blue,Carmelite Green,No. 1,Sebastian Cowan,Stefan Konstantinidis,Sebastian Cowan,8-2,8,2,1,0,Completed,true,false,false
+AP002103,14 Dec 24,10,Bruce Park Blue,Carmelite Green,No. 2,Tom Carter,Juan Llatse,Juan Llatse,4-8,4,8,0,1,Completed,true,false,false
+AP002103,14 Dec 24,10,Bruce Park Blue,Carmelite Green,No. 3,Luca Cowan,Oliver Kalicin,Oliver Kalicin,6-8,6,8,0,1,Completed,true,false,false
+AP002103,14 Dec 24,10,Bruce Park Blue,Carmelite Green,No. 4,Daniel McCulloch,Ryan Sweeney,Ryan Sweeney,4-8,4,8,0,1,Completed,true,false,false
+AP002104,14 Dec 24,10,Dendy Park,Altona Black,No. 1,Dean Ellis,Josh Fleming,Josh Fleming,6-8,6,8,0,1,Completed,true,false,false
+AP002104,14 Dec 24,10,Dendy Park,Altona Black,No. 2,James McGregor,Mathew Spiteri,Mathew Spiteri,4-8,4,8,0,1,Completed,true,false,false
+AP002104,14 Dec 24,10,Dendy Park,Altona Black,No. 3,Darko Pasara,David Tan,David Tan,2-8,2,8,0,1,Completed,true,false,false
+AP002104,14 Dec 24,10,Dendy Park,Altona Black,No. 4,Brad Piner,Huon Russell,Huon Russell,4-8,4,8,0,1,Completed,true,false,false
+AP002111,01 Feb 25,11,Willy Central,Dendy Park,No. 1,Rob McMahon,Eddie Myers,Eddie Myers,0-8,0,8,0,1,Completed,true,false,false
+AP002111,01 Feb 25,11,Willy Central,Dendy Park,No. 2,Noah Kurti,Dean Ellis,Noah Kurti,8-4,8,4,1,0,Completed,true,false,false
+AP002111,01 Feb 25,11,Willy Central,Dendy Park,No. 3,Koray Soylemez,Darko Pasara,Darko Pasara,7-8,7,8,0,1,Completed,true,false,false
+AP002111,01 Feb 25,11,Willy Central,Dendy Park,No. 4,Oscar Roeling,Brad Piner,Oscar Roeling,8-3,8,3,1,0,Completed,true,false,false
+AP002112,01 Feb 25,11,Langwarrin,Carmelite Red,No. 1,Alex Ianculescu,Ashton Arms,Ashton Arms,7-8,7,8,0,1,Completed,true,false,false
+AP002112,01 Feb 25,11,Langwarrin,Carmelite Red,No. 2,Julian McKay,Damien Pound,Julian McKay,8-1,8,1,1,0,Completed,true,false,true
+AP002112,01 Feb 25,11,Langwarrin,Carmelite Red,No. 3,Haris Siakallis,Leo Bastian,Haris Siakallis,8-5,8,5,1,0,Completed,true,false,true
+AP002112,01 Feb 25,11,Langwarrin,Carmelite Red,No. 4,Harley Edmonds,Matthew Fraanje,Matthew Fraanje,6-8,6,8,0,1,Completed,true,false,false
+AP002113,01 Feb 25,11,Carmelite Green,Mt Eliza,No. 1,Stefan Konstantinidis,Patrick Flood,Patrick Flood,3-8,3,8,0,1,Completed,true,false,false
+AP002113,01 Feb 25,11,Carmelite Green,Mt Eliza,No. 2,Oliver Kalicin,Kento Nguyen,Oliver Kalicin,8-6,8,6,1,0,Completed,true,false,false
+AP002113,01 Feb 25,11,Carmelite Green,Mt Eliza,No. 3,Ryan Sweeney,Noah Dergham,Noah Dergham,4-8,4,8,0,1,Completed,true,false,false
+AP002113,01 Feb 25,11,Carmelite Green,Mt Eliza,No. 4,Tony Strupl,Walker Majera,Tony Strupl,8-3,8,3,1,0,Completed,true,false,false
+AP002114,01 Feb 25,11,Altona Black,Bruce Park Blue,No. 1,Ben Britton,Jackson Shadbolt,Jackson Shadbolt,6-8,6,8,0,1,Completed,true,false,false
+AP002114,01 Feb 25,11,Altona Black,Bruce Park Blue,No. 2,Josh Fleming,Sebastian Cowan,Josh Fleming,8-6,8,6,1,0,Completed,true,false,false
+AP002114,01 Feb 25,11,Altona Black,Bruce Park Blue,No. 3,Mathew Spiteri,Tom Carter,Mathew Spiteri,8-0,8,0,1,0,Completed,true,false,false
+AP002114,01 Feb 25,11,Altona Black,Bruce Park Blue,No. 4,David Tan,Luca Cowan,David Tan,8-1,8,1,1,0,Completed,true,false,false
+AP002121,08 Feb 25,12,Altona Black,Carmelite Green,No. 1,Ben Britton,Francisco Gallardo,Ben Britton,8-1,8,1,1,0,Completed,true,false,false
+AP002121,08 Feb 25,12,Altona Black,Carmelite Green,No. 2,Josh Fleming,Oliver Kalicin,Josh Fleming,8-5,8,5,1,0,Completed,true,false,false
+AP002121,08 Feb 25,12,Altona Black,Carmelite Green,No. 3,Huon Russell,Ryan Sweeney,Huon Russell,8-2,8,2,1,0,Completed,true,false,false
+AP002121,08 Feb 25,12,Altona Black,Carmelite Green,No. 4,Jesse Hart,Tony Strupl,Tony Strupl,4-8,4,8,0,1,Completed,true,false,false
+AP002122,08 Feb 25,12,Carmelite Red,Mt Eliza,No. 1,Ashton Arms,Patrick Flood,Patrick Flood,7-8,7,8,0,1,Completed,true,false,false
+AP002122,08 Feb 25,12,Carmelite Red,Mt Eliza,No. 2,Simon Arms,Jarrod Pepper,Simon Arms,8-4,8,4,1,0,Completed,true,false,false
+AP002122,08 Feb 25,12,Carmelite Red,Mt Eliza,No. 3,Damien Pound,Noah Dergham,Noah Dergham,2-8,2,8,0,1,Completed,true,true,false
+AP002122,08 Feb 25,12,Carmelite Red,Mt Eliza,No. 4,Matthew Fraanje,Walker Majera,Matthew Fraanje,8-6,8,6,1,0,Completed,true,false,false
+AP002123,08 Feb 25,12,Bruce Park Blue,Dendy Park,No. 1,Jackson Shadbolt,Eddie Myers,Jackson Shadbolt,8-4,8,4,1,0,Completed,true,false,false
+AP002123,08 Feb 25,12,Bruce Park Blue,Dendy Park,No. 2,Liam Connop,Dean Ellis,Liam Connop,8-5,8,5,1,0,Completed,true,true,false
+AP002123,08 Feb 25,12,Bruce Park Blue,Dendy Park,No. 3,Sebastian Cowan,Hayden Fricke,Sebastian Cowan,8-2,8,2,1,0,Completed,true,false,false
+AP002123,08 Feb 25,12,Bruce Park Blue,Dendy Park,No. 4,Luca Cowan,Darko Pasara,Luca Cowan,8-4,8,4,1,0,Completed,true,false,false
+AP002124,08 Feb 25,12,Langwarrin,Willy Central,No. 1,Julian McKay,Rob McMahon,Julian McKay,8-3,8,3,1,0,Completed,true,false,false
+AP002124,08 Feb 25,12,Langwarrin,Willy Central,No. 2,Kyle Ebblewhite,Cihan Soylemez,Cihan Soylemez,0-8,0,8,0,1,Completed,true,false,false
+AP002124,08 Feb 25,12,Langwarrin,Willy Central,No. 3,Haris Siakallis,Noah Kurti,Noah Kurti,6-8,6,8,0,1,Completed,true,false,false
+AP002124,08 Feb 25,12,Langwarrin,Willy Central,No. 4,Harley Edmonds,Koray Soylemez,Harley Edmonds,8-5,8,5,1,0,Completed,true,false,false
+AP002131,15 Feb 25,13,Carmelite Green,Langwarrin,No. 1,Stefan Konstantinidis,Alex Ianculescu,Alex Ianculescu,6-8,6,8,0,1,Completed,true,false,false
+AP002131,15 Feb 25,13,Carmelite Green,Langwarrin,No. 2,Francisco Gallardo,Julian McKay,Julian McKay,2-8,2,8,0,1,Completed,true,false,false
+AP002131,15 Feb 25,13,Carmelite Green,Langwarrin,No. 3,Oliver Kalicin,Kyle Ebblewhite,Oliver Kalicin,8-1,8,1,1,0,Completed,true,false,false
+AP002131,15 Feb 25,13,Carmelite Green,Langwarrin,No. 4,Ryan Sweeney,Haris Siakallis,Haris Siakallis,6-8,6,8,0,1,Completed,true,false,false
+AP002132,15 Feb 25,13,Willy Central,Altona Black,No. 1,Noah Kurti,Ben Britton,Ben Britton,1-8,1,8,0,1,Completed,true,false,false
+AP002132,15 Feb 25,13,Willy Central,Altona Black,No. 2,Koray Soylemez,Josh Fleming,Josh Fleming,2-8,2,8,0,1,Completed,true,false,false
+AP002132,15 Feb 25,13,Willy Central,Altona Black,No. 3,Oscar Roeling,Huon Russell,Huon Russell,1-8,1,8,0,1,Completed,true,false,false
+AP002132,15 Feb 25,13,Willy Central,Altona Black,No. 4,Hunter George,Jesse Hart,Jesse Hart,2-8,2,8,0,1,Completed,true,true,false
+AP002133,15 Feb 25,13,Dendy Park,Carmelite Red,No. 1,William Schneidemann,Ashton Arms,Ashton Arms,3-8,3,8,0,1,Completed,true,true,false
+AP002133,15 Feb 25,13,Dendy Park,Carmelite Red,No. 2,Paul Mackey,Simon Arms,Simon Arms,5-8,5,8,0,1,Completed,true,false,false
+AP002133,15 Feb 25,13,Dendy Park,Carmelite Red,No. 3,Hayden Fricke,Nikola Rakovic,,6-6,6,6,0,0,Unfinished,false,false,false
+AP002133,15 Feb 25,13,Dendy Park,Carmelite Red,No. 4,James McGregor,Luke Kinsman,Luke Kinsman,4-8,4,8,0,1,Completed,true,false,false
+AP002134,15 Feb 25,13,Mt Eliza,Bruce Park Blue,No. 1,Patrick Flood,Jackson Shadbolt,Jackson Shadbolt,0-8,0,8,0,1,Completed,true,false,false
+AP002134,15 Feb 25,13,Mt Eliza,Bruce Park Blue,No. 2,Jack Shurdington,Liam Connop,Jack Shurdington,8-4,8,4,1,0,Completed,true,false,true
+AP002134,15 Feb 25,13,Mt Eliza,Bruce Park Blue,No. 3,Noah Dergham,Sebastian Cowan,Sebastian Cowan,1-8,1,8,0,1,Completed,true,false,false
+AP002134,15 Feb 25,13,Mt Eliza,Bruce Park Blue,No. 4,Walker Majera,Jonahan Sanghvi,Walker Majera,8-2,8,2,1,0,Completed,true,false,true
+AP002141,22 Feb 25,14,Carmelite Green,Willy Central,No. 1,Stefan Konstantinidis,Noah Kurti,Noah Kurti,6-8,6,8,0,1,Completed,true,false,false
+AP002141,22 Feb 25,14,Carmelite Green,Willy Central,No. 2,Francisco Gallardo,Koray Soylemez,Francisco Gallardo,8-5,8,5,1,0,Completed,true,false,false
+AP002141,22 Feb 25,14,Carmelite Green,Willy Central,No. 3,Ryan Sweeney,Luca Milinovic,Ryan Sweeney,8-4,8,4,1,0,Completed,true,false,true
+AP002141,22 Feb 25,14,Carmelite Green,Willy Central,No. 4,Tony Strupl,Oscar Roeling,Tony Strupl,8-4,8,4,1,0,Completed,true,false,false
+AP002142,22 Feb 25,14,Altona Black,Langwarrin,No. 1,Ben Thompson-star,Alex Ianculescu,Ben Thompson-star,8-5,8,5,1,0,Completed,true,false,false
+AP002142,22 Feb 25,14,Altona Black,Langwarrin,No. 2,Ben Britton,Kyle Ebblewhite,Ben Britton,8-3,8,3,1,0,Completed,true,false,false
+AP002142,22 Feb 25,14,Altona Black,Langwarrin,No. 3,Josh Fleming,Haris Siakallis,Josh Fleming,8-7,8,7,1,0,Completed,true,false,false
+AP002142,22 Feb 25,14,Altona Black,Langwarrin,No. 4,Sam Maynard,Harley Edmonds,Harley Edmonds,5-8,5,8,0,1,Completed,true,false,false
+AP002143,22 Feb 25,14,Dendy Park,Mt Eliza,No. 1,Eddie Myers,Patrick Flood,Patrick Flood,1-8,1,8,0,1,Completed,true,false,false
+AP002143,22 Feb 25,14,Dendy Park,Mt Eliza,No. 2,Paul Mackey,Jack Shurdington,Jack Shurdington,3-8,3,8,0,1,Completed,true,false,false
+AP002143,22 Feb 25,14,Dendy Park,Mt Eliza,No. 3,Darko Pasara,Jarrod Pepper,Jarrod Pepper,7-8,7,8,0,1,Completed,true,false,false
+AP002143,22 Feb 25,14,Dendy Park,Mt Eliza,No. 4,Brad Piner,Walker Majera,Walker Majera,1-8,1,8,0,1,Completed,true,false,false
+AP002144,22 Feb 25,14,Bruce Park Blue,Carmelite Red,No. 1,Luca Cowan,Matthew Fraanje,,1-4,1,4,0,1,Unfinished,false,false,false
+AP002301,,16,Altona Black,Carmelite Green,No. 1,Ben Thompson-star,Stefan Konstantinidis,Ben Thompson-star,8-2,8,2,1,0,Completed,true,false,false
+AP002301,,16,Altona Black,Carmelite Green,No. 2,Josh Fleming,Juan Llatse,Josh Fleming,8-7,8,7,1,0,Completed,true,false,false
+AP002301,,16,Altona Black,Carmelite Green,No. 3,David Tan,Oliver Kalicin,Oliver Kalicin,6-8,6,8,0,1,Completed,true,false,false
+AP002301,,16,Altona Black,Carmelite Green,No. 4,Huon Russell,Tony Strupl,Huon Russell,8-7,8,7,1,0,Completed,true,false,false
+AP002302,,16,Carmelite Red,Bruce Park Blue,No. 1,Ashton Arms,Tim Karpinski,Tim Karpinski,6-8,6,8,0,1,Completed,true,false,false
+AP002302,,16,Carmelite Red,Bruce Park Blue,No. 2,Simon Arms,Jackson Shadbolt,Simon Arms,8-5,8,5,1,0,Completed,true,false,false
+AP002302,,16,Carmelite Red,Bruce Park Blue,No. 3,Nikola Rakovic,Sebastian Cowan,Sebastian Cowan,1-8,1,8,0,1,Completed,true,false,false
+AP002302,,16,Carmelite Red,Bruce Park Blue,No. 4,Luke Kinsman,Luca Cowan,Luke Kinsman,8-4,8,4,1,0,Completed,true,false,false
+AP002321,,17,Altona Black,Bruce Park Blue,No. 1,Ben Thompson-star,Tim Karpinski,Tim Karpinski,1-8,1,8,0,1,Completed,true,false,false
+AP002321,,17,Altona Black,Bruce Park Blue,No. 2,Josh Fleming,Jackson Shadbolt,Josh Fleming,8-3,8,3,1,0,Completed,true,false,false
+AP002321,,17,Altona Black,Bruce Park Blue,No. 3,David Tan,Sebastian Cowan,Sebastian Cowan,2-8,2,8,0,1,Completed,true,false,false
+AP002321,,17,Altona Black,Bruce Park Blue,No. 4,Huon Russell,Luca Cowan,Huon Russell,8-1,8,1,1,0,Completed,true,false,false

@@ -1,0 +1,90 @@
+{
+  "asset_id": "AP35-AP005",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Winter 2017",
+  "season_id": "AP35",
+  "season_label": "Winter 2017",
+  "source_section_code": "AP005",
+  "section_label": "Mixed Rubbers 3",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Black Rock",
+      "wins": 15,
+      "points": 115,
+      "percentage": 195.48,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Beaumaris CC",
+      "wins": 7,
+      "points": 61,
+      "percentage": 98.46,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Parkdale 1",
+      "wins": 6,
+      "points": 60,
+      "percentage": 104.92,
+      "marker": "R"
+    },
+    {
+      "position": 4,
+      "team": "Kings Park",
+      "wins": 6,
+      "points": 54,
+      "percentage": 94.37,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Le Page",
+      "wins": 6,
+      "points": 51,
+      "percentage": 86.58,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Parkdale 2",
+      "wins": 1,
+      "points": 19,
+      "percentage": 60.92,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP35-AP005",
+  "fixtures": 47,
+  "completed_fixtures": 45,
+  "draw_fixtures": 57,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 178,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP005011 doubles No. 1: '1-0'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP005011 doubles No. 2: '0-1'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

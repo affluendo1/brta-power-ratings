@@ -1,0 +1,225 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP018011,08 Oct 16,1,Albert Reserve,Kings Park,No. 1,David Castricum,Nathan Broadbent,Nathan Broadbent,0-8,0,8,0,1,Completed,true,false,false
+AP018011,08 Oct 16,1,Albert Reserve,Kings Park,No. 2,Danny Thompson,Callum Campbell,Callum Campbell,7-9,7,9,0,1,Completed,true,false,false
+AP018011,08 Oct 16,1,Albert Reserve,Kings Park,No. 3,Lukas Kellett,Lyndon Krause,Lyndon Krause,3-8,3,8,0,1,Completed,true,false,false
+AP018011,08 Oct 16,1,Albert Reserve,Kings Park,No. 4,Matthew Corrie,Finn Rasmussen,Finn Rasmussen,0-8,0,8,0,1,Completed,true,false,false
+AP018012,08 Oct 16,1,Parkdale,Maccabi,No. 1,Tom Bodley,Adam Needleman,Adam Needleman,3-8,3,8,0,1,Completed,true,false,false
+AP018012,08 Oct 16,1,Parkdale,Maccabi,No. 2,Nicholas Charlson,David Kenley,David Kenley,5-8,5,8,0,1,Completed,true,false,false
+AP018012,08 Oct 16,1,Parkdale,Maccabi,No. 3,Shaun Vandebrok,Darren Seymour,Darren Seymour,4-8,4,8,0,1,Completed,true,false,false
+AP018012,08 Oct 16,1,Parkdale,Maccabi,No. 4,Sean Enright,Daniel Henquin,Daniel Henquin,2-8,2,8,0,1,Completed,true,false,false
+AP018013,08 Oct 16,1,Dendy Park 1,Dendy Park 2,No. 1,Matt Gatti,Bruce Watkins,Matt Gatti,8-0,8,0,1,0,Completed,true,false,false
+AP018013,08 Oct 16,1,Dendy Park 1,Dendy Park 2,No. 2,Tom Neylon,Ian Wilkinson,Tom Neylon,8-2,8,2,1,0,Completed,true,false,false
+AP018013,08 Oct 16,1,Dendy Park 1,Dendy Park 2,No. 3,Asbjorn Williamson,Tony Saul,Asbjorn Williamson,8-3,8,3,1,0,Completed,true,false,false
+AP018013,08 Oct 16,1,Dendy Park 1,Dendy Park 2,No. 4,Lubing Liu,John Riley,John Riley,3-8,3,8,0,1,Completed,true,false,false
+AP018014,08 Oct 16,1,Monash University,Mordialloc,No. 1,Stanley Yeoh,Lachlan Gallagher,Lachlan Gallagher,6-8,6,8,0,1,Completed,true,false,false
+AP018014,08 Oct 16,1,Monash University,Mordialloc,No. 2,Philip Phung,Curtis Burge,Curtis Burge,4-8,4,8,0,1,Completed,true,false,false
+AP018014,08 Oct 16,1,Monash University,Mordialloc,No. 3,Ken Kennedy,Cameron Clark,Ken Kennedy,8-4,8,4,1,0,Completed,true,false,false
+AP018014,08 Oct 16,1,Monash University,Mordialloc,No. 4,Chamaka Wijesinghe,Matt Parousiatis,Chamaka Wijesinghe,8-2,8,2,1,0,Completed,true,false,false
+AP018021,15 Oct 16,2,Mordialloc,Albert Reserve,No. 1,Lachlan Gallagher,Robert Goodwin,Lachlan Gallagher,8-3,8,3,1,0,Completed,true,false,false
+AP018021,15 Oct 16,2,Mordialloc,Albert Reserve,No. 2,Daniel Campbell,Viranga Senadipathy,Daniel Campbell,8-1,8,1,1,0,Completed,true,false,false
+AP018021,15 Oct 16,2,Mordialloc,Albert Reserve,No. 3,Curtis Burge,Lukas Kellett,Lukas Kellett,6-8,6,8,0,1,Completed,true,false,false
+AP018021,15 Oct 16,2,Mordialloc,Albert Reserve,No. 4,Cameron Clark,Matthew Corrie,Matthew Corrie,8-9,8,9,0,1,Completed,true,false,false
+AP018022,15 Oct 16,2,Kings Park,Parkdale,No. 1,Callum Campbell,Perry Kick,Perry Kick,4-8,4,8,0,1,Completed,true,false,false
+AP018022,15 Oct 16,2,Kings Park,Parkdale,No. 2,Glen Te Wierik,Tom Bodley,Glen Te Wierik,9-8,9,8,1,0,Completed,true,false,false
+AP018022,15 Oct 16,2,Kings Park,Parkdale,No. 3,Cameron Krause,Luke Shi,Luke Shi,1-8,1,8,0,1,Completed,true,false,false
+AP018022,15 Oct 16,2,Kings Park,Parkdale,No. 4,Phil Mahony,Lothar Schmidt,Phil Mahony,8-5,8,5,1,0,Completed,true,false,false
+AP018023,15 Oct 16,2,Maccabi,Dendy Park 1,No. 1,Adam Needleman,Matt Gatti,Matt Gatti,5-8,5,8,0,1,Completed,true,false,false
+AP018023,15 Oct 16,2,Maccabi,Dendy Park 1,No. 2,Darren Seymour,Basile Nock,Basile Nock,6-8,6,8,0,1,Completed,true,false,false
+AP018023,15 Oct 16,2,Maccabi,Dendy Park 1,No. 3,Joel Rabinov,Asbjorn Williamson,Asbjorn Williamson,4-8,4,8,0,1,Completed,true,false,false
+AP018023,15 Oct 16,2,Maccabi,Dendy Park 1,No. 4,Les Schwarz,Lubing Liu,Les Schwarz,8-4,8,4,1,0,Completed,true,false,false
+AP018024,15 Oct 16,2,Dendy Park 2,Monash University,No. 1,Ian Wilkinson,Broc Song,Broc Song,5-8,5,8,0,1,Completed,true,false,false
+AP018024,15 Oct 16,2,Dendy Park 2,Monash University,No. 2,Peter Fleming,Philip Phung,Peter Fleming,9-7,9,7,1,0,Completed,true,false,false
+AP018024,15 Oct 16,2,Dendy Park 2,Monash University,No. 3,Chris Trotter,Ken Kennedy,Chris Trotter,8-6,8,6,1,0,Completed,true,false,false
+AP018024,15 Oct 16,2,Dendy Park 2,Monash University,No. 4,John Riley,James Virth,James Virth,5-8,5,8,0,1,Completed,true,false,false
+AP018041,05 Nov 16,4,Maccabi,Albert Reserve,No. 1,Sasha Volziker,Viranga Senadipathy,Viranga Senadipathy,5-8,5,8,0,1,Completed,true,false,false
+AP018041,05 Nov 16,4,Maccabi,Albert Reserve,No. 2,Steven Kleytman,Bashir Riashi,Steven Kleytman,8-0,8,0,1,0,Completed,true,false,false
+AP018041,05 Nov 16,4,Maccabi,Albert Reserve,No. 3,Adam Needleman,David Castricum,David Castricum,7-9,7,9,0,1,Completed,true,false,false
+AP018041,05 Nov 16,4,Maccabi,Albert Reserve,No. 4,Darren Seymour,Stephan Cardiff,Darren Seymour,8-3,8,3,1,0,Completed,true,false,false
+AP018042,05 Nov 16,4,Dendy Park 2,Parkdale,No. 1,Bruce Watkins,Tom Bodley,Bruce Watkins,8-3,8,3,1,0,Completed,true,false,false
+AP018042,05 Nov 16,4,Dendy Park 2,Parkdale,No. 2,Peter Fleming,Nicholas Charlson,Nicholas Charlson,6-8,6,8,0,1,Completed,true,false,false
+AP018042,05 Nov 16,4,Dendy Park 2,Parkdale,No. 3,Chris Trotter,Shaun Vandebrok,Shaun Vandebrok,5-8,5,8,0,1,Completed,true,false,false
+AP018042,05 Nov 16,4,Dendy Park 2,Parkdale,No. 4,John Riley,Sean Enright,John Riley,8-2,8,2,1,0,Completed,true,false,false
+AP018043,05 Nov 16,4,Mordialloc,Dendy Park 1,No. 1,Daniel Campbell,Matt Gatti,Matt Gatti,3-8,3,8,0,1,Completed,true,false,false
+AP018043,05 Nov 16,4,Mordialloc,Dendy Park 1,No. 2,Curtis Burge,Tom Neylon,Tom Neylon,2-8,2,8,0,1,Completed,true,false,false
+AP018043,05 Nov 16,4,Mordialloc,Dendy Park 1,No. 3,Cameron Clark,Basile Nock,Basile Nock,3-8,3,8,0,1,Completed,true,false,false
+AP018043,05 Nov 16,4,Mordialloc,Dendy Park 1,No. 4,Matt Parousiatis,Lubing Liu,Matt Parousiatis,8-6,8,6,1,0,Completed,true,false,false
+AP018044,05 Nov 16,4,Kings Park,Monash University,No. 1,Lyndon Krause,Broc Song,Broc Song,2-8,2,8,0,1,Completed,true,false,false
+AP018044,05 Nov 16,4,Kings Park,Monash University,No. 2,Finn Rasmussen,Philip Phung,Finn Rasmussen,8-0,8,0,1,0,Completed,true,false,false
+AP018044,05 Nov 16,4,Kings Park,Monash University,No. 3,Cameron Krause,Ken Kennedy,Ken Kennedy,3-8,3,8,0,1,Completed,true,false,false
+AP018044,05 Nov 16,4,Kings Park,Monash University,No. 4,Phil Mahony,Joshua Bennier,Phil Mahony,8-5,8,5,1,0,Completed,true,false,false
+AP018051,12 Nov 16,5,Dendy Park 1,Monash University,No. 1,Matt Gatti,Stanley Yeoh,Matt Gatti,8-2,8,2,1,0,Completed,true,false,false
+AP018051,12 Nov 16,5,Dendy Park 1,Monash University,No. 2,Tom Neylon,Philip Phung,Tom Neylon,9-7,9,7,1,0,Completed,true,false,false
+AP018051,12 Nov 16,5,Dendy Park 1,Monash University,No. 3,Asbjorn Williamson,Ken Kennedy,Asbjorn Williamson,9-8,9,8,1,0,Completed,true,false,false
+AP018051,12 Nov 16,5,Dendy Park 1,Monash University,No. 4,Charlie Sinclair,Joshua Bennier,Charlie Sinclair,8-6,8,6,1,0,Completed,true,false,false
+AP018052,12 Nov 16,5,Mordialloc,Dendy Park 2,No. 1,Lachlan Gallagher,Ian Wilkinson,Lachlan Gallagher,8-3,8,3,1,0,Completed,true,false,false
+AP018052,12 Nov 16,5,Mordialloc,Dendy Park 2,No. 2,Daniel Campbell,Tony Saul,Daniel Campbell,8-1,8,1,1,0,Completed,true,false,false
+AP018052,12 Nov 16,5,Mordialloc,Dendy Park 2,No. 3,Curtis Burge,Chris Trotter,Curtis Burge,9-8,9,8,1,0,Completed,true,false,false
+AP018052,12 Nov 16,5,Mordialloc,Dendy Park 2,No. 4,Matt Parousiatis,Bill Craig,Matt Parousiatis,8-5,8,5,1,0,Completed,true,false,false
+AP018053,12 Nov 16,5,Maccabi,Kings Park,No. 1,Sasha Volziker,Callum Campbell,Sasha Volziker,8-6,8,6,1,0,Completed,true,false,false
+AP018053,12 Nov 16,5,Maccabi,Kings Park,No. 2,Steven Kleytman,Lyndon Krause,Steven Kleytman,8-6,8,6,1,0,Completed,true,false,false
+AP018053,12 Nov 16,5,Maccabi,Kings Park,No. 3,Adam Needleman,Cameron Krause,Adam Needleman,8-1,8,1,1,0,Completed,true,false,false
+AP018053,12 Nov 16,5,Maccabi,Kings Park,No. 4,Darren Seymour,Phil Mahony,Darren Seymour,8-3,8,3,1,0,Completed,true,false,false
+AP018054,12 Nov 16,5,Albert Reserve,Parkdale,No. 1,Sam Dunbar,Tom Bodley,Sam Dunbar,8-2,8,2,1,0,Completed,true,false,false
+AP018054,12 Nov 16,5,Albert Reserve,Parkdale,No. 2,Lukas Kellett,Shaun Vandebrok,Lukas Kellett,8-3,8,3,1,0,Completed,true,false,false
+AP018054,12 Nov 16,5,Albert Reserve,Parkdale,No. 3,Viranga Senadipathy,Luke Shi,Viranga Senadipathy,8-0,8,0,1,0,Completed,true,false,false
+AP018054,12 Nov 16,5,Albert Reserve,Parkdale,No. 4,Robert Goodwin,[Unnamed emergency — TROLS AP018054 away code 4],Robert Goodwin,8-0,8,0,1,0,Completed,false,false,true
+AP018061,19 Nov 16,6,Parkdale,Dendy Park 1,No. 1,Tom Bodley,Matt Gatti,Matt Gatti,0-8,0,8,0,1,Completed,true,false,false
+AP018061,19 Nov 16,6,Parkdale,Dendy Park 1,No. 2,Nicholas Charlson,Tom Neylon,Tom Neylon,2-8,2,8,0,1,Completed,true,false,false
+AP018061,19 Nov 16,6,Parkdale,Dendy Park 1,No. 3,Shaun Vandebrok,Basile Nock,Basile Nock,4-8,4,8,0,1,Completed,true,false,false
+AP018061,19 Nov 16,6,Parkdale,Dendy Park 1,No. 4,Sean Enright,Charlie Sinclair,Charlie Sinclair,8-9,8,9,0,1,Completed,true,false,false
+AP018062,19 Nov 16,6,Monash University,Albert Reserve,No. 1,Broc Song,Robert Goodwin,Broc Song,9-7,9,7,1,0,Completed,true,false,false
+AP018062,19 Nov 16,6,Monash University,Albert Reserve,No. 2,Philip Phung,Bashir Riashi,Bashir Riashi,4-8,4,8,0,1,Completed,true,false,false
+AP018062,19 Nov 16,6,Monash University,Albert Reserve,No. 3,Ken Kennedy,Sam Dunbar,Sam Dunbar,0-8,0,8,0,1,Completed,true,false,false
+AP018062,19 Nov 16,6,Monash University,Albert Reserve,No. 4,James Virth,Matthew Corrie,Matthew Corrie,5-8,5,8,0,1,Completed,true,false,false
+AP018063,19 Nov 16,6,Dendy Park 2,Maccabi,No. 1,Ian Wilkinson,Steven Kleytman,Steven Kleytman,4-8,4,8,0,1,Completed,true,false,false
+AP018063,19 Nov 16,6,Dendy Park 2,Maccabi,No. 2,Brian Reichman,Adam Needleman,Brian Reichman,8-4,8,4,1,0,Completed,true,false,false
+AP018063,19 Nov 16,6,Dendy Park 2,Maccabi,No. 3,Peter Fleming,Darren Seymour,Peter Fleming,8-3,8,3,1,0,Completed,true,false,false
+AP018063,19 Nov 16,6,Dendy Park 2,Maccabi,No. 4,Tony Saul,Aaron Kleytman,Tony Saul,8-4,8,4,1,0,Completed,true,false,false
+AP018064,19 Nov 16,6,Kings Park,Mordialloc,No. 1,Callum Campbell,Lachlan Gallagher,Lachlan Gallagher,0-8,0,8,0,1,Completed,true,false,false
+AP018064,19 Nov 16,6,Kings Park,Mordialloc,No. 2,Lyndon Krause,Curtis Burge,Lyndon Krause,8-4,8,4,1,0,Completed,true,false,false
+AP018064,19 Nov 16,6,Kings Park,Mordialloc,No. 3,Finn Rasmussen,Cameron Clark,Finn Rasmussen,8-4,8,4,1,0,Completed,true,false,false
+AP018064,19 Nov 16,6,Kings Park,Mordialloc,No. 4,Phil Mahony,Matt Parousiatis,Matt Parousiatis,3-8,3,8,0,1,Completed,true,false,false
+AP018071,26 Nov 16,7,Albert Reserve,Dendy Park 1,No. 1,Bashir Riashi,Matt Gatti,Matt Gatti,5-8,5,8,0,1,Completed,true,false,false
+AP018071,26 Nov 16,7,Albert Reserve,Dendy Park 1,No. 2,David Castricum,Charlie Sinclair,David Castricum,8-4,8,4,1,0,Completed,true,false,false
+AP018071,26 Nov 16,7,Albert Reserve,Dendy Park 1,No. 3,Sam Dunbar,Jamie Mount,Sam Dunbar,8-5,8,5,1,0,Completed,true,false,false
+AP018071,26 Nov 16,7,Albert Reserve,Dendy Park 1,No. 4,Lukas Kellett,[Unnamed emergency — TROLS AP018071 away code 4],Lukas Kellett,8-0,8,0,1,0,Completed,false,false,true
+AP018072,26 Nov 16,7,Parkdale,Monash University,No. 1,Nicholas Charlson,Broc Song,Broc Song,7-9,7,9,0,1,Completed,true,false,false
+AP018072,26 Nov 16,7,Parkdale,Monash University,No. 2,Shaun Vandebrok,Ken Kennedy,Shaun Vandebrok,8-6,8,6,1,0,Completed,true,false,false
+AP018072,26 Nov 16,7,Parkdale,Monash University,No. 3,Jason Bartonek,James Virth,Jason Bartonek,9-8,9,8,1,0,Completed,true,false,false
+AP018072,26 Nov 16,7,Parkdale,Monash University,No. 4,Sean Enright,Joshua Bennier,Joshua Bennier,6-8,6,8,0,1,Completed,true,false,false
+AP018073,26 Nov 16,7,Mordialloc,Maccabi,No. 1,Lachlan Gallagher,Steven Kleytman,Lachlan Gallagher,8-1,8,1,1,0,Completed,true,false,false
+AP018073,26 Nov 16,7,Mordialloc,Maccabi,No. 2,Daniel Campbell,Adam Needleman,Adam Needleman,3-8,3,8,0,1,Completed,true,false,false
+AP018073,26 Nov 16,7,Mordialloc,Maccabi,No. 3,Cameron Clark,Darren Seymour,Darren Seymour,3-8,3,8,0,1,Completed,true,false,false
+AP018073,26 Nov 16,7,Mordialloc,Maccabi,No. 4,Matt Parousiatis,Daniel Henquin,Matt Parousiatis,8-2,8,2,1,0,Completed,true,false,false
+AP018074,26 Nov 16,7,Dendy Park 2,Kings Park,No. 1,Bruce Watkins,Callum Campbell,Bruce Watkins,8-4,8,4,1,0,Completed,true,false,false
+AP018074,26 Nov 16,7,Dendy Park 2,Kings Park,No. 2,Peter Fleming,Finn Rasmussen,Finn Rasmussen,1-8,1,8,0,1,Completed,true,false,false
+AP018074,26 Nov 16,7,Dendy Park 2,Kings Park,No. 3,John Riley,Cameron Krause,John Riley,8-3,8,3,1,0,Completed,true,false,false
+AP018074,26 Nov 16,7,Dendy Park 2,Kings Park,No. 4,Bill Craig,Phil Mahony,Phil Mahony,0-8,0,8,0,1,Completed,true,false,false
+AP018081,03 Dec 16,8,Kings Park,Albert Reserve,No. 1,Lyndon Krause,Robert Goodwin,Robert Goodwin,7-9,7,9,0,1,Completed,true,false,false
+AP018081,03 Dec 16,8,Kings Park,Albert Reserve,No. 2,Finn Rasmussen,David Castricum,Finn Rasmussen,8-4,8,4,1,0,Completed,true,false,false
+AP018081,03 Dec 16,8,Kings Park,Albert Reserve,No. 3,Cameron Krause,Viranga Senadipathy,Viranga Senadipathy,2-8,2,8,0,1,Completed,true,false,false
+AP018081,03 Dec 16,8,Kings Park,Albert Reserve,No. 4,Phil Mahony,Matthew Corrie,Phil Mahony,9-7,9,7,1,0,Completed,true,false,false
+AP018082,03 Dec 16,8,Maccabi,Parkdale,No. 1,Sasha Volziker,Tom Bodley,Sasha Volziker,8-2,8,2,1,0,Completed,true,false,false
+AP018082,03 Dec 16,8,Maccabi,Parkdale,No. 2,Steven Kleytman,Jason Bartonek,Steven Kleytman,9-8,9,8,1,0,Completed,true,false,false
+AP018082,03 Dec 16,8,Maccabi,Parkdale,No. 3,Adam Needleman,Sean Enright,Adam Needleman,8-3,8,3,1,0,Completed,true,false,false
+AP018082,03 Dec 16,8,Maccabi,Parkdale,No. 4,Daniel Henquin,Samuel Browne,Daniel Henquin,8-2,8,2,1,0,Completed,true,false,false
+AP018083,03 Dec 16,8,Dendy Park 2,Dendy Park 1,No. 1,Bruce Watkins,Matt Gatti,Matt Gatti,0-8,0,8,0,1,Completed,true,false,false
+AP018083,03 Dec 16,8,Dendy Park 2,Dendy Park 1,No. 2,Ian Wilkinson,Basile Nock,Basile Nock,5-8,5,8,0,1,Completed,true,false,false
+AP018083,03 Dec 16,8,Dendy Park 2,Dendy Park 1,No. 3,Chris Trotter,Asbjorn Williamson,Asbjorn Williamson,3-8,3,8,0,1,Completed,true,false,false
+AP018083,03 Dec 16,8,Dendy Park 2,Dendy Park 1,No. 4,John Riley,Charlie Sinclair,Charlie Sinclair,3-8,3,8,0,1,Completed,true,false,false
+AP018084,03 Dec 16,8,Mordialloc,Monash University,No. 1,Lachlan Gallagher,Broc Song,Lachlan Gallagher,8-4,8,4,1,0,Completed,true,false,false
+AP018084,03 Dec 16,8,Mordialloc,Monash University,No. 2,Daniel Campbell,Philip Phung,Daniel Campbell,8-3,8,3,1,0,Completed,true,false,false
+AP018084,03 Dec 16,8,Mordialloc,Monash University,No. 3,Cameron Clark,Ken Kennedy,Cameron Clark,8-3,8,3,1,0,Completed,true,false,false
+AP018084,03 Dec 16,8,Mordialloc,Monash University,No. 4,Matt Parousiatis,James Virth,James Virth,1-8,1,8,0,1,Completed,true,false,false
+AP018091,10 Dec 16,9,Albert Reserve,Mordialloc,No. 1,Robert Goodwin,Lachlan Gallagher,Robert Goodwin,8-6,8,6,1,0,Completed,true,false,false
+AP018091,10 Dec 16,9,Albert Reserve,Mordialloc,No. 2,Sam Dunbar,Daniel Campbell,Sam Dunbar,8-3,8,3,1,0,Completed,true,false,false
+AP018091,10 Dec 16,9,Albert Reserve,Mordialloc,No. 3,Danny Thompson,Curtis Burge,Danny Thompson,8-5,8,5,1,0,Completed,true,false,false
+AP018091,10 Dec 16,9,Albert Reserve,Mordialloc,No. 4,Lukas Kellett,Matt Parousiatis,Lukas Kellett,9-8,9,8,1,0,Completed,true,false,false
+AP018092,10 Dec 16,9,Parkdale,Kings Park,No. 1,Tom Bodley,Callum Campbell,Tom Bodley,8-2,8,2,1,0,Completed,true,false,false
+AP018092,10 Dec 16,9,Parkdale,Kings Park,No. 2,Nicholas Charlson,Lyndon Krause,Nicholas Charlson,8-3,8,3,1,0,Completed,true,false,false
+AP018092,10 Dec 16,9,Parkdale,Kings Park,No. 3,Shaun Vandebrok,Finn Rasmussen,Finn Rasmussen,4-8,4,8,0,1,Completed,true,false,false
+AP018092,10 Dec 16,9,Parkdale,Kings Park,No. 4,Ben Milen,Phil Mahony,Ben Milen,8-1,8,1,1,0,Completed,true,false,false
+AP018093,10 Dec 16,9,Dendy Park 1,Maccabi,No. 1,David Sist,Sasha Volziker,David Sist,8-2,8,2,1,0,Completed,true,false,false
+AP018093,10 Dec 16,9,Dendy Park 1,Maccabi,No. 2,Matt Gatti,Steven Kleytman,Matt Gatti,8-2,8,2,1,0,Completed,true,false,false
+AP018093,10 Dec 16,9,Dendy Park 1,Maccabi,No. 3,Tom Neylon,Adam Needleman,Tom Neylon,9-7,9,7,1,0,Completed,true,false,false
+AP018093,10 Dec 16,9,Dendy Park 1,Maccabi,No. 4,Asbjorn Williamson,Darren Seymour,Asbjorn Williamson,8-6,8,6,1,0,Completed,true,false,false
+AP018094,10 Dec 16,9,Monash University,Dendy Park 2,No. 1,Broc Song,Ian Wilkinson,Broc Song,8-5,8,5,1,0,Completed,true,false,false
+AP018094,10 Dec 16,9,Monash University,Dendy Park 2,No. 2,Philip Phung,Brian Reichman,Brian Reichman,2-8,2,8,0,1,Completed,true,false,false
+AP018094,10 Dec 16,9,Monash University,Dendy Park 2,No. 3,Ken Kennedy,Peter Fleming,Peter Fleming,6-8,6,8,0,1,Completed,true,false,false
+AP018094,10 Dec 16,9,Monash University,Dendy Park 2,No. 4,Shaun Yeoh,Tony Saul,Tony Saul,5-8,5,8,0,1,Completed,true,false,false
+AP018101,17 Dec 16,10,Dendy Park 2,Albert Reserve,No. 1,Bruce Watkins,Viranga Senadipathy,Bruce Watkins,8-5,8,5,1,0,Completed,true,false,false
+AP018101,17 Dec 16,10,Dendy Park 2,Albert Reserve,No. 2,Peter Fleming,Lukas Kellett,Lukas Kellett,5-8,5,8,0,1,Completed,true,false,false
+AP018101,17 Dec 16,10,Dendy Park 2,Albert Reserve,No. 3,Chris Trotter,Matthew Corrie,Chris Trotter,8-4,8,4,1,0,Completed,true,false,false
+AP018101,17 Dec 16,10,Dendy Park 2,Albert Reserve,No. 4,Bill Craig,Simon Sheridian,Bill Craig,8-4,8,4,1,0,Completed,true,false,false
+AP018102,17 Dec 16,10,Mordialloc,Parkdale,No. 1,Lachlan Gallagher,Perry Kick,Lachlan Gallagher,8-4,8,4,1,0,Completed,true,false,false
+AP018102,17 Dec 16,10,Mordialloc,Parkdale,No. 2,Curtis Burge,Nicholas Charlson,Curtis Burge,9-8,9,8,1,0,Completed,true,false,false
+AP018102,17 Dec 16,10,Mordialloc,Parkdale,No. 3,Cameron Clark,Jason Bartonek,Cameron Clark,8-4,8,4,1,0,Completed,true,false,false
+AP018102,17 Dec 16,10,Mordialloc,Parkdale,No. 4,Matt Parousiatis,Sean Enright,Matt Parousiatis,8-6,8,6,1,0,Completed,true,false,false
+AP018103,17 Dec 16,10,Kings Park,Dendy Park 1,No. 1,Callum Campbell,David Sist,David Sist,2-8,2,8,0,1,Completed,true,false,false
+AP018103,17 Dec 16,10,Kings Park,Dendy Park 1,No. 2,Lyndon Krause,Nick Kokotis,Nick Kokotis,6-8,6,8,0,1,Completed,true,false,false
+AP018103,17 Dec 16,10,Kings Park,Dendy Park 1,No. 3,Finn Rasmussen,Asbjorn Williamson,Asbjorn Williamson,3-8,3,8,0,1,Completed,true,false,false
+AP018103,17 Dec 16,10,Kings Park,Dendy Park 1,No. 4,Phil Mahony,Charlie Sinclair,Charlie Sinclair,4-8,4,8,0,1,Completed,true,false,false
+AP018104,17 Dec 16,10,Maccabi,Monash University,No. 1,Adam Needleman,Broc Song,Adam Needleman,8-5,8,5,1,0,Completed,true,false,false
+AP018104,17 Dec 16,10,Maccabi,Monash University,No. 2,Darren Seymour,Philip Phung,Darren Seymour,8-5,8,5,1,0,Completed,true,false,false
+AP018104,17 Dec 16,10,Maccabi,Monash University,No. 3,Daniel Henquin,Ken Kennedy,Daniel Henquin,9-7,9,7,1,0,Completed,true,false,false
+AP018104,17 Dec 16,10,Maccabi,Monash University,No. 4,Les Schwarz,Shaun Yeoh,Les Schwarz,8-4,8,4,1,0,Completed,true,false,false
+AP018111,04 Feb 17,11,Albert Reserve,Maccabi,No. 1,Robert Goodwin,Adam Needleman,Adam Needleman,0-8,0,8,0,1,Completed,true,false,false
+AP018111,04 Feb 17,11,Albert Reserve,Maccabi,No. 2,Bashir Riashi,Josh Jennings,Josh Jennings,4-8,4,8,0,1,Completed,true,false,false
+AP018111,04 Feb 17,11,Albert Reserve,Maccabi,No. 3,Lukas Kellett,Darren Seymour,Darren Seymour,4-8,4,8,0,1,Completed,true,false,false
+AP018111,04 Feb 17,11,Albert Reserve,Maccabi,No. 4,Matthew Corrie,Daniel Henquin,Matthew Corrie,8-1,8,1,1,0,Completed,true,false,false
+AP018112,04 Feb 17,11,Parkdale,Dendy Park 2,No. 1,Tom Bodley,Ian Wilkinson,Ian Wilkinson,5-8,5,8,0,1,Completed,true,false,false
+AP018112,04 Feb 17,11,Parkdale,Dendy Park 2,No. 2,Nicholas Charlson,Peter Fleming,Peter Fleming,6-8,6,8,0,1,Completed,true,false,false
+AP018112,04 Feb 17,11,Parkdale,Dendy Park 2,No. 3,Shaun Vandebrok,Chris Trotter,Shaun Vandebrok,8-2,8,2,1,0,Completed,true,false,false
+AP018112,04 Feb 17,11,Parkdale,Dendy Park 2,No. 4,Ben Milen,John Riley,Ben Milen,8-4,8,4,1,0,Completed,true,false,false
+AP018113,04 Feb 17,11,Dendy Park 1,Mordialloc,No. 1,David Sist,Lachlan Gallagher,David Sist,8-5,8,5,1,0,Completed,true,false,false
+AP018113,04 Feb 17,11,Dendy Park 1,Mordialloc,No. 2,Matt Gatti,Cameron Clark,Matt Gatti,8-3,8,3,1,0,Completed,true,false,false
+AP018113,04 Feb 17,11,Dendy Park 1,Mordialloc,No. 3,Basile Nock,Matt Parousiatis,Basile Nock,8-0,8,0,1,0,Completed,true,false,false
+AP018113,04 Feb 17,11,Dendy Park 1,Mordialloc,No. 4,Lubing Liu,Will Gallagher,Lubing Liu,8-4,8,4,1,0,Completed,true,false,false
+AP018114,04 Feb 17,11,Monash University,Kings Park,No. 1,Philip Phung,Nathan Broadbent,Nathan Broadbent,4-8,4,8,0,1,Completed,true,false,false
+AP018114,04 Feb 17,11,Monash University,Kings Park,No. 2,Ken Kennedy,Lyndon Krause,Ken Kennedy,8-3,8,3,1,0,Completed,true,false,false
+AP018114,04 Feb 17,11,Monash University,Kings Park,No. 3,Shaun Yeoh,Finn Rasmussen,Finn Rasmussen,2-8,2,8,0,1,Completed,true,false,false
+AP018114,04 Feb 17,11,Monash University,Kings Park,No. 4,Patrick Davey,Cameron Krause,Patrick Davey,8-3,8,3,1,0,Completed,true,false,false
+AP018121,11 Feb 17,12,Monash University,Dendy Park 1,No. 1,Broc Song,Tom Neylon,Broc Song,8-4,8,4,1,0,Completed,true,false,false
+AP018121,11 Feb 17,12,Monash University,Dendy Park 1,No. 2,Philip Phung,Basile Nock,Basile Nock,4-8,4,8,0,1,Completed,true,false,false
+AP018121,11 Feb 17,12,Monash University,Dendy Park 1,No. 3,Joshua Bennier,Asbjorn Williamson,Asbjorn Williamson,8-9,8,9,0,1,Completed,true,false,false
+AP018121,11 Feb 17,12,Monash University,Dendy Park 1,No. 4,Shaun Yeoh,Charlie Sinclair,Charlie Sinclair,5-8,5,8,0,1,Completed,true,false,false
+AP018122,11 Feb 17,12,Dendy Park 2,Mordialloc,No. 1,Bruce Watkins,Lachlan Gallagher,Lachlan Gallagher,5-8,5,8,0,1,Completed,true,false,false
+AP018122,11 Feb 17,12,Dendy Park 2,Mordialloc,No. 2,Ian Wilkinson,Daniel Campbell,Ian Wilkinson,8-4,8,4,1,0,Completed,true,false,false
+AP018122,11 Feb 17,12,Dendy Park 2,Mordialloc,No. 3,Chris Trotter,Curtis Burge,Curtis Burge,2-8,2,8,0,1,Completed,true,false,false
+AP018122,11 Feb 17,12,Dendy Park 2,Mordialloc,No. 4,Bill Craig,Cameron Clark,Cameron Clark,1-8,1,8,0,1,Completed,true,false,false
+AP018123,11 Feb 17,12,Kings Park,Maccabi,No. 1,Nathan Broadbent,Steven Kleytman,Nathan Broadbent,9-7,9,7,1,0,Completed,true,false,false
+AP018123,11 Feb 17,12,Kings Park,Maccabi,No. 2,Callum Campbell,Darren Seymour,Callum Campbell,8-6,8,6,1,0,Completed,true,false,false
+AP018123,11 Feb 17,12,Kings Park,Maccabi,No. 3,Finn Rasmussen,Daniel Henquin,Finn Rasmussen,8-4,8,4,1,0,Completed,true,false,false
+AP018123,11 Feb 17,12,Kings Park,Maccabi,No. 4,Phil Mahony,Ryan Behr,Ryan Behr,2-8,2,8,0,1,Completed,true,false,false
+AP018124,11 Feb 17,12,Parkdale,Albert Reserve,No. 1,Perry Kick,Stephan Cardiff,Perry Kick,8-0,8,0,1,0,Completed,true,false,false
+AP018124,11 Feb 17,12,Parkdale,Albert Reserve,No. 2,Nicholas Charlson,Sam Dunbar,Sam Dunbar,6-8,6,8,0,1,Completed,true,false,false
+AP018124,11 Feb 17,12,Parkdale,Albert Reserve,No. 3,Shaun Vandebrok,Viranga Senadipathy,Shaun Vandebrok,8-1,8,1,1,0,Completed,true,false,false
+AP018124,11 Feb 17,12,Parkdale,Albert Reserve,No. 4,Ben Milen,Matthew Corrie,Matthew Corrie,8-9,8,9,0,1,Completed,true,false,false
+AP018131,18 Feb 17,13,Dendy Park 1,Parkdale,No. 1,David Sist,Tom Bodley,David Sist,8-2,8,2,1,0,Completed,true,false,false
+AP018131,18 Feb 17,13,Dendy Park 1,Parkdale,No. 2,Matt Gatti,Nicholas Charlson,Matt Gatti,8-4,8,4,1,0,Completed,true,false,false
+AP018131,18 Feb 17,13,Dendy Park 1,Parkdale,No. 3,Tom Neylon,Shaun Vandebrok,Tom Neylon,8-5,8,5,1,0,Completed,true,false,false
+AP018131,18 Feb 17,13,Dendy Park 1,Parkdale,No. 4,[Unnamed emergency — TROLS AP018131 home code 4],Ben Milen,Ben Milen,0-8,0,8,0,1,Completed,false,true,false
+AP018132,18 Feb 17,13,Albert Reserve,Monash University,No. 1,David Castricum,Broc Song,Broc Song,4-8,4,8,0,1,Completed,true,false,false
+AP018132,18 Feb 17,13,Albert Reserve,Monash University,No. 2,Viranga Senadipathy,Philip Phung,Viranga Senadipathy,8-5,8,5,1,0,Completed,true,false,false
+AP018132,18 Feb 17,13,Albert Reserve,Monash University,No. 3,Lukas Kellett,Ken Kennedy,Lukas Kellett,8-6,8,6,1,0,Completed,true,false,false
+AP018132,18 Feb 17,13,Albert Reserve,Monash University,No. 4,Matthew Corrie,Joshua Bennier,Joshua Bennier,8-9,8,9,0,1,Completed,true,false,false
+AP018133,18 Feb 17,13,Maccabi,Dendy Park 2,No. 1,Josh Jennings,Bruce Watkins,Bruce Watkins,8-9,8,9,0,1,Completed,true,false,false
+AP018133,18 Feb 17,13,Maccabi,Dendy Park 2,No. 2,Steven Kleytman,Ian Wilkinson,Ian Wilkinson,7-9,7,9,0,1,Completed,true,false,false
+AP018133,18 Feb 17,13,Maccabi,Dendy Park 2,No. 3,Joel Rabinov,Peter Fleming,Peter Fleming,3-8,3,8,0,1,Completed,true,false,false
+AP018133,18 Feb 17,13,Maccabi,Dendy Park 2,No. 4,Ron Kotev,John Riley,John Riley,5-8,5,8,0,1,Completed,true,false,false
+AP018134,18 Feb 17,13,Mordialloc,Kings Park,No. 1,Lachlan Gallagher,Nathan Broadbent,Lachlan Gallagher,9-7,9,7,1,0,Completed,true,false,false
+AP018134,18 Feb 17,13,Mordialloc,Kings Park,No. 2,Curtis Burge,Callum Campbell,Curtis Burge,8-5,8,5,1,0,Completed,true,false,false
+AP018134,18 Feb 17,13,Mordialloc,Kings Park,No. 3,Matt Parousiatis,Lyndon Krause,Matt Parousiatis,8-2,8,2,1,0,Completed,true,false,false
+AP018134,18 Feb 17,13,Mordialloc,Kings Park,No. 4,Matt Carlson,Cameron Krause,Matt Carlson,8-5,8,5,1,0,Completed,true,false,false
+AP018141,25 Feb 17,14,Dendy Park 1,Albert Reserve,No. 1,Basile Nock,Bashir Riashi,Basile Nock,8-3,8,3,1,0,Completed,true,false,false
+AP018141,25 Feb 17,14,Dendy Park 1,Albert Reserve,No. 2,Asbjorn Williamson,Glenn Kellett,Glenn Kellett,1-8,1,8,0,1,Completed,true,false,false
+AP018141,25 Feb 17,14,Dendy Park 1,Albert Reserve,No. 3,Charlie Sinclair,Viranga Senadipathy,Viranga Senadipathy,4-8,4,8,0,1,Completed,true,false,false
+AP018141,25 Feb 17,14,Dendy Park 1,Albert Reserve,No. 4,Lubing Liu,Lukas Kellett,Lukas Kellett,2-8,2,8,0,1,Completed,true,false,false
+AP018142,25 Feb 17,14,Monash University,Parkdale,No. 1,Broc Song,Tom Bodley,Broc Song,8-1,8,1,1,0,Completed,true,false,false
+AP018142,25 Feb 17,14,Monash University,Parkdale,No. 2,Philip Phung,Nicholas Charlson,Nicholas Charlson,4-8,4,8,0,1,Completed,true,false,false
+AP018142,25 Feb 17,14,Monash University,Parkdale,No. 3,Ken Kennedy,Shaun Vandebrok,Shaun Vandebrok,4-8,4,8,0,1,Completed,true,false,false
+AP018142,25 Feb 17,14,Monash University,Parkdale,No. 4,Shaun Yeoh,Ben Milen,Shaun Yeoh,8-5,8,5,1,0,Completed,true,false,false
+AP018143,25 Feb 17,14,Maccabi,Mordialloc,No. 1,Adam Needleman,Daniel Campbell,Adam Needleman,8-2,8,2,1,0,Completed,true,false,false
+AP018143,25 Feb 17,14,Maccabi,Mordialloc,No. 2,Darren Seymour,Curtis Burge,Darren Seymour,8-5,8,5,1,0,Completed,true,false,false
+AP018143,25 Feb 17,14,Maccabi,Mordialloc,No. 3,Ryan Behr,Cameron Clark,Ryan Behr,8-3,8,3,1,0,Completed,true,false,false
+AP018143,25 Feb 17,14,Maccabi,Mordialloc,No. 4,Daniel Henquin,Matt Parousiatis,Matt Parousiatis,4-8,4,8,0,1,Completed,true,false,false
+AP018144,25 Feb 17,14,Kings Park,Dendy Park 2,No. 1,Nathan Broadbent,Bruce Watkins,Nathan Broadbent,8-1,8,1,1,0,Completed,true,false,false
+AP018144,25 Feb 17,14,Kings Park,Dendy Park 2,No. 2,Lyndon Krause,Ian Wilkinson,Lyndon Krause,8-3,8,3,1,0,Completed,true,false,false
+AP018144,25 Feb 17,14,Kings Park,Dendy Park 2,No. 3,Finn Rasmussen,Peter Fleming,Finn Rasmussen,9-7,9,7,1,0,Completed,true,false,false
+AP018144,25 Feb 17,14,Kings Park,Dendy Park 2,No. 4,Phil Mahony,Tony Saul,Tony Saul,2-8,2,8,0,1,Completed,true,false,false
+AP018301,,16,Dendy Park 1,Mordialloc,No. 1,David Sist,Lachlan Gallagher,David Sist,8-6,8,6,1,0,Completed,true,false,false
+AP018301,,16,Dendy Park 1,Mordialloc,No. 2,Matt Gatti,Curtis Burge,Matt Gatti,8-0,8,0,1,0,Completed,true,false,false
+AP018301,,16,Dendy Park 1,Mordialloc,No. 3,Tom Neylon,Cameron Clark,Tom Neylon,8-5,8,5,1,0,Completed,true,false,false
+AP018301,,16,Dendy Park 1,Mordialloc,No. 4,Basile Nock,Matt Parousiatis,Basile Nock,8-2,8,2,1,0,Completed,true,false,false
+AP018302,,16,Kings Park,Albert Reserve,No. 1,Nathan Broadbent,Sam Dunbar,Nathan Broadbent,8-5,8,5,1,0,Completed,true,false,false
+AP018302,,16,Kings Park,Albert Reserve,No. 2,Lyndon Krause,Viranga Senadipathy,Viranga Senadipathy,6-8,6,8,0,1,Completed,true,false,false
+AP018302,,16,Kings Park,Albert Reserve,No. 3,Finn Rasmussen,Lukas Kellett,Finn Rasmussen,8-5,8,5,1,0,Completed,true,false,false
+AP018302,,16,Kings Park,Albert Reserve,No. 4,Phil Mahony,Matthew Corrie,Matthew Corrie,7-9,7,9,0,1,Completed,true,false,false
+AP018311,,16,Mordialloc,Albert Reserve,No. 1,Lachlan Gallagher,David Castricum,Lachlan Gallagher,9-7,9,7,1,0,Completed,true,false,false
+AP018311,,16,Mordialloc,Albert Reserve,No. 2,Daniel Campbell,Sam Dunbar,Sam Dunbar,7-9,7,9,0,1,Completed,true,false,false
+AP018311,,16,Mordialloc,Albert Reserve,No. 3,Cameron Clark,Viranga Senadipathy,Cameron Clark,8-0,8,0,1,0,Completed,true,false,false
+AP018311,,16,Mordialloc,Albert Reserve,No. 4,Matt Parousiatis,Matthew Corrie,Matthew Corrie,6-8,6,8,0,1,Completed,true,false,false
+AP018321,,17,Dendy Park 1,Mordialloc,No. 1,David Sist,Lachlan Gallagher,David Sist,8-3,8,3,1,0,Completed,true,false,false
+AP018321,,17,Dendy Park 1,Mordialloc,No. 2,Matt Gatti,Daniel Campbell,Matt Gatti,8-3,8,3,1,0,Completed,true,false,false
+AP018321,,17,Dendy Park 1,Mordialloc,No. 3,Tom Neylon,Curtis Burge,Tom Neylon,8-3,8,3,1,0,Completed,true,false,false
+AP018321,,17,Dendy Park 1,Mordialloc,No. 4,Basile Nock,Cameron Clark,Cameron Clark,7-9,7,9,0,1,Completed,true,false,false

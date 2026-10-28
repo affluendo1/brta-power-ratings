@@ -1,0 +1,107 @@
+{
+  "asset_id": "AP26-AP008",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 12/13",
+  "season_id": "AP26",
+  "season_label": "Summer 12/13",
+  "source_section_code": "AP008",
+  "section_label": "Mixed Rubbers 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Albert Reserve",
+      "wins": 9,
+      "points": 80.5,
+      "percentage": 136.03,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "Parkdale",
+      "wins": 10,
+      "points": 79,
+      "percentage": 114.85,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "BLTC",
+      "wins": 8,
+      "points": 72,
+      "percentage": 123.05,
+      "marker": "P"
+    },
+    {
+      "position": 4,
+      "team": "St Pats Mentone",
+      "wins": 9,
+      "points": 67,
+      "percentage": 105.93,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Elwood",
+      "wins": 7,
+      "points": 57,
+      "percentage": 100.85,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Sth Murrumbeena",
+      "wins": 3,
+      "points": 35,
+      "percentage": 86.66,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Highmoor Uniting",
+      "wins": 3,
+      "points": 34.5,
+      "percentage": 79.38,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "St Johns",
+      "wins": 2,
+      "points": 23,
+      "percentage": 71.47,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP26-AP008",
+  "fixtures": 60,
+  "completed_fixtures": 59,
+  "draw_fixtures": 60,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 230,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP008024 doubles No. 3: '6-4 1-6'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP008301 doubles No. 4: '3-6 6-1'. Missing score not inferred; excluded from ratings and game totals.",
+    "Fixture game totals do not match rubbers for AP008024: TROLS team total 39-35; complete-score total 39-34. Both published records retained."
+  ]
+}

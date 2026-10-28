@@ -1,0 +1,107 @@
+{
+  "asset_id": "AP27-AP007",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Winter 2013",
+  "season_id": "AP27",
+  "season_label": "Winter 2013",
+  "source_section_code": "AP007",
+  "section_label": "Mixed Rubbers 3",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Le Page",
+      "wins": 11,
+      "points": 90.5,
+      "percentage": 174.13,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Coatesville",
+      "wins": 8,
+      "points": 71.5,
+      "percentage": 123.35,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "St Finbar's",
+      "wins": 8,
+      "points": 64,
+      "percentage": 110.44,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Parkdale",
+      "wins": 6,
+      "points": 58.5,
+      "percentage": 110.32,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Mordialloc",
+      "wins": 6,
+      "points": 51.5,
+      "percentage": 89.65,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Kings Park",
+      "wins": 5,
+      "points": 49,
+      "percentage": 100.9,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "BLTC",
+      "wins": 3,
+      "points": 35,
+      "percentage": 71.2,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "Hawthorn",
+      "wins": 1,
+      "points": 28,
+      "percentage": 56.88,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP27-AP007",
+  "fixtures": 60,
+  "completed_fixtures": 53,
+  "draw_fixtures": 60,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 212,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP007051 doubles No. 4: '5-7 3-4'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP007092 doubles No. 4: '5-7 5-4'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP007131 doubles No. 3: '2-6 6-4'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

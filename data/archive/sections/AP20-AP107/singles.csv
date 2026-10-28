@@ -1,0 +1,181 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP107013,03 Oct 09,1,Black Rock,Carmelite,No. 1,Scott Lockwood,Nathan Spinks,Nathan Spinks,2-8,2,8,0,1,Completed,true,false,false
+AP107013,03 Oct 09,1,Black Rock,Carmelite,No. 2,Jack Noone,Alex Toohey,Alex Toohey,2-8,2,8,0,1,Completed,true,false,false
+AP107013,03 Oct 09,1,Black Rock,Carmelite,No. 3,Paul Noone,Matt Nicol,Paul Noone,8-5,8,5,1,0,Completed,true,false,false
+AP107013,03 Oct 09,1,Black Rock,Carmelite,No. 4,Mark Lockwood,Tom Garry,Tom Garry,3-8,3,8,0,1,Completed,true,false,false
+AP107014,03 Oct 09,1,Lauriston,East Malvern,No. 1,Phil Murphy,Hugo Mylecharane,Phil Murphy,8-2,8,2,1,0,Completed,true,false,false
+AP107014,03 Oct 09,1,Lauriston,East Malvern,No. 2,Geoffrey Zielin,Jeff Foord,Geoffrey Zielin,9-8,9,8,1,0,Completed,true,false,false
+AP107014,03 Oct 09,1,Lauriston,East Malvern,No. 3,William Swedosh,Rion Casey,William Swedosh,8-4,8,4,1,0,Completed,true,false,false
+AP107014,03 Oct 09,1,Lauriston,East Malvern,No. 4,Morris Trabsky,Oliver Alexander,Morris Trabsky,9-7,9,7,1,0,Completed,true,false,false
+AP107021,10 Oct 09,2,East Malvern,Dendy Park,No. 1,Sam Zhao,Nathan Scutti,Nathan Scutti,0-8,0,8,0,1,Completed,true,false,false
+AP107021,10 Oct 09,2,East Malvern,Dendy Park,No. 2,Hugo Mylecharane,Adrian Karatzas,Hugo Mylecharane,8-5,8,5,1,0,Completed,true,false,false
+AP107021,10 Oct 09,2,East Malvern,Dendy Park,No. 3,Jeff Foord,Harrison King,Harrison King,5-8,5,8,0,1,Completed,true,false,false
+AP107021,10 Oct 09,2,East Malvern,Dendy Park,No. 4,Oliver Alexander,Kevin Youn,Kevin Youn,0-8,0,8,0,1,Completed,true,false,false
+AP107023,10 Oct 09,2,Murrumbeena,Black Rock,No. 1,Ron Schweitzer,Scott Lockwood,Ron Schweitzer,8-5,8,5,1,0,Completed,true,false,false
+AP107023,10 Oct 09,2,Murrumbeena,Black Rock,No. 2,Leo Lazarus,Jack Noone,Leo Lazarus,8-4,8,4,1,0,Completed,true,false,false
+AP107023,10 Oct 09,2,Murrumbeena,Black Rock,No. 3,Zvi Schweitzer,Mark Lockwood,Mark Lockwood,6-8,6,8,0,1,Completed,true,false,false
+AP107023,10 Oct 09,2,Murrumbeena,Black Rock,No. 4,Ben Thompson,Tim Lockwood,Ben Thompson,8-4,8,4,1,0,Completed,true,false,false
+AP107024,10 Oct 09,2,Carmelite,Lauriston,No. 1,Eiko Hasse,Phil Murphy,Eiko Hasse,9-8,9,8,1,0,Completed,true,false,false
+AP107024,10 Oct 09,2,Carmelite,Lauriston,No. 2,James Trowsdale,Luke Smith,Luke Smith,3-8,3,8,0,1,Completed,true,false,false
+AP107024,10 Oct 09,2,Carmelite,Lauriston,No. 3,Alex Toohey,Danny Zielin,Alex Toohey,8-1,8,1,1,0,Completed,true,false,false
+AP107024,10 Oct 09,2,Carmelite,Lauriston,No. 4,Matt Nicol,William Swedosh,Matt Nicol,8-4,8,4,1,0,Completed,true,false,false
+AP107031,17 Oct 09,3,Dendy Park,Carmelite,No. 1,Harrison King,John Paul Tamsey,Harrison King,8-5,8,5,1,0,Completed,true,false,false
+AP107031,17 Oct 09,3,Dendy Park,Carmelite,No. 2,Nathan Scutti,James Trowsdale,James Trowsdale,3-8,3,8,0,1,Completed,true,false,false
+AP107031,17 Oct 09,3,Dendy Park,Carmelite,No. 3,Kevin Youn,Alex Toohey,Kevin Youn,9-7,9,7,1,0,Completed,true,false,false
+AP107031,17 Oct 09,3,Dendy Park,Carmelite,No. 4,Mitchell Coulson-Moore,Matt Nicol,Matt Nicol,3-8,3,8,0,1,Completed,true,false,false
+AP107032,17 Oct 09,3,St Pats Mentone,East Malvern,No. 1,Sam Clayton,Sam Zhao,Sam Clayton,8-2,8,2,1,0,Completed,true,false,false
+AP107032,17 Oct 09,3,St Pats Mentone,East Malvern,No. 2,Damien Coghlan,Jeff Foord,Jeff Foord,1-8,1,8,0,1,Completed,true,false,false
+AP107032,17 Oct 09,3,St Pats Mentone,East Malvern,No. 3,Nick Hall,Rion Casey,Nick Hall,8-6,8,6,1,0,Completed,true,false,false
+AP107032,17 Oct 09,3,St Pats Mentone,East Malvern,No. 4,Hugh Conway,Oliver Alexander,Hugh Conway,9-8,9,8,1,0,Completed,true,false,false
+AP107034,17 Oct 09,3,Lauriston,Murrumbeena,No. 1,David Smith,Ron Schweitzer,Ron Schweitzer,6-8,6,8,0,1,Completed,true,false,false
+AP107034,17 Oct 09,3,Lauriston,Murrumbeena,No. 2,Danny Zielin,Lance Davey,Lance Davey,2-8,2,8,0,1,Completed,true,false,false
+AP107034,17 Oct 09,3,Lauriston,Murrumbeena,No. 3,William Swedosh,Leo Lazarus,Leo Lazarus,6-8,6,8,0,1,Completed,true,false,false
+AP107034,17 Oct 09,3,Lauriston,Murrumbeena,No. 4,Morris Trabsky,Zvi Schweitzer,Zvi Schweitzer,3-8,3,8,0,1,Completed,true,false,false
+AP107041,24 Oct 09,4,Murrumbeena,Dendy Park,No. 1,Ron Schweitzer,Adrian Karatzas,Ron Schweitzer,8-3,8,3,1,0,Completed,true,false,false
+AP107041,24 Oct 09,4,Murrumbeena,Dendy Park,No. 2,Lance Davey,Mario Papotto,Mario Papotto,5-8,5,8,0,1,Completed,true,false,false
+AP107041,24 Oct 09,4,Murrumbeena,Dendy Park,No. 3,Zvi Schweitzer,Mitchell Coulson-Moore,Mitchell Coulson-Moore,6-8,6,8,0,1,Completed,true,false,false
+AP107041,24 Oct 09,4,Murrumbeena,Dendy Park,No. 4,Dennis Jones,Kevin Youn,Kevin Youn,5-8,5,8,0,1,Completed,true,false,false
+AP107042,24 Oct 09,4,Carmelite,St Pats Mentone,No. 1,James Trowsdale,Sam Clayton,Sam Clayton,7-9,7,9,0,1,Completed,true,false,false
+AP107042,24 Oct 09,4,Carmelite,St Pats Mentone,No. 2,Alex Toohey,Anthony Milesi,Alex Toohey,8-2,8,2,1,0,Completed,true,false,false
+AP107042,24 Oct 09,4,Carmelite,St Pats Mentone,No. 3,Mitch Carlisle-Golbarth,Damien Coghlan,Damien Coghlan,2-8,2,8,0,1,Completed,true,false,false
+AP107042,24 Oct 09,4,Carmelite,St Pats Mentone,No. 4,Pierce Gilheany,Nick Hall,Nick Hall,4-8,4,8,0,1,Completed,true,false,false
+AP107043,24 Oct 09,4,East Malvern,Black Rock,No. 1,Hugo Mylecharane,Scott Lockwood,Hugo Mylecharane,8-3,8,3,1,0,Completed,true,false,false
+AP107043,24 Oct 09,4,East Malvern,Black Rock,No. 2,Rion Casey,Jack Noone,Jack Noone,6-8,6,8,0,1,Completed,true,false,false
+AP107043,24 Oct 09,4,East Malvern,Black Rock,No. 3,Jeff Foord,Paul Noone,Paul Noone,2-8,2,8,0,1,Completed,true,false,false
+AP107043,24 Oct 09,4,East Malvern,Black Rock,No. 4,Oliver Alexander,Mark Lockwood,Mark Lockwood,4-8,4,8,0,1,Completed,true,false,false
+AP107051,07 Nov 09,5,Black Rock,Lauriston,No. 1,Michael Watts,David Smith,Michael Watts,8-0,8,0,1,0,Completed,true,false,false
+AP107051,07 Nov 09,5,Black Rock,Lauriston,No. 2,John Hurley,Luke Smith,John Hurley,8-4,8,4,1,0,Completed,true,false,false
+AP107051,07 Nov 09,5,Black Rock,Lauriston,No. 3,Jack Noone,William Swedosh,Jack Noone,8-0,8,0,1,0,Completed,true,false,false
+AP107051,07 Nov 09,5,Black Rock,Lauriston,No. 4,Scott Lockwood,David Newton,David Newton,0-8,0,8,0,1,Completed,true,false,false
+AP107052,07 Nov 09,5,East Malvern,Carmelite,No. 1,Hugo Mylecharane,Edwin Jupp,Edwin Jupp,7-9,7,9,0,1,Completed,true,false,false
+AP107052,07 Nov 09,5,East Malvern,Carmelite,No. 2,Rion Casey,Alex Toohey,Alex Toohey,2-8,2,8,0,1,Completed,true,false,false
+AP107052,07 Nov 09,5,East Malvern,Carmelite,No. 3,James Bland,Matt Nicol,Matt Nicol,0-8,0,8,0,1,Completed,true,false,false
+AP107052,07 Nov 09,5,East Malvern,Carmelite,No. 4,Oliver Alexander,Pierce Gilheany,Oliver Alexander,8-3,8,3,1,0,Completed,true,false,false
+AP107054,07 Nov 09,5,Dendy Park,St Pats Mentone,No. 1,Nathan Scutti,Anthony Milesi,Nathan Scutti,8-0,8,0,1,0,Completed,true,false,false
+AP107054,07 Nov 09,5,Dendy Park,St Pats Mentone,No. 2,Mario Papotto,Damien Coghlan,Mario Papotto,8-6,8,6,1,0,Completed,true,false,false
+AP107054,07 Nov 09,5,Dendy Park,St Pats Mentone,No. 3,Kevin Youn,Nick Hall,Kevin Youn,8-1,8,1,1,0,Completed,true,false,false
+AP107054,07 Nov 09,5,Dendy Park,St Pats Mentone,No. 4,Mitchell Coulson-Moore,Hugh Conway,Mitchell Coulson-Moore,8-1,8,1,1,0,Completed,true,false,false
+AP107061,14 Nov 09,6,St Pats Mentone,Black Rock,No. 1,Damien Coghlan,Scott Lockwood,Damien Coghlan,8-4,8,4,1,0,Completed,true,false,false
+AP107061,14 Nov 09,6,St Pats Mentone,Black Rock,No. 2,Nick Hall,Jack Noone,Jack Noone,2-8,2,8,0,1,Completed,true,false,false
+AP107061,14 Nov 09,6,St Pats Mentone,Black Rock,No. 3,Hugh Conway,Mark Lockwood,Mark Lockwood,2-8,2,8,0,1,Completed,true,false,false
+AP107061,14 Nov 09,6,St Pats Mentone,Black Rock,No. 4,Michael Scott,Tim Lockwood,Michael Scott,8-4,8,4,1,0,Completed,true,false,false
+AP107062,14 Nov 09,6,Lauriston,Dendy Park,No. 1,Luke Smith,Adrian Karatzas,Luke Smith,8-6,8,6,1,0,Completed,true,false,false
+AP107062,14 Nov 09,6,Lauriston,Dendy Park,No. 2,William Swedosh,Kevin Youn,Kevin Youn,4-8,4,8,0,1,Completed,true,false,false
+AP107062,14 Nov 09,6,Lauriston,Dendy Park,No. 3,David Newton,Theo Mimoun,Theo Mimoun,2-8,2,8,0,1,Completed,true,false,false
+AP107062,14 Nov 09,6,Lauriston,Dendy Park,No. 4,Morris Trabsky,Marcus Frajman,Marcus Frajman,1-8,1,8,0,1,Completed,true,false,false
+AP107063,14 Nov 09,6,Carmelite,Murrumbeena,No. 1,James Trowsdale,Ron Schweitzer,Ron Schweitzer,4-8,4,8,0,1,Completed,true,false,false
+AP107063,14 Nov 09,6,Carmelite,Murrumbeena,No. 2,Alex Toohey,Lance Davey,Alex Toohey,8-4,8,4,1,0,Completed,true,false,false
+AP107063,14 Nov 09,6,Carmelite,Murrumbeena,No. 3,Matt Nicol,Dale Larkins,Dale Larkins,6-8,6,8,0,1,Completed,true,false,false
+AP107063,14 Nov 09,6,Carmelite,Murrumbeena,No. 4,Tom Garry,Zvi Schweitzer,Zvi Schweitzer,3-8,3,8,0,1,Completed,true,false,false
+AP107071,21 Nov 09,7,Dendy Park,Black Rock,No. 1,Nathan Scutti,Michael Watts,Michael Watts,2-8,2,8,0,1,Completed,true,false,false
+AP107071,21 Nov 09,7,Dendy Park,Black Rock,No. 2,Adrian Karatzas,Paul Noone,Paul Noone,7-9,7,9,0,1,Completed,true,false,false
+AP107071,21 Nov 09,7,Dendy Park,Black Rock,No. 3,Mario Papotto,Scott Lockwood,Scott Lockwood,6-8,6,8,0,1,Completed,true,false,false
+AP107071,21 Nov 09,7,Dendy Park,Black Rock,No. 4,Mitchell Coulson-Moore,Jack Noone,Mitchell Coulson-Moore,8-1,8,1,1,0,Completed,true,false,false
+AP107072,21 Nov 09,7,St Pats Mentone,Lauriston,No. 1,Sam Clayton,David Smith,Sam Clayton,8-3,8,3,1,0,Completed,true,false,false
+AP107072,21 Nov 09,7,St Pats Mentone,Lauriston,No. 2,Damien Coghlan,Phil Murphy,Phil Murphy,4-8,4,8,0,1,Completed,true,false,false
+AP107072,21 Nov 09,7,St Pats Mentone,Lauriston,No. 3,Nick Hall,Luke Smith,Luke Smith,1-8,1,8,0,1,Completed,true,false,false
+AP107072,21 Nov 09,7,St Pats Mentone,Lauriston,No. 4,Hugh Conway,William Swedosh,William Swedosh,6-8,6,8,0,1,Completed,true,false,false
+AP107073,21 Nov 09,7,East Malvern,Murrumbeena,No. 1,Jeff Foord,Ron Schweitzer,Ron Schweitzer,3-8,3,8,0,1,Completed,true,false,false
+AP107073,21 Nov 09,7,East Malvern,Murrumbeena,No. 2,Rion Casey,Lance Davey,Rion Casey,8-6,8,6,1,0,Completed,true,false,false
+AP107073,21 Nov 09,7,East Malvern,Murrumbeena,No. 3,James Bland,Zvi Schweitzer,Zvi Schweitzer,4-8,4,8,0,1,Completed,true,false,false
+AP107073,21 Nov 09,7,East Malvern,Murrumbeena,No. 4,Oliver Alexander,Luke Miller,Luke Miller,2-8,2,8,0,1,Completed,true,false,false
+AP107082,28 Nov 09,8,Murrumbeena,St Pats Mentone,No. 1,Ron Schweitzer,Sam Clayton,Ron Schweitzer,8-5,8,5,1,0,Completed,true,false,false
+AP107082,28 Nov 09,8,Murrumbeena,St Pats Mentone,No. 2,Lance Davey,Damien Coghlan,Lance Davey,8-5,8,5,1,0,Completed,true,false,false
+AP107082,28 Nov 09,8,Murrumbeena,St Pats Mentone,No. 3,Zvi Schweitzer,Nick Hall,Nick Hall,2-8,2,8,0,1,Completed,true,false,false
+AP107082,28 Nov 09,8,Murrumbeena,St Pats Mentone,No. 4,Luke Miller,Hugh Conway,Luke Miller,8-0,8,0,1,0,Completed,true,false,false
+AP107083,28 Nov 09,8,Carmelite,Black Rock,No. 1,James Trowsdale,Scott Lockwood,Scott Lockwood,5-8,5,8,0,1,Completed,true,false,false
+AP107083,28 Nov 09,8,Carmelite,Black Rock,No. 2,Alex Toohey,Jack Noone,Alex Toohey,8-5,8,5,1,0,Completed,true,false,false
+AP107083,28 Nov 09,8,Carmelite,Black Rock,No. 3,Matt Nicol,Paul Noone,Paul Noone,7-9,7,9,0,1,Completed,true,false,false
+AP107083,28 Nov 09,8,Carmelite,Black Rock,No. 4,Tom Garry,Mark Lockwood,Mark Lockwood,8-9,8,9,0,1,Completed,true,false,false
+AP107084,28 Nov 09,8,East Malvern,Lauriston,No. 1,Hugo Mylecharane,David Smith,David Smith,6-8,6,8,0,1,Completed,true,false,false
+AP107084,28 Nov 09,8,East Malvern,Lauriston,No. 2,Rion Casey,Luke Smith,Luke Smith,5-8,5,8,0,1,Completed,true,false,false
+AP107084,28 Nov 09,8,East Malvern,Lauriston,No. 3,James Bland,William Swedosh,William Swedosh,1-8,1,8,0,1,Completed,true,false,false
+AP107084,28 Nov 09,8,East Malvern,Lauriston,No. 4,Oliver Alexander,Morris Trabsky,Oliver Alexander,8-4,8,4,1,0,Completed,true,false,false
+AP107091,05 Dec 09,9,Dendy Park,East Malvern,No. 1,Adrian Karatzas,Jeff Foord,Adrian Karatzas,8-2,8,2,1,0,Completed,true,false,false
+AP107091,05 Dec 09,9,Dendy Park,East Malvern,No. 2,Kevin Youn,Rion Casey,Kevin Youn,8-2,8,2,1,0,Completed,true,false,false
+AP107091,05 Dec 09,9,Dendy Park,East Malvern,No. 3,Mitchell Coulson-Moore,James Bland,Mitchell Coulson-Moore,8-0,8,0,1,0,Completed,true,false,false
+AP107091,05 Dec 09,9,Dendy Park,East Malvern,No. 4,Harrison King,Oliver Alexander,Harrison King,8-1,8,1,1,0,Completed,true,false,false
+AP107093,05 Dec 09,9,Black Rock,Murrumbeena,No. 1,Michael Watts,Ron Schweitzer,Michael Watts,8-0,8,0,1,0,Completed,true,false,false
+AP107093,05 Dec 09,9,Black Rock,Murrumbeena,No. 2,Scott Lockwood,Lance Davey,Lance Davey,5-8,5,8,0,1,Completed,true,false,false
+AP107093,05 Dec 09,9,Black Rock,Murrumbeena,No. 3,Jack Noone,Dale Larkins,Jack Noone,8-5,8,5,1,0,Completed,true,false,false
+AP107093,05 Dec 09,9,Black Rock,Murrumbeena,No. 4,Tim Lockwood,Zvi Schweitzer,Zvi Schweitzer,2-8,2,8,0,1,Completed,true,false,false
+AP107094,05 Dec 09,9,Lauriston,Carmelite,No. 1,David Smith,Edwin Jupp,Edwin Jupp,6-8,6,8,0,1,Completed,true,false,false
+AP107094,05 Dec 09,9,Lauriston,Carmelite,No. 2,Luke Smith,James Trowsdale,James Trowsdale,4-8,4,8,0,1,Completed,true,false,false
+AP107094,05 Dec 09,9,Lauriston,Carmelite,No. 3,Danny Zielin,Alex Toohey,Alex Toohey,2-8,2,8,0,1,Completed,true,false,false
+AP107094,05 Dec 09,9,Lauriston,Carmelite,No. 4,William Swedosh,Matt Nicol,Matt Nicol,3-8,3,8,0,1,Completed,true,false,false
+AP107101,12 Dec 09,10,Carmelite,Dendy Park,No. 1,Edwin Jupp,Harrison King,Edwin Jupp,8-2,8,2,1,0,Completed,true,false,false
+AP107101,12 Dec 09,10,Carmelite,Dendy Park,No. 2,James Trowsdale,Nathan Scutti,Nathan Scutti,5-8,5,8,0,1,Completed,true,false,false
+AP107101,12 Dec 09,10,Carmelite,Dendy Park,No. 3,Alex Toohey,Kevin Youn,Kevin Youn,2-8,2,8,0,1,Completed,true,false,false
+AP107101,12 Dec 09,10,Carmelite,Dendy Park,No. 4,Matt Nicol,Theo Mimoun,Matt Nicol,8-3,8,3,1,0,Completed,true,false,false
+AP107102,12 Dec 09,10,East Malvern,St Pats Mentone,No. 1,Hugo Mylecharane,Sam Clayton,Sam Clayton,4-8,4,8,0,1,Completed,true,false,false
+AP107102,12 Dec 09,10,East Malvern,St Pats Mentone,No. 2,Rion Casey,Damien Coghlan,Rion Casey,8-6,8,6,1,0,Completed,true,false,false
+AP107102,12 Dec 09,10,East Malvern,St Pats Mentone,No. 3,James Bland,Nick Hall,Nick Hall,0-8,0,8,0,1,Completed,true,false,false
+AP107102,12 Dec 09,10,East Malvern,St Pats Mentone,No. 4,Oliver Alexander,Hugh Conway,Oliver Alexander,8-6,8,6,1,0,Completed,true,false,false
+AP107104,12 Dec 09,10,Murrumbeena,Lauriston,No. 1,Ron Schweitzer,David Smith,Ron Schweitzer,8-1,8,1,1,0,Completed,true,false,false
+AP107104,12 Dec 09,10,Murrumbeena,Lauriston,No. 2,Lance Davey,Phil Murphy,Lance Davey,9-8,9,8,1,0,Completed,true,false,false
+AP107104,12 Dec 09,10,Murrumbeena,Lauriston,No. 3,Zvi Schweitzer,Paul Ede,Paul Ede,3-8,3,8,0,1,Completed,true,false,false
+AP107104,12 Dec 09,10,Murrumbeena,Lauriston,No. 4,Luke Miller,Morris Trabsky,Luke Miller,8-3,8,3,1,0,Completed,true,false,false
+AP107111,30 Jan 10,11,Dendy Park,Murrumbeena,No. 1,Harrison King,Ameet Partha,Ameet Partha,4-8,4,8,0,1,Completed,true,false,false
+AP107111,30 Jan 10,11,Dendy Park,Murrumbeena,No. 2,Nathan Scutti,Lance Davey,Lance Davey,2-8,2,8,0,1,Completed,true,false,false
+AP107111,30 Jan 10,11,Dendy Park,Murrumbeena,No. 3,Mario Papotto,Luke Miller,Mario Papotto,8-5,8,5,1,0,Completed,true,false,false
+AP107111,30 Jan 10,11,Dendy Park,Murrumbeena,No. 4,Mitchell Coulson-Moore,N Wilson,N Wilson,4-8,4,8,0,1,Completed,true,false,false
+AP107112,30 Jan 10,11,St Pats Mentone,Carmelite,No. 1,Sam Clayton,Edwin Jupp,Sam Clayton,8-4,8,4,1,0,Completed,true,false,false
+AP107112,30 Jan 10,11,St Pats Mentone,Carmelite,No. 2,Damien Coghlan,James Trowsdale,James Trowsdale,5-8,5,8,0,1,Completed,true,false,false
+AP107112,30 Jan 10,11,St Pats Mentone,Carmelite,No. 3,Nick Hall,Alex Toohey,Alex Toohey,1-8,1,8,0,1,Completed,true,false,false
+AP107112,30 Jan 10,11,St Pats Mentone,Carmelite,No. 4,Hugh Conway,Matt Nicol,Matt Nicol,0-8,0,8,0,1,Completed,true,false,false
+AP107113,30 Jan 10,11,Black Rock,East Malvern,No. 1,Daryl Roe,Jeff Foord,Daryl Roe,8-3,8,3,1,0,Completed,true,false,false
+AP107113,30 Jan 10,11,Black Rock,East Malvern,No. 2,Paul Noone,Rion Casey,Paul Noone,8-1,8,1,1,0,Completed,true,false,false
+AP107113,30 Jan 10,11,Black Rock,East Malvern,No. 3,Scott Lockwood,James Bland,Scott Lockwood,8-3,8,3,1,0,Completed,true,false,false
+AP107113,30 Jan 10,11,Black Rock,East Malvern,No. 4,Tim Lockwood,Oliver Alexander,Oliver Alexander,4-8,4,8,0,1,Completed,true,false,false
+AP107121,06 Feb 10,12,Lauriston,Black Rock,No. 1,David Smith,Daryl Roe,David Smith,8-3,8,3,1,0,Completed,true,false,false
+AP107121,06 Feb 10,12,Lauriston,Black Rock,No. 2,William Swedosh,Scott Lockwood,William Swedosh,9-8,9,8,1,0,Completed,true,false,false
+AP107121,06 Feb 10,12,Lauriston,Black Rock,No. 3,David Newton,Mark Lockwood,David Newton,8-0,8,0,1,0,Completed,true,false,false
+AP107121,06 Feb 10,12,Lauriston,Black Rock,No. 4,Morris Trabsky,Tim Lockwood,Tim Lockwood,5-8,5,8,0,1,Completed,true,false,false
+AP107122,06 Feb 10,12,Carmelite,East Malvern,No. 1,Edwin Jupp,Sunil Kumar,Edwin Jupp,8-0,8,0,1,0,Completed,true,false,false
+AP107122,06 Feb 10,12,Carmelite,East Malvern,No. 2,James Trowsdale,Rion Casey,James Trowsdale,8-4,8,4,1,0,Completed,true,false,false
+AP107122,06 Feb 10,12,Carmelite,East Malvern,No. 3,Alex Toohey,Oliver Alexander,Alex Toohey,8-1,8,1,1,0,Completed,true,false,false
+AP107122,06 Feb 10,12,Carmelite,East Malvern,No. 4,Matt Nicol,James Bland,Matt Nicol,8-3,8,3,1,0,Completed,true,false,false
+AP107124,06 Feb 10,12,St Pats Mentone,Dendy Park,No. 1,Sam Clayton,Harrison King,Sam Clayton,8-3,8,3,1,0,Completed,true,false,false
+AP107124,06 Feb 10,12,St Pats Mentone,Dendy Park,No. 2,Damien Coghlan,Nathan Scutti,Nathan Scutti,0-8,0,8,0,1,Completed,true,false,false
+AP107124,06 Feb 10,12,St Pats Mentone,Dendy Park,No. 3,Nick Hall,Kevin Youn,Kevin Youn,6-8,6,8,0,1,Completed,true,false,false
+AP107124,06 Feb 10,12,St Pats Mentone,Dendy Park,No. 4,Hugh Conway,Theo Mimoun,Theo Mimoun,7-9,7,9,0,1,Completed,true,false,false
+AP107131,13 Feb 10,13,Black Rock,St Pats Mentone,No. 1,Scott Lockwood,Sam Clayton,Sam Clayton,8-9,8,9,0,1,Completed,true,false,false
+AP107131,13 Feb 10,13,Black Rock,St Pats Mentone,No. 2,Jack Noone,Damien Coghlan,Jack Noone,8-3,8,3,1,0,Completed,true,false,false
+AP107131,13 Feb 10,13,Black Rock,St Pats Mentone,No. 3,Paul Noone,Nick Hall,Nick Hall,6-8,6,8,0,1,Completed,true,false,false
+AP107131,13 Feb 10,13,Black Rock,St Pats Mentone,No. 4,Daryl Roe,Hugh Conway,Daryl Roe,8-3,8,3,1,0,Completed,true,false,false
+AP107132,13 Feb 10,13,Dendy Park,Lauriston,No. 1,Adrian Karatzas,Phil Murphy,Phil Murphy,3-8,3,8,0,1,Completed,true,false,false
+AP107132,13 Feb 10,13,Dendy Park,Lauriston,No. 2,Harrison King,Luke Smith,Harrison King,8-4,8,4,1,0,Completed,true,false,false
+AP107132,13 Feb 10,13,Dendy Park,Lauriston,No. 3,Kevin Youn,William Swedosh,Kevin Youn,8-2,8,2,1,0,Completed,true,false,false
+AP107132,13 Feb 10,13,Dendy Park,Lauriston,No. 4,Mitchell Coulson-Moore,Morris Trabsky,Mitchell Coulson-Moore,8-2,8,2,1,0,Completed,true,false,false
+AP107133,13 Feb 10,13,Murrumbeena,Carmelite,No. 1,Ron Schweitzer,Edwin Jupp,Edwin Jupp,4-8,4,8,0,1,Completed,true,false,false
+AP107133,13 Feb 10,13,Murrumbeena,Carmelite,No. 2,Lance Davey,James Trowsdale,Lance Davey,8-2,8,2,1,0,Completed,true,false,false
+AP107133,13 Feb 10,13,Murrumbeena,Carmelite,No. 3,Zvi Schweitzer,Alex Toohey,Alex Toohey,0-8,0,8,0,1,Completed,true,false,false
+AP107133,13 Feb 10,13,Murrumbeena,Carmelite,No. 4,Luke Miller,Matt Nicol,Matt Nicol,3-8,3,8,0,1,Completed,true,false,false
+AP107141,20 Feb 10,14,Black Rock,Dendy Park,No. 1,Scott Lockwood,Nathan Scutti,Nathan Scutti,4-8,4,8,0,1,Completed,true,false,false
+AP107141,20 Feb 10,14,Black Rock,Dendy Park,No. 2,Tim Lockwood,Harrison King,Harrison King,4-8,4,8,0,1,Completed,true,false,false
+AP107141,20 Feb 10,14,Black Rock,Dendy Park,No. 3,Jack Noone,Theo Mimoun,Jack Noone,8-4,8,4,1,0,Completed,true,false,false
+AP107141,20 Feb 10,14,Black Rock,Dendy Park,No. 4,Paul Noone,Mitchell Coulson-Moore,Mitchell Coulson-Moore,4-8,4,8,0,1,Completed,true,false,false
+AP107142,20 Feb 10,14,Lauriston,St Pats Mentone,No. 1,David Smith,Sam Clayton,Sam Clayton,2-8,2,8,0,1,Completed,true,false,false
+AP107142,20 Feb 10,14,Lauriston,St Pats Mentone,No. 2,Danny Zielin,Alan Kirby,Alan Kirby,2-8,2,8,0,1,Completed,true,false,false
+AP107142,20 Feb 10,14,Lauriston,St Pats Mentone,No. 3,David Newton,Damien Coghlan,David Newton,8-5,8,5,1,0,Completed,true,false,false
+AP107142,20 Feb 10,14,Lauriston,St Pats Mentone,No. 4,Morris Trabsky,Nick Hall,Nick Hall,2-8,2,8,0,1,Completed,true,false,false
+AP107143,20 Feb 10,14,Murrumbeena,East Malvern,No. 1,Ron Schweitzer,Jeff Foord,Ron Schweitzer,8-4,8,4,1,0,Completed,true,false,false
+AP107143,20 Feb 10,14,Murrumbeena,East Malvern,No. 2,Lance Davey,Rion Casey,Rion Casey,7-9,7,9,0,1,Completed,true,false,false
+AP107143,20 Feb 10,14,Murrumbeena,East Malvern,No. 3,Zvi Schweitzer,Sunil Kumar,Zvi Schweitzer,8-5,8,5,1,0,Completed,true,false,false
+AP107143,20 Feb 10,14,Murrumbeena,East Malvern,No. 4,Luke Miller,James Bland,Luke Miller,8-1,8,1,1,0,Completed,true,false,false
+AP107301,,16,Dendy Park,Black Rock,No. 1,Adrian Karatzas,Scott Lockwood,Adrian Karatzas,8-0,8,0,1,0,Completed,true,false,false
+AP107301,,16,Dendy Park,Black Rock,No. 2,Nathan Scutti,Jack Noone,Nathan Scutti,8-0,8,0,1,0,Completed,true,false,false
+AP107301,,16,Dendy Park,Black Rock,No. 3,Harrison King,Paul Noone,Harrison King,8-0,8,0,1,0,Completed,true,false,false
+AP107301,,16,Dendy Park,Black Rock,No. 4,Mario Papotto,Tim Lockwood,Mario Papotto,8-0,8,0,1,0,Completed,true,false,false
+AP107302,,16,Murrumbeena,Carmelite,No. 1,Ron Schweitzer,Edwin Jupp,Edwin Jupp,2-8,2,8,0,1,Completed,true,false,false
+AP107302,,16,Murrumbeena,Carmelite,No. 2,Lance Davey,James Trowsdale,James Trowsdale,7-9,7,9,0,1,Completed,true,false,false
+AP107302,,16,Murrumbeena,Carmelite,No. 3,Zvi Schweitzer,Alex Toohey,Alex Toohey,3-8,3,8,0,1,Completed,true,false,false
+AP107302,,16,Murrumbeena,Carmelite,No. 4,Luke Miller,Matt Nicol,Matt Nicol,4-8,4,8,0,1,Completed,true,true,false
+AP107311,,16,Black Rock,Carmelite,No. 1,Scott Lockwood,Edwin Jupp,Edwin Jupp,0-8,0,8,0,1,Completed,true,false,false
+AP107311,,16,Black Rock,Carmelite,No. 2,Jack Noone,James Trowsdale,James Trowsdale,0-8,0,8,0,1,Completed,true,false,false
+AP107311,,16,Black Rock,Carmelite,No. 3,Paul Noone,Alex Toohey,Alex Toohey,0-8,0,8,0,1,Completed,true,false,false
+AP107311,,16,Black Rock,Carmelite,No. 4,Tim Lockwood,Matt Nicol,Matt Nicol,0-8,0,8,0,1,Completed,true,false,false
+AP107321,,17,Dendy Park,Carmelite,No. 1,Nathan Scutti,Edwin Jupp,Nathan Scutti,8-5,8,5,1,0,Completed,true,false,false
+AP107321,,17,Dendy Park,Carmelite,No. 2,Harrison King,James Trowsdale,Harrison King,8-4,8,4,1,0,Completed,true,false,false
+AP107321,,17,Dendy Park,Carmelite,No. 3,Adrian Karatzas,Alex Toohey,Adrian Karatzas,8-5,8,5,1,0,Completed,true,false,false
+AP107321,,17,Dendy Park,Carmelite,No. 4,Mario Papotto,Matt Nicol,Matt Nicol,6-8,6,8,0,1,Completed,true,false,false

@@ -1,0 +1,61 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP009011,08 Oct 11,1,regular,Round 1,St Johns,Le Page,8,0,4,0,8,1,53,29,Completed,
+AP009012,08 Oct 11,1,regular,Round 1,Royal South Yarra,Highmoor Uniting,2,6,2,2,4,5,46,44,Completed,
+AP009013,08 Oct 11,1,regular,Round 1,St Pats Mentone,BLTC,1,7,1,3,3,6,34,41,Completed,
+AP009014,08 Oct 11,1,regular,Round 1,Hampton,Kings Park,1,7,1,3,3,6,39,50,Completed,
+AP009021,15 Oct 11,2,regular,Round 2,Kings Park,St Johns,1,7,1,3,2,6,22,44,Completed,
+AP009022,15 Oct 11,2,regular,Round 2,Le Page,Royal South Yarra,8,0,4,0,8,3,56,45,Completed,
+AP009023,15 Oct 11,2,regular,Round 2,Highmoor Uniting,St Pats Mentone,8,0,4,0,8,1,54,31,Completed,
+AP009024,15 Oct 11,2,regular,Round 2,BLTC,Hampton,7,1,3,1,6,3,44,28,Completed,
+AP009031,22 Oct 11,3,regular,Round 3,St Johns,BLTC,8,0,4,0,8,2,57,38,Completed,
+AP009034,22 Oct 11,3,regular,Round 3,Hampton,Highmoor Uniting,0,8,0,4,0,8,16,48,Completed,
+pending-ap009-r3-royal-south-yarra-kings-park,22 Oct 11,3,regular,Round 3,Royal South Yarra,Kings Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap009-r3-st-pats-mentone-le-page,22 Oct 11,3,regular,Round 3,St Pats Mentone,Le Page,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP009041,05 Nov 11,4,regular,Round 4,Highmoor Uniting,St Johns,7,1,3,1,7,3,47,27,Completed,
+AP009042,05 Nov 11,4,regular,Round 4,BLTC,Royal South Yarra,0,8,0,4,1,8,36,57,Completed,
+AP009043,05 Nov 11,4,regular,Round 4,Kings Park,St Pats Mentone,0,8,0,4,0,8,25,51,Completed,
+AP009044,05 Nov 11,4,regular,Round 4,Le Page,Hampton,2,6,2,2,4,4,40,44,Completed,
+AP009051,12 Nov 11,5,regular,Round 5,St Pats Mentone,Hampton,7,1,3,1,6,2,46,30,Completed,
+AP009052,12 Nov 11,5,regular,Round 5,Kings Park,BLTC,0,8,0,4,0,8,20,49,Completed,
+AP009053,12 Nov 11,5,regular,Round 5,Highmoor Uniting,Le Page,8,0,4,0,8,2,56,33,Completed,
+AP009054,12 Nov 11,5,regular,Round 5,St Johns,Royal South Yarra,8,0,4,0,8,0,50,26,Completed,
+AP009062,19 Nov 11,6,regular,Round 6,Hampton,St Johns,4,4,0,0,1,2,16,17,Completed,
+AP009063,19 Nov 11,6,regular,Round 6,BLTC,Highmoor Uniting,6.5,1.5,2,1,5,3,43,33,Completed,
+pending-ap009-r6-le-page-kings-park,19 Nov 11,6,regular,Round 6,Le Page,Kings Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap009-r6-royal-south-yarra-st-pats-mentone,19 Nov 11,6,regular,Round 6,Royal South Yarra,St Pats Mentone,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP009071,26 Nov 11,7,regular,Round 7,St Johns,St Pats Mentone,4,4,0,0,2,1,20,14,Completed,
+pending-ap009-r7-bltc-le-page,26 Nov 11,7,regular,Round 7,BLTC,Le Page,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap009-r7-kings-park-highmoor-uniting,26 Nov 11,7,regular,Round 7,Kings Park,Highmoor Uniting,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap009-r7-royal-south-yarra-hampton,26 Nov 11,7,regular,Round 7,Royal South Yarra,Hampton,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP009081,03 Dec 11,8,regular,Round 8,Le Page,St Johns,0,8,0,4,1,8,26,50,Completed,
+AP009083,03 Dec 11,8,regular,Round 8,BLTC,St Pats Mentone,4,4,2,2,6,6,52,52,Completed,
+AP009084,03 Dec 11,8,regular,Round 8,Kings Park,Hampton,7,1,3,1,7,2,48,25,Completed,
+pending-ap009-r8-highmoor-uniting-royal-south-yarra,03 Dec 11,8,regular,Round 8,Highmoor Uniting,Royal South Yarra,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP009091,10 Dec 11,9,regular,Round 9,St Johns,Kings Park,7,1,3,1,6,4,53,50,Completed,
+AP009092,10 Dec 11,9,regular,Round 9,Royal South Yarra,Le Page,1,7,1,3,2,7,31,53,Completed,
+AP009093,10 Dec 11,9,regular,Round 9,St Pats Mentone,Highmoor Uniting,1.5,6.5,1,2,4,6,49,61,Completed,
+AP009094,10 Dec 11,9,regular,Round 9,Hampton,BLTC,1,7,1,3,2,6,29,43,Completed,
+AP009101,17 Dec 11,10,regular,Round 10,BLTC,St Johns,6,2,2,2,5,4,41,45,Completed,
+AP009102,17 Dec 11,10,regular,Round 10,Kings Park,Royal South Yarra,8,0,4,0,8,2,52,30,Completed,
+AP009103,17 Dec 11,10,regular,Round 10,Le Page,St Pats Mentone,0,8,0,4,0,8,33,52,Completed,
+AP009104,17 Dec 11,10,regular,Round 10,Highmoor Uniting,Hampton,8,0,4,0,8,1,52,26,Completed,
+AP009111,04 Feb 12,11,regular,Round 11,St Johns,Highmoor Uniting,0,8,0,4,2,8,43,57,Completed,
+AP009112,04 Feb 12,11,regular,Round 11,Royal South Yarra,BLTC,1,7,1,3,2,6,35,43,Completed,
+AP009113,04 Feb 12,11,regular,Round 11,St Pats Mentone,Kings Park,8,0,4,0,8,1,50,25,Completed,
+AP009114,04 Feb 12,11,regular,Round 11,Hampton,Le Page,1,7,1,3,4,7,48,57,Completed,
+AP009121,11 Feb 12,12,regular,Round 12,Hampton,St Pats Mentone,6,2,2,2,5,4,49,43,Completed,
+AP009122,11 Feb 12,12,regular,Round 12,BLTC,Kings Park,7,1,3,1,7,2,49,37,Completed,
+AP009123,11 Feb 12,12,regular,Round 12,Le Page,Highmoor Uniting,1,7,1,3,2,7,24,46,Completed,
+pending-ap009-r12-royal-south-yarra-st-johns,11 Feb 12,12,regular,Round 12,Royal South Yarra,St Johns,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+AP009131,18 Feb 12,13,regular,Round 13,St Pats Mentone,Royal South Yarra,6,2,2,2,4,4,39,35,Completed,
+AP009132,18 Feb 12,13,regular,Round 13,St Johns,Hampton,7,1,3,1,6,2,45,24,Completed,
+AP009133,18 Feb 12,13,regular,Round 13,Highmoor Uniting,BLTC,2,6,2,2,5,5,42,47,Completed,
+AP009134,18 Feb 12,13,regular,Round 13,Kings Park,Le Page,7,1,3,1,6,2,41,26,Completed,
+AP009141,25 Feb 12,14,regular,Round 14,St Pats Mentone,St Johns,4.5,3.5,1,0,3,1,26,11,Completed,
+pending-ap009-r14-hampton-royal-south-yarra,25 Feb 12,14,regular,Round 14,Hampton,Royal South Yarra,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap009-r14-highmoor-uniting-kings-park,25 Feb 12,14,regular,Round 14,Highmoor Uniting,Kings Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap009-r14-le-page-bltc,25 Feb 12,14,regular,Round 14,Le Page,BLTC,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+AP009301,,16,semi_final,Semi-final,Highmoor Uniting,BLTC,2,6,2,2,4,5,43,41,Completed,
+AP009302,,16,semi_final,Semi-final,St Johns,St Pats Mentone,2,6,2,2,4,5,31,47,Completed,
+AP009311,,16,semi_final,Semi-final,Highmoor Uniting,St Pats Mentone,8,0,4,0,8,2,58,29,Completed,
+AP009321,,17,grand_final,Grand final · TROLS entry 2,BLTC,Highmoor Uniting,1,7,0,2,1,6,23,40,Completed,

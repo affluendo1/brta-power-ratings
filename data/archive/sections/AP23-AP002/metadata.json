@@ -1,0 +1,89 @@
+{
+  "asset_id": "AP23-AP002",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Winter 2011",
+  "season_id": "AP23",
+  "season_label": "Winter 2011",
+  "source_section_code": "AP002",
+  "section_label": "Ladies Sets 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Kings Park",
+      "wins": 0,
+      "points": 99,
+      "percentage": 166.27,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Le Page",
+      "wins": 0,
+      "points": 83,
+      "percentage": 120.6,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Highmoor Uniting",
+      "wins": 0,
+      "points": 61,
+      "percentage": 104.99,
+      "marker": "R"
+    },
+    {
+      "position": 4,
+      "team": "BLTC",
+      "wins": 0,
+      "points": 51,
+      "percentage": 90.37,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "East Malvern",
+      "wins": 0,
+      "points": 38,
+      "percentage": 72.54,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "St Pats Mentone",
+      "wins": 0,
+      "points": 28,
+      "percentage": 70.28,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 1,
+    "doublesTarget": 10,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP23-AP002",
+  "fixtures": 47,
+  "completed_fixtures": 46,
+  "draw_fixtures": 46,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 184,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP002122 doubles No. 3: '2-2'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "asset_id": "AP43-AP012",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 21/22",
+  "season_id": "AP43",
+  "season_label": "Summer 21/22",
+  "source_section_code": "AP012",
+  "section_label": "Ladies S/D 3",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Tennis World",
+      "wins": 7,
+      "points": 78,
+      "percentage": 146.32,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "Royal South Yarra",
+      "wins": 7,
+      "points": 74,
+      "percentage": 187.91,
+      "marker": "P"
+    },
+    {
+      "position": 3,
+      "team": "East Malvern Blue",
+      "wins": 5,
+      "points": 61,
+      "percentage": 123.98,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "East Malvern White",
+      "wins": 4,
+      "points": 48,
+      "percentage": 99.07,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Patterson Lakes",
+      "wins": 1,
+      "points": 38,
+      "percentage": 69.77,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Mordialloc",
+      "wins": 1,
+      "points": 33,
+      "percentage": 60.76,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Monash University",
+      "wins": 1,
+      "points": 28,
+      "percentage": 67.52,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP43-AP012",
+  "fixtures": 59,
+  "completed_fixtures": 35,
+  "draw_fixtures": 59,
+  "singles_rubbers": 116,
+  "doubles_rubbers": 58,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

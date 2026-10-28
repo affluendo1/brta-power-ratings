@@ -1,0 +1,60 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP015012,07 Oct 23,1,regular,Round 1,BLTC,Parkdale,1,7,1,3,2,7,31,46,Completed,
+AP015013,07 Oct 23,1,regular,Round 1,Glen Huntly,Black Rock,8,0,4,0,8,1,54,34,Completed,
+AP015014,07 Oct 23,1,regular,Round 1,Kings Park,FCTC,2,6,2,2,4,4,34,35,Completed,
+pending-ap015-r1-elwood-green-bye,07 Oct 23,1,regular,Round 1,Elwood Green,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP015021,14 Oct 23,2,regular,Round 2,FCTC,Elwood Green,7,1,3,1,7,3,56,40,Completed,
+AP015023,14 Oct 23,2,regular,Round 2,Parkdale,Glen Huntly,2,6,2,2,4,5,39,44,Completed,
+AP015024,14 Oct 23,2,regular,Round 2,Black Rock,Kings Park,6,2,2,2,5,5,53,46,Completed,
+pending-ap015-r2-bye-bltc,14 Oct 23,2,regular,Round 2,Bye,BLTC,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP015031,21 Oct 23,3,regular,Round 3,Elwood Green,Black Rock,0,8,0,4,1,8,20,52,Completed,
+AP015032,21 Oct 23,3,regular,Round 3,BLTC,FCTC,2,6,2,2,4,5,43,47,Completed,
+AP015034,21 Oct 23,3,regular,Round 3,Kings Park,Parkdale,1,7,1,3,4,6,46,50,Completed,
+pending-ap015-r3-glen-huntly-bye,21 Oct 23,3,regular,Round 3,Glen Huntly,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP015041,28 Oct 23,4,regular,Round 4,Parkdale,Elwood Green,8,0,4,0,8,3,62,40,Completed,
+AP015042,28 Oct 23,4,regular,Round 4,Black Rock,BLTC,6,2,2,2,5,5,50,45,Completed,
+AP015043,28 Oct 23,4,regular,Round 4,FCTC,Glen Huntly,1,7,1,3,2,6,35,40,Completed,
+pending-ap015-r4-bye-kings-park,28 Oct 23,4,regular,Round 4,Bye,Kings Park,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP015051,11 Nov 23,5,regular,Round 5,Glen Huntly,Kings Park,1,7,1,3,3,6,32,45,Completed,
+AP015052,11 Nov 23,5,regular,Round 5,FCTC,Black Rock,7,1,3,1,6,3,45,40,Completed,
+AP015054,11 Nov 23,5,regular,Round 5,Elwood Green,BLTC,0,8,0,4,3,8,41,61,Completed,
+pending-ap015-r5-parkdale-bye,11 Nov 23,5,regular,Round 5,Parkdale,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP015061,18 Nov 23,6,regular,Round 6,BLTC,Glen Huntly,1,7,1,3,3,6,42,53,Completed,
+AP015062,18 Nov 23,6,regular,Round 6,Kings Park,Elwood Green,7,1,3,1,6,3,49,40,Completed,
+AP015063,18 Nov 23,6,regular,Round 6,Black Rock,Parkdale,7,1,3,1,6,2,42,36,Completed,
+pending-ap015-r6-bye-fctc,18 Nov 23,6,regular,Round 6,Bye,FCTC,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP015071,25 Nov 23,7,regular,Round 7,Elwood Green,Glen Huntly,1,7,1,3,4,7,47,61,Completed,
+AP015072,25 Nov 23,7,regular,Round 7,BLTC,Kings Park,7,1,3,1,6,4,51,48,Completed,
+AP015073,25 Nov 23,7,regular,Round 7,FCTC,Parkdale,4,4,1,1,3,5,42,43,Completed,
+pending-ap015-r7-black-rock-bye,25 Nov 23,7,regular,Round 7,Black Rock,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap015-r8-black-rock-glen-huntly,02 Dec 23,8,regular,Round 8,Black Rock,Glen Huntly,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap015-r8-bye-elwood-green,02 Dec 23,8,regular,Round 8,Bye,Elwood Green,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap015-r8-fctc-kings-park,02 Dec 23,8,regular,Round 8,FCTC,Kings Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap015-r8-parkdale-bltc,02 Dec 23,8,regular,Round 8,Parkdale,BLTC,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap015-r9-bltc-bye,09 Dec 23,9,regular,Round 9,BLTC,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap015-r9-elwood-green-fctc,09 Dec 23,9,regular,Round 9,Elwood Green,FCTC,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap015-r9-glen-huntly-parkdale,09 Dec 23,9,regular,Round 9,Glen Huntly,Parkdale,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap015-r9-kings-park-black-rock,09 Dec 23,9,regular,Round 9,Kings Park,Black Rock,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP015101,16 Dec 23,10,regular,Round 10,Black Rock,Elwood Green,2,6,2,2,5,6,50,51,Completed,
+AP015102,16 Dec 23,10,regular,Round 10,FCTC,BLTC,6,2,2,2,6,6,60,59,Completed,
+AP015104,16 Dec 23,10,regular,Round 10,Parkdale,Kings Park,7,1,3,1,6,2,43,26,Completed,
+pending-ap015-r10-bye-glen-huntly,16 Dec 23,10,regular,Round 10,Bye,Glen Huntly,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP015111,03 Feb 24,11,regular,Round 11,Elwood Green,Parkdale,1,7,1,3,3,6,41,51,Completed,
+AP015112,03 Feb 24,11,regular,Round 11,BLTC,Black Rock,0,8,0,4,2,8,41,54,Completed,
+AP015113,03 Feb 24,11,regular,Round 11,Glen Huntly,FCTC,1,7,1,3,2,7,37,54,Completed,
+pending-ap015-r11-kings-park-bye,03 Feb 24,11,regular,Round 11,Kings Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP015121,10 Feb 24,12,regular,Round 12,Kings Park,Glen Huntly,1,7,1,3,2,6,24,45,Completed,
+AP015122,10 Feb 24,12,regular,Round 12,Black Rock,FCTC,8,0,4,0,8,1,51,27,Completed,
+AP015124,10 Feb 24,12,regular,Round 12,BLTC,Elwood Green,7,1,3,1,7,3,55,40,Completed,
+pending-ap015-r12-bye-parkdale,10 Feb 24,12,regular,Round 12,Bye,Parkdale,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP015131,17 Feb 24,13,regular,Round 13,Glen Huntly,BLTC,7,1,3,1,6,2,43,27,Completed,
+AP015132,17 Feb 24,13,regular,Round 13,Elwood Green,Kings Park,2,6,2,2,4,5,40,44,Completed,
+AP015133,17 Feb 24,13,regular,Round 13,Parkdale,Black Rock,1,7,1,3,3,6,36,43,Completed,
+pending-ap015-r13-fctc-bye,17 Feb 24,13,regular,Round 13,FCTC,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP015141,24 Feb 24,14,regular,Round 14,Glen Huntly,Elwood Green,7,1,3,1,7,3,52,37,Completed,
+AP015142,24 Feb 24,14,regular,Round 14,Kings Park,BLTC,2,6,2,2,5,5,45,47,Completed,
+AP015143,24 Feb 24,14,regular,Round 14,Parkdale,FCTC,7,1,3,1,7,3,54,37,Completed,
+pending-ap015-r14-bye-black-rock,24 Feb 24,14,regular,Round 14,Bye,Black Rock,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP015301,,16,semi_final,Semi-final,Glen Huntly,FCTC,6.5,1.5,2,1,5,3,42,33,Completed,
+AP015302,,16,semi_final,Semi-final,Black Rock,Parkdale,1,7,1,3,4,6,43,53,Completed,
+AP015321,,17,grand_final,Grand final · TROLS entry 2,Glen Huntly,Parkdale,2,6,2,2,4,4,32,35,Completed,

@@ -1,0 +1,48 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP008011,05 May 18,1,regular,Round 1,Coatesville,St Finbar's,5,3,2,0,4,1,28,18,Completed,
+AP008012,05 May 18,1,regular,Round 1,BLTC,Parkdale,1,7,1,3,3,6,29,43,Completed,
+AP008013,05 May 18,1,regular,Round 1,Ormond,FCTC,6.5,1.5,2,1,5,2,38,30,Completed,
+AP008021,12 May 18,2,regular,Round 2,FCTC,Coatesville,1,7,1,3,2,6,31,42,Completed,
+AP008022,12 May 18,2,regular,Round 2,Parkdale,Ormond,7,1,3,1,6,4,47,44,Completed,
+AP008023,12 May 18,2,regular,Round 2,St Finbar's,BLTC,6,2,2,2,5,5,57,53,Completed,
+AP008031,19 May 18,3,regular,Round 3,Coatesville,BLTC,6,2,2,2,5,5,50,46,Completed,
+AP008032,19 May 18,3,regular,Round 3,Ormond,St Finbar's,7,1,3,1,6,4,51,45,Completed,
+AP008033,19 May 18,3,regular,Round 3,FCTC,Parkdale,8,0,4,0,8,0,49,27,Completed,
+AP008041,26 May 18,4,regular,Round 4,Parkdale,Coatesville,2,6,2,2,4,6,42,45,Completed,
+AP008042,26 May 18,4,regular,Round 4,St Finbar's,FCTC,1,7,1,3,4,6,40,50,Completed,
+AP008043,26 May 18,4,regular,Round 4,BLTC,Ormond,2,6,2,2,4,5,46,49,Completed,
+AP008051,02 Jun 18,5,regular,Round 5,Coatesville,Ormond,8,0,4,0,8,1,52,31,Completed,
+AP008052,02 Jun 18,5,regular,Round 5,Parkdale,St Finbar's,1,7,1,3,3,7,47,51,Completed,
+AP008053,02 Jun 18,5,regular,Round 5,FCTC,BLTC,7,1,3,1,7,2,47,31,Completed,
+AP008061,16 Jun 18,6,regular,Round 6,St Finbar's,Coatesville,0,8,0,4,2,8,35,53,Completed,
+AP008062,16 Jun 18,6,regular,Round 6,Parkdale,BLTC,6,2,2,2,4,4,35,28,Completed,
+AP008063,16 Jun 18,6,regular,Round 6,FCTC,Ormond,6,2,2,2,5,4,40,40,Completed,
+AP008071,23 Jun 18,7,regular,Round 7,Coatesville,FCTC,6,2,2,2,5,5,47,43,Completed,
+AP008072,23 Jun 18,7,regular,Round 7,Ormond,Parkdale,7,1,3,1,6,2,44,34,Completed,
+AP008073,23 Jun 18,7,regular,Round 7,BLTC,St Finbar's,6,2,2,2,4,4,36,35,Completed,
+AP008082,30 Jun 18,8,regular,Round 8,St Finbar's,Ormond,6,2,2,2,6,4,55,43,Completed,
+pending-ap008-r8-bltc-coatesville,30 Jun 18,8,regular,Round 8,BLTC,Coatesville,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap008-r8-parkdale-fctc,30 Jun 18,8,regular,Round 8,Parkdale,FCTC,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP008093,07 Jul 18,9,regular,Round 9,Ormond,BLTC,7,1,3,1,6,3,42,42,Completed,
+pending-ap008-r9-coatesville-parkdale,07 Jul 18,9,regular,Round 9,Coatesville,Parkdale,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap008-r9-fctc-st-finbar-s,07 Jul 18,9,regular,Round 9,FCTC,St Finbar's,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP008101,14 Jul 18,10,regular,Round 10,Ormond,Coatesville,6,2,2,2,5,4,44,43,Completed,
+AP008102,14 Jul 18,10,regular,Round 10,St Finbar's,Parkdale,2,6,2,2,4,6,44,61,Completed,
+AP008103,14 Jul 18,10,regular,Round 10,BLTC,FCTC,1,7,1,3,3,6,33,49,Completed,
+AP008111,21 Jul 18,11,regular,Round 11,Coatesville,St Finbar's,7,1,3,1,7,2,50,32,Completed,
+AP008112,21 Jul 18,11,regular,Round 11,BLTC,Parkdale,1,7,1,3,2,6,27,42,Completed,
+AP008113,21 Jul 18,11,regular,Round 11,Ormond,FCTC,6,2,2,2,5,4,39,44,Completed,
+AP008121,28 Jul 18,12,regular,Round 12,FCTC,Coatesville,7,1,3,1,6,2,41,29,Completed,
+AP008122,28 Jul 18,12,regular,Round 12,Parkdale,Ormond,1,7,1,3,2,7,40,53,Completed,
+pending-ap008-r12-st-finbar-s-bltc,28 Jul 18,12,regular,Round 12,St Finbar's,BLTC,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP008131,04 Aug 18,13,regular,Round 13,Coatesville,BLTC,8,0,4,0,8,1,54,30,Completed,
+AP008132,04 Aug 18,13,regular,Round 13,Ormond,St Finbar's,7,1,3,1,6,2,45,25,Completed,
+AP008133,04 Aug 18,13,regular,Round 13,FCTC,Parkdale,7,1,3,1,6,2,39,27,Completed,
+AP008142,11 Aug 18,14,regular,Round 14,St Finbar's,FCTC,4,4,1,1,3,3,31,32,Completed,
+AP008143,11 Aug 18,14,regular,Round 14,BLTC,Ormond,3,5,0,2,2,4,40,40,Completed,
+pending-ap008-r14-parkdale-coatesville,11 Aug 18,14,regular,Round 14,Parkdale,Coatesville,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP008151,18 Aug 18,15,regular,Round 15,Coatesville,Ormond,0,8,0,4,2,8,29,53,Completed,
+AP008152,18 Aug 18,15,regular,Round 15,Parkdale,St Finbar's,1,7,1,3,3,7,42,53,Completed,
+AP008311,18 Aug 18,15,regular,Round 15,Coatesville,FCTC,1,7,1,3,3,6,36,44,Completed,
+pending-ap008-r15-fctc-bltc,18 Aug 18,15,regular,Round 15,FCTC,BLTC,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP008321,,16,grand_final,Grand final · TROLS entry 2,Ormond,FCTC,1.5,6.5,1,2,3,5,33,35,Completed,

@@ -1,0 +1,129 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP010011,01 May 21,1,Clarinda,Highmoor Uniting,No. 1,Sebastian Allebi,Brett Collins,Sebastian Allebi,8-2,8,2,1,0,Completed,true,false,false
+AP010011,01 May 21,1,Clarinda,Highmoor Uniting,No. 2,Tri Dinh,Nick Martin,Tri Dinh,8-3,8,3,1,0,Completed,true,false,false
+AP010011,01 May 21,1,Clarinda,Highmoor Uniting,No. 3,Tung Lam,Steffen Raab,Tung Lam,8-5,8,5,1,0,Completed,true,false,false
+AP010011,01 May 21,1,Clarinda,Highmoor Uniting,No. 4,Kosta Pliatsikas,Michael Lynch,Michael Lynch,5-8,5,8,0,1,Completed,true,false,false
+AP010012,01 May 21,1,Le Page,St Pats Mentone,No. 1,Trevor Hastings,Cameron De Silva,Cameron De Silva,4-8,4,8,0,1,Completed,true,false,false
+AP010012,01 May 21,1,Le Page,St Pats Mentone,No. 2,Kon Chingorev,Mike De Silva,Kon Chingorev,8-5,8,5,1,0,Completed,true,true,false
+AP010012,01 May 21,1,Le Page,St Pats Mentone,No. 3,Lauren Gelbert,Alex Chingarev,Alex Chingarev,2-8,2,8,0,1,Completed,true,false,true
+AP010012,01 May 21,1,Le Page,St Pats Mentone,No. 4,Brian Govan,Jace Henderson,Brian Govan,8-2,8,2,1,0,Completed,true,false,true
+AP010013,01 May 21,1,Elsternwick Park,Ormond LA,No. 1,Matt Anstee,Steve Gelagin,Steve Gelagin,2-8,2,8,0,1,Completed,true,false,false
+AP010013,01 May 21,1,Elsternwick Park,Ormond LA,No. 2,Adam Halliwell,Michael Hudson,Adam Halliwell,8-3,8,3,1,0,Completed,true,true,false
+AP010013,01 May 21,1,Elsternwick Park,Ormond LA,No. 3,Simon Corrie,Dylan Helm,Simon Corrie,8-2,8,2,1,0,Completed,true,false,false
+AP010013,01 May 21,1,Elsternwick Park,Ormond LA,No. 4,Eyal Zeira,Peter King,Eyal Zeira,8-0,8,0,1,0,Completed,true,false,true
+AP010014,01 May 21,1,Mentone 1,Mentone 2,No. 1,Ivan Payung,Luke Marinovic,Ivan Payung,8-3,8,3,1,0,Completed,true,false,false
+AP010014,01 May 21,1,Mentone 1,Mentone 2,No. 2,Robert Donat,Mitchell Edwards,Robert Donat,8-2,8,2,1,0,Completed,true,false,false
+AP010014,01 May 21,1,Mentone 1,Mentone 2,No. 3,Jack Dooley,Jerome Dean,Jack Dooley,8-0,8,0,1,0,Completed,true,false,false
+AP010014,01 May 21,1,Mentone 1,Mentone 2,No. 4,Dennis Moody,Bruce Anderson,Dennis Moody,8-5,8,5,1,0,Completed,true,false,false
+AP010021,08 May 21,2,Mentone 2,Clarinda,No. 1,Jordan Dean,Sebastian Allebi,Jordan Dean,8-6,8,6,1,0,Completed,true,false,false
+AP010021,08 May 21,2,Mentone 2,Clarinda,No. 2,Mitchell Edwards,Tri Dinh,Tri Dinh,2-8,2,8,0,1,Completed,true,false,false
+AP010021,08 May 21,2,Mentone 2,Clarinda,No. 3,Jerome Dean,Tung Lam,Tung Lam,1-8,1,8,0,1,Completed,true,false,false
+AP010021,08 May 21,2,Mentone 2,Clarinda,No. 4,Bruce Anderson,Kosta Pliatsikas,Kosta Pliatsikas,6-8,6,8,0,1,Completed,true,false,false
+AP010022,08 May 21,2,Highmoor Uniting,Le Page,No. 1,Nick Martin,Tony Sofo,Nick Martin,8-5,8,5,1,0,Completed,true,false,false
+AP010022,08 May 21,2,Highmoor Uniting,Le Page,No. 2,Frank Collins,Lauren Gelbert,Lauren Gelbert,7-8,7,8,0,1,Completed,true,false,false
+AP010022,08 May 21,2,Highmoor Uniting,Le Page,No. 3,Vikram Jangra,Brian Govan,Vikram Jangra,8-4,8,4,1,0,Completed,true,false,false
+AP010022,08 May 21,2,Highmoor Uniting,Le Page,No. 4,Michael Lynch,[Unnamed emergency — TROLS AP010022 away code 4],Michael Lynch,8-0,8,0,1,0,Completed,false,false,true
+AP010023,08 May 21,2,St Pats Mentone,Elsternwick Park,No. 1,Cameron De Silva,Matt Anstee,Cameron De Silva,8-4,8,4,1,0,Completed,true,false,false
+AP010023,08 May 21,2,St Pats Mentone,Elsternwick Park,No. 2,David Lawry,Roshen Singh,David Lawry,8-2,8,2,1,0,Completed,true,false,false
+AP010023,08 May 21,2,St Pats Mentone,Elsternwick Park,No. 3,Sam Clayton,Eyal Zeira,Eyal Zeira,3-8,3,8,0,1,Completed,true,false,false
+AP010023,08 May 21,2,St Pats Mentone,Elsternwick Park,No. 4,Mike De Silva,Simon Corrie,Simon Corrie,4-8,4,8,0,1,Completed,true,false,false
+AP010024,08 May 21,2,Ormond LA,Mentone 1,No. 1,Steve Gelagin,Dan Wood,Steve Gelagin,8-4,8,4,1,0,Completed,true,false,false
+AP010024,08 May 21,2,Ormond LA,Mentone 1,No. 2,Byron Gelagin,Jack Dooley,Jack Dooley,4-8,4,8,0,1,Completed,true,false,false
+AP010024,08 May 21,2,Ormond LA,Mentone 1,No. 3,Daniel Baker,Dante Ortega,Dante Ortega,1-8,1,8,0,1,Completed,true,true,false
+AP010024,08 May 21,2,Ormond LA,Mentone 1,No. 4,Rivka Garson,Dennis Moody,Dennis Moody,1-8,1,8,0,1,Completed,true,false,false
+AP010031,15 May 21,3,Clarinda,Ormond LA,No. 1,Sebastian Allebi,Steve Gelagin,Steve Gelagin,4-8,4,8,0,1,Completed,true,false,false
+AP010031,15 May 21,3,Clarinda,Ormond LA,No. 2,Tri Dinh,Lucas Nerke,Tri Dinh,8-3,8,3,1,0,Completed,true,false,true
+AP010031,15 May 21,3,Clarinda,Ormond LA,No. 3,Tung Lam,Susan Harrison,Tung Lam,8-0,8,0,1,0,Completed,true,false,false
+AP010031,15 May 21,3,Clarinda,Ormond LA,No. 4,Kosta Pliatsikas,Rivka Garson,Kosta Pliatsikas,8-0,8,0,1,0,Completed,true,false,false
+AP010032,15 May 21,3,Le Page,Mentone 2,No. 1,Tony Sofo,Jordan Dean,Tony Sofo,8-6,8,6,1,0,Completed,true,false,false
+AP010032,15 May 21,3,Le Page,Mentone 2,No. 2,Kon Chingorev,Luke Marinovic,Luke Marinovic,7-8,7,8,0,1,Completed,true,true,false
+AP010032,15 May 21,3,Le Page,Mentone 2,No. 3,Lauren Gelbert,Mitchell Edwards,Mitchell Edwards,7-8,7,8,0,1,Completed,true,false,false
+AP010032,15 May 21,3,Le Page,Mentone 2,No. 4,Brian Govan,Jerome Dean,Brian Govan,8-0,8,0,1,0,Completed,true,false,false
+AP010033,15 May 21,3,Elsternwick Park,Highmoor Uniting,No. 1,Eyal Zeira,Brett Collins,Brett Collins,6-8,6,8,0,1,Completed,true,false,false
+AP010033,15 May 21,3,Elsternwick Park,Highmoor Uniting,No. 2,Joe Barr,Steffen Raab,Steffen Raab,3-8,3,8,0,1,Completed,true,true,false
+AP010033,15 May 21,3,Elsternwick Park,Highmoor Uniting,No. 3,Simon Corrie,Richard Elvins,Richard Elvins,3-8,3,8,0,1,Completed,true,false,false
+AP010033,15 May 21,3,Elsternwick Park,Highmoor Uniting,No. 4,Andrew Antonopoulos,Vikram Jangra,Vikram Jangra,4-8,4,8,0,1,Completed,true,true,false
+AP010034,15 May 21,3,Mentone 1,St Pats Mentone,No. 1,Dan Wood,Cameron De Silva,Cameron De Silva,5-8,5,8,0,1,Completed,true,false,false
+AP010034,15 May 21,3,Mentone 1,St Pats Mentone,No. 2,Ivan Payung,David Lawry,David Lawry,7-8,7,8,0,1,Completed,true,false,false
+AP010034,15 May 21,3,Mentone 1,St Pats Mentone,No. 3,Richard Kemp,Nick Hall,Nick Hall,1-8,1,8,0,1,Completed,true,false,false
+AP010034,15 May 21,3,Mentone 1,St Pats Mentone,No. 4,Dennis Moody,Mike De Silva,Mike De Silva,1-8,1,8,0,1,Completed,true,false,false
+AP010041,22 May 21,4,St Pats Mentone,Clarinda,No. 1,Cameron De Silva,Sebastian Allebi,Cameron De Silva,8-0,8,0,1,0,Completed,true,false,false
+AP010041,22 May 21,4,St Pats Mentone,Clarinda,No. 2,David Lawry,Tri Dinh,David Lawry,8-3,8,3,1,0,Completed,true,false,false
+AP010041,22 May 21,4,St Pats Mentone,Clarinda,No. 3,Sam Clayton,Tung Lam,Tung Lam,6-8,6,8,0,1,Completed,true,false,false
+AP010041,22 May 21,4,St Pats Mentone,Clarinda,No. 4,Nick Hall,Sher Sher,Nick Hall,8-3,8,3,1,0,Completed,true,false,false
+AP010042,22 May 21,4,Ormond LA,Le Page,No. 1,Steve Gelagin,Trevor Hastings,Steve Gelagin,8-3,8,3,1,0,Completed,true,false,false
+AP010042,22 May 21,4,Ormond LA,Le Page,No. 2,Michael Hudson,Tony Sofo,Tony Sofo,3-8,3,8,0,1,Completed,true,false,false
+AP010042,22 May 21,4,Ormond LA,Le Page,No. 3,Susan Harrison,Kon Chingorev,Kon Chingorev,2-8,2,8,0,1,Completed,true,false,true
+AP010042,22 May 21,4,Ormond LA,Le Page,No. 4,Rivka Garson,Lauren Gelbert,Lauren Gelbert,0-8,0,8,0,1,Completed,true,false,false
+AP010043,22 May 21,4,Mentone 2,Elsternwick Park,No. 1,Jordan Dean,Matt Anstee,Jordan Dean,8-6,8,6,1,0,Completed,true,false,false
+AP010043,22 May 21,4,Mentone 2,Elsternwick Park,No. 2,Luke Marinovic,Chris Norris,Luke Marinovic,8-2,8,2,1,0,Completed,true,false,false
+AP010043,22 May 21,4,Mentone 2,Elsternwick Park,No. 3,Mitchell Edwards,Simon Corrie,Simon Corrie,5-8,5,8,0,1,Completed,true,false,false
+AP010043,22 May 21,4,Mentone 2,Elsternwick Park,No. 4,Joel James,Andrew Antonopoulos,Joel James,8-7,8,7,1,0,Completed,true,true,true
+AP010044,22 May 21,4,Highmoor Uniting,Mentone 1,No. 1,Richard Elvins,Dan Wood,Dan Wood,0-8,0,8,0,1,Completed,true,false,false
+AP010044,22 May 21,4,Highmoor Uniting,Mentone 1,No. 2,Frank Collins,Jack Dooley,Jack Dooley,4-8,4,8,0,1,Completed,true,false,false
+AP010044,22 May 21,4,Highmoor Uniting,Mentone 1,No. 3,Vikram Jangra,Dante Ortega,Vikram Jangra,8-4,8,4,1,0,Completed,true,false,false
+AP010044,22 May 21,4,Highmoor Uniting,Mentone 1,No. 4,Michael Lynch,Richard Kemp,Michael Lynch,8-5,8,5,1,0,Completed,true,false,false
+AP010071,19 Jun 21,7,Clarinda,Elsternwick Park,No. 1,Tri Dinh,Matt Anstee,Tri Dinh,8-6,8,6,1,0,Completed,true,false,false
+AP010071,19 Jun 21,7,Clarinda,Elsternwick Park,No. 2,Tung Lam,[Unnamed emergency — TROLS AP010071 away code 2],Tung Lam,8-7,8,7,1,0,Completed,false,false,true
+AP010071,19 Jun 21,7,Clarinda,Elsternwick Park,No. 3,Kosta Pliatsikas,Eyal Zeira,Eyal Zeira,5-8,5,8,0,1,Completed,true,false,false
+AP010071,19 Jun 21,7,Clarinda,Elsternwick Park,No. 4,Sher Sher,Simon Corrie,Simon Corrie,1-8,1,8,0,1,Completed,true,false,false
+AP010072,19 Jun 21,7,Le Page,Mentone 1,No. 1,Nathan Coombes,Dan Wood,Nathan Coombes,8-0,8,0,1,0,Completed,true,false,false
+AP010072,19 Jun 21,7,Le Page,Mentone 1,No. 2,Trevor Hastings,Jack Dooley,Jack Dooley,4-8,4,8,0,1,Completed,true,false,false
+AP010072,19 Jun 21,7,Le Page,Mentone 1,No. 3,Tony Sofo,Richard Kemp,Tony Sofo,8-3,8,3,1,0,Completed,true,false,false
+AP010072,19 Jun 21,7,Le Page,Mentone 1,No. 4,Lauren Gelbert,Dennis Moody,Lauren Gelbert,8-3,8,3,1,0,Completed,true,false,false
+AP010073,19 Jun 21,7,Mentone 2,St Pats Mentone,No. 1,Jordan Dean,Cameron De Silva,Cameron De Silva,1-8,1,8,0,1,Completed,true,false,false
+AP010073,19 Jun 21,7,Mentone 2,St Pats Mentone,No. 2,Luke Marinovic,David Lawry,Luke Marinovic,8-5,8,5,1,0,Completed,true,false,false
+AP010073,19 Jun 21,7,Mentone 2,St Pats Mentone,No. 3,Paul Huynh,Sam Clayton,Paul Huynh,8-5,8,5,1,0,Completed,true,true,false
+AP010073,19 Jun 21,7,Mentone 2,St Pats Mentone,No. 4,Dion Marinovic,Mike De Silva,Mike De Silva,4-8,4,8,0,1,Completed,true,true,false
+AP010074,19 Jun 21,7,Ormond LA,Highmoor Uniting,No. 1,Steve Gelagin,Nick Martin,Steve Gelagin,8-2,8,2,1,0,Completed,true,false,false
+AP010074,19 Jun 21,7,Ormond LA,Highmoor Uniting,No. 2,Michael Hudson,Frank Collins,Frank Collins,2-8,2,8,0,1,Completed,true,false,false
+AP010074,19 Jun 21,7,Ormond LA,Highmoor Uniting,No. 3,Susan Harrison,Vikram Jangra,Vikram Jangra,3-8,3,8,0,1,Completed,true,false,false
+AP010074,19 Jun 21,7,Ormond LA,Highmoor Uniting,No. 4,Peter King,Michael Lynch,Michael Lynch,7-8,7,8,0,1,Completed,true,true,false
+AP010081,26 Jun 21,8,Highmoor Uniting,Clarinda,No. 1,Brett Collins,Tri Dinh,Tri Dinh,3-8,3,8,0,1,Completed,true,false,false
+AP010081,26 Jun 21,8,Highmoor Uniting,Clarinda,No. 2,Steffen Raab,Kosta Pliatsikas,Steffen Raab,8-1,8,1,1,0,Completed,true,false,false
+AP010081,26 Jun 21,8,Highmoor Uniting,Clarinda,No. 3,Richard Elvins,David James,David James,1-8,1,8,0,1,Completed,true,false,true
+AP010081,26 Jun 21,8,Highmoor Uniting,Clarinda,No. 4,Vikram Jangra,Sher Sher,Vikram Jangra,8-1,8,1,1,0,Completed,true,false,false
+AP010082,26 Jun 21,8,St Pats Mentone,Le Page,No. 1,Cameron De Silva,Nathan Coombes,Nathan Coombes,7-8,7,8,0,1,Completed,true,false,false
+AP010082,26 Jun 21,8,St Pats Mentone,Le Page,No. 2,Sam Clayton,Trevor Hastings,Trevor Hastings,7-8,7,8,0,1,Completed,true,false,false
+AP010082,26 Jun 21,8,St Pats Mentone,Le Page,No. 3,Mike De Silva,Tony Sofo,Tony Sofo,4-8,4,8,0,1,Completed,true,false,false
+AP010082,26 Jun 21,8,St Pats Mentone,Le Page,No. 4,Anjul Kherh,Lauren Gelbert,Lauren Gelbert,0-8,0,8,0,1,Completed,true,true,false
+AP010083,26 Jun 21,8,Ormond LA,Elsternwick Park,No. 1,Daniel Olshansky,Guillaume Drelon,Guillaume Drelon,2-8,2,8,0,1,Completed,true,false,true
+AP010083,26 Jun 21,8,Ormond LA,Elsternwick Park,No. 2,Byron Gelagin,Adam Halliwell,Adam Halliwell,7-8,7,8,0,1,Completed,true,false,true
+AP010083,26 Jun 21,8,Ormond LA,Elsternwick Park,No. 3,Susan Harrison,Eyal Zeira,Eyal Zeira,2-8,2,8,0,1,Completed,true,false,false
+AP010083,26 Jun 21,8,Ormond LA,Elsternwick Park,No. 4,Rivka Garson,Simon Corrie,Simon Corrie,1-8,1,8,0,1,Completed,true,false,false
+AP010084,26 Jun 21,8,Mentone 2,Mentone 1,No. 1,Jordan Dean,Jack Dooley,Jordan Dean,8-7,8,7,1,0,Completed,true,false,false
+AP010084,26 Jun 21,8,Mentone 2,Mentone 1,No. 2,Luke Marinovic,Ivan Payung,Luke Marinovic,8-6,8,6,1,0,Completed,true,false,false
+AP010084,26 Jun 21,8,Mentone 2,Mentone 1,No. 3,Mitchell Edwards,Robert Donat,Mitchell Edwards,8-0,8,0,1,0,Completed,true,false,false
+AP010084,26 Jun 21,8,Mentone 2,Mentone 1,No. 4,Jerome Dean,Dante Ortega,Dante Ortega,5-8,5,8,0,1,Completed,true,false,false
+AP010091,10 Jul 21,9,Clarinda,Mentone 2,No. 1,Tri Dinh,Jordan Dean,Tri Dinh,8-5,8,5,1,0,Completed,true,false,false
+AP010091,10 Jul 21,9,Clarinda,Mentone 2,No. 2,Tung Lam,Luke Marinovic,Tung Lam,8-2,8,2,1,0,Completed,true,false,false
+AP010091,10 Jul 21,9,Clarinda,Mentone 2,No. 3,Kosta Pliatsikas,Jerome Dean,Kosta Pliatsikas,8-5,8,5,1,0,Completed,true,false,false
+AP010091,10 Jul 21,9,Clarinda,Mentone 2,No. 4,Sher Sher,Bruce Anderson,Sher Sher,8-2,8,2,1,0,Completed,true,false,false
+AP010092,10 Jul 21,9,Le Page,Highmoor Uniting,No. 1,Simon Thomas,Brett Collins,Simon Thomas,8-4,8,4,1,0,Completed,true,true,false
+AP010092,10 Jul 21,9,Le Page,Highmoor Uniting,No. 2,Trevor Hastings,Nick Martin,Trevor Hastings,8-5,8,5,1,0,Completed,true,false,false
+AP010092,10 Jul 21,9,Le Page,Highmoor Uniting,No. 3,Tony Sofo,Frank Collins,Frank Collins,5-8,5,8,0,1,Completed,true,false,false
+AP010092,10 Jul 21,9,Le Page,Highmoor Uniting,No. 4,Lauren Gelbert,Michael Lynch,Lauren Gelbert,8-2,8,2,1,0,Completed,true,false,false
+AP010093,10 Jul 21,9,Elsternwick Park,St Pats Mentone,No. 1,Connor Doughty,Cameron De Silva,Connor Doughty,8-7,8,7,1,0,Completed,true,true,false
+AP010093,10 Jul 21,9,Elsternwick Park,St Pats Mentone,No. 2,Matt Anstee,Alex Chingarev,Matt Anstee,8-6,8,6,1,0,Completed,true,false,true
+AP010093,10 Jul 21,9,Elsternwick Park,St Pats Mentone,No. 3,Ben Wijay,Sam Clayton,Sam Clayton,3-8,3,8,0,1,Completed,true,true,false
+AP010093,10 Jul 21,9,Elsternwick Park,St Pats Mentone,No. 4,Simon Corrie,David Lawry,Simon Corrie,8-0,8,0,1,0,Completed,true,false,false
+AP010094,10 Jul 21,9,Mentone 1,Ormond LA,No. 1,Dan Wood,Daniel Olshansky,Dan Wood,8-5,8,5,1,0,Completed,true,false,false
+AP010094,10 Jul 21,9,Mentone 1,Ormond LA,No. 2,Dante Ortega,Byron Gelagin,Byron Gelagin,2-8,2,8,0,1,Completed,true,false,false
+AP010094,10 Jul 21,9,Mentone 1,Ormond LA,No. 3,Richard Kemp,Susan Harrison,Richard Kemp,8-3,8,3,1,0,Completed,true,false,false
+AP010094,10 Jul 21,9,Mentone 1,Ormond LA,No. 4,Aaron Tsuz,Rivka Garson,Aaron Tsuz,8-6,8,6,1,0,Completed,true,true,false
+AP010121,31 Jul 21,12,Mentone 1,Elsternwick Park,No. 1,Dan Wood,Matt Anstee,Dan Wood,8-3,8,3,1,0,Completed,true,false,false
+AP010121,31 Jul 21,12,Mentone 1,Elsternwick Park,No. 2,Jack Dooley,Roshen Singh,Jack Dooley,8-5,8,5,1,0,Completed,true,false,false
+AP010121,31 Jul 21,12,Mentone 1,Elsternwick Park,No. 3,Robert Donat,Mike Camarri,Robert Donat,8-1,8,1,1,0,Completed,true,false,true
+AP010121,31 Jul 21,12,Mentone 1,Elsternwick Park,No. 4,Dennis Moody,Simon Corrie,Simon Corrie,2-8,2,8,0,1,Completed,true,false,false
+AP010122,31 Jul 21,12,Ormond LA,Mentone 2,No. 1,Steve Gelagin,Jordan Dean,Steve Gelagin,8-3,8,3,1,0,Completed,true,false,false
+AP010122,31 Jul 21,12,Ormond LA,Mentone 2,No. 2,Daniel Olshansky,Luke Marinovic,Luke Marinovic,7-8,7,8,0,1,Completed,true,false,false
+AP010122,31 Jul 21,12,Ormond LA,Mentone 2,No. 3,Michael Hudson,Jerome Dean,Michael Hudson,8-0,8,0,1,0,Completed,true,false,false
+AP010122,31 Jul 21,12,Ormond LA,Mentone 2,No. 4,Susan Harrison,Alberto Polintan,Alberto Polintan,1-8,1,8,0,1,Completed,true,false,true
+AP010123,31 Jul 21,12,Highmoor Uniting,St Pats Mentone,No. 1,Nick Martin,Cameron De Silva,Cameron De Silva,1-8,1,8,0,1,Completed,true,false,false
+AP010123,31 Jul 21,12,Highmoor Uniting,St Pats Mentone,No. 2,Richard Elvins,David Lawry,David Lawry,6-8,6,8,0,1,Completed,true,false,false
+AP010123,31 Jul 21,12,Highmoor Uniting,St Pats Mentone,No. 3,Vikram Jangra,Sam Clayton,Sam Clayton,1-8,1,8,0,1,Completed,true,false,false
+AP010123,31 Jul 21,12,Highmoor Uniting,St Pats Mentone,No. 4,Michael Lynch,Mike De Silva,Mike De Silva,3-8,3,8,0,1,Completed,true,false,false
+AP010124,31 Jul 21,12,Le Page,Clarinda,No. 1,Nathan Coombes,Tri Dinh,Nathan Coombes,8-2,8,2,1,0,Completed,true,false,false
+AP010124,31 Jul 21,12,Le Page,Clarinda,No. 2,Trevor Hastings,Tung Lam,Tung Lam,2-8,2,8,0,1,Completed,true,false,false
+AP010124,31 Jul 21,12,Le Page,Clarinda,No. 3,Tony Sofo,Kosta Pliatsikas,Tony Sofo,8-2,8,2,1,0,Completed,true,false,false
+AP010124,31 Jul 21,12,Le Page,Clarinda,No. 4,Lauren Gelbert,Sher Sher,Lauren Gelbert,8-1,8,1,1,0,Completed,true,false,false

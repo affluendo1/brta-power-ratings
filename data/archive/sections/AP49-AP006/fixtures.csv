@@ -1,0 +1,60 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP006011,05 Oct 24,1,regular,Round 1,BLTC Blue,BLTC White,5,5,0,0,,,13,7,Completed,
+AP006012,05 Oct 24,1,regular,Round 1,Kings Park Blue,Tennis World,5,5,0,0,,,11,11,Completed,
+AP006013,05 Oct 24,1,regular,Round 1,Royal South Yarra,Maccabi,5.5,4.5,2,1,,,19,8,Completed,
+AP006014,05 Oct 24,1,regular,Round 1,Caulfield Rec,Kings Park Red,5.5,4.5,1,0,,,24,10,Completed,
+AP006021,12 Oct 24,2,regular,Round 2,Kings Park Red,BLTC Blue,2,8,3,5,,,38,47,Completed,
+AP006022,12 Oct 24,2,regular,Round 2,BLTC White,Kings Park Blue,3,7,3,5,,,39,44,Completed,
+AP006023,12 Oct 24,2,regular,Round 2,Tennis World,Royal South Yarra,8,2,5,3,,,45,39,Completed,
+pending-ap006-r2-maccabi-caulfield-rec,12 Oct 24,2,regular,Round 2,Maccabi,Caulfield Rec,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP006031,19 Oct 24,3,regular,Round 3,BLTC Blue,Maccabi,3,7,4,5,,,49,49,Completed,
+AP006032,19 Oct 24,3,regular,Round 3,Kings Park Blue,Kings Park Red,1,9,1,7,,,30,51,Completed,
+AP006033,19 Oct 24,3,regular,Round 3,Royal South Yarra,BLTC White,1,9,3,7,,,52,66,Completed,
+AP006034,19 Oct 24,3,regular,Round 3,Caulfield Rec,Tennis World,9,1,7,2,,,60,36,Completed,
+AP006041,26 Oct 24,4,regular,Round 4,Tennis World,BLTC Blue,8,2,6,4,,,50,55,Completed,
+AP006042,26 Oct 24,4,regular,Round 4,Maccabi,Kings Park Blue,10,0,8,0,,,56,23,Completed,
+AP006043,26 Oct 24,4,regular,Round 4,Kings Park Red,Royal South Yarra,0,10,2,8,,,46,66,Completed,
+AP006044,26 Oct 24,4,regular,Round 4,BLTC White,Caulfield Rec,1,9,2,7,,,39,53,Completed,
+AP006051,09 Nov 24,5,regular,Round 5,Royal South Yarra,Caulfield Rec,0,10,0,8,,,9,56,Completed,
+AP006052,09 Nov 24,5,regular,Round 5,Kings Park Red,Maccabi,2,8,4,6,,,54,58,Completed,
+AP006053,09 Nov 24,5,regular,Round 5,Tennis World,BLTC White,10,0,8,0,,,58,32,Completed,
+AP006054,09 Nov 24,5,regular,Round 5,BLTC Blue,Kings Park Blue,9,1,7,2,,,59,36,Completed,
+AP006061,16 Nov 24,6,regular,Round 6,Kings Park Blue,Royal South Yarra,2,8,3,6,,,46,59,Completed,
+AP006062,16 Nov 24,6,regular,Round 6,Caulfield Rec,BLTC Blue,8,2,6,3,,,53,46,Completed,
+AP006063,16 Nov 24,6,regular,Round 6,Maccabi,Tennis World,3,7,4,5,,,46,52,Completed,
+AP006064,16 Nov 24,6,regular,Round 6,BLTC White,Kings Park Red,1,9,2,7,,,30,60,Completed,
+AP006073,23 Nov 24,7,regular,Round 7,Kings Park Red,Tennis World,2,8,4,5,,,49,44,Completed,
+pending-ap006-r7-bltc-blue-royal-south-yarra,23 Nov 24,7,regular,Round 7,BLTC Blue,Royal South Yarra,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap006-r7-kings-park-blue-caulfield-rec,23 Nov 24,7,regular,Round 7,Kings Park Blue,Caulfield Rec,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+pending-ap006-r7-maccabi-bltc-white,23 Nov 24,7,regular,Round 7,Maccabi,BLTC White,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap006-r8-bltc-white-bltc-blue,30 Nov 24,8,regular,Round 8,BLTC White,BLTC Blue,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap006-r8-kings-park-red-caulfield-rec,30 Nov 24,8,regular,Round 8,Kings Park Red,Caulfield Rec,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap006-r8-maccabi-royal-south-yarra,30 Nov 24,8,regular,Round 8,Maccabi,Royal South Yarra,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap006-r8-tennis-world-kings-park-blue,30 Nov 24,8,regular,Round 8,Tennis World,Kings Park Blue,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP006091,07 Dec 24,9,regular,Round 9,BLTC Blue,Kings Park Red,1,9,1,7,,,32,54,Completed,
+AP006092,07 Dec 24,9,regular,Round 9,Kings Park Blue,BLTC White,2,8,4,4,,,37,46,Completed,
+AP006093,07 Dec 24,9,regular,Round 9,Royal South Yarra,Tennis World,8,2,5,3,,,48,43,Completed,
+pending-ap006-r9-caulfield-rec-maccabi,07 Dec 24,9,regular,Round 9,Caulfield Rec,Maccabi,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+AP006101,14 Dec 24,10,regular,Round 10,Maccabi,BLTC Blue,8,2,6,3,,,58,41,Completed,
+AP006102,14 Dec 24,10,regular,Round 10,Kings Park Red,Kings Park Blue,8,2,5,4,,,59,54,Completed,
+AP006103,14 Dec 24,10,regular,Round 10,BLTC White,Royal South Yarra,8,2,6,3,,,55,37,Completed,
+AP006104,14 Dec 24,10,regular,Round 10,Tennis World,Caulfield Rec,3,7,4,5,,,43,55,Completed,
+AP006111,01 Feb 25,11,regular,Round 11,BLTC Blue,Tennis World,3,7,4,5,,,51,44,Completed,
+AP006112,01 Feb 25,11,regular,Round 11,Kings Park Blue,Maccabi,0,10,1,8,,,31,62,Completed,
+AP006113,01 Feb 25,11,regular,Round 11,Royal South Yarra,Kings Park Red,2,8,3,6,,,35,58,Completed,
+AP006114,01 Feb 25,11,regular,Round 11,Caulfield Rec,BLTC White,9,1,7,1,,,55,29,Completed,
+AP006121,08 Feb 25,12,regular,Round 12,Caulfield Rec,Royal South Yarra,9,1,7,1,,,48,38,Completed,
+AP006122,08 Feb 25,12,regular,Round 12,Maccabi,Kings Park Red,2,8,4,5,,,45,53,Completed,
+AP006123,08 Feb 25,12,regular,Round 12,BLTC White,Tennis World,2,8,2,6,,,21,48,Completed,
+AP006124,08 Feb 25,12,regular,Round 12,Kings Park Blue,BLTC Blue,2,8,2,6,,,40,49,Completed,
+AP006131,15 Feb 25,13,regular,Round 13,Royal South Yarra,Kings Park Blue,2,8,3,5,,,42,48,Completed,
+AP006132,15 Feb 25,13,regular,Round 13,BLTC Blue,Caulfield Rec,3,7,4,4,,,37,43,Completed,
+AP006134,15 Feb 25,13,regular,Round 13,Kings Park Red,BLTC White,10,0,8,0,,,57,26,Completed,
+pending-ap006-r13-tennis-world-maccabi,15 Feb 25,13,regular,Round 13,Tennis World,Maccabi,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP006142,22 Feb 25,14,regular,Round 14,Caulfield Rec,Kings Park Blue,10,0,8,0,,,56,26,Completed,
+AP006143,22 Feb 25,14,regular,Round 14,Tennis World,Kings Park Red,9,1,7,1,,,55,36,Completed,
+pending-ap006-r14-bltc-white-maccabi,22 Feb 25,14,regular,Round 14,BLTC White,Maccabi,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+pending-ap006-r14-royal-south-yarra-bltc-blue,22 Feb 25,14,regular,Round 14,Royal South Yarra,BLTC Blue,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+AP006301,,16,semi_final,Semi-final,Caulfield Rec,Kings Park Red,8,2,6,3,,,52,44,Completed,
+AP006302,,16,semi_final,Semi-final,Maccabi,Tennis World,7.5,2.5,4,2,,,35,22,Completed,
+AP006321,,17,grand_final,Grand final · TROLS entry 2,Caulfield Rec,Maccabi,10,0,8,0,,,56,26,Completed,

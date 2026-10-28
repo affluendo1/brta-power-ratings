@@ -1,0 +1,229 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP019011,06 Oct 18,1,Lauriston,St Pats Mentone,No. 1,Scott Newton,Cameron De Silva,Cameron De Silva,6-8,6,8,0,1,Completed,true,false,false
+AP019011,06 Oct 18,1,Lauriston,St Pats Mentone,No. 2,Nathan Kazakevich,David Lawry,Nathan Kazakevich,8-2,8,2,1,0,Completed,true,false,false
+AP019011,06 Oct 18,1,Lauriston,St Pats Mentone,No. 3,Greg Gabai,Sam Clayton,Greg Gabai,8-2,8,2,1,0,Completed,true,false,false
+AP019011,06 Oct 18,1,Lauriston,St Pats Mentone,No. 4,Matthew Marguglio,Mike De Silva,Matthew Marguglio,8-7,8,7,1,0,Completed,true,false,false
+AP019012,06 Oct 18,1,Maccabi,Yamala,No. 1,Leor Bar,Shion Northey,Shion Northey,7-8,7,8,0,1,Completed,true,false,false
+AP019012,06 Oct 18,1,Maccabi,Yamala,No. 2,David Zulman,Jasper Chapman,David Zulman,8-4,8,4,1,0,Completed,true,false,false
+AP019012,06 Oct 18,1,Maccabi,Yamala,No. 3,Jordan Jaffe,Harvey Hodgson,Jordan Jaffe,8-2,8,2,1,0,Completed,true,false,false
+AP019012,06 Oct 18,1,Maccabi,Yamala,No. 4,Marty Schwarz,Murray Hodgson,Marty Schwarz,8-3,8,3,1,0,Completed,true,false,false
+AP019013,06 Oct 18,1,Ormond CR,Langwarrin,No. 1,Andrew Martin,Adrian Moore,Adrian Moore,2-8,2,8,0,1,Completed,true,false,false
+AP019013,06 Oct 18,1,Ormond CR,Langwarrin,No. 2,Steve Bendel,Haris Siakallis,Steve Bendel,8-1,8,1,1,0,Completed,true,false,false
+AP019013,06 Oct 18,1,Ormond CR,Langwarrin,No. 3,Anthony Murray,Matthew Belsten,Anthony Murray,8-4,8,4,1,0,Completed,true,false,false
+AP019013,06 Oct 18,1,Ormond CR,Langwarrin,No. 4,Glenn Felsenthal,Ben Kowald,Glenn Felsenthal,8-4,8,4,1,0,Completed,true,false,false
+AP019014,06 Oct 18,1,Monash University,GPHC,No. 1,Alex Lin,Carlo Domingo,Alex Lin,8-6,8,6,1,0,Completed,true,false,false
+AP019014,06 Oct 18,1,Monash University,GPHC,No. 2,Ahmed Jamel,Paul Deleso,Ahmed Jamel,8-0,8,0,1,0,Completed,true,false,false
+AP019014,06 Oct 18,1,Monash University,GPHC,No. 3,Sean Kozer,Tim O'Loughlin,Sean Kozer,8-2,8,2,1,0,Completed,true,false,false
+AP019014,06 Oct 18,1,Monash University,GPHC,No. 4,Patrick Vo,Quok Ho,Quok Ho,1-8,1,8,0,1,Completed,true,false,false
+AP019021,13 Oct 18,2,GPHC,Lauriston,No. 1,Carlo Domingo,Scott Newton,Scott Newton,6-8,6,8,0,1,Completed,true,false,false
+AP019021,13 Oct 18,2,GPHC,Lauriston,No. 2,Tim O'Loughlin,Nathan Kazakevich,Nathan Kazakevich,2-8,2,8,0,1,Completed,true,false,false
+AP019021,13 Oct 18,2,GPHC,Lauriston,No. 3,Quok Ho,Luke Smith,Luke Smith,1-8,1,8,0,1,Completed,true,false,false
+AP019021,13 Oct 18,2,GPHC,Lauriston,No. 4,Kim Tram,Greg Gabai,Greg Gabai,4-8,4,8,0,1,Completed,true,false,false
+AP019022,13 Oct 18,2,St Pats Mentone,Maccabi,No. 1,Cameron De Silva,Leor Bar,Cameron De Silva,8-2,8,2,1,0,Completed,true,false,false
+AP019022,13 Oct 18,2,St Pats Mentone,Maccabi,No. 2,Nick Hall,David Zulman,David Zulman,1-8,1,8,0,1,Completed,true,false,false
+AP019022,13 Oct 18,2,St Pats Mentone,Maccabi,No. 3,Mike De Silva,Jordan Jaffe,Jordan Jaffe,2-8,2,8,0,1,Completed,true,false,false
+AP019022,13 Oct 18,2,St Pats Mentone,Maccabi,No. 4,Adam Dudley,Marty Schwarz,Marty Schwarz,2-8,2,8,0,1,Completed,true,false,false
+AP019023,13 Oct 18,2,Yamala,Ormond CR,No. 1,Jasper Chapman,Andrew Martin,Andrew Martin,5-8,5,8,0,1,Completed,true,false,false
+AP019023,13 Oct 18,2,Yamala,Ormond CR,No. 2,Clinton Rice,Steve Bendel,Clinton Rice,8-5,8,5,1,0,Completed,true,false,false
+AP019023,13 Oct 18,2,Yamala,Ormond CR,No. 3,Mark O'Kane,Anthony Murray,Anthony Murray,6-8,6,8,0,1,Completed,true,false,false
+AP019023,13 Oct 18,2,Yamala,Ormond CR,No. 4,Lewis Dunne,Glenn Felsenthal,Glenn Felsenthal,3-8,3,8,0,1,Completed,true,false,false
+AP019024,13 Oct 18,2,Langwarrin,Monash University,No. 1,Adrian Moore,Vincent Ong,Vincent Ong,6-8,6,8,0,1,Completed,true,false,false
+AP019024,13 Oct 18,2,Langwarrin,Monash University,No. 2,Haris Siakallis,Philip Phung,Haris Siakallis,8-1,8,1,1,0,Completed,true,false,false
+AP019024,13 Oct 18,2,Langwarrin,Monash University,No. 3,Michael Robertson,Shaun Yeoh,Michael Robertson,8-3,8,3,1,0,Completed,true,false,false
+AP019024,13 Oct 18,2,Langwarrin,Monash University,No. 4,Ben Kowald,Zack Yiv,Ben Kowald,8-2,8,2,1,0,Completed,true,false,false
+AP019031,20 Oct 18,3,Lauriston,Langwarrin,No. 1,Scott Newton,Matthew Belsten,Scott Newton,8-1,8,1,1,0,Completed,true,false,false
+AP019031,20 Oct 18,3,Lauriston,Langwarrin,No. 2,Luke Smith,Steve Robertson,Steve Robertson,7-8,7,8,0,1,Completed,true,false,false
+AP019031,20 Oct 18,3,Lauriston,Langwarrin,No. 3,Greg Gabai,Michael Robertson,Michael Robertson,4-8,4,8,0,1,Completed,true,false,false
+AP019031,20 Oct 18,3,Lauriston,Langwarrin,No. 4,Matthew Marguglio,Ben Kowald,Ben Kowald,5-8,5,8,0,1,Completed,true,false,false
+AP019032,20 Oct 18,3,Maccabi,GPHC,No. 1,Leor Bar,Talal Elhaloui,Leor Bar,8-0,8,0,1,0,Completed,true,false,false
+AP019032,20 Oct 18,3,Maccabi,GPHC,No. 2,Jordan Jaffe,Carlo Domingo,Jordan Jaffe,8-4,8,4,1,0,Completed,true,false,false
+AP019032,20 Oct 18,3,Maccabi,GPHC,No. 3,Marty Schwarz,Paul Deleso,Marty Schwarz,8-3,8,3,1,0,Completed,true,false,false
+AP019032,20 Oct 18,3,Maccabi,GPHC,No. 4,Lachie Zuker,Tim O'Loughlin,Tim O'Loughlin,4-8,4,8,0,1,Completed,true,false,false
+AP019033,20 Oct 18,3,Ormond CR,St Pats Mentone,No. 1,Andrew Martin,Cameron De Silva,Cameron De Silva,2-8,2,8,0,1,Completed,true,false,false
+AP019033,20 Oct 18,3,Ormond CR,St Pats Mentone,No. 2,Steve Bendel,David Lawry,David Lawry,4-8,4,8,0,1,Completed,true,false,false
+AP019033,20 Oct 18,3,Ormond CR,St Pats Mentone,No. 3,Glenn Felsenthal,Nick Hall,Glenn Felsenthal,8-4,8,4,1,0,Completed,true,false,false
+AP019033,20 Oct 18,3,Ormond CR,St Pats Mentone,No. 4,Steve Gelagin,Adam Dudley,Steve Gelagin,8-2,8,2,1,0,Completed,true,false,false
+AP019034,20 Oct 18,3,Monash University,Yamala,No. 1,Lionel Yun,Shion Northey,Lionel Yun,8-6,8,6,1,0,Completed,true,false,false
+AP019034,20 Oct 18,3,Monash University,Yamala,No. 2,Ahmed Jamel,Jasper Chapman,Jasper Chapman,6-8,6,8,0,1,Completed,true,false,false
+AP019034,20 Oct 18,3,Monash University,Yamala,No. 3,Sean Kozer,Harvey Hodgson,Harvey Hodgson,5-8,5,8,0,1,Completed,true,false,false
+AP019034,20 Oct 18,3,Monash University,Yamala,No. 4,Harry Myrans,Lachlan Powell,Lachlan Powell,2-8,2,8,0,1,Completed,true,false,false
+AP019041,27 Oct 18,4,Yamala,Lauriston,No. 1,Shion Northey,Scott Newton,Scott Newton,6-8,6,8,0,1,Completed,true,false,false
+AP019041,27 Oct 18,4,Yamala,Lauriston,No. 2,Jasper Chapman,Matthew Marguglio,Matthew Marguglio,7-8,7,8,0,1,Completed,true,false,false
+AP019041,27 Oct 18,4,Yamala,Lauriston,No. 3,Harvey Hodgson,Hayden Ostrom-Brown,Hayden Ostrom-Brown,2-8,2,8,0,1,Completed,true,false,false
+AP019041,27 Oct 18,4,Yamala,Lauriston,No. 4,Lewis Dunne,Vlad Orda,Vlad Orda,5-8,5,8,0,1,Completed,true,false,false
+AP019042,27 Oct 18,4,Langwarrin,Maccabi,No. 1,Adrian Moore,Jordan Jaffe,Jordan Jaffe,6-8,6,8,0,1,Completed,true,false,false
+AP019042,27 Oct 18,4,Langwarrin,Maccabi,No. 2,Haris Siakallis,Marty Schwarz,Marty Schwarz,5-8,5,8,0,1,Completed,true,false,false
+AP019042,27 Oct 18,4,Langwarrin,Maccabi,No. 3,Matthew Belsten,Errol Dorfan,Errol Dorfan,1-8,1,8,0,1,Completed,true,false,false
+AP019042,27 Oct 18,4,Langwarrin,Maccabi,No. 4,Michael Robertson,Lachie Zuker,Michael Robertson,8-1,8,1,1,0,Completed,true,false,false
+AP019043,27 Oct 18,4,GPHC,Ormond CR,No. 1,Carlo Domingo,Andrew Martin,Andrew Martin,7-8,7,8,0,1,Completed,true,false,false
+AP019043,27 Oct 18,4,GPHC,Ormond CR,No. 2,Talal Elhaloui,Steve Bendel,Steve Bendel,1-8,1,8,0,1,Completed,true,false,false
+AP019043,27 Oct 18,4,GPHC,Ormond CR,No. 3,Matthew Poole,Anthony Murray,Anthony Murray,5-8,5,8,0,1,Completed,true,false,false
+AP019043,27 Oct 18,4,GPHC,Ormond CR,No. 4,Kim Tram,Glenn Felsenthal,Kim Tram,8-3,8,3,1,0,Completed,true,false,false
+AP019044,27 Oct 18,4,St Pats Mentone,Monash University,No. 1,Cameron De Silva,Ahmed Jamel,Cameron De Silva,8-2,8,2,1,0,Completed,true,false,false
+AP019044,27 Oct 18,4,St Pats Mentone,Monash University,No. 2,David Lawry,Sean Kozer,David Lawry,8-1,8,1,1,0,Completed,true,false,false
+AP019044,27 Oct 18,4,St Pats Mentone,Monash University,No. 3,Sam Clayton,Anthony Ticonovic,Sam Clayton,8-5,8,5,1,0,Completed,true,false,false
+AP019044,27 Oct 18,4,St Pats Mentone,Monash University,No. 4,Nick Hall,Harry Myrans,Nick Hall,8-2,8,2,1,0,Completed,true,false,false
+AP019051,10 Nov 18,5,Ormond CR,Monash University,No. 1,Andrew Martin,Lionel Yun,Andrew Martin,8-1,8,1,1,0,Completed,true,false,false
+AP019051,10 Nov 18,5,Ormond CR,Monash University,No. 2,Steve Bendel,Ahmed Jamel,Steve Bendel,8-2,8,2,1,0,Completed,true,false,false
+AP019051,10 Nov 18,5,Ormond CR,Monash University,No. 3,Anthony Murray,Sean Kozer,Anthony Murray,8-2,8,2,1,0,Completed,true,false,false
+AP019051,10 Nov 18,5,Ormond CR,Monash University,No. 4,Steve Gelagin,Patrick Vo,Steve Gelagin,8-2,8,2,1,0,Completed,true,false,false
+AP019052,10 Nov 18,5,GPHC,Langwarrin,No. 1,Jet Wigley,Haris Siakallis,Haris Siakallis,7-8,7,8,0,1,Completed,true,false,false
+AP019052,10 Nov 18,5,GPHC,Langwarrin,No. 2,Carlo Domingo,Matthew Belsten,Carlo Domingo,8-2,8,2,1,0,Completed,true,false,false
+AP019052,10 Nov 18,5,GPHC,Langwarrin,No. 3,Paul Deleso,Steve Robertson,Steve Robertson,5-8,5,8,0,1,Completed,true,false,false
+AP019052,10 Nov 18,5,GPHC,Langwarrin,No. 4,Tim O'Loughlin,Ben Kowald,Ben Kowald,5-8,5,8,0,1,Completed,true,false,false
+AP019053,10 Nov 18,5,Yamala,St Pats Mentone,No. 1,Shion Northey,Sam Clayton,Sam Clayton,7-8,7,8,0,1,Completed,true,false,false
+AP019053,10 Nov 18,5,Yamala,St Pats Mentone,No. 2,Jasper Chapman,Nick Hall,Nick Hall,6-8,6,8,0,1,Completed,true,false,false
+AP019053,10 Nov 18,5,Yamala,St Pats Mentone,No. 3,Harvey Hodgson,Mike De Silva,Harvey Hodgson,8-6,8,6,1,0,Completed,true,false,false
+AP019053,10 Nov 18,5,Yamala,St Pats Mentone,No. 4,Lewis Dunne,Adam Dudley,Adam Dudley,3-8,3,8,0,1,Completed,true,false,false
+AP019054,10 Nov 18,5,Lauriston,Maccabi,No. 1,Nathan Kazakevich,Leor Bar,Nathan Kazakevich,8-1,8,1,1,0,Completed,true,false,false
+AP019054,10 Nov 18,5,Lauriston,Maccabi,No. 2,Luke Smith,David Zulman,Luke Smith,8-5,8,5,1,0,Completed,true,false,false
+AP019054,10 Nov 18,5,Lauriston,Maccabi,No. 3,Greg Gabai,Marty Schwarz,Marty Schwarz,7-8,7,8,0,1,Completed,true,false,false
+AP019054,10 Nov 18,5,Lauriston,Maccabi,No. 4,William Swedosh,Errol Dorfan,Errol Dorfan,1-8,1,8,0,1,Completed,true,false,false
+AP019061,17 Nov 18,6,Maccabi,Ormond CR,No. 1,David Zulman,Andrew Martin,David Zulman,8-6,8,6,1,0,Completed,true,false,false
+AP019061,17 Nov 18,6,Maccabi,Ormond CR,No. 2,Jordan Jaffe,Steve Bendel,Jordan Jaffe,8-5,8,5,1,0,Completed,true,false,false
+AP019061,17 Nov 18,6,Maccabi,Ormond CR,No. 3,Marty Schwarz,Glenn Felsenthal,Marty Schwarz,8-0,8,0,1,0,Completed,true,false,false
+AP019061,17 Nov 18,6,Maccabi,Ormond CR,No. 4,Errol Dorfan,Brenton Stokie,Errol Dorfan,8-0,8,0,1,0,Completed,true,false,false
+AP019062,17 Nov 18,6,Monash University,Lauriston,No. 1,Patrick Davey,Nathan Kazakevich,Nathan Kazakevich,6-8,6,8,0,1,Completed,true,false,false
+AP019062,17 Nov 18,6,Monash University,Lauriston,No. 2,Anthony Ticonovic,Luke Smith,Anthony Ticonovic,8-3,8,3,1,0,Completed,true,false,false
+AP019062,17 Nov 18,6,Monash University,Lauriston,No. 3,Harry Myrans,William Swedosh,Harry Myrans,8-4,8,4,1,0,Completed,true,false,false
+AP019062,17 Nov 18,6,Monash University,Lauriston,No. 4,Patrick Vo,Matthew Marguglio,Matthew Marguglio,3-8,3,8,0,1,Completed,true,false,false
+AP019063,17 Nov 18,6,Langwarrin,Yamala,No. 1,Adrian Moore,Shion Northey,Adrian Moore,8-1,8,1,1,0,Completed,true,false,false
+AP019063,17 Nov 18,6,Langwarrin,Yamala,No. 2,Haris Siakallis,Jasper Chapman,Haris Siakallis,8-3,8,3,1,0,Completed,true,false,false
+AP019063,17 Nov 18,6,Langwarrin,Yamala,No. 3,Matthew Belsten,Harvey Hodgson,Matthew Belsten,8-6,8,6,1,0,Completed,true,false,false
+AP019063,17 Nov 18,6,Langwarrin,Yamala,No. 4,Tyson Caithness,Lewis Dunne,Tyson Caithness,8-2,8,2,1,0,Completed,true,false,false
+AP019064,17 Nov 18,6,St Pats Mentone,GPHC,No. 1,Cameron De Silva,Carlo Domingo,Cameron De Silva,8-5,8,5,1,0,Completed,true,false,false
+AP019064,17 Nov 18,6,St Pats Mentone,GPHC,No. 2,Sam Clayton,Talal Elhaloui,Sam Clayton,8-6,8,6,1,0,Completed,true,false,false
+AP019064,17 Nov 18,6,St Pats Mentone,GPHC,No. 3,Mike De Silva,Tim O'Loughlin,Tim O'Loughlin,7-8,7,8,0,1,Completed,true,false,false
+AP019064,17 Nov 18,6,St Pats Mentone,GPHC,No. 4,Adam Dudley,Kim Tram,Adam Dudley,8-4,8,4,1,0,Completed,true,false,false
+AP019071,24 Nov 18,7,Lauriston,Ormond CR,No. 1,Nathan Kazakevich,Andrew Martin,Nathan Kazakevich,8-4,8,4,1,0,Completed,true,false,false
+AP019071,24 Nov 18,7,Lauriston,Ormond CR,No. 2,Luke Smith,Loic Grzembielewski,Loic Grzembielewski,2-8,2,8,0,1,Completed,true,false,true
+AP019071,24 Nov 18,7,Lauriston,Ormond CR,No. 3,Greg Gabai,Steve Bendel,Steve Bendel,4-8,4,8,0,1,Completed,true,false,false
+AP019071,24 Nov 18,7,Lauriston,Ormond CR,No. 4,William Swedosh,Anthony Murray,Anthony Murray,2-8,2,8,0,1,Completed,true,false,false
+AP019072,24 Nov 18,7,Maccabi,Monash University,No. 1,Leor Bar,Anthony Ticonovic,Anthony Ticonovic,7-8,7,8,0,1,Completed,true,false,false
+AP019072,24 Nov 18,7,Maccabi,Monash University,No. 2,Jordan Jaffe,Jamal Elshaitch,Jordan Jaffe,8-1,8,1,1,0,Completed,true,false,false
+AP019072,24 Nov 18,7,Maccabi,Monash University,No. 3,Marty Schwarz,Sean Kozer,Marty Schwarz,8-1,8,1,1,0,Completed,true,false,false
+AP019072,24 Nov 18,7,Maccabi,Monash University,No. 4,Errol Dorfan,Patrick Vo,Errol Dorfan,8-0,8,0,1,0,Completed,true,false,false
+AP019073,24 Nov 18,7,GPHC,Yamala,No. 1,Jet Wigley,Jasper Chapman,Jet Wigley,8-3,8,3,1,0,Completed,true,false,false
+AP019073,24 Nov 18,7,GPHC,Yamala,No. 2,Carlo Domingo,Harvey Hodgson,Carlo Domingo,8-5,8,5,1,0,Completed,true,false,false
+AP019073,24 Nov 18,7,GPHC,Yamala,No. 3,Matthew Poole,Murray Hodgson,Matthew Poole,8-7,8,7,1,0,Completed,true,false,false
+AP019073,24 Nov 18,7,GPHC,Yamala,No. 4,Quok Ho,Boyd Chapman,Quok Ho,8-7,8,7,1,0,Completed,true,false,false
+AP019081,01 Dec 18,8,St Pats Mentone,Lauriston,No. 1,Cameron De Silva,Nathan Kazakevich,Cameron De Silva,8-4,8,4,1,0,Completed,true,false,false
+AP019081,01 Dec 18,8,St Pats Mentone,Lauriston,No. 2,David Lawry,Luke Smith,David Lawry,8-3,8,3,1,0,Completed,true,false,false
+AP019081,01 Dec 18,8,St Pats Mentone,Lauriston,No. 3,Nick Hall,Greg Gabai,Greg Gabai,4-8,4,8,0,1,Completed,true,false,false
+AP019081,01 Dec 18,8,St Pats Mentone,Lauriston,No. 4,Mike De Silva,Matthew Marguglio,Mike De Silva,8-5,8,5,1,0,Completed,true,false,false
+AP019082,01 Dec 18,8,Yamala,Maccabi,No. 1,Jasper Chapman,Leor Bar,Jasper Chapman,8-7,8,7,1,0,Completed,true,false,false
+AP019082,01 Dec 18,8,Yamala,Maccabi,No. 2,Harvey Hodgson,Jordan Jaffe,Jordan Jaffe,5-8,5,8,0,1,Completed,true,false,false
+AP019082,01 Dec 18,8,Yamala,Maccabi,No. 3,Lewis Dunne,Marty Schwarz,Marty Schwarz,4-8,4,8,0,1,Completed,true,false,false
+AP019082,01 Dec 18,8,Yamala,Maccabi,No. 4,Boyd Chapman,Alan Liebowitz,Alan Liebowitz,4-8,4,8,0,1,Completed,true,false,false
+AP019083,01 Dec 18,8,Langwarrin,Ormond CR,No. 1,Haris Siakallis,Andrew Martin,Haris Siakallis,8-5,8,5,1,0,Completed,true,false,false
+AP019083,01 Dec 18,8,Langwarrin,Ormond CR,No. 2,Steve Robertson,Loic Grzembielewski,Loic Grzembielewski,2-8,2,8,0,1,Completed,true,false,false
+AP019083,01 Dec 18,8,Langwarrin,Ormond CR,No. 3,Michael Robertson,Steve Bendel,Michael Robertson,8-7,8,7,1,0,Completed,true,false,false
+AP019083,01 Dec 18,8,Langwarrin,Ormond CR,No. 4,Ben Kowald,Brown Chen,Ben Kowald,8-4,8,4,1,0,Completed,true,false,false
+AP019084,01 Dec 18,8,GPHC,Monash University,No. 1,Jet Wigley,Shaun Yeoh,Jet Wigley,8-5,8,5,1,0,Completed,true,false,false
+AP019084,01 Dec 18,8,GPHC,Monash University,No. 2,Carlo Domingo,Anthony Ticonovic,Carlo Domingo,8-6,8,6,1,0,Completed,true,false,false
+AP019084,01 Dec 18,8,GPHC,Monash University,No. 3,Talal Elhaloui,Jamal Elshaitch,Talal Elhaloui,8-2,8,2,1,0,Completed,true,false,false
+AP019084,01 Dec 18,8,GPHC,Monash University,No. 4,Matthew Poole,Sean Kozer,Matthew Poole,8-0,8,0,1,0,Completed,true,false,false
+AP019091,08 Dec 18,9,Lauriston,GPHC,No. 1,Luke Smith,Carlo Domingo,Carlo Domingo,4-8,4,8,0,1,Completed,true,false,false
+AP019091,08 Dec 18,9,Lauriston,GPHC,No. 2,Greg Gabai,Talal Elhaloui,Greg Gabai,8-2,8,2,1,0,Completed,true,false,false
+AP019091,08 Dec 18,9,Lauriston,GPHC,No. 3,William Swedosh,Tim O'Loughlin,Tim O'Loughlin,6-8,6,8,0,1,Completed,true,false,false
+AP019091,08 Dec 18,9,Lauriston,GPHC,No. 4,Matthew Marguglio,Graham Ostberg,Matthew Marguglio,8-0,8,0,1,0,Completed,true,false,false
+AP019092,08 Dec 18,9,Maccabi,St Pats Mentone,No. 1,Alan Liebowitz,Cameron De Silva,Cameron De Silva,3-8,3,8,0,1,Completed,true,false,false
+AP019092,08 Dec 18,9,Maccabi,St Pats Mentone,No. 2,Ben Pollack,David Lawry,Ben Pollack,8-6,8,6,1,0,Completed,true,false,false
+AP019092,08 Dec 18,9,Maccabi,St Pats Mentone,No. 3,Paul Newfield,Sam Clayton,Paul Newfield,8-5,8,5,1,0,Completed,true,false,false
+AP019092,08 Dec 18,9,Maccabi,St Pats Mentone,No. 4,Lachie Zuker,Mike De Silva,Mike De Silva,3-8,3,8,0,1,Completed,true,false,false
+AP019093,08 Dec 18,9,Ormond CR,Yamala,No. 1,Steve Bendel,Shion Northey,Steve Bendel,8-3,8,3,1,0,Completed,true,false,false
+AP019093,08 Dec 18,9,Ormond CR,Yamala,No. 2,Anthony Murray,Jasper Chapman,Anthony Murray,8-2,8,2,1,0,Completed,true,false,false
+AP019093,08 Dec 18,9,Ormond CR,Yamala,No. 3,Glenn Felsenthal,Harvey Hodgson,Glenn Felsenthal,8-3,8,3,1,0,Completed,true,false,false
+AP019093,08 Dec 18,9,Ormond CR,Yamala,No. 4,Brenton Stokie,Murray Hodgson,Murray Hodgson,2-8,2,8,0,1,Completed,true,false,false
+AP019094,08 Dec 18,9,Monash University,Langwarrin,No. 1,Harry Myrans,Adrian Moore,Adrian Moore,2-8,2,8,0,1,Completed,true,false,false
+AP019094,08 Dec 18,9,Monash University,Langwarrin,No. 2,Lionel Yun,Haris Siakallis,Haris Siakallis,2-8,2,8,0,1,Completed,true,false,false
+AP019094,08 Dec 18,9,Monash University,Langwarrin,No. 3,Sean Kozer,Ben Kowald,Ben Kowald,6-8,6,8,0,1,Completed,true,false,false
+AP019094,08 Dec 18,9,Monash University,Langwarrin,No. 4,Patrick Vo,Tyson Caithness,Tyson Caithness,2-8,2,8,0,1,Completed,true,false,false
+AP019101,15 Dec 18,10,Langwarrin,Lauriston,No. 1,Todd Scoullar,Luke Smith,Todd Scoullar,8-0,8,0,1,0,Completed,true,false,false
+AP019101,15 Dec 18,10,Langwarrin,Lauriston,No. 2,Haris Siakallis,Greg Gabai,Haris Siakallis,8-2,8,2,1,0,Completed,true,false,false
+AP019101,15 Dec 18,10,Langwarrin,Lauriston,No. 3,Michael Robertson,William Swedosh,Michael Robertson,8-0,8,0,1,0,Completed,true,false,false
+AP019101,15 Dec 18,10,Langwarrin,Lauriston,No. 4,Ben Kowald,Matthew Marguglio,Ben Kowald,5-1,5,1,1,0,Completed,true,false,false
+AP019102,15 Dec 18,10,GPHC,Maccabi,No. 1,Carlo Domingo,Alan Liebowitz,Alan Liebowitz,4-8,4,8,0,1,Completed,true,false,false
+AP019102,15 Dec 18,10,GPHC,Maccabi,No. 2,Athan Louizs,Leor Bar,Athan Louizs,8-0,8,0,1,0,Completed,true,false,false
+AP019102,15 Dec 18,10,GPHC,Maccabi,No. 3,Tim O'Loughlin,Charlie Landau,Tim O'Loughlin,8-3,8,3,1,0,Completed,true,false,false
+AP019102,15 Dec 18,10,GPHC,Maccabi,No. 4,Graham Ostberg,Jay Landau,Jay Landau,3-8,3,8,0,1,Completed,true,false,false
+AP019103,15 Dec 18,10,St Pats Mentone,Ormond CR,No. 1,Cameron De Silva,Andrew Martin,Cameron De Silva,8-2,8,2,1,0,Completed,true,false,false
+AP019103,15 Dec 18,10,St Pats Mentone,Ormond CR,No. 2,Sam Clayton,Steve Bendel,Steve Bendel,5-8,5,8,0,1,Completed,true,false,false
+AP019103,15 Dec 18,10,St Pats Mentone,Ormond CR,No. 3,Nick Hall,Steve Gelagin,Steve Gelagin,2-8,2,8,0,1,Completed,true,false,false
+AP019103,15 Dec 18,10,St Pats Mentone,Ormond CR,No. 4,Mike De Silva,Brenton Stokie,Mike De Silva,8-4,8,4,1,0,Completed,true,false,false
+AP019104,15 Dec 18,10,Yamala,Monash University,No. 1,Jasper Chapman,Philip Phung,,1-2,1,2,0,1,Unfinished,false,false,false
+AP019104,15 Dec 18,10,Yamala,Monash University,No. 2,Harvey Hodgson,Harry Myrans,Harry Myrans,6-8,6,8,0,1,Completed,true,false,false
+AP019104,15 Dec 18,10,Yamala,Monash University,No. 3,Lewis Dunne,Jackson Keo,Jackson Keo,3-8,3,8,0,1,Completed,true,false,false
+AP019104,15 Dec 18,10,Yamala,Monash University,No. 4,Boyd Chapman,Dishit Devasia,Boyd Chapman,5-1,5,1,1,0,Completed,true,false,false
+AP019111,02 Feb 19,11,Lauriston,Yamala,No. 1,Scott Newton,Shion Northey,Shion Northey,7-8,7,8,0,1,Completed,true,false,false
+AP019111,02 Feb 19,11,Lauriston,Yamala,No. 2,Nathan Kazakevich,Jasper Chapman,Nathan Kazakevich,8-1,8,1,1,0,Completed,true,false,false
+AP019111,02 Feb 19,11,Lauriston,Yamala,No. 3,Luke Smith,Harvey Hodgson,Harvey Hodgson,1-8,1,8,0,1,Completed,true,false,false
+AP019111,02 Feb 19,11,Lauriston,Yamala,No. 4,Matthew Marguglio,Murray Hodgson,Murray Hodgson,1-8,1,8,0,1,Completed,true,false,false
+AP019112,02 Feb 19,11,Maccabi,Langwarrin,No. 1,David Zulman,Adrian Moore,Adrian Moore,6-8,6,8,0,1,Completed,true,false,false
+AP019112,02 Feb 19,11,Maccabi,Langwarrin,No. 2,Jordan Jaffe,Matthew Belsten,Jordan Jaffe,8-6,8,6,1,0,Completed,true,false,false
+AP019112,02 Feb 19,11,Maccabi,Langwarrin,No. 3,Marty Schwarz,Michael Robertson,Marty Schwarz,8-2,8,2,1,0,Completed,true,false,false
+AP019112,02 Feb 19,11,Maccabi,Langwarrin,No. 4,Errol Dorfan,Ben Kowald,Ben Kowald,7-8,7,8,0,1,Completed,true,false,false
+AP019113,02 Feb 19,11,Ormond CR,GPHC,No. 1,Andrew Martin,Jet Wigley,Andrew Martin,8-5,8,5,1,0,Completed,true,false,false
+AP019113,02 Feb 19,11,Ormond CR,GPHC,No. 2,Loic Grzembielewski,Carlo Domingo,Loic Grzembielewski,8-1,8,1,1,0,Completed,true,false,false
+AP019113,02 Feb 19,11,Ormond CR,GPHC,No. 3,Anthony Murray,Matthew Poole,Matthew Poole,1-8,1,8,0,1,Completed,true,false,false
+AP019113,02 Feb 19,11,Ormond CR,GPHC,No. 4,Glenn Felsenthal,Talal Elhaloui,Glenn Felsenthal,8-0,8,0,1,0,Completed,true,false,false
+AP019114,02 Feb 19,11,Monash University,St Pats Mentone,No. 1,Philip Phung,Cameron De Silva,Cameron De Silva,2-8,2,8,0,1,Completed,true,false,false
+AP019114,02 Feb 19,11,Monash University,St Pats Mentone,No. 2,Ahmed Jamel,David Lawry,Ahmed Jamel,8-5,8,5,1,0,Completed,true,false,false
+AP019114,02 Feb 19,11,Monash University,St Pats Mentone,No. 3,Harry Myrans,Nick Hall,Harry Myrans,8-3,8,3,1,0,Completed,true,false,false
+AP019114,02 Feb 19,11,Monash University,St Pats Mentone,No. 4,Kien Nguyen,Mike De Silva,Mike De Silva,1-8,1,8,0,1,Completed,true,false,false
+AP019121,09 Feb 19,12,Monash University,Ormond CR,No. 1,Ahmed Jamel,Loic Grzembielewski,Loic Grzembielewski,3-8,3,8,0,1,Completed,true,false,false
+AP019121,09 Feb 19,12,Monash University,Ormond CR,No. 2,Anthony Ticonovic,Steve Bendel,Steve Bendel,1-8,1,8,0,1,Completed,true,false,false
+AP019121,09 Feb 19,12,Monash University,Ormond CR,No. 3,Harry Myrans,Anthony Murray,Anthony Murray,4-8,4,8,0,1,Completed,true,false,false
+AP019121,09 Feb 19,12,Monash University,Ormond CR,No. 4,Patrick Vo,Glenn Felsenthal,Glenn Felsenthal,3-8,3,8,0,1,Completed,true,false,false
+AP019122,09 Feb 19,12,Langwarrin,GPHC,No. 1,Adrian Moore,Carlo Domingo,Adrian Moore,8-3,8,3,1,0,Completed,true,false,false
+AP019122,09 Feb 19,12,Langwarrin,GPHC,No. 2,Matthew Belsten,Talal Elhaloui,Matthew Belsten,8-6,8,6,1,0,Completed,true,false,false
+AP019122,09 Feb 19,12,Langwarrin,GPHC,No. 3,Michael Robertson,Paul Deleso,Michael Robertson,8-2,8,2,1,0,Completed,true,false,false
+AP019122,09 Feb 19,12,Langwarrin,GPHC,No. 4,Ben Kowald,Tim O'Loughlin,Tim O'Loughlin,7-8,7,8,0,1,Completed,true,false,false
+AP019123,09 Feb 19,12,St Pats Mentone,Yamala,No. 1,Cameron De Silva,Shion Northey,Cameron De Silva,8-3,8,3,1,0,Completed,true,false,false
+AP019123,09 Feb 19,12,St Pats Mentone,Yamala,No. 2,David Lawry,Jasper Chapman,David Lawry,8-5,8,5,1,0,Completed,true,false,false
+AP019123,09 Feb 19,12,St Pats Mentone,Yamala,No. 3,Sam Clayton,Harvey Hodgson,Sam Clayton,8-4,8,4,1,0,Completed,true,false,false
+AP019123,09 Feb 19,12,St Pats Mentone,Yamala,No. 4,Nick Hall,Lewis Dunne,Nick Hall,8-6,8,6,1,0,Completed,true,false,false
+AP019124,09 Feb 19,12,Maccabi,Lauriston,No. 1,David Zulman,Scott Newton,David Zulman,8-7,8,7,1,0,Completed,true,false,false
+AP019124,09 Feb 19,12,Maccabi,Lauriston,No. 2,Jordan Jaffe,Nathan Kazakevich,Jordan Jaffe,8-3,8,3,1,0,Completed,true,false,false
+AP019124,09 Feb 19,12,Maccabi,Lauriston,No. 3,Errol Dorfan,Greg Gabai,Greg Gabai,7-8,7,8,0,1,Completed,true,false,false
+AP019124,09 Feb 19,12,Maccabi,Lauriston,No. 4,Alan Liebowitz,Matthew Marguglio,Alan Liebowitz,8-1,8,1,1,0,Completed,true,false,false
+AP019131,16 Feb 19,13,Ormond CR,Maccabi,No. 1,Andrew Martin,David Zulman,Andrew Martin,8-6,8,6,1,0,Completed,true,false,false
+AP019131,16 Feb 19,13,Ormond CR,Maccabi,No. 2,Loic Grzembielewski,Jordan Jaffe,Loic Grzembielewski,8-2,8,2,1,0,Completed,true,false,false
+AP019131,16 Feb 19,13,Ormond CR,Maccabi,No. 3,Steve Bendel,Marty Schwarz,Steve Bendel,8-2,8,2,1,0,Completed,true,false,false
+AP019131,16 Feb 19,13,Ormond CR,Maccabi,No. 4,Brenton Stokie,Errol Dorfan,Errol Dorfan,4-8,4,8,0,1,Completed,true,false,false
+AP019132,16 Feb 19,13,Lauriston,Monash University,No. 1,Nathan Kazakevich,David Kuang,Nathan Kazakevich,8-4,8,4,1,0,Completed,true,false,false
+AP019132,16 Feb 19,13,Lauriston,Monash University,No. 2,Luke Smith,Anthony Ticonovic,Anthony Ticonovic,3-8,3,8,0,1,Completed,true,false,false
+AP019132,16 Feb 19,13,Lauriston,Monash University,No. 3,Greg Gabai,Willis Perera,Greg Gabai,8-0,8,0,1,0,Completed,true,false,false
+AP019132,16 Feb 19,13,Lauriston,Monash University,No. 4,William Swedosh,Patrick Vo,William Swedosh,8-2,8,2,1,0,Completed,true,false,false
+AP019133,16 Feb 19,13,Yamala,Langwarrin,No. 1,Shion Northey,Haris Siakallis,Haris Siakallis,4-8,4,8,0,1,Completed,true,false,false
+AP019133,16 Feb 19,13,Yamala,Langwarrin,No. 2,Jasper Chapman,Steve Robertson,Jasper Chapman,8-3,8,3,1,0,Completed,true,false,false
+AP019133,16 Feb 19,13,Yamala,Langwarrin,No. 3,Harvey Hodgson,Michael Robertson,Michael Robertson,3-8,3,8,0,1,Completed,true,false,false
+AP019133,16 Feb 19,13,Yamala,Langwarrin,No. 4,Murray Hodgson,Ben Kowald,Murray Hodgson,8-3,8,3,1,0,Completed,true,false,false
+AP019134,16 Feb 19,13,GPHC,St Pats Mentone,No. 1,Jet Wigley,Cameron De Silva,Cameron De Silva,4-8,4,8,0,1,Completed,true,false,false
+AP019134,16 Feb 19,13,GPHC,St Pats Mentone,No. 2,Charlie Debrotiwir,Sam Clayton,Charlie Debrotiwir,8-7,8,7,1,0,Completed,true,false,false
+AP019134,16 Feb 19,13,GPHC,St Pats Mentone,No. 3,Carlo Domingo,Nick Hall,Carlo Domingo,8-7,8,7,1,0,Completed,true,false,false
+AP019134,16 Feb 19,13,GPHC,St Pats Mentone,No. 4,Kim Tram,Mike De Silva,Mike De Silva,4-8,4,8,0,1,Completed,true,false,false
+AP019141,23 Feb 19,14,Ormond CR,Lauriston,No. 1,Loic Grzembielewski,Scott Newton,Loic Grzembielewski,8-0,8,0,1,0,Completed,true,false,false
+AP019141,23 Feb 19,14,Ormond CR,Lauriston,No. 2,Steve Bendel,Nathan Kazakevich,Nathan Kazakevich,6-8,6,8,0,1,Completed,true,false,false
+AP019141,23 Feb 19,14,Ormond CR,Lauriston,No. 3,Anthony Murray,Greg Gabai,Anthony Murray,8-0,8,0,1,0,Completed,true,false,false
+AP019141,23 Feb 19,14,Ormond CR,Lauriston,No. 4,Glenn Felsenthal,Matthew Marguglio,Matthew Marguglio,6-8,6,8,0,1,Completed,true,false,false
+AP019142,23 Feb 19,14,Monash University,Maccabi,No. 1,Ahmed Jamel,Leor Bar,Leor Bar,3-8,3,8,0,1,Completed,true,false,false
+AP019142,23 Feb 19,14,Monash University,Maccabi,No. 2,Anthony Ticonovic,Jordan Jaffe,Jordan Jaffe,4-8,4,8,0,1,Completed,true,false,false
+AP019142,23 Feb 19,14,Monash University,Maccabi,No. 3,Harry Myrans,Marty Schwarz,Marty Schwarz,3-8,3,8,0,1,Completed,true,false,false
+AP019142,23 Feb 19,14,Monash University,Maccabi,No. 4,Patrick Vo,Errol Dorfan,Errol Dorfan,0-8,0,8,0,1,Completed,true,false,false
+AP019144,23 Feb 19,14,St Pats Mentone,Langwarrin,No. 1,Cameron De Silva,Adrian Moore,Cameron De Silva,8-3,8,3,1,0,Completed,true,false,false
+AP019144,23 Feb 19,14,St Pats Mentone,Langwarrin,No. 2,David Lawry,Haris Siakallis,Haris Siakallis,1-8,1,8,0,1,Completed,true,false,false
+AP019144,23 Feb 19,14,St Pats Mentone,Langwarrin,No. 3,Sam Clayton,Michael Robertson,Michael Robertson,4-8,4,8,0,1,Completed,true,false,false
+AP019144,23 Feb 19,14,St Pats Mentone,Langwarrin,No. 4,Mike De Silva,Ben Kowald,Ben Kowald,4-8,4,8,0,1,Completed,true,false,false
+AP019301,,16,Ormond CR,St Pats Mentone,No. 1,Andrew Martin,Cameron De Silva,Cameron De Silva,1-8,1,8,0,1,Completed,true,false,false
+AP019301,,16,Ormond CR,St Pats Mentone,No. 2,Loic Grzembielewski,Sam Clayton,Loic Grzembielewski,8-1,8,1,1,0,Completed,true,false,false
+AP019301,,16,Ormond CR,St Pats Mentone,No. 3,Steve Bendel,Nick Hall,Steve Bendel,8-1,8,1,1,0,Completed,true,false,false
+AP019301,,16,Ormond CR,St Pats Mentone,No. 4,Anthony Murray,Mike De Silva,Anthony Murray,8-1,8,1,1,0,Completed,true,false,false
+AP019302,,16,Langwarrin,Maccabi,No. 1,Adrian Moore,Jordan Jaffe,Jordan Jaffe,3-8,3,8,0,1,Completed,true,false,false
+AP019302,,16,Langwarrin,Maccabi,No. 2,Matthew Belsten,Marty Schwarz,Marty Schwarz,3-8,3,8,0,1,Completed,true,false,false
+AP019302,,16,Langwarrin,Maccabi,No. 3,Michael Robertson,Errol Dorfan,Michael Robertson,8-3,8,3,1,0,Completed,true,false,false
+AP019302,,16,Langwarrin,Maccabi,No. 4,Ben Kowald,Alan Liebowitz,Ben Kowald,8-4,8,4,1,0,Completed,true,false,false
+AP019321,,17,Ormond CR,Langwarrin,No. 1,Andrew Martin,Adrian Moore,Adrian Moore,5-8,5,8,0,1,Completed,true,false,false
+AP019321,,17,Ormond CR,Langwarrin,No. 2,Loic Grzembielewski,Haris Siakallis,Loic Grzembielewski,8-6,8,6,1,0,Completed,true,false,false
+AP019321,,17,Ormond CR,Langwarrin,No. 3,Steve Bendel,Steve Robertson,Steve Bendel,8-5,8,5,1,0,Completed,true,false,false
+AP019321,,17,Ormond CR,Langwarrin,No. 4,Anthony Murray,Michael Robertson,Michael Robertson,4-8,4,8,0,1,Completed,true,false,false

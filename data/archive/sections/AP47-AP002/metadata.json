@@ -1,0 +1,108 @@
+{
+  "asset_id": "AP47-AP002",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 23/24",
+  "season_id": "AP47",
+  "season_label": "Summer 23/24",
+  "source_section_code": "AP002",
+  "section_label": "Mens S/D 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Overport Park",
+      "wins": 10,
+      "points": 106,
+      "percentage": 145.9,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Willy Central",
+      "wins": 9,
+      "points": 95,
+      "percentage": 127.95,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Carmelite Red",
+      "wins": 8,
+      "points": 91,
+      "percentage": 114.64,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Carmelite Green",
+      "wins": 7,
+      "points": 80.5,
+      "percentage": 118.16,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Highmoor Uniting",
+      "wins": 5,
+      "points": 67,
+      "percentage": 103.98,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Black Rock",
+      "wins": 4,
+      "points": 54.5,
+      "percentage": 87.67,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Mt Martha Gold",
+      "wins": 1,
+      "points": 33,
+      "percentage": 74.3,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "Coatesville",
+      "wins": 1,
+      "points": 29,
+      "percentage": 56.92,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP47-AP002",
+  "fixtures": 59,
+  "completed_fixtures": 54,
+  "draw_fixtures": 48,
+  "singles_rubbers": 202,
+  "doubles_rubbers": 100,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP002073 singles No. 2: '1-0'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP002074 doubles No. 1: '4-6 0-1'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP002141 doubles No. 2: '6-3 2-4'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP002321 doubles No. 2: '6-1 4-1'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

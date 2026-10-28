@@ -1,0 +1,107 @@
+{
+  "asset_id": "AP38-AP022",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 18/19",
+  "season_id": "AP38",
+  "season_label": "Summer 18/19",
+  "source_section_code": "AP022",
+  "section_label": "Mens S/D 9",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Ormond CR",
+      "wins": 13,
+      "points": 119,
+      "percentage": 174.76,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "MCC Glen Iris Roy",
+      "wins": 8,
+      "points": 93.5,
+      "percentage": 143.54,
+      "marker": "P"
+    },
+    {
+      "position": 3,
+      "team": "East Malvern 1",
+      "wins": 9,
+      "points": 84,
+      "percentage": 116.14,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Carmelite",
+      "wins": 6,
+      "points": 75.5,
+      "percentage": 103.23,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "East Malvern 2",
+      "wins": 6,
+      "points": 67,
+      "percentage": 91.16,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Maccabi",
+      "wins": 4,
+      "points": 53,
+      "percentage": 83.83,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Mentone",
+      "wins": 3,
+      "points": 41.5,
+      "percentage": 72.54,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "Clarinda",
+      "wins": 1,
+      "points": 26.5,
+      "percentage": 58.73,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP38-AP022",
+  "fixtures": 59,
+  "completed_fixtures": 54,
+  "draw_fixtures": 48,
+  "singles_rubbers": 216,
+  "doubles_rubbers": 108,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP022021 doubles No. 2: '6-7 7-6'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP022031 doubles No. 1: '2-0'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP022031 doubles No. 2: '1-0'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

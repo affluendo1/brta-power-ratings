@@ -1,0 +1,92 @@
+{
+  "asset_id": "AP31-AP009",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Winter 2015",
+  "season_id": "AP31",
+  "season_label": "Winter 2015",
+  "source_section_code": "AP009",
+  "section_label": "Open S/D 1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Highmoor Uniting",
+      "wins": 13,
+      "points": 129,
+      "percentage": 193.99,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Port Melbourne",
+      "wins": 7,
+      "points": 86,
+      "percentage": 122.45,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Le Page",
+      "wins": 6,
+      "points": 84,
+      "percentage": 120.63,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Kings Park",
+      "wins": 7,
+      "points": 83.5,
+      "percentage": 106.96,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Glen Huntly",
+      "wins": 2,
+      "points": 37.5,
+      "percentage": 62.72,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Lauriston",
+      "wins": 2,
+      "points": 30,
+      "percentage": 54.13,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP31-AP009",
+  "fixtures": 47,
+  "completed_fixtures": 42,
+  "draw_fixtures": 57,
+  "singles_rubbers": 164,
+  "doubles_rubbers": 81,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP009063 doubles No. 2: '6-7 4-3'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP009071 doubles No. 2: '5-7 6-3'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP009311 doubles No. 1: '6-7 6-4'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP009321 doubles No. 2: '6-7 6-4'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

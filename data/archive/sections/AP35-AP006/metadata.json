@@ -1,0 +1,90 @@
+{
+  "asset_id": "AP35-AP006",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Winter 2017",
+  "season_id": "AP35",
+  "season_label": "Winter 2017",
+  "source_section_code": "AP006",
+  "section_label": "Mixed Rubbers 4",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Middle Brighton",
+      "wins": 10,
+      "points": 84,
+      "percentage": 121.5,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "Coatesville",
+      "wins": 8,
+      "points": 74.5,
+      "percentage": 130.67,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Hurlingham Park",
+      "wins": 8,
+      "points": 71.5,
+      "percentage": 109.59,
+      "marker": "P"
+    },
+    {
+      "position": 4,
+      "team": "Glen Huntly",
+      "wins": 7,
+      "points": 63,
+      "percentage": 97.37,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "St Finbar's",
+      "wins": 4,
+      "points": 40,
+      "percentage": 82.8,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Ormond",
+      "wins": 2,
+      "points": 27,
+      "percentage": 75.5,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP35-AP006",
+  "fixtures": 47,
+  "completed_fixtures": 44,
+  "draw_fixtures": 57,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 174,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP006012 doubles No. 2: '2-4'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP006051 doubles No. 4: '6-4 4-6'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

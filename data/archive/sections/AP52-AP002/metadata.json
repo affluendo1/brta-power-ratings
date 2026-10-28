@@ -1,0 +1,90 @@
+{
+  "asset_id": "AP52-AP002",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Winter 2026",
+  "season_id": "AP52",
+  "season_label": "Winter 2026",
+  "source_section_code": "AP002",
+  "section_label": "Womens Sets 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Mentone Gold",
+      "wins": 14,
+      "points": 135,
+      "percentage": 224.75,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Overport Park",
+      "wins": 11,
+      "points": 109,
+      "percentage": 167.04,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Hawthorn",
+      "wins": 11,
+      "points": 109,
+      "percentage": 162.05,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Chadstone",
+      "wins": 5,
+      "points": 55,
+      "percentage": 90.24,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Mentone Yellow",
+      "wins": 1,
+      "points": 24,
+      "percentage": 40.47,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Ormond",
+      "wins": 1,
+      "points": 18,
+      "percentage": 39.76,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 6,
+    "doublesBestOf": 1,
+    "doublesTarget": 8,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP52-AP002",
+  "fixtures": 46,
+  "completed_fixtures": 46,
+  "draw_fixtures": 46,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 272,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP002063 doubles No. 5: '2-4'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP002063 doubles No. 6: '2-3'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

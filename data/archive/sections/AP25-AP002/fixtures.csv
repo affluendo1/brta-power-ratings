@@ -1,0 +1,61 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP002014,05 May 12,1,regular,Round 1,St Pats Mentone 1,St Pats Mentone 2,8,0,4,0,,,40,9,Completed,
+pending-ap002-r1-kings-park-ormond,05 May 12,1,regular,Round 1,Kings Park,Ormond,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap002-r1-parkdale-bye,05 May 12,1,regular,Round 1,Parkdale,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap002-r1-port-melbourne-highmoor-uniting,05 May 12,1,regular,Round 1,Port Melbourne,Highmoor Uniting,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP002021,12 May 12,2,regular,Round 2,St Pats Mentone 2,Port Melbourne,1,7,1,3,,,18,39,Completed,
+AP002022,12 May 12,2,regular,Round 2,Highmoor Uniting,Kings Park,8,0,4,0,,,40,19,Completed,
+AP002023,12 May 12,2,regular,Round 2,Ormond,Parkdale,0,8,0,4,,,14,40,Completed,
+pending-ap002-r2-bye-st-pats-mentone-1,12 May 12,2,regular,Round 2,Bye,St Pats Mentone 1,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP002032,19 May 12,3,regular,Round 3,Kings Park,St Pats Mentone 2,8,0,4,0,,,40,6,Completed,
+AP002033,19 May 12,3,regular,Round 3,Parkdale,Highmoor Uniting,0,8,0,4,,,25,40,Completed,
+AP002034,19 May 12,3,regular,Round 3,St Pats Mentone 1,Ormond,8,0,4,0,,,40,18,Completed,
+pending-ap002-r3-port-melbourne-bye,19 May 12,3,regular,Round 3,Port Melbourne,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP002041,26 May 12,4,regular,Round 4,Ormond,Port Melbourne,2,6,2,2,,,25,29,Completed,
+AP002043,26 May 12,4,regular,Round 4,St Pats Mentone 2,Parkdale,6,2,2,2,,,35,34,Completed,
+AP002044,26 May 12,4,regular,Round 4,Highmoor Uniting,St Pats Mentone 1,7,1,3,1,,,38,22,Completed,
+pending-ap002-r4-bye-kings-park,26 May 12,4,regular,Round 4,Bye,Kings Park,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP002051,02 Jun 12,5,regular,Round 5,Parkdale,St Pats Mentone 1,0,8,0,4,,,8,40,Completed,
+AP002053,02 Jun 12,5,regular,Round 5,Ormond,Highmoor Uniting,0,8,0,4,,,6,40,Completed,
+AP002054,02 Jun 12,5,regular,Round 5,Port Melbourne,Kings Park,0,8,0,4,,,17,40,Completed,
+pending-ap002-r5-st-pats-mentone-2-bye,02 Jun 12,5,regular,Round 5,St Pats Mentone 2,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP002061,16 Jun 12,6,regular,Round 6,Kings Park,Parkdale,8,0,4,0,,,40,9,Completed,
+AP002062,16 Jun 12,6,regular,Round 6,St Pats Mentone 1,Port Melbourne,6,2,2,2,,,35,33,Completed,
+AP002064,16 Jun 12,6,regular,Round 6,Highmoor Uniting,St Pats Mentone 2,8,0,4,0,,,40,9,Completed,
+pending-ap002-r6-bye-ormond,16 Jun 12,6,regular,Round 6,Bye,Ormond,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP002071,23 Jun 12,7,regular,Round 7,Port Melbourne,Parkdale,8,0,4,0,,,40,15,Completed,
+AP002072,23 Jun 12,7,regular,Round 7,Kings Park,St Pats Mentone 1,6,2,2,2,,,32,30,Completed,
+AP002073,23 Jun 12,7,regular,Round 7,St Pats Mentone 2,Ormond,7,1,3,1,,,35,30,Completed,
+pending-ap002-r7-bye-highmoor-uniting,23 Jun 12,7,regular,Round 7,Bye,Highmoor Uniting,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP002081,30 Jun 12,8,regular,Round 8,Highmoor Uniting,Port Melbourne,8,0,4,0,,,40,16,Completed,
+AP002082,30 Jun 12,8,regular,Round 8,Ormond,Kings Park,0,8,0,4,,,11,40,Completed,
+AP002084,30 Jun 12,8,regular,Round 8,St Pats Mentone 2,St Pats Mentone 1,0,8,0,4,,,14,40,Completed,
+pending-ap002-r8-bye-parkdale,30 Jun 12,8,regular,Round 8,Bye,Parkdale,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP002091,07 Jul 12,9,regular,Round 9,Port Melbourne,St Pats Mentone 2,8,0,4,0,,,40,21,Completed,
+AP002092,07 Jul 12,9,regular,Round 9,Kings Park,Highmoor Uniting,1,7,1,3,,,20,36,Completed,
+AP002093,07 Jul 12,9,regular,Round 9,Parkdale,Ormond,7,1,3,1,,,39,22,Completed,
+pending-ap002-r9-st-pats-mentone-1-bye,07 Jul 12,9,regular,Round 9,St Pats Mentone 1,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP002102,14 Jul 12,10,regular,Round 10,St Pats Mentone 2,Kings Park,4,4,0,0,,,2,10,Completed,
+AP002104,14 Jul 12,10,regular,Round 10,Ormond,St Pats Mentone 1,4,4,0,0,,,4,13,Completed,
+pending-ap002-r10-bye-port-melbourne,14 Jul 12,10,regular,Round 10,Bye,Port Melbourne,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap002-r10-highmoor-uniting-parkdale,14 Jul 12,10,regular,Round 10,Highmoor Uniting,Parkdale,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP002111,21 Jul 12,11,regular,Round 11,Port Melbourne,Ormond,7,1,3,1,,,38,25,Completed,
+AP002113,21 Jul 12,11,regular,Round 11,Parkdale,St Pats Mentone 2,8,0,4,0,,,40,19,Completed,
+AP002114,21 Jul 12,11,regular,Round 11,St Pats Mentone 1,Highmoor Uniting,2,6,2,2,,,32,33,Completed,
+pending-ap002-r11-kings-park-bye,21 Jul 12,11,regular,Round 11,Kings Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP002121,28 Jul 12,12,regular,Round 12,St Pats Mentone 1,Parkdale,8,0,4,0,,,40,6,Completed,
+AP002123,28 Jul 12,12,regular,Round 12,Highmoor Uniting,Ormond,7,1,3,1,,,31,18,Completed,
+AP002124,28 Jul 12,12,regular,Round 12,Kings Park,Port Melbourne,7.5,0.5,3,0,,,36,23,Completed,
+pending-ap002-r12-bye-st-pats-mentone-2,28 Jul 12,12,regular,Round 12,Bye,St Pats Mentone 2,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP002131,04 Aug 12,13,regular,Round 13,Parkdale,Kings Park,0,8,0,4,,,15,40,Completed,
+AP002132,04 Aug 12,13,regular,Round 13,Port Melbourne,St Pats Mentone 1,1,7,1,3,,,23,32,Completed,
+AP002134,04 Aug 12,13,regular,Round 13,St Pats Mentone 2,Highmoor Uniting,0,8,0,4,,,15,40,Completed,
+pending-ap002-r13-ormond-bye,04 Aug 12,13,regular,Round 13,Ormond,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP002141,11 Aug 12,14,regular,Round 14,Parkdale,Port Melbourne,1,7,1,3,,,27,36,Completed,
+AP002142,11 Aug 12,14,regular,Round 14,St Pats Mentone 1,Kings Park,1,7,1,3,,,24,36,Completed,
+AP002143,11 Aug 12,14,regular,Round 14,Ormond,St Pats Mentone 2,1,7,1,3,,,22,38,Completed,
+pending-ap002-r14-highmoor-uniting-bye,11 Aug 12,14,regular,Round 14,Highmoor Uniting,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP002301,,16,semi_final,Semi-final,Highmoor Uniting,Kings Park,8,0,4,0,,,40,19,Completed,
+AP002302,,16,semi_final,Semi-final,St Pats Mentone 1,Port Melbourne,7,1,3,1,,,39,22,Completed,
+AP002311,,16,semi_final,Semi-final,Kings Park,St Pats Mentone 1,7,1,3,1,,,37,28,Completed,
+AP002321,,17,grand_final,Grand final · TROLS entry 2,Highmoor Uniting,Kings Park,2,6,2,2,,,25,34,Completed,

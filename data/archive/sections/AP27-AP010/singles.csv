@@ -1,0 +1,97 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP010021,11 May 13,2,East Malvern,Le Page 1,No. 1,Paul Tamburro,Josh Groves,Josh Groves,3-6 4-6,7,12,0,2,Completed,true,false,false
+AP010021,11 May 13,2,East Malvern,Le Page 1,No. 2,Ken Ho-Le,Alex Alvarenga,Ken Ho-Le,6-3 6-1,12,4,2,0,Completed,true,false,false
+AP010021,11 May 13,2,East Malvern,Le Page 1,No. 3,Emma Newnham,Boris Alvarenga,Boris Alvarenga,0-6 1-6,1,12,0,2,Completed,true,false,false
+AP010022,11 May 13,2,Le Page 2,MCC,No. 1,Jayk Gunton,Auke de Vries,Auke de Vries,4-6 6-7,10,13,0,2,Completed,true,false,false
+AP010022,11 May 13,2,Le Page 2,MCC,No. 2,Julie Kheng,John Gregory,John Gregory,2-6 2-6,4,12,0,2,Completed,true,false,false
+AP010022,11 May 13,2,Le Page 2,MCC,No. 3,Merinda Kent,Iain Stewart,Iain Stewart,0-6 0-6,0,12,0,2,Completed,true,false,false
+AP010023,11 May 13,2,Lauriston,Kings Park 1,No. 1,Matthew Marguglio,Thomas Diggerson,Matthew Marguglio,6-0 6-2,12,2,2,0,Completed,true,false,false
+AP010023,11 May 13,2,Lauriston,Kings Park 1,No. 2,Louis Cheung,Adrian Hodgson,Louis Cheung,6-2 6-0,12,2,2,0,Completed,true,false,false
+AP010023,11 May 13,2,Lauriston,Kings Park 1,No. 3,Glenn Lehmann-Pozo,Montana Muir,Glenn Lehmann-Pozo,6-2 4-6 6-2,16,10,2,1,Completed,true,false,false
+AP010024,11 May 13,2,Kings Park 2,Glen Huntly,No. 1,Lan Ho,Danny Lau,Danny Lau,0-6 3-6,3,12,0,2,Completed,true,false,false
+AP010024,11 May 13,2,Kings Park 2,Glen Huntly,No. 2,Carolyn Bell-Harper,Troy Nguyen,Troy Nguyen,2-6 3-6,5,12,0,2,Completed,true,false,false
+AP010024,11 May 13,2,Kings Park 2,Glen Huntly,No. 3,Brydie Steinfort,Satya Thadiparti,Satya Thadiparti,2-6 3-6,5,12,0,2,Completed,true,false,false
+AP010041,25 May 13,4,Lauriston,Le Page 1,No. 1,Matthew Marguglio,Josh Groves,Matthew Marguglio,7-5 6-0,13,5,2,0,Completed,true,false,false
+AP010041,25 May 13,4,Lauriston,Le Page 1,No. 2,Glenn Lehmann-Pozo,Adrian Zalega,Adrian Zalega,2-6 3-6,5,12,0,2,Completed,true,false,false
+AP010041,25 May 13,4,Lauriston,Le Page 1,No. 3,Morris Trabsky,Alex Alvarenga,Morris Trabsky,6-3 6-1,12,4,2,0,Completed,true,false,false
+AP010042,25 May 13,4,Kings Park 2,MCC,No. 1,Genevieve Gardner,Auke de Vries,Auke de Vries,2-6 4-6,6,12,0,2,Completed,true,false,false
+AP010042,25 May 13,4,Kings Park 2,MCC,No. 2,Jo Valencic,John Gregory,Jo Valencic,2-6 6-3 7-5,15,14,2,1,Completed,true,false,false
+AP010042,25 May 13,4,Kings Park 2,MCC,No. 3,Joanne Bell-Harper,Iain Stewart,Iain Stewart,4-6 2-6,6,12,0,2,Completed,true,false,false
+AP010043,25 May 13,4,East Malvern,Kings Park 1,No. 1,Harry Lister,Nathan Blamires,Harry Lister,6-0 6-1,12,1,2,0,Completed,true,false,false
+AP010043,25 May 13,4,East Malvern,Kings Park 1,No. 2,Ken Ho-Le,Dylan Smith,Ken Ho-Le,6-1 6-3,12,4,2,0,Completed,true,false,false
+AP010043,25 May 13,4,East Malvern,Kings Park 1,No. 3,Emma Newnham,Thomas Diggerson,Emma Newnham,6-0 6-0,12,0,2,0,Completed,true,false,false
+AP010044,25 May 13,4,Le Page 2,Glen Huntly,No. 1,Julie Kheng,Tushar Sharma,Julie Kheng,6-0 6-0,12,0,2,0,Completed,true,false,false
+AP010044,25 May 13,4,Le Page 2,Glen Huntly,No. 2,Angie Tanner,Danny Lau,Danny Lau,0-6 1-6,1,12,0,2,Completed,true,false,false
+AP010044,25 May 13,4,Le Page 2,Glen Huntly,No. 3,Merinda Kent,Satya Thadiparti,Satya Thadiparti,0-6 0-6,0,12,0,2,Completed,true,false,false
+AP010061,15 Jun 13,6,MCC,Kings Park 1,No. 1,Auke de Vries,Nathan Blamires,Auke de Vries,6-4 0-6 6-1,12,11,2,1,Completed,true,false,false
+AP010061,15 Jun 13,6,MCC,Kings Park 1,No. 2,John Gregory,Dylan Smith,Dylan Smith,4-6 3-6,7,12,0,2,Completed,true,false,false
+AP010061,15 Jun 13,6,MCC,Kings Park 1,No. 3,Philip Meyer,Tim Van Der Veur,Philip Meyer,6-3 6-3,12,6,2,0,Completed,true,false,false
+AP010062,15 Jun 13,6,Glen Huntly,Le Page 1,No. 1,Troy Nguyen,Josh Groves,Josh Groves,4-6 6-3 3-6,13,15,1,2,Completed,true,false,false
+AP010062,15 Jun 13,6,Glen Huntly,Le Page 1,No. 2,Rajesh Balas,Adrian Zalega,Rajesh Balas,7-5 6-4,13,9,2,0,Completed,true,false,false
+AP010062,15 Jun 13,6,Glen Huntly,Le Page 1,No. 3,Satya Thadiparti,Boris Alvarenga,Boris Alvarenga,3-6 2-6,5,12,0,2,Completed,true,false,false
+AP010063,15 Jun 13,6,Kings Park 2,Lauriston,No. 1,Lan Ho,Matthew Marguglio,Lan Ho,6-1 6-3,12,4,2,0,Completed,true,false,false
+AP010063,15 Jun 13,6,Kings Park 2,Lauriston,No. 2,Joanne Bell-Harper,Louis Cheung,Louis Cheung,2-6 5-7,7,13,0,2,Completed,true,false,false
+AP010063,15 Jun 13,6,Kings Park 2,Lauriston,No. 3,Brydie Steinfort,Morris Trabsky,Morris Trabsky,1-6 2-6,3,12,0,2,Completed,true,false,false
+AP010064,15 Jun 13,6,Le Page 2,East Malvern,No. 1,Julie Kheng,Harry Lister,Harry Lister,0-6 4-6,4,12,0,2,Completed,true,false,false
+AP010064,15 Jun 13,6,Le Page 2,East Malvern,No. 2,Angie Tanner,Ken Ho-Le,,0-6 1-3,1,9,0,2,Unfinished,false,false,false
+AP010064,15 Jun 13,6,Le Page 2,East Malvern,No. 3,Aaron Page,Emma Newnham,Emma Newnham,0-6 0-6,0,12,0,2,Completed,true,false,false
+AP010081,29 Jun 13,8,Le Page 2,Le Page 1,No. 1,Jayk Gunton,Josh Groves,Josh Groves,1-6 4-6,5,12,0,2,Completed,true,false,false
+AP010081,29 Jun 13,8,Le Page 2,Le Page 1,No. 2,Julie Kheng,Adrian Zalega,Adrian Zalega,1-6 0-6,1,12,0,2,Completed,true,false,false
+AP010081,29 Jun 13,8,Le Page 2,Le Page 1,No. 3,Merinda Kent,Alex Alvarenga,Merinda Kent,6-4 6-0,12,4,2,0,Completed,true,false,false
+AP010082,29 Jun 13,8,Lauriston,MCC,No. 1,Louis Cheung,Auke de Vries,Auke de Vries,4-6 6-4 1-6,11,16,1,2,Completed,true,false,false
+AP010082,29 Jun 13,8,Lauriston,MCC,No. 2,Glenn Lehmann-Pozo,John Gregory,Glenn Lehmann-Pozo,7-6 4-6 6-4,17,16,2,1,Completed,true,false,false
+AP010082,29 Jun 13,8,Lauriston,MCC,No. 3,Morris Trabsky,Iain Stewart,Morris Trabsky,6-2 6-1,12,3,2,0,Completed,true,false,false
+AP010083,29 Jun 13,8,Kings Park 2,Kings Park 1,No. 1,Lan Ho,Thomas Diggerson,Lan Ho,6-7 6-2 6-2,18,11,2,1,Completed,true,false,false
+AP010083,29 Jun 13,8,Kings Park 2,Kings Park 1,No. 2,Carolyn Bell-Harper,Tim Van Der Veur,Tim Van Der Veur,4-6 0-6,4,12,0,2,Completed,true,false,false
+AP010083,29 Jun 13,8,Kings Park 2,Kings Park 1,No. 3,Joanne Bell-Harper,Adrian Hodgson,Adrian Hodgson,0-6 0-6,0,12,0,2,Completed,true,false,false
+AP010084,29 Jun 13,8,East Malvern,Glen Huntly,No. 1,Ken Ho-Le,Danny Lau,Ken Ho-Le,6-3 6-4,12,7,2,0,Completed,true,false,false
+AP010084,29 Jun 13,8,East Malvern,Glen Huntly,No. 2,Mitch Duckett,Satya Thadiparti,Mitch Duckett,7-6 7-6,14,12,2,0,Completed,true,false,false
+AP010084,29 Jun 13,8,East Malvern,Glen Huntly,No. 3,Emma Newnham,Kate Stitz,Emma Newnham,6-3 6-4,12,7,2,0,Completed,true,false,false
+AP010101,13 Jul 13,10,Kings Park 2,Le Page 1,No. 1,Lan Ho,Josh Groves,Josh Groves,4-6 2-6,6,12,0,2,Completed,true,false,false
+AP010101,13 Jul 13,10,Kings Park 2,Le Page 1,No. 2,Joanne Bell-Harper,Adrian Zalega,Adrian Zalega,1-6 1-6,2,12,0,2,Completed,true,false,false
+AP010101,13 Jul 13,10,Kings Park 2,Le Page 1,No. 3,Brydie Steinfort,Boris Alvarenga,Boris Alvarenga,2-6 5-7,7,13,0,2,Completed,true,false,false
+AP010102,13 Jul 13,10,East Malvern,MCC,No. 1,Ken Ho-Le,Auke de Vries,Ken Ho-Le,6-4 6-0,12,4,2,0,Completed,true,false,false
+AP010102,13 Jul 13,10,East Malvern,MCC,No. 2,Demetra Giannakopoulos,Iain Stewart,Demetra Giannakopoulos,6-0 6-4,12,4,2,0,Completed,true,false,false
+AP010102,13 Jul 13,10,East Malvern,MCC,No. 3,Emma Newnham,Philip Meyer,Emma Newnham,6-4 0-6 6-1,12,11,2,1,Completed,true,false,false
+AP010103,13 Jul 13,10,Le Page 2,Kings Park 1,No. 1,Matt Gatti,Nathan Blamires,Matt Gatti,6-0 6-0,12,0,2,0,Completed,true,false,false
+AP010103,13 Jul 13,10,Le Page 2,Kings Park 1,No. 2,Julie Kheng,Thomas Diggerson,Thomas Diggerson,0-6 1-6,1,12,0,2,Completed,true,false,false
+AP010103,13 Jul 13,10,Le Page 2,Kings Park 1,No. 3,Merinda Kent,Dylan Smith,Dylan Smith,0-6 0-6,0,12,0,2,Completed,true,false,false
+AP010104,13 Jul 13,10,Lauriston,Glen Huntly,No. 1,Matthew Marguglio,Tushar Sharma,Tushar Sharma,3-6 0-6,3,12,0,2,Completed,true,false,false
+AP010104,13 Jul 13,10,Lauriston,Glen Huntly,No. 2,Glenn Lehmann-Pozo,Rajesh Balas,Glenn Lehmann-Pozo,6-0 6-0,12,0,2,0,Completed,true,false,false
+AP010104,13 Jul 13,10,Lauriston,Glen Huntly,No. 3,Morris Trabsky,Danny Lau,Morris Trabsky,7-5 6-1,13,6,2,0,Completed,true,false,false
+AP010121,27 Jul 13,12,Glen Huntly,Kings Park 1,No. 1,Tushar Sharma,Thomas Diggerson,Tushar Sharma,6-1 6-0,12,1,2,0,Completed,true,false,false
+AP010121,27 Jul 13,12,Glen Huntly,Kings Park 1,No. 2,Danny Lau,Dylan Smith,Danny Lau,6-3 6-2,12,5,2,0,Completed,true,false,false
+AP010121,27 Jul 13,12,Glen Huntly,Kings Park 1,No. 3,Satya Thadiparti,Tim Van Der Veur,Satya Thadiparti,6-3 6-3,12,6,2,0,Completed,true,false,false
+AP010122,27 Jul 13,12,Kings Park 2,East Malvern,No. 1,Lan Ho,Alan Young,Alan Young,1-6 0-6,1,12,0,2,Completed,true,false,false
+AP010122,27 Jul 13,12,Kings Park 2,East Malvern,No. 2,Carolyn Bell-Harper,Ken Ho-Le,Ken Ho-Le,2-6 5-7,7,13,0,2,Completed,true,false,false
+AP010122,27 Jul 13,12,Kings Park 2,East Malvern,No. 3,Joanne Bell-Harper,Emma Newnham,Emma Newnham,0-6 0-6,0,12,0,2,Completed,true,false,false
+AP010123,27 Jul 13,12,Le Page 2,Lauriston,No. 1,Matt Gatti,Matthew Marguglio,Matt Gatti,6-0 6-0,12,0,2,0,Completed,true,false,false
+AP010123,27 Jul 13,12,Le Page 2,Lauriston,No. 2,Tony Gatti,Louis Cheung,Tony Gatti,6-3 6-0,12,3,2,0,Completed,true,false,false
+AP010123,27 Jul 13,12,Le Page 2,Lauriston,No. 3,Julie Kheng,Glenn Lehmann-Pozo,Julie Kheng,1-6 6-4 6-4,13,14,2,1,Completed,true,false,false
+AP010124,27 Jul 13,12,MCC,Le Page 1,No. 1,Steve Worthington,Josh Groves,Josh Groves,3-6 6-7,9,13,0,2,Completed,true,false,false
+AP010124,27 Jul 13,12,MCC,Le Page 1,No. 2,John Gregory,Adrian Zalega,Adrian Zalega,2-6 1-6,3,12,0,2,Completed,true,false,false
+AP010124,27 Jul 13,12,MCC,Le Page 1,No. 3,Iain Stewart,Boris Alvarenga,Boris Alvarenga,4-6 6-7,10,13,0,2,Completed,true,false,false
+AP010141,10 Aug 13,14,Kings Park 1,Le Page 1,No. 1,Nathan Blamires,Josh Groves,Josh Groves,4-6 1-6,5,12,0,2,Completed,true,false,false
+AP010141,10 Aug 13,14,Kings Park 1,Le Page 1,No. 2,Thomas Diggerson,Adrian Zalega,Adrian Zalega,2-6 2-6,4,12,0,2,Completed,true,false,false
+AP010141,10 Aug 13,14,Kings Park 1,Le Page 1,No. 3,Dylan Smith,Boris Alvarenga,Dylan Smith,1-6 6-2 6-4,13,12,2,1,Completed,true,false,false
+AP010142,10 Aug 13,14,Glen Huntly,MCC,No. 1,Danny Lau,Stephen Pearson,Danny Lau,7-5 6-2,13,7,2,0,Completed,true,false,false
+AP010142,10 Aug 13,14,Glen Huntly,MCC,No. 2,Francis Li,Auke de Vries,Francis Li,6-4 2-6 6-4,14,14,2,1,Completed,true,false,false
+AP010142,10 Aug 13,14,Glen Huntly,MCC,No. 3,Kate Stitz,Iain Stewart,Iain Stewart,4-6 4-6,8,12,0,2,Completed,true,false,false
+AP010143,10 Aug 13,14,Lauriston,East Malvern,No. 1,Matthew Marguglio,Alan Young,Alan Young,5-7 1-6,6,13,0,2,Completed,true,false,false
+AP010143,10 Aug 13,14,Lauriston,East Malvern,No. 2,Louis Cheung,Ken Ho-Le,Ken Ho-Le,1-6 2-6,3,12,0,2,Completed,true,false,false
+AP010143,10 Aug 13,14,Lauriston,East Malvern,No. 3,Glenn Lehmann-Pozo,Emma Newnham,Emma Newnham,5-7 5-7,10,14,0,2,Completed,true,false,false
+AP010144,10 Aug 13,14,Le Page 2,Kings Park 2,No. 1,Tino Rossi,Lan Ho,Tino Rossi,6-4 6-2,12,6,2,0,Completed,true,false,false
+AP010144,10 Aug 13,14,Le Page 2,Kings Park 2,No. 2,Julie Kheng,Joanne Bell-Harper,Joanne Bell-Harper,2-6 2-6,4,12,0,2,Completed,true,false,false
+AP010144,10 Aug 13,14,Le Page 2,Kings Park 2,No. 3,Angie Tanner,Brydie Steinfort,Brydie Steinfort,2-6 0-6,2,12,0,2,Completed,true,false,false
+AP010301,,16,Le Page 1,East Malvern,No. 1,Josh Groves,Harry Lister,Harry Lister,2-6 6-7,8,13,0,2,Completed,true,false,false
+AP010301,,16,Le Page 1,East Malvern,No. 2,Adrian Zalega,Ken Ho-Le,Adrian Zalega,6-0 7-5,13,5,2,0,Completed,true,false,false
+AP010301,,16,Le Page 1,East Malvern,No. 3,Boris Alvarenga,Emma Newnham,Emma Newnham,0-6 0-6,0,12,0,2,Completed,true,false,false
+AP010302,,16,Lauriston,Glen Huntly,No. 1,Matthew Marguglio,Rajesh Balas,Matthew Marguglio,3-6 6-3 6-3,15,12,2,1,Completed,true,false,false
+AP010302,,16,Lauriston,Glen Huntly,No. 2,Glenn Lehmann-Pozo,Danny Lau,Danny Lau,0-6 0-6,0,12,0,2,Completed,true,false,false
+AP010302,,16,Lauriston,Glen Huntly,No. 3,Morris Trabsky,Troy Nguyen,Troy Nguyen,3-6 4-6,7,12,0,2,Completed,true,false,false
+AP010311,,16,Le Page 1,Glen Huntly,No. 1,Josh Groves,Rajesh Balas,Josh Groves,6-4 6-2,12,6,2,0,Completed,true,false,false
+AP010311,,16,Le Page 1,Glen Huntly,No. 2,Adrian Zalega,Danny Lau,Adrian Zalega,4-6 6-1 6-4,16,11,2,1,Completed,true,false,false
+AP010311,,16,Le Page 1,Glen Huntly,No. 3,Matt Gatti,Troy Nguyen,Matt Gatti,6-2 6-1,12,3,2,0,Completed,true,false,false
+AP010321,,17,East Malvern,Le Page 1,No. 1,Harry Lister,Josh Groves,Harry Lister,6-1 6-2,12,3,2,0,Completed,true,true,false
+AP010321,,17,East Malvern,Le Page 1,No. 2,Mitch Duckett,Adrian Zalega,Adrian Zalega,4-6 0-6,4,12,0,2,Completed,true,true,false
+AP010321,,17,East Malvern,Le Page 1,No. 3,Emma Newnham,Matt Gatti,Matt Gatti,1-6 2-6,3,12,0,2,Completed,true,false,true

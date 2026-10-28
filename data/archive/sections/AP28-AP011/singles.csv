@@ -1,0 +1,210 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP011011,05 Oct 13,1,Albert Reserve,BLTC,No. 1,Hayley Turner,Elley Butcher,Elley Butcher,5-8,5,8,0,1,Completed,true,false,false
+AP011011,05 Oct 13,1,Albert Reserve,BLTC,No. 2,Luana Rochelli,Blair Morley,Blair Morley,0-8,0,8,0,1,Completed,true,false,false
+AP011011,05 Oct 13,1,Albert Reserve,BLTC,No. 3,Melinda Luchini,Eleanor Scott,Melinda Luchini,8-0,8,0,1,0,Completed,true,false,false
+AP011011,05 Oct 13,1,Albert Reserve,BLTC,No. 4,Karla Dahm,Jenna Cameron,Karla Dahm,8-5,8,5,1,0,Completed,true,false,false
+AP011013,05 Oct 13,1,Dendy Park,East Malvern,No. 1,Jessica Marget,Nicole Stribbles,Nicole Stribbles,2-8,2,8,0,1,Completed,true,false,false
+AP011013,05 Oct 13,1,Dendy Park,East Malvern,No. 2,Ellie Parousiatis,Amanda Watkins,Ellie Parousiatis,8-2,8,2,1,0,Completed,true,false,false
+AP011013,05 Oct 13,1,Dendy Park,East Malvern,No. 3,Cally O'Brien,Lisa Palma,Cally O'Brien,8-2,8,2,1,0,Completed,true,false,false
+AP011013,05 Oct 13,1,Dendy Park,East Malvern,No. 4,Lucy Willis,Liz Bedson,Liz Bedson,2-8,2,8,0,1,Completed,true,false,false
+AP011014,05 Oct 13,1,Monash University,Kings Park,No. 1,Kate Adams,Jo Valencic,Kate Adams,8-1,8,1,1,0,Completed,true,false,false
+AP011014,05 Oct 13,1,Monash University,Kings Park,No. 2,Kay Bottomer,Lan Ho,Kay Bottomer,9-7,9,7,1,0,Completed,true,false,false
+AP011014,05 Oct 13,1,Monash University,Kings Park,No. 3,Caitlyn McNaughton,Brydie Steinfort,Caitlyn McNaughton,8-4,8,4,1,0,Completed,true,false,false
+AP011014,05 Oct 13,1,Monash University,Kings Park,No. 4,Jacina Goh,Kristy Meulan,Jacina Goh,8-3,8,3,1,0,Completed,true,false,false
+AP011021,12 Oct 13,2,Kings Park,Albert Reserve,No. 1,Jo Valencic,Hayley Turner,Hayley Turner,7-9,7,9,0,1,Completed,true,false,false
+AP011021,12 Oct 13,2,Kings Park,Albert Reserve,No. 2,Lan Ho,Luana Rochelli,Luana Rochelli,7-9,7,9,0,1,Completed,true,false,false
+AP011021,12 Oct 13,2,Kings Park,Albert Reserve,No. 3,Brydie Steinfort,Galina Polekhina,Galina Polekhina,6-8,6,8,0,1,Completed,true,false,false
+AP011021,12 Oct 13,2,Kings Park,Albert Reserve,No. 4,Sheree Brown,Dana Visescu,Dana Visescu,7-9,7,9,0,1,Completed,true,false,false
+AP011022,12 Oct 13,2,BLTC,Melbourne Univ,No. 1,Elley Butcher,Kavisha Hersey-Kilner,Kavisha Hersey-Kilner,3-8,3,8,0,1,Completed,true,false,false
+AP011022,12 Oct 13,2,BLTC,Melbourne Univ,No. 2,Natlaie Turner,Clare McIlwraith,Natlaie Turner,8-0,8,0,1,0,Completed,true,false,false
+AP011022,12 Oct 13,2,BLTC,Melbourne Univ,No. 3,Blair Morley,Marie Slako,Blair Morley,8-2,8,2,1,0,Completed,true,false,false
+AP011022,12 Oct 13,2,BLTC,Melbourne Univ,No. 4,Jenna Cameron,Sarah Hatfield,Jenna Cameron,8-5,8,5,1,0,Completed,true,false,false
+AP011023,12 Oct 13,2,Clarinda,Dendy Park,No. 1,Stephanie Mackay,Ellie Parousiatis,Stephanie Mackay,8-4,8,4,1,0,Completed,true,false,false
+AP011023,12 Oct 13,2,Clarinda,Dendy Park,No. 2,Courtney Ganas,Cally O'Brien,Courtney Ganas,8-3,8,3,1,0,Completed,true,false,false
+AP011023,12 Oct 13,2,Clarinda,Dendy Park,No. 3,Michelle Thomson,Sophie Francis,Sophie Francis,3-8,3,8,0,1,Completed,true,false,false
+AP011023,12 Oct 13,2,Clarinda,Dendy Park,No. 4,Maria Cvitkovic,Danaya Malendan,Danaya Malendan,7-9,7,9,0,1,Completed,true,false,false
+AP011024,12 Oct 13,2,East Malvern,Monash University,No. 1,Nicole Stribbles,Kate Adams,Kate Adams,6-8,6,8,0,1,Completed,true,false,false
+AP011024,12 Oct 13,2,East Malvern,Monash University,No. 2,Alicia Moyle,Kay Bottomer,Kay Bottomer,5-8,5,8,0,1,Completed,true,false,false
+AP011024,12 Oct 13,2,East Malvern,Monash University,No. 3,Lisa Palma,Caitlyn McNaughton,Caitlyn McNaughton,5-8,5,8,0,1,Completed,true,false,false
+AP011024,12 Oct 13,2,East Malvern,Monash University,No. 4,Liz Bedson,Ishani Herath,Liz Bedson,8-2,8,2,1,0,Completed,true,false,false
+AP011031,19 Oct 13,3,Albert Reserve,East Malvern,No. 1,Hayley Turner,Amanda Watkins,Hayley Turner,8-4,8,4,1,0,Completed,true,false,false
+AP011031,19 Oct 13,3,Albert Reserve,East Malvern,No. 2,Melinda Luchini,Alicia Moyle,Melinda Luchini,8-3,8,3,1,0,Completed,true,false,false
+AP011031,19 Oct 13,3,Albert Reserve,East Malvern,No. 3,Karla Dahm,Lisa Palma,Karla Dahm,8-2,8,2,1,0,Completed,true,false,false
+AP011031,19 Oct 13,3,Albert Reserve,East Malvern,No. 4,Dana Visescu,Liz Bedson,Liz Bedson,8-9,8,9,0,1,Completed,true,false,false
+AP011032,19 Oct 13,3,Melbourne Univ,Kings Park,No. 1,Meghan Grant-Botto,Lan Ho,Meghan Grant-Botto,8-4,8,4,1,0,Completed,true,false,false
+AP011032,19 Oct 13,3,Melbourne Univ,Kings Park,No. 2,Kavisha Hersey-Kilner,Brydie Steinfort,Kavisha Hersey-Kilner,8-1,8,1,1,0,Completed,true,false,false
+AP011032,19 Oct 13,3,Melbourne Univ,Kings Park,No. 3,Clare McIlwraith,Kristy Meulan,Clare McIlwraith,8-3,8,3,1,0,Completed,true,false,false
+AP011032,19 Oct 13,3,Melbourne Univ,Kings Park,No. 4,Marie Slako,Clare Aldham,Clare Aldham,6-8,6,8,0,1,Completed,true,false,false
+AP011033,19 Oct 13,3,Dendy Park,BLTC,No. 1,Jessica Marget,Natlaie Turner,Natlaie Turner,0-8,0,8,0,1,Completed,true,false,false
+AP011033,19 Oct 13,3,Dendy Park,BLTC,No. 2,Ellie Parousiatis,Blair Morley,Blair Morley,5-8,5,8,0,1,Completed,true,false,false
+AP011033,19 Oct 13,3,Dendy Park,BLTC,No. 3,Cally O'Brien,Eleanor Scott,Eleanor Scott,4-8,4,8,0,1,Completed,true,false,false
+AP011033,19 Oct 13,3,Dendy Park,BLTC,No. 4,Sophia Abbott-Salmon,Jenna Cameron,Jenna Cameron,2-8,2,8,0,1,Completed,true,false,false
+AP011034,19 Oct 13,3,Monash University,Clarinda,No. 1,Chei Ear,Stephanie Mackay,Stephanie Mackay,4-8,4,8,0,1,Completed,true,false,false
+AP011034,19 Oct 13,3,Monash University,Clarinda,No. 2,Kay Bottomer,Courtney Ganas,Kay Bottomer,8-5,8,5,1,0,Completed,true,false,false
+AP011034,19 Oct 13,3,Monash University,Clarinda,No. 3,Caitlyn McNaughton,Michelle Thomson,Caitlyn McNaughton,8-5,8,5,1,0,Completed,true,false,false
+AP011034,19 Oct 13,3,Monash University,Clarinda,No. 4,Ishani Herath,Maria Cvitkovic,Ishani Herath,8-3,8,3,1,0,Completed,true,false,false
+AP011041,26 Oct 13,4,Clarinda,Albert Reserve,No. 1,Stephanie Mackay,Luana Rochelli,Luana Rochelli,0-8,0,8,0,1,Completed,true,false,false
+AP011041,26 Oct 13,4,Clarinda,Albert Reserve,No. 2,Courtney Ganas,Galina Polekhina,Galina Polekhina,2-8,2,8,0,1,Completed,true,false,false
+AP011041,26 Oct 13,4,Clarinda,Albert Reserve,No. 3,Michelle Thomson,Karla Dahm,Michelle Thomson,8-6,8,6,1,0,Completed,true,false,false
+AP011041,26 Oct 13,4,Clarinda,Albert Reserve,No. 4,Maria Cvitkovic,Dana Visescu,Dana Visescu,5-8,5,8,0,1,Completed,true,false,false
+AP011042,26 Oct 13,4,East Malvern,Melbourne Univ,No. 1,Nicole Stribbles,Kavisha Hersey-Kilner,Kavisha Hersey-Kilner,2-8,2,8,0,1,Completed,true,false,false
+AP011042,26 Oct 13,4,East Malvern,Melbourne Univ,No. 2,Amanda Watkins,Marie Slako,Amanda Watkins,8-0,8,0,1,0,Completed,true,false,false
+AP011042,26 Oct 13,4,East Malvern,Melbourne Univ,No. 3,Alicia Moyle,Courtney Lornie,Courtney Lornie,3-8,3,8,0,1,Completed,true,false,false
+AP011042,26 Oct 13,4,East Malvern,Melbourne Univ,No. 4,Liz Bedson,Evi Dirks,Liz Bedson,9-7,9,7,1,0,Completed,true,false,false
+AP011043,26 Oct 13,4,Kings Park,Dendy Park,No. 1,Jo Valencic,Ellie Parousiatis,Ellie Parousiatis,3-8,3,8,0,1,Completed,true,false,false
+AP011043,26 Oct 13,4,Kings Park,Dendy Park,No. 2,Lan Ho,Cally O'Brien,Lan Ho,9-7,9,7,1,0,Completed,true,false,false
+AP011043,26 Oct 13,4,Kings Park,Dendy Park,No. 3,Sheree Brown,Sophie Francis,Sophie Francis,0-8,0,8,0,1,Completed,true,false,false
+AP011043,26 Oct 13,4,Kings Park,Dendy Park,No. 4,Tanya Pickering,Sophia Abbott-Salmon,Sophia Abbott-Salmon,4-8,4,8,0,1,Completed,true,false,false
+AP011044,26 Oct 13,4,BLTC,Monash University,No. 1,Elley Butcher,Kate Adams,Elley Butcher,8-2,8,2,1,0,Completed,true,false,false
+AP011044,26 Oct 13,4,BLTC,Monash University,No. 2,Natlaie Turner,Kay Bottomer,Natlaie Turner,8-1,8,1,1,0,Completed,true,false,false
+AP011044,26 Oct 13,4,BLTC,Monash University,No. 3,Blair Morley,Caitlyn McNaughton,Blair Morley,8-3,8,3,1,0,Completed,true,false,false
+AP011044,26 Oct 13,4,BLTC,Monash University,No. 4,Eleanor Scott,Ishani Herath,Eleanor Scott,8-1,8,1,1,0,Completed,true,false,false
+AP011051,09 Nov 13,5,Dendy Park,Monash University,No. 1,Ellie Parousiatis,Camelia Sofrone,Ellie Parousiatis,8-4,8,4,1,0,Completed,true,false,false
+AP011051,09 Nov 13,5,Dendy Park,Monash University,No. 2,Cally O'Brien,Kate Adams,Kate Adams,1-8,1,8,0,1,Completed,true,false,false
+AP011051,09 Nov 13,5,Dendy Park,Monash University,No. 3,Sophie Francis,Kay Bottomer,Sophie Francis,8-4,8,4,1,0,Completed,true,false,false
+AP011051,09 Nov 13,5,Dendy Park,Monash University,No. 4,Danaya Malendan,Caitlyn McNaughton,Danaya Malendan,8-3,8,3,1,0,Completed,true,false,false
+AP011052,09 Nov 13,5,Kings Park,East Malvern,No. 1,Jo Valencic,Nicole Stribbles,Jo Valencic,8-6,8,6,1,0,Completed,true,false,false
+AP011052,09 Nov 13,5,Kings Park,East Malvern,No. 2,Lan Ho,Alicia Moyle,Lan Ho,8-3,8,3,1,0,Completed,true,false,false
+AP011052,09 Nov 13,5,Kings Park,East Malvern,No. 3,Kristy Meulan,Lisa Palma,Kristy Meulan,8-6,8,6,1,0,Completed,true,false,false
+AP011052,09 Nov 13,5,Kings Park,East Malvern,No. 4,Clare Aldham,Liz Bedson,Liz Bedson,7-9,7,9,0,1,Completed,true,false,false
+AP011053,09 Nov 13,5,Clarinda,BLTC,No. 1,Stephanie Mackay,Elley Butcher,Stephanie Mackay,8-4,8,4,1,0,Completed,true,false,false
+AP011053,09 Nov 13,5,Clarinda,BLTC,No. 2,Courtney Ganas,Natlaie Turner,Natlaie Turner,3-8,3,8,0,1,Completed,true,false,false
+AP011053,09 Nov 13,5,Clarinda,BLTC,No. 3,Michelle Thomson,Eleanor Scott,Eleanor Scott,5-8,5,8,0,1,Completed,true,false,false
+AP011053,09 Nov 13,5,Clarinda,BLTC,No. 4,Maria Cvitkovic,Jenna Cameron,Jenna Cameron,8-9,8,9,0,1,Completed,true,false,false
+AP011054,09 Nov 13,5,Albert Reserve,Melbourne Univ,No. 1,Galina Polekhina,Meghan Grant-Botto,Meghan Grant-Botto,2-8,2,8,0,1,Completed,true,false,false
+AP011054,09 Nov 13,5,Albert Reserve,Melbourne Univ,No. 2,Melinda Luchini,Kavisha Hersey-Kilner,Kavisha Hersey-Kilner,3-8,3,8,0,1,Completed,true,false,false
+AP011054,09 Nov 13,5,Albert Reserve,Melbourne Univ,No. 3,Karla Dahm,Clare McIlwraith,Karla Dahm,8-1,8,1,1,0,Completed,true,false,false
+AP011054,09 Nov 13,5,Albert Reserve,Melbourne Univ,No. 4,Dana Visescu,[Unnamed emergency — TROLS AP011054 away code 4],Dana Visescu,8-0,8,0,1,0,Completed,false,false,true
+AP011061,16 Nov 13,6,Melbourne Univ,Dendy Park,No. 1,Meghan Grant-Botto,Ellie Parousiatis,Meghan Grant-Botto,8-0,8,0,1,0,Completed,true,false,false
+AP011061,16 Nov 13,6,Melbourne Univ,Dendy Park,No. 2,Kavisha Hersey-Kilner,Cally O'Brien,Kavisha Hersey-Kilner,8-2,8,2,1,0,Completed,true,false,false
+AP011061,16 Nov 13,6,Melbourne Univ,Dendy Park,No. 3,Clare McIlwraith,Sophie Francis,Sophie Francis,3-8,3,8,0,1,Completed,true,false,false
+AP011061,16 Nov 13,6,Melbourne Univ,Dendy Park,No. 4,Sarah Hatfield,Danaya Malendan,Danaya Malendan,4-8,4,8,0,1,Completed,true,false,false
+AP011062,16 Nov 13,6,Monash University,Albert Reserve,No. 1,Camelia Sofrone,Luana Rochelli,Luana Rochelli,3-8,3,8,0,1,Completed,true,false,false
+AP011062,16 Nov 13,6,Monash University,Albert Reserve,No. 2,Kate Adams,Galina Polekhina,Kate Adams,8-5,8,5,1,0,Completed,true,false,false
+AP011062,16 Nov 13,6,Monash University,Albert Reserve,No. 3,Kay Bottomer,Melinda Luchini,Kay Bottomer,8-6,8,6,1,0,Completed,true,false,false
+AP011062,16 Nov 13,6,Monash University,Albert Reserve,No. 4,Caitlyn McNaughton,Karla Dahm,Caitlyn McNaughton,8-4,8,4,1,0,Completed,true,false,false
+AP011063,16 Nov 13,6,East Malvern,Clarinda,No. 1,Nicole Stribbles,Stephanie Mackay,Stephanie Mackay,3-8,3,8,0,1,Completed,true,false,false
+AP011063,16 Nov 13,6,East Malvern,Clarinda,No. 2,Alicia Moyle,Rebecca Pitts,Rebecca Pitts,6-8,6,8,0,1,Completed,true,false,false
+AP011063,16 Nov 13,6,East Malvern,Clarinda,No. 3,Lisa Palma,Michelle Thomson,Michelle Thomson,3-8,3,8,0,1,Completed,true,false,false
+AP011063,16 Nov 13,6,East Malvern,Clarinda,No. 4,Liz Bedson,Maria Cvitkovic,Maria Cvitkovic,1-8,1,8,0,1,Completed,true,false,false
+AP011064,16 Nov 13,6,BLTC,Kings Park,No. 1,Elley Butcher,Lan Ho,Elley Butcher,8-5,8,5,1,0,Completed,true,false,false
+AP011064,16 Nov 13,6,BLTC,Kings Park,No. 2,Natlaie Turner,Brydie Steinfort,Natlaie Turner,8-1,8,1,1,0,Completed,true,false,false
+AP011064,16 Nov 13,6,BLTC,Kings Park,No. 3,Blair Morley,Kristy Meulan,Blair Morley,8-1,8,1,1,0,Completed,true,false,false
+AP011064,16 Nov 13,6,BLTC,Kings Park,No. 4,Jenna Cameron,Helen Taylor,Jenna Cameron,8-3,8,3,1,0,Completed,true,false,false
+AP011072,23 Nov 13,7,Melbourne Univ,Monash University,No. 1,Marie Slako,Camelia Sofrone,Camelia Sofrone,2-8,2,8,0,1,Completed,true,false,false
+AP011072,23 Nov 13,7,Melbourne Univ,Monash University,No. 2,Joyce Young,Kate Adams,Kate Adams,6-8,6,8,0,1,Completed,true,false,false
+AP011072,23 Nov 13,7,Melbourne Univ,Monash University,No. 3,Sarah Hatfield,Kay Bottomer,Kay Bottomer,4-8,4,8,0,1,Completed,true,false,false
+AP011072,23 Nov 13,7,Melbourne Univ,Monash University,No. 4,Clara Reed,Caitlyn McNaughton,Caitlyn McNaughton,0-8,0,8,0,1,Completed,true,false,false
+AP011073,23 Nov 13,7,Kings Park,Clarinda,No. 1,Lan Ho,Stephanie Mackay,Lan Ho,8-2,8,2,1,0,Completed,true,false,false
+AP011073,23 Nov 13,7,Kings Park,Clarinda,No. 2,Brydie Steinfort,Courtney Ganas,Courtney Ganas,4-8,4,8,0,1,Completed,true,false,false
+AP011073,23 Nov 13,7,Kings Park,Clarinda,No. 3,Kristy Meulan,Michelle Thomson,Michelle Thomson,1-8,1,8,0,1,Completed,true,false,false
+AP011073,23 Nov 13,7,Kings Park,Clarinda,No. 4,Clare Aldham,Anna McLean,Anna McLean,6-8,6,8,0,1,Completed,true,false,false
+AP011074,23 Nov 13,7,East Malvern,BLTC,No. 1,Nicole Stribbles,Elley Butcher,Elley Butcher,4-8,4,8,0,1,Completed,true,false,false
+AP011074,23 Nov 13,7,East Malvern,BLTC,No. 2,Amanda Watkins,Natlaie Turner,Natlaie Turner,3-8,3,8,0,1,Completed,true,false,false
+AP011074,23 Nov 13,7,East Malvern,BLTC,No. 3,Lisa Palma,Blair Morley,Blair Morley,0-8,0,8,0,1,Completed,true,false,false
+AP011074,23 Nov 13,7,East Malvern,BLTC,No. 4,Liz Bedson,Jenna Cameron,Liz Bedson,8-3,8,3,1,0,Completed,true,false,false
+AP011081,30 Nov 13,8,BLTC,Albert Reserve,No. 1,Elley Butcher,Hayley Turner,Elley Butcher,8-1,8,1,1,0,Completed,true,false,false
+AP011081,30 Nov 13,8,BLTC,Albert Reserve,No. 2,Natlaie Turner,Luana Rochelli,Luana Rochelli,6-8,6,8,0,1,Completed,true,false,false
+AP011081,30 Nov 13,8,BLTC,Albert Reserve,No. 3,Blair Morley,Galina Polekhina,Blair Morley,8-4,8,4,1,0,Completed,true,false,false
+AP011081,30 Nov 13,8,BLTC,Albert Reserve,No. 4,Jenna Cameron,Melinda Luchini,Melinda Luchini,4-8,4,8,0,1,Completed,true,false,false
+AP011082,30 Nov 13,8,Clarinda,Melbourne Univ,No. 1,Stephanie Mackay,Kavisha Hersey-Kilner,Stephanie Mackay,8-6,8,6,1,0,Completed,true,false,false
+AP011082,30 Nov 13,8,Clarinda,Melbourne Univ,No. 2,Courtney Ganas,Clare McIlwraith,Courtney Ganas,8-5,8,5,1,0,Completed,true,false,false
+AP011082,30 Nov 13,8,Clarinda,Melbourne Univ,No. 3,Michelle Thomson,Brooke Adams,Michelle Thomson,8-2,8,2,1,0,Completed,true,false,false
+AP011082,30 Nov 13,8,Clarinda,Melbourne Univ,No. 4,Maria Cvitkovic,Nicole Hart,Nicole Hart,0-8,0,8,0,1,Completed,true,false,false
+AP011083,30 Nov 13,8,East Malvern,Dendy Park,No. 1,Nicole Stribbles,Ellie Parousiatis,Ellie Parousiatis,5-8,5,8,0,1,Completed,true,false,false
+AP011083,30 Nov 13,8,East Malvern,Dendy Park,No. 2,Justine Lenkiewicz,Cally O'Brien,Cally O'Brien,4-8,4,8,0,1,Completed,true,false,false
+AP011083,30 Nov 13,8,East Malvern,Dendy Park,No. 3,Alicia Moyle,Tegan O'Brien,Tegan O'Brien,3-8,3,8,0,1,Completed,true,false,false
+AP011083,30 Nov 13,8,East Malvern,Dendy Park,No. 4,Lisa Palma,Danaya Malendan,Danaya Malendan,6-8,6,8,0,1,Completed,true,false,false
+AP011084,30 Nov 13,8,Kings Park,Monash University,No. 1,Brydie Steinfort,Camelia Sofrone,Camelia Sofrone,2-8,2,8,0,1,Completed,true,false,false
+AP011084,30 Nov 13,8,Kings Park,Monash University,No. 2,Kristy Meulan,Kate Adams,Kate Adams,1-8,1,8,0,1,Completed,true,false,false
+AP011084,30 Nov 13,8,Kings Park,Monash University,No. 3,Kerry Steinfort,Jacina Goh,Kerry Steinfort,9-7,9,7,1,0,Completed,true,false,false
+AP011084,30 Nov 13,8,Kings Park,Monash University,No. 4,Tanya Pickering,Kathryn Connelly,Kathryn Connelly,0-8,0,8,0,1,Completed,true,false,false
+AP011093,07 Dec 13,9,Dendy Park,Clarinda,No. 1,Ellie Parousiatis,Courtney Ganas,Courtney Ganas,5-8,5,8,0,1,Completed,true,false,false
+AP011093,07 Dec 13,9,Dendy Park,Clarinda,No. 2,Cally O'Brien,Michelle Thomson,Michelle Thomson,5-8,5,8,0,1,Completed,true,false,false
+AP011093,07 Dec 13,9,Dendy Park,Clarinda,No. 3,Sophie Francis,Rebecca Pitts,Sophie Francis,8-1,8,1,1,0,Completed,true,false,false
+AP011093,07 Dec 13,9,Dendy Park,Clarinda,No. 4,Tegan O'Brien,Maria Cvitkovic,Maria Cvitkovic,0-8,0,8,0,1,Completed,true,false,false
+AP011094,07 Dec 13,9,Monash University,East Malvern,No. 1,Camelia Sofrone,Amanda Watkins,Amanda Watkins,8-9,8,9,0,1,Completed,true,false,false
+AP011094,07 Dec 13,9,Monash University,East Malvern,No. 2,Kate Adams,Alicia Moyle,Kate Adams,8-1,8,1,1,0,Completed,true,false,false
+AP011094,07 Dec 13,9,Monash University,East Malvern,No. 3,Kay Bottomer,Lisa Palma,Kay Bottomer,8-3,8,3,1,0,Completed,true,false,false
+AP011094,07 Dec 13,9,Monash University,East Malvern,No. 4,Caitlyn McNaughton,Liz Bedson,Caitlyn McNaughton,8-3,8,3,1,0,Completed,true,false,false
+AP011101,14 Dec 13,10,East Malvern,Albert Reserve,No. 1,Nicole Stribbles,Fiona Reilly,Nicole Stribbles,8-5,8,5,1,0,Completed,true,false,false
+AP011101,14 Dec 13,10,East Malvern,Albert Reserve,No. 2,Amanda Watkins,Galina Polekhina,Amanda Watkins,8-3,8,3,1,0,Completed,true,false,false
+AP011101,14 Dec 13,10,East Malvern,Albert Reserve,No. 3,Alicia Moyle,Karla Dahm,Karla Dahm,1-8,1,8,0,1,Completed,true,false,false
+AP011101,14 Dec 13,10,East Malvern,Albert Reserve,No. 4,Liz Bedson,Dana Visescu,Dana Visescu,8-9,8,9,0,1,Completed,true,false,false
+AP011102,14 Dec 13,10,Kings Park,Melbourne Univ,No. 1,Jo Valencic,Kavisha Hersey-Kilner,Jo Valencic,8-6,8,6,1,0,Completed,true,false,false
+AP011102,14 Dec 13,10,Kings Park,Melbourne Univ,No. 2,Brydie Steinfort,Clare McIlwraith,Brydie Steinfort,8-4,8,4,1,0,Completed,true,false,false
+AP011102,14 Dec 13,10,Kings Park,Melbourne Univ,No. 3,Kristy Meulan,Marie Slako,Kristy Meulan,9-7,9,7,1,0,Completed,true,false,false
+AP011102,14 Dec 13,10,Kings Park,Melbourne Univ,No. 4,Michelle Dickson,Nicole Hart,Nicole Hart,3-8,3,8,0,1,Completed,true,false,false
+AP011103,14 Dec 13,10,BLTC,Dendy Park,No. 1,Elley Butcher,Cally O'Brien,Elley Butcher,8-0,8,0,1,0,Completed,true,false,false
+AP011103,14 Dec 13,10,BLTC,Dendy Park,No. 2,Blair Morley,Sophie Francis,Sophie Francis,6-8,6,8,0,1,Completed,true,false,false
+AP011103,14 Dec 13,10,BLTC,Dendy Park,No. 3,Jenna Cameron,Jordan ?,Jenna Cameron,8-2,8,2,1,0,Completed,true,false,false
+AP011103,14 Dec 13,10,BLTC,Dendy Park,No. 4,Jacqui Pacholec,Angela Jeffery,Jacqui Pacholec,8-0,8,0,1,0,Completed,true,false,false
+AP011104,14 Dec 13,10,Clarinda,Monash University,No. 1,Stephanie Mackay,Kate Adams,Stephanie Mackay,8-3,8,3,1,0,Completed,true,false,false
+AP011104,14 Dec 13,10,Clarinda,Monash University,No. 2,Courtney Ganas,Kay Bottomer,Courtney Ganas,9-7,9,7,1,0,Completed,true,false,false
+AP011104,14 Dec 13,10,Clarinda,Monash University,No. 3,Michelle Thomson,Caitlyn McNaughton,Caitlyn McNaughton,6-8,6,8,0,1,Completed,true,false,false
+AP011104,14 Dec 13,10,Clarinda,Monash University,No. 4,Maria Cvitkovic,Jacina Goh,Jacina Goh,6-8,6,8,0,1,Completed,true,false,false
+AP011111,01 Feb 14,11,Albert Reserve,Clarinda,No. 1,Hayley Turner,Stephanie Mackay,Stephanie Mackay,8-9,8,9,0,1,Completed,true,false,false
+AP011111,01 Feb 14,11,Albert Reserve,Clarinda,No. 2,Galina Polekhina,Courtney Ganas,Courtney Ganas,2-8,2,8,0,1,Completed,true,false,false
+AP011111,01 Feb 14,11,Albert Reserve,Clarinda,No. 3,Melinda Luchini,Michelle Thomson,Melinda Luchini,8-2,8,2,1,0,Completed,true,false,false
+AP011111,01 Feb 14,11,Albert Reserve,Clarinda,No. 4,Dana Visescu,Maria Cvitkovic,Dana Visescu,8-0,8,0,1,0,Completed,true,false,false
+AP011112,01 Feb 14,11,Melbourne Univ,East Malvern,No. 1,Meghan Grant-Botto,Nicole Stribbles,Meghan Grant-Botto,8-1,8,1,1,0,Completed,true,false,false
+AP011112,01 Feb 14,11,Melbourne Univ,East Malvern,No. 2,Clare McIlwraith,Amanda Watkins,Clare McIlwraith,8-3,8,3,1,0,Completed,true,false,false
+AP011112,01 Feb 14,11,Melbourne Univ,East Malvern,No. 3,Sarah Hatfield,Alicia Moyle,Alicia Moyle,4-8,4,8,0,1,Completed,true,false,false
+AP011112,01 Feb 14,11,Melbourne Univ,East Malvern,No. 4,Joyce Young,Lisa Palma,Joyce Young,8-3,8,3,1,0,Completed,true,false,false
+AP011113,01 Feb 14,11,Dendy Park,Kings Park,No. 1,Ellie Parousiatis,Jo Valencic,Ellie Parousiatis,8-5,8,5,1,0,Completed,true,false,false
+AP011113,01 Feb 14,11,Dendy Park,Kings Park,No. 2,Cally O'Brien,Brydie Steinfort,Cally O'Brien,8-2,8,2,1,0,Completed,true,false,false
+AP011113,01 Feb 14,11,Dendy Park,Kings Park,No. 3,Sophie Francis,Olivia Steinfort,Olivia Steinfort,8-9,8,9,0,1,Completed,true,false,true
+AP011113,01 Feb 14,11,Dendy Park,Kings Park,No. 4,Tegan O'Brien,Kerry Steinfort,Kerry Steinfort,0-8,0,8,0,1,Completed,true,false,false
+AP011114,01 Feb 14,11,Monash University,BLTC,No. 1,Camelia Sofrone,Natlaie Turner,Natlaie Turner,4-8,4,8,0,1,Completed,true,false,false
+AP011114,01 Feb 14,11,Monash University,BLTC,No. 2,Kay Bottomer,Blair Morley,Blair Morley,3-8,3,8,0,1,Completed,true,false,false
+AP011114,01 Feb 14,11,Monash University,BLTC,No. 3,Jacina Goh,Eleanor Scott,Eleanor Scott,3-8,3,8,0,1,Completed,true,false,false
+AP011114,01 Feb 14,11,Monash University,BLTC,No. 4,Ishani Herath,Jenna Cameron,Jenna Cameron,1-8,1,8,0,1,Completed,true,false,false
+AP011123,08 Feb 14,12,BLTC,Clarinda,No. 1,Natlaie Turner,Stephanie Mackay,Stephanie Mackay,3-6,3,6,0,1,Completed,true,false,false
+AP011123,08 Feb 14,12,BLTC,Clarinda,No. 2,Blair Morley,Courtney Ganas,Courtney Ganas,5-7,5,7,0,1,Completed,true,false,false
+AP011123,08 Feb 14,12,BLTC,Clarinda,No. 3,Jenna Cameron,Maria Cvitkovic,Jenna Cameron,6-1,6,1,1,0,Completed,true,false,false
+AP011124,08 Feb 14,12,Melbourne Univ,Albert Reserve,No. 1,Meghan Grant-Botto,Hayley Turner,Meghan Grant-Botto,8-1,8,1,1,0,Completed,true,false,false
+AP011124,08 Feb 14,12,Melbourne Univ,Albert Reserve,No. 2,Clare McIlwraith,Galina Polekhina,Galina Polekhina,3-8,3,8,0,1,Completed,true,false,false
+AP011132,15 Feb 14,13,Albert Reserve,Monash University,No. 1,Galina Polekhina,Camelia Sofrone,Camelia Sofrone,7-9,7,9,0,1,Completed,true,false,false
+AP011132,15 Feb 14,13,Albert Reserve,Monash University,No. 2,Karla Dahm,Kay Bottomer,Karla Dahm,8-6,8,6,1,0,Completed,true,false,false
+AP011132,15 Feb 14,13,Albert Reserve,Monash University,No. 3,Melinda Luchini,Caitlyn McNaughton,Melinda Luchini,8-0,8,0,1,0,Completed,true,false,false
+AP011132,15 Feb 14,13,Albert Reserve,Monash University,No. 4,Dana Visescu,Meagan Lynch,Dana Visescu,8-0,8,0,1,0,Completed,true,false,false
+AP011133,15 Feb 14,13,Clarinda,East Malvern,No. 1,Stephanie Mackay,Amanda Watkins,Stephanie Mackay,8-6,8,6,1,0,Completed,true,false,false
+AP011133,15 Feb 14,13,Clarinda,East Malvern,No. 2,Courtney Ganas,Alicia Moyle,Courtney Ganas,8-3,8,3,1,0,Completed,true,false,false
+AP011133,15 Feb 14,13,Clarinda,East Malvern,No. 3,Michelle Thomson,Lisa Palma,Michelle Thomson,8-1,8,1,1,0,Completed,true,false,false
+AP011133,15 Feb 14,13,Clarinda,East Malvern,No. 4,Maria Cvitkovic,Liz Bedson,Liz Bedson,8-9,8,9,0,1,Completed,true,false,false
+AP011134,15 Feb 14,13,Kings Park,BLTC,No. 1,Brydie Steinfort,Elley Butcher,Elley Butcher,1-8,1,8,0,1,Completed,true,false,false
+AP011134,15 Feb 14,13,Kings Park,BLTC,No. 2,Clare Aldham,Natlaie Turner,Natlaie Turner,0-8,0,8,0,1,Completed,true,false,false
+AP011134,15 Feb 14,13,Kings Park,BLTC,No. 3,Olivia Steinfort,Blair Morley,Blair Morley,6-8,6,8,0,1,Completed,true,false,false
+AP011134,15 Feb 14,13,Kings Park,BLTC,No. 4,Helen Taylor,Jenna Cameron,Jenna Cameron,6-8,6,8,0,1,Completed,true,false,false
+AP011141,22 Feb 14,14,Dendy Park,Albert Reserve,No. 1,Ellie Parousiatis,Luana Rochelli,Luana Rochelli,0-8,0,8,0,1,Completed,true,false,false
+AP011141,22 Feb 14,14,Dendy Park,Albert Reserve,No. 2,Cally O'Brien,Galina Polekhina,Cally O'Brien,8-5,8,5,1,0,Completed,true,false,false
+AP011141,22 Feb 14,14,Dendy Park,Albert Reserve,No. 3,Tegan O'Brien,Melinda Luchini,Tegan O'Brien,8-2,8,2,1,0,Completed,true,false,false
+AP011141,22 Feb 14,14,Dendy Park,Albert Reserve,No. 4,Angela Jeffery,Dana Visescu,Angela Jeffery,8-3,8,3,1,0,Completed,true,false,false
+AP011142,22 Feb 14,14,Monash University,Melbourne Univ,No. 1,Camelia Sofrone,Meghan Grant-Botto,Meghan Grant-Botto,1-8,1,8,0,1,Completed,true,false,false
+AP011142,22 Feb 14,14,Monash University,Melbourne Univ,No. 2,Kay Bottomer,Clare McIlwraith,Kay Bottomer,8-6,8,6,1,0,Completed,true,false,false
+AP011142,22 Feb 14,14,Monash University,Melbourne Univ,No. 3,Jacina Goh,Marie Slako,Jacina Goh,8-0,8,0,1,0,Completed,true,false,false
+AP011142,22 Feb 14,14,Monash University,Melbourne Univ,No. 4,Ishani Herath,Sarah Hatfield,Sarah Hatfield,2-8,2,8,0,1,Completed,true,false,false
+AP011143,22 Feb 14,14,Clarinda,Kings Park,No. 1,Stephanie Mackay,Jo Valencic,Stephanie Mackay,8-0,8,0,1,0,Completed,true,false,false
+AP011143,22 Feb 14,14,Clarinda,Kings Park,No. 2,Courtney Ganas,Brydie Steinfort,Courtney Ganas,8-4,8,4,1,0,Completed,true,false,false
+AP011143,22 Feb 14,14,Clarinda,Kings Park,No. 3,Michelle Thomson,Clare Aldham,Michelle Thomson,8-1,8,1,1,0,Completed,true,false,false
+AP011143,22 Feb 14,14,Clarinda,Kings Park,No. 4,Rebecca Pitts,Helen Taylor,Rebecca Pitts,9-8,9,8,1,0,Completed,true,false,false
+AP011144,22 Feb 14,14,BLTC,East Malvern,No. 1,Elley Butcher,Nicole Stribbles,Elley Butcher,8-4,8,4,1,0,Completed,true,false,false
+AP011144,22 Feb 14,14,BLTC,East Malvern,No. 2,Blair Morley,Amanda Watkins,Blair Morley,9-8,9,8,1,0,Completed,true,false,false
+AP011144,22 Feb 14,14,BLTC,East Malvern,No. 3,Eleanor Scott,Lisa Palma,Eleanor Scott,8-5,8,5,1,0,Completed,true,false,false
+AP011144,22 Feb 14,14,BLTC,East Malvern,No. 4,Jenna Cameron,Liz Bedson,Jenna Cameron,8-5,8,5,1,0,Completed,true,false,false
+AP011301,,16,BLTC,Clarinda,No. 1,Elley Butcher,Stephanie Mackay,Elley Butcher,8-5,8,5,1,0,Completed,true,false,false
+AP011301,,16,BLTC,Clarinda,No. 2,Natlaie Turner,Rebecca Pitts,Natlaie Turner,8-5,8,5,1,0,Completed,true,false,false
+AP011301,,16,BLTC,Clarinda,No. 3,Blair Morley,Michelle Thomson,Blair Morley,8-0,8,0,1,0,Completed,true,false,false
+AP011301,,16,BLTC,Clarinda,No. 4,Eleanor Scott,Maria Cvitkovic,Eleanor Scott,8-1,8,1,1,0,Completed,true,false,false
+AP011302,,16,Monash University,Albert Reserve,No. 1,Camelia Sofrone,Luana Rochelli,Luana Rochelli,2-8,2,8,0,1,Completed,true,false,false
+AP011302,,16,Monash University,Albert Reserve,No. 2,Kate Adams,Hayley Turner,Kate Adams,8-4,8,4,1,0,Completed,true,false,false
+AP011302,,16,Monash University,Albert Reserve,No. 3,Kay Bottomer,Galina Polekhina,Kay Bottomer,8-5,8,5,1,0,Completed,true,false,false
+AP011302,,16,Monash University,Albert Reserve,No. 4,Caitlyn McNaughton,Dana Visescu,Caitlyn McNaughton,8-0,8,0,1,0,Completed,true,false,false
+AP011311,,16,Clarinda,Monash University,No. 1,Stephanie Mackay,Camelia Sofrone,Stephanie Mackay,8-1,8,1,1,0,Completed,true,false,false
+AP011311,,16,Clarinda,Monash University,No. 2,Courtney Ganas,Kate Adams,Kate Adams,7-9,7,9,0,1,Completed,true,false,false
+AP011311,,16,Clarinda,Monash University,No. 3,Michelle Thomson,Kay Bottomer,Michelle Thomson,8-6,8,6,1,0,Completed,true,false,false
+AP011311,,16,Clarinda,Monash University,No. 4,Rebecca Pitts,Caitlyn McNaughton,Caitlyn McNaughton,4-8,4,8,0,1,Completed,true,false,false
+AP011321,,17,BLTC,Clarinda,No. 1,Elley Butcher,Stephanie Mackay,Elley Butcher,8-2,8,2,1,0,Completed,true,false,false
+AP011321,,17,BLTC,Clarinda,No. 2,Natlaie Turner,Courtney Ganas,Natlaie Turner,8-3,8,3,1,0,Completed,true,false,false
+AP011321,,17,BLTC,Clarinda,No. 3,Blair Morley,Michelle Thomson,Blair Morley,8-5,8,5,1,0,Completed,true,false,false
+AP011321,,17,BLTC,Clarinda,No. 4,Eleanor Scott,Maria Cvitkovic,Eleanor Scott,8-1,8,1,1,0,Completed,true,false,false

@@ -1,0 +1,179 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP003012,05 Oct 24,1,Overport Park,Hawthorn,No. 1,Joel Treveil,Josh Goodland,,3-4,3,4,0,1,Unfinished,false,false,false
+AP003012,05 Oct 24,1,Overport Park,Hawthorn,No. 2,Michael Neylan,Jason Aveling,Michael Neylan,8-1,8,1,1,0,Completed,true,false,false
+AP003012,05 Oct 24,1,Overport Park,Hawthorn,No. 3,Christian Tomasic,Adam Sofoulis,Adam Sofoulis,2-5,2,5,0,1,Completed,true,false,true
+AP003012,05 Oct 24,1,Overport Park,Hawthorn,No. 4,Beno Siebermann,Paul Wu,Beno Siebermann,5-3,5,3,1,0,Completed,true,false,true
+AP003013,05 Oct 24,1,Maccabi,Coatesville,No. 1,Jordan Jaffe,Bradley Larkins,Jordan Jaffe,8-1,8,1,1,0,Completed,true,false,false
+AP003013,05 Oct 24,1,Maccabi,Coatesville,No. 2,Marty Schwarz,Luke McDonald,Marty Schwarz,7-2,7,2,1,0,Completed,true,false,false
+AP003013,05 Oct 24,1,Maccabi,Coatesville,No. 3,Jonny Henquin,William Chu,Jonny Henquin,8-3,8,3,1,0,Completed,true,false,true
+AP003013,05 Oct 24,1,Maccabi,Coatesville,No. 4,Aaron Kramer,[Unnamed emergency — TROLS AP003013 away code 4],Aaron Kramer,8-0,8,0,1,0,Completed,false,false,true
+AP003021,12 Oct 24,2,Ormond,Mt Martha,No. 1,Michael Hickey,Christopher Arms,Christopher Arms,4-8,4,8,0,1,Completed,true,false,false
+AP003021,12 Oct 24,2,Ormond,Mt Martha,No. 2,Loic Grzembielewski,Hayden Thomas,Hayden Thomas,4-8,4,8,0,1,Completed,true,false,false
+AP003021,12 Oct 24,2,Ormond,Mt Martha,No. 3,Nathan McCracken,Liam Walsh,Liam Walsh,2-8,2,8,0,1,Completed,true,false,false
+AP003021,12 Oct 24,2,Ormond,Mt Martha,No. 4,Harry Nicola,William Burnell,William Burnell,2-8,2,8,0,1,Completed,true,true,false
+AP003022,12 Oct 24,2,BLTC,Overport Park,No. 1,Edward Andrews,Nick Wilson,Nick Wilson,5-8,5,8,0,1,Completed,true,false,false
+AP003022,12 Oct 24,2,BLTC,Overport Park,No. 2,Luca Magro,Joel Treveil,Luca Magro,8-4,8,4,1,0,Completed,true,true,false
+AP003022,12 Oct 24,2,BLTC,Overport Park,No. 3,Jackson Trigger,Christian Tomasic,Jackson Trigger,8-4,8,4,1,0,Completed,true,true,false
+AP003022,12 Oct 24,2,BLTC,Overport Park,No. 4,Roger Boyd,Beno Siebermann,Roger Boyd,8-2,8,2,1,0,Completed,true,false,false
+AP003023,12 Oct 24,2,Hawthorn,Maccabi,No. 1,Josh Goodland,Jordan Jaffe,Josh Goodland,8-3,8,3,1,0,Completed,true,false,false
+AP003023,12 Oct 24,2,Hawthorn,Maccabi,No. 2,Jason Aveling,Marty Schwarz,Jason Aveling,8-6,8,6,1,0,Completed,true,false,false
+AP003023,12 Oct 24,2,Hawthorn,Maccabi,No. 3,Martin Mornet,Aaron Kramer,Aaron Kramer,3-8,3,8,0,1,Completed,true,true,false
+AP003023,12 Oct 24,2,Hawthorn,Maccabi,No. 4,Julian Butera,Steven Kleytman,Julian Butera,8-7,8,7,1,0,Completed,true,false,false
+AP003024,12 Oct 24,2,Coatesville,Highmoor Uniting,No. 1,Callum Rankin,Tom Pope,Tom Pope,7-8,7,8,0,1,Completed,true,false,false
+AP003024,12 Oct 24,2,Coatesville,Highmoor Uniting,No. 2,Lachlan Newby,Lachlan Peters,Lachlan Peters,2-8,2,8,0,1,Completed,true,false,false
+AP003024,12 Oct 24,2,Coatesville,Highmoor Uniting,No. 3,Luke McDonald,Yves Zenou,Luke McDonald,8-7,8,7,1,0,Completed,true,false,false
+AP003024,12 Oct 24,2,Coatesville,Highmoor Uniting,No. 4,Christopher Chia,Ben Abbott,Ben Abbott,1-8,1,8,0,1,Completed,true,false,false
+AP003031,19 Oct 24,3,Mt Martha,Coatesville,No. 1,Christopher Arms,Jack Callaghan,Christopher Arms,8-6,8,6,1,0,Completed,true,false,false
+AP003031,19 Oct 24,3,Mt Martha,Coatesville,No. 2,Hayden Thomas,Michael Burke,Hayden Thomas,8-2,8,2,1,0,Completed,true,false,false
+AP003031,19 Oct 24,3,Mt Martha,Coatesville,No. 3,Robert Chipp,Bradley Larkins,Robert Chipp,8-0,8,0,1,0,Completed,true,false,false
+AP003031,19 Oct 24,3,Mt Martha,Coatesville,No. 4,William Burnell,Luke McDonald,Luke McDonald,7-8,7,8,0,1,Completed,true,false,false
+AP003032,19 Oct 24,3,Overport Park,Ormond,No. 1,Nick Wilson,Lucas Nenke,Nick Wilson,8-5,8,5,1,0,Completed,true,false,false
+AP003032,19 Oct 24,3,Overport Park,Ormond,No. 2,Joel Treveil,Nathan McCracken,Joel Treveil,8-1,8,1,1,0,Completed,true,false,false
+AP003032,19 Oct 24,3,Overport Park,Ormond,No. 3,Christian Tomasic,Andrew Lipson,Andrew Lipson,6-8,6,8,0,1,Completed,true,false,false
+AP003032,19 Oct 24,3,Overport Park,Ormond,No. 4,Julian Bartlett,Xavier Musso,Julian Bartlett,8-2,8,2,1,0,Completed,true,false,true
+AP003033,19 Oct 24,3,Maccabi,BLTC,No. 1,Jordan Jaffe,Edward Andrews,Edward Andrews,6-8,6,8,0,1,Completed,true,false,false
+AP003033,19 Oct 24,3,Maccabi,BLTC,No. 2,Jonny Henquin,Juan Sanchez,Jonny Henquin,8-0,8,0,1,0,Completed,true,false,false
+AP003033,19 Oct 24,3,Maccabi,BLTC,No. 3,Aaron Kramer,Luca Magro,Aaron Kramer,8-0,8,0,1,0,Completed,true,false,true
+AP003033,19 Oct 24,3,Maccabi,BLTC,No. 4,Jan Tenenberg,Roger Boyd,Roger Boyd,7-8,7,8,0,1,Completed,true,true,false
+AP003034,19 Oct 24,3,Highmoor Uniting,Hawthorn,No. 1,Jose Mainella,Josh Goodland,Jose Mainella,8-4,8,4,1,0,Completed,true,false,false
+AP003034,19 Oct 24,3,Highmoor Uniting,Hawthorn,No. 2,Yves Zenou,Jason Aveling,Yves Zenou,8-6,8,6,1,0,Completed,true,false,false
+AP003034,19 Oct 24,3,Highmoor Uniting,Hawthorn,No. 3,Kyle Malligan,Mitch Gleason,Mitch Gleason,7-8,7,8,0,1,Completed,true,false,false
+AP003034,19 Oct 24,3,Highmoor Uniting,Hawthorn,No. 4,Erik Bucko,Stephen Kerr,Erik Bucko,8-0,8,0,1,0,Completed,true,false,false
+AP003041,26 Oct 24,4,Hawthorn,Mt Martha,No. 1,Jason Aveling,Christopher Arms,Christopher Arms,6-8,6,8,0,1,Completed,true,false,false
+AP003041,26 Oct 24,4,Hawthorn,Mt Martha,No. 2,Alistair Young,Hayden Thomas,Hayden Thomas,1-8,1,8,0,1,Completed,true,false,false
+AP003041,26 Oct 24,4,Hawthorn,Mt Martha,No. 3,Julian Butera,Robert Chipp,Robert Chipp,2-8,2,8,0,1,Completed,true,false,false
+AP003041,26 Oct 24,4,Hawthorn,Mt Martha,No. 4,Mark Tsui,William Burnell,William Burnell,3-8,3,8,0,1,Completed,true,false,false
+AP003042,26 Oct 24,4,Coatesville,Overport Park,No. 1,Jack Callaghan,Nick Wilson,Nick Wilson,3-8,3,8,0,1,Completed,true,false,false
+AP003042,26 Oct 24,4,Coatesville,Overport Park,No. 2,Michael Burke,Joel Treveil,Michael Burke,8-3,8,3,1,0,Completed,true,false,false
+AP003042,26 Oct 24,4,Coatesville,Overport Park,No. 3,Lachlan Newby,Josh Toy,Josh Toy,1-8,1,8,0,1,Completed,true,false,false
+AP003042,26 Oct 24,4,Coatesville,Overport Park,No. 4,Luke McDonald,Christian Tomasic,Luke McDonald,8-3,8,3,1,0,Completed,true,false,false
+AP003043,26 Oct 24,4,Ormond,Maccabi,No. 1,Loic Grzembielewski,Jordan Jaffe,Loic Grzembielewski,8-3,8,3,1,0,Completed,true,false,false
+AP003043,26 Oct 24,4,Ormond,Maccabi,No. 2,Kenny Ong,Marty Schwarz,Marty Schwarz,3-8,3,8,0,1,Completed,true,false,false
+AP003043,26 Oct 24,4,Ormond,Maccabi,No. 3,Calum Roberts,Aaron Kramer,Calum Roberts,8-1,8,1,1,0,Completed,true,false,false
+AP003043,26 Oct 24,4,Ormond,Maccabi,No. 4,Nick Salmon,Steven Kleytman,Nick Salmon,8-4,8,4,1,0,Completed,true,false,false
+AP003044,26 Oct 24,4,BLTC,Highmoor Uniting,No. 1,Edward Andrews,Tom Pope,Edward Andrews,8-7,8,7,1,0,Completed,true,false,false
+AP003044,26 Oct 24,4,BLTC,Highmoor Uniting,No. 2,Luca Magro,Paul Luke,Luca Magro,8-0,8,0,1,0,Completed,true,true,false
+AP003044,26 Oct 24,4,BLTC,Highmoor Uniting,No. 3,Jackson Trigger,Yves Zenou,Jackson Trigger,8-6,8,6,1,0,Completed,true,true,false
+AP003044,26 Oct 24,4,BLTC,Highmoor Uniting,No. 4,Roger Boyd,Erik Bucko,Roger Boyd,8-3,8,3,1,0,Completed,true,false,false
+AP003051,09 Nov 24,5,Maccabi,Highmoor Uniting,No. 1,Jonny Henquin,Jose Mainella,Jose Mainella,4-8,4,8,0,1,Completed,true,false,false
+AP003051,09 Nov 24,5,Maccabi,Highmoor Uniting,No. 2,Jesse Flicker,Lachlan Peters,Jesse Flicker,8-3,8,3,1,0,Completed,true,false,false
+AP003051,09 Nov 24,5,Maccabi,Highmoor Uniting,No. 3,Joey Pat,Yves Zenou,Yves Zenou,4-8,4,8,0,1,Completed,true,true,false
+AP003051,09 Nov 24,5,Maccabi,Highmoor Uniting,No. 4,Steven Kleytman,Ben Abbott,Ben Abbott,6-8,6,8,0,1,Completed,true,false,false
+AP003052,09 Nov 24,5,Ormond,Coatesville,No. 1,Michael Hickey,Jack Callaghan,Michael Hickey,8-4,8,4,1,0,Completed,true,false,false
+AP003052,09 Nov 24,5,Ormond,Coatesville,No. 2,Loic Grzembielewski,Bradley Larkins,Bradley Larkins,1-8,1,8,0,1,Completed,true,false,false
+AP003052,09 Nov 24,5,Ormond,Coatesville,No. 3,Calum Roberts,Luke McDonald,Calum Roberts,8-2,8,2,1,0,Completed,true,false,false
+AP003052,09 Nov 24,5,Ormond,Coatesville,No. 4,Nick Salmon,Lachlan Newby,Lachlan Newby,4-8,4,8,0,1,Completed,true,false,false
+AP003053,09 Nov 24,5,Hawthorn,BLTC,No. 1,Josh Goodland,Juan Sanchez,Josh Goodland,8-3,8,3,1,0,Completed,true,false,false
+AP003053,09 Nov 24,5,Hawthorn,BLTC,No. 2,Jason Aveling,Luca Magro,Luca Magro,3-8,3,8,0,1,Completed,true,false,true
+AP003053,09 Nov 24,5,Hawthorn,BLTC,No. 3,Aravind Srihari,Warren Kennard,Warren Kennard,7-8,7,8,0,1,Completed,true,true,false
+AP003053,09 Nov 24,5,Hawthorn,BLTC,No. 4,Alistair Young,Roger Boyd,Roger Boyd,7-8,7,8,0,1,Completed,true,false,false
+AP003054,09 Nov 24,5,Mt Martha,Overport Park,No. 1,Hayden Thomas,Joel Treveil,Hayden Thomas,8-6,8,6,1,0,Completed,true,false,false
+AP003054,09 Nov 24,5,Mt Martha,Overport Park,No. 2,Liam Walsh,Josh Toy,Josh Toy,5-8,5,8,0,1,Completed,true,false,false
+AP003054,09 Nov 24,5,Mt Martha,Overport Park,No. 3,William Burnell,Christian Tomasic,William Burnell,8-6,8,6,1,0,Completed,true,false,false
+AP003054,09 Nov 24,5,Mt Martha,Overport Park,No. 4,Thomas Floyd,Daniel Tentser,Thomas Floyd,8-7,8,7,1,0,Completed,true,true,true
+AP003061,16 Nov 24,6,Overport Park,Maccabi,No. 1,Nick Wilson,Jordan Jaffe,Nick Wilson,8-7,8,7,1,0,Completed,true,false,false
+AP003061,16 Nov 24,6,Overport Park,Maccabi,No. 2,Joel Treveil,[Unnamed emergency — TROLS AP003061 away code 2],Joel Treveil,8-0,8,0,1,0,Completed,false,false,true
+AP003061,16 Nov 24,6,Overport Park,Maccabi,No. 3,Christian Tomasic,Jonny Henquin,Christian Tomasic,8-0,8,0,1,0,Completed,true,false,false
+AP003061,16 Nov 24,6,Overport Park,Maccabi,No. 4,Perry Maher,Steven Kleytman,Steven Kleytman,2-8,2,8,0,1,Completed,true,false,false
+AP003062,16 Nov 24,6,Highmoor Uniting,Mt Martha,No. 1,Paul Luke,Christopher Arms,Christopher Arms,6-8,6,8,0,1,Completed,true,false,false
+AP003062,16 Nov 24,6,Highmoor Uniting,Mt Martha,No. 2,Lachlan Peters,Liam Walsh,Liam Walsh,3-8,3,8,0,1,Completed,true,false,false
+AP003062,16 Nov 24,6,Highmoor Uniting,Mt Martha,No. 3,Ben Abbott,Rod Wilson,Rod Wilson,4-8,4,8,0,1,Completed,true,false,true
+AP003062,16 Nov 24,6,Highmoor Uniting,Mt Martha,No. 4,Erik Bucko,Nic Xerri,Erik Bucko,8-2,8,2,1,0,Completed,true,false,true
+AP003063,16 Nov 24,6,Coatesville,Hawthorn,No. 1,Callum Rankin,Josh Goodland,Josh Goodland,3-8,3,8,0,1,Completed,true,false,false
+AP003063,16 Nov 24,6,Coatesville,Hawthorn,No. 2,Luke McDonald,Jason Aveling,Jason Aveling,6-8,6,8,0,1,Completed,true,false,false
+AP003063,16 Nov 24,6,Coatesville,Hawthorn,No. 3,Christopher Chia,Alistair Young,Alistair Young,5-8,5,8,0,1,Completed,true,false,false
+AP003063,16 Nov 24,6,Coatesville,Hawthorn,No. 4,Lachlan Newby,David McWha,Lachlan Newby,8-2,8,2,1,0,Completed,true,false,true
+AP003064,16 Nov 24,6,BLTC,Ormond,No. 1,Edward Andrews,Michael Hickey,Edward Andrews,8-4,8,4,1,0,Completed,true,false,false
+AP003064,16 Nov 24,6,BLTC,Ormond,No. 2,Luca Magro,Lucas Nenke,Luca Magro,8-2,8,2,1,0,Completed,true,true,false
+AP003064,16 Nov 24,6,BLTC,Ormond,No. 3,Tom Goldenberg,Kenny Ong,Kenny Ong,7-8,7,8,0,1,Completed,true,false,false
+AP003064,16 Nov 24,6,BLTC,Ormond,No. 4,Roger Boyd,Harry Nicola,Harry Nicola,3-8,3,8,0,1,Completed,true,false,true
+AP003071,23 Nov 24,7,Mt Martha,Maccabi,No. 1,Liam Walsh,Jordan Jaffe,Jordan Jaffe,3-8,3,8,0,1,Completed,true,false,false
+AP003071,23 Nov 24,7,Mt Martha,Maccabi,No. 2,William Burnell,Marty Schwarz,Marty Schwarz,6-8,6,8,0,1,Completed,true,false,false
+AP003071,23 Nov 24,7,Mt Martha,Maccabi,No. 3,Adam Snow,Aaron Kramer,Adam Snow,8-4,8,4,1,0,Completed,true,true,false
+AP003071,23 Nov 24,7,Mt Martha,Maccabi,No. 4,Nic Xerri,Steven Kleytman,Nic Xerri,8-7,8,7,1,0,Completed,true,true,false
+AP003073,23 Nov 24,7,Ormond,Hawthorn,No. 1,Michael Hickey,Josh Goodland,Michael Hickey,8-5,8,5,1,0,Completed,true,false,false
+AP003073,23 Nov 24,7,Ormond,Hawthorn,No. 2,Kenny Ong,Jason Aveling,Kenny Ong,8-7,8,7,1,0,Completed,true,false,false
+AP003073,23 Nov 24,7,Ormond,Hawthorn,No. 3,Calum Roberts,Alistair Young,Calum Roberts,8-0,8,0,1,0,Completed,true,false,false
+AP003073,23 Nov 24,7,Ormond,Hawthorn,No. 4,Andrew Lipson,Julian Butera,Julian Butera,5-8,5,8,0,1,Completed,true,false,false
+AP003091,07 Dec 24,9,Mt Martha,Ormond,No. 1,Hayden Thomas,Michael Hickey,Hayden Thomas,8-6,8,6,1,0,Completed,true,false,false
+AP003091,07 Dec 24,9,Mt Martha,Ormond,No. 2,Robert Chipp,Lucas Nenke,Robert Chipp,8-7,8,7,1,0,Completed,true,false,false
+AP003091,07 Dec 24,9,Mt Martha,Ormond,No. 3,Liam Walsh,Kenny Ong,Kenny Ong,4-8,4,8,0,1,Completed,true,false,false
+AP003091,07 Dec 24,9,Mt Martha,Ormond,No. 4,Adam Snow,Ben Darrou,Adam Snow,8-6,8,6,1,0,Completed,true,true,true
+AP003092,07 Dec 24,9,Overport Park,BLTC,No. 1,Joel Treveil,Edward Andrews,Edward Andrews,3-8,3,8,0,1,Completed,true,false,false
+AP003092,07 Dec 24,9,Overport Park,BLTC,No. 2,Josh Toy,Juan Sanchez,Juan Sanchez,3-8,3,8,0,1,Completed,true,false,false
+AP003092,07 Dec 24,9,Overport Park,BLTC,No. 3,Perry Maher,Warren Kennard,Warren Kennard,1-8,1,8,0,1,Completed,true,false,false
+AP003092,07 Dec 24,9,Overport Park,BLTC,No. 4,Steve Dumsday,Roger Boyd,Steve Dumsday,8-3,8,3,1,0,Completed,true,false,false
+AP003093,07 Dec 24,9,Maccabi,Hawthorn,No. 1,Jordan Jaffe,Josh Goodland,Jordan Jaffe,8-5,8,5,1,0,Completed,true,false,false
+AP003093,07 Dec 24,9,Maccabi,Hawthorn,No. 2,Jonny Henquin,Jason Aveling,Jason Aveling,7-8,7,8,0,1,Completed,true,false,false
+AP003093,07 Dec 24,9,Maccabi,Hawthorn,No. 3,Steven Kleytman,Martin Mornet,Martin Mornet,2-8,2,8,0,1,Completed,true,false,true
+AP003093,07 Dec 24,9,Maccabi,Hawthorn,No. 4,Damon Flicker,Daniel Jacobs,Daniel Jacobs,3-8,3,8,0,1,Completed,true,true,true
+AP003094,07 Dec 24,9,Highmoor Uniting,Coatesville,No. 1,Jose Mainella,Bradley Larkins,Jose Mainella,8-0,8,0,1,0,Completed,true,false,false
+AP003094,07 Dec 24,9,Highmoor Uniting,Coatesville,No. 2,Tom Pope,Callum Rankin,Tom Pope,8-1,8,1,1,0,Completed,true,false,false
+AP003094,07 Dec 24,9,Highmoor Uniting,Coatesville,No. 3,Yves Zenou,Lachlan Newby,Yves Zenou,8-6,8,6,1,0,Completed,true,false,false
+AP003094,07 Dec 24,9,Highmoor Uniting,Coatesville,No. 4,Ben Abbott,William Chu,William Chu,5-8,5,8,0,1,Completed,true,false,true
+AP003101,14 Dec 24,10,Coatesville,Mt Martha,No. 1,Michael Burke,Hayden Thomas,Hayden Thomas,1-8,1,8,0,1,Completed,true,false,false
+AP003101,14 Dec 24,10,Coatesville,Mt Martha,No. 2,Bradley Larkins,Robert Chipp,Robert Chipp,5-8,5,8,0,1,Completed,true,false,false
+AP003101,14 Dec 24,10,Coatesville,Mt Martha,No. 3,Luke McDonald,Liam Walsh,Liam Walsh,5-8,5,8,0,1,Completed,true,false,false
+AP003101,14 Dec 24,10,Coatesville,Mt Martha,No. 4,Christopher Chia,William Burnell,William Burnell,3-8,3,8,0,1,Completed,true,false,false
+AP003102,14 Dec 24,10,Ormond,Overport Park,No. 1,Michael Hickey,Nick Wilson,Nick Wilson,2-8,2,8,0,1,Completed,true,false,false
+AP003102,14 Dec 24,10,Ormond,Overport Park,No. 2,Lucas Nenke,Joel Treveil,Lucas Nenke,8-7,8,7,1,0,Completed,true,false,false
+AP003102,14 Dec 24,10,Ormond,Overport Park,No. 3,Calum Roberts,Josh Toy,Calum Roberts,8-4,8,4,1,0,Completed,true,false,false
+AP003102,14 Dec 24,10,Ormond,Overport Park,No. 4,Nathan McCracken,Beno Siebermann,Beno Siebermann,3-8,3,8,0,1,Completed,true,false,false
+AP003103,14 Dec 24,10,BLTC,Maccabi,No. 1,Edward Andrews,Jordan Jaffe,Jordan Jaffe,7-8,7,8,0,1,Completed,true,false,false
+AP003103,14 Dec 24,10,BLTC,Maccabi,No. 2,Luca Magro,Jesse Flicker,Jesse Flicker,7-8,7,8,0,1,Completed,true,true,false
+AP003103,14 Dec 24,10,BLTC,Maccabi,No. 3,Warren Kennard,Aaron Kramer,Aaron Kramer,7-8,7,8,0,1,Completed,true,false,false
+AP003103,14 Dec 24,10,BLTC,Maccabi,No. 4,Roger Boyd,Steven Kleytman,Steven Kleytman,4-8,4,8,0,1,Completed,true,false,false
+AP003104,14 Dec 24,10,Hawthorn,Highmoor Uniting,No. 1,Jason Aveling,Tom Pope,Jason Aveling,8-3,8,3,1,0,Completed,true,false,false
+AP003104,14 Dec 24,10,Hawthorn,Highmoor Uniting,No. 2,Alistair Young,Lachlan Peters,Lachlan Peters,2-8,2,8,0,1,Completed,true,false,false
+AP003104,14 Dec 24,10,Hawthorn,Highmoor Uniting,No. 3,Mark Tsui,Yves Zenou,Mark Tsui,8-7,8,7,1,0,Completed,true,false,false
+AP003104,14 Dec 24,10,Hawthorn,Highmoor Uniting,No. 4,Daniel Shunichev,Erik Bucko,Erik Bucko,5-8,5,8,0,1,Completed,true,true,false
+AP003113,01 Feb 25,11,Maccabi,Ormond,No. 1,Jordan Jaffe,Michael Hickey,Jordan Jaffe,8-1,8,1,1,0,Completed,true,false,false
+AP003113,01 Feb 25,11,Maccabi,Ormond,No. 2,Aaron Kramer,Lucas Nenke,Aaron Kramer,8-4,8,4,1,0,Completed,true,false,false
+AP003113,01 Feb 25,11,Maccabi,Ormond,No. 3,Steven Kleytman,Calum Roberts,Calum Roberts,3-8,3,8,0,1,Completed,true,false,false
+AP003113,01 Feb 25,11,Maccabi,Ormond,No. 4,Saul Muscatel,Nick Salmon,Saul Muscatel,8-5,8,5,1,0,Completed,true,true,false
+AP003114,01 Feb 25,11,Highmoor Uniting,BLTC,No. 1,Tom Pope,Edward Andrews,Edward Andrews,1-8,1,8,0,1,Completed,true,false,false
+AP003114,01 Feb 25,11,Highmoor Uniting,BLTC,No. 2,Lachlan Peters,Luca Magro,Lachlan Peters,8-3,8,3,1,0,Completed,true,false,true
+AP003114,01 Feb 25,11,Highmoor Uniting,BLTC,No. 3,Yves Zenou,Warren Kennard,Yves Zenou,8-4,8,4,1,0,Completed,true,false,false
+AP003114,01 Feb 25,11,Highmoor Uniting,BLTC,No. 4,Erik Bucko,Roger Boyd,Erik Bucko,8-1,8,1,1,0,Completed,true,false,false
+AP003121,08 Feb 25,12,Highmoor Uniting,Maccabi,No. 1,Jose Mainella,Jordan Jaffe,Jose Mainella,8-3,8,3,1,0,Completed,true,false,false
+AP003121,08 Feb 25,12,Highmoor Uniting,Maccabi,No. 2,Tom Pope,Marty Schwarz,Tom Pope,8-0,8,0,1,0,Completed,true,false,false
+AP003121,08 Feb 25,12,Highmoor Uniting,Maccabi,No. 3,Yves Zenou,Aaron Kramer,Aaron Kramer,3-8,3,8,0,1,Completed,true,false,false
+AP003121,08 Feb 25,12,Highmoor Uniting,Maccabi,No. 4,Ben Abbott,Ben Pollak,Ben Abbott,8-1,8,1,1,0,Completed,true,false,true
+AP003122,08 Feb 25,12,Coatesville,Ormond,No. 1,Jack Callaghan,Michael Hickey,Jack Callaghan,8-6,8,6,1,0,Completed,true,false,false
+AP003122,08 Feb 25,12,Coatesville,Ormond,No. 2,Bradley Larkins,Loic Grzembielewski,Loic Grzembielewski,1-8,1,8,0,1,Completed,true,false,false
+AP003122,08 Feb 25,12,Coatesville,Ormond,No. 3,Christopher Chia,Kenny Ong,Kenny Ong,1-8,1,8,0,1,Completed,true,false,false
+AP003122,08 Feb 25,12,Coatesville,Ormond,No. 4,Lachlan Newby,Andrew Lipson,Lachlan Newby,8-6,8,6,1,0,Completed,true,false,false
+AP003123,08 Feb 25,12,BLTC,Hawthorn,No. 1,Edward Andrews,Jason Aveling,Jason Aveling,1-8,1,8,0,1,Completed,true,false,false
+AP003123,08 Feb 25,12,BLTC,Hawthorn,No. 2,Warren Kennard,Martin Mornet,Warren Kennard,8-2,8,2,1,0,Completed,true,false,true
+AP003123,08 Feb 25,12,BLTC,Hawthorn,No. 3,Luca Magro,Alistair Young,Luca Magro,8-6,8,6,1,0,Completed,true,true,false
+AP003123,08 Feb 25,12,BLTC,Hawthorn,No. 4,Tom Goldenberg,Mark Tsui,Mark Tsui,0-8,0,8,0,1,Completed,true,false,false
+AP003124,08 Feb 25,12,Overport Park,Mt Martha,No. 1,Nick Wilson,Christopher Arms,Nick Wilson,8-6,8,6,1,0,Completed,true,false,false
+AP003124,08 Feb 25,12,Overport Park,Mt Martha,No. 2,Joel Treveil,William Burnell,Joel Treveil,8-7,8,7,1,0,Completed,true,false,false
+AP003124,08 Feb 25,12,Overport Park,Mt Martha,No. 3,Josh Toy,Adam Snow,Josh Toy,8-3,8,3,1,0,Completed,true,false,true
+AP003124,08 Feb 25,12,Overport Park,Mt Martha,No. 4,Perry Maher,Luca Salpietro,Perry Maher,8-6,8,6,1,0,Completed,true,false,true
+AP003133,15 Feb 25,13,Hawthorn,Coatesville,No. 1,Josh Goodland,Michael Burke,Josh Goodland,8-5,8,5,1,0,Completed,true,false,false
+AP003133,15 Feb 25,13,Hawthorn,Coatesville,No. 2,Jason Aveling,Bradley Larkins,Jason Aveling,8-2,8,2,1,0,Completed,true,false,false
+AP003133,15 Feb 25,13,Hawthorn,Coatesville,No. 3,Julian Butera,Luke McDonald,Julian Butera,8-5,8,5,1,0,Completed,true,false,false
+AP003133,15 Feb 25,13,Hawthorn,Coatesville,No. 4,Mark Tsui,Lachlan Newby,Lachlan Newby,3-8,3,8,0,1,Completed,true,false,false
+AP003134,15 Feb 25,13,Ormond,BLTC,No. 1,Michael Hickey,Edward Andrews,Edward Andrews,3-6,3,6,0,1,Completed,true,false,false
+AP003134,15 Feb 25,13,Ormond,BLTC,No. 2,Kenny Ong,Roger Boyd,Kenny Ong,8-0,8,0,1,0,Completed,true,false,false
+AP003141,22 Feb 25,14,Maccabi,Mt Martha,No. 1,Jordan Jaffe,Christopher Arms,Jordan Jaffe,8-5,8,5,1,0,Completed,true,false,false
+AP003141,22 Feb 25,14,Maccabi,Mt Martha,No. 2,Marty Schwarz,William Burnell,Marty Schwarz,8-6,8,6,1,0,Completed,true,false,false
+AP003141,22 Feb 25,14,Maccabi,Mt Martha,No. 3,Jonny Henquin,Luca Salpietro,Jonny Henquin,8-5,8,5,1,0,Completed,true,false,true
+AP003141,22 Feb 25,14,Maccabi,Mt Martha,No. 4,Steven Kleytman,[Unnamed emergency — TROLS AP003141 away code 4],Steven Kleytman,8-0,8,0,1,0,Completed,false,false,true
+AP003143,22 Feb 25,14,Hawthorn,Ormond,No. 1,Josh Goodland,Michael Hickey,Josh Goodland,8-7,8,7,1,0,Completed,true,false,false
+AP003143,22 Feb 25,14,Hawthorn,Ormond,No. 2,Jason Aveling,Loic Grzembielewski,Jason Aveling,8-5,8,5,1,0,Completed,true,false,false
+AP003143,22 Feb 25,14,Hawthorn,Ormond,No. 3,Todd Elliot,Lucas Nenke,Lucas Nenke,4-8,4,8,0,1,Completed,true,true,false
+AP003143,22 Feb 25,14,Hawthorn,Ormond,No. 4,Alistair Young,Andrew Lipson,Alistair Young,8-5,8,5,1,0,Completed,true,false,false
+AP003301,,16,Mt Martha,BLTC,No. 1,Christopher Arms,Edward Andrews,Edward Andrews,4-8,4,8,0,1,Completed,true,false,false
+AP003301,,16,Mt Martha,BLTC,No. 2,Robert Chipp,Luca Magro,Luca Magro,6-8,6,8,0,1,Completed,true,false,true
+AP003301,,16,Mt Martha,BLTC,No. 3,Liam Walsh,Warren Kennard,Warren Kennard,3-8,3,8,0,1,Completed,true,false,false
+AP003301,,16,Mt Martha,BLTC,No. 4,William Burnell,Roger Boyd,William Burnell,8-5,8,5,1,0,Completed,true,false,false
+AP003302,,16,Highmoor Uniting,Overport Park,No. 1,Jose Mainella,Nick Wilson,Nick Wilson,4-8,4,8,0,1,Completed,true,false,false
+AP003302,,16,Highmoor Uniting,Overport Park,No. 2,Tom Pope,Joel Treveil,Joel Treveil,4-8,4,8,0,1,Completed,true,false,false
+AP003302,,16,Highmoor Uniting,Overport Park,No. 3,Lachlan Peters,Josh Toy,Josh Toy,5-8,5,8,0,1,Completed,true,false,false
+AP003302,,16,Highmoor Uniting,Overport Park,No. 4,Yves Zenou,Perry Maher,Yves Zenou,8-3,8,3,1,0,Completed,true,false,false
+AP003321,,17,Mt Martha,Overport Park,No. 1,Christopher Arms,Nick Wilson,Nick Wilson,3-8,3,8,0,1,Completed,true,false,false
+AP003321,,17,Mt Martha,Overport Park,No. 2,Hayden Thomas,Joel Treveil,Hayden Thomas,8-4,8,4,1,0,Completed,true,false,false
+AP003321,,17,Mt Martha,Overport Park,No. 3,Robert Chipp,Christian Tomasic,Robert Chipp,8-4,8,4,1,0,Completed,true,false,false
+AP003321,,17,Mt Martha,Overport Park,No. 4,William Burnell,Perry Maher,William Burnell,8-7,8,7,1,0,Completed,true,false,false

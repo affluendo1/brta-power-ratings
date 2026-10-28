@@ -1,0 +1,99 @@
+{
+  "asset_id": "AP20-AP108",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 09/10",
+  "season_id": "AP20",
+  "season_label": "Summer 09/10",
+  "source_section_code": "AP108",
+  "section_label": "Mens S/D 9",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Murrumbeena",
+      "wins": 0,
+      "points": 111,
+      "percentage": 197.02,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Beaumaris CC 2",
+      "wins": 0,
+      "points": 91.5,
+      "percentage": 121.67,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Le Page",
+      "wins": 0,
+      "points": 65,
+      "percentage": 97.65,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Beaumaris CC 1",
+      "wins": 0,
+      "points": 47,
+      "percentage": 87.8,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Port Melbourne",
+      "wins": 0,
+      "points": 38,
+      "percentage": 72.08,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Sandringham",
+      "wins": 0,
+      "points": 36.5,
+      "percentage": 83.15,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "MCC",
+      "wins": 0,
+      "points": 31,
+      "percentage": 83.61,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP20-AP108",
+  "fixtures": 60,
+  "completed_fixtures": 41,
+  "draw_fixtures": 4,
+  "singles_rubbers": 164,
+  "doubles_rubbers": 80,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP108073 singles No. 3: '7-7'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP108311 doubles No. 2: '7-5 6-7'. Missing score not inferred; excluded from ratings and game totals.",
+    "Fixture game totals do not match rubbers for AP108311: TROLS team total 60-49; complete-score total 54-49. Both published records retained."
+  ]
+}

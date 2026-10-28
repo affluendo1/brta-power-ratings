@@ -1,0 +1,105 @@
+{
+  "asset_id": "AP45-AP018",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 22/23",
+  "season_id": "AP45",
+  "season_label": "Summer 22/23",
+  "source_section_code": "AP018",
+  "section_label": "Mx Rubbers 5",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "FCTC",
+      "wins": 12,
+      "points": 87,
+      "percentage": 139.07,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "Glen Huntly",
+      "wins": 8,
+      "points": 69,
+      "percentage": 128.09,
+      "marker": "P"
+    },
+    {
+      "position": 3,
+      "team": "Black Rock",
+      "wins": 6,
+      "points": 61,
+      "percentage": 113.35,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Hawthorn",
+      "wins": 7,
+      "points": 60.5,
+      "percentage": 96.3,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "BLTC Blue",
+      "wins": 6,
+      "points": 59,
+      "percentage": 116.67,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Le Page",
+      "wins": 6,
+      "points": 59,
+      "percentage": 108.84,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "St Finbar's",
+      "wins": 4,
+      "points": 43,
+      "percentage": 95.37,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "BLTC White",
+      "wins": 0,
+      "points": 9.5,
+      "percentage": 36.6,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP45-AP018",
+  "fixtures": 59,
+  "completed_fixtures": 51,
+  "draw_fixtures": 59,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 200,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP018022 doubles No. 1: '7-6 1-0'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

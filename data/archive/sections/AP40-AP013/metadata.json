@@ -1,0 +1,107 @@
+{
+  "asset_id": "AP40-AP013",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 19/20",
+  "season_id": "AP40",
+  "season_label": "Summer 19/20",
+  "source_section_code": "AP013",
+  "section_label": "Mens S/D 1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "BLTC 1",
+      "wins": 9,
+      "points": 97,
+      "percentage": 139.87,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Hartwell",
+      "wins": 7,
+      "points": 94,
+      "percentage": 156.27,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "BLTC 2",
+      "wins": 10,
+      "points": 90.5,
+      "percentage": 121.34,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Dendy Park",
+      "wins": 6,
+      "points": 73.5,
+      "percentage": 109.21,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "GPHC",
+      "wins": 6,
+      "points": 73,
+      "percentage": 100.18,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Mt Eliza",
+      "wins": 2,
+      "points": 50,
+      "percentage": 77.02,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Carmelite",
+      "wins": 4,
+      "points": 46.5,
+      "percentage": 64.7,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "Tennis World MP",
+      "wins": 2,
+      "points": 35.5,
+      "percentage": 65.38,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP40-AP013",
+  "fixtures": 59,
+  "completed_fixtures": 50,
+  "draw_fixtures": 59,
+  "singles_rubbers": 196,
+  "doubles_rubbers": 95,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP013031 doubles No. 1: '2-0'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP013031 doubles No. 2: '1-2'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP013052 doubles No. 1: '4-6 6-3 0-1'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

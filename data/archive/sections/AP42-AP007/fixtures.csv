@@ -1,0 +1,47 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP007011,01 May 21,1,regular,Round 1,St Finbar's,Hurlingham Park,6,2,2,2,4,4,31,30,Completed,
+AP007012,01 May 21,1,regular,Round 1,BLTC,Le Page,0,8,0,4,0,8,17,48,Completed,
+pending-ap007-r1-port-melbourne-bye,01 May 21,1,regular,Round 1,Port Melbourne,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007022,08 May 21,2,regular,Round 2,Le Page,Port Melbourne,6,2,2,2,4,4,36,30,Completed,
+AP007023,08 May 21,2,regular,Round 2,Hurlingham Park,BLTC,1,7,1,3,3,7,41,56,Completed,
+pending-ap007-r2-bye-st-finbar-s,08 May 21,2,regular,Round 2,Bye,St Finbar's,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007031,15 May 21,3,regular,Round 3,St Finbar's,BLTC,7,1,3,1,6,2,45,32,Completed,
+AP007032,15 May 21,3,regular,Round 3,Port Melbourne,Hurlingham Park,8,0,4,0,8,2,59,43,Completed,
+pending-ap007-r3-bye-le-page,15 May 21,3,regular,Round 3,Bye,Le Page,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007041,22 May 21,4,regular,Round 4,Le Page,St Finbar's,8,0,4,0,8,0,48,10,Completed,
+AP007043,22 May 21,4,regular,Round 4,BLTC,Port Melbourne,8,0,4,0,8,1,54,28,Completed,
+pending-ap007-r4-hurlingham-park-bye,22 May 21,4,regular,Round 4,Hurlingham Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap007-r5-bye-bltc,29 May 21,5,regular,Round 5,Bye,BLTC,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap007-r5-le-page-hurlingham-park,29 May 21,5,regular,Round 5,Le Page,Hurlingham Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap007-r5-st-finbar-s-port-melbourne,29 May 21,5,regular,Round 5,St Finbar's,Port Melbourne,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap007-r6-bye-port-melbourne,05 Jun 21,6,regular,Round 6,Bye,Port Melbourne,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap007-r6-hurlingham-park-st-finbar-s,05 Jun 21,6,regular,Round 6,Hurlingham Park,St Finbar's,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap007-r6-le-page-bltc,05 Jun 21,6,regular,Round 6,Le Page,BLTC,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP007072,19 Jun 21,7,regular,Round 7,Port Melbourne,Le Page,7,1,3,1,7,2,51,24,Completed,
+AP007073,19 Jun 21,7,regular,Round 7,BLTC,Hurlingham Park,7,1,3,1,7,2,54,31,Completed,
+pending-ap007-r7-st-finbar-s-bye,19 Jun 21,7,regular,Round 7,St Finbar's,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007081,26 Jun 21,8,regular,Round 8,BLTC,St Finbar's,7,1,3,1,7,3,57,45,Completed,
+AP007082,26 Jun 21,8,regular,Round 8,Hurlingham Park,Port Melbourne,7,1,3,1,6,2,43,29,Completed,
+pending-ap007-r8-le-page-bye,26 Jun 21,8,regular,Round 8,Le Page,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007091,10 Jul 21,9,regular,Round 9,St Finbar's,Le Page,0,8,0,4,0,8,28,50,Completed,
+AP007093,10 Jul 21,9,regular,Round 9,Port Melbourne,BLTC,7,1,3,1,7,2,53,40,Completed,
+pending-ap007-r9-bye-hurlingham-park,10 Jul 21,9,regular,Round 9,Bye,Hurlingham Park,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap007-r10-bltc-bye,17 Jul 21,10,regular,Round 10,BLTC,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap007-r10-hurlingham-park-le-page,17 Jul 21,10,regular,Round 10,Hurlingham Park,Le Page,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap007-r10-port-melbourne-st-finbar-s,17 Jul 21,10,regular,Round 10,Port Melbourne,St Finbar's,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap007-r11-bltc-le-page,24 Jul 21,11,regular,Round 11,BLTC,Le Page,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap007-r11-port-melbourne-bye,24 Jul 21,11,regular,Round 11,Port Melbourne,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap007-r11-st-finbar-s-hurlingham-park,24 Jul 21,11,regular,Round 11,St Finbar's,Hurlingham Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP007122,31 Jul 21,12,regular,Round 12,Le Page,Port Melbourne,1,7,1,3,2,7,22,48,Completed,
+AP007123,31 Jul 21,12,regular,Round 12,Hurlingham Park,BLTC,8,0,4,0,8,1,54,27,Completed,
+pending-ap007-r12-bye-st-finbar-s,31 Jul 21,12,regular,Round 12,Bye,St Finbar's,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap007-r13-bye-le-page,07 Aug 21,13,regular,Round 13,Bye,Le Page,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap007-r13-port-melbourne-hurlingham-park,07 Aug 21,13,regular,Round 13,Port Melbourne,Hurlingham Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap007-r13-st-finbar-s-bltc,07 Aug 21,13,regular,Round 13,St Finbar's,BLTC,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap007-r14-bltc-port-melbourne,14 Aug 21,14,regular,Round 14,BLTC,Port Melbourne,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap007-r14-hurlingham-park-bye,14 Aug 21,14,regular,Round 14,Hurlingham Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap007-r14-le-page-st-finbar-s,14 Aug 21,14,regular,Round 14,Le Page,St Finbar's,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap007-r15-bye-bltc,21 Aug 21,15,regular,Round 15,Bye,BLTC,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap007-r15-le-page-hurlingham-park,21 Aug 21,15,regular,Round 15,Le Page,Hurlingham Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap007-r15-st-finbar-s-port-melbourne,21 Aug 21,15,regular,Round 15,St Finbar's,Port Melbourne,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap007-r16-le-page-port-melbourne,,16,grand_final,Grand final · TROLS entry 2,Le Page,Port Melbourne,,,,,,,,,Missing Result,No individual scorecard / no rubbers recorded

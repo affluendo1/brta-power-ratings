@@ -1,0 +1,180 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP011011,05 Oct 24,1,East Malvern Blue,East Malvern Navy,No. 1,Frantzeskos Triantafyllou,Levin De Leon,Frantzeskos Triantafyllou,6-1,6,1,1,0,Completed,true,false,false
+AP011011,05 Oct 24,1,East Malvern Blue,East Malvern Navy,No. 2,Faran Mazloomi,Robert Wyld,Faran Mazloomi,7-2,7,2,1,0,Completed,true,false,false
+AP011011,05 Oct 24,1,East Malvern Blue,East Malvern Navy,No. 3,James Bryden,Mark Patrick,,4-4,4,4,0,0,Unfinished,false,false,false
+AP011011,05 Oct 24,1,East Malvern Blue,East Malvern Navy,No. 4,David Bryden,Caley Wilson,Caley Wilson,1-8,1,8,0,1,Completed,true,false,false
+AP011021,12 Oct 24,2,Royal Ave,East Malvern Blue,No. 1,Justin Alway,Mads Sorensen,Mads Sorensen,0-8,0,8,0,1,Completed,true,false,false
+AP011021,12 Oct 24,2,Royal Ave,East Malvern Blue,No. 2,Dean Craig,Alex Dusek,Alex Dusek,7-8,7,8,0,1,Completed,true,false,false
+AP011021,12 Oct 24,2,Royal Ave,East Malvern Blue,No. 3,Toby Brett,Frantzeskos Triantafyllou,Frantzeskos Triantafyllou,2-8,2,8,0,1,Completed,true,false,false
+AP011021,12 Oct 24,2,Royal Ave,East Malvern Blue,No. 4,Jeremy Rouch,Faran Mazloomi,Faran Mazloomi,1-8,1,8,0,1,Completed,true,false,false
+AP011022,12 Oct 24,2,East Malvern Navy,Tennis World,No. 1,Robert Wyld,Alex Wilson,Robert Wyld,8-7,8,7,1,0,Completed,true,false,false
+AP011022,12 Oct 24,2,East Malvern Navy,Tennis World,No. 2,Tom Taylor,Joel Dalidowicz,Tom Taylor,8-2,8,2,1,0,Completed,true,false,false
+AP011022,12 Oct 24,2,East Malvern Navy,Tennis World,No. 3,Mark Patrick,Rohit Gupta,Mark Patrick,8-4,8,4,1,0,Completed,true,false,false
+AP011022,12 Oct 24,2,East Malvern Navy,Tennis World,No. 4,James Thompson,Alex Mitsopoulos,James Thompson,8-5,8,5,1,0,Completed,true,false,false
+AP011023,12 Oct 24,2,Mentone Gold,Black Rock,No. 1,Jackson Ralph,Jack James,Jackson Ralph,8-4,8,4,1,0,Completed,true,false,false
+AP011023,12 Oct 24,2,Mentone Gold,Black Rock,No. 2,Tobias Malone-Marty,Joseph Desmond,Tobias Malone-Marty,8-4,8,4,1,0,Completed,true,false,false
+AP011023,12 Oct 24,2,Mentone Gold,Black Rock,No. 3,Matt Williams,Luke Desmond,Luke Desmond,4-8,4,8,0,1,Completed,true,false,false
+AP011023,12 Oct 24,2,Mentone Gold,Black Rock,No. 4,Owen Richardson,Oliver Capel,Oliver Capel,0-8,0,8,0,1,Completed,true,false,false
+AP011024,12 Oct 24,2,St Louis de Mont,Ormond,No. 1,Michael Lindfield,Aaron Nazaretian,Aaron Nazaretian,6-8,6,8,0,1,Completed,true,false,false
+AP011024,12 Oct 24,2,St Louis de Mont,Ormond,No. 2,Nicholas Shipham,Michael Huntley,Michael Huntley,7-8,7,8,0,1,Completed,true,false,false
+AP011024,12 Oct 24,2,St Louis de Mont,Ormond,No. 3,Tom Vella,Susan Harrison,Tom Vella,8-1,8,1,1,0,Completed,true,false,false
+AP011024,12 Oct 24,2,St Louis de Mont,Ormond,No. 4,Patrick Devlin,Carole Pywell,Patrick Devlin,8-5,8,5,1,0,Completed,true,false,false
+AP011031,19 Oct 24,3,East Malvern Blue,St Louis de Mont,No. 1,Mads Sorensen,Michael Lindfield,Mads Sorensen,8-0,8,0,1,0,Completed,true,false,false
+AP011031,19 Oct 24,3,East Malvern Blue,St Louis de Mont,No. 2,Frantzeskos Triantafyllou,Nicholas Shipham,Frantzeskos Triantafyllou,8-2,8,2,1,0,Completed,true,false,false
+AP011031,19 Oct 24,3,East Malvern Blue,St Louis de Mont,No. 3,Faran Mazloomi,Dylan Joughin,Faran Mazloomi,8-1,8,1,1,0,Completed,true,false,false
+AP011031,19 Oct 24,3,East Malvern Blue,St Louis de Mont,No. 4,James Bryden,Patrick Devlin,Patrick Devlin,6-8,6,8,0,1,Completed,true,false,false
+AP011032,19 Oct 24,3,Tennis World,Royal Ave,No. 1,Alex Wilson,Justin Alway,Justin Alway,2-8,2,8,0,1,Completed,true,false,false
+AP011032,19 Oct 24,3,Tennis World,Royal Ave,No. 2,Joel Dalidowicz,Dean Craig,Dean Craig,4-8,4,8,0,1,Completed,true,false,false
+AP011032,19 Oct 24,3,Tennis World,Royal Ave,No. 3,Rohit Gupta,Jimi Weir,Jimi Weir,6-8,6,8,0,1,Completed,true,false,false
+AP011032,19 Oct 24,3,Tennis World,Royal Ave,No. 4,Alex Mitsopoulos,Chris Gibson,Alex Mitsopoulos,8-6,8,6,1,0,Completed,true,false,true
+AP011033,19 Oct 24,3,Black Rock,East Malvern Navy,No. 1,Jack James,Levin De Leon,Jack James,8-3,8,3,1,0,Completed,true,false,false
+AP011033,19 Oct 24,3,Black Rock,East Malvern Navy,No. 2,[Unnamed emergency — TROLS AP011033 home code 2],Caley Wilson,Caley Wilson,0-8,0,8,0,1,Completed,false,true,false
+AP011033,19 Oct 24,3,Black Rock,East Malvern Navy,No. 3,Joseph Desmond,James Thompson,Joseph Desmond,8-5,8,5,1,0,Completed,true,false,false
+AP011033,19 Oct 24,3,Black Rock,East Malvern Navy,No. 4,Luke Desmond,Terry Coleling,Luke Desmond,8-2,8,2,1,0,Completed,true,false,true
+AP011034,19 Oct 24,3,Ormond,Mentone Gold,No. 1,Aaron Nazaretian,Jackson Ralph,Jackson Ralph,4-8,4,8,0,1,Completed,true,false,false
+AP011034,19 Oct 24,3,Ormond,Mentone Gold,No. 2,Mason Campbell,Tobias Malone-Marty,Tobias Malone-Marty,3-8,3,8,0,1,Completed,true,false,false
+AP011034,19 Oct 24,3,Ormond,Mentone Gold,No. 3,Rivka Garson,Matt Williams,Matt Williams,4-8,4,8,0,1,Completed,true,false,false
+AP011034,19 Oct 24,3,Ormond,Mentone Gold,No. 4,Carole Pywell,Chase Graham,Chase Graham,1-8,1,8,0,1,Completed,true,false,true
+AP011041,26 Oct 24,4,Mentone Gold,East Malvern Blue,No. 1,Jackson Ralph,Alex Dusek,Jackson Ralph,8-4,8,4,1,0,Completed,true,false,false
+AP011041,26 Oct 24,4,Mentone Gold,East Malvern Blue,No. 2,Tobias Malone-Marty,Frantzeskos Triantafyllou,Tobias Malone-Marty,8-0,8,0,1,0,Completed,true,false,false
+AP011041,26 Oct 24,4,Mentone Gold,East Malvern Blue,No. 3,James Dimopoulos,Faran Mazloomi,James Dimopoulos,8-4,8,4,1,0,Completed,true,false,false
+AP011041,26 Oct 24,4,Mentone Gold,East Malvern Blue,No. 4,Robert Proudfoot,James Bryden,Robert Proudfoot,8-3,8,3,1,0,Completed,true,false,false
+AP011042,26 Oct 24,4,St Louis de Mont,Tennis World,No. 1,Nicholas Shipham,Alex Wilson,Nicholas Shipham,8-6,8,6,1,0,Completed,true,false,false
+AP011042,26 Oct 24,4,St Louis de Mont,Tennis World,No. 2,Tom Vella,Joel Dalidowicz,Tom Vella,8-0,8,0,1,0,Completed,true,false,false
+AP011042,26 Oct 24,4,St Louis de Mont,Tennis World,No. 3,Dylan Joughin,Tim Metcalfe,Tim Metcalfe,4-8,4,8,0,1,Completed,true,false,false
+AP011042,26 Oct 24,4,St Louis de Mont,Tennis World,No. 4,Patrick Devlin,Alex Mitsopoulos,Alex Mitsopoulos,2-8,2,8,0,1,Completed,true,false,false
+AP011043,26 Oct 24,4,Royal Ave,Black Rock,No. 1,Dean Craig,Manol Atanasov,Manol Atanasov,6-8,6,8,0,1,Completed,true,false,false
+AP011043,26 Oct 24,4,Royal Ave,Black Rock,No. 2,Jimi Weir,Joseph Desmond,Joseph Desmond,7-8,7,8,0,1,Completed,true,false,false
+AP011043,26 Oct 24,4,Royal Ave,Black Rock,No. 3,Jeremy Rouch,Luke Desmond,Luke Desmond,2-8,2,8,0,1,Completed,true,false,false
+AP011043,26 Oct 24,4,Royal Ave,Black Rock,No. 4,James Bourke,Oliver Capel,Oliver Capel,1-8,1,8,0,1,Completed,true,true,false
+AP011044,26 Oct 24,4,East Malvern Navy,Ormond,No. 1,Levin De Leon,Mason Campbell,Mason Campbell,5-8,5,8,0,1,Completed,true,false,false
+AP011044,26 Oct 24,4,East Malvern Navy,Ormond,No. 2,Robert Wyld,Michael Huntley,Robert Wyld,8-2,8,2,1,0,Completed,true,false,false
+AP011044,26 Oct 24,4,East Malvern Navy,Ormond,No. 3,Mark Patrick,Susan Harrison,Mark Patrick,8-0,8,0,1,0,Completed,true,false,false
+AP011044,26 Oct 24,4,East Malvern Navy,Ormond,No. 4,Caley Wilson,Carole Pywell,Caley Wilson,8-0,8,0,1,0,Completed,true,false,false
+AP011051,09 Nov 24,5,Black Rock,Ormond,No. 1,Jack James,Aaron Nazaretian,Aaron Nazaretian,6-8,6,8,0,1,Completed,true,false,false
+AP011051,09 Nov 24,5,Black Rock,Ormond,No. 2,Manol Atanasov,Michael Hudson,Michael Hudson,4-8,4,8,0,1,Completed,true,false,false
+AP011051,09 Nov 24,5,Black Rock,Ormond,No. 3,Oliver Capel,Mason Campbell,Oliver Capel,8-0,8,0,1,0,Completed,true,false,false
+AP011051,09 Nov 24,5,Black Rock,Ormond,No. 4,Jana Kachel,Michael Huntley,Michael Huntley,3-8,3,8,0,1,Completed,true,true,false
+AP011052,09 Nov 24,5,Royal Ave,St Louis de Mont,No. 1,Dean Craig,Michael Lindfield,Dean Craig,8-2,8,2,1,0,Completed,true,false,false
+AP011052,09 Nov 24,5,Royal Ave,St Louis de Mont,No. 2,Jimi Weir,Ethan Dunley,Ethan Dunley,2-8,2,8,0,1,Completed,true,false,true
+AP011052,09 Nov 24,5,Royal Ave,St Louis de Mont,No. 3,Toby Brett,Tom Vella,Tom Vella,3-8,3,8,0,1,Completed,true,false,false
+AP011052,09 Nov 24,5,Royal Ave,St Louis de Mont,No. 4,Jeremy Rouch,Dylan Joughin,Dylan Joughin,5-8,5,8,0,1,Completed,true,false,false
+AP011053,09 Nov 24,5,Mentone Gold,East Malvern Navy,No. 1,Jackson Ralph,Levin De Leon,Jackson Ralph,8-0,8,0,1,0,Completed,true,false,false
+AP011053,09 Nov 24,5,Mentone Gold,East Malvern Navy,No. 2,Tobias Malone-Marty,Robert Wyld,Tobias Malone-Marty,8-2,8,2,1,0,Completed,true,false,false
+AP011053,09 Nov 24,5,Mentone Gold,East Malvern Navy,No. 3,Robert Proudfoot,Tom Taylor,Tom Taylor,7-8,7,8,0,1,Completed,true,false,false
+AP011053,09 Nov 24,5,Mentone Gold,East Malvern Navy,No. 4,Owen Richardson,Caley Wilson,Owen Richardson,8-3,8,3,1,0,Completed,true,false,false
+AP011054,09 Nov 24,5,East Malvern Blue,Tennis World,No. 1,Alex Dusek,Joel Dalidowicz,Alex Dusek,8-2,8,2,1,0,Completed,true,false,false
+AP011054,09 Nov 24,5,East Malvern Blue,Tennis World,No. 2,Frantzeskos Triantafyllou,Tim Metcalfe,Tim Metcalfe,5-8,5,8,0,1,Completed,true,false,false
+AP011054,09 Nov 24,5,East Malvern Blue,Tennis World,No. 3,James Bryden,Alex Mitsopoulos,Alex Mitsopoulos,2-8,2,8,0,1,Completed,true,false,false
+AP011054,09 Nov 24,5,East Malvern Blue,Tennis World,No. 4,David Bryden,Jim Papas,Jim Papas,6-8,6,8,0,1,Completed,true,false,false
+AP011061,16 Nov 24,6,Tennis World,Black Rock,No. 1,Joel Dalidowicz,Manol Atanasov,Manol Atanasov,1-8,1,8,0,1,Completed,true,false,false
+AP011061,16 Nov 24,6,Tennis World,Black Rock,No. 2,Arnov Chaudry,Joseph Desmond,Arnov Chaudry,8-5,8,5,1,0,Completed,true,true,false
+AP011061,16 Nov 24,6,Tennis World,Black Rock,No. 3,Ralph Pabelico,Luke Desmond,Ralph Pabelico,8-5,8,5,1,0,Completed,true,true,false
+AP011061,16 Nov 24,6,Tennis World,Black Rock,No. 4,Tim Metcalfe,Adrian Evans,Tim Metcalfe,8-5,8,5,1,0,Completed,true,false,true
+AP011062,16 Nov 24,6,Ormond,East Malvern Blue,No. 1,Aaron Nazaretian,Frantzeskos Triantafyllou,Frantzeskos Triantafyllou,7-8,7,8,0,1,Completed,true,false,false
+AP011062,16 Nov 24,6,Ormond,East Malvern Blue,No. 2,Mason Campbell,Faran Mazloomi,Mason Campbell,8-6,8,6,1,0,Completed,true,false,false
+AP011062,16 Nov 24,6,Ormond,East Malvern Blue,No. 3,Michael Huntley,James Bryden,Michael Huntley,8-4,8,4,1,0,Completed,true,false,false
+AP011062,16 Nov 24,6,Ormond,East Malvern Blue,No. 4,Rivka Garson,David Bryden,David Bryden,1-8,1,8,0,1,Completed,true,false,false
+AP011063,16 Nov 24,6,St Louis de Mont,Mentone Gold,No. 1,Michael Lindfield,Tobias Malone-Marty,Tobias Malone-Marty,1-8,1,8,0,1,Completed,true,false,false
+AP011063,16 Nov 24,6,St Louis de Mont,Mentone Gold,No. 2,Nicholas Shipham,Sai Neerukonda,Nicholas Shipham,8-4,8,4,1,0,Completed,true,false,true
+AP011063,16 Nov 24,6,St Louis de Mont,Mentone Gold,No. 3,Tom Vella,Robert Proudfoot,Tom Vella,8-2,8,2,1,0,Completed,true,false,false
+AP011063,16 Nov 24,6,St Louis de Mont,Mentone Gold,No. 4,Patrick Devlin,Matt Williams,Matt Williams,5-8,5,8,0,1,Completed,true,false,false
+AP011064,16 Nov 24,6,East Malvern Navy,Royal Ave,No. 1,Robert Wyld,Dean Craig,Dean Craig,1-8,1,8,0,1,Completed,true,false,false
+AP011064,16 Nov 24,6,East Malvern Navy,Royal Ave,No. 2,Tom Taylor,Jimi Weir,Tom Taylor,8-6,8,6,1,0,Completed,true,false,false
+AP011064,16 Nov 24,6,East Malvern Navy,Royal Ave,No. 3,Caley Wilson,Chris Gibson,Caley Wilson,8-2,8,2,1,0,Completed,true,false,false
+AP011064,16 Nov 24,6,East Malvern Navy,Royal Ave,No. 4,James Thompson,Toby Brett,James Thompson,8-3,8,3,1,0,Completed,true,false,false
+AP011091,07 Dec 24,9,East Malvern Blue,Royal Ave,No. 1,Alex Dusek,Justin Alway,Alex Dusek,8-7,8,7,1,0,Completed,true,false,false
+AP011091,07 Dec 24,9,East Malvern Blue,Royal Ave,No. 2,Frantzeskos Triantafyllou,Dean Craig,Dean Craig,6-8,6,8,0,1,Completed,true,false,false
+AP011091,07 Dec 24,9,East Malvern Blue,Royal Ave,No. 3,James Bryden,Jimi Weir,Jimi Weir,2-8,2,8,0,1,Completed,true,false,false
+AP011091,07 Dec 24,9,East Malvern Blue,Royal Ave,No. 4,David Bryden,Chris Gibson,Chris Gibson,2-8,2,8,0,1,Completed,true,false,false
+AP011092,07 Dec 24,9,Tennis World,East Malvern Navy,No. 1,Ben Aharfi,Levin De Leon,Ben Aharfi,8-7,8,7,1,0,Completed,true,true,false
+AP011092,07 Dec 24,9,Tennis World,East Malvern Navy,No. 2,Joel Dalidowicz,Robert Wyld,Robert Wyld,5-8,5,8,0,1,Completed,true,false,false
+AP011092,07 Dec 24,9,Tennis World,East Malvern Navy,No. 3,Tim Mathieson,Chris Woods,Chris Woods,7-8,7,8,0,1,Completed,true,true,false
+AP011092,07 Dec 24,9,Tennis World,East Malvern Navy,No. 4,Alex Mitsopoulos,Caley Wilson,Caley Wilson,4-8,4,8,0,1,Completed,true,false,false
+AP011093,07 Dec 24,9,Black Rock,Mentone Gold,No. 1,Manol Atanasov,Jackson Ralph,Jackson Ralph,0-8,0,8,0,1,Completed,true,false,false
+AP011093,07 Dec 24,9,Black Rock,Mentone Gold,No. 2,Joseph Desmond,Tobias Malone-Marty,Tobias Malone-Marty,5-8,5,8,0,1,Completed,true,false,false
+AP011093,07 Dec 24,9,Black Rock,Mentone Gold,No. 3,Luke Desmond,James Dimopoulos,Luke Desmond,8-7,8,7,1,0,Completed,true,false,false
+AP011093,07 Dec 24,9,Black Rock,Mentone Gold,No. 4,Oliver Capel,Matt Williams,Matt Williams,5-8,5,8,0,1,Completed,true,false,false
+AP011094,07 Dec 24,9,Ormond,St Louis de Mont,No. 1,Steve Gelagin,Michael Lindfield,Steve Gelagin,8-2,8,2,1,0,Completed,true,false,false
+AP011094,07 Dec 24,9,Ormond,St Louis de Mont,No. 2,Aaron Nazaretian,Tom Vella,Aaron Nazaretian,8-6,8,6,1,0,Completed,true,false,false
+AP011094,07 Dec 24,9,Ormond,St Louis de Mont,No. 3,Mason Campbell,Dylan Joughin,Dylan Joughin,5-8,5,8,0,1,Completed,true,false,false
+AP011094,07 Dec 24,9,Ormond,St Louis de Mont,No. 4,Susan Harrison,Patrick Devlin,Patrick Devlin,0-8,0,8,0,1,Completed,true,false,false
+AP011101,14 Dec 24,10,St Louis de Mont,East Malvern Blue,No. 1,Michael Lindfield,Alex Dusek,Alex Dusek,2-8,2,8,0,1,Completed,true,false,false
+AP011101,14 Dec 24,10,St Louis de Mont,East Malvern Blue,No. 2,Ethan Dunley,Frantzeskos Triantafyllou,Ethan Dunley,8-1,8,1,1,0,Completed,true,true,false
+AP011101,14 Dec 24,10,St Louis de Mont,East Malvern Blue,No. 3,Tom Vella,Faran Mazloomi,Faran Mazloomi,4-8,4,8,0,1,Completed,true,false,false
+AP011101,14 Dec 24,10,St Louis de Mont,East Malvern Blue,No. 4,Dylan Joughin,James Bryden,James Bryden,4-8,4,8,0,1,Completed,true,false,false
+AP011102,14 Dec 24,10,Royal Ave,Tennis World,No. 1,Justin Alway,Alex Wilson,Justin Alway,8-3,8,3,1,0,Completed,true,false,false
+AP011102,14 Dec 24,10,Royal Ave,Tennis World,No. 2,Jimi Weir,Joel Dalidowicz,Jimi Weir,8-4,8,4,1,0,Completed,true,false,false
+AP011102,14 Dec 24,10,Royal Ave,Tennis World,No. 3,Chris Gibson,Tim Metcalfe,Tim Metcalfe,4-8,4,8,0,1,Completed,true,false,false
+AP011102,14 Dec 24,10,Royal Ave,Tennis World,No. 4,Jeremy Rouch,Alex Mitsopoulos,Alex Mitsopoulos,2-8,2,8,0,1,Completed,true,false,false
+AP011103,14 Dec 24,10,East Malvern Navy,Black Rock,No. 1,Robert Wyld,Lewis Smith,Lewis Smith,1-8,1,8,0,1,Completed,true,false,true
+AP011103,14 Dec 24,10,East Malvern Navy,Black Rock,No. 2,Chris Woods,Jack James,Jack James,4-8,4,8,0,1,Completed,true,false,false
+AP011103,14 Dec 24,10,East Malvern Navy,Black Rock,No. 3,Caley Wilson,Joseph Desmond,Joseph Desmond,2-8,2,8,0,1,Completed,true,false,false
+AP011103,14 Dec 24,10,East Malvern Navy,Black Rock,No. 4,James Thompson,Luke Desmond,Luke Desmond,2-8,2,8,0,1,Completed,true,false,false
+AP011104,14 Dec 24,10,Mentone Gold,Ormond,No. 1,Robert Proudfoot,Michael Huntley,Robert Proudfoot,8-1,8,1,1,0,Completed,true,false,false
+AP011104,14 Dec 24,10,Mentone Gold,Ormond,No. 2,Matt Williams,Phil Bai,Matt Williams,8-6,8,6,1,0,Completed,true,false,true
+AP011104,14 Dec 24,10,Mentone Gold,Ormond,No. 3,Josh Tesler,Susan Harrison,Josh Tesler,8-1,8,1,1,0,Completed,true,true,false
+AP011104,14 Dec 24,10,Mentone Gold,Ormond,No. 4,Chase Graham,Carole Pywell,Chase Graham,8-2,8,2,1,0,Completed,true,true,false
+AP011111,01 Feb 25,11,East Malvern Blue,Mentone Gold,No. 1,Alex Dusek,Jackson Ralph,Jackson Ralph,2-8,2,8,0,1,Completed,true,false,false
+AP011111,01 Feb 25,11,East Malvern Blue,Mentone Gold,No. 2,Frantzeskos Triantafyllou,Tobias Malone-Marty,Tobias Malone-Marty,3-8,3,8,0,1,Completed,true,false,false
+AP011111,01 Feb 25,11,East Malvern Blue,Mentone Gold,No. 3,Faran Mazloomi,Owen Richardson,Owen Richardson,1-8,1,8,0,1,Completed,true,false,false
+AP011111,01 Feb 25,11,East Malvern Blue,Mentone Gold,No. 4,James Bryden,Matt Williams,Matt Williams,5-8,5,8,0,1,Completed,true,false,false
+AP011112,01 Feb 25,11,Tennis World,St Louis de Mont,No. 1,Joel Dalidowicz,Nicholas Shipham,Nicholas Shipham,1-8,1,8,0,1,Completed,true,false,false
+AP011112,01 Feb 25,11,Tennis World,St Louis de Mont,No. 2,Tim Metcalfe,Tom Vella,Tim Metcalfe,8-2,8,2,1,0,Completed,true,false,false
+AP011112,01 Feb 25,11,Tennis World,St Louis de Mont,No. 3,Rohit Gupta,Jack Forbes,Jack Forbes,3-8,3,8,0,1,Completed,true,false,true
+AP011112,01 Feb 25,11,Tennis World,St Louis de Mont,No. 4,Alex Mitsopoulos,Patrick Devlin,Alex Mitsopoulos,8-2,8,2,1,0,Completed,true,false,false
+AP011113,01 Feb 25,11,Black Rock,Royal Ave,No. 1,Lewis Smith,Justin Alway,Justin Alway,5-8,5,8,0,1,Completed,true,true,false
+AP011113,01 Feb 25,11,Black Rock,Royal Ave,No. 2,Manol Atanasov,Dean Craig,Manol Atanasov,8-4,8,4,1,0,Completed,true,false,false
+AP011113,01 Feb 25,11,Black Rock,Royal Ave,No. 3,Joseph Desmond,Jimi Weir,Joseph Desmond,8-4,8,4,1,0,Completed,true,false,false
+AP011113,01 Feb 25,11,Black Rock,Royal Ave,No. 4,Luke Desmond,Chris Gibson,Luke Desmond,8-1,8,1,1,0,Completed,true,false,false
+AP011114,01 Feb 25,11,Ormond,East Malvern Navy,No. 1,Aaron Nazaretian,Robert Wyld,Aaron Nazaretian,8-5,8,5,1,0,Completed,true,false,false
+AP011114,01 Feb 25,11,Ormond,East Malvern Navy,No. 2,Mason Campbell,Mark Patrick,Mason Campbell,8-6,8,6,1,0,Completed,true,false,false
+AP011114,01 Feb 25,11,Ormond,East Malvern Navy,No. 3,Michael Hudson,Caley Wilson,Michael Hudson,8-3,8,3,1,0,Completed,true,false,false
+AP011114,01 Feb 25,11,Ormond,East Malvern Navy,No. 4,Rivka Garson,James Thompson,James Thompson,1-8,1,8,0,1,Completed,true,false,false
+AP011121,08 Feb 25,12,Ormond,Black Rock,No. 1,Aaron Nazaretian,Max Loosschilder,Aaron Nazaretian,8-3,8,3,1,0,Completed,true,false,true
+AP011121,08 Feb 25,12,Ormond,Black Rock,No. 2,Mason Campbell,Joseph Desmond,Joseph Desmond,5-8,5,8,0,1,Completed,true,false,false
+AP011121,08 Feb 25,12,Ormond,Black Rock,No. 3,Michael Huntley,Luke Desmond,Luke Desmond,7-8,7,8,0,1,Completed,true,false,false
+AP011121,08 Feb 25,12,Ormond,Black Rock,No. 4,Rivka Garson,Oliver Capel,Oliver Capel,4-8,4,8,0,1,Completed,true,false,false
+AP011122,08 Feb 25,12,St Louis de Mont,Royal Ave,No. 1,Michael Lindfield,Justin Alway,Justin Alway,1-8,1,8,0,1,Completed,true,false,false
+AP011122,08 Feb 25,12,St Louis de Mont,Royal Ave,No. 2,Nicholas Shipham,Dean Craig,Nicholas Shipham,8-6,8,6,1,0,Completed,true,false,false
+AP011122,08 Feb 25,12,St Louis de Mont,Royal Ave,No. 3,Dylan Joughin,Toby Brett,Dylan Joughin,8-1,8,1,1,0,Completed,true,false,false
+AP011122,08 Feb 25,12,St Louis de Mont,Royal Ave,No. 4,Patrick Devlin,Luke Eaton,Luke Eaton,0-8,0,8,0,1,Completed,true,false,true
+AP011123,08 Feb 25,12,East Malvern Navy,Mentone Gold,No. 1,Robert Wyld,Jackson Ralph,Jackson Ralph,2-8,2,8,0,1,Completed,true,false,false
+AP011123,08 Feb 25,12,East Malvern Navy,Mentone Gold,No. 2,Mark Patrick,Tobias Malone-Marty,Tobias Malone-Marty,2-8,2,8,0,1,Completed,true,false,false
+AP011123,08 Feb 25,12,East Malvern Navy,Mentone Gold,No. 3,Caley Wilson,Robert Proudfoot,Robert Proudfoot,4-8,4,8,0,1,Completed,true,false,false
+AP011123,08 Feb 25,12,East Malvern Navy,Mentone Gold,No. 4,James Thompson,Matt Williams,Matt Williams,5-8,5,8,0,1,Completed,true,false,false
+AP011124,08 Feb 25,12,Tennis World,East Malvern Blue,No. 1,Tim Metcalfe,Mads Sorensen,Mads Sorensen,5-8,5,8,0,1,Completed,true,false,false
+AP011124,08 Feb 25,12,Tennis World,East Malvern Blue,No. 2,Alex Wilson,Alex Dusek,Alex Dusek,0-8,0,8,0,1,Completed,true,false,false
+AP011124,08 Feb 25,12,Tennis World,East Malvern Blue,No. 3,Joel Dalidowicz,Frantzeskos Triantafyllou,Frantzeskos Triantafyllou,2-8,2,8,0,1,Completed,true,false,false
+AP011124,08 Feb 25,12,Tennis World,East Malvern Blue,No. 4,Alex Mitsopoulos,James Bryden,Alex Mitsopoulos,8-7,8,7,1,0,Completed,true,false,false
+AP011132,15 Feb 25,13,East Malvern Blue,Ormond,No. 1,Mads Sorensen,Steve Gelagin,Mads Sorensen,8-3,8,3,1,0,Completed,true,false,false
+AP011132,15 Feb 25,13,East Malvern Blue,Ormond,No. 2,Frantzeskos Triantafyllou,Aaron Nazaretian,Frantzeskos Triantafyllou,8-7,8,7,1,0,Completed,true,false,false
+AP011132,15 Feb 25,13,East Malvern Blue,Ormond,No. 3,James Bryden,Michael Hudson,,2-1,2,1,1,0,Unfinished,false,false,false
+AP011132,15 Feb 25,13,East Malvern Blue,Ormond,No. 4,David Bryden,[Unnamed emergency — TROLS AP011132 away code 4],David Bryden,8-0,8,0,1,0,Completed,false,false,true
+AP011133,15 Feb 25,13,Mentone Gold,St Louis de Mont,No. 1,James Dimopoulos,Nicholas Shipham,James Dimopoulos,8-1,8,1,1,0,Completed,true,false,false
+AP011133,15 Feb 25,13,Mentone Gold,St Louis de Mont,No. 2,Robert Proudfoot,Tom Vella,Robert Proudfoot,8-3,8,3,1,0,Completed,true,false,false
+AP011133,15 Feb 25,13,Mentone Gold,St Louis de Mont,No. 3,Owen Richardson,Dylan Joughin,Owen Richardson,8-2,8,2,1,0,Completed,true,false,false
+AP011133,15 Feb 25,13,Mentone Gold,St Louis de Mont,No. 4,Josh Tesler,Patrick Devlin,Josh Tesler,8-6,8,6,1,0,Completed,true,true,false
+AP011134,15 Feb 25,13,Royal Ave,East Malvern Navy,No. 1,Justin Alway,Levin De Leon,Justin Alway,8-1,8,1,1,0,Completed,true,false,false
+AP011134,15 Feb 25,13,Royal Ave,East Malvern Navy,No. 2,Dean Craig,Mark Patrick,Dean Craig,8-1,8,1,1,0,Completed,true,false,false
+AP011134,15 Feb 25,13,Royal Ave,East Malvern Navy,No. 3,Jimi Weir,Caley Wilson,Caley Wilson,3-8,3,8,0,1,Completed,true,false,false
+AP011134,15 Feb 25,13,Royal Ave,East Malvern Navy,No. 4,Toby Brett,James Thompson,James Thompson,6-8,6,8,0,1,Completed,true,false,false
+AP011141,22 Feb 25,14,Black Rock,East Malvern Blue,No. 1,Jack James,Alex Dusek,Alex Dusek,5-8,5,8,0,1,Completed,true,false,false
+AP011141,22 Feb 25,14,Black Rock,East Malvern Blue,No. 2,Manol Atanasov,Frantzeskos Triantafyllou,Frantzeskos Triantafyllou,7-8,7,8,0,1,Completed,true,false,false
+AP011141,22 Feb 25,14,Black Rock,East Malvern Blue,No. 3,Joseph Desmond,Faran Mazloomi,Joseph Desmond,8-3,8,3,1,0,Completed,true,false,false
+AP011141,22 Feb 25,14,Black Rock,East Malvern Blue,No. 4,Luke Desmond,James Bryden,Luke Desmond,8-3,8,3,1,0,Completed,true,false,false
+AP011142,22 Feb 25,14,Ormond,Tennis World,No. 1,Aaron Nazaretian,Ben Aharfi,Aaron Nazaretian,8-4,8,4,1,0,Completed,true,false,true
+AP011142,22 Feb 25,14,Ormond,Tennis World,No. 2,Mason Campbell,Alex Mitsopoulos,Mason Campbell,8-7,8,7,1,0,Completed,true,false,false
+AP011142,22 Feb 25,14,Ormond,Tennis World,No. 3,Michael Huntley,Joel Dalidowicz,Michael Huntley,8-7,8,7,1,0,Completed,true,false,false
+AP011301,,16,Mentone Gold,East Malvern Navy,No. 1,Jackson Ralph,Levin De Leon,Jackson Ralph,8-0,8,0,1,0,Completed,true,false,false
+AP011301,,16,Mentone Gold,East Malvern Navy,No. 2,Tobias Malone-Marty,Chris Woods,Tobias Malone-Marty,8-2,8,2,1,0,Completed,true,false,false
+AP011301,,16,Mentone Gold,East Malvern Navy,No. 3,James Dimopoulos,Caley Wilson,James Dimopoulos,8-1,8,1,1,0,Completed,true,false,false
+AP011301,,16,Mentone Gold,East Malvern Navy,No. 4,Owen Richardson,James Thompson,Owen Richardson,8-7,8,7,1,0,Completed,true,false,false
+AP011302,,16,East Malvern Blue,Black Rock,No. 1,Mads Sorensen,Jack James,Mads Sorensen,8-5,8,5,1,0,Completed,true,false,false
+AP011302,,16,East Malvern Blue,Black Rock,No. 2,Alex Dusek,Manol Atanasov,Manol Atanasov,3-8,3,8,0,1,Completed,true,false,false
+AP011302,,16,East Malvern Blue,Black Rock,No. 3,Frantzeskos Triantafyllou,Joseph Desmond,Joseph Desmond,6-8,6,8,0,1,Completed,true,false,false
+AP011302,,16,East Malvern Blue,Black Rock,No. 4,Faran Mazloomi,Luke Desmond,Luke Desmond,3-8,3,8,0,1,Completed,true,false,false
+AP011321,,17,Mentone Gold,Black Rock,No. 1,Jackson Ralph,Jack James,Jackson Ralph,8-6,8,6,1,0,Completed,true,false,false
+AP011321,,17,Mentone Gold,Black Rock,No. 2,Tobias Malone-Marty,Manol Atanasov,Manol Atanasov,6-8,6,8,0,1,Completed,true,false,false
+AP011321,,17,Mentone Gold,Black Rock,No. 3,James Dimopoulos,Joseph Desmond,Joseph Desmond,3-8,3,8,0,1,Completed,true,false,false
+AP011321,,17,Mentone Gold,Black Rock,No. 4,Robert Proudfoot,Luke Desmond,Luke Desmond,5-8,5,8,0,1,Completed,true,false,false

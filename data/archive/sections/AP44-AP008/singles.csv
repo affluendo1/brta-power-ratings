@@ -1,0 +1,117 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP008011,07 May 22,1,East Malvern,Glen Huntly,No. 1,Faran Mazloomi,Anirudh Devanathan,Anirudh Devanathan,6-8,6,8,0,1,Completed,true,false,false
+AP008011,07 May 22,1,East Malvern,Glen Huntly,No. 2,Mose Rabe,William Gort,William Gort,2-8,2,8,0,1,Completed,true,false,false
+AP008011,07 May 22,1,East Malvern,Glen Huntly,No. 3,James Bryden,Daniel Katanov,Daniel Katanov,5-8,5,8,0,1,Completed,true,false,false
+AP008011,07 May 22,1,East Malvern,Glen Huntly,No. 4,David Bryden,Satyarth Mishra,Satyarth Mishra,1-8,1,8,0,1,Completed,true,false,false
+AP008012,07 May 22,1,Elsternwick Park Red,Royal Ave,No. 1,Simon Corrie,[Unnamed emergency — TROLS AP008012 away code 1],[Unnamed emergency — TROLS AP008012 away code 1],2-8,2,8,0,1,Completed,false,false,true
+AP008012,07 May 22,1,Elsternwick Park Red,Royal Ave,No. 2,[Unnamed emergency — TROLS AP008012 home code 2],Declan Hughes,[Unnamed emergency — TROLS AP008012 home code 2],8-0,8,0,1,0,Completed,false,true,false
+AP008012,07 May 22,1,Elsternwick Park Red,Royal Ave,No. 3,Joe Barr,Stefan Harrer,Joe Barr,8-6,8,6,1,0,Completed,true,false,false
+AP008012,07 May 22,1,Elsternwick Park Red,Royal Ave,No. 4,Noah Mies,Milan Bandur,Noah Mies,8-2,8,2,1,0,Completed,true,false,false
+AP008023,14 May 22,2,Glen Huntly,Elsternwick Park Red,No. 1,Vincent Kuiper,Simon Corrie,Vincent Kuiper,8-4,8,4,1,0,Completed,true,false,false
+AP008023,14 May 22,2,Glen Huntly,Elsternwick Park Red,No. 2,Daniel Katanov,Steffan Raab,Steffan Raab,1-8,1,8,0,1,Completed,true,false,false
+AP008023,14 May 22,2,Glen Huntly,Elsternwick Park Red,No. 3,Gaurav Jain,Joe Barr,Joe Barr,5-8,5,8,0,1,Completed,true,false,false
+AP008023,14 May 22,2,Glen Huntly,Elsternwick Park Red,No. 4,Satyarth Mishra,Andrew Antonopoulos,Andrew Antonopoulos,3-8,3,8,0,1,Completed,true,false,false
+AP008031,21 May 22,3,East Malvern,Elsternwick Park Red,No. 1,Faran Mazloomi,Steffan Raab,Steffan Raab,1-8,1,8,0,1,Completed,true,false,false
+AP008031,21 May 22,3,East Malvern,Elsternwick Park Red,No. 2,Mose Rabe,Joe Barr,Joe Barr,4-8,4,8,0,1,Completed,true,false,false
+AP008031,21 May 22,3,East Malvern,Elsternwick Park Red,No. 3,Alex Dusek,Noah Mies,Noah Mies,1-8,1,8,0,1,Completed,true,false,false
+AP008031,21 May 22,3,East Malvern,Elsternwick Park Red,No. 4,Rakia Schwartz,Andrew Antonopoulos,Andrew Antonopoulos,3-8,3,8,0,1,Completed,true,false,false
+AP008032,21 May 22,3,Maccabi,Glen Huntly,No. 1,Mor Dahan,Vincent Kuiper,Mor Dahan,8-3,8,3,1,0,Completed,true,false,false
+AP008032,21 May 22,3,Maccabi,Glen Huntly,No. 2,Tarun Soni,Anirudh Devanathan,Tarun Soni,8-7,8,7,1,0,Completed,true,false,false
+AP008032,21 May 22,3,Maccabi,Glen Huntly,No. 3,Mark Lazarovits,William Gort,Mark Lazarovits,8-5,8,5,1,0,Completed,true,false,false
+AP008032,21 May 22,3,Maccabi,Glen Huntly,No. 4,Jesse Wilson,Satyarth Mishra,Jesse Wilson,8-7,8,7,1,0,Completed,true,false,false
+AP008041,28 May 22,4,Royal Ave,East Malvern,No. 1,Declan Hughes,Rajat Dang,Declan Hughes,8-6,8,6,1,0,Completed,true,false,false
+AP008041,28 May 22,4,Royal Ave,East Malvern,No. 2,Stefan Harrer,James Bryden,Stefan Harrer,8-1,8,1,1,0,Completed,true,false,false
+AP008041,28 May 22,4,Royal Ave,East Malvern,No. 3,Milan Bandur,Alex Dusek,Milan Bandur,8-3,8,3,1,0,Completed,true,false,false
+AP008041,28 May 22,4,Royal Ave,East Malvern,No. 4,David Urpani,Rakia Schwartz,David Urpani,8-7,8,7,1,0,Completed,true,false,false
+AP008043,28 May 22,4,Elsternwick Park Red,Maccabi,No. 1,Steffan Raab,Mark Lazarovits,Steffan Raab,8-2,8,2,1,0,Completed,true,false,false
+AP008043,28 May 22,4,Elsternwick Park Red,Maccabi,No. 2,Joe Barr,Jesse Wilson,Joe Barr,8-4,8,4,1,0,Completed,true,false,false
+AP008043,28 May 22,4,Elsternwick Park Red,Maccabi,No. 3,Andrew Antonopoulos,Anat Vernik,Andrew Antonopoulos,8-0,8,0,1,0,Completed,true,false,false
+AP008043,28 May 22,4,Elsternwick Park Red,Maccabi,No. 4,Hugh Blacket,Stephen Gorenstein,Hugh Blacket,8-1,8,1,1,0,Completed,true,false,false
+AP008051,04 Jun 22,5,East Malvern,Maccabi,No. 1,Rajat Dang,Mor Dahan,Rajat Dang,8-5,8,5,1,0,Completed,true,false,false
+AP008051,04 Jun 22,5,East Malvern,Maccabi,No. 2,James Bryden,Tarun Soni,Tarun Soni,0-8,0,8,0,1,Completed,true,false,false
+AP008051,04 Jun 22,5,East Malvern,Maccabi,No. 3,James Boal,Ryan Jamieson,Ryan Jamieson,7-8,7,8,0,1,Completed,true,false,false
+AP008051,04 Jun 22,5,East Malvern,Maccabi,No. 4,David Bryden,Stephen Gorenstein,Stephen Gorenstein,7-8,7,8,0,1,Completed,true,false,false
+AP008052,04 Jun 22,5,Royal Ave,Glen Huntly,No. 1,Justin Alway,Vincent Kuiper,Vincent Kuiper,5-8,5,8,0,1,Completed,true,false,false
+AP008052,04 Jun 22,5,Royal Ave,Glen Huntly,No. 2,Declan Hughes,Anirudh Devanathan,Declan Hughes,8-0,8,0,1,0,Completed,true,false,false
+AP008052,04 Jun 22,5,Royal Ave,Glen Huntly,No. 3,Brock Ferrar,William Gort,Brock Ferrar,8-2,8,2,1,0,Completed,true,true,false
+AP008052,04 Jun 22,5,Royal Ave,Glen Huntly,No. 4,Stefan Harrer,Daniel Katanov,Stefan Harrer,8-2,8,2,1,0,Completed,true,false,false
+AP008061,18 Jun 22,6,Glen Huntly,East Malvern,No. 1,Anirudh Devanathan,Rajat Dang,Rajat Dang,2-8,2,8,0,1,Completed,true,false,false
+AP008061,18 Jun 22,6,Glen Huntly,East Malvern,No. 2,Daniel Katanov,James Bryden,James Bryden,2-8,2,8,0,1,Completed,true,false,false
+AP008061,18 Jun 22,6,Glen Huntly,East Malvern,No. 3,Gaurav Jain,Alex Dusek,Gaurav Jain,8-4,8,4,1,0,Completed,true,false,false
+AP008061,18 Jun 22,6,Glen Huntly,East Malvern,No. 4,Satyarth Mishra,Rakia Schwartz,Rakia Schwartz,2-8,2,8,0,1,Completed,true,false,false
+AP008062,18 Jun 22,6,Royal Ave,Elsternwick Park Red,No. 1,Justin Alway,Simon Corrie,Justin Alway,8-0,8,0,1,0,Completed,true,false,false
+AP008062,18 Jun 22,6,Royal Ave,Elsternwick Park Red,No. 2,Declan Hughes,Joe Barr,Declan Hughes,8-6,8,6,1,0,Completed,true,false,false
+AP008062,18 Jun 22,6,Royal Ave,Elsternwick Park Red,No. 3,Oliver Letham,Andrew Antonopoulos,Oliver Letham,8-5,8,5,1,0,Completed,true,false,false
+AP008062,18 Jun 22,6,Royal Ave,Elsternwick Park Red,No. 4,Milan Bandur,[Unnamed emergency — TROLS AP008062 away code 4],Milan Bandur,8-0,8,0,1,0,Completed,false,false,true
+AP008072,25 Jun 22,7,Maccabi,Royal Ave,No. 1,Tarun Soni,John Richardson,Tarun Soni,8-1,8,1,1,0,Completed,true,false,true
+AP008072,25 Jun 22,7,Maccabi,Royal Ave,No. 2,Mark Lazarovits,Milan Bandur,Mark Lazarovits,8-4,8,4,1,0,Completed,true,false,false
+AP008072,25 Jun 22,7,Maccabi,Royal Ave,No. 3,Jono Slade,David Urpani,David Urpani,6-8,6,8,0,1,Completed,true,true,false
+AP008072,25 Jun 22,7,Maccabi,Royal Ave,No. 4,Natalie Nahoom,Daniel Quartel,Natalie Nahoom,8-2,8,2,1,0,Completed,true,true,true
+AP008073,25 Jun 22,7,Elsternwick Park Red,Glen Huntly,No. 1,Joe Barr,Vincent Kuiper,Vincent Kuiper,3-8,3,8,0,1,Completed,true,false,false
+AP008073,25 Jun 22,7,Elsternwick Park Red,Glen Huntly,No. 2,Andrew Antonopoulos,Daniel Katanov,Andrew Antonopoulos,8-2,8,2,1,0,Completed,true,false,false
+AP008073,25 Jun 22,7,Elsternwick Park Red,Glen Huntly,No. 3,Hugh Blacket,Jordan Rogelberg,Hugh Blacket,8-1,8,1,1,0,Completed,true,false,true
+AP008073,25 Jun 22,7,Elsternwick Park Red,Glen Huntly,No. 4,Zac Waterston,Satyarth Mishra,Zac Waterston,8-0,8,0,1,0,Completed,true,true,false
+AP008081,09 Jul 22,8,Elsternwick Park Red,East Malvern,No. 1,Simon Corrie,Rajat Dang,Rajat Dang,6-8,6,8,0,1,Completed,true,false,false
+AP008081,09 Jul 22,8,Elsternwick Park Red,East Malvern,No. 2,Joe Barr,Alex Dusek,Joe Barr,8-3,8,3,1,0,Completed,true,false,false
+AP008081,09 Jul 22,8,Elsternwick Park Red,East Malvern,No. 3,Andrew Antonopoulos,James Boal,Andrew Antonopoulos,8-2,8,2,1,0,Completed,true,false,false
+AP008081,09 Jul 22,8,Elsternwick Park Red,East Malvern,No. 4,Hugh Blacket,Rakia Schwartz,Hugh Blacket,8-6,8,6,1,0,Completed,true,false,false
+AP008082,09 Jul 22,8,Glen Huntly,Maccabi,No. 1,Anirudh Devanathan,Lauren Yarrow,Anirudh Devanathan,8-4,8,4,1,0,Completed,true,false,false
+AP008082,09 Jul 22,8,Glen Huntly,Maccabi,No. 2,William Gort,Mark Lazarovits,William Gort,8-7,8,7,1,0,Completed,true,false,false
+AP008082,09 Jul 22,8,Glen Huntly,Maccabi,No. 3,Daniel Katanov,Jesse Wilson,Jesse Wilson,3-8,3,8,0,1,Completed,true,false,false
+AP008082,09 Jul 22,8,Glen Huntly,Maccabi,No. 4,Jordan Rogelberg,Stephen Gorenstein,Jordan Rogelberg,8-0,8,0,1,0,Completed,true,true,false
+AP008091,16 Jul 22,9,East Malvern,Royal Ave,No. 1,Mose Rabe,Declan Hughes,Declan Hughes,1-8,1,8,0,1,Completed,true,false,false
+AP008091,16 Jul 22,9,East Malvern,Royal Ave,No. 2,Matthew Voudouris,Brock Ferrar,Brock Ferrar,2-8,2,8,0,1,Completed,true,true,true
+AP008091,16 Jul 22,9,East Malvern,Royal Ave,No. 3,James Bryden,John Richardson,John Richardson,3-8,3,8,0,1,Completed,true,false,true
+AP008091,16 Jul 22,9,East Malvern,Royal Ave,No. 4,Alex Dusek,David Urpani,Alex Dusek,8-3,8,3,1,0,Completed,true,false,false
+AP008093,16 Jul 22,9,Maccabi,Elsternwick Park Red,No. 1,Tarun Soni,Simon Corrie,Simon Corrie,7-8,7,8,0,1,Completed,true,false,false
+AP008093,16 Jul 22,9,Maccabi,Elsternwick Park Red,No. 2,Jesse Wilson,Joe Barr,Joe Barr,1-8,1,8,0,1,Completed,true,false,false
+AP008093,16 Jul 22,9,Maccabi,Elsternwick Park Red,No. 3,Stephen Gorenstein,Andrew Antonopoulos,Andrew Antonopoulos,3-8,3,8,0,1,Completed,true,false,false
+AP008093,16 Jul 22,9,Maccabi,Elsternwick Park Red,No. 4,Richard Michaels,Hugh Blacket,Hugh Blacket,1-8,1,8,0,1,Completed,true,true,false
+AP008102,23 Jul 22,10,Glen Huntly,Royal Ave,No. 1,Nasik Ahmad,Declan Hughes,Declan Hughes,6-8,6,8,0,1,Completed,true,true,false
+AP008102,23 Jul 22,10,Glen Huntly,Royal Ave,No. 2,Anirudh Devanathan,Oliver Letham,Oliver Letham,0-8,0,8,0,1,Completed,true,false,false
+AP008102,23 Jul 22,10,Glen Huntly,Royal Ave,No. 3,William Gort,Stefan Harrer,Stefan Harrer,3-8,3,8,0,1,Completed,true,false,false
+AP008102,23 Jul 22,10,Glen Huntly,Royal Ave,No. 4,Daniel Katanov,Milan Bandur,Daniel Katanov,8-3,8,3,1,0,Completed,true,false,false
+AP008111,30 Jul 22,11,East Malvern,Glen Huntly,No. 1,Rajat Dang,Anirudh Devanathan,Rajat Dang,8-5,8,5,1,0,Completed,true,false,false
+AP008111,30 Jul 22,11,East Malvern,Glen Huntly,No. 2,Joshua Weberruss,William Gort,Joshua Weberruss,8-6,8,6,1,0,Completed,true,true,false
+AP008111,30 Jul 22,11,East Malvern,Glen Huntly,No. 3,James Boal,Daniel Katanov,James Boal,8-1,8,1,1,0,Completed,true,false,false
+AP008111,30 Jul 22,11,East Malvern,Glen Huntly,No. 4,Jack Chang,Satyarth Mishra,Satyarth Mishra,2-8,2,8,0,1,Completed,true,true,false
+AP008112,30 Jul 22,11,Elsternwick Park Red,Royal Ave,No. 1,Simon Corrie,Justin Alway,Justin Alway,6-8,6,8,0,1,Completed,true,false,false
+AP008112,30 Jul 22,11,Elsternwick Park Red,Royal Ave,No. 2,Steffan Raab,Oliver Letham,Steffan Raab,7-4,7,4,1,0,Completed,true,false,false
+AP008112,30 Jul 22,11,Elsternwick Park Red,Royal Ave,No. 3,Joe Barr,Stefan Harrer,Joe Barr,8-4,8,4,1,0,Completed,true,false,false
+AP008112,30 Jul 22,11,Elsternwick Park Red,Royal Ave,No. 4,Noah Mies,David Urpani,Noah Mies,8-1,8,1,1,0,Completed,true,false,false
+AP008122,06 Aug 22,12,Royal Ave,Maccabi,No. 1,Justin Alway,Tarun Soni,Justin Alway,8-6,8,6,1,0,Completed,true,false,false
+AP008122,06 Aug 22,12,Royal Ave,Maccabi,No. 2,Declan Hughes,Mor Dahan,Declan Hughes,8-0,8,0,1,0,Completed,true,false,false
+AP008122,06 Aug 22,12,Royal Ave,Maccabi,No. 3,Oliver Letham,Jesse Wilson,Oliver Letham,8-1,8,1,1,0,Completed,true,false,false
+AP008122,06 Aug 22,12,Royal Ave,Maccabi,No. 4,Stefan Harrer,Stephen Gorenstein,Stefan Harrer,8-4,8,4,1,0,Completed,true,false,false
+AP008123,06 Aug 22,12,Glen Huntly,Elsternwick Park Red,No. 1,Nasik Ahmad,Simon Corrie,Nasik Ahmad,8-2,8,2,1,0,Completed,true,true,false
+AP008123,06 Aug 22,12,Glen Huntly,Elsternwick Park Red,No. 2,William Gort,Joe Barr,Joe Barr,2-8,2,8,0,1,Completed,true,false,false
+AP008123,06 Aug 22,12,Glen Huntly,Elsternwick Park Red,No. 3,Daniel Katanov,Noah Mies,Noah Mies,5-8,5,8,0,1,Completed,true,false,false
+AP008123,06 Aug 22,12,Glen Huntly,Elsternwick Park Red,No. 4,Satyarth Mishra,Ray Yamamoto,Ray Yamamoto,2-8,2,8,0,1,Completed,true,false,true
+AP008131,13 Aug 22,13,East Malvern,Elsternwick Park Red,No. 1,Rajat Dang,Simon Corrie,Rajat Dang,8-6,8,6,1,0,Completed,true,false,false
+AP008131,13 Aug 22,13,East Malvern,Elsternwick Park Red,No. 2,Faran Mazloomi,Andrew Antonopoulos,Andrew Antonopoulos,7-8,7,8,0,1,Completed,true,false,false
+AP008131,13 Aug 22,13,East Malvern,Elsternwick Park Red,No. 3,Mose Rabe,Ray Yamamoto,Ray Yamamoto,2-8,2,8,0,1,Completed,true,false,true
+AP008131,13 Aug 22,13,East Malvern,Elsternwick Park Red,No. 4,Tom Taylor,Ben Archibald,Ben Archibald,4-8,4,8,0,1,Completed,true,true,true
+AP008132,13 Aug 22,13,Maccabi,Glen Huntly,No. 1,Mor Dahan,Vincent Kuiper,Vincent Kuiper,6-8,6,8,0,1,Completed,true,false,false
+AP008132,13 Aug 22,13,Maccabi,Glen Huntly,No. 2,Lauren Yarrow,Anirudh Devanathan,Anirudh Devanathan,6-8,6,8,0,1,Completed,true,false,false
+AP008132,13 Aug 22,13,Maccabi,Glen Huntly,No. 3,Tarun Soni,Daniel Katanov,Tarun Soni,8-2,8,2,1,0,Completed,true,false,false
+AP008132,13 Aug 22,13,Maccabi,Glen Huntly,No. 4,[Unnamed emergency — TROLS AP008132 home code 4],Josh Tripcony,Josh Tripcony,0-8,0,8,0,1,Completed,false,true,true
+AP008141,20 Aug 22,14,Royal Ave,East Malvern,No. 1,Oliver Letham,Rajat Dang,Oliver Letham,8-3,8,3,1,0,Completed,true,false,false
+AP008141,20 Aug 22,14,Royal Ave,East Malvern,No. 2,Stefan Harrer,Mose Rabe,Mose Rabe,6-8,6,8,0,1,Completed,true,false,false
+AP008141,20 Aug 22,14,Royal Ave,East Malvern,No. 3,Hesham Soliman,Alex Dusek,Hesham Soliman,8-3,8,3,1,0,Completed,true,true,false
+AP008141,20 Aug 22,14,Royal Ave,East Malvern,No. 4,David Urpani,David Bryden,David Urpani,8-4,8,4,1,0,Completed,true,false,false
+AP008143,20 Aug 22,14,Elsternwick Park Red,Maccabi,No. 1,Simon Corrie,Tarun Soni,Simon Corrie,8-3,8,3,1,0,Completed,true,false,false
+AP008143,20 Aug 22,14,Elsternwick Park Red,Maccabi,No. 2,Joe Barr,Richard White,Joe Barr,8-3,8,3,1,0,Completed,true,false,true
+AP008143,20 Aug 22,14,Elsternwick Park Red,Maccabi,No. 3,Noah Mies,Mark Lazarovits,Noah Mies,8-3,8,3,1,0,Completed,true,false,false
+AP008143,20 Aug 22,14,Elsternwick Park Red,Maccabi,No. 4,Andrew Antonopoulos,Paul Kovacs,Andrew Antonopoulos,8-2,8,2,1,0,Completed,true,false,true
+AP008151,27 Aug 22,15,East Malvern,Maccabi,No. 1,Faran Mazloomi,Lauren Yarrow,Lauren Yarrow,3-8,3,8,0,1,Completed,true,false,false
+AP008151,27 Aug 22,15,East Malvern,Maccabi,No. 2,Mose Rabe,Jordan Oliva,Mose Rabe,8-2,8,2,1,0,Completed,true,false,true
+AP008151,27 Aug 22,15,East Malvern,Maccabi,No. 3,James Bryden,Wal Amous,Wal Amous,2-8,2,8,0,1,Completed,true,false,true
+AP008151,27 Aug 22,15,East Malvern,Maccabi,No. 4,Tom Taylor,Paul Kovacs,Tom Taylor,8-7,8,7,1,0,Completed,true,true,true
+AP008152,27 Aug 22,15,Royal Ave,Glen Huntly,No. 1,Justin Alway,Nasik Ahmad,Nasik Ahmad,6-8,6,8,0,1,Completed,true,false,true
+AP008152,27 Aug 22,15,Royal Ave,Glen Huntly,No. 2,Oliver Letham,Anirudh Devanathan,Oliver Letham,8-1,8,1,1,0,Completed,true,false,false
+AP008152,27 Aug 22,15,Royal Ave,Glen Huntly,No. 3,Milan Bandur,Josh Tripcony,Josh Tripcony,2-8,2,8,0,1,Completed,true,false,true
+AP008152,27 Aug 22,15,Royal Ave,Glen Huntly,No. 4,David Urpani,William Gort,William Gort,5-8,5,8,0,1,Completed,true,false,false
+AP008321,,16,Elsternwick Park Red,Royal Ave,No. 1,Simon Corrie,Justin Alway,Justin Alway,1-8,1,8,0,1,Completed,true,false,false
+AP008321,,16,Elsternwick Park Red,Royal Ave,No. 2,Joe Barr,Oliver Letham,Oliver Letham,1-8,1,8,0,1,Completed,true,false,false
+AP008321,,16,Elsternwick Park Red,Royal Ave,No. 3,Noah Mies,Milan Bandur,Noah Mies,8-3,8,3,1,0,Completed,true,false,false
+AP008321,,16,Elsternwick Park Red,Royal Ave,No. 4,Hugh Blacket,David Urpani,Hugh Blacket,8-1,8,1,1,0,Completed,true,false,false

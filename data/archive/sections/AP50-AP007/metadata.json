@@ -1,0 +1,82 @@
+{
+  "asset_id": "AP50-AP007",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Winter 2025",
+  "season_id": "AP50",
+  "season_label": "Winter 2025",
+  "source_section_code": "AP007",
+  "section_label": "Mens Rubs 1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Elwood Blue",
+      "wins": 9,
+      "points": 71,
+      "percentage": 153.57,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Chadstone",
+      "wins": 7,
+      "points": 66,
+      "percentage": 129.41,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Glen Huntly",
+      "wins": 8,
+      "points": 65,
+      "percentage": 135.82,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Hurlingham Park",
+      "wins": 3,
+      "points": 23,
+      "percentage": 52.45,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Albert Park",
+      "wins": 0,
+      "points": 15,
+      "percentage": 64.04,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP50-AP007",
+  "fixtures": 46,
+  "completed_fixtures": 30,
+  "draw_fixtures": 57,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 120,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP007033 doubles No. 3: '4-6 1-0'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP007033 doubles No. 4: '6-0 3-0'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

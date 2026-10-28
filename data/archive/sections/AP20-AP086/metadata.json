@@ -1,0 +1,87 @@
+{
+  "asset_id": "AP20-AP086",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 09/10",
+  "season_id": "AP20",
+  "season_label": "Summer 09/10",
+  "source_section_code": "AP086",
+  "section_label": "Ladies Rubbers 3",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Mentone",
+      "wins": 0,
+      "points": 93,
+      "percentage": 160.84,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Port Melbourne",
+      "wins": 0,
+      "points": 82,
+      "percentage": 144.44,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Kings Park",
+      "wins": 0,
+      "points": 78,
+      "percentage": 122.2,
+      "marker": "R"
+    },
+    {
+      "position": 4,
+      "team": "Hawthorn",
+      "wins": 0,
+      "points": 54,
+      "percentage": 93.86,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "St Pats Mentone",
+      "wins": 0,
+      "points": 32,
+      "percentage": 68.17,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Ormond",
+      "wins": 0,
+      "points": 21,
+      "percentage": 55.14,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP20-AP086",
+  "fixtures": 47,
+  "completed_fixtures": 45,
+  "draw_fixtures": 1,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 178,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

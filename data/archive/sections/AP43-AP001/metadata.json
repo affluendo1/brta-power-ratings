@@ -1,0 +1,105 @@
+{
+  "asset_id": "AP43-AP001",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 21/22",
+  "season_id": "AP43",
+  "season_label": "Summer 21/22",
+  "source_section_code": "AP001",
+  "section_label": "Mens S/D 1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "BLTC White",
+      "wins": 10,
+      "points": 95,
+      "percentage": 142.73,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "Royal South Yarra",
+      "wins": 8,
+      "points": 91,
+      "percentage": 160.92,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "BLTC Blue",
+      "wins": 8,
+      "points": 83,
+      "percentage": 135.33,
+      "marker": "P"
+    },
+    {
+      "position": 4,
+      "team": "Mt Eliza",
+      "wins": 6,
+      "points": 67,
+      "percentage": 115.21,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Dendy Park White",
+      "wins": 4,
+      "points": 55,
+      "percentage": 103.7,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Eildon Park",
+      "wins": 2,
+      "points": 51,
+      "percentage": 109.38,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Carmelite",
+      "wins": 1,
+      "points": 22,
+      "percentage": 39.21,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "Dendy Park Blue",
+      "wins": 1,
+      "points": 16,
+      "percentage": 45.3,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP43-AP001",
+  "fixtures": 59,
+  "completed_fixtures": 52,
+  "draw_fixtures": 48,
+  "singles_rubbers": 176,
+  "doubles_rubbers": 88,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP001302 doubles No. 1: '4-6 3-2'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

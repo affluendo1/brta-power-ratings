@@ -1,0 +1,79 @@
+{
+  "asset_id": "AP48-AP007",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Winter 2024",
+  "season_id": "AP48",
+  "season_label": "Winter 2024",
+  "source_section_code": "AP007",
+  "section_label": "Open S/D 1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Sandringham",
+      "wins": 7,
+      "points": 80,
+      "percentage": 143.55,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "St Pats Mentone",
+      "wins": 8,
+      "points": 78,
+      "percentage": 122.38,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Patterson Lakes",
+      "wins": 4,
+      "points": 58,
+      "percentage": 103.41,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Clarinda",
+      "wins": 3,
+      "points": 48,
+      "percentage": 82.11,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Chadstone",
+      "wins": 2,
+      "points": 36,
+      "percentage": 64.3,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP48-AP007",
+  "fixtures": 46,
+  "completed_fixtures": 25,
+  "draw_fixtures": 57,
+  "singles_rubbers": 100,
+  "doubles_rubbers": 50,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

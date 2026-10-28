@@ -1,0 +1,117 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP014011,14 Nov 20,1,BLTC 1,BLTC 2,No. 1,Josh Baldsing,Andrew Rae,Andrew Rae,1-8,1,8,0,1,Completed,true,false,false
+AP014011,14 Nov 20,1,BLTC 1,BLTC 2,No. 2,Michael Jezdic,Anatole Shramkova,Anatole Shramkova,3-8,3,8,0,1,Completed,true,true,false
+AP014011,14 Nov 20,1,BLTC 1,BLTC 2,No. 3,Ayden Kousis,Ian Thomas,Ayden Kousis,8-0,8,0,1,0,Completed,true,false,false
+AP014011,14 Nov 20,1,BLTC 1,BLTC 2,No. 4,Tom Davoren,Stuart Mac Farlane,Stuart Mac Farlane,3-8,3,8,0,1,Completed,true,false,false
+AP014012,14 Nov 20,1,BLTC 3,Patterson Lakes,No. 1,Josh Chu-Wise,Bradley Petrak,Josh Chu-Wise,8-1,8,1,1,0,Completed,true,false,false
+AP014012,14 Nov 20,1,BLTC 3,Patterson Lakes,No. 2,Kailan McKinall,Koos Kunneke,Koos Kunneke,0-8,0,8,0,1,Completed,true,false,false
+AP014012,14 Nov 20,1,BLTC 3,Patterson Lakes,No. 3,Brodie Moller,Marcelo Grosso,Brodie Moller,8-2,8,2,1,0,Completed,true,false,false
+AP014012,14 Nov 20,1,BLTC 3,Patterson Lakes,No. 4,Reilly Scollo,Tom Beard,Tom Beard,7-8,7,8,0,1,Completed,true,false,false
+AP014013,14 Nov 20,1,Black Rock,Maccabi,No. 1,Anthony Angus,Ryan Sharp,Ryan Sharp,5-8,5,8,0,1,Completed,true,false,false
+AP014013,14 Nov 20,1,Black Rock,Maccabi,No. 2,Matt Coleman,Jamie Muscatel,Matt Coleman,8-3,8,3,1,0,Completed,true,false,false
+AP014013,14 Nov 20,1,Black Rock,Maccabi,No. 3,Michael Watts,Damon Flicker,Damon Flicker,5-8,5,8,0,1,Completed,true,false,false
+AP014013,14 Nov 20,1,Black Rock,Maccabi,No. 4,Lachie Angus,Geoff Rosenberger,Geoff Rosenberger,7-8,7,8,0,1,Completed,true,false,false
+AP014021,21 Nov 20,2,Maccabi,BLTC 1,No. 1,Jamie Muscatel,Josh Fairhurst,Jamie Muscatel,8-1,8,1,1,0,Completed,true,false,false
+AP014021,21 Nov 20,2,Maccabi,BLTC 1,No. 2,Saul Muscatel,Haydn Heng,Haydn Heng,4-8,4,8,0,1,Completed,true,false,false
+AP014021,21 Nov 20,2,Maccabi,BLTC 1,No. 3,Damon Flicker,Ayden Kousis,Ayden Kousis,5-8,5,8,0,1,Completed,true,false,false
+AP014021,21 Nov 20,2,Maccabi,BLTC 1,No. 4,Marty Schwarz,Tom Davoren,Tom Davoren,1-8,1,8,0,1,Completed,true,false,false
+AP014022,21 Nov 20,2,Patterson Lakes,Black Rock,No. 1,Bradley Petrak,Anthony Angus,Anthony Angus,4-8,4,8,0,1,Completed,true,false,false
+AP014022,21 Nov 20,2,Patterson Lakes,Black Rock,No. 2,Koos Kunneke,Matt Coleman,Koos Kunneke,8-2,8,2,1,0,Completed,true,false,false
+AP014022,21 Nov 20,2,Patterson Lakes,Black Rock,No. 3,Marcelo Grosso,Peter Kromlidis,Peter Kromlidis,0-8,0,8,0,1,Completed,true,false,false
+AP014022,21 Nov 20,2,Patterson Lakes,Black Rock,No. 4,Tom Beard,Lachie Angus,Tom Beard,8-3,8,3,1,0,Completed,true,false,false
+AP014023,21 Nov 20,2,BLTC 2,BLTC 3,No. 1,Ian Thomas,Josh Chu-Wise,Josh Chu-Wise,1-8,1,8,0,1,Completed,true,false,false
+AP014023,21 Nov 20,2,BLTC 2,BLTC 3,No. 2,Ian Bailey,Brodie Moller,Brodie Moller,2-8,2,8,0,1,Completed,true,false,false
+AP014023,21 Nov 20,2,BLTC 2,BLTC 3,No. 3,Lachlan Couper,Kailan McKinall,Lachlan Couper,8-5,8,5,1,0,Completed,true,false,false
+AP014023,21 Nov 20,2,BLTC 2,BLTC 3,No. 4,Stuart Mac Farlane,Reilly Scollo,Stuart Mac Farlane,8-2,8,2,1,0,Completed,true,false,false
+AP014031,28 Nov 20,3,BLTC 1,BLTC 3,No. 1,Josh Fairhurst,Josh Chu-Wise,Josh Chu-Wise,6-8,6,8,0,1,Completed,true,false,false
+AP014031,28 Nov 20,3,BLTC 1,BLTC 3,No. 2,Haydn Heng,Brodie Moller,Haydn Heng,8-5,8,5,1,0,Completed,true,false,false
+AP014031,28 Nov 20,3,BLTC 1,BLTC 3,No. 3,Ayden Kousis,Kailan McKinall,Ayden Kousis,8-3,8,3,1,0,Completed,true,false,false
+AP014031,28 Nov 20,3,BLTC 1,BLTC 3,No. 4,Tom Davoren,Reilly Scollo,Tom Davoren,8-2,8,2,1,0,Completed,true,false,false
+AP014032,28 Nov 20,3,Black Rock,BLTC 2,No. 1,Anthony Angus,Mark Deady,Mark Deady,2-8,2,8,0,1,Completed,true,false,true
+AP014032,28 Nov 20,3,Black Rock,BLTC 2,No. 2,Michael Watts,Ian Thomas,Ian Thomas,5-8,5,8,0,1,Completed,true,false,false
+AP014032,28 Nov 20,3,Black Rock,BLTC 2,No. 3,Ben Nuttall,Lachlan Couper,Lachlan Couper,3-8,3,8,0,1,Completed,true,true,false
+AP014032,28 Nov 20,3,Black Rock,BLTC 2,No. 4,Peter Kromlidis,Stuart Mac Farlane,Peter Kromlidis,8-4,8,4,1,0,Completed,true,false,false
+AP014033,28 Nov 20,3,Maccabi,Patterson Lakes,No. 1,Ryan Sharp,Bradley Petrak,Bradley Petrak,7-8,7,8,0,1,Completed,true,false,false
+AP014033,28 Nov 20,3,Maccabi,Patterson Lakes,No. 2,Jamie Muscatel,Kane Bailey,Jamie Muscatel,8-2,8,2,1,0,Completed,true,false,true
+AP014033,28 Nov 20,3,Maccabi,Patterson Lakes,No. 3,Saul Muscatel,Marcelo Grosso,Saul Muscatel,8-0,8,0,1,0,Completed,true,false,false
+AP014033,28 Nov 20,3,Maccabi,Patterson Lakes,No. 4,Damon Flicker,Nick Higgins,Damon Flicker,8-1,8,1,1,0,Completed,true,false,false
+AP014041,05 Dec 20,4,Patterson Lakes,BLTC 1,No. 1,Bradley Petrak,Josh Fairhurst,Josh Fairhurst,6-8,6,8,0,1,Completed,true,false,false
+AP014041,05 Dec 20,4,Patterson Lakes,BLTC 1,No. 2,Koos Kunneke,Haydn Heng,Koos Kunneke,8-3,8,3,1,0,Completed,true,false,false
+AP014041,05 Dec 20,4,Patterson Lakes,BLTC 1,No. 3,Tom Beard,Ayden Kousis,Tom Beard,8-2,8,2,1,0,Completed,true,false,false
+AP014041,05 Dec 20,4,Patterson Lakes,BLTC 1,No. 4,Marcelo Grosso,Tom Davoren,Tom Davoren,5-8,5,8,0,1,Completed,true,false,false
+AP014042,05 Dec 20,4,BLTC 2,Maccabi,No. 1,Andrew Rae,Saul Muscatel,Andrew Rae,8-1,8,1,1,0,Completed,true,false,false
+AP014042,05 Dec 20,4,BLTC 2,Maccabi,No. 2,Anatole Shramkova,Jordan Jaffe,Jordan Jaffe,7-8,7,8,0,1,Completed,true,false,false
+AP014042,05 Dec 20,4,BLTC 2,Maccabi,No. 3,Ian Thomas,Marty Schwarz,Marty Schwarz,1-8,1,8,0,1,Completed,true,false,false
+AP014042,05 Dec 20,4,BLTC 2,Maccabi,No. 4,Ian Bailey,Jonny Henquin,Ian Bailey,8-6,8,6,1,0,Completed,true,false,true
+AP014043,05 Dec 20,4,BLTC 3,Black Rock,No. 1,Craig Stewart,Anthony Angus,Anthony Angus,1-8,1,8,0,1,Completed,true,false,false
+AP014043,05 Dec 20,4,BLTC 3,Black Rock,No. 2,Josh Chu-Wise,Matt Coleman,Josh Chu-Wise,8-5,8,5,1,0,Completed,true,false,false
+AP014043,05 Dec 20,4,BLTC 3,Black Rock,No. 3,Brodie Moller,Michael Watts,Brodie Moller,8-4,8,4,1,0,Completed,true,false,false
+AP014043,05 Dec 20,4,BLTC 3,Black Rock,No. 4,Reilly Scollo,Peter Kromlidis,Reilly Scollo,8-5,8,5,1,0,Completed,true,false,false
+AP014051,12 Dec 20,5,BLTC 1,Black Rock,No. 1,Josh Fairhurst,Anthony Angus,Josh Fairhurst,8-5,8,5,1,0,Completed,true,false,false
+AP014051,12 Dec 20,5,BLTC 1,Black Rock,No. 2,Josh Baldsing,Matt Coleman,Matt Coleman,2-8,2,8,0,1,Completed,true,false,false
+AP014051,12 Dec 20,5,BLTC 1,Black Rock,No. 3,Haydn Heng,Michael Watts,Haydn Heng,8-5,8,5,1,0,Completed,true,false,false
+AP014051,12 Dec 20,5,BLTC 1,Black Rock,No. 4,Reilly Scollo,Peter Kromlidis,Peter Kromlidis,4-8,4,8,0,1,Completed,true,true,false
+AP014052,12 Dec 20,5,Patterson Lakes,BLTC 2,No. 1,Bradley Petrak,Andrew Rae,Andrew Rae,5-8,5,8,0,1,Completed,true,false,false
+AP014052,12 Dec 20,5,Patterson Lakes,BLTC 2,No. 2,Tom Beard,Ian Thomas,Tom Beard,8-3,8,3,1,0,Completed,true,false,false
+AP014052,12 Dec 20,5,Patterson Lakes,BLTC 2,No. 3,Marcelo Grosso,Lachlan Couper,Marcelo Grosso,8-2,8,2,1,0,Completed,true,false,false
+AP014052,12 Dec 20,5,Patterson Lakes,BLTC 2,No. 4,Nick Higgins,Stuart Mac Farlane,Stuart Mac Farlane,4-8,4,8,0,1,Completed,true,false,false
+AP014053,12 Dec 20,5,Maccabi,BLTC 3,No. 1,Ryan Sharp,Craig Stewart,Ryan Sharp,8-5,8,5,1,0,Completed,true,false,false
+AP014053,12 Dec 20,5,Maccabi,BLTC 3,No. 2,Saul Muscatel,Josh Chu-Wise,Josh Chu-Wise,2-8,2,8,0,1,Completed,true,false,false
+AP014053,12 Dec 20,5,Maccabi,BLTC 3,No. 3,Geoff Rosenberger,Brodie Moller,Brodie Moller,2-8,2,8,0,1,Completed,true,false,false
+AP014053,12 Dec 20,5,Maccabi,BLTC 3,No. 4,Ryan Behr,Kailan McKinall,Kailan McKinall,3-8,3,8,0,1,Completed,true,true,false
+AP014061,30 Jan 21,6,BLTC 2,BLTC 1,No. 1,Andrew Rae,Josh Fairhurst,Andrew Rae,8-7,8,7,1,0,Completed,true,false,false
+AP014061,30 Jan 21,6,BLTC 2,BLTC 1,No. 2,Anatole Shramkova,Josh Baldsing,Josh Baldsing,3-8,3,8,0,1,Completed,true,false,false
+AP014061,30 Jan 21,6,BLTC 2,BLTC 1,No. 3,Ian Thomas,Haydn Heng,Ian Thomas,8-5,8,5,1,0,Completed,true,false,false
+AP014061,30 Jan 21,6,BLTC 2,BLTC 1,No. 4,Lachlan Couper,Tom Davoren,Tom Davoren,7-8,7,8,0,1,Completed,true,false,false
+AP014062,30 Jan 21,6,Patterson Lakes,BLTC 3,No. 1,Lachlan Bridgland,Josh Chu-Wise,Josh Chu-Wise,4-8,4,8,0,1,Completed,true,false,false
+AP014062,30 Jan 21,6,Patterson Lakes,BLTC 3,No. 2,Tom Beard,Brodie Moller,Tom Beard,8-2,8,2,1,0,Completed,true,false,false
+AP014062,30 Jan 21,6,Patterson Lakes,BLTC 3,No. 3,Marcelo Grosso,Kailan McKinall,Marcelo Grosso,8-5,8,5,1,0,Completed,true,false,false
+AP014062,30 Jan 21,6,Patterson Lakes,BLTC 3,No. 4,Nick Higgins,Reilly Scollo,Reilly Scollo,4-8,4,8,0,1,Completed,true,false,false
+AP014063,30 Jan 21,6,Maccabi,Black Rock,No. 1,Jamie Muscatel,Anthony Angus,Anthony Angus,5-8,5,8,0,1,Completed,true,false,false
+AP014063,30 Jan 21,6,Maccabi,Black Rock,No. 2,Saul Muscatel,Jamie Pfahl,Saul Muscatel,8-6,8,6,1,0,Completed,true,false,false
+AP014063,30 Jan 21,6,Maccabi,Black Rock,No. 3,Jordan Jaffe,Matt Coleman,Jordan Jaffe,8-3,8,3,1,0,Completed,true,false,false
+AP014063,30 Jan 21,6,Maccabi,Black Rock,No. 4,Marty Schwarz,Ben Nuttall,Marty Schwarz,8-6,8,6,1,0,Completed,true,false,true
+AP014071,06 Feb 21,7,BLTC 1,Maccabi,No. 1,Josh Fairhurst,Saul Muscatel,Saul Muscatel,7-8,7,8,0,1,Completed,true,false,false
+AP014071,06 Feb 21,7,BLTC 1,Maccabi,No. 2,Josh Baldsing,Damon Flicker,Damon Flicker,4-8,4,8,0,1,Completed,true,false,false
+AP014071,06 Feb 21,7,BLTC 1,Maccabi,No. 3,Ayden Kousis,Marty Schwarz,Ayden Kousis,8-4,8,4,1,0,Completed,true,false,false
+AP014071,06 Feb 21,7,BLTC 1,Maccabi,No. 4,Marcus Brittain,Geoff Rosenberger,Geoff Rosenberger,5-8,5,8,0,1,Completed,true,false,false
+AP014072,06 Feb 21,7,Black Rock,Patterson Lakes,No. 1,Anthony Angus,Bradley Petrak,Anthony Angus,8-7,8,7,1,0,Completed,true,false,false
+AP014072,06 Feb 21,7,Black Rock,Patterson Lakes,No. 2,Jamie Pfahl,Lachlan Bridgland,Jamie Pfahl,8-2,8,2,1,0,Completed,true,false,false
+AP014072,06 Feb 21,7,Black Rock,Patterson Lakes,No. 3,Michael Watts,Tom Beard,Tom Beard,1-8,1,8,0,1,Completed,true,false,false
+AP014072,06 Feb 21,7,Black Rock,Patterson Lakes,No. 4,Lachie Angus,Marcelo Grosso,Marcelo Grosso,4-8,4,8,0,1,Completed,true,false,false
+AP014073,06 Feb 21,7,BLTC 3,BLTC 2,No. 1,Craig Stewart,Paul McKay,Paul McKay,1-8,1,8,0,1,Completed,true,false,true
+AP014073,06 Feb 21,7,BLTC 3,BLTC 2,No. 2,Josh Chu-Wise,Ian Thomas,Josh Chu-Wise,8-1,8,1,1,0,Completed,true,false,false
+AP014073,06 Feb 21,7,BLTC 3,BLTC 2,No. 3,Kailan McKinall,Lachlan Couper,Lachlan Couper,3-8,3,8,0,1,Completed,true,false,false
+AP014073,06 Feb 21,7,BLTC 3,BLTC 2,No. 4,Reilly Scollo,Stuart Mac Farlane,Reilly Scollo,8-2,8,2,1,0,Completed,true,false,false
+AP014081,20 Feb 21,8,BLTC 3,BLTC 1,No. 1,Craig Stewart,Josh Fairhurst,Craig Stewart,8-7,8,7,1,0,Completed,true,false,false
+AP014081,20 Feb 21,8,BLTC 3,BLTC 1,No. 2,Josh Chu-Wise,Josh Baldsing,Josh Chu-Wise,8-1,8,1,1,0,Completed,true,false,false
+AP014081,20 Feb 21,8,BLTC 3,BLTC 1,No. 3,Brodie Moller,Marcus Brittain,Marcus Brittain,6-8,6,8,0,1,Completed,true,false,false
+AP014081,20 Feb 21,8,BLTC 3,BLTC 1,No. 4,Reilly Scollo,Tom Davoren,Tom Davoren,4-8,4,8,0,1,Completed,true,false,false
+AP014082,20 Feb 21,8,BLTC 2,Black Rock,No. 1,Andrew Rae,Jamie Pfahl,Andrew Rae,8-1,8,1,1,0,Completed,true,false,false
+AP014082,20 Feb 21,8,BLTC 2,Black Rock,No. 2,Ian Thomas,Matt Coleman,Ian Thomas,8-5,8,5,1,0,Completed,true,false,false
+AP014082,20 Feb 21,8,BLTC 2,Black Rock,No. 3,Lachlan Couper,Ben Nuttall,Ben Nuttall,6-8,6,8,0,1,Completed,true,false,true
+AP014082,20 Feb 21,8,BLTC 2,Black Rock,No. 4,Stuart Mac Farlane,Lachie Angus,Lachie Angus,4-8,4,8,0,1,Completed,true,false,false
+AP014083,20 Feb 21,8,Patterson Lakes,Maccabi,No. 1,Bradley Petrak,Ryan Sharp,Ryan Sharp,4-8,4,8,0,1,Completed,true,false,false
+AP014083,20 Feb 21,8,Patterson Lakes,Maccabi,No. 2,Tom Beard,Damon Flicker,Tom Beard,8-4,8,4,1,0,Completed,true,false,false
+AP014083,20 Feb 21,8,Patterson Lakes,Maccabi,No. 3,Marcelo Grosso,Marty Schwarz,Marty Schwarz,5-8,5,8,0,1,Completed,true,false,false
+AP014083,20 Feb 21,8,Patterson Lakes,Maccabi,No. 4,Nick Higgins,Jonny Henquin,Nick Higgins,8-5,8,5,1,0,Completed,true,false,true
+AP014091,27 Feb 21,9,BLTC 1,Patterson Lakes,No. 1,Josh Fairhurst,Bradley Petrak,Bradley Petrak,4-8,4,8,0,1,Completed,true,false,false
+AP014091,27 Feb 21,9,BLTC 1,Patterson Lakes,No. 2,Josh Chu-Wise,Lachlan Bridgland,Josh Chu-Wise,8-5,8,5,1,0,Completed,true,true,false
+AP014091,27 Feb 21,9,BLTC 1,Patterson Lakes,No. 3,Haydn Heng,Tom Beard,Tom Beard,3-8,3,8,0,1,Completed,true,false,false
+AP014091,27 Feb 21,9,BLTC 1,Patterson Lakes,No. 4,Tom Davoren,Nick Higgins,Tom Davoren,8-3,8,3,1,0,Completed,true,false,false
+AP014093,27 Feb 21,9,Black Rock,BLTC 3,No. 1,Anthony Angus,Craig Stewart,Anthony Angus,8-1,8,1,1,0,Completed,true,false,false
+AP014093,27 Feb 21,9,Black Rock,BLTC 3,No. 2,Jamie Pfahl,Brodie Moller,Jamie Pfahl,8-5,8,5,1,0,Completed,true,false,false
+AP014093,27 Feb 21,9,Black Rock,BLTC 3,No. 3,Ben Nuttall,Kailan McKinall,Ben Nuttall,8-4,8,4,1,0,Completed,true,true,false
+AP014093,27 Feb 21,9,Black Rock,BLTC 3,No. 4,Tim Neales,Reilly Scollo,Tim Neales,8-6,8,6,1,0,Completed,true,true,false
+AP014101,13 Mar 21,10,Black Rock,BLTC 1,No. 1,Anthony Angus,Josh Baldsing,Anthony Angus,8-5,8,5,1,0,Completed,true,false,false
+AP014101,13 Mar 21,10,Black Rock,BLTC 1,No. 2,Michael Watts,Shadi Taleb,Shadi Taleb,1-8,1,8,0,1,Completed,true,false,true
+AP014101,13 Mar 21,10,Black Rock,BLTC 1,No. 3,Ben Nuttall,Ayden Kousis,Ayden Kousis,5-8,5,8,0,1,Completed,true,true,false
+AP014101,13 Mar 21,10,Black Rock,BLTC 1,No. 4,Peter Kromlidis,Tom Davoren,Peter Kromlidis,8-6,8,6,1,0,Completed,true,false,false
+AP014102,13 Mar 21,10,BLTC 2,Patterson Lakes,No. 1,Anatole Shramkova,Bradley Petrak,Bradley Petrak,1-8,1,8,0,1,Completed,true,false,false
+AP014102,13 Mar 21,10,BLTC 2,Patterson Lakes,No. 2,Ian Thomas,Lachlan Bridgland,Ian Thomas,8-3,8,3,1,0,Completed,true,false,false
+AP014102,13 Mar 21,10,BLTC 2,Patterson Lakes,No. 3,Lachlan Couper,Tom Beard,Tom Beard,2-8,2,8,0,1,Completed,true,false,false
+AP014102,13 Mar 21,10,BLTC 2,Patterson Lakes,No. 4,Stuart Mac Farlane,Marcelo Grosso,Marcelo Grosso,3-7,3,7,0,1,Completed,true,false,false
+AP014321,,16,Black Rock,Patterson Lakes,No. 1,Anthony Angus,Bradley Petrak,Bradley Petrak,5-8,5,8,0,1,Completed,true,false,false
+AP014321,,16,Black Rock,Patterson Lakes,No. 2,Michael Watts,Lachlan Bridgland,Lachlan Bridgland,6-8,6,8,0,1,Completed,true,false,false
+AP014321,,16,Black Rock,Patterson Lakes,No. 3,Ben Nuttall,Tom Beard,Tom Beard,5-8,5,8,0,1,Completed,true,true,false
+AP014321,,16,Black Rock,Patterson Lakes,No. 4,Peter Kromlidis,Marcelo Grosso,Peter Kromlidis,8-3,8,3,1,0,Completed,true,false,false

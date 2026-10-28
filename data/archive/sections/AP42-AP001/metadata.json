@@ -1,0 +1,79 @@
+{
+  "asset_id": "AP42-AP001",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Winter 2021",
+  "season_id": "AP42",
+  "season_label": "Winter 2021",
+  "source_section_code": "AP001",
+  "section_label": "Ladies Sets 1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "St Louis de Mont",
+      "wins": 5,
+      "points": 74,
+      "percentage": 137.86,
+      "marker": ""
+    },
+    {
+      "position": 2,
+      "team": "Port Melbourne",
+      "wins": 4,
+      "points": 73,
+      "percentage": 145.05,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Legend Park",
+      "wins": 5,
+      "points": 73,
+      "percentage": 134.16,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Overport Park",
+      "wins": 1,
+      "points": 51,
+      "percentage": 65.68,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Chadstone",
+      "wins": 0,
+      "points": 29,
+      "percentage": 56.9,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 6,
+    "doublesBestOf": 1,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP42-AP001",
+  "fixtures": 46,
+  "completed_fixtures": 15,
+  "draw_fixtures": 46,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 90,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

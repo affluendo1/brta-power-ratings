@@ -1,0 +1,61 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP021011,07 Oct 17,1,regular,Round 1,BLTC,MCC Glen Iris Roy,0,10,1,8,,,30,63,Completed,
+AP021013,07 Oct 17,1,regular,Round 1,East Malvern 2,Maccabi 2,2,8,3,5,,,38,43,Completed,
+AP021014,07 Oct 17,1,regular,Round 1,Carmelite,Ormond,3,7,4,5,,,47,45,Completed,
+pending-ap021-r1-bye-maccabi-1,07 Oct 17,1,regular,Round 1,Bye,Maccabi 1,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP021021,14 Oct 17,2,regular,Round 2,Ormond,BLTC,3,7,4,5,,,51,46,Completed,
+AP021023,14 Oct 17,2,regular,Round 2,Maccabi 1,East Malvern 2,10,0,8,1,,,59,37,Completed,
+AP021024,14 Oct 17,2,regular,Round 2,Maccabi 2,Carmelite,2,8,3,5,,,35,46,Completed,
+pending-ap021-r2-mcc-glen-iris-roy-bye,14 Oct 17,2,regular,Round 2,MCC Glen Iris Roy,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP021031,21 Oct 17,3,regular,Round 3,BLTC,Maccabi 2,2,8,4,6,,,45,61,Completed,
+AP021033,21 Oct 17,3,regular,Round 3,East Malvern 2,MCC Glen Iris Roy,2,8,3,6,,,36,56,Completed,
+AP021034,21 Oct 17,3,regular,Round 3,Carmelite,Maccabi 1,2,8,3,6,,,38,48,Completed,
+pending-ap021-r3-bye-ormond,21 Oct 17,3,regular,Round 3,Bye,Ormond,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP021041,28 Oct 17,4,regular,Round 4,Maccabi 1,BLTC,8,2,5,3,,,48,36,Completed,
+AP021043,28 Oct 17,4,regular,Round 4,Ormond,East Malvern 2,2,8,3,5,,,37,46,Completed,
+AP021044,28 Oct 17,4,regular,Round 4,MCC Glen Iris Roy,Carmelite,2,8,3,5,,,36,42,Completed,
+pending-ap021-r4-maccabi-2-bye,28 Oct 17,4,regular,Round 4,Maccabi 2,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP021051,11 Nov 17,5,regular,Round 5,East Malvern 2,Carmelite,1,9,2,6,,,30,53,Completed,
+AP021052,11 Nov 17,5,regular,Round 5,Ormond,Maccabi 2,5,5,4,4,,,40,40,Completed,
+AP021053,11 Nov 17,5,regular,Round 5,Maccabi 1,MCC Glen Iris Roy,9,1,6,2,,,51,35,Completed,
+pending-ap021-r5-bltc-bye,11 Nov 17,5,regular,Round 5,BLTC,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP021062,18 Nov 17,6,regular,Round 6,Carmelite,BLTC,6,4,3,1,,,34,26,Completed,
+AP021063,18 Nov 17,6,regular,Round 6,Maccabi 2,Maccabi 1,6,4,3,2,,,39,30,Completed,
+AP021064,18 Nov 17,6,regular,Round 6,MCC Glen Iris Roy,Ormond,4.5,5.5,2,4,,,29,36,Completed,
+pending-ap021-r6-bye-east-malvern-2,18 Nov 17,6,regular,Round 6,Bye,East Malvern 2,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP021071,25 Nov 17,7,regular,Round 7,BLTC,East Malvern 2,10,0,8,0,,,56,17,Completed,
+AP021073,25 Nov 17,7,regular,Round 7,Ormond,Maccabi 1,8,2,5,3,,,44,33,Completed,
+AP021074,25 Nov 17,7,regular,Round 7,Maccabi 2,MCC Glen Iris Roy,9,1,7,2,,,52,35,Completed,
+pending-ap021-r7-bye-carmelite,25 Nov 17,7,regular,Round 7,Bye,Carmelite,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap021-r8-maccabi-1-bye,02 Dec 17,8,regular,Round 8,Maccabi 1,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap021-r8-maccabi-2-east-malvern-2,02 Dec 17,8,regular,Round 8,Maccabi 2,East Malvern 2,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap021-r8-mcc-glen-iris-roy-bltc,02 Dec 17,8,regular,Round 8,MCC Glen Iris Roy,BLTC,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap021-r8-ormond-carmelite,02 Dec 17,8,regular,Round 8,Ormond,Carmelite,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP021091,09 Dec 17,9,regular,Round 9,BLTC,Ormond,2,8,3,5,,,29,43,Completed,
+AP021093,09 Dec 17,9,regular,Round 9,East Malvern 2,Maccabi 1,1,9,1,7,,,22,53,Completed,
+AP021094,09 Dec 17,9,regular,Round 9,Carmelite,Maccabi 2,8,2,4,4,,,43,48,Completed,
+pending-ap021-r9-bye-mcc-glen-iris-roy,09 Dec 17,9,regular,Round 9,Bye,MCC Glen Iris Roy,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP021103,16 Dec 17,10,regular,Round 10,MCC Glen Iris Roy,East Malvern 2,9,1,7,2,,,54,32,Completed,
+AP021104,16 Dec 17,10,regular,Round 10,Maccabi 1,Carmelite,9,1,7,1,,,53,19,Completed,
+pending-ap021-r10-maccabi-2-bltc,16 Dec 17,10,regular,Round 10,Maccabi 2,BLTC,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+pending-ap021-r10-ormond-bye,16 Dec 17,10,regular,Round 10,Ormond,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP021111,03 Feb 18,11,regular,Round 11,BLTC,Maccabi 1,1,9,1,7,,,31,53,Completed,
+AP021113,03 Feb 18,11,regular,Round 11,East Malvern 2,Ormond,7,3,4,4,,,40,36,Completed,
+AP021114,03 Feb 18,11,regular,Round 11,Carmelite,MCC Glen Iris Roy,2,8,3,5,,,39,46,Completed,
+pending-ap021-r11-bye-maccabi-2,03 Feb 18,11,regular,Round 11,Bye,Maccabi 2,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP021121,10 Feb 18,12,regular,Round 12,Carmelite,East Malvern 2,8,2,5,3,,,44,39,Completed,
+AP021122,10 Feb 18,12,regular,Round 12,Maccabi 2,Ormond,3,7,4,5,,,46,52,Completed,
+AP021123,10 Feb 18,12,regular,Round 12,MCC Glen Iris Roy,Maccabi 1,9,1,7,1,,,54,27,Completed,
+pending-ap021-r12-bye-bltc,10 Feb 18,12,regular,Round 12,Bye,BLTC,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP021132,17 Feb 18,13,regular,Round 13,BLTC,Carmelite,7,3,5,4,,,49,48,Completed,
+AP021133,17 Feb 18,13,regular,Round 13,Maccabi 1,Maccabi 2,10,0,8,1,,,61,32,Completed,
+AP021134,17 Feb 18,13,regular,Round 13,Ormond,MCC Glen Iris Roy,8,2,6,2,,,47,32,Completed,
+pending-ap021-r13-east-malvern-2-bye,17 Feb 18,13,regular,Round 13,East Malvern 2,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP021141,24 Feb 18,14,regular,Round 14,East Malvern 2,BLTC,1,9,2,7,,,27,55,Completed,
+AP021143,24 Feb 18,14,regular,Round 14,Maccabi 1,Ormond,8,2,6,2,,,53,40,Completed,
+AP021144,24 Feb 18,14,regular,Round 14,MCC Glen Iris Roy,Maccabi 2,10,0,8,0,,,56,24,Completed,
+pending-ap021-r14-carmelite-bye,24 Feb 18,14,regular,Round 14,Carmelite,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP021301,,16,semi_final,Semi-final,Maccabi 1,MCC Glen Iris Roy,8,2,5,4,,,56,49,Completed,
+AP021302,,16,semi_final,Semi-final,Ormond,Carmelite,3,7,5,5,,,52,53,Completed,
+AP021311,,16,semi_final,Semi-final,MCC Glen Iris Roy,Carmelite,9,1,4,0,,,32,22,Completed,
+AP021321,,17,grand_final,Grand final · TROLS entry 2,Maccabi 1,MCC Glen Iris Roy,2,8,3,6,,,43,56,Completed,

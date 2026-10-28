@@ -1,0 +1,205 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP003011,07 Oct 23,1,Tennis World,BLTC,No. 1,George Vergakis,Christian Safko,Christian Safko,0-8,0,8,0,1,Completed,true,false,false
+AP003011,07 Oct 23,1,Tennis World,BLTC,No. 2,Nicolas Castellazzi,Eddie Andrews,Nicolas Castellazzi,8-3,8,3,1,0,Completed,true,true,false
+AP003011,07 Oct 23,1,Tennis World,BLTC,No. 3,Harrie Carr,Juan Sanchez,Harrie Carr,8-5,8,5,1,0,Completed,true,false,false
+AP003011,07 Oct 23,1,Tennis World,BLTC,No. 4,Andrej Pomasan,Roger Boyd,Andrej Pomasan,8-3,8,3,1,0,Completed,true,true,false
+AP003012,07 Oct 23,1,Hawthorn,Maccabi,No. 1,Josh Goodland,Max Needleman,Max Needleman,3-8,3,8,0,1,Completed,true,false,false
+AP003012,07 Oct 23,1,Hawthorn,Maccabi,No. 2,Mitch Gleason,Robert Minc,Mitch Gleason,8-5,8,5,1,0,Completed,true,false,false
+AP003012,07 Oct 23,1,Hawthorn,Maccabi,No. 3,Paul Wu,Steven Gostin,Steven Gostin,3-8,3,8,0,1,Completed,true,false,false
+AP003012,07 Oct 23,1,Hawthorn,Maccabi,No. 4,Mark Tsui,Geoff Rosenberger,Geoff Rosenberger,3-8,3,8,0,1,Completed,true,true,false
+AP003013,07 Oct 23,1,Ormond,Black Rock,No. 1,Loic Grzembielewski,Rob Cvitkovic,Loic Grzembielewski,8-7,8,7,1,0,Completed,true,false,true
+AP003013,07 Oct 23,1,Ormond,Black Rock,No. 2,Michael Hickey,Eduardo Dominguez,Michael Hickey,8-1,8,1,1,0,Completed,true,false,true
+AP003013,07 Oct 23,1,Ormond,Black Rock,No. 3,Lucas Nenke,Ben Nuttall,Lucas Nenke,8-5,8,5,1,0,Completed,true,false,false
+AP003013,07 Oct 23,1,Ormond,Black Rock,No. 4,Ben Darrou,Michael Watts,Michael Watts,2-8,2,8,0,1,Completed,true,false,false
+AP003014,07 Oct 23,1,Langwarrin,Kings Park,No. 1,Julian McKay,George Georgakas,Julian McKay,8-3,8,3,1,0,Completed,true,false,false
+AP003014,07 Oct 23,1,Langwarrin,Kings Park,No. 2,William Blair,Nathan Broadbent,William Blair,8-1,8,1,1,0,Completed,true,false,false
+AP003014,07 Oct 23,1,Langwarrin,Kings Park,No. 3,Haris Siakallis,Ryan Jones,Haris Siakallis,8-1,8,1,1,0,Completed,true,false,false
+AP003014,07 Oct 23,1,Langwarrin,Kings Park,No. 4,Jack Smith,Dom Langdon,Dom Langdon,4-8,4,8,0,1,Completed,true,true,false
+AP003021,14 Oct 23,2,Kings Park,Tennis World,No. 1,George Georgakas,Piet Van Der Lans,Piet Van Der Lans,6-8,6,8,0,1,Completed,true,false,false
+AP003021,14 Oct 23,2,Kings Park,Tennis World,No. 2,Ryan Jones,Nicolas Castellazzi,Nicolas Castellazzi,0-8,0,8,0,1,Completed,true,false,true
+AP003021,14 Oct 23,2,Kings Park,Tennis World,No. 3,Dom Langdon,Harrie Carr,Dom Langdon,8-4,8,4,1,0,Completed,true,false,false
+AP003021,14 Oct 23,2,Kings Park,Tennis World,No. 4,Finn Rasmussen,Andrej Pomasan,Finn Rasmussen,8-4,8,4,1,0,Completed,true,false,true
+AP003022,14 Oct 23,2,BLTC,Hawthorn,No. 1,Christian Safko,Peter Orszagh,Christian Safko,8-1,8,1,1,0,Completed,true,false,false
+AP003022,14 Oct 23,2,BLTC,Hawthorn,No. 2,Greg Kluge,Josh Goodland,Josh Goodland,2-8,2,8,0,1,Completed,true,false,false
+AP003022,14 Oct 23,2,BLTC,Hawthorn,No. 3,Warren Kennard,Paul Wu,Warren Kennard,8-7,8,7,1,0,Completed,true,false,false
+AP003022,14 Oct 23,2,BLTC,Hawthorn,No. 4,Nicholas Shaw,Adam Sofoulis,Nicholas Shaw,8-6,8,6,1,0,Completed,true,true,true
+AP003023,14 Oct 23,2,Maccabi,Ormond,No. 1,Jordan Jaffe,Lucas Nenke,Jordan Jaffe,8-3,8,3,1,0,Completed,true,false,false
+AP003023,14 Oct 23,2,Maccabi,Ormond,No. 2,Robert Minc,Vikrim Prakash,Robert Minc,8-5,8,5,1,0,Completed,true,false,true
+AP003023,14 Oct 23,2,Maccabi,Ormond,No. 3,Steven Gostin,Steve Bendel,Steven Gostin,8-1,8,1,1,0,Completed,true,false,true
+AP003023,14 Oct 23,2,Maccabi,Ormond,No. 4,Steven Kleytman,Steve Gelagin,Steven Kleytman,8-2,8,2,1,0,Completed,true,false,true
+AP003024,14 Oct 23,2,Black Rock,Langwarrin,No. 1,Demetri Kogas,Julian McKay,Demetri Kogas,8-6,8,6,1,0,Completed,true,false,false
+AP003024,14 Oct 23,2,Black Rock,Langwarrin,No. 2,Anthony Angus,William Blair,William Blair,4-8,4,8,0,1,Completed,true,false,false
+AP003024,14 Oct 23,2,Black Rock,Langwarrin,No. 3,Peter Kromlidis,Haris Siakallis,Peter Kromlidis,8-3,8,3,1,0,Completed,true,false,false
+AP003024,14 Oct 23,2,Black Rock,Langwarrin,No. 4,Ben Nuttall,Alex Ianculescu,Alex Ianculescu,5-8,5,8,0,1,Completed,true,false,false
+AP003031,21 Oct 23,3,Tennis World,Black Rock,No. 1,Piet Van Der Lans,Peter Kromlidis,Piet Van Der Lans,8-3,8,3,1,0,Completed,true,false,false
+AP003031,21 Oct 23,3,Tennis World,Black Rock,No. 2,Harrie Carr,Noah Zambiasi,Harrie Carr,8-3,8,3,1,0,Completed,true,false,false
+AP003031,21 Oct 23,3,Tennis World,Black Rock,No. 3,Chris Brooks,Alistair Sims,Chris Brooks,8-2,8,2,1,0,Completed,true,true,true
+AP003031,21 Oct 23,3,Tennis World,Black Rock,No. 4,Christopher Spiropoulos,Adam Senan,Adam Senan,6-8,6,8,0,1,Completed,true,true,true
+AP003032,21 Oct 23,3,Hawthorn,Kings Park,No. 1,Josh Goodland,Nathan Broadbent,Nathan Broadbent,7-8,7,8,0,1,Completed,true,false,false
+AP003032,21 Oct 23,3,Hawthorn,Kings Park,No. 2,Alistair Young,Ryan Jones,Alistair Young,8-0,8,0,1,0,Completed,true,false,false
+AP003032,21 Oct 23,3,Hawthorn,Kings Park,No. 3,Paul Wu,Dom Langdon,Paul Wu,8-5,8,5,1,0,Completed,true,false,false
+AP003032,21 Oct 23,3,Hawthorn,Kings Park,No. 4,Arki Nobbs,Finn Rasmussen,Arki Nobbs,8-4,8,4,1,0,Completed,true,true,false
+AP003033,21 Oct 23,3,Ormond,BLTC,No. 1,Loic Grzembielewski,Christian Safko,Christian Safko,7-8,7,8,0,1,Completed,true,false,false
+AP003033,21 Oct 23,3,Ormond,BLTC,No. 2,Lucas Nenke,Juan Sanchez,Juan Sanchez,4-8,4,8,0,1,Completed,true,false,false
+AP003033,21 Oct 23,3,Ormond,BLTC,No. 3,Kenny Ong,Warren Kennard,Kenny Ong,8-6,8,6,1,0,Completed,true,false,false
+AP003033,21 Oct 23,3,Ormond,BLTC,No. 4,Ben Darrou,Eddie Ivanka,Eddie Ivanka,2-8,2,8,0,1,Completed,true,false,false
+AP003034,21 Oct 23,3,Langwarrin,Maccabi,No. 1,Julian McKay,Jordan Jaffe,Jordan Jaffe,7-8,7,8,0,1,Completed,true,false,false
+AP003034,21 Oct 23,3,Langwarrin,Maccabi,No. 2,William Blair,Steven Gostin,William Blair,8-1,8,1,1,0,Completed,true,false,false
+AP003034,21 Oct 23,3,Langwarrin,Maccabi,No. 3,Kyle Ebblewhite,Geoff Rosenberger,Kyle Ebblewhite,8-7,8,7,1,0,Completed,true,false,false
+AP003034,21 Oct 23,3,Langwarrin,Maccabi,No. 4,Alex Ianculescu,Marty Schwarz,Alex Ianculescu,8-7,8,7,1,0,Completed,true,false,false
+AP003041,28 Oct 23,4,Maccabi,Tennis World,No. 1,Jordan Jaffe,Piet Van Der Lans,Piet Van Der Lans,6-8,6,8,0,1,Completed,true,false,false
+AP003041,28 Oct 23,4,Maccabi,Tennis World,No. 2,Robert Minc,George Vergakis,Robert Minc,8-1,8,1,1,0,Completed,true,false,false
+AP003041,28 Oct 23,4,Maccabi,Tennis World,No. 3,Geoff Rosenberger,Jack Denson,Geoff Rosenberger,8-2,8,2,1,0,Completed,true,false,false
+AP003041,28 Oct 23,4,Maccabi,Tennis World,No. 4,Marty Schwarz,Harrie Carr,Harrie Carr,6-8,6,8,0,1,Completed,true,false,false
+AP003042,28 Oct 23,4,Black Rock,Hawthorn,No. 1,Demetri Kogas,Peter Orszagh,Peter Orszagh,3-8,3,8,0,1,Completed,true,false,false
+AP003042,28 Oct 23,4,Black Rock,Hawthorn,No. 2,Anthony Angus,Paul Wu,Paul Wu,7-8,7,8,0,1,Completed,true,false,false
+AP003042,28 Oct 23,4,Black Rock,Hawthorn,No. 3,Peter Kromlidis,Adam Sofoulis,Peter Kromlidis,8-7,8,7,1,0,Completed,true,false,true
+AP003042,28 Oct 23,4,Black Rock,Hawthorn,No. 4,Michael Kernahan,Ryan Duckett,Michael Kernahan,8-6,8,6,1,0,Completed,true,false,true
+AP003043,28 Oct 23,4,Kings Park,Ormond,No. 1,Lachlan Couper,Michael Hickey,Michael Hickey,2-8,2,8,0,1,Completed,true,true,false
+AP003043,28 Oct 23,4,Kings Park,Ormond,No. 2,Nathan Broadbent,Lucas Nenke,Nathan Broadbent,8-4,8,4,1,0,Completed,true,false,false
+AP003043,28 Oct 23,4,Kings Park,Ormond,No. 3,Dom Langdon,Kenny Ong,Kenny Ong,3-8,3,8,0,1,Completed,true,false,false
+AP003043,28 Oct 23,4,Kings Park,Ormond,No. 4,Finn Rasmussen,Nathan McCracken,Nathan McCracken,6-8,6,8,0,1,Completed,true,false,false
+AP003044,28 Oct 23,4,BLTC,Langwarrin,No. 1,Christian Safko,Julian McKay,Christian Safko,8-1,8,1,1,0,Completed,true,false,false
+AP003044,28 Oct 23,4,BLTC,Langwarrin,No. 2,Eddie Andrews,Kyle Ebblewhite,Kyle Ebblewhite,5-8,5,8,0,1,Completed,true,false,false
+AP003044,28 Oct 23,4,BLTC,Langwarrin,No. 3,Juan Sanchez,Haris Siakallis,Juan Sanchez,8-5,8,5,1,0,Completed,true,false,false
+AP003044,28 Oct 23,4,BLTC,Langwarrin,No. 4,Eddie Ivanka,Alex Ianculescu,Alex Ianculescu,4-8,4,8,0,1,Completed,true,false,false
+AP003051,11 Nov 23,5,Ormond,Langwarrin,No. 1,Loic Grzembielewski,William Blair,William Blair,6-8,6,8,0,1,Completed,true,false,false
+AP003051,11 Nov 23,5,Ormond,Langwarrin,No. 2,Michael Hickey,Kyle Ebblewhite,Michael Hickey,8-1,8,1,1,0,Completed,true,false,false
+AP003051,11 Nov 23,5,Ormond,Langwarrin,No. 3,Ben Darrou,Haris Siakallis,Haris Siakallis,2-8,2,8,0,1,Completed,true,false,false
+AP003051,11 Nov 23,5,Ormond,Langwarrin,No. 4,Nathan McCracken,Alex Ianculescu,Alex Ianculescu,3-8,3,8,0,1,Completed,true,false,false
+AP003052,11 Nov 23,5,Kings Park,Black Rock,No. 1,George Georgakas,Anthony Angus,Anthony Angus,0-8,0,8,0,1,Completed,true,false,false
+AP003052,11 Nov 23,5,Kings Park,Black Rock,No. 2,Raph Haddad,Peter Kromlidis,Peter Kromlidis,6-8,6,8,0,1,Completed,true,true,false
+AP003052,11 Nov 23,5,Kings Park,Black Rock,No. 3,Ryan Jones,Ben Nuttall,Ryan Jones,8-3,8,3,1,0,Completed,true,false,false
+AP003052,11 Nov 23,5,Kings Park,Black Rock,No. 4,Finn Rasmussen,Noah Zambiasi,Noah Zambiasi,6-8,6,8,0,1,Completed,true,false,false
+AP003053,11 Nov 23,5,Maccabi,BLTC,No. 1,Jordan Jaffe,Eddie Andrews,Jordan Jaffe,8-2,8,2,1,0,Completed,true,false,false
+AP003053,11 Nov 23,5,Maccabi,BLTC,No. 2,Robert Minc,Juan Sanchez,Juan Sanchez,3-8,3,8,0,1,Completed,true,false,false
+AP003053,11 Nov 23,5,Maccabi,BLTC,No. 3,Steven Gostin,Warren Kennard,Warren Kennard,5-8,5,8,0,1,Completed,true,false,false
+AP003053,11 Nov 23,5,Maccabi,BLTC,No. 4,Marty Schwarz,Eddie Ivanka,Marty Schwarz,8-0,8,0,1,0,Completed,true,false,false
+AP003054,11 Nov 23,5,Tennis World,Hawthorn,No. 1,Piet Van Der Lans,Josh Goodland,Piet Van Der Lans,8-3,8,3,1,0,Completed,true,false,false
+AP003054,11 Nov 23,5,Tennis World,Hawthorn,No. 2,Matt Jones,Mike Zappala,Mike Zappala,6-8,6,8,0,1,Completed,true,false,false
+AP003054,11 Nov 23,5,Tennis World,Hawthorn,No. 3,Andrej Pomasan,Alistair Young,Andrej Pomasan,8-2,8,2,1,0,Completed,true,true,false
+AP003054,11 Nov 23,5,Tennis World,Hawthorn,No. 4,Toan Nguyen,Paul Wu,Paul Wu,6-8,6,8,0,1,Completed,true,true,false
+AP003061,18 Nov 23,6,Hawthorn,Ormond,No. 1,Peter Orszagh,Loic Grzembielewski,Peter Orszagh,8-4,8,4,1,0,Completed,true,false,false
+AP003061,18 Nov 23,6,Hawthorn,Ormond,No. 2,Josh Goodland,Michael Hickey,Michael Hickey,4-8,4,8,0,1,Completed,true,false,false
+AP003061,18 Nov 23,6,Hawthorn,Ormond,No. 3,Mitch Gleason,Lucas Nenke,Mitch Gleason,8-6,8,6,1,0,Completed,true,false,false
+AP003061,18 Nov 23,6,Hawthorn,Ormond,No. 4,Paul Wu,Kenny Ong,Kenny Ong,0-8,0,8,0,1,Completed,true,false,false
+AP003062,18 Nov 23,6,Langwarrin,Tennis World,No. 1,William Blair,Piet Van Der Lans,William Blair,8-6,8,6,1,0,Completed,true,false,false
+AP003062,18 Nov 23,6,Langwarrin,Tennis World,No. 2,Kyle Ebblewhite,[Unnamed emergency — TROLS AP003062 away code 2],Kyle Ebblewhite,8-0,8,0,1,0,Completed,false,false,true
+AP003062,18 Nov 23,6,Langwarrin,Tennis World,No. 3,Haris Siakallis,Andrej Pomasan,Andrej Pomasan,7-8,7,8,0,1,Completed,true,false,true
+AP003062,18 Nov 23,6,Langwarrin,Tennis World,No. 4,Alex Ianculescu,Mark Hartnett,Mark Hartnett,5-8,5,8,0,1,Completed,true,false,false
+AP003063,18 Nov 23,6,Black Rock,Maccabi,No. 1,Peter Kromlidis,Steven Gostin,Peter Kromlidis,8-3,8,3,1,0,Completed,true,false,false
+AP003063,18 Nov 23,6,Black Rock,Maccabi,No. 2,Lachlan Gotz,Geoff Rosenberger,Geoff Rosenberger,6-8,6,8,0,1,Completed,true,true,false
+AP003063,18 Nov 23,6,Black Rock,Maccabi,No. 3,Ben Nuttall,Marty Schwarz,Marty Schwarz,6-8,6,8,0,1,Completed,true,false,false
+AP003063,18 Nov 23,6,Black Rock,Maccabi,No. 4,Noah Zambiasi,Steven Kleytman,Steven Kleytman,6-8,6,8,0,1,Completed,true,false,false
+AP003064,18 Nov 23,6,BLTC,Kings Park,No. 1,Christian Safko,Nathan Broadbent,Christian Safko,8-7,8,7,1,0,Completed,true,false,false
+AP003064,18 Nov 23,6,BLTC,Kings Park,No. 2,Juan Sanchez,Ryan Jones,Juan Sanchez,8-4,8,4,1,0,Completed,true,false,false
+AP003064,18 Nov 23,6,BLTC,Kings Park,No. 3,Warren Kennard,Dom Langdon,Warren Kennard,8-6,8,6,1,0,Completed,true,false,false
+AP003064,18 Nov 23,6,BLTC,Kings Park,No. 4,Roger Boyd,Finn Rasmussen,Finn Rasmussen,4-8,4,8,0,1,Completed,true,false,false
+AP003071,25 Nov 23,7,Tennis World,Ormond,No. 1,Piet Van Der Lans,Michael Hickey,Michael Hickey,4-8,4,8,0,1,Completed,true,false,false
+AP003071,25 Nov 23,7,Tennis World,Ormond,No. 2,Matt Jones,Lucas Nenke,Lucas Nenke,5-8,5,8,0,1,Completed,true,false,false
+AP003071,25 Nov 23,7,Tennis World,Ormond,No. 3,Andrej Pomasan,Kenny Ong,Kenny Ong,5-8,5,8,0,1,Completed,true,true,false
+AP003071,25 Nov 23,7,Tennis World,Ormond,No. 4,Jack Denson,Andrew Lipson,Andrew Lipson,1-8,1,8,0,1,Completed,true,false,false
+AP003072,25 Nov 23,7,Hawthorn,Langwarrin,No. 1,Peter Orszagh,William Blair,Peter Orszagh,8-5,8,5,1,0,Completed,true,false,false
+AP003072,25 Nov 23,7,Hawthorn,Langwarrin,No. 2,Josh Goodland,Kyle Ebblewhite,Kyle Ebblewhite,3-8,3,8,0,1,Completed,true,false,false
+AP003072,25 Nov 23,7,Hawthorn,Langwarrin,No. 3,Mike Zappala,Haris Siakallis,Mike Zappala,8-4,8,4,1,0,Completed,true,false,false
+AP003072,25 Nov 23,7,Hawthorn,Langwarrin,No. 4,Paul Wu,Alex Ianculescu,Alex Ianculescu,7-8,7,8,0,1,Completed,true,false,false
+AP003073,25 Nov 23,7,Kings Park,Maccabi,No. 1,Arthur Zen,Joey Pat,Arthur Zen,8-3,8,3,1,0,Completed,true,true,false
+AP003073,25 Nov 23,7,Kings Park,Maccabi,No. 2,Nathan Broadbent,Jordan Jaffe,Nathan Broadbent,8-7,8,7,1,0,Completed,true,false,false
+AP003073,25 Nov 23,7,Kings Park,Maccabi,No. 3,Finn Rasmussen,Steven Gostin,Steven Gostin,2-8,2,8,0,1,Completed,true,false,false
+AP003073,25 Nov 23,7,Kings Park,Maccabi,No. 4,Thomas Piclin,Joel Rabinov,Thomas Piclin,8-7,8,7,1,0,Completed,true,true,true
+AP003074,25 Nov 23,7,Black Rock,BLTC,No. 1,Peter Kromlidis,Juan Sanchez,Juan Sanchez,6-8,6,8,0,1,Completed,true,false,false
+AP003074,25 Nov 23,7,Black Rock,BLTC,No. 2,Michael Kernahan,Elijah Keelan,Elijah Keelan,7-8,7,8,0,1,Completed,true,false,true
+AP003074,25 Nov 23,7,Black Rock,BLTC,No. 3,Eduardo Dominguez,Greg Kluge,Eduardo Dominguez,8-5,8,5,1,0,Completed,true,true,false
+AP003074,25 Nov 23,7,Black Rock,BLTC,No. 4,Lachlan Gotz,Roger Boyd,Lachlan Gotz,8-5,8,5,1,0,Completed,true,true,false
+AP003101,16 Dec 23,10,Black Rock,Tennis World,No. 1,Bradley Perks,Matt Jones,Bradley Perks,8-4,8,4,1,0,Completed,true,true,false
+AP003101,16 Dec 23,10,Black Rock,Tennis World,No. 2,Anthony Angus,Harrie Carr,Harrie Carr,3-8,3,8,0,1,Completed,true,false,false
+AP003101,16 Dec 23,10,Black Rock,Tennis World,No. 3,Peter Kromlidis,Andrej Pomasan,Peter Kromlidis,8-4,8,4,1,0,Completed,true,false,true
+AP003101,16 Dec 23,10,Black Rock,Tennis World,No. 4,Ben Nuttall,Mark Hartnett,Ben Nuttall,8-1,8,1,1,0,Completed,true,false,false
+AP003102,16 Dec 23,10,Kings Park,Hawthorn,No. 1,Nathan Broadbent,Peter Orszagh,Peter Orszagh,4-8,4,8,0,1,Completed,true,false,false
+AP003102,16 Dec 23,10,Kings Park,Hawthorn,No. 2,Ryan Jones,Alistair Young,Alistair Young,6-8,6,8,0,1,Completed,true,false,false
+AP003102,16 Dec 23,10,Kings Park,Hawthorn,No. 3,Dom Langdon,Paul Wu,Dom Langdon,8-4,8,4,1,0,Completed,true,false,false
+AP003102,16 Dec 23,10,Kings Park,Hawthorn,No. 4,Finn Rasmussen,Simon Currey,Finn Rasmussen,8-1,8,1,1,0,Completed,true,false,true
+AP003103,16 Dec 23,10,BLTC,Ormond,No. 1,Warren Kennard,Michael Hickey,Michael Hickey,0-8,0,8,0,1,Completed,true,false,false
+AP003103,16 Dec 23,10,BLTC,Ormond,No. 2,Roger Boyd,Lucas Nenke,Lucas Nenke,6-8,6,8,0,1,Completed,true,false,false
+AP003103,16 Dec 23,10,BLTC,Ormond,No. 3,Jamie Himiori,David Goode,David Goode,0-8,0,8,0,1,Completed,true,true,true
+AP003103,16 Dec 23,10,BLTC,Ormond,No. 4,Emerson Schillaci,Andrew Lipson,Emerson Schillaci,8-1,8,1,1,0,Completed,true,true,false
+AP003104,16 Dec 23,10,Maccabi,Langwarrin,No. 1,Jordan Jaffe,Julian McKay,Jordan Jaffe,8-5,8,5,1,0,Completed,true,false,false
+AP003104,16 Dec 23,10,Maccabi,Langwarrin,No. 2,Robert Minc,Kyle Ebblewhite,Kyle Ebblewhite,7-8,7,8,0,1,Completed,true,false,false
+AP003104,16 Dec 23,10,Maccabi,Langwarrin,No. 3,Geoff Rosenberger,Haris Siakallis,Haris Siakallis,6-8,6,8,0,1,Completed,true,false,false
+AP003104,16 Dec 23,10,Maccabi,Langwarrin,No. 4,Marty Schwarz,Alex Ianculescu,Alex Ianculescu,4-8,4,8,0,1,Completed,true,false,false
+AP003111,03 Feb 24,11,Tennis World,Maccabi,No. 1,Chris Brooks,Jordan Jaffe,Jordan Jaffe,5-8,5,8,0,1,Completed,true,true,false
+AP003111,03 Feb 24,11,Tennis World,Maccabi,No. 2,Mark Hartnett,Robert Minc,Robert Minc,2-8,2,8,0,1,Completed,true,false,false
+AP003111,03 Feb 24,11,Tennis World,Maccabi,No. 3,Andrej Pomasan,Steven Gostin,Andrej Pomasan,8-6,8,6,1,0,Completed,true,true,false
+AP003111,03 Feb 24,11,Tennis World,Maccabi,No. 4,George Vergakis,Ryan Behr,George Vergakis,8-3,8,3,1,0,Completed,true,false,true
+AP003112,03 Feb 24,11,Hawthorn,Black Rock,No. 1,Peter Orszagh,Anthony Angus,Peter Orszagh,8-2,8,2,1,0,Completed,true,false,false
+AP003112,03 Feb 24,11,Hawthorn,Black Rock,No. 2,Josh Goodland,Peter Kromlidis,Josh Goodland,8-7,8,7,1,0,Completed,true,false,false
+AP003112,03 Feb 24,11,Hawthorn,Black Rock,No. 3,Mike Zappala,Ben Nuttall,Mike Zappala,8-1,8,1,1,0,Completed,true,false,false
+AP003112,03 Feb 24,11,Hawthorn,Black Rock,No. 4,Paul Wu,James Fletcher,Paul Wu,8-4,8,4,1,0,Completed,true,false,true
+AP003113,03 Feb 24,11,Ormond,Kings Park,No. 1,Loic Grzembielewski,George Georgakas,Loic Grzembielewski,8-2,8,2,1,0,Completed,true,false,false
+AP003113,03 Feb 24,11,Ormond,Kings Park,No. 2,Michael Hickey,Cole Rintoul,Cole Rintoul,5-8,5,8,0,1,Completed,true,false,false
+AP003113,03 Feb 24,11,Ormond,Kings Park,No. 3,Lucas Nenke,Dom Langdon,Lucas Nenke,8-2,8,2,1,0,Completed,true,false,false
+AP003113,03 Feb 24,11,Ormond,Kings Park,No. 4,Kenny Ong,Finn Rasmussen,Kenny Ong,8-0,8,0,1,0,Completed,true,false,false
+AP003114,03 Feb 24,11,Langwarrin,BLTC,No. 1,William Blair,Christian Safko,Christian Safko,3-8,3,8,0,1,Completed,true,false,false
+AP003114,03 Feb 24,11,Langwarrin,BLTC,No. 2,Julian McKay,Eddie Andrews,Eddie Andrews,3-8,3,8,0,1,Completed,true,false,false
+AP003114,03 Feb 24,11,Langwarrin,BLTC,No. 3,Haris Siakallis,Eddie Ivanka,Haris Siakallis,8-0,8,0,1,0,Completed,true,false,false
+AP003114,03 Feb 24,11,Langwarrin,BLTC,No. 4,Alex Ianculescu,Roger Boyd,Alex Ianculescu,8-4,8,4,1,0,Completed,true,false,false
+AP003121,10 Feb 24,12,Langwarrin,Ormond,No. 1,Julian McKay,Michael Hickey,Julian McKay,8-5,8,5,1,0,Completed,true,false,false
+AP003121,10 Feb 24,12,Langwarrin,Ormond,No. 2,Kyle Ebblewhite,Lucas Nenke,Lucas Nenke,6-8,6,8,0,1,Completed,true,false,false
+AP003121,10 Feb 24,12,Langwarrin,Ormond,No. 3,Haris Siakallis,Kenny Ong,Kenny Ong,3-8,3,8,0,1,Completed,true,false,false
+AP003121,10 Feb 24,12,Langwarrin,Ormond,No. 4,Alex Ianculescu,Andrew Lipson,Alex Ianculescu,8-2,8,2,1,0,Completed,true,false,false
+AP003122,10 Feb 24,12,Black Rock,Kings Park,No. 1,Anthony Angus,George Georgakas,George Georgakas,2-8,2,8,0,1,Completed,true,false,false
+AP003122,10 Feb 24,12,Black Rock,Kings Park,No. 2,Peter Kromlidis,Nathan Broadbent,Nathan Broadbent,5-8,5,8,0,1,Completed,true,false,false
+AP003122,10 Feb 24,12,Black Rock,Kings Park,No. 3,Ben Nuttall,Cole Rintoul,Cole Rintoul,7-8,7,8,0,1,Completed,true,false,false
+AP003122,10 Feb 24,12,Black Rock,Kings Park,No. 4,Alistair Sims,Dom Langdon,Alistair Sims,8-7,8,7,1,0,Completed,true,true,false
+AP003123,10 Feb 24,12,BLTC,Maccabi,No. 1,Christian Safko,Jordan Jaffe,Christian Safko,8-6,8,6,1,0,Completed,true,false,false
+AP003123,10 Feb 24,12,BLTC,Maccabi,No. 2,Eddie Andrews,Jesse Flicker,Eddie Andrews,8-4,8,4,1,0,Completed,true,false,true
+AP003123,10 Feb 24,12,BLTC,Maccabi,No. 3,Warren Kennard,Steven Gostin,Warren Kennard,8-0,8,0,1,0,Completed,true,false,false
+AP003123,10 Feb 24,12,BLTC,Maccabi,No. 4,Roger Boyd,Marty Schwarz,Marty Schwarz,2-8,2,8,0,1,Completed,true,false,false
+AP003124,10 Feb 24,12,Hawthorn,Tennis World,No. 1,Peter Orszagh,Matt Jones,Peter Orszagh,8-0,8,0,1,0,Completed,true,false,false
+AP003124,10 Feb 24,12,Hawthorn,Tennis World,No. 2,Josh Goodland,Harrie Carr,Josh Goodland,8-3,8,3,1,0,Completed,true,false,false
+AP003124,10 Feb 24,12,Hawthorn,Tennis World,No. 3,Mike Zappala,Andrej Pomasan,Andrej Pomasan,6-8,6,8,0,1,Completed,true,false,true
+AP003124,10 Feb 24,12,Hawthorn,Tennis World,No. 4,Paul Wu,Mark Hartnett,Paul Wu,8-2,8,2,1,0,Completed,true,false,false
+AP003131,17 Feb 24,13,Ormond,Hawthorn,No. 1,Loic Grzembielewski,Peter Orszagh,Peter Orszagh,2-8,2,8,0,1,Completed,true,false,false
+AP003131,17 Feb 24,13,Ormond,Hawthorn,No. 2,Michael Hickey,Josh Goodland,Michael Hickey,8-5,8,5,1,0,Completed,true,false,false
+AP003131,17 Feb 24,13,Ormond,Hawthorn,No. 3,Lucas Nenke,Alistair Young,Lucas Nenke,8-3,8,3,1,0,Completed,true,false,false
+AP003131,17 Feb 24,13,Ormond,Hawthorn,No. 4,Ben Darrou,Mitch Gleason,Mitch Gleason,5-8,5,8,0,1,Completed,true,false,false
+AP003132,17 Feb 24,13,Tennis World,Langwarrin,No. 1,Piet Van Der Lans,William Blair,William Blair,1-8,1,8,0,1,Completed,true,false,false
+AP003132,17 Feb 24,13,Tennis World,Langwarrin,No. 2,Matt Jones,Julian McKay,Julian McKay,4-8,4,8,0,1,Completed,true,false,false
+AP003132,17 Feb 24,13,Tennis World,Langwarrin,No. 3,Harrie Carr,Kyle Ebblewhite,Kyle Ebblewhite,6-8,6,8,0,1,Completed,true,false,false
+AP003132,17 Feb 24,13,Tennis World,Langwarrin,No. 4,Andrej Pomasan,Alex Ianculescu,Alex Ianculescu,6-8,6,8,0,1,Completed,true,true,false
+AP003133,17 Feb 24,13,Maccabi,Black Rock,No. 1,Jordan Jaffe,Simon Hiscock,Jordan Jaffe,8-0,8,0,1,0,Completed,true,false,true
+AP003133,17 Feb 24,13,Maccabi,Black Rock,No. 2,Marty Schwarz,Anthony Angus,Marty Schwarz,8-4,8,4,1,0,Completed,true,false,false
+AP003133,17 Feb 24,13,Maccabi,Black Rock,No. 3,Steven Kleytman,Peter Kromlidis,Steven Kleytman,8-2,8,2,1,0,Completed,true,false,false
+AP003133,17 Feb 24,13,Maccabi,Black Rock,No. 4,Marcus Frajman,Ben Nuttall,Marcus Frajman,8-2,8,2,1,0,Completed,true,true,false
+AP003134,17 Feb 24,13,Kings Park,BLTC,No. 1,George Georgakas,Eddie Andrews,Eddie Andrews,3-8,3,8,0,1,Completed,true,false,false
+AP003134,17 Feb 24,13,Kings Park,BLTC,No. 2,Nathan Broadbent,Warren Kennard,Nathan Broadbent,8-7,8,7,1,0,Completed,true,false,false
+AP003134,17 Feb 24,13,Kings Park,BLTC,No. 3,Cole Rintoul,Eddie Ivanka,Cole Rintoul,8-2,8,2,1,0,Completed,true,false,false
+AP003134,17 Feb 24,13,Kings Park,BLTC,No. 4,Ryan Jones,Stevan Dakic,Stevan Dakic,1-8,1,8,0,1,Completed,true,false,true
+AP003141,24 Feb 24,14,Ormond,Tennis World,No. 1,Loic Grzembielewski,Matt Jones,Loic Grzembielewski,8-3,8,3,1,0,Completed,true,false,false
+AP003141,24 Feb 24,14,Ormond,Tennis World,No. 2,Michael Hickey,Harrie Carr,Michael Hickey,8-4,8,4,1,0,Completed,true,false,false
+AP003141,24 Feb 24,14,Ormond,Tennis World,No. 3,Ben Darrou,Andrej Pomasan,Andrej Pomasan,6-8,6,8,0,1,Completed,true,false,true
+AP003141,24 Feb 24,14,Ormond,Tennis World,No. 4,Nathan McCracken,[Unnamed emergency — TROLS AP003141 away code 4],Nathan McCracken,8-5,8,5,1,0,Completed,false,false,true
+AP003142,24 Feb 24,14,Langwarrin,Hawthorn,No. 1,William Blair,Josh Goodland,William Blair,8-0,8,0,1,0,Completed,true,false,false
+AP003142,24 Feb 24,14,Langwarrin,Hawthorn,No. 2,Julian McKay,Mitch Gleason,Mitch Gleason,4-8,4,8,0,1,Completed,true,false,false
+AP003142,24 Feb 24,14,Langwarrin,Hawthorn,No. 3,Haris Siakallis,Alistair Young,Haris Siakallis,8-2,8,2,1,0,Completed,true,false,false
+AP003142,24 Feb 24,14,Langwarrin,Hawthorn,No. 4,Alex Ianculescu,Paul Wu,Alex Ianculescu,8-4,8,4,1,0,Completed,true,false,false
+AP003143,24 Feb 24,14,Maccabi,Kings Park,No. 1,Steven Gostin,George Georgakas,Steven Gostin,8-3,8,3,1,0,Completed,true,false,false
+AP003143,24 Feb 24,14,Maccabi,Kings Park,No. 2,Geoff Rosenberger,Nathan Broadbent,Nathan Broadbent,5-8,5,8,0,1,Completed,true,false,false
+AP003143,24 Feb 24,14,Maccabi,Kings Park,No. 3,Marty Schwarz,Cole Rintoul,Marty Schwarz,8-7,8,7,1,0,Completed,true,false,false
+AP003143,24 Feb 24,14,Maccabi,Kings Park,No. 4,Steven Kleytman,Dom Langdon,Dom Langdon,3-8,3,8,0,1,Completed,true,false,false
+AP003144,24 Feb 24,14,BLTC,Black Rock,No. 1,Christian Safko,Anthony Angus,Christian Safko,8-2,8,2,1,0,Completed,true,false,false
+AP003144,24 Feb 24,14,BLTC,Black Rock,No. 2,Eddie Andrews,Peter Kromlidis,Eddie Andrews,8-2,8,2,1,0,Completed,true,false,false
+AP003144,24 Feb 24,14,BLTC,Black Rock,No. 3,Warren Kennard,Ben Nuttall,Warren Kennard,8-3,8,3,1,0,Completed,true,false,false
+AP003144,24 Feb 24,14,BLTC,Black Rock,No. 4,Eddie Ivanka,Manol Atanasov,Eddie Ivanka,8-0,8,0,1,0,Completed,true,false,true
+AP003301,,16,Langwarrin,BLTC,No. 1,William Blair,Christian Safko,Christian Safko,4-8,4,8,0,1,Completed,true,false,false
+AP003301,,16,Langwarrin,BLTC,No. 2,Julian McKay,Eddie Andrews,Eddie Andrews,1-8,1,8,0,1,Completed,true,false,false
+AP003301,,16,Langwarrin,BLTC,No. 3,Kyle Ebblewhite,Warren Kennard,Kyle Ebblewhite,8-5,8,5,1,0,Completed,true,false,false
+AP003301,,16,Langwarrin,BLTC,No. 4,Alex Ianculescu,Roger Boyd,Alex Ianculescu,8-2,8,2,1,0,Completed,true,false,false
+AP003302,,16,Ormond,Maccabi,No. 1,Loic Grzembielewski,Jordan Jaffe,Loic Grzembielewski,8-2,8,2,1,0,Completed,true,false,false
+AP003302,,16,Ormond,Maccabi,No. 2,Lucas Nenke,Steven Gostin,Lucas Nenke,8-3,8,3,1,0,Completed,true,false,false
+AP003302,,16,Ormond,Maccabi,No. 3,Kenny Ong,Geoff Rosenberger,Kenny Ong,8-2,8,2,1,0,Completed,true,false,false
+AP003302,,16,Ormond,Maccabi,No. 4,Nathan McCracken,Marty Schwarz,Marty Schwarz,2-8,2,8,0,1,Completed,true,false,false
+AP003321,,17,Ormond,BLTC,No. 1,Loic Grzembielewski,Christian Safko,Christian Safko,5-8,5,8,0,1,Completed,true,false,false
+AP003321,,17,Ormond,BLTC,No. 2,Lucas Nenke,Eddie Andrews,Eddie Andrews,2-8,2,8,0,1,Completed,true,false,false
+AP003321,,17,Ormond,BLTC,No. 3,Kenny Ong,Juan Sanchez,Kenny Ong,8-4,8,4,1,0,Completed,true,false,false
+AP003321,,17,Ormond,BLTC,No. 4,Nathan McCracken,Warren Kennard,Warren Kennard,1-8,1,8,0,1,Completed,true,false,false

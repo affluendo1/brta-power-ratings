@@ -1,0 +1,98 @@
+{
+  "asset_id": "AP50-AP005",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Winter 2025",
+  "season_id": "AP50",
+  "season_label": "Winter 2025",
+  "source_section_code": "AP005",
+  "section_label": "Mx Rubbers 3",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Clarinda",
+      "wins": 11,
+      "points": 77,
+      "percentage": 126.99,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "BLTC",
+      "wins": 7,
+      "points": 52,
+      "percentage": 103.17,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Port Melbourne Blue",
+      "wins": 6,
+      "points": 51,
+      "percentage": 102.14,
+      "marker": "P"
+    },
+    {
+      "position": 4,
+      "team": "Le Page",
+      "wins": 5,
+      "points": 43,
+      "percentage": 95.0,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Langwarrin White",
+      "wins": 5,
+      "points": 41,
+      "percentage": 82.43,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Langwarrin Blue",
+      "wins": 3,
+      "points": 38,
+      "percentage": 100.43,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Parkdale",
+      "wins": 3,
+      "points": 34,
+      "percentage": 94.01,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP50-AP005",
+  "fixtures": 59,
+  "completed_fixtures": 43,
+  "draw_fixtures": 59,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 172,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP005104 doubles No. 3: '2-1'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP005104 doubles No. 4: '3-4'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

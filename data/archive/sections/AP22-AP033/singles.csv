@@ -1,0 +1,188 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP033011,02 Oct 10,1,Basterfield Park,Dendy Park,No. 1,Anthony Angus,Ian Wilkinson,Ian Wilkinson,3-8,3,8,0,1,Completed,true,false,false
+AP033011,02 Oct 10,1,Basterfield Park,Dendy Park,No. 2,Dexter Bonet,Bruce Watkins,Dexter Bonet,8-6,8,6,1,0,Completed,true,false,false
+AP033011,02 Oct 10,1,Basterfield Park,Dendy Park,No. 3,James Fletcher,Chris Trotter,James Fletcher,8-1,8,1,1,0,Completed,true,false,false
+AP033011,02 Oct 10,1,Basterfield Park,Dendy Park,No. 4,Vince Vaughan,John Riley,Vince Vaughan,8-4,8,4,1,0,Completed,true,false,false
+AP033012,02 Oct 10,1,GPHC 1,Melbourne Univ,No. 1,Marcus Matear,David Watts,Marcus Matear,8-4,8,4,1,0,Completed,true,false,false
+AP033012,02 Oct 10,1,GPHC 1,Melbourne Univ,No. 2,Jack Basso,Ben Glasson,Jack Basso,8-5,8,5,1,0,Completed,true,false,false
+AP033012,02 Oct 10,1,GPHC 1,Melbourne Univ,No. 3,Tony Wu,Martin Stradling,Tony Wu,8-0,8,0,1,0,Completed,true,false,false
+AP033012,02 Oct 10,1,GPHC 1,Melbourne Univ,No. 4,Takahashi Yuya,Wayne Bahr,Takahashi Yuya,8-0,8,0,1,0,Completed,true,false,false
+AP033013,02 Oct 10,1,GPHC 2,East Malvern,No. 1,Kim Tram,Matt Plas,Matt Plas,3-8,3,8,0,1,Completed,true,false,false
+AP033013,02 Oct 10,1,GPHC 2,East Malvern,No. 2,Josh Tram,Andrew McVean,Andrew McVean,5-8,5,8,0,1,Completed,true,false,false
+AP033013,02 Oct 10,1,GPHC 2,East Malvern,No. 3,Brett Browning,Peter Car,Brett Browning,8-5,8,5,1,0,Completed,true,false,false
+AP033013,02 Oct 10,1,GPHC 2,East Malvern,No. 4,Phil Hughes,Alan Young,Phil Hughes,8-4,8,4,1,0,Completed,true,false,false
+AP033014,02 Oct 10,1,Sandringham,Le Page,No. 1,Jason Faulkner,Nathan Coombes,Nathan Coombes,5-8,5,8,0,1,Completed,true,false,false
+AP033014,02 Oct 10,1,Sandringham,Le Page,No. 2,David Pedley,Tyson Coombes,Tyson Coombes,6-8,6,8,0,1,Completed,true,false,false
+AP033014,02 Oct 10,1,Sandringham,Le Page,No. 3,Ivan Device,Trevor Hastings,Trevor Hastings,7-9,7,9,0,1,Completed,true,false,false
+AP033014,02 Oct 10,1,Sandringham,Le Page,No. 4,Michael Seeley,Tony Sofo,Tony Sofo,7-9,7,9,0,1,Completed,true,false,false
+AP033021,09 Oct 10,2,Le Page,Basterfield Park,No. 1,Nathan Coombes,Michael Watts,Nathan Coombes,8-6,8,6,1,0,Completed,true,false,false
+AP033021,09 Oct 10,2,Le Page,Basterfield Park,No. 2,Tyson Coombes,Dexter Bonet,Tyson Coombes,8-6,8,6,1,0,Completed,true,false,false
+AP033021,09 Oct 10,2,Le Page,Basterfield Park,No. 3,Trevor Hastings,Marcus Hinton,Trevor Hastings,8-6,8,6,1,0,Completed,true,false,false
+AP033021,09 Oct 10,2,Le Page,Basterfield Park,No. 4,Brian Govan,Vince Vaughan,Vince Vaughan,7-9,7,9,0,1,Completed,true,false,false
+AP033022,09 Oct 10,2,Dendy Park,GPHC 1,No. 1,Ian Wilkinson,Marcus Matear,Marcus Matear,6-8,6,8,0,1,Completed,true,false,false
+AP033022,09 Oct 10,2,Dendy Park,GPHC 1,No. 2,Peter Fleming,Ashley Tainton,Ashley Tainton,7-9,7,9,0,1,Completed,true,false,false
+AP033022,09 Oct 10,2,Dendy Park,GPHC 1,No. 3,Chris Trotter,Tony Wu,Tony Wu,3-8,3,8,0,1,Completed,true,false,false
+AP033022,09 Oct 10,2,Dendy Park,GPHC 1,No. 4,John Riley,Jack Basso,Jack Basso,3-8,3,8,0,1,Completed,true,false,false
+AP033023,09 Oct 10,2,Melbourne Univ,GPHC 2,No. 1,Martin Stradling,Rowan Browning,Martin Stradling,8-3,8,3,1,0,Completed,true,false,false
+AP033023,09 Oct 10,2,Melbourne Univ,GPHC 2,No. 2,Jarrod Rathjen,Travis Hughes,Jarrod Rathjen,8-1,8,1,1,0,Completed,true,false,false
+AP033023,09 Oct 10,2,Melbourne Univ,GPHC 2,No. 3,David Watts,Brett Browning,David Watts,8-2,8,2,1,0,Completed,true,false,false
+AP033023,09 Oct 10,2,Melbourne Univ,GPHC 2,No. 4,Wayne Bahr,[Unnamed emergency — TROLS AP033023 away code 4],Wayne Bahr,8-0,8,0,1,0,Completed,false,false,true
+AP033024,09 Oct 10,2,East Malvern,Sandringham,No. 1,Andrew McVean,Jason Faulkner,Andrew McVean,8-2,8,2,1,0,Completed,true,false,false
+AP033024,09 Oct 10,2,East Malvern,Sandringham,No. 2,Clifford Ho-Le,Jandre Olivier,Jandre Olivier,5-8,5,8,0,1,Completed,true,false,false
+AP033024,09 Oct 10,2,East Malvern,Sandringham,No. 3,Peter Car,Anthony Morley,Peter Car,8-5,8,5,1,0,Completed,true,false,false
+AP033024,09 Oct 10,2,East Malvern,Sandringham,No. 4,Alan Young,Corne Olivier,Alan Young,8-0,8,0,1,0,Completed,true,false,false
+AP033032,16 Oct 10,3,GPHC 1,Le Page,No. 1,Marcus Matear,Nathan Coombes,Marcus Matear,8-6,8,6,1,0,Completed,true,false,false
+AP033032,16 Oct 10,3,GPHC 1,Le Page,No. 2,Ashley Tainton,Tyson Coombes,Ashley Tainton,8-4,8,4,1,0,Completed,true,false,false
+AP033032,16 Oct 10,3,GPHC 1,Le Page,No. 3,Tony Wu,Tony Sofo,Tony Wu,8-3,8,3,1,0,Completed,true,false,false
+AP033032,16 Oct 10,3,GPHC 1,Le Page,No. 4,Jack Basso,Brian Govan,Brian Govan,7-9,7,9,0,1,Completed,true,false,false
+AP033033,16 Oct 10,3,GPHC 2,Dendy Park,No. 1,Rowan Browning,Bruce Watkins,Bruce Watkins,0-8,0,8,0,1,Completed,true,false,false
+AP033033,16 Oct 10,3,GPHC 2,Dendy Park,No. 2,Kim Tram,Peter Fleming,Peter Fleming,4-8,4,8,0,1,Completed,true,false,false
+AP033033,16 Oct 10,3,GPHC 2,Dendy Park,No. 3,Travis Hughes,Bill Craig,Bill Craig,1-8,1,8,0,1,Completed,true,false,false
+AP033033,16 Oct 10,3,GPHC 2,Dendy Park,No. 4,Phil Hughes,Stan Kennett,Stan Kennett,5-8,5,8,0,1,Completed,true,false,false
+AP033041,23 Oct 10,4,Melbourne Univ,Basterfield Park,No. 1,Martin Stradling,Anthony Angus,Martin Stradling,8-3,8,3,1,0,Completed,true,false,false
+AP033041,23 Oct 10,4,Melbourne Univ,Basterfield Park,No. 2,Jarrod Rathjen,Dexter Bonet,Jarrod Rathjen,8-2,8,2,1,0,Completed,true,false,false
+AP033041,23 Oct 10,4,Melbourne Univ,Basterfield Park,No. 3,David Watts,James Fletcher,David Watts,8-2,8,2,1,0,Completed,true,false,false
+AP033041,23 Oct 10,4,Melbourne Univ,Basterfield Park,No. 4,Wayne Bahr,Marcus Hinton,Wayne Bahr,8-4,8,4,1,0,Completed,true,false,false
+AP033042,23 Oct 10,4,East Malvern,GPHC 1,No. 1,Matt Plas,Tony Wu,Tony Wu,6-8,6,8,0,1,Completed,true,false,false
+AP033042,23 Oct 10,4,East Malvern,GPHC 1,No. 2,Andrew McVean,Cooper Millett,Andrew McVean,9-8,9,8,1,0,Completed,true,false,false
+AP033042,23 Oct 10,4,East Malvern,GPHC 1,No. 3,Peter Car,Yuuki Nagakura,Peter Car,8-5,8,5,1,0,Completed,true,false,false
+AP033042,23 Oct 10,4,East Malvern,GPHC 1,No. 4,Alan Young,Takahashi Yuya,Alan Young,8-4,8,4,1,0,Completed,true,false,false
+AP033043,23 Oct 10,4,Le Page,GPHC 2,No. 1,Nathan Coombes,Jackson Land,Nathan Coombes,8-1,8,1,1,0,Completed,true,false,false
+AP033043,23 Oct 10,4,Le Page,GPHC 2,No. 2,Trevor Hastings,Daniel Land,Trevor Hastings,8-3,8,3,1,0,Completed,true,false,false
+AP033043,23 Oct 10,4,Le Page,GPHC 2,No. 3,Tony Sofo,Josh Tram,Tony Sofo,8-0,8,0,1,0,Completed,true,false,false
+AP033043,23 Oct 10,4,Le Page,GPHC 2,No. 4,Brian Govan,Brett Browning,Brian Govan,8-3,8,3,1,0,Completed,true,false,false
+AP033044,23 Oct 10,4,Dendy Park,Sandringham,No. 1,Ian Wilkinson,Jason Faulkner,Jason Faulkner,7-9,7,9,0,1,Completed,true,false,false
+AP033044,23 Oct 10,4,Dendy Park,Sandringham,No. 2,Bruce Watkins,David Pedley,Bruce Watkins,8-4,8,4,1,0,Completed,true,false,false
+AP033044,23 Oct 10,4,Dendy Park,Sandringham,No. 3,John Riley,Ivan Device,Ivan Device,6-8,6,8,0,1,Completed,true,false,false
+AP033044,23 Oct 10,4,Dendy Park,Sandringham,No. 4,Stan Kennett,Paul Rimmer,Stan Kennett,9-7,9,7,1,0,Completed,true,false,false
+AP033051,06 Nov 10,5,GPHC 2,Sandringham,No. 1,Rowan Browning,David Pedley,Rowan Browning,9-8,9,8,1,0,Completed,true,false,false
+AP033051,06 Nov 10,5,GPHC 2,Sandringham,No. 2,Kim Tram,Ivan Device,Kim Tram,8-4,8,4,1,0,Completed,true,false,false
+AP033051,06 Nov 10,5,GPHC 2,Sandringham,No. 3,Josh Tram,Paul Rimmer,Josh Tram,8-6,8,6,1,0,Completed,true,false,false
+AP033051,06 Nov 10,5,GPHC 2,Sandringham,No. 4,Brett Browning,Michael Seeley,Michael Seeley,6-8,6,8,0,1,Completed,true,false,false
+AP033052,06 Nov 10,5,Le Page,East Malvern,No. 1,Nathan Coombes,Andrew McVean,Nathan Coombes,8-2,8,2,1,0,Completed,true,false,false
+AP033052,06 Nov 10,5,Le Page,East Malvern,No. 2,Trevor Hastings,Clifford Ho-Le,Clifford Ho-Le,3-8,3,8,0,1,Completed,true,false,false
+AP033052,06 Nov 10,5,Le Page,East Malvern,No. 3,Tony Sofo,Peter Car,Tony Sofo,8-3,8,3,1,0,Completed,true,false,false
+AP033052,06 Nov 10,5,Le Page,East Malvern,No. 4,Brian Govan,Alan Young,Brian Govan,8-4,8,4,1,0,Completed,true,false,false
+AP033053,06 Nov 10,5,Melbourne Univ,Dendy Park,No. 1,Martin Stradling,Ian Wilkinson,Martin Stradling,8-3,8,3,1,0,Completed,true,false,false
+AP033053,06 Nov 10,5,Melbourne Univ,Dendy Park,No. 2,Jarrod Rathjen,Bruce Watkins,Jarrod Rathjen,8-6,8,6,1,0,Completed,true,false,false
+AP033053,06 Nov 10,5,Melbourne Univ,Dendy Park,No. 3,David Watts,Peter Fleming,David Watts,8-1,8,1,1,0,Completed,true,false,false
+AP033053,06 Nov 10,5,Melbourne Univ,Dendy Park,No. 4,Wayne Bahr,Chris Trotter,Wayne Bahr,8-4,8,4,1,0,Completed,true,false,false
+AP033054,06 Nov 10,5,Basterfield Park,GPHC 1,No. 1,Michael Watts,Marcus Matear,Marcus Matear,8-9,8,9,0,1,Completed,true,false,false
+AP033054,06 Nov 10,5,Basterfield Park,GPHC 1,No. 2,Dexter Bonet,Jack Basso,Dexter Bonet,8-4,8,4,1,0,Completed,true,false,false
+AP033054,06 Nov 10,5,Basterfield Park,GPHC 1,No. 3,James Fletcher,Takahashi Yuya,Takahashi Yuya,3-8,3,8,0,1,Completed,true,false,false
+AP033054,06 Nov 10,5,Basterfield Park,GPHC 1,No. 4,Vince Vaughan,Tony Wu,Vince Vaughan,8-0,8,0,1,0,Completed,true,false,false
+AP033062,13 Nov 10,6,Sandringham,Basterfield Park,No. 1,Jason Faulkner,Michael Watts,Jason Faulkner,7-6,7,6,1,0,Completed,true,false,false
+AP033062,13 Nov 10,6,Sandringham,Basterfield Park,No. 2,David Pedley,Anthony Angus,David Pedley,8-4,8,4,1,0,Completed,true,false,false
+AP033062,13 Nov 10,6,Sandringham,Basterfield Park,No. 3,Michael Seeley,Marcus Hinton,Marcus Hinton,5-7,5,7,0,1,Completed,true,false,false
+AP033071,20 Nov 10,7,Basterfield Park,GPHC 2,No. 1,Dexter Bonet,Rowan Browning,Dexter Bonet,8-5,8,5,1,0,Completed,true,false,false
+AP033071,20 Nov 10,7,Basterfield Park,GPHC 2,No. 2,James Fletcher,Kim Tram,James Fletcher,8-0,8,0,1,0,Completed,true,false,false
+AP033071,20 Nov 10,7,Basterfield Park,GPHC 2,No. 3,Adam Bishop,Josh Tram,Adam Bishop,8-4,8,4,1,0,Completed,true,false,false
+AP033071,20 Nov 10,7,Basterfield Park,GPHC 2,No. 4,Vince Vaughan,Brett Browning,Vince Vaughan,8-5,8,5,1,0,Completed,true,false,false
+AP033072,20 Nov 10,7,GPHC 1,Sandringham,No. 1,Ashley Tainton,Jason Faulkner,Jason Faulkner,4-8,4,8,0,1,Completed,true,false,false
+AP033072,20 Nov 10,7,GPHC 1,Sandringham,No. 2,Jack Basso,Ivan Device,Jack Basso,8-3,8,3,1,0,Completed,true,false,false
+AP033072,20 Nov 10,7,GPHC 1,Sandringham,No. 3,Tony Wu,Michael Seeley,Tony Wu,8-1,8,1,1,0,Completed,true,false,false
+AP033072,20 Nov 10,7,GPHC 1,Sandringham,No. 4,Takahashi Yuya,Jandre Olivier,Takahashi Yuya,9-7,9,7,1,0,Completed,true,false,false
+AP033074,20 Nov 10,7,East Malvern,Dendy Park,No. 1,Matt Plas,Bruce Watkins,Matt Plas,8-6,8,6,1,0,Completed,true,false,false
+AP033074,20 Nov 10,7,East Malvern,Dendy Park,No. 2,Clifford Ho-Le,Peter Fleming,Peter Fleming,6-8,6,8,0,1,Completed,true,false,false
+AP033074,20 Nov 10,7,East Malvern,Dendy Park,No. 3,Peter Car,Stan Kennett,Peter Car,8-4,8,4,1,0,Completed,true,false,false
+AP033074,20 Nov 10,7,East Malvern,Dendy Park,No. 4,Alan Young,Bill Craig,Alan Young,8-5,8,5,1,0,Completed,true,false,false
+AP033091,04 Dec 10,9,Basterfield Park,Le Page,No. 1,Michael Watts,Nathan Coombes,Michael Watts,8-3,8,3,1,0,Completed,true,false,false
+AP033091,04 Dec 10,9,Basterfield Park,Le Page,No. 2,Anthony Angus,Tyson Coombes,Tyson Coombes,7-9,7,9,0,1,Completed,true,false,false
+AP033091,04 Dec 10,9,Basterfield Park,Le Page,No. 3,James Fletcher,Trevor Hastings,James Fletcher,9-7,9,7,1,0,Completed,true,false,false
+AP033091,04 Dec 10,9,Basterfield Park,Le Page,No. 4,Marcus Hinton,Brian Govan,Marcus Hinton,8-6,8,6,1,0,Completed,true,false,false
+AP033092,04 Dec 10,9,GPHC 1,Dendy Park,No. 1,Yuuki Nagakura,Ian Wilkinson,Yuuki Nagakura,8-6,8,6,1,0,Completed,true,false,false
+AP033092,04 Dec 10,9,GPHC 1,Dendy Park,No. 2,Takahashi Yuya,Bruce Watkins,Bruce Watkins,2-8,2,8,0,1,Completed,true,false,false
+AP033092,04 Dec 10,9,GPHC 1,Dendy Park,No. 3,Tony Wu,Peter Fleming,Tony Wu,8-3,8,3,1,0,Completed,true,false,false
+AP033092,04 Dec 10,9,GPHC 1,Dendy Park,No. 4,Jack Basso,Chris Trotter,Chris Trotter,4-8,4,8,0,1,Completed,true,false,false
+AP033093,04 Dec 10,9,GPHC 2,Melbourne Univ,No. 1,Daniel Land,Jarrod Rathjen,Jarrod Rathjen,1-8,1,8,0,1,Completed,true,false,false
+AP033093,04 Dec 10,9,GPHC 2,Melbourne Univ,No. 2,Kim Tram,David Watts,David Watts,3-8,3,8,0,1,Completed,true,false,false
+AP033093,04 Dec 10,9,GPHC 2,Melbourne Univ,No. 3,Phil Hughes,Justin Tonti,Justin Tonti,5-8,5,8,0,1,Completed,true,false,false
+AP033093,04 Dec 10,9,GPHC 2,Melbourne Univ,No. 4,Travis Hughes,Joseph McArdle,Joseph McArdle,0-8,0,8,0,1,Completed,true,false,false
+AP033094,04 Dec 10,9,Sandringham,East Malvern,No. 1,Jason Faulkner,Andrew McVean,Jason Faulkner,9-8,9,8,1,0,Completed,true,false,false
+AP033094,04 Dec 10,9,Sandringham,East Malvern,No. 2,David Pedley,Clifford Ho-Le,David Pedley,8-1,8,1,1,0,Completed,true,false,false
+AP033094,04 Dec 10,9,Sandringham,East Malvern,No. 3,Ivan Device,Peter Car,Ivan Device,8-3,8,3,1,0,Completed,true,false,false
+AP033094,04 Dec 10,9,Sandringham,East Malvern,No. 4,Michael Seeley,Alan Young,Alan Young,4-8,4,8,0,1,Completed,true,false,false
+AP033101,11 Dec 10,10,East Malvern,Basterfield Park,No. 1,Damien Mescher,Michael Watts,Damien Mescher,8-3,8,3,1,0,Completed,true,false,false
+AP033101,11 Dec 10,10,East Malvern,Basterfield Park,No. 2,Michael Mouritz,Dexter Bonet,Dexter Bonet,5-8,5,8,0,1,Completed,true,false,false
+AP033101,11 Dec 10,10,East Malvern,Basterfield Park,No. 3,Peter Car,James Fletcher,James Fletcher,3-8,3,8,0,1,Completed,true,false,false
+AP033101,11 Dec 10,10,East Malvern,Basterfield Park,No. 4,Alan Young,Adam Bishop,Adam Bishop,1-8,1,8,0,1,Completed,true,false,false
+AP033102,11 Dec 10,10,Le Page,GPHC 1,No. 1,Nathan Coombes,Marcus Matear,Nathan Coombes,8-2,8,2,1,0,Completed,true,false,false
+AP033102,11 Dec 10,10,Le Page,GPHC 1,No. 2,Tyson Coombes,Tony Wu,Tyson Coombes,9-8,9,8,1,0,Completed,true,false,false
+AP033102,11 Dec 10,10,Le Page,GPHC 1,No. 3,Tony Sofo,Jack Basso,Jack Basso,0-8,0,8,0,1,Completed,true,false,false
+AP033102,11 Dec 10,10,Le Page,GPHC 1,No. 4,Brian Govan,Takahashi Yuya,Takahashi Yuya,3-8,3,8,0,1,Completed,true,false,false
+AP033103,11 Dec 10,10,Dendy Park,GPHC 2,No. 1,Ian Wilkinson,Jackson Land,Ian Wilkinson,8-0,8,0,1,0,Completed,true,false,false
+AP033103,11 Dec 10,10,Dendy Park,GPHC 2,No. 2,Chris Trotter,Daniel Land,Chris Trotter,8-0,8,0,1,0,Completed,true,false,false
+AP033103,11 Dec 10,10,Dendy Park,GPHC 2,No. 3,John Riley,Kim Tram,John Riley,9-8,9,8,1,0,Completed,true,false,false
+AP033103,11 Dec 10,10,Dendy Park,GPHC 2,No. 4,Stan Kennett,Travis Hughes,Stan Kennett,8-3,8,3,1,0,Completed,true,false,false
+AP033104,11 Dec 10,10,Melbourne Univ,Sandringham,No. 1,Jarrod Rathjen,Jason Faulkner,Jarrod Rathjen,8-3,8,3,1,0,Completed,true,false,false
+AP033104,11 Dec 10,10,Melbourne Univ,Sandringham,No. 2,David Watts,David Pedley,David Watts,9-7,9,7,1,0,Completed,true,false,false
+AP033104,11 Dec 10,10,Melbourne Univ,Sandringham,No. 3,Ben Glasson,Ivan Device,Ben Glasson,8-5,8,5,1,0,Completed,true,false,false
+AP033104,11 Dec 10,10,Melbourne Univ,Sandringham,No. 4,Dae-Guen Lim,Michael Seeley,Michael Seeley,4-8,4,8,0,1,Completed,true,false,false
+AP033111,05 Feb 11,11,Basterfield Park,Melbourne Univ,No. 1,Michael Watts,David Watts,Michael Watts,8-2,8,2,1,0,Completed,true,false,false
+AP033111,05 Feb 11,11,Basterfield Park,Melbourne Univ,No. 2,Dexter Bonet,Wayne Bahr,Dexter Bonet,8-6,8,6,1,0,Completed,true,false,false
+AP033111,05 Feb 11,11,Basterfield Park,Melbourne Univ,No. 3,Adam Bishop,Brendan Prain,Adam Bishop,8-3,8,3,1,0,Completed,true,false,false
+AP033111,05 Feb 11,11,Basterfield Park,Melbourne Univ,No. 4,Vince Vaughan,Dae-Guen Lim,Vince Vaughan,8-0,8,0,1,0,Completed,true,false,false
+AP033121,12 Feb 11,12,Sandringham,GPHC 2,No. 1,Jason Faulkner,Rowan Browning,Jason Faulkner,8-4,8,4,1,0,Completed,true,false,false
+AP033121,12 Feb 11,12,Sandringham,GPHC 2,No. 2,Ivan Device,Travis Hughes,Ivan Device,8-0,8,0,1,0,Completed,true,false,false
+AP033121,12 Feb 11,12,Sandringham,GPHC 2,No. 3,Michael Seeley,Brett Browning,Michael Seeley,8-0,8,0,1,0,Completed,true,false,false
+AP033121,12 Feb 11,12,Sandringham,GPHC 2,No. 4,Jandre Olivier,Phil Hughes,Jandre Olivier,8-6,8,6,1,0,Completed,true,false,false
+AP033122,12 Feb 11,12,East Malvern,Le Page,No. 1,Andrew McVean,Nathan Coombes,Nathan Coombes,2-8,2,8,0,1,Completed,true,false,false
+AP033122,12 Feb 11,12,East Malvern,Le Page,No. 2,Clifford Ho-Le,Tyson Coombes,Clifford Ho-Le,8-4,8,4,1,0,Completed,true,false,false
+AP033122,12 Feb 11,12,East Malvern,Le Page,No. 3,Peter Car,Trevor Hastings,Peter Car,9-8,9,8,1,0,Completed,true,false,false
+AP033122,12 Feb 11,12,East Malvern,Le Page,No. 4,Alan Young,Brian Govan,Brian Govan,5-8,5,8,0,1,Completed,true,false,false
+AP033123,12 Feb 11,12,Dendy Park,Melbourne Univ,No. 1,Bruce Watkins,Martin Stradling,Martin Stradling,1-8,1,8,0,1,Completed,true,false,false
+AP033123,12 Feb 11,12,Dendy Park,Melbourne Univ,No. 2,Chris Trotter,Jarrod Rathjen,Jarrod Rathjen,6-8,6,8,0,1,Completed,true,false,false
+AP033123,12 Feb 11,12,Dendy Park,Melbourne Univ,No. 3,John Riley,David Watts,David Watts,6-8,6,8,0,1,Completed,true,false,false
+AP033123,12 Feb 11,12,Dendy Park,Melbourne Univ,No. 4,Bill Craig,Wayne Bahr,Wayne Bahr,1-8,1,8,0,1,Completed,true,false,false
+AP033124,12 Feb 11,12,GPHC 1,Basterfield Park,No. 1,Cooper Millett,Dexter Bonet,Cooper Millett,8-6,8,6,1,0,Completed,true,false,false
+AP033124,12 Feb 11,12,GPHC 1,Basterfield Park,No. 2,Marcus Matear,James Fletcher,Marcus Matear,8-1,8,1,1,0,Completed,true,false,false
+AP033124,12 Feb 11,12,GPHC 1,Basterfield Park,No. 3,Ashley Tainton,Adam Bishop,Ashley Tainton,9-8,9,8,1,0,Completed,true,false,false
+AP033124,12 Feb 11,12,GPHC 1,Basterfield Park,No. 4,Jack Basso,Marcus Hinton,Jack Basso,8-3,8,3,1,0,Completed,true,false,false
+AP033131,19 Feb 11,13,GPHC 2,GPHC 1,No. 1,Jackson Land,Marcus Matear,Jackson Land,8-6,8,6,1,0,Completed,true,false,false
+AP033131,19 Feb 11,13,GPHC 2,GPHC 1,No. 2,Daniel Land,Cooper Millett,Cooper Millett,0-8,0,8,0,1,Completed,true,false,false
+AP033131,19 Feb 11,13,GPHC 2,GPHC 1,No. 3,Kim Tram,Takahashi Yuya,Takahashi Yuya,0-8,0,8,0,1,Completed,true,false,false
+AP033131,19 Feb 11,13,GPHC 2,GPHC 1,No. 4,Josh Tram,Jack Basso,Jack Basso,0-8,0,8,0,1,Completed,true,false,false
+AP033132,19 Feb 11,13,Basterfield Park,Sandringham,No. 1,Michael Watts,Jason Faulkner,Michael Watts,8-5,8,5,1,0,Completed,true,false,false
+AP033132,19 Feb 11,13,Basterfield Park,Sandringham,No. 2,Dexter Bonet,Ivan Device,Dexter Bonet,8-4,8,4,1,0,Completed,true,false,false
+AP033132,19 Feb 11,13,Basterfield Park,Sandringham,No. 3,James Fletcher,Michael Seeley,James Fletcher,8-1,8,1,1,0,Completed,true,false,false
+AP033132,19 Feb 11,13,Basterfield Park,Sandringham,No. 4,Adam Bishop,Jandre Olivier,Jandre Olivier,2-8,2,8,0,1,Completed,true,false,false
+AP033133,19 Feb 11,13,Melbourne Univ,East Malvern,No. 1,Martin Stradling,Andrew McVean,Martin Stradling,8-4,8,4,1,0,Completed,true,false,false
+AP033133,19 Feb 11,13,Melbourne Univ,East Malvern,No. 2,Jarrod Rathjen,Clifford Ho-Le,Jarrod Rathjen,8-1,8,1,1,0,Completed,true,false,false
+AP033133,19 Feb 11,13,Melbourne Univ,East Malvern,No. 3,David Watts,Peter Car,David Watts,8-1,8,1,1,0,Completed,true,false,false
+AP033133,19 Feb 11,13,Melbourne Univ,East Malvern,No. 4,Wayne Bahr,Alan Young,Wayne Bahr,8-1,8,1,1,0,Completed,true,false,false
+AP033134,19 Feb 11,13,Le Page,Dendy Park,No. 1,Nathan Coombes,Bruce Watkins,Nathan Coombes,8-3,8,3,1,0,Completed,true,false,false
+AP033134,19 Feb 11,13,Le Page,Dendy Park,No. 2,Tyson Coombes,Peter Fleming,Tyson Coombes,8-1,8,1,1,0,Completed,true,false,false
+AP033134,19 Feb 11,13,Le Page,Dendy Park,No. 3,Trevor Hastings,Chris Trotter,Chris Trotter,0-8,0,8,0,1,Completed,true,false,false
+AP033134,19 Feb 11,13,Le Page,Dendy Park,No. 4,Tony Sofo,John Riley,Tony Sofo,8-6,8,6,1,0,Completed,true,false,false
+AP033141,26 Feb 11,14,GPHC 2,Basterfield Park,No. 1,Rowan Browning,Michael Watts,Michael Watts,2-8,2,8,0,1,Completed,true,false,false
+AP033141,26 Feb 11,14,GPHC 2,Basterfield Park,No. 2,Phil Hughes,James Fletcher,James Fletcher,3-8,3,8,0,1,Completed,true,false,false
+AP033141,26 Feb 11,14,GPHC 2,Basterfield Park,No. 3,Travis Hughes,Marcus Hinton,Marcus Hinton,2-8,2,8,0,1,Completed,true,false,false
+AP033141,26 Feb 11,14,GPHC 2,Basterfield Park,No. 4,Brett Browning,Vince Vaughan,Vince Vaughan,5-8,5,8,0,1,Completed,true,false,false
+AP033142,26 Feb 11,14,Sandringham,GPHC 1,No. 1,David Pedley,Ashley Tainton,Ashley Tainton,7-9,7,9,0,1,Completed,true,false,false
+AP033142,26 Feb 11,14,Sandringham,GPHC 1,No. 2,Ivan Device,Cooper Millett,Cooper Millett,2-8,2,8,0,1,Completed,true,false,false
+AP033142,26 Feb 11,14,Sandringham,GPHC 1,No. 3,Michael Seeley,Tony Wu,Tony Wu,7-9,7,9,0,1,Completed,true,false,false
+AP033142,26 Feb 11,14,Sandringham,GPHC 1,No. 4,Jandre Olivier,Jack Basso,Jandre Olivier,8-4,8,4,1,0,Completed,true,false,false
+AP033143,26 Feb 11,14,Melbourne Univ,Le Page,No. 1,Martin Stradling,Tyson Coombes,Martin Stradling,8-3,8,3,1,0,Completed,true,false,false
+AP033143,26 Feb 11,14,Melbourne Univ,Le Page,No. 2,Jarrod Rathjen,Trevor Hastings,Jarrod Rathjen,8-3,8,3,1,0,Completed,true,false,false
+AP033143,26 Feb 11,14,Melbourne Univ,Le Page,No. 3,Dae-Guen Lim,Tony Sofo,Dae-Guen Lim,9-7,9,7,1,0,Completed,true,false,false
+AP033143,26 Feb 11,14,Melbourne Univ,Le Page,No. 4,Wayne Bahr,Brian Govan,Brian Govan,7-9,7,9,0,1,Completed,true,false,false
+AP033144,26 Feb 11,14,Dendy Park,East Malvern,No. 1,Bruce Watkins,Andrew McVean,Andrew McVean,5-8,5,8,0,1,Completed,true,false,false
+AP033144,26 Feb 11,14,Dendy Park,East Malvern,No. 2,Peter Fleming,Damien Mescher,Damien Mescher,2-8,2,8,0,1,Completed,true,false,false
+AP033144,26 Feb 11,14,Dendy Park,East Malvern,No. 3,John Riley,Peter Car,John Riley,8-6,8,6,1,0,Completed,true,false,false
+AP033144,26 Feb 11,14,Dendy Park,East Malvern,No. 4,Stan Kennett,Alan Young,Stan Kennett,8-6,8,6,1,0,Completed,true,false,false
+AP033301,,16,GPHC 1,Melbourne Univ,No. 1,Cooper Millett,Martin Stradling,Martin Stradling,1-8,1,8,0,1,Completed,true,false,false
+AP033301,,16,GPHC 1,Melbourne Univ,No. 2,Ashley Tainton,Jarrod Rathjen,Jarrod Rathjen,2-8,2,8,0,1,Completed,true,false,false
+AP033301,,16,GPHC 1,Melbourne Univ,No. 3,Tony Wu,David Watts,David Watts,4-8,4,8,0,1,Completed,true,false,false
+AP033301,,16,GPHC 1,Melbourne Univ,No. 4,Jack Basso,Wayne Bahr,Wayne Bahr,3-8,3,8,0,1,Completed,true,false,false
+AP033302,,16,Basterfield Park,Le Page,No. 1,Michael Watts,Nathan Coombes,Michael Watts,8-3,8,3,1,0,Completed,true,false,false
+AP033302,,16,Basterfield Park,Le Page,No. 2,Dexter Bonet,Tyson Coombes,Dexter Bonet,8-5,8,5,1,0,Completed,true,false,false
+AP033302,,16,Basterfield Park,Le Page,No. 3,James Fletcher,Trevor Hastings,James Fletcher,8-6,8,6,1,0,Completed,true,false,false
+AP033302,,16,Basterfield Park,Le Page,No. 4,Adam Bishop,Brian Govan,Brian Govan,6-8,6,8,0,1,Completed,true,false,false
+AP033311,,16,GPHC 1,Basterfield Park,No. 1,Cooper Millett,Michael Watts,Michael Watts,2-8,2,8,0,1,Completed,true,false,false
+AP033311,,16,GPHC 1,Basterfield Park,No. 2,Marcus Matear,Dexter Bonet,Marcus Matear,9-8,9,8,1,0,Completed,true,false,false
+AP033311,,16,GPHC 1,Basterfield Park,No. 3,Jack Basso,James Fletcher,James Fletcher,5-8,5,8,0,1,Completed,true,false,false
+AP033311,,16,GPHC 1,Basterfield Park,No. 4,Phil Hughes,Adam Bishop,Adam Bishop,3-8,3,8,0,1,Completed,true,false,false
+AP033321,,17,Melbourne Univ,Basterfield Park,No. 1,Martin Stradling,Michael Watts,Martin Stradling,8-3,8,3,1,0,Completed,true,false,false
+AP033321,,17,Melbourne Univ,Basterfield Park,No. 2,Jarrod Rathjen,James Fletcher,Jarrod Rathjen,8-5,8,5,1,0,Completed,true,false,false
+AP033321,,17,Melbourne Univ,Basterfield Park,No. 3,David Watts,Adam Bishop,Adam Bishop,4-8,4,8,0,1,Completed,true,false,false
+AP033321,,17,Melbourne Univ,Basterfield Park,No. 4,Wayne Bahr,Vince Vaughan,Wayne Bahr,9-8,9,8,1,0,Completed,true,false,false

@@ -1,0 +1,90 @@
+{
+  "asset_id": "AP36-AP003",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 17/18",
+  "season_id": "AP36",
+  "season_label": "Summer 17/18",
+  "source_section_code": "AP003",
+  "section_label": "Mens Rubbers 1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Albert Park",
+      "wins": 10,
+      "points": 95.5,
+      "percentage": 178.13,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Beaumaris CC",
+      "wins": 6,
+      "points": 69.5,
+      "percentage": 102.76,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Kooyong",
+      "wins": 5,
+      "points": 64,
+      "percentage": 123.96,
+      "marker": "R"
+    },
+    {
+      "position": 4,
+      "team": "Centenary Park",
+      "wins": 3,
+      "points": 60.5,
+      "percentage": 113.92,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "OLGC",
+      "wins": 4,
+      "points": 37,
+      "percentage": 44.43,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Sth Murrumbeena",
+      "wins": 1,
+      "points": 33.5,
+      "percentage": 75.59,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP36-AP003",
+  "fixtures": 47,
+  "completed_fixtures": 32,
+  "draw_fixtures": 57,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 126,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP003061 doubles No. 4: '6-2 4-6 3-1'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP003062 doubles No. 4: '6-6'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

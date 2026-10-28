@@ -1,0 +1,94 @@
+{
+  "asset_id": "AP37-AP008",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Winter 2018",
+  "season_id": "AP37",
+  "season_label": "Winter 2018",
+  "source_section_code": "AP008",
+  "section_label": "Mixed Rubbers 4",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Ormond",
+      "wins": 10,
+      "points": 77.5,
+      "percentage": 107.19,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "Coatesville",
+      "wins": 8,
+      "points": 76,
+      "percentage": 117.04,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "FCTC",
+      "wins": 7,
+      "points": 75.5,
+      "percentage": 128.07,
+      "marker": "P"
+    },
+    {
+      "position": 4,
+      "team": "St Finbar's",
+      "wins": 4,
+      "points": 53,
+      "percentage": 96.28,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Parkdale",
+      "wins": 5,
+      "points": 52,
+      "percentage": 96.25,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "BLTC",
+      "wins": 1,
+      "points": 26,
+      "percentage": 69.01,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP37-AP008",
+  "fixtures": 47,
+  "completed_fixtures": 40,
+  "draw_fixtures": 57,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 160,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP008011 doubles No. 3: '2-0'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP008011 doubles No. 4: '1-1'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP008013 doubles No. 4: '6-4 4-5'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP008143 doubles No. 4: '4-2'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP008321 doubles No. 3: '7-5 4-6'. Missing score not inferred; excluded from ratings and game totals.",
+    "Fixture game totals do not match rubbers for AP008151: TROLS team total 29-53; complete-score total 29-47. Both published records retained."
+  ]
+}

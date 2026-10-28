@@ -1,0 +1,237 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP020011,04 Oct 14,1,Long Beach,Dendy Park 1,No. 1,Marcelo Grosso,Torsten Williamson,Marcelo Grosso,8-3,8,3,1,0,Completed,true,false,false
+AP020011,04 Oct 14,1,Long Beach,Dendy Park 1,No. 2,Ned Milligan,Harrison King,Harrison King,2-8,2,8,0,1,Completed,true,false,false
+AP020011,04 Oct 14,1,Long Beach,Dendy Park 1,No. 3,Alan Shaw,Lubing Liu,Lubing Liu,2-8,2,8,0,1,Completed,true,false,false
+AP020011,04 Oct 14,1,Long Beach,Dendy Park 1,No. 4,Daryl Milligan,[Unnamed emergency — TROLS AP020011 away code 4],Daryl Milligan,8-0,8,0,1,0,Completed,false,false,true
+AP020012,04 Oct 14,1,Lauriston,Monash University,No. 1,Igor Vorsovski,Ken Kennedy,Igor Vorsovski,8-2,8,2,1,0,Completed,true,false,false
+AP020012,04 Oct 14,1,Lauriston,Monash University,No. 2,Luke Smith,[Unnamed emergency — TROLS AP020012 away code 2],Luke Smith,8-0,8,0,1,0,Completed,false,false,true
+AP020012,04 Oct 14,1,Lauriston,Monash University,No. 3,Brandon Aprile,James Carmichael,James Carmichael,6-8,6,8,0,1,Completed,true,false,false
+AP020012,04 Oct 14,1,Lauriston,Monash University,No. 4,David Smith,Philip Phung,Philip Phung,3-8,3,8,0,1,Completed,true,false,false
+AP020014,04 Oct 14,1,Dendy Park 2,Hurlingham Park,No. 1,Peter Fleming,Marcus English,Marcus English,6-8,6,8,0,1,Completed,true,false,false
+AP020014,04 Oct 14,1,Dendy Park 2,Hurlingham Park,No. 2,Anthony Murray,Hosie Gall,Anthony Murray,8-5,8,5,1,0,Completed,true,false,false
+AP020014,04 Oct 14,1,Dendy Park 2,Hurlingham Park,No. 3,Tony Saul,Christian Ruessel,Christian Ruessel,6-8,6,8,0,1,Completed,true,false,false
+AP020014,04 Oct 14,1,Dendy Park 2,Hurlingham Park,No. 4,Kerry Sindell,Michael Luo,Kerry Sindell,8-2,8,2,1,0,Completed,true,false,false
+AP020021,11 Oct 14,2,Hurlingham Park,Long Beach,No. 1,Marcus English,Marcelo Grosso,Marcus English,8-5,8,5,1,0,Completed,true,false,false
+AP020021,11 Oct 14,2,Hurlingham Park,Long Beach,No. 2,Steffen Raab,Alex Demiri,Steffen Raab,8-0,8,0,1,0,Completed,true,false,false
+AP020021,11 Oct 14,2,Hurlingham Park,Long Beach,No. 3,Nathan Flynn,Ned Milligan,Nathan Flynn,8-0,8,0,1,0,Completed,true,false,false
+AP020021,11 Oct 14,2,Hurlingham Park,Long Beach,No. 4,Michael Luo,Daryl Milligan,Michael Luo,8-1,8,1,1,0,Completed,true,false,false
+AP020022,11 Oct 14,2,Dendy Park 1,Lauriston,No. 1,Torsten Williamson,Phil Murphy,Phil Murphy,1-8,1,8,0,1,Completed,true,false,false
+AP020022,11 Oct 14,2,Dendy Park 1,Lauriston,No. 2,Chris Odgers,Igor Vorsovski,Igor Vorsovski,3-8,3,8,0,1,Completed,true,false,false
+AP020022,11 Oct 14,2,Dendy Park 1,Lauriston,No. 3,Dimitri Oxenenko,Luke Smith,Luke Smith,4-8,4,8,0,1,Completed,true,false,false
+AP020022,11 Oct 14,2,Dendy Park 1,Lauriston,No. 4,Martin Moore,Danny Zielin,Martin Moore,8-4,8,4,1,0,Completed,true,false,false
+AP020023,11 Oct 14,2,Monash University,St Pats Mentone,No. 1,Minh Hoa Vuong,David Lawry,Minh Hoa Vuong,8-2,8,2,1,0,Completed,true,false,false
+AP020023,11 Oct 14,2,Monash University,St Pats Mentone,No. 2,Stanley Yeoh,Sam Clayton,Stanley Yeoh,8-2,8,2,1,0,Completed,true,false,false
+AP020023,11 Oct 14,2,Monash University,St Pats Mentone,No. 3,Shangkai Wang,Mike De Silva,Mike De Silva,3-8,3,8,0,1,Completed,true,false,false
+AP020023,11 Oct 14,2,Monash University,St Pats Mentone,No. 4,Philip Phung,Ben Costa,Philip Phung,8-2,8,2,1,0,Completed,true,false,false
+AP020024,11 Oct 14,2,Maccabi,Dendy Park 2,No. 1,Errol Dorfan,Bruce Watkins,Bruce Watkins,7-9,7,9,0,1,Completed,true,false,false
+AP020024,11 Oct 14,2,Maccabi,Dendy Park 2,No. 2,Simon Danby,Peter Fleming,Peter Fleming,7-9,7,9,0,1,Completed,true,false,false
+AP020024,11 Oct 14,2,Maccabi,Dendy Park 2,No. 3,Joey Pat,Chris Trotter,Joey Pat,8-4,8,4,1,0,Completed,true,false,false
+AP020024,11 Oct 14,2,Maccabi,Dendy Park 2,No. 4,Robert Schattner,[Unnamed emergency — TROLS AP020024 away code 4],Robert Schattner,8-0,8,0,1,0,Completed,false,false,true
+AP020031,18 Oct 14,3,Long Beach,Maccabi,No. 1,Marcelo Grosso,Errol Dorfan,Marcelo Grosso,8-4,8,4,1,0,Completed,true,false,false
+AP020031,18 Oct 14,3,Long Beach,Maccabi,No. 2,Ned Milligan,Zvi Schweitzer,Zvi Schweitzer,1-8,1,8,0,1,Completed,true,false,false
+AP020031,18 Oct 14,3,Long Beach,Maccabi,No. 3,Alan Shaw,Joey Pat,Joey Pat,0-8,0,8,0,1,Completed,true,false,false
+AP020031,18 Oct 14,3,Long Beach,Maccabi,No. 4,Blaise Northey,Ron Schweitzer,Ron Schweitzer,1-8,1,8,0,1,Completed,true,false,false
+AP020032,18 Oct 14,3,Lauriston,Hurlingham Park,No. 1,Igor Vorsovski,Hosie Gall,Igor Vorsovski,8-6,8,6,1,0,Completed,true,false,false
+AP020032,18 Oct 14,3,Lauriston,Hurlingham Park,No. 2,David Newton,Nathan Flynn,David Newton,8-4,8,4,1,0,Completed,true,false,false
+AP020032,18 Oct 14,3,Lauriston,Hurlingham Park,No. 3,Andrew Thompson,Christian Ruessel,Andrew Thompson,8-0,8,0,1,0,Completed,true,false,false
+AP020032,18 Oct 14,3,Lauriston,Hurlingham Park,No. 4,Tim Biss,Michael Luo,Michael Luo,2-8,2,8,0,1,Completed,true,false,false
+AP020033,18 Oct 14,3,St Pats Mentone,Dendy Park 1,No. 1,David Lawry,Harrison King,David Lawry,8-3,8,3,1,0,Completed,true,false,false
+AP020033,18 Oct 14,3,St Pats Mentone,Dendy Park 1,No. 2,Sam Clayton,Lubing Liu,Sam Clayton,8-3,8,3,1,0,Completed,true,false,false
+AP020033,18 Oct 14,3,St Pats Mentone,Dendy Park 1,No. 3,Mike De Silva,Chris Odgers,Mike De Silva,8-6,8,6,1,0,Completed,true,false,false
+AP020033,18 Oct 14,3,St Pats Mentone,Dendy Park 1,No. 4,Ben Costa,Martin Moore,Martin Moore,5-8,5,8,0,1,Completed,true,false,false
+AP020034,18 Oct 14,3,Dendy Park 2,Monash University,No. 1,Ian Wilkinson,Ken Kennedy,Ian Wilkinson,8-5,8,5,1,0,Completed,true,false,false
+AP020034,18 Oct 14,3,Dendy Park 2,Monash University,No. 2,Peter Fleming,James Carmichael,James Carmichael,8-9,8,9,0,1,Completed,true,false,false
+AP020034,18 Oct 14,3,Dendy Park 2,Monash University,No. 3,Bill Craig,Shangkai Wang,Bill Craig,8-0,8,0,1,0,Completed,true,false,false
+AP020034,18 Oct 14,3,Dendy Park 2,Monash University,No. 4,Kerry Sindell,Philip Phung,Philip Phung,3-8,3,8,0,1,Completed,true,false,false
+AP020041,25 Oct 14,4,Monash University,Long Beach,No. 1,Ken Kennedy,Marcelo Grosso,Ken Kennedy,8-5,8,5,1,0,Completed,true,false,false
+AP020041,25 Oct 14,4,Monash University,Long Beach,No. 2,Minh Hoa Vuong,Alex Demiri,Minh Hoa Vuong,8-3,8,3,1,0,Completed,true,false,false
+AP020041,25 Oct 14,4,Monash University,Long Beach,No. 3,Stanley Yeoh,Ned Milligan,Stanley Yeoh,8-2,8,2,1,0,Completed,true,false,false
+AP020041,25 Oct 14,4,Monash University,Long Beach,No. 4,Philip Phung,Alan Shaw,Philip Phung,8-0,8,0,1,0,Completed,true,false,false
+AP020042,25 Oct 14,4,Maccabi,Lauriston,No. 1,Daniel Henquin,Phil Murphy,Phil Murphy,6-8,6,8,0,1,Completed,true,false,false
+AP020042,25 Oct 14,4,Maccabi,Lauriston,No. 2,Joey Pat,Luke Smith,Joey Pat,8-1,8,1,1,0,Completed,true,false,false
+AP020042,25 Oct 14,4,Maccabi,Lauriston,No. 3,Daniel Goodrich,David Newton,David Newton,6-8,6,8,0,1,Completed,true,false,false
+AP020042,25 Oct 14,4,Maccabi,Lauriston,No. 4,Ron Schweitzer,Brandon Aprile,Ron Schweitzer,8-1,8,1,1,0,Completed,true,false,false
+AP020043,25 Oct 14,4,Hurlingham Park,St Pats Mentone,No. 1,Marcus English,Sam Clayton,Marcus English,8-3,8,3,1,0,Completed,true,false,false
+AP020043,25 Oct 14,4,Hurlingham Park,St Pats Mentone,No. 2,Hosie Gall,Mike De Silva,Hosie Gall,8-0,8,0,1,0,Completed,true,false,false
+AP020043,25 Oct 14,4,Hurlingham Park,St Pats Mentone,No. 3,Christian Ruessel,Cameron De Silva,Christian Ruessel,8-3,8,3,1,0,Completed,true,false,false
+AP020043,25 Oct 14,4,Hurlingham Park,St Pats Mentone,No. 4,Nathan Flynn,Ben Costa,Nathan Flynn,8-3,8,3,1,0,Completed,true,false,false
+AP020044,25 Oct 14,4,Dendy Park 1,Dendy Park 2,No. 1,Lubing Liu,Ian Wilkinson,Ian Wilkinson,2-8,2,8,0,1,Completed,true,false,false
+AP020044,25 Oct 14,4,Dendy Park 1,Dendy Park 2,No. 2,Dimitri Oxenenko,Peter Fleming,Peter Fleming,1-8,1,8,0,1,Completed,true,false,false
+AP020044,25 Oct 14,4,Dendy Park 1,Dendy Park 2,No. 3,Martin Moore,Anthony Murray,Martin Moore,8-6,8,6,1,0,Completed,true,false,false
+AP020044,25 Oct 14,4,Dendy Park 1,Dendy Park 2,No. 4,Richard Artis,Chris Trotter,Chris Trotter,2-8,2,8,0,1,Completed,true,false,false
+AP020051,08 Nov 14,5,St Pats Mentone,Dendy Park 2,No. 1,David Lawry,Ian Wilkinson,David Lawry,8-6,8,6,1,0,Completed,true,false,false
+AP020051,08 Nov 14,5,St Pats Mentone,Dendy Park 2,No. 2,Sam Clayton,Bruce Watkins,Bruce Watkins,7-9,7,9,0,1,Completed,true,false,false
+AP020051,08 Nov 14,5,St Pats Mentone,Dendy Park 2,No. 3,Nick Hall,Anthony Murray,Anthony Murray,2-8,2,8,0,1,Completed,true,false,false
+AP020051,08 Nov 14,5,St Pats Mentone,Dendy Park 2,No. 4,Ben Costa,Bill Craig,Bill Craig,4-8,4,8,0,1,Completed,true,false,false
+AP020052,08 Nov 14,5,Hurlingham Park,Maccabi,No. 1,Hosie Gall,Errol Dorfan,Hosie Gall,8-5,8,5,1,0,Completed,true,false,false
+AP020052,08 Nov 14,5,Hurlingham Park,Maccabi,No. 2,Steffen Raab,Daniel Henquin,Steffen Raab,8-3,8,3,1,0,Completed,true,false,false
+AP020052,08 Nov 14,5,Hurlingham Park,Maccabi,No. 3,Christian Ruessel,Zvi Schweitzer,Zvi Schweitzer,3-8,3,8,0,1,Completed,true,false,false
+AP020052,08 Nov 14,5,Hurlingham Park,Maccabi,No. 4,Nathan Flynn,Joey Pat,Nathan Flynn,8-2,8,2,1,0,Completed,true,false,false
+AP020053,08 Nov 14,5,Monash University,Dendy Park 1,No. 1,Ken Kennedy,Torsten Williamson,Ken Kennedy,8-3,8,3,1,0,Completed,true,false,false
+AP020053,08 Nov 14,5,Monash University,Dendy Park 1,No. 2,Stanley Yeoh,Harrison King,Stanley Yeoh,8-0,8,0,1,0,Completed,true,false,false
+AP020053,08 Nov 14,5,Monash University,Dendy Park 1,No. 3,Shangkai Wang,Dimitri Oxenenko,Dimitri Oxenenko,6-8,6,8,0,1,Completed,true,false,false
+AP020053,08 Nov 14,5,Monash University,Dendy Park 1,No. 4,Ryan Sambell,Richard Artis,Richard Artis,4-8,4,8,0,1,Completed,true,false,false
+AP020054,08 Nov 14,5,Long Beach,Lauriston,No. 1,Marcelo Grosso,Luke Smith,Marcelo Grosso,8-4,8,4,1,0,Completed,true,false,false
+AP020054,08 Nov 14,5,Long Beach,Lauriston,No. 2,Alex Demiri,Brandon Aprile,Brandon Aprile,4-8,4,8,0,1,Completed,true,false,false
+AP020054,08 Nov 14,5,Long Beach,Lauriston,No. 3,Alan Shaw,Danny Zielin,Alan Shaw,8-2,8,2,1,0,Completed,true,false,false
+AP020054,08 Nov 14,5,Long Beach,Lauriston,No. 4,Daryl Milligan,Scott Newton,Scott Newton,0-8,0,8,0,1,Completed,true,false,false
+AP020061,15 Nov 14,6,Lauriston,St Pats Mentone,No. 1,Phil Murphy,David Lawry,Phil Murphy,8-5,8,5,1,0,Completed,true,false,false
+AP020061,15 Nov 14,6,Lauriston,St Pats Mentone,No. 2,Igor Vorsovski,Nick Hall,Igor Vorsovski,8-6,8,6,1,0,Completed,true,false,false
+AP020061,15 Nov 14,6,Lauriston,St Pats Mentone,No. 3,Luke Smith,Mike De Silva,Luke Smith,9-8,9,8,1,0,Completed,true,false,false
+AP020061,15 Nov 14,6,Lauriston,St Pats Mentone,No. 4,David Newton,Ben Costa,David Newton,8-3,8,3,1,0,Completed,true,false,false
+AP020062,15 Nov 14,6,Dendy Park 2,Long Beach,No. 1,Ian Wilkinson,Marcelo Grosso,Marcelo Grosso,4-8,4,8,0,1,Completed,true,false,false
+AP020062,15 Nov 14,6,Dendy Park 2,Long Beach,No. 2,Bruce Watkins,Alex Demiri,Bruce Watkins,8-4,8,4,1,0,Completed,true,false,false
+AP020062,15 Nov 14,6,Dendy Park 2,Long Beach,No. 3,Chris Trotter,Ned Milligan,Chris Trotter,8-2,8,2,1,0,Completed,true,false,false
+AP020062,15 Nov 14,6,Dendy Park 2,Long Beach,No. 4,Kerry Sindell,Daryl Milligan,Kerry Sindell,8-2,8,2,1,0,Completed,true,false,false
+AP020063,15 Nov 14,6,Maccabi,Monash University,No. 1,Errol Dorfan,Stanley Yeoh,Errol Dorfan,8-6,8,6,1,0,Completed,true,false,false
+AP020063,15 Nov 14,6,Maccabi,Monash University,No. 2,Zvi Schweitzer,James Carmichael,Zvi Schweitzer,8-2,8,2,1,0,Completed,true,false,false
+AP020063,15 Nov 14,6,Maccabi,Monash University,No. 3,Joey Pat,Philip Phung,Philip Phung,4-8,4,8,0,1,Completed,true,false,false
+AP020063,15 Nov 14,6,Maccabi,Monash University,No. 4,Ron Schweitzer,Ryan Sambell,Ron Schweitzer,8-0,8,0,1,0,Completed,true,false,false
+AP020064,15 Nov 14,6,Dendy Park 1,Hurlingham Park,No. 1,Harrison King,Marcus English,Marcus English,6-8,6,8,0,1,Completed,true,false,false
+AP020064,15 Nov 14,6,Dendy Park 1,Hurlingham Park,No. 2,Lubing Liu,Hosie Gall,Hosie Gall,0-8,0,8,0,1,Completed,true,false,false
+AP020064,15 Nov 14,6,Dendy Park 1,Hurlingham Park,No. 3,Chris Odgers,Steffen Raab,Steffen Raab,4-8,4,8,0,1,Completed,true,false,false
+AP020064,15 Nov 14,6,Dendy Park 1,Hurlingham Park,No. 4,Dimitri Oxenenko,Michael Luo,Michael Luo,0-8,0,8,0,1,Completed,true,false,false
+AP020071,22 Nov 14,7,Long Beach,St Pats Mentone,No. 1,Marcelo Grosso,Sam Clayton,Marcelo Grosso,8-4,8,4,1,0,Completed,true,false,false
+AP020071,22 Nov 14,7,Long Beach,St Pats Mentone,No. 2,Alex Demiri,Cameron De Silva,Cameron De Silva,2-8,2,8,0,1,Completed,true,false,false
+AP020071,22 Nov 14,7,Long Beach,St Pats Mentone,No. 3,Ned Milligan,Ben Costa,Ned Milligan,9-8,9,8,1,0,Completed,true,false,false
+AP020071,22 Nov 14,7,Long Beach,St Pats Mentone,No. 4,Alan Shaw,Tom Boulton,Alan Shaw,8-0,8,0,1,0,Completed,true,false,false
+AP020072,22 Nov 14,7,Lauriston,Dendy Park 2,No. 1,Phil Murphy,Bruce Watkins,Bruce Watkins,3-8,3,8,0,1,Completed,true,false,false
+AP020072,22 Nov 14,7,Lauriston,Dendy Park 2,No. 2,David Newton,Peter Fleming,David Newton,8-6,8,6,1,0,Completed,true,false,false
+AP020072,22 Nov 14,7,Lauriston,Dendy Park 2,No. 3,Brandon Aprile,Tony Saul,Tony Saul,2-8,2,8,0,1,Completed,true,false,false
+AP020072,22 Nov 14,7,Lauriston,Dendy Park 2,No. 4,Scott Newton,Bill Craig,Bill Craig,6-8,6,8,0,1,Completed,true,false,false
+AP020073,22 Nov 14,7,Hurlingham Park,Monash University,No. 1,Steffen Raab,Ken Kennedy,Steffen Raab,8-4,8,4,1,0,Completed,true,false,false
+AP020073,22 Nov 14,7,Hurlingham Park,Monash University,No. 2,Michael Luo,James Carmichael,Michael Luo,8-6,8,6,1,0,Completed,true,false,false
+AP020073,22 Nov 14,7,Hurlingham Park,Monash University,No. 3,Andrew Kelso,Shangkai Wang,Andrew Kelso,8-1,8,1,1,0,Completed,true,false,false
+AP020073,22 Nov 14,7,Hurlingham Park,Monash University,No. 4,Dan Palamara,Ryan Sambell,Dan Palamara,8-3,8,3,1,0,Completed,true,false,false
+AP020074,22 Nov 14,7,Maccabi,Dendy Park 1,No. 1,Errol Dorfan,Chris Odgers,Errol Dorfan,8-2,8,2,1,0,Completed,true,false,false
+AP020074,22 Nov 14,7,Maccabi,Dendy Park 1,No. 2,Daniel Henquin,Dimitri Oxenenko,Daniel Henquin,8-0,8,0,1,0,Completed,true,false,false
+AP020074,22 Nov 14,7,Maccabi,Dendy Park 1,No. 3,Damon Flicker,Martin Moore,Damon Flicker,8-4,8,4,1,0,Completed,true,false,false
+AP020074,22 Nov 14,7,Maccabi,Dendy Park 1,No. 4,Joey Pat,Richard Artis,Joey Pat,8-1,8,1,1,0,Completed,true,false,false
+AP020081,29 Nov 14,8,Dendy Park 1,Long Beach,No. 1,Torsten Williamson,Marcelo Grosso,Marcelo Grosso,1-8,1,8,0,1,Completed,true,false,false
+AP020081,29 Nov 14,8,Dendy Park 1,Long Beach,No. 2,Dimitri Oxenenko,Alex Demiri,Alex Demiri,3-8,3,8,0,1,Completed,true,false,false
+AP020081,29 Nov 14,8,Dendy Park 1,Long Beach,No. 3,Martin Moore,Ned Milligan,Martin Moore,8-0,8,0,1,0,Completed,true,false,false
+AP020081,29 Nov 14,8,Dendy Park 1,Long Beach,No. 4,Richard Artis,Alan Shaw,Alan Shaw,2-8,2,8,0,1,Completed,true,false,false
+AP020082,29 Nov 14,8,Monash University,Lauriston,No. 1,Ken Kennedy,Luke Smith,Ken Kennedy,8-5,8,5,1,0,Completed,true,false,false
+AP020082,29 Nov 14,8,Monash University,Lauriston,No. 2,Stanley Yeoh,William Swedosh,Stanley Yeoh,8-1,8,1,1,0,Completed,true,false,false
+AP020082,29 Nov 14,8,Monash University,Lauriston,No. 3,Shangkai Wang,Brandon Aprile,Brandon Aprile,1-8,1,8,0,1,Completed,true,false,false
+AP020082,29 Nov 14,8,Monash University,Lauriston,No. 4,Philip Phung,Scott Newton,Philip Phung,8-2,8,2,1,0,Completed,true,false,false
+AP020083,29 Nov 14,8,Maccabi,St Pats Mentone,No. 1,Errol Dorfan,David Lawry,Errol Dorfan,8-4,8,4,1,0,Completed,true,false,false
+AP020083,29 Nov 14,8,Maccabi,St Pats Mentone,No. 2,Zvi Schweitzer,Sam Clayton,Sam Clayton,8-9,8,9,0,1,Completed,true,false,false
+AP020083,29 Nov 14,8,Maccabi,St Pats Mentone,No. 3,Joey Pat,Cameron De Silva,Joey Pat,9-8,9,8,1,0,Completed,true,false,false
+AP020083,29 Nov 14,8,Maccabi,St Pats Mentone,No. 4,Ron Schweitzer,Nick Hall,Ron Schweitzer,8-5,8,5,1,0,Completed,true,false,false
+AP020084,29 Nov 14,8,Hurlingham Park,Dendy Park 2,No. 1,Christian Ruessel,Peter Fleming,Peter Fleming,2-8,2,8,0,1,Completed,true,false,false
+AP020084,29 Nov 14,8,Hurlingham Park,Dendy Park 2,No. 2,Nathan Flynn,Anthony Murray,Nathan Flynn,8-6,8,6,1,0,Completed,true,false,false
+AP020084,29 Nov 14,8,Hurlingham Park,Dendy Park 2,No. 3,Andrew Kelso,Tony Saul,Andrew Kelso,8-3,8,3,1,0,Completed,true,false,false
+AP020084,29 Nov 14,8,Hurlingham Park,Dendy Park 2,No. 4,Dan Palamara,Brian Reichman,Brian Reichman,1-8,1,8,0,1,Completed,true,false,false
+AP020091,06 Dec 14,9,Long Beach,Hurlingham Park,No. 1,Marcelo Grosso,Marcus English,Marcus English,7-9,7,9,0,1,Completed,true,false,false
+AP020091,06 Dec 14,9,Long Beach,Hurlingham Park,No. 2,Alex Demiri,Steffen Raab,Steffen Raab,1-8,1,8,0,1,Completed,true,false,false
+AP020091,06 Dec 14,9,Long Beach,Hurlingham Park,No. 3,Ned Milligan,Nathan Flynn,Nathan Flynn,1-8,1,8,0,1,Completed,true,false,false
+AP020091,06 Dec 14,9,Long Beach,Hurlingham Park,No. 4,Daryl Milligan,Stephen Earp,Stephen Earp,2-8,2,8,0,1,Completed,true,false,false
+AP020092,06 Dec 14,9,Lauriston,Dendy Park 1,No. 1,Phil Murphy,Harrison King,Phil Murphy,8-2,8,2,1,0,Completed,true,false,false
+AP020092,06 Dec 14,9,Lauriston,Dendy Park 1,No. 2,Igor Vorsovski,Lubing Liu,Igor Vorsovski,8-4,8,4,1,0,Completed,true,false,false
+AP020092,06 Dec 14,9,Lauriston,Dendy Park 1,No. 3,Luke Smith,Chris Odgers,Luke Smith,8-4,8,4,1,0,Completed,true,false,false
+AP020092,06 Dec 14,9,Lauriston,Dendy Park 1,No. 4,Brandon Aprile,Richard Artis,Brandon Aprile,8-5,8,5,1,0,Completed,true,false,false
+AP020093,06 Dec 14,9,St Pats Mentone,Monash University,No. 1,David Lawry,Ken Kennedy,David Lawry,8-4,8,4,1,0,Completed,true,false,false
+AP020093,06 Dec 14,9,St Pats Mentone,Monash University,No. 2,Cameron De Silva,Stanley Yeoh,Cameron De Silva,8-5,8,5,1,0,Completed,true,false,false
+AP020093,06 Dec 14,9,St Pats Mentone,Monash University,No. 3,Nick Hall,Philip Phung,Nick Hall,8-1,8,1,1,0,Completed,true,false,false
+AP020093,06 Dec 14,9,St Pats Mentone,Monash University,No. 4,Mike De Silva,Ryan Sambell,Mike De Silva,8-2,8,2,1,0,Completed,true,false,false
+AP020094,06 Dec 14,9,Dendy Park 2,Maccabi,No. 1,Bruce Watkins,Errol Dorfan,Bruce Watkins,8-4,8,4,1,0,Completed,true,false,false
+AP020094,06 Dec 14,9,Dendy Park 2,Maccabi,No. 2,Anthony Murray,Daniel Henquin,Daniel Henquin,8-9,8,9,0,1,Completed,true,false,false
+AP020094,06 Dec 14,9,Dendy Park 2,Maccabi,No. 3,Chris Trotter,Zvi Schweitzer,Zvi Schweitzer,4-8,4,8,0,1,Completed,true,false,false
+AP020094,06 Dec 14,9,Dendy Park 2,Maccabi,No. 4,Kerry Sindell,Ron Schweitzer,Kerry Sindell,9-8,9,8,1,0,Completed,true,false,false
+AP020101,13 Dec 14,10,Maccabi,Long Beach,No. 1,Errol Dorfan,Marcelo Grosso,Marcelo Grosso,8-9,8,9,0,1,Completed,true,false,false
+AP020101,13 Dec 14,10,Maccabi,Long Beach,No. 2,Zvi Schweitzer,Alex Demiri,Zvi Schweitzer,8-1,8,1,1,0,Completed,true,false,false
+AP020101,13 Dec 14,10,Maccabi,Long Beach,No. 3,Damon Flicker,Ned Milligan,Damon Flicker,8-1,8,1,1,0,Completed,true,false,false
+AP020101,13 Dec 14,10,Maccabi,Long Beach,No. 4,Joey Pat,Daryl Milligan,Joey Pat,8-0,8,0,1,0,Completed,true,false,false
+AP020102,13 Dec 14,10,Hurlingham Park,Lauriston,No. 1,Marcus English,Igor Vorsovski,Marcus English,8-2,8,2,1,0,Completed,true,false,false
+AP020102,13 Dec 14,10,Hurlingham Park,Lauriston,No. 2,Hosie Gall,Luke Smith,Hosie Gall,8-0,8,0,1,0,Completed,true,false,false
+AP020102,13 Dec 14,10,Hurlingham Park,Lauriston,No. 3,Nathan Flynn,David Newton,Nathan Flynn,8-5,8,5,1,0,Completed,true,false,false
+AP020102,13 Dec 14,10,Hurlingham Park,Lauriston,No. 4,Dan Palamara,Brandon Aprile,Dan Palamara,8-1,8,1,1,0,Completed,true,false,false
+AP020103,13 Dec 14,10,Dendy Park 1,St Pats Mentone,No. 1,Harrison King,David Lawry,David Lawry,2-8,2,8,0,1,Completed,true,false,false
+AP020103,13 Dec 14,10,Dendy Park 1,St Pats Mentone,No. 2,Torsten Williamson,Sam Clayton,Sam Clayton,3-8,3,8,0,1,Completed,true,false,false
+AP020103,13 Dec 14,10,Dendy Park 1,St Pats Mentone,No. 3,Dimitri Oxenenko,Mike De Silva,Mike De Silva,3-8,3,8,0,1,Completed,true,false,false
+AP020103,13 Dec 14,10,Dendy Park 1,St Pats Mentone,No. 4,Martin Moore,Ben Costa,Martin Moore,8-3,8,3,1,0,Completed,true,false,false
+AP020104,13 Dec 14,10,Monash University,Dendy Park 2,No. 1,Ken Kennedy,Ian Wilkinson,Ian Wilkinson,2-8,2,8,0,1,Completed,true,false,false
+AP020104,13 Dec 14,10,Monash University,Dendy Park 2,No. 2,Minh Hoa Vuong,Peter Fleming,Minh Hoa Vuong,8-2,8,2,1,0,Completed,true,false,false
+AP020104,13 Dec 14,10,Monash University,Dendy Park 2,No. 3,Philip Phung,Anthony Murray,Anthony Murray,0-8,0,8,0,1,Completed,true,false,false
+AP020104,13 Dec 14,10,Monash University,Dendy Park 2,No. 4,Ryan Sambell,Bill Craig,Bill Craig,4-8,4,8,0,1,Completed,true,false,false
+AP020111,07 Feb 15,11,Long Beach,Monash University,No. 1,Marcelo Grosso,Ken Kennedy,Marcelo Grosso,8-4,8,4,1,0,Completed,true,false,false
+AP020111,07 Feb 15,11,Long Beach,Monash University,No. 2,Alex Demiri,Minh Hoa Vuong,Minh Hoa Vuong,5-8,5,8,0,1,Completed,true,false,false
+AP020111,07 Feb 15,11,Long Beach,Monash University,No. 3,Ned Milligan,Philip Phung,Philip Phung,5-8,5,8,0,1,Completed,true,false,false
+AP020111,07 Feb 15,11,Long Beach,Monash University,No. 4,Alan Shaw,Ryan Sambell,Alan Shaw,8-5,8,5,1,0,Completed,true,false,false
+AP020112,07 Feb 15,11,Lauriston,Maccabi,No. 1,Igor Vorsovski,Errol Dorfan,Errol Dorfan,0-8,0,8,0,1,Completed,true,false,false
+AP020112,07 Feb 15,11,Lauriston,Maccabi,No. 2,Brandon Aprile,Zvi Schweitzer,Zvi Schweitzer,7-9,7,9,0,1,Completed,true,false,false
+AP020112,07 Feb 15,11,Lauriston,Maccabi,No. 3,Danny Zielin,Joey Pat,Joey Pat,2-8,2,8,0,1,Completed,true,false,false
+AP020112,07 Feb 15,11,Lauriston,Maccabi,No. 4,Matthew Marguglio,Ron Schweitzer,Ron Schweitzer,1-8,1,8,0,1,Completed,true,false,false
+AP020113,07 Feb 15,11,St Pats Mentone,Hurlingham Park,No. 1,David Lawry,Marcus English,Marcus English,6-8,6,8,0,1,Completed,true,false,false
+AP020113,07 Feb 15,11,St Pats Mentone,Hurlingham Park,No. 2,Sam Clayton,Hosie Gall,Hosie Gall,4-8,4,8,0,1,Completed,true,false,false
+AP020113,07 Feb 15,11,St Pats Mentone,Hurlingham Park,No. 3,Nick Hall,Christian Ruessel,Nick Hall,8-6,8,6,1,0,Completed,true,false,false
+AP020113,07 Feb 15,11,St Pats Mentone,Hurlingham Park,No. 4,Mike De Silva,Michael Luo,Mike De Silva,8-1,8,1,1,0,Completed,true,false,false
+AP020114,07 Feb 15,11,Dendy Park 2,Dendy Park 1,No. 1,Ian Wilkinson,Torsten Williamson,Ian Wilkinson,9-7,9,7,1,0,Completed,true,false,false
+AP020114,07 Feb 15,11,Dendy Park 2,Dendy Park 1,No. 2,Bruce Watkins,Lubing Liu,Bruce Watkins,8-2,8,2,1,0,Completed,true,false,false
+AP020114,07 Feb 15,11,Dendy Park 2,Dendy Park 1,No. 3,Anthony Murray,Dimitri Oxenenko,Anthony Murray,8-0,8,0,1,0,Completed,true,false,false
+AP020114,07 Feb 15,11,Dendy Park 2,Dendy Park 1,No. 4,Kerry Sindell,Martin Moore,Martin Moore,4-8,4,8,0,1,Completed,true,false,false
+AP020121,14 Feb 15,12,Dendy Park 2,St Pats Mentone,No. 1,Bruce Watkins,David Lawry,Bruce Watkins,8-5,8,5,1,0,Completed,true,false,false
+AP020121,14 Feb 15,12,Dendy Park 2,St Pats Mentone,No. 2,Peter Fleming,Sam Clayton,Peter Fleming,8-6,8,6,1,0,Completed,true,false,false
+AP020121,14 Feb 15,12,Dendy Park 2,St Pats Mentone,No. 3,Chris Trotter,Cameron De Silva,Chris Trotter,8-3,8,3,1,0,Completed,true,false,false
+AP020121,14 Feb 15,12,Dendy Park 2,St Pats Mentone,No. 4,Bill Craig,Ben Costa,Bill Craig,8-3,8,3,1,0,Completed,true,false,false
+AP020122,14 Feb 15,12,Maccabi,Hurlingham Park,No. 1,Errol Dorfan,Hosie Gall,Errol Dorfan,8-3,8,3,1,0,Completed,true,false,false
+AP020122,14 Feb 15,12,Maccabi,Hurlingham Park,No. 2,Daniel Henquin,Christian Ruessel,Daniel Henquin,8-4,8,4,1,0,Completed,true,false,false
+AP020122,14 Feb 15,12,Maccabi,Hurlingham Park,No. 3,Zvi Schweitzer,Michael Luo,Zvi Schweitzer,9-7,9,7,1,0,Completed,true,false,false
+AP020122,14 Feb 15,12,Maccabi,Hurlingham Park,No. 4,Joey Pat,Andrew Kelso,Joey Pat,8-2,8,2,1,0,Completed,true,false,false
+AP020123,14 Feb 15,12,Dendy Park 1,Monash University,No. 1,Torsten Williamson,Ken Kennedy,Torsten Williamson,8-5,8,5,1,0,Completed,true,false,false
+AP020123,14 Feb 15,12,Dendy Park 1,Monash University,No. 2,Lubing Liu,Philip Phung,Philip Phung,2-8,2,8,0,1,Completed,true,false,false
+AP020123,14 Feb 15,12,Dendy Park 1,Monash University,No. 3,Martin Moore,Shaun Yeoh,Martin Moore,8-3,8,3,1,0,Completed,true,false,false
+AP020123,14 Feb 15,12,Dendy Park 1,Monash University,No. 4,Richard Artis,Ryan Sambell,Richard Artis,8-6,8,6,1,0,Completed,true,false,false
+AP020124,14 Feb 15,12,Lauriston,Long Beach,No. 1,Phil Murphy,Marcelo Grosso,Marcelo Grosso,4-8,4,8,0,1,Completed,true,false,false
+AP020124,14 Feb 15,12,Lauriston,Long Beach,No. 2,Luke Smith,Alex Demiri,Luke Smith,8-4,8,4,1,0,Completed,true,false,false
+AP020124,14 Feb 15,12,Lauriston,Long Beach,No. 3,William Swedosh,Ned Milligan,Ned Milligan,7-9,7,9,0,1,Completed,true,false,false
+AP020124,14 Feb 15,12,Lauriston,Long Beach,No. 4,Evan Polydropoulos,Alan Shaw,Alan Shaw,2-8,2,8,0,1,Completed,true,false,false
+AP020131,21 Feb 15,13,St Pats Mentone,Lauriston,No. 1,David Lawry,Luke Smith,David Lawry,8-2,8,2,1,0,Completed,true,false,false
+AP020131,21 Feb 15,13,St Pats Mentone,Lauriston,No. 2,Sam Clayton,William Swedosh,Sam Clayton,8-3,8,3,1,0,Completed,true,false,false
+AP020131,21 Feb 15,13,St Pats Mentone,Lauriston,No. 3,Mike De Silva,Brandon Aprile,Mike De Silva,8-0,8,0,1,0,Completed,true,false,false
+AP020131,21 Feb 15,13,St Pats Mentone,Lauriston,No. 4,Ben Costa,Evan Polydropoulos,Evan Polydropoulos,3-8,3,8,0,1,Completed,true,false,false
+AP020132,21 Feb 15,13,Long Beach,Dendy Park 2,No. 1,Alex Demiri,Bruce Watkins,Bruce Watkins,2-8,2,8,0,1,Completed,true,false,false
+AP020132,21 Feb 15,13,Long Beach,Dendy Park 2,No. 2,Ned Milligan,Peter Fleming,Peter Fleming,5-8,5,8,0,1,Completed,true,false,false
+AP020132,21 Feb 15,13,Long Beach,Dendy Park 2,No. 3,Alan Shaw,John Riley,John Riley,7-9,7,9,0,1,Completed,true,false,false
+AP020132,21 Feb 15,13,Long Beach,Dendy Park 2,No. 4,Daryl Milligan,Bill Craig,Bill Craig,0-8,0,8,0,1,Completed,true,false,false
+AP020133,21 Feb 15,13,Monash University,Maccabi,No. 1,Ken Kennedy,Daniel Henquin,Daniel Henquin,5-8,5,8,0,1,Completed,true,false,false
+AP020133,21 Feb 15,13,Monash University,Maccabi,No. 2,Stanley Yeoh,Zvi Schweitzer,Zvi Schweitzer,5-8,5,8,0,1,Completed,true,false,false
+AP020133,21 Feb 15,13,Monash University,Maccabi,No. 3,Shangkai Wang,Joey Pat,Joey Pat,0-8,0,8,0,1,Completed,true,false,false
+AP020133,21 Feb 15,13,Monash University,Maccabi,No. 4,Ryan Sambell,Adam Blumberg,Ryan Sambell,8-1,8,1,1,0,Completed,true,false,false
+AP020134,21 Feb 15,13,Hurlingham Park,Dendy Park 1,No. 1,Marcus English,Harrison King,Marcus English,8-3,8,3,1,0,Completed,true,false,false
+AP020134,21 Feb 15,13,Hurlingham Park,Dendy Park 1,No. 2,Hosie Gall,Lubing Liu,Hosie Gall,8-4,8,4,1,0,Completed,true,false,false
+AP020134,21 Feb 15,13,Hurlingham Park,Dendy Park 1,No. 3,Steffen Raab,Dimitri Oxenenko,Steffen Raab,8-0,8,0,1,0,Completed,true,false,false
+AP020134,21 Feb 15,13,Hurlingham Park,Dendy Park 1,No. 4,Christian Ruessel,Richard Artis,Christian Ruessel,8-2,8,2,1,0,Completed,true,false,false
+AP020141,28 Feb 15,14,St Pats Mentone,Long Beach,No. 1,David Lawry,Marcelo Grosso,Marcelo Grosso,4-8,4,8,0,1,Completed,true,false,false
+AP020141,28 Feb 15,14,St Pats Mentone,Long Beach,No. 2,Nick Hall,Alex Demiri,Alex Demiri,4-8,4,8,0,1,Completed,true,false,false
+AP020141,28 Feb 15,14,St Pats Mentone,Long Beach,No. 3,Mike De Silva,Ned Milligan,Mike De Silva,8-5,8,5,1,0,Completed,true,false,false
+AP020141,28 Feb 15,14,St Pats Mentone,Long Beach,No. 4,Ben Costa,Alan Shaw,Alan Shaw,6-8,6,8,0,1,Completed,true,false,false
+AP020142,28 Feb 15,14,Dendy Park 2,Lauriston,No. 1,Ian Wilkinson,Greg Cabai,Greg Cabai,7-9,7,9,0,1,Completed,true,false,false
+AP020142,28 Feb 15,14,Dendy Park 2,Lauriston,No. 2,Peter Fleming,Igor Vorsovski,Igor Vorsovski,5-8,5,8,0,1,Completed,true,false,false
+AP020142,28 Feb 15,14,Dendy Park 2,Lauriston,No. 3,Anthony Murray,Brandon Aprile,Anthony Murray,8-0,8,0,1,0,Completed,true,false,false
+AP020142,28 Feb 15,14,Dendy Park 2,Lauriston,No. 4,John Riley,Scott Newton,John Riley,8-4,8,4,1,0,Completed,true,false,false
+AP020143,28 Feb 15,14,Monash University,Hurlingham Park,No. 1,Minh Hoa Vuong,Marcus English,Marcus English,7-9,7,9,0,1,Completed,true,false,false
+AP020143,28 Feb 15,14,Monash University,Hurlingham Park,No. 2,Stanley Yeoh,Hosie Gall,Hosie Gall,3-8,3,8,0,1,Completed,true,false,false
+AP020143,28 Feb 15,14,Monash University,Hurlingham Park,No. 3,James Carmichael,Christian Ruessel,Christian Ruessel,2-8,2,8,0,1,Completed,true,false,false
+AP020143,28 Feb 15,14,Monash University,Hurlingham Park,No. 4,Ryan Sambell,Michael Luo,Ryan Sambell,8-6,8,6,1,0,Completed,true,false,false
+AP020144,28 Feb 15,14,Dendy Park 1,Maccabi,No. 1,Harrison King,Errol Dorfan,Errol Dorfan,6-8,6,8,0,1,Completed,true,false,false
+AP020144,28 Feb 15,14,Dendy Park 1,Maccabi,No. 2,Lubing Liu,Zvi Schweitzer,Zvi Schweitzer,5-8,5,8,0,1,Completed,true,false,false
+AP020144,28 Feb 15,14,Dendy Park 1,Maccabi,No. 3,Martin Moore,Joey Pat,Joey Pat,2-8,2,8,0,1,Completed,true,false,false
+AP020144,28 Feb 15,14,Dendy Park 1,Maccabi,No. 4,Richard Artis,Ron Schweitzer,Ron Schweitzer,5-8,5,8,0,1,Completed,true,false,false
+AP020301,,16,Dendy Park 2,Maccabi,No. 1,Ian Wilkinson,Errol Dorfan,Ian Wilkinson,8-2,8,2,1,0,Completed,true,false,false
+AP020301,,16,Dendy Park 2,Maccabi,No. 2,Bruce Watkins,Daniel Henquin,Daniel Henquin,8-9,8,9,0,1,Completed,true,false,false
+AP020301,,16,Dendy Park 2,Maccabi,No. 3,Peter Fleming,Zvi Schweitzer,Zvi Schweitzer,8-9,8,9,0,1,Completed,true,false,false
+AP020301,,16,Dendy Park 2,Maccabi,No. 4,Anthony Murray,Joey Pat,Joey Pat,7-9,7,9,0,1,Completed,true,false,false
+AP020302,,16,Hurlingham Park,St Pats Mentone,No. 1,Marcus English,David Lawry,David Lawry,3-8,3,8,0,1,Completed,true,false,false
+AP020302,,16,Hurlingham Park,St Pats Mentone,No. 2,Hosie Gall,Sam Clayton,Hosie Gall,8-3,8,3,1,0,Completed,true,false,false
+AP020302,,16,Hurlingham Park,St Pats Mentone,No. 3,Steffen Raab,Nick Hall,Steffen Raab,8-4,8,4,1,0,Completed,true,false,false
+AP020302,,16,Hurlingham Park,St Pats Mentone,No. 4,Nathan Flynn,Mike De Silva,Nathan Flynn,8-6,8,6,1,0,Completed,true,false,false
+AP020311,,16,Maccabi,Hurlingham Park,No. 1,Errol Dorfan,Marcus English,Marcus English,2-8,2,8,0,1,Completed,true,false,false
+AP020311,,16,Maccabi,Hurlingham Park,No. 2,Daniel Henquin,Hosie Gall,Hosie Gall,4-8,4,8,0,1,Completed,true,false,false
+AP020311,,16,Maccabi,Hurlingham Park,No. 3,Zvi Schweitzer,Christian Ruessel,Christian Ruessel,2-8,2,8,0,1,Completed,true,false,false
+AP020311,,16,Maccabi,Hurlingham Park,No. 4,Joey Pat,Nathan Flynn,Joey Pat,8-5,8,5,1,0,Completed,true,false,false
+AP020321,,17,Dendy Park 2,Hurlingham Park,No. 1,Ian Wilkinson,Marcus English,Marcus English,1-8,1,8,0,1,Completed,true,false,false
+AP020321,,17,Dendy Park 2,Hurlingham Park,No. 2,Bruce Watkins,Hosie Gall,Bruce Watkins,8-4,8,4,1,0,Completed,true,false,false
+AP020321,,17,Dendy Park 2,Hurlingham Park,No. 3,Peter Fleming,Steffen Raab,Peter Fleming,9-8,9,8,1,0,Completed,true,false,false
+AP020321,,17,Dendy Park 2,Hurlingham Park,No. 4,Anthony Murray,Nathan Flynn,Anthony Murray,8-4,8,4,1,0,Completed,true,false,false

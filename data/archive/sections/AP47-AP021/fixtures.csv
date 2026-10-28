@@ -1,0 +1,60 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP021011,07 Oct 23,1,regular,Round 1,Fitzroy,St Louis de Mont,1,7,3,6,,,36,48,Completed,
+AP021012,07 Oct 23,1,regular,Round 1,Port Melbourne,Legend Park,0,8,0,8,,,12,48,Completed,
+AP021013,07 Oct 23,1,regular,Round 1,Hawthorn,Ormond,7,1,6,3,,,45,30,Completed,
+AP021014,07 Oct 23,1,regular,Round 1,Overport Park,Chadstone,7,1,7,3,,,59,43,Completed,
+AP021021,14 Oct 23,2,regular,Round 2,Chadstone,Fitzroy,7,1,6,2,,,39,20,Completed,
+AP021022,14 Oct 23,2,regular,Round 2,St Louis de Mont,Port Melbourne,7,1,6,4,,,54,47,Completed,
+AP021023,14 Oct 23,2,regular,Round 2,Legend Park,Hawthorn,8,0,8,0,,,48,2,Completed,
+AP021024,14 Oct 23,2,regular,Round 2,Ormond,Overport Park,0,8,0,8,,,10,49,Completed,
+AP021031,21 Oct 23,3,regular,Round 3,Fitzroy,Ormond,0,8,0,8,,,7,48,Completed,
+AP021032,21 Oct 23,3,regular,Round 3,Port Melbourne,Chadstone,8,0,8,1,,,50,29,Completed,
+AP021033,21 Oct 23,3,regular,Round 3,Hawthorn,St Louis de Mont,1,7,2,6,,,25,44,Completed,
+AP021034,21 Oct 23,3,regular,Round 3,Overport Park,Legend Park,1,7,2,6,,,29,43,Completed,
+AP021041,28 Oct 23,4,regular,Round 4,Legend Park,Fitzroy,1,7,3,6,,,31,43,Completed,
+AP021042,28 Oct 23,4,regular,Round 4,Ormond,Port Melbourne,0,8,0,8,,,17,48,Completed,
+AP021043,28 Oct 23,4,regular,Round 4,Chadstone,Hawthorn,6,2,5,4,,,43,33,Completed,
+AP021044,28 Oct 23,4,regular,Round 4,St Louis de Mont,Overport Park,8,0,8,0,,,49,25,Completed,
+AP021051,11 Nov 23,5,regular,Round 5,Hawthorn,Overport Park,1,7,3,6,,,27,42,Completed,
+AP021054,11 Nov 23,5,regular,Round 5,Fitzroy,Port Melbourne,6,2,5,4,,,49,41,Completed,
+pending-ap021-r5-chadstone-ormond,11 Nov 23,5,regular,Round 5,Chadstone,Ormond,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+pending-ap021-r5-legend-park-st-louis-de-mont,11 Nov 23,5,regular,Round 5,Legend Park,St Louis de Mont,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+AP021061,18 Nov 23,6,regular,Round 6,Port Melbourne,Hawthorn,8,0,8,0,,,48,10,Completed,
+AP021063,18 Nov 23,6,regular,Round 6,Ormond,Legend Park,0,8,0,8,,,12,49,Completed,
+AP021064,18 Nov 23,6,regular,Round 6,St Louis de Mont,Chadstone,7,1,6,2,,,41,18,Completed,
+pending-ap021-r6-overport-park-fitzroy,18 Nov 23,6,regular,Round 6,Overport Park,Fitzroy,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP021071,25 Nov 23,7,regular,Round 7,Fitzroy,Hawthorn,7,1,6,2,,,44,26,Completed,
+AP021072,25 Nov 23,7,regular,Round 7,Port Melbourne,Overport Park,7,1,6,5,,,61,61,Completed,
+AP021073,25 Nov 23,7,regular,Round 7,Chadstone,Legend Park,2,6,4,6,,,32,56,Completed,
+AP021074,25 Nov 23,7,regular,Round 7,Ormond,St Louis de Mont,0,8,0,8,,,7,48,Completed,
+pending-ap021-r8-chadstone-overport-park,02 Dec 23,8,regular,Round 8,Chadstone,Overport Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap021-r8-legend-park-port-melbourne,02 Dec 23,8,regular,Round 8,Legend Park,Port Melbourne,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap021-r8-ormond-hawthorn,02 Dec 23,8,regular,Round 8,Ormond,Hawthorn,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap021-r8-st-louis-de-mont-fitzroy,02 Dec 23,8,regular,Round 8,St Louis de Mont,Fitzroy,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap021-r9-fitzroy-chadstone,09 Dec 23,9,regular,Round 9,Fitzroy,Chadstone,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap021-r9-hawthorn-legend-park,09 Dec 23,9,regular,Round 9,Hawthorn,Legend Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap021-r9-overport-park-ormond,09 Dec 23,9,regular,Round 9,Overport Park,Ormond,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap021-r9-port-melbourne-st-louis-de-mont,09 Dec 23,9,regular,Round 9,Port Melbourne,St Louis de Mont,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP021102,16 Dec 23,10,regular,Round 10,Chadstone,Port Melbourne,2,6,4,4,,,28,33,Completed,
+AP021103,16 Dec 23,10,regular,Round 10,St Louis de Mont,Hawthorn,6,2,5,4,,,41,29,Completed,
+AP021104,16 Dec 23,10,regular,Round 10,Legend Park,Overport Park,8,0,8,0,,,48,18,Completed,
+pending-ap021-r10-ormond-fitzroy,16 Dec 23,10,regular,Round 10,Ormond,Fitzroy,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP021111,03 Feb 24,11,regular,Round 11,Fitzroy,Legend Park,8,0,8,0,,,50,15,Completed,
+AP021112,03 Feb 24,11,regular,Round 11,Port Melbourne,Ormond,8,0,8,0,,,49,14,Completed,
+AP021113,03 Feb 24,11,regular,Round 11,Hawthorn,Chadstone,0,8,0,8,,,9,48,Completed,
+AP021114,03 Feb 24,11,regular,Round 11,Overport Park,St Louis de Mont,0,8,0,8,,,21,50,Completed,
+AP021121,10 Feb 24,12,regular,Round 12,Overport Park,Hawthorn,8,0,8,0,,,48,12,Completed,
+AP021122,10 Feb 24,12,regular,Round 12,Ormond,Chadstone,1,7,2,6,,,24,47,Completed,
+AP021123,10 Feb 24,12,regular,Round 12,St Louis de Mont,Legend Park,7,1,7,3,,,52,35,Completed,
+AP021124,10 Feb 24,12,regular,Round 12,Port Melbourne,Fitzroy,2,6,4,6,,,40,55,Completed,
+AP021131,17 Feb 24,13,regular,Round 13,Hawthorn,Port Melbourne,0,8,1,8,,,17,52,Completed,
+AP021132,17 Feb 24,13,regular,Round 13,Fitzroy,Overport Park,6,2,6,5,,,58,50,Completed,
+AP021133,17 Feb 24,13,regular,Round 13,Legend Park,Ormond,8,0,8,0,,,48,6,Completed,
+AP021134,17 Feb 24,13,regular,Round 13,Chadstone,St Louis de Mont,1,7,3,6,,,37,47,Completed,
+AP021141,24 Feb 24,14,regular,Round 14,Hawthorn,Fitzroy,0,8,0,8,,,4,48,Completed,
+AP021142,24 Feb 24,14,regular,Round 14,Overport Park,Port Melbourne,7,1,6,2,,,44,17,Completed,
+AP021143,24 Feb 24,14,regular,Round 14,Legend Park,Chadstone,7,1,6,2,,,46,19,Completed,
+AP021144,24 Feb 24,14,regular,Round 14,St Louis de Mont,Ormond,8,0,8,0,,,48,5,Completed,
+AP021301,,16,semi_final,Semi-final,St Louis de Mont,Fitzroy,7,1,6,2,,,42,20,Completed,
+AP021302,,16,semi_final,Semi-final,Legend Park,Port Melbourne,7,1,6,3,,,49,36,Completed,
+AP021321,,17,grand_final,Grand final · TROLS entry 2,St Louis de Mont,Legend Park,7,1,6,4,,,46,44,Completed,

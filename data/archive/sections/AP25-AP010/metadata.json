@@ -1,0 +1,92 @@
+{
+  "asset_id": "AP25-AP010",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Winter 2012",
+  "season_id": "AP25",
+  "season_label": "Winter 2012",
+  "source_section_code": "AP010",
+  "section_label": "Open S/D 1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Lauriston",
+      "wins": 10,
+      "points": 77,
+      "percentage": 133.88,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "Highmoor Uniting A",
+      "wins": 10,
+      "points": 71.5,
+      "percentage": 117.43,
+      "marker": "P"
+    },
+    {
+      "position": 3,
+      "team": "Highmoor Uniting B",
+      "wins": 7,
+      "points": 55.5,
+      "percentage": 112.2,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Hawthorn",
+      "wins": 8,
+      "points": 55.5,
+      "percentage": 107.85,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Le Page",
+      "wins": 5,
+      "points": 43.5,
+      "percentage": 104.99,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Carmelite",
+      "wins": 0,
+      "points": 12,
+      "percentage": 43.84,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 3,
+    "singlesBestOf": 3,
+    "setTarget": 6,
+    "doublesSlots": 3,
+    "doublesBestOf": 1,
+    "doublesTarget": 10,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP25-AP010",
+  "fixtures": 47,
+  "completed_fixtures": 44,
+  "draw_fixtures": 57,
+  "singles_rubbers": 69,
+  "doubles_rubbers": 68,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP010121 singles No. 2: '1-2'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP010121 singles No. 3: '6-7 5-5'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP010123 singles No. 1: '6-2 2-0'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP010153 doubles No. 3: '2-1'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

@@ -1,0 +1,113 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP013011,08 Oct 16,1,Port Melbourne,East Malvern,No. 1,Roslyn Cooper,Carolyn Bell-Harper,Roslyn Cooper,8-1,8,1,1,0,Completed,true,false,false
+AP013011,08 Oct 16,1,Port Melbourne,East Malvern,No. 2,Jeanette Marston,Joanne Bell-Harper,Jeanette Marston,8-5,8,5,1,0,Completed,true,false,false
+AP013011,08 Oct 16,1,Port Melbourne,East Malvern,No. 3,Fiona Burns,Isabell Bytheway,Fiona Burns,8-3,8,3,1,0,Completed,true,false,false
+AP013011,08 Oct 16,1,Port Melbourne,East Malvern,No. 4,Edwina McKay,Stephanie Douries,Edwina McKay,8-0,8,0,1,0,Completed,true,false,false
+AP013013,08 Oct 16,1,Albert Reserve,Ormond,No. 1,Suwanit Downing,Louise Van Breda,Suwanit Downing,8-6,8,6,1,0,Completed,true,false,false
+AP013013,08 Oct 16,1,Albert Reserve,Ormond,No. 2,Margaret Peto,Emily Henwood,Margaret Peto,8-0,8,0,1,0,Completed,true,false,false
+AP013013,08 Oct 16,1,Albert Reserve,Ormond,No. 3,Steph Clarke,Mikaela Sharman-Smith,Steph Clarke,8-4,8,4,1,0,Completed,true,false,false
+AP013013,08 Oct 16,1,Albert Reserve,Ormond,No. 4,Sze Chu,Melissa Cogdon,Sze Chu,8-1,8,1,1,0,Completed,true,false,false
+AP013021,15 Oct 16,2,Ormond,Port Melbourne,No. 1,Louise Van Breda,Sheree Gordon,Sheree Gordon,5-8,5,8,0,1,Completed,true,false,false
+AP013021,15 Oct 16,2,Ormond,Port Melbourne,No. 2,Demeke Durant,Jeanette Marston,Jeanette Marston,1-8,1,8,0,1,Completed,true,false,false
+AP013021,15 Oct 16,2,Ormond,Port Melbourne,No. 3,Mikaela Sharman-Smith,Marie Walters,Marie Walters,4-8,4,8,0,1,Completed,true,false,false
+AP013021,15 Oct 16,2,Ormond,Port Melbourne,No. 4,Jacqueline Rusnak,Maika Climpson,Maika Climpson,3-8,3,8,0,1,Completed,true,false,false
+AP013022,15 Oct 16,2,Maccabi,Albert Reserve,No. 1,Lauren Yarrow,Dana Visescu,Lauren Yarrow,8-1,8,1,1,0,Completed,true,false,true
+AP013022,15 Oct 16,2,Maccabi,Albert Reserve,No. 2,Yael Gigi,Suwanit Downing,Yael Gigi,8-5,8,5,1,0,Completed,true,false,false
+AP013022,15 Oct 16,2,Maccabi,Albert Reserve,No. 3,Gabi Bergman,Margaret Peto,Margaret Peto,2-8,2,8,0,1,Completed,true,false,false
+AP013022,15 Oct 16,2,Maccabi,Albert Reserve,No. 4,Sara Nagar,Kat Smith,Kat Smith,3-8,3,8,0,1,Completed,true,false,false
+AP013041,05 Nov 16,4,Maccabi,Port Melbourne,No. 1,Lauren Yarrow,Roslyn Cooper,Lauren Yarrow,8-6,8,6,1,0,Completed,true,false,false
+AP013041,05 Nov 16,4,Maccabi,Port Melbourne,No. 2,Jennifer Eisfelder,Jeanette Marston,Jeanette Marston,2-8,2,8,0,1,Completed,true,false,false
+AP013041,05 Nov 16,4,Maccabi,Port Melbourne,No. 3,Teegan Slomoi,Fiona Burns,Teegan Slomoi,8-6,8,6,1,0,Completed,true,false,false
+AP013041,05 Nov 16,4,Maccabi,Port Melbourne,No. 4,Anat Vernik,Edwina McKay,Edwina McKay,7-9,7,9,0,1,Completed,true,false,false
+AP013042,05 Nov 16,4,East Malvern,Ormond,No. 1,Carolyn Bell-Harper,Louise Van Breda,Carolyn Bell-Harper,8-1,8,1,1,0,Completed,true,false,false
+AP013042,05 Nov 16,4,East Malvern,Ormond,No. 2,Joanne Bell-Harper,Demeke Durant,Joanne Bell-Harper,8-0,8,0,1,0,Completed,true,false,false
+AP013042,05 Nov 16,4,East Malvern,Ormond,No. 3,Brittany Croagh,Emily Henwood,Brittany Croagh,8-6,8,6,1,0,Completed,true,false,false
+AP013042,05 Nov 16,4,East Malvern,Ormond,No. 4,Stephanie Douries,Melissa Cogdon,Melissa Cogdon,4-8,4,8,0,1,Completed,true,false,false
+AP013051,12 Nov 16,5,Port Melbourne,Albert Reserve,No. 1,Roslyn Cooper,Dana Visescu,Roslyn Cooper,8-2,8,2,1,0,Completed,true,false,false
+AP013051,12 Nov 16,5,Port Melbourne,Albert Reserve,No. 2,Jeanette Marston,Suwanit Downing,Jeanette Marston,8-5,8,5,1,0,Completed,true,false,false
+AP013051,12 Nov 16,5,Port Melbourne,Albert Reserve,No. 3,Marie Walters,Margaret Peto,Marie Walters,8-6,8,6,1,0,Completed,true,false,false
+AP013051,12 Nov 16,5,Port Melbourne,Albert Reserve,No. 4,Maika Climpson,Kat Smith,Maika Climpson,8-4,8,4,1,0,Completed,true,false,false
+AP013052,12 Nov 16,5,Maccabi,East Malvern,No. 1,Lauren Yarrow,Carolyn Bell-Harper,Lauren Yarrow,8-1,8,1,1,0,Completed,true,false,false
+AP013052,12 Nov 16,5,Maccabi,East Malvern,No. 2,Yael Gigi,Isabell Bytheway,Yael Gigi,8-0,8,0,1,0,Completed,true,false,false
+AP013052,12 Nov 16,5,Maccabi,East Malvern,No. 3,Gabi Bergman,Brittany Croagh,Brittany Croagh,3-8,3,8,0,1,Completed,true,false,false
+AP013052,12 Nov 16,5,Maccabi,East Malvern,No. 4,Sara Nagar,Steph Davies,Sara Nagar,8-0,8,0,1,0,Completed,true,false,false
+AP013061,19 Nov 16,6,East Malvern,Port Melbourne,No. 1,Carolyn Bell-Harper,Sheree Gordon,Carolyn Bell-Harper,8-4,8,4,1,0,Completed,true,false,false
+AP013061,19 Nov 16,6,East Malvern,Port Melbourne,No. 2,Joanne Bell-Harper,Fiona Burns,Joanne Bell-Harper,8-4,8,4,1,0,Completed,true,false,false
+AP013061,19 Nov 16,6,East Malvern,Port Melbourne,No. 3,Isabell Bytheway,Maika Climpson,Maika Climpson,5-8,5,8,0,1,Completed,true,false,false
+AP013061,19 Nov 16,6,East Malvern,Port Melbourne,No. 4,Brittany Croagh,Susan Geraghty,Brittany Croagh,8-0,8,0,1,0,Completed,true,false,false
+AP013063,19 Nov 16,6,Ormond,Albert Reserve,No. 1,Louise Van Breda,Dana Visescu,Dana Visescu,6-8,6,8,0,1,Completed,true,false,false
+AP013063,19 Nov 16,6,Ormond,Albert Reserve,No. 2,Demeke Durant,Suwanit Downing,Suwanit Downing,3-8,3,8,0,1,Completed,true,false,false
+AP013063,19 Nov 16,6,Ormond,Albert Reserve,No. 3,Mikaela Sharman-Smith,Kat Smith,Kat Smith,2-8,2,8,0,1,Completed,true,false,false
+AP013063,19 Nov 16,6,Ormond,Albert Reserve,No. 4,Jacqueline Rusnak,Nathalie Erceg,Nathalie Erceg,1-8,1,8,0,1,Completed,true,false,false
+AP013072,26 Nov 16,7,Albert Reserve,Maccabi,No. 1,Dana Visescu,Lauren Yarrow,Lauren Yarrow,4-8,4,8,0,1,Completed,true,false,false
+AP013072,26 Nov 16,7,Albert Reserve,Maccabi,No. 2,Suwanit Downing,Yael Gigi,Yael Gigi,2-8,2,8,0,1,Completed,true,false,false
+AP013072,26 Nov 16,7,Albert Reserve,Maccabi,No. 3,Margaret Peto,Gabi Bergman,Margaret Peto,8-4,8,4,1,0,Completed,true,false,false
+AP013072,26 Nov 16,7,Albert Reserve,Maccabi,No. 4,Kat Smith,Anat Vernik,Kat Smith,8-4,8,4,1,0,Completed,true,false,false
+AP013082,03 Dec 16,8,East Malvern,Albert Reserve,No. 1,Carolyn Bell-Harper,Dana Visescu,Dana Visescu,3-8,3,8,0,1,Completed,true,false,false
+AP013082,03 Dec 16,8,East Malvern,Albert Reserve,No. 2,Joanne Bell-Harper,Suwanit Downing,Joanne Bell-Harper,8-3,8,3,1,0,Completed,true,false,false
+AP013082,03 Dec 16,8,East Malvern,Albert Reserve,No. 3,Jeanne Tie,Kat Smith,Jeanne Tie,8-6,8,6,1,0,Completed,true,false,false
+AP013082,03 Dec 16,8,East Malvern,Albert Reserve,No. 4,Brittany Croagh,Nathalie Erceg,Nathalie Erceg,3-8,3,8,0,1,Completed,true,false,false
+AP013083,03 Dec 16,8,Maccabi,Ormond,No. 1,Lauren Yarrow,Emily Henwood,Lauren Yarrow,8-0,8,0,1,0,Completed,true,false,false
+AP013083,03 Dec 16,8,Maccabi,Ormond,No. 2,Yael Gigi,Edith Kaminsky,Yael Gigi,8-0,8,0,1,0,Completed,true,false,false
+AP013083,03 Dec 16,8,Maccabi,Ormond,No. 3,Jennifer Eisfelder,Maggie Shannon,Jennifer Eisfelder,8-6,8,6,1,0,Completed,true,false,false
+AP013083,03 Dec 16,8,Maccabi,Ormond,No. 4,Gabi Bergman,Melissa Cogdon,Gabi Bergman,8-1,8,1,1,0,Completed,true,false,false
+AP013091,10 Dec 16,9,Port Melbourne,Maccabi,No. 1,Sheree Gordon,Yael Gigi,Yael Gigi,2-8,2,8,0,1,Completed,true,false,false
+AP013091,10 Dec 16,9,Port Melbourne,Maccabi,No. 2,Jeanette Marston,Gabi Bergman,Jeanette Marston,8-2,8,2,1,0,Completed,true,false,false
+AP013091,10 Dec 16,9,Port Melbourne,Maccabi,No. 3,Marie Walters,Sara Nagar,Marie Walters,8-5,8,5,1,0,Completed,true,false,false
+AP013091,10 Dec 16,9,Port Melbourne,Maccabi,No. 4,Edwina McKay,Anat Vernik,Edwina McKay,8-1,8,1,1,0,Completed,true,false,false
+AP013092,10 Dec 16,9,Ormond,East Malvern,No. 1,Demeke Durant,Carolyn Bell-Harper,Carolyn Bell-Harper,3-8,3,8,0,1,Completed,true,false,false
+AP013092,10 Dec 16,9,Ormond,East Malvern,No. 2,Mikaela Sharman-Smith,Joanne Bell-Harper,Joanne Bell-Harper,1-8,1,8,0,1,Completed,true,false,false
+AP013092,10 Dec 16,9,Ormond,East Malvern,No. 3,Melissa Cogdon,Brittany Croagh,Brittany Croagh,2-8,2,8,0,1,Completed,true,false,false
+AP013092,10 Dec 16,9,Ormond,East Malvern,No. 4,Kirsty McKinnon,Steph Davies,Steph Davies,0-8,0,8,0,1,Completed,true,false,false
+AP013101,17 Dec 16,10,Albert Reserve,Port Melbourne,No. 1,Dana Visescu,Sheree Gordon,Sheree Gordon,6-8,6,8,0,1,Completed,true,false,false
+AP013101,17 Dec 16,10,Albert Reserve,Port Melbourne,No. 2,Margaret Peto,Roslyn Cooper,Roslyn Cooper,2-8,2,8,0,1,Completed,true,false,false
+AP013101,17 Dec 16,10,Albert Reserve,Port Melbourne,No. 3,Kat Smith,Jeanette Marston,Jeanette Marston,1-8,1,8,0,1,Completed,true,false,false
+AP013101,17 Dec 16,10,Albert Reserve,Port Melbourne,No. 4,Steph Clarke,Fiona Burns,Fiona Burns,2-8,2,8,0,1,Completed,true,false,false
+AP013102,17 Dec 16,10,East Malvern,Maccabi,No. 1,Carolyn Bell-Harper,Yael Gigi,Yael Gigi,3-8,3,8,0,1,Completed,true,false,false
+AP013102,17 Dec 16,10,East Malvern,Maccabi,No. 2,Joanne Bell-Harper,Jennifer Eisfelder,Joanne Bell-Harper,8-2,8,2,1,0,Completed,true,false,false
+AP013102,17 Dec 16,10,East Malvern,Maccabi,No. 3,Brittany Croagh,Gabi Bergman,Brittany Croagh,8-1,8,1,1,0,Completed,true,false,false
+AP013102,17 Dec 16,10,East Malvern,Maccabi,No. 4,Steph Davies,Stella Fischbein,Stella Fischbein,0-8,0,8,0,1,Completed,true,false,false
+AP013111,04 Feb 17,11,Port Melbourne,East Malvern,No. 1,Roslyn Cooper,Carolyn Bell-Harper,Roslyn Cooper,8-4,8,4,1,0,Completed,true,false,false
+AP013111,04 Feb 17,11,Port Melbourne,East Malvern,No. 2,Marie Walters,Joanne Bell-Harper,Joanne Bell-Harper,6-8,6,8,0,1,Completed,true,false,false
+AP013111,04 Feb 17,11,Port Melbourne,East Malvern,No. 3,Edwina McKay,Isabell Bytheway,Isabell Bytheway,6-8,6,8,0,1,Completed,true,false,false
+AP013111,04 Feb 17,11,Port Melbourne,East Malvern,No. 4,Maika Climpson,Brittany Croagh,Maika Climpson,8-1,8,1,1,0,Completed,true,false,false
+AP013121,11 Feb 17,12,Ormond,Port Melbourne,No. 1,Louise Van Breda,Sheree Gordon,Sheree Gordon,3-8,3,8,0,1,Completed,true,false,false
+AP013121,11 Feb 17,12,Ormond,Port Melbourne,No. 2,Melissa Cogdon,Maika Climpson,Maika Climpson,1-8,1,8,0,1,Completed,true,false,false
+AP013121,11 Feb 17,12,Ormond,Port Melbourne,No. 3,Maggie Shannon,Edwina McKay,Maggie Shannon,8-0,8,0,1,0,Completed,true,false,false
+AP013121,11 Feb 17,12,Ormond,Port Melbourne,No. 4,Debbie Kennedy,Susan Geraghty,Susan Geraghty,2-8,2,8,0,1,Completed,true,false,false
+AP013122,11 Feb 17,12,Maccabi,Albert Reserve,No. 1,Lauren Yarrow,Dana Visescu,Lauren Yarrow,8-5,8,5,1,0,Completed,true,false,false
+AP013122,11 Feb 17,12,Maccabi,Albert Reserve,No. 2,Yael Gigi,Suwanit Downing,Yael Gigi,8-0,8,0,1,0,Completed,true,false,false
+AP013122,11 Feb 17,12,Maccabi,Albert Reserve,No. 3,Gabi Bergman,Margaret Peto,Margaret Peto,2-8,2,8,0,1,Completed,true,false,false
+AP013122,11 Feb 17,12,Maccabi,Albert Reserve,No. 4,Anat Vernik,Kat Smith,Kat Smith,0-8,0,8,0,1,Completed,true,false,false
+AP013132,18 Feb 17,13,Albert Reserve,East Malvern,No. 1,Dana Visescu,Carolyn Bell-Harper,Dana Visescu,8-6,8,6,1,0,Completed,true,false,false
+AP013132,18 Feb 17,13,Albert Reserve,East Malvern,No. 2,Suwanit Downing,Joanne Bell-Harper,Joanne Bell-Harper,5-8,5,8,0,1,Completed,true,false,false
+AP013132,18 Feb 17,13,Albert Reserve,East Malvern,No. 3,Margaret Peto,Isabell Bytheway,Margaret Peto,8-5,8,5,1,0,Completed,true,false,false
+AP013132,18 Feb 17,13,Albert Reserve,East Malvern,No. 4,Steph Clarke,Brittany Croagh,Steph Clarke,8-3,8,3,1,0,Completed,true,false,false
+AP013133,18 Feb 17,13,Ormond,Maccabi,No. 1,Melissa Cogdon,Yael Gigi,Yael Gigi,1-8,1,8,0,1,Completed,true,false,false
+AP013133,18 Feb 17,13,Ormond,Maccabi,No. 2,Mikaela Sharman-Smith,Teegan Slomoi,Teegan Slomoi,0-8,0,8,0,1,Completed,true,false,false
+AP013133,18 Feb 17,13,Ormond,Maccabi,No. 3,Debbie Kennedy,Gabi Bergman,Gabi Bergman,1-8,1,8,0,1,Completed,true,false,false
+AP013133,18 Feb 17,13,Ormond,Maccabi,No. 4,Maggie Shannon,Maytar Givoni,Maggie Shannon,8-1,8,1,1,0,Completed,true,false,false
+AP013141,25 Feb 17,14,Maccabi,Port Melbourne,No. 1,Lauren Yarrow,Sheree Gordon,Lauren Yarrow,8-1,8,1,1,0,Completed,true,false,false
+AP013141,25 Feb 17,14,Maccabi,Port Melbourne,No. 2,Gabi Bergman,Roslyn Cooper,Roslyn Cooper,0-8,0,8,0,1,Completed,true,false,false
+AP013141,25 Feb 17,14,Maccabi,Port Melbourne,No. 3,Sara Nagar,Jeanette Marston,Jeanette Marston,2-8,2,8,0,1,Completed,true,false,false
+AP013141,25 Feb 17,14,Maccabi,Port Melbourne,No. 4,Anat Vernik,Edwina McKay,Edwina McKay,4-8,4,8,0,1,Completed,true,false,false
+AP013142,25 Feb 17,14,East Malvern,Ormond,No. 1,Joanne Bell-Harper,Louise Van Breda,Joanne Bell-Harper,8-3,8,3,1,0,Completed,true,false,false
+AP013142,25 Feb 17,14,East Malvern,Ormond,No. 2,Isabell Bytheway,Demeke Durant,Isabell Bytheway,8-6,8,6,1,0,Completed,true,false,false
+AP013142,25 Feb 17,14,East Malvern,Ormond,No. 3,Brittany Croagh,Melissa Cogdon,Brittany Croagh,9-8,9,8,1,0,Completed,true,false,false
+AP013142,25 Feb 17,14,East Malvern,Ormond,No. 4,Steph Davies,Emily Lawson,Emily Lawson,5-8,5,8,0,1,Completed,true,false,false
+AP013151,04 Mar 17,15,Port Melbourne,Albert Reserve,No. 1,Sheree Gordon,Suwanit Downing,Sheree Gordon,8-5,8,5,1,0,Completed,true,false,false
+AP013151,04 Mar 17,15,Port Melbourne,Albert Reserve,No. 2,Jeanette Marston,Margaret Peto,Jeanette Marston,8-2,8,2,1,0,Completed,true,false,false
+AP013151,04 Mar 17,15,Port Melbourne,Albert Reserve,No. 3,Edwina McKay,Kat Smith,Kat Smith,3-8,3,8,0,1,Completed,true,false,false
+AP013151,04 Mar 17,15,Port Melbourne,Albert Reserve,No. 4,Maika Climpson,Steph Clarke,Maika Climpson,8-6,8,6,1,0,Completed,true,false,false
+AP013152,04 Mar 17,15,Maccabi,East Malvern,No. 1,Lauren Yarrow,Carolyn Bell-Harper,Lauren Yarrow,8-3,8,3,1,0,Completed,true,false,false
+AP013152,04 Mar 17,15,Maccabi,East Malvern,No. 2,Yael Gigi,Joanne Bell-Harper,Yael Gigi,8-1,8,1,1,0,Completed,true,false,false
+AP013152,04 Mar 17,15,Maccabi,East Malvern,No. 3,Teegan Slomoi,Isabell Bytheway,Teegan Slomoi,9-7,9,7,1,0,Completed,true,false,false
+AP013152,04 Mar 17,15,Maccabi,East Malvern,No. 4,Gabi Bergman,Steph Davies,Gabi Bergman,8-3,8,3,1,0,Completed,true,false,false
+AP013311,04 Mar 17,15,Albert Reserve,Maccabi,No. 1,Dana Visescu,Lauren Yarrow,Lauren Yarrow,1-8,1,8,0,1,Completed,true,false,false
+AP013311,04 Mar 17,15,Albert Reserve,Maccabi,No. 2,Suwanit Downing,Yael Gigi,Yael Gigi,0-8,0,8,0,1,Completed,true,false,false
+AP013311,04 Mar 17,15,Albert Reserve,Maccabi,No. 3,Margaret Peto,Jennifer Eisfelder,Jennifer Eisfelder,8-9,8,9,0,1,Completed,true,false,false
+AP013311,04 Mar 17,15,Albert Reserve,Maccabi,No. 4,Kat Smith,Gabi Bergman,Kat Smith,8-3,8,3,1,0,Completed,true,false,false
+AP013321,,16,Port Melbourne,Maccabi,No. 1,Sheree Gordon,Lauren Yarrow,Sheree Gordon,8-4,8,4,1,0,Completed,true,false,false
+AP013321,,16,Port Melbourne,Maccabi,No. 2,Roslyn Cooper,Yael Gigi,Yael Gigi,4-8,4,8,0,1,Completed,true,false,false
+AP013321,,16,Port Melbourne,Maccabi,No. 3,Jeanette Marston,Jennifer Eisfelder,Jeanette Marston,8-1,8,1,1,0,Completed,true,false,false
+AP013321,,16,Port Melbourne,Maccabi,No. 4,Fiona Burns,Sara Nagar,Fiona Burns,8-1,8,1,1,0,Completed,true,false,false

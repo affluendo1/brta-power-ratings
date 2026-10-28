@@ -1,0 +1,48 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP002011,08 Oct 11,1,regular,Round 1,Victory Park,Le Page,7,1,6,3,,,49,40,Completed,
+AP002013,08 Oct 11,1,regular,Round 1,Kings Park 2,Hampton,1,7,3,6,,,28,46,Completed,
+pending-ap002-r1-bye-kings-park-1,08 Oct 11,1,regular,Round 1,Bye,Kings Park 1,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP002021,15 Oct 11,2,regular,Round 2,Hampton,Victory Park,1,7,3,6,,,33,46,Completed,
+AP002022,15 Oct 11,2,regular,Round 2,Kings Park 1,Kings Park 2,6,2,5,4,,,42,40,Completed,
+pending-ap002-r2-le-page-bye,15 Oct 11,2,regular,Round 2,Le Page,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP002032,22 Oct 11,3,regular,Round 3,Kings Park 2,Le Page,2,6,4,5,,,38,43,Completed,
+AP002033,22 Oct 11,3,regular,Round 3,Hampton,Kings Park 1,6,2,5,4,,,38,33,Completed,
+pending-ap002-r3-victory-park-bye,22 Oct 11,3,regular,Round 3,Victory Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP002041,05 Nov 11,4,regular,Round 4,Kings Park 1,Victory Park,1,7,2,6,,,31,46,Completed,
+AP002042,05 Nov 11,4,regular,Round 4,Le Page,Hampton,1,7,3,6,,,37,44,Completed,
+pending-ap002-r4-bye-kings-park-2,05 Nov 11,4,regular,Round 4,Bye,Kings Park 2,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP002051,12 Nov 11,5,regular,Round 5,Victory Park,Kings Park 2,7,1,7,3,,,59,40,Completed,
+AP002052,12 Nov 11,5,regular,Round 5,Kings Park 1,Le Page,7,1,6,2,,,48,27,Completed,
+pending-ap002-r5-hampton-bye,12 Nov 11,5,regular,Round 5,Hampton,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap002-r6-hampton-kings-park-2,19 Nov 11,6,regular,Round 6,Hampton,Kings Park 2,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap002-r6-kings-park-1-bye,19 Nov 11,6,regular,Round 6,Kings Park 1,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap002-r6-le-page-victory-park,19 Nov 11,6,regular,Round 6,Le Page,Victory Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap002-r7-bye-le-page,26 Nov 11,7,regular,Round 7,Bye,Le Page,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap002-r7-kings-park-2-kings-park-1,26 Nov 11,7,regular,Round 7,Kings Park 2,Kings Park 1,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap002-r7-victory-park-hampton,26 Nov 11,7,regular,Round 7,Victory Park,Hampton,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP002082,03 Dec 11,8,regular,Round 8,Le Page,Kings Park 2,7,1,6,3,,,39,34,Completed,
+AP002083,03 Dec 11,8,regular,Round 8,Kings Park 1,Hampton,2,6,4,6,,,45,59,Completed,
+pending-ap002-r8-bye-victory-park,03 Dec 11,8,regular,Round 8,Bye,Victory Park,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP002091,10 Dec 11,9,regular,Round 9,Victory Park,Kings Park 1,2,6,4,5,,,35,41,Completed,
+AP002092,10 Dec 11,9,regular,Round 9,Hampton,Le Page,8,0,8,2,,,62,50,Completed,
+pending-ap002-r9-kings-park-2-bye,10 Dec 11,9,regular,Round 9,Kings Park 2,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP002101,17 Dec 11,10,regular,Round 10,Kings Park 2,Victory Park,1,7,2,7,,,33,54,Completed,
+AP002102,17 Dec 11,10,regular,Round 10,Le Page,Kings Park 1,1,7,3,7,,,42,54,Completed,
+pending-ap002-r10-bye-hampton,17 Dec 11,10,regular,Round 10,Bye,Hampton,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP002111,04 Feb 12,11,regular,Round 11,Victory Park,Le Page,8,0,8,0,,,50,25,Completed,
+AP002113,04 Feb 12,11,regular,Round 11,Kings Park 2,Hampton,0,8,0,8,,,13,48,Completed,
+pending-ap002-r11-bye-kings-park-1,04 Feb 12,11,regular,Round 11,Bye,Kings Park 1,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP002121,11 Feb 12,12,regular,Round 12,Hampton,Victory Park,6,2,5,4,,,44,40,Completed,
+AP002122,11 Feb 12,12,regular,Round 12,Kings Park 1,Kings Park 2,7,1,6,3,,,49,35,Completed,
+pending-ap002-r12-le-page-bye,11 Feb 12,12,regular,Round 12,Le Page,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP002132,18 Feb 12,13,regular,Round 13,Kings Park 2,Le Page,7,1,7,3,,,57,43,Completed,
+AP002133,18 Feb 12,13,regular,Round 13,Hampton,Kings Park 1,0,8,0,8,,,29,51,Completed,
+pending-ap002-r13-victory-park-bye,18 Feb 12,13,regular,Round 13,Victory Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP002141,25 Feb 12,14,regular,Round 14,Kings Park 1,Victory Park,4,4,0,0,,,0,0,Completed,
+pending-ap002-r14-bye-kings-park-2,25 Feb 12,14,regular,Round 14,Bye,Kings Park 2,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap002-r14-le-page-hampton,25 Feb 12,14,regular,Round 14,Le Page,Hampton,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP002151,03 Mar 12,15,regular,Round 15,Victory Park,Kings Park 2,4,4,0,0,,,0,0,Completed,
+AP002311,03 Mar 12,15,regular,Round 15,Hampton,Kings Park 1,1,7,3,6,,,28,40,Completed,
+pending-ap002-r15-hampton-bye,03 Mar 12,15,regular,Round 15,Hampton,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap002-r15-kings-park-1-le-page,03 Mar 12,15,regular,Round 15,Kings Park 1,Le Page,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP002321,,16,grand_final,Grand final · TROLS entry 2,Victory Park,Kings Park 1,7,1,6,3,,,43,34,Completed,

@@ -1,0 +1,217 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP014011,05 Oct 13,1,Mt Eliza,Fitzroy,No. 1,Nick Wilson,Callum Metcher,Callum Metcher,3-8,3,8,0,1,Completed,true,false,false
+AP014011,05 Oct 13,1,Mt Eliza,Fitzroy,No. 2,Brennin Bollmann,Rob Conkie,Rob Conkie,2-8,2,8,0,1,Completed,true,false,false
+AP014011,05 Oct 13,1,Mt Eliza,Fitzroy,No. 3,Tom Shepherd,Mark Healey,Tom Shepherd,9-8,9,8,1,0,Completed,true,false,false
+AP014011,05 Oct 13,1,Mt Eliza,Fitzroy,No. 4,Monty Coller,John Ratten,Monty Coller,8-3,8,3,1,0,Completed,true,false,false
+AP014012,05 Oct 13,1,Caulfield Rec,Dendy Park 1,No. 1,Matt Walsh,Nick Jeffery,Nick Jeffery,7-9,7,9,0,1,Completed,true,false,false
+AP014012,05 Oct 13,1,Caulfield Rec,Dendy Park 1,No. 2,Alex Bulmaga,Garion Rowe,Garion Rowe,3-8,3,8,0,1,Completed,true,false,false
+AP014012,05 Oct 13,1,Caulfield Rec,Dendy Park 1,No. 3,Vlad Gisca,Brenton Kos,Brenton Kos,0-8,0,8,0,1,Completed,true,false,false
+AP014012,05 Oct 13,1,Caulfield Rec,Dendy Park 1,No. 4,Gary Slapar,Marco Bragagnolo,Marco Bragagnolo,3-8,3,8,0,1,Completed,true,false,false
+AP014013,05 Oct 13,1,Glen Iris Valley,Dendy Park 2,No. 1,Blake Robertson,Dean Ellis,Blake Robertson,8-2,8,2,1,0,Completed,true,false,false
+AP014013,05 Oct 13,1,Glen Iris Valley,Dendy Park 2,No. 2,David Littlewood,Michael Kos,David Littlewood,8-4,8,4,1,0,Completed,true,false,false
+AP014013,05 Oct 13,1,Glen Iris Valley,Dendy Park 2,No. 3,Murray Burchett,Brett Carter,Murray Burchett,8-2,8,2,1,0,Completed,true,false,false
+AP014013,05 Oct 13,1,Glen Iris Valley,Dendy Park 2,No. 4,Oliver Kitchingman,Tim O'Shannassy,Oliver Kitchingman,8-3,8,3,1,0,Completed,true,false,false
+AP014014,05 Oct 13,1,Kooyong,Old Scotch,No. 1,Mars Njoo,Joey McKenna,Mars Njoo,8-6,8,6,1,0,Completed,true,false,false
+AP014014,05 Oct 13,1,Kooyong,Old Scotch,No. 2,Bryce Mitchelson,Mike Dance,Mike Dance,5-8,5,8,0,1,Completed,true,false,false
+AP014014,05 Oct 13,1,Kooyong,Old Scotch,No. 3,Ron Gerendasi,Oliver Hay,Oliver Hay,0-8,0,8,0,1,Completed,true,false,false
+AP014014,05 Oct 13,1,Kooyong,Old Scotch,No. 4,Brent Vermalis,Chris Hay,Brent Vermalis,8-1,8,1,1,0,Completed,true,false,false
+AP014021,12 Oct 13,2,Old Scotch,Mt Eliza,No. 1,Joey McKenna,Hamish McLeod,Hamish McLeod,3-8,3,8,0,1,Completed,true,false,false
+AP014021,12 Oct 13,2,Old Scotch,Mt Eliza,No. 2,Mike Dance,Nick Wilson,Nick Wilson,8-9,8,9,0,1,Completed,true,false,false
+AP014021,12 Oct 13,2,Old Scotch,Mt Eliza,No. 3,Oliver Hay,Sam Al Sadie,Oliver Hay,9-8,9,8,1,0,Completed,true,false,false
+AP014021,12 Oct 13,2,Old Scotch,Mt Eliza,No. 4,Chris Hay,Brennin Bollmann,Brennin Bollmann,2-8,2,8,0,1,Completed,true,false,false
+AP014022,12 Oct 13,2,Fitzroy,Caulfield Rec,No. 1,Peter Geha,Nikolai Storch,Nikolai Storch,2-8,2,8,0,1,Completed,true,false,false
+AP014022,12 Oct 13,2,Fitzroy,Caulfield Rec,No. 2,Mark Healey,Matt Walsh,Mark Healey,8-5,8,5,1,0,Completed,true,false,false
+AP014022,12 Oct 13,2,Fitzroy,Caulfield Rec,No. 3,John Ratten,Jason Cummingham,John Ratten,8-5,8,5,1,0,Completed,true,false,false
+AP014022,12 Oct 13,2,Fitzroy,Caulfield Rec,No. 4,Daniel Potenza,Vlad Gisca,Vlad Gisca,5-8,5,8,0,1,Completed,true,false,false
+AP014023,12 Oct 13,2,Dendy Park 1,Glen Iris Valley,No. 1,Nick Jeffery,Blake Robertson,Nick Jeffery,8-6,8,6,1,0,Completed,true,false,false
+AP014023,12 Oct 13,2,Dendy Park 1,Glen Iris Valley,No. 2,Garion Rowe,Murray Calder,Garion Rowe,9-7,9,7,1,0,Completed,true,false,false
+AP014023,12 Oct 13,2,Dendy Park 1,Glen Iris Valley,No. 3,Brenton Kos,Murray Burchett,Brenton Kos,8-2,8,2,1,0,Completed,true,false,false
+AP014023,12 Oct 13,2,Dendy Park 1,Glen Iris Valley,No. 4,Harrison King,Oliver Kitchingman,Oliver Kitchingman,1-8,1,8,0,1,Completed,true,false,false
+AP014024,12 Oct 13,2,Dendy Park 2,Kooyong,No. 1,Dean Ellis,Ben Bobos,Dean Ellis,8-5,8,5,1,0,Completed,true,false,false
+AP014024,12 Oct 13,2,Dendy Park 2,Kooyong,No. 2,Michael Kos,Bryce Mitchelson,Michael Kos,8-2,8,2,1,0,Completed,true,false,false
+AP014024,12 Oct 13,2,Dendy Park 2,Kooyong,No. 3,Tim O'Shannassy,Brent Vermalis,Brent Vermalis,6-8,6,8,0,1,Completed,true,false,false
+AP014024,12 Oct 13,2,Dendy Park 2,Kooyong,No. 4,Ken Dick,Eddie Trusgnach,Eddie Trusgnach,6-8,6,8,0,1,Completed,true,false,false
+AP014031,19 Oct 13,3,Mt Eliza,Dendy Park 2,No. 1,Nick Wilson,Dean Ellis,Dean Ellis,4-8,4,8,0,1,Completed,true,false,false
+AP014031,19 Oct 13,3,Mt Eliza,Dendy Park 2,No. 2,Sam Al Sadie,Michael Kos,Michael Kos,2-8,2,8,0,1,Completed,true,false,false
+AP014031,19 Oct 13,3,Mt Eliza,Dendy Park 2,No. 3,Brennin Bollmann,Brett Carter,Brett Carter,6-8,6,8,0,1,Completed,true,false,false
+AP014031,19 Oct 13,3,Mt Eliza,Dendy Park 2,No. 4,Tom Shepherd,Tim O'Shannassy,Tom Shepherd,9-8,9,8,1,0,Completed,true,false,false
+AP014032,19 Oct 13,3,Caulfield Rec,Old Scotch,No. 1,Nikolai Storch,Joey McKenna,Nikolai Storch,8-0,8,0,1,0,Completed,true,false,false
+AP014032,19 Oct 13,3,Caulfield Rec,Old Scotch,No. 2,Michael Hickey,Ed Nunn,Michael Hickey,8-0,8,0,1,0,Completed,true,false,false
+AP014032,19 Oct 13,3,Caulfield Rec,Old Scotch,No. 3,Vlad Gisca,Oliver Hay,Oliver Hay,4-8,4,8,0,1,Completed,true,false,false
+AP014032,19 Oct 13,3,Caulfield Rec,Old Scotch,No. 4,Gary Slapar,Andrew Clowes,Andrew Clowes,3-8,3,8,0,1,Completed,true,false,false
+AP014033,19 Oct 13,3,Glen Iris Valley,Fitzroy,No. 1,Sebastian Teoh,Callum Metcher,Sebastian Teoh,8-4,8,4,1,0,Completed,true,false,false
+AP014033,19 Oct 13,3,Glen Iris Valley,Fitzroy,No. 2,Joshua Davis,Dominic Napoleone,Dominic Napoleone,3-8,3,8,0,1,Completed,true,false,false
+AP014033,19 Oct 13,3,Glen Iris Valley,Fitzroy,No. 3,David Littlewood,Peter Geha,David Littlewood,8-5,8,5,1,0,Completed,true,false,false
+AP014033,19 Oct 13,3,Glen Iris Valley,Fitzroy,No. 4,Murray Burchett,John Ratten,Murray Burchett,8-3,8,3,1,0,Completed,true,false,false
+AP014034,19 Oct 13,3,Kooyong,Dendy Park 1,No. 1,Mars Njoo,Nick Jeffery,Nick Jeffery,0-8,0,8,0,1,Completed,true,false,false
+AP014034,19 Oct 13,3,Kooyong,Dendy Park 1,No. 2,Anthony Coxen,Garion Rowe,Anthony Coxen,9-8,9,8,1,0,Completed,true,false,false
+AP014034,19 Oct 13,3,Kooyong,Dendy Park 1,No. 3,Ron Gerendasi,Brenton Kos,Brenton Kos,2-8,2,8,0,1,Completed,true,false,false
+AP014034,19 Oct 13,3,Kooyong,Dendy Park 1,No. 4,Brent Vermalis,Stefan Woolley,Stefan Woolley,0-8,0,8,0,1,Completed,true,false,false
+AP014041,26 Oct 13,4,Dendy Park 1,Mt Eliza,No. 1,Nick Jeffery,Hamish McLeod,Hamish McLeod,2-8,2,8,0,1,Completed,true,false,false
+AP014041,26 Oct 13,4,Dendy Park 1,Mt Eliza,No. 2,Garion Rowe,Nick Wilson,Nick Wilson,4-8,4,8,0,1,Completed,true,false,false
+AP014041,26 Oct 13,4,Dendy Park 1,Mt Eliza,No. 3,Brenton Kos,Sam Al Sadie,Brenton Kos,8-2,8,2,1,0,Completed,true,false,false
+AP014041,26 Oct 13,4,Dendy Park 1,Mt Eliza,No. 4,Stefan Woolley,Thygan Tobich,Stefan Woolley,8-5,8,5,1,0,Completed,true,false,false
+AP014042,26 Oct 13,4,Dendy Park 2,Caulfield Rec,No. 1,Michael Kos,Michael Hickey,Michael Hickey,6-8,6,8,0,1,Completed,true,false,false
+AP014042,26 Oct 13,4,Dendy Park 2,Caulfield Rec,No. 2,Brett Carter,Matt Walsh,Brett Carter,8-3,8,3,1,0,Completed,true,false,false
+AP014042,26 Oct 13,4,Dendy Park 2,Caulfield Rec,No. 3,Tim O'Shannassy,Marcus Bulmaga,Marcus Bulmaga,2-8,2,8,0,1,Completed,true,false,false
+AP014042,26 Oct 13,4,Dendy Park 2,Caulfield Rec,No. 4,Michael Kiparoglou,Gary Slapar,Gary Slapar,5-8,5,8,0,1,Completed,true,false,false
+AP014043,26 Oct 13,4,Old Scotch,Glen Iris Valley,No. 1,Ed Nunn,Blake Robertson,Blake Robertson,6-8,6,8,0,1,Completed,true,false,false
+AP014043,26 Oct 13,4,Old Scotch,Glen Iris Valley,No. 2,Joey McKenna,Sebastian Teoh,Sebastian Teoh,4-8,4,8,0,1,Completed,true,false,false
+AP014043,26 Oct 13,4,Old Scotch,Glen Iris Valley,No. 3,Mike Dance,Joshua Davis,Joshua Davis,2-8,2,8,0,1,Completed,true,false,false
+AP014043,26 Oct 13,4,Old Scotch,Glen Iris Valley,No. 4,Oliver Hay,Oliver Kitchingman,Oliver Kitchingman,6-8,6,8,0,1,Completed,true,false,false
+AP014044,26 Oct 13,4,Fitzroy,Kooyong,No. 1,Callum Metcher,Ben Bobos,Callum Metcher,8-2,8,2,1,0,Completed,true,false,false
+AP014044,26 Oct 13,4,Fitzroy,Kooyong,No. 2,Gianfranco Natale,Song Lim,Song Lim,4-8,4,8,0,1,Completed,true,false,false
+AP014044,26 Oct 13,4,Fitzroy,Kooyong,No. 3,Rob Conkie,Bryce Mitchelson,Rob Conkie,8-0,8,0,1,0,Completed,true,false,false
+AP014044,26 Oct 13,4,Fitzroy,Kooyong,No. 4,Mark Healey,Ron Gerendasi,Mark Healey,8-6,8,6,1,0,Completed,true,false,false
+AP014051,09 Nov 13,5,Glen Iris Valley,Kooyong,No. 1,Blake Robertson,Mars Njoo,Blake Robertson,8-5,8,5,1,0,Completed,true,false,false
+AP014051,09 Nov 13,5,Glen Iris Valley,Kooyong,No. 2,David Littlewood,Anthony Coxen,David Littlewood,8-6,8,6,1,0,Completed,true,false,false
+AP014051,09 Nov 13,5,Glen Iris Valley,Kooyong,No. 3,Murray Calder,Bryce Mitchelson,Murray Calder,8-0,8,0,1,0,Completed,true,false,false
+AP014051,09 Nov 13,5,Glen Iris Valley,Kooyong,No. 4,Murray Burchett,Eddie Trusgnach,Murray Burchett,8-2,8,2,1,0,Completed,true,false,false
+AP014053,09 Nov 13,5,Dendy Park 1,Fitzroy,No. 1,Nick Jeffery,Callum Metcher,Nick Jeffery,8-3,8,3,1,0,Completed,true,false,false
+AP014053,09 Nov 13,5,Dendy Park 1,Fitzroy,No. 2,Garion Rowe,Etani Nakle,Etani Nakle,6-8,6,8,0,1,Completed,true,false,false
+AP014053,09 Nov 13,5,Dendy Park 1,Fitzroy,No. 3,Brenton Kos,Rob Conkie,Brenton Kos,8-5,8,5,1,0,Completed,true,false,false
+AP014053,09 Nov 13,5,Dendy Park 1,Fitzroy,No. 4,Stefan Woolley,Peter Geha,Stefan Woolley,8-6,8,6,1,0,Completed,true,false,false
+AP014054,09 Nov 13,5,Mt Eliza,Caulfield Rec,No. 1,Hamish McLeod,Michael Hickey,Hamish McLeod,8-2,8,2,1,0,Completed,true,false,false
+AP014054,09 Nov 13,5,Mt Eliza,Caulfield Rec,No. 2,Nick Wilson,Matt Walsh,Nick Wilson,8-3,8,3,1,0,Completed,true,false,false
+AP014054,09 Nov 13,5,Mt Eliza,Caulfield Rec,No. 3,Brennin Bollmann,Marcus Bulmaga,Marcus Bulmaga,3-8,3,8,0,1,Completed,true,false,false
+AP014054,09 Nov 13,5,Mt Eliza,Caulfield Rec,No. 4,Tom Shepherd,Shon Tai Le,Shon Tai Le,2-8,2,8,0,1,Completed,true,false,false
+AP014061,16 Nov 13,6,Caulfield Rec,Glen Iris Valley,No. 1,Michael Hickey,Sebastian Teoh,Sebastian Teoh,6-8,6,8,0,1,Completed,true,false,false
+AP014061,16 Nov 13,6,Caulfield Rec,Glen Iris Valley,No. 2,Matt Walsh,Joshua Davis,Matt Walsh,8-6,8,6,1,0,Completed,true,false,false
+AP014061,16 Nov 13,6,Caulfield Rec,Glen Iris Valley,No. 3,Marcus Bulmaga,David Littlewood,Marcus Bulmaga,8-6,8,6,1,0,Completed,true,false,false
+AP014061,16 Nov 13,6,Caulfield Rec,Glen Iris Valley,No. 4,Shon Tai Le,Oliver Kitchingman,Oliver Kitchingman,0-8,0,8,0,1,Completed,true,false,false
+AP014062,16 Nov 13,6,Kooyong,Mt Eliza,No. 1,Ben Bobos,Nick Wilson,Ben Bobos,8-2,8,2,1,0,Completed,true,false,false
+AP014062,16 Nov 13,6,Kooyong,Mt Eliza,No. 2,Song Lim,Tom Shepherd,Song Lim,8-3,8,3,1,0,Completed,true,false,false
+AP014062,16 Nov 13,6,Kooyong,Mt Eliza,No. 3,Ron Gerendasi,Thygan Tobich,Ron Gerendasi,8-0,8,0,1,0,Completed,true,false,false
+AP014062,16 Nov 13,6,Kooyong,Mt Eliza,No. 4,Brent Vermalis,Ben Curtis,Ben Curtis,7-9,7,9,0,1,Completed,true,false,false
+AP014063,16 Nov 13,6,Dendy Park 2,Dendy Park 1,No. 1,Dean Ellis,Nick Jeffery,Nick Jeffery,4-8,4,8,0,1,Completed,true,false,false
+AP014063,16 Nov 13,6,Dendy Park 2,Dendy Park 1,No. 2,Michael Kos,Garion Rowe,Michael Kos,8-3,8,3,1,0,Completed,true,false,false
+AP014063,16 Nov 13,6,Dendy Park 2,Dendy Park 1,No. 3,Brett Carter,Brenton Kos,Brenton Kos,4-8,4,8,0,1,Completed,true,false,false
+AP014063,16 Nov 13,6,Dendy Park 2,Dendy Park 1,No. 4,Tim O'Shannassy,Michael Kiparoglou,Tim O'Shannassy,8-0,8,0,1,0,Completed,true,false,false
+AP014064,16 Nov 13,6,Fitzroy,Old Scotch,No. 1,Gianfranco Natale,Ed Nunn,Ed Nunn,7-9,7,9,0,1,Completed,true,false,false
+AP014064,16 Nov 13,6,Fitzroy,Old Scotch,No. 2,Rob Conkie,Joey McKenna,Rob Conkie,8-2,8,2,1,0,Completed,true,false,false
+AP014064,16 Nov 13,6,Fitzroy,Old Scotch,No. 3,Peter Geha,Oliver Hay,Oliver Hay,7-9,7,9,0,1,Completed,true,false,false
+AP014064,16 Nov 13,6,Fitzroy,Old Scotch,No. 4,Mark Healey,Andrew Clowes,Andrew Clowes,4-8,4,8,0,1,Completed,true,false,false
+AP014071,23 Nov 13,7,Mt Eliza,Glen Iris Valley,No. 1,Hamish McLeod,Blake Robertson,Hamish McLeod,8-4,8,4,1,0,Completed,true,false,false
+AP014071,23 Nov 13,7,Mt Eliza,Glen Iris Valley,No. 2,Nick Wilson,Sebastian Teoh,Sebastian Teoh,6-8,6,8,0,1,Completed,true,false,false
+AP014071,23 Nov 13,7,Mt Eliza,Glen Iris Valley,No. 3,Sam Al Sadie,Murray Calder,Murray Calder,4-8,4,8,0,1,Completed,true,false,false
+AP014071,23 Nov 13,7,Mt Eliza,Glen Iris Valley,No. 4,Ben Curtis,Oliver Kitchingman,Oliver Kitchingman,8-9,8,9,0,1,Completed,true,false,false
+AP014072,23 Nov 13,7,Caulfield Rec,Kooyong,No. 1,Michael Hickey,Ben Bobos,Ben Bobos,3-8,3,8,0,1,Completed,true,false,false
+AP014072,23 Nov 13,7,Caulfield Rec,Kooyong,No. 2,Marcus Bulmaga,Song Lim,Marcus Bulmaga,8-2,8,2,1,0,Completed,true,false,false
+AP014072,23 Nov 13,7,Caulfield Rec,Kooyong,No. 3,Shon Tai Le,Bryce Mitchelson,Bryce Mitchelson,4-8,4,8,0,1,Completed,true,false,false
+AP014072,23 Nov 13,7,Caulfield Rec,Kooyong,No. 4,Gary Slapar,Ron Gerendasi,Ron Gerendasi,5-8,5,8,0,1,Completed,true,false,false
+AP014073,23 Nov 13,7,Old Scotch,Dendy Park 1,No. 1,Ed Nunn,Nick Jeffery,Ed Nunn,8-4,8,4,1,0,Completed,true,false,false
+AP014073,23 Nov 13,7,Old Scotch,Dendy Park 1,No. 2,Joey McKenna,Garion Rowe,Joey McKenna,8-4,8,4,1,0,Completed,true,false,false
+AP014073,23 Nov 13,7,Old Scotch,Dendy Park 1,No. 3,Oliver Hay,Brenton Kos,Oliver Hay,9-7,9,7,1,0,Completed,true,false,false
+AP014073,23 Nov 13,7,Old Scotch,Dendy Park 1,No. 4,Cam Mason,Stefan Woolley,Stefan Woolley,3-8,3,8,0,1,Completed,true,false,false
+AP014074,23 Nov 13,7,Dendy Park 2,Fitzroy,No. 1,Dean Ellis,Callum Metcher,Callum Metcher,7-9,7,9,0,1,Completed,true,false,false
+AP014074,23 Nov 13,7,Dendy Park 2,Fitzroy,No. 2,Brett Carter,Rob Conkie,Rob Conkie,2-8,2,8,0,1,Completed,true,false,false
+AP014074,23 Nov 13,7,Dendy Park 2,Fitzroy,No. 3,Tim O'Shannassy,Peter Geha,Tim O'Shannassy,8-0,8,0,1,0,Completed,true,false,false
+AP014074,23 Nov 13,7,Dendy Park 2,Fitzroy,No. 4,Bradley Perks,John Ratten,John Ratten,4-8,4,8,0,1,Completed,true,false,false
+AP014081,30 Nov 13,8,Fitzroy,Mt Eliza,No. 1,Callum Metcher,Nick Wilson,Callum Metcher,8-6,8,6,1,0,Completed,true,false,false
+AP014081,30 Nov 13,8,Fitzroy,Mt Eliza,No. 2,Rob Conkie,Sam Al Sadie,Rob Conkie,8-4,8,4,1,0,Completed,true,false,false
+AP014081,30 Nov 13,8,Fitzroy,Mt Eliza,No. 3,John Ratten,Brennin Bollmann,Brennin Bollmann,4-8,4,8,0,1,Completed,true,false,false
+AP014081,30 Nov 13,8,Fitzroy,Mt Eliza,No. 4,Paul Cuttler,Ben Curtis,Ben Curtis,2-8,2,8,0,1,Completed,true,false,false
+AP014082,30 Nov 13,8,Dendy Park 1,Caulfield Rec,No. 1,Nick Jeffery,Michael Martin,Nick Jeffery,8-4,8,4,1,0,Completed,true,false,false
+AP014082,30 Nov 13,8,Dendy Park 1,Caulfield Rec,No. 2,Garion Rowe,Michael Hickey,Garion Rowe,8-6,8,6,1,0,Completed,true,false,false
+AP014082,30 Nov 13,8,Dendy Park 1,Caulfield Rec,No. 3,Brenton Kos,Matt Walsh,Brenton Kos,8-2,8,2,1,0,Completed,true,false,false
+AP014082,30 Nov 13,8,Dendy Park 1,Caulfield Rec,No. 4,Stefan Woolley,Marcus Bulmaga,Stefan Woolley,8-6,8,6,1,0,Completed,true,false,false
+AP014083,30 Nov 13,8,Dendy Park 2,Glen Iris Valley,No. 1,Dean Ellis,Blake Robertson,Blake Robertson,2-8,2,8,0,1,Completed,true,false,false
+AP014083,30 Nov 13,8,Dendy Park 2,Glen Iris Valley,No. 2,Michael Kos,Matt Zwarts,Matt Zwarts,6-8,6,8,0,1,Completed,true,false,false
+AP014083,30 Nov 13,8,Dendy Park 2,Glen Iris Valley,No. 3,Brett Carter,Murray Calder,Brett Carter,8-5,8,5,1,0,Completed,true,false,false
+AP014083,30 Nov 13,8,Dendy Park 2,Glen Iris Valley,No. 4,Tim O'Shannassy,Oliver Kitchingman,Oliver Kitchingman,1-8,1,8,0,1,Completed,true,false,false
+AP014084,30 Nov 13,8,Old Scotch,Kooyong,No. 1,Ed Nunn,Mars Njoo,Ed Nunn,8-2,8,2,1,0,Completed,true,false,false
+AP014084,30 Nov 13,8,Old Scotch,Kooyong,No. 2,Joey McKenna,Bryce Mitchelson,Joey McKenna,8-3,8,3,1,0,Completed,true,false,false
+AP014084,30 Nov 13,8,Old Scotch,Kooyong,No. 3,Mike Dance,Ron Gerendasi,Mike Dance,9-8,9,8,1,0,Completed,true,false,false
+AP014084,30 Nov 13,8,Old Scotch,Kooyong,No. 4,Andrew Clowes,Eddie Trusgnach,Andrew Clowes,8-4,8,4,1,0,Completed,true,false,false
+AP014091,07 Dec 13,9,Mt Eliza,Old Scotch,No. 1,Nick Wilson,Ed Nunn,Ed Nunn,8-9,8,9,0,1,Completed,true,false,false
+AP014091,07 Dec 13,9,Mt Eliza,Old Scotch,No. 2,Brennin Bollmann,Joey McKenna,Joey McKenna,6-8,6,8,0,1,Completed,true,false,false
+AP014091,07 Dec 13,9,Mt Eliza,Old Scotch,No. 3,Tom Shepherd,Oliver Hay,Oliver Hay,3-8,3,8,0,1,Completed,true,false,false
+AP014091,07 Dec 13,9,Mt Eliza,Old Scotch,No. 4,Monty Coller,Andrew Clowes,Andrew Clowes,2-8,2,8,0,1,Completed,true,false,false
+AP014092,07 Dec 13,9,Caulfield Rec,Fitzroy,No. 1,Michael Hickey,Callum Metcher,Callum Metcher,7-9,7,9,0,1,Completed,true,false,false
+AP014092,07 Dec 13,9,Caulfield Rec,Fitzroy,No. 2,Marcus Bulmaga,Rob Conkie,Rob Conkie,4-8,4,8,0,1,Completed,true,false,false
+AP014092,07 Dec 13,9,Caulfield Rec,Fitzroy,No. 3,Vlad Gisca,Mark Healey,Vlad Gisca,8-3,8,3,1,0,Completed,true,false,false
+AP014092,07 Dec 13,9,Caulfield Rec,Fitzroy,No. 4,Gary Slapar,John Ratten,Gary Slapar,8-3,8,3,1,0,Completed,true,false,false
+AP014093,07 Dec 13,9,Glen Iris Valley,Dendy Park 1,No. 1,Blake Robertson,Nick Jeffery,Blake Robertson,8-3,8,3,1,0,Completed,true,false,false
+AP014093,07 Dec 13,9,Glen Iris Valley,Dendy Park 1,No. 2,Sebastian Teoh,Brenton Kos,Sebastian Teoh,8-4,8,4,1,0,Completed,true,false,false
+AP014093,07 Dec 13,9,Glen Iris Valley,Dendy Park 1,No. 3,Joshua Davis,Stefan Woolley,Stefan Woolley,4-8,4,8,0,1,Completed,true,false,false
+AP014093,07 Dec 13,9,Glen Iris Valley,Dendy Park 1,No. 4,Murray Burchett,Bruce Watkins,Murray Burchett,8-2,8,2,1,0,Completed,true,false,false
+AP014094,07 Dec 13,9,Kooyong,Dendy Park 2,No. 1,Mars Njoo,Dean Ellis,Dean Ellis,4-8,4,8,0,1,Completed,true,false,false
+AP014094,07 Dec 13,9,Kooyong,Dendy Park 2,No. 2,Song Lim,Michael Kos,Michael Kos,1-8,1,8,0,1,Completed,true,false,false
+AP014094,07 Dec 13,9,Kooyong,Dendy Park 2,No. 3,Brent Vermalis,Tim O'Shannassy,Tim O'Shannassy,4-8,4,8,0,1,Completed,true,false,false
+AP014094,07 Dec 13,9,Kooyong,Dendy Park 2,No. 4,Peter Solin,Yania Alekkae,Peter Solin,8-0,8,0,1,0,Completed,true,false,false
+AP014102,14 Dec 13,10,Old Scotch,Caulfield Rec,No. 1,Ed Nunn,Michael Hickey,Ed Nunn,8-3,8,3,1,0,Completed,true,false,false
+AP014102,14 Dec 13,10,Old Scotch,Caulfield Rec,No. 2,Oliver Hay,Matt Walsh,Oliver Hay,8-2,8,2,1,0,Completed,true,false,false
+AP014102,14 Dec 13,10,Old Scotch,Caulfield Rec,No. 3,Ron Lim,Marcus Bulmaga,Marcus Bulmaga,0-8,0,8,0,1,Completed,true,false,false
+AP014102,14 Dec 13,10,Old Scotch,Caulfield Rec,No. 4,Chris Hay,Vlad Gisca,Vlad Gisca,3-8,3,8,0,1,Completed,true,false,false
+AP014103,14 Dec 13,10,Fitzroy,Glen Iris Valley,No. 1,Callum Metcher,Blake Robertson,Blake Robertson,2-8,2,8,0,1,Completed,true,false,false
+AP014103,14 Dec 13,10,Fitzroy,Glen Iris Valley,No. 2,Gianfranco Natale,David Littlewood,David Littlewood,1-8,1,8,0,1,Completed,true,false,false
+AP014103,14 Dec 13,10,Fitzroy,Glen Iris Valley,No. 3,Mark Healey,Murray Burchett,Murray Burchett,1-8,1,8,0,1,Completed,true,false,false
+AP014103,14 Dec 13,10,Fitzroy,Glen Iris Valley,No. 4,John Ratten,Oliver Kitchingman,Oliver Kitchingman,1-8,1,8,0,1,Completed,true,false,false
+AP014104,14 Dec 13,10,Dendy Park 1,Kooyong,No. 1,Nick Jeffery,Ben Bobos,Nick Jeffery,8-2,8,2,1,0,Completed,true,false,false
+AP014104,14 Dec 13,10,Dendy Park 1,Kooyong,No. 2,Garion Rowe,Song Lim,Song Lim,5-8,5,8,0,1,Completed,true,false,false
+AP014104,14 Dec 13,10,Dendy Park 1,Kooyong,No. 3,Brenton Kos,Anthony Coxen,Brenton Kos,8-3,8,3,1,0,Completed,true,false,false
+AP014104,14 Dec 13,10,Dendy Park 1,Kooyong,No. 4,Stefan Woolley,Bryce Mitchelson,Stefan Woolley,8-4,8,4,1,0,Completed,true,false,false
+AP014111,01 Feb 14,11,Mt Eliza,Dendy Park 1,No. 1,Hamish McLeod,Nick Jeffery,Nick Jeffery,5-8,5,8,0,1,Completed,true,false,false
+AP014111,01 Feb 14,11,Mt Eliza,Dendy Park 1,No. 2,Nick Wilson,Garion Rowe,Nick Wilson,8-2,8,2,1,0,Completed,true,false,false
+AP014111,01 Feb 14,11,Mt Eliza,Dendy Park 1,No. 3,Sam Al Sadie,Brenton Kos,Sam Al Sadie,8-6,8,6,1,0,Completed,true,false,false
+AP014111,01 Feb 14,11,Mt Eliza,Dendy Park 1,No. 4,Tom Shepherd,Stefan Woolley,Stefan Woolley,3-8,3,8,0,1,Completed,true,false,false
+AP014112,01 Feb 14,11,Caulfield Rec,Dendy Park 2,No. 1,Michael Hickey,Dean Ellis,Michael Hickey,8-6,8,6,1,0,Completed,true,false,false
+AP014112,01 Feb 14,11,Caulfield Rec,Dendy Park 2,No. 2,Marcus Bulmaga,Michael Kos,Michael Kos,3-8,3,8,0,1,Completed,true,false,false
+AP014112,01 Feb 14,11,Caulfield Rec,Dendy Park 2,No. 3,Vlad Gisca,Brett Carter,Brett Carter,4-8,4,8,0,1,Completed,true,false,false
+AP014112,01 Feb 14,11,Caulfield Rec,Dendy Park 2,No. 4,Gary Slapar,Tim O'Shannassy,Tim O'Shannassy,4-8,4,8,0,1,Completed,true,false,false
+AP014113,01 Feb 14,11,Glen Iris Valley,Old Scotch,No. 1,Blake Robertson,Ed Nunn,Blake Robertson,8-0,8,0,1,0,Completed,true,false,false
+AP014113,01 Feb 14,11,Glen Iris Valley,Old Scotch,No. 2,Sebastian Teoh,Joey McKenna,Sebastian Teoh,8-4,8,4,1,0,Completed,true,false,false
+AP014113,01 Feb 14,11,Glen Iris Valley,Old Scotch,No. 3,Murray Calder,Oliver Hay,Murray Calder,8-1,8,1,1,0,Completed,true,false,false
+AP014113,01 Feb 14,11,Glen Iris Valley,Old Scotch,No. 4,Murray Burchett,Andrew Clowes,Murray Burchett,8-2,8,2,1,0,Completed,true,false,false
+AP014114,01 Feb 14,11,Kooyong,Fitzroy,No. 1,Song Lim,Rob Conkie,Rob Conkie,6-8,6,8,0,1,Completed,true,false,false
+AP014114,01 Feb 14,11,Kooyong,Fitzroy,No. 2,Bryce Mitchelson,Peter Geha,Bryce Mitchelson,8-2,8,2,1,0,Completed,true,false,false
+AP014114,01 Feb 14,11,Kooyong,Fitzroy,No. 3,Ron Gerendasi,Mark Healey,Ron Gerendasi,8-1,8,1,1,0,Completed,true,false,false
+AP014114,01 Feb 14,11,Kooyong,Fitzroy,No. 4,Eddie Trusgnach,John Ratten,Eddie Trusgnach,8-0,8,0,1,0,Completed,true,false,false
+AP014124,08 Feb 14,12,Caulfield Rec,Mt Eliza,No. 1,Michael Hickey,Nick Wilson,Michael Hickey,8-3,8,3,1,0,Completed,true,false,false
+AP014124,08 Feb 14,12,Caulfield Rec,Mt Eliza,No. 2,Marcus Bulmaga,Sam Al Sadie,Marcus Bulmaga,8-5,8,5,1,0,Completed,true,false,false
+AP014124,08 Feb 14,12,Caulfield Rec,Mt Eliza,No. 3,Vlad Gisca,Brennin Bollmann,Brennin Bollmann,5-8,5,8,0,1,Completed,true,false,false
+AP014124,08 Feb 14,12,Caulfield Rec,Mt Eliza,No. 4,Gary Slapar,Zain Al Sadie,Gary Slapar,8-0,8,0,1,0,Completed,true,false,false
+AP014131,15 Feb 14,13,Glen Iris Valley,Caulfield Rec,No. 1,Blake Robertson,[Unnamed emergency — TROLS AP014131 away code 1],Blake Robertson,8-2,8,2,1,0,Completed,false,false,true
+AP014131,15 Feb 14,13,Glen Iris Valley,Caulfield Rec,No. 2,Sebastian Teoh,Matt Walsh,Sebastian Teoh,8-0,8,0,1,0,Completed,true,false,false
+AP014131,15 Feb 14,13,Glen Iris Valley,Caulfield Rec,No. 3,David Littlewood,Marcus Bulmaga,Marcus Bulmaga,5-8,5,8,0,1,Completed,true,false,false
+AP014131,15 Feb 14,13,Glen Iris Valley,Caulfield Rec,No. 4,Oliver Kitchingman,Vlad Gisca,Oliver Kitchingman,8-2,8,2,1,0,Completed,true,false,false
+AP014132,15 Feb 14,13,Mt Eliza,Kooyong,No. 1,Nick Wilson,Ben Bobos,Ben Bobos,3-8,3,8,0,1,Completed,true,false,false
+AP014132,15 Feb 14,13,Mt Eliza,Kooyong,No. 2,Brennin Bollmann,Song Lim,Song Lim,7-9,7,9,0,1,Completed,true,false,false
+AP014132,15 Feb 14,13,Mt Eliza,Kooyong,No. 3,Tom Shepherd,Bryce Mitchelson,Bryce Mitchelson,0-8,0,8,0,1,Completed,true,false,false
+AP014132,15 Feb 14,13,Mt Eliza,Kooyong,No. 4,Monty Coller,Eddie Trusgnach,Eddie Trusgnach,2-8,2,8,0,1,Completed,true,false,false
+AP014133,15 Feb 14,13,Dendy Park 1,Dendy Park 2,No. 1,Nick Jeffery,Dean Ellis,Nick Jeffery,8-4,8,4,1,0,Completed,true,false,false
+AP014133,15 Feb 14,13,Dendy Park 1,Dendy Park 2,No. 2,Garion Rowe,Michael Kos,Michael Kos,0-8,0,8,0,1,Completed,true,false,false
+AP014133,15 Feb 14,13,Dendy Park 1,Dendy Park 2,No. 3,Brenton Kos,Brett Carter,Brenton Kos,8-2,8,2,1,0,Completed,true,false,false
+AP014133,15 Feb 14,13,Dendy Park 1,Dendy Park 2,No. 4,Stefan Woolley,Tim O'Shannassy,Stefan Woolley,8-3,8,3,1,0,Completed,true,false,false
+AP014134,15 Feb 14,13,Old Scotch,Fitzroy,No. 1,Ed Nunn,Callum Metcher,Ed Nunn,8-6,8,6,1,0,Completed,true,false,false
+AP014134,15 Feb 14,13,Old Scotch,Fitzroy,No. 2,Joey McKenna,Dominic Napoleone,Dominic Napoleone,8-9,8,9,0,1,Completed,true,false,false
+AP014134,15 Feb 14,13,Old Scotch,Fitzroy,No. 3,Mike Dance,Rob Conkie,Rob Conkie,7-9,7,9,0,1,Completed,true,false,false
+AP014134,15 Feb 14,13,Old Scotch,Fitzroy,No. 4,Chris Hay,John Ratten,Chris Hay,8-3,8,3,1,0,Completed,true,false,false
+AP014141,22 Feb 14,14,Glen Iris Valley,Mt Eliza,No. 1,Blake Robertson,Nick Wilson,Blake Robertson,8-4,8,4,1,0,Completed,true,false,false
+AP014141,22 Feb 14,14,Glen Iris Valley,Mt Eliza,No. 2,Sebastian Teoh,Sam Al Sadie,Sebastian Teoh,8-4,8,4,1,0,Completed,true,false,false
+AP014141,22 Feb 14,14,Glen Iris Valley,Mt Eliza,No. 3,Murray Burchett,Brennin Bollmann,Murray Burchett,8-0,8,0,1,0,Completed,true,false,false
+AP014141,22 Feb 14,14,Glen Iris Valley,Mt Eliza,No. 4,Oliver Kitchingman,Tom Shepherd,Oliver Kitchingman,8-2,8,2,1,0,Completed,true,false,false
+AP014142,22 Feb 14,14,Kooyong,Caulfield Rec,No. 1,Ben Bobos,Michael Hickey,Ben Bobos,8-4,8,4,1,0,Completed,true,false,false
+AP014142,22 Feb 14,14,Kooyong,Caulfield Rec,No. 2,Bryce Mitchelson,Matt Walsh,Matt Walsh,4-8,4,8,0,1,Completed,true,false,false
+AP014142,22 Feb 14,14,Kooyong,Caulfield Rec,No. 3,Ron Gerendasi,Vlad Gisca,Vlad Gisca,2-8,2,8,0,1,Completed,true,false,false
+AP014142,22 Feb 14,14,Kooyong,Caulfield Rec,No. 4,Brent Vermalis,Gary Slapar,Gary Slapar,3-8,3,8,0,1,Completed,true,false,false
+AP014144,22 Feb 14,14,Fitzroy,Dendy Park 2,No. 1,Callum Metcher,Dean Ellis,Dean Ellis,3-8,3,8,0,1,Completed,true,false,false
+AP014144,22 Feb 14,14,Fitzroy,Dendy Park 2,No. 2,Dominic Napoleone,Michael Kiparoglou,Michael Kiparoglou,3-8,3,8,0,1,Completed,true,false,false
+AP014144,22 Feb 14,14,Fitzroy,Dendy Park 2,No. 3,Peter Geha,Brett Carter,Peter Geha,8-0,8,0,1,0,Completed,true,false,false
+AP014144,22 Feb 14,14,Fitzroy,Dendy Park 2,No. 4,John Ratten,Tim O'Shannassy,Tim O'Shannassy,2-8,2,8,0,1,Completed,true,false,false
+AP014301,,16,Glen Iris Valley,Dendy Park 1,No. 1,Blake Robertson,Nick Jeffery,Blake Robertson,8-3,8,3,1,0,Completed,true,false,false
+AP014301,,16,Glen Iris Valley,Dendy Park 1,No. 2,Sebastian Teoh,Garion Rowe,Sebastian Teoh,8-1,8,1,1,0,Completed,true,false,false
+AP014301,,16,Glen Iris Valley,Dendy Park 1,No. 3,David Littlewood,Brenton Kos,David Littlewood,8-5,8,5,1,0,Completed,true,false,false
+AP014301,,16,Glen Iris Valley,Dendy Park 1,No. 4,Oliver Kitchingman,Stefan Woolley,Stefan Woolley,6-8,6,8,0,1,Completed,true,false,false
+AP014302,,16,Old Scotch,Dendy Park 2,No. 1,Ed Nunn,Dean Ellis,Ed Nunn,8-4,8,4,1,0,Completed,true,false,false
+AP014302,,16,Old Scotch,Dendy Park 2,No. 2,Joey McKenna,Michael Kos,Michael Kos,2-8,2,8,0,1,Completed,true,false,false
+AP014302,,16,Old Scotch,Dendy Park 2,No. 3,Mike Dance,Tim O'Shannassy,Tim O'Shannassy,4-8,4,8,0,1,Completed,true,false,false
+AP014302,,16,Old Scotch,Dendy Park 2,No. 4,Oliver Hay,David Sist,David Sist,7-9,7,9,0,1,Completed,true,false,false
+AP014311,,16,Dendy Park 1,Dendy Park 2,No. 1,Nick Jeffery,Dean Ellis,Nick Jeffery,8-1,8,1,1,0,Completed,true,false,false
+AP014311,,16,Dendy Park 1,Dendy Park 2,No. 2,Garion Rowe,Michael Kos,Michael Kos,2-8,2,8,0,1,Completed,true,false,false
+AP014311,,16,Dendy Park 1,Dendy Park 2,No. 3,Brenton Kos,Tim O'Shannassy,Brenton Kos,8-3,8,3,1,0,Completed,true,false,false
+AP014311,,16,Dendy Park 1,Dendy Park 2,No. 4,Stefan Woolley,David Sist,David Sist,3-8,3,8,0,1,Completed,true,false,false
+AP014321,,17,Glen Iris Valley,Dendy Park 1,No. 1,Blake Robertson,Nick Jeffery,Blake Robertson,8-5,8,5,1,0,Completed,true,false,false
+AP014321,,17,Glen Iris Valley,Dendy Park 1,No. 2,Sebastian Teoh,Garion Rowe,Sebastian Teoh,8-3,8,3,1,0,Completed,true,true,false
+AP014321,,17,Glen Iris Valley,Dendy Park 1,No. 3,Murray Burchett,Brenton Kos,Brenton Kos,2-8,2,8,0,1,Completed,true,false,false
+AP014321,,17,Glen Iris Valley,Dendy Park 1,No. 4,Oliver Kitchingman,Stefan Woolley,Stefan Woolley,4-8,4,8,0,1,Completed,true,false,false

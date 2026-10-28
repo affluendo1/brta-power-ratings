@@ -1,0 +1,201 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP020011,05 Oct 19,1,Dendy Park 1,Royal Ave,No. 1,Dean Metter,Michael Gawler,Dean Metter,8-1,8,1,1,0,Completed,true,false,false
+AP020011,05 Oct 19,1,Dendy Park 1,Royal Ave,No. 2,Bryan Reichman,Shaun Campbell,Bryan Reichman,8-0,8,0,1,0,Completed,true,false,false
+AP020011,05 Oct 19,1,Dendy Park 1,Royal Ave,No. 3,Chris Odgers,David Urpani,Chris Odgers,8-0,8,0,1,0,Completed,true,false,false
+AP020011,05 Oct 19,1,Dendy Park 1,Royal Ave,No. 4,Bruce Watkins,Nick Bolmat,Bruce Watkins,8-1,8,1,1,0,Completed,true,false,false
+AP020012,05 Oct 19,1,Maccabi,Royal South Yarra,No. 1,Ben Pollak,Lachlan Beer,Lachlan Beer,7-8,7,8,0,1,Completed,true,false,false
+AP020012,05 Oct 19,1,Maccabi,Royal South Yarra,No. 2,Joel Rabinov,Richard Ralph,Richard Ralph,5-8,5,8,0,1,Completed,true,false,false
+AP020012,05 Oct 19,1,Maccabi,Royal South Yarra,No. 3,Daniel Goodrich,Andrew Thompson,Andrew Thompson,4-8,4,8,0,1,Completed,true,false,false
+AP020012,05 Oct 19,1,Maccabi,Royal South Yarra,No. 4,Jack Stock,Mathew Hayward,Jack Stock,8-7,8,7,1,0,Completed,true,false,false
+AP020013,05 Oct 19,1,Mentone,Tennis World,No. 1,Jim Hatziladas,Correa Bedoya,Jim Hatziladas,8-2,8,2,1,0,Completed,true,false,false
+AP020013,05 Oct 19,1,Mentone,Tennis World,No. 2,Alex Hatziladas,Teri Kourabis,Alex Hatziladas,8-4,8,4,1,0,Completed,true,false,false
+AP020013,05 Oct 19,1,Mentone,Tennis World,No. 3,Nathan Van Der Heive,Simon Reeves,Simon Reeves,6-8,6,8,0,1,Completed,true,true,false
+AP020013,05 Oct 19,1,Mentone,Tennis World,No. 4,James O'Haire,Vincent Na,Vincent Na,3-8,3,8,0,1,Completed,true,true,false
+AP020014,05 Oct 19,1,Dendy Park 2,Caulfield Rec,No. 1,Jules Wiliams,Adam Klas,Adam Klas,3-8,3,8,0,1,Completed,true,false,false
+AP020014,05 Oct 19,1,Dendy Park 2,Caulfield Rec,No. 2,Tom Dubbeld,Josh Dosser,Tom Dubbeld,8-7,8,7,1,0,Completed,true,false,false
+AP020014,05 Oct 19,1,Dendy Park 2,Caulfield Rec,No. 3,Luke Dubbeld,Nigel Appelboom,Nigel Appelboom,1-8,1,8,0,1,Completed,true,false,false
+AP020014,05 Oct 19,1,Dendy Park 2,Caulfield Rec,No. 4,Neil Bellamy,Roman Medvedev,Neil Bellamy,8-0,8,0,1,0,Completed,true,false,false
+AP020021,12 Oct 19,2,Caulfield Rec,Dendy Park 1,No. 1,Vishal Raghav,Dean Metter,Dean Metter,2-8,2,8,0,1,Completed,true,true,false
+AP020021,12 Oct 19,2,Caulfield Rec,Dendy Park 1,No. 2,Roman Medvedev,Bryan Reichman,Bryan Reichman,0-8,0,8,0,1,Completed,true,false,false
+AP020021,12 Oct 19,2,Caulfield Rec,Dendy Park 1,No. 3,Nigel Appelboom,Anthony Saul,Nigel Appelboom,8-3,8,3,1,0,Completed,true,false,false
+AP020021,12 Oct 19,2,Caulfield Rec,Dendy Park 1,No. 4,Ian Eddington,Peter Fleming,Ian Eddington,8-4,8,4,1,0,Completed,true,true,false
+AP020022,12 Oct 19,2,Royal Ave,Maccabi,No. 1,Stefan Harrer,Ben Pollak,Ben Pollak,2-8,2,8,0,1,Completed,true,false,false
+AP020022,12 Oct 19,2,Royal Ave,Maccabi,No. 2,Michael Gawler,Mor Dahan,Mor Dahan,1-8,1,8,0,1,Completed,true,false,false
+AP020022,12 Oct 19,2,Royal Ave,Maccabi,No. 3,David Urpani,Daniel Goodrich,Daniel Goodrich,2-8,2,8,0,1,Completed,true,false,false
+AP020022,12 Oct 19,2,Royal Ave,Maccabi,No. 4,Armand La Grange,Jack Stock,Jack Stock,1-8,1,8,0,1,Completed,true,false,false
+AP020023,12 Oct 19,2,Royal South Yarra,Mentone,No. 1,Lachlan Beer,Travis Kinsman,Lachlan Beer,8-6,8,6,1,0,Completed,true,false,false
+AP020023,12 Oct 19,2,Royal South Yarra,Mentone,No. 2,Stuart Webb,Nikola Rakovic,Nikola Rakovic,0-8,0,8,0,1,Completed,true,false,false
+AP020023,12 Oct 19,2,Royal South Yarra,Mentone,No. 3,Mathew Hayward,Alex Hatziladas,Mathew Hayward,8-4,8,4,1,0,Completed,true,false,false
+AP020023,12 Oct 19,2,Royal South Yarra,Mentone,No. 4,Richard Charles,Luke Kinsman,Luke Kinsman,7-8,7,8,0,1,Completed,true,false,true
+AP020024,12 Oct 19,2,Tennis World,Dendy Park 2,No. 1,Correa Bedoya,Jules Wiliams,Jules Wiliams,3-8,3,8,0,1,Completed,true,false,false
+AP020024,12 Oct 19,2,Tennis World,Dendy Park 2,No. 2,Teri Kourabis,Luke Dubbeld,Teri Kourabis,8-3,8,3,1,0,Completed,true,false,false
+AP020024,12 Oct 19,2,Tennis World,Dendy Park 2,No. 3,Vincent Na,Lachie Tindall,Lachie Tindall,2-8,2,8,0,1,Completed,true,false,false
+AP020024,12 Oct 19,2,Tennis World,Dendy Park 2,No. 4,Gus McDonald,Neil Bellamy,Neil Bellamy,2-8,2,8,0,1,Completed,true,false,false
+AP020031,19 Oct 19,3,Dendy Park 1,Tennis World,No. 1,Chris Odgers,Correa Bedoya,Chris Odgers,8-5,8,5,1,0,Completed,true,false,false
+AP020031,19 Oct 19,3,Dendy Park 1,Tennis World,No. 2,Anthony Saul,Eric Steinwinder,Anthony Saul,8-4,8,4,1,0,Completed,true,false,false
+AP020031,19 Oct 19,3,Dendy Park 1,Tennis World,No. 3,Bruce Watkins,Teri Kourabis,Bruce Watkins,8-0,8,0,1,0,Completed,true,false,false
+AP020031,19 Oct 19,3,Dendy Park 1,Tennis World,No. 4,Peter Fleming,Simon Reeves,Peter Fleming,8-0,8,0,1,0,Completed,true,false,false
+AP020032,19 Oct 19,3,Maccabi,Caulfield Rec,No. 1,Ben Pollak,Adam Klas,Adam Klas,4-8,4,8,0,1,Completed,true,false,false
+AP020032,19 Oct 19,3,Maccabi,Caulfield Rec,No. 2,Joel Rabinov,Nigel Appelboom,,4-0,4,0,1,0,Unfinished,false,false,false
+AP020032,19 Oct 19,3,Maccabi,Caulfield Rec,No. 3,Jack Stock,Steve Vuletic,Steve Vuletic,5-6,5,6,0,1,Completed,true,false,true
+AP020032,19 Oct 19,3,Maccabi,Caulfield Rec,No. 4,Michael Rabinovich,Chris Liolios,,2-2,2,2,0,0,Unfinished,false,false,true
+AP020033,19 Oct 19,3,Mentone,Royal Ave,No. 1,Jim Hatziladas,Michael Gawler,Jim Hatziladas,8-0,8,0,1,0,Completed,true,false,false
+AP020033,19 Oct 19,3,Mentone,Royal Ave,No. 2,Nikola Rakovic,Armand La Grange,Nikola Rakovic,8-1,8,1,1,0,Completed,true,false,false
+AP020033,19 Oct 19,3,Mentone,Royal Ave,No. 3,Alex Hatziladas,Nick Bolmat,Alex Hatziladas,8-0,8,0,1,0,Completed,true,false,false
+AP020033,19 Oct 19,3,Mentone,Royal Ave,No. 4,Nathan Van Der Heive,Paul Bolmat,Paul Bolmat,1-8,1,8,0,1,Completed,true,true,true
+AP020034,19 Oct 19,3,Dendy Park 2,Royal South Yarra,No. 1,Tom Dubbeld,Lachlan Beer,Lachlan Beer,1-8,1,8,0,1,Completed,true,false,false
+AP020034,19 Oct 19,3,Dendy Park 2,Royal South Yarra,No. 2,Luke Dubbeld,Richard Ralph,Richard Ralph,2-8,2,8,0,1,Completed,true,false,false
+AP020034,19 Oct 19,3,Dendy Park 2,Royal South Yarra,No. 3,Lachie Tindall,Mathew Hayward,Lachie Tindall,8-5,8,5,1,0,Completed,true,false,false
+AP020034,19 Oct 19,3,Dendy Park 2,Royal South Yarra,No. 4,Neil Bellamy,Andrew Bennett,Neil Bellamy,8-2,8,2,1,0,Completed,true,false,false
+AP020043,26 Oct 19,4,Caulfield Rec,Mentone,No. 1,Adam Klas,Nikola Rakovic,Adam Klas,8-6,8,6,1,0,Completed,true,false,false
+AP020043,26 Oct 19,4,Caulfield Rec,Mentone,No. 2,Josh Dosser,Alex Hatziladas,Josh Dosser,8-5,8,5,1,0,Completed,true,false,false
+AP020043,26 Oct 19,4,Caulfield Rec,Mentone,No. 3,Nigel Appelboom,Simon Duncan,Nigel Appelboom,8-2,8,2,1,0,Completed,true,false,false
+AP020043,26 Oct 19,4,Caulfield Rec,Mentone,No. 4,Alistair Dimmock,Nathan Van Der Heive,Alistair Dimmock,8-3,8,3,1,0,Completed,true,true,true
+AP020044,26 Oct 19,4,Royal Ave,Dendy Park 2,No. 1,Michael Gawler,Jules Wiliams,Jules Wiliams,0-8,0,8,0,1,Completed,true,false,false
+AP020044,26 Oct 19,4,Royal Ave,Dendy Park 2,No. 2,Shaun Campbell,Tom Dubbeld,Tom Dubbeld,2-8,2,8,0,1,Completed,true,false,false
+AP020044,26 Oct 19,4,Royal Ave,Dendy Park 2,No. 3,Nick Bolmat,Luke Dubbeld,Luke Dubbeld,2-8,2,8,0,1,Completed,true,false,false
+AP020044,26 Oct 19,4,Royal Ave,Dendy Park 2,No. 4,Armand La Grange,John Ley,John Ley,1-8,1,8,0,1,Completed,true,false,false
+AP020051,09 Nov 19,5,Mentone,Dendy Park 2,No. 1,Travis Kinsman,Tom Dubbeld,Travis Kinsman,8-1,8,1,1,0,Completed,true,false,false
+AP020051,09 Nov 19,5,Mentone,Dendy Park 2,No. 2,Alex Hatziladas,Neil Bellamy,Alex Hatziladas,8-1,8,1,1,0,Completed,true,false,false
+AP020051,09 Nov 19,5,Mentone,Dendy Park 2,No. 3,Luke Kinsman,Rick N/a,Luke Kinsman,8-4,8,4,1,0,Completed,true,true,true
+AP020051,09 Nov 19,5,Mentone,Dendy Park 2,No. 4,Nathan Van Der Heive,John Ley,John Ley,4-8,4,8,0,1,Completed,true,true,false
+AP020052,09 Nov 19,5,Caulfield Rec,Tennis World,No. 1,Josh Dosser,Simon Reeves,Josh Dosser,8-3,8,3,1,0,Completed,true,false,false
+AP020052,09 Nov 19,5,Caulfield Rec,Tennis World,No. 2,Nigel Appelboom,Teri Kourabis,Nigel Appelboom,8-0,8,0,1,0,Completed,true,false,false
+AP020052,09 Nov 19,5,Caulfield Rec,Tennis World,No. 3,Vishal Raghav,Vincent McDonald,Vincent McDonald,4-8,4,8,0,1,Completed,true,true,false
+AP020052,09 Nov 19,5,Caulfield Rec,Tennis World,No. 4,Alistair Dimmock,Gus McDonald,Gus McDonald,3-8,3,8,0,1,Completed,true,true,false
+AP020053,09 Nov 19,5,Royal South Yarra,Royal Ave,No. 1,Lachlan Beer,Shaun Campbell,Lachlan Beer,8-0,8,0,1,0,Completed,true,false,false
+AP020053,09 Nov 19,5,Royal South Yarra,Royal Ave,No. 2,Richard Ralph,Nick Bolmat,Richard Ralph,8-0,8,0,1,0,Completed,true,false,false
+AP020053,09 Nov 19,5,Royal South Yarra,Royal Ave,No. 3,Richard Charles,Armand La Grange,Richard Charles,8-0,8,0,1,0,Completed,true,false,false
+AP020053,09 Nov 19,5,Royal South Yarra,Royal Ave,No. 4,Andrew Bennett,Alexander Kotsirilos,Alexander Kotsirilos,4-8,4,8,0,1,Completed,true,false,true
+AP020054,09 Nov 19,5,Dendy Park 1,Maccabi,No. 1,Bryan Reichman,Ben Pollak,Bryan Reichman,8-3,8,3,1,0,Completed,true,false,false
+AP020054,09 Nov 19,5,Dendy Park 1,Maccabi,No. 2,Chris Odgers,Mor Dahan,Chris Odgers,8-7,8,7,1,0,Completed,true,false,false
+AP020054,09 Nov 19,5,Dendy Park 1,Maccabi,No. 3,Bruce Watkins,Daniel Goodrich,Bruce Watkins,8-2,8,2,1,0,Completed,true,false,false
+AP020054,09 Nov 19,5,Dendy Park 1,Maccabi,No. 4,Peter Fleming,Nathan Rapoport,Peter Fleming,8-1,8,1,1,0,Completed,true,false,false
+AP020061,16 Nov 19,6,Maccabi,Mentone,No. 1,Ben Pollak,Jim Hatziladas,Jim Hatziladas,0-8,0,8,0,1,Completed,true,false,false
+AP020061,16 Nov 19,6,Maccabi,Mentone,No. 2,Mor Dahan,Alex Hatziladas,Mor Dahan,8-4,8,4,1,0,Completed,true,false,false
+AP020061,16 Nov 19,6,Maccabi,Mentone,No. 3,Joel Rabinov,Nathan Van Der Heive,Joel Rabinov,8-0,8,0,1,0,Completed,true,false,true
+AP020061,16 Nov 19,6,Maccabi,Mentone,No. 4,Michael Rabinovich,Demetri Kogas,Michael Rabinovich,8-1,8,1,1,0,Completed,true,false,true
+AP020062,16 Nov 19,6,Dendy Park 2,Dendy Park 1,No. 1,Jules Wiliams,Bryan Reichman,Bryan Reichman,7-8,7,8,0,1,Completed,true,false,false
+AP020062,16 Nov 19,6,Dendy Park 2,Dendy Park 1,No. 2,Lachie Tindall,Anthony Saul,Lachie Tindall,8-7,8,7,1,0,Completed,true,false,false
+AP020062,16 Nov 19,6,Dendy Park 2,Dendy Park 1,No. 3,Neil Bellamy,Bruce Watkins,Bruce Watkins,0-8,0,8,0,1,Completed,true,false,false
+AP020062,16 Nov 19,6,Dendy Park 2,Dendy Park 1,No. 4,John Ley,Peter Fleming,Peter Fleming,4-8,4,8,0,1,Completed,true,false,false
+AP020063,16 Nov 19,6,Tennis World,Royal South Yarra,No. 1,Giovanni Vitali,Dean Park,Dean Park,2-8,2,8,0,1,Completed,true,false,false
+AP020063,16 Nov 19,6,Tennis World,Royal South Yarra,No. 2,Correa Bedoya,Stuart Webb,Correa Bedoya,8-2,8,2,1,0,Completed,true,false,false
+AP020063,16 Nov 19,6,Tennis World,Royal South Yarra,No. 3,Vincent McDonald,Richard Ralph,Vincent McDonald,8-0,8,0,1,0,Completed,true,false,false
+AP020063,16 Nov 19,6,Tennis World,Royal South Yarra,No. 4,Simon Reeves,Anthony Duggan,Anthony Duggan,2-8,2,8,0,1,Completed,true,false,false
+AP020064,16 Nov 19,6,Royal Ave,Caulfield Rec,No. 1,Conor Mooney,Nigel Appelboom,Conor Mooney,8-6,8,6,1,0,Completed,true,true,false
+AP020064,16 Nov 19,6,Royal Ave,Caulfield Rec,No. 2,Michael Gawler,Mark Findlay,Mark Findlay,4-8,4,8,0,1,Completed,true,false,true
+AP020064,16 Nov 19,6,Royal Ave,Caulfield Rec,No. 3,Shaun Campbell,Ian Eddington,Ian Eddington,2-8,2,8,0,1,Completed,true,false,true
+AP020064,16 Nov 19,6,Royal Ave,Caulfield Rec,No. 4,Nick Bolmat,Cyprian Li,Nick Bolmat,8-6,8,6,1,0,Completed,true,false,true
+AP020071,23 Nov 19,7,Dendy Park 1,Mentone,No. 1,Dean Metter,Jim Hatziladas,Jim Hatziladas,4-8,4,8,0,1,Completed,true,false,false
+AP020071,23 Nov 19,7,Dendy Park 1,Mentone,No. 2,Chris Odgers,Nikola Rakovic,Nikola Rakovic,7-8,7,8,0,1,Completed,true,false,false
+AP020071,23 Nov 19,7,Dendy Park 1,Mentone,No. 3,Anthony Saul,Alex Hatziladas,Anthony Saul,8-7,8,7,1,0,Completed,true,false,false
+AP020071,23 Nov 19,7,Dendy Park 1,Mentone,No. 4,Bill Craig,Luke Kinsman,Bill Craig,8-2,8,2,1,0,Completed,true,true,true
+AP020072,23 Nov 19,7,Maccabi,Dendy Park 2,No. 1,Mor Dahan,Jules Wiliams,Mor Dahan,8-0,8,0,1,0,Completed,true,false,false
+AP020072,23 Nov 19,7,Maccabi,Dendy Park 2,No. 2,Joel Rabinov,Tom Dubbeld,Joel Rabinov,8-3,8,3,1,0,Completed,true,false,false
+AP020072,23 Nov 19,7,Maccabi,Dendy Park 2,No. 3,Daniel Goodrich,Neil Bellamy,Neil Bellamy,7-8,7,8,0,1,Completed,true,false,false
+AP020072,23 Nov 19,7,Maccabi,Dendy Park 2,No. 4,Nathan Rapoport,John Ley,Nathan Rapoport,8-3,8,3,1,0,Completed,true,false,false
+AP020073,23 Nov 19,7,Caulfield Rec,Royal South Yarra,No. 1,Vlad Gisca,Andrew Thompson,Vlad Gisca,8-3,8,3,1,0,Completed,true,true,false
+AP020073,23 Nov 19,7,Caulfield Rec,Royal South Yarra,No. 2,Nigel Appelboom,Stuart Webb,Nigel Appelboom,8-7,8,7,1,0,Completed,true,false,false
+AP020073,23 Nov 19,7,Caulfield Rec,Royal South Yarra,No. 3,Mark Findlay,Mathew Hayward,Mark Findlay,8-6,8,6,1,0,Completed,true,true,false
+AP020073,23 Nov 19,7,Caulfield Rec,Royal South Yarra,No. 4,Roman Medvedev,Andrew Bennett,Roman Medvedev,8-2,8,2,1,0,Completed,true,false,false
+AP020074,23 Nov 19,7,Tennis World,Royal Ave,No. 1,Giovanni Vitali,David Urpani,Giovanni Vitali,8-0,8,0,1,0,Completed,true,false,false
+AP020074,23 Nov 19,7,Tennis World,Royal Ave,No. 2,Eric Steinwinder,Shaun Campbell,Eric Steinwinder,8-1,8,1,1,0,Completed,true,false,false
+AP020074,23 Nov 19,7,Tennis World,Royal Ave,No. 3,Correa Bedoya,Nick Bolmat,Nick Bolmat,0-8,0,8,0,1,Completed,true,false,false
+AP020074,23 Nov 19,7,Tennis World,Royal Ave,No. 4,Simon Reeves,Armand La Grange,Simon Reeves,8-1,8,1,1,0,Completed,true,false,false
+AP020081,30 Nov 19,8,Royal Ave,Dendy Park 1,No. 1,David Urpani,Chris Odgers,Chris Odgers,1-8,1,8,0,1,Completed,true,false,false
+AP020081,30 Nov 19,8,Royal Ave,Dendy Park 1,No. 2,Nick Bolmat,Bruce Watkins,Bruce Watkins,0-8,0,8,0,1,Completed,true,false,false
+AP020081,30 Nov 19,8,Royal Ave,Dendy Park 1,No. 3,Armand La Grange,Peter Fleming,Peter Fleming,0-8,0,8,0,1,Completed,true,false,false
+AP020081,30 Nov 19,8,Royal Ave,Dendy Park 1,No. 4,Raphael Urpani,John Riley,John Riley,2-8,2,8,0,1,Completed,true,true,true
+AP020082,30 Nov 19,8,Royal South Yarra,Maccabi,No. 1,Lachlan Beer,Ben Pollak,Lachlan Beer,8-3,8,3,1,0,Completed,true,false,false
+AP020082,30 Nov 19,8,Royal South Yarra,Maccabi,No. 2,Richard Ralph,Mor Dahan,Mor Dahan,6-8,6,8,0,1,Completed,true,false,false
+AP020082,30 Nov 19,8,Royal South Yarra,Maccabi,No. 3,Mathew Hayward,Joel Rabinov,Joel Rabinov,3-8,3,8,0,1,Completed,true,false,false
+AP020082,30 Nov 19,8,Royal South Yarra,Maccabi,No. 4,Anthony Duggan,Ryan Jamieson,Ryan Jamieson,3-8,3,8,0,1,Completed,true,false,true
+AP020083,30 Nov 19,8,Tennis World,Mentone,No. 1,Correa Bedoya,Jim Hatziladas,Jim Hatziladas,0-8,0,8,0,1,Completed,true,false,false
+AP020083,30 Nov 19,8,Tennis World,Mentone,No. 2,Teri Kourabis,Nikola Rakovic,Nikola Rakovic,3-8,3,8,0,1,Completed,true,false,false
+AP020083,30 Nov 19,8,Tennis World,Mentone,No. 3,Vincent McDonald,Alex Hatziladas,Alex Hatziladas,2-8,2,8,0,1,Completed,true,false,false
+AP020083,30 Nov 19,8,Tennis World,Mentone,No. 4,Gus McDonald,Luke Kinsman,Gus McDonald,8-4,8,4,1,0,Completed,true,false,true
+AP020084,30 Nov 19,8,Caulfield Rec,Dendy Park 2,No. 1,Josh Dosser,Jules Wiliams,Jules Wiliams,2-8,2,8,0,1,Completed,true,false,false
+AP020084,30 Nov 19,8,Caulfield Rec,Dendy Park 2,No. 2,Nigel Appelboom,Tom Dubbeld,Tom Dubbeld,1-8,1,8,0,1,Completed,true,false,false
+AP020084,30 Nov 19,8,Caulfield Rec,Dendy Park 2,No. 3,Roman Medvedev,Lachie Tindall,Lachie Tindall,5-8,5,8,0,1,Completed,true,false,false
+AP020084,30 Nov 19,8,Caulfield Rec,Dendy Park 2,No. 4,Alistair Dimmock,Neil Bellamy,Alistair Dimmock,8-6,8,6,1,0,Completed,true,true,false
+AP020091,07 Dec 19,9,Dendy Park 1,Caulfield Rec,No. 1,Bryan Reichman,Josh Dosser,Josh Dosser,7-8,7,8,0,1,Completed,true,false,false
+AP020091,07 Dec 19,9,Dendy Park 1,Caulfield Rec,No. 2,Chris Odgers,Nigel Appelboom,Nigel Appelboom,5-8,5,8,0,1,Completed,true,false,false
+AP020091,07 Dec 19,9,Dendy Park 1,Caulfield Rec,No. 3,Bruce Watkins,Roman Medvedev,Bruce Watkins,8-2,8,2,1,0,Completed,true,false,false
+AP020091,07 Dec 19,9,Dendy Park 1,Caulfield Rec,No. 4,Peter Fleming,Tanu Bhaskar,Peter Fleming,8-4,8,4,1,0,Completed,true,false,false
+AP020092,07 Dec 19,9,Maccabi,Royal Ave,No. 1,Ben Pollak,David Urpani,Ben Pollak,8-1,8,1,1,0,Completed,true,false,false
+AP020092,07 Dec 19,9,Maccabi,Royal Ave,No. 2,Daniel Goodrich,Shaun Campbell,Daniel Goodrich,8-0,8,0,1,0,Completed,true,false,false
+AP020092,07 Dec 19,9,Maccabi,Royal Ave,No. 3,Nathan Rapoport,Armand La Grange,Nathan Rapoport,8-0,8,0,1,0,Completed,true,false,false
+AP020092,07 Dec 19,9,Maccabi,Royal Ave,No. 4,Daniel Vertes,Raphael Urpani,Daniel Vertes,8-7,8,7,1,0,Completed,true,true,true
+AP020093,07 Dec 19,9,Mentone,Royal South Yarra,No. 1,Jim Hatziladas,Andrew Bennett,Jim Hatziladas,8-0,8,0,1,0,Completed,true,false,false
+AP020093,07 Dec 19,9,Mentone,Royal South Yarra,No. 2,Nikola Rakovic,Mathew Hayward,Nikola Rakovic,8-4,8,4,1,0,Completed,true,false,false
+AP020093,07 Dec 19,9,Mentone,Royal South Yarra,No. 3,Alex Hatziladas,Richard Ralph,Alex Hatziladas,8-0,8,0,1,0,Completed,true,false,false
+AP020093,07 Dec 19,9,Mentone,Royal South Yarra,No. 4,Demetri Kogas,Anthony Duggan,Anthony Duggan,2-8,2,8,0,1,Completed,true,true,false
+AP020094,07 Dec 19,9,Dendy Park 2,Tennis World,No. 1,Jules Wiliams,Giovanni Vitali,Giovanni Vitali,5-8,5,8,0,1,Completed,true,false,false
+AP020094,07 Dec 19,9,Dendy Park 2,Tennis World,No. 2,Tom Dubbeld,Eric Steinwinder,Tom Dubbeld,8-2,8,2,1,0,Completed,true,false,false
+AP020094,07 Dec 19,9,Dendy Park 2,Tennis World,No. 3,Lachie Tindall,Vincent Na,Lachie Tindall,8-1,8,1,1,0,Completed,true,false,false
+AP020094,07 Dec 19,9,Dendy Park 2,Tennis World,No. 4,Neil Bellamy,Gus McDonald,Neil Bellamy,8-4,8,4,1,0,Completed,true,false,false
+AP020101,14 Dec 19,10,Tennis World,Dendy Park 1,No. 1,John Correa,Bryan Reichman,Bryan Reichman,3-8,3,8,0,1,Completed,true,true,false
+AP020101,14 Dec 19,10,Tennis World,Dendy Park 1,No. 2,Eric Steinwinder,Chris Odgers,Chris Odgers,3-8,3,8,0,1,Completed,true,false,false
+AP020101,14 Dec 19,10,Tennis World,Dendy Park 1,No. 3,Teri Kourabis,Bruce Watkins,Bruce Watkins,2-8,2,8,0,1,Completed,true,false,false
+AP020101,14 Dec 19,10,Tennis World,Dendy Park 1,No. 4,Simon Reeves,Peter Fleming,Simon Reeves,8-4,8,4,1,0,Completed,true,false,false
+AP020102,14 Dec 19,10,Caulfield Rec,Maccabi,No. 1,Josh Dosser,Ben Pollak,Ben Pollak,3-8,3,8,0,1,Completed,true,false,false
+AP020102,14 Dec 19,10,Caulfield Rec,Maccabi,No. 2,Nigel Appelboom,Mor Dahan,Nigel Appelboom,8-7,8,7,1,0,Completed,true,false,false
+AP020102,14 Dec 19,10,Caulfield Rec,Maccabi,No. 3,Tanu Bhaskar,Daniel Goodrich,Daniel Goodrich,6-8,6,8,0,1,Completed,true,false,false
+AP020102,14 Dec 19,10,Caulfield Rec,Maccabi,No. 4,Cyprian Li,Nathan Rapoport,Cyprian Li,8-2,8,2,1,0,Completed,true,true,false
+AP020103,14 Dec 19,10,Royal Ave,Mentone,No. 1,David Urpani,Jim Hatziladas,Jim Hatziladas,0-8,0,8,0,1,Completed,true,false,false
+AP020103,14 Dec 19,10,Royal Ave,Mentone,No. 2,Shaun Campbell,Nikola Rakovic,Nikola Rakovic,1-8,1,8,0,1,Completed,true,false,false
+AP020103,14 Dec 19,10,Royal Ave,Mentone,No. 3,Nick Bolmat,Alex Hatziladas,Alex Hatziladas,0-8,0,8,0,1,Completed,true,false,false
+AP020103,14 Dec 19,10,Royal Ave,Mentone,No. 4,Armand La Grange,Luke Kinsman,Luke Kinsman,4-8,4,8,0,1,Completed,true,false,true
+AP020104,14 Dec 19,10,Royal South Yarra,Dendy Park 2,No. 1,Dean Park,Jules Wiliams,Dean Park,8-4,8,4,1,0,Completed,true,false,false
+AP020104,14 Dec 19,10,Royal South Yarra,Dendy Park 2,No. 2,Stuart Webb,Luke Dubbeld,Stuart Webb,8-2,8,2,1,0,Completed,true,false,false
+AP020104,14 Dec 19,10,Royal South Yarra,Dendy Park 2,No. 3,Michael Stanford,Justin Domisse,Michael Stanford,8-5,8,5,1,0,Completed,true,true,true
+AP020104,14 Dec 19,10,Royal South Yarra,Dendy Park 2,No. 4,Andrew Bennett,Neil Bellamy,Neil Bellamy,2-8,2,8,0,1,Completed,true,false,false
+AP020121,08 Feb 20,12,Dendy Park 2,Mentone,No. 1,Tom Dubbeld,Jim Hatziladas,Jim Hatziladas,3-8,3,8,0,1,Completed,true,false,false
+AP020121,08 Feb 20,12,Dendy Park 2,Mentone,No. 2,Luke Dubbeld,Luke Kinsman,Luke Dubbeld,8-0,8,0,1,0,Completed,true,false,true
+AP020121,08 Feb 20,12,Dendy Park 2,Mentone,No. 3,Lachie Tindall,Yarden Lashchover,Lachie Tindall,8-4,8,4,1,0,Completed,true,false,true
+AP020121,08 Feb 20,12,Dendy Park 2,Mentone,No. 4,Neil Bellamy,Nathan Van Der Heive,Neil Bellamy,8-5,8,5,1,0,Completed,true,false,true
+AP020122,08 Feb 20,12,Tennis World,Caulfield Rec,No. 1,John Correa,Mark Findlay,John Correa,8-4,8,4,1,0,Completed,true,true,true
+AP020122,08 Feb 20,12,Tennis World,Caulfield Rec,No. 2,Alejandro Gomez,Vishal Raghav,Alejandro Gomez,8-6,8,6,1,0,Completed,true,true,true
+AP020122,08 Feb 20,12,Tennis World,Caulfield Rec,No. 3,Gus McDonald,Ian Eddington,Ian Eddington,4-8,4,8,0,1,Completed,true,false,true
+AP020122,08 Feb 20,12,Tennis World,Caulfield Rec,No. 4,Vincent McDonald,Cyprian Li,Vincent McDonald,8-4,8,4,1,0,Completed,true,false,true
+AP020123,08 Feb 20,12,Royal Ave,Royal South Yarra,No. 1,Stefan Harrer,Dean Park,Dean Park,0-8,0,8,0,1,Completed,true,false,false
+AP020123,08 Feb 20,12,Royal Ave,Royal South Yarra,No. 2,David Urpani,Richard Ralph,Richard Ralph,1-8,1,8,0,1,Completed,true,false,false
+AP020123,08 Feb 20,12,Royal Ave,Royal South Yarra,No. 3,Shaun Campbell,Stuart Webb,Stuart Webb,6-8,6,8,0,1,Completed,true,false,false
+AP020123,08 Feb 20,12,Royal Ave,Royal South Yarra,No. 4,Nick Bolmat,Andrew Bennett,Andrew Bennett,7-8,7,8,0,1,Completed,true,false,false
+AP020124,08 Feb 20,12,Maccabi,Dendy Park 1,No. 1,Mor Dahan,Bryan Reichman,Bryan Reichman,1-8,1,8,0,1,Completed,true,false,false
+AP020124,08 Feb 20,12,Maccabi,Dendy Park 1,No. 2,Joel Rabinov,Bruce Watkins,Bruce Watkins,3-8,3,8,0,1,Completed,true,false,false
+AP020124,08 Feb 20,12,Maccabi,Dendy Park 1,No. 3,Jack Stock,Peter Fleming,Jack Stock,8-6,8,6,1,0,Completed,true,false,false
+AP020124,08 Feb 20,12,Maccabi,Dendy Park 1,No. 4,Michael Rabinovich,Chris Trotter,Chris Trotter,5-8,5,8,0,1,Completed,true,false,false
+AP020131,15 Feb 20,13,Mentone,Maccabi,No. 1,Nikola Rakovic,Ben Pollak,Nikola Rakovic,8-4,8,4,1,0,Completed,true,false,false
+AP020131,15 Feb 20,13,Mentone,Maccabi,No. 2,Alex Hatziladas,Joel Rabinov,Alex Hatziladas,8-4,8,4,1,0,Completed,true,false,false
+AP020131,15 Feb 20,13,Mentone,Maccabi,No. 3,Luke Kinsman,Daniel Goodrich,Daniel Goodrich,0-8,0,8,0,1,Completed,true,true,false
+AP020131,15 Feb 20,13,Mentone,Maccabi,No. 4,Nathan Van Der Heive,Nathan Rapoport,Nathan Rapoport,1-8,1,8,0,1,Completed,true,true,false
+AP020134,15 Feb 20,13,Caulfield Rec,Royal Ave,No. 1,Adam Klas,Stefan Harrer,Adam Klas,8-0,8,0,1,0,Completed,true,false,false
+AP020134,15 Feb 20,13,Caulfield Rec,Royal Ave,No. 2,Josh Dosser,David Urpani,Josh Dosser,8-0,8,0,1,0,Completed,true,false,false
+AP020134,15 Feb 20,13,Caulfield Rec,Royal Ave,No. 3,Mark Findlay,Shaun Campbell,Mark Findlay,8-2,8,2,1,0,Completed,true,true,false
+AP020134,15 Feb 20,13,Caulfield Rec,Royal Ave,No. 4,Alistair Dimmock,Nick Bolmat,Alistair Dimmock,8-0,8,0,1,0,Completed,true,true,false
+AP020141,22 Feb 20,14,Mentone,Dendy Park 1,No. 1,Nikola Rakovic,Chris Odgers,Nikola Rakovic,8-3,8,3,1,0,Completed,true,false,false
+AP020141,22 Feb 20,14,Mentone,Dendy Park 1,No. 2,Alex Hatziladas,Anthony Saul,Anthony Saul,6-8,6,8,0,1,Completed,true,false,false
+AP020141,22 Feb 20,14,Mentone,Dendy Park 1,No. 3,Nathan Van Der Heive,Peter Fleming,Peter Fleming,4-8,4,8,0,1,Completed,true,true,false
+AP020141,22 Feb 20,14,Mentone,Dendy Park 1,No. 4,Demetri Kogas,Chris Trotter,Chris Trotter,0-8,0,8,0,1,Completed,true,true,false
+AP020142,22 Feb 20,14,Dendy Park 2,Maccabi,No. 1,Jules Wiliams,Ben Pollak,Jules Wiliams,8-4,8,4,1,0,Completed,true,false,false
+AP020142,22 Feb 20,14,Dendy Park 2,Maccabi,No. 2,Tom Dubbeld,Mor Dahan,Tom Dubbeld,8-4,8,4,1,0,Completed,true,false,false
+AP020142,22 Feb 20,14,Dendy Park 2,Maccabi,No. 3,Luke Dubbeld,Jack Stock,Jack Stock,6-8,6,8,0,1,Completed,true,false,false
+AP020142,22 Feb 20,14,Dendy Park 2,Maccabi,No. 4,Lachie Tindall,Michael Rabinovich,Lachie Tindall,8-2,8,2,1,0,Completed,true,false,false
+AP020143,22 Feb 20,14,Royal South Yarra,Caulfield Rec,No. 1,Lachlan Beer,Nigel Appelboom,Lachlan Beer,8-0,8,0,1,0,Completed,true,false,false
+AP020143,22 Feb 20,14,Royal South Yarra,Caulfield Rec,No. 2,Dean Park,Mark Findlay,Dean Park,8-1,8,1,1,0,Completed,true,false,true
+AP020143,22 Feb 20,14,Royal South Yarra,Caulfield Rec,No. 3,Richard Ralph,Alistair Prish,Richard Ralph,8-1,8,1,1,0,Completed,true,false,true
+AP020143,22 Feb 20,14,Royal South Yarra,Caulfield Rec,No. 4,Richard Charles,Alistair Dimmock,Alistair Dimmock,4-8,4,8,0,1,Completed,true,false,true
+AP020144,22 Feb 20,14,Royal Ave,Tennis World,No. 1,Stefan Harrer,Eric Steinwinder,Eric Steinwinder,2-8,2,8,0,1,Completed,true,false,false
+AP020144,22 Feb 20,14,Royal Ave,Tennis World,No. 2,David Urpani,Teri Kourabis,David Urpani,8-4,8,4,1,0,Completed,true,false,false
+AP020144,22 Feb 20,14,Royal Ave,Tennis World,No. 3,Shaun Campbell,Vincent McDonald,Vincent McDonald,1-8,1,8,0,1,Completed,true,false,false
+AP020144,22 Feb 20,14,Royal Ave,Tennis World,No. 4,Nick Bolmat,Simon Reeves,Simon Reeves,7-8,7,8,0,1,Completed,true,false,false
+AP020301,,16,Dendy Park 1,Maccabi,No. 1,Chris Odgers,Ben Pollak,Ben Pollak,5-8,5,8,0,1,Completed,true,false,false
+AP020301,,16,Dendy Park 1,Maccabi,No. 2,Anthony Saul,Mor Dahan,Anthony Saul,8-6,8,6,1,0,Completed,true,false,false
+AP020301,,16,Dendy Park 1,Maccabi,No. 3,Bruce Watkins,Joel Rabinov,Joel Rabinov,7-8,7,8,0,1,Completed,true,false,false
+AP020301,,16,Dendy Park 1,Maccabi,No. 4,Peter Fleming,Jack Stock,Peter Fleming,8-1,8,1,1,0,Completed,true,false,false
+AP020302,,16,Dendy Park 2,Royal South Yarra,No. 1,Jules Wiliams,Richard Ralph,Jules Wiliams,8-3,8,3,1,0,Completed,true,false,false
+AP020302,,16,Dendy Park 2,Royal South Yarra,No. 2,Tom Dubbeld,Stuart Webb,Tom Dubbeld,8-6,8,6,1,0,Completed,true,false,false
+AP020302,,16,Dendy Park 2,Royal South Yarra,No. 3,Luke Dubbeld,Mathew Hayward,Luke Dubbeld,8-7,8,7,1,0,Completed,true,false,false
+AP020302,,16,Dendy Park 2,Royal South Yarra,No. 4,Lachie Tindall,Richard Charles,Lachie Tindall,8-2,8,2,1,0,Completed,true,false,false

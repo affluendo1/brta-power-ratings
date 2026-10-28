@@ -1,0 +1,48 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP007011,08 Oct 11,1,regular,Round 1,Frankston East,Oakleigh,8,0,4,0,8,0,48,14,Completed,
+AP007012,08 Oct 11,1,regular,Round 1,Lauriston,BLTC,1,7,1,3,2,6,31,43,Completed,
+AP007013,08 Oct 11,1,regular,Round 1,Hawthorn,St Pauls,8,0,4,0,8,0,48,7,Completed,
+AP007021,15 Oct 11,2,regular,Round 2,St Pauls,Frankston East,0,8,0,4,0,8,17,49,Completed,
+AP007022,15 Oct 11,2,regular,Round 2,BLTC,Hawthorn,1,7,1,3,2,6,20,45,Completed,
+AP007023,15 Oct 11,2,regular,Round 2,Oakleigh,Lauriston,0,8,0,4,0,8,24,50,Completed,
+AP007031,22 Oct 11,3,regular,Round 3,Frankston East,Lauriston,7,1,3,1,7,3,55,40,Completed,
+pending-ap007-r3-hawthorn-oakleigh,22 Oct 11,3,regular,Round 3,Hawthorn,Oakleigh,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap007-r3-st-pauls-bltc,22 Oct 11,3,regular,Round 3,St Pauls,BLTC,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP007041,05 Nov 11,4,regular,Round 4,BLTC,Frankston East,2,6,2,2,5,6,53,51,Completed,
+AP007042,05 Nov 11,4,regular,Round 4,Oakleigh,St Pauls,1,7,1,3,3,7,34,50,Completed,
+AP007043,05 Nov 11,4,regular,Round 4,Lauriston,Hawthorn,0,8,0,4,2,8,32,57,Completed,
+AP007051,12 Nov 11,5,regular,Round 5,Frankston East,Hawthorn,0,8,0,4,1,8,31,55,Completed,
+AP007052,12 Nov 11,5,regular,Round 5,BLTC,Oakleigh,8,0,4,0,8,0,51,29,Completed,
+AP007053,12 Nov 11,5,regular,Round 5,St Pauls,Lauriston,0,8,0,4,2,8,37,61,Completed,
+AP007062,19 Nov 11,6,regular,Round 6,BLTC,Lauriston,8,0,4,0,8,2,53,31,Completed,
+pending-ap007-r6-oakleigh-frankston-east,19 Nov 11,6,regular,Round 6,Oakleigh,Frankston East,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+pending-ap007-r6-st-pauls-hawthorn,19 Nov 11,6,regular,Round 6,St Pauls,Hawthorn,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap007-r7-frankston-east-st-pauls,26 Nov 11,7,regular,Round 7,Frankston East,St Pauls,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap007-r7-hawthorn-bltc,26 Nov 11,7,regular,Round 7,Hawthorn,BLTC,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap007-r7-lauriston-oakleigh,26 Nov 11,7,regular,Round 7,Lauriston,Oakleigh,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP007081,03 Dec 11,8,regular,Round 8,Lauriston,Frankston East,7,1,3,1,6,2,46,31,Completed,
+AP007082,03 Dec 11,8,regular,Round 8,Oakleigh,Hawthorn,1,7,1,3,2,7,17,49,Completed,
+AP007083,03 Dec 11,8,regular,Round 8,BLTC,St Pauls,7,1,3,1,6,2,47,35,Completed,
+AP007091,10 Dec 11,9,regular,Round 9,Frankston East,BLTC,7,1,3,1,6,2,43,26,Completed,
+AP007092,10 Dec 11,9,regular,Round 9,St Pauls,Oakleigh,1,7,1,3,3,6,37,44,Completed,
+AP007093,10 Dec 11,9,regular,Round 9,Hawthorn,Lauriston,8,0,4,0,8,0,49,25,Completed,
+AP007101,17 Dec 11,10,regular,Round 10,Hawthorn,Frankston East,7,1,3,1,6,2,41,27,Completed,
+AP007102,17 Dec 11,10,regular,Round 10,Oakleigh,BLTC,0,8,0,4,0,8,29,50,Completed,
+AP007103,17 Dec 11,10,regular,Round 10,Lauriston,St Pauls,8,0,4,0,8,0,50,25,Completed,
+AP007111,04 Feb 12,11,regular,Round 11,Frankston East,Oakleigh,8,0,4,0,8,0,50,25,Completed,
+AP007112,04 Feb 12,11,regular,Round 11,Lauriston,BLTC,8,0,4,0,8,0,51,27,Completed,
+AP007113,04 Feb 12,11,regular,Round 11,Hawthorn,St Pauls,8,0,4,0,8,0,48,15,Completed,
+AP007121,11 Feb 12,12,regular,Round 12,St Pauls,Frankston East,0,8,0,4,2,8,33,58,Completed,
+AP007122,11 Feb 12,12,regular,Round 12,BLTC,Hawthorn,1,7,1,3,2,6,26,46,Completed,
+AP007123,11 Feb 12,12,regular,Round 12,Oakleigh,Lauriston,0,8,0,4,0,8,19,49,Completed,
+AP007131,18 Feb 12,13,regular,Round 13,Frankston East,Lauriston,0,8,0,4,1,8,32,53,Completed,
+AP007132,18 Feb 12,13,regular,Round 13,Hawthorn,Oakleigh,8,0,4,0,8,0,48,9,Completed,
+AP007133,18 Feb 12,13,regular,Round 13,St Pauls,BLTC,0,8,0,4,2,8,25,58,Completed,
+AP007141,25 Feb 12,14,regular,Round 14,BLTC,Frankston East,4.5,3.5,1,0,3,2,27,22,Completed,
+AP007142,25 Feb 12,14,regular,Round 14,Oakleigh,St Pauls,1,7,1,3,2,6,30,39,Completed,
+pending-ap007-r14-lauriston-hawthorn,25 Feb 12,14,regular,Round 14,Lauriston,Hawthorn,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP007311,03 Mar 12,15,regular,Round 15,Frankston East,Lauriston,1.5,6.5,1,2,3,6,34,49,Completed,
+pending-ap007-r15-bltc-oakleigh,03 Mar 12,15,regular,Round 15,BLTC,Oakleigh,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap007-r15-frankston-east-hawthorn,03 Mar 12,15,regular,Round 15,Frankston East,Hawthorn,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap007-r15-st-pauls-lauriston,03 Mar 12,15,regular,Round 15,St Pauls,Lauriston,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP007321,,16,grand_final,Grand final · TROLS entry 2,Hawthorn,Lauriston,8,0,4,0,8,0,50,21,Completed,

@@ -1,0 +1,90 @@
+{
+  "asset_id": "AP21-AP009",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Winter 2010",
+  "season_id": "AP21",
+  "season_label": "Winter 2010",
+  "source_section_code": "AP009",
+  "section_label": "Mixed Rubbers 3",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Sth Murrumbeena",
+      "wins": 0,
+      "points": 105,
+      "percentage": 156.49,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Ardrie Park",
+      "wins": 0,
+      "points": 75,
+      "percentage": 118.32,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "St Johns",
+      "wins": 0,
+      "points": 72,
+      "percentage": 106.04,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Mentone",
+      "wins": 0,
+      "points": 52,
+      "percentage": 99.48,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Kings Park",
+      "wins": 0,
+      "points": 30,
+      "percentage": 64.07,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Le Page",
+      "wins": 0,
+      "points": 26,
+      "percentage": 80.73,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP21-AP009",
+  "fixtures": 47,
+  "completed_fixtures": 45,
+  "draw_fixtures": 57,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 180,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP009062 doubles No. 4: '4-6 0-3'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP009311 doubles No. 3: '3-6 6-3'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "asset_id": "AP45-AP010",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 22/23",
+  "season_id": "AP45",
+  "season_label": "Summer 22/23",
+  "source_section_code": "AP010",
+  "section_label": "Mens S/D 10",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Langwarrin",
+      "wins": 10,
+      "points": 92,
+      "percentage": 140.36,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "Mentone",
+      "wins": 7,
+      "points": 68,
+      "percentage": 111.11,
+      "marker": "P"
+    },
+    {
+      "position": 3,
+      "team": "BLTC",
+      "wins": 5,
+      "points": 67.5,
+      "percentage": 120.7,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Glen Huntly",
+      "wins": 5,
+      "points": 63.5,
+      "percentage": 107.52,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Tennis World",
+      "wins": 4,
+      "points": 49.5,
+      "percentage": 95.32,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "East Malvern Alex",
+      "wins": 4,
+      "points": 45,
+      "percentage": 77.27,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Royal Ave",
+      "wins": 2,
+      "points": 34.5,
+      "percentage": 67.84,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP45-AP010",
+  "fixtures": 59,
+  "completed_fixtures": 40,
+  "draw_fixtures": 59,
+  "singles_rubbers": 160,
+  "doubles_rubbers": 78,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP010023 singles No. 2: '1-0'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP010143 doubles No. 1: '6-2 4-3'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP010143 doubles No. 2: '6-4 4-5'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

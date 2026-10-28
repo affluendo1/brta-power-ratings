@@ -1,0 +1,99 @@
+{
+  "asset_id": "AP49-AP008",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 24/25",
+  "season_id": "AP49",
+  "season_label": "Summer 24/25",
+  "source_section_code": "AP008",
+  "section_label": "Mens S/D 8",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Hawthorn BCC",
+      "wins": 6,
+      "points": 71,
+      "percentage": 122.02,
+      "marker": ""
+    },
+    {
+      "position": 2,
+      "team": "Langwarrin",
+      "wins": 7,
+      "points": 69.5,
+      "percentage": 118.31,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Highmoor Uniting",
+      "wins": 4,
+      "points": 64.5,
+      "percentage": 106.14,
+      "marker": "R"
+    },
+    {
+      "position": 4,
+      "team": "BLTC White",
+      "wins": 5,
+      "points": 59,
+      "percentage": 102.3,
+      "marker": "P"
+    },
+    {
+      "position": 5,
+      "team": "Kooyong",
+      "wins": 4,
+      "points": 58,
+      "percentage": 83.1,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Tennis World",
+      "wins": 5,
+      "points": 55.5,
+      "percentage": 92.47,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Coatesville",
+      "wins": 1,
+      "points": 42.5,
+      "percentage": 76.34,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP49-AP008",
+  "fixtures": 59,
+  "completed_fixtures": 38,
+  "draw_fixtures": 59,
+  "singles_rubbers": 142,
+  "doubles_rubbers": 74,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP008014 singles No. 3: '4-3'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP008131 singles No. 1: '0-1'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP008131 doubles No. 2: '4-6 1-4'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

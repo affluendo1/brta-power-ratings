@@ -1,0 +1,111 @@
+{
+  "asset_id": "AP24-AP009",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 11/12",
+  "season_id": "AP24",
+  "season_label": "Summer 11/12",
+  "source_section_code": "AP009",
+  "section_label": "Mixed Rubbers 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Highmoor Uniting",
+      "wins": 9,
+      "points": 86,
+      "percentage": 152.73,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "BLTC",
+      "wins": 9,
+      "points": 77.5,
+      "percentage": 122.39,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "St Johns",
+      "wins": 7,
+      "points": 75.5,
+      "percentage": 135.34,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "St Pats Mentone",
+      "wins": 5,
+      "points": 62,
+      "percentage": 111.7,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Kings Park",
+      "wins": 4,
+      "points": 48,
+      "percentage": 88.94,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Le Page",
+      "wins": 3,
+      "points": 38,
+      "percentage": 73.35,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Hampton",
+      "wins": 2,
+      "points": 31,
+      "percentage": 70.17,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "Royal South Yarra",
+      "wins": 1,
+      "points": 30,
+      "percentage": 65.03,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP24-AP009",
+  "fixtures": 60,
+  "completed_fixtures": 48,
+  "draw_fixtures": 60,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 186,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP009062 doubles No. 2: '6-0 3-6'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP009063 doubles No. 4: '6-1 5-7'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP009071 doubles No. 1: '6-2 2-6 2-3'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP009071 doubles No. 2: '6-0 4-3'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP009093 doubles No. 4: '5-7 6-4 3-4'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP009141 doubles No. 1: '6-1 4-6 4-1'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP009321 doubles No. 3: '2-6 1-0'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

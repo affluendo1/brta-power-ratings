@@ -1,0 +1,87 @@
+{
+  "asset_id": "AP32-AP005",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 15/16",
+  "season_id": "AP32",
+  "season_label": "Summer 15/16",
+  "source_section_code": "AP005",
+  "section_label": "Mixed Rubbers A",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Overport Park Gold",
+      "wins": 11,
+      "points": 85,
+      "percentage": 120.43,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "Hampton Park",
+      "wins": 9,
+      "points": 71,
+      "percentage": 105.86,
+      "marker": "P"
+    },
+    {
+      "position": 3,
+      "team": "BLTC 1",
+      "wins": 8,
+      "points": 58,
+      "percentage": 93.76,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Overport Park Green",
+      "wins": 4,
+      "points": 53,
+      "percentage": 106.32,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "BLTC 2",
+      "wins": 6,
+      "points": 47,
+      "percentage": 84.25,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Dendy Park",
+      "wins": 4,
+      "points": 46,
+      "percentage": 93.15,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP32-AP005",
+  "fixtures": 46,
+  "completed_fixtures": 43,
+  "draw_fixtures": 57,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 172,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

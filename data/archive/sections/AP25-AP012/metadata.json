@@ -1,0 +1,79 @@
+{
+  "asset_id": "AP25-AP012",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Winter 2012",
+  "season_id": "AP25",
+  "season_label": "Winter 2012",
+  "source_section_code": "AP012",
+  "section_label": "Open S/D 3",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Kings Park",
+      "wins": 10,
+      "points": 74.5,
+      "percentage": 254.47,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Le Page",
+      "wins": 5,
+      "points": 57,
+      "percentage": 177.06,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Beaumaris CC",
+      "wins": 5,
+      "points": 40,
+      "percentage": 105.83,
+      "marker": "R"
+    },
+    {
+      "position": 4,
+      "team": "MCC",
+      "wins": 3,
+      "points": 29,
+      "percentage": 68.55,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Lauriston",
+      "wins": 1,
+      "points": 9.5,
+      "percentage": 30.31,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 3,
+    "singlesBestOf": 3,
+    "setTarget": 6,
+    "doublesSlots": 3,
+    "doublesBestOf": 1,
+    "doublesTarget": 10,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP25-AP012",
+  "fixtures": 47,
+  "completed_fixtures": 26,
+  "draw_fixtures": 57,
+  "singles_rubbers": 45,
+  "doubles_rubbers": 39,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

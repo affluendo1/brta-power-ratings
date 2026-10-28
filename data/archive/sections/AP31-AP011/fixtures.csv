@@ -1,0 +1,48 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP011011,02 May 15,1,regular,Round 1,East Malvern,Highett,2,8,3,6,,,45,58,Completed,
+AP011012,02 May 15,1,regular,Round 1,BLTC,MCC,2,8,2,6,,,25,54,Completed,
+AP011013,02 May 15,1,regular,Round 1,Murrumbeena,Mentone,2,8,3,5,,,31,41,Completed,
+AP011021,09 May 15,2,regular,Round 2,Mentone,East Malvern,2,8,2,6,,,39,51,Completed,
+AP011022,09 May 15,2,regular,Round 2,MCC,Murrumbeena,3,7,4,4,,,35,41,Completed,
+pending-ap011-r2-highett-bltc,09 May 15,2,regular,Round 2,Highett,BLTC,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+AP011031,16 May 15,3,regular,Round 3,East Malvern,BLTC,10,0,8,0,,,56,14,Completed,
+AP011032,16 May 15,3,regular,Round 3,Murrumbeena,Highett,2,8,3,6,,,45,52,Completed,
+pending-ap011-r3-mentone-mcc,16 May 15,3,regular,Round 3,Mentone,MCC,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP011041,23 May 15,4,regular,Round 4,MCC,East Malvern,5,5,4,4,,,43,44,Completed,
+AP011043,23 May 15,4,regular,Round 4,BLTC,Murrumbeena,7,3,5,4,,,51,43,Completed,
+pending-ap011-r4-highett-mentone,23 May 15,4,regular,Round 4,Highett,Mentone,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+AP011051,30 May 15,5,regular,Round 5,East Malvern,Murrumbeena,1.5,8.5,3,6,,,37,53,Completed,
+AP011052,30 May 15,5,regular,Round 5,MCC,Highett,8,2,6,2,,,50,33,Completed,
+AP011053,30 May 15,5,regular,Round 5,Mentone,BLTC,3,7,4,4,,,35,40,Completed,
+AP011061,13 Jun 15,6,regular,Round 6,Highett,East Malvern,2,8,3,6,,,37,59,Completed,
+AP011062,13 Jun 15,6,regular,Round 6,MCC,BLTC,9,1,7,1,,,55,35,Completed,
+AP011063,13 Jun 15,6,regular,Round 6,Mentone,Murrumbeena,8,2,5,3,,,47,37,Completed,
+AP011071,20 Jun 15,7,regular,Round 7,East Malvern,Mentone,9.5,0.5,7,0,,,54,26,Completed,
+AP011072,20 Jun 15,7,regular,Round 7,Murrumbeena,MCC,1,9,2,6,,,31,53,Completed,
+AP011073,20 Jun 15,7,regular,Round 7,BLTC,Highett,1,9,2,7,,,43,55,Completed,
+AP011081,27 Jun 15,8,regular,Round 8,BLTC,East Malvern,2,8,3,5,,,36,40,Completed,
+AP011082,27 Jun 15,8,regular,Round 8,Highett,Murrumbeena,2,8,3,6,,,48,57,Completed,
+AP011083,27 Jun 15,8,regular,Round 8,MCC,Mentone,3,7,4,4,,,39,41,Completed,
+AP011091,04 Jul 15,9,regular,Round 9,East Malvern,MCC,5,5,0,0,,,0,0,Completed,
+pending-ap011-r9-mentone-highett,04 Jul 15,9,regular,Round 9,Mentone,Highett,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+pending-ap011-r9-murrumbeena-bltc,04 Jul 15,9,regular,Round 9,Murrumbeena,BLTC,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP011103,11 Jul 15,10,regular,Round 10,BLTC,Mentone,5,5,0,0,,,0,0,Completed,
+pending-ap011-r10-highett-mcc,11 Jul 15,10,regular,Round 10,Highett,MCC,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap011-r10-murrumbeena-east-malvern,11 Jul 15,10,regular,Round 10,Murrumbeena,East Malvern,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP011112,18 Jul 15,11,regular,Round 11,BLTC,MCC,2,8,3,6,,,40,58,Completed,
+AP011113,18 Jul 15,11,regular,Round 11,Murrumbeena,Mentone,2,8,3,5,,,34,43,Completed,
+pending-ap011-r11-east-malvern-highett,18 Jul 15,11,regular,Round 11,East Malvern,Highett,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP011121,25 Jul 15,12,regular,Round 12,Mentone,East Malvern,2,8,3,6,,,45,49,Completed,
+AP011122,25 Jul 15,12,regular,Round 12,MCC,Murrumbeena,2,8,4,5,,,48,46,Completed,
+AP011123,25 Jul 15,12,regular,Round 12,Highett,BLTC,1,9,1,7,,,29,53,Completed,
+AP011131,01 Aug 15,13,regular,Round 13,East Malvern,BLTC,2,8,4,6,,,51,57,Completed,
+AP011132,01 Aug 15,13,regular,Round 13,Murrumbeena,Highett,10,0,8,0,,,58,30,Completed,
+AP011133,01 Aug 15,13,regular,Round 13,Mentone,MCC,1,9,1,7,,,22,51,Completed,
+AP011141,08 Aug 15,14,regular,Round 14,MCC,East Malvern,9,1,6,2,,,53,25,Completed,
+AP011142,08 Aug 15,14,regular,Round 14,Highett,Mentone,9,1,7,1,,,51,30,Completed,
+AP011143,08 Aug 15,14,regular,Round 14,BLTC,Murrumbeena,2,8,4,6,,,51,60,Completed,
+AP011151,15 Aug 15,15,regular,Round 15,East Malvern,Murrumbeena,5,5,4,4,,,41,41,Completed,
+AP011152,15 Aug 15,15,regular,Round 15,MCC,Highett,8,2,6,3,,,56,34,Completed,
+AP011153,15 Aug 15,15,regular,Round 15,Mentone,BLTC,10,0,8,1,,,63,37,Completed,
+AP011311,15 Aug 15,15,regular,Round 15,East Malvern,Murrumbeena,2,8,3,6,,,36,48,Completed,
+AP011321,,16,grand_final,Grand final · TROLS entry 2,MCC,Murrumbeena,3,7,4,5,,,45,51,Completed,

@@ -1,0 +1,201 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP001011,05 Oct 24,1,Dendy Park Gold,Overport Park,No. 1,Regan Morehu,Luke Vuletic,,3-4,3,4,0,1,Unfinished,false,false,false
+AP001011,05 Oct 24,1,Dendy Park Gold,Overport Park,No. 2,Michael Lancefield,Ethan Dench,,4-3,4,3,1,0,Unfinished,false,false,false
+AP001011,05 Oct 24,1,Dendy Park Gold,Overport Park,No. 3,Piet Van Der Lans,Grant Thompson,,4-3,4,3,1,0,Unfinished,false,false,false
+AP001011,05 Oct 24,1,Dendy Park Gold,Overport Park,No. 4,Harshavardhan Dinakaran,Luke Treveil,,4-4,4,4,0,0,Unfinished,false,false,false
+AP001012,05 Oct 24,1,Dendy Park Blue,BLTC Blue,No. 1,Tom Neylon,Michael Korobitsen,Tom Neylon,7-5,7,5,1,0,Completed,true,false,false
+AP001012,05 Oct 24,1,Dendy Park Blue,BLTC Blue,No. 2,Michael Kos,Jack Broadbent,Michael Kos,5-4,5,4,1,0,Completed,true,false,false
+AP001012,05 Oct 24,1,Dendy Park Blue,BLTC Blue,No. 3,Sam Kaplan,Mudiwa Munyimani,Sam Kaplan,6-5,6,5,1,0,Completed,true,false,false
+AP001012,05 Oct 24,1,Dendy Park Blue,BLTC Blue,No. 4,Nicholas Williams,Brady Watts,,5-5,5,5,0,0,Unfinished,false,false,false
+AP001013,05 Oct 24,1,Black Rock,BLTC White,No. 1,Florian Kostov,Kibet Yego,Kibet Yego,5-8,5,8,0,1,Completed,true,true,false
+AP001013,05 Oct 24,1,Black Rock,BLTC White,No. 2,Paul Ferguson,Josh Dawson,Josh Dawson,6-7,6,7,0,1,Completed,true,true,true
+AP001013,05 Oct 24,1,Black Rock,BLTC White,No. 3,Jackson Follett,Joshua Fairhurst,Joshua Fairhurst,1-6,1,6,0,1,Completed,true,false,false
+AP001013,05 Oct 24,1,Black Rock,BLTC White,No. 4,Rob Cvitkovic,Craig Stewart,,3-4,3,4,0,1,Unfinished,false,true,false
+AP001021,12 Oct 24,2,Altona Gold,Dendy Park Gold,No. 1,Juan Lovado,Geoffrey Herbet,Juan Lovado,8-2,8,2,1,0,Completed,true,false,false
+AP001021,12 Oct 24,2,Altona Gold,Dendy Park Gold,No. 2,Isai Torres,Arya Nayak,Arya Nayak,2-8,2,8,0,1,Completed,true,false,false
+AP001021,12 Oct 24,2,Altona Gold,Dendy Park Gold,No. 3,Louis Walters,Piet Van Der Lans,Piet Van Der Lans,5-8,5,8,0,1,Completed,true,true,false
+AP001021,12 Oct 24,2,Altona Gold,Dendy Park Gold,No. 4,Mark Separovic,Timothy O'Shannassy,Mark Separovic,8-0,8,0,1,0,Completed,true,false,false
+AP001022,12 Oct 24,2,Overport Park,Dendy Park Blue,No. 1,Luke Vuletic,Christian Williams,Christian Williams,2-8,2,8,0,1,Completed,true,false,false
+AP001022,12 Oct 24,2,Overport Park,Dendy Park Blue,No. 2,Andrew Scott,Michael Kos,Andrew Scott,8-5,8,5,1,0,Completed,true,false,false
+AP001022,12 Oct 24,2,Overport Park,Dendy Park Blue,No. 3,Seb Tring,Sam Kaplan,Seb Tring,8-5,8,5,1,0,Completed,true,false,false
+AP001022,12 Oct 24,2,Overport Park,Dendy Park Blue,No. 4,Luke Treveil,Nicholas Williams,Nicholas Williams,3-8,3,8,0,1,Completed,true,false,false
+AP001023,12 Oct 24,2,BLTC Blue,Black Rock,No. 1,Jack Broadbent,Kynan Enwright,Jack Broadbent,8-3,8,3,1,0,Completed,true,false,false
+AP001023,12 Oct 24,2,BLTC Blue,Black Rock,No. 2,Mudiwa Munyimani,Maksim Jezdic,Mudiwa Munyimani,8-0,8,0,1,0,Completed,true,false,false
+AP001023,12 Oct 24,2,BLTC Blue,Black Rock,No. 3,Christian Safko,Sebastian Liddle,Sebastian Liddle,4-8,4,8,0,1,Completed,true,true,false
+AP001023,12 Oct 24,2,BLTC Blue,Black Rock,No. 4,Richard Dodson,Jackson Follett,Jackson Follett,7-8,7,8,0,1,Completed,true,false,false
+AP001024,12 Oct 24,2,BLTC White,Mt Eliza,No. 1,Kibet Yego,Sam Young-Mathers,Sam Young-Mathers,5-8,5,8,0,1,Completed,true,false,false
+AP001024,12 Oct 24,2,BLTC White,Mt Eliza,No. 2,Ayden Kousis,Ben Cummins,Ayden Kousis,8-3,8,3,1,0,Completed,true,false,false
+AP001024,12 Oct 24,2,BLTC White,Mt Eliza,No. 3,Joshua Fairhurst,Sean Reekie,Joshua Fairhurst,8-1,8,1,1,0,Completed,true,false,false
+AP001024,12 Oct 24,2,BLTC White,Mt Eliza,No. 4,Maita Munyimani,Evan Atkinson,Maita Munyimani,8-4,8,4,1,0,Completed,true,false,false
+AP001031,19 Oct 24,3,Dendy Park Gold,BLTC White,No. 1,Geoffrey Herbet,Kibet Yego,Kibet Yego,3-8,3,8,0,1,Completed,true,false,false
+AP001031,19 Oct 24,3,Dendy Park Gold,BLTC White,No. 2,Arya Nayak,Joshua Fairhurst,Arya Nayak,8-2,8,2,1,0,Completed,true,false,false
+AP001031,19 Oct 24,3,Dendy Park Gold,BLTC White,No. 3,Piet Van Der Lans,Kai Ballantyne,Piet Van Der Lans,8-3,8,3,1,0,Completed,true,false,false
+AP001031,19 Oct 24,3,Dendy Park Gold,BLTC White,No. 4,Harshavardhan Dinakaran,Jamie Hamori,Harshavardhan Dinakaran,8-2,8,2,1,0,Completed,true,false,true
+AP001032,19 Oct 24,3,Dendy Park Blue,Altona Gold,No. 1,Christian Williams,Juan Lovado,Christian Williams,8-4,8,4,1,0,Completed,true,false,false
+AP001032,19 Oct 24,3,Dendy Park Blue,Altona Gold,No. 2,Michael Kos,Louis Walters,Michael Kos,8-1,8,1,1,0,Completed,true,false,true
+AP001032,19 Oct 24,3,Dendy Park Blue,Altona Gold,No. 3,Sam Kaplan,Takumi Katsumata,Sam Kaplan,8-3,8,3,1,0,Completed,true,false,false
+AP001032,19 Oct 24,3,Dendy Park Blue,Altona Gold,No. 4,Nicholas Williams,Hirofumi Kubota,Nicholas Williams,8-1,8,1,1,0,Completed,true,false,false
+AP001033,19 Oct 24,3,Black Rock,Overport Park,No. 1,Kynan Enwright,Luke Vuletic,Luke Vuletic,4-8,4,8,0,1,Completed,true,false,false
+AP001033,19 Oct 24,3,Black Rock,Overport Park,No. 2,Sebastian Liddle,Andrew Scott,Andrew Scott,1-8,1,8,0,1,Completed,true,false,false
+AP001033,19 Oct 24,3,Black Rock,Overport Park,No. 3,Frankie Hillier,Grant Thompson,Grant Thompson,6-8,6,8,0,1,Completed,true,true,false
+AP001033,19 Oct 24,3,Black Rock,Overport Park,No. 4,Jackson Follett,Luke Treveil,Luke Treveil,1-8,1,8,0,1,Completed,true,false,false
+AP001034,19 Oct 24,3,Mt Eliza,BLTC Blue,No. 1,Sam Young-Mathers,Michael Korobitsen,Sam Young-Mathers,8-5,8,5,1,0,Completed,true,false,false
+AP001034,19 Oct 24,3,Mt Eliza,BLTC Blue,No. 2,Stefan Storch,Jack Broadbent,Stefan Storch,8-2,8,2,1,0,Completed,true,false,false
+AP001034,19 Oct 24,3,Mt Eliza,BLTC Blue,No. 3,Sean Reekie,Mudiwa Munyimani,Mudiwa Munyimani,1-8,1,8,0,1,Completed,true,false,false
+AP001034,19 Oct 24,3,Mt Eliza,BLTC Blue,No. 4,Jack Shurdington,Brady Watts,Brady Watts,4-8,4,8,0,1,Completed,true,true,false
+AP001041,26 Oct 24,4,BLTC Blue,Dendy Park Gold,No. 1,Jack Broadbent,Geoffrey Herbet,Geoffrey Herbet,5-8,5,8,0,1,Completed,true,false,false
+AP001041,26 Oct 24,4,BLTC Blue,Dendy Park Gold,No. 2,Brady Watts,Regan Morehu,Brady Watts,8-2,8,2,1,0,Completed,true,false,false
+AP001041,26 Oct 24,4,BLTC Blue,Dendy Park Gold,No. 3,Richard Dodson,Michael Lancefield,Michael Lancefield,4-8,4,8,0,1,Completed,true,false,false
+AP001041,26 Oct 24,4,BLTC Blue,Dendy Park Gold,No. 4,Christian Safko,Piet Van Der Lans,Piet Van Der Lans,0-8,0,8,0,1,Completed,true,true,false
+AP001042,26 Oct 24,4,BLTC White,Dendy Park Blue,No. 1,Kibet Yego,Tom Neylon,Kibet Yego,8-7,8,7,1,0,Completed,true,false,false
+AP001042,26 Oct 24,4,BLTC White,Dendy Park Blue,No. 2,Joshua Fairhurst,Christian Williams,Christian Williams,0-8,0,8,0,1,Completed,true,false,false
+AP001042,26 Oct 24,4,BLTC White,Dendy Park Blue,No. 3,Reilly Scollo,Michael Kos,Michael Kos,2-8,2,8,0,1,Completed,true,false,false
+AP001042,26 Oct 24,4,BLTC White,Dendy Park Blue,No. 4,Craig Stewart,Nicholas Williams,Nicholas Williams,2-8,2,8,0,1,Completed,true,false,false
+AP001043,26 Oct 24,4,Altona Gold,Black Rock,No. 1,Nicholas Martinez,Kynan Enwright,Kynan Enwright,4-8,4,8,0,1,Completed,true,true,false
+AP001043,26 Oct 24,4,Altona Gold,Black Rock,No. 2,Aleks Jankovic,Sebastian Liddle,Sebastian Liddle,5-8,5,8,0,1,Completed,true,true,false
+AP001043,26 Oct 24,4,Altona Gold,Black Rock,No. 3,Mark Separovic,Zoran Josic,Zoran Josic,4-8,4,8,0,1,Completed,true,false,true
+AP001043,26 Oct 24,4,Altona Gold,Black Rock,No. 4,Takumi Katsumata,Rob Cvitkovic,Takumi Katsumata,8-2,8,2,1,0,Completed,true,false,true
+AP001044,26 Oct 24,4,Overport Park,Mt Eliza,No. 1,Luke Vuletic,Sam Young-Mathers,Luke Vuletic,8-6,8,6,1,0,Completed,true,false,false
+AP001044,26 Oct 24,4,Overport Park,Mt Eliza,No. 2,Andrew Scott,Corey Child,Andrew Scott,8-2,8,2,1,0,Completed,true,false,false
+AP001044,26 Oct 24,4,Overport Park,Mt Eliza,No. 3,Seb Tring,Sean Reekie,Seb Tring,8-4,8,4,1,0,Completed,true,false,false
+AP001044,26 Oct 24,4,Overport Park,Mt Eliza,No. 4,Grant Thompson,Evan Atkinson,Grant Thompson,8-6,8,6,1,0,Completed,true,false,false
+AP001051,09 Nov 24,5,Black Rock,Mt Eliza,No. 1,Ali Roshan,Corey Child,Corey Child,5-8,5,8,0,1,Completed,true,false,false
+AP001051,09 Nov 24,5,Black Rock,Mt Eliza,No. 2,Sebastian Liddle,Sean Reekie,Sean Reekie,5-8,5,8,0,1,Completed,true,false,false
+AP001051,09 Nov 24,5,Black Rock,Mt Eliza,No. 3,Jackson Follett,Evan Atkinson,Evan Atkinson,6-8,6,8,0,1,Completed,true,false,false
+AP001051,09 Nov 24,5,Black Rock,Mt Eliza,No. 4,Justin Lai,Patrick Flood,Patrick Flood,0-8,0,8,0,1,Completed,true,true,true
+AP001052,09 Nov 24,5,Altona Gold,BLTC White,No. 1,Juan Lovado,Joseph Coll,Juan Lovado,8-3,8,3,1,0,Completed,true,false,true
+AP001052,09 Nov 24,5,Altona Gold,BLTC White,No. 2,Isai Torres,Maita Munyimani,Isai Torres,8-5,8,5,1,0,Completed,true,false,false
+AP001052,09 Nov 24,5,Altona Gold,BLTC White,No. 3,Riley Fegan,Kai Ballantyne,Riley Fegan,8-6,8,6,1,0,Completed,true,false,false
+AP001052,09 Nov 24,5,Altona Gold,BLTC White,No. 4,Mark Separovic,Jamie Hamori,Mark Separovic,8-2,8,2,1,0,Completed,true,false,true
+AP001053,09 Nov 24,5,BLTC Blue,Overport Park,No. 1,Michael Korobitsen,Seb Tring,Michael Korobitsen,8-3,8,3,1,0,Completed,true,false,false
+AP001053,09 Nov 24,5,BLTC Blue,Overport Park,No. 2,Mudiwa Munyimani,Grant Thompson,Mudiwa Munyimani,8-5,8,5,1,0,Completed,true,false,false
+AP001053,09 Nov 24,5,BLTC Blue,Overport Park,No. 3,Richard Dodson,Luke Treveil,Luke Treveil,5-8,5,8,0,1,Completed,true,false,false
+AP001053,09 Nov 24,5,BLTC Blue,Overport Park,No. 4,Macgregor Anderson,Fraser Keon,Macgregor Anderson,8-5,8,5,1,0,Completed,true,true,true
+AP001054,09 Nov 24,5,Dendy Park Gold,Dendy Park Blue,No. 1,Geoffrey Herbet,Christian Williams,Christian Williams,2-8,2,8,0,1,Completed,true,false,false
+AP001054,09 Nov 24,5,Dendy Park Gold,Dendy Park Blue,No. 2,Regan Morehu,Michael Kos,Michael Kos,0-8,0,8,0,1,Completed,true,false,false
+AP001054,09 Nov 24,5,Dendy Park Gold,Dendy Park Blue,No. 3,Arya Nayak,Sam Kaplan,Sam Kaplan,6-8,6,8,0,1,Completed,true,false,false
+AP001054,09 Nov 24,5,Dendy Park Gold,Dendy Park Blue,No. 4,Piet Van Der Lans,Nicholas Williams,Nicholas Williams,6-8,6,8,0,1,Completed,true,false,false
+AP001061,16 Nov 24,6,Dendy Park Blue,Black Rock,No. 1,Christian Williams,Kynan Enwright,Christian Williams,8-3,8,3,1,0,Completed,true,false,false
+AP001061,16 Nov 24,6,Dendy Park Blue,Black Rock,No. 2,Michael Kos,Ali Roshan,Michael Kos,8-2,8,2,1,0,Completed,true,false,false
+AP001061,16 Nov 24,6,Dendy Park Blue,Black Rock,No. 3,Nicholas Williams,Sebastian Liddle,Nicholas Williams,8-5,8,5,1,0,Completed,true,false,false
+AP001061,16 Nov 24,6,Dendy Park Blue,Black Rock,No. 4,Aris Androutsopoulos,Frankie Hillier,Frankie Hillier,4-8,4,8,0,1,Completed,true,true,true
+AP001062,16 Nov 24,6,Mt Eliza,Dendy Park Gold,No. 1,Corey Child,Geoffrey Herbet,Geoffrey Herbet,6-8,6,8,0,1,Completed,true,false,false
+AP001062,16 Nov 24,6,Mt Eliza,Dendy Park Gold,No. 2,Sean Reekie,Michael Lancefield,Michael Lancefield,2-8,2,8,0,1,Completed,true,false,false
+AP001062,16 Nov 24,6,Mt Eliza,Dendy Park Gold,No. 3,Patrick Flood,Riley Walker,Riley Walker,7-8,7,8,0,1,Completed,true,true,false
+AP001062,16 Nov 24,6,Mt Eliza,Dendy Park Gold,No. 4,Jack Shurdington,Harshavardhan Dinakaran,Jack Shurdington,8-4,8,4,1,0,Completed,true,true,false
+AP001063,16 Nov 24,6,BLTC White,BLTC Blue,No. 1,Ayden Kousis,Michael Korobitsen,Michael Korobitsen,6-8,6,8,0,1,Completed,true,false,false
+AP001063,16 Nov 24,6,BLTC White,BLTC Blue,No. 2,Joshua Fairhurst,Josep Llo,Joshua Fairhurst,8-6,8,6,1,0,Completed,true,false,true
+AP001063,16 Nov 24,6,BLTC White,BLTC Blue,No. 3,Reilly Scollo,Mudiwa Munyimani,Mudiwa Munyimani,3-8,3,8,0,1,Completed,true,false,false
+AP001063,16 Nov 24,6,BLTC White,BLTC Blue,No. 4,Brodie Moller,Macgregor Anderson,Macgregor Anderson,4-8,4,8,0,1,Completed,true,false,true
+AP001064,16 Nov 24,6,Overport Park,Altona Gold,No. 1,Seb Tring,Isai Torres,Seb Tring,8-4,8,4,1,0,Completed,true,false,false
+AP001064,16 Nov 24,6,Overport Park,Altona Gold,No. 2,Ethan Dench,Mark Separovic,Ethan Dench,8-0,8,0,1,0,Completed,true,false,false
+AP001064,16 Nov 24,6,Overport Park,Altona Gold,No. 3,Grant Thompson,Takumi Katsumata,Grant Thompson,8-7,8,7,1,0,Completed,true,false,false
+AP001064,16 Nov 24,6,Overport Park,Altona Gold,No. 4,Luke Treveil,Josh Fleming,Luke Treveil,8-7,8,7,1,0,Completed,true,false,true
+AP001071,23 Nov 24,7,Dendy Park Gold,Black Rock,No. 1,Geoffrey Herbet,Kynan Enwright,Kynan Enwright,3-8,3,8,0,1,Completed,true,false,false
+AP001071,23 Nov 24,7,Dendy Park Gold,Black Rock,No. 2,Regan Morehu,Ali Roshan,Ali Roshan,6-8,6,8,0,1,Completed,true,false,false
+AP001071,23 Nov 24,7,Dendy Park Gold,Black Rock,No. 3,Arya Nayak,Joel Thomas,Arya Nayak,8-5,8,5,1,0,Completed,true,false,true
+AP001071,23 Nov 24,7,Dendy Park Gold,Black Rock,No. 4,Harshavardhan Dinakaran,Austin Taleb,Austin Taleb,7-8,7,8,0,1,Completed,true,false,true
+AP001073,23 Nov 24,7,Altona Gold,BLTC Blue,No. 1,Juan Lovado,Michael Korobitsen,Michael Korobitsen,2-8,2,8,0,1,Completed,true,false,false
+AP001073,23 Nov 24,7,Altona Gold,BLTC Blue,No. 2,Max Hamilton,Jack Broadbent,Jack Broadbent,7-8,7,8,0,1,Completed,true,true,false
+AP001073,23 Nov 24,7,Altona Gold,BLTC Blue,No. 3,Flavio Morato,Brady Watts,Brady Watts,1-8,1,8,0,1,Completed,true,true,false
+AP001073,23 Nov 24,7,Altona Gold,BLTC Blue,No. 4,Takumi Katsumata,Macgregor Anderson,Macgregor Anderson,3-8,3,8,0,1,Completed,true,false,true
+AP001091,07 Dec 24,9,Dendy Park Gold,Altona Gold,No. 1,Geoffrey Herbet,Isai Torres,Geoffrey Herbet,8-0,8,0,1,0,Completed,true,false,false
+AP001091,07 Dec 24,9,Dendy Park Gold,Altona Gold,No. 2,Regan Morehu,Wynand Louw,Regan Morehu,8-0,8,0,1,0,Completed,true,false,true
+AP001091,07 Dec 24,9,Dendy Park Gold,Altona Gold,No. 3,Michael Lancefield,Mark Separovic,Michael Lancefield,8-3,8,3,1,0,Completed,true,false,false
+AP001091,07 Dec 24,9,Dendy Park Gold,Altona Gold,No. 4,Aris Androutsopoulos,Takumi Katsumata,Takumi Katsumata,7-8,7,8,0,1,Completed,true,false,false
+AP001092,07 Dec 24,9,Dendy Park Blue,Overport Park,No. 1,Tom Neylon,Andrew Scott,Tom Neylon,8-7,8,7,1,0,Completed,true,false,false
+AP001092,07 Dec 24,9,Dendy Park Blue,Overport Park,No. 2,Michael Kos,Seb Tring,Seb Tring,6-8,6,8,0,1,Completed,true,false,false
+AP001092,07 Dec 24,9,Dendy Park Blue,Overport Park,No. 3,Sam Kaplan,Grant Thompson,Sam Kaplan,8-2,8,2,1,0,Completed,true,false,false
+AP001092,07 Dec 24,9,Dendy Park Blue,Overport Park,No. 4,Nicholas Williams,Luke Treveil,Nicholas Williams,8-2,8,2,1,0,Completed,true,false,false
+AP001093,07 Dec 24,9,Black Rock,BLTC Blue,No. 1,Kynan Enwright,Jack Broadbent,Kynan Enwright,8-7,8,7,1,0,Completed,true,false,false
+AP001093,07 Dec 24,9,Black Rock,BLTC Blue,No. 2,Ali Roshan,Brady Watts,Brady Watts,5-8,5,8,0,1,Completed,true,false,false
+AP001093,07 Dec 24,9,Black Rock,BLTC Blue,No. 3,Jackson Follett,Richard Dodson,Richard Dodson,6-8,6,8,0,1,Completed,true,false,false
+AP001093,07 Dec 24,9,Black Rock,BLTC Blue,No. 4,Adam Majdan,Macgregor Anderson,Macgregor Anderson,1-8,1,8,0,1,Completed,true,true,true
+AP001094,07 Dec 24,9,Mt Eliza,BLTC White,No. 1,Stefan Storch,Ayden Kousis,Stefan Storch,8-3,8,3,1,0,Completed,true,false,false
+AP001094,07 Dec 24,9,Mt Eliza,BLTC White,No. 2,Mike Vaughan,Brodie Moller,Mike Vaughan,8-1,8,1,1,0,Completed,true,false,false
+AP001094,07 Dec 24,9,Mt Eliza,BLTC White,No. 3,Corey Child,Maita Munyimani,Corey Child,8-4,8,4,1,0,Completed,true,false,false
+AP001094,07 Dec 24,9,Mt Eliza,BLTC White,No. 4,Sean Reekie,Craig Stewart,Sean Reekie,8-7,8,7,1,0,Completed,true,false,false
+AP001101,14 Dec 24,10,BLTC White,Dendy Park Gold,No. 1,Joshua Fairhurst,Geoffrey Herbet,Geoffrey Herbet,4-8,4,8,0,1,Completed,true,false,false
+AP001101,14 Dec 24,10,BLTC White,Dendy Park Gold,No. 2,Reilly Scollo,Regan Morehu,Regan Morehu,2-8,2,8,0,1,Completed,true,false,false
+AP001101,14 Dec 24,10,BLTC White,Dendy Park Gold,No. 3,Brodie Moller,Riley Walker,Riley Walker,6-8,6,8,0,1,Completed,true,false,false
+AP001101,14 Dec 24,10,BLTC White,Dendy Park Gold,No. 4,Craig Stewart,Harshavardhan Dinakaran,Harshavardhan Dinakaran,3-8,3,8,0,1,Completed,true,false,false
+AP001102,14 Dec 24,10,Altona Gold,Dendy Park Blue,No. 1,Aleks Jankovic,Christian Williams,Christian Williams,0-8,0,8,0,1,Completed,true,true,false
+AP001102,14 Dec 24,10,Altona Gold,Dendy Park Blue,No. 2,Isai Torres,Michael Kos,Michael Kos,3-8,3,8,0,1,Completed,true,false,false
+AP001102,14 Dec 24,10,Altona Gold,Dendy Park Blue,No. 3,Takumi Katsumata,Sam Kaplan,Takumi Katsumata,8-4,8,4,1,0,Completed,true,false,false
+AP001102,14 Dec 24,10,Altona Gold,Dendy Park Blue,No. 4,Hirofumi Kubota,Nicholas Williams,Nicholas Williams,2-8,2,8,0,1,Completed,true,false,false
+AP001103,14 Dec 24,10,Overport Park,Black Rock,No. 1,Luke Vuletic,Ali Roshan,Ali Roshan,0-8,0,8,0,1,Completed,true,false,false
+AP001103,14 Dec 24,10,Overport Park,Black Rock,No. 2,Andrew Scott,Maksim Jezdic,Andrew Scott,8-4,8,4,1,0,Completed,true,false,false
+AP001103,14 Dec 24,10,Overport Park,Black Rock,No. 3,Grant Thompson,Sebastian Liddle,Grant Thompson,8-6,8,6,1,0,Completed,true,false,false
+AP001103,14 Dec 24,10,Overport Park,Black Rock,No. 4,Luke Treveil,Austin Taleb,Luke Treveil,8-3,8,3,1,0,Completed,true,false,true
+AP001104,14 Dec 24,10,BLTC Blue,Mt Eliza,No. 1,Luke Sorenson,Sam Young-Mathers,Luke Sorenson,8-3,8,3,1,0,Completed,true,true,false
+AP001104,14 Dec 24,10,BLTC Blue,Mt Eliza,No. 2,Jack Broadbent,Stefan Storch,Stefan Storch,3-8,3,8,0,1,Completed,true,false,false
+AP001104,14 Dec 24,10,BLTC Blue,Mt Eliza,No. 3,Mudiwa Munyimani,Corey Child,Corey Child,3-8,3,8,0,1,Completed,true,false,false
+AP001104,14 Dec 24,10,BLTC Blue,Mt Eliza,No. 4,Richard Dodson,Evan Atkinson,Evan Atkinson,7-8,7,8,0,1,Completed,true,false,false
+AP001111,01 Feb 25,11,Dendy Park Gold,BLTC Blue,No. 1,Geoffrey Herbet,Jack Broadbent,Geoffrey Herbet,8-5,8,5,1,0,Completed,true,false,false
+AP001111,01 Feb 25,11,Dendy Park Gold,BLTC Blue,No. 2,Regan Morehu,Mudiwa Munyimani,Regan Morehu,8-4,8,4,1,0,Completed,true,false,false
+AP001111,01 Feb 25,11,Dendy Park Gold,BLTC Blue,No. 3,Arya Nayak,Brady Watts,Arya Nayak,8-6,8,6,1,0,Completed,true,false,false
+AP001111,01 Feb 25,11,Dendy Park Gold,BLTC Blue,No. 4,Piet Van Der Lans,Richard Dodson,Piet Van Der Lans,8-1,8,1,1,0,Completed,true,false,false
+AP001112,01 Feb 25,11,Dendy Park Blue,BLTC White,No. 1,Michael Kos,Joseph Coll,Joseph Coll,0-8,0,8,0,1,Completed,true,false,true
+AP001112,01 Feb 25,11,Dendy Park Blue,BLTC White,No. 2,Sam Kaplan,Joshua Fairhurst,Sam Kaplan,8-6,8,6,1,0,Completed,true,false,false
+AP001112,01 Feb 25,11,Dendy Park Blue,BLTC White,No. 3,Nicholas Williams,Christian Safko,Nicholas Williams,8-4,8,4,1,0,Completed,true,false,true
+AP001112,01 Feb 25,11,Dendy Park Blue,BLTC White,No. 4,[Unnamed emergency — TROLS AP001112 home code 4],Craig Stewart,Craig Stewart,0-8,0,8,0,1,Completed,false,true,false
+AP001113,01 Feb 25,11,Black Rock,Altona Gold,No. 1,Kynan Enwright,Juan Lovado,Kynan Enwright,8-5,8,5,1,0,Completed,true,false,false
+AP001113,01 Feb 25,11,Black Rock,Altona Gold,No. 2,Ali Roshan,Alfonso Sammasimo,Alfonso Sammasimo,4-8,4,8,0,1,Completed,true,false,true
+AP001113,01 Feb 25,11,Black Rock,Altona Gold,No. 3,Maksim Jezdic,Isai Torres,Isai Torres,5-8,5,8,0,1,Completed,true,false,false
+AP001113,01 Feb 25,11,Black Rock,Altona Gold,No. 4,Joel Thomas,Riley Fegan,Riley Fegan,7-8,7,8,0,1,Completed,true,true,false
+AP001114,01 Feb 25,11,Mt Eliza,Overport Park,No. 1,Stefan Storch,Seb Tring,Stefan Storch,8-0,8,0,1,0,Completed,true,false,false
+AP001114,01 Feb 25,11,Mt Eliza,Overport Park,No. 2,Sam Young-Mathers,Nick Wilson,Sam Young-Mathers,8-1,8,1,1,0,Completed,true,false,true
+AP001114,01 Feb 25,11,Mt Eliza,Overport Park,No. 3,Corey Child,Grant Thompson,Grant Thompson,1-8,1,8,0,1,Completed,true,false,false
+AP001114,01 Feb 25,11,Mt Eliza,Overport Park,No. 4,Sean Reekie,Luke Treveil,Sean Reekie,8-3,8,3,1,0,Completed,true,false,false
+AP001121,08 Feb 25,12,Mt Eliza,Black Rock,No. 1,Corey Child,Ali Roshan,Corey Child,8-3,8,3,1,0,Completed,true,false,false
+AP001121,08 Feb 25,12,Mt Eliza,Black Rock,No. 2,Sean Reekie,Maksim Jezdic,Sean Reekie,8-5,8,5,1,0,Completed,true,false,false
+AP001121,08 Feb 25,12,Mt Eliza,Black Rock,No. 3,Evan Atkinson,Sebastian Liddle,Sebastian Liddle,6-8,6,8,0,1,Completed,true,false,false
+AP001121,08 Feb 25,12,Mt Eliza,Black Rock,No. 4,Alex McDonald,Joel Thomas,Joel Thomas,1-8,1,8,0,1,Completed,true,true,true
+AP001122,08 Feb 25,12,BLTC White,Altona Gold,No. 1,Christian Safko,Isai Torres,Christian Safko,8-6,8,6,1,0,Completed,true,true,false
+AP001122,08 Feb 25,12,BLTC White,Altona Gold,No. 2,Josh Chu,Riley Fegan,Riley Fegan,6-8,6,8,0,1,Completed,true,false,false
+AP001122,08 Feb 25,12,BLTC White,Altona Gold,No. 3,Brodie Moller,Mark Separovic,Mark Separovic,2-8,2,8,0,1,Completed,true,false,false
+AP001122,08 Feb 25,12,BLTC White,Altona Gold,No. 4,Craig Stewart,Takumi Katsumata,Craig Stewart,8-1,8,1,1,0,Completed,true,false,false
+AP001123,08 Feb 25,12,Overport Park,BLTC Blue,No. 1,Michael Turlejski,Michael Korobitsen,Michael Korobitsen,3-8,3,8,0,1,Completed,true,false,false
+AP001123,08 Feb 25,12,Overport Park,BLTC Blue,No. 2,Andrew Scott,Jack Broadbent,Jack Broadbent,6-8,6,8,0,1,Completed,true,false,false
+AP001123,08 Feb 25,12,Overport Park,BLTC Blue,No. 3,Joshua Dewhurst,Brady Watts,Brady Watts,6-8,6,8,0,1,Completed,true,true,false
+AP001123,08 Feb 25,12,Overport Park,BLTC Blue,No. 4,Luke Treveil,Macgregor Anderson,Luke Treveil,8-6,8,6,1,0,Completed,true,false,true
+AP001124,08 Feb 25,12,Dendy Park Blue,Dendy Park Gold,No. 1,Sam Kaplan,Geoffrey Herbet,Geoffrey Herbet,6-8,6,8,0,1,Completed,true,false,false
+AP001124,08 Feb 25,12,Dendy Park Blue,Dendy Park Gold,No. 2,Nicholas Williams,Piet Van Der Lans,Nicholas Williams,8-4,8,4,1,0,Completed,true,false,false
+AP001124,08 Feb 25,12,Dendy Park Blue,Dendy Park Gold,No. 3,Stefan Djorbjic,Harshavardhan Dinakaran,Harshavardhan Dinakaran,3-8,3,8,0,1,Completed,true,true,false
+AP001124,08 Feb 25,12,Dendy Park Blue,Dendy Park Gold,No. 4,[Unnamed emergency — TROLS AP001124 home code 4],Aris Androutsopoulos,Aris Androutsopoulos,0-8,0,8,0,1,Completed,false,true,false
+AP001131,15 Feb 25,13,Black Rock,Dendy Park Blue,No. 1,Ali Roshan,Michael Kos,Michael Kos,2-8,2,8,0,1,Completed,true,false,false
+AP001131,15 Feb 25,13,Black Rock,Dendy Park Blue,No. 2,Maksim Jezdic,Sam Kaplan,Sam Kaplan,5-8,5,8,0,1,Completed,true,false,false
+AP001131,15 Feb 25,13,Black Rock,Dendy Park Blue,No. 3,Jackson Follett,Nicholas Williams,Nicholas Williams,6-8,6,8,0,1,Completed,true,false,false
+AP001131,15 Feb 25,13,Black Rock,Dendy Park Blue,No. 4,Austin Taleb,Darko Pasara,Austin Taleb,8-0,8,0,1,0,Completed,true,true,true
+AP001132,15 Feb 25,13,Dendy Park Gold,Mt Eliza,No. 1,Geoffrey Herbet,Stefan Harangozo,Stefan Harangozo,4-8,4,8,0,1,Completed,true,false,false
+AP001132,15 Feb 25,13,Dendy Park Gold,Mt Eliza,No. 2,Michael Lancefield,Corey Child,Michael Lancefield,8-6,8,6,1,0,Completed,true,false,false
+AP001132,15 Feb 25,13,Dendy Park Gold,Mt Eliza,No. 3,Riley Walker,Ben Cummins,Ben Cummins,4-8,4,8,0,1,Completed,true,false,false
+AP001132,15 Feb 25,13,Dendy Park Gold,Mt Eliza,No. 4,Piet Van Der Lans,Sean Reekie,Piet Van Der Lans,8-6,8,6,1,0,Completed,true,false,false
+AP001133,15 Feb 25,13,BLTC Blue,BLTC White,No. 1,Michael Korobitsen,Ayden Kousis,Michael Korobitsen,8-4,8,4,1,0,Completed,true,false,false
+AP001133,15 Feb 25,13,BLTC Blue,BLTC White,No. 2,Jack Broadbent,Joshua Fairhurst,Jack Broadbent,8-4,8,4,1,0,Completed,true,false,false
+AP001133,15 Feb 25,13,BLTC Blue,BLTC White,No. 3,Mudiwa Munyimani,Josh Chu,Josh Chu,6-8,6,8,0,1,Completed,true,false,false
+AP001133,15 Feb 25,13,BLTC Blue,BLTC White,No. 4,Christian Safko,Jamie Hamori,Jamie Hamori,3-8,3,8,0,1,Completed,true,true,true
+AP001134,15 Feb 25,13,Altona Gold,Overport Park,No. 1,Juan Lovado,Michael Turlejski,Michael Turlejski,4-8,4,8,0,1,Completed,true,false,false
+AP001134,15 Feb 25,13,Altona Gold,Overport Park,No. 2,Isai Torres,Andrew Scott,Andrew Scott,2-8,2,8,0,1,Completed,true,false,false
+AP001134,15 Feb 25,13,Altona Gold,Overport Park,No. 3,Mark Separovic,Grant Thompson,Mark Separovic,8-3,8,3,1,0,Completed,true,false,false
+AP001134,15 Feb 25,13,Altona Gold,Overport Park,No. 4,Takumi Katsumata,Luke Treveil,Takumi Katsumata,8-3,8,3,1,0,Completed,true,false,false
+AP001141,22 Feb 25,14,Black Rock,Dendy Park Gold,No. 1,Kynan Enwright,Riley Walker,Kynan Enwright,8-4,8,4,1,0,Completed,true,false,false
+AP001141,22 Feb 25,14,Black Rock,Dendy Park Gold,No. 2,Ali Roshan,Piet Van Der Lans,Piet Van Der Lans,7-8,7,8,0,1,Completed,true,false,false
+AP001141,22 Feb 25,14,Black Rock,Dendy Park Gold,No. 3,Paul Ferguson,Aris Androutsopoulos,Paul Ferguson,8-2,8,2,1,0,Completed,true,true,false
+AP001141,22 Feb 25,14,Black Rock,Dendy Park Gold,No. 4,Tory Dickson,Harrie Carr,Tory Dickson,8-0,8,0,1,0,Completed,true,true,true
+AP001143,22 Feb 25,14,BLTC Blue,Altona Gold,No. 1,Michael Korobitsen,Louis Walters,Michael Korobitsen,8-0,8,0,1,0,Completed,true,false,true
+AP001143,22 Feb 25,14,BLTC Blue,Altona Gold,No. 2,Jack Broadbent,Ren Asai,Jack Broadbent,8-5,8,5,1,0,Completed,true,false,true
+AP001143,22 Feb 25,14,BLTC Blue,Altona Gold,No. 3,Mudiwa Munyimani,Riley Fegan,Mudiwa Munyimani,8-6,8,6,1,0,Completed,true,false,false
+AP001143,22 Feb 25,14,BLTC Blue,Altona Gold,No. 4,Brady Watts,Rhys Collins,Brady Watts,8-1,8,1,1,0,Completed,true,false,true
+AP001144,22 Feb 25,14,Overport Park,BLTC White,No. 1,Michael Turlejski,Ayden Kousis,Michael Turlejski,8-3,8,3,1,0,Completed,true,false,false
+AP001144,22 Feb 25,14,Overport Park,BLTC White,No. 2,Andrew Scott,Josh Chu,Andrew Scott,8-1,8,1,1,0,Completed,true,false,false
+AP001144,22 Feb 25,14,Overport Park,BLTC White,No. 3,Seb Tring,Craig Stewart,Seb Tring,8-1,8,1,1,0,Completed,true,false,false
+AP001144,22 Feb 25,14,Overport Park,BLTC White,No. 4,Grant Thompson,Jamie Hamori,Grant Thompson,8-0,8,0,1,0,Completed,true,false,true
+AP001301,,16,Mt Eliza,Overport Park,No. 1,Stefan Storch,Michael Turlejski,Stefan Storch,8-5,8,5,1,0,Completed,true,false,false
+AP001301,,16,Mt Eliza,Overport Park,No. 2,Sam Young-Mathers,Andrew Scott,Sam Young-Mathers,8-2,8,2,1,0,Completed,true,false,false
+AP001301,,16,Mt Eliza,Overport Park,No. 3,Stefan Harangozo,Seb Tring,Stefan Harangozo,8-2,8,2,1,0,Completed,true,false,false
+AP001301,,16,Mt Eliza,Overport Park,No. 4,Corey Child,Grant Thompson,Grant Thompson,3-8,3,8,0,1,Completed,true,false,false
+AP001302,,16,BLTC Blue,Dendy Park Blue,No. 1,Michael Korobitsen,Tom Neylon,Michael Korobitsen,5-2,5,2,1,0,Completed,true,false,false
+AP001302,,16,BLTC Blue,Dendy Park Blue,No. 2,Jack Broadbent,Christian Williams,Jack Broadbent,8-4,8,4,1,0,Completed,true,false,false
+AP001302,,16,BLTC Blue,Dendy Park Blue,No. 3,Mudiwa Munyimani,Sam Kaplan,Mudiwa Munyimani,8-6,8,6,1,0,Completed,true,false,false
+AP001302,,16,BLTC Blue,Dendy Park Blue,No. 4,Brady Watts,Nicholas Williams,Nicholas Williams,7-8,7,8,0,1,Completed,true,false,false

@@ -1,0 +1,79 @@
+{
+  "asset_id": "AP41-AP008",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 20/21",
+  "season_id": "AP41",
+  "season_label": "Summer 20/21",
+  "source_section_code": "AP008",
+  "section_label": "Mixed Rubbers 7",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "St Finbar's",
+      "wins": 7,
+      "points": 57,
+      "percentage": 176.92,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "Hurlingham Park",
+      "wins": 3,
+      "points": 35,
+      "percentage": 112.99,
+      "marker": "P"
+    },
+    {
+      "position": 3,
+      "team": "Kings Park",
+      "wins": 2,
+      "points": 29,
+      "percentage": 95.02,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Glen Huntly",
+      "wins": 2,
+      "points": 24,
+      "percentage": 84.84,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Hawthorn",
+      "wins": 2,
+      "points": 15,
+      "percentage": 67.19,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP41-AP008",
+  "fixtures": 31,
+  "completed_fixtures": 19,
+  "draw_fixtures": 57,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 72,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

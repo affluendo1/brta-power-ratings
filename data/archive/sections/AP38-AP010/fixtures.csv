@@ -1,0 +1,60 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP010012,06 Oct 18,1,regular,Round 1,Kings Park,Langwarrin,8,0,4,0,8,1,52,27,Completed,
+AP010013,06 Oct 18,1,regular,Round 1,Hawthorn,Glen Huntly,8,0,4,0,8,1,49,30,Completed,
+AP010014,06 Oct 18,1,regular,Round 1,Ormond,Clarinda,7,1,3,1,6,3,47,34,Completed,
+pending-ap010-r1-bltc-bye,06 Oct 18,1,regular,Round 1,BLTC,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP010021,13 Oct 18,2,regular,Round 2,Clarinda,BLTC,6,2,2,2,4,4,38,35,Completed,
+AP010023,13 Oct 18,2,regular,Round 2,Langwarrin,Hawthorn,1,7,1,3,3,7,42,59,Completed,
+AP010024,13 Oct 18,2,regular,Round 2,Glen Huntly,Ormond,1,7,1,3,3,6,42,48,Completed,
+pending-ap010-r2-bye-kings-park,13 Oct 18,2,regular,Round 2,Bye,Kings Park,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP010032,20 Oct 18,3,regular,Round 3,Kings Park,Clarinda,2,6,2,2,4,5,36,48,Completed,
+pending-ap010-r3-bltc-glen-huntly,20 Oct 18,3,regular,Round 3,BLTC,Glen Huntly,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap010-r3-hawthorn-bye,20 Oct 18,3,regular,Round 3,Hawthorn,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap010-r3-ormond-langwarrin,20 Oct 18,3,regular,Round 3,Ormond,Langwarrin,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP010041,27 Oct 18,4,regular,Round 4,Langwarrin,BLTC,0,8,0,4,2,8,35,55,Completed,
+AP010042,27 Oct 18,4,regular,Round 4,Glen Huntly,Kings Park,2,6,2,2,4,4,33,37,Completed,
+AP010043,27 Oct 18,4,regular,Round 4,Clarinda,Hawthorn,8,0,4,0,8,1,55,30,Completed,
+pending-ap010-r4-bye-ormond,27 Oct 18,4,regular,Round 4,Bye,Ormond,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP010051,10 Nov 18,5,regular,Round 5,Hawthorn,Ormond,7,1,3,1,7,2,52,31,Completed,
+AP010052,10 Nov 18,5,regular,Round 5,Clarinda,Glen Huntly,0,8,0,4,3,8,42,58,Completed,
+AP010054,10 Nov 18,5,regular,Round 5,BLTC,Kings Park,7,1,3,1,6,2,44,26,Completed,
+pending-ap010-r5-langwarrin-bye,10 Nov 18,5,regular,Round 5,Langwarrin,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP010061,17 Nov 18,6,regular,Round 6,Kings Park,Hawthorn,6,2,2,2,4,4,41,37,Completed,
+AP010062,17 Nov 18,6,regular,Round 6,Ormond,BLTC,1,7,1,3,2,6,36,45,Completed,
+AP010063,17 Nov 18,6,regular,Round 6,Glen Huntly,Langwarrin,7,1,3,1,6,3,41,38,Completed,
+pending-ap010-r6-bye-clarinda,17 Nov 18,6,regular,Round 6,Bye,Clarinda,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP010071,24 Nov 18,7,regular,Round 7,BLTC,Hawthorn,8,0,4,0,8,0,49,17,Completed,
+AP010072,24 Nov 18,7,regular,Round 7,Kings Park,Ormond,1,7,1,3,3,6,42,49,Completed,
+AP010073,24 Nov 18,7,regular,Round 7,Clarinda,Langwarrin,8,0,4,0,8,0,48,17,Completed,
+pending-ap010-r7-glen-huntly-bye,24 Nov 18,7,regular,Round 7,Glen Huntly,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP010082,01 Dec 18,8,regular,Round 8,Langwarrin,Kings Park,2,6,2,2,4,5,33,37,Completed,
+AP010083,01 Dec 18,8,regular,Round 8,Glen Huntly,Hawthorn,1,7,1,3,3,6,31,43,Completed,
+AP010084,01 Dec 18,8,regular,Round 8,Clarinda,Ormond,7,1,3,1,7,4,54,49,Completed,
+pending-ap010-r8-bye-bltc,01 Dec 18,8,regular,Round 8,Bye,BLTC,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP010091,08 Dec 18,9,regular,Round 9,BLTC,Clarinda,6,2,2,2,5,4,43,44,Completed,
+AP010093,08 Dec 18,9,regular,Round 9,Hawthorn,Langwarrin,8,0,4,0,8,0,48,16,Completed,
+AP010094,08 Dec 18,9,regular,Round 9,Ormond,Glen Huntly,8,0,4,0,8,0,49,22,Completed,
+pending-ap010-r9-kings-park-bye,08 Dec 18,9,regular,Round 9,Kings Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP010101,15 Dec 18,10,regular,Round 10,Glen Huntly,BLTC,0,8,0,4,1,8,33,52,Completed,
+AP010102,15 Dec 18,10,regular,Round 10,Clarinda,Kings Park,7,1,3,1,7,3,59,43,Completed,
+AP010104,15 Dec 18,10,regular,Round 10,Langwarrin,Ormond,0,8,0,4,0,8,15,48,Completed,
+pending-ap010-r10-bye-hawthorn,15 Dec 18,10,regular,Round 10,Bye,Hawthorn,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP010111,02 Feb 19,11,regular,Round 11,BLTC,Langwarrin,8,0,4,0,8,1,54,26,Completed,
+AP010112,02 Feb 19,11,regular,Round 11,Kings Park,Glen Huntly,7,1,3,1,7,2,49,26,Completed,
+AP010113,02 Feb 19,11,regular,Round 11,Hawthorn,Clarinda,3.5,4.5,0,1,1,3,18,23,Completed,
+pending-ap010-r11-ormond-bye,02 Feb 19,11,regular,Round 11,Ormond,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP010121,09 Feb 19,12,regular,Round 12,Ormond,Hawthorn,2,6,2,2,4,5,33,44,Completed,
+AP010124,09 Feb 19,12,regular,Round 12,Kings Park,BLTC,2,6,2,2,4,6,43,57,Completed,
+pending-ap010-r12-bye-langwarrin,09 Feb 19,12,regular,Round 12,Bye,Langwarrin,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap010-r12-glen-huntly-clarinda,09 Feb 19,12,regular,Round 12,Glen Huntly,Clarinda,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP010131,16 Feb 19,13,regular,Round 13,Hawthorn,Kings Park,7,1,3,1,6,3,49,48,Completed,
+AP010132,16 Feb 19,13,regular,Round 13,BLTC,Ormond,8,0,4,0,8,0,48,18,Completed,
+AP010133,16 Feb 19,13,regular,Round 13,Langwarrin,Glen Huntly,0,8,0,4,0,8,13,49,Completed,
+pending-ap010-r13-clarinda-bye,16 Feb 19,13,regular,Round 13,Clarinda,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP010141,23 Feb 19,14,regular,Round 14,Hawthorn,BLTC,7,1,3,1,6,3,52,34,Completed,
+AP010143,23 Feb 19,14,regular,Round 14,Langwarrin,Clarinda,0,8,0,4,0,8,13,49,Completed,
+pending-ap010-r14-bye-glen-huntly,23 Feb 19,14,regular,Round 14,Bye,Glen Huntly,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap010-r14-ormond-kings-park,23 Feb 19,14,regular,Round 14,Ormond,Kings Park,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP010301,,16,semi_final,Semi-final,BLTC,Ormond,2,6,2,2,5,6,56,62,Completed,
+AP010302,,16,semi_final,Semi-final,Hawthorn,Clarinda,1,7,0,2,1,5,13,30,Completed,
+AP010321,,17,grand_final,Grand final · TROLS entry 2,Clarinda,Ormond,2,6,2,2,4,5,46,43,Completed,

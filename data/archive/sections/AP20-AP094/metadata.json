@@ -1,0 +1,100 @@
+{
+  "asset_id": "AP20-AP094",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 09/10",
+  "season_id": "AP20",
+  "season_label": "Summer 09/10",
+  "source_section_code": "AP094",
+  "section_label": "Mixed Rubbers 3",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "BLTC 2",
+      "wins": 0,
+      "points": 74,
+      "percentage": 127.02,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "St Johns",
+      "wins": 0,
+      "points": 59,
+      "percentage": 102.19,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Hampton",
+      "wins": 0,
+      "points": 56,
+      "percentage": 122.95,
+      "marker": "P"
+    },
+    {
+      "position": 4,
+      "team": "BLTC 1",
+      "wins": 0,
+      "points": 53,
+      "percentage": 112.53,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Beaumaris CC",
+      "wins": 0,
+      "points": 44,
+      "percentage": 100.39,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Hawthorn",
+      "wins": 0,
+      "points": 29,
+      "percentage": 74.05,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Le Page",
+      "wins": 0,
+      "points": 21,
+      "percentage": 75.38,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP20-AP094",
+  "fixtures": 60,
+  "completed_fixtures": 46,
+  "draw_fixtures": 4,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 184,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP094301 doubles No. 3: '7-5 5-7'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP094302 doubles No. 4: '6-3 3-6'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP094321 doubles No. 3: '2-6 2-4'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP094321 doubles No. 4: '6-2 3-6'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

@@ -1,0 +1,153 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP009012,07 Oct 23,1,Maccabi,Dendy Park,No. 1,Ben Pollak,Jared Want,Ben Pollak,8-3,8,3,1,0,Completed,true,false,false
+AP009012,07 Oct 23,1,Maccabi,Dendy Park,No. 2,Charlie Landau,Sebastian Maddams,Charlie Landau,8-4,8,4,1,0,Completed,true,false,false
+AP009012,07 Oct 23,1,Maccabi,Dendy Park,No. 3,Ben Shaw,Louis Marasco,Ben Shaw,8-3,8,3,1,0,Completed,true,true,false
+AP009012,07 Oct 23,1,Maccabi,Dendy Park,No. 4,Liron Lelah,David Urpani,David Urpani,2-8,2,8,0,1,Completed,true,true,false
+AP009013,07 Oct 23,1,Clarinda,Carmelite,No. 1,David James,Daniil Levashov,David James,8-0,8,0,1,0,Completed,true,false,false
+AP009013,07 Oct 23,1,Clarinda,Carmelite,No. 2,Giordano Russo,Charlie Smit,Giordano Russo,8-1,8,1,1,0,Completed,true,false,false
+AP009013,07 Oct 23,1,Clarinda,Carmelite,No. 3,Kosta Pliatsikas,Nicholas Peyerl,Kosta Pliatsikas,8-7,8,7,1,0,Completed,true,false,false
+AP009013,07 Oct 23,1,Clarinda,Carmelite,No. 4,Johnny Pliatsikas,Michael Smit,Michael Smit,1-8,1,8,0,1,Completed,true,false,false
+AP009014,07 Oct 23,1,Mentone,Caulfield Rec,No. 1,Jason Newell,Borja Ramirez,Jason Newell,8-2,8,2,1,0,Completed,true,false,false
+AP009014,07 Oct 23,1,Mentone,Caulfield Rec,No. 2,Jackson Ralph,Ramon Garcia,Jackson Ralph,8-0,8,0,1,0,Completed,true,false,false
+AP009014,07 Oct 23,1,Mentone,Caulfield Rec,No. 3,Tobias Malone-Marty,Lauren Yarrow,Tobias Malone-Marty,8-3,8,3,1,0,Completed,true,false,false
+AP009014,07 Oct 23,1,Mentone,Caulfield Rec,No. 4,Jitesh Gursahani,Miguel Sison,Jitesh Gursahani,8-3,8,3,1,0,Completed,true,false,false
+AP009022,14 Oct 23,2,BLTC,Maccabi,No. 1,Kensei Golec,Ben Pollak,Kensei Golec,8-2,8,2,1,0,Completed,true,false,false
+AP009022,14 Oct 23,2,BLTC,Maccabi,No. 2,Harrison Yang,Daniel Goodrich,Daniel Goodrich,7-8,7,8,0,1,Completed,true,false,false
+AP009022,14 Oct 23,2,BLTC,Maccabi,No. 3,Ryan Dong,Jack Stock,Ryan Dong,8-1,8,1,1,0,Completed,true,false,false
+AP009022,14 Oct 23,2,BLTC,Maccabi,No. 4,Daniel Murphy,Akash Lagad,Akash Lagad,6-8,6,8,0,1,Completed,true,false,false
+AP009023,14 Oct 23,2,Dendy Park,Clarinda,No. 1,Jared Want,Cory Hall,Cory Hall,1-8,1,8,0,1,Completed,true,false,false
+AP009023,14 Oct 23,2,Dendy Park,Clarinda,No. 2,Sebastian Maddams,David James,David James,0-8,0,8,0,1,Completed,true,false,false
+AP009023,14 Oct 23,2,Dendy Park,Clarinda,No. 3,Louis Marasco,Giordano Russo,Giordano Russo,3-8,3,8,0,1,Completed,true,false,false
+AP009023,14 Oct 23,2,Dendy Park,Clarinda,No. 4,Chris Trotter,Jackson Balalovski,Chris Trotter,8-0,8,0,1,0,Completed,true,false,false
+AP009024,14 Oct 23,2,Carmelite,Mentone,No. 1,Lachlan Gordon,Jason Newell,Jason Newell,3-8,3,8,0,1,Completed,true,false,false
+AP009024,14 Oct 23,2,Carmelite,Mentone,No. 2,Daniil Levashov,Jackson Ralph,Daniil Levashov,8-5,8,5,1,0,Completed,true,false,false
+AP009024,14 Oct 23,2,Carmelite,Mentone,No. 3,Nicholas Peyerl,Tobias Malone-Marty,Tobias Malone-Marty,2-8,2,8,0,1,Completed,true,false,false
+AP009024,14 Oct 23,2,Carmelite,Mentone,No. 4,Lucas Worrall,Julian Dimopoulos,Lucas Worrall,8-3,8,3,1,0,Completed,true,false,false
+AP009032,21 Oct 23,3,Maccabi,Caulfield Rec,No. 1,Ben Pollak,Borja Ramirez,Ben Pollak,8-4,8,4,1,0,Completed,true,false,false
+AP009032,21 Oct 23,3,Maccabi,Caulfield Rec,No. 2,Saul Jayes,Ramon Garcia,Saul Jayes,8-1,8,1,1,0,Completed,true,false,false
+AP009032,21 Oct 23,3,Maccabi,Caulfield Rec,No. 3,Jack Stock,Matthew Krieger,Jack Stock,8-1,8,1,1,0,Completed,true,false,false
+AP009032,21 Oct 23,3,Maccabi,Caulfield Rec,No. 4,Akash Lagad,Miguel Sison,Akash Lagad,8-2,8,2,1,0,Completed,true,false,false
+AP009033,21 Oct 23,3,Clarinda,BLTC,No. 1,Cory Hall,Jensen Srisuwan,Jensen Srisuwan,7-8,7,8,0,1,Completed,true,false,false
+AP009033,21 Oct 23,3,Clarinda,BLTC,No. 2,David James,Charlie Wang,David James,8-4,8,4,1,0,Completed,true,false,false
+AP009033,21 Oct 23,3,Clarinda,BLTC,No. 3,Giordano Russo,Dan Brown,Giordano Russo,8-5,8,5,1,0,Completed,true,false,false
+AP009033,21 Oct 23,3,Clarinda,BLTC,No. 4,Jackson Balalovski,Daniel Murphy,Daniel Murphy,0-8,0,8,0,1,Completed,true,false,false
+AP009034,21 Oct 23,3,Mentone,Dendy Park,No. 1,Jason Newell,Jared Want,Jason Newell,8-1,8,1,1,0,Completed,true,false,false
+AP009034,21 Oct 23,3,Mentone,Dendy Park,No. 2,Jackson Ralph,Sebastian Maddams,Sebastian Maddams,7-8,7,8,0,1,Completed,true,false,false
+AP009034,21 Oct 23,3,Mentone,Dendy Park,No. 3,Tobias Malone-Marty,Peter Fleming,Peter Fleming,5-8,5,8,0,1,Completed,true,false,false
+AP009034,21 Oct 23,3,Mentone,Dendy Park,No. 4,Jitesh Gursahani,Chris Trotter,Chris Trotter,2-8,2,8,0,1,Completed,true,false,false
+AP009042,28 Oct 23,4,Carmelite,Maccabi,No. 1,Lachlan Gordon,Ben Pollak,Ben Pollak,3-8,3,8,0,1,Completed,true,false,false
+AP009042,28 Oct 23,4,Carmelite,Maccabi,No. 2,Charlie Smit,Saul Jayes,Saul Jayes,6-8,6,8,0,1,Completed,true,false,false
+AP009042,28 Oct 23,4,Carmelite,Maccabi,No. 3,Michael Smit,Daniel Goodrich,Daniel Goodrich,4-8,4,8,0,1,Completed,true,false,false
+AP009042,28 Oct 23,4,Carmelite,Maccabi,No. 4,Lucas Worrall,Akash Lagad,Akash Lagad,2-8,2,8,0,1,Completed,true,false,false
+AP009043,28 Oct 23,4,Caulfield Rec,Clarinda,No. 1,Chris Liolios,Cory Hall,Chris Liolios,8-6,8,6,1,0,Completed,true,false,false
+AP009043,28 Oct 23,4,Caulfield Rec,Clarinda,No. 2,Christian Belcher,Giordano Russo,Giordano Russo,1-8,1,8,0,1,Completed,true,true,false
+AP009043,28 Oct 23,4,Caulfield Rec,Clarinda,No. 3,Lauren Yarrow,Kosta Pliatsikas,Lauren Yarrow,8-5,8,5,1,0,Completed,true,false,false
+AP009043,28 Oct 23,4,Caulfield Rec,Clarinda,No. 4,Miguel Sison,Johnny Pliatsikas,Johnny Pliatsikas,2-8,2,8,0,1,Completed,true,false,false
+AP009044,28 Oct 23,4,BLTC,Mentone,No. 1,Kensei Golec,Jason Newell,Jason Newell,2-8,2,8,0,1,Completed,true,false,false
+AP009044,28 Oct 23,4,BLTC,Mentone,No. 2,Charlie Wang,Jackson Ralph,Charlie Wang,8-7,8,7,1,0,Completed,true,false,false
+AP009044,28 Oct 23,4,BLTC,Mentone,No. 3,Ryan Dong,Tobias Malone-Marty,Ryan Dong,8-5,8,5,1,0,Completed,true,false,false
+AP009044,28 Oct 23,4,BLTC,Mentone,No. 4,Dan Brown,Julian Dimopoulos,Dan Brown,8-3,8,3,1,0,Completed,true,false,false
+AP009051,11 Nov 23,5,Clarinda,Mentone,No. 1,Giordano Russo,Jackson Ralph,Jackson Ralph,1-8,1,8,0,1,Completed,true,false,false
+AP009051,11 Nov 23,5,Clarinda,Mentone,No. 2,Kosta Pliatsikas,James Dimopoulos,James Dimopoulos,7-8,7,8,0,1,Completed,true,false,false
+AP009051,11 Nov 23,5,Clarinda,Mentone,No. 3,Johnny Pliatsikas,Tobias Malone-Marty,Tobias Malone-Marty,6-8,6,8,0,1,Completed,true,false,false
+AP009051,11 Nov 23,5,Clarinda,Mentone,No. 4,Jackson Balalovski,Jitesh Gursahani,Jitesh Gursahani,0-8,0,8,0,1,Completed,true,false,false
+AP009052,11 Nov 23,5,Caulfield Rec,Carmelite,No. 1,Chris Liolios,Daniil Levashov,Chris Liolios,8-4,8,4,1,0,Completed,true,false,false
+AP009052,11 Nov 23,5,Caulfield Rec,Carmelite,No. 2,Ramon Garcia,Charlie Smit,Charlie Smit,1-8,1,8,0,1,Completed,true,false,false
+AP009052,11 Nov 23,5,Caulfield Rec,Carmelite,No. 3,Lauren Yarrow,Nicholas Peyerl,Nicholas Peyerl,6-8,6,8,0,1,Completed,true,false,false
+AP009052,11 Nov 23,5,Caulfield Rec,Carmelite,No. 4,Matthew Krieger,Lucas Worrall,Lucas Worrall,2-8,2,8,0,1,Completed,true,false,false
+AP009053,11 Nov 23,5,Dendy Park,BLTC,No. 1,Jared Want,Harrison Yang,Harrison Yang,6-8,6,8,0,1,Completed,true,false,false
+AP009053,11 Nov 23,5,Dendy Park,BLTC,No. 2,Sebastian Maddams,Charlie Wang,Sebastian Maddams,8-6,8,6,1,0,Completed,true,false,false
+AP009053,11 Nov 23,5,Dendy Park,BLTC,No. 3,Peter Fleming,Dan Brown,Dan Brown,5-8,5,8,0,1,Completed,true,false,false
+AP009053,11 Nov 23,5,Dendy Park,BLTC,No. 4,Chris Trotter,Petar Kocic,Chris Trotter,8-6,8,6,1,0,Completed,true,false,true
+AP009061,18 Nov 23,6,Maccabi,Clarinda,No. 1,Ben Pollak,Cory Hall,Cory Hall,4-8,4,8,0,1,Completed,true,false,false
+AP009061,18 Nov 23,6,Maccabi,Clarinda,No. 2,Charlie Landau,David James,Charlie Landau,8-3,8,3,1,0,Completed,true,false,false
+AP009061,18 Nov 23,6,Maccabi,Clarinda,No. 3,Jack Stock,Johnny Pliatsikas,Jack Stock,8-4,8,4,1,0,Completed,true,false,false
+AP009061,18 Nov 23,6,Maccabi,Clarinda,No. 4,Akash Lagad,Jackson Balalovski,Akash Lagad,8-2,8,2,1,0,Completed,true,false,false
+AP009063,18 Nov 23,6,Carmelite,Dendy Park,No. 1,Lachlan Gordon,Jared Want,Jared Want,7-8,7,8,0,1,Completed,true,false,false
+AP009063,18 Nov 23,6,Carmelite,Dendy Park,No. 2,Daniil Levashov,Sebastian Maddams,Daniil Levashov,8-7,8,7,1,0,Completed,true,false,false
+AP009063,18 Nov 23,6,Carmelite,Dendy Park,No. 3,Nicholas Peyerl,Peter Fleming,Nicholas Peyerl,8-6,8,6,1,0,Completed,true,false,false
+AP009063,18 Nov 23,6,Carmelite,Dendy Park,No. 4,Hudson Bacon,David Urpani,David Urpani,2-8,2,8,0,1,Completed,true,true,false
+AP009064,18 Nov 23,6,BLTC,Caulfield Rec,No. 1,Kensei Golec,Chris Gogoll,Chris Gogoll,4-8,4,8,0,1,Completed,true,false,true
+AP009064,18 Nov 23,6,BLTC,Caulfield Rec,No. 2,Harrison Yang,Mikael Barabalov,Mikael Barabalov,5-8,5,8,0,1,Completed,true,false,true
+AP009064,18 Nov 23,6,BLTC,Caulfield Rec,No. 3,Charlie Wang,Richard White,Charlie Wang,8-2,8,2,1,0,Completed,true,false,true
+AP009064,18 Nov 23,6,BLTC,Caulfield Rec,No. 4,Dan Brown,Miguel Sison,Dan Brown,8-2,8,2,1,0,Completed,true,false,false
+AP009072,25 Nov 23,7,Maccabi,Mentone,No. 1,Saul Jayes,Jason Newell,Jason Newell,5-8,5,8,0,1,Completed,true,false,false
+AP009072,25 Nov 23,7,Maccabi,Mentone,No. 2,Charlie Landau,Lukas Nowak,Charlie Landau,8-1,8,1,1,0,Completed,true,false,false
+AP009072,25 Nov 23,7,Maccabi,Mentone,No. 3,Daniel Goodrich,Kabeer Gursahani,Kabeer Gursahani,3-8,3,8,0,1,Completed,true,false,false
+AP009072,25 Nov 23,7,Maccabi,Mentone,No. 4,Akash Lagad,Jitesh Gursahani,Akash Lagad,8-3,8,3,1,0,Completed,true,false,false
+AP009073,25 Nov 23,7,Caulfield Rec,Dendy Park,No. 1,Mikael Barabalov,Jared Want,Jared Want,5-8,5,8,0,1,Completed,true,true,false
+AP009073,25 Nov 23,7,Caulfield Rec,Dendy Park,No. 2,Lauren Yarrow,Sebastian Maddams,Lauren Yarrow,8-7,8,7,1,0,Completed,true,false,false
+AP009073,25 Nov 23,7,Caulfield Rec,Dendy Park,No. 3,Matthew Krieger,Peter Fleming,Peter Fleming,0-8,0,8,0,1,Completed,true,false,false
+AP009073,25 Nov 23,7,Caulfield Rec,Dendy Park,No. 4,Miguel Sison,David Urpani,David Urpani,3-8,3,8,0,1,Completed,true,false,false
+AP009074,25 Nov 23,7,Carmelite,BLTC,No. 1,Daniil Levashov,Kensei Golec,Daniil Levashov,8-7,8,7,1,0,Completed,true,false,false
+AP009074,25 Nov 23,7,Carmelite,BLTC,No. 2,Charlie Smit,Harrison Yang,Charlie Smit,8-6,8,6,1,0,Completed,true,false,false
+AP009074,25 Nov 23,7,Carmelite,BLTC,No. 3,Nicholas Peyerl,Ryan Dong,Ryan Dong,3-8,3,8,0,1,Completed,true,false,false
+AP009074,25 Nov 23,7,Carmelite,BLTC,No. 4,Omar Kamel,Brandon Sadler-gray,Brandon Sadler-gray,7-8,7,8,0,1,Completed,true,true,true
+AP009102,16 Dec 23,10,Caulfield Rec,Maccabi,No. 1,Chris Gogoll,Saul Jayes,Chris Gogoll,8-4,8,4,1,0,Completed,true,true,false
+AP009102,16 Dec 23,10,Caulfield Rec,Maccabi,No. 2,Lauren Yarrow,Charlie Landau,Charlie Landau,1-8,1,8,0,1,Completed,true,false,false
+AP009102,16 Dec 23,10,Caulfield Rec,Maccabi,No. 3,Ramon Garcia,Jay Landau,Jay Landau,0-8,0,8,0,1,Completed,true,false,false
+AP009102,16 Dec 23,10,Caulfield Rec,Maccabi,No. 4,Miguel Sison,Daniel Goodrich,Daniel Goodrich,3-8,3,8,0,1,Completed,true,false,false
+AP009103,16 Dec 23,10,BLTC,Clarinda,No. 1,Kensei Golec,Giordano Russo,Giordano Russo,5-8,5,8,0,1,Completed,true,false,false
+AP009103,16 Dec 23,10,BLTC,Clarinda,No. 2,Jensen Srisuwan,Kosta Pliatsikas,Jensen Srisuwan,8-5,8,5,1,0,Completed,true,false,false
+AP009103,16 Dec 23,10,BLTC,Clarinda,No. 3,Dan Brown,Johnny Pliatsikas,Dan Brown,8-4,8,4,1,0,Completed,true,false,false
+AP009103,16 Dec 23,10,BLTC,Clarinda,No. 4,Daniel Murphy,Jackson Balalovski,Daniel Murphy,8-0,8,0,1,0,Completed,true,false,false
+AP009104,16 Dec 23,10,Dendy Park,Mentone,No. 1,Jared Want,James Dimopoulos,Jared Want,8-5,8,5,1,0,Completed,true,false,false
+AP009104,16 Dec 23,10,Dendy Park,Mentone,No. 2,Sebastian Maddams,Julian Dimopoulos,Sebastian Maddams,8-2,8,2,1,0,Completed,true,false,false
+AP009104,16 Dec 23,10,Dendy Park,Mentone,No. 3,Chris Trotter,Lennox Carroll,Chris Trotter,8-0,8,0,1,0,Completed,true,false,true
+AP009104,16 Dec 23,10,Dendy Park,Mentone,No. 4,David Urpani,Tom Carroll,Tom Carroll,1-8,1,8,0,1,Completed,true,false,true
+AP009112,03 Feb 24,11,Maccabi,Carmelite,No. 1,Ben Pollak,Daniil Levashov,Ben Pollak,8-0,8,0,1,0,Completed,true,false,false
+AP009112,03 Feb 24,11,Maccabi,Carmelite,No. 2,Saul Jayes,Charlie Smit,Saul Jayes,8-0,8,0,1,0,Completed,true,false,false
+AP009112,03 Feb 24,11,Maccabi,Carmelite,No. 3,Akash Lagad,Michael Smit,Michael Smit,4-8,4,8,0,1,Completed,true,false,false
+AP009112,03 Feb 24,11,Maccabi,Carmelite,No. 4,Sebastian Raboy,Lucas Worrall,Sebastian Raboy,8-6,8,6,1,0,Completed,true,true,false
+AP009113,03 Feb 24,11,Clarinda,Caulfield Rec,No. 1,David James,Chris Liolios,Chris Liolios,2-8,2,8,0,1,Completed,true,false,false
+AP009113,03 Feb 24,11,Clarinda,Caulfield Rec,No. 2,Giordano Russo,Lauren Yarrow,Giordano Russo,8-2,8,2,1,0,Completed,true,false,false
+AP009113,03 Feb 24,11,Clarinda,Caulfield Rec,No. 3,Kosta Pliatsikas,Tarun Soni,Tarun Soni,4-8,4,8,0,1,Completed,true,false,false
+AP009113,03 Feb 24,11,Clarinda,Caulfield Rec,No. 4,Jackson Balalovski,Miguel Sison,Miguel Sison,0-8,0,8,0,1,Completed,true,false,false
+AP009114,03 Feb 24,11,Mentone,BLTC,No. 1,Jackson Ralph,Jensen Srisuwan,Jackson Ralph,8-3,8,3,1,0,Completed,true,false,false
+AP009114,03 Feb 24,11,Mentone,BLTC,No. 2,Tobias Malone-Marty,Charlie Wang,Charlie Wang,3-8,3,8,0,1,Completed,true,false,false
+AP009114,03 Feb 24,11,Mentone,BLTC,No. 3,Kabeer Gursahani,Dan Brown,Dan Brown,3-8,3,8,0,1,Completed,true,false,false
+AP009114,03 Feb 24,11,Mentone,BLTC,No. 4,Julian Dimopoulos,Willem Duncan,Willem Duncan,4-8,4,8,0,1,Completed,true,false,true
+AP009121,10 Feb 24,12,Mentone,Clarinda,No. 1,Jackson Ralph,David James,David James,1-8,1,8,0,1,Completed,true,false,false
+AP009121,10 Feb 24,12,Mentone,Clarinda,No. 2,Tobias Malone-Marty,Roland Detterbeck,Roland Detterbeck,1-8,1,8,0,1,Completed,true,false,true
+AP009121,10 Feb 24,12,Mentone,Clarinda,No. 3,Kabeer Gursahani,Giordano Russo,Giordano Russo,3-8,3,8,0,1,Completed,true,false,false
+AP009121,10 Feb 24,12,Mentone,Clarinda,No. 4,Jitesh Gursahani,Johnny Pliatsikas,Johnny Pliatsikas,1-8,1,8,0,1,Completed,true,false,false
+AP009122,10 Feb 24,12,Carmelite,Caulfield Rec,No. 1,Lachlan Gordon,Chris Liolios,Chris Liolios,4-8,4,8,0,1,Completed,true,false,false
+AP009122,10 Feb 24,12,Carmelite,Caulfield Rec,No. 2,Daniil Levashov,Lauren Yarrow,Daniil Levashov,8-3,8,3,1,0,Completed,true,false,false
+AP009122,10 Feb 24,12,Carmelite,Caulfield Rec,No. 3,Charlie Smit,Joe Antal,Charlie Smit,8-2,8,2,1,0,Completed,true,false,true
+AP009122,10 Feb 24,12,Carmelite,Caulfield Rec,No. 4,Lucas Worrall,Miguel Sison,Lucas Worrall,8-3,8,3,1,0,Completed,true,false,false
+AP009123,10 Feb 24,12,BLTC,Dendy Park,No. 1,Kensei Golec,Jared Want,Kensei Golec,8-4,8,4,1,0,Completed,true,false,false
+AP009123,10 Feb 24,12,BLTC,Dendy Park,No. 2,Jensen Srisuwan,Sebastian Maddams,Sebastian Maddams,6-8,6,8,0,1,Completed,true,false,false
+AP009123,10 Feb 24,12,BLTC,Dendy Park,No. 3,Dan Brown,Louis Marasco,Dan Brown,8-2,8,2,1,0,Completed,true,false,false
+AP009123,10 Feb 24,12,BLTC,Dendy Park,No. 4,Daniel Murphy,David Urpani,Daniel Murphy,8-6,8,6,1,0,Completed,true,false,false
+AP009131,17 Feb 24,13,Clarinda,Maccabi,No. 1,David James,Ben Pollak,David James,8-2,8,2,1,0,Completed,true,false,false
+AP009131,17 Feb 24,13,Clarinda,Maccabi,No. 2,Giordano Russo,Saul Jayes,Giordano Russo,8-2,8,2,1,0,Completed,true,false,false
+AP009131,17 Feb 24,13,Clarinda,Maccabi,No. 3,Johnny Pliatsikas,Daniel Goodrich,Daniel Goodrich,3-8,3,8,0,1,Completed,true,false,false
+AP009131,17 Feb 24,13,Clarinda,Maccabi,No. 4,Jackson Balalovski,Jack Stock,Jack Stock,1-8,1,8,0,1,Completed,true,false,false
+AP009133,17 Feb 24,13,Dendy Park,Carmelite,No. 1,Sebastian Maddams,Lachlan Gordon,Lachlan Gordon,1-8,1,8,0,1,Completed,true,false,false
+AP009133,17 Feb 24,13,Dendy Park,Carmelite,No. 2,Louis Marasco,Charlie Smit,Charlie Smit,2-8,2,8,0,1,Completed,true,false,false
+AP009133,17 Feb 24,13,Dendy Park,Carmelite,No. 3,Peter Fleming,Michael Smit,Peter Fleming,8-5,8,5,1,0,Completed,true,false,false
+AP009133,17 Feb 24,13,Dendy Park,Carmelite,No. 4,Chris Trotter,Lucas Worrall,Chris Trotter,8-3,8,3,1,0,Completed,true,false,false
+AP009134,17 Feb 24,13,Caulfield Rec,BLTC,No. 1,Chris Liolios,Kensei Golec,Chris Liolios,8-1,8,1,1,0,Completed,true,false,false
+AP009134,17 Feb 24,13,Caulfield Rec,BLTC,No. 2,Lauren Yarrow,Harrison Yang,Lauren Yarrow,8-4,8,4,1,0,Completed,true,false,false
+AP009134,17 Feb 24,13,Caulfield Rec,BLTC,No. 3,Tarun Soni,Charlie Wang,Charlie Wang,2-8,2,8,0,1,Completed,true,false,false
+AP009134,17 Feb 24,13,Caulfield Rec,BLTC,No. 4,Miguel Sison,Daniel Murphy,Daniel Murphy,3-8,3,8,0,1,Completed,true,false,false
+AP009142,24 Feb 24,14,Mentone,Maccabi,No. 1,Jackson Ralph,Ben Pollak,Jackson Ralph,8-1,8,1,1,0,Completed,true,false,false
+AP009142,24 Feb 24,14,Mentone,Maccabi,No. 2,James Dimopoulos,Charlie Landau,Charlie Landau,1-8,1,8,0,1,Completed,true,false,false
+AP009142,24 Feb 24,14,Mentone,Maccabi,No. 3,Tobias Malone-Marty,Daniel Goodrich,Daniel Goodrich,6-8,6,8,0,1,Completed,true,false,false
+AP009142,24 Feb 24,14,Mentone,Maccabi,No. 4,Kabeer Gursahani,Jack Stock,Kabeer Gursahani,8-3,8,3,1,0,Completed,true,false,false
+AP009144,24 Feb 24,14,BLTC,Carmelite,No. 1,Jensen Srisuwan,Lachlan Gordon,Lachlan Gordon,6-8,6,8,0,1,Completed,true,false,false
+AP009144,24 Feb 24,14,BLTC,Carmelite,No. 2,Charlie Wang,Daniil Levashov,Daniil Levashov,7-8,7,8,0,1,Completed,true,false,false
+AP009144,24 Feb 24,14,BLTC,Carmelite,No. 3,Mathew Mizera,Charlie Smit,Mathew Mizera,8-6,8,6,1,0,Completed,true,true,false
+AP009144,24 Feb 24,14,BLTC,Carmelite,No. 4,Dan Brown,Lucas Worrall,Dan Brown,8-4,8,4,1,0,Completed,true,false,false
+AP009301,,16,Maccabi,Carmelite,No. 1,Ben Pollak,Lachlan Gordon,Lachlan Gordon,6-8,6,8,0,1,Completed,true,false,false
+AP009301,,16,Maccabi,Carmelite,No. 2,Saul Jayes,Daniil Levashov,Daniil Levashov,3-8,3,8,0,1,Completed,true,false,false
+AP009301,,16,Maccabi,Carmelite,No. 3,Charlie Landau,Charlie Smit,Charlie Smit,5-8,5,8,0,1,Completed,true,false,false
+AP009301,,16,Maccabi,Carmelite,No. 4,Jack Stock,Lucas Worrall,Jack Stock,8-3,8,3,1,0,Completed,true,false,false
+AP009302,,16,BLTC,Dendy Park,No. 1,Kensei Golec,Jared Want,Kensei Golec,8-3,8,3,1,0,Completed,true,false,false
+AP009302,,16,BLTC,Dendy Park,No. 2,Jensen Srisuwan,Sebastian Maddams,Sebastian Maddams,2-8,2,8,0,1,Completed,true,false,false
+AP009302,,16,BLTC,Dendy Park,No. 3,Harrison Yang,Peter Fleming,Peter Fleming,5-8,5,8,0,1,Completed,true,false,false
+AP009302,,16,BLTC,Dendy Park,No. 4,Charlie Wang,Chris Trotter,Charlie Wang,8-0,8,0,1,0,Completed,true,false,false
+AP009321,,17,BLTC,Carmelite,No. 1,Jensen Srisuwan,Lachlan Gordon,Jensen Srisuwan,8-4,8,4,1,0,Completed,true,false,false
+AP009321,,17,BLTC,Carmelite,No. 2,Harrison Yang,Daniil Levashov,Harrison Yang,8-5,8,5,1,0,Completed,true,false,false
+AP009321,,17,BLTC,Carmelite,No. 3,Dan Brown,Charlie Smit,Dan Brown,8-7,8,7,1,0,Completed,true,false,false
+AP009321,,17,BLTC,Carmelite,No. 4,Daniel Murphy,Lucas Worrall,Lucas Worrall,6-8,6,8,0,1,Completed,true,false,false

@@ -1,0 +1,103 @@
+{
+  "asset_id": "AP22-AP033",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 10/11",
+  "season_id": "AP22",
+  "season_label": "Summer 10/11",
+  "source_section_code": "AP033",
+  "section_label": "Mens S/D 5",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "GPHC 1",
+      "wins": 0,
+      "points": 95,
+      "percentage": 141.85,
+      "marker": ""
+    },
+    {
+      "position": 2,
+      "team": "Melbourne Univ",
+      "wins": 0,
+      "points": 92,
+      "percentage": 131.82,
+      "marker": "P"
+    },
+    {
+      "position": 3,
+      "team": "Basterfield Park",
+      "wins": 0,
+      "points": 89.5,
+      "percentage": 136.27,
+      "marker": "R"
+    },
+    {
+      "position": 4,
+      "team": "Le Page",
+      "wins": 0,
+      "points": 82,
+      "percentage": 113.14,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Sandringham",
+      "wins": 0,
+      "points": 61.5,
+      "percentage": 91.13,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "East Malvern",
+      "wins": 0,
+      "points": 61,
+      "percentage": 85.28,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Dendy Park",
+      "wins": 0,
+      "points": 55,
+      "percentage": 91.55,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "GPHC 2",
+      "wins": 0,
+      "points": 24,
+      "percentage": 45.32,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP22-AP033",
+  "fixtures": 60,
+  "completed_fixtures": 48,
+  "draw_fixtures": 4,
+  "singles_rubbers": 187,
+  "doubles_rubbers": 92,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

@@ -1,0 +1,70 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP010021,12 May 12,2,Lauriston,Highmoor Uniting A,No. 1,Andrew Gelfand,Paul Luke,Paul Luke,7-6 1-6 4-6,12,18,1,2,Completed,true,false,false
+AP010021,12 May 12,2,Lauriston,Highmoor Uniting A,No. 2,Nigel Bruce-Smith,Glenn Collins,Nigel Bruce-Smith,7-6 6-3,13,9,2,0,Completed,true,false,false
+AP010021,12 May 12,2,Lauriston,Highmoor Uniting A,No. 3,Ray Turss,Jayden Moorfoot,Jayden Moorfoot,3-6 6-3 5-7,14,16,1,2,Completed,true,false,false
+AP010022,12 May 12,2,Le Page,Highmoor Uniting B,No. 1,Nathan Coombes,Jason Mahmoud,Nathan Coombes,6-3 6-0,12,3,2,0,Completed,true,false,false
+AP010022,12 May 12,2,Le Page,Highmoor Uniting B,No. 2,Tyson Coombes,Pat Meehan,Tyson Coombes,6-2 6-3,12,5,2,0,Completed,true,false,false
+AP010022,12 May 12,2,Le Page,Highmoor Uniting B,No. 3,Brian Govan,John Smak,Brian Govan,6-0 6-0,12,0,2,0,Completed,true,false,false
+AP010023,12 May 12,2,Hawthorn,Carmelite,No. 1,Nicholas Kotros,Donny Balla,Nicholas Kotros,6-4 6-2,12,6,2,0,Completed,true,false,false
+AP010023,12 May 12,2,Hawthorn,Carmelite,No. 2,Paul Hormazabal,Michael Junkovic,Paul Hormazabal,6-1 6-1,12,2,2,0,Completed,true,false,false
+AP010023,12 May 12,2,Hawthorn,Carmelite,No. 3,Daniel Villalobos,Muhammad (matt) Balla,Muhammad (matt) Balla,6-1 4-6 3-6,13,13,1,2,Completed,true,false,false
+AP010041,26 May 12,4,Le Page,Highmoor Uniting A,No. 1,Nathan Coombes,Paul Luke,Paul Luke,3-6 5-7,8,13,0,2,Completed,true,false,false
+AP010041,26 May 12,4,Le Page,Highmoor Uniting A,No. 2,Tyson Coombes,Glenn Collins,Tyson Coombes,7-5 6-3,13,8,2,0,Completed,true,false,false
+AP010041,26 May 12,4,Le Page,Highmoor Uniting A,No. 3,Brian Govan,Scott Lyons,Scott Lyons,2-6 2-6,4,12,0,2,Completed,true,false,false
+AP010042,26 May 12,4,Hawthorn,Lauriston,No. 1,Paul Hormazabal,Andrew Gelfand,Andrew Gelfand,6-7 5-7,11,14,0,2,Completed,true,false,false
+AP010042,26 May 12,4,Hawthorn,Lauriston,No. 2,Daniel Villalobos,Nigel Bruce-Smith,Nigel Bruce-Smith,3-6 6-2 4-6,13,14,1,2,Completed,true,false,false
+AP010042,26 May 12,4,Hawthorn,Lauriston,No. 3,Alex Kotros,Ray Turss,Ray Turss,3-6 0-6,3,12,0,2,Completed,true,false,false
+AP010043,26 May 12,4,Carmelite,Highmoor Uniting B,No. 1,Donny Balla,Ben Abbott,Donny Balla,7-6 0-6 6-4,13,16,2,1,Completed,true,false,false
+AP010043,26 May 12,4,Carmelite,Highmoor Uniting B,No. 2,Michael Baird,John Smak,John Smak,6-7 2-6,8,13,0,2,Completed,true,false,false
+AP010043,26 May 12,4,Carmelite,Highmoor Uniting B,No. 3,Michael Junkovic,Pat Meehan,Pat Meehan,2-6 3-6,5,12,0,2,Completed,true,false,false
+AP010061,16 Jun 12,6,Hawthorn,Highmoor Uniting A,No. 1,Nicholas Kotros,Glenn Collins,Glenn Collins,6-0 4-6 2-6,12,12,1,2,Completed,true,false,false
+AP010061,16 Jun 12,6,Hawthorn,Highmoor Uniting A,No. 2,Paul Hormazabal,Scott Lyons,Paul Hormazabal,6-0 6-0,12,0,2,0,Completed,true,false,false
+AP010061,16 Jun 12,6,Hawthorn,Highmoor Uniting A,No. 3,Daniel Villalobos,Jayden Moorfoot,Daniel Villalobos,6-4 6-2,12,6,2,0,Completed,true,false,false
+AP010062,16 Jun 12,6,Le Page,Carmelite,No. 1,Nathan Coombes,Michael Baird,Nathan Coombes,6-1 6-1,12,2,2,0,Completed,true,false,false
+AP010062,16 Jun 12,6,Le Page,Carmelite,No. 2,Tyson Coombes,Michael Junkovic,Tyson Coombes,6-3 6-2,12,5,2,0,Completed,true,false,false
+AP010062,16 Jun 12,6,Le Page,Carmelite,No. 3,Tony Sofo,Ted Murphy,Tony Sofo,6-1 6-0,12,1,2,0,Completed,true,false,false
+AP010063,16 Jun 12,6,Lauriston,Highmoor Uniting B,No. 1,Andrew Gelfand,Ben Abbott,Andrew Gelfand,7-5 6-4,13,9,2,0,Completed,true,false,false
+AP010063,16 Jun 12,6,Lauriston,Highmoor Uniting B,No. 2,Nigel Bruce-Smith,John Smak,Nigel Bruce-Smith,6-0 3-6 7-5,16,11,2,1,Completed,true,false,false
+AP010063,16 Jun 12,6,Lauriston,Highmoor Uniting B,No. 3,Ray Turss,Pat Meehan,Pat Meehan,1-6 2-6,3,12,0,2,Completed,true,false,false
+AP010081,30 Jun 12,8,Carmelite,Highmoor Uniting A,No. 1,Donny Balla,Paul Luke,Paul Luke,2-6 0-6,2,12,0,2,Completed,true,false,false
+AP010081,30 Jun 12,8,Carmelite,Highmoor Uniting A,No. 2,Michael Baird,Glenn Collins,Glenn Collins,3-6 1-6,4,12,0,2,Completed,true,false,false
+AP010081,30 Jun 12,8,Carmelite,Highmoor Uniting A,No. 3,Michael Junkovic,Brett Collins,Michael Junkovic,7-6 7-5,14,11,2,0,Completed,true,false,false
+AP010082,30 Jun 12,8,Hawthorn,Highmoor Uniting B,No. 1,Nicholas Kotros,Ben Abbott,Nicholas Kotros,6-2 7-6,13,8,2,0,Completed,true,false,false
+AP010082,30 Jun 12,8,Hawthorn,Highmoor Uniting B,No. 2,Paul Hormazabal,Jason Mahmoud,Paul Hormazabal,6-3 6-0,12,3,2,0,Completed,true,false,false
+AP010082,30 Jun 12,8,Hawthorn,Highmoor Uniting B,No. 3,Jeremy Thompkins,Pat Meehan,Jeremy Thompkins,7-6 6-2,13,8,2,0,Completed,true,false,false
+AP010083,30 Jun 12,8,Le Page,Lauriston,No. 1,Nathan Coombes,Andrew Gelfand,Andrew Gelfand,7-5 3-6 5-7,15,18,1,2,Completed,true,false,false
+AP010083,30 Jun 12,8,Le Page,Lauriston,No. 2,Tyson Coombes,Nigel Bruce-Smith,Tyson Coombes,6-3 6-1,12,4,2,0,Completed,true,false,false
+AP010083,30 Jun 12,8,Le Page,Lauriston,No. 3,Brian Govan,Ray Turss,Ray Turss,2-6 4-6,6,12,0,2,Completed,true,false,false
+AP010101,14 Jul 12,10,Highmoor Uniting B,Highmoor Uniting A,No. 1,Ben Abbott,Paul Luke,Paul Luke,2-6 4-6,6,12,0,2,Completed,true,false,false
+AP010101,14 Jul 12,10,Highmoor Uniting B,Highmoor Uniting A,No. 2,Jason Mahmoud,Glenn Collins,Glenn Collins,3-6 4-6,7,12,0,2,Completed,true,false,false
+AP010101,14 Jul 12,10,Highmoor Uniting B,Highmoor Uniting A,No. 3,Pat Meehan,Scott Lyons,Pat Meehan,6-2 6-4,12,6,2,0,Completed,true,false,false
+AP010102,14 Jul 12,10,Hawthorn,Le Page,No. 1,Nicholas Kotros,Nathan Coombes,Nathan Coombes,4-6 6-3 3-6,13,15,1,2,Completed,true,false,false
+AP010102,14 Jul 12,10,Hawthorn,Le Page,No. 2,Paul Hormazabal,Trevor Hastings,Paul Hormazabal,6-0 6-1,12,1,2,0,Completed,true,false,false
+AP010102,14 Jul 12,10,Hawthorn,Le Page,No. 3,Daniel Villalobos,Brian Govan,Daniel Villalobos,6-4 6-4,12,8,2,0,Completed,true,false,false
+AP010103,14 Jul 12,10,Carmelite,Lauriston,No. 1,Michael Baird,Andrew Gelfand,Andrew Gelfand,4-6 3-6,7,12,0,2,Completed,true,false,false
+AP010103,14 Jul 12,10,Carmelite,Lauriston,No. 2,Michael Junkovic,Nigel Bruce-Smith,Nigel Bruce-Smith,0-6 5-7,5,13,0,2,Completed,true,false,false
+AP010103,14 Jul 12,10,Carmelite,Lauriston,No. 3,Ted Murphy,Ray Turss,Ray Turss,1-6 2-6,3,12,0,2,Completed,true,false,false
+AP010121,28 Jul 12,12,Lauriston,Highmoor Uniting A,No. 1,Amal Fernando,Glenn Collins,Amal Fernando,7-6 6-1,13,7,2,0,Completed,true,false,false
+AP010121,28 Jul 12,12,Lauriston,Highmoor Uniting A,No. 2,Nigel Bruce-Smith,Scott Lyons,,1-2,1,2,0,1,Unfinished,false,false,false
+AP010121,28 Jul 12,12,Lauriston,Highmoor Uniting A,No. 3,Murray Ashton,Jayden Moorfoot,,6-7 5-5,11,12,0,1,Unfinished,false,false,false
+AP010122,28 Jul 12,12,Le Page,Highmoor Uniting B,No. 1,Nathan Coombes,Ben Abbott,Nathan Coombes,7-5 6-3,13,8,2,0,Completed,true,false,false
+AP010122,28 Jul 12,12,Le Page,Highmoor Uniting B,No. 2,Tyson Coombes,John Smak,Tyson Coombes,6-2 6-1,12,3,2,0,Completed,true,false,false
+AP010122,28 Jul 12,12,Le Page,Highmoor Uniting B,No. 3,Brian Govan,Pat Meehan,Pat Meehan,5-7 5-7,10,14,0,2,Completed,true,false,false
+AP010123,28 Jul 12,12,Hawthorn,Carmelite,No. 1,Nicholas Kotros,Michael Baird,,6-2 2-0,8,2,2,0,Unfinished,false,false,false
+AP010123,28 Jul 12,12,Hawthorn,Carmelite,No. 2,Paul Hormazabal,Michael Junkovic,Paul Hormazabal,6-0 6-0,12,0,2,0,Completed,true,false,false
+AP010123,28 Jul 12,12,Hawthorn,Carmelite,No. 3,Daniel Villalobos,Ted Murphy,Daniel Villalobos,6-0 6-0,12,0,2,0,Completed,true,false,false
+AP010141,11 Aug 12,14,Le Page,Highmoor Uniting A,No. 1,Nathan Coombes,Paul Luke,Paul Luke,5-7 1-6,6,13,0,2,Completed,true,false,false
+AP010141,11 Aug 12,14,Le Page,Highmoor Uniting A,No. 2,Tyson Coombes,Glenn Collins,Tyson Coombes,6-2 7-6,13,8,2,0,Completed,true,false,false
+AP010141,11 Aug 12,14,Le Page,Highmoor Uniting A,No. 3,Trevor Hastings,Scott Lyons,Scott Lyons,4-6 4-6,8,12,0,2,Completed,true,false,false
+AP010142,11 Aug 12,14,Hawthorn,Lauriston,No. 1,Nicholas Kotros,Amal Fernando,Nicholas Kotros,6-4 5-7 6-3,17,14,2,1,Completed,true,false,false
+AP010142,11 Aug 12,14,Hawthorn,Lauriston,No. 2,Paul Hormazabal,Nigel Bruce-Smith,Paul Hormazabal,6-4 6-2,12,6,2,0,Completed,true,false,false
+AP010142,11 Aug 12,14,Hawthorn,Lauriston,No. 3,Daniel Villalobos,Ray Turss,Daniel Villalobos,6-1 6-3,12,4,2,0,Completed,true,false,false
+AP010143,11 Aug 12,14,Carmelite,Highmoor Uniting B,No. 1,Michael Baird,Ben Abbott,Ben Abbott,0-6 0-6,0,12,0,2,Completed,true,false,false
+AP010143,11 Aug 12,14,Carmelite,Highmoor Uniting B,No. 2,James Trowsdale,John Smak,John Smak,0-6 0-6,0,12,0,2,Completed,true,false,false
+AP010143,11 Aug 12,14,Carmelite,Highmoor Uniting B,No. 3,Ted Murphy,Pat Meehan,Pat Meehan,0-6 0-6,0,12,0,2,Completed,true,false,false
+AP010311,18 Aug 12,15,Highmoor Uniting A,Highmoor Uniting B,No. 1,Paul Luke,Ben Abbott,Paul Luke,6-2 6-3,12,5,2,0,Completed,true,false,false
+AP010311,18 Aug 12,15,Highmoor Uniting A,Highmoor Uniting B,No. 2,Glenn Collins,Jason Mahmoud,Glenn Collins,3-6 7-5 6-1,16,12,2,1,Completed,true,false,false
+AP010311,18 Aug 12,15,Highmoor Uniting A,Highmoor Uniting B,No. 3,Jayden Moorfoot,Pat Meehan,Pat Meehan,3-6 2-6,5,12,0,2,Completed,true,false,false
+AP010321,,16,Lauriston,Highmoor Uniting A,No. 1,Nigel Bruce-Smith,Paul Luke,Paul Luke,1-6 0-6,1,12,0,2,Completed,true,false,false
+AP010321,,16,Lauriston,Highmoor Uniting A,No. 2,Murray Ashton,Glenn Collins,Glenn Collins,4-6 6-2 0-6,10,14,1,2,Completed,true,true,false
+AP010321,,16,Lauriston,Highmoor Uniting A,No. 3,Ray Turss,Scott Lyons,Scott Lyons,6-7,6,7,0,1,Completed,true,false,false

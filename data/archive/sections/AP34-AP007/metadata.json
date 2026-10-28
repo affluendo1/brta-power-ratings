@@ -1,0 +1,99 @@
+{
+  "asset_id": "AP34-AP007",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 16/17",
+  "season_id": "AP34",
+  "season_label": "Summer 16/17",
+  "source_section_code": "AP007",
+  "section_label": "Mixed Rubbers 3",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Centenary Park",
+      "wins": 10,
+      "points": 72.5,
+      "percentage": 118.5,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Albert Reserve MP 2",
+      "wins": 6,
+      "points": 55.5,
+      "percentage": 125.52,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Albert Reserve MP 1",
+      "wins": 5,
+      "points": 47,
+      "percentage": 102.09,
+      "marker": "R"
+    },
+    {
+      "position": 4,
+      "team": "Parkdale 1",
+      "wins": 5,
+      "points": 45.5,
+      "percentage": 105.67,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "St Johns",
+      "wins": 4,
+      "points": 41.5,
+      "percentage": 98.29,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Beaumaris CC",
+      "wins": 4,
+      "points": 37.5,
+      "percentage": 75.93,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Parkdale 2",
+      "wins": 3,
+      "points": 36.5,
+      "percentage": 82.61,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP34-AP007",
+  "fixtures": 60,
+  "completed_fixtures": 43,
+  "draw_fixtures": 60,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 170,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP007021 doubles No. 4: '6-4 6-7'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP007114 doubles No. 2: '6-4 0-2'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP007321 doubles No. 3: '6-4 2-6'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

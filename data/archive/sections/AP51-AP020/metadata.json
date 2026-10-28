@@ -1,0 +1,106 @@
+{
+  "asset_id": "AP51-AP020",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 25/26",
+  "season_id": "AP51",
+  "season_label": "Summer 25/26",
+  "source_section_code": "AP020",
+  "section_label": "Womens Rubs 1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "St Louis de Mont",
+      "wins": 11,
+      "points": 93,
+      "percentage": 197.3,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Fitzroy",
+      "wins": 10,
+      "points": 83,
+      "percentage": 152.74,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Legend Park",
+      "wins": 6,
+      "points": 61,
+      "percentage": 125.35,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Port Melbourne",
+      "wins": 7,
+      "points": 60,
+      "percentage": 111.14,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Chadstone",
+      "wins": 5,
+      "points": 53,
+      "percentage": 90.09,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Overport Park",
+      "wins": 4,
+      "points": 44,
+      "percentage": 85.36,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Mentone",
+      "wins": 4,
+      "points": 43,
+      "percentage": 75.93,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "Ormond",
+      "wins": 0,
+      "points": 11,
+      "percentage": 31.03,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP51-AP020",
+  "fixtures": 59,
+  "completed_fixtures": 52,
+  "draw_fixtures": 59,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 206,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP020091 doubles No. 1: '1-0'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP020091 doubles No. 2: '0-1'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

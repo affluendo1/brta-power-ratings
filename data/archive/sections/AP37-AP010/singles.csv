@@ -1,0 +1,159 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP010011,05 May 18,1,Le Page,Glen Huntly,No. 1,Nathan Coombes,Roger Yan,Nathan Coombes,8-7,8,7,1,0,Completed,true,false,false
+AP010011,05 May 18,1,Le Page,Glen Huntly,No. 2,Tony Sofo,Nicholas Chong,Tony Sofo,8-5,8,5,1,0,Completed,true,false,false
+AP010011,05 May 18,1,Le Page,Glen Huntly,No. 3,Brian Govan,Roberto Pacheco,Brian Govan,8-6,8,6,1,0,Completed,true,false,false
+AP010011,05 May 18,1,Le Page,Glen Huntly,No. 4,Lauren Gellert,Srikrishna Narayanan,Srikrishna Narayanan,1-8,1,8,0,1,Completed,true,false,false
+AP010012,05 May 18,1,Highmoor Uniting,Port Melbourne,No. 1,Paul Luke,Andrew Ross,Paul Luke,8-2,8,2,1,0,Completed,true,false,false
+AP010012,05 May 18,1,Highmoor Uniting,Port Melbourne,No. 2,Ben Abbott,Espie Balila,Espie Balila,6-8,6,8,0,1,Completed,true,false,false
+AP010012,05 May 18,1,Highmoor Uniting,Port Melbourne,No. 3,Jason Mahmoud,Hugh Rennie,Jason Mahmoud,8-5,8,5,1,0,Completed,true,false,false
+AP010012,05 May 18,1,Highmoor Uniting,Port Melbourne,No. 4,Tom Pope,David Clement,Tom Pope,8-2,8,2,1,0,Completed,true,false,false
+AP010013,05 May 18,1,Lauriston,St Pats Mentone,No. 1,Scott Newton,Cameron De Silva,,1-2,1,2,0,1,Unfinished,false,false,false
+AP010013,05 May 18,1,Lauriston,St Pats Mentone,No. 2,Luke Smith,David Lawry,David Lawry,1-8,1,8,0,1,Completed,true,false,false
+AP010013,05 May 18,1,Lauriston,St Pats Mentone,No. 3,Greg Gabai,Mike De Silva,,3-0,3,0,1,0,Unfinished,false,false,false
+AP010013,05 May 18,1,Lauriston,St Pats Mentone,No. 4,William Swedosh,Adam Dudley,Adam Dudley,4-8,4,8,0,1,Completed,true,false,false
+AP010022,12 May 18,2,Glen Huntly,Highmoor Uniting,No. 1,Roger Yan,Paul Luke,Paul Luke,6-8,6,8,0,1,Completed,true,false,false
+AP010022,12 May 18,2,Glen Huntly,Highmoor Uniting,No. 2,Paul Laughton,Kyle Malligan,Kyle Malligan,1-8,1,8,0,1,Completed,true,false,false
+AP010022,12 May 18,2,Glen Huntly,Highmoor Uniting,No. 3,Nicholas Chong,Jason Mahmoud,Jason Mahmoud,5-8,5,8,0,1,Completed,true,false,false
+AP010022,12 May 18,2,Glen Huntly,Highmoor Uniting,No. 4,Roberto Pacheco,Tom Pope,Tom Pope,0-8,0,8,0,1,Completed,true,false,false
+AP010023,12 May 18,2,Port Melbourne,Lauriston,No. 1,Andrew Ross,Scott Newton,Andrew Ross,8-1,8,1,1,0,Completed,true,false,false
+AP010023,12 May 18,2,Port Melbourne,Lauriston,No. 2,Espie Balila,Nathan Kazakevich,Espie Balila,8-3,8,3,1,0,Completed,true,false,false
+AP010023,12 May 18,2,Port Melbourne,Lauriston,No. 3,Hugh Rennie,Greg Gabai,Greg Gabai,5-8,5,8,0,1,Completed,true,false,false
+AP010023,12 May 18,2,Port Melbourne,Lauriston,No. 4,Paul Higgins,Tristan Smith,Paul Higgins,8-1,8,1,1,0,Completed,true,false,false
+AP010024,12 May 18,2,St Pats Mentone,Carmelite,No. 1,Cameron De Silva,Victor Blitsas,Cameron De Silva,8-6,8,6,1,0,Completed,true,false,false
+AP010024,12 May 18,2,St Pats Mentone,Carmelite,No. 2,Sam Clayton,Nick Rowe,Nick Rowe,1-8,1,8,0,1,Completed,true,false,false
+AP010024,12 May 18,2,St Pats Mentone,Carmelite,No. 3,Nick Hall,Giancarlo Siclari,Giancarlo Siclari,5-8,5,8,0,1,Completed,true,false,false
+AP010024,12 May 18,2,St Pats Mentone,Carmelite,No. 4,Adam Dudley,Oscar Gillespie,Adam Dudley,8-6,8,6,1,0,Completed,true,false,false
+AP010031,19 May 18,3,Le Page,St Pats Mentone,No. 1,Nathan Coombes,Cameron De Silva,Nathan Coombes,8-4,8,4,1,0,Completed,true,false,false
+AP010031,19 May 18,3,Le Page,St Pats Mentone,No. 2,Tony Sofo,Sam Clayton,Sam Clayton,4-8,4,8,0,1,Completed,true,false,false
+AP010031,19 May 18,3,Le Page,St Pats Mentone,No. 3,Trevor Hastings,Mike De Silva,Trevor Hastings,8-6,8,6,1,0,Completed,true,false,false
+AP010031,19 May 18,3,Le Page,St Pats Mentone,No. 4,Brian Govan,Adam Dudley,Adam Dudley,2-8,2,8,0,1,Completed,true,false,false
+AP010033,19 May 18,3,Lauriston,Glen Huntly,No. 1,Scott Newton,Roger Yan,Roger Yan,3-8,3,8,0,1,Completed,true,false,false
+AP010033,19 May 18,3,Lauriston,Glen Huntly,No. 2,Nathan Kazakevich,Paul Laughton,Paul Laughton,7-8,7,8,0,1,Completed,true,false,false
+AP010033,19 May 18,3,Lauriston,Glen Huntly,No. 3,Luke Smith,Nicholas Chong,Luke Smith,8-4,8,4,1,0,Completed,true,false,false
+AP010033,19 May 18,3,Lauriston,Glen Huntly,No. 4,Greg Gabai,Srikrishna Narayanan,Greg Gabai,8-3,8,3,1,0,Completed,true,false,false
+AP010034,19 May 18,3,Carmelite,Port Melbourne,No. 1,Victor Blitsas,Andrew Ross,Andrew Ross,1-8,1,8,0,1,Completed,true,false,false
+AP010034,19 May 18,3,Carmelite,Port Melbourne,No. 2,Giancarlo Siclari,Hugh Rennie,Hugh Rennie,2-8,2,8,0,1,Completed,true,false,false
+AP010034,19 May 18,3,Carmelite,Port Melbourne,No. 3,Lachlan Jones,David Clement,Lachlan Jones,8-2,8,2,1,0,Completed,true,false,false
+AP010034,19 May 18,3,Carmelite,Port Melbourne,No. 4,Mitchell Carlisle,Paul Higgins,Paul Higgins,4-8,4,8,0,1,Completed,true,false,false
+AP010041,26 May 18,4,Port Melbourne,Le Page,No. 1,Travis Kinsman,Nathan Coombes,Travis Kinsman,8-2,8,2,1,0,Completed,true,false,false
+AP010041,26 May 18,4,Port Melbourne,Le Page,No. 2,Espie Balila,Tony Sofo,Espie Balila,8-0,8,0,1,0,Completed,true,false,false
+AP010041,26 May 18,4,Port Melbourne,Le Page,No. 3,Paul Higgins,Trevor Hastings,Paul Higgins,8-2,8,2,1,0,Completed,true,false,false
+AP010041,26 May 18,4,Port Melbourne,Le Page,No. 4,Josh Kempin,Lauren Gellert,Josh Kempin,8-5,8,5,1,0,Completed,true,false,false
+AP010042,26 May 18,4,St Pats Mentone,Highmoor Uniting,No. 1,Cameron De Silva,Yves Zenou,Yves Zenou,4-8,4,8,0,1,Completed,true,false,false
+AP010042,26 May 18,4,St Pats Mentone,Highmoor Uniting,No. 2,David Lawry,Kyle Malligan,Kyle Malligan,0-8,0,8,0,1,Completed,true,false,false
+AP010042,26 May 18,4,St Pats Mentone,Highmoor Uniting,No. 3,Sam Clayton,Ben Abbott,Ben Abbott,3-8,3,8,0,1,Completed,true,false,false
+AP010042,26 May 18,4,St Pats Mentone,Highmoor Uniting,No. 4,Mike De Silva,Nick Martin,Mike De Silva,8-2,8,2,1,0,Completed,true,false,false
+AP010044,26 May 18,4,Glen Huntly,Carmelite,No. 1,Roger Yan,Ben Kirchet,Roger Yan,8-0,8,0,1,0,Completed,true,false,false
+AP010044,26 May 18,4,Glen Huntly,Carmelite,No. 2,Paul Laughton,Louis Horsley,Louis Horsley,6-8,6,8,0,1,Completed,true,false,false
+AP010044,26 May 18,4,Glen Huntly,Carmelite,No. 3,Nicholas Chong,Giancarlo Siclari,Nicholas Chong,8-4,8,4,1,0,Completed,true,false,false
+AP010044,26 May 18,4,Glen Huntly,Carmelite,No. 4,Srikrishna Narayanan,Mitchell Carlisle,Mitchell Carlisle,7-8,7,8,0,1,Completed,true,false,false
+AP010053,02 Jun 18,5,Port Melbourne,Glen Huntly,No. 1,Travis Kinsman,Roger Yan,Roger Yan,5-8,5,8,0,1,Completed,true,false,false
+AP010053,02 Jun 18,5,Port Melbourne,Glen Huntly,No. 2,Espie Balila,Paul Laughton,Espie Balila,8-0,8,0,1,0,Completed,true,false,false
+AP010053,02 Jun 18,5,Port Melbourne,Glen Huntly,No. 3,Hugh Rennie,Srikrishna Narayanan,Hugh Rennie,8-0,8,0,1,0,Completed,true,false,false
+AP010053,02 Jun 18,5,Port Melbourne,Glen Huntly,No. 4,Paul Higgins,Rajesh Balasubramanyam,Paul Higgins,8-0,8,0,1,0,Completed,true,false,false
+AP010054,02 Jun 18,5,Le Page,Highmoor Uniting,No. 1,Nathan Coombes,Kyle Malligan,Nathan Coombes,8-3,8,3,1,0,Completed,true,false,false
+AP010054,02 Jun 18,5,Le Page,Highmoor Uniting,No. 2,Tony Sofo,Jason Mahmoud,Jason Mahmoud,6-8,6,8,0,1,Completed,true,false,false
+AP010054,02 Jun 18,5,Le Page,Highmoor Uniting,No. 3,Kon Chingorev,Tom Pope,Tom Pope,0-8,0,8,0,1,Completed,true,false,false
+AP010054,02 Jun 18,5,Le Page,Highmoor Uniting,No. 4,Brian Govan,Nick Martin,Nick Martin,6-8,6,8,0,1,Completed,true,false,false
+AP010061,16 Jun 18,6,Highmoor Uniting,Lauriston,No. 1,Ben Abbott,Scott Newton,Ben Abbott,8-0,8,0,1,0,Completed,true,false,false
+AP010061,16 Jun 18,6,Highmoor Uniting,Lauriston,No. 2,Jason Mahmoud,Nathan Kazakevich,Jason Mahmoud,8-5,8,5,1,0,Completed,true,false,false
+AP010061,16 Jun 18,6,Highmoor Uniting,Lauriston,No. 3,Tom Pope,Luke Smith,Tom Pope,8-1,8,1,1,0,Completed,true,false,false
+AP010061,16 Jun 18,6,Highmoor Uniting,Lauriston,No. 4,Nick Martin,Greg Gabai,Nick Martin,8-5,8,5,1,0,Completed,true,false,false
+AP010062,16 Jun 18,6,Carmelite,Le Page,No. 1,Ben Kirchet,Nathan Coombes,Nathan Coombes,1-8,1,8,0,1,Completed,true,false,false
+AP010062,16 Jun 18,6,Carmelite,Le Page,No. 2,Victor Blitsas,Tony Sofo,Victor Blitsas,8-4,8,4,1,0,Completed,true,false,false
+AP010062,16 Jun 18,6,Carmelite,Le Page,No. 3,Mark Doherty,Trevor Hastings,Mark Doherty,8-2,8,2,1,0,Completed,true,false,false
+AP010062,16 Jun 18,6,Carmelite,Le Page,No. 4,Sait Parlic,Brian Govan,Sait Parlic,8-2,8,2,1,0,Completed,true,false,false
+AP010063,16 Jun 18,6,St Pats Mentone,Port Melbourne,No. 1,Cameron De Silva,Andrew Ross,Andrew Ross,6-8,6,8,0,1,Completed,true,false,false
+AP010063,16 Jun 18,6,St Pats Mentone,Port Melbourne,No. 2,David Lawry,Hugh Rennie,Hugh Rennie,2-8,2,8,0,1,Completed,true,false,false
+AP010063,16 Jun 18,6,St Pats Mentone,Port Melbourne,No. 3,Sam Clayton,Newnest Addakula,Newnest Addakula,5-8,5,8,0,1,Completed,true,false,false
+AP010063,16 Jun 18,6,St Pats Mentone,Port Melbourne,No. 4,Mike De Silva,Josh Kempin,Mike De Silva,8-5,8,5,1,0,Completed,true,false,false
+AP010071,23 Jun 18,7,Le Page,Lauriston,No. 1,Nathan Coombes,Scott Newton,Nathan Coombes,8-1,8,1,1,0,Completed,true,false,false
+AP010071,23 Jun 18,7,Le Page,Lauriston,No. 2,Tony Sofo,Nathan Kazakevich,Nathan Kazakevich,4-8,4,8,0,1,Completed,true,false,false
+AP010071,23 Jun 18,7,Le Page,Lauriston,No. 3,Trevor Hastings,Luke Smith,Luke Smith,5-8,5,8,0,1,Completed,true,false,false
+AP010071,23 Jun 18,7,Le Page,Lauriston,No. 4,Brian Govan,William Swedosh,William Swedosh,6-8,6,8,0,1,Completed,true,false,false
+AP010072,23 Jun 18,7,Highmoor Uniting,Carmelite,No. 1,Paul Luke,Ben Kirchet,Paul Luke,8-2,8,2,1,0,Completed,true,false,false
+AP010072,23 Jun 18,7,Highmoor Uniting,Carmelite,No. 2,Ben Abbott,Mark Doherty,Ben Abbott,8-3,8,3,1,0,Completed,true,false,false
+AP010072,23 Jun 18,7,Highmoor Uniting,Carmelite,No. 3,Tom Pope,Giancarlo Siclari,Tom Pope,8-0,8,0,1,0,Completed,true,false,false
+AP010072,23 Jun 18,7,Highmoor Uniting,Carmelite,No. 4,Nick Martin,Adam Gleza,Adam Gleza,0-8,0,8,0,1,Completed,true,false,false
+AP010074,23 Jun 18,7,St Pats Mentone,Glen Huntly,No. 1,Cameron De Silva,Paul Laughton,Cameron De Silva,8-3,8,3,1,0,Completed,true,false,false
+AP010074,23 Jun 18,7,St Pats Mentone,Glen Huntly,No. 2,David Lawry,Nicholas Chong,David Lawry,8-4,8,4,1,0,Completed,true,false,false
+AP010074,23 Jun 18,7,St Pats Mentone,Glen Huntly,No. 3,Sam Clayton,Srikrishna Narayanan,Sam Clayton,8-5,8,5,1,0,Completed,true,false,false
+AP010074,23 Jun 18,7,St Pats Mentone,Glen Huntly,No. 4,Adam Dudley,Rajesh Balasubramanyam,Adam Dudley,8-1,8,1,1,0,Completed,true,false,false
+AP010083,30 Jun 18,8,St Pats Mentone,Lauriston,No. 1,Cameron De Silva,Nathan Kazakevich,Cameron De Silva,8-3,8,3,1,0,Completed,true,false,false
+AP010083,30 Jun 18,8,St Pats Mentone,Lauriston,No. 2,Sam Clayton,Luke Smith,Luke Smith,5-8,5,8,0,1,Completed,true,false,false
+AP010083,30 Jun 18,8,St Pats Mentone,Lauriston,No. 3,Nick Hall,Greg Gabai,Greg Gabai,3-8,3,8,0,1,Completed,true,false,false
+AP010083,30 Jun 18,8,St Pats Mentone,Lauriston,No. 4,Mike De Silva,William Swedosh,Mike De Silva,8-5,8,5,1,0,Completed,true,false,false
+AP010092,07 Jul 18,9,Highmoor Uniting,Glen Huntly,No. 1,Paul Luke,Roger Yan,Paul Luke,8-7,8,7,1,0,Completed,true,false,false
+AP010092,07 Jul 18,9,Highmoor Uniting,Glen Huntly,No. 2,Kyle Malligan,Paul Laughton,Kyle Malligan,8-2,8,2,1,0,Completed,true,false,false
+AP010092,07 Jul 18,9,Highmoor Uniting,Glen Huntly,No. 3,Ben Abbott,Srikrishna Narayanan,Ben Abbott,8-4,8,4,1,0,Completed,true,false,false
+AP010092,07 Jul 18,9,Highmoor Uniting,Glen Huntly,No. 4,Jason Mahmoud,Rajesh Balasubramanyam,Jason Mahmoud,8-2,8,2,1,0,Completed,true,false,false
+AP010093,07 Jul 18,9,Lauriston,Port Melbourne,No. 1,Scott Newton,Andrew Ross,Andrew Ross,3-8,3,8,0,1,Completed,true,false,false
+AP010093,07 Jul 18,9,Lauriston,Port Melbourne,No. 2,Nathan Kazakevich,Hugh Rennie,Hugh Rennie,7-8,7,8,0,1,Completed,true,false,false
+AP010093,07 Jul 18,9,Lauriston,Port Melbourne,No. 3,Luke Smith,Paul Higgins,Paul Higgins,6-8,6,8,0,1,Completed,true,false,false
+AP010093,07 Jul 18,9,Lauriston,Port Melbourne,No. 4,Greg Gabai,Josh Kempin,Greg Gabai,8-5,8,5,1,0,Completed,true,false,false
+AP010094,07 Jul 18,9,Carmelite,St Pats Mentone,No. 1,Ben Kirchet,Cameron De Silva,Ben Kirchet,8-6,8,6,1,0,Completed,true,false,false
+AP010094,07 Jul 18,9,Carmelite,St Pats Mentone,No. 2,Victor Blitsas,David Lawry,Victor Blitsas,8-0,8,0,1,0,Completed,true,false,false
+AP010094,07 Jul 18,9,Carmelite,St Pats Mentone,No. 3,Nick Rowe,Sam Clayton,Nick Rowe,8-6,8,6,1,0,Completed,true,false,false
+AP010094,07 Jul 18,9,Carmelite,St Pats Mentone,No. 4,Michael Junkovic,Mike De Silva,Michael Junkovic,8-5,8,5,1,0,Completed,true,false,false
+AP010101,14 Jul 18,10,St Pats Mentone,Le Page,No. 1,Cameron De Silva,Nathan Coombes,Nathan Coombes,1-8,1,8,0,1,Completed,true,false,false
+AP010101,14 Jul 18,10,St Pats Mentone,Le Page,No. 2,David Lawry,Tony Sofo,David Lawry,8-2,8,2,1,0,Completed,true,false,false
+AP010101,14 Jul 18,10,St Pats Mentone,Le Page,No. 3,Nick Hall,Trevor Hastings,Nick Hall,8-7,8,7,1,0,Completed,true,false,false
+AP010101,14 Jul 18,10,St Pats Mentone,Le Page,No. 4,Adam Dudley,Brian Govan,Adam Dudley,8-3,8,3,1,0,Completed,true,false,false
+AP010103,14 Jul 18,10,Glen Huntly,Lauriston,No. 1,Roger Yan,Scott Newton,Roger Yan,8-2,8,2,1,0,Completed,true,false,false
+AP010103,14 Jul 18,10,Glen Huntly,Lauriston,No. 2,Nicholas Chong,Nathan Kazakevich,Nathan Kazakevich,5-8,5,8,0,1,Completed,true,false,false
+AP010103,14 Jul 18,10,Glen Huntly,Lauriston,No. 3,Srikrishna Narayanan,Luke Smith,Luke Smith,3-8,3,8,0,1,Completed,true,false,false
+AP010103,14 Jul 18,10,Glen Huntly,Lauriston,No. 4,Rajesh Balasubramanyam,Greg Gabai,Greg Gabai,2-8,2,8,0,1,Completed,true,false,false
+AP010104,14 Jul 18,10,Port Melbourne,Carmelite,No. 1,Andrew Ross,Ben Kirchet,Andrew Ross,8-2,8,2,1,0,Completed,true,false,false
+AP010104,14 Jul 18,10,Port Melbourne,Carmelite,No. 2,Espie Balila,Nick Rowe,Nick Rowe,4-8,4,8,0,1,Completed,true,false,false
+AP010104,14 Jul 18,10,Port Melbourne,Carmelite,No. 3,Hugh Rennie,Giancarlo Siclari,Hugh Rennie,8-1,8,1,1,0,Completed,true,false,false
+AP010104,14 Jul 18,10,Port Melbourne,Carmelite,No. 4,Newnest Addakula,Michael Junkovic,Newnest Addakula,8-4,8,4,1,0,Completed,true,false,false
+AP010111,21 Jul 18,11,Le Page,Port Melbourne,No. 1,Nathan Coombes,David Thompson,Nathan Coombes,8-1,8,1,1,0,Completed,true,false,false
+AP010111,21 Jul 18,11,Le Page,Port Melbourne,No. 2,Tony Sofo,Hugh Rennie,Tony Sofo,8-0,8,0,1,0,Completed,true,false,false
+AP010111,21 Jul 18,11,Le Page,Port Melbourne,No. 3,Trevor Hastings,Newnest Addakula,Newnest Addakula,6-8,6,8,0,1,Completed,true,false,false
+AP010111,21 Jul 18,11,Le Page,Port Melbourne,No. 4,Brian Govan,Josh Kempin,Brian Govan,8-2,8,2,1,0,Completed,true,false,false
+AP010112,21 Jul 18,11,Highmoor Uniting,St Pats Mentone,No. 1,Ben Abbott,Cameron De Silva,Ben Abbott,8-4,8,4,1,0,Completed,true,false,false
+AP010112,21 Jul 18,11,Highmoor Uniting,St Pats Mentone,No. 2,Jason Mahmoud,Nick Hall,Jason Mahmoud,8-2,8,2,1,0,Completed,true,false,false
+AP010112,21 Jul 18,11,Highmoor Uniting,St Pats Mentone,No. 3,Tom Pope,Mike De Silva,Tom Pope,8-1,8,1,1,0,Completed,true,false,false
+AP010112,21 Jul 18,11,Highmoor Uniting,St Pats Mentone,No. 4,Nick Martin,Adam Dudley,Adam Dudley,6-8,6,8,0,1,Completed,true,false,false
+AP010114,21 Jul 18,11,Carmelite,Glen Huntly,No. 1,Ben Kirchet,Paul Laughton,Ben Kirchet,8-4,8,4,1,0,Completed,true,false,false
+AP010114,21 Jul 18,11,Carmelite,Glen Huntly,No. 2,Victor Blitsas,Nicholas Chong,Victor Blitsas,8-3,8,3,1,0,Completed,true,false,false
+AP010114,21 Jul 18,11,Carmelite,Glen Huntly,No. 3,Nick Rowe,Rajesh Balasubramanyam,Nick Rowe,8-1,8,1,1,0,Completed,true,false,false
+AP010114,21 Jul 18,11,Carmelite,Glen Huntly,No. 4,Lachlan Jones,Matt Hindson,Lachlan Jones,8-6,8,6,1,0,Completed,true,false,false
+AP010121,28 Jul 18,12,Carmelite,Lauriston,No. 1,Nick Rowe,Scott Newton,Nick Rowe,8-3,8,3,1,0,Completed,true,false,false
+AP010121,28 Jul 18,12,Carmelite,Lauriston,No. 2,Lachlan Jones,Luke Smith,Luke Smith,3-8,3,8,0,1,Completed,true,false,false
+AP010121,28 Jul 18,12,Carmelite,Lauriston,No. 3,Simon Kirwin,Greg Gabai,Greg Gabai,1-8,1,8,0,1,Completed,true,false,false
+AP010121,28 Jul 18,12,Carmelite,Lauriston,No. 4,Jordan Anderson,William Swedosh,Jordan Anderson,8-7,8,7,1,0,Completed,true,false,false
+AP010124,28 Jul 18,12,Highmoor Uniting,Le Page,No. 1,Paul Luke,Nathan Coombes,Paul Luke,8-3,8,3,1,0,Completed,true,false,false
+AP010124,28 Jul 18,12,Highmoor Uniting,Le Page,No. 2,Ben Abbott,Tony Sofo,Ben Abbott,8-1,8,1,1,0,Completed,true,false,false
+AP010124,28 Jul 18,12,Highmoor Uniting,Le Page,No. 3,Tom Pope,Trevor Hastings,Tom Pope,8-1,8,1,1,0,Completed,true,false,false
+AP010124,28 Jul 18,12,Highmoor Uniting,Le Page,No. 4,Nick Martin,Lauren Gellert,Nick Martin,8-2,8,2,1,0,Completed,true,false,false
+AP010131,04 Aug 18,13,Lauriston,Highmoor Uniting,No. 1,Scott Newton,Kyle Malligan,Scott Newton,8-5,8,5,1,0,Completed,true,false,false
+AP010131,04 Aug 18,13,Lauriston,Highmoor Uniting,No. 2,Nathan Kazakevich,Jason Mahmoud,Nathan Kazakevich,8-6,8,6,1,0,Completed,true,false,false
+AP010131,04 Aug 18,13,Lauriston,Highmoor Uniting,No. 3,Greg Gabai,Nick Martin,Greg Gabai,8-0,8,0,1,0,Completed,true,false,false
+AP010131,04 Aug 18,13,Lauriston,Highmoor Uniting,No. 4,William Swedosh,Sam Hooppell,William Swedosh,8-2,8,2,1,0,Completed,true,false,false
+AP010133,04 Aug 18,13,Port Melbourne,St Pats Mentone,No. 1,Travis Kinsman,Cameron De Silva,Travis Kinsman,8-4,8,4,1,0,Completed,true,false,false
+AP010133,04 Aug 18,13,Port Melbourne,St Pats Mentone,No. 2,Espie Balila,David Lawry,Espie Balila,8-4,8,4,1,0,Completed,true,false,false
+AP010133,04 Aug 18,13,Port Melbourne,St Pats Mentone,No. 3,Hugh Rennie,Sam Clayton,Hugh Rennie,8-1,8,1,1,0,Completed,true,false,false
+AP010133,04 Aug 18,13,Port Melbourne,St Pats Mentone,No. 4,Paul Higgins,Mike De Silva,Paul Higgins,8-1,8,1,1,0,Completed,true,false,false
+AP010141,11 Aug 18,14,Lauriston,Le Page,No. 1,Nathan Kazakevich,Nathan Coombes,Nathan Coombes,5-8,5,8,0,1,Completed,true,false,false
+AP010141,11 Aug 18,14,Lauriston,Le Page,No. 2,Luke Smith,Tony Sofo,,4-0,4,0,1,0,Unfinished,false,false,false
+AP010141,11 Aug 18,14,Lauriston,Le Page,No. 3,Greg Gabai,Trevor Hastings,Trevor Hastings,3-8,3,8,0,1,Completed,true,false,false
+AP010141,11 Aug 18,14,Lauriston,Le Page,No. 4,William Swedosh,Brian Govan,William Swedosh,8-2,8,2,1,0,Completed,true,false,false
+AP010144,11 Aug 18,14,Glen Huntly,St Pats Mentone,No. 1,Roger Yan,Cameron De Silva,Roger Yan,8-5,8,5,1,0,Completed,true,false,false
+AP010144,11 Aug 18,14,Glen Huntly,St Pats Mentone,No. 2,Paul Laughton,David Lawry,Paul Laughton,8-4,8,4,1,0,Completed,true,false,false
+AP010144,11 Aug 18,14,Glen Huntly,St Pats Mentone,No. 3,Nicholas Chong,Nick Hall,,5-5,5,5,0,0,Unfinished,false,false,false
+AP010144,11 Aug 18,14,Glen Huntly,St Pats Mentone,No. 4,Srikrishna Narayanan,Adam Dudley,,2-1,2,1,1,0,Unfinished,false,false,false
+AP010301,,16,Highmoor Uniting,Port Melbourne,No. 1,Paul Luke,Andrew Ross,Paul Luke,8-3,8,3,1,0,Completed,true,false,false
+AP010301,,16,Highmoor Uniting,Port Melbourne,No. 2,Kyle Malligan,Travis Kinsman,Travis Kinsman,4-8,4,8,0,1,Completed,true,false,false
+AP010302,,16,Lauriston,Le Page,No. 1,Scott Newton,Nathan Coombes,Nathan Coombes,2-8,2,8,0,1,Completed,true,false,false
+AP010302,,16,Lauriston,Le Page,No. 2,Nathan Kazakevich,Tony Sofo,Nathan Kazakevich,8-2,8,2,1,0,Completed,true,false,false
+AP010302,,16,Lauriston,Le Page,No. 3,Luke Smith,Trevor Hastings,Trevor Hastings,5-8,5,8,0,1,Completed,true,false,false
+AP010302,,16,Lauriston,Le Page,No. 4,Greg Gabai,Brian Govan,Greg Gabai,8-1,8,1,1,0,Completed,true,false,false
+AP010311,,16,Port Melbourne,Lauriston,No. 1,Andrew Ross,Scott Newton,Andrew Ross,8-3,8,3,1,0,Completed,true,false,false
+AP010311,,16,Port Melbourne,Lauriston,No. 2,Travis Kinsman,Nathan Kazakevich,Travis Kinsman,8-4,8,4,1,0,Completed,true,false,false
+AP010311,,16,Port Melbourne,Lauriston,No. 3,Hugh Rennie,Luke Smith,Hugh Rennie,8-3,8,3,1,0,Completed,true,false,false
+AP010311,,16,Port Melbourne,Lauriston,No. 4,Newnest Addakula,Greg Gabai,Greg Gabai,6-8,6,8,0,1,Completed,true,false,false
+AP010321,,17,Highmoor Uniting,Port Melbourne,No. 1,Paul Luke,Andrew Ross,Paul Luke,8-3,8,3,1,0,Completed,true,false,false
+AP010321,,17,Highmoor Uniting,Port Melbourne,No. 2,Ben Abbott,Travis Kinsman,Travis Kinsman,0-8,0,8,0,1,Completed,true,false,false
+AP010321,,17,Highmoor Uniting,Port Melbourne,No. 3,Jason Mahmoud,Espie Balila,Espie Balila,4-8,4,8,0,1,Completed,true,false,false
+AP010321,,17,Highmoor Uniting,Port Melbourne,No. 4,Tom Pope,Newnest Addakula,Tom Pope,8-3,8,3,1,0,Completed,true,false,false

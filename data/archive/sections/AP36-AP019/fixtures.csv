@@ -1,0 +1,61 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP019012,07 Oct 17,1,regular,Round 1,Maccabi,BLTC,2,8,3,6,,,46,50,Completed,
+AP019013,07 Oct 17,1,regular,Round 1,Melbourne Univ,Ormond CR,0,10,0,8,,,26,56,Completed,
+AP019014,07 Oct 17,1,regular,Round 1,Le Page,Lauriston,1,9,2,7,,,33,56,Completed,
+pending-ap019-r1-tennis-world-bye,07 Oct 17,1,regular,Round 1,Tennis World,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP019021,14 Oct 17,2,regular,Round 2,Lauriston,Tennis World,10,0,8,0,,,56,7,Completed,
+AP019023,14 Oct 17,2,regular,Round 2,BLTC,Melbourne Univ,1,9,3,7,,,44,63,Completed,
+AP019024,14 Oct 17,2,regular,Round 2,Ormond CR,Le Page,9,1,7,2,,,58,40,Completed,
+pending-ap019-r2-bye-maccabi,14 Oct 17,2,regular,Round 2,Bye,Maccabi,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP019031,21 Oct 17,3,regular,Round 3,Tennis World,Ormond CR,0,10,0,8,,,21,56,Completed,
+AP019032,21 Oct 17,3,regular,Round 3,Maccabi,Lauriston,7,3,4,4,,,46,43,Completed,
+AP019034,21 Oct 17,3,regular,Round 3,Le Page,BLTC,8,2,5,3,,,43,36,Completed,
+pending-ap019-r3-melbourne-univ-bye,21 Oct 17,3,regular,Round 3,Melbourne Univ,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP019041,28 Oct 17,4,regular,Round 4,BLTC,Tennis World,9,1,7,1,,,52,26,Completed,
+AP019042,28 Oct 17,4,regular,Round 4,Ormond CR,Maccabi,10,0,8,0,,,56,20,Completed,
+AP019043,28 Oct 17,4,regular,Round 4,Lauriston,Melbourne Univ,9,1,7,1,,,52,26,Completed,
+pending-ap019-r4-bye-le-page,28 Oct 17,4,regular,Round 4,Bye,Le Page,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP019052,11 Nov 17,5,regular,Round 5,Lauriston,Ormond CR,2,8,3,5,,,41,44,Completed,
+AP019054,11 Nov 17,5,regular,Round 5,Tennis World,Maccabi,2,8,3,6,,,39,50,Completed,
+pending-ap019-r5-bltc-bye,11 Nov 17,5,regular,Round 5,BLTC,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap019-r5-melbourne-univ-le-page,11 Nov 17,5,regular,Round 5,Melbourne Univ,Le Page,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP019061,18 Nov 17,6,regular,Round 6,Maccabi,Melbourne Univ,5,5,3,3,,,37,47,Completed,
+AP019062,18 Nov 17,6,regular,Round 6,Le Page,Tennis World,9,1,7,2,,,54,35,Completed,
+AP019063,18 Nov 17,6,regular,Round 6,Ormond CR,BLTC,9,1,7,2,,,60,28,Completed,
+pending-ap019-r6-bye-lauriston,18 Nov 17,6,regular,Round 6,Bye,Lauriston,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP019071,25 Nov 17,7,regular,Round 7,Tennis World,Melbourne Univ,0,10,0,8,,,32,57,Completed,
+AP019072,25 Nov 17,7,regular,Round 7,Maccabi,Le Page,3,7,3,5,,,33,40,Completed,
+AP019073,25 Nov 17,7,regular,Round 7,Lauriston,BLTC,2,8,3,6,,,45,56,Completed,
+pending-ap019-r7-ormond-cr-bye,25 Nov 17,7,regular,Round 7,Ormond CR,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP019084,02 Dec 17,8,regular,Round 8,Lauriston,Le Page,5,5,0,0,,,0,0,Completed,
+pending-ap019-r8-bltc-maccabi,02 Dec 17,8,regular,Round 8,BLTC,Maccabi,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap019-r8-bye-tennis-world,02 Dec 17,8,regular,Round 8,Bye,Tennis World,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap019-r8-ormond-cr-melbourne-univ,02 Dec 17,8,regular,Round 8,Ormond CR,Melbourne Univ,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP019091,09 Dec 17,9,regular,Round 9,Tennis World,Lauriston,2,8,3,6,,,43,50,Completed,
+AP019093,09 Dec 17,9,regular,Round 9,Melbourne Univ,BLTC,2,8,3,5,,,33,42,Completed,
+AP019094,09 Dec 17,9,regular,Round 9,Le Page,Ormond CR,1,9,1,7,,,28,56,Completed,
+pending-ap019-r9-maccabi-bye,09 Dec 17,9,regular,Round 9,Maccabi,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP019101,16 Dec 17,10,regular,Round 10,Ormond CR,Tennis World,10,0,8,0,,,56,6,Completed,
+AP019102,16 Dec 17,10,regular,Round 10,Lauriston,Maccabi,8,2,5,3,,,44,36,Completed,
+pending-ap019-r10-bltc-le-page,16 Dec 17,10,regular,Round 10,BLTC,Le Page,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+pending-ap019-r10-bye-melbourne-univ,16 Dec 17,10,regular,Round 10,Bye,Melbourne Univ,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP019111,03 Feb 18,11,regular,Round 11,Tennis World,BLTC,2,8,3,6,,,31,49,Completed,
+AP019112,03 Feb 18,11,regular,Round 11,Maccabi,Ormond CR,1,9,2,6,,,34,44,Completed,
+AP019113,03 Feb 18,11,regular,Round 11,Melbourne Univ,Lauriston,2,8,2,6,,,31,52,Completed,
+pending-ap019-r11-le-page-bye,03 Feb 18,11,regular,Round 11,Le Page,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP019121,10 Feb 18,12,regular,Round 12,Le Page,Melbourne Univ,1,9,2,7,,,40,53,Completed,
+AP019122,10 Feb 18,12,regular,Round 12,Ormond CR,Lauriston,9,1,7,2,,,57,35,Completed,
+AP019124,10 Feb 18,12,regular,Round 12,Maccabi,Tennis World,9,1,7,1,,,53,26,Completed,
+pending-ap019-r12-bye-bltc,10 Feb 18,12,regular,Round 12,Bye,BLTC,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP019131,17 Feb 18,13,regular,Round 13,Melbourne Univ,Maccabi,7,3,5,4,,,54,53,Completed,
+AP019132,17 Feb 18,13,regular,Round 13,Tennis World,Le Page,3,7,4,5,,,38,48,Completed,
+AP019133,17 Feb 18,13,regular,Round 13,BLTC,Ormond CR,7,3,5,5,,,51,47,Completed,
+pending-ap019-r13-lauriston-bye,17 Feb 18,13,regular,Round 13,Lauriston,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP019142,24 Feb 18,14,regular,Round 14,Le Page,Maccabi,8,2,6,4,,,54,49,Completed,
+AP019143,24 Feb 18,14,regular,Round 14,BLTC,Lauriston,7,3,4,4,,,44,41,Completed,
+pending-ap019-r14-bye-ormond-cr,24 Feb 18,14,regular,Round 14,Bye,Ormond CR,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap019-r14-melbourne-univ-tennis-world,24 Feb 18,14,regular,Round 14,Melbourne Univ,Tennis World,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP019301,,16,semi_final,Semi-final,Ormond CR,Lauriston,8,2,5,4,,,55,38,Completed,
+AP019302,,16,semi_final,Semi-final,Melbourne Univ,BLTC,1,9,1,7,,,30,51,Completed,
+AP019311,,16,semi_final,Semi-final,Lauriston,BLTC,7,3,4,4,,,46,42,Completed,
+AP019321,,17,grand_final,Grand final · TROLS entry 2,Ormond CR,Lauriston,9,1,7,1,,,54,33,Completed,

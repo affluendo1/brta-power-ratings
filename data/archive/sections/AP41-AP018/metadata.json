@@ -1,0 +1,87 @@
+{
+  "asset_id": "AP41-AP018",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 20/21",
+  "season_id": "AP41",
+  "season_label": "Summer 20/21",
+  "source_section_code": "AP018",
+  "section_label": "Mens s/d 8",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Le Page",
+      "wins": 7,
+      "points": 64.5,
+      "percentage": 118.09,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Elsternwick Park",
+      "wins": 7,
+      "points": 62.5,
+      "percentage": 105.01,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Monash University",
+      "wins": 6,
+      "points": 59,
+      "percentage": 117.53,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Caulfield Rec",
+      "wins": 3,
+      "points": 43,
+      "percentage": 98.0,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "East Malvern",
+      "wins": 3,
+      "points": 39.5,
+      "percentage": 93.09,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "BLTC",
+      "wins": 2,
+      "points": 31.5,
+      "percentage": 75.0,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP41-AP018",
+  "fixtures": 31,
+  "completed_fixtures": 31,
+  "draw_fixtures": 57,
+  "singles_rubbers": 124,
+  "doubles_rubbers": 58,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

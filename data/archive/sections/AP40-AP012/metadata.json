@@ -1,0 +1,108 @@
+{
+  "asset_id": "AP40-AP012",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 19/20",
+  "season_id": "AP40",
+  "season_label": "Summer 19/20",
+  "source_section_code": "AP012",
+  "section_label": "Ladies S/D 3",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Royal South Yarra 1",
+      "wins": 10,
+      "points": 115,
+      "percentage": 284.77,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "BLTC",
+      "wins": 10,
+      "points": 98,
+      "percentage": 150.12,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Kooyong",
+      "wins": 7,
+      "points": 89.5,
+      "percentage": 140.82,
+      "marker": "R"
+    },
+    {
+      "position": 4,
+      "team": "East Malvern",
+      "wins": 6,
+      "points": 73.5,
+      "percentage": 107.32,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Royal South Yarra 2",
+      "wins": 5,
+      "points": 65.5,
+      "percentage": 92.44,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Patterson Lakes",
+      "wins": 4,
+      "points": 64,
+      "percentage": 93.44,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Fitzroy",
+      "wins": 3,
+      "points": 44,
+      "percentage": 64.9,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "Mordialloc",
+      "wins": 0,
+      "points": 10.5,
+      "percentage": 29.34,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP40-AP012",
+  "fixtures": 59,
+  "completed_fixtures": 49,
+  "draw_fixtures": 59,
+  "singles_rubbers": 192,
+  "doubles_rubbers": 96,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP012044 singles No. 1: '2-4'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP012044 singles No. 2: '2-4'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP012044 singles No. 3: '3-1'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP012052 doubles No. 1: '5-7 0-1'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

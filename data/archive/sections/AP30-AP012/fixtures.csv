@@ -1,0 +1,61 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP012012,04 Oct 14,1,regular,Round 1,Monash University,BLTC,2,8,3,5,,,33,46,Completed,
+AP012013,04 Oct 14,1,regular,Round 1,Albert Reserve 1,Albert Reserve 2,0,10,0,8,,,19,56,Completed,
+AP012014,04 Oct 14,1,regular,Round 1,Dendy Park,MCC,10,0,8,0,,,57,16,Completed,
+pending-ap012-r1-royal-south-yarra-bye,04 Oct 14,1,regular,Round 1,Royal South Yarra,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP012021,11 Oct 14,2,regular,Round 2,MCC,Royal South Yarra,8,2,6,2,,,50,34,Completed,
+AP012023,11 Oct 14,2,regular,Round 2,BLTC,Albert Reserve 1,9,1,7,1,,,54,25,Completed,
+AP012024,11 Oct 14,2,regular,Round 2,Albert Reserve 2,Dendy Park,8,2,5,3,,,42,36,Completed,
+pending-ap012-r2-bye-monash-university,11 Oct 14,2,regular,Round 2,Bye,Monash University,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP012031,18 Oct 14,3,regular,Round 3,Royal South Yarra,Albert Reserve 2,1,9,2,7,,,38,62,Completed,
+AP012032,18 Oct 14,3,regular,Round 3,Monash University,MCC,9,1,7,2,,,57,42,Completed,
+AP012034,18 Oct 14,3,regular,Round 3,Dendy Park,BLTC,2,8,3,6,,,35,50,Completed,
+pending-ap012-r3-albert-reserve-1-bye,18 Oct 14,3,regular,Round 3,Albert Reserve 1,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP012041,25 Oct 14,4,regular,Round 4,BLTC,Royal South Yarra,10,0,8,0,,,57,21,Completed,
+AP012042,25 Oct 14,4,regular,Round 4,Albert Reserve 2,Monash University,9,1,7,2,,,55,26,Completed,
+AP012043,25 Oct 14,4,regular,Round 4,MCC,Albert Reserve 1,7,3,5,4,,,48,52,Completed,
+pending-ap012-r4-bye-dendy-park,25 Oct 14,4,regular,Round 4,Bye,Dendy Park,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP012051,08 Nov 14,5,regular,Round 5,Albert Reserve 1,Dendy Park,9,1,7,1,,,57,30,Completed,
+AP012052,08 Nov 14,5,regular,Round 5,MCC,Albert Reserve 2,2,8,3,6,,,32,53,Completed,
+AP012054,08 Nov 14,5,regular,Round 5,Royal South Yarra,Monash University,1,9,2,7,,,37,51,Completed,
+pending-ap012-r5-bltc-bye,08 Nov 14,5,regular,Round 5,BLTC,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP012061,15 Nov 14,6,regular,Round 6,Monash University,Albert Reserve 1,9,1,7,1,,,57,22,Completed,
+AP012062,15 Nov 14,6,regular,Round 6,Dendy Park,Royal South Yarra,8,2,6,3,,,56,43,Completed,
+AP012063,15 Nov 14,6,regular,Round 6,Albert Reserve 2,BLTC,10,0,8,0,,,57,18,Completed,
+pending-ap012-r6-bye-mcc,15 Nov 14,6,regular,Round 6,Bye,MCC,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP012071,22 Nov 14,7,regular,Round 7,Royal South Yarra,Albert Reserve 1,2,8,4,5,,,39,45,Completed,
+AP012072,22 Nov 14,7,regular,Round 7,Monash University,Dendy Park,8,2,6,3,,,54,50,Completed,
+AP012073,22 Nov 14,7,regular,Round 7,MCC,BLTC,2,8,3,6,,,40,46,Completed,
+pending-ap012-r7-albert-reserve-2-bye,22 Nov 14,7,regular,Round 7,Albert Reserve 2,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP012082,29 Nov 14,8,regular,Round 8,BLTC,Monash University,1,9,2,7,,,26,59,Completed,
+AP012083,29 Nov 14,8,regular,Round 8,Albert Reserve 2,Albert Reserve 1,8,2,5,4,,,46,42,Completed,
+AP012084,29 Nov 14,8,regular,Round 8,MCC,Dendy Park,1,9,1,7,,,14,49,Completed,
+pending-ap012-r8-bye-royal-south-yarra,29 Nov 14,8,regular,Round 8,Bye,Royal South Yarra,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP012091,06 Dec 14,9,regular,Round 9,Royal South Yarra,MCC,10,0,8,1,,,64,36,Completed,
+AP012093,06 Dec 14,9,regular,Round 9,Albert Reserve 1,BLTC,9,1,7,2,,,56,41,Completed,
+AP012094,06 Dec 14,9,regular,Round 9,Dendy Park,Albert Reserve 2,7,3,5,5,,,62,53,Completed,
+pending-ap012-r9-monash-university-bye,06 Dec 14,9,regular,Round 9,Monash University,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP012101,13 Dec 14,10,regular,Round 10,Albert Reserve 2,Royal South Yarra,9,1,7,1,,,51,26,Completed,
+AP012102,13 Dec 14,10,regular,Round 10,MCC,Monash University,1,9,2,7,,,41,56,Completed,
+AP012104,13 Dec 14,10,regular,Round 10,BLTC,Dendy Park,1,9,1,7,,,30,55,Completed,
+pending-ap012-r10-bye-albert-reserve-1,13 Dec 14,10,regular,Round 10,Bye,Albert Reserve 1,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP012111,07 Feb 15,11,regular,Round 11,Royal South Yarra,BLTC,1,9,1,7,,,26,49,Completed,
+AP012112,07 Feb 15,11,regular,Round 11,Monash University,Albert Reserve 2,2,8,4,6,,,51,57,Completed,
+AP012113,07 Feb 15,11,regular,Round 11,Albert Reserve 1,MCC,10,0,8,1,,,60,25,Completed,
+pending-ap012-r11-dendy-park-bye,07 Feb 15,11,regular,Round 11,Dendy Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP012121,14 Feb 15,12,regular,Round 12,Dendy Park,Albert Reserve 1,1,9,2,7,,,41,60,Completed,
+AP012122,14 Feb 15,12,regular,Round 12,Albert Reserve 2,MCC,10,0,8,0,,,56,7,Completed,
+AP012124,14 Feb 15,12,regular,Round 12,Monash University,Royal South Yarra,8,2,6,2,,,48,34,Completed,
+pending-ap012-r12-bye-bltc,14 Feb 15,12,regular,Round 12,Bye,BLTC,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP012131,21 Feb 15,13,regular,Round 13,Albert Reserve 1,Monash University,4,6,1,3,,,29,33,Completed,
+AP012132,21 Feb 15,13,regular,Round 13,Royal South Yarra,Dendy Park,4,6,1,3,,,14,29,Completed,
+AP012133,21 Feb 15,13,regular,Round 13,BLTC,Albert Reserve 2,4,6,0,4,,,10,24,Completed,
+pending-ap012-r13-mcc-bye,21 Feb 15,13,regular,Round 13,MCC,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP012141,28 Feb 15,14,regular,Round 14,Albert Reserve 1,Royal South Yarra,2,8,2,6,,,42,47,Completed,
+AP012142,28 Feb 15,14,regular,Round 14,Dendy Park,Monash University,7,3,4,4,,,44,35,Completed,
+AP012143,28 Feb 15,14,regular,Round 14,BLTC,MCC,9,1,7,2,,,59,34,Completed,
+pending-ap012-r14-bye-albert-reserve-2,28 Feb 15,14,regular,Round 14,Bye,Albert Reserve 2,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP012301,,16,semi_final,Semi-final,Albert Reserve 2,Monash University,8,2,6,4,,,54,47,Completed,
+AP012302,,16,semi_final,Semi-final,BLTC,Dendy Park,2,8,4,6,,,50,56,Completed,
+AP012311,,16,semi_final,Semi-final,Monash University,Dendy Park,1.5,8.5,1,5,,,41,47,Completed,
+AP012321,,17,grand_final,Grand final · TROLS entry 2,Albert Reserve 2,Dendy Park,8,2,6,2,,,50,39,Completed,

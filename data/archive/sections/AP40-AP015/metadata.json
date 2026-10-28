@@ -1,0 +1,106 @@
+{
+  "asset_id": "AP40-AP015",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 19/20",
+  "season_id": "AP40",
+  "season_label": "Summer 19/20",
+  "source_section_code": "AP015",
+  "section_label": "Mens S/D 3",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Langwarrin",
+      "wins": 8,
+      "points": 97,
+      "percentage": 149.63,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Tennis World 2",
+      "wins": 8,
+      "points": 83,
+      "percentage": 112.16,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Caulfield Rec",
+      "wins": 7,
+      "points": 75.5,
+      "percentage": 106.63,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "BLTC 1",
+      "wins": 6,
+      "points": 69,
+      "percentage": 98.47,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Tennis World 1",
+      "wins": 5,
+      "points": 68.5,
+      "percentage": 88.7,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Overport Park",
+      "wins": 3,
+      "points": 58,
+      "percentage": 92.25,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Kings Park",
+      "wins": 5,
+      "points": 58,
+      "percentage": 85.65,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "BLTC 2",
+      "wins": 3,
+      "points": 51,
+      "percentage": 81.68,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP40-AP015",
+  "fixtures": 59,
+  "completed_fixtures": 49,
+  "draw_fixtures": 59,
+  "singles_rubbers": 192,
+  "doubles_rubbers": 94,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP015051 singles No. 2: '3-4'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP015051 singles No. 3: '4-3'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

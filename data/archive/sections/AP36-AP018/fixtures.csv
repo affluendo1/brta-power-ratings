@@ -1,0 +1,61 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP018012,07 Oct 17,1,regular,Round 1,Dendy Park 2,Carmelite,1,9,2,7,,,34,56,Completed,
+AP018013,07 Oct 17,1,regular,Round 1,Royal South Yarra,Monash University,7,3,4,4,,,45,39,Completed,
+AP018014,07 Oct 17,1,regular,Round 1,Port Melbourne,Tennis World MP,2,8,4,5,,,41,45,Completed,
+pending-ap018-r1-bye-dendy-park-1,07 Oct 17,1,regular,Round 1,Bye,Dendy Park 1,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP018022,14 Oct 17,2,regular,Round 2,Dendy Park 1,Dendy Park 2,1,9,1,7,,,33,50,Completed,
+AP018023,14 Oct 17,2,regular,Round 2,Carmelite,Royal South Yarra,10,0,8,0,,,56,6,Completed,
+AP018024,14 Oct 17,2,regular,Round 2,Monash University,Port Melbourne,2,8,2,6,,,30,52,Completed,
+pending-ap018-r2-tennis-world-mp-bye,14 Oct 17,2,regular,Round 2,Tennis World MP,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP018032,21 Oct 17,3,regular,Round 3,Dendy Park 2,Tennis World MP,9,1,7,1,,,52,22,Completed,
+AP018033,21 Oct 17,3,regular,Round 3,Royal South Yarra,Dendy Park 1,1,9,1,7,,,26,56,Completed,
+AP018034,21 Oct 17,3,regular,Round 3,Port Melbourne,Carmelite,8,2,6,3,,,51,37,Completed,
+pending-ap018-r3-bye-monash-university,21 Oct 17,3,regular,Round 3,Bye,Monash University,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP018042,28 Oct 17,4,regular,Round 4,Monash University,Dendy Park 2,1,9,2,7,,,38,53,Completed,
+AP018043,28 Oct 17,4,regular,Round 4,Tennis World MP,Royal South Yarra,8,2,5,4,,,43,38,Completed,
+AP018044,28 Oct 17,4,regular,Round 4,Dendy Park 1,Port Melbourne,9,1,7,1,,,50,33,Completed,
+pending-ap018-r4-carmelite-bye,28 Oct 17,4,regular,Round 4,Carmelite,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP018052,11 Nov 17,5,regular,Round 5,Tennis World MP,Monash University,9,1,7,1,,,48,32,Completed,
+AP018053,11 Nov 17,5,regular,Round 5,Carmelite,Dendy Park 1,8,2,6,4,,,52,43,Completed,
+pending-ap018-r5-bye-dendy-park-2,11 Nov 17,5,regular,Round 5,Bye,Dendy Park 2,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap018-r5-royal-south-yarra-port-melbourne,11 Nov 17,5,regular,Round 5,Royal South Yarra,Port Melbourne,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP018061,18 Nov 17,6,regular,Round 6,Dendy Park 2,Royal South Yarra,8.5,1.5,6,1,,,51,23,Completed,
+AP018063,18 Nov 17,6,regular,Round 6,Monash University,Carmelite,2,8,3,6,,,41,56,Completed,
+AP018064,18 Nov 17,6,regular,Round 6,Dendy Park 1,Tennis World MP,8,2,6,4,,,60,45,Completed,
+pending-ap018-r6-port-melbourne-bye,18 Nov 17,6,regular,Round 6,Port Melbourne,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP018072,25 Nov 17,7,regular,Round 7,Dendy Park 2,Port Melbourne,10,0,8,0,,,56,13,Completed,
+AP018073,25 Nov 17,7,regular,Round 7,Tennis World MP,Carmelite,0,10,0,8,,,31,58,Completed,
+AP018074,25 Nov 17,7,regular,Round 7,Monash University,Dendy Park 1,3,7,4,5,,,42,49,Completed,
+pending-ap018-r7-bye-royal-south-yarra,25 Nov 17,7,regular,Round 7,Bye,Royal South Yarra,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap018-r8-carmelite-dendy-park-2,02 Dec 17,8,regular,Round 8,Carmelite,Dendy Park 2,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap018-r8-dendy-park-1-bye,02 Dec 17,8,regular,Round 8,Dendy Park 1,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap018-r8-monash-university-royal-south-yarra,02 Dec 17,8,regular,Round 8,Monash University,Royal South Yarra,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap018-r8-tennis-world-mp-port-melbourne,02 Dec 17,8,regular,Round 8,Tennis World MP,Port Melbourne,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP018092,09 Dec 17,9,regular,Round 9,Dendy Park 2,Dendy Park 1,3,7,4,4,,,45,49,Completed,
+AP018093,09 Dec 17,9,regular,Round 9,Royal South Yarra,Carmelite,0,10,1,8,,,30,64,Completed,
+AP018094,09 Dec 17,9,regular,Round 9,Port Melbourne,Monash University,8,2,6,2,,,46,28,Completed,
+pending-ap018-r9-bye-tennis-world-mp,09 Dec 17,9,regular,Round 9,Bye,Tennis World MP,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP018104,16 Dec 17,10,regular,Round 10,Carmelite,Port Melbourne,2,8,4,5,,,51,47,Completed,
+pending-ap018-r10-dendy-park-1-royal-south-yarra,16 Dec 17,10,regular,Round 10,Dendy Park 1,Royal South Yarra,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+pending-ap018-r10-monash-university-bye,16 Dec 17,10,regular,Round 10,Monash University,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap018-r10-tennis-world-mp-dendy-park-2,16 Dec 17,10,regular,Round 10,Tennis World MP,Dendy Park 2,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+AP018112,03 Feb 18,11,regular,Round 11,Dendy Park 2,Monash University,8,2,6,3,,,55,32,Completed,
+AP018113,03 Feb 18,11,regular,Round 11,Royal South Yarra,Tennis World MP,2,8,3,6,,,36,48,Completed,
+AP018114,03 Feb 18,11,regular,Round 11,Port Melbourne,Dendy Park 1,9,1,7,1,,,50,26,Completed,
+pending-ap018-r11-bye-carmelite,03 Feb 18,11,regular,Round 11,Bye,Carmelite,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP018121,10 Feb 18,12,regular,Round 12,Port Melbourne,Royal South Yarra,10,0,8,0,,,56,13,Completed,
+AP018122,10 Feb 18,12,regular,Round 12,Monash University,Tennis World MP,1,9,1,7,,,27,48,Completed,
+AP018123,10 Feb 18,12,regular,Round 12,Dendy Park 1,Carmelite,2,8,3,6,,,29,50,Completed,
+pending-ap018-r12-dendy-park-2-bye,10 Feb 18,12,regular,Round 12,Dendy Park 2,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP018133,17 Feb 18,13,regular,Round 13,Carmelite,Monash University,10,0,8,0,,,56,10,Completed,
+AP018134,17 Feb 18,13,regular,Round 13,Tennis World MP,Dendy Park 1,7,3,5,3,,,43,42,Completed,
+pending-ap018-r13-bye-port-melbourne,17 Feb 18,13,regular,Round 13,Bye,Port Melbourne,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap018-r13-royal-south-yarra-dendy-park-2,17 Feb 18,13,regular,Round 13,Royal South Yarra,Dendy Park 2,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+AP018142,24 Feb 18,14,regular,Round 14,Port Melbourne,Dendy Park 2,9,1,7,1,,,48,28,Completed,
+AP018143,24 Feb 18,14,regular,Round 14,Carmelite,Tennis World MP,8,2,6,2,,,51,28,Completed,
+AP018144,24 Feb 18,14,regular,Round 14,Dendy Park 1,Monash University,9,1,7,1,,,55,24,Completed,
+pending-ap018-r14-royal-south-yarra-bye,24 Feb 18,14,regular,Round 14,Royal South Yarra,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP018301,,16,semi_final,Semi-final,Carmelite,Dendy Park 2,9,1,4,0,,,32,15,Completed,
+AP018302,,16,semi_final,Semi-final,Port Melbourne,Dendy Park 1,9,1,4,0,,,32,16,Completed,
+AP018311,,16,semi_final,Semi-final,Dendy Park 2,Port Melbourne,1,9,0,4,,,12,32,Completed,
+AP018321,,17,grand_final,Grand final · TROLS entry 2,Carmelite,Port Melbourne,3,7,4,4,,,39,44,Completed,

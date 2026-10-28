@@ -1,0 +1,97 @@
+{
+  "asset_id": "AP39-AP007",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Winter 2019",
+  "season_id": "AP39",
+  "season_label": "Winter 2019",
+  "source_section_code": "AP007",
+  "section_label": "Mixed Rubbers 4",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Kings Park",
+      "wins": 7,
+      "points": 69.5,
+      "percentage": 133.13,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "Elwood",
+      "wins": 6,
+      "points": 61,
+      "percentage": 124.14,
+      "marker": "P"
+    },
+    {
+      "position": 3,
+      "team": "Coatesville",
+      "wins": 6,
+      "points": 59,
+      "percentage": 112.96,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "FCTC",
+      "wins": 4,
+      "points": 47,
+      "percentage": 100.86,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Parkdale",
+      "wins": 4,
+      "points": 43.5,
+      "percentage": 88.38,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Langwarrin",
+      "wins": 3,
+      "points": 39,
+      "percentage": 87.38,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Ormond",
+      "wins": 0,
+      "points": 17,
+      "percentage": 70.99,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP39-AP007",
+  "fixtures": 59,
+  "completed_fixtures": 36,
+  "draw_fixtures": 59,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 140,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP007073 doubles No. 1: '4-6 5-2'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

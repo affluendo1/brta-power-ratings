@@ -1,0 +1,92 @@
+{
+  "asset_id": "AP41-AP010",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 20/21",
+  "season_id": "AP41",
+  "season_label": "Summer 20/21",
+  "source_section_code": "AP010",
+  "section_label": "Ladies s/d 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "East Malvern",
+      "wins": 8,
+      "points": 86,
+      "percentage": 232.88,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "BLTC",
+      "wins": 7,
+      "points": 72.5,
+      "percentage": 159.57,
+      "marker": "P"
+    },
+    {
+      "position": 3,
+      "team": "Hawthorn",
+      "wins": 4,
+      "points": 46.5,
+      "percentage": 91.12,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Royal South Yarra 1",
+      "wins": 3,
+      "points": 37.5,
+      "percentage": 76.7,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Royal South Yarra 2",
+      "wins": 3,
+      "points": 31,
+      "percentage": 62.26,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Dendy Park",
+      "wins": 1,
+      "points": 26.5,
+      "percentage": 67.71,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP41-AP010",
+  "fixtures": 31,
+  "completed_fixtures": 31,
+  "draw_fixtures": 57,
+  "singles_rubbers": 112,
+  "doubles_rubbers": 62,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP010043 singles No. 2: '2-3'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP010101 doubles No. 1: '2-6 6-3'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP010103 doubles No. 1: '5-7 1-4'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP010103 doubles No. 2: '1-6 7-5'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

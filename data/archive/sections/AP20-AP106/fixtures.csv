@@ -1,0 +1,61 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP106011,03 Oct 09,1,regular,Round 1,BLTC,Dendy Park,3,7,5,5,,,51,54,Completed,
+AP106013,03 Oct 09,1,regular,Round 1,Mordialloc,Melb University,8,2,5,3,,,48,33,Completed,
+AP106014,03 Oct 09,1,regular,Round 1,Hampton,East Malvern,8,2,6,2,,,52,36,Completed,
+pending-ap106-r1-bye-hawthorn,03 Oct 09,1,regular,Round 1,Bye,Hawthorn,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP106021,10 Oct 09,2,regular,Round 2,East Malvern,BLTC,2,8,4,6,,,48,59,Completed,
+AP106023,10 Oct 09,2,regular,Round 2,Hawthorn,Mordialloc,2,8,3,6,,,36,53,Completed,
+AP106024,10 Oct 09,2,regular,Round 2,Melb University,Hampton,9,1,7,2,,,60,36,Completed,
+pending-ap106-r2-dendy-park-bye,10 Oct 09,2,regular,Round 2,Dendy Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP106031,17 Oct 09,3,regular,Round 3,BLTC,Melb University,3,7,4,5,,,45,53,Completed,
+AP106033,17 Oct 09,3,regular,Round 3,Mordialloc,Dendy Park,9,1,6,2,,,49,37,Completed,
+AP106034,17 Oct 09,3,regular,Round 3,Hampton,Hawthorn,8,2,5,3,,,47,36,Completed,
+pending-ap106-r3-bye-east-malvern,17 Oct 09,3,regular,Round 3,Bye,East Malvern,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP106041,24 Oct 09,4,regular,Round 4,Hawthorn,BLTC,3,7,4,4,,,31,39,Completed,
+AP106043,24 Oct 09,4,regular,Round 4,East Malvern,Mordialloc,1,9,2,7,,,31,61,Completed,
+AP106044,24 Oct 09,4,regular,Round 4,Dendy Park,Hampton,8,2,5,4,,,54,43,Completed,
+pending-ap106-r4-melb-university-bye,24 Oct 09,4,regular,Round 4,Melb University,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP106051,07 Nov 09,5,regular,Round 5,Mordialloc,Hampton,9,1,6,2,,,50,32,Completed,
+AP106052,07 Nov 09,5,regular,Round 5,East Malvern,Melb University,1,9,1,7,,,27,51,Completed,
+AP106053,07 Nov 09,5,regular,Round 5,Hawthorn,Dendy Park,1,9,1,7,,,18,54,Completed,
+pending-ap106-r5-bltc-bye,07 Nov 09,5,regular,Round 5,BLTC,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP106062,14 Nov 09,6,regular,Round 6,Hampton,BLTC,7,3,5,4,,,48,42,Completed,
+AP106064,14 Nov 09,6,regular,Round 6,Dendy Park,East Malvern,8,2,5,3,,,47,39,Completed,
+pending-ap106-r6-bye-mordialloc,14 Nov 09,6,regular,Round 6,Bye,Mordialloc,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap106-r6-melb-university-hawthorn,14 Nov 09,6,regular,Round 6,Melb University,Hawthorn,,,,,,,,,Scheduled,No individual scorecard / no rubbers recorded
+AP106071,21 Nov 09,7,regular,Round 7,BLTC,Mordialloc,2,8,3,5,,,40,45,Completed,
+AP106073,21 Nov 09,7,regular,Round 7,East Malvern,Hawthorn,2,8,3,5,,,33,45,Completed,
+AP106074,21 Nov 09,7,regular,Round 7,Melb University,Dendy Park,0,10,0,8,,,22,56,Completed,
+pending-ap106-r7-bye-hampton,21 Nov 09,7,regular,Round 7,Bye,Hampton,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP106081,28 Nov 09,8,regular,Round 8,Dendy Park,BLTC,5,5,5,5,,,52,52,Completed,
+AP106083,28 Nov 09,8,regular,Round 8,Melb University,Mordialloc,10,0,8,0,,,56,21,Completed,
+AP106084,28 Nov 09,8,regular,Round 8,East Malvern,Hampton,1.5,8.5,2,6,,,40,55,Completed,
+pending-ap106-r8-hawthorn-bye,28 Nov 09,8,regular,Round 8,Hawthorn,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP106091,05 Dec 09,9,regular,Round 9,BLTC,East Malvern,3,7,4,5,,,49,51,Completed,
+AP106093,05 Dec 09,9,regular,Round 9,Mordialloc,Hawthorn,2,8,3,6,,,42,55,Completed,
+AP106094,05 Dec 09,9,regular,Round 9,Hampton,Melb University,9,1,7,2,,,55,39,Completed,
+pending-ap106-r9-bye-dendy-park,05 Dec 09,9,regular,Round 9,Bye,Dendy Park,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP106101,12 Dec 09,10,regular,Round 10,Melb University,BLTC,9,1,7,1,,,50,30,Completed,
+AP106103,12 Dec 09,10,regular,Round 10,Dendy Park,Mordialloc,7,3,5,4,,,50,37,Completed,
+AP106104,12 Dec 09,10,regular,Round 10,Hawthorn,Hampton,7,3,4,4,,,46,42,Completed,
+pending-ap106-r10-east-malvern-bye,12 Dec 09,10,regular,Round 10,East Malvern,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP106111,30 Jan 10,11,regular,Round 11,BLTC,Hawthorn,7,3,4,4,,,48,46,Completed,
+AP106113,30 Jan 10,11,regular,Round 11,Mordialloc,East Malvern,7,3,5,4,,,55,42,Completed,
+AP106114,30 Jan 10,11,regular,Round 11,Hampton,Dendy Park,2,8,3,6,,,45,54,Completed,
+pending-ap106-r11-bye-melb-university,30 Jan 10,11,regular,Round 11,Bye,Melb University,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP106121,06 Feb 10,12,regular,Round 12,Hampton,Mordialloc,2,8,3,5,,,34,43,Completed,
+AP106122,06 Feb 10,12,regular,Round 12,Melb University,East Malvern,1,9,1,7,,,36,55,Completed,
+AP106123,06 Feb 10,12,regular,Round 12,Dendy Park,Hawthorn,7,3,5,5,,,57,43,Completed,
+pending-ap106-r12-bye-bltc,06 Feb 10,12,regular,Round 12,Bye,BLTC,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP106132,13 Feb 10,13,regular,Round 13,BLTC,Hampton,8,2,5,4,,,52,47,Completed,
+AP106133,13 Feb 10,13,regular,Round 13,Hawthorn,Melb University,3,7,4,4,,,38,43,Completed,
+AP106134,13 Feb 10,13,regular,Round 13,East Malvern,Dendy Park,0,10,2,8,,,38,65,Completed,
+pending-ap106-r13-mordialloc-bye,13 Feb 10,13,regular,Round 13,Mordialloc,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP106141,20 Feb 10,14,regular,Round 14,Mordialloc,BLTC,9,1,7,1,,,53,33,Completed,
+AP106143,20 Feb 10,14,regular,Round 14,Hawthorn,East Malvern,1,9,2,7,,,33,57,Completed,
+AP106144,20 Feb 10,14,regular,Round 14,Dendy Park,Melb University,5,5,5,5,,,52,52,Completed,
+pending-ap106-r14-hampton-bye,20 Feb 10,14,regular,Round 14,Hampton,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP106301,,16,semi_final,Semi-final,Dendy Park,Mordialloc,2,8,3,5,,,46,42,Completed,
+AP106302,,16,semi_final,Semi-final,Melb University,Hampton,10,0,8,0,,,56,0,Completed,
+AP106311,,16,semi_final,Semi-final,Dendy Park,Melb University,1.5,8.5,2,5,,,24,44,Completed,
+AP106321,,17,grand_final,Grand final · TROLS entry 2,Mordialloc,Melb University,1.5,8.5,1,6,,,22,46,Completed,

@@ -1,0 +1,61 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP102011,03 Oct 09,1,regular,Round 1,Blackburn,Kings Park,10,0,8,0,,,57,26,Completed,
+AP102012,03 Oct 09,1,regular,Round 1,Kooyong,Fitzroy,9,1,7,1,,,49,16,Completed,
+AP102014,03 Oct 09,1,regular,Round 1,East Malvern,GPHC,0,10,0,8,,,20,57,Completed,
+pending-ap102-r1-bye-melb-university,03 Oct 09,1,regular,Round 1,Bye,Melb University,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP102021,10 Oct 09,2,regular,Round 2,GPHC,Blackburn,3,7,3,5,,,35,41,Completed,
+AP102022,10 Oct 09,2,regular,Round 2,Kings Park,Kooyong,2,8,3,6,,,35,50,Completed,
+AP102024,10 Oct 09,2,regular,Round 2,Melb University,East Malvern,2,8,2,6,,,30,47,Completed,
+pending-ap102-r2-fitzroy-bye,10 Oct 09,2,regular,Round 2,Fitzroy,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP102031,17 Oct 09,3,regular,Round 3,Blackburn,Melb University,10,0,8,0,,,56,8,Completed,
+AP102032,17 Oct 09,3,regular,Round 3,Kooyong,GPHC,1,9,1,7,,,22,56,Completed,
+AP102034,17 Oct 09,3,regular,Round 3,East Malvern,Fitzroy,1,9,2,7,,,34,56,Completed,
+pending-ap102-r3-bye-kings-park,17 Oct 09,3,regular,Round 3,Bye,Kings Park,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP102041,24 Oct 09,4,regular,Round 4,Fitzroy,Blackburn,1,9,1,7,,,24,55,Completed,
+AP102042,24 Oct 09,4,regular,Round 4,Melb University,Kooyong,8,2,6,3,,,53,35,Completed,
+AP102044,24 Oct 09,4,regular,Round 4,Kings Park,East Malvern,7,3,5,4,,,55,53,Completed,
+pending-ap102-r4-gphc-bye,24 Oct 09,4,regular,Round 4,GPHC,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP102052,07 Nov 09,5,regular,Round 5,GPHC,Melb University,10,0,8,0,,,56,10,Completed,
+AP102053,07 Nov 09,5,regular,Round 5,Fitzroy,Kings Park,10,0,8,1,,,61,30,Completed,
+AP102054,07 Nov 09,5,regular,Round 5,Blackburn,Kooyong,8,2,6,2,,,50,28,Completed,
+pending-ap102-r5-bye-east-malvern,07 Nov 09,5,regular,Round 5,Bye,East Malvern,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP102062,14 Nov 09,6,regular,Round 6,East Malvern,Blackburn,1,9,1,7,,,26,54,Completed,
+AP102063,14 Nov 09,6,regular,Round 6,Melb University,Fitzroy,9,1,7,1,,,55,45,Completed,
+AP102064,14 Nov 09,6,regular,Round 6,Kings Park,GPHC,0,10,1,8,,,34,61,Completed,
+pending-ap102-r6-kooyong-bye,14 Nov 09,6,regular,Round 6,Kooyong,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP102072,21 Nov 09,7,regular,Round 7,Kooyong,East Malvern,3,7,4,5,,,52,45,Completed,
+AP102073,21 Nov 09,7,regular,Round 7,GPHC,Fitzroy,2,8,3,6,,,46,48,Completed,
+AP102074,21 Nov 09,7,regular,Round 7,Melb University,Kings Park,8,2,6,3,,,54,35,Completed,
+pending-ap102-r7-blackburn-bye,21 Nov 09,7,regular,Round 7,Blackburn,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP102081,28 Nov 09,8,regular,Round 8,Kings Park,Blackburn,0,10,0,8,,,32,59,Completed,
+AP102082,28 Nov 09,8,regular,Round 8,Fitzroy,Kooyong,10,0,8,0,,,56,18,Completed,
+AP102084,28 Nov 09,8,regular,Round 8,GPHC,East Malvern,10,0,8,0,,,57,30,Completed,
+pending-ap102-r8-melb-university-bye,28 Nov 09,8,regular,Round 8,Melb University,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP102091,05 Dec 09,9,regular,Round 9,Blackburn,GPHC,0,10,0,8,,,21,56,Completed,
+AP102092,05 Dec 09,9,regular,Round 9,Kooyong,Kings Park,3,7,4,5,,,54,50,Completed,
+AP102094,05 Dec 09,9,regular,Round 9,East Malvern,Melb University,2,8,4,6,,,46,59,Completed,
+pending-ap102-r9-bye-fitzroy,05 Dec 09,9,regular,Round 9,Bye,Fitzroy,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP102101,12 Dec 09,10,regular,Round 10,Melb University,Blackburn,5,5,5,5,,,58,58,Completed,
+AP102102,12 Dec 09,10,regular,Round 10,GPHC,Kooyong,10,0,8,0,,,56,9,Completed,
+AP102104,12 Dec 09,10,regular,Round 10,Fitzroy,East Malvern,7,3,4,4,,,44,33,Completed,
+pending-ap102-r10-kings-park-bye,12 Dec 09,10,regular,Round 10,Kings Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP102111,30 Jan 10,11,regular,Round 11,Blackburn,Fitzroy,5,5,4,4,,,41,41,Completed,
+AP102112,30 Jan 10,11,regular,Round 11,Kooyong,Melb University,8,2,5,3,,,42,38,Completed,
+AP102114,30 Jan 10,11,regular,Round 11,East Malvern,Kings Park,9.5,0.5,7,1,,,54,36,Completed,
+pending-ap102-r11-bye-gphc,30 Jan 10,11,regular,Round 11,Bye,GPHC,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP102122,06 Feb 10,12,regular,Round 12,Melb University,GPHC,0,10,1,8,,,37,61,Completed,
+AP102123,06 Feb 10,12,regular,Round 12,Kings Park,Fitzroy,0,10,0,8,,,41,59,Completed,
+AP102124,06 Feb 10,12,regular,Round 12,Kooyong,Blackburn,2,8,2,6,,,36,54,Completed,
+pending-ap102-r12-east-malvern-bye,06 Feb 10,12,regular,Round 12,East Malvern,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP102132,13 Feb 10,13,regular,Round 13,Blackburn,East Malvern,9,1,7,1,,,51,21,Completed,
+AP102133,13 Feb 10,13,regular,Round 13,Fitzroy,Melb University,9,1,7,2,,,59,38,Completed,
+AP102134,13 Feb 10,13,regular,Round 13,GPHC,Kings Park,10,0,8,0,,,57,15,Completed,
+pending-ap102-r13-bye-kooyong,13 Feb 10,13,regular,Round 13,Bye,Kooyong,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP102143,20 Feb 10,14,regular,Round 14,Fitzroy,GPHC,7,3,4,4,,,41,31,Completed,
+AP102144,20 Feb 10,14,regular,Round 14,Kings Park,Melb University,1,9,2,7,,,43,55,Completed,
+pending-ap102-r14-bye-blackburn,20 Feb 10,14,regular,Round 14,Bye,Blackburn,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap102-r14-east-malvern-kooyong,20 Feb 10,14,regular,Round 14,East Malvern,Kooyong,,,,,,,,,Scheduled,No individual scorecard / no rubbers recorded
+AP102301,,16,semi_final,Semi-final,GPHC,Blackburn,8,2,5,3,,,46,39,Completed,
+AP102302,,16,semi_final,Semi-final,Fitzroy,Melb University,9,1,7,2,,,56,35,Completed,
+AP102311,,16,semi_final,Semi-final,Blackburn,Fitzroy,8,2,6,2,,,46,36,Completed,
+AP102321,,17,grand_final,Grand final · TROLS entry 2,GPHC,Blackburn,1.5,8.5,1,6,,,27,46,Completed,

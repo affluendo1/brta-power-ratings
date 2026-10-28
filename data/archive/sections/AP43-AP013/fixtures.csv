@@ -1,0 +1,60 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP013012,16 Oct 21,1,regular,Round 1,Wellington,Royal South Yarra,0,0,0,0,0,0,0,0,Completed,
+AP013013,16 Oct 21,1,regular,Round 1,Elwood,Overport Park,0,0,0,0,0,0,0,0,Completed,
+pending-ap013-r1-bye-bltc-br,16 Oct 21,1,regular,Round 1,Bye,BLTC BR,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap013-r1-bye-tyabb,16 Oct 21,1,regular,Round 1,Bye,Tyabb,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP013022,23 Oct 21,2,regular,Round 2,Tyabb,Wellington,0,0,0,0,0,0,0,0,Completed,
+AP013023,23 Oct 21,2,regular,Round 2,Royal South Yarra,Elwood,0,0,0,0,0,0,0,0,Completed,
+pending-ap013-r2-bltc-br-bye,23 Oct 21,2,regular,Round 2,BLTC BR,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap013-r2-overport-park-bye,23 Oct 21,2,regular,Round 2,Overport Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP013032,06 Nov 21,3,regular,Round 3,Wellington,BLTC BR,1,7,1,3,2,6,31,43,Completed,
+AP013033,06 Nov 21,3,regular,Round 3,Elwood,Tyabb,8,0,4,0,8,1,52,24,Completed,
+pending-ap013-r3-bye-overport-park,06 Nov 21,3,regular,Round 3,Bye,Overport Park,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap013-r3-bye-royal-south-yarra,06 Nov 21,3,regular,Round 3,Bye,Royal South Yarra,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap013-r4-bltc-br-elwood,13 Nov 21,4,regular,Round 4,BLTC BR,Elwood,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap013-r4-overport-park-wellington,13 Nov 21,4,regular,Round 4,Overport Park,Wellington,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap013-r4-royal-south-yarra-bye,13 Nov 21,4,regular,Round 4,Royal South Yarra,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap013-r4-tyabb-bye,13 Nov 21,4,regular,Round 4,Tyabb,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP013052,20 Nov 21,5,regular,Round 5,BLTC BR,Overport Park,6,2,2,2,5,4,43,40,Completed,
+AP013053,20 Nov 21,5,regular,Round 5,Royal South Yarra,Tyabb,8,0,4,0,8,0,49,18,Completed,
+pending-ap013-r5-bye-wellington,20 Nov 21,5,regular,Round 5,Bye,Wellington,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap013-r5-elwood-bye,20 Nov 21,5,regular,Round 5,Elwood,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP013061,27 Nov 21,6,regular,Round 6,Wellington,Elwood,0,8,0,4,1,8,23,55,Completed,
+AP013063,27 Nov 21,6,regular,Round 6,Overport Park,Royal South Yarra,0,8,0,4,0,8,14,48,Completed,
+AP013064,27 Nov 21,6,regular,Round 6,Tyabb,BLTC BR,0,8,0,4,2,8,35,57,Completed,
+pending-ap013-r6-bye-bye,27 Nov 21,6,regular,Round 6,Bye,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP013073,04 Dec 21,7,regular,Round 7,BLTC BR,Royal South Yarra,1,7,1,3,3,6,33,43,Completed,
+AP013074,04 Dec 21,7,regular,Round 7,Overport Park,Tyabb,2,6,2,2,4,4,34,38,Completed,
+pending-ap013-r7-bye-elwood,04 Dec 21,7,regular,Round 7,Bye,Elwood,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap013-r7-wellington-bye,04 Dec 21,7,regular,Round 7,Wellington,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP013082,11 Dec 21,8,regular,Round 8,Royal South Yarra,Wellington,2,6,2,2,4,5,41,43,Completed,
+AP013083,11 Dec 21,8,regular,Round 8,Overport Park,Elwood,2,6,2,2,4,5,43,44,Completed,
+pending-ap013-r8-bltc-br-bye,11 Dec 21,8,regular,Round 8,BLTC BR,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap013-r8-tyabb-bye,11 Dec 21,8,regular,Round 8,Tyabb,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP013092,29 Jan 22,9,regular,Round 9,Wellington,Tyabb,2,6,2,2,4,4,34,37,Completed,
+AP013093,29 Jan 22,9,regular,Round 9,Elwood,Royal South Yarra,1,7,1,3,2,7,29,51,Completed,
+pending-ap013-r9-bye-bltc-br,29 Jan 22,9,regular,Round 9,Bye,BLTC BR,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap013-r9-bye-overport-park,29 Jan 22,9,regular,Round 9,Bye,Overport Park,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP013102,05 Feb 22,10,regular,Round 10,BLTC BR,Wellington,7,1,3,1,7,2,50,31,Completed,
+AP013103,05 Feb 22,10,regular,Round 10,Tyabb,Elwood,0,8,0,4,1,8,34,55,Completed,
+pending-ap013-r10-overport-park-bye,05 Feb 22,10,regular,Round 10,Overport Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap013-r10-royal-south-yarra-bye,05 Feb 22,10,regular,Round 10,Royal South Yarra,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP013112,12 Feb 22,11,regular,Round 11,Wellington,Overport Park,7,1,3,1,7,3,57,32,Completed,
+AP013113,12 Feb 22,11,regular,Round 11,Elwood,BLTC BR,8,0,4,0,8,1,55,26,Completed,
+pending-ap013-r11-bye-royal-south-yarra,12 Feb 22,11,regular,Round 11,Bye,Royal South Yarra,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap013-r11-bye-tyabb,12 Feb 22,11,regular,Round 11,Bye,Tyabb,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP013122,19 Feb 22,12,regular,Round 12,Overport Park,BLTC BR,0,8,0,4,0,8,14,48,Completed,
+AP013123,19 Feb 22,12,regular,Round 12,Tyabb,Royal South Yarra,0,8,0,4,0,8,5,48,Completed,
+pending-ap013-r12-bye-elwood,19 Feb 22,12,regular,Round 12,Bye,Elwood,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap013-r12-wellington-bye,19 Feb 22,12,regular,Round 12,Wellington,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP013131,26 Feb 22,13,regular,Round 13,Elwood,Wellington,7,1,3,1,7,2,53,22,Completed,
+AP013133,26 Feb 22,13,regular,Round 13,Royal South Yarra,Overport Park,8,0,4,0,8,0,48,8,Completed,
+AP013134,26 Feb 22,13,regular,Round 13,BLTC BR,Tyabb,8,0,4,0,8,0,48,20,Completed,
+pending-ap013-r13-bye-bye,26 Feb 22,13,regular,Round 13,Bye,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP013143,05 Mar 22,14,regular,Round 14,Royal South Yarra,BLTC BR,8,0,4,0,8,0,49,20,Completed,
+AP013144,05 Mar 22,14,regular,Round 14,Tyabb,Overport Park,7,1,3,1,6,3,48,33,Completed,
+pending-ap013-r14-bye-wellington,05 Mar 22,14,regular,Round 14,Bye,Wellington,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap013-r14-elwood-bye,05 Mar 22,14,regular,Round 14,Elwood,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP013301,,16,semi_final,Semi-final,Royal South Yarra,Wellington,7.5,0.5,3,0,7,0,43,8,Completed,
+AP013302,,16,semi_final,Semi-final,Elwood,BLTC BR,2,6,2,2,4,5,42,39,Completed,
+AP013321,,17,grand_final,Grand final · TROLS entry 2,Royal South Yarra,BLTC BR,7,1,3,1,7,3,50,33,Completed,

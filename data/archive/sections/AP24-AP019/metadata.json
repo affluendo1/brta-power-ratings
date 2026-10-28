@@ -1,0 +1,107 @@
+{
+  "asset_id": "AP24-AP019",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 11/12",
+  "season_id": "AP24",
+  "season_label": "Summer 11/12",
+  "source_section_code": "AP019",
+  "section_label": "Mens S/D 5",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Le Page",
+      "wins": 11,
+      "points": 113,
+      "percentage": 153.14,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "Mordialloc",
+      "wins": 7,
+      "points": 90,
+      "percentage": 129.26,
+      "marker": "P"
+    },
+    {
+      "position": 3,
+      "team": "Kings Park",
+      "wins": 6,
+      "points": 86,
+      "percentage": 127.18,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "East Malvern",
+      "wins": 7,
+      "points": 81.5,
+      "percentage": 119.01,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Dendy Park",
+      "wins": 6,
+      "points": 77.5,
+      "percentage": 112.63,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "BLTC",
+      "wins": 3,
+      "points": 53,
+      "percentage": 91.71,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Carmelite",
+      "wins": 1,
+      "points": 45,
+      "percentage": 84.1,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "GPHC",
+      "wins": 0,
+      "points": 14,
+      "percentage": 36.34,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP24-AP019",
+  "fixtures": 60,
+  "completed_fixtures": 47,
+  "draw_fixtures": 60,
+  "singles_rubbers": 188,
+  "doubles_rubbers": 88,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP019022 doubles No. 2: '4-6 5-5'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP019062 doubles No. 1: '6-3 2-1'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP019062 doubles No. 2: '6-4 1-4'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

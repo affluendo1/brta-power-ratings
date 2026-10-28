@@ -1,0 +1,87 @@
+{
+  "asset_id": "AP41-AP004",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 20/21",
+  "season_id": "AP41",
+  "season_label": "Summer 20/21",
+  "source_section_code": "AP004",
+  "section_label": "Mixed Rubbers 3",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Elwood",
+      "wins": 8,
+      "points": 62,
+      "percentage": 154.61,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "St Pats Mentone",
+      "wins": 8,
+      "points": 59,
+      "percentage": 120.8,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Middle Brighton",
+      "wins": 5,
+      "points": 41,
+      "percentage": 93.86,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Highmoor Uniting RA",
+      "wins": 4,
+      "points": 40,
+      "percentage": 105.22,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Kings Park",
+      "wins": 2,
+      "points": 27,
+      "percentage": 90.15,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Centenary Park",
+      "wins": 0,
+      "points": 11,
+      "percentage": 55.02,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP41-AP004",
+  "fixtures": 31,
+  "completed_fixtures": 29,
+  "draw_fixtures": 57,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 114,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

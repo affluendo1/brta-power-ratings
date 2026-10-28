@@ -1,0 +1,169 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP020011,05 Oct 13,1,Hurlingham Park,Dendy Park,No. 1,Marcus English,Lubing Liu,Lubing Liu,6-8,6,8,0,1,Completed,true,false,false
+AP020011,05 Oct 13,1,Hurlingham Park,Dendy Park,No. 2,Christian Ruessel,Richard Artis,Christian Ruessel,8-6,8,6,1,0,Completed,true,false,false
+AP020011,05 Oct 13,1,Hurlingham Park,Dendy Park,No. 3,Michael Luo,Harrison King,Harrison King,4-8,4,8,0,1,Completed,true,false,false
+AP020011,05 Oct 13,1,Hurlingham Park,Dendy Park,No. 4,Andrew Kelso,Herman Borenstein,Andrew Kelso,8-1,8,1,1,0,Completed,true,false,false
+AP020013,05 Oct 13,1,Carmelite,BLTC,No. 1,Michael Baird,Bob McCarthy,Michael Baird,8-0,8,0,1,0,Completed,true,false,false
+AP020013,05 Oct 13,1,Carmelite,BLTC,No. 2,Michael Junkovic,Daniel Campbell,Daniel Campbell,3-8,3,8,0,1,Completed,true,false,false
+AP020013,05 Oct 13,1,Carmelite,BLTC,No. 3,Giancarlo Siclari,Jack Broadbent,Jack Broadbent,5-8,5,8,0,1,Completed,true,false,false
+AP020013,05 Oct 13,1,Carmelite,BLTC,No. 4,Muhammad (matt) Balla,Torsten Williamson,Muhammad (matt) Balla,9-8,9,8,1,0,Completed,true,false,false
+AP020014,05 Oct 13,1,Maccabi,Hampton,No. 1,Alex Vainer,Connor Hipwell,Connor Hipwell,0-8,0,8,0,1,Completed,true,false,false
+AP020014,05 Oct 13,1,Maccabi,Hampton,No. 2,Paul Koltun,Oliver Bytheway,Paul Koltun,8-5,8,5,1,0,Completed,true,false,false
+AP020014,05 Oct 13,1,Maccabi,Hampton,No. 3,Leon Lurie,Greg Hipwell,Leon Lurie,8-4,8,4,1,0,Completed,true,false,false
+AP020014,05 Oct 13,1,Maccabi,Hampton,No. 4,Joseph Occhipinti,Mark Bytheway,Mark Bytheway,1-8,1,8,0,1,Completed,true,false,false
+AP020021,12 Oct 13,2,Hampton,Hurlingham Park,No. 1,Connor Hipwell,Marcus English,Connor Hipwell,9-7,9,7,1,0,Completed,true,false,false
+AP020021,12 Oct 13,2,Hampton,Hurlingham Park,No. 2,Greg Hipwell,Christian Ruessel,Christian Ruessel,3-8,3,8,0,1,Completed,true,false,false
+AP020021,12 Oct 13,2,Hampton,Hurlingham Park,No. 3,Mark Bytheway,Andrew Kelso,Andrew Kelso,3-8,3,8,0,1,Completed,true,false,false
+AP020021,12 Oct 13,2,Hampton,Hurlingham Park,No. 4,Derby Hipwell,Hosie Gall,Hosie Gall,0-8,0,8,0,1,Completed,true,false,false
+AP020023,12 Oct 13,2,Caulfield Rec,Carmelite,No. 1,Tanu Bhaskar,Michael Baird,Michael Baird,0-8,0,8,0,1,Completed,true,false,false
+AP020023,12 Oct 13,2,Caulfield Rec,Carmelite,No. 2,Mike (miguel) Sison,Michael Junkovic,Michael Junkovic,1-8,1,8,0,1,Completed,true,false,false
+AP020023,12 Oct 13,2,Caulfield Rec,Carmelite,No. 3,Jonathon Kreiger,Giancarlo Siclari,Giancarlo Siclari,2-8,2,8,0,1,Completed,true,false,false
+AP020023,12 Oct 13,2,Caulfield Rec,Carmelite,No. 4,Matthew Kreiger,Muhammad (matt) Balla,Muhammad (matt) Balla,1-8,1,8,0,1,Completed,true,false,false
+AP020024,12 Oct 13,2,BLTC,Maccabi,No. 1,Daniel Campbell,Alex Vainer,Daniel Campbell,8-1,8,1,1,0,Completed,true,false,false
+AP020024,12 Oct 13,2,BLTC,Maccabi,No. 2,Jack Broadbent,Paul Koltun,Jack Broadbent,8-2,8,2,1,0,Completed,true,false,false
+AP020024,12 Oct 13,2,BLTC,Maccabi,No. 3,Torsten Williamson,Miguel Donnenfeld,Miguel Donnenfeld,7-9,7,9,0,1,Completed,true,false,false
+AP020024,12 Oct 13,2,BLTC,Maccabi,No. 4,Zac Scherger,Joseph Occhipinti,Zac Scherger,8-1,8,1,1,0,Completed,true,false,false
+AP020031,19 Oct 13,3,Hurlingham Park,BLTC,No. 1,Andrew Kelso,Bob McCarthy,Andrew Kelso,8-0,8,0,1,0,Completed,true,false,false
+AP020031,19 Oct 13,3,Hurlingham Park,BLTC,No. 2,Hosie Gall,Daniel Campbell,Hosie Gall,8-4,8,4,1,0,Completed,true,false,false
+AP020031,19 Oct 13,3,Hurlingham Park,BLTC,No. 3,Michael Luo,Jack Broadbent,Jack Broadbent,4-8,4,8,0,1,Completed,true,false,false
+AP020031,19 Oct 13,3,Hurlingham Park,BLTC,No. 4,Robert Marigliani,Torsten Williamson,Robert Marigliani,8-6,8,6,1,0,Completed,true,false,false
+AP020033,19 Oct 13,3,Carmelite,Dendy Park,No. 1,Michael Baird,Harrison King,Michael Baird,8-2,8,2,1,0,Completed,true,false,false
+AP020033,19 Oct 13,3,Carmelite,Dendy Park,No. 2,Michael Junkovic,Lubing Liu,Michael Junkovic,8-2,8,2,1,0,Completed,true,false,false
+AP020033,19 Oct 13,3,Carmelite,Dendy Park,No. 3,Giancarlo Siclari,Alex Demiri,Giancarlo Siclari,8-2,8,2,1,0,Completed,true,false,false
+AP020033,19 Oct 13,3,Carmelite,Dendy Park,No. 4,Muhammad (matt) Balla,Yahia Allakad,Muhammad (matt) Balla,8-2,8,2,1,0,Completed,true,false,false
+AP020041,26 Oct 13,4,Caulfield Rec,Hurlingham Park,No. 1,Tanu Bhaskar,Marcus English,Marcus English,2-8,2,8,0,1,Completed,true,false,false
+AP020041,26 Oct 13,4,Caulfield Rec,Hurlingham Park,No. 2,Mike (miguel) Sison,Christian Ruessel,Christian Ruessel,3-8,3,8,0,1,Completed,true,false,false
+AP020041,26 Oct 13,4,Caulfield Rec,Hurlingham Park,No. 3,Matthew Kreiger,Andrew Kelso,Andrew Kelso,0-8,0,8,0,1,Completed,true,false,false
+AP020041,26 Oct 13,4,Caulfield Rec,Hurlingham Park,No. 4,Peter Monotti,Hosie Gall,Hosie Gall,1-8,1,8,0,1,Completed,true,false,false
+AP020043,26 Oct 13,4,Hampton,Carmelite,No. 1,Connor Hipwell,Michael Baird,Michael Baird,7-9,7,9,0,1,Completed,true,false,false
+AP020043,26 Oct 13,4,Hampton,Carmelite,No. 2,Oliver Bytheway,Michael Junkovic,Oliver Bytheway,9-7,9,7,1,0,Completed,true,false,false
+AP020043,26 Oct 13,4,Hampton,Carmelite,No. 3,Greg Hipwell,Giancarlo Siclari,Greg Hipwell,8-1,8,1,1,0,Completed,true,false,false
+AP020043,26 Oct 13,4,Hampton,Carmelite,No. 4,Mark Bytheway,Muhammad (matt) Balla,Muhammad (matt) Balla,5-8,5,8,0,1,Completed,true,false,false
+AP020044,26 Oct 13,4,Dendy Park,Maccabi,No. 1,Harrison King,Miguel Donnenfeld,Harrison King,8-2,8,2,1,0,Completed,true,false,false
+AP020044,26 Oct 13,4,Dendy Park,Maccabi,No. 2,Lubing Liu,Russel Harris,Russel Harris,4-8,4,8,0,1,Completed,true,false,false
+AP020044,26 Oct 13,4,Dendy Park,Maccabi,No. 3,Alex Demiri,Dean Ramler,Alex Demiri,8-6,8,6,1,0,Completed,true,false,false
+AP020044,26 Oct 13,4,Dendy Park,Maccabi,No. 4,Matt Metter,Joseph Occhipinti,Matt Metter,8-3,8,3,1,0,Completed,true,false,false
+AP020051,09 Nov 13,5,Carmelite,Maccabi,No. 1,Victor Blitsas,Paul Koltun,Victor Blitsas,8-3,8,3,1,0,Completed,true,false,false
+AP020051,09 Nov 13,5,Carmelite,Maccabi,No. 2,Michael Baird,Miguel Donnenfeld,Miguel Donnenfeld,8-9,8,9,0,1,Completed,true,false,false
+AP020051,09 Nov 13,5,Carmelite,Maccabi,No. 3,Giancarlo Siclari,Dean Ramler,Giancarlo Siclari,8-4,8,4,1,0,Completed,true,false,false
+AP020051,09 Nov 13,5,Carmelite,Maccabi,No. 4,Muhammad (matt) Balla,Joseph Occhipinti,Muhammad (matt) Balla,8-1,8,1,1,0,Completed,true,false,false
+AP020052,09 Nov 13,5,Hampton,BLTC,No. 1,Connor Hipwell,Bob McCarthy,Connor Hipwell,8-4,8,4,1,0,Completed,true,false,false
+AP020052,09 Nov 13,5,Hampton,BLTC,No. 2,Oliver Bytheway,Daniel Campbell,Daniel Campbell,4-8,4,8,0,1,Completed,true,false,false
+AP020052,09 Nov 13,5,Hampton,BLTC,No. 3,Greg Hipwell,Jack Broadbent,Jack Broadbent,2-8,2,8,0,1,Completed,true,false,false
+AP020052,09 Nov 13,5,Hampton,BLTC,No. 4,Mark Bytheway,Torsten Williamson,Torsten Williamson,6-8,6,8,0,1,Completed,true,false,false
+AP020053,09 Nov 13,5,Caulfield Rec,Dendy Park,No. 1,Tanu Bhaskar,Richard Artis,Richard Artis,6-8,6,8,0,1,Completed,true,false,false
+AP020053,09 Nov 13,5,Caulfield Rec,Dendy Park,No. 2,Mike (miguel) Sison,Herman Borenstein,Mike (miguel) Sison,8-4,8,4,1,0,Completed,true,false,false
+AP020053,09 Nov 13,5,Caulfield Rec,Dendy Park,No. 3,Matthew Kreiger,Yahia Allakad,Yahia Allakad,6-8,6,8,0,1,Completed,true,false,false
+AP020053,09 Nov 13,5,Caulfield Rec,Dendy Park,No. 4,Peter Monotti,Matt Metter,Matt Metter,4-8,4,8,0,1,Completed,true,false,false
+AP020062,16 Nov 13,6,Maccabi,Hurlingham Park,No. 1,Alex Vainer,Marcus English,Alex Vainer,9-8,9,8,1,0,Completed,true,false,false
+AP020062,16 Nov 13,6,Maccabi,Hurlingham Park,No. 2,Paul Koltun,Christian Ruessel,Christian Ruessel,3-8,3,8,0,1,Completed,true,false,false
+AP020062,16 Nov 13,6,Maccabi,Hurlingham Park,No. 3,Miguel Donnenfeld,Andrew Kelso,Andrew Kelso,2-8,2,8,0,1,Completed,true,false,false
+AP020062,16 Nov 13,6,Maccabi,Hurlingham Park,No. 4,Leor Bar,Michael Luo,Michael Luo,8-9,8,9,0,1,Completed,true,false,false
+AP020063,16 Nov 13,6,BLTC,Caulfield Rec,No. 1,Bob McCarthy,Tanu Bhaskar,Bob McCarthy,8-6,8,6,1,0,Completed,true,false,false
+AP020063,16 Nov 13,6,BLTC,Caulfield Rec,No. 2,Daniel Campbell,Mike (miguel) Sison,Daniel Campbell,8-0,8,0,1,0,Completed,true,false,false
+AP020063,16 Nov 13,6,BLTC,Caulfield Rec,No. 3,Jack Broadbent,Jonathon Kreiger,Jack Broadbent,8-2,8,2,1,0,Completed,true,false,false
+AP020063,16 Nov 13,6,BLTC,Caulfield Rec,No. 4,Torsten Williamson,Matthew Kreiger,Torsten Williamson,8-2,8,2,1,0,Completed,true,false,false
+AP020064,16 Nov 13,6,Dendy Park,Hampton,No. 1,Harrison King,Connor Hipwell,Connor Hipwell,1-8,1,8,0,1,Completed,true,false,false
+AP020064,16 Nov 13,6,Dendy Park,Hampton,No. 2,Richard Artis,Oliver Bytheway,Oliver Bytheway,6-8,6,8,0,1,Completed,true,false,false
+AP020064,16 Nov 13,6,Dendy Park,Hampton,No. 3,Yahia Allakad,Greg Hipwell,Greg Hipwell,3-8,3,8,0,1,Completed,true,false,false
+AP020064,16 Nov 13,6,Dendy Park,Hampton,No. 4,Matt Metter,Mark Bytheway,Matt Metter,8-3,8,3,1,0,Completed,true,false,false
+AP020071,23 Nov 13,7,Hurlingham Park,Carmelite,No. 1,Marcus English,Michael Junkovic,Marcus English,8-5,8,5,1,0,Completed,true,false,false
+AP020071,23 Nov 13,7,Hurlingham Park,Carmelite,No. 2,Christian Ruessel,Giancarlo Siclari,Christian Ruessel,8-2,8,2,1,0,Completed,true,false,false
+AP020071,23 Nov 13,7,Hurlingham Park,Carmelite,No. 3,Michael Lee,James Trowsdale,Michael Lee,8-2,8,2,1,0,Completed,true,false,false
+AP020071,23 Nov 13,7,Hurlingham Park,Carmelite,No. 4,Michael Luo,Tim Patten,Tim Patten,6-8,6,8,0,1,Completed,true,false,false
+AP020073,23 Nov 13,7,Hampton,Caulfield Rec,No. 1,Connor Hipwell,Tanu Bhaskar,Connor Hipwell,8-0,8,0,1,0,Completed,true,false,false
+AP020073,23 Nov 13,7,Hampton,Caulfield Rec,No. 2,Oliver Bytheway,Mike (miguel) Sison,Oliver Bytheway,8-3,8,3,1,0,Completed,true,false,false
+AP020073,23 Nov 13,7,Hampton,Caulfield Rec,No. 3,Bruce Abraham,Rob May,Bruce Abraham,8-1,8,1,1,0,Completed,true,false,false
+AP020073,23 Nov 13,7,Hampton,Caulfield Rec,No. 4,Mark Bytheway,Matthew Kreiger,Mark Bytheway,8-0,8,0,1,0,Completed,true,false,false
+AP020074,23 Nov 13,7,BLTC,Dendy Park,No. 1,Bob McCarthy,Harrison King,Bob McCarthy,9-8,9,8,1,0,Completed,true,false,false
+AP020074,23 Nov 13,7,BLTC,Dendy Park,No. 2,Daniel Campbell,Richard Artis,Daniel Campbell,8-2,8,2,1,0,Completed,true,false,false
+AP020074,23 Nov 13,7,BLTC,Dendy Park,No. 3,Jack Broadbent,[Unnamed emergency — TROLS AP020074 away code 3],Jack Broadbent,8-0,8,0,1,0,Completed,false,false,true
+AP020074,23 Nov 13,7,BLTC,Dendy Park,No. 4,Torsten Williamson,Matt Metter,Matt Metter,0-8,0,8,0,1,Completed,true,false,false
+AP020081,30 Nov 13,8,Dendy Park,Hurlingham Park,No. 1,Richard Artis,Christian Ruessel,Christian Ruessel,1-8,1,8,0,1,Completed,true,false,false
+AP020081,30 Nov 13,8,Dendy Park,Hurlingham Park,No. 2,Herman Borenstein,Andrew Kelso,Andrew Kelso,1-8,1,8,0,1,Completed,true,false,false
+AP020081,30 Nov 13,8,Dendy Park,Hurlingham Park,No. 3,Alex Demiri,Hosie Gall,Hosie Gall,4-8,4,8,0,1,Completed,true,false,false
+AP020081,30 Nov 13,8,Dendy Park,Hurlingham Park,No. 4,Matt Metter,Michael Luo,Matt Metter,8-4,8,4,1,0,Completed,true,false,false
+AP020083,30 Nov 13,8,BLTC,Carmelite,No. 1,Bob McCarthy,Michael Baird,Michael Baird,1-8,1,8,0,1,Completed,true,false,false
+AP020083,30 Nov 13,8,BLTC,Carmelite,No. 2,Daniel Campbell,Michael Junkovic,Daniel Campbell,8-6,8,6,1,0,Completed,true,false,false
+AP020083,30 Nov 13,8,BLTC,Carmelite,No. 3,Jack Broadbent,Giancarlo Siclari,Jack Broadbent,9-8,9,8,1,0,Completed,true,false,false
+AP020083,30 Nov 13,8,BLTC,Carmelite,No. 4,Torsten Williamson,Muhammad (matt) Balla,Muhammad (matt) Balla,5-8,5,8,0,1,Completed,true,false,false
+AP020084,30 Nov 13,8,Hampton,Maccabi,No. 1,Oliver Bytheway,Paul Koltun,Paul Koltun,7-9,7,9,0,1,Completed,true,false,false
+AP020084,30 Nov 13,8,Hampton,Maccabi,No. 2,Greg Hipwell,Miguel Donnenfeld,Greg Hipwell,8-4,8,4,1,0,Completed,true,false,false
+AP020084,30 Nov 13,8,Hampton,Maccabi,No. 3,Mark Bytheway,Dean Ramler,Mark Bytheway,8-1,8,1,1,0,Completed,true,false,false
+AP020084,30 Nov 13,8,Hampton,Maccabi,No. 4,Derby Hipwell,Joseph Occhipinti,Derby Hipwell,8-4,8,4,1,0,Completed,true,false,false
+AP020091,07 Dec 13,9,Hurlingham Park,Hampton,No. 1,Marcus English,Tod O'Reilly,Marcus English,8-5,8,5,1,0,Completed,true,false,false
+AP020091,07 Dec 13,9,Hurlingham Park,Hampton,No. 2,Andrew Kelso,Oliver Bytheway,Andrew Kelso,8-2,8,2,1,0,Completed,true,false,false
+AP020091,07 Dec 13,9,Hurlingham Park,Hampton,No. 3,Michael Luo,Greg Hipwell,Greg Hipwell,0-8,0,8,0,1,Completed,true,false,false
+AP020091,07 Dec 13,9,Hurlingham Park,Hampton,No. 4,Diego Velasquez,Callen Neasmith,Diego Velasquez,9-8,9,8,1,0,Completed,true,false,false
+AP020093,07 Dec 13,9,Carmelite,Caulfield Rec,No. 1,Victor Blitsas,Tanu Bhaskar,Victor Blitsas,8-1,8,1,1,0,Completed,true,false,false
+AP020093,07 Dec 13,9,Carmelite,Caulfield Rec,No. 2,Michael Baird,Fransisco Sison,Michael Baird,8-3,8,3,1,0,Completed,true,false,false
+AP020093,07 Dec 13,9,Carmelite,Caulfield Rec,No. 3,Michael Junkovic,Jonathon Kreiger,Michael Junkovic,8-0,8,0,1,0,Completed,true,false,false
+AP020093,07 Dec 13,9,Carmelite,Caulfield Rec,No. 4,James Trowsdale,Matthew Kreiger,James Trowsdale,8-0,8,0,1,0,Completed,true,false,false
+AP020094,07 Dec 13,9,Maccabi,BLTC,No. 1,Alex Vainer,Daniel Campbell,Daniel Campbell,4-8,4,8,0,1,Completed,true,false,false
+AP020094,07 Dec 13,9,Maccabi,BLTC,No. 2,Paul Koltun,Torsten Williamson,Torsten Williamson,2-8,2,8,0,1,Completed,true,false,false
+AP020094,07 Dec 13,9,Maccabi,BLTC,No. 3,Miguel Donnenfeld,Graeme Scherger,Graeme Scherger,2-8,2,8,0,1,Completed,true,false,false
+AP020094,07 Dec 13,9,Maccabi,BLTC,No. 4,Dean Ramler,Zac Scherger,Zac Scherger,1-8,1,8,0,1,Completed,true,false,false
+AP020101,14 Dec 13,10,BLTC,Hurlingham Park,No. 1,Bob McCarthy,Andrew Kelso,Andrew Kelso,4-8,4,8,0,1,Completed,true,false,false
+AP020101,14 Dec 13,10,BLTC,Hurlingham Park,No. 2,Torsten Williamson,Hosie Gall,Hosie Gall,5-8,5,8,0,1,Completed,true,false,false
+AP020101,14 Dec 13,10,BLTC,Hurlingham Park,No. 3,Michael Puli,Robert Marigliani,Michael Puli,9-7,9,7,1,0,Completed,true,false,false
+AP020101,14 Dec 13,10,BLTC,Hurlingham Park,No. 4,Scott Moore,Sajay Nair,Sajay Nair,5-8,5,8,0,1,Completed,true,false,false
+AP020103,14 Dec 13,10,Dendy Park,Carmelite,No. 1,Richard Artis,Michael Baird,Michael Baird,4-8,4,8,0,1,Completed,true,false,false
+AP020103,14 Dec 13,10,Dendy Park,Carmelite,No. 2,Dimitri Oxenenko,Michael Junkovic,Michael Junkovic,4-8,4,8,0,1,Completed,true,false,false
+AP020103,14 Dec 13,10,Dendy Park,Carmelite,No. 3,Alex Demiri,Giancarlo Siclari,Giancarlo Siclari,3-8,3,8,0,1,Completed,true,false,false
+AP020103,14 Dec 13,10,Dendy Park,Carmelite,No. 4,Yahia Allakad,Muhammad (matt) Balla,Muhammad (matt) Balla,0-8,0,8,0,1,Completed,true,false,false
+AP020104,14 Dec 13,10,Caulfield Rec,Maccabi,No. 1,Adam Klas,Paul Koltun,Adam Klas,8-1,8,1,1,0,Completed,true,false,false
+AP020104,14 Dec 13,10,Caulfield Rec,Maccabi,No. 2,Tanu Bhaskar,Miguel Donnenfeld,Tanu Bhaskar,8-6,8,6,1,0,Completed,true,false,false
+AP020104,14 Dec 13,10,Caulfield Rec,Maccabi,No. 3,Fransisco Sison,Joel Rabinov,Joel Rabinov,2-8,2,8,0,1,Completed,true,false,false
+AP020104,14 Dec 13,10,Caulfield Rec,Maccabi,No. 4,Peter Monotti,Roy Marcus,Roy Marcus,5-8,5,8,0,1,Completed,true,false,false
+AP020111,01 Feb 14,11,Hurlingham Park,Caulfield Rec,No. 1,Marcus English,Mike (miguel) Sison,Marcus English,8-3,8,3,1,0,Completed,true,false,false
+AP020111,01 Feb 14,11,Hurlingham Park,Caulfield Rec,No. 2,Christian Ruessel,Jonathon Kreiger,Christian Ruessel,8-1,8,1,1,0,Completed,true,false,false
+AP020111,01 Feb 14,11,Hurlingham Park,Caulfield Rec,No. 3,Hosie Gall,Rob May,Hosie Gall,9-7,9,7,1,0,Completed,true,false,false
+AP020111,01 Feb 14,11,Hurlingham Park,Caulfield Rec,No. 4,Michael Luo,Matthew Kreiger,Michael Luo,8-1,8,1,1,0,Completed,true,false,false
+AP020113,01 Feb 14,11,Carmelite,Hampton,No. 1,Michael Baird,Wayne Boatnman,Michael Baird,8-5,8,5,1,0,Completed,true,false,false
+AP020113,01 Feb 14,11,Carmelite,Hampton,No. 2,Michael Junkovic,Oliver Bytheway,Michael Junkovic,8-4,8,4,1,0,Completed,true,false,false
+AP020113,01 Feb 14,11,Carmelite,Hampton,No. 3,Giancarlo Siclari,Mark Bytheway,Mark Bytheway,6-8,6,8,0,1,Completed,true,false,false
+AP020113,01 Feb 14,11,Carmelite,Hampton,No. 4,Muhammad (matt) Balla,Callen Neasmith,Muhammad (matt) Balla,8-3,8,3,1,0,Completed,true,false,false
+AP020114,01 Feb 14,11,Maccabi,Dendy Park,No. 1,Errol Dorfan,Lubing Liu,Errol Dorfan,8-2,8,2,1,0,Completed,true,false,false
+AP020114,01 Feb 14,11,Maccabi,Dendy Park,No. 2,Alex Vainer,Richard Artis,Alex Vainer,8-2,8,2,1,0,Completed,true,false,false
+AP020114,01 Feb 14,11,Maccabi,Dendy Park,No. 3,Miguel Donnenfeld,Alex Demiri,Miguel Donnenfeld,8-2,8,2,1,0,Completed,true,false,false
+AP020114,01 Feb 14,11,Maccabi,Dendy Park,No. 4,Dean Ramler,Yahia Allakad,Dean Ramler,8-2,8,2,1,0,Completed,true,false,false
+AP020132,15 Feb 14,13,Hurlingham Park,Maccabi,No. 1,Marcus English,Jesse Flicker,Jesse Flicker,7-9,7,9,0,1,Completed,true,false,false
+AP020132,15 Feb 14,13,Hurlingham Park,Maccabi,No. 2,Christian Ruessel,Paul Koltun,Paul Koltun,4-8,4,8,0,1,Completed,true,false,false
+AP020132,15 Feb 14,13,Hurlingham Park,Maccabi,No. 3,Andrew Kelso,Leor Bar,Andrew Kelso,8-1,8,1,1,0,Completed,true,false,false
+AP020132,15 Feb 14,13,Hurlingham Park,Maccabi,No. 4,Michael Luo,Russel Harris,Russel Harris,3-8,3,8,0,1,Completed,true,false,false
+AP020133,15 Feb 14,13,Caulfield Rec,BLTC,No. 1,Mike (miguel) Sison,Bob McCarthy,Mike (miguel) Sison,8-3,8,3,1,0,Completed,true,false,false
+AP020133,15 Feb 14,13,Caulfield Rec,BLTC,No. 2,Jonathon Kreiger,Daniel Campbell,Daniel Campbell,0-8,0,8,0,1,Completed,true,false,false
+AP020133,15 Feb 14,13,Caulfield Rec,BLTC,No. 3,Patrick Leech,Jack Broadbent,Jack Broadbent,0-8,0,8,0,1,Completed,true,false,false
+AP020133,15 Feb 14,13,Caulfield Rec,BLTC,No. 4,Matthew Kreiger,Torsten Williamson,Torsten Williamson,2-8,2,8,0,1,Completed,true,false,false
+AP020134,15 Feb 14,13,Hampton,Dendy Park,No. 1,Wayne Boatnman,Harrison King,Wayne Boatnman,8-5,8,5,1,0,Completed,true,false,false
+AP020134,15 Feb 14,13,Hampton,Dendy Park,No. 2,Oliver Bytheway,Lubing Liu,Oliver Bytheway,8-5,8,5,1,0,Completed,true,false,false
+AP020134,15 Feb 14,13,Hampton,Dendy Park,No. 3,Bruce Abraham,Yahia Allakad,Bruce Abraham,8-2,8,2,1,0,Completed,true,false,false
+AP020134,15 Feb 14,13,Hampton,Dendy Park,No. 4,Mark Bytheway,Matt Metter,Matt Metter,2-8,2,8,0,1,Completed,true,false,false
+AP020141,22 Feb 14,14,Carmelite,Hurlingham Park,No. 1,Michael Baird,Christian Ruessel,Michael Baird,8-4,8,4,1,0,Completed,true,false,false
+AP020141,22 Feb 14,14,Carmelite,Hurlingham Park,No. 2,Michael Junkovic,Andrew Kelso,Michael Junkovic,8-4,8,4,1,0,Completed,true,false,false
+AP020141,22 Feb 14,14,Carmelite,Hurlingham Park,No. 3,Giancarlo Siclari,Hosie Gall,Giancarlo Siclari,8-5,8,5,1,0,Completed,true,false,false
+AP020141,22 Feb 14,14,Carmelite,Hurlingham Park,No. 4,Muhammad (matt) Balla,Michael Luo,Muhammad (matt) Balla,8-3,8,3,1,0,Completed,true,false,false
+AP020143,22 Feb 14,14,Caulfield Rec,Hampton,No. 1,Mike (miguel) Sison,Connor Hipwell,Connor Hipwell,3-8,3,8,0,1,Completed,true,false,false
+AP020143,22 Feb 14,14,Caulfield Rec,Hampton,No. 2,Jonathon Kreiger,Oliver Bytheway,Oliver Bytheway,2-8,2,8,0,1,Completed,true,false,false
+AP020143,22 Feb 14,14,Caulfield Rec,Hampton,No. 3,Gabriel Giber,Tony Gilbert,Tony Gilbert,6-8,6,8,0,1,Completed,true,false,false
+AP020143,22 Feb 14,14,Caulfield Rec,Hampton,No. 4,Matthew Kreiger,Jack Summerfield,Jack Summerfield,0-8,0,8,0,1,Completed,true,false,false
+AP020144,22 Feb 14,14,Dendy Park,BLTC,No. 1,Harrison King,Bob McCarthy,Harrison King,8-6,8,6,1,0,Completed,true,false,false
+AP020144,22 Feb 14,14,Dendy Park,BLTC,No. 2,Lubing Liu,Daniel Campbell,Daniel Campbell,2-8,2,8,0,1,Completed,true,false,false
+AP020144,22 Feb 14,14,Dendy Park,BLTC,No. 3,Richard Artis,Jack Broadbent,Jack Broadbent,2-8,2,8,0,1,Completed,true,false,false
+AP020144,22 Feb 14,14,Dendy Park,BLTC,No. 4,Alex Demiri,Torsten Williamson,Torsten Williamson,3-8,3,8,0,1,Completed,true,false,false
+AP020301,,16,Carmelite,Hurlingham Park,No. 1,Michael Baird,Marcus English,Michael Baird,8-3,8,3,1,0,Completed,true,false,false
+AP020301,,16,Carmelite,Hurlingham Park,No. 2,Michael Junkovic,Andrew Kelso,Michael Junkovic,8-6,8,6,1,0,Completed,true,false,false
+AP020301,,16,Carmelite,Hurlingham Park,No. 3,Giancarlo Siclari,Hosie Gall,Giancarlo Siclari,8-6,8,6,1,0,Completed,true,false,false
+AP020301,,16,Carmelite,Hurlingham Park,No. 4,Muhammad (matt) Balla,Michael Luo,Muhammad (matt) Balla,8-5,8,5,1,0,Completed,true,false,false
+AP020302,,16,BLTC,Hampton,No. 1,Bob McCarthy,Connor Hipwell,Connor Hipwell,3-8,3,8,0,1,Completed,true,false,false
+AP020302,,16,BLTC,Hampton,No. 2,Daniel Campbell,Oliver Bytheway,Daniel Campbell,8-6,8,6,1,0,Completed,true,false,false
+AP020302,,16,BLTC,Hampton,No. 3,Jack Broadbent,Greg Hipwell,Jack Broadbent,8-3,8,3,1,0,Completed,true,false,false
+AP020302,,16,BLTC,Hampton,No. 4,Torsten Williamson,Mark Bytheway,Torsten Williamson,8-5,8,5,1,0,Completed,true,false,false
+AP020311,,16,Hurlingham Park,BLTC,No. 1,Marcus English,Bob McCarthy,Marcus English,8-3,8,3,1,0,Completed,true,false,false
+AP020311,,16,Hurlingham Park,BLTC,No. 2,Christian Ruessel,Daniel Campbell,Daniel Campbell,6-8,6,8,0,1,Completed,true,false,false
+AP020311,,16,Hurlingham Park,BLTC,No. 3,Andrew Kelso,Jack Broadbent,Jack Broadbent,3-8,3,8,0,1,Completed,true,false,false
+AP020311,,16,Hurlingham Park,BLTC,No. 4,Hosie Gall,Torsten Williamson,Torsten Williamson,4-8,4,8,0,1,Completed,true,false,false
+AP020321,,17,Carmelite,BLTC,No. 1,Victor Blitsas,Bob McCarthy,Victor Blitsas,8-1,8,1,1,0,Completed,true,false,false
+AP020321,,17,Carmelite,BLTC,No. 2,Michael Baird,Daniel Campbell,Daniel Campbell,5-8,5,8,0,1,Completed,true,false,false
+AP020321,,17,Carmelite,BLTC,No. 3,Giancarlo Siclari,Jack Broadbent,Jack Broadbent,3-8,3,8,0,1,Completed,true,false,false
+AP020321,,17,Carmelite,BLTC,No. 4,Muhammad (matt) Balla,Torsten Williamson,Muhammad (matt) Balla,9-8,9,8,1,0,Completed,true,false,false

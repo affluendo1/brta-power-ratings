@@ -1,0 +1,61 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP008011,06 May 17,1,regular,Round 1,Le Page,Highmoor Uniting LA,2,8,3,6,,,35,56,Completed,
+AP008013,06 May 17,1,regular,Round 1,Port Melbourne,St Pats Mentone,5.5,4.5,1,0,,,14,6,Completed,
+pending-ap008-r1-bye-clarinda,06 May 17,1,regular,Round 1,Bye,Clarinda,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap008-r1-carmelite-lauriston,06 May 17,1,regular,Round 1,Carmelite,Lauriston,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP008021,13 May 17,2,regular,Round 2,Clarinda,Le Page,0,10,0,8,,,6,56,Completed,
+AP008022,13 May 17,2,regular,Round 2,Highmoor Uniting LA,Carmelite,8,2,5,3,,,41,35,Completed,
+AP008023,13 May 17,2,regular,Round 2,Lauriston,Port Melbourne,2,8,3,6,,,42,52,Completed,
+pending-ap008-r2-st-pats-mentone-bye,13 May 17,2,regular,Round 2,St Pats Mentone,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP008031,20 May 17,3,regular,Round 3,Le Page,St Pats Mentone,1,9,3,6,,,41,56,Completed,
+AP008032,20 May 17,3,regular,Round 3,Carmelite,Clarinda,10,0,8,0,,,56,8,Completed,
+AP008033,20 May 17,3,regular,Round 3,Port Melbourne,Highmoor Uniting LA,2,8,3,6,,,34,55,Completed,
+pending-ap008-r3-bye-lauriston,20 May 17,3,regular,Round 3,Bye,Lauriston,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP008042,27 May 17,4,regular,Round 4,St Pats Mentone,Carmelite,9,1,6,2,,,53,43,Completed,
+AP008043,27 May 17,4,regular,Round 4,Clarinda,Port Melbourne,1,9,2,7,,,25,57,Completed,
+pending-ap008-r4-highmoor-uniting-la-bye,27 May 17,4,regular,Round 4,Highmoor Uniting LA,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap008-r4-lauriston-le-page,27 May 17,4,regular,Round 4,Lauriston,Le Page,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+AP008052,03 Jun 17,5,regular,Round 5,Clarinda,St Pats Mentone,0,10,0,8,,,13,56,Completed,
+AP008053,03 Jun 17,5,regular,Round 5,Lauriston,Highmoor Uniting LA,1,9,2,7,,,29,52,Completed,
+AP008054,03 Jun 17,5,regular,Round 5,Le Page,Carmelite,2,8,3,6,,,47,59,Completed,
+pending-ap008-r5-port-melbourne-bye,03 Jun 17,5,regular,Round 5,Port Melbourne,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP008063,17 Jun 17,6,regular,Round 6,St Pats Mentone,Lauriston,8,2,6,3,,,52,37,Completed,
+AP008064,17 Jun 17,6,regular,Round 6,Highmoor Uniting LA,Clarinda,10,0,8,0,,,56,9,Completed,
+pending-ap008-r6-bye-le-page,17 Jun 17,6,regular,Round 6,Bye,Le Page,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap008-r6-carmelite-port-melbourne,17 Jun 17,6,regular,Round 6,Carmelite,Port Melbourne,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+AP008071,24 Jun 17,7,regular,Round 7,Le Page,Port Melbourne,1,9,1,7,,,34,53,Completed,
+AP008073,24 Jun 17,7,regular,Round 7,Clarinda,Lauriston,1,9,1,7,,,21,56,Completed,
+AP008074,24 Jun 17,7,regular,Round 7,St Pats Mentone,Highmoor Uniting LA,2,8,3,6,,,39,58,Completed,
+pending-ap008-r7-carmelite-bye,24 Jun 17,7,regular,Round 7,Carmelite,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP008081,01 Jul 17,8,regular,Round 8,Highmoor Uniting LA,Le Page,9,1,7,1,,,55,26,Completed,
+AP008082,01 Jul 17,8,regular,Round 8,Lauriston,Carmelite,7,3,5,4,,,52,53,Completed,
+AP008083,01 Jul 17,8,regular,Round 8,St Pats Mentone,Port Melbourne,2,8,4,6,,,49,60,Completed,
+pending-ap008-r8-clarinda-bye,01 Jul 17,8,regular,Round 8,Clarinda,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP008091,08 Jul 17,9,regular,Round 9,Le Page,Clarinda,9,1,7,1,,,49,22,Completed,
+AP008092,08 Jul 17,9,regular,Round 9,Carmelite,Highmoor Uniting LA,0,10,0,8,,,20,57,Completed,
+pending-ap008-r9-bye-st-pats-mentone,08 Jul 17,9,regular,Round 9,Bye,St Pats Mentone,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap008-r9-port-melbourne-lauriston,08 Jul 17,9,regular,Round 9,Port Melbourne,Lauriston,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+AP008101,15 Jul 17,10,regular,Round 10,St Pats Mentone,Le Page,9,1,7,2,,,53,31,Completed,
+AP008102,15 Jul 17,10,regular,Round 10,Clarinda,Carmelite,0,10,0,8,,,18,56,Completed,
+AP008103,15 Jul 17,10,regular,Round 10,Highmoor Uniting LA,Port Melbourne,9,1,7,1,,,51,24,Completed,
+pending-ap008-r10-lauriston-bye,15 Jul 17,10,regular,Round 10,Lauriston,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP008111,22 Jul 17,11,regular,Round 11,Le Page,Lauriston,1,9,2,7,,,34,52,Completed,
+AP008112,22 Jul 17,11,regular,Round 11,Carmelite,St Pats Mentone,8,2,5,3,,,46,43,Completed,
+AP008113,22 Jul 17,11,regular,Round 11,Port Melbourne,Clarinda,10,0,8,1,,,61,24,Completed,
+pending-ap008-r11-bye-highmoor-uniting-la,22 Jul 17,11,regular,Round 11,Bye,Highmoor Uniting LA,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP008122,29 Jul 17,12,regular,Round 12,St Pats Mentone,Clarinda,10,0,8,0,,,56,6,Completed,
+AP008123,29 Jul 17,12,regular,Round 12,Highmoor Uniting LA,Lauriston,9,1,7,2,,,53,23,Completed,
+pending-ap008-r12-bye-port-melbourne,29 Jul 17,12,regular,Round 12,Bye,Port Melbourne,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap008-r12-carmelite-le-page,29 Jul 17,12,regular,Round 12,Carmelite,Le Page,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+AP008131,05 Aug 17,13,regular,Round 13,Port Melbourne,Carmelite,9,1,7,3,,,56,44,Completed,
+AP008133,05 Aug 17,13,regular,Round 13,Lauriston,St Pats Mentone,1,9,1,7,,,43,56,Completed,
+AP008134,05 Aug 17,13,regular,Round 13,Clarinda,Highmoor Uniting LA,0,10,0,8,,,10,56,Completed,
+pending-ap008-r13-le-page-bye,05 Aug 17,13,regular,Round 13,Le Page,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP008141,12 Aug 17,14,regular,Round 14,Port Melbourne,Le Page,3,7,4,4,,,40,41,Completed,
+AP008143,12 Aug 17,14,regular,Round 14,Lauriston,Clarinda,9,1,7,2,,,54,21,Completed,
+AP008144,12 Aug 17,14,regular,Round 14,Highmoor Uniting LA,St Pats Mentone,2.5,7.5,4,5,,,53,56,Completed,
+pending-ap008-r14-bye-carmelite,12 Aug 17,14,regular,Round 14,Bye,Carmelite,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP008301,,16,semi_final,Semi-final,Highmoor Uniting LA,St Pats Mentone,9,1,7,1,,,54,25,Completed,
+AP008302,,16,semi_final,Semi-final,Port Melbourne,Lauriston,8,2,6,2,,,44,28,Completed,
+AP008311,,16,semi_final,Semi-final,St Pats Mentone,Port Melbourne,9,1,7,2,,,60,39,Completed,
+AP008321,,17,grand_final,Grand final · TROLS entry 2,Highmoor Uniting LA,St Pats Mentone,8,2,6,4,,,64,38,Completed,

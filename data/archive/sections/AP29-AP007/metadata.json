@@ -1,0 +1,104 @@
+{
+  "asset_id": "AP29-AP007",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Winter 2014",
+  "season_id": "AP29",
+  "season_label": "Winter 2014",
+  "source_section_code": "AP007",
+  "section_label": "Mixed Rubbers 3",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Elwood",
+      "wins": 8,
+      "points": 72,
+      "percentage": 136.14,
+      "marker": ""
+    },
+    {
+      "position": 2,
+      "team": "Le Page",
+      "wins": 7,
+      "points": 71,
+      "percentage": 166.43,
+      "marker": "P"
+    },
+    {
+      "position": 3,
+      "team": "St Finbar's",
+      "wins": 6,
+      "points": 58.5,
+      "percentage": 129.13,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Parkdale",
+      "wins": 6,
+      "points": 56.5,
+      "percentage": 119.82,
+      "marker": "R"
+    },
+    {
+      "position": 5,
+      "team": "BLTC",
+      "wins": 5,
+      "points": 49,
+      "percentage": 104.05,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Kings Park",
+      "wins": 2,
+      "points": 17,
+      "percentage": 54.35,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Hawthorn",
+      "wins": 0,
+      "points": 12,
+      "percentage": 45.66,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP29-AP007",
+  "fixtures": 60,
+  "completed_fixtures": 44,
+  "draw_fixtures": 60,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 170,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP007011 doubles No. 1: '6-4 0-2'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP007012 doubles No. 4: '2-2'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP007021 doubles No. 1: '5-7 2-1'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP007031 doubles No. 3: '7-6 2-1'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP007064 doubles No. 3: '6-4 6-7'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP007084 doubles No. 4: '7-6 3-1'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP007101 doubles No. 1: '7-5 3-6 1-2'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP007101 doubles No. 2: '1-0'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

@@ -1,0 +1,81 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP011011,14 Nov 20,1,Maccabi,BLTC,No. 1,Mor Dahan,India Illingworth,Mor Dahan,8-0,8,0,1,0,Completed,true,false,false
+AP011011,14 Nov 20,1,Maccabi,BLTC,No. 2,Bianca Jacobs,Sophie Mackey,Sophie Mackey,6-8,6,8,0,1,Completed,true,false,false
+AP011011,14 Nov 20,1,Maccabi,BLTC,No. 3,Anat Vernik,Suzanne Worsley,Suzanne Worsley,2-8,2,8,0,1,Completed,true,false,false
+AP011011,14 Nov 20,1,Maccabi,BLTC,No. 4,Ilona Green,Emma Kate McCarthy,Emma Kate McCarthy,5-8,5,8,0,1,Completed,true,true,false
+AP011012,14 Nov 20,1,Kooyong,Burwood,No. 1,Genevieve Daly,Annie Rehe,Genevieve Daly,8-6,8,6,1,0,Completed,true,false,false
+AP011012,14 Nov 20,1,Kooyong,Burwood,No. 2,Lauren Sanford,Philippa P1 Rehe,Philippa P1 Rehe,7-8,7,8,0,1,Completed,true,false,true
+AP011012,14 Nov 20,1,Kooyong,Burwood,No. 3,Larnie Morrison,Eliza O'Farrell,Larnie Morrison,8-3,8,3,1,0,Completed,true,false,false
+AP011012,14 Nov 20,1,Kooyong,Burwood,No. 4,Cathy Watson,Ingrid Garvie,Ingrid Garvie,6-8,6,8,0,1,Completed,true,true,false
+AP011021,21 Nov 20,2,East Malvern,Maccabi,No. 1,Taihla Roberts,Mor Dahan,Mor Dahan,2-8,2,8,0,1,Completed,true,false,false
+AP011021,21 Nov 20,2,East Malvern,Maccabi,No. 2,Jiayun Lu,Lauren Yarrow,Lauren Yarrow,2-8,2,8,0,1,Completed,true,false,false
+AP011021,21 Nov 20,2,East Malvern,Maccabi,No. 3,Marina Woods,Natalie Nahoom,Natalie Nahoom,4-8,4,8,0,1,Completed,true,false,false
+AP011021,21 Nov 20,2,East Malvern,Maccabi,No. 4,Inna Rusanova,Phoebe Appelboom,Inna Rusanova,8-1,8,1,1,0,Completed,true,false,false
+AP011023,21 Nov 20,2,BLTC,Kooyong,No. 1,India Illingworth,Genevieve Daly,India Illingworth,8-5,8,5,1,0,Completed,true,false,false
+AP011023,21 Nov 20,2,BLTC,Kooyong,No. 2,Sophie Mackey,Sheryl Kerwick,Sheryl Kerwick,1-8,1,8,0,1,Completed,true,false,false
+AP011023,21 Nov 20,2,BLTC,Kooyong,No. 3,Saffron Worsley,Larnie Morrison,Larnie Morrison,0-8,0,8,0,1,Completed,true,false,false
+AP011023,21 Nov 20,2,BLTC,Kooyong,No. 4,Suzanne Worsley,Jenny Osborne,Suzanne Worsley,8-4,8,4,1,0,Completed,true,false,false
+AP011031,28 Nov 20,3,Maccabi,Kooyong,No. 1,Lauren Yarrow,Genevieve Daly,Genevieve Daly,3-8,3,8,0,1,Completed,true,false,false
+AP011031,28 Nov 20,3,Maccabi,Kooyong,No. 2,Bianca Jacobs,Lauren Sanford,Lauren Sanford,5-8,5,8,0,1,Completed,true,false,false
+AP011031,28 Nov 20,3,Maccabi,Kooyong,No. 3,Anat Vernik,Larnie Morrison,Larnie Morrison,1-8,1,8,0,1,Completed,true,false,false
+AP011031,28 Nov 20,3,Maccabi,Kooyong,No. 4,Hila Lerer,Jenny Osborne,Jenny Osborne,0-8,0,8,0,1,Completed,true,false,false
+AP011033,28 Nov 20,3,East Malvern,Burwood,No. 1,Taihla Roberts,Annie Rehe,Taihla Roberts,8-6,8,6,1,0,Completed,true,false,false
+AP011033,28 Nov 20,3,East Malvern,Burwood,No. 2,Joanne Nixon,Rosemary Interrigi,Rosemary Interrigi,6-8,6,8,0,1,Completed,true,false,false
+AP011033,28 Nov 20,3,East Malvern,Burwood,No. 3,Kelsey Gade,Eliza O'Farrell,Eliza O'Farrell,3-8,3,8,0,1,Completed,true,false,false
+AP011033,28 Nov 20,3,East Malvern,Burwood,No. 4,Marina Woods,Celine Tan,Celine Tan,1-8,1,8,0,1,Completed,true,false,false
+AP011041,05 Dec 20,4,Burwood,Maccabi,No. 1,Annie Rehe,Mor Dahan,Mor Dahan,2-8,2,8,0,1,Completed,true,false,false
+AP011041,05 Dec 20,4,Burwood,Maccabi,No. 2,Eliza O'Farrell,Natalie Nahoom,Eliza O'Farrell,8-7,8,7,1,0,Completed,true,false,false
+AP011041,05 Dec 20,4,Burwood,Maccabi,No. 3,Ingrid Garvie,Anat Vernik,Ingrid Garvie,8-3,8,3,1,0,Completed,true,false,false
+AP011041,05 Dec 20,4,Burwood,Maccabi,No. 4,Celine Tan,Phoebe Appelboom,Celine Tan,8-0,8,0,1,0,Completed,true,false,false
+AP011042,05 Dec 20,4,BLTC,East Malvern,No. 1,India Illingworth,Joanne Nixon,India Illingworth,8-0,8,0,1,0,Completed,true,false,false
+AP011042,05 Dec 20,4,BLTC,East Malvern,No. 2,Sophie Mackey,Jiayun Lu,Sophie Mackey,8-4,8,4,1,0,Completed,true,false,false
+AP011042,05 Dec 20,4,BLTC,East Malvern,No. 3,Saffron Worsley,Kelsey Gade,Saffron Worsley,8-1,8,1,1,0,Completed,true,false,false
+AP011042,05 Dec 20,4,BLTC,East Malvern,No. 4,Bree Jones,Inna Rusanova,Bree Jones,8-4,8,4,1,0,Completed,true,true,false
+AP011052,12 Dec 20,5,Burwood,BLTC,No. 1,Rosemary Interrigi,India Illingworth,India Illingworth,2-8,2,8,0,1,Completed,true,false,false
+AP011052,12 Dec 20,5,Burwood,BLTC,No. 2,Ingrid Garvie,Saffron Worsley,Saffron Worsley,0-8,0,8,0,1,Completed,true,false,false
+AP011052,12 Dec 20,5,Burwood,BLTC,No. 3,Alicia Tucker,Emma Kate McCarthy,Emma Kate McCarthy,7-8,7,8,0,1,Completed,true,true,false
+AP011052,12 Dec 20,5,Burwood,BLTC,No. 4,Kelly Atkins,Doone Ballantine,Doone Ballantine,1-8,1,8,0,1,Completed,true,true,true
+AP011053,12 Dec 20,5,East Malvern,Kooyong,No. 1,Taihla Roberts,Sheryl Kerwick,Taihla Roberts,8-4,8,4,1,0,Completed,true,false,false
+AP011053,12 Dec 20,5,East Malvern,Kooyong,No. 2,Joanne Nixon,Lauren Sanford,Lauren Sanford,4-8,4,8,0,1,Completed,true,false,false
+AP011053,12 Dec 20,5,East Malvern,Kooyong,No. 3,Marina Woods,Larnie Morrison,Larnie Morrison,0-8,0,8,0,1,Completed,true,false,false
+AP011053,12 Dec 20,5,East Malvern,Kooyong,No. 4,Inna Rusanova,Jenny Osborne,Jenny Osborne,1-8,1,8,0,1,Completed,true,false,false
+AP011061,30 Jan 21,6,BLTC,Maccabi,No. 1,Eirenie Nimorakiotakis,Mor Dahan,Eirenie Nimorakiotakis,8-3,8,3,1,0,Completed,true,true,false
+AP011061,30 Jan 21,6,BLTC,Maccabi,No. 2,Emma Kate McCarthy,Lauren Yarrow,Lauren Yarrow,1-8,1,8,0,1,Completed,true,false,false
+AP011061,30 Jan 21,6,BLTC,Maccabi,No. 3,Stella Monaghan,Natalie Nahoom,Natalie Nahoom,1-8,1,8,0,1,Completed,true,true,false
+AP011061,30 Jan 21,6,BLTC,Maccabi,No. 4,Abbey Reiter,Bianca Jacobs,Bianca Jacobs,5-8,5,8,0,1,Completed,true,true,false
+AP011062,30 Jan 21,6,Burwood,Kooyong,No. 1,Rosemary Interrigi,Genevieve Daly,Genevieve Daly,3-8,3,8,0,1,Completed,true,false,false
+AP011062,30 Jan 21,6,Burwood,Kooyong,No. 2,Annie Rehe,Lauren Sanford,Annie Rehe,8-7,8,7,1,0,Completed,true,false,false
+AP011062,30 Jan 21,6,Burwood,Kooyong,No. 3,Eliza O'Farrell,Larnie Morrison,Larnie Morrison,4-8,4,8,0,1,Completed,true,false,false
+AP011062,30 Jan 21,6,Burwood,Kooyong,No. 4,Ingrid Garvie,Jenny Osborne,Jenny Osborne,4-8,4,8,0,1,Completed,true,false,false
+AP011071,06 Feb 21,7,Maccabi,East Malvern,No. 1,Lauren Yarrow,Taihla Roberts,Lauren Yarrow,8-0,8,0,1,0,Completed,true,false,false
+AP011071,06 Feb 21,7,Maccabi,East Malvern,No. 2,Bianca Jacobs,Joanne Nixon,Bianca Jacobs,8-6,8,6,1,0,Completed,true,false,false
+AP011071,06 Feb 21,7,Maccabi,East Malvern,No. 3,Anat Vernik,Jiayun Lu,Jiayun Lu,3-8,3,8,0,1,Completed,true,false,false
+AP011071,06 Feb 21,7,Maccabi,East Malvern,No. 4,Hila Lerer,Marina Woods,Hila Lerer,8-5,8,5,1,0,Completed,true,false,false
+AP011073,06 Feb 21,7,Kooyong,BLTC,No. 1,Genevieve Daly,India Illingworth,Genevieve Daly,8-5,8,5,1,0,Completed,true,false,false
+AP011073,06 Feb 21,7,Kooyong,BLTC,No. 2,Sheryl Kerwick,Sophie Mackey,Sheryl Kerwick,8-4,8,4,1,0,Completed,true,false,false
+AP011073,06 Feb 21,7,Kooyong,BLTC,No. 3,Larnie Morrison,Saffron Worsley,Saffron Worsley,6-8,6,8,0,1,Completed,true,false,false
+AP011073,06 Feb 21,7,Kooyong,BLTC,No. 4,Carol Thompson,Suzanne Worsley,Carol Thompson,8-2,8,2,1,0,Completed,true,false,false
+AP011081,20 Feb 21,8,Kooyong,Maccabi,No. 1,Genevieve Daly,Mor Dahan,Mor Dahan,0-8,0,8,0,1,Completed,true,false,false
+AP011081,20 Feb 21,8,Kooyong,Maccabi,No. 2,Larnie Morrison,Natalie Nahoom,Larnie Morrison,8-5,8,5,1,0,Completed,true,false,false
+AP011081,20 Feb 21,8,Kooyong,Maccabi,No. 3,Carol Thompson,Hila Lerer,Carol Thompson,8-1,8,1,1,0,Completed,true,false,false
+AP011081,20 Feb 21,8,Kooyong,Maccabi,No. 4,Jenny Osborne,Phoebe Appelboom,Jenny Osborne,8-0,8,0,1,0,Completed,true,false,false
+AP011083,20 Feb 21,8,Burwood,East Malvern,No. 1,Rosemary Interrigi,Jiayun Lu,Jiayun Lu,6-8,6,8,0,1,Completed,true,false,false
+AP011083,20 Feb 21,8,Burwood,East Malvern,No. 2,Annie Rehe,Kelsey Gade,Annie Rehe,8-1,8,1,1,0,Completed,true,false,false
+AP011083,20 Feb 21,8,Burwood,East Malvern,No. 3,Celine Tan,Marina Woods,Celine Tan,8-3,8,3,1,0,Completed,true,false,false
+AP011083,20 Feb 21,8,Burwood,East Malvern,No. 4,Helen Eva,Inna Rusanova,Inna Rusanova,1-8,1,8,0,1,Completed,true,true,false
+AP011091,27 Feb 21,9,Maccabi,Burwood,No. 1,Mor Dahan,Tara Reiter,Mor Dahan,8-0,8,0,1,0,Completed,true,false,false
+AP011091,27 Feb 21,9,Maccabi,Burwood,No. 2,Natalie Nahoom,Eliza O'Farrell,Eliza O'Farrell,6-8,6,8,0,1,Completed,true,false,false
+AP011091,27 Feb 21,9,Maccabi,Burwood,No. 3,Hila Lerer,Ingrid Garvie,Ingrid Garvie,2-8,2,8,0,1,Completed,true,false,false
+AP011091,27 Feb 21,9,Maccabi,Burwood,No. 4,Nicole Cukierman,Celine Tan,Celine Tan,1-8,1,8,0,1,Completed,true,true,false
+AP011092,27 Feb 21,9,East Malvern,BLTC,No. 1,Taihla Roberts,India Illingworth,Taihla Roberts,8-5,8,5,1,0,Completed,true,false,false
+AP011092,27 Feb 21,9,East Malvern,BLTC,No. 2,Joanne Nixon,Sophie Mackey,Sophie Mackey,2-8,2,8,0,1,Completed,true,false,false
+AP011092,27 Feb 21,9,East Malvern,BLTC,No. 3,Jiayun Lu,Lucy Mackey,Lucy Mackey,6-8,6,8,0,1,Completed,true,false,true
+AP011092,27 Feb 21,9,East Malvern,BLTC,No. 4,Marina Woods,Abbey Reiter,Marina Woods,8-5,8,5,1,0,Completed,true,false,true
+AP011103,13 Mar 21,10,Kooyong,East Malvern,No. 1,Genevieve Daly,Taihla Roberts,Genevieve Daly,8-7,8,7,1,0,Completed,true,false,false
+AP011103,13 Mar 21,10,Kooyong,East Malvern,No. 2,Sheryl Kerwick,Jiayun Lu,Sheryl Kerwick,8-4,8,4,1,0,Completed,true,false,false
+AP011103,13 Mar 21,10,Kooyong,East Malvern,No. 3,Carol Thompson,Kelsey Gade,Carol Thompson,8-1,8,1,1,0,Completed,true,false,false
+AP011103,13 Mar 21,10,Kooyong,East Malvern,No. 4,Jenny Osborne,Marina Woods,Jenny Osborne,8-4,8,4,1,0,Completed,true,false,false
+AP011321,,16,Kooyong,BLTC,No. 1,Genevieve Daly,India Illingworth,Genevieve Daly,8-3,8,3,1,0,Completed,true,false,false
+AP011321,,16,Kooyong,BLTC,No. 2,Sheryl Kerwick,Sophie Mackey,Sheryl Kerwick,8-4,8,4,1,0,Completed,true,false,false
+AP011321,,16,Kooyong,BLTC,No. 3,Larnie Morrison,Saffron Worsley,Saffron Worsley,1-8,1,8,0,1,Completed,true,false,false
+AP011321,,16,Kooyong,BLTC,No. 4,Carol Thompson,Emma Kate McCarthy,Carol Thompson,8-4,8,4,1,0,Completed,true,false,false

@@ -1,0 +1,95 @@
+{
+  "asset_id": "AP28-AP022",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 13/14",
+  "season_id": "AP28",
+  "season_label": "Summer 13/14",
+  "source_section_code": "AP022",
+  "section_label": "Mens S/D 10",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Lauriston 1",
+      "wins": 10,
+      "points": 112,
+      "percentage": 264.92,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Monash University",
+      "wins": 6,
+      "points": 71,
+      "percentage": 110.81,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "GPHC",
+      "wins": 7,
+      "points": 65,
+      "percentage": 99.15,
+      "marker": "R"
+    },
+    {
+      "position": 4,
+      "team": "MCC",
+      "wins": 6,
+      "points": 64,
+      "percentage": 97.99,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "East Malvern",
+      "wins": 2,
+      "points": 40,
+      "percentage": 82.4,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Lauriston 2",
+      "wins": 3,
+      "points": 36,
+      "percentage": 75.21,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "BLTC CC",
+      "wins": 2,
+      "points": 32,
+      "percentage": 65.33,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP28-AP022",
+  "fixtures": 60,
+  "completed_fixtures": 41,
+  "draw_fixtures": 49,
+  "singles_rubbers": 164,
+  "doubles_rubbers": 81,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

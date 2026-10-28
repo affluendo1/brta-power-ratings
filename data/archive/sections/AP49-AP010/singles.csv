@@ -1,0 +1,149 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP010014,05 Oct 24,1,Highmoor Uniting RA,Caulfield Rec,No. 1,Richard Elvins,Chris Liolios,Chris Liolios,3-7,3,7,0,1,Completed,true,false,false
+AP010014,05 Oct 24,1,Highmoor Uniting RA,Caulfield Rec,No. 2,Michael Lynch,Ian Eddington,Michael Lynch,5-3,5,3,1,0,Completed,true,false,false
+AP010014,05 Oct 24,1,Highmoor Uniting RA,Caulfield Rec,No. 3,Ben Campbell,Jose Munoz,Jose Munoz,0-8,0,8,0,1,Completed,true,false,false
+AP010014,05 Oct 24,1,Highmoor Uniting RA,Caulfield Rec,No. 4,Charlie Daalder,Miguel Sison,Charlie Daalder,8-2,8,2,1,0,Completed,true,false,false
+AP010021,12 Oct 24,2,Caulfield Rec,Glen Huntly,No. 1,Chris Liolios,Daniel Binisti,Chris Liolios,8-1,8,1,1,0,Completed,true,false,false
+AP010021,12 Oct 24,2,Caulfield Rec,Glen Huntly,No. 2,Ian Eddington,Gerald Pereria,Gerald Pereria,3-8,3,8,0,1,Completed,true,false,false
+AP010021,12 Oct 24,2,Caulfield Rec,Glen Huntly,No. 3,Jose Munoz,Paul Egre,Jose Munoz,8-3,8,3,1,0,Completed,true,false,false
+AP010021,12 Oct 24,2,Caulfield Rec,Glen Huntly,No. 4,Miguel Sison,William Gort,William Gort,7-8,7,8,0,1,Completed,true,false,true
+AP010022,12 Oct 24,2,Royal Ave,Maccabi,No. 1,Lachie Scott,Stephen Gorenstein,Stephen Gorenstein,3-8,3,8,0,1,Completed,true,false,false
+AP010022,12 Oct 24,2,Royal Ave,Maccabi,No. 2,Chris Gibson,Stephen Kleid,Stephen Kleid,7-8,7,8,0,1,Completed,true,true,false
+AP010022,12 Oct 24,2,Royal Ave,Maccabi,No. 3,James Janse,Ashley Raboy,Ashley Raboy,2-8,2,8,0,1,Completed,true,false,false
+AP010022,12 Oct 24,2,Royal Ave,Maccabi,No. 4,Max Missen,Paul Kovacs,Paul Kovacs,4-8,4,8,0,1,Completed,true,false,false
+AP010024,12 Oct 24,2,Mentone Green,Highmoor Uniting RA,No. 1,Daniel Carroll,Callum Elvins,Daniel Carroll,8-2,8,2,1,0,Completed,true,false,false
+AP010024,12 Oct 24,2,Mentone Green,Highmoor Uniting RA,No. 2,Lennox Carroll,Michael Lynch,Lennox Carroll,8-2,8,2,1,0,Completed,true,false,false
+AP010024,12 Oct 24,2,Mentone Green,Highmoor Uniting RA,No. 3,Tom Carroll,Ben Campbell,Ben Campbell,6-8,6,8,0,1,Completed,true,false,false
+AP010024,12 Oct 24,2,Mentone Green,Highmoor Uniting RA,No. 4,Arun Gulur,Esmatullah Niazi,Esmatullah Niazi,6-8,6,8,0,1,Completed,true,false,false
+AP010031,19 Oct 24,3,Glen Huntly,Mentone Green,No. 1,Gerald Pereria,Alberto Polintan,Gerald Pereria,8-5,8,5,1,0,Completed,true,false,false
+AP010031,19 Oct 24,3,Glen Huntly,Mentone Green,No. 2,Paul Egre,Michael Lawes,Paul Egre,8-0,8,0,1,0,Completed,true,false,false
+AP010031,19 Oct 24,3,Glen Huntly,Mentone Green,No. 3,Siva Chandrasekaran,Carson Parris,Siva Chandrasekaran,8-0,8,0,1,0,Completed,true,false,false
+AP010031,19 Oct 24,3,Glen Huntly,Mentone Green,No. 4,Franck Morin,Guili Ferreira,Guili Ferreira,6-8,6,8,0,1,Completed,true,false,true
+AP010032,19 Oct 24,3,Maccabi,Caulfield Rec,No. 1,Sebastian Raboy,Chris Liolios,Sebastian Raboy,8-6,8,6,1,0,Completed,true,false,false
+AP010032,19 Oct 24,3,Maccabi,Caulfield Rec,No. 2,Stephen Gorenstein,Ian Eddington,Stephen Gorenstein,8-5,8,5,1,0,Completed,true,false,false
+AP010032,19 Oct 24,3,Maccabi,Caulfield Rec,No. 3,Stephen Kleid,Jose Munoz,Jose Munoz,4-8,4,8,0,1,Completed,true,false,false
+AP010032,19 Oct 24,3,Maccabi,Caulfield Rec,No. 4,Ashley Raboy,Miguel Sison,Ashley Raboy,8-0,8,0,1,0,Completed,true,false,false
+AP010033,19 Oct 24,3,Hawthorn,Royal Ave,No. 1,Steven Ji,Lachie Scott,Steven Ji,8-4,8,4,1,0,Completed,true,false,false
+AP010033,19 Oct 24,3,Hawthorn,Royal Ave,No. 2,Matt Strutte,James Janse,Matt Strutte,8-3,8,3,1,0,Completed,true,false,false
+AP010033,19 Oct 24,3,Hawthorn,Royal Ave,No. 3,William Wang,Michael Poulos,William Wang,8-6,8,6,1,0,Completed,true,false,false
+AP010033,19 Oct 24,3,Hawthorn,Royal Ave,No. 4,Matt Campen,Max Missen,Matt Campen,8-7,8,7,1,0,Completed,true,false,false
+AP010042,26 Oct 24,4,Mentone Green,Maccabi,No. 1,Alberto Polintan,Sebastian Raboy,Alberto Polintan,8-4,8,4,1,0,Completed,true,false,false
+AP010042,26 Oct 24,4,Mentone Green,Maccabi,No. 2,Aaron Tsui,Stephen Gorenstein,Stephen Gorenstein,6-8,6,8,0,1,Completed,true,true,false
+AP010042,26 Oct 24,4,Mentone Green,Maccabi,No. 3,Carson Parris,Ashley Raboy,Carson Parris,8-6,8,6,1,0,Completed,true,false,false
+AP010042,26 Oct 24,4,Mentone Green,Maccabi,No. 4,Andrew Fiefeld,Paul Kovacs,Paul Kovacs,4-8,4,8,0,1,Completed,true,true,false
+AP010043,26 Oct 24,4,Caulfield Rec,Hawthorn,No. 1,Harsha Limay,Matt Strutte,Matt Strutte,6-8,6,8,0,1,Completed,true,true,false
+AP010043,26 Oct 24,4,Caulfield Rec,Hawthorn,No. 2,Ian Eddington,Mitchell Sparks,Mitchell Sparks,5-8,5,8,0,1,Completed,true,false,false
+AP010043,26 Oct 24,4,Caulfield Rec,Hawthorn,No. 3,Mikael Barabalov,Matt Campen,Mikael Barabalov,8-4,8,4,1,0,Completed,true,true,false
+AP010043,26 Oct 24,4,Caulfield Rec,Hawthorn,No. 4,Miguel Sison,Ye Yuan,Miguel Sison,8-6,8,6,1,0,Completed,true,false,true
+AP010044,26 Oct 24,4,Royal Ave,Highmoor Uniting RA,No. 1,Lachie Scott,Con Hatzis,Con Hatzis,3-8,3,8,0,1,Completed,true,false,true
+AP010044,26 Oct 24,4,Royal Ave,Highmoor Uniting RA,No. 2,James Janse,Richard Elvins,James Janse,8-5,8,5,1,0,Completed,true,false,false
+AP010044,26 Oct 24,4,Royal Ave,Highmoor Uniting RA,No. 3,Max Missen,Michael Lynch,Michael Lynch,6-8,6,8,0,1,Completed,true,false,false
+AP010044,26 Oct 24,4,Royal Ave,Highmoor Uniting RA,No. 4,Michael Poulos,Charlie Daalder,Charlie Daalder,0-8,0,8,0,1,Completed,true,false,false
+AP010051,09 Nov 24,5,Hawthorn,Highmoor Uniting RA,No. 1,Andy Pang,Con Hatzis,Con Hatzis,7-8,7,8,0,1,Completed,true,false,true
+AP010051,09 Nov 24,5,Hawthorn,Highmoor Uniting RA,No. 2,Steven Ji,Richard Elvins,Steven Ji,8-5,8,5,1,0,Completed,true,false,false
+AP010051,09 Nov 24,5,Hawthorn,Highmoor Uniting RA,No. 3,Matt Strutte,Michael Lynch,Matt Strutte,8-1,8,1,1,0,Completed,true,false,false
+AP010051,09 Nov 24,5,Hawthorn,Highmoor Uniting RA,No. 4,Matt Campen,Esmatullah Niazi,Esmatullah Niazi,3-8,3,8,0,1,Completed,true,false,false
+AP010052,09 Nov 24,5,Caulfield Rec,Mentone Green,No. 1,Mark Findlay,Alberto Polintan,Alberto Polintan,6-8,6,8,0,1,Completed,true,true,false
+AP010052,09 Nov 24,5,Caulfield Rec,Mentone Green,No. 2,Ian Eddington,Tom Carroll,Tom Carroll,3-8,3,8,0,1,Completed,true,false,false
+AP010052,09 Nov 24,5,Caulfield Rec,Mentone Green,No. 3,Adam Belbaly,Carson Parris,Carson Parris,2-8,2,8,0,1,Completed,true,true,false
+AP010052,09 Nov 24,5,Caulfield Rec,Mentone Green,No. 4,Miguel Sison,Matt Williams,Matt Williams,2-8,2,8,0,1,Completed,true,false,true
+AP010054,09 Nov 24,5,Glen Huntly,Maccabi,No. 1,Gerald Pereria,Sebastian Raboy,Gerald Pereria,8-4,8,4,1,0,Completed,true,false,false
+AP010054,09 Nov 24,5,Glen Huntly,Maccabi,No. 2,Siva Chandrasekaran,Stephen Gorenstein,Siva Chandrasekaran,8-1,8,1,1,0,Completed,true,false,false
+AP010054,09 Nov 24,5,Glen Huntly,Maccabi,No. 3,Paul Egre,Jacob Nathan,Paul Egre,8-2,8,2,1,0,Completed,true,false,false
+AP010054,09 Nov 24,5,Glen Huntly,Maccabi,No. 4,Amir Egre,Paul Kovacs,Paul Kovacs,1-8,1,8,0,1,Completed,true,true,false
+AP010061,16 Nov 24,6,Maccabi,Hawthorn,No. 1,Sebastian Raboy,Eric Alonso,Sebastian Raboy,8-6,8,6,1,0,Completed,true,false,false
+AP010061,16 Nov 24,6,Maccabi,Hawthorn,No. 2,Stephen Gorenstein,Matt Strutte,Matt Strutte,6-8,6,8,0,1,Completed,true,false,false
+AP010061,16 Nov 24,6,Maccabi,Hawthorn,No. 3,Stephen Kleid,Mitchell Sparks,Stephen Kleid,8-3,8,3,1,0,Completed,true,false,false
+AP010061,16 Nov 24,6,Maccabi,Hawthorn,No. 4,Ashley Raboy,Matt Campen,Ashley Raboy,8-7,8,7,1,0,Completed,true,false,false
+AP010062,16 Nov 24,6,Highmoor Uniting RA,Glen Huntly,No. 1,Michael Lynch,Michael Haynes,Michael Lynch,8-2,8,2,1,0,Completed,true,false,false
+AP010062,16 Nov 24,6,Highmoor Uniting RA,Glen Huntly,No. 2,Neil Bellamy,Paul Egre,Neil Bellamy,8-6,8,6,1,0,Completed,true,true,false
+AP010062,16 Nov 24,6,Highmoor Uniting RA,Glen Huntly,No. 3,Charlie Daalder,Anirudh Devanathan,Charlie Daalder,8-7,8,7,1,0,Completed,true,false,false
+AP010062,16 Nov 24,6,Highmoor Uniting RA,Glen Huntly,No. 4,Esmatullah Niazi,William Gort,Esmatullah Niazi,8-1,8,1,1,0,Completed,true,false,true
+AP010064,16 Nov 24,6,Royal Ave,Caulfield Rec,No. 1,Lachie Scott,Mark Findlay,Mark Findlay,6-8,6,8,0,1,Completed,true,false,true
+AP010064,16 Nov 24,6,Royal Ave,Caulfield Rec,No. 2,James Janse,Emir Zmak,Emir Zmak,4-8,4,8,0,1,Completed,true,false,false
+AP010064,16 Nov 24,6,Royal Ave,Caulfield Rec,No. 3,Michael Poulos,Mikael Barabalov,Mikael Barabalov,3-8,3,8,0,1,Completed,true,false,true
+AP010064,16 Nov 24,6,Royal Ave,Caulfield Rec,No. 4,Jonny Tzouvelis,Miguel Sison,Jonny Tzouvelis,8-6,8,6,1,0,Completed,true,true,false
+AP010072,23 Nov 24,7,Maccabi,Highmoor Uniting RA,No. 1,Sebastian Raboy,Callum Elvins,Callum Elvins,6-8,6,8,0,1,Completed,true,false,false
+AP010072,23 Nov 24,7,Maccabi,Highmoor Uniting RA,No. 2,Stephen Gorenstein,Michael Lynch,Stephen Gorenstein,8-5,8,5,1,0,Completed,true,false,false
+AP010072,23 Nov 24,7,Maccabi,Highmoor Uniting RA,No. 3,Ashley Raboy,Ben Campbell,Ben Campbell,2-8,2,8,0,1,Completed,true,false,false
+AP010072,23 Nov 24,7,Maccabi,Highmoor Uniting RA,No. 4,Jacob Nathan,Charlie Daalder,Charlie Daalder,2-8,2,8,0,1,Completed,true,false,false
+AP010074,23 Nov 24,7,Mentone Green,Royal Ave,No. 1,Alberto Polintan,James Janse,James Janse,6-8,6,8,0,1,Completed,true,false,false
+AP010074,23 Nov 24,7,Mentone Green,Royal Ave,No. 2,Lennox Carroll,Michael Poulos,Lennox Carroll,8-5,8,5,1,0,Completed,true,false,false
+AP010074,23 Nov 24,7,Mentone Green,Royal Ave,No. 3,Tom Carroll,Max Missen,Tom Carroll,8-2,8,2,1,0,Completed,true,false,false
+AP010074,23 Nov 24,7,Mentone Green,Royal Ave,No. 4,Eric Strelnikov,Hamish Scott,Hamish Scott,7-8,7,8,0,1,Completed,true,true,true
+AP010091,07 Dec 24,9,Glen Huntly,Caulfield Rec,No. 1,Daniel Katanov,Chris Liolios,Chris Liolios,0-8,0,8,0,1,Completed,true,false,false
+AP010091,07 Dec 24,9,Glen Huntly,Caulfield Rec,No. 2,Paul Egre,Jose Munoz,Paul Egre,8-3,8,3,1,0,Completed,true,false,false
+AP010091,07 Dec 24,9,Glen Huntly,Caulfield Rec,No. 3,Anirudh Devanathan,Tiago Cadore,Anirudh Devanathan,8-4,8,4,1,0,Completed,true,false,false
+AP010091,07 Dec 24,9,Glen Huntly,Caulfield Rec,No. 4,Amir Egre,Miguel Sison,Miguel Sison,5-8,5,8,0,1,Completed,true,true,false
+AP010092,07 Dec 24,9,Maccabi,Royal Ave,No. 1,Sebastian Raboy,Lachie Scott,Sebastian Raboy,8-3,8,3,1,0,Completed,true,false,false
+AP010092,07 Dec 24,9,Maccabi,Royal Ave,No. 2,Ashley Raboy,James Janse,Ashley Raboy,8-6,8,6,1,0,Completed,true,false,false
+AP010092,07 Dec 24,9,Maccabi,Royal Ave,No. 3,Evgeni Grishin,Max Missen,Max Missen,7-8,7,8,0,1,Completed,true,true,false
+AP010092,07 Dec 24,9,Maccabi,Royal Ave,No. 4,Karen Foldvari,Jonny Tzouvelis,Jonny Tzouvelis,1-8,1,8,0,1,Completed,true,true,true
+AP010094,07 Dec 24,9,Highmoor Uniting RA,Mentone Green,No. 1,Richard Elvins,Alberto Polintan,Alberto Polintan,2-8,2,8,0,1,Completed,true,false,false
+AP010094,07 Dec 24,9,Highmoor Uniting RA,Mentone Green,No. 2,Michael Lynch,Lennox Carroll,Lennox Carroll,1-8,1,8,0,1,Completed,true,false,false
+AP010094,07 Dec 24,9,Highmoor Uniting RA,Mentone Green,No. 3,Ben Campbell,Tom Carroll,Ben Campbell,8-4,8,4,1,0,Completed,true,false,false
+AP010094,07 Dec 24,9,Highmoor Uniting RA,Mentone Green,No. 4,Esmatullah Niazi,Carson Parris,Esmatullah Niazi,8-3,8,3,1,0,Completed,true,false,false
+AP010101,14 Dec 24,10,Mentone Green,Glen Huntly,No. 1,Lennox Carroll,Vincent Kuiper,Vincent Kuiper,6-8,6,8,0,1,Completed,true,false,true
+AP010101,14 Dec 24,10,Mentone Green,Glen Huntly,No. 2,Tom Carroll,Siva Chandrasekaran,Siva Chandrasekaran,2-8,2,8,0,1,Completed,true,false,false
+AP010101,14 Dec 24,10,Mentone Green,Glen Huntly,No. 3,Dante Ortega,Michael Haynes,Michael Haynes,4-8,4,8,0,1,Completed,true,false,false
+AP010101,14 Dec 24,10,Mentone Green,Glen Huntly,No. 4,Carson Parris,Raghav Chandrasekaran,Carson Parris,8-0,8,0,1,0,Completed,true,false,true
+AP010102,14 Dec 24,10,Caulfield Rec,Maccabi,No. 1,Chris Liolios,Sebastian Raboy,Chris Liolios,8-5,8,5,1,0,Completed,true,false,false
+AP010102,14 Dec 24,10,Caulfield Rec,Maccabi,No. 2,Emir Zmak,Stephen Gorenstein,Emir Zmak,8-2,8,2,1,0,Completed,true,false,false
+AP010102,14 Dec 24,10,Caulfield Rec,Maccabi,No. 3,Tiago Cadore,Ashley Raboy,Ashley Raboy,5-8,5,8,0,1,Completed,true,false,false
+AP010102,14 Dec 24,10,Caulfield Rec,Maccabi,No. 4,Miguel Sison,Paul Kovacs,Miguel Sison,8-4,8,4,1,0,Completed,true,false,false
+AP010103,14 Dec 24,10,Royal Ave,Hawthorn,No. 1,Lachie Scott,Eric Alonso,Eric Alonso,3-8,3,8,0,1,Completed,true,false,false
+AP010103,14 Dec 24,10,Royal Ave,Hawthorn,No. 2,James Janse,Matt Campen,James Janse,8-7,8,7,1,0,Completed,true,false,false
+AP010103,14 Dec 24,10,Royal Ave,Hawthorn,No. 3,Michael Poulos,Mitchell Sparks,Mitchell Sparks,6-8,6,8,0,1,Completed,true,false,false
+AP010103,14 Dec 24,10,Royal Ave,Hawthorn,No. 4,Max Missen,[Unnamed emergency — TROLS AP010103 away code 4],Max Missen,8-0,8,0,1,0,Completed,false,false,true
+AP010112,01 Feb 25,11,Maccabi,Mentone Green,No. 1,Sebastian Raboy,Alberto Polintan,Sebastian Raboy,8-5,8,5,1,0,Completed,true,false,false
+AP010112,01 Feb 25,11,Maccabi,Mentone Green,No. 2,Stephen Gorenstein,Lennox Carroll,Stephen Gorenstein,8-7,8,7,1,0,Completed,true,false,false
+AP010112,01 Feb 25,11,Maccabi,Mentone Green,No. 3,Stephen Kleid,Tom Carroll,Tom Carroll,3-8,3,8,0,1,Completed,true,false,false
+AP010112,01 Feb 25,11,Maccabi,Mentone Green,No. 4,Ashley Raboy,Carson Parris,Ashley Raboy,8-4,8,4,1,0,Completed,true,false,false
+AP010114,01 Feb 25,11,Highmoor Uniting RA,Royal Ave,No. 1,Callum Elvins,Lachie Scott,Callum Elvins,8-2,8,2,1,0,Completed,true,false,false
+AP010114,01 Feb 25,11,Highmoor Uniting RA,Royal Ave,No. 2,Ben Campbell,James Janse,James Janse,2-8,2,8,0,1,Completed,true,false,false
+AP010114,01 Feb 25,11,Highmoor Uniting RA,Royal Ave,No. 3,Charlie Daalder,Michael Poulos,Charlie Daalder,8-6,8,6,1,0,Completed,true,false,false
+AP010114,01 Feb 25,11,Highmoor Uniting RA,Royal Ave,No. 4,Esmatullah Niazi,Max Missen,Esmatullah Niazi,8-2,8,2,1,0,Completed,true,false,false
+AP010121,08 Feb 25,12,Highmoor Uniting RA,Hawthorn,No. 1,Con Hatzis,Matt Strutte,Matt Strutte,7-8,7,8,0,1,Completed,true,true,false
+AP010121,08 Feb 25,12,Highmoor Uniting RA,Hawthorn,No. 2,Richard Elvins,Mitchell Sparks,Richard Elvins,8-6,8,6,1,0,Completed,true,false,false
+AP010121,08 Feb 25,12,Highmoor Uniting RA,Hawthorn,No. 3,Michael Lynch,William Wang,Michael Lynch,8-1,8,1,1,0,Completed,true,false,false
+AP010121,08 Feb 25,12,Highmoor Uniting RA,Hawthorn,No. 4,Ben Campbell,Matt Campen,Ben Campbell,8-7,8,7,1,0,Completed,true,false,false
+AP010122,08 Feb 25,12,Mentone Green,Caulfield Rec,No. 1,Michael Lawes,Jose Munoz,Michael Lawes,8-2,8,2,1,0,Completed,true,false,false
+AP010122,08 Feb 25,12,Mentone Green,Caulfield Rec,No. 2,Tom Carroll,Emir Zmak,Emir Zmak,2-8,2,8,0,1,Completed,true,false,false
+AP010122,08 Feb 25,12,Mentone Green,Caulfield Rec,No. 3,Letheri Tsitsiras,Miguel Sison,Miguel Sison,3-8,3,8,0,1,Completed,true,true,false
+AP010122,08 Feb 25,12,Mentone Green,Caulfield Rec,No. 4,Jack Forster,Blake Golden,Jack Forster,8-7,8,7,1,0,Completed,true,true,true
+AP010124,08 Feb 25,12,Maccabi,Glen Huntly,No. 1,Sebastian Raboy,Michael Haynes,Sebastian Raboy,8-1,8,1,1,0,Completed,true,false,false
+AP010124,08 Feb 25,12,Maccabi,Glen Huntly,No. 2,Jaxson Brick,Gerald Pereria,Jaxson Brick,8-5,8,5,1,0,Completed,true,false,false
+AP010124,08 Feb 25,12,Maccabi,Glen Huntly,No. 3,Stephen Gorenstein,Daniel Katanov,Stephen Gorenstein,8-5,8,5,1,0,Completed,true,false,false
+AP010124,08 Feb 25,12,Maccabi,Glen Huntly,No. 4,Ashley Raboy,Paul Egre,Ashley Raboy,8-4,8,4,1,0,Completed,true,false,false
+AP010131,15 Feb 25,13,Hawthorn,Maccabi,No. 1,Andy Pang,Sebastian Raboy,Sebastian Raboy,6-8,6,8,0,1,Completed,true,false,false
+AP010131,15 Feb 25,13,Hawthorn,Maccabi,No. 2,Eric Alonso,Jaxson Brick,Jaxson Brick,6-8,6,8,0,1,Completed,true,false,false
+AP010131,15 Feb 25,13,Hawthorn,Maccabi,No. 3,Matt Strutte,Stephen Gorenstein,Matt Strutte,8-0,8,0,1,0,Completed,true,false,false
+AP010131,15 Feb 25,13,Hawthorn,Maccabi,No. 4,William Wang,Paul Kovacs,William Wang,8-5,8,5,1,0,Completed,true,false,false
+AP010132,15 Feb 25,13,Glen Huntly,Highmoor Uniting RA,No. 1,Gerald Pereria,Callum Elvins,Callum Elvins,3-8,3,8,0,1,Completed,true,false,false
+AP010132,15 Feb 25,13,Glen Huntly,Highmoor Uniting RA,No. 2,Paul Egre,Michael Lynch,Paul Egre,8-6,8,6,1,0,Completed,true,false,false
+AP010132,15 Feb 25,13,Glen Huntly,Highmoor Uniting RA,No. 3,Jordy Rogelberg,Ben Campbell,Ben Campbell,6-8,6,8,0,1,Completed,true,true,false
+AP010132,15 Feb 25,13,Glen Huntly,Highmoor Uniting RA,No. 4,Joseph Jacques,Charlie Daalder,Charlie Daalder,1-8,1,8,0,1,Completed,true,true,false
+AP010141,22 Feb 25,14,Hawthorn,Glen Huntly,No. 1,Eric Alonso,Michael Haynes,Eric Alonso,8-3,8,3,1,0,Completed,true,false,false
+AP010141,22 Feb 25,14,Hawthorn,Glen Huntly,No. 2,Matt Strutte,Gerald Pereria,Matt Strutte,8-1,8,1,1,0,Completed,true,false,false
+AP010141,22 Feb 25,14,Hawthorn,Glen Huntly,No. 3,Mitchell Sparks,Paul Egre,Mitchell Sparks,8-5,8,5,1,0,Completed,true,false,false
+AP010141,22 Feb 25,14,Hawthorn,Glen Huntly,No. 4,Matt Campen,Joseph Jacques,Matt Campen,8-0,8,0,1,0,Completed,true,false,true
+AP010142,22 Feb 25,14,Highmoor Uniting RA,Maccabi,No. 1,Richard Elvins,Sebastian Raboy,Sebastian Raboy,0-8,0,8,0,1,Completed,true,false,false
+AP010142,22 Feb 25,14,Highmoor Uniting RA,Maccabi,No. 2,Michael Lynch,Stephen Kleid,Michael Lynch,8-4,8,4,1,0,Completed,true,false,false
+AP010142,22 Feb 25,14,Highmoor Uniting RA,Maccabi,No. 3,Charlie Daalder,Ashley Raboy,Charlie Daalder,8-2,8,2,1,0,Completed,true,false,false
+AP010142,22 Feb 25,14,Highmoor Uniting RA,Maccabi,No. 4,Esmatullah Niazi,Paul Kovacs,Esmatullah Niazi,8-1,8,1,1,0,Completed,true,false,false
+AP010144,22 Feb 25,14,Royal Ave,Mentone Green,No. 1,Lachie Scott,Alberto Polintan,Lachie Scott,8-7,8,7,1,0,Completed,true,false,false
+AP010144,22 Feb 25,14,Royal Ave,Mentone Green,No. 2,James Janse,Dante Ortega,James Janse,8-3,8,3,1,0,Completed,true,false,false
+AP010144,22 Feb 25,14,Royal Ave,Mentone Green,No. 3,Michael Poulos,Carson Parris,Carson Parris,6-8,6,8,0,1,Completed,true,false,false
+AP010144,22 Feb 25,14,Royal Ave,Mentone Green,No. 4,Max Missen,Eric Strelnikov,Eric Strelnikov,2-8,2,8,0,1,Completed,true,false,true
+AP010301,,16,Highmoor Uniting RA,Caulfield Rec,No. 1,Callum Elvins,Chris Liolios,Chris Liolios,3-8,3,8,0,1,Completed,true,false,false
+AP010301,,16,Highmoor Uniting RA,Caulfield Rec,No. 2,Richard Elvins,Jose Munoz,Jose Munoz,4-8,4,8,0,1,Completed,true,false,false
+AP010301,,16,Highmoor Uniting RA,Caulfield Rec,No. 3,Charlie Daalder,Emir Zmak,Emir Zmak,0-8,0,8,0,1,Completed,true,false,false
+AP010301,,16,Highmoor Uniting RA,Caulfield Rec,No. 4,Esmatullah Niazi,Miguel Sison,Esmatullah Niazi,8-6,8,6,1,0,Completed,true,false,false
+AP010302,,16,Maccabi,Hawthorn,No. 1,Sebastian Raboy,Andy Pang,Andy Pang,7-8,7,8,0,1,Completed,true,false,false
+AP010302,,16,Maccabi,Hawthorn,No. 2,Stephen Gorenstein,Eric Alonso,Stephen Gorenstein,8-6,8,6,1,0,Completed,true,false,false
+AP010302,,16,Maccabi,Hawthorn,No. 3,Stephen Kleid,Matt Strutte,Matt Strutte,2-8,2,8,0,1,Completed,true,false,false
+AP010302,,16,Maccabi,Hawthorn,No. 4,Ashley Raboy,Mitchell Sparks,Mitchell Sparks,5-8,5,8,0,1,Completed,true,false,false
+AP010321,,17,Hawthorn,Caulfield Rec,No. 1,Eric Alonso,Chris Liolios,Chris Liolios,0-8,0,8,0,1,Completed,true,false,false
+AP010321,,17,Hawthorn,Caulfield Rec,No. 2,Matt Strutte,Jose Munoz,Matt Strutte,8-3,8,3,1,0,Completed,true,false,false
+AP010321,,17,Hawthorn,Caulfield Rec,No. 3,Mitchell Sparks,Emir Zmak,Emir Zmak,1-8,1,8,0,1,Completed,true,false,false
+AP010321,,17,Hawthorn,Caulfield Rec,No. 4,Matt Campen,Miguel Sison,Matt Campen,8-2,8,2,1,0,Completed,true,false,false

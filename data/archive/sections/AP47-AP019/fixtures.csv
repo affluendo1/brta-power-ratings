@@ -1,0 +1,47 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP019011,07 Oct 23,1,regular,Round 1,Mentone,BLTC,8,0,4,0,8,1,54,32,Completed,
+AP019012,07 Oct 23,1,regular,Round 1,Hawthorn,Glen Huntly,2,6,2,2,4,5,44,44,Completed,
+AP019013,07 Oct 23,1,regular,Round 1,Pakenham,Hurlingham Park White,0,8,0,4,0,8,11,48,Completed,
+AP019021,14 Oct 23,2,regular,Round 2,Hurlingham Park White,Mentone,1,7,1,3,3,7,31,51,Completed,
+AP019022,14 Oct 23,2,regular,Round 2,Glen Huntly,Pakenham,7,1,3,1,7,2,54,33,Completed,
+AP019023,14 Oct 23,2,regular,Round 2,BLTC,Hawthorn,2,6,2,2,4,4,34,35,Completed,
+AP019031,21 Oct 23,3,regular,Round 3,Mentone,Hawthorn,7,1,3,1,6,4,51,47,Completed,
+AP019032,21 Oct 23,3,regular,Round 3,Pakenham,BLTC,8,0,4,0,8,1,53,30,Completed,
+AP019033,21 Oct 23,3,regular,Round 3,Hurlingham Park White,Glen Huntly,8,0,4,0,8,0,48,18,Completed,
+AP019041,28 Oct 23,4,regular,Round 4,Glen Huntly,Mentone,7,1,3,1,6,3,46,45,Completed,
+AP019042,28 Oct 23,4,regular,Round 4,BLTC,Hurlingham Park White,0,8,0,4,0,8,22,50,Completed,
+AP019043,28 Oct 23,4,regular,Round 4,Hawthorn,Pakenham,2,6,2,2,5,5,48,49,Completed,
+AP019051,11 Nov 23,5,regular,Round 5,Mentone,Pakenham,8,0,4,0,8,2,54,31,Completed,
+AP019052,11 Nov 23,5,regular,Round 5,Glen Huntly,BLTC,8,0,4,0,8,2,58,40,Completed,
+AP019053,11 Nov 23,5,regular,Round 5,Hurlingham Park White,Hawthorn,8,0,4,0,8,0,49,18,Completed,
+AP019061,18 Nov 23,6,regular,Round 6,BLTC,Mentone,0,8,0,4,1,8,22,53,Completed,
+AP019062,18 Nov 23,6,regular,Round 6,Glen Huntly,Hawthorn,8,0,4,0,8,2,59,44,Completed,
+AP019063,18 Nov 23,6,regular,Round 6,Hurlingham Park White,Pakenham,8,0,4,0,8,0,48,7,Completed,
+AP019071,25 Nov 23,7,regular,Round 7,Mentone,Hurlingham Park White,6,2,2,2,5,4,49,37,Completed,
+AP019073,25 Nov 23,7,regular,Round 7,Hawthorn,BLTC,1,7,1,3,2,6,34,41,Completed,
+pending-ap019-r7-pakenham-glen-huntly,25 Nov 23,7,regular,Round 7,Pakenham,Glen Huntly,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap019-r8-bltc-pakenham,02 Dec 23,8,regular,Round 8,BLTC,Pakenham,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap019-r8-glen-huntly-hurlingham-park-white,02 Dec 23,8,regular,Round 8,Glen Huntly,Hurlingham Park White,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap019-r8-hawthorn-mentone,02 Dec 23,8,regular,Round 8,Hawthorn,Mentone,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap019-r9-hurlingham-park-white-bltc,09 Dec 23,9,regular,Round 9,Hurlingham Park White,BLTC,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap019-r9-mentone-glen-huntly,09 Dec 23,9,regular,Round 9,Mentone,Glen Huntly,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap019-r9-pakenham-hawthorn,09 Dec 23,9,regular,Round 9,Pakenham,Hawthorn,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP019101,16 Dec 23,10,regular,Round 10,Pakenham,Mentone,1,7,1,3,2,6,25,44,Completed,
+AP019102,16 Dec 23,10,regular,Round 10,BLTC,Glen Huntly,1,7,1,3,3,6,38,46,Completed,
+AP019103,16 Dec 23,10,regular,Round 10,Hawthorn,Hurlingham Park White,0,8,0,4,1,8,24,53,Completed,
+AP019111,03 Feb 24,11,regular,Round 11,Mentone,BLTC,6,2,2,2,4,4,39,35,Completed,
+AP019112,03 Feb 24,11,regular,Round 11,Hawthorn,Glen Huntly,7,1,3,1,7,2,51,35,Completed,
+AP019113,03 Feb 24,11,regular,Round 11,Pakenham,Hurlingham Park White,0,8,0,4,0,8,12,48,Completed,
+AP019121,10 Feb 24,12,regular,Round 12,Hurlingham Park White,Mentone,8,0,4,0,8,0,50,28,Completed,
+AP019122,10 Feb 24,12,regular,Round 12,Glen Huntly,Pakenham,6,2,2,2,5,5,52,46,Completed,
+AP019123,10 Feb 24,12,regular,Round 12,BLTC,Hawthorn,2,6,2,2,5,5,47,48,Completed,
+AP019131,17 Feb 24,13,regular,Round 13,Mentone,Hawthorn,7,1,3,1,7,3,57,45,Completed,
+AP019132,17 Feb 24,13,regular,Round 13,Pakenham,BLTC,1,7,1,3,2,7,29,54,Completed,
+AP019133,17 Feb 24,13,regular,Round 13,Hurlingham Park White,Glen Huntly,6,2,2,2,6,4,53,41,Completed,
+AP019141,24 Feb 24,14,regular,Round 14,Glen Huntly,Mentone,2,6,2,2,4,5,37,49,Completed,
+AP019142,24 Feb 24,14,regular,Round 14,BLTC,Hurlingham Park White,0,8,0,4,1,8,22,55,Completed,
+AP019143,24 Feb 24,14,regular,Round 14,Hawthorn,Pakenham,8,0,4,0,8,1,49,30,Completed,
+AP019151,02 Mar 24,15,regular,Round 15,Mentone,Pakenham,7,1,3,1,7,3,56,38,Completed,
+AP019152,02 Mar 24,15,regular,Round 15,Glen Huntly,BLTC,8,0,4,0,8,1,53,27,Completed,
+AP019153,02 Mar 24,15,regular,Round 15,Hurlingham Park White,Hawthorn,8,0,4,0,8,0,48,21,Completed,
+AP019321,,16,grand_final,Grand final · TROLS entry 2,Hurlingham Park White,Mentone,7,1,3,1,6,2,44,32,Completed,

@@ -1,0 +1,90 @@
+{
+  "asset_id": "AP20-AP089",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 09/10",
+  "season_id": "AP20",
+  "season_label": "Summer 09/10",
+  "source_section_code": "AP089",
+  "section_label": "Mens Rubbers 3",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Victory Park",
+      "wins": 0,
+      "points": 94,
+      "percentage": 133.01,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "Highett",
+      "wins": 0,
+      "points": 84,
+      "percentage": 128.43,
+      "marker": "P"
+    },
+    {
+      "position": 3,
+      "team": "Beaumaris CC",
+      "wins": 0,
+      "points": 69,
+      "percentage": 112.18,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Patterson Lakes",
+      "wins": 0,
+      "points": 49.5,
+      "percentage": 94.55,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Caulfield Grammar",
+      "wins": 0,
+      "points": 35.5,
+      "percentage": 75.44,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Sacred Heart Kew",
+      "wins": 0,
+      "points": 28,
+      "percentage": 73.05,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 1,
+    "singlesBestOf": 3,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP20-AP089",
+  "fixtures": 47,
+  "completed_fixtures": 47,
+  "draw_fixtures": 1,
+  "singles_rubbers": 1,
+  "doubles_rubbers": 185,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP089143 doubles No. 2: '6-'. Missing score not inferred; excluded from ratings and game totals.",
+    "Fixture game totals do not match rubbers for AP089143: TROLS team total 18-4; complete-score total 12-4. Both published records retained."
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "asset_id": "AP30-AP022",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 14/15",
+  "season_id": "AP30",
+  "season_label": "Summer 14/15",
+  "source_section_code": "AP022",
+  "section_label": "Men's S/D 9",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Dendy Park",
+      "wins": 11,
+      "points": 111,
+      "percentage": 155.13,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Lauriston",
+      "wins": 10,
+      "points": 107,
+      "percentage": 180.99,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Maccabi",
+      "wins": 6,
+      "points": 72,
+      "percentage": 93.4,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "MCC",
+      "wins": 7,
+      "points": 70,
+      "percentage": 103.67,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Monash University",
+      "wins": 6,
+      "points": 69.5,
+      "percentage": 95.5,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Elwood",
+      "wins": 4,
+      "points": 50.5,
+      "percentage": 84.81,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "BLTC 1",
+      "wins": 3,
+      "points": 43,
+      "percentage": 70.23,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "BLTC 2",
+      "wins": 2,
+      "points": 37,
+      "percentage": 68.73,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP30-AP022",
+  "fixtures": 60,
+  "completed_fixtures": 59,
+  "draw_fixtures": 49,
+  "singles_rubbers": 221,
+  "doubles_rubbers": 114,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP022134 doubles No. 2: '4-6 6-6'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

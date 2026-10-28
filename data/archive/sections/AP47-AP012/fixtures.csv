@@ -1,0 +1,60 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP012011,07 Oct 23,1,regular,Round 1,BLTC Blue,Bruce Park,9,1,7,2,,,56,41,Completed,
+AP012012,07 Oct 23,1,regular,Round 1,Burwood,East Malvern,1,9,2,7,,,36,57,Completed,
+AP012013,07 Oct 23,1,regular,Round 1,BLTC White,Royal South Yarra Gold,1,9,1,7,,,23,48,Completed,
+AP012014,07 Oct 23,1,regular,Round 1,Tennis World,Kooyong,3,7,5,5,,,50,58,Completed,
+AP012021,14 Oct 23,2,regular,Round 2,Kooyong,BLTC Blue,0,10,1,8,,,29,60,Completed,
+AP012023,14 Oct 23,2,regular,Round 2,East Malvern,BLTC White,10,0,8,1,,,57,28,Completed,
+AP012024,14 Oct 23,2,regular,Round 2,Royal South Yarra Gold,Tennis World,9,1,7,1,,,55,32,Completed,
+pending-ap012-r2-bruce-park-burwood,14 Oct 23,2,regular,Round 2,Bruce Park,Burwood,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP012031,21 Oct 23,3,regular,Round 3,BLTC Blue,Royal South Yarra Gold,9,1,7,2,,,57,50,Completed,
+AP012032,21 Oct 23,3,regular,Round 3,Burwood,Kooyong,1,9,2,6,,,25,50,Completed,
+AP012033,21 Oct 23,3,regular,Round 3,BLTC White,Bruce Park,8,2,5,4,,,56,40,Completed,
+AP012034,21 Oct 23,3,regular,Round 3,Tennis World,East Malvern,1,9,1,7,,,22,51,Completed,
+AP012041,28 Oct 23,4,regular,Round 4,East Malvern,BLTC Blue,10,0,8,1,,,62,24,Completed,
+AP012042,28 Oct 23,4,regular,Round 4,Royal South Yarra Gold,Burwood,8,2,6,4,,,60,55,Completed,
+AP012043,28 Oct 23,4,regular,Round 4,Kooyong,BLTC White,2,8,3,5,,,34,40,Completed,
+AP012044,28 Oct 23,4,regular,Round 4,Bruce Park,Tennis World,9,1,7,2,,,61,44,Completed,
+AP012051,11 Nov 23,5,regular,Round 5,BLTC White,Tennis World,7,3,5,4,,,51,44,Completed,
+AP012052,11 Nov 23,5,regular,Round 5,Kooyong,Royal South Yarra Gold,3,7,4,4,,,35,45,Completed,
+AP012053,11 Nov 23,5,regular,Round 5,East Malvern,Bruce Park,9,1,7,2,,,59,18,Completed,
+AP012054,11 Nov 23,5,regular,Round 5,BLTC Blue,Burwood,2,8,3,6,,,41,55,Completed,
+AP012061,18 Nov 23,6,regular,Round 6,Burwood,BLTC White,9,1,7,1,,,53,27,Completed,
+AP012062,18 Nov 23,6,regular,Round 6,Tennis World,BLTC Blue,0,10,1,8,,,38,63,Completed,
+AP012063,18 Nov 23,6,regular,Round 6,Royal South Yarra Gold,East Malvern,8,2,6,3,,,63,49,Completed,
+AP012064,18 Nov 23,6,regular,Round 6,Bruce Park,Kooyong,1,9,2,7,,,39,55,Completed,
+AP012071,25 Nov 23,7,regular,Round 7,BLTC Blue,BLTC White,8,2,4,4,,,42,40,Completed,
+AP012072,25 Nov 23,7,regular,Round 7,Burwood,Tennis World,8,2,6,3,,,52,44,Completed,
+AP012073,25 Nov 23,7,regular,Round 7,Kooyong,East Malvern,0,10,1,8,,,19,63,Completed,
+AP012074,25 Nov 23,7,regular,Round 7,Royal South Yarra Gold,Bruce Park,8,2,6,3,,,53,31,Completed,
+pending-ap012-r8-bruce-park-bltc-blue,02 Dec 23,8,regular,Round 8,Bruce Park,BLTC Blue,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap012-r8-east-malvern-burwood,02 Dec 23,8,regular,Round 8,East Malvern,Burwood,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap012-r8-kooyong-tennis-world,02 Dec 23,8,regular,Round 8,Kooyong,Tennis World,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap012-r8-royal-south-yarra-gold-bltc-white,02 Dec 23,8,regular,Round 8,Royal South Yarra Gold,BLTC White,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap012-r9-bltc-blue-kooyong,09 Dec 23,9,regular,Round 9,BLTC Blue,Kooyong,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap012-r9-bltc-white-east-malvern,09 Dec 23,9,regular,Round 9,BLTC White,East Malvern,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap012-r9-burwood-bruce-park,09 Dec 23,9,regular,Round 9,Burwood,Bruce Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap012-r9-tennis-world-royal-south-yarra-gold,09 Dec 23,9,regular,Round 9,Tennis World,Royal South Yarra Gold,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP012101,16 Dec 23,10,regular,Round 10,Royal South Yarra Gold,BLTC Blue,8,2,5,3,,,43,38,Completed,
+AP012103,16 Dec 23,10,regular,Round 10,Bruce Park,BLTC White,9,1,7,1,,,49,15,Completed,
+AP012104,16 Dec 23,10,regular,Round 10,East Malvern,Tennis World,10,0,8,0,,,57,15,Completed,
+pending-ap012-r10-kooyong-burwood,16 Dec 23,10,regular,Round 10,Kooyong,Burwood,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP012111,03 Feb 24,11,regular,Round 11,BLTC Blue,East Malvern,1,9,2,7,,,33,59,Completed,
+AP012112,03 Feb 24,11,regular,Round 11,Burwood,Royal South Yarra Gold,1,9,1,7,,,22,50,Completed,
+AP012113,03 Feb 24,11,regular,Round 11,BLTC White,Kooyong,8,2,5,3,,,49,38,Completed,
+pending-ap012-r11-tennis-world-bruce-park,03 Feb 24,11,regular,Round 11,Tennis World,Bruce Park,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+AP012121,10 Feb 24,12,regular,Round 12,Tennis World,BLTC White,1,9,1,7,,,20,50,Completed,
+AP012122,10 Feb 24,12,regular,Round 12,Royal South Yarra Gold,Kooyong,3,7,4,5,,,41,48,Completed,
+AP012123,10 Feb 24,12,regular,Round 12,Bruce Park,East Malvern,1,9,1,7,,,19,52,Completed,
+AP012124,10 Feb 24,12,regular,Round 12,Burwood,BLTC Blue,1,9,2,7,,,36,55,Completed,
+AP012131,17 Feb 24,13,regular,Round 13,BLTC White,Burwood,7,3,5,4,,,52,39,Completed,
+AP012132,17 Feb 24,13,regular,Round 13,BLTC Blue,Tennis World,10,0,8,0,,,56,3,Completed,
+AP012133,17 Feb 24,13,regular,Round 13,East Malvern,Royal South Yarra Gold,9,1,7,1,,,51,23,Completed,
+AP012134,17 Feb 24,13,regular,Round 13,Kooyong,Bruce Park,9,1,7,1,,,53,16,Completed,
+AP012141,24 Feb 24,14,regular,Round 14,BLTC White,BLTC Blue,2,8,3,5,,,41,46,Completed,
+AP012143,24 Feb 24,14,regular,Round 14,East Malvern,Kooyong,8,2,6,3,,,54,42,Completed,
+AP012144,24 Feb 24,14,regular,Round 14,Bruce Park,Royal South Yarra Gold,0,10,0,8,,,27,57,Completed,
+pending-ap012-r14-tennis-world-burwood,24 Feb 24,14,regular,Round 14,Tennis World,Burwood,,,,,,,,,Missing Result,No individual scorecard / no rubbers recorded
+AP012301,,16,semi_final,Semi-final,East Malvern,Kooyong,9,1,7,2,,,60,30,Completed,
+AP012302,,16,semi_final,Semi-final,Royal South Yarra Gold,BLTC Blue,9,1,7,1,,,55,23,Completed,
+AP012321,,17,grand_final,Grand final · TROLS entry 2,East Malvern,Royal South Yarra Gold,1,9,0,5,,,14,38,Completed,

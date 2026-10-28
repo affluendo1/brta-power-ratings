@@ -1,0 +1,185 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP007011,02 May 26,1,Clarinda,Elwood,No. 1,David James,Danny Lawrence,David James,8-4,8,4,1,0,Completed,true,false,false
+AP007011,02 May 26,1,Clarinda,Elwood,No. 2,Adrian Miles,Kristian Kostov,Kristian Kostov,0-8,0,8,0,1,Completed,true,false,false
+AP007011,02 May 26,1,Clarinda,Elwood,No. 3,Kenny Poirier,Todd Perkinson,Todd Perkinson,4-8,4,8,0,1,Completed,true,false,false
+AP007011,02 May 26,1,Clarinda,Elwood,No. 4,Roland Detterbeck,Richard Sharp,Richard Sharp,2-8,2,8,0,1,Completed,true,false,false
+AP007012,02 May 26,1,Chadstone,FCTC,No. 1,Hock Tan,William Ong,Hock Tan,8-2,8,2,1,0,Completed,true,false,false
+AP007012,02 May 26,1,Chadstone,FCTC,No. 2,James Taylor,Russell Human,James Taylor,8-5,8,5,1,0,Completed,true,false,false
+AP007012,02 May 26,1,Chadstone,FCTC,No. 3,Stephen Yip,Daniel Black,Stephen Yip,8-3,8,3,1,0,Completed,true,false,false
+AP007012,02 May 26,1,Chadstone,FCTC,No. 4,Min Fu,Rob Barker,Min Fu,8-3,8,3,1,0,Completed,true,false,true
+AP007013,02 May 26,1,Sth Hawthorn,Sandringham,No. 1,Shun Mizuta,Jason Clarke,Jason Clarke,4-8,4,8,0,1,Completed,true,false,false
+AP007013,02 May 26,1,Sth Hawthorn,Sandringham,No. 2,Norikazu Ishigaki,Paul Claxton,Paul Claxton,5-8,5,8,0,1,Completed,true,false,false
+AP007013,02 May 26,1,Sth Hawthorn,Sandringham,No. 3,Yuko Ema,Craig Schwerdt,Yuko Ema,8-1,8,1,1,0,Completed,true,false,false
+AP007013,02 May 26,1,Sth Hawthorn,Sandringham,No. 4,Chieko Yamamoto,Scott Farndell,Chieko Yamamoto,8-1,8,1,1,0,Completed,true,false,false
+AP007021,09 May 26,2,Sandringham,Clarinda,No. 1,Jason Clarke,David James,Jason Clarke,8-6,8,6,1,0,Completed,true,false,false
+AP007021,09 May 26,2,Sandringham,Clarinda,No. 2,Paul Claxton,Tri Dinh,Tri Dinh,7-8,7,8,0,1,Completed,true,false,false
+AP007021,09 May 26,2,Sandringham,Clarinda,No. 3,Craig Schwerdt,Kenny Poirier,Craig Schwerdt,8-7,8,7,1,0,Completed,true,false,false
+AP007021,09 May 26,2,Sandringham,Clarinda,No. 4,Ben Dennett,Vincent Wen,Ben Dennett,8-5,8,5,1,0,Completed,true,false,false
+AP007022,09 May 26,2,FCTC,Sth Hawthorn,No. 1,Tye Cheasley,Kanato Ishikawa,Kanato Ishikawa,2-8,2,8,0,1,Completed,true,false,false
+AP007022,09 May 26,2,FCTC,Sth Hawthorn,No. 2,William Ong,Shun Mizuta,William Ong,8-7,8,7,1,0,Completed,true,false,false
+AP007022,09 May 26,2,FCTC,Sth Hawthorn,No. 3,Daniel Black,Norikazu Ishigaki,Norikazu Ishigaki,4-8,4,8,0,1,Completed,true,false,false
+AP007022,09 May 26,2,FCTC,Sth Hawthorn,No. 4,James Cullen,Yuko Ema,James Cullen,8-7,8,7,1,0,Completed,true,false,false
+AP007023,09 May 26,2,Elwood,Chadstone,No. 1,James Taylor,Hock Tan,Hock Tan,5-8,5,8,0,1,Completed,true,false,false
+AP007023,09 May 26,2,Elwood,Chadstone,No. 2,Manol Atanasov,Finn Rasmussen,Manol Atanasov,8-6,8,6,1,0,Completed,true,true,true
+AP007023,09 May 26,2,Elwood,Chadstone,No. 3,Kristian Kostov,Stephen Yip,Kristian Kostov,8-1,8,1,1,0,Completed,true,false,false
+AP007023,09 May 26,2,Elwood,Chadstone,No. 4,Todd Perkinson,Min Fu,Todd Perkinson,8-4,8,4,1,0,Completed,true,false,false
+AP007031,16 May 26,3,Clarinda,Chadstone,No. 1,David James,Brandon Faragher,David James,8-7,8,7,1,0,Completed,true,false,false
+AP007031,16 May 26,3,Clarinda,Chadstone,No. 2,Adrian Miles,Hock Tan,Hock Tan,1-8,1,8,0,1,Completed,true,false,false
+AP007031,16 May 26,3,Clarinda,Chadstone,No. 3,Kenny Poirier,James Taylor,James Taylor,1-8,1,8,0,1,Completed,true,false,false
+AP007031,16 May 26,3,Clarinda,Chadstone,No. 4,Vincent Wen,Min Fu,Vincent Wen,8-7,8,7,1,0,Completed,true,false,false
+AP007032,16 May 26,3,Sth Hawthorn,Elwood,No. 1,Shun Mizuta,Manol Atanasov,Shun Mizuta,8-3,8,3,1,0,Completed,true,false,true
+AP007032,16 May 26,3,Sth Hawthorn,Elwood,No. 2,Norikazu Ishigaki,Kristian Kostov,Kristian Kostov,1-8,1,8,0,1,Completed,true,false,false
+AP007032,16 May 26,3,Sth Hawthorn,Elwood,No. 3,Yuko Ema,Richard Sharp,Richard Sharp,1-8,1,8,0,1,Completed,true,false,false
+AP007032,16 May 26,3,Sth Hawthorn,Elwood,No. 4,Chieko Yamamoto,Dale O'Neill,Chieko Yamamoto,8-2,8,2,1,0,Completed,true,false,false
+AP007033,16 May 26,3,Sandringham,FCTC,No. 1,Jason Clarke,William Ong,Jason Clarke,8-1,8,1,1,0,Completed,true,false,false
+AP007033,16 May 26,3,Sandringham,FCTC,No. 2,David Byrne,Russell Human,Russell Human,4-8,4,8,0,1,Completed,true,true,false
+AP007033,16 May 26,3,Sandringham,FCTC,No. 3,Nick Yannopoulos,Daniel Black,Daniel Black,6-8,6,8,0,1,Completed,true,true,false
+AP007033,16 May 26,3,Sandringham,FCTC,No. 4,Randall Mance,Rob Barker,Randall Mance,8-6,8,6,1,0,Completed,true,false,true
+AP007041,23 May 26,4,FCTC,Clarinda,No. 1,Tye Cheasley,David James,David James,2-8,2,8,0,1,Completed,true,false,false
+AP007041,23 May 26,4,FCTC,Clarinda,No. 2,Russell Human,Tri Dinh,Tri Dinh,7-8,7,8,0,1,Completed,true,false,false
+AP007041,23 May 26,4,FCTC,Clarinda,No. 3,Daniel Black,Vincent Wen,Vincent Wen,3-8,3,8,0,1,Completed,true,false,false
+AP007041,23 May 26,4,FCTC,Clarinda,No. 4,James Cullen,Roland Detterbeck,Roland Detterbeck,5-8,5,8,0,1,Completed,true,false,false
+AP007042,23 May 26,4,Elwood,Sandringham,No. 1,Danny Lawrence,Jason Clarke,Jason Clarke,5-8,5,8,0,1,Completed,true,false,false
+AP007042,23 May 26,4,Elwood,Sandringham,No. 2,Kristian Kostov,Andrew Stoneham,Kristian Kostov,8-0,8,0,1,0,Completed,true,false,true
+AP007042,23 May 26,4,Elwood,Sandringham,No. 3,Daniel Moynihan,Randall Mance,Daniel Moynihan,8-3,8,3,1,0,Completed,true,false,false
+AP007042,23 May 26,4,Elwood,Sandringham,No. 4,Atef Nagib,Rory Elston,Atef Nagib,8-3,8,3,1,0,Completed,true,false,true
+AP007043,23 May 26,4,Chadstone,Sth Hawthorn,No. 1,Brandon Faragher,Shun Mizuta,Shun Mizuta,7-8,7,8,0,1,Completed,true,false,false
+AP007043,23 May 26,4,Chadstone,Sth Hawthorn,No. 2,Hock Tan,Norikazu Ishigaki,Hock Tan,8-3,8,3,1,0,Completed,true,false,false
+AP007043,23 May 26,4,Chadstone,Sth Hawthorn,No. 3,James Taylor,Yuko Ema,James Taylor,8-2,8,2,1,0,Completed,true,false,false
+AP007043,23 May 26,4,Chadstone,Sth Hawthorn,No. 4,Min Fu,Chieko Yamamoto,Chieko Yamamoto,7-8,7,8,0,1,Completed,true,false,false
+AP007051,30 May 26,5,Clarinda,Sth Hawthorn,No. 1,David James,Shun Mizuta,David James,8-4,8,4,1,0,Completed,true,false,false
+AP007051,30 May 26,5,Clarinda,Sth Hawthorn,No. 2,Tri Dinh,Norikazu Ishigaki,Tri Dinh,8-5,8,5,1,0,Completed,true,false,false
+AP007051,30 May 26,5,Clarinda,Sth Hawthorn,No. 3,Vincent Wen,Yuko Ema,Vincent Wen,8-7,8,7,1,0,Completed,true,false,false
+AP007051,30 May 26,5,Clarinda,Sth Hawthorn,No. 4,Roland Detterbeck,Chieko Yamamoto,Chieko Yamamoto,6-8,6,8,0,1,Completed,true,false,false
+AP007052,30 May 26,5,FCTC,Elwood,No. 1,Lennard Geiger,Danny Lawrence,Danny Lawrence,5-8,5,8,0,1,Completed,true,false,false
+AP007052,30 May 26,5,FCTC,Elwood,No. 2,Tye Cheasley,James Taylor,James Taylor,4-8,4,8,0,1,Completed,true,false,false
+AP007052,30 May 26,5,FCTC,Elwood,No. 3,Daniel Black,Todd Perkinson,Todd Perkinson,2-8,2,8,0,1,Completed,true,false,false
+AP007052,30 May 26,5,FCTC,Elwood,No. 4,James Cullen,Richard Sharp,Richard Sharp,2-8,2,8,0,1,Completed,true,false,false
+AP007053,30 May 26,5,Sandringham,Chadstone,No. 1,Jason Clarke,Hock Tan,Jason Clarke,8-6,8,6,1,0,Completed,true,false,false
+AP007053,30 May 26,5,Sandringham,Chadstone,No. 2,Mark Creelman,James Taylor,James Taylor,1-8,1,8,0,1,Completed,true,false,false
+AP007053,30 May 26,5,Sandringham,Chadstone,No. 3,Nick Yannopoulos,Stephen Yip,Stephen Yip,1-8,1,8,0,1,Completed,true,true,false
+AP007053,30 May 26,5,Sandringham,Chadstone,No. 4,Randall Mance,Min Fu,Min Fu,3-8,3,8,0,1,Completed,true,false,false
+AP007061,13 Jun 26,6,Elwood,Clarinda,No. 1,Gareth Taylor,Tri Dinh,Gareth Taylor,8-3,8,3,1,0,Completed,true,true,false
+AP007061,13 Jun 26,6,Elwood,Clarinda,No. 2,Kristian Kostov,Kenny Poirier,Kristian Kostov,8-0,8,0,1,0,Completed,true,false,false
+AP007061,13 Jun 26,6,Elwood,Clarinda,No. 3,Todd Perkinson,Vincent Wen,Todd Perkinson,8-3,8,3,1,0,Completed,true,false,false
+AP007061,13 Jun 26,6,Elwood,Clarinda,No. 4,Richard Sharp,Roland Detterbeck,Richard Sharp,8-4,8,4,1,0,Completed,true,false,false
+AP007062,13 Jun 26,6,FCTC,Chadstone,No. 1,William Ong,Hock Tan,Hock Tan,4-8,4,8,0,1,Completed,true,false,false
+AP007062,13 Jun 26,6,FCTC,Chadstone,No. 2,Russell Human,Stephen Yip,Stephen Yip,7-8,7,8,0,1,Completed,true,false,false
+AP007062,13 Jun 26,6,FCTC,Chadstone,No. 3,Daniel Black,Edmond Lu,Edmond Lu,6-8,6,8,0,1,Completed,true,false,true
+AP007062,13 Jun 26,6,FCTC,Chadstone,No. 4,James Cullen,Kong Tan,James Cullen,8-5,8,5,1,0,Completed,true,false,false
+AP007063,13 Jun 26,6,Sandringham,Sth Hawthorn,No. 1,Jason Clarke,Shun Mizuta,Jason Clarke,8-2,8,2,1,0,Completed,true,false,false
+AP007063,13 Jun 26,6,Sandringham,Sth Hawthorn,No. 2,Ben Dennett,Norikazu Ishigaki,Norikazu Ishigaki,7-8,7,8,0,1,Completed,true,false,false
+AP007063,13 Jun 26,6,Sandringham,Sth Hawthorn,No. 3,Scott Farndell,Yuko Ema,Yuko Ema,4-8,4,8,0,1,Completed,true,false,false
+AP007063,13 Jun 26,6,Sandringham,Sth Hawthorn,No. 4,Craig Schwerdt,Chieko Yamamoto,Chieko Yamamoto,0-8,0,8,0,1,Completed,true,false,false
+AP007071,20 Jun 26,7,Clarinda,Sandringham,No. 1,David James,Jason Clarke,David James,8-3,8,3,1,0,Completed,true,false,false
+AP007071,20 Jun 26,7,Clarinda,Sandringham,No. 2,Tri Dinh,Mark Creelman,Tri Dinh,8-3,8,3,1,0,Completed,true,false,false
+AP007071,20 Jun 26,7,Clarinda,Sandringham,No. 3,Vincent Wen,Craig Schwerdt,Vincent Wen,8-7,8,7,1,0,Completed,true,false,false
+AP007071,20 Jun 26,7,Clarinda,Sandringham,No. 4,Roland Detterbeck,Scott Farndell,Scott Farndell,3-8,3,8,0,1,Completed,true,false,false
+AP007072,20 Jun 26,7,Sth Hawthorn,FCTC,No. 1,Shinichiro Mizote,William Ong,Shinichiro Mizote,8-1,8,1,1,0,Completed,true,true,false
+AP007072,20 Jun 26,7,Sth Hawthorn,FCTC,No. 2,Shun Mizuta,Russell Human,Shun Mizuta,8-7,8,7,1,0,Completed,true,false,false
+AP007072,20 Jun 26,7,Sth Hawthorn,FCTC,No. 3,Norikazu Ishigaki,Daniel Black,Norikazu Ishigaki,8-7,8,7,1,0,Completed,true,false,false
+AP007072,20 Jun 26,7,Sth Hawthorn,FCTC,No. 4,Yuko Ema,James Cullen,Yuko Ema,8-4,8,4,1,0,Completed,true,false,false
+AP007073,20 Jun 26,7,Chadstone,Elwood,No. 1,Hock Tan,Danny Lawrence,Hock Tan,8-6,8,6,1,0,Completed,true,false,false
+AP007073,20 Jun 26,7,Chadstone,Elwood,No. 2,James Taylor,Kristian Kostov,Kristian Kostov,0-8,0,8,0,1,Completed,true,false,false
+AP007073,20 Jun 26,7,Chadstone,Elwood,No. 3,Stephen Yip,Todd Perkinson,Todd Perkinson,5-8,5,8,0,1,Completed,true,false,false
+AP007073,20 Jun 26,7,Chadstone,Elwood,No. 4,Min Fu,Richard Sharp,Richard Sharp,3-8,3,8,0,1,Completed,true,false,false
+AP007081,27 Jun 26,8,Chadstone,Clarinda,No. 1,James Taylor,David James,David James,5-8,5,8,0,1,Completed,true,false,false
+AP007081,27 Jun 26,8,Chadstone,Clarinda,No. 2,Stephen Yip,Kenny Poirier,Stephen Yip,8-2,8,2,1,0,Completed,true,false,false
+AP007081,27 Jun 26,8,Chadstone,Clarinda,No. 3,Min Fu,Vincent Wen,Min Fu,8-6,8,6,1,0,Completed,true,false,false
+AP007081,27 Jun 26,8,Chadstone,Clarinda,No. 4,Timothy Law,Roland Detterbeck,Timothy Law,8-7,8,7,1,0,Completed,true,false,false
+AP007082,27 Jun 26,8,Elwood,Sth Hawthorn,No. 1,Danny Lawrence,Shun Mizuta,Danny Lawrence,8-3,8,3,1,0,Completed,true,false,false
+AP007082,27 Jun 26,8,Elwood,Sth Hawthorn,No. 2,Kristian Kostov,Norikazu Ishigaki,Kristian Kostov,8-1,8,1,1,0,Completed,true,false,false
+AP007082,27 Jun 26,8,Elwood,Sth Hawthorn,No. 3,Todd Perkinson,Yuko Ema,Todd Perkinson,8-4,8,4,1,0,Completed,true,false,false
+AP007082,27 Jun 26,8,Elwood,Sth Hawthorn,No. 4,Daniel Moynihan,Chieko Yamamoto,Chieko Yamamoto,7-8,7,8,0,1,Completed,true,false,false
+AP007083,27 Jun 26,8,FCTC,Sandringham,No. 1,William Ong,Jason Clarke,Jason Clarke,2-8,2,8,0,1,Completed,true,false,false
+AP007083,27 Jun 26,8,FCTC,Sandringham,No. 2,Russell Human,Paul Claxton,Russell Human,8-5,8,5,1,0,Completed,true,false,false
+AP007083,27 Jun 26,8,FCTC,Sandringham,No. 3,Daniel Black,Craig Schwerdt,Daniel Black,8-5,8,5,1,0,Completed,true,false,false
+AP007083,27 Jun 26,8,FCTC,Sandringham,No. 4,James Cullen,David Byrne,James Cullen,8-4,8,4,1,0,Completed,true,false,true
+AP007091,11 Jul 26,9,Clarinda,FCTC,No. 1,David James,William Ong,David James,8-3,8,3,1,0,Completed,true,false,false
+AP007091,11 Jul 26,9,Clarinda,FCTC,No. 2,Tri Dinh,Russell Human,Tri Dinh,8-3,8,3,1,0,Completed,true,false,false
+AP007091,11 Jul 26,9,Clarinda,FCTC,No. 3,Vincent Wen,Daniel Black,Daniel Black,5-8,5,8,0,1,Completed,true,false,false
+AP007091,11 Jul 26,9,Clarinda,FCTC,No. 4,Roland Detterbeck,James Cullen,James Cullen,6-8,6,8,0,1,Completed,true,false,false
+AP007092,11 Jul 26,9,Sandringham,Elwood,No. 1,Jason Clarke,Gareth Taylor,Gareth Taylor,2-8,2,8,0,1,Completed,true,false,true
+AP007092,11 Jul 26,9,Sandringham,Elwood,No. 2,Paul Claxton,Kristian Kostov,Kristian Kostov,0-8,0,8,0,1,Completed,true,false,false
+AP007092,11 Jul 26,9,Sandringham,Elwood,No. 3,Ben Dennett,Daniel Moynihan,Ben Dennett,8-7,8,7,1,0,Completed,true,false,false
+AP007092,11 Jul 26,9,Sandringham,Elwood,No. 4,Scott Farndell,Cameron Thomson,Cameron Thomson,6-8,6,8,0,1,Completed,true,false,true
+AP007093,11 Jul 26,9,Sth Hawthorn,Chadstone,No. 1,Kanato Ishikawa,Craig Jendra,Craig Jendra,2-8,2,8,0,1,Completed,true,false,false
+AP007093,11 Jul 26,9,Sth Hawthorn,Chadstone,No. 2,Shun Mizuta,Carlo Domingo,Carlo Domingo,5-8,5,8,0,1,Completed,true,false,false
+AP007093,11 Jul 26,9,Sth Hawthorn,Chadstone,No. 3,Norikazu Ishigaki,Stephen Yip,Norikazu Ishigaki,8-4,8,4,1,0,Completed,true,false,false
+AP007093,11 Jul 26,9,Sth Hawthorn,Chadstone,No. 4,Yuko Ema,Attila Ruboczki,Attila Ruboczki,4-8,4,8,0,1,Completed,true,false,false
+AP007101,18 Jul 26,10,Sth Hawthorn,Clarinda,No. 1,Kanato Ishikawa,David James,David James,2-8,2,8,0,1,Completed,true,false,false
+AP007101,18 Jul 26,10,Sth Hawthorn,Clarinda,No. 2,Shun Mizuta,Tri Dinh,Tri Dinh,5-8,5,8,0,1,Completed,true,false,false
+AP007101,18 Jul 26,10,Sth Hawthorn,Clarinda,No. 3,Norikazu Ishigaki,Kenny Poirier,Norikazu Ishigaki,8-1,8,1,1,0,Completed,true,false,false
+AP007101,18 Jul 26,10,Sth Hawthorn,Clarinda,No. 4,Yuko Ema,Roland Detterbeck,Yuko Ema,8-2,8,2,1,0,Completed,true,false,false
+AP007102,18 Jul 26,10,Elwood,FCTC,No. 1,Kristian Kostov,William Ong,Kristian Kostov,8-2,8,2,1,0,Completed,true,false,false
+AP007102,18 Jul 26,10,Elwood,FCTC,No. 2,Richard Sharp,Russell Human,Richard Sharp,8-6,8,6,1,0,Completed,true,false,false
+AP007102,18 Jul 26,10,Elwood,FCTC,No. 3,Daniel Moynihan,Daniel Black,Daniel Black,7-8,7,8,0,1,Completed,true,false,false
+AP007102,18 Jul 26,10,Elwood,FCTC,No. 4,John Bailey,James Cullen,James Cullen,7-8,7,8,0,1,Completed,true,true,false
+AP007103,18 Jul 26,10,Chadstone,Sandringham,No. 1,James Taylor,Jason Clarke,Jason Clarke,3-8,3,8,0,1,Completed,true,false,false
+AP007103,18 Jul 26,10,Chadstone,Sandringham,No. 2,Stephen Yip,Paul Claxton,Paul Claxton,5-8,5,8,0,1,Completed,true,false,false
+AP007103,18 Jul 26,10,Chadstone,Sandringham,No. 3,Timothy Law,Craig Schwerdt,Craig Schwerdt,2-8,2,8,0,1,Completed,true,false,false
+AP007103,18 Jul 26,10,Chadstone,Sandringham,No. 4,Paul Yue,Scott Farndell,Scott Farndell,3-8,3,8,0,1,Completed,true,true,false
+AP007111,25 Jul 26,11,Clarinda,Elwood,No. 1,David James,Gareth Taylor,David James,8-3,8,3,1,0,Completed,true,false,true
+AP007111,25 Jul 26,11,Clarinda,Elwood,No. 2,Tri Dinh,James Taylor,Tri Dinh,8-5,8,5,1,0,Completed,true,false,false
+AP007111,25 Jul 26,11,Clarinda,Elwood,No. 3,Kenny Poirier,Kristian Kostov,Kristian Kostov,1-8,1,8,0,1,Completed,true,false,false
+AP007111,25 Jul 26,11,Clarinda,Elwood,No. 4,Roland Detterbeck,John Bailey,Roland Detterbeck,8-3,8,3,1,0,Completed,true,false,true
+AP007112,25 Jul 26,11,Chadstone,FCTC,No. 1,Hock Tan,William Ong,Hock Tan,8-2,8,2,1,0,Completed,true,false,false
+AP007112,25 Jul 26,11,Chadstone,FCTC,No. 2,James Taylor,Russell Human,James Taylor,8-3,8,3,1,0,Completed,true,false,false
+AP007112,25 Jul 26,11,Chadstone,FCTC,No. 3,Min Fu,Daniel Black,Daniel Black,7-8,7,8,0,1,Completed,true,false,false
+AP007112,25 Jul 26,11,Chadstone,FCTC,No. 4,Benjamin Lau,James Cullen,Benjamin Lau,8-6,8,6,1,0,Completed,true,true,false
+AP007113,25 Jul 26,11,Sth Hawthorn,Sandringham,No. 1,Kanato Ishikawa,Ben Dennett,Kanato Ishikawa,8-1,8,1,1,0,Completed,true,false,false
+AP007113,25 Jul 26,11,Sth Hawthorn,Sandringham,No. 2,Shun Mizuta,Randall Mance,Shun Mizuta,8-3,8,3,1,0,Completed,true,false,false
+AP007113,25 Jul 26,11,Sth Hawthorn,Sandringham,No. 3,Norikazu Ishigaki,Mark Seccull,Norikazu Ishigaki,8-1,8,1,1,0,Completed,true,false,true
+AP007113,25 Jul 26,11,Sth Hawthorn,Sandringham,No. 4,Yuko Ema,Steuart Roe,Yuko Ema,8-0,8,0,1,0,Completed,true,false,false
+AP007121,01 Aug 26,12,Sandringham,Clarinda,No. 1,Mark Creelman,David James,David James,2-8,2,8,0,1,Completed,true,false,false
+AP007121,01 Aug 26,12,Sandringham,Clarinda,No. 2,Craig Schwerdt,Tri Dinh,Tri Dinh,2-8,2,8,0,1,Completed,true,false,false
+AP007121,01 Aug 26,12,Sandringham,Clarinda,No. 3,Ben Dennett,Vincent Wen,Vincent Wen,2-8,2,8,0,1,Completed,true,false,false
+AP007121,01 Aug 26,12,Sandringham,Clarinda,No. 4,Scott Farndell,Roland Detterbeck,Roland Detterbeck,7-8,7,8,0,1,Completed,true,false,false
+AP007122,01 Aug 26,12,FCTC,Sth Hawthorn,No. 1,William Ong,Kanato Ishikawa,Kanato Ishikawa,6-8,6,8,0,1,Completed,true,false,false
+AP007122,01 Aug 26,12,FCTC,Sth Hawthorn,No. 2,Russell Human,Shun Mizuta,Russell Human,8-3,8,3,1,0,Completed,true,false,false
+AP007122,01 Aug 26,12,FCTC,Sth Hawthorn,No. 3,Daniel Black,Norikazu Ishigaki,Norikazu Ishigaki,6-8,6,8,0,1,Completed,true,false,false
+AP007122,01 Aug 26,12,FCTC,Sth Hawthorn,No. 4,James Cullen,Yuko Ema,Yuko Ema,6-8,6,8,0,1,Completed,true,false,false
+AP007123,01 Aug 26,12,Elwood,Chadstone,No. 1,Gareth Taylor,Hock Tan,Hock Tan,6-8,6,8,0,1,Completed,true,true,false
+AP007123,01 Aug 26,12,Elwood,Chadstone,No. 2,James Taylor,Fabio De Sordi,James Taylor,8-5,8,5,1,0,Completed,true,false,true
+AP007123,01 Aug 26,12,Elwood,Chadstone,No. 3,Kristian Kostov,James Taylor,Kristian Kostov,8-3,8,3,1,0,Completed,true,false,false
+AP007123,01 Aug 26,12,Elwood,Chadstone,No. 4,Todd Perkinson,Min Fu,Todd Perkinson,8-3,8,3,1,0,Completed,true,false,false
+AP007131,08 Aug 26,13,Clarinda,Chadstone,No. 1,David James,Hock Tan,David James,8-3,8,3,1,0,Completed,true,false,false
+AP007131,08 Aug 26,13,Clarinda,Chadstone,No. 2,Tri Dinh,James Taylor,James Taylor,3-8,3,8,0,1,Completed,true,false,false
+AP007131,08 Aug 26,13,Clarinda,Chadstone,No. 3,Kenny Poirier,Stephen Yip,Stephen Yip,5-8,5,8,0,1,Completed,true,false,false
+AP007131,08 Aug 26,13,Clarinda,Chadstone,No. 4,Vincent Wen,Min Fu,Min Fu,5-8,5,8,0,1,Completed,true,false,false
+AP007132,08 Aug 26,13,Sth Hawthorn,Elwood,No. 1,Kanato Ishikawa,Kristian Kostov,Kristian Kostov,6-8,6,8,0,1,Completed,true,false,false
+AP007132,08 Aug 26,13,Sth Hawthorn,Elwood,No. 2,Shun Mizuta,Todd Perkinson,Todd Perkinson,2-8,2,8,0,1,Completed,true,false,false
+AP007132,08 Aug 26,13,Sth Hawthorn,Elwood,No. 3,Yuko Ema,Richard Sharp,Richard Sharp,3-8,3,8,0,1,Completed,true,false,false
+AP007132,08 Aug 26,13,Sth Hawthorn,Elwood,No. 4,Chieko Yamamoto,John Bailey,Chieko Yamamoto,8-0,8,0,1,0,Completed,true,false,true
+AP007133,08 Aug 26,13,Sandringham,FCTC,No. 1,Owen Davies,William Ong,Owen Davies,8-1,8,1,1,0,Completed,true,false,false
+AP007133,08 Aug 26,13,Sandringham,FCTC,No. 2,Mark Creelman,Daniel Black,Daniel Black,5-8,5,8,0,1,Completed,true,false,false
+AP007133,08 Aug 26,13,Sandringham,FCTC,No. 3,Craig Schwerdt,James Cullen,Craig Schwerdt,8-6,8,6,1,0,Completed,true,false,false
+AP007133,08 Aug 26,13,Sandringham,FCTC,No. 4,Scott Farndell,Rob Barker,Scott Farndell,8-0,8,0,1,0,Completed,true,false,true
+AP007141,15 Aug 26,14,FCTC,Clarinda,No. 1,Tye Cheasley,David James,David James,6-8,6,8,0,1,Completed,true,false,false
+AP007141,15 Aug 26,14,FCTC,Clarinda,No. 2,Russell Human,Tri Dinh,Russell Human,8-7,8,7,1,0,Completed,true,false,false
+AP007141,15 Aug 26,14,FCTC,Clarinda,No. 3,Daniel Black,Vincent Wen,Daniel Black,8-2,8,2,1,0,Completed,true,false,false
+AP007141,15 Aug 26,14,FCTC,Clarinda,No. 4,James Cullen,Roland Detterbeck,James Cullen,8-5,8,5,1,0,Completed,true,false,false
+AP007142,15 Aug 26,14,Elwood,Sandringham,No. 1,Danny Lawrence,Jason Clarke,Danny Lawrence,8-5,8,5,1,0,Completed,true,false,false
+AP007142,15 Aug 26,14,Elwood,Sandringham,No. 2,James Taylor,Mark Creelman,James Taylor,8-2,8,2,1,0,Completed,true,false,false
+AP007142,15 Aug 26,14,Elwood,Sandringham,No. 3,Todd Perkinson,Paul Claxton,Todd Perkinson,8-2,8,2,1,0,Completed,true,false,false
+AP007142,15 Aug 26,14,Elwood,Sandringham,No. 4,Richard Sharp,Scott Farndell,Richard Sharp,8-2,8,2,1,0,Completed,true,false,false
+AP007143,15 Aug 26,14,Chadstone,Sth Hawthorn,No. 1,Hock Tan,Shinichiro Mizote,Shinichiro Mizote,4-8,4,8,0,1,Completed,true,false,true
+AP007143,15 Aug 26,14,Chadstone,Sth Hawthorn,No. 2,James Taylor,Shun Mizuta,Shun Mizuta,7-8,7,8,0,1,Completed,true,false,false
+AP007143,15 Aug 26,14,Chadstone,Sth Hawthorn,No. 3,Stephen Yip,Chieko Yamamoto,Chieko Yamamoto,6-8,6,8,0,1,Completed,true,false,false
+AP007143,15 Aug 26,14,Chadstone,Sth Hawthorn,No. 4,Jery Chen,Kasumi Mizote,Jery Chen,8-2,8,2,1,0,Completed,true,true,true
+AP007151,22 Aug 26,15,Clarinda,Sth Hawthorn,No. 1,David James,Kanato Ishikawa,David James,8-6,8,6,1,0,Completed,true,false,false
+AP007151,22 Aug 26,15,Clarinda,Sth Hawthorn,No. 2,Tri Dinh,Shun Mizuta,Tri Dinh,8-4,8,4,1,0,Completed,true,false,false
+AP007151,22 Aug 26,15,Clarinda,Sth Hawthorn,No. 3,Vincent Wen,Norikazu Ishigaki,Vincent Wen,8-5,8,5,1,0,Completed,true,false,false
+AP007151,22 Aug 26,15,Clarinda,Sth Hawthorn,No. 4,Roland Detterbeck,Yuko Ema,Roland Detterbeck,8-7,8,7,1,0,Completed,true,false,false
+AP007152,22 Aug 26,15,FCTC,Elwood,No. 1,William Ong,James Taylor,James Taylor,4-8,4,8,0,1,Completed,true,false,false
+AP007152,22 Aug 26,15,FCTC,Elwood,No. 2,Russell Human,Kristian Kostov,Kristian Kostov,0-8,0,8,0,1,Completed,true,false,false
+AP007152,22 Aug 26,15,FCTC,Elwood,No. 3,Daniel Black,John Bailey,Daniel Black,8-2,8,2,1,0,Completed,true,false,true
+AP007152,22 Aug 26,15,FCTC,Elwood,No. 4,James Cullen,Keith Herdman,James Cullen,8-2,8,2,1,0,Completed,true,false,true
+AP007153,22 Aug 26,15,Sandringham,Chadstone,No. 1,Jason Clarke,Hock Tan,Jason Clarke,8-5,8,5,1,0,Completed,true,false,false
+AP007153,22 Aug 26,15,Sandringham,Chadstone,No. 2,Mark Creelman,James Taylor,James Taylor,2-8,2,8,0,1,Completed,true,false,false
+AP007153,22 Aug 26,15,Sandringham,Chadstone,No. 3,Craig Schwerdt,Stephen Yip,Craig Schwerdt,8-6,8,6,1,0,Completed,true,false,false
+AP007153,22 Aug 26,15,Sandringham,Chadstone,No. 4,Scott Farndell,Jery Chen,Scott Farndell,8-2,8,2,1,0,Completed,true,false,true
+AP007321,,16,Elwood,Chadstone,No. 1,Danny Lawrence,Hock Tan,Danny Lawrence,8-7,8,7,1,0,Completed,true,false,false
+AP007321,,16,Elwood,Chadstone,No. 2,James Taylor,James Taylor,James Taylor,6-8,6,8,0,1,Completed,true,false,false
+AP007321,,16,Elwood,Chadstone,No. 3,Kristian Kostov,Stephen Yip,Kristian Kostov,8-0,8,0,1,0,Completed,true,false,false
+AP007321,,16,Elwood,Chadstone,No. 4,Todd Perkinson,Min Fu,Todd Perkinson,8-5,8,5,1,0,Completed,true,false,false

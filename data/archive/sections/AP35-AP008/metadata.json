@@ -1,0 +1,98 @@
+{
+  "asset_id": "AP35-AP008",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Winter 2017",
+  "season_id": "AP35",
+  "season_label": "Winter 2017",
+  "source_section_code": "AP008",
+  "section_label": "Singles/Doubles 1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Highmoor Uniting LA",
+      "wins": 11,
+      "points": 100.5,
+      "percentage": 189.12,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "St Pats Mentone",
+      "wins": 8,
+      "points": 82,
+      "percentage": 129.21,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Port Melbourne",
+      "wins": 6,
+      "points": 74.5,
+      "percentage": 118.74,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Lauriston",
+      "wins": 4,
+      "points": 56,
+      "percentage": 98.67,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Le Page",
+      "wins": 3,
+      "points": 55,
+      "percentage": 111.95,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Carmelite",
+      "wins": 4,
+      "points": 48,
+      "percentage": 84.6,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Clarinda",
+      "wins": 0,
+      "points": 4,
+      "percentage": 27.35,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP35-AP008",
+  "fixtures": 60,
+  "completed_fixtures": 41,
+  "draw_fixtures": 60,
+  "singles_rubbers": 163,
+  "doubles_rubbers": 80,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP008013 singles No. 1: '2-2'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP008013 singles No. 2: '4-4'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

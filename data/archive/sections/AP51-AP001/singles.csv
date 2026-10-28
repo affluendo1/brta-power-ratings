@@ -1,0 +1,207 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP001011,04 Oct 25,1,Hurlingham Park,Overport Park,No. 1,Hayato Sata,Lewis Miles,Hayato Sata,8-7,8,7,1,0,Completed,true,false,false
+AP001011,04 Oct 25,1,Hurlingham Park,Overport Park,No. 2,Michael Lancefield,William Blair,Michael Lancefield,8-5,8,5,1,0,Completed,true,false,true
+AP001011,04 Oct 25,1,Hurlingham Park,Overport Park,No. 3,Riley Walker,Grant Thompson,Riley Walker,8-3,8,3,1,0,Completed,true,false,false
+AP001011,04 Oct 25,1,Hurlingham Park,Overport Park,No. 4,Regan Morehu,Luke Treveil,Regan Morehu,8-2,8,2,1,0,Completed,true,false,false
+AP001012,04 Oct 25,1,Essendon,Dendy Park,No. 1,Max Hamilton,Geoffrey Herbet,Geoffrey Herbet,4-8,4,8,0,1,Completed,true,true,false
+AP001012,04 Oct 25,1,Essendon,Dendy Park,No. 2,Trent Caruana,Piet Van Der Lans,Trent Caruana,8-5,8,5,1,0,Completed,true,false,false
+AP001012,04 Oct 25,1,Essendon,Dendy Park,No. 3,Rhys Collins,Andrew Kotnik,Rhys Collins,8-6,8,6,1,0,Completed,true,false,true
+AP001012,04 Oct 25,1,Essendon,Dendy Park,No. 4,Jason McKee,Timothy O'Shannassy,Jason McKee,8-3,8,3,1,0,Completed,true,false,false
+AP001013,04 Oct 25,1,Carmelite,BLTC,No. 1,James Fry,Chris Alevizos,Chris Alevizos,6-8,6,8,0,1,Completed,true,false,false
+AP001013,04 Oct 25,1,Carmelite,BLTC,No. 2,Ashton Arms,Josh Dawson,Josh Dawson,1-8,1,8,0,1,Completed,true,false,false
+AP001013,04 Oct 25,1,Carmelite,BLTC,No. 3,Simon Young,Brady Watts,Brady Watts,0-8,0,8,0,1,Completed,true,true,false
+AP001013,04 Oct 25,1,Carmelite,BLTC,No. 4,Travis Kinsman,Macgregor Anderson,Macgregor Anderson,2-8,2,8,0,1,Completed,true,false,true
+AP001014,04 Oct 25,1,Altona,Mt Eliza,No. 1,Aleks Jankovic,Jack Shurdington,Jack Shurdington,4-8,4,8,0,1,Completed,true,false,false
+AP001014,04 Oct 25,1,Altona,Mt Eliza,No. 2,Ben Britton,Sean Reekie,Ben Britton,8-2,8,2,1,0,Completed,true,true,false
+AP001014,04 Oct 25,1,Altona,Mt Eliza,No. 3,Takumi Katsumata,John McDonald,John McDonald,2-8,2,8,0,1,Completed,true,true,false
+AP001014,04 Oct 25,1,Altona,Mt Eliza,No. 4,Jesse Hart,Jarrod Pepper,Jarrod Pepper,3-8,3,8,0,1,Completed,true,true,false
+AP001021,11 Oct 25,2,Mt Eliza,Hurlingham Park,No. 1,Sam Young-Mathers,Kynan Enwright,Sam Young-Mathers,8-4,8,4,1,0,Completed,true,false,false
+AP001021,11 Oct 25,2,Mt Eliza,Hurlingham Park,No. 2,Evan Atkinson,Hayato Sata,Hayato Sata,2-8,2,8,0,1,Completed,true,false,false
+AP001021,11 Oct 25,2,Mt Eliza,Hurlingham Park,No. 3,John McDonald,Riley Walker,Riley Walker,7-8,7,8,0,1,Completed,true,false,false
+AP001021,11 Oct 25,2,Mt Eliza,Hurlingham Park,No. 4,Alex McDonald,Regan Morehu,Regan Morehu,7-8,7,8,0,1,Completed,true,false,false
+AP001022,11 Oct 25,2,Overport Park,Essendon,No. 1,Michael Turlejski,Zach Ranson,Michael Turlejski,8-4,8,4,1,0,Completed,true,false,false
+AP001022,11 Oct 25,2,Overport Park,Essendon,No. 2,Nick Wilson,Sebastian Scott,Sebastian Scott,4-8,4,8,0,1,Completed,true,false,false
+AP001022,11 Oct 25,2,Overport Park,Essendon,No. 3,Grant Thompson,Hiro Agata,Hiro Agata,4-8,4,8,0,1,Completed,true,false,true
+AP001022,11 Oct 25,2,Overport Park,Essendon,No. 4,Luke Treveil,Rhys Collins,Luke Treveil,8-6,8,6,1,0,Completed,true,false,false
+AP001023,11 Oct 25,2,Dendy Park,Carmelite,No. 1,Geoffrey Herbet,Ashton Arms,Ashton Arms,7-8,7,8,0,1,Completed,true,false,false
+AP001023,11 Oct 25,2,Dendy Park,Carmelite,No. 2,Piet Van Der Lans,Simon Arms,,7-7,7,7,0,0,Unfinished,false,false,false
+AP001023,11 Oct 25,2,Dendy Park,Carmelite,No. 3,Harshavardhan Dinakaran,Luke Kinsman,Harshavardhan Dinakaran,8-5,8,5,1,0,Completed,true,false,false
+AP001023,11 Oct 25,2,Dendy Park,Carmelite,No. 4,Timothy O'Shannassy,Zac Ulas,Zac Ulas,4-8,4,8,0,1,Completed,true,false,true
+AP001024,11 Oct 25,2,BLTC,Altona,No. 1,Jack Broadbent,Ren Asai,Jack Broadbent,8-6,8,6,1,0,Completed,true,false,false
+AP001024,11 Oct 25,2,BLTC,Altona,No. 2,Mudiwa Munyimani,Aleks Jankovic,Aleks Jankovic,5-8,5,8,0,1,Completed,true,false,false
+AP001024,11 Oct 25,2,BLTC,Altona,No. 3,Brady Watts,Alex Milanese,Brady Watts,8-4,8,4,1,0,Completed,true,false,false
+AP001024,11 Oct 25,2,BLTC,Altona,No. 4,Macgregor Anderson,Takumi Katsumata,Macgregor Anderson,8-0,8,0,1,0,Completed,true,true,true
+AP001031,18 Oct 25,3,Hurlingham Park,BLTC,No. 1,Kynan Enwright,Jack Broadbent,Kynan Enwright,8-3,8,3,1,0,Completed,true,false,false
+AP001031,18 Oct 25,3,Hurlingham Park,BLTC,No. 2,Hayato Sata,Chris Alevizos,Hayato Sata,8-2,8,2,1,0,Completed,true,false,false
+AP001031,18 Oct 25,3,Hurlingham Park,BLTC,No. 3,Joel Thomas,Mudiwa Munyimani,Mudiwa Munyimani,4-8,4,8,0,1,Completed,true,false,false
+AP001031,18 Oct 25,3,Hurlingham Park,BLTC,No. 4,Frankie Hillier,Josh Dawson,Josh Dawson,7-8,7,8,0,1,Completed,true,false,false
+AP001032,18 Oct 25,3,Essendon,Mt Eliza,No. 1,Zach Ranson,Evan Atkinson,Zach Ranson,8-6,8,6,1,0,Completed,true,false,false
+AP001032,18 Oct 25,3,Essendon,Mt Eliza,No. 2,Hiro Agata,Sean Reekie,Hiro Agata,8-0,8,0,1,0,Completed,true,true,false
+AP001032,18 Oct 25,3,Essendon,Mt Eliza,No. 3,Riley Fegan,Henry Dennison,Henry Dennison,6-8,6,8,0,1,Completed,true,false,true
+AP001032,18 Oct 25,3,Essendon,Mt Eliza,No. 4,Jason McKee,Walker Majera,Jason McKee,8-4,8,4,1,0,Completed,true,false,true
+AP001033,18 Oct 25,3,Carmelite,Overport Park,No. 1,Ashton Arms,Seb Tring,Ashton Arms,8-7,8,7,1,0,Completed,true,false,false
+AP001033,18 Oct 25,3,Carmelite,Overport Park,No. 2,Simon Arms,Nick Wilson,Nick Wilson,6-8,6,8,0,1,Completed,true,false,false
+AP001033,18 Oct 25,3,Carmelite,Overport Park,No. 3,Luke Kinsman,Grant Thompson,Grant Thompson,4-8,4,8,0,1,Completed,true,false,false
+AP001033,18 Oct 25,3,Carmelite,Overport Park,No. 4,Travis Kinsman,Luke Treveil,Luke Treveil,5-8,5,8,0,1,Completed,true,false,false
+AP001034,18 Oct 25,3,Altona,Dendy Park,No. 1,Ren Asai,Geoffrey Herbet,Geoffrey Herbet,3-8,3,8,0,1,Completed,true,false,false
+AP001034,18 Oct 25,3,Altona,Dendy Park,No. 2,Aleks Jankovic,Piet Van Der Lans,Aleks Jankovic,8-2,8,2,1,0,Completed,true,false,false
+AP001034,18 Oct 25,3,Altona,Dendy Park,No. 3,Alex Milanese,Andrew Kotnik,Alex Milanese,8-6,8,6,1,0,Completed,true,false,true
+AP001034,18 Oct 25,3,Altona,Dendy Park,No. 4,Richard Dodson,Timothy O'Shannassy,Richard Dodson,8-2,8,2,1,0,Completed,true,false,false
+AP001041,25 Oct 25,4,Dendy Park,Hurlingham Park,No. 1,Geoffrey Herbet,Kynan Enwright,Kynan Enwright,4-8,4,8,0,1,Completed,true,false,false
+AP001041,25 Oct 25,4,Dendy Park,Hurlingham Park,No. 2,Arya Nayak,Riley Walker,Riley Walker,2-8,2,8,0,1,Completed,true,false,false
+AP001041,25 Oct 25,4,Dendy Park,Hurlingham Park,No. 3,Andrew Kotnik,Regan Morehu,Regan Morehu,0-8,0,8,0,1,Completed,true,true,false
+AP001041,25 Oct 25,4,Dendy Park,Hurlingham Park,No. 4,Timothy O'Shannassy,Tony Schiavello,Tony Schiavello,1-8,1,8,0,1,Completed,true,false,true
+AP001042,25 Oct 25,4,BLTC,Essendon,No. 1,Jack Broadbent,Sebastian Scott,Jack Broadbent,8-3,8,3,1,0,Completed,true,false,false
+AP001042,25 Oct 25,4,BLTC,Essendon,No. 2,Chris Alevizos,Trent Caruana,Chris Alevizos,8-4,8,4,1,0,Completed,true,false,false
+AP001042,25 Oct 25,4,BLTC,Essendon,No. 3,Brady Watts,John Traficante,Brady Watts,8-5,8,5,1,0,Completed,true,false,true
+AP001042,25 Oct 25,4,BLTC,Essendon,No. 4,Macgregor Anderson,Riley Fegan,Riley Fegan,7-8,7,8,0,1,Completed,true,true,false
+AP001043,25 Oct 25,4,Mt Eliza,Carmelite,No. 1,Sam Young-Mathers,Ashton Arms,Sam Young-Mathers,8-3,8,3,1,0,Completed,true,false,false
+AP001043,25 Oct 25,4,Mt Eliza,Carmelite,No. 2,Sean Reekie,Simon Arms,Simon Arms,5-8,5,8,0,1,Completed,true,false,false
+AP001043,25 Oct 25,4,Mt Eliza,Carmelite,No. 3,Evan Atkinson,Luke Kinsman,Evan Atkinson,8-0,8,0,1,0,Completed,true,false,false
+AP001043,25 Oct 25,4,Mt Eliza,Carmelite,No. 4,John McDonald,Travis Kinsman,John McDonald,8-1,8,1,1,0,Completed,true,false,false
+AP001044,25 Oct 25,4,Overport Park,Altona,No. 1,Michael Turlejski,Ren Asai,Ren Asai,4-8,4,8,0,1,Completed,true,false,false
+AP001044,25 Oct 25,4,Overport Park,Altona,No. 2,Andrew Scott,Juan Lovado,Andrew Scott,8-0,8,0,1,0,Completed,true,false,false
+AP001044,25 Oct 25,4,Overport Park,Altona,No. 3,Nick Wilson,Aleks Jankovic,Nick Wilson,8-3,8,3,1,0,Completed,true,false,false
+AP001044,25 Oct 25,4,Overport Park,Altona,No. 4,Luke Treveil,Alex Milanese,Alex Milanese,6-8,6,8,0,1,Completed,true,false,false
+AP001061,15 Nov 25,6,Essendon,Carmelite,No. 1,Sebastian Scott,Ashton Arms,Ashton Arms,5-8,5,8,0,1,Completed,true,false,false
+AP001061,15 Nov 25,6,Essendon,Carmelite,No. 2,Riley Fegan,Simon Arms,Riley Fegan,8-5,8,5,1,0,Completed,true,false,false
+AP001061,15 Nov 25,6,Essendon,Carmelite,No. 3,Matthew Conroy,Leon Suljovic,Leon Suljovic,3-8,3,8,0,1,Completed,true,false,false
+AP001061,15 Nov 25,6,Essendon,Carmelite,No. 4,Ben Dorrington,Travis Kinsman,Ben Dorrington,8-7,8,7,1,0,Completed,true,true,false
+AP001062,15 Nov 25,6,Altona,Hurlingham Park,No. 1,Ren Asai,Kynan Enwright,Kynan Enwright,1-8,1,8,0,1,Completed,true,false,false
+AP001062,15 Nov 25,6,Altona,Hurlingham Park,No. 2,Marcus Newnham,Hayato Sata,Hayato Sata,4-8,4,8,0,1,Completed,true,false,false
+AP001062,15 Nov 25,6,Altona,Hurlingham Park,No. 3,Alex Milanese,Regan Morehu,Regan Morehu,4-8,4,8,0,1,Completed,true,false,false
+AP001062,15 Nov 25,6,Altona,Hurlingham Park,No. 4,Richard Dodson,Joel Thomas,Joel Thomas,6-8,6,8,0,1,Completed,true,false,false
+AP001063,15 Nov 25,6,BLTC,Dendy Park,No. 1,Mudiwa Munyimani,Max Phillips,Max Phillips,6-8,6,8,0,1,Completed,true,false,true
+AP001063,15 Nov 25,6,BLTC,Dendy Park,No. 2,Connor Hipwell,Piet Van Der Lans,Piet Van Der Lans,5-8,5,8,0,1,Completed,true,true,false
+AP001063,15 Nov 25,6,BLTC,Dendy Park,No. 3,Macgregor Anderson,Arya Nayak,Macgregor Anderson,8-4,8,4,1,0,Completed,true,true,false
+AP001063,15 Nov 25,6,BLTC,Dendy Park,No. 4,Jaiden Watts,Aris Androutsopoulos,Jaiden Watts,8-1,8,1,1,0,Completed,true,true,true
+AP001064,15 Nov 25,6,Overport Park,Mt Eliza,No. 1,Seb Tring,Evan Atkinson,Seb Tring,8-4,8,4,1,0,Completed,true,false,false
+AP001064,15 Nov 25,6,Overport Park,Mt Eliza,No. 2,Nick Wilson,John McDonald,John McDonald,2-8,2,8,0,1,Completed,true,false,false
+AP001064,15 Nov 25,6,Overport Park,Mt Eliza,No. 3,Luke Treveil,Jarrod Pepper,Luke Treveil,8-3,8,3,1,0,Completed,true,false,false
+AP001064,15 Nov 25,6,Overport Park,Mt Eliza,No. 4,Adam Wade,Alex McDonald,Alex McDonald,2-8,2,8,0,1,Completed,true,true,false
+AP001071,22 Nov 25,7,Hurlingham Park,Carmelite,No. 1,Kynan Enwright,James Fry,Kynan Enwright,8-5,8,5,1,0,Completed,true,false,false
+AP001071,22 Nov 25,7,Hurlingham Park,Carmelite,No. 2,Riley Walker,Ashton Arms,Riley Walker,8-3,8,3,1,0,Completed,true,false,false
+AP001071,22 Nov 25,7,Hurlingham Park,Carmelite,No. 3,Regan Morehu,Zacharie El Ayat,Regan Morehu,8-0,8,0,1,0,Completed,true,false,true
+AP001071,22 Nov 25,7,Hurlingham Park,Carmelite,No. 4,Alan Liebowitz,Jasiel Jeevan,Jasiel Jeevan,5-8,5,8,0,1,Completed,true,true,true
+AP001072,22 Nov 25,7,Essendon,Altona,No. 1,Sebastian Scott,Ren Asai,Ren Asai,5-8,5,8,0,1,Completed,true,false,false
+AP001072,22 Nov 25,7,Essendon,Altona,No. 2,Matthew Conroy,Marcus Newnham,Marcus Newnham,1-8,1,8,0,1,Completed,true,false,false
+AP001072,22 Nov 25,7,Essendon,Altona,No. 3,Matt Absolom,Aleks Jankovic,Aleks Jankovic,1-8,1,8,0,1,Completed,true,true,false
+AP001072,22 Nov 25,7,Essendon,Altona,No. 4,James Morrow,Aditya Saini,Aditya Saini,3-8,3,8,0,1,Completed,true,true,true
+AP001073,22 Nov 25,7,Mt Eliza,Dendy Park,No. 1,Sean Reekie,Geoffrey Herbet,Sean Reekie,8-5,8,5,1,0,Completed,true,false,false
+AP001073,22 Nov 25,7,Mt Eliza,Dendy Park,No. 2,Evan Atkinson,Arya Nayak,Evan Atkinson,8-3,8,3,1,0,Completed,true,false,false
+AP001073,22 Nov 25,7,Mt Eliza,Dendy Park,No. 3,John McDonald,Areev Nayak,John McDonald,8-1,8,1,1,0,Completed,true,false,false
+AP001073,22 Nov 25,7,Mt Eliza,Dendy Park,No. 4,Alex McDonald,Timothy O'Shannassy,Alex McDonald,8-0,8,0,1,0,Completed,true,false,false
+AP001074,22 Nov 25,7,BLTC,Overport Park,No. 1,Jack Broadbent,Michael Turlejski,Jack Broadbent,8-3,8,3,1,0,Completed,true,false,false
+AP001074,22 Nov 25,7,BLTC,Overport Park,No. 2,Mudiwa Munyimani,Andrew Scott,Andrew Scott,2-8,2,8,0,1,Completed,true,false,false
+AP001074,22 Nov 25,7,BLTC,Overport Park,No. 3,Brady Watts,Nick Wilson,Brady Watts,8-7,8,7,1,0,Completed,true,false,false
+AP001074,22 Nov 25,7,BLTC,Overport Park,No. 4,Macgregor Anderson,Luke Treveil,Macgregor Anderson,8-2,8,2,1,0,Completed,true,true,false
+AP001081,29 Nov 25,8,Overport Park,Hurlingham Park,No. 1,Lewis Miles,Kynan Enwright,Lewis Miles,8-6,8,6,1,0,Completed,true,false,false
+AP001081,29 Nov 25,8,Overport Park,Hurlingham Park,No. 2,Frans Verheij,Riley Walker,Riley Walker,1-8,1,8,0,1,Completed,true,true,false
+AP001081,29 Nov 25,8,Overport Park,Hurlingham Park,No. 3,Andrew Scott,Regan Morehu,Andrew Scott,8-2,8,2,1,0,Completed,true,false,false
+AP001081,29 Nov 25,8,Overport Park,Hurlingham Park,No. 4,Grant Thompson,Joel Thomas,Grant Thompson,8-5,8,5,1,0,Completed,true,false,false
+AP001082,29 Nov 25,8,Dendy Park,Essendon,No. 1,Geoffrey Herbet,Sebastian Scott,Geoffrey Herbet,8-0,8,0,1,0,Completed,true,false,false
+AP001082,29 Nov 25,8,Dendy Park,Essendon,No. 2,Piet Van Der Lans,Nicholas Mitsinikos,Nicholas Mitsinikos,3-8,3,8,0,1,Completed,true,false,false
+AP001082,29 Nov 25,8,Dendy Park,Essendon,No. 3,Arya Nayak,Trent Caruana,Arya Nayak,8-4,8,4,1,0,Completed,true,false,false
+AP001082,29 Nov 25,8,Dendy Park,Essendon,No. 4,Areev Nayak,Matthew Conroy,Matthew Conroy,4-8,4,8,0,1,Completed,true,false,false
+AP001083,29 Nov 25,8,BLTC,Carmelite,No. 1,Jack Broadbent,Ashton Arms,Jack Broadbent,8-6,8,6,1,0,Completed,true,false,false
+AP001083,29 Nov 25,8,BLTC,Carmelite,No. 2,Mudiwa Munyimani,Simon Arms,Simon Arms,4-8,4,8,0,1,Completed,true,false,false
+AP001083,29 Nov 25,8,BLTC,Carmelite,No. 3,Josh Dawson,Leon Suljovic,Josh Dawson,8-3,8,3,1,0,Completed,true,false,false
+AP001083,29 Nov 25,8,BLTC,Carmelite,No. 4,Jaiden Watts,Travis Kinsman,Jaiden Watts,8-0,8,0,1,0,Completed,true,true,false
+AP001091,06 Dec 25,9,Hurlingham Park,Mt Eliza,No. 1,Kynan Enwright,Jack Shurdington,Kynan Enwright,8-3,8,3,1,0,Completed,true,false,false
+AP001091,06 Dec 25,9,Hurlingham Park,Mt Eliza,No. 2,Riley Walker,Evan Atkinson,Riley Walker,8-7,8,7,1,0,Completed,true,false,false
+AP001091,06 Dec 25,9,Hurlingham Park,Mt Eliza,No. 3,Joel Thomas,John McDonald,John McDonald,6-8,6,8,0,1,Completed,true,false,false
+AP001091,06 Dec 25,9,Hurlingham Park,Mt Eliza,No. 4,Frankie Hillier,Alex McDonald,Alex McDonald,3-8,3,8,0,1,Completed,true,false,false
+AP001094,06 Dec 25,9,Altona,BLTC,No. 1,Aleks Jankovic,Chris Alevizos,Aleks Jankovic,8-2,8,2,1,0,Completed,true,false,false
+AP001094,06 Dec 25,9,Altona,BLTC,No. 2,Alex Milanese,Josh Dawson,Josh Dawson,3-8,3,8,0,1,Completed,true,false,false
+AP001094,06 Dec 25,9,Altona,BLTC,No. 3,Richard Dodson,Brady Watts,Brady Watts,0-8,0,8,0,1,Completed,true,false,false
+AP001094,06 Dec 25,9,Altona,BLTC,No. 4,Jun Osumi,Macgregor Anderson,Macgregor Anderson,3-8,3,8,0,1,Completed,true,true,true
+AP001101,13 Dec 25,10,BLTC,Hurlingham Park,No. 1,Jack Broadbent,Riley Walker,Riley Walker,5-8,5,8,0,1,Completed,true,false,false
+AP001101,13 Dec 25,10,BLTC,Hurlingham Park,No. 2,Mudiwa Munyimani,Regan Morehu,Regan Morehu,3-8,3,8,0,1,Completed,true,false,false
+AP001101,13 Dec 25,10,BLTC,Hurlingham Park,No. 3,Josh Dawson,Joel Thomas,Josh Dawson,8-6,8,6,1,0,Completed,true,false,false
+AP001101,13 Dec 25,10,BLTC,Hurlingham Park,No. 4,Brady Watts,Frankie Hillier,Brady Watts,8-6,8,6,1,0,Completed,true,false,false
+AP001102,13 Dec 25,10,Mt Eliza,Essendon,No. 1,Sean Reekie,Hiro Agata,Sean Reekie,8-6,8,6,1,0,Completed,true,false,true
+AP001102,13 Dec 25,10,Mt Eliza,Essendon,No. 2,Evan Atkinson,Riley Fegan,Evan Atkinson,8-3,8,3,1,0,Completed,true,false,false
+AP001102,13 Dec 25,10,Mt Eliza,Essendon,No. 3,Jarrod Pepper,Matthew Conroy,Matthew Conroy,6-8,6,8,0,1,Completed,true,false,false
+AP001102,13 Dec 25,10,Mt Eliza,Essendon,No. 4,Walker Majera,Rhys Collins,Rhys Collins,7-8,7,8,0,1,Completed,true,true,false
+AP001103,13 Dec 25,10,Overport Park,Carmelite,No. 1,Seb Tring,Ashton Arms,Seb Tring,8-7,8,7,1,0,Completed,true,false,false
+AP001103,13 Dec 25,10,Overport Park,Carmelite,No. 2,Nick Wilson,Luke Kinsman,Nick Wilson,8-3,8,3,1,0,Completed,true,false,false
+AP001103,13 Dec 25,10,Overport Park,Carmelite,No. 3,Grant Thompson,[Unnamed emergency — TROLS AP001103 away code 3],Grant Thompson,8-0,8,0,1,0,Completed,false,false,true
+AP001103,13 Dec 25,10,Overport Park,Carmelite,No. 4,Luke Treveil,Ralf Tobey Cruz,Luke Treveil,8-4,8,4,1,0,Completed,true,false,true
+AP001104,13 Dec 25,10,Dendy Park,Altona,No. 1,Geoffrey Herbet,Aleks Jankovic,Aleks Jankovic,7-8,7,8,0,1,Completed,true,false,false
+AP001104,13 Dec 25,10,Dendy Park,Altona,No. 2,Arya Nayak,Alex Milanese,Arya Nayak,8-6,8,6,1,0,Completed,true,false,false
+AP001104,13 Dec 25,10,Dendy Park,Altona,No. 3,Areev Nayak,Richard Dodson,Richard Dodson,3-8,3,8,0,1,Completed,true,false,false
+AP001104,13 Dec 25,10,Dendy Park,Altona,No. 4,[Unnamed emergency — TROLS AP001104 home code 4],Mark Separovic,Mark Separovic,0-8,0,8,0,1,Completed,false,true,false
+AP001111,07 Feb 26,11,Hurlingham Park,Dendy Park,No. 1,Riley Walker,Max Phillips,Riley Walker,8-0,8,0,1,0,Completed,true,false,true
+AP001111,07 Feb 26,11,Hurlingham Park,Dendy Park,No. 2,Regan Morehu,Arya Nayak,Regan Morehu,8-6,8,6,1,0,Completed,true,false,false
+AP001111,07 Feb 26,11,Hurlingham Park,Dendy Park,No. 3,Joel Thomas,Areev Nayak,Areev Nayak,4-8,4,8,0,1,Completed,true,false,false
+AP001111,07 Feb 26,11,Hurlingham Park,Dendy Park,No. 4,Alexander Hatziladas,Timothy O'Shannassy,Alexander Hatziladas,8-0,8,0,1,0,Completed,true,true,false
+AP001112,07 Feb 26,11,Essendon,BLTC,No. 1,Sebastian Scott,Jack Broadbent,Jack Broadbent,7-8,7,8,0,1,Completed,true,false,false
+AP001112,07 Feb 26,11,Essendon,BLTC,No. 2,Trent Caruana,Chris Alevizos,Chris Alevizos,7-8,7,8,0,1,Completed,true,false,false
+AP001112,07 Feb 26,11,Essendon,BLTC,No. 3,Riley Fegan,Jarrod Broadbent,Jarrod Broadbent,3-8,3,8,0,1,Completed,true,false,false
+AP001112,07 Feb 26,11,Essendon,BLTC,No. 4,Matthew Conroy,Josh Dawson,Josh Dawson,1-8,1,8,0,1,Completed,true,false,false
+AP001113,07 Feb 26,11,Carmelite,Mt Eliza,No. 1,Ashton Arms,Alex McDonald,Alex McDonald,6-8,6,8,0,1,Completed,true,false,false
+AP001113,07 Feb 26,11,Carmelite,Mt Eliza,No. 2,Simon Arms,Evan Atkinson,Evan Atkinson,0-8,0,8,0,1,Completed,true,false,false
+AP001113,07 Feb 26,11,Carmelite,Mt Eliza,No. 3,Leon Suljovic,John McDonald,Leon Suljovic,8-5,8,5,1,0,Completed,true,false,false
+AP001113,07 Feb 26,11,Carmelite,Mt Eliza,No. 4,Travis Kinsman,Sean Reekie,Sean Reekie,7-8,7,8,0,1,Completed,true,false,false
+AP001114,07 Feb 26,11,Altona,Overport Park,No. 1,Ren Asai,Lewis Miles,Lewis Miles,2-8,2,8,0,1,Completed,true,false,false
+AP001114,07 Feb 26,11,Altona,Overport Park,No. 2,Aleks Jankovic,Andrew Scott,Aleks Jankovic,8-2,8,2,1,0,Completed,true,false,false
+AP001114,07 Feb 26,11,Altona,Overport Park,No. 3,Alex Milanese,Grant Thompson,Alex Milanese,8-3,8,3,1,0,Completed,true,false,false
+AP001114,07 Feb 26,11,Altona,Overport Park,No. 4,Richard Dodson,Luke Treveil,Richard Dodson,8-7,8,7,1,0,Completed,true,false,false
+AP001121,14 Feb 26,12,Altona,Carmelite,No. 1,Ren Asai,Ashton Arms,Ren Asai,8-4,8,4,1,0,Completed,true,false,false
+AP001121,14 Feb 26,12,Altona,Carmelite,No. 2,Marcus Newnham,Leon Suljovic,Leon Suljovic,7-8,7,8,0,1,Completed,true,false,false
+AP001121,14 Feb 26,12,Altona,Carmelite,No. 3,Richard Dodson,Ralf Tobey Cruz,Ralf Tobey Cruz,4-8,4,8,0,1,Completed,true,false,true
+AP001121,14 Feb 26,12,Altona,Carmelite,No. 4,Takumi Katsumata,Petar Magic,Petar Magic,3-8,3,8,0,1,Completed,true,true,true
+AP001122,14 Feb 26,12,BLTC,Mt Eliza,No. 1,Jack Broadbent,Alex McDonald,Jack Broadbent,8-7,8,7,1,0,Completed,true,false,false
+AP001122,14 Feb 26,12,BLTC,Mt Eliza,No. 2,Jarrod Broadbent,Jack Shurdington,Jarrod Broadbent,8-4,8,4,1,0,Completed,true,false,false
+AP001122,14 Feb 26,12,BLTC,Mt Eliza,No. 3,Brady Watts,Evan Atkinson,Evan Atkinson,3-8,3,8,0,1,Completed,true,false,false
+AP001122,14 Feb 26,12,BLTC,Mt Eliza,No. 4,Macgregor Anderson,Nick Geslicki,Macgregor Anderson,8-5,8,5,1,0,Completed,true,true,true
+AP001123,14 Feb 26,12,Overport Park,Dendy Park,No. 1,Seb Tring,Geoffrey Herbet,Seb Tring,8-6,8,6,1,0,Completed,true,false,false
+AP001123,14 Feb 26,12,Overport Park,Dendy Park,No. 2,Nick Wilson,Piet Van Der Lans,Piet Van Der Lans,6-8,6,8,0,1,Completed,true,false,false
+AP001123,14 Feb 26,12,Overport Park,Dendy Park,No. 3,Grant Thompson,Timothy O'Shannassy,Grant Thompson,8-1,8,1,1,0,Completed,true,false,false
+AP001123,14 Feb 26,12,Overport Park,Dendy Park,No. 4,Luke Treveil,Daniel Virgona,Luke Treveil,8-0,8,0,1,0,Completed,true,false,true
+AP001124,14 Feb 26,12,Essendon,Hurlingham Park,No. 1,Sebastian Scott,Riley Walker,Riley Walker,3-8,3,8,0,1,Completed,true,false,false
+AP001124,14 Feb 26,12,Essendon,Hurlingham Park,No. 2,Trent Caruana,Regan Morehu,Regan Morehu,5-8,5,8,0,1,Completed,true,false,false
+AP001124,14 Feb 26,12,Essendon,Hurlingham Park,No. 3,Matthew Conroy,Joel Thomas,Joel Thomas,1-8,1,8,0,1,Completed,true,false,false
+AP001124,14 Feb 26,12,Essendon,Hurlingham Park,No. 4,Rhys Collins,Hugh Blacket,Rhys Collins,8-1,8,1,1,0,Completed,true,false,true
+AP001131,21 Feb 26,13,Carmelite,Essendon,No. 1,Ashton Arms,Sebastian Scott,Ashton Arms,8-2,8,2,1,0,Completed,true,false,false
+AP001131,21 Feb 26,13,Carmelite,Essendon,No. 2,Leon Suljovic,Rhys Collins,Leon Suljovic,8-1,8,1,1,0,Completed,true,false,false
+AP001132,21 Feb 26,13,Hurlingham Park,Altona,No. 1,Riley Walker,Shugo Ishigaki,Shugo Ishigaki,3-8,3,8,0,1,Completed,true,false,true
+AP001132,21 Feb 26,13,Hurlingham Park,Altona,No. 2,Regan Morehu,Ren Asai,Ren Asai,3-8,3,8,0,1,Completed,true,false,false
+AP001132,21 Feb 26,13,Hurlingham Park,Altona,No. 3,Joel Thomas,Aleks Jankovic,Aleks Jankovic,5-8,5,8,0,1,Completed,true,false,false
+AP001132,21 Feb 26,13,Hurlingham Park,Altona,No. 4,Alexander Hatziladas,Alex Milanese,Alex Milanese,4-8,4,8,0,1,Completed,true,true,false
+AP001133,21 Feb 26,13,Dendy Park,BLTC,No. 1,Michael Kos,Jack Broadbent,Michael Kos,8-6,8,6,1,0,Completed,true,true,false
+AP001133,21 Feb 26,13,Dendy Park,BLTC,No. 2,Geoffrey Herbet,Josh Dawson,Josh Dawson,4-8,4,8,0,1,Completed,true,false,false
+AP001133,21 Feb 26,13,Dendy Park,BLTC,No. 3,Arya Nayak,Brady Watts,Brady Watts,7-8,7,8,0,1,Completed,true,false,false
+AP001133,21 Feb 26,13,Dendy Park,BLTC,No. 4,Timothy O'Shannassy,Macgregor Anderson,Macgregor Anderson,0-8,0,8,0,1,Completed,true,false,true
+AP001134,21 Feb 26,13,Mt Eliza,Overport Park,No. 1,Sam Young-Mathers,Lewis Miles,Sam Young-Mathers,8-5,8,5,1,0,Completed,true,false,false
+AP001134,21 Feb 26,13,Mt Eliza,Overport Park,No. 2,Alex McDonald,Michael Turlejski,Michael Turlejski,7-8,7,8,0,1,Completed,true,false,false
+AP001134,21 Feb 26,13,Mt Eliza,Overport Park,No. 3,Jack Shurdington,Seb Tring,Seb Tring,7-8,7,8,0,1,Completed,true,false,false
+AP001134,21 Feb 26,13,Mt Eliza,Overport Park,No. 4,Evan Atkinson,Grant Thompson,Evan Atkinson,8-6,8,6,1,0,Completed,true,false,false
+AP001141,28 Feb 26,14,Carmelite,Hurlingham Park,No. 1,Ashton Arms,Kynan Enwright,Kynan Enwright,2-8,2,8,0,1,Completed,true,false,false
+AP001141,28 Feb 26,14,Carmelite,Hurlingham Park,No. 2,Simon Arms,Riley Walker,Riley Walker,3-8,3,8,0,1,Completed,true,false,false
+AP001141,28 Feb 26,14,Carmelite,Hurlingham Park,No. 3,Leon Suljovic,Joel Thomas,Leon Suljovic,8-7,8,7,1,0,Completed,true,false,false
+AP001141,28 Feb 26,14,Carmelite,Hurlingham Park,No. 4,Ralf Tobey Cruz,Alexander Hatziladas,Alexander Hatziladas,4-8,4,8,0,1,Completed,true,true,true
+AP001142,28 Feb 26,14,Altona,Essendon,No. 1,Ren Asai,Sebastian Scott,Ren Asai,8-1,8,1,1,0,Completed,true,false,false
+AP001142,28 Feb 26,14,Altona,Essendon,No. 2,Marcus Newnham,Trent Caruana,Marcus Newnham,8-6,8,6,1,0,Completed,true,false,false
+AP001142,28 Feb 26,14,Altona,Essendon,No. 3,Aleks Jankovic,Riley Fegan,Aleks Jankovic,8-3,8,3,1,0,Completed,true,false,false
+AP001142,28 Feb 26,14,Altona,Essendon,No. 4,Alex Milanese,Rhys Collins,Alex Milanese,8-1,8,1,1,0,Completed,true,false,false
+AP001143,28 Feb 26,14,Dendy Park,Mt Eliza,No. 1,Geoffrey Herbet,Alex McDonald,Geoffrey Herbet,8-3,8,3,1,0,Completed,true,false,false
+AP001143,28 Feb 26,14,Dendy Park,Mt Eliza,No. 2,Piet Van Der Lans,Jack Shurdington,Piet Van Der Lans,8-6,8,6,1,0,Completed,true,false,false
+AP001143,28 Feb 26,14,Dendy Park,Mt Eliza,No. 3,Arya Nayak,Evan Atkinson,Evan Atkinson,6-8,6,8,0,1,Completed,true,false,false
+AP001143,28 Feb 26,14,Dendy Park,Mt Eliza,No. 4,Areev Nayak,John McDonald,John McDonald,2-8,2,8,0,1,Completed,true,false,false
+AP001144,28 Feb 26,14,Overport Park,BLTC,No. 1,Lewis Miles,Jack Broadbent,Lewis Miles,8-1,8,1,1,0,Completed,true,false,false
+AP001144,28 Feb 26,14,Overport Park,BLTC,No. 2,Michael Turlejski,Chris Alevizos,Michael Turlejski,8-2,8,2,1,0,Completed,true,false,false
+AP001144,28 Feb 26,14,Overport Park,BLTC,No. 3,Nick Wilson,Jarrod Broadbent,Jarrod Broadbent,1-8,1,8,0,1,Completed,true,false,false
+AP001144,28 Feb 26,14,Overport Park,BLTC,No. 4,Luke Treveil,Brady Watts,Brady Watts,3-8,3,8,0,1,Completed,true,false,false
+AP001301,,16,BLTC,Mt Eliza,No. 1,Jack Broadbent,Alex McDonald,Alex McDonald,5-8,5,8,0,1,Completed,true,false,false
+AP001301,,16,BLTC,Mt Eliza,No. 2,Chris Alevizos,Jack Shurdington,Chris Alevizos,8-7,8,7,1,0,Completed,true,false,false
+AP001301,,16,BLTC,Mt Eliza,No. 3,Jarrod Broadbent,Evan Atkinson,Jarrod Broadbent,8-6,8,6,1,0,Completed,true,false,false
+AP001301,,16,BLTC,Mt Eliza,No. 4,Josh Dawson,John McDonald,Josh Dawson,8-4,8,4,1,0,Completed,true,false,false
+AP001302,,16,Hurlingham Park,Overport Park,No. 1,Riley Walker,Lewis Miles,Lewis Miles,0-8,0,8,0,1,Completed,true,false,false
+AP001302,,16,Hurlingham Park,Overport Park,No. 2,Michael Lancefield,Michael Turlejski,Michael Turlejski,3-8,3,8,0,1,Completed,true,false,false
+AP001302,,16,Hurlingham Park,Overport Park,No. 3,Regan Morehu,Seb Tring,Regan Morehu,8-7,8,7,1,0,Completed,true,false,false
+AP001302,,16,Hurlingham Park,Overport Park,No. 4,Hugh Blacket,Nick Wilson,Nick Wilson,2-8,2,8,0,1,Completed,true,true,false
+AP001321,,17,BLTC,Overport Park,No. 1,Jack Broadbent,Lewis Miles,Lewis Miles,3-8,3,8,0,1,Completed,true,false,false
+AP001321,,17,BLTC,Overport Park,No. 2,Chris Alevizos,Michael Turlejski,Chris Alevizos,8-5,8,5,1,0,Completed,true,false,false
+AP001321,,17,BLTC,Overport Park,No. 3,Jarrod Broadbent,Seb Tring,Jarrod Broadbent,8-5,8,5,1,0,Completed,true,false,false
+AP001321,,17,BLTC,Overport Park,No. 4,Josh Dawson,Nick Wilson,Josh Dawson,8-3,8,3,1,0,Completed,true,false,false

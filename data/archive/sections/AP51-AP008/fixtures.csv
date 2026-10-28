@@ -1,0 +1,60 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP008011,04 Oct 25,1,regular,Round 1,Dendy Park,Sandringham,2,8,3,6,,,41,53,Completed,
+AP008012,04 Oct 25,1,regular,Round 1,Royal South Yarra,Hawthorn,2,8,2,6,,,33,51,Completed,
+AP008013,04 Oct 25,1,regular,Round 1,BLTC,Maccabi,2,8,3,5,,,45,45,Completed,
+AP008014,04 Oct 25,1,regular,Round 1,Highmoor Uniting,Coatesville,9,1,6,2,,,50,32,Completed,
+AP008021,11 Oct 25,2,regular,Round 2,Coatesville,Dendy Park,8,2,6,3,,,52,42,Completed,
+AP008022,11 Oct 25,2,regular,Round 2,Sandringham,Royal South Yarra,8,2,6,2,,,54,33,Completed,
+AP008023,11 Oct 25,2,regular,Round 2,Hawthorn,BLTC,8,2,5,3,,,52,26,Completed,
+AP008024,11 Oct 25,2,regular,Round 2,Maccabi,Highmoor Uniting,2,8,4,5,,,48,49,Completed,
+AP008031,18 Oct 25,3,regular,Round 3,Dendy Park,Maccabi,1,9,2,7,,,29,59,Completed,
+AP008032,18 Oct 25,3,regular,Round 3,Royal South Yarra,Coatesville,2,8,4,5,,,53,47,Completed,
+AP008033,18 Oct 25,3,regular,Round 3,BLTC,Sandringham,10,0,8,1,,,60,28,Completed,
+pending-ap008-r3-highmoor-uniting-hawthorn,18 Oct 25,3,regular,Round 3,Highmoor Uniting,Hawthorn,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP008041,25 Oct 25,4,regular,Round 4,Hawthorn,Dendy Park,10,0,8,1,,,58,41,Completed,
+AP008042,25 Oct 25,4,regular,Round 4,Maccabi,Royal South Yarra,2,8,2,6,,,38,48,Completed,
+AP008043,25 Oct 25,4,regular,Round 4,Coatesville,BLTC,1,9,1,7,,,39,51,Completed,
+AP008044,25 Oct 25,4,regular,Round 4,Sandringham,Highmoor Uniting,10,0,8,0,,,57,20,Completed,
+pending-ap008-r5-bltc-highmoor-uniting,08 Nov 25,5,regular,Round 5,BLTC,Highmoor Uniting,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap008-r5-coatesville-maccabi,08 Nov 25,5,regular,Round 5,Coatesville,Maccabi,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap008-r5-dendy-park-royal-south-yarra,08 Nov 25,5,regular,Round 5,Dendy Park,Royal South Yarra,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap008-r5-hawthorn-sandringham,08 Nov 25,5,regular,Round 5,Hawthorn,Sandringham,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP008061,15 Nov 25,6,regular,Round 6,Royal South Yarra,BLTC,2,8,4,6,,,53,55,Completed,
+AP008062,15 Nov 25,6,regular,Round 6,Highmoor Uniting,Dendy Park,8,2,6,2,,,53,37,Completed,
+AP008063,15 Nov 25,6,regular,Round 6,Maccabi,Hawthorn,8,2,6,4,,,61,50,Completed,
+AP008064,15 Nov 25,6,regular,Round 6,Sandringham,Coatesville,9,1,7,1,,,53,34,Completed,
+AP008071,22 Nov 25,7,regular,Round 7,Dendy Park,BLTC,0,10,0,8,,,21,57,Completed,
+AP008072,22 Nov 25,7,regular,Round 7,Royal South Yarra,Highmoor Uniting,3,7,4,5,,,37,54,Completed,
+AP008074,22 Nov 25,7,regular,Round 7,Maccabi,Sandringham,3,7,4,5,,,51,54,Completed,
+pending-ap008-r7-coatesville-hawthorn,22 Nov 25,7,regular,Round 7,Coatesville,Hawthorn,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP008081,29 Nov 25,8,regular,Round 8,Sandringham,Dendy Park,10,0,8,0,,,57,17,Completed,
+AP008082,29 Nov 25,8,regular,Round 8,Hawthorn,Royal South Yarra,8,2,5,3,,,54,40,Completed,
+AP008083,29 Nov 25,8,regular,Round 8,Maccabi,BLTC,1,9,2,7,,,34,59,Completed,
+AP008084,29 Nov 25,8,regular,Round 8,Coatesville,Highmoor Uniting,8,2,6,2,,,51,28,Completed,
+AP008091,06 Dec 25,9,regular,Round 9,Dendy Park,Coatesville,2,8,4,6,,,52,63,Completed,
+pending-ap008-r9-bltc-hawthorn,06 Dec 25,9,regular,Round 9,BLTC,Hawthorn,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap008-r9-highmoor-uniting-maccabi,06 Dec 25,9,regular,Round 9,Highmoor Uniting,Maccabi,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap008-r9-royal-south-yarra-sandringham,06 Dec 25,9,regular,Round 9,Royal South Yarra,Sandringham,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP008101,13 Dec 25,10,regular,Round 10,Maccabi,Dendy Park,1,9,2,7,,,41,54,Completed,
+AP008102,13 Dec 25,10,regular,Round 10,Coatesville,Royal South Yarra,8,2,6,3,,,55,48,Completed,
+AP008103,13 Dec 25,10,regular,Round 10,Sandringham,BLTC,10,0,8,1,,,62,33,Completed,
+AP008104,13 Dec 25,10,regular,Round 10,Hawthorn,Highmoor Uniting,7,3,5,3,,,45,44,Completed,
+AP008111,07 Feb 26,11,regular,Round 11,Dendy Park,Hawthorn,0,10,0,8,,,15,56,Completed,
+AP008112,07 Feb 26,11,regular,Round 11,Royal South Yarra,Maccabi,8,2,6,3,,,51,43,Completed,
+AP008113,07 Feb 26,11,regular,Round 11,BLTC,Coatesville,10,0,8,1,,,63,35,Completed,
+AP008114,07 Feb 26,11,regular,Round 11,Highmoor Uniting,Sandringham,1,9,2,7,,,35,59,Completed,
+AP008121,14 Feb 26,12,regular,Round 12,Highmoor Uniting,BLTC,2,8,4,6,,,50,62,Completed,
+AP008122,14 Feb 26,12,regular,Round 12,Maccabi,Coatesville,1,9,1,7,,,29,53,Completed,
+AP008123,14 Feb 26,12,regular,Round 12,Sandringham,Hawthorn,10,0,8,2,,,67,47,Completed,
+AP008124,14 Feb 26,12,regular,Round 12,Royal South Yarra,Dendy Park,2,8,3,6,,,41,52,Completed,
+AP008132,21 Feb 26,13,regular,Round 13,Dendy Park,Highmoor Uniting,7,3,4,4,,,44,40,Completed,
+AP008133,21 Feb 26,13,regular,Round 13,Hawthorn,Maccabi,10,0,8,0,,,56,27,Completed,
+AP008134,21 Feb 26,13,regular,Round 13,Coatesville,Sandringham,2,8,3,5,,,30,41,Completed,
+pending-ap008-r13-bltc-royal-south-yarra,21 Feb 26,13,regular,Round 13,BLTC,Royal South Yarra,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP008141,28 Feb 26,14,regular,Round 14,BLTC,Dendy Park,7,3,5,4,,,58,43,Completed,
+AP008143,28 Feb 26,14,regular,Round 14,Hawthorn,Coatesville,2,8,3,6,,,44,51,Completed,
+AP008144,28 Feb 26,14,regular,Round 14,Sandringham,Maccabi,10,0,8,0,,,56,13,Completed,
+pending-ap008-r14-highmoor-uniting-royal-south-yarra,28 Feb 26,14,regular,Round 14,Highmoor Uniting,Royal South Yarra,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP008301,,16,semi_final,Semi-final,Sandringham,Hawthorn,8,2,6,3,,,55,41,Completed,
+AP008302,,16,semi_final,Semi-final,BLTC,Coatesville,7,3,5,4,,,56,46,Completed,
+AP008321,,17,grand_final,Grand final · TROLS entry 2,Sandringham,BLTC,1,9,0,4,,,16,32,Completed,

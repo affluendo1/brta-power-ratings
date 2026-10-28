@@ -1,0 +1,48 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP008012,02 May 15,1,regular,Round 1,Glen Huntly,St Pats Mentone,7,1,3,1,7,2,54,37,Completed,
+AP008013,02 May 15,1,regular,Round 1,Kings Park,Ormond,1,7,1,3,3,7,39,57,Completed,
+pending-ap008-r1-bye-hawthorn,02 May 15,1,regular,Round 1,Bye,Hawthorn,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP008022,09 May 15,2,regular,Round 2,St Pats Mentone,Kings Park,7,1,3,1,7,2,54,35,Completed,
+AP008023,09 May 15,2,regular,Round 2,Hawthorn,Glen Huntly,1,7,1,3,2,6,28,44,Completed,
+pending-ap008-r2-ormond-bye,09 May 15,2,regular,Round 2,Ormond,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP008032,16 May 15,3,regular,Round 3,Kings Park,Hawthorn,6,2,2,2,5,4,46,39,Completed,
+AP008033,16 May 15,3,regular,Round 3,Ormond,St Pats Mentone,7,1,3,1,7,2,55,32,Completed,
+pending-ap008-r3-bye-glen-huntly,16 May 15,3,regular,Round 3,Bye,Glen Huntly,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP008042,23 May 15,4,regular,Round 4,Hawthorn,Ormond,1,7,1,3,2,6,28,44,Completed,
+AP008043,23 May 15,4,regular,Round 4,Glen Huntly,Kings Park,7,1,3,1,6,2,45,31,Completed,
+pending-ap008-r4-st-pats-mentone-bye,23 May 15,4,regular,Round 4,St Pats Mentone,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP008052,30 May 15,5,regular,Round 5,St Pats Mentone,Hawthorn,7,1,3,1,7,3,60,38,Completed,
+AP008053,30 May 15,5,regular,Round 5,Ormond,Glen Huntly,0,8,0,4,1,8,41,53,Completed,
+pending-ap008-r5-bye-kings-park,30 May 15,5,regular,Round 5,Bye,Kings Park,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP008062,13 Jun 15,6,regular,Round 6,St Pats Mentone,Glen Huntly,7,1,3,1,7,3,58,48,Completed,
+AP008063,13 Jun 15,6,regular,Round 6,Ormond,Kings Park,8,0,4,0,8,2,56,38,Completed,
+pending-ap008-r6-hawthorn-bye,13 Jun 15,6,regular,Round 6,Hawthorn,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP008072,20 Jun 15,7,regular,Round 7,Kings Park,St Pats Mentone,1,7,1,3,3,7,32,56,Completed,
+AP008073,20 Jun 15,7,regular,Round 7,Glen Huntly,Hawthorn,8,0,4,0,8,1,53,19,Completed,
+pending-ap008-r7-bye-ormond,20 Jun 15,7,regular,Round 7,Bye,Ormond,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP008082,27 Jun 15,8,regular,Round 8,Hawthorn,Kings Park,8,0,4,0,8,2,61,38,Completed,
+AP008083,27 Jun 15,8,regular,Round 8,St Pats Mentone,Ormond,6,2,2,2,5,5,51,49,Completed,
+pending-ap008-r8-glen-huntly-bye,27 Jun 15,8,regular,Round 8,Glen Huntly,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP008092,04 Jul 15,9,regular,Round 9,Ormond,Hawthorn,8,0,4,0,8,1,52,26,Completed,
+AP008093,04 Jul 15,9,regular,Round 9,Kings Park,Glen Huntly,1,7,1,3,3,6,38,48,Completed,
+pending-ap008-r9-bye-st-pats-mentone,04 Jul 15,9,regular,Round 9,Bye,St Pats Mentone,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap008-r10-glen-huntly-ormond,11 Jul 15,10,regular,Round 10,Glen Huntly,Ormond,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap008-r10-hawthorn-st-pats-mentone,11 Jul 15,10,regular,Round 10,Hawthorn,St Pats Mentone,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap008-r10-kings-park-bye,11 Jul 15,10,regular,Round 10,Kings Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP008113,18 Jul 15,11,regular,Round 11,Kings Park,Ormond,2,6,2,2,5,5,51,56,Completed,
+pending-ap008-r11-bye-hawthorn,18 Jul 15,11,regular,Round 11,Bye,Hawthorn,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap008-r11-glen-huntly-st-pats-mentone,18 Jul 15,11,regular,Round 11,Glen Huntly,St Pats Mentone,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP008122,25 Jul 15,12,regular,Round 12,St Pats Mentone,Kings Park,1,7,1,3,2,6,29,45,Completed,
+AP008123,25 Jul 15,12,regular,Round 12,Hawthorn,Glen Huntly,6,2,2,2,5,4,45,40,Completed,
+pending-ap008-r12-ormond-bye,25 Jul 15,12,regular,Round 12,Ormond,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP008132,01 Aug 15,13,regular,Round 13,Kings Park,Hawthorn,7,1,3,1,6,3,44,37,Completed,
+AP008133,01 Aug 15,13,regular,Round 13,Ormond,St Pats Mentone,1,7,1,3,2,6,25,43,Completed,
+pending-ap008-r13-bye-glen-huntly,01 Aug 15,13,regular,Round 13,Bye,Glen Huntly,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP008142,08 Aug 15,14,regular,Round 14,Hawthorn,Ormond,6,2,2,2,4,4,36,32,Completed,
+AP008143,08 Aug 15,14,regular,Round 14,Glen Huntly,Kings Park,7,1,3,1,7,4,61,47,Completed,
+pending-ap008-r14-st-pats-mentone-bye,08 Aug 15,14,regular,Round 14,St Pats Mentone,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP008152,15 Aug 15,15,regular,Round 15,St Pats Mentone,Hawthorn,7,1,3,1,6,2,44,27,Completed,
+AP008153,15 Aug 15,15,regular,Round 15,Ormond,Glen Huntly,1,7,1,3,2,7,32,54,Completed,
+AP008311,15 Aug 15,15,regular,Round 15,St Pats Mentone,Ormond,2,6,2,2,5,5,47,48,Completed,
+pending-ap008-r15-bye-kings-park,15 Aug 15,15,regular,Round 15,Bye,Kings Park,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP008321,,16,grand_final,Grand final · TROLS entry 2,Glen Huntly,Ormond,8,0,4,0,8,0,48,14,Completed,

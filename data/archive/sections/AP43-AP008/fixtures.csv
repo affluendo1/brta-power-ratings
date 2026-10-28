@@ -1,0 +1,60 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP008011,16 Oct 21,1,regular,Round 1,Elsternwick Park,BLTC,0,0,0,0,,,0,0,Completed,
+AP008012,16 Oct 21,1,regular,Round 1,East Malvern,Maccabi,0,0,0,0,,,0,0,Completed,
+AP008014,16 Oct 21,1,regular,Round 1,Ormond,St Anthony's,0,0,0,0,,,0,0,Completed,
+pending-ap008-r1-bye-carmelite,16 Oct 21,1,regular,Round 1,Bye,Carmelite,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP008021,23 Oct 21,2,regular,Round 2,St Anthony's,Elsternwick Park,0,0,0,0,,,0,0,Completed,
+AP008022,23 Oct 21,2,regular,Round 2,BLTC,East Malvern,0,0,0,0,,,0,0,Completed,
+AP008024,23 Oct 21,2,regular,Round 2,Carmelite,Ormond,0,0,0,0,,,0,0,Completed,
+pending-ap008-r2-maccabi-bye,23 Oct 21,2,regular,Round 2,Maccabi,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP008031,06 Nov 21,3,regular,Round 3,Elsternwick Park,Carmelite,2,8,4,5,,,46,46,Completed,
+AP008032,06 Nov 21,3,regular,Round 3,East Malvern,St Anthony's,9,1,7,1,,,57,32,Completed,
+AP008034,06 Nov 21,3,regular,Round 3,Ormond,Maccabi,9,1,7,1,,,53,28,Completed,
+pending-ap008-r3-bye-bltc,06 Nov 21,3,regular,Round 3,Bye,BLTC,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP008041,13 Nov 21,4,regular,Round 4,Maccabi,Elsternwick Park,9,1,6,2,,,48,36,Completed,
+AP008042,13 Nov 21,4,regular,Round 4,Carmelite,East Malvern,9,1,7,2,,,60,47,Completed,
+pending-ap008-r4-bltc-ormond,13 Nov 21,4,regular,Round 4,BLTC,Ormond,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap008-r4-st-anthony-s-bye,13 Nov 21,4,regular,Round 4,St Anthony's,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP008052,20 Nov 21,5,regular,Round 5,St Anthony's,Carmelite,3,7,4,5,,,52,53,Completed,
+AP008053,20 Nov 21,5,regular,Round 5,Maccabi,BLTC,8,2,6,2,,,53,40,Completed,
+AP008054,20 Nov 21,5,regular,Round 5,Elsternwick Park,East Malvern,8,2,6,3,,,55,36,Completed,
+pending-ap008-r5-bye-ormond,20 Nov 21,5,regular,Round 5,Bye,Ormond,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP008062,27 Nov 21,6,regular,Round 6,Ormond,Elsternwick Park,7,3,5,4,,,55,50,Completed,
+AP008063,27 Nov 21,6,regular,Round 6,Carmelite,Maccabi,8,2,6,3,,,53,35,Completed,
+AP008064,27 Nov 21,6,regular,Round 6,BLTC,St Anthony's,8,2,6,3,,,52,51,Completed,
+pending-ap008-r6-east-malvern-bye,27 Nov 21,6,regular,Round 6,East Malvern,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP008072,04 Dec 21,7,regular,Round 7,East Malvern,Ormond,2,8,3,6,,,35,53,Completed,
+AP008073,04 Dec 21,7,regular,Round 7,St Anthony's,Maccabi,8,2,6,3,,,59,39,Completed,
+AP008074,04 Dec 21,7,regular,Round 7,Carmelite,BLTC,8,2,6,4,,,56,42,Completed,
+pending-ap008-r7-elsternwick-park-bye,04 Dec 21,7,regular,Round 7,Elsternwick Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP008081,11 Dec 21,8,regular,Round 8,BLTC,Elsternwick Park,9,1,7,1,,,53,23,Completed,
+AP008082,11 Dec 21,8,regular,Round 8,Maccabi,East Malvern,3,7,4,5,,,40,45,Completed,
+AP008084,11 Dec 21,8,regular,Round 8,St Anthony's,Ormond,1,9,1,7,,,26,51,Completed,
+pending-ap008-r8-carmelite-bye,11 Dec 21,8,regular,Round 8,Carmelite,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP008092,29 Jan 22,9,regular,Round 9,East Malvern,BLTC,9,1,7,1,,,52,30,Completed,
+AP008094,29 Jan 22,9,regular,Round 9,Ormond,Carmelite,9,1,7,2,,,57,29,Completed,
+pending-ap008-r9-bye-maccabi,29 Jan 22,9,regular,Round 9,Bye,Maccabi,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap008-r9-elsternwick-park-st-anthony-s,29 Jan 22,9,regular,Round 9,Elsternwick Park,St Anthony's,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+AP008102,05 Feb 22,10,regular,Round 10,St Anthony's,East Malvern,1,9,1,7,,,24,54,Completed,
+AP008104,05 Feb 22,10,regular,Round 10,Maccabi,Ormond,7,3,4,4,,,39,37,Completed,
+pending-ap008-r10-bltc-bye,05 Feb 22,10,regular,Round 10,BLTC,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap008-r10-carmelite-elsternwick-park,05 Feb 22,10,regular,Round 10,Carmelite,Elsternwick Park,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP008111,12 Feb 22,11,regular,Round 11,Elsternwick Park,Maccabi,2,8,3,5,,,36,51,Completed,
+AP008112,12 Feb 22,11,regular,Round 11,East Malvern,Carmelite,2,8,3,5,,,43,48,Completed,
+AP008114,12 Feb 22,11,regular,Round 11,Ormond,BLTC,3,7,4,4,,,40,42,Completed,
+pending-ap008-r11-bye-st-anthony-s,12 Feb 22,11,regular,Round 11,Bye,St Anthony's,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP008122,19 Feb 22,12,regular,Round 12,Carmelite,St Anthony's,9,1,7,1,,,53,25,Completed,
+AP008123,19 Feb 22,12,regular,Round 12,BLTC,Maccabi,2,8,3,5,,,34,47,Completed,
+AP008124,19 Feb 22,12,regular,Round 12,East Malvern,Elsternwick Park,10,0,8,0,,,56,27,Completed,
+pending-ap008-r12-ormond-bye,19 Feb 22,12,regular,Round 12,Ormond,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP008132,26 Feb 22,13,regular,Round 13,Elsternwick Park,Ormond,1,9,2,7,,,44,62,Completed,
+AP008133,26 Feb 22,13,regular,Round 13,Maccabi,Carmelite,9,1,7,1,,,52,28,Completed,
+AP008134,26 Feb 22,13,regular,Round 13,St Anthony's,BLTC,5,5,4,4,,,42,42,Completed,
+pending-ap008-r13-bye-east-malvern,26 Feb 22,13,regular,Round 13,Bye,East Malvern,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP008142,05 Mar 22,14,regular,Round 14,Ormond,East Malvern,9,1,7,1,,,49,26,Completed,
+AP008143,05 Mar 22,14,regular,Round 14,Maccabi,St Anthony's,8,2,6,3,,,54,32,Completed,
+AP008144,05 Mar 22,14,regular,Round 14,BLTC,Carmelite,7,3,4,4,,,47,44,Completed,
+pending-ap008-r14-bye-elsternwick-park,05 Mar 22,14,regular,Round 14,Bye,Elsternwick Park,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP008301,,16,semi_final,Semi-final,Carmelite,East Malvern,8,2,6,2,,,51,34,Completed,
+AP008302,,16,semi_final,Semi-final,Ormond,Maccabi,8,2,6,3,,,56,42,Completed,
+AP008321,,17,grand_final,Grand final · TROLS entry 2,Carmelite,Ormond,2,8,2,6,,,35,45,Completed,

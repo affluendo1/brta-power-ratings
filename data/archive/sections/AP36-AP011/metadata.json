@@ -1,0 +1,107 @@
+{
+  "asset_id": "AP36-AP011",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 17/18",
+  "season_id": "AP36",
+  "season_label": "Summer 17/18",
+  "source_section_code": "AP011",
+  "section_label": "Ladies S/D 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Dendy Park 1",
+      "wins": 11,
+      "points": 100,
+      "percentage": 132.13,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Dendy Park 2",
+      "wins": 9,
+      "points": 94,
+      "percentage": 139.42,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "East Malvern",
+      "wins": 9,
+      "points": 86,
+      "percentage": 125.98,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Hawthorn",
+      "wins": 6,
+      "points": 69,
+      "percentage": 103.33,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Chadstone",
+      "wins": 5,
+      "points": 58,
+      "percentage": 79.69,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "BLTC",
+      "wins": 4,
+      "points": 54,
+      "percentage": 85.81,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Tennis World",
+      "wins": 3,
+      "points": 53,
+      "percentage": 78.79,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "Monash University",
+      "wins": 2,
+      "points": 46,
+      "percentage": 74.22,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP36-AP011",
+  "fixtures": 60,
+  "completed_fixtures": 55,
+  "draw_fixtures": 60,
+  "singles_rubbers": 216,
+  "doubles_rubbers": 108,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP011064 doubles No. 1: '1-1'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP011064 doubles No. 2: '2-1'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP011311 doubles No. 1: '0-6 0-2'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

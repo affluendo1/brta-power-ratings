@@ -1,0 +1,61 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP022011,06 Oct 12,1,regular,Round 1,Royal Ave,Dendy Park,8,2,6,3,,,56,39,Completed,
+AP022012,06 Oct 12,1,regular,Round 1,Lauriston 1,Lauriston 2,10,0,8,0,,,56,2,Completed,
+AP022014,06 Oct 12,1,regular,Round 1,Beaumaris CC,Clarinda,1,9,1,7,,,25,50,Completed,
+pending-ap022-r1-bye-mcc,06 Oct 12,1,regular,Round 1,Bye,MCC,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP022021,13 Oct 12,2,regular,Round 2,Clarinda,Royal Ave,2,8,3,6,,,37,50,Completed,
+AP022022,13 Oct 12,2,regular,Round 2,Dendy Park,Lauriston 1,7,3,5,4,,,46,52,Completed,
+AP022024,13 Oct 12,2,regular,Round 2,MCC,Beaumaris CC,2,8,2,6,,,33,49,Completed,
+pending-ap022-r2-lauriston-2-bye,13 Oct 12,2,regular,Round 2,Lauriston 2,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP022031,20 Oct 12,3,regular,Round 3,Royal Ave,MCC,10,0,8,0,,,56,19,Completed,
+AP022032,20 Oct 12,3,regular,Round 3,Lauriston 1,Clarinda,3,7,5,5,,,45,52,Completed,
+AP022034,20 Oct 12,3,regular,Round 3,Beaumaris CC,Lauriston 2,10,0,8,0,,,56,11,Completed,
+pending-ap022-r3-bye-dendy-park,20 Oct 12,3,regular,Round 3,Bye,Dendy Park,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP022041,27 Oct 12,4,regular,Round 4,Lauriston 2,Royal Ave,0,10,0,8,,,12,56,Completed,
+AP022042,27 Oct 12,4,regular,Round 4,MCC,Lauriston 1,2,8,2,6,,,25,51,Completed,
+AP022044,27 Oct 12,4,regular,Round 4,Dendy Park,Beaumaris CC,8,2,6,3,,,54,36,Completed,
+pending-ap022-r4-clarinda-bye,27 Oct 12,4,regular,Round 4,Clarinda,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP022052,10 Nov 12,5,regular,Round 5,Clarinda,MCC,9,1,7,1,,,55,24,Completed,
+AP022053,10 Nov 12,5,regular,Round 5,Lauriston 2,Dendy Park,0,10,0,8,,,19,56,Completed,
+AP022054,10 Nov 12,5,regular,Round 5,Royal Ave,Lauriston 1,8,2,6,4,,,58,48,Completed,
+pending-ap022-r5-bye-beaumaris-cc,10 Nov 12,5,regular,Round 5,Bye,Beaumaris CC,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP022062,17 Nov 12,6,regular,Round 6,Beaumaris CC,Royal Ave,2,8,3,6,,,32,51,Completed,
+AP022063,17 Nov 12,6,regular,Round 6,MCC,Lauriston 2,10,0,8,0,,,56,18,Completed,
+AP022064,17 Nov 12,6,regular,Round 6,Dendy Park,Clarinda,8,2,6,4,,,58,43,Completed,
+pending-ap022-r6-lauriston-1-bye,17 Nov 12,6,regular,Round 6,Lauriston 1,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP022072,24 Nov 12,7,regular,Round 7,Lauriston 1,Beaumaris CC,0,10,1,8,,,20,59,Completed,
+AP022074,24 Nov 12,7,regular,Round 7,MCC,Dendy Park,1,9,2,7,,,40,55,Completed,
+pending-ap022-r7-clarinda-lauriston-2,24 Nov 12,7,regular,Round 7,Clarinda,Lauriston 2,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+pending-ap022-r7-royal-ave-bye,24 Nov 12,7,regular,Round 7,Royal Ave,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP022081,01 Dec 12,8,regular,Round 8,Dendy Park,Royal Ave,8,2,5,3,,,52,33,Completed,
+AP022082,01 Dec 12,8,regular,Round 8,Lauriston 2,Lauriston 1,0,10,0,8,,,3,56,Completed,
+AP022084,01 Dec 12,8,regular,Round 8,Clarinda,Beaumaris CC,2,8,3,5,,,37,45,Completed,
+pending-ap022-r8-mcc-bye,01 Dec 12,8,regular,Round 8,MCC,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP022091,08 Dec 12,9,regular,Round 9,Royal Ave,Clarinda,3,7,4,5,,,47,52,Completed,
+AP022092,08 Dec 12,9,regular,Round 9,Lauriston 1,Dendy Park,7,3,5,4,,,50,42,Completed,
+AP022094,08 Dec 12,9,regular,Round 9,Beaumaris CC,MCC,4,6,2,4,,,30,34,Completed,
+pending-ap022-r9-bye-lauriston-2,08 Dec 12,9,regular,Round 9,Bye,Lauriston 2,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP022101,15 Dec 12,10,regular,Round 10,MCC,Royal Ave,2,8,3,6,,,37,61,Completed,
+AP022102,15 Dec 12,10,regular,Round 10,Clarinda,Lauriston 1,10,0,8,0,,,58,23,Completed,
+AP022104,15 Dec 12,10,regular,Round 10,Lauriston 2,Beaumaris CC,0,10,0,8,,,6,56,Completed,
+pending-ap022-r10-dendy-park-bye,15 Dec 12,10,regular,Round 10,Dendy Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP022111,02 Feb 13,11,regular,Round 11,Royal Ave,Lauriston 2,10,0,8,0,,,56,11,Completed,
+AP022114,02 Feb 13,11,regular,Round 11,Beaumaris CC,Dendy Park,7,3,4,4,,,46,37,Completed,
+pending-ap022-r11-bye-clarinda,02 Feb 13,11,regular,Round 11,Bye,Clarinda,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap022-r11-lauriston-1-mcc,02 Feb 13,11,regular,Round 11,Lauriston 1,MCC,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+AP022122,09 Feb 13,12,regular,Round 12,MCC,Clarinda,0,10,0,8,,,20,56,Completed,
+AP022123,09 Feb 13,12,regular,Round 12,Dendy Park,Lauriston 2,4,6,6,2,,,45,36,Completed,
+AP022124,09 Feb 13,12,regular,Round 12,Lauriston 1,Royal Ave,1,9,2,7,,,35,56,Completed,
+pending-ap022-r12-beaumaris-cc-bye,09 Feb 13,12,regular,Round 12,Beaumaris CC,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP022132,16 Feb 13,13,regular,Round 13,Royal Ave,Beaumaris CC,10,0,8,1,,,61,30,Completed,
+AP022133,16 Feb 13,13,regular,Round 13,Lauriston 2,MCC,1,9,2,6,,,37,54,Completed,
+AP022134,16 Feb 13,13,regular,Round 13,Clarinda,Dendy Park,7,3,5,4,,,53,42,Completed,
+pending-ap022-r13-bye-lauriston-1,16 Feb 13,13,regular,Round 13,Bye,Lauriston 1,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP022142,23 Feb 13,14,regular,Round 14,Beaumaris CC,Lauriston 1,3,7,4,5,,,44,43,Completed,
+AP022143,23 Feb 13,14,regular,Round 14,Lauriston 2,Clarinda,1,9,1,7,,,14,54,Completed,
+AP022144,23 Feb 13,14,regular,Round 14,Dendy Park,MCC,9,1,7,1,,,56,37,Completed,
+pending-ap022-r14-bye-royal-ave,23 Feb 13,14,regular,Round 14,Bye,Royal Ave,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP022301,,16,semi_final,Semi-final,Royal Ave,Clarinda,8,2,5,3,,,39,29,Completed,
+AP022302,,16,semi_final,Semi-final,Dendy Park,Beaumaris CC,8,2,5,4,,,55,46,Completed,
+AP022311,,16,semi_final,Semi-final,Clarinda,Dendy Park,7.5,2.5,5,2,,,44,41,Completed,
+AP022321,,17,grand_final,Grand final · TROLS entry 2,Royal Ave,Clarinda,3,7,4,4,,,38,43,Completed,

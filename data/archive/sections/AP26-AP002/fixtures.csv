@@ -1,0 +1,61 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP002011,06 Oct 12,1,regular,Round 1,St Pats Mentone 1,St Pats Mentone 2,8,0,8,0,,,48,14,Completed,
+AP002012,06 Oct 12,1,regular,Round 1,Port Melbourne,Ormond,0,8,1,8,,,32,54,Completed,
+pending-ap002-r1-bye-kings-park,06 Oct 12,1,regular,Round 1,Bye,Kings Park,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap002-r1-glen-huntly-patterson-lakes,06 Oct 12,1,regular,Round 1,Glen Huntly,Patterson Lakes,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP002021,13 Oct 12,2,regular,Round 2,Kings Park,St Pats Mentone 1,7,1,7,3,,,58,39,Completed,
+AP002022,13 Oct 12,2,regular,Round 2,St Pats Mentone 2,Port Melbourne,1,7,3,6,,,32,45,Completed,
+AP002023,13 Oct 12,2,regular,Round 2,Ormond,Glen Huntly,1,7,4,6,,,40,46,Completed,
+pending-ap002-r2-patterson-lakes-bye,13 Oct 12,2,regular,Round 2,Patterson Lakes,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP002031,20 Oct 12,3,regular,Round 3,St Pats Mentone 1,Patterson Lakes,7,1,7,2,,,50,28,Completed,
+AP002032,20 Oct 12,3,regular,Round 3,Port Melbourne,Kings Park,0,8,0,8,,,19,50,Completed,
+AP002033,20 Oct 12,3,regular,Round 3,Glen Huntly,St Pats Mentone 2,8,0,8,2,,,61,40,Completed,
+pending-ap002-r3-bye-ormond,20 Oct 12,3,regular,Round 3,Bye,Ormond,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP002041,27 Oct 12,4,regular,Round 4,Ormond,St Pats Mentone 1,0,8,0,8,,,19,50,Completed,
+AP002042,27 Oct 12,4,regular,Round 4,Patterson Lakes,Port Melbourne,7,1,6,2,,,42,19,Completed,
+AP002043,27 Oct 12,4,regular,Round 4,Kings Park,Glen Huntly,6,2,5,4,,,46,32,Completed,
+pending-ap002-r4-st-pats-mentone-2-bye,27 Oct 12,4,regular,Round 4,St Pats Mentone 2,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP002052,10 Nov 12,5,regular,Round 5,Kings Park,Patterson Lakes,1,7,4,6,,,53,55,Completed,
+AP002053,10 Nov 12,5,regular,Round 5,Ormond,St Pats Mentone 2,1,7,4,7,,,50,62,Completed,
+AP002054,10 Nov 12,5,regular,Round 5,St Pats Mentone 1,Port Melbourne,1,7,2,7,,,30,55,Completed,
+pending-ap002-r5-glen-huntly-bye,10 Nov 12,5,regular,Round 5,Glen Huntly,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP002061,17 Nov 12,6,regular,Round 6,Port Melbourne,Glen Huntly,7,1,6,4,,,42,50,Completed,
+AP002063,17 Nov 12,6,regular,Round 6,Patterson Lakes,Ormond,8,0,8,1,,,55,30,Completed,
+AP002064,17 Nov 12,6,regular,Round 6,St Pats Mentone 2,Kings Park,0,8,0,8,,,15,48,Completed,
+pending-ap002-r6-bye-st-pats-mentone-1,17 Nov 12,6,regular,Round 6,Bye,St Pats Mentone 1,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP002071,24 Nov 12,7,regular,Round 7,St Pats Mentone 1,Glen Huntly,4,4,0,2,,,15,20,Completed,
+AP002073,24 Nov 12,7,regular,Round 7,Kings Park,Ormond,1,7,3,7,,,30,57,Completed,
+AP002074,24 Nov 12,7,regular,Round 7,Patterson Lakes,St Pats Mentone 2,8,0,8,1,,,54,11,Completed,
+pending-ap002-r7-port-melbourne-bye,24 Nov 12,7,regular,Round 7,Port Melbourne,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP002081,01 Dec 12,8,regular,Round 8,St Pats Mentone 2,St Pats Mentone 1,0,8,1,8,,,33,55,Completed,
+AP002082,01 Dec 12,8,regular,Round 8,Ormond,Port Melbourne,0,8,1,8,,,28,53,Completed,
+AP002083,01 Dec 12,8,regular,Round 8,Patterson Lakes,Glen Huntly,6,2,4,4,,,41,34,Completed,
+pending-ap002-r8-kings-park-bye,01 Dec 12,8,regular,Round 8,Kings Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP002091,08 Dec 12,9,regular,Round 9,St Pats Mentone 1,Kings Park,3,5,1,4,,,22,27,Completed,
+AP002093,08 Dec 12,9,regular,Round 9,Glen Huntly,Ormond,7,1,6,2,,,39,24,Completed,
+pending-ap002-r9-bye-patterson-lakes,08 Dec 12,9,regular,Round 9,Bye,Patterson Lakes,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap002-r9-port-melbourne-st-pats-mentone-2,08 Dec 12,9,regular,Round 9,Port Melbourne,St Pats Mentone 2,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP002101,15 Dec 12,10,regular,Round 10,Patterson Lakes,St Pats Mentone 1,2,6,4,6,,,42,54,Completed,
+AP002102,15 Dec 12,10,regular,Round 10,Kings Park,Port Melbourne,7,1,6,2,,,41,34,Completed,
+AP002103,15 Dec 12,10,regular,Round 10,St Pats Mentone 2,Glen Huntly,0,8,1,8,,,27,53,Completed,
+pending-ap002-r10-ormond-bye,15 Dec 12,10,regular,Round 10,Ormond,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP002111,02 Feb 13,11,regular,Round 11,St Pats Mentone 1,Ormond,8,0,8,0,,,49,12,Completed,
+AP002113,02 Feb 13,11,regular,Round 11,Glen Huntly,Kings Park,7,1,6,3,,,48,33,Completed,
+pending-ap002-r11-bye-st-pats-mentone-2,02 Feb 13,11,regular,Round 11,Bye,St Pats Mentone 2,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap002-r11-port-melbourne-patterson-lakes,02 Feb 13,11,regular,Round 11,Port Melbourne,Patterson Lakes,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP002122,09 Feb 13,12,regular,Round 12,Patterson Lakes,Kings Park,2,6,4,5,,,49,50,Completed,
+AP002123,09 Feb 13,12,regular,Round 12,St Pats Mentone 2,Ormond,2,6,5,5,,,52,55,Completed,
+AP002124,09 Feb 13,12,regular,Round 12,Port Melbourne,St Pats Mentone 1,2,6,4,6,,,44,57,Completed,
+pending-ap002-r12-bye-glen-huntly,09 Feb 13,12,regular,Round 12,Bye,Glen Huntly,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP002131,16 Feb 13,13,regular,Round 13,Glen Huntly,Port Melbourne,7,1,6,2,,,43,18,Completed,
+AP002133,16 Feb 13,13,regular,Round 13,Ormond,Patterson Lakes,1,7,2,6,,,29,44,Completed,
+AP002134,16 Feb 13,13,regular,Round 13,Kings Park,St Pats Mentone 2,8,0,8,0,,,49,12,Completed,
+pending-ap002-r13-st-pats-mentone-1-bye,16 Feb 13,13,regular,Round 13,St Pats Mentone 1,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP002141,23 Feb 13,14,regular,Round 14,Glen Huntly,St Pats Mentone 1,7,1,6,3,,,50,33,Completed,
+AP002143,23 Feb 13,14,regular,Round 14,Ormond,Kings Park,0,8,0,8,,,9,48,Completed,
+AP002144,23 Feb 13,14,regular,Round 14,St Pats Mentone 2,Patterson Lakes,6,2,5,5,,,51,47,Completed,
+pending-ap002-r14-bye-port-melbourne,23 Feb 13,14,regular,Round 14,Bye,Port Melbourne,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP002301,,16,semi_final,Semi-final,Kings Park,Glen Huntly,6,2,5,4,,,43,35,Completed,
+AP002302,,16,semi_final,Semi-final,St Pats Mentone 1,Patterson Lakes,1,7,4,7,,,55,65,Completed,
+AP002311,,16,semi_final,Semi-final,Glen Huntly,Patterson Lakes,6,2,4,4,,,40,34,Completed,
+AP002321,,17,grand_final,Grand final · TROLS entry 2,Kings Park,Glen Huntly,7,1,7,2,,,48,29,Completed,

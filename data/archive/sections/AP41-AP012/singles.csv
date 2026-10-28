@@ -1,0 +1,118 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP012011,14 Nov 20,1,Patterson Lakes Navy,Royal Ave,No. 1,Victoria Hatzikiriazis,Kathryn McGregor,Victoria Hatzikiriazis,8-2,8,2,1,0,Completed,true,false,false
+AP012011,14 Nov 20,1,Patterson Lakes Navy,Royal Ave,No. 2,Zoe Gorozidis,Bev Always,Zoe Gorozidis,8-2,8,2,1,0,Completed,true,false,false
+AP012011,14 Nov 20,1,Patterson Lakes Navy,Royal Ave,No. 3,Paris Gorozidis,Nina Forkas,Paris Gorozidis,8-2,8,2,1,0,Completed,true,false,false
+AP012011,14 Nov 20,1,Patterson Lakes Navy,Royal Ave,No. 4,Sophia Kefos,Anna Rolland,Sophia Kefos,8-2,8,2,1,0,Completed,true,false,false
+AP012012,14 Nov 20,1,Fitzroy,Royal South Yarra,No. 1,Katherine Kennedy,Sue Gatford,Sue Gatford,2-8,2,8,0,1,Completed,true,false,false
+AP012012,14 Nov 20,1,Fitzroy,Royal South Yarra,No. 2,Heidi Schwegler,Cassie Andrews,Cassie Andrews,2-8,2,8,0,1,Completed,true,false,false
+AP012012,14 Nov 20,1,Fitzroy,Royal South Yarra,No. 3,Melanie Sawyer,Jennifer Langford,Jennifer Langford,4-8,4,8,0,1,Completed,true,false,false
+AP012012,14 Nov 20,1,Fitzroy,Royal South Yarra,No. 4,Sara Kernick,Skye Douglass,Skye Douglass,0-8,0,8,0,1,Completed,true,false,false
+AP012013,14 Nov 20,1,Patterson Lakes Gold,Mordialloc,No. 1,Sabrina Cypser,Elise Blanchfield,Sabrina Cypser,8-4,8,4,1,0,Completed,true,false,false
+AP012013,14 Nov 20,1,Patterson Lakes Gold,Mordialloc,No. 2,Angelee Singh,Sarah Ross,Angelee Singh,8-0,8,0,1,0,Completed,true,false,false
+AP012013,14 Nov 20,1,Patterson Lakes Gold,Mordialloc,No. 3,Emma Robinson,Lily Clucas,Emma Robinson,8-2,8,2,1,0,Completed,true,false,false
+AP012013,14 Nov 20,1,Patterson Lakes Gold,Mordialloc,No. 4,Ava Juste,Linda Clucas,Ava Juste,8-2,8,2,1,0,Completed,true,false,false
+AP012021,21 Nov 20,2,Mordialloc,Patterson Lakes Navy,No. 1,Abi Kiritharan,Hayley Gould,Hayley Gould,1-8,1,8,0,1,Completed,true,false,false
+AP012021,21 Nov 20,2,Mordialloc,Patterson Lakes Navy,No. 2,Sarah Ross,Zoe Gorozidis,Zoe Gorozidis,1-8,1,8,0,1,Completed,true,false,false
+AP012021,21 Nov 20,2,Mordialloc,Patterson Lakes Navy,No. 3,Lily Clucas,Paris Gorozidis,Paris Gorozidis,2-8,2,8,0,1,Completed,true,false,false
+AP012021,21 Nov 20,2,Mordialloc,Patterson Lakes Navy,No. 4,Linda Clucas,Sophia Kefos,Sophia Kefos,1-8,1,8,0,1,Completed,true,false,false
+AP012022,21 Nov 20,2,Royal South Yarra,Patterson Lakes Gold,No. 1,Sue Gatford,Shalyn Phillips,Shalyn Phillips,1-8,1,8,0,1,Completed,true,false,true
+AP012022,21 Nov 20,2,Royal South Yarra,Patterson Lakes Gold,No. 2,Cassie Andrews,Angelee Singh,Cassie Andrews,8-4,8,4,1,0,Completed,true,false,false
+AP012022,21 Nov 20,2,Royal South Yarra,Patterson Lakes Gold,No. 3,Mietta Passon,Emma Robinson,Mietta Passon,8-3,8,3,1,0,Completed,true,false,false
+AP012022,21 Nov 20,2,Royal South Yarra,Patterson Lakes Gold,No. 4,Axy Park,Ava Juste,Axy Park,8-5,8,5,1,0,Completed,true,false,false
+AP012023,21 Nov 20,2,Royal Ave,Fitzroy,No. 1,Kathryn McGregor,Katherine Kennedy,Kathryn McGregor,8-6,8,6,1,0,Completed,true,false,false
+AP012023,21 Nov 20,2,Royal Ave,Fitzroy,No. 2,Bev Always,Sara Kernick,Bev Always,8-7,8,7,1,0,Completed,true,false,false
+AP012023,21 Nov 20,2,Royal Ave,Fitzroy,No. 3,Nina Forkas,Melanie Sawyer,Nina Forkas,8-6,8,6,1,0,Completed,true,false,false
+AP012023,21 Nov 20,2,Royal Ave,Fitzroy,No. 4,Anna Rolland,Sue Smith,Sue Smith,6-8,6,8,0,1,Completed,true,false,false
+AP012031,28 Nov 20,3,Patterson Lakes Navy,Fitzroy,No. 1,Hayley Gould,Inneke Wagner,Hayley Gould,8-1,8,1,1,0,Completed,true,false,false
+AP012031,28 Nov 20,3,Patterson Lakes Navy,Fitzroy,No. 2,Victoria Hatzikiriazis,Heidi Schwegler,Victoria Hatzikiriazis,8-1,8,1,1,0,Completed,true,false,false
+AP012031,28 Nov 20,3,Patterson Lakes Navy,Fitzroy,No. 3,Paris Gorozidis,Jenna Cahill,Paris Gorozidis,8-1,8,1,1,0,Completed,true,false,true
+AP012031,28 Nov 20,3,Patterson Lakes Navy,Fitzroy,No. 4,Sophia Kefos,Sue Smith,Sophia Kefos,8-0,8,0,1,0,Completed,true,false,false
+AP012032,28 Nov 20,3,Patterson Lakes Gold,Royal Ave,No. 1,Sabrina Cypser,Kathryn McGregor,Sabrina Cypser,8-1,8,1,1,0,Completed,true,false,false
+AP012032,28 Nov 20,3,Patterson Lakes Gold,Royal Ave,No. 2,Angelee Singh,Nicolette Hilaris,Angelee Singh,8-3,8,3,1,0,Completed,true,false,true
+AP012032,28 Nov 20,3,Patterson Lakes Gold,Royal Ave,No. 3,Emma Robinson,Nina Forkas,Nina Forkas,6-8,6,8,0,1,Completed,true,false,false
+AP012032,28 Nov 20,3,Patterson Lakes Gold,Royal Ave,No. 4,Ava Juste,Anna Rolland,Ava Juste,8-0,8,0,1,0,Completed,true,false,false
+AP012033,28 Nov 20,3,Mordialloc,Royal South Yarra,No. 1,Abi Kiritharan,Sue Gatford,Sue Gatford,0-8,0,8,0,1,Completed,true,false,false
+AP012033,28 Nov 20,3,Mordialloc,Royal South Yarra,No. 2,Elise Blanchfield,Jennifer Langford,Jennifer Langford,4-8,4,8,0,1,Completed,true,false,false
+AP012033,28 Nov 20,3,Mordialloc,Royal South Yarra,No. 3,Lily Clucas,Skye Douglass,Skye Douglass,2-8,2,8,0,1,Completed,true,false,false
+AP012033,28 Nov 20,3,Mordialloc,Royal South Yarra,No. 4,Linda Clucas,Mietta Passon,Mietta Passon,1-8,1,8,0,1,Completed,true,false,false
+AP012041,05 Dec 20,4,Royal South Yarra,Patterson Lakes Navy,No. 1,Sue Gatford,Hayley Gould,Hayley Gould,4-8,4,8,0,1,Completed,true,false,false
+AP012041,05 Dec 20,4,Royal South Yarra,Patterson Lakes Navy,No. 2,Skye Douglass,Victoria Hatzikiriazis,Victoria Hatzikiriazis,1-8,1,8,0,1,Completed,true,false,false
+AP012041,05 Dec 20,4,Royal South Yarra,Patterson Lakes Navy,No. 3,Mietta Passon,Zoe Gorozidis,Zoe Gorozidis,5-8,5,8,0,1,Completed,true,false,false
+AP012041,05 Dec 20,4,Royal South Yarra,Patterson Lakes Navy,No. 4,Axy Park,Sophia Kefos,Sophia Kefos,5-8,5,8,0,1,Completed,true,false,false
+AP012042,05 Dec 20,4,Royal Ave,Mordialloc,No. 1,Kathryn McGregor,Elise Blanchfield,Kathryn McGregor,8-5,8,5,1,0,Completed,true,false,false
+AP012042,05 Dec 20,4,Royal Ave,Mordialloc,No. 2,Sherine Lovell,Sarah Ross,Sherine Lovell,8-0,8,0,1,0,Completed,true,false,false
+AP012042,05 Dec 20,4,Royal Ave,Mordialloc,No. 3,Jodie Hill,Lily Clucas,Jodie Hill,8-5,8,5,1,0,Completed,true,true,false
+AP012042,05 Dec 20,4,Royal Ave,Mordialloc,No. 4,Anna Rolland,Linda Clucas,Linda Clucas,6-8,6,8,0,1,Completed,true,false,false
+AP012043,05 Dec 20,4,Fitzroy,Patterson Lakes Gold,No. 1,Katja Wagner,Sabrina Cypser,Sabrina Cypser,4-8,4,8,0,1,Completed,true,false,false
+AP012043,05 Dec 20,4,Fitzroy,Patterson Lakes Gold,No. 2,Inneke Wagner,Angelee Singh,Angelee Singh,2-8,2,8,0,1,Completed,true,false,false
+AP012043,05 Dec 20,4,Fitzroy,Patterson Lakes Gold,No. 3,Melanie Sawyer,Emma Robinson,Melanie Sawyer,8-3,8,3,1,0,Completed,true,false,false
+AP012043,05 Dec 20,4,Fitzroy,Patterson Lakes Gold,No. 4,Sue Smith,Ava Juste,Ava Juste,1-8,1,8,0,1,Completed,true,false,false
+AP012051,12 Dec 20,5,Patterson Lakes Navy,Patterson Lakes Gold,No. 1,Hayley Gould,Sabrina Cypser,Hayley Gould,8-1,8,1,1,0,Completed,true,false,false
+AP012051,12 Dec 20,5,Patterson Lakes Navy,Patterson Lakes Gold,No. 2,Victoria Hatzikiriazis,Angelee Singh,Angelee Singh,6-8,6,8,0,1,Completed,true,false,false
+AP012051,12 Dec 20,5,Patterson Lakes Navy,Patterson Lakes Gold,No. 3,Zoe Gorozidis,Emma Robinson,Zoe Gorozidis,8-1,8,1,1,0,Completed,true,false,false
+AP012051,12 Dec 20,5,Patterson Lakes Navy,Patterson Lakes Gold,No. 4,Paris Gorozidis,Ava Juste,Ava Juste,0-8,0,8,0,1,Completed,true,false,false
+AP012052,12 Dec 20,5,Royal South Yarra,Royal Ave,No. 1,Sue Gatford,Kathryn McGregor,Sue Gatford,8-0,8,0,1,0,Completed,true,false,false
+AP012052,12 Dec 20,5,Royal South Yarra,Royal Ave,No. 2,Anna O'Gorman,Bev Always,Anna O'Gorman,8-4,8,4,1,0,Completed,true,true,false
+AP012052,12 Dec 20,5,Royal South Yarra,Royal Ave,No. 3,Skye Douglass,Nina Forkas,Skye Douglass,8-3,8,3,1,0,Completed,true,false,false
+AP012052,12 Dec 20,5,Royal South Yarra,Royal Ave,No. 4,Mietta Passon,Marianna Caffyn,Mietta Passon,8-3,8,3,1,0,Completed,true,false,true
+AP012053,12 Dec 20,5,Mordialloc,Fitzroy,No. 1,Abi Kiritharan,Katja Wagner,Abi Kiritharan,8-7,8,7,1,0,Completed,true,false,false
+AP012053,12 Dec 20,5,Mordialloc,Fitzroy,No. 2,Elise Blanchfield,Inneke Wagner,Inneke Wagner,1-8,1,8,0,1,Completed,true,false,false
+AP012053,12 Dec 20,5,Mordialloc,Fitzroy,No. 3,Sarah Ross,Heidi Schwegler,Heidi Schwegler,7-8,7,8,0,1,Completed,true,false,false
+AP012053,12 Dec 20,5,Mordialloc,Fitzroy,No. 4,Linda Clucas,Sara Kernick,Linda Clucas,8-2,8,2,1,0,Completed,true,false,false
+AP012061,30 Jan 21,6,Royal Ave,Patterson Lakes Navy,No. 1,Nicolette Hilaris,Hayley Gould,Hayley Gould,0-8,0,8,0,1,Completed,true,true,false
+AP012061,30 Jan 21,6,Royal Ave,Patterson Lakes Navy,No. 2,Sherine Lovell,Victoria Hatzikiriazis,Victoria Hatzikiriazis,5-8,5,8,0,1,Completed,true,false,false
+AP012061,30 Jan 21,6,Royal Ave,Patterson Lakes Navy,No. 3,Bev Always,Zoe Gorozidis,Zoe Gorozidis,1-8,1,8,0,1,Completed,true,false,false
+AP012061,30 Jan 21,6,Royal Ave,Patterson Lakes Navy,No. 4,Nina Forkas,Sophia Kefos,Nina Forkas,8-3,8,3,1,0,Completed,true,false,false
+AP012062,30 Jan 21,6,Royal South Yarra,Fitzroy,No. 1,Cassie Andrews,Katja Wagner,Cassie Andrews,8-2,8,2,1,0,Completed,true,false,false
+AP012062,30 Jan 21,6,Royal South Yarra,Fitzroy,No. 2,Jennifer Langford,Inneke Wagner,Inneke Wagner,5-8,5,8,0,1,Completed,true,false,false
+AP012062,30 Jan 21,6,Royal South Yarra,Fitzroy,No. 3,Skye Douglass,Sara Kernick,Skye Douglass,8-1,8,1,1,0,Completed,true,false,false
+AP012062,30 Jan 21,6,Royal South Yarra,Fitzroy,No. 4,Axy Park,Mallie Cahill,Mallie Cahill,2-8,2,8,0,1,Completed,true,false,false
+AP012063,30 Jan 21,6,Mordialloc,Patterson Lakes Gold,No. 1,Elise Blanchfield,Angelee Singh,Angelee Singh,1-8,1,8,0,1,Completed,true,false,false
+AP012063,30 Jan 21,6,Mordialloc,Patterson Lakes Gold,No. 2,Pippa Collier,Emma Robinson,Pippa Collier,8-6,8,6,1,0,Completed,true,false,false
+AP012063,30 Jan 21,6,Mordialloc,Patterson Lakes Gold,No. 3,Lily Clucas,Ava Juste,Ava Juste,1-8,1,8,0,1,Completed,true,false,false
+AP012063,30 Jan 21,6,Mordialloc,Patterson Lakes Gold,No. 4,Linda Clucas,Sarah Daniels,Sarah Daniels,0-8,0,8,0,1,Completed,true,false,false
+AP012071,06 Feb 21,7,Patterson Lakes Navy,Mordialloc,No. 1,Victoria Hatzikiriazis,Abi Kiritharan,Victoria Hatzikiriazis,8-0,8,0,1,0,Completed,true,false,false
+AP012071,06 Feb 21,7,Patterson Lakes Navy,Mordialloc,No. 2,Zoe Gorozidis,Elise Blanchfield,Zoe Gorozidis,8-3,8,3,1,0,Completed,true,false,false
+AP012071,06 Feb 21,7,Patterson Lakes Navy,Mordialloc,No. 3,Paris Gorozidis,Sarah Ross,Paris Gorozidis,8-0,8,0,1,0,Completed,true,false,false
+AP012071,06 Feb 21,7,Patterson Lakes Navy,Mordialloc,No. 4,Sophia Kefos,Pippa Collier,Sophia Kefos,8-4,8,4,1,0,Completed,true,false,false
+AP012072,06 Feb 21,7,Patterson Lakes Gold,Royal South Yarra,No. 1,Angelee Singh,Jennifer Langford,Angelee Singh,8-3,8,3,1,0,Completed,true,false,false
+AP012072,06 Feb 21,7,Patterson Lakes Gold,Royal South Yarra,No. 2,Ava Juste,Skye Douglass,Ava Juste,8-4,8,4,1,0,Completed,true,false,false
+AP012072,06 Feb 21,7,Patterson Lakes Gold,Royal South Yarra,No. 3,Sarah Daniels,Grace Keating,Grace Keating,3-8,3,8,0,1,Completed,true,false,true
+AP012072,06 Feb 21,7,Patterson Lakes Gold,Royal South Yarra,No. 4,Sienna Ho,Axy Park,Sienna Ho,8-1,8,1,1,0,Completed,true,true,false
+AP012073,06 Feb 21,7,Fitzroy,Royal Ave,No. 1,Inneke Wagner,Nina Forkas,Inneke Wagner,8-4,8,4,1,0,Completed,true,false,false
+AP012073,06 Feb 21,7,Fitzroy,Royal Ave,No. 2,Mallie Cahill,Anna Rolland,Mallie Cahill,8-1,8,1,1,0,Completed,true,false,false
+AP012073,06 Feb 21,7,Fitzroy,Royal Ave,No. 3,Sara Kernick,Bev Always,Sara Kernick,8-1,8,1,1,0,Completed,true,false,false
+AP012073,06 Feb 21,7,Fitzroy,Royal Ave,No. 4,Sue Smith,Kathryn McGregor,Sue Smith,8-0,8,0,1,0,Completed,true,false,false
+AP012081,20 Feb 21,8,Fitzroy,Patterson Lakes Navy,No. 1,Katja Wagner,Hayley Gould,Hayley Gould,0-8,0,8,0,1,Completed,true,false,false
+AP012081,20 Feb 21,8,Fitzroy,Patterson Lakes Navy,No. 2,Inneke Wagner,Victoria Hatzikiriazis,Victoria Hatzikiriazis,3-8,3,8,0,1,Completed,true,false,false
+AP012081,20 Feb 21,8,Fitzroy,Patterson Lakes Navy,No. 3,Katherine Kennedy,Zoe Gorozidis,Zoe Gorozidis,0-8,0,8,0,1,Completed,true,false,false
+AP012081,20 Feb 21,8,Fitzroy,Patterson Lakes Navy,No. 4,Mallie Cahill,Paris Gorozidis,Paris Gorozidis,1-8,1,8,0,1,Completed,true,false,false
+AP012082,20 Feb 21,8,Royal Ave,Patterson Lakes Gold,No. 1,Nina Forkas,Angelee Singh,Angelee Singh,1-8,1,8,0,1,Completed,true,false,false
+AP012082,20 Feb 21,8,Royal Ave,Patterson Lakes Gold,No. 2,Anna Rolland,Emma Robinson,Emma Robinson,3-8,3,8,0,1,Completed,true,false,false
+AP012082,20 Feb 21,8,Royal Ave,Patterson Lakes Gold,No. 3,Kate Rickwood,Ava Juste,Ava Juste,3-8,3,8,0,1,Completed,true,false,false
+AP012082,20 Feb 21,8,Royal Ave,Patterson Lakes Gold,No. 4,Kathryn McGregor,Sienna Ho,Sienna Ho,0-8,0,8,0,1,Completed,true,false,true
+AP012083,20 Feb 21,8,Royal South Yarra,Mordialloc,No. 1,Sue Gatford,Sarah Ross,Sue Gatford,8-2,8,2,1,0,Completed,true,false,false
+AP012083,20 Feb 21,8,Royal South Yarra,Mordialloc,No. 2,Cassie Andrews,Pippa Collier,Cassie Andrews,8-0,8,0,1,0,Completed,true,false,false
+AP012083,20 Feb 21,8,Royal South Yarra,Mordialloc,No. 3,Skye Douglass,Lily Clucas,Skye Douglass,8-1,8,1,1,0,Completed,true,false,false
+AP012083,20 Feb 21,8,Royal South Yarra,Mordialloc,No. 4,Grace Keating,Linda Clucas,Grace Keating,8-0,8,0,1,0,Completed,true,true,false
+AP012091,27 Feb 21,9,Patterson Lakes Navy,Royal South Yarra,No. 1,Zoe Gorozidis,Sue Gatford,Sue Gatford,0-8,0,8,0,1,Completed,true,false,false
+AP012091,27 Feb 21,9,Patterson Lakes Navy,Royal South Yarra,No. 2,Victoria Hatzikiriazis,Cassie Andrews,Cassie Andrews,0-8,0,8,0,1,Completed,true,false,false
+AP012091,27 Feb 21,9,Patterson Lakes Navy,Royal South Yarra,No. 3,Paris Gorozidis,Jennifer Langford,Paris Gorozidis,8-6,8,6,1,0,Completed,true,false,false
+AP012091,27 Feb 21,9,Patterson Lakes Navy,Royal South Yarra,No. 4,Sophia Kefos,Grace Keating,Grace Keating,1-8,1,8,0,1,Completed,true,false,true
+AP012092,27 Feb 21,9,Mordialloc,Royal Ave,No. 1,Abi Kiritharan,Kathryn McGregor,Abi Kiritharan,8-5,8,5,1,0,Completed,true,false,false
+AP012092,27 Feb 21,9,Mordialloc,Royal Ave,No. 2,Sarah Ross,Sherine Lovell,Sherine Lovell,0-8,0,8,0,1,Completed,true,false,false
+AP012092,27 Feb 21,9,Mordialloc,Royal Ave,No. 3,Lily Clucas,Kate Rickwood,Kate Rickwood,4-8,4,8,0,1,Completed,true,false,false
+AP012092,27 Feb 21,9,Mordialloc,Royal Ave,No. 4,Linda Clucas,Lubica P 4 Kostovka,Linda Clucas,8-6,8,6,1,0,Completed,true,false,true
+AP012093,27 Feb 21,9,Patterson Lakes Gold,Fitzroy,No. 1,Angelee Singh,Melanie Sawyer,Angelee Singh,8-1,8,1,1,0,Completed,true,false,false
+AP012093,27 Feb 21,9,Patterson Lakes Gold,Fitzroy,No. 2,Emma Robinson,Sara Kernick,Emma Robinson,8-6,8,6,1,0,Completed,true,false,false
+AP012093,27 Feb 21,9,Patterson Lakes Gold,Fitzroy,No. 3,Ava Juste,Vivian Havangozo,Ava Juste,8-0,8,0,1,0,Completed,true,false,true
+AP012093,27 Feb 21,9,Patterson Lakes Gold,Fitzroy,No. 4,Sarah Daniels,Jenna Cahill,Sarah Daniels,8-2,8,2,1,0,Completed,true,false,true
+AP012102,13 Mar 21,10,Royal Ave,Royal South Yarra,No. 1,Sherine Lovell,Sue Gatford,Sue Gatford,6-8,6,8,0,1,Completed,true,false,false
+AP012102,13 Mar 21,10,Royal Ave,Royal South Yarra,No. 2,Nina Forkas,Jennifer Langford,Jennifer Langford,2-8,2,8,0,1,Completed,true,false,false
+AP012102,13 Mar 21,10,Royal Ave,Royal South Yarra,No. 3,Kate Rickwood,Skye Douglass,Skye Douglass,5-8,5,8,0,1,Completed,true,false,false
+AP012102,13 Mar 21,10,Royal Ave,Royal South Yarra,No. 4,Kathryn McGregor,Grace Keating,Grace Keating,1-8,1,8,0,1,Completed,true,false,true
+AP012103,13 Mar 21,10,Fitzroy,Mordialloc,No. 1,Katja Wagner,Elise Blanchfield,,2-4,2,4,0,1,Unfinished,false,false,false
+AP012321,,16,Patterson Lakes Navy,Patterson Lakes Gold,No. 1,Hayley Gould,Angelee Singh,Hayley Gould,8-3,8,3,1,0,Completed,true,false,false
+AP012321,,16,Patterson Lakes Navy,Patterson Lakes Gold,No. 2,Victoria Hatzikiriazis,Emma Robinson,Victoria Hatzikiriazis,8-0,8,0,1,0,Completed,true,false,false
+AP012321,,16,Patterson Lakes Navy,Patterson Lakes Gold,No. 3,Zoe Gorozidis,Ava Juste,Zoe Gorozidis,8-7,8,7,1,0,Completed,true,false,false
+AP012321,,16,Patterson Lakes Navy,Patterson Lakes Gold,No. 4,Paris Gorozidis,Sarah Daniels,Paris Gorozidis,8-6,8,6,1,0,Completed,true,false,false

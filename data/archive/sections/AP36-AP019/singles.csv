@@ -1,0 +1,161 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP019012,07 Oct 17,1,Maccabi,BLTC,No. 1,Alan Datt,Andrew Naughton,Andrew Naughton,3-8,3,8,0,1,Completed,true,false,false
+AP019012,07 Oct 17,1,Maccabi,BLTC,No. 2,Adam Rapoport,Lochlan Friedrich,Lochlan Friedrich,5-8,5,8,0,1,Completed,true,false,false
+AP019012,07 Oct 17,1,Maccabi,BLTC,No. 3,Ron Schweitzer,Mitch Pattinson,Mitch Pattinson,6-8,6,8,0,1,Completed,true,false,false
+AP019012,07 Oct 17,1,Maccabi,BLTC,No. 4,Marty Schwarz,Liam Burke,Marty Schwarz,8-4,8,4,1,0,Completed,true,false,false
+AP019013,07 Oct 17,1,Melbourne Univ,Ormond CR,No. 1,Jack Hill-Rennie,Chris Murphy,Chris Murphy,3-8,3,8,0,1,Completed,true,false,false
+AP019013,07 Oct 17,1,Melbourne Univ,Ormond CR,No. 2,Bodhi Shribman,Steve Bendel,Steve Bendel,5-8,5,8,0,1,Completed,true,false,false
+AP019013,07 Oct 17,1,Melbourne Univ,Ormond CR,No. 3,Giacomo Bell,Anthony Murray,Anthony Murray,6-8,6,8,0,1,Completed,true,false,false
+AP019013,07 Oct 17,1,Melbourne Univ,Ormond CR,No. 4,Shakil Ngoh,Andrew Martin,Andrew Martin,3-8,3,8,0,1,Completed,true,false,false
+AP019014,07 Oct 17,1,Le Page,Lauriston,No. 1,Tony Sofo,Scott Newton,Scott Newton,2-8,2,8,0,1,Completed,true,false,false
+AP019014,07 Oct 17,1,Le Page,Lauriston,No. 2,Trevor Hastings,Nathan Kazakevich,Nathan Kazakevich,5-8,5,8,0,1,Completed,true,false,false
+AP019014,07 Oct 17,1,Le Page,Lauriston,No. 3,Brian Govan,Luke Smith,Luke Smith,3-8,3,8,0,1,Completed,true,false,false
+AP019014,07 Oct 17,1,Le Page,Lauriston,No. 4,Kon Chingorev,William Swedosh,Kon Chingorev,8-4,8,4,1,0,Completed,true,false,false
+AP019021,14 Oct 17,2,Lauriston,Tennis World,No. 1,Scott Newton,Antonio Bonillo,Scott Newton,8-0,8,0,1,0,Completed,true,false,false
+AP019021,14 Oct 17,2,Lauriston,Tennis World,No. 2,Nathan Kazakevich,Carlos Libreros,Nathan Kazakevich,8-1,8,1,1,0,Completed,true,false,false
+AP019021,14 Oct 17,2,Lauriston,Tennis World,No. 3,Luke Smith,Tom Ranger,Luke Smith,8-4,8,4,1,0,Completed,true,false,false
+AP019021,14 Oct 17,2,Lauriston,Tennis World,No. 4,Greg Gabai,Albert Japar,Greg Gabai,8-0,8,0,1,0,Completed,true,false,false
+AP019023,14 Oct 17,2,BLTC,Melbourne Univ,No. 1,Lochlan Friedrich,Jack Hill-Rennie,Jack Hill-Rennie,3-8,3,8,0,1,Completed,true,false,false
+AP019023,14 Oct 17,2,BLTC,Melbourne Univ,No. 2,Samasidh Siva Ram,Bodhi Shribman,Bodhi Shribman,1-8,1,8,0,1,Completed,true,false,false
+AP019023,14 Oct 17,2,BLTC,Melbourne Univ,No. 3,Mitch Pattinson,Giacomo Bell,Giacomo Bell,6-8,6,8,0,1,Completed,true,false,false
+AP019023,14 Oct 17,2,BLTC,Melbourne Univ,No. 4,Liam Burke,Rafe Purde,Rafe Purde,3-8,3,8,0,1,Completed,true,false,false
+AP019024,14 Oct 17,2,Ormond CR,Le Page,No. 1,Chris Murphy,Nathan Coombes,Chris Murphy,8-7,8,7,1,0,Completed,true,false,false
+AP019024,14 Oct 17,2,Ormond CR,Le Page,No. 2,Glenn Felsenthal,Tony Sofo,Glenn Felsenthal,8-4,8,4,1,0,Completed,true,false,false
+AP019024,14 Oct 17,2,Ormond CR,Le Page,No. 3,Anthony Murray,Trevor Hastings,Anthony Murray,8-7,8,7,1,0,Completed,true,false,false
+AP019024,14 Oct 17,2,Ormond CR,Le Page,No. 4,Brenton Stokie,Brian Govan,Brenton Stokie,8-1,8,1,1,0,Completed,true,false,false
+AP019031,21 Oct 17,3,Tennis World,Ormond CR,No. 1,Antonio Bonillo,Steve Bendel,Steve Bendel,0-8,0,8,0,1,Completed,true,false,false
+AP019031,21 Oct 17,3,Tennis World,Ormond CR,No. 2,Fredrico Nardari,Glenn Felsenthal,Glenn Felsenthal,6-8,6,8,0,1,Completed,true,false,false
+AP019031,21 Oct 17,3,Tennis World,Ormond CR,No. 3,Justin Watson,Andrew Martin,Andrew Martin,7-8,7,8,0,1,Completed,true,false,false
+AP019031,21 Oct 17,3,Tennis World,Ormond CR,No. 4,Albert Japar,Brenton Stokie,Brenton Stokie,6-8,6,8,0,1,Completed,true,false,false
+AP019032,21 Oct 17,3,Maccabi,Lauriston,No. 1,Ryan Behr,Scott Newton,Ryan Behr,8-3,8,3,1,0,Completed,true,false,false
+AP019032,21 Oct 17,3,Maccabi,Lauriston,No. 2,Alan Datt,Nathan Kazakevich,Nathan Kazakevich,4-8,4,8,0,1,Completed,true,false,false
+AP019032,21 Oct 17,3,Maccabi,Lauriston,No. 3,Ron Schweitzer,Luke Smith,Luke Smith,3-8,3,8,0,1,Completed,true,false,false
+AP019032,21 Oct 17,3,Maccabi,Lauriston,No. 4,Marty Schwarz,William Swedosh,Marty Schwarz,8-4,8,4,1,0,Completed,true,false,false
+AP019034,21 Oct 17,3,Le Page,BLTC,No. 1,Nathan Coombes,Andrew Naughton,Nathan Coombes,8-1,8,1,1,0,Completed,true,false,false
+AP019034,21 Oct 17,3,Le Page,BLTC,No. 2,Tony Sofo,Lochlan Friedrich,Tony Sofo,8-2,8,2,1,0,Completed,true,false,false
+AP019034,21 Oct 17,3,Le Page,BLTC,No. 3,Trevor Hastings,Samasidh Siva Ram,Trevor Hastings,8-7,8,7,1,0,Completed,true,false,false
+AP019034,21 Oct 17,3,Le Page,BLTC,No. 4,Brian Govan,Will McLorinan,Will McLorinan,4-8,4,8,0,1,Completed,true,false,false
+AP019041,28 Oct 17,4,BLTC,Tennis World,No. 1,Andrew Naughton,Antonio Bonillo,Andrew Naughton,8-0,8,0,1,0,Completed,true,false,false
+AP019041,28 Oct 17,4,BLTC,Tennis World,No. 2,Will McLorinan,Fredrico Nardari,Fredrico Nardari,4-8,4,8,0,1,Completed,true,false,false
+AP019041,28 Oct 17,4,BLTC,Tennis World,No. 3,Mitch Pattinson,Carlos Libreros,Mitch Pattinson,8-3,8,3,1,0,Completed,true,false,false
+AP019041,28 Oct 17,4,BLTC,Tennis World,No. 4,Liam Burke,Mark Pilcher,Liam Burke,8-2,8,2,1,0,Completed,true,false,false
+AP019042,28 Oct 17,4,Ormond CR,Maccabi,No. 1,Chris Murphy,Zvi Schweitzer,Chris Murphy,8-1,8,1,1,0,Completed,true,false,false
+AP019042,28 Oct 17,4,Ormond CR,Maccabi,No. 2,Steve Bendel,Alan Datt,Steve Bendel,8-2,8,2,1,0,Completed,true,false,false
+AP019042,28 Oct 17,4,Ormond CR,Maccabi,No. 3,Glenn Felsenthal,Adam Rapoport,Glenn Felsenthal,8-6,8,6,1,0,Completed,true,false,false
+AP019042,28 Oct 17,4,Ormond CR,Maccabi,No. 4,Brenton Stokie,Marty Schwarz,Brenton Stokie,8-7,8,7,1,0,Completed,true,false,false
+AP019043,28 Oct 17,4,Lauriston,Melbourne Univ,No. 1,Nathan Kazakevich,Tsutomu Reid,Nathan Kazakevich,8-7,8,7,1,0,Completed,true,false,false
+AP019043,28 Oct 17,4,Lauriston,Melbourne Univ,No. 2,Luke Smith,Mitchell Khoo,Mitchell Khoo,4-8,4,8,0,1,Completed,true,false,false
+AP019043,28 Oct 17,4,Lauriston,Melbourne Univ,No. 3,Greg Gabai,Giacomo Bell,Greg Gabai,8-2,8,2,1,0,Completed,true,false,false
+AP019043,28 Oct 17,4,Lauriston,Melbourne Univ,No. 4,William Swedosh,Michael Fox,William Swedosh,8-1,8,1,1,0,Completed,true,false,false
+AP019052,11 Nov 17,5,Lauriston,Ormond CR,No. 1,Scott Newton,Chris Murphy,Scott Newton,8-4,8,4,1,0,Completed,true,false,false
+AP019052,11 Nov 17,5,Lauriston,Ormond CR,No. 2,Nathan Kazakevich,Steve Bendel,Steve Bendel,7-8,7,8,0,1,Completed,true,false,false
+AP019052,11 Nov 17,5,Lauriston,Ormond CR,No. 3,Luke Smith,Andrew Martin,Andrew Martin,4-8,4,8,0,1,Completed,true,false,false
+AP019052,11 Nov 17,5,Lauriston,Ormond CR,No. 4,William Swedosh,Brenton Stokie,Brenton Stokie,2-8,2,8,0,1,Completed,true,false,false
+AP019054,11 Nov 17,5,Tennis World,Maccabi,No. 1,Fredrico Nardari,Zvi Schweitzer,Zvi Schweitzer,4-8,4,8,0,1,Completed,true,false,false
+AP019054,11 Nov 17,5,Tennis World,Maccabi,No. 2,Carlos Libreros,Ryan Behr,Ryan Behr,2-8,2,8,0,1,Completed,true,false,false
+AP019054,11 Nov 17,5,Tennis World,Maccabi,No. 3,Justin Watson,Marty Schwarz,Justin Watson,8-5,8,5,1,0,Completed,true,false,false
+AP019054,11 Nov 17,5,Tennis World,Maccabi,No. 4,Mark Pilcher,Ron Schweitzer,Mark Pilcher,8-4,8,4,1,0,Completed,true,false,false
+AP019061,18 Nov 17,6,Maccabi,Melbourne Univ,No. 1,Zvi Schweitzer,Kevin Wu,Kevin Wu,2-8,2,8,0,1,Completed,true,false,false
+AP019061,18 Nov 17,6,Maccabi,Melbourne Univ,No. 2,Marty Schwarz,Giacomo Bell,Marty Schwarz,8-7,8,7,1,0,Completed,true,false,false
+AP019061,18 Nov 17,6,Maccabi,Melbourne Univ,No. 3,Alan Datt,Matthew Bell,Alan Datt,8-3,8,3,1,0,Completed,true,false,false
+AP019061,18 Nov 17,6,Maccabi,Melbourne Univ,No. 4,Adam Rapoport,Robert Komkjenovic,Robert Komkjenovic,3-8,3,8,0,1,Completed,true,false,false
+AP019062,18 Nov 17,6,Le Page,Tennis World,No. 1,Tony Sofo,Fredrico Nardari,Tony Sofo,8-2,8,2,1,0,Completed,true,false,false
+AP019062,18 Nov 17,6,Le Page,Tennis World,No. 2,Trevor Hastings,Mark Pilcher,Mark Pilcher,5-8,5,8,0,1,Completed,true,false,false
+AP019062,18 Nov 17,6,Le Page,Tennis World,No. 3,Brian Govan,Albert Japar,Brian Govan,8-6,8,6,1,0,Completed,true,false,false
+AP019062,18 Nov 17,6,Le Page,Tennis World,No. 4,Kon Chingorev,Fede Bai,Kon Chingorev,8-4,8,4,1,0,Completed,true,false,false
+AP019063,18 Nov 17,6,Ormond CR,BLTC,No. 1,Chris Murphy,Lochlan Friedrich,Chris Murphy,8-3,8,3,1,0,Completed,true,false,false
+AP019063,18 Nov 17,6,Ormond CR,BLTC,No. 2,Steve Bendel,Samasidh Siva Ram,Steve Bendel,8-2,8,2,1,0,Completed,true,false,false
+AP019063,18 Nov 17,6,Ormond CR,BLTC,No. 3,Anthony Murray,Mitch Pattinson,Anthony Murray,8-6,8,6,1,0,Completed,true,false,false
+AP019063,18 Nov 17,6,Ormond CR,BLTC,No. 4,Andrew Martin,Liam Burke,Andrew Martin,8-2,8,2,1,0,Completed,true,false,false
+AP019071,25 Nov 17,7,Tennis World,Melbourne Univ,No. 1,Antonio Bonillo,Kevin Wu,Kevin Wu,3-8,3,8,0,1,Completed,true,false,false
+AP019071,25 Nov 17,7,Tennis World,Melbourne Univ,No. 2,Fredrico Nardari,Giacomo Bell,Giacomo Bell,6-8,6,8,0,1,Completed,true,false,false
+AP019071,25 Nov 17,7,Tennis World,Melbourne Univ,No. 3,Carlos Libreros,Robert Komkjenovic,Robert Komkjenovic,2-8,2,8,0,1,Completed,true,false,false
+AP019071,25 Nov 17,7,Tennis World,Melbourne Univ,No. 4,Tom Ranger,Shakil Ngoh,Shakil Ngoh,7-8,7,8,0,1,Completed,true,false,false
+AP019072,25 Nov 17,7,Maccabi,Le Page,No. 1,Zvi Schweitzer,Nathan Coombes,Nathan Coombes,2-8,2,8,0,1,Completed,true,false,false
+AP019072,25 Nov 17,7,Maccabi,Le Page,No. 2,Marty Schwarz,Tony Sofo,Marty Schwarz,8-3,8,3,1,0,Completed,true,false,false
+AP019072,25 Nov 17,7,Maccabi,Le Page,No. 3,Alan Datt,Trevor Hastings,Alan Datt,8-2,8,2,1,0,Completed,true,false,false
+AP019072,25 Nov 17,7,Maccabi,Le Page,No. 4,Ron Schweitzer,Brian Govan,Ron Schweitzer,8-3,8,3,1,0,Completed,true,false,false
+AP019073,25 Nov 17,7,Lauriston,BLTC,No. 1,Scott Newton,Andrew Naughton,Andrew Naughton,5-8,5,8,0,1,Completed,true,false,false
+AP019073,25 Nov 17,7,Lauriston,BLTC,No. 2,Nathan Kazakevich,Lochlan Friedrich,Nathan Kazakevich,8-2,8,2,1,0,Completed,true,false,false
+AP019073,25 Nov 17,7,Lauriston,BLTC,No. 3,Luke Smith,Samasidh Siva Ram,Samasidh Siva Ram,3-8,3,8,0,1,Completed,true,false,false
+AP019073,25 Nov 17,7,Lauriston,BLTC,No. 4,William Swedosh,Will McLorinan,Will McLorinan,4-8,4,8,0,1,Completed,true,false,false
+AP019091,09 Dec 17,9,Tennis World,Lauriston,No. 1,Antonio Bonillo,Scott Newton,Scott Newton,2-8,2,8,0,1,Completed,true,false,false
+AP019091,09 Dec 17,9,Tennis World,Lauriston,No. 2,Fredrico Nardari,Nathan Kazakevich,Fredrico Nardari,8-5,8,5,1,0,Completed,true,false,false
+AP019091,09 Dec 17,9,Tennis World,Lauriston,No. 3,Tom Ranger,Luke Smith,Luke Smith,6-8,6,8,0,1,Completed,true,false,false
+AP019091,09 Dec 17,9,Tennis World,Lauriston,No. 4,Mark Pilcher,William Swedosh,Mark Pilcher,8-1,8,1,1,0,Completed,true,false,false
+AP019093,09 Dec 17,9,Melbourne Univ,BLTC,No. 1,Robert Komkjenovic,Andrew Naughton,Andrew Naughton,4-8,4,8,0,1,Completed,true,false,false
+AP019093,09 Dec 17,9,Melbourne Univ,BLTC,No. 2,Bodhi Shribman,Lochlan Friedrich,Bodhi Shribman,8-1,8,1,1,0,Completed,true,false,false
+AP019093,09 Dec 17,9,Melbourne Univ,BLTC,No. 3,Kuberan Rk,Samasidh Siva Ram,Samasidh Siva Ram,6-8,6,8,0,1,Completed,true,false,false
+AP019093,09 Dec 17,9,Melbourne Univ,BLTC,No. 4,Jeffrey Ng,Mitch Pattinson,Mitch Pattinson,2-8,2,8,0,1,Completed,true,false,false
+AP019094,09 Dec 17,9,Le Page,Ormond CR,No. 1,Nathan Coombes,Chris Murphy,Chris Murphy,4-8,4,8,0,1,Completed,true,false,false
+AP019094,09 Dec 17,9,Le Page,Ormond CR,No. 2,Tony Sofo,Glenn Felsenthal,Tony Sofo,8-7,8,7,1,0,Completed,true,false,false
+AP019094,09 Dec 17,9,Le Page,Ormond CR,No. 3,Trevor Hastings,Andrew Martin,Andrew Martin,2-8,2,8,0,1,Completed,true,false,false
+AP019094,09 Dec 17,9,Le Page,Ormond CR,No. 4,Brian Govan,Brenton Stokie,Brenton Stokie,4-8,4,8,0,1,Completed,true,false,false
+AP019101,16 Dec 17,10,Ormond CR,Tennis World,No. 1,Chris Murphy,Tom Ranger,Chris Murphy,8-2,8,2,1,0,Completed,true,false,false
+AP019101,16 Dec 17,10,Ormond CR,Tennis World,No. 2,Steve Bendel,Fredrico Nardari,Steve Bendel,8-0,8,0,1,0,Completed,true,false,false
+AP019101,16 Dec 17,10,Ormond CR,Tennis World,No. 3,Andrew Martin,Mark Pilcher,Andrew Martin,8-2,8,2,1,0,Completed,true,false,false
+AP019101,16 Dec 17,10,Ormond CR,Tennis World,No. 4,Brenton Stokie,Carlos Libreros,Brenton Stokie,8-0,8,0,1,0,Completed,true,false,false
+AP019102,16 Dec 17,10,Lauriston,Maccabi,No. 1,Scott Newton,Zvi Schweitzer,Scott Newton,8-2,8,2,1,0,Completed,true,false,false
+AP019102,16 Dec 17,10,Lauriston,Maccabi,No. 2,Nathan Kazakevich,Ryan Behr,Nathan Kazakevich,8-1,8,1,1,0,Completed,true,false,false
+AP019102,16 Dec 17,10,Lauriston,Maccabi,No. 3,Luke Smith,Alan Datt,Alan Datt,2-8,2,8,0,1,Completed,true,false,false
+AP019102,16 Dec 17,10,Lauriston,Maccabi,No. 4,William Swedosh,Adam Rapoport,William Swedosh,8-5,8,5,1,0,Completed,true,false,false
+AP019111,03 Feb 18,11,Tennis World,BLTC,No. 1,Antonio Bonillo,Lochlan Friedrich,Lochlan Friedrich,0-8,0,8,0,1,Completed,true,false,false
+AP019111,03 Feb 18,11,Tennis World,BLTC,No. 2,Mark Pilcher,Will McLorinan,Will McLorinan,0-8,0,8,0,1,Completed,true,false,false
+AP019111,03 Feb 18,11,Tennis World,BLTC,No. 3,Carlos Libreros,Samasidh Siva Ram,Carlos Libreros,8-0,8,0,1,0,Completed,true,false,false
+AP019111,03 Feb 18,11,Tennis World,BLTC,No. 4,Oscar Blanco,Mitch Pattinson,Mitch Pattinson,2-8,2,8,0,1,Completed,true,false,false
+AP019112,03 Feb 18,11,Maccabi,Ormond CR,No. 1,Ryan Behr,Steve Bendel,Steve Bendel,3-8,3,8,0,1,Completed,true,false,false
+AP019112,03 Feb 18,11,Maccabi,Ormond CR,No. 2,Marty Schwarz,Anthony Murray,Anthony Murray,6-8,6,8,0,1,Completed,true,false,false
+AP019112,03 Feb 18,11,Maccabi,Ormond CR,No. 3,Adam Rapoport,Andrew Martin,Andrew Martin,3-8,3,8,0,1,Completed,true,false,false
+AP019112,03 Feb 18,11,Maccabi,Ormond CR,No. 4,Michael Rabinovich,Michael Rosner,Michael Rosner,6-8,6,8,0,1,Completed,true,false,false
+AP019113,03 Feb 18,11,Melbourne Univ,Lauriston,No. 1,Kevin Wu,Scott Newton,Kevin Wu,8-4,8,4,1,0,Completed,true,false,false
+AP019113,03 Feb 18,11,Melbourne Univ,Lauriston,No. 2,Giacomo Bell,Nathan Kazakevich,Nathan Kazakevich,2-8,2,8,0,1,Completed,true,false,false
+AP019113,03 Feb 18,11,Melbourne Univ,Lauriston,No. 3,Shakil Ngoh,Greg Gabai,Greg Gabai,2-8,2,8,0,1,Completed,true,false,false
+AP019113,03 Feb 18,11,Melbourne Univ,Lauriston,No. 4,Siddhu Sundaram,William Swedosh,Siddhu Sundaram,8-7,8,7,1,0,Completed,true,false,false
+AP019121,10 Feb 18,12,Le Page,Melbourne Univ,No. 1,Nathan Coombes,Giacomo Bell,Nathan Coombes,8-0,8,0,1,0,Completed,true,false,false
+AP019121,10 Feb 18,12,Le Page,Melbourne Univ,No. 2,Trevor Hastings,Matthew Bell,Matthew Bell,5-8,5,8,0,1,Completed,true,false,false
+AP019121,10 Feb 18,12,Le Page,Melbourne Univ,No. 3,Kon Chingorev,Robert Komkjenovic,Robert Komkjenovic,4-8,4,8,0,1,Completed,true,false,false
+AP019121,10 Feb 18,12,Le Page,Melbourne Univ,No. 4,Brian Govan,Shakil Ngoh,Shakil Ngoh,2-8,2,8,0,1,Completed,true,false,false
+AP019122,10 Feb 18,12,Ormond CR,Lauriston,No. 1,Chris Murphy,Scott Newton,Chris Murphy,8-2,8,2,1,0,Completed,true,false,false
+AP019122,10 Feb 18,12,Ormond CR,Lauriston,No. 2,Steve Bendel,Nathan Kazakevich,Nathan Kazakevich,6-8,6,8,0,1,Completed,true,false,false
+AP019122,10 Feb 18,12,Ormond CR,Lauriston,No. 3,Glenn Felsenthal,Luke Smith,Glenn Felsenthal,8-2,8,2,1,0,Completed,true,false,false
+AP019122,10 Feb 18,12,Ormond CR,Lauriston,No. 4,Andrew Martin,William Swedosh,Andrew Martin,8-2,8,2,1,0,Completed,true,false,false
+AP019124,10 Feb 18,12,Maccabi,Tennis World,No. 1,Zvi Schweitzer,Carlos Libreros,Zvi Schweitzer,8-5,8,5,1,0,Completed,true,false,false
+AP019124,10 Feb 18,12,Maccabi,Tennis World,No. 2,Ryan Behr,Tom Ranger,Ryan Behr,8-0,8,0,1,0,Completed,true,false,false
+AP019124,10 Feb 18,12,Maccabi,Tennis World,No. 3,Alan Datt,Albert Japar,Alan Datt,8-2,8,2,1,0,Completed,true,false,false
+AP019124,10 Feb 18,12,Maccabi,Tennis World,No. 4,Michael Rabinovich,Dan Nadal,Dan Nadal,4-8,4,8,0,1,Completed,true,false,false
+AP019131,17 Feb 18,13,Melbourne Univ,Maccabi,No. 1,Matthew Bell,Zvi Schweitzer,Matthew Bell,8-7,8,7,1,0,Completed,true,false,false
+AP019131,17 Feb 18,13,Melbourne Univ,Maccabi,No. 2,Giacomo Bell,Ryan Behr,Ryan Behr,5-8,5,8,0,1,Completed,true,false,false
+AP019131,17 Feb 18,13,Melbourne Univ,Maccabi,No. 3,Robert Komkjenovic,Marty Schwarz,Marty Schwarz,5-8,5,8,0,1,Completed,true,false,false
+AP019131,17 Feb 18,13,Melbourne Univ,Maccabi,No. 4,Shakil Ngoh,Alan Datt,Shakil Ngoh,8-6,8,6,1,0,Completed,true,false,false
+AP019132,17 Feb 18,13,Tennis World,Le Page,No. 1,Fredrico Nardari,Nathan Coombes,Nathan Coombes,0-8,0,8,0,1,Completed,true,false,false
+AP019132,17 Feb 18,13,Tennis World,Le Page,No. 2,Tom Ranger,Tony Sofo,Tony Sofo,1-8,1,8,0,1,Completed,true,false,false
+AP019132,17 Feb 18,13,Tennis World,Le Page,No. 3,Daniel Mastello,Kon Chingorev,Daniel Mastello,8-5,8,5,1,0,Completed,true,false,false
+AP019132,17 Feb 18,13,Tennis World,Le Page,No. 4,Mark Pilcher,Brian Govan,Mark Pilcher,8-3,8,3,1,0,Completed,true,false,false
+AP019133,17 Feb 18,13,BLTC,Ormond CR,No. 1,Andrew Naughton,Chris Murphy,Chris Murphy,0-8,0,8,0,1,Completed,true,false,false
+AP019133,17 Feb 18,13,BLTC,Ormond CR,No. 2,Lochlan Friedrich,Glenn Felsenthal,Glenn Felsenthal,6-8,6,8,0,1,Completed,true,false,false
+AP019133,17 Feb 18,13,BLTC,Ormond CR,No. 3,Mitch Pattinson,Anthony Murray,Mitch Pattinson,8-5,8,5,1,0,Completed,true,false,false
+AP019133,17 Feb 18,13,BLTC,Ormond CR,No. 4,Liam Burke,Brenton Stokie,Liam Burke,8-2,8,2,1,0,Completed,true,false,false
+AP019142,24 Feb 18,14,Le Page,Maccabi,No. 1,Nathan Coombes,Zvi Schweitzer,Nathan Coombes,8-0,8,0,1,0,Completed,true,false,false
+AP019142,24 Feb 18,14,Le Page,Maccabi,No. 2,Tony Sofo,Ryan Behr,Tony Sofo,8-6,8,6,1,0,Completed,true,false,false
+AP019142,24 Feb 18,14,Le Page,Maccabi,No. 3,Trevor Hastings,Marty Schwarz,Trevor Hastings,8-6,8,6,1,0,Completed,true,false,false
+AP019142,24 Feb 18,14,Le Page,Maccabi,No. 4,Brian Govan,Ron Schweitzer,Ron Schweitzer,2-8,2,8,0,1,Completed,true,false,false
+AP019143,24 Feb 18,14,BLTC,Lauriston,No. 1,Andrew Naughton,Scott Newton,Scott Newton,4-8,4,8,0,1,Completed,true,false,false
+AP019143,24 Feb 18,14,BLTC,Lauriston,No. 2,Samasidh Siva Ram,Nathan Kazakevich,Samasidh Siva Ram,8-2,8,2,1,0,Completed,true,false,false
+AP019143,24 Feb 18,14,BLTC,Lauriston,No. 3,Will McLorinan,Luke Smith,Luke Smith,3-8,3,8,0,1,Completed,true,false,false
+AP019143,24 Feb 18,14,BLTC,Lauriston,No. 4,Liam Burke,Greg Gabai,Liam Burke,8-5,8,5,1,0,Completed,true,false,false
+AP019301,,16,Ormond CR,Lauriston,No. 1,Chris Murphy,Scott Newton,Chris Murphy,8-0,8,0,1,0,Completed,true,false,false
+AP019301,,16,Ormond CR,Lauriston,No. 2,Steve Bendel,Nathan Kazakevich,Nathan Kazakevich,7-8,7,8,0,1,Completed,true,false,false
+AP019301,,16,Ormond CR,Lauriston,No. 3,Glenn Felsenthal,Luke Smith,Glenn Felsenthal,8-1,8,1,1,0,Completed,true,false,false
+AP019301,,16,Ormond CR,Lauriston,No. 4,Anthony Murray,Greg Gabai,Anthony Murray,8-2,8,2,1,0,Completed,true,false,false
+AP019302,,16,Melbourne Univ,BLTC,No. 1,Kevin Wu,Andrew Naughton,Andrew Naughton,4-8,4,8,0,1,Completed,true,false,false
+AP019302,,16,Melbourne Univ,BLTC,No. 2,Giacomo Bell,Lochlan Friedrich,Lochlan Friedrich,4-8,4,8,0,1,Completed,true,false,false
+AP019302,,16,Melbourne Univ,BLTC,No. 3,Robert Komkjenovic,Will McLorinan,Robert Komkjenovic,8-3,8,3,1,0,Completed,true,false,false
+AP019302,,16,Melbourne Univ,BLTC,No. 4,Shakil Ngoh,Liam Burke,Liam Burke,6-8,6,8,0,1,Completed,true,false,false
+AP019311,,16,Lauriston,BLTC,No. 1,Scott Newton,Andrew Naughton,Andrew Naughton,7-8,7,8,0,1,Completed,true,false,false
+AP019311,,16,Lauriston,BLTC,No. 2,Nathan Kazakevich,Lochlan Friedrich,Nathan Kazakevich,8-3,8,3,1,0,Completed,true,false,false
+AP019311,,16,Lauriston,BLTC,No. 3,Luke Smith,Samasidh Siva Ram,Samasidh Siva Ram,5-8,5,8,0,1,Completed,true,false,false
+AP019311,,16,Lauriston,BLTC,No. 4,Greg Gabai,Liam Burke,Greg Gabai,8-1,8,1,1,0,Completed,true,false,false
+AP019321,,17,Ormond CR,Lauriston,No. 1,Chris Murphy,Scott Newton,Chris Murphy,8-6,8,6,1,0,Completed,true,false,false
+AP019321,,17,Ormond CR,Lauriston,No. 2,Steve Bendel,Nathan Kazakevich,Steve Bendel,8-5,8,5,1,0,Completed,true,false,false
+AP019321,,17,Ormond CR,Lauriston,No. 3,Anthony Murray,Luke Smith,Anthony Murray,8-3,8,3,1,0,Completed,true,false,false
+AP019321,,17,Ormond CR,Lauriston,No. 4,Andrew Martin,Greg Gabai,Greg Gabai,6-8,6,8,0,1,Completed,true,false,false

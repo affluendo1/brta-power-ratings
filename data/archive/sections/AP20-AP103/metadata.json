@@ -1,0 +1,97 @@
+{
+  "asset_id": "AP20-AP103",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 09/10",
+  "season_id": "AP20",
+  "season_label": "Summer 09/10",
+  "source_section_code": "AP103",
+  "section_label": "Mens S/D 4",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Lauriston",
+      "wins": 0,
+      "points": 100,
+      "percentage": 161.71,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "MCC",
+      "wins": 0,
+      "points": 74,
+      "percentage": 120.51,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "St Pats Mentone",
+      "wins": 0,
+      "points": 74,
+      "percentage": 120.08,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Melbourne Grammar",
+      "wins": 0,
+      "points": 66,
+      "percentage": 110.69,
+      "marker": "R"
+    },
+    {
+      "position": 5,
+      "team": "Maccabi",
+      "wins": 0,
+      "points": 46,
+      "percentage": 85.1,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Dendy Park",
+      "wins": 0,
+      "points": 37,
+      "percentage": 78.11,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "GPHC",
+      "wins": 0,
+      "points": 23,
+      "percentage": 54.46,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP20-AP103",
+  "fixtures": 60,
+  "completed_fixtures": 46,
+  "draw_fixtures": 4,
+  "singles_rubbers": 184,
+  "doubles_rubbers": 91,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP103311 doubles No. 2: '3-6 6-4'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

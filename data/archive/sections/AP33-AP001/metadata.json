@@ -1,0 +1,79 @@
+{
+  "asset_id": "AP33-AP001",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Winter 2016",
+  "season_id": "AP33",
+  "season_label": "Winter 2016",
+  "source_section_code": "AP001",
+  "section_label": "Ladies sets 1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Hampton",
+      "wins": 7,
+      "points": 62,
+      "percentage": 124.0,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Dandenong",
+      "wins": 6,
+      "points": 60,
+      "percentage": 140.27,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Port Melbourne",
+      "wins": 7,
+      "points": 60,
+      "percentage": 123.63,
+      "marker": "R"
+    },
+    {
+      "position": 4,
+      "team": "Legend Park",
+      "wins": 5,
+      "points": 48,
+      "percentage": 107.69,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Highmoor Uniting",
+      "wins": 0,
+      "points": 10,
+      "percentage": 41.59,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 1,
+    "doublesTarget": 10,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP33-AP001",
+  "fixtures": 47,
+  "completed_fixtures": 29,
+  "draw_fixtures": 46,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 114,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

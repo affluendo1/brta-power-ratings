@@ -1,0 +1,95 @@
+{
+  "asset_id": "AP20-AP104",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 09/10",
+  "season_id": "AP20",
+  "season_label": "Summer 09/10",
+  "source_section_code": "AP104",
+  "section_label": "Mens S/D 5",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Dendy Park",
+      "wins": 0,
+      "points": 91,
+      "percentage": 153.11,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "Sandringham",
+      "wins": 0,
+      "points": 76,
+      "percentage": 110.13,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Le Page",
+      "wins": 0,
+      "points": 74,
+      "percentage": 114.31,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Highmoor Uniting",
+      "wins": 0,
+      "points": 72,
+      "percentage": 126.8,
+      "marker": "P"
+    },
+    {
+      "position": 5,
+      "team": "BLTC",
+      "wins": 0,
+      "points": 53,
+      "percentage": 83.91,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Old Scotch",
+      "wins": 0,
+      "points": 34,
+      "percentage": 76.11,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "East Malvern",
+      "wins": 0,
+      "points": 20,
+      "percentage": 63.33,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP20-AP104",
+  "fixtures": 60,
+  "completed_fixtures": 46,
+  "draw_fixtures": 4,
+  "singles_rubbers": 184,
+  "doubles_rubbers": 92,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

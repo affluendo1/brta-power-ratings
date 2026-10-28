@@ -1,0 +1,117 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP008011,06 May 23,1,St Anthony's,Ormond,No. 1,Johnny Asimenias,Nathan McCracken,Johnny Asimenias,8-5,8,5,1,0,Completed,true,false,false
+AP008011,06 May 23,1,St Anthony's,Ormond,No. 2,Chris Gain,Andrew Lipson,Chris Gain,8-4,8,4,1,0,Completed,true,false,false
+AP008011,06 May 23,1,St Anthony's,Ormond,No. 3,Anthony Nosek,Chris Gogoll,Anthony Nosek,8-5,8,5,1,0,Completed,true,false,false
+AP008011,06 May 23,1,St Anthony's,Ormond,No. 4,Anthony Straford,Steve Gelagin,Anthony Straford,8-7,8,7,1,0,Completed,true,false,false
+AP008021,13 May 23,2,Royal Ave,St Anthony's,No. 1,Justin Alway,Johnny Asimenias,Johnny Asimenias,5-8,5,8,0,1,Completed,true,false,false
+AP008021,13 May 23,2,Royal Ave,St Anthony's,No. 2,Stefan Harrer,Anthony Nosek,Anthony Nosek,3-8,3,8,0,1,Completed,true,false,false
+AP008021,13 May 23,2,Royal Ave,St Anthony's,No. 3,Hesham Soliman,Anthony Straford,Anthony Straford,0-8,0,8,0,1,Completed,true,false,false
+AP008021,13 May 23,2,Royal Ave,St Anthony's,No. 4,David Urpani,Joseph Obsioma,Joseph Obsioma,3-8,3,8,0,1,Completed,true,false,true
+AP008023,13 May 23,2,Ormond,St Pats Mentone,No. 1,Nathan McCracken,Cameron De Silva,Cameron De Silva,1-8,1,8,0,1,Completed,true,false,false
+AP008023,13 May 23,2,Ormond,St Pats Mentone,No. 2,Chris Gogoll,Sam Clayton,Chris Gogoll,8-6,8,6,1,0,Completed,true,false,false
+AP008023,13 May 23,2,Ormond,St Pats Mentone,No. 3,Simon Currey,Nick Hall,Nick Hall,6-8,6,8,0,1,Completed,true,false,false
+AP008023,13 May 23,2,Ormond,St Pats Mentone,No. 4,Steve Gelagin,Mike De Silva,Steve Gelagin,8-5,8,5,1,0,Completed,true,false,false
+AP008031,20 May 23,3,St Anthony's,St Pats Mentone,No. 1,Johnny Asimenias,Cameron De Silva,Cameron De Silva,2-8,2,8,0,1,Completed,true,false,false
+AP008031,20 May 23,3,St Anthony's,St Pats Mentone,No. 2,Chris Gain,David Lawry,Chris Gain,8-6,8,6,1,0,Completed,true,false,false
+AP008031,20 May 23,3,St Anthony's,St Pats Mentone,No. 3,Anthony Nosek,Sam Clayton,Sam Clayton,7-8,7,8,0,1,Completed,true,false,false
+AP008031,20 May 23,3,St Anthony's,St Pats Mentone,No. 4,Anthony Straford,Nick Hall,Anthony Straford,8-0,8,0,1,0,Completed,true,false,false
+AP008032,20 May 23,3,Sth Hawthorn,Ormond,No. 1,Hugh Blacket,Ben Darrou,Ben Darrou,2-8,2,8,0,1,Completed,true,false,false
+AP008032,20 May 23,3,Sth Hawthorn,Ormond,No. 2,Simon Corrie,Andrew Lipson,Simon Corrie,8-3,8,3,1,0,Completed,true,false,false
+AP008032,20 May 23,3,Sth Hawthorn,Ormond,No. 3,Joe Barr,Steve Gelagin,Steve Gelagin,3-8,3,8,0,1,Completed,true,false,false
+AP008032,20 May 23,3,Sth Hawthorn,Ormond,No. 4,David Wegener,Michael Hudson,Michael Hudson,2-8,2,8,0,1,Completed,true,false,false
+AP008042,27 May 23,4,Ormond,Royal Ave,No. 1,Nathan McCracken,Justin Alway,Nathan McCracken,8-2,8,2,1,0,Completed,true,false,false
+AP008042,27 May 23,4,Ormond,Royal Ave,No. 2,Simon Currey,Stefan Harrer,Simon Currey,8-7,8,7,1,0,Completed,true,false,false
+AP008042,27 May 23,4,Ormond,Royal Ave,No. 3,Michael Hudson,David Urpani,Michael Hudson,8-0,8,0,1,0,Completed,true,false,false
+AP008042,27 May 23,4,Ormond,Royal Ave,No. 4,Phil Bai,Dean Craig,Phil Bai,8-4,8,4,1,0,Completed,true,true,false
+AP008043,27 May 23,4,St Pats Mentone,Sth Hawthorn,No. 1,Cameron De Silva,Hugh Blacket,Cameron De Silva,8-4,8,4,1,0,Completed,true,false,false
+AP008043,27 May 23,4,St Pats Mentone,Sth Hawthorn,No. 2,Sam Clayton,Simon Corrie,Simon Corrie,5-8,5,8,0,1,Completed,true,false,false
+AP008043,27 May 23,4,St Pats Mentone,Sth Hawthorn,No. 3,Nick Hall,Rolf Tessemer,Rolf Tessemer,2-8,2,8,0,1,Completed,true,false,false
+AP008043,27 May 23,4,St Pats Mentone,Sth Hawthorn,No. 4,Mike De Silva,Andrew Antonopoulos,Mike De Silva,8-0,8,0,1,0,Completed,true,false,false
+AP008051,03 Jun 23,5,St Anthony's,Sth Hawthorn,No. 1,Johnny Asimenias,Hugh Blacket,Hugh Blacket,6-8,6,8,0,1,Completed,true,false,false
+AP008051,03 Jun 23,5,St Anthony's,Sth Hawthorn,No. 2,Chris Gain,Simon Corrie,Chris Gain,8-3,8,3,1,0,Completed,true,false,false
+AP008051,03 Jun 23,5,St Anthony's,Sth Hawthorn,No. 3,Anthony Nosek,Andrew Antonopoulos,Anthony Nosek,8-3,8,3,1,0,Completed,true,false,false
+AP008051,03 Jun 23,5,St Anthony's,Sth Hawthorn,No. 4,Anthony Straford,Rolf Tessemer,Anthony Straford,8-4,8,4,1,0,Completed,true,false,false
+AP008053,03 Jun 23,5,Royal Ave,St Pats Mentone,No. 1,Hesham Soliman,Cameron De Silva,Cameron De Silva,1-8,1,8,0,1,Completed,true,false,false
+AP008053,03 Jun 23,5,Royal Ave,St Pats Mentone,No. 2,David Urpani,David Lawry,David Lawry,2-8,2,8,0,1,Completed,true,false,false
+AP008053,03 Jun 23,5,Royal Ave,St Pats Mentone,No. 3,Dean Craig,Nick Hall,Nick Hall,3-8,3,8,0,1,Completed,true,false,false
+AP008053,03 Jun 23,5,Royal Ave,St Pats Mentone,No. 4,Jeremy Rouch,Mike De Silva,Mike De Silva,3-8,3,8,0,1,Completed,true,false,false
+AP008061,17 Jun 23,6,Ormond,St Anthony's,No. 1,Nathan McCracken,Johnny Asimenias,Johnny Asimenias,2-8,2,8,0,1,Completed,true,false,false
+AP008061,17 Jun 23,6,Ormond,St Anthony's,No. 2,Simon Currey,Chris Gain,Chris Gain,1-8,1,8,0,1,Completed,true,false,false
+AP008061,17 Jun 23,6,Ormond,St Anthony's,No. 3,Michael Hudson,Anthony Straford,Anthony Straford,2-8,2,8,0,1,Completed,true,false,false
+AP008061,17 Jun 23,6,Ormond,St Anthony's,No. 4,Phil Bai,Chris Doherty,Chris Doherty,4-8,4,8,0,1,Completed,true,true,true
+AP008063,17 Jun 23,6,Royal Ave,Sth Hawthorn,No. 1,Angus Urquart,Steffan Raab,Steffan Raab,3-8,3,8,0,1,Completed,true,true,false
+AP008063,17 Jun 23,6,Royal Ave,Sth Hawthorn,No. 2,Jeremy Rouch,Hugh Blacket,Hugh Blacket,1-8,1,8,0,1,Completed,true,false,false
+AP008063,17 Jun 23,6,Royal Ave,Sth Hawthorn,No. 3,Dean Craig,Andrew Antonopoulos,Andrew Antonopoulos,5-8,5,8,0,1,Completed,true,false,false
+AP008063,17 Jun 23,6,Royal Ave,Sth Hawthorn,No. 4,Rohan Bardwell,Rolf Tessemer,Rolf Tessemer,3-8,3,8,0,1,Completed,true,true,false
+AP008071,24 Jun 23,7,St Anthony's,Royal Ave,No. 1,Johnny Asimenias,Justin Alway,Johnny Asimenias,8-1,8,1,1,0,Completed,true,false,false
+AP008071,24 Jun 23,7,St Anthony's,Royal Ave,No. 2,Chris Gain,Stefan Harrer,Chris Gain,8-2,8,2,1,0,Completed,true,false,false
+AP008071,24 Jun 23,7,St Anthony's,Royal Ave,No. 3,Anthony Nosek,Hesham Soliman,Anthony Nosek,8-1,8,1,1,0,Completed,true,false,false
+AP008071,24 Jun 23,7,St Anthony's,Royal Ave,No. 4,Anthony Straford,Dean Craig,Anthony Straford,8-2,8,2,1,0,Completed,true,false,false
+AP008073,24 Jun 23,7,St Pats Mentone,Ormond,No. 1,Cameron De Silva,Nathan McCracken,Cameron De Silva,8-2,8,2,1,0,Completed,true,false,false
+AP008073,24 Jun 23,7,St Pats Mentone,Ormond,No. 2,David Lawry,Simon Currey,David Lawry,8-2,8,2,1,0,Completed,true,false,false
+AP008073,24 Jun 23,7,St Pats Mentone,Ormond,No. 3,Nick Hall,Michael Hudson,Michael Hudson,7-8,7,8,0,1,Completed,true,false,false
+AP008073,24 Jun 23,7,St Pats Mentone,Ormond,No. 4,James Campbell,Phil Bai,James Campbell,8-6,8,6,1,0,Completed,true,true,true
+AP008081,08 Jul 23,8,St Pats Mentone,St Anthony's,No. 1,Cameron De Silva,Johnny Asimenias,Cameron De Silva,8-2,8,2,1,0,Completed,true,false,false
+AP008081,08 Jul 23,8,St Pats Mentone,St Anthony's,No. 2,David Lawry,Chris Gain,Chris Gain,2-8,2,8,0,1,Completed,true,false,false
+AP008081,08 Jul 23,8,St Pats Mentone,St Anthony's,No. 3,Nick Hall,Anthony Nosek,Anthony Nosek,4-8,4,8,0,1,Completed,true,false,false
+AP008081,08 Jul 23,8,St Pats Mentone,St Anthony's,No. 4,Mike De Silva,Ray Tesoriero,Mike De Silva,8-5,8,5,1,0,Completed,true,false,true
+AP008082,08 Jul 23,8,Ormond,Sth Hawthorn,No. 1,Nathan McCracken,Andrew Antonopoulos,Nathan McCracken,8-4,8,4,1,0,Completed,true,false,false
+AP008082,08 Jul 23,8,Ormond,Sth Hawthorn,No. 2,Steve Gelagin,David Wegener,Steve Gelagin,8-5,8,5,1,0,Completed,true,false,false
+AP008082,08 Jul 23,8,Ormond,Sth Hawthorn,No. 3,Simon Currey,Rolf Tessemer,Rolf Tessemer,3-8,3,8,0,1,Completed,true,false,false
+AP008082,08 Jul 23,8,Ormond,Sth Hawthorn,No. 4,Michael Hudson,Joe Barr,Michael Hudson,8-4,8,4,1,0,Completed,true,false,false
+AP008092,15 Jul 23,9,Royal Ave,Ormond,No. 1,Stefan Harrer,Chris Gogoll,Chris Gogoll,4-8,4,8,0,1,Completed,true,false,false
+AP008092,15 Jul 23,9,Royal Ave,Ormond,No. 2,Hesham Soliman,Steve Gelagin,Steve Gelagin,2-8,2,8,0,1,Completed,true,false,false
+AP008092,15 Jul 23,9,Royal Ave,Ormond,No. 3,David Urpani,Andres Sammanco,Andres Sammanco,2-8,2,8,0,1,Completed,true,false,true
+AP008092,15 Jul 23,9,Royal Ave,Ormond,No. 4,Jeremy Rouch,Rex Ho,Jeremy Rouch,8-4,8,4,1,0,Completed,true,false,true
+AP008093,15 Jul 23,9,Sth Hawthorn,St Pats Mentone,No. 1,Steffan Raab,Cameron De Silva,Cameron De Silva,2-8,2,8,0,1,Completed,true,false,false
+AP008093,15 Jul 23,9,Sth Hawthorn,St Pats Mentone,No. 2,Hugh Blacket,David Lawry,David Lawry,4-8,4,8,0,1,Completed,true,false,false
+AP008093,15 Jul 23,9,Sth Hawthorn,St Pats Mentone,No. 3,Simon Corrie,Nick Hall,Nick Hall,3-8,3,8,0,1,Completed,true,false,false
+AP008093,15 Jul 23,9,Sth Hawthorn,St Pats Mentone,No. 4,Andrew Antonopoulos,Mike De Silva,Andrew Antonopoulos,8-4,8,4,1,0,Completed,true,false,false
+AP008101,22 Jul 23,10,Sth Hawthorn,St Anthony's,No. 1,Steffan Raab,Chris Gain,Chris Gain,2-8,2,8,0,1,Completed,true,false,false
+AP008101,22 Jul 23,10,Sth Hawthorn,St Anthony's,No. 2,Simon Corrie,Sumukh Karanth,Sumukh Karanth,1-8,1,8,0,1,Completed,true,false,true
+AP008101,22 Jul 23,10,Sth Hawthorn,St Anthony's,No. 3,Andrew Antonopoulos,Joseph Obsioma,Andrew Antonopoulos,8-3,8,3,1,0,Completed,true,false,true
+AP008101,22 Jul 23,10,Sth Hawthorn,St Anthony's,No. 4,Rolf Tessemer,Chris Doherty,Rolf Tessemer,8-3,8,3,1,0,Completed,true,false,true
+AP008103,22 Jul 23,10,St Pats Mentone,Royal Ave,No. 1,Cameron De Silva,[Unnamed emergency — TROLS AP008103 away code 1],Cameron De Silva,8-0,8,0,1,0,Completed,false,false,true
+AP008103,22 Jul 23,10,St Pats Mentone,Royal Ave,No. 2,David Lawry,Stefan Harrer,David Lawry,8-5,8,5,1,0,Completed,true,false,false
+AP008103,22 Jul 23,10,St Pats Mentone,Royal Ave,No. 3,Sam Clayton,Toby Brett,Sam Clayton,8-2,8,2,1,0,Completed,true,false,true
+AP008103,22 Jul 23,10,St Pats Mentone,Royal Ave,No. 4,Mike De Silva,Rohan Bardwell,Rohan Bardwell,5-8,5,8,0,1,Completed,true,false,true
+AP008111,29 Jul 23,11,St Anthony's,Ormond,No. 1,Sam Confait,[Unnamed emergency — TROLS AP008111 away code 1],Sam Confait,8-0,8,0,1,0,Completed,false,false,true
+AP008111,29 Jul 23,11,St Anthony's,Ormond,No. 2,Chris Gain,Steve Gelagin,Chris Gain,8-2,8,2,1,0,Completed,true,false,false
+AP008111,29 Jul 23,11,St Anthony's,Ormond,No. 3,Anthony Nosek,Simon Currey,Anthony Nosek,8-4,8,4,1,0,Completed,true,false,false
+AP008111,29 Jul 23,11,St Anthony's,Ormond,No. 4,Ray Tesoriero,Rex Ho,Ray Tesoriero,8-5,8,5,1,0,Completed,true,true,true
+AP008113,29 Jul 23,11,Sth Hawthorn,Royal Ave,No. 1,Hugh Blacket,Justin Alway,Hugh Blacket,8-5,8,5,1,0,Completed,true,false,false
+AP008113,29 Jul 23,11,Sth Hawthorn,Royal Ave,No. 2,Simon Corrie,[Unnamed emergency — TROLS AP008113 away code 2],Simon Corrie,8-5,8,5,1,0,Completed,false,false,true
+AP008113,29 Jul 23,11,Sth Hawthorn,Royal Ave,No. 3,David Wegener,Dean Craig,David Wegener,8-6,8,6,1,0,Completed,true,false,false
+AP008113,29 Jul 23,11,Sth Hawthorn,Royal Ave,No. 4,Rolf Tessemer,Toby Brett,Rolf Tessemer,8-2,8,2,1,0,Completed,true,false,true
+AP008121,05 Aug 23,12,Royal Ave,St Anthony's,No. 1,Justin Alway,Sam Confait,Sam Confait,1-8,1,8,0,1,Completed,true,false,false
+AP008121,05 Aug 23,12,Royal Ave,St Anthony's,No. 2,Stefan Harrer,Johnny Asimenias,Johnny Asimenias,3-8,3,8,0,1,Completed,true,false,false
+AP008121,05 Aug 23,12,Royal Ave,St Anthony's,No. 3,David Urpani,Chris Gain,Chris Gain,3-8,3,8,0,1,Completed,true,false,false
+AP008121,05 Aug 23,12,Royal Ave,St Anthony's,No. 4,Dean Craig,Anthony Nosek,Anthony Nosek,0-8,0,8,0,1,Completed,true,false,false
+AP008123,05 Aug 23,12,Ormond,St Pats Mentone,No. 1,Nathan McCracken,Cameron De Silva,Cameron De Silva,0-8,0,8,0,1,Completed,true,false,false
+AP008123,05 Aug 23,12,Ormond,St Pats Mentone,No. 2,Chris Gogoll,Alex Chingarev,Alex Chingarev,4-8,4,8,0,1,Completed,true,false,false
+AP008123,05 Aug 23,12,Ormond,St Pats Mentone,No. 3,Michael Hudson,Sam Clayton,Sam Clayton,3-8,3,8,0,1,Completed,true,false,false
+AP008123,05 Aug 23,12,Ormond,St Pats Mentone,No. 4,Andres Sammanco,David Lawry,David Lawry,6-8,6,8,0,1,Completed,true,true,false
+AP008131,12 Aug 23,13,St Anthony's,St Pats Mentone,No. 1,Johnny Asimenias,Cameron De Silva,Cameron De Silva,0-8,0,8,0,1,Completed,true,false,false
+AP008131,12 Aug 23,13,St Anthony's,St Pats Mentone,No. 2,Chris Gain,Alex Chingarev,Alex Chingarev,4-8,4,8,0,1,Completed,true,false,false
+AP008131,12 Aug 23,13,St Anthony's,St Pats Mentone,No. 3,Anthony Nosek,David Lawry,Anthony Nosek,8-4,8,4,1,0,Completed,true,false,false
+AP008131,12 Aug 23,13,St Anthony's,St Pats Mentone,No. 4,Anthony Straford,Sam Clayton,Anthony Straford,8-5,8,5,1,0,Completed,true,false,false
+AP008142,19 Aug 23,14,Ormond,Royal Ave,No. 1,Nathan McCracken,Stefan Harrer,Nathan McCracken,8-2,8,2,1,0,Completed,true,false,false
+AP008142,19 Aug 23,14,Ormond,Royal Ave,No. 2,Chris Gogoll,David Urpani,Chris Gogoll,8-0,8,0,1,0,Completed,true,false,false
+AP008142,19 Aug 23,14,Ormond,Royal Ave,No. 3,Michael Hudson,Rafael Ortiz,Michael Hudson,8-2,8,2,1,0,Completed,true,false,true
+AP008142,19 Aug 23,14,Ormond,Royal Ave,No. 4,Rex Ho,[Unnamed emergency — TROLS AP008142 away code 4],Rex Ho,8-0,8,0,1,0,Completed,false,true,true
+AP008143,19 Aug 23,14,St Pats Mentone,Sth Hawthorn,No. 1,Cameron De Silva,Hugh Blacket,Cameron De Silva,8-2,8,2,1,0,Completed,true,false,false
+AP008143,19 Aug 23,14,St Pats Mentone,Sth Hawthorn,No. 2,David Lawry,Andrew Antonopoulos,David Lawry,8-3,8,3,1,0,Completed,true,false,false
+AP008143,19 Aug 23,14,St Pats Mentone,Sth Hawthorn,No. 3,Sam Clayton,Rolf Tessemer,Sam Clayton,8-4,8,4,1,0,Completed,true,false,false
+AP008143,19 Aug 23,14,St Pats Mentone,Sth Hawthorn,No. 4,Mike De Silva,Joe Barr,Mike De Silva,8-7,8,7,1,0,Completed,true,false,false
+AP008151,26 Aug 23,15,St Anthony's,Sth Hawthorn,No. 1,Sam Confait,Hugh Blacket,Hugh Blacket,5-8,5,8,0,1,Completed,true,false,false
+AP008151,26 Aug 23,15,St Anthony's,Sth Hawthorn,No. 2,Johnny Asimenias,Andrew Antonopoulos,Johnny Asimenias,8-0,8,0,1,0,Completed,true,false,false
+AP008151,26 Aug 23,15,St Anthony's,Sth Hawthorn,No. 3,Chris Gain,Rolf Tessemer,Chris Gain,8-4,8,4,1,0,Completed,true,false,false
+AP008151,26 Aug 23,15,St Anthony's,Sth Hawthorn,No. 4,Anthony Straford,Joe Barr,Anthony Straford,8-2,8,2,1,0,Completed,true,false,false
+AP008153,26 Aug 23,15,Royal Ave,St Pats Mentone,No. 1,Justin Alway,Cameron De Silva,Cameron De Silva,0-8,0,8,0,1,Completed,true,false,false
+AP008153,26 Aug 23,15,Royal Ave,St Pats Mentone,No. 2,Charles Tanti,Sam Clayton,Sam Clayton,2-8,2,8,0,1,Completed,true,true,false
+AP008153,26 Aug 23,15,Royal Ave,St Pats Mentone,No. 3,Dean Craig,Nick Hall,Nick Hall,0-8,0,8,0,1,Completed,true,false,false
+AP008153,26 Aug 23,15,Royal Ave,St Pats Mentone,No. 4,Jeremy Rouch,Mike De Silva,Mike De Silva,6-8,6,8,0,1,Completed,true,false,false
+AP008321,,16,St Anthony's,St Pats Mentone,No. 1,Sam Confait,Cameron De Silva,Cameron De Silva,7-8,7,8,0,1,Completed,true,false,false
+AP008321,,16,St Anthony's,St Pats Mentone,No. 2,Chris Gain,David Lawry,Chris Gain,8-6,8,6,1,0,Completed,true,false,false
+AP008321,,16,St Anthony's,St Pats Mentone,No. 3,Anthony Straford,Sam Clayton,Sam Clayton,6-8,6,8,0,1,Completed,true,false,false
+AP008321,,16,St Anthony's,St Pats Mentone,No. 4,Ray Tesoriero,Nick Hall,Nick Hall,6-8,6,8,0,1,Completed,true,true,false

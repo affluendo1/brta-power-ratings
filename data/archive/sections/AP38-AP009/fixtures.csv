@@ -1,0 +1,60 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP009011,06 Oct 18,1,regular,Round 1,St Finbar's,Coatesville,6,2,2,2,6,5,55,49,Completed,
+AP009012,06 Oct 18,1,regular,Round 1,St Pats Mentone,Parkdale,1,7,1,3,3,7,43,58,Completed,
+AP009014,06 Oct 18,1,regular,Round 1,Port Melbourne,MCC Glen Iris,7.5,0.5,3,0,7,1,43,25,Completed,
+pending-ap009-r1-langwarrin-bye,06 Oct 18,1,regular,Round 1,Langwarrin,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009021,13 Oct 18,2,regular,Round 2,MCC Glen Iris,St Finbar's,2,6,2,2,4,4,30,36,Completed,
+AP009022,13 Oct 18,2,regular,Round 2,Coatesville,St Pats Mentone,8,0,4,0,8,0,48,14,Completed,
+AP009023,13 Oct 18,2,regular,Round 2,Parkdale,Langwarrin,2,6,2,2,4,5,36,38,Completed,
+pending-ap009-r2-bye-port-melbourne,13 Oct 18,2,regular,Round 2,Bye,Port Melbourne,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009033,20 Oct 18,3,regular,Round 3,Langwarrin,Coatesville,7,1,3,1,6,2,42,23,Completed,
+pending-ap009-r3-port-melbourne-parkdale,20 Oct 18,3,regular,Round 3,Port Melbourne,Parkdale,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap009-r3-st-finbar-s-bye,20 Oct 18,3,regular,Round 3,St Finbar's,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap009-r3-st-pats-mentone-mcc-glen-iris,20 Oct 18,3,regular,Round 3,St Pats Mentone,MCC Glen Iris,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP009041,27 Oct 18,4,regular,Round 4,Parkdale,St Finbar's,7,1,3,1,6,3,48,34,Completed,
+AP009043,27 Oct 18,4,regular,Round 4,MCC Glen Iris,Langwarrin,2,6,2,2,5,5,36,44,Completed,
+AP009044,27 Oct 18,4,regular,Round 4,Coatesville,Port Melbourne,6,2,2,2,5,4,38,36,Completed,
+pending-ap009-r4-bye-st-pats-mentone,27 Oct 18,4,regular,Round 4,Bye,St Pats Mentone,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009053,10 Nov 18,5,regular,Round 5,Parkdale,Coatesville,0,8,0,4,2,8,35,57,Completed,
+AP009054,10 Nov 18,5,regular,Round 5,St Finbar's,St Pats Mentone,8,0,4,0,8,1,52,23,Completed,
+pending-ap009-r5-langwarrin-port-melbourne,10 Nov 18,5,regular,Round 5,Langwarrin,Port Melbourne,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+pending-ap009-r5-mcc-glen-iris-bye,10 Nov 18,5,regular,Round 5,MCC Glen Iris,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009061,17 Nov 18,6,regular,Round 6,St Pats Mentone,Langwarrin,1,7,1,3,2,7,26,50,Completed,
+AP009062,17 Nov 18,6,regular,Round 6,Port Melbourne,St Finbar's,8,0,4,0,8,0,48,9,Completed,
+AP009064,17 Nov 18,6,regular,Round 6,Coatesville,MCC Glen Iris,2,6,2,2,4,5,40,45,Completed,
+pending-ap009-r6-bye-parkdale,17 Nov 18,6,regular,Round 6,Bye,Parkdale,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009071,24 Nov 18,7,regular,Round 7,St Finbar's,Langwarrin,1,7,1,3,4,6,41,47,Completed,
+AP009072,24 Nov 18,7,regular,Round 7,St Pats Mentone,Port Melbourne,0,8,0,4,0,8,14,48,Completed,
+AP009073,24 Nov 18,7,regular,Round 7,MCC Glen Iris,Parkdale,2,6,2,2,4,5,37,43,Completed,
+pending-ap009-r7-bye-coatesville,24 Nov 18,7,regular,Round 7,Bye,Coatesville,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009081,01 Dec 18,8,regular,Round 8,Coatesville,St Finbar's,7,1,3,1,7,4,55,42,Completed,
+AP009082,01 Dec 18,8,regular,Round 8,Parkdale,St Pats Mentone,7,1,3,1,7,4,63,44,Completed,
+AP009084,01 Dec 18,8,regular,Round 8,MCC Glen Iris,Port Melbourne,0,8,0,4,0,8,24,51,Completed,
+pending-ap009-r8-bye-langwarrin,01 Dec 18,8,regular,Round 8,Bye,Langwarrin,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009091,08 Dec 18,9,regular,Round 9,St Finbar's,MCC Glen Iris,2,6,2,2,4,6,37,43,Completed,
+AP009092,08 Dec 18,9,regular,Round 9,St Pats Mentone,Coatesville,0,8,0,4,2,8,34,58,Completed,
+AP009093,08 Dec 18,9,regular,Round 9,Langwarrin,Parkdale,8,0,4,0,8,1,55,28,Completed,
+pending-ap009-r9-port-melbourne-bye,08 Dec 18,9,regular,Round 9,Port Melbourne,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009102,15 Dec 18,10,regular,Round 10,MCC Glen Iris,St Pats Mentone,8,0,4,0,8,0,49,19,Completed,
+AP009103,15 Dec 18,10,regular,Round 10,Coatesville,Langwarrin,6,2,2,2,5,5,52,43,Completed,
+AP009104,15 Dec 18,10,regular,Round 10,Parkdale,Port Melbourne,4,4,2,2,4,4,33,33,Completed,
+pending-ap009-r10-bye-st-finbar-s,15 Dec 18,10,regular,Round 10,Bye,St Finbar's,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009111,02 Feb 19,11,regular,Round 11,St Finbar's,Parkdale,6,2,2,2,6,5,49,56,Completed,
+AP009113,02 Feb 19,11,regular,Round 11,Langwarrin,MCC Glen Iris,7,1,3,1,7,3,50,33,Completed,
+AP009114,02 Feb 19,11,regular,Round 11,Port Melbourne,Coatesville,7,1,3,1,7,2,53,41,Completed,
+pending-ap009-r11-st-pats-mentone-bye,02 Feb 19,11,regular,Round 11,St Pats Mentone,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009121,09 Feb 19,12,regular,Round 12,Port Melbourne,Langwarrin,7,1,3,1,6,2,42,27,Completed,
+AP009123,09 Feb 19,12,regular,Round 12,Coatesville,Parkdale,1,7,1,3,3,6,35,44,Completed,
+AP009124,09 Feb 19,12,regular,Round 12,St Pats Mentone,St Finbar's,0,8,0,4,0,8,25,51,Completed,
+pending-ap009-r12-bye-mcc-glen-iris,09 Feb 19,12,regular,Round 12,Bye,MCC Glen Iris,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009131,16 Feb 19,13,regular,Round 13,Langwarrin,St Pats Mentone,8,0,4,0,8,0,48,17,Completed,
+AP009132,16 Feb 19,13,regular,Round 13,St Finbar's,Port Melbourne,0,8,0,4,0,8,17,49,Completed,
+AP009134,16 Feb 19,13,regular,Round 13,MCC Glen Iris,Coatesville,0,8,0,4,0,8,15,48,Completed,
+pending-ap009-r13-parkdale-bye,16 Feb 19,13,regular,Round 13,Parkdale,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009141,23 Feb 19,14,regular,Round 14,Langwarrin,St Finbar's,7,1,3,1,7,4,63,52,Completed,
+AP009142,23 Feb 19,14,regular,Round 14,Port Melbourne,St Pats Mentone,8,0,4,0,8,1,54,32,Completed,
+pending-ap009-r14-coatesville-bye,23 Feb 19,14,regular,Round 14,Coatesville,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap009-r14-parkdale-mcc-glen-iris,23 Feb 19,14,regular,Round 14,Parkdale,MCC Glen Iris,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP009301,,16,semi_final,Semi-final,Langwarrin,Parkdale,7,1,3,1,6,2,40,36,Completed,
+pending-ap009-r16-port-melbourne-coatesville,,16,semi_final,Semi-final,Port Melbourne,Coatesville,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+AP009321,,17,grand_final,Grand final · TROLS entry 2,Langwarrin,Coatesville,8,0,4,0,8,0,50,25,Completed,

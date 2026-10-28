@@ -1,0 +1,95 @@
+{
+  "asset_id": "AP28-AP004",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 13/14",
+  "season_id": "AP28",
+  "season_label": "Summer 13/14",
+  "source_section_code": "AP004",
+  "section_label": "Mens Rubbers 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Sth Murrumbeena",
+      "wins": 8,
+      "points": 68,
+      "percentage": 132.68,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Victory Park",
+      "wins": 8,
+      "points": 66,
+      "percentage": 137.54,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Centenary Park",
+      "wins": 6,
+      "points": 55,
+      "percentage": 106.59,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "St Pats Mentone 1",
+      "wins": 6,
+      "points": 50,
+      "percentage": 105.5,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Caulfield Grammar",
+      "wins": 1,
+      "points": 35,
+      "percentage": 87.59,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "St Pats Mentone 2",
+      "wins": 3,
+      "points": 33,
+      "percentage": 65.55,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Patterson Lakes",
+      "wins": 1,
+      "points": 29,
+      "percentage": 83.56,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP28-AP004",
+  "fixtures": 60,
+  "completed_fixtures": 39,
+  "draw_fixtures": 60,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 154,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

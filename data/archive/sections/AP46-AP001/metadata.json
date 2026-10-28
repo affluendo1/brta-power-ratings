@@ -1,0 +1,82 @@
+{
+  "asset_id": "AP46-AP001",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Winter 2023",
+  "season_id": "AP46",
+  "season_label": "Winter 2023",
+  "source_section_code": "AP001",
+  "section_label": "Womens Sets 1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "St Louis de Mont",
+      "wins": 10,
+      "points": 98.5,
+      "percentage": 185.65,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "Legend Park",
+      "wins": 8,
+      "points": 82.5,
+      "percentage": 135.35,
+      "marker": "P"
+    },
+    {
+      "position": 3,
+      "team": "Fitzroy",
+      "wins": 2,
+      "points": 46.5,
+      "percentage": 94.53,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Chadstone",
+      "wins": 2,
+      "points": 40.5,
+      "percentage": 67.49,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Port Melbourne",
+      "wins": 2,
+      "points": 32,
+      "percentage": 61.45,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 6,
+    "doublesBestOf": 1,
+    "doublesTarget": 8,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP46-AP001",
+  "fixtures": 46,
+  "completed_fixtures": 26,
+  "draw_fixtures": 46,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 153,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP001072 doubles No. 5: '4-4'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP001072 doubles No. 6: '4-2'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

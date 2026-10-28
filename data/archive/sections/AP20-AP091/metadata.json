@@ -1,0 +1,94 @@
+{
+  "asset_id": "AP20-AP091",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 09/10",
+  "season_id": "AP20",
+  "season_label": "Summer 09/10",
+  "source_section_code": "AP091",
+  "section_label": "Mixed Rubbers A",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Narre Warren",
+      "wins": 0,
+      "points": 104,
+      "percentage": 216.51,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "BLTC 2",
+      "wins": 0,
+      "points": 93,
+      "percentage": 148.16,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Frankston East 2",
+      "wins": 0,
+      "points": 68,
+      "percentage": 103.87,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "BLTC 1",
+      "wins": 0,
+      "points": 42,
+      "percentage": 76.82,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Frankston East 1",
+      "wins": 0,
+      "points": 39,
+      "percentage": 85.18,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Oakleigh",
+      "wins": 0,
+      "points": 14,
+      "percentage": 50.87,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP20-AP091",
+  "fixtures": 47,
+  "completed_fixtures": 44,
+  "draw_fixtures": 1,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 172,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP091082 doubles No. 3: '2-6 3-3'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP091082 doubles No. 4: '2-6 6-2'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP091083 doubles No. 3: '2-6 7-5 2-2'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP091083 doubles No. 4: '7-6 4-5'. Missing score not inferred; excluded from ratings and game totals.",
+    "No scorecard rubbers for AP091131",
+    "Fixture game totals do not match rubbers for AP091131: TROLS team total 48-0; complete-score total 0-0. Both published records retained."
+  ]
+}

@@ -1,0 +1,226 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP016011,06 Oct 18,1,Hawthorn,Tennis World,No. 1,Aniket Ghaskadvi,Issa Salsa,Aniket Ghaskadvi,8-1,8,1,1,0,Completed,true,false,false
+AP016011,06 Oct 18,1,Hawthorn,Tennis World,No. 2,Laurence Highman,Adam Neilands,Adam Neilands,1-8,1,8,0,1,Completed,true,false,false
+AP016011,06 Oct 18,1,Hawthorn,Tennis World,No. 3,Simon Currey,Dror Cousins,Dror Cousins,3-8,3,8,0,1,Completed,true,false,false
+AP016011,06 Oct 18,1,Hawthorn,Tennis World,No. 4,[Unnamed emergency — TROLS AP016011 home code 4],Shannon Keough,Shannon Keough,0-8,0,8,0,1,Completed,false,true,false
+AP016012,06 Oct 18,1,Overport Park,Dendy Park,No. 1,Rob Muir,Brad Huggett,Rob Muir,8-6,8,6,1,0,Completed,true,false,false
+AP016012,06 Oct 18,1,Overport Park,Dendy Park,No. 2,Joel Treveil,Brad Piner,Joel Treveil,8-4,8,4,1,0,Completed,true,false,false
+AP016012,06 Oct 18,1,Overport Park,Dendy Park,No. 3,Fraser Keon,Wes Alfredson,Fraser Keon,8-2,8,2,1,0,Completed,true,false,false
+AP016012,06 Oct 18,1,Overport Park,Dendy Park,No. 4,Michael Neylan,Adam Poole,Adam Poole,4-8,4,8,0,1,Completed,true,false,false
+AP016013,06 Oct 18,1,Patterson Lakes,BLTC,No. 1,Luke Dartnell,Josh Brown,Luke Dartnell,8-3,8,3,1,0,Completed,true,false,false
+AP016013,06 Oct 18,1,Patterson Lakes,BLTC,No. 2,Bradley Petrak,Ian Thomas,Ian Thomas,6-8,6,8,0,1,Completed,true,false,false
+AP016013,06 Oct 18,1,Patterson Lakes,BLTC,No. 3,Marcelo Grosso,Lachlan Cooper,Lachlan Cooper,7-8,7,8,0,1,Completed,true,false,false
+AP016013,06 Oct 18,1,Patterson Lakes,BLTC,No. 4,Lachie Pywell,Stuart Mac Farlane,Lachie Pywell,8-7,8,7,1,0,Completed,true,false,false
+AP016014,06 Oct 18,1,Highmoor Uniting,Caulfield Rec,No. 1,Paul Luke,Gary Slapar,Paul Luke,8-2,8,2,1,0,Completed,true,false,false
+AP016014,06 Oct 18,1,Highmoor Uniting,Caulfield Rec,No. 2,Kyle Malligan,Michail Petrova,Kyle Malligan,8-0,8,0,1,0,Completed,true,false,false
+AP016014,06 Oct 18,1,Highmoor Uniting,Caulfield Rec,No. 3,Ben Abbott,Daniel Warwick,Ben Abbott,8-3,8,3,1,0,Completed,true,false,false
+AP016014,06 Oct 18,1,Highmoor Uniting,Caulfield Rec,No. 4,Jason Mahmoud,Gabriel Giber,Gabriel Giber,6-8,6,8,0,1,Completed,true,false,false
+AP016021,13 Oct 18,2,Caulfield Rec,Hawthorn,No. 1,Michael Hickey,Paul Wu,Michael Hickey,8-6,8,6,1,0,Completed,true,false,false
+AP016021,13 Oct 18,2,Caulfield Rec,Hawthorn,No. 2,Gary Slapar,Alistair Young,Alistair Young,3-8,3,8,0,1,Completed,true,false,false
+AP016021,13 Oct 18,2,Caulfield Rec,Hawthorn,No. 3,Michail Petrova,Laurence Highman,Michail Petrova,8-1,8,1,1,0,Completed,true,false,false
+AP016021,13 Oct 18,2,Caulfield Rec,Hawthorn,No. 4,Daniel Warwick,Richard Paine,Daniel Warwick,8-2,8,2,1,0,Completed,true,false,false
+AP016022,13 Oct 18,2,Tennis World,Overport Park,No. 1,Adam Neilands,Joel Treveil,Joel Treveil,4-8,4,8,0,1,Completed,true,false,false
+AP016022,13 Oct 18,2,Tennis World,Overport Park,No. 2,Danny Thompson,Fraser Keon,Fraser Keon,6-8,6,8,0,1,Completed,true,false,false
+AP016022,13 Oct 18,2,Tennis World,Overport Park,No. 3,Dror Cousins,Harvey Keon,Harvey Keon,2-8,2,8,0,1,Completed,true,false,false
+AP016022,13 Oct 18,2,Tennis World,Overport Park,No. 4,Shannon Keough,Pat Hodgkins,Shannon Keough,8-1,8,1,1,0,Completed,true,false,false
+AP016023,13 Oct 18,2,Dendy Park,Patterson Lakes,No. 1,Oscar Reeve,Luke Dartnell,Luke Dartnell,2-8,2,8,0,1,Completed,true,false,false
+AP016023,13 Oct 18,2,Dendy Park,Patterson Lakes,No. 2,Brad Piner,Alex Prattico,Alex Prattico,3-8,3,8,0,1,Completed,true,false,false
+AP016023,13 Oct 18,2,Dendy Park,Patterson Lakes,No. 3,Adam Poole,Bradley Petrak,Adam Poole,8-6,8,6,1,0,Completed,true,false,false
+AP016023,13 Oct 18,2,Dendy Park,Patterson Lakes,No. 4,Wes Alfredson,Lazar Busija,Wes Alfredson,8-4,8,4,1,0,Completed,true,false,false
+AP016024,13 Oct 18,2,BLTC,Highmoor Uniting,No. 1,Matt Levey,Paul Luke,Paul Luke,5-8,5,8,0,1,Completed,true,false,false
+AP016024,13 Oct 18,2,BLTC,Highmoor Uniting,No. 2,Ian Thomas,Kyle Malligan,Kyle Malligan,6-8,6,8,0,1,Completed,true,false,false
+AP016024,13 Oct 18,2,BLTC,Highmoor Uniting,No. 3,Lachlan Cooper,Ben Abbott,Lachlan Cooper,8-6,8,6,1,0,Completed,true,false,false
+AP016024,13 Oct 18,2,BLTC,Highmoor Uniting,No. 4,Connor Levey,Glenn Collins,Glenn Collins,1-8,1,8,0,1,Completed,true,false,false
+AP016031,20 Oct 18,3,Hawthorn,BLTC,No. 1,Aniket Ghaskadvi,Matt Levey,Aniket Ghaskadvi,8-2,8,2,1,0,Completed,true,false,false
+AP016031,20 Oct 18,3,Hawthorn,BLTC,No. 2,Paul Wu,William Lombard,Paul Wu,8-2,8,2,1,0,Completed,true,false,false
+AP016031,20 Oct 18,3,Hawthorn,BLTC,No. 3,Mark Petty,Ian Thomas,,1-3,1,3,0,1,Unfinished,false,false,false
+AP016032,20 Oct 18,3,Overport Park,Caulfield Rec,No. 1,Rob Muir,Michael Hickey,Rob Muir,8-0,8,0,1,0,Completed,true,false,false
+AP016032,20 Oct 18,3,Overport Park,Caulfield Rec,No. 2,Joel Treveil,Gary Slapar,Joel Treveil,8-2,8,2,1,0,Completed,true,false,false
+AP016032,20 Oct 18,3,Overport Park,Caulfield Rec,No. 3,Fraser Keon,Daniel Warwick,Fraser Keon,8-7,8,7,1,0,Completed,true,false,false
+AP016032,20 Oct 18,3,Overport Park,Caulfield Rec,No. 4,Pat Hodgkins,Gabriel Giber,Gabriel Giber,3-8,3,8,0,1,Completed,true,false,false
+AP016033,20 Oct 18,3,Patterson Lakes,Tennis World,No. 1,Luke Dartnell,Ben Nguyen,Luke Dartnell,8-2,8,2,1,0,Completed,true,false,false
+AP016033,20 Oct 18,3,Patterson Lakes,Tennis World,No. 2,Alex Prattico,Adam Neilands,Alex Prattico,8-1,8,1,1,0,Completed,true,false,false
+AP016033,20 Oct 18,3,Patterson Lakes,Tennis World,No. 3,Bradley Petrak,Dror Cousins,Bradley Petrak,8-3,8,3,1,0,Completed,true,false,false
+AP016033,20 Oct 18,3,Patterson Lakes,Tennis World,No. 4,Marcelo Grosso,Shannon Keough,Marcelo Grosso,8-5,8,5,1,0,Completed,true,false,false
+AP016034,20 Oct 18,3,Highmoor Uniting,Dendy Park,No. 1,Paul Luke,Oscar Reeve,Paul Luke,8-3,8,3,1,0,Completed,true,false,false
+AP016034,20 Oct 18,3,Highmoor Uniting,Dendy Park,No. 2,Tom Pope,Piet Van Derlans,Tom Pope,8-3,8,3,1,0,Completed,true,false,false
+AP016034,20 Oct 18,3,Highmoor Uniting,Dendy Park,No. 3,Ben Abbott,Adam Poole,Adam Poole,6-8,6,8,0,1,Completed,true,false,false
+AP016034,20 Oct 18,3,Highmoor Uniting,Dendy Park,No. 4,Jason Mahmoud,Wes Alfredson,Wes Alfredson,7-8,7,8,0,1,Completed,true,false,false
+AP016041,27 Oct 18,4,Dendy Park,Hawthorn,No. 1,Piet Van Derlans,Paul Wu,Piet Van Derlans,8-3,8,3,1,0,Completed,true,false,false
+AP016041,27 Oct 18,4,Dendy Park,Hawthorn,No. 2,Oscar Reeve,Mark Petty,Mark Petty,7-8,7,8,0,1,Completed,true,false,false
+AP016041,27 Oct 18,4,Dendy Park,Hawthorn,No. 3,Brad Piner,Richard Paine,Brad Piner,8-4,8,4,1,0,Completed,true,false,false
+AP016041,27 Oct 18,4,Dendy Park,Hawthorn,No. 4,Wes Alfredson,David McWha,Wes Alfredson,8-0,8,0,1,0,Completed,true,false,false
+AP016042,27 Oct 18,4,BLTC,Overport Park,No. 1,Matt Levey,Rob Muir,Matt Levey,8-7,8,7,1,0,Completed,true,false,false
+AP016042,27 Oct 18,4,BLTC,Overport Park,No. 2,Ian Thomas,Joel Treveil,Joel Treveil,4-8,4,8,0,1,Completed,true,false,false
+AP016042,27 Oct 18,4,BLTC,Overport Park,No. 3,Lachlan Cooper,Fraser Keon,Fraser Keon,3-8,3,8,0,1,Completed,true,false,false
+AP016042,27 Oct 18,4,BLTC,Overport Park,No. 4,Stuart Mac Farlane,Harvey Keon,Harvey Keon,6-8,6,8,0,1,Completed,true,false,false
+AP016043,27 Oct 18,4,Caulfield Rec,Patterson Lakes,No. 1,Gary Slapar,Luke Dartnell,Luke Dartnell,0-8,0,8,0,1,Completed,true,false,false
+AP016043,27 Oct 18,4,Caulfield Rec,Patterson Lakes,No. 2,Michail Petrova,Kane Bailey,Kane Bailey,6-8,6,8,0,1,Completed,true,false,false
+AP016043,27 Oct 18,4,Caulfield Rec,Patterson Lakes,No. 3,Daniel Warwick,Bradley Petrak,Bradley Petrak,3-8,3,8,0,1,Completed,true,false,false
+AP016043,27 Oct 18,4,Caulfield Rec,Patterson Lakes,No. 4,Gabriel Giber,Marcelo Grosso,Marcelo Grosso,6-8,6,8,0,1,Completed,true,false,false
+AP016044,27 Oct 18,4,Tennis World,Highmoor Uniting,No. 1,Ben Nguyen,Paul Luke,Paul Luke,4-8,4,8,0,1,Completed,true,false,false
+AP016044,27 Oct 18,4,Tennis World,Highmoor Uniting,No. 2,Adam Neilands,Tom Pope,Tom Pope,2-8,2,8,0,1,Completed,true,false,false
+AP016044,27 Oct 18,4,Tennis World,Highmoor Uniting,No. 3,Danny Thompson,Phillipe Castermane,Danny Thompson,8-4,8,4,1,0,Completed,true,false,false
+AP016044,27 Oct 18,4,Tennis World,Highmoor Uniting,No. 4,Shannon Keough,Jason Mahmoud,Shannon Keough,8-4,8,4,1,0,Completed,true,false,false
+AP016051,10 Nov 18,5,Patterson Lakes,Highmoor Uniting,No. 1,Alex Prattico,Tom Pope,Tom Pope,6-8,6,8,0,1,Completed,true,false,false
+AP016051,10 Nov 18,5,Patterson Lakes,Highmoor Uniting,No. 2,Bradley Petrak,Kyle Malligan,Kyle Malligan,2-8,2,8,0,1,Completed,true,false,false
+AP016051,10 Nov 18,5,Patterson Lakes,Highmoor Uniting,No. 3,Marcelo Grosso,Phillipe Castermane,Phillipe Castermane,6-8,6,8,0,1,Completed,true,false,false
+AP016051,10 Nov 18,5,Patterson Lakes,Highmoor Uniting,No. 4,Grove Bennett,Glenn Collins,Grove Bennett,8-6,8,6,1,0,Completed,true,false,false
+AP016052,10 Nov 18,5,Caulfield Rec,BLTC,No. 1,Gary Slapar,Matt Levey,Matt Levey,4-8,4,8,0,1,Completed,true,false,false
+AP016052,10 Nov 18,5,Caulfield Rec,BLTC,No. 2,Michail Petrova,Masoud Ahmed,Masoud Ahmed,1-8,1,8,0,1,Completed,true,false,false
+AP016052,10 Nov 18,5,Caulfield Rec,BLTC,No. 3,Daniel Warwick,Ian Thomas,Ian Thomas,6-8,6,8,0,1,Completed,true,false,false
+AP016052,10 Nov 18,5,Caulfield Rec,BLTC,No. 4,Gabriel Giber,Stuart Mac Farlane,Gabriel Giber,8-6,8,6,1,0,Completed,true,false,false
+AP016053,10 Nov 18,5,Dendy Park,Tennis World,No. 1,Piet Van Derlans,Sam Dunbar,Piet Van Derlans,8-6,8,6,1,0,Completed,true,false,false
+AP016053,10 Nov 18,5,Dendy Park,Tennis World,No. 2,Brad Piner,Ben Nguyen,Brad Piner,8-6,8,6,1,0,Completed,true,false,false
+AP016053,10 Nov 18,5,Dendy Park,Tennis World,No. 3,Adam Poole,Issa Salsa,Adam Poole,8-3,8,3,1,0,Completed,true,false,false
+AP016053,10 Nov 18,5,Dendy Park,Tennis World,No. 4,Wes Alfredson,Adam Neilands,Wes Alfredson,8-3,8,3,1,0,Completed,true,false,false
+AP016054,10 Nov 18,5,Hawthorn,Overport Park,No. 1,Paul Wu,Rob Muir,Rob Muir,5-8,5,8,0,1,Completed,true,false,false
+AP016054,10 Nov 18,5,Hawthorn,Overport Park,No. 2,Richard Paine,Joel Treveil,Joel Treveil,1-8,1,8,0,1,Completed,true,false,false
+AP016054,10 Nov 18,5,Hawthorn,Overport Park,No. 3,Matthew Mukhtar,Fraser Keon,Fraser Keon,6-8,6,8,0,1,Completed,true,false,false
+AP016054,10 Nov 18,5,Hawthorn,Overport Park,No. 4,Digant Sheth,Harvey Keon,Harvey Keon,2-8,2,8,0,1,Completed,true,false,false
+AP016061,17 Nov 18,6,Overport Park,Patterson Lakes,No. 1,Rob Muir,Luke Dartnell,Luke Dartnell,5-8,5,8,0,1,Completed,true,false,false
+AP016061,17 Nov 18,6,Overport Park,Patterson Lakes,No. 2,Fraser Keon,Alex Prattico,Fraser Keon,8-6,8,6,1,0,Completed,true,false,false
+AP016061,17 Nov 18,6,Overport Park,Patterson Lakes,No. 3,Harvey Keon,Bradley Petrak,Bradley Petrak,3-8,3,8,0,1,Completed,true,false,false
+AP016061,17 Nov 18,6,Overport Park,Patterson Lakes,No. 4,Craig Wills,Marcelo Grosso,Craig Wills,8-0,8,0,1,0,Completed,true,false,false
+AP016062,17 Nov 18,6,Highmoor Uniting,Hawthorn,No. 1,Paul Luke,Paul Wu,Paul Luke,8-2,8,2,1,0,Completed,true,false,false
+AP016062,17 Nov 18,6,Highmoor Uniting,Hawthorn,No. 2,Kyle Malligan,Alistair Young,Kyle Malligan,8-4,8,4,1,0,Completed,true,false,false
+AP016062,17 Nov 18,6,Highmoor Uniting,Hawthorn,No. 3,Glenn Collins,Mark Petty,Mark Petty,0-8,0,8,0,1,Completed,true,false,false
+AP016062,17 Nov 18,6,Highmoor Uniting,Hawthorn,No. 4,Jason Mahmoud,Richard Paine,Jason Mahmoud,8-4,8,4,1,0,Completed,true,false,false
+AP016063,17 Nov 18,6,BLTC,Dendy Park,No. 1,Masoud Ahmed,Piet Van Derlans,Piet Van Derlans,6-8,6,8,0,1,Completed,true,false,false
+AP016063,17 Nov 18,6,BLTC,Dendy Park,No. 2,Ian Thomas,Alex Molnar,Ian Thomas,8-7,8,7,1,0,Completed,true,false,false
+AP016063,17 Nov 18,6,BLTC,Dendy Park,No. 3,Lachlan Cooper,Adam Poole,Adam Poole,7-8,7,8,0,1,Completed,true,false,false
+AP016063,17 Nov 18,6,BLTC,Dendy Park,No. 4,Stuart Mac Farlane,Wes Alfredson,Wes Alfredson,3-8,3,8,0,1,Completed,true,false,false
+AP016064,17 Nov 18,6,Tennis World,Caulfield Rec,No. 1,Sam Dunbar,Gary Slapar,Sam Dunbar,8-1,8,1,1,0,Completed,true,false,false
+AP016064,17 Nov 18,6,Tennis World,Caulfield Rec,No. 2,Adam Neilands,Michail Petrova,Michail Petrova,6-8,6,8,0,1,Completed,true,false,false
+AP016064,17 Nov 18,6,Tennis World,Caulfield Rec,No. 3,Brad Fenech,Daniel Warwick,Daniel Warwick,0-8,0,8,0,1,Completed,true,false,false
+AP016064,17 Nov 18,6,Tennis World,Caulfield Rec,No. 4,Shannon Keough,Gabriel Giber,Shannon Keough,8-5,8,5,1,0,Completed,true,false,false
+AP016071,24 Nov 18,7,Hawthorn,Patterson Lakes,No. 1,Paul Wu,Luke Dartnell,Luke Dartnell,4-8,4,8,0,1,Completed,true,false,false
+AP016071,24 Nov 18,7,Hawthorn,Patterson Lakes,No. 2,Mark Petty,Alex Prattico,Alex Prattico,3-8,3,8,0,1,Completed,true,false,false
+AP016071,24 Nov 18,7,Hawthorn,Patterson Lakes,No. 3,Matthew Mukhtar,Bradley Petrak,Bradley Petrak,2-8,2,8,0,1,Completed,true,false,false
+AP016071,24 Nov 18,7,Hawthorn,Patterson Lakes,No. 4,Dean Carroll,Grove Bennett,Grove Bennett,1-8,1,8,0,1,Completed,true,false,false
+AP016072,24 Nov 18,7,Overport Park,Highmoor Uniting,No. 1,Rob Muir,Tom Pope,Rob Muir,8-3,8,3,1,0,Completed,true,false,false
+AP016072,24 Nov 18,7,Overport Park,Highmoor Uniting,No. 2,Fraser Keon,Kyle Malligan,Kyle Malligan,6-8,6,8,0,1,Completed,true,false,false
+AP016072,24 Nov 18,7,Overport Park,Highmoor Uniting,No. 3,Harvey Keon,Phillipe Castermane,Harvey Keon,8-6,8,6,1,0,Completed,true,false,false
+AP016072,24 Nov 18,7,Overport Park,Highmoor Uniting,No. 4,Craig Wills,Glenn Collins,Craig Wills,8-4,8,4,1,0,Completed,true,false,false
+AP016073,24 Nov 18,7,Caulfield Rec,Dendy Park,No. 1,Gary Slapar,Piet Van Derlans,Piet Van Derlans,1-8,1,8,0,1,Completed,true,false,false
+AP016073,24 Nov 18,7,Caulfield Rec,Dendy Park,No. 2,Vikrim Prakash,Brad Piner,Brad Piner,6-8,6,8,0,1,Completed,true,false,false
+AP016073,24 Nov 18,7,Caulfield Rec,Dendy Park,No. 3,Michail Petrova,Adam Poole,Michail Petrova,8-7,8,7,1,0,Completed,true,false,false
+AP016073,24 Nov 18,7,Caulfield Rec,Dendy Park,No. 4,Gabriel Giber,Wes Alfredson,Wes Alfredson,5-8,5,8,0,1,Completed,true,false,false
+AP016074,24 Nov 18,7,BLTC,Tennis World,No. 1,Matt Levey,Sam Dunbar,Matt Levey,8-2,8,2,1,0,Completed,true,false,false
+AP016074,24 Nov 18,7,BLTC,Tennis World,No. 2,Masoud Ahmed,Issa Salsa,Masoud Ahmed,8-3,8,3,1,0,Completed,true,false,false
+AP016074,24 Nov 18,7,BLTC,Tennis World,No. 3,Lachlan Cooper,Danny Thompson,Lachlan Cooper,8-5,8,5,1,0,Completed,true,false,false
+AP016074,24 Nov 18,7,BLTC,Tennis World,No. 4,Stuart Mac Farlane,Dror Cousins,Dror Cousins,5-8,5,8,0,1,Completed,true,false,false
+AP016081,01 Dec 18,8,Tennis World,Hawthorn,No. 1,Ben Nguyen,Paul Wu,Ben Nguyen,8-4,8,4,1,0,Completed,true,false,false
+AP016081,01 Dec 18,8,Tennis World,Hawthorn,No. 2,Adam Neilands,Alistair Young,Alistair Young,2-8,2,8,0,1,Completed,true,false,false
+AP016081,01 Dec 18,8,Tennis World,Hawthorn,No. 3,Brad Fenech,Pranay Katta,Pranay Katta,0-8,0,8,0,1,Completed,true,false,false
+AP016081,01 Dec 18,8,Tennis World,Hawthorn,No. 4,Shannon Keough,Alex Kotros,Shannon Keough,8-0,8,0,1,0,Completed,true,false,false
+AP016082,01 Dec 18,8,Dendy Park,Overport Park,No. 1,Piet Van Derlans,Rob Muir,Piet Van Derlans,8-1,8,1,1,0,Completed,true,false,false
+AP016082,01 Dec 18,8,Dendy Park,Overport Park,No. 2,Brad Piner,Fraser Keon,Fraser Keon,1-8,1,8,0,1,Completed,true,false,false
+AP016082,01 Dec 18,8,Dendy Park,Overport Park,No. 3,Adam Poole,Harvey Keon,Harvey Keon,5-8,5,8,0,1,Completed,true,false,false
+AP016082,01 Dec 18,8,Dendy Park,Overport Park,No. 4,Fred Bernard,Matt Harrisin,Fred Bernard,8-7,8,7,1,0,Completed,true,false,false
+AP016083,01 Dec 18,8,BLTC,Patterson Lakes,No. 1,Ian Thomas,Luke Dartnell,Luke Dartnell,3-8,3,8,0,1,Completed,true,false,false
+AP016083,01 Dec 18,8,BLTC,Patterson Lakes,No. 2,Lachlan Cooper,Alex Prattico,Alex Prattico,1-8,1,8,0,1,Completed,true,false,false
+AP016083,01 Dec 18,8,BLTC,Patterson Lakes,No. 3,Samasidh Siva Ram,Bradley Petrak,Bradley Petrak,1-8,1,8,0,1,Completed,true,false,false
+AP016083,01 Dec 18,8,BLTC,Patterson Lakes,No. 4,Connor Levey,Marcelo Grosso,Marcelo Grosso,1-8,1,8,0,1,Completed,true,false,false
+AP016084,01 Dec 18,8,Caulfield Rec,Highmoor Uniting,No. 1,Gary Slapar,Paul Luke,Paul Luke,3-8,3,8,0,1,Completed,true,false,false
+AP016084,01 Dec 18,8,Caulfield Rec,Highmoor Uniting,No. 2,Vikrim Prakash,Tom Pope,Tom Pope,5-8,5,8,0,1,Completed,true,false,false
+AP016084,01 Dec 18,8,Caulfield Rec,Highmoor Uniting,No. 3,Daniel Warwick,Kyle Malligan,Kyle Malligan,5-8,5,8,0,1,Completed,true,false,false
+AP016084,01 Dec 18,8,Caulfield Rec,Highmoor Uniting,No. 4,Gabriel Giber,Glenn Collins,Gabriel Giber,8-4,8,4,1,0,Completed,true,false,false
+AP016091,08 Dec 18,9,Hawthorn,Caulfield Rec,No. 1,Paul Wu,Michael Hickey,Michael Hickey,3-8,3,8,0,1,Completed,true,false,false
+AP016091,08 Dec 18,9,Hawthorn,Caulfield Rec,No. 2,Alistair Young,Vikrim Prakash,Alistair Young,8-4,8,4,1,0,Completed,true,false,false
+AP016091,08 Dec 18,9,Hawthorn,Caulfield Rec,No. 3,Mark Petty,Daniel Warwick,Mark Petty,8-4,8,4,1,0,Completed,true,false,false
+AP016091,08 Dec 18,9,Hawthorn,Caulfield Rec,No. 4,Digant Sheth,Gabriel Giber,Gabriel Giber,5-8,5,8,0,1,Completed,true,false,false
+AP016093,08 Dec 18,9,Patterson Lakes,Dendy Park,No. 1,Luke Dartnell,Piet Van Derlans,Piet Van Derlans,6-8,6,8,0,1,Completed,true,false,false
+AP016093,08 Dec 18,9,Patterson Lakes,Dendy Park,No. 2,Alex Prattico,Brad Piner,Brad Piner,2-8,2,8,0,1,Completed,true,false,false
+AP016093,08 Dec 18,9,Patterson Lakes,Dendy Park,No. 3,Bradley Petrak,Adam Poole,Adam Poole,4-8,4,8,0,1,Completed,true,false,false
+AP016093,08 Dec 18,9,Patterson Lakes,Dendy Park,No. 4,Marcelo Grosso,Wes Alfredson,Wes Alfredson,6-8,6,8,0,1,Completed,true,false,false
+AP016094,08 Dec 18,9,Highmoor Uniting,BLTC,No. 1,Tom Pope,Matt Levey,Matt Levey,3-8,3,8,0,1,Completed,true,false,false
+AP016094,08 Dec 18,9,Highmoor Uniting,BLTC,No. 2,Kyle Malligan,Masoud Ahmed,Masoud Ahmed,4-8,4,8,0,1,Completed,true,false,false
+AP016094,08 Dec 18,9,Highmoor Uniting,BLTC,No. 3,Ben Abbott,Ian Thomas,Ian Thomas,6-8,6,8,0,1,Completed,true,false,false
+AP016094,08 Dec 18,9,Highmoor Uniting,BLTC,No. 4,Jason Mahmoud,Lachlan Cooper,Lachlan Cooper,5-8,5,8,0,1,Completed,true,false,false
+AP016101,15 Dec 18,10,BLTC,Hawthorn,No. 1,Masoud Ahmed,Paul Wu,Masoud Ahmed,8-1,8,1,1,0,Completed,true,false,false
+AP016101,15 Dec 18,10,BLTC,Hawthorn,No. 2,Ian Thomas,Mark Petty,Ian Thomas,8-7,8,7,1,0,Completed,true,false,false
+AP016101,15 Dec 18,10,BLTC,Hawthorn,No. 3,Lachlan Cooper,Richard Paine,Lachlan Cooper,8-1,8,1,1,0,Completed,true,false,false
+AP016101,15 Dec 18,10,BLTC,Hawthorn,No. 4,Stuart Mac Farlane,David McWha,Stuart Mac Farlane,8-4,8,4,1,0,Completed,true,false,false
+AP016102,15 Dec 18,10,Caulfield Rec,Overport Park,No. 1,Gary Slapar,Rob Muir,Rob Muir,5-8,5,8,0,1,Completed,true,false,false
+AP016102,15 Dec 18,10,Caulfield Rec,Overport Park,No. 2,Vikrim Prakash,Joel Treveil,Joel Treveil,3-8,3,8,0,1,Completed,true,false,false
+AP016102,15 Dec 18,10,Caulfield Rec,Overport Park,No. 3,Michail Petrova,Fraser Keon,Fraser Keon,7-8,7,8,0,1,Completed,true,false,false
+AP016102,15 Dec 18,10,Caulfield Rec,Overport Park,No. 4,Daniel Warwick,Rob Rees,Daniel Warwick,8-3,8,3,1,0,Completed,true,false,false
+AP016103,15 Dec 18,10,Tennis World,Patterson Lakes,No. 1,Sam Dunbar,Alex Prattico,Alex Prattico,2-8,2,8,0,1,Completed,true,false,false
+AP016103,15 Dec 18,10,Tennis World,Patterson Lakes,No. 2,Issa Salsa,Kane Bailey,,4-3,4,3,1,0,Unfinished,false,false,false
+AP016104,15 Dec 18,10,Dendy Park,Highmoor Uniting,No. 1,Piet Van Derlans,Paul Luke,Piet Van Derlans,8-3,8,3,1,0,Completed,true,false,false
+AP016104,15 Dec 18,10,Dendy Park,Highmoor Uniting,No. 2,Brad Piner,Tom Pope,Tom Pope,4-8,4,8,0,1,Completed,true,false,false
+AP016104,15 Dec 18,10,Dendy Park,Highmoor Uniting,No. 3,Alex Molnar,Ben Abbott,Ben Abbott,4-8,4,8,0,1,Completed,true,false,false
+AP016104,15 Dec 18,10,Dendy Park,Highmoor Uniting,No. 4,Wes Alfredson,Glenn Collins,Wes Alfredson,8-6,8,6,1,0,Completed,true,false,false
+AP016111,02 Feb 19,11,Hawthorn,Dendy Park,No. 1,Paul Wu,Piet Van Derlans,Piet Van Derlans,2-8,2,8,0,1,Completed,true,false,false
+AP016111,02 Feb 19,11,Hawthorn,Dendy Park,No. 2,Mark Petty,Alex Molnar,Mark Petty,8-2,8,2,1,0,Completed,true,false,false
+AP016111,02 Feb 19,11,Hawthorn,Dendy Park,No. 3,Shuya Hasegawa,Brad Piner,Brad Piner,0-8,0,8,0,1,Completed,true,false,false
+AP016111,02 Feb 19,11,Hawthorn,Dendy Park,No. 4,Richard Paine,Wes Alfredson,Wes Alfredson,1-8,1,8,0,1,Completed,true,false,false
+AP016112,02 Feb 19,11,Overport Park,BLTC,No. 1,Rob Muir,Matt Levey,Matt Levey,6-8,6,8,0,1,Completed,true,false,false
+AP016112,02 Feb 19,11,Overport Park,BLTC,No. 2,Fraser Keon,Juan Sanchez,Fraser Keon,8-6,8,6,1,0,Completed,true,false,false
+AP016112,02 Feb 19,11,Overport Park,BLTC,No. 3,Harvey Keon,Ian Thomas,Harvey Keon,8-7,8,7,1,0,Completed,true,false,false
+AP016112,02 Feb 19,11,Overport Park,BLTC,No. 4,Pat Hodgkins,Stuart Mac Farlane,Stuart Mac Farlane,3-8,3,8,0,1,Completed,true,false,false
+AP016113,02 Feb 19,11,Patterson Lakes,Caulfield Rec,No. 1,Luke Dartnell,Gary Slapar,Luke Dartnell,8-4,8,4,1,0,Completed,true,false,false
+AP016113,02 Feb 19,11,Patterson Lakes,Caulfield Rec,No. 2,Alex Prattico,Vikrim Prakash,Alex Prattico,8-3,8,3,1,0,Completed,true,false,false
+AP016113,02 Feb 19,11,Patterson Lakes,Caulfield Rec,No. 3,Bradley Petrak,Daniel Warwick,Bradley Petrak,8-7,8,7,1,0,Completed,true,false,false
+AP016113,02 Feb 19,11,Patterson Lakes,Caulfield Rec,No. 4,Marcelo Grosso,Gabriel Giber,Marcelo Grosso,8-3,8,3,1,0,Completed,true,false,false
+AP016114,02 Feb 19,11,Highmoor Uniting,Tennis World,No. 1,Paul Luke,Sam Dunbar,Paul Luke,8-3,8,3,1,0,Completed,true,false,false
+AP016114,02 Feb 19,11,Highmoor Uniting,Tennis World,No. 2,Yves Zenou,Adam Neilands,Yves Zenou,8-4,8,4,1,0,Completed,true,false,false
+AP016114,02 Feb 19,11,Highmoor Uniting,Tennis World,No. 3,Ben Abbott,Danny Thompson,Ben Abbott,8-6,8,6,1,0,Completed,true,false,false
+AP016114,02 Feb 19,11,Highmoor Uniting,Tennis World,No. 4,Jason Mahmoud,Shannon Keough,Jason Mahmoud,8-5,8,5,1,0,Completed,true,false,false
+AP016121,09 Feb 19,12,Highmoor Uniting,Patterson Lakes,No. 1,Yves Zenou,Luke Dartnell,Luke Dartnell,4-8,4,8,0,1,Completed,true,false,false
+AP016121,09 Feb 19,12,Highmoor Uniting,Patterson Lakes,No. 2,Tom Pope,Alex Prattico,Alex Prattico,0-8,0,8,0,1,Completed,true,false,false
+AP016121,09 Feb 19,12,Highmoor Uniting,Patterson Lakes,No. 3,Phillipe Castermane,Bradley Petrak,Bradley Petrak,2-8,2,8,0,1,Completed,true,false,false
+AP016121,09 Feb 19,12,Highmoor Uniting,Patterson Lakes,No. 4,Glenn Collins,Marcelo Grosso,Glenn Collins,8-7,8,7,1,0,Completed,true,false,false
+AP016122,09 Feb 19,12,BLTC,Caulfield Rec,No. 1,Matt Levey,Michael Hickey,Matt Levey,8-5,8,5,1,0,Completed,true,false,false
+AP016122,09 Feb 19,12,BLTC,Caulfield Rec,No. 2,Juan Sanchez,Vikrim Prakash,Juan Sanchez,8-4,8,4,1,0,Completed,true,false,false
+AP016122,09 Feb 19,12,BLTC,Caulfield Rec,No. 3,Ian Thomas,Michail Petrova,Michail Petrova,6-8,6,8,0,1,Completed,true,false,false
+AP016122,09 Feb 19,12,BLTC,Caulfield Rec,No. 4,Lachlan Cooper,Daniel Warwick,Daniel Warwick,3-8,3,8,0,1,Completed,true,false,false
+AP016123,09 Feb 19,12,Tennis World,Dendy Park,No. 1,Sam Dunbar,Piet Van Derlans,Piet Van Derlans,5-8,5,8,0,1,Completed,true,false,false
+AP016123,09 Feb 19,12,Tennis World,Dendy Park,No. 2,Adam Neilands,Brad Piner,Brad Piner,6-8,6,8,0,1,Completed,true,false,false
+AP016123,09 Feb 19,12,Tennis World,Dendy Park,No. 3,Danny Thompson,Adam Poole,Adam Poole,7-8,7,8,0,1,Completed,true,false,false
+AP016123,09 Feb 19,12,Tennis World,Dendy Park,No. 4,Shannon Keough,Wes Alfredson,Wes Alfredson,2-8,2,8,0,1,Completed,true,false,false
+AP016131,16 Feb 19,13,Patterson Lakes,Overport Park,No. 1,Luke Dartnell,Rob Muir,Luke Dartnell,8-3,8,3,1,0,Completed,true,false,false
+AP016131,16 Feb 19,13,Patterson Lakes,Overport Park,No. 2,Alex Prattico,Joel Treveil,Alex Prattico,8-0,8,0,1,0,Completed,true,false,false
+AP016131,16 Feb 19,13,Patterson Lakes,Overport Park,No. 3,Bradley Petrak,Harvey Keon,Harvey Keon,7-8,7,8,0,1,Completed,true,false,false
+AP016131,16 Feb 19,13,Patterson Lakes,Overport Park,No. 4,Grove Bennett,Rob Rees,Grove Bennett,8-4,8,4,1,0,Completed,true,false,false
+AP016132,16 Feb 19,13,Hawthorn,Highmoor Uniting,No. 1,Aniket Ghaskadvi,Paul Luke,Paul Luke,4-8,4,8,0,1,Completed,true,false,false
+AP016132,16 Feb 19,13,Hawthorn,Highmoor Uniting,No. 2,Paul Wu,Yves Zenou,Yves Zenou,7-8,7,8,0,1,Completed,true,false,false
+AP016132,16 Feb 19,13,Hawthorn,Highmoor Uniting,No. 3,Alistair Young,Kyle Malligan,Kyle Malligan,7-8,7,8,0,1,Completed,true,false,false
+AP016132,16 Feb 19,13,Hawthorn,Highmoor Uniting,No. 4,Mark Petty,Glenn Collins,Mark Petty,8-3,8,3,1,0,Completed,true,false,false
+AP016133,16 Feb 19,13,Dendy Park,BLTC,No. 1,Piet Van Derlans,Juan Sanchez,Piet Van Derlans,8-2,8,2,1,0,Completed,true,false,false
+AP016133,16 Feb 19,13,Dendy Park,BLTC,No. 2,Brad Piner,Ian Thomas,Ian Thomas,4-8,4,8,0,1,Completed,true,false,false
+AP016133,16 Feb 19,13,Dendy Park,BLTC,No. 3,Adam Poole,Lachlan Cooper,Adam Poole,8-6,8,6,1,0,Completed,true,false,false
+AP016133,16 Feb 19,13,Dendy Park,BLTC,No. 4,Wes Alfredson,Stuart Mac Farlane,Stuart Mac Farlane,0-8,0,8,0,1,Completed,true,false,false
+AP016134,16 Feb 19,13,Caulfield Rec,Tennis World,No. 1,Michael Hickey,Sam Dunbar,Michael Hickey,8-6,8,6,1,0,Completed,true,false,false
+AP016134,16 Feb 19,13,Caulfield Rec,Tennis World,No. 2,Gary Slapar,Adam Neilands,Gary Slapar,8-2,8,2,1,0,Completed,true,false,false
+AP016134,16 Feb 19,13,Caulfield Rec,Tennis World,No. 3,Michail Petrova,Danny Thompson,Michail Petrova,8-4,8,4,1,0,Completed,true,false,false
+AP016134,16 Feb 19,13,Caulfield Rec,Tennis World,No. 4,Gabriel Giber,Brad Fenech,Gabriel Giber,8-4,8,4,1,0,Completed,true,false,false
+AP016141,23 Feb 19,14,Patterson Lakes,Hawthorn,No. 1,Luke Dartnell,Paul Wu,Luke Dartnell,8-5,8,5,1,0,Completed,true,false,false
+AP016141,23 Feb 19,14,Patterson Lakes,Hawthorn,No. 2,Alex Prattico,Alistair Young,Alex Prattico,8-1,8,1,1,0,Completed,true,false,false
+AP016141,23 Feb 19,14,Patterson Lakes,Hawthorn,No. 3,Marcelo Grosso,Richard Paine,Marcelo Grosso,8-0,8,0,1,0,Completed,true,false,false
+AP016141,23 Feb 19,14,Patterson Lakes,Hawthorn,No. 4,Grove Bennett,Simon Currey,Grove Bennett,8-0,8,0,1,0,Completed,true,false,false
+AP016142,23 Feb 19,14,Highmoor Uniting,Overport Park,No. 1,Yves Zenou,Rob Muir,Yves Zenou,8-5,8,5,1,0,Completed,true,false,false
+AP016142,23 Feb 19,14,Highmoor Uniting,Overport Park,No. 2,Tom Pope,Joel Treveil,Tom Pope,8-3,8,3,1,0,Completed,true,false,false
+AP016142,23 Feb 19,14,Highmoor Uniting,Overport Park,No. 3,Kyle Malligan,Fraser Keon,Fraser Keon,5-8,5,8,0,1,Completed,true,false,false
+AP016142,23 Feb 19,14,Highmoor Uniting,Overport Park,No. 4,Ben Abbott,Harvey Keon,Ben Abbott,8-7,8,7,1,0,Completed,true,false,false
+AP016143,23 Feb 19,14,Dendy Park,Caulfield Rec,No. 1,Piet Van Derlans,Michael Hickey,Piet Van Derlans,8-4,8,4,1,0,Completed,true,false,false
+AP016143,23 Feb 19,14,Dendy Park,Caulfield Rec,No. 2,Owen Davis,Vikrim Prakash,Owen Davis,8-2,8,2,1,0,Completed,true,false,false
+AP016143,23 Feb 19,14,Dendy Park,Caulfield Rec,No. 3,Brad Piner,Daniel Warwick,Brad Piner,8-6,8,6,1,0,Completed,true,false,false
+AP016143,23 Feb 19,14,Dendy Park,Caulfield Rec,No. 4,Sasha Milentijevic-vague,Gabriel Giber,Gabriel Giber,7-8,7,8,0,1,Completed,true,false,false
+AP016144,23 Feb 19,14,Tennis World,BLTC,No. 1,Ben Nguyen,Matt Levey,Matt Levey,1-8,1,8,0,1,Completed,true,false,false
+AP016144,23 Feb 19,14,Tennis World,BLTC,No. 2,Adam Neilands,William Lombard,William Lombard,4-8,4,8,0,1,Completed,true,false,false
+AP016144,23 Feb 19,14,Tennis World,BLTC,No. 3,Danny Thompson,Lachlan Cooper,Danny Thompson,8-6,8,6,1,0,Completed,true,false,false
+AP016144,23 Feb 19,14,Tennis World,BLTC,No. 4,Shannon Keough,Connor Levey,Shannon Keough,8-1,8,1,1,0,Completed,true,false,false
+AP016301,,16,Dendy Park,Highmoor Uniting,No. 1,Piet Van Derlans,Paul Luke,Piet Van Derlans,8-3,8,3,1,0,Completed,true,false,false
+AP016301,,16,Dendy Park,Highmoor Uniting,No. 2,Brad Piner,Tom Pope,Tom Pope,5-8,5,8,0,1,Completed,true,false,false
+AP016301,,16,Dendy Park,Highmoor Uniting,No. 3,Adam Poole,Kyle Malligan,Adam Poole,8-2,8,2,1,0,Completed,true,false,false
+AP016301,,16,Dendy Park,Highmoor Uniting,No. 4,Wes Alfredson,Ben Abbott,Ben Abbott,4-8,4,8,0,1,Completed,true,false,false
+AP016302,,16,Patterson Lakes,Overport Park,No. 1,Luke Dartnell,Rob Muir,Luke Dartnell,8-3,8,3,1,0,Completed,true,false,false
+AP016302,,16,Patterson Lakes,Overport Park,No. 2,Alex Prattico,Joel Treveil,Joel Treveil,6-8,6,8,0,1,Completed,true,false,false
+AP016302,,16,Patterson Lakes,Overport Park,No. 3,Bradley Petrak,Fraser Keon,Fraser Keon,7-8,7,8,0,1,Completed,true,false,false
+AP016302,,16,Patterson Lakes,Overport Park,No. 4,Marcelo Grosso,Harvey Keon,Harvey Keon,7-8,7,8,0,1,Completed,true,false,false
+AP016321,,17,Overport Park,Highmoor Uniting,No. 1,Rob Muir,Paul Luke,Paul Luke,5-8,5,8,0,1,Completed,true,false,false
+AP016321,,17,Overport Park,Highmoor Uniting,No. 2,Joel Treveil,Tom Pope,Joel Treveil,8-6,8,6,1,0,Completed,true,false,false
+AP016321,,17,Overport Park,Highmoor Uniting,No. 3,Fraser Keon,Ben Abbott,Ben Abbott,7-8,7,8,0,1,Completed,true,false,false
+AP016321,,17,Overport Park,Highmoor Uniting,No. 4,Harvey Keon,Phillipe Castermane,Harvey Keon,8-5,8,5,1,0,Completed,true,false,false

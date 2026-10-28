@@ -1,0 +1,221 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP019011,08 Oct 16,1,Dendy Park 1,Dendy Park 2,No. 1,Chris Kokkinos,Chris Murphy,Chris Kokkinos,9-8,9,8,1,0,Completed,true,false,false
+AP019011,08 Oct 16,1,Dendy Park 1,Dendy Park 2,No. 2,Chris Hill,Andrew Martin,Chris Hill,8-4,8,4,1,0,Completed,true,false,false
+AP019011,08 Oct 16,1,Dendy Park 1,Dendy Park 2,No. 3,Evan Polydoropoulos,Chris Odgers,Evan Polydoropoulos,8-3,8,3,1,0,Completed,true,false,false
+AP019011,08 Oct 16,1,Dendy Park 1,Dendy Park 2,No. 4,James Konstas,Anthony Murray,Anthony Murray,0-8,0,8,0,1,Completed,true,false,false
+AP019012,08 Oct 16,1,Lauriston,Maccabi,No. 1,Scott Newton,Geoff Rosenberger,Geoff Rosenberger,8-9,8,9,0,1,Completed,true,false,false
+AP019012,08 Oct 16,1,Lauriston,Maccabi,No. 2,Greg Gabai,Alan Datt,Alan Datt,3-8,3,8,0,1,Completed,true,false,false
+AP019012,08 Oct 16,1,Lauriston,Maccabi,No. 3,William Swedosh,Adam Rapoport,William Swedosh,8-5,8,5,1,0,Completed,true,false,false
+AP019012,08 Oct 16,1,Lauriston,Maccabi,No. 4,Branon Aprile,Jordan Davis,Jordan Davis,6-8,6,8,0,1,Completed,true,false,false
+AP019013,08 Oct 16,1,St Pats Mentone,Le Page,No. 1,Jeremy Martin,Nathan Coombes,Nathan Coombes,5-8,5,8,0,1,Completed,true,false,false
+AP019013,08 Oct 16,1,St Pats Mentone,Le Page,No. 2,Cameron De Silva,Tony Sofo,Cameron De Silva,8-3,8,3,1,0,Completed,true,false,false
+AP019013,08 Oct 16,1,St Pats Mentone,Le Page,No. 3,David Lawry,Trevor Hastings,David Lawry,8-6,8,6,1,0,Completed,true,false,false
+AP019013,08 Oct 16,1,St Pats Mentone,Le Page,No. 4,Mike De Silva,Brian Govan,Mike De Silva,8-1,8,1,1,0,Completed,true,false,false
+AP019014,08 Oct 16,1,Glen Huntly,Carmelite,No. 1,Tony Luxmore,Ben Kirchet,Ben Kirchet,1-8,1,8,0,1,Completed,true,false,false
+AP019014,08 Oct 16,1,Glen Huntly,Carmelite,No. 2,Rodney Boonsinlapa,Matt Balla,Matt Balla,7-9,7,9,0,1,Completed,true,false,false
+AP019014,08 Oct 16,1,Glen Huntly,Carmelite,No. 3,Nicholas Chong,Giancarlo Siclari,Giancarlo Siclari,1-8,1,8,0,1,Completed,true,false,false
+AP019014,08 Oct 16,1,Glen Huntly,Carmelite,No. 4,Leon Moran,Michael Junkovic,Michael Junkovic,3-8,3,8,0,1,Completed,true,false,false
+AP019021,15 Oct 16,2,Carmelite,Dendy Park 1,No. 1,Ben Kirchet,Chris Kokkinos,Chris Kokkinos,5-8,5,8,0,1,Completed,true,false,false
+AP019021,15 Oct 16,2,Carmelite,Dendy Park 1,No. 2,Matt Balla,Chris Hill,Matt Balla,8-4,8,4,1,0,Completed,true,false,false
+AP019021,15 Oct 16,2,Carmelite,Dendy Park 1,No. 3,Donny Balla,Evan Polydoropoulos,Evan Polydoropoulos,5-8,5,8,0,1,Completed,true,false,false
+AP019021,15 Oct 16,2,Carmelite,Dendy Park 1,No. 4,Giancarlo Siclari,Athan Vlachos,Athan Vlachos,6-8,6,8,0,1,Completed,true,false,false
+AP019022,15 Oct 16,2,Dendy Park 2,Lauriston,No. 1,Chris Murphy,Scott Newton,Chris Murphy,8-2,8,2,1,0,Completed,true,false,false
+AP019022,15 Oct 16,2,Dendy Park 2,Lauriston,No. 2,Glen Felsenthal,Luke Smith,Glen Felsenthal,8-6,8,6,1,0,Completed,true,false,false
+AP019022,15 Oct 16,2,Dendy Park 2,Lauriston,No. 3,Andrew Martin,Greg Gabai,Greg Gabai,6-8,6,8,0,1,Completed,true,false,false
+AP019022,15 Oct 16,2,Dendy Park 2,Lauriston,No. 4,Trevor Cohen,William Swedosh,Trevor Cohen,8-6,8,6,1,0,Completed,true,false,false
+AP019023,15 Oct 16,2,Maccabi,St Pats Mentone,No. 1,Zvi Schweitzer,Jeremy Martin,Jeremy Martin,2-8,2,8,0,1,Completed,true,false,false
+AP019023,15 Oct 16,2,Maccabi,St Pats Mentone,No. 2,Geoff Rosenberger,Cameron De Silva,Geoff Rosenberger,9-7,9,7,1,0,Completed,true,false,false
+AP019023,15 Oct 16,2,Maccabi,St Pats Mentone,No. 3,Alan Datt,David Lawry,Alan Datt,8-6,8,6,1,0,Completed,true,false,false
+AP019023,15 Oct 16,2,Maccabi,St Pats Mentone,No. 4,Ron Schweitzer,Sam Clayton,Sam Clayton,2-8,2,8,0,1,Completed,true,false,false
+AP019024,15 Oct 16,2,Le Page,Glen Huntly,No. 1,Nathan Coombes,Ramsay Taylor,Nathan Coombes,8-2,8,2,1,0,Completed,true,false,false
+AP019024,15 Oct 16,2,Le Page,Glen Huntly,No. 2,Trevor Hastings,Tony Luxmore,Tony Luxmore,6-8,6,8,0,1,Completed,true,false,false
+AP019024,15 Oct 16,2,Le Page,Glen Huntly,No. 3,Brian Govan,Rodney Boonsinlapa,Brian Govan,8-5,8,5,1,0,Completed,true,false,false
+AP019024,15 Oct 16,2,Le Page,Glen Huntly,No. 4,Nathan Gatti,Pei-Yuan Li,Nathan Gatti,8-4,8,4,1,0,Completed,true,false,false
+AP019041,05 Nov 16,4,Maccabi,Dendy Park 1,No. 1,Geoff Rosenberger,Chris Kokkinos,Geoff Rosenberger,8-4,8,4,1,0,Completed,true,false,false
+AP019041,05 Nov 16,4,Maccabi,Dendy Park 1,No. 2,Alan Datt,Evan Polydoropoulos,Alan Datt,8-5,8,5,1,0,Completed,true,false,false
+AP019041,05 Nov 16,4,Maccabi,Dendy Park 1,No. 3,Adam Rapoport,Athan Vlachos,Adam Rapoport,8-5,8,5,1,0,Completed,true,false,false
+AP019041,05 Nov 16,4,Maccabi,Dendy Park 1,No. 4,Ron Schweitzer,Eliot Johnson,Ron Schweitzer,9-8,9,8,1,0,Completed,true,false,false
+AP019042,05 Nov 16,4,Le Page,Lauriston,No. 1,Nathan Coombes,Scott Newton,Nathan Coombes,8-1,8,1,1,0,Completed,true,false,false
+AP019042,05 Nov 16,4,Le Page,Lauriston,No. 2,Tony Sofo,Luke Smith,Luke Smith,6-8,6,8,0,1,Completed,true,false,false
+AP019042,05 Nov 16,4,Le Page,Lauriston,No. 3,Trevor Hastings,William Swedosh,Trevor Hastings,8-4,8,4,1,0,Completed,true,false,false
+AP019042,05 Nov 16,4,Le Page,Lauriston,No. 4,Brian Govan,Igor Vorsovski,Igor Vorsovski,3-8,3,8,0,1,Completed,true,false,false
+AP019043,05 Nov 16,4,Carmelite,St Pats Mentone,No. 1,Ben Kirchet,Jeremy Martin,Jeremy Martin,4-8,4,8,0,1,Completed,true,false,false
+AP019043,05 Nov 16,4,Carmelite,St Pats Mentone,No. 2,Matt Balla,Cameron De Silva,Matt Balla,8-5,8,5,1,0,Completed,true,false,false
+AP019043,05 Nov 16,4,Carmelite,St Pats Mentone,No. 3,Giancarlo Siclari,David Lawry,David Lawry,2-8,2,8,0,1,Completed,true,false,false
+AP019043,05 Nov 16,4,Carmelite,St Pats Mentone,No. 4,Michael Junkovic,Sam Clayton,Michael Junkovic,8-3,8,3,1,0,Completed,true,false,false
+AP019044,05 Nov 16,4,Dendy Park 2,Glen Huntly,No. 1,Chris Murphy,Tony Luxmore,Chris Murphy,8-1,8,1,1,0,Completed,true,false,false
+AP019044,05 Nov 16,4,Dendy Park 2,Glen Huntly,No. 2,Andrew Martin,Rodney Boonsinlapa,Andrew Martin,8-3,8,3,1,0,Completed,true,false,false
+AP019044,05 Nov 16,4,Dendy Park 2,Glen Huntly,No. 3,Chris Odgers,Stephoni Burti,Chris Odgers,8-2,8,2,1,0,Completed,true,false,false
+AP019044,05 Nov 16,4,Dendy Park 2,Glen Huntly,No. 4,Bryan Lehane,Pei-Yuan Li,Pei-Yuan Li,8-9,8,9,0,1,Completed,true,false,false
+AP019051,12 Nov 16,5,St Pats Mentone,Glen Huntly,No. 1,Jeremy Martin,Tony Luxmore,Jeremy Martin,8-3,8,3,1,0,Completed,true,false,false
+AP019051,12 Nov 16,5,St Pats Mentone,Glen Huntly,No. 2,Cameron De Silva,Rodney Boonsinlapa,Cameron De Silva,8-2,8,2,1,0,Completed,true,false,false
+AP019051,12 Nov 16,5,St Pats Mentone,Glen Huntly,No. 3,Nick Hall,Nicholas Chong,Nicholas Chong,6-8,6,8,0,1,Completed,true,false,false
+AP019051,12 Nov 16,5,St Pats Mentone,Glen Huntly,No. 4,Mike De Silva,Pei-Yuan Li,Mike De Silva,8-3,8,3,1,0,Completed,true,false,false
+AP019052,12 Nov 16,5,Carmelite,Le Page,No. 1,Michael Baird,Tony Sofo,Michael Baird,9-7,9,7,1,0,Completed,true,false,false
+AP019052,12 Nov 16,5,Carmelite,Le Page,No. 2,Matt Balla,Trevor Hastings,Matt Balla,8-6,8,6,1,0,Completed,true,false,false
+AP019052,12 Nov 16,5,Carmelite,Le Page,No. 3,Donny Balla,Brian Govan,Donny Balla,8-4,8,4,1,0,Completed,true,false,false
+AP019052,12 Nov 16,5,Carmelite,Le Page,No. 4,Giancarlo Siclari,Nathan Gatti,Nathan Gatti,4-8,4,8,0,1,Completed,true,false,false
+AP019053,12 Nov 16,5,Maccabi,Dendy Park 2,No. 1,Zvi Schweitzer,Glen Felsenthal,Zvi Schweitzer,8-5,8,5,1,0,Completed,true,false,false
+AP019053,12 Nov 16,5,Maccabi,Dendy Park 2,No. 2,Geoff Rosenberger,Andrew Martin,Geoff Rosenberger,8-3,8,3,1,0,Completed,true,false,false
+AP019053,12 Nov 16,5,Maccabi,Dendy Park 2,No. 3,Robert Steinhardt,Richard Gorovenko,Richard Gorovenko,2-8,2,8,0,1,Completed,true,false,false
+AP019053,12 Nov 16,5,Maccabi,Dendy Park 2,No. 4,Ron Schweitzer,Richard Artis,Ron Schweitzer,8-2,8,2,1,0,Completed,true,false,false
+AP019054,12 Nov 16,5,Dendy Park 1,Lauriston,No. 1,Evan Polydoropoulos,Scott Newton,Scott Newton,4-8,4,8,0,1,Completed,true,false,false
+AP019054,12 Nov 16,5,Dendy Park 1,Lauriston,No. 2,Athan Vlachos,Luke Smith,Athan Vlachos,9-8,9,8,1,0,Completed,true,false,false
+AP019054,12 Nov 16,5,Dendy Park 1,Lauriston,No. 3,Will McLorinan,Greg Gabai,Greg Gabai,2-8,2,8,0,1,Completed,true,false,false
+AP019054,12 Nov 16,5,Dendy Park 1,Lauriston,No. 4,Ryan Mading,Igor Vorsovski,Igor Vorsovski,0-8,0,8,0,1,Completed,true,false,false
+AP019061,19 Nov 16,6,Lauriston,St Pats Mentone,No. 1,Scott Newton,Cameron De Silva,Cameron De Silva,8-9,8,9,0,1,Completed,true,false,false
+AP019061,19 Nov 16,6,Lauriston,St Pats Mentone,No. 2,Luke Smith,David Lawry,David Lawry,6-8,6,8,0,1,Completed,true,false,false
+AP019061,19 Nov 16,6,Lauriston,St Pats Mentone,No. 3,Greg Gabai,Nick Hall,Greg Gabai,8-3,8,3,1,0,Completed,true,false,false
+AP019061,19 Nov 16,6,Lauriston,St Pats Mentone,No. 4,William Swedosh,Mike De Silva,William Swedosh,9-7,9,7,1,0,Completed,true,false,false
+AP019062,19 Nov 16,6,Glen Huntly,Dendy Park 1,No. 1,Tony Luxmore,Chris Kokkinos,Chris Kokkinos,1-8,1,8,0,1,Completed,true,false,false
+AP019062,19 Nov 16,6,Glen Huntly,Dendy Park 1,No. 2,Rodney Boonsinlapa,Evan Polydoropoulos,Evan Polydoropoulos,5-8,5,8,0,1,Completed,true,false,false
+AP019062,19 Nov 16,6,Glen Huntly,Dendy Park 1,No. 3,Nicholas Chong,Athan Vlachos,Nicholas Chong,8-1,8,1,1,0,Completed,true,false,false
+AP019062,19 Nov 16,6,Glen Huntly,Dendy Park 1,No. 4,Pei-Yuan Li,Will McLorinan,Will McLorinan,7-9,7,9,0,1,Completed,true,false,false
+AP019063,19 Nov 16,6,Le Page,Maccabi,No. 1,Nathan Coombes,Zvi Schweitzer,Nathan Coombes,8-0,8,0,1,0,Completed,true,false,false
+AP019063,19 Nov 16,6,Le Page,Maccabi,No. 2,Tony Sofo,Geoff Rosenberger,Geoff Rosenberger,2-8,2,8,0,1,Completed,true,false,false
+AP019063,19 Nov 16,6,Le Page,Maccabi,No. 3,Trevor Hastings,Adam Rapoport,Trevor Hastings,8-4,8,4,1,0,Completed,true,false,false
+AP019063,19 Nov 16,6,Le Page,Maccabi,No. 4,Brian Govan,Ron Schweitzer,Ron Schweitzer,4-8,4,8,0,1,Completed,true,false,false
+AP019064,19 Nov 16,6,Dendy Park 2,Carmelite,No. 1,Andrew Martin,Ben Kirchet,Ben Kirchet,3-8,3,8,0,1,Completed,true,false,false
+AP019064,19 Nov 16,6,Dendy Park 2,Carmelite,No. 2,Chris Odgers,Matt Balla,Chris Odgers,8-6,8,6,1,0,Completed,true,false,false
+AP019064,19 Nov 16,6,Dendy Park 2,Carmelite,No. 3,Trevor Cohen,Giancarlo Siclari,Trevor Cohen,8-6,8,6,1,0,Completed,true,false,false
+AP019064,19 Nov 16,6,Dendy Park 2,Carmelite,No. 4,Bryan Lehane,Michael Junkovic,Michael Junkovic,1-8,1,8,0,1,Completed,true,false,false
+AP019071,26 Nov 16,7,Dendy Park 1,St Pats Mentone,No. 1,Evan Polydoropoulos,Cameron De Silva,Cameron De Silva,2-8,2,8,0,1,Completed,true,false,false
+AP019071,26 Nov 16,7,Dendy Park 1,St Pats Mentone,No. 2,Athan Vlachos,David Lawry,David Lawry,5-8,5,8,0,1,Completed,true,false,false
+AP019071,26 Nov 16,7,Dendy Park 1,St Pats Mentone,No. 3,James Konstas,Sam Clayton,Sam Clayton,0-8,0,8,0,1,Completed,true,false,false
+AP019071,26 Nov 16,7,Dendy Park 1,St Pats Mentone,No. 4,Will McLorinan,Nick Hall,Will McLorinan,8-4,8,4,1,0,Completed,true,false,false
+AP019072,26 Nov 16,7,Lauriston,Glen Huntly,No. 1,Scott Newton,Tony Luxmore,Scott Newton,8-5,8,5,1,0,Completed,true,false,false
+AP019072,26 Nov 16,7,Lauriston,Glen Huntly,No. 2,Greg Gabai,Nicholas Chong,Greg Gabai,8-4,8,4,1,0,Completed,true,false,false
+AP019072,26 Nov 16,7,Lauriston,Glen Huntly,No. 3,William Swedosh,Pei-Yuan Li,Pei-Yuan Li,5-8,5,8,0,1,Completed,true,false,false
+AP019072,26 Nov 16,7,Lauriston,Glen Huntly,No. 4,Branon Aprile,Ming Lin,Ming Lin,5-8,5,8,0,1,Completed,true,false,false
+AP019073,26 Nov 16,7,Carmelite,Maccabi,No. 1,Ben Kirchet,Zvi Schweitzer,Ben Kirchet,8-3,8,3,1,0,Completed,true,false,false
+AP019073,26 Nov 16,7,Carmelite,Maccabi,No. 2,Donny Balla,Geoff Rosenberger,Geoff Rosenberger,2-8,2,8,0,1,Completed,true,false,false
+AP019073,26 Nov 16,7,Carmelite,Maccabi,No. 3,Giancarlo Siclari,Alan Datt,Giancarlo Siclari,8-5,8,5,1,0,Completed,true,false,false
+AP019073,26 Nov 16,7,Carmelite,Maccabi,No. 4,Michael Junkovic,Ron Schweitzer,Michael Junkovic,8-3,8,3,1,0,Completed,true,false,false
+AP019074,26 Nov 16,7,Le Page,Dendy Park 2,No. 1,Nathan Coombes,Chris Murphy,Chris Murphy,3-8,3,8,0,1,Completed,true,false,false
+AP019074,26 Nov 16,7,Le Page,Dendy Park 2,No. 2,Tony Sofo,Glen Felsenthal,Glen Felsenthal,6-8,6,8,0,1,Completed,true,false,false
+AP019074,26 Nov 16,7,Le Page,Dendy Park 2,No. 3,Trevor Hastings,Chris Odgers,Chris Odgers,5-8,5,8,0,1,Completed,true,false,false
+AP019074,26 Nov 16,7,Le Page,Dendy Park 2,No. 4,Brian Govan,Trevor Cohen,Trevor Cohen,6-8,6,8,0,1,Completed,true,false,false
+AP019081,03 Dec 16,8,Dendy Park 2,Dendy Park 1,No. 1,Chris Murphy,Michael Kokkinos,Michael Kokkinos,6-8,6,8,0,1,Completed,true,false,false
+AP019081,03 Dec 16,8,Dendy Park 2,Dendy Park 1,No. 2,Glen Felsenthal,James Konstas,Glen Felsenthal,8-1,8,1,1,0,Completed,true,false,false
+AP019081,03 Dec 16,8,Dendy Park 2,Dendy Park 1,No. 3,Andrew Martin,Athan Vlachos,Andrew Martin,9-8,9,8,1,0,Completed,true,false,false
+AP019081,03 Dec 16,8,Dendy Park 2,Dendy Park 1,No. 4,Chris Odgers,Will McLorinan,Chris Odgers,8-5,8,5,1,0,Completed,true,false,false
+AP019082,03 Dec 16,8,Maccabi,Lauriston,No. 1,Zvi Schweitzer,Scott Newton,Zvi Schweitzer,8-4,8,4,1,0,Completed,true,false,false
+AP019082,03 Dec 16,8,Maccabi,Lauriston,No. 2,Geoff Rosenberger,Luke Smith,Geoff Rosenberger,8-1,8,1,1,0,Completed,true,false,false
+AP019082,03 Dec 16,8,Maccabi,Lauriston,No. 3,Robert Steinhardt,Greg Gabai,Greg Gabai,3-8,3,8,0,1,Completed,true,false,false
+AP019082,03 Dec 16,8,Maccabi,Lauriston,No. 4,Ron Schweitzer,William Swedosh,William Swedosh,8-9,8,9,0,1,Completed,true,false,false
+AP019083,03 Dec 16,8,Le Page,St Pats Mentone,No. 1,Nathan Coombes,Jeremy Martin,Nathan Coombes,8-6,8,6,1,0,Completed,true,false,false
+AP019083,03 Dec 16,8,Le Page,St Pats Mentone,No. 2,Trevor Hastings,Cameron De Silva,Cameron De Silva,4-8,4,8,0,1,Completed,true,false,false
+AP019083,03 Dec 16,8,Le Page,St Pats Mentone,No. 3,Brian Govan,Sam Clayton,Sam Clayton,3-8,3,8,0,1,Completed,true,false,false
+AP019083,03 Dec 16,8,Le Page,St Pats Mentone,No. 4,Nathan Gatti,Mike De Silva,Nathan Gatti,8-1,8,1,1,0,Completed,true,false,false
+AP019084,03 Dec 16,8,Carmelite,Glen Huntly,No. 1,Ben Kirchet,Tony Luxmore,Ben Kirchet,8-3,8,3,1,0,Completed,true,false,false
+AP019084,03 Dec 16,8,Carmelite,Glen Huntly,No. 2,Matt Balla,Nicholas Chong,Matt Balla,8-1,8,1,1,0,Completed,true,false,false
+AP019084,03 Dec 16,8,Carmelite,Glen Huntly,No. 3,Giancarlo Siclari,Pei-Yuan Li,Giancarlo Siclari,8-2,8,2,1,0,Completed,true,false,false
+AP019084,03 Dec 16,8,Carmelite,Glen Huntly,No. 4,Michael Junkovic,Ming Lin,Michael Junkovic,8-2,8,2,1,0,Completed,true,false,false
+AP019091,10 Dec 16,9,Dendy Park 1,Carmelite,No. 1,Evan Polydoropoulos,Jack McLean,Jack McLean,4-8,4,8,0,1,Completed,true,false,false
+AP019091,10 Dec 16,9,Dendy Park 1,Carmelite,No. 2,James Konstas,Ben Kirchet,Ben Kirchet,0-8,0,8,0,1,Completed,true,false,false
+AP019091,10 Dec 16,9,Dendy Park 1,Carmelite,No. 3,Athan Vlachos,Mitchell Carlisle,Athan Vlachos,9-7,9,7,1,0,Completed,true,false,false
+AP019091,10 Dec 16,9,Dendy Park 1,Carmelite,No. 4,Will McLorinan,Giancarlo Siclari,Will McLorinan,8-4,8,4,1,0,Completed,true,false,false
+AP019092,10 Dec 16,9,Lauriston,Dendy Park 2,No. 1,Luke Smith,Chris Murphy,Chris Murphy,2-8,2,8,0,1,Completed,true,false,false
+AP019092,10 Dec 16,9,Lauriston,Dendy Park 2,No. 2,Greg Gabai,Andrew Martin,Greg Gabai,8-4,8,4,1,0,Completed,true,false,false
+AP019092,10 Dec 16,9,Lauriston,Dendy Park 2,No. 3,William Swedosh,Trevor Cohen,Trevor Cohen,4-8,4,8,0,1,Completed,true,false,false
+AP019092,10 Dec 16,9,Lauriston,Dendy Park 2,No. 4,Branon Aprile,Bryan Lehane,Bryan Lehane,6-8,6,8,0,1,Completed,true,false,false
+AP019093,10 Dec 16,9,St Pats Mentone,Maccabi,No. 1,Jeremy Martin,Zvi Schweitzer,Jeremy Martin,8-4,8,4,1,0,Completed,true,false,false
+AP019093,10 Dec 16,9,St Pats Mentone,Maccabi,No. 2,David Lawry,Geoff Rosenberger,David Lawry,9-7,9,7,1,0,Completed,true,false,false
+AP019093,10 Dec 16,9,St Pats Mentone,Maccabi,No. 3,Nick Hall,Adam Rapoport,Adam Rapoport,4-8,4,8,0,1,Completed,true,false,false
+AP019093,10 Dec 16,9,St Pats Mentone,Maccabi,No. 4,Mike De Silva,Joel Rabinov,Mike De Silva,8-5,8,5,1,0,Completed,true,false,false
+AP019094,10 Dec 16,9,Glen Huntly,Le Page,No. 1,Rodney Boonsinlapa,Tony Sofo,Tony Sofo,2-8,2,8,0,1,Completed,true,false,false
+AP019094,10 Dec 16,9,Glen Huntly,Le Page,No. 2,Tony Luxmore,Trevor Hastings,Trevor Hastings,0-8,0,8,0,1,Completed,true,false,false
+AP019094,10 Dec 16,9,Glen Huntly,Le Page,No. 3,Nicholas Chong,Brian Govan,Nicholas Chong,8-3,8,3,1,0,Completed,true,false,false
+AP019094,10 Dec 16,9,Glen Huntly,Le Page,No. 4,Ming Lin,Nathan Gatti,Nathan Gatti,1-8,1,8,0,1,Completed,true,false,false
+AP019101,17 Dec 16,10,Le Page,Dendy Park 1,No. 1,Nathan Coombes,Chris Kokkinos,Chris Kokkinos,5-8,5,8,0,1,Completed,true,false,false
+AP019101,17 Dec 16,10,Le Page,Dendy Park 1,No. 2,Nathan Gatti,[Unnamed emergency — TROLS AP019101 away code 2],Nathan Gatti,8-0,8,0,1,0,Completed,false,false,true
+AP019101,17 Dec 16,10,Le Page,Dendy Park 1,No. 3,Tony Sofo,Evan Polydoropoulos,Evan Polydoropoulos,6-8,6,8,0,1,Completed,true,false,false
+AP019101,17 Dec 16,10,Le Page,Dendy Park 1,No. 4,Brian Govan,Athan Vlachos,Athan Vlachos,3-8,3,8,0,1,Completed,true,false,false
+AP019102,17 Dec 16,10,Carmelite,Lauriston,No. 1,Ben Kirchet,Greg Gabai,Ben Kirchet,8-5,8,5,1,0,Completed,true,false,false
+AP019102,17 Dec 16,10,Carmelite,Lauriston,No. 2,Victor Blitsas,William Swedosh,Victor Blitsas,8-2,8,2,1,0,Completed,true,false,false
+AP019102,17 Dec 16,10,Carmelite,Lauriston,No. 3,Giancarlo Siclari,Igor Vorsovski,Giancarlo Siclari,8-2,8,2,1,0,Completed,true,false,false
+AP019102,17 Dec 16,10,Carmelite,Lauriston,No. 4,Michael Junkovic,Branon Aprile,Michael Junkovic,8-2,8,2,1,0,Completed,true,false,false
+AP019103,17 Dec 16,10,Dendy Park 2,St Pats Mentone,No. 1,Chris Murphy,Cameron De Silva,Chris Murphy,8-2,8,2,1,0,Completed,true,false,false
+AP019103,17 Dec 16,10,Dendy Park 2,St Pats Mentone,No. 2,Glen Felsenthal,David Lawry,Glen Felsenthal,8-1,8,1,1,0,Completed,true,false,false
+AP019103,17 Dec 16,10,Dendy Park 2,St Pats Mentone,No. 3,Andrew Martin,Sam Clayton,Andrew Martin,8-3,8,3,1,0,Completed,true,false,false
+AP019103,17 Dec 16,10,Dendy Park 2,St Pats Mentone,No. 4,Anthony Murray,Mike De Silva,Anthony Murray,8-0,8,0,1,0,Completed,true,false,false
+AP019104,17 Dec 16,10,Maccabi,Glen Huntly,No. 1,Zvi Schweitzer,Tony Luxmore,Zvi Schweitzer,9-8,9,8,1,0,Completed,true,false,false
+AP019104,17 Dec 16,10,Maccabi,Glen Huntly,No. 2,Geoff Rosenberger,Rodney Boonsinlapa,Geoff Rosenberger,8-2,8,2,1,0,Completed,true,false,false
+AP019104,17 Dec 16,10,Maccabi,Glen Huntly,No. 3,Ryan Behr,Nicholas Chong,Ryan Behr,8-0,8,0,1,0,Completed,true,false,false
+AP019104,17 Dec 16,10,Maccabi,Glen Huntly,No. 4,Adam Rapoport,Ron Slamowicz,Adam Rapoport,8-0,8,0,1,0,Completed,true,false,false
+AP019111,04 Feb 17,11,Dendy Park 1,Maccabi,No. 1,Michael Kokkinos,Geoff Rosenberger,Geoff Rosenberger,1-8,1,8,0,1,Completed,true,false,false
+AP019111,04 Feb 17,11,Dendy Park 1,Maccabi,No. 2,Evan Polydoropoulos,Zvi Schweitzer,Evan Polydoropoulos,8-3,8,3,1,0,Completed,true,false,false
+AP019111,04 Feb 17,11,Dendy Park 1,Maccabi,No. 3,James Konstas,Alan Datt,James Konstas,8-5,8,5,1,0,Completed,true,false,false
+AP019111,04 Feb 17,11,Dendy Park 1,Maccabi,No. 4,Athan Vlachos,Adam Rapoport,Athan Vlachos,8-5,8,5,1,0,Completed,true,false,false
+AP019112,04 Feb 17,11,Lauriston,Le Page,No. 1,Scott Newton,Nathan Coombes,Nathan Coombes,2-8,2,8,0,1,Completed,true,false,false
+AP019112,04 Feb 17,11,Lauriston,Le Page,No. 2,Luke Smith,Tony Sofo,Tony Sofo,5-8,5,8,0,1,Completed,true,false,false
+AP019112,04 Feb 17,11,Lauriston,Le Page,No. 3,William Swedosh,Trevor Hastings,William Swedosh,8-2,8,2,1,0,Completed,true,false,false
+AP019112,04 Feb 17,11,Lauriston,Le Page,No. 4,Branon Aprile,Brian Govan,Branon Aprile,9-8,9,8,1,0,Completed,true,false,false
+AP019113,04 Feb 17,11,St Pats Mentone,Carmelite,No. 1,Jeremy Martin,Jack McLean,Jack McLean,3-8,3,8,0,1,Completed,true,false,false
+AP019113,04 Feb 17,11,St Pats Mentone,Carmelite,No. 2,Cameron De Silva,Ben Kirchet,Ben Kirchet,1-8,1,8,0,1,Completed,true,false,false
+AP019113,04 Feb 17,11,St Pats Mentone,Carmelite,No. 3,David Lawry,Louis Horsley,Louis Horsley,0-8,0,8,0,1,Completed,true,false,false
+AP019113,04 Feb 17,11,St Pats Mentone,Carmelite,No. 4,Sam Clayton,Giancarlo Siclari,Sam Clayton,8-4,8,4,1,0,Completed,true,false,false
+AP019114,04 Feb 17,11,Glen Huntly,Dendy Park 2,No. 1,Venkatesh Prasad Anala,Chris Murphy,Venkatesh Prasad Anala,8-4,8,4,1,0,Completed,true,false,false
+AP019114,04 Feb 17,11,Glen Huntly,Dendy Park 2,No. 2,Tony Luxmore,Trevor Cohen,Trevor Cohen,6-8,6,8,0,1,Completed,true,false,false
+AP019114,04 Feb 17,11,Glen Huntly,Dendy Park 2,No. 3,Bill Renwick,Anthony Murray,Anthony Murray,4-8,4,8,0,1,Completed,true,false,false
+AP019114,04 Feb 17,11,Glen Huntly,Dendy Park 2,No. 4,Ron Slamowicz,Bryan Lehane,Bryan Lehane,3-8,3,8,0,1,Completed,true,false,false
+AP019121,11 Feb 17,12,Glen Huntly,St Pats Mentone,No. 1,Rodney Boonsinlapa,Cameron De Silva,Cameron De Silva,3-8,3,8,0,1,Completed,true,false,false
+AP019121,11 Feb 17,12,Glen Huntly,St Pats Mentone,No. 2,Nicholas Chong,David Lawry,David Lawry,1-8,1,8,0,1,Completed,true,false,false
+AP019121,11 Feb 17,12,Glen Huntly,St Pats Mentone,No. 3,Graham Ihlein,Sam Clayton,Sam Clayton,3-8,3,8,0,1,Completed,true,false,false
+AP019121,11 Feb 17,12,Glen Huntly,St Pats Mentone,No. 4,Ron Slamowicz,Nick Hall,Nick Hall,3-8,3,8,0,1,Completed,true,false,false
+AP019122,11 Feb 17,12,Le Page,Carmelite,No. 1,Nathan Coombes,Matt Balla,Nathan Coombes,8-2,8,2,1,0,Completed,true,false,false
+AP019122,11 Feb 17,12,Le Page,Carmelite,No. 2,Nathan Gatti,Donny Balla,Donny Balla,5-8,5,8,0,1,Completed,true,false,false
+AP019122,11 Feb 17,12,Le Page,Carmelite,No. 3,Brian Govan,Carl Somers,Brian Govan,9-7,9,7,1,0,Completed,true,false,false
+AP019122,11 Feb 17,12,Le Page,Carmelite,No. 4,Tony Gatti,Giancarlo Siclari,Giancarlo Siclari,3-8,3,8,0,1,Completed,true,false,false
+AP019123,11 Feb 17,12,Dendy Park 2,Maccabi,No. 1,Chris Murphy,Geoff Rosenberger,Geoff Rosenberger,5-8,5,8,0,1,Completed,true,false,false
+AP019123,11 Feb 17,12,Dendy Park 2,Maccabi,No. 2,Glen Felsenthal,Zvi Schweitzer,Glen Felsenthal,8-4,8,4,1,0,Completed,true,false,false
+AP019123,11 Feb 17,12,Dendy Park 2,Maccabi,No. 3,Andrew Martin,Alan Datt,Andrew Martin,8-5,8,5,1,0,Completed,true,false,false
+AP019123,11 Feb 17,12,Dendy Park 2,Maccabi,No. 4,Chris Odgers,Ron Schweitzer,Ron Schweitzer,6-8,6,8,0,1,Completed,true,false,false
+AP019124,11 Feb 17,12,Lauriston,Dendy Park 1,No. 1,Scott Newton,Chris Kokkinos,Chris Kokkinos,2-8,2,8,0,1,Completed,true,false,false
+AP019124,11 Feb 17,12,Lauriston,Dendy Park 1,No. 2,Luke Smith,Michael Kokkinos,Michael Kokkinos,1-8,1,8,0,1,Completed,true,false,false
+AP019124,11 Feb 17,12,Lauriston,Dendy Park 1,No. 3,Greg Gabai,Evan Polydoropoulos,Evan Polydoropoulos,5-8,5,8,0,1,Completed,true,false,false
+AP019124,11 Feb 17,12,Lauriston,Dendy Park 1,No. 4,William Swedosh,Athan Vlachos,Athan Vlachos,4-8,4,8,0,1,Completed,true,false,false
+AP019131,18 Feb 17,13,St Pats Mentone,Lauriston,No. 1,Cameron De Silva,Scott Newton,Scott Newton,8-9,8,9,0,1,Completed,true,false,false
+AP019131,18 Feb 17,13,St Pats Mentone,Lauriston,No. 2,Sam Clayton,Greg Gabai,Sam Clayton,8-4,8,4,1,0,Completed,true,false,false
+AP019131,18 Feb 17,13,St Pats Mentone,Lauriston,No. 3,Nick Hall,William Swedosh,Nick Hall,8-5,8,5,1,0,Completed,true,false,false
+AP019131,18 Feb 17,13,St Pats Mentone,Lauriston,No. 4,Mike De Silva,Branon Aprile,Mike De Silva,8-4,8,4,1,0,Completed,true,false,false
+AP019132,18 Feb 17,13,Dendy Park 1,Glen Huntly,No. 1,Michael Kokkinos,[Unnamed emergency — TROLS AP019132 away code 1],Michael Kokkinos,8-0,8,0,1,0,Completed,false,false,true
+AP019132,18 Feb 17,13,Dendy Park 1,Glen Huntly,No. 2,Evan Polydoropoulos,Andy Leong,Evan Polydoropoulos,8-5,8,5,1,0,Completed,true,false,false
+AP019132,18 Feb 17,13,Dendy Park 1,Glen Huntly,No. 3,James Konstas,Tony Luxmore,James Konstas,8-6,8,6,1,0,Completed,true,false,false
+AP019132,18 Feb 17,13,Dendy Park 1,Glen Huntly,No. 4,Athan Vlachos,Leon Moran,Athan Vlachos,8-6,8,6,1,0,Completed,true,false,false
+AP019133,18 Feb 17,13,Maccabi,Le Page,No. 1,Geoff Rosenberger,Nathan Coombes,Nathan Coombes,3-8,3,8,0,1,Completed,true,false,false
+AP019133,18 Feb 17,13,Maccabi,Le Page,No. 2,Zvi Schweitzer,Tony Sofo,Tony Sofo,5-8,5,8,0,1,Completed,true,false,false
+AP019133,18 Feb 17,13,Maccabi,Le Page,No. 3,Alan Datt,Trevor Hastings,Alan Datt,8-3,8,3,1,0,Completed,true,false,false
+AP019133,18 Feb 17,13,Maccabi,Le Page,No. 4,Ron Schweitzer,Brian Govan,Ron Schweitzer,8-1,8,1,1,0,Completed,true,false,false
+AP019134,18 Feb 17,13,Carmelite,Dendy Park 2,No. 1,Matt Balla,Chris Murphy,Chris Murphy,1-8,1,8,0,1,Completed,true,false,false
+AP019134,18 Feb 17,13,Carmelite,Dendy Park 2,No. 2,Victor Blitsas,Glen Felsenthal,Victor Blitsas,8-0,8,0,1,0,Completed,true,false,false
+AP019134,18 Feb 17,13,Carmelite,Dendy Park 2,No. 3,Giancarlo Siclari,Andrew Martin,Giancarlo Siclari,9-7,9,7,1,0,Completed,true,false,false
+AP019134,18 Feb 17,13,Carmelite,Dendy Park 2,No. 4,Michael Junkovic,Anthony Murray,Anthony Murray,1-8,1,8,0,1,Completed,true,false,false
+AP019141,25 Feb 17,14,St Pats Mentone,Dendy Park 1,No. 1,Cameron De Silva,Chris Kokkinos,Chris Kokkinos,4-8,4,8,0,1,Completed,true,false,false
+AP019141,25 Feb 17,14,St Pats Mentone,Dendy Park 1,No. 2,David Lawry,Michael Kokkinos,David Lawry,8-6,8,6,1,0,Completed,true,false,false
+AP019141,25 Feb 17,14,St Pats Mentone,Dendy Park 1,No. 3,Sam Clayton,Athan Vlachos,Athan Vlachos,7-9,7,9,0,1,Completed,true,false,false
+AP019141,25 Feb 17,14,St Pats Mentone,Dendy Park 1,No. 4,Mike De Silva,George Konstas,Mike De Silva,8-4,8,4,1,0,Completed,true,false,false
+AP019143,25 Feb 17,14,Maccabi,Carmelite,No. 1,Geoff Rosenberger,Ben Kirchet,Ben Kirchet,8-9,8,9,0,1,Completed,true,false,false
+AP019143,25 Feb 17,14,Maccabi,Carmelite,No. 2,Zvi Schweitzer,Matt Balla,Matt Balla,2-8,2,8,0,1,Completed,true,false,false
+AP019143,25 Feb 17,14,Maccabi,Carmelite,No. 3,Alan Datt,Donny Balla,Donny Balla,5-8,5,8,0,1,Completed,true,false,false
+AP019143,25 Feb 17,14,Maccabi,Carmelite,No. 4,Robert Schattner,Giancarlo Siclari,Giancarlo Siclari,6-8,6,8,0,1,Completed,true,false,false
+AP019144,25 Feb 17,14,Dendy Park 2,Le Page,No. 1,Andrew Martin,Nathan Coombes,Nathan Coombes,0-8,0,8,0,1,Completed,true,false,false
+AP019144,25 Feb 17,14,Dendy Park 2,Le Page,No. 2,Trevor Cohen,Tony Sofo,Tony Sofo,4-8,4,8,0,1,Completed,true,false,false
+AP019144,25 Feb 17,14,Dendy Park 2,Le Page,No. 3,Anthony Murray,Trevor Hastings,Anthony Murray,8-3,8,3,1,0,Completed,true,false,false
+AP019144,25 Feb 17,14,Dendy Park 2,Le Page,No. 4,Bryan Lehane,Brian Govan,Bryan Lehane,8-6,8,6,1,0,Completed,true,false,false
+AP019301,,16,Carmelite,Dendy Park 2,No. 1,Ben Kirchet,Chris Murphy,Ben Kirchet,8-4,8,4,1,0,Completed,true,false,false
+AP019301,,16,Carmelite,Dendy Park 2,No. 2,Donny Balla,Glen Felsenthal,Donny Balla,8-3,8,3,1,0,Completed,true,false,false
+AP019301,,16,Carmelite,Dendy Park 2,No. 3,Giancarlo Siclari,Trevor Cohen,Giancarlo Siclari,9-8,9,8,1,0,Completed,true,false,false
+AP019301,,16,Carmelite,Dendy Park 2,No. 4,Michael Junkovic,Anthony Murray,Anthony Murray,6-8,6,8,0,1,Completed,true,false,false
+AP019302,,16,St Pats Mentone,Le Page,No. 1,Jeremy Martin,Nathan Coombes,Nathan Coombes,3-8,3,8,0,1,Completed,true,false,false
+AP019302,,16,St Pats Mentone,Le Page,No. 2,Cameron De Silva,Tony Sofo,Cameron De Silva,8-5,8,5,1,0,Completed,true,false,false
+AP019302,,16,St Pats Mentone,Le Page,No. 3,David Lawry,Trevor Hastings,David Lawry,8-4,8,4,1,0,Completed,true,false,false
+AP019302,,16,St Pats Mentone,Le Page,No. 4,Mike De Silva,Brian Govan,Mike De Silva,8-0,8,0,1,0,Completed,true,false,false
+AP019311,,16,Dendy Park 2,St Pats Mentone,No. 1,Chris Murphy,Jeremy Martin,Chris Murphy,8-5,8,5,1,0,Completed,true,false,false
+AP019311,,16,Dendy Park 2,St Pats Mentone,No. 2,Andrew Martin,Cameron De Silva,Cameron De Silva,2-8,2,8,0,1,Completed,true,false,false
+AP019311,,16,Dendy Park 2,St Pats Mentone,No. 3,Trevor Cohen,David Lawry,David Lawry,0-8,0,8,0,1,Completed,true,false,false
+AP019311,,16,Dendy Park 2,St Pats Mentone,No. 4,Anthony Murray,Sam Clayton,Sam Clayton,3-8,3,8,0,1,Completed,true,false,false
+AP019321,,17,Carmelite,St Pats Mentone,No. 1,Ben Kirchet,Jeremy Martin,Ben Kirchet,8-3,8,3,1,0,Completed,true,false,false
+AP019321,,17,Carmelite,St Pats Mentone,No. 2,Donny Balla,Cameron De Silva,Donny Balla,9-7,9,7,1,0,Completed,true,false,false
+AP019321,,17,Carmelite,St Pats Mentone,No. 3,Victor Blitsas,David Lawry,Victor Blitsas,8-3,8,3,1,0,Completed,true,false,false
+AP019321,,17,Carmelite,St Pats Mentone,No. 4,Michael Junkovic,Mike De Silva,Michael Junkovic,8-2,8,2,1,0,Completed,true,false,false

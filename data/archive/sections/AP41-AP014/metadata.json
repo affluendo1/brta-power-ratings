@@ -1,0 +1,89 @@
+{
+  "asset_id": "AP41-AP014",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 20/21",
+  "season_id": "AP41",
+  "season_label": "Summer 20/21",
+  "source_section_code": "AP014",
+  "section_label": "Mens s/d 4",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Black Rock",
+      "wins": 7,
+      "points": 59,
+      "percentage": 106.89,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "Patterson Lakes",
+      "wins": 6,
+      "points": 58.5,
+      "percentage": 110.37,
+      "marker": "P"
+    },
+    {
+      "position": 3,
+      "team": "Maccabi",
+      "wins": 4,
+      "points": 58,
+      "percentage": 122.75,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "BLTC 2",
+      "wins": 4,
+      "points": 49.5,
+      "percentage": 93.01,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "BLTC 3",
+      "wins": 4,
+      "points": 47,
+      "percentage": 94.99,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "BLTC 1",
+      "wins": 1,
+      "points": 28,
+      "percentage": 80.0,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP41-AP014",
+  "fixtures": 31,
+  "completed_fixtures": 30,
+  "draw_fixtures": 57,
+  "singles_rubbers": 116,
+  "doubles_rubbers": 59,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP014102 doubles No. 1: '2-2'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

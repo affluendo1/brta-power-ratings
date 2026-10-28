@@ -1,0 +1,74 @@
+{
+  "asset_id": "AP41-AP007",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 20/21",
+  "season_id": "AP41",
+  "season_label": "Summer 20/21",
+  "source_section_code": "AP007",
+  "section_label": "Mixed Rubbers 6",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Ormond",
+      "wins": 9,
+      "points": 75.5,
+      "percentage": 164.8,
+      "marker": ""
+    },
+    {
+      "position": 2,
+      "team": "Long Beach",
+      "wins": 5,
+      "points": 46.5,
+      "percentage": 100.26,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Le Page",
+      "wins": 3,
+      "points": 31.5,
+      "percentage": 84.27,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "BLTC",
+      "wins": 2,
+      "points": 22.5,
+      "percentage": 70.96,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP41-AP007",
+  "fixtures": 22,
+  "completed_fixtures": 21,
+  "draw_fixtures": 56,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 80,
+  "latest_round": 11,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP007101 doubles No. 1: '6-4 1-0'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP007102 doubles No. 2: '2-6 1-3'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

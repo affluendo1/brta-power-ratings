@@ -1,0 +1,89 @@
+{
+  "asset_id": "AP38-AP003",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 18/19",
+  "season_id": "AP38",
+  "season_label": "Summer 18/19",
+  "source_section_code": "AP003",
+  "section_label": "Mens Rubbers 1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Albert Park",
+      "wins": 12,
+      "points": 93,
+      "percentage": 129.82,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "Kooyong",
+      "wins": 11,
+      "points": 91,
+      "percentage": 152.76,
+      "marker": "P"
+    },
+    {
+      "position": 3,
+      "team": "Dendy Park",
+      "wins": 8,
+      "points": 69,
+      "percentage": 112.64,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Centenary Park",
+      "wins": 6,
+      "points": 60,
+      "percentage": 106.45,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Hurlingham Park",
+      "wins": 3,
+      "points": 29,
+      "percentage": 67.49,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Fitzroy",
+      "wins": 1,
+      "points": 18,
+      "percentage": 64.54,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP38-AP003",
+  "fixtures": 46,
+  "completed_fixtures": 42,
+  "draw_fixtures": 57,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 168,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP003321 doubles No. 4: '6-4 0-3'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

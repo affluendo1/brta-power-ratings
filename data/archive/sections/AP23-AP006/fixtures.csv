@@ -1,0 +1,61 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP006011,07 May 11,1,regular,Round 1,Kings Park,Oakleigh,0,8,0,4,2,8,34,60,Completed,
+AP006012,07 May 11,1,regular,Round 1,St Andrews MB,Frankston East,0,8,0,4,1,8,26,54,Completed,
+AP006014,07 May 11,1,regular,Round 1,Sth Hawthorn,Lauriston,1,7,1,3,3,6,37,52,Completed,
+pending-ap006-r1-st-pauls-bye,07 May 11,1,regular,Round 1,St Pauls,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP006021,14 May 11,2,regular,Round 2,Lauriston,Kings Park,6,2,2,2,4,4,36,26,Completed,
+AP006022,14 May 11,2,regular,Round 2,Oakleigh,St Andrews MB,0,8,0,4,1,8,32,51,Completed,
+AP006023,14 May 11,2,regular,Round 2,Frankston East,St Pauls,1,7,1,3,4,6,36,47,Completed,
+pending-ap006-r2-bye-sth-hawthorn,14 May 11,2,regular,Round 2,Bye,Sth Hawthorn,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP006032,21 May 11,3,regular,Round 3,St Andrews MB,Lauriston,0,8,0,4,0,8,17,48,Completed,
+AP006033,21 May 11,3,regular,Round 3,St Pauls,Oakleigh,6,2,2,2,6,4,46,40,Completed,
+AP006034,21 May 11,3,regular,Round 3,Sth Hawthorn,Frankston East,0,8,0,4,0,8,12,49,Completed,
+pending-ap006-r3-kings-park-bye,21 May 11,3,regular,Round 3,Kings Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP006041,28 May 11,4,regular,Round 4,Frankston East,Kings Park,7,1,3,1,7,2,50,30,Completed,
+AP006043,28 May 11,4,regular,Round 4,Lauriston,St Pauls,8,0,4,0,8,0,50,21,Completed,
+AP006044,28 May 11,4,regular,Round 4,Oakleigh,Sth Hawthorn,2,6,2,2,4,6,47,44,Completed,
+pending-ap006-r4-bye-st-andrews-mb,28 May 11,4,regular,Round 4,Bye,St Andrews MB,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP006051,04 Jun 11,5,regular,Round 5,St Pauls,Sth Hawthorn,8,0,4,0,8,1,51,27,Completed,
+AP006053,04 Jun 11,5,regular,Round 5,Frankston East,Oakleigh,8,0,4,0,8,0,51,30,Completed,
+AP006054,04 Jun 11,5,regular,Round 5,Kings Park,St Andrews MB,1,7,1,3,5,6,46,55,Completed,
+pending-ap006-r5-lauriston-bye,04 Jun 11,5,regular,Round 5,Lauriston,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP006061,18 Jun 11,6,regular,Round 6,St Andrews MB,St Pauls,1,7,1,3,4,7,51,60,Completed,
+AP006062,18 Jun 11,6,regular,Round 6,Sth Hawthorn,Kings Park,8,0,4,0,8,0,49,22,Completed,
+AP006064,18 Jun 11,6,regular,Round 6,Oakleigh,Lauriston,1,7,1,3,3,7,34,49,Completed,
+pending-ap006-r6-bye-frankston-east,18 Jun 11,6,regular,Round 6,Bye,Frankston East,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP006071,25 Jun 11,7,regular,Round 7,Kings Park,St Pauls,2,6,2,2,4,5,33,41,Completed,
+AP006072,25 Jun 11,7,regular,Round 7,St Andrews MB,Sth Hawthorn,7,1,3,1,6,3,47,36,Completed,
+AP006073,25 Jun 11,7,regular,Round 7,Lauriston,Frankston East,1,7,1,3,4,6,34,52,Completed,
+pending-ap006-r7-bye-oakleigh,25 Jun 11,7,regular,Round 7,Bye,Oakleigh,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP006081,02 Jul 11,8,regular,Round 8,Oakleigh,Kings Park,7,1,3,1,6,3,40,34,Completed,
+AP006082,02 Jul 11,8,regular,Round 8,Frankston East,St Andrews MB,8,0,4,0,8,0,49,16,Completed,
+pending-ap006-r8-bye-st-pauls,02 Jul 11,8,regular,Round 8,Bye,St Pauls,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap006-r8-lauriston-sth-hawthorn,02 Jul 11,8,regular,Round 8,Lauriston,Sth Hawthorn,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP006091,09 Jul 11,9,regular,Round 9,Kings Park,Lauriston,1,7,1,3,3,6,29,49,Completed,
+AP006092,09 Jul 11,9,regular,Round 9,St Andrews MB,Oakleigh,2,6,2,2,4,5,41,44,Completed,
+AP006093,09 Jul 11,9,regular,Round 9,St Pauls,Frankston East,1,7,1,3,2,6,32,44,Completed,
+pending-ap006-r9-sth-hawthorn-bye,09 Jul 11,9,regular,Round 9,Sth Hawthorn,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP006102,16 Jul 11,10,regular,Round 10,Lauriston,St Andrews MB,7,1,3,1,6,3,49,40,Completed,
+AP006103,16 Jul 11,10,regular,Round 10,Oakleigh,St Pauls,1,7,1,3,3,7,40,51,Completed,
+AP006104,16 Jul 11,10,regular,Round 10,Frankston East,Sth Hawthorn,8,0,4,0,8,2,55,25,Completed,
+pending-ap006-r10-bye-kings-park,16 Jul 11,10,regular,Round 10,Bye,Kings Park,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP006111,23 Jul 11,11,regular,Round 11,Kings Park,Frankston East,0,8,0,4,0,8,19,48,Completed,
+AP006113,23 Jul 11,11,regular,Round 11,St Pauls,Lauriston,1,7,1,3,3,7,31,51,Completed,
+AP006114,23 Jul 11,11,regular,Round 11,Sth Hawthorn,Oakleigh,1,7,1,3,3,6,41,48,Completed,
+pending-ap006-r11-st-andrews-mb-bye,23 Jul 11,11,regular,Round 11,St Andrews MB,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP006121,30 Jul 11,12,regular,Round 12,Sth Hawthorn,St Pauls,7,1,3,1,6,3,43,38,Completed,
+AP006123,30 Jul 11,12,regular,Round 12,Oakleigh,Frankston East,0,8,0,4,1,8,31,52,Completed,
+AP006124,30 Jul 11,12,regular,Round 12,St Andrews MB,Kings Park,8,0,4,0,8,3,57,43,Completed,
+pending-ap006-r12-bye-lauriston,30 Jul 11,12,regular,Round 12,Bye,Lauriston,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP006131,06 Aug 11,13,regular,Round 13,St Pauls,St Andrews MB,7,1,3,1,7,2,50,29,Completed,
+AP006132,06 Aug 11,13,regular,Round 13,Kings Park,Sth Hawthorn,0.5,7.5,0,3,2,6,38,52,Completed,
+AP006134,06 Aug 11,13,regular,Round 13,Lauriston,Oakleigh,6.5,1.5,2,1,6,4,54,45,Completed,
+pending-ap006-r13-frankston-east-bye,06 Aug 11,13,regular,Round 13,Frankston East,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP006141,13 Aug 11,14,regular,Round 14,St Pauls,Kings Park,6,2,2,2,6,5,54,53,Completed,
+AP006142,13 Aug 11,14,regular,Round 14,Sth Hawthorn,St Andrews MB,7,1,3,1,7,2,49,30,Completed,
+AP006143,13 Aug 11,14,regular,Round 14,Frankston East,Lauriston,2,6,2,2,4,5,40,44,Completed,
+pending-ap006-r14-oakleigh-bye,13 Aug 11,14,regular,Round 14,Oakleigh,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP006301,,16,semi_final,Semi-final,Frankston East,Lauriston,8,0,4,0,8,0,49,21,Completed,
+AP006302,,16,semi_final,Semi-final,St Pauls,Sth Hawthorn,2,6,2,2,4,4,35,38,Completed,
+pending-ap006-r16-lauriston-sth-hawthorn,,16,semi_final,Semi-final,Lauriston,Sth Hawthorn,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP006321,,17,grand_final,Grand final · TROLS entry 2,Frankston East,Lauriston,7,1,3,1,6,3,46,35,Completed,

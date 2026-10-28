@@ -1,0 +1,106 @@
+{
+  "asset_id": "AP31-AP006",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Winter 2015",
+  "season_id": "AP31",
+  "season_label": "Winter 2015",
+  "source_section_code": "AP006",
+  "section_label": "Mixed Rubbers 3",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Beaumaris CC",
+      "wins": 9,
+      "points": 77,
+      "percentage": 122.83,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Parkdale",
+      "wins": 7,
+      "points": 65,
+      "percentage": 109.21,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "East Malvern",
+      "wins": 7,
+      "points": 64,
+      "percentage": 117.28,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Elwood",
+      "wins": 7,
+      "points": 63,
+      "percentage": 111.34,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Hampton",
+      "wins": 6,
+      "points": 59,
+      "percentage": 108.07,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Kings Park",
+      "wins": 5,
+      "points": 53,
+      "percentage": 91.83,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Le Page",
+      "wins": 4,
+      "points": 47,
+      "percentage": 89.81,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "Middle Brighton",
+      "wins": 1,
+      "points": 20,
+      "percentage": 62.69,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP31-AP006",
+  "fixtures": 60,
+  "completed_fixtures": 53,
+  "draw_fixtures": 60,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 210,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP006063 doubles No. 3: '3-6 6-0 2-2'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP006063 doubles No. 4: '1-6 6-4 3-2'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

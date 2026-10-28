@@ -1,0 +1,97 @@
+{
+  "asset_id": "AP22-AP035",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 10/11",
+  "season_id": "AP22",
+  "season_label": "Summer 10/11",
+  "source_section_code": "AP035",
+  "section_label": "Mens S/D 7",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Dendy Park",
+      "wins": 0,
+      "points": 71,
+      "percentage": 115.16,
+      "marker": ""
+    },
+    {
+      "position": 2,
+      "team": "Hawthorn",
+      "wins": 0,
+      "points": 68,
+      "percentage": 122.51,
+      "marker": "P"
+    },
+    {
+      "position": 3,
+      "team": "Hampton",
+      "wins": 0,
+      "points": 66,
+      "percentage": 109.19,
+      "marker": "R"
+    },
+    {
+      "position": 4,
+      "team": "Murrumbeena 2",
+      "wins": 0,
+      "points": 65,
+      "percentage": 107.51,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Ormond",
+      "wins": 0,
+      "points": 64,
+      "percentage": 117.35,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Maccabi",
+      "wins": 0,
+      "points": 52,
+      "percentage": 83.82,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Murrumbeena 1",
+      "wins": 0,
+      "points": 34,
+      "percentage": 58.66,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP22-AP035",
+  "fixtures": 60,
+  "completed_fixtures": 36,
+  "draw_fixtures": 4,
+  "singles_rubbers": 140,
+  "doubles_rubbers": 70,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP035311 doubles No. 2: '4-6 3-2'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

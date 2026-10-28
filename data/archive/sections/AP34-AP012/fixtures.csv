@@ -1,0 +1,61 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP012011,08 Oct 16,1,regular,Round 1,BLTC,Burwood,1,9,1,7,,,36,55,Completed,
+AP012012,08 Oct 16,1,regular,Round 1,Dandenong,Royal South Yarra,1,9,2,6,,,26,52,Completed,
+AP012013,08 Oct 16,1,regular,Round 1,Hawthorn,Albert Reserve,2,8,2,6,,,33,46,Completed,
+pending-ap012-r1-bye-monash-university,08 Oct 16,1,regular,Round 1,Bye,Monash University,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP012021,15 Oct 16,2,regular,Round 2,Monash University,BLTC,8,2,5,4,,,52,42,Completed,
+AP012022,15 Oct 16,2,regular,Round 2,Burwood,Dandenong,1,9,1,7,,,24,48,Completed,
+AP012023,15 Oct 16,2,regular,Round 2,Royal South Yarra,Hawthorn,2,8,4,5,,,45,53,Completed,
+pending-ap012-r2-albert-reserve-bye,15 Oct 16,2,regular,Round 2,Albert Reserve,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP012031,22 Oct 16,3,regular,Round 3,BLTC,Albert Reserve,5,5,0,0,,,0,0,Completed,
+pending-ap012-r3-bye-royal-south-yarra,22 Oct 16,3,regular,Round 3,Bye,Royal South Yarra,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap012-r3-dandenong-monash-university,22 Oct 16,3,regular,Round 3,Dandenong,Monash University,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap012-r3-hawthorn-burwood,22 Oct 16,3,regular,Round 3,Hawthorn,Burwood,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP012041,05 Nov 16,4,regular,Round 4,Royal South Yarra,BLTC,7,3,5,3,,,40,35,Completed,
+AP012042,05 Nov 16,4,regular,Round 4,Albert Reserve,Dandenong,9,1,6,2,,,49,35,Completed,
+AP012043,05 Nov 16,4,regular,Round 4,Monash University,Hawthorn,8,2,5,3,,,45,32,Completed,
+pending-ap012-r4-burwood-bye,05 Nov 16,4,regular,Round 4,Burwood,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP012052,12 Nov 16,5,regular,Round 5,Monash University,Albert Reserve,2,8,4,5,,,43,52,Completed,
+AP012053,12 Nov 16,5,regular,Round 5,Royal South Yarra,Burwood,10,0,8,0,,,56,20,Completed,
+AP012054,12 Nov 16,5,regular,Round 5,BLTC,Dandenong,3,7,4,4,,,37,41,Completed,
+pending-ap012-r5-hawthorn-bye,12 Nov 16,5,regular,Round 5,Hawthorn,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP012061,19 Nov 16,6,regular,Round 6,Dandenong,Hawthorn,7,3,5,3,,,50,35,Completed,
+AP012063,19 Nov 16,6,regular,Round 6,Albert Reserve,Royal South Yarra,7,3,5,3,,,40,38,Completed,
+AP012064,19 Nov 16,6,regular,Round 6,Burwood,Monash University,2,8,3,6,,,42,50,Completed,
+pending-ap012-r6-bye-bltc,19 Nov 16,6,regular,Round 6,Bye,BLTC,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP012071,26 Nov 16,7,regular,Round 7,BLTC,Hawthorn,9,1,7,2,,,59,34,Completed,
+AP012073,26 Nov 16,7,regular,Round 7,Monash University,Royal South Yarra,4,6,6,3,,,49,39,Completed,
+AP012074,26 Nov 16,7,regular,Round 7,Albert Reserve,Burwood,10,0,8,1,,,60,27,Completed,
+pending-ap012-r7-dandenong-bye,26 Nov 16,7,regular,Round 7,Dandenong,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP012081,03 Dec 16,8,regular,Round 8,Burwood,BLTC,8,2,5,3,,,45,36,Completed,
+AP012082,03 Dec 16,8,regular,Round 8,Royal South Yarra,Dandenong,9,1,7,1,,,56,16,Completed,
+AP012083,03 Dec 16,8,regular,Round 8,Albert Reserve,Hawthorn,10,0,8,0,,,58,30,Completed,
+pending-ap012-r8-monash-university-bye,03 Dec 16,8,regular,Round 8,Monash University,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP012091,10 Dec 16,9,regular,Round 9,BLTC,Monash University,3,7,4,5,,,44,51,Completed,
+AP012092,10 Dec 16,9,regular,Round 9,Dandenong,Burwood,2,8,3,5,,,30,43,Completed,
+AP012093,10 Dec 16,9,regular,Round 9,Hawthorn,Royal South Yarra,1,9,1,7,,,29,50,Completed,
+pending-ap012-r9-bye-albert-reserve,10 Dec 16,9,regular,Round 9,Bye,Albert Reserve,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP012101,17 Dec 16,10,regular,Round 10,Albert Reserve,BLTC,9,1,7,1,,,49,22,Completed,
+AP012102,17 Dec 16,10,regular,Round 10,Monash University,Dandenong,9,1,6,2,,,53,31,Completed,
+AP012103,17 Dec 16,10,regular,Round 10,Burwood,Hawthorn,8,2,5,4,,,52,41,Completed,
+pending-ap012-r10-royal-south-yarra-bye,17 Dec 16,10,regular,Round 10,Royal South Yarra,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP012111,04 Feb 17,11,regular,Round 11,BLTC,Royal South Yarra,8,2,5,3,,,48,34,Completed,
+AP012112,04 Feb 17,11,regular,Round 11,Dandenong,Albert Reserve,0,10,0,8,,,11,56,Completed,
+AP012113,04 Feb 17,11,regular,Round 11,Hawthorn,Monash University,1,9,1,7,,,36,51,Completed,
+pending-ap012-r11-bye-burwood,04 Feb 17,11,regular,Round 11,Bye,Burwood,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP012122,11 Feb 17,12,regular,Round 12,Albert Reserve,Monash University,7,3,4,4,,,41,34,Completed,
+AP012123,11 Feb 17,12,regular,Round 12,Burwood,Royal South Yarra,2,8,3,6,,,38,54,Completed,
+AP012124,11 Feb 17,12,regular,Round 12,Dandenong,BLTC,7,3,4,4,,,48,34,Completed,
+pending-ap012-r12-bye-hawthorn,11 Feb 17,12,regular,Round 12,Bye,Hawthorn,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP012131,18 Feb 17,13,regular,Round 13,Hawthorn,Dandenong,7,3,5,4,,,50,40,Completed,
+AP012133,18 Feb 17,13,regular,Round 13,Royal South Yarra,Albert Reserve,1,9,2,7,,,38,56,Completed,
+AP012134,18 Feb 17,13,regular,Round 13,Monash University,Burwood,10,0,8,0,,,57,23,Completed,
+pending-ap012-r13-bltc-bye,18 Feb 17,13,regular,Round 13,BLTC,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP012143,25 Feb 17,14,regular,Round 14,Royal South Yarra,Monash University,2,8,3,6,,,46,58,Completed,
+AP012144,25 Feb 17,14,regular,Round 14,Burwood,Albert Reserve,1,9,1,7,,,19,50,Completed,
+pending-ap012-r14-bye-dandenong,25 Feb 17,14,regular,Round 14,Bye,Dandenong,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap012-r14-hawthorn-bltc,25 Feb 17,14,regular,Round 14,Hawthorn,BLTC,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP012301,,16,semi_final,Semi-final,Albert Reserve,Monash University,2,8,3,5,,,41,42,Completed,
+AP012302,,16,semi_final,Semi-final,Royal South Yarra,Dandenong,9.5,0.5,6,0,,,44,19,Completed,
+AP012311,,16,semi_final,Semi-final,Albert Reserve,Royal South Yarra,9,1,4,0,,,32,12,Completed,
+AP012321,,17,grand_final,Grand final · TROLS entry 2,Monash University,Albert Reserve,3,7,4,5,,,35,42,Completed,

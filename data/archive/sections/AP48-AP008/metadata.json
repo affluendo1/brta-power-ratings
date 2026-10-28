@@ -1,0 +1,95 @@
+{
+  "asset_id": "AP48-AP008",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Winter 2024",
+  "season_id": "AP48",
+  "season_label": "Winter 2024",
+  "source_section_code": "AP008",
+  "section_label": "Open S/D 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Sth Hawthorn",
+      "wins": 10,
+      "points": 93,
+      "percentage": 153.87,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Glen Huntly",
+      "wins": 7,
+      "points": 73,
+      "percentage": 119.4,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "East Malvern Navy",
+      "wins": 5,
+      "points": 58,
+      "percentage": 105.91,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Royal Ave",
+      "wins": 4,
+      "points": 56,
+      "percentage": 86.47,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Black Rock",
+      "wins": 4,
+      "points": 55,
+      "percentage": 94.22,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "East Malvern Blue",
+      "wins": 3,
+      "points": 48,
+      "percentage": 83.33,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Ormond",
+      "wins": 1,
+      "points": 37,
+      "percentage": 75.1,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP48-AP008",
+  "fixtures": 59,
+  "completed_fixtures": 37,
+  "draw_fixtures": 59,
+  "singles_rubbers": 148,
+  "doubles_rubbers": 74,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

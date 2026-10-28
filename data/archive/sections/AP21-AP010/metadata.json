@@ -1,0 +1,90 @@
+{
+  "asset_id": "AP21-AP010",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Winter 2010",
+  "season_id": "AP21",
+  "season_label": "Winter 2010",
+  "source_section_code": "AP010",
+  "section_label": "Mixed Rubbers 4",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Elwood",
+      "wins": 0,
+      "points": 99,
+      "percentage": 154.06,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Coatesville",
+      "wins": 0,
+      "points": 73.5,
+      "percentage": 136.18,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Parkdale",
+      "wins": 0,
+      "points": 70.5,
+      "percentage": 121.47,
+      "marker": "R"
+    },
+    {
+      "position": 4,
+      "team": "Glen Huntly 1",
+      "wins": 0,
+      "points": 66,
+      "percentage": 104.2,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Glen Huntly 2",
+      "wins": 0,
+      "points": 47.5,
+      "percentage": 77.15,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Victory Park",
+      "wins": 0,
+      "points": 3.5,
+      "percentage": 44.59,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP21-AP010",
+  "fixtures": 47,
+  "completed_fixtures": 44,
+  "draw_fixtures": 57,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 176,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP010061 doubles No. 3: '4-6 1-3'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP010063 doubles No. 4: '5-7 1-0'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

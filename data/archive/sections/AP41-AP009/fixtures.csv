@@ -1,0 +1,32 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP009011,14 Nov 20,1,regular,Round 1,BLTC,Dendy Park,9,1,6,2,,,52,28,Completed,
+AP009012,14 Nov 20,1,regular,Round 1,Chadstone,Royal South Yarra,7,3,4,4,,,48,33,Completed,
+AP009013,14 Nov 20,1,regular,Round 1,Mt Eliza,Hawthorn,9,1,6,2,,,45,36,Completed,
+AP009021,21 Nov 20,2,regular,Round 2,Hawthorn,BLTC,7,3,5,3,,,39,30,Completed,
+AP009022,21 Nov 20,2,regular,Round 2,Royal South Yarra,Mt Eliza,3,7,4,5,,,48,45,Completed,
+AP009023,21 Nov 20,2,regular,Round 2,Dendy Park,Chadstone,1,9,1,7,,,33,57,Completed,
+AP009031,28 Nov 20,3,regular,Round 3,BLTC,Chadstone,2,8,3,6,,,43,58,Completed,
+AP009032,28 Nov 20,3,regular,Round 3,Mt Eliza,Dendy Park,10,0,8,0,,,56,23,Completed,
+pending-ap009-r3-hawthorn-royal-south-yarra,28 Nov 20,3,regular,Round 3,Hawthorn,Royal South Yarra,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+AP009041,05 Dec 20,4,regular,Round 4,Royal South Yarra,BLTC,10,0,8,0,,,56,19,Completed,
+AP009042,05 Dec 20,4,regular,Round 4,Dendy Park,Hawthorn,3,7,4,5,,,47,46,Completed,
+AP009043,05 Dec 20,4,regular,Round 4,Chadstone,Mt Eliza,3,7,4,5,,,49,49,Completed,
+AP009051,12 Dec 20,5,regular,Round 5,BLTC,Mt Eliza,2,8,3,5,,,30,47,Completed,
+AP009052,12 Dec 20,5,regular,Round 5,Royal South Yarra,Dendy Park,10,0,8,1,,,61,28,Completed,
+pending-ap009-r5-hawthorn-chadstone,12 Dec 20,5,regular,Round 5,Hawthorn,Chadstone,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+AP009061,30 Jan 21,6,regular,Round 6,Dendy Park,BLTC,0,10,0,8,,,16,56,Completed,
+AP009062,30 Jan 21,6,regular,Round 6,Royal South Yarra,Chadstone,9,1,7,1,,,52,25,Completed,
+AP009063,30 Jan 21,6,regular,Round 6,Hawthorn,Mt Eliza,0,10,0,8,,,21,57,Completed,
+AP009071,06 Feb 21,7,regular,Round 7,BLTC,Hawthorn,8,2,5,3,,,51,36,Completed,
+AP009072,06 Feb 21,7,regular,Round 7,Mt Eliza,Royal South Yarra,8,2,5,3,,,47,31,Completed,
+AP009073,06 Feb 21,7,regular,Round 7,Chadstone,Dendy Park,8,2,6,4,,,60,40,Completed,
+AP009081,20 Feb 21,8,regular,Round 8,Chadstone,BLTC,0,10,1,8,,,37,61,Completed,
+AP009082,20 Feb 21,8,regular,Round 8,Dendy Park,Mt Eliza,1,9,2,6,,,36,49,Completed,
+AP009083,20 Feb 21,8,regular,Round 8,Royal South Yarra,Hawthorn,10,0,8,1,,,61,31,Completed,
+AP009091,27 Feb 21,9,regular,Round 9,BLTC,Royal South Yarra,3,7,4,5,,,41,52,Completed,
+AP009093,27 Feb 21,9,regular,Round 9,Mt Eliza,Chadstone,8,2,6,2,,,53,31,Completed,
+pending-ap009-r9-hawthorn-dendy-park,27 Feb 21,9,regular,Round 9,Hawthorn,Dendy Park,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+AP009101,13 Mar 21,10,regular,Round 10,Mt Eliza,BLTC,4.5,5.5,0,3,,,7,19,Completed,
+AP009102,13 Mar 21,10,regular,Round 10,Dendy Park,Royal South Yarra,4,6,1,4,,,15,35,Completed,
+pending-ap009-r10-chadstone-hawthorn,13 Mar 21,10,regular,Round 10,Chadstone,Hawthorn,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP009321,,16,grand_final,Grand final · TROLS entry 2,Mt Eliza,Royal South Yarra,3,7,4,4,,,34,43,Completed,

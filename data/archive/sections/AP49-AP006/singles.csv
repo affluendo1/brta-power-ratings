@@ -1,0 +1,179 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP006011,05 Oct 24,1,BLTC Blue,BLTC White,No. 1,Jamie Hamori,Ray Lai,Jamie Hamori,6-3,6,3,1,0,Completed,true,true,false
+AP006011,05 Oct 24,1,BLTC Blue,BLTC White,No. 2,Charlie Wang,Lochlan Friedrich,Charlie Wang,7-4,7,4,1,0,Completed,true,false,false
+AP006014,05 Oct 24,1,Caulfield Rec,Kings Park Red,No. 1,Nassim Belbali,Dean Metter,Nassim Belbali,6-3,6,3,1,0,Completed,true,false,false
+AP006014,05 Oct 24,1,Caulfield Rec,Kings Park Red,No. 2,Lucas Valansi,Michael Cooper,Lucas Valansi,6-0,6,0,1,0,Completed,true,false,false
+AP006014,05 Oct 24,1,Caulfield Rec,Kings Park Red,No. 3,Vlad Gisca,Will McLorinan,Will McLorinan,4-5,4,5,0,1,Completed,true,false,false
+AP006014,05 Oct 24,1,Caulfield Rec,Kings Park Red,No. 4,Josh Dosser,Ilan Goldsmith,Josh Dosser,8-2,8,2,1,0,Completed,true,false,false
+AP006021,12 Oct 24,2,Kings Park Red,BLTC Blue,No. 1,Tom Dubbeld,Jamie Hamori,Jamie Hamori,5-8,5,8,0,1,Completed,true,false,true
+AP006021,12 Oct 24,2,Kings Park Red,BLTC Blue,No. 2,Michael Cooper,Charlie Wang,Michael Cooper,8-5,8,5,1,0,Completed,true,false,false
+AP006021,12 Oct 24,2,Kings Park Red,BLTC Blue,No. 3,Will McLorinan,Sebastian Maddams,Sebastian Maddams,6-8,6,8,0,1,Completed,true,false,false
+AP006021,12 Oct 24,2,Kings Park Red,BLTC Blue,No. 4,U-zin Goh,Noam Barel,Noam Barel,3-8,3,8,0,1,Completed,true,true,false
+AP006022,12 Oct 24,2,BLTC White,Kings Park Blue,No. 1,Lochlan Friedrich,Nick Richards,Lochlan Friedrich,8-6,8,6,1,0,Completed,true,false,false
+AP006022,12 Oct 24,2,BLTC White,Kings Park Blue,No. 2,Julian Catala Prieto,Mason Hancox,Julian Catala Prieto,8-1,8,1,1,0,Completed,true,false,false
+AP006022,12 Oct 24,2,BLTC White,Kings Park Blue,No. 3,Liam Parsons,Callum Campbell,Liam Parsons,8-4,8,4,1,0,Completed,true,false,false
+AP006022,12 Oct 24,2,BLTC White,Kings Park Blue,No. 4,Daniel Murphy,Miles Hancox,Miles Hancox,2-8,2,8,0,1,Completed,true,false,false
+AP006023,12 Oct 24,2,Tennis World,Royal South Yarra,No. 1,Andrej Pomasan,Johnny Asimenias,Johnny Asimenias,7-8,7,8,0,1,Completed,true,false,false
+AP006023,12 Oct 24,2,Tennis World,Royal South Yarra,No. 2,Chris Gerendasi,Dean Park,Chris Gerendasi,8-6,8,6,1,0,Completed,true,false,false
+AP006023,12 Oct 24,2,Tennis World,Royal South Yarra,No. 3,Yashank Maini,Connor Le Page,Yashank Maini,8-6,8,6,1,0,Completed,true,false,false
+AP006023,12 Oct 24,2,Tennis World,Royal South Yarra,No. 4,[Unnamed emergency — TROLS AP006023 home code 4],Tom Park,[Unnamed emergency — TROLS AP006023 home code 4],8-1,8,1,1,0,Completed,false,true,false
+AP006031,19 Oct 24,3,BLTC Blue,Maccabi,No. 1,Jackson Trigger,Ryan Behr,Jackson Trigger,8-4,8,4,1,0,Completed,true,false,false
+AP006031,19 Oct 24,3,BLTC Blue,Maccabi,No. 2,Charlie Wang,Steve Bendel,Steve Bendel,4-8,4,8,0,1,Completed,true,false,false
+AP006031,19 Oct 24,3,BLTC Blue,Maccabi,No. 3,Sebastian Maddams,Adam Needleman,Sebastian Maddams,8-3,8,3,1,0,Completed,true,false,false
+AP006031,19 Oct 24,3,BLTC Blue,Maccabi,No. 4,Noam Barel,Zvi Schweitzer,Zvi Schweitzer,6-8,6,8,0,1,Completed,true,false,false
+AP006032,19 Oct 24,3,Kings Park Blue,Kings Park Red,No. 1,Finn Rasmussen,Dean Metter,Dean Metter,3-8,3,8,0,1,Completed,true,false,false
+AP006032,19 Oct 24,3,Kings Park Blue,Kings Park Red,No. 2,Nick Richards,Tom Dubbeld,Tom Dubbeld,3-8,3,8,0,1,Completed,true,false,false
+AP006032,19 Oct 24,3,Kings Park Blue,Kings Park Red,No. 3,Thomas Piclin,David Sacho,David Sacho,2-8,2,8,0,1,Completed,true,false,false
+AP006032,19 Oct 24,3,Kings Park Blue,Kings Park Red,No. 4,Callum Campbell,Ilan Goldsmith,Callum Campbell,8-2,8,2,1,0,Completed,true,false,false
+AP006033,19 Oct 24,3,Royal South Yarra,BLTC White,No. 1,Adrian Anderson,Ray Lai,Ray Lai,3-8,3,8,0,1,Completed,true,false,false
+AP006033,19 Oct 24,3,Royal South Yarra,BLTC White,No. 2,Connor Le Page,Lochlan Friedrich,Lochlan Friedrich,3-8,3,8,0,1,Completed,true,false,false
+AP006033,19 Oct 24,3,Royal South Yarra,BLTC White,No. 3,Tom Anderson,Liam Parsons,Tom Anderson,8-6,8,6,1,0,Completed,true,false,false
+AP006033,19 Oct 24,3,Royal South Yarra,BLTC White,No. 4,Tom Park,Harrison Yang,Harrison Yang,3-8,3,8,0,1,Completed,true,false,false
+AP006034,19 Oct 24,3,Caulfield Rec,Tennis World,No. 1,Nassim Belbali,Andrej Pomasan,Nassim Belbali,8-6,8,6,1,0,Completed,true,false,false
+AP006034,19 Oct 24,3,Caulfield Rec,Tennis World,No. 2,Lucas Valansi,Chris Gerendasi,Lucas Valansi,8-3,8,3,1,0,Completed,true,false,false
+AP006034,19 Oct 24,3,Caulfield Rec,Tennis World,No. 3,Vlad Gisca,Patrick McGregor,Vlad Gisca,8-5,8,5,1,0,Completed,true,false,false
+AP006034,19 Oct 24,3,Caulfield Rec,Tennis World,No. 4,Guillaume Drelon,Yashank Maini,Guillaume Drelon,8-5,8,5,1,0,Completed,true,false,false
+AP006041,26 Oct 24,4,Tennis World,BLTC Blue,No. 1,Guillermo Davila,Jamie Hamori,Jamie Hamori,3-8,3,8,0,1,Completed,true,false,true
+AP006041,26 Oct 24,4,Tennis World,BLTC Blue,No. 2,Andrej Pomasan,Sebastian Maddams,Andrej Pomasan,8-7,8,7,1,0,Completed,true,false,false
+AP006041,26 Oct 24,4,Tennis World,BLTC Blue,No. 3,Yuya Kawasaki,Noam Barel,Yuya Kawasaki,8-1,8,1,1,0,Completed,true,true,false
+AP006041,26 Oct 24,4,Tennis World,BLTC Blue,No. 4,Tristan McLachlan,Jensen Srisuwan,Jensen Srisuwan,3-8,3,8,0,1,Completed,true,true,true
+AP006042,26 Oct 24,4,Maccabi,Kings Park Blue,No. 1,Jan Tenenberg,Finn Rasmussen,Jan Tenenberg,8-1,8,1,1,0,Completed,true,false,false
+AP006042,26 Oct 24,4,Maccabi,Kings Park Blue,No. 2,Ryan Behr,Nick Richards,Ryan Behr,8-2,8,2,1,0,Completed,true,false,false
+AP006042,26 Oct 24,4,Maccabi,Kings Park Blue,No. 3,Steve Bendel,Mason Hancox,Steve Bendel,8-5,8,5,1,0,Completed,true,false,false
+AP006042,26 Oct 24,4,Maccabi,Kings Park Blue,No. 4,Adam Needleman,Miles Hancox,Adam Needleman,8-1,8,1,1,0,Completed,true,false,false
+AP006043,26 Oct 24,4,Kings Park Red,Royal South Yarra,No. 1,Tom Dubbeld,Johnny Asimenias,Johnny Asimenias,4-8,4,8,0,1,Completed,true,false,false
+AP006043,26 Oct 24,4,Kings Park Red,Royal South Yarra,No. 2,David Sacho,Ned Gretton-Watson,Ned Gretton-Watson,4-8,4,8,0,1,Completed,true,false,false
+AP006043,26 Oct 24,4,Kings Park Red,Royal South Yarra,No. 3,Will McLorinan,Dean Park,Dean Park,4-8,4,8,0,1,Completed,true,false,false
+AP006043,26 Oct 24,4,Kings Park Red,Royal South Yarra,No. 4,Ilan Goldsmith,Tom Anderson,Tom Anderson,4-8,4,8,0,1,Completed,true,false,false
+AP006044,26 Oct 24,4,BLTC White,Caulfield Rec,No. 1,Lochlan Friedrich,Lucas Valansi,Lucas Valansi,3-8,3,8,0,1,Completed,true,false,false
+AP006044,26 Oct 24,4,BLTC White,Caulfield Rec,No. 2,Harrison Yang,Vlad Gisca,Vlad Gisca,4-8,4,8,0,1,Completed,true,false,false
+AP006044,26 Oct 24,4,BLTC White,Caulfield Rec,No. 3,Bashir Riachi,Josh Dosser,Josh Dosser,4-8,4,8,0,1,Completed,true,false,false
+AP006044,26 Oct 24,4,BLTC White,Caulfield Rec,No. 4,Liam Parsons,Guillaume Drelon,Guillaume Drelon,3-8,3,8,0,1,Completed,true,false,false
+AP006051,09 Nov 24,5,Royal South Yarra,Caulfield Rec,No. 1,Adrian Anderson,Nassim Belbali,Nassim Belbali,2-8,2,8,0,1,Completed,true,false,false
+AP006051,09 Nov 24,5,Royal South Yarra,Caulfield Rec,No. 2,Connor Le Page,Lucas Valansi,Lucas Valansi,2-8,2,8,0,1,Completed,true,false,false
+AP006051,09 Nov 24,5,Royal South Yarra,Caulfield Rec,No. 3,Harry Anderson,Vlad Gisca,Vlad Gisca,2-8,2,8,0,1,Completed,true,true,false
+AP006051,09 Nov 24,5,Royal South Yarra,Caulfield Rec,No. 4,Tom Park,Guillaume Drelon,Guillaume Drelon,1-8,1,8,0,1,Completed,true,false,false
+AP006052,09 Nov 24,5,Kings Park Red,Maccabi,No. 1,Dean Metter,Ryan Behr,Ryan Behr,7-8,7,8,0,1,Completed,true,false,false
+AP006052,09 Nov 24,5,Kings Park Red,Maccabi,No. 2,Rafael Epstein,Steve Bendel,Rafael Epstein,8-3,8,3,1,0,Completed,true,true,false
+AP006052,09 Nov 24,5,Kings Park Red,Maccabi,No. 3,David Sacho,Adam Needleman,Adam Needleman,4-8,4,8,0,1,Completed,true,false,false
+AP006052,09 Nov 24,5,Kings Park Red,Maccabi,No. 4,Ilan Goldsmith,Zvi Schweitzer,Zvi Schweitzer,5-8,5,8,0,1,Completed,true,false,false
+AP006053,09 Nov 24,5,Tennis World,BLTC White,No. 1,Andrej Pomasan,Ray Lai,Andrej Pomasan,8-4,8,4,1,0,Completed,true,false,false
+AP006053,09 Nov 24,5,Tennis World,BLTC White,No. 2,Chris Gerendasi,Lochlan Friedrich,Chris Gerendasi,8-5,8,5,1,0,Completed,true,false,false
+AP006053,09 Nov 24,5,Tennis World,BLTC White,No. 3,Patrick McGregor,Bashir Riachi,Patrick McGregor,8-4,8,4,1,0,Completed,true,false,false
+AP006053,09 Nov 24,5,Tennis World,BLTC White,No. 4,Yashank Maini,Daniel Murphy,Yashank Maini,8-3,8,3,1,0,Completed,true,false,false
+AP006054,09 Nov 24,5,BLTC Blue,Kings Park Blue,No. 1,Jackson Trigger,Finn Rasmussen,Finn Rasmussen,6-8,6,8,0,1,Completed,true,false,false
+AP006054,09 Nov 24,5,BLTC Blue,Kings Park Blue,No. 2,Jason Newell,Nick Richards,Jason Newell,8-3,8,3,1,0,Completed,true,false,false
+AP006054,09 Nov 24,5,BLTC Blue,Kings Park Blue,No. 3,Charlie Wang,Miles Hancox,Charlie Wang,8-2,8,2,1,0,Completed,true,false,false
+AP006054,09 Nov 24,5,BLTC Blue,Kings Park Blue,No. 4,Sebastian Maddams,Lucas Tucker,Sebastian Maddams,8-4,8,4,1,0,Completed,true,false,true
+AP006061,16 Nov 24,6,Kings Park Blue,Royal South Yarra,No. 1,Nick Richards,Johnny Asimenias,Johnny Asimenias,2-8,2,8,0,1,Completed,true,false,false
+AP006061,16 Nov 24,6,Kings Park Blue,Royal South Yarra,No. 2,Thomas Piclin,Dean Park,Dean Park,6-8,6,8,0,1,Completed,true,false,false
+AP006061,16 Nov 24,6,Kings Park Blue,Royal South Yarra,No. 3,Mason Hancox,Connor Le Page,Mason Hancox,8-5,8,5,1,0,Completed,true,false,false
+AP006061,16 Nov 24,6,Kings Park Blue,Royal South Yarra,No. 4,Callum Campbell,Tom Park,Tom Park,4-8,4,8,0,1,Completed,true,false,false
+AP006062,16 Nov 24,6,Caulfield Rec,BLTC Blue,No. 1,Nassim Belbali,Jackson Trigger,Jackson Trigger,6-8,6,8,0,1,Completed,true,false,false
+AP006062,16 Nov 24,6,Caulfield Rec,BLTC Blue,No. 2,Lucas Valansi,Jason Newell,Lucas Valansi,8-6,8,6,1,0,Completed,true,false,false
+AP006062,16 Nov 24,6,Caulfield Rec,BLTC Blue,No. 3,Vlad Gisca,Charlie Wang,Vlad Gisca,8-7,8,7,1,0,Completed,true,false,false
+AP006062,16 Nov 24,6,Caulfield Rec,BLTC Blue,No. 4,Guillaume Drelon,Sebastian Maddams,Sebastian Maddams,5-8,5,8,0,1,Completed,true,false,false
+AP006063,16 Nov 24,6,Maccabi,Tennis World,No. 1,Ryan Behr,Andrej Pomasan,Ryan Behr,8-5,8,5,1,0,Completed,true,false,false
+AP006063,16 Nov 24,6,Maccabi,Tennis World,No. 2,Steve Bendel,Chris Gerendasi,Steve Bendel,8-5,8,5,1,0,Completed,true,false,false
+AP006063,16 Nov 24,6,Maccabi,Tennis World,No. 3,Rod Bloom,Patrick McGregor,Patrick McGregor,0-8,0,8,0,1,Completed,true,true,false
+AP006063,16 Nov 24,6,Maccabi,Tennis World,No. 4,Zvi Schweitzer,Yashank Maini,Zvi Schweitzer,8-3,8,3,1,0,Completed,true,false,false
+AP006064,16 Nov 24,6,BLTC White,Kings Park Red,No. 1,Lochlan Friedrich,Tom Dubbeld,Tom Dubbeld,6-8,6,8,0,1,Completed,true,false,false
+AP006064,16 Nov 24,6,BLTC White,Kings Park Red,No. 2,Harrison Yang,David Sacho,David Sacho,2-8,2,8,0,1,Completed,true,false,false
+AP006064,16 Nov 24,6,BLTC White,Kings Park Red,No. 3,Daniel Murphy,Will McLorinan,Will McLorinan,2-8,2,8,0,1,Completed,true,false,false
+AP006064,16 Nov 24,6,BLTC White,Kings Park Red,No. 4,Edward Ruckel,Ilan Goldsmith,Ilan Goldsmith,3-8,3,8,0,1,Completed,true,true,false
+AP006073,23 Nov 24,7,Kings Park Red,Tennis World,No. 1,Dean Metter,Guillermo Davila,Dean Metter,8-4,8,4,1,0,Completed,true,false,false
+AP006073,23 Nov 24,7,Kings Park Red,Tennis World,No. 2,Tom Dubbeld,Andrej Pomasan,Andrej Pomasan,2-8,2,8,0,1,Completed,true,false,false
+AP006073,23 Nov 24,7,Kings Park Red,Tennis World,No. 3,Michael Cooper,Chris Gerendasi,Chris Gerendasi,4-8,4,8,0,1,Completed,true,false,false
+AP006073,23 Nov 24,7,Kings Park Red,Tennis World,No. 4,David Sacho,Yashank Maini,Yashank Maini,6-8,6,8,0,1,Completed,true,false,false
+AP006091,07 Dec 24,9,BLTC Blue,Kings Park Red,No. 1,Jackson Trigger,Dean Metter,Dean Metter,4-8,4,8,0,1,Completed,true,false,false
+AP006091,07 Dec 24,9,BLTC Blue,Kings Park Red,No. 2,Jason Newell,Tom Dubbeld,Jason Newell,8-5,8,5,1,0,Completed,true,false,false
+AP006091,07 Dec 24,9,BLTC Blue,Kings Park Red,No. 3,Sebastian Maddams,David Sacho,David Sacho,6-8,6,8,0,1,Completed,true,false,false
+AP006091,07 Dec 24,9,BLTC Blue,Kings Park Red,No. 4,Noam Barel,Will McLorinan,Will McLorinan,1-8,1,8,0,1,Completed,true,false,false
+AP006092,07 Dec 24,9,Kings Park Blue,BLTC White,No. 1,Thomas Piclin,Ray Lai,Ray Lai,2-8,2,8,0,1,Completed,true,false,false
+AP006092,07 Dec 24,9,Kings Park Blue,BLTC White,No. 2,Mason Hancox,Julian Catala Prieto,Julian Catala Prieto,3-8,3,8,0,1,Completed,true,false,false
+AP006092,07 Dec 24,9,Kings Park Blue,BLTC White,No. 3,Callum Campbell,Harrison Yang,Harrison Yang,2-8,2,8,0,1,Completed,true,false,false
+AP006092,07 Dec 24,9,Kings Park Blue,BLTC White,No. 4,Miles Hancox,Liam Parsons,Liam Parsons,5-8,5,8,0,1,Completed,true,false,false
+AP006093,07 Dec 24,9,Royal South Yarra,Tennis World,No. 1,Johnny Asimenias,Guillermo Davila,Johnny Asimenias,8-3,8,3,1,0,Completed,true,false,false
+AP006093,07 Dec 24,9,Royal South Yarra,Tennis World,No. 2,Adrian Anderson,Chris Gerendasi,Adrian Anderson,8-5,8,5,1,0,Completed,true,false,false
+AP006093,07 Dec 24,9,Royal South Yarra,Tennis World,No. 3,Connor Le Page,Patrick McGregor,Patrick McGregor,5-8,5,8,0,1,Completed,true,false,false
+AP006093,07 Dec 24,9,Royal South Yarra,Tennis World,No. 4,Tom Anderson,Yashank Maini,Tom Anderson,8-7,8,7,1,0,Completed,true,false,false
+AP006101,14 Dec 24,10,Maccabi,BLTC Blue,No. 1,Jan Tenenberg,Jamie Hamori,Jan Tenenberg,8-7,8,7,1,0,Completed,true,false,true
+AP006101,14 Dec 24,10,Maccabi,BLTC Blue,No. 2,Ryan Behr,Charlie Wang,Ryan Behr,8-6,8,6,1,0,Completed,true,false,false
+AP006101,14 Dec 24,10,Maccabi,BLTC Blue,No. 3,Adam Needleman,Sebastian Maddams,Sebastian Maddams,7-8,7,8,0,1,Completed,true,false,false
+AP006101,14 Dec 24,10,Maccabi,BLTC Blue,No. 4,Anthony Murray,Noam Barel,Anthony Murray,8-0,8,0,1,0,Completed,true,false,false
+AP006102,14 Dec 24,10,Kings Park Red,Kings Park Blue,No. 1,Tom Dubbeld,Finn Rasmussen,Tom Dubbeld,8-6,8,6,1,0,Completed,true,false,false
+AP006102,14 Dec 24,10,Kings Park Red,Kings Park Blue,No. 2,Michael Cooper,Nick Richards,Michael Cooper,8-7,8,7,1,0,Completed,true,false,false
+AP006102,14 Dec 24,10,Kings Park Red,Kings Park Blue,No. 3,Will McLorinan,Thomas Piclin,Will McLorinan,8-4,8,4,1,0,Completed,true,false,false
+AP006102,14 Dec 24,10,Kings Park Red,Kings Park Blue,No. 4,Ilan Goldsmith,Callum Campbell,Ilan Goldsmith,8-7,8,7,1,0,Completed,true,false,false
+AP006103,14 Dec 24,10,BLTC White,Royal South Yarra,No. 1,Lochlan Friedrich,Ned Gretton-Watson,Ned Gretton-Watson,5-8,5,8,0,1,Completed,true,false,false
+AP006103,14 Dec 24,10,BLTC White,Royal South Yarra,No. 2,Julian Catala Prieto,Tom Anderson,Julian Catala Prieto,8-3,8,3,1,0,Completed,true,false,false
+AP006103,14 Dec 24,10,BLTC White,Royal South Yarra,No. 3,Harrison Yang,Miles Foster,Harrison Yang,8-5,8,5,1,0,Completed,true,false,true
+AP006103,14 Dec 24,10,BLTC White,Royal South Yarra,No. 4,Hudson Close,Tom Park,Hudson Close,8-1,8,1,1,0,Completed,true,true,false
+AP006104,14 Dec 24,10,Tennis World,Caulfield Rec,No. 1,Andrej Pomasan,Lucas Valansi,Lucas Valansi,3-8,3,8,0,1,Completed,true,false,false
+AP006104,14 Dec 24,10,Tennis World,Caulfield Rec,No. 2,Patrick McGregor,Vlad Gisca,Patrick McGregor,8-3,8,3,1,0,Completed,true,false,false
+AP006104,14 Dec 24,10,Tennis World,Caulfield Rec,No. 3,Yashank Maini,Guillaume Drelon,Guillaume Drelon,5-8,5,8,0,1,Completed,true,false,false
+AP006104,14 Dec 24,10,Tennis World,Caulfield Rec,No. 4,Esteban Martinez,Edwin Tan,Esteban Martinez,8-6,8,6,1,0,Completed,true,true,true
+AP006111,01 Feb 25,11,BLTC Blue,Tennis World,No. 1,Jackson Trigger,Andrej Pomasan,Jackson Trigger,8-3,8,3,1,0,Completed,true,false,false
+AP006111,01 Feb 25,11,BLTC Blue,Tennis World,No. 2,Charlie Wang,Chris Gerendasi,Chris Gerendasi,3-8,3,8,0,1,Completed,true,false,false
+AP006111,01 Feb 25,11,BLTC Blue,Tennis World,No. 3,Sebastian Maddams,Patrick McGregor,Sebastian Maddams,8-3,8,3,1,0,Completed,true,false,false
+AP006111,01 Feb 25,11,BLTC Blue,Tennis World,No. 4,Jensen Srisuwan,Yashank Maini,Jensen Srisuwan,8-2,8,2,1,0,Completed,true,true,false
+AP006112,01 Feb 25,11,Kings Park Blue,Maccabi,No. 1,Finn Rasmussen,Ryan Behr,Ryan Behr,6-8,6,8,0,1,Completed,true,false,false
+AP006112,01 Feb 25,11,Kings Park Blue,Maccabi,No. 2,Nick Richards,Steve Bendel,Steve Bendel,2-8,2,8,0,1,Completed,true,false,false
+AP006112,01 Feb 25,11,Kings Park Blue,Maccabi,No. 3,Callum Campbell,Daniel Henquin,Daniel Henquin,3-8,3,8,0,1,Completed,true,false,false
+AP006112,01 Feb 25,11,Kings Park Blue,Maccabi,No. 4,Miles Hancox,Zvi Schweitzer,Zvi Schweitzer,0-8,0,8,0,1,Completed,true,false,false
+AP006113,01 Feb 25,11,Royal South Yarra,Kings Park Red,No. 1,Johnny Asimenias,Dean Metter,Johnny Asimenias,8-4,8,4,1,0,Completed,true,false,false
+AP006113,01 Feb 25,11,Royal South Yarra,Kings Park Red,No. 2,Connor Le Page,Tom Dubbeld,Tom Dubbeld,1-8,1,8,0,1,Completed,true,false,false
+AP006113,01 Feb 25,11,Royal South Yarra,Kings Park Red,No. 3,Tom Anderson,David Sacho,David Sacho,1-8,1,8,0,1,Completed,true,false,false
+AP006113,01 Feb 25,11,Royal South Yarra,Kings Park Red,No. 4,Tom Park,Ilan Goldsmith,Ilan Goldsmith,6-8,6,8,0,1,Completed,true,false,false
+AP006114,01 Feb 25,11,Caulfield Rec,BLTC White,No. 1,Nassim Belbali,Ray Lai,Nassim Belbali,8-2,8,2,1,0,Completed,true,false,false
+AP006114,01 Feb 25,11,Caulfield Rec,BLTC White,No. 2,Vlad Gisca,Lochlan Friedrich,Lochlan Friedrich,6-8,6,8,0,1,Completed,true,false,false
+AP006114,01 Feb 25,11,Caulfield Rec,BLTC White,No. 3,Josh Dosser,Julian Catala Prieto,Josh Dosser,8-4,8,4,1,0,Completed,true,false,false
+AP006114,01 Feb 25,11,Caulfield Rec,BLTC White,No. 4,Vikrim Prakash,Liam Parsons,Vikrim Prakash,8-3,8,3,1,0,Completed,true,true,false
+AP006121,08 Feb 25,12,Caulfield Rec,Royal South Yarra,No. 1,Nassim Belbali,Dean Park,Nassim Belbali,8-3,8,3,1,0,Completed,true,false,false
+AP006121,08 Feb 25,12,Caulfield Rec,Royal South Yarra,No. 2,Lucas Valansi,Adrian Anderson,Lucas Valansi,8-5,8,5,1,0,Completed,true,false,false
+AP006121,08 Feb 25,12,Caulfield Rec,Royal South Yarra,No. 3,Vlad Gisca,Connor Le Page,Vlad Gisca,8-6,8,6,1,0,Completed,true,false,false
+AP006121,08 Feb 25,12,Caulfield Rec,Royal South Yarra,No. 4,Edwin Tan,Tom Anderson,Tom Anderson,0-8,0,8,0,1,Completed,true,true,false
+AP006122,08 Feb 25,12,Maccabi,Kings Park Red,No. 1,Jan Tenenberg,Dean Metter,Dean Metter,5-8,5,8,0,1,Completed,true,false,false
+AP006122,08 Feb 25,12,Maccabi,Kings Park Red,No. 2,Steve Bendel,Tom Dubbeld,Tom Dubbeld,6-8,6,8,0,1,Completed,true,false,false
+AP006122,08 Feb 25,12,Maccabi,Kings Park Red,No. 3,Daniel Henquin,Athan Vlachos,Athan Vlachos,1-8,1,8,0,1,Completed,true,false,true
+AP006122,08 Feb 25,12,Maccabi,Kings Park Red,No. 4,Zvi Schweitzer,Ilan Goldsmith,Zvi Schweitzer,8-4,8,4,1,0,Completed,true,false,false
+AP006123,08 Feb 25,12,BLTC White,Tennis World,No. 1,Lochlan Friedrich,Andrej Pomasan,Lochlan Friedrich,8-7,8,7,1,0,Completed,true,false,false
+AP006123,08 Feb 25,12,BLTC White,Tennis World,No. 2,Bashir Riachi,Patrick McGregor,Bashir Riachi,8-1,8,1,1,0,Completed,true,false,false
+AP006123,08 Feb 25,12,BLTC White,Tennis World,No. 3,Daniel Murphy,Yashank Maini,Yashank Maini,5-8,5,8,0,1,Completed,true,false,false
+AP006123,08 Feb 25,12,BLTC White,Tennis World,No. 4,Marcelo Zerwes,Will Marshall,Will Marshall,0-8,0,8,0,1,Completed,true,true,true
+AP006124,08 Feb 25,12,Kings Park Blue,BLTC Blue,No. 1,Finn Rasmussen,Jackson Trigger,Jackson Trigger,3-8,3,8,0,1,Completed,true,false,false
+AP006124,08 Feb 25,12,Kings Park Blue,BLTC Blue,No. 2,Thomas Piclin,Charlie Wang,Thomas Piclin,8-5,8,5,1,0,Completed,true,false,false
+AP006124,08 Feb 25,12,Kings Park Blue,BLTC Blue,No. 3,Lucas Tucker,Noam Barel,Lucas Tucker,8-2,8,2,1,0,Completed,true,true,false
+AP006124,08 Feb 25,12,Kings Park Blue,BLTC Blue,No. 4,Miles Hancox,Sebastian Maddams,Sebastian Maddams,5-8,5,8,0,1,Completed,true,false,false
+AP006131,15 Feb 25,13,Royal South Yarra,Kings Park Blue,No. 1,Ned Gretton-Watson,Finn Rasmussen,Finn Rasmussen,5-8,5,8,0,1,Completed,true,false,false
+AP006131,15 Feb 25,13,Royal South Yarra,Kings Park Blue,No. 2,Connor Le Page,Nick Richards,Nick Richards,7-8,7,8,0,1,Completed,true,false,false
+AP006131,15 Feb 25,13,Royal South Yarra,Kings Park Blue,No. 3,Tom Anderson,Thomas Piclin,Tom Anderson,8-5,8,5,1,0,Completed,true,false,false
+AP006131,15 Feb 25,13,Royal South Yarra,Kings Park Blue,No. 4,Tom Park,Callum Campbell,Callum Campbell,2-8,2,8,0,1,Completed,true,false,false
+AP006132,15 Feb 25,13,BLTC Blue,Caulfield Rec,No. 1,Jackson Trigger,Lucas Valansi,Lucas Valansi,1-8,1,8,0,1,Completed,true,false,false
+AP006132,15 Feb 25,13,BLTC Blue,Caulfield Rec,No. 2,Noam Barel,Josh Dosser,Josh Dosser,5-8,5,8,0,1,Completed,true,false,false
+AP006132,15 Feb 25,13,BLTC Blue,Caulfield Rec,No. 3,Sebastian Maddams,Vikrim Prakash,Sebastian Maddams,8-5,8,5,1,0,Completed,true,false,true
+AP006132,15 Feb 25,13,BLTC Blue,Caulfield Rec,No. 4,Jensen Srisuwan,Edwin Tan,Jensen Srisuwan,8-2,8,2,1,0,Completed,true,true,true
+AP006134,15 Feb 25,13,Kings Park Red,BLTC White,No. 1,Dean Metter,Ray Lai,Dean Metter,8-2,8,2,1,0,Completed,true,false,false
+AP006134,15 Feb 25,13,Kings Park Red,BLTC White,No. 2,Tom Dubbeld,Lochlan Friedrich,Tom Dubbeld,8-7,8,7,1,0,Completed,true,false,false
+AP006134,15 Feb 25,13,Kings Park Red,BLTC White,No. 3,Michael Cooper,Liam Parsons,Michael Cooper,8-2,8,2,1,0,Completed,true,false,false
+AP006134,15 Feb 25,13,Kings Park Red,BLTC White,No. 4,David Sacho,Marcelo Zerwes,David Sacho,8-0,8,0,1,0,Completed,true,false,true
+AP006142,22 Feb 25,14,Caulfield Rec,Kings Park Blue,No. 1,Lucas Valansi,Nick Richards,Lucas Valansi,8-0,8,0,1,0,Completed,true,false,false
+AP006142,22 Feb 25,14,Caulfield Rec,Kings Park Blue,No. 2,Vlad Gisca,Callum Campbell,Vlad Gisca,8-3,8,3,1,0,Completed,true,false,false
+AP006142,22 Feb 25,14,Caulfield Rec,Kings Park Blue,No. 3,Emir Zmak,Lucas Tucker,Emir Zmak,8-4,8,4,1,0,Completed,true,true,true
+AP006142,22 Feb 25,14,Caulfield Rec,Kings Park Blue,No. 4,Steve Destradi,Miles Hancox,Steve Destradi,8-6,8,6,1,0,Completed,true,true,false
+AP006143,22 Feb 25,14,Tennis World,Kings Park Red,No. 1,Andrej Pomasan,Dean Metter,Andrej Pomasan,8-4,8,4,1,0,Completed,true,false,false
+AP006143,22 Feb 25,14,Tennis World,Kings Park Red,No. 2,Chris Gerendasi,Tom Dubbeld,Tom Dubbeld,5-8,5,8,0,1,Completed,true,false,false
+AP006143,22 Feb 25,14,Tennis World,Kings Park Red,No. 3,Nikolas Salazar,Michael Cooper,Nikolas Salazar,8-4,8,4,1,0,Completed,true,true,false
+AP006143,22 Feb 25,14,Tennis World,Kings Park Red,No. 4,Yashank Maini,Ilan Goldsmith,Yashank Maini,8-2,8,2,1,0,Completed,true,false,false
+AP006301,,16,Caulfield Rec,Kings Park Red,No. 1,Nassim Belbali,Dean Metter,Nassim Belbali,8-4,8,4,1,0,Completed,true,false,false
+AP006301,,16,Caulfield Rec,Kings Park Red,No. 2,Lucas Valansi,Tom Dubbeld,Lucas Valansi,8-2,8,2,1,0,Completed,true,false,false
+AP006301,,16,Caulfield Rec,Kings Park Red,No. 3,Vlad Gisca,Michael Cooper,Michael Cooper,4-8,4,8,0,1,Completed,true,false,false
+AP006301,,16,Caulfield Rec,Kings Park Red,No. 4,Josh Dosser,Will McLorinan,Will McLorinan,3-8,3,8,0,1,Completed,true,false,false
+AP006302,,16,Maccabi,Tennis World,No. 1,Jan Tenenberg,Andrej Pomasan,Andrej Pomasan,3-8,3,8,0,1,Completed,true,false,false
+AP006302,,16,Maccabi,Tennis World,No. 2,Ryan Behr,Chris Gerendasi,Ryan Behr,8-5,8,5,1,0,Completed,true,false,false
+AP006302,,16,Maccabi,Tennis World,No. 3,Daniel Henquin,Patrick McGregor,Daniel Henquin,8-1,8,1,1,0,Completed,true,false,false
+AP006302,,16,Maccabi,Tennis World,No. 4,Zvi Schweitzer,Yashank Maini,Yashank Maini,4-8,4,8,0,1,Completed,true,false,false
+AP006321,,17,Caulfield Rec,Maccabi,No. 1,Nassim Belbali,Jan Tenenberg,Nassim Belbali,8-4,8,4,1,0,Completed,true,false,false
+AP006321,,17,Caulfield Rec,Maccabi,No. 2,Lucas Valansi,Ryan Behr,Lucas Valansi,8-4,8,4,1,0,Completed,true,false,false
+AP006321,,17,Caulfield Rec,Maccabi,No. 3,Vlad Gisca,Steve Bendel,Vlad Gisca,8-6,8,6,1,0,Completed,true,false,false
+AP006321,,17,Caulfield Rec,Maccabi,No. 4,Josh Dosser,Zvi Schweitzer,Josh Dosser,8-3,8,3,1,0,Completed,true,false,false

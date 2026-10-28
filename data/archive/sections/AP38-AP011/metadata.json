@@ -1,0 +1,105 @@
+{
+  "asset_id": "AP38-AP011",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 18/19",
+  "season_id": "AP38",
+  "season_label": "Summer 18/19",
+  "source_section_code": "AP011",
+  "section_label": "Ladies S/D 1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "BLTC",
+      "wins": 10,
+      "points": 120,
+      "percentage": 240.53,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Kooyong",
+      "wins": 8,
+      "points": 84.5,
+      "percentage": 116.16,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Liston",
+      "wins": 4,
+      "points": 78,
+      "percentage": 106.68,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Dendy Park",
+      "wins": 5,
+      "points": 70,
+      "percentage": 100.2,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Royal South Yarra",
+      "wins": 6,
+      "points": 68,
+      "percentage": 98.19,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Melbourne Univ",
+      "wins": 3,
+      "points": 61.5,
+      "percentage": 97.35,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Hawthorn",
+      "wins": 2,
+      "points": 41,
+      "percentage": 66.49,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "Mt Eliza",
+      "wins": 1,
+      "points": 37,
+      "percentage": 56.18,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP38-AP011",
+  "fixtures": 59,
+  "completed_fixtures": 42,
+  "draw_fixtures": 59,
+  "singles_rubbers": 165,
+  "doubles_rubbers": 82,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP011301 doubles No. 2: '6-1 3-2'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

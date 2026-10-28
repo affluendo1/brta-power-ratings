@@ -1,0 +1,106 @@
+{
+  "asset_id": "AP30-AP015",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 14/15",
+  "season_id": "AP30",
+  "season_label": "Summer 14/15",
+  "source_section_code": "AP015",
+  "section_label": "Men's S/D 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Glen Iris Valley",
+      "wins": 10,
+      "points": 96,
+      "percentage": 130.46,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Hampton",
+      "wins": 8,
+      "points": 95,
+      "percentage": 135.63,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Caulfield Rec",
+      "wins": 7,
+      "points": 78,
+      "percentage": 113.49,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "GPHC",
+      "wins": 7,
+      "points": 71,
+      "percentage": 103.17,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "BLTC",
+      "wins": 5,
+      "points": 65,
+      "percentage": 103.11,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Carmelite",
+      "wins": 6,
+      "points": 64,
+      "percentage": 87.54,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Old Scotch",
+      "wins": 6,
+      "points": 59,
+      "percentage": 86.43,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "Maccabi",
+      "wins": 3,
+      "points": 32,
+      "percentage": 57.3,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP30-AP015",
+  "fixtures": 60,
+  "completed_fixtures": 56,
+  "draw_fixtures": 60,
+  "singles_rubbers": 224,
+  "doubles_rubbers": 112,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP015302 doubles No. 2: '4-6 6-3'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP015321 doubles No. 2: '4-6 2-1'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

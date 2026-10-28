@@ -1,0 +1,115 @@
+{
+  "asset_id": "AP31-AP003",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Winter 2015",
+  "season_id": "AP31",
+  "season_label": "Winter 2015",
+  "source_section_code": "AP003",
+  "section_label": "Mens Rubbers 1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Parkdale",
+      "wins": 14,
+      "points": 120,
+      "percentage": 320.78,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Hurlingham Park 1",
+      "wins": 13,
+      "points": 110,
+      "percentage": 224.16,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Sth Murrumbeena",
+      "wins": 10,
+      "points": 83,
+      "percentage": 115.65,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "St Pats Mentone",
+      "wins": 8,
+      "points": 70,
+      "percentage": 102.7,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Hurlingham Park 2",
+      "wins": 8,
+      "points": 66,
+      "percentage": 91.57,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Centenary Park",
+      "wins": 5,
+      "points": 49.5,
+      "percentage": 84.05,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Victory Park",
+      "wins": 4,
+      "points": 43.5,
+      "percentage": 78.04,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "Caulfield Grammar",
+      "wins": 2,
+      "points": 24,
+      "percentage": 56.82,
+      "marker": ""
+    },
+    {
+      "position": 9,
+      "team": "Patterson Lakes",
+      "wins": 0,
+      "points": 10,
+      "percentage": 46.54,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP31-AP003",
+  "fixtures": 93,
+  "completed_fixtures": 69,
+  "draw_fixtures": 59,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 274,
+  "latest_round": 20,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP003065 doubles No. 3: '5-7 7-5 2-2'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP003105 doubles No. 1: '0-2'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP003105 doubles No. 2: '1-1'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

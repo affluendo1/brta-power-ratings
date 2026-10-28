@@ -1,0 +1,60 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP018011,05 Oct 24,1,regular,Round 1,Elwood Red,Mordialloc,4,4,0,0,2,0,16,11,Completed,
+AP018013,05 Oct 24,1,regular,Round 1,Hawthorn,Parkdale White,4,4,0,0,1,1,9,10,Completed,
+AP018014,05 Oct 24,1,regular,Round 1,Ormond,Langwarrin Blue,4,4,0,0,2,0,15,5,Completed,
+pending-ap018-r1-kooyong-langwarrin-white,05 Oct 24,1,regular,Round 1,Kooyong,Langwarrin White,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+AP018021,12 Oct 24,2,regular,Round 2,Langwarrin Blue,Elwood Red,7,1,3,1,6,2,44,26,Completed,
+AP018023,12 Oct 24,2,regular,Round 2,Langwarrin White,Hawthorn,1,7,1,3,2,6,21,43,Completed,
+AP018024,12 Oct 24,2,regular,Round 2,Parkdale White,Ormond,7,1,3,1,6,3,50,36,Completed,
+pending-ap018-r2-mordialloc-kooyong,12 Oct 24,2,regular,Round 2,Mordialloc,Kooyong,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP018031,19 Oct 24,3,regular,Round 3,Elwood Red,Parkdale White,8,0,4,0,8,0,48,23,Completed,
+AP018032,19 Oct 24,3,regular,Round 3,Kooyong,Langwarrin Blue,0,8,0,4,0,8,16,48,Completed,
+AP018033,19 Oct 24,3,regular,Round 3,Hawthorn,Mordialloc,8,0,4,0,8,0,50,28,Completed,
+AP018034,19 Oct 24,3,regular,Round 3,Ormond,Langwarrin White,8,0,4,0,8,0,49,20,Completed,
+AP018041,26 Oct 24,4,regular,Round 4,Langwarrin White,Elwood Red,1,7,1,3,3,7,46,55,Completed,
+AP018042,26 Oct 24,4,regular,Round 4,Parkdale White,Kooyong,8,0,4,0,8,1,50,18,Completed,
+AP018043,26 Oct 24,4,regular,Round 4,Langwarrin Blue,Hawthorn,0,8,0,4,1,8,29,53,Completed,
+AP018044,26 Oct 24,4,regular,Round 4,Mordialloc,Ormond,6,2,2,2,6,5,64,56,Completed,
+AP018051,09 Nov 24,5,regular,Round 5,Hawthorn,Ormond,7,1,3,1,6,2,42,20,Completed,
+AP018052,09 Nov 24,5,regular,Round 5,Langwarrin Blue,Parkdale White,0,8,0,4,1,8,30,51,Completed,
+AP018053,09 Nov 24,5,regular,Round 5,Langwarrin White,Mordialloc,0,8,0,4,1,8,30,56,Completed,
+AP018054,09 Nov 24,5,regular,Round 5,Elwood Red,Kooyong,8,0,4,0,8,0,49,15,Completed,
+AP018061,16 Nov 24,6,regular,Round 6,Kooyong,Hawthorn,0,8,0,4,0,8,14,48,Completed,
+AP018062,16 Nov 24,6,regular,Round 6,Ormond,Elwood Red,7,1,3,1,6,3,47,34,Completed,
+AP018063,16 Nov 24,6,regular,Round 6,Parkdale White,Langwarrin White,8,0,4,0,8,1,54,26,Completed,
+AP018064,16 Nov 24,6,regular,Round 6,Mordialloc,Langwarrin Blue,8,0,4,0,8,1,51,20,Completed,
+AP018071,23 Nov 24,7,regular,Round 7,Elwood Red,Hawthorn,4,4,1,1,2,3,25,28,Completed,
+AP018073,23 Nov 24,7,regular,Round 7,Langwarrin Blue,Langwarrin White,4,4,0,0,0,0,0,0,Completed,
+pending-ap018-r7-kooyong-ormond,23 Nov 24,7,regular,Round 7,Kooyong,Ormond,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap018-r7-parkdale-white-mordialloc,23 Nov 24,7,regular,Round 7,Parkdale White,Mordialloc,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap018-r8-langwarrin-blue-ormond,30 Nov 24,8,regular,Round 8,Langwarrin Blue,Ormond,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap018-r8-langwarrin-white-kooyong,30 Nov 24,8,regular,Round 8,Langwarrin White,Kooyong,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap018-r8-mordialloc-elwood-red,30 Nov 24,8,regular,Round 8,Mordialloc,Elwood Red,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap018-r8-parkdale-white-hawthorn,30 Nov 24,8,regular,Round 8,Parkdale White,Hawthorn,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP018091,07 Dec 24,9,regular,Round 9,Elwood Red,Langwarrin Blue,4,4,2,2,4,4,36,36,Completed,
+AP018092,07 Dec 24,9,regular,Round 9,Kooyong,Mordialloc,0,8,0,4,0,8,23,50,Completed,
+AP018093,07 Dec 24,9,regular,Round 9,Hawthorn,Langwarrin White,7,1,3,1,7,2,51,25,Completed,
+AP018094,07 Dec 24,9,regular,Round 9,Ormond,Parkdale White,1,7,1,3,2,6,20,43,Completed,
+AP018101,14 Dec 24,10,regular,Round 10,Parkdale White,Elwood Red,7,1,3,1,6,4,54,46,Completed,
+AP018102,14 Dec 24,10,regular,Round 10,Langwarrin Blue,Kooyong,8,0,4,0,8,1,54,28,Completed,
+AP018103,14 Dec 24,10,regular,Round 10,Mordialloc,Hawthorn,0,8,0,4,1,8,22,50,Completed,
+AP018104,14 Dec 24,10,regular,Round 10,Langwarrin White,Ormond,2,6,2,2,5,5,53,54,Completed,
+AP018111,01 Feb 25,11,regular,Round 11,Elwood Red,Langwarrin White,7,1,3,1,7,2,49,18,Completed,
+AP018112,01 Feb 25,11,regular,Round 11,Kooyong,Parkdale White,0,8,0,4,0,8,18,49,Completed,
+AP018113,01 Feb 25,11,regular,Round 11,Hawthorn,Langwarrin Blue,7,1,3,1,6,2,43,26,Completed,
+AP018114,01 Feb 25,11,regular,Round 11,Ormond,Mordialloc,8,0,4,0,8,3,66,53,Completed,
+AP018121,08 Feb 25,12,regular,Round 12,Ormond,Hawthorn,1,7,1,3,3,7,34,54,Completed,
+AP018123,08 Feb 25,12,regular,Round 12,Mordialloc,Langwarrin White,8,0,4,0,8,0,48,19,Completed,
+AP018124,08 Feb 25,12,regular,Round 12,Kooyong,Elwood Red,0,8,0,4,0,8,24,50,Completed,
+pending-ap018-r12-parkdale-white-langwarrin-blue,08 Feb 25,12,regular,Round 12,Parkdale White,Langwarrin Blue,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP018131,15 Feb 25,13,regular,Round 13,Hawthorn,Kooyong,8,0,4,0,8,0,48,9,Completed,
+AP018132,15 Feb 25,13,regular,Round 13,Elwood Red,Ormond,8,0,4,0,8,1,54,27,Completed,
+AP018133,15 Feb 25,13,regular,Round 13,Langwarrin White,Parkdale White,2,6,2,2,5,5,52,54,Completed,
+AP018134,15 Feb 25,13,regular,Round 13,Langwarrin Blue,Mordialloc,1,7,1,3,3,7,39,54,Completed,
+AP018141,22 Feb 25,14,regular,Round 14,Hawthorn,Elwood Red,8,0,4,0,8,1,54,33,Completed,
+AP018142,22 Feb 25,14,regular,Round 14,Ormond,Kooyong,5,3,2,0,4,1,34,19,Completed,
+pending-ap018-r14-langwarrin-white-langwarrin-blue,22 Feb 25,14,regular,Round 14,Langwarrin White,Langwarrin Blue,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap018-r14-mordialloc-parkdale-white,22 Feb 25,14,regular,Round 14,Mordialloc,Parkdale White,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP018301,,16,semi_final,Semi-final,Hawthorn,Elwood Red,7,1,3,1,6,2,45,29,Completed,
+AP018302,,16,semi_final,Semi-final,Parkdale White,Mordialloc,7,1,3,1,7,2,52,30,Completed,
+AP018321,,17,grand_final,Grand final · TROLS entry 2,Hawthorn,Parkdale White,7,1,2,0,5,1,35,18,Completed,

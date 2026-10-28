@@ -1,0 +1,203 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP002011,07 Oct 23,1,Carmelite Green,Carmelite Red,No. 1,Stefan Konstantidis,Simon Arms,Simon Arms,3-8,3,8,0,1,Completed,true,false,false
+AP002011,07 Oct 23,1,Carmelite Green,Carmelite Red,No. 2,Adrian Avontins,Ashton Arms,Ashton Arms,6-8,6,8,0,1,Completed,true,true,false
+AP002011,07 Oct 23,1,Carmelite Green,Carmelite Red,No. 3,Tony Strupl,Travis Kinsman,Travis Kinsman,6-8,6,8,0,1,Completed,true,false,false
+AP002011,07 Oct 23,1,Carmelite Green,Carmelite Red,No. 4,George Kypriotis,Luke Kinsman,George Kypriotis,8-5,8,5,1,0,Completed,true,false,false
+AP002012,07 Oct 23,1,Willy Central,Highmoor Uniting,No. 1,Ben Britton,Tom Pope,Ben Britton,8-3,8,3,1,0,Completed,true,false,false
+AP002012,07 Oct 23,1,Willy Central,Highmoor Uniting,No. 2,Josh Fleming,Lachlan Peters,Josh Fleming,8-3,8,3,1,0,Completed,true,false,false
+AP002012,07 Oct 23,1,Willy Central,Highmoor Uniting,No. 3,Mark Separovic,Craig Stewart,Mark Separovic,8-4,8,4,1,0,Completed,true,false,false
+AP002012,07 Oct 23,1,Willy Central,Highmoor Uniting,No. 4,Huon Russell,Ben Abbott,Huon Russell,8-7,8,7,1,0,Completed,true,false,false
+AP002013,07 Oct 23,1,Black Rock,Mt Martha Gold,No. 1,Joshua Baldsing,Hayden Thomas,Joshua Baldsing,8-4,8,4,1,0,Completed,true,false,false
+AP002013,07 Oct 23,1,Black Rock,Mt Martha Gold,No. 2,Sebastian Liddle,Robert Chipp,Robert Chipp,3-8,3,8,0,1,Completed,true,false,false
+AP002013,07 Oct 23,1,Black Rock,Mt Martha Gold,No. 3,Shadi Taleb,William Burnell,Shadi Taleb,8-4,8,4,1,0,Completed,true,false,false
+AP002013,07 Oct 23,1,Black Rock,Mt Martha Gold,No. 4,Austin Taleb,Liam Walsh,Liam Walsh,6-8,6,8,0,1,Completed,true,false,false
+AP002014,07 Oct 23,1,Coatesville,Overport Park,No. 1,Jack Callaghan,Grant Thompson,Grant Thompson,5-8,5,8,0,1,Completed,true,false,false
+AP002014,07 Oct 23,1,Coatesville,Overport Park,No. 2,Bradley Larkins,Luke Treveil,Luke Treveil,0-8,0,8,0,1,Completed,true,false,false
+AP002014,07 Oct 23,1,Coatesville,Overport Park,No. 3,Luke McDonald,Charlie Bond,Charlie Bond,3-8,3,8,0,1,Completed,true,false,false
+AP002014,07 Oct 23,1,Coatesville,Overport Park,No. 4,Callum Rankin,Jarrod Pepper,Jarrod Pepper,2-8,2,8,0,1,Completed,true,false,false
+AP002021,14 Oct 23,2,Overport Park,Carmelite Green,No. 1,Grant Thompson,Stefan Konstantidis,Grant Thompson,8-4,8,4,1,0,Completed,true,false,false
+AP002021,14 Oct 23,2,Overport Park,Carmelite Green,No. 2,Nick Wilson,Juan Llatse,Nick Wilson,8-7,8,7,1,0,Completed,true,false,false
+AP002021,14 Oct 23,2,Overport Park,Carmelite Green,No. 3,Charlie Bond,Tony Strupl,Charlie Bond,8-0,8,0,1,0,Completed,true,false,false
+AP002021,14 Oct 23,2,Overport Park,Carmelite Green,No. 4,Frans Verheij,Francisco Gallardo,Frans Verheij,8-7,8,7,1,0,Completed,true,false,false
+AP002022,14 Oct 23,2,Carmelite Red,Willy Central,No. 1,Simon Arms,Ben Britton,Simon Arms,8-6,8,6,1,0,Completed,true,false,false
+AP002022,14 Oct 23,2,Carmelite Red,Willy Central,No. 2,Ashton Arms,Josh Fleming,Ashton Arms,8-0,8,0,1,0,Completed,true,false,false
+AP002022,14 Oct 23,2,Carmelite Red,Willy Central,No. 3,Nikola Rakovic,Mathew Spiteri,Nikola Rakovic,8-5,8,5,1,0,Completed,true,false,false
+AP002022,14 Oct 23,2,Carmelite Red,Willy Central,No. 4,Luke Kinsman,Mark Separovic,Mark Separovic,3-8,3,8,0,1,Completed,true,false,false
+AP002023,14 Oct 23,2,Highmoor Uniting,Black Rock,No. 1,Tom Pope,Sebastian Liddle,Sebastian Liddle,4-8,4,8,0,1,Completed,true,false,false
+AP002023,14 Oct 23,2,Highmoor Uniting,Black Rock,No. 2,Lachlan Peters,Shadi Taleb,Lachlan Peters,8-5,8,5,1,0,Completed,true,false,false
+AP002023,14 Oct 23,2,Highmoor Uniting,Black Rock,No. 3,Craig Stewart,Austin Taleb,Austin Taleb,3-8,3,8,0,1,Completed,true,false,false
+AP002023,14 Oct 23,2,Highmoor Uniting,Black Rock,No. 4,Yves Zenou,Simon Young,Simon Young,4-8,4,8,0,1,Completed,true,false,true
+AP002024,14 Oct 23,2,Mt Martha Gold,Coatesville,No. 1,Hayden Thomas,Michael Burke,Hayden Thomas,8-2,8,2,1,0,Completed,true,false,false
+AP002024,14 Oct 23,2,Mt Martha Gold,Coatesville,No. 2,Robert Chipp,Bradley Larkins,Robert Chipp,8-2,8,2,1,0,Completed,true,false,false
+AP002024,14 Oct 23,2,Mt Martha Gold,Coatesville,No. 3,Liam Walsh,Luke McDonald,Liam Walsh,8-5,8,5,1,0,Completed,true,false,false
+AP002024,14 Oct 23,2,Mt Martha Gold,Coatesville,No. 4,William Burnell,Callum Rankin,William Burnell,8-3,8,3,1,0,Completed,true,false,false
+AP002031,21 Oct 23,3,Carmelite Green,Mt Martha Gold,No. 1,Stefan Konstantidis,Christopher Arms,Christopher Arms,4-8,4,8,0,1,Completed,true,false,false
+AP002031,21 Oct 23,3,Carmelite Green,Mt Martha Gold,No. 2,Juan Llatse,Hayden Thomas,Juan Llatse,8-5,8,5,1,0,Completed,true,false,false
+AP002031,21 Oct 23,3,Carmelite Green,Mt Martha Gold,No. 3,Francisco Gallardo,Robert Chipp,Francisco Gallardo,8-0,8,0,1,0,Completed,true,false,false
+AP002031,21 Oct 23,3,Carmelite Green,Mt Martha Gold,No. 4,George Kypriotis,Liam Walsh,George Kypriotis,8-7,8,7,1,0,Completed,true,false,false
+AP002032,21 Oct 23,3,Willy Central,Overport Park,No. 1,Ben Britton,Luke Treveil,Luke Treveil,5-8,5,8,0,1,Completed,true,false,false
+AP002032,21 Oct 23,3,Willy Central,Overport Park,No. 2,Josh Fleming,Charlie Bond,Josh Fleming,8-4,8,4,1,0,Completed,true,false,false
+AP002032,21 Oct 23,3,Willy Central,Overport Park,No. 3,Mathew Spiteri,Jarrod Pepper,Jarrod Pepper,6-8,6,8,0,1,Completed,true,false,false
+AP002032,21 Oct 23,3,Willy Central,Overport Park,No. 4,Huon Russell,Joel Treveil,Huon Russell,8-6,8,6,1,0,Completed,true,false,false
+AP002033,21 Oct 23,3,Black Rock,Carmelite Red,No. 1,Joshua Baldsing,Simon Arms,Joshua Baldsing,8-3,8,3,1,0,Completed,true,false,false
+AP002033,21 Oct 23,3,Black Rock,Carmelite Red,No. 2,Tom Bailey,Travis Kinsman,Tom Bailey,8-6,8,6,1,0,Completed,true,false,false
+AP002033,21 Oct 23,3,Black Rock,Carmelite Red,No. 3,Austin Taleb,Nikola Rakovic,Nikola Rakovic,1-8,1,8,0,1,Completed,true,false,false
+AP002033,21 Oct 23,3,Black Rock,Carmelite Red,No. 4,Geoff Bellingham,Luke Kinsman,Geoff Bellingham,8-3,8,3,1,0,Completed,true,false,false
+AP002034,21 Oct 23,3,Coatesville,Highmoor Uniting,No. 1,Michael Burke,Paul Luke,Paul Luke,6-8,6,8,0,1,Completed,true,false,false
+AP002034,21 Oct 23,3,Coatesville,Highmoor Uniting,No. 2,Jack Callaghan,Lachlan Peters,Lachlan Peters,5-8,5,8,0,1,Completed,true,false,false
+AP002034,21 Oct 23,3,Coatesville,Highmoor Uniting,No. 3,Bradley Larkins,Yves Zenou,Yves Zenou,1-8,1,8,0,1,Completed,true,false,false
+AP002034,21 Oct 23,3,Coatesville,Highmoor Uniting,No. 4,Luke McDonald,Ben Abbott,Luke McDonald,8-7,8,7,1,0,Completed,true,false,false
+AP002041,28 Oct 23,4,Highmoor Uniting,Carmelite Green,No. 1,Paul Luke,Stefan Konstantidis,Paul Luke,8-5,8,5,1,0,Completed,true,false,false
+AP002041,28 Oct 23,4,Highmoor Uniting,Carmelite Green,No. 2,Tom Pope,Juan Llatse,Juan Llatse,1-8,1,8,0,1,Completed,true,false,false
+AP002041,28 Oct 23,4,Highmoor Uniting,Carmelite Green,No. 3,Yves Zenou,Tony Strupl,Tony Strupl,6-8,6,8,0,1,Completed,true,false,false
+AP002041,28 Oct 23,4,Highmoor Uniting,Carmelite Green,No. 4,Ben Abbott,George Kypriotis,Ben Abbott,8-7,8,7,1,0,Completed,true,false,false
+AP002042,28 Oct 23,4,Mt Martha Gold,Willy Central,No. 1,Hayden Thomas,Mathew Spiteri,Mathew Spiteri,1-8,1,8,0,1,Completed,true,false,false
+AP002042,28 Oct 23,4,Mt Martha Gold,Willy Central,No. 2,Robert Chipp,Mark Separovic,Mark Separovic,0-8,0,8,0,1,Completed,true,false,false
+AP002042,28 Oct 23,4,Mt Martha Gold,Willy Central,No. 3,Liam Walsh,Rob McMahon,Rob McMahon,7-8,7,8,0,1,Completed,true,false,false
+AP002042,28 Oct 23,4,Mt Martha Gold,Willy Central,No. 4,William Burnell,Noah Kurti,William Burnell,8-2,8,2,1,0,Completed,true,false,true
+AP002043,28 Oct 23,4,Overport Park,Black Rock,No. 1,Grant Thompson,Joshua Baldsing,Grant Thompson,8-3,8,3,1,0,Completed,true,false,false
+AP002043,28 Oct 23,4,Overport Park,Black Rock,No. 2,Luke Treveil,Adam Budge,Luke Treveil,8-1,8,1,1,0,Completed,true,false,false
+AP002043,28 Oct 23,4,Overport Park,Black Rock,No. 3,Charlie Bond,Austin Taleb,Charlie Bond,8-2,8,2,1,0,Completed,true,false,false
+AP002043,28 Oct 23,4,Overport Park,Black Rock,No. 4,Frans Verheij,Geoff Bellingham,Frans Verheij,8-7,8,7,1,0,Completed,true,false,false
+AP002044,28 Oct 23,4,Carmelite Red,Coatesville,No. 1,Ashton Arms,Jack Callaghan,Ashton Arms,8-4,8,4,1,0,Completed,true,false,false
+AP002044,28 Oct 23,4,Carmelite Red,Coatesville,No. 2,Oliver Kalicin,Bradley Larkins,Oliver Kalicin,8-2,8,2,1,0,Completed,true,true,false
+AP002044,28 Oct 23,4,Carmelite Red,Coatesville,No. 3,Nikola Rakovic,Callum Rankin,Nikola Rakovic,8-6,8,6,1,0,Completed,true,false,false
+AP002044,28 Oct 23,4,Carmelite Red,Coatesville,No. 4,Theo Mitsinikos,William Chu,William Chu,7-8,7,8,0,1,Completed,true,false,true
+AP002051,11 Nov 23,5,Black Rock,Coatesville,No. 1,Shadi Taleb,Jack Callaghan,Jack Callaghan,4-8,4,8,0,1,Completed,true,false,false
+AP002051,11 Nov 23,5,Black Rock,Coatesville,No. 2,Geoff Bellingham,Bradley Larkins,Geoff Bellingham,8-2,8,2,1,0,Completed,true,false,false
+AP002051,11 Nov 23,5,Black Rock,Coatesville,No. 3,Michael Kernahan,Luke McDonald,Luke McDonald,3-8,3,8,0,1,Completed,true,true,false
+AP002051,11 Nov 23,5,Black Rock,Coatesville,No. 4,Rudi Sims,Christopher Chia,Christopher Chia,1-8,1,8,0,1,Completed,true,true,false
+AP002052,11 Nov 23,5,Overport Park,Mt Martha Gold,No. 1,Luke Treveil,Christopher Arms,Luke Treveil,8-6,8,6,1,0,Completed,true,false,false
+AP002052,11 Nov 23,5,Overport Park,Mt Martha Gold,No. 2,Nick Wilson,Hayden Thomas,Nick Wilson,8-0,8,0,1,0,Completed,true,false,false
+AP002052,11 Nov 23,5,Overport Park,Mt Martha Gold,No. 3,Charlie Bond,Robert Chipp,Charlie Bond,8-3,8,3,1,0,Completed,true,false,false
+AP002052,11 Nov 23,5,Overport Park,Mt Martha Gold,No. 4,Adam Wade,Adam Snow,Adam Wade,8-1,8,1,1,0,Completed,true,false,true
+AP002053,11 Nov 23,5,Highmoor Uniting,Carmelite Red,No. 1,Tom Pope,Simon Arms,Simon Arms,7-8,7,8,0,1,Completed,true,false,false
+AP002053,11 Nov 23,5,Highmoor Uniting,Carmelite Red,No. 2,Craig Stewart,Ashton Arms,Ashton Arms,3-8,3,8,0,1,Completed,true,false,false
+AP002053,11 Nov 23,5,Highmoor Uniting,Carmelite Red,No. 3,Kyle Malligan,Nikola Rakovic,Nikola Rakovic,2-8,2,8,0,1,Completed,true,false,false
+AP002053,11 Nov 23,5,Highmoor Uniting,Carmelite Red,No. 4,Ben Abbott,Luke Kinsman,Ben Abbott,8-3,8,3,1,0,Completed,true,false,false
+AP002054,11 Nov 23,5,Carmelite Green,Willy Central,No. 1,Stefan Konstantidis,Mark Separovic,Mark Separovic,6-8,6,8,0,1,Completed,true,false,false
+AP002054,11 Nov 23,5,Carmelite Green,Willy Central,No. 2,Juan Llatse,Tony Constantine,Juan Llatse,8-1,8,1,1,0,Completed,true,false,true
+AP002054,11 Nov 23,5,Carmelite Green,Willy Central,No. 3,Tony Strupl,Daniel Pelosi,Tony Strupl,8-3,8,3,1,0,Completed,true,false,true
+AP002054,11 Nov 23,5,Carmelite Green,Willy Central,No. 4,George Kypriotis,Noah Kurti,George Kypriotis,8-2,8,2,1,0,Completed,true,false,true
+AP002061,18 Nov 23,6,Willy Central,Black Rock,No. 1,Ben Britton,Joshua Baldsing,Joshua Baldsing,7-8,7,8,0,1,Completed,true,false,false
+AP002061,18 Nov 23,6,Willy Central,Black Rock,No. 2,Josh Fleming,Austin Taleb,Josh Fleming,8-3,8,3,1,0,Completed,true,false,false
+AP002061,18 Nov 23,6,Willy Central,Black Rock,No. 3,Mathew Spiteri,Shadi Taleb,Mathew Spiteri,8-6,8,6,1,0,Completed,true,false,false
+AP002061,18 Nov 23,6,Willy Central,Black Rock,No. 4,Huon Russell,Geoff Bellingham,Geoff Bellingham,3-8,3,8,0,1,Completed,true,false,false
+AP002062,18 Nov 23,6,Coatesville,Carmelite Green,No. 1,Jack Callaghan,Luc Mascitti,Luc Mascitti,1-8,1,8,0,1,Completed,true,false,true
+AP002062,18 Nov 23,6,Coatesville,Carmelite Green,No. 2,Luke McDonald,Stefan Konstantidis,Stefan Konstantidis,3-8,3,8,0,1,Completed,true,false,false
+AP002062,18 Nov 23,6,Coatesville,Carmelite Green,No. 3,Christopher Chia,Tony Strupl,Tony Strupl,2-8,2,8,0,1,Completed,true,false,false
+AP002062,18 Nov 23,6,Coatesville,Carmelite Green,No. 4,Callum Rankin,George Kypriotis,George Kypriotis,6-8,6,8,0,1,Completed,true,false,false
+AP002063,18 Nov 23,6,Mt Martha Gold,Highmoor Uniting,No. 1,Christopher Arms,Paul Luke,Christopher Arms,8-6,8,6,1,0,Completed,true,false,false
+AP002063,18 Nov 23,6,Mt Martha Gold,Highmoor Uniting,No. 2,Hayden Thomas,Craig Stewart,Craig Stewart,5-8,5,8,0,1,Completed,true,false,false
+AP002063,18 Nov 23,6,Mt Martha Gold,Highmoor Uniting,No. 3,Robert Chipp,Yves Zenou,Yves Zenou,4-8,4,8,0,1,Completed,true,false,false
+AP002063,18 Nov 23,6,Mt Martha Gold,Highmoor Uniting,No. 4,William Burnell,Ben Abbott,William Burnell,8-6,8,6,1,0,Completed,true,false,false
+AP002064,18 Nov 23,6,Carmelite Red,Overport Park,No. 1,Ashton Arms,Grant Thompson,Grant Thompson,4-8,4,8,0,1,Completed,true,false,false
+AP002064,18 Nov 23,6,Carmelite Red,Overport Park,No. 2,Oliver Kalicin,Nick Wilson,Oliver Kalicin,8-3,8,3,1,0,Completed,true,true,false
+AP002064,18 Nov 23,6,Carmelite Red,Overport Park,No. 3,Nikola Rakovic,Charlie Bond,Nikola Rakovic,8-2,8,2,1,0,Completed,true,false,false
+AP002064,18 Nov 23,6,Carmelite Red,Overport Park,No. 4,Luke Kinsman,Jarrod Pepper,Jarrod Pepper,1-8,1,8,0,1,Completed,true,false,false
+AP002071,25 Nov 23,7,Carmelite Green,Black Rock,No. 1,Stefan Konstantidis,[Unnamed emergency — TROLS AP002071 away code 1],Stefan Konstantidis,8-0,8,0,1,0,Completed,false,false,true
+AP002071,25 Nov 23,7,Carmelite Green,Black Rock,No. 2,Juan Llatse,Austin Taleb,Juan Llatse,8-2,8,2,1,0,Completed,true,false,false
+AP002071,25 Nov 23,7,Carmelite Green,Black Rock,No. 3,Tony Strupl,Shadi Taleb,Tony Strupl,8-6,8,6,1,0,Completed,true,false,false
+AP002071,25 Nov 23,7,Carmelite Green,Black Rock,No. 4,Daniel Auld,[Unnamed emergency — TROLS AP002071 away code 4],Daniel Auld,8-0,8,0,1,0,Completed,false,false,true
+AP002072,25 Nov 23,7,Willy Central,Coatesville,No. 1,Josh Fleming,Michael Burke,Josh Fleming,8-5,8,5,1,0,Completed,true,false,false
+AP002072,25 Nov 23,7,Willy Central,Coatesville,No. 2,Mark Separovic,Bradley Larkins,Mark Separovic,8-3,8,3,1,0,Completed,true,false,false
+AP002072,25 Nov 23,7,Willy Central,Coatesville,No. 3,Huon Russell,Luke McDonald,Huon Russell,8-3,8,3,1,0,Completed,true,false,false
+AP002072,25 Nov 23,7,Willy Central,Coatesville,No. 4,Noah Kurti,Callum Rankin,Callum Rankin,5-8,5,8,0,1,Completed,true,true,false
+AP002073,25 Nov 23,7,Overport Park,Highmoor Uniting,No. 1,Grant Thompson,Paul Luke,Grant Thompson,5-2,5,2,1,0,Completed,true,false,false
+AP002073,25 Nov 23,7,Overport Park,Highmoor Uniting,No. 2,Charlie Bond,Craig Stewart,,1-0,1,0,1,0,Unfinished,false,false,false
+AP002074,25 Nov 23,7,Mt Martha Gold,Carmelite Red,No. 1,Hayden Thomas,Ashton Arms,Ashton Arms,5-8,5,8,0,1,Completed,true,false,false
+AP002074,25 Nov 23,7,Mt Martha Gold,Carmelite Red,No. 2,Robert Chipp,Oliver Kalicin,Oliver Kalicin,4-8,4,8,0,1,Completed,true,false,true
+AP002074,25 Nov 23,7,Mt Martha Gold,Carmelite Red,No. 3,Liam Walsh,Andrew Ross,Liam Walsh,8-4,8,4,1,0,Completed,true,false,true
+AP002074,25 Nov 23,7,Mt Martha Gold,Carmelite Red,No. 4,William Burnell,Luke Kinsman,Luke Kinsman,5-8,5,8,0,1,Completed,true,false,false
+AP002101,16 Dec 23,10,Mt Martha Gold,Carmelite Green,No. 1,Christopher Arms,Stefan Konstantidis,Stefan Konstantidis,4-8,4,8,0,1,Completed,true,false,false
+AP002101,16 Dec 23,10,Mt Martha Gold,Carmelite Green,No. 2,Robert Chipp,Juan Llatse,Juan Llatse,3-8,3,8,0,1,Completed,true,false,false
+AP002101,16 Dec 23,10,Mt Martha Gold,Carmelite Green,No. 3,Liam Walsh,Tony Strupl,Tony Strupl,5-8,5,8,0,1,Completed,true,false,false
+AP002101,16 Dec 23,10,Mt Martha Gold,Carmelite Green,No. 4,Kagan James,George Kypriotis,George Kypriotis,3-8,3,8,0,1,Completed,true,true,false
+AP002102,16 Dec 23,10,Overport Park,Willy Central,No. 1,Grant Thompson,Ben Britton,Grant Thompson,8-6,8,6,1,0,Completed,true,false,false
+AP002102,16 Dec 23,10,Overport Park,Willy Central,No. 2,Luke Treveil,Josh Fleming,Luke Treveil,8-6,8,6,1,0,Completed,true,false,false
+AP002102,16 Dec 23,10,Overport Park,Willy Central,No. 3,Nick Wilson,Sean Spralja,Sean Spralja,2-8,2,8,0,1,Completed,true,false,true
+AP002102,16 Dec 23,10,Overport Park,Willy Central,No. 4,Jarrod Pepper,Daniel Pelosi,Jarrod Pepper,8-4,8,4,1,0,Completed,true,false,true
+AP002103,16 Dec 23,10,Carmelite Red,Black Rock,No. 1,Simon Arms,Joshua Baldsing,Joshua Baldsing,3-8,3,8,0,1,Completed,true,false,false
+AP002103,16 Dec 23,10,Carmelite Red,Black Rock,No. 2,Ashton Arms,Tom Bailey,Tom Bailey,1-8,1,8,0,1,Completed,true,false,false
+AP002103,16 Dec 23,10,Carmelite Red,Black Rock,No. 3,Oliver Kalicin,Sebastian Liddle,Oliver Kalicin,8-5,8,5,1,0,Completed,true,true,false
+AP002103,16 Dec 23,10,Carmelite Red,Black Rock,No. 4,Luke Kinsman,Austin Taleb,Austin Taleb,2-8,2,8,0,1,Completed,true,false,false
+AP002104,16 Dec 23,10,Highmoor Uniting,Coatesville,No. 1,Paul Luke,Michael Burke,Paul Luke,8-3,8,3,1,0,Completed,true,false,false
+AP002104,16 Dec 23,10,Highmoor Uniting,Coatesville,No. 2,Tom Pope,Bradley Larkins,Tom Pope,8-0,8,0,1,0,Completed,true,false,false
+AP002104,16 Dec 23,10,Highmoor Uniting,Coatesville,No. 3,Craig Stewart,Luke McDonald,Craig Stewart,8-4,8,4,1,0,Completed,true,false,false
+AP002104,16 Dec 23,10,Highmoor Uniting,Coatesville,No. 4,Yves Zenou,William Chu,Yves Zenou,8-1,8,1,1,0,Completed,true,false,true
+AP002111,03 Feb 24,11,Carmelite Green,Highmoor Uniting,No. 1,Stefan Konstantidis,Jose Mainella,Jose Mainella,4-8,4,8,0,1,Completed,true,false,false
+AP002111,03 Feb 24,11,Carmelite Green,Highmoor Uniting,No. 2,Tony Strupl,Paul Luke,Paul Luke,5-8,5,8,0,1,Completed,true,false,false
+AP002111,03 Feb 24,11,Carmelite Green,Highmoor Uniting,No. 3,Francisco Gallardo,Craig Stewart,Francisco Gallardo,8-6,8,6,1,0,Completed,true,false,false
+AP002111,03 Feb 24,11,Carmelite Green,Highmoor Uniting,No. 4,Daniel Auld,Yves Zenou,Yves Zenou,2-8,2,8,0,1,Completed,true,false,false
+AP002112,03 Feb 24,11,Willy Central,Mt Martha Gold,No. 1,Ben Britton,Hayden Thomas,Ben Britton,8-3,8,3,1,0,Completed,true,false,false
+AP002112,03 Feb 24,11,Willy Central,Mt Martha Gold,No. 2,Josh Fleming,Robert Chipp,Josh Fleming,8-4,8,4,1,0,Completed,true,false,false
+AP002112,03 Feb 24,11,Willy Central,Mt Martha Gold,No. 3,Carlin Grant,Liam Walsh,Carlin Grant,8-7,8,7,1,0,Completed,true,false,false
+AP002112,03 Feb 24,11,Willy Central,Mt Martha Gold,No. 4,Huon Russell,William Burnell,Huon Russell,8-0,8,0,1,0,Completed,true,false,false
+AP002113,03 Feb 24,11,Black Rock,Overport Park,No. 1,Sebastian Liddle,Grant Thompson,Sebastian Liddle,8-7,8,7,1,0,Completed,true,false,false
+AP002113,03 Feb 24,11,Black Rock,Overport Park,No. 2,Adam Budge,Charlie Bond,Adam Budge,8-5,8,5,1,0,Completed,true,false,false
+AP002113,03 Feb 24,11,Black Rock,Overport Park,No. 3,Austin Taleb,Jarrod Pepper,Jarrod Pepper,3-8,3,8,0,1,Completed,true,false,false
+AP002113,03 Feb 24,11,Black Rock,Overport Park,No. 4,Geoff Bellingham,Frans Verheij,Geoff Bellingham,8-5,8,5,1,0,Completed,true,false,false
+AP002114,03 Feb 24,11,Coatesville,Carmelite Red,No. 1,Bradley Larkins,Simon Arms,Simon Arms,1-8,1,8,0,1,Completed,true,false,false
+AP002114,03 Feb 24,11,Coatesville,Carmelite Red,No. 2,Luke McDonald,Ashton Arms,Ashton Arms,6-8,6,8,0,1,Completed,true,false,false
+AP002114,03 Feb 24,11,Coatesville,Carmelite Red,No. 3,Thomas Rossi,Oliver Kalicin,Oliver Kalicin,1-8,1,8,0,1,Completed,true,true,true
+AP002114,03 Feb 24,11,Coatesville,Carmelite Red,No. 4,Charlie Garcia,Luke Kinsman,Luke Kinsman,2-8,2,8,0,1,Completed,true,true,false
+AP002121,10 Feb 24,12,Coatesville,Black Rock,No. 1,Jack Callaghan,Adam Budge,Adam Budge,2-8,2,8,0,1,Completed,true,false,false
+AP002121,10 Feb 24,12,Coatesville,Black Rock,No. 2,James Taylor,Austin Taleb,James Taylor,8-3,8,3,1,0,Completed,true,true,false
+AP002121,10 Feb 24,12,Coatesville,Black Rock,No. 3,Luke McDonald,Shadi Taleb,Luke McDonald,8-5,8,5,1,0,Completed,true,false,false
+AP002121,10 Feb 24,12,Coatesville,Black Rock,No. 4,Callum Rankin,Riley Bellingham,Callum Rankin,8-0,8,0,1,0,Completed,true,false,true
+AP002122,10 Feb 24,12,Mt Martha Gold,Overport Park,No. 1,Christopher Arms,Luke Treveil,Luke Treveil,2-8,2,8,0,1,Completed,true,false,false
+AP002122,10 Feb 24,12,Mt Martha Gold,Overport Park,No. 2,Hayden Thomas,Nick Wilson,Hayden Thomas,8-5,8,5,1,0,Completed,true,false,false
+AP002122,10 Feb 24,12,Mt Martha Gold,Overport Park,No. 3,Robert Chipp,Charlie Bond,Robert Chipp,8-5,8,5,1,0,Completed,true,false,false
+AP002122,10 Feb 24,12,Mt Martha Gold,Overport Park,No. 4,William Burnell,Frans Verheij,Frans Verheij,1-8,1,8,0,1,Completed,true,false,false
+AP002123,10 Feb 24,12,Carmelite Red,Highmoor Uniting,No. 1,Simon Arms,Jose Mainella,Simon Arms,8-6,8,6,1,0,Completed,true,false,false
+AP002123,10 Feb 24,12,Carmelite Red,Highmoor Uniting,No. 2,Ashton Arms,Paul Luke,Ashton Arms,8-5,8,5,1,0,Completed,true,false,false
+AP002123,10 Feb 24,12,Carmelite Red,Highmoor Uniting,No. 3,Oliver Kalicin,Tom Pope,Oliver Kalicin,8-1,8,1,1,0,Completed,true,true,false
+AP002123,10 Feb 24,12,Carmelite Red,Highmoor Uniting,No. 4,Nikola Rakovic,Lachlan Peters,Nikola Rakovic,8-4,8,4,1,0,Completed,true,false,false
+AP002124,10 Feb 24,12,Willy Central,Carmelite Green,No. 1,Ben Britton,Stefan Konstantidis,Ben Britton,8-7,8,7,1,0,Completed,true,false,false
+AP002124,10 Feb 24,12,Willy Central,Carmelite Green,No. 2,Josh Fleming,Damien Pound,Josh Fleming,8-4,8,4,1,0,Completed,true,false,false
+AP002124,10 Feb 24,12,Willy Central,Carmelite Green,No. 3,Carlin Grant,Tony Strupl,Carlin Grant,8-7,8,7,1,0,Completed,true,false,false
+AP002124,10 Feb 24,12,Willy Central,Carmelite Green,No. 4,Mark Separovic,Theo Mitsinikos,Mark Separovic,8-0,8,0,1,0,Completed,true,false,true
+AP002131,17 Feb 24,13,Black Rock,Willy Central,No. 1,Maksim Jezdic,Ben Britton,Ben Britton,4-8,4,8,0,1,Completed,true,true,false
+AP002131,17 Feb 24,13,Black Rock,Willy Central,No. 2,Sebastian Liddle,Josh Fleming,Josh Fleming,5-8,5,8,0,1,Completed,true,false,false
+AP002131,17 Feb 24,13,Black Rock,Willy Central,No. 3,Bradley Perks,Mark Separovic,Mark Separovic,1-8,1,8,0,1,Completed,true,true,false
+AP002131,17 Feb 24,13,Black Rock,Willy Central,No. 4,Austin Taleb,Jesse Hart,Jesse Hart,5-8,5,8,0,1,Completed,true,false,true
+AP002132,17 Feb 24,13,Carmelite Green,Coatesville,No. 1,Stefan Konstantidis,Michael Burke,Stefan Konstantidis,8-4,8,4,1,0,Completed,true,false,false
+AP002132,17 Feb 24,13,Carmelite Green,Coatesville,No. 2,Damien Pound,Bradley Larkins,Damien Pound,8-7,8,7,1,0,Completed,true,false,false
+AP002132,17 Feb 24,13,Carmelite Green,Coatesville,No. 3,Tony Strupl,Luke McDonald,Tony Strupl,8-6,8,6,1,0,Completed,true,false,false
+AP002132,17 Feb 24,13,Carmelite Green,Coatesville,No. 4,George Kypriotis,Callum Rankin,George Kypriotis,8-0,8,0,1,0,Completed,true,false,false
+AP002133,17 Feb 24,13,Highmoor Uniting,Mt Martha Gold,No. 1,Jose Mainella,Christopher Arms,Jose Mainella,8-6,8,6,1,0,Completed,true,false,false
+AP002133,17 Feb 24,13,Highmoor Uniting,Mt Martha Gold,No. 2,Paul Luke,Hayden Thomas,Hayden Thomas,4-8,4,8,0,1,Completed,true,false,false
+AP002133,17 Feb 24,13,Highmoor Uniting,Mt Martha Gold,No. 3,Lachlan Peters,Robert Chipp,Robert Chipp,3-8,3,8,0,1,Completed,true,false,false
+AP002133,17 Feb 24,13,Highmoor Uniting,Mt Martha Gold,No. 4,Yves Zenou,William Burnell,Yves Zenou,8-5,8,5,1,0,Completed,true,false,false
+AP002134,17 Feb 24,13,Overport Park,Carmelite Red,No. 1,Grant Thompson,Ashton Arms,Ashton Arms,4-8,4,8,0,1,Completed,true,false,false
+AP002134,17 Feb 24,13,Overport Park,Carmelite Red,No. 2,Luke Treveil,Oliver Kalicin,Luke Treveil,8-3,8,3,1,0,Completed,true,false,true
+AP002134,17 Feb 24,13,Overport Park,Carmelite Red,No. 3,Nick Wilson,Nikola Rakovic,Nikola Rakovic,6-8,6,8,0,1,Completed,true,false,false
+AP002134,17 Feb 24,13,Overport Park,Carmelite Red,No. 4,Jarrod Pepper,Luke Kinsman,Jarrod Pepper,8-4,8,4,1,0,Completed,true,false,false
+AP002141,24 Feb 24,14,Black Rock,Carmelite Green,No. 1,Ben Reese,Stefan Konstantidis,Ben Reese,8-5,8,5,1,0,Completed,true,true,false
+AP002141,24 Feb 24,14,Black Rock,Carmelite Green,No. 2,Bradley Perks,Damien Pound,Bradley Perks,8-5,8,5,1,0,Completed,true,true,false
+AP002141,24 Feb 24,14,Black Rock,Carmelite Green,No. 3,Austin Taleb,Tony Strupl,Tony Strupl,3-8,3,8,0,1,Completed,true,false,false
+AP002141,24 Feb 24,14,Black Rock,Carmelite Green,No. 4,Geoff Bellingham,George Kypriotis,Geoff Bellingham,8-0,8,0,1,0,Completed,true,false,false
+AP002142,24 Feb 24,14,Coatesville,Willy Central,No. 1,Michael Burke,Josh Fleming,Josh Fleming,5-8,5,8,0,1,Completed,true,false,false
+AP002142,24 Feb 24,14,Coatesville,Willy Central,No. 2,Jack Callaghan,Carlin Grant,Carlin Grant,7-8,7,8,0,1,Completed,true,false,false
+AP002142,24 Feb 24,14,Coatesville,Willy Central,No. 3,Bradley Larkins,Mark Separovic,Mark Separovic,0-8,0,8,0,1,Completed,true,false,false
+AP002142,24 Feb 24,14,Coatesville,Willy Central,No. 4,Luke McDonald,Jesse Hart,Luke McDonald,8-6,8,6,1,0,Completed,true,false,true
+AP002143,24 Feb 24,14,Highmoor Uniting,Overport Park,No. 1,Jose Mainella,Grant Thompson,Grant Thompson,5-8,5,8,0,1,Completed,true,false,false
+AP002143,24 Feb 24,14,Highmoor Uniting,Overport Park,No. 2,Tom Pope,Charlie Bond,Charlie Bond,6-8,6,8,0,1,Completed,true,false,false
+AP002143,24 Feb 24,14,Highmoor Uniting,Overport Park,No. 3,Craig Stewart,Jarrod Pepper,Craig Stewart,8-3,8,3,1,0,Completed,true,false,false
+AP002143,24 Feb 24,14,Highmoor Uniting,Overport Park,No. 4,Yves Zenou,Frans Verheij,Frans Verheij,7-8,7,8,0,1,Completed,true,false,false
+AP002144,24 Feb 24,14,Carmelite Red,Mt Martha Gold,No. 1,Simon Arms,Robert Chipp,Simon Arms,8-1,8,1,1,0,Completed,true,false,false
+AP002144,24 Feb 24,14,Carmelite Red,Mt Martha Gold,No. 2,Ashton Arms,Liam Walsh,Ashton Arms,8-4,8,4,1,0,Completed,true,false,false
+AP002144,24 Feb 24,14,Carmelite Red,Mt Martha Gold,No. 3,Nikola Rakovic,William Burnell,Nikola Rakovic,8-3,8,3,1,0,Completed,true,false,false
+AP002144,24 Feb 24,14,Carmelite Red,Mt Martha Gold,No. 4,Luke Kinsman,Adam Snow,Luke Kinsman,8-4,8,4,1,0,Completed,true,false,true
+AP002301,,16,Overport Park,Carmelite Green,No. 1,Grant Thompson,Stefan Konstantidis,Grant Thompson,8-2,8,2,1,0,Completed,true,false,false
+AP002301,,16,Overport Park,Carmelite Green,No. 2,Luke Treveil,Damien Pound,Luke Treveil,8-3,8,3,1,0,Completed,true,false,false
+AP002301,,16,Overport Park,Carmelite Green,No. 3,Charlie Bond,Francisco Gallardo,Charlie Bond,8-5,8,5,1,0,Completed,true,false,false
+AP002301,,16,Overport Park,Carmelite Green,No. 4,Jarrod Pepper,George Kypriotis,Jarrod Pepper,8-5,8,5,1,0,Completed,true,false,false
+AP002302,,16,Willy Central,Carmelite Red,No. 1,Ben Britton,Simon Arms,Simon Arms,5-8,5,8,0,1,Completed,true,false,false
+AP002302,,16,Willy Central,Carmelite Red,No. 2,Josh Fleming,Ashton Arms,Ashton Arms,4-8,4,8,0,1,Completed,true,false,false
+AP002302,,16,Willy Central,Carmelite Red,No. 3,Carlin Grant,Oliver Kalicin,Carlin Grant,8-3,8,3,1,0,Completed,true,false,true
+AP002302,,16,Willy Central,Carmelite Red,No. 4,Mark Separovic,Nikola Rakovic,Mark Separovic,8-3,8,3,1,0,Completed,true,false,false
+AP002321,,17,Overport Park,Willy Central,No. 1,Grant Thompson,Ben Britton,Grant Thompson,8-5,8,5,1,0,Completed,true,false,false
+AP002321,,17,Overport Park,Willy Central,No. 2,Luke Treveil,Josh Fleming,Luke Treveil,8-2,8,2,1,0,Completed,true,false,false
+AP002321,,17,Overport Park,Willy Central,No. 3,Charlie Bond,Mark Separovic,Mark Separovic,1-8,1,8,0,1,Completed,true,false,false
+AP002321,,17,Overport Park,Willy Central,No. 4,Jarrod Pepper,Huon Russell,Jarrod Pepper,8-3,8,3,1,0,Completed,true,false,false

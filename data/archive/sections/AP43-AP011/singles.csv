@@ -1,0 +1,89 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP011031,06 Nov 21,3,East Malvern,Patterson Lakes,No. 1,Therese Oyston,Hayley Gould,Therese Oyston,8-4,8,4,1,0,Completed,true,false,false
+AP011031,06 Nov 21,3,East Malvern,Patterson Lakes,No. 2,Jane Feile,Victoria Hatzikiriazis,Jane Feile,8-1,8,1,1,0,Completed,true,false,false
+AP011031,06 Nov 21,3,East Malvern,Patterson Lakes,No. 3,Jenny Miller,Zoe Gorozidis,Jenny Miller,8-7,8,7,1,0,Completed,true,false,false
+AP011031,06 Nov 21,3,East Malvern,Patterson Lakes,No. 4,Alice Irvine,Paris Gorozidis,Alice Irvine,8-4,8,4,1,0,Completed,true,true,false
+AP011034,06 Nov 21,3,Mt Eliza,Hawthorn,No. 1,Brook Levine,Michelle McKinlay,Michelle McKinlay,4-8,4,8,0,1,Completed,true,false,false
+AP011034,06 Nov 21,3,Mt Eliza,Hawthorn,No. 2,Anna Franklin,Tamara Jungwirth,Tamara Jungwirth,4-8,4,8,0,1,Completed,true,false,false
+AP011034,06 Nov 21,3,Mt Eliza,Hawthorn,No. 3,Maude Verheij,Mirjana Stegnaic,Mirjana Stegnaic,5-8,5,8,0,1,Completed,true,false,false
+AP011034,06 Nov 21,3,Mt Eliza,Hawthorn,No. 4,Lola Grigor,Demetra Giannakopoulos,Lola Grigor,8-2,8,2,1,0,Completed,true,false,false
+AP011053,20 Nov 21,5,Hawthorn,BLTC,No. 1,Michelle McKinlay,India Illingworth,Michelle McKinlay,8-4,8,4,1,0,Completed,true,false,false
+AP011053,20 Nov 21,5,Hawthorn,BLTC,No. 2,Tamara Jungwirth,Saffron Worsley,Saffron Worsley,1-8,1,8,0,1,Completed,true,false,false
+AP011053,20 Nov 21,5,Hawthorn,BLTC,No. 3,Marion Hoffman,Caz McLean,Marion Hoffman,8-5,8,5,1,0,Completed,true,false,false
+AP011053,20 Nov 21,5,Hawthorn,BLTC,No. 4,Demetra Giannakopoulos,Suzanne Worsley,Demetra Giannakopoulos,8-7,8,7,1,0,Completed,true,false,false
+AP011054,20 Nov 21,5,East Malvern,Royal South Yarra,No. 1,Therese Oyston,Vicky Lynagh,Therese Oyston,8-3,8,3,1,0,Completed,true,false,false
+AP011054,20 Nov 21,5,East Malvern,Royal South Yarra,No. 2,Jenny Miller,Sophie Richards,Jenny Miller,8-4,8,4,1,0,Completed,true,false,false
+AP011054,20 Nov 21,5,East Malvern,Royal South Yarra,No. 3,Alice Irvine,Zoe Browning,Alice Irvine,8-6,8,6,1,0,Completed,true,true,false
+AP011054,20 Nov 21,5,East Malvern,Royal South Yarra,No. 4,Jody P2 Simpson,Alex Ritter,Jody P2 Simpson,8-0,8,0,1,0,Completed,true,true,false
+AP011062,27 Nov 21,6,Mt Eliza,East Malvern,No. 1,Anna Franklin,Therese Oyston,Therese Oyston,1-8,1,8,0,1,Completed,true,false,false
+AP011062,27 Nov 21,6,Mt Eliza,East Malvern,No. 2,Maude Verheij,Jane Feile,Jane Feile,1-8,1,8,0,1,Completed,true,false,false
+AP011062,27 Nov 21,6,Mt Eliza,East Malvern,No. 3,Morgan Storm,Jenny Miller,Morgan Storm,8-3,8,3,1,0,Completed,true,false,false
+AP011062,27 Nov 21,6,Mt Eliza,East Malvern,No. 4,Lola Grigor,Alice Irvine,Lola Grigor,8-2,8,2,1,0,Completed,true,false,true
+AP011063,27 Nov 21,6,Patterson Lakes,Hawthorn,No. 1,Victoria Hatzikiriazis,Leona Dowman,Leona Dowman,2-8,2,8,0,1,Completed,true,false,false
+AP011063,27 Nov 21,6,Patterson Lakes,Hawthorn,No. 2,Zoe Gorozidis,Mirjana Stegnaic,Mirjana Stegnaic,1-8,1,8,0,1,Completed,true,false,false
+AP011063,27 Nov 21,6,Patterson Lakes,Hawthorn,No. 3,Paris Gorozidis,Grace Yang,Grace Yang,1-8,1,8,0,1,Completed,true,false,true
+AP011063,27 Nov 21,6,Patterson Lakes,Hawthorn,No. 4,Sophia Kefos,Alvia Yang,Alvia Yang,2-8,2,8,0,1,Completed,true,false,true
+AP011072,04 Dec 21,7,Royal South Yarra,Mt Eliza,No. 1,Vicky Lynagh,Koharu Numaga,Vicky Lynagh,8-7,8,7,1,0,Completed,true,false,false
+AP011072,04 Dec 21,7,Royal South Yarra,Mt Eliza,No. 2,Fiona Ralph,Anna Franklin,Fiona Ralph,8-6,8,6,1,0,Completed,true,false,false
+AP011072,04 Dec 21,7,Royal South Yarra,Mt Eliza,No. 3,Sophie Richards,Morgan Storm,Morgan Storm,7-8,7,8,0,1,Completed,true,false,false
+AP011072,04 Dec 21,7,Royal South Yarra,Mt Eliza,No. 4,Alex Ritter,[Unnamed emergency — TROLS AP011072 away code 4],Alex Ritter,8-0,8,0,1,0,Completed,false,false,true
+AP011074,04 Dec 21,7,Patterson Lakes,BLTC,No. 1,Victoria Hatzikiriazis,Sophie Mackey,Victoria Hatzikiriazis,8-2,8,2,1,0,Completed,true,false,false
+AP011074,04 Dec 21,7,Patterson Lakes,BLTC,No. 2,Zoe Gorozidis,Caz McLean,Caz McLean,3-8,3,8,0,1,Completed,true,false,false
+AP011074,04 Dec 21,7,Patterson Lakes,BLTC,No. 3,Paris Gorozidis,Emma Kate McCarthy,Emma Kate McCarthy,4-8,4,8,0,1,Completed,true,false,false
+AP011074,04 Dec 21,7,Patterson Lakes,BLTC,No. 4,Sophia Kefos,Suzanne Worsley,Suzanne Worsley,0-8,0,8,0,1,Completed,true,false,false
+AP011081,11 Dec 21,8,BLTC,East Malvern,No. 1,India Illingworth,Therese Oyston,Therese Oyston,4-8,4,8,0,1,Completed,true,false,false
+AP011081,11 Dec 21,8,BLTC,East Malvern,No. 2,Saffron Worsley,Stephanie Prvcic,Stephanie Prvcic,3-8,3,8,0,1,Completed,true,false,false
+AP011081,11 Dec 21,8,BLTC,East Malvern,No. 3,Emma Kate McCarthy,Jenny Miller,Jenny Miller,5-8,5,8,0,1,Completed,true,false,false
+AP011081,11 Dec 21,8,BLTC,East Malvern,No. 4,Suzanne Worsley,Alice Irvine,Alice Irvine,6-8,6,8,0,1,Completed,true,false,true
+AP011082,11 Dec 21,8,Hawthorn,Royal South Yarra,No. 1,Leona Dowman,Steph Kortum,Steph Kortum,4-8,4,8,0,1,Completed,true,false,false
+AP011082,11 Dec 21,8,Hawthorn,Royal South Yarra,No. 2,Mirjana Stegnaic,Vicky Lynagh,Vicky Lynagh,5-8,5,8,0,1,Completed,true,false,false
+AP011082,11 Dec 21,8,Hawthorn,Royal South Yarra,No. 3,Marion Hoffman,Fiona Ralph,Marion Hoffman,8-7,8,7,1,0,Completed,true,false,false
+AP011082,11 Dec 21,8,Hawthorn,Royal South Yarra,No. 4,Georgina Holloway,Alex Ritter,Alex Ritter,0-8,0,8,0,1,Completed,true,false,false
+AP011092,29 Jan 22,9,Royal South Yarra,BLTC,No. 1,Steph Kortum,Sophie Mackey,Steph Kortum,8-5,8,5,1,0,Completed,true,false,false
+AP011092,29 Jan 22,9,Royal South Yarra,BLTC,No. 2,Vicky Lynagh,Pauline Ma,Pauline Ma,5-8,5,8,0,1,Completed,true,false,true
+AP011092,29 Jan 22,9,Royal South Yarra,BLTC,No. 3,Zoe Browning,Emma Kate McCarthy,Emma Kate McCarthy,6-8,6,8,0,1,Completed,true,false,false
+AP011092,29 Jan 22,9,Royal South Yarra,BLTC,No. 4,Susie Salmon,Lucy Mackey,Lucy Mackey,2-8,2,8,0,1,Completed,true,false,true
+AP011101,05 Feb 22,10,Patterson Lakes,East Malvern,No. 1,Victoria Hatzikiriazis,Therese Oyston,Therese Oyston,1-8,1,8,0,1,Completed,true,false,false
+AP011101,05 Feb 22,10,Patterson Lakes,East Malvern,No. 2,Paris Gorozidis,Stephanie Prvcic,Stephanie Prvcic,0-8,0,8,0,1,Completed,true,false,false
+AP011101,05 Feb 22,10,Patterson Lakes,East Malvern,No. 3,Emma Robinson,Jenny Miller,Emma Robinson,8-3,8,3,1,0,Completed,true,true,false
+AP011101,05 Feb 22,10,Patterson Lakes,East Malvern,No. 4,Loverose Kaur,Alice Irvine,Alice Irvine,3-8,3,8,0,1,Completed,true,true,true
+AP011104,05 Feb 22,10,Hawthorn,Mt Eliza,No. 1,Tamara Jungwirth,Koharu Numaga,Tamara Jungwirth,8-3,8,3,1,0,Completed,true,false,false
+AP011104,05 Feb 22,10,Hawthorn,Mt Eliza,No. 2,Leona Dowman,Anna Franklin,Leona Dowman,8-7,8,7,1,0,Completed,true,false,false
+AP011104,05 Feb 22,10,Hawthorn,Mt Eliza,No. 3,Mirjana Stegnaic,Morgan Storm,Morgan Storm,0-8,0,8,0,1,Completed,true,false,false
+AP011104,05 Feb 22,10,Hawthorn,Mt Eliza,No. 4,Demetra Giannakopoulos,Lola Grigor,Lola Grigor,3-8,3,8,0,1,Completed,true,false,false
+AP011111,12 Feb 22,11,East Malvern,Hawthorn,No. 1,Therese Oyston,Tamara Jungwirth,Therese Oyston,8-5,8,5,1,0,Completed,true,false,false
+AP011111,12 Feb 22,11,East Malvern,Hawthorn,No. 2,Stephanie Prvcic,Leona Dowman,Leona Dowman,7-8,7,8,0,1,Completed,true,false,false
+AP011111,12 Feb 22,11,East Malvern,Hawthorn,No. 3,Jenny Miller,Mirjana Stegnaic,Mirjana Stegnaic,3-8,3,8,0,1,Completed,true,false,false
+AP011111,12 Feb 22,11,East Malvern,Hawthorn,No. 4,Alice Irvine,Marion Hoffman,Alice Irvine,8-6,8,6,1,0,Completed,true,true,false
+AP011112,12 Feb 22,11,Royal South Yarra,Patterson Lakes,No. 1,Steph Kortum,Victoria Hatzikiriazis,Steph Kortum,8-2,8,2,1,0,Completed,true,false,false
+AP011112,12 Feb 22,11,Royal South Yarra,Patterson Lakes,No. 2,Vicky Lynagh,Zoe Gorozidis,Vicky Lynagh,8-2,8,2,1,0,Completed,true,false,false
+AP011112,12 Feb 22,11,Royal South Yarra,Patterson Lakes,No. 3,Sophie Richards,Paris Gorozidis,Sophie Richards,8-5,8,5,1,0,Completed,true,false,false
+AP011112,12 Feb 22,11,Royal South Yarra,Patterson Lakes,No. 4,Alex Ritter,Sophia Kefos,Alex Ritter,8-2,8,2,1,0,Completed,true,false,false
+AP011114,12 Feb 22,11,Mt Eliza,BLTC,No. 1,Koharu Numaga,India Illingworth,India Illingworth,4-8,4,8,0,1,Completed,true,false,false
+AP011114,12 Feb 22,11,Mt Eliza,BLTC,No. 2,Anna Franklin,Sophie Mackey,Anna Franklin,8-6,8,6,1,0,Completed,true,false,false
+AP011114,12 Feb 22,11,Mt Eliza,BLTC,No. 3,Maude Verheij,Caz McLean,Caz McLean,4-8,4,8,0,1,Completed,true,false,false
+AP011114,12 Feb 22,11,Mt Eliza,BLTC,No. 4,Morgan Storm,Lucy Mackey,Morgan Storm,8-6,8,6,1,0,Completed,true,false,true
+AP011123,19 Feb 22,12,BLTC,Hawthorn,No. 1,India Illingworth,Tamara Jungwirth,Tamara Jungwirth,3-8,3,8,0,1,Completed,true,false,false
+AP011123,19 Feb 22,12,BLTC,Hawthorn,No. 2,Sophie Mackey,Leona Dowman,Sophie Mackey,8-2,8,2,1,0,Completed,true,false,false
+AP011123,19 Feb 22,12,BLTC,Hawthorn,No. 3,Caz McLean,Georgina Holloway,Georgina Holloway,7-8,7,8,0,1,Completed,true,false,false
+AP011123,19 Feb 22,12,BLTC,Hawthorn,No. 4,Emma Kate McCarthy,Demetra Giannakopoulos,Emma Kate McCarthy,8-5,8,5,1,0,Completed,true,false,false
+AP011124,19 Feb 22,12,Royal South Yarra,East Malvern,No. 1,Vicky Lynagh,Therese Oyston,Therese Oyston,4-8,4,8,0,1,Completed,true,false,false
+AP011124,19 Feb 22,12,Royal South Yarra,East Malvern,No. 2,Fiona Ralph,Stephanie Prvcic,Stephanie Prvcic,0-8,0,8,0,1,Completed,true,false,false
+AP011124,19 Feb 22,12,Royal South Yarra,East Malvern,No. 3,Sophie Richards,Jenny Miller,Sophie Richards,8-3,8,3,1,0,Completed,true,false,false
+AP011124,19 Feb 22,12,Royal South Yarra,East Malvern,No. 4,Susie Salmon,Alice Irvine,Susie Salmon,8-7,8,7,1,0,Completed,true,false,true
+AP011142,05 Mar 22,14,Mt Eliza,Royal South Yarra,No. 1,Koharu Numaga,Steph Kortum,Steph Kortum,7-8,7,8,0,1,Completed,true,false,false
+AP011142,05 Mar 22,14,Mt Eliza,Royal South Yarra,No. 2,Maude Verheij,Vicky Lynagh,Maude Verheij,8-4,8,4,1,0,Completed,true,false,false
+AP011142,05 Mar 22,14,Mt Eliza,Royal South Yarra,No. 3,Morgan Storm,Fiona Ralph,Morgan Storm,8-5,8,5,1,0,Completed,true,false,false
+AP011142,05 Mar 22,14,Mt Eliza,Royal South Yarra,No. 4,Lola Grigor,Zoe Browning,Lola Grigor,8-4,8,4,1,0,Completed,true,false,false
+AP011301,,16,East Malvern,Royal South Yarra,No. 1,Therese Oyston,Steph Kortum,Therese Oyston,8-3,8,3,1,0,Completed,true,false,false
+AP011301,,16,East Malvern,Royal South Yarra,No. 2,Stephanie Prvcic,Vicky Lynagh,Stephanie Prvcic,8-4,8,4,1,0,Completed,true,false,false
+AP011301,,16,East Malvern,Royal South Yarra,No. 3,Jenny Miller,Fiona Ralph,Fiona Ralph,2-8,2,8,0,1,Completed,true,false,false
+AP011301,,16,East Malvern,Royal South Yarra,No. 4,Alice Irvine,Zoe Browning,Zoe Browning,3-8,3,8,0,1,Completed,true,true,false
+AP011302,,16,Hawthorn,Mt Eliza,No. 1,Tamara Jungwirth,Anna Franklin,Tamara Jungwirth,8-3,8,3,1,0,Completed,true,false,false
+AP011302,,16,Hawthorn,Mt Eliza,No. 2,Mirjana Stegnaic,Maude Verheij,Mirjana Stegnaic,8-1,8,1,1,0,Completed,true,false,false
+AP011302,,16,Hawthorn,Mt Eliza,No. 3,Georgina Holloway,Morgan Storm,Georgina Holloway,8-4,8,4,1,0,Completed,true,false,false
+AP011302,,16,Hawthorn,Mt Eliza,No. 4,Demetra Giannakopoulos,Lola Grigor,Lola Grigor,2-8,2,8,0,1,Completed,true,false,false
+AP011321,,17,East Malvern,Hawthorn,No. 1,Therese Oyston,Tamara Jungwirth,Therese Oyston,8-3,8,3,1,0,Completed,true,false,false
+AP011321,,17,East Malvern,Hawthorn,No. 2,Stephanie Prvcic,Leona Dowman,Stephanie Prvcic,8-2,8,2,1,0,Completed,true,false,false
+AP011321,,17,East Malvern,Hawthorn,No. 3,Jenny Miller,Mirjana Stegnaic,Jenny Miller,8-7,8,7,1,0,Completed,true,false,false
+AP011321,,17,East Malvern,Hawthorn,No. 4,Alice Irvine,Marion Hoffman,Marion Hoffman,6-8,6,8,0,1,Completed,true,true,false

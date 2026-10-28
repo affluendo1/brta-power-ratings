@@ -1,0 +1,109 @@
+{
+  "asset_id": "AP49-AP011",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 24/25",
+  "season_id": "AP49",
+  "season_label": "Summer 24/25",
+  "source_section_code": "AP011",
+  "section_label": "Mens S/D 11",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Mentone Gold",
+      "wins": 10,
+      "points": 108,
+      "percentage": 155.96,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "East Malvern Blue",
+      "wins": 7,
+      "points": 80.5,
+      "percentage": 111.37,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Black Rock",
+      "wins": 6,
+      "points": 79,
+      "percentage": 124.74,
+      "marker": "P"
+    },
+    {
+      "position": 4,
+      "team": "East Malvern Navy",
+      "wins": 4,
+      "points": 68.5,
+      "percentage": 92.29,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Royal Ave",
+      "wins": 4,
+      "points": 62,
+      "percentage": 94.0,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "St Louis de Mont",
+      "wins": 3,
+      "points": 57,
+      "percentage": 87.07,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Tennis World",
+      "wins": 3,
+      "points": 54,
+      "percentage": 85.39,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "Ormond",
+      "wins": 2,
+      "points": 51,
+      "percentage": 72.25,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP49-AP011",
+  "fixtures": 59,
+  "completed_fixtures": 50,
+  "draw_fixtures": 59,
+  "singles_rubbers": 179,
+  "doubles_rubbers": 90,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP011011 singles No. 3: '4-4'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP011132 singles No. 3: '2-1'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP011012 doubles No. 1: '1-6 1-1'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP011013 doubles No. 1: '7-6 1-0'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP011013 doubles No. 2: '4-6 3-3'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

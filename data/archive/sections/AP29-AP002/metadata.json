@@ -1,0 +1,92 @@
+{
+  "asset_id": "AP29-AP002",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Winter 2014",
+  "season_id": "AP29",
+  "season_label": "Winter 2014",
+  "source_section_code": "AP002",
+  "section_label": "Ladies Sets 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Highmoor Uniting",
+      "wins": 8,
+      "points": 89,
+      "percentage": 202.77,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "St Pats Mentone 1",
+      "wins": 9,
+      "points": 85,
+      "percentage": 154.49,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Port Melbourne",
+      "wins": 10,
+      "points": 80,
+      "percentage": 121.92,
+      "marker": "R"
+    },
+    {
+      "position": 4,
+      "team": "St Pats Mentone 2",
+      "wins": 4,
+      "points": 43,
+      "percentage": 73.97,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Parkdale",
+      "wins": 3,
+      "points": 32,
+      "percentage": 50.66,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Ormond",
+      "wins": 2,
+      "points": 31,
+      "percentage": 72.98,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 1,
+    "doublesTarget": 10,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP29-AP002",
+  "fixtures": 47,
+  "completed_fixtures": 42,
+  "draw_fixtures": 46,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 166,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP002011 doubles No. 4: '4-4'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP002013 doubles No. 3: '1-2'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP002013 doubles No. 4: '2-4'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP002091 doubles No. 3: '3-1'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

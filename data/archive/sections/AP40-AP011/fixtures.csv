@@ -1,0 +1,60 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP011011,05 Oct 19,1,regular,Round 1,Dendy Park,Burwood,8,2,6,4,,,54,54,Completed,
+AP011012,05 Oct 19,1,regular,Round 1,GPHC,Tennis World,8,2,6,3,,,61,36,Completed,
+AP011013,05 Oct 19,1,regular,Round 1,Hawthorn 1,Hawthorn 2,10,0,8,0,,,56,21,Completed,
+AP011014,05 Oct 19,1,regular,Round 1,East Malvern,Mt Eliza,8,2,6,3,,,55,41,Completed,
+AP011021,12 Oct 19,2,regular,Round 2,Mt Eliza,Dendy Park,10,0,8,1,,,62,26,Completed,
+AP011022,12 Oct 19,2,regular,Round 2,Burwood,GPHC,2,8,3,6,,,42,58,Completed,
+AP011023,12 Oct 19,2,regular,Round 2,Tennis World,Hawthorn 1,0,10,0,8,,,4,56,Completed,
+AP011024,12 Oct 19,2,regular,Round 2,Hawthorn 2,East Malvern,3,7,4,4,,,40,41,Completed,
+AP011031,19 Oct 19,3,regular,Round 3,Dendy Park,Hawthorn 2,5,5,2,3,,,23,33,Completed,
+AP011032,19 Oct 19,3,regular,Round 3,GPHC,Mt Eliza,1,9,1,7,,,27,53,Completed,
+AP011033,19 Oct 19,3,regular,Round 3,Hawthorn 1,Burwood,10,0,8,0,,,56,12,Completed,
+AP011034,19 Oct 19,3,regular,Round 3,East Malvern,Tennis World,10,0,8,0,,,56,15,Completed,
+AP011042,26 Oct 19,4,regular,Round 4,Hawthorn 2,GPHC,5,5,2,0,,,14,2,Completed,
+AP011043,26 Oct 19,4,regular,Round 4,Mt Eliza,Hawthorn 1,0,10,0,8,,,16,56,Completed,
+pending-ap011-r4-burwood-east-malvern,26 Oct 19,4,regular,Round 4,Burwood,East Malvern,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap011-r4-tennis-world-dendy-park,26 Oct 19,4,regular,Round 4,Tennis World,Dendy Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP011051,09 Nov 19,5,regular,Round 5,Hawthorn 1,East Malvern,10,0,8,0,,,56,7,Completed,
+AP011052,09 Nov 19,5,regular,Round 5,Mt Eliza,Hawthorn 2,9,1,6,2,,,46,33,Completed,
+AP011053,09 Nov 19,5,regular,Round 5,Tennis World,Burwood,3,7,3,5,,,43,50,Completed,
+AP011054,09 Nov 19,5,regular,Round 5,Dendy Park,GPHC,2,8,3,6,,,34,53,Completed,
+AP011061,16 Nov 19,6,regular,Round 6,GPHC,Hawthorn 1,0,10,0,8,,,6,56,Completed,
+AP011062,16 Nov 19,6,regular,Round 6,East Malvern,Dendy Park,10,0,8,0,,,56,19,Completed,
+AP011063,16 Nov 19,6,regular,Round 6,Hawthorn 2,Tennis World,9,1,7,1,,,55,21,Completed,
+AP011064,16 Nov 19,6,regular,Round 6,Burwood,Mt Eliza,0,10,0,8,,,14,56,Completed,
+AP011071,23 Nov 19,7,regular,Round 7,Dendy Park,Hawthorn 1,0,10,0,8,,,20,56,Completed,
+AP011072,23 Nov 19,7,regular,Round 7,GPHC,East Malvern,1,9,2,7,,,42,59,Completed,
+AP011073,23 Nov 19,7,regular,Round 7,Mt Eliza,Tennis World,9,1,7,1,,,53,27,Completed,
+AP011074,23 Nov 19,7,regular,Round 7,Hawthorn 2,Burwood,10,0,8,0,,,56,12,Completed,
+AP011082,30 Nov 19,8,regular,Round 8,Tennis World,GPHC,8,2,6,3,,,52,41,Completed,
+AP011084,30 Nov 19,8,regular,Round 8,Mt Eliza,East Malvern,3,7,5,5,,,49,52,Completed,
+pending-ap011-r8-burwood-dendy-park,30 Nov 19,8,regular,Round 8,Burwood,Dendy Park,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+pending-ap011-r8-hawthorn-2-hawthorn-1,30 Nov 19,8,regular,Round 8,Hawthorn 2,Hawthorn 1,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP011091,07 Dec 19,9,regular,Round 9,Dendy Park,Mt Eliza,8,2,5,3,,,49,30,Completed,
+AP011092,07 Dec 19,9,regular,Round 9,GPHC,Burwood,8,2,6,4,,,52,38,Completed,
+AP011093,07 Dec 19,9,regular,Round 9,Hawthorn 1,Tennis World,10,0,8,0,,,56,8,Completed,
+AP011094,07 Dec 19,9,regular,Round 9,East Malvern,Hawthorn 2,5,5,4,4,,,39,39,Completed,
+AP011101,14 Dec 19,10,regular,Round 10,Hawthorn 2,Dendy Park,8,2,5,3,,,50,28,Completed,
+AP011102,14 Dec 19,10,regular,Round 10,Mt Eliza,GPHC,10,0,8,0,,,56,18,Completed,
+AP011103,14 Dec 19,10,regular,Round 10,Burwood,Hawthorn 1,2,8,3,5,,,22,36,Completed,
+AP011104,14 Dec 19,10,regular,Round 10,Tennis World,East Malvern,0,10,0,8,,,18,56,Completed,
+AP011111,01 Feb 20,11,regular,Round 11,Dendy Park,Tennis World,5,5,0,0,,,0,0,Completed,
+pending-ap011-r11-east-malvern-burwood,01 Feb 20,11,regular,Round 11,East Malvern,Burwood,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap011-r11-gphc-hawthorn-2,01 Feb 20,11,regular,Round 11,GPHC,Hawthorn 2,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap011-r11-hawthorn-1-mt-eliza,01 Feb 20,11,regular,Round 11,Hawthorn 1,Mt Eliza,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP011121,08 Feb 20,12,regular,Round 12,East Malvern,Hawthorn 1,1,9,1,7,,,10,48,Completed,
+AP011122,08 Feb 20,12,regular,Round 12,Hawthorn 2,Mt Eliza,9,1,7,2,,,59,51,Completed,
+AP011123,08 Feb 20,12,regular,Round 12,Burwood,Tennis World,8,2,6,4,,,58,41,Completed,
+AP011124,08 Feb 20,12,regular,Round 12,GPHC,Dendy Park,1,9,2,7,,,28,53,Completed,
+AP011134,15 Feb 20,13,regular,Round 13,Mt Eliza,Burwood,10,0,8,0,,,56,15,Completed,
+pending-ap011-r13-dendy-park-east-malvern,15 Feb 20,13,regular,Round 13,Dendy Park,East Malvern,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap011-r13-hawthorn-1-gphc,15 Feb 20,13,regular,Round 13,Hawthorn 1,GPHC,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap011-r13-tennis-world-hawthorn-2,15 Feb 20,13,regular,Round 13,Tennis World,Hawthorn 2,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP011141,22 Feb 20,14,regular,Round 14,Hawthorn 1,Dendy Park,10,0,8,0,,,56,4,Completed,
+AP011142,22 Feb 20,14,regular,Round 14,East Malvern,GPHC,8,2,5,3,,,49,34,Completed,
+AP011143,22 Feb 20,14,regular,Round 14,Tennis World,Mt Eliza,3,7,4,5,,,38,44,Completed,
+AP011144,22 Feb 20,14,regular,Round 14,Burwood,Hawthorn 2,3,7,4,5,,,41,46,Completed,
+AP011301,,16,semi_final,Semi-final,Hawthorn 1,Hawthorn 2,10,0,8,0,,,56,14,Completed,
+AP011302,,16,semi_final,Semi-final,East Malvern,Mt Eliza,2,8,3,5,,,35,45,Completed,
+AP011321,,17,grand_final,Grand final · TROLS entry 2,Hawthorn 1,Mt Eliza,5,5,0,0,,,0,0,Completed,

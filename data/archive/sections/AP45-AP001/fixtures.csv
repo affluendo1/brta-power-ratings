@@ -1,0 +1,60 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP001012,01 Oct 22,1,regular,Round 1,Overport Park,Royal South Yarra,0,10,0,8,,,23,56,Completed,
+AP001013,01 Oct 22,1,regular,Round 1,Dendy Park 1,Dendy Park 2,10,0,8,1,,,59,34,Completed,
+pending-ap001-r1-bltc-bye,01 Oct 22,1,regular,Round 1,BLTC,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap001-r1-liston-mt-eliza,01 Oct 22,1,regular,Round 1,Liston,Mt Eliza,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP001021,08 Oct 22,2,regular,Round 2,Mt Eliza,BLTC,1,9,2,6,,,22,52,Completed,
+AP001023,08 Oct 22,2,regular,Round 2,Royal South Yarra,Dendy Park 1,8,2,6,4,,,61,52,Completed,
+AP001024,08 Oct 22,2,regular,Round 2,Dendy Park 2,Liston,4.5,5.5,1,2,,,13,20,Completed,
+pending-ap001-r2-bye-overport-park,08 Oct 22,2,regular,Round 2,Bye,Overport Park,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP001031,15 Oct 22,3,regular,Round 3,BLTC,Dendy Park 2,10,0,8,1,,,61,32,Completed,
+AP001032,15 Oct 22,3,regular,Round 3,Overport Park,Mt Eliza,8,2,6,3,,,52,52,Completed,
+AP001034,15 Oct 22,3,regular,Round 3,Liston,Royal South Yarra,1,9,1,7,,,32,54,Completed,
+pending-ap001-r3-dendy-park-1-bye,15 Oct 22,3,regular,Round 3,Dendy Park 1,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP001043,22 Oct 22,4,regular,Round 4,Mt Eliza,Dendy Park 1,0,10,0,8,,,26,58,Completed,
+pending-ap001-r4-bye-liston,22 Oct 22,4,regular,Round 4,Bye,Liston,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap001-r4-dendy-park-2-overport-park,22 Oct 22,4,regular,Round 4,Dendy Park 2,Overport Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap001-r4-royal-south-yarra-bltc,22 Oct 22,4,regular,Round 4,Royal South Yarra,BLTC,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP001051,05 Nov 22,5,regular,Round 5,Dendy Park 1,Liston,10,0,8,0,,,56,21,Completed,
+AP001052,05 Nov 22,5,regular,Round 5,Mt Eliza,Dendy Park 2,9,1,7,1,,,54,19,Completed,
+AP001054,05 Nov 22,5,regular,Round 5,BLTC,Overport Park,8,2,6,4,,,59,43,Completed,
+pending-ap001-r5-royal-south-yarra-bye,05 Nov 22,5,regular,Round 5,Royal South Yarra,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP001061,12 Nov 22,6,regular,Round 6,Overport Park,Dendy Park 1,2,8,3,6,,,35,53,Completed,
+AP001062,12 Nov 22,6,regular,Round 6,Liston,BLTC,0,10,0,8,,,18,56,Completed,
+AP001063,12 Nov 22,6,regular,Round 6,Dendy Park 2,Royal South Yarra,1,9,1,7,,,16,49,Completed,
+pending-ap001-r6-bye-mt-eliza,12 Nov 22,6,regular,Round 6,Bye,Mt Eliza,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap001-r7-bltc-dendy-park-1,19 Nov 22,7,regular,Round 7,BLTC,Dendy Park 1,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap001-r7-dendy-park-2-bye,19 Nov 22,7,regular,Round 7,Dendy Park 2,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap001-r7-mt-eliza-royal-south-yarra,19 Nov 22,7,regular,Round 7,Mt Eliza,Royal South Yarra,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap001-r7-overport-park-liston,19 Nov 22,7,regular,Round 7,Overport Park,Liston,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP001082,26 Nov 22,8,regular,Round 8,Royal South Yarra,Overport Park,10,0,8,0,,,57,15,Completed,
+AP001083,26 Nov 22,8,regular,Round 8,Dendy Park 2,Dendy Park 1,0,10,0,8,,,28,57,Completed,
+AP001084,26 Nov 22,8,regular,Round 8,Mt Eliza,Liston,10,0,8,0,,,56,17,Completed,
+pending-ap001-r8-bye-bltc,26 Nov 22,8,regular,Round 8,Bye,BLTC,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP001091,03 Dec 22,9,regular,Round 9,BLTC,Mt Eliza,9,1,7,2,,,56,43,Completed,
+AP001093,03 Dec 22,9,regular,Round 9,Dendy Park 1,Royal South Yarra,7,3,4,4,,,49,39,Completed,
+AP001094,03 Dec 22,9,regular,Round 9,Liston,Dendy Park 2,1,9,2,7,,,40,60,Completed,
+pending-ap001-r9-overport-park-bye,03 Dec 22,9,regular,Round 9,Overport Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP001101,10 Dec 22,10,regular,Round 10,Dendy Park 2,BLTC,1,9,1,7,,,22,51,Completed,
+AP001102,10 Dec 22,10,regular,Round 10,Mt Eliza,Overport Park,1,9,3,7,,,46,63,Completed,
+AP001104,10 Dec 22,10,regular,Round 10,Royal South Yarra,Liston,7,3,5,4,,,49,48,Completed,
+pending-ap001-r10-bye-dendy-park-1,10 Dec 22,10,regular,Round 10,Bye,Dendy Park 1,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP001111,04 Feb 23,11,regular,Round 11,BLTC,Royal South Yarra,8,2,6,3,,,59,49,Completed,
+AP001112,04 Feb 23,11,regular,Round 11,Overport Park,Dendy Park 2,7,3,5,4,,,46,43,Completed,
+AP001113,04 Feb 23,11,regular,Round 11,Dendy Park 1,Mt Eliza,8,2,6,4,,,62,56,Completed,
+pending-ap001-r11-liston-bye,04 Feb 23,11,regular,Round 11,Liston,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP001121,11 Feb 23,12,regular,Round 12,Liston,Dendy Park 1,0,10,0,8,,,16,57,Completed,
+AP001122,11 Feb 23,12,regular,Round 12,Dendy Park 2,Mt Eliza,1,9,2,7,,,42,62,Completed,
+AP001124,11 Feb 23,12,regular,Round 12,Overport Park,BLTC,7,3,4,4,,,38,37,Completed,
+pending-ap001-r12-bye-royal-south-yarra,11 Feb 23,12,regular,Round 12,Bye,Royal South Yarra,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP001131,18 Feb 23,13,regular,Round 13,Dendy Park 1,Overport Park,8,2,5,4,,,51,43,Completed,
+AP001132,18 Feb 23,13,regular,Round 13,BLTC,Liston,10,0,8,0,,,56,20,Completed,
+pending-ap001-r13-mt-eliza-bye,18 Feb 23,13,regular,Round 13,Mt Eliza,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap001-r13-royal-south-yarra-dendy-park-2,18 Feb 23,13,regular,Round 13,Royal South Yarra,Dendy Park 2,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+AP001141,25 Feb 23,14,regular,Round 14,Dendy Park 1,BLTC,4,6,2,4,,,40,40,Completed,
+AP001143,25 Feb 23,14,regular,Round 14,Royal South Yarra,Mt Eliza,0,10,0,8,,,13,56,Completed,
+pending-ap001-r14-bye-dendy-park-2,25 Feb 23,14,regular,Round 14,Bye,Dendy Park 2,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap001-r14-liston-overport-park,25 Feb 23,14,regular,Round 14,Liston,Overport Park,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+AP001301,,16,semi_final,Semi-final,BLTC,Overport Park,2,8,3,5,,,45,46,Completed,
+AP001302,,16,semi_final,Semi-final,Dendy Park 1,Royal South Yarra,8.5,1.5,6,2,,,51,39,Completed,
+AP001321,,17,grand_final,Grand final · TROLS entry 2,Dendy Park 1,Overport Park,2,8,3,5,,,46,50,Completed,

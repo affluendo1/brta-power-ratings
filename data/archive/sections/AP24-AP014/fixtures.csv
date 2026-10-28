@@ -1,0 +1,48 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP014011,08 Oct 11,1,regular,Round 1,Royal South Yarra,Highmoor Uniting,7,3,4,4,,,46,44,Completed,
+AP014012,08 Oct 11,1,regular,Round 1,East Malvern,GPHC,3,7,4,5,,,48,49,Completed,
+AP014013,08 Oct 11,1,regular,Round 1,BLTC,Kooyong,0,10,0,8,,,17,56,Completed,
+AP014021,15 Oct 11,2,regular,Round 2,Kooyong,Royal South Yarra,3,7,4,5,,,44,50,Completed,
+AP014022,15 Oct 11,2,regular,Round 2,GPHC,BLTC,9,1,7,2,,,59,42,Completed,
+AP014023,15 Oct 11,2,regular,Round 2,Highmoor Uniting,East Malvern,8,2,5,4,,,52,44,Completed,
+AP014031,22 Oct 11,3,regular,Round 3,Royal South Yarra,East Malvern,9,1,7,1,,,50,22,Completed,
+AP014032,22 Oct 11,3,regular,Round 3,BLTC,Highmoor Uniting,1,9,2,7,,,38,58,Completed,
+pending-ap014-r3-kooyong-gphc,22 Oct 11,3,regular,Round 3,Kooyong,GPHC,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP014041,05 Nov 11,4,regular,Round 4,GPHC,Royal South Yarra,3,7,4,4,,,36,42,Completed,
+AP014042,05 Nov 11,4,regular,Round 4,Highmoor Uniting,Kooyong,7,3,5,4,,,48,43,Completed,
+AP014043,05 Nov 11,4,regular,Round 4,East Malvern,BLTC,7,3,4,4,,,47,44,Completed,
+AP014051,12 Nov 11,5,regular,Round 5,Royal South Yarra,BLTC,8,2,6,3,,,55,39,Completed,
+AP014052,12 Nov 11,5,regular,Round 5,GPHC,Highmoor Uniting,3,7,4,5,,,51,49,Completed,
+AP014053,12 Nov 11,5,regular,Round 5,Kooyong,East Malvern,8,2,5,3,,,46,26,Completed,
+AP014061,19 Nov 11,6,regular,Round 6,Highmoor Uniting,Royal South Yarra,5,5,0,0,,,0,0,Completed,
+pending-ap014-r6-gphc-east-malvern,19 Nov 11,6,regular,Round 6,GPHC,East Malvern,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap014-r6-kooyong-bltc,19 Nov 11,6,regular,Round 6,Kooyong,BLTC,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap014-r7-bltc-gphc,26 Nov 11,7,regular,Round 7,BLTC,GPHC,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap014-r7-east-malvern-highmoor-uniting,26 Nov 11,7,regular,Round 7,East Malvern,Highmoor Uniting,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap014-r7-royal-south-yarra-kooyong,26 Nov 11,7,regular,Round 7,Royal South Yarra,Kooyong,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP014081,03 Dec 11,8,regular,Round 8,East Malvern,Royal South Yarra,2,8,3,5,,,24,45,Completed,
+AP014082,03 Dec 11,8,regular,Round 8,Highmoor Uniting,BLTC,10,0,8,1,,,60,34,Completed,
+AP014083,03 Dec 11,8,regular,Round 8,GPHC,Kooyong,8,2,6,3,,,49,33,Completed,
+AP014091,10 Dec 11,9,regular,Round 9,Royal South Yarra,GPHC,9,1,7,1,,,54,32,Completed,
+AP014092,10 Dec 11,9,regular,Round 9,Kooyong,Highmoor Uniting,7,3,5,4,,,57,43,Completed,
+AP014093,10 Dec 11,9,regular,Round 9,BLTC,East Malvern,3,7,4,5,,,42,51,Completed,
+AP014101,17 Dec 11,10,regular,Round 10,BLTC,Royal South Yarra,1,9,1,7,,,29,57,Completed,
+AP014102,17 Dec 11,10,regular,Round 10,Highmoor Uniting,GPHC,3,7,4,4,,,42,43,Completed,
+AP014103,17 Dec 11,10,regular,Round 10,East Malvern,Kooyong,0,10,0,8,,,11,56,Completed,
+AP014111,04 Feb 12,11,regular,Round 11,Royal South Yarra,Highmoor Uniting,9,1,7,1,,,50,38,Completed,
+AP014112,04 Feb 12,11,regular,Round 11,East Malvern,GPHC,3,7,4,4,,,36,38,Completed,
+AP014113,04 Feb 12,11,regular,Round 11,BLTC,Kooyong,1,9,2,7,,,35,58,Completed,
+AP014121,11 Feb 12,12,regular,Round 12,Kooyong,Royal South Yarra,3,7,4,4,,,38,40,Completed,
+AP014122,11 Feb 12,12,regular,Round 12,GPHC,BLTC,8,2,5,4,,,53,36,Completed,
+AP014123,11 Feb 12,12,regular,Round 12,Highmoor Uniting,East Malvern,7,3,5,4,,,51,33,Completed,
+AP014131,18 Feb 12,13,regular,Round 13,Royal South Yarra,East Malvern,10,0,8,1,,,59,27,Completed,
+AP014132,18 Feb 12,13,regular,Round 13,BLTC,Highmoor Uniting,1,9,1,7,,,29,53,Completed,
+AP014133,18 Feb 12,13,regular,Round 13,Kooyong,GPHC,9,1,7,1,,,52,23,Completed,
+pending-ap014-r14-east-malvern-bltc,25 Feb 12,14,regular,Round 14,East Malvern,BLTC,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap014-r14-gphc-royal-south-yarra,25 Feb 12,14,regular,Round 14,GPHC,Royal South Yarra,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap014-r14-highmoor-uniting-kooyong,25 Feb 12,14,regular,Round 14,Highmoor Uniting,Kooyong,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP014311,03 Mar 12,15,regular,Round 15,Kooyong,Highmoor Uniting,10,0,8,0,,,56,17,Completed,
+pending-ap014-r15-gphc-highmoor-uniting,03 Mar 12,15,regular,Round 15,GPHC,Highmoor Uniting,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap014-r15-kooyong-east-malvern,03 Mar 12,15,regular,Round 15,Kooyong,East Malvern,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap014-r15-royal-south-yarra-bltc,03 Mar 12,15,regular,Round 15,Royal South Yarra,BLTC,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP014321,,16,grand_final,Grand final · TROLS entry 2,Royal South Yarra,Kooyong,0,10,0,8,,,16,56,Completed,

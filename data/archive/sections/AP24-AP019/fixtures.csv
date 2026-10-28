@@ -1,0 +1,61 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP019011,08 Oct 11,1,regular,Round 1,Le Page,East Malvern,9,1,7,1,,,54,33,Completed,
+AP019012,08 Oct 11,1,regular,Round 1,Dendy Park,GPHC,8,2,6,2,,,53,37,Completed,
+AP019013,08 Oct 11,1,regular,Round 1,Mordialloc,Carmelite,8,2,5,3,,,42,40,Completed,
+AP019014,08 Oct 11,1,regular,Round 1,BLTC,Kings Park,8,2,6,3,,,56,35,Completed,
+AP019021,15 Oct 11,2,regular,Round 2,Kings Park,Le Page,1,9,3,7,,,50,58,Completed,
+AP019022,15 Oct 11,2,regular,Round 2,East Malvern,Dendy Park,4.5,5.5,3,5,,,50,58,Completed,
+AP019023,15 Oct 11,2,regular,Round 2,GPHC,Mordialloc,2,8,3,5,,,23,40,Completed,
+pending-ap019-r2-carmelite-bltc,15 Oct 11,2,regular,Round 2,Carmelite,BLTC,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP019031,22 Oct 11,3,regular,Round 3,Le Page,Carmelite,10,0,8,0,,,56,22,Completed,
+AP019033,22 Oct 11,3,regular,Round 3,Mordialloc,East Malvern,2,8,3,5,,,33,52,Completed,
+pending-ap019-r3-bltc-gphc,22 Oct 11,3,regular,Round 3,BLTC,GPHC,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+pending-ap019-r3-dendy-park-kings-park,22 Oct 11,3,regular,Round 3,Dendy Park,Kings Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP019041,05 Nov 11,4,regular,Round 4,GPHC,Le Page,1,9,2,7,,,26,58,Completed,
+AP019042,05 Nov 11,4,regular,Round 4,Carmelite,Dendy Park,1,9,2,7,,,35,54,Completed,
+AP019043,05 Nov 11,4,regular,Round 4,Kings Park,Mordialloc,8,2,6,2,,,49,34,Completed,
+AP019044,05 Nov 11,4,regular,Round 4,East Malvern,BLTC,10,0,8,0,,,57,23,Completed,
+AP019051,12 Nov 11,5,regular,Round 5,Mordialloc,BLTC,8,2,6,3,,,50,47,Completed,
+AP019052,12 Nov 11,5,regular,Round 5,Kings Park,Carmelite,8,2,6,3,,,57,44,Completed,
+AP019053,12 Nov 11,5,regular,Round 5,GPHC,East Malvern,1,9,2,7,,,34,58,Completed,
+AP019054,12 Nov 11,5,regular,Round 5,Le Page,Dendy Park,8,2,5,3,,,50,43,Completed,
+AP019062,19 Nov 11,6,regular,Round 6,BLTC,Le Page,5,5,4,2,,,41,37,Completed,
+pending-ap019-r6-carmelite-gphc,19 Nov 11,6,regular,Round 6,Carmelite,GPHC,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+pending-ap019-r6-dendy-park-mordialloc,19 Nov 11,6,regular,Round 6,Dendy Park,Mordialloc,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap019-r6-east-malvern-kings-park,19 Nov 11,6,regular,Round 6,East Malvern,Kings Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap019-r7-carmelite-east-malvern,26 Nov 11,7,regular,Round 7,Carmelite,East Malvern,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap019-r7-dendy-park-bltc,26 Nov 11,7,regular,Round 7,Dendy Park,BLTC,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap019-r7-kings-park-gphc,26 Nov 11,7,regular,Round 7,Kings Park,GPHC,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+pending-ap019-r7-le-page-mordialloc,26 Nov 11,7,regular,Round 7,Le Page,Mordialloc,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP019081,03 Dec 11,8,regular,Round 8,East Malvern,Le Page,1,9,2,7,,,41,59,Completed,
+AP019082,03 Dec 11,8,regular,Round 8,GPHC,Dendy Park,0,10,1,8,,,36,63,Completed,
+AP019083,03 Dec 11,8,regular,Round 8,Carmelite,Mordialloc,1,9,1,7,,,22,55,Completed,
+AP019084,03 Dec 11,8,regular,Round 8,Kings Park,BLTC,10,0,8,1,,,60,34,Completed,
+AP019091,10 Dec 11,9,regular,Round 9,Le Page,Kings Park,9,1,6,2,,,51,33,Completed,
+AP019092,10 Dec 11,9,regular,Round 9,Dendy Park,East Malvern,2,8,3,6,,,46,53,Completed,
+AP019094,10 Dec 11,9,regular,Round 9,BLTC,Carmelite,7,3,5,4,,,54,47,Completed,
+pending-ap019-r9-mordialloc-gphc,10 Dec 11,9,regular,Round 9,Mordialloc,GPHC,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP019101,17 Dec 11,10,regular,Round 10,Carmelite,Le Page,1,9,1,7,,,22,54,Completed,
+AP019102,17 Dec 11,10,regular,Round 10,Kings Park,Dendy Park,3,7,4,4,,,45,48,Completed,
+AP019103,17 Dec 11,10,regular,Round 10,East Malvern,Mordialloc,2,8,3,5,,,42,43,Completed,
+AP019104,17 Dec 11,10,regular,Round 10,GPHC,BLTC,3,7,4,5,,,41,52,Completed,
+AP019111,04 Feb 12,11,regular,Round 11,Le Page,GPHC,9,1,7,1,,,54,20,Completed,
+AP019112,04 Feb 12,11,regular,Round 11,Dendy Park,Carmelite,10,0,8,0,,,57,22,Completed,
+AP019113,04 Feb 12,11,regular,Round 11,Mordialloc,Kings Park,3,7,5,5,,,51,54,Completed,
+AP019114,04 Feb 12,11,regular,Round 11,BLTC,East Malvern,3,7,4,5,,,47,49,Completed,
+AP019121,11 Feb 12,12,regular,Round 12,BLTC,Mordialloc,2,8,3,6,,,41,48,Completed,
+AP019122,11 Feb 12,12,regular,Round 12,Carmelite,Kings Park,2,8,2,6,,,46,53,Completed,
+AP019123,11 Feb 12,12,regular,Round 12,East Malvern,GPHC,10,0,8,1,,,60,24,Completed,
+AP019124,11 Feb 12,12,regular,Round 12,Dendy Park,Le Page,2,8,3,5,,,46,48,Completed,
+AP019131,18 Feb 12,13,regular,Round 13,Mordialloc,Dendy Park,10,0,8,0,,,56,23,Completed,
+AP019132,18 Feb 12,13,regular,Round 13,Le Page,BLTC,9,1,7,1,,,55,37,Completed,
+AP019133,18 Feb 12,13,regular,Round 13,GPHC,Carmelite,3,7,4,4,,,33,36,Completed,
+AP019134,18 Feb 12,13,regular,Round 13,Kings Park,East Malvern,8,2,6,3,,,51,49,Completed,
+AP019142,25 Feb 12,14,regular,Round 14,BLTC,Dendy Park,3,7,4,5,,,43,44,Completed,
+AP019144,25 Feb 12,14,regular,Round 14,East Malvern,Carmelite,9,1,5,0,,,32,12,Completed,
+pending-ap019-r14-gphc-kings-park,25 Feb 12,14,regular,Round 14,GPHC,Kings Park,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+pending-ap019-r14-mordialloc-le-page,25 Feb 12,14,regular,Round 14,Mordialloc,Le Page,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP019301,,16,semi_final,Semi-final,Le Page,Mordialloc,1,9,0,4,,,18,33,Completed,
+AP019302,,16,semi_final,Semi-final,Kings Park,East Malvern,1,9,0,4,,,18,33,Completed,
+AP019311,,16,semi_final,Semi-final,Le Page,East Malvern,8,2,6,3,,,55,46,Completed,
+AP019321,,17,grand_final,Grand final · TROLS entry 2,Mordialloc,Le Page,7,3,5,3,,,41,37,Completed,

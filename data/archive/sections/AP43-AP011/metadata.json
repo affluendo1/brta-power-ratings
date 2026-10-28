@@ -1,0 +1,87 @@
+{
+  "asset_id": "AP43-AP011",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 21/22",
+  "season_id": "AP43",
+  "season_label": "Summer 21/22",
+  "source_section_code": "AP011",
+  "section_label": "Ladies S/D 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "East Malvern",
+      "wins": 6,
+      "points": 70,
+      "percentage": 184.96,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Hawthorn",
+      "wins": 5,
+      "points": 59,
+      "percentage": 123.24,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Mt Eliza",
+      "wins": 3,
+      "points": 44,
+      "percentage": 93.96,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Royal South Yarra",
+      "wins": 3,
+      "points": 40,
+      "percentage": 109.41,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "BLTC",
+      "wins": 2,
+      "points": 39,
+      "percentage": 114.74,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Patterson Lakes",
+      "wins": 0,
+      "points": 8,
+      "percentage": 28.28,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP43-AP011",
+  "fixtures": 59,
+  "completed_fixtures": 26,
+  "draw_fixtures": 59,
+  "singles_rubbers": 88,
+  "doubles_rubbers": 44,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

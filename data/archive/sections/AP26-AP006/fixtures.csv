@@ -1,0 +1,48 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP006012,06 Oct 12,1,regular,Round 1,Kooyong,BLTC,8,0,4,0,8,1,54,30,Completed,
+AP006013,06 Oct 12,1,regular,Round 1,Lauriston,Hawthorn,1,7,1,3,2,7,33,51,Completed,
+pending-ap006-r1-hampton-oakleigh,06 Oct 12,1,regular,Round 1,Hampton,Oakleigh,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP006021,13 Oct 12,2,regular,Round 2,Hawthorn,Hampton,8,0,4,0,8,0,49,18,Completed,
+AP006023,13 Oct 12,2,regular,Round 2,Oakleigh,Kooyong,0,8,0,4,1,8,30,54,Completed,
+pending-ap006-r2-bltc-lauriston,13 Oct 12,2,regular,Round 2,BLTC,Lauriston,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP006031,20 Oct 12,3,regular,Round 3,Hampton,Kooyong,6,2,2,2,5,5,53,52,Completed,
+AP006032,20 Oct 12,3,regular,Round 3,Lauriston,Oakleigh,1,7,1,3,2,7,31,53,Completed,
+AP006033,20 Oct 12,3,regular,Round 3,Hawthorn,BLTC,6,2,2,2,6,4,51,35,Completed,
+AP006041,27 Oct 12,4,regular,Round 4,BLTC,Hampton,6,2,2,2,5,5,48,46,Completed,
+AP006042,27 Oct 12,4,regular,Round 4,Oakleigh,Hawthorn,2,6,2,2,5,5,44,50,Completed,
+AP006043,27 Oct 12,4,regular,Round 4,Kooyong,Lauriston,8,0,4,0,8,0,49,25,Completed,
+AP006051,10 Nov 12,5,regular,Round 5,Hampton,Lauriston,6,2,2,2,4,4,37,31,Completed,
+AP006052,10 Nov 12,5,regular,Round 5,BLTC,Oakleigh,1,7,1,3,2,7,37,52,Completed,
+AP006053,10 Nov 12,5,regular,Round 5,Hawthorn,Kooyong,8,0,4,0,8,2,55,40,Completed,
+AP006061,17 Nov 12,6,regular,Round 6,Oakleigh,Hampton,7,1,3,1,6,2,42,21,Completed,
+AP006062,17 Nov 12,6,regular,Round 6,BLTC,Kooyong,6,2,2,2,5,4,48,40,Completed,
+AP006063,17 Nov 12,6,regular,Round 6,Hawthorn,Lauriston,8,0,4,0,8,0,48,13,Completed,
+AP006072,24 Nov 12,7,regular,Round 7,Lauriston,BLTC,7,1,3,1,6,3,41,37,Completed,
+AP006073,24 Nov 12,7,regular,Round 7,Kooyong,Oakleigh,0,8,0,4,0,8,30,49,Completed,
+pending-ap006-r7-hampton-hawthorn,24 Nov 12,7,regular,Round 7,Hampton,Hawthorn,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+AP006081,01 Dec 12,8,regular,Round 8,Kooyong,Hampton,8,0,4,0,8,1,52,26,Completed,
+AP006082,01 Dec 12,8,regular,Round 8,Oakleigh,Lauriston,8,0,4,0,8,1,53,25,Completed,
+AP006083,01 Dec 12,8,regular,Round 8,BLTC,Hawthorn,6,2,2,2,4,4,39,38,Completed,
+AP006091,08 Dec 12,9,regular,Round 9,Hampton,BLTC,0,8,0,4,0,8,15,49,Completed,
+AP006092,08 Dec 12,9,regular,Round 9,Hawthorn,Oakleigh,0.5,7.5,0,3,2,7,34,50,Completed,
+AP006093,08 Dec 12,9,regular,Round 9,Lauriston,Kooyong,0.5,7.5,0,3,0,7,15,45,Completed,
+AP006102,15 Dec 12,10,regular,Round 10,Oakleigh,BLTC,2,6,2,2,4,4,32,38,Completed,
+AP006103,15 Dec 12,10,regular,Round 10,Kooyong,Hawthorn,0,8,0,4,3,8,36,59,Completed,
+pending-ap006-r10-lauriston-hampton,15 Dec 12,10,regular,Round 10,Lauriston,Hampton,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP006111,02 Feb 13,11,regular,Round 11,Hampton,Oakleigh,1,7,1,3,2,7,27,52,Completed,
+AP006112,02 Feb 13,11,regular,Round 11,Kooyong,BLTC,1,7,1,3,3,6,36,42,Completed,
+AP006113,02 Feb 13,11,regular,Round 11,Lauriston,Hawthorn,0,8,0,4,2,8,30,55,Completed,
+AP006122,09 Feb 13,12,regular,Round 12,BLTC,Lauriston,7,1,3,1,6,3,49,36,Completed,
+AP006123,09 Feb 13,12,regular,Round 12,Oakleigh,Kooyong,7,1,3,1,6,2,42,36,Completed,
+pending-ap006-r12-hawthorn-hampton,09 Feb 13,12,regular,Round 12,Hawthorn,Hampton,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP006131,16 Feb 13,13,regular,Round 13,Hampton,Kooyong,0,8,0,4,0,8,14,48,Completed,
+AP006132,16 Feb 13,13,regular,Round 13,Lauriston,Oakleigh,2,6,2,2,4,4,29,37,Completed,
+AP006133,16 Feb 13,13,regular,Round 13,Hawthorn,BLTC,6,2,2,2,6,5,54,45,Completed,
+AP006141,23 Feb 13,14,regular,Round 14,BLTC,Hampton,7,1,3,1,6,3,52,41,Completed,
+AP006142,23 Feb 13,14,regular,Round 14,Oakleigh,Hawthorn,1,7,1,3,2,6,23,43,Completed,
+pending-ap006-r14-kooyong-lauriston,23 Feb 13,14,regular,Round 14,Kooyong,Lauriston,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+AP006152,02 Mar 13,15,regular,Round 15,BLTC,Oakleigh,2,6,2,2,5,6,52,54,Completed,
+AP006153,02 Mar 13,15,regular,Round 15,Hawthorn,Kooyong,8,0,4,0,8,0,49,22,Completed,
+AP006311,02 Mar 13,15,regular,Round 15,Oakleigh,BLTC,6.5,1.5,2,1,4,3,37,29,Completed,
+pending-ap006-r15-hampton-lauriston,02 Mar 13,15,regular,Round 15,Hampton,Lauriston,,,,,,,,,Missing Result,No individual scorecard / no rubbers recorded
+AP006321,,16,grand_final,Grand final · TROLS entry 2,Hawthorn,Oakleigh,6.5,1.5,2,1,6,2,46,28,Completed,

@@ -1,0 +1,79 @@
+{
+  "asset_id": "AP37-AP003",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Winter 2018",
+  "season_id": "AP37",
+  "season_label": "Winter 2018",
+  "source_section_code": "AP003",
+  "section_label": "Mens Rubbers 1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Ormond",
+      "wins": 10,
+      "points": 81,
+      "percentage": 184.44,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Parkdale",
+      "wins": 7,
+      "points": 66,
+      "percentage": 144.16,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Hurlingham Park",
+      "wins": 5,
+      "points": 45.5,
+      "percentage": 86.97,
+      "marker": "R"
+    },
+    {
+      "position": 4,
+      "team": "St Anthony's",
+      "wins": 3,
+      "points": 25.5,
+      "percentage": 63.34,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Sth Murrumbeena",
+      "wins": 1,
+      "points": 22,
+      "percentage": 74.49,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP37-AP003",
+  "fixtures": 47,
+  "completed_fixtures": 28,
+  "draw_fixtures": 57,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 112,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

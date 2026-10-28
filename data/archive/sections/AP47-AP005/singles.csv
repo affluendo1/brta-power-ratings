@@ -1,0 +1,153 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP005012,07 Oct 23,1,Royal South Yarra Gold,Royal South Yarra Navy,No. 1,Andrew Walker,Charlie Anderson,Charlie Anderson,3-8,3,8,0,1,Completed,true,false,false
+AP005012,07 Oct 23,1,Royal South Yarra Gold,Royal South Yarra Navy,No. 2,Matthew Mukhtar,Peter Tabain,Matthew Mukhtar,8-5,8,5,1,0,Completed,true,false,false
+AP005012,07 Oct 23,1,Royal South Yarra Gold,Royal South Yarra Navy,No. 3,Richard Ralph,Stanislav Tabain,Stanislav Tabain,6-8,6,8,0,1,Completed,true,false,false
+AP005012,07 Oct 23,1,Royal South Yarra Gold,Royal South Yarra Navy,No. 4,Jed Zheng,Adrian Anderson,Adrian Anderson,1-8,1,8,0,1,Completed,true,true,false
+AP005013,07 Oct 23,1,Carmelite,St Anthony's,No. 1,Oliver Kalicin,Sam Confait,Oliver Kalicin,8-3,8,3,1,0,Completed,true,true,false
+AP005013,07 Oct 23,1,Carmelite,St Anthony's,No. 2,Josh Kempin,Johnny Asimenias,Josh Kempin,8-5,8,5,1,0,Completed,true,false,false
+AP005013,07 Oct 23,1,Carmelite,St Anthony's,No. 3,Ryan Sweeney,Anthony Nosek,Ryan Sweeney,8-4,8,4,1,0,Completed,true,false,false
+AP005013,07 Oct 23,1,Carmelite,St Anthony's,No. 4,Angus Leckey,Anthony Straford,Angus Leckey,8-2,8,2,1,0,Completed,true,false,true
+AP005014,07 Oct 23,1,Caulfield Rec,Kings Park Blue,No. 1,Frankie Hillier,Cameron Clark,Frankie Hillier,8-2,8,2,1,0,Completed,true,false,false
+AP005014,07 Oct 23,1,Caulfield Rec,Kings Park Blue,No. 2,Vlad Gisca,Thomas Piclin,Vlad Gisca,8-5,8,5,1,0,Completed,true,false,false
+AP005014,07 Oct 23,1,Caulfield Rec,Kings Park Blue,No. 3,Zac Waterston,Matt Carlson,Zac Waterston,8-5,8,5,1,0,Completed,true,false,false
+AP005014,07 Oct 23,1,Caulfield Rec,Kings Park Blue,No. 4,Sean Hill,Trevor Cohen,Sean Hill,8-4,8,4,1,0,Completed,true,true,false
+AP005022,14 Oct 23,2,BLTC,Royal South Yarra Gold,No. 1,Phil Brophy,Oscar Lynagh,Oscar Lynagh,4-8,4,8,0,1,Completed,true,true,false
+AP005022,14 Oct 23,2,BLTC,Royal South Yarra Gold,No. 2,David Smith,Xavier Kiley,David Smith,8-5,8,5,1,0,Completed,true,false,false
+AP005022,14 Oct 23,2,BLTC,Royal South Yarra Gold,No. 3,Stuart Mac Farlane,Matthew Mukhtar,Matthew Mukhtar,7-8,7,8,0,1,Completed,true,false,false
+AP005022,14 Oct 23,2,BLTC,Royal South Yarra Gold,No. 4,Andrew Bartholomeusz,Mark Cunningham,Mark Cunningham,2-8,2,8,0,1,Completed,true,false,false
+AP005023,14 Oct 23,2,Royal South Yarra Navy,Carmelite,No. 1,Charlie Anderson,Oliver Kalicin,Oliver Kalicin,6-8,6,8,0,1,Completed,true,false,true
+AP005023,14 Oct 23,2,Royal South Yarra Navy,Carmelite,No. 2,Peter Tabain,Angus Leckey,Peter Tabain,8-1,8,1,1,0,Completed,true,false,false
+AP005023,14 Oct 23,2,Royal South Yarra Navy,Carmelite,No. 3,Freddie Hunt,Darcy Whitebrook,Darcy Whitebrook,5-8,5,8,0,1,Completed,true,false,false
+AP005023,14 Oct 23,2,Royal South Yarra Navy,Carmelite,No. 4,Adrian Anderson,Michael Jankovic,Adrian Anderson,8-6,8,6,1,0,Completed,true,false,true
+AP005024,14 Oct 23,2,St Anthony's,Caulfield Rec,No. 1,Sam Confait,Frankie Hillier,Sam Confait,8-3,8,3,1,0,Completed,true,false,false
+AP005024,14 Oct 23,2,St Anthony's,Caulfield Rec,No. 2,Johnny Asimenias,Vlad Gisca,Johnny Asimenias,8-7,8,7,1,0,Completed,true,false,false
+AP005024,14 Oct 23,2,St Anthony's,Caulfield Rec,No. 3,Anthony Nosek,Josh Dosser,Anthony Nosek,8-3,8,3,1,0,Completed,true,false,false
+AP005024,14 Oct 23,2,St Anthony's,Caulfield Rec,No. 4,Brendan Sitters,Sean Hill,Sean Hill,4-8,4,8,0,1,Completed,true,false,true
+AP005032,21 Oct 23,3,Royal South Yarra Gold,Kings Park Blue,No. 1,Andrew Walker,Cameron Clark,Andrew Walker,8-5,8,5,1,0,Completed,true,false,false
+AP005032,21 Oct 23,3,Royal South Yarra Gold,Kings Park Blue,No. 2,Matthew Mukhtar,Matt Carlson,Matthew Mukhtar,8-2,8,2,1,0,Completed,true,false,false
+AP005032,21 Oct 23,3,Royal South Yarra Gold,Kings Park Blue,No. 3,Mark Cunningham,Johnson Duong,Mark Cunningham,8-0,8,0,1,0,Completed,true,false,false
+AP005032,21 Oct 23,3,Royal South Yarra Gold,Kings Park Blue,No. 4,Sanjeeva Pathinayake,Callum Campbell,Sanjeeva Pathinayake,8-1,8,1,1,0,Completed,true,false,false
+AP005033,21 Oct 23,3,Carmelite,BLTC,No. 1,Oliver Kalicin,Tim Miller,Oliver Kalicin,8-2,8,2,1,0,Completed,true,true,true
+AP005033,21 Oct 23,3,Carmelite,BLTC,No. 2,Ryan Sweeney,David Smith,Ryan Sweeney,8-3,8,3,1,0,Completed,true,false,false
+AP005033,21 Oct 23,3,Carmelite,BLTC,No. 3,Simon Cahill,Stuart Mac Farlane,Simon Cahill,8-6,8,6,1,0,Completed,true,true,false
+AP005033,21 Oct 23,3,Carmelite,BLTC,No. 4,Vladimir Spencer,Andrew Bartholomeusz,Andrew Bartholomeusz,3-8,3,8,0,1,Completed,true,false,false
+AP005034,21 Oct 23,3,Caulfield Rec,Royal South Yarra Navy,No. 1,Vlad Gisca,Charlie Anderson,Charlie Anderson,5-8,5,8,0,1,Completed,true,false,false
+AP005034,21 Oct 23,3,Caulfield Rec,Royal South Yarra Navy,No. 2,Lucas Valansi,Freddie Hunt,Lucas Valansi,8-5,8,5,1,0,Completed,true,false,false
+AP005034,21 Oct 23,3,Caulfield Rec,Royal South Yarra Navy,No. 3,Josh Dosser,Ben Frewin,Ben Frewin,3-8,3,8,0,1,Completed,true,false,false
+AP005034,21 Oct 23,3,Caulfield Rec,Royal South Yarra Navy,No. 4,Ethan Brooke,Stanislav Tabain,Ethan Brooke,8-3,8,3,1,0,Completed,true,true,false
+AP005042,28 Oct 23,4,St Anthony's,Royal South Yarra Gold,No. 1,Sam Confait,Oscar Lynagh,Sam Confait,8-2,8,2,1,0,Completed,true,false,false
+AP005042,28 Oct 23,4,St Anthony's,Royal South Yarra Gold,No. 2,Chris Gain,Xavier Kiley,Chris Gain,8-7,8,7,1,0,Completed,true,false,false
+AP005042,28 Oct 23,4,St Anthony's,Royal South Yarra Gold,No. 3,Johnny Asimenias,Sanjeeva Pathinayake,Johnny Asimenias,8-6,8,6,1,0,Completed,true,false,false
+AP005042,28 Oct 23,4,St Anthony's,Royal South Yarra Gold,No. 4,Anthony Nosek,Richard Ralph,Anthony Nosek,8-4,8,4,1,0,Completed,true,false,false
+AP005043,28 Oct 23,4,Kings Park Blue,Carmelite,No. 1,Thomas Piclin,Josh Kempin,Josh Kempin,4-8,4,8,0,1,Completed,true,false,false
+AP005043,28 Oct 23,4,Kings Park Blue,Carmelite,No. 2,Matt Carlson,Angus Leckey,Angus Leckey,3-8,3,8,0,1,Completed,true,false,false
+AP005043,28 Oct 23,4,Kings Park Blue,Carmelite,No. 3,Trevor Cohen,Darcy Whitebrook,Darcy Whitebrook,6-8,6,8,0,1,Completed,true,false,false
+AP005043,28 Oct 23,4,Kings Park Blue,Carmelite,No. 4,Johnson Duong,Vladimir Spencer,Johnson Duong,8-1,8,1,1,0,Completed,true,false,false
+AP005044,28 Oct 23,4,BLTC,Caulfield Rec,No. 1,Tim Miller,Vlad Gisca,Tim Miller,8-3,8,3,1,0,Completed,true,true,false
+AP005044,28 Oct 23,4,BLTC,Caulfield Rec,No. 2,Ian Thomas,Lucas Valansi,Lucas Valansi,3-8,3,8,0,1,Completed,true,false,false
+AP005044,28 Oct 23,4,BLTC,Caulfield Rec,No. 3,David Smith,Josh Dosser,David Smith,8-2,8,2,1,0,Completed,true,false,false
+AP005044,28 Oct 23,4,BLTC,Caulfield Rec,No. 4,Stuart Mac Farlane,Zac Waterston,Zac Waterston,5-8,5,8,0,1,Completed,true,false,false
+AP005051,11 Nov 23,5,Carmelite,Caulfield Rec,No. 1,Josh Kempin,Vlad Gisca,Josh Kempin,8-2,8,2,1,0,Completed,true,false,false
+AP005051,11 Nov 23,5,Carmelite,Caulfield Rec,No. 2,Ryan Sweeney,Lucas Valansi,Ryan Sweeney,8-4,8,4,1,0,Completed,true,false,false
+AP005051,11 Nov 23,5,Carmelite,Caulfield Rec,No. 3,Angus Leckey,Josh Dosser,Josh Dosser,5-8,5,8,0,1,Completed,true,false,false
+AP005051,11 Nov 23,5,Carmelite,Caulfield Rec,No. 4,Darcy Whitebrook,Kevin Warwick,Darcy Whitebrook,8-5,8,5,1,0,Completed,true,false,true
+AP005052,11 Nov 23,5,Kings Park Blue,St Anthony's,No. 1,Cameron Clark,Sam Confait,Sam Confait,4-8,4,8,0,1,Completed,true,false,false
+AP005052,11 Nov 23,5,Kings Park Blue,St Anthony's,No. 2,Thomas Piclin,Chris Gain,Thomas Piclin,8-4,8,4,1,0,Completed,true,false,false
+AP005052,11 Nov 23,5,Kings Park Blue,St Anthony's,No. 3,Trevor Cohen,Johnny Asimenias,Johnny Asimenias,4-8,4,8,0,1,Completed,true,false,false
+AP005052,11 Nov 23,5,Kings Park Blue,St Anthony's,No. 4,Callum Campbell,Anthony Nosek,Anthony Nosek,3-8,3,8,0,1,Completed,true,false,false
+AP005053,11 Nov 23,5,Royal South Yarra Navy,BLTC,No. 1,Freddie Hunt,Tim Miller,Tim Miller,5-8,5,8,0,1,Completed,true,false,true
+AP005053,11 Nov 23,5,Royal South Yarra Navy,BLTC,No. 2,Ben Frewin,Ian Thomas,Ben Frewin,8-4,8,4,1,0,Completed,true,false,false
+AP005053,11 Nov 23,5,Royal South Yarra Navy,BLTC,No. 3,Stanislav Tabain,David Smith,David Smith,3-8,3,8,0,1,Completed,true,false,false
+AP005053,11 Nov 23,5,Royal South Yarra Navy,BLTC,No. 4,Adrian Anderson,Andrew Bartholomeusz,Andrew Bartholomeusz,3-8,3,8,0,1,Completed,true,false,false
+AP005061,18 Nov 23,6,Royal South Yarra Gold,Carmelite,No. 1,Andrew Walker,Josh Kempin,Andrew Walker,8-2,8,2,1,0,Completed,true,false,false
+AP005061,18 Nov 23,6,Royal South Yarra Gold,Carmelite,No. 2,Dominic Tobin,Ryan Sweeney,Ryan Sweeney,0-8,0,8,0,1,Completed,true,true,false
+AP005061,18 Nov 23,6,Royal South Yarra Gold,Carmelite,No. 3,Alasdair Fairbairn,Angus Leckey,Alasdair Fairbairn,8-3,8,3,1,0,Completed,true,false,false
+AP005061,18 Nov 23,6,Royal South Yarra Gold,Carmelite,No. 4,Richard Ralph,Vladimir Spencer,Richard Ralph,8-6,8,6,1,0,Completed,true,false,false
+AP005063,18 Nov 23,6,St Anthony's,Royal South Yarra Navy,No. 1,Sam Confait,Peter Tabain,Peter Tabain,6-8,6,8,0,1,Completed,true,false,false
+AP005063,18 Nov 23,6,St Anthony's,Royal South Yarra Navy,No. 2,Chris Gain,Freddie Hunt,Freddie Hunt,3-8,3,8,0,1,Completed,true,false,false
+AP005063,18 Nov 23,6,St Anthony's,Royal South Yarra Navy,No. 3,Johnny Asimenias,Stanislav Tabain,Johnny Asimenias,8-4,8,4,1,0,Completed,true,false,false
+AP005063,18 Nov 23,6,St Anthony's,Royal South Yarra Navy,No. 4,Brendan Sitters,Adrian Anderson,Brendan Sitters,8-7,8,7,1,0,Completed,true,false,false
+AP005064,18 Nov 23,6,BLTC,Kings Park Blue,No. 1,Miguel Rasguido,Cameron Clark,Cameron Clark,6-8,6,8,0,1,Completed,true,false,false
+AP005064,18 Nov 23,6,BLTC,Kings Park Blue,No. 2,Ian Thomas,Thomas Piclin,Ian Thomas,8-2,8,2,1,0,Completed,true,false,false
+AP005064,18 Nov 23,6,BLTC,Kings Park Blue,No. 3,David Smith,Johnson Duong,David Smith,8-6,8,6,1,0,Completed,true,false,false
+AP005064,18 Nov 23,6,BLTC,Kings Park Blue,No. 4,Simon Scott-Branagan,Callum Campbell,Simon Scott-Branagan,8-7,8,7,1,0,Completed,true,false,false
+AP005072,25 Nov 23,7,Royal South Yarra Gold,Caulfield Rec,No. 1,Andrew Walker,Vlad Gisca,Vlad Gisca,6-8,6,8,0,1,Completed,true,false,false
+AP005072,25 Nov 23,7,Royal South Yarra Gold,Caulfield Rec,No. 2,Matthew Mukhtar,Lucas Valansi,Matthew Mukhtar,8-2,8,2,1,0,Completed,true,false,false
+AP005072,25 Nov 23,7,Royal South Yarra Gold,Caulfield Rec,No. 3,Mark Cunningham,Khang Khuu,Mark Cunningham,8-4,8,4,1,0,Completed,true,false,true
+AP005072,25 Nov 23,7,Royal South Yarra Gold,Caulfield Rec,No. 4,Alasdair Fairbairn,Steve Destradi,Alasdair Fairbairn,8-3,8,3,1,0,Completed,true,false,true
+AP005073,25 Nov 23,7,Kings Park Blue,Royal South Yarra Navy,No. 1,Cameron Clark,Peter Tabain,Cameron Clark,8-6,8,6,1,0,Completed,true,false,false
+AP005073,25 Nov 23,7,Kings Park Blue,Royal South Yarra Navy,No. 2,Matt Carlson,Freddie Hunt,Freddie Hunt,0-8,0,8,0,1,Completed,true,false,false
+AP005073,25 Nov 23,7,Kings Park Blue,Royal South Yarra Navy,No. 3,Trevor Cohen,Stanislav Tabain,Stanislav Tabain,2-8,2,8,0,1,Completed,true,false,false
+AP005073,25 Nov 23,7,Kings Park Blue,Royal South Yarra Navy,No. 4,Callum Campbell,Adrian Anderson,Adrian Anderson,5-8,5,8,0,1,Completed,true,false,false
+AP005074,25 Nov 23,7,St Anthony's,BLTC,No. 1,Chris Gain,David Smith,David Smith,4-8,4,8,0,1,Completed,true,false,false
+AP005074,25 Nov 23,7,St Anthony's,BLTC,No. 2,Johnny Asimenias,Justin Gehde,Justin Gehde,6-8,6,8,0,1,Completed,true,false,true
+AP005074,25 Nov 23,7,St Anthony's,BLTC,No. 3,Anthony Nosek,Andrew Bartholomeusz,Anthony Nosek,8-3,8,3,1,0,Completed,true,false,false
+AP005074,25 Nov 23,7,St Anthony's,BLTC,No. 4,Brendan Sitters,Simon Scott-Branagan,Simon Scott-Branagan,3-8,3,8,0,1,Completed,true,false,false
+AP005102,16 Dec 23,10,Kings Park Blue,Royal South Yarra Gold,No. 1,Nick Richards,Andrew Walker,Andrew Walker,7-8,7,8,0,1,Completed,true,false,false
+AP005102,16 Dec 23,10,Kings Park Blue,Royal South Yarra Gold,No. 2,Thomas Piclin,Xavier Kiley,Xavier Kiley,0-8,0,8,0,1,Completed,true,false,false
+AP005102,16 Dec 23,10,Kings Park Blue,Royal South Yarra Gold,No. 3,Johnson Duong,Mark Cunningham,Mark Cunningham,4-8,4,8,0,1,Completed,true,false,false
+AP005102,16 Dec 23,10,Kings Park Blue,Royal South Yarra Gold,No. 4,Callum Campbell,Sanjeeva Pathinayake,Sanjeeva Pathinayake,3-8,3,8,0,1,Completed,true,false,false
+AP005103,16 Dec 23,10,BLTC,Carmelite,No. 1,Miguel Rasguido,Ryan Sweeney,Ryan Sweeney,6-8,6,8,0,1,Completed,true,false,false
+AP005103,16 Dec 23,10,BLTC,Carmelite,No. 2,Ian Thomas,Angus Leckey,Ian Thomas,8-6,8,6,1,0,Completed,true,false,false
+AP005103,16 Dec 23,10,BLTC,Carmelite,No. 3,David Smith,Vladimir Spencer,David Smith,8-3,8,3,1,0,Completed,true,false,false
+AP005103,16 Dec 23,10,BLTC,Carmelite,No. 4,Simon Scott-Branagan,Harrison Hughes,Simon Scott-Branagan,8-3,8,3,1,0,Completed,true,false,false
+AP005104,16 Dec 23,10,Royal South Yarra Navy,Caulfield Rec,No. 1,Charlie Anderson,Vlad Gisca,Charlie Anderson,8-2,8,2,1,0,Completed,true,false,false
+AP005104,16 Dec 23,10,Royal South Yarra Navy,Caulfield Rec,No. 2,Freddie Hunt,Lucas Valansi,Lucas Valansi,7-8,7,8,0,1,Completed,true,false,false
+AP005104,16 Dec 23,10,Royal South Yarra Navy,Caulfield Rec,No. 3,Ben Frewin,Josh Dosser,Ben Frewin,8-4,8,4,1,0,Completed,true,false,false
+AP005104,16 Dec 23,10,Royal South Yarra Navy,Caulfield Rec,No. 4,Adrian Anderson,Steve Destradi,Steve Destradi,6-8,6,8,0,1,Completed,true,false,true
+AP005112,03 Feb 24,11,Royal South Yarra Gold,St Anthony's,No. 1,Andrew Walker,Alvaro Ruiz-cotorro,Alvaro Ruiz-cotorro,5-8,5,8,0,1,Completed,true,false,true
+AP005112,03 Feb 24,11,Royal South Yarra Gold,St Anthony's,No. 2,Matthew Mukhtar,Chris Gain,Matthew Mukhtar,8-5,8,5,1,0,Completed,true,false,false
+AP005112,03 Feb 24,11,Royal South Yarra Gold,St Anthony's,No. 3,Sanjeeva Pathinayake,Johnny Asimenias,Sanjeeva Pathinayake,8-6,8,6,1,0,Completed,true,false,false
+AP005112,03 Feb 24,11,Royal South Yarra Gold,St Anthony's,No. 4,Alasdair Fairbairn,Brendan Sitters,Alasdair Fairbairn,8-2,8,2,1,0,Completed,true,false,false
+AP005113,03 Feb 24,11,Carmelite,Kings Park Blue,No. 1,Josh Kempin,Nick Richards,Josh Kempin,8-4,8,4,1,0,Completed,true,false,false
+AP005113,03 Feb 24,11,Carmelite,Kings Park Blue,No. 2,Ryan Sweeney,Cameron Clark,Cameron Clark,7-8,7,8,0,1,Completed,true,false,false
+AP005113,03 Feb 24,11,Carmelite,Kings Park Blue,No. 3,Angus Leckey,Johnson Duong,Johnson Duong,2-8,2,8,0,1,Completed,true,false,false
+AP005113,03 Feb 24,11,Carmelite,Kings Park Blue,No. 4,Darcy Whitebrook,Callum Campbell,Darcy Whitebrook,8-5,8,5,1,0,Completed,true,false,false
+AP005114,03 Feb 24,11,Caulfield Rec,BLTC,No. 1,Vlad Gisca,Miguel Rasguido,Vlad Gisca,8-1,8,1,1,0,Completed,true,false,false
+AP005114,03 Feb 24,11,Caulfield Rec,BLTC,No. 2,Lucas Valansi,Ian Thomas,Ian Thomas,5-8,5,8,0,1,Completed,true,false,false
+AP005114,03 Feb 24,11,Caulfield Rec,BLTC,No. 3,Josh Dosser,Stuart Mac Farlane,Stuart Mac Farlane,3-8,3,8,0,1,Completed,true,false,false
+AP005114,03 Feb 24,11,Caulfield Rec,BLTC,No. 4,Zac Waterston,Simon Scott-Branagan,Zac Waterston,8-3,8,3,1,0,Completed,true,false,false
+AP005121,10 Feb 24,12,Caulfield Rec,Carmelite,No. 1,Vlad Gisca,Josh Kempin,Vlad Gisca,8-7,8,7,1,0,Completed,true,false,false
+AP005121,10 Feb 24,12,Caulfield Rec,Carmelite,No. 2,Lucas Valansi,Ryan Sweeney,Lucas Valansi,8-7,8,7,1,0,Completed,true,false,false
+AP005121,10 Feb 24,12,Caulfield Rec,Carmelite,No. 3,Zac Waterston,Darcy Whitebrook,Zac Waterston,8-2,8,2,1,0,Completed,true,false,false
+AP005121,10 Feb 24,12,Caulfield Rec,Carmelite,No. 4,Steve Destradi,Vladimir Spencer,Vladimir Spencer,3-8,3,8,0,1,Completed,true,true,false
+AP005122,10 Feb 24,12,St Anthony's,Kings Park Blue,No. 1,Sam Confait,Nick Richards,Sam Confait,8-1,8,1,1,0,Completed,true,false,false
+AP005122,10 Feb 24,12,St Anthony's,Kings Park Blue,No. 2,Chris Gain,Thomas Piclin,Chris Gain,8-6,8,6,1,0,Completed,true,false,false
+AP005122,10 Feb 24,12,St Anthony's,Kings Park Blue,No. 3,Anthony Nosek,Matt Carlson,Anthony Nosek,8-0,8,0,1,0,Completed,true,false,false
+AP005122,10 Feb 24,12,St Anthony's,Kings Park Blue,No. 4,Bradley Franklin,Trevor Cohen,Bradley Franklin,8-4,8,4,1,0,Completed,true,true,false
+AP005123,10 Feb 24,12,BLTC,Royal South Yarra Navy,No. 1,Miguel Rasguido,Freddie Hunt,Freddie Hunt,3-8,3,8,0,1,Completed,true,false,false
+AP005123,10 Feb 24,12,BLTC,Royal South Yarra Navy,No. 2,Ian Thomas,Ben Frewin,Ben Frewin,6-8,6,8,0,1,Completed,true,false,false
+AP005123,10 Feb 24,12,BLTC,Royal South Yarra Navy,No. 3,Andrew Bartholomeusz,Areev Nayah,Areev Nayah,5-8,5,8,0,1,Completed,true,false,true
+AP005123,10 Feb 24,12,BLTC,Royal South Yarra Navy,No. 4,Simon Scott-Branagan,Stanislav Tabain,Simon Scott-Branagan,8-4,8,4,1,0,Completed,true,false,false
+AP005133,17 Feb 24,13,Royal South Yarra Navy,St Anthony's,No. 1,Charlie Anderson,Alvaro Ruiz-cotorro,Alvaro Ruiz-cotorro,1-8,1,8,0,1,Completed,true,false,true
+AP005133,17 Feb 24,13,Royal South Yarra Navy,St Anthony's,No. 2,Peter Tabain,Sam Confait,Sam Confait,0-8,0,8,0,1,Completed,true,false,false
+AP005133,17 Feb 24,13,Royal South Yarra Navy,St Anthony's,No. 3,Adrian Anderson,Chris Gain,Chris Gain,3-8,3,8,0,1,Completed,true,false,false
+AP005133,17 Feb 24,13,Royal South Yarra Navy,St Anthony's,No. 4,Tom Anderson,Johnny Asimenias,Johnny Asimenias,4-8,4,8,0,1,Completed,true,true,false
+AP005134,17 Feb 24,13,Kings Park Blue,BLTC,No. 1,Cameron Clark,Miguel Rasguido,Miguel Rasguido,6-8,6,8,0,1,Completed,true,false,false
+AP005134,17 Feb 24,13,Kings Park Blue,BLTC,No. 2,Matt Carlson,David Smith,David Smith,6-8,6,8,0,1,Completed,true,false,false
+AP005134,17 Feb 24,13,Kings Park Blue,BLTC,No. 3,Johnson Duong,Stuart Mac Farlane,Johnson Duong,8-6,8,6,1,0,Completed,true,false,false
+AP005134,17 Feb 24,13,Kings Park Blue,BLTC,No. 4,Callum Campbell,Simon Scott-Branagan,Simon Scott-Branagan,2-8,2,8,0,1,Completed,true,false,false
+AP005142,24 Feb 24,14,Caulfield Rec,Royal South Yarra Gold,No. 1,Frankie Hillier,Oscar Lynagh,Oscar Lynagh,0-8,0,8,0,1,Completed,true,false,false
+AP005142,24 Feb 24,14,Caulfield Rec,Royal South Yarra Gold,No. 2,Vlad Gisca,Matthew Mukhtar,Matthew Mukhtar,1-8,1,8,0,1,Completed,true,false,false
+AP005142,24 Feb 24,14,Caulfield Rec,Royal South Yarra Gold,No. 3,Lucas Valansi,Alasdair Fairbairn,Lucas Valansi,8-2,8,2,1,0,Completed,true,false,false
+AP005142,24 Feb 24,14,Caulfield Rec,Royal South Yarra Gold,No. 4,Zac Waterston,Richard Ralph,Zac Waterston,8-0,8,0,1,0,Completed,true,false,false
+AP005143,24 Feb 24,14,Royal South Yarra Navy,Kings Park Blue,No. 1,Charlie Anderson,Nick Richards,Charlie Anderson,8-1,8,1,1,0,Completed,true,false,false
+AP005143,24 Feb 24,14,Royal South Yarra Navy,Kings Park Blue,No. 2,Freddie Hunt,Thomas Piclin,Freddie Hunt,8-2,8,2,1,0,Completed,true,false,false
+AP005143,24 Feb 24,14,Royal South Yarra Navy,Kings Park Blue,No. 3,Areev Nayah,Trevor Cohen,Areev Nayah,8-7,8,7,1,0,Completed,true,true,false
+AP005143,24 Feb 24,14,Royal South Yarra Navy,Kings Park Blue,No. 4,Adrian Anderson,Callum Campbell,Adrian Anderson,8-7,8,7,1,0,Completed,true,false,false
+AP005144,24 Feb 24,14,BLTC,St Anthony's,No. 1,Miguel Rasguido,Sam Confait,Sam Confait,1-8,1,8,0,1,Completed,true,false,false
+AP005144,24 Feb 24,14,BLTC,St Anthony's,No. 2,Ian Thomas,Chris Gain,Ian Thomas,8-5,8,5,1,0,Completed,true,false,false
+AP005144,24 Feb 24,14,BLTC,St Anthony's,No. 3,Stuart Mac Farlane,Johnny Asimenias,Stuart Mac Farlane,8-3,8,3,1,0,Completed,true,false,false
+AP005144,24 Feb 24,14,BLTC,St Anthony's,No. 4,Simon Scott-Branagan,Anthony Nosek,Anthony Nosek,3-8,3,8,0,1,Completed,true,false,false
+AP005301,,16,Royal South Yarra Gold,Royal South Yarra Navy,No. 1,Oscar Lynagh,Charlie Anderson,Charlie Anderson,2-8,2,8,0,1,Completed,true,false,false
+AP005301,,16,Royal South Yarra Gold,Royal South Yarra Navy,No. 2,Andrew Walker,Freddie Hunt,Andrew Walker,8-6,8,6,1,0,Completed,true,false,false
+AP005301,,16,Royal South Yarra Gold,Royal South Yarra Navy,No. 3,Xavier Kiley,Ben Frewin,Ben Frewin,2-8,2,8,0,1,Completed,true,false,false
+AP005301,,16,Royal South Yarra Gold,Royal South Yarra Navy,No. 4,Matthew Mukhtar,Adrian Anderson,Matthew Mukhtar,8-5,8,5,1,0,Completed,true,false,false
+AP005302,,16,St Anthony's,BLTC,No. 1,Sam Confait,Miguel Rasguido,Sam Confait,8-0,8,0,1,0,Completed,true,false,false
+AP005302,,16,St Anthony's,BLTC,No. 2,Chris Gain,Ian Thomas,Ian Thomas,5-8,5,8,0,1,Completed,true,false,false
+AP005302,,16,St Anthony's,BLTC,No. 3,Johnny Asimenias,Stuart Mac Farlane,Johnny Asimenias,8-1,8,1,1,0,Completed,true,false,false
+AP005302,,16,St Anthony's,BLTC,No. 4,Anthony Nosek,Simon Scott-Branagan,Anthony Nosek,8-4,8,4,1,0,Completed,true,false,false
+AP005321,,17,St Anthony's,Royal South Yarra Navy,No. 1,Sam Confait,Charlie Anderson,Charlie Anderson,4-8,4,8,0,1,Completed,true,false,false
+AP005321,,17,St Anthony's,Royal South Yarra Navy,No. 2,Chris Gain,Peter Tabain,Peter Tabain,4-8,4,8,0,1,Completed,true,false,false
+AP005321,,17,St Anthony's,Royal South Yarra Navy,No. 3,Johnny Asimenias,Freddie Hunt,Freddie Hunt,0-8,0,8,0,1,Completed,true,false,false
+AP005321,,17,St Anthony's,Royal South Yarra Navy,No. 4,Anthony Nosek,Ben Frewin,Ben Frewin,3-8,3,8,0,1,Completed,true,false,false

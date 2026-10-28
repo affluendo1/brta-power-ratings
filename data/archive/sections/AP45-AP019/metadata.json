@@ -1,0 +1,98 @@
+{
+  "asset_id": "AP45-AP019",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 22/23",
+  "season_id": "AP45",
+  "season_label": "Summer 22/23",
+  "source_section_code": "AP019",
+  "section_label": "Mens Rubs 1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Albert Park",
+      "wins": 7,
+      "points": 66.5,
+      "percentage": 133.97,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Sth Murrumbeena",
+      "wins": 5,
+      "points": 58,
+      "percentage": 128.62,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Black Rock",
+      "wins": 6,
+      "points": 57.5,
+      "percentage": 123.17,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Beaumaris CC",
+      "wins": 5,
+      "points": 54,
+      "percentage": 102.61,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Kooyong",
+      "wins": 6,
+      "points": 51,
+      "percentage": 113.57,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Hurlingham Park",
+      "wins": 4,
+      "points": 41,
+      "percentage": 98.4,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Victory Park",
+      "wins": 0,
+      "points": 8,
+      "percentage": 40.15,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP45-AP019",
+  "fixtures": 59,
+  "completed_fixtures": 38,
+  "draw_fixtures": 59,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 146,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP019021 doubles No. 1: '4-6 5-5'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP019024 doubles No. 3: '1-3'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

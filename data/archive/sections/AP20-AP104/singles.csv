@@ -1,0 +1,185 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP104011,03 Oct 09,1,Highmoor Uniting,BLTC,No. 1,Jason Mahmoud,Kevin Cevec,Jason Mahmoud,8-1,8,1,1,0,Completed,true,false,false
+AP104011,03 Oct 09,1,Highmoor Uniting,BLTC,No. 2,Geoff Lowther,Tim Withers,Tim Withers,6-8,6,8,0,1,Completed,true,false,false
+AP104011,03 Oct 09,1,Highmoor Uniting,BLTC,No. 3,Patrick Meehan,[Unnamed player — TROLS AP104011 away code 3],Patrick Meehan,8-0,8,0,1,0,Completed,false,false,false
+AP104011,03 Oct 09,1,Highmoor Uniting,BLTC,No. 4,Scott Lyons,[Unnamed player — TROLS AP104011 away code 4],Scott Lyons,8-0,8,0,1,0,Completed,false,false,false
+AP104012,03 Oct 09,1,Sandringham,Old Scotch,No. 1,Jason Fawkner,Scott McMurtrie,Jason Fawkner,8-0,8,0,1,0,Completed,true,false,false
+AP104012,03 Oct 09,1,Sandringham,Old Scotch,No. 2,David Pedley,John Cade,David Pedley,8-2,8,2,1,0,Completed,true,false,false
+AP104012,03 Oct 09,1,Sandringham,Old Scotch,No. 3,Steve Dowling,James Brownell,Steve Dowling,8-2,8,2,1,0,Completed,true,false,false
+AP104012,03 Oct 09,1,Sandringham,Old Scotch,No. 4,Ken Marshall,Alex Wallace-Smith,Ken Marshall,8-6,8,6,1,0,Completed,true,false,false
+AP104013,03 Oct 09,1,Le Page,Dendy Park,No. 1,Nathan Coombes,Ian Wilkinson,Nathan Coombes,8-6,8,6,1,0,Completed,true,false,false
+AP104013,03 Oct 09,1,Le Page,Dendy Park,No. 2,Tyson Coombes,Peter Fleming,Tyson Coombes,8-3,8,3,1,0,Completed,true,false,false
+AP104013,03 Oct 09,1,Le Page,Dendy Park,No. 3,Trevor Hastings,John Riley,Trevor Hastings,8-4,8,4,1,0,Completed,true,false,false
+AP104013,03 Oct 09,1,Le Page,Dendy Park,No. 4,Brian Govan,Stan Kennett,Brian Govan,8-6,8,6,1,0,Completed,true,false,false
+AP104021,10 Oct 09,2,East Malvern,Highmoor Uniting,No. 1,Nick Maggio,Ben Abbott,Ben Abbott,4-8,4,8,0,1,Completed,true,false,false
+AP104021,10 Oct 09,2,East Malvern,Highmoor Uniting,No. 2,Anthony Hayes,Geoff Lowther,Anthony Hayes,8-6,8,6,1,0,Completed,true,false,false
+AP104021,10 Oct 09,2,East Malvern,Highmoor Uniting,No. 3,Chris Maggio,David Price,Chris Maggio,9-7,9,7,1,0,Completed,true,false,false
+AP104021,10 Oct 09,2,East Malvern,Highmoor Uniting,No. 4,Travis Pope,Scott Lyons,Scott Lyons,6-8,6,8,0,1,Completed,true,false,false
+AP104022,10 Oct 09,2,BLTC,Sandringham,No. 1,Kevin Cevec,Jason Fawkner,Jason Fawkner,3-8,3,8,0,1,Completed,true,false,false
+AP104022,10 Oct 09,2,BLTC,Sandringham,No. 2,Tim Withers,Ivan Device,Ivan Device,6-8,6,8,0,1,Completed,true,false,false
+AP104022,10 Oct 09,2,BLTC,Sandringham,No. 3,Gabriel Gallicci,Nick Tunbridge,Gabriel Gallicci,8-5,8,5,1,0,Completed,true,false,false
+AP104022,10 Oct 09,2,BLTC,Sandringham,No. 4,Luke Terrell,Geoff Tempest,Luke Terrell,8-6,8,6,1,0,Completed,true,false,false
+AP104023,10 Oct 09,2,Old Scotch,Le Page,No. 1,James Bull,Nathan Coombes,James Bull,8-0,8,0,1,0,Completed,true,false,false
+AP104023,10 Oct 09,2,Old Scotch,Le Page,No. 2,James Brownell,Tony Sofo,Tony Sofo,4-8,4,8,0,1,Completed,true,false,false
+AP104023,10 Oct 09,2,Old Scotch,Le Page,No. 3,Alex Wallace-Smith,Trevor Hastings,Trevor Hastings,7-9,7,9,0,1,Completed,true,false,false
+AP104023,10 Oct 09,2,Old Scotch,Le Page,No. 4,Chris Backman,Brian Govan,Brian Govan,0-8,0,8,0,1,Completed,true,false,false
+AP104031,17 Oct 09,3,Highmoor Uniting,Dendy Park,No. 1,Jason Mahmoud,Ian Wilkinson,Ian Wilkinson,6-8,6,8,0,1,Completed,true,false,false
+AP104031,17 Oct 09,3,Highmoor Uniting,Dendy Park,No. 2,Geoff Lowther,Peter Fleming,Peter Fleming,3-8,3,8,0,1,Completed,true,false,false
+AP104031,17 Oct 09,3,Highmoor Uniting,Dendy Park,No. 3,Scott Lyons,Chris Trotter,Chris Trotter,2-8,2,8,0,1,Completed,true,false,false
+AP104031,17 Oct 09,3,Highmoor Uniting,Dendy Park,No. 4,Anthony Wallace,John Riley,John Riley,1-8,1,8,0,1,Completed,true,false,false
+AP104032,17 Oct 09,3,Sandringham,East Malvern,No. 1,Jason Fawkner,Cameron Willis,Jason Fawkner,8-6,8,6,1,0,Completed,true,false,false
+AP104032,17 Oct 09,3,Sandringham,East Malvern,No. 2,Michael Seeley,Travis Pope,Travis Pope,3-8,3,8,0,1,Completed,true,false,false
+AP104032,17 Oct 09,3,Sandringham,East Malvern,No. 3,Geoff Tempest,Chris Maggio,Geoff Tempest,8-1,8,1,1,0,Completed,true,false,false
+AP104032,17 Oct 09,3,Sandringham,East Malvern,No. 4,Ken Marshall,Clem Hayes,Ken Marshall,8-1,8,1,1,0,Completed,true,false,false
+AP104033,17 Oct 09,3,Le Page,BLTC,No. 1,Tyson Coombes,Kevin Cevec,Kevin Cevec,8-9,8,9,0,1,Completed,true,false,false
+AP104033,17 Oct 09,3,Le Page,BLTC,No. 2,Tony Sofo,Tim Withers,Tim Withers,6-8,6,8,0,1,Completed,true,false,false
+AP104033,17 Oct 09,3,Le Page,BLTC,No. 3,Trevor Hastings,Scott Draper,Trevor Hastings,8-5,8,5,1,0,Completed,true,false,false
+AP104033,17 Oct 09,3,Le Page,BLTC,No. 4,Brian Govan,Luke Terrell,Brian Govan,8-0,8,0,1,0,Completed,true,false,false
+AP104041,24 Oct 09,4,Old Scotch,Highmoor Uniting,No. 1,James Bull,Jason Mahmoud,James Bull,8-2,8,2,1,0,Completed,true,false,false
+AP104041,24 Oct 09,4,Old Scotch,Highmoor Uniting,No. 2,Scott McMurtrie,Geoff Lowther,Scott McMurtrie,9-7,9,7,1,0,Completed,true,false,false
+AP104041,24 Oct 09,4,Old Scotch,Highmoor Uniting,No. 3,Alex Wallace-Smith,David Price,Alex Wallace-Smith,8-5,8,5,1,0,Completed,true,false,false
+AP104041,24 Oct 09,4,Old Scotch,Highmoor Uniting,No. 4,Chris Backman,Patrick Meehan,Patrick Meehan,5-8,5,8,0,1,Completed,true,false,false
+AP104042,24 Oct 09,4,Dendy Park,Sandringham,No. 1,Ian Wilkinson,Ivan Device,Ian Wilkinson,8-1,8,1,1,0,Completed,true,false,false
+AP104042,24 Oct 09,4,Dendy Park,Sandringham,No. 2,Peter Fleming,Michael Seeley,Peter Fleming,8-2,8,2,1,0,Completed,true,false,false
+AP104042,24 Oct 09,4,Dendy Park,Sandringham,No. 3,John Riley,Ken Marshall,John Riley,8-2,8,2,1,0,Completed,true,false,false
+AP104042,24 Oct 09,4,Dendy Park,Sandringham,No. 4,Stan Kennett,Paul McKenzie,Stan Kennett,8-2,8,2,1,0,Completed,true,false,false
+AP104043,24 Oct 09,4,East Malvern,Le Page,No. 1,Anthony Hayes,Nathan Coombes,Nathan Coombes,2-8,2,8,0,1,Completed,true,false,false
+AP104043,24 Oct 09,4,East Malvern,Le Page,No. 2,Chris Maggio,Tyson Coombes,Tyson Coombes,6-8,6,8,0,1,Completed,true,false,false
+AP104043,24 Oct 09,4,East Malvern,Le Page,No. 3,Travis Pope,Tony Sofo,Tony Sofo,5-8,5,8,0,1,Completed,true,false,false
+AP104043,24 Oct 09,4,East Malvern,Le Page,No. 4,Clem Hayes,Trevor Hastings,Trevor Hastings,3-8,3,8,0,1,Completed,true,false,false
+AP104052,07 Nov 09,5,East Malvern,Dendy Park,No. 1,Nick Maggio,Bruce Watkins,Bruce Watkins,2-8,2,8,0,1,Completed,true,false,false
+AP104052,07 Nov 09,5,East Malvern,Dendy Park,No. 2,Anthony Hayes,Peter Fleming,Anthony Hayes,9-7,9,7,1,0,Completed,true,false,false
+AP104052,07 Nov 09,5,East Malvern,Dendy Park,No. 3,Chris Maggio,Chris Trotter,Chris Trotter,1-8,1,8,0,1,Completed,true,false,false
+AP104052,07 Nov 09,5,East Malvern,Dendy Park,No. 4,Travis Pope,Bill Craig,Bill Craig,4-8,4,8,0,1,Completed,true,false,false
+AP104053,07 Nov 09,5,Old Scotch,BLTC,No. 1,Scott McMurtrie,Kevin Cevec,Kevin Cevec,4-8,4,8,0,1,Completed,true,false,false
+AP104053,07 Nov 09,5,Old Scotch,BLTC,No. 2,John Cade,Gabriel Gallicci,Gabriel Gallicci,6-8,6,8,0,1,Completed,true,false,false
+AP104053,07 Nov 09,5,Old Scotch,BLTC,No. 3,James Brownell,Luke Terrell,James Brownell,8-5,8,5,1,0,Completed,true,false,false
+AP104053,07 Nov 09,5,Old Scotch,BLTC,No. 4,Chris Backman,Lachlan Holman,Lachlan Holman,4-8,4,8,0,1,Completed,true,false,false
+AP104054,07 Nov 09,5,Highmoor Uniting,Sandringham,No. 1,Ben Abbott,Paul Rimmer,Ben Abbott,8-4,8,4,1,0,Completed,true,false,false
+AP104054,07 Nov 09,5,Highmoor Uniting,Sandringham,No. 2,Geoff Lowther,David Pedley,Geoff Lowther,8-2,8,2,1,0,Completed,true,false,false
+AP104054,07 Nov 09,5,Highmoor Uniting,Sandringham,No. 3,David Price,Michael Seeley,David Price,8-6,8,6,1,0,Completed,true,false,false
+AP104054,07 Nov 09,5,Highmoor Uniting,Sandringham,No. 4,Patrick Meehan,Geoff Tempest,Patrick Meehan,8-0,8,0,1,0,Completed,true,false,false
+AP104061,14 Nov 09,6,Sandringham,Le Page,No. 1,Jason Fawkner,Nathan Coombes,Jason Fawkner,8-4,8,4,1,0,Completed,true,false,false
+AP104061,14 Nov 09,6,Sandringham,Le Page,No. 2,Todd Blamey,Tyson Coombes,Todd Blamey,8-5,8,5,1,0,Completed,true,false,false
+AP104061,14 Nov 09,6,Sandringham,Le Page,No. 3,Paul Rimmer,Tony Sofo,Paul Rimmer,9-8,9,8,1,0,Completed,true,false,false
+AP104061,14 Nov 09,6,Sandringham,Le Page,No. 4,David Pedley,Brian Govan,David Pedley,8-4,8,4,1,0,Completed,true,false,false
+AP104063,14 Nov 09,6,Dendy Park,Old Scotch,No. 1,Ian Wilkinson,James Bull,James Bull,6-8,6,8,0,1,Completed,true,false,false
+AP104063,14 Nov 09,6,Dendy Park,Old Scotch,No. 2,Bruce Watkins,John Cade,Bruce Watkins,8-0,8,0,1,0,Completed,true,false,false
+AP104063,14 Nov 09,6,Dendy Park,Old Scotch,No. 3,John Riley,James Brownell,John Riley,8-6,8,6,1,0,Completed,true,false,false
+AP104063,14 Nov 09,6,Dendy Park,Old Scotch,No. 4,Stan Kennett,Alex Wallace-Smith,Stan Kennett,8-5,8,5,1,0,Completed,true,false,false
+AP104064,14 Nov 09,6,BLTC,East Malvern,No. 1,Kevin Cevec,Nick Maggio,Kevin Cevec,8-5,8,5,1,0,Completed,true,false,false
+AP104064,14 Nov 09,6,BLTC,East Malvern,No. 2,Tim Withers,Chris Maggio,Tim Withers,8-5,8,5,1,0,Completed,true,false,false
+AP104064,14 Nov 09,6,BLTC,East Malvern,No. 3,Harry Lim,Damien Bruckard,Harry Lim,8-1,8,1,1,0,Completed,true,false,false
+AP104064,14 Nov 09,6,BLTC,East Malvern,No. 4,Luke Terrell,Kim Tram,Kim Tram,2-8,2,8,0,1,Completed,true,false,false
+AP104071,21 Nov 09,7,Highmoor Uniting,Le Page,No. 1,Ben Abbott,Nathan Coombes,Ben Abbott,9-7,9,7,1,0,Completed,true,false,false
+AP104071,21 Nov 09,7,Highmoor Uniting,Le Page,No. 2,Jason Mahmoud,Tyson Coombes,Jason Mahmoud,8-6,8,6,1,0,Completed,true,false,false
+AP104071,21 Nov 09,7,Highmoor Uniting,Le Page,No. 3,Patrick Meehan,Trevor Hastings,Patrick Meehan,9-7,9,7,1,0,Completed,true,false,false
+AP104071,21 Nov 09,7,Highmoor Uniting,Le Page,No. 4,Scott Lyons,Brian Govan,Brian Govan,8-9,8,9,0,1,Completed,true,false,false
+AP104073,21 Nov 09,7,East Malvern,Old Scotch,No. 1,Nick Maggio,James Bull,James Bull,1-8,1,8,0,1,Completed,true,false,false
+AP104073,21 Nov 09,7,East Malvern,Old Scotch,No. 2,Anthony Hayes,Scott McMurtrie,Scott McMurtrie,3-8,3,8,0,1,Completed,true,false,false
+AP104073,21 Nov 09,7,East Malvern,Old Scotch,No. 3,Travis Pope,James Brownell,Travis Pope,8-3,8,3,1,0,Completed,true,false,false
+AP104073,21 Nov 09,7,East Malvern,Old Scotch,No. 4,Kim Tram,Alex Wallace-Smith,Kim Tram,9-8,9,8,1,0,Completed,true,false,false
+AP104074,21 Nov 09,7,Dendy Park,BLTC,No. 1,Ian Wilkinson,Kevin Cevec,Ian Wilkinson,8-4,8,4,1,0,Completed,true,false,false
+AP104074,21 Nov 09,7,Dendy Park,BLTC,No. 2,Peter Fleming,Tim Withers,Peter Fleming,8-3,8,3,1,0,Completed,true,false,false
+AP104074,21 Nov 09,7,Dendy Park,BLTC,No. 3,Chris Trotter,Lachlan Holman,Lachlan Holman,7-9,7,9,0,1,Completed,true,false,false
+AP104074,21 Nov 09,7,Dendy Park,BLTC,No. 4,John Riley,Luke Terrell,John Riley,8-3,8,3,1,0,Completed,true,false,false
+AP104081,28 Nov 09,8,BLTC,Highmoor Uniting,No. 1,Kevin Cevec,Jason Mahmoud,Kevin Cevec,9-8,9,8,1,0,Completed,true,false,false
+AP104081,28 Nov 09,8,BLTC,Highmoor Uniting,No. 2,Tim Withers,David Price,Tim Withers,8-3,8,3,1,0,Completed,true,false,false
+AP104081,28 Nov 09,8,BLTC,Highmoor Uniting,No. 3,Gabriel Gallicci,Patrick Meehan,Gabriel Gallicci,8-2,8,2,1,0,Completed,true,false,false
+AP104081,28 Nov 09,8,BLTC,Highmoor Uniting,No. 4,Luke Terrell,Scott Lyons,Luke Terrell,8-6,8,6,1,0,Completed,true,false,false
+AP104082,28 Nov 09,8,Old Scotch,Sandringham,No. 1,Scott McMurtrie,Jason Fawkner,Jason Fawkner,0-8,0,8,0,1,Completed,true,false,false
+AP104082,28 Nov 09,8,Old Scotch,Sandringham,No. 2,John Cade,David Pedley,David Pedley,5-8,5,8,0,1,Completed,true,false,false
+AP104082,28 Nov 09,8,Old Scotch,Sandringham,No. 3,James Brownell,Ivan Device,Ivan Device,6-8,6,8,0,1,Completed,true,false,false
+AP104082,28 Nov 09,8,Old Scotch,Sandringham,No. 4,Alex Wallace-Smith,Michael Seeley,Michael Seeley,8-9,8,9,0,1,Completed,true,false,false
+AP104083,28 Nov 09,8,Dendy Park,Le Page,No. 1,Ian Wilkinson,Tyson Coombes,Ian Wilkinson,8-5,8,5,1,0,Completed,true,false,false
+AP104083,28 Nov 09,8,Dendy Park,Le Page,No. 2,Bruce Watkins,Tony Sofo,Tony Sofo,7-9,7,9,0,1,Completed,true,false,false
+AP104083,28 Nov 09,8,Dendy Park,Le Page,No. 3,Chris Trotter,Trevor Hastings,Chris Trotter,8-1,8,1,1,0,Completed,true,false,false
+AP104083,28 Nov 09,8,Dendy Park,Le Page,No. 4,Stan Kennett,Brian Govan,Brian Govan,8-9,8,9,0,1,Completed,true,false,false
+AP104091,05 Dec 09,9,Highmoor Uniting,East Malvern,No. 1,Ben Abbott,Cameron Willis,Ben Abbott,8-0,8,0,1,0,Completed,true,false,false
+AP104091,05 Dec 09,9,Highmoor Uniting,East Malvern,No. 2,Geoff Lowther,Anthony Hayes,Geoff Lowther,9-8,9,8,1,0,Completed,true,false,false
+AP104091,05 Dec 09,9,Highmoor Uniting,East Malvern,No. 3,Patrick Meehan,Travis Pope,Patrick Meehan,8-1,8,1,1,0,Completed,true,false,false
+AP104091,05 Dec 09,9,Highmoor Uniting,East Malvern,No. 4,Scott Lyons,Clem Hayes,Scott Lyons,8-2,8,2,1,0,Completed,true,false,false
+AP104092,05 Dec 09,9,Sandringham,BLTC,No. 1,Jason Fawkner,Kevin Cevec,Jason Fawkner,8-6,8,6,1,0,Completed,true,false,false
+AP104092,05 Dec 09,9,Sandringham,BLTC,No. 2,Paul Rimmer,Tim Withers,Tim Withers,6-8,6,8,0,1,Completed,true,false,false
+AP104092,05 Dec 09,9,Sandringham,BLTC,No. 3,Ivan Device,Gabriel Gallicci,Ivan Device,8-6,8,6,1,0,Completed,true,false,false
+AP104092,05 Dec 09,9,Sandringham,BLTC,No. 4,David Charles,Luke Terrell,David Charles,8-6,8,6,1,0,Completed,true,false,false
+AP104093,05 Dec 09,9,Le Page,Old Scotch,No. 1,Nathan Coombes,James Bull,James Bull,4-8,4,8,0,1,Completed,true,false,false
+AP104093,05 Dec 09,9,Le Page,Old Scotch,No. 2,Tony Sofo,John Cade,Tony Sofo,8-3,8,3,1,0,Completed,true,false,false
+AP104093,05 Dec 09,9,Le Page,Old Scotch,No. 3,Trevor Hastings,James Brownell,Trevor Hastings,8-2,8,2,1,0,Completed,true,false,false
+AP104093,05 Dec 09,9,Le Page,Old Scotch,No. 4,Brian Govan,Alex Wallace-Smith,Alex Wallace-Smith,5-8,5,8,0,1,Completed,true,false,false
+AP104101,12 Dec 09,10,Dendy Park,Highmoor Uniting,No. 1,Ian Wilkinson,Ben Abbott,Ben Abbott,6-8,6,8,0,1,Completed,true,false,false
+AP104101,12 Dec 09,10,Dendy Park,Highmoor Uniting,No. 2,Bruce Watkins,Geoff Lowther,Bruce Watkins,8-4,8,4,1,0,Completed,true,false,false
+AP104101,12 Dec 09,10,Dendy Park,Highmoor Uniting,No. 3,Chris Trotter,David Price,Chris Trotter,8-4,8,4,1,0,Completed,true,false,false
+AP104101,12 Dec 09,10,Dendy Park,Highmoor Uniting,No. 4,John Riley,Scott Lyons,Scott Lyons,6-8,6,8,0,1,Completed,true,false,false
+AP104102,12 Dec 09,10,East Malvern,Sandringham,No. 1,Nick Maggio,Jason Fawkner,Jason Fawkner,3-8,3,8,0,1,Completed,true,false,false
+AP104102,12 Dec 09,10,East Malvern,Sandringham,No. 2,Anthony Hayes,David Pedley,David Pedley,6-8,6,8,0,1,Completed,true,false,false
+AP104102,12 Dec 09,10,East Malvern,Sandringham,No. 3,Chris Maggio,Ivan Device,Ivan Device,4-8,4,8,0,1,Completed,true,false,false
+AP104102,12 Dec 09,10,East Malvern,Sandringham,No. 4,Clem Hayes,Michael Seeley,Michael Seeley,4-8,4,8,0,1,Completed,true,false,false
+AP104103,12 Dec 09,10,BLTC,Le Page,No. 1,Kevin Cevec,Nathan Coombes,Nathan Coombes,1-8,1,8,0,1,Completed,true,false,false
+AP104103,12 Dec 09,10,BLTC,Le Page,No. 2,Tim Withers,Tyson Coombes,Tyson Coombes,5-8,5,8,0,1,Completed,true,false,false
+AP104103,12 Dec 09,10,BLTC,Le Page,No. 3,Gabriel Gallicci,Tony Sofo,Tony Sofo,6-8,6,8,0,1,Completed,true,false,false
+AP104103,12 Dec 09,10,BLTC,Le Page,No. 4,Luke Terrell,Trevor Hastings,Trevor Hastings,4-8,4,8,0,1,Completed,true,false,false
+AP104111,30 Jan 10,11,Highmoor Uniting,Old Scotch,No. 1,Ben Abbott,James Brownell,Ben Abbott,8-6,8,6,1,0,Completed,true,false,false
+AP104111,30 Jan 10,11,Highmoor Uniting,Old Scotch,No. 2,Jason Mahmoud,Alex Wallace-Smith,Alex Wallace-Smith,8-9,8,9,0,1,Completed,true,false,false
+AP104111,30 Jan 10,11,Highmoor Uniting,Old Scotch,No. 3,David Price,Chris Backman,David Price,8-4,8,4,1,0,Completed,true,false,false
+AP104111,30 Jan 10,11,Highmoor Uniting,Old Scotch,No. 4,Scott Lyons,Will Dunlop,Scott Lyons,8-6,8,6,1,0,Completed,true,false,false
+AP104112,30 Jan 10,11,Sandringham,Dendy Park,No. 1,Paul Rimmer,Ian Wilkinson,Ian Wilkinson,2-8,2,8,0,1,Completed,true,false,false
+AP104112,30 Jan 10,11,Sandringham,Dendy Park,No. 2,David Pedley,Bruce Watkins,David Pedley,8-4,8,4,1,0,Completed,true,false,false
+AP104112,30 Jan 10,11,Sandringham,Dendy Park,No. 3,Ivan Device,Peter Fleming,Ivan Device,8-5,8,5,1,0,Completed,true,false,false
+AP104112,30 Jan 10,11,Sandringham,Dendy Park,No. 4,Michael Seeley,Stan Kennett,Michael Seeley,8-4,8,4,1,0,Completed,true,false,false
+AP104113,30 Jan 10,11,Le Page,East Malvern,No. 1,Nathan Coombes,Anthony Hayes,Nathan Coombes,8-3,8,3,1,0,Completed,true,false,false
+AP104113,30 Jan 10,11,Le Page,East Malvern,No. 2,Tyson Coombes,Chris Maggio,Tyson Coombes,8-2,8,2,1,0,Completed,true,false,false
+AP104113,30 Jan 10,11,Le Page,East Malvern,No. 3,Trevor Hastings,Clem Hayes,Trevor Hastings,9-7,9,7,1,0,Completed,true,false,false
+AP104113,30 Jan 10,11,Le Page,East Malvern,No. 4,Brian Govan,Travis Pope,Brian Govan,8-0,8,0,1,0,Completed,true,false,false
+AP104122,06 Feb 10,12,Dendy Park,East Malvern,No. 1,Ian Wilkinson,Nick Maggio,Ian Wilkinson,8-1,8,1,1,0,Completed,true,false,false
+AP104122,06 Feb 10,12,Dendy Park,East Malvern,No. 2,Bruce Watkins,Anthony Hayes,Bruce Watkins,8-3,8,3,1,0,Completed,true,false,false
+AP104122,06 Feb 10,12,Dendy Park,East Malvern,No. 3,Peter Fleming,Chris Maggio,Peter Fleming,8-3,8,3,1,0,Completed,true,false,false
+AP104122,06 Feb 10,12,Dendy Park,East Malvern,No. 4,John Riley,Travis Pope,John Riley,8-3,8,3,1,0,Completed,true,false,false
+AP104123,06 Feb 10,12,BLTC,Old Scotch,No. 1,Kevin Cevec,James Brownell,Kevin Cevec,8-2,8,2,1,0,Completed,true,false,false
+AP104123,06 Feb 10,12,BLTC,Old Scotch,No. 2,Tim Withers,Alex Wallace-Smith,Tim Withers,8-5,8,5,1,0,Completed,true,false,false
+AP104123,06 Feb 10,12,BLTC,Old Scotch,No. 3,Gabriel Gallicci,Chris Backman,Gabriel Gallicci,8-6,8,6,1,0,Completed,true,false,false
+AP104123,06 Feb 10,12,BLTC,Old Scotch,No. 4,Luke Terrell,Will Dunlop,Luke Terrell,8-5,8,5,1,0,Completed,true,false,false
+AP104124,06 Feb 10,12,Sandringham,Highmoor Uniting,No. 1,Jason Fawkner,Jason Mahmoud,Jason Fawkner,8-5,8,5,1,0,Completed,true,false,false
+AP104124,06 Feb 10,12,Sandringham,Highmoor Uniting,No. 2,Paul Rimmer,Geoff Lowther,Paul Rimmer,8-1,8,1,1,0,Completed,true,false,false
+AP104124,06 Feb 10,12,Sandringham,Highmoor Uniting,No. 3,David Pedley,David Price,David Pedley,8-1,8,1,1,0,Completed,true,false,false
+AP104124,06 Feb 10,12,Sandringham,Highmoor Uniting,No. 4,Michael Seeley,Patrick Meehan,Michael Seeley,8-5,8,5,1,0,Completed,true,false,false
+AP104131,13 Feb 10,13,Le Page,Sandringham,No. 1,Nathan Coombes,Jason Fawkner,Nathan Coombes,9-7,9,7,1,0,Completed,true,false,false
+AP104131,13 Feb 10,13,Le Page,Sandringham,No. 2,Tyson Coombes,Paul Rimmer,Tyson Coombes,8-2,8,2,1,0,Completed,true,false,false
+AP104131,13 Feb 10,13,Le Page,Sandringham,No. 3,Tony Sofo,Ivan Device,Tony Sofo,8-3,8,3,1,0,Completed,true,false,false
+AP104131,13 Feb 10,13,Le Page,Sandringham,No. 4,Brian Govan,Michael Seeley,Michael Seeley,4-8,4,8,0,1,Completed,true,false,false
+AP104133,13 Feb 10,13,Old Scotch,Dendy Park,No. 1,James Brownell,Ian Wilkinson,Ian Wilkinson,2-8,2,8,0,1,Completed,true,false,false
+AP104133,13 Feb 10,13,Old Scotch,Dendy Park,No. 2,Alex Wallace-Smith,Bruce Watkins,Bruce Watkins,7-9,7,9,0,1,Completed,true,false,false
+AP104133,13 Feb 10,13,Old Scotch,Dendy Park,No. 3,Chris Backman,Peter Fleming,Chris Backman,9-7,9,7,1,0,Completed,true,false,false
+AP104133,13 Feb 10,13,Old Scotch,Dendy Park,No. 4,Will Dunlop,John Riley,John Riley,2-8,2,8,0,1,Completed,true,false,false
+AP104134,13 Feb 10,13,East Malvern,BLTC,No. 1,Anthony Hayes,Kevin Cevec,Kevin Cevec,5-8,5,8,0,1,Completed,true,false,false
+AP104134,13 Feb 10,13,East Malvern,BLTC,No. 2,Chris Maggio,Tim Withers,Tim Withers,4-8,4,8,0,1,Completed,true,false,false
+AP104134,13 Feb 10,13,East Malvern,BLTC,No. 3,Travis Pope,Gabriel Gallicci,Travis Pope,8-5,8,5,1,0,Completed,true,false,false
+AP104134,13 Feb 10,13,East Malvern,BLTC,No. 4,Clem Hayes,Luke Terrell,Luke Terrell,0-8,0,8,0,1,Completed,true,false,false
+AP104141,20 Feb 10,14,Le Page,Highmoor Uniting,No. 1,Nathan Coombes,Ben Abbott,Ben Abbott,5-8,5,8,0,1,Completed,true,false,false
+AP104141,20 Feb 10,14,Le Page,Highmoor Uniting,No. 2,Tony Sofo,Jason Mahmoud,Jason Mahmoud,5-8,5,8,0,1,Completed,true,false,false
+AP104141,20 Feb 10,14,Le Page,Highmoor Uniting,No. 3,Trevor Hastings,Geoff Lowther,Geoff Lowther,4-8,4,8,0,1,Completed,true,false,false
+AP104141,20 Feb 10,14,Le Page,Highmoor Uniting,No. 4,Brian Govan,David Price,Brian Govan,8-0,8,0,1,0,Completed,true,false,false
+AP104143,20 Feb 10,14,Old Scotch,East Malvern,No. 1,James Brownell,Nick Maggio,James Brownell,9-7,9,7,1,0,Completed,true,false,false
+AP104143,20 Feb 10,14,Old Scotch,East Malvern,No. 2,Alex Wallace-Smith,Chris Maggio,Alex Wallace-Smith,8-2,8,2,1,0,Completed,true,false,false
+AP104143,20 Feb 10,14,Old Scotch,East Malvern,No. 3,Will Dunlop,Travis Pope,Travis Pope,2-8,2,8,0,1,Completed,true,false,false
+AP104143,20 Feb 10,14,Old Scotch,East Malvern,No. 4,Ricky Silberman,Clem Hayes,Ricky Silberman,8-2,8,2,1,0,Completed,true,false,false
+AP104144,20 Feb 10,14,BLTC,Dendy Park,No. 1,Kevin Cevec,Ian Wilkinson,Kevin Cevec,9-7,9,7,1,0,Completed,true,false,false
+AP104144,20 Feb 10,14,BLTC,Dendy Park,No. 2,Tim Withers,Peter Fleming,Tim Withers,8-2,8,2,1,0,Completed,true,false,false
+AP104144,20 Feb 10,14,BLTC,Dendy Park,No. 3,Gabriel Gallicci,John Riley,John Riley,6-8,6,8,0,1,Completed,true,false,false
+AP104144,20 Feb 10,14,BLTC,Dendy Park,No. 4,Luke Terrell,Stan Kennett,Stan Kennett,2-8,2,8,0,1,Completed,true,false,false
+AP104301,,16,Dendy Park,Sandringham,No. 1,Ian Wilkinson,Jason Fawkner,Ian Wilkinson,9-8,9,8,1,0,Completed,true,false,false
+AP104301,,16,Dendy Park,Sandringham,No. 2,Bruce Watkins,David Pedley,Bruce Watkins,8-2,8,2,1,0,Completed,true,false,false
+AP104301,,16,Dendy Park,Sandringham,No. 3,Peter Fleming,Ivan Device,Peter Fleming,8-4,8,4,1,0,Completed,true,false,false
+AP104301,,16,Dendy Park,Sandringham,No. 4,John Riley,Michael Seeley,John Riley,8-5,8,5,1,0,Completed,true,false,false
+AP104302,,16,Le Page,Highmoor Uniting,No. 1,Nathan Coombes,Ben Abbott,Ben Abbott,5-8,5,8,0,1,Completed,true,false,false
+AP104302,,16,Le Page,Highmoor Uniting,No. 2,Tyson Coombes,Jason Mahmoud,Jason Mahmoud,0-8,0,8,0,1,Completed,true,false,false
+AP104302,,16,Le Page,Highmoor Uniting,No. 3,Tony Sofo,Geoff Lowther,Tony Sofo,8-3,8,3,1,0,Completed,true,false,false
+AP104302,,16,Le Page,Highmoor Uniting,No. 4,Brian Govan,Patrick Meehan,Brian Govan,8-2,8,2,1,0,Completed,true,false,true
+AP104311,,16,Sandringham,Highmoor Uniting,No. 1,Jason Fawkner,Ben Abbott,Ben Abbott,8-9,8,9,0,1,Completed,true,false,false
+AP104311,,16,Sandringham,Highmoor Uniting,No. 2,David Pedley,Jason Mahmoud,Jason Mahmoud,3-8,3,8,0,1,Completed,true,false,false
+AP104311,,16,Sandringham,Highmoor Uniting,No. 3,Ivan Device,Geoff Lowther,Ivan Device,8-2,8,2,1,0,Completed,true,false,false
+AP104311,,16,Sandringham,Highmoor Uniting,No. 4,Michael Seeley,Patrick Meehan,Patrick Meehan,6-8,6,8,0,1,Completed,true,false,true
+AP104321,,17,Dendy Park,Highmoor Uniting,No. 1,Ian Wilkinson,Ben Abbott,Ben Abbott,4-8,4,8,0,1,Completed,true,false,false
+AP104321,,17,Dendy Park,Highmoor Uniting,No. 2,Bruce Watkins,Jason Mahmoud,Jason Mahmoud,7-9,7,9,0,1,Completed,true,false,false
+AP104321,,17,Dendy Park,Highmoor Uniting,No. 3,Peter Fleming,Geoff Lowther,Peter Fleming,8-2,8,2,1,0,Completed,true,false,false
+AP104321,,17,Dendy Park,Highmoor Uniting,No. 4,John Riley,Patrick Meehan,Patrick Meehan,3-8,3,8,0,1,Completed,true,false,true

@@ -1,0 +1,60 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP009012,10 Oct 15,1,regular,Round 1,Middle Brighton,Glen Huntly,1,7,1,3,2,7,38,52,Completed,
+AP009013,10 Oct 15,1,regular,Round 1,Parkdale 1,Parkdale 2,8,0,4,0,8,0,50,25,Completed,
+AP009014,10 Oct 15,1,regular,Round 1,Kings Park,Hurlingham Park,2,6,2,2,5,5,41,44,Completed,
+pending-ap009-r1-bye-hampton,10 Oct 15,1,regular,Round 1,Bye,Hampton,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009022,17 Oct 15,2,regular,Round 2,Hampton,Middle Brighton,6,2,2,2,5,4,47,37,Completed,
+AP009023,17 Oct 15,2,regular,Round 2,Glen Huntly,Parkdale 1,0,8,0,4,1,8,20,51,Completed,
+AP009024,17 Oct 15,2,regular,Round 2,Parkdale 2,Kings Park,7,1,3,1,6,3,49,40,Completed,
+pending-ap009-r2-hurlingham-park-bye,17 Oct 15,2,regular,Round 2,Hurlingham Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009032,24 Oct 15,3,regular,Round 3,Middle Brighton,Hurlingham Park,8,0,4,0,8,0,48,16,Completed,
+AP009033,24 Oct 15,3,regular,Round 3,Parkdale 1,Hampton,6,2,2,2,5,4,45,37,Completed,
+AP009034,24 Oct 15,3,regular,Round 3,Kings Park,Glen Huntly,1,7,1,3,2,7,29,52,Completed,
+pending-ap009-r3-bye-parkdale-2,24 Oct 15,3,regular,Round 3,Bye,Parkdale 2,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009042,07 Nov 15,4,regular,Round 4,Parkdale 2,Middle Brighton,0,8,0,4,3,8,45,61,Completed,
+AP009043,07 Nov 15,4,regular,Round 4,Hurlingham Park,Parkdale 1,7,1,3,1,6,2,43,27,Completed,
+AP009044,07 Nov 15,4,regular,Round 4,Hampton,Kings Park,7,1,3,1,6,2,42,22,Completed,
+pending-ap009-r4-glen-huntly-bye,07 Nov 15,4,regular,Round 4,Glen Huntly,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009051,14 Nov 15,5,regular,Round 5,Parkdale 1,Kings Park,8,0,4,0,8,0,49,19,Completed,
+AP009052,14 Nov 15,5,regular,Round 5,Hurlingham Park,Parkdale 2,2,6,2,2,4,6,47,56,Completed,
+AP009053,14 Nov 15,5,regular,Round 5,Glen Huntly,Hampton,1,7,1,3,4,6,45,46,Completed,
+pending-ap009-r5-bye-middle-brighton,14 Nov 15,5,regular,Round 5,Bye,Middle Brighton,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009061,21 Nov 15,6,regular,Round 6,Middle Brighton,Parkdale 1,0,8,0,4,1,8,33,52,Completed,
+AP009063,21 Nov 15,6,regular,Round 6,Parkdale 2,Glen Huntly,7,1,3,1,7,3,56,38,Completed,
+AP009064,21 Nov 15,6,regular,Round 6,Hampton,Hurlingham Park,2,6,2,2,4,4,27,29,Completed,
+pending-ap009-r6-kings-park-bye,21 Nov 15,6,regular,Round 6,Kings Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009072,28 Nov 15,7,regular,Round 7,Middle Brighton,Kings Park,7,1,3,1,6,3,51,39,Completed,
+AP009073,28 Nov 15,7,regular,Round 7,Hurlingham Park,Glen Huntly,8,0,4,0,8,2,59,36,Completed,
+AP009074,28 Nov 15,7,regular,Round 7,Parkdale 2,Hampton,6,2,2,2,5,4,41,34,Completed,
+pending-ap009-r7-bye-parkdale-1,28 Nov 15,7,regular,Round 7,Bye,Parkdale 1,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009082,05 Dec 15,8,regular,Round 8,Glen Huntly,Middle Brighton,7,1,3,1,6,2,41,27,Completed,
+AP009083,05 Dec 15,8,regular,Round 8,Parkdale 2,Parkdale 1,0,8,0,4,1,8,34,54,Completed,
+AP009084,05 Dec 15,8,regular,Round 8,Hurlingham Park,Kings Park,1,7,1,3,2,6,31,45,Completed,
+pending-ap009-r8-hampton-bye,05 Dec 15,8,regular,Round 8,Hampton,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009092,12 Dec 15,9,regular,Round 9,Middle Brighton,Hampton,1,7,1,3,2,6,32,43,Completed,
+AP009093,12 Dec 15,9,regular,Round 9,Parkdale 1,Glen Huntly,7,1,3,1,7,4,55,43,Completed,
+AP009094,12 Dec 15,9,regular,Round 9,Kings Park,Parkdale 2,1,7,1,3,3,6,40,50,Completed,
+pending-ap009-r9-bye-hurlingham-park,12 Dec 15,9,regular,Round 9,Bye,Hurlingham Park,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009102,30 Jan 16,10,regular,Round 10,Hurlingham Park,Middle Brighton,7,1,3,1,6,2,45,28,Completed,
+AP009103,30 Jan 16,10,regular,Round 10,Hampton,Parkdale 1,6,2,2,2,5,5,48,45,Completed,
+AP009104,30 Jan 16,10,regular,Round 10,Glen Huntly,Kings Park,8,0,4,0,8,1,53,22,Completed,
+pending-ap009-r10-parkdale-2-bye,30 Jan 16,10,regular,Round 10,Parkdale 2,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009112,06 Feb 16,11,regular,Round 11,Middle Brighton,Parkdale 2,1,7,1,3,2,6,29,46,Completed,
+AP009113,06 Feb 16,11,regular,Round 11,Parkdale 1,Hurlingham Park,6,2,2,2,5,5,45,41,Completed,
+AP009114,06 Feb 16,11,regular,Round 11,Kings Park,Hampton,6,2,2,2,4,4,36,31,Completed,
+pending-ap009-r11-bye-glen-huntly,06 Feb 16,11,regular,Round 11,Bye,Glen Huntly,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009121,13 Feb 16,12,regular,Round 12,Kings Park,Parkdale 1,0,8,0,4,3,8,49,63,Completed,
+AP009122,13 Feb 16,12,regular,Round 12,Parkdale 2,Hurlingham Park,6,2,2,2,5,4,44,41,Completed,
+AP009123,13 Feb 16,12,regular,Round 12,Hampton,Glen Huntly,6,2,2,2,4,4,39,31,Completed,
+pending-ap009-r12-middle-brighton-bye,13 Feb 16,12,regular,Round 12,Middle Brighton,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009131,20 Feb 16,13,regular,Round 13,Parkdale 1,Middle Brighton,7,1,3,1,7,3,52,33,Completed,
+AP009133,20 Feb 16,13,regular,Round 13,Glen Huntly,Parkdale 2,1,7,1,3,3,6,45,50,Completed,
+AP009134,20 Feb 16,13,regular,Round 13,Hurlingham Park,Hampton,8,0,4,0,8,1,54,30,Completed,
+pending-ap009-r13-bye-kings-park,20 Feb 16,13,regular,Round 13,Bye,Kings Park,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009142,27 Feb 16,14,regular,Round 14,Kings Park,Middle Brighton,7,1,3,1,7,2,51,35,Completed,
+AP009143,27 Feb 16,14,regular,Round 14,Glen Huntly,Hurlingham Park,7,1,3,1,6,2,42,22,Completed,
+AP009144,27 Feb 16,14,regular,Round 14,Hampton,Parkdale 2,0,8,0,4,1,8,35,53,Completed,
+pending-ap009-r14-parkdale-1-bye,27 Feb 16,14,regular,Round 14,Parkdale 1,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009302,,16,semi_final,Semi-final,Parkdale 2,Hurlingham Park,0,8,0,4,2,8,42,55,Completed,
+pending-ap009-r16-parkdale-1-hampton,,16,semi_final,Semi-final,Parkdale 1,Hampton,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP009321,,17,grand_final,Grand final · TROLS entry 2,Parkdale 1,Hurlingham Park,6,2,2,2,5,4,44,44,Completed,

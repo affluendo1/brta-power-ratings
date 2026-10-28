@@ -1,0 +1,167 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP010011,05 Oct 13,1,East Malvern,Mt Eliza,No. 1,Therese Oyston,Jordana Varricchio,Therese Oyston,8-1,8,1,1,0,Completed,true,false,false
+AP010011,05 Oct 13,1,East Malvern,Mt Eliza,No. 2,Stephanie Prvcic,Alice Rogers,Stephanie Prvcic,8-2,8,2,1,0,Completed,true,false,false
+AP010011,05 Oct 13,1,East Malvern,Mt Eliza,No. 3,Annette Reed,Alyssia Varricchio,Annette Reed,8-6,8,6,1,0,Completed,true,false,false
+AP010011,05 Oct 13,1,East Malvern,Mt Eliza,No. 4,Maria Stegnjaic,Sunny Green,Maria Stegnjaic,8-6,8,6,1,0,Completed,true,false,false
+AP010013,05 Oct 13,1,Dendy Park,Kings Park,No. 1,Monika Herman,Alexandra Cowden,Alexandra Cowden,7-9,7,9,0,1,Completed,true,false,false
+AP010013,05 Oct 13,1,Dendy Park,Kings Park,No. 2,Jane Edgar,Bailey Sandler,Jane Edgar,8-2,8,2,1,0,Completed,true,false,false
+AP010013,05 Oct 13,1,Dendy Park,Kings Park,No. 3,Wendy Thompson,Charlotte Hamilton,Wendy Thompson,8-2,8,2,1,0,Completed,true,false,false
+AP010013,05 Oct 13,1,Dendy Park,Kings Park,No. 4,Brenda Vermaak,Olivia Steinfort,Brenda Vermaak,9-7,9,7,1,0,Completed,true,false,false
+AP010021,12 Oct 13,2,Kings Park,East Malvern,No. 1,Rhian Llewellyn,Therese Oyston,Therese Oyston,2-8,2,8,0,1,Completed,true,false,false
+AP010021,12 Oct 13,2,Kings Park,East Malvern,No. 2,Zoe Llewellyn,Alison Simmons,Alison Simmons,7-9,7,9,0,1,Completed,true,false,false
+AP010021,12 Oct 13,2,Kings Park,East Malvern,No. 3,Alexandra Cowden,Sarah McNena,Alexandra Cowden,8-1,8,1,1,0,Completed,true,false,false
+AP010021,12 Oct 13,2,Kings Park,East Malvern,No. 4,Sophie Robertson,Penny Townshend,Sophie Robertson,8-5,8,5,1,0,Completed,true,false,false
+AP010022,12 Oct 13,2,Royal South Yarra,Dendy Park,No. 1,Skye Douglass,Rosemary Widmann,Rosemary Widmann,2-8,2,8,0,1,Completed,true,false,false
+AP010022,12 Oct 13,2,Royal South Yarra,Dendy Park,No. 2,Charlotte Fenner,Sommer Jenkins,Sommer Jenkins,2-8,2,8,0,1,Completed,true,false,false
+AP010022,12 Oct 13,2,Royal South Yarra,Dendy Park,No. 3,Libby Hicks,Jane Edgar,Jane Edgar,3-8,3,8,0,1,Completed,true,false,false
+AP010022,12 Oct 13,2,Royal South Yarra,Dendy Park,No. 4,Lisa Miller,Wendy Thompson,Wendy Thompson,2-8,2,8,0,1,Completed,true,false,false
+AP010023,12 Oct 13,2,Mt Eliza,BLTC,No. 1,Emily Martin,Mary Sebire,Emily Martin,8-1,8,1,1,0,Completed,true,false,false
+AP010023,12 Oct 13,2,Mt Eliza,BLTC,No. 2,Segolene Ollivier,Rosemary Everett,Segolene Ollivier,8-4,8,4,1,0,Completed,true,false,false
+AP010023,12 Oct 13,2,Mt Eliza,BLTC,No. 3,Alice Rogers,Clare Brophy,Alice Rogers,8-6,8,6,1,0,Completed,true,false,false
+AP010023,12 Oct 13,2,Mt Eliza,BLTC,No. 4,Madeline Pappas,Emma Dudley,Emma Dudley,3-8,3,8,0,1,Completed,true,false,false
+AP010031,19 Oct 13,3,East Malvern,BLTC,No. 1,Therese Oyston,Yasmin Ernst,Therese Oyston,8-3,8,3,1,0,Completed,true,false,false
+AP010031,19 Oct 13,3,East Malvern,BLTC,No. 2,Stephanie Prvcic,Rosemary Everett,Stephanie Prvcic,9-7,9,7,1,0,Completed,true,false,false
+AP010031,19 Oct 13,3,East Malvern,BLTC,No. 3,Annette Reed,Emma Dudley,Annette Reed,9-7,9,7,1,0,Completed,true,false,false
+AP010031,19 Oct 13,3,East Malvern,BLTC,No. 4,Sarah McNena,Linda Best,Sarah McNena,8-4,8,4,1,0,Completed,true,false,false
+AP010032,19 Oct 13,3,Dendy Park,Mt Eliza,No. 1,Sophie Sorin,Segolene Ollivier,Sophie Sorin,8-4,8,4,1,0,Completed,true,false,false
+AP010032,19 Oct 13,3,Dendy Park,Mt Eliza,No. 2,Sommer Jenkins,Alice Rogers,Sommer Jenkins,8-4,8,4,1,0,Completed,true,false,false
+AP010032,19 Oct 13,3,Dendy Park,Mt Eliza,No. 3,Wendy Thompson,Alyssia Varricchio,Alyssia Varricchio,3-8,3,8,0,1,Completed,true,false,false
+AP010032,19 Oct 13,3,Dendy Park,Mt Eliza,No. 4,Brenda Vermaak,Madeline Pappas,Brenda Vermaak,8-1,8,1,1,0,Completed,true,false,false
+AP010033,19 Oct 13,3,Kings Park,Royal South Yarra,No. 1,Rhian Llewellyn,Claire Benjamin,Rhian Llewellyn,8-5,8,5,1,0,Completed,true,false,false
+AP010033,19 Oct 13,3,Kings Park,Royal South Yarra,No. 2,Zoe Llewellyn,Skye Douglass,Zoe Llewellyn,8-6,8,6,1,0,Completed,true,false,false
+AP010033,19 Oct 13,3,Kings Park,Royal South Yarra,No. 3,Samantha Ritchie,Lisa Miller,Samantha Ritchie,8-5,8,5,1,0,Completed,true,false,false
+AP010033,19 Oct 13,3,Kings Park,Royal South Yarra,No. 4,Alexandra Cowden,Huyen Nguyen,Alexandra Cowden,8-2,8,2,1,0,Completed,true,false,false
+AP010041,26 Oct 13,4,Royal South Yarra,East Malvern,No. 1,Claire Benjamin,Alison Simmons,Alison Simmons,1-8,1,8,0,1,Completed,true,false,false
+AP010041,26 Oct 13,4,Royal South Yarra,East Malvern,No. 2,Libby Hicks,Annette Reed,Annette Reed,1-8,1,8,0,1,Completed,true,false,false
+AP010041,26 Oct 13,4,Royal South Yarra,East Malvern,No. 3,Lisa Miller,Maria Stegnjaic,Lisa Miller,8-0,8,0,1,0,Completed,true,false,false
+AP010041,26 Oct 13,4,Royal South Yarra,East Malvern,No. 4,Huyen Nguyen,Penny Townshend,Huyen Nguyen,9-8,9,8,1,0,Completed,true,false,false
+AP010042,26 Oct 13,4,Mt Eliza,Kings Park,No. 1,Emily Martin,Rhian Llewellyn,Emily Martin,8-1,8,1,1,0,Completed,true,false,false
+AP010042,26 Oct 13,4,Mt Eliza,Kings Park,No. 2,Segolene Ollivier,Zoe Llewellyn,Segolene Ollivier,8-6,8,6,1,0,Completed,true,false,false
+AP010042,26 Oct 13,4,Mt Eliza,Kings Park,No. 3,Alice Rogers,Samantha Ritchie,Samantha Ritchie,3-8,3,8,0,1,Completed,true,false,false
+AP010042,26 Oct 13,4,Mt Eliza,Kings Park,No. 4,Sunny Green,Sophie Robertson,Sunny Green,8-2,8,2,1,0,Completed,true,false,false
+AP010043,26 Oct 13,4,BLTC,Dendy Park,No. 1,Mary Sebire,Jane Edgar,Mary Sebire,8-0,8,0,1,0,Completed,true,false,false
+AP010043,26 Oct 13,4,BLTC,Dendy Park,No. 2,Rosemary Everett,Wendy Thompson,Rosemary Everett,8-5,8,5,1,0,Completed,true,false,false
+AP010043,26 Oct 13,4,BLTC,Dendy Park,No. 3,Andrea French,Liliana Povici,Andrea French,8-3,8,3,1,0,Completed,true,false,false
+AP010043,26 Oct 13,4,BLTC,Dendy Park,No. 4,Emma Dudley,Lucy Darby,Emma Dudley,8-1,8,1,1,0,Completed,true,false,false
+AP010051,09 Nov 13,5,East Malvern,Dendy Park,No. 1,Therese Oyston,Sommer Jenkins,Therese Oyston,8-2,8,2,1,0,Completed,true,false,false
+AP010051,09 Nov 13,5,East Malvern,Dendy Park,No. 2,Stephanie Prvcic,Denise Redja,Stephanie Prvcic,8-0,8,0,1,0,Completed,true,false,false
+AP010051,09 Nov 13,5,East Malvern,Dendy Park,No. 3,Maria Stegnjaic,Wendy Thompson,Maria Stegnjaic,8-6,8,6,1,0,Completed,true,false,false
+AP010051,09 Nov 13,5,East Malvern,Dendy Park,No. 4,Penny Townshend,Lucy Darby,Lucy Darby,1-8,1,8,0,1,Completed,true,false,false
+AP010052,09 Nov 13,5,Royal South Yarra,Mt Eliza,No. 1,Skye Douglass,Emily Martin,Emily Martin,0-8,0,8,0,1,Completed,true,false,false
+AP010052,09 Nov 13,5,Royal South Yarra,Mt Eliza,No. 2,Charlotte Fenner,Segolene Ollivier,Segolene Ollivier,3-8,3,8,0,1,Completed,true,false,false
+AP010052,09 Nov 13,5,Royal South Yarra,Mt Eliza,No. 3,Lisa Miller,Alice Rogers,Alice Rogers,2-8,2,8,0,1,Completed,true,false,false
+AP010052,09 Nov 13,5,Royal South Yarra,Mt Eliza,No. 4,Huyen Nguyen,Alyssia Varricchio,Alyssia Varricchio,5-8,5,8,0,1,Completed,true,false,false
+AP010053,09 Nov 13,5,Kings Park,BLTC,No. 1,Zoe Llewellyn,Yasmin Ernst,Zoe Llewellyn,8-2,8,2,1,0,Completed,true,false,false
+AP010053,09 Nov 13,5,Kings Park,BLTC,No. 2,Samantha Ritchie,Rosemary Everett,Rosemary Everett,4-8,4,8,0,1,Completed,true,false,false
+AP010053,09 Nov 13,5,Kings Park,BLTC,No. 3,Alexandra Cowden,Andrea French,Alexandra Cowden,8-1,8,1,1,0,Completed,true,false,false
+AP010053,09 Nov 13,5,Kings Park,BLTC,No. 4,Sophie Robertson,Emma Dudley,Emma Dudley,3-8,3,8,0,1,Completed,true,false,false
+AP010061,16 Nov 13,6,Mt Eliza,East Malvern,No. 1,Emily Martin,Therese Oyston,Emily Martin,8-1,8,1,1,0,Completed,true,false,false
+AP010061,16 Nov 13,6,Mt Eliza,East Malvern,No. 2,Segolene Ollivier,Annette Reed,Segolene Ollivier,8-4,8,4,1,0,Completed,true,false,false
+AP010061,16 Nov 13,6,Mt Eliza,East Malvern,No. 3,Alice Rogers,Maria Stegnjaic,Alice Rogers,9-7,9,7,1,0,Completed,true,false,false
+AP010061,16 Nov 13,6,Mt Eliza,East Malvern,No. 4,Sunny Green,Penny Townshend,Sunny Green,8-2,8,2,1,0,Completed,true,false,false
+AP010062,16 Nov 13,6,Royal South Yarra,BLTC,No. 1,Claire Benjamin,Yasmin Ernst,Claire Benjamin,8-2,8,2,1,0,Completed,true,false,false
+AP010062,16 Nov 13,6,Royal South Yarra,BLTC,No. 2,Charlotte Fenner,Mary Sebire,Mary Sebire,2-8,2,8,0,1,Completed,true,false,false
+AP010062,16 Nov 13,6,Royal South Yarra,BLTC,No. 3,Libby Hicks,Andrea French,Andrea French,3-8,3,8,0,1,Completed,true,false,false
+AP010062,16 Nov 13,6,Royal South Yarra,BLTC,No. 4,Huyen Nguyen,Emma Dudley,Emma Dudley,2-8,2,8,0,1,Completed,true,false,false
+AP010063,16 Nov 13,6,Kings Park,Dendy Park,No. 1,Rhian Llewellyn,Sommer Jenkins,Rhian Llewellyn,8-4,8,4,1,0,Completed,true,false,false
+AP010063,16 Nov 13,6,Kings Park,Dendy Park,No. 2,Samantha Ritchie,Jane Edgar,Samantha Ritchie,8-6,8,6,1,0,Completed,true,false,false
+AP010063,16 Nov 13,6,Kings Park,Dendy Park,No. 3,Alexandra Cowden,Wendy Thompson,Alexandra Cowden,8-3,8,3,1,0,Completed,true,false,false
+AP010063,16 Nov 13,6,Kings Park,Dendy Park,No. 4,Sophie Robertson,Lucy Darby,Sophie Robertson,8-4,8,4,1,0,Completed,true,false,false
+AP010071,23 Nov 13,7,East Malvern,Kings Park,No. 1,Alison Simmons,Rhian Llewellyn,Alison Simmons,8-5,8,5,1,0,Completed,true,false,false
+AP010071,23 Nov 13,7,East Malvern,Kings Park,No. 2,Annette Reed,Zoe Llewellyn,Zoe Llewellyn,3-8,3,8,0,1,Completed,true,false,false
+AP010071,23 Nov 13,7,East Malvern,Kings Park,No. 3,Maria Stegnjaic,Samantha Ritchie,Samantha Ritchie,2-8,2,8,0,1,Completed,true,false,false
+AP010071,23 Nov 13,7,East Malvern,Kings Park,No. 4,Penny Townshend,Alexandra Cowden,Alexandra Cowden,3-8,3,8,0,1,Completed,true,false,false
+AP010072,23 Nov 13,7,Dendy Park,Royal South Yarra,No. 1,Sommer Jenkins,Jennifer Langford,Sommer Jenkins,8-3,8,3,1,0,Completed,true,false,false
+AP010072,23 Nov 13,7,Dendy Park,Royal South Yarra,No. 2,Jane Edgar,Skye Douglass,Jane Edgar,8-2,8,2,1,0,Completed,true,false,false
+AP010072,23 Nov 13,7,Dendy Park,Royal South Yarra,No. 3,Wendy Thompson,Charlotte Fenner,Wendy Thompson,8-3,8,3,1,0,Completed,true,false,false
+AP010072,23 Nov 13,7,Dendy Park,Royal South Yarra,No. 4,Lucy Darby,Huyen Nguyen,Lucy Darby,8-3,8,3,1,0,Completed,true,false,false
+AP010073,23 Nov 13,7,BLTC,Mt Eliza,No. 1,Vivian Fidantsis,Segolene Ollivier,Vivian Fidantsis,8-0,8,0,1,0,Completed,true,false,false
+AP010073,23 Nov 13,7,BLTC,Mt Eliza,No. 2,Emma Dudley,Jordana Varricchio,Emma Dudley,8-6,8,6,1,0,Completed,true,false,false
+AP010073,23 Nov 13,7,BLTC,Mt Eliza,No. 3,Kellie Menthkowski,Alyssia Varricchio,Alyssia Varricchio,6-8,6,8,0,1,Completed,true,false,false
+AP010073,23 Nov 13,7,BLTC,Mt Eliza,No. 4,Holly McCaul,Madeline Pappas,Holly McCaul,9-7,9,7,1,0,Completed,true,false,false
+AP010081,30 Nov 13,8,BLTC,East Malvern,No. 1,Yasmin Ernst,Therese Oyston,Therese Oyston,5-8,5,8,0,1,Completed,true,false,false
+AP010081,30 Nov 13,8,BLTC,East Malvern,No. 2,Rosemary Everett,Stephanie Prvcic,Stephanie Prvcic,5-8,5,8,0,1,Completed,true,false,false
+AP010081,30 Nov 13,8,BLTC,East Malvern,No. 3,Emma Dudley,Rosie Kovacs,Rosie Kovacs,1-8,1,8,0,1,Completed,true,false,false
+AP010081,30 Nov 13,8,BLTC,East Malvern,No. 4,Kellie Menthkowski,Maria Stegnjaic,Maria Stegnjaic,6-8,6,8,0,1,Completed,true,false,false
+AP010082,30 Nov 13,8,Mt Eliza,Dendy Park,No. 1,Emily Martin,Sommer Jenkins,Emily Martin,8-2,8,2,1,0,Completed,true,false,false
+AP010082,30 Nov 13,8,Mt Eliza,Dendy Park,No. 2,Alice Rogers,Jane Edgar,Jane Edgar,6-8,6,8,0,1,Completed,true,false,false
+AP010082,30 Nov 13,8,Mt Eliza,Dendy Park,No. 3,Alyssia Varricchio,Lauren Harding,Alyssia Varricchio,8-6,8,6,1,0,Completed,true,false,false
+AP010082,30 Nov 13,8,Mt Eliza,Dendy Park,No. 4,Madeline Pappas,Liliana Povici,Madeline Pappas,8-2,8,2,1,0,Completed,true,false,false
+AP010083,30 Nov 13,8,Royal South Yarra,Kings Park,No. 1,Claire Benjamin,Rhian Llewellyn,Rhian Llewellyn,4-8,4,8,0,1,Completed,true,false,false
+AP010083,30 Nov 13,8,Royal South Yarra,Kings Park,No. 2,Libby Hicks,Zoe Llewellyn,Zoe Llewellyn,1-8,1,8,0,1,Completed,true,false,false
+AP010083,30 Nov 13,8,Royal South Yarra,Kings Park,No. 3,Lisa Miller,Samantha Ritchie,Samantha Ritchie,0-8,0,8,0,1,Completed,true,false,false
+AP010083,30 Nov 13,8,Royal South Yarra,Kings Park,No. 4,Huyen Nguyen,Alexandra Cowden,Alexandra Cowden,8-9,8,9,0,1,Completed,true,false,false
+AP010091,07 Dec 13,9,East Malvern,Royal South Yarra,No. 1,Therese Oyston,Claire Benjamin,Therese Oyston,8-3,8,3,1,0,Completed,true,false,false
+AP010091,07 Dec 13,9,East Malvern,Royal South Yarra,No. 2,Stephanie Prvcic,Jennifer Langford,Stephanie Prvcic,8-0,8,0,1,0,Completed,true,false,false
+AP010091,07 Dec 13,9,East Malvern,Royal South Yarra,No. 3,Annette Reed,Charlotte Fenner,Annette Reed,8-0,8,0,1,0,Completed,true,false,false
+AP010091,07 Dec 13,9,East Malvern,Royal South Yarra,No. 4,Maria Stegnjaic,Libby Hicks,Maria Stegnjaic,8-1,8,1,1,0,Completed,true,false,false
+AP010092,07 Dec 13,9,Kings Park,Mt Eliza,No. 1,Rhian Llewellyn,Segolene Ollivier,Segolene Ollivier,5-8,5,8,0,1,Completed,true,false,false
+AP010092,07 Dec 13,9,Kings Park,Mt Eliza,No. 2,Zoe Llewellyn,Alyssia Varricchio,Zoe Llewellyn,8-5,8,5,1,0,Completed,true,false,false
+AP010092,07 Dec 13,9,Kings Park,Mt Eliza,No. 3,Samantha Ritchie,Madeline Pappas,Samantha Ritchie,8-2,8,2,1,0,Completed,true,false,false
+AP010092,07 Dec 13,9,Kings Park,Mt Eliza,No. 4,Alexandra Cowden,Christine McKenzie,Christine McKenzie,6-8,6,8,0,1,Completed,true,false,false
+AP010093,07 Dec 13,9,Dendy Park,BLTC,No. 1,Sommer Jenkins,Mary Sebire,Sommer Jenkins,8-3,8,3,1,0,Completed,true,false,false
+AP010093,07 Dec 13,9,Dendy Park,BLTC,No. 2,Jane Edgar,Rosemary Everett,Rosemary Everett,1-8,1,8,0,1,Completed,true,false,false
+AP010093,07 Dec 13,9,Dendy Park,BLTC,No. 3,Wendy Thompson,Emma Dudley,Emma Dudley,5-8,5,8,0,1,Completed,true,false,false
+AP010093,07 Dec 13,9,Dendy Park,BLTC,No. 4,Lucy Darby,Kellie Menthkowski,Kellie Menthkowski,1-8,1,8,0,1,Completed,true,false,false
+AP010101,14 Dec 13,10,Dendy Park,East Malvern,No. 1,Sommer Jenkins,Therese Oyston,Therese Oyston,2-8,2,8,0,1,Completed,true,false,false
+AP010101,14 Dec 13,10,Dendy Park,East Malvern,No. 2,Jane Edgar,Annette Reed,Annette Reed,3-8,3,8,0,1,Completed,true,false,false
+AP010101,14 Dec 13,10,Dendy Park,East Malvern,No. 3,Wendy Thompson,Maria Stegnjaic,Maria Stegnjaic,5-8,5,8,0,1,Completed,true,false,false
+AP010101,14 Dec 13,10,Dendy Park,East Malvern,No. 4,Lucy Darby,Penny Townshend,Lucy Darby,8-6,8,6,1,0,Completed,true,false,false
+AP010102,14 Dec 13,10,Mt Eliza,Royal South Yarra,No. 1,Segolene Ollivier,Claire Benjamin,Segolene Ollivier,8-3,8,3,1,0,Completed,true,false,false
+AP010102,14 Dec 13,10,Mt Eliza,Royal South Yarra,No. 2,Alice Rogers,Sophie Trotter,Sophie Trotter,3-8,3,8,0,1,Completed,true,false,false
+AP010102,14 Dec 13,10,Mt Eliza,Royal South Yarra,No. 3,Chloe Wilkins,Jennifer Langford,Jennifer Langford,6-8,6,8,0,1,Completed,true,false,false
+AP010102,14 Dec 13,10,Mt Eliza,Royal South Yarra,No. 4,Christine McKenzie,Huyen Nguyen,Christine McKenzie,8-4,8,4,1,0,Completed,true,false,false
+AP010103,14 Dec 13,10,BLTC,Kings Park,No. 1,Yasmin Ernst,Rhian Llewellyn,Rhian Llewellyn,5-8,5,8,0,1,Completed,true,false,false
+AP010103,14 Dec 13,10,BLTC,Kings Park,No. 2,Rosemary Everett,Zoe Llewellyn,Rosemary Everett,8-6,8,6,1,0,Completed,true,false,false
+AP010103,14 Dec 13,10,BLTC,Kings Park,No. 3,Andrea French,Samantha Ritchie,Samantha Ritchie,4-8,4,8,0,1,Completed,true,false,false
+AP010103,14 Dec 13,10,BLTC,Kings Park,No. 4,Emma Dudley,Sophie Robertson,Sophie Robertson,5-8,5,8,0,1,Completed,true,false,false
+AP010111,01 Feb 14,11,East Malvern,Mt Eliza,No. 1,Therese Oyston,Emily Martin,Emily Martin,4-8,4,8,0,1,Completed,true,false,false
+AP010111,01 Feb 14,11,East Malvern,Mt Eliza,No. 2,Stephanie Prvcic,Jordana Varricchio,Stephanie Prvcic,8-0,8,0,1,0,Completed,true,false,false
+AP010111,01 Feb 14,11,East Malvern,Mt Eliza,No. 3,Maria Stegnjaic,Alice Rogers,Alice Rogers,7-9,7,9,0,1,Completed,true,false,false
+AP010111,01 Feb 14,11,East Malvern,Mt Eliza,No. 4,Penny Townshend,Alyssia Varricchio,Alyssia Varricchio,1-8,1,8,0,1,Completed,true,false,false
+AP010112,01 Feb 14,11,BLTC,Royal South Yarra,No. 1,[Unnamed emergency — TROLS AP010112 home code 1],Claire Benjamin,Claire Benjamin,0-8,0,8,0,1,Completed,false,true,false
+AP010112,01 Feb 14,11,BLTC,Royal South Yarra,No. 2,Mary Sebire,Jennifer Langford,Mary Sebire,8-2,8,2,1,0,Completed,true,false,false
+AP010112,01 Feb 14,11,BLTC,Royal South Yarra,No. 3,Rosemary Everett,Lisa Miller,Rosemary Everett,8-0,8,0,1,0,Completed,true,false,false
+AP010112,01 Feb 14,11,BLTC,Royal South Yarra,No. 4,Emma Dudley,Libby Hicks,Emma Dudley,8-1,8,1,1,0,Completed,true,false,false
+AP010113,01 Feb 14,11,Dendy Park,Kings Park,No. 1,Rosemary Widmann,Rhian Llewellyn,Rosemary Widmann,8-6,8,6,1,0,Completed,true,false,false
+AP010113,01 Feb 14,11,Dendy Park,Kings Park,No. 2,Sommer Jenkins,Zoe Llewellyn,Zoe Llewellyn,4-8,4,8,0,1,Completed,true,false,false
+AP010113,01 Feb 14,11,Dendy Park,Kings Park,No. 3,Wendy Thompson,Samantha Ritchie,Samantha Ritchie,6-8,6,8,0,1,Completed,true,false,false
+AP010113,01 Feb 14,11,Dendy Park,Kings Park,No. 4,Lucy Darby,Alexandra Cowden,Alexandra Cowden,3-8,3,8,0,1,Completed,true,false,false
+AP010121,08 Feb 14,12,Kings Park,East Malvern,No. 1,Rhian Llewellyn,Therese Oyston,Therese Oyston,3-8,3,8,0,1,Completed,true,false,false
+AP010121,08 Feb 14,12,Kings Park,East Malvern,No. 2,Samantha Ritchie,Annette Reed,Annette Reed,4-8,4,8,0,1,Completed,true,false,false
+AP010132,15 Feb 14,13,Dendy Park,Mt Eliza,No. 1,Sommer Jenkins,Segolene Ollivier,Segolene Ollivier,3-8,3,8,0,1,Completed,true,false,false
+AP010132,15 Feb 14,13,Dendy Park,Mt Eliza,No. 2,Jane Edgar,Jordana Varricchio,Jordana Varricchio,3-8,3,8,0,1,Completed,true,false,false
+AP010132,15 Feb 14,13,Dendy Park,Mt Eliza,No. 3,Wendy Thompson,Alyssia Varricchio,Alyssia Varricchio,7-9,7,9,0,1,Completed,true,false,false
+AP010132,15 Feb 14,13,Dendy Park,Mt Eliza,No. 4,Lucy Darby,Madeline Pappas,Lucy Darby,8-6,8,6,1,0,Completed,true,false,false
+AP010141,22 Feb 14,14,Royal South Yarra,East Malvern,No. 1,Jennifer Langford,Therese Oyston,Therese Oyston,0-8,0,8,0,1,Completed,true,false,false
+AP010141,22 Feb 14,14,Royal South Yarra,East Malvern,No. 2,Skye Douglass,Alison Simmons,Alison Simmons,1-8,1,8,0,1,Completed,true,false,false
+AP010141,22 Feb 14,14,Royal South Yarra,East Malvern,No. 3,Lisa Miller,Rosie Kovacs,Rosie Kovacs,0-8,0,8,0,1,Completed,true,false,false
+AP010141,22 Feb 14,14,Royal South Yarra,East Malvern,No. 4,Huyen Nguyen,Maria Stegnjaic,Maria Stegnjaic,3-8,3,8,0,1,Completed,true,false,false
+AP010142,22 Feb 14,14,Mt Eliza,Kings Park,No. 1,Emily Martin,Rhian Llewellyn,Emily Martin,8-0,8,0,1,0,Completed,true,false,false
+AP010142,22 Feb 14,14,Mt Eliza,Kings Park,No. 2,Alice Rogers,Zoe Llewellyn,Zoe Llewellyn,5-8,5,8,0,1,Completed,true,false,false
+AP010142,22 Feb 14,14,Mt Eliza,Kings Park,No. 3,Sunny Green,Samantha Ritchie,Samantha Ritchie,4-8,4,8,0,1,Completed,true,false,false
+AP010142,22 Feb 14,14,Mt Eliza,Kings Park,No. 4,Tilly Barber,Alexandra Cowden,Tilly Barber,9-8,9,8,1,0,Completed,true,false,false
+AP010143,22 Feb 14,14,BLTC,Dendy Park,No. 1,Mary Sebire,Sommer Jenkins,Sommer Jenkins,4-8,4,8,0,1,Completed,true,false,false
+AP010143,22 Feb 14,14,BLTC,Dendy Park,No. 2,Rosemary Everett,Jane Edgar,Rosemary Everett,8-2,8,2,1,0,Completed,true,false,false
+AP010143,22 Feb 14,14,BLTC,Dendy Park,No. 3,Emily Fidantsis,Wendy Thompson,Wendy Thompson,1-8,1,8,0,1,Completed,true,false,false
+AP010143,22 Feb 14,14,BLTC,Dendy Park,No. 4,Kellie Menthkowski,Lucy Darby,Kellie Menthkowski,8-5,8,5,1,0,Completed,true,false,false
+AP010151,01 Mar 14,15,East Malvern,Dendy Park,No. 1,Therese Oyston,Sommer Jenkins,Therese Oyston,8-3,8,3,1,0,Completed,true,false,false
+AP010151,01 Mar 14,15,East Malvern,Dendy Park,No. 2,Annette Reed,Jane Edgar,Annette Reed,9-8,9,8,1,0,Completed,true,false,false
+AP010151,01 Mar 14,15,East Malvern,Dendy Park,No. 3,Maria Stegnjaic,Wendy Thompson,Maria Stegnjaic,8-3,8,3,1,0,Completed,true,false,false
+AP010151,01 Mar 14,15,East Malvern,Dendy Park,No. 4,Penny Townshend,Lucy Darby,Lucy Darby,4-8,4,8,0,1,Completed,true,false,false
+AP010152,01 Mar 14,15,Royal South Yarra,Mt Eliza,No. 1,Jennifer Langford,Emily Martin,Emily Martin,0-8,0,8,0,1,Completed,true,false,false
+AP010152,01 Mar 14,15,Royal South Yarra,Mt Eliza,No. 2,Skye Douglass,Jordana Varricchio,Jordana Varricchio,0-8,0,8,0,1,Completed,true,false,false
+AP010152,01 Mar 14,15,Royal South Yarra,Mt Eliza,No. 3,Charlotte Fenner,Alice Rogers,Alice Rogers,1-8,1,8,0,1,Completed,true,false,false
+AP010152,01 Mar 14,15,Royal South Yarra,Mt Eliza,No. 4,Libby Hicks,Alyssia Varricchio,Alyssia Varricchio,6-8,6,8,0,1,Completed,true,false,false
+AP010153,01 Mar 14,15,Kings Park,BLTC,No. 1,Rhian Llewellyn,Yasmin Ernst,Rhian Llewellyn,9-7,9,7,1,0,Completed,true,false,false
+AP010153,01 Mar 14,15,Kings Park,BLTC,No. 2,Zoe Llewellyn,Mary Sebire,Zoe Llewellyn,8-3,8,3,1,0,Completed,true,false,false
+AP010153,01 Mar 14,15,Kings Park,BLTC,No. 3,Samantha Ritchie,Rosemary Everett,Rosemary Everett,8-9,8,9,0,1,Completed,true,false,false
+AP010153,01 Mar 14,15,Kings Park,BLTC,No. 4,Sophie Robertson,Kellie Menthkowski,Sophie Robertson,9-7,9,7,1,0,Completed,true,false,false
+AP010311,01 Mar 14,15,Mt Eliza,Kings Park,No. 1,Emily Martin,Rhian Llewellyn,Emily Martin,8-0,8,0,1,0,Completed,true,false,false
+AP010311,01 Mar 14,15,Mt Eliza,Kings Park,No. 2,Segolene Ollivier,Zoe Llewellyn,Segolene Ollivier,8-5,8,5,1,0,Completed,true,true,false
+AP010311,01 Mar 14,15,Mt Eliza,Kings Park,No. 3,Jordana Varricchio,Samantha Ritchie,Samantha Ritchie,7-9,7,9,0,1,Completed,true,false,false
+AP010311,01 Mar 14,15,Mt Eliza,Kings Park,No. 4,Alice Rogers,Alexandra Cowden,Alice Rogers,8-3,8,3,1,0,Completed,true,false,false
+AP010321,,16,East Malvern,Mt Eliza,No. 1,Alison Simmons,Emily Martin,Emily Martin,4-8,4,8,0,1,Completed,true,true,false
+AP010321,,16,East Malvern,Mt Eliza,No. 2,Annette Reed,Segolene Ollivier,Segolene Ollivier,4-8,4,8,0,1,Completed,true,false,true
+AP010321,,16,East Malvern,Mt Eliza,No. 3,Rosie Kovacs,Jordana Varricchio,Jordana Varricchio,7-9,7,9,0,1,Completed,true,true,false
+AP010321,,16,East Malvern,Mt Eliza,No. 4,Maria Stegnjaic,Alice Rogers,Alice Rogers,5-8,5,8,0,1,Completed,true,false,false

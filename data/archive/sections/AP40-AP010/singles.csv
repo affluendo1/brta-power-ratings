@@ -1,0 +1,141 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP010012,05 Oct 19,1,Royal South Yarra,BLTC 1,No. 1,Audrey Teo,Charlotte Anderson,Audrey Teo,8-1,8,1,1,0,Completed,true,false,false
+AP010012,05 Oct 19,1,Royal South Yarra,BLTC 1,No. 2,Danielja Mijic,Mietta Brodie-Arter,Danielja Mijic,8-1,8,1,1,0,Completed,true,false,false
+AP010012,05 Oct 19,1,Royal South Yarra,BLTC 1,No. 3,Olivia Fowler,Rachael Dickinson,Olivia Fowler,8-6,8,6,1,0,Completed,true,false,false
+AP010012,05 Oct 19,1,Royal South Yarra,BLTC 1,No. 4,Georgia Pugh,Sophie Johnson,Georgia Pugh,8-3,8,3,1,0,Completed,true,false,false
+AP010013,05 Oct 19,1,MCC Glen Iris,GPHC,No. 1,Olivera Ivcovici,Miranda Poile,Miranda Poile,5-8,5,8,0,1,Completed,true,false,false
+AP010013,05 Oct 19,1,MCC Glen Iris,GPHC,No. 2,Yuki Horne-Okano,Nicole Mullen,Nicole Mullen,1-8,1,8,0,1,Completed,true,false,false
+AP010013,05 Oct 19,1,MCC Glen Iris,GPHC,No. 3,Frederique Boonstra,Victoria Huffman,Frederique Boonstra,8-2,8,2,1,0,Completed,true,false,false
+AP010013,05 Oct 19,1,MCC Glen Iris,GPHC,No. 4,Linley Wade,Jessica Graham,Linley Wade,8-0,8,0,1,0,Completed,true,false,true
+AP010014,05 Oct 19,1,BLTC 2,Mt Eliza,No. 1,Caterina Cerantonio,Emily Martin,Emily Martin,1-8,1,8,0,1,Completed,true,false,false
+AP010014,05 Oct 19,1,BLTC 2,Mt Eliza,No. 2,Peta Allan,Victoria Stewart,Victoria Stewart,2-8,2,8,0,1,Completed,true,false,false
+AP010014,05 Oct 19,1,BLTC 2,Mt Eliza,No. 3,Cassandra Neylan,Summer Jones,Summer Jones,1-8,1,8,0,1,Completed,true,false,false
+AP010014,05 Oct 19,1,BLTC 2,Mt Eliza,No. 4,Wendy Harrison,Sam Merry,Sam Merry,3-8,3,8,0,1,Completed,true,false,true
+AP010022,12 Oct 19,2,Dendy Park,Royal South Yarra,No. 1,Juliet McKenzie,Audrey Teo,Audrey Teo,3-8,3,8,0,1,Completed,true,false,false
+AP010022,12 Oct 19,2,Dendy Park,Royal South Yarra,No. 2,Celina Yang,Rachael McRae,Rachael McRae,6-8,6,8,0,1,Completed,true,false,false
+AP010022,12 Oct 19,2,Dendy Park,Royal South Yarra,No. 3,Emily Collins,Caroline Szafranski,Caroline Szafranski,1-8,1,8,0,1,Completed,true,false,false
+AP010022,12 Oct 19,2,Dendy Park,Royal South Yarra,No. 4,Molly Ritchie,Alexis Stergiopoulos,Molly Ritchie,8-1,8,1,1,0,Completed,true,false,false
+AP010023,12 Oct 19,2,BLTC 1,MCC Glen Iris,No. 1,Rosemary Everett,Yuki Horne-Okano,Yuki Horne-Okano,5-8,5,8,0,1,Completed,true,false,false
+AP010023,12 Oct 19,2,BLTC 1,MCC Glen Iris,No. 2,Charlotte Anderson,Amelia Mills,Charlotte Anderson,8-0,8,0,1,0,Completed,true,false,false
+AP010023,12 Oct 19,2,BLTC 1,MCC Glen Iris,No. 3,Rachael Dickinson,Louise Anderson,Louise Anderson,5-8,5,8,0,1,Completed,true,false,false
+AP010023,12 Oct 19,2,BLTC 1,MCC Glen Iris,No. 4,Sophie Johnson,Romy Stephens,Romy Stephens,1-8,1,8,0,1,Completed,true,false,true
+AP010024,12 Oct 19,2,GPHC,BLTC 2,No. 1,Miranda Poile,Caterina Cerantonio,Miranda Poile,8-4,8,4,1,0,Completed,true,false,false
+AP010024,12 Oct 19,2,GPHC,BLTC 2,No. 2,Charlotte McIntosh,Cassandra Neylan,Charlotte McIntosh,8-0,8,0,1,0,Completed,true,false,false
+AP010024,12 Oct 19,2,GPHC,BLTC 2,No. 3,Candice Clements,Stacey Southern,Candice Clements,8-2,8,2,1,0,Completed,true,false,false
+AP010024,12 Oct 19,2,GPHC,BLTC 2,No. 4,Bonnie Dowding,Sophie Christie,Sophie Christie,5-8,5,8,0,1,Completed,true,false,false
+AP010032,19 Oct 19,3,Royal South Yarra,Mt Eliza,No. 1,Audrey Teo,Emily Martin,Audrey Teo,8-7,8,7,1,0,Completed,true,false,false
+AP010032,19 Oct 19,3,Royal South Yarra,Mt Eliza,No. 2,Rachael McRae,Victoria Stewart,Victoria Stewart,7-8,7,8,0,1,Completed,true,false,false
+AP010032,19 Oct 19,3,Royal South Yarra,Mt Eliza,No. 3,Olivia Fowler,Summer Jones,Summer Jones,2-8,2,8,0,1,Completed,true,false,false
+AP010032,19 Oct 19,3,Royal South Yarra,Mt Eliza,No. 4,Georgia Pugh,Lara Bond,Lara Bond,2-8,2,8,0,1,Completed,true,false,false
+AP010033,19 Oct 19,3,MCC Glen Iris,Dendy Park,No. 1,Olivera Ivcovici,Jasmine Ellis,Jasmine Ellis,2-8,2,8,0,1,Completed,true,false,false
+AP010033,19 Oct 19,3,MCC Glen Iris,Dendy Park,No. 2,Yuki Horne-Okano,Juliet McKenzie,Yuki Horne-Okano,8-2,8,2,1,0,Completed,true,false,false
+AP010033,19 Oct 19,3,MCC Glen Iris,Dendy Park,No. 3,Amelia Mills,Zahra Kalena,Amelia Mills,8-3,8,3,1,0,Completed,true,false,false
+AP010033,19 Oct 19,3,MCC Glen Iris,Dendy Park,No. 4,Zsofia Bende,Molly Ritchie,Molly Ritchie,5-8,5,8,0,1,Completed,true,false,false
+AP010034,19 Oct 19,3,BLTC 2,BLTC 1,No. 1,Kara Wolstencroft,Charlotte Anderson,Charlotte Anderson,1-8,1,8,0,1,Completed,true,false,false
+AP010034,19 Oct 19,3,BLTC 2,BLTC 1,No. 2,Peta Allan,Mietta Brodie-Arter,Peta Allan,8-1,8,1,1,0,Completed,true,false,false
+AP010034,19 Oct 19,3,BLTC 2,BLTC 1,No. 3,Cassandra Neylan,Rachael Dickinson,Rachael Dickinson,4-8,4,8,0,1,Completed,true,false,false
+AP010034,19 Oct 19,3,BLTC 2,BLTC 1,No. 4,Stacey Southern,Pepper Hewitt,Stacey Southern,8-3,8,3,1,0,Completed,true,false,true
+AP010043,26 Oct 19,4,Mt Eliza,MCC Glen Iris,No. 1,Victoria Stewart,Brooke Starling,Brooke Starling,2-8,2,8,0,1,Completed,true,false,false
+AP010043,26 Oct 19,4,Mt Eliza,MCC Glen Iris,No. 2,Summer Jones,Frederique Boonstra,Frederique Boonstra,2-8,2,8,0,1,Completed,true,false,false
+AP010043,26 Oct 19,4,Mt Eliza,MCC Glen Iris,No. 3,Courtney Skene,Linley Wade,Linley Wade,3-8,3,8,0,1,Completed,true,true,false
+AP010043,26 Oct 19,4,Mt Eliza,MCC Glen Iris,No. 4,Sunny Green,Louise Anderson,Louise Anderson,0-8,0,8,0,1,Completed,true,true,false
+AP010044,26 Oct 19,4,Dendy Park,BLTC 2,No. 1,Jasmine Ellis,Kara Wolstencroft,Jasmine Ellis,8-0,8,0,1,0,Completed,true,false,false
+AP010044,26 Oct 19,4,Dendy Park,BLTC 2,No. 2,Juliet McKenzie,Peta Allan,Juliet McKenzie,8-1,8,1,1,0,Completed,true,false,false
+AP010044,26 Oct 19,4,Dendy Park,BLTC 2,No. 3,Zahra Kalena,Stacey Southern,Zahra Kalena,8-2,8,2,1,0,Completed,true,false,false
+AP010044,26 Oct 19,4,Dendy Park,BLTC 2,No. 4,Emily Collins,Sophie Christie,Sophie Christie,5-8,5,8,0,1,Completed,true,false,false
+AP010052,09 Nov 19,5,Mt Eliza,GPHC,No. 1,Amelia Charlton,Miranda Poile,Miranda Poile,5-8,5,8,0,1,Completed,true,false,false
+AP010052,09 Nov 19,5,Mt Eliza,GPHC,No. 2,Victoria Stewart,Shiying Li,Shiying Li,5-8,5,8,0,1,Completed,true,false,false
+AP010052,09 Nov 19,5,Mt Eliza,GPHC,No. 3,Summer Jones,Bonnie Dowding,Summer Jones,8-2,8,2,1,0,Completed,true,false,false
+AP010052,09 Nov 19,5,Mt Eliza,GPHC,No. 4,Sam Merry,Jessica Graham,Jessica Graham,4-8,4,8,0,1,Completed,true,true,true
+AP010053,09 Nov 19,5,BLTC 1,Dendy Park,No. 1,Rosemary Everett,Jasmine Ellis,Rosemary Everett,8-7,8,7,1,0,Completed,true,false,false
+AP010053,09 Nov 19,5,BLTC 1,Dendy Park,No. 2,Alexia Liparote,Juliet McKenzie,Juliet McKenzie,6-8,6,8,0,1,Completed,true,false,false
+AP010053,09 Nov 19,5,BLTC 1,Dendy Park,No. 3,Rachael Dickinson,Zahra Kalena,Zahra Kalena,4-8,4,8,0,1,Completed,true,false,false
+AP010053,09 Nov 19,5,BLTC 1,Dendy Park,No. 4,Pepper Hewitt,Emily Collins,Pepper Hewitt,8-6,8,6,1,0,Completed,true,true,false
+AP010061,16 Nov 19,6,Royal South Yarra,MCC Glen Iris,No. 1,Audrey Teo,Frederique Boonstra,Frederique Boonstra,1-8,1,8,0,1,Completed,true,false,false
+AP010061,16 Nov 19,6,Royal South Yarra,MCC Glen Iris,No. 2,Samantha Ritchie,Yuki Horne-Okano,Samantha Ritchie,8-5,8,5,1,0,Completed,true,true,false
+AP010061,16 Nov 19,6,Royal South Yarra,MCC Glen Iris,No. 3,Rachael McRae,Elizabeth Kalyvas,Rachael McRae,8-1,8,1,1,0,Completed,true,false,false
+AP010061,16 Nov 19,6,Royal South Yarra,MCC Glen Iris,No. 4,Olivia Fowler,Amelia Mills,Amelia Mills,6-8,6,8,0,1,Completed,true,false,false
+AP010064,16 Nov 19,6,Dendy Park,Mt Eliza,No. 1,Jasmine Ellis,Victoria Stewart,Jasmine Ellis,8-4,8,4,1,0,Completed,true,false,false
+AP010064,16 Nov 19,6,Dendy Park,Mt Eliza,No. 2,Juliet McKenzie,Summer Jones,Summer Jones,3-8,3,8,0,1,Completed,true,false,false
+AP010064,16 Nov 19,6,Dendy Park,Mt Eliza,No. 3,Celina Yang,Lola Vuletic,Lola Vuletic,6-8,6,8,0,1,Completed,true,false,false
+AP010064,16 Nov 19,6,Dendy Park,Mt Eliza,No. 4,Molly Ritchie,Sam Merry,Molly Ritchie,8-4,8,4,1,0,Completed,true,false,true
+AP010072,23 Nov 19,7,Royal South Yarra,BLTC 2,No. 1,Audrey Teo,Peta Allan,Audrey Teo,8-2,8,2,1,0,Completed,true,false,false
+AP010072,23 Nov 19,7,Royal South Yarra,BLTC 2,No. 2,Chelsea Stergiopoulos,Cassandra Neylan,Chelsea Stergiopoulos,8-2,8,2,1,0,Completed,true,false,false
+AP010072,23 Nov 19,7,Royal South Yarra,BLTC 2,No. 3,Alexis Stergiopoulos,Wendy Harrison,Wendy Harrison,4-8,4,8,0,1,Completed,true,false,false
+AP010072,23 Nov 19,7,Royal South Yarra,BLTC 2,No. 4,Georgia Pugh,Stacey Southern,Stacey Southern,3-8,3,8,0,1,Completed,true,false,false
+AP010074,23 Nov 19,7,GPHC,Dendy Park,No. 1,Miranda Poile,Jasmine Ellis,Miranda Poile,8-3,8,3,1,0,Completed,true,false,false
+AP010074,23 Nov 19,7,GPHC,Dendy Park,No. 2,Zoe Barbakos,Juliet McKenzie,Zoe Barbakos,8-5,8,5,1,0,Completed,true,false,false
+AP010074,23 Nov 19,7,GPHC,Dendy Park,No. 3,Charlotte McIntosh,Celina Yang,Charlotte McIntosh,8-4,8,4,1,0,Completed,true,false,false
+AP010074,23 Nov 19,7,GPHC,Dendy Park,No. 4,Candice Clements,Emily Collins,Emily Collins,7-8,7,8,0,1,Completed,true,false,false
+AP010082,30 Nov 19,8,BLTC 1,Royal South Yarra,No. 1,Charlotte Anderson,Audrey Teo,Audrey Teo,1-8,1,8,0,1,Completed,true,false,false
+AP010082,30 Nov 19,8,BLTC 1,Royal South Yarra,No. 2,Alexia Liparote,Rachael McRae,Rachael McRae,3-8,3,8,0,1,Completed,true,false,false
+AP010082,30 Nov 19,8,BLTC 1,Royal South Yarra,No. 3,Mietta Brodie-Arter,Chelsea Stergiopoulos,Chelsea Stergiopoulos,1-8,1,8,0,1,Completed,true,false,false
+AP010082,30 Nov 19,8,BLTC 1,Royal South Yarra,No. 4,Sophie Johnson,Alexis Stergiopoulos,Alexis Stergiopoulos,5-8,5,8,0,1,Completed,true,false,false
+AP010083,30 Nov 19,8,GPHC,MCC Glen Iris,No. 1,Miranda Poile,Brooke Starling,Miranda Poile,8-2,8,2,1,0,Completed,true,false,false
+AP010083,30 Nov 19,8,GPHC,MCC Glen Iris,No. 2,Zoe Barbakos,Frederique Boonstra,Zoe Barbakos,8-3,8,3,1,0,Completed,true,false,false
+AP010083,30 Nov 19,8,GPHC,MCC Glen Iris,No. 3,Candice Clements,Yuki Horne-Okano,Yuki Horne-Okano,6-8,6,8,0,1,Completed,true,false,false
+AP010083,30 Nov 19,8,GPHC,MCC Glen Iris,No. 4,Bonnie Dowding,Elizabeth Kalyvas,Elizabeth Kalyvas,3-8,3,8,0,1,Completed,true,false,false
+AP010084,30 Nov 19,8,Mt Eliza,BLTC 2,No. 1,Amelia Charlton,Kara Wolstencroft,Amelia Charlton,8-4,8,4,1,0,Completed,true,false,false
+AP010084,30 Nov 19,8,Mt Eliza,BLTC 2,No. 2,Victoria Stewart,Caterina Cerantonio,Victoria Stewart,8-0,8,0,1,0,Completed,true,false,false
+AP010084,30 Nov 19,8,Mt Eliza,BLTC 2,No. 3,Lara Bond,Wendy Harrison,Lara Bond,8-2,8,2,1,0,Completed,true,false,false
+AP010084,30 Nov 19,8,Mt Eliza,BLTC 2,No. 4,Lola Vuletic,Sophie Christie,Sophie Christie,7-8,7,8,0,1,Completed,true,false,false
+AP010092,07 Dec 19,9,Royal South Yarra,Dendy Park,No. 1,Audrey Teo,Celina Yang,Audrey Teo,8-3,8,3,1,0,Completed,true,false,false
+AP010092,07 Dec 19,9,Royal South Yarra,Dendy Park,No. 2,Rachael McRae,Saskia Komljenovic,Rachael McRae,8-0,8,0,1,0,Completed,true,false,false
+AP010092,07 Dec 19,9,Royal South Yarra,Dendy Park,No. 3,Caroline Szafranski,Emily Collins,Caroline Szafranski,8-0,8,0,1,0,Completed,true,false,false
+AP010092,07 Dec 19,9,Royal South Yarra,Dendy Park,No. 4,Georgia Pugh,Molly Ritchie,Molly Ritchie,1-8,1,8,0,1,Completed,true,false,false
+AP010093,07 Dec 19,9,MCC Glen Iris,BLTC 1,No. 1,Brooke Starling,Charlotte Anderson,Brooke Starling,8-1,8,1,1,0,Completed,true,false,false
+AP010093,07 Dec 19,9,MCC Glen Iris,BLTC 1,No. 2,Frederique Boonstra,Alexia Liparote,Frederique Boonstra,8-2,8,2,1,0,Completed,true,false,false
+AP010093,07 Dec 19,9,MCC Glen Iris,BLTC 1,No. 3,Linley Wade,Rachael Dickinson,Linley Wade,8-6,8,6,1,0,Completed,true,false,false
+AP010093,07 Dec 19,9,MCC Glen Iris,BLTC 1,No. 4,Louise Anderson,Simone Dunker,Simone Dunker,4-8,4,8,0,1,Completed,true,false,true
+AP010094,07 Dec 19,9,BLTC 2,GPHC,No. 1,Kara Wolstencroft,Charlotte McIntosh,Charlotte McIntosh,2-8,2,8,0,1,Completed,true,false,false
+AP010094,07 Dec 19,9,BLTC 2,GPHC,No. 2,Caterina Cerantonio,Madison Ashley,Caterina Cerantonio,8-5,8,5,1,0,Completed,true,false,true
+AP010094,07 Dec 19,9,BLTC 2,GPHC,No. 3,Peta Allan,Bonnie Dowding,Bonnie Dowding,3-8,3,8,0,1,Completed,true,false,false
+AP010094,07 Dec 19,9,BLTC 2,GPHC,No. 4,Cassandra Neylan,Caitlin Maher,Cassandra Neylan,8-5,8,5,1,0,Completed,true,false,false
+AP010102,14 Dec 19,10,Mt Eliza,Royal South Yarra,No. 1,Victoria Stewart,Audrey Teo,Victoria Stewart,8-4,8,4,1,0,Completed,true,false,false
+AP010102,14 Dec 19,10,Mt Eliza,Royal South Yarra,No. 2,Summer Jones,Danielja Mijic,Summer Jones,8-4,8,4,1,0,Completed,true,false,false
+AP010102,14 Dec 19,10,Mt Eliza,Royal South Yarra,No. 3,Airlie Young,Chelsea Stergiopoulos,Airlie Young,8-7,8,7,1,0,Completed,true,false,false
+AP010102,14 Dec 19,10,Mt Eliza,Royal South Yarra,No. 4,Lola Vuletic,Vivienne Johnston,Lola Vuletic,8-5,8,5,1,0,Completed,true,false,false
+AP010103,14 Dec 19,10,Dendy Park,MCC Glen Iris,No. 1,Zahra Kalena,Brooke Starling,Brooke Starling,1-8,1,8,0,1,Completed,true,false,false
+AP010103,14 Dec 19,10,Dendy Park,MCC Glen Iris,No. 2,Danaya Malendan,Romy Stephens,Romy Stephens,0-8,0,8,0,1,Completed,true,true,true
+AP010103,14 Dec 19,10,Dendy Park,MCC Glen Iris,No. 3,Emily Collins,Linley Wade,Linley Wade,2-8,2,8,0,1,Completed,true,false,false
+AP010103,14 Dec 19,10,Dendy Park,MCC Glen Iris,No. 4,Elizabeth Carnes,Louise Anderson,Louise Anderson,1-8,1,8,0,1,Completed,true,true,false
+AP010104,14 Dec 19,10,BLTC 1,BLTC 2,No. 1,Rosemary Everett,Kara Wolstencroft,Rosemary Everett,8-6,8,6,1,0,Completed,true,false,false
+AP010104,14 Dec 19,10,BLTC 1,BLTC 2,No. 2,Charlotte Anderson,Caterina Cerantonio,Charlotte Anderson,8-1,8,1,1,0,Completed,true,false,false
+AP010104,14 Dec 19,10,BLTC 1,BLTC 2,No. 3,Mietta Brodie-Arter,Peta Allan,Peta Allan,2-8,2,8,0,1,Completed,true,false,false
+AP010104,14 Dec 19,10,BLTC 1,BLTC 2,No. 4,Rachael Dickinson,Cassandra Neylan,Rachael Dickinson,8-3,8,3,1,0,Completed,true,false,false
+AP010121,08 Feb 20,12,BLTC 2,MCC Glen Iris,No. 1,Kara Wolstencroft,Brooke Starling,Brooke Starling,2-8,2,8,0,1,Completed,true,false,false
+AP010121,08 Feb 20,12,BLTC 2,MCC Glen Iris,No. 2,Caterina Cerantonio,Frederique Boonstra,Frederique Boonstra,1-8,1,8,0,1,Completed,true,false,false
+AP010121,08 Feb 20,12,BLTC 2,MCC Glen Iris,No. 3,Peta Allan,Amelia Mills,Amelia Mills,3-8,3,8,0,1,Completed,true,false,false
+AP010121,08 Feb 20,12,BLTC 2,MCC Glen Iris,No. 4,Sophie Christie,Louise Anderson,Louise Anderson,5-8,5,8,0,1,Completed,true,false,false
+AP010122,08 Feb 20,12,GPHC,Mt Eliza,No. 1,Zoe Barbakos,Emily Martin,Zoe Barbakos,8-6,8,6,1,0,Completed,true,false,false
+AP010122,08 Feb 20,12,GPHC,Mt Eliza,No. 2,Charlotte McIntosh,Amelia Charlton,Charlotte McIntosh,8-3,8,3,1,0,Completed,true,false,false
+AP010122,08 Feb 20,12,GPHC,Mt Eliza,No. 3,Candice Clements,Victoria Stewart,Victoria Stewart,3-8,3,8,0,1,Completed,true,false,false
+AP010122,08 Feb 20,12,GPHC,Mt Eliza,No. 4,Bonnie Dowding,Summer Jones,Summer Jones,6-8,6,8,0,1,Completed,true,false,false
+AP010123,08 Feb 20,12,Dendy Park,BLTC 1,No. 1,Jasmine Ellis,Rosemary Everett,Rosemary Everett,4-8,4,8,0,1,Completed,true,false,false
+AP010123,08 Feb 20,12,Dendy Park,BLTC 1,No. 2,Zahra Kalena,Charlotte Anderson,Zahra Kalena,8-7,8,7,1,0,Completed,true,false,false
+AP010123,08 Feb 20,12,Dendy Park,BLTC 1,No. 3,Emily Collins,Alexia Liparote,Alexia Liparote,1-8,1,8,0,1,Completed,true,false,false
+AP010123,08 Feb 20,12,Dendy Park,BLTC 1,No. 4,Molly Ritchie,Sophie Johnson,Molly Ritchie,8-0,8,0,1,0,Completed,true,false,false
+AP010133,15 Feb 20,13,BLTC 1,GPHC,No. 1,Charlotte Anderson,Miranda Poile,Miranda Poile,2-8,2,8,0,1,Completed,true,false,false
+AP010133,15 Feb 20,13,BLTC 1,GPHC,No. 2,Mietta Brodie-Arter,Zoe Barbakos,Zoe Barbakos,3-8,3,8,0,1,Completed,true,false,false
+AP010133,15 Feb 20,13,BLTC 1,GPHC,No. 3,Simone Dunker,Bonnie Dowding,Simone Dunker,8-1,8,1,1,0,Completed,true,true,false
+AP010133,15 Feb 20,13,BLTC 1,GPHC,No. 4,Sophie Johnson,Caitlin Maher,Caitlin Maher,5-8,5,8,0,1,Completed,true,false,false
+AP010134,15 Feb 20,13,Mt Eliza,Dendy Park,No. 1,Emily Martin,Juliet McKenzie,Emily Martin,8-5,8,5,1,0,Completed,true,false,false
+AP010134,15 Feb 20,13,Mt Eliza,Dendy Park,No. 2,Victoria Stewart,Zahra Kalena,Victoria Stewart,8-7,8,7,1,0,Completed,true,false,false
+AP010134,15 Feb 20,13,Mt Eliza,Dendy Park,No. 3,Summer Jones,Saskia Komljenovic,Summer Jones,8-5,8,5,1,0,Completed,true,false,false
+AP010134,15 Feb 20,13,Mt Eliza,Dendy Park,No. 4,Airlie Young,Emily Collins,Airlie Young,8-1,8,1,1,0,Completed,true,false,false
+AP010143,22 Feb 20,14,BLTC 1,Mt Eliza,No. 1,Charlotte Anderson,Victoria Stewart,Victoria Stewart,1-8,1,8,0,1,Completed,true,false,false
+AP010143,22 Feb 20,14,BLTC 1,Mt Eliza,No. 2,[Unnamed emergency — TROLS AP010143 home code 2],Summer Jones,Summer Jones,0-8,0,8,0,1,Completed,false,true,false
+AP010143,22 Feb 20,14,BLTC 1,Mt Eliza,No. 3,Mietta Brodie-Arter,Airlie Young,Airlie Young,0-8,0,8,0,1,Completed,true,false,false
+AP010143,22 Feb 20,14,BLTC 1,Mt Eliza,No. 4,Sophie Johnson,Hope Backx,Hope Backx,3-8,3,8,0,1,Completed,true,false,true
+AP010144,22 Feb 20,14,Dendy Park,GPHC,No. 1,Jasmine Ellis,Miranda Poile,Miranda Poile,2-8,2,8,0,1,Completed,true,false,false
+AP010144,22 Feb 20,14,Dendy Park,GPHC,No. 2,Juliet McKenzie,Zoe Barbakos,Zoe Barbakos,2-8,2,8,0,1,Completed,true,false,false
+AP010144,22 Feb 20,14,Dendy Park,GPHC,No. 3,Celina Yang,Charlotte McIntosh,Charlotte McIntosh,3-8,3,8,0,1,Completed,true,false,false
+AP010144,22 Feb 20,14,Dendy Park,GPHC,No. 4,Zahra Kalena,[Unnamed emergency — TROLS AP010144 away code 4],Zahra Kalena,8-0,8,0,1,0,Completed,false,false,true
+AP010301,,16,MCC Glen Iris,Royal South Yarra,No. 1,Brooke Starling,Audrey Teo,Audrey Teo,4-8,4,8,0,1,Completed,true,false,false
+AP010301,,16,MCC Glen Iris,Royal South Yarra,No. 2,Frederique Boonstra,Samantha Ritchie,Frederique Boonstra,8-2,8,2,1,0,Completed,true,false,true
+AP010301,,16,MCC Glen Iris,Royal South Yarra,No. 3,Elizabeth Kalyvas,Rachael McRae,Rachael McRae,2-8,2,8,0,1,Completed,true,false,false
+AP010301,,16,MCC Glen Iris,Royal South Yarra,No. 4,Linley Wade,Caroline Szafranski,Caroline Szafranski,4-8,4,8,0,1,Completed,true,false,false
+AP010302,,16,Mt Eliza,GPHC,No. 1,Victoria Stewart,Miranda Poile,Miranda Poile,0-8,0,8,0,1,Completed,true,false,false
+AP010302,,16,Mt Eliza,GPHC,No. 2,Summer Jones,Zoe Barbakos,Zoe Barbakos,3-8,3,8,0,1,Completed,true,false,false
+AP010302,,16,Mt Eliza,GPHC,No. 3,Airlie Young,Candice Clements,Airlie Young,8-0,8,0,1,0,Completed,true,false,false
+AP010302,,16,Mt Eliza,GPHC,No. 4,Lola Vuletic,Caitlin Maher,Lola Vuletic,8-1,8,1,1,0,Completed,true,false,false

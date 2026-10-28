@@ -1,0 +1,61 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP034011,02 Oct 10,1,regular,Round 1,Glen Huntly,Bentleigh Rec,0,10,0,8,,,5,56,Completed,
+AP034013,02 Oct 10,1,regular,Round 1,Dendy Park 1,Dendy Park 2,7,3,5,4,,,52,49,Completed,
+AP034014,02 Oct 10,1,regular,Round 1,Mordialloc 1,Mordialloc 2,10,0,8,0,,,56,18,Completed,
+pending-ap034-r1-maccabi-bye,02 Oct 10,1,regular,Round 1,Maccabi,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP034021,09 Oct 10,2,regular,Round 2,Mordialloc 2,Glen Huntly,10,0,8,0,,,57,16,Completed,
+AP034022,09 Oct 10,2,regular,Round 2,Bentleigh Rec,Maccabi,9,1,7,1,,,53,28,Completed,
+AP034024,09 Oct 10,2,regular,Round 2,Dendy Park 2,Mordialloc 1,2,8,2,6,,,29,44,Completed,
+pending-ap034-r2-bye-dendy-park-1,09 Oct 10,2,regular,Round 2,Bye,Dendy Park 1,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP034031,16 Oct 10,3,regular,Round 3,Glen Huntly,Dendy Park 2,1,9,2,6,,,25,55,Completed,
+AP034032,16 Oct 10,3,regular,Round 3,Maccabi,Mordialloc 2,0.5,9.5,0,7,,,27,51,Completed,
+pending-ap034-r3-dendy-park-1-bentleigh-rec,16 Oct 10,3,regular,Round 3,Dendy Park 1,Bentleigh Rec,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap034-r3-mordialloc-1-bye,16 Oct 10,3,regular,Round 3,Mordialloc 1,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP034043,23 Oct 10,4,regular,Round 4,Mordialloc 2,Dendy Park 1,10,0,8,0,,,56,24,Completed,
+AP034044,23 Oct 10,4,regular,Round 4,Bentleigh Rec,Mordialloc 1,9,1,7,1,,,56,23,Completed,
+pending-ap034-r4-bye-glen-huntly,23 Oct 10,4,regular,Round 4,Bye,Glen Huntly,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap034-r4-dendy-park-2-maccabi,23 Oct 10,4,regular,Round 4,Dendy Park 2,Maccabi,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP034051,06 Nov 10,5,regular,Round 5,Dendy Park 1,Mordialloc 1,3,7,4,5,,,50,45,Completed,
+AP034052,06 Nov 10,5,regular,Round 5,Mordialloc 2,Dendy Park 2,8,2,6,3,,,52,42,Completed,
+AP034054,06 Nov 10,5,regular,Round 5,Glen Huntly,Maccabi,0,10,0,8,,,12,56,Completed,
+pending-ap034-r5-bye-bentleigh-rec,06 Nov 10,5,regular,Round 5,Bye,Bentleigh Rec,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap034-r6-bentleigh-rec-mordialloc-2,13 Nov 10,6,regular,Round 6,Bentleigh Rec,Mordialloc 2,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap034-r6-dendy-park-2-bye,13 Nov 10,6,regular,Round 6,Dendy Park 2,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap034-r6-maccabi-dendy-park-1,13 Nov 10,6,regular,Round 6,Maccabi,Dendy Park 1,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap034-r6-mordialloc-1-glen-huntly,13 Nov 10,6,regular,Round 6,Mordialloc 1,Glen Huntly,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP034071,20 Nov 10,7,regular,Round 7,Glen Huntly,Dendy Park 1,0,10,0,8,,,21,57,Completed,
+AP034072,20 Nov 10,7,regular,Round 7,Maccabi,Mordialloc 1,8,2,6,3,,,52,40,Completed,
+AP034074,20 Nov 10,7,regular,Round 7,Dendy Park 2,Bentleigh Rec,1,9,1,7,,,25,54,Completed,
+pending-ap034-r7-mordialloc-2-bye,20 Nov 10,7,regular,Round 7,Mordialloc 2,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP034081,27 Nov 10,8,regular,Round 8,Bentleigh Rec,Glen Huntly,5,5,0,0,,,0,0,Completed,
+AP034084,27 Nov 10,8,regular,Round 8,Mordialloc 2,Mordialloc 1,5.5,4.5,1,0,,,21,17,Completed,
+pending-ap034-r8-bye-maccabi,27 Nov 10,8,regular,Round 8,Bye,Maccabi,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap034-r8-dendy-park-2-dendy-park-1,27 Nov 10,8,regular,Round 8,Dendy Park 2,Dendy Park 1,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP034091,04 Dec 10,9,regular,Round 9,Glen Huntly,Mordialloc 2,0,10,0,8,,,20,56,Completed,
+AP034092,04 Dec 10,9,regular,Round 9,Maccabi,Bentleigh Rec,1,9,1,7,,,26,54,Completed,
+AP034094,04 Dec 10,9,regular,Round 9,Mordialloc 1,Dendy Park 2,7,3,5,4,,,48,35,Completed,
+pending-ap034-r9-dendy-park-1-bye,04 Dec 10,9,regular,Round 9,Dendy Park 1,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP034101,11 Dec 10,10,regular,Round 10,Dendy Park 2,Glen Huntly,10,0,8,1,,,60,18,Completed,
+AP034102,11 Dec 10,10,regular,Round 10,Mordialloc 2,Maccabi,8,2,5,3,,,54,40,Completed,
+AP034103,11 Dec 10,10,regular,Round 10,Bentleigh Rec,Dendy Park 1,8,2,6,3,,,49,29,Completed,
+pending-ap034-r10-bye-mordialloc-1,11 Dec 10,10,regular,Round 10,Bye,Mordialloc 1,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap034-r11-dendy-park-1-mordialloc-2,05 Feb 11,11,regular,Round 11,Dendy Park 1,Mordialloc 2,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap034-r11-glen-huntly-bye,05 Feb 11,11,regular,Round 11,Glen Huntly,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap034-r11-maccabi-dendy-park-2,05 Feb 11,11,regular,Round 11,Maccabi,Dendy Park 2,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap034-r11-mordialloc-1-bentleigh-rec,05 Feb 11,11,regular,Round 11,Mordialloc 1,Bentleigh Rec,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP034121,12 Feb 11,12,regular,Round 12,Mordialloc 1,Dendy Park 1,8,2,5,3,,,46,38,Completed,
+AP034122,12 Feb 11,12,regular,Round 12,Dendy Park 2,Mordialloc 2,1,9,1,7,,,28,51,Completed,
+AP034124,12 Feb 11,12,regular,Round 12,Maccabi,Glen Huntly,10,0,8,0,,,56,15,Completed,
+pending-ap034-r12-bentleigh-rec-bye,12 Feb 11,12,regular,Round 12,Bentleigh Rec,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP034131,19 Feb 11,13,regular,Round 13,Dendy Park 1,Maccabi,2,8,3,5,,,28,42,Completed,
+AP034132,19 Feb 11,13,regular,Round 13,Glen Huntly,Mordialloc 1,1,9,1,7,,,34,55,Completed,
+AP034134,19 Feb 11,13,regular,Round 13,Mordialloc 2,Bentleigh Rec,2,8,3,5,,,42,50,Completed,
+pending-ap034-r13-bye-dendy-park-2,19 Feb 11,13,regular,Round 13,Bye,Dendy Park 2,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP034141,26 Feb 11,14,regular,Round 14,Dendy Park 1,Glen Huntly,9,1,7,2,,,60,40,Completed,
+AP034142,26 Feb 11,14,regular,Round 14,Mordialloc 1,Maccabi,2,8,3,6,,,45,54,Completed,
+AP034144,26 Feb 11,14,regular,Round 14,Bentleigh Rec,Dendy Park 2,9,1,7,2,,,56,32,Completed,
+pending-ap034-r14-bye-mordialloc-2,26 Feb 11,14,regular,Round 14,Bye,Mordialloc 2,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP034301,,16,semi_final,Semi-final,Bentleigh Rec,Mordialloc 2,7.5,2.5,5,2,,,45,27,Completed,
+AP034302,,16,semi_final,Semi-final,Mordialloc 1,Maccabi,8,2,6,2,,,48,24,Completed,
+AP034311,,16,semi_final,Semi-final,Mordialloc 2,Mordialloc 1,8,2,6,3,,,50,49,Completed,
+AP034321,,17,grand_final,Grand final · TROLS entry 2,Bentleigh Rec,Mordialloc 2,7.5,2.5,5,2,,,44,27,Completed,

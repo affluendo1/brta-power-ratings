@@ -1,0 +1,92 @@
+{
+  "asset_id": "AP35-AP007",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Winter 2017",
+  "season_id": "AP35",
+  "season_label": "Winter 2017",
+  "source_section_code": "AP007",
+  "section_label": "Mixed Rubbers 5",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "MCC Glen Iris",
+      "wins": 11,
+      "points": 104,
+      "percentage": 189.42,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Ormond",
+      "wins": 9,
+      "points": 75,
+      "percentage": 113.96,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "BLTC",
+      "wins": 8,
+      "points": 68,
+      "percentage": 105.57,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Kings Park",
+      "wins": 6,
+      "points": 50,
+      "percentage": 85.69,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "St Pats Mentone",
+      "wins": 4,
+      "points": 39,
+      "percentage": 83.86,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Hawthorn",
+      "wins": 1,
+      "points": 24,
+      "percentage": 59.94,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP35-AP007",
+  "fixtures": 47,
+  "completed_fixtures": 43,
+  "draw_fixtures": 57,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 170,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP007011 doubles No. 1: '6-3 1-0'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP007041 doubles No. 3: '1-6 6-6'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP007041 doubles No. 4: '6-4 3-4'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP007321 doubles No. 3: '6-7 1-1'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

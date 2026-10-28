@@ -1,0 +1,91 @@
+{
+  "asset_id": "AP25-AP003",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Winter 2012",
+  "season_id": "AP25",
+  "season_label": "Winter 2012",
+  "source_section_code": "AP003",
+  "section_label": "Mens Sets 1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "MCC",
+      "wins": 9,
+      "points": 88.5,
+      "percentage": 198.61,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Albert Park",
+      "wins": 6,
+      "points": 72,
+      "percentage": 134.15,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Parkdale",
+      "wins": 6,
+      "points": 71,
+      "percentage": 117.03,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Glen Huntly",
+      "wins": 7,
+      "points": 65,
+      "percentage": 100.8,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Port Melbourne",
+      "wins": 3,
+      "points": 55,
+      "percentage": 85.0,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Stella Maris",
+      "wins": 0,
+      "points": 8.5,
+      "percentage": 40.68,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 1,
+    "doublesTarget": 10,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP25-AP003",
+  "fixtures": 47,
+  "completed_fixtures": 41,
+  "draw_fixtures": 57,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 148,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP003102 doubles No. 1: '0-2'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP003102 doubles No. 2: '0-3'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP003123 doubles No. 2: '4-2'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

@@ -1,0 +1,101 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP007011,04 May 24,1,Chadstone,Patterson Lakes,No. 1,Max Ingram,Kane Bailey,Kane Bailey,0-8,0,8,0,1,Completed,true,false,false
+AP007011,04 May 24,1,Chadstone,Patterson Lakes,No. 2,Angus Roller,James Yuan,Angus Roller,8-6,8,6,1,0,Completed,true,false,false
+AP007011,04 May 24,1,Chadstone,Patterson Lakes,No. 3,Ben Martin,Peng Zhang,Ben Martin,8-1,8,1,1,0,Completed,true,false,false
+AP007011,04 May 24,1,Chadstone,Patterson Lakes,No. 4,Laura Mazzarella,Riley Kernutt,Laura Mazzarella,8-7,8,7,1,0,Completed,true,false,false
+AP007012,04 May 24,1,Clarinda,Sandringham,No. 1,David James,Paul Claxton,Paul Claxton,4-8,4,8,0,1,Completed,true,false,false
+AP007012,04 May 24,1,Clarinda,Sandringham,No. 2,Alan Ko,Jason Clarke,Jason Clarke,1-8,1,8,0,1,Completed,true,false,false
+AP007012,04 May 24,1,Clarinda,Sandringham,No. 3,Vincent Wen,Craig Shwerdt,Craig Shwerdt,4-8,4,8,0,1,Completed,true,false,false
+AP007012,04 May 24,1,Clarinda,Sandringham,No. 4,Jackson Balalovski,Steuart Roe,Steuart Roe,2-8,2,8,0,1,Completed,true,false,false
+AP007022,11 May 24,2,Sandringham,St Pats Mentone,No. 1,Paul Claxton,Sam Clayton,Paul Claxton,8-6,8,6,1,0,Completed,true,false,false
+AP007022,11 May 24,2,Sandringham,St Pats Mentone,No. 2,Gavan Wright,Nick Hall,Gavan Wright,8-2,8,2,1,0,Completed,true,false,false
+AP007022,11 May 24,2,Sandringham,St Pats Mentone,No. 3,Jason Clarke,Mike De Silva,Jason Clarke,8-2,8,2,1,0,Completed,true,false,false
+AP007022,11 May 24,2,Sandringham,St Pats Mentone,No. 4,Steuart Roe,Peter Panos,Steuart Roe,8-2,8,2,1,0,Completed,true,false,true
+AP007031,18 May 24,3,Chadstone,Clarinda,No. 1,Max Ingram,David James,David James,1-8,1,8,0,1,Completed,true,false,false
+AP007031,18 May 24,3,Chadstone,Clarinda,No. 2,Angus Roller,Tri Dinh,Angus Roller,8-6,8,6,1,0,Completed,true,false,false
+AP007031,18 May 24,3,Chadstone,Clarinda,No. 3,Laura Mazzarella,Yihai Fang,Yihai Fang,0-8,0,8,0,1,Completed,true,false,false
+AP007031,18 May 24,3,Chadstone,Clarinda,No. 4,Julia Merkouris,Vincent Wen,Vincent Wen,4-8,4,8,0,1,Completed,true,true,false
+AP007032,18 May 24,3,St Pats Mentone,Patterson Lakes,No. 1,Cameron De Silva,James Yuan,Cameron De Silva,8-2,8,2,1,0,Completed,true,false,false
+AP007032,18 May 24,3,St Pats Mentone,Patterson Lakes,No. 2,Alex Chingarev,Peng Zhang,Alex Chingarev,8-1,8,1,1,0,Completed,true,false,false
+AP007032,18 May 24,3,St Pats Mentone,Patterson Lakes,No. 3,Nick Hall,Riley Kernutt,Nick Hall,8-5,8,5,1,0,Completed,true,false,false
+AP007032,18 May 24,3,St Pats Mentone,Patterson Lakes,No. 4,Mike De Silva,Emma Zhao,Mike De Silva,8-3,8,3,1,0,Completed,true,false,false
+AP007041,25 May 24,4,Sandringham,Chadstone,No. 1,Paul Claxton,Angus Roller,Paul Claxton,8-3,8,3,1,0,Completed,true,false,false
+AP007041,25 May 24,4,Sandringham,Chadstone,No. 2,Craig Shwerdt,Greg Piper,Greg Piper,3-8,3,8,0,1,Completed,true,false,false
+AP007041,25 May 24,4,Sandringham,Chadstone,No. 3,Mark Creelman,Ben Martin,Mark Creelman,8-1,8,1,1,0,Completed,true,false,false
+AP007041,25 May 24,4,Sandringham,Chadstone,No. 4,Paul Woff,Danielle Fisher,Paul Woff,8-1,8,1,1,0,Completed,true,false,false
+AP007043,25 May 24,4,Clarinda,St Pats Mentone,No. 1,David James,Alex Chingarev,David James,8-7,8,7,1,0,Completed,true,false,false
+AP007043,25 May 24,4,Clarinda,St Pats Mentone,No. 2,Yihai Fang,David Lawry,David Lawry,7-8,7,8,0,1,Completed,true,false,false
+AP007043,25 May 24,4,Clarinda,St Pats Mentone,No. 3,Vincent Wen,Nick Hall,Nick Hall,5-8,5,8,0,1,Completed,true,false,false
+AP007043,25 May 24,4,Clarinda,St Pats Mentone,No. 4,Jackson Balalovski,Mike De Silva,Mike De Silva,1-8,1,8,0,1,Completed,true,false,false
+AP007051,01 Jun 24,5,Chadstone,St Pats Mentone,No. 1,Angus Roller,Alex Chingarev,Alex Chingarev,3-8,3,8,0,1,Completed,true,false,false
+AP007051,01 Jun 24,5,Chadstone,St Pats Mentone,No. 2,Greg Piper,Sam Clayton,Greg Piper,8-0,8,0,1,0,Completed,true,false,false
+AP007051,01 Jun 24,5,Chadstone,St Pats Mentone,No. 3,Ben Martin,Nick Hall,Ben Martin,8-5,8,5,1,0,Completed,true,false,false
+AP007051,01 Jun 24,5,Chadstone,St Pats Mentone,No. 4,Natalie Menchikova,Mike De Silva,Natalie Menchikova,8-6,8,6,1,0,Completed,true,true,false
+AP007052,01 Jun 24,5,Sandringham,Patterson Lakes,No. 1,Paul Claxton,Brett Willmott,Brett Willmott,3-8,3,8,0,1,Completed,true,false,false
+AP007052,01 Jun 24,5,Sandringham,Patterson Lakes,No. 2,Mark Creelman,James Yuan,Mark Creelman,8-7,8,7,1,0,Completed,true,false,false
+AP007052,01 Jun 24,5,Sandringham,Patterson Lakes,No. 3,Steuart Roe,Riley Kernutt,Steuart Roe,8-3,8,3,1,0,Completed,true,false,false
+AP007052,01 Jun 24,5,Sandringham,Patterson Lakes,No. 4,Gary Young,Emma Zhao,Gary Young,8-1,8,1,1,0,Completed,true,false,false
+AP007061,15 Jun 24,6,Patterson Lakes,Chadstone,No. 1,Kane Bailey,Max Ingram,Kane Bailey,8-0,8,0,1,0,Completed,true,false,false
+AP007061,15 Jun 24,6,Patterson Lakes,Chadstone,No. 2,James Yuan,Greg Piper,Greg Piper,5-8,5,8,0,1,Completed,true,false,false
+AP007061,15 Jun 24,6,Patterson Lakes,Chadstone,No. 3,Emma Robinson,John Grant,John Grant,3-8,3,8,0,1,Completed,true,false,false
+AP007061,15 Jun 24,6,Patterson Lakes,Chadstone,No. 4,Emma Zhao,Julia Merkouris,Julia Merkouris,4-8,4,8,0,1,Completed,true,false,true
+AP007062,15 Jun 24,6,Sandringham,Clarinda,No. 1,Paul Claxton,Tri Dinh,Tri Dinh,4-8,4,8,0,1,Completed,true,false,false
+AP007062,15 Jun 24,6,Sandringham,Clarinda,No. 2,Jason Clarke,Tung Lam,Tung Lam,6-8,6,8,0,1,Completed,true,false,false
+AP007062,15 Jun 24,6,Sandringham,Clarinda,No. 3,Mark Creelman,Alan Ko,Mark Creelman,8-1,8,1,1,0,Completed,true,false,false
+AP007062,15 Jun 24,6,Sandringham,Clarinda,No. 4,Steuart Roe,Vincent Wen,Vincent Wen,6-8,6,8,0,1,Completed,true,false,false
+AP007072,22 Jun 24,7,St Pats Mentone,Sandringham,No. 1,Cameron De Silva,Mark Creelman,Cameron De Silva,8-2,8,2,1,0,Completed,true,false,false
+AP007072,22 Jun 24,7,St Pats Mentone,Sandringham,No. 2,Alex Chingarev,David Byrne,Alex Chingarev,8-6,8,6,1,0,Completed,true,false,false
+AP007072,22 Jun 24,7,St Pats Mentone,Sandringham,No. 3,Sam Clayton,Chris Nguyen,Sam Clayton,8-3,8,3,1,0,Completed,true,false,false
+AP007072,22 Jun 24,7,St Pats Mentone,Sandringham,No. 4,David Lawry,Gary Young,David Lawry,8-3,8,3,1,0,Completed,true,false,false
+AP007073,22 Jun 24,7,Clarinda,Patterson Lakes,No. 1,David James,Marcelo Grosso,Marcelo Grosso,5-8,5,8,0,1,Completed,true,false,true
+AP007073,22 Jun 24,7,Clarinda,Patterson Lakes,No. 2,Tung Lam,James Yuan,Tung Lam,8-7,8,7,1,0,Completed,true,false,false
+AP007073,22 Jun 24,7,Clarinda,Patterson Lakes,No. 3,Vincent Wen,Peng Zhang,Peng Zhang,5-8,5,8,0,1,Completed,true,false,false
+AP007073,22 Jun 24,7,Clarinda,Patterson Lakes,No. 4,Jackson Balalovski,Riley Kernutt,Riley Kernutt,2-8,2,8,0,1,Completed,true,false,false
+AP007091,13 Jul 24,9,Chadstone,Sandringham,No. 1,Max Ingram,Paul Claxton,Paul Claxton,1-8,1,8,0,1,Completed,true,false,false
+AP007091,13 Jul 24,9,Chadstone,Sandringham,No. 2,Angus Roller,Jason Clarke,Jason Clarke,3-8,3,8,0,1,Completed,true,false,false
+AP007091,13 Jul 24,9,Chadstone,Sandringham,No. 3,Greg Piper,Craig Shwerdt,Craig Shwerdt,5-8,5,8,0,1,Completed,true,false,false
+AP007091,13 Jul 24,9,Chadstone,Sandringham,No. 4,John Grant,Mark Creelman,Mark Creelman,3-8,3,8,0,1,Completed,true,false,false
+AP007093,13 Jul 24,9,St Pats Mentone,Clarinda,No. 1,Alex Chingarev,David James,David James,5-8,5,8,0,1,Completed,true,false,false
+AP007093,13 Jul 24,9,St Pats Mentone,Clarinda,No. 2,Sam Clayton,Tri Dinh,Sam Clayton,8-5,8,5,1,0,Completed,true,false,false
+AP007093,13 Jul 24,9,St Pats Mentone,Clarinda,No. 3,David Lawry,Alan Ko,David Lawry,8-4,8,4,1,0,Completed,true,false,false
+AP007093,13 Jul 24,9,St Pats Mentone,Clarinda,No. 4,Nick Hall,Vincent Wen,Nick Hall,8-1,8,1,1,0,Completed,true,false,false
+AP007101,20 Jul 24,10,St Pats Mentone,Chadstone,No. 1,Alex Chingarev,Greg Piper,Greg Piper,7-8,7,8,0,1,Completed,true,false,false
+AP007101,20 Jul 24,10,St Pats Mentone,Chadstone,No. 2,Sam Clayton,Ben Martin,Sam Clayton,8-5,8,5,1,0,Completed,true,false,false
+AP007101,20 Jul 24,10,St Pats Mentone,Chadstone,No. 3,David Lawry,Danielle Fisher,David Lawry,8-4,8,4,1,0,Completed,true,false,false
+AP007101,20 Jul 24,10,St Pats Mentone,Chadstone,No. 4,Mike De Silva,Laura Mazzarella,Mike De Silva,8-4,8,4,1,0,Completed,true,false,false
+AP007122,03 Aug 24,12,Sandringham,St Pats Mentone,No. 1,Paul Claxton,Cameron De Silva,Cameron De Silva,5-8,5,8,0,1,Completed,true,false,false
+AP007122,03 Aug 24,12,Sandringham,St Pats Mentone,No. 2,Jason Clarke,Alex Chingarev,Alex Chingarev,6-8,6,8,0,1,Completed,true,false,false
+AP007122,03 Aug 24,12,Sandringham,St Pats Mentone,No. 3,Craig Shwerdt,Sam Clayton,Craig Shwerdt,8-6,8,6,1,0,Completed,true,false,false
+AP007122,03 Aug 24,12,Sandringham,St Pats Mentone,No. 4,Mark Creelman,Nick Hall,Mark Creelman,8-7,8,7,1,0,Completed,true,false,false
+AP007123,03 Aug 24,12,Patterson Lakes,Clarinda,No. 1,Kane Bailey,David James,Kane Bailey,8-1,8,1,1,0,Completed,true,false,false
+AP007123,03 Aug 24,12,Patterson Lakes,Clarinda,No. 2,James Yuan,Yihai Fang,James Yuan,8-5,8,5,1,0,Completed,true,false,false
+AP007123,03 Aug 24,12,Patterson Lakes,Clarinda,No. 3,Peng Zhang,Alan Ko,Alan Ko,5-8,5,8,0,1,Completed,true,false,false
+AP007123,03 Aug 24,12,Patterson Lakes,Clarinda,No. 4,Riley Kernutt,Jackson Balalovski,Riley Kernutt,8-0,8,0,1,0,Completed,true,false,false
+AP007131,10 Aug 24,13,Chadstone,Clarinda,No. 1,Max Ingram,David James,David James,2-8,2,8,0,1,Completed,true,false,false
+AP007131,10 Aug 24,13,Chadstone,Clarinda,No. 2,Greg Piper,Tri Dinh,Tri Dinh,6-8,6,8,0,1,Completed,true,false,false
+AP007131,10 Aug 24,13,Chadstone,Clarinda,No. 3,Sam Thompson,Tung Lam,Tung Lam,5-8,5,8,0,1,Completed,true,true,false
+AP007131,10 Aug 24,13,Chadstone,Clarinda,No. 4,Laura Mazzarella,Jackson Balalovski,Laura Mazzarella,8-0,8,0,1,0,Completed,true,false,false
+AP007132,10 Aug 24,13,St Pats Mentone,Patterson Lakes,No. 1,Alex Chingarev,Kane Bailey,Kane Bailey,2-8,2,8,0,1,Completed,true,false,false
+AP007132,10 Aug 24,13,St Pats Mentone,Patterson Lakes,No. 2,Nick Hall,Marcelo Grosso,Marcelo Grosso,2-8,2,8,0,1,Completed,true,false,true
+AP007132,10 Aug 24,13,St Pats Mentone,Patterson Lakes,No. 3,James Campbell,Brett Willmott,Brett Willmott,0-8,0,8,0,1,Completed,true,false,false
+AP007132,10 Aug 24,13,St Pats Mentone,Patterson Lakes,No. 4,Hayden De Silva,Emma Robinson,Emma Robinson,1-8,1,8,0,1,Completed,true,true,false
+AP007141,17 Aug 24,14,Sandringham,Chadstone,No. 1,Paul Claxton,Rane Sese,Rane Sese,3-8,3,8,0,1,Completed,true,false,true
+AP007141,17 Aug 24,14,Sandringham,Chadstone,No. 2,Jason Clarke,Greg Piper,Jason Clarke,8-5,8,5,1,0,Completed,true,false,false
+AP007141,17 Aug 24,14,Sandringham,Chadstone,No. 3,Craig Shwerdt,Ben Martin,Craig Shwerdt,8-1,8,1,1,0,Completed,true,false,false
+AP007141,17 Aug 24,14,Sandringham,Chadstone,No. 4,Mark Creelman,Laura Mazzarella,Mark Creelman,8-2,8,2,1,0,Completed,true,false,false
+AP007143,17 Aug 24,14,Clarinda,St Pats Mentone,No. 1,David James,Cameron De Silva,Cameron De Silva,6-8,6,8,0,1,Completed,true,false,false
+AP007143,17 Aug 24,14,Clarinda,St Pats Mentone,No. 2,Tri Dinh,Alex Chingarev,Alex Chingarev,5-8,5,8,0,1,Completed,true,false,false
+AP007143,17 Aug 24,14,Clarinda,St Pats Mentone,No. 3,Yihai Fang,Michael Splatt,Michael Splatt,1-8,1,8,0,1,Completed,true,false,true
+AP007143,17 Aug 24,14,Clarinda,St Pats Mentone,No. 4,Vincent Wen,Peter Drodz,Peter Drodz,7-8,7,8,0,1,Completed,true,false,true
+AP007151,24 Aug 24,15,Chadstone,St Pats Mentone,No. 1,Angus Roller,Cameron De Silva,Cameron De Silva,3-8,3,8,0,1,Completed,true,false,false
+AP007151,24 Aug 24,15,Chadstone,St Pats Mentone,No. 2,Greg Piper,Alex Chingarev,Alex Chingarev,2-8,2,8,0,1,Completed,true,false,false
+AP007151,24 Aug 24,15,Chadstone,St Pats Mentone,No. 3,Ben Martin,Nick Hall,Nick Hall,2-8,2,8,0,1,Completed,true,false,false
+AP007151,24 Aug 24,15,Chadstone,St Pats Mentone,No. 4,Laura Mazzarella,James Campbell,James Campbell,0-8,0,8,0,1,Completed,true,false,false
+AP007152,24 Aug 24,15,Sandringham,Patterson Lakes,No. 1,Paul Claxton,Kane Bailey,Kane Bailey,4-8,4,8,0,1,Completed,true,false,false
+AP007152,24 Aug 24,15,Sandringham,Patterson Lakes,No. 2,Jason Clarke,Marcelo Grosso,Jason Clarke,8-7,8,7,1,0,Completed,true,false,true
+AP007152,24 Aug 24,15,Sandringham,Patterson Lakes,No. 3,Craig Shwerdt,Brett Willmott,Craig Shwerdt,8-4,8,4,1,0,Completed,true,false,false
+AP007152,24 Aug 24,15,Sandringham,Patterson Lakes,No. 4,Mark Creelman,Emma Robinson,Mark Creelman,8-4,8,4,1,0,Completed,true,false,false
+AP007321,,16,Sandringham,St Pats Mentone,No. 1,Paul Claxton,Cameron De Silva,Cameron De Silva,4-8,4,8,0,1,Completed,true,false,false
+AP007321,,16,Sandringham,St Pats Mentone,No. 2,Jason Clarke,Alex Chingarev,Alex Chingarev,7-8,7,8,0,1,Completed,true,false,false
+AP007321,,16,Sandringham,St Pats Mentone,No. 3,Craig Shwerdt,Sam Clayton,Craig Shwerdt,8-3,8,3,1,0,Completed,true,false,false
+AP007321,,16,Sandringham,St Pats Mentone,No. 4,Mark Creelman,Nick Hall,Mark Creelman,8-5,8,5,1,0,Completed,true,false,false

@@ -1,0 +1,60 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP002011,04 Oct 25,1,regular,Round 1,Willy Central,Bruce Park,0,10,0,8,,,26,56,Completed,
+AP002012,04 Oct 25,1,regular,Round 1,Mt Eliza,BLTC,2,8,4,5,,,53,51,Completed,
+AP002014,04 Oct 25,1,regular,Round 1,Black Rock,Altona Black,3,7,4,5,,,44,53,Completed,
+pending-ap002-r1-liston-green-liston-blue,04 Oct 25,1,regular,Round 1,Liston Green,Liston Blue,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP002021,11 Oct 25,2,regular,Round 2,Altona Black,Willy Central,8,2,6,3,,,56,45,Completed,
+AP002022,11 Oct 25,2,regular,Round 2,Bruce Park,Mt Eliza,1,9,3,7,,,44,60,Completed,
+AP002023,11 Oct 25,2,regular,Round 2,BLTC,Liston Green,10,0,8,1,,,63,34,Completed,
+AP002024,11 Oct 25,2,regular,Round 2,Liston Blue,Black Rock,1,9,2,7,,,46,58,Completed,
+AP002031,18 Oct 25,3,regular,Round 3,Willy Central,Liston Blue,8,2,6,3,,,52,43,Completed,
+AP002032,18 Oct 25,3,regular,Round 3,Mt Eliza,Altona Black,1,9,1,7,,,25,52,Completed,
+AP002033,18 Oct 25,3,regular,Round 3,Liston Green,Bruce Park,8,2,5,3,,,44,43,Completed,
+AP002034,18 Oct 25,3,regular,Round 3,Black Rock,BLTC,1,9,2,7,,,42,57,Completed,
+AP002041,25 Oct 25,4,regular,Round 4,BLTC,Willy Central,10,0,8,0,,,56,16,Completed,
+AP002042,25 Oct 25,4,regular,Round 4,Liston Blue,Mt Eliza,7,3,5,4,,,51,42,Completed,
+AP002043,25 Oct 25,4,regular,Round 4,Altona Black,Liston Green,10,0,8,0,,,56,18,Completed,
+AP002044,25 Oct 25,4,regular,Round 4,Bruce Park,Black Rock,2,8,3,5,,,34,42,Completed,
+pending-ap002-r5-altona-black-liston-blue,08 Nov 25,5,regular,Round 5,Altona Black,Liston Blue,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap002-r5-bltc-bruce-park,08 Nov 25,5,regular,Round 5,BLTC,Bruce Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap002-r5-liston-green-black-rock,08 Nov 25,5,regular,Round 5,Liston Green,Black Rock,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap002-r5-willy-central-mt-eliza,08 Nov 25,5,regular,Round 5,Willy Central,Mt Eliza,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP002061,15 Nov 25,6,regular,Round 6,Mt Eliza,Liston Green,7,3,5,4,,,53,53,Completed,
+AP002062,15 Nov 25,6,regular,Round 6,Black Rock,Willy Central,10,0,8,0,,,57,29,Completed,
+AP002063,15 Nov 25,6,regular,Round 6,Liston Blue,BLTC,5,5,4,4,,,38,38,Completed,
+AP002064,15 Nov 25,6,regular,Round 6,Bruce Park,Altona Black,1,9,1,7,,,23,52,Completed,
+AP002071,22 Nov 25,7,regular,Round 7,Willy Central,Liston Green,8,2,5,3,,,48,39,Completed,
+AP002072,22 Nov 25,7,regular,Round 7,Mt Eliza,Black Rock,1,9,2,7,,,34,61,Completed,
+AP002073,22 Nov 25,7,regular,Round 7,Altona Black,BLTC,1,9,2,7,,,48,57,Completed,
+AP002074,22 Nov 25,7,regular,Round 7,Liston Blue,Bruce Park,3,7,4,5,,,45,47,Completed,
+AP002081,29 Nov 25,8,regular,Round 8,Bruce Park,Willy Central,7,3,5,4,,,50,46,Completed,
+AP002082,29 Nov 25,8,regular,Round 8,BLTC,Mt Eliza,10,0,8,0,,,57,29,Completed,
+AP002083,29 Nov 25,8,regular,Round 8,Liston Blue,Liston Green,4,6,2,4,,,25,37,Completed,
+AP002084,29 Nov 25,8,regular,Round 8,Altona Black,Black Rock,9,1,7,1,,,54,36,Completed,
+AP002091,06 Dec 25,9,regular,Round 9,Willy Central,Altona Black,8,2,4,4,,,39,42,Completed,
+pending-ap002-r9-black-rock-liston-blue,06 Dec 25,9,regular,Round 9,Black Rock,Liston Blue,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap002-r9-liston-green-bltc,06 Dec 25,9,regular,Round 9,Liston Green,BLTC,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap002-r9-mt-eliza-bruce-park,06 Dec 25,9,regular,Round 9,Mt Eliza,Bruce Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP002101,13 Dec 25,10,regular,Round 10,Liston Blue,Willy Central,2,8,3,6,,,38,54,Completed,
+AP002103,13 Dec 25,10,regular,Round 10,Bruce Park,Liston Green,10,0,8,0,,,57,26,Completed,
+AP002104,13 Dec 25,10,regular,Round 10,BLTC,Black Rock,8,2,6,3,,,56,47,Completed,
+pending-ap002-r10-altona-black-mt-eliza,13 Dec 25,10,regular,Round 10,Altona Black,Mt Eliza,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP002111,07 Feb 26,11,regular,Round 11,Willy Central,BLTC,8,2,5,3,,,47,33,Completed,
+AP002113,07 Feb 26,11,regular,Round 11,Liston Green,Altona Black,1,9,1,7,,,26,54,Completed,
+AP002114,07 Feb 26,11,regular,Round 11,Black Rock,Bruce Park,8,2,5,4,,,54,38,Completed,
+pending-ap002-r11-mt-eliza-liston-blue,07 Feb 26,11,regular,Round 11,Mt Eliza,Liston Blue,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP002121,14 Feb 26,12,regular,Round 12,Black Rock,Liston Green,8,2,6,3,,,51,37,Completed,
+AP002122,14 Feb 26,12,regular,Round 12,Liston Blue,Altona Black,0,10,1,8,,,22,61,Completed,
+AP002123,14 Feb 26,12,regular,Round 12,Bruce Park,BLTC,1,9,1,7,,,32,51,Completed,
+AP002124,14 Feb 26,12,regular,Round 12,Mt Eliza,Willy Central,3,7,4,5,,,44,50,Completed,
+AP002131,21 Feb 26,13,regular,Round 13,Liston Green,Mt Eliza,5,5,5,5,,,62,62,Completed,
+AP002132,21 Feb 26,13,regular,Round 13,Willy Central,Black Rock,8,2,6,4,,,58,47,Completed,
+AP002133,21 Feb 26,13,regular,Round 13,BLTC,Liston Blue,8,2,6,2,,,47,34,Completed,
+AP002134,21 Feb 26,13,regular,Round 13,Altona Black,Bruce Park,10,0,8,0,,,56,24,Completed,
+AP002141,28 Feb 26,14,regular,Round 14,Liston Green,Willy Central,8,2,5,3,,,48,31,Completed,
+AP002142,28 Feb 26,14,regular,Round 14,Black Rock,Mt Eliza,2,8,3,6,,,49,53,Completed,
+AP002143,28 Feb 26,14,regular,Round 14,BLTC,Altona Black,1,9,2,7,,,32,49,Completed,
+AP002144,28 Feb 26,14,regular,Round 14,Bruce Park,Liston Blue,3,7,5,5,,,53,58,Completed,
+AP002301,,16,semi_final,Semi-final,Altona Black,Willy Central,9,1,7,2,,,58,38,Completed,
+AP002302,,16,semi_final,Semi-final,BLTC,Black Rock,7,3,4,4,,,48,46,Completed,
+AP002321,,17,grand_final,Grand final · TROLS entry 2,Altona Black,BLTC,7.5,2.5,5,2,,,45,43,Completed,

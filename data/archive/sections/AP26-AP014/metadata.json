@@ -1,0 +1,112 @@
+{
+  "asset_id": "AP26-AP014",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 12/13",
+  "season_id": "AP26",
+  "season_label": "Summer 12/13",
+  "source_section_code": "AP014",
+  "section_label": "Mens S/D 1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Carmelite",
+      "wins": 4,
+      "points": 93,
+      "percentage": 160.73,
+      "marker": ""
+    },
+    {
+      "position": 2,
+      "team": "Scoresby",
+      "wins": 9,
+      "points": 89,
+      "percentage": 104.09,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Hampton",
+      "wins": 8,
+      "points": 85,
+      "percentage": 115.2,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "BLTC 2",
+      "wins": 5,
+      "points": 71,
+      "percentage": 117.89,
+      "marker": "P"
+    },
+    {
+      "position": 5,
+      "team": "GPHC",
+      "wins": 7,
+      "points": 71,
+      "percentage": 100.0,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Mt Eliza",
+      "wins": 5,
+      "points": 55,
+      "percentage": 80.5,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "BLTC 1",
+      "wins": 5,
+      "points": 55,
+      "percentage": 75.68,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "Dendy Park",
+      "wins": 2,
+      "points": 41,
+      "percentage": 73.32,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP26-AP014",
+  "fixtures": 60,
+  "completed_fixtures": 53,
+  "draw_fixtures": 60,
+  "singles_rubbers": 210,
+  "doubles_rubbers": 100,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP014012 singles No. 1: '0-'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP014012 singles No. 2: '0-'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP014012 singles No. 3: '0-'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP014012 singles No. 4: '0-'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP014012 doubles No. 1: '0-0'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP014012 doubles No. 2: '0-0'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP014301 doubles No. 2: '2-6 1-0'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP014302 doubles No. 2: '0-6 1-2'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

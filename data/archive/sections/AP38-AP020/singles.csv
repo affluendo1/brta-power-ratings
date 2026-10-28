@@ -1,0 +1,217 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP020011,06 Oct 18,1,BLTC,Mordialloc,No. 1,Mitch Pattinson,Harrison Davis,Harrison Davis,7-8,7,8,0,1,Completed,true,false,false
+AP020011,06 Oct 18,1,BLTC,Mordialloc,No. 2,Andrew Naughton,Daniel Forgie,Andrew Naughton,8-5,8,5,1,0,Completed,true,false,false
+AP020011,06 Oct 18,1,BLTC,Mordialloc,No. 3,Lochlan Friedrich,Cameron Bach,Lochlan Friedrich,8-0,8,0,1,0,Completed,true,false,false
+AP020011,06 Oct 18,1,BLTC,Mordialloc,No. 4,Scott Moore,Lachlan Jones,Lachlan Jones,6-8,6,8,0,1,Completed,true,false,false
+AP020012,06 Oct 18,1,Maccabi,Royal South Yarra 1,No. 1,Zvi Schweitzer,Oscar Lynagh,Oscar Lynagh,5-8,5,8,0,1,Completed,true,false,false
+AP020012,06 Oct 18,1,Maccabi,Royal South Yarra 1,No. 2,Ron Schweitzer,David Dunstan,David Dunstan,4-8,4,8,0,1,Completed,true,false,false
+AP020012,06 Oct 18,1,Maccabi,Royal South Yarra 1,No. 3,Paul Koltun,Michael Kirwan,Paul Koltun,8-3,8,3,1,0,Completed,true,false,false
+AP020012,06 Oct 18,1,Maccabi,Royal South Yarra 1,No. 4,Daniel Vertes,Darcy Albert,Daniel Vertes,8-3,8,3,1,0,Completed,true,false,false
+AP020013,06 Oct 18,1,Glen Huntly,Royal South Yarra 2,No. 1,Roger Yan,Matt Ritter,Roger Yan,8-3,8,3,1,0,Completed,true,false,false
+AP020013,06 Oct 18,1,Glen Huntly,Royal South Yarra 2,No. 2,Paul Laughton,Saul Cannon,Saul Cannon,3-8,3,8,0,1,Completed,true,false,false
+AP020013,06 Oct 18,1,Glen Huntly,Royal South Yarra 2,No. 3,Tony Luxmore,Jack Cannon,Tony Luxmore,8-2,8,2,1,0,Completed,true,false,false
+AP020013,06 Oct 18,1,Glen Huntly,Royal South Yarra 2,No. 4,Neo (peng Yu) Wang,Tom Ritter,Tom Ritter,0-8,0,8,0,1,Completed,true,false,false
+AP020021,13 Oct 18,2,Dendy Park 2,BLTC,No. 1,Trevor Cohen,Bernie Friedrich,Bernie Friedrich,3-8,3,8,0,1,Completed,true,false,false
+AP020021,13 Oct 18,2,Dendy Park 2,BLTC,No. 2,Richard Artis,Lochlan Friedrich,Lochlan Friedrich,2-8,2,8,0,1,Completed,true,false,false
+AP020021,13 Oct 18,2,Dendy Park 2,BLTC,No. 3,Jared Want,Scott Moore,Scott Moore,2-8,2,8,0,1,Completed,true,false,false
+AP020021,13 Oct 18,2,Dendy Park 2,BLTC,No. 4,Roman Medvedev,Liam Burke,Roman Medvedev,8-6,8,6,1,0,Completed,true,false,false
+AP020022,13 Oct 18,2,Mordialloc,Maccabi,No. 1,Harrison Davis,Zvi Schweitzer,Harrison Davis,8-5,8,5,1,0,Completed,true,false,false
+AP020022,13 Oct 18,2,Mordialloc,Maccabi,No. 2,Will Gallagher,Ron Schweitzer,Will Gallagher,8-6,8,6,1,0,Completed,true,false,false
+AP020022,13 Oct 18,2,Mordialloc,Maccabi,No. 3,Daniel Forgie,Paul Koltun,Paul Koltun,2-8,2,8,0,1,Completed,true,false,false
+AP020022,13 Oct 18,2,Mordialloc,Maccabi,No. 4,Lachlan Jones,Daniel Vertes,Lachlan Jones,8-2,8,2,1,0,Completed,true,false,false
+AP020023,13 Oct 18,2,Royal South Yarra 1,Glen Huntly,No. 1,Bailey McLean,Roger Yan,Roger Yan,5-8,5,8,0,1,Completed,true,false,false
+AP020023,13 Oct 18,2,Royal South Yarra 1,Glen Huntly,No. 2,William Beaton,Paul Laughton,William Beaton,8-3,8,3,1,0,Completed,true,false,false
+AP020023,13 Oct 18,2,Royal South Yarra 1,Glen Huntly,No. 3,Sam McLean,Tony Luxmore,Tony Luxmore,1-8,1,8,0,1,Completed,true,false,false
+AP020023,13 Oct 18,2,Royal South Yarra 1,Glen Huntly,No. 4,Richard Charles,Nicholas Chong,Nicholas Chong,2-8,2,8,0,1,Completed,true,false,false
+AP020024,13 Oct 18,2,Royal South Yarra 2,Dendy Park 1,No. 1,Matt Ritter,Ethan Racine,Ethan Racine,5-8,5,8,0,1,Completed,true,false,false
+AP020024,13 Oct 18,2,Royal South Yarra 2,Dendy Park 1,No. 2,Richard Ralph,Dean Metter,Dean Metter,3-8,3,8,0,1,Completed,true,false,false
+AP020024,13 Oct 18,2,Royal South Yarra 2,Dendy Park 1,No. 3,Tom Ritter,Nadir Kabas,Nadir Kabas,6-8,6,8,0,1,Completed,true,false,false
+AP020024,13 Oct 18,2,Royal South Yarra 2,Dendy Park 1,No. 4,Toby Ralph,Ayden Marasco,Ayden Marasco,6-8,6,8,0,1,Completed,true,false,false
+AP020032,20 Oct 18,3,Maccabi,Dendy Park 2,No. 1,Johnson Duong,Alex Pun,Johnson Duong,8-5,8,5,1,0,Completed,true,false,false
+AP020032,20 Oct 18,3,Maccabi,Dendy Park 2,No. 2,Alan Datt,Richard Artis,Alan Datt,8-0,8,0,1,0,Completed,true,false,false
+AP020032,20 Oct 18,3,Maccabi,Dendy Park 2,No. 3,Ron Schweitzer,Jared Want,Ron Schweitzer,8-3,8,3,1,0,Completed,true,false,false
+AP020032,20 Oct 18,3,Maccabi,Dendy Park 2,No. 4,Paul Koltun,Roman Medvedev,Paul Koltun,8-5,8,5,1,0,Completed,true,false,false
+AP020033,20 Oct 18,3,Glen Huntly,Mordialloc,No. 1,Roger Yan,Will Gallagher,Roger Yan,8-1,8,1,1,0,Completed,true,false,false
+AP020033,20 Oct 18,3,Glen Huntly,Mordialloc,No. 2,Paul Laughton,Daniel Forgie,Paul Laughton,8-6,8,6,1,0,Completed,true,false,false
+AP020033,20 Oct 18,3,Glen Huntly,Mordialloc,No. 3,Rodney Boonsinlapa,Cameron Bach,Cameron Bach,5-8,5,8,0,1,Completed,true,false,false
+AP020033,20 Oct 18,3,Glen Huntly,Mordialloc,No. 4,Ming Lin,Lachlan Jones,Lachlan Jones,5-8,5,8,0,1,Completed,true,false,false
+AP020041,27 Oct 18,4,Royal South Yarra 1,BLTC,No. 1,[Unnamed emergency — TROLS AP020041 home code 1],Andrew Naughton,Andrew Naughton,0-8,0,8,0,1,Completed,false,true,false
+AP020041,27 Oct 18,4,Royal South Yarra 1,BLTC,No. 2,Bailey McLean,Lochlan Friedrich,Bailey McLean,8-7,8,7,1,0,Completed,true,false,false
+AP020041,27 Oct 18,4,Royal South Yarra 1,BLTC,No. 3,Richard Charles,Scott Moore,Scott Moore,4-8,4,8,0,1,Completed,true,false,false
+AP020041,27 Oct 18,4,Royal South Yarra 1,BLTC,No. 4,Max Charles,Liam Burke,Liam Burke,1-8,1,8,0,1,Completed,true,false,false
+AP020042,27 Oct 18,4,Royal South Yarra 2,Maccabi,No. 1,Richard Ralph,Zvi Schweitzer,Richard Ralph,8-4,8,4,1,0,Completed,true,false,false
+AP020042,27 Oct 18,4,Royal South Yarra 2,Maccabi,No. 2,Saul Cannon,Alan Datt,Saul Cannon,8-4,8,4,1,0,Completed,true,false,false
+AP020042,27 Oct 18,4,Royal South Yarra 2,Maccabi,No. 3,Jack Cannon,Ron Schweitzer,Ron Schweitzer,4-8,4,8,0,1,Completed,true,false,false
+AP020042,27 Oct 18,4,Royal South Yarra 2,Maccabi,No. 4,Toby Ralph,Daniel Vertes,Toby Ralph,8-4,8,4,1,0,Completed,true,false,false
+AP020043,27 Oct 18,4,Dendy Park 2,Glen Huntly,No. 1,Trevor Cohen,Roger Yan,Roger Yan,2-8,2,8,0,1,Completed,true,false,false
+AP020043,27 Oct 18,4,Dendy Park 2,Glen Huntly,No. 2,Alex Pun,Nicholas Chong,Nicholas Chong,5-8,5,8,0,1,Completed,true,false,false
+AP020043,27 Oct 18,4,Dendy Park 2,Glen Huntly,No. 3,Jared Want,Rodney Boonsinlapa,Rodney Boonsinlapa,3-8,3,8,0,1,Completed,true,false,false
+AP020043,27 Oct 18,4,Dendy Park 2,Glen Huntly,No. 4,Sam Bennoun,Ming Lin,Sam Bennoun,8-7,8,7,1,0,Completed,true,false,false
+AP020044,27 Oct 18,4,Mordialloc,Dendy Park 1,No. 1,Harrison Davis,Ethan Racine,Harrison Davis,8-7,8,7,1,0,Completed,true,false,false
+AP020044,27 Oct 18,4,Mordialloc,Dendy Park 1,No. 2,Daniel Forgie,Dean Metter,Dean Metter,6-8,6,8,0,1,Completed,true,false,false
+AP020044,27 Oct 18,4,Mordialloc,Dendy Park 1,No. 3,Cameron Bach,Nadir Kabas,Cameron Bach,8-1,8,1,1,0,Completed,true,false,false
+AP020044,27 Oct 18,4,Mordialloc,Dendy Park 1,No. 4,Lachlan Jones,Paul Bourke,Lachlan Jones,8-2,8,2,1,0,Completed,true,false,false
+AP020051,10 Nov 18,5,Glen Huntly,Dendy Park 1,No. 1,Roger Yan,Ayden Marasco,Roger Yan,8-0,8,0,1,0,Completed,true,false,false
+AP020051,10 Nov 18,5,Glen Huntly,Dendy Park 1,No. 2,Paul Laughton,Dean Metter,Paul Laughton,8-5,8,5,1,0,Completed,true,false,false
+AP020051,10 Nov 18,5,Glen Huntly,Dendy Park 1,No. 3,Rodney Boonsinlapa,Nadir Kabas,Nadir Kabas,7-8,7,8,0,1,Completed,true,false,false
+AP020051,10 Nov 18,5,Glen Huntly,Dendy Park 1,No. 4,Ming Lin,Paul Bourke,Paul Bourke,4-8,4,8,0,1,Completed,true,false,false
+AP020052,10 Nov 18,5,Dendy Park 2,Royal South Yarra 2,No. 1,Trevor Cohen,Matt Ritter,Matt Ritter,5-8,5,8,0,1,Completed,true,false,false
+AP020052,10 Nov 18,5,Dendy Park 2,Royal South Yarra 2,No. 2,Alex Pun,Richard Ralph,Richard Ralph,5-8,5,8,0,1,Completed,true,false,false
+AP020052,10 Nov 18,5,Dendy Park 2,Royal South Yarra 2,No. 3,Richard Artis,Tom Ritter,Tom Ritter,0-8,0,8,0,1,Completed,true,false,false
+AP020052,10 Nov 18,5,Dendy Park 2,Royal South Yarra 2,No. 4,Jared Want,Toby Ralph,Jared Want,8-3,8,3,1,0,Completed,true,false,false
+AP020053,10 Nov 18,5,Royal South Yarra 1,Mordialloc,No. 1,Oscar Lynagh,Will Gallagher,Oscar Lynagh,8-6,8,6,1,0,Completed,true,false,false
+AP020053,10 Nov 18,5,Royal South Yarra 1,Mordialloc,No. 2,Richard Joubert,Cameron Bach,Cameron Bach,4-8,4,8,0,1,Completed,true,false,false
+AP020053,10 Nov 18,5,Royal South Yarra 1,Mordialloc,No. 3,Bailey McLean,Lachlan Jones,Bailey McLean,8-7,8,7,1,0,Completed,true,false,false
+AP020053,10 Nov 18,5,Royal South Yarra 1,Mordialloc,No. 4,Richard Charles,Julian Blainey,Julian Blainey,4-8,4,8,0,1,Completed,true,false,false
+AP020054,10 Nov 18,5,BLTC,Maccabi,No. 1,Mitch Pattinson,Zvi Schweitzer,Mitch Pattinson,8-1,8,1,1,0,Completed,true,false,false
+AP020054,10 Nov 18,5,BLTC,Maccabi,No. 2,Lochlan Friedrich,Alan Datt,Lochlan Friedrich,8-6,8,6,1,0,Completed,true,false,false
+AP020054,10 Nov 18,5,BLTC,Maccabi,No. 3,Scott Moore,Ron Schweitzer,Scott Moore,8-5,8,5,1,0,Completed,true,false,false
+AP020054,10 Nov 18,5,BLTC,Maccabi,No. 4,Liam Burke,Paul Koltun,Liam Burke,8-3,8,3,1,0,Completed,true,false,false
+AP020061,17 Nov 18,6,Maccabi,Glen Huntly,No. 1,Alan Liebowitz,Roger Yan,Roger Yan,2-8,2,8,0,1,Completed,true,true,false
+AP020061,17 Nov 18,6,Maccabi,Glen Huntly,No. 2,Zvi Schweitzer,Paul Laughton,Zvi Schweitzer,8-3,8,3,1,0,Completed,true,false,false
+AP020061,17 Nov 18,6,Maccabi,Glen Huntly,No. 3,Alan Datt,Bill Renwick,Alan Datt,8-5,8,5,1,0,Completed,true,false,false
+AP020061,17 Nov 18,6,Maccabi,Glen Huntly,No. 4,Daniel Vertes,Rodney Boonsinlapa,Daniel Vertes,8-5,8,5,1,0,Completed,true,false,false
+AP020062,17 Nov 18,6,Dendy Park 1,BLTC,No. 1,Cooper Gibbs,Mitch Pattinson,Mitch Pattinson,6-8,6,8,0,1,Completed,true,false,false
+AP020062,17 Nov 18,6,Dendy Park 1,BLTC,No. 2,Adison Ding,Andrew Naughton,Adison Ding,8-5,8,5,1,0,Completed,true,false,false
+AP020062,17 Nov 18,6,Dendy Park 1,BLTC,No. 3,Nadir Kabas,Lochlan Friedrich,Lochlan Friedrich,6-8,6,8,0,1,Completed,true,false,false
+AP020062,17 Nov 18,6,Dendy Park 1,BLTC,No. 4,Ayden Marasco,Scott Moore,Scott Moore,2-8,2,8,0,1,Completed,true,false,false
+AP020063,17 Nov 18,6,Royal South Yarra 2,Royal South Yarra 1,No. 1,Richard Ralph,Oscar Lynagh,Oscar Lynagh,7-8,7,8,0,1,Completed,true,false,false
+AP020063,17 Nov 18,6,Royal South Yarra 2,Royal South Yarra 1,No. 2,Saul Cannon,Bailey McLean,Saul Cannon,8-4,8,4,1,0,Completed,true,false,false
+AP020063,17 Nov 18,6,Royal South Yarra 2,Royal South Yarra 1,No. 3,Jack Cannon,Sam McLean,Sam McLean,1-8,1,8,0,1,Completed,true,false,false
+AP020063,17 Nov 18,6,Royal South Yarra 2,Royal South Yarra 1,No. 4,Toby Ralph,Richard Leckey,Toby Ralph,8-7,8,7,1,0,Completed,true,false,false
+AP020064,17 Nov 18,6,Mordialloc,Dendy Park 2,No. 1,Harrison Davis,Trevor Cohen,Harrison Davis,8-3,8,3,1,0,Completed,true,false,false
+AP020064,17 Nov 18,6,Mordialloc,Dendy Park 2,No. 2,Will Gallagher,Richard Artis,Will Gallagher,8-1,8,1,1,0,Completed,true,false,false
+AP020064,17 Nov 18,6,Mordialloc,Dendy Park 2,No. 3,Daniel Forgie,Jared Want,Daniel Forgie,8-0,8,0,1,0,Completed,true,false,false
+AP020064,17 Nov 18,6,Mordialloc,Dendy Park 2,No. 4,Cameron Bach,Sam Bennoun,Cameron Bach,8-1,8,1,1,0,Completed,true,false,false
+AP020071,24 Nov 18,7,BLTC,Glen Huntly,No. 1,Mitch Pattinson,Paul Laughton,Paul Laughton,7-8,7,8,0,1,Completed,true,false,false
+AP020071,24 Nov 18,7,BLTC,Glen Huntly,No. 2,Lochlan Friedrich,Nicholas Chong,Lochlan Friedrich,8-4,8,4,1,0,Completed,true,false,false
+AP020071,24 Nov 18,7,BLTC,Glen Huntly,No. 3,Scott Moore,Rodney Boonsinlapa,Scott Moore,8-3,8,3,1,0,Completed,true,false,false
+AP020071,24 Nov 18,7,BLTC,Glen Huntly,No. 4,Liam Burke,Dean Russell,Liam Burke,8-3,8,3,1,0,Completed,true,false,false
+AP020072,24 Nov 18,7,Maccabi,Dendy Park 1,No. 1,Johnson Duong,Cooper Gibbs,Cooper Gibbs,3-8,3,8,0,1,Completed,true,false,false
+AP020072,24 Nov 18,7,Maccabi,Dendy Park 1,No. 2,Zvi Schweitzer,Dean Metter,Dean Metter,6-8,6,8,0,1,Completed,true,false,false
+AP020072,24 Nov 18,7,Maccabi,Dendy Park 1,No. 3,Alan Datt,Nadir Kabas,Alan Datt,8-7,8,7,1,0,Completed,true,false,false
+AP020072,24 Nov 18,7,Maccabi,Dendy Park 1,No. 4,Paul Koltun,Paul Bourke,Paul Bourke,3-8,3,8,0,1,Completed,true,false,false
+AP020073,24 Nov 18,7,Dendy Park 2,Royal South Yarra 1,No. 1,Alex Pun,Oscar Lynagh,Alex Pun,8-6,8,6,1,0,Completed,true,false,false
+AP020073,24 Nov 18,7,Dendy Park 2,Royal South Yarra 1,No. 2,Richard Artis,Bailey McLean,Bailey McLean,4-8,4,8,0,1,Completed,true,false,false
+AP020073,24 Nov 18,7,Dendy Park 2,Royal South Yarra 1,No. 3,Jared Want,Egan Lai,Egan Lai,1-8,1,8,0,1,Completed,true,false,false
+AP020073,24 Nov 18,7,Dendy Park 2,Royal South Yarra 1,No. 4,Roman Medvedev,Michael Kirwan,Roman Medvedev,8-4,8,4,1,0,Completed,true,false,false
+AP020074,24 Nov 18,7,Royal South Yarra 2,Mordialloc,No. 1,Matt Ritter,Harrison Davis,Matt Ritter,8-7,8,7,1,0,Completed,true,false,false
+AP020074,24 Nov 18,7,Royal South Yarra 2,Mordialloc,No. 2,Saul Cannon,Will Gallagher,Saul Cannon,8-0,8,0,1,0,Completed,true,false,false
+AP020074,24 Nov 18,7,Royal South Yarra 2,Mordialloc,No. 3,Jack Cannon,Cameron Bach,Cameron Bach,0-8,0,8,0,1,Completed,true,false,false
+AP020074,24 Nov 18,7,Royal South Yarra 2,Mordialloc,No. 4,Tom Ritter,Lachlan Jones,Lachlan Jones,6-8,6,8,0,1,Completed,true,false,false
+AP020081,01 Dec 18,8,Mordialloc,BLTC,No. 1,Harrison Davis,Mitch Pattinson,Harrison Davis,8-7,8,7,1,0,Completed,true,false,false
+AP020081,01 Dec 18,8,Mordialloc,BLTC,No. 2,Will Gallagher,Andrew Naughton,Andrew Naughton,6-8,6,8,0,1,Completed,true,false,false
+AP020081,01 Dec 18,8,Mordialloc,BLTC,No. 3,Cameron Bach,Lochlan Friedrich,Cameron Bach,8-1,8,1,1,0,Completed,true,false,false
+AP020081,01 Dec 18,8,Mordialloc,BLTC,No. 4,Lachlan Jones,Liam Burke,Lachlan Jones,8-6,8,6,1,0,Completed,true,false,false
+AP020082,01 Dec 18,8,Royal South Yarra 1,Maccabi,No. 1,Bailey McLean,Zvi Schweitzer,Bailey McLean,8-7,8,7,1,0,Completed,true,false,false
+AP020082,01 Dec 18,8,Royal South Yarra 1,Maccabi,No. 2,Sam McLean,Alan Datt,Alan Datt,4-8,4,8,0,1,Completed,true,false,false
+AP020082,01 Dec 18,8,Royal South Yarra 1,Maccabi,No. 3,Richard Campbell,Daniel Huggins,Daniel Huggins,5-8,5,8,0,1,Completed,true,false,false
+AP020082,01 Dec 18,8,Royal South Yarra 1,Maccabi,No. 4,Michael Kirwan,Ron Schweitzer,Ron Schweitzer,1-8,1,8,0,1,Completed,true,false,false
+AP020083,01 Dec 18,8,Royal South Yarra 2,Glen Huntly,No. 1,Matt Ritter,Roger Yan,Roger Yan,5-8,5,8,0,1,Completed,true,false,false
+AP020083,01 Dec 18,8,Royal South Yarra 2,Glen Huntly,No. 2,Richard Ralph,Paul Laughton,Richard Ralph,8-3,8,3,1,0,Completed,true,false,false
+AP020083,01 Dec 18,8,Royal South Yarra 2,Glen Huntly,No. 3,Tom Ritter,Rodney Boonsinlapa,Tom Ritter,8-6,8,6,1,0,Completed,true,false,false
+AP020083,01 Dec 18,8,Royal South Yarra 2,Glen Huntly,No. 4,Darcy Albert,Dean Russell,Dean Russell,7-8,7,8,0,1,Completed,true,false,false
+AP020084,01 Dec 18,8,Dendy Park 2,Dendy Park 1,No. 1,Trevor Cohen,Dean Metter,Dean Metter,3-8,3,8,0,1,Completed,true,false,false
+AP020084,01 Dec 18,8,Dendy Park 2,Dendy Park 1,No. 2,Alex Pun,Nadir Kabas,Alex Pun,8-2,8,2,1,0,Completed,true,false,false
+AP020084,01 Dec 18,8,Dendy Park 2,Dendy Park 1,No. 3,Richard Artis,Paul Bourke,Paul Bourke,3-8,3,8,0,1,Completed,true,false,false
+AP020084,01 Dec 18,8,Dendy Park 2,Dendy Park 1,No. 4,Jared Want,Ayden Marasco,Ayden Marasco,1-8,1,8,0,1,Completed,true,false,false
+AP020091,08 Dec 18,9,BLTC,Dendy Park 2,No. 1,Mitch Pattinson,Trevor Cohen,Mitch Pattinson,8-2,8,2,1,0,Completed,true,false,false
+AP020091,08 Dec 18,9,BLTC,Dendy Park 2,No. 2,Lochlan Friedrich,Alex Pun,Alex Pun,2-8,2,8,0,1,Completed,true,false,false
+AP020091,08 Dec 18,9,BLTC,Dendy Park 2,No. 3,Scott Moore,Richard Artis,Scott Moore,8-3,8,3,1,0,Completed,true,false,false
+AP020091,08 Dec 18,9,BLTC,Dendy Park 2,No. 4,Liam Burke,Roman Medvedev,Liam Burke,8-2,8,2,1,0,Completed,true,false,false
+AP020092,08 Dec 18,9,Maccabi,Mordialloc,No. 1,Alan Datt,Harrison Davis,Harrison Davis,5-8,5,8,0,1,Completed,true,false,false
+AP020092,08 Dec 18,9,Maccabi,Mordialloc,No. 2,Patrick Monteiro,Will Gallagher,Patrick Monteiro,8-5,8,5,1,0,Completed,true,false,false
+AP020092,08 Dec 18,9,Maccabi,Mordialloc,No. 3,Paul Koltun,Cameron Bach,Cameron Bach,0-8,0,8,0,1,Completed,true,false,false
+AP020092,08 Dec 18,9,Maccabi,Mordialloc,No. 4,Daniel Vertes,Lachlan Jones,Lachlan Jones,2-8,2,8,0,1,Completed,true,false,false
+AP020093,08 Dec 18,9,Glen Huntly,Royal South Yarra 1,No. 1,Paul Laughton,Bailey McLean,Paul Laughton,8-2,8,2,1,0,Completed,true,false,false
+AP020093,08 Dec 18,9,Glen Huntly,Royal South Yarra 1,No. 2,Tony Luxmore,Sam McLean,Tony Luxmore,8-2,8,2,1,0,Completed,true,false,false
+AP020093,08 Dec 18,9,Glen Huntly,Royal South Yarra 1,No. 3,Igor Vorsovski,Richard Charles,Igor Vorsovski,8-1,8,1,1,0,Completed,true,false,false
+AP020093,08 Dec 18,9,Glen Huntly,Royal South Yarra 1,No. 4,Rodney Boonsinlapa,David Dunstan,Rodney Boonsinlapa,8-4,8,4,1,0,Completed,true,false,false
+AP020094,08 Dec 18,9,Dendy Park 1,Royal South Yarra 2,No. 1,Cooper Gibbs,Richard Ralph,Cooper Gibbs,8-6,8,6,1,0,Completed,true,false,false
+AP020094,08 Dec 18,9,Dendy Park 1,Royal South Yarra 2,No. 2,Nadir Kabas,Saul Cannon,Saul Cannon,2-8,2,8,0,1,Completed,true,false,false
+AP020094,08 Dec 18,9,Dendy Park 1,Royal South Yarra 2,No. 3,Paul Bourke,Jack Cannon,Paul Bourke,8-0,8,0,1,0,Completed,true,false,false
+AP020094,08 Dec 18,9,Dendy Park 1,Royal South Yarra 2,No. 4,Ayden Marasco,Toby Ralph,Ayden Marasco,8-7,8,7,1,0,Completed,true,false,false
+AP020101,15 Dec 18,10,Royal South Yarra 2,BLTC,No. 1,Matt Ritter,Mitch Pattinson,Mitch Pattinson,0-8,0,8,0,1,Completed,true,false,false
+AP020101,15 Dec 18,10,Royal South Yarra 2,BLTC,No. 2,Tom Richardson,Andrew Naughton,Tom Richardson,8-1,8,1,1,0,Completed,true,false,false
+AP020101,15 Dec 18,10,Royal South Yarra 2,BLTC,No. 3,Richard Ralph,Lochlan Friedrich,Richard Ralph,8-6,8,6,1,0,Completed,true,false,false
+AP020101,15 Dec 18,10,Royal South Yarra 2,BLTC,No. 4,Tom Ritter,Scott Moore,Scott Moore,0-8,0,8,0,1,Completed,true,false,false
+AP020102,15 Dec 18,10,Dendy Park 2,Maccabi,No. 1,Trevor Cohen,Zvi Schweitzer,Zvi Schweitzer,2-8,2,8,0,1,Completed,true,false,false
+AP020102,15 Dec 18,10,Dendy Park 2,Maccabi,No. 2,Alex Pun,Patrick Monteiro,Patrick Monteiro,6-8,6,8,0,1,Completed,true,false,false
+AP020102,15 Dec 18,10,Dendy Park 2,Maccabi,No. 3,Richard Artis,Ron Schweitzer,Ron Schweitzer,2-8,2,8,0,1,Completed,true,false,false
+AP020102,15 Dec 18,10,Dendy Park 2,Maccabi,No. 4,Roman Medvedev,Daniel Vertes,Daniel Vertes,5-8,5,8,0,1,Completed,true,false,false
+AP020103,15 Dec 18,10,Mordialloc,Glen Huntly,No. 1,Harrison Davis,Roger Yan,Roger Yan,3-8,3,8,0,1,Completed,true,false,false
+AP020103,15 Dec 18,10,Mordialloc,Glen Huntly,No. 2,Will Gallagher,Paul Laughton,Will Gallagher,8-5,8,5,1,0,Completed,true,false,false
+AP020103,15 Dec 18,10,Mordialloc,Glen Huntly,No. 3,Cameron Bach,Tony Luxmore,Cameron Bach,8-1,8,1,1,0,Completed,true,false,false
+AP020103,15 Dec 18,10,Mordialloc,Glen Huntly,No. 4,Lachlan Jones,Nicholas Chong,Lachlan Jones,8-6,8,6,1,0,Completed,true,false,false
+AP020104,15 Dec 18,10,Royal South Yarra 1,Dendy Park 1,No. 1,Oscar Lynagh,Ethan Racine,Ethan Racine,1-8,1,8,0,1,Completed,true,false,false
+AP020104,15 Dec 18,10,Royal South Yarra 1,Dendy Park 1,No. 2,William Beaton,Nadir Kabas,Nadir Kabas,2-8,2,8,0,1,Completed,true,false,false
+AP020104,15 Dec 18,10,Royal South Yarra 1,Dendy Park 1,No. 3,Jeremy Nestle,Ayden Marasco,Ayden Marasco,6-8,6,8,0,1,Completed,true,false,false
+AP020104,15 Dec 18,10,Royal South Yarra 1,Dendy Park 1,No. 4,Michael Kirwan,Louis Marasco,Louis Marasco,6-8,6,8,0,1,Completed,true,false,false
+AP020111,02 Feb 19,11,BLTC,Royal South Yarra 1,No. 1,Mitch Pattinson,Bailey McLean,Mitch Pattinson,8-6,8,6,1,0,Completed,true,false,false
+AP020111,02 Feb 19,11,BLTC,Royal South Yarra 1,No. 2,Andrew Naughton,William Beaton,William Beaton,1-8,1,8,0,1,Completed,true,false,false
+AP020111,02 Feb 19,11,BLTC,Royal South Yarra 1,No. 3,Lochlan Friedrich,Richard Campbell,Lochlan Friedrich,8-1,8,1,1,0,Completed,true,false,false
+AP020111,02 Feb 19,11,BLTC,Royal South Yarra 1,No. 4,Liam Burke,Darcy Albert,Liam Burke,8-3,8,3,1,0,Completed,true,false,false
+AP020112,02 Feb 19,11,Maccabi,Royal South Yarra 2,No. 1,Johnson Duong,Matt Ritter,Matt Ritter,4-8,4,8,0,1,Completed,true,false,false
+AP020112,02 Feb 19,11,Maccabi,Royal South Yarra 2,No. 2,Patrick Monteiro,Saul Cannon,Saul Cannon,2-8,2,8,0,1,Completed,true,false,false
+AP020112,02 Feb 19,11,Maccabi,Royal South Yarra 2,No. 3,Alan Datt,Jack Cannon,Alan Datt,8-0,8,0,1,0,Completed,true,false,false
+AP020112,02 Feb 19,11,Maccabi,Royal South Yarra 2,No. 4,Daniel Vertes,Tom Ritter,Daniel Vertes,8-3,8,3,1,0,Completed,true,false,false
+AP020113,02 Feb 19,11,Glen Huntly,Dendy Park 2,No. 1,Roger Yan,Trevor Cohen,Roger Yan,8-5,8,5,1,0,Completed,true,false,false
+AP020113,02 Feb 19,11,Glen Huntly,Dendy Park 2,No. 2,Paul Laughton,Alex Pun,Paul Laughton,8-4,8,4,1,0,Completed,true,false,false
+AP020113,02 Feb 19,11,Glen Huntly,Dendy Park 2,No. 3,Rodney Boonsinlapa,Jared Want,Rodney Boonsinlapa,8-2,8,2,1,0,Completed,true,false,false
+AP020113,02 Feb 19,11,Glen Huntly,Dendy Park 2,No. 4,Tony Luxmore,Roman Medvedev,Roman Medvedev,0-8,0,8,0,1,Completed,true,false,false
+AP020114,02 Feb 19,11,Dendy Park 1,Mordialloc,No. 1,Nadir Kabas,Will Gallagher,Nadir Kabas,8-3,8,3,1,0,Completed,true,false,false
+AP020114,02 Feb 19,11,Dendy Park 1,Mordialloc,No. 2,Paul Bourke,Daniel Forgie,Paul Bourke,8-1,8,1,1,0,Completed,true,false,false
+AP020114,02 Feb 19,11,Dendy Park 1,Mordialloc,No. 3,Brian Bourke,Cameron Bach,Cameron Bach,4-8,4,8,0,1,Completed,true,false,false
+AP020114,02 Feb 19,11,Dendy Park 1,Mordialloc,No. 4,Ayden Marasco,Julian Blainey,Julian Blainey,2-8,2,8,0,1,Completed,true,false,false
+AP020123,09 Feb 19,12,Mordialloc,Royal South Yarra 1,No. 1,Harrison Davis,Bailey McLean,Harrison Davis,8-0,8,0,1,0,Completed,true,false,false
+AP020123,09 Feb 19,12,Mordialloc,Royal South Yarra 1,No. 2,Will Gallagher,William Beaton,Will Gallagher,8-3,8,3,1,0,Completed,true,false,false
+AP020123,09 Feb 19,12,Mordialloc,Royal South Yarra 1,No. 3,Daniel Forgie,Sam McLean,Daniel Forgie,8-2,8,2,1,0,Completed,true,false,false
+AP020123,09 Feb 19,12,Mordialloc,Royal South Yarra 1,No. 4,Lachlan Jones,Michael Kirwan,Lachlan Jones,8-3,8,3,1,0,Completed,true,false,false
+AP020124,09 Feb 19,12,Maccabi,BLTC,No. 1,Zvi Schweitzer,Mitch Pattinson,Mitch Pattinson,7-8,7,8,0,1,Completed,true,false,false
+AP020124,09 Feb 19,12,Maccabi,BLTC,No. 2,Ron Schweitzer,Andrew Naughton,Andrew Naughton,4-8,4,8,0,1,Completed,true,false,false
+AP020124,09 Feb 19,12,Maccabi,BLTC,No. 3,Daniel Vertes,Lochlan Friedrich,Lochlan Friedrich,3-8,3,8,0,1,Completed,true,false,false
+AP020124,09 Feb 19,12,Maccabi,BLTC,No. 4,Miguel Donnenfeld,Liam Burke,Miguel Donnenfeld,8-3,8,3,1,0,Completed,true,false,false
+AP020131,16 Feb 19,13,Glen Huntly,Maccabi,No. 1,Roger Yan,Alan Datt,Roger Yan,8-0,8,0,1,0,Completed,true,false,false
+AP020131,16 Feb 19,13,Glen Huntly,Maccabi,No. 2,Paul Laughton,Paul Koltun,Paul Laughton,8-4,8,4,1,0,Completed,true,false,false
+AP020131,16 Feb 19,13,Glen Huntly,Maccabi,No. 3,Rodney Boonsinlapa,Daniel Vertes,Rodney Boonsinlapa,8-7,8,7,1,0,Completed,true,false,false
+AP020131,16 Feb 19,13,Glen Huntly,Maccabi,No. 4,Dean Russell,Miguel Donnenfeld,Miguel Donnenfeld,5-8,5,8,0,1,Completed,true,false,false
+AP020132,16 Feb 19,13,BLTC,Dendy Park 1,No. 1,Mitch Pattinson,Cooper Gibbs,Cooper Gibbs,6-8,6,8,0,1,Completed,true,false,false
+AP020132,16 Feb 19,13,BLTC,Dendy Park 1,No. 2,Andrew Naughton,Dean Metter,Andrew Naughton,8-7,8,7,1,0,Completed,true,false,false
+AP020132,16 Feb 19,13,BLTC,Dendy Park 1,No. 3,Lochlan Friedrich,Nadir Kabas,Nadir Kabas,3-8,3,8,0,1,Completed,true,false,false
+AP020132,16 Feb 19,13,BLTC,Dendy Park 1,No. 4,Liam Burke,Paul Bourke,Liam Burke,8-5,8,5,1,0,Completed,true,false,false
+AP020133,16 Feb 19,13,Royal South Yarra 1,Royal South Yarra 2,No. 1,Bailey McLean,Richard Ralph,Richard Ralph,6-8,6,8,0,1,Completed,true,false,false
+AP020133,16 Feb 19,13,Royal South Yarra 1,Royal South Yarra 2,No. 2,William Beaton,Saul Cannon,Saul Cannon,1-8,1,8,0,1,Completed,true,false,false
+AP020133,16 Feb 19,13,Royal South Yarra 1,Royal South Yarra 2,No. 3,Stuart Webb,Jack Cannon,Stuart Webb,8-4,8,4,1,0,Completed,true,false,false
+AP020133,16 Feb 19,13,Royal South Yarra 1,Royal South Yarra 2,No. 4,Mathew Hayward,Toby Ralph,Toby Ralph,4-8,4,8,0,1,Completed,true,false,false
+AP020134,16 Feb 19,13,Dendy Park 2,Mordialloc,No. 1,Andrej Saule,Harrison Davis,Harrison Davis,1-8,1,8,0,1,Completed,true,false,false
+AP020134,16 Feb 19,13,Dendy Park 2,Mordialloc,No. 2,Richard Artis,Daniel Forgie,Daniel Forgie,0-8,0,8,0,1,Completed,true,false,false
+AP020134,16 Feb 19,13,Dendy Park 2,Mordialloc,No. 3,Jared Want,Cameron Bach,Cameron Bach,0-8,0,8,0,1,Completed,true,false,false
+AP020134,16 Feb 19,13,Dendy Park 2,Mordialloc,No. 4,Roman Medvedev,Lachlan Jones,Lachlan Jones,5-8,5,8,0,1,Completed,true,false,false
+AP020141,23 Feb 19,14,Glen Huntly,BLTC,No. 1,Roger Yan,Mitch Pattinson,Roger Yan,8-7,8,7,1,0,Completed,true,false,false
+AP020141,23 Feb 19,14,Glen Huntly,BLTC,No. 2,Nicholas Chong,Andrew Naughton,Andrew Naughton,6-8,6,8,0,1,Completed,true,false,false
+AP020141,23 Feb 19,14,Glen Huntly,BLTC,No. 3,Igor Vorsovski,Lochlan Friedrich,Lochlan Friedrich,5-8,5,8,0,1,Completed,true,false,false
+AP020141,23 Feb 19,14,Glen Huntly,BLTC,No. 4,Dean Russell,Liam Burke,Liam Burke,2-8,2,8,0,1,Completed,true,false,false
+AP020142,23 Feb 19,14,Dendy Park 1,Maccabi,No. 1,Cooper Gibbs,Ron Schweitzer,Cooper Gibbs,8-3,8,3,1,0,Completed,true,false,false
+AP020142,23 Feb 19,14,Dendy Park 1,Maccabi,No. 2,Dean Metter,Paul Koltun,Dean Metter,8-3,8,3,1,0,Completed,true,false,false
+AP020142,23 Feb 19,14,Dendy Park 1,Maccabi,No. 3,Nadir Kabas,Daniel Vertes,Nadir Kabas,8-3,8,3,1,0,Completed,true,false,false
+AP020142,23 Feb 19,14,Dendy Park 1,Maccabi,No. 4,Paul Bourke,Jesse Wilson,Paul Bourke,8-0,8,0,1,0,Completed,true,false,false
+AP020143,23 Feb 19,14,Royal South Yarra 1,Dendy Park 2,No. 1,Oscar Lynagh,Alex Pun,Oscar Lynagh,8-5,8,5,1,0,Completed,true,false,false
+AP020143,23 Feb 19,14,Royal South Yarra 1,Dendy Park 2,No. 2,Jeremy Nestle,Richard Artis,Jeremy Nestle,8-7,8,7,1,0,Completed,true,false,false
+AP020143,23 Feb 19,14,Royal South Yarra 1,Dendy Park 2,No. 3,Richard Charles,Jared Want,Jared Want,2-8,2,8,0,1,Completed,true,false,false
+AP020143,23 Feb 19,14,Royal South Yarra 1,Dendy Park 2,No. 4,Michael Kirwan,Sam Bennoun,Michael Kirwan,8-5,8,5,1,0,Completed,true,false,false
+AP020144,23 Feb 19,14,Mordialloc,Royal South Yarra 2,No. 1,Will Gallagher,Matt Ritter,Matt Ritter,4-8,4,8,0,1,Completed,true,false,false
+AP020144,23 Feb 19,14,Mordialloc,Royal South Yarra 2,No. 2,Daniel Forgie,Richard Ralph,Daniel Forgie,8-7,8,7,1,0,Completed,true,false,false
+AP020144,23 Feb 19,14,Mordialloc,Royal South Yarra 2,No. 3,Cameron Bach,Saul Cannon,Cameron Bach,8-7,8,7,1,0,Completed,true,false,false
+AP020144,23 Feb 19,14,Mordialloc,Royal South Yarra 2,No. 4,Lachlan Jones,Toby Ralph,Lachlan Jones,8-1,8,1,1,0,Completed,true,false,false
+AP020301,,16,Mordialloc,Dendy Park 1,No. 1,Harrison Davis,Cooper Gibbs,Harrison Davis,8-1,8,1,1,0,Completed,true,false,false
+AP020301,,16,Mordialloc,Dendy Park 1,No. 2,Will Gallagher,Dean Metter,Dean Metter,3-8,3,8,0,1,Completed,true,false,false
+AP020301,,16,Mordialloc,Dendy Park 1,No. 3,Daniel Forgie,Nadir Kabas,Daniel Forgie,8-5,8,5,1,0,Completed,true,false,false
+AP020301,,16,Mordialloc,Dendy Park 1,No. 4,Cameron Bach,Paul Bourke,Cameron Bach,8-3,8,3,1,0,Completed,true,false,false
+AP020302,,16,BLTC,Glen Huntly,No. 1,Mitch Pattinson,Roger Yan,Roger Yan,4-8,4,8,0,1,Completed,true,false,false
+AP020302,,16,BLTC,Glen Huntly,No. 2,Andrew Naughton,Paul Laughton,Paul Laughton,3-8,3,8,0,1,Completed,true,false,false
+AP020302,,16,BLTC,Glen Huntly,No. 3,Lochlan Friedrich,Tony Luxmore,Tony Luxmore,2-8,2,8,0,1,Completed,true,false,false
+AP020302,,16,BLTC,Glen Huntly,No. 4,Liam Burke,Dean Russell,Liam Burke,8-2,8,2,1,0,Completed,true,false,false
+AP020321,,17,Mordialloc,Glen Huntly,No. 1,Harrison Davis,Roger Yan,Roger Yan,0-8,0,8,0,1,Completed,true,false,false
+AP020321,,17,Mordialloc,Glen Huntly,No. 2,Will Gallagher,Paul Laughton,Paul Laughton,2-8,2,8,0,1,Completed,true,false,false
+AP020321,,17,Mordialloc,Glen Huntly,No. 3,Daniel Forgie,Nicholas Chong,Daniel Forgie,8-5,8,5,1,0,Completed,true,false,false
+AP020321,,17,Mordialloc,Glen Huntly,No. 4,Cameron Bach,Dean Russell,Cameron Bach,8-0,8,0,1,0,Completed,true,false,false

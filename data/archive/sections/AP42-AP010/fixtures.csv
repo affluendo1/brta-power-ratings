@@ -1,0 +1,59 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP010011,01 May 21,1,regular,Round 1,Clarinda,Highmoor Uniting,8,2,5,3,,,48,37,Completed,
+AP010012,01 May 21,1,regular,Round 1,Le Page,St Pats Mentone,2,8,3,6,,,32,52,Completed,
+AP010013,01 May 21,1,regular,Round 1,Elsternwick Park,Ormond LA,9,1,7,1,,,50,24,Completed,
+AP010014,01 May 21,1,regular,Round 1,Mentone 1,Mentone 2,10,0,8,0,,,56,22,Completed,
+AP010021,08 May 21,2,regular,Round 2,Mentone 2,Clarinda,1,9,2,7,,,37,59,Completed,
+AP010022,08 May 21,2,regular,Round 2,Highmoor Uniting,Le Page,9,1,7,1,,,56,25,Completed,
+AP010023,08 May 21,2,regular,Round 2,St Pats Mentone,Elsternwick Park,8,2,6,4,,,50,49,Completed,
+AP010024,08 May 21,2,regular,Round 2,Ormond LA,Mentone 1,1,9,1,7,,,14,52,Completed,
+AP010031,15 May 21,3,regular,Round 3,Clarinda,Ormond LA,9,1,7,2,,,57,30,Completed,
+AP010032,15 May 21,3,regular,Round 3,Le Page,Mentone 2,2,8,4,6,,,55,57,Completed,
+AP010033,15 May 21,3,regular,Round 3,Elsternwick Park,Highmoor Uniting,0,10,0,8,,,36,59,Completed,
+AP010034,15 May 21,3,regular,Round 3,Mentone 1,St Pats Mentone,0,10,1,8,,,34,58,Completed,
+AP010041,22 May 21,4,regular,Round 4,St Pats Mentone,Clarinda,9,1,7,2,,,57,29,Completed,
+AP010042,22 May 21,4,regular,Round 4,Ormond LA,Le Page,2,8,3,6,,,36,55,Completed,
+AP010043,22 May 21,4,regular,Round 4,Mentone 2,Elsternwick Park,9,1,7,1,,,54,33,Completed,
+AP010044,22 May 21,4,regular,Round 4,Highmoor Uniting,Mentone 1,2,8,3,6,,,37,54,Completed,
+pending-ap010-r5-clarinda-le-page,29 May 21,5,regular,Round 5,Clarinda,Le Page,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap010-r5-elsternwick-park-mentone-1,29 May 21,5,regular,Round 5,Elsternwick Park,Mentone 1,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap010-r5-mentone-2-ormond-la,29 May 21,5,regular,Round 5,Mentone 2,Ormond LA,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap010-r5-st-pats-mentone-highmoor-uniting,29 May 21,5,regular,Round 5,St Pats Mentone,Highmoor Uniting,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP010062,05 Jun 21,6,regular,Round 6,Mentone 1,Clarinda,5,5,0,0,,,0,0,Completed,
+pending-ap010-r6-highmoor-uniting-mentone-2,05 Jun 21,6,regular,Round 6,Highmoor Uniting,Mentone 2,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap010-r6-le-page-elsternwick-park,05 Jun 21,6,regular,Round 6,Le Page,Elsternwick Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap010-r6-ormond-la-st-pats-mentone,05 Jun 21,6,regular,Round 6,Ormond LA,St Pats Mentone,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP010071,19 Jun 21,7,regular,Round 7,Clarinda,Elsternwick Park,3,7,4,4,,,43,48,Completed,
+AP010072,19 Jun 21,7,regular,Round 7,Le Page,Mentone 1,9,1,7,2,,,59,40,Completed,
+AP010073,19 Jun 21,7,regular,Round 7,Mentone 2,St Pats Mentone,3,7,4,4,,,36,43,Completed,
+AP010074,19 Jun 21,7,regular,Round 7,Ormond LA,Highmoor Uniting,1,9,3,7,,,43,56,Completed,
+AP010081,26 Jun 21,8,regular,Round 8,Highmoor Uniting,Clarinda,8,2,6,2,,,44,31,Completed,
+AP010082,26 Jun 21,8,regular,Round 8,St Pats Mentone,Le Page,0,10,0,8,,,29,56,Completed,
+AP010083,26 Jun 21,8,regular,Round 8,Ormond LA,Elsternwick Park,0,10,0,8,,,17,56,Completed,
+AP010084,26 Jun 21,8,regular,Round 8,Mentone 2,Mentone 1,3,7,3,5,,,41,45,Completed,
+AP010091,10 Jul 21,9,regular,Round 9,Clarinda,Mentone 2,9,1,6,2,,,48,29,Completed,
+AP010092,10 Jul 21,9,regular,Round 9,Le Page,Highmoor Uniting,9,1,7,1,,,54,32,Completed,
+AP010093,10 Jul 21,9,regular,Round 9,Elsternwick Park,St Pats Mentone,8,2,5,3,,,50,42,Completed,
+AP010094,10 Jul 21,9,regular,Round 9,Mentone 1,Ormond LA,9,1,7,1,,,50,28,Completed,
+pending-ap010-r10-highmoor-uniting-elsternwick-park,17 Jul 21,10,regular,Round 10,Highmoor Uniting,Elsternwick Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap010-r10-mentone-2-le-page,17 Jul 21,10,regular,Round 10,Mentone 2,Le Page,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap010-r10-ormond-la-clarinda,17 Jul 21,10,regular,Round 10,Ormond LA,Clarinda,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap010-r10-st-pats-mentone-mentone-1,17 Jul 21,10,regular,Round 10,St Pats Mentone,Mentone 1,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap010-r11-clarinda-st-pats-mentone,24 Jul 21,11,regular,Round 11,Clarinda,St Pats Mentone,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap010-r11-elsternwick-park-mentone-2,24 Jul 21,11,regular,Round 11,Elsternwick Park,Mentone 2,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap010-r11-le-page-ormond-la,24 Jul 21,11,regular,Round 11,Le Page,Ormond LA,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap010-r11-mentone-1-highmoor-uniting,24 Jul 21,11,regular,Round 11,Mentone 1,Highmoor Uniting,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP010121,31 Jul 21,12,regular,Round 12,Mentone 1,Elsternwick Park,8,2,5,3,,,41,33,Completed,
+AP010122,31 Jul 21,12,regular,Round 12,Ormond LA,Mentone 2,7,3,5,5,,,51,45,Completed,
+AP010123,31 Jul 21,12,regular,Round 12,Highmoor Uniting,St Pats Mentone,0,10,2,8,,,31,62,Completed,
+AP010124,31 Jul 21,12,regular,Round 12,Le Page,Clarinda,9,1,7,1,,,50,19,Completed,
+pending-ap010-r13-clarinda-mentone-1,07 Aug 21,13,regular,Round 13,Clarinda,Mentone 1,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap010-r13-elsternwick-park-le-page,07 Aug 21,13,regular,Round 13,Elsternwick Park,Le Page,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap010-r13-mentone-2-highmoor-uniting,07 Aug 21,13,regular,Round 13,Mentone 2,Highmoor Uniting,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap010-r13-st-pats-mentone-ormond-la,07 Aug 21,13,regular,Round 13,St Pats Mentone,Ormond LA,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap010-r14-elsternwick-park-clarinda,14 Aug 21,14,regular,Round 14,Elsternwick Park,Clarinda,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap010-r14-highmoor-uniting-ormond-la,14 Aug 21,14,regular,Round 14,Highmoor Uniting,Ormond LA,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap010-r14-mentone-1-le-page,14 Aug 21,14,regular,Round 14,Mentone 1,Le Page,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap010-r14-st-pats-mentone-mentone-2,14 Aug 21,14,regular,Round 14,St Pats Mentone,Mentone 2,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap010-r16-mentone-1-le-page,,16,semi_final,Semi-final · TROLS entry 2,Mentone 1,Le Page,,,,,,,,,Missing Result,No individual scorecard / no rubbers recorded
+pending-ap010-r16-st-pats-mentone-clarinda,,16,semi_final,Semi-final · TROLS entry 2,St Pats Mentone,Clarinda,,,,,,,,,Missing Result,No individual scorecard / no rubbers recorded

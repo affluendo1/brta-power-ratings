@@ -1,0 +1,68 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP019021,21 Nov 20,2,St Anthony's,Carmelite,No. 1,Sam Confait,Arie Sutton,Sam Confait,8-1,8,1,1,0,Completed,true,false,false
+AP019021,21 Nov 20,2,St Anthony's,Carmelite,No. 2,Anthony Straford,Josh Kempin,Anthony Straford,8-0,8,0,1,0,Completed,true,false,false
+AP019021,21 Nov 20,2,St Anthony's,Carmelite,No. 3,Daniel Paz,Darcy Mohomet,Daniel Paz,8-5,8,5,1,0,Completed,true,false,false
+AP019021,21 Nov 20,2,St Anthony's,Carmelite,No. 4,Cam Wilkinson,[Unnamed emergency — TROLS AP019021 away code 4],Cam Wilkinson,8-0,8,0,1,0,Completed,false,false,true
+AP019022,21 Nov 20,2,Maccabi,Ormond,No. 1,Joel Rabinov,Steve Gelagin,Steve Gelagin,6-8,6,8,0,1,Completed,true,false,false
+AP019022,21 Nov 20,2,Maccabi,Ormond,No. 2,Errol Dorfan,Byron Gelagin,Errol Dorfan,8-4,8,4,1,0,Completed,true,false,false
+AP019022,21 Nov 20,2,Maccabi,Ormond,No. 3,Joshua Duieb,Michael Hudson,Michael Hudson,7-8,7,8,0,1,Completed,true,false,false
+AP019022,21 Nov 20,2,Maccabi,Ormond,No. 4,Jack Stock,Rob Cowson,Jack Stock,8-5,8,5,1,0,Completed,true,false,true
+AP019031,28 Nov 20,3,Ormond,Carmelite,No. 1,Steve Gelagin,Arie Sutton,Steve Gelagin,8-2,8,2,1,0,Completed,true,false,false
+AP019031,28 Nov 20,3,Ormond,Carmelite,No. 2,Michael Hudson,Darcy Mohomet,Michael Hudson,8-4,8,4,1,0,Completed,true,false,false
+AP019031,28 Nov 20,3,Ormond,Carmelite,No. 3,Peter King,Angus Leckie,Peter King,8-4,8,4,1,0,Completed,true,true,false
+AP019031,28 Nov 20,3,Ormond,Carmelite,No. 4,Susan Harrison,Nick Notaras,Nick Notaras,2-8,2,8,0,1,Completed,true,true,true
+AP019032,28 Nov 20,3,Maccabi,St Anthony's,No. 1,Joel Rabinov,Sam Confait,Sam Confait,2-8,2,8,0,1,Completed,true,false,false
+AP019032,28 Nov 20,3,Maccabi,St Anthony's,No. 2,Daniel Goodrich,Johnny Asimenias,Johnny Asimenias,5-8,5,8,0,1,Completed,true,false,true
+AP019032,28 Nov 20,3,Maccabi,St Anthony's,No. 3,Errol Dorfan,Cam Wilkinson,Errol Dorfan,8-4,8,4,1,0,Completed,true,false,false
+AP019032,28 Nov 20,3,Maccabi,St Anthony's,No. 4,Joshua Duieb,Arthur Asimenias,Joshua Duieb,8-7,8,7,1,0,Completed,true,false,true
+AP019041,05 Dec 20,4,St Anthony's,Ormond,No. 1,Sam Confait,Steve Gelagin,Sam Confait,8-4,8,4,1,0,Completed,true,false,false
+AP019041,05 Dec 20,4,St Anthony's,Ormond,No. 2,Anthony Straford,Byron Gelagin,Anthony Straford,8-1,8,1,1,0,Completed,true,false,false
+AP019041,05 Dec 20,4,St Anthony's,Ormond,No. 3,Daniel Paz,Michael Hudson,Michael Hudson,5-8,5,8,0,1,Completed,true,false,false
+AP019041,05 Dec 20,4,St Anthony's,Ormond,No. 4,Cam Wilkinson,Dylan Helm,Cam Wilkinson,8-5,8,5,1,0,Completed,true,false,false
+AP019042,05 Dec 20,4,Maccabi,Carmelite,No. 1,Ben Pollak,Arie Sutton,Ben Pollak,8-2,8,2,1,0,Completed,true,false,false
+AP019042,05 Dec 20,4,Maccabi,Carmelite,No. 2,Daniel Goodrich,Josh Kempin,Daniel Goodrich,8-4,8,4,1,0,Completed,true,false,false
+AP019042,05 Dec 20,4,Maccabi,Carmelite,No. 3,Errol Dorfan,[Unnamed emergency — TROLS AP019042 away code 3],Errol Dorfan,8-0,8,0,1,0,Completed,false,false,true
+AP019042,05 Dec 20,4,Maccabi,Carmelite,No. 4,Jack Stock,Darcy Mohomet,Darcy Mohomet,6-8,6,8,0,1,Completed,true,false,false
+AP019052,12 Dec 20,5,Ormond,Maccabi,No. 1,Steve Gelagin,Ben Pollak,Steve Gelagin,8-3,8,3,1,0,Completed,true,false,false
+AP019052,12 Dec 20,5,Ormond,Maccabi,No. 2,Daniel Olshansky,Joel Rabinov,Daniel Olshansky,8-4,8,4,1,0,Completed,true,false,false
+AP019052,12 Dec 20,5,Ormond,Maccabi,No. 3,Byron Gelagin,Errol Dorfan,Errol Dorfan,3-8,3,8,0,1,Completed,true,false,false
+AP019052,12 Dec 20,5,Ormond,Maccabi,No. 4,Dylan Helm,Jack Stock,Dylan Helm,8-4,8,4,1,0,Completed,true,false,false
+AP019062,30 Jan 21,6,St Anthony's,Maccabi,No. 1,Anthony Straford,Ben Pollak,Anthony Straford,8-7,8,7,1,0,Completed,true,false,false
+AP019062,30 Jan 21,6,St Anthony's,Maccabi,No. 2,Daniel Paz,Joel Rabinov,Daniel Paz,8-6,8,6,1,0,Completed,true,false,false
+AP019062,30 Jan 21,6,St Anthony's,Maccabi,No. 3,Cam Wilkinson,Jack Eydlish,Jack Eydlish,2-8,2,8,0,1,Completed,true,false,true
+AP019062,30 Jan 21,6,St Anthony's,Maccabi,No. 4,Arthur Asimenias,Jack Stock,Jack Stock,7-8,7,8,0,1,Completed,true,true,false
+AP019071,06 Feb 21,7,Ormond,St Anthony's,No. 1,Steve Gelagin,Daniel Bosco,Daniel Bosco,2-8,2,8,0,1,Completed,true,false,false
+AP019071,06 Feb 21,7,Ormond,St Anthony's,No. 2,Byron Gelagin,Anthony Straford,Byron Gelagin,8-0,8,0,1,0,Completed,true,false,false
+AP019071,06 Feb 21,7,Ormond,St Anthony's,No. 3,Michael Hudson,Daniel Paz,Daniel Paz,5-8,5,8,0,1,Completed,true,false,false
+AP019071,06 Feb 21,7,Ormond,St Anthony's,No. 4,Dylan Helm,Cam Wilkinson,Cam Wilkinson,4-8,4,8,0,1,Completed,true,false,false
+AP019081,20 Feb 21,8,St Anthony's,Carmelite,No. 1,Daniel Bosco,Josh Kempin,Daniel Bosco,8-1,8,1,1,0,Completed,true,false,false
+AP019081,20 Feb 21,8,St Anthony's,Carmelite,No. 2,Anthony Straford,Darcy Mohomet,Anthony Straford,8-0,8,0,1,0,Completed,true,false,false
+AP019081,20 Feb 21,8,St Anthony's,Carmelite,No. 3,Daniel Paz,Angus Leckie,Daniel Paz,8-5,8,5,1,0,Completed,true,false,false
+AP019081,20 Feb 21,8,St Anthony's,Carmelite,No. 4,Cam Wilkinson,Ryan Sweeney,Ryan Sweeney,6-8,6,8,0,1,Completed,true,false,true
+AP019082,20 Feb 21,8,Maccabi,Ormond,No. 1,Ben Pollak,Steve Gelagin,Steve Gelagin,6-8,6,8,0,1,Completed,true,false,false
+AP019082,20 Feb 21,8,Maccabi,Ormond,No. 2,Joel Rabinov,Daniel Olshansky,Joel Rabinov,8-1,8,1,1,0,Completed,true,false,false
+AP019082,20 Feb 21,8,Maccabi,Ormond,No. 3,Errol Dorfan,Byron Gelagin,Errol Dorfan,8-4,8,4,1,0,Completed,true,false,false
+AP019082,20 Feb 21,8,Maccabi,Ormond,No. 4,Jack Stock,Dylan Helm,Jack Stock,8-2,8,2,1,0,Completed,true,false,false
+AP019091,27 Feb 21,9,Ormond,Carmelite,No. 1,Steve Gelagin,Josh Kempin,Steve Gelagin,8-7,8,7,1,0,Completed,true,false,false
+AP019091,27 Feb 21,9,Ormond,Carmelite,No. 2,Daniel Olshansky,Darcy Mohomet,Daniel Olshansky,8-2,8,2,1,0,Completed,true,false,false
+AP019091,27 Feb 21,9,Ormond,Carmelite,No. 3,Byron Gelagin,Angus Leckie,Byron Gelagin,8-3,8,3,1,0,Completed,true,false,false
+AP019091,27 Feb 21,9,Ormond,Carmelite,No. 4,Dylan Helm,Joshua McKenzie,Joshua McKenzie,1-8,1,8,0,1,Completed,true,false,true
+AP019092,27 Feb 21,9,Maccabi,St Anthony's,No. 1,Ben Pollak,Anthony Straford,Ben Pollak,8-6,8,6,1,0,Completed,true,false,false
+AP019092,27 Feb 21,9,Maccabi,St Anthony's,No. 2,Daniel Goodrich,Daniel Paz,Daniel Goodrich,8-5,8,5,1,0,Completed,true,false,false
+AP019092,27 Feb 21,9,Maccabi,St Anthony's,No. 3,Errol Dorfan,Arthur Asimenias,Errol Dorfan,8-2,8,2,1,0,Completed,true,false,true
+AP019092,27 Feb 21,9,Maccabi,St Anthony's,No. 4,Jack Stock,Vincent Macasa,Jack Stock,8-3,8,3,1,0,Completed,true,false,true
+AP019101,13 Mar 21,10,St Anthony's,Ormond,No. 1,Daniel Paz,Daniel Olshansky,Daniel Paz,8-6,8,6,1,0,Completed,true,false,false
+AP019101,13 Mar 21,10,St Anthony's,Ormond,No. 2,Milan Perelman,Michael Hudson,Michael Hudson,4-8,4,8,0,1,Completed,true,true,false
+AP019101,13 Mar 21,10,St Anthony's,Ormond,No. 3,Jim Harrison,Dylan Helm,Jim Harrison,8-1,8,1,1,0,Completed,true,true,false
+AP019102,13 Mar 21,10,Maccabi,Carmelite,No. 1,Ben Pollak,Josh Kempin,Ben Pollak,8-0,8,0,1,0,Completed,true,false,false
+AP019102,13 Mar 21,10,Maccabi,Carmelite,No. 2,Joel Rabinov,Darcy Mohomet,Joel Rabinov,8-5,8,5,1,0,Completed,true,false,false
+AP019102,13 Mar 21,10,Maccabi,Carmelite,No. 3,Daniel Goodrich,Angus Leckie,Daniel Goodrich,8-5,8,5,1,0,Completed,true,false,false
+AP019102,13 Mar 21,10,Maccabi,Carmelite,No. 4,Errol Dorfan,Nick Notaras,Errol Dorfan,5-2,5,2,1,0,Completed,true,false,true
+AP019111,20 Mar 21,11,Carmelite,St Anthony's,No. 1,Josh Kempin,Daniel Bosco,Daniel Bosco,5-8,5,8,0,1,Completed,true,false,false
+AP019111,20 Mar 21,11,Carmelite,St Anthony's,No. 2,Darcy Mohomet,Anthony Straford,Anthony Straford,2-8,2,8,0,1,Completed,true,false,false
+AP019111,20 Mar 21,11,Carmelite,St Anthony's,No. 3,Angus Leckie,Daniel Paz,Daniel Paz,7-8,7,8,0,1,Completed,true,false,false
+AP019111,20 Mar 21,11,Carmelite,St Anthony's,No. 4,Joshua McKenzie,Shadi Abed-elgani,Shadi Abed-elgani,4-8,4,8,0,1,Completed,true,true,true
+AP019112,20 Mar 21,11,Ormond,Maccabi,No. 1,Steve Gelagin,Ben Pollak,Steve Gelagin,8-4,8,4,1,0,Completed,true,false,false
+AP019112,20 Mar 21,11,Ormond,Maccabi,No. 2,Daniel Olshansky,Joel Rabinov,Daniel Olshansky,8-2,8,2,1,0,Completed,true,false,false
+AP019112,20 Mar 21,11,Ormond,Maccabi,No. 3,Dylan Helm,Daniel Goodrich,Daniel Goodrich,3-8,3,8,0,1,Completed,true,false,false
+AP019112,20 Mar 21,11,Ormond,Maccabi,No. 4,Susan Harrison,Jack Stock,Jack Stock,3-8,3,8,0,1,Completed,true,true,false

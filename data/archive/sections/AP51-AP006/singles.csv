@@ -1,0 +1,205 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP006011,04 Oct 25,1,BLTC Blue,BLTC White,No. 1,Miguel Rasguido,Lochlan Friedrich,Lochlan Friedrich,7-8,7,8,0,1,Completed,true,false,false
+AP006011,04 Oct 25,1,BLTC Blue,BLTC White,No. 2,David Smith,Darcy Henschke,Darcy Henschke,7-8,7,8,0,1,Completed,true,false,false
+AP006011,04 Oct 25,1,BLTC Blue,BLTC White,No. 3,Ian Thomas,Liam Parsons,Ian Thomas,8-2,8,2,1,0,Completed,true,false,false
+AP006011,04 Oct 25,1,BLTC Blue,BLTC White,No. 4,Simon Scott-Branagan,Riley Kernutt,Simon Scott-Branagan,8-1,8,1,1,0,Completed,true,false,false
+AP006012,04 Oct 25,1,Tennis World,Maccabi,No. 1,Gianni Granato,Dean Steinberg,Dean Steinberg,7-8,7,8,0,1,Completed,true,false,false
+AP006012,04 Oct 25,1,Tennis World,Maccabi,No. 2,George Vergakis,Nathan Rapoport,George Vergakis,8-4,8,4,1,0,Completed,true,true,false
+AP006012,04 Oct 25,1,Tennis World,Maccabi,No. 3,Abdullah Hamoud,Lior Rauchberger,Abdullah Hamoud,8-3,8,3,1,0,Completed,true,false,false
+AP006012,04 Oct 25,1,Tennis World,Maccabi,No. 4,Yashank Maini,Daniel Henquin,Yashank Maini,8-7,8,7,1,0,Completed,true,false,false
+AP006013,04 Oct 25,1,East Malvern,Overport Park,No. 1,Nathan Hawke,Degan Johnston,Nathan Hawke,8-3,8,3,1,0,Completed,true,false,false
+AP006013,04 Oct 25,1,East Malvern,Overport Park,No. 2,Zlatko Reyer,Oliver Hanson,Zlatko Reyer,8-2,8,2,1,0,Completed,true,false,false
+AP006013,04 Oct 25,1,East Malvern,Overport Park,No. 3,Marcus Young,Leith Scott,Leith Scott,2-8,2,8,0,1,Completed,true,true,false
+AP006013,04 Oct 25,1,East Malvern,Overport Park,No. 4,Ethan Oyston,Trevor Kulpa,Trevor Kulpa,3-8,3,8,0,1,Completed,true,false,false
+AP006014,04 Oct 25,1,Kooyong,Carmelite,No. 1,Selim Ahmed,Darcy Whitebrook,Selim Ahmed,8-3,8,3,1,0,Completed,true,false,false
+AP006014,04 Oct 25,1,Kooyong,Carmelite,No. 2,Nicholas Collins,Michael Jankovic,Nicholas Collins,8-4,8,4,1,0,Completed,true,false,false
+AP006014,04 Oct 25,1,Kooyong,Carmelite,No. 3,Martin Lane,Francis Forbes,Francis Forbes,3-8,3,8,0,1,Completed,true,false,false
+AP006014,04 Oct 25,1,Kooyong,Carmelite,No. 4,Joshua Tebb,Henry Hollinger,Joshua Tebb,8-5,8,5,1,0,Completed,true,false,false
+AP006021,11 Oct 25,2,Carmelite,BLTC Blue,No. 1,Marc Hollestein,Miguel Rasguido,Miguel Rasguido,1-8,1,8,0,1,Completed,true,false,false
+AP006021,11 Oct 25,2,Carmelite,BLTC Blue,No. 2,Michael Jankovic,David Smith,David Smith,1-8,1,8,0,1,Completed,true,false,false
+AP006021,11 Oct 25,2,Carmelite,BLTC Blue,No. 3,Francis Forbes,Simon Scott-Branagan,Simon Scott-Branagan,5-8,5,8,0,1,Completed,true,false,false
+AP006021,11 Oct 25,2,Carmelite,BLTC Blue,No. 4,Grant Neilson,Ben Giles,Ben Giles,3-8,3,8,0,1,Completed,true,false,false
+AP006022,11 Oct 25,2,BLTC White,Tennis World,No. 1,Lochlan Friedrich,Andrej Pomasan,Andrej Pomasan,6-8,6,8,0,1,Completed,true,false,false
+AP006022,11 Oct 25,2,BLTC White,Tennis World,No. 2,Darcy Henschke,Gianni Granato,Gianni Granato,2-8,2,8,0,1,Completed,true,false,false
+AP006022,11 Oct 25,2,BLTC White,Tennis World,No. 3,Liam Parsons,Felipe Sinuela,Felipe Sinuela,0-8,0,8,0,1,Completed,true,false,false
+AP006022,11 Oct 25,2,BLTC White,Tennis World,No. 4,Riley Kernutt,Yashank Maini,Riley Kernutt,8-7,8,7,1,0,Completed,true,false,false
+AP006023,11 Oct 25,2,Maccabi,East Malvern,No. 1,Dean Steinberg,Nathan Hawke,Dean Steinberg,8-3,8,3,1,0,Completed,true,false,false
+AP006023,11 Oct 25,2,Maccabi,East Malvern,No. 2,Nathan Rapoport,Zlatko Reyer,Nathan Rapoport,8-7,8,7,1,0,Completed,true,false,false
+AP006023,11 Oct 25,2,Maccabi,East Malvern,No. 3,Ben Pollak,Zachary Wong,Ben Pollak,8-4,8,4,1,0,Completed,true,true,false
+AP006023,11 Oct 25,2,Maccabi,East Malvern,No. 4,Liorah Levin,Ethan Oyston,Liorah Levin,8-1,8,1,1,0,Completed,true,true,false
+AP006024,11 Oct 25,2,Overport Park,Kooyong,No. 1,Degan Johnston,Nishant Shukla,Nishant Shukla,5-8,5,8,0,1,Completed,true,false,false
+AP006024,11 Oct 25,2,Overport Park,Kooyong,No. 2,Trevor Kulpa,Luis Kennedy,Luis Kennedy,4-8,4,8,0,1,Completed,true,false,false
+AP006024,11 Oct 25,2,Overport Park,Kooyong,No. 3,Leith Scott,Nicholas Collins,Leith Scott,8-3,8,3,1,0,Completed,true,false,false
+AP006024,11 Oct 25,2,Overport Park,Kooyong,No. 4,William Oakes,Joshua Tebb,Joshua Tebb,0-8,0,8,0,1,Completed,true,false,false
+AP006031,18 Oct 25,3,BLTC Blue,Overport Park,No. 1,Miguel Rasguido,Oliver Hanson,Miguel Rasguido,8-6,8,6,1,0,Completed,true,false,false
+AP006031,18 Oct 25,3,BLTC Blue,Overport Park,No. 2,Simon Scott-Branagan,Leith Scott,Simon Scott-Branagan,8-5,8,5,1,0,Completed,true,false,false
+AP006031,18 Oct 25,3,BLTC Blue,Overport Park,No. 3,Ben Giles,Trevor Kulpa,Ben Giles,8-3,8,3,1,0,Completed,true,false,false
+AP006031,18 Oct 25,3,BLTC Blue,Overport Park,No. 4,Jamie Foster,William Oakes,William Oakes,4-8,4,8,0,1,Completed,true,true,false
+AP006032,18 Oct 25,3,Tennis World,Carmelite,No. 1,Andrej Pomasan,Vladimir Spencer,Andrej Pomasan,8-5,8,5,1,0,Completed,true,false,false
+AP006032,18 Oct 25,3,Tennis World,Carmelite,No. 2,Felipe Sinuela,Michael Jankovic,Felipe Sinuela,8-2,8,2,1,0,Completed,true,false,false
+AP006032,18 Oct 25,3,Tennis World,Carmelite,No. 3,Nikolas Salazar,Francis Forbes,Nikolas Salazar,8-3,8,3,1,0,Completed,true,false,false
+AP006032,18 Oct 25,3,Tennis World,Carmelite,No. 4,Akash Lagad,Henry Hollinger,Akash Lagad,8-0,8,0,1,0,Completed,true,false,false
+AP006033,18 Oct 25,3,East Malvern,BLTC White,No. 1,Zlatko Reyer,Lochlan Friedrich,Zlatko Reyer,8-1,8,1,1,0,Completed,true,false,false
+AP006033,18 Oct 25,3,East Malvern,BLTC White,No. 2,Jamie Sutherland,Julian Catala Prieto,Julian Catala Prieto,4-8,4,8,0,1,Completed,true,true,false
+AP006033,18 Oct 25,3,East Malvern,BLTC White,No. 3,Zachary Wong,Emir Zmak,Emir Zmak,3-8,3,8,0,1,Completed,true,false,true
+AP006033,18 Oct 25,3,East Malvern,BLTC White,No. 4,Ethan Oyston,Riley Kernutt,Ethan Oyston,8-1,8,1,1,0,Completed,true,false,false
+AP006034,18 Oct 25,3,Kooyong,Maccabi,No. 1,Nishant Shukla,Nathan Rapoport,Nishant Shukla,8-7,8,7,1,0,Completed,true,false,false
+AP006034,18 Oct 25,3,Kooyong,Maccabi,No. 2,Luis Kennedy,Lior Rauchberger,Luis Kennedy,8-4,8,4,1,0,Completed,true,false,false
+AP006034,18 Oct 25,3,Kooyong,Maccabi,No. 3,Selim Ahmed,Daniel Henquin,Selim Ahmed,8-2,8,2,1,0,Completed,true,false,false
+AP006034,18 Oct 25,3,Kooyong,Maccabi,No. 4,Nicholas Collins,Charlie Landau,Nicholas Collins,8-0,8,0,1,0,Completed,true,false,true
+AP006041,25 Oct 25,4,Maccabi,BLTC Blue,No. 1,Dean Steinberg,Miguel Rasguido,Dean Steinberg,8-3,8,3,1,0,Completed,true,false,false
+AP006041,25 Oct 25,4,Maccabi,BLTC Blue,No. 2,Nathan Rapoport,Ian Thomas,Ian Thomas,5-8,5,8,0,1,Completed,true,false,false
+AP006041,25 Oct 25,4,Maccabi,BLTC Blue,No. 3,Daniel Henquin,Simon Scott-Branagan,Daniel Henquin,8-4,8,4,1,0,Completed,true,false,false
+AP006041,25 Oct 25,4,Maccabi,BLTC Blue,No. 4,David Guberek,Ben Giles,Ben Giles,2-8,2,8,0,1,Completed,true,true,false
+AP006042,25 Oct 25,4,Overport Park,Tennis World,No. 1,Degan Johnston,Gianni Granato,Gianni Granato,5-8,5,8,0,1,Completed,true,false,false
+AP006042,25 Oct 25,4,Overport Park,Tennis World,No. 2,Oliver Hanson,Abdullah Hamoud,Oliver Hanson,8-4,8,4,1,0,Completed,true,false,false
+AP006042,25 Oct 25,4,Overport Park,Tennis World,No. 3,Leith Scott,Abhi Gajwani,Leith Scott,8-7,8,7,1,0,Completed,true,false,false
+AP006042,25 Oct 25,4,Overport Park,Tennis World,No. 4,Trevor Kulpa,Yashank Maini,Yashank Maini,5-8,5,8,0,1,Completed,true,false,false
+AP006043,25 Oct 25,4,Carmelite,East Malvern,No. 1,Darcy Whitebrook,Sorin Zota,Sorin Zota,3-8,3,8,0,1,Completed,true,false,true
+AP006043,25 Oct 25,4,Carmelite,East Malvern,No. 2,Vladimir Spencer,Zlatko Reyer,Zlatko Reyer,3-8,3,8,0,1,Completed,true,false,false
+AP006043,25 Oct 25,4,Carmelite,East Malvern,No. 3,Marc Hollestein,Vincent Guo,Marc Hollestein,8-2,8,2,1,0,Completed,true,false,true
+AP006043,25 Oct 25,4,Carmelite,East Malvern,No. 4,Michael Jankovic,Zachary Wong,Michael Jankovic,8-7,8,7,1,0,Completed,true,false,false
+AP006044,25 Oct 25,4,BLTC White,Kooyong,No. 1,Darcy Henschke,Nicholas Kotros,Nicholas Kotros,5-8,5,8,0,1,Completed,true,false,false
+AP006044,25 Oct 25,4,BLTC White,Kooyong,No. 2,Samuel Jena,Luis Kennedy,Luis Kennedy,1-8,1,8,0,1,Completed,true,true,false
+AP006044,25 Oct 25,4,BLTC White,Kooyong,No. 3,Tobias Jena,Selim Ahmed,Selim Ahmed,1-8,1,8,0,1,Completed,true,true,false
+AP006044,25 Oct 25,4,BLTC White,Kooyong,No. 4,Terry Colangi,Joshua Tebb,Joshua Tebb,2-8,2,8,0,1,Completed,true,true,false
+AP006061,15 Nov 25,6,Tennis World,East Malvern,No. 1,Gianni Granato,Nathan Hawke,Gianni Granato,8-6,8,6,1,0,Completed,true,false,false
+AP006061,15 Nov 25,6,Tennis World,East Malvern,No. 2,Felipe Sinuela,Zlatko Reyer,Zlatko Reyer,2-8,2,8,0,1,Completed,true,false,false
+AP006061,15 Nov 25,6,Tennis World,East Malvern,No. 3,Nikolas Salazar,Ethan Oyston,Nikolas Salazar,8-5,8,5,1,0,Completed,true,false,false
+AP006061,15 Nov 25,6,Tennis World,East Malvern,No. 4,Yashank Maini,Sam Van Der Zee,Yashank Maini,8-4,8,4,1,0,Completed,true,false,true
+AP006062,15 Nov 25,6,Kooyong,BLTC Blue,No. 1,Nicholas Kotros,Miguel Rasguido,Nicholas Kotros,8-5,8,5,1,0,Completed,true,false,false
+AP006062,15 Nov 25,6,Kooyong,BLTC Blue,No. 2,Nishant Shukla,David Smith,David Smith,1-8,1,8,0,1,Completed,true,false,false
+AP006062,15 Nov 25,6,Kooyong,BLTC Blue,No. 3,Luis Kennedy,Ian Thomas,Luis Kennedy,8-7,8,7,1,0,Completed,true,false,false
+AP006062,15 Nov 25,6,Kooyong,BLTC Blue,No. 4,Selim Ahmed,Simon Scott-Branagan,Simon Scott-Branagan,6-8,6,8,0,1,Completed,true,false,false
+AP006063,15 Nov 25,6,Overport Park,Maccabi,No. 1,Degan Johnston,Nathan Rapoport,Degan Johnston,8-6,8,6,1,0,Completed,true,false,false
+AP006063,15 Nov 25,6,Overport Park,Maccabi,No. 2,Leith Scott,Daniel Henquin,Leith Scott,8-2,8,2,1,0,Completed,true,false,false
+AP006063,15 Nov 25,6,Overport Park,Maccabi,No. 3,Trevor Kulpa,Darion Pohl,Darion Pohl,6-8,6,8,0,1,Completed,true,false,false
+AP006063,15 Nov 25,6,Overport Park,Maccabi,No. 4,William Oakes,David Guberek,William Oakes,8-5,8,5,1,0,Completed,true,false,true
+AP006064,15 Nov 25,6,BLTC White,Carmelite,No. 1,Lochlan Friedrich,Mark Doherty,Lochlan Friedrich,8-3,8,3,1,0,Completed,true,false,false
+AP006064,15 Nov 25,6,BLTC White,Carmelite,No. 2,Darcy Henschke,Michael Jankovic,Darcy Henschke,8-2,8,2,1,0,Completed,true,false,false
+AP006064,15 Nov 25,6,BLTC White,Carmelite,No. 3,Liam Parsons,Francis Forbes,Liam Parsons,8-7,8,7,1,0,Completed,true,false,false
+AP006064,15 Nov 25,6,BLTC White,Carmelite,No. 4,Riley Kernutt,Grant Neilson,Riley Kernutt,8-1,8,1,1,0,Completed,true,false,false
+AP006071,22 Nov 25,7,BLTC Blue,East Malvern,No. 1,Miguel Rasguido,Cole Rintoul,Cole Rintoul,5-8,5,8,0,1,Completed,true,false,true
+AP006071,22 Nov 25,7,BLTC Blue,East Malvern,No. 2,David Smith,Zlatko Reyer,Zlatko Reyer,1-8,1,8,0,1,Completed,true,false,false
+AP006071,22 Nov 25,7,BLTC Blue,East Malvern,No. 3,Simon Scott-Branagan,Zachary Wong,Simon Scott-Branagan,8-5,8,5,1,0,Completed,true,false,false
+AP006071,22 Nov 25,7,BLTC Blue,East Malvern,No. 4,Ben Giles,Ethan Oyston,Ethan Oyston,4-8,4,8,0,1,Completed,true,false,false
+AP006072,22 Nov 25,7,Tennis World,Kooyong,No. 1,Andrej Pomasan,Steven Gostin,Andrej Pomasan,8-4,8,4,1,0,Completed,true,false,true
+AP006072,22 Nov 25,7,Tennis World,Kooyong,No. 2,Gianni Granato,Nishant Shukla,Gianni Granato,8-1,8,1,1,0,Completed,true,false,false
+AP006072,22 Nov 25,7,Tennis World,Kooyong,No. 3,Chi Rouse-amadi,Luis Kennedy,Chi Rouse-amadi,8-3,8,3,1,0,Completed,true,true,false
+AP006072,22 Nov 25,7,Tennis World,Kooyong,No. 4,Felipe Sinuela,Joshua Tebb,Felipe Sinuela,8-0,8,0,1,0,Completed,true,false,false
+AP006073,22 Nov 25,7,Carmelite,Maccabi,No. 1,Vladimir Spencer,Dean Steinberg,Dean Steinberg,1-8,1,8,0,1,Completed,true,false,false
+AP006073,22 Nov 25,7,Carmelite,Maccabi,No. 2,Marc Hollestein,Ryan Behr,Ryan Behr,2-8,2,8,0,1,Completed,true,false,false
+AP006073,22 Nov 25,7,Carmelite,Maccabi,No. 3,Michael Jankovic,Darion Pohl,Michael Jankovic,8-3,8,3,1,0,Completed,true,false,false
+AP006073,22 Nov 25,7,Carmelite,Maccabi,No. 4,Francis Forbes,Charlie Landau,Francis Forbes,8-7,8,7,1,0,Completed,true,false,false
+AP006074,22 Nov 25,7,Overport Park,BLTC White,No. 1,Degan Johnston,Lochlan Friedrich,Lochlan Friedrich,7-8,7,8,0,1,Completed,true,false,false
+AP006074,22 Nov 25,7,Overport Park,BLTC White,No. 2,Oliver Hanson,Julian Catala Prieto,Oliver Hanson,8-5,8,5,1,0,Completed,true,false,false
+AP006074,22 Nov 25,7,Overport Park,BLTC White,No. 3,Leith Scott,Darcy Henschke,Darcy Henschke,6-8,6,8,0,1,Completed,true,false,false
+AP006074,22 Nov 25,7,Overport Park,BLTC White,No. 4,William Oakes,Liam Parsons,Liam Parsons,2-8,2,8,0,1,Completed,true,false,false
+AP006081,29 Nov 25,8,BLTC White,BLTC Blue,No. 1,Lochlan Friedrich,Miguel Rasguido,Miguel Rasguido,1-8,1,8,0,1,Completed,true,false,false
+AP006081,29 Nov 25,8,BLTC White,BLTC Blue,No. 2,Julian Catala Prieto,Ian Thomas,Julian Catala Prieto,8-3,8,3,1,0,Completed,true,false,false
+AP006081,29 Nov 25,8,BLTC White,BLTC Blue,No. 3,Darcy Henschke,Simon Scott-Branagan,Simon Scott-Branagan,4-8,4,8,0,1,Completed,true,false,false
+AP006081,29 Nov 25,8,BLTC White,BLTC Blue,No. 4,Riley Kernutt,Ben Giles,Ben Giles,0-8,0,8,0,1,Completed,true,false,false
+AP006082,29 Nov 25,8,Maccabi,Tennis World,No. 1,Dean Steinberg,Andrej Pomasan,Dean Steinberg,8-6,8,6,1,0,Completed,true,false,false
+AP006082,29 Nov 25,8,Maccabi,Tennis World,No. 2,Ryan Behr,Gianni Granato,Gianni Granato,2-8,2,8,0,1,Completed,true,false,false
+AP006082,29 Nov 25,8,Maccabi,Tennis World,No. 3,Daniel Henquin,Nikolas Salazar,Nikolas Salazar,1-8,1,8,0,1,Completed,true,false,false
+AP006082,29 Nov 25,8,Maccabi,Tennis World,No. 4,Charlie Landau,Akash Lagad,Charlie Landau,8-2,8,2,1,0,Completed,true,false,false
+AP006083,29 Nov 25,8,Overport Park,East Malvern,No. 1,Degan Johnston,Nathan Hawke,Degan Johnston,8-0,8,0,1,0,Completed,true,false,false
+AP006083,29 Nov 25,8,Overport Park,East Malvern,No. 2,Oliver Hanson,Zlatko Reyer,Zlatko Reyer,3-8,3,8,0,1,Completed,true,false,false
+AP006083,29 Nov 25,8,Overport Park,East Malvern,No. 3,Leith Scott,Zachary Wong,Zachary Wong,4-8,4,8,0,1,Completed,true,false,false
+AP006083,29 Nov 25,8,Overport Park,East Malvern,No. 4,William Oakes,Ethan Oyston,Ethan Oyston,4-8,4,8,0,1,Completed,true,false,false
+AP006084,29 Nov 25,8,Carmelite,Kooyong,No. 1,Vladimir Spencer,Nicholas Kotros,Nicholas Kotros,3-8,3,8,0,1,Completed,true,false,false
+AP006084,29 Nov 25,8,Carmelite,Kooyong,No. 2,Mark Doherty,Nishant Shukla,Nishant Shukla,1-8,1,8,0,1,Completed,true,true,false
+AP006084,29 Nov 25,8,Carmelite,Kooyong,No. 3,Michael Jankovic,Luis Kennedy,Luis Kennedy,2-8,2,8,0,1,Completed,true,false,false
+AP006084,29 Nov 25,8,Carmelite,Kooyong,No. 4,Grant Neilson,Selim Ahmed,Selim Ahmed,3-8,3,8,0,1,Completed,true,false,false
+AP006101,13 Dec 25,10,Overport Park,BLTC Blue,No. 1,Oliver Hanson,Miguel Rasguido,Miguel Rasguido,4-8,4,8,0,1,Completed,true,false,false
+AP006101,13 Dec 25,10,Overport Park,BLTC Blue,No. 2,Leith Scott,Ian Thomas,Leith Scott,8-3,8,3,1,0,Completed,true,false,false
+AP006101,13 Dec 25,10,Overport Park,BLTC Blue,No. 3,Trevor Kulpa,Simon Scott-Branagan,Simon Scott-Branagan,1-8,1,8,0,1,Completed,true,false,false
+AP006101,13 Dec 25,10,Overport Park,BLTC Blue,No. 4,William Oakes,Jamie Foster,William Oakes,8-7,8,7,1,0,Completed,true,false,true
+AP006102,13 Dec 25,10,Carmelite,Tennis World,No. 1,Vladimir Spencer,Gianni Granato,Gianni Granato,3-8,3,8,0,1,Completed,true,false,false
+AP006102,13 Dec 25,10,Carmelite,Tennis World,No. 2,Mark Doherty,Felipe Sinuela,Felipe Sinuela,1-8,1,8,0,1,Completed,true,false,false
+AP006102,13 Dec 25,10,Carmelite,Tennis World,No. 3,Michael Jankovic,Nikolas Salazar,Nikolas Salazar,5-8,5,8,0,1,Completed,true,false,false
+AP006102,13 Dec 25,10,Carmelite,Tennis World,No. 4,Henry Hollinger,Yashank Maini,Yashank Maini,3-8,3,8,0,1,Completed,true,false,false
+AP006103,13 Dec 25,10,BLTC White,East Malvern,No. 1,Lochlan Friedrich,Zlatko Reyer,Zlatko Reyer,7-8,7,8,0,1,Completed,true,false,false
+AP006103,13 Dec 25,10,BLTC White,East Malvern,No. 2,Harrison Yang,Hugo Yuen,Hugo Yuen,3-8,3,8,0,1,Completed,true,false,true
+AP006103,13 Dec 25,10,BLTC White,East Malvern,No. 3,Darcy Henschke,Ethan Oyston,Darcy Henschke,8-2,8,2,1,0,Completed,true,false,false
+AP006103,13 Dec 25,10,BLTC White,East Malvern,No. 4,Liam Parsons,Tim Wong,Liam Parsons,8-1,8,1,1,0,Completed,true,false,false
+AP006104,13 Dec 25,10,Maccabi,Kooyong,No. 1,Ryan Behr,Luis Kennedy,Luis Kennedy,7-8,7,8,0,1,Completed,true,false,false
+AP006104,13 Dec 25,10,Maccabi,Kooyong,No. 2,Nathan Rapoport,Joshua Tebb,Nathan Rapoport,8-2,8,2,1,0,Completed,true,false,false
+AP006104,13 Dec 25,10,Maccabi,Kooyong,No. 3,Daniel Henquin,Sean Chen,Daniel Henquin,8-5,8,5,1,0,Completed,true,false,false
+AP006104,13 Dec 25,10,Maccabi,Kooyong,No. 4,Charlie Landau,Nicholas Collins,Nicholas Collins,1-8,1,8,0,1,Completed,true,false,false
+AP006111,07 Feb 26,11,BLTC Blue,Maccabi,No. 1,Miguel Rasguido,Dean Steinberg,Miguel Rasguido,8-2,8,2,1,0,Completed,true,false,false
+AP006111,07 Feb 26,11,BLTC Blue,Maccabi,No. 2,David Smith,Ryan Behr,David Smith,8-3,8,3,1,0,Completed,true,false,false
+AP006111,07 Feb 26,11,BLTC Blue,Maccabi,No. 3,Ian Thomas,Nathan Rapoport,Ian Thomas,8-2,8,2,1,0,Completed,true,false,false
+AP006111,07 Feb 26,11,BLTC Blue,Maccabi,No. 4,Simon Scott-Branagan,Charlie Landau,Simon Scott-Branagan,8-1,8,1,1,0,Completed,true,false,false
+AP006112,07 Feb 26,11,Tennis World,Overport Park,No. 1,Andrej Pomasan,Degan Johnston,Andrej Pomasan,8-2,8,2,1,0,Completed,true,false,false
+AP006112,07 Feb 26,11,Tennis World,Overport Park,No. 2,Felipe Sinuela,Leith Scott,Felipe Sinuela,8-4,8,4,1,0,Completed,true,false,false
+AP006112,07 Feb 26,11,Tennis World,Overport Park,No. 3,Nikolas Salazar,Trevor Kulpa,Nikolas Salazar,8-2,8,2,1,0,Completed,true,false,false
+AP006112,07 Feb 26,11,Tennis World,Overport Park,No. 4,Yashank Maini,William Oakes,Yashank Maini,8-3,8,3,1,0,Completed,true,false,false
+AP006113,07 Feb 26,11,East Malvern,Carmelite,No. 1,Zlatko Reyer,Michael Jankovic,Zlatko Reyer,8-2,8,2,1,0,Completed,true,false,false
+AP006113,07 Feb 26,11,East Malvern,Carmelite,No. 2,Hugo Yuen,Francis Forbes,Hugo Yuen,8-0,8,0,1,0,Completed,true,true,false
+AP006113,07 Feb 26,11,East Malvern,Carmelite,No. 3,Mark Cunningham,Henry Hollinger,Mark Cunningham,8-0,8,0,1,0,Completed,true,true,false
+AP006113,07 Feb 26,11,East Malvern,Carmelite,No. 4,Sam Seaberry,Jamie Tall,Sam Seaberry,8-3,8,3,1,0,Completed,true,true,true
+AP006114,07 Feb 26,11,Kooyong,BLTC White,No. 1,Nicholas Kotros,Lochlan Friedrich,Nicholas Kotros,8-2,8,2,1,0,Completed,true,false,false
+AP006114,07 Feb 26,11,Kooyong,BLTC White,No. 2,Luis Kennedy,Julian Catala Prieto,Julian Catala Prieto,7-8,7,8,0,1,Completed,true,false,false
+AP006114,07 Feb 26,11,Kooyong,BLTC White,No. 3,Selim Ahmed,Harrison Yang,Selim Ahmed,8-4,8,4,1,0,Completed,true,false,false
+AP006114,07 Feb 26,11,Kooyong,BLTC White,No. 4,Joshua Tebb,Darcy Henschke,Darcy Henschke,5-8,5,8,0,1,Completed,true,false,false
+AP006121,14 Feb 26,12,Kooyong,East Malvern,No. 1,Nicholas Kotros,Zlatko Reyer,Nicholas Kotros,8-4,8,4,1,0,Completed,true,false,false
+AP006121,14 Feb 26,12,Kooyong,East Malvern,No. 2,Selim Ahmed,Hugo Yuen,Hugo Yuen,0-8,0,8,0,1,Completed,true,false,true
+AP006121,14 Feb 26,12,Kooyong,East Malvern,No. 3,Nicholas Collins,Zachary Wong,Zachary Wong,6-8,6,8,0,1,Completed,true,false,false
+AP006121,14 Feb 26,12,Kooyong,East Malvern,No. 4,Sean Chen,Ethan Oyston,Sean Chen,8-5,8,5,1,0,Completed,true,false,false
+AP006122,14 Feb 26,12,Overport Park,Carmelite,No. 1,Oliver Hanson,Emile Brys,Oliver Hanson,8-0,8,0,1,0,Completed,true,false,true
+AP006122,14 Feb 26,12,Overport Park,Carmelite,No. 2,Leith Scott,Grant Neilson,Leith Scott,8-1,8,1,1,0,Completed,true,false,false
+AP006122,14 Feb 26,12,Overport Park,Carmelite,No. 3,Trevor Kulpa,Henry Hollinger,Trevor Kulpa,8-2,8,2,1,0,Completed,true,false,false
+AP006122,14 Feb 26,12,Overport Park,Carmelite,No. 4,William Oakes,Jamie Tall,William Oakes,8-0,8,0,1,0,Completed,true,false,true
+AP006123,14 Feb 26,12,BLTC White,Maccabi,No. 1,Lochlan Friedrich,Dean Steinberg,Dean Steinberg,7-8,7,8,0,1,Completed,true,false,false
+AP006123,14 Feb 26,12,BLTC White,Maccabi,No. 2,Julian Catala Prieto,Ryan Behr,Ryan Behr,7-8,7,8,0,1,Completed,true,false,false
+AP006123,14 Feb 26,12,BLTC White,Maccabi,No. 3,Liam Parsons,Nathan Rapoport,Nathan Rapoport,5-8,5,8,0,1,Completed,true,false,false
+AP006123,14 Feb 26,12,BLTC White,Maccabi,No. 4,Riley Kernutt,Charlie Landau,Riley Kernutt,8-2,8,2,1,0,Completed,true,false,false
+AP006124,14 Feb 26,12,Tennis World,BLTC Blue,No. 1,Andrej Pomasan,Miguel Rasguido,Miguel Rasguido,1-8,1,8,0,1,Completed,true,false,false
+AP006124,14 Feb 26,12,Tennis World,BLTC Blue,No. 2,Gianni Granato,David Smith,Gianni Granato,8-0,8,0,1,0,Completed,true,false,false
+AP006124,14 Feb 26,12,Tennis World,BLTC Blue,No. 3,Felipe Sinuela,Ian Thomas,Felipe Sinuela,8-0,8,0,1,0,Completed,true,false,false
+AP006124,14 Feb 26,12,Tennis World,BLTC Blue,No. 4,Nikolas Salazar,Alasdair Fairbairn,Nikolas Salazar,8-4,8,4,1,0,Completed,true,false,false
+AP006131,21 Feb 26,13,East Malvern,Tennis World,No. 1,Zlatko Reyer,Gianni Granato,Gianni Granato,7-8,7,8,0,1,Completed,true,false,false
+AP006131,21 Feb 26,13,East Malvern,Tennis World,No. 2,Mads Sorensen,Chi Rouse-amadi,Chi Rouse-amadi,5-8,5,8,0,1,Completed,true,false,true
+AP006131,21 Feb 26,13,East Malvern,Tennis World,No. 3,Zachary Wong,Abhi Gajwani,Zachary Wong,8-7,8,7,1,0,Completed,true,false,false
+AP006131,21 Feb 26,13,East Malvern,Tennis World,No. 4,Ethan Oyston,Yashank Maini,Yashank Maini,7-8,7,8,0,1,Completed,true,false,false
+AP006132,21 Feb 26,13,BLTC Blue,Kooyong,No. 1,Miguel Rasguido,Luis Kennedy,Miguel Rasguido,8-7,8,7,1,0,Completed,true,false,false
+AP006132,21 Feb 26,13,BLTC Blue,Kooyong,No. 2,Ian Thomas,Ross Begerly,Ian Thomas,8-7,8,7,1,0,Completed,true,false,true
+AP006132,21 Feb 26,13,BLTC Blue,Kooyong,No. 3,Alasdair Fairbairn,Selim Ahmed,Alasdair Fairbairn,8-0,8,0,1,0,Completed,true,false,false
+AP006132,21 Feb 26,13,BLTC Blue,Kooyong,No. 4,Stuart Mac Farlane,Sean Chen,Sean Chen,5-8,5,8,0,1,Completed,true,false,false
+AP006133,21 Feb 26,13,Maccabi,Overport Park,No. 1,Dean Steinberg,Degan Johnston,Dean Steinberg,8-1,8,1,1,0,Completed,true,false,false
+AP006133,21 Feb 26,13,Maccabi,Overport Park,No. 2,Lior Rauchberger,Oliver Hanson,Oliver Hanson,3-8,3,8,0,1,Completed,true,false,false
+AP006133,21 Feb 26,13,Maccabi,Overport Park,No. 3,Darion Pohl,Trevor Kulpa,Darion Pohl,8-2,8,2,1,0,Completed,true,false,false
+AP006133,21 Feb 26,13,Maccabi,Overport Park,No. 4,Charlie Landau,William Oakes,Charlie Landau,8-7,8,7,1,0,Completed,true,false,false
+AP006134,21 Feb 26,13,Carmelite,BLTC White,No. 1,Mark Doherty,Lochlan Friedrich,Lochlan Friedrich,2-8,2,8,0,1,Completed,true,false,false
+AP006134,21 Feb 26,13,Carmelite,BLTC White,No. 2,Francis Forbes,Harrison Yang,Francis Forbes,8-4,8,4,1,0,Completed,true,false,false
+AP006134,21 Feb 26,13,Carmelite,BLTC White,No. 3,Emile Brys,Darcy Henschke,Darcy Henschke,3-8,3,8,0,1,Completed,true,true,false
+AP006134,21 Feb 26,13,Carmelite,BLTC White,No. 4,Henry Hollinger,Liam Parsons,Liam Parsons,1-8,1,8,0,1,Completed,true,false,false
+AP006141,28 Feb 26,14,East Malvern,BLTC Blue,No. 1,Cole Rintoul,Miguel Rasguido,Cole Rintoul,8-6,8,6,1,0,Completed,true,true,false
+AP006141,28 Feb 26,14,East Malvern,BLTC Blue,No. 2,Zlatko Reyer,David Smith,Zlatko Reyer,8-4,8,4,1,0,Completed,true,false,false
+AP006141,28 Feb 26,14,East Malvern,BLTC Blue,No. 3,Zachary Wong,Ian Thomas,Ian Thomas,7-8,7,8,0,1,Completed,true,false,false
+AP006141,28 Feb 26,14,East Malvern,BLTC Blue,No. 4,Ethan Oyston,Simon Scott-Branagan,Simon Scott-Branagan,4-8,4,8,0,1,Completed,true,false,false
+AP006142,28 Feb 26,14,Kooyong,Tennis World,No. 1,Nishant Shukla,Andrej Pomasan,Andrej Pomasan,6-8,6,8,0,1,Completed,true,false,false
+AP006142,28 Feb 26,14,Kooyong,Tennis World,No. 2,Luis Kennedy,Gianni Granato,Gianni Granato,3-8,3,8,0,1,Completed,true,false,false
+AP006142,28 Feb 26,14,Kooyong,Tennis World,No. 3,Selim Ahmed,Felipe Sinuela,Felipe Sinuela,2-8,2,8,0,1,Completed,true,false,false
+AP006142,28 Feb 26,14,Kooyong,Tennis World,No. 4,Joshua Tebb,Akash Lagad,Akash Lagad,4-8,4,8,0,1,Completed,true,false,false
+AP006143,28 Feb 26,14,Maccabi,Carmelite,No. 1,Ryan Behr,Mark Smith,Mark Smith,6-8,6,8,0,1,Completed,true,false,true
+AP006143,28 Feb 26,14,Maccabi,Carmelite,No. 2,Lior Rauchberger,Francis Forbes,Francis Forbes,4-8,4,8,0,1,Completed,true,false,false
+AP006143,28 Feb 26,14,Maccabi,Carmelite,No. 3,Daniel Henquin,Henry Hollinger,Daniel Henquin,8-0,8,0,1,0,Completed,true,false,false
+AP006143,28 Feb 26,14,Maccabi,Carmelite,No. 4,Darion Pohl,Jamie Tall,Darion Pohl,8-1,8,1,1,0,Completed,true,false,true
+AP006144,28 Feb 26,14,BLTC White,Overport Park,No. 1,Lochlan Friedrich,Oliver Hanson,Lochlan Friedrich,8-2,8,2,1,0,Completed,true,false,false
+AP006144,28 Feb 26,14,BLTC White,Overport Park,No. 2,Julian Catala Prieto,Leith Scott,Julian Catala Prieto,8-2,8,2,1,0,Completed,true,false,false
+AP006144,28 Feb 26,14,BLTC White,Overport Park,No. 3,Darcy Henschke,Trevor Kulpa,Darcy Henschke,8-1,8,1,1,0,Completed,true,false,false
+AP006144,28 Feb 26,14,BLTC White,Overport Park,No. 4,Liam Parsons,William Oakes,Liam Parsons,8-6,8,6,1,0,Completed,true,false,false
+AP006301,,16,Tennis World,Maccabi,No. 1,Ben Lambell,Ryan Behr,Ryan Behr,2-8,2,8,0,1,Completed,true,true,false
+AP006301,,16,Tennis World,Maccabi,No. 2,Felipe Sinuela,Nathan Rapoport,Felipe Sinuela,8-2,8,2,1,0,Completed,true,false,false
+AP006301,,16,Tennis World,Maccabi,No. 3,Nikolas Salazar,Daniel Henquin,Nikolas Salazar,8-3,8,3,1,0,Completed,true,false,false
+AP006301,,16,Tennis World,Maccabi,No. 4,Yashank Maini,Darion Pohl,Yashank Maini,8-6,8,6,1,0,Completed,true,false,false
+AP006302,,16,BLTC Blue,Kooyong,No. 1,Miguel Rasguido,Nicholas Kotros,Miguel Rasguido,8-2,8,2,1,0,Completed,true,false,false
+AP006302,,16,BLTC Blue,Kooyong,No. 2,David Smith,Nishant Shukla,David Smith,8-2,8,2,1,0,Completed,true,false,false
+AP006302,,16,BLTC Blue,Kooyong,No. 3,Ian Thomas,Luis Kennedy,Ian Thomas,8-2,8,2,1,0,Completed,true,false,false
+AP006302,,16,BLTC Blue,Kooyong,No. 4,Simon Scott-Branagan,Nicholas Collins,Simon Scott-Branagan,8-2,8,2,1,0,Completed,true,false,false
+AP006321,,17,Tennis World,BLTC Blue,No. 1,James King,Miguel Rasguido,Miguel Rasguido,6-8,6,8,0,1,Completed,true,true,false
+AP006321,,17,Tennis World,BLTC Blue,No. 2,Felipe Sinuela,David Smith,Felipe Sinuela,8-7,8,7,1,0,Completed,true,false,false
+AP006321,,17,Tennis World,BLTC Blue,No. 3,Nikolas Salazar,Ian Thomas,Nikolas Salazar,8-2,8,2,1,0,Completed,true,false,false
+AP006321,,17,Tennis World,BLTC Blue,No. 4,Yashank Maini,Simon Scott-Branagan,Yashank Maini,8-4,8,4,1,0,Completed,true,false,false

@@ -1,0 +1,89 @@
+{
+  "asset_id": "AP22-AP017",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 10/11",
+  "season_id": "AP22",
+  "season_label": "Summer 10/11",
+  "source_section_code": "AP017",
+  "section_label": "Mens Rubbers 1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Parkdale",
+      "wins": 0,
+      "points": 94,
+      "percentage": 205.7,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "Kooyong",
+      "wins": 0,
+      "points": 78,
+      "percentage": 151.57,
+      "marker": "P"
+    },
+    {
+      "position": 3,
+      "team": "Patterson Lakes",
+      "wins": 0,
+      "points": 62,
+      "percentage": 101.51,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Albert Park",
+      "wins": 0,
+      "points": 56,
+      "percentage": 98.26,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "East Malvern 1",
+      "wins": 0,
+      "points": 43,
+      "percentage": 72.11,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "East Malvern 2",
+      "wins": 0,
+      "points": 27,
+      "percentage": 46.3,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP22-AP017",
+  "fixtures": 47,
+  "completed_fixtures": 32,
+  "draw_fixtures": 46,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 128,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP017311 doubles No. 4: '6-4 1-1'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

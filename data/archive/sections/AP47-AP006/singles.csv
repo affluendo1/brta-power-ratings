@@ -1,0 +1,153 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP006012,07 Oct 23,1,Maccabi,Kings Park Red,No. 1,Steve Bendel,Dean Metter,Dean Metter,7-8,7,8,0,1,Completed,true,false,false
+AP006012,07 Oct 23,1,Maccabi,Kings Park Red,No. 2,Adam Needleman,Michael Cooper,Adam Needleman,8-5,8,5,1,0,Completed,true,false,false
+AP006012,07 Oct 23,1,Maccabi,Kings Park Red,No. 3,Daniel Henquin,David Sacho,David Sacho,5-8,5,8,0,1,Completed,true,false,false
+AP006012,07 Oct 23,1,Maccabi,Kings Park Red,No. 4,Anthony Murray,Ilan Goldsmith,Anthony Murray,8-1,8,1,1,0,Completed,true,false,false
+AP006013,07 Oct 23,1,Elsternwick Park,BLTC Blue,No. 1,Jannis Boeckle,Liam Parsons,Jannis Boeckle,8-2,8,2,1,0,Completed,true,false,false
+AP006013,07 Oct 23,1,Elsternwick Park,BLTC Blue,No. 2,Brad Fenech,Christian Tomasic,Brad Fenech,8-6,8,6,1,0,Completed,true,false,false
+AP006013,07 Oct 23,1,Elsternwick Park,BLTC Blue,No. 3,Mark Loosschilder,Julian Catala Prieto,Mark Loosschilder,8-5,8,5,1,0,Completed,true,false,false
+AP006013,07 Oct 23,1,Elsternwick Park,BLTC Blue,No. 4,Roshen Singh,Bashir Riachi,Roshen Singh,8-5,8,5,1,0,Completed,true,false,false
+AP006014,07 Oct 23,1,Parkdale,Tennis World,No. 1,Brandan Sison,Patrick McGregor,Brandan Sison,8-1,8,1,1,0,Completed,true,false,false
+AP006014,07 Oct 23,1,Parkdale,Tennis World,No. 2,Simon Ghattas,Yashank Maini,Yashank Maini,7-8,7,8,0,1,Completed,true,false,false
+AP006014,07 Oct 23,1,Parkdale,Tennis World,No. 3,Sam Umeonusulu,Benjamin Lambell,Sam Umeonusulu,8-0,8,0,1,0,Completed,true,false,false
+AP006014,07 Oct 23,1,Parkdale,Tennis World,No. 4,Herschel Fitzroy,Wayne Smith,Wayne Smith,7-8,7,8,0,1,Completed,true,false,false
+AP006021,14 Oct 23,2,Tennis World,St Pats Mentone,No. 1,Patrick McGregor,David Lawry,Patrick McGregor,8-1,8,1,1,0,Completed,true,false,false
+AP006021,14 Oct 23,2,Tennis World,St Pats Mentone,No. 2,Maximiliano Alvarez Contreras,Nick Hall,Maximiliano Alvarez Contreras,8-4,8,4,1,0,Completed,true,false,false
+AP006021,14 Oct 23,2,Tennis World,St Pats Mentone,No. 3,Benjamin Lambell,Mike De Silva,Benjamin Lambell,8-0,8,0,1,0,Completed,true,false,false
+AP006021,14 Oct 23,2,Tennis World,St Pats Mentone,No. 4,Wayne Smith,James Campbell,Wayne Smith,8-2,8,2,1,0,Completed,true,false,false
+AP006023,14 Oct 23,2,Kings Park Red,Elsternwick Park,No. 1,Dean Metter,Brad Fenech,Brad Fenech,4-8,4,8,0,1,Completed,true,false,false
+AP006023,14 Oct 23,2,Kings Park Red,Elsternwick Park,No. 2,Tom Dubbeld,Adam Neilands,Adam Neilands,4-8,4,8,0,1,Completed,true,false,false
+AP006023,14 Oct 23,2,Kings Park Red,Elsternwick Park,No. 3,David Sacho,Mark Loosschilder,Mark Loosschilder,6-8,6,8,0,1,Completed,true,false,false
+AP006023,14 Oct 23,2,Kings Park Red,Elsternwick Park,No. 4,Ilan Goldsmith,Dror Collins,Ilan Goldsmith,8-4,8,4,1,0,Completed,true,false,false
+AP006024,14 Oct 23,2,BLTC Blue,Parkdale,No. 1,Christian Tomasic,Andrew Watterson,Christian Tomasic,8-3,8,3,1,0,Completed,true,false,false
+AP006024,14 Oct 23,2,BLTC Blue,Parkdale,No. 2,Emerson Schillaci,Sam Umeonusulu,Emerson Schillaci,8-6,8,6,1,0,Completed,true,false,false
+AP006024,14 Oct 23,2,BLTC Blue,Parkdale,No. 3,Ray Lai,Jack O'Brien,Ray Lai,8-3,8,3,1,0,Completed,true,false,false
+AP006024,14 Oct 23,2,BLTC Blue,Parkdale,No. 4,Lochlan Friedrich,Herschel Fitzroy,Lochlan Friedrich,8-4,8,4,1,0,Completed,true,false,false
+AP006031,21 Oct 23,3,St Pats Mentone,BLTC Blue,No. 1,Cameron De Silva,Julian Catala Prieto,Cameron De Silva,8-1,8,1,1,0,Completed,true,false,false
+AP006031,21 Oct 23,3,St Pats Mentone,BLTC Blue,No. 2,David Lawry,Emerson Schillaci,David Lawry,8-3,8,3,1,0,Completed,true,false,false
+AP006031,21 Oct 23,3,St Pats Mentone,BLTC Blue,No. 3,Nick Hall,Lochlan Friedrich,Lochlan Friedrich,1-8,1,8,0,1,Completed,true,false,false
+AP006031,21 Oct 23,3,St Pats Mentone,BLTC Blue,No. 4,James Campbell,Bashir Riachi,Bashir Riachi,1-8,1,8,0,1,Completed,true,false,false
+AP006032,21 Oct 23,3,Maccabi,Tennis World,No. 1,Ilay Givoni,Patrick McGregor,Patrick McGregor,4-8,4,8,0,1,Completed,true,false,false
+AP006032,21 Oct 23,3,Maccabi,Tennis World,No. 2,Steve Bendel,Maximiliano Alvarez Contreras,Steve Bendel,8-5,8,5,1,0,Completed,true,false,false
+AP006032,21 Oct 23,3,Maccabi,Tennis World,No. 3,Adam Needleman,Benjamin Lambell,Benjamin Lambell,5-8,5,8,0,1,Completed,true,false,false
+AP006032,21 Oct 23,3,Maccabi,Tennis World,No. 4,Daniel Henquin,Yashank Maini,Daniel Henquin,8-6,8,6,1,0,Completed,true,false,false
+AP006034,21 Oct 23,3,Parkdale,Kings Park Red,No. 1,Brandan Sison,Dean Metter,Dean Metter,3-8,3,8,0,1,Completed,true,false,false
+AP006034,21 Oct 23,3,Parkdale,Kings Park Red,No. 2,Andrew Watterson,Tom Dubbeld,Tom Dubbeld,0-8,0,8,0,1,Completed,true,false,false
+AP006034,21 Oct 23,3,Parkdale,Kings Park Red,No. 3,Sam Umeonusulu,David Sacho,David Sacho,3-8,3,8,0,1,Completed,true,false,false
+AP006034,21 Oct 23,3,Parkdale,Kings Park Red,No. 4,Luke Simmons,Ilan Goldsmith,Luke Simmons,8-3,8,3,1,0,Completed,true,true,false
+AP006041,28 Oct 23,4,Kings Park Red,St Pats Mentone,No. 1,Dean Metter,Cameron De Silva,Cameron De Silva,2-8,2,8,0,1,Completed,true,false,false
+AP006041,28 Oct 23,4,Kings Park Red,St Pats Mentone,No. 2,Tom Dubbeld,Nick Hall,Tom Dubbeld,8-5,8,5,1,0,Completed,true,false,false
+AP006041,28 Oct 23,4,Kings Park Red,St Pats Mentone,No. 3,David Sacho,Mike De Silva,David Sacho,8-2,8,2,1,0,Completed,true,false,false
+AP006041,28 Oct 23,4,Kings Park Red,St Pats Mentone,No. 4,Ilan Goldsmith,Darcy Henschke,Darcy Henschke,5-8,5,8,0,1,Completed,true,false,false
+AP006042,28 Oct 23,4,BLTC Blue,Maccabi,No. 1,Christian Tomasic,Ilay Givoni,Christian Tomasic,8-6,8,6,1,0,Completed,true,false,false
+AP006042,28 Oct 23,4,BLTC Blue,Maccabi,No. 2,Ray Lai,Steve Bendel,Steve Bendel,3-8,3,8,0,1,Completed,true,false,false
+AP006042,28 Oct 23,4,BLTC Blue,Maccabi,No. 3,Lochlan Friedrich,Daniel Henquin,Lochlan Friedrich,8-2,8,2,1,0,Completed,true,false,false
+AP006042,28 Oct 23,4,BLTC Blue,Maccabi,No. 4,Bashir Riachi,Anthony Murray,Anthony Murray,5-8,5,8,0,1,Completed,true,false,false
+AP006043,28 Oct 23,4,Tennis World,Elsternwick Park,No. 1,Patrick McGregor,Jannis Boeckle,Jannis Boeckle,1-8,1,8,0,1,Completed,true,false,false
+AP006043,28 Oct 23,4,Tennis World,Elsternwick Park,No. 2,Maximiliano Alvarez Contreras,Brad Fenech,Brad Fenech,6-8,6,8,0,1,Completed,true,false,false
+AP006043,28 Oct 23,4,Tennis World,Elsternwick Park,No. 3,Benjamin Lambell,Adam Neilands,Adam Neilands,2-8,2,8,0,1,Completed,true,false,false
+AP006043,28 Oct 23,4,Tennis World,Elsternwick Park,No. 4,Rakshith Ramesh,Matt Anstee,Rakshith Ramesh,8-4,8,4,1,0,Completed,true,false,false
+AP006051,11 Nov 23,5,Elsternwick Park,Parkdale,No. 1,Jannis Boeckle,Brandan Sison,Jannis Boeckle,8-3,8,3,1,0,Completed,true,false,false
+AP006051,11 Nov 23,5,Elsternwick Park,Parkdale,No. 2,Mark Loosschilder,Simon Ghattas,Mark Loosschilder,8-3,8,3,1,0,Completed,true,false,false
+AP006051,11 Nov 23,5,Elsternwick Park,Parkdale,No. 3,Adam Halliwell,Andrew Watterson,Adam Halliwell,8-1,8,1,1,0,Completed,true,false,false
+AP006051,11 Nov 23,5,Elsternwick Park,Parkdale,No. 4,Roshen Singh,Sam Umeonusulu,Sam Umeonusulu,5-8,5,8,0,1,Completed,true,false,false
+AP006052,11 Nov 23,5,Tennis World,BLTC Blue,No. 1,Patrick McGregor,Liam Parsons,Patrick McGregor,8-4,8,4,1,0,Completed,true,false,false
+AP006052,11 Nov 23,5,Tennis World,BLTC Blue,No. 2,Maximiliano Alvarez Contreras,Christian Tomasic,Maximiliano Alvarez Contreras,8-3,8,3,1,0,Completed,true,false,false
+AP006052,11 Nov 23,5,Tennis World,BLTC Blue,No. 3,Yashank Maini,Ray Lai,Ray Lai,4-8,4,8,0,1,Completed,true,false,false
+AP006052,11 Nov 23,5,Tennis World,BLTC Blue,No. 4,Wayne Smith,Lochlan Friedrich,Lochlan Friedrich,3-8,3,8,0,1,Completed,true,false,false
+AP006054,11 Nov 23,5,St Pats Mentone,Maccabi,No. 1,David Lawry,Ilay Givoni,Ilay Givoni,1-8,1,8,0,1,Completed,true,false,false
+AP006054,11 Nov 23,5,St Pats Mentone,Maccabi,No. 2,Nick Hall,Steve Bendel,Steve Bendel,0-8,0,8,0,1,Completed,true,false,false
+AP006054,11 Nov 23,5,St Pats Mentone,Maccabi,No. 3,Darcy Henschke,Anthony Murray,Anthony Murray,7-8,7,8,0,1,Completed,true,false,false
+AP006054,11 Nov 23,5,St Pats Mentone,Maccabi,No. 4,James Campbell,Ben Pollak,Ben Pollak,2-8,2,8,0,1,Completed,true,false,true
+AP006061,18 Nov 23,6,Maccabi,Elsternwick Park,No. 1,Ilay Givoni,Adam Neilands,Adam Neilands,6-8,6,8,0,1,Completed,true,false,false
+AP006061,18 Nov 23,6,Maccabi,Elsternwick Park,No. 2,Steve Bendel,Matt Anstee,Steve Bendel,8-2,8,2,1,0,Completed,true,false,false
+AP006061,18 Nov 23,6,Maccabi,Elsternwick Park,No. 3,Adam Needleman,Mark Loosschilder,Adam Needleman,8-7,8,7,1,0,Completed,true,false,false
+AP006061,18 Nov 23,6,Maccabi,Elsternwick Park,No. 4,Steven Koutsbis,Adam Halliwell,Steven Koutsbis,8-7,8,7,1,0,Completed,true,true,false
+AP006062,18 Nov 23,6,Parkdale,St Pats Mentone,No. 1,Brandan Sison,Cameron De Silva,Brandan Sison,8-6,8,6,1,0,Completed,true,false,false
+AP006062,18 Nov 23,6,Parkdale,St Pats Mentone,No. 2,Andrew Watterson,David Lawry,Andrew Watterson,8-6,8,6,1,0,Completed,true,false,false
+AP006062,18 Nov 23,6,Parkdale,St Pats Mentone,No. 3,Sam Umeonusulu,Nick Hall,Nick Hall,7-8,7,8,0,1,Completed,true,false,false
+AP006062,18 Nov 23,6,Parkdale,St Pats Mentone,No. 4,Herschel Fitzroy,Mike De Silva,Herschel Fitzroy,8-6,8,6,1,0,Completed,true,false,false
+AP006063,18 Nov 23,6,BLTC Blue,Kings Park Red,No. 1,Liam Parsons,Dean Metter,Dean Metter,4-8,4,8,0,1,Completed,true,false,false
+AP006063,18 Nov 23,6,BLTC Blue,Kings Park Red,No. 2,Julian Catala Prieto,Michael Cooper,Julian Catala Prieto,8-5,8,5,1,0,Completed,true,false,false
+AP006063,18 Nov 23,6,BLTC Blue,Kings Park Red,No. 3,Emerson Schillaci,Tom Dubbeld,Emerson Schillaci,8-1,8,1,1,0,Completed,true,false,false
+AP006063,18 Nov 23,6,BLTC Blue,Kings Park Red,No. 4,Bashir Riachi,Ilan Goldsmith,Bashir Riachi,8-4,8,4,1,0,Completed,true,false,false
+AP006071,25 Nov 23,7,St Pats Mentone,Elsternwick Park,No. 1,Alex Chingarev,Jannis Boeckle,Jannis Boeckle,0-8,0,8,0,1,Completed,true,false,false
+AP006071,25 Nov 23,7,St Pats Mentone,Elsternwick Park,No. 2,David Lawry,Matt Anstee,David Lawry,8-7,8,7,1,0,Completed,true,false,false
+AP006071,25 Nov 23,7,St Pats Mentone,Elsternwick Park,No. 3,Darcy Henschke,Mark Loosschilder,Mark Loosschilder,3-8,3,8,0,1,Completed,true,false,false
+AP006071,25 Nov 23,7,St Pats Mentone,Elsternwick Park,No. 4,Andrew Gosline,Roshen Singh,Roshen Singh,1-8,1,8,0,1,Completed,true,true,false
+AP006072,25 Nov 23,7,Maccabi,Parkdale,No. 1,Ilay Givoni,Brandan Sison,Brandan Sison,4-8,4,8,0,1,Completed,true,false,false
+AP006072,25 Nov 23,7,Maccabi,Parkdale,No. 2,Adam Needleman,Simon Ghattas,Adam Needleman,8-5,8,5,1,0,Completed,true,false,false
+AP006072,25 Nov 23,7,Maccabi,Parkdale,No. 3,Daniel Henquin,Andrew Watterson,Daniel Henquin,8-5,8,5,1,0,Completed,true,false,false
+AP006072,25 Nov 23,7,Maccabi,Parkdale,No. 4,Jack Stock,Herschel Fitzroy,Jack Stock,8-3,8,3,1,0,Completed,true,true,false
+AP006073,25 Nov 23,7,Tennis World,Kings Park Red,No. 1,Benjamin Lambell,Dean Metter,Dean Metter,2-8,2,8,0,1,Completed,true,false,false
+AP006073,25 Nov 23,7,Tennis World,Kings Park Red,No. 2,Rakshith Ramesh,Oscar Eden,Rakshith Ramesh,8-7,8,7,1,0,Completed,true,false,true
+AP006073,25 Nov 23,7,Tennis World,Kings Park Red,No. 3,Yashank Maini,Michael Cooper,Michael Cooper,3-8,3,8,0,1,Completed,true,false,false
+AP006073,25 Nov 23,7,Tennis World,Kings Park Red,No. 4,Wayne Smith,Ilan Goldsmith,Wayne Smith,8-3,8,3,1,0,Completed,true,false,false
+AP006101,16 Dec 23,10,BLTC Blue,St Pats Mentone,No. 1,Christian Tomasic,Cameron De Silva,Cameron De Silva,6-8,6,8,0,1,Completed,true,false,false
+AP006101,16 Dec 23,10,BLTC Blue,St Pats Mentone,No. 2,Julian Catala Prieto,David Lawry,Julian Catala Prieto,8-2,8,2,1,0,Completed,true,false,false
+AP006101,16 Dec 23,10,BLTC Blue,St Pats Mentone,No. 3,Lochlan Friedrich,Nick Hall,Lochlan Friedrich,8-2,8,2,1,0,Completed,true,false,false
+AP006101,16 Dec 23,10,BLTC Blue,St Pats Mentone,No. 4,Bashir Riachi,Mike De Silva,Bashir Riachi,8-5,8,5,1,0,Completed,true,false,false
+AP006102,16 Dec 23,10,Tennis World,Maccabi,No. 1,Patrick McGregor,Ilay Givoni,Ilay Givoni,2-8,2,8,0,1,Completed,true,false,false
+AP006102,16 Dec 23,10,Tennis World,Maccabi,No. 2,Benjamin Lambell,Steve Bendel,Steve Bendel,4-8,4,8,0,1,Completed,true,false,false
+AP006102,16 Dec 23,10,Tennis World,Maccabi,No. 3,Rakshith Ramesh,Adam Needleman,Rakshith Ramesh,8-7,8,7,1,0,Completed,true,false,false
+AP006102,16 Dec 23,10,Tennis World,Maccabi,No. 4,Isaac Savires,Anthony Murray,Anthony Murray,6-8,6,8,0,1,Completed,true,true,false
+AP006104,16 Dec 23,10,Kings Park Red,Parkdale,No. 1,Dean Metter,Brandan Sison,Brandan Sison,2-8,2,8,0,1,Completed,true,false,false
+AP006104,16 Dec 23,10,Kings Park Red,Parkdale,No. 2,Michael Cooper,Simon Ghattas,Michael Cooper,8-5,8,5,1,0,Completed,true,false,false
+AP006104,16 Dec 23,10,Kings Park Red,Parkdale,No. 3,David Sacho,Sam Umeonusulu,David Sacho,8-0,8,0,1,0,Completed,true,false,false
+AP006104,16 Dec 23,10,Kings Park Red,Parkdale,No. 4,Ilan Goldsmith,Fernando Zamora,Fernando Zamora,7-8,7,8,0,1,Completed,true,false,true
+AP006111,03 Feb 24,11,St Pats Mentone,Kings Park Red,No. 1,Cameron De Silva,Michael Cooper,Cameron De Silva,8-3,8,3,1,0,Completed,true,false,false
+AP006111,03 Feb 24,11,St Pats Mentone,Kings Park Red,No. 2,Nick Hall,Tom Dubbeld,Tom Dubbeld,3-8,3,8,0,1,Completed,true,false,false
+AP006111,03 Feb 24,11,St Pats Mentone,Kings Park Red,No. 3,Mike De Silva,David Sacho,David Sacho,5-8,5,8,0,1,Completed,true,false,false
+AP006111,03 Feb 24,11,St Pats Mentone,Kings Park Red,No. 4,Millie Unwin,Ilan Goldsmith,Ilan Goldsmith,0-8,0,8,0,1,Completed,true,true,false
+AP006112,03 Feb 24,11,Maccabi,BLTC Blue,No. 1,Ilay Givoni,Liam Parsons,Ilay Givoni,8-5,8,5,1,0,Completed,true,false,false
+AP006112,03 Feb 24,11,Maccabi,BLTC Blue,No. 2,Steve Bendel,Christian Tomasic,Christian Tomasic,7-8,7,8,0,1,Completed,true,false,false
+AP006112,03 Feb 24,11,Maccabi,BLTC Blue,No. 3,Daniel Henquin,Lochlan Friedrich,Lochlan Friedrich,5-8,5,8,0,1,Completed,true,false,false
+AP006112,03 Feb 24,11,Maccabi,BLTC Blue,No. 4,Anthony Murray,Bashir Riachi,Bashir Riachi,6-8,6,8,0,1,Completed,true,false,false
+AP006113,03 Feb 24,11,Elsternwick Park,Tennis World,No. 1,Adam Neilands,Patrick McGregor,Adam Neilands,8-7,8,7,1,0,Completed,true,false,false
+AP006113,03 Feb 24,11,Elsternwick Park,Tennis World,No. 2,Matt Anstee,Benjamin Lambell,Matt Anstee,8-2,8,2,1,0,Completed,true,false,false
+AP006113,03 Feb 24,11,Elsternwick Park,Tennis World,No. 3,Mark Loosschilder,Rakshith Ramesh,Mark Loosschilder,8-5,8,5,1,0,Completed,true,false,false
+AP006113,03 Feb 24,11,Elsternwick Park,Tennis World,No. 4,Atef Nagib,Yashank Maini,Atef Nagib,8-5,8,5,1,0,Completed,true,true,false
+AP006121,10 Feb 24,12,Parkdale,Elsternwick Park,No. 1,Brandan Sison,Mark Loosschilder,Brandan Sison,8-2,8,2,1,0,Completed,true,false,false
+AP006121,10 Feb 24,12,Parkdale,Elsternwick Park,No. 2,Andrew Watterson,Adam Halliwell,Andrew Watterson,8-1,8,1,1,0,Completed,true,false,false
+AP006121,10 Feb 24,12,Parkdale,Elsternwick Park,No. 3,Sam Umeonusulu,Roshen Singh,Roshen Singh,4-8,4,8,0,1,Completed,true,false,false
+AP006121,10 Feb 24,12,Parkdale,Elsternwick Park,No. 4,Herschel Fitzroy,Atef Nagib,Herschel Fitzroy,8-7,8,7,1,0,Completed,true,false,true
+AP006122,10 Feb 24,12,BLTC Blue,Tennis World,No. 1,Christian Tomasic,Patrick McGregor,Patrick McGregor,6-8,6,8,0,1,Completed,true,false,false
+AP006122,10 Feb 24,12,BLTC Blue,Tennis World,No. 2,Julian Catala Prieto,Maximiliano Alvarez Contreras,Julian Catala Prieto,8-5,8,5,1,0,Completed,true,false,false
+AP006122,10 Feb 24,12,BLTC Blue,Tennis World,No. 3,Emerson Schillaci,Benjamin Lambell,Emerson Schillaci,8-2,8,2,1,0,Completed,true,false,false
+AP006122,10 Feb 24,12,BLTC Blue,Tennis World,No. 4,Lochlan Friedrich,Rakshith Ramesh,Lochlan Friedrich,8-3,8,3,1,0,Completed,true,false,false
+AP006124,10 Feb 24,12,Maccabi,St Pats Mentone,No. 1,Ilay Givoni,Cameron De Silva,Cameron De Silva,7-8,7,8,0,1,Completed,true,false,false
+AP006124,10 Feb 24,12,Maccabi,St Pats Mentone,No. 2,Steve Bendel,Nick Hall,Steve Bendel,8-3,8,3,1,0,Completed,true,false,false
+AP006124,10 Feb 24,12,Maccabi,St Pats Mentone,No. 3,Daniel Henquin,Mike De Silva,Daniel Henquin,8-3,8,3,1,0,Completed,true,false,false
+AP006124,10 Feb 24,12,Maccabi,St Pats Mentone,No. 4,Anthony Murray,Peter Panos,Anthony Murray,8-4,8,4,1,0,Completed,true,false,true
+AP006131,17 Feb 24,13,Elsternwick Park,Maccabi,No. 1,Adam Neilands,Ilay Givoni,Ilay Givoni,6-8,6,8,0,1,Completed,true,false,false
+AP006131,17 Feb 24,13,Elsternwick Park,Maccabi,No. 2,Matt Anstee,Aaron Kramer,Aaron Kramer,3-8,3,8,0,1,Completed,true,false,true
+AP006131,17 Feb 24,13,Elsternwick Park,Maccabi,No. 3,Mark Loosschilder,Steve Bendel,Mark Loosschilder,8-7,8,7,1,0,Completed,true,false,false
+AP006131,17 Feb 24,13,Elsternwick Park,Maccabi,No. 4,Ben Wijay,Daniel Henquin,Ben Wijay,8-7,8,7,1,0,Completed,true,false,false
+AP006132,17 Feb 24,13,St Pats Mentone,Parkdale,No. 1,Nick Hall,Brandan Sison,Brandan Sison,0-8,0,8,0,1,Completed,true,false,false
+AP006132,17 Feb 24,13,St Pats Mentone,Parkdale,No. 2,Mike De Silva,Simon Ghattas,Simon Ghattas,1-8,1,8,0,1,Completed,true,false,false
+AP006132,17 Feb 24,13,St Pats Mentone,Parkdale,No. 3,James Campbell,Sam Umeonusulu,Sam Umeonusulu,0-8,0,8,0,1,Completed,true,false,false
+AP006132,17 Feb 24,13,St Pats Mentone,Parkdale,No. 4,Darcy Henschke,Marcus Maier,Darcy Henschke,8-1,8,1,1,0,Completed,true,false,true
+AP006133,17 Feb 24,13,Kings Park Red,BLTC Blue,No. 1,Dean Metter,Liam Parsons,Dean Metter,8-2,8,2,1,0,Completed,true,false,false
+AP006133,17 Feb 24,13,Kings Park Red,BLTC Blue,No. 2,Will McLorinan,Julian Catala Prieto,Julian Catala Prieto,6-8,6,8,0,1,Completed,true,true,false
+AP006133,17 Feb 24,13,Kings Park Red,BLTC Blue,No. 3,Tom Dubbeld,Ray Lai,Tom Dubbeld,8-2,8,2,1,0,Completed,true,false,false
+AP006133,17 Feb 24,13,Kings Park Red,BLTC Blue,No. 4,Ilan Goldsmith,Lochlan Friedrich,Lochlan Friedrich,0-8,0,8,0,1,Completed,true,false,false
+AP006142,24 Feb 24,14,Parkdale,Maccabi,No. 1,Andrew Watterson,Ilay Givoni,Andrew Watterson,8-7,8,7,1,0,Completed,true,false,false
+AP006142,24 Feb 24,14,Parkdale,Maccabi,No. 2,Sam Umeonusulu,Aaron Kramer,Aaron Kramer,2-8,2,8,0,1,Completed,true,false,true
+AP006142,24 Feb 24,14,Parkdale,Maccabi,No. 3,Herschel Fitzroy,Steve Bendel,Steve Bendel,0-8,0,8,0,1,Completed,true,false,false
+AP006142,24 Feb 24,14,Parkdale,Maccabi,No. 4,James Watterson,Ian Altman,Ian Altman,3-8,3,8,0,1,Completed,true,true,true
+AP006143,24 Feb 24,14,Kings Park Red,Tennis World,No. 1,Dean Metter,Benjamin Lambell,Dean Metter,8-4,8,4,1,0,Completed,true,false,false
+AP006143,24 Feb 24,14,Kings Park Red,Tennis World,No. 2,Michael Cooper,Rakshith Ramesh,Michael Cooper,8-4,8,4,1,0,Completed,true,false,false
+AP006143,24 Feb 24,14,Kings Park Red,Tennis World,No. 3,Tom Dubbeld,Yashank Maini,Tom Dubbeld,8-3,8,3,1,0,Completed,true,false,false
+AP006143,24 Feb 24,14,Kings Park Red,Tennis World,No. 4,David Sacho,[Unnamed emergency — TROLS AP006143 away code 4],David Sacho,8-0,8,0,1,0,Completed,false,false,true
+AP006301,,16,Elsternwick Park,BLTC Blue,No. 1,Jannis Boeckle,Christian Tomasic,Jannis Boeckle,8-3,8,3,1,0,Completed,true,false,false
+AP006301,,16,Elsternwick Park,BLTC Blue,No. 2,Brad Fenech,Emerson Schillaci,Emerson Schillaci,5-8,5,8,0,1,Completed,true,false,false
+AP006301,,16,Elsternwick Park,BLTC Blue,No. 3,Adam Neilands,Lochlan Friedrich,Lochlan Friedrich,7-8,7,8,0,1,Completed,true,false,false
+AP006301,,16,Elsternwick Park,BLTC Blue,No. 4,Matt Anstee,Bashir Riachi,Matt Anstee,8-5,8,5,1,0,Completed,true,false,false
+AP006302,,16,Maccabi,Kings Park Red,No. 1,Ilay Givoni,Dean Metter,Dean Metter,2-8,2,8,0,1,Completed,true,false,false
+AP006302,,16,Maccabi,Kings Park Red,No. 2,Aaron Kramer,Michael Cooper,Aaron Kramer,8-7,8,7,1,0,Completed,true,true,false
+AP006302,,16,Maccabi,Kings Park Red,No. 3,Daniel Henquin,Tom Dubbeld,Daniel Henquin,8-5,8,5,1,0,Completed,true,false,false
+AP006302,,16,Maccabi,Kings Park Red,No. 4,Anthony Murray,David Sacho,David Sacho,5-8,5,8,0,1,Completed,true,false,false
+AP006321,,17,Elsternwick Park,Kings Park Red,No. 1,Adam Neilands,Dean Metter,Dean Metter,1-8,1,8,0,1,Completed,true,false,false
+AP006321,,17,Elsternwick Park,Kings Park Red,No. 2,Matt Anstee,Michael Cooper,Michael Cooper,6-8,6,8,0,1,Completed,true,false,false
+AP006321,,17,Elsternwick Park,Kings Park Red,No. 3,Mark Loosschilder,Tom Dubbeld,Mark Loosschilder,8-2,8,2,1,0,Completed,true,false,false
+AP006321,,17,Elsternwick Park,Kings Park Red,No. 4,Adam Halliwell,David Sacho,David Sacho,4-8,4,8,0,1,Completed,true,false,false

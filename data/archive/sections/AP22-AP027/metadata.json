@@ -1,0 +1,95 @@
+{
+  "asset_id": "AP22-AP027",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 10/11",
+  "season_id": "AP22",
+  "season_label": "Summer 10/11",
+  "source_section_code": "AP027",
+  "section_label": "Ladies S/D 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Dandenong",
+      "wins": 0,
+      "points": 95,
+      "percentage": 189.34,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "MCC",
+      "wins": 0,
+      "points": 81,
+      "percentage": 146.71,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Monash University",
+      "wins": 0,
+      "points": 59,
+      "percentage": 97.68,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Dendy Park",
+      "wins": 0,
+      "points": 51,
+      "percentage": 90.11,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Highmoor Uniting",
+      "wins": 0,
+      "points": 48.5,
+      "percentage": 72.48,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Royal South Yarra",
+      "wins": 0,
+      "points": 44,
+      "percentage": 82.19,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Clarinda",
+      "wins": 0,
+      "points": 41.5,
+      "percentage": 72.19,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP22-AP027",
+  "fixtures": 60,
+  "completed_fixtures": 37,
+  "draw_fixtures": 4,
+  "singles_rubbers": 146,
+  "doubles_rubbers": 73,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

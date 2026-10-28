@@ -1,0 +1,95 @@
+{
+  "asset_id": "AP24-AP005",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 11/12",
+  "season_id": "AP24",
+  "season_label": "Summer 11/12",
+  "source_section_code": "AP005",
+  "section_label": "Mens Rubbers 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Port Melbourne",
+      "wins": 11,
+      "points": 85,
+      "percentage": 169.44,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Stella Maris",
+      "wins": 9,
+      "points": 77,
+      "percentage": 174.17,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Highett",
+      "wins": 5,
+      "points": 55,
+      "percentage": 108.81,
+      "marker": "R"
+    },
+    {
+      "position": 4,
+      "team": "Black Rock",
+      "wins": 5,
+      "points": 49.5,
+      "percentage": 120.74,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Beaumaris CC",
+      "wins": 2,
+      "points": 40,
+      "percentage": 97.75,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "St Leonard's",
+      "wins": 0,
+      "points": 18,
+      "percentage": 31.5,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Bentleigh Rec",
+      "wins": 0,
+      "points": 11.5,
+      "percentage": 45.34,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP24-AP005",
+  "fixtures": 60,
+  "completed_fixtures": 37,
+  "draw_fixtures": 60,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 145,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

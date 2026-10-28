@@ -1,0 +1,87 @@
+{
+  "asset_id": "AP21-AP004",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Winter 2010",
+  "season_id": "AP21",
+  "season_label": "Winter 2010",
+  "source_section_code": "AP004",
+  "section_label": "Mens Sets 1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Highmoor Uniting",
+      "wins": 0,
+      "points": 114,
+      "percentage": 221.37,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "Parkdale",
+      "wins": 0,
+      "points": 78,
+      "percentage": 139.09,
+      "marker": "P"
+    },
+    {
+      "position": 3,
+      "team": "Melbourne Grammar",
+      "wins": 0,
+      "points": 77,
+      "percentage": 142.58,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Glen Huntly",
+      "wins": 0,
+      "points": 44,
+      "percentage": 77.08,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Hampton U/C",
+      "wins": 0,
+      "points": 41,
+      "percentage": 71.43,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Bentleigh Rec",
+      "wins": 0,
+      "points": 6,
+      "percentage": 39.14,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 1,
+    "doublesTarget": 10,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP21-AP004",
+  "fixtures": 47,
+  "completed_fixtures": 47,
+  "draw_fixtures": 57,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 188,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

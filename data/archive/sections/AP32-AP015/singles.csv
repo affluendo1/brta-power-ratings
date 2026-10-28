@@ -1,0 +1,233 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP015011,10 Oct 15,1,Dendy Park 1,Black Rock,No. 1,Nick Jeffery,Dexter Bonet,Dexter Bonet,5-8,5,8,0,1,Completed,true,false,false
+AP015011,10 Oct 15,1,Dendy Park 1,Black Rock,No. 2,Brenton Kos,Brady Watts,Brenton Kos,8-1,8,1,1,0,Completed,true,false,false
+AP015011,10 Oct 15,1,Dendy Park 1,Black Rock,No. 3,Garion Rowe,Michael Watts,Michael Watts,4-8,4,8,0,1,Completed,true,false,false
+AP015011,10 Oct 15,1,Dendy Park 1,Black Rock,No. 4,Stefan Woolley,Adam Bishop,Stefan Woolley,8-1,8,1,1,0,Completed,true,false,false
+AP015012,10 Oct 15,1,BLTC,Dendy Park 2,No. 1,Macgregor Anderson,Dean Ellis,Macgregor Anderson,9-8,9,8,1,0,Completed,true,false,false
+AP015012,10 Oct 15,1,BLTC,Dendy Park 2,No. 2,Shadi Taleb,Jack Bishop,Jack Bishop,3-8,3,8,0,1,Completed,true,false,false
+AP015012,10 Oct 15,1,BLTC,Dendy Park 2,No. 3,Juan Sanchez,Wesley Neylon,Wesley Neylon,4-8,4,8,0,1,Completed,true,false,false
+AP015012,10 Oct 15,1,BLTC,Dendy Park 2,No. 4,Stefan Schwab,Tim O'Shannassy,Stefan Schwab,8-1,8,1,1,0,Completed,true,false,false
+AP015013,10 Oct 15,1,Albert Reserve 1,Albert Reserve 2,No. 1,Andres Alvarez,Simon Young,Simon Young,4-8,4,8,0,1,Completed,true,false,false
+AP015013,10 Oct 15,1,Albert Reserve 1,Albert Reserve 2,No. 2,Sasha Miokovic,Alex Brown,Sasha Miokovic,8-5,8,5,1,0,Completed,true,false,false
+AP015013,10 Oct 15,1,Albert Reserve 1,Albert Reserve 2,No. 3,Finau Fa,Isai Torres,Finau Fa,8-4,8,4,1,0,Completed,true,false,false
+AP015013,10 Oct 15,1,Albert Reserve 1,Albert Reserve 2,No. 4,Bobby Lim,Paul Ni,Paul Ni,1-8,1,8,0,1,Completed,true,false,false
+AP015014,10 Oct 15,1,GPHC,Carmelite,No. 1,Jack Basso,Simon Arms,Simon Arms,2-8,2,8,0,1,Completed,true,false,false
+AP015014,10 Oct 15,1,GPHC,Carmelite,No. 2,Rowan Browning,Ian Anderson,Ian Anderson,3-8,3,8,0,1,Completed,true,false,false
+AP015014,10 Oct 15,1,GPHC,Carmelite,No. 3,Marcus Matear,Tony Strupl,Tony Strupl,5-8,5,8,0,1,Completed,true,false,false
+AP015014,10 Oct 15,1,GPHC,Carmelite,No. 4,Rob Ensor,George Kypriotis,George Kypriotis,1-8,1,8,0,1,Completed,true,false,false
+AP015021,17 Oct 15,2,Carmelite,Dendy Park 1,No. 1,Ian Anderson,Nick Jeffery,Ian Anderson,8-5,8,5,1,0,Completed,true,false,false
+AP015021,17 Oct 15,2,Carmelite,Dendy Park 1,No. 2,Wayne Cowley,Brenton Kos,Wayne Cowley,8-5,8,5,1,0,Completed,true,false,false
+AP015021,17 Oct 15,2,Carmelite,Dendy Park 1,No. 3,Tony Strupl,Garion Rowe,Tony Strupl,8-3,8,3,1,0,Completed,true,false,false
+AP015021,17 Oct 15,2,Carmelite,Dendy Park 1,No. 4,Theo Mitsinikos,Darko Pasara,Darko Pasara,2-8,2,8,0,1,Completed,true,false,false
+AP015022,17 Oct 15,2,Black Rock,BLTC,No. 1,Dexter Bonet,Macgregor Anderson,Dexter Bonet,8-1,8,1,1,0,Completed,true,false,false
+AP015022,17 Oct 15,2,Black Rock,BLTC,No. 2,Brady Watts,Juan Sanchez,Juan Sanchez,4-8,4,8,0,1,Completed,true,false,false
+AP015022,17 Oct 15,2,Black Rock,BLTC,No. 3,Jayden Watts,Stefan Schwab,Stefan Schwab,4-8,4,8,0,1,Completed,true,false,false
+AP015022,17 Oct 15,2,Black Rock,BLTC,No. 4,Michael Watts,Shadi Taleb,Michael Watts,8-3,8,3,1,0,Completed,true,false,false
+AP015023,17 Oct 15,2,Dendy Park 2,Albert Reserve 1,No. 1,Dean Ellis,Nicholas Espositos,Dean Ellis,8-0,8,0,1,0,Completed,true,false,false
+AP015023,17 Oct 15,2,Dendy Park 2,Albert Reserve 1,No. 2,Wesley Neylon,Finau Fa,Wesley Neylon,9-7,9,7,1,0,Completed,true,false,false
+AP015023,17 Oct 15,2,Dendy Park 2,Albert Reserve 1,No. 3,Tim O'Shannassy,Simon Hernandez,Simon Hernandez,1-8,1,8,0,1,Completed,true,false,false
+AP015023,17 Oct 15,2,Dendy Park 2,Albert Reserve 1,No. 4,Damian Collard,Andres Alvarez,Andres Alvarez,3-8,3,8,0,1,Completed,true,false,false
+AP015024,17 Oct 15,2,Albert Reserve 2,GPHC,No. 1,Roberto Rizzo,Mykal Benham,Roberto Rizzo,8-1,8,1,1,0,Completed,true,false,false
+AP015024,17 Oct 15,2,Albert Reserve 2,GPHC,No. 2,Isai Torres,Cooper Millett,Cooper Millett,6-8,6,8,0,1,Completed,true,false,false
+AP015024,17 Oct 15,2,Albert Reserve 2,GPHC,No. 3,Stephan Mikhail,Jack Basso,Jack Basso,2-8,2,8,0,1,Completed,true,false,false
+AP015024,17 Oct 15,2,Albert Reserve 2,GPHC,No. 4,Loon Chan,Dan Cadjusic,Loon Chan,8-0,8,0,1,0,Completed,true,false,false
+AP015031,24 Oct 15,3,Dendy Park 1,Albert Reserve 2,No. 1,Nick Jeffery,Roberto Rizzo,Nick Jeffery,8-6,8,6,1,0,Completed,true,false,false
+AP015031,24 Oct 15,3,Dendy Park 1,Albert Reserve 2,No. 2,Garion Rowe,Shane Swann,Shane Swann,5-8,5,8,0,1,Completed,true,false,false
+AP015031,24 Oct 15,3,Dendy Park 1,Albert Reserve 2,No. 3,Henko Blaauw,Alex Brown,Henko Blaauw,8-2,8,2,1,0,Completed,true,false,false
+AP015031,24 Oct 15,3,Dendy Park 1,Albert Reserve 2,No. 4,Ken Dick,Isai Torres,Isai Torres,1-8,1,8,0,1,Completed,true,false,false
+AP015032,24 Oct 15,3,BLTC,Carmelite,No. 1,Jarrod Broadbent,Simon Arms,Jarrod Broadbent,8-4,8,4,1,0,Completed,true,false,false
+AP015032,24 Oct 15,3,BLTC,Carmelite,No. 2,Macgregor Anderson,Ondrej Lauko,Macgregor Anderson,8-4,8,4,1,0,Completed,true,false,false
+AP015032,24 Oct 15,3,BLTC,Carmelite,No. 3,Juan Sanchez,Mark Sepavic,Mark Sepavic,3-8,3,8,0,1,Completed,true,false,false
+AP015032,24 Oct 15,3,BLTC,Carmelite,No. 4,Stefan Schwab,Ian Anderson,Ian Anderson,7-9,7,9,0,1,Completed,true,false,false
+AP015033,24 Oct 15,3,Albert Reserve 1,Black Rock,No. 1,Sasha Miokovic,Brady Watts,Sasha Miokovic,8-3,8,3,1,0,Completed,true,false,false
+AP015033,24 Oct 15,3,Albert Reserve 1,Black Rock,No. 2,Finau Fa,Jayden Watts,Finau Fa,8-3,8,3,1,0,Completed,true,false,false
+AP015033,24 Oct 15,3,Albert Reserve 1,Black Rock,No. 3,Simon Hernandez,Anthony Angus,Simon Hernandez,9-7,9,7,1,0,Completed,true,false,false
+AP015033,24 Oct 15,3,Albert Reserve 1,Black Rock,No. 4,Aj Ratnakumar,Michael Watts,Michael Watts,2-8,2,8,0,1,Completed,true,false,false
+AP015034,24 Oct 15,3,GPHC,Dendy Park 2,No. 1,Mykal Benham,Dean Ellis,Dean Ellis,3-8,3,8,0,1,Completed,true,false,false
+AP015034,24 Oct 15,3,GPHC,Dendy Park 2,No. 2,Cooper Millett,Jack Bishop,Jack Bishop,4-8,4,8,0,1,Completed,true,false,false
+AP015034,24 Oct 15,3,GPHC,Dendy Park 2,No. 3,Jack Basso,Wesley Neylon,Wesley Neylon,6-8,6,8,0,1,Completed,true,false,false
+AP015034,24 Oct 15,3,GPHC,Dendy Park 2,No. 4,Rowan Browning,Nedal Daoud,Nedal Daoud,7-9,7,9,0,1,Completed,true,false,false
+AP015041,07 Nov 15,4,Dendy Park 2,Dendy Park 1,No. 1,Dean Ellis,Nick Jeffery,Nick Jeffery,7-9,7,9,0,1,Completed,true,false,false
+AP015041,07 Nov 15,4,Dendy Park 2,Dendy Park 1,No. 2,Wesley Neylon,Brenton Kos,Wesley Neylon,8-2,8,2,1,0,Completed,true,false,false
+AP015041,07 Nov 15,4,Dendy Park 2,Dendy Park 1,No. 3,Tim O'Shannassy,Henko Blaauw,Henko Blaauw,0-8,0,8,0,1,Completed,true,false,false
+AP015041,07 Nov 15,4,Dendy Park 2,Dendy Park 1,No. 4,Nedal Daoud,Darko Pasara,Nedal Daoud,8-4,8,4,1,0,Completed,true,false,false
+AP015042,07 Nov 15,4,Albert Reserve 2,BLTC,No. 1,Roberto Rizzo,Stuart Janiszewski,Roberto Rizzo,9-8,9,8,1,0,Completed,true,false,false
+AP015042,07 Nov 15,4,Albert Reserve 2,BLTC,No. 2,Stephan Mikhail,Macgregor Anderson,Macgregor Anderson,2-8,2,8,0,1,Completed,true,false,false
+AP015042,07 Nov 15,4,Albert Reserve 2,BLTC,No. 3,David Pais,Stefan Schwab,Stefan Schwab,8-9,8,9,0,1,Completed,true,false,false
+AP015042,07 Nov 15,4,Albert Reserve 2,BLTC,No. 4,Loon Chan,Peter Kromcidis,Loon Chan,9-8,9,8,1,0,Completed,true,false,false
+AP015043,07 Nov 15,4,Carmelite,Albert Reserve 1,No. 1,Simon Arms,Hector Fuentes,Hector Fuentes,5-8,5,8,0,1,Completed,true,false,false
+AP015043,07 Nov 15,4,Carmelite,Albert Reserve 1,No. 2,Bruce Ferguson,Finau Fa,Bruce Ferguson,8-4,8,4,1,0,Completed,true,false,false
+AP015043,07 Nov 15,4,Carmelite,Albert Reserve 1,No. 3,Mark Sepavic,Andres Alvarez,Mark Sepavic,8-3,8,3,1,0,Completed,true,false,false
+AP015043,07 Nov 15,4,Carmelite,Albert Reserve 1,No. 4,Tony Strupl,Bobby Lim,Tony Strupl,8-2,8,2,1,0,Completed,true,false,false
+AP015044,07 Nov 15,4,Black Rock,GPHC,No. 1,Brady Watts,Mykal Benham,Brady Watts,8-3,8,3,1,0,Completed,true,false,false
+AP015044,07 Nov 15,4,Black Rock,GPHC,No. 2,Jayden Watts,Cooper Millett,Jayden Watts,8-6,8,6,1,0,Completed,true,false,false
+AP015044,07 Nov 15,4,Black Rock,GPHC,No. 3,Anthony Angus,Jack Basso,Jack Basso,6-8,6,8,0,1,Completed,true,false,false
+AP015044,07 Nov 15,4,Black Rock,GPHC,No. 4,Michael Kernahan,Rowan Browning,Rowan Browning,4-8,4,8,0,1,Completed,true,false,false
+AP015051,14 Nov 15,5,Albert Reserve 1,GPHC,No. 1,Sasha Miokovic,Mykal Benham,Sasha Miokovic,8-3,8,3,1,0,Completed,true,false,false
+AP015051,14 Nov 15,5,Albert Reserve 1,GPHC,No. 2,Finau Fa,Jack Basso,Finau Fa,8-6,8,6,1,0,Completed,true,false,false
+AP015051,14 Nov 15,5,Albert Reserve 1,GPHC,No. 3,Simon Hernandez,Rowan Browning,Simon Hernandez,8-3,8,3,1,0,Completed,true,false,false
+AP015051,14 Nov 15,5,Albert Reserve 1,GPHC,No. 4,Andres Alvarez,Rob Ensor,Andres Alvarez,8-3,8,3,1,0,Completed,true,false,false
+AP015052,14 Nov 15,5,Carmelite,Albert Reserve 2,No. 1,Simon Arms,Roberto Rizzo,Simon Arms,8-3,8,3,1,0,Completed,true,false,false
+AP015052,14 Nov 15,5,Carmelite,Albert Reserve 2,No. 2,Ian Anderson,Alex Brown,Ian Anderson,8-3,8,3,1,0,Completed,true,false,false
+AP015052,14 Nov 15,5,Carmelite,Albert Reserve 2,No. 3,Tony Strupl,Isai Torres,Tony Strupl,8-5,8,5,1,0,Completed,true,false,false
+AP015052,14 Nov 15,5,Carmelite,Albert Reserve 2,No. 4,George Kypriotis,Stephan Mikhail,George Kypriotis,8-3,8,3,1,0,Completed,true,false,false
+AP015053,14 Nov 15,5,Dendy Park 2,Black Rock,No. 1,Dean Ellis,Dexter Bonet,Dexter Bonet,6-8,6,8,0,1,Completed,true,false,false
+AP015053,14 Nov 15,5,Dendy Park 2,Black Rock,No. 2,Jack Bishop,Brady Watts,Jack Bishop,8-4,8,4,1,0,Completed,true,false,false
+AP015053,14 Nov 15,5,Dendy Park 2,Black Rock,No. 3,Wesley Neylon,Jayden Watts,Jayden Watts,6-8,6,8,0,1,Completed,true,false,false
+AP015053,14 Nov 15,5,Dendy Park 2,Black Rock,No. 4,Tim O'Shannassy,Michael Watts,Tim O'Shannassy,8-0,8,0,1,0,Completed,true,false,false
+AP015054,14 Nov 15,5,Dendy Park 1,BLTC,No. 1,Nick Jeffery,Stuart Janiszewski,Stuart Janiszewski,4-8,4,8,0,1,Completed,true,false,false
+AP015054,14 Nov 15,5,Dendy Park 1,BLTC,No. 2,Michael Kos,Andrew McFarlane,Michael Kos,8-2,8,2,1,0,Completed,true,false,false
+AP015054,14 Nov 15,5,Dendy Park 1,BLTC,No. 3,Garion Rowe,Macgregor Anderson,Macgregor Anderson,8-9,8,9,0,1,Completed,true,false,false
+AP015054,14 Nov 15,5,Dendy Park 1,BLTC,No. 4,Darko Pasara,Peter Kromcidis,Peter Kromcidis,7-9,7,9,0,1,Completed,true,false,false
+AP015061,21 Nov 15,6,BLTC,Albert Reserve 1,No. 1,Eddie Myers,Sasha Miokovic,Eddie Myers,8-1,8,1,1,0,Completed,true,false,false
+AP015061,21 Nov 15,6,BLTC,Albert Reserve 1,No. 2,Macgregor Anderson,Nicholas Espositos,Macgregor Anderson,8-4,8,4,1,0,Completed,true,false,false
+AP015061,21 Nov 15,6,BLTC,Albert Reserve 1,No. 3,Peter Kromcidis,Finau Fa,Finau Fa,4-8,4,8,0,1,Completed,true,false,false
+AP015061,21 Nov 15,6,BLTC,Albert Reserve 1,No. 4,Stefan Schulze,Bobby Lim,Bobby Lim,0-8,0,8,0,1,Completed,true,false,false
+AP015062,21 Nov 15,6,GPHC,Dendy Park 1,No. 1,Alan Ambrose,Michael Kos,Alan Ambrose,8-2,8,2,1,0,Completed,true,false,false
+AP015062,21 Nov 15,6,GPHC,Dendy Park 1,No. 2,Cooper Millett,Brenton Kos,Cooper Millett,8-1,8,1,1,0,Completed,true,false,false
+AP015062,21 Nov 15,6,GPHC,Dendy Park 1,No. 3,Rowan Browning,Garion Rowe,Garion Rowe,6-8,6,8,0,1,Completed,true,false,false
+AP015062,21 Nov 15,6,GPHC,Dendy Park 1,No. 4,Marcus Matear,Darko Pasara,Marcus Matear,8-2,8,2,1,0,Completed,true,false,false
+AP015063,21 Nov 15,6,Albert Reserve 2,Dendy Park 2,No. 1,Roberto Rizzo,Jack Bishop,Roberto Rizzo,8-3,8,3,1,0,Completed,true,false,false
+AP015063,21 Nov 15,6,Albert Reserve 2,Dendy Park 2,No. 2,Shane Swann,Wesley Neylon,Shane Swann,8-5,8,5,1,0,Completed,true,false,false
+AP015063,21 Nov 15,6,Albert Reserve 2,Dendy Park 2,No. 3,Simon Young,Tim O'Shannassy,Simon Young,8-3,8,3,1,0,Completed,true,false,false
+AP015063,21 Nov 15,6,Albert Reserve 2,Dendy Park 2,No. 4,Stephan Mikhail,Brett Carter,Brett Carter,2-8,2,8,0,1,Completed,true,false,false
+AP015064,21 Nov 15,6,Black Rock,Carmelite,No. 1,Dexter Bonet,Simon Arms,Dexter Bonet,8-6,8,6,1,0,Completed,true,false,false
+AP015064,21 Nov 15,6,Black Rock,Carmelite,No. 2,Brady Watts,Kel Patrick,Kel Patrick,5-8,5,8,0,1,Completed,true,false,false
+AP015064,21 Nov 15,6,Black Rock,Carmelite,No. 3,Jayden Watts,Ian Anderson,Ian Anderson,4-8,4,8,0,1,Completed,true,false,false
+AP015064,21 Nov 15,6,Black Rock,Carmelite,No. 4,Michael Kernahan,Tony Strupl,Tony Strupl,5-8,5,8,0,1,Completed,true,false,false
+AP015071,28 Nov 15,7,Dendy Park 1,Albert Reserve 1,No. 1,Nick Jeffery,Sasha Miokovic,Nick Jeffery,8-2,8,2,1,0,Completed,true,false,false
+AP015071,28 Nov 15,7,Dendy Park 1,Albert Reserve 1,No. 2,Michael Kos,Finau Fa,Finau Fa,1-8,1,8,0,1,Completed,true,false,false
+AP015071,28 Nov 15,7,Dendy Park 1,Albert Reserve 1,No. 3,Brenton Kos,Simon Hernandez,Brenton Kos,8-3,8,3,1,0,Completed,true,false,false
+AP015071,28 Nov 15,7,Dendy Park 1,Albert Reserve 1,No. 4,Henko Blaauw,Aj Ratnakumar,Henko Blaauw,8-1,8,1,1,0,Completed,true,false,false
+AP015072,28 Nov 15,7,BLTC,GPHC,No. 1,Macgregor Anderson,Jack Basso,Macgregor Anderson,8-5,8,5,1,0,Completed,true,false,false
+AP015072,28 Nov 15,7,BLTC,GPHC,No. 2,Stefan Schwab,Rowan Browning,Stefan Schwab,8-2,8,2,1,0,Completed,true,false,false
+AP015072,28 Nov 15,7,BLTC,GPHC,No. 3,Peter Kromcidis,Marcus Matear,Peter Kromcidis,8-6,8,6,1,0,Completed,true,false,false
+AP015072,28 Nov 15,7,BLTC,GPHC,No. 4,[Unnamed emergency — TROLS AP015072 home code 4],[Unnamed emergency — TROLS AP015072 away code 4],[Unnamed emergency — TROLS AP015072 away code 4],0-8,0,8,0,1,Completed,false,true,true
+AP015073,28 Nov 15,7,Carmelite,Dendy Park 2,No. 1,Simon Arms,Dean Ellis,Simon Arms,8-3,8,3,1,0,Completed,true,false,false
+AP015073,28 Nov 15,7,Carmelite,Dendy Park 2,No. 2,George Kypriotis,Wesley Neylon,George Kypriotis,8-4,8,4,1,0,Completed,true,false,false
+AP015073,28 Nov 15,7,Carmelite,Dendy Park 2,No. 3,Daniel Auld,Brett Carter,Brett Carter,0-8,0,8,0,1,Completed,true,false,false
+AP015073,28 Nov 15,7,Carmelite,Dendy Park 2,No. 4,Theo Mitsinikos,Nedal Daoud,Nedal Daoud,1-8,1,8,0,1,Completed,true,false,false
+AP015074,28 Nov 15,7,Albert Reserve 2,Black Rock,No. 1,Roberto Rizzo,Brady Watts,Roberto Rizzo,8-3,8,3,1,0,Completed,true,false,false
+AP015074,28 Nov 15,7,Albert Reserve 2,Black Rock,No. 2,Shane Swann,Jayden Watts,Shane Swann,8-1,8,1,1,0,Completed,true,false,false
+AP015074,28 Nov 15,7,Albert Reserve 2,Black Rock,No. 3,Alex Brown,Michael Watts,Alex Brown,8-0,8,0,1,0,Completed,true,false,false
+AP015074,28 Nov 15,7,Albert Reserve 2,Black Rock,No. 4,Isai Torres,Michael Kernahan,Isai Torres,8-1,8,1,1,0,Completed,true,false,false
+AP015081,05 Dec 15,8,Black Rock,Dendy Park 1,No. 1,Dexter Bonet,Nick Jeffery,Dexter Bonet,8-2,8,2,1,0,Completed,true,false,false
+AP015081,05 Dec 15,8,Black Rock,Dendy Park 1,No. 2,Brady Watts,Brenton Kos,Brady Watts,8-5,8,5,1,0,Completed,true,false,false
+AP015081,05 Dec 15,8,Black Rock,Dendy Park 1,No. 3,Jayden Watts,Garion Rowe,Jayden Watts,9-7,9,7,1,0,Completed,true,false,false
+AP015081,05 Dec 15,8,Black Rock,Dendy Park 1,No. 4,Michael Watts,Ken Dick,Michael Watts,8-2,8,2,1,0,Completed,true,false,false
+AP015082,05 Dec 15,8,Dendy Park 2,BLTC,No. 1,Jack Bishop,Stefan Schulze,Stefan Schulze,5-8,5,8,0,1,Completed,true,false,false
+AP015082,05 Dec 15,8,Dendy Park 2,BLTC,No. 2,Tim O'Shannassy,Peter Kromcidis,Tim O'Shannassy,8-2,8,2,1,0,Completed,true,false,false
+AP015082,05 Dec 15,8,Dendy Park 2,BLTC,No. 3,Henko Blaauw,Juan Sanchez,Henko Blaauw,8-6,8,6,1,0,Completed,true,false,false
+AP015082,05 Dec 15,8,Dendy Park 2,BLTC,No. 4,Nedal Daoud,Shadi Taleb,Nedal Daoud,9-7,9,7,1,0,Completed,true,false,false
+AP015083,05 Dec 15,8,Albert Reserve 2,Albert Reserve 1,No. 1,Roberto Rizzo,Aymeric Mara,Aymeric Mara,6-8,6,8,0,1,Completed,true,false,false
+AP015083,05 Dec 15,8,Albert Reserve 2,Albert Reserve 1,No. 2,Alex Brown,Sasha Miokovic,Sasha Miokovic,5-8,5,8,0,1,Completed,true,false,false
+AP015083,05 Dec 15,8,Albert Reserve 2,Albert Reserve 1,No. 3,Isai Torres,Finau Fa,Isai Torres,8-3,8,3,1,0,Completed,true,false,false
+AP015083,05 Dec 15,8,Albert Reserve 2,Albert Reserve 1,No. 4,Loon Chan,Simon Hernandez,Simon Hernandez,6-8,6,8,0,1,Completed,true,false,false
+AP015084,05 Dec 15,8,Carmelite,GPHC,No. 1,Simon Arms,Alan Ambrose,Simon Arms,8-4,8,4,1,0,Completed,true,false,false
+AP015084,05 Dec 15,8,Carmelite,GPHC,No. 2,Mark Sepavic,Cooper Millett,Mark Sepavic,8-6,8,6,1,0,Completed,true,false,false
+AP015084,05 Dec 15,8,Carmelite,GPHC,No. 3,Ian Anderson,Jack Basso,Ian Anderson,8-3,8,3,1,0,Completed,true,false,false
+AP015084,05 Dec 15,8,Carmelite,GPHC,No. 4,Tony Strupl,Marcus Matear,Tony Strupl,8-2,8,2,1,0,Completed,true,false,false
+AP015091,12 Dec 15,9,Dendy Park 1,Carmelite,No. 1,Nick Jeffery,Ondrej Lauko,Nick Jeffery,8-4,8,4,1,0,Completed,true,false,false
+AP015091,12 Dec 15,9,Dendy Park 1,Carmelite,No. 2,Michael Kos,Mark Sepavic,Michael Kos,8-3,8,3,1,0,Completed,true,false,false
+AP015091,12 Dec 15,9,Dendy Park 1,Carmelite,No. 3,Henko Blaauw,Ian Anderson,Henko Blaauw,8-6,8,6,1,0,Completed,true,false,false
+AP015091,12 Dec 15,9,Dendy Park 1,Carmelite,No. 4,Shaun Lunderstedt,Tony Strupl,Tony Strupl,0-8,0,8,0,1,Completed,true,false,false
+AP015092,12 Dec 15,9,BLTC,Black Rock,No. 1,Eddie Myers,Dexter Bonet,Dexter Bonet,8-9,8,9,0,1,Completed,true,false,false
+AP015092,12 Dec 15,9,BLTC,Black Rock,No. 2,Macgregor Anderson,Brady Watts,Brady Watts,5-8,5,8,0,1,Completed,true,false,false
+AP015092,12 Dec 15,9,BLTC,Black Rock,No. 3,Peter Kromcidis,Jayden Watts,Peter Kromcidis,8-2,8,2,1,0,Completed,true,false,false
+AP015092,12 Dec 15,9,BLTC,Black Rock,No. 4,Phillip Brophy,Anthony Angus,Phillip Brophy,8-2,8,2,1,0,Completed,true,false,false
+AP015093,12 Dec 15,9,Albert Reserve 1,Dendy Park 2,No. 1,Mustafa Ibraham,Wesley Neylon,Mustafa Ibraham,8-1,8,1,1,0,Completed,true,false,false
+AP015093,12 Dec 15,9,Albert Reserve 1,Dendy Park 2,No. 2,Finau Fa,Tim O'Shannassy,Finau Fa,8-2,8,2,1,0,Completed,true,false,false
+AP015093,12 Dec 15,9,Albert Reserve 1,Dendy Park 2,No. 3,Simon Hernandez,Brett Carter,Simon Hernandez,8-2,8,2,1,0,Completed,true,false,false
+AP015093,12 Dec 15,9,Albert Reserve 1,Dendy Park 2,No. 4,Andres Alvarez,Nedal Daoud,Nedal Daoud,6-8,6,8,0,1,Completed,true,false,false
+AP015094,12 Dec 15,9,GPHC,Albert Reserve 2,No. 1,Steve Myers,Roberto Rizzo,Roberto Rizzo,3-8,3,8,0,1,Completed,true,false,false
+AP015094,12 Dec 15,9,GPHC,Albert Reserve 2,No. 2,Mykal Benham,Shane Swann,Shane Swann,0-8,0,8,0,1,Completed,true,false,false
+AP015094,12 Dec 15,9,GPHC,Albert Reserve 2,No. 3,Cooper Millett,Tom Goldenberg,Cooper Millett,8-3,8,3,1,0,Completed,true,false,false
+AP015094,12 Dec 15,9,GPHC,Albert Reserve 2,No. 4,Jack Basso,Alan Belkin,Jack Basso,8-5,8,5,1,0,Completed,true,false,false
+AP015101,30 Jan 16,10,Albert Reserve 2,Dendy Park 1,No. 1,Roberto Rizzo,Nick Jeffery,Roberto Rizzo,8-3,8,3,1,0,Completed,true,false,false
+AP015101,30 Jan 16,10,Albert Reserve 2,Dendy Park 1,No. 2,Simon Young,Brenton Kos,Simon Young,8-2,8,2,1,0,Completed,true,false,false
+AP015101,30 Jan 16,10,Albert Reserve 2,Dendy Park 1,No. 3,Alex Brown,Garion Rowe,Alex Brown,8-0,8,0,1,0,Completed,true,false,false
+AP015101,30 Jan 16,10,Albert Reserve 2,Dendy Park 1,No. 4,Isai Torres,Darko Pasara,Isai Torres,8-5,8,5,1,0,Completed,true,false,false
+AP015102,30 Jan 16,10,Carmelite,BLTC,No. 1,Simon Arms,Macgregor Anderson,Simon Arms,8-2,8,2,1,0,Completed,true,false,false
+AP015102,30 Jan 16,10,Carmelite,BLTC,No. 2,Mark Sepavic,Mal Pearson,Mal Pearson,4-8,4,8,0,1,Completed,true,false,false
+AP015102,30 Jan 16,10,Carmelite,BLTC,No. 3,Ian Anderson,Peter Kromcidis,Ian Anderson,8-2,8,2,1,0,Completed,true,false,false
+AP015102,30 Jan 16,10,Carmelite,BLTC,No. 4,George Kypriotis,Shadi Taleb,George Kypriotis,8-6,8,6,1,0,Completed,true,false,false
+AP015103,30 Jan 16,10,Black Rock,Albert Reserve 1,No. 1,Brady Watts,Sasha Miokovic,Sasha Miokovic,7-9,7,9,0,1,Completed,true,false,false
+AP015103,30 Jan 16,10,Black Rock,Albert Reserve 1,No. 2,Jayden Watts,Finau Fa,Finau Fa,6-8,6,8,0,1,Completed,true,false,false
+AP015103,30 Jan 16,10,Black Rock,Albert Reserve 1,No. 3,Anthony Angus,Simon Hernandez,Simon Hernandez,5-8,5,8,0,1,Completed,true,false,false
+AP015103,30 Jan 16,10,Black Rock,Albert Reserve 1,No. 4,Michael Watts,Esteban Restrepo,Michael Watts,8-6,8,6,1,0,Completed,true,false,false
+AP015104,30 Jan 16,10,Dendy Park 2,GPHC,No. 1,Wesley Neylon,Alan Ambrose,Wesley Neylon,8-4,8,4,1,0,Completed,true,false,false
+AP015104,30 Jan 16,10,Dendy Park 2,GPHC,No. 2,Tim O'Shannassy,Cooper Millett,Cooper Millett,7-9,7,9,0,1,Completed,true,false,false
+AP015104,30 Jan 16,10,Dendy Park 2,GPHC,No. 3,Brett Carter,Jack Basso,Jack Basso,4-8,4,8,0,1,Completed,true,false,false
+AP015104,30 Jan 16,10,Dendy Park 2,GPHC,No. 4,Nedal Daoud,Rowan Browning,Nedal Daoud,8-4,8,4,1,0,Completed,true,false,false
+AP015111,06 Feb 16,11,Dendy Park 1,Dendy Park 2,No. 1,Nick Jeffery,Dean Ellis,Nick Jeffery,8-2,8,2,1,0,Completed,true,false,false
+AP015111,06 Feb 16,11,Dendy Park 1,Dendy Park 2,No. 2,Fraser Richmond,Nedal Daoud,Fraser Richmond,9-7,9,7,1,0,Completed,true,false,false
+AP015111,06 Feb 16,11,Dendy Park 1,Dendy Park 2,No. 3,Brenton Kos,Henko Blaauw,Henko Blaauw,0-8,0,8,0,1,Completed,true,false,true
+AP015111,06 Feb 16,11,Dendy Park 1,Dendy Park 2,No. 4,Garion Rowe,Hayden Fricke,Garion Rowe,9-7,9,7,1,0,Completed,true,false,false
+AP015112,06 Feb 16,11,BLTC,Albert Reserve 2,No. 1,Macgregor Anderson,Roberto Rizzo,Macgregor Anderson,8-4,8,4,1,0,Completed,true,false,false
+AP015112,06 Feb 16,11,BLTC,Albert Reserve 2,No. 2,Stefan Schulze,Shane Swann,Shane Swann,0-8,0,8,0,1,Completed,true,false,false
+AP015112,06 Feb 16,11,BLTC,Albert Reserve 2,No. 3,Peter Kromcidis,Simon Young,Simon Young,6-8,6,8,0,1,Completed,true,false,false
+AP015112,06 Feb 16,11,BLTC,Albert Reserve 2,No. 4,Stefan Schwab,David Watts,David Watts,7-9,7,9,0,1,Completed,true,false,false
+AP015113,06 Feb 16,11,Albert Reserve 1,Carmelite,No. 1,Sasha Miokovic,Simon Arms,Simon Arms,6-8,6,8,0,1,Completed,true,false,false
+AP015113,06 Feb 16,11,Albert Reserve 1,Carmelite,No. 2,Nicholas Espositos,Mark Sepavic,Mark Sepavic,3-8,3,8,0,1,Completed,true,false,false
+AP015113,06 Feb 16,11,Albert Reserve 1,Carmelite,No. 3,Finau Fa,Richard Dodson,Finau Fa,8-4,8,4,1,0,Completed,true,false,false
+AP015113,06 Feb 16,11,Albert Reserve 1,Carmelite,No. 4,Simon Hernandez,George Kypriotis,Simon Hernandez,8-3,8,3,1,0,Completed,true,false,false
+AP015114,06 Feb 16,11,GPHC,Black Rock,No. 1,Alan Ambrose,Dexter Bonet,Alan Ambrose,8-5,8,5,1,0,Completed,true,false,false
+AP015114,06 Feb 16,11,GPHC,Black Rock,No. 2,Mykal Benham,Brady Watts,Brady Watts,2-8,2,8,0,1,Completed,true,false,false
+AP015114,06 Feb 16,11,GPHC,Black Rock,No. 3,Cooper Millett,Jayden Watts,Cooper Millett,8-2,8,2,1,0,Completed,true,false,false
+AP015114,06 Feb 16,11,GPHC,Black Rock,No. 4,Jack Basso,Michael Watts,Michael Watts,4-8,4,8,0,1,Completed,true,false,false
+AP015121,13 Feb 16,12,GPHC,Albert Reserve 1,No. 1,Alan Ambrose,Sasha Miokovic,Alan Ambrose,8-6,8,6,1,0,Completed,true,false,false
+AP015121,13 Feb 16,12,GPHC,Albert Reserve 1,No. 2,Mykal Benham,Finau Fa,Finau Fa,5-8,5,8,0,1,Completed,true,false,false
+AP015121,13 Feb 16,12,GPHC,Albert Reserve 1,No. 3,Rowan Browning,Simon Hernandez,Simon Hernandez,2-8,2,8,0,1,Completed,true,false,false
+AP015121,13 Feb 16,12,GPHC,Albert Reserve 1,No. 4,Rob Ensor,Andres Alvarez,Andres Alvarez,0-8,0,8,0,1,Completed,true,false,false
+AP015122,13 Feb 16,12,Albert Reserve 2,Carmelite,No. 1,Roberto Rizzo,Mark Sepavic,Roberto Rizzo,8-3,8,3,1,0,Completed,true,false,false
+AP015122,13 Feb 16,12,Albert Reserve 2,Carmelite,No. 2,Shane Swann,Ian Anderson,Shane Swann,8-3,8,3,1,0,Completed,true,false,false
+AP015122,13 Feb 16,12,Albert Reserve 2,Carmelite,No. 3,Simon Young,Richard Dodson,Richard Dodson,6-8,6,8,0,1,Completed,true,false,false
+AP015122,13 Feb 16,12,Albert Reserve 2,Carmelite,No. 4,Alex Brown,George Kypriotis,Alex Brown,8-3,8,3,1,0,Completed,true,false,false
+AP015123,13 Feb 16,12,Black Rock,Dendy Park 2,No. 1,Brady Watts,Dean Ellis,Brady Watts,8-1,8,1,1,0,Completed,true,false,false
+AP015123,13 Feb 16,12,Black Rock,Dendy Park 2,No. 2,Jayden Watts,Wesley Neylon,Wesley Neylon,6-8,6,8,0,1,Completed,true,false,false
+AP015123,13 Feb 16,12,Black Rock,Dendy Park 2,No. 3,Anthony Angus,Brett Carter,Brett Carter,4-8,4,8,0,1,Completed,true,false,false
+AP015123,13 Feb 16,12,Black Rock,Dendy Park 2,No. 4,Michael Watts,Nedal Daoud,Nedal Daoud,2-8,2,8,0,1,Completed,true,false,false
+AP015124,13 Feb 16,12,BLTC,Dendy Park 1,No. 1,Macgregor Anderson,Brenton Kos,Macgregor Anderson,8-6,8,6,1,0,Completed,true,false,false
+AP015124,13 Feb 16,12,BLTC,Dendy Park 1,No. 2,Stefan Schulze,Henko Blaauw,Henko Blaauw,0-8,0,8,0,1,Completed,true,false,false
+AP015124,13 Feb 16,12,BLTC,Dendy Park 1,No. 3,Peter Kromcidis,Garion Rowe,Peter Kromcidis,9-8,9,8,1,0,Completed,true,false,false
+AP015124,13 Feb 16,12,BLTC,Dendy Park 1,No. 4,Shadi Taleb,Darko Pasara,Darko Pasara,1-8,1,8,0,1,Completed,true,false,false
+AP015132,20 Feb 16,13,Dendy Park 1,GPHC,No. 1,Nick Jeffery,Alan Ambrose,Alan Ambrose,7-9,7,9,0,1,Completed,true,false,false
+AP015132,20 Feb 16,13,Dendy Park 1,GPHC,No. 2,Fraser Richmond,Jack Basso,Fraser Richmond,8-5,8,5,1,0,Completed,true,false,false
+AP015132,20 Feb 16,13,Dendy Park 1,GPHC,No. 3,Henko Blaauw,Rowan Browning,Henko Blaauw,8-3,8,3,1,0,Completed,true,false,false
+AP015132,20 Feb 16,13,Dendy Park 1,GPHC,No. 4,Darko Pasara,Marcus Matear,Darko Pasara,8-5,8,5,1,0,Completed,true,false,false
+AP015133,20 Feb 16,13,Dendy Park 2,Albert Reserve 2,No. 1,Dean Ellis,Simon Young,Dean Ellis,8-2,8,2,1,0,Completed,true,false,false
+AP015133,20 Feb 16,13,Dendy Park 2,Albert Reserve 2,No. 2,Wesley Neylon,Alex Brown,Wesley Neylon,8-6,8,6,1,0,Completed,true,false,false
+AP015133,20 Feb 16,13,Dendy Park 2,Albert Reserve 2,No. 3,Nedal Daoud,Isai Torres,Isai Torres,5-8,5,8,0,1,Completed,true,false,false
+AP015133,20 Feb 16,13,Dendy Park 2,Albert Reserve 2,No. 4,Alex Cherman,Rishad Sukhia,Alex Cherman,8-2,8,2,1,0,Completed,true,false,false
+AP015134,20 Feb 16,13,Carmelite,Black Rock,No. 1,Simon Arms,Brady Watts,Simon Arms,8-0,8,0,1,0,Completed,true,false,false
+AP015134,20 Feb 16,13,Carmelite,Black Rock,No. 2,Mark Sepavic,Jayden Watts,Mark Sepavic,8-4,8,4,1,0,Completed,true,false,false
+AP015134,20 Feb 16,13,Carmelite,Black Rock,No. 3,Ian Anderson,Anthony Angus,Ian Anderson,8-3,8,3,1,0,Completed,true,false,false
+AP015134,20 Feb 16,13,Carmelite,Black Rock,No. 4,Richard Dodson,Michael Watts,Richard Dodson,9-7,9,7,1,0,Completed,true,false,false
+AP015141,27 Feb 16,14,Albert Reserve 1,Dendy Park 1,No. 1,Sasha Miokovic,Brenton Kos,Sasha Miokovic,8-0,8,0,1,0,Completed,true,false,false
+AP015141,27 Feb 16,14,Albert Reserve 1,Dendy Park 1,No. 2,Finau Fa,Henko Blaauw,Henko Blaauw,5-8,5,8,0,1,Completed,true,false,false
+AP015141,27 Feb 16,14,Albert Reserve 1,Dendy Park 1,No. 3,Andres Alvarez,Garion Rowe,Garion Rowe,5-8,5,8,0,1,Completed,true,false,false
+AP015141,27 Feb 16,14,Albert Reserve 1,Dendy Park 1,No. 4,Esteban Restrepo,Darko Pasara,Darko Pasara,2-8,2,8,0,1,Completed,true,false,false
+AP015142,27 Feb 16,14,GPHC,BLTC,No. 1,Alan Ambrose,Macgregor Anderson,Alan Ambrose,8-0,8,0,1,0,Completed,true,false,false
+AP015142,27 Feb 16,14,GPHC,BLTC,No. 2,Cooper Millett,Stefan Schulze,Cooper Millett,8-0,8,0,1,0,Completed,true,false,false
+AP015142,27 Feb 16,14,GPHC,BLTC,No. 3,Jack Basso,Juan Sanchez,Jack Basso,8-6,8,6,1,0,Completed,true,false,false
+AP015142,27 Feb 16,14,GPHC,BLTC,No. 4,Marcus Matear,Shadi Taleb,Shadi Taleb,3-8,3,8,0,1,Completed,true,false,false
+AP015143,27 Feb 16,14,Dendy Park 2,Carmelite,No. 1,Dean Ellis,Simon Arms,Simon Arms,4-8,4,8,0,1,Completed,true,false,false
+AP015143,27 Feb 16,14,Dendy Park 2,Carmelite,No. 2,Wesley Neylon,Ian Anderson,Wesley Neylon,8-4,8,4,1,0,Completed,true,false,false
+AP015143,27 Feb 16,14,Dendy Park 2,Carmelite,No. 3,Brett Carter,Richard Dodson,Richard Dodson,3-8,3,8,0,1,Completed,true,false,false
+AP015143,27 Feb 16,14,Dendy Park 2,Carmelite,No. 4,Nedal Daoud,George Kypriotis,Nedal Daoud,9-7,9,7,1,0,Completed,true,false,false
+AP015144,27 Feb 16,14,Black Rock,Albert Reserve 2,No. 1,Brady Watts,Roberto Rizzo,Roberto Rizzo,7-9,7,9,0,1,Completed,true,false,false
+AP015144,27 Feb 16,14,Black Rock,Albert Reserve 2,No. 2,Jayden Watts,Shane Swann,Shane Swann,1-8,1,8,0,1,Completed,true,false,false
+AP015144,27 Feb 16,14,Black Rock,Albert Reserve 2,No. 3,Anthony Angus,Lance Gentle-king,Anthony Angus,8-2,8,2,1,0,Completed,true,false,false
+AP015144,27 Feb 16,14,Black Rock,Albert Reserve 2,No. 4,Michael Watts,Daniel Simonosky,Michael Watts,8-5,8,5,1,0,Completed,true,false,false
+AP015301,,16,Carmelite,Dendy Park 1,No. 1,Simon Arms,Nick Jeffery,Simon Arms,8-1,8,1,1,0,Completed,true,false,false
+AP015301,,16,Carmelite,Dendy Park 1,No. 2,Ian Anderson,Henko Blaauw,Henko Blaauw,3-8,3,8,0,1,Completed,true,false,false
+AP015301,,16,Carmelite,Dendy Park 1,No. 3,Richard Dodson,Garion Rowe,Richard Dodson,8-4,8,4,1,0,Completed,true,false,false
+AP015301,,16,Carmelite,Dendy Park 1,No. 4,George Kypriotis,Darko Pasara,Darko Pasara,8-9,8,9,0,1,Completed,true,false,false
+AP015302,,16,Albert Reserve 2,Albert Reserve 1,No. 1,Roberto Rizzo,Sasha Miokovic,Roberto Rizzo,8-1,8,1,1,0,Completed,true,false,false
+AP015302,,16,Albert Reserve 2,Albert Reserve 1,No. 2,Shane Swann,Finau Fa,Shane Swann,8-2,8,2,1,0,Completed,true,false,false
+AP015302,,16,Albert Reserve 2,Albert Reserve 1,No. 3,Alex Brown,Simon Hernandez,Simon Hernandez,1-8,1,8,0,1,Completed,true,false,false
+AP015302,,16,Albert Reserve 2,Albert Reserve 1,No. 4,Isai Torres,Bobby Lim,Isai Torres,8-4,8,4,1,0,Completed,true,false,false
+AP015321,,17,Carmelite,Albert Reserve 2,No. 1,Simon Arms,Roberto Rizzo,Roberto Rizzo,4-8,4,8,0,1,Completed,true,false,false
+AP015321,,17,Carmelite,Albert Reserve 2,No. 2,Mark Sepavic,Shane Swann,Shane Swann,4-8,4,8,0,1,Completed,true,false,false
+AP015321,,17,Carmelite,Albert Reserve 2,No. 3,Richard Dodson,Simon Young,Simon Young,4-8,4,8,0,1,Completed,true,true,false
+AP015321,,17,Carmelite,Albert Reserve 2,No. 4,George Kypriotis,Isai Torres,Isai Torres,5-8,5,8,0,1,Completed,true,false,false

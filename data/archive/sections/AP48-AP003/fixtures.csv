@@ -1,0 +1,60 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP003011,04 May 24,1,regular,Round 1,Kings Park,Elwood Green,2,6,2,2,4,6,41,51,Completed,
+AP003012,04 May 24,1,regular,Round 1,Elwood Red,Highmoor Uniting,7,1,3,1,6,2,44,25,Completed,
+AP003014,04 May 24,1,regular,Round 1,Parkdale White,BLTC,0,8,0,4,0,8,19,48,Completed,
+pending-ap003-r1-bye-parkdale-blue,04 May 24,1,regular,Round 1,Bye,Parkdale Blue,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP003021,11 May 24,2,regular,Round 2,BLTC,Kings Park,7,1,3,1,6,2,48,38,Completed,
+AP003022,11 May 24,2,regular,Round 2,Elwood Green,Elwood Red,7,1,3,1,7,2,48,24,Completed,
+AP003024,11 May 24,2,regular,Round 2,Parkdale Blue,Parkdale White,7,1,3,1,6,5,62,53,Completed,
+pending-ap003-r2-highmoor-uniting-bye,11 May 24,2,regular,Round 2,Highmoor Uniting,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP003031,18 May 24,3,regular,Round 3,Kings Park,Parkdale Blue,8,0,4,0,8,1,52,29,Completed,
+AP003032,18 May 24,3,regular,Round 3,Elwood Red,BLTC,6,2,2,2,5,4,45,36,Completed,
+AP003034,18 May 24,3,regular,Round 3,Parkdale White,Highmoor Uniting,6,2,2,2,5,4,45,37,Completed,
+pending-ap003-r3-bye-elwood-green,18 May 24,3,regular,Round 3,Bye,Elwood Green,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP003041,25 May 24,4,regular,Round 4,Highmoor Uniting,Kings Park,0,8,0,4,0,8,21,50,Completed,
+AP003042,25 May 24,4,regular,Round 4,Parkdale Blue,Elwood Red,8,0,4,0,8,0,48,19,Completed,
+AP003044,25 May 24,4,regular,Round 4,Elwood Green,Parkdale White,7,1,3,1,7,3,54,41,Completed,
+pending-ap003-r4-bltc-bye,25 May 24,4,regular,Round 4,BLTC,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP003052,01 Jun 24,5,regular,Round 5,BLTC,Parkdale Blue,6,2,2,2,4,4,33,31,Completed,
+AP003053,01 Jun 24,5,regular,Round 5,Highmoor Uniting,Elwood Green,1,7,1,3,3,7,40,53,Completed,
+AP003054,01 Jun 24,5,regular,Round 5,Kings Park,Elwood Red,8,0,4,0,8,1,53,30,Completed,
+pending-ap003-r5-bye-parkdale-white,01 Jun 24,5,regular,Round 5,Bye,Parkdale White,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP003062,15 Jun 24,6,regular,Round 6,Parkdale White,Kings Park,1,7,1,3,3,6,30,43,Completed,
+AP003063,15 Jun 24,6,regular,Round 6,Parkdale Blue,Highmoor Uniting,7,1,3,1,7,3,59,45,Completed,
+AP003064,15 Jun 24,6,regular,Round 6,Elwood Green,BLTC,8,0,4,0,8,1,53,33,Completed,
+pending-ap003-r6-elwood-red-bye,15 Jun 24,6,regular,Round 6,Elwood Red,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP003072,22 Jun 24,7,regular,Round 7,Elwood Red,Parkdale White,8,0,4,0,8,0,48,18,Completed,
+AP003073,22 Jun 24,7,regular,Round 7,BLTC,Highmoor Uniting,1,7,1,3,4,6,52,54,Completed,
+AP003074,22 Jun 24,7,regular,Round 7,Parkdale Blue,Elwood Green,2,6,2,2,4,6,46,53,Completed,
+pending-ap003-r7-kings-park-bye,22 Jun 24,7,regular,Round 7,Kings Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap003-r8-bltc-parkdale-white,29 Jun 24,8,regular,Round 8,BLTC,Parkdale White,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap003-r8-elwood-green-kings-park,29 Jun 24,8,regular,Round 8,Elwood Green,Kings Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap003-r8-highmoor-uniting-elwood-red,29 Jun 24,8,regular,Round 8,Highmoor Uniting,Elwood Red,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap003-r8-parkdale-blue-bye,29 Jun 24,8,regular,Round 8,Parkdale Blue,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP003091,13 Jul 24,9,regular,Round 9,Kings Park,BLTC,7,1,3,1,7,2,49,21,Completed,
+AP003092,13 Jul 24,9,regular,Round 9,Elwood Red,Elwood Green,2,6,2,2,4,5,40,44,Completed,
+AP003094,13 Jul 24,9,regular,Round 9,Parkdale White,Parkdale Blue,2,6,2,2,4,5,43,49,Completed,
+pending-ap003-r9-bye-highmoor-uniting,13 Jul 24,9,regular,Round 9,Bye,Highmoor Uniting,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap003-r10-bltc-elwood-red,20 Jul 24,10,regular,Round 10,BLTC,Elwood Red,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap003-r10-elwood-green-bye,20 Jul 24,10,regular,Round 10,Elwood Green,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap003-r10-highmoor-uniting-parkdale-white,20 Jul 24,10,regular,Round 10,Highmoor Uniting,Parkdale White,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap003-r10-parkdale-blue-kings-park,20 Jul 24,10,regular,Round 10,Parkdale Blue,Kings Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap003-r11-bye-bltc,27 Jul 24,11,regular,Round 11,Bye,BLTC,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap003-r11-elwood-red-parkdale-blue,27 Jul 24,11,regular,Round 11,Elwood Red,Parkdale Blue,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap003-r11-kings-park-highmoor-uniting,27 Jul 24,11,regular,Round 11,Kings Park,Highmoor Uniting,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap003-r11-parkdale-white-elwood-green,27 Jul 24,11,regular,Round 11,Parkdale White,Elwood Green,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP003122,03 Aug 24,12,regular,Round 12,Parkdale Blue,BLTC,2,6,2,2,4,5,33,40,Completed,
+AP003123,03 Aug 24,12,regular,Round 12,Elwood Green,Highmoor Uniting,8,0,4,0,8,1,56,29,Completed,
+AP003124,03 Aug 24,12,regular,Round 12,Elwood Red,Kings Park,0,8,0,4,1,8,26,53,Completed,
+pending-ap003-r12-parkdale-white-bye,03 Aug 24,12,regular,Round 12,Parkdale White,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP003132,10 Aug 24,13,regular,Round 13,Kings Park,Parkdale White,8,0,4,0,8,2,57,33,Completed,
+AP003133,10 Aug 24,13,regular,Round 13,Highmoor Uniting,Parkdale Blue,2,6,2,2,4,5,43,50,Completed,
+AP003134,10 Aug 24,13,regular,Round 13,BLTC,Elwood Green,2,6,2,2,5,5,46,50,Completed,
+pending-ap003-r13-bye-elwood-red,10 Aug 24,13,regular,Round 13,Bye,Elwood Red,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP003142,17 Aug 24,14,regular,Round 14,Parkdale White,Elwood Red,1,7,1,3,4,6,42,45,Completed,
+AP003143,17 Aug 24,14,regular,Round 14,Highmoor Uniting,BLTC,0,8,0,4,1,8,28,55,Completed,
+AP003144,17 Aug 24,14,regular,Round 14,Elwood Green,Parkdale Blue,1,7,1,3,2,7,38,54,Completed,
+pending-ap003-r14-bye-kings-park,17 Aug 24,14,regular,Round 14,Bye,Kings Park,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP003301,,16,semi_final,Semi-final,Elwood Green,BLTC,1,7,1,3,3,7,49,57,Completed,
+AP003302,,16,semi_final,Semi-final,Kings Park,Parkdale Blue,1,7,1,3,4,6,42,50,Completed,
+AP003321,,17,grand_final,Grand final · TROLS entry 2,Parkdale Blue,BLTC,1.5,6.5,1,2,3,5,33,46,Completed,

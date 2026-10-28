@@ -1,0 +1,82 @@
+{
+  "asset_id": "AP37-AP001",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Winter 2018",
+  "season_id": "AP37",
+  "season_label": "Winter 2018",
+  "source_section_code": "AP001",
+  "section_label": "Ladies Sets 1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Hampton Park",
+      "wins": 7,
+      "points": 75,
+      "percentage": 251.41,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "St Louis de Mont",
+      "wins": 8,
+      "points": 65,
+      "percentage": 130.74,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Legend Park",
+      "wins": 6,
+      "points": 56,
+      "percentage": 117.99,
+      "marker": "R"
+    },
+    {
+      "position": 4,
+      "team": "Overport Park",
+      "wins": 1,
+      "points": 24,
+      "percentage": 61.76,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Highmoor Uniting",
+      "wins": 2,
+      "points": 20,
+      "percentage": 49.64,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 1,
+    "doublesTarget": 10,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP37-AP001",
+  "fixtures": 47,
+  "completed_fixtures": 28,
+  "draw_fixtures": 46,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 110,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP001151 doubles No. 3: '2-3'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP001151 doubles No. 4: '1-3'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

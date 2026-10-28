@@ -1,0 +1,110 @@
+{
+  "asset_id": "AP33-AP009",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Winter 2016",
+  "season_id": "AP33",
+  "season_label": "Winter 2016",
+  "source_section_code": "AP009",
+  "section_label": "Open S/D 1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Highmoor Uniting",
+      "wins": 13,
+      "points": 115,
+      "percentage": 176.79,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Port Melbourne",
+      "wins": 11,
+      "points": 108,
+      "percentage": 154.82,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Carmelite",
+      "wins": 6,
+      "points": 71,
+      "percentage": 96.81,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "St Pats Mentone",
+      "wins": 7,
+      "points": 67,
+      "percentage": 92.01,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Hurlingham Park",
+      "wins": 5,
+      "points": 66,
+      "percentage": 102.95,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Le Page",
+      "wins": 4,
+      "points": 51.5,
+      "percentage": 84.92,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Lauriston",
+      "wins": 3,
+      "points": 46,
+      "percentage": 72.09,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "Glen Huntly",
+      "wins": 2,
+      "points": 35.5,
+      "percentage": 69.85,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP33-AP009",
+  "fixtures": 60,
+  "completed_fixtures": 58,
+  "draw_fixtures": 60,
+  "singles_rubbers": 226,
+  "doubles_rubbers": 112,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP009051 singles No. 1: '1-1'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP009064 singles No. 1: '1-1'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP009064 singles No. 2: '1-2'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP009064 singles No. 3: '3-3'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP009064 singles No. 4: '4-4'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP009013 doubles No. 2: '5-7 6-3'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

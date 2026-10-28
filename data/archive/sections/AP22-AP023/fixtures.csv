@@ -1,0 +1,61 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP023011,02 Oct 10,1,regular,Round 1,Hampton,Parkdale,6,2,2,2,6,5,52,46,Completed,
+AP023012,02 Oct 10,1,regular,Round 1,Frankston East,St Andrews MB,1,7,1,3,2,7,33,44,Completed,
+AP023013,02 Oct 10,1,regular,Round 1,Kooyong,Sth Murrumbeena,2,6,2,2,4,4,34,38,Completed,
+AP023014,02 Oct 10,1,regular,Round 1,Mordialloc,BLTC,8,0,4,0,8,0,48,20,Completed,
+AP023021,09 Oct 10,2,regular,Round 2,BLTC,Hampton,7,1,3,1,6,2,44,20,Completed,
+AP023022,09 Oct 10,2,regular,Round 2,Parkdale,Frankston East,1,7,1,3,3,6,33,47,Completed,
+AP023023,09 Oct 10,2,regular,Round 2,St Andrews MB,Kooyong,8,0,4,0,8,1,53,32,Completed,
+AP023024,09 Oct 10,2,regular,Round 2,Sth Murrumbeena,Mordialloc,7,1,3,1,6,4,49,33,Completed,
+AP023032,16 Oct 10,3,regular,Round 3,Frankston East,BLTC,8,0,4,0,8,0,50,23,Completed,
+AP023034,16 Oct 10,3,regular,Round 3,Mordialloc,St Andrews MB,1,7,1,3,2,6,31,49,Completed,
+pending-ap023-r3-hampton-sth-murrumbeena,16 Oct 10,3,regular,Round 3,Hampton,Sth Murrumbeena,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap023-r3-kooyong-parkdale,16 Oct 10,3,regular,Round 3,Kooyong,Parkdale,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP023041,23 Oct 10,4,regular,Round 4,St Andrews MB,Hampton,7,1,3,1,7,2,52,36,Completed,
+AP023042,23 Oct 10,4,regular,Round 4,Sth Murrumbeena,Frankston East,1,7,1,3,2,6,27,46,Completed,
+AP023043,23 Oct 10,4,regular,Round 4,BLTC,Kooyong,8,0,4,0,8,0,50,20,Completed,
+AP023044,23 Oct 10,4,regular,Round 4,Parkdale,Mordialloc,2,6,2,2,5,5,41,48,Completed,
+AP023051,06 Nov 10,5,regular,Round 5,Kooyong,Mordialloc,2,6,2,2,4,4,37,41,Completed,
+AP023052,06 Nov 10,5,regular,Round 5,BLTC,Sth Murrumbeena,1,7,1,3,3,6,33,47,Completed,
+AP023053,06 Nov 10,5,regular,Round 5,St Andrews MB,Parkdale,7,1,3,1,6,3,46,36,Completed,
+AP023054,06 Nov 10,5,regular,Round 5,Hampton,Frankston East,0,8,0,4,0,8,18,49,Completed,
+AP023062,13 Nov 10,6,regular,Round 6,Mordialloc,Hampton,4,4,1,1,2,2,21,15,Completed,
+pending-ap023-r6-frankston-east-kooyong,13 Nov 10,6,regular,Round 6,Frankston East,Kooyong,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap023-r6-parkdale-bltc,13 Nov 10,6,regular,Round 6,Parkdale,BLTC,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap023-r6-sth-murrumbeena-st-andrews-mb,13 Nov 10,6,regular,Round 6,Sth Murrumbeena,St Andrews MB,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP023071,20 Nov 10,7,regular,Round 7,Hampton,Kooyong,0,8,0,4,2,8,37,60,Completed,
+AP023072,20 Nov 10,7,regular,Round 7,Frankston East,Mordialloc,8,0,4,0,8,0,49,24,Completed,
+AP023073,20 Nov 10,7,regular,Round 7,BLTC,St Andrews MB,0,8,0,4,2,8,34,58,Completed,
+AP023074,20 Nov 10,7,regular,Round 7,Sth Murrumbeena,Parkdale,1,7,1,3,3,6,36,44,Completed,
+pending-ap023-r8-bltc-mordialloc,27 Nov 10,8,regular,Round 8,BLTC,Mordialloc,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap023-r8-parkdale-hampton,27 Nov 10,8,regular,Round 8,Parkdale,Hampton,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap023-r8-st-andrews-mb-frankston-east,27 Nov 10,8,regular,Round 8,St Andrews MB,Frankston East,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap023-r8-sth-murrumbeena-kooyong,27 Nov 10,8,regular,Round 8,Sth Murrumbeena,Kooyong,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP023091,04 Dec 10,9,regular,Round 9,Hampton,BLTC,7,1,3,1,7,4,51,42,Completed,
+AP023092,04 Dec 10,9,regular,Round 9,Frankston East,Parkdale,2,6,2,2,4,6,38,50,Completed,
+AP023093,04 Dec 10,9,regular,Round 9,Kooyong,St Andrews MB,1,7,1,3,2,6,25,40,Completed,
+AP023094,04 Dec 10,9,regular,Round 9,Mordialloc,Sth Murrumbeena,8,0,4,0,8,0,50,25,Completed,
+AP023101,11 Dec 10,10,regular,Round 10,Sth Murrumbeena,Hampton,0,8,0,4,2,8,41,55,Completed,
+AP023102,11 Dec 10,10,regular,Round 10,BLTC,Frankston East,1,7,1,3,2,6,24,40,Completed,
+AP023103,11 Dec 10,10,regular,Round 10,Parkdale,Kooyong,7,1,3,1,6,4,51,44,Completed,
+AP023104,11 Dec 10,10,regular,Round 10,St Andrews MB,Mordialloc,7,1,3,1,6,3,48,34,Completed,
+pending-ap023-r11-frankston-east-sth-murrumbeena,05 Feb 11,11,regular,Round 11,Frankston East,Sth Murrumbeena,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap023-r11-hampton-st-andrews-mb,05 Feb 11,11,regular,Round 11,Hampton,St Andrews MB,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap023-r11-kooyong-bltc,05 Feb 11,11,regular,Round 11,Kooyong,BLTC,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap023-r11-mordialloc-parkdale,05 Feb 11,11,regular,Round 11,Mordialloc,Parkdale,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP023121,12 Feb 11,12,regular,Round 12,Mordialloc,Kooyong,1,7,1,3,4,7,51,57,Completed,
+AP023122,12 Feb 11,12,regular,Round 12,Sth Murrumbeena,BLTC,7,1,3,1,6,2,45,29,Completed,
+AP023123,12 Feb 11,12,regular,Round 12,Parkdale,St Andrews MB,0,8,0,4,0,8,19,49,Completed,
+AP023124,12 Feb 11,12,regular,Round 12,Frankston East,Hampton,6,2,2,2,5,4,46,33,Completed,
+AP023131,19 Feb 11,13,regular,Round 13,Kooyong,Frankston East,1,7,1,3,2,7,32,48,Completed,
+AP023132,19 Feb 11,13,regular,Round 13,Hampton,Mordialloc,7,1,3,1,6,2,42,27,Completed,
+AP023133,19 Feb 11,13,regular,Round 13,St Andrews MB,Sth Murrumbeena,1,7,1,3,3,6,28,41,Completed,
+AP023134,19 Feb 11,13,regular,Round 13,BLTC,Parkdale,0,8,0,4,1,8,29,56,Completed,
+AP023141,26 Feb 11,14,regular,Round 14,Kooyong,Hampton,2,6,2,2,4,4,30,39,Completed,
+AP023143,26 Feb 11,14,regular,Round 14,St Andrews MB,BLTC,6,2,2,2,5,4,40,32,Completed,
+AP023144,26 Feb 11,14,regular,Round 14,Parkdale,Sth Murrumbeena,7,1,3,1,6,4,51,41,Completed,
+pending-ap023-r14-mordialloc-frankston-east,26 Feb 11,14,regular,Round 14,Mordialloc,Frankston East,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+AP023301,,16,semi_final,Semi-final,St Andrews MB,Frankston East,2,6,2,2,4,5,33,38,Completed,
+AP023302,,16,semi_final,Semi-final,Parkdale,Hampton,7,1,3,1,7,2,44,31,Completed,
+AP023311,,16,semi_final,Semi-final,St Andrews MB,Parkdale,2,6,2,2,4,5,42,45,Completed,
+AP023321,,17,grand_final,Grand final · TROLS entry 2,Frankston East,Parkdale,7,1,3,1,6,3,44,36,Completed,

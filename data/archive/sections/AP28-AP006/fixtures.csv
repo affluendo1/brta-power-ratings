@@ -1,0 +1,61 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP006011,05 Oct 13,1,regular,Round 1,Centenary Park,St Pauls,0,8,0,4,2,8,30,55,Completed,
+AP006013,05 Oct 13,1,regular,Round 1,BLTC,Clarinda,2,6,2,2,5,5,43,45,Completed,
+AP006014,05 Oct 13,1,regular,Round 1,Kings Park,Albert Reserve,7,1,3,1,6,3,49,40,Completed,
+pending-ap006-r1-bye-hawthorn,05 Oct 13,1,regular,Round 1,Bye,Hawthorn,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP006021,12 Oct 13,2,regular,Round 2,Albert Reserve,Centenary Park,8,0,4,0,8,2,58,37,Completed,
+AP006023,12 Oct 13,2,regular,Round 2,Hawthorn,BLTC,7,1,3,1,6,2,38,36,Completed,
+AP006024,12 Oct 13,2,regular,Round 2,Clarinda,Kings Park,1,7,1,3,4,6,38,55,Completed,
+pending-ap006-r2-st-pauls-bye,12 Oct 13,2,regular,Round 2,St Pauls,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP006031,19 Oct 13,3,regular,Round 3,Centenary Park,Clarinda,8,0,4,0,8,0,48,15,Completed,
+AP006033,19 Oct 13,3,regular,Round 3,BLTC,St Pauls,0,8,0,4,3,8,52,63,Completed,
+AP006034,19 Oct 13,3,regular,Round 3,Kings Park,Hawthorn,2,6,2,2,4,5,36,41,Completed,
+pending-ap006-r3-bye-albert-reserve,19 Oct 13,3,regular,Round 3,Bye,Albert Reserve,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP006041,26 Oct 13,4,regular,Round 4,Hawthorn,Centenary Park,0,8,0,4,1,8,32,53,Completed,
+AP006043,26 Oct 13,4,regular,Round 4,Albert Reserve,BLTC,7.5,0.5,3,0,7,1,47,20,Completed,
+AP006044,26 Oct 13,4,regular,Round 4,St Pauls,Kings Park,2,6,2,2,4,4,37,38,Completed,
+pending-ap006-r4-clarinda-bye,26 Oct 13,4,regular,Round 4,Clarinda,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP006051,09 Nov 13,5,regular,Round 5,BLTC,Kings Park,2,6,2,2,4,5,42,46,Completed,
+AP006052,09 Nov 13,5,regular,Round 5,Albert Reserve,Clarinda,7,1,3,1,7,3,52,41,Completed,
+AP006053,09 Nov 13,5,regular,Round 5,Hawthorn,St Pauls,7,1,3,1,7,2,46,32,Completed,
+pending-ap006-r5-centenary-park-bye,09 Nov 13,5,regular,Round 5,Centenary Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP006062,16 Nov 13,6,regular,Round 6,Kings Park,Centenary Park,1,7,1,3,3,6,41,48,Completed,
+AP006063,16 Nov 13,6,regular,Round 6,Clarinda,Hawthorn,7,1,3,1,6,4,49,50,Completed,
+AP006064,16 Nov 13,6,regular,Round 6,St Pauls,Albert Reserve,7,1,3,1,6,3,50,32,Completed,
+pending-ap006-r6-bye-bltc,16 Nov 13,6,regular,Round 6,Bye,BLTC,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP006071,23 Nov 13,7,regular,Round 7,Centenary Park,BLTC,7,1,3,1,7,3,53,41,Completed,
+AP006073,23 Nov 13,7,regular,Round 7,Albert Reserve,Hawthorn,4.5,3.5,1,0,2,1,21,12,Completed,
+AP006074,23 Nov 13,7,regular,Round 7,Clarinda,St Pauls,2,6,2,2,4,5,44,37,Completed,
+pending-ap006-r7-bye-kings-park,23 Nov 13,7,regular,Round 7,Bye,Kings Park,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP006081,30 Nov 13,8,regular,Round 8,St Pauls,Centenary Park,6,2,2,2,6,4,54,42,Completed,
+AP006083,30 Nov 13,8,regular,Round 8,Clarinda,BLTC,1,7,1,3,4,6,40,52,Completed,
+AP006084,30 Nov 13,8,regular,Round 8,Albert Reserve,Kings Park,8,0,4,0,8,2,62,37,Completed,
+pending-ap006-r8-hawthorn-bye,30 Nov 13,8,regular,Round 8,Hawthorn,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP006091,07 Dec 13,9,regular,Round 9,Centenary Park,Albert Reserve,8,0,4,0,8,2,61,49,Completed,
+AP006093,07 Dec 13,9,regular,Round 9,BLTC,Hawthorn,0,8,0,4,1,8,25,49,Completed,
+AP006094,07 Dec 13,9,regular,Round 9,Kings Park,Clarinda,7,1,3,1,7,3,55,38,Completed,
+pending-ap006-r9-bye-st-pauls,07 Dec 13,9,regular,Round 9,Bye,St Pauls,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP006101,14 Dec 13,10,regular,Round 10,Clarinda,Centenary Park,1,7,1,3,2,6,19,48,Completed,
+AP006103,14 Dec 13,10,regular,Round 10,St Pauls,BLTC,7,1,3,1,6,4,56,44,Completed,
+AP006104,14 Dec 13,10,regular,Round 10,Hawthorn,Kings Park,6,2,2,2,4,4,38,36,Completed,
+pending-ap006-r10-albert-reserve-bye,14 Dec 13,10,regular,Round 10,Albert Reserve,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP006111,01 Feb 14,11,regular,Round 11,Centenary Park,Hawthorn,8,0,4,0,8,1,57,31,Completed,
+AP006113,01 Feb 14,11,regular,Round 11,BLTC,Albert Reserve,1,7,1,3,3,6,38,44,Completed,
+AP006114,01 Feb 14,11,regular,Round 11,Kings Park,St Pauls,2,6,2,2,4,5,38,38,Completed,
+pending-ap006-r11-bye-clarinda,01 Feb 14,11,regular,Round 11,Bye,Clarinda,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP006121,08 Feb 14,12,regular,Round 12,Kings Park,BLTC,4,4,1,1,2,2,20,17,Completed,
+AP006123,08 Feb 14,12,regular,Round 12,St Pauls,Hawthorn,3.5,4.5,0,1,1,3,18,23,Completed,
+pending-ap006-r12-bye-centenary-park,08 Feb 14,12,regular,Round 12,Bye,Centenary Park,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap006-r12-clarinda-albert-reserve,08 Feb 14,12,regular,Round 12,Clarinda,Albert Reserve,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP006132,15 Feb 14,13,regular,Round 13,Centenary Park,Kings Park,6,2,2,2,4,4,37,34,Completed,
+AP006133,15 Feb 14,13,regular,Round 13,Hawthorn,Clarinda,8,0,4,0,8,0,48,14,Completed,
+AP006134,15 Feb 14,13,regular,Round 13,Albert Reserve,St Pauls,4,4,1,1,3,4,38,38,Completed,
+pending-ap006-r13-bltc-bye,15 Feb 14,13,regular,Round 13,BLTC,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP006141,22 Feb 14,14,regular,Round 14,BLTC,Centenary Park,2,6,2,2,4,5,38,43,Completed,
+AP006143,22 Feb 14,14,regular,Round 14,Hawthorn,Albert Reserve,7,1,3,1,6,2,42,21,Completed,
+AP006144,22 Feb 14,14,regular,Round 14,St Pauls,Clarinda,8,0,4,0,8,0,48,13,Completed,
+pending-ap006-r14-kings-park-bye,22 Feb 14,14,regular,Round 14,Kings Park,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP006301,,16,semi_final,Semi-final,Centenary Park,St Pauls,7,1,3,1,6,3,45,37,Completed,
+AP006302,,16,semi_final,Semi-final,Albert Reserve,Hawthorn,7,1,3,1,6,4,51,48,Completed,
+AP006311,,16,semi_final,Semi-final,St Pauls,Albert Reserve,1.5,6.5,1,2,3,5,37,42,Completed,
+AP006321,,17,grand_final,Grand final · TROLS entry 2,Centenary Park,Albert Reserve,8,0,4,0,8,1,53,35,Completed,

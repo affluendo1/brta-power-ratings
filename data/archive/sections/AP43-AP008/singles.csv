@@ -1,0 +1,145 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP008031,06 Nov 21,3,Elsternwick Park,Carmelite,No. 1,Rich Buchanan,Josh Kempin,Josh Kempin,7-8,7,8,0,1,Completed,true,false,false
+AP008031,06 Nov 21,3,Elsternwick Park,Carmelite,No. 2,Simon Corrie,Ryan Sweeney,Ryan Sweeney,4-8,4,8,0,1,Completed,true,false,false
+AP008031,06 Nov 21,3,Elsternwick Park,Carmelite,No. 3,Cameron Thomson,Ashton Arms,Ashton Arms,5-8,5,8,0,1,Completed,true,false,false
+AP008031,06 Nov 21,3,Elsternwick Park,Carmelite,No. 4,Joe Barr,Angus Leckie,Joe Barr,8-3,8,3,1,0,Completed,true,false,false
+AP008032,06 Nov 21,3,East Malvern,St Anthony's,No. 1,Paul Tamburro,Shun Konishi,Paul Tamburro,8-1,8,1,1,0,Completed,true,false,true
+AP008032,06 Nov 21,3,East Malvern,St Anthony's,No. 2,Greg Irvine,Joseph Obsioma,Joseph Obsioma,7-8,7,8,0,1,Completed,true,false,false
+AP008032,06 Nov 21,3,East Malvern,St Anthony's,No. 3,Heath Poustie,Ray Tesoriero,Heath Poustie,8-2,8,2,1,0,Completed,true,false,false
+AP008032,06 Nov 21,3,East Malvern,St Anthony's,No. 4,Scott Hill,Cam Wilkinson,Scott Hill,8-3,8,3,1,0,Completed,true,true,false
+AP008034,06 Nov 21,3,Ormond,Maccabi,No. 1,Eduardo Dominguez,Ben Pollak,Eduardo Dominguez,8-1,8,1,1,0,Completed,true,false,false
+AP008034,06 Nov 21,3,Ormond,Maccabi,No. 2,Steve Gelagin,Joel Rabinov,Steve Gelagin,8-5,8,5,1,0,Completed,true,false,false
+AP008034,06 Nov 21,3,Ormond,Maccabi,No. 3,Andrew Lipson,David Kenley,David Kenley,5-8,5,8,0,1,Completed,true,false,false
+AP008034,06 Nov 21,3,Ormond,Maccabi,No. 4,Michael Hudson,Darren Seymour,Michael Hudson,8-5,8,5,1,0,Completed,true,false,false
+AP008041,13 Nov 21,4,Maccabi,Elsternwick Park,No. 1,Ben Pollak,Rich Buchanan,Ben Pollak,8-7,8,7,1,0,Completed,true,false,false
+AP008041,13 Nov 21,4,Maccabi,Elsternwick Park,No. 2,Joel Rabinov,Simon Corrie,Joel Rabinov,8-5,8,5,1,0,Completed,true,false,false
+AP008041,13 Nov 21,4,Maccabi,Elsternwick Park,No. 3,David Kenley,Cameron Thomson,David Kenley,8-0,8,0,1,0,Completed,true,false,false
+AP008041,13 Nov 21,4,Maccabi,Elsternwick Park,No. 4,Darren Seymour,Joe Barr,Darren Seymour,8-6,8,6,1,0,Completed,true,false,false
+AP008042,13 Nov 21,4,Carmelite,East Malvern,No. 1,Josh Kempin,Greg Irvine,Josh Kempin,8-3,8,3,1,0,Completed,true,false,false
+AP008042,13 Nov 21,4,Carmelite,East Malvern,No. 2,Ryan Sweeney,Heath Poustie,Heath Poustie,6-8,6,8,0,1,Completed,true,false,false
+AP008042,13 Nov 21,4,Carmelite,East Malvern,No. 3,Darcy Mahotta,Chris Woods,Darcy Mahotta,8-6,8,6,1,0,Completed,true,false,false
+AP008042,13 Nov 21,4,Carmelite,East Malvern,No. 4,Ashton Arms,Rajat Dang,Ashton Arms,8-7,8,7,1,0,Completed,true,false,true
+AP008052,20 Nov 21,5,St Anthony's,Carmelite,No. 1,Ray Tesoriero,Darcy Mahotta,Ray Tesoriero,8-2,8,2,1,0,Completed,true,false,false
+AP008052,20 Nov 21,5,St Anthony's,Carmelite,No. 2,Cam Wilkinson,Ashton Arms,Ashton Arms,5-8,5,8,0,1,Completed,true,false,false
+AP008052,20 Nov 21,5,St Anthony's,Carmelite,No. 3,Chris Doherty,Angus Leckie,Chris Doherty,8-7,8,7,1,0,Completed,true,false,false
+AP008052,20 Nov 21,5,St Anthony's,Carmelite,No. 4,Pat Madafferi,Joshua McKenzie,Joshua McKenzie,6-8,6,8,0,1,Completed,true,false,true
+AP008053,20 Nov 21,5,Maccabi,BLTC,No. 1,Ben Pollak,Lochlan Friedrich,Ben Pollak,8-3,8,3,1,0,Completed,true,false,false
+AP008053,20 Nov 21,5,Maccabi,BLTC,No. 2,Joel Rabinov,James Dossan,Joel Rabinov,8-6,8,6,1,0,Completed,true,false,false
+AP008053,20 Nov 21,5,Maccabi,BLTC,No. 3,Errol Dorfan,Bashir Raichi,Bashir Raichi,6-8,6,8,0,1,Completed,true,false,false
+AP008053,20 Nov 21,5,Maccabi,BLTC,No. 4,Stephen Kleid,Oli Klima,Oli Klima,6-8,6,8,0,1,Completed,true,true,false
+AP008054,20 Nov 21,5,Elsternwick Park,East Malvern,No. 1,Rich Buchanan,Martin Hill,Rich Buchanan,8-1,8,1,1,0,Completed,true,false,false
+AP008054,20 Nov 21,5,Elsternwick Park,East Malvern,No. 2,Simon Corrie,Greg Irvine,Simon Corrie,8-0,8,0,1,0,Completed,true,false,false
+AP008054,20 Nov 21,5,Elsternwick Park,East Malvern,No. 3,Cameron Thomson,Heath Poustie,Heath Poustie,3-8,3,8,0,1,Completed,true,false,false
+AP008054,20 Nov 21,5,Elsternwick Park,East Malvern,No. 4,Joe Barr,Faran Mazloomi,Joe Barr,8-3,8,3,1,0,Completed,true,false,true
+AP008062,27 Nov 21,6,Ormond,Elsternwick Park,No. 1,Nathan McCracken,Roshen Singh,Nathan McCracken,8-6,8,6,1,0,Completed,true,false,true
+AP008062,27 Nov 21,6,Ormond,Elsternwick Park,No. 2,Steve Gelagin,Simon Corrie,Steve Gelagin,8-2,8,2,1,0,Completed,true,false,false
+AP008062,27 Nov 21,6,Ormond,Elsternwick Park,No. 3,Michael Hudson,Joe Barr,Joe Barr,5-8,5,8,0,1,Completed,true,false,false
+AP008062,27 Nov 21,6,Ormond,Elsternwick Park,No. 4,Rivka Garson,Ian Cauldwell,Ian Cauldwell,5-8,5,8,0,1,Completed,true,true,true
+AP008063,27 Nov 21,6,Carmelite,Maccabi,No. 1,Josh Kempin,Joel Rabinov,Josh Kempin,8-2,8,2,1,0,Completed,true,false,false
+AP008063,27 Nov 21,6,Carmelite,Maccabi,No. 2,Ryan Sweeney,Mor Dahan,Mor Dahan,2-8,2,8,0,1,Completed,true,false,true
+AP008063,27 Nov 21,6,Carmelite,Maccabi,No. 3,Darcy Mahotta,Stephen Fleid,Darcy Mahotta,8-3,8,3,1,0,Completed,true,false,true
+AP008063,27 Nov 21,6,Carmelite,Maccabi,No. 4,Angus Leckie,Alan Datt,Angus Leckie,8-2,8,2,1,0,Completed,true,false,true
+AP008064,27 Nov 21,6,BLTC,St Anthony's,No. 1,Lochlan Friedrich,Joseph Obsioma,Joseph Obsioma,2-8,2,8,0,1,Completed,true,false,false
+AP008064,27 Nov 21,6,BLTC,St Anthony's,No. 2,James Dossan,Ray Tesoriero,James Dossan,8-7,8,7,1,0,Completed,true,false,false
+AP008064,27 Nov 21,6,BLTC,St Anthony's,No. 3,Oli Klima,Cam Wilkinson,Oli Klima,8-5,8,5,1,0,Completed,true,false,false
+AP008064,27 Nov 21,6,BLTC,St Anthony's,No. 4,Emerson Schillaci,Arthur Asimenias,Arthur Asimenias,3-8,3,8,0,1,Completed,true,false,true
+AP008072,04 Dec 21,7,East Malvern,Ormond,No. 1,Martin Hill,Steve Gelagin,Steve Gelagin,3-8,3,8,0,1,Completed,true,false,false
+AP008072,04 Dec 21,7,East Malvern,Ormond,No. 2,Heath Poustie,Daniel Olshansky,Heath Poustie,8-4,8,4,1,0,Completed,true,false,true
+AP008072,04 Dec 21,7,East Malvern,Ormond,No. 3,Chris Woods,Byron Gelagin,Chris Woods,8-7,8,7,1,0,Completed,true,false,false
+AP008072,04 Dec 21,7,East Malvern,Ormond,No. 4,Mark Patrick,Michael Hudson,Michael Hudson,0-8,0,8,0,1,Completed,true,true,false
+AP008073,04 Dec 21,7,St Anthony's,Maccabi,No. 1,Joseph Obsioma,Joel Rabinov,Joseph Obsioma,8-2,8,2,1,0,Completed,true,false,false
+AP008073,04 Dec 21,7,St Anthony's,Maccabi,No. 2,Ray Tesoriero,David Kenley,Ray Tesoriero,8-1,8,1,1,0,Completed,true,false,false
+AP008073,04 Dec 21,7,St Anthony's,Maccabi,No. 3,Chris Doherty,Stephen Fleid,Stephen Fleid,4-8,4,8,0,1,Completed,true,false,true
+AP008073,04 Dec 21,7,St Anthony's,Maccabi,No. 4,Pat Madafferi,Miguel Donnenfeld,Pat Madafferi,8-2,8,2,1,0,Completed,true,false,true
+AP008074,04 Dec 21,7,Carmelite,BLTC,No. 1,Josh Kempin,James Dossan,Josh Kempin,8-3,8,3,1,0,Completed,true,false,false
+AP008074,04 Dec 21,7,Carmelite,BLTC,No. 2,Darcy Mahotta,Bashir Raichi,Bashir Raichi,6-8,6,8,0,1,Completed,true,false,false
+AP008074,04 Dec 21,7,Carmelite,BLTC,No. 3,Ashton Arms,Oli Klima,Oli Klima,4-8,4,8,0,1,Completed,true,false,false
+AP008074,04 Dec 21,7,Carmelite,BLTC,No. 4,Angus Leckie,Emerson Schillaci,Angus Leckie,8-5,8,5,1,0,Completed,true,false,false
+AP008081,11 Dec 21,8,BLTC,Elsternwick Park,No. 1,Lochlan Friedrich,Simon Corrie,Simon Corrie,4-8,4,8,0,1,Completed,true,false,false
+AP008081,11 Dec 21,8,BLTC,Elsternwick Park,No. 2,James Dossan,[Unnamed emergency — TROLS AP008081 away code 2],James Dossan,8-0,8,0,1,0,Completed,false,false,true
+AP008081,11 Dec 21,8,BLTC,Elsternwick Park,No. 3,Bashir Raichi,Cameron Thomson,Bashir Raichi,8-7,8,7,1,0,Completed,true,false,false
+AP008081,11 Dec 21,8,BLTC,Elsternwick Park,No. 4,Emerson Schillaci,Ian Cauldwell,Emerson Schillaci,8-2,8,2,1,0,Completed,true,false,true
+AP008082,11 Dec 21,8,Maccabi,East Malvern,No. 1,Ben Pollak,Shaun Lusby,Ben Pollak,8-3,8,3,1,0,Completed,true,false,true
+AP008082,11 Dec 21,8,Maccabi,East Malvern,No. 2,Joel Rabinov,Greg Irvine,Greg Irvine,1-8,1,8,0,1,Completed,true,false,false
+AP008082,11 Dec 21,8,Maccabi,East Malvern,No. 3,Adam Rushford,Heath Poustie,Adam Rushford,8-3,8,3,1,0,Completed,true,true,false
+AP008082,11 Dec 21,8,Maccabi,East Malvern,No. 4,Jonny Kaplan,Chris Woods,Chris Woods,4-8,4,8,0,1,Completed,true,true,false
+AP008084,11 Dec 21,8,St Anthony's,Ormond,No. 1,Joseph Obsioma,Nathan McCracken,Nathan McCracken,5-8,5,8,0,1,Completed,true,false,false
+AP008084,11 Dec 21,8,St Anthony's,Ormond,No. 2,Jim Harrison,Steve Gelagin,Steve Gelagin,1-8,1,8,0,1,Completed,true,false,false
+AP008084,11 Dec 21,8,St Anthony's,Ormond,No. 3,Cam Wilkinson,Daniel Olshansky,Daniel Olshansky,1-8,1,8,0,1,Completed,true,false,true
+AP008084,11 Dec 21,8,St Anthony's,Ormond,No. 4,Pat Madafferi,Byron Gelagin,Pat Madafferi,8-2,8,2,1,0,Completed,true,false,false
+AP008092,29 Jan 22,9,East Malvern,BLTC,No. 1,Martin Hill,Lochlan Friedrich,Lochlan Friedrich,4-8,4,8,0,1,Completed,true,false,false
+AP008092,29 Jan 22,9,East Malvern,BLTC,No. 2,Greg Irvine,James Dossan,Greg Irvine,8-7,8,7,1,0,Completed,true,false,false
+AP008092,29 Jan 22,9,East Malvern,BLTC,No. 3,Heath Poustie,Bashir Raichi,Heath Poustie,8-3,8,3,1,0,Completed,true,false,false
+AP008092,29 Jan 22,9,East Malvern,BLTC,No. 4,Chris Woods,Emerson Schillaci,Chris Woods,8-5,8,5,1,0,Completed,true,false,false
+AP008094,29 Jan 22,9,Ormond,Carmelite,No. 1,Eduardo Dominguez,Ryan Sweeney,Eduardo Dominguez,8-5,8,5,1,0,Completed,true,false,false
+AP008094,29 Jan 22,9,Ormond,Carmelite,No. 2,Andrew Lipson,Angus Leckie,Andrew Lipson,8-0,8,0,1,0,Completed,true,false,false
+AP008094,29 Jan 22,9,Ormond,Carmelite,No. 3,Daniel Olshansky,Gibson Sinclair,Daniel Olshansky,8-5,8,5,1,0,Completed,true,true,true
+AP008094,29 Jan 22,9,Ormond,Carmelite,No. 4,Byron Gelagin,Autoinne Monfils,Byron Gelagin,8-1,8,1,1,0,Completed,true,false,true
+AP008102,05 Feb 22,10,St Anthony's,East Malvern,No. 1,Joseph Obsioma,Paul Tamburro,Joseph Obsioma,8-6,8,6,1,0,Completed,true,false,false
+AP008102,05 Feb 22,10,St Anthony's,East Malvern,No. 2,Jim Harrison,Greg Irvine,Greg Irvine,0-8,0,8,0,1,Completed,true,false,false
+AP008102,05 Feb 22,10,St Anthony's,East Malvern,No. 3,Cam Wilkinson,Heath Poustie,Heath Poustie,2-8,2,8,0,1,Completed,true,false,false
+AP008102,05 Feb 22,10,St Anthony's,East Malvern,No. 4,Chris Doherty,Chris Woods,Chris Woods,1-8,1,8,0,1,Completed,true,false,false
+AP008104,05 Feb 22,10,Maccabi,Ormond,No. 1,Ben Pollak,Nathan McCracken,Nathan McCracken,7-8,7,8,0,1,Completed,true,false,false
+AP008104,05 Feb 22,10,Maccabi,Ormond,No. 2,Joel Rabinov,Steve Gelagin,Steve Gelagin,2-8,2,8,0,1,Completed,true,false,false
+AP008104,05 Feb 22,10,Maccabi,Ormond,No. 3,David Kenley,Michael Hudson,David Kenley,8-5,8,5,1,0,Completed,true,false,false
+AP008104,05 Feb 22,10,Maccabi,Ormond,No. 4,Paul Koltun,Rivka Garson,Paul Koltun,8-1,8,1,1,0,Completed,true,true,true
+AP008111,12 Feb 22,11,Elsternwick Park,Maccabi,No. 1,Matt Anstee,Ben Pollak,Ben Pollak,2-8,2,8,0,1,Completed,true,false,false
+AP008111,12 Feb 22,11,Elsternwick Park,Maccabi,No. 2,Simon Corrie,Daniel Goodrich,Daniel Goodrich,5-8,5,8,0,1,Completed,true,false,false
+AP008111,12 Feb 22,11,Elsternwick Park,Maccabi,No. 3,Cameron Thomson,Errol Dorfan,Errol Dorfan,2-8,2,8,0,1,Completed,true,false,false
+AP008111,12 Feb 22,11,Elsternwick Park,Maccabi,No. 4,Joe Barr,Adam Rapoport,Joe Barr,8-3,8,3,1,0,Completed,true,false,true
+AP008112,12 Feb 22,11,East Malvern,Carmelite,No. 1,Paul Tamburro,Josh Kempin,Josh Kempin,6-8,6,8,0,1,Completed,true,false,false
+AP008112,12 Feb 22,11,East Malvern,Carmelite,No. 2,Greg Irvine,Ashton Arms,Ashton Arms,1-8,1,8,0,1,Completed,true,false,false
+AP008112,12 Feb 22,11,East Malvern,Carmelite,No. 3,Heath Poustie,Angus Leckie,Heath Poustie,8-7,8,7,1,0,Completed,true,false,false
+AP008112,12 Feb 22,11,East Malvern,Carmelite,No. 4,Chris Woods,Gibson Sinclair,Gibson Sinclair,7-8,7,8,0,1,Completed,true,false,true
+AP008114,12 Feb 22,11,Ormond,BLTC,No. 1,Eduardo Dominguez,Lochlan Friedrich,Eduardo Dominguez,8-1,8,1,1,0,Completed,true,false,false
+AP008114,12 Feb 22,11,Ormond,BLTC,No. 2,Nathan McCracken,James Dossan,Nathan McCracken,8-4,8,4,1,0,Completed,true,false,false
+AP008114,12 Feb 22,11,Ormond,BLTC,No. 3,Andrew Lipson,Bashir Raichi,Bashir Raichi,3-8,3,8,0,1,Completed,true,false,false
+AP008114,12 Feb 22,11,Ormond,BLTC,No. 4,Byron Gelagin,Emerson Schillaci,Emerson Schillaci,1-8,1,8,0,1,Completed,true,false,false
+AP008122,19 Feb 22,12,Carmelite,St Anthony's,No. 1,Josh Kempin,Vincent Macasa,Josh Kempin,8-4,8,4,1,0,Completed,true,false,true
+AP008122,19 Feb 22,12,Carmelite,St Anthony's,No. 2,Ryan Sweeney,Jim Harrison,Ryan Sweeney,8-2,8,2,1,0,Completed,true,false,false
+AP008122,19 Feb 22,12,Carmelite,St Anthony's,No. 3,Darcy Mahotta,Cam Wilkinson,Cam Wilkinson,5-8,5,8,0,1,Completed,true,false,false
+AP008122,19 Feb 22,12,Carmelite,St Anthony's,No. 4,Angus Leckie,Chris Doherty,Angus Leckie,8-2,8,2,1,0,Completed,true,false,false
+AP008123,19 Feb 22,12,BLTC,Maccabi,No. 1,Lochlan Friedrich,Ben Pollak,Ben Pollak,7-8,7,8,0,1,Completed,true,false,false
+AP008123,19 Feb 22,12,BLTC,Maccabi,No. 2,James Dossan,David Kenley,David Kenley,2-8,2,8,0,1,Completed,true,false,false
+AP008123,19 Feb 22,12,BLTC,Maccabi,No. 3,Bashir Raichi,Daniel Goodrich,Bashir Raichi,8-5,8,5,1,0,Completed,true,false,false
+AP008123,19 Feb 22,12,BLTC,Maccabi,No. 4,Emerson Schillaci,Errol Dorfan,Errol Dorfan,3-8,3,8,0,1,Completed,true,false,false
+AP008124,19 Feb 22,12,East Malvern,Elsternwick Park,No. 1,Paul Tamburro,Simon Corrie,Paul Tamburro,8-1,8,1,1,0,Completed,true,false,false
+AP008124,19 Feb 22,12,East Malvern,Elsternwick Park,No. 2,Greg Irvine,Joe Barr,Greg Irvine,8-6,8,6,1,0,Completed,true,false,false
+AP008124,19 Feb 22,12,East Malvern,Elsternwick Park,No. 3,Chris Woods,Cameron Thomson,Chris Woods,8-5,8,5,1,0,Completed,true,false,false
+AP008124,19 Feb 22,12,East Malvern,Elsternwick Park,No. 4,Rajat Dang,Noah Mies,Rajat Dang,8-3,8,3,1,0,Completed,true,true,true
+AP008132,26 Feb 22,13,Elsternwick Park,Ormond,No. 1,Simon Corrie,Eduardo Dominguez,Eduardo Dominguez,3-8,3,8,0,1,Completed,true,false,false
+AP008132,26 Feb 22,13,Elsternwick Park,Ormond,No. 2,Joe Barr,Steve Gelagin,Steve Gelagin,4-8,4,8,0,1,Completed,true,false,false
+AP008132,26 Feb 22,13,Elsternwick Park,Ormond,No. 3,Mark Loosschilder,Michael Hudson,Mark Loosschilder,8-6,8,6,1,0,Completed,true,true,false
+AP008132,26 Feb 22,13,Elsternwick Park,Ormond,No. 4,Noah Mies,Lucas Nenke,Lucas Nenke,5-8,5,8,0,1,Completed,true,true,true
+AP008133,26 Feb 22,13,Maccabi,Carmelite,No. 1,Ben Pollak,Ryan Sweeney,Ben Pollak,8-3,8,3,1,0,Completed,true,false,false
+AP008133,26 Feb 22,13,Maccabi,Carmelite,No. 2,David Kenley,Darcy Mahotta,David Kenley,8-2,8,2,1,0,Completed,true,false,false
+AP008133,26 Feb 22,13,Maccabi,Carmelite,No. 3,Daniel Goodrich,Angus Leckie,Angus Leckie,4-8,4,8,0,1,Completed,true,false,false
+AP008133,26 Feb 22,13,Maccabi,Carmelite,No. 4,Errol Dorfan,Joshua McKenzie,Errol Dorfan,8-4,8,4,1,0,Completed,true,false,true
+AP008134,26 Feb 22,13,St Anthony's,BLTC,No. 1,Joseph Obsioma,Lochlan Friedrich,Lochlan Friedrich,5-8,5,8,0,1,Completed,true,false,false
+AP008134,26 Feb 22,13,St Anthony's,BLTC,No. 2,Ray Tesoriero,Bashir Raichi,Ray Tesoriero,8-7,8,7,1,0,Completed,true,false,false
+AP008134,26 Feb 22,13,St Anthony's,BLTC,No. 3,Jim Harrison,Emerson Schillaci,Emerson Schillaci,7-8,7,8,0,1,Completed,true,false,false
+AP008134,26 Feb 22,13,St Anthony's,BLTC,No. 4,Pat Madafferi,Harrison Tzounos,Pat Madafferi,8-2,8,2,1,0,Completed,true,false,true
+AP008142,05 Mar 22,14,Ormond,East Malvern,No. 1,Eduardo Dominguez,Giovanni Vitari,Eduardo Dominguez,8-4,8,4,1,0,Completed,true,false,true
+AP008142,05 Mar 22,14,Ormond,East Malvern,No. 2,Nathan McCracken,Alister Borger,Nathan McCracken,8-1,8,1,1,0,Completed,true,false,true
+AP008142,05 Mar 22,14,Ormond,East Malvern,No. 3,Steve Gelagin,Greg Irvine,Steve Gelagin,8-6,8,6,1,0,Completed,true,false,false
+AP008142,05 Mar 22,14,Ormond,East Malvern,No. 4,Michael Hudson,Heath Poustie,Heath Poustie,1-8,1,8,0,1,Completed,true,false,false
+AP008143,05 Mar 22,14,Maccabi,St Anthony's,No. 1,Ben Pollak,Ray Tesoriero,Ben Pollak,8-2,8,2,1,0,Completed,true,false,false
+AP008143,05 Mar 22,14,Maccabi,St Anthony's,No. 2,Joel Rabinov,Jim Harrison,Joel Rabinov,8-2,8,2,1,0,Completed,true,false,false
+AP008143,05 Mar 22,14,Maccabi,St Anthony's,No. 3,Daniel Goodrich,Cam Wilkinson,Cam Wilkinson,4-8,4,8,0,1,Completed,true,false,false
+AP008143,05 Mar 22,14,Maccabi,St Anthony's,No. 4,Errol Dorfan,Pat Madafferi,Errol Dorfan,8-0,8,0,1,0,Completed,true,false,false
+AP008144,05 Mar 22,14,BLTC,Carmelite,No. 1,Lochlan Friedrich,Ryan Sweeney,Lochlan Friedrich,8-7,8,7,1,0,Completed,true,false,false
+AP008144,05 Mar 22,14,BLTC,Carmelite,No. 2,James Dossan,Darcy Mahotta,Darcy Mahotta,5-8,5,8,0,1,Completed,true,false,false
+AP008144,05 Mar 22,14,BLTC,Carmelite,No. 3,Bashir Raichi,Ashton Arms,Bashir Raichi,8-5,8,5,1,0,Completed,true,false,false
+AP008144,05 Mar 22,14,BLTC,Carmelite,No. 4,Emerson Schillaci,Angus Leckie,Angus Leckie,4-8,4,8,0,1,Completed,true,false,false
+AP008301,,16,Carmelite,East Malvern,No. 1,Josh Kempin,Martin Hill,Josh Kempin,8-3,8,3,1,0,Completed,true,false,false
+AP008301,,16,Carmelite,East Malvern,No. 2,Darcy Mahotta,Paul Tamburro,Paul Tamburro,7-8,7,8,0,1,Completed,true,false,false
+AP008301,,16,Carmelite,East Malvern,No. 3,Ashton Arms,Greg Irvine,Ashton Arms,8-0,8,0,1,0,Completed,true,false,false
+AP008301,,16,Carmelite,East Malvern,No. 4,Angus Leckie,Heath Poustie,Heath Poustie,3-8,3,8,0,1,Completed,true,false,false
+AP008302,,16,Ormond,Maccabi,No. 1,Eduardo Dominguez,Ben Pollak,Eduardo Dominguez,8-1,8,1,1,0,Completed,true,false,false
+AP008302,,16,Ormond,Maccabi,No. 2,Nathan McCracken,Joel Rabinov,Nathan McCracken,8-7,8,7,1,0,Completed,true,false,false
+AP008302,,16,Ormond,Maccabi,No. 3,Steve Gelagin,David Kenley,David Kenley,4-8,4,8,0,1,Completed,true,false,false
+AP008302,,16,Ormond,Maccabi,No. 4,Andrew Lipson,Daniel Goodrich,Andrew Lipson,8-2,8,2,1,0,Completed,true,false,false
+AP008321,,17,Carmelite,Ormond,No. 1,Josh Kempin,Eduardo Dominguez,Eduardo Dominguez,5-8,5,8,0,1,Completed,true,false,false
+AP008321,,17,Carmelite,Ormond,No. 2,Ryan Sweeney,Nathan McCracken,Nathan McCracken,2-8,2,8,0,1,Completed,true,false,false
+AP008321,,17,Carmelite,Ormond,No. 3,Ashton Arms,Steve Gelagin,Ashton Arms,8-4,8,4,1,0,Completed,true,false,false
+AP008321,,17,Carmelite,Ormond,No. 4,Angus Leckie,Michael Hudson,Angus Leckie,8-1,8,1,1,0,Completed,true,false,false

@@ -1,0 +1,97 @@
+{
+  "asset_id": "AP22-AP034",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 10/11",
+  "season_id": "AP22",
+  "season_label": "Summer 10/11",
+  "source_section_code": "AP034",
+  "section_label": "Mens S/D 6",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Bentleigh Rec",
+      "wins": 0,
+      "points": 91,
+      "percentage": 203.81,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Mordialloc 2",
+      "wins": 0,
+      "points": 82,
+      "percentage": 143.13,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Mordialloc 1",
+      "wins": 0,
+      "points": 73.5,
+      "percentage": 122.74,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Maccabi",
+      "wins": 0,
+      "points": 63.5,
+      "percentage": 108.24,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Dendy Park 1",
+      "wins": 0,
+      "points": 55,
+      "percentage": 97.13,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Dendy Park 2",
+      "wins": 0,
+      "points": 47,
+      "percentage": 88.75,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Glen Huntly",
+      "wins": 0,
+      "points": 8,
+      "percentage": 33.01,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP22-AP034",
+  "fixtures": 60,
+  "completed_fixtures": 37,
+  "draw_fixtures": 4,
+  "singles_rubbers": 144,
+  "doubles_rubbers": 70,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP034321 doubles No. 2: '6-2 1-2'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

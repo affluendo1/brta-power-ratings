@@ -1,0 +1,143 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP008014,05 Oct 24,1,Langwarrin,Highmoor Uniting,No. 1,Jack Smith,Glenn Collins,Glenn Collins,4-5,4,5,0,1,Completed,true,false,false
+AP008014,05 Oct 24,1,Langwarrin,Highmoor Uniting,No. 2,Ben Kowald,Nick Martin,Ben Kowald,7-5,7,5,1,0,Completed,true,false,false
+AP008014,05 Oct 24,1,Langwarrin,Highmoor Uniting,No. 3,Meho Cordalija,Brett Collins,,4-3,4,3,1,0,Unfinished,false,false,false
+AP008014,05 Oct 24,1,Langwarrin,Highmoor Uniting,No. 4,Matthew Belsten,Josh Glassock,Josh Glassock,3-8,3,8,0,1,Completed,true,false,false
+AP008021,12 Oct 24,2,Highmoor Uniting,BLTC White,No. 1,Jason Mahmoud,Kensei Golec,Jason Mahmoud,8-7,8,7,1,0,Completed,true,false,false
+AP008021,12 Oct 24,2,Highmoor Uniting,BLTC White,No. 2,Glenn Collins,Dan Brown,Glenn Collins,8-2,8,2,1,0,Completed,true,false,false
+AP008021,12 Oct 24,2,Highmoor Uniting,BLTC White,No. 3,Nick Martin,Sinbad Kozelski,Nick Martin,8-6,8,6,1,0,Completed,true,false,false
+AP008021,12 Oct 24,2,Highmoor Uniting,BLTC White,No. 4,Leo McInerney,Lazar Luluburic,Leo McInerney,8-4,8,4,1,0,Completed,true,false,true
+AP008023,12 Oct 24,2,Kooyong,Coatesville,No. 1,Nicholas Collins,Michael Gershenzon,Nicholas Collins,8-3,8,3,1,0,Completed,true,false,false
+AP008023,12 Oct 24,2,Kooyong,Coatesville,No. 2,Nicky Li,Sam Basman,Nicky Li,8-2,8,2,1,0,Completed,true,false,false
+AP008023,12 Oct 24,2,Kooyong,Coatesville,No. 3,Ron Griffiths,Alex Gershenzon,Alex Gershenzon,3-8,3,8,0,1,Completed,true,false,true
+AP008023,12 Oct 24,2,Kooyong,Coatesville,No. 4,Phillip Walker,Alex Daraganov,Phillip Walker,8-3,8,3,1,0,Completed,true,false,true
+AP008024,12 Oct 24,2,Hawthorn BCC,Langwarrin,No. 1,Ryan Duckett,Adrian Lotca,Ryan Duckett,8-5,8,5,1,0,Completed,true,true,false
+AP008024,12 Oct 24,2,Hawthorn BCC,Langwarrin,No. 2,Paul Wu,Jack Smith,Paul Wu,8-2,8,2,1,0,Completed,true,false,false
+AP008024,12 Oct 24,2,Hawthorn BCC,Langwarrin,No. 3,Nathan Pererira,Ben Kowald,Nathan Pererira,8-3,8,3,1,0,Completed,true,false,false
+AP008024,12 Oct 24,2,Hawthorn BCC,Langwarrin,No. 4,Matt Campen,Meho Cordalija,Meho Cordalija,5-8,5,8,0,1,Completed,true,true,false
+AP008031,19 Oct 24,3,BLTC White,Hawthorn BCC,No. 1,Kensei Golec,Li Yeoh,Kensei Golec,8-7,8,7,1,0,Completed,true,false,false
+AP008031,19 Oct 24,3,BLTC White,Hawthorn BCC,No. 2,Jensen Srisuwan,Paul Wu,Jensen Srisuwan,8-4,8,4,1,0,Completed,true,false,false
+AP008031,19 Oct 24,3,BLTC White,Hawthorn BCC,No. 3,Lucas Sleep,Nathan Pererira,Lucas Sleep,8-3,8,3,1,0,Completed,true,false,false
+AP008031,19 Oct 24,3,BLTC White,Hawthorn BCC,No. 4,Dan Brown,James Damin,Dan Brown,8-0,8,0,1,0,Completed,true,false,false
+AP008032,19 Oct 24,3,Tennis World,Highmoor Uniting,No. 1,Byron Tang,Jason Mahmoud,Byron Tang,8-7,8,7,1,0,Completed,true,false,false
+AP008032,19 Oct 24,3,Tennis World,Highmoor Uniting,No. 2,Vitas Rernglertpricha,Nick Martin,Nick Martin,5-8,5,8,0,1,Completed,true,false,false
+AP008032,19 Oct 24,3,Tennis World,Highmoor Uniting,No. 3,Jacob Hayton,Brett Collins,Jacob Hayton,8-5,8,5,1,0,Completed,true,false,false
+AP008032,19 Oct 24,3,Tennis World,Highmoor Uniting,No. 4,Wayne Smith,Josh Glassock,Wayne Smith,8-4,8,4,1,0,Completed,true,false,false
+AP008034,19 Oct 24,3,Langwarrin,Kooyong,No. 1,Adrian Lotca,[Unnamed emergency — TROLS AP008034 away code 1],Adrian Lotca,8-0,8,0,1,0,Completed,false,false,true
+AP008034,19 Oct 24,3,Langwarrin,Kooyong,No. 2,Jack Smith,Nicky Li,Nicky Li,5-8,5,8,0,1,Completed,true,false,false
+AP008034,19 Oct 24,3,Langwarrin,Kooyong,No. 3,Ben Kowald,Ryan Abotomey,Ryan Abotomey,5-8,5,8,0,1,Completed,true,false,false
+AP008034,19 Oct 24,3,Langwarrin,Kooyong,No. 4,Matthew Belsten,Ron Griffiths,Matthew Belsten,8-0,8,0,1,0,Completed,true,false,false
+AP008041,26 Oct 24,4,Kooyong,BLTC White,No. 1,Matthew Sweetnam,Lucas Sleep,Lucas Sleep,1-8,1,8,0,1,Completed,true,false,false
+AP008041,26 Oct 24,4,Kooyong,BLTC White,No. 2,Ryan Abotomey,Kevin Wang,Kevin Wang,1-8,1,8,0,1,Completed,true,false,false
+AP008041,26 Oct 24,4,Kooyong,BLTC White,No. 3,Ron Griffiths,Dan Brown,Dan Brown,0-8,0,8,0,1,Completed,true,false,false
+AP008041,26 Oct 24,4,Kooyong,BLTC White,No. 4,Phillip Walker,Sinbad Kozelski,Sinbad Kozelski,2-8,2,8,0,1,Completed,true,false,false
+AP008042,26 Oct 24,4,Hawthorn BCC,Tennis World,No. 1,Li Yeoh,Byron Tang,Li Yeoh,8-2,8,2,1,0,Completed,true,false,false
+AP008042,26 Oct 24,4,Hawthorn BCC,Tennis World,No. 2,Paul Wu,Vitas Rernglertpricha,Paul Wu,8-0,8,0,1,0,Completed,true,false,false
+AP008042,26 Oct 24,4,Hawthorn BCC,Tennis World,No. 3,Nathan Pererira,Jacob Hayton,Nathan Pererira,8-7,8,7,1,0,Completed,true,false,false
+AP008042,26 Oct 24,4,Hawthorn BCC,Tennis World,No. 4,Mark Lazarovits,Wayne Smith,Wayne Smith,2-8,2,8,0,1,Completed,true,false,false
+AP008043,26 Oct 24,4,Highmoor Uniting,Coatesville,No. 1,Jason Mahmoud,Michael Gershenzon,Jason Mahmoud,8-4,8,4,1,0,Completed,true,false,false
+AP008043,26 Oct 24,4,Highmoor Uniting,Coatesville,No. 2,Glenn Collins,Sam Basman,Glenn Collins,8-3,8,3,1,0,Completed,true,false,false
+AP008043,26 Oct 24,4,Highmoor Uniting,Coatesville,No. 3,Brett Collins,Ashton Eikelis,Brett Collins,8-5,8,5,1,0,Completed,true,false,false
+AP008043,26 Oct 24,4,Highmoor Uniting,Coatesville,No. 4,Will Mahmoud,Joel Shnaider,Will Mahmoud,8-6,8,6,1,0,Completed,true,true,true
+AP008051,09 Nov 24,5,Coatesville,Langwarrin,No. 1,Michael Gershenzon,Jack Smith,Michael Gershenzon,8-3,8,3,1,0,Completed,true,false,false
+AP008051,09 Nov 24,5,Coatesville,Langwarrin,No. 2,Sam Basman,Ben Kowald,Ben Kowald,5-8,5,8,0,1,Completed,true,false,false
+AP008051,09 Nov 24,5,Coatesville,Langwarrin,No. 3,George Tsihitas,Meho Cordalija,Meho Cordalija,0-8,0,8,0,1,Completed,true,true,false
+AP008051,09 Nov 24,5,Coatesville,Langwarrin,No. 4,Joel Shnaider,Matthew Belsten,Matthew Belsten,4-8,4,8,0,1,Completed,true,true,false
+AP008052,09 Nov 24,5,Highmoor Uniting,Hawthorn BCC,No. 1,Glenn Collins,Li Yeoh,Li Yeoh,7-8,7,8,0,1,Completed,true,false,false
+AP008052,09 Nov 24,5,Highmoor Uniting,Hawthorn BCC,No. 2,Nick Martin,Paul Wu,Paul Wu,2-8,2,8,0,1,Completed,true,false,false
+AP008052,09 Nov 24,5,Highmoor Uniting,Hawthorn BCC,No. 3,Brett Collins,James Damin,James Damin,5-8,5,8,0,1,Completed,true,false,false
+AP008052,09 Nov 24,5,Highmoor Uniting,Hawthorn BCC,No. 4,Tony Sofo,Mark Lazarovits,Mark Lazarovits,6-8,6,8,0,1,Completed,true,true,false
+AP008054,09 Nov 24,5,BLTC White,Tennis World,No. 1,Jensen Srisuwan,Byron Tang,Byron Tang,3-8,3,8,0,1,Completed,true,false,false
+AP008054,09 Nov 24,5,BLTC White,Tennis World,No. 2,Lucas Sleep,Vitas Rernglertpricha,Lucas Sleep,8-0,8,0,1,0,Completed,true,false,false
+AP008054,09 Nov 24,5,BLTC White,Tennis World,No. 3,Kevin Wang,Jacob Hayton,Kevin Wang,8-1,8,1,1,0,Completed,true,false,false
+AP008054,09 Nov 24,5,BLTC White,Tennis World,No. 4,Sinbad Kozelski,Wayne Smith,Sinbad Kozelski,8-4,8,4,1,0,Completed,true,false,false
+AP008061,16 Nov 24,6,Tennis World,Coatesville,No. 1,Byron Tang,Michael Gershenzon,Byron Tang,8-5,8,5,1,0,Completed,true,false,false
+AP008061,16 Nov 24,6,Tennis World,Coatesville,No. 2,Vitas Rernglertpricha,Jordan Ireson,Vitas Rernglertpricha,8-4,8,4,1,0,Completed,true,false,false
+AP008061,16 Nov 24,6,Tennis World,Coatesville,No. 3,Jacob Hayton,Sam Basman,Sam Basman,3-8,3,8,0,1,Completed,true,false,false
+AP008061,16 Nov 24,6,Tennis World,Coatesville,No. 4,Wayne Smith,Joel Shnaider,Joel Shnaider,0-8,0,8,0,1,Completed,true,false,true
+AP008062,16 Nov 24,6,Langwarrin,BLTC White,No. 1,Jack Smith,Jensen Srisuwan,Jack Smith,8-6,8,6,1,0,Completed,true,false,false
+AP008062,16 Nov 24,6,Langwarrin,BLTC White,No. 2,Ben Kowald,Lucas Sleep,Lucas Sleep,4-8,4,8,0,1,Completed,true,false,false
+AP008062,16 Nov 24,6,Langwarrin,BLTC White,No. 3,Meho Cordalija,Kevin Wang,Kevin Wang,2-8,2,8,0,1,Completed,true,false,false
+AP008062,16 Nov 24,6,Langwarrin,BLTC White,No. 4,Matthew Belsten,Sinbad Kozelski,Sinbad Kozelski,4-8,4,8,0,1,Completed,true,false,false
+AP008063,16 Nov 24,6,Hawthorn BCC,Kooyong,No. 1,Li Yeoh,Nicholas Collins,Nicholas Collins,2-8,2,8,0,1,Completed,true,false,false
+AP008063,16 Nov 24,6,Hawthorn BCC,Kooyong,No. 2,Paul Wu,Kirk Mitchell,Paul Wu,8-0,8,0,1,0,Completed,true,false,true
+AP008063,16 Nov 24,6,Hawthorn BCC,Kooyong,No. 3,Nathan Pererira,Lysander Mitchell,Nathan Pererira,8-0,8,0,1,0,Completed,true,false,true
+AP008063,16 Nov 24,6,Hawthorn BCC,Kooyong,No. 4,Mark Lazarovits,Ryan Abotomey,Mark Lazarovits,8-0,8,0,1,0,Completed,true,false,false
+AP008072,23 Nov 24,7,Tennis World,Langwarrin,No. 1,Vitas Rernglertpricha,Jack Smith,Jack Smith,7-8,7,8,0,1,Completed,true,false,false
+AP008072,23 Nov 24,7,Tennis World,Langwarrin,No. 2,Jacob Hayton,Ben Kowald,Ben Kowald,2-8,2,8,0,1,Completed,true,false,false
+AP008072,23 Nov 24,7,Tennis World,Langwarrin,No. 3,Wayne Smith,Meho Cordalija,Meho Cordalija,5-8,5,8,0,1,Completed,true,false,false
+AP008072,23 Nov 24,7,Tennis World,Langwarrin,No. 4,Ben Lambell,Matthew Belsten,Ben Lambell,8-6,8,6,1,0,Completed,true,false,false
+AP008091,07 Dec 24,9,BLTC White,Highmoor Uniting,No. 1,Jensen Srisuwan,Jason Mahmoud,Jason Mahmoud,4-8,4,8,0,1,Completed,true,false,false
+AP008091,07 Dec 24,9,BLTC White,Highmoor Uniting,No. 2,Lucas Sleep,Brett Collins,Lucas Sleep,8-4,8,4,1,0,Completed,true,false,false
+AP008091,07 Dec 24,9,BLTC White,Highmoor Uniting,No. 3,Kevin Wang,Leo McInerney,Kevin Wang,8-6,8,6,1,0,Completed,true,false,false
+AP008091,07 Dec 24,9,BLTC White,Highmoor Uniting,No. 4,Dan Brown,Josh Glassock,Josh Glassock,5-8,5,8,0,1,Completed,true,false,false
+AP008093,07 Dec 24,9,Coatesville,Kooyong,No. 1,Michael Gershenzon,Nicholas Collins,Nicholas Collins,5-8,5,8,0,1,Completed,true,false,false
+AP008093,07 Dec 24,9,Coatesville,Kooyong,No. 2,Jordan Ireson,Nicky Li,Nicky Li,5-8,5,8,0,1,Completed,true,false,false
+AP008093,07 Dec 24,9,Coatesville,Kooyong,No. 3,Ashton Eikelis,Ryan Abotomey,Ryan Abotomey,3-8,3,8,0,1,Completed,true,false,false
+AP008093,07 Dec 24,9,Coatesville,Kooyong,No. 4,Daniel Foldvari,Kirk Mitchell,Kirk Mitchell,4-8,4,8,0,1,Completed,true,false,true
+AP008094,07 Dec 24,9,Langwarrin,Hawthorn BCC,No. 1,Jack Smith,Paul Wu,Jack Smith,8-5,8,5,1,0,Completed,true,false,false
+AP008094,07 Dec 24,9,Langwarrin,Hawthorn BCC,No. 2,Ben Kowald,Simon Currey,Ben Kowald,8-2,8,2,1,0,Completed,true,false,false
+AP008094,07 Dec 24,9,Langwarrin,Hawthorn BCC,No. 3,Meho Cordalija,Nathan Pererira,Nathan Pererira,6-8,6,8,0,1,Completed,true,false,false
+AP008094,07 Dec 24,9,Langwarrin,Hawthorn BCC,No. 4,Ryan Jamieson,Mark Lazarovits,Ryan Jamieson,8-5,8,5,1,0,Completed,true,true,false
+AP008101,14 Dec 24,10,Hawthorn BCC,BLTC White,No. 1,Li Yeoh,Alistair Cairns,Alistair Cairns,1-8,1,8,0,1,Completed,true,false,true
+AP008101,14 Dec 24,10,Hawthorn BCC,BLTC White,No. 2,Paul Wu,Jeremy Thai,Paul Wu,8-6,8,6,1,0,Completed,true,false,true
+AP008101,14 Dec 24,10,Hawthorn BCC,BLTC White,No. 3,Simon Currey,Willem Duncan,Simon Currey,8-7,8,7,1,0,Completed,true,false,true
+AP008101,14 Dec 24,10,Hawthorn BCC,BLTC White,No. 4,Mark Lazarovits,Dan Brown,Mark Lazarovits,8-2,8,2,1,0,Completed,true,false,false
+AP008102,14 Dec 24,10,Highmoor Uniting,Tennis World,No. 1,Jason Mahmoud,Byron Tang,Jason Mahmoud,8-6,8,6,1,0,Completed,true,false,false
+AP008102,14 Dec 24,10,Highmoor Uniting,Tennis World,No. 2,Glenn Collins,Vitas Rernglertpricha,Glenn Collins,8-5,8,5,1,0,Completed,true,false,false
+AP008102,14 Dec 24,10,Highmoor Uniting,Tennis World,No. 3,Nick Martin,Wayne Smith,Nick Martin,8-7,8,7,1,0,Completed,true,false,false
+AP008102,14 Dec 24,10,Highmoor Uniting,Tennis World,No. 4,Brett Collins,Ben Lambell,Brett Collins,8-3,8,3,1,0,Completed,true,false,false
+AP008104,14 Dec 24,10,Kooyong,Langwarrin,No. 1,Nicholas Collins,Jack Smith,Jack Smith,5-8,5,8,0,1,Completed,true,false,false
+AP008104,14 Dec 24,10,Kooyong,Langwarrin,No. 2,Tom Miller,Ben Kowald,Ben Kowald,1-8,1,8,0,1,Completed,true,false,false
+AP008104,14 Dec 24,10,Kooyong,Langwarrin,No. 3,Nicky Li,Meho Cordalija,Nicky Li,8-2,8,2,1,0,Completed,true,false,false
+AP008104,14 Dec 24,10,Kooyong,Langwarrin,No. 4,Ryan Abotomey,Matthew Belsten,Ryan Abotomey,8-3,8,3,1,0,Completed,true,false,false
+AP008111,01 Feb 25,11,BLTC White,Kooyong,No. 1,Kensei Golec,Nicholas Collins,Kensei Golec,8-4,8,4,1,0,Completed,true,false,false
+AP008111,01 Feb 25,11,BLTC White,Kooyong,No. 2,Lucas Sleep,Tom Miller,Lucas Sleep,8-5,8,5,1,0,Completed,true,false,false
+AP008111,01 Feb 25,11,BLTC White,Kooyong,No. 3,Dan Brown,Nicky Li,Nicky Li,7-8,7,8,0,1,Completed,true,false,false
+AP008111,01 Feb 25,11,BLTC White,Kooyong,No. 4,Sinbad Kozelski,Ryan Abotomey,Sinbad Kozelski,8-7,8,7,1,0,Completed,true,false,false
+AP008112,01 Feb 25,11,Tennis World,Hawthorn BCC,No. 1,Vitas Rernglertpricha,Li Yeoh,Li Yeoh,4-8,4,8,0,1,Completed,true,false,false
+AP008112,01 Feb 25,11,Tennis World,Hawthorn BCC,No. 2,Jacob Hayton,Paul Wu,Paul Wu,0-8,0,8,0,1,Completed,true,false,false
+AP008112,01 Feb 25,11,Tennis World,Hawthorn BCC,No. 3,Wayne Smith,Nathan Pererira,Wayne Smith,8-7,8,7,1,0,Completed,true,false,false
+AP008112,01 Feb 25,11,Tennis World,Hawthorn BCC,No. 4,Ben Lambell,Mark Lazarovits,Ben Lambell,8-4,8,4,1,0,Completed,true,false,false
+AP008113,01 Feb 25,11,Coatesville,Highmoor Uniting,No. 1,Michael Gershenzon,Jason Mahmoud,Jason Mahmoud,5-8,5,8,0,1,Completed,true,false,false
+AP008113,01 Feb 25,11,Coatesville,Highmoor Uniting,No. 2,Jordan Ireson,Nick Martin,Jordan Ireson,8-5,8,5,1,0,Completed,true,false,false
+AP008113,01 Feb 25,11,Coatesville,Highmoor Uniting,No. 3,Ashton Eikelis,Leo McInerney,Ashton Eikelis,8-5,8,5,1,0,Completed,true,false,false
+AP008113,01 Feb 25,11,Coatesville,Highmoor Uniting,No. 4,Daniel Foldvari,Josh Glassock,Daniel Foldvari,8-4,8,4,1,0,Completed,true,false,false
+AP008121,08 Feb 25,12,Langwarrin,Coatesville,No. 1,Jack Smith,Michael Gershenzon,Jack Smith,8-3,8,3,1,0,Completed,true,false,false
+AP008121,08 Feb 25,12,Langwarrin,Coatesville,No. 2,Ben Kowald,Jordan Ireson,Jordan Ireson,4-8,4,8,0,1,Completed,true,false,false
+AP008121,08 Feb 25,12,Langwarrin,Coatesville,No. 3,Meho Cordalija,Sam Basman,Meho Cordalija,8-4,8,4,1,0,Completed,true,false,false
+AP008121,08 Feb 25,12,Langwarrin,Coatesville,No. 4,Matthew Belsten,Daniel Foldvari,Daniel Foldvari,4-8,4,8,0,1,Completed,true,false,false
+AP008122,08 Feb 25,12,Hawthorn BCC,Highmoor Uniting,No. 1,Ryan Duckett,Glenn Collins,Ryan Duckett,8-1,8,1,1,0,Completed,true,true,false
+AP008122,08 Feb 25,12,Hawthorn BCC,Highmoor Uniting,No. 2,Paul Wu,Nick Martin,Paul Wu,8-4,8,4,1,0,Completed,true,false,false
+AP008122,08 Feb 25,12,Hawthorn BCC,Highmoor Uniting,No. 3,Nathan Pererira,Brett Collins,Nathan Pererira,8-4,8,4,1,0,Completed,true,false,false
+AP008122,08 Feb 25,12,Hawthorn BCC,Highmoor Uniting,No. 4,David Mesa,Josh Glassock,David Mesa,8-2,8,2,1,0,Completed,true,false,false
+AP008124,08 Feb 25,12,Tennis World,BLTC White,No. 1,Pierre-louis Mazoyer,Kensei Golec,Pierre-louis Mazoyer,8-6,8,6,1,0,Completed,true,true,false
+AP008124,08 Feb 25,12,Tennis World,BLTC White,No. 2,Amaury Chauvin,Jensen Srisuwan,Amaury Chauvin,8-7,8,7,1,0,Completed,true,true,false
+AP008124,08 Feb 25,12,Tennis World,BLTC White,No. 3,Jacob Hayton,Dan Brown,Jacob Hayton,8-2,8,2,1,0,Completed,true,false,false
+AP008124,08 Feb 25,12,Tennis World,BLTC White,No. 4,Ben Lambell,Olivia Foster,Ben Lambell,8-1,8,1,1,0,Completed,true,false,true
+AP008131,15 Feb 25,13,Coatesville,Tennis World,No. 1,Michael Gershenzon,Byron Tang,,0-1,0,1,0,1,Unfinished,false,false,false
+AP008132,15 Feb 25,13,BLTC White,Langwarrin,No. 1,Kensei Golec,Jack Smith,Kensei Golec,8-6,8,6,1,0,Completed,true,false,false
+AP008132,15 Feb 25,13,BLTC White,Langwarrin,No. 2,Lucas Sleep,Ben Kowald,Lucas Sleep,8-5,8,5,1,0,Completed,true,false,false
+AP008132,15 Feb 25,13,BLTC White,Langwarrin,No. 3,Kevin Wang,Meho Cordalija,Kevin Wang,8-1,8,1,1,0,Completed,true,false,false
+AP008132,15 Feb 25,13,BLTC White,Langwarrin,No. 4,Dan Brown,Matthew Belsten,Dan Brown,8-6,8,6,1,0,Completed,true,false,false
+AP008133,15 Feb 25,13,Kooyong,Hawthorn BCC,No. 1,Nicholas Collins,Ryan Duckett,Ryan Duckett,4-8,4,8,0,1,Completed,true,false,true
+AP008133,15 Feb 25,13,Kooyong,Hawthorn BCC,No. 2,Tom Miller,Paul Wu,Tom Miller,8-3,8,3,1,0,Completed,true,false,false
+AP008133,15 Feb 25,13,Kooyong,Hawthorn BCC,No. 3,Nicky Li,Nathan Pererira,Nicky Li,8-0,8,0,1,0,Completed,true,false,false
+AP008133,15 Feb 25,13,Kooyong,Hawthorn BCC,No. 4,Kirk Mitchell,Mark Lazarovits,Mark Lazarovits,5-8,5,8,0,1,Completed,true,true,false
+AP008142,22 Feb 25,14,Langwarrin,Tennis World,No. 1,Jack Smith,David Cameron,Jack Smith,8-4,8,4,1,0,Completed,true,false,false
+AP008142,22 Feb 25,14,Langwarrin,Tennis World,No. 2,Ben Kowald,Jacob Hayton,Ben Kowald,8-0,8,0,1,0,Completed,true,false,false
+AP008142,22 Feb 25,14,Langwarrin,Tennis World,No. 3,Meho Cordalija,Wayne Smith,Wayne Smith,6-8,6,8,0,1,Completed,true,false,false
+AP008142,22 Feb 25,14,Langwarrin,Tennis World,No. 4,Matthew Belsten,Ben Lambell,Ben Lambell,7-8,7,8,0,1,Completed,true,false,false
+AP008143,22 Feb 25,14,Kooyong,Highmoor Uniting,No. 1,Tom Miller,Glenn Collins,Glenn Collins,3-5,3,5,0,1,Completed,true,false,false
+AP008301,,16,Hawthorn BCC,BLTC White,No. 1,Li Yeoh,Jensen Srisuwan,Jensen Srisuwan,6-8,6,8,0,1,Completed,true,false,false
+AP008301,,16,Hawthorn BCC,BLTC White,No. 2,Paul Wu,Lucas Sleep,Lucas Sleep,6-8,6,8,0,1,Completed,true,false,false
+AP008301,,16,Hawthorn BCC,BLTC White,No. 3,Nathan Pererira,Kevin Wang,Kevin Wang,3-8,3,8,0,1,Completed,true,false,false
+AP008301,,16,Hawthorn BCC,BLTC White,No. 4,Mark Lazarovits,Sinbad Kozelski,Sinbad Kozelski,4-8,4,8,0,1,Completed,true,false,false
+AP008302,,16,Langwarrin,Highmoor Uniting,No. 1,Jack Smith,Jason Mahmoud,Jack Smith,8-4,8,4,1,0,Completed,true,false,false
+AP008302,,16,Langwarrin,Highmoor Uniting,No. 2,Ben Kowald,Glenn Collins,Ben Kowald,8-3,8,3,1,0,Completed,true,false,false
+AP008302,,16,Langwarrin,Highmoor Uniting,No. 3,Meho Cordalija,Nick Martin,Meho Cordalija,8-7,8,7,1,0,Completed,true,false,false
+AP008302,,16,Langwarrin,Highmoor Uniting,No. 4,Matthew Belsten,Leo McInerney,Leo McInerney,4-8,4,8,0,1,Completed,true,false,false
+AP008321,,17,Highmoor Uniting,BLTC White,No. 1,Jason Mahmoud,Kensei Golec,Kensei Golec,3-8,3,8,0,1,Completed,true,false,false
+AP008321,,17,Highmoor Uniting,BLTC White,No. 2,Glenn Collins,Jensen Srisuwan,Glenn Collins,8-2,8,2,1,0,Completed,true,false,false
+AP008321,,17,Highmoor Uniting,BLTC White,No. 3,Nick Martin,Lucas Sleep,Nick Martin,8-6,8,6,1,0,Completed,true,false,false
+AP008321,,17,Highmoor Uniting,BLTC White,No. 4,Leo McInerney,Kevin Wang,Kevin Wang,1-8,1,8,0,1,Completed,true,false,false

@@ -1,0 +1,90 @@
+{
+  "asset_id": "AP40-AP001",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 19/20",
+  "season_id": "AP40",
+  "season_label": "Summer 19/20",
+  "source_section_code": "AP001",
+  "section_label": "Ladies Rubbers 1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Legend Park",
+      "wins": 11,
+      "points": 97,
+      "percentage": 246.75,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Port Melbourne",
+      "wins": 8,
+      "points": 75,
+      "percentage": 123.82,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Hurlingham Park",
+      "wins": 7,
+      "points": 61,
+      "percentage": 91.22,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Overport Park",
+      "wins": 6,
+      "points": 60,
+      "percentage": 111.79,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "FCTC",
+      "wins": 2,
+      "points": 44,
+      "percentage": 73.52,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Ormond",
+      "wins": 1,
+      "points": 23,
+      "percentage": 49.84,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP40-AP001",
+  "fixtures": 46,
+  "completed_fixtures": 36,
+  "draw_fixtures": 46,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 140,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "No scorecard rubbers for AP001321",
+    "Fixture game totals do not match rubbers for AP001321: TROLS team total 1-0; complete-score total 0-0. Both published records retained."
+  ]
+}

@@ -1,0 +1,149 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP011011,02 May 15,1,East Malvern,Highett,No. 1,Martin Gifford,Andrew Chen,Andrew Chen,4-8,4,8,0,1,Completed,true,false,false
+AP011011,02 May 15,1,East Malvern,Highett,No. 2,Brendan Breen,Jarryd Wynne,Jarryd Wynne,2-8,2,8,0,1,Completed,true,false,false
+AP011011,02 May 15,1,East Malvern,Highett,No. 3,Ralph Muir-Morris,Jacob Holden,Jacob Holden,3-8,3,8,0,1,Completed,true,false,false
+AP011011,02 May 15,1,East Malvern,Highett,No. 4,Josh Weberruss,Harrison Nickou,Josh Weberruss,8-6,8,6,1,0,Completed,true,false,false
+AP011012,02 May 15,1,BLTC,MCC,No. 1,Richard Pluchinotta,Robert Scarff,Richard Pluchinotta,8-6,8,6,1,0,Completed,true,false,false
+AP011012,02 May 15,1,BLTC,MCC,No. 2,Tom Quine,Thijs De Backer,Thijs De Backer,3-8,3,8,0,1,Completed,true,false,false
+AP011012,02 May 15,1,BLTC,MCC,No. 3,Chris Marchese,Auke de Vries,Auke de Vries,0-8,0,8,0,1,Completed,true,false,false
+AP011012,02 May 15,1,BLTC,MCC,No. 4,Marco Parisi,John Gregory,Marco Parisi,9-8,9,8,1,0,Completed,true,false,false
+AP011013,02 May 15,1,Murrumbeena,Mentone,No. 1,Jacob Thompson,Darius Shamsolahi,Darius Shamsolahi,2-8,2,8,0,1,Completed,true,false,false
+AP011013,02 May 15,1,Murrumbeena,Mentone,No. 2,Senya Rudoy,Liam Binns,Senya Rudoy,8-2,8,2,1,0,Completed,true,false,false
+AP011013,02 May 15,1,Murrumbeena,Mentone,No. 3,Jared Thompson,Steven Griffiths,Steven Griffiths,3-8,3,8,0,1,Completed,true,false,false
+AP011013,02 May 15,1,Murrumbeena,Mentone,No. 4,Nick Dellas,Nagui Risk,Nagui Risk,3-8,3,8,0,1,Completed,true,false,false
+AP011021,09 May 15,2,Mentone,East Malvern,No. 1,Darius Shamsolahi,Chris Woods,Darius Shamsolahi,8-2,8,2,1,0,Completed,true,false,false
+AP011021,09 May 15,2,Mentone,East Malvern,No. 2,Harrison Hibbs,Brendan Breen,Brendan Breen,7-9,7,9,0,1,Completed,true,false,false
+AP011021,09 May 15,2,Mentone,East Malvern,No. 3,Liam Binns,Rohan Christio,Rohan Christio,5-8,5,8,0,1,Completed,true,false,false
+AP011021,09 May 15,2,Mentone,East Malvern,No. 4,Steven Griffiths,Josh Weberruss,Steven Griffiths,9-7,9,7,1,0,Completed,true,false,false
+AP011022,09 May 15,2,MCC,Murrumbeena,No. 1,Robert Scarff,Russell Thompson,Robert Scarff,8-3,8,3,1,0,Completed,true,false,false
+AP011022,09 May 15,2,MCC,Murrumbeena,No. 2,[Unnamed emergency — TROLS AP011022 home code 2],Jacob Thompson,Jacob Thompson,0-8,0,8,0,1,Completed,false,true,false
+AP011022,09 May 15,2,MCC,Murrumbeena,No. 3,Auke de Vries,Senya Rudoy,Senya Rudoy,7-9,7,9,0,1,Completed,true,false,false
+AP011022,09 May 15,2,MCC,Murrumbeena,No. 4,John Gregory,Nick Dellas,John Gregory,8-5,8,5,1,0,Completed,true,false,false
+AP011031,16 May 15,3,East Malvern,BLTC,No. 1,Chris Woods,[Unnamed emergency — TROLS AP011031 away code 1],Chris Woods,8-0,8,0,1,0,Completed,false,false,true
+AP011031,16 May 15,3,East Malvern,BLTC,No. 2,Martin Gifford,Luke McLaughlin,Martin Gifford,8-5,8,5,1,0,Completed,true,false,false
+AP011031,16 May 15,3,East Malvern,BLTC,No. 3,Brendan Breen,Chris Marchese,Brendan Breen,8-1,8,1,1,0,Completed,true,false,false
+AP011031,16 May 15,3,East Malvern,BLTC,No. 4,Josh Weberruss,Marco Parisi,Josh Weberruss,8-3,8,3,1,0,Completed,true,false,false
+AP011032,16 May 15,3,Murrumbeena,Highett,No. 1,Jacob Thompson,Andrew Chen,Jacob Thompson,8-4,8,4,1,0,Completed,true,false,false
+AP011032,16 May 15,3,Murrumbeena,Highett,No. 2,Senya Rudoy,Jarryd Wynne,Jarryd Wynne,7-9,7,9,0,1,Completed,true,false,false
+AP011032,16 May 15,3,Murrumbeena,Highett,No. 3,Jared Thompson,Jacob Holden,Jacob Holden,3-8,3,8,0,1,Completed,true,false,false
+AP011032,16 May 15,3,Murrumbeena,Highett,No. 4,Nick Dellas,Gab Coleman,Gab Coleman,5-8,5,8,0,1,Completed,true,false,false
+AP011041,23 May 15,4,MCC,East Malvern,No. 1,Robert Scarff,Chris Woods,Robert Scarff,8-3,8,3,1,0,Completed,true,false,false
+AP011041,23 May 15,4,MCC,East Malvern,No. 2,Greg Russell,Martin Gifford,Martin Gifford,3-8,3,8,0,1,Completed,true,false,false
+AP011041,23 May 15,4,MCC,East Malvern,No. 3,Auke de Vries,Brendan Breen,Brendan Breen,6-8,6,8,0,1,Completed,true,false,false
+AP011041,23 May 15,4,MCC,East Malvern,No. 4,John Gregory,Ralph Muir-Morris,John Gregory,8-6,8,6,1,0,Completed,true,false,false
+AP011043,23 May 15,4,BLTC,Murrumbeena,No. 1,Richard Pluchinotta,Jacob Thompson,Richard Pluchinotta,8-1,8,1,1,0,Completed,true,false,false
+AP011043,23 May 15,4,BLTC,Murrumbeena,No. 2,Nik Michalik,Senya Rudoy,Senya Rudoy,2-8,2,8,0,1,Completed,true,false,false
+AP011043,23 May 15,4,BLTC,Murrumbeena,No. 3,Luke McLaughlin,Jared Thompson,Luke McLaughlin,8-5,8,5,1,0,Completed,true,false,false
+AP011043,23 May 15,4,BLTC,Murrumbeena,No. 4,Marco Parisi,Nick Dellas,Nick Dellas,8-9,8,9,0,1,Completed,true,false,false
+AP011051,30 May 15,5,East Malvern,Murrumbeena,No. 1,Chris Woods,Anshu Vijay,Anshu Vijay,2-8,2,8,0,1,Completed,true,false,false
+AP011051,30 May 15,5,East Malvern,Murrumbeena,No. 2,Martin Gifford,Jacob Thompson,Martin Gifford,8-2,8,2,1,0,Completed,true,false,false
+AP011051,30 May 15,5,East Malvern,Murrumbeena,No. 3,Brendan Breen,Senya Rudoy,Senya Rudoy,5-8,5,8,0,1,Completed,true,false,false
+AP011051,30 May 15,5,East Malvern,Murrumbeena,No. 4,Ralph Muir-Morris,Jared Thompson,Jared Thompson,3-8,3,8,0,1,Completed,true,false,false
+AP011052,30 May 15,5,MCC,Highett,No. 1,Robert Scarff,Andrew Chen,Andrew Chen,2-8,2,8,0,1,Completed,true,false,false
+AP011052,30 May 15,5,MCC,Highett,No. 2,Greg Russell,Jarryd Wynne,Jarryd Wynne,8-9,8,9,0,1,Completed,true,false,false
+AP011052,30 May 15,5,MCC,Highett,No. 3,Thijs De Backer,Gab Coleman,Thijs De Backer,8-4,8,4,1,0,Completed,true,false,false
+AP011052,30 May 15,5,MCC,Highett,No. 4,Auke de Vries,Harrison Nickou,Auke de Vries,8-1,8,1,1,0,Completed,true,false,false
+AP011053,30 May 15,5,Mentone,BLTC,No. 1,Harrison Hibbs,Richard Pluchinotta,Richard Pluchinotta,1-8,1,8,0,1,Completed,true,false,false
+AP011053,30 May 15,5,Mentone,BLTC,No. 2,Liam Binns,Tom Quine,Tom Quine,4-8,4,8,0,1,Completed,true,false,false
+AP011053,30 May 15,5,Mentone,BLTC,No. 3,Nagui Risk,Nik Michalik,Nagui Risk,8-4,8,4,1,0,Completed,true,false,false
+AP011053,30 May 15,5,Mentone,BLTC,No. 4,Steven Griffiths,Chris Marchese,Steven Griffiths,8-2,8,2,1,0,Completed,true,false,false
+AP011061,13 Jun 15,6,Highett,East Malvern,No. 1,Andrew Chen,Rohan Christio,Andrew Chen,9-7,9,7,1,0,Completed,true,false,false
+AP011061,13 Jun 15,6,Highett,East Malvern,No. 2,Jarryd Wynne,Chris Woods,Jarryd Wynne,9-7,9,7,1,0,Completed,true,false,false
+AP011061,13 Jun 15,6,Highett,East Malvern,No. 3,Gab Coleman,Brendan Breen,Brendan Breen,4-8,4,8,0,1,Completed,true,false,false
+AP011061,13 Jun 15,6,Highett,East Malvern,No. 4,Harrison Nickou,Ralph Muir-Morris,Ralph Muir-Morris,1-8,1,8,0,1,Completed,true,false,false
+AP011062,13 Jun 15,6,MCC,BLTC,No. 1,Robert Scarff,Richard Pluchinotta,Richard Pluchinotta,6-8,6,8,0,1,Completed,true,false,false
+AP011062,13 Jun 15,6,MCC,BLTC,No. 2,Steve Worthington,Tom Quine,Steve Worthington,8-6,8,6,1,0,Completed,true,false,false
+AP011062,13 Jun 15,6,MCC,BLTC,No. 3,Stephen Pearson,Luke McLaughlin,Stephen Pearson,8-2,8,2,1,0,Completed,true,false,false
+AP011062,13 Jun 15,6,MCC,BLTC,No. 4,Greg Russell,Marco Parisi,Greg Russell,8-2,8,2,1,0,Completed,true,false,false
+AP011063,13 Jun 15,6,Mentone,Murrumbeena,No. 1,Darius Shamsolahi,Jacob Thompson,Darius Shamsolahi,8-2,8,2,1,0,Completed,true,false,false
+AP011063,13 Jun 15,6,Mentone,Murrumbeena,No. 2,Harrison Hibbs,Senya Rudoy,Senya Rudoy,0-8,0,8,0,1,Completed,true,false,false
+AP011063,13 Jun 15,6,Mentone,Murrumbeena,No. 3,Liam Binns,Jared Thompson,Liam Binns,9-7,9,7,1,0,Completed,true,false,false
+AP011063,13 Jun 15,6,Mentone,Murrumbeena,No. 4,Cameron McInter,Nick Dellas,Cameron McInter,8-1,8,1,1,0,Completed,true,false,false
+AP011071,20 Jun 15,7,East Malvern,Mentone,No. 1,Martin Gifford,Harrison Hibbs,Martin Gifford,8-3,8,3,1,0,Completed,true,false,false
+AP011071,20 Jun 15,7,East Malvern,Mentone,No. 2,Rohith Meneni,Liam Binns,Rohith Meneni,8-2,8,2,1,0,Completed,true,false,false
+AP011071,20 Jun 15,7,East Malvern,Mentone,No. 3,Jordan Kealey,Cameron McInter,Jordan Kealey,8-4,8,4,1,0,Completed,true,false,false
+AP011071,20 Jun 15,7,East Malvern,Mentone,No. 4,Ralph Muir-Morris,Steven Griffiths,,4-4,4,4,0,0,Unfinished,false,false,false
+AP011072,20 Jun 15,7,Murrumbeena,MCC,No. 1,Jacob Thompson,Robert Scarff,Robert Scarff,7-9,7,9,0,1,Completed,true,false,false
+AP011072,20 Jun 15,7,Murrumbeena,MCC,No. 2,Senya Rudoy,Steve Worthington,Steve Worthington,4-8,4,8,0,1,Completed,true,false,false
+AP011072,20 Jun 15,7,Murrumbeena,MCC,No. 3,Jared Thompson,Stephen Pearson,Stephen Pearson,3-8,3,8,0,1,Completed,true,false,false
+AP011072,20 Jun 15,7,Murrumbeena,MCC,No. 4,Nick Dellas,Greg Russell,Greg Russell,2-8,2,8,0,1,Completed,true,false,false
+AP011073,20 Jun 15,7,BLTC,Highett,No. 1,Tom Quine,Andrew Chen,Andrew Chen,7-9,7,9,0,1,Completed,true,false,false
+AP011073,20 Jun 15,7,BLTC,Highett,No. 2,Nik Michalik,Jarryd Wynne,Jarryd Wynne,3-8,3,8,0,1,Completed,true,false,false
+AP011073,20 Jun 15,7,BLTC,Highett,No. 3,Chris Marchese,Gab Coleman,Chris Marchese,8-2,8,2,1,0,Completed,true,false,false
+AP011073,20 Jun 15,7,BLTC,Highett,No. 4,Marco Parisi,Ethan Holden,Ethan Holden,5-8,5,8,0,1,Completed,true,false,false
+AP011081,27 Jun 15,8,BLTC,East Malvern,No. 1,Tom Quine,Chris Woods,Chris Woods,3-8,3,8,0,1,Completed,true,false,false
+AP011081,27 Jun 15,8,BLTC,East Malvern,No. 2,Nik Michalik,Rohan Christio,Rohan Christio,2-8,2,8,0,1,Completed,true,false,false
+AP011081,27 Jun 15,8,BLTC,East Malvern,No. 3,Luke McLaughlin,Brendan Breen,Brendan Breen,7-9,7,9,0,1,Completed,true,false,false
+AP011081,27 Jun 15,8,BLTC,East Malvern,No. 4,Thomas French,Ralph Muir-Morris,Thomas French,8-0,8,0,1,0,Completed,true,false,false
+AP011082,27 Jun 15,8,Highett,Murrumbeena,No. 1,Andrew Chen,Jacob Thompson,Jacob Thompson,6-8,6,8,0,1,Completed,true,false,false
+AP011082,27 Jun 15,8,Highett,Murrumbeena,No. 2,Jacob Holden,Senya Rudoy,Jacob Holden,9-8,9,8,1,0,Completed,true,false,false
+AP011082,27 Jun 15,8,Highett,Murrumbeena,No. 3,Gab Coleman,Jared Thompson,Jared Thompson,3-8,3,8,0,1,Completed,true,false,false
+AP011082,27 Jun 15,8,Highett,Murrumbeena,No. 4,Cam Challis,Nick Dellas,Nick Dellas,6-8,6,8,0,1,Completed,true,false,false
+AP011083,27 Jun 15,8,MCC,Mentone,No. 1,Robert Scarff,Harrison Hibbs,Robert Scarff,8-0,8,0,1,0,Completed,true,false,false
+AP011083,27 Jun 15,8,MCC,Mentone,No. 2,Greg Russell,Liam Binns,Greg Russell,8-3,8,3,1,0,Completed,true,false,false
+AP011083,27 Jun 15,8,MCC,Mentone,No. 3,Auke de Vries,Chris Vilsten,Chris Vilsten,3-8,3,8,0,1,Completed,true,false,false
+AP011083,27 Jun 15,8,MCC,Mentone,No. 4,John Gregory,Steven Griffiths,Steven Griffiths,0-8,0,8,0,1,Completed,true,false,false
+AP011112,18 Jul 15,11,BLTC,MCC,No. 1,Richard Pluchinotta,Robert Scarff,Richard Pluchinotta,9-8,9,8,1,0,Completed,true,false,false
+AP011112,18 Jul 15,11,BLTC,MCC,No. 2,Tom Quine,Steve Worthington,Steve Worthington,6-8,6,8,0,1,Completed,true,false,false
+AP011112,18 Jul 15,11,BLTC,MCC,No. 3,Chris Marchese,Greg Russell,Greg Russell,2-8,2,8,0,1,Completed,true,false,false
+AP011112,18 Jul 15,11,BLTC,MCC,No. 4,Marco Parisi,Thijs De Backer,Thijs De Backer,1-8,1,8,0,1,Completed,true,false,false
+AP011113,18 Jul 15,11,Murrumbeena,Mentone,No. 1,Jacob Thompson,Darius Shamsolahi,Darius Shamsolahi,0-8,0,8,0,1,Completed,true,false,false
+AP011113,18 Jul 15,11,Murrumbeena,Mentone,No. 2,Senya Rudoy,Harrison Hibbs,Senya Rudoy,8-2,8,2,1,0,Completed,true,false,false
+AP011113,18 Jul 15,11,Murrumbeena,Mentone,No. 3,Jared Thompson,Liam Binns,Liam Binns,3-8,3,8,0,1,Completed,true,false,false
+AP011113,18 Jul 15,11,Murrumbeena,Mentone,No. 4,Nick Dellas,Steven Griffiths,Steven Griffiths,2-8,2,8,0,1,Completed,true,false,false
+AP011121,25 Jul 15,12,Mentone,East Malvern,No. 1,Darius Shamsolahi,Jack Appleton,Darius Shamsolahi,8-0,8,0,1,0,Completed,true,false,false
+AP011121,25 Jul 15,12,Mentone,East Malvern,No. 2,Liam Binns,Rohan Christio,Rohan Christio,2-8,2,8,0,1,Completed,true,false,false
+AP011121,25 Jul 15,12,Mentone,East Malvern,No. 3,Steven Griffiths,Brendan Breen,Steven Griffiths,8-4,8,4,1,0,Completed,true,false,false
+AP011121,25 Jul 15,12,Mentone,East Malvern,No. 4,Nagui Risk,Josh Weberruss,Josh Weberruss,4-8,4,8,0,1,Completed,true,false,false
+AP011122,25 Jul 15,12,MCC,Murrumbeena,No. 1,Robert Scarff,Anshu Vijay,Anshu Vijay,3-8,3,8,0,1,Completed,true,false,false
+AP011122,25 Jul 15,12,MCC,Murrumbeena,No. 2,Steve Worthington,Jacob Thompson,Jacob Thompson,6-8,6,8,0,1,Completed,true,false,false
+AP011122,25 Jul 15,12,MCC,Murrumbeena,No. 3,Greg Russell,Senya Rudoy,Senya Rudoy,4-8,4,8,0,1,Completed,true,false,false
+AP011122,25 Jul 15,12,MCC,Murrumbeena,No. 4,Thijs De Backer,Jared Thompson,Thijs De Backer,8-2,8,2,1,0,Completed,true,false,false
+AP011123,25 Jul 15,12,Highett,BLTC,No. 1,Gab Coleman,Tom Quine,Tom Quine,4-8,4,8,0,1,Completed,true,false,false
+AP011123,25 Jul 15,12,Highett,BLTC,No. 2,Harrison Nickou,Luke McLaughlin,Luke McLaughlin,1-8,1,8,0,1,Completed,true,false,false
+AP011123,25 Jul 15,12,Highett,BLTC,No. 3,Ethan Holden,Chris Marchese,Ethan Holden,8-4,8,4,1,0,Completed,true,false,false
+AP011123,25 Jul 15,12,Highett,BLTC,No. 4,Julien Caid,Marco Parisi,Marco Parisi,8-9,8,9,0,1,Completed,true,false,false
+AP011131,01 Aug 15,13,East Malvern,BLTC,No. 1,Heath Poustie,Tom Quine,Tom Quine,4-8,4,8,0,1,Completed,true,false,false
+AP011131,01 Aug 15,13,East Malvern,BLTC,No. 2,Brendan Breen,Luke McLaughlin,Brendan Breen,8-3,8,3,1,0,Completed,true,false,false
+AP011131,01 Aug 15,13,East Malvern,BLTC,No. 3,Josh Weberruss,Chris Marchese,Chris Marchese,6-8,6,8,0,1,Completed,true,false,false
+AP011131,01 Aug 15,13,East Malvern,BLTC,No. 4,Jack Appleton,Marco Parisi,Jack Appleton,8-3,8,3,1,0,Completed,true,false,false
+AP011132,01 Aug 15,13,Murrumbeena,Highett,No. 1,Jacob Thompson,Andrew Chen,Jacob Thompson,9-7,9,7,1,0,Completed,true,false,false
+AP011132,01 Aug 15,13,Murrumbeena,Highett,No. 2,Senya Rudoy,Jacob Holden,Senya Rudoy,8-5,8,5,1,0,Completed,true,false,false
+AP011132,01 Aug 15,13,Murrumbeena,Highett,No. 3,Jared Thompson,Gab Coleman,Jared Thompson,8-2,8,2,1,0,Completed,true,false,false
+AP011132,01 Aug 15,13,Murrumbeena,Highett,No. 4,Nick Dellas,Harrison Nickou,Nick Dellas,8-3,8,3,1,0,Completed,true,false,false
+AP011133,01 Aug 15,13,Mentone,MCC,No. 1,Liam Binns,Robert Scarff,Robert Scarff,1-8,1,8,0,1,Completed,true,false,false
+AP011133,01 Aug 15,13,Mentone,MCC,No. 2,Chris Vilsten,Greg Russell,Chris Vilsten,8-3,8,3,1,0,Completed,true,false,false
+AP011133,01 Aug 15,13,Mentone,MCC,No. 3,Steven Griffiths,Auke de Vries,Auke de Vries,2-8,2,8,0,1,Completed,true,false,false
+AP011133,01 Aug 15,13,Mentone,MCC,No. 4,Nagui Risk,Thijs De Backer,Thijs De Backer,1-8,1,8,0,1,Completed,true,false,false
+AP011141,08 Aug 15,14,MCC,East Malvern,No. 1,Robert Scarff,Martin Gifford,Robert Scarff,8-3,8,3,1,0,Completed,true,false,false
+AP011141,08 Aug 15,14,MCC,East Malvern,No. 2,Steve Worthington,Brendan Breen,Steve Worthington,8-2,8,2,1,0,Completed,true,false,false
+AP011141,08 Aug 15,14,MCC,East Malvern,No. 3,Greg Russell,Josh Weberruss,Greg Russell,8-0,8,0,1,0,Completed,true,false,false
+AP011141,08 Aug 15,14,MCC,East Malvern,No. 4,Stephen Pearson,Robin Borchard,Stephen Pearson,8-1,8,1,1,0,Completed,true,false,false
+AP011142,08 Aug 15,14,Highett,Mentone,No. 1,Andrew Chen,Harrison Hibbs,Andrew Chen,8-5,8,5,1,0,Completed,true,false,false
+AP011142,08 Aug 15,14,Highett,Mentone,No. 2,Jacob Holden,Liam Binns,Jacob Holden,8-3,8,3,1,0,Completed,true,false,false
+AP011142,08 Aug 15,14,Highett,Mentone,No. 3,Gab Coleman,Steven Griffiths,Steven Griffiths,2-8,2,8,0,1,Completed,true,false,false
+AP011142,08 Aug 15,14,Highett,Mentone,No. 4,Ethan Holden,Nagui Risk,Ethan Holden,9-7,9,7,1,0,Completed,true,false,false
+AP011143,08 Aug 15,14,BLTC,Murrumbeena,No. 1,Richard Pluchinotta,Anshu Vijay,Richard Pluchinotta,8-4,8,4,1,0,Completed,true,false,false
+AP011143,08 Aug 15,14,BLTC,Murrumbeena,No. 2,Tom Quine,Jacob Thompson,Jacob Thompson,1-8,1,8,0,1,Completed,true,false,false
+AP011143,08 Aug 15,14,BLTC,Murrumbeena,No. 3,Nik Michalik,Senya Rudoy,Senya Rudoy,7-9,7,9,0,1,Completed,true,false,false
+AP011143,08 Aug 15,14,BLTC,Murrumbeena,No. 4,Luke McLaughlin,Jared Thompson,Luke McLaughlin,8-3,8,3,1,0,Completed,true,false,false
+AP011151,15 Aug 15,15,East Malvern,Murrumbeena,No. 1,Chris Woods,Jacob Thompson,Jacob Thompson,4-8,4,8,0,1,Completed,true,false,false
+AP011151,15 Aug 15,15,East Malvern,Murrumbeena,No. 2,Martin Gifford,Senya Rudoy,Martin Gifford,8-6,8,6,1,0,Completed,true,false,false
+AP011151,15 Aug 15,15,East Malvern,Murrumbeena,No. 3,Heath Poustie,Jared Thompson,Jared Thompson,3-8,3,8,0,1,Completed,true,false,false
+AP011151,15 Aug 15,15,East Malvern,Murrumbeena,No. 4,Brendan Breen,Nick Dellas,Brendan Breen,8-1,8,1,1,0,Completed,true,false,false
+AP011152,15 Aug 15,15,MCC,Highett,No. 1,Steve Worthington,Andrew Chen,Andrew Chen,6-8,6,8,0,1,Completed,true,false,false
+AP011152,15 Aug 15,15,MCC,Highett,No. 2,Auke de Vries,Jarryd Wynne,Auke de Vries,8-5,8,5,1,0,Completed,true,false,false
+AP011152,15 Aug 15,15,MCC,Highett,No. 3,Stephen Pearson,Jacob Holden,Stephen Pearson,8-1,8,1,1,0,Completed,true,false,false
+AP011152,15 Aug 15,15,MCC,Highett,No. 4,Thijs De Backer,Gab Coleman,Thijs De Backer,8-4,8,4,1,0,Completed,true,false,false
+AP011153,15 Aug 15,15,Mentone,BLTC,No. 1,Darius Shamsolahi,Richard Pluchinotta,Darius Shamsolahi,9-8,9,8,1,0,Completed,true,false,false
+AP011153,15 Aug 15,15,Mentone,BLTC,No. 2,Matt Metter,Nik Michalik,Matt Metter,8-2,8,2,1,0,Completed,true,false,false
+AP011153,15 Aug 15,15,Mentone,BLTC,No. 3,Liam Binns,Chris Marchese,Liam Binns,8-4,8,4,1,0,Completed,true,false,false
+AP011153,15 Aug 15,15,Mentone,BLTC,No. 4,Steven Griffiths,Marco Parisi,Steven Griffiths,8-3,8,3,1,0,Completed,true,false,false
+AP011311,15 Aug 15,15,East Malvern,Murrumbeena,No. 1,Chris Woods,Senya Rudoy,Senya Rudoy,8-9,8,9,0,1,Completed,true,false,false
+AP011311,15 Aug 15,15,East Malvern,Murrumbeena,No. 2,Martin Gifford,Russell Thompson,Russell Thompson,1-8,1,8,0,1,Completed,true,false,false
+AP011311,15 Aug 15,15,East Malvern,Murrumbeena,No. 3,Brendan Breen,Jared Thompson,Brendan Breen,8-3,8,3,1,0,Completed,true,false,false
+AP011311,15 Aug 15,15,East Malvern,Murrumbeena,No. 4,Ralph Muir-Morris,Nick Dellas,Nick Dellas,2-8,2,8,0,1,Completed,true,false,false
+AP011321,,16,MCC,Murrumbeena,No. 1,Steve Worthington,Senya Rudoy,Senya Rudoy,4-8,4,8,0,1,Completed,true,false,false
+AP011321,,16,MCC,Murrumbeena,No. 2,Robert Scarff,Russell Thompson,Russell Thompson,5-8,5,8,0,1,Completed,true,false,true
+AP011321,,16,MCC,Murrumbeena,No. 3,Greg Russell,Jared Thompson,Greg Russell,8-3,8,3,1,0,Completed,true,true,false
+AP011321,,16,MCC,Murrumbeena,No. 4,Auke de Vries,Nick Dellas,Auke de Vries,8-6,8,6,1,0,Completed,true,false,false

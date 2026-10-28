@@ -1,0 +1,95 @@
+{
+  "asset_id": "AP38-AP015",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 18/19",
+  "season_id": "AP38",
+  "season_label": "Summer 18/19",
+  "source_section_code": "AP015",
+  "section_label": "Mens S/D 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Overport Park",
+      "wins": 8,
+      "points": 89,
+      "percentage": 137.42,
+      "marker": ""
+    },
+    {
+      "position": 2,
+      "team": "Mt Eliza",
+      "wins": 8,
+      "points": 88,
+      "percentage": 141.01,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Tennis World",
+      "wins": 5,
+      "points": 62,
+      "percentage": 107.48,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Dendy Park",
+      "wins": 5,
+      "points": 59,
+      "percentage": 101.22,
+      "marker": "P"
+    },
+    {
+      "position": 5,
+      "team": "Kooyong",
+      "wins": 3,
+      "points": 46,
+      "percentage": 81.09,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "East Malvern",
+      "wins": 4,
+      "points": 43,
+      "percentage": 79.03,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "BLTC",
+      "wins": 3,
+      "points": 33,
+      "percentage": 77.37,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP38-AP015",
+  "fixtures": 59,
+  "completed_fixtures": 40,
+  "draw_fixtures": 59,
+  "singles_rubbers": 158,
+  "doubles_rubbers": 76,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

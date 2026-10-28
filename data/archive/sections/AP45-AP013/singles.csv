@@ -1,0 +1,107 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP013011,01 Oct 22,1,Tennis World,Ormond,No. 1,Carly Crowe,Susan Harrison,Carly Crowe,8-2,8,2,1,0,Completed,true,false,false
+AP013011,01 Oct 22,1,Tennis World,Ormond,No. 2,Galina Polekhina,Rivka Garson,Galina Polekhina,8-3,8,3,1,0,Completed,true,false,false
+AP013011,01 Oct 22,1,Tennis World,Ormond,No. 3,Dana Visescu,Melissa Cogdon,Dana Visescu,8-0,8,0,1,0,Completed,true,false,false
+AP013011,01 Oct 22,1,Tennis World,Ormond,No. 4,Suwanit Downing,Jasmine Yu,Suwanit Downing,8-0,8,0,1,0,Completed,true,false,false
+AP013013,01 Oct 22,1,Mordialloc,East Malvern Marina,No. 1,Pippa Collier,Carla Lenarduzzi,Carla Lenarduzzi,3-8,3,8,0,1,Completed,true,false,false
+AP013013,01 Oct 22,1,Mordialloc,East Malvern Marina,No. 2,Lily Clucas,Claire How,Lily Clucas,8-4,8,4,1,0,Completed,true,false,false
+AP013013,01 Oct 22,1,Mordialloc,East Malvern Marina,No. 3,Linda Clucas,Marina Woods,Marina Woods,1-8,1,8,0,1,Completed,true,false,false
+AP013013,01 Oct 22,1,Mordialloc,East Malvern Marina,No. 4,Rowena Goodwin,Leanne Lawrence,Leanne Lawrence,7-8,7,8,0,1,Completed,true,true,false
+AP013021,08 Oct 22,2,East Malvern Marina,Tennis World,No. 1,Lu Jiayan,Carly Crowe,Carly Crowe,1-8,1,8,0,1,Completed,true,false,false
+AP013021,08 Oct 22,2,East Malvern Marina,Tennis World,No. 2,Claire How,Chiyo Lam,Chiyo Lam,3-8,3,8,0,1,Completed,true,false,false
+AP013021,08 Oct 22,2,East Malvern Marina,Tennis World,No. 3,Marina Woods,Galina Polekhina,Galina Polekhina,1-8,1,8,0,1,Completed,true,false,false
+AP013021,08 Oct 22,2,East Malvern Marina,Tennis World,No. 4,Leanne Lawrence,Dana Visescu,Dana Visescu,3-8,3,8,0,1,Completed,true,false,false
+AP013022,08 Oct 22,2,Mentone,Mordialloc,No. 1,Tiara Wickramage,Lily Clucas,Tiara Wickramage,8-1,8,1,1,0,Completed,true,false,false
+AP013022,08 Oct 22,2,Mentone,Mordialloc,No. 2,Paris Stenhouse,Elise Jackson,Paris Stenhouse,8-3,8,3,1,0,Completed,true,false,false
+AP013022,08 Oct 22,2,Mentone,Mordialloc,No. 3,Jasmine Farrugia,Elise Blanchfield,Jasmine Farrugia,8-7,8,7,1,0,Completed,true,false,false
+AP013022,08 Oct 22,2,Mentone,Mordialloc,No. 4,Angelina Kotzakotsidis,Michelle Reinhardt,Angelina Kotzakotsidis,8-5,8,5,1,0,Completed,true,false,true
+AP013032,15 Oct 22,3,Mordialloc,Ormond,No. 1,Pippa Collier,Susan Harrison,Pippa Collier,8-2,8,2,1,0,Completed,true,false,false
+AP013032,15 Oct 22,3,Mordialloc,Ormond,No. 2,Fiona Collier,Fiona Johnson,Fiona Johnson,6-8,6,8,0,1,Completed,true,false,false
+AP013032,15 Oct 22,3,Mordialloc,Ormond,No. 3,Elise Jackson,Melissa Cogdon,Elise Jackson,8-4,8,4,1,0,Completed,true,false,false
+AP013032,15 Oct 22,3,Mordialloc,Ormond,No. 4,Elise Blanchfield,Jasmine Yu,Elise Blanchfield,8-1,8,1,1,0,Completed,true,false,false
+AP013033,15 Oct 22,3,East Malvern Marina,Mentone,No. 1,Lu Jiayan,Tiara Wickramage,Tiara Wickramage,2-8,2,8,0,1,Completed,true,false,false
+AP013033,15 Oct 22,3,East Malvern Marina,Mentone,No. 2,Marina Woods,Paris Stenhouse,Paris Stenhouse,2-8,2,8,0,1,Completed,true,false,false
+AP013033,15 Oct 22,3,East Malvern Marina,Mentone,No. 3,Anna Robinson,Laoise Comerford,Anna Robinson,8-2,8,2,1,0,Completed,true,true,false
+AP013033,15 Oct 22,3,East Malvern Marina,Mentone,No. 4,Leanne Lawrence,Angelina Kotzakotsidis,Angelina Kotzakotsidis,5-8,5,8,0,1,Completed,true,false,false
+AP013051,05 Nov 22,5,Tennis World,Mordialloc,No. 1,Sharada Van Min,Pippa Collier,Sharada Van Min,8-3,8,3,1,0,Completed,true,false,false
+AP013051,05 Nov 22,5,Tennis World,Mordialloc,No. 2,Dana Visescu,Linda Clucas,Dana Visescu,8-2,8,2,1,0,Completed,true,false,false
+AP013051,05 Nov 22,5,Tennis World,Mordialloc,No. 3,Suwanit Downing,Fiona Collier,Suwanit Downing,8-0,8,0,1,0,Completed,true,false,false
+AP013051,05 Nov 22,5,Tennis World,Mordialloc,No. 4,Anthea Nolan,Elise Jackson,Anthea Nolan,8-0,8,0,1,0,Completed,true,true,false
+AP013052,05 Nov 22,5,Mentone,Ormond,No. 1,Tiara Wickramage,Susan Harrison,Tiara Wickramage,8-1,8,1,1,0,Completed,true,false,false
+AP013052,05 Nov 22,5,Mentone,Ormond,No. 2,Paris Stenhouse,Rivka Garson,Paris Stenhouse,8-1,8,1,1,0,Completed,true,false,false
+AP013052,05 Nov 22,5,Mentone,Ormond,No. 3,Jasmine Farrugia,Remy Pugh,Jasmine Farrugia,8-0,8,0,1,0,Completed,true,false,true
+AP013052,05 Nov 22,5,Mentone,Ormond,No. 4,Laoise Comerford,Jasmine Yu,Laoise Comerford,8-2,8,2,1,0,Completed,true,false,false
+AP013061,12 Nov 22,6,Ormond,Tennis World,No. 1,Susan Harrison,Sharada Van Min,Sharada Van Min,1-8,1,8,0,1,Completed,true,false,false
+AP013061,12 Nov 22,6,Ormond,Tennis World,No. 2,Carole Pywell,Galina Polekhina,Galina Polekhina,1-8,1,8,0,1,Completed,true,false,false
+AP013061,12 Nov 22,6,Ormond,Tennis World,No. 3,Melissa Cogdon,Suwanit Downing,Suwanit Downing,1-8,1,8,0,1,Completed,true,false,false
+AP013061,12 Nov 22,6,Ormond,Tennis World,No. 4,Jasmine Yu,Anthea Nolan,Anthea Nolan,0-8,0,8,0,1,Completed,true,false,true
+AP013063,12 Nov 22,6,East Malvern Marina,Mordialloc,No. 1,Carla Lenarduzzi,Lily Clucas,Carla Lenarduzzi,8-3,8,3,1,0,Completed,true,false,false
+AP013063,12 Nov 22,6,East Malvern Marina,Mordialloc,No. 2,Claire How,Linda Clucas,Claire How,8-4,8,4,1,0,Completed,true,false,false
+AP013063,12 Nov 22,6,East Malvern Marina,Mordialloc,No. 3,Marina Woods,Elise Jackson,Marina Woods,8-2,8,2,1,0,Completed,true,false,false
+AP013063,12 Nov 22,6,East Malvern Marina,Mordialloc,No. 4,Anna Robinson,Elise Blanchfield,Elise Blanchfield,7-8,7,8,0,1,Completed,true,true,false
+AP013082,26 Nov 22,8,Ormond,Mordialloc,No. 1,Susan Harrison,Pippa Collier,Pippa Collier,7-8,7,8,0,1,Completed,true,false,false
+AP013082,26 Nov 22,8,Ormond,Mordialloc,No. 2,Fiona Johnson,Lily Clucas,Fiona Johnson,8-7,8,7,1,0,Completed,true,false,false
+AP013082,26 Nov 22,8,Ormond,Mordialloc,No. 3,Melissa Cogdon,Linda Clucas,Linda Clucas,2-8,2,8,0,1,Completed,true,false,false
+AP013082,26 Nov 22,8,Ormond,Mordialloc,No. 4,Jasmine Yu,Fiona Collier,Fiona Collier,0-8,0,8,0,1,Completed,true,false,false
+AP013083,26 Nov 22,8,Mentone,East Malvern Marina,No. 1,Paris Stenhouse,[Unnamed emergency — TROLS AP013083 away code 1],Paris Stenhouse,8-0,8,0,1,0,Completed,false,false,true
+AP013083,26 Nov 22,8,Mentone,East Malvern Marina,No. 2,Jasmine Farrugia,Beth Coombes,Jasmine Farrugia,8-4,8,4,1,0,Completed,true,false,true
+AP013083,26 Nov 22,8,Mentone,East Malvern Marina,No. 3,Laoise Comerford,Lu Jiayan,Lu Jiayan,4-8,4,8,0,1,Completed,true,false,false
+AP013083,26 Nov 22,8,Mentone,East Malvern Marina,No. 4,Angelina Kotzakotsidis,Leanne Lawrence,Leanne Lawrence,2-8,2,8,0,1,Completed,true,false,false
+AP013091,03 Dec 22,9,Tennis World,Mentone,No. 1,Carly Crowe,Paris Stenhouse,Paris Stenhouse,7-8,7,8,0,1,Completed,true,false,false
+AP013091,03 Dec 22,9,Tennis World,Mentone,No. 2,Chiyo Lam,Jasmine Farrugia,Jasmine Farrugia,2-8,2,8,0,1,Completed,true,false,false
+AP013091,03 Dec 22,9,Tennis World,Mentone,No. 3,Galina Polekhina,Laoise Comerford,Galina Polekhina,8-3,8,3,1,0,Completed,true,false,false
+AP013091,03 Dec 22,9,Tennis World,Mentone,No. 4,Dana Visescu,Angelina Kotzakotsidis,Dana Visescu,8-6,8,6,1,0,Completed,true,false,false
+AP013092,03 Dec 22,9,East Malvern Marina,Ormond,No. 1,Phillipa Rehe,Rivka Garson,Phillipa Rehe,8-0,8,0,1,0,Completed,true,true,false
+AP013092,03 Dec 22,9,East Malvern Marina,Ormond,No. 2,Carla Lenarduzzi,Melissa Cogdon,Carla Lenarduzzi,8-0,8,0,1,0,Completed,true,false,false
+AP013092,03 Dec 22,9,East Malvern Marina,Ormond,No. 3,Claire How,Carole Pywell,Claire How,8-1,8,1,1,0,Completed,true,false,false
+AP013092,03 Dec 22,9,East Malvern Marina,Ormond,No. 4,Leanne Lawrence,Michelle Reinhardt,Michelle Reinhardt,3-8,3,8,0,1,Completed,true,false,true
+AP013101,10 Dec 22,10,Mordialloc,Tennis World,No. 1,Pippa Collier,Carly Crowe,Carly Crowe,4-8,4,8,0,1,Completed,true,false,false
+AP013101,10 Dec 22,10,Mordialloc,Tennis World,No. 2,Lily Clucas,Galina Polekhina,Galina Polekhina,3-8,3,8,0,1,Completed,true,false,false
+AP013101,10 Dec 22,10,Mordialloc,Tennis World,No. 3,Linda Clucas,Suwanit Downing,Suwanit Downing,3-8,3,8,0,1,Completed,true,false,false
+AP013101,10 Dec 22,10,Mordialloc,Tennis World,No. 4,Elise Blanchfield,Anthea Nolan,Elise Blanchfield,8-7,8,7,1,0,Completed,true,false,true
+AP013102,10 Dec 22,10,Ormond,Mentone,No. 1,Raine Xiao,Paris Stenhouse,Paris Stenhouse,0-8,0,8,0,1,Completed,true,false,false
+AP013102,10 Dec 22,10,Ormond,Mentone,No. 2,Carole Pywell,Jasmine Farrugia,Jasmine Farrugia,2-8,2,8,0,1,Completed,true,false,false
+AP013102,10 Dec 22,10,Ormond,Mentone,No. 3,Jasmine Yu,Laoise Comerford,Laoise Comerford,2-8,2,8,0,1,Completed,true,false,false
+AP013102,10 Dec 22,10,Ormond,Mentone,No. 4,[Unnamed emergency — TROLS AP013102 home code 4],Angelina Kotzakotsidis,Angelina Kotzakotsidis,0-8,0,8,0,1,Completed,false,true,false
+AP013111,04 Feb 23,11,Tennis World,Ormond,No. 1,Carly Crowe,Rivka Garson,Carly Crowe,8-0,8,0,1,0,Completed,true,false,false
+AP013111,04 Feb 23,11,Tennis World,Ormond,No. 2,Sharada Van Min,Fiona Johnson,Sharada Van Min,8-4,8,4,1,0,Completed,true,false,false
+AP013111,04 Feb 23,11,Tennis World,Ormond,No. 3,Galina Polekhina,Melissa Cogdon,Galina Polekhina,8-0,8,0,1,0,Completed,true,false,false
+AP013111,04 Feb 23,11,Tennis World,Ormond,No. 4,Suwanit Downing,Jasmine Yu,Suwanit Downing,8-0,8,0,1,0,Completed,true,false,false
+AP013113,04 Feb 23,11,Mordialloc,East Malvern Marina,No. 1,Lily Clucas,Lu Jiayan,Lu Jiayan,3-8,3,8,0,1,Completed,true,false,false
+AP013113,04 Feb 23,11,Mordialloc,East Malvern Marina,No. 2,Linda Clucas,Claire How,Claire How,4-8,4,8,0,1,Completed,true,false,false
+AP013113,04 Feb 23,11,Mordialloc,East Malvern Marina,No. 3,Elise Jackson,Marina Woods,Elise Jackson,8-4,8,4,1,0,Completed,true,false,false
+AP013113,04 Feb 23,11,Mordialloc,East Malvern Marina,No. 4,Elise Blanchfield,Inna Rusanova,Inna Rusanova,3-8,3,8,0,1,Completed,true,false,true
+AP013121,11 Feb 23,12,East Malvern Marina,Tennis World,No. 1,Marina Woods,Carly Crowe,Carly Crowe,5-8,5,8,0,1,Completed,true,false,false
+AP013121,11 Feb 23,12,East Malvern Marina,Tennis World,No. 2,Inna Rusanova,Galina Polekhina,Galina Polekhina,2-8,2,8,0,1,Completed,true,true,false
+AP013121,11 Feb 23,12,East Malvern Marina,Tennis World,No. 3,Leanne Lawrence,Dana Visescu,Dana Visescu,6-8,6,8,0,1,Completed,true,false,false
+AP013121,11 Feb 23,12,East Malvern Marina,Tennis World,No. 4,Debra Bolic,Suwanit Downing,Suwanit Downing,1-8,1,8,0,1,Completed,true,true,false
+AP013122,11 Feb 23,12,Mentone,Mordialloc,No. 1,Tiara Wickramage,Sarah Ross,Tiara Wickramage,8-1,8,1,1,0,Completed,true,false,true
+AP013122,11 Feb 23,12,Mentone,Mordialloc,No. 2,Jasmine Farrugia,Linda Clucas,Jasmine Farrugia,8-2,8,2,1,0,Completed,true,false,false
+AP013122,11 Feb 23,12,Mentone,Mordialloc,No. 3,Laoise Comerford,Elise Jackson,Laoise Comerford,8-1,8,1,1,0,Completed,true,false,false
+AP013122,11 Feb 23,12,Mentone,Mordialloc,No. 4,Angela Prudnikova,Elise Blanchfield,Elise Blanchfield,3-8,3,8,0,1,Completed,true,true,false
+AP013132,18 Feb 23,13,Mordialloc,Ormond,No. 1,Pippa Collier,Susan Harrison,Pippa Collier,8-3,8,3,1,0,Completed,true,false,false
+AP013132,18 Feb 23,13,Mordialloc,Ormond,No. 2,Linda Clucas,Rivka Garson,Rivka Garson,3-8,3,8,0,1,Completed,true,false,false
+AP013132,18 Feb 23,13,Mordialloc,Ormond,No. 3,Fiona Collier,Raine Xiao,Fiona Collier,8-2,8,2,1,0,Completed,true,false,false
+AP013132,18 Feb 23,13,Mordialloc,Ormond,No. 4,Elise Blanchfield,Carole Pywell,Elise Blanchfield,8-5,8,5,1,0,Completed,true,false,false
+AP013133,18 Feb 23,13,East Malvern Marina,Mentone,No. 1,Phillipa Rehe,Tiara Wickramage,Tiara Wickramage,4-8,4,8,0,1,Completed,true,true,false
+AP013133,18 Feb 23,13,East Malvern Marina,Mentone,No. 2,Claire How,Paris Stenhouse,Paris Stenhouse,4-8,4,8,0,1,Completed,true,false,false
+AP013133,18 Feb 23,13,East Malvern Marina,Mentone,No. 3,Marina Woods,Jasmine Farrugia,Jasmine Farrugia,2-8,2,8,0,1,Completed,true,false,false
+AP013133,18 Feb 23,13,East Malvern Marina,Mentone,No. 4,Lucette Hoskins,Angelina Kotzakotsidis,Angelina Kotzakotsidis,3-8,3,8,0,1,Completed,true,true,false
+AP013141,25 Feb 23,14,Mentone,Tennis World,No. 1,Tiara Wickramage,Carly Crowe,Tiara Wickramage,8-1,8,1,1,0,Completed,true,false,false
+AP013141,25 Feb 23,14,Mentone,Tennis World,No. 2,Paris Stenhouse,Sharada Van Min,Paris Stenhouse,8-6,8,6,1,0,Completed,true,false,false
+AP013142,25 Feb 23,14,Ormond,East Malvern Marina,No. 1,Raine Xiao,Lu Jiayan,Lu Jiayan,3-8,3,8,0,1,Completed,true,false,false
+AP013142,25 Feb 23,14,Ormond,East Malvern Marina,No. 2,Carole Pywell,Claire How,Claire How,3-8,3,8,0,1,Completed,true,false,false
+AP013142,25 Feb 23,14,Ormond,East Malvern Marina,No. 3,Jasmine Yu,Marina Woods,Marina Woods,0-8,0,8,0,1,Completed,true,false,false
+AP013142,25 Feb 23,14,Ormond,East Malvern Marina,No. 4,Melissa Cogdon,Leanne Lawrence,,3-3,3,3,0,0,Unfinished,false,false,false
+AP013151,04 Mar 23,15,Tennis World,Mordialloc,No. 1,Carly Crowe,Arousahka Freyny,Carly Crowe,8-1,8,1,1,0,Completed,true,false,true
+AP013151,04 Mar 23,15,Tennis World,Mordialloc,No. 2,Sharada Van Min,Linda Clucas,Sharada Van Min,8-1,8,1,1,0,Completed,true,false,false
+AP013151,04 Mar 23,15,Tennis World,Mordialloc,No. 3,Galina Polekhina,Elise Jackson,Galina Polekhina,8-4,8,4,1,0,Completed,true,false,false
+AP013151,04 Mar 23,15,Tennis World,Mordialloc,No. 4,Dana Visescu,Elise Blanchfield,Dana Visescu,8-3,8,3,1,0,Completed,true,false,false
+AP013152,04 Mar 23,15,Mentone,Ormond,No. 1,Paris Stenhouse,Rivka Garson,Paris Stenhouse,8-1,8,1,1,0,Completed,true,false,false
+AP013152,04 Mar 23,15,Mentone,Ormond,No. 2,Jasmine Farrugia,Raine Xiao,Jasmine Farrugia,8-1,8,1,1,0,Completed,true,false,false
+AP013152,04 Mar 23,15,Mentone,Ormond,No. 3,Laoise Comerford,Melissa Cogdon,Laoise Comerford,8-0,8,0,1,0,Completed,true,false,false
+AP013152,04 Mar 23,15,Mentone,Ormond,No. 4,Angelina Kotzakotsidis,Jasmine Yu,Angelina Kotzakotsidis,8-1,8,1,1,0,Completed,true,false,false
+AP013321,,16,Tennis World,Mentone,No. 1,Carly Crowe,Tiara Wickramage,Tiara Wickramage,2-8,2,8,0,1,Completed,true,false,false
+AP013321,,16,Tennis World,Mentone,No. 2,Sharada Van Min,Paris Stenhouse,Sharada Van Min,8-0,8,0,1,0,Completed,true,false,false
+AP013321,,16,Tennis World,Mentone,No. 3,Galina Polekhina,Jasmine Farrugia,Jasmine Farrugia,4-8,4,8,0,1,Completed,true,false,false
+AP013321,,16,Tennis World,Mentone,No. 4,Dana Visescu,Laoise Comerford,Dana Visescu,8-3,8,3,1,0,Completed,true,false,false

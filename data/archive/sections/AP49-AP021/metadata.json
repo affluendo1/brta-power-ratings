@@ -1,0 +1,91 @@
+{
+  "asset_id": "AP49-AP021",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 24/25",
+  "season_id": "AP49",
+  "season_label": "Summer 24/25",
+  "source_section_code": "AP021",
+  "section_label": "Mens Rubs 1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Elwood Blue",
+      "wins": 14,
+      "points": 104,
+      "percentage": 192.74,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Kooyong",
+      "wins": 9,
+      "points": 85,
+      "percentage": 201.9,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Kings Park",
+      "wins": 6,
+      "points": 61.5,
+      "percentage": 105.68,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "St Anthony's",
+      "wins": 4,
+      "points": 44,
+      "percentage": 63.04,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Albert Park",
+      "wins": 3,
+      "points": 41.5,
+      "percentage": 73.14,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Hurlingham Park",
+      "wins": 2,
+      "points": 24,
+      "percentage": 62.46,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP49-AP021",
+  "fixtures": 46,
+  "completed_fixtures": 41,
+  "draw_fixtures": 46,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 156,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP021012 doubles No. 1: '6-2 3-2'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP021013 doubles No. 1: '6-0 2-0'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP021013 doubles No. 2: '4-3'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

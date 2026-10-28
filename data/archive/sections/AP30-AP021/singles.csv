@@ -1,0 +1,227 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP021011,04 Oct 14,1,Le Page,BLTC,No. 1,Dylan Taylor,Josh Brown,Josh Brown,5-8,5,8,0,1,Completed,true,false,false
+AP021011,04 Oct 14,1,Le Page,BLTC,No. 2,Josh Groves,Wes Flavell,Wes Flavell,3-8,3,8,0,1,Completed,true,false,false
+AP021011,04 Oct 14,1,Le Page,BLTC,No. 3,Tony Gatti,Lachlan Cooper,Lachlan Cooper,7-9,7,9,0,1,Completed,true,false,false
+AP021011,04 Oct 14,1,Le Page,BLTC,No. 4,Jason Bartonek,Alexander Browne,Jason Bartonek,8-2,8,2,1,0,Completed,true,false,false
+AP021012,04 Oct 14,1,East Malvern,GPHC,No. 1,Michael Prior,James Simondson,Michael Prior,8-3,8,3,1,0,Completed,true,false,false
+AP021012,04 Oct 14,1,East Malvern,GPHC,No. 2,Rohith Meneni,Clyde Smithwick,Clyde Smithwick,2-8,2,8,0,1,Completed,true,false,false
+AP021012,04 Oct 14,1,East Malvern,GPHC,No. 3,Jamie Bolic,Anthony Horton,Anthony Horton,4-8,4,8,0,1,Completed,true,false,false
+AP021012,04 Oct 14,1,East Malvern,GPHC,No. 4,Alex Fagarasan,James Roach,James Roach,6-8,6,8,0,1,Completed,true,false,false
+AP021013,04 Oct 14,1,Murrumbeena,Ormond,No. 1,Russell Thompson,Steve Gelagin,Russell Thompson,9-8,9,8,1,0,Completed,true,false,false
+AP021013,04 Oct 14,1,Murrumbeena,Ormond,No. 2,Senya Rudoy,Brenton Stokie,Senya Rudoy,8-5,8,5,1,0,Completed,true,false,false
+AP021013,04 Oct 14,1,Murrumbeena,Ormond,No. 3,Jacob Thompson,Bill Pollock,Bill Pollock,3-8,3,8,0,1,Completed,true,false,false
+AP021013,04 Oct 14,1,Murrumbeena,Ormond,No. 4,Jared Thompson,Dylan Helm,Dylan Helm,6-8,6,8,0,1,Completed,true,false,false
+AP021014,04 Oct 14,1,Maccabi 1,Maccabi 2,No. 1,Alex Vainer,Jack Eydlish,Alex Vainer,8-0,8,0,1,0,Completed,true,false,false
+AP021014,04 Oct 14,1,Maccabi 1,Maccabi 2,No. 2,Daniel Goodrich,Adam Blumberg,Daniel Goodrich,9-8,9,8,1,0,Completed,true,false,false
+AP021014,04 Oct 14,1,Maccabi 1,Maccabi 2,No. 3,Robert Schattner,Jarrod Kenley,Robert Schattner,8-0,8,0,1,0,Completed,true,false,false
+AP021014,04 Oct 14,1,Maccabi 1,Maccabi 2,No. 4,Adam Rapoport,Matthew Lincoln,Adam Rapoport,8-3,8,3,1,0,Completed,true,false,false
+AP021021,11 Oct 14,2,Maccabi 2,Le Page,No. 1,Jack Eydlish,Josh Groves,Josh Groves,5-8,5,8,0,1,Completed,true,false,false
+AP021021,11 Oct 14,2,Maccabi 2,Le Page,No. 2,Miguel Donnenfeld,Adrian Zalega,Adrian Zalega,6-8,6,8,0,1,Completed,true,false,false
+AP021021,11 Oct 14,2,Maccabi 2,Le Page,No. 3,Adam Blumberg,Jason Bartonek,Adam Blumberg,8-3,8,3,1,0,Completed,true,false,false
+AP021021,11 Oct 14,2,Maccabi 2,Le Page,No. 4,Matthew Lincoln,Alex Alvarenga,Matthew Lincoln,8-6,8,6,1,0,Completed,true,false,false
+AP021022,11 Oct 14,2,BLTC,East Malvern,No. 1,Josh Brown,Paul Tamburro,Josh Brown,9-7,9,7,1,0,Completed,true,false,false
+AP021022,11 Oct 14,2,BLTC,East Malvern,No. 2,Wes Flavell,Chris Woods,Wes Flavell,8-3,8,3,1,0,Completed,true,false,false
+AP021022,11 Oct 14,2,BLTC,East Malvern,No. 3,Jack Knight,Rohith Meneni,Rohith Meneni,3-8,3,8,0,1,Completed,true,false,false
+AP021022,11 Oct 14,2,BLTC,East Malvern,No. 4,Sahishnu Siva Ram,Alex Fagarasan,Sahishnu Siva Ram,8-3,8,3,1,0,Completed,true,false,false
+AP021023,11 Oct 14,2,GPHC,Murrumbeena,No. 1,Jack Chelotti,Senya Rudoy,Jack Chelotti,8-4,8,4,1,0,Completed,true,false,false
+AP021023,11 Oct 14,2,GPHC,Murrumbeena,No. 2,Charlie Zagon-Davies,Jacob Thompson,Jacob Thompson,4-8,4,8,0,1,Completed,true,false,false
+AP021023,11 Oct 14,2,GPHC,Murrumbeena,No. 3,James Simondson,Jared Thompson,James Simondson,8-4,8,4,1,0,Completed,true,false,false
+AP021023,11 Oct 14,2,GPHC,Murrumbeena,No. 4,James Roach,Nick Dellaj,James Roach,8-0,8,0,1,0,Completed,true,false,false
+AP021024,11 Oct 14,2,Ormond,Maccabi 1,No. 1,Steve Gelagin,Daniel Goodrich,Steve Gelagin,8-2,8,2,1,0,Completed,true,false,false
+AP021024,11 Oct 14,2,Ormond,Maccabi 1,No. 2,Dylan Helm,Adam Rapoport,Adam Rapoport,3-8,3,8,0,1,Completed,true,false,false
+AP021024,11 Oct 14,2,Ormond,Maccabi 1,No. 3,Miron Meydan,John Kende,John Kende,6-8,6,8,0,1,Completed,true,false,false
+AP021024,11 Oct 14,2,Ormond,Maccabi 1,No. 4,Rowland Lampitt,David Schattner,Rowland Lampitt,8-0,8,0,1,0,Completed,true,false,false
+AP021031,18 Oct 14,3,Le Page,Ormond,No. 1,Josh Groves,Vlad Orda,Vlad Orda,6-8,6,8,0,1,Completed,true,false,false
+AP021031,18 Oct 14,3,Le Page,Ormond,No. 2,Jason Bartonek,Bill Pollock,Jason Bartonek,8-6,8,6,1,0,Completed,true,false,false
+AP021031,18 Oct 14,3,Le Page,Ormond,No. 3,Alex Alvarenga,Miron Meydan,Alex Alvarenga,8-5,8,5,1,0,Completed,true,false,false
+AP021031,18 Oct 14,3,Le Page,Ormond,No. 4,Boris Alvarenga,Rowland Lampitt,Rowland Lampitt,1-8,1,8,0,1,Completed,true,false,false
+AP021032,18 Oct 14,3,East Malvern,Maccabi 2,No. 1,Michael Prior,Joel Rabinov,Michael Prior,8-0,8,0,1,0,Completed,true,false,false
+AP021032,18 Oct 14,3,East Malvern,Maccabi 2,No. 2,Alex Fagarasan,Adam Blumberg,Alex Fagarasan,9-8,9,8,1,0,Completed,true,false,false
+AP021032,18 Oct 14,3,East Malvern,Maccabi 2,No. 3,Chris Woods,Jarrod Kenley,Chris Woods,8-4,8,4,1,0,Completed,true,false,false
+AP021032,18 Oct 14,3,East Malvern,Maccabi 2,No. 4,Rohith Meneni,Ray Thompson,Ray Thompson,7-9,7,9,0,1,Completed,true,false,false
+AP021033,18 Oct 14,3,Murrumbeena,BLTC,No. 1,Oliver Stanley,Josh Brown,Josh Brown,5-8,5,8,0,1,Completed,true,false,false
+AP021033,18 Oct 14,3,Murrumbeena,BLTC,No. 2,Senya Rudoy,Wes Flavell,Wes Flavell,1-8,1,8,0,1,Completed,true,false,false
+AP021033,18 Oct 14,3,Murrumbeena,BLTC,No. 3,Jacob Thompson,Lachlan Cooper,Lachlan Cooper,3-8,3,8,0,1,Completed,true,false,false
+AP021033,18 Oct 14,3,Murrumbeena,BLTC,No. 4,Jared Thompson,Alexander Browne,Alexander Browne,7-9,7,9,0,1,Completed,true,false,false
+AP021034,18 Oct 14,3,Maccabi 1,GPHC,No. 1,Daniel Goodrich,Will Selbie,Will Selbie,3-8,3,8,0,1,Completed,true,false,false
+AP021034,18 Oct 14,3,Maccabi 1,GPHC,No. 2,Robert Schattner,Charlie Zagon-Davies,Robert Schattner,8-2,8,2,1,0,Completed,true,false,false
+AP021034,18 Oct 14,3,Maccabi 1,GPHC,No. 3,Adam Rapoport,Clyde Smithwick,Adam Rapoport,8-0,8,0,1,0,Completed,true,false,false
+AP021034,18 Oct 14,3,Maccabi 1,GPHC,No. 4,David Schattner,Max Double,Max Double,0-8,0,8,0,1,Completed,true,false,false
+AP021041,25 Oct 14,4,GPHC,Le Page,No. 1,James Simondson,Dylan Taylor,Dylan Taylor,0-8,0,8,0,1,Completed,true,false,false
+AP021041,25 Oct 14,4,GPHC,Le Page,No. 2,Clyde Smithwick,Josh Groves,Clyde Smithwick,8-6,8,6,1,0,Completed,true,false,false
+AP021041,25 Oct 14,4,GPHC,Le Page,No. 3,Charlie Zagon-Davies,Alex Alvarenga,Charlie Zagon-Davies,8-6,8,6,1,0,Completed,true,false,false
+AP021041,25 Oct 14,4,GPHC,Le Page,No. 4,James Roach,Boris Alvarenga,James Roach,8-1,8,1,1,0,Completed,true,false,false
+AP021042,25 Oct 14,4,Ormond,East Malvern,No. 1,Brenton Stokie,Paul Tamburro,Paul Tamburro,2-8,2,8,0,1,Completed,true,false,false
+AP021042,25 Oct 14,4,Ormond,East Malvern,No. 2,Dylan Helm,Alex Fagarasan,Alex Fagarasan,1-8,1,8,0,1,Completed,true,false,false
+AP021042,25 Oct 14,4,Ormond,East Malvern,No. 3,Eugene Mougerman,Rohith Meneni,Eugene Mougerman,9-8,9,8,1,0,Completed,true,false,false
+AP021042,25 Oct 14,4,Ormond,East Malvern,No. 4,Aaron Rusnak,Ralph Muir-Morris,Aaron Rusnak,9-8,9,8,1,0,Completed,true,false,false
+AP021043,25 Oct 14,4,Maccabi 2,Murrumbeena,No. 1,Miguel Donnenfeld,Anshu Vijay,Anshu Vijay,2-8,2,8,0,1,Completed,true,false,false
+AP021043,25 Oct 14,4,Maccabi 2,Murrumbeena,No. 2,Paul Koltun,Senya Rudoy,Senya Rudoy,8-9,8,9,0,1,Completed,true,false,false
+AP021043,25 Oct 14,4,Maccabi 2,Murrumbeena,No. 3,Jarrod Kenley,Jacob Thompson,Jacob Thompson,7-9,7,9,0,1,Completed,true,false,false
+AP021043,25 Oct 14,4,Maccabi 2,Murrumbeena,No. 4,Matthew Lincoln,Jared Thompson,Matthew Lincoln,8-4,8,4,1,0,Completed,true,false,false
+AP021044,25 Oct 14,4,BLTC,Maccabi 1,No. 1,Wes Flavell,Robert Schattner,Wes Flavell,8-3,8,3,1,0,Completed,true,false,false
+AP021044,25 Oct 14,4,BLTC,Maccabi 1,No. 2,Lachlan Cooper,Adam Rapoport,Lachlan Cooper,8-2,8,2,1,0,Completed,true,false,false
+AP021044,25 Oct 14,4,BLTC,Maccabi 1,No. 3,Alexander Browne,David Schattner,Alexander Browne,9-8,9,8,1,0,Completed,true,false,false
+AP021044,25 Oct 14,4,BLTC,Maccabi 1,No. 4,Sahishnu Siva Ram,John Kende,Sahishnu Siva Ram,8-5,8,5,1,0,Completed,true,false,false
+AP021051,08 Nov 14,5,Murrumbeena,Maccabi 1,No. 1,Oliver Stanley,Daniel Goodrich,Oliver Stanley,8-4,8,4,1,0,Completed,true,false,false
+AP021051,08 Nov 14,5,Murrumbeena,Maccabi 1,No. 2,Senya Rudoy,Adam Rapoport,Adam Rapoport,3-8,3,8,0,1,Completed,true,false,false
+AP021051,08 Nov 14,5,Murrumbeena,Maccabi 1,No. 3,Jacob Thompson,Sam Strunin,Jacob Thompson,8-4,8,4,1,0,Completed,true,false,false
+AP021051,08 Nov 14,5,Murrumbeena,Maccabi 1,No. 4,Jared Thompson,Avi Gigi,Avi Gigi,4-8,4,8,0,1,Completed,true,false,false
+AP021052,08 Nov 14,5,Maccabi 2,Ormond,No. 1,Jack Eydlish,Steve Gelagin,Jack Eydlish,9-7,9,7,1,0,Completed,true,false,false
+AP021052,08 Nov 14,5,Maccabi 2,Ormond,No. 2,Paul Koltun,Brenton Stokie,Paul Koltun,8-1,8,1,1,0,Completed,true,false,false
+AP021052,08 Nov 14,5,Maccabi 2,Ormond,No. 3,Joel Rabinov,Dylan Helm,Joel Rabinov,8-0,8,0,1,0,Completed,true,false,false
+AP021052,08 Nov 14,5,Maccabi 2,Ormond,No. 4,Adam Blumberg,Miron Meydan,Adam Blumberg,8-1,8,1,1,0,Completed,true,false,false
+AP021053,08 Nov 14,5,GPHC,BLTC,No. 1,Jack Chelotti,Josh Brown,Josh Brown,8-9,8,9,0,1,Completed,true,false,false
+AP021053,08 Nov 14,5,GPHC,BLTC,No. 2,Will Goss,Wes Flavell,Will Goss,8-1,8,1,1,0,Completed,true,false,false
+AP021053,08 Nov 14,5,GPHC,BLTC,No. 3,Charlie Zagon-Davies,Lachlan Cooper,Lachlan Cooper,5-8,5,8,0,1,Completed,true,false,false
+AP021053,08 Nov 14,5,GPHC,BLTC,No. 4,James Roach,Alexander Browne,Alexander Browne,2-8,2,8,0,1,Completed,true,false,false
+AP021054,08 Nov 14,5,Le Page,East Malvern,No. 1,Dylan Taylor,Paul Tamburro,Dylan Taylor,8-5,8,5,1,0,Completed,true,false,false
+AP021054,08 Nov 14,5,Le Page,East Malvern,No. 2,Jason Bartonek,Alex Fagarasan,Jason Bartonek,8-1,8,1,1,0,Completed,true,false,false
+AP021054,08 Nov 14,5,Le Page,East Malvern,No. 3,Alex Alvarenga,Michael Prior,Michael Prior,6-8,6,8,0,1,Completed,true,false,false
+AP021054,08 Nov 14,5,Le Page,East Malvern,No. 4,Boris Alvarenga,Rohith Meneni,Rohith Meneni,2-8,2,8,0,1,Completed,true,false,false
+AP021061,15 Nov 14,6,East Malvern,Murrumbeena,No. 1,Paul Tamburro,Anshu Vijay,Anshu Vijay,3-8,3,8,0,1,Completed,true,false,false
+AP021061,15 Nov 14,6,East Malvern,Murrumbeena,No. 2,Chris Woods,Jacob Thompson,Chris Woods,9-8,9,8,1,0,Completed,true,false,false
+AP021061,15 Nov 14,6,East Malvern,Murrumbeena,No. 3,Rohith Meneni,Jared Thompson,Rohith Meneni,8-5,8,5,1,0,Completed,true,false,false
+AP021061,15 Nov 14,6,East Malvern,Murrumbeena,No. 4,Ralph Muir-Morris,Nick Dellaj,Ralph Muir-Morris,9-7,9,7,1,0,Completed,true,false,false
+AP021062,15 Nov 14,6,Maccabi 1,Le Page,No. 1,Alex Vainer,Dylan Taylor,Dylan Taylor,3-8,3,8,0,1,Completed,true,false,false
+AP021062,15 Nov 14,6,Maccabi 1,Le Page,No. 2,Daniel Goodrich,Josh Groves,Josh Groves,4-8,4,8,0,1,Completed,true,false,false
+AP021062,15 Nov 14,6,Maccabi 1,Le Page,No. 3,Adam Rapoport,Alex Alvarenga,Adam Rapoport,8-4,8,4,1,0,Completed,true,false,false
+AP021062,15 Nov 14,6,Maccabi 1,Le Page,No. 4,David Schattner,Boris Alvarenga,David Schattner,8-4,8,4,1,0,Completed,true,false,false
+AP021063,15 Nov 14,6,Ormond,GPHC,No. 1,Steve Gelagin,James Simondson,Steve Gelagin,8-1,8,1,1,0,Completed,true,false,false
+AP021063,15 Nov 14,6,Ormond,GPHC,No. 2,Dylan Helm,Charlie Zagon-Davies,Charlie Zagon-Davies,5-8,5,8,0,1,Completed,true,false,false
+AP021063,15 Nov 14,6,Ormond,GPHC,No. 3,Eugene Mougerman,Mark Pallozzi,Mark Pallozzi,1-8,1,8,0,1,Completed,true,false,false
+AP021063,15 Nov 14,6,Ormond,GPHC,No. 4,Aaron Rusnak,Lok Chow,Lok Chow,5-8,5,8,0,1,Completed,true,false,false
+AP021064,15 Nov 14,6,BLTC,Maccabi 2,No. 1,Josh Brown,Jack Eydlish,Josh Brown,8-2,8,2,1,0,Completed,true,false,false
+AP021064,15 Nov 14,6,BLTC,Maccabi 2,No. 2,Wes Flavell,Miguel Donnenfeld,Miguel Donnenfeld,8-9,8,9,0,1,Completed,true,false,false
+AP021064,15 Nov 14,6,BLTC,Maccabi 2,No. 3,Alexander Browne,Matthew Lincoln,Matthew Lincoln,4-8,4,8,0,1,Completed,true,false,false
+AP021064,15 Nov 14,6,BLTC,Maccabi 2,No. 4,Sahishnu Siva Ram,Nick Lincoln,Sahishnu Siva Ram,9-7,9,7,1,0,Completed,true,false,false
+AP021071,22 Nov 14,7,Le Page,Murrumbeena,No. 1,Dylan Taylor,Oliver Stanley,Oliver Stanley,4-8,4,8,0,1,Completed,true,false,false
+AP021071,22 Nov 14,7,Le Page,Murrumbeena,No. 2,Josh Groves,Senya Rudoy,Josh Groves,8-5,8,5,1,0,Completed,true,false,false
+AP021071,22 Nov 14,7,Le Page,Murrumbeena,No. 3,Adrian Zalega,Jacob Thompson,Jacob Thompson,3-8,3,8,0,1,Completed,true,false,false
+AP021071,22 Nov 14,7,Le Page,Murrumbeena,No. 4,Alex Alvarenga,Jared Thompson,Alex Alvarenga,8-0,8,0,1,0,Completed,true,false,false
+AP021072,22 Nov 14,7,East Malvern,Maccabi 1,No. 1,Paul Tamburro,Daniel Goodrich,Paul Tamburro,8-4,8,4,1,0,Completed,true,false,false
+AP021072,22 Nov 14,7,East Malvern,Maccabi 1,No. 2,Alex Fagarasan,Adam Rapoport,Adam Rapoport,2-8,2,8,0,1,Completed,true,false,false
+AP021072,22 Nov 14,7,East Malvern,Maccabi 1,No. 3,Chris Woods,John Kende,Chris Woods,9-7,9,7,1,0,Completed,true,false,false
+AP021072,22 Nov 14,7,East Malvern,Maccabi 1,No. 4,Michael Prior,Julian Keller,Michael Prior,8-4,8,4,1,0,Completed,true,false,false
+AP021073,22 Nov 14,7,Maccabi 2,GPHC,No. 1,Paul Koltun,Tim O'Loughlin,Paul Koltun,8-5,8,5,1,0,Completed,true,false,false
+AP021073,22 Nov 14,7,Maccabi 2,GPHC,No. 2,Joel Rabinov,Will Goss,Joel Rabinov,8-6,8,6,1,0,Completed,true,false,false
+AP021073,22 Nov 14,7,Maccabi 2,GPHC,No. 3,Adam Blumberg,Jack Chelotti,Jack Chelotti,1-8,1,8,0,1,Completed,true,false,false
+AP021073,22 Nov 14,7,Maccabi 2,GPHC,No. 4,Matthew Lincoln,Clyde Smithwick,Clyde Smithwick,4-8,4,8,0,1,Completed,true,false,false
+AP021074,22 Nov 14,7,Ormond,BLTC,No. 1,Steve Gelagin,Wes Flavell,Steve Gelagin,8-4,8,4,1,0,Completed,true,false,false
+AP021074,22 Nov 14,7,Ormond,BLTC,No. 2,Brenton Stokie,Lachlan Cooper,Lachlan Cooper,4-8,4,8,0,1,Completed,true,false,false
+AP021074,22 Nov 14,7,Ormond,BLTC,No. 3,Dylan Helm,Jack Knight,Dylan Helm,8-3,8,3,1,0,Completed,true,false,false
+AP021074,22 Nov 14,7,Ormond,BLTC,No. 4,Eugene Mougerman,Sahishnu Siva Ram,Sahishnu Siva Ram,3-8,3,8,0,1,Completed,true,false,false
+AP021081,29 Nov 14,8,BLTC,Le Page,No. 1,Josh Brown,Dylan Taylor,Josh Brown,8-3,8,3,1,0,Completed,true,false,false
+AP021081,29 Nov 14,8,BLTC,Le Page,No. 2,Wes Flavell,Jason Bartonek,Wes Flavell,8-3,8,3,1,0,Completed,true,false,false
+AP021081,29 Nov 14,8,BLTC,Le Page,No. 3,Lachlan Cooper,Alex Alvarenga,Lachlan Cooper,8-3,8,3,1,0,Completed,true,false,false
+AP021081,29 Nov 14,8,BLTC,Le Page,No. 4,Sahishnu Siva Ram,Boris Alvarenga,Sahishnu Siva Ram,8-5,8,5,1,0,Completed,true,false,false
+AP021082,29 Nov 14,8,GPHC,East Malvern,No. 1,Will Goss,Paul Tamburro,Will Goss,8-4,8,4,1,0,Completed,true,false,false
+AP021082,29 Nov 14,8,GPHC,East Malvern,No. 2,Charlie Zagon-Davies,Alex Fagarasan,Alex Fagarasan,4-8,4,8,0,1,Completed,true,false,false
+AP021082,29 Nov 14,8,GPHC,East Malvern,No. 3,Mark Pallozzi,Chris Woods,Mark Pallozzi,8-5,8,5,1,0,Completed,true,false,false
+AP021082,29 Nov 14,8,GPHC,East Malvern,No. 4,James Roach,Rohith Meneni,Rohith Meneni,6-8,6,8,0,1,Completed,true,false,false
+AP021083,29 Nov 14,8,Ormond,Murrumbeena,No. 1,Steve Gelagin,Oliver Stanley,Oliver Stanley,2-8,2,8,0,1,Completed,true,false,false
+AP021083,29 Nov 14,8,Ormond,Murrumbeena,No. 2,Dylan Helm,Senya Rudoy,Senya Rudoy,6-8,6,8,0,1,Completed,true,false,false
+AP021083,29 Nov 14,8,Ormond,Murrumbeena,No. 3,Eugene Mougerman,Jacob Thompson,Eugene Mougerman,8-5,8,5,1,0,Completed,true,false,false
+AP021083,29 Nov 14,8,Ormond,Murrumbeena,No. 4,Aaron Rusnak,Jared Thompson,Aaron Rusnak,8-3,8,3,1,0,Completed,true,false,false
+AP021084,29 Nov 14,8,Maccabi 2,Maccabi 1,No. 1,Jack Eydlish,Daniel Goodrich,Jack Eydlish,8-2,8,2,1,0,Completed,true,false,false
+AP021084,29 Nov 14,8,Maccabi 2,Maccabi 1,No. 2,Miguel Donnenfeld,Adam Rapoport,Adam Rapoport,5-8,5,8,0,1,Completed,true,false,false
+AP021084,29 Nov 14,8,Maccabi 2,Maccabi 1,No. 3,Joel Rabinov,Ray Thompson,Ray Thompson,2-8,2,8,0,1,Completed,true,false,false
+AP021084,29 Nov 14,8,Maccabi 2,Maccabi 1,No. 4,Matthew Lincoln,David Schattner,Matthew Lincoln,8-2,8,2,1,0,Completed,true,false,false
+AP021091,06 Dec 14,9,Le Page,Maccabi 2,No. 1,Dylan Taylor,Paul Koltun,Dylan Taylor,8-3,8,3,1,0,Completed,true,false,false
+AP021091,06 Dec 14,9,Le Page,Maccabi 2,No. 2,Jason Bartonek,Joel Rabinov,Joel Rabinov,2-8,2,8,0,1,Completed,true,false,false
+AP021091,06 Dec 14,9,Le Page,Maccabi 2,No. 3,Alex Alvarenga,Adam Blumberg,Adam Blumberg,4-8,4,8,0,1,Completed,true,false,false
+AP021091,06 Dec 14,9,Le Page,Maccabi 2,No. 4,Tony Gatti,Matthew Lincoln,Matthew Lincoln,6-8,6,8,0,1,Completed,true,false,false
+AP021092,06 Dec 14,9,East Malvern,BLTC,No. 1,Paul Tamburro,Josh Brown,Josh Brown,2-8,2,8,0,1,Completed,true,false,false
+AP021092,06 Dec 14,9,East Malvern,BLTC,No. 2,Michael Prior,Wes Flavell,Wes Flavell,2-8,2,8,0,1,Completed,true,false,false
+AP021092,06 Dec 14,9,East Malvern,BLTC,No. 3,Chris Woods,Lachlan Cooper,Lachlan Cooper,7-9,7,9,0,1,Completed,true,false,false
+AP021092,06 Dec 14,9,East Malvern,BLTC,No. 4,Ralph Muir-Morris,Sahishnu Siva Ram,Sahishnu Siva Ram,3-8,3,8,0,1,Completed,true,false,false
+AP021093,06 Dec 14,9,Murrumbeena,GPHC,No. 1,Oliver Stanley,Jack Chelotti,Jack Chelotti,6-8,6,8,0,1,Completed,true,false,false
+AP021093,06 Dec 14,9,Murrumbeena,GPHC,No. 2,Senya Rudoy,Will Goss,Will Goss,0-8,0,8,0,1,Completed,true,false,false
+AP021093,06 Dec 14,9,Murrumbeena,GPHC,No. 3,Jacob Thompson,Mark Pallozzi,Mark Pallozzi,4-8,4,8,0,1,Completed,true,false,false
+AP021093,06 Dec 14,9,Murrumbeena,GPHC,No. 4,Jared Thompson,James Roach,James Roach,1-8,1,8,0,1,Completed,true,false,false
+AP021094,06 Dec 14,9,Maccabi 1,Ormond,No. 1,Daniel Goodrich,Steve Gelagin,Steve Gelagin,3-8,3,8,0,1,Completed,true,false,false
+AP021094,06 Dec 14,9,Maccabi 1,Ormond,No. 2,Robert Schattner,Brenton Stokie,Brenton Stokie,6-8,6,8,0,1,Completed,true,false,false
+AP021094,06 Dec 14,9,Maccabi 1,Ormond,No. 3,Adam Rapoport,Dylan Helm,Adam Rapoport,8-0,8,0,1,0,Completed,true,false,false
+AP021094,06 Dec 14,9,Maccabi 1,Ormond,No. 4,David Schattner,Aaron Rusnak,David Schattner,8-1,8,1,1,0,Completed,true,false,false
+AP021101,13 Dec 14,10,Ormond,Le Page,No. 1,Steve Gelagin,Dylan Taylor,Dylan Taylor,0-8,0,8,0,1,Completed,true,false,false
+AP021101,13 Dec 14,10,Ormond,Le Page,No. 2,Brenton Stokie,Josh Groves,Brenton Stokie,8-0,8,0,1,0,Completed,true,false,false
+AP021101,13 Dec 14,10,Ormond,Le Page,No. 3,Eugene Mougerman,Adrian Zalega,Adrian Zalega,5-8,5,8,0,1,Completed,true,false,false
+AP021101,13 Dec 14,10,Ormond,Le Page,No. 4,Rowland Lampitt,Alex Alvarenga,Alex Alvarenga,6-8,6,8,0,1,Completed,true,false,false
+AP021102,13 Dec 14,10,Maccabi 2,East Malvern,No. 1,Miguel Donnenfeld,Paul Tamburro,Paul Tamburro,5-8,5,8,0,1,Completed,true,false,false
+AP021102,13 Dec 14,10,Maccabi 2,East Malvern,No. 2,Paul Koltun,Michael Prior,Paul Koltun,8-3,8,3,1,0,Completed,true,false,false
+AP021102,13 Dec 14,10,Maccabi 2,East Malvern,No. 3,Joel Rabinov,Chris Woods,Joel Rabinov,8-0,8,0,1,0,Completed,true,false,false
+AP021102,13 Dec 14,10,Maccabi 2,East Malvern,No. 4,Adam Blumberg,Brendan Breen,Adam Blumberg,8-1,8,1,1,0,Completed,true,false,false
+AP021104,13 Dec 14,10,GPHC,Maccabi 1,No. 1,Jack Chelotti,Adam Rapoport,Adam Rapoport,3-8,3,8,0,1,Completed,true,false,false
+AP021104,13 Dec 14,10,GPHC,Maccabi 1,No. 2,Will Goss,Robert Schattner,Robert Schattner,5-8,5,8,0,1,Completed,true,false,false
+AP021104,13 Dec 14,10,GPHC,Maccabi 1,No. 3,Charlie Zagon-Davies,Daniel Goodrich,Daniel Goodrich,2-8,2,8,0,1,Completed,true,false,false
+AP021104,13 Dec 14,10,GPHC,Maccabi 1,No. 4,Max Double,David Schattner,Max Double,8-5,8,5,1,0,Completed,true,false,false
+AP021111,07 Feb 15,11,Le Page,GPHC,No. 1,Adrian Zalega,Kim Tran,Kim Tran,5-8,5,8,0,1,Completed,true,false,false
+AP021111,07 Feb 15,11,Le Page,GPHC,No. 2,Alex Alvarenga,Charlie Zagon-Davies,Charlie Zagon-Davies,5-8,5,8,0,1,Completed,true,false,false
+AP021111,07 Feb 15,11,Le Page,GPHC,No. 3,Boris Alvarenga,James Roach,James Roach,2-8,2,8,0,1,Completed,true,false,false
+AP021112,07 Feb 15,11,East Malvern,Ormond,No. 1,Rion Casey,Steve Gelagin,Rion Casey,9-8,9,8,1,0,Completed,true,false,false
+AP021112,07 Feb 15,11,East Malvern,Ormond,No. 2,Alex Fagarasan,Dylan Helm,Alex Fagarasan,8-1,8,1,1,0,Completed,true,false,false
+AP021112,07 Feb 15,11,East Malvern,Ormond,No. 3,Rohith Meneni,Eugene Mougerman,Eugene Mougerman,1-8,1,8,0,1,Completed,true,false,false
+AP021112,07 Feb 15,11,East Malvern,Ormond,No. 4,Chris Woods,Rowland Lampitt,Chris Woods,8-0,8,0,1,0,Completed,true,false,false
+AP021113,07 Feb 15,11,Murrumbeena,Maccabi 2,No. 1,Oliver Stanley,Paul Koltun,Oliver Stanley,8-6,8,6,1,0,Completed,true,false,false
+AP021113,07 Feb 15,11,Murrumbeena,Maccabi 2,No. 2,Senya Rudoy,Joel Rabinov,Joel Rabinov,7-9,7,9,0,1,Completed,true,false,false
+AP021113,07 Feb 15,11,Murrumbeena,Maccabi 2,No. 3,Jacob Thompson,Adam Blumberg,Jacob Thompson,8-5,8,5,1,0,Completed,true,false,false
+AP021113,07 Feb 15,11,Murrumbeena,Maccabi 2,No. 4,Jared Thompson,Jarrod Kenley,Jarrod Kenley,3-8,3,8,0,1,Completed,true,false,false
+AP021114,07 Feb 15,11,Maccabi 1,BLTC,No. 1,Alex Vainer,Josh Brown,Josh Brown,6-8,6,8,0,1,Completed,true,false,false
+AP021114,07 Feb 15,11,Maccabi 1,BLTC,No. 2,Robert Schattner,Wes Flavell,Wes Flavell,7-9,7,9,0,1,Completed,true,false,false
+AP021114,07 Feb 15,11,Maccabi 1,BLTC,No. 3,Bradley Rosenthal,Lachlan Cooper,Bradley Rosenthal,8-6,8,6,1,0,Completed,true,false,false
+AP021114,07 Feb 15,11,Maccabi 1,BLTC,No. 4,Ben Pollack,Alexander Browne,Ben Pollack,8-3,8,3,1,0,Completed,true,false,false
+AP021121,14 Feb 15,12,Maccabi 1,Murrumbeena,No. 1,Robert Schattner,Anshu Vijay,Anshu Vijay,2-8,2,8,0,1,Completed,true,false,false
+AP021121,14 Feb 15,12,Maccabi 1,Murrumbeena,No. 2,Daniel Goodrich,Senya Rudoy,Daniel Goodrich,9-7,9,7,1,0,Completed,true,false,false
+AP021121,14 Feb 15,12,Maccabi 1,Murrumbeena,No. 3,David Schattner,Jacob Thompson,Jacob Thompson,5-8,5,8,0,1,Completed,true,false,false
+AP021121,14 Feb 15,12,Maccabi 1,Murrumbeena,No. 4,John Kende,Jared Thompson,John Kende,8-4,8,4,1,0,Completed,true,false,false
+AP021122,14 Feb 15,12,Ormond,Maccabi 2,No. 1,Brenton Stokie,Jack Eydlish,Jack Eydlish,2-8,2,8,0,1,Completed,true,false,false
+AP021122,14 Feb 15,12,Ormond,Maccabi 2,No. 2,Dylan Helm,Miguel Donnenfeld,Miguel Donnenfeld,4-8,4,8,0,1,Completed,true,false,false
+AP021122,14 Feb 15,12,Ormond,Maccabi 2,No. 3,Eugene Mougerman,Adam Blumberg,Adam Blumberg,4-8,4,8,0,1,Completed,true,false,false
+AP021122,14 Feb 15,12,Ormond,Maccabi 2,No. 4,Miron Meydan,Matthew Lincoln,Matthew Lincoln,5-8,5,8,0,1,Completed,true,false,false
+AP021123,14 Feb 15,12,BLTC,GPHC,No. 1,Josh Brown,James Roach,Josh Brown,8-0,8,0,1,0,Completed,true,false,false
+AP021123,14 Feb 15,12,BLTC,GPHC,No. 2,Lachlan Cooper,James Simondson,Lachlan Cooper,8-1,8,1,1,0,Completed,true,false,false
+AP021123,14 Feb 15,12,BLTC,GPHC,No. 3,Alexander Browne,Charlie Zagon-Davies,Alexander Browne,8-0,8,0,1,0,Completed,true,false,false
+AP021124,14 Feb 15,12,East Malvern,Le Page,No. 1,Rion Casey,Josh Groves,Rion Casey,8-4,8,4,1,0,Completed,true,false,false
+AP021124,14 Feb 15,12,East Malvern,Le Page,No. 2,Alex Fagarasan,Adrian Zalega,Adrian Zalega,3-8,3,8,0,1,Completed,true,false,false
+AP021124,14 Feb 15,12,East Malvern,Le Page,No. 3,Josh Richmond,Alex Alvarenga,Josh Richmond,8-4,8,4,1,0,Completed,true,false,false
+AP021124,14 Feb 15,12,East Malvern,Le Page,No. 4,Josh Weberruss,Boris Alvarenga,Boris Alvarenga,1-8,1,8,0,1,Completed,true,false,false
+AP021131,21 Feb 15,13,Murrumbeena,East Malvern,No. 1,Anshu Vijay,Rion Casey,Anshu Vijay,8-5,8,5,1,0,Completed,true,false,false
+AP021131,21 Feb 15,13,Murrumbeena,East Malvern,No. 2,Boris Rudoy,Chris Woods,Chris Woods,4-8,4,8,0,1,Completed,true,false,false
+AP021131,21 Feb 15,13,Murrumbeena,East Malvern,No. 3,Jacob Thompson,Josh Weberruss,Jacob Thompson,8-4,8,4,1,0,Completed,true,false,false
+AP021131,21 Feb 15,13,Murrumbeena,East Malvern,No. 4,Jared Thompson,Ralph Muir-Morris,Jared Thompson,9-7,9,7,1,0,Completed,true,false,false
+AP021133,21 Feb 15,13,GPHC,Ormond,No. 1,Jack Chelotti,Steve Gelagin,Jack Chelotti,8-0,8,0,1,0,Completed,true,false,false
+AP021133,21 Feb 15,13,GPHC,Ormond,No. 2,Will Goss,Eugene Mougerman,Will Goss,8-0,8,0,1,0,Completed,true,false,false
+AP021133,21 Feb 15,13,GPHC,Ormond,No. 3,James Simondson,Miron Meydan,James Simondson,8-0,8,0,1,0,Completed,true,false,false
+AP021133,21 Feb 15,13,GPHC,Ormond,No. 4,James Roach,[Unnamed emergency — TROLS AP021133 away code 4],James Roach,8-0,8,0,1,0,Completed,false,false,true
+AP021141,28 Feb 15,14,Murrumbeena,Le Page,No. 1,Anshu Vijay,Dylan Taylor,Anshu Vijay,8-2,8,2,1,0,Completed,true,false,false
+AP021141,28 Feb 15,14,Murrumbeena,Le Page,No. 2,Senya Rudoy,Josh Groves,Senya Rudoy,8-2,8,2,1,0,Completed,true,false,false
+AP021141,28 Feb 15,14,Murrumbeena,Le Page,No. 3,Jacob Thompson,Adrian Zalega,Adrian Zalega,2-8,2,8,0,1,Completed,true,false,false
+AP021141,28 Feb 15,14,Murrumbeena,Le Page,No. 4,Jared Thompson,Alex Alvarenga,Alex Alvarenga,2-8,2,8,0,1,Completed,true,false,false
+AP021142,28 Feb 15,14,Maccabi 1,East Malvern,No. 1,Alex Vainer,Rion Casey,Rion Casey,3-8,3,8,0,1,Completed,true,false,false
+AP021142,28 Feb 15,14,Maccabi 1,East Malvern,No. 2,Robert Schattner,Alex Fagarasan,Robert Schattner,8-4,8,4,1,0,Completed,true,false,false
+AP021142,28 Feb 15,14,Maccabi 1,East Malvern,No. 3,Daniel Goodrich,Michael Prior,Michael Prior,2-8,2,8,0,1,Completed,true,false,false
+AP021142,28 Feb 15,14,Maccabi 1,East Malvern,No. 4,Ben Pollack,Rohith Meneni,Rohith Meneni,8-9,8,9,0,1,Completed,true,false,false
+AP021143,28 Feb 15,14,GPHC,Maccabi 2,No. 1,Will Goss,Paul Koltun,Will Goss,9-8,9,8,1,0,Completed,true,false,false
+AP021143,28 Feb 15,14,GPHC,Maccabi 2,No. 2,James Simondson,Joel Rabinov,Joel Rabinov,4-8,4,8,0,1,Completed,true,false,false
+AP021143,28 Feb 15,14,GPHC,Maccabi 2,No. 3,Clyde Smithwick,[Unnamed emergency — TROLS AP021143 away code 3],Clyde Smithwick,8-0,8,0,1,0,Completed,false,false,true
+AP021143,28 Feb 15,14,GPHC,Maccabi 2,No. 4,Charlie Zagon-Davies,Jarrod Kenley,Charlie Zagon-Davies,8-4,8,4,1,0,Completed,true,false,false
+AP021144,28 Feb 15,14,BLTC,Ormond,No. 1,Wes Flavell,Steve Gelagin,Steve Gelagin,7-9,7,9,0,1,Completed,true,false,false
+AP021144,28 Feb 15,14,BLTC,Ormond,No. 2,Lachlan Cooper,Brenton Stokie,Lachlan Cooper,8-1,8,1,1,0,Completed,true,false,false
+AP021144,28 Feb 15,14,BLTC,Ormond,No. 3,Alexander Browne,Dylan Helm,Dylan Helm,3-8,3,8,0,1,Completed,true,false,false
+AP021144,28 Feb 15,14,BLTC,Ormond,No. 4,Sahishnu Siva Ram,Aaron Rusnak,Sahishnu Siva Ram,8-2,8,2,1,0,Completed,true,false,false
+AP021301,,16,BLTC,GPHC,No. 1,Josh Brown,Jack Chelotti,Josh Brown,8-6,8,6,1,0,Completed,true,false,false
+AP021301,,16,BLTC,GPHC,No. 2,Wes Flavell,Will Goss,Wes Flavell,9-7,9,7,1,0,Completed,true,false,false
+AP021301,,16,BLTC,GPHC,No. 3,Lachlan Cooper,Charlie Zagon-Davies,Lachlan Cooper,8-3,8,3,1,0,Completed,true,false,false
+AP021301,,16,BLTC,GPHC,No. 4,Alexander Browne,James Roach,James Roach,1-8,1,8,0,1,Completed,true,false,false
+AP021302,,16,East Malvern,Maccabi 1,No. 1,Rion Casey,Alex Vainer,Rion Casey,8-2,8,2,1,0,Completed,true,true,false
+AP021302,,16,East Malvern,Maccabi 1,No. 2,Alex Fagarasan,Robert Schattner,Robert Schattner,3-8,3,8,0,1,Completed,true,true,false
+AP021302,,16,East Malvern,Maccabi 1,No. 3,Michael Prior,Daniel Goodrich,Michael Prior,8-5,8,5,1,0,Completed,true,true,false
+AP021302,,16,East Malvern,Maccabi 1,No. 4,Rohith Meneni,John Kende,Rohith Meneni,8-6,8,6,1,0,Completed,true,false,false
+AP021311,,16,GPHC,East Malvern,No. 1,Jack Chelotti,Rion Casey,Rion Casey,4-8,4,8,0,1,Completed,true,false,false
+AP021311,,16,GPHC,East Malvern,No. 2,Will Goss,Alex Fagarasan,Will Goss,8-2,8,2,1,0,Completed,true,false,false
+AP021311,,16,GPHC,East Malvern,No. 3,James Simondson,Chris Woods,Chris Woods,1-8,1,8,0,1,Completed,true,false,false
+AP021311,,16,GPHC,East Malvern,No. 4,James Roach,Rohith Meneni,Rohith Meneni,4-8,4,8,0,1,Completed,true,false,false
+AP021321,,17,BLTC,East Malvern,No. 1,Josh Brown,Rion Casey,Josh Brown,9-7,9,7,1,0,Completed,true,false,true
+AP021321,,17,BLTC,East Malvern,No. 2,Wes Flavell,Alex Fagarasan,Wes Flavell,8-3,8,3,1,0,Completed,true,false,true
+AP021321,,17,BLTC,East Malvern,No. 3,Lachlan Cooper,Michael Prior,Lachlan Cooper,8-1,8,1,1,0,Completed,true,false,true
+AP021321,,17,BLTC,East Malvern,No. 4,Alexander Browne,Rohith Meneni,Rohith Meneni,6-8,6,8,0,1,Completed,true,false,false

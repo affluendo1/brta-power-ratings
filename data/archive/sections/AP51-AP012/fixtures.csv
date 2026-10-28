@@ -1,0 +1,60 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP012011,04 Oct 25,1,regular,Round 1,Eaglemont,BLTC Green,1,9,2,7,,,42,59,Completed,
+AP012012,04 Oct 25,1,regular,Round 1,BLTC Blue,BLTC White,8,2,6,4,,,60,55,Completed,
+AP012014,04 Oct 25,1,regular,Round 1,Royal South Yarra,Kooyong,2,8,3,5,,,36,46,Completed,
+pending-ap012-r1-bye-hawthorn,04 Oct 25,1,regular,Round 1,Bye,Hawthorn,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP012021,11 Oct 25,2,regular,Round 2,Kooyong,Eaglemont,7,3,4,4,,,45,44,Completed,
+AP012022,11 Oct 25,2,regular,Round 2,BLTC Green,BLTC Blue,2,8,4,5,,,50,54,Completed,
+AP012024,11 Oct 25,2,regular,Round 2,Hawthorn,Royal South Yarra,3,7,5,5,,,52,53,Completed,
+pending-ap012-r2-bltc-white-bye,11 Oct 25,2,regular,Round 2,BLTC White,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP012031,18 Oct 25,3,regular,Round 3,Eaglemont,Hawthorn,1,9,2,7,,,44,59,Completed,
+AP012032,18 Oct 25,3,regular,Round 3,BLTC Blue,Kooyong,0,10,0,8,,,18,56,Completed,
+AP012034,18 Oct 25,3,regular,Round 3,Royal South Yarra,BLTC White,9,1,7,1,,,50,35,Completed,
+pending-ap012-r3-bye-bltc-green,18 Oct 25,3,regular,Round 3,Bye,BLTC Green,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP012042,25 Oct 25,4,regular,Round 4,Hawthorn,BLTC Blue,10,0,8,2,,,65,40,Completed,
+AP012044,25 Oct 25,4,regular,Round 4,BLTC Green,Royal South Yarra,9,1,7,2,,,58,36,Completed,
+pending-ap012-r4-bltc-white-eaglemont,25 Oct 25,4,regular,Round 4,BLTC White,Eaglemont,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+pending-ap012-r4-kooyong-bye,25 Oct 25,4,regular,Round 4,Kooyong,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap012-r5-bltc-white-bltc-green,08 Nov 25,5,regular,Round 5,BLTC White,BLTC Green,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap012-r5-bye-royal-south-yarra,08 Nov 25,5,regular,Round 5,Bye,Royal South Yarra,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap012-r5-eaglemont-bltc-blue,08 Nov 25,5,regular,Round 5,Eaglemont,BLTC Blue,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap012-r5-kooyong-hawthorn,08 Nov 25,5,regular,Round 5,Kooyong,Hawthorn,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP012062,15 Nov 25,6,regular,Round 6,Royal South Yarra,Eaglemont,8,2,6,3,,,53,40,Completed,
+AP012063,15 Nov 25,6,regular,Round 6,Hawthorn,BLTC White,8,2,5,3,,,45,31,Completed,
+AP012064,15 Nov 25,6,regular,Round 6,BLTC Green,Kooyong,7,3,5,4,,,48,40,Completed,
+pending-ap012-r6-bltc-blue-bye,15 Nov 25,6,regular,Round 6,BLTC Blue,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP012072,22 Nov 25,7,regular,Round 7,BLTC Blue,Royal South Yarra,3,7,3,5,,,25,44,Completed,
+AP012073,22 Nov 25,7,regular,Round 7,Kooyong,BLTC White,0,4,0,5,,,0,36,Completed,
+AP012074,22 Nov 25,7,regular,Round 7,Hawthorn,BLTC Green,1,9,1,7,,,21,50,Completed,
+pending-ap012-r7-eaglemont-bye,22 Nov 25,7,regular,Round 7,Eaglemont,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP012082,29 Nov 25,8,regular,Round 8,BLTC White,BLTC Blue,2,8,3,6,,,46,54,Completed,
+AP012084,29 Nov 25,8,regular,Round 8,Kooyong,Royal South Yarra,9,1,6,2,,,48,28,Completed,
+pending-ap012-r8-bltc-green-eaglemont,29 Nov 25,8,regular,Round 8,BLTC Green,Eaglemont,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+pending-ap012-r8-hawthorn-bye,29 Nov 25,8,regular,Round 8,Hawthorn,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap012-r9-bltc-blue-bltc-green,06 Dec 25,9,regular,Round 9,BLTC Blue,BLTC Green,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap012-r9-bye-bltc-white,06 Dec 25,9,regular,Round 9,Bye,BLTC White,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap012-r9-eaglemont-kooyong,06 Dec 25,9,regular,Round 9,Eaglemont,Kooyong,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap012-r9-royal-south-yarra-hawthorn,06 Dec 25,9,regular,Round 9,Royal South Yarra,Hawthorn,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP012101,13 Dec 25,10,regular,Round 10,Hawthorn,Eaglemont,3,7,4,5,,,40,48,Completed,
+AP012102,13 Dec 25,10,regular,Round 10,Kooyong,BLTC Blue,7,3,5,4,,,45,49,Completed,
+AP012104,13 Dec 25,10,regular,Round 10,BLTC White,Royal South Yarra,0,10,0,8,,,21,56,Completed,
+pending-ap012-r10-bltc-green-bye,13 Dec 25,10,regular,Round 10,BLTC Green,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP012111,07 Feb 26,11,regular,Round 11,Eaglemont,BLTC White,9,1,7,2,,,56,31,Completed,
+AP012112,07 Feb 26,11,regular,Round 11,BLTC Blue,Hawthorn,3,7,4,4,,,42,46,Completed,
+AP012114,07 Feb 26,11,regular,Round 11,Royal South Yarra,BLTC Green,1,9,2,7,,,32,58,Completed,
+pending-ap012-r11-bye-kooyong,07 Feb 26,11,regular,Round 11,Bye,Kooyong,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP012122,14 Feb 26,12,regular,Round 12,Hawthorn,Kooyong,2,8,3,6,,,31,59,Completed,
+AP012123,14 Feb 26,12,regular,Round 12,BLTC Green,BLTC White,10,0,8,0,,,56,22,Completed,
+AP012124,14 Feb 26,12,regular,Round 12,BLTC Blue,Eaglemont,8,2,6,3,,,59,26,Completed,
+pending-ap012-r12-royal-south-yarra-bye,14 Feb 26,12,regular,Round 12,Royal South Yarra,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP012132,21 Feb 26,13,regular,Round 13,Eaglemont,Royal South Yarra,3,7,4,4,,,41,46,Completed,
+AP012133,21 Feb 26,13,regular,Round 13,BLTC White,Hawthorn,8,2,6,2,,,50,33,Completed,
+AP012134,21 Feb 26,13,regular,Round 13,Kooyong,BLTC Green,2,8,3,5,,,36,47,Completed,
+pending-ap012-r13-bye-bltc-blue,21 Feb 26,13,regular,Round 13,Bye,BLTC Blue,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP012142,28 Feb 26,14,regular,Round 14,Royal South Yarra,BLTC Blue,9,1,7,1,,,54,30,Completed,
+AP012143,28 Feb 26,14,regular,Round 14,BLTC White,Kooyong,1,9,1,7,,,24,53,Completed,
+AP012144,28 Feb 26,14,regular,Round 14,BLTC Green,Hawthorn,7,3,5,5,,,60,52,Completed,
+pending-ap012-r14-bye-eaglemont,28 Feb 26,14,regular,Round 14,Bye,Eaglemont,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP012301,,16,semi_final,Semi-final,BLTC Green,Hawthorn,8,2,6,2,,,49,40,Completed,
+AP012302,,16,semi_final,Semi-final,Kooyong,Royal South Yarra,1,9,1,6,,,22,50,Completed,
+AP012321,,17,grand_final,Grand final · TROLS entry 2,BLTC Green,Royal South Yarra,8.5,1.5,5,1,,,45,25,Completed,

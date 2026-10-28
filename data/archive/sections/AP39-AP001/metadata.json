@@ -1,0 +1,111 @@
+{
+  "asset_id": "AP39-AP001",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Winter 2019",
+  "season_id": "AP39",
+  "season_label": "Winter 2019",
+  "source_section_code": "AP001",
+  "section_label": "Ladies Sets 1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Legend Park A",
+      "wins": 9,
+      "points": 85,
+      "percentage": 181.2,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Fitzroy A",
+      "wins": 8,
+      "points": 70,
+      "percentage": 127.59,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Overport Park A",
+      "wins": 5,
+      "points": 55.5,
+      "percentage": 108.7,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Hurlingham Park B",
+      "wins": 6,
+      "points": 55,
+      "percentage": 110.53,
+      "marker": "*"
+    },
+    {
+      "position": 5,
+      "team": "St Louis de Mont A",
+      "wins": 4,
+      "points": 55,
+      "percentage": 98.66,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Port Melbourne B",
+      "wins": 4,
+      "points": 44,
+      "percentage": 102.74,
+      "marker": "*"
+    },
+    {
+      "position": 7,
+      "team": "Hawthorn B",
+      "wins": 2,
+      "points": 36,
+      "percentage": 88.49,
+      "marker": "*"
+    },
+    {
+      "position": 8,
+      "team": "Mordialloc B",
+      "wins": 2,
+      "points": 30,
+      "percentage": 60.91,
+      "marker": ""
+    },
+    {
+      "position": 9,
+      "team": "Ormond B",
+      "wins": 0,
+      "points": 21.5,
+      "percentage": 47.48,
+      "marker": "*"
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 1,
+    "doublesTarget": 10,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP39-AP001",
+  "fixtures": 72,
+  "completed_fixtures": 42,
+  "draw_fixtures": 46,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 168,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

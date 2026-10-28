@@ -1,0 +1,193 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP002011,01 Oct 22,1,Willy Central,BLTC,No. 1,Josh Fleming,Paul Mackey,Paul Mackey,4-8,4,8,0,1,Completed,true,false,true
+AP002011,01 Oct 22,1,Willy Central,BLTC,No. 2,Mark Separovic,Josh Chu-Wise,Mark Separovic,8-6,8,6,1,0,Completed,true,false,false
+AP002011,01 Oct 22,1,Willy Central,BLTC,No. 3,Cooper Whitford,Tom Davoren,Tom Davoren,7-8,7,8,0,1,Completed,true,true,false
+AP002011,01 Oct 22,1,Willy Central,BLTC,No. 4,Harry Melos,Evan Inavolu,Harry Melos,8-2,8,2,1,0,Completed,true,true,true
+AP002012,01 Oct 22,1,Maccabi,Overport Park,No. 1,Max Needleman,Nick Wilson,Nick Wilson,7-8,7,8,0,1,Completed,true,false,false
+AP002012,01 Oct 22,1,Maccabi,Overport Park,No. 2,Marty Schwarz,Charlie Bond,Charlie Bond,1-8,1,8,0,1,Completed,true,true,false
+AP002012,01 Oct 22,1,Maccabi,Overport Park,No. 3,Robert Minc,Frans Verheij,Frans Verheij,6-8,6,8,0,1,Completed,true,false,false
+AP002012,01 Oct 22,1,Maccabi,Overport Park,No. 4,Geoff Rosenberger,Hayden Thomas,Geoff Rosenberger,8-5,8,5,1,0,Completed,true,false,true
+AP002013,01 Oct 22,1,Carmelite Green,Carmelite Red,No. 1,Stefan Konstantidis,Stephen Doig,Stefan Konstantidis,8-5,8,5,1,0,Completed,true,false,false
+AP002013,01 Oct 22,1,Carmelite Green,Carmelite Red,No. 2,Juan Llatse,Ashton Arms,Juan Llatse,8-6,8,6,1,0,Completed,true,false,false
+AP002013,01 Oct 22,1,Carmelite Green,Carmelite Red,No. 3,Daniel Auld,Andrew Ross,Andrew Ross,7-8,7,8,0,1,Completed,true,false,true
+AP002013,01 Oct 22,1,Carmelite Green,Carmelite Red,No. 4,Victor Blitsas,Luke Kinsman,Victor Blitsas,8-1,8,1,1,0,Completed,true,true,false
+AP002023,08 Oct 22,2,Overport Park,Carmelite Green,No. 1,Nick Wilson,Bailey Lu,Nick Wilson,8-4,8,4,1,0,Completed,true,false,true
+AP002023,08 Oct 22,2,Overport Park,Carmelite Green,No. 2,Charlie Bond,Stefan Konstantidis,Stefan Konstantidis,5-8,5,8,0,1,Completed,true,false,false
+AP002023,08 Oct 22,2,Overport Park,Carmelite Green,No. 3,Adam Wade,Juan Llatse,Juan Llatse,3-8,3,8,0,1,Completed,true,false,false
+AP002023,08 Oct 22,2,Overport Park,Carmelite Green,No. 4,Hayden Thomas,Tony Strupl,Tony Strupl,0-8,0,8,0,1,Completed,true,true,false
+AP002024,08 Oct 22,2,Carmelite Red,Mt Eliza,No. 1,Nikola Rakovic,Evan Atkinson,Evan Atkinson,4-8,4,8,0,1,Completed,true,false,false
+AP002024,08 Oct 22,2,Carmelite Red,Mt Eliza,No. 2,Travis Kinsman,Ben Hockey,Travis Kinsman,8-6,8,6,1,0,Completed,true,false,false
+AP002024,08 Oct 22,2,Carmelite Red,Mt Eliza,No. 3,Ashton Arms,Ben Taylor,Ashton Arms,8-2,8,2,1,0,Completed,true,false,false
+AP002024,08 Oct 22,2,Carmelite Red,Mt Eliza,No. 4,Luke Kinsman,Patrick Flood,Patrick Flood,5-8,5,8,0,1,Completed,true,false,true
+AP002031,15 Oct 22,3,Willy Central,Carmelite Red,No. 1,Josh Fleming,Simon Arms,Josh Fleming,8-3,8,3,1,0,Completed,true,false,false
+AP002031,15 Oct 22,3,Willy Central,Carmelite Red,No. 2,Rob McMahon,Nikola Rakovic,Rob McMahon,8-5,8,5,1,0,Completed,true,false,false
+AP002031,15 Oct 22,3,Willy Central,Carmelite Red,No. 3,Steven Cheng,Travis Kinsman,Steven Cheng,8-7,8,7,1,0,Completed,true,true,false
+AP002031,15 Oct 22,3,Willy Central,Carmelite Red,No. 4,Tony Constantine,Ashton Arms,Ashton Arms,4-8,4,8,0,1,Completed,true,true,false
+AP002032,15 Oct 22,3,Maccabi,Black Rock,No. 1,Jesse Flicker,Ali Roshan,Ali Roshan,2-8,2,8,0,1,Completed,true,false,false
+AP002032,15 Oct 22,3,Maccabi,Black Rock,No. 2,Joel Fredman,Marco Bragagnolo,Marco Bragagnolo,3-8,3,8,0,1,Completed,true,false,false
+AP002032,15 Oct 22,3,Maccabi,Black Rock,No. 3,Robert Minc,Lachlan Gotz,Robert Minc,8-4,8,4,1,0,Completed,true,false,true
+AP002032,15 Oct 22,3,Maccabi,Black Rock,No. 4,Geoff Rosenberger,Thomas Abourizk,Geoff Rosenberger,8-7,8,7,1,0,Completed,true,false,true
+AP002033,15 Oct 22,3,Carmelite Green,BLTC,No. 1,Stefan Konstantidis,Josh Chu-Wise,Stefan Konstantidis,8-7,8,7,1,0,Completed,true,false,false
+AP002033,15 Oct 22,3,Carmelite Green,BLTC,No. 2,Juan Llatse,Reilly Scollo,Reilly Scollo,7-8,7,8,0,1,Completed,true,false,false
+AP002033,15 Oct 22,3,Carmelite Green,BLTC,No. 3,Tony Strupl,Brodie Moller,Tony Strupl,8-6,8,6,1,0,Completed,true,false,false
+AP002033,15 Oct 22,3,Carmelite Green,BLTC,No. 4,Theo Mitsinikos,Adam Budge,Adam Budge,7-8,7,8,0,1,Completed,true,false,false
+AP002034,15 Oct 22,3,Mt Eliza,Overport Park,No. 1,Evan Atkinson,Charlie Bond,Charlie Bond,2-8,2,8,0,1,Completed,true,false,false
+AP002034,15 Oct 22,3,Mt Eliza,Overport Park,No. 2,Ben Hockey,Adam Wade,Adam Wade,2-8,2,8,0,1,Completed,true,false,false
+AP002034,15 Oct 22,3,Mt Eliza,Overport Park,No. 3,Ben Taylor,Lachlan Mitchell,Lachlan Mitchell,4-8,4,8,0,1,Completed,true,false,true
+AP002034,15 Oct 22,3,Mt Eliza,Overport Park,No. 4,Patrick Flood,Joel Treveil,Joel Treveil,5-8,5,8,0,1,Completed,true,true,true
+AP002043,22 Oct 22,4,Black Rock,Carmelite Green,No. 1,Ali Roshan,Stefan Konstantidis,Ali Roshan,8-2,8,2,1,0,Completed,true,false,false
+AP002043,22 Oct 22,4,Black Rock,Carmelite Green,No. 2,Rhyse Mazza,Juan Llatse,Rhyse Mazza,8-3,8,3,1,0,Completed,true,false,false
+AP002043,22 Oct 22,4,Black Rock,Carmelite Green,No. 3,Rob Cvitkovic,Tony Strupl,Rob Cvitkovic,8-4,8,4,1,0,Completed,true,false,false
+AP002043,22 Oct 22,4,Black Rock,Carmelite Green,No. 4,Mitchell Aarons,Steve Yurisich,Mitchell Aarons,8-4,8,4,1,0,Completed,true,false,true
+AP002051,05 Nov 22,5,Carmelite Green,Mt Eliza,No. 1,Stefan Konstantidis,Evan Atkinson,Stefan Konstantidis,8-0,8,0,1,0,Completed,true,false,false
+AP002051,05 Nov 22,5,Carmelite Green,Mt Eliza,No. 2,Tony Strupl,Ben Hockey,Tony Strupl,8-1,8,1,1,0,Completed,true,false,false
+AP002051,05 Nov 22,5,Carmelite Green,Mt Eliza,No. 3,George Kypriotis,Ben Taylor,George Kypriotis,8-5,8,5,1,0,Completed,true,false,false
+AP002051,05 Nov 22,5,Carmelite Green,Mt Eliza,No. 4,Steve Yurisich,Sean Reekie,Sean Reekie,3-8,3,8,0,1,Completed,true,true,false
+AP002052,05 Nov 22,5,Black Rock,Carmelite Red,No. 1,Ali Roshan,Simon Arms,Simon Arms,2-8,2,8,0,1,Completed,true,false,false
+AP002052,05 Nov 22,5,Black Rock,Carmelite Red,No. 2,Rob Cvitkovic,Travis Kinsman,Rob Cvitkovic,8-7,8,7,1,0,Completed,true,false,false
+AP002052,05 Nov 22,5,Black Rock,Carmelite Red,No. 3,Marco Bragagnolo,Ashton Arms,Marco Bragagnolo,8-1,8,1,1,0,Completed,true,false,false
+AP002052,05 Nov 22,5,Black Rock,Carmelite Red,No. 4,Mitchell Aarons,Luke Kinsman,Mitchell Aarons,8-1,8,1,1,0,Completed,true,false,false
+AP002053,05 Nov 22,5,Overport Park,BLTC,No. 1,Jayden Cox,Tom Davoren,Jayden Cox,8-6,8,6,1,0,Completed,true,true,false
+AP002053,05 Nov 22,5,Overport Park,BLTC,No. 2,Nick Wilson,Reilly Scollo,Reilly Scollo,1-8,1,8,0,1,Completed,true,false,false
+AP002053,05 Nov 22,5,Overport Park,BLTC,No. 3,Charlie Bond,Brodie Moller,Brodie Moller,7-8,7,8,0,1,Completed,true,false,false
+AP002053,05 Nov 22,5,Overport Park,BLTC,No. 4,Lachlan Mitchell,Tim Witherow,Tim Witherow,7-8,7,8,0,1,Completed,true,true,true
+AP002054,05 Nov 22,5,Willy Central,Maccabi,No. 1,Josh Fleming,Jesse Flicker,Jesse Flicker,5-8,5,8,0,1,Completed,true,false,false
+AP002054,05 Nov 22,5,Willy Central,Maccabi,No. 2,Jordan Davies,Steven Gostin,Steven Gostin,6-8,6,8,0,1,Completed,true,false,false
+AP002054,05 Nov 22,5,Willy Central,Maccabi,No. 3,Rob McMahon,Geoff Rosenberger,Geoff Rosenberger,6-8,6,8,0,1,Completed,true,false,false
+AP002054,05 Nov 22,5,Willy Central,Maccabi,No. 4,Mark Separovic,Jonny Henquin,Jonny Henquin,0-8,0,8,0,1,Completed,true,false,true
+AP002061,12 Nov 22,6,Maccabi,Carmelite Green,No. 1,Max Needleman,Stefan Konstantidis,Max Needleman,8-5,8,5,1,0,Completed,true,false,false
+AP002061,12 Nov 22,6,Maccabi,Carmelite Green,No. 2,Joey Pat,Kal Patrick,Joey Pat,8-7,8,7,1,0,Completed,true,false,false
+AP002061,12 Nov 22,6,Maccabi,Carmelite Green,No. 3,Jesse Flicker,Tony Strupl,Jesse Flicker,8-0,8,0,1,0,Completed,true,false,false
+AP002061,12 Nov 22,6,Maccabi,Carmelite Green,No. 4,Steven Gostin,Theo Mitsinikos,Steven Gostin,8-4,8,4,1,0,Completed,true,false,false
+AP002062,12 Nov 22,6,Mt Eliza,Willy Central,No. 1,Jarred Dungey,Josh Fleming,Jarred Dungey,8-0,8,0,1,0,Completed,true,false,false
+AP002062,12 Nov 22,6,Mt Eliza,Willy Central,No. 2,Evan Atkinson,Travis Shan,Evan Atkinson,8-2,8,2,1,0,Completed,true,false,false
+AP002062,12 Nov 22,6,Mt Eliza,Willy Central,No. 3,Ben Taylor,Cooper Whitford,Cooper Whitford,1-8,1,8,0,1,Completed,true,false,true
+AP002062,12 Nov 22,6,Mt Eliza,Willy Central,No. 4,Patrick Flood,Tony Constantine,Patrick Flood,8-3,8,3,1,0,Completed,true,true,true
+AP002063,12 Nov 22,6,Carmelite Red,Overport Park,No. 1,Simon Arms,Nick Wilson,Simon Arms,8-3,8,3,1,0,Completed,true,false,false
+AP002063,12 Nov 22,6,Carmelite Red,Overport Park,No. 2,Nikola Rakovic,Charlie Bond,Charlie Bond,6-8,6,8,0,1,Completed,true,false,false
+AP002063,12 Nov 22,6,Carmelite Red,Overport Park,No. 3,Travis Kinsman,Adam Wade,Adam Wade,7-8,7,8,0,1,Completed,true,false,false
+AP002063,12 Nov 22,6,Carmelite Red,Overport Park,No. 4,Ashton Arms,Lachlan Mitchell,Ashton Arms,8-7,8,7,1,0,Completed,true,false,true
+AP002064,12 Nov 22,6,BLTC,Black Rock,No. 1,Josh Fairhurst,Rhyse Mazza,Rhyse Mazza,4-8,4,8,0,1,Completed,true,false,false
+AP002064,12 Nov 22,6,BLTC,Black Rock,No. 2,Tom Davoren,Matt Gravina,Tom Davoren,8-2,8,2,1,0,Completed,true,false,false
+AP002064,12 Nov 22,6,BLTC,Black Rock,No. 3,Brodie Moller,Marco Bragagnolo,Brodie Moller,8-4,8,4,1,0,Completed,true,false,false
+AP002064,12 Nov 22,6,BLTC,Black Rock,No. 4,Adam Majdan,Mitchell Aarons,Mitchell Aarons,4-8,4,8,0,1,Completed,true,false,false
+AP002074,19 Nov 22,7,Carmelite Red,BLTC,No. 1,Simon Arms,Tom Davoren,Simon Arms,8-2,8,2,1,0,Completed,true,false,false
+AP002074,19 Nov 22,7,Carmelite Red,BLTC,No. 2,Nikola Rakovic,Brodie Moller,Brodie Moller,2-8,2,8,0,1,Completed,true,false,false
+AP002074,19 Nov 22,7,Carmelite Red,BLTC,No. 3,Travis Kinsman,Tommy Cunningham,Travis Kinsman,8-3,8,3,1,0,Completed,true,false,true
+AP002074,19 Nov 22,7,Carmelite Red,BLTC,No. 4,Luke Kinsman,Adam Majdan,Adam Majdan,1-8,1,8,0,1,Completed,true,false,false
+AP002081,26 Nov 22,8,BLTC,Willy Central,No. 1,Tom Davoren,Josh Fleming,Tom Davoren,8-3,8,3,1,0,Completed,true,false,false
+AP002081,26 Nov 22,8,BLTC,Willy Central,No. 2,Brodie Moller,Jordan Davies,Brodie Moller,8-5,8,5,1,0,Completed,true,false,false
+AP002081,26 Nov 22,8,BLTC,Willy Central,No. 3,Adam Budge,Gim Kurti,Gim Kurti,6-8,6,8,0,1,Completed,true,false,false
+AP002081,26 Nov 22,8,BLTC,Willy Central,No. 4,Tim Witherow,Mark Separovic,Tim Witherow,8-0,8,0,1,0,Completed,true,true,false
+AP002083,26 Nov 22,8,Carmelite Red,Carmelite Green,No. 1,Nikola Rakovic,Stefan Konstantidis,Stefan Konstantidis,1-8,1,8,0,1,Completed,true,false,false
+AP002083,26 Nov 22,8,Carmelite Red,Carmelite Green,No. 2,Travis Kinsman,Juan Llatse,Juan Llatse,7-8,7,8,0,1,Completed,true,false,false
+AP002083,26 Nov 22,8,Carmelite Red,Carmelite Green,No. 3,Ashton Arms,Tony Strupl,Tony Strupl,4-8,4,8,0,1,Completed,true,false,false
+AP002083,26 Nov 22,8,Carmelite Red,Carmelite Green,No. 4,Andrew Ross,Daniel Auld,Andrew Ross,8-6,8,6,1,0,Completed,true,true,false
+AP002084,26 Nov 22,8,Black Rock,Mt Eliza,No. 1,Rhyse Mazza,Jarred Dungey,Rhyse Mazza,8-0,8,0,1,0,Completed,true,false,false
+AP002084,26 Nov 22,8,Black Rock,Mt Eliza,No. 2,Matt Gravina,Evan Atkinson,Evan Atkinson,6-8,6,8,0,1,Completed,true,false,false
+AP002084,26 Nov 22,8,Black Rock,Mt Eliza,No. 3,Marco Bragagnolo,Ben Hockey,Ben Hockey,4-8,4,8,0,1,Completed,true,false,false
+AP002084,26 Nov 22,8,Black Rock,Mt Eliza,No. 4,Mitchell Aarons,Ben Taylor,Mitchell Aarons,8-4,8,4,1,0,Completed,true,false,false
+AP002091,03 Dec 22,9,Willy Central,Black Rock,No. 1,Josh Fleming,Rhyse Mazza,Josh Fleming,8-2,8,2,1,0,Completed,true,false,false
+AP002091,03 Dec 22,9,Willy Central,Black Rock,No. 2,Jordan Davies,Rob Cvitkovic,Rob Cvitkovic,3-8,3,8,0,1,Completed,true,false,false
+AP002091,03 Dec 22,9,Willy Central,Black Rock,No. 3,Gim Kurti,Matt Gravina,Gim Kurti,8-5,8,5,1,0,Completed,true,false,false
+AP002091,03 Dec 22,9,Willy Central,Black Rock,No. 4,Miles Andrew,Marco Bragagnolo,Marco Bragagnolo,6-8,6,8,0,1,Completed,true,true,false
+AP002092,03 Dec 22,9,Maccabi,BLTC,No. 1,Joey Pat,Josh Chu-Wise,Joey Pat,8-5,8,5,1,0,Completed,true,false,false
+AP002092,03 Dec 22,9,Maccabi,BLTC,No. 2,Steven Gostin,Lachie King,Lachie King,0-8,0,8,0,1,Completed,true,false,false
+AP002092,03 Dec 22,9,Maccabi,BLTC,No. 3,Alan Liebowitz,Adam Majdan,Alan Liebowitz,8-3,8,3,1,0,Completed,true,true,false
+AP002092,03 Dec 22,9,Maccabi,BLTC,No. 4,Ryan Behr,Adam Budge,Adam Budge,3-8,3,8,0,1,Completed,true,true,false
+AP002093,03 Dec 22,9,Carmelite Green,Overport Park,No. 1,Stefan Konstantidis,Nick Wilson,Stefan Konstantidis,8-7,8,7,1,0,Completed,true,false,false
+AP002093,03 Dec 22,9,Carmelite Green,Overport Park,No. 2,Juan Llatse,Charlie Bond,Juan Llatse,8-6,8,6,1,0,Completed,true,false,false
+AP002093,03 Dec 22,9,Carmelite Green,Overport Park,No. 3,Tony Strupl,Adam Wade,Tony Strupl,8-4,8,4,1,0,Completed,true,false,false
+AP002093,03 Dec 22,9,Carmelite Green,Overport Park,No. 4,Steve Yurisich,Michael Neylan,Michael Neylan,2-8,2,8,0,1,Completed,true,true,true
+AP002094,03 Dec 22,9,Mt Eliza,Carmelite Red,No. 1,Jarred Dungey,Simon Arms,Jarred Dungey,8-4,8,4,1,0,Completed,true,false,false
+AP002094,03 Dec 22,9,Mt Eliza,Carmelite Red,No. 2,Evan Atkinson,Nikola Rakovic,Evan Atkinson,8-3,8,3,1,0,Completed,true,false,false
+AP002094,03 Dec 22,9,Mt Eliza,Carmelite Red,No. 3,Ben Hockey,Travis Kinsman,Travis Kinsman,3-8,3,8,0,1,Completed,true,false,false
+AP002094,03 Dec 22,9,Mt Eliza,Carmelite Red,No. 4,Ben Taylor,Ashton Arms,Ashton Arms,2-8,2,8,0,1,Completed,true,false,false
+AP002101,10 Dec 22,10,Carmelite Red,Willy Central,No. 1,Simon Arms,Jordan Davies,Simon Arms,8-0,8,0,1,0,Completed,true,false,false
+AP002101,10 Dec 22,10,Carmelite Red,Willy Central,No. 2,Travis Kinsman,Gim Kurti,Travis Kinsman,8-4,8,4,1,0,Completed,true,false,false
+AP002101,10 Dec 22,10,Carmelite Red,Willy Central,No. 3,Ashton Arms,Miles Andrew,Ashton Arms,8-4,8,4,1,0,Completed,true,false,true
+AP002101,10 Dec 22,10,Carmelite Red,Willy Central,No. 4,Luke Kinsman,Harry Melos,Harry Melos,6-8,6,8,0,1,Completed,true,false,true
+AP002102,10 Dec 22,10,Black Rock,Maccabi,No. 1,Ali Roshan,Max Needleman,Ali Roshan,8-1,8,1,1,0,Completed,true,false,false
+AP002102,10 Dec 22,10,Black Rock,Maccabi,No. 2,Rhyse Mazza,Joey Pat,Rhyse Mazza,8-4,8,4,1,0,Completed,true,false,false
+AP002102,10 Dec 22,10,Black Rock,Maccabi,No. 3,Matt Gravina,Steven Gostin,Matt Gravina,8-4,8,4,1,0,Completed,true,false,false
+AP002102,10 Dec 22,10,Black Rock,Maccabi,No. 4,Marco Bragagnolo,Geoff Rosenberger,Marco Bragagnolo,8-4,8,4,1,0,Completed,true,false,false
+AP002103,10 Dec 22,10,BLTC,Carmelite Green,No. 1,Tom Davoren,Stefan Konstantidis,Tom Davoren,8-5,8,5,1,0,Completed,true,false,false
+AP002103,10 Dec 22,10,BLTC,Carmelite Green,No. 2,Tommy Cunningham,Juan Llatse,Juan Llatse,6-8,6,8,0,1,Completed,true,true,false
+AP002103,10 Dec 22,10,BLTC,Carmelite Green,No. 3,Adam Majdan,Tony Strupl,Tony Strupl,6-8,6,8,0,1,Completed,true,false,false
+AP002103,10 Dec 22,10,BLTC,Carmelite Green,No. 4,Adam Budge,Nick Rowe,Adam Budge,8-4,8,4,1,0,Completed,true,false,false
+AP002104,10 Dec 22,10,Overport Park,Mt Eliza,No. 1,Charlie Bond,Evan Atkinson,Evan Atkinson,5-8,5,8,0,1,Completed,true,false,false
+AP002104,10 Dec 22,10,Overport Park,Mt Eliza,No. 2,Adam Wade,Ben Hockey,Adam Wade,8-0,8,0,1,0,Completed,true,false,false
+AP002104,10 Dec 22,10,Overport Park,Mt Eliza,No. 3,Lachlan Mitchell,Ben Taylor,Lachlan Mitchell,8-6,8,6,1,0,Completed,true,true,false
+AP002104,10 Dec 22,10,Overport Park,Mt Eliza,No. 4,Jeremy Gilbert,Archie Stringer,Archie Stringer,5-8,5,8,0,1,Completed,true,true,true
+AP002111,04 Feb 23,11,Willy Central,Overport Park,No. 1,Josh Fleming,Nick Wilson,Josh Fleming,8-4,8,4,1,0,Completed,true,false,false
+AP002111,04 Feb 23,11,Willy Central,Overport Park,No. 2,Gim Kurti,Frans Verheij,Gim Kurti,8-3,8,3,1,0,Completed,true,false,false
+AP002111,04 Feb 23,11,Willy Central,Overport Park,No. 3,Mark Separovic,Jarrod Pepper,Jarrod Pepper,6-8,6,8,0,1,Completed,true,false,true
+AP002111,04 Feb 23,11,Willy Central,Overport Park,No. 4,Rob McMahon,Erwin Schouten,Rob McMahon,8-1,8,1,1,0,Completed,true,false,true
+AP002112,04 Feb 23,11,Maccabi,Carmelite Red,No. 1,Steven Gostin,Simon Arms,Simon Arms,1-8,1,8,0,1,Completed,true,false,false
+AP002112,04 Feb 23,11,Maccabi,Carmelite Red,No. 2,Geoff Rosenberger,Nikola Rakovic,Nikola Rakovic,7-8,7,8,0,1,Completed,true,false,false
+AP002112,04 Feb 23,11,Maccabi,Carmelite Red,No. 3,Saul Muscatel,Travis Kinsman,Travis Kinsman,1-8,1,8,0,1,Completed,true,true,false
+AP002112,04 Feb 23,11,Maccabi,Carmelite Red,No. 4,Alan Liebowitz,Ashton Arms,Ashton Arms,7-8,7,8,0,1,Completed,true,true,false
+AP002113,04 Feb 23,11,Carmelite Green,Black Rock,No. 1,Juan Llatse,Rhyse Mazza,Juan Llatse,8-5,8,5,1,0,Completed,true,false,false
+AP002113,04 Feb 23,11,Carmelite Green,Black Rock,No. 2,Tony Strupl,Matt Gravina,Tony Strupl,8-1,8,1,1,0,Completed,true,false,false
+AP002113,04 Feb 23,11,Carmelite Green,Black Rock,No. 3,Nick Rowe,Marco Bragagnolo,Marco Bragagnolo,5-8,5,8,0,1,Completed,true,false,false
+AP002113,04 Feb 23,11,Carmelite Green,Black Rock,No. 4,Theo Mitsinikos,Mitchell Aarons,Theo Mitsinikos,8-4,8,4,1,0,Completed,true,false,false
+AP002114,04 Feb 23,11,Mt Eliza,BLTC,No. 1,Jarred Dungey,Josh Chu-Wise,Jarred Dungey,8-2,8,2,1,0,Completed,true,false,false
+AP002114,04 Feb 23,11,Mt Eliza,BLTC,No. 2,Evan Atkinson,Josh Fairhurst,Josh Fairhurst,6-8,6,8,0,1,Completed,true,false,false
+AP002114,04 Feb 23,11,Mt Eliza,BLTC,No. 3,Ben Hockey,Brodie Moller,Brodie Moller,4-8,4,8,0,1,Completed,true,false,false
+AP002114,04 Feb 23,11,Mt Eliza,BLTC,No. 4,Archie Stringer,Evan Inavolu,Archie Stringer,8-2,8,2,1,0,Completed,true,true,true
+AP002121,11 Feb 23,12,Mt Eliza,Carmelite Green,No. 1,Evan Atkinson,Tony Strupl,Evan Atkinson,8-2,8,2,1,0,Completed,true,false,false
+AP002121,11 Feb 23,12,Mt Eliza,Carmelite Green,No. 2,Ben Hockey,George Kypriotis,Ben Hockey,8-4,8,4,1,0,Completed,true,false,false
+AP002121,11 Feb 23,12,Mt Eliza,Carmelite Green,No. 3,Ben Taylor,Nick Rowe,Nick Rowe,6-8,6,8,0,1,Completed,true,false,false
+AP002121,11 Feb 23,12,Mt Eliza,Carmelite Green,No. 4,Sean Reekie,Geoff Patsouris,Sean Reekie,8-6,8,6,1,0,Completed,true,false,true
+AP002122,11 Feb 23,12,Carmelite Red,Black Rock,No. 1,Simon Arms,Ali Roshan,Simon Arms,8-5,8,5,1,0,Completed,true,false,false
+AP002122,11 Feb 23,12,Carmelite Red,Black Rock,No. 2,Nikola Rakovic,Rhyse Mazza,Nikola Rakovic,8-7,8,7,1,0,Completed,true,false,false
+AP002122,11 Feb 23,12,Carmelite Red,Black Rock,No. 3,Ashton Arms,Matt Gravina,Ashton Arms,8-6,8,6,1,0,Completed,true,false,false
+AP002122,11 Feb 23,12,Carmelite Red,Black Rock,No. 4,Luke Kinsman,Marco Bragagnolo,Marco Bragagnolo,1-8,1,8,0,1,Completed,true,false,false
+AP002124,11 Feb 23,12,Maccabi,Willy Central,No. 1,Damon Flicker,Josh Fleming,Josh Fleming,1-8,1,8,0,1,Completed,true,false,false
+AP002124,11 Feb 23,12,Maccabi,Willy Central,No. 2,Steven Gostin,Jordan Davies,Steven Gostin,8-1,8,1,1,0,Completed,true,false,false
+AP002124,11 Feb 23,12,Maccabi,Willy Central,No. 3,Geoff Rosenberger,Gim Kurti,Geoff Rosenberger,8-3,8,3,1,0,Completed,true,false,false
+AP002124,11 Feb 23,12,Maccabi,Willy Central,No. 4,Jordan Jaffe,Mark Separovic,Jordan Jaffe,8-5,8,5,1,0,Completed,true,true,false
+AP002131,18 Feb 23,13,Carmelite Green,Maccabi,No. 1,Tony Strupl,Joey Pat,Tony Strupl,8-1,8,1,1,0,Completed,true,false,false
+AP002131,18 Feb 23,13,Carmelite Green,Maccabi,No. 2,George Kypriotis,Steven Gostin,George Kypriotis,8-3,8,3,1,0,Completed,true,false,false
+AP002131,18 Feb 23,13,Carmelite Green,Maccabi,No. 3,Nick Rowe,Geoff Rosenberger,Nick Rowe,8-5,8,5,1,0,Completed,true,false,false
+AP002131,18 Feb 23,13,Carmelite Green,Maccabi,No. 4,Daniel Auld,Matias Brener,Daniel Auld,8-3,8,3,1,0,Completed,true,false,true
+AP002132,18 Feb 23,13,Willy Central,Mt Eliza,No. 1,Josh Fleming,Evan Atkinson,Josh Fleming,8-5,8,5,1,0,Completed,true,false,false
+AP002132,18 Feb 23,13,Willy Central,Mt Eliza,No. 2,Gim Kurti,Ben Hockey,Gim Kurti,8-6,8,6,1,0,Completed,true,false,false
+AP002132,18 Feb 23,13,Willy Central,Mt Eliza,No. 3,Mark Separovic,Ben Taylor,Mark Separovic,8-0,8,0,1,0,Completed,true,false,false
+AP002132,18 Feb 23,13,Willy Central,Mt Eliza,No. 4,Rob McMahon,Sean Reekie,Rob McMahon,8-2,8,2,1,0,Completed,true,false,false
+AP002133,18 Feb 23,13,Overport Park,Carmelite Red,No. 1,David Hassett,Simon Arms,Simon Arms,4-8,4,8,0,1,Completed,true,false,false
+AP002133,18 Feb 23,13,Overport Park,Carmelite Red,No. 2,Nick Wilson,Nikola Rakovic,Nikola Rakovic,6-8,6,8,0,1,Completed,true,false,false
+AP002133,18 Feb 23,13,Overport Park,Carmelite Red,No. 3,Charlie Bond,Travis Kinsman,Charlie Bond,8-7,8,7,1,0,Completed,true,false,false
+AP002133,18 Feb 23,13,Overport Park,Carmelite Red,No. 4,Frans Verheij,Ashton Arms,Ashton Arms,2-8,2,8,0,1,Completed,true,false,false
+AP002134,18 Feb 23,13,Black Rock,BLTC,No. 1,Ali Roshan,Tom Davoren,Ali Roshan,8-2,8,2,1,0,Completed,true,false,false
+AP002134,18 Feb 23,13,Black Rock,BLTC,No. 2,Rob Cvitkovic,Reilly Scollo,Rob Cvitkovic,8-4,8,4,1,0,Completed,true,false,false
+AP002134,18 Feb 23,13,Black Rock,BLTC,No. 3,Mitchell Aarons,Brodie Moller,Brodie Moller,5-8,5,8,0,1,Completed,true,false,false
+AP002134,18 Feb 23,13,Black Rock,BLTC,No. 4,Thomas Abourizk,Adam Majdan,Thomas Abourizk,8-6,8,6,1,0,Completed,true,true,false
+AP002141,25 Feb 23,14,Carmelite Green,Willy Central,No. 1,Juan Llatse,Josh Fleming,Juan Llatse,8-1,8,1,1,0,Completed,true,false,false
+AP002141,25 Feb 23,14,Carmelite Green,Willy Central,No. 2,Tony Strupl,Jordan Davies,Tony Strupl,8-2,8,2,1,0,Completed,true,false,false
+AP002141,25 Feb 23,14,Carmelite Green,Willy Central,No. 3,Damien Pound,Mark Separovic,Damien Pound,8-6,8,6,1,0,Completed,true,true,false
+AP002141,25 Feb 23,14,Carmelite Green,Willy Central,No. 4,Daniel Auld,Travis Shan,Daniel Auld,8-5,8,5,1,0,Completed,true,false,false
+AP002142,25 Feb 23,14,Mt Eliza,Maccabi,No. 1,Jarred Dungey,Joey Pat,Jarred Dungey,8-1,8,1,1,0,Completed,true,false,false
+AP002142,25 Feb 23,14,Mt Eliza,Maccabi,No. 2,Ben Hockey,Robert Minc,Robert Minc,4-8,4,8,0,1,Completed,true,false,false
+AP002142,25 Feb 23,14,Mt Eliza,Maccabi,No. 3,Ben Taylor,Steven Gostin,Steven Gostin,5-8,5,8,0,1,Completed,true,false,false
+AP002142,25 Feb 23,14,Mt Eliza,Maccabi,No. 4,Craig Dungey,Saul Muscatel,Craig Dungey,8-1,8,1,1,0,Completed,true,true,true
+AP002143,25 Feb 23,14,Overport Park,Black Rock,No. 1,Nick Wilson,Ali Roshan,Ali Roshan,3-8,3,8,0,1,Completed,true,false,false
+AP002143,25 Feb 23,14,Overport Park,Black Rock,No. 2,Charlie Bond,Rhyse Mazza,Charlie Bond,8-3,8,3,1,0,Completed,true,false,false
+AP002143,25 Feb 23,14,Overport Park,Black Rock,No. 3,Adam Wade,Rob Cvitkovic,Rob Cvitkovic,2-8,2,8,0,1,Completed,true,false,false
+AP002143,25 Feb 23,14,Overport Park,Black Rock,No. 4,Lachlan Mitchell,Matt Gravina,Lachlan Mitchell,8-5,8,5,1,0,Completed,true,true,false
+AP002144,25 Feb 23,14,BLTC,Carmelite Red,No. 1,Josh Chu-Wise,Simon Arms,Josh Chu-Wise,8-3,8,3,1,0,Completed,true,false,false
+AP002144,25 Feb 23,14,BLTC,Carmelite Red,No. 2,Josh Fairhurst,Nikola Rakovic,Josh Fairhurst,8-5,8,5,1,0,Completed,true,false,false
+AP002144,25 Feb 23,14,BLTC,Carmelite Red,No. 3,Reilly Scollo,Ashton Arms,Reilly Scollo,8-4,8,4,1,0,Completed,true,false,false
+AP002144,25 Feb 23,14,BLTC,Carmelite Red,No. 4,Adam Budge,Luke Kinsman,Adam Budge,8-3,8,3,1,0,Completed,true,false,false
+AP002301,,16,Black Rock,BLTC,No. 1,Ali Roshan,Josh Chu-Wise,Ali Roshan,8-3,8,3,1,0,Completed,true,false,false
+AP002301,,16,Black Rock,BLTC,No. 2,Rhyse Mazza,Josh Fairhurst,Rhyse Mazza,8-5,8,5,1,0,Completed,true,false,false
+AP002301,,16,Black Rock,BLTC,No. 3,Rob Cvitkovic,Tom Davoren,Rob Cvitkovic,8-4,8,4,1,0,Completed,true,false,false
+AP002301,,16,Black Rock,BLTC,No. 4,Matt Gravina,Reilly Scollo,Matt Gravina,8-6,8,6,1,0,Completed,true,false,false
+AP002302,,16,Carmelite Green,Overport Park,No. 1,Stefan Konstantidis,Courtney Smith,Stefan Konstantidis,8-0,8,0,1,0,Completed,true,false,false
+AP002302,,16,Carmelite Green,Overport Park,No. 2,Juan Llatse,Nick Wilson,Juan Llatse,8-7,8,7,1,0,Completed,true,false,false
+AP002302,,16,Carmelite Green,Overport Park,No. 3,Tony Strupl,Charlie Bond,Tony Strupl,8-5,8,5,1,0,Completed,true,false,false
+AP002302,,16,Carmelite Green,Overport Park,No. 4,Nick Rowe,Lachlan Mitchell,Lachlan Mitchell,7-8,7,8,0,1,Completed,true,false,true
+AP002321,,17,Black Rock,Overport Park,No. 1,Ali Roshan,Courtney Smith,Ali Roshan,8-5,8,5,1,0,Completed,true,false,false
+AP002321,,17,Black Rock,Overport Park,No. 2,Rhyse Mazza,Nick Wilson,Nick Wilson,5-8,5,8,0,1,Completed,true,false,false
+AP002321,,17,Black Rock,Overport Park,No. 3,Rob Cvitkovic,Charlie Bond,Rob Cvitkovic,8-4,8,4,1,0,Completed,true,false,false
+AP002321,,17,Black Rock,Overport Park,No. 4,Marco Bragagnolo,Lachlan Mitchell,Marco Bragagnolo,8-4,8,4,1,0,Completed,true,false,true

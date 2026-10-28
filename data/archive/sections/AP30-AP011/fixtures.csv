@@ -1,0 +1,61 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP011012,04 Oct 14,1,regular,Round 1,BLTC,East Malvern,3,7,4,4,,,38,45,Completed,
+AP011013,04 Oct 14,1,regular,Round 1,Endeavour Hills,GPHC,10,0,8,0,,,56,3,Completed,
+AP011014,04 Oct 14,1,regular,Round 1,Mt Eliza 1,Mt Eliza 2,3,7,4,4,,,39,45,Completed,
+pending-ap011-r1-bye-hawthorn,04 Oct 14,1,regular,Round 1,Bye,Hawthorn,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP011022,11 Oct 14,2,regular,Round 2,Hawthorn,BLTC,8,2,6,3,,,56,37,Completed,
+AP011023,11 Oct 14,2,regular,Round 2,East Malvern,Endeavour Hills,1,9,2,6,,,27,53,Completed,
+AP011024,11 Oct 14,2,regular,Round 2,GPHC,Mt Eliza 1,9,1,7,1,,,55,28,Completed,
+pending-ap011-r2-mt-eliza-2-bye,11 Oct 14,2,regular,Round 2,Mt Eliza 2,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP011032,18 Oct 14,3,regular,Round 3,BLTC,Mt Eliza 2,1,9,1,7,,,24,54,Completed,
+AP011033,18 Oct 14,3,regular,Round 3,Endeavour Hills,Hawthorn,2,8,3,6,,,46,56,Completed,
+AP011034,18 Oct 14,3,regular,Round 3,Mt Eliza 1,East Malvern,0,10,0,8,,,27,56,Completed,
+pending-ap011-r3-bye-gphc,18 Oct 14,3,regular,Round 3,Bye,GPHC,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP011042,25 Oct 14,4,regular,Round 4,GPHC,BLTC,2,8,3,6,,,40,53,Completed,
+AP011043,25 Oct 14,4,regular,Round 4,Mt Eliza 2,Endeavour Hills,8,2,5,3,,,45,28,Completed,
+AP011044,25 Oct 14,4,regular,Round 4,Hawthorn,Mt Eliza 1,9,1,7,1,,,51,15,Completed,
+pending-ap011-r4-east-malvern-bye,25 Oct 14,4,regular,Round 4,East Malvern,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP011051,08 Nov 14,5,regular,Round 5,Endeavour Hills,Mt Eliza 1,8,2,6,3,,,58,30,Completed,
+AP011052,08 Nov 14,5,regular,Round 5,Mt Eliza 2,GPHC,8,2,5,3,,,40,23,Completed,
+AP011053,08 Nov 14,5,regular,Round 5,East Malvern,Hawthorn,1,9,2,6,,,27,51,Completed,
+pending-ap011-r5-bye-bltc,08 Nov 14,5,regular,Round 5,Bye,BLTC,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP011061,15 Nov 14,6,regular,Round 6,BLTC,Endeavour Hills,9,1,7,1,,,53,23,Completed,
+AP011063,15 Nov 14,6,regular,Round 6,GPHC,East Malvern,2,8,2,6,,,34,50,Completed,
+AP011064,15 Nov 14,6,regular,Round 6,Hawthorn,Mt Eliza 2,10,0,8,0,,,56,20,Completed,
+pending-ap011-r6-mt-eliza-1-bye,15 Nov 14,6,regular,Round 6,Mt Eliza 1,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP011072,22 Nov 14,7,regular,Round 7,BLTC,Mt Eliza 1,10,0,8,0,,,56,18,Completed,
+AP011073,22 Nov 14,7,regular,Round 7,Mt Eliza 2,East Malvern,9,1,7,1,,,53,20,Completed,
+AP011074,22 Nov 14,7,regular,Round 7,GPHC,Hawthorn,1,9,1,7,,,23,51,Completed,
+pending-ap011-r7-bye-endeavour-hills,22 Nov 14,7,regular,Round 7,Bye,Endeavour Hills,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP011082,29 Nov 14,8,regular,Round 8,East Malvern,BLTC,1,9,2,7,,,35,60,Completed,
+AP011083,29 Nov 14,8,regular,Round 8,GPHC,Endeavour Hills,2,8,2,6,,,44,46,Completed,
+AP011084,29 Nov 14,8,regular,Round 8,Mt Eliza 2,Mt Eliza 1,8,2,5,3,,,48,38,Completed,
+pending-ap011-r8-hawthorn-bye,29 Nov 14,8,regular,Round 8,Hawthorn,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP011092,06 Dec 14,9,regular,Round 9,BLTC,Hawthorn,7,3,4,4,,,47,42,Completed,
+AP011093,06 Dec 14,9,regular,Round 9,Endeavour Hills,East Malvern,9,1,7,1,,,53,26,Completed,
+AP011094,06 Dec 14,9,regular,Round 9,Mt Eliza 1,GPHC,1,9,1,7,,,29,52,Completed,
+pending-ap011-r9-bye-mt-eliza-2,06 Dec 14,9,regular,Round 9,Bye,Mt Eliza 2,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP011102,13 Dec 14,10,regular,Round 10,Mt Eliza 2,BLTC,1,9,2,7,,,31,51,Completed,
+AP011103,13 Dec 14,10,regular,Round 10,Hawthorn,Endeavour Hills,8,2,6,3,,,48,51,Completed,
+AP011104,13 Dec 14,10,regular,Round 10,East Malvern,Mt Eliza 1,9,1,7,1,,,53,28,Completed,
+pending-ap011-r10-gphc-bye,13 Dec 14,10,regular,Round 10,GPHC,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP011112,07 Feb 15,11,regular,Round 11,BLTC,GPHC,10,0,8,0,,,57,14,Completed,
+AP011113,07 Feb 15,11,regular,Round 11,Endeavour Hills,Mt Eliza 2,9,1,7,2,,,61,40,Completed,
+AP011114,07 Feb 15,11,regular,Round 11,Mt Eliza 1,Hawthorn,0,10,0,8,,,6,56,Completed,
+pending-ap011-r11-bye-east-malvern,07 Feb 15,11,regular,Round 11,Bye,East Malvern,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP011121,14 Feb 15,12,regular,Round 12,Mt Eliza 1,Endeavour Hills,6,4,4,5,,,38,40,Completed,
+AP011122,14 Feb 15,12,regular,Round 12,GPHC,Mt Eliza 2,10,0,8,0,,,57,35,Completed,
+AP011123,14 Feb 15,12,regular,Round 12,Hawthorn,East Malvern,9,1,7,1,,,54,25,Completed,
+pending-ap011-r12-bltc-bye,14 Feb 15,12,regular,Round 12,BLTC,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP011131,21 Feb 15,13,regular,Round 13,Endeavour Hills,BLTC,2,8,3,5,,,37,45,Completed,
+AP011133,21 Feb 15,13,regular,Round 13,East Malvern,GPHC,5,5,1,1,,,10,8,Completed,
+AP011134,21 Feb 15,13,regular,Round 13,Mt Eliza 2,Hawthorn,8,2,5,3,,,48,34,Completed,
+pending-ap011-r13-bye-mt-eliza-1,21 Feb 15,13,regular,Round 13,Bye,Mt Eliza 1,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP011142,28 Feb 15,14,regular,Round 14,Mt Eliza 1,BLTC,0,10,0,8,,,15,57,Completed,
+AP011143,28 Feb 15,14,regular,Round 14,East Malvern,Mt Eliza 2,8,2,5,3,,,43,28,Completed,
+AP011144,28 Feb 15,14,regular,Round 14,Hawthorn,GPHC,9,1,7,1,,,58,32,Completed,
+pending-ap011-r14-endeavour-hills-bye,28 Feb 15,14,regular,Round 14,Endeavour Hills,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP011301,,16,semi_final,Semi-final,Hawthorn,BLTC,7,3,5,5,,,53,50,Completed,
+AP011302,,16,semi_final,Semi-final,Endeavour Hills,Mt Eliza 2,3,7,4,5,,,32,49,Completed,
+AP011311,,16,semi_final,Semi-final,BLTC,Mt Eliza 2,8.5,1.5,6,1,,,48,23,Completed,
+AP011321,,17,grand_final,Grand final · TROLS entry 2,Hawthorn,BLTC,1.5,8.5,2,5,,,31,51,Completed,

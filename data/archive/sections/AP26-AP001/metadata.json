@@ -1,0 +1,98 @@
+{
+  "asset_id": "AP26-AP001",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 12/13",
+  "season_id": "AP26",
+  "season_label": "Summer 12/13",
+  "source_section_code": "AP001",
+  "section_label": "Ladies Rubbers 1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "East Malvern",
+      "wins": 10,
+      "points": 81,
+      "percentage": 253.24,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "OLGC",
+      "wins": 7,
+      "points": 61,
+      "percentage": 139.82,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Kooyong",
+      "wins": 7,
+      "points": 54,
+      "percentage": 110.23,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Victory Park",
+      "wins": 4,
+      "points": 45,
+      "percentage": 98.44,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "St Louis de Mont",
+      "wins": 4,
+      "points": 37,
+      "percentage": 68.47,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Dandenong",
+      "wins": 4,
+      "points": 34,
+      "percentage": 82.01,
+      "marker": "*"
+    },
+    {
+      "position": 7,
+      "team": "Elwood",
+      "wins": 1,
+      "points": 16,
+      "percentage": 53.3,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP26-AP001",
+  "fixtures": 60,
+  "completed_fixtures": 43,
+  "draw_fixtures": 49,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 166,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP001321 doubles No. 3: '6-0 3-0'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP001321 doubles No. 4: '3-3'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

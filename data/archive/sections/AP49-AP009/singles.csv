@@ -1,0 +1,151 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP009012,05 Oct 24,1,Dendy Park,Tennis World,No. 1,Chris Odgers,Charlie Landau,Chris Odgers,8-6,8,6,1,0,Completed,true,false,false
+AP009012,05 Oct 24,1,Dendy Park,Tennis World,No. 2,Peter Fleming,Akash Lagad,Peter Fleming,7-3,7,3,1,0,Completed,true,false,false
+AP009012,05 Oct 24,1,Dendy Park,Tennis World,No. 3,Chris Trotter,Lucas Iaria,Chris Trotter,8-0,8,0,1,0,Completed,true,false,false
+AP009012,05 Oct 24,1,Dendy Park,Tennis World,No. 4,David Urpani,Eric Nhieu,Eric Nhieu,4-8,4,8,0,1,Completed,true,false,false
+AP009014,05 Oct 24,1,Maccabi,Clarinda,No. 1,Ben Pollak,Tri Dinh,Tri Dinh,7-8,7,8,0,1,Completed,true,false,false
+AP009014,05 Oct 24,1,Maccabi,Clarinda,No. 2,Saul Jayes,Alan Ko,Saul Jayes,8-3,8,3,1,0,Completed,true,false,false
+AP009014,05 Oct 24,1,Maccabi,Clarinda,No. 3,Errol Dorfan,Vincent Wen,,4-1,4,1,1,0,Unfinished,false,false,false
+AP009014,05 Oct 24,1,Maccabi,Clarinda,No. 4,Jack Stock,Jackson Balalovski,Jack Stock,8-1,8,1,1,0,Completed,true,false,false
+AP009021,12 Oct 24,2,Clarinda,BLTC Blue,No. 1,David James,Edward Ruckel,David James,8-4,8,4,1,0,Completed,true,false,false
+AP009021,12 Oct 24,2,Clarinda,BLTC Blue,No. 2,Yihai Fang,Charlie Pettifer,Yihai Fang,8-6,8,6,1,0,Completed,true,false,true
+AP009021,12 Oct 24,2,Clarinda,BLTC Blue,No. 3,Tung Lam,Nic Campbell,Tung Lam,8-1,8,1,1,0,Completed,true,false,false
+AP009021,12 Oct 24,2,Clarinda,BLTC Blue,No. 4,Jackson Balalovski,Ben Tohill,Ben Tohill,0-8,0,8,0,1,Completed,true,false,false
+AP009022,12 Oct 24,2,BLTC White,Dendy Park,No. 1,Kyan Aldridge,Chris Odgers,Chris Odgers,6-8,6,8,0,1,Completed,true,false,false
+AP009022,12 Oct 24,2,BLTC White,Dendy Park,No. 2,Nick Jackson,Peter Fleming,Peter Fleming,2-8,2,8,0,1,Completed,true,false,false
+AP009022,12 Oct 24,2,BLTC White,Dendy Park,No. 3,John Van Der Meulen,Chris Trotter,Chris Trotter,6-8,6,8,0,1,Completed,true,false,false
+AP009022,12 Oct 24,2,BLTC White,Dendy Park,No. 4,Joe Livermore,Louis Marasco,Louis Marasco,7-8,7,8,0,1,Completed,true,false,false
+AP009024,12 Oct 24,2,Royal South Yarra,Maccabi,No. 1,Jed Zheng,Saul Jayes,Jed Zheng,8-5,8,5,1,0,Completed,true,false,false
+AP009024,12 Oct 24,2,Royal South Yarra,Maccabi,No. 2,Stuart Webb,Errol Dorfan,Errol Dorfan,6-8,6,8,0,1,Completed,true,true,false
+AP009024,12 Oct 24,2,Royal South Yarra,Maccabi,No. 3,Sam Street,Daniel Vertes,Daniel Vertes,5-8,5,8,0,1,Completed,true,false,false
+AP009024,12 Oct 24,2,Royal South Yarra,Maccabi,No. 4,Nick McGuire,Jack Stock,Jack Stock,7-8,7,8,0,1,Completed,true,false,false
+AP009031,19 Oct 24,3,BLTC Blue,Royal South Yarra,No. 1,Kabeer Gursahani,Sam Lidstone,Kabeer Gursahani,8-2,8,2,1,0,Completed,true,false,false
+AP009031,19 Oct 24,3,BLTC Blue,Royal South Yarra,No. 2,Alexander Collins,Nick McGuire,Alexander Collins,8-3,8,3,1,0,Completed,true,false,false
+AP009031,19 Oct 24,3,BLTC Blue,Royal South Yarra,No. 3,Darcy Henschke,Leigh Petschel,Darcy Henschke,8-7,8,7,1,0,Completed,true,false,false
+AP009031,19 Oct 24,3,BLTC Blue,Royal South Yarra,No. 4,Ben Tohill,Hamish Whitehead,Hamish Whitehead,2-8,2,8,0,1,Completed,true,false,true
+AP009032,19 Oct 24,3,Dendy Park,Clarinda,No. 1,Ian Wilkinson,David James,David James,3-8,3,8,0,1,Completed,true,true,false
+AP009032,19 Oct 24,3,Dendy Park,Clarinda,No. 2,Chris Trotter,Yihai Fang,Yihai Fang,2-8,2,8,0,1,Completed,true,false,false
+AP009032,19 Oct 24,3,Dendy Park,Clarinda,No. 3,Louis Marasco,Sher Sidhu,Sher Sidhu,6-8,6,8,0,1,Completed,true,false,false
+AP009032,19 Oct 24,3,Dendy Park,Clarinda,No. 4,David Urpani,Jackson Balalovski,David Urpani,8-4,8,4,1,0,Completed,true,false,false
+AP009034,19 Oct 24,3,Maccabi,Tennis World,No. 1,Ben Pollak,Lucas Iaria,Ben Pollak,8-6,8,6,1,0,Completed,true,false,false
+AP009034,19 Oct 24,3,Maccabi,Tennis World,No. 2,Saul Jayes,Akash Lagad,Akash Lagad,7-8,7,8,0,1,Completed,true,false,false
+AP009034,19 Oct 24,3,Maccabi,Tennis World,No. 3,Errol Dorfan,Kye Gray,Kye Gray,4-8,4,8,0,1,Completed,true,false,false
+AP009034,19 Oct 24,3,Maccabi,Tennis World,No. 4,Daniel Vertes,Eric Nhieu,Daniel Vertes,8-4,8,4,1,0,Completed,true,false,false
+AP009041,26 Oct 24,4,Tennis World,BLTC Blue,No. 1,Charlie Landau,Kabeer Gursahani,Kabeer Gursahani,5-8,5,8,0,1,Completed,true,false,false
+AP009041,26 Oct 24,4,Tennis World,BLTC Blue,No. 2,Lucas Iaria,Alexander Collins,Lucas Iaria,8-3,8,3,1,0,Completed,true,false,false
+AP009041,26 Oct 24,4,Tennis World,BLTC Blue,No. 3,Akash Lagad,Darcy Henschke,Darcy Henschke,3-8,3,8,0,1,Completed,true,false,false
+AP009041,26 Oct 24,4,Tennis World,BLTC Blue,No. 4,Eric Nhieu,Edward Ruckel,Edward Ruckel,4-8,4,8,0,1,Completed,true,false,false
+AP009042,26 Oct 24,4,Royal South Yarra,Dendy Park,No. 1,Sam Lidstone,Aydan Marasco,Aydan Marasco,4-8,4,8,0,1,Completed,true,false,false
+AP009042,26 Oct 24,4,Royal South Yarra,Dendy Park,No. 2,Leigh Petschel,Ian Wilkinson,Leigh Petschel,8-3,8,3,1,0,Completed,true,false,true
+AP009042,26 Oct 24,4,Royal South Yarra,Dendy Park,No. 3,Sam Street,Chris Trotter,Chris Trotter,5-8,5,8,0,1,Completed,true,false,false
+AP009042,26 Oct 24,4,Royal South Yarra,Dendy Park,No. 4,Will Howitt,Louis Marasco,Louis Marasco,4-8,4,8,0,1,Completed,true,false,false
+AP009044,26 Oct 24,4,BLTC White,Maccabi,No. 1,Patrick Thomson,Ben Pollak,Patrick Thomson,8-5,8,5,1,0,Completed,true,false,false
+AP009044,26 Oct 24,4,BLTC White,Maccabi,No. 2,Kyan Aldridge,Saul Jayes,Saul Jayes,6-8,6,8,0,1,Completed,true,false,false
+AP009044,26 Oct 24,4,BLTC White,Maccabi,No. 3,Nick Jackson,Errol Dorfan,Errol Dorfan,4-8,4,8,0,1,Completed,true,false,false
+AP009044,26 Oct 24,4,BLTC White,Maccabi,No. 4,John Van Der Meulen,Jesse Stowe-Lindner,Jesse Stowe-Lindner,5-8,5,8,0,1,Completed,true,false,true
+AP009052,09 Nov 24,5,Clarinda,Royal South Yarra,No. 1,David James,Leigh Petschel,David James,8-5,8,5,1,0,Completed,true,false,false
+AP009052,09 Nov 24,5,Clarinda,Royal South Yarra,No. 2,Alan Ko,Jed Zheng,Jed Zheng,4-8,4,8,0,1,Completed,true,false,false
+AP009052,09 Nov 24,5,Clarinda,Royal South Yarra,No. 3,Vincent Wen,Sam Hill,Vincent Wen,8-1,8,1,1,0,Completed,true,false,true
+AP009052,09 Nov 24,5,Clarinda,Royal South Yarra,No. 4,Jackson Balalovski,Will Howitt,Jackson Balalovski,8-0,8,0,1,0,Completed,true,false,false
+AP009053,09 Nov 24,5,Tennis World,BLTC White,No. 1,Charlie Landau,Patrick Thomson,Patrick Thomson,5-8,5,8,0,1,Completed,true,false,false
+AP009053,09 Nov 24,5,Tennis World,BLTC White,No. 2,Lucas Iaria,John Van Der Meulen,Lucas Iaria,8-1,8,1,1,0,Completed,true,false,false
+AP009053,09 Nov 24,5,Tennis World,BLTC White,No. 3,Akash Lagad,Joe Livermore,Joe Livermore,4-8,4,8,0,1,Completed,true,false,false
+AP009053,09 Nov 24,5,Tennis World,BLTC White,No. 4,Eric Nhieu,Casper Stisen Billing,Casper Stisen Billing,7-8,7,8,0,1,Completed,true,false,true
+AP009054,09 Nov 24,5,BLTC Blue,Dendy Park,No. 1,Kabeer Gursahani,Aydan Marasco,Aydan Marasco,6-8,6,8,0,1,Completed,true,false,false
+AP009054,09 Nov 24,5,BLTC Blue,Dendy Park,No. 2,Edward Ruckel,Chris Odgers,Edward Ruckel,8-2,8,2,1,0,Completed,true,false,false
+AP009054,09 Nov 24,5,BLTC Blue,Dendy Park,No. 3,Nic Campbell,Peter Fleming,Peter Fleming,3-8,3,8,0,1,Completed,true,false,false
+AP009054,09 Nov 24,5,BLTC Blue,Dendy Park,No. 4,Ben Tohill,Louis Marasco,Ben Tohill,8-5,8,5,1,0,Completed,true,false,false
+AP009062,16 Nov 24,6,Maccabi,BLTC Blue,No. 1,Ben Pollak,Alexander Collins,Ben Pollak,8-5,8,5,1,0,Completed,true,false,false
+AP009062,16 Nov 24,6,Maccabi,BLTC Blue,No. 2,Saul Jayes,Darcy Henschke,Saul Jayes,8-3,8,3,1,0,Completed,true,false,false
+AP009062,16 Nov 24,6,Maccabi,BLTC Blue,No. 3,Errol Dorfan,Nic Campbell,Errol Dorfan,8-7,8,7,1,0,Completed,true,false,false
+AP009062,16 Nov 24,6,Maccabi,BLTC Blue,No. 4,Jesse Stowe-Lindner,Ben Tohill,Jesse Stowe-Lindner,8-3,8,3,1,0,Completed,true,true,false
+AP009063,16 Nov 24,6,Royal South Yarra,Tennis World,No. 1,Sam Lidstone,Charlie Landau,Charlie Landau,4-8,4,8,0,1,Completed,true,false,false
+AP009063,16 Nov 24,6,Royal South Yarra,Tennis World,No. 2,Leigh Petschel,Juan Carlos Saaverdra,Juan Carlos Saaverdra,7-8,7,8,0,1,Completed,true,false,false
+AP009063,16 Nov 24,6,Royal South Yarra,Tennis World,No. 3,Hamish Whitehead,Akash Lagad,Akash Lagad,5-8,5,8,0,1,Completed,true,true,false
+AP009063,16 Nov 24,6,Royal South Yarra,Tennis World,No. 4,Sam Street,Eric Nhieu,Sam Street,8-2,8,2,1,0,Completed,true,false,false
+AP009064,16 Nov 24,6,BLTC White,Clarinda,No. 1,Kyan Aldridge,Tri Dinh,Tri Dinh,0-8,0,8,0,1,Completed,true,false,false
+AP009064,16 Nov 24,6,BLTC White,Clarinda,No. 2,Nick Jackson,Sher Sidhu,Sher Sidhu,2-8,2,8,0,1,Completed,true,false,false
+AP009064,16 Nov 24,6,BLTC White,Clarinda,No. 3,John Van Der Meulen,Vincent Wen,John Van Der Meulen,8-5,8,5,1,0,Completed,true,false,false
+AP009064,16 Nov 24,6,BLTC White,Clarinda,No. 4,Joe Livermore,Jackson Balalovski,Joe Livermore,8-0,8,0,1,0,Completed,true,false,false
+AP009074,23 Nov 24,7,Royal South Yarra,BLTC White,No. 1,Jed Zheng,Patrick Thomson,Jed Zheng,8-4,8,4,1,0,Completed,true,false,false
+AP009074,23 Nov 24,7,Royal South Yarra,BLTC White,No. 2,Sam Lidstone,Kyan Aldridge,Kyan Aldridge,2-8,2,8,0,1,Completed,true,false,false
+AP009074,23 Nov 24,7,Royal South Yarra,BLTC White,No. 3,Stuart Webb,John Van Der Meulen,Stuart Webb,8-3,8,3,1,0,Completed,true,true,false
+AP009074,23 Nov 24,7,Royal South Yarra,BLTC White,No. 4,Sam Street,Joe Livermore,Joe Livermore,5-8,5,8,0,1,Completed,true,false,false
+AP009091,07 Dec 24,9,BLTC Blue,Clarinda,No. 1,Kabeer Gursahani,David James,David James,3-8,3,8,0,1,Completed,true,false,false
+AP009091,07 Dec 24,9,BLTC Blue,Clarinda,No. 2,Darcy Henschke,Yihai Fang,Darcy Henschke,8-3,8,3,1,0,Completed,true,false,false
+AP009091,07 Dec 24,9,BLTC Blue,Clarinda,No. 3,Edward Ruckel,Coen Van Der Meulen,Edward Ruckel,8-5,8,5,1,0,Completed,true,false,true
+AP009091,07 Dec 24,9,BLTC Blue,Clarinda,No. 4,Ben Tohill,Vincent Wen,Ben Tohill,8-4,8,4,1,0,Completed,true,false,false
+AP009092,07 Dec 24,9,Dendy Park,BLTC White,No. 1,Peter Fleming,Grant Burnell,Peter Fleming,8-6,8,6,1,0,Completed,true,false,false
+AP009092,07 Dec 24,9,Dendy Park,BLTC White,No. 2,Chris Trotter,Nick Jackson,Chris Trotter,8-1,8,1,1,0,Completed,true,false,false
+AP009092,07 Dec 24,9,Dendy Park,BLTC White,No. 3,Louis Marasco,John Van Der Meulen,John Van Der Meulen,3-8,3,8,0,1,Completed,true,false,false
+AP009092,07 Dec 24,9,Dendy Park,BLTC White,No. 4,David Urpani,Joe Livermore,Joe Livermore,0-8,0,8,0,1,Completed,true,false,false
+AP009094,07 Dec 24,9,Maccabi,Royal South Yarra,No. 1,Saul Jayes,Jed Zheng,Jed Zheng,3-8,3,8,0,1,Completed,true,false,false
+AP009094,07 Dec 24,9,Maccabi,Royal South Yarra,No. 2,Errol Dorfan,Leigh Petschel,Leigh Petschel,3-8,3,8,0,1,Completed,true,false,false
+AP009094,07 Dec 24,9,Maccabi,Royal South Yarra,No. 3,Daniel Goodrich,Stuart Webb,Daniel Goodrich,8-2,8,2,1,0,Completed,true,false,true
+AP009094,07 Dec 24,9,Maccabi,Royal South Yarra,No. 4,Jack Stock,Nick McGuire,Jack Stock,8-7,8,7,1,0,Completed,true,false,false
+AP009101,14 Dec 24,10,Royal South Yarra,BLTC Blue,No. 1,Sam Lidstone,Alexander Collins,Sam Lidstone,8-6,8,6,1,0,Completed,true,false,false
+AP009101,14 Dec 24,10,Royal South Yarra,BLTC Blue,No. 2,Hamish Whitehead,Darcy Henschke,Darcy Henschke,2-8,2,8,0,1,Completed,true,true,false
+AP009101,14 Dec 24,10,Royal South Yarra,BLTC Blue,No. 3,Sam Street,Nic Campbell,Sam Street,8-6,8,6,1,0,Completed,true,false,false
+AP009101,14 Dec 24,10,Royal South Yarra,BLTC Blue,No. 4,Nick McGuire,Ben Tohill,Ben Tohill,6-8,6,8,0,1,Completed,true,false,false
+AP009102,14 Dec 24,10,Clarinda,Dendy Park,No. 1,Tri Dinh,Aydan Marasco,Tri Dinh,8-3,8,3,1,0,Completed,true,false,false
+AP009102,14 Dec 24,10,Clarinda,Dendy Park,No. 2,Yihai Fang,Peter Fleming,Yihai Fang,8-3,8,3,1,0,Completed,true,false,false
+AP009102,14 Dec 24,10,Clarinda,Dendy Park,No. 3,Tung Lam,Chris Trotter,Tung Lam,8-0,8,0,1,0,Completed,true,false,false
+AP009102,14 Dec 24,10,Clarinda,Dendy Park,No. 4,Vincent Wen,Louis Marasco,Louis Marasco,3-8,3,8,0,1,Completed,true,false,false
+AP009104,14 Dec 24,10,Tennis World,Maccabi,No. 1,Charlie Landau,Ben Pollak,Charlie Landau,8-4,8,4,1,0,Completed,true,false,false
+AP009104,14 Dec 24,10,Tennis World,Maccabi,No. 2,Lucas Iaria,Adam Rushford,Adam Rushford,2-8,2,8,0,1,Completed,true,false,true
+AP009104,14 Dec 24,10,Tennis World,Maccabi,No. 3,Juan Carlos Saaverdra,Daniel Goodrich,Juan Carlos Saaverdra,8-4,8,4,1,0,Completed,true,false,false
+AP009104,14 Dec 24,10,Tennis World,Maccabi,No. 4,Akash Lagad,Daniel Vertes,Akash Lagad,8-0,8,0,1,0,Completed,true,false,false
+AP009111,01 Feb 25,11,BLTC Blue,Tennis World,No. 1,Alexander Collins,Lucas Iaria,Lucas Iaria,2-8,2,8,0,1,Completed,true,false,false
+AP009111,01 Feb 25,11,BLTC Blue,Tennis World,No. 2,Edward Ruckel,Juan Carlos Saaverdra,Juan Carlos Saaverdra,3-8,3,8,0,1,Completed,true,false,false
+AP009111,01 Feb 25,11,BLTC Blue,Tennis World,No. 3,Nic Campbell,Kye Gray,Kye Gray,3-8,3,8,0,1,Completed,true,false,false
+AP009111,01 Feb 25,11,BLTC Blue,Tennis World,No. 4,Casper Stisen Billing,Akash Lagad,Akash Lagad,2-8,2,8,0,1,Completed,true,true,false
+AP009112,01 Feb 25,11,Dendy Park,Royal South Yarra,No. 1,Chris Odgers,Sam Lidstone,Chris Odgers,8-3,8,3,1,0,Completed,true,false,false
+AP009112,01 Feb 25,11,Dendy Park,Royal South Yarra,No. 2,Peter Fleming,Leigh Petschel,Leigh Petschel,2-8,2,8,0,1,Completed,true,false,false
+AP009112,01 Feb 25,11,Dendy Park,Royal South Yarra,No. 3,Louis Marasco,Sam Hill,Sam Hill,7-8,7,8,0,1,Completed,true,false,true
+AP009112,01 Feb 25,11,Dendy Park,Royal South Yarra,No. 4,David Urpani,Simon Lawson,Simon Lawson,1-8,1,8,0,1,Completed,true,false,true
+AP009114,01 Feb 25,11,Maccabi,BLTC White,No. 1,Ben Pollak,Kyan Aldridge,Ben Pollak,8-4,8,4,1,0,Completed,true,false,false
+AP009114,01 Feb 25,11,Maccabi,BLTC White,No. 2,Aden Minaker,Grant Burnell,Grant Burnell,2-8,2,8,0,1,Completed,true,true,false
+AP009114,01 Feb 25,11,Maccabi,BLTC White,No. 3,Daniel Vertes,John Van Der Meulen,Daniel Vertes,8-6,8,6,1,0,Completed,true,false,false
+AP009114,01 Feb 25,11,Maccabi,BLTC White,No. 4,Daniel Goodrich,Joe Livermore,Daniel Goodrich,8-6,8,6,1,0,Completed,true,false,false
+AP009122,08 Feb 25,12,Royal South Yarra,Clarinda,No. 1,Sam Lidstone,David James,David James,2-8,2,8,0,1,Completed,true,false,false
+AP009122,08 Feb 25,12,Royal South Yarra,Clarinda,No. 2,Simon Lawson,Tri Dinh,Tri Dinh,4-8,4,8,0,1,Completed,true,true,false
+AP009122,08 Feb 25,12,Royal South Yarra,Clarinda,No. 3,Sam Street,Sher Sidhu,Sher Sidhu,2-8,2,8,0,1,Completed,true,false,false
+AP009122,08 Feb 25,12,Royal South Yarra,Clarinda,No. 4,Nick McGuire,Alan Ko,Nick McGuire,8-7,8,7,1,0,Completed,true,false,false
+AP009123,08 Feb 25,12,BLTC White,Tennis World,No. 1,Patrick Thomson,Lucas Iaria,Lucas Iaria,0-8,0,8,0,1,Completed,true,false,false
+AP009123,08 Feb 25,12,BLTC White,Tennis World,No. 2,Kyan Aldridge,Juan Carlos Saaverdra,Juan Carlos Saaverdra,5-8,5,8,0,1,Completed,true,false,false
+AP009123,08 Feb 25,12,BLTC White,Tennis World,No. 3,Nick Jackson,Kye Gray,Kye Gray,0-8,0,8,0,1,Completed,true,false,false
+AP009123,08 Feb 25,12,BLTC White,Tennis World,No. 4,John Van Der Meulen,Akash Lagad,Akash Lagad,3-8,3,8,0,1,Completed,true,false,false
+AP009124,08 Feb 25,12,Dendy Park,BLTC Blue,No. 1,Bruce Watkins,Alexander Collins,Bruce Watkins,8-5,8,5,1,0,Completed,true,true,false
+AP009124,08 Feb 25,12,Dendy Park,BLTC Blue,No. 2,Peter Fleming,Darcy Henschke,Darcy Henschke,2-8,2,8,0,1,Completed,true,false,false
+AP009124,08 Feb 25,12,Dendy Park,BLTC Blue,No. 3,Chris Trotter,Nic Campbell,Nic Campbell,2-8,2,8,0,1,Completed,true,false,false
+AP009124,08 Feb 25,12,Dendy Park,BLTC Blue,No. 4,Louis Marasco,Ben Tohill,Ben Tohill,0-8,0,8,0,1,Completed,true,false,false
+AP009132,15 Feb 25,13,BLTC Blue,Maccabi,No. 1,Kabeer Gursahani,Ben Pollak,,3-1,3,1,1,0,Unfinished,false,false,false
+AP009132,15 Feb 25,13,BLTC Blue,Maccabi,No. 2,Edward Ruckel,Jesse Stowe-Lindner,,2-4,2,4,0,1,Unfinished,false,false,true
+AP009134,15 Feb 25,13,Clarinda,BLTC White,No. 1,David James,Kyan Aldridge,David James,8-1,8,1,1,0,Completed,true,false,false
+AP009134,15 Feb 25,13,Clarinda,BLTC White,No. 2,Tri Dinh,Nick Jackson,Tri Dinh,8-3,8,3,1,0,Completed,true,false,false
+AP009134,15 Feb 25,13,Clarinda,BLTC White,No. 3,Vincent Wen,John Van Der Meulen,John Van Der Meulen,6-8,6,8,0,1,Completed,true,false,false
+AP009134,15 Feb 25,13,Clarinda,BLTC White,No. 4,Jackson Balalovski,Joe Livermore,Joe Livermore,0-8,0,8,0,1,Completed,true,false,false
+AP009142,22 Feb 25,14,Maccabi,Dendy Park,No. 1,Ben Pollak,Aydan Marasco,Ben Pollak,8-0,8,0,1,0,Completed,true,false,false
+AP009142,22 Feb 25,14,Maccabi,Dendy Park,No. 2,Errol Dorfan,Chris Odgers,Chris Odgers,1-8,1,8,0,1,Completed,true,false,false
+AP009142,22 Feb 25,14,Maccabi,Dendy Park,No. 3,Daniel Vertes,Peter Fleming,Peter Fleming,7-8,7,8,0,1,Completed,true,false,false
+AP009142,22 Feb 25,14,Maccabi,Dendy Park,No. 4,Daniel Goodrich,Louis Marasco,Daniel Goodrich,8-1,8,1,1,0,Completed,true,false,false
+AP009143,22 Feb 25,14,Tennis World,Clarinda,No. 1,Lucas Iaria,David James,David James,3-8,3,8,0,1,Completed,true,false,false
+AP009143,22 Feb 25,14,Tennis World,Clarinda,No. 2,Juan Carlos Saaverdra,Sher Sidhu,Sher Sidhu,6-8,6,8,0,1,Completed,true,false,false
+AP009143,22 Feb 25,14,Tennis World,Clarinda,No. 3,Kye Gray,Alan Ko,Kye Gray,8-0,8,0,1,0,Completed,true,false,false
+AP009143,22 Feb 25,14,Tennis World,Clarinda,No. 4,Akash Lagad,Vincent Wen,Akash Lagad,8-2,8,2,1,0,Completed,true,false,false
+AP009144,22 Feb 25,14,BLTC White,Royal South Yarra,No. 1,Kyan Aldridge,Jed Zheng,Jed Zheng,1-8,1,8,0,1,Completed,true,false,false
+AP009144,22 Feb 25,14,BLTC White,Royal South Yarra,No. 2,Nick Jackson,Sam Lidstone,Sam Lidstone,5-8,5,8,0,1,Completed,true,false,false
+AP009144,22 Feb 25,14,BLTC White,Royal South Yarra,No. 3,John Ehrlich,George Thompson,John Ehrlich,8-6,8,6,1,0,Completed,true,true,true
+AP009144,22 Feb 25,14,BLTC White,Royal South Yarra,No. 4,Joe Livermore,Ben Haar,Joe Livermore,8-6,8,6,1,0,Completed,true,false,true
+AP009301,,16,Maccabi,BLTC Blue,No. 1,Ben Pollak,Kabeer Gursahani,Kabeer Gursahani,3-8,3,8,0,1,Completed,true,false,false
+AP009301,,16,Maccabi,BLTC Blue,No. 2,Saul Jayes,Darcy Henschke,Darcy Henschke,6-8,6,8,0,1,Completed,true,false,false
+AP009301,,16,Maccabi,BLTC Blue,No. 3,Errol Dorfan,Edward Ruckel,Edward Ruckel,7-8,7,8,0,1,Completed,true,false,false
+AP009301,,16,Maccabi,BLTC Blue,No. 4,Daniel Vertes,Nic Campbell,Nic Campbell,4-8,4,8,0,1,Completed,true,false,false
+AP009302,,16,Tennis World,Clarinda,No. 1,Charlie Landau,David James,David James,2-8,2,8,0,1,Completed,true,false,false
+AP009302,,16,Tennis World,Clarinda,No. 2,Lucas Iaria,Tri Dinh,Lucas Iaria,8-7,8,7,1,0,Completed,true,false,false
+AP009302,,16,Tennis World,Clarinda,No. 3,Kye Gray,Sher Sidhu,Kye Gray,8-6,8,6,1,0,Completed,true,false,false
+AP009302,,16,Tennis World,Clarinda,No. 4,Akash Lagad,Tung Lam,Tung Lam,1-8,1,8,0,1,Completed,true,false,false
+AP009321,,17,Clarinda,BLTC Blue,No. 1,David James,Kabeer Gursahani,David James,8-5,8,5,1,0,Completed,true,false,false
+AP009321,,17,Clarinda,BLTC Blue,No. 2,Tri Dinh,Darcy Henschke,Darcy Henschke,7-8,7,8,0,1,Completed,true,false,false
+AP009321,,17,Clarinda,BLTC Blue,No. 3,Sher Sidhu,Edward Ruckel,Edward Ruckel,7-8,7,8,0,1,Completed,true,false,false
+AP009321,,17,Clarinda,BLTC Blue,No. 4,Tung Lam,Nic Campbell,Tung Lam,8-5,8,5,1,0,Completed,true,false,false

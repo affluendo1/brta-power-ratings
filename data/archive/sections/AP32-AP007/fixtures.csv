@@ -1,0 +1,60 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP007011,10 Oct 15,1,regular,Round 1,St Andrews MB,St Pats Mentone,7,1,3,1,6,2,41,24,Completed,
+AP007012,10 Oct 15,1,regular,Round 1,Parkdale,Clarinda,4,4,2,2,5,5,42,42,Completed,
+AP007014,10 Oct 15,1,regular,Round 1,Tally Ho,Highmoor Uniting,2,6,2,2,4,5,44,48,Completed,
+pending-ap007-r1-st-johns-bye,10 Oct 15,1,regular,Round 1,St Johns,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007021,17 Oct 15,2,regular,Round 2,Highmoor Uniting,St Andrews MB,8,0,4,0,8,4,58,48,Completed,
+AP007022,17 Oct 15,2,regular,Round 2,St Pats Mentone,Parkdale,1,7,1,3,2,6,32,44,Completed,
+AP007023,17 Oct 15,2,regular,Round 2,Clarinda,St Johns,7,1,3,1,7,4,51,43,Completed,
+pending-ap007-r2-bye-tally-ho,17 Oct 15,2,regular,Round 2,Bye,Tally Ho,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007032,24 Oct 15,3,regular,Round 3,Parkdale,Highmoor Uniting,2,6,2,2,5,6,50,52,Completed,
+AP007033,24 Oct 15,3,regular,Round 3,St Johns,St Pats Mentone,8,0,4,0,8,3,61,51,Completed,
+AP007034,24 Oct 15,3,regular,Round 3,Tally Ho,Clarinda,1,7,1,3,4,6,43,48,Completed,
+pending-ap007-r3-st-andrews-mb-bye,24 Oct 15,3,regular,Round 3,St Andrews MB,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007041,07 Nov 15,4,regular,Round 4,Clarinda,St Andrews MB,1,7,1,3,4,6,39,53,Completed,
+AP007043,07 Nov 15,4,regular,Round 4,Highmoor Uniting,St Johns,7,1,3,1,7,3,50,35,Completed,
+AP007044,07 Nov 15,4,regular,Round 4,St Pats Mentone,Tally Ho,0,8,0,4,1,8,28,53,Completed,
+pending-ap007-r4-bye-parkdale,07 Nov 15,4,regular,Round 4,Bye,Parkdale,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007051,14 Nov 15,5,regular,Round 5,St Johns,Tally Ho,1,7,1,3,4,6,36,51,Completed,
+AP007053,14 Nov 15,5,regular,Round 5,Clarinda,St Pats Mentone,8,0,4,0,8,2,57,35,Completed,
+AP007054,14 Nov 15,5,regular,Round 5,St Andrews MB,Parkdale,7,1,3,1,6,2,45,18,Completed,
+pending-ap007-r5-highmoor-uniting-bye,14 Nov 15,5,regular,Round 5,Highmoor Uniting,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007061,21 Nov 15,6,regular,Round 6,Parkdale,St Johns,7,1,3,1,6,2,42,28,Completed,
+AP007062,21 Nov 15,6,regular,Round 6,Tally Ho,St Andrews MB,7,1,3,1,7,3,56,47,Completed,
+AP007064,21 Nov 15,6,regular,Round 6,St Pats Mentone,Highmoor Uniting,6,2,2,2,4,4,31,30,Completed,
+pending-ap007-r6-bye-clarinda,21 Nov 15,6,regular,Round 6,Bye,Clarinda,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007071,28 Nov 15,7,regular,Round 7,St Andrews MB,St Johns,8,0,4,0,8,0,49,8,Completed,
+AP007072,28 Nov 15,7,regular,Round 7,Parkdale,Tally Ho,1,7,1,3,3,6,37,47,Completed,
+AP007073,28 Nov 15,7,regular,Round 7,Highmoor Uniting,Clarinda,6,2,2,2,6,5,59,52,Completed,
+pending-ap007-r7-bye-st-pats-mentone,28 Nov 15,7,regular,Round 7,Bye,St Pats Mentone,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007081,05 Dec 15,8,regular,Round 8,St Pats Mentone,St Andrews MB,0,8,0,4,1,8,28,56,Completed,
+AP007082,05 Dec 15,8,regular,Round 8,Clarinda,Parkdale,2,6,2,2,4,4,36,38,Completed,
+AP007084,05 Dec 15,8,regular,Round 8,Highmoor Uniting,Tally Ho,8,0,4,0,8,1,54,29,Completed,
+pending-ap007-r8-bye-st-johns,05 Dec 15,8,regular,Round 8,Bye,St Johns,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007091,12 Dec 15,9,regular,Round 9,St Andrews MB,Highmoor Uniting,7,1,3,1,7,4,65,50,Completed,
+AP007092,12 Dec 15,9,regular,Round 9,Parkdale,St Pats Mentone,1,7,1,3,3,6,32,47,Completed,
+AP007093,12 Dec 15,9,regular,Round 9,St Johns,Clarinda,1,7,1,3,3,6,35,47,Completed,
+pending-ap007-r9-tally-ho-bye,12 Dec 15,9,regular,Round 9,Tally Ho,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007102,30 Jan 16,10,regular,Round 10,Highmoor Uniting,Parkdale,6,2,2,2,5,5,46,45,Completed,
+AP007103,30 Jan 16,10,regular,Round 10,St Pats Mentone,St Johns,1,7,1,3,3,6,41,48,Completed,
+AP007104,30 Jan 16,10,regular,Round 10,Clarinda,Tally Ho,1,7,1,3,2,6,35,44,Completed,
+pending-ap007-r10-bye-st-andrews-mb,30 Jan 16,10,regular,Round 10,Bye,St Andrews MB,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007111,06 Feb 16,11,regular,Round 11,St Andrews MB,Clarinda,7,1,3,1,6,2,42,27,Completed,
+AP007113,06 Feb 16,11,regular,Round 11,St Johns,Highmoor Uniting,2,6,2,2,4,5,35,40,Completed,
+AP007114,06 Feb 16,11,regular,Round 11,Tally Ho,St Pats Mentone,0,8,0,4,1,8,32,55,Completed,
+pending-ap007-r11-parkdale-bye,06 Feb 16,11,regular,Round 11,Parkdale,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007121,13 Feb 16,12,regular,Round 12,Tally Ho,St Johns,8,0,4,0,8,0,48,15,Completed,
+AP007123,13 Feb 16,12,regular,Round 12,St Pats Mentone,Clarinda,0,8,0,4,2,8,39,55,Completed,
+AP007124,13 Feb 16,12,regular,Round 12,Parkdale,St Andrews MB,0,8,0,4,1,8,37,57,Completed,
+pending-ap007-r12-bye-highmoor-uniting,13 Feb 16,12,regular,Round 12,Bye,Highmoor Uniting,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007131,20 Feb 16,13,regular,Round 13,St Johns,Parkdale,7,1,3,1,6,3,50,44,Completed,
+AP007132,20 Feb 16,13,regular,Round 13,St Andrews MB,Tally Ho,1,7,1,3,3,7,40,51,Completed,
+AP007134,20 Feb 16,13,regular,Round 13,Highmoor Uniting,St Pats Mentone,8,0,4,0,8,2,59,47,Completed,
+pending-ap007-r13-clarinda-bye,20 Feb 16,13,regular,Round 13,Clarinda,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007141,27 Feb 16,14,regular,Round 14,St Johns,St Andrews MB,2,6,2,2,4,6,36,42,Completed,
+AP007142,27 Feb 16,14,regular,Round 14,Tally Ho,Parkdale,7,1,3,1,6,3,45,43,Completed,
+AP007143,27 Feb 16,14,regular,Round 14,Clarinda,Highmoor Uniting,6,2,2,2,5,5,46,45,Completed,
+pending-ap007-r14-st-pats-mentone-bye,27 Feb 16,14,regular,Round 14,St Pats Mentone,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP007301,,16,semi_final,Semi-final,St Andrews MB,Clarinda,1,7,1,3,4,6,46,52,Completed,
+AP007302,,16,semi_final,Semi-final,Highmoor Uniting,Tally Ho,6,2,2,2,6,5,55,60,Completed,
+AP007321,,17,grand_final,Grand final · TROLS entry 2,Highmoor Uniting,Clarinda,6.5,1.5,2,1,5,3,45,38,Completed,

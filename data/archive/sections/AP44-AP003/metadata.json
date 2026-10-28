@@ -1,0 +1,97 @@
+{
+  "asset_id": "AP44-AP003",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Winter 2022",
+  "season_id": "AP44",
+  "season_label": "Winter 2022",
+  "source_section_code": "AP003",
+  "section_label": "Mx Rubbers 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Elwood Green",
+      "wins": 10,
+      "points": 81,
+      "percentage": 153.59,
+      "marker": ""
+    },
+    {
+      "position": 2,
+      "team": "Parkdale White",
+      "wins": 7,
+      "points": 64,
+      "percentage": 131.56,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Glen Huntly",
+      "wins": 8,
+      "points": 62,
+      "percentage": 125.46,
+      "marker": "P"
+    },
+    {
+      "position": 4,
+      "team": "Tally Ho",
+      "wins": 4,
+      "points": 42.5,
+      "percentage": 101.23,
+      "marker": "R"
+    },
+    {
+      "position": 5,
+      "team": "Highmoor Uniting",
+      "wins": 3,
+      "points": 39.5,
+      "percentage": 83.96,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Parkdale Blue",
+      "wins": 3,
+      "points": 34.5,
+      "percentage": 82.89,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Ormond",
+      "wins": 0,
+      "points": 12.5,
+      "percentage": 42.86,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP44-AP003",
+  "fixtures": 59,
+  "completed_fixtures": 40,
+  "draw_fixtures": 59,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 156,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Fixture game totals do not match rubbers for AP003321: TROLS team total 45-44; complete-score total 44-44. Both published records retained."
+  ]
+}

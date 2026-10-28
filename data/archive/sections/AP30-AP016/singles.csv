@@ -1,0 +1,239 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP016011,04 Oct 14,1,BLTC,Kooyong,No. 1,Andrew Macfarlane,Peter Gard,Peter Gard,5-8,5,8,0,1,Completed,true,false,false
+AP016011,04 Oct 14,1,BLTC,Kooyong,No. 2,Anatole Shramkova,Song Lim,Song Lim,8-9,8,9,0,1,Completed,true,false,false
+AP016011,04 Oct 14,1,BLTC,Kooyong,No. 3,Jon Watson,Bryce Mitchelson,Jon Watson,8-4,8,4,1,0,Completed,true,false,false
+AP016011,04 Oct 14,1,BLTC,Kooyong,No. 4,Stuart Macfarlane,Ron Gerendasi,Ron Gerendasi,2-8,2,8,0,1,Completed,true,false,false
+AP016012,04 Oct 14,1,Albert Reserve,East Malvern,No. 1,Sasha Miokovic,Elliot Payne,Sasha Miokovic,8-2,8,2,1,0,Completed,true,false,false
+AP016012,04 Oct 14,1,Albert Reserve,East Malvern,No. 2,Isai Torres,Andrew McVean,Isai Torres,8-5,8,5,1,0,Completed,true,false,false
+AP016012,04 Oct 14,1,Albert Reserve,East Malvern,No. 3,Andres Alvarez,Miles Rozman,Andres Alvarez,8-5,8,5,1,0,Completed,true,false,false
+AP016012,04 Oct 14,1,Albert Reserve,East Malvern,No. 4,Daniel Siero,Alex Sloane,Daniel Siero,8-2,8,2,1,0,Completed,true,false,false
+AP016013,04 Oct 14,1,GPHC,Mt Eliza,No. 1,Cooper Millett,David Branthwaite,Cooper Millett,8-2,8,2,1,0,Completed,true,false,false
+AP016013,04 Oct 14,1,GPHC,Mt Eliza,No. 2,Jack Basso,Tom Shepherd,Tom Shepherd,6-8,6,8,0,1,Completed,true,false,false
+AP016013,04 Oct 14,1,GPHC,Mt Eliza,No. 3,Rowan Browning,Zain Al Sadie,Rowan Browning,9-7,9,7,1,0,Completed,true,false,false
+AP016013,04 Oct 14,1,GPHC,Mt Eliza,No. 4,Dan Cadjusic,Ed Wiggins,Dan Cadjusic,9-7,9,7,1,0,Completed,true,false,false
+AP016014,04 Oct 14,1,Old Scotch,Highmoor Uniting,No. 1,James Bull,Ben Abbott,Ben Abbott,8-9,8,9,0,1,Completed,true,false,false
+AP016014,04 Oct 14,1,Old Scotch,Highmoor Uniting,No. 2,Chris Hay,Alex Molnar,Chris Hay,8-3,8,3,1,0,Completed,true,false,false
+AP016014,04 Oct 14,1,Old Scotch,Highmoor Uniting,No. 3,James Brownell,Glenn Collins,Glenn Collins,1-8,1,8,0,1,Completed,true,false,false
+AP016014,04 Oct 14,1,Old Scotch,Highmoor Uniting,No. 4,Scott McMurtrie,Jason Mahmoud,Jason Mahmoud,1-8,1,8,0,1,Completed,true,false,false
+AP016021,11 Oct 14,2,Highmoor Uniting,BLTC,No. 1,Paul Luke,Masoud Ahmed,Paul Luke,8-3,8,3,1,0,Completed,true,false,false
+AP016021,11 Oct 14,2,Highmoor Uniting,BLTC,No. 2,Ben Abbott,Anatole Shramkova,Anatole Shramkova,4-8,4,8,0,1,Completed,true,false,false
+AP016021,11 Oct 14,2,Highmoor Uniting,BLTC,No. 3,Alex Molnar,Stuart Macfarlane,Alex Molnar,8-5,8,5,1,0,Completed,true,false,false
+AP016021,11 Oct 14,2,Highmoor Uniting,BLTC,No. 4,Glenn Collins,Macgregor Anderson,Macgregor Anderson,2-8,2,8,0,1,Completed,true,false,false
+AP016022,11 Oct 14,2,Kooyong,Albert Reserve,No. 1,Ben Bobos,Hector Fuentes,Hector Fuentes,5-8,5,8,0,1,Completed,true,false,false
+AP016022,11 Oct 14,2,Kooyong,Albert Reserve,No. 2,Song Lim,Isai Torres,Isai Torres,5-8,5,8,0,1,Completed,true,false,false
+AP016022,11 Oct 14,2,Kooyong,Albert Reserve,No. 3,Bryce Mitchelson,Andres Alvarez,Andres Alvarez,4-8,4,8,0,1,Completed,true,false,false
+AP016022,11 Oct 14,2,Kooyong,Albert Reserve,No. 4,Brent Varmalis,Bobby Lim,Bobby Lim,2-8,2,8,0,1,Completed,true,false,false
+AP016023,11 Oct 14,2,East Malvern,GPHC,No. 1,Elliot Payne,Jack Basso,Elliot Payne,8-5,8,5,1,0,Completed,true,false,false
+AP016023,11 Oct 14,2,East Malvern,GPHC,No. 2,Rohan Appleton,Rowan Browning,Rowan Browning,3-8,3,8,0,1,Completed,true,false,false
+AP016023,11 Oct 14,2,East Malvern,GPHC,No. 3,Alex Krohn,Tom Hansen,Tom Hansen,7-9,7,9,0,1,Completed,true,false,false
+AP016023,11 Oct 14,2,East Malvern,GPHC,No. 4,Andrew McVean,Dan Cadjusic,Andrew McVean,8-1,8,1,1,0,Completed,true,false,false
+AP016024,11 Oct 14,2,Mt Eliza,Old Scotch,No. 1,David Branthwaite,Chris Hay,Chris Hay,3-8,3,8,0,1,Completed,true,false,false
+AP016024,11 Oct 14,2,Mt Eliza,Old Scotch,No. 2,Max Wiggins,George Hurley,Max Wiggins,8-0,8,0,1,0,Completed,true,false,false
+AP016024,11 Oct 14,2,Mt Eliza,Old Scotch,No. 3,Ed Wiggins,James Brownell,Ed Wiggins,9-7,9,7,1,0,Completed,true,false,false
+AP016024,11 Oct 14,2,Mt Eliza,Old Scotch,No. 4,Nathan Johnson,John Cade,Nathan Johnson,8-6,8,6,1,0,Completed,true,false,false
+AP016031,18 Oct 14,3,BLTC,Mt Eliza,No. 1,Masoud Ahmed,Tom Shepherd,Masoud Ahmed,8-3,8,3,1,0,Completed,true,false,false
+AP016031,18 Oct 14,3,BLTC,Mt Eliza,No. 2,Anatole Shramkova,Max Wiggins,Max Wiggins,8-9,8,9,0,1,Completed,true,false,false
+AP016031,18 Oct 14,3,BLTC,Mt Eliza,No. 3,Jon Watson,Zain Al Sadie,Zain Al Sadie,7-9,7,9,0,1,Completed,true,false,false
+AP016031,18 Oct 14,3,BLTC,Mt Eliza,No. 4,Macgregor Anderson,Ed Wiggins,Macgregor Anderson,8-5,8,5,1,0,Completed,true,false,false
+AP016032,18 Oct 14,3,Albert Reserve,Highmoor Uniting,No. 1,Hector Fuentes,Ben Abbott,Hector Fuentes,8-1,8,1,1,0,Completed,true,false,false
+AP016032,18 Oct 14,3,Albert Reserve,Highmoor Uniting,No. 2,Andres Alvarez,Alex Molnar,Andres Alvarez,8-1,8,1,1,0,Completed,true,false,false
+AP016032,18 Oct 14,3,Albert Reserve,Highmoor Uniting,No. 3,Rishad Sukhia,Jason Mahmoud,Jason Mahmoud,3-8,3,8,0,1,Completed,true,false,false
+AP016032,18 Oct 14,3,Albert Reserve,Highmoor Uniting,No. 4,Daniel Siero,Brett Andrews,Brett Andrews,0-8,0,8,0,1,Completed,true,false,false
+AP016033,18 Oct 14,3,GPHC,Kooyong,No. 1,Cooper Millett,Song Lim,Cooper Millett,9-7,9,7,1,0,Completed,true,false,false
+AP016033,18 Oct 14,3,GPHC,Kooyong,No. 2,Jack Basso,Bryce Mitchelson,Bryce Mitchelson,5-8,5,8,0,1,Completed,true,false,false
+AP016033,18 Oct 14,3,GPHC,Kooyong,No. 3,Tom Hansen,Scott Donnellan,Scott Donnellan,7-9,7,9,0,1,Completed,true,false,false
+AP016033,18 Oct 14,3,GPHC,Kooyong,No. 4,Kim Tram,Brent Vermalis,Brent Vermalis,0-8,0,8,0,1,Completed,true,false,false
+AP016034,18 Oct 14,3,Old Scotch,East Malvern,No. 1,James Bull,Paul Lidgerwood,Paul Lidgerwood,5-8,5,8,0,1,Completed,true,false,false
+AP016034,18 Oct 14,3,Old Scotch,East Malvern,No. 2,Chris Hay,Elliot Payne,Elliot Payne,0-8,0,8,0,1,Completed,true,false,false
+AP016034,18 Oct 14,3,Old Scotch,East Malvern,No. 3,George Hurley,Miles Rozman,George Hurley,8-6,8,6,1,0,Completed,true,false,false
+AP016034,18 Oct 14,3,Old Scotch,East Malvern,No. 4,James Brownell,Marcus Read,Marcus Read,3-8,3,8,0,1,Completed,true,false,false
+AP016041,25 Oct 14,4,East Malvern,BLTC,No. 1,Elliot Payne,Andrew Macfarlane,Andrew Macfarlane,6-8,6,8,0,1,Completed,true,false,false
+AP016041,25 Oct 14,4,East Malvern,BLTC,No. 2,Rohan Appleton,Jon Watson,Jon Watson,1-8,1,8,0,1,Completed,true,false,false
+AP016041,25 Oct 14,4,East Malvern,BLTC,No. 3,Alex Krohn,Stuart Macfarlane,Alex Krohn,8-3,8,3,1,0,Completed,true,false,false
+AP016041,25 Oct 14,4,East Malvern,BLTC,No. 4,Miles Rozman,Macgregor Anderson,Miles Rozman,8-6,8,6,1,0,Completed,true,false,false
+AP016042,25 Oct 14,4,Mt Eliza,Albert Reserve,No. 1,Tom Shepherd,Jarrod Yip,Tom Shepherd,9-7,9,7,1,0,Completed,true,false,false
+AP016042,25 Oct 14,4,Mt Eliza,Albert Reserve,No. 2,Max Wiggins,Paul Ni,Max Wiggins,8-0,8,0,1,0,Completed,true,false,false
+AP016042,25 Oct 14,4,Mt Eliza,Albert Reserve,No. 3,Zain Al Sadie,Daniel Siero,Zain Al Sadie,8-0,8,0,1,0,Completed,true,false,false
+AP016042,25 Oct 14,4,Mt Eliza,Albert Reserve,No. 4,Ed Wiggins,Rishad Sukhia,Rishad Sukhia,0-8,0,8,0,1,Completed,true,false,false
+AP016043,25 Oct 14,4,Highmoor Uniting,GPHC,No. 1,Glenn Collins,Cooper Millett,Cooper Millett,1-8,1,8,0,1,Completed,true,false,false
+AP016043,25 Oct 14,4,Highmoor Uniting,GPHC,No. 2,Jason Mahmoud,Jack Basso,Jason Mahmoud,8-6,8,6,1,0,Completed,true,false,false
+AP016043,25 Oct 14,4,Highmoor Uniting,GPHC,No. 3,Brett Andrews,Rowan Browning,Rowan Browning,1-8,1,8,0,1,Completed,true,false,false
+AP016043,25 Oct 14,4,Highmoor Uniting,GPHC,No. 4,Murray Ashton,Alan Fryday,Murray Ashton,8-3,8,3,1,0,Completed,true,false,false
+AP016044,25 Oct 14,4,Kooyong,Old Scotch,No. 1,Ben Bobos,James Bull,Ben Bobos,8-1,8,1,1,0,Completed,true,false,false
+AP016044,25 Oct 14,4,Kooyong,Old Scotch,No. 2,Peter Gard,George Hurley,George Hurley,5-8,5,8,0,1,Completed,true,false,false
+AP016044,25 Oct 14,4,Kooyong,Old Scotch,No. 3,Bryce Mitchelson,James Brownell,Bryce Mitchelson,8-5,8,5,1,0,Completed,true,false,false
+AP016044,25 Oct 14,4,Kooyong,Old Scotch,No. 4,Brent Varmalis,John Cade,Brent Varmalis,8-1,8,1,1,0,Completed,true,false,false
+AP016051,08 Nov 14,5,GPHC,Old Scotch,No. 1,Cooper Millett,Chris Hay,Cooper Millett,8-3,8,3,1,0,Completed,true,false,false
+AP016051,08 Nov 14,5,GPHC,Old Scotch,No. 2,Jack Basso,George Hurley,George Hurley,2-8,2,8,0,1,Completed,true,false,false
+AP016051,08 Nov 14,5,GPHC,Old Scotch,No. 3,Rowan Browning,James Brownell,Rowan Browning,8-2,8,2,1,0,Completed,true,false,false
+AP016051,08 Nov 14,5,GPHC,Old Scotch,No. 4,Dan Cadjusic,Scott McMurtrie,Scott McMurtrie,0-8,0,8,0,1,Completed,true,false,false
+AP016052,08 Nov 14,5,Highmoor Uniting,Mt Eliza,No. 1,Paul Luke,David Branthwaite,Paul Luke,8-1,8,1,1,0,Completed,true,false,false
+AP016052,08 Nov 14,5,Highmoor Uniting,Mt Eliza,No. 2,Ben Abbott,Tom Shepherd,Ben Abbott,8-4,8,4,1,0,Completed,true,false,false
+AP016052,08 Nov 14,5,Highmoor Uniting,Mt Eliza,No. 3,Glenn Collins,Max Wiggins,Max Wiggins,0-8,0,8,0,1,Completed,true,false,false
+AP016052,08 Nov 14,5,Highmoor Uniting,Mt Eliza,No. 4,Murray Ashton,Ed Wiggins,Murray Ashton,8-3,8,3,1,0,Completed,true,false,false
+AP016053,08 Nov 14,5,East Malvern,Kooyong,No. 1,Paul Lidgerwood,Ben Bobos,Ben Bobos,3-8,3,8,0,1,Completed,true,false,false
+AP016053,08 Nov 14,5,East Malvern,Kooyong,No. 2,Elliot Payne,Dennis Mihelyi,Elliot Payne,8-5,8,5,1,0,Completed,true,false,false
+AP016053,08 Nov 14,5,East Malvern,Kooyong,No. 3,Alex Krohn,Bryce Mitchelson,Bryce Mitchelson,6-8,6,8,0,1,Completed,true,false,false
+AP016053,08 Nov 14,5,East Malvern,Kooyong,No. 4,Andrew McVean,Brent Varmalis,Brent Varmalis,4-8,4,8,0,1,Completed,true,false,false
+AP016054,08 Nov 14,5,BLTC,Albert Reserve,No. 1,Anatole Shramkova,Finau Fa,Anatole Shramkova,8-0,8,0,1,0,Completed,true,false,false
+AP016054,08 Nov 14,5,BLTC,Albert Reserve,No. 2,Jon Watson,Bobby Lim,Jon Watson,8-3,8,3,1,0,Completed,true,false,false
+AP016054,08 Nov 14,5,BLTC,Albert Reserve,No. 3,Stuart Macfarlane,Rishad Sukhia,Stuart Macfarlane,8-0,8,0,1,0,Completed,true,false,false
+AP016054,08 Nov 14,5,BLTC,Albert Reserve,No. 4,Macgregor Anderson,Daniel Siero,Macgregor Anderson,8-0,8,0,1,0,Completed,true,false,false
+AP016061,15 Nov 14,6,Albert Reserve,GPHC,No. 1,Finau Fa,Cooper Millett,Cooper Millett,8-9,8,9,0,1,Completed,true,false,false
+AP016061,15 Nov 14,6,Albert Reserve,GPHC,No. 2,Andres Alvarez,Jack Basso,Andres Alvarez,8-1,8,1,1,0,Completed,true,false,false
+AP016061,15 Nov 14,6,Albert Reserve,GPHC,No. 3,Daniel Siero,Marcus Matear,Marcus Matear,2-8,2,8,0,1,Completed,true,false,false
+AP016061,15 Nov 14,6,Albert Reserve,GPHC,No. 4,Rishad Sukhia,Dan Cadjusic,Rishad Sukhia,8-0,8,0,1,0,Completed,true,false,false
+AP016062,15 Nov 14,6,Old Scotch,BLTC,No. 1,George Hurley,Andrew Macfarlane,Andrew Macfarlane,2-8,2,8,0,1,Completed,true,false,false
+AP016062,15 Nov 14,6,Old Scotch,BLTC,No. 2,James Brownell,Masoud Ahmed,Masoud Ahmed,3-8,3,8,0,1,Completed,true,false,false
+AP016062,15 Nov 14,6,Old Scotch,BLTC,No. 3,Scott McMurtrie,Anatole Shramkova,Anatole Shramkova,2-8,2,8,0,1,Completed,true,false,false
+AP016062,15 Nov 14,6,Old Scotch,BLTC,No. 4,John Cade,Stuart Macfarlane,Stuart Macfarlane,3-8,3,8,0,1,Completed,true,false,false
+AP016063,15 Nov 14,6,Mt Eliza,East Malvern,No. 1,David Branthwaite,Elliot Payne,Elliot Payne,2-8,2,8,0,1,Completed,true,false,false
+AP016063,15 Nov 14,6,Mt Eliza,East Malvern,No. 2,Tom Shepherd,Rohan Appleton,Tom Shepherd,8-6,8,6,1,0,Completed,true,false,false
+AP016063,15 Nov 14,6,Mt Eliza,East Malvern,No. 3,Zain Al Sadie,Andrew McVean,Zain Al Sadie,9-7,9,7,1,0,Completed,true,false,false
+AP016063,15 Nov 14,6,Mt Eliza,East Malvern,No. 4,Ed Wiggins,Robert Payne,Robert Payne,5-8,5,8,0,1,Completed,true,false,false
+AP016064,15 Nov 14,6,Kooyong,Highmoor Uniting,No. 1,Ben Bobos,Paul Luke,Paul Luke,4-8,4,8,0,1,Completed,true,false,false
+AP016064,15 Nov 14,6,Kooyong,Highmoor Uniting,No. 2,Anthony Coxen,Alex Molnar,Alex Molnar,5-8,5,8,0,1,Completed,true,false,false
+AP016064,15 Nov 14,6,Kooyong,Highmoor Uniting,No. 3,Dan Taylor,Jason Mahmoud,Jason Mahmoud,6-8,6,8,0,1,Completed,true,false,false
+AP016064,15 Nov 14,6,Kooyong,Highmoor Uniting,No. 4,Brent Varmalis,Murray Ashton,Murray Ashton,6-8,6,8,0,1,Completed,true,false,false
+AP016071,22 Nov 14,7,BLTC,GPHC,No. 1,Andrew Macfarlane,Cooper Millett,Andrew Macfarlane,8-2,8,2,1,0,Completed,true,false,false
+AP016071,22 Nov 14,7,BLTC,GPHC,No. 2,Jon Watson,Rowan Browning,Rowan Browning,6-8,6,8,0,1,Completed,true,false,false
+AP016071,22 Nov 14,7,BLTC,GPHC,No. 3,Macgregor Anderson,Michael Lord,Macgregor Anderson,8-2,8,2,1,0,Completed,true,false,false
+AP016071,22 Nov 14,7,BLTC,GPHC,No. 4,Ian Thomas,Alan Fryday,Ian Thomas,8-5,8,5,1,0,Completed,true,false,false
+AP016072,22 Nov 14,7,Albert Reserve,Old Scotch,No. 1,Isai Torres,James Bull,Isai Torres,8-3,8,3,1,0,Completed,true,false,false
+AP016072,22 Nov 14,7,Albert Reserve,Old Scotch,No. 2,Andres Alvarez,Chris Hay,Andres Alvarez,8-4,8,4,1,0,Completed,true,false,false
+AP016072,22 Nov 14,7,Albert Reserve,Old Scotch,No. 3,Daniel Siero,George Hurley,Daniel Siero,9-7,9,7,1,0,Completed,true,false,false
+AP016072,22 Nov 14,7,Albert Reserve,Old Scotch,No. 4,Rishad Sukhia,Scott McMurtrie,Scott McMurtrie,4-8,4,8,0,1,Completed,true,false,false
+AP016073,22 Nov 14,7,Highmoor Uniting,East Malvern,No. 1,Graeme Cambell,Paul Lidgerwood,Graeme Cambell,8-4,8,4,1,0,Completed,true,false,false
+AP016073,22 Nov 14,7,Highmoor Uniting,East Malvern,No. 2,Alex Molnar,Elliot Payne,Elliot Payne,4-8,4,8,0,1,Completed,true,false,false
+AP016073,22 Nov 14,7,Highmoor Uniting,East Malvern,No. 3,Glenn Collins,Alex Krohn,Alex Krohn,5-8,5,8,0,1,Completed,true,false,false
+AP016073,22 Nov 14,7,Highmoor Uniting,East Malvern,No. 4,Jason Mahmoud,Jordan Rozman,Jason Mahmoud,8-4,8,4,1,0,Completed,true,false,false
+AP016074,22 Nov 14,7,Mt Eliza,Kooyong,No. 1,David Branthwaite,Nikolai Storch,Nikolai Storch,1-8,1,8,0,1,Completed,true,false,false
+AP016074,22 Nov 14,7,Mt Eliza,Kooyong,No. 2,Max Wiggins,Ben Bobos,Ben Bobos,6-8,6,8,0,1,Completed,true,false,false
+AP016074,22 Nov 14,7,Mt Eliza,Kooyong,No. 3,Zain Al Sadie,Peter Storch,Peter Storch,6-8,6,8,0,1,Completed,true,false,false
+AP016074,22 Nov 14,7,Mt Eliza,Kooyong,No. 4,Ed Wiggins,Brent Varmalis,Brent Varmalis,5-8,5,8,0,1,Completed,true,false,false
+AP016081,29 Nov 14,8,Kooyong,BLTC,No. 1,Nikolai Storch,Andrew Macfarlane,Nikolai Storch,8-6,8,6,1,0,Completed,true,false,false
+AP016081,29 Nov 14,8,Kooyong,BLTC,No. 2,Dan Taylor,Masoud Ahmed,Masoud Ahmed,5-8,5,8,0,1,Completed,true,false,false
+AP016081,29 Nov 14,8,Kooyong,BLTC,No. 3,Peter Storch,Stuart Macfarlane,Peter Storch,8-1,8,1,1,0,Completed,true,false,false
+AP016081,29 Nov 14,8,Kooyong,BLTC,No. 4,Song Lim,Macgregor Anderson,Macgregor Anderson,8-9,8,9,0,1,Completed,true,false,false
+AP016082,29 Nov 14,8,East Malvern,Albert Reserve,No. 1,Paul Lidgerwood,Sasha Miokovic,Sasha Miokovic,6-8,6,8,0,1,Completed,true,false,false
+AP016082,29 Nov 14,8,East Malvern,Albert Reserve,No. 2,Elliot Payne,Isai Torres,Elliot Payne,8-1,8,1,1,0,Completed,true,false,false
+AP016082,29 Nov 14,8,East Malvern,Albert Reserve,No. 3,Rohan Appleton,Andres Alvarez,Andres Alvarez,1-8,1,8,0,1,Completed,true,false,false
+AP016082,29 Nov 14,8,East Malvern,Albert Reserve,No. 4,Andrew McVean,Bobby Lim,Bobby Lim,5-8,5,8,0,1,Completed,true,false,false
+AP016083,29 Nov 14,8,Mt Eliza,GPHC,No. 1,David Branthwaite,Cooper Millett,Cooper Millett,4-8,4,8,0,1,Completed,true,false,false
+AP016083,29 Nov 14,8,Mt Eliza,GPHC,No. 2,Tom Shepherd,Jack Basso,Tom Shepherd,8-5,8,5,1,0,Completed,true,false,false
+AP016083,29 Nov 14,8,Mt Eliza,GPHC,No. 3,Max Wiggins,Rowan Browning,Max Wiggins,8-3,8,3,1,0,Completed,true,false,false
+AP016083,29 Nov 14,8,Mt Eliza,GPHC,No. 4,Zain Al Sadie,Marcus Matear,Zain Al Sadie,8-2,8,2,1,0,Completed,true,false,false
+AP016084,29 Nov 14,8,Highmoor Uniting,Old Scotch,No. 1,Ben Abbott,George Hurley,George Hurley,3-8,3,8,0,1,Completed,true,false,false
+AP016084,29 Nov 14,8,Highmoor Uniting,Old Scotch,No. 2,Alex Molnar,James Brownell,Alex Molnar,8-4,8,4,1,0,Completed,true,false,false
+AP016084,29 Nov 14,8,Highmoor Uniting,Old Scotch,No. 3,Glenn Collins,Scott McMurtrie,Glenn Collins,8-3,8,3,1,0,Completed,true,false,false
+AP016084,29 Nov 14,8,Highmoor Uniting,Old Scotch,No. 4,Murray Ashton,Alex Wallace-Smith,Murray Ashton,8-1,8,1,1,0,Completed,true,false,false
+AP016091,06 Dec 14,9,BLTC,Highmoor Uniting,No. 1,Anatole Shramkova,Paul Luke,Paul Luke,4-8,4,8,0,1,Completed,true,false,false
+AP016091,06 Dec 14,9,BLTC,Highmoor Uniting,No. 2,Jon Watson,Ben Abbott,Jon Watson,8-4,8,4,1,0,Completed,true,false,false
+AP016091,06 Dec 14,9,BLTC,Highmoor Uniting,No. 3,Macgregor Anderson,Glenn Collins,Macgregor Anderson,8-3,8,3,1,0,Completed,true,false,false
+AP016091,06 Dec 14,9,BLTC,Highmoor Uniting,No. 4,Ian Thomas,Murray Ashton,Ian Thomas,8-5,8,5,1,0,Completed,true,false,false
+AP016092,06 Dec 14,9,Albert Reserve,Kooyong,No. 1,Finau Fa,Nikolai Storch,Nikolai Storch,3-8,3,8,0,1,Completed,true,false,false
+AP016092,06 Dec 14,9,Albert Reserve,Kooyong,No. 2,Isai Torres,Dan Taylor,Isai Torres,8-2,8,2,1,0,Completed,true,false,false
+AP016092,06 Dec 14,9,Albert Reserve,Kooyong,No. 3,Bobby Lim,Peter Storch,Bobby Lim,8-1,8,1,1,0,Completed,true,false,false
+AP016092,06 Dec 14,9,Albert Reserve,Kooyong,No. 4,Daniel Siero,Brent Varmalis,Brent Varmalis,5-8,5,8,0,1,Completed,true,false,false
+AP016093,06 Dec 14,9,GPHC,East Malvern,No. 1,Jack Basso,Paul Lidgerwood,Jack Basso,8-4,8,4,1,0,Completed,true,false,false
+AP016093,06 Dec 14,9,GPHC,East Malvern,No. 2,Rowan Browning,Elliot Payne,Elliot Payne,0-8,0,8,0,1,Completed,true,false,false
+AP016093,06 Dec 14,9,GPHC,East Malvern,No. 3,Richard Birmingham,Rohan Appleton,Richard Birmingham,8-6,8,6,1,0,Completed,true,false,false
+AP016093,06 Dec 14,9,GPHC,East Malvern,No. 4,Marcus Matear,Robert Payne,Marcus Matear,8-1,8,1,1,0,Completed,true,false,false
+AP016094,06 Dec 14,9,Old Scotch,Mt Eliza,No. 1,James Bull,Tom Shepherd,Tom Shepherd,6-8,6,8,0,1,Completed,true,false,false
+AP016094,06 Dec 14,9,Old Scotch,Mt Eliza,No. 2,Chris Hay,Max Wiggins,Max Wiggins,3-8,3,8,0,1,Completed,true,false,false
+AP016094,06 Dec 14,9,Old Scotch,Mt Eliza,No. 3,George Hurley,Zain Al Sadie,Zain Al Sadie,4-8,4,8,0,1,Completed,true,false,false
+AP016094,06 Dec 14,9,Old Scotch,Mt Eliza,No. 4,James Brownell,Ed Wiggins,James Brownell,8-3,8,3,1,0,Completed,true,false,false
+AP016101,13 Dec 14,10,Mt Eliza,BLTC,No. 1,David Branthwaite,Masoud Ahmed,Masoud Ahmed,4-8,4,8,0,1,Completed,true,false,false
+AP016101,13 Dec 14,10,Mt Eliza,BLTC,No. 2,Tom Shepherd,Stuart Macfarlane,Stuart Macfarlane,1-8,1,8,0,1,Completed,true,false,false
+AP016101,13 Dec 14,10,Mt Eliza,BLTC,No. 3,Max Wiggins,Macgregor Anderson,Macgregor Anderson,6-8,6,8,0,1,Completed,true,false,false
+AP016101,13 Dec 14,10,Mt Eliza,BLTC,No. 4,Ed Wiggins,John Lyon,John Lyon,7-9,7,9,0,1,Completed,true,false,false
+AP016102,13 Dec 14,10,Highmoor Uniting,Albert Reserve,No. 1,Paul Luke,Sasha Miokovic,Sasha Miokovic,6-8,6,8,0,1,Completed,true,false,false
+AP016102,13 Dec 14,10,Highmoor Uniting,Albert Reserve,No. 2,Ben Abbott,Finau Fa,Finau Fa,5-8,5,8,0,1,Completed,true,false,false
+AP016102,13 Dec 14,10,Highmoor Uniting,Albert Reserve,No. 3,Alex Molnar,Isai Torres,Isai Torres,4-8,4,8,0,1,Completed,true,false,false
+AP016102,13 Dec 14,10,Highmoor Uniting,Albert Reserve,No. 4,Jason Mahmoud,Andres Alvarez,Andres Alvarez,2-8,2,8,0,1,Completed,true,false,false
+AP016103,13 Dec 14,10,Kooyong,GPHC,No. 1,Peter Gard,Cooper Millett,Cooper Millett,6-8,6,8,0,1,Completed,true,false,false
+AP016103,13 Dec 14,10,Kooyong,GPHC,No. 2,Song Lim,Jack Basso,Song Lim,8-6,8,6,1,0,Completed,true,false,false
+AP016103,13 Dec 14,10,Kooyong,GPHC,No. 3,Bryce Mitchelson,Rowan Browning,Bryce Mitchelson,8-6,8,6,1,0,Completed,true,false,false
+AP016103,13 Dec 14,10,Kooyong,GPHC,No. 4,Brent Varmalis,Marcus Matear,Marcus Matear,4-8,4,8,0,1,Completed,true,false,false
+AP016104,13 Dec 14,10,East Malvern,Old Scotch,No. 1,Rohan Appleton,George Hurley,George Hurley,4-8,4,8,0,1,Completed,true,false,false
+AP016104,13 Dec 14,10,East Malvern,Old Scotch,No. 2,Andrew McVean,Scott McMurtrie,Andrew McVean,8-3,8,3,1,0,Completed,true,false,false
+AP016104,13 Dec 14,10,East Malvern,Old Scotch,No. 3,Robert Payne,John Cade,Robert Payne,8-3,8,3,1,0,Completed,true,false,false
+AP016104,13 Dec 14,10,East Malvern,Old Scotch,No. 4,Marcus Read,Stuart McRae,Marcus Read,8-2,8,2,1,0,Completed,true,false,false
+AP016111,07 Feb 15,11,BLTC,East Malvern,No. 1,Andrew Macfarlane,Paul Lidgerwood,Paul Lidgerwood,8-9,8,9,0,1,Completed,true,false,false
+AP016111,07 Feb 15,11,BLTC,East Malvern,No. 2,Masoud Ahmed,Elliot Payne,Elliot Payne,4-8,4,8,0,1,Completed,true,false,false
+AP016111,07 Feb 15,11,BLTC,East Malvern,No. 3,Jon Watson,Rohan Appleton,Jon Watson,8-3,8,3,1,0,Completed,true,false,false
+AP016111,07 Feb 15,11,BLTC,East Malvern,No. 4,Macgregor Anderson,Andrew McVean,Macgregor Anderson,8-3,8,3,1,0,Completed,true,false,false
+AP016112,07 Feb 15,11,Albert Reserve,Mt Eliza,No. 1,Sasha Miokovic,David Branthwaite,Sasha Miokovic,8-4,8,4,1,0,Completed,true,false,false
+AP016112,07 Feb 15,11,Albert Reserve,Mt Eliza,No. 2,Isai Torres,Tom Shepherd,Isai Torres,8-5,8,5,1,0,Completed,true,false,false
+AP016112,07 Feb 15,11,Albert Reserve,Mt Eliza,No. 3,Andres Alvarez,Zain Al Sadie,Andres Alvarez,8-4,8,4,1,0,Completed,true,false,false
+AP016112,07 Feb 15,11,Albert Reserve,Mt Eliza,No. 4,Daniel Siero,Ed Wiggins,Ed Wiggins,4-8,4,8,0,1,Completed,true,false,false
+AP016113,07 Feb 15,11,GPHC,Highmoor Uniting,No. 1,Cooper Millett,Ben Abbott,Cooper Millett,8-2,8,2,1,0,Completed,true,false,false
+AP016113,07 Feb 15,11,GPHC,Highmoor Uniting,No. 2,Jack Basso,Alex Molnar,Jack Basso,8-2,8,2,1,0,Completed,true,false,false
+AP016113,07 Feb 15,11,GPHC,Highmoor Uniting,No. 3,Rowan Browning,Glenn Collins,Rowan Browning,8-4,8,4,1,0,Completed,true,false,false
+AP016113,07 Feb 15,11,GPHC,Highmoor Uniting,No. 4,Marcus Matear,Murray Ashton,Marcus Matear,8-6,8,6,1,0,Completed,true,false,false
+AP016114,07 Feb 15,11,Old Scotch,Kooyong,No. 1,James Bull,Nikolai Storch,Nikolai Storch,0-8,0,8,0,1,Completed,true,false,false
+AP016114,07 Feb 15,11,Old Scotch,Kooyong,No. 2,Chris Hay,Dan Taylor,Dan Taylor,3-8,3,8,0,1,Completed,true,false,false
+AP016114,07 Feb 15,11,Old Scotch,Kooyong,No. 3,James Brownell,Peter Storch,Peter Storch,2-8,2,8,0,1,Completed,true,false,false
+AP016114,07 Feb 15,11,Old Scotch,Kooyong,No. 4,Scott McMurtrie,Song Lim,Song Lim,3-8,3,8,0,1,Completed,true,false,false
+AP016121,14 Feb 15,12,Old Scotch,GPHC,No. 1,Chris Hay,Cooper Millett,Cooper Millett,2-8,2,8,0,1,Completed,true,false,false
+AP016121,14 Feb 15,12,Old Scotch,GPHC,No. 2,George Hurley,Jack Basso,Jack Basso,3-8,3,8,0,1,Completed,true,false,false
+AP016121,14 Feb 15,12,Old Scotch,GPHC,No. 3,James Brownell,Rowan Browning,James Brownell,8-3,8,3,1,0,Completed,true,false,false
+AP016121,14 Feb 15,12,Old Scotch,GPHC,No. 4,Jeremy Tobin,Kim Tram,Jeremy Tobin,8-3,8,3,1,0,Completed,true,false,false
+AP016122,14 Feb 15,12,Mt Eliza,Highmoor Uniting,No. 1,David Branthwaite,Paul Luke,Paul Luke,1-8,1,8,0,1,Completed,true,false,false
+AP016122,14 Feb 15,12,Mt Eliza,Highmoor Uniting,No. 2,Max Wiggins,Ben Abbott,Max Wiggins,8-6,8,6,1,0,Completed,true,false,false
+AP016122,14 Feb 15,12,Mt Eliza,Highmoor Uniting,No. 3,Zain Al Sadie,Glenn Collins,Zain Al Sadie,8-4,8,4,1,0,Completed,true,false,false
+AP016122,14 Feb 15,12,Mt Eliza,Highmoor Uniting,No. 4,Ed Wiggins,Jason Mahmoud,Jason Mahmoud,5-8,5,8,0,1,Completed,true,false,false
+AP016123,14 Feb 15,12,Kooyong,East Malvern,No. 1,Ben Bobos,Paul Lidgerwood,Ben Bobos,8-0,8,0,1,0,Completed,true,false,false
+AP016123,14 Feb 15,12,Kooyong,East Malvern,No. 2,Song Lim,Elliot Payne,Elliot Payne,5-8,5,8,0,1,Completed,true,false,false
+AP016123,14 Feb 15,12,Kooyong,East Malvern,No. 3,Bryce Mitchelson,Rohan Appleton,Bryce Mitchelson,8-3,8,3,1,0,Completed,true,false,false
+AP016123,14 Feb 15,12,Kooyong,East Malvern,No. 4,Brent Varmalis,Andrew McVean,Andrew McVean,6-8,6,8,0,1,Completed,true,false,false
+AP016124,14 Feb 15,12,Albert Reserve,BLTC,No. 1,Sasha Miokovic,Andrew Macfarlane,Sasha Miokovic,9-7,9,7,1,0,Completed,true,false,false
+AP016124,14 Feb 15,12,Albert Reserve,BLTC,No. 2,Finau Fa,Carey Pabst,Finau Fa,8-1,8,1,1,0,Completed,true,false,false
+AP016124,14 Feb 15,12,Albert Reserve,BLTC,No. 3,Isai Torres,Stuart Macfarlane,Isai Torres,8-2,8,2,1,0,Completed,true,false,false
+AP016124,14 Feb 15,12,Albert Reserve,BLTC,No. 4,Daniel Siero,Macgregor Anderson,Macgregor Anderson,4-8,4,8,0,1,Completed,true,false,false
+AP016131,21 Feb 15,13,GPHC,Albert Reserve,No. 1,Cooper Millett,Sasha Miokovic,Cooper Millett,8-6,8,6,1,0,Completed,true,false,false
+AP016131,21 Feb 15,13,GPHC,Albert Reserve,No. 2,Jack Basso,Finau Fa,Jack Basso,8-5,8,5,1,0,Completed,true,false,false
+AP016131,21 Feb 15,13,GPHC,Albert Reserve,No. 3,Rowan Browning,James Searless,Rowan Browning,8-3,8,3,1,0,Completed,true,false,false
+AP016131,21 Feb 15,13,GPHC,Albert Reserve,No. 4,Marcus Matear,Paul Radici,Marcus Matear,8-2,8,2,1,0,Completed,true,false,false
+AP016132,21 Feb 15,13,BLTC,Old Scotch,No. 1,Andrew Macfarlane,Chris Hay,Chris Hay,7-9,7,9,0,1,Completed,true,false,false
+AP016132,21 Feb 15,13,BLTC,Old Scotch,No. 2,Anatole Shramkova,George Hurley,George Hurley,6-8,6,8,0,1,Completed,true,false,false
+AP016132,21 Feb 15,13,BLTC,Old Scotch,No. 3,Jon Watson,Jeremy Tobin,Jeremy Tobin,7-9,7,9,0,1,Completed,true,false,false
+AP016132,21 Feb 15,13,BLTC,Old Scotch,No. 4,Stuart Macfarlane,Peter McDiarmid,Stuart Macfarlane,8-4,8,4,1,0,Completed,true,false,false
+AP016133,21 Feb 15,13,East Malvern,Mt Eliza,No. 1,Paul Lidgerwood,David Branthwaite,Paul Lidgerwood,8-2,8,2,1,0,Completed,true,false,false
+AP016133,21 Feb 15,13,East Malvern,Mt Eliza,No. 2,Rohan Appleton,Tom Shepherd,Tom Shepherd,2-8,2,8,0,1,Completed,true,false,false
+AP016133,21 Feb 15,13,East Malvern,Mt Eliza,No. 3,Alex Krohn,Max Wiggins,Max Wiggins,0-8,0,8,0,1,Completed,true,false,false
+AP016133,21 Feb 15,13,East Malvern,Mt Eliza,No. 4,Robert Payne,Zain Al Sadie,Zain Al Sadie,8-9,8,9,0,1,Completed,true,false,false
+AP016134,21 Feb 15,13,Highmoor Uniting,Kooyong,No. 1,Paul Luke,Ben Bobos,Ben Bobos,7-9,7,9,0,1,Completed,true,false,false
+AP016134,21 Feb 15,13,Highmoor Uniting,Kooyong,No. 2,Ben Abbott,Song Lim,Song Lim,4-8,4,8,0,1,Completed,true,false,false
+AP016141,28 Feb 15,14,GPHC,BLTC,No. 1,Cooper Millett,Andrew Macfarlane,Andrew Macfarlane,0-8,0,8,0,1,Completed,true,false,false
+AP016141,28 Feb 15,14,GPHC,BLTC,No. 2,Jack Basso,Anatole Shramkova,Jack Basso,8-5,8,5,1,0,Completed,true,false,false
+AP016141,28 Feb 15,14,GPHC,BLTC,No. 3,Rowan Browning,Jon Watson,Rowan Browning,8-5,8,5,1,0,Completed,true,false,false
+AP016141,28 Feb 15,14,GPHC,BLTC,No. 4,Marcus Matear,Macgregor Anderson,Macgregor Anderson,7-9,7,9,0,1,Completed,true,false,false
+AP016142,28 Feb 15,14,Old Scotch,Albert Reserve,No. 1,James Brownell,Sasha Miokovic,Sasha Miokovic,2-8,2,8,0,1,Completed,true,false,false
+AP016142,28 Feb 15,14,Old Scotch,Albert Reserve,No. 2,Angus Lie,Finau Fa,Finau Fa,3-8,3,8,0,1,Completed,true,false,false
+AP016142,28 Feb 15,14,Old Scotch,Albert Reserve,No. 3,Alex Wallace-Smith,Bobby Lim,Bobby Lim,4-8,4,8,0,1,Completed,true,false,false
+AP016142,28 Feb 15,14,Old Scotch,Albert Reserve,No. 4,Peter McDiarmid,Rishad Sukhia,Rishad Sukhia,1-8,1,8,0,1,Completed,true,false,false
+AP016143,28 Feb 15,14,East Malvern,Highmoor Uniting,No. 1,Paul Lidgerwood,Paul Luke,Paul Luke,4-8,4,8,0,1,Completed,true,false,false
+AP016143,28 Feb 15,14,East Malvern,Highmoor Uniting,No. 2,Rohan Appleton,Ben Abbott,Ben Abbott,3-8,3,8,0,1,Completed,true,false,false
+AP016143,28 Feb 15,14,East Malvern,Highmoor Uniting,No. 3,Andrew McVean,Alex Molnar,Alex Molnar,1-8,1,8,0,1,Completed,true,false,false
+AP016143,28 Feb 15,14,East Malvern,Highmoor Uniting,No. 4,Robert Payne,Glenn Collins,Robert Payne,8-3,8,3,1,0,Completed,true,false,false
+AP016144,28 Feb 15,14,Kooyong,Mt Eliza,No. 1,Ben Bobos,David Branthwaite,Ben Bobos,8-1,8,1,1,0,Completed,true,false,false
+AP016144,28 Feb 15,14,Kooyong,Mt Eliza,No. 2,Dan Taylor,Tom Shepherd,Dan Taylor,8-4,8,4,1,0,Completed,true,false,false
+AP016144,28 Feb 15,14,Kooyong,Mt Eliza,No. 3,Scott Donnellan,Max Wiggins,Max Wiggins,1-8,1,8,0,1,Completed,true,false,false
+AP016144,28 Feb 15,14,Kooyong,Mt Eliza,No. 4,Eddie Trusgnach,Zain Al Sadie,Zain Al Sadie,2-8,2,8,0,1,Completed,true,false,false
+AP016301,,16,Albert Reserve,BLTC,No. 1,Sasha Miokovic,Andrew Macfarlane,Andrew Macfarlane,6-8,6,8,0,1,Completed,true,false,false
+AP016301,,16,Albert Reserve,BLTC,No. 2,Finau Fa,Anatole Shramkova,Finau Fa,8-1,8,1,1,0,Completed,true,false,false
+AP016301,,16,Albert Reserve,BLTC,No. 3,Isai Torres,Jon Watson,Jon Watson,6-8,6,8,0,1,Completed,true,false,false
+AP016301,,16,Albert Reserve,BLTC,No. 4,Rishad Sukhia,Macgregor Anderson,Macgregor Anderson,1-8,1,8,0,1,Completed,true,false,false
+AP016302,,16,Kooyong,GPHC,No. 1,Ben Bobos,Cooper Millett,Ben Bobos,8-4,8,4,1,0,Completed,true,false,false
+AP016302,,16,Kooyong,GPHC,No. 2,Dan Taylor,Jack Basso,Jack Basso,6-8,6,8,0,1,Completed,true,false,false
+AP016302,,16,Kooyong,GPHC,No. 3,Song Lim,Rowan Browning,Rowan Browning,8-9,8,9,0,1,Completed,true,false,false
+AP016302,,16,Kooyong,GPHC,No. 4,Bryce Mitchelson,Marcus Matear,Marcus Matear,5-8,5,8,0,1,Completed,true,false,false
+AP016311,,16,Albert Reserve,GPHC,No. 1,Sasha Miokovic,Cooper Millett,Sasha Miokovic,8-2,8,2,1,0,Completed,true,false,false
+AP016311,,16,Albert Reserve,GPHC,No. 2,Finau Fa,Jack Basso,Jack Basso,6-8,6,8,0,1,Completed,true,false,false
+AP016311,,16,Albert Reserve,GPHC,No. 3,Isai Torres,Rowan Browning,Rowan Browning,7-9,7,9,0,1,Completed,true,false,false
+AP016311,,16,Albert Reserve,GPHC,No. 4,Bobby Lim,Marcus Matear,Marcus Matear,7-9,7,9,0,1,Completed,true,false,false
+AP016321,,17,BLTC,GPHC,No. 1,Andrew Macfarlane,Cooper Millett,Andrew Macfarlane,8-2,8,2,1,0,Completed,true,false,false
+AP016321,,17,BLTC,GPHC,No. 2,Masoud Ahmed,Jack Basso,Jack Basso,8-9,8,9,0,1,Completed,true,false,false
+AP016321,,17,BLTC,GPHC,No. 3,Anatole Shramkova,Rowan Browning,Rowan Browning,6-8,6,8,0,1,Completed,true,false,false
+AP016321,,17,BLTC,GPHC,No. 4,Jon Watson,Marcus Matear,Marcus Matear,2-8,2,8,0,1,Completed,true,false,false

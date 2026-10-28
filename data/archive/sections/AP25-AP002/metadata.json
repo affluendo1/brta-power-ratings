@@ -1,0 +1,97 @@
+{
+  "asset_id": "AP25-AP002",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Winter 2012",
+  "season_id": "AP25",
+  "season_label": "Winter 2012",
+  "source_section_code": "AP002",
+  "section_label": "Ladies Sets 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Highmoor Uniting",
+      "wins": 10,
+      "points": 83,
+      "percentage": 207.69,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "Kings Park",
+      "wins": 8,
+      "points": 69.5,
+      "percentage": 165.73,
+      "marker": "P"
+    },
+    {
+      "position": 3,
+      "team": "St Pats Mentone 1",
+      "wins": 7,
+      "points": 63,
+      "percentage": 152.76,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Port Melbourne",
+      "wins": 6,
+      "points": 50.5,
+      "percentage": 106.37,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Parkdale",
+      "wins": 3,
+      "points": 30,
+      "percentage": 70.49,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "St Pats Mentone 2",
+      "wins": 3,
+      "points": 25,
+      "percentage": 53.25,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Ormond",
+      "wins": 0,
+      "points": 15,
+      "percentage": 50.91,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 1,
+    "doublesTarget": 10,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP25-AP002",
+  "fixtures": 60,
+  "completed_fixtures": 43,
+  "draw_fixtures": 49,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 168,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP002102 doubles No. 2: '1-4'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

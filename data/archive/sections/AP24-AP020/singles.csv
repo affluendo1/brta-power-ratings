@@ -1,0 +1,192 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP020012,08 Oct 11,1,Highmoor Uniting,Lauriston,No. 1,Geoff Lowther,Bevan Rossjohn,Bevan Rossjohn,2-8,2,8,0,1,Completed,true,false,false
+AP020012,08 Oct 11,1,Highmoor Uniting,Lauriston,No. 2,Dong Il Lee,Phil Murphy,Phil Murphy,5-8,5,8,0,1,Completed,true,false,false
+AP020012,08 Oct 11,1,Highmoor Uniting,Lauriston,No. 3,Jasper Flynn,David Smith,Jasper Flynn,9-7,9,7,1,0,Completed,true,false,false
+AP020012,08 Oct 11,1,Highmoor Uniting,Lauriston,No. 4,Sam Hooppell,Scott Newton,Scott Newton,5-8,5,8,0,1,Completed,true,false,false
+AP020013,08 Oct 11,1,Dendy Park,Hawthorn,No. 1,Glen Felsenthal,Nicholas Kotros,Nicholas Kotros,4-8,4,8,0,1,Completed,true,false,false
+AP020013,08 Oct 11,1,Dendy Park,Hawthorn,No. 2,Chris Odgers,Paul Hormazabal,Paul Hormazabal,4-8,4,8,0,1,Completed,true,false,false
+AP020013,08 Oct 11,1,Dendy Park,Hawthorn,No. 3,Andrew Martin,Jeremy Thompkins,Andrew Martin,9-8,9,8,1,0,Completed,true,false,false
+AP020013,08 Oct 11,1,Dendy Park,Hawthorn,No. 4,Mark Baker,Alex Kotros,Mark Baker,8-2,8,2,1,0,Completed,true,false,false
+AP020014,08 Oct 11,1,Kings Park,Murrumbeena,No. 1,Fin Rasmussen,Dale Larkins,Fin Rasmussen,8-3,8,3,1,0,Completed,true,false,false
+AP020014,08 Oct 11,1,Kings Park,Murrumbeena,No. 2,Nathan Broadbent,Lance Davey,Nathan Broadbent,8-6,8,6,1,0,Completed,true,false,false
+AP020014,08 Oct 11,1,Kings Park,Murrumbeena,No. 3,Lyndon Krause,Russell Thompson,Russell Thompson,3-8,3,8,0,1,Completed,true,false,false
+AP020014,08 Oct 11,1,Kings Park,Murrumbeena,No. 4,David Houlihan,J Tinkler,David Houlihan,8-0,8,0,1,0,Completed,true,false,false
+AP020021,15 Oct 11,2,Murrumbeena,Maccabi 1,No. 1,Anshu Vijay,Robert Steinhardt,Anshu Vijay,8-3,8,3,1,0,Completed,true,false,false
+AP020021,15 Oct 11,2,Murrumbeena,Maccabi 1,No. 2,Dale Larkins,David Wolff,David Wolff,1-8,1,8,0,1,Completed,true,false,false
+AP020021,15 Oct 11,2,Murrumbeena,Maccabi 1,No. 3,Lance Davey,Nathan Tsivlin,Nathan Tsivlin,4-8,4,8,0,1,Completed,true,false,false
+AP020021,15 Oct 11,2,Murrumbeena,Maccabi 1,No. 4,Senya Rudoy,Paul Kovacs,Paul Kovacs,3-8,3,8,0,1,Completed,true,false,false
+AP020022,15 Oct 11,2,Maccabi 2,Highmoor Uniting,No. 1,David Kennelly,Geoff Lowther,David Kennelly,8-3,8,3,1,0,Completed,true,false,false
+AP020022,15 Oct 11,2,Maccabi 2,Highmoor Uniting,No. 2,Jan Tanenberg,Dong Il Lee,Jan Tanenberg,8-6,8,6,1,0,Completed,true,false,false
+AP020022,15 Oct 11,2,Maccabi 2,Highmoor Uniting,No. 3,Adam Needleman,Frank Collins,Adam Needleman,9-7,9,7,1,0,Completed,true,false,false
+AP020022,15 Oct 11,2,Maccabi 2,Highmoor Uniting,No. 4,Stephen Kleytman,Clemens Lee,Stephen Kleytman,8-0,8,0,1,0,Completed,true,false,false
+AP020023,15 Oct 11,2,Lauriston,Dendy Park,No. 1,Bevan Rossjohn,Glen Felsenthal,Bevan Rossjohn,9-8,9,8,1,0,Completed,true,false,false
+AP020023,15 Oct 11,2,Lauriston,Dendy Park,No. 2,Phil Murphy,Chris Odgers,Phil Murphy,8-1,8,1,1,0,Completed,true,false,false
+AP020023,15 Oct 11,2,Lauriston,Dendy Park,No. 3,David Newton,Andrew Martin,Andrew Martin,6-8,6,8,0,1,Completed,true,false,false
+AP020023,15 Oct 11,2,Lauriston,Dendy Park,No. 4,Scott Newton,Mario Papotto,Scott Newton,9-7,9,7,1,0,Completed,true,false,false
+AP020024,15 Oct 11,2,Hawthorn,Kings Park,No. 1,Nicholas Kotros,Fin Rasmussen,Nicholas Kotros,8-4,8,4,1,0,Completed,true,false,false
+AP020024,15 Oct 11,2,Hawthorn,Kings Park,No. 2,Paul Hormazabal,Nathan Broadbent,Paul Hormazabal,9-7,9,7,1,0,Completed,true,false,false
+AP020024,15 Oct 11,2,Hawthorn,Kings Park,No. 3,Kia Kashi,Lyndon Krause,Lyndon Krause,0-8,0,8,0,1,Completed,true,false,false
+AP020024,15 Oct 11,2,Hawthorn,Kings Park,No. 4,Alex Kotros,David Houlihan,David Houlihan,3-8,3,8,0,1,Completed,true,false,false
+AP020034,22 Oct 11,3,Kings Park,Lauriston,No. 1,Nathan Broadbent,Bevan Rossjohn,Bevan Rossjohn,0-8,0,8,0,1,Completed,true,false,false
+AP020034,22 Oct 11,3,Kings Park,Lauriston,No. 2,Hayden Broadbent,Phil Murphy,Phil Murphy,0-8,0,8,0,1,Completed,true,false,false
+AP020034,22 Oct 11,3,Kings Park,Lauriston,No. 3,Lyndon Krause,David Newton,David Newton,4-8,4,8,0,1,Completed,true,false,false
+AP020034,22 Oct 11,3,Kings Park,Lauriston,No. 4,Callum Campbell,David Smith,Callum Campbell,8-5,8,5,1,0,Completed,true,false,false
+AP020041,05 Nov 11,4,Lauriston,Maccabi 1,No. 1,Phil Murphy,Errol Dorfan,Phil Murphy,8-4,8,4,1,0,Completed,true,false,false
+AP020041,05 Nov 11,4,Lauriston,Maccabi 1,No. 2,David Newton,Luke Miller,Luke Miller,1-8,1,8,0,1,Completed,true,false,false
+AP020041,05 Nov 11,4,Lauriston,Maccabi 1,No. 3,David Smith,Nathan Tsivlin,Nathan Tsivlin,1-8,1,8,0,1,Completed,true,false,false
+AP020041,05 Nov 11,4,Lauriston,Maccabi 1,No. 4,Scott Newton,Daniel Henquin,Daniel Henquin,3-8,3,8,0,1,Completed,true,false,false
+AP020042,05 Nov 11,4,Hawthorn,Highmoor Uniting,No. 1,Paul Hormazabal,Geoff Lowther,Paul Hormazabal,9-8,9,8,1,0,Completed,true,false,false
+AP020042,05 Nov 11,4,Hawthorn,Highmoor Uniting,No. 2,Jeremy Thompkins,Dong Il Lee,Jeremy Thompkins,8-4,8,4,1,0,Completed,true,false,false
+AP020042,05 Nov 11,4,Hawthorn,Highmoor Uniting,No. 3,Kia Kashi,Sam Hooppell,Sam Hooppell,4-8,4,8,0,1,Completed,true,false,false
+AP020042,05 Nov 11,4,Hawthorn,Highmoor Uniting,No. 4,Alex Kotros,Carl Hooppell,Alex Kotros,9-7,9,7,1,0,Completed,true,false,false
+AP020043,05 Nov 11,4,Murrumbeena,Dendy Park,No. 1,Dale Larkins,Chris Odgers,Chris Odgers,4-8,4,8,0,1,Completed,true,false,false
+AP020043,05 Nov 11,4,Murrumbeena,Dendy Park,No. 2,Zvi Schweitzer,Mark Baker,Zvi Schweitzer,8-5,8,5,1,0,Completed,true,false,false
+AP020043,05 Nov 11,4,Murrumbeena,Dendy Park,No. 3,Ron Schweitzer,Bryan Lehane,Ron Schweitzer,8-2,8,2,1,0,Completed,true,false,false
+AP020043,05 Nov 11,4,Murrumbeena,Dendy Park,No. 4,Senya Rudoy,Trevor Cohen,Trevor Cohen,6-8,6,8,0,1,Completed,true,false,false
+AP020044,05 Nov 11,4,Maccabi 2,Kings Park,No. 1,David Kennelly,Fin Rasmussen,David Kennelly,8-1,8,1,1,0,Completed,true,false,false
+AP020044,05 Nov 11,4,Maccabi 2,Kings Park,No. 2,Jan Tanenberg,Nathan Broadbent,Jan Tanenberg,8-5,8,5,1,0,Completed,true,false,false
+AP020044,05 Nov 11,4,Maccabi 2,Kings Park,No. 3,Adam Needleman,Lyndon Krause,Adam Needleman,8-0,8,0,1,0,Completed,true,false,false
+AP020044,05 Nov 11,4,Maccabi 2,Kings Park,No. 4,Stephen Kleytman,David Houlihan,Stephen Kleytman,8-1,8,1,1,0,Completed,true,false,false
+AP020051,12 Nov 11,5,Dendy Park,Kings Park,No. 1,Jack Calvuyrac,Nathan Broadbent,Nathan Broadbent,5-8,5,8,0,1,Completed,true,false,false
+AP020051,12 Nov 11,5,Dendy Park,Kings Park,No. 2,Mario Papotto,Hayden Broadbent,Mario Papotto,9-7,9,7,1,0,Completed,true,false,false
+AP020051,12 Nov 11,5,Dendy Park,Kings Park,No. 3,Bryan Lehane,Lyndon Krause,Bryan Lehane,8-4,8,4,1,0,Completed,true,false,false
+AP020051,12 Nov 11,5,Dendy Park,Kings Park,No. 4,Trevor Cohen,David Houlihan,Trevor Cohen,8-2,8,2,1,0,Completed,true,false,false
+AP020052,12 Nov 11,5,Murrumbeena,Hawthorn,No. 1,Anshu Vijay,Nicholas Kotros,Nicholas Kotros,7-9,7,9,0,1,Completed,true,false,false
+AP020052,12 Nov 11,5,Murrumbeena,Hawthorn,No. 2,Dale Larkins,Paul Hormazabal,Paul Hormazabal,1-8,1,8,0,1,Completed,true,false,false
+AP020052,12 Nov 11,5,Murrumbeena,Hawthorn,No. 3,Zvi Schweitzer,Michael Loch,Zvi Schweitzer,8-2,8,2,1,0,Completed,true,false,false
+AP020052,12 Nov 11,5,Murrumbeena,Hawthorn,No. 4,Senya Rudoy,Alex Kotros,Senya Rudoy,8-3,8,3,1,0,Completed,true,false,false
+AP020053,12 Nov 11,5,Lauriston,Maccabi 2,No. 1,Bevan Rossjohn,David Kennelly,David Kennelly,3-8,3,8,0,1,Completed,true,false,false
+AP020053,12 Nov 11,5,Lauriston,Maccabi 2,No. 2,David Newton,Jan Tanenberg,Jan Tanenberg,3-8,3,8,0,1,Completed,true,false,false
+AP020053,12 Nov 11,5,Lauriston,Maccabi 2,No. 3,David Smith,Adam Needleman,Adam Needleman,1-8,1,8,0,1,Completed,true,false,false
+AP020053,12 Nov 11,5,Lauriston,Maccabi 2,No. 4,Scott Newton,Jacob Flasterstein,Scott Newton,8-2,8,2,1,0,Completed,true,false,false
+AP020054,12 Nov 11,5,Maccabi 1,Highmoor Uniting,No. 1,Robert Steinhardt,Geoff Lowther,Robert Steinhardt,8-2,8,2,1,0,Completed,true,false,false
+AP020054,12 Nov 11,5,Maccabi 1,Highmoor Uniting,No. 2,David Wolff,Frank Collins,David Wolff,8-2,8,2,1,0,Completed,true,false,false
+AP020054,12 Nov 11,5,Maccabi 1,Highmoor Uniting,No. 3,Nathan Tsivlin,Jasper Flynn,Nathan Tsivlin,8-1,8,1,1,0,Completed,true,false,false
+AP020054,12 Nov 11,5,Maccabi 1,Highmoor Uniting,No. 4,Daniel Henquin,Clemens Lee,Daniel Henquin,8-0,8,0,1,0,Completed,true,false,false
+AP020081,03 Dec 11,8,Maccabi 2,Maccabi 1,No. 1,David Kennelly,Errol Dorfan,David Kennelly,8-1,8,1,1,0,Completed,true,false,false
+AP020081,03 Dec 11,8,Maccabi 2,Maccabi 1,No. 2,Jan Tanenberg,David Wolff,David Wolff,2-8,2,8,0,1,Completed,true,false,false
+AP020081,03 Dec 11,8,Maccabi 2,Maccabi 1,No. 3,Stephen Kleytman,Nathan Tsivlin,Nathan Tsivlin,6-8,6,8,0,1,Completed,true,false,false
+AP020081,03 Dec 11,8,Maccabi 2,Maccabi 1,No. 4,Shaun Kenley,Daniel Henquin,Daniel Henquin,4-8,4,8,0,1,Completed,true,false,false
+AP020082,03 Dec 11,8,Lauriston,Highmoor Uniting,No. 1,Nigel Bruce-Smith,Geoff Lowther,Nigel Bruce-Smith,8-1,8,1,1,0,Completed,true,false,false
+AP020082,03 Dec 11,8,Lauriston,Highmoor Uniting,No. 2,Sean Giacometti,Dong Il Lee,Dong Il Lee,8-9,8,9,0,1,Completed,true,false,false
+AP020082,03 Dec 11,8,Lauriston,Highmoor Uniting,No. 3,David Newton,Jasper Flynn,Jasper Flynn,0-8,0,8,0,1,Completed,true,false,false
+AP020082,03 Dec 11,8,Lauriston,Highmoor Uniting,No. 4,Scott Newton,Sam Hooppell,Sam Hooppell,7-9,7,9,0,1,Completed,true,false,false
+AP020083,03 Dec 11,8,Hawthorn,Dendy Park,No. 1,Nicholas Kotros,Jack Calvuyrac,Nicholas Kotros,8-2,8,2,1,0,Completed,true,false,false
+AP020083,03 Dec 11,8,Hawthorn,Dendy Park,No. 2,Paul Hormazabal,Mark Baker,Paul Hormazabal,8-6,8,6,1,0,Completed,true,false,false
+AP020083,03 Dec 11,8,Hawthorn,Dendy Park,No. 3,Kia Kashi,Bryan Lehane,Bryan Lehane,2-8,2,8,0,1,Completed,true,false,false
+AP020083,03 Dec 11,8,Hawthorn,Dendy Park,No. 4,Alex Kotros,Richard Artis,Richard Artis,7-9,7,9,0,1,Completed,true,false,false
+AP020084,03 Dec 11,8,Murrumbeena,Kings Park,No. 1,Simon Danby,Fin Rasmussen,Fin Rasmussen,2-8,2,8,0,1,Completed,true,false,false
+AP020084,03 Dec 11,8,Murrumbeena,Kings Park,No. 2,Dale Larkins,Hayden Broadbent,Dale Larkins,8-1,8,1,1,0,Completed,true,false,false
+AP020084,03 Dec 11,8,Murrumbeena,Kings Park,No. 3,Zvi Schweitzer,Lyndon Krause,Zvi Schweitzer,8-2,8,2,1,0,Completed,true,false,false
+AP020084,03 Dec 11,8,Murrumbeena,Kings Park,No. 4,Senya Rudoy,David Houlihan,David Houlihan,6-8,6,8,0,1,Completed,true,false,false
+AP020091,10 Dec 11,9,Maccabi 1,Murrumbeena,No. 1,Errol Dorfan,Simon Danby,Simon Danby,4-8,4,8,0,1,Completed,true,false,false
+AP020091,10 Dec 11,9,Maccabi 1,Murrumbeena,No. 2,Luke Miller,Dale Larkins,Luke Miller,8-4,8,4,1,0,Completed,true,false,false
+AP020091,10 Dec 11,9,Maccabi 1,Murrumbeena,No. 3,Nathan Tsivlin,Zvi Schweitzer,Nathan Tsivlin,8-1,8,1,1,0,Completed,true,false,false
+AP020091,10 Dec 11,9,Maccabi 1,Murrumbeena,No. 4,Daniel Henquin,Ron Schweitzer,Daniel Henquin,8-6,8,6,1,0,Completed,true,false,false
+AP020092,10 Dec 11,9,Highmoor Uniting,Maccabi 2,No. 1,Geoff Lowther,David Kennelly,David Kennelly,3-8,3,8,0,1,Completed,true,false,false
+AP020092,10 Dec 11,9,Highmoor Uniting,Maccabi 2,No. 2,Frank Collins,Jan Tanenberg,Jan Tanenberg,3-8,3,8,0,1,Completed,true,false,false
+AP020092,10 Dec 11,9,Highmoor Uniting,Maccabi 2,No. 3,Jasper Flynn,Adam Needleman,Adam Needleman,1-8,1,8,0,1,Completed,true,false,false
+AP020092,10 Dec 11,9,Highmoor Uniting,Maccabi 2,No. 4,Clemens Lee,Stephen Kleytman,Stephen Kleytman,0-8,0,8,0,1,Completed,true,false,false
+AP020093,10 Dec 11,9,Dendy Park,Lauriston,No. 1,Jack Calvuyrac,Nigel Bruce-Smith,Nigel Bruce-Smith,2-8,2,8,0,1,Completed,true,false,false
+AP020093,10 Dec 11,9,Dendy Park,Lauriston,No. 2,Andrew Martin,David Newton,Andrew Martin,8-0,8,0,1,0,Completed,true,false,false
+AP020093,10 Dec 11,9,Dendy Park,Lauriston,No. 3,Mario Papotto,David Smith,Mario Papotto,8-2,8,2,1,0,Completed,true,false,false
+AP020093,10 Dec 11,9,Dendy Park,Lauriston,No. 4,Bryan Lehane,Scott Newton,Scott Newton,3-8,3,8,0,1,Completed,true,false,false
+AP020094,10 Dec 11,9,Kings Park,Hawthorn,No. 1,Fin Rasmussen,Nicholas Kotros,Nicholas Kotros,6-8,6,8,0,1,Completed,true,false,false
+AP020094,10 Dec 11,9,Kings Park,Hawthorn,No. 2,Nathan Broadbent,Paul Hormazabal,Paul Hormazabal,1-8,1,8,0,1,Completed,true,false,false
+AP020094,10 Dec 11,9,Kings Park,Hawthorn,No. 3,Hayden Broadbent,Jeremy Thompkins,Jeremy Thompkins,8-9,8,9,0,1,Completed,true,false,false
+AP020094,10 Dec 11,9,Kings Park,Hawthorn,No. 4,Lyndon Krause,Alex Kotros,Lyndon Krause,8-5,8,5,1,0,Completed,true,false,false
+AP020101,17 Dec 11,10,Hawthorn,Maccabi 1,No. 1,Nicholas Kotros,Alan Datt,Nicholas Kotros,8-1,8,1,1,0,Completed,true,false,false
+AP020101,17 Dec 11,10,Hawthorn,Maccabi 1,No. 2,Jeremy Thompkins,Errol Dorfan,Errol Dorfan,1-8,1,8,0,1,Completed,true,false,false
+AP020101,17 Dec 11,10,Hawthorn,Maccabi 1,No. 3,Kia Kashi,Robert Steinhardt,Robert Steinhardt,1-8,1,8,0,1,Completed,true,false,false
+AP020101,17 Dec 11,10,Hawthorn,Maccabi 1,No. 4,Alex Kotros,David Wolff,David Wolff,1-8,1,8,0,1,Completed,true,false,false
+AP020102,17 Dec 11,10,Murrumbeena,Highmoor Uniting,No. 1,Anshu Vijay,Dong Il Lee,Anshu Vijay,8-6,8,6,1,0,Completed,true,false,false
+AP020102,17 Dec 11,10,Murrumbeena,Highmoor Uniting,No. 2,Dale Larkins,Frank Collins,Frank Collins,1-8,1,8,0,1,Completed,true,false,false
+AP020102,17 Dec 11,10,Murrumbeena,Highmoor Uniting,No. 3,Zvi Schweitzer,Jasper Flynn,Zvi Schweitzer,8-6,8,6,1,0,Completed,true,false,false
+AP020102,17 Dec 11,10,Murrumbeena,Highmoor Uniting,No. 4,Senya Rudoy,Clemens Lee,Clemens Lee,7-9,7,9,0,1,Completed,true,false,false
+AP020103,17 Dec 11,10,Maccabi 2,Dendy Park,No. 1,Jan Tanenberg,Mario Papotto,Mario Papotto,5-8,5,8,0,1,Completed,true,false,false
+AP020103,17 Dec 11,10,Maccabi 2,Dendy Park,No. 2,Stephen Kleytman,Mark Baker,Mark Baker,8-9,8,9,0,1,Completed,true,false,false
+AP020103,17 Dec 11,10,Maccabi 2,Dendy Park,No. 3,Shaun Kenley,Bryan Lehane,Bryan Lehane,3-8,3,8,0,1,Completed,true,false,false
+AP020103,17 Dec 11,10,Maccabi 2,Dendy Park,No. 4,David Zulman,Trevor Cohen,David Zulman,8-3,8,3,1,0,Completed,true,false,false
+AP020104,17 Dec 11,10,Lauriston,Kings Park,No. 1,Bevan Rossjohn,Fin Rasmussen,Fin Rasmussen,4-8,4,8,0,1,Completed,true,false,false
+AP020104,17 Dec 11,10,Lauriston,Kings Park,No. 2,Phil Murphy,Nathan Broadbent,Nathan Broadbent,6-8,6,8,0,1,Completed,true,false,false
+AP020104,17 Dec 11,10,Lauriston,Kings Park,No. 3,Sean Giacometti,Hayden Broadbent,Sean Giacometti,8-1,8,1,1,0,Completed,true,false,false
+AP020104,17 Dec 11,10,Lauriston,Kings Park,No. 4,David Newton,David Houlihan,David Newton,8-3,8,3,1,0,Completed,true,false,false
+AP020111,04 Feb 12,11,Maccabi 1,Lauriston,No. 1,Errol Dorfan,Sean Giacometti,Errol Dorfan,8-1,8,1,1,0,Completed,true,false,false
+AP020111,04 Feb 12,11,Maccabi 1,Lauriston,No. 2,Luke Miller,David Newton,Luke Miller,8-1,8,1,1,0,Completed,true,false,false
+AP020111,04 Feb 12,11,Maccabi 1,Lauriston,No. 3,Robert Steinhardt,David Smith,Robert Steinhardt,8-3,8,3,1,0,Completed,true,false,false
+AP020111,04 Feb 12,11,Maccabi 1,Lauriston,No. 4,David Wolff,Scott Newton,David Wolff,8-5,8,5,1,0,Completed,true,false,false
+AP020112,04 Feb 12,11,Highmoor Uniting,Hawthorn,No. 1,Geoff Lowther,Nicholas Kotros,Geoff Lowther,8-6,8,6,1,0,Completed,true,false,false
+AP020112,04 Feb 12,11,Highmoor Uniting,Hawthorn,No. 2,Frank Collins,Paul Hormazabal,Paul Hormazabal,2-8,2,8,0,1,Completed,true,false,false
+AP020112,04 Feb 12,11,Highmoor Uniting,Hawthorn,No. 3,Sam Hooppell,Jeremy Thompkins,Jeremy Thompkins,1-8,1,8,0,1,Completed,true,false,false
+AP020112,04 Feb 12,11,Highmoor Uniting,Hawthorn,No. 4,Carl Hooppell,Alex Kotros,Carl Hooppell,9-7,9,7,1,0,Completed,true,false,false
+AP020113,04 Feb 12,11,Dendy Park,Murrumbeena,No. 1,Chris Odgers,Dale Larkins,Chris Odgers,8-6,8,6,1,0,Completed,true,false,false
+AP020113,04 Feb 12,11,Dendy Park,Murrumbeena,No. 2,Andrew Martin,Ron Schweitzer,Andrew Martin,8-4,8,4,1,0,Completed,true,false,false
+AP020113,04 Feb 12,11,Dendy Park,Murrumbeena,No. 3,Mario Papotto,Lance Davey,Lance Davey,1-8,1,8,0,1,Completed,true,false,false
+AP020113,04 Feb 12,11,Dendy Park,Murrumbeena,No. 4,Bryan Lehane,Dennis Jones,Bryan Lehane,8-3,8,3,1,0,Completed,true,false,false
+AP020114,04 Feb 12,11,Kings Park,Maccabi 2,No. 1,Fin Rasmussen,David Kennelly,David Kennelly,2-8,2,8,0,1,Completed,true,false,false
+AP020114,04 Feb 12,11,Kings Park,Maccabi 2,No. 2,Nathan Broadbent,Jan Tanenberg,Jan Tanenberg,4-8,4,8,0,1,Completed,true,false,false
+AP020114,04 Feb 12,11,Kings Park,Maccabi 2,No. 3,Hayden Broadbent,Shaun Kenley,Shaun Kenley,6-8,6,8,0,1,Completed,true,false,false
+AP020114,04 Feb 12,11,Kings Park,Maccabi 2,No. 4,Lyndon Krause,Miguel Donnenfeld,Miguel Donnenfeld,3-8,3,8,0,1,Completed,true,false,false
+AP020121,11 Feb 12,12,Kings Park,Dendy Park,No. 1,Fin Rasmussen,Jack Calvuyrac,Jack Calvuyrac,4-8,4,8,0,1,Completed,true,false,false
+AP020121,11 Feb 12,12,Kings Park,Dendy Park,No. 2,Hayden Broadbent,Chris Odgers,Chris Odgers,6-8,6,8,0,1,Completed,true,false,false
+AP020121,11 Feb 12,12,Kings Park,Dendy Park,No. 3,Lyndon Krause,Mark Baker,Mark Baker,5-8,5,8,0,1,Completed,true,false,false
+AP020121,11 Feb 12,12,Kings Park,Dendy Park,No. 4,David Houlihan,Trevor Cohen,Trevor Cohen,4-8,4,8,0,1,Completed,true,false,false
+AP020122,11 Feb 12,12,Hawthorn,Murrumbeena,No. 1,Nicholas Kotros,Dale Larkins,Nicholas Kotros,8-0,8,0,1,0,Completed,true,false,false
+AP020122,11 Feb 12,12,Hawthorn,Murrumbeena,No. 2,Paul Hormazabal,Zvi Schweitzer,Paul Hormazabal,8-2,8,2,1,0,Completed,true,false,false
+AP020122,11 Feb 12,12,Hawthorn,Murrumbeena,No. 3,Jeremy Thompkins,Ron Schweitzer,Jeremy Thompkins,8-2,8,2,1,0,Completed,true,false,false
+AP020122,11 Feb 12,12,Hawthorn,Murrumbeena,No. 4,Kia Kashi,Senya Rudoy,Kia Kashi,8-6,8,6,1,0,Completed,true,false,false
+AP020123,11 Feb 12,12,Maccabi 2,Lauriston,No. 1,Adam Needleman,Phil Murphy,Adam Needleman,8-0,8,0,1,0,Completed,true,false,false
+AP020123,11 Feb 12,12,Maccabi 2,Lauriston,No. 2,Stephen Kleytman,David Newton,Stephen Kleytman,8-4,8,4,1,0,Completed,true,false,false
+AP020123,11 Feb 12,12,Maccabi 2,Lauriston,No. 3,David Zulman,David Smith,David Zulman,8-3,8,3,1,0,Completed,true,false,false
+AP020123,11 Feb 12,12,Maccabi 2,Lauriston,No. 4,Miguel Donnenfeld,Scott Newton,Miguel Donnenfeld,9-8,9,8,1,0,Completed,true,false,false
+AP020124,11 Feb 12,12,Highmoor Uniting,Maccabi 1,No. 1,Dong Il Lee,Alan Datt,Alan Datt,7-9,7,9,0,1,Completed,true,false,false
+AP020124,11 Feb 12,12,Highmoor Uniting,Maccabi 1,No. 2,Frank Collins,Robert Steinhardt,Frank Collins,8-4,8,4,1,0,Completed,true,false,false
+AP020124,11 Feb 12,12,Highmoor Uniting,Maccabi 1,No. 3,Sam Hooppell,David Wolff,David Wolff,4-8,4,8,0,1,Completed,true,false,false
+AP020124,11 Feb 12,12,Highmoor Uniting,Maccabi 1,No. 4,Clemens Lee,Paul Kovacs,Paul Kovacs,5-8,5,8,0,1,Completed,true,false,false
+AP020131,18 Feb 12,13,Dendy Park,Highmoor Uniting,No. 1,Jack Calvuyrac,Geoff Lowther,Jack Calvuyrac,8-5,8,5,1,0,Completed,true,false,false
+AP020131,18 Feb 12,13,Dendy Park,Highmoor Uniting,No. 2,Chris Odgers,Dong Il Lee,Dong Il Lee,6-8,6,8,0,1,Completed,true,false,false
+AP020131,18 Feb 12,13,Dendy Park,Highmoor Uniting,No. 3,Bryan Lehane,Jasper Flynn,Bryan Lehane,8-6,8,6,1,0,Completed,true,false,false
+AP020131,18 Feb 12,13,Dendy Park,Highmoor Uniting,No. 4,Trevor Cohen,Sam Hooppell,Sam Hooppell,4-8,4,8,0,1,Completed,true,false,false
+AP020132,18 Feb 12,13,Maccabi 1,Kings Park,No. 1,Errol Dorfan,Nathan Broadbent,Nathan Broadbent,6-8,6,8,0,1,Completed,true,false,false
+AP020132,18 Feb 12,13,Maccabi 1,Kings Park,No. 2,Luke Miller,Hayden Broadbent,Hayden Broadbent,0-8,0,8,0,1,Completed,true,false,false
+AP020132,18 Feb 12,13,Maccabi 1,Kings Park,No. 3,Robert Kovacs,Lyndon Krause,Robert Kovacs,8-0,8,0,1,0,Completed,true,false,false
+AP020132,18 Feb 12,13,Maccabi 1,Kings Park,No. 4,David Wolff,Ryan Archer,David Wolff,9-8,9,8,1,0,Completed,true,false,false
+AP020133,18 Feb 12,13,Lauriston,Hawthorn,No. 1,Phil Murphy,Nicholas Kotros,Nicholas Kotros,4-8,4,8,0,1,Completed,true,false,false
+AP020133,18 Feb 12,13,Lauriston,Hawthorn,No. 2,David Smith,Paul Hormazabal,Paul Hormazabal,1-8,1,8,0,1,Completed,true,false,false
+AP020133,18 Feb 12,13,Lauriston,Hawthorn,No. 3,Scott Newton,Jeremy Thompkins,Scott Newton,8-4,8,4,1,0,Completed,true,false,false
+AP020133,18 Feb 12,13,Lauriston,Hawthorn,No. 4,Morris Trabsky,Alex Kotros,Alex Kotros,0-8,0,8,0,1,Completed,true,false,false
+AP020134,18 Feb 12,13,Murrumbeena,Maccabi 2,No. 1,Dale Larkins,Jan Tanenberg,Jan Tanenberg,2-8,2,8,0,1,Completed,true,false,false
+AP020134,18 Feb 12,13,Murrumbeena,Maccabi 2,No. 2,Zvi Schweitzer,Adam Needleman,Adam Needleman,1-8,1,8,0,1,Completed,true,false,false
+AP020134,18 Feb 12,13,Murrumbeena,Maccabi 2,No. 3,Ron Schweitzer,Shaun Kenley,Shaun Kenley,4-8,4,8,0,1,Completed,true,false,false
+AP020134,18 Feb 12,13,Murrumbeena,Maccabi 2,No. 4,Lance Davey,Miguel Donnenfeld,Lance Davey,8-1,8,1,1,0,Completed,true,false,false
+AP020141,25 Feb 12,14,Dendy Park,Maccabi 1,No. 1,Mario Papotto,Errol Dorfan,Errol Dorfan,1-8,1,8,0,1,Completed,true,false,false
+AP020141,25 Feb 12,14,Dendy Park,Maccabi 1,No. 2,Mark Baker,Robert Kovacs,Mark Baker,8-4,8,4,1,0,Completed,true,false,false
+AP020141,25 Feb 12,14,Dendy Park,Maccabi 1,No. 3,Bryan Lehane,Max Needleman,Bryan Lehane,8-2,8,2,1,0,Completed,true,false,false
+AP020141,25 Feb 12,14,Dendy Park,Maccabi 1,No. 4,Trevor Cohen,Paul Kovacs,Trevor Cohen,8-3,8,3,1,0,Completed,true,false,false
+AP020142,25 Feb 12,14,Kings Park,Highmoor Uniting,No. 1,Fin Rasmussen,Geoff Lowther,Fin Rasmussen,6-3,6,3,1,0,Completed,true,false,false
+AP020142,25 Feb 12,14,Kings Park,Highmoor Uniting,No. 2,Nathan Broadbent,Frank Collins,Frank Collins,3-6,3,6,0,1,Completed,true,false,false
+AP020142,25 Feb 12,14,Kings Park,Highmoor Uniting,No. 3,Lyndon Krause,Clemens Lee,Lyndon Krause,7-5,7,5,1,0,Completed,true,false,false
+AP020143,25 Feb 12,14,Lauriston,Murrumbeena,No. 1,Phil Murphy,Dale Larkins,Dale Larkins,5-8,5,8,0,1,Completed,true,false,false
+AP020143,25 Feb 12,14,Lauriston,Murrumbeena,No. 2,David Newton,Zvi Schweitzer,Zvi Schweitzer,4-8,4,8,0,1,Completed,true,false,false
+AP020143,25 Feb 12,14,Lauriston,Murrumbeena,No. 3,David Smith,Ron Schweitzer,Ron Schweitzer,4-8,4,8,0,1,Completed,true,false,false
+AP020143,25 Feb 12,14,Lauriston,Murrumbeena,No. 4,Scott Newton,Senya Rudoy,Senya Rudoy,6-8,6,8,0,1,Completed,true,false,false
+AP020144,25 Feb 12,14,Maccabi 2,Hawthorn,No. 1,Jan Tanenberg,Nicholas Kotros,Nicholas Kotros,4-8,4,8,0,1,Completed,true,false,false
+AP020144,25 Feb 12,14,Maccabi 2,Hawthorn,No. 2,Stephen Kleytman,Paul Hormazabal,Paul Hormazabal,1-8,1,8,0,1,Completed,true,false,false
+AP020144,25 Feb 12,14,Maccabi 2,Hawthorn,No. 3,David Zulman,Kia Kashi,David Zulman,8-2,8,2,1,0,Completed,true,false,false
+AP020144,25 Feb 12,14,Maccabi 2,Hawthorn,No. 4,Miguel Donnenfeld,Alex Kotros,Miguel Donnenfeld,8-6,8,6,1,0,Completed,true,false,false
+AP020301,,16,Maccabi 2,Maccabi 1,No. 1,Jan Tanenberg,Errol Dorfan,Errol Dorfan,7-9,7,9,0,1,Completed,true,false,false
+AP020301,,16,Maccabi 2,Maccabi 1,No. 2,Stephen Kleytman,Luke Miller,Luke Miller,8-9,8,9,0,1,Completed,true,false,false
+AP020301,,16,Maccabi 2,Maccabi 1,No. 3,Shaun Kenley,Robert Steinhardt,Shaun Kenley,9-8,9,8,1,0,Completed,true,false,false
+AP020301,,16,Maccabi 2,Maccabi 1,No. 4,David Zulman,David Wolff,David Zulman,8-4,8,4,1,0,Completed,true,false,false
+AP020302,,16,Dendy Park,Hawthorn,No. 1,Jack Calvuyrac,Nicholas Kotros,Nicholas Kotros,4-8,4,8,0,1,Completed,true,false,false
+AP020302,,16,Dendy Park,Hawthorn,No. 2,Mario Papotto,Paul Hormazabal,Paul Hormazabal,5-8,5,8,0,1,Completed,true,false,false
+AP020302,,16,Dendy Park,Hawthorn,No. 3,Mark Baker,Jeremy Thompkins,Jeremy Thompkins,1-8,1,8,0,1,Completed,true,false,false
+AP020302,,16,Dendy Park,Hawthorn,No. 4,Trevor Cohen,Alex Kotros,Trevor Cohen,8-1,8,1,1,0,Completed,true,false,false
+AP020311,,16,Maccabi 1,Hawthorn,No. 1,Errol Dorfan,Nicholas Kotros,Nicholas Kotros,3-8,3,8,0,1,Completed,true,false,false
+AP020311,,16,Maccabi 1,Hawthorn,No. 2,Luke Miller,Paul Hormazabal,Paul Hormazabal,6-8,6,8,0,1,Completed,true,false,false
+AP020311,,16,Maccabi 1,Hawthorn,No. 3,David Wolff,Jeremy Thompkins,Jeremy Thompkins,4-8,4,8,0,1,Completed,true,false,false
+AP020311,,16,Maccabi 1,Hawthorn,No. 4,Paul Kovacs,Alex Kotros,Paul Kovacs,8-4,8,4,1,0,Completed,true,false,false
+AP020321,,17,Maccabi 2,Hawthorn,No. 1,David Kennelly,Nicholas Kotros,Nicholas Kotros,7-9,7,9,0,1,Completed,true,false,false
+AP020321,,17,Maccabi 2,Hawthorn,No. 2,Jan Tanenberg,Paul Hormazabal,Paul Hormazabal,1-8,1,8,0,1,Completed,true,false,false
+AP020321,,17,Maccabi 2,Hawthorn,No. 3,Stephen Kleytman,Jeremy Thompkins,Jeremy Thompkins,3-8,3,8,0,1,Completed,true,false,false
+AP020321,,17,Maccabi 2,Hawthorn,No. 4,Shaun Kenley,Alex Kotros,Shaun Kenley,8-1,8,1,1,0,Completed,true,true,false

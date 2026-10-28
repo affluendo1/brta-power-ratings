@@ -1,0 +1,103 @@
+{
+  "asset_id": "AP26-AP004",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 12/13",
+  "season_id": "AP26",
+  "season_label": "Summer 12/13",
+  "source_section_code": "AP004",
+  "section_label": "Mens Rubbers 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Black Rock",
+      "wins": 10,
+      "points": 84,
+      "percentage": 158.35,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Beaumaris CC",
+      "wins": 9,
+      "points": 80,
+      "percentage": 137.84,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Glen Huntly",
+      "wins": 8,
+      "points": 70,
+      "percentage": 124.01,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Sth Murrumbeena",
+      "wins": 8,
+      "points": 66,
+      "percentage": 104.13,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "St Leonard's",
+      "wins": 7,
+      "points": 50,
+      "percentage": 79.46,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Bentleigh Rec",
+      "wins": 3,
+      "points": 46,
+      "percentage": 86.8,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Hurlingham Park",
+      "wins": 1,
+      "points": 30,
+      "percentage": 77.11,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "Centenary Park",
+      "wins": 1,
+      "points": 22,
+      "percentage": 66.78,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP26-AP004",
+  "fixtures": 60,
+  "completed_fixtures": 52,
+  "draw_fixtures": 60,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 206,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

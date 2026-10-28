@@ -1,0 +1,225 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP017011,10 Oct 15,1,Port Melbourne,Ormond,No. 1,Espie Balila,Marco Biagagnio,Marco Biagagnio,1-8,1,8,0,1,Completed,true,false,false
+AP017011,10 Oct 15,1,Port Melbourne,Ormond,No. 2,Pierre Verven,Leon Obrenov,Leon Obrenov,2-8,2,8,0,1,Completed,true,false,false
+AP017011,10 Oct 15,1,Port Melbourne,Ormond,No. 3,Brad Chou,Harry Nicola,Brad Chou,8-3,8,3,1,0,Completed,true,false,false
+AP017011,10 Oct 15,1,Port Melbourne,Ormond,No. 4,Emile Brys,Guy Shannon,Emile Brys,8-6,8,6,1,0,Completed,true,false,false
+AP017012,10 Oct 15,1,Fitzroy,Hawthorn,No. 1,Joel Bourke,Peter King,Joel Bourke,8-2,8,2,1,0,Completed,true,false,false
+AP017012,10 Oct 15,1,Fitzroy,Hawthorn,No. 2,Pierre Dugue,Mark Petty,Pierre Dugue,8-5,8,5,1,0,Completed,true,false,false
+AP017012,10 Oct 15,1,Fitzroy,Hawthorn,No. 3,Emile Blosfelds Morrison,Shahram Raissi,Shahram Raissi,4-8,4,8,0,1,Completed,true,false,false
+AP017012,10 Oct 15,1,Fitzroy,Hawthorn,No. 4,Joel Hodder,Mathias Koch,Mathias Koch,3-8,3,8,0,1,Completed,true,false,false
+AP017013,10 Oct 15,1,BLTC,East Malvern,No. 1,Zac Scherger,Paul Lidgerwood,Paul Lidgerwood,1-8,1,8,0,1,Completed,true,false,false
+AP017013,10 Oct 15,1,BLTC,East Malvern,No. 2,Oliver Bytheway,Rohan Appleton,Rohan Appleton,4-8,4,8,0,1,Completed,true,false,false
+AP017013,10 Oct 15,1,BLTC,East Malvern,No. 3,Bob McCarthy,Alex Krohn,Alex Krohn,0-8,0,8,0,1,Completed,true,false,false
+AP017013,10 Oct 15,1,BLTC,East Malvern,No. 4,Gavin Lawless,Darren O'Lochlin,Gavin Lawless,8-2,8,2,1,0,Completed,true,false,false
+AP017014,10 Oct 15,1,Kings Park,Old Scotch,No. 1,Chris Kokkinos,Thibaud Arbes-Dupuy,Chris Kokkinos,8-5,8,5,1,0,Completed,true,false,false
+AP017014,10 Oct 15,1,Kings Park,Old Scotch,No. 2,Ben Eden,George Hurley,Ben Eden,8-4,8,4,1,0,Completed,true,false,false
+AP017014,10 Oct 15,1,Kings Park,Old Scotch,No. 3,Lachlan Peters,John Cade,Lachlan Peters,8-4,8,4,1,0,Completed,true,false,false
+AP017014,10 Oct 15,1,Kings Park,Old Scotch,No. 4,Hamish Styring,Matthew Payne,Matthew Payne,8-9,8,9,0,1,Completed,true,false,false
+AP017021,17 Oct 15,2,Old Scotch,Port Melbourne,No. 1,Thibaud Arbes-Dupuy,Graeme Blundstone,Thibaud Arbes-Dupuy,8-3,8,3,1,0,Completed,true,false,false
+AP017021,17 Oct 15,2,Old Scotch,Port Melbourne,No. 2,George Hurley,Andrew Ross,Andrew Ross,3-8,3,8,0,1,Completed,true,false,false
+AP017021,17 Oct 15,2,Old Scotch,Port Melbourne,No. 3,Tim Goh,Espie Balila,Espie Balila,4-8,4,8,0,1,Completed,true,false,false
+AP017021,17 Oct 15,2,Old Scotch,Port Melbourne,No. 4,Matthew Payne,Brad Chou,Matthew Payne,8-6,8,6,1,0,Completed,true,false,false
+AP017022,17 Oct 15,2,Ormond,Fitzroy,No. 1,Marco Biagagnio,Pierre Dugue,Marco Biagagnio,8-2,8,2,1,0,Completed,true,false,false
+AP017022,17 Oct 15,2,Ormond,Fitzroy,No. 2,Leon Obrenov,Luke Devlin,Luke Devlin,7-9,7,9,0,1,Completed,true,false,false
+AP017022,17 Oct 15,2,Ormond,Fitzroy,No. 3,Mitchell Aarons,Joel Hodder,Mitchell Aarons,9-7,9,7,1,0,Completed,true,false,false
+AP017022,17 Oct 15,2,Ormond,Fitzroy,No. 4,Harry Nicola,Jacob Robinson,Harry Nicola,8-1,8,1,1,0,Completed,true,false,false
+AP017023,17 Oct 15,2,Hawthorn,BLTC,No. 1,Mark Petty,Graeme Scherger,Mark Petty,9-8,9,8,1,0,Completed,true,false,false
+AP017023,17 Oct 15,2,Hawthorn,BLTC,No. 2,Nicholas Kotros,Zac Scherger,Nicholas Kotros,8-5,8,5,1,0,Completed,true,false,false
+AP017023,17 Oct 15,2,Hawthorn,BLTC,No. 3,Shahram Raissi,Oliver Bytheway,Shahram Raissi,8-4,8,4,1,0,Completed,true,false,false
+AP017023,17 Oct 15,2,Hawthorn,BLTC,No. 4,Mathias Koch,Wes Flavell,Mathias Koch,8-5,8,5,1,0,Completed,true,false,false
+AP017024,17 Oct 15,2,East Malvern,Kings Park,No. 1,Elliot Payne,Chris Kokkinos,Elliot Payne,8-2,8,2,1,0,Completed,true,false,false
+AP017024,17 Oct 15,2,East Malvern,Kings Park,No. 2,Paul Lidgerwood,Dominic Maeorg,Paul Lidgerwood,8-6,8,6,1,0,Completed,true,false,false
+AP017024,17 Oct 15,2,East Malvern,Kings Park,No. 3,Alex Krohn,Lachlan Peters,Alex Krohn,8-4,8,4,1,0,Completed,true,false,false
+AP017024,17 Oct 15,2,East Malvern,Kings Park,No. 4,Andrew McVean,Hamish Styring,Andrew McVean,8-1,8,1,1,0,Completed,true,false,false
+AP017031,24 Oct 15,3,Port Melbourne,East Malvern,No. 1,Graeme Blundstone,Elliot Payne,Elliot Payne,2-8,2,8,0,1,Completed,true,false,false
+AP017031,24 Oct 15,3,Port Melbourne,East Malvern,No. 2,Andrew Ross,Paul Lidgerwood,Andrew Ross,8-5,8,5,1,0,Completed,true,false,false
+AP017031,24 Oct 15,3,Port Melbourne,East Malvern,No. 3,Emile Brys,Rohan Appleton,Rohan Appleton,0-8,0,8,0,1,Completed,true,false,false
+AP017031,24 Oct 15,3,Port Melbourne,East Malvern,No. 4,Adrian Camilleri,Andrew McVean,Andrew McVean,3-8,3,8,0,1,Completed,true,false,false
+AP017032,24 Oct 15,3,Fitzroy,Old Scotch,No. 1,Joel Bourke,George Hurley,Joel Bourke,9-7,9,7,1,0,Completed,true,false,false
+AP017032,24 Oct 15,3,Fitzroy,Old Scotch,No. 2,Peter Geha,Tim Goh,Peter Geha,8-5,8,5,1,0,Completed,true,false,false
+AP017032,24 Oct 15,3,Fitzroy,Old Scotch,No. 3,Berry Driesen,James Brownell,Berry Driesen,8-5,8,5,1,0,Completed,true,false,false
+AP017032,24 Oct 15,3,Fitzroy,Old Scotch,No. 4,Emile Blosfelds Morrison,Matthew Payne,Matthew Payne,3-8,3,8,0,1,Completed,true,false,false
+AP017033,24 Oct 15,3,BLTC,Ormond,No. 1,Graeme Scherger,James Pound,Graeme Scherger,8-1,8,1,1,0,Completed,true,false,false
+AP017033,24 Oct 15,3,BLTC,Ormond,No. 2,David Jones,Leon Obrenov,David Jones,8-0,8,0,1,0,Completed,true,false,false
+AP017033,24 Oct 15,3,BLTC,Ormond,No. 3,Oliver Bytheway,Mitchell Aarons,Oliver Bytheway,8-4,8,4,1,0,Completed,true,false,false
+AP017033,24 Oct 15,3,BLTC,Ormond,No. 4,Stephan Trakis,Harry Nicola,Harry Nicola,0-8,0,8,0,1,Completed,true,false,false
+AP017034,24 Oct 15,3,Kings Park,Hawthorn,No. 1,Chris Kokkinos,Mark Petty,Chris Kokkinos,8-5,8,5,1,0,Completed,true,false,false
+AP017034,24 Oct 15,3,Kings Park,Hawthorn,No. 2,Ben Eden,Nicholas Kotros,Ben Eden,8-3,8,3,1,0,Completed,true,false,false
+AP017034,24 Oct 15,3,Kings Park,Hawthorn,No. 3,Dominic Maeorg,Shahram Raissi,Dominic Maeorg,8-1,8,1,1,0,Completed,true,false,false
+AP017034,24 Oct 15,3,Kings Park,Hawthorn,No. 4,Hamish Styring,Mathias Koch,Hamish Styring,9-8,9,8,1,0,Completed,true,false,false
+AP017041,07 Nov 15,4,Hawthorn,Port Melbourne,No. 1,Peter King,Andrew Ross,Peter King,8-5,8,5,1,0,Completed,true,false,false
+AP017041,07 Nov 15,4,Hawthorn,Port Melbourne,No. 2,Mark Petty,Espie Balila,Espie Balila,5-8,5,8,0,1,Completed,true,false,false
+AP017041,07 Nov 15,4,Hawthorn,Port Melbourne,No. 3,Shahram Raissi,Michael Golinelli,Michael Golinelli,0-8,0,8,0,1,Completed,true,false,false
+AP017041,07 Nov 15,4,Hawthorn,Port Melbourne,No. 4,Mathias Koch,Nale Woot,Mathias Koch,8-0,8,0,1,0,Completed,true,false,false
+AP017042,07 Nov 15,4,East Malvern,Fitzroy,No. 1,Elliot Payne,Joel Bourke,Elliot Payne,8-3,8,3,1,0,Completed,true,false,false
+AP017042,07 Nov 15,4,East Malvern,Fitzroy,No. 2,Paul Lidgerwood,Peter Geha,Peter Geha,3-8,3,8,0,1,Completed,true,false,false
+AP017042,07 Nov 15,4,East Malvern,Fitzroy,No. 3,Andrew McVean,Joel Hodder,Andrew McVean,8-0,8,0,1,0,Completed,true,false,false
+AP017042,07 Nov 15,4,East Malvern,Fitzroy,No. 4,Robert Payne,Jacob Robinson,Robert Payne,8-0,8,0,1,0,Completed,true,false,false
+AP017043,07 Nov 15,4,Old Scotch,BLTC,No. 1,George Hurley,Graeme Scherger,George Hurley,8-6,8,6,1,0,Completed,true,false,false
+AP017043,07 Nov 15,4,Old Scotch,BLTC,No. 2,James Brownell,Zac Scherger,Zac Scherger,4-8,4,8,0,1,Completed,true,false,false
+AP017043,07 Nov 15,4,Old Scotch,BLTC,No. 3,John Cade,Wes Flavell,Wes Flavell,5-8,5,8,0,1,Completed,true,false,false
+AP017043,07 Nov 15,4,Old Scotch,BLTC,No. 4,Peter McDiarmid,Bob McCarthy,Peter McDiarmid,8-4,8,4,1,0,Completed,true,false,false
+AP017044,07 Nov 15,4,Ormond,Kings Park,No. 1,Marco Biagagnio,Chris Kokkinos,Marco Biagagnio,8-1,8,1,1,0,Completed,true,false,false
+AP017044,07 Nov 15,4,Ormond,Kings Park,No. 2,Leon Obrenov,Ben Eden,Ben Eden,4-8,4,8,0,1,Completed,true,false,false
+AP017044,07 Nov 15,4,Ormond,Kings Park,No. 3,Mitchell Aarons,David Rhind,Mitchell Aarons,8-2,8,2,1,0,Completed,true,false,false
+AP017044,07 Nov 15,4,Ormond,Kings Park,No. 4,Harry Nicola,Oscar Eden,Harry Nicola,8-1,8,1,1,0,Completed,true,false,false
+AP017051,14 Nov 15,5,BLTC,Kings Park,No. 1,David Jones,Chris Kokkinos,Chris Kokkinos,6-8,6,8,0,1,Completed,true,false,false
+AP017051,14 Nov 15,5,BLTC,Kings Park,No. 2,Wes Flavell,Dominic Maeorg,Wes Flavell,8-5,8,5,1,0,Completed,true,false,false
+AP017051,14 Nov 15,5,BLTC,Kings Park,No. 3,Bob McCarthy,Lachlan Peters,Lachlan Peters,2-8,2,8,0,1,Completed,true,false,false
+AP017051,14 Nov 15,5,BLTC,Kings Park,No. 4,Paul Byers,Hamish Styring,Paul Byers,8-6,8,6,1,0,Completed,true,false,false
+AP017052,14 Nov 15,5,Old Scotch,East Malvern,No. 1,George Hurley,Rohan Appleton,George Hurley,8-2,8,2,1,0,Completed,true,false,false
+AP017052,14 Nov 15,5,Old Scotch,East Malvern,No. 2,James Brownell,Alex Krohn,Alex Krohn,4-8,4,8,0,1,Completed,true,false,false
+AP017052,14 Nov 15,5,Old Scotch,East Malvern,No. 3,John Cade,Andrew McVean,Andrew McVean,7-9,7,9,0,1,Completed,true,false,false
+AP017052,14 Nov 15,5,Old Scotch,East Malvern,No. 4,Peter McDiarmid,Darren O'Lochlin,Darren O'Lochlin,5-8,5,8,0,1,Completed,true,false,false
+AP017053,14 Nov 15,5,Hawthorn,Ormond,No. 1,Alistair Young,Peter Whalan,Peter Whalan,6-8,6,8,0,1,Completed,true,false,false
+AP017053,14 Nov 15,5,Hawthorn,Ormond,No. 2,George Vogiatzis,Leon Obrenov,George Vogiatzis,8-4,8,4,1,0,Completed,true,false,false
+AP017053,14 Nov 15,5,Hawthorn,Ormond,No. 3,Mark Petty,Mitchell Aarons,Mark Petty,8-0,8,0,1,0,Completed,true,false,false
+AP017053,14 Nov 15,5,Hawthorn,Ormond,No. 4,Nicholas Kotros,Harry Nicola,Nicholas Kotros,8-5,8,5,1,0,Completed,true,false,false
+AP017054,14 Nov 15,5,Port Melbourne,Fitzroy,No. 1,Andrew Ross,Joel Bourke,Andrew Ross,8-4,8,4,1,0,Completed,true,false,false
+AP017054,14 Nov 15,5,Port Melbourne,Fitzroy,No. 2,Espie Balila,Peter Geha,Espie Balila,8-5,8,5,1,0,Completed,true,false,false
+AP017054,14 Nov 15,5,Port Melbourne,Fitzroy,No. 3,Michael Golinelli,Emile Blosfelds Morrison,Michael Golinelli,8-0,8,0,1,0,Completed,true,false,false
+AP017054,14 Nov 15,5,Port Melbourne,Fitzroy,No. 4,Pierre Verven,Louis Novy,Louis Novy,8-9,8,9,0,1,Completed,true,false,false
+AP017061,21 Nov 15,6,Fitzroy,BLTC,No. 1,Rob Conkie,Graeme Scherger,Rob Conkie,8-2,8,2,1,0,Completed,true,false,false
+AP017061,21 Nov 15,6,Fitzroy,BLTC,No. 2,Simon Brown,Meric Oz,Simon Brown,8-0,8,0,1,0,Completed,true,false,false
+AP017061,21 Nov 15,6,Fitzroy,BLTC,No. 3,Luke Devlin,Zac Scherger,Luke Devlin,8-3,8,3,1,0,Completed,true,false,false
+AP017061,21 Nov 15,6,Fitzroy,BLTC,No. 4,Emile Blosfelds Morrison,Bob McCarthy,Emile Blosfelds Morrison,8-1,8,1,1,0,Completed,true,false,false
+AP017062,21 Nov 15,6,Kings Park,Port Melbourne,No. 1,Ben Eden,Geoff Snell,Ben Eden,8-1,8,1,1,0,Completed,true,false,false
+AP017062,21 Nov 15,6,Kings Park,Port Melbourne,No. 2,Lachlan Peters,Pierre Verven,Lachlan Peters,8-2,8,2,1,0,Completed,true,false,false
+AP017062,21 Nov 15,6,Kings Park,Port Melbourne,No. 3,Hamish Styring,Emile Brys,Hamish Styring,8-4,8,4,1,0,Completed,true,false,false
+AP017062,21 Nov 15,6,Kings Park,Port Melbourne,No. 4,Oscar Eden,Adrian Camilleri,Adrian Camilleri,6-8,6,8,0,1,Completed,true,false,false
+AP017063,21 Nov 15,6,East Malvern,Hawthorn,No. 1,Elliot Payne,Alistair Young,Elliot Payne,8-4,8,4,1,0,Completed,true,false,false
+AP017063,21 Nov 15,6,East Malvern,Hawthorn,No. 2,Paul Lidgerwood,George Vogiatzis,Paul Lidgerwood,8-5,8,5,1,0,Completed,true,false,false
+AP017063,21 Nov 15,6,East Malvern,Hawthorn,No. 3,Alex Krohn,Shahram Raissi,Alex Krohn,8-4,8,4,1,0,Completed,true,false,false
+AP017063,21 Nov 15,6,East Malvern,Hawthorn,No. 4,Andrew McVean,Mathias Koch,Mathias Koch,5-8,5,8,0,1,Completed,true,false,false
+AP017064,21 Nov 15,6,Ormond,Old Scotch,No. 1,Peter Whalan,Chris Hay,Peter Whalan,9-8,9,8,1,0,Completed,true,false,false
+AP017064,21 Nov 15,6,Ormond,Old Scotch,No. 2,Mitchell Aarons,George Hurley,George Hurley,5-8,5,8,0,1,Completed,true,false,false
+AP017064,21 Nov 15,6,Ormond,Old Scotch,No. 3,Harry Nicola,James Brownell,James Brownell,7-9,7,9,0,1,Completed,true,false,false
+AP017064,21 Nov 15,6,Ormond,Old Scotch,No. 4,Thomas Abourizk,Matthew Payne,Thomas Abourizk,8-6,8,6,1,0,Completed,true,false,false
+AP017071,28 Nov 15,7,Port Melbourne,BLTC,No. 1,Andrew Ross,Graeme Scherger,Andrew Ross,8-4,8,4,1,0,Completed,true,false,false
+AP017071,28 Nov 15,7,Port Melbourne,BLTC,No. 2,Espie Balila,Zac Scherger,Espie Balila,8-4,8,4,1,0,Completed,true,false,false
+AP017071,28 Nov 15,7,Port Melbourne,BLTC,No. 3,Pierre Verven,Oliver Bytheway,Pierre Verven,8-3,8,3,1,0,Completed,true,false,false
+AP017071,28 Nov 15,7,Port Melbourne,BLTC,No. 4,Emile Brys,Wes Flavell,Wes Flavell,4-8,4,8,0,1,Completed,true,false,false
+AP017072,28 Nov 15,7,Fitzroy,Kings Park,No. 1,Berry Driesen,Ben Eden,Berry Driesen,8-5,8,5,1,0,Completed,true,false,false
+AP017072,28 Nov 15,7,Fitzroy,Kings Park,No. 2,Luke Devlin,Donut Pahubutra,Luke Devlin,8-0,8,0,1,0,Completed,true,false,false
+AP017072,28 Nov 15,7,Fitzroy,Kings Park,No. 3,Emile Blosfelds Morrison,Philip Tudor,Emile Blosfelds Morrison,8-3,8,3,1,0,Completed,true,false,false
+AP017072,28 Nov 15,7,Fitzroy,Kings Park,No. 4,Louis Novy,Oscar Eden,Louis Novy,8-3,8,3,1,0,Completed,true,false,false
+AP017073,28 Nov 15,7,Old Scotch,Hawthorn,No. 1,Thibaud Arbes-Dupuy,David Sartori,Thibaud Arbes-Dupuy,8-2,8,2,1,0,Completed,true,false,false
+AP017073,28 Nov 15,7,Old Scotch,Hawthorn,No. 2,George Hurley,Alistair Young,George Hurley,8-3,8,3,1,0,Completed,true,false,false
+AP017073,28 Nov 15,7,Old Scotch,Hawthorn,No. 3,James Brownell,George Vogiatzis,James Brownell,9-7,9,7,1,0,Completed,true,false,false
+AP017073,28 Nov 15,7,Old Scotch,Hawthorn,No. 4,Matthew Payne,Arjun Nagesh,Matthew Payne,8-3,8,3,1,0,Completed,true,false,false
+AP017074,28 Nov 15,7,East Malvern,Ormond,No. 1,Elliot Payne,Peter Whalan,Elliot Payne,8-0,8,0,1,0,Completed,true,false,false
+AP017074,28 Nov 15,7,East Malvern,Ormond,No. 2,Paul Lidgerwood,Leon Obrenov,Paul Lidgerwood,8-2,8,2,1,0,Completed,true,false,false
+AP017074,28 Nov 15,7,East Malvern,Ormond,No. 3,Rohan Appleton,Mitchell Aarons,Rohan Appleton,8-2,8,2,1,0,Completed,true,false,false
+AP017074,28 Nov 15,7,East Malvern,Ormond,No. 4,Alex Krohn,Thomas Abourizk,Alex Krohn,8-5,8,5,1,0,Completed,true,false,false
+AP017081,05 Dec 15,8,Ormond,Port Melbourne,No. 1,Marco Biagagnio,Espie Balila,Marco Biagagnio,9-7,9,7,1,0,Completed,true,false,false
+AP017081,05 Dec 15,8,Ormond,Port Melbourne,No. 2,James Pound,Drew Aitken,James Pound,8-2,8,2,1,0,Completed,true,false,false
+AP017081,05 Dec 15,8,Ormond,Port Melbourne,No. 3,Peter Whalan,Emile Brys,Peter Whalan,8-1,8,1,1,0,Completed,true,false,false
+AP017081,05 Dec 15,8,Ormond,Port Melbourne,No. 4,Harry Nicola,Darcy Mahotta,Harry Nicola,8-3,8,3,1,0,Completed,true,false,false
+AP017082,05 Dec 15,8,Hawthorn,Fitzroy,No. 1,George Vogiatzis,Berry Driesen,Berry Driesen,4-8,4,8,0,1,Completed,true,false,false
+AP017082,05 Dec 15,8,Hawthorn,Fitzroy,No. 2,Mark Petty,Pierre Dugue,Mark Petty,8-3,8,3,1,0,Completed,true,false,false
+AP017082,05 Dec 15,8,Hawthorn,Fitzroy,No. 3,Nicholas Kotros,Emile Blosfelds Morrison,Nicholas Kotros,8-2,8,2,1,0,Completed,true,false,false
+AP017082,05 Dec 15,8,Hawthorn,Fitzroy,No. 4,Mathias Koch,Louis Novy,Mathias Koch,8-5,8,5,1,0,Completed,true,false,false
+AP017083,05 Dec 15,8,East Malvern,BLTC,No. 1,Elliot Payne,Graeme Scherger,Elliot Payne,8-2,8,2,1,0,Completed,true,false,false
+AP017083,05 Dec 15,8,East Malvern,BLTC,No. 2,Paul Lidgerwood,Meric Oz,Paul Lidgerwood,8-1,8,1,1,0,Completed,true,false,false
+AP017083,05 Dec 15,8,East Malvern,BLTC,No. 3,Rohan Appleton,Zac Scherger,Rohan Appleton,8-5,8,5,1,0,Completed,true,false,false
+AP017083,05 Dec 15,8,East Malvern,BLTC,No. 4,Andrew McVean,Bob McCarthy,Andrew McVean,8-3,8,3,1,0,Completed,true,false,false
+AP017084,05 Dec 15,8,Old Scotch,Kings Park,No. 1,Thibaud Arbes-Dupuy,Chris Kokkinos,Thibaud Arbes-Dupuy,8-5,8,5,1,0,Completed,true,false,false
+AP017084,05 Dec 15,8,Old Scotch,Kings Park,No. 2,Tim Goh,Ben Eden,Ben Eden,4-8,4,8,0,1,Completed,true,false,false
+AP017084,05 Dec 15,8,Old Scotch,Kings Park,No. 3,James Brownell,Dominic Maeorg,Dominic Maeorg,6-8,6,8,0,1,Completed,true,false,false
+AP017084,05 Dec 15,8,Old Scotch,Kings Park,No. 4,Peter McDiarmid,Oscar Eden,Peter McDiarmid,8-2,8,2,1,0,Completed,true,false,false
+AP017091,12 Dec 15,9,Port Melbourne,Old Scotch,No. 1,Espie Balila,George Hurley,George Hurley,4-8,4,8,0,1,Completed,true,false,false
+AP017091,12 Dec 15,9,Port Melbourne,Old Scotch,No. 2,Geoff Snell,James Brownell,Geoff Snell,9-7,9,7,1,0,Completed,true,false,false
+AP017091,12 Dec 15,9,Port Melbourne,Old Scotch,No. 3,Kyle O'Donahue,John Cade,Kyle O'Donahue,8-1,8,1,1,0,Completed,true,false,false
+AP017091,12 Dec 15,9,Port Melbourne,Old Scotch,No. 4,Drew Aitken,Matthew Payne,Drew Aitken,8-4,8,4,1,0,Completed,true,false,false
+AP017092,12 Dec 15,9,Fitzroy,Ormond,No. 1,Dominic Napoleone,James Pound,Dominic Napoleone,8-6,8,6,1,0,Completed,true,false,false
+AP017092,12 Dec 15,9,Fitzroy,Ormond,No. 2,Luke Devlin,Peter Whalan,Luke Devlin,8-4,8,4,1,0,Completed,true,false,false
+AP017092,12 Dec 15,9,Fitzroy,Ormond,No. 3,Emile Blosfelds Morrison,Mitchell Aarons,Emile Blosfelds Morrison,8-5,8,5,1,0,Completed,true,false,false
+AP017092,12 Dec 15,9,Fitzroy,Ormond,No. 4,Joel Hodder,Harry Nicola,Harry Nicola,0-8,0,8,0,1,Completed,true,false,false
+AP017093,12 Dec 15,9,BLTC,Hawthorn,No. 1,David Jones,Alistair Young,Alistair Young,7-9,7,9,0,1,Completed,true,false,false
+AP017093,12 Dec 15,9,BLTC,Hawthorn,No. 2,Oliver Bytheway,Mark Petty,Mark Petty,3-8,3,8,0,1,Completed,true,false,false
+AP017093,12 Dec 15,9,BLTC,Hawthorn,No. 3,Paul Byers,Nicholas Kotros,Nicholas Kotros,1-8,1,8,0,1,Completed,true,false,false
+AP017093,12 Dec 15,9,BLTC,Hawthorn,No. 4,Stephan Trakis,Mathias Koch,Mathias Koch,3-8,3,8,0,1,Completed,true,false,false
+AP017094,12 Dec 15,9,Kings Park,East Malvern,No. 1,Ben Eden,Paul Lidgerwood,Ben Eden,8-2,8,2,1,0,Completed,true,false,false
+AP017094,12 Dec 15,9,Kings Park,East Malvern,No. 2,Dominic Maeorg,Rohan Appleton,Rohan Appleton,3-8,3,8,0,1,Completed,true,false,false
+AP017094,12 Dec 15,9,Kings Park,East Malvern,No. 3,Hamish Styring,Andrew McVean,Hamish Styring,8-4,8,4,1,0,Completed,true,false,false
+AP017094,12 Dec 15,9,Kings Park,East Malvern,No. 4,Oscar Eden,Robert Payne,Robert Payne,6-8,6,8,0,1,Completed,true,false,false
+AP017101,30 Jan 16,10,East Malvern,Port Melbourne,No. 1,Rohan Appleton,Andrew Ross,Andrew Ross,6-8,6,8,0,1,Completed,true,false,false
+AP017101,30 Jan 16,10,East Malvern,Port Melbourne,No. 2,Alex Krohn,Michael Golinelli,Michael Golinelli,4-8,4,8,0,1,Completed,true,false,false
+AP017101,30 Jan 16,10,East Malvern,Port Melbourne,No. 3,Andrew McVean,Adrian Camilleri,Adrian Camilleri,7-9,7,9,0,1,Completed,true,false,false
+AP017101,30 Jan 16,10,East Malvern,Port Melbourne,No. 4,Robert Payne,Drew Aitken,Robert Payne,8-3,8,3,1,0,Completed,true,false,false
+AP017102,30 Jan 16,10,Old Scotch,Fitzroy,No. 1,Tim Goh,Berry Driesen,Tim Goh,8-6,8,6,1,0,Completed,true,false,false
+AP017102,30 Jan 16,10,Old Scotch,Fitzroy,No. 2,James Brownell,Pierre Dugue,Pierre Dugue,4-8,4,8,0,1,Completed,true,false,false
+AP017102,30 Jan 16,10,Old Scotch,Fitzroy,No. 3,John Cade,Emile Blosfelds Morrison,Emile Blosfelds Morrison,7-9,7,9,0,1,Completed,true,false,false
+AP017102,30 Jan 16,10,Old Scotch,Fitzroy,No. 4,Peter McDiarmid,Joel Hodder,Peter McDiarmid,8-3,8,3,1,0,Completed,true,false,false
+AP017104,30 Jan 16,10,Hawthorn,Kings Park,No. 1,Alistair Young,Chris Kokkinos,Alistair Young,9-7,9,7,1,0,Completed,true,false,false
+AP017104,30 Jan 16,10,Hawthorn,Kings Park,No. 2,Mark Petty,Ben Eden,Ben Eden,4-8,4,8,0,1,Completed,true,false,false
+AP017104,30 Jan 16,10,Hawthorn,Kings Park,No. 3,Nicholas Kotros,Dominic Maeorg,Nicholas Kotros,8-4,8,4,1,0,Completed,true,false,false
+AP017104,30 Jan 16,10,Hawthorn,Kings Park,No. 4,Mathias Koch,Hamish Styring,Mathias Koch,8-4,8,4,1,0,Completed,true,false,false
+AP017111,06 Feb 16,11,Port Melbourne,Hawthorn,No. 1,Andrew Ross,Alistair Young,Alistair Young,7-9,7,9,0,1,Completed,true,false,false
+AP017111,06 Feb 16,11,Port Melbourne,Hawthorn,No. 2,Espie Balila,George Vogiatzis,Espie Balila,9-7,9,7,1,0,Completed,true,false,false
+AP017111,06 Feb 16,11,Port Melbourne,Hawthorn,No. 3,Chris Kowalski,Nicholas Kotros,Nicholas Kotros,2-8,2,8,0,1,Completed,true,false,false
+AP017111,06 Feb 16,11,Port Melbourne,Hawthorn,No. 4,Adrian Camilleri,Shahram Raissi,Adrian Camilleri,8-5,8,5,1,0,Completed,true,false,false
+AP017112,06 Feb 16,11,Fitzroy,East Malvern,No. 1,Berry Driesen,Elliot Payne,Elliot Payne,3-8,3,8,0,1,Completed,true,false,false
+AP017112,06 Feb 16,11,Fitzroy,East Malvern,No. 2,Pierre Dugue,Paul Lidgerwood,Paul Lidgerwood,6-8,6,8,0,1,Completed,true,false,false
+AP017112,06 Feb 16,11,Fitzroy,East Malvern,No. 3,Luke Devlin,Rohan Appleton,Rohan Appleton,8-9,8,9,0,1,Completed,true,false,false
+AP017112,06 Feb 16,11,Fitzroy,East Malvern,No. 4,Emile Blosfelds Morrison,Alex Krohn,Alex Krohn,8-9,8,9,0,1,Completed,true,false,false
+AP017113,06 Feb 16,11,BLTC,Old Scotch,No. 1,Graeme Scherger,Chris Hay,Graeme Scherger,8-4,8,4,1,0,Completed,true,false,false
+AP017113,06 Feb 16,11,BLTC,Old Scotch,No. 2,Zac Scherger,Tim Goh,Tim Goh,2-8,2,8,0,1,Completed,true,false,false
+AP017113,06 Feb 16,11,BLTC,Old Scotch,No. 3,Oliver Bytheway,Matthew Payne,Oliver Bytheway,8-5,8,5,1,0,Completed,true,false,false
+AP017113,06 Feb 16,11,BLTC,Old Scotch,No. 4,Wes Flavell,Peter McDiarmid,Peter McDiarmid,5-8,5,8,0,1,Completed,true,false,false
+AP017114,06 Feb 16,11,Kings Park,Ormond,No. 1,Chris Kokkinos,Marco Biagagnio,Marco Biagagnio,4-8,4,8,0,1,Completed,true,false,false
+AP017114,06 Feb 16,11,Kings Park,Ormond,No. 2,Ben Eden,James Pound,Ben Eden,8-2,8,2,1,0,Completed,true,false,false
+AP017114,06 Feb 16,11,Kings Park,Ormond,No. 3,Hamish Styring,Peter Whalan,Peter Whalan,1-8,1,8,0,1,Completed,true,false,false
+AP017114,06 Feb 16,11,Kings Park,Ormond,No. 4,Oscar Eden,Leon Obrenov,Leon Obrenov,6-8,6,8,0,1,Completed,true,false,false
+AP017122,13 Feb 16,12,East Malvern,Old Scotch,No. 1,Mark Lush,Chris Hay,Mark Lush,8-6,8,6,1,0,Completed,true,false,false
+AP017122,13 Feb 16,12,East Malvern,Old Scotch,No. 2,Andrew McVean,James Brownell,James Brownell,6-8,6,8,0,1,Completed,true,false,false
+AP017122,13 Feb 16,12,East Malvern,Old Scotch,No. 3,Norman Saupe,John Cade,Norman Saupe,8-4,8,4,1,0,Completed,true,false,false
+AP017122,13 Feb 16,12,East Malvern,Old Scotch,No. 4,Jordan Rozman,Matthew Payne,Matthew Payne,7-9,7,9,0,1,Completed,true,false,false
+AP017123,13 Feb 16,12,Ormond,Hawthorn,No. 1,Marco Biagagnio,David Sartori,Marco Biagagnio,8-1,8,1,1,0,Completed,true,false,false
+AP017123,13 Feb 16,12,Ormond,Hawthorn,No. 2,James Pound,Mark Petty,James Pound,8-3,8,3,1,0,Completed,true,false,false
+AP017123,13 Feb 16,12,Ormond,Hawthorn,No. 3,Peter Whalan,Nicholas Kotros,Nicholas Kotros,3-8,3,8,0,1,Completed,true,false,false
+AP017123,13 Feb 16,12,Ormond,Hawthorn,No. 4,Thomas Abourizk,Shahram Raissi,Shahram Raissi,6-8,6,8,0,1,Completed,true,false,false
+AP017124,13 Feb 16,12,Fitzroy,Port Melbourne,No. 1,Berry Driesen,Espie Balila,Espie Balila,8-9,8,9,0,1,Completed,true,false,false
+AP017124,13 Feb 16,12,Fitzroy,Port Melbourne,No. 2,Pierre Dugue,Geoff Snell,Pierre Dugue,8-1,8,1,1,0,Completed,true,false,false
+AP017124,13 Feb 16,12,Fitzroy,Port Melbourne,No. 3,Luke Devlin,Pierre Verven,Luke Devlin,8-4,8,4,1,0,Completed,true,false,false
+AP017124,13 Feb 16,12,Fitzroy,Port Melbourne,No. 4,Joel Hodder,Adrian Camilleri,Adrian Camilleri,4-8,4,8,0,1,Completed,true,false,false
+AP017131,20 Feb 16,13,BLTC,Fitzroy,No. 1,David Jones,Pierre Dugue,Pierre Dugue,5-8,5,8,0,1,Completed,true,false,false
+AP017131,20 Feb 16,13,BLTC,Fitzroy,No. 2,Wes Flavell,Luke Devlin,Luke Devlin,2-8,2,8,0,1,Completed,true,false,false
+AP017131,20 Feb 16,13,BLTC,Fitzroy,No. 3,Bob McCarthy,Emile Blosfelds Morrison,Emile Blosfelds Morrison,5-8,5,8,0,1,Completed,true,false,false
+AP017131,20 Feb 16,13,BLTC,Fitzroy,No. 4,Stephan Trakis,Louis Novy,Louis Novy,0-8,0,8,0,1,Completed,true,false,false
+AP017132,20 Feb 16,13,Port Melbourne,Kings Park,No. 1,Andrew Ross,Chris Kokkinos,Andrew Ross,9-7,9,7,1,0,Completed,true,false,false
+AP017132,20 Feb 16,13,Port Melbourne,Kings Park,No. 2,Espie Balila,Ben Eden,Ben Eden,4-8,4,8,0,1,Completed,true,false,false
+AP017132,20 Feb 16,13,Port Melbourne,Kings Park,No. 3,Michael Golinelli,Dominic Maeorg,Michael Golinelli,8-4,8,4,1,0,Completed,true,false,false
+AP017132,20 Feb 16,13,Port Melbourne,Kings Park,No. 4,Adrian Camilleri,Oscar Eden,Adrian Camilleri,8-4,8,4,1,0,Completed,true,false,false
+AP017133,20 Feb 16,13,Hawthorn,East Malvern,No. 1,David Sartori,Elliot Payne,Elliot Payne,0-8,0,8,0,1,Completed,true,false,false
+AP017133,20 Feb 16,13,Hawthorn,East Malvern,No. 2,Alistair Young,Mark Lush,Alistair Young,8-6,8,6,1,0,Completed,true,false,false
+AP017133,20 Feb 16,13,Hawthorn,East Malvern,No. 3,George Vogiatzis,Andrew McVean,George Vogiatzis,8-6,8,6,1,0,Completed,true,false,false
+AP017133,20 Feb 16,13,Hawthorn,East Malvern,No. 4,Mark Petty,Jack Appleton,Mark Petty,8-1,8,1,1,0,Completed,true,false,false
+AP017134,20 Feb 16,13,Old Scotch,Ormond,No. 1,Thibaud Arbes-Dupuy,Sahil Dabra,Sahil Dabra,0-8,0,8,0,1,Completed,true,false,false
+AP017134,20 Feb 16,13,Old Scotch,Ormond,No. 2,Chris Hay,James Pound,Chris Hay,9-8,9,8,1,0,Completed,true,false,false
+AP017134,20 Feb 16,13,Old Scotch,Ormond,No. 3,Matthew Payne,Peter Whalan,Peter Whalan,1-8,1,8,0,1,Completed,true,false,false
+AP017134,20 Feb 16,13,Old Scotch,Ormond,No. 4,Peter McDiarmid,Leon Obrenov,Leon Obrenov,8-9,8,9,0,1,Completed,true,false,false
+AP017142,27 Feb 16,14,Kings Park,Fitzroy,No. 1,Chris Kokkinos,Peter Geha,Chris Kokkinos,9-8,9,8,1,0,Completed,true,false,false
+AP017142,27 Feb 16,14,Kings Park,Fitzroy,No. 2,Ben Eden,Pierre Dugue,Ben Eden,8-2,8,2,1,0,Completed,true,false,false
+AP017142,27 Feb 16,14,Kings Park,Fitzroy,No. 3,Dominic Maeorg,Emile Blosfelds Morrison,Emile Blosfelds Morrison,3-8,3,8,0,1,Completed,true,false,false
+AP017142,27 Feb 16,14,Kings Park,Fitzroy,No. 4,Lachlan Peters,Joel Hodder,Lachlan Peters,8-5,8,5,1,0,Completed,true,false,false
+AP017143,27 Feb 16,14,Hawthorn,Old Scotch,No. 1,Alistair Young,Thibaud Arbes-Dupuy,Alistair Young,8-5,8,5,1,0,Completed,true,false,false
+AP017143,27 Feb 16,14,Hawthorn,Old Scotch,No. 2,Mark Petty,Chris Hay,Mark Petty,8-1,8,1,1,0,Completed,true,false,false
+AP017143,27 Feb 16,14,Hawthorn,Old Scotch,No. 3,Shahram Raissi,Tim Goh,Tim Goh,3-8,3,8,0,1,Completed,true,false,false
+AP017143,27 Feb 16,14,Hawthorn,Old Scotch,No. 4,Mathias Koch,Peter McDiarmid,Mathias Koch,8-6,8,6,1,0,Completed,true,false,false
+AP017144,27 Feb 16,14,Ormond,East Malvern,No. 1,James Pound,Elliot Payne,Elliot Payne,2-8,2,8,0,1,Completed,true,false,false
+AP017144,27 Feb 16,14,Ormond,East Malvern,No. 2,Peter Whalan,Justin Shepherd,Peter Whalan,8-2,8,2,1,0,Completed,true,false,false
+AP017144,27 Feb 16,14,Ormond,East Malvern,No. 3,Leon Obrenov,Norman Saupe,Leon Obrenov,9-7,9,7,1,0,Completed,true,false,false
+AP017144,27 Feb 16,14,Ormond,East Malvern,No. 4,Mitchell Aarons,Robert Payne,Robert Payne,6-8,6,8,0,1,Completed,true,false,false
+AP017301,,16,East Malvern,Fitzroy,No. 1,Elliot Payne,Peter Geha,Elliot Payne,8-1,8,1,1,0,Completed,true,false,false
+AP017301,,16,East Malvern,Fitzroy,No. 2,Rohan Appleton,Berry Driesen,Rohan Appleton,9-8,9,8,1,0,Completed,true,false,false
+AP017301,,16,East Malvern,Fitzroy,No. 3,Andrew McVean,Emile Blosfelds Morrison,Andrew McVean,8-3,8,3,1,0,Completed,true,false,false
+AP017301,,16,East Malvern,Fitzroy,No. 4,Robert Payne,Louis Novy,Robert Payne,8-5,8,5,1,0,Completed,true,false,false
+AP017302,,16,Ormond,Hawthorn,No. 1,Marco Biagagnio,David Sartori,Marco Biagagnio,8-1,8,1,1,0,Completed,true,false,false
+AP017302,,16,Ormond,Hawthorn,No. 2,James Pound,George Vogiatzis,James Pound,8-4,8,4,1,0,Completed,true,false,false
+AP017302,,16,Ormond,Hawthorn,No. 3,Peter Whalan,Mark Petty,Mark Petty,4-8,4,8,0,1,Completed,true,false,false
+AP017302,,16,Ormond,Hawthorn,No. 4,Leon Obrenov,Shahram Raissi,Leon Obrenov,8-2,8,2,1,0,Completed,true,false,false
+AP017321,,17,East Malvern,Ormond,No. 1,Elliot Payne,Marco Biagagnio,Elliot Payne,9-8,9,8,1,0,Completed,true,false,true
+AP017321,,17,East Malvern,Ormond,No. 2,Alex Krohn,James Pound,James Pound,5-8,5,8,0,1,Completed,true,true,false
+AP017321,,17,East Malvern,Ormond,No. 3,Andrew McVean,Peter Whalan,Peter Whalan,2-8,2,8,0,1,Completed,true,false,false
+AP017321,,17,East Malvern,Ormond,No. 4,Robert Payne,Leon Obrenov,Robert Payne,8-3,8,3,1,0,Completed,true,true,false

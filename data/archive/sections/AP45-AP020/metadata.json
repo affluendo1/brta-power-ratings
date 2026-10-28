@@ -1,0 +1,113 @@
+{
+  "asset_id": "AP45-AP020",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 22/23",
+  "season_id": "AP45",
+  "season_label": "Summer 22/23",
+  "source_section_code": "AP020",
+  "section_label": "Ladies Rubs 1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Bruce Park",
+      "wins": 10,
+      "points": 89,
+      "percentage": 341.18,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "Kooyong",
+      "wins": 11,
+      "points": 89,
+      "percentage": 322.56,
+      "marker": "P"
+    },
+    {
+      "position": 3,
+      "team": "Legend Park",
+      "wins": 9,
+      "points": 72,
+      "percentage": 173.53,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Fitzroy",
+      "wins": 6,
+      "points": 57,
+      "percentage": 127.06,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Port Melbourne",
+      "wins": 5,
+      "points": 42,
+      "percentage": 76.96,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Chadstone",
+      "wins": 4,
+      "points": 41,
+      "percentage": 95.38,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Overport Park",
+      "wins": 3,
+      "points": 32,
+      "percentage": 72.26,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "Ormond",
+      "wins": 1,
+      "points": 19,
+      "percentage": 33.47,
+      "marker": ""
+    },
+    {
+      "position": 9,
+      "team": "Hawthorn",
+      "wins": 0,
+      "points": 7,
+      "percentage": 22.13,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP45-AP020",
+  "fixtures": 73,
+  "completed_fixtures": 50,
+  "draw_fixtures": 59,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 200,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Fixture game totals do not match rubbers for AP020065: TROLS team total 48-8; complete-score total 42-8. Both published records retained."
+  ]
+}

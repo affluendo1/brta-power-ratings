@@ -1,0 +1,89 @@
+{
+  "asset_id": "AP42-AP004",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Winter 2021",
+  "season_id": "AP42",
+  "season_label": "Winter 2021",
+  "source_section_code": "AP004",
+  "section_label": "Mx Rubbers 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Kings Park",
+      "wins": 7,
+      "points": 79.5,
+      "percentage": 127.3,
+      "marker": ""
+    },
+    {
+      "position": 2,
+      "team": "Parkdale",
+      "wins": 5,
+      "points": 69.5,
+      "percentage": 117.45,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Black Rock",
+      "wins": 5,
+      "points": 62,
+      "percentage": 108.54,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Tally Ho",
+      "wins": 3,
+      "points": 58,
+      "percentage": 103.59,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "St Pats Mentone",
+      "wins": 3,
+      "points": 51,
+      "percentage": 84.83,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Highmoor Uniting",
+      "wins": 1,
+      "points": 40,
+      "percentage": 68.57,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP42-AP004",
+  "fixtures": 46,
+  "completed_fixtures": 24,
+  "draw_fixtures": 57,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 96,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP004023 doubles No. 3: '3-6 6-3'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

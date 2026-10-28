@@ -1,0 +1,61 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP020012,08 Oct 11,1,regular,Round 1,Highmoor Uniting,Lauriston,7,3,5,3,,,45,44,Completed,
+AP020013,08 Oct 11,1,regular,Round 1,Dendy Park,Hawthorn,8,2,6,3,,,54,48,Completed,
+AP020014,08 Oct 11,1,regular,Round 1,Kings Park,Murrumbeena,9,1,7,1,,,52,28,Completed,
+pending-ap020-r1-maccabi-1-maccabi-2,08 Oct 11,1,regular,Round 1,Maccabi 1,Maccabi 2,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP020021,15 Oct 11,2,regular,Round 2,Murrumbeena,Maccabi 1,1.5,8.5,1,6,,,24,50,Completed,
+AP020022,15 Oct 11,2,regular,Round 2,Maccabi 2,Highmoor Uniting,10,0,8,1,,,63,30,Completed,
+AP020023,15 Oct 11,2,regular,Round 2,Lauriston,Dendy Park,3,7,3,5,,,41,48,Completed,
+AP020024,15 Oct 11,2,regular,Round 2,Hawthorn,Kings Park,2,8,3,6,,,40,57,Completed,
+AP020034,22 Oct 11,3,regular,Round 3,Kings Park,Lauriston,1,9,2,7,,,36,55,Completed,
+pending-ap020-r3-dendy-park-maccabi-2,22 Oct 11,3,regular,Round 3,Dendy Park,Maccabi 2,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap020-r3-highmoor-uniting-murrumbeena,22 Oct 11,3,regular,Round 3,Highmoor Uniting,Murrumbeena,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap020-r3-maccabi-1-hawthorn,22 Oct 11,3,regular,Round 3,Maccabi 1,Hawthorn,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP020041,05 Nov 11,4,regular,Round 4,Lauriston,Maccabi 1,1,9,1,7,,,22,52,Completed,
+AP020042,05 Nov 11,4,regular,Round 4,Hawthorn,Highmoor Uniting,8,2,5,4,,,47,53,Completed,
+AP020043,05 Nov 11,4,regular,Round 4,Murrumbeena,Dendy Park,2,8,3,6,,,43,50,Completed,
+AP020044,05 Nov 11,4,regular,Round 4,Maccabi 2,Kings Park,10,0,8,1,,,57,17,Completed,
+AP020051,12 Nov 11,5,regular,Round 5,Dendy Park,Kings Park,3,7,3,5,,,46,46,Completed,
+AP020052,12 Nov 11,5,regular,Round 5,Murrumbeena,Hawthorn,2,8,3,6,,,45,52,Completed,
+AP020053,12 Nov 11,5,regular,Round 5,Lauriston,Maccabi 2,1,9,2,7,,,33,53,Completed,
+AP020054,12 Nov 11,5,regular,Round 5,Maccabi 1,Highmoor Uniting,10,0,8,1,,,61,28,Completed,
+AP020061,19 Nov 11,6,regular,Round 6,Highmoor Uniting,Dendy Park,5,5,0,0,,,0,0,Completed,
+pending-ap020-r6-hawthorn-lauriston,19 Nov 11,6,regular,Round 6,Hawthorn,Lauriston,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap020-r6-kings-park-maccabi-1,19 Nov 11,6,regular,Round 6,Kings Park,Maccabi 1,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap020-r6-maccabi-2-murrumbeena,19 Nov 11,6,regular,Round 6,Maccabi 2,Murrumbeena,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap020-r7-hawthorn-maccabi-2,26 Nov 11,7,regular,Round 7,Hawthorn,Maccabi 2,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap020-r7-highmoor-uniting-kings-park,26 Nov 11,7,regular,Round 7,Highmoor Uniting,Kings Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap020-r7-maccabi-1-dendy-park,26 Nov 11,7,regular,Round 7,Maccabi 1,Dendy Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap020-r7-murrumbeena-lauriston,26 Nov 11,7,regular,Round 7,Murrumbeena,Lauriston,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP020081,03 Dec 11,8,regular,Round 8,Maccabi 2,Maccabi 1,2,8,3,5,,,42,40,Completed,
+AP020082,03 Dec 11,8,regular,Round 8,Lauriston,Highmoor Uniting,7,3,5,4,,,53,45,Completed,
+AP020083,03 Dec 11,8,regular,Round 8,Hawthorn,Dendy Park,8,2,6,3,,,54,46,Completed,
+AP020084,03 Dec 11,8,regular,Round 8,Murrumbeena,Kings Park,8,2,6,3,,,49,31,Completed,
+AP020091,10 Dec 11,9,regular,Round 9,Maccabi 1,Murrumbeena,9,1,7,3,,,57,45,Completed,
+AP020092,10 Dec 11,9,regular,Round 9,Highmoor Uniting,Maccabi 2,0,10,1,8,,,24,58,Completed,
+AP020093,10 Dec 11,9,regular,Round 9,Dendy Park,Lauriston,7,3,5,5,,,54,53,Completed,
+AP020094,10 Dec 11,9,regular,Round 9,Kings Park,Hawthorn,1,9,2,7,,,42,57,Completed,
+AP020101,17 Dec 11,10,regular,Round 10,Hawthorn,Maccabi 1,2,8,3,5,,,27,43,Completed,
+AP020102,17 Dec 11,10,regular,Round 10,Murrumbeena,Highmoor Uniting,8,2,6,2,,,48,40,Completed,
+AP020103,17 Dec 11,10,regular,Round 10,Maccabi 2,Dendy Park,7,3,5,4,,,53,49,Completed,
+AP020104,17 Dec 11,10,regular,Round 10,Lauriston,Kings Park,7,3,5,4,,,48,39,Completed,
+AP020111,04 Feb 12,11,regular,Round 11,Maccabi 1,Lauriston,8,2,5,4,,,58,39,Completed,
+AP020112,04 Feb 12,11,regular,Round 11,Highmoor Uniting,Hawthorn,2,8,3,6,,,37,60,Completed,
+AP020113,04 Feb 12,11,regular,Round 11,Dendy Park,Murrumbeena,9,1,7,2,,,49,40,Completed,
+AP020114,04 Feb 12,11,regular,Round 11,Kings Park,Maccabi 2,1,9,2,7,,,40,58,Completed,
+AP020121,11 Feb 12,12,regular,Round 12,Kings Park,Dendy Park,1,9,2,6,,,40,53,Completed,
+AP020122,11 Feb 12,12,regular,Round 12,Hawthorn,Murrumbeena,9,1,7,2,,,60,29,Completed,
+AP020123,11 Feb 12,12,regular,Round 12,Maccabi 2,Lauriston,10,0,8,0,,,58,25,Completed,
+AP020124,11 Feb 12,12,regular,Round 12,Highmoor Uniting,Maccabi 1,2,8,3,6,,,42,55,Completed,
+AP020131,18 Feb 12,13,regular,Round 13,Dendy Park,Highmoor Uniting,8,2,6,3,,,52,41,Completed,
+AP020132,18 Feb 12,13,regular,Round 13,Maccabi 1,Kings Park,7,3,5,4,,,45,49,Completed,
+AP020133,18 Feb 12,13,regular,Round 13,Lauriston,Hawthorn,2,8,3,5,,,25,48,Completed,
+AP020134,18 Feb 12,13,regular,Round 13,Murrumbeena,Maccabi 2,2,8,3,6,,,37,49,Completed,
+AP020141,25 Feb 12,14,regular,Round 14,Dendy Park,Maccabi 1,8,2,5,3,,,45,37,Completed,
+AP020142,25 Feb 12,14,regular,Round 14,Kings Park,Highmoor Uniting,5,5,2,1,,,19,16,Completed,
+AP020143,25 Feb 12,14,regular,Round 14,Lauriston,Murrumbeena,1,9,2,7,,,41,58,Completed,
+AP020144,25 Feb 12,14,regular,Round 14,Maccabi 2,Hawthorn,7,3,5,4,,,45,46,Completed,
+AP020301,,16,semi_final,Semi-final,Maccabi 2,Maccabi 1,7,3,5,4,,,57,48,Completed,
+AP020302,,16,semi_final,Semi-final,Dendy Park,Hawthorn,2,8,3,5,,,33,41,Completed,
+AP020311,,16,semi_final,Semi-final,Maccabi 1,Hawthorn,2,8,3,5,,,41,48,Completed,
+AP020321,,17,grand_final,Grand final · TROLS entry 2,Maccabi 2,Hawthorn,1,9,1,7,,,31,50,Completed,

@@ -1,0 +1,105 @@
+{
+  "asset_id": "AP43-AP014",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 21/22",
+  "season_id": "AP43",
+  "season_label": "Summer 21/22",
+  "source_section_code": "AP014",
+  "section_label": "Mx Rubbers 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Royal South Yarra",
+      "wins": 8,
+      "points": 75,
+      "percentage": 154.86,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Black Rock",
+      "wins": 7,
+      "points": 58,
+      "percentage": 101.04,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Elwood",
+      "wins": 6,
+      "points": 56,
+      "percentage": 112.65,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Parkdale",
+      "wins": 6,
+      "points": 55,
+      "percentage": 125.9,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Kings Park",
+      "wins": 4,
+      "points": 41,
+      "percentage": 104.29,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Tally Ho",
+      "wins": 5,
+      "points": 40,
+      "percentage": 81.1,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "St Pats Mentone",
+      "wins": 4,
+      "points": 35,
+      "percentage": 72.55,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "Langwarrin",
+      "wins": 1,
+      "points": 24,
+      "percentage": 77.7,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP43-AP014",
+  "fixtures": 59,
+  "completed_fixtures": 53,
+  "draw_fixtures": 59,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 180,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP014321 doubles No. 4: '4-6 7-6'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

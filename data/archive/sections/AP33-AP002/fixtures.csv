@@ -1,0 +1,32 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP002011,30 Apr 16,1,regular,Round 1,Maccabi,St Louis de Mont,0,8,0,4,,,12,40,Completed,
+AP002012,30 Apr 16,1,regular,Round 1,Ormond 2,Ormond 1,1,7,1,3,,,16,36,Completed,
+AP002021,07 May 16,2,regular,Round 2,St Louis de Mont,Ormond 2,8,0,4,0,,,40,0,Completed,
+AP002022,07 May 16,2,regular,Round 2,Ormond 1,Maccabi,7,1,3,1,,,35,24,Completed,
+AP002031,14 May 16,3,regular,Round 3,Maccabi,Ormond 2,7,1,3,1,,,33,26,Completed,
+AP002032,14 May 16,3,regular,Round 3,Ormond 1,St Louis de Mont,0,8,0,4,,,5,40,Completed,
+AP002041,21 May 16,4,regular,Round 4,St Louis de Mont,Maccabi,8,0,4,0,,,40,6,Completed,
+AP002042,21 May 16,4,regular,Round 4,Ormond 1,Ormond 2,0,8,0,4,,,20,40,Completed,
+AP002052,28 May 16,5,regular,Round 5,Maccabi,Ormond 1,4,4,1,1,,,35,28,Completed,
+pending-ap002-r5-ormond-2-st-louis-de-mont,28 May 16,5,regular,Round 5,Ormond 2,St Louis de Mont,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP002062,04 Jun 16,6,regular,Round 6,St Louis de Mont,Ormond 1,4,4,0,0,,,0,0,Completed,
+pending-ap002-r6-ormond-2-maccabi,04 Jun 16,6,regular,Round 6,Ormond 2,Maccabi,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP002071,18 Jun 16,7,regular,Round 7,Maccabi,St Louis de Mont,0,8,0,4,,,9,40,Completed,
+pending-ap002-r7-ormond-2-ormond-1,18 Jun 16,7,regular,Round 7,Ormond 2,Ormond 1,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP002081,25 Jun 16,8,regular,Round 8,St Louis de Mont,Ormond 2,8,0,4,0,,,40,3,Completed,
+AP002082,25 Jun 16,8,regular,Round 8,Ormond 1,Maccabi,7,1,3,1,,,35,22,Completed,
+AP002091,02 Jul 16,9,regular,Round 9,Maccabi,Ormond 2,0,8,0,4,,,10,40,Completed,
+AP002092,02 Jul 16,9,regular,Round 9,Ormond 1,St Louis de Mont,0,8,0,4,,,2,40,Completed,
+AP002101,09 Jul 16,10,regular,Round 10,St Louis de Mont,Maccabi,8,0,4,0,,,40,3,Completed,
+AP002102,09 Jul 16,10,regular,Round 10,Ormond 1,Ormond 2,2,6,2,2,,,28,29,Completed,
+AP002111,16 Jul 16,11,regular,Round 11,Ormond 2,St Louis de Mont,0,8,0,4,,,11,40,Completed,
+AP002112,16 Jul 16,11,regular,Round 11,Maccabi,Ormond 1,2,6,2,2,,,32,38,Completed,
+pending-ap002-r12-ormond-2-maccabi,23 Jul 16,12,regular,Round 12,Ormond 2,Maccabi,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap002-r12-st-louis-de-mont-ormond-1,23 Jul 16,12,regular,Round 12,St Louis de Mont,Ormond 1,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP002131,30 Jul 16,13,regular,Round 13,Maccabi,St Louis de Mont,0,8,0,4,,,13,40,Completed,
+AP002132,30 Jul 16,13,regular,Round 13,Ormond 2,Ormond 1,7,1,3,1,,,31,28,Completed,
+AP002141,06 Aug 16,14,regular,Round 14,St Louis de Mont,Ormond 2,8,0,4,0,,,40,18,Completed,
+AP002142,06 Aug 16,14,regular,Round 14,Ormond 1,Maccabi,7,1,3,1,,,34,27,Completed,
+AP002151,13 Aug 16,15,regular,Round 15,Maccabi,Ormond 2,1,7,1,3,,,25,33,Completed,
+AP002152,13 Aug 16,15,regular,Round 15,Ormond 1,St Louis de Mont,0,8,0,4,,,2,40,Completed,
+AP002321,,16,grand_final,Grand final · TROLS entry 2,St Louis de Mont,Ormond 2,8,0,4,0,,,40,5,Completed,

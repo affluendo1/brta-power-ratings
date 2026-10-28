@@ -1,0 +1,61 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP009011,08 Oct 16,1,regular,Round 1,OLGC,Mentone,2,6,2,2,5,6,49,55,Completed,
+AP009012,08 Oct 16,1,regular,Round 1,Middle Brighton,St Finbar's,4,4,2,2,4,4,36,36,Completed,
+AP009014,08 Oct 16,1,regular,Round 1,Coatesville,Glen Huntly,1,7,1,3,5,6,53,52,Completed,
+pending-ap009-r1-bye-ormond,08 Oct 16,1,regular,Round 1,Bye,Ormond,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009021,15 Oct 16,2,regular,Round 2,Glen Huntly,OLGC,8,0,4,0,8,1,52,26,Completed,
+AP009022,15 Oct 16,2,regular,Round 2,Mentone,Middle Brighton,7,1,3,1,6,3,48,36,Completed,
+AP009024,15 Oct 16,2,regular,Round 2,Ormond,Coatesville,0,8,0,4,0,8,14,48,Completed,
+pending-ap009-r2-st-finbar-s-bye,15 Oct 16,2,regular,Round 2,St Finbar's,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap009-r3-bye-mentone,22 Oct 16,3,regular,Round 3,Bye,Mentone,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap009-r3-coatesville-st-finbar-s,22 Oct 16,3,regular,Round 3,Coatesville,St Finbar's,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap009-r3-middle-brighton-glen-huntly,22 Oct 16,3,regular,Round 3,Middle Brighton,Glen Huntly,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap009-r3-olgc-ormond,22 Oct 16,3,regular,Round 3,OLGC,Ormond,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP009042,05 Nov 16,4,regular,Round 4,Ormond,Middle Brighton,2,6,2,2,4,4,29,30,Completed,
+AP009044,05 Nov 16,4,regular,Round 4,Mentone,Coatesville,0,8,0,4,1,8,22,54,Completed,
+pending-ap009-r4-glen-huntly-bye,05 Nov 16,4,regular,Round 4,Glen Huntly,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ap009-r4-st-finbar-s-olgc,05 Nov 16,4,regular,Round 4,St Finbar's,OLGC,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+AP009052,12 Nov 16,5,regular,Round 5,Glen Huntly,Ormond,8,0,4,0,8,1,53,34,Completed,
+AP009053,12 Nov 16,5,regular,Round 5,St Finbar's,Mentone,6,2,2,2,4,4,34,28,Completed,
+AP009054,12 Nov 16,5,regular,Round 5,OLGC,Middle Brighton,0,8,0,4,1,8,29,51,Completed,
+pending-ap009-r5-bye-coatesville,12 Nov 16,5,regular,Round 5,Bye,Coatesville,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009062,19 Nov 16,6,regular,Round 6,Coatesville,OLGC,7,1,3,1,6,3,48,36,Completed,
+AP009063,19 Nov 16,6,regular,Round 6,Ormond,St Finbar's,1,7,1,3,3,7,49,51,Completed,
+AP009064,19 Nov 16,6,regular,Round 6,Mentone,Glen Huntly,0,8,0,4,1,8,21,51,Completed,
+pending-ap009-r6-middle-brighton-bye,19 Nov 16,6,regular,Round 6,Middle Brighton,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009072,26 Nov 16,7,regular,Round 7,Middle Brighton,Coatesville,1,7,1,3,3,7,36,53,Completed,
+AP009073,26 Nov 16,7,regular,Round 7,Glen Huntly,St Finbar's,1,7,1,3,2,6,32,42,Completed,
+AP009074,26 Nov 16,7,regular,Round 7,Ormond,Mentone,6,2,2,2,4,4,35,31,Completed,
+pending-ap009-r7-olgc-bye,26 Nov 16,7,regular,Round 7,OLGC,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009081,03 Dec 16,8,regular,Round 8,Mentone,OLGC,1,7,1,3,2,6,17,41,Completed,
+AP009082,03 Dec 16,8,regular,Round 8,St Finbar's,Middle Brighton,6,2,2,2,6,5,53,46,Completed,
+AP009084,03 Dec 16,8,regular,Round 8,Glen Huntly,Coatesville,7,1,3,1,7,3,55,41,Completed,
+pending-ap009-r8-ormond-bye,03 Dec 16,8,regular,Round 8,Ormond,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009091,10 Dec 16,9,regular,Round 9,OLGC,Glen Huntly,1,7,1,3,3,7,41,58,Completed,
+AP009092,10 Dec 16,9,regular,Round 9,Middle Brighton,Mentone,7,1,3,1,7,2,47,27,Completed,
+AP009094,10 Dec 16,9,regular,Round 9,Coatesville,Ormond,6,2,2,2,6,4,53,43,Completed,
+pending-ap009-r9-bye-st-finbar-s,10 Dec 16,9,regular,Round 9,Bye,St Finbar's,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009101,17 Dec 16,10,regular,Round 10,Ormond,OLGC,1,7,1,3,4,7,58,60,Completed,
+AP009102,17 Dec 16,10,regular,Round 10,Glen Huntly,Middle Brighton,2,6,2,2,4,4,37,38,Completed,
+AP009104,17 Dec 16,10,regular,Round 10,St Finbar's,Coatesville,1,7,1,3,2,6,26,41,Completed,
+pending-ap009-r10-mentone-bye,17 Dec 16,10,regular,Round 10,Mentone,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009111,04 Feb 17,11,regular,Round 11,OLGC,St Finbar's,2,6,2,2,5,5,41,43,Completed,
+AP009112,04 Feb 17,11,regular,Round 11,Middle Brighton,Ormond,8,0,4,0,8,1,53,27,Completed,
+AP009114,04 Feb 17,11,regular,Round 11,Coatesville,Mentone,6,2,2,2,6,4,51,42,Completed,
+pending-ap009-r11-bye-glen-huntly,04 Feb 17,11,regular,Round 11,Bye,Glen Huntly,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009122,11 Feb 17,12,regular,Round 12,Ormond,Glen Huntly,0,8,0,4,1,8,32,54,Completed,
+AP009123,11 Feb 17,12,regular,Round 12,Mentone,St Finbar's,1,7,1,3,2,6,27,44,Completed,
+AP009124,11 Feb 17,12,regular,Round 12,Middle Brighton,OLGC,7,1,3,1,6,2,46,26,Completed,
+pending-ap009-r12-coatesville-bye,11 Feb 17,12,regular,Round 12,Coatesville,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009132,18 Feb 17,13,regular,Round 13,OLGC,Coatesville,0,8,0,4,2,8,33,60,Completed,
+AP009133,18 Feb 17,13,regular,Round 13,St Finbar's,Ormond,7,1,3,1,7,3,49,38,Completed,
+AP009134,18 Feb 17,13,regular,Round 13,Glen Huntly,Mentone,6,2,2,2,5,4,46,41,Completed,
+pending-ap009-r13-bye-middle-brighton,18 Feb 17,13,regular,Round 13,Bye,Middle Brighton,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009142,25 Feb 17,14,regular,Round 14,Coatesville,Middle Brighton,2,6,2,2,5,6,55,58,Completed,
+AP009143,25 Feb 17,14,regular,Round 14,St Finbar's,Glen Huntly,0,8,0,4,0,8,14,49,Completed,
+AP009144,25 Feb 17,14,regular,Round 14,Mentone,Ormond,1,7,1,3,3,6,29,49,Completed,
+pending-ap009-r14-bye-olgc,25 Feb 17,14,regular,Round 14,Bye,OLGC,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+AP009301,,16,semi_final,Semi-final,Glen Huntly,Coatesville,6,2,2,2,4,4,35,31,Completed,
+AP009302,,16,semi_final,Semi-final,St Finbar's,Middle Brighton,0,8,0,4,2,8,28,50,Completed,
+AP009311,,16,semi_final,Semi-final,Coatesville,Middle Brighton,6,2,2,2,6,4,49,40,Completed,
+AP009321,,17,grand_final,Grand final · TROLS entry 2,Glen Huntly,Coatesville,8,0,4,0,8,0,49,21,Completed,

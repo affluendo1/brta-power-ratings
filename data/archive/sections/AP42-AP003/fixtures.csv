@@ -1,0 +1,47 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+AP003011,01 May 21,1,regular,Round 1,Elwood 1,Wellington,7,1,3,1,7,2,54,23,Completed,
+AP003012,01 May 21,1,regular,Round 1,Elwood 2,St Pauls,1,7,1,3,4,6,40,54,Completed,
+AP003013,01 May 21,1,regular,Round 1,Tyabb,Overport Park,7,1,3,1,7,2,54,36,Completed,
+AP003021,08 May 21,2,regular,Round 2,Overport Park,Elwood 1,7,1,3,1,6,3,46,31,Completed,
+AP003022,08 May 21,2,regular,Round 2,St Pauls,Tyabb,7,1,3,1,6,3,41,27,Completed,
+AP003023,08 May 21,2,regular,Round 2,Wellington,Elwood 2,8,0,4,0,8,3,61,31,Completed,
+AP003031,15 May 21,3,regular,Round 3,Elwood 1,Elwood 2,8,0,4,0,8,0,49,23,Completed,
+AP003033,15 May 21,3,regular,Round 3,Overport Park,St Pauls,1,7,1,3,2,7,36,48,Completed,
+pending-ap003-r3-tyabb-wellington,15 May 21,3,regular,Round 3,Tyabb,Wellington,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP003041,22 May 21,4,regular,Round 4,St Pauls,Elwood 1,0,8,0,4,1,8,18,54,Completed,
+AP003042,22 May 21,4,regular,Round 4,Wellington,Overport Park,1,7,1,3,3,6,37,49,Completed,
+AP003043,22 May 21,4,regular,Round 4,Elwood 2,Tyabb,1,7,1,3,3,7,33,47,Completed,
+pending-ap003-r5-elwood-1-tyabb,29 May 21,5,regular,Round 5,Elwood 1,Tyabb,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap003-r5-overport-park-elwood-2,29 May 21,5,regular,Round 5,Overport Park,Elwood 2,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap003-r5-st-pauls-wellington,29 May 21,5,regular,Round 5,St Pauls,Wellington,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap003-r6-overport-park-tyabb,05 Jun 21,6,regular,Round 6,Overport Park,Tyabb,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap003-r6-st-pauls-elwood-2,05 Jun 21,6,regular,Round 6,St Pauls,Elwood 2,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap003-r6-wellington-elwood-1,05 Jun 21,6,regular,Round 6,Wellington,Elwood 1,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP003071,19 Jun 21,7,regular,Round 7,Elwood 1,Overport Park,6,2,2,2,5,4,46,43,Completed,
+AP003072,19 Jun 21,7,regular,Round 7,Tyabb,St Pauls,8,0,4,0,8,1,51,23,Completed,
+AP003073,19 Jun 21,7,regular,Round 7,Elwood 2,Wellington,1.5,6.5,1,2,2,4,12,28,Completed,
+AP003082,26 Jun 21,8,regular,Round 8,Wellington,Tyabb,0,8,0,4,1,8,30,54,Completed,
+AP003083,26 Jun 21,8,regular,Round 8,St Pauls,Overport Park,8,0,4,0,8,1,57,36,Completed,
+pending-ap003-r8-elwood-2-elwood-1,26 Jun 21,8,regular,Round 8,Elwood 2,Elwood 1,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP003091,10 Jul 21,9,regular,Round 9,Elwood 1,St Pauls,8,0,4,0,8,0,49,18,Completed,
+AP003092,10 Jul 21,9,regular,Round 9,Overport Park,Wellington,1,7,1,3,2,7,37,49,Completed,
+AP003093,10 Jul 21,9,regular,Round 9,Tyabb,Elwood 2,8,0,4,0,8,0,50,23,Completed,
+pending-ap003-r10-elwood-2-overport-park,17 Jul 21,10,regular,Round 10,Elwood 2,Overport Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap003-r10-tyabb-elwood-1,17 Jul 21,10,regular,Round 10,Tyabb,Elwood 1,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap003-r10-wellington-st-pauls,17 Jul 21,10,regular,Round 10,Wellington,St Pauls,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap003-r11-elwood-1-wellington,24 Jul 21,11,regular,Round 11,Elwood 1,Wellington,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap003-r11-elwood-2-st-pauls,24 Jul 21,11,regular,Round 11,Elwood 2,St Pauls,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap003-r11-tyabb-overport-park,24 Jul 21,11,regular,Round 11,Tyabb,Overport Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+AP003121,31 Jul 21,12,regular,Round 12,Overport Park,Elwood 1,0,8,0,4,0,8,18,49,Completed,
+AP003122,31 Jul 21,12,regular,Round 12,St Pauls,Tyabb,7.5,0.5,3,0,7,2,56,38,Completed,
+AP003123,31 Jul 21,12,regular,Round 12,Wellington,Elwood 2,6,2,2,2,5,5,45,43,Completed,
+pending-ap003-r13-elwood-1-elwood-2,07 Aug 21,13,regular,Round 13,Elwood 1,Elwood 2,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap003-r13-overport-park-st-pauls,07 Aug 21,13,regular,Round 13,Overport Park,St Pauls,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap003-r13-tyabb-wellington,07 Aug 21,13,regular,Round 13,Tyabb,Wellington,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap003-r14-elwood-2-tyabb,14 Aug 21,14,regular,Round 14,Elwood 2,Tyabb,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap003-r14-st-pauls-elwood-1,14 Aug 21,14,regular,Round 14,St Pauls,Elwood 1,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap003-r14-wellington-overport-park,14 Aug 21,14,regular,Round 14,Wellington,Overport Park,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap003-r15-elwood-1-tyabb,21 Aug 21,15,regular,Round 15,Elwood 1,Tyabb,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap003-r15-overport-park-elwood-2,21 Aug 21,15,regular,Round 15,Overport Park,Elwood 2,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap003-r15-st-pauls-wellington,21 Aug 21,15,regular,Round 15,St Pauls,Wellington,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ap003-r16-elwood-1-tyabb,,16,grand_final,Grand final · TROLS entry 2,Elwood 1,Tyabb,,,,,,,,,Missing Result,No individual scorecard / no rubbers recorded

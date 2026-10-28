@@ -1,0 +1,157 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP018012,07 Oct 17,1,Dendy Park 2,Carmelite,No. 1,Bruce Watkins,Victor Blitsas,Victor Blitsas,2-8,2,8,0,1,Completed,true,false,false
+AP018012,07 Oct 17,1,Dendy Park 2,Carmelite,No. 2,Ian Wilkinson,Michael Baird,Michael Baird,3-8,3,8,0,1,Completed,true,false,false
+AP018012,07 Oct 17,1,Dendy Park 2,Carmelite,No. 3,Anthony Saul,Giancarlo Siclari,Giancarlo Siclari,7-8,7,8,0,1,Completed,true,false,false
+AP018012,07 Oct 17,1,Dendy Park 2,Carmelite,No. 4,John Riley,Michael Junkovic,Michael Junkovic,4-8,4,8,0,1,Completed,true,false,false
+AP018013,07 Oct 17,1,Royal South Yarra,Monash University,No. 1,Simon McNamara,Shaun Yeoh,Simon McNamara,8-2,8,2,1,0,Completed,true,false,false
+AP018013,07 Oct 17,1,Royal South Yarra,Monash University,No. 2,David Dunstan,James McLaren,James McLaren,5-8,5,8,0,1,Completed,true,false,false
+AP018013,07 Oct 17,1,Royal South Yarra,Monash University,No. 3,Jeremy Nestle,Lionel Yun,Jeremy Nestle,8-6,8,6,1,0,Completed,true,false,false
+AP018013,07 Oct 17,1,Royal South Yarra,Monash University,No. 4,Ollie McNamara,Sean Kozer,Sean Kozer,4-8,4,8,0,1,Completed,true,false,false
+AP018014,07 Oct 17,1,Port Melbourne,Tennis World MP,No. 1,Espie Balila,Luke Perilli,Espie Balila,8-1,8,1,1,0,Completed,true,false,false
+AP018014,07 Oct 17,1,Port Melbourne,Tennis World MP,No. 2,Emile Brys,Mil Urban,Mil Urban,2-8,2,8,0,1,Completed,true,false,false
+AP018014,07 Oct 17,1,Port Melbourne,Tennis World MP,No. 3,Paul Higgins,Harrison Raffaele,Harrison Raffaele,5-8,5,8,0,1,Completed,true,false,false
+AP018014,07 Oct 17,1,Port Melbourne,Tennis World MP,No. 4,Josh Kempin,Kerem Bekir,Kerem Bekir,0-8,0,8,0,1,Completed,true,false,false
+AP018022,14 Oct 17,2,Dendy Park 1,Dendy Park 2,No. 1,Chris Odgers,Bruce Watkins,Bruce Watkins,6-8,6,8,0,1,Completed,true,false,false
+AP018022,14 Oct 17,2,Dendy Park 1,Dendy Park 2,No. 2,Oliver Evans,Peter Fleming,Peter Fleming,7-8,7,8,0,1,Completed,true,false,false
+AP018022,14 Oct 17,2,Dendy Park 1,Dendy Park 2,No. 3,Dimitri Oxenenko,Chris Trotter,Chris Trotter,2-8,2,8,0,1,Completed,true,false,false
+AP018022,14 Oct 17,2,Dendy Park 1,Dendy Park 2,No. 4,Bryan Lehane,John Riley,Bryan Lehane,8-2,8,2,1,0,Completed,true,false,false
+AP018023,14 Oct 17,2,Carmelite,Royal South Yarra,No. 1,Victor Blitsas,David Dunstan,Victor Blitsas,8-0,8,0,1,0,Completed,true,false,false
+AP018023,14 Oct 17,2,Carmelite,Royal South Yarra,No. 2,Matt Balla,Michael Kirwan,Matt Balla,8-1,8,1,1,0,Completed,true,false,false
+AP018023,14 Oct 17,2,Carmelite,Royal South Yarra,No. 3,Tim Batsilas,Lachlan Francis,Tim Batsilas,8-0,8,0,1,0,Completed,true,false,false
+AP018023,14 Oct 17,2,Carmelite,Royal South Yarra,No. 4,Michael Junkovic,Lachlan Mailer,Michael Junkovic,8-0,8,0,1,0,Completed,true,false,false
+AP018024,14 Oct 17,2,Monash University,Port Melbourne,No. 1,Shaun Yeoh,Newnest Addakula,Shaun Yeoh,8-7,8,7,1,0,Completed,true,false,false
+AP018024,14 Oct 17,2,Monash University,Port Melbourne,No. 2,James McLaren,Emile Brys,James McLaren,8-5,8,5,1,0,Completed,true,false,false
+AP018024,14 Oct 17,2,Monash University,Port Melbourne,No. 3,Sean Kozer,Paul Higgins,Paul Higgins,0-8,0,8,0,1,Completed,true,false,false
+AP018024,14 Oct 17,2,Monash University,Port Melbourne,No. 4,Kien Nguyen,Josh Kempin,Josh Kempin,5-8,5,8,0,1,Completed,true,false,false
+AP018032,21 Oct 17,3,Dendy Park 2,Tennis World MP,No. 1,Bruce Watkins,Tyler Velasquez,Bruce Watkins,8-0,8,0,1,0,Completed,true,false,false
+AP018032,21 Oct 17,3,Dendy Park 2,Tennis World MP,No. 2,Peter Fleming,Aditya Wichasono,Aditya Wichasono,4-8,4,8,0,1,Completed,true,false,true
+AP018032,21 Oct 17,3,Dendy Park 2,Tennis World MP,No. 3,Anthony Saul,Robert Raichici,Anthony Saul,8-5,8,5,1,0,Completed,true,false,false
+AP018032,21 Oct 17,3,Dendy Park 2,Tennis World MP,No. 4,Chris Trotter,Ethan Vgo,Chris Trotter,8-0,8,0,1,0,Completed,true,false,false
+AP018033,21 Oct 17,3,Royal South Yarra,Dendy Park 1,No. 1,Simon McNamara,Nathan Gatti,Simon McNamara,8-7,8,7,1,0,Completed,true,false,false
+AP018033,21 Oct 17,3,Royal South Yarra,Dendy Park 1,No. 2,Jeremy Nestle,Chris Odgers,Chris Odgers,3-8,3,8,0,1,Completed,true,false,false
+AP018033,21 Oct 17,3,Royal South Yarra,Dendy Park 1,No. 3,Ollie McNamara,Trevor Cohen,Trevor Cohen,0-8,0,8,0,1,Completed,true,false,false
+AP018033,21 Oct 17,3,Royal South Yarra,Dendy Park 1,No. 4,Michael Kirwan,Bryan Lehane,Bryan Lehane,2-8,2,8,0,1,Completed,true,false,false
+AP018034,21 Oct 17,3,Port Melbourne,Carmelite,No. 1,Andrew Ross,Jack McLean,Andrew Ross,8-7,8,7,1,0,Completed,true,false,false
+AP018034,21 Oct 17,3,Port Melbourne,Carmelite,No. 2,Dean Womersley,Louis Horsley,Louis Horsley,4-8,4,8,0,1,Completed,true,false,false
+AP018034,21 Oct 17,3,Port Melbourne,Carmelite,No. 3,Newnest Addakula,Giancarlo Siclari,Newnest Addakula,8-2,8,2,1,0,Completed,true,false,false
+AP018034,21 Oct 17,3,Port Melbourne,Carmelite,No. 4,Josh Kempin,Mitchell Carlisle,Mitchell Carlisle,5-8,5,8,0,1,Completed,true,false,false
+AP018042,28 Oct 17,4,Monash University,Dendy Park 2,No. 1,Shaun Yeoh,Bruce Watkins,Bruce Watkins,4-8,4,8,0,1,Completed,true,false,false
+AP018042,28 Oct 17,4,Monash University,Dendy Park 2,No. 2,Philip Phung,Peter Fleming,Philip Phung,8-4,8,4,1,0,Completed,true,false,false
+AP018042,28 Oct 17,4,Monash University,Dendy Park 2,No. 3,Lionel Yun,Chris Trotter,Chris Trotter,1-8,1,8,0,1,Completed,true,false,false
+AP018042,28 Oct 17,4,Monash University,Dendy Park 2,No. 4,Kien Nguyen,John Riley,John Riley,7-8,7,8,0,1,Completed,true,false,false
+AP018043,28 Oct 17,4,Tennis World MP,Royal South Yarra,No. 1,Luke Perilli,Tom Richardson,Tom Richardson,0-8,0,8,0,1,Completed,true,false,false
+AP018043,28 Oct 17,4,Tennis World MP,Royal South Yarra,No. 2,Mil Urban,David Dunstan,Mil Urban,8-1,8,1,1,0,Completed,true,false,false
+AP018043,28 Oct 17,4,Tennis World MP,Royal South Yarra,No. 3,Harrison Raffaele,Michael Kirwan,Harrison Raffaele,8-3,8,3,1,0,Completed,true,false,false
+AP018043,28 Oct 17,4,Tennis World MP,Royal South Yarra,No. 4,Liam Duncan,Lachlan Francis,Liam Duncan,8-0,8,0,1,0,Completed,true,false,false
+AP018044,28 Oct 17,4,Dendy Park 1,Port Melbourne,No. 1,Nathan Gatti,Andrew Ross,Andrew Ross,2-8,2,8,0,1,Completed,true,false,false
+AP018044,28 Oct 17,4,Dendy Park 1,Port Melbourne,No. 2,Charlie Sinclair,Espie Balila,Charlie Sinclair,8-7,8,7,1,0,Completed,true,false,false
+AP018044,28 Oct 17,4,Dendy Park 1,Port Melbourne,No. 3,Oliver Evans,Emile Brys,Oliver Evans,8-3,8,3,1,0,Completed,true,false,false
+AP018044,28 Oct 17,4,Dendy Park 1,Port Melbourne,No. 4,Dimitri Oxenenko,Josh Kempin,Dimitri Oxenenko,8-5,8,5,1,0,Completed,true,false,false
+AP018052,11 Nov 17,5,Tennis World MP,Monash University,No. 1,Mil Urban,Shaun Yeoh,Mil Urban,8-4,8,4,1,0,Completed,true,false,false
+AP018052,11 Nov 17,5,Tennis World MP,Monash University,No. 2,Luke Perilli,Philip Phung,Philip Phung,0-8,0,8,0,1,Completed,true,false,false
+AP018052,11 Nov 17,5,Tennis World MP,Monash University,No. 3,Robert Raichici,Lionel Yun,Robert Raichici,8-7,8,7,1,0,Completed,true,false,false
+AP018052,11 Nov 17,5,Tennis World MP,Monash University,No. 4,Harrison Raffaele,Sean Kozer,Harrison Raffaele,8-0,8,0,1,0,Completed,true,false,false
+AP018053,11 Nov 17,5,Carmelite,Dendy Park 1,No. 1,Matt Balla,Nathan Gatti,Nathan Gatti,2-8,2,8,0,1,Completed,true,false,false
+AP018053,11 Nov 17,5,Carmelite,Dendy Park 1,No. 2,Giancarlo Siclari,Trevor Cohen,Giancarlo Siclari,8-3,8,3,1,0,Completed,true,false,false
+AP018053,11 Nov 17,5,Carmelite,Dendy Park 1,No. 3,Mitchell Carlisle,Oliver Evans,Mitchell Carlisle,8-3,8,3,1,0,Completed,true,false,false
+AP018053,11 Nov 17,5,Carmelite,Dendy Park 1,No. 4,Michael Junkovic,Dimitri Oxenenko,Michael Junkovic,8-3,8,3,1,0,Completed,true,false,false
+AP018061,18 Nov 17,6,Dendy Park 2,Royal South Yarra,No. 1,Bruce Watkins,Sean Wilson,Bruce Watkins,8-4,8,4,1,0,Completed,true,false,false
+AP018061,18 Nov 17,6,Dendy Park 2,Royal South Yarra,No. 2,Peter Fleming,David Dunstan,Peter Fleming,8-3,8,3,1,0,Completed,true,false,false
+AP018061,18 Nov 17,6,Dendy Park 2,Royal South Yarra,No. 3,Bill Craig,Mat Hayward,Mat Hayward,5-8,5,8,0,1,Completed,true,false,false
+AP018061,18 Nov 17,6,Dendy Park 2,Royal South Yarra,No. 4,Alan Kirby,Lachlan Francis,Alan Kirby,8-0,8,0,1,0,Completed,true,false,false
+AP018063,18 Nov 17,6,Monash University,Carmelite,No. 1,Shaun Yeoh,Victor Blitsas,Victor Blitsas,2-8,2,8,0,1,Completed,true,false,false
+AP018063,18 Nov 17,6,Monash University,Carmelite,No. 2,Philip Phung,Matt Balla,Philip Phung,8-5,8,5,1,0,Completed,true,false,false
+AP018063,18 Nov 17,6,Monash University,Carmelite,No. 3,James McLaren,Mark Doherty,Mark Doherty,2-8,2,8,0,1,Completed,true,false,false
+AP018063,18 Nov 17,6,Monash University,Carmelite,No. 4,Kien Nguyen,Giancarlo Siclari,Kien Nguyen,8-5,8,5,1,0,Completed,true,false,false
+AP018064,18 Nov 17,6,Dendy Park 1,Tennis World MP,No. 1,Nathan Gatti,Jese Medina-Suarez,Nathan Gatti,8-6,8,6,1,0,Completed,true,false,false
+AP018064,18 Nov 17,6,Dendy Park 1,Tennis World MP,No. 2,Chris Odgers,Luke Perilli,Chris Odgers,8-3,8,3,1,0,Completed,true,false,false
+AP018064,18 Nov 17,6,Dendy Park 1,Tennis World MP,No. 3,Oliver Evans,Robert Raichici,Robert Raichici,6-8,6,8,0,1,Completed,true,false,false
+AP018064,18 Nov 17,6,Dendy Park 1,Tennis World MP,No. 4,Dimitri Oxenenko,Harrison Raffaele,Dimitri Oxenenko,8-3,8,3,1,0,Completed,true,false,false
+AP018072,25 Nov 17,7,Dendy Park 2,Port Melbourne,No. 1,Ian Wilkinson,Hugh Rennie,Ian Wilkinson,8-0,8,0,1,0,Completed,true,false,false
+AP018072,25 Nov 17,7,Dendy Park 2,Port Melbourne,No. 2,Anthony Saul,[Unnamed emergency — TROLS AP018072 away code 2],Anthony Saul,8-0,8,0,1,0,Completed,false,false,true
+AP018072,25 Nov 17,7,Dendy Park 2,Port Melbourne,No. 3,Chris Trotter,Emile Brys,Chris Trotter,8-4,8,4,1,0,Completed,true,false,false
+AP018072,25 Nov 17,7,Dendy Park 2,Port Melbourne,No. 4,John Riley,Josh Kempin,John Riley,8-3,8,3,1,0,Completed,true,false,false
+AP018073,25 Nov 17,7,Tennis World MP,Carmelite,No. 1,Mil Urban,Louis Horsley,Louis Horsley,6-8,6,8,0,1,Completed,true,false,false
+AP018073,25 Nov 17,7,Tennis World MP,Carmelite,No. 2,Jese Medina-Suarez,Matt Balla,Matt Balla,0-8,0,8,0,1,Completed,true,false,false
+AP018073,25 Nov 17,7,Tennis World MP,Carmelite,No. 3,Luke Perilli,Giancarlo Siclari,Giancarlo Siclari,5-8,5,8,0,1,Completed,true,false,false
+AP018073,25 Nov 17,7,Tennis World MP,Carmelite,No. 4,Robert Raichici,Sait Parlic,Sait Parlic,2-8,2,8,0,1,Completed,true,false,false
+AP018074,25 Nov 17,7,Monash University,Dendy Park 1,No. 1,James McLaren,Trevor Cohen,James McLaren,8-2,8,2,1,0,Completed,true,false,false
+AP018074,25 Nov 17,7,Monash University,Dendy Park 1,No. 2,Lionel Yun,Oliver Evans,Oliver Evans,3-8,3,8,0,1,Completed,true,false,false
+AP018074,25 Nov 17,7,Monash University,Dendy Park 1,No. 3,Sean Kozer,Bryan Lehane,Bryan Lehane,2-8,2,8,0,1,Completed,true,false,false
+AP018074,25 Nov 17,7,Monash University,Dendy Park 1,No. 4,Kien Nguyen,Lubing Liu,Kien Nguyen,8-4,8,4,1,0,Completed,true,false,false
+AP018092,09 Dec 17,9,Dendy Park 2,Dendy Park 1,No. 1,Ian Wilkinson,Nathan Gatti,Nathan Gatti,3-8,3,8,0,1,Completed,true,false,false
+AP018092,09 Dec 17,9,Dendy Park 2,Dendy Park 1,No. 2,Peter Fleming,Chris Odgers,Chris Odgers,5-8,5,8,0,1,Completed,true,false,false
+AP018092,09 Dec 17,9,Dendy Park 2,Dendy Park 1,No. 3,Chris Trotter,Trevor Cohen,Chris Trotter,8-7,8,7,1,0,Completed,true,false,false
+AP018092,09 Dec 17,9,Dendy Park 2,Dendy Park 1,No. 4,John Riley,Lubing Liu,John Riley,8-7,8,7,1,0,Completed,true,false,false
+AP018093,09 Dec 17,9,Royal South Yarra,Carmelite,No. 1,Simon McNamara,Louis Horsley,Louis Horsley,0-8,0,8,0,1,Completed,true,false,false
+AP018093,09 Dec 17,9,Royal South Yarra,Carmelite,No. 2,Hamish Francis,Matt Balla,Matt Balla,5-8,5,8,0,1,Completed,true,false,false
+AP018093,09 Dec 17,9,Royal South Yarra,Carmelite,No. 3,Jeremy Nestle,Simon Kerwin,Simon Kerwin,6-8,6,8,0,1,Completed,true,false,false
+AP018093,09 Dec 17,9,Royal South Yarra,Carmelite,No. 4,Michael Kirwan,Michael Junkovic,Michael Junkovic,0-8,0,8,0,1,Completed,true,false,false
+AP018094,09 Dec 17,9,Port Melbourne,Monash University,No. 1,Andrew Ross,Philip Phung,Andrew Ross,8-1,8,1,1,0,Completed,true,false,false
+AP018094,09 Dec 17,9,Port Melbourne,Monash University,No. 2,Espie Balila,James McLaren,Espie Balila,8-3,8,3,1,0,Completed,true,false,false
+AP018094,09 Dec 17,9,Port Melbourne,Monash University,No. 3,David Thompson,Sean Kozer,Sean Kozer,0-8,0,8,0,1,Completed,true,false,false
+AP018094,09 Dec 17,9,Port Melbourne,Monash University,No. 4,Hugh Rennie,Kien Nguyen,Kien Nguyen,6-8,6,8,0,1,Completed,true,false,false
+AP018104,16 Dec 17,10,Carmelite,Port Melbourne,No. 1,Louis Horsley,Andrew Ross,Andrew Ross,5-8,5,8,0,1,Completed,true,false,false
+AP018104,16 Dec 17,10,Carmelite,Port Melbourne,No. 2,Matt Balla,Espie Balila,Espie Balila,5-8,5,8,0,1,Completed,true,false,false
+AP018104,16 Dec 17,10,Carmelite,Port Melbourne,No. 3,Simon Kerwin,Hugh Rennie,Hugh Rennie,6-8,6,8,0,1,Completed,true,false,false
+AP018104,16 Dec 17,10,Carmelite,Port Melbourne,No. 4,Giancarlo Siclari,Josh Kempin,Giancarlo Siclari,8-1,8,1,1,0,Completed,true,false,false
+AP018112,03 Feb 18,11,Dendy Park 2,Monash University,No. 1,Ian Wilkinson,Philip Phung,Philip Phung,6-8,6,8,0,1,Completed,true,false,false
+AP018112,03 Feb 18,11,Dendy Park 2,Monash University,No. 2,Peter Fleming,James McLaren,Peter Fleming,8-6,8,6,1,0,Completed,true,false,false
+AP018112,03 Feb 18,11,Dendy Park 2,Monash University,No. 3,Anthony Saul,Sean Kozer,Anthony Saul,8-3,8,3,1,0,Completed,true,false,false
+AP018112,03 Feb 18,11,Dendy Park 2,Monash University,No. 4,John Riley,Alex Lin,Alex Lin,5-8,5,8,0,1,Completed,true,false,false
+AP018113,03 Feb 18,11,Royal South Yarra,Tennis World MP,No. 1,Simon McNamara,Jese Medina-Suarez,Simon McNamara,8-3,8,3,1,0,Completed,true,false,false
+AP018113,03 Feb 18,11,Royal South Yarra,Tennis World MP,No. 2,David Dunstan,William Tolikas,William Tolikas,7-8,7,8,0,1,Completed,true,false,false
+AP018113,03 Feb 18,11,Royal South Yarra,Tennis World MP,No. 3,Michael Kirwan,Luke Perilli,Michael Kirwan,8-1,8,1,1,0,Completed,true,false,false
+AP018113,03 Feb 18,11,Royal South Yarra,Tennis World MP,No. 4,Lachlan Francis,Harrison Raffaele,Harrison Raffaele,0-8,0,8,0,1,Completed,true,false,false
+AP018114,03 Feb 18,11,Port Melbourne,Dendy Park 1,No. 1,Andrew Ross,Chris Odgers,Andrew Ross,8-1,8,1,1,0,Completed,true,false,false
+AP018114,03 Feb 18,11,Port Melbourne,Dendy Park 1,No. 2,Espie Balila,Trevor Cohen,Espie Balila,8-5,8,5,1,0,Completed,true,false,false
+AP018114,03 Feb 18,11,Port Melbourne,Dendy Park 1,No. 3,Hugh Rennie,Oliver Evans,Oliver Evans,2-8,2,8,0,1,Completed,true,false,false
+AP018114,03 Feb 18,11,Port Melbourne,Dendy Park 1,No. 4,Emile Brys,Bryan Lehane,Emile Brys,8-5,8,5,1,0,Completed,true,false,false
+AP018121,10 Feb 18,12,Port Melbourne,Royal South Yarra,No. 1,Andrew Ross,Simon McNamara,Andrew Ross,8-6,8,6,1,0,Completed,true,false,false
+AP018121,10 Feb 18,12,Port Melbourne,Royal South Yarra,No. 2,Espie Balila,David Dunstan,Espie Balila,8-0,8,0,1,0,Completed,true,false,false
+AP018121,10 Feb 18,12,Port Melbourne,Royal South Yarra,No. 3,Hugh Rennie,Lachlan Francis,Hugh Rennie,8-0,8,0,1,0,Completed,true,false,false
+AP018121,10 Feb 18,12,Port Melbourne,Royal South Yarra,No. 4,Newnest Addakula,Michael Kirwan,Newnest Addakula,8-0,8,0,1,0,Completed,true,false,false
+AP018122,10 Feb 18,12,Monash University,Tennis World MP,No. 1,James McLaren,Mil Urban,Mil Urban,4-8,4,8,0,1,Completed,true,false,false
+AP018122,10 Feb 18,12,Monash University,Tennis World MP,No. 2,Lionel Yun,Jese Medina-Suarez,Lionel Yun,8-0,8,0,1,0,Completed,true,false,false
+AP018122,10 Feb 18,12,Monash University,Tennis World MP,No. 3,Sean Kozer,Harrison Raffaele,Harrison Raffaele,3-8,3,8,0,1,Completed,true,false,false
+AP018122,10 Feb 18,12,Monash University,Tennis World MP,No. 4,Alex Lin,Dror Collins,Dror Collins,3-8,3,8,0,1,Completed,true,false,false
+AP018123,10 Feb 18,12,Dendy Park 1,Carmelite,No. 1,Nathan Gatti,Ben Kirchet,Nathan Gatti,8-1,8,1,1,0,Completed,true,false,false
+AP018123,10 Feb 18,12,Dendy Park 1,Carmelite,No. 2,[Unnamed emergency — TROLS AP018123 home code 2],Jack McLean,Jack McLean,0-8,0,8,0,1,Completed,false,true,false
+AP018123,10 Feb 18,12,Dendy Park 1,Carmelite,No. 3,Chris Odgers,Louis Horsley,Louis Horsley,0-8,0,8,0,1,Completed,true,false,false
+AP018123,10 Feb 18,12,Dendy Park 1,Carmelite,No. 4,Oliver Evans,Michael Junkovic,Oliver Evans,8-3,8,3,1,0,Completed,true,false,false
+AP018133,17 Feb 18,13,Carmelite,Monash University,No. 1,Louis Horsley,Shaun Yeoh,Louis Horsley,8-3,8,3,1,0,Completed,true,false,false
+AP018133,17 Feb 18,13,Carmelite,Monash University,No. 2,Matt Balla,Philip Phung,Matt Balla,8-0,8,0,1,0,Completed,true,false,false
+AP018133,17 Feb 18,13,Carmelite,Monash University,No. 3,Mark Doherty,Lionel Yun,Mark Doherty,8-2,8,2,1,0,Completed,true,false,false
+AP018133,17 Feb 18,13,Carmelite,Monash University,No. 4,Michael Junkovic,Sean Kozer,Michael Junkovic,8-2,8,2,1,0,Completed,true,false,false
+AP018134,17 Feb 18,13,Tennis World MP,Dendy Park 1,No. 1,Mil Urban,Nathan Gatti,Mil Urban,8-2,8,2,1,0,Completed,true,false,false
+AP018134,17 Feb 18,13,Tennis World MP,Dendy Park 1,No. 2,Jese Medina-Suarez,Chris Odgers,Chris Odgers,0-8,0,8,0,1,Completed,true,false,false
+AP018134,17 Feb 18,13,Tennis World MP,Dendy Park 1,No. 3,Luke Perilli,Oliver Evans,Oliver Evans,5-8,5,8,0,1,Completed,true,false,false
+AP018134,17 Feb 18,13,Tennis World MP,Dendy Park 1,No. 4,Harrison Raffaele,Bryan Lehane,Bryan Lehane,5-8,5,8,0,1,Completed,true,false,false
+AP018142,24 Feb 18,14,Port Melbourne,Dendy Park 2,No. 1,Andrew Ross,Bruce Watkins,Andrew Ross,8-4,8,4,1,0,Completed,true,false,false
+AP018142,24 Feb 18,14,Port Melbourne,Dendy Park 2,No. 2,Espie Balila,Peter Fleming,Espie Balila,8-3,8,3,1,0,Completed,true,false,false
+AP018142,24 Feb 18,14,Port Melbourne,Dendy Park 2,No. 3,Hugh Rennie,Chris Trotter,Hugh Rennie,8-6,8,6,1,0,Completed,true,false,false
+AP018142,24 Feb 18,14,Port Melbourne,Dendy Park 2,No. 4,David Thompson,Alan Kirby,Alan Kirby,0-8,0,8,0,1,Completed,true,false,false
+AP018143,24 Feb 18,14,Carmelite,Tennis World MP,No. 1,Jack McLean,Mil Urban,Jack McLean,8-4,8,4,1,0,Completed,true,false,false
+AP018143,24 Feb 18,14,Carmelite,Tennis World MP,No. 2,Victor Blitsas,Luke Perilli,Victor Blitsas,8-0,8,0,1,0,Completed,true,false,false
+AP018143,24 Feb 18,14,Carmelite,Tennis World MP,No. 3,Giancarlo Siclari,Harrison Raffaele,Harrison Raffaele,7-8,7,8,0,1,Completed,true,false,false
+AP018143,24 Feb 18,14,Carmelite,Tennis World MP,No. 4,Michael Junkovic,Filip Milosh,Filip Milosh,4-8,4,8,0,1,Completed,true,false,false
+AP018144,24 Feb 18,14,Dendy Park 1,Monash University,No. 1,Chris Odgers,Shaun Yeoh,Chris Odgers,8-6,8,6,1,0,Completed,true,false,false
+AP018144,24 Feb 18,14,Dendy Park 1,Monash University,No. 2,Trevor Cohen,James McLaren,James McLaren,7-8,7,8,0,1,Completed,true,false,false
+AP018144,24 Feb 18,14,Dendy Park 1,Monash University,No. 3,Oliver Evans,Lionel Yun,Oliver Evans,8-1,8,1,1,0,Completed,true,false,false
+AP018144,24 Feb 18,14,Dendy Park 1,Monash University,No. 4,Bryan Lehane,Sean Kozer,Bryan Lehane,8-3,8,3,1,0,Completed,true,false,false
+AP018301,,16,Carmelite,Dendy Park 2,No. 1,Victor Blitsas,Bruce Watkins,Victor Blitsas,8-4,8,4,1,0,Completed,true,false,false
+AP018301,,16,Carmelite,Dendy Park 2,No. 2,Matt Balla,Peter Fleming,Matt Balla,8-5,8,5,1,0,Completed,true,false,false
+AP018301,,16,Carmelite,Dendy Park 2,No. 3,Mark Doherty,Anthony Saul,Mark Doherty,8-3,8,3,1,0,Completed,true,false,false
+AP018301,,16,Carmelite,Dendy Park 2,No. 4,Michael Junkovic,Chris Trotter,Michael Junkovic,8-3,8,3,1,0,Completed,true,false,false
+AP018302,,16,Port Melbourne,Dendy Park 1,No. 1,Andrew Ross,Nathan Gatti,Andrew Ross,8-5,8,5,1,0,Completed,true,false,false
+AP018302,,16,Port Melbourne,Dendy Park 1,No. 2,Espie Balila,Trevor Cohen,Espie Balila,8-4,8,4,1,0,Completed,true,false,false
+AP018302,,16,Port Melbourne,Dendy Park 1,No. 3,Hugh Rennie,Oliver Evans,Hugh Rennie,8-4,8,4,1,0,Completed,true,false,false
+AP018302,,16,Port Melbourne,Dendy Park 1,No. 4,Newnest Addakula,Bryan Lehane,Newnest Addakula,8-3,8,3,1,0,Completed,true,false,false
+AP018311,,16,Dendy Park 2,Port Melbourne,No. 1,Bruce Watkins,Andrew Ross,Andrew Ross,4-8,4,8,0,1,Completed,true,false,false
+AP018311,,16,Dendy Park 2,Port Melbourne,No. 2,Ian Wilkinson,Espie Balila,Espie Balila,4-8,4,8,0,1,Completed,true,false,false
+AP018311,,16,Dendy Park 2,Port Melbourne,No. 3,Peter Fleming,Hugh Rennie,Hugh Rennie,1-8,1,8,0,1,Completed,true,false,false
+AP018311,,16,Dendy Park 2,Port Melbourne,No. 4,Chris Trotter,Newnest Addakula,Newnest Addakula,3-8,3,8,0,1,Completed,true,false,false
+AP018321,,17,Carmelite,Port Melbourne,No. 1,Victor Blitsas,Andrew Ross,Andrew Ross,6-8,6,8,0,1,Completed,true,false,false
+AP018321,,17,Carmelite,Port Melbourne,No. 2,Louis Horsley,Espie Balila,Espie Balila,2-8,2,8,0,1,Completed,true,false,false
+AP018321,,17,Carmelite,Port Melbourne,No. 3,Mark Doherty,Hugh Rennie,Mark Doherty,8-5,8,5,1,0,Completed,true,false,false
+AP018321,,17,Carmelite,Port Melbourne,No. 4,Giancarlo Siclari,David P7 Kupfer,Giancarlo Siclari,8-3,8,3,1,0,Completed,true,false,true

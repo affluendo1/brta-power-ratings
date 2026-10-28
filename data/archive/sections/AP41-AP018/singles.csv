@@ -1,0 +1,125 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP018011,14 Nov 20,1,Elsternwick Park,Monash University,No. 1,Chris Norris,Ken Kennedy,Ken Kennedy,2-8,2,8,0,1,Completed,true,false,false
+AP018011,14 Nov 20,1,Elsternwick Park,Monash University,No. 2,Matt Anstee,James McLaren,Matt Anstee,8-4,8,4,1,0,Completed,true,false,false
+AP018011,14 Nov 20,1,Elsternwick Park,Monash University,No. 3,Simon Corrie,Philip Phung,Philip Phung,4-8,4,8,0,1,Completed,true,false,false
+AP018011,14 Nov 20,1,Elsternwick Park,Monash University,No. 4,Eyal Zeira,David Bincu,Eyal Zeira,8-1,8,1,1,0,Completed,true,false,true
+AP018012,14 Nov 20,1,East Malvern,Caulfield Rec,No. 1,Matt Bourke,Adam Klas,Adam Klas,1-8,1,8,0,1,Completed,true,false,false
+AP018012,14 Nov 20,1,East Malvern,Caulfield Rec,No. 2,Paul Tamburro,Josh Dosser,Josh Dosser,1-8,1,8,0,1,Completed,true,false,false
+AP018012,14 Nov 20,1,East Malvern,Caulfield Rec,No. 3,Heath Poustie,Nigel Appelboom,Heath Poustie,8-5,8,5,1,0,Completed,true,false,false
+AP018012,14 Nov 20,1,East Malvern,Caulfield Rec,No. 4,John McCristal,Tanu Bhaskar,Tanu Bhaskar,2-8,2,8,0,1,Completed,true,false,false
+AP018013,14 Nov 20,1,Le Page,BLTC,No. 1,Nathan Coombes,Lochlan Friedrich,Nathan Coombes,8-1,8,1,1,0,Completed,true,false,false
+AP018013,14 Nov 20,1,Le Page,BLTC,No. 2,Sean O'Meara,Tim McCartney,Sean O'Meara,8-2,8,2,1,0,Completed,true,false,false
+AP018013,14 Nov 20,1,Le Page,BLTC,No. 3,Tony Sofo,James Dobson,Tony Sofo,8-3,8,3,1,0,Completed,true,false,false
+AP018013,14 Nov 20,1,Le Page,BLTC,No. 4,Brian Govan,Will Vucic,Brian Govan,8-0,8,0,1,0,Completed,true,false,false
+AP018021,21 Nov 20,2,BLTC,Elsternwick Park,No. 1,Lochlan Friedrich,Chris Norris,Lochlan Friedrich,8-2,8,2,1,0,Completed,true,false,false
+AP018021,21 Nov 20,2,BLTC,Elsternwick Park,No. 2,Will Vucic,Alex Pun,Alex Pun,2-8,2,8,0,1,Completed,true,false,false
+AP018021,21 Nov 20,2,BLTC,Elsternwick Park,No. 3,James Dobson,Simon Corrie,Simon Corrie,6-8,6,8,0,1,Completed,true,false,false
+AP018021,21 Nov 20,2,BLTC,Elsternwick Park,No. 4,Tim McCartney,Eyal Zeira,Tim McCartney,8-5,8,5,1,0,Completed,true,false,false
+AP018022,21 Nov 20,2,Caulfield Rec,Le Page,No. 1,Adam Klas,Nathan Coombes,Nathan Coombes,1-8,1,8,0,1,Completed,true,false,false
+AP018022,21 Nov 20,2,Caulfield Rec,Le Page,No. 2,Josh Dosser,Trevor Hastings,Josh Dosser,8-5,8,5,1,0,Completed,true,false,false
+AP018022,21 Nov 20,2,Caulfield Rec,Le Page,No. 3,Tanu Bhaskar,Tony Sofo,Tony Sofo,4-8,4,8,0,1,Completed,true,false,false
+AP018022,21 Nov 20,2,Caulfield Rec,Le Page,No. 4,Matthew Krieger,Brian Govan,Brian Govan,4-8,4,8,0,1,Completed,true,false,false
+AP018023,21 Nov 20,2,Monash University,East Malvern,No. 1,Ken Kennedy,Matt Bourke,Ken Kennedy,8-6,8,6,1,0,Completed,true,false,false
+AP018023,21 Nov 20,2,Monash University,East Malvern,No. 2,James McLaren,Paul Tamburro,James McLaren,8-7,8,7,1,0,Completed,true,false,false
+AP018023,21 Nov 20,2,Monash University,East Malvern,No. 3,Philip Phung,John McCristal,Philip Phung,8-2,8,2,1,0,Completed,true,false,false
+AP018023,21 Nov 20,2,Monash University,East Malvern,No. 4,David Paicu,Chris Woods,Chris Woods,4-8,4,8,0,1,Completed,true,false,false
+AP018031,28 Nov 20,3,Elsternwick Park,East Malvern,No. 1,Chris Norris,Martin Hill,Martin Hill,2-8,2,8,0,1,Completed,true,false,false
+AP018031,28 Nov 20,3,Elsternwick Park,East Malvern,No. 2,Matt Anstee,Greg Irvine,Matt Anstee,8-3,8,3,1,0,Completed,true,false,false
+AP018031,28 Nov 20,3,Elsternwick Park,East Malvern,No. 3,Simon Corrie,Heath Poustie,Heath Poustie,5-8,5,8,0,1,Completed,true,false,false
+AP018031,28 Nov 20,3,Elsternwick Park,East Malvern,No. 4,Eyal Zeira,John McCristal,Eyal Zeira,8-2,8,2,1,0,Completed,true,false,false
+AP018032,28 Nov 20,3,Le Page,Monash University,No. 1,Nathan Coombes,Ken Kennedy,Nathan Coombes,8-0,8,0,1,0,Completed,true,false,false
+AP018032,28 Nov 20,3,Le Page,Monash University,No. 2,Trevor Hastings,James McLaren,James McLaren,7-8,7,8,0,1,Completed,true,false,false
+AP018032,28 Nov 20,3,Le Page,Monash University,No. 3,Lauren Gelbert,Philip Phung,Philip Phung,4-8,4,8,0,1,Completed,true,false,false
+AP018032,28 Nov 20,3,Le Page,Monash University,No. 4,Brian Govan,David Paicu,Brian Govan,8-6,8,6,1,0,Completed,true,false,false
+AP018033,28 Nov 20,3,BLTC,Caulfield Rec,No. 1,Lachie King,Adam Klas,Adam Klas,5-8,5,8,0,1,Completed,true,true,false
+AP018033,28 Nov 20,3,BLTC,Caulfield Rec,No. 2,Will Vucic,Josh Dosser,Josh Dosser,2-8,2,8,0,1,Completed,true,false,false
+AP018033,28 Nov 20,3,BLTC,Caulfield Rec,No. 3,James Dobson,Nigel Appelboom,Nigel Appelboom,1-8,1,8,0,1,Completed,true,false,false
+AP018033,28 Nov 20,3,BLTC,Caulfield Rec,No. 4,Oli Klima,Miguel Sison,Oli Klima,8-1,8,1,1,0,Completed,true,true,true
+AP018041,05 Dec 20,4,Caulfield Rec,Elsternwick Park,No. 1,Adam Klas,Matt Anstee,Adam Klas,8-2,8,2,1,0,Completed,true,false,false
+AP018041,05 Dec 20,4,Caulfield Rec,Elsternwick Park,No. 2,Nigel Appelboom,Alex Pun,Alex Pun,5-8,5,8,0,1,Completed,true,false,false
+AP018041,05 Dec 20,4,Caulfield Rec,Elsternwick Park,No. 3,Tanu Bhaskar,Simon Corrie,Tanu Bhaskar,8-3,8,3,1,0,Completed,true,false,false
+AP018041,05 Dec 20,4,Caulfield Rec,Elsternwick Park,No. 4,Miguel Sison,Eyal Zeira,Eyal Zeira,1-8,1,8,0,1,Completed,true,true,false
+AP018042,05 Dec 20,4,Monash University,BLTC,No. 1,Ken Kennedy,Lochlan Friedrich,Lochlan Friedrich,6-8,6,8,0,1,Completed,true,false,false
+AP018042,05 Dec 20,4,Monash University,BLTC,No. 2,James McLaren,James Dobson,James McLaren,8-1,8,1,1,0,Completed,true,false,false
+AP018042,05 Dec 20,4,Monash University,BLTC,No. 3,Philip Phung,Tim McCartney,Philip Phung,8-2,8,2,1,0,Completed,true,false,false
+AP018042,05 Dec 20,4,Monash University,BLTC,No. 4,David Paicu,Darcy Henschke,David Paicu,8-6,8,6,1,0,Completed,true,false,true
+AP018043,05 Dec 20,4,East Malvern,Le Page,No. 1,Martin Hill,Sean O'Meara,Sean O'Meara,0-8,0,8,0,1,Completed,true,false,false
+AP018043,05 Dec 20,4,East Malvern,Le Page,No. 2,Heath Poustie,Trevor Hastings,Trevor Hastings,6-8,6,8,0,1,Completed,true,false,false
+AP018043,05 Dec 20,4,East Malvern,Le Page,No. 3,Chris Woods,Tony Sofo,Tony Sofo,2-8,2,8,0,1,Completed,true,false,false
+AP018043,05 Dec 20,4,East Malvern,Le Page,No. 4,John McCristal,Lauren Gelbert,Lauren Gelbert,4-8,4,8,0,1,Completed,true,false,false
+AP018051,12 Dec 20,5,Elsternwick Park,Le Page,No. 1,Chris Norris,Nathan Coombes,Nathan Coombes,3-8,3,8,0,1,Completed,true,false,false
+AP018051,12 Dec 20,5,Elsternwick Park,Le Page,No. 2,Matt Anstee,Sean O'Meara,Sean O'Meara,1-8,1,8,0,1,Completed,true,false,false
+AP018051,12 Dec 20,5,Elsternwick Park,Le Page,No. 3,Alex Pun,Tony Sofo,Alex Pun,8-6,8,6,1,0,Completed,true,false,false
+AP018051,12 Dec 20,5,Elsternwick Park,Le Page,No. 4,Simon Corrie,Lauren Gelbert,Simon Corrie,8-5,8,5,1,0,Completed,true,false,false
+AP018052,12 Dec 20,5,Caulfield Rec,Monash University,No. 1,Adam Klas,Ken Kennedy,Adam Klas,8-3,8,3,1,0,Completed,true,false,false
+AP018052,12 Dec 20,5,Caulfield Rec,Monash University,No. 2,Nigel Appelboom,James McLaren,James McLaren,2-8,2,8,0,1,Completed,true,false,false
+AP018052,12 Dec 20,5,Caulfield Rec,Monash University,No. 3,Tanu Bhaskar,Philip Phung,Tanu Bhaskar,8-6,8,6,1,0,Completed,true,false,false
+AP018052,12 Dec 20,5,Caulfield Rec,Monash University,No. 4,Matthew Krieger,David Paicu,Matthew Krieger,8-6,8,6,1,0,Completed,true,false,false
+AP018053,12 Dec 20,5,BLTC,East Malvern,No. 1,Lochlan Friedrich,Matt Bourke,Lochlan Friedrich,8-3,8,3,1,0,Completed,true,false,false
+AP018053,12 Dec 20,5,BLTC,East Malvern,No. 2,Will Vucic,Paul Tamburro,Will Vucic,8-5,8,5,1,0,Completed,true,false,false
+AP018053,12 Dec 20,5,BLTC,East Malvern,No. 3,Tim McCartney,Greg Irvine,Tim McCartney,8-2,8,2,1,0,Completed,true,false,false
+AP018053,12 Dec 20,5,BLTC,East Malvern,No. 4,Oli Klima,Heath Poustie,Heath Poustie,6-8,6,8,0,1,Completed,true,true,false
+AP018061,30 Jan 21,6,Monash University,Elsternwick Park,No. 1,Ken Kennedy,Chris Norris,Chris Norris,5-8,5,8,0,1,Completed,true,false,false
+AP018061,30 Jan 21,6,Monash University,Elsternwick Park,No. 2,James McLaren,Matt Anstee,James McLaren,8-2,8,2,1,0,Completed,true,false,false
+AP018061,30 Jan 21,6,Monash University,Elsternwick Park,No. 3,Philip Phung,Eyal Zeira,Eyal Zeira,6-8,6,8,0,1,Completed,true,false,false
+AP018061,30 Jan 21,6,Monash University,Elsternwick Park,No. 4,David Paicu,Simon Corrie,David Paicu,8-0,8,0,1,0,Completed,true,false,false
+AP018062,30 Jan 21,6,Caulfield Rec,East Malvern,No. 1,Josh Dosser,Martin Hill,Josh Dosser,8-3,8,3,1,0,Completed,true,false,false
+AP018062,30 Jan 21,6,Caulfield Rec,East Malvern,No. 2,Tanu Bhaskar,Matt Bourke,Matt Bourke,5-8,5,8,0,1,Completed,true,false,false
+AP018062,30 Jan 21,6,Caulfield Rec,East Malvern,No. 3,Matt Taylor,Greg Irvine,Matt Taylor,8-3,8,3,1,0,Completed,true,true,false
+AP018062,30 Jan 21,6,Caulfield Rec,East Malvern,No. 4,Miguel Sison,Heath Poustie,Heath Poustie,4-8,4,8,0,1,Completed,true,true,false
+AP018063,30 Jan 21,6,BLTC,Le Page,No. 1,Lochlan Friedrich,Trevor Hastings,Lochlan Friedrich,8-2,8,2,1,0,Completed,true,false,false
+AP018063,30 Jan 21,6,BLTC,Le Page,No. 2,Lachie King,Lauren Gelbert,Lachie King,8-1,8,1,1,0,Completed,true,true,false
+AP018063,30 Jan 21,6,BLTC,Le Page,No. 3,James Dobson,Brian Govan,James Dobson,8-5,8,5,1,0,Completed,true,false,false
+AP018063,30 Jan 21,6,BLTC,Le Page,No. 4,Oli Klima,Kon Chingorev,Kon Chingorev,2-8,2,8,0,1,Completed,true,true,true
+AP018071,06 Feb 21,7,Elsternwick Park,BLTC,No. 1,Chris Norris,Lochlan Friedrich,Lochlan Friedrich,4-8,4,8,0,1,Completed,true,false,false
+AP018071,06 Feb 21,7,Elsternwick Park,BLTC,No. 2,Dan Schulstad,James Dobson,Dan Schulstad,8-4,8,4,1,0,Completed,true,true,false
+AP018071,06 Feb 21,7,Elsternwick Park,BLTC,No. 3,Simon Corrie,Tim McCartney,Tim McCartney,7-8,7,8,0,1,Completed,true,false,false
+AP018071,06 Feb 21,7,Elsternwick Park,BLTC,No. 4,Eyal Zeira,Oli Klima,Oli Klima,5-8,5,8,0,1,Completed,true,false,true
+AP018072,06 Feb 21,7,Le Page,Caulfield Rec,No. 1,Nathan Coombes,Adam Klas,Nathan Coombes,8-1,8,1,1,0,Completed,true,false,false
+AP018072,06 Feb 21,7,Le Page,Caulfield Rec,No. 2,Trevor Hastings,Josh Dosser,Josh Dosser,4-8,4,8,0,1,Completed,true,false,false
+AP018072,06 Feb 21,7,Le Page,Caulfield Rec,No. 3,Tony Sofo,Tanu Bhaskar,Tanu Bhaskar,5-8,5,8,0,1,Completed,true,false,false
+AP018072,06 Feb 21,7,Le Page,Caulfield Rec,No. 4,Brian Govan,Matthew Krieger,Brian Govan,8-6,8,6,1,0,Completed,true,false,false
+AP018073,06 Feb 21,7,East Malvern,Monash University,No. 1,Matt Bourke,Ken Kennedy,Matt Bourke,8-6,8,6,1,0,Completed,true,false,false
+AP018073,06 Feb 21,7,East Malvern,Monash University,No. 2,Heath Poustie,James McLaren,James McLaren,1-8,1,8,0,1,Completed,true,false,false
+AP018073,06 Feb 21,7,East Malvern,Monash University,No. 3,Chris Woods,David Paicu,Chris Woods,8-3,8,3,1,0,Completed,true,false,false
+AP018073,06 Feb 21,7,East Malvern,Monash University,No. 4,John McCristal,Harry Myrans,Harry Myrans,1-8,1,8,0,1,Completed,true,false,true
+AP018081,20 Feb 21,8,East Malvern,Elsternwick Park,No. 1,Martin Hill,Chris Norris,Martin Hill,8-5,8,5,1,0,Completed,true,false,false
+AP018081,20 Feb 21,8,East Malvern,Elsternwick Park,No. 2,Paul Tamburro,Matt Anstee,Matt Anstee,3-8,3,8,0,1,Completed,true,false,false
+AP018081,20 Feb 21,8,East Malvern,Elsternwick Park,No. 3,Greg Irvine,Simon Corrie,Greg Irvine,8-5,8,5,1,0,Completed,true,false,false
+AP018081,20 Feb 21,8,East Malvern,Elsternwick Park,No. 4,Chris Woods,Eyal Zeira,Chris Woods,8-4,8,4,1,0,Completed,true,false,false
+AP018082,20 Feb 21,8,Monash University,Le Page,No. 1,Ken Kennedy,Nathan Coombes,Nathan Coombes,0-8,0,8,0,1,Completed,true,false,false
+AP018082,20 Feb 21,8,Monash University,Le Page,No. 2,James McLaren,Trevor Hastings,James McLaren,8-4,8,4,1,0,Completed,true,false,false
+AP018082,20 Feb 21,8,Monash University,Le Page,No. 3,Philip Phung,Tony Sofo,Tony Sofo,7-8,7,8,0,1,Completed,true,false,false
+AP018082,20 Feb 21,8,Monash University,Le Page,No. 4,David Paicu,Brian Govan,David Paicu,8-2,8,2,1,0,Completed,true,false,false
+AP018083,20 Feb 21,8,Caulfield Rec,BLTC,No. 1,Josh Dosser,Lochlan Friedrich,Josh Dosser,8-2,8,2,1,0,Completed,true,false,false
+AP018083,20 Feb 21,8,Caulfield Rec,BLTC,No. 2,Ian Eddington,Will Vucic,Ian Eddington,8-1,8,1,1,0,Completed,true,true,false
+AP018083,20 Feb 21,8,Caulfield Rec,BLTC,No. 3,Matthew Krieger,James Dobson,James Dobson,1-8,1,8,0,1,Completed,true,false,false
+AP018083,20 Feb 21,8,Caulfield Rec,BLTC,No. 4,Miguel Sison,Tim McCartney,Tim McCartney,4-8,4,8,0,1,Completed,true,true,false
+AP018091,27 Feb 21,9,Elsternwick Park,Caulfield Rec,No. 1,Matt Anstee,Josh Dosser,Josh Dosser,7-8,7,8,0,1,Completed,true,false,false
+AP018091,27 Feb 21,9,Elsternwick Park,Caulfield Rec,No. 2,Rich Buchanan,Roman Medvedev,Rich Buchanan,8-6,8,6,1,0,Completed,true,true,true
+AP018091,27 Feb 21,9,Elsternwick Park,Caulfield Rec,No. 3,Simon Corrie,Ian Eddington,Ian Eddington,2-8,2,8,0,1,Completed,true,false,true
+AP018091,27 Feb 21,9,Elsternwick Park,Caulfield Rec,No. 4,Eyal Zeira,Miguel Sison,Eyal Zeira,8-1,8,1,1,0,Completed,true,false,true
+AP018092,27 Feb 21,9,BLTC,Monash University,No. 1,Will Vucic,Ken Kennedy,Ken Kennedy,3-8,3,8,0,1,Completed,true,false,false
+AP018092,27 Feb 21,9,BLTC,Monash University,No. 2,James Dobson,James McLaren,James McLaren,0-8,0,8,0,1,Completed,true,false,false
+AP018092,27 Feb 21,9,BLTC,Monash University,No. 3,Tim McCartney,Philip Phung,Philip Phung,1-8,1,8,0,1,Completed,true,false,false
+AP018092,27 Feb 21,9,BLTC,Monash University,No. 4,Oli Klima,David Paicu,Oli Klima,8-1,8,1,1,0,Completed,true,true,false
+AP018093,27 Feb 21,9,Le Page,East Malvern,No. 1,Nathan Coombes,Paul Tamburro,Nathan Coombes,8-0,8,0,1,0,Completed,true,false,false
+AP018093,27 Feb 21,9,Le Page,East Malvern,No. 2,Tony Sofo,Greg Irvine,Greg Irvine,7-8,7,8,0,1,Completed,true,false,false
+AP018093,27 Feb 21,9,Le Page,East Malvern,No. 3,Lauren Gelbert,Heath Poustie,Heath Poustie,4-8,4,8,0,1,Completed,true,false,false
+AP018093,27 Feb 21,9,Le Page,East Malvern,No. 4,Brian Govan,John McCristal,Brian Govan,8-5,8,5,1,0,Completed,true,false,false
+AP018101,13 Mar 21,10,Le Page,Elsternwick Park,No. 1,Nathan Coombes,Matt Anstee,Nathan Coombes,8-0,8,0,1,0,Completed,true,false,false
+AP018101,13 Mar 21,10,Le Page,Elsternwick Park,No. 2,Tony Sofo,Rich Buchanan,Rich Buchanan,4-6,4,6,0,1,Completed,true,false,true
+AP018101,13 Mar 21,10,Le Page,Elsternwick Park,No. 3,Lauren Gelbert,Simon Corrie,Simon Corrie,6-8,6,8,0,1,Completed,true,false,false
+AP018101,13 Mar 21,10,Le Page,Elsternwick Park,No. 4,Brian Govan,Eyal Zeira,Eyal Zeira,6-8,6,8,0,1,Completed,true,false,false
+AP018102,13 Mar 21,10,Monash University,Caulfield Rec,No. 1,Ken Kennedy,Adam Klas,Adam Klas,6-8,6,8,0,1,Completed,true,false,false
+AP018102,13 Mar 21,10,Monash University,Caulfield Rec,No. 2,James McLaren,Josh Dosser,Josh Dosser,7-8,7,8,0,1,Completed,true,false,false
+AP018102,13 Mar 21,10,Monash University,Caulfield Rec,No. 3,Philip Phung,Tanu Bhaskar,Philip Phung,8-2,8,2,1,0,Completed,true,false,false
+AP018102,13 Mar 21,10,Monash University,Caulfield Rec,No. 4,Anthony Ticonovic,Matthew Krieger,Anthony Ticonovic,8-2,8,2,1,0,Completed,true,true,false
+AP018103,13 Mar 21,10,East Malvern,BLTC,No. 1,Martin Hill,Lochlan Friedrich,Martin Hill,8-0,8,0,1,0,Completed,true,false,false
+AP018103,13 Mar 21,10,East Malvern,BLTC,No. 2,Matt Bourke,Will Vucic,Matt Bourke,8-3,8,3,1,0,Completed,true,false,false
+AP018103,13 Mar 21,10,East Malvern,BLTC,No. 3,Paul Tamburro,James Dobson,Paul Tamburro,8-4,8,4,1,0,Completed,true,false,false
+AP018103,13 Mar 21,10,East Malvern,BLTC,No. 4,Heath Poustie,Oli Klima,Heath Poustie,8-6,8,6,1,0,Completed,true,false,true
+AP018321,,16,Le Page,Elsternwick Park,No. 1,Nathan Coombes,Matt Anstee,Nathan Coombes,8-0,8,0,1,0,Completed,true,false,false
+AP018321,,16,Le Page,Elsternwick Park,No. 2,Sean O'Meara,Rich Buchanan,Rich Buchanan,5-8,5,8,0,1,Completed,true,false,true
+AP018321,,16,Le Page,Elsternwick Park,No. 3,Tony Sofo,Simon Corrie,Tony Sofo,8-6,8,6,1,0,Completed,true,false,false
+AP018321,,16,Le Page,Elsternwick Park,No. 4,Brian Govan,Eyal Zeira,Eyal Zeira,2-8,2,8,0,1,Completed,true,false,false

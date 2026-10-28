@@ -1,0 +1,100 @@
+{
+  "asset_id": "AP47-AP015",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 23/24",
+  "season_id": "AP47",
+  "season_label": "Summer 23/24",
+  "source_section_code": "AP015",
+  "section_label": "Mx Rubbers 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Glen Huntly",
+      "wins": 8,
+      "points": 66,
+      "percentage": 120.05,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "Black Rock",
+      "wins": 7,
+      "points": 61,
+      "percentage": 116.96,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Parkdale",
+      "wins": 6,
+      "points": 59,
+      "percentage": 117.35,
+      "marker": "P"
+    },
+    {
+      "position": 4,
+      "team": "FCTC",
+      "wins": 6,
+      "points": 53,
+      "percentage": 99.32,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "BLTC",
+      "wins": 4,
+      "points": 41,
+      "percentage": 95.26,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Kings Park",
+      "wins": 3,
+      "points": 38,
+      "percentage": 93.35,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Elwood Green",
+      "wins": 1,
+      "points": 18,
+      "percentage": 73.69,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP47-AP015",
+  "fixtures": 59,
+  "completed_fixtures": 39,
+  "draw_fixtures": 59,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 156,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP015073 doubles No. 3: '4-6 1-0'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP015073 doubles No. 4: '2-6 3-1'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP015301 doubles No. 4: '6-7 1-1'. Missing score not inferred; excluded from ratings and game totals.",
+    "Fixture game totals do not match rubbers for AP015301: TROLS team total 42-33; complete-score total 41-33. Both published records retained."
+  ]
+}

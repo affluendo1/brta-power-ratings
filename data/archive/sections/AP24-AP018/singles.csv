@@ -1,0 +1,153 @@
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
+AP018012,08 Oct 11,1,GPHC,Fitzroy,No. 1,Cooper Millett,Rob Conkie,Rob Conkie,6-8,6,8,0,1,Completed,true,false,false
+AP018012,08 Oct 11,1,GPHC,Fitzroy,No. 2,Marcus Matear,Toby Mitchell,Toby Mitchell,0-8,0,8,0,1,Completed,true,false,false
+AP018012,08 Oct 11,1,GPHC,Fitzroy,No. 3,Simon Field,John Rattan,John Rattan,3-8,3,8,0,1,Completed,true,false,false
+AP018012,08 Oct 11,1,GPHC,Fitzroy,No. 4,Rowan Browning,Sam Fitzgerald,Rowan Browning,8-0,8,0,1,0,Completed,true,false,false
+AP018014,08 Oct 11,1,BLTC,Hampton,No. 1,Sander De Rooy,Frank Tamborriello,Frank Tamborriello,2-8,2,8,0,1,Completed,true,false,false
+AP018014,08 Oct 11,1,BLTC,Hampton,No. 2,Anthony Fordham,Andrew Quinn,Andrew Quinn,3-8,3,8,0,1,Completed,true,false,false
+AP018014,08 Oct 11,1,BLTC,Hampton,No. 3,Tom O'Donnell,Jules Tahan,Tom O'Donnell,8-2,8,2,1,0,Completed,true,false,false
+AP018014,08 Oct 11,1,BLTC,Hampton,No. 4,Stephen Morris,Anthony Tamborriello,Anthony Tamborriello,2-8,2,8,0,1,Completed,true,false,false
+AP018021,15 Oct 11,2,Hampton,Highmoor Uniting,No. 1,David Adams,Ben Abbott,Ben Abbott,7-9,7,9,0,1,Completed,true,false,false
+AP018021,15 Oct 11,2,Hampton,Highmoor Uniting,No. 2,Lincoln Clark,Scott Lyons,Lincoln Clark,8-4,8,4,1,0,Completed,true,false,false
+AP018021,15 Oct 11,2,Hampton,Highmoor Uniting,No. 3,Darren Domaschanz,Pat Meehan,Pat Meehan,5-8,5,8,0,1,Completed,true,false,false
+AP018021,15 Oct 11,2,Hampton,Highmoor Uniting,No. 4,Ed Albert,Jayden Moorfoot,Jayden Moorfoot,5-8,5,8,0,1,Completed,true,false,false
+AP018022,15 Oct 11,2,Maccabi,GPHC,No. 1,Josh Elias,Zachary Grabovic,Zachary Grabovic,6-8,6,8,0,1,Completed,true,false,false
+AP018022,15 Oct 11,2,Maccabi,GPHC,No. 2,Jeff Klyne,Jessie Plummer,Jeff Klyne,8-3,8,3,1,0,Completed,true,false,false
+AP018022,15 Oct 11,2,Maccabi,GPHC,No. 3,Adam Gringlas,Rowan Browning,Adam Gringlas,8-4,8,4,1,0,Completed,true,false,false
+AP018022,15 Oct 11,2,Maccabi,GPHC,No. 4,Robert Kovacs,Daniel Cajkusic,Daniel Cajkusic,6-8,6,8,0,1,Completed,true,false,false
+AP018024,15 Oct 11,2,Black Rock,BLTC,No. 1,John Hurley,Anthony Fordham,John Hurley,8-1,8,1,1,0,Completed,true,false,false
+AP018024,15 Oct 11,2,Black Rock,BLTC,No. 2,James Fletcher,Tom O'Donnell,James Fletcher,8-0,8,0,1,0,Completed,true,false,false
+AP018024,15 Oct 11,2,Black Rock,BLTC,No. 3,Marcin Pont,Stephan Trakas,Marcin Pont,8-1,8,1,1,0,Completed,true,false,false
+AP018024,15 Oct 11,2,Black Rock,BLTC,No. 4,Marcus Hinton,Stephen Morris,Marcus Hinton,8-0,8,0,1,0,Completed,true,false,false
+AP018031,22 Oct 11,3,Highmoor Uniting,Black Rock,No. 1,Paul Luke,James Fletcher,Paul Luke,8-1,8,1,1,0,Completed,true,false,false
+AP018031,22 Oct 11,3,Highmoor Uniting,Black Rock,No. 2,Scott Lyons,Marcin Pont,Marcin Pont,3-8,3,8,0,1,Completed,true,false,false
+AP018031,22 Oct 11,3,Highmoor Uniting,Black Rock,No. 3,Pat Meehan,Jandre Olivier,Jandre Olivier,6-8,6,8,0,1,Completed,true,false,false
+AP018031,22 Oct 11,3,Highmoor Uniting,Black Rock,No. 4,Jayden Moorfoot,Adam Bishop,Adam Bishop,1-8,1,8,0,1,Completed,true,false,false
+AP018034,22 Oct 11,3,BLTC,Fitzroy,No. 1,Tom O'Donnell,Toby Mitchell,Tom O'Donnell,8-5,8,5,1,0,Completed,true,false,false
+AP018034,22 Oct 11,3,BLTC,Fitzroy,No. 2,Anthony Fordham,Callum Metcher,Callum Metcher,2-8,2,8,0,1,Completed,true,false,false
+AP018034,22 Oct 11,3,BLTC,Fitzroy,No. 3,Pat Young,Sam Fitzgerald,Pat Young,8-5,8,5,1,0,Completed,true,false,false
+AP018034,22 Oct 11,3,BLTC,Fitzroy,No. 4,Stephen Morris,Daniel Patenza,Daniel Patenza,0-8,0,8,0,1,Completed,true,false,false
+AP018041,05 Nov 11,4,Fitzroy,Highmoor Uniting,No. 1,Rob Conkie,Glenn Collins,Rob Conkie,8-0,8,0,1,0,Completed,true,false,false
+AP018041,05 Nov 11,4,Fitzroy,Highmoor Uniting,No. 2,Tim Heath,Scott Lyons,Tim Heath,9-7,9,7,1,0,Completed,true,false,false
+AP018041,05 Nov 11,4,Fitzroy,Highmoor Uniting,No. 3,Arri Katsambis,Pat Meehan,Arri Katsambis,8-3,8,3,1,0,Completed,true,false,false
+AP018041,05 Nov 11,4,Fitzroy,Highmoor Uniting,No. 4,Daniel Patenza,Jayden Moorfoot,Daniel Patenza,8-5,8,5,1,0,Completed,true,false,false
+AP018042,05 Nov 11,4,Black Rock,GPHC,No. 1,John Hurley,Cooper Millett,Cooper Millett,6-8,6,8,0,1,Completed,true,false,false
+AP018042,05 Nov 11,4,Black Rock,GPHC,No. 2,Jandre Olivier,Zachary Grabovic,Zachary Grabovic,6-8,6,8,0,1,Completed,true,false,false
+AP018042,05 Nov 11,4,Black Rock,GPHC,No. 3,Adam Bishop,Jessie Plummer,Adam Bishop,8-3,8,3,1,0,Completed,true,false,false
+AP018042,05 Nov 11,4,Black Rock,GPHC,No. 4,Marcus Hinton,Daniel Cajkusic,Daniel Cajkusic,5-8,5,8,0,1,Completed,true,false,false
+AP018044,05 Nov 11,4,Maccabi,BLTC,No. 1,Jeff Klyne,Tom O'Donnell,Jeff Klyne,8-4,8,4,1,0,Completed,true,false,false
+AP018044,05 Nov 11,4,Maccabi,BLTC,No. 2,Adam Gringlas,Sander De Rooy,Sander De Rooy,5-8,5,8,0,1,Completed,true,false,false
+AP018044,05 Nov 11,4,Maccabi,BLTC,No. 3,Robert Steinhardt,Pat Young,Pat Young,2-8,2,8,0,1,Completed,true,false,false
+AP018044,05 Nov 11,4,Maccabi,BLTC,No. 4,David Wolff,Stephen Morris,David Wolff,8-2,8,2,1,0,Completed,true,false,false
+AP018052,12 Nov 11,5,Hampton,Black Rock,No. 1,Frank Tamborriello,Marcin Pont,Frank Tamborriello,8-3,8,3,1,0,Completed,true,false,false
+AP018052,12 Nov 11,5,Hampton,Black Rock,No. 2,David Adams,James Fletcher,David Adams,8-4,8,4,1,0,Completed,true,false,false
+AP018052,12 Nov 11,5,Hampton,Black Rock,No. 3,Darren Domaschanz,Jandre Olivier,Jandre Olivier,2-8,2,8,0,1,Completed,true,false,false
+AP018052,12 Nov 11,5,Hampton,Black Rock,No. 4,Anthony Tamborriello,Lachlan Holman,Anthony Tamborriello,8-2,8,2,1,0,Completed,true,false,false
+AP018053,12 Nov 11,5,Fitzroy,Maccabi,No. 1,Callum Metcher,Jeff Klyne,Callum Metcher,8-6,8,6,1,0,Completed,true,false,false
+AP018053,12 Nov 11,5,Fitzroy,Maccabi,No. 2,Tim Heath,Steven Gostin,Steven Gostin,3-8,3,8,0,1,Completed,true,false,false
+AP018053,12 Nov 11,5,Fitzroy,Maccabi,No. 3,John Rattan,Richard Morris,Richard Morris,1-8,1,8,0,1,Completed,true,false,false
+AP018053,12 Nov 11,5,Fitzroy,Maccabi,No. 4,Daniel Patenza,Zach Landy,Zach Landy,6-8,6,8,0,1,Completed,true,false,false
+AP018054,12 Nov 11,5,Highmoor Uniting,GPHC,No. 1,Ben Abbott,Cooper Millett,Ben Abbott,8-4,8,4,1,0,Completed,true,false,false
+AP018054,12 Nov 11,5,Highmoor Uniting,GPHC,No. 2,Glenn Collins,Marcus Matear,Glenn Collins,8-0,8,0,1,0,Completed,true,false,false
+AP018054,12 Nov 11,5,Highmoor Uniting,GPHC,No. 3,Pat Meehan,Jessie Plummer,Jessie Plummer,8-9,8,9,0,1,Completed,true,false,false
+AP018054,12 Nov 11,5,Highmoor Uniting,GPHC,No. 4,Jayden Moorfoot,Daniel Cajkusic,Jayden Moorfoot,8-3,8,3,1,0,Completed,true,false,false
+AP018062,19 Nov 11,6,BLTC,Highmoor Uniting,No. 1,Tom O'Donnell,Paul Luke,Paul Luke,4-8,4,8,0,1,Completed,true,false,false
+AP018062,19 Nov 11,6,BLTC,Highmoor Uniting,No. 2,Anthony Fordham,Ben Abbott,Ben Abbott,4-8,4,8,0,1,Completed,true,false,false
+AP018062,19 Nov 11,6,BLTC,Highmoor Uniting,No. 3,Stephan Trakas,Glenn Collins,Glenn Collins,1-8,1,8,0,1,Completed,true,false,false
+AP018062,19 Nov 11,6,BLTC,Highmoor Uniting,No. 4,Stephen Morris,Scott Lyons,Scott Lyons,1-8,1,8,0,1,Completed,true,false,false
+AP018081,03 Dec 11,8,Maccabi,Highmoor Uniting,No. 1,Zach Landy,Ben Abbott,Ben Abbott,5-8,5,8,0,1,Completed,true,false,false
+AP018081,03 Dec 11,8,Maccabi,Highmoor Uniting,No. 2,Adam Gringlas,Scott Lyons,Adam Gringlas,8-3,8,3,1,0,Completed,true,false,false
+AP018081,03 Dec 11,8,Maccabi,Highmoor Uniting,No. 3,Adam Needleman,Pat Meehan,Adam Needleman,9-7,9,7,1,0,Completed,true,false,false
+AP018081,03 Dec 11,8,Maccabi,Highmoor Uniting,No. 4,David Zulman,Jayden Moorfoot,David Zulman,8-3,8,3,1,0,Completed,true,false,false
+AP018082,03 Dec 11,8,Fitzroy,GPHC,No. 1,Tim Heath,Cooper Millett,Tim Heath,8-4,8,4,1,0,Completed,true,false,false
+AP018082,03 Dec 11,8,Fitzroy,GPHC,No. 2,Arri Katsambis,Jack Basso,Jack Basso,1-8,1,8,0,1,Completed,true,false,false
+AP018082,03 Dec 11,8,Fitzroy,GPHC,No. 3,John Rattan,Jessie Plummer,John Rattan,8-5,8,5,1,0,Completed,true,false,false
+AP018082,03 Dec 11,8,Fitzroy,GPHC,No. 4,Daniel Patenza,Will Pisani,Will Pisani,3-8,3,8,0,1,Completed,true,false,false
+AP018084,03 Dec 11,8,Hampton,BLTC,No. 1,Frank Tamborriello,Tom O'Donnell,Frank Tamborriello,9-8,9,8,1,0,Completed,true,false,false
+AP018084,03 Dec 11,8,Hampton,BLTC,No. 2,Andrew Quinn,Anthony Fordham,Andrew Quinn,8-2,8,2,1,0,Completed,true,false,false
+AP018084,03 Dec 11,8,Hampton,BLTC,No. 3,Jules Tahan,Stephan Trakas,Jules Tahan,8-1,8,1,1,0,Completed,true,false,false
+AP018084,03 Dec 11,8,Hampton,BLTC,No. 4,Anthony Tamborriello,Jonathon Trakas,Anthony Tamborriello,8-3,8,3,1,0,Completed,true,false,false
+AP018091,10 Dec 11,9,Highmoor Uniting,Hampton,No. 1,Paul Luke,David Adams,Paul Luke,8-1,8,1,1,0,Completed,true,false,false
+AP018091,10 Dec 11,9,Highmoor Uniting,Hampton,No. 2,Glenn Collins,Lincoln Clark,Glenn Collins,8-5,8,5,1,0,Completed,true,false,false
+AP018091,10 Dec 11,9,Highmoor Uniting,Hampton,No. 3,Scott Lyons,Darren Domaschanz,Scott Lyons,9-8,9,8,1,0,Completed,true,false,false
+AP018091,10 Dec 11,9,Highmoor Uniting,Hampton,No. 4,Pat Meehan,Ed Albert,Pat Meehan,8-6,8,6,1,0,Completed,true,false,false
+AP018092,10 Dec 11,9,GPHC,Maccabi,No. 1,Cooper Millett,Jeff Klyne,Cooper Millett,8-6,8,6,1,0,Completed,true,false,false
+AP018092,10 Dec 11,9,GPHC,Maccabi,No. 2,Jessie Plummer,Adam Gringlas,Adam Gringlas,3-8,3,8,0,1,Completed,true,false,false
+AP018092,10 Dec 11,9,GPHC,Maccabi,No. 3,Rowan Browning,Shaun Kenley,Rowan Browning,8-0,8,0,1,0,Completed,true,false,false
+AP018092,10 Dec 11,9,GPHC,Maccabi,No. 4,Daniel Cajkusic,David Zulman,Daniel Cajkusic,8-3,8,3,1,0,Completed,true,false,false
+AP018101,17 Dec 11,10,Black Rock,Highmoor Uniting,No. 1,James Fletcher,Paul Luke,Paul Luke,2-8,2,8,0,1,Completed,true,false,false
+AP018101,17 Dec 11,10,Black Rock,Highmoor Uniting,No. 2,Jordan Morey,Glenn Collins,Jordan Morey,8-6,8,6,1,0,Completed,true,false,false
+AP018101,17 Dec 11,10,Black Rock,Highmoor Uniting,No. 3,Adam Bishop,Scott Lyons,Adam Bishop,8-6,8,6,1,0,Completed,true,false,false
+AP018101,17 Dec 11,10,Black Rock,Highmoor Uniting,No. 4,Ethan Chung,Pat Meehan,Ethan Chung,8-5,8,5,1,0,Completed,true,false,false
+AP018102,17 Dec 11,10,Hampton,GPHC,No. 1,Andrew Quinn,Cooper Millett,Cooper Millett,5-8,5,8,0,1,Completed,true,false,false
+AP018102,17 Dec 11,10,Hampton,GPHC,No. 2,Lincoln Clark,Jessie Plummer,Lincoln Clark,8-3,8,3,1,0,Completed,true,false,false
+AP018102,17 Dec 11,10,Hampton,GPHC,No. 3,Darren Domaschanz,Tony Wu,Tony Wu,3-8,3,8,0,1,Completed,true,false,false
+AP018102,17 Dec 11,10,Hampton,GPHC,No. 4,Ed Albert,Daniel Cajkusic,Daniel Cajkusic,4-8,4,8,0,1,Completed,true,false,false
+AP018104,17 Dec 11,10,Fitzroy,BLTC,No. 1,Toby Mitchell,Sander De Rooy,Toby Mitchell,8-3,8,3,1,0,Completed,true,false,false
+AP018104,17 Dec 11,10,Fitzroy,BLTC,No. 2,Joe Spano,Anthony Fordham,Joe Spano,8-5,8,5,1,0,Completed,true,false,false
+AP018104,17 Dec 11,10,Fitzroy,BLTC,No. 3,Arri Katsambis,Stephen Morris,Arri Katsambis,8-0,8,0,1,0,Completed,true,false,false
+AP018104,17 Dec 11,10,Fitzroy,BLTC,No. 4,John Rattan,Jonathon Trakas,John Rattan,8-2,8,2,1,0,Completed,true,false,false
+AP018111,04 Feb 12,11,Highmoor Uniting,Fitzroy,No. 1,Paul Luke,Rob Conkie,Paul Luke,8-5,8,5,1,0,Completed,true,false,false
+AP018111,04 Feb 12,11,Highmoor Uniting,Fitzroy,No. 2,Ben Abbott,Callum Metcher,Ben Abbott,8-3,8,3,1,0,Completed,true,false,false
+AP018111,04 Feb 12,11,Highmoor Uniting,Fitzroy,No. 3,Glenn Collins,Tim Heath,Tim Heath,5-8,5,8,0,1,Completed,true,false,false
+AP018111,04 Feb 12,11,Highmoor Uniting,Fitzroy,No. 4,Pat Meehan,Joe Spano,Pat Meehan,9-7,9,7,1,0,Completed,true,false,false
+AP018112,04 Feb 12,11,GPHC,Black Rock,No. 1,Zachary Grabovic,James Fletcher,James Fletcher,6-8,6,8,0,1,Completed,true,false,false
+AP018112,04 Feb 12,11,GPHC,Black Rock,No. 2,Jack Basso,Jandre Olivier,Jandre Olivier,2-8,2,8,0,1,Completed,true,false,false
+AP018112,04 Feb 12,11,GPHC,Black Rock,No. 3,Rowan Browning,Ethan Chung,Rowan Browning,8-5,8,5,1,0,Completed,true,false,false
+AP018112,04 Feb 12,11,GPHC,Black Rock,No. 4,Daniel Cajkusic,Anhtuan Ngo,Daniel Cajkusic,8-2,8,2,1,0,Completed,true,false,false
+AP018114,04 Feb 12,11,BLTC,Maccabi,No. 1,Tom O'Donnell,Jeff Klyne,Tom O'Donnell,8-6,8,6,1,0,Completed,true,false,false
+AP018114,04 Feb 12,11,BLTC,Maccabi,No. 2,Anthony Fordham,Richard Morris,Richard Morris,5-8,5,8,0,1,Completed,true,false,false
+AP018114,04 Feb 12,11,BLTC,Maccabi,No. 3,Stephan Trakas,David Zulman,David Zulman,3-8,3,8,0,1,Completed,true,false,false
+AP018114,04 Feb 12,11,BLTC,Maccabi,No. 4,Stephen Morris,Stephen Kleytman,Stephen Kleytman,3-8,3,8,0,1,Completed,true,false,false
+AP018122,11 Feb 12,12,Black Rock,Hampton,No. 1,Marcin Pont,Frank Tamborriello,Frank Tamborriello,6-8,6,8,0,1,Completed,true,false,false
+AP018122,11 Feb 12,12,Black Rock,Hampton,No. 2,James Fletcher,David Adams,James Fletcher,8-4,8,4,1,0,Completed,true,false,false
+AP018122,11 Feb 12,12,Black Rock,Hampton,No. 3,Adam Bishop,Ed Albert,Adam Bishop,8-4,8,4,1,0,Completed,true,false,false
+AP018122,11 Feb 12,12,Black Rock,Hampton,No. 4,Ethan Chung,Anthony Tamborriello,Anthony Tamborriello,8-9,8,9,0,1,Completed,true,false,false
+AP018123,11 Feb 12,12,Maccabi,Fitzroy,No. 1,Jeff Klyne,Callum Metcher,Callum Metcher,4-8,4,8,0,1,Completed,true,false,false
+AP018123,11 Feb 12,12,Maccabi,Fitzroy,No. 2,Richard Morris,Arri Katsambis,Richard Morris,8-2,8,2,1,0,Completed,true,false,false
+AP018123,11 Feb 12,12,Maccabi,Fitzroy,No. 3,Zach Landy,John Rattan,John Rattan,3-8,3,8,0,1,Completed,true,false,false
+AP018123,11 Feb 12,12,Maccabi,Fitzroy,No. 4,Shaun Kenley,Daniel Patenza,Shaun Kenley,9-7,9,7,1,0,Completed,true,false,false
+AP018124,11 Feb 12,12,GPHC,Highmoor Uniting,No. 1,Cooper Millett,Paul Luke,Paul Luke,4-8,4,8,0,1,Completed,true,false,false
+AP018124,11 Feb 12,12,GPHC,Highmoor Uniting,No. 2,Marcus Matear,Ben Abbott,Ben Abbott,0-8,0,8,0,1,Completed,true,false,false
+AP018124,11 Feb 12,12,GPHC,Highmoor Uniting,No. 3,Zachary Grabovic,Glenn Collins,Zachary Grabovic,8-3,8,3,1,0,Completed,true,false,false
+AP018124,11 Feb 12,12,GPHC,Highmoor Uniting,No. 4,Rowan Browning,Pat Meehan,Rowan Browning,8-6,8,6,1,0,Completed,true,false,false
+AP018132,18 Feb 12,13,Highmoor Uniting,BLTC,No. 1,Glenn Collins,Tom O'Donnell,Tom O'Donnell,5-8,5,8,0,1,Completed,true,false,false
+AP018132,18 Feb 12,13,Highmoor Uniting,BLTC,No. 2,Scott Lyons,Anthony Fordham,Anthony Fordham,1-8,1,8,0,1,Completed,true,false,false
+AP018132,18 Feb 12,13,Highmoor Uniting,BLTC,No. 3,Pat Meehan,Stephan Trakas,Pat Meehan,8-0,8,0,1,0,Completed,true,false,false
+AP018132,18 Feb 12,13,Highmoor Uniting,BLTC,No. 4,Jayden Moorfoot,Stephen Morris,Jayden Moorfoot,8-4,8,4,1,0,Completed,true,false,false
+AP018133,18 Feb 12,13,Fitzroy,Black Rock,No. 1,Toby Mitchell,Marcin Pont,Marcin Pont,5-8,5,8,0,1,Completed,true,false,false
+AP018133,18 Feb 12,13,Fitzroy,Black Rock,No. 2,Tim Heath,Jordan Morey,Tim Heath,9-7,9,7,1,0,Completed,true,false,false
+AP018133,18 Feb 12,13,Fitzroy,Black Rock,No. 3,Sam Fitzgerald,Adam Bishop,Sam Fitzgerald,8-5,8,5,1,0,Completed,true,false,false
+AP018133,18 Feb 12,13,Fitzroy,Black Rock,No. 4,Joe Spano,Ethan Chung,Joe Spano,8-4,8,4,1,0,Completed,true,false,false
+AP018134,18 Feb 12,13,Hampton,Maccabi,No. 1,Frank Tamborriello,Jeff Klyne,Frank Tamborriello,8-4,8,4,1,0,Completed,true,false,false
+AP018134,18 Feb 12,13,Hampton,Maccabi,No. 2,Lincoln Clark,Richard Morris,Richard Morris,1-8,1,8,0,1,Completed,true,false,false
+AP018134,18 Feb 12,13,Hampton,Maccabi,No. 3,Jules Tahan,Stephen Kleytman,Stephen Kleytman,2-8,2,8,0,1,Completed,true,false,false
+AP018134,18 Feb 12,13,Hampton,Maccabi,No. 4,Darren Domaschanz,Zach Landy,Zach Landy,4-8,4,8,0,1,Completed,true,false,false
+AP018142,25 Feb 12,14,BLTC,GPHC,No. 1,Tom O'Donnell,Cooper Millett,Tom O'Donnell,8-4,8,4,1,0,Completed,true,false,false
+AP018142,25 Feb 12,14,BLTC,GPHC,No. 2,Sander De Rooy,Zachary Grabovic,Zachary Grabovic,0-8,0,8,0,1,Completed,true,false,false
+AP018142,25 Feb 12,14,BLTC,GPHC,No. 3,Anthony Fordham,Rowan Browning,Rowan Browning,4-8,4,8,0,1,Completed,true,false,false
+AP018142,25 Feb 12,14,BLTC,GPHC,No. 4,Stephen Morris,Daniel Cajkusic,Daniel Cajkusic,2-8,2,8,0,1,Completed,true,false,false
+AP018143,25 Feb 12,14,Fitzroy,Hampton,No. 1,Rob Conkie,Lincoln Clark,Rob Conkie,8-0,8,0,1,0,Completed,true,false,false
+AP018143,25 Feb 12,14,Fitzroy,Hampton,No. 2,Toby Mitchell,Jules Tahan,Toby Mitchell,8-1,8,1,1,0,Completed,true,false,false
+AP018143,25 Feb 12,14,Fitzroy,Hampton,No. 3,Sam Fitzgerald,Darren Domaschanz,Sam Fitzgerald,8-0,8,0,1,0,Completed,true,false,false
+AP018143,25 Feb 12,14,Fitzroy,Hampton,No. 4,John Rattan,Anthony Tamborriello,Anthony Tamborriello,4-8,4,8,0,1,Completed,true,false,false
+AP018144,25 Feb 12,14,Maccabi,Black Rock,No. 1,Jeff Klyne,Marcin Pont,Marcin Pont,2-8,2,8,0,1,Completed,true,false,false
+AP018144,25 Feb 12,14,Maccabi,Black Rock,No. 2,Richard Morris,James Fletcher,Richard Morris,8-5,8,5,1,0,Completed,true,false,false
+AP018144,25 Feb 12,14,Maccabi,Black Rock,No. 3,David Kenley,Jordan Morey,David Kenley,8-2,8,2,1,0,Completed,true,false,false
+AP018144,25 Feb 12,14,Maccabi,Black Rock,No. 4,Zach Landy,Liam Heilberg,Zach Landy,8-0,8,0,1,0,Completed,true,false,false
+AP018301,,16,Highmoor Uniting,Fitzroy,No. 1,Paul Luke,Rob Conkie,Paul Luke,8-1,8,1,1,0,Completed,true,false,false
+AP018301,,16,Highmoor Uniting,Fitzroy,No. 2,Ben Abbott,Callum Metcher,Callum Metcher,6-8,6,8,0,1,Completed,true,false,false
+AP018301,,16,Highmoor Uniting,Fitzroy,No. 3,Glenn Collins,Sam Fitzgerald,Glenn Collins,8-6,8,6,1,0,Completed,true,false,false
+AP018301,,16,Highmoor Uniting,Fitzroy,No. 4,Scott Lyons,Joe Spano,Joe Spano,6-8,6,8,0,1,Completed,true,false,false
+AP018302,,16,GPHC,Maccabi,No. 1,Cooper Millett,Jeff Klyne,Cooper Millett,8-5,8,5,1,0,Completed,true,false,false
+AP018302,,16,GPHC,Maccabi,No. 2,Zachary Grabovic,Richard Morris,Zachary Grabovic,8-4,8,4,1,0,Completed,true,false,false
+AP018302,,16,GPHC,Maccabi,No. 3,Rowan Browning,Adam Gringlas,Rowan Browning,8-2,8,2,1,0,Completed,true,false,false
+AP018302,,16,GPHC,Maccabi,No. 4,Daniel Cajkusic,Zach Landy,Daniel Cajkusic,8-0,8,0,1,0,Completed,true,false,false
+AP018311,,16,Highmoor Uniting,GPHC,No. 1,Paul Luke,Cooper Millett,Paul Luke,8-3,8,3,1,0,Completed,true,false,false
+AP018311,,16,Highmoor Uniting,GPHC,No. 2,Ben Abbott,Zachary Grabovic,Ben Abbott,8-4,8,4,1,0,Completed,true,false,false
+AP018311,,16,Highmoor Uniting,GPHC,No. 3,Glenn Collins,Rowan Browning,Rowan Browning,4-8,4,8,0,1,Completed,true,false,false
+AP018311,,16,Highmoor Uniting,GPHC,No. 4,Scott Lyons,Daniel Cajkusic,Scott Lyons,8-2,8,2,1,0,Completed,true,false,false
+AP018321,,17,Fitzroy,Highmoor Uniting,No. 1,Rob Conkie,Paul Luke,Paul Luke,3-8,3,8,0,1,Completed,true,true,false
+AP018321,,17,Fitzroy,Highmoor Uniting,No. 2,Callum Metcher,Ben Abbott,Callum Metcher,8-1,8,1,1,0,Completed,true,true,false
+AP018321,,17,Fitzroy,Highmoor Uniting,No. 3,Toby Mitchell,Glenn Collins,Toby Mitchell,8-3,8,3,1,0,Completed,true,true,false
+AP018321,,17,Fitzroy,Highmoor Uniting,No. 4,John Rattan,Scott Lyons,John Rattan,8-2,8,2,1,0,Completed,true,false,false

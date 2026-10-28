@@ -1,0 +1,105 @@
+{
+  "asset_id": "AP51-AP003",
+  "competition_code": "AP",
+  "competition_label": "Saturday PM - Summer 25/26",
+  "season_id": "AP51",
+  "season_label": "Summer 25/26",
+  "source_section_code": "AP003",
+  "section_label": "Mens S/D 3",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Langwarrin",
+      "wins": 10,
+      "points": 97,
+      "percentage": 147.66,
+      "marker": ""
+    },
+    {
+      "position": 2,
+      "team": "Maccabi",
+      "wins": 8,
+      "points": 90,
+      "percentage": 136.1,
+      "marker": "P"
+    },
+    {
+      "position": 3,
+      "team": "Mt Martha",
+      "wins": 8,
+      "points": 88,
+      "percentage": 125.11,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "BLTC",
+      "wins": 8,
+      "points": 81,
+      "percentage": 121.89,
+      "marker": "R"
+    },
+    {
+      "position": 5,
+      "team": "Carmelite",
+      "wins": 7,
+      "points": 74,
+      "percentage": 108.54,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Overport Park",
+      "wins": 6,
+      "points": 60,
+      "percentage": 65.45,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Highmoor Uniting",
+      "wins": 2,
+      "points": 38,
+      "percentage": 65.91,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "Dendy Park",
+      "wins": 1,
+      "points": 32,
+      "percentage": 67.63,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 4,
+    "singlesBestOf": 1,
+    "setTarget": 8,
+    "doublesSlots": 2,
+    "doublesBestOf": 3,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "AP51-AP003",
+  "fixtures": 59,
+  "completed_fixtures": 50,
+  "draw_fixtures": 59,
+  "singles_rubbers": 196,
+  "doubles_rubbers": 96,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for AP003321 doubles No. 1: '6-2 2-1'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}
