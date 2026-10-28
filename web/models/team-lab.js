@@ -69,7 +69,7 @@
     const historical=list.filter(p=>p.historical&&!p.emergencyOnly).sort((a,b)=>(a.averagePosition??99)-(b.averagePosition??99)||a.name.localeCompare(b.name));
     const pairs=[...pairMap.values()].sort((a,b)=>b.matches-a.matches||b.wins-a.wins||a.key.localeCompare(b.key));
     const ladder=data.standings||[],index=ladder.findIndex(x=>x.team===team),standing=ladder[index]||null;
-    return{team,custom,rules:rules(data),players:list,core,emergencies,historical,days,pairs,standing,position:standing?.officialPosition??(index>=0?index+1:null),strongest:[...core].sort(powerSort('singles'))[0]||null,mostPresent:[...core].sort((a,b)=>b.appearances-a.appearances)[0]||null,data};
+    return{team,custom,rules:rules(data),players:list,core,emergencies,historical,days,pairs,standing,position:standing?.officialPosition??(index>=0?index+1:null),strongest:[...core].sort(powerSort(rules(data).singles===0?'doubles':'singles'))[0]||null,mostPresent:[...core].sort((a,b)=>b.appearances-a.appearances)[0]||null,data};
   }
   function pairProjection(model,names){
     const players=names.map(name=>model.players.find(x=>x.name===name)),base=players.map(p=>p?.doublesPower??p?.singlesPower),observed=model.pairs.find(x=>x.key===pairKey(names));
