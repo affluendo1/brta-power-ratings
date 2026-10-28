@@ -1,0 +1,81 @@
+{
+  "asset_id": "TN36-TN004",
+  "competition_code": "TN",
+  "competition_label": "Tuesday Night - Autumn 2024",
+  "season_id": "TN36",
+  "season_label": "Autumn 2024",
+  "source_section_code": "TN004",
+  "section_label": "Section 4",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Glen Huntly Moonballs",
+      "wins": 10,
+      "points": 90,
+      "percentage": 168.35,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Hurlingham Park Hammers",
+      "wins": 8,
+      "points": 82.5,
+      "percentage": 128.11,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Black Rock Breakers",
+      "wins": 5,
+      "points": 56,
+      "percentage": 101.88,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Murrumbeena Aces",
+      "wins": 5,
+      "points": 53.5,
+      "percentage": 81.53,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Carmelite Middle Park",
+      "wins": 1,
+      "points": 18,
+      "percentage": 49.28,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 6,
+    "doublesBestOf": 1,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "TN36-TN004",
+  "fixtures": 46,
+  "completed_fixtures": 29,
+  "draw_fixtures": 57,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 174,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for TN004141 doubles No. 5: '6-6'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

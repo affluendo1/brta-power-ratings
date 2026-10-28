@@ -1,12 +1,12 @@
 {
   "source": "https://www.trols.org.au/brta/p_results.php",
-  "generated_at_utc": "2026-10-28T12:38:19.597822+00:00",
-  "season_count": 118,
-  "section_count": 999,
-  "fixture_count": 53347,
-  "completed_fixtures": 44918,
-  "singles_rubbers": 145342,
-  "doubles_rubbers": 105056,
+  "generated_at_utc": "2026-10-28T12:42:53.553026+00:00",
+  "season_count": 150,
+  "section_count": 1065,
+  "fixture_count": 56482,
+  "completed_fixtures": 47321,
+  "singles_rubbers": 145344,
+  "doubles_rubbers": 119124,
   "seasons": [
     {
       "competition_code": "AA",
@@ -356,6 +356,166 @@
     {
       "competition_code": "TA",
       "season_id": "TA13",
+      "season_label": "Spring 2025"
+    },
+    {
+      "competition_code": "TN",
+      "season_id": "TN2",
+      "season_label": "Autumn 2011"
+    },
+    {
+      "competition_code": "TN",
+      "season_id": "TN4",
+      "season_label": "Autumn 2012"
+    },
+    {
+      "competition_code": "TN",
+      "season_id": "TN5",
+      "season_label": "Autumn 2013"
+    },
+    {
+      "competition_code": "TN",
+      "season_id": "TN7",
+      "season_label": "Autumn 2014"
+    },
+    {
+      "competition_code": "TN",
+      "season_id": "TN9",
+      "season_label": "Autumn 2015"
+    },
+    {
+      "competition_code": "TN",
+      "season_id": "TN16",
+      "season_label": "Autumn 2016"
+    },
+    {
+      "competition_code": "TN",
+      "season_id": "TN22",
+      "season_label": "Autumn 2017"
+    },
+    {
+      "competition_code": "TN",
+      "season_id": "TN24",
+      "season_label": "Autumn 2018"
+    },
+    {
+      "competition_code": "TN",
+      "season_id": "TN26",
+      "season_label": "Autumn 2019"
+    },
+    {
+      "competition_code": "TN",
+      "season_id": "TN28",
+      "season_label": "Autumn 2020"
+    },
+    {
+      "competition_code": "TN",
+      "season_id": "TN30",
+      "season_label": "Autumn 2021"
+    },
+    {
+      "competition_code": "TN",
+      "season_id": "TN32",
+      "season_label": "Autumn 2022"
+    },
+    {
+      "competition_code": "TN",
+      "season_id": "TN34",
+      "season_label": "Autumn 2023"
+    },
+    {
+      "competition_code": "TN",
+      "season_id": "TN36",
+      "season_label": "Autumn 2024"
+    },
+    {
+      "competition_code": "TN",
+      "season_id": "TN38",
+      "season_label": "Autumn 2025"
+    },
+    {
+      "competition_code": "TN",
+      "season_id": "TN40",
+      "season_label": "Autumn 2026"
+    },
+    {
+      "competition_code": "TN",
+      "season_id": "TN1",
+      "season_label": "Spring 2010"
+    },
+    {
+      "competition_code": "TN",
+      "season_id": "TN3",
+      "season_label": "Spring 2011"
+    },
+    {
+      "competition_code": "TN",
+      "season_id": "TN6",
+      "season_label": "Spring 2013"
+    },
+    {
+      "competition_code": "TN",
+      "season_id": "TN8",
+      "season_label": "Spring 2014"
+    },
+    {
+      "competition_code": "TN",
+      "season_id": "TN15",
+      "season_label": "Spring 2015"
+    },
+    {
+      "competition_code": "TN",
+      "season_id": "TN17",
+      "season_label": "Spring 2016"
+    },
+    {
+      "competition_code": "TN",
+      "season_id": "TN21",
+      "season_label": "Spring 2016"
+    },
+    {
+      "competition_code": "TN",
+      "season_id": "TN23",
+      "season_label": "Spring 2017"
+    },
+    {
+      "competition_code": "TN",
+      "season_id": "TN25",
+      "season_label": "Spring 2018"
+    },
+    {
+      "competition_code": "TN",
+      "season_id": "TN27",
+      "season_label": "Spring 2019"
+    },
+    {
+      "competition_code": "TN",
+      "season_id": "TN29",
+      "season_label": "Spring 2020"
+    },
+    {
+      "competition_code": "TN",
+      "season_id": "TN31",
+      "season_label": "Spring 2021"
+    },
+    {
+      "competition_code": "TN",
+      "season_id": "TN33",
+      "season_label": "Spring 2022"
+    },
+    {
+      "competition_code": "TN",
+      "season_id": "TN35",
+      "season_label": "Spring 2023"
+    },
+    {
+      "competition_code": "TN",
+      "season_id": "TN37",
+      "season_label": "Spring 2024"
+    },
+    {
+      "competition_code": "TN",
+      "season_id": "TN39",
       "season_label": "Spring 2025"
     },
     {
@@ -21286,6 +21446,6268 @@
         "Incomplete TROLS score for TA001103 doubles No. 3: '10-10'. Missing score not inferred; excluded from ratings and game totals.",
         "Incomplete TROLS score for TA001103 doubles No. 4: '1-'. Missing score not inferred; excluded from ratings and game totals.",
         "Fixture game totals do not match rubbers for TA001103: TROLS team total 24-30; complete-score total 23-30. Both published records retained."
+      ]
+    },
+    {
+      "asset_id": "TN2-TN002",
+      "competition_code": "TN",
+      "competition_label": "Tuesday Night - Autumn 2011",
+      "season_id": "TN2",
+      "season_label": "Autumn 2011",
+      "source_section_code": "TN002",
+      "section_label": "Tues Night",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Basterfield Park Scratchies",
+          "wins": 0,
+          "points": 98.5,
+          "percentage": 145.83,
+          "marker": ""
+        },
+        {
+          "position": 2,
+          "team": "Basterfield Park BP",
+          "wins": 0,
+          "points": 88,
+          "percentage": 117.32,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "Elwood WoodlandsII",
+          "wins": 0,
+          "points": 84,
+          "percentage": 122.9,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Black Rock Woodlands",
+          "wins": 0,
+          "points": 81,
+          "percentage": 117.69,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Black Rock BlackBallers",
+          "wins": 0,
+          "points": 67.5,
+          "percentage": 92.77,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Elwood Unknowns",
+          "wins": 0,
+          "points": 67,
+          "percentage": 103.96,
+          "marker": ""
+        },
+        {
+          "position": 7,
+          "team": "Clarinda MP",
+          "wins": 0,
+          "points": 57,
+          "percentage": 91.15,
+          "marker": ""
+        },
+        {
+          "position": 8,
+          "team": "Hurlingham Park Hurlingham",
+          "wins": 0,
+          "points": 17,
+          "percentage": 48.69,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 2,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 6,
+        "doublesBestOf": 1,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "TN2-TN002",
+      "fixtures": 56,
+      "completed_fixtures": 43,
+      "draw_fixtures": 56,
+      "singles_rubbers": 2,
+      "doubles_rubbers": 256,
+      "latest_round": 14,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": []
+    },
+    {
+      "asset_id": "TN4-TN001",
+      "competition_code": "TN",
+      "competition_label": "Tuesday Night - Autumn 2012",
+      "season_id": "TN4",
+      "season_label": "Autumn 2012",
+      "source_section_code": "TN001",
+      "section_label": "Tue Night A12",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Elwood ETG",
+          "wins": 10,
+          "points": 110,
+          "percentage": 164.56,
+          "marker": ""
+        },
+        {
+          "position": 2,
+          "team": "Basterfield Park Scratchies",
+          "wins": 7,
+          "points": 82,
+          "percentage": 120.29,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "Carmelite MP",
+          "wins": 7,
+          "points": 81,
+          "percentage": 113.97,
+          "marker": "*"
+        },
+        {
+          "position": 4,
+          "team": "Black Rock Rusty",
+          "wins": 6,
+          "points": 74,
+          "percentage": 110.43,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Black Rock Woodlands",
+          "wins": 7,
+          "points": 67,
+          "percentage": 113.55,
+          "marker": "*"
+        },
+        {
+          "position": 6,
+          "team": "Elwood Unknowns",
+          "wins": 3,
+          "points": 41,
+          "percentage": 84.43,
+          "marker": "*"
+        },
+        {
+          "position": 7,
+          "team": "Basterfield Park Park",
+          "wins": 2,
+          "points": 27,
+          "percentage": 76.12,
+          "marker": "*"
+        },
+        {
+          "position": 8,
+          "team": "Hurlingham Park Hurls",
+          "wins": 0,
+          "points": 18,
+          "percentage": 62.19,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 6,
+        "doublesBestOf": 1,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "TN4-TN001",
+      "fixtures": 52,
+      "completed_fixtures": 43,
+      "draw_fixtures": 56,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 258,
+      "latest_round": 13,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": []
+    },
+    {
+      "asset_id": "TN5-TN001",
+      "competition_code": "TN",
+      "competition_label": "Tuesday Night - Autumn 2013",
+      "season_id": "TN5",
+      "season_label": "Autumn 2013",
+      "source_section_code": "TN001",
+      "section_label": "TueMens",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Basterfield Park Scratchies",
+          "wins": 14,
+          "points": 150,
+          "percentage": 154.52,
+          "marker": ""
+        },
+        {
+          "position": 2,
+          "team": "Black Rock ETG",
+          "wins": 8,
+          "points": 122,
+          "percentage": 152.16,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "Black Rock RustyBalls",
+          "wins": 8,
+          "points": 109,
+          "percentage": 116.52,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Black Rock Woodlands",
+          "wins": 6,
+          "points": 107,
+          "percentage": 109.09,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Basterfield Park Basterfield",
+          "wins": 3,
+          "points": 90,
+          "percentage": 114.1,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Carmelite MiddlePark",
+          "wins": 2,
+          "points": 77,
+          "percentage": 84.38,
+          "marker": ""
+        },
+        {
+          "position": 7,
+          "team": "Hurlingham Park Hurl UPS",
+          "wins": 2,
+          "points": 75,
+          "percentage": 85.26,
+          "marker": ""
+        },
+        {
+          "position": 8,
+          "team": "Black Rock FIGJAM",
+          "wins": 2,
+          "points": 66,
+          "percentage": 84.78,
+          "marker": ""
+        },
+        {
+          "position": 9,
+          "team": "Hurlingham Park AnotherHurl",
+          "wins": 0,
+          "points": 54,
+          "percentage": 57.14,
+          "marker": ""
+        },
+        {
+          "position": 10,
+          "team": "Carmelite BYE",
+          "wins": 0,
+          "points": 0,
+          "percentage": 0.0,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 6,
+        "doublesBestOf": 1,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "TN5-TN001",
+      "fixtures": 85,
+      "completed_fixtures": 48,
+      "draw_fixtures": 56,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 282,
+      "latest_round": 17,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": []
+    },
+    {
+      "asset_id": "TN7-TN001",
+      "competition_code": "TN",
+      "competition_label": "Tuesday Night - Autumn 2014",
+      "season_id": "TN7",
+      "season_label": "Autumn 2014",
+      "source_section_code": "TN001",
+      "section_label": "Section 1",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Black Rock Net Margin",
+          "wins": 10,
+          "points": 105,
+          "percentage": 148.21,
+          "marker": ""
+        },
+        {
+          "position": 2,
+          "team": "Basterfield Park Scratchies",
+          "wins": 7,
+          "points": 82,
+          "percentage": 137.17,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "Black Rock The Stones",
+          "wins": 7,
+          "points": 81,
+          "percentage": 92.65,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Black Rock Woodlands",
+          "wins": 2,
+          "points": 73.5,
+          "percentage": 88.96,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Basterfield Park BasterField",
+          "wins": 5,
+          "points": 58,
+          "percentage": 91.38,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Carmelite MiddlePark",
+          "wins": 2,
+          "points": 50.5,
+          "percentage": 70.71,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 6,
+        "doublesBestOf": 1,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "TN7-TN001",
+      "fixtures": 45,
+      "completed_fixtures": 35,
+      "draw_fixtures": 56,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 210,
+      "latest_round": 15,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": []
+    },
+    {
+      "asset_id": "TN7-TN002",
+      "competition_code": "TN",
+      "competition_label": "Tuesday Night - Autumn 2014",
+      "season_id": "TN7",
+      "season_label": "Autumn 2014",
+      "source_section_code": "TN002",
+      "section_label": "Section 2",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Hurlingham Park UPS",
+          "wins": 11,
+          "points": 117,
+          "percentage": 155.96,
+          "marker": ""
+        },
+        {
+          "position": 2,
+          "team": "St James All-Stars",
+          "wins": 11,
+          "points": 100,
+          "percentage": 128.37,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "St James Premiers-ish",
+          "wins": 10,
+          "points": 99,
+          "percentage": 119.39,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Black Rock FIGJAM",
+          "wins": 3,
+          "points": 55,
+          "percentage": 83.62,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Hurlingham Park Hurling",
+          "wins": 4,
+          "points": 49,
+          "percentage": 73.61,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Hurlingham Park One",
+          "wins": 2,
+          "points": 30,
+          "percentage": 64.43,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 6,
+        "doublesBestOf": 1,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "TN7-TN002",
+      "fixtures": 45,
+      "completed_fixtures": 43,
+      "draw_fixtures": 56,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 258,
+      "latest_round": 15,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": []
+    },
+    {
+      "asset_id": "TN9-TN001",
+      "competition_code": "TN",
+      "competition_label": "Tuesday Night - Autumn 2015",
+      "season_id": "TN9",
+      "season_label": "Autumn 2015",
+      "source_section_code": "TN001",
+      "section_label": "1-One",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Black Rock NetMargin",
+          "wins": 12,
+          "points": 120,
+          "percentage": 150.84,
+          "marker": ""
+        },
+        {
+          "position": 2,
+          "team": "St James AllStars",
+          "wins": 10,
+          "points": 117,
+          "percentage": 144.05,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "Basterfield Park Scratchies",
+          "wins": 12,
+          "points": 109,
+          "percentage": 143.04,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "St James Priemers",
+          "wins": 8,
+          "points": 93,
+          "percentage": 113.95,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Hurlingham Park UPS",
+          "wins": 9,
+          "points": 88,
+          "percentage": 110.66,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Black Rock Rockies",
+          "wins": 8,
+          "points": 83,
+          "percentage": 105.1,
+          "marker": ""
+        },
+        {
+          "position": 7,
+          "team": "Basterfield Park Baste",
+          "wins": 8,
+          "points": 83,
+          "percentage": 101.34,
+          "marker": ""
+        },
+        {
+          "position": 8,
+          "team": "Black Rock Snags",
+          "wins": 7,
+          "points": 80,
+          "percentage": 96.42,
+          "marker": ""
+        },
+        {
+          "position": 9,
+          "team": "Carmelite MiddlePark",
+          "wins": 5,
+          "points": 74,
+          "percentage": 81.78,
+          "marker": ""
+        },
+        {
+          "position": 10,
+          "team": "Hurlingham Park Hoboes",
+          "wins": 5,
+          "points": 61,
+          "percentage": 82.38,
+          "marker": ""
+        },
+        {
+          "position": 11,
+          "team": "Hurlingham Park Hpsause",
+          "wins": 1,
+          "points": 30,
+          "percentage": 61.51,
+          "marker": ""
+        },
+        {
+          "position": 12,
+          "team": "Hurlingham Park One",
+          "wins": 1,
+          "points": 22,
+          "percentage": 60.5,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 6,
+        "doublesBestOf": 1,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "TN9-TN001",
+      "fixtures": 98,
+      "completed_fixtures": 89,
+      "draw_fixtures": 58,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 528,
+      "latest_round": 17,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": []
+    },
+    {
+      "asset_id": "TN16-TN001",
+      "competition_code": "TN",
+      "competition_label": "Tuesday Night - Autumn 2016",
+      "season_id": "TN16",
+      "season_label": "Autumn 2016",
+      "source_section_code": "TN001",
+      "section_label": "All",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Hurlingham Park Gunslingers",
+          "wins": 0,
+          "points": 0,
+          "percentage": 0.0,
+          "marker": ""
+        },
+        {
+          "position": 2,
+          "team": "Carmelite MiddlePark",
+          "wins": 0,
+          "points": 0,
+          "percentage": 0.0,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "St James AllStars",
+          "wins": 0,
+          "points": 0,
+          "percentage": 0.0,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Basterfield Park Baste",
+          "wins": 0,
+          "points": 0,
+          "percentage": 0.0,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Hurlingham Park HPSause",
+          "wins": 0,
+          "points": 0,
+          "percentage": 0.0,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Hurlingham Park Hoboes",
+          "wins": 0,
+          "points": 0,
+          "percentage": 0.0,
+          "marker": ""
+        },
+        {
+          "position": 7,
+          "team": "St James Premiers",
+          "wins": 0,
+          "points": 0,
+          "percentage": 0.0,
+          "marker": ""
+        },
+        {
+          "position": 8,
+          "team": "Hurlingham Park Battlers",
+          "wins": 0,
+          "points": 0,
+          "percentage": 0.0,
+          "marker": ""
+        },
+        {
+          "position": 9,
+          "team": "Black Rock Awesome4",
+          "wins": 0,
+          "points": 0,
+          "percentage": 0.0,
+          "marker": ""
+        },
+        {
+          "position": 10,
+          "team": "Black Rock NetMargin",
+          "wins": 0,
+          "points": 0,
+          "percentage": 0.0,
+          "marker": ""
+        },
+        {
+          "position": 11,
+          "team": "Black Rock Snags",
+          "wins": 0,
+          "points": 0,
+          "percentage": 0.0,
+          "marker": ""
+        },
+        {
+          "position": 12,
+          "team": "Basterfield Park Scratchies",
+          "wins": 0,
+          "points": 0,
+          "percentage": 0.0,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 0,
+        "doublesBestOf": 1,
+        "doublesTarget": 6,
+        "playersPerTeam": 0,
+        "matchTiebreak": false
+      },
+      "section_code": "TN16-TN001",
+      "fixtures": 0,
+      "completed_fixtures": 0,
+      "draw_fixtures": 56,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 0,
+      "latest_round": 0,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": []
+    },
+    {
+      "asset_id": "TN28-TN001",
+      "competition_code": "TN",
+      "competition_label": "Tuesday Night - Autumn 2020",
+      "season_id": "TN28",
+      "season_label": "Autumn 2020",
+      "source_section_code": "TN001",
+      "section_label": "1",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Black Rock BradyBunch",
+          "wins": 0,
+          "points": 0,
+          "percentage": 0.0,
+          "marker": ""
+        },
+        {
+          "position": 2,
+          "team": "Black Rock NetMargin",
+          "wins": 0,
+          "points": 0,
+          "percentage": 0.0,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "Black Rock TinyTim",
+          "wins": 0,
+          "points": 0,
+          "percentage": 0.0,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Hurlingham Park Hoboes",
+          "wins": 0,
+          "points": 0,
+          "percentage": 0.0,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "St James Premiers",
+          "wins": 0,
+          "points": 0,
+          "percentage": 0.0,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "St James AllStars",
+          "wins": 0,
+          "points": 0,
+          "percentage": 0.0,
+          "marker": ""
+        },
+        {
+          "position": 7,
+          "team": "Basterfield Park Scratchies",
+          "wins": 0,
+          "points": 0,
+          "percentage": 0.0,
+          "marker": ""
+        },
+        {
+          "position": 8,
+          "team": "Black Rock Snags",
+          "wins": 0,
+          "points": 0,
+          "percentage": 0.0,
+          "marker": ""
+        },
+        {
+          "position": 9,
+          "team": "Hurlingham Park Battlers",
+          "wins": 0,
+          "points": 0,
+          "percentage": 0.0,
+          "marker": ""
+        },
+        {
+          "position": 10,
+          "team": "Hurlingham Park Hpsause",
+          "wins": 0,
+          "points": 0,
+          "percentage": 0.0,
+          "marker": ""
+        },
+        {
+          "position": 11,
+          "team": "Basterfield Park Baste",
+          "wins": 0,
+          "points": 0,
+          "percentage": 0.0,
+          "marker": ""
+        },
+        {
+          "position": 12,
+          "team": "Carmelite MP",
+          "wins": 0,
+          "points": 0,
+          "percentage": 0.0,
+          "marker": ""
+        },
+        {
+          "position": 13,
+          "team": "Bodley Tennis Plus Maverics",
+          "wins": 0,
+          "points": 0,
+          "percentage": 0.0,
+          "marker": ""
+        },
+        {
+          "position": 14,
+          "team": "Murrumbeena Beasts",
+          "wins": 0,
+          "points": 0,
+          "percentage": 0.0,
+          "marker": ""
+        },
+        {
+          "position": 15,
+          "team": "Hurlingham Park Gunslingers",
+          "wins": 0,
+          "points": 0,
+          "percentage": 0.0,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 0,
+        "doublesBestOf": 1,
+        "doublesTarget": 6,
+        "playersPerTeam": 0,
+        "matchTiebreak": false
+      },
+      "section_code": "TN28-TN001",
+      "fixtures": 0,
+      "completed_fixtures": 0,
+      "draw_fixtures": 56,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 0,
+      "latest_round": 0,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": []
+    },
+    {
+      "asset_id": "TN30-TN001",
+      "competition_code": "TN",
+      "competition_label": "Tuesday Night - Autumn 2021",
+      "season_id": "TN30",
+      "season_label": "Autumn 2021",
+      "source_section_code": "TN001",
+      "section_label": "Section 1",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Black Rock Brady Bunch",
+          "wins": 6,
+          "points": 66,
+          "percentage": 180.15,
+          "marker": "R"
+        },
+        {
+          "position": 2,
+          "team": "Hurlingham Park Gunslingers",
+          "wins": 5,
+          "points": 52,
+          "percentage": 128.14,
+          "marker": "P"
+        },
+        {
+          "position": 3,
+          "team": "St James Premiers",
+          "wins": 3,
+          "points": 41,
+          "percentage": 108.74,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Maccabi AddamsFamily",
+          "wins": 3,
+          "points": 34,
+          "percentage": 88.56,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Hurlingham Park Hoboes",
+          "wins": 0,
+          "points": 7,
+          "percentage": 46.49,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 6,
+        "doublesBestOf": 1,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "TN30-TN001",
+      "fixtures": 32,
+      "completed_fixtures": 19,
+      "draw_fixtures": 57,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 114,
+      "latest_round": 16,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": []
+    },
+    {
+      "asset_id": "TN30-TN002",
+      "competition_code": "TN",
+      "competition_label": "Tuesday Night - Autumn 2021",
+      "season_id": "TN30",
+      "season_label": "Autumn 2021",
+      "source_section_code": "TN002",
+      "section_label": "Section 2",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Black Rock Snags",
+          "wins": 6,
+          "points": 65,
+          "percentage": 138.12,
+          "marker": "R"
+        },
+        {
+          "position": 2,
+          "team": "St James All Stars",
+          "wins": 7,
+          "points": 64,
+          "percentage": 116.52,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "Basterfield Park Scratchies",
+          "wins": 5,
+          "points": 56,
+          "percentage": 104.49,
+          "marker": "P"
+        },
+        {
+          "position": 4,
+          "team": "Hurlingham Park Battlers",
+          "wins": 5,
+          "points": 47,
+          "percentage": 87.75,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Murrumbeena Beasts",
+          "wins": 3,
+          "points": 46,
+          "percentage": 100.77,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Black Rock Net Margin",
+          "wins": 0,
+          "points": 22,
+          "percentage": 67.12,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 6,
+        "doublesBestOf": 1,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "TN30-TN002",
+      "fixtures": 32,
+      "completed_fixtures": 29,
+      "draw_fixtures": 57,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 174,
+      "latest_round": 16,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": []
+    },
+    {
+      "asset_id": "TN30-TN003",
+      "competition_code": "TN",
+      "competition_label": "Tuesday Night - Autumn 2021",
+      "season_id": "TN30",
+      "season_label": "Autumn 2021",
+      "source_section_code": "TN003",
+      "section_label": "Section 3",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Basterfield Park Basterfield",
+          "wins": 6,
+          "points": 57,
+          "percentage": 138.46,
+          "marker": "R"
+        },
+        {
+          "position": 2,
+          "team": "Hurlingham Park HP Sauce",
+          "wins": 5,
+          "points": 48,
+          "percentage": 113.17,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "Black Rock Tim Tams",
+          "wins": 4,
+          "points": 46,
+          "percentage": 116.57,
+          "marker": "P"
+        },
+        {
+          "position": 4,
+          "team": "Stella Maris Mavericks",
+          "wins": 3,
+          "points": 36,
+          "percentage": 104.44,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Carmelite Middle Park",
+          "wins": 0,
+          "points": 13,
+          "percentage": 45.41,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 6,
+        "doublesBestOf": 1,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "TN30-TN003",
+      "fixtures": 32,
+      "completed_fixtures": 20,
+      "draw_fixtures": 57,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 120,
+      "latest_round": 16,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": []
+    },
+    {
+      "asset_id": "TN32-TN001",
+      "competition_code": "TN",
+      "competition_label": "Tuesday Night - Autumn 2022",
+      "season_id": "TN32",
+      "season_label": "Autumn 2022",
+      "source_section_code": "TN001",
+      "section_label": "Section 1",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Hurlingham Park Gunslingers",
+          "wins": 8,
+          "points": 80,
+          "percentage": 126.39,
+          "marker": ""
+        },
+        {
+          "position": 2,
+          "team": "Black Rock Brady Bunch",
+          "wins": 7,
+          "points": 69,
+          "percentage": 110.66,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "Black Rock Snags",
+          "wins": 7,
+          "points": 65,
+          "percentage": 104.18,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Maccabi AddamsFamily",
+          "wins": 5,
+          "points": 55,
+          "percentage": 92.97,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Basterfield Park Scratchies",
+          "wins": 1,
+          "points": 31,
+          "percentage": 70.78,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 6,
+        "doublesBestOf": 1,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "TN32-TN001",
+      "fixtures": 46,
+      "completed_fixtures": 28,
+      "draw_fixtures": 57,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 168,
+      "latest_round": 16,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": []
+    },
+    {
+      "asset_id": "TN32-TN002",
+      "competition_code": "TN",
+      "competition_label": "Tuesday Night - Autumn 2022",
+      "season_id": "TN32",
+      "season_label": "Autumn 2022",
+      "source_section_code": "TN002",
+      "section_label": "Section 2",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "St James All Stars",
+          "wins": 11,
+          "points": 96,
+          "percentage": 143.84,
+          "marker": ""
+        },
+        {
+          "position": 2,
+          "team": "Hurlingham Park Hoboes",
+          "wins": 7,
+          "points": 75,
+          "percentage": 121.68,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "St James Premiers",
+          "wins": 7,
+          "points": 71,
+          "percentage": 126.6,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Hurlingham Park Battlers",
+          "wins": 6,
+          "points": 63,
+          "percentage": 101.25,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "St Finbar's Barbarians",
+          "wins": 4,
+          "points": 49,
+          "percentage": 87.78,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Black Rock Net Margin",
+          "wins": 4,
+          "points": 36,
+          "percentage": 65.51,
+          "marker": ""
+        },
+        {
+          "position": 7,
+          "team": "Murrumbeena Beasts",
+          "wins": 1,
+          "points": 30,
+          "percentage": 75.0,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 6,
+        "doublesBestOf": 1,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "TN32-TN002",
+      "fixtures": 59,
+      "completed_fixtures": 44,
+      "draw_fixtures": 59,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 262,
+      "latest_round": 17,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": []
+    },
+    {
+      "asset_id": "TN32-TN003",
+      "competition_code": "TN",
+      "competition_label": "Tuesday Night - Autumn 2022",
+      "season_id": "TN32",
+      "season_label": "Autumn 2022",
+      "source_section_code": "TN003",
+      "section_label": "Section 3",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Basterfield Park Basterfield",
+          "wins": 8,
+          "points": 92,
+          "percentage": 153.91,
+          "marker": ""
+        },
+        {
+          "position": 2,
+          "team": "Glen Huntly Dropshots",
+          "wins": 7,
+          "points": 74,
+          "percentage": 122.41,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "Hurlingham Park HP Sauce",
+          "wins": 5,
+          "points": 59,
+          "percentage": 101.02,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Black Rock Tim Tams",
+          "wins": 3,
+          "points": 45,
+          "percentage": 77.23,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Murrumbeena Aces",
+          "wins": 2,
+          "points": 30,
+          "percentage": 68.7,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 6,
+        "doublesBestOf": 1,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "TN32-TN003",
+      "fixtures": 46,
+      "completed_fixtures": 27,
+      "draw_fixtures": 57,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 160,
+      "latest_round": 16,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": []
+    },
+    {
+      "asset_id": "TN32-TN004",
+      "competition_code": "TN",
+      "competition_label": "Tuesday Night - Autumn 2022",
+      "season_id": "TN32",
+      "season_label": "Autumn 2022",
+      "source_section_code": "TN004",
+      "section_label": "Section 4",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Stella Maris Mavericks",
+          "wins": 12,
+          "points": 118,
+          "percentage": 150.33,
+          "marker": ""
+        },
+        {
+          "position": 2,
+          "team": "St James Redlegs",
+          "wins": 7,
+          "points": 82,
+          "percentage": 113.97,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "Glen Huntly Moonballs",
+          "wins": 4,
+          "points": 54,
+          "percentage": 78.24,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Carmelite Middle Park",
+          "wins": 3,
+          "points": 46,
+          "percentage": 73.46,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 6,
+        "doublesBestOf": 1,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "TN32-TN004",
+      "fixtures": 31,
+      "completed_fixtures": 27,
+      "draw_fixtures": 57,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 162,
+      "latest_round": 16,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": []
+    },
+    {
+      "asset_id": "TN34-TN001",
+      "competition_code": "TN",
+      "competition_label": "Tuesday Night - Autumn 2023",
+      "season_id": "TN34",
+      "season_label": "Autumn 2023",
+      "source_section_code": "TN001",
+      "section_label": "Section 1",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Black Rock UrbanWarGods",
+          "wins": 10,
+          "points": 97,
+          "percentage": 167.86,
+          "marker": "P"
+        },
+        {
+          "position": 2,
+          "team": "Hurlingham Park Gunslingers",
+          "wins": 6,
+          "points": 74,
+          "percentage": 121.37,
+          "marker": "R"
+        },
+        {
+          "position": 3,
+          "team": "St James Premiers",
+          "wins": 4,
+          "points": 56,
+          "percentage": 96.62,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Maccabi Adams Family",
+          "wins": 4,
+          "points": 55,
+          "percentage": 88.03,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Hurlingham Park Hoboes",
+          "wins": 4,
+          "points": 53,
+          "percentage": 94.62,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Lauriston Lemurs",
+          "wins": 3,
+          "points": 47,
+          "percentage": 85.5,
+          "marker": ""
+        },
+        {
+          "position": 7,
+          "team": "Basterfield Park Scratchies",
+          "wins": 2,
+          "points": 38,
+          "percentage": 72.52,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 6,
+        "doublesBestOf": 1,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "TN34-TN001",
+      "fixtures": 59,
+      "completed_fixtures": 39,
+      "draw_fixtures": 59,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 230,
+      "latest_round": 17,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": []
+    },
+    {
+      "asset_id": "TN34-TN002",
+      "competition_code": "TN",
+      "competition_label": "Tuesday Night - Autumn 2023",
+      "season_id": "TN34",
+      "season_label": "Autumn 2023",
+      "source_section_code": "TN002",
+      "section_label": "Section 2",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Hurlingham Park Battlers",
+          "wins": 14,
+          "points": 124,
+          "percentage": 150.47,
+          "marker": "P"
+        },
+        {
+          "position": 2,
+          "team": "Black Rock Shanks-a-lot",
+          "wins": 8,
+          "points": 87,
+          "percentage": 116.62,
+          "marker": "R"
+        },
+        {
+          "position": 3,
+          "team": "St Finbar's Barbarians",
+          "wins": 8,
+          "points": 86,
+          "percentage": 115.56,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "St James All Stars",
+          "wins": 7,
+          "points": 75,
+          "percentage": 100.25,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "St Finbar's Black Sheep",
+          "wins": 2,
+          "points": 48,
+          "percentage": 76.96,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Black Rock Net Margin",
+          "wins": 1,
+          "points": 30,
+          "percentage": 61.24,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 6,
+        "doublesBestOf": 1,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "TN34-TN002",
+      "fixtures": 46,
+      "completed_fixtures": 42,
+      "draw_fixtures": 57,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 248,
+      "latest_round": 16,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": []
+    },
+    {
+      "asset_id": "TN34-TN003",
+      "competition_code": "TN",
+      "competition_label": "Tuesday Night - Autumn 2023",
+      "season_id": "TN34",
+      "season_label": "Autumn 2023",
+      "source_section_code": "TN003",
+      "section_label": "Section 3",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Murrumbeena Beasts",
+          "wins": 10,
+          "points": 100,
+          "percentage": 127.62,
+          "marker": "P"
+        },
+        {
+          "position": 2,
+          "team": "Basterfield Park Basterfield",
+          "wins": 10,
+          "points": 98,
+          "percentage": 123.44,
+          "marker": "R"
+        },
+        {
+          "position": 3,
+          "team": "Stella Maris Mavericks",
+          "wins": 7,
+          "points": 81,
+          "percentage": 114.33,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Hurlingham Park HP Sauce",
+          "wins": 4,
+          "points": 61.5,
+          "percentage": 87.54,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "St James Redlegs",
+          "wins": 4,
+          "points": 56,
+          "percentage": 74.94,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Maccabi Magicians",
+          "wins": 2,
+          "points": 53.5,
+          "percentage": 79.94,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 6,
+        "doublesBestOf": 1,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "TN34-TN003",
+      "fixtures": 46,
+      "completed_fixtures": 38,
+      "draw_fixtures": 57,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 228,
+      "latest_round": 16,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": []
+    },
+    {
+      "asset_id": "TN34-TN004",
+      "competition_code": "TN",
+      "competition_label": "Tuesday Night - Autumn 2023",
+      "season_id": "TN34",
+      "season_label": "Autumn 2023",
+      "source_section_code": "TN004",
+      "section_label": "Section 4",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Glen Huntly Moonballs",
+          "wins": 7,
+          "points": 81,
+          "percentage": 131.28,
+          "marker": "P"
+        },
+        {
+          "position": 2,
+          "team": "Murrumbeena Aces",
+          "wins": 7,
+          "points": 71,
+          "percentage": 112.46,
+          "marker": "R"
+        },
+        {
+          "position": 3,
+          "team": "Carmelite Middle Park",
+          "wins": 4,
+          "points": 57,
+          "percentage": 111.52,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Black Rock Racq Pack",
+          "wins": 3,
+          "points": 54,
+          "percentage": 89.16,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Patterson Lakes",
+          "wins": 3,
+          "points": 37,
+          "percentage": 61.4,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 6,
+        "doublesBestOf": 1,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "TN34-TN004",
+      "fixtures": 46,
+      "completed_fixtures": 23,
+      "draw_fixtures": 57,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 138,
+      "latest_round": 16,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": []
+    },
+    {
+      "asset_id": "TN36-TN001",
+      "competition_code": "TN",
+      "competition_label": "Tuesday Night - Autumn 2024",
+      "season_id": "TN36",
+      "season_label": "Autumn 2024",
+      "source_section_code": "TN001",
+      "section_label": "Section 1",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Hurlingham Park Gunslingers",
+          "wins": 10,
+          "points": 91,
+          "percentage": 111.4,
+          "marker": "R"
+        },
+        {
+          "position": 2,
+          "team": "Hurlingham Park Hoboes",
+          "wins": 8,
+          "points": 87,
+          "percentage": 115.58,
+          "marker": "P"
+        },
+        {
+          "position": 3,
+          "team": "Black Rock UrbanWarGods",
+          "wins": 9,
+          "points": 83,
+          "percentage": 110.31,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Basterfield Park HamptonHacks",
+          "wins": 6,
+          "points": 74,
+          "percentage": 96.49,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Lauriston Lemurs",
+          "wins": 6,
+          "points": 63,
+          "percentage": 87.32,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Hurlingham Park Battlers",
+          "wins": 4,
+          "points": 52,
+          "percentage": 83.91,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 6,
+        "doublesBestOf": 1,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "TN36-TN001",
+      "fixtures": 46,
+      "completed_fixtures": 43,
+      "draw_fixtures": 57,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 258,
+      "latest_round": 16,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": [
+        "Fixture game totals do not match rubbers for TN001321: TROLS team total 24-25; complete-score total 24-24. Both published records retained."
+      ]
+    },
+    {
+      "asset_id": "TN36-TN002",
+      "competition_code": "TN",
+      "competition_label": "Tuesday Night - Autumn 2024",
+      "season_id": "TN36",
+      "season_label": "Autumn 2024",
+      "source_section_code": "TN002",
+      "section_label": "Section 2",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "St James Premiers",
+          "wins": 11,
+          "points": 100,
+          "percentage": 120.59,
+          "marker": "P"
+        },
+        {
+          "position": 2,
+          "team": "Basterfield Park Scratchies",
+          "wins": 9,
+          "points": 94,
+          "percentage": 122.54,
+          "marker": "R"
+        },
+        {
+          "position": 3,
+          "team": "St Finbar's Barbarians",
+          "wins": 10,
+          "points": 90,
+          "percentage": 111.73,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "St James All Stars",
+          "wins": 9,
+          "points": 87,
+          "percentage": 110.53,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Stella Maris Mavericks",
+          "wins": 3,
+          "points": 48,
+          "percentage": 82.74,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Maccabi White Lines",
+          "wins": 2,
+          "points": 31,
+          "percentage": 61.34,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 6,
+        "doublesBestOf": 1,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "TN36-TN002",
+      "fixtures": 46,
+      "completed_fixtures": 44,
+      "draw_fixtures": 57,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 264,
+      "latest_round": 16,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": []
+    },
+    {
+      "asset_id": "TN36-TN003",
+      "competition_code": "TN",
+      "competition_label": "Tuesday Night - Autumn 2024",
+      "season_id": "TN36",
+      "season_label": "Autumn 2024",
+      "source_section_code": "TN003",
+      "section_label": "Section 3",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Murrumbeena Beasts",
+          "wins": 10,
+          "points": 95.5,
+          "percentage": 119.44,
+          "marker": "P"
+        },
+        {
+          "position": 2,
+          "team": "Hurlingham Park HP Sauce",
+          "wins": 9,
+          "points": 90.5,
+          "percentage": 109.02,
+          "marker": "R"
+        },
+        {
+          "position": 3,
+          "team": "St James Redlegs",
+          "wins": 8,
+          "points": 80,
+          "percentage": 104.39,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Basterfield Park",
+          "wins": 5,
+          "points": 69,
+          "percentage": 97.05,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Maccabi Magicians",
+          "wins": 5,
+          "points": 62,
+          "percentage": 91.29,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "St Finbar's Black Sheep",
+          "wins": 5,
+          "points": 53,
+          "percentage": 83.18,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 6,
+        "doublesBestOf": 1,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "TN36-TN003",
+      "fixtures": 46,
+      "completed_fixtures": 45,
+      "draw_fixtures": 57,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 264,
+      "latest_round": 16,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": [
+        "Incomplete TROLS score for TN003032 doubles No. 6: '6-6'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for TN003063 doubles No. 3: '2-0'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for TN003063 doubles No. 4: '1-2'. Missing score not inferred; excluded from ratings and game totals."
+      ]
+    },
+    {
+      "asset_id": "TN36-TN004",
+      "competition_code": "TN",
+      "competition_label": "Tuesday Night - Autumn 2024",
+      "season_id": "TN36",
+      "season_label": "Autumn 2024",
+      "source_section_code": "TN004",
+      "section_label": "Section 4",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Glen Huntly Moonballs",
+          "wins": 10,
+          "points": 90,
+          "percentage": 168.35,
+          "marker": "P"
+        },
+        {
+          "position": 2,
+          "team": "Hurlingham Park Hammers",
+          "wins": 8,
+          "points": 82.5,
+          "percentage": 128.11,
+          "marker": "R"
+        },
+        {
+          "position": 3,
+          "team": "Black Rock Breakers",
+          "wins": 5,
+          "points": 56,
+          "percentage": 101.88,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Murrumbeena Aces",
+          "wins": 5,
+          "points": 53.5,
+          "percentage": 81.53,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Carmelite Middle Park",
+          "wins": 1,
+          "points": 18,
+          "percentage": 49.28,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 6,
+        "doublesBestOf": 1,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "TN36-TN004",
+      "fixtures": 46,
+      "completed_fixtures": 29,
+      "draw_fixtures": 57,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 174,
+      "latest_round": 16,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": [
+        "Incomplete TROLS score for TN004141 doubles No. 5: '6-6'. Missing score not inferred; excluded from ratings and game totals."
+      ]
+    },
+    {
+      "asset_id": "TN38-TN001",
+      "competition_code": "TN",
+      "competition_label": "Tuesday Night - Autumn 2025",
+      "season_id": "TN38",
+      "season_label": "Autumn 2025",
+      "source_section_code": "TN001",
+      "section_label": "Section 1",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Hurlingham Park Battlers",
+          "wins": 8,
+          "points": 75,
+          "percentage": 108.7,
+          "marker": "R"
+        },
+        {
+          "position": 2,
+          "team": "Hurlingham Park Gunslingers",
+          "wins": 8,
+          "points": 70,
+          "percentage": 106.15,
+          "marker": "P"
+        },
+        {
+          "position": 3,
+          "team": "Maccabi AddamsFam",
+          "wins": 6,
+          "points": 68,
+          "percentage": 109.8,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Black Rock UrbanWarGods",
+          "wins": 6,
+          "points": 61,
+          "percentage": 104.76,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Hurlingham Park Hoboes",
+          "wins": 5,
+          "points": 61,
+          "percentage": 100.66,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Hurlingham Park Lobs",
+          "wins": 4,
+          "points": 52,
+          "percentage": 95.09,
+          "marker": ""
+        },
+        {
+          "position": 7,
+          "team": "Basterfield Park Rippers",
+          "wins": 2,
+          "points": 33,
+          "percentage": 79.24,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 6,
+        "doublesBestOf": 1,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "TN38-TN001",
+      "fixtures": 59,
+      "completed_fixtures": 42,
+      "draw_fixtures": 59,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 252,
+      "latest_round": 17,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": []
+    },
+    {
+      "asset_id": "TN38-TN002",
+      "competition_code": "TN",
+      "competition_label": "Tuesday Night - Autumn 2025",
+      "season_id": "TN38",
+      "season_label": "Autumn 2025",
+      "source_section_code": "TN002",
+      "section_label": "Section 2",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Kings Park Royals",
+          "wins": 9,
+          "points": 83.5,
+          "percentage": 126.13,
+          "marker": "P"
+        },
+        {
+          "position": 2,
+          "team": "St James Premiers",
+          "wins": 7,
+          "points": 72,
+          "percentage": 110.95,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "St Finbar's Barbarians",
+          "wins": 6,
+          "points": 68,
+          "percentage": 109.49,
+          "marker": "R"
+        },
+        {
+          "position": 4,
+          "team": "Mentone Blasters",
+          "wins": 7,
+          "points": 68,
+          "percentage": 105.44,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Basterfield Park Scratchies",
+          "wins": 6,
+          "points": 64.5,
+          "percentage": 102.34,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Black Rock Strikers",
+          "wins": 1,
+          "points": 34,
+          "percentage": 83.78,
+          "marker": ""
+        },
+        {
+          "position": 7,
+          "team": "Basterfield Park Winners",
+          "wins": 2,
+          "points": 30,
+          "percentage": 70.94,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 6,
+        "doublesBestOf": 1,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "TN38-TN002",
+      "fixtures": 59,
+      "completed_fixtures": 42,
+      "draw_fixtures": 59,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 250,
+      "latest_round": 17,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": [
+        "Incomplete TROLS score for TN002023 doubles No. 6: '4-3'. Missing score not inferred; excluded from ratings and game totals."
+      ]
+    },
+    {
+      "asset_id": "TN38-TN003",
+      "competition_code": "TN",
+      "competition_label": "Tuesday Night - Autumn 2025",
+      "season_id": "TN38",
+      "season_label": "Autumn 2025",
+      "source_section_code": "TN003",
+      "section_label": "Section 3",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Murrumbeena Beena Beasts",
+          "wins": 9,
+          "points": 85,
+          "percentage": 130.48,
+          "marker": "R"
+        },
+        {
+          "position": 2,
+          "team": "Hurlingham Park HPSauce",
+          "wins": 8,
+          "points": 77,
+          "percentage": 117.22,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "St James Redlegs",
+          "wins": 5,
+          "points": 64,
+          "percentage": 120.45,
+          "marker": "P"
+        },
+        {
+          "position": 4,
+          "team": "Basterfield Park Basterfield",
+          "wins": 5,
+          "points": 62,
+          "percentage": 96.2,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Hurlingham Park Hammers",
+          "wins": 3,
+          "points": 47.5,
+          "percentage": 85.67,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Maccabi Magicians",
+          "wins": 3,
+          "points": 45.5,
+          "percentage": 84.24,
+          "marker": ""
+        },
+        {
+          "position": 7,
+          "team": "Ormond Dragons",
+          "wins": 3,
+          "points": 39,
+          "percentage": 77.05,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 6,
+        "doublesBestOf": 1,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "TN38-TN003",
+      "fixtures": 59,
+      "completed_fixtures": 42,
+      "draw_fixtures": 59,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 252,
+      "latest_round": 17,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": [
+        "Incomplete TROLS score for TN003023 doubles No. 6: '5-5'. Missing score not inferred; excluded from ratings and game totals."
+      ]
+    },
+    {
+      "asset_id": "TN38-TN004",
+      "competition_code": "TN",
+      "competition_label": "Tuesday Night - Autumn 2025",
+      "season_id": "TN38",
+      "season_label": "Autumn 2025",
+      "source_section_code": "TN004",
+      "section_label": "Section 4",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Glen Huntly Moonballs",
+          "wins": 10,
+          "points": 102,
+          "percentage": 130.95,
+          "marker": "P"
+        },
+        {
+          "position": 2,
+          "team": "St Finbar's Black Sheep",
+          "wins": 9,
+          "points": 88,
+          "percentage": 112.32,
+          "marker": "R"
+        },
+        {
+          "position": 3,
+          "team": "Stella Maris Mavericks",
+          "wins": 5,
+          "points": 68,
+          "percentage": 96.13,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Middle Brighton Warriors",
+          "wins": 6,
+          "points": 67,
+          "percentage": 97.12,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Maccabi Blues",
+          "wins": 6,
+          "points": 67,
+          "percentage": 87.25,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "BLTC Tornadoes",
+          "wins": 4,
+          "points": 58,
+          "percentage": 83.33,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 6,
+        "doublesBestOf": 1,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "TN38-TN004",
+      "fixtures": 46,
+      "completed_fixtures": 41,
+      "draw_fixtures": 57,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 246,
+      "latest_round": 16,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": []
+    },
+    {
+      "asset_id": "TN38-TN005",
+      "competition_code": "TN",
+      "competition_label": "Tuesday Night - Autumn 2025",
+      "season_id": "TN38",
+      "season_label": "Autumn 2025",
+      "source_section_code": "TN005",
+      "section_label": "Section 5",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Black Rock Breakers",
+          "wins": 11,
+          "points": 105,
+          "percentage": 191.0,
+          "marker": "P"
+        },
+        {
+          "position": 2,
+          "team": "Murrumbeena Aces",
+          "wins": 7,
+          "points": 77,
+          "percentage": 134.8,
+          "marker": "R"
+        },
+        {
+          "position": 3,
+          "team": "Mentone KillaBees",
+          "wins": 6,
+          "points": 63,
+          "percentage": 105.69,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Glen Huntly Gophers",
+          "wins": 6,
+          "points": 62,
+          "percentage": 100.69,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Wattle Knights",
+          "wins": 4,
+          "points": 53,
+          "percentage": 92.36,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Carmelite Middle Park",
+          "wins": 5,
+          "points": 50,
+          "percentage": 85.59,
+          "marker": ""
+        },
+        {
+          "position": 7,
+          "team": "Middle Brighton Whombats",
+          "wins": 0,
+          "points": 10,
+          "percentage": 47.45,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 6,
+        "doublesBestOf": 1,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "TN38-TN005",
+      "fixtures": 59,
+      "completed_fixtures": 42,
+      "draw_fixtures": 48,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 252,
+      "latest_round": 17,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": []
+    },
+    {
+      "asset_id": "TN40-TN001",
+      "competition_code": "TN",
+      "competition_label": "Tuesday Night - Autumn 2026",
+      "season_id": "TN40",
+      "season_label": "Autumn 2026",
+      "source_section_code": "TN001",
+      "section_label": "Section 1",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Hurlingham Park Gunslingers",
+          "wins": 12,
+          "points": 115,
+          "percentage": 161.4,
+          "marker": ""
+        },
+        {
+          "position": 2,
+          "team": "Black Rock UrbanWarGods",
+          "wins": 10,
+          "points": 101,
+          "percentage": 144.08,
+          "marker": "P"
+        },
+        {
+          "position": 3,
+          "team": "Hurlingham Park Lobs",
+          "wins": 8,
+          "points": 86.5,
+          "percentage": 116.24,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Maccabi Blue",
+          "wins": 4,
+          "points": 60,
+          "percentage": 92.84,
+          "marker": "R"
+        },
+        {
+          "position": 5,
+          "team": "Hurlingham Park Battlers",
+          "wins": 5,
+          "points": 60,
+          "percentage": 91.3,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Hurlingham Park Hoboes",
+          "wins": 5,
+          "points": 57,
+          "percentage": 88.35,
+          "marker": ""
+        },
+        {
+          "position": 7,
+          "team": "Kings Park Royals",
+          "wins": 4,
+          "points": 45.5,
+          "percentage": 78.7,
+          "marker": ""
+        },
+        {
+          "position": 8,
+          "team": "St Finbar's Barbarians",
+          "wins": 2,
+          "points": 35,
+          "percentage": 67.14,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 6,
+        "doublesBestOf": 1,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "TN40-TN001",
+      "fixtures": 59,
+      "completed_fixtures": 54,
+      "draw_fixtures": 59,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 324,
+      "latest_round": 17,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": [
+        "Incomplete TROLS score for TN001032 doubles No. 5: '3-3'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for TN001032 doubles No. 6: '3-1'. Missing score not inferred; excluded from ratings and game totals."
+      ]
+    },
+    {
+      "asset_id": "TN40-TN002",
+      "competition_code": "TN",
+      "competition_label": "Tuesday Night - Autumn 2026",
+      "season_id": "TN40",
+      "season_label": "Autumn 2026",
+      "source_section_code": "TN002",
+      "section_label": "Section 2",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Black Rock Strikers",
+          "wins": 7,
+          "points": 75,
+          "percentage": 117.73,
+          "marker": "P"
+        },
+        {
+          "position": 2,
+          "team": "Basterfield Park Winners",
+          "wins": 6,
+          "points": 68,
+          "percentage": 111.11,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "Basterfield Park Scratchies",
+          "wins": 6,
+          "points": 67,
+          "percentage": 104.44,
+          "marker": "R"
+        },
+        {
+          "position": 4,
+          "team": "Murrumbeena Beasts",
+          "wins": 6,
+          "points": 65,
+          "percentage": 105.2,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "St James Premiers",
+          "wins": 6,
+          "points": 62,
+          "percentage": 101.32,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Beaumaris CC Sharks",
+          "wins": 5,
+          "points": 61,
+          "percentage": 102.17,
+          "marker": ""
+        },
+        {
+          "position": 7,
+          "team": "Hurlingham Park HPSauce",
+          "wins": 0,
+          "points": 22,
+          "percentage": 66.4,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 6,
+        "doublesBestOf": 1,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "TN40-TN002",
+      "fixtures": 59,
+      "completed_fixtures": 43,
+      "draw_fixtures": 59,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 255,
+      "latest_round": 17,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": [
+        "Incomplete TROLS score for TN002044 doubles No. 5: '1-1'. Missing score not inferred; excluded from ratings and game totals."
+      ]
+    },
+    {
+      "asset_id": "TN40-TN003",
+      "competition_code": "TN",
+      "competition_label": "Tuesday Night - Autumn 2026",
+      "season_id": "TN40",
+      "season_label": "Autumn 2026",
+      "source_section_code": "TN003",
+      "section_label": "Section 3",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Hurlingham Park Hammers",
+          "wins": 8,
+          "points": 85.5,
+          "percentage": 140.08,
+          "marker": "P"
+        },
+        {
+          "position": 2,
+          "team": "St James Redlegs",
+          "wins": 7,
+          "points": 60.5,
+          "percentage": 91.92,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "Maccabi Magicians",
+          "wins": 5,
+          "points": 60,
+          "percentage": 97.34,
+          "marker": "R"
+        },
+        {
+          "position": 4,
+          "team": "Middle Brighton Warriors",
+          "wins": 4,
+          "points": 55,
+          "percentage": 94.53,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Mentone Blasters",
+          "wins": 4,
+          "points": 54.5,
+          "percentage": 102.52,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Basterfield Park Basterfield",
+          "wins": 5,
+          "points": 54.5,
+          "percentage": 90.68,
+          "marker": ""
+        },
+        {
+          "position": 7,
+          "team": "Keysborough KeysyComeKGo",
+          "wins": 4,
+          "points": 50,
+          "percentage": 90.54,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 6,
+        "doublesBestOf": 1,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "TN40-TN003",
+      "fixtures": 59,
+      "completed_fixtures": 42,
+      "draw_fixtures": 59,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 247,
+      "latest_round": 17,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": [
+        "Incomplete TROLS score for TN003042 doubles No. 5: '4-2'. Missing score not inferred; excluded from ratings and game totals."
+      ]
+    },
+    {
+      "asset_id": "TN40-TN004",
+      "competition_code": "TN",
+      "competition_label": "Tuesday Night - Autumn 2026",
+      "season_id": "TN40",
+      "season_label": "Autumn 2026",
+      "source_section_code": "TN004",
+      "section_label": "Section 4",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Middle Brighton Whompbats",
+          "wins": 11,
+          "points": 97.5,
+          "percentage": 130.36,
+          "marker": "R"
+        },
+        {
+          "position": 2,
+          "team": "Ormond Dragons",
+          "wins": 11,
+          "points": 95,
+          "percentage": 121.73,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "BLTC Tornadoes",
+          "wins": 9,
+          "points": 90,
+          "percentage": 127.22,
+          "marker": "P"
+        },
+        {
+          "position": 4,
+          "team": "Black Rock Breakers",
+          "wins": 8,
+          "points": 82,
+          "percentage": 111.86,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "St Finbar's Black Sheep",
+          "wins": 8,
+          "points": 77,
+          "percentage": 109.47,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Glen Huntly Moonballs",
+          "wins": 5,
+          "points": 64.5,
+          "percentage": 92.68,
+          "marker": ""
+        },
+        {
+          "position": 7,
+          "team": "Stella Maris Mavericks",
+          "wins": 2,
+          "points": 36,
+          "percentage": 78.12,
+          "marker": ""
+        },
+        {
+          "position": 8,
+          "team": "St Pauls Knights",
+          "wins": 0,
+          "points": 18,
+          "percentage": 51.77,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 6,
+        "doublesBestOf": 1,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "TN40-TN004",
+      "fixtures": 59,
+      "completed_fixtures": 58,
+      "draw_fixtures": 59,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 346,
+      "latest_round": 17,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": [
+        "Incomplete TROLS score for TN004042 doubles No. 5: '3-2'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for TN004042 doubles No. 6: '3-2'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for TN004044 doubles No. 5: '5-5'. Missing score not inferred; excluded from ratings and game totals."
+      ]
+    },
+    {
+      "asset_id": "TN40-TN005",
+      "competition_code": "TN",
+      "competition_label": "Tuesday Night - Autumn 2026",
+      "season_id": "TN40",
+      "season_label": "Autumn 2026",
+      "source_section_code": "TN005",
+      "section_label": "Section 5",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Murrumbeena Aces",
+          "wins": 10,
+          "points": 89.5,
+          "percentage": 135.14,
+          "marker": "P"
+        },
+        {
+          "position": 2,
+          "team": "Wattle Warriors",
+          "wins": 6,
+          "points": 62,
+          "percentage": 105.79,
+          "marker": "R"
+        },
+        {
+          "position": 3,
+          "team": "Mentone Killa Bee",
+          "wins": 6,
+          "points": 58.5,
+          "percentage": 91.91,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "St Pauls Crusaders",
+          "wins": 4,
+          "points": 52,
+          "percentage": 92.83,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Carmelite Middle Park",
+          "wins": 3,
+          "points": 38,
+          "percentage": 76.29,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 6,
+        "doublesBestOf": 1,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "TN40-TN005",
+      "fixtures": 46,
+      "completed_fixtures": 29,
+      "draw_fixtures": 46,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 174,
+      "latest_round": 16,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": [
+        "Incomplete TROLS score for TN005041 doubles No. 5: '3-1'. Missing score not inferred; excluded from ratings and game totals."
+      ]
+    },
+    {
+      "asset_id": "TN1-TN001",
+      "competition_code": "TN",
+      "competition_label": "Tuesday Night - Spring 2010",
+      "season_id": "TN1",
+      "season_label": "Spring 2010",
+      "source_section_code": "TN001",
+      "section_label": "Night",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Black Rock Rusty Balls",
+          "wins": 0,
+          "points": 8,
+          "percentage": 128.0,
+          "marker": ""
+        },
+        {
+          "position": 2,
+          "team": "Black Rock Woodlands",
+          "wins": 0,
+          "points": 2,
+          "percentage": 78.13,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "Carmelite MiddleParkSP",
+          "wins": 0,
+          "points": 0,
+          "percentage": 0.0,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Elwood WoodlandsII",
+          "wins": 0,
+          "points": 0,
+          "percentage": 0.0,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Basterfield Park 3Peat",
+          "wins": 0,
+          "points": 0,
+          "percentage": 0.0,
+          "marker": "*"
+        },
+        {
+          "position": 6,
+          "team": "Basterfield Park",
+          "wins": 0,
+          "points": 0,
+          "percentage": 0.0,
+          "marker": "*"
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 0,
+        "doublesBestOf": 1,
+        "doublesTarget": 6,
+        "playersPerTeam": 0,
+        "matchTiebreak": false
+      },
+      "section_code": "TN1-TN001",
+      "fixtures": 4,
+      "completed_fixtures": 1,
+      "draw_fixtures": 56,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 0,
+      "latest_round": 1,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": [
+        "No scorecard rubbers for TN001013",
+        "Fixture game totals do not match rubbers for TN001013: TROLS team total 32-25; complete-score total 0-0. Both published records retained."
+      ]
+    },
+    {
+      "asset_id": "TN3-TN001",
+      "competition_code": "TN",
+      "competition_label": "Tuesday Night - Spring 2011",
+      "season_id": "TN3",
+      "season_label": "Spring 2011",
+      "source_section_code": "TN001",
+      "section_label": "TueNight",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Basterfield Park Scratchies",
+          "wins": 7,
+          "points": 73,
+          "percentage": 149.72,
+          "marker": "*"
+        },
+        {
+          "position": 2,
+          "team": "Black Rock Rusty",
+          "wins": 6,
+          "points": 67,
+          "percentage": 128.74,
+          "marker": "*"
+        },
+        {
+          "position": 3,
+          "team": "Carmelite MP",
+          "wins": 5,
+          "points": 52,
+          "percentage": 102.0,
+          "marker": "*"
+        },
+        {
+          "position": 4,
+          "team": "Elwood Unknowns",
+          "wins": 4,
+          "points": 51,
+          "percentage": 95.93,
+          "marker": "*"
+        },
+        {
+          "position": 5,
+          "team": "Black Rock Woodlands",
+          "wins": 5,
+          "points": 48,
+          "percentage": 111.06,
+          "marker": "*"
+        },
+        {
+          "position": 6,
+          "team": "Elwood El TooGood",
+          "wins": 5,
+          "points": 45,
+          "percentage": 100.49,
+          "marker": "*"
+        },
+        {
+          "position": 7,
+          "team": "Basterfield Park BP",
+          "wins": 1,
+          "points": 20,
+          "percentage": 80.54,
+          "marker": "*"
+        },
+        {
+          "position": 8,
+          "team": "Hurlingham Park HP",
+          "wins": 1,
+          "points": 14,
+          "percentage": 60.06,
+          "marker": "*"
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 6,
+        "doublesBestOf": 1,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "TN3-TN001",
+      "fixtures": 48,
+      "completed_fixtures": 36,
+      "draw_fixtures": 56,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 210,
+      "latest_round": 12,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": []
+    },
+    {
+      "asset_id": "TN6-TN001",
+      "competition_code": "TN",
+      "competition_label": "Tuesday Night - Spring 2013",
+      "season_id": "TN6",
+      "season_label": "Spring 2013",
+      "source_section_code": "TN001",
+      "section_label": "Section 1",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Black Rock Rusty Balls",
+          "wins": 9,
+          "points": 109,
+          "percentage": 137.99,
+          "marker": "P"
+        },
+        {
+          "position": 2,
+          "team": "Basterfield Park Scratchies",
+          "wins": 9,
+          "points": 90,
+          "percentage": 132.88,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "Black Rock NetMargin",
+          "wins": 8,
+          "points": 81,
+          "percentage": 109.04,
+          "marker": "R"
+        },
+        {
+          "position": 4,
+          "team": "Basterfield Park BP",
+          "wins": 1,
+          "points": 63,
+          "percentage": 86.04,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Carmelite MP",
+          "wins": 1,
+          "points": 57,
+          "percentage": 64.66,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Black Rock Woodlands",
+          "wins": 3,
+          "points": 50,
+          "percentage": 85.43,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 6,
+        "doublesBestOf": 1,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "TN6-TN001",
+      "fixtures": 48,
+      "completed_fixtures": 35,
+      "draw_fixtures": 59,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 210,
+      "latest_round": 17,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": []
+    },
+    {
+      "asset_id": "TN6-TN002",
+      "competition_code": "TN",
+      "competition_label": "Tuesday Night - Spring 2013",
+      "season_id": "TN6",
+      "season_label": "Spring 2013",
+      "source_section_code": "TN002",
+      "section_label": "Section 2",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Hurlingham Park Ups",
+          "wins": 7,
+          "points": 115,
+          "percentage": 152.63,
+          "marker": "R"
+        },
+        {
+          "position": 2,
+          "team": "Le Page Rafa's Heros",
+          "wins": 6,
+          "points": 89,
+          "percentage": 142.13,
+          "marker": "P"
+        },
+        {
+          "position": 3,
+          "team": "Black Rock FIGJAM",
+          "wins": 4,
+          "points": 88,
+          "percentage": 103.76,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "St James StJames",
+          "wins": 2,
+          "points": 77,
+          "percentage": 76.13,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Hurlingham Park Hurl",
+          "wins": 0,
+          "points": 71,
+          "percentage": 47.45,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 6,
+        "doublesBestOf": 1,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "TN6-TN002",
+      "fixtures": 48,
+      "completed_fixtures": 22,
+      "draw_fixtures": 59,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 132,
+      "latest_round": 17,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": []
+    },
+    {
+      "asset_id": "TN15-TN001",
+      "competition_code": "TN",
+      "competition_label": "Tuesday Night - Spring 2015",
+      "season_id": "TN15",
+      "season_label": "Spring 2015",
+      "source_section_code": "TN001",
+      "section_label": "1-One",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Black Rock NetMargin",
+          "wins": 12,
+          "points": 112,
+          "percentage": 135.77,
+          "marker": ""
+        },
+        {
+          "position": 2,
+          "team": "St James AllStars",
+          "wins": 11,
+          "points": 112,
+          "percentage": 123.87,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "Basterfield Park Scratchies",
+          "wins": 10,
+          "points": 111,
+          "percentage": 139.25,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Black Rock Rockies",
+          "wins": 11,
+          "points": 111,
+          "percentage": 132.11,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "St James Premiers",
+          "wins": 11,
+          "points": 104,
+          "percentage": 117.57,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Carmelite MiddlePark",
+          "wins": 8,
+          "points": 84,
+          "percentage": 104.26,
+          "marker": ""
+        },
+        {
+          "position": 7,
+          "team": "Basterfield Park Baste",
+          "wins": 5,
+          "points": 78,
+          "percentage": 106.32,
+          "marker": ""
+        },
+        {
+          "position": 8,
+          "team": "Hurlingham Park Hoboes",
+          "wins": 6,
+          "points": 72,
+          "percentage": 92.73,
+          "marker": ""
+        },
+        {
+          "position": 9,
+          "team": "Hurlingham Park One",
+          "wins": 5,
+          "points": 67,
+          "percentage": 87.07,
+          "marker": ""
+        },
+        {
+          "position": 10,
+          "team": "Black Rock Heros",
+          "wins": 5,
+          "points": 58,
+          "percentage": 88.05,
+          "marker": ""
+        },
+        {
+          "position": 11,
+          "team": "Black Rock Snags",
+          "wins": 2,
+          "points": 34,
+          "percentage": 71.23,
+          "marker": ""
+        },
+        {
+          "position": 12,
+          "team": "Hurlingham Park HPSause",
+          "wins": 1,
+          "points": 17,
+          "percentage": 45.04,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 6,
+        "doublesBestOf": 1,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "TN15-TN001",
+      "fixtures": 96,
+      "completed_fixtures": 89,
+      "draw_fixtures": 56,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 534,
+      "latest_round": 16,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": []
+    },
+    {
+      "asset_id": "TN23-TN001",
+      "competition_code": "TN",
+      "competition_label": "Tuesday Night - Spring 2017",
+      "season_id": "TN23",
+      "season_label": "Spring 2017",
+      "source_section_code": "TN001",
+      "section_label": "1",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Black Rock Mavericks",
+          "wins": 0,
+          "points": 0,
+          "percentage": 0.0,
+          "marker": ""
+        },
+        {
+          "position": 2,
+          "team": "Hurlingham Park Hoboes",
+          "wins": 0,
+          "points": 0,
+          "percentage": 0.0,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "Carmelite MP",
+          "wins": 0,
+          "points": 0,
+          "percentage": 0.0,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Hurlingham Park Hpsause",
+          "wins": 0,
+          "points": 0,
+          "percentage": 0.0,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Basterfield Park Baste",
+          "wins": 0,
+          "points": 0,
+          "percentage": 0.0,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Black Rock Snags",
+          "wins": 0,
+          "points": 0,
+          "percentage": 0.0,
+          "marker": ""
+        },
+        {
+          "position": 7,
+          "team": "Hurlingham Park Gunslingers",
+          "wins": 0,
+          "points": 0,
+          "percentage": 0.0,
+          "marker": ""
+        },
+        {
+          "position": 8,
+          "team": "St James AllStars",
+          "wins": 0,
+          "points": 0,
+          "percentage": 0.0,
+          "marker": ""
+        },
+        {
+          "position": 9,
+          "team": "St James Premiers",
+          "wins": 0,
+          "points": 0,
+          "percentage": 0.0,
+          "marker": ""
+        },
+        {
+          "position": 10,
+          "team": "Hurlingham Park Battlers",
+          "wins": 0,
+          "points": 0,
+          "percentage": 0.0,
+          "marker": ""
+        },
+        {
+          "position": 11,
+          "team": "Black Rock Awesome4",
+          "wins": 0,
+          "points": 0,
+          "percentage": 0.0,
+          "marker": ""
+        },
+        {
+          "position": 12,
+          "team": "Black Rock UN",
+          "wins": 0,
+          "points": 0,
+          "percentage": 0.0,
+          "marker": ""
+        },
+        {
+          "position": 13,
+          "team": "Basterfield Park Scratchies",
+          "wins": 0,
+          "points": 0,
+          "percentage": 0.0,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 0,
+        "doublesBestOf": 1,
+        "doublesTarget": 6,
+        "playersPerTeam": 0,
+        "matchTiebreak": false
+      },
+      "section_code": "TN23-TN001",
+      "fixtures": 0,
+      "completed_fixtures": 0,
+      "draw_fixtures": 56,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 0,
+      "latest_round": 0,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": []
+    },
+    {
+      "asset_id": "TN23-TN002",
+      "competition_code": "TN",
+      "competition_label": "Tuesday Night - Spring 2017",
+      "season_id": "TN23",
+      "season_label": "Spring 2017",
+      "source_section_code": "TN002",
+      "section_label": "2",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 0,
+        "doublesBestOf": 1,
+        "doublesTarget": 6,
+        "playersPerTeam": 0,
+        "matchTiebreak": false
+      },
+      "section_code": "TN23-TN002",
+      "fixtures": 0,
+      "completed_fixtures": 0,
+      "draw_fixtures": 56,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 0,
+      "latest_round": 0,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": []
+    },
+    {
+      "asset_id": "TN25-TN001",
+      "competition_code": "TN",
+      "competition_label": "Tuesday Night - Spring 2018",
+      "season_id": "TN25",
+      "season_label": "Spring 2018",
+      "source_section_code": "TN001",
+      "section_label": "1",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Hurlingham Park Gunslingers",
+          "wins": 14,
+          "points": 100,
+          "percentage": 151.91,
+          "marker": "*"
+        },
+        {
+          "position": 2,
+          "team": "Bodley Tennis Plus PWC",
+          "wins": 13,
+          "points": 92,
+          "percentage": 135.99,
+          "marker": "*"
+        },
+        {
+          "position": 3,
+          "team": "Bodley Tennis Plus NetMargin",
+          "wins": 9,
+          "points": 86,
+          "percentage": 143.6,
+          "marker": "*"
+        },
+        {
+          "position": 4,
+          "team": "St James Premiers",
+          "wins": 9,
+          "points": 82,
+          "percentage": 116.16,
+          "marker": "*"
+        },
+        {
+          "position": 5,
+          "team": "Hurlingham Park Hoboes",
+          "wins": 7,
+          "points": 71,
+          "percentage": 98.08,
+          "marker": "*"
+        },
+        {
+          "position": 6,
+          "team": "Hurlingham Park Battlers",
+          "wins": 8,
+          "points": 70,
+          "percentage": 126.28,
+          "marker": "*"
+        },
+        {
+          "position": 7,
+          "team": "Basterfield Park Scratchies",
+          "wins": 9,
+          "points": 69,
+          "percentage": 109.18,
+          "marker": "*"
+        },
+        {
+          "position": 8,
+          "team": "St James AllStars",
+          "wins": 8,
+          "points": 63,
+          "percentage": 91.44,
+          "marker": "*"
+        },
+        {
+          "position": 9,
+          "team": "Basterfield Park Baste",
+          "wins": 4,
+          "points": 63,
+          "percentage": 82.06,
+          "marker": "*"
+        },
+        {
+          "position": 10,
+          "team": "Glen Huntly Glens",
+          "wins": 7,
+          "points": 55,
+          "percentage": 93.09,
+          "marker": "*"
+        },
+        {
+          "position": 11,
+          "team": "Bodley Tennis Plus Snags",
+          "wins": 3,
+          "points": 46,
+          "percentage": 77.75,
+          "marker": "*"
+        },
+        {
+          "position": 12,
+          "team": "Hurlingham Park Hpsause",
+          "wins": 4,
+          "points": 39,
+          "percentage": 74.85,
+          "marker": "*"
+        },
+        {
+          "position": 13,
+          "team": "Bodley Tennis Plus Mavericks",
+          "wins": 3,
+          "points": 27,
+          "percentage": 67.23,
+          "marker": "*"
+        },
+        {
+          "position": 14,
+          "team": "Carmelite MP",
+          "wins": 3,
+          "points": 25,
+          "percentage": 64.66,
+          "marker": "*"
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 6,
+        "doublesBestOf": 1,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "TN25-TN001",
+      "fixtures": 113,
+      "completed_fixtures": 101,
+      "draw_fixtures": 58,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 606,
+      "latest_round": 18,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": []
+    },
+    {
+      "asset_id": "TN27-TN001",
+      "competition_code": "TN",
+      "competition_label": "Tuesday Night - Spring 2019",
+      "season_id": "TN27",
+      "season_label": "Spring 2019",
+      "source_section_code": "TN001",
+      "section_label": "1",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Black Rock PWC",
+          "wins": 12,
+          "points": 101.5,
+          "percentage": 275.3,
+          "marker": "P"
+        },
+        {
+          "position": 2,
+          "team": "Hurlingham Park Gunslingers",
+          "wins": 12,
+          "points": 86,
+          "percentage": 144.67,
+          "marker": "R"
+        },
+        {
+          "position": 3,
+          "team": "Basterfield Park Scratchies",
+          "wins": 6,
+          "points": 61,
+          "percentage": 105.5,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Hurlingham Park Hoboes",
+          "wins": 7,
+          "points": 61,
+          "percentage": 100.93,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "St James Premiers",
+          "wins": 3,
+          "points": 45,
+          "percentage": 73.41,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "St James AllStars",
+          "wins": 5,
+          "points": 41,
+          "percentage": 76.63,
+          "marker": ""
+        },
+        {
+          "position": 7,
+          "team": "Black Rock Snags",
+          "wins": 3,
+          "points": 32,
+          "percentage": 73.29,
+          "marker": ""
+        },
+        {
+          "position": 8,
+          "team": "Black Rock NetMargin",
+          "wins": 1,
+          "points": 20.5,
+          "percentage": 61.04,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 6,
+        "doublesBestOf": 1,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "TN27-TN001",
+      "fixtures": 59,
+      "completed_fixtures": 52,
+      "draw_fixtures": 59,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 312,
+      "latest_round": 17,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": []
+    },
+    {
+      "asset_id": "TN27-TN003",
+      "competition_code": "TN",
+      "competition_label": "Tuesday Night - Spring 2019",
+      "season_id": "TN27",
+      "season_label": "Spring 2019",
+      "source_section_code": "TN003",
+      "section_label": "2",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Hurlingham Park Battlers",
+          "wins": 10,
+          "points": 86,
+          "percentage": 248.57,
+          "marker": "P"
+        },
+        {
+          "position": 2,
+          "team": "Basterfield Park Baste",
+          "wins": 8,
+          "points": 69,
+          "percentage": 135.18,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "Black Rock BHC",
+          "wins": 5,
+          "points": 53.5,
+          "percentage": 101.09,
+          "marker": "R"
+        },
+        {
+          "position": 4,
+          "team": "Hurlingham Park HpSause",
+          "wins": 6,
+          "points": 49,
+          "percentage": 104.01,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Carmelite Mp",
+          "wins": 0,
+          "points": 35.5,
+          "percentage": 58.27,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Bodley Tennis Plus Mavericks",
+          "wins": 4,
+          "points": 34,
+          "percentage": 77.55,
+          "marker": ""
+        },
+        {
+          "position": 7,
+          "team": "Bodley Tennis Plus LWL",
+          "wins": 0,
+          "points": 9,
+          "percentage": 37.8,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 6,
+        "doublesBestOf": 1,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "TN27-TN003",
+      "fixtures": 59,
+      "completed_fixtures": 36,
+      "draw_fixtures": 59,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 216,
+      "latest_round": 17,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": [
+        "Incomplete TROLS score for TN003083 doubles No. 6: '5-5'. Missing score not inferred; excluded from ratings and game totals."
+      ]
+    },
+    {
+      "asset_id": "TN29-TN001",
+      "competition_code": "TN",
+      "competition_label": "Tuesday Night - Spring 2020",
+      "season_id": "TN29",
+      "season_label": "Spring 2020",
+      "source_section_code": "TN001",
+      "section_label": "Section 1",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Black Rock Brady Bunch",
+          "wins": 5,
+          "points": 45,
+          "percentage": 168.69,
+          "marker": ""
+        },
+        {
+          "position": 2,
+          "team": "Hurlingham Park Gunslingers",
+          "wins": 3,
+          "points": 35,
+          "percentage": 118.81,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "Hurlingham Park Hoboes",
+          "wins": 3,
+          "points": 31,
+          "percentage": 110.69,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "St James Premiers",
+          "wins": 3,
+          "points": 29,
+          "percentage": 115.2,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Basterfield Park Scratchies",
+          "wins": 1,
+          "points": 18,
+          "percentage": 85.21,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "St James All Stars",
+          "wins": 1,
+          "points": 17,
+          "percentage": 90.06,
+          "marker": ""
+        },
+        {
+          "position": 7,
+          "team": "Hurlingham Park Battlers",
+          "wins": 1,
+          "points": 14,
+          "percentage": 75.32,
+          "marker": ""
+        },
+        {
+          "position": 8,
+          "team": "Black Rock Snags",
+          "wins": 1,
+          "points": 11,
+          "percentage": 65.65,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 6,
+        "doublesBestOf": 1,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "TN29-TN001",
+      "fixtures": 20,
+      "completed_fixtures": 19,
+      "draw_fixtures": 56,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 114,
+      "latest_round": 5,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": []
+    },
+    {
+      "asset_id": "TN29-TN005",
+      "competition_code": "TN",
+      "competition_label": "Tuesday Night - Spring 2020",
+      "season_id": "TN29",
+      "season_label": "Spring 2020",
+      "source_section_code": "TN005",
+      "section_label": "Section 2",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Murrumbeena Beena Beasts",
+          "wins": 4,
+          "points": 48,
+          "percentage": 200.0,
+          "marker": ""
+        },
+        {
+          "position": 2,
+          "team": "Black Rock Net Margin",
+          "wins": 2,
+          "points": 29,
+          "percentage": 118.99,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "Basterfield Park Baste",
+          "wins": 2,
+          "points": 28,
+          "percentage": 102.41,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Black Rock Tim Tams",
+          "wins": 2,
+          "points": 20,
+          "percentage": 124.0,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Hurlingham Park HP Sauce",
+          "wins": 1,
+          "points": 14,
+          "percentage": 79.49,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Carmelite Middle Park",
+          "wins": 0,
+          "points": 8,
+          "percentage": 64.29,
+          "marker": ""
+        },
+        {
+          "position": 7,
+          "team": "Black Rock Mavericks",
+          "wins": 0,
+          "points": 3,
+          "percentage": 46.6,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 6,
+        "doublesBestOf": 1,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "TN29-TN005",
+      "fixtures": 20,
+      "completed_fixtures": 12,
+      "draw_fixtures": 45,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 72,
+      "latest_round": 5,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": []
+    },
+    {
+      "asset_id": "TN31-TN001",
+      "competition_code": "TN",
+      "competition_label": "Tuesday Night - Spring 2021",
+      "season_id": "TN31",
+      "season_label": "Spring 2021",
+      "source_section_code": "TN001",
+      "section_label": "Section 1",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Black Rock BradyBunch",
+          "wins": 3,
+          "points": 30,
+          "percentage": 150.56,
+          "marker": "P"
+        },
+        {
+          "position": 2,
+          "team": "Maccabi AddamsFamily",
+          "wins": 3,
+          "points": 24,
+          "percentage": 86.4,
+          "marker": "R"
+        },
+        {
+          "position": 3,
+          "team": "Hurlingham Park Gunslingers",
+          "wins": 2,
+          "points": 22,
+          "percentage": 116.19,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Black Rock Snags",
+          "wins": 2,
+          "points": 19,
+          "percentage": 101.74,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "St James Premiers",
+          "wins": 0,
+          "points": 5,
+          "percentage": 64.93,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 6,
+        "doublesBestOf": 1,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "TN31-TN001",
+      "fixtures": 31,
+      "completed_fixtures": 21,
+      "draw_fixtures": 57,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 66,
+      "latest_round": 16,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": []
+    },
+    {
+      "asset_id": "TN31-TN002",
+      "competition_code": "TN",
+      "competition_label": "Tuesday Night - Spring 2021",
+      "season_id": "TN31",
+      "season_label": "Spring 2021",
+      "source_section_code": "TN002",
+      "section_label": "Section 2",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "St James All Stars",
+          "wins": 5,
+          "points": 42,
+          "percentage": 146.36,
+          "marker": "R"
+        },
+        {
+          "position": 2,
+          "team": "Basterfield Park Scratchies",
+          "wins": 4,
+          "points": 34,
+          "percentage": 130.17,
+          "marker": "P"
+        },
+        {
+          "position": 3,
+          "team": "Hurlingham Park Battlers",
+          "wins": 3,
+          "points": 30,
+          "percentage": 112.78,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Black Rock Net Margin",
+          "wins": 2,
+          "points": 23,
+          "percentage": 105.26,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Murrumbeena Beasts",
+          "wins": 1,
+          "points": 16,
+          "percentage": 76.43,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Hurlingham Park Hoboes",
+          "wins": 0,
+          "points": 5,
+          "percentage": 57.31,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 6,
+        "doublesBestOf": 1,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "TN31-TN002",
+      "fixtures": 31,
+      "completed_fixtures": 31,
+      "draw_fixtures": 57,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 96,
+      "latest_round": 16,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": []
+    },
+    {
+      "asset_id": "TN31-TN003",
+      "competition_code": "TN",
+      "competition_label": "Tuesday Night - Spring 2021",
+      "season_id": "TN31",
+      "season_label": "Spring 2021",
+      "source_section_code": "TN003",
+      "section_label": "Section 3",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "St Finbar's Finbarbarian",
+          "wins": 4,
+          "points": 36,
+          "percentage": 160.71,
+          "marker": "P"
+        },
+        {
+          "position": 2,
+          "team": "Basterfield Park Basterfield",
+          "wins": 2,
+          "points": 19,
+          "percentage": 100.0,
+          "marker": "R"
+        },
+        {
+          "position": 3,
+          "team": "Hurlingham Park HP Sauce",
+          "wins": 2,
+          "points": 18,
+          "percentage": 86.78,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Murrumbeena Aces",
+          "wins": 1,
+          "points": 14,
+          "percentage": 89.19,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Black Rock Tim Tams",
+          "wins": 1,
+          "points": 13,
+          "percentage": 81.45,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 6,
+        "doublesBestOf": 1,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "TN31-TN003",
+      "fixtures": 31,
+      "completed_fixtures": 21,
+      "draw_fixtures": 57,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 66,
+      "latest_round": 16,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": []
+    },
+    {
+      "asset_id": "TN31-TN004",
+      "competition_code": "TN",
+      "competition_label": "Tuesday Night - Spring 2021",
+      "season_id": "TN31",
+      "season_label": "Spring 2021",
+      "source_section_code": "TN004",
+      "section_label": "Section 4",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Carmelite Middle Park",
+          "wins": 4,
+          "points": 36,
+          "percentage": 110.81,
+          "marker": ""
+        },
+        {
+          "position": 2,
+          "team": "Stella Maris Mavericks",
+          "wins": 3,
+          "points": 35,
+          "percentage": 126.57,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "St James Redleges",
+          "wins": 4,
+          "points": 33,
+          "percentage": 98.2,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Glen Huntly Moonballs",
+          "wins": 1,
+          "points": 16,
+          "percentage": 74.37,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 6,
+        "doublesBestOf": 1,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "TN31-TN004",
+      "fixtures": 24,
+      "completed_fixtures": 24,
+      "draw_fixtures": 56,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 66,
+      "latest_round": 12,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": [
+        "No scorecard rubbers for TN004122",
+        "Fixture game totals do not match rubbers for TN004122: TROLS team total 32-21; complete-score total 0-0. Both published records retained."
+      ]
+    },
+    {
+      "asset_id": "TN33-TN001",
+      "competition_code": "TN",
+      "competition_label": "Tuesday Night - Spring 2022",
+      "season_id": "TN33",
+      "season_label": "Spring 2022",
+      "source_section_code": "TN001",
+      "section_label": "Section 1",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Black Rock UrbanWarGods",
+          "wins": 9,
+          "points": 102,
+          "percentage": 145.2,
+          "marker": "R"
+        },
+        {
+          "position": 2,
+          "team": "Hurlingham Park Gunslingers",
+          "wins": 9,
+          "points": 97,
+          "percentage": 132.91,
+          "marker": "P"
+        },
+        {
+          "position": 3,
+          "team": "Maccabi AddamsFamily",
+          "wins": 9,
+          "points": 95,
+          "percentage": 126.65,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "St James Premiers",
+          "wins": 6,
+          "points": 63,
+          "percentage": 80.3,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Basterfield Park Scratchies",
+          "wins": 5,
+          "points": 57,
+          "percentage": 82.89,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "St James All Stars",
+          "wins": 3,
+          "points": 36,
+          "percentage": 64.53,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 6,
+        "doublesBestOf": 1,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "TN33-TN001",
+      "fixtures": 46,
+      "completed_fixtures": 42,
+      "draw_fixtures": 57,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 252,
+      "latest_round": 16,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": []
+    },
+    {
+      "asset_id": "TN33-TN002",
+      "competition_code": "TN",
+      "competition_label": "Tuesday Night - Spring 2022",
+      "season_id": "TN33",
+      "season_label": "Spring 2022",
+      "source_section_code": "TN002",
+      "section_label": "Section 2",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Hurlingham Park Hoboes",
+          "wins": 9,
+          "points": 93,
+          "percentage": 157.79,
+          "marker": "P"
+        },
+        {
+          "position": 2,
+          "team": "Black Rock Net Margin",
+          "wins": 9,
+          "points": 83,
+          "percentage": 142.97,
+          "marker": "R"
+        },
+        {
+          "position": 3,
+          "team": "St Finbar's Finbarbarian",
+          "wins": 5,
+          "points": 53,
+          "percentage": 82.76,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Hurlingham Park Battlers",
+          "wins": 3,
+          "points": 38,
+          "percentage": 82.77,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Murrumbeena Beasts",
+          "wins": 2,
+          "points": 33,
+          "percentage": 62.77,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 6,
+        "doublesBestOf": 1,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "TN33-TN002",
+      "fixtures": 46,
+      "completed_fixtures": 29,
+      "draw_fixtures": 57,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 174,
+      "latest_round": 16,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": [
+        "Incomplete TROLS score for TN002063 doubles No. 5: '2-2'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for TN002063 doubles No. 6: '1-2'. Missing score not inferred; excluded from ratings and game totals."
+      ]
+    },
+    {
+      "asset_id": "TN33-TN003",
+      "competition_code": "TN",
+      "competition_label": "Tuesday Night - Spring 2022",
+      "season_id": "TN33",
+      "season_label": "Spring 2022",
+      "source_section_code": "TN003",
+      "section_label": "Section 3",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "St Finbar's Black Sheep",
+          "wins": 12,
+          "points": 109,
+          "percentage": 138.66,
+          "marker": "P"
+        },
+        {
+          "position": 2,
+          "team": "Basterfield Park Basterfield",
+          "wins": 9,
+          "points": 89,
+          "percentage": 105.7,
+          "marker": "R"
+        },
+        {
+          "position": 3,
+          "team": "Stella Maris Mavericks",
+          "wins": 8,
+          "points": 85,
+          "percentage": 104.2,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Maccabi Mixes",
+          "wins": 5,
+          "points": 62,
+          "percentage": 95.0,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Hurlingham Park HP Sauce",
+          "wins": 4,
+          "points": 57,
+          "percentage": 85.08,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Murrumbeena Aces",
+          "wins": 3,
+          "points": 48,
+          "percentage": 82.83,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 6,
+        "doublesBestOf": 1,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "TN33-TN003",
+      "fixtures": 46,
+      "completed_fixtures": 42,
+      "draw_fixtures": 57,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 252,
+      "latest_round": 16,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": []
+    },
+    {
+      "asset_id": "TN33-TN004",
+      "competition_code": "TN",
+      "competition_label": "Tuesday Night - Spring 2022",
+      "season_id": "TN33",
+      "season_label": "Spring 2022",
+      "source_section_code": "TN004",
+      "section_label": "Section 4",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Black Rock Racq Pack",
+          "wins": 7,
+          "points": 74,
+          "percentage": 117.49,
+          "marker": "R"
+        },
+        {
+          "position": 2,
+          "team": "St James Redlegs",
+          "wins": 7,
+          "points": 70,
+          "percentage": 125.48,
+          "marker": "P"
+        },
+        {
+          "position": 3,
+          "team": "Glen Huntly Moonballs",
+          "wins": 5,
+          "points": 65,
+          "percentage": 140.48,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Carmelite Middle Park",
+          "wins": 5,
+          "points": 64,
+          "percentage": 90.24,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Bentleigh Rec Mck Green",
+          "wins": 2,
+          "points": 27,
+          "percentage": 49.39,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 6,
+        "doublesBestOf": 1,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "TN33-TN004",
+      "fixtures": 46,
+      "completed_fixtures": 23,
+      "draw_fixtures": 57,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 138,
+      "latest_round": 16,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": []
+    },
+    {
+      "asset_id": "TN35-TN001",
+      "competition_code": "TN",
+      "competition_label": "Tuesday Night - Spring 2023",
+      "season_id": "TN35",
+      "season_label": "Spring 2023",
+      "source_section_code": "TN001",
+      "section_label": "Section 1",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Black Rock UrbanWarGods",
+          "wins": 8,
+          "points": 91,
+          "percentage": 123.74,
+          "marker": "R"
+        },
+        {
+          "position": 2,
+          "team": "Hurlingham Park Gunslingers",
+          "wins": 8,
+          "points": 89,
+          "percentage": 126.1,
+          "marker": "P"
+        },
+        {
+          "position": 3,
+          "team": "Hurlingham Park Hoboes",
+          "wins": 6,
+          "points": 82,
+          "percentage": 119.32,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Hurlingham Park Battlers",
+          "wins": 7,
+          "points": 77,
+          "percentage": 100.34,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Patterson Lakes Boomers",
+          "wins": 4,
+          "points": 67,
+          "percentage": 101.61,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Maccabi AddamsFamily",
+          "wins": 4,
+          "points": 61,
+          "percentage": 86.23,
+          "marker": ""
+        },
+        {
+          "position": 7,
+          "team": "Black Rock Shanks-a-lot",
+          "wins": 4,
+          "points": 50,
+          "percentage": 78.16,
+          "marker": ""
+        },
+        {
+          "position": 8,
+          "team": "St James Premiers",
+          "wins": 2,
+          "points": 43,
+          "percentage": 75.58,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 6,
+        "doublesBestOf": 1,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "TN35-TN001",
+      "fixtures": 59,
+      "completed_fixtures": 47,
+      "draw_fixtures": 59,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 280,
+      "latest_round": 17,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": [
+        "Incomplete TROLS score for TN001013 doubles No. 3: '2-1'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for TN001013 doubles No. 4: '1-3'. Missing score not inferred; excluded from ratings and game totals."
+      ]
+    },
+    {
+      "asset_id": "TN35-TN002",
+      "competition_code": "TN",
+      "competition_label": "Tuesday Night - Spring 2023",
+      "season_id": "TN35",
+      "season_label": "Spring 2023",
+      "source_section_code": "TN002",
+      "section_label": "Section 2",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Basterfield Park Hampton Dads",
+          "wins": 10,
+          "points": 110,
+          "percentage": 171.15,
+          "marker": "P"
+        },
+        {
+          "position": 2,
+          "team": "Lauriston Lemurs",
+          "wins": 11,
+          "points": 106,
+          "percentage": 131.72,
+          "marker": "R"
+        },
+        {
+          "position": 3,
+          "team": "St Finbar's Barbarians",
+          "wins": 7,
+          "points": 81,
+          "percentage": 107.84,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Basterfield Park Scratchies",
+          "wins": 7,
+          "points": 77,
+          "percentage": 104.27,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "St James All Stars",
+          "wins": 4,
+          "points": 56,
+          "percentage": 85.56,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "St Finbar's Black Sheep",
+          "wins": 1,
+          "points": 20,
+          "percentage": 40.44,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 6,
+        "doublesBestOf": 1,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "TN35-TN002",
+      "fixtures": 46,
+      "completed_fixtures": 41,
+      "draw_fixtures": 57,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 246,
+      "latest_round": 16,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": []
+    },
+    {
+      "asset_id": "TN35-TN003",
+      "competition_code": "TN",
+      "competition_label": "Tuesday Night - Spring 2023",
+      "season_id": "TN35",
+      "season_label": "Spring 2023",
+      "source_section_code": "TN003",
+      "section_label": "Section 3",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Stella Maris Mavericks",
+          "wins": 12,
+          "points": 113.5,
+          "percentage": 142.76,
+          "marker": "P"
+        },
+        {
+          "position": 2,
+          "team": "Basterfield Park Basterfield",
+          "wins": 9,
+          "points": 93.5,
+          "percentage": 110.61,
+          "marker": "R"
+        },
+        {
+          "position": 3,
+          "team": "Hurlingham Park HP Sauce",
+          "wins": 6,
+          "points": 76,
+          "percentage": 108.66,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Murrumbeena Beasts",
+          "wins": 7,
+          "points": 76,
+          "percentage": 98.9,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "St James Redlegs",
+          "wins": 4,
+          "points": 59,
+          "percentage": 89.06,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Hurlingham Park Hammers",
+          "wins": 1,
+          "points": 32,
+          "percentage": 65.83,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 6,
+        "doublesBestOf": 1,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "TN35-TN003",
+      "fixtures": 46,
+      "completed_fixtures": 42,
+      "draw_fixtures": 57,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 248,
+      "latest_round": 16,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": [
+        "Incomplete TROLS score for TN003013 doubles No. 4: '4-3'. Missing score not inferred; excluded from ratings and game totals."
+      ]
+    },
+    {
+      "asset_id": "TN35-TN004",
+      "competition_code": "TN",
+      "competition_label": "Tuesday Night - Spring 2023",
+      "season_id": "TN35",
+      "season_label": "Spring 2023",
+      "source_section_code": "TN004",
+      "section_label": "Section 4",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Maccabi Magicians",
+          "wins": 10,
+          "points": 100,
+          "percentage": 186.74,
+          "marker": "P"
+        },
+        {
+          "position": 2,
+          "team": "Glen Huntly Moonballs",
+          "wins": 8,
+          "points": 82,
+          "percentage": 125.0,
+          "marker": "R"
+        },
+        {
+          "position": 3,
+          "team": "Murrumbeena Aces",
+          "wins": 4,
+          "points": 46,
+          "percentage": 84.57,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Black Rock Breakers",
+          "wins": 3,
+          "points": 44,
+          "percentage": 78.98,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Carmelite Middle Park",
+          "wins": 1,
+          "points": 28,
+          "percentage": 62.76,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 6,
+        "doublesBestOf": 1,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "TN35-TN004",
+      "fixtures": 46,
+      "completed_fixtures": 26,
+      "draw_fixtures": 57,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 156,
+      "latest_round": 16,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": []
+    },
+    {
+      "asset_id": "TN37-TN001",
+      "competition_code": "TN",
+      "competition_label": "Tuesday Night - Spring 2024",
+      "season_id": "TN37",
+      "season_label": "Spring 2024",
+      "source_section_code": "TN001",
+      "section_label": "Section 1",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Hurlingham Park Gunslingers",
+          "wins": 10,
+          "points": 94,
+          "percentage": 114.33,
+          "marker": "P"
+        },
+        {
+          "position": 2,
+          "team": "Hurlingham Park Lobs",
+          "wins": 8,
+          "points": 84,
+          "percentage": 123.82,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "Black Rock UrbanWarGods",
+          "wins": 9,
+          "points": 83,
+          "percentage": 106.54,
+          "marker": "R"
+        },
+        {
+          "position": 4,
+          "team": "Hurlingham Park Hoboes",
+          "wins": 8,
+          "points": 79,
+          "percentage": 105.9,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Lauriston Lemurs",
+          "wins": 5,
+          "points": 67,
+          "percentage": 102.65,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Hurlingham Park Battlers",
+          "wins": 4,
+          "points": 53,
+          "percentage": 95.91,
+          "marker": ""
+        },
+        {
+          "position": 7,
+          "team": "Basterfield Park HamptonHacks",
+          "wins": 5,
+          "points": 52,
+          "percentage": 80.62,
+          "marker": ""
+        },
+        {
+          "position": 8,
+          "team": "Patterson Lakes Boomers",
+          "wins": 4,
+          "points": 48,
+          "percentage": 75.87,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 6,
+        "doublesBestOf": 1,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "TN37-TN001",
+      "fixtures": 59,
+      "completed_fixtures": 58,
+      "draw_fixtures": 59,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 348,
+      "latest_round": 17,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": []
+    },
+    {
+      "asset_id": "TN37-TN002",
+      "competition_code": "TN",
+      "competition_label": "Tuesday Night - Spring 2024",
+      "season_id": "TN37",
+      "season_label": "Spring 2024",
+      "source_section_code": "TN002",
+      "section_label": "Section 2",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Maccabi AddamsFamily",
+          "wins": 12,
+          "points": 115,
+          "percentage": 180.31,
+          "marker": "P"
+        },
+        {
+          "position": 2,
+          "team": "Mentone Blasters",
+          "wins": 9,
+          "points": 94,
+          "percentage": 137.03,
+          "marker": "R"
+        },
+        {
+          "position": 3,
+          "team": "Basterfield Park Scratchies",
+          "wins": 8,
+          "points": 79,
+          "percentage": 97.3,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "St Finbar's Barbarians",
+          "wins": 7,
+          "points": 67,
+          "percentage": 94.7,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "St James Premiers",
+          "wins": 6,
+          "points": 66,
+          "percentage": 98.78,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Murrumbeena Beena Beasts",
+          "wins": 6,
+          "points": 65,
+          "percentage": 99.73,
+          "marker": ""
+        },
+        {
+          "position": 7,
+          "team": "St James Allstars",
+          "wins": 4,
+          "points": 55,
+          "percentage": 83.59,
+          "marker": ""
+        },
+        {
+          "position": 8,
+          "team": "Stella Maris Mavericks",
+          "wins": 1,
+          "points": 19,
+          "percentage": 52.53,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 6,
+        "doublesBestOf": 1,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "TN37-TN002",
+      "fixtures": 59,
+      "completed_fixtures": 56,
+      "draw_fixtures": 59,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 336,
+      "latest_round": 17,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": []
+    },
+    {
+      "asset_id": "TN37-TN003",
+      "competition_code": "TN",
+      "competition_label": "Tuesday Night - Spring 2024",
+      "season_id": "TN37",
+      "season_label": "Spring 2024",
+      "source_section_code": "TN003",
+      "section_label": "Section 3",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Basterfield Park Basterfield",
+          "wins": 9,
+          "points": 89,
+          "percentage": 151.68,
+          "marker": "P"
+        },
+        {
+          "position": 2,
+          "team": "St James Redlegs",
+          "wins": 8,
+          "points": 85.5,
+          "percentage": 148.75,
+          "marker": "R"
+        },
+        {
+          "position": 3,
+          "team": "Maccabi Magicians",
+          "wins": 8,
+          "points": 78,
+          "percentage": 121.89,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Hurlingham Park HP Sauce",
+          "wins": 8,
+          "points": 75,
+          "percentage": 112.75,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "St Finbar's Black Sheep",
+          "wins": 4,
+          "points": 40,
+          "percentage": 76.16,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Maccabi White Lines",
+          "wins": 2,
+          "points": 30.5,
+          "percentage": 68.15,
+          "marker": ""
+        },
+        {
+          "position": 7,
+          "team": "Glen Huntly Moonballs",
+          "wins": 2,
+          "points": 22,
+          "percentage": 66.99,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 6,
+        "doublesBestOf": 1,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "TN37-TN003",
+      "fixtures": 59,
+      "completed_fixtures": 44,
+      "draw_fixtures": 59,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 264,
+      "latest_round": 17,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": []
+    },
+    {
+      "asset_id": "TN37-TN004",
+      "competition_code": "TN",
+      "competition_label": "Tuesday Night - Spring 2024",
+      "season_id": "TN37",
+      "season_label": "Spring 2024",
+      "source_section_code": "TN004",
+      "section_label": "Section 4",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Hurlingham Park Hammers",
+          "wins": 12,
+          "points": 121,
+          "percentage": 175.95,
+          "marker": "P"
+        },
+        {
+          "position": 2,
+          "team": "Black Rock Breakers",
+          "wins": 10,
+          "points": 104,
+          "percentage": 135.54,
+          "marker": "R"
+        },
+        {
+          "position": 3,
+          "team": "Murrumbeena Aces",
+          "wins": 5,
+          "points": 71,
+          "percentage": 96.33,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Carmelite Middle Park",
+          "wins": 5,
+          "points": 55,
+          "percentage": 76.85,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Mentone Killer Bees",
+          "wins": 4,
+          "points": 54,
+          "percentage": 78.37,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Wattle Knights",
+          "wins": 2,
+          "points": 45,
+          "percentage": 68.41,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 6,
+        "doublesBestOf": 1,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "TN37-TN004",
+      "fixtures": 46,
+      "completed_fixtures": 42,
+      "draw_fixtures": 57,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 252,
+      "latest_round": 16,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": []
+    },
+    {
+      "asset_id": "TN39-TN001",
+      "competition_code": "TN",
+      "competition_label": "Tuesday Night - Spring 2025",
+      "season_id": "TN39",
+      "season_label": "Spring 2025",
+      "source_section_code": "TN001",
+      "section_label": "Section 1",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Black Rock UrbanWarGods",
+          "wins": 8,
+          "points": 90,
+          "percentage": 162.64,
+          "marker": "P"
+        },
+        {
+          "position": 2,
+          "team": "Hurlingham Park Gunslingers",
+          "wins": 7,
+          "points": 79.5,
+          "percentage": 137.76,
+          "marker": "R"
+        },
+        {
+          "position": 3,
+          "team": "Hurlingham Park Lobs",
+          "wins": 7,
+          "points": 73,
+          "percentage": 107.94,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Maccabi Green",
+          "wins": 4,
+          "points": 58,
+          "percentage": 94.09,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Hurlingham Park Hoboes",
+          "wins": 3,
+          "points": 48,
+          "percentage": 84.29,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Hurlingham Park Battlers",
+          "wins": 3,
+          "points": 46.5,
+          "percentage": 83.46,
+          "marker": ""
+        },
+        {
+          "position": 7,
+          "team": "Kings Park Royals",
+          "wins": 0,
+          "points": 25,
+          "percentage": 58.9,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 6,
+        "doublesBestOf": 1,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "TN39-TN001",
+      "fixtures": 59,
+      "completed_fixtures": 35,
+      "draw_fixtures": 59,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 210,
+      "latest_round": 17,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": [
+        "Incomplete TROLS score for TN001104 doubles No. 5: '5-5'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for TN001142 doubles No. 6: '5-5'. Missing score not inferred; excluded from ratings and game totals."
+      ]
+    },
+    {
+      "asset_id": "TN39-TN002",
+      "competition_code": "TN",
+      "competition_label": "Tuesday Night - Spring 2025",
+      "season_id": "TN39",
+      "season_label": "Spring 2025",
+      "source_section_code": "TN002",
+      "section_label": "Section 2",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "St Finbar's Barbarians",
+          "wins": 10,
+          "points": 93,
+          "percentage": 132.92,
+          "marker": "P"
+        },
+        {
+          "position": 2,
+          "team": "Beaumaris CC Sharks",
+          "wins": 4,
+          "points": 67,
+          "percentage": 120.18,
+          "marker": "R"
+        },
+        {
+          "position": 3,
+          "team": "Black Rock Strikers",
+          "wins": 6,
+          "points": 66,
+          "percentage": 102.9,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Basterfield Park Winners",
+          "wins": 5,
+          "points": 59,
+          "percentage": 106.43,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Murrumbeena Beasts",
+          "wins": 3,
+          "points": 55,
+          "percentage": 88.89,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "St James Premiers",
+          "wins": 4,
+          "points": 53,
+          "percentage": 99.6,
+          "marker": ""
+        },
+        {
+          "position": 7,
+          "team": "Mentone Blasters",
+          "wins": 1,
+          "points": 27,
+          "percentage": 55.71,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 6,
+        "doublesBestOf": 1,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "TN39-TN002",
+      "fixtures": 59,
+      "completed_fixtures": 35,
+      "draw_fixtures": 59,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 210,
+      "latest_round": 17,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": []
+    },
+    {
+      "asset_id": "TN39-TN003",
+      "competition_code": "TN",
+      "competition_label": "Tuesday Night - Spring 2025",
+      "season_id": "TN39",
+      "season_label": "Spring 2025",
+      "source_section_code": "TN003",
+      "section_label": "Section 3",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Hurlingham Park HP Sauce",
+          "wins": 8,
+          "points": 81,
+          "percentage": 134.39,
+          "marker": "P"
+        },
+        {
+          "position": 2,
+          "team": "Basterfield Park Basterfield",
+          "wins": 7,
+          "points": 78,
+          "percentage": 124.51,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "St James Redlegs",
+          "wins": 4,
+          "points": 56,
+          "percentage": 98.77,
+          "marker": "R"
+        },
+        {
+          "position": 4,
+          "team": "Maccabi White",
+          "wins": 4,
+          "points": 56,
+          "percentage": 90.76,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Hurlingham Park Hammers",
+          "wins": 4,
+          "points": 51,
+          "percentage": 92.33,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Keysborough KeysyComeKGo",
+          "wins": 3,
+          "points": 51,
+          "percentage": 82.53,
+          "marker": ""
+        },
+        {
+          "position": 7,
+          "team": "Glen Huntly Moonballs",
+          "wins": 3,
+          "points": 47,
+          "percentage": 80.65,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 6,
+        "doublesBestOf": 1,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "TN39-TN003",
+      "fixtures": 59,
+      "completed_fixtures": 36,
+      "draw_fixtures": 59,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 216,
+      "latest_round": 17,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": [
+        "Incomplete TROLS score for TN003301 doubles No. 5: '3-1'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for TN003301 doubles No. 6: '2-1'. Missing score not inferred; excluded from ratings and game totals."
+      ]
+    },
+    {
+      "asset_id": "TN39-TN004",
+      "competition_code": "TN",
+      "competition_label": "Tuesday Night - Spring 2025",
+      "season_id": "TN39",
+      "season_label": "Spring 2025",
+      "source_section_code": "TN004",
+      "section_label": "Section 4",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Middle Brighton Warriors",
+          "wins": 8,
+          "points": 82,
+          "percentage": 139.43,
+          "marker": "P"
+        },
+        {
+          "position": 2,
+          "team": "Black Rock Breakers",
+          "wins": 8,
+          "points": 80,
+          "percentage": 123.14,
+          "marker": "R"
+        },
+        {
+          "position": 3,
+          "team": "BLTC Tornadoes",
+          "wins": 6,
+          "points": 74,
+          "percentage": 124.77,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "St Finbar's Black Sheep",
+          "wins": 4,
+          "points": 57,
+          "percentage": 104.0,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Ormond Dragons",
+          "wins": 5,
+          "points": 53,
+          "percentage": 89.49,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Stella Maris Mavericks",
+          "wins": 3,
+          "points": 47,
+          "percentage": 78.09,
+          "marker": ""
+        },
+        {
+          "position": 7,
+          "team": "Murrumbeena Aces",
+          "wins": 1,
+          "points": 27,
+          "percentage": 64.1,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 6,
+        "doublesBestOf": 1,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "TN39-TN004",
+      "fixtures": 59,
+      "completed_fixtures": 38,
+      "draw_fixtures": 59,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 228,
+      "latest_round": 17,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": []
+    },
+    {
+      "asset_id": "TN39-TN005",
+      "competition_code": "TN",
+      "competition_label": "Tuesday Night - Spring 2025",
+      "season_id": "TN39",
+      "season_label": "Spring 2025",
+      "source_section_code": "TN005",
+      "section_label": "Section 5",
+      "format": "sets",
+      "green_ball": false,
+      "is_archive": true,
+      "results_loaded_by_trols": null,
+      "official_standings": [
+        {
+          "position": 1,
+          "team": "Mentone KillerBee",
+          "wins": 8,
+          "points": 87,
+          "percentage": 155.6,
+          "marker": "R"
+        },
+        {
+          "position": 2,
+          "team": "Middle Brighton Whompbats",
+          "wins": 6,
+          "points": 72,
+          "percentage": 120.0,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "Wattle Knights",
+          "wins": 7,
+          "points": 70,
+          "percentage": 111.24,
+          "marker": "P"
+        },
+        {
+          "position": 4,
+          "team": "Carmelite Middle Park",
+          "wins": 4,
+          "points": 56,
+          "percentage": 100.0,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Wattle Warriors",
+          "wins": 3,
+          "points": 50,
+          "percentage": 86.17,
+          "marker": ""
+        },
+        {
+          "position": 6,
+          "team": "Glen Huntly Gophers",
+          "wins": 3,
+          "points": 48,
+          "percentage": 84.47,
+          "marker": ""
+        },
+        {
+          "position": 7,
+          "team": "Maccabi Blue",
+          "wins": 2,
+          "points": 37,
+          "percentage": 54.02,
+          "marker": ""
+        }
+      ],
+      "competition_rules": {
+        "source": "observed TROLS scorecards",
+        "teamPoints": "published only",
+        "singlesSlots": 0,
+        "singlesBestOf": 1,
+        "setTarget": 6,
+        "doublesSlots": 6,
+        "doublesBestOf": 1,
+        "doublesTarget": 6,
+        "playersPerTeam": 4,
+        "matchTiebreak": false
+      },
+      "section_code": "TN39-TN005",
+      "fixtures": 59,
+      "completed_fixtures": 34,
+      "draw_fixtures": 48,
+      "singles_rubbers": 0,
+      "doubles_rubbers": 204,
+      "latest_round": 17,
+      "regular_season_rounds": 14,
+      "validation": "passed",
+      "source": "TROLS Past Results and Past Ladders",
+      "draw_source": "TROLS Fixtures",
+      "validation_warnings": [
+        "Fixture game totals do not match rubbers for TN005301: TROLS team total 27-26; complete-score total 26-26. Both published records retained."
       ]
     },
     {

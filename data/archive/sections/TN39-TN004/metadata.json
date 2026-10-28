@@ -1,0 +1,95 @@
+{
+  "asset_id": "TN39-TN004",
+  "competition_code": "TN",
+  "competition_label": "Tuesday Night - Spring 2025",
+  "season_id": "TN39",
+  "season_label": "Spring 2025",
+  "source_section_code": "TN004",
+  "section_label": "Section 4",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Middle Brighton Warriors",
+      "wins": 8,
+      "points": 82,
+      "percentage": 139.43,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Black Rock Breakers",
+      "wins": 8,
+      "points": 80,
+      "percentage": 123.14,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "BLTC Tornadoes",
+      "wins": 6,
+      "points": 74,
+      "percentage": 124.77,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "St Finbar's Black Sheep",
+      "wins": 4,
+      "points": 57,
+      "percentage": 104.0,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Ormond Dragons",
+      "wins": 5,
+      "points": 53,
+      "percentage": 89.49,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Stella Maris Mavericks",
+      "wins": 3,
+      "points": 47,
+      "percentage": 78.09,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Murrumbeena Aces",
+      "wins": 1,
+      "points": 27,
+      "percentage": 64.1,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 6,
+    "doublesBestOf": 1,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "TN39-TN004",
+  "fixtures": 59,
+  "completed_fixtures": 38,
+  "draw_fixtures": 59,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 228,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

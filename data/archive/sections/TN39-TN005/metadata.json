@@ -1,0 +1,97 @@
+{
+  "asset_id": "TN39-TN005",
+  "competition_code": "TN",
+  "competition_label": "Tuesday Night - Spring 2025",
+  "season_id": "TN39",
+  "season_label": "Spring 2025",
+  "source_section_code": "TN005",
+  "section_label": "Section 5",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Mentone KillerBee",
+      "wins": 8,
+      "points": 87,
+      "percentage": 155.6,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "Middle Brighton Whompbats",
+      "wins": 6,
+      "points": 72,
+      "percentage": 120.0,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Wattle Knights",
+      "wins": 7,
+      "points": 70,
+      "percentage": 111.24,
+      "marker": "P"
+    },
+    {
+      "position": 4,
+      "team": "Carmelite Middle Park",
+      "wins": 4,
+      "points": 56,
+      "percentage": 100.0,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Wattle Warriors",
+      "wins": 3,
+      "points": 50,
+      "percentage": 86.17,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Glen Huntly Gophers",
+      "wins": 3,
+      "points": 48,
+      "percentage": 84.47,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Maccabi Blue",
+      "wins": 2,
+      "points": 37,
+      "percentage": 54.02,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 6,
+    "doublesBestOf": 1,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "TN39-TN005",
+  "fixtures": 59,
+  "completed_fixtures": 34,
+  "draw_fixtures": 48,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 204,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Fixture game totals do not match rubbers for TN005301: TROLS team total 27-26; complete-score total 26-26. Both published records retained."
+  ]
+}

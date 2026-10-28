@@ -1,0 +1,49 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+TN001011,19 Jul 11,1,regular,Round 1,Black Rock Rusty,Black Rock Woodlands,2,8,2,4,,,28,32,Completed,
+TN001012,19 Jul 11,1,regular,Round 1,Basterfield Park Scratchies,Basterfield Park BP,9,1,5,1,,,34,26,Completed,
+TN001014,19 Jul 11,1,regular,Round 1,Carmelite MP,Hurlingham Park HP,10,0,6,0,,,36,24,Completed,
+pending-tn001-r1-elwood-unknowns-elwood-el-toogood,19 Jul 11,1,regular,Round 1,Elwood Unknowns,Elwood El TooGood,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+TN001021,26 Jul 11,2,regular,Round 2,Hurlingham Park HP,Black Rock Rusty,0,10,0,6,,,18,36,Completed,
+TN001022,26 Jul 11,2,regular,Round 2,Black Rock Woodlands,Basterfield Park Scratchies,7,3,3,3,,,30,25,Completed,
+TN001023,26 Jul 11,2,regular,Round 2,Basterfield Park BP,Elwood Unknowns,5,5,3,3,,,30,30,Completed,
+TN001024,26 Jul 11,2,regular,Round 2,Elwood El TooGood,Carmelite MP,9,1,5,1,,,34,26,Completed,
+TN001031,02 Aug 11,3,regular,Round 3,Black Rock Rusty,Elwood El TooGood,2,8,2,4,,,22,30,Completed,
+TN001032,02 Aug 11,3,regular,Round 3,Basterfield Park Scratchies,Hurlingham Park HP,10,0,6,0,,,36,24,Completed,
+TN001033,02 Aug 11,3,regular,Round 3,Elwood Unknowns,Black Rock Woodlands,7,3,3,3,,,30,26,Completed,
+TN001034,02 Aug 11,3,regular,Round 3,Carmelite MP,Basterfield Park BP,8,2,4,2,,,32,28,Completed,
+TN001041,09 Aug 11,4,regular,Round 4,Basterfield Park BP,Black Rock Rusty,8,2,4,2,,,34,22,Completed,
+TN001042,09 Aug 11,4,regular,Round 4,Elwood El TooGood,Basterfield Park Scratchies,2,8,2,4,,,30,29,Completed,
+TN001043,09 Aug 11,4,regular,Round 4,Hurlingham Park HP,Elwood Unknowns,2,8,2,4,,,18,30,Completed,
+TN001044,09 Aug 11,4,regular,Round 4,Black Rock Woodlands,Carmelite MP,8,2,4,2,,,30,28,Completed,
+TN001051,16 Aug 11,5,regular,Round 5,Elwood Unknowns,Carmelite MP,9,1,5,1,,,34,26,Completed,
+TN001052,16 Aug 11,5,regular,Round 5,Hurlingham Park HP,Elwood El TooGood,1,9,1,5,,,14,36,Completed,
+TN001054,16 Aug 11,5,regular,Round 5,Black Rock Rusty,Basterfield Park Scratchies,2,8,2,4,,,21,32,Completed,
+pending-tn001-r5-basterfield-park-bp-black-rock-woodlands,16 Aug 11,5,regular,Round 5,Basterfield Park BP,Black Rock Woodlands,,,,,,,,,Missing Result,No individual scorecard / no rubbers recorded
+TN001061,23 Aug 11,6,regular,Round 6,Basterfield Park Scratchies,Elwood Unknowns,10,0,6,0,,,36,10,Completed,
+TN001062,23 Aug 11,6,regular,Round 6,Carmelite MP,Black Rock Rusty,7,3,3,3,,,26,24,Completed,
+TN001064,23 Aug 11,6,regular,Round 6,Black Rock Woodlands,Hurlingham Park HP,10,0,6,0,,,37,17,Completed,
+pending-tn001-r6-elwood-el-toogood-basterfield-park-bp,23 Aug 11,6,regular,Round 6,Elwood El TooGood,Basterfield Park BP,,,,,,,,,Missing Result,No individual scorecard / no rubbers recorded
+TN001071,30 Aug 11,7,regular,Round 7,Black Rock Rusty,Elwood Unknowns,9,1,5,1,,,33,21,Completed,
+TN001072,30 Aug 11,7,regular,Round 7,Basterfield Park Scratchies,Carmelite MP,5,5,0,0,,,0,0,Completed,
+TN001073,30 Aug 11,7,regular,Round 7,Hurlingham Park HP,Basterfield Park BP,9,1,5,1,,,37,23,Completed,
+pending-tn001-r7-elwood-el-toogood-black-rock-woodlands,30 Aug 11,7,regular,Round 7,Elwood El TooGood,Black Rock Woodlands,,,,,,,,,Missing Result,No individual scorecard / no rubbers recorded
+TN001081,06 Sep 11,8,regular,Round 8,Black Rock Woodlands,Black Rock Rusty,2,8,2,4,,,26,35,Completed,
+TN001083,06 Sep 11,8,regular,Round 8,Elwood El TooGood,Elwood Unknowns,8,2,4,2,,,32,28,Completed,
+TN001084,06 Sep 11,8,regular,Round 8,Hurlingham Park HP,Carmelite MP,1,9,1,5,,,18,33,Completed,
+pending-tn001-r8-basterfield-park-bp-basterfield-park-scratchies,06 Sep 11,8,regular,Round 8,Basterfield Park BP,Basterfield Park Scratchies,,,,,,,,,Missing Result,No individual scorecard / no rubbers recorded
+TN001091,13 Sep 11,9,regular,Round 9,Black Rock Rusty,Hurlingham Park HP,9,1,5,1,,,34,11,Completed,
+TN001092,13 Sep 11,9,regular,Round 9,Basterfield Park Scratchies,Black Rock Woodlands,10,0,6,0,,,36,14,Completed,
+TN001093,13 Sep 11,9,regular,Round 9,Elwood Unknowns,Basterfield Park BP,7,3,3,3,,,30,25,Completed,
+TN001094,13 Sep 11,9,regular,Round 9,Carmelite MP,Elwood El TooGood,1,9,1,5,,,15,33,Completed,
+TN001101,20 Sep 11,10,regular,Round 10,Elwood El TooGood,Black Rock Rusty,0,10,0,6,,,12,36,Completed,
+TN001102,20 Sep 11,10,regular,Round 10,Hurlingham Park HP,Basterfield Park Scratchies,0,10,0,6,,,22,37,Completed,
+TN001103,20 Sep 11,10,regular,Round 10,Black Rock Woodlands,Elwood Unknowns,10,0,6,0,,,36,9,Completed,
+pending-tn001-r10-basterfield-park-bp-carmelite-mp,20 Sep 11,10,regular,Round 10,Basterfield Park BP,Carmelite MP,,,,,,,,,Missing Result,No individual scorecard / no rubbers recorded
+TN001111,27 Sep 11,11,regular,Round 11,Black Rock Rusty,Basterfield Park BP,10,0,6,0,,,36,12,Completed,
+pending-tn001-r11-basterfield-park-scratchies-elwood-el-toogood,27 Sep 11,11,regular,Round 11,Basterfield Park Scratchies,Elwood El TooGood,,,,,,,,,Missing Result,No individual scorecard / no rubbers recorded
+pending-tn001-r11-carmelite-mp-black-rock-woodlands,27 Sep 11,11,regular,Round 11,Carmelite MP,Black Rock Woodlands,,,,,,,,,Missing Result,No individual scorecard / no rubbers recorded
+pending-tn001-r11-elwood-unknowns-hurlingham-park-hp,27 Sep 11,11,regular,Round 11,Elwood Unknowns,Hurlingham Park HP,,,,,,,,,Missing Result,No individual scorecard / no rubbers recorded
+TN001121,04 Oct 11,12,regular,Round 12,Carmelite MP,Elwood Unknowns,8,2,4,2,,,33,25,Completed,
+pending-tn001-r12-basterfield-park-scratchies-black-rock-rusty,04 Oct 11,12,regular,Round 12,Basterfield Park Scratchies,Black Rock Rusty,,,,,,,,,Missing Result,No individual scorecard / no rubbers recorded
+pending-tn001-r12-black-rock-woodlands-basterfield-park-bp,04 Oct 11,12,regular,Round 12,Black Rock Woodlands,Basterfield Park BP,,,,,,,,,Missing Result,No individual scorecard / no rubbers recorded
+pending-tn001-r12-elwood-el-toogood-hurlingham-park-hp,04 Oct 11,12,regular,Round 12,Elwood El TooGood,Hurlingham Park HP,,,,,,,,,Missing Result,No individual scorecard / no rubbers recorded

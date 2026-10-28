@@ -1,0 +1,103 @@
+{
+  "asset_id": "TN27-TN001",
+  "competition_code": "TN",
+  "competition_label": "Tuesday Night - Spring 2019",
+  "season_id": "TN27",
+  "season_label": "Spring 2019",
+  "source_section_code": "TN001",
+  "section_label": "1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Black Rock PWC",
+      "wins": 12,
+      "points": 101.5,
+      "percentage": 275.3,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Hurlingham Park Gunslingers",
+      "wins": 12,
+      "points": 86,
+      "percentage": 144.67,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Basterfield Park Scratchies",
+      "wins": 6,
+      "points": 61,
+      "percentage": 105.5,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Hurlingham Park Hoboes",
+      "wins": 7,
+      "points": 61,
+      "percentage": 100.93,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "St James Premiers",
+      "wins": 3,
+      "points": 45,
+      "percentage": 73.41,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "St James AllStars",
+      "wins": 5,
+      "points": 41,
+      "percentage": 76.63,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Black Rock Snags",
+      "wins": 3,
+      "points": 32,
+      "percentage": 73.29,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "Black Rock NetMargin",
+      "wins": 1,
+      "points": 20.5,
+      "percentage": 61.04,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 6,
+    "doublesBestOf": 1,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "TN27-TN001",
+  "fixtures": 59,
+  "completed_fixtures": 52,
+  "draw_fixtures": 59,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 312,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

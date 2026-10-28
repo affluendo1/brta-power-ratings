@@ -1,0 +1,119 @@
+{
+  "asset_id": "TN5-TN001",
+  "competition_code": "TN",
+  "competition_label": "Tuesday Night - Autumn 2013",
+  "season_id": "TN5",
+  "season_label": "Autumn 2013",
+  "source_section_code": "TN001",
+  "section_label": "TueMens",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Basterfield Park Scratchies",
+      "wins": 14,
+      "points": 150,
+      "percentage": 154.52,
+      "marker": ""
+    },
+    {
+      "position": 2,
+      "team": "Black Rock ETG",
+      "wins": 8,
+      "points": 122,
+      "percentage": 152.16,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Black Rock RustyBalls",
+      "wins": 8,
+      "points": 109,
+      "percentage": 116.52,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Black Rock Woodlands",
+      "wins": 6,
+      "points": 107,
+      "percentage": 109.09,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Basterfield Park Basterfield",
+      "wins": 3,
+      "points": 90,
+      "percentage": 114.1,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Carmelite MiddlePark",
+      "wins": 2,
+      "points": 77,
+      "percentage": 84.38,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Hurlingham Park Hurl UPS",
+      "wins": 2,
+      "points": 75,
+      "percentage": 85.26,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "Black Rock FIGJAM",
+      "wins": 2,
+      "points": 66,
+      "percentage": 84.78,
+      "marker": ""
+    },
+    {
+      "position": 9,
+      "team": "Hurlingham Park AnotherHurl",
+      "wins": 0,
+      "points": 54,
+      "percentage": 57.14,
+      "marker": ""
+    },
+    {
+      "position": 10,
+      "team": "Carmelite BYE",
+      "wins": 0,
+      "points": 0,
+      "percentage": 0.0,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 6,
+    "doublesBestOf": 1,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "TN5-TN001",
+  "fixtures": 85,
+  "completed_fixtures": 48,
+  "draw_fixtures": 56,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 282,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

@@ -1,0 +1,89 @@
+{
+  "asset_id": "TN35-TN003",
+  "competition_code": "TN",
+  "competition_label": "Tuesday Night - Spring 2023",
+  "season_id": "TN35",
+  "season_label": "Spring 2023",
+  "source_section_code": "TN003",
+  "section_label": "Section 3",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Stella Maris Mavericks",
+      "wins": 12,
+      "points": 113.5,
+      "percentage": 142.76,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Basterfield Park Basterfield",
+      "wins": 9,
+      "points": 93.5,
+      "percentage": 110.61,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Hurlingham Park HP Sauce",
+      "wins": 6,
+      "points": 76,
+      "percentage": 108.66,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Murrumbeena Beasts",
+      "wins": 7,
+      "points": 76,
+      "percentage": 98.9,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "St James Redlegs",
+      "wins": 4,
+      "points": 59,
+      "percentage": 89.06,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Hurlingham Park Hammers",
+      "wins": 1,
+      "points": 32,
+      "percentage": 65.83,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 6,
+    "doublesBestOf": 1,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "TN35-TN003",
+  "fixtures": 46,
+  "completed_fixtures": 42,
+  "draw_fixtures": 57,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 248,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for TN003013 doubles No. 4: '4-3'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

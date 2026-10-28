@@ -1,0 +1,97 @@
+{
+  "asset_id": "TN40-TN003",
+  "competition_code": "TN",
+  "competition_label": "Tuesday Night - Autumn 2026",
+  "season_id": "TN40",
+  "season_label": "Autumn 2026",
+  "source_section_code": "TN003",
+  "section_label": "Section 3",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Hurlingham Park Hammers",
+      "wins": 8,
+      "points": 85.5,
+      "percentage": 140.08,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "St James Redlegs",
+      "wins": 7,
+      "points": 60.5,
+      "percentage": 91.92,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Maccabi Magicians",
+      "wins": 5,
+      "points": 60,
+      "percentage": 97.34,
+      "marker": "R"
+    },
+    {
+      "position": 4,
+      "team": "Middle Brighton Warriors",
+      "wins": 4,
+      "points": 55,
+      "percentage": 94.53,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Mentone Blasters",
+      "wins": 4,
+      "points": 54.5,
+      "percentage": 102.52,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Basterfield Park Basterfield",
+      "wins": 5,
+      "points": 54.5,
+      "percentage": 90.68,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Keysborough KeysyComeKGo",
+      "wins": 4,
+      "points": 50,
+      "percentage": 90.54,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 6,
+    "doublesBestOf": 1,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "TN40-TN003",
+  "fixtures": 59,
+  "completed_fixtures": 42,
+  "draw_fixtures": 59,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 247,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for TN003042 doubles No. 5: '4-2'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

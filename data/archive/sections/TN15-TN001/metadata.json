@@ -1,0 +1,135 @@
+{
+  "asset_id": "TN15-TN001",
+  "competition_code": "TN",
+  "competition_label": "Tuesday Night - Spring 2015",
+  "season_id": "TN15",
+  "season_label": "Spring 2015",
+  "source_section_code": "TN001",
+  "section_label": "1-One",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Black Rock NetMargin",
+      "wins": 12,
+      "points": 112,
+      "percentage": 135.77,
+      "marker": ""
+    },
+    {
+      "position": 2,
+      "team": "St James AllStars",
+      "wins": 11,
+      "points": 112,
+      "percentage": 123.87,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Basterfield Park Scratchies",
+      "wins": 10,
+      "points": 111,
+      "percentage": 139.25,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Black Rock Rockies",
+      "wins": 11,
+      "points": 111,
+      "percentage": 132.11,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "St James Premiers",
+      "wins": 11,
+      "points": 104,
+      "percentage": 117.57,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Carmelite MiddlePark",
+      "wins": 8,
+      "points": 84,
+      "percentage": 104.26,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Basterfield Park Baste",
+      "wins": 5,
+      "points": 78,
+      "percentage": 106.32,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "Hurlingham Park Hoboes",
+      "wins": 6,
+      "points": 72,
+      "percentage": 92.73,
+      "marker": ""
+    },
+    {
+      "position": 9,
+      "team": "Hurlingham Park One",
+      "wins": 5,
+      "points": 67,
+      "percentage": 87.07,
+      "marker": ""
+    },
+    {
+      "position": 10,
+      "team": "Black Rock Heros",
+      "wins": 5,
+      "points": 58,
+      "percentage": 88.05,
+      "marker": ""
+    },
+    {
+      "position": 11,
+      "team": "Black Rock Snags",
+      "wins": 2,
+      "points": 34,
+      "percentage": 71.23,
+      "marker": ""
+    },
+    {
+      "position": 12,
+      "team": "Hurlingham Park HPSause",
+      "wins": 1,
+      "points": 17,
+      "percentage": 45.04,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 6,
+    "doublesBestOf": 1,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "TN15-TN001",
+  "fixtures": 96,
+  "completed_fixtures": 89,
+  "draw_fixtures": 56,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 534,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

@@ -1,0 +1,57 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+TN002011,15 Feb 11,1,regular,Round 1,Black Rock Woodlands,Black Rock BlackBallers,9,1,5,1,,,33,20,Completed,
+TN002012,15 Feb 11,1,regular,Round 1,Basterfield Park BP,Basterfield Park Scratchies,0,10,0,6,,,17,36,Completed,
+TN002013,15 Feb 11,1,regular,Round 1,Elwood Unknowns,Elwood WoodlandsII,7,3,3,3,,,28,27,Completed,
+TN002014,15 Feb 11,1,regular,Round 1,Clarinda MP,Hurlingham Park Hurlingham,10,0,6,0,,,36,10,Completed,
+TN002021,22 Feb 11,2,regular,Round 2,Hurlingham Park Hurlingham,Black Rock Woodlands,0,10,0,6,,,18,36,Completed,
+TN002022,22 Feb 11,2,regular,Round 2,Black Rock BlackBallers,Basterfield Park BP,2,8,2,4,,,24,30,Completed,
+TN002023,22 Feb 11,2,regular,Round 2,Basterfield Park Scratchies,Elwood Unknowns,8,2,4,2,,,32,20,Completed,
+TN002024,22 Feb 11,2,regular,Round 2,Elwood WoodlandsII,Clarinda MP,9,1,5,1,,,34,26,Completed,
+TN002031,01 Mar 11,3,regular,Round 3,Black Rock Woodlands,Elwood WoodlandsII,3,7,3,3,,,28,30,Completed,
+TN002032,01 Mar 11,3,regular,Round 3,Basterfield Park BP,Hurlingham Park Hurlingham,10,0,6,0,,,36,18,Completed,
+TN002033,01 Mar 11,3,regular,Round 3,Elwood Unknowns,Black Rock BlackBallers,0,10,0,6,,,18,36,Completed,
+TN002034,01 Mar 11,3,regular,Round 3,Clarinda MP,Basterfield Park Scratchies,0,10,0,6,,,18,36,Completed,
+TN002041,08 Mar 11,4,regular,Round 4,Basterfield Park Scratchies,Black Rock Woodlands,9,1,5,1,,,34,26,Completed,
+TN002042,08 Mar 11,4,regular,Round 4,Elwood WoodlandsII,Basterfield Park BP,2,8,2,4,,,28,32,Completed,
+TN002043,08 Mar 11,4,regular,Round 4,Hurlingham Park Hurlingham,Elwood Unknowns,0,10,0,6,,,1,36,Completed,
+TN002044,08 Mar 11,4,regular,Round 4,Black Rock BlackBallers,Clarinda MP,8,2,4,2,,,31,25,Completed,
+TN002051,15 Mar 11,5,regular,Round 5,Elwood Unknowns,Clarinda MP,2,8,2,4,,,27,28,Completed,
+TN002052,15 Mar 11,5,regular,Round 5,Hurlingham Park Hurlingham,Elwood WoodlandsII,0,10,0,6,,,6,36,Completed,
+TN002053,15 Mar 11,5,regular,Round 5,Basterfield Park Scratchies,Black Rock BlackBallers,5,5,3,3,,,30,30,Completed,
+TN002054,15 Mar 11,5,regular,Round 5,Black Rock Woodlands,Basterfield Park BP,1,9,1,5,,,26,34,Completed,
+TN002061,22 Mar 11,6,regular,Round 6,Basterfield Park BP,Elwood Unknowns,8,2,4,2,,,32,28,Completed,
+TN002062,22 Mar 11,6,regular,Round 6,Clarinda MP,Black Rock Woodlands,0,10,0,6,,,24,36,Completed,
+TN002063,22 Mar 11,6,regular,Round 6,Elwood WoodlandsII,Basterfield Park Scratchies,8,2,4,2,,,32,24,Completed,
+TN002064,22 Mar 11,6,regular,Round 6,Black Rock BlackBallers,Hurlingham Park Hurlingham,8,2,4,2,,,32,28,Completed,
+TN002071,29 Mar 11,7,regular,Round 7,Black Rock Woodlands,Elwood Unknowns,7,3,3,3,,,30,29,Completed,
+TN002072,29 Mar 11,7,regular,Round 7,Basterfield Park BP,Clarinda MP,8,2,4,2,,,32,26,Completed,
+TN002073,29 Mar 11,7,regular,Round 7,Hurlingham Park Hurlingham,Basterfield Park Scratchies,0,10,0,6,,,7,36,Completed,
+TN002074,29 Mar 11,7,regular,Round 7,Elwood WoodlandsII,Black Rock BlackBallers,10,0,6,0,,,36,11,Completed,
+TN002081,05 Apr 11,8,regular,Round 8,Black Rock BlackBallers,Black Rock Woodlands,1,9,1,5,,,20,35,Completed,
+TN002083,05 Apr 11,8,regular,Round 8,Elwood WoodlandsII,Elwood Unknowns,2,8,2,4,,,19,30,Completed,
+TN002084,05 Apr 11,8,regular,Round 8,Hurlingham Park Hurlingham,Clarinda MP,0,10,0,6,,,24,36,Completed,
+pending-tn002-r8-basterfield-park-scratchies-basterfield-park-bp,05 Apr 11,8,regular,Round 8,Basterfield Park Scratchies,Basterfield Park BP,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+TN002094,12 Apr 11,9,regular,Round 9,Clarinda MP,Elwood WoodlandsII,5,5,3,3,,,30,30,Completed,
+pending-tn002-r9-basterfield-park-bp-black-rock-blackballers,12 Apr 11,9,regular,Round 9,Basterfield Park BP,Black Rock BlackBallers,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-tn002-r9-black-rock-woodlands-hurlingham-park-hurlingham,12 Apr 11,9,regular,Round 9,Black Rock Woodlands,Hurlingham Park Hurlingham,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-tn002-r9-elwood-unknowns-basterfield-park-scratchies,12 Apr 11,9,regular,Round 9,Elwood Unknowns,Basterfield Park Scratchies,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+TN002101,19 Apr 11,10,regular,Round 10,Elwood WoodlandsII,Black Rock Woodlands,8,2,4,2,,,31,22,Completed,
+TN002102,19 Apr 11,10,regular,Round 10,Hurlingham Park Hurlingham,Basterfield Park BP,1,9,1,5,,,18,35,Completed,
+TN002103,19 Apr 11,10,regular,Round 10,Black Rock BlackBallers,Elwood Unknowns,8,2,4,2,,,28,19,Completed,
+TN002104,19 Apr 11,10,regular,Round 10,Basterfield Park Scratchies,Clarinda MP,9,1,5,1,,,33,24,Completed,
+TN002113,03 May 11,11,regular,Round 11,Elwood Unknowns,Hurlingham Park Hurlingham,8,2,4,2,,,32,22,Completed,
+TN002114,03 May 11,11,regular,Round 11,Clarinda MP,Black Rock BlackBallers,8,2,4,2,,,32,28,Completed,
+pending-tn002-r11-basterfield-park-bp-elwood-woodlandsii,03 May 11,11,regular,Round 11,Basterfield Park BP,Elwood WoodlandsII,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-tn002-r11-black-rock-woodlands-basterfield-park-scratchies,03 May 11,11,regular,Round 11,Black Rock Woodlands,Basterfield Park Scratchies,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+TN002122,10 May 11,12,regular,Round 12,Elwood WoodlandsII,Hurlingham Park Hurlingham,10,0,6,0,,,36,24,Completed,
+pending-tn002-r12-basterfield-park-bp-black-rock-woodlands,10 May 11,12,regular,Round 12,Basterfield Park BP,Black Rock Woodlands,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-tn002-r12-black-rock-blackballers-basterfield-park-scratchies,10 May 11,12,regular,Round 12,Black Rock BlackBallers,Basterfield Park Scratchies,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-tn002-r12-clarinda-mp-elwood-unknowns,10 May 11,12,regular,Round 12,Clarinda MP,Elwood Unknowns,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+TN002131,17 May 11,13,regular,Round 13,Elwood Unknowns,Basterfield Park BP,8,2,4,2,,,32,28,Completed,
+TN002132,17 May 11,13,regular,Round 13,Black Rock Woodlands,Clarinda MP,10,0,6,0,,,36,15,Completed,
+TN002133,17 May 11,13,regular,Round 13,Basterfield Park Scratchies,Elwood WoodlandsII,10,0,6,0,,,36,26,Completed,
+TN002134,17 May 11,13,regular,Round 13,Hurlingham Park Hurlingham,Black Rock BlackBallers,2,8,2,4,,,28,32,Completed,
+pending-tn002-r14-basterfield-park-scratchies-hurlingham-park-hurlingham,24 May 11,14,regular,Round 14,Basterfield Park Scratchies,Hurlingham Park Hurlingham,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-tn002-r14-black-rock-blackballers-elwood-woodlandsii,24 May 11,14,regular,Round 14,Black Rock BlackBallers,Elwood WoodlandsII,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-tn002-r14-clarinda-mp-basterfield-park-bp,24 May 11,14,regular,Round 14,Clarinda MP,Basterfield Park BP,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-tn002-r14-elwood-unknowns-black-rock-woodlands,24 May 11,14,regular,Round 14,Elwood Unknowns,Black Rock Woodlands,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded

@@ -1,0 +1,79 @@
+{
+  "asset_id": "TN32-TN001",
+  "competition_code": "TN",
+  "competition_label": "Tuesday Night - Autumn 2022",
+  "season_id": "TN32",
+  "season_label": "Autumn 2022",
+  "source_section_code": "TN001",
+  "section_label": "Section 1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Hurlingham Park Gunslingers",
+      "wins": 8,
+      "points": 80,
+      "percentage": 126.39,
+      "marker": ""
+    },
+    {
+      "position": 2,
+      "team": "Black Rock Brady Bunch",
+      "wins": 7,
+      "points": 69,
+      "percentage": 110.66,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Black Rock Snags",
+      "wins": 7,
+      "points": 65,
+      "percentage": 104.18,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Maccabi AddamsFamily",
+      "wins": 5,
+      "points": 55,
+      "percentage": 92.97,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Basterfield Park Scratchies",
+      "wins": 1,
+      "points": 31,
+      "percentage": 70.78,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 6,
+    "doublesBestOf": 1,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "TN32-TN001",
+  "fixtures": 46,
+  "completed_fixtures": 28,
+  "draw_fixtures": 57,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 168,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

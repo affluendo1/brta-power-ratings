@@ -1,0 +1,79 @@
+{
+  "asset_id": "TN35-TN004",
+  "competition_code": "TN",
+  "competition_label": "Tuesday Night - Spring 2023",
+  "season_id": "TN35",
+  "season_label": "Spring 2023",
+  "source_section_code": "TN004",
+  "section_label": "Section 4",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Maccabi Magicians",
+      "wins": 10,
+      "points": 100,
+      "percentage": 186.74,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Glen Huntly Moonballs",
+      "wins": 8,
+      "points": 82,
+      "percentage": 125.0,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Murrumbeena Aces",
+      "wins": 4,
+      "points": 46,
+      "percentage": 84.57,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Black Rock Breakers",
+      "wins": 3,
+      "points": 44,
+      "percentage": 78.98,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Carmelite Middle Park",
+      "wins": 1,
+      "points": 28,
+      "percentage": 62.76,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 6,
+    "doublesBestOf": 1,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "TN35-TN004",
+  "fixtures": 46,
+  "completed_fixtures": 26,
+  "draw_fixtures": 57,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 156,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

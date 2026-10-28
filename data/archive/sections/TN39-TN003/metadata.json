@@ -1,0 +1,98 @@
+{
+  "asset_id": "TN39-TN003",
+  "competition_code": "TN",
+  "competition_label": "Tuesday Night - Spring 2025",
+  "season_id": "TN39",
+  "season_label": "Spring 2025",
+  "source_section_code": "TN003",
+  "section_label": "Section 3",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Hurlingham Park HP Sauce",
+      "wins": 8,
+      "points": 81,
+      "percentage": 134.39,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Basterfield Park Basterfield",
+      "wins": 7,
+      "points": 78,
+      "percentage": 124.51,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "St James Redlegs",
+      "wins": 4,
+      "points": 56,
+      "percentage": 98.77,
+      "marker": "R"
+    },
+    {
+      "position": 4,
+      "team": "Maccabi White",
+      "wins": 4,
+      "points": 56,
+      "percentage": 90.76,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Hurlingham Park Hammers",
+      "wins": 4,
+      "points": 51,
+      "percentage": 92.33,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Keysborough KeysyComeKGo",
+      "wins": 3,
+      "points": 51,
+      "percentage": 82.53,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Glen Huntly Moonballs",
+      "wins": 3,
+      "points": 47,
+      "percentage": 80.65,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 6,
+    "doublesBestOf": 1,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "TN39-TN003",
+  "fixtures": 59,
+  "completed_fixtures": 36,
+  "draw_fixtures": 59,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 216,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for TN003301 doubles No. 5: '3-1'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for TN003301 doubles No. 6: '2-1'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

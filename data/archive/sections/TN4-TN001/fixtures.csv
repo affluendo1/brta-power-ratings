@@ -1,0 +1,53 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+TN001011,07 Feb 12,1,regular,Round 1,Black Rock Woodlands,Black Rock Rusty,7,3,3,3,,,29,27,Completed,
+TN001012,07 Feb 12,1,regular,Round 1,Basterfield Park Park,Basterfield Park Scratchies,1,9,1,5,,,17,33,Completed,
+TN001013,07 Feb 12,1,regular,Round 1,Elwood Unknowns,Elwood ETG,0,10,0,6,,,9,36,Completed,
+TN001014,07 Feb 12,1,regular,Round 1,Carmelite MP,Hurlingham Park Hurls,10,0,6,0,,,36,6,Completed,
+TN001021,14 Feb 12,2,regular,Round 2,Hurlingham Park Hurls,Black Rock Woodlands,2,8,2,4,,,23,31,Completed,
+TN001022,14 Feb 12,2,regular,Round 2,Black Rock Rusty,Basterfield Park Park,9,1,5,1,,,34,26,Completed,
+TN001023,14 Feb 12,2,regular,Round 2,Basterfield Park Scratchies,Elwood Unknowns,9,1,5,1,,,33,18,Completed,
+TN001024,14 Feb 12,2,regular,Round 2,Elwood ETG,Carmelite MP,10,0,6,0,,,36,9,Completed,
+TN001031,21 Feb 12,3,regular,Round 3,Black Rock Woodlands,Elwood ETG,3,7,3,3,,,24,28,Completed,
+TN001032,21 Feb 12,3,regular,Round 3,Basterfield Park Park,Hurlingham Park Hurls,10,0,6,0,,,36,13,Completed,
+TN001033,21 Feb 12,3,regular,Round 3,Elwood Unknowns,Black Rock Rusty,1,9,1,5,,,26,34,Completed,
+TN001034,21 Feb 12,3,regular,Round 3,Carmelite MP,Basterfield Park Scratchies,0,10,0,6,,,19,36,Completed,
+TN001041,28 Feb 12,4,regular,Round 4,Basterfield Park Scratchies,Black Rock Woodlands,1,9,1,5,,,15,33,Completed,
+TN001042,28 Feb 12,4,regular,Round 4,Elwood ETG,Basterfield Park Park,9,1,5,1,,,34,26,Completed,
+TN001043,28 Feb 12,4,regular,Round 4,Hurlingham Park Hurls,Elwood Unknowns,2,8,2,4,,,23,30,Completed,
+TN001044,28 Feb 12,4,regular,Round 4,Black Rock Rusty,Carmelite MP,1,9,1,5,,,20,31,Completed,
+TN001051,06 Mar 12,5,regular,Round 5,Elwood Unknowns,Carmelite MP,2,8,2,4,,,28,32,Completed,
+TN001052,06 Mar 12,5,regular,Round 5,Hurlingham Park Hurls,Elwood ETG,0,10,0,6,,,19,36,Completed,
+TN001053,06 Mar 12,5,regular,Round 5,Basterfield Park Scratchies,Black Rock Rusty,5,5,3,3,,,30,30,Completed,
+TN001054,06 Mar 12,5,regular,Round 5,Black Rock Woodlands,Basterfield Park Park,9,1,5,1,,,34,14,Completed,
+TN001061,13 Mar 12,6,regular,Round 6,Basterfield Park Park,Elwood Unknowns,0,10,0,6,,,24,36,Completed,
+TN001062,13 Mar 12,6,regular,Round 6,Carmelite MP,Black Rock Woodlands,9,1,5,1,,,35,22,Completed,
+TN001063,13 Mar 12,6,regular,Round 6,Elwood ETG,Basterfield Park Scratchies,7,3,3,3,,,31,23,Completed,
+TN001064,13 Mar 12,6,regular,Round 6,Black Rock Rusty,Hurlingham Park Hurls,8,2,4,2,,,35,25,Completed,
+TN001071,20 Mar 12,7,regular,Round 7,Black Rock Woodlands,Elwood Unknowns,7,3,3,3,,,28,26,Completed,
+TN001072,20 Mar 12,7,regular,Round 7,Basterfield Park Park,Carmelite MP,0,10,0,6,,,24,36,Completed,
+TN001073,20 Mar 12,7,regular,Round 7,Hurlingham Park Hurls,Basterfield Park Scratchies,0,10,0,6,,,24,36,Completed,
+TN001074,20 Mar 12,7,regular,Round 7,Elwood ETG,Black Rock Rusty,9,1,5,1,,,34,26,Completed,
+TN001081,27 Mar 12,8,regular,Round 8,Black Rock Rusty,Black Rock Woodlands,3,7,3,3,,,25,26,Completed,
+TN001082,27 Mar 12,8,regular,Round 8,Basterfield Park Scratchies,Basterfield Park Park,10,0,6,0,,,36,24,Completed,
+TN001083,27 Mar 12,8,regular,Round 8,Elwood ETG,Elwood Unknowns,9,1,5,1,,,34,26,Completed,
+TN001084,27 Mar 12,8,regular,Round 8,Hurlingham Park Hurls,Carmelite MP,2,8,2,4,,,27,32,Completed,
+TN001091,03 Apr 12,9,regular,Round 9,Black Rock Woodlands,Hurlingham Park Hurls,10,0,6,0,,,36,24,Completed,
+TN001092,03 Apr 12,9,regular,Round 9,Basterfield Park Park,Black Rock Rusty,0,10,0,6,,,24,36,Completed,
+TN001093,03 Apr 12,9,regular,Round 9,Elwood Unknowns,Basterfield Park Scratchies,0,10,0,6,,,24,36,Completed,
+pending-tn001-r9-carmelite-mp-elwood-etg,03 Apr 12,9,regular,Round 9,Carmelite MP,Elwood ETG,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+TN001102,10 Apr 12,10,regular,Round 10,Hurlingham Park Hurls,Basterfield Park Park,2,8,2,4,,,28,32,Completed,
+TN001103,10 Apr 12,10,regular,Round 10,Black Rock Rusty,Elwood Unknowns,9,1,5,1,,,36,24,Completed,
+pending-tn001-r10-basterfield-park-scratchies-carmelite-mp,10 Apr 12,10,regular,Round 10,Basterfield Park Scratchies,Carmelite MP,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+pending-tn001-r10-elwood-etg-black-rock-woodlands,10 Apr 12,10,regular,Round 10,Elwood ETG,Black Rock Woodlands,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+TN001111,17 Apr 12,11,regular,Round 11,Black Rock Woodlands,Basterfield Park Scratchies,1,9,1,5,,,22,34,Completed,
+TN001112,17 Apr 12,11,regular,Round 11,Basterfield Park Park,Elwood ETG,0,10,0,6,,,24,36,Completed,
+TN001113,17 Apr 12,11,regular,Round 11,Elwood Unknowns,Hurlingham Park Hurls,9,1,5,1,,,35,18,Completed,
+TN001114,17 Apr 12,11,regular,Round 11,Carmelite MP,Black Rock Rusty,7,3,3,3,,,31,30,Completed,
+pending-tn001-r12-basterfield-park-park-black-rock-woodlands,24 Apr 12,12,regular,Round 12,Basterfield Park Park,Black Rock Woodlands,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-tn001-r12-black-rock-rusty-basterfield-park-scratchies,24 Apr 12,12,regular,Round 12,Black Rock Rusty,Basterfield Park Scratchies,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-tn001-r12-carmelite-mp-elwood-unknowns,24 Apr 12,12,regular,Round 12,Carmelite MP,Elwood Unknowns,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-tn001-r12-elwood-etg-hurlingham-park-hurls,24 Apr 12,12,regular,Round 12,Elwood ETG,Hurlingham Park Hurls,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+TN001133,01 May 12,13,regular,Round 13,Basterfield Park Scratchies,Elwood ETG,1,9,1,5,,,20,34,Completed,
+TN001134,01 May 12,13,regular,Round 13,Hurlingham Park Hurls,Black Rock Rusty,2,8,2,4,,,20,27,Completed,
+pending-tn001-r13-black-rock-woodlands-carmelite-mp,01 May 12,13,regular,Round 13,Black Rock Woodlands,Carmelite MP,,,,,,,,,Missing Result,No individual scorecard / no rubbers recorded
+pending-tn001-r13-elwood-unknowns-basterfield-park-park,01 May 12,13,regular,Round 13,Elwood Unknowns,Basterfield Park Park,,,,,,,,,Missing Result,No individual scorecard / no rubbers recorded

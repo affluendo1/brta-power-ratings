@@ -1,0 +1,79 @@
+{
+  "asset_id": "TN6-TN002",
+  "competition_code": "TN",
+  "competition_label": "Tuesday Night - Spring 2013",
+  "season_id": "TN6",
+  "season_label": "Spring 2013",
+  "source_section_code": "TN002",
+  "section_label": "Section 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Hurlingham Park Ups",
+      "wins": 7,
+      "points": 115,
+      "percentage": 152.63,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "Le Page Rafa's Heros",
+      "wins": 6,
+      "points": 89,
+      "percentage": 142.13,
+      "marker": "P"
+    },
+    {
+      "position": 3,
+      "team": "Black Rock FIGJAM",
+      "wins": 4,
+      "points": 88,
+      "percentage": 103.76,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "St James StJames",
+      "wins": 2,
+      "points": 77,
+      "percentage": 76.13,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Hurlingham Park Hurl",
+      "wins": 0,
+      "points": 71,
+      "percentage": 47.45,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 6,
+    "doublesBestOf": 1,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "TN6-TN002",
+  "fixtures": 48,
+  "completed_fixtures": 22,
+  "draw_fixtures": 59,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 132,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

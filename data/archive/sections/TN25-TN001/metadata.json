@@ -1,0 +1,151 @@
+{
+  "asset_id": "TN25-TN001",
+  "competition_code": "TN",
+  "competition_label": "Tuesday Night - Spring 2018",
+  "season_id": "TN25",
+  "season_label": "Spring 2018",
+  "source_section_code": "TN001",
+  "section_label": "1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Hurlingham Park Gunslingers",
+      "wins": 14,
+      "points": 100,
+      "percentage": 151.91,
+      "marker": "*"
+    },
+    {
+      "position": 2,
+      "team": "Bodley Tennis Plus PWC",
+      "wins": 13,
+      "points": 92,
+      "percentage": 135.99,
+      "marker": "*"
+    },
+    {
+      "position": 3,
+      "team": "Bodley Tennis Plus NetMargin",
+      "wins": 9,
+      "points": 86,
+      "percentage": 143.6,
+      "marker": "*"
+    },
+    {
+      "position": 4,
+      "team": "St James Premiers",
+      "wins": 9,
+      "points": 82,
+      "percentage": 116.16,
+      "marker": "*"
+    },
+    {
+      "position": 5,
+      "team": "Hurlingham Park Hoboes",
+      "wins": 7,
+      "points": 71,
+      "percentage": 98.08,
+      "marker": "*"
+    },
+    {
+      "position": 6,
+      "team": "Hurlingham Park Battlers",
+      "wins": 8,
+      "points": 70,
+      "percentage": 126.28,
+      "marker": "*"
+    },
+    {
+      "position": 7,
+      "team": "Basterfield Park Scratchies",
+      "wins": 9,
+      "points": 69,
+      "percentage": 109.18,
+      "marker": "*"
+    },
+    {
+      "position": 8,
+      "team": "St James AllStars",
+      "wins": 8,
+      "points": 63,
+      "percentage": 91.44,
+      "marker": "*"
+    },
+    {
+      "position": 9,
+      "team": "Basterfield Park Baste",
+      "wins": 4,
+      "points": 63,
+      "percentage": 82.06,
+      "marker": "*"
+    },
+    {
+      "position": 10,
+      "team": "Glen Huntly Glens",
+      "wins": 7,
+      "points": 55,
+      "percentage": 93.09,
+      "marker": "*"
+    },
+    {
+      "position": 11,
+      "team": "Bodley Tennis Plus Snags",
+      "wins": 3,
+      "points": 46,
+      "percentage": 77.75,
+      "marker": "*"
+    },
+    {
+      "position": 12,
+      "team": "Hurlingham Park Hpsause",
+      "wins": 4,
+      "points": 39,
+      "percentage": 74.85,
+      "marker": "*"
+    },
+    {
+      "position": 13,
+      "team": "Bodley Tennis Plus Mavericks",
+      "wins": 3,
+      "points": 27,
+      "percentage": 67.23,
+      "marker": "*"
+    },
+    {
+      "position": 14,
+      "team": "Carmelite MP",
+      "wins": 3,
+      "points": 25,
+      "percentage": 64.66,
+      "marker": "*"
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 6,
+    "doublesBestOf": 1,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "TN25-TN001",
+  "fixtures": 113,
+  "completed_fixtures": 101,
+  "draw_fixtures": 58,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 606,
+  "latest_round": 18,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

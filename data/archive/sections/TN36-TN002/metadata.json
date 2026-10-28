@@ -1,0 +1,87 @@
+{
+  "asset_id": "TN36-TN002",
+  "competition_code": "TN",
+  "competition_label": "Tuesday Night - Autumn 2024",
+  "season_id": "TN36",
+  "season_label": "Autumn 2024",
+  "source_section_code": "TN002",
+  "section_label": "Section 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "St James Premiers",
+      "wins": 11,
+      "points": 100,
+      "percentage": 120.59,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Basterfield Park Scratchies",
+      "wins": 9,
+      "points": 94,
+      "percentage": 122.54,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "St Finbar's Barbarians",
+      "wins": 10,
+      "points": 90,
+      "percentage": 111.73,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "St James All Stars",
+      "wins": 9,
+      "points": 87,
+      "percentage": 110.53,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Stella Maris Mavericks",
+      "wins": 3,
+      "points": 48,
+      "percentage": 82.74,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Maccabi White Lines",
+      "wins": 2,
+      "points": 31,
+      "percentage": 61.34,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 6,
+    "doublesBestOf": 1,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "TN36-TN002",
+  "fixtures": 46,
+  "completed_fixtures": 44,
+  "draw_fixtures": 57,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 264,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

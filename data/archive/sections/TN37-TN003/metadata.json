@@ -1,0 +1,95 @@
+{
+  "asset_id": "TN37-TN003",
+  "competition_code": "TN",
+  "competition_label": "Tuesday Night - Spring 2024",
+  "season_id": "TN37",
+  "season_label": "Spring 2024",
+  "source_section_code": "TN003",
+  "section_label": "Section 3",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Basterfield Park Basterfield",
+      "wins": 9,
+      "points": 89,
+      "percentage": 151.68,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "St James Redlegs",
+      "wins": 8,
+      "points": 85.5,
+      "percentage": 148.75,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Maccabi Magicians",
+      "wins": 8,
+      "points": 78,
+      "percentage": 121.89,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Hurlingham Park HP Sauce",
+      "wins": 8,
+      "points": 75,
+      "percentage": 112.75,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "St Finbar's Black Sheep",
+      "wins": 4,
+      "points": 40,
+      "percentage": 76.16,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Maccabi White Lines",
+      "wins": 2,
+      "points": 30.5,
+      "percentage": 68.15,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Glen Huntly Moonballs",
+      "wins": 2,
+      "points": 22,
+      "percentage": 66.99,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 6,
+    "doublesBestOf": 1,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "TN37-TN003",
+  "fixtures": 59,
+  "completed_fixtures": 44,
+  "draw_fixtures": 59,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 264,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

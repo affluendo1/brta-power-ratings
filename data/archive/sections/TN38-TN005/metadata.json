@@ -1,0 +1,95 @@
+{
+  "asset_id": "TN38-TN005",
+  "competition_code": "TN",
+  "competition_label": "Tuesday Night - Autumn 2025",
+  "season_id": "TN38",
+  "season_label": "Autumn 2025",
+  "source_section_code": "TN005",
+  "section_label": "Section 5",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Black Rock Breakers",
+      "wins": 11,
+      "points": 105,
+      "percentage": 191.0,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Murrumbeena Aces",
+      "wins": 7,
+      "points": 77,
+      "percentage": 134.8,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Mentone KillaBees",
+      "wins": 6,
+      "points": 63,
+      "percentage": 105.69,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Glen Huntly Gophers",
+      "wins": 6,
+      "points": 62,
+      "percentage": 100.69,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Wattle Knights",
+      "wins": 4,
+      "points": 53,
+      "percentage": 92.36,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Carmelite Middle Park",
+      "wins": 5,
+      "points": 50,
+      "percentage": 85.59,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Middle Brighton Whombats",
+      "wins": 0,
+      "points": 10,
+      "percentage": 47.45,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 6,
+    "doublesBestOf": 1,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "TN38-TN005",
+  "fixtures": 59,
+  "completed_fixtures": 42,
+  "draw_fixtures": 48,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 252,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

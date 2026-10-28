@@ -1,0 +1,87 @@
+{
+  "asset_id": "TN37-TN004",
+  "competition_code": "TN",
+  "competition_label": "Tuesday Night - Spring 2024",
+  "season_id": "TN37",
+  "season_label": "Spring 2024",
+  "source_section_code": "TN004",
+  "section_label": "Section 4",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Hurlingham Park Hammers",
+      "wins": 12,
+      "points": 121,
+      "percentage": 175.95,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Black Rock Breakers",
+      "wins": 10,
+      "points": 104,
+      "percentage": 135.54,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Murrumbeena Aces",
+      "wins": 5,
+      "points": 71,
+      "percentage": 96.33,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Carmelite Middle Park",
+      "wins": 5,
+      "points": 55,
+      "percentage": 76.85,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Mentone Killer Bees",
+      "wins": 4,
+      "points": 54,
+      "percentage": 78.37,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Wattle Knights",
+      "wins": 2,
+      "points": 45,
+      "percentage": 68.41,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 6,
+    "doublesBestOf": 1,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "TN37-TN004",
+  "fixtures": 46,
+  "completed_fixtures": 42,
+  "draw_fixtures": 57,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 252,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

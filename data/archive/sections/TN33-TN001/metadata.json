@@ -1,0 +1,87 @@
+{
+  "asset_id": "TN33-TN001",
+  "competition_code": "TN",
+  "competition_label": "Tuesday Night - Spring 2022",
+  "season_id": "TN33",
+  "season_label": "Spring 2022",
+  "source_section_code": "TN001",
+  "section_label": "Section 1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Black Rock UrbanWarGods",
+      "wins": 9,
+      "points": 102,
+      "percentage": 145.2,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "Hurlingham Park Gunslingers",
+      "wins": 9,
+      "points": 97,
+      "percentage": 132.91,
+      "marker": "P"
+    },
+    {
+      "position": 3,
+      "team": "Maccabi AddamsFamily",
+      "wins": 9,
+      "points": 95,
+      "percentage": 126.65,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "St James Premiers",
+      "wins": 6,
+      "points": 63,
+      "percentage": 80.3,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Basterfield Park Scratchies",
+      "wins": 5,
+      "points": 57,
+      "percentage": 82.89,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "St James All Stars",
+      "wins": 3,
+      "points": 36,
+      "percentage": 64.53,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 6,
+    "doublesBestOf": 1,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "TN33-TN001",
+  "fixtures": 46,
+  "completed_fixtures": 42,
+  "draw_fixtures": 57,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 252,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

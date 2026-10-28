@@ -1,0 +1,74 @@
+{
+  "asset_id": "TN31-TN004",
+  "competition_code": "TN",
+  "competition_label": "Tuesday Night - Spring 2021",
+  "season_id": "TN31",
+  "season_label": "Spring 2021",
+  "source_section_code": "TN004",
+  "section_label": "Section 4",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Carmelite Middle Park",
+      "wins": 4,
+      "points": 36,
+      "percentage": 110.81,
+      "marker": ""
+    },
+    {
+      "position": 2,
+      "team": "Stella Maris Mavericks",
+      "wins": 3,
+      "points": 35,
+      "percentage": 126.57,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "St James Redleges",
+      "wins": 4,
+      "points": 33,
+      "percentage": 98.2,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Glen Huntly Moonballs",
+      "wins": 1,
+      "points": 16,
+      "percentage": 74.37,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 6,
+    "doublesBestOf": 1,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "TN31-TN004",
+  "fixtures": 24,
+  "completed_fixtures": 24,
+  "draw_fixtures": 56,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 66,
+  "latest_round": 12,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "No scorecard rubbers for TN004122",
+    "Fixture game totals do not match rubbers for TN004122: TROLS team total 32-21; complete-score total 0-0. Both published records retained."
+  ]
+}

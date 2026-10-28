@@ -1,0 +1,107 @@
+{
+  "asset_id": "TN40-TN004",
+  "competition_code": "TN",
+  "competition_label": "Tuesday Night - Autumn 2026",
+  "season_id": "TN40",
+  "season_label": "Autumn 2026",
+  "source_section_code": "TN004",
+  "section_label": "Section 4",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Middle Brighton Whompbats",
+      "wins": 11,
+      "points": 97.5,
+      "percentage": 130.36,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "Ormond Dragons",
+      "wins": 11,
+      "points": 95,
+      "percentage": 121.73,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "BLTC Tornadoes",
+      "wins": 9,
+      "points": 90,
+      "percentage": 127.22,
+      "marker": "P"
+    },
+    {
+      "position": 4,
+      "team": "Black Rock Breakers",
+      "wins": 8,
+      "points": 82,
+      "percentage": 111.86,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "St Finbar's Black Sheep",
+      "wins": 8,
+      "points": 77,
+      "percentage": 109.47,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Glen Huntly Moonballs",
+      "wins": 5,
+      "points": 64.5,
+      "percentage": 92.68,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Stella Maris Mavericks",
+      "wins": 2,
+      "points": 36,
+      "percentage": 78.12,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "St Pauls Knights",
+      "wins": 0,
+      "points": 18,
+      "percentage": 51.77,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 6,
+    "doublesBestOf": 1,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "TN40-TN004",
+  "fixtures": 59,
+  "completed_fixtures": 58,
+  "draw_fixtures": 59,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 346,
+  "latest_round": 17,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for TN004042 doubles No. 5: '3-2'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for TN004042 doubles No. 6: '3-2'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for TN004044 doubles No. 5: '5-5'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}

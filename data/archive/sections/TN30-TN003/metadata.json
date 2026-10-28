@@ -1,0 +1,79 @@
+{
+  "asset_id": "TN30-TN003",
+  "competition_code": "TN",
+  "competition_label": "Tuesday Night - Autumn 2021",
+  "season_id": "TN30",
+  "season_label": "Autumn 2021",
+  "source_section_code": "TN003",
+  "section_label": "Section 3",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Basterfield Park Basterfield",
+      "wins": 6,
+      "points": 57,
+      "percentage": 138.46,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "Hurlingham Park HP Sauce",
+      "wins": 5,
+      "points": 48,
+      "percentage": 113.17,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Black Rock Tim Tams",
+      "wins": 4,
+      "points": 46,
+      "percentage": 116.57,
+      "marker": "P"
+    },
+    {
+      "position": 4,
+      "team": "Stella Maris Mavericks",
+      "wins": 3,
+      "points": 36,
+      "percentage": 104.44,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Carmelite Middle Park",
+      "wins": 0,
+      "points": 13,
+      "percentage": 45.41,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 6,
+    "doublesBestOf": 1,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "TN30-TN003",
+  "fixtures": 32,
+  "completed_fixtures": 20,
+  "draw_fixtures": 57,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 120,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

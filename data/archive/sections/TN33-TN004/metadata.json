@@ -1,0 +1,79 @@
+{
+  "asset_id": "TN33-TN004",
+  "competition_code": "TN",
+  "competition_label": "Tuesday Night - Spring 2022",
+  "season_id": "TN33",
+  "season_label": "Spring 2022",
+  "source_section_code": "TN004",
+  "section_label": "Section 4",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Black Rock Racq Pack",
+      "wins": 7,
+      "points": 74,
+      "percentage": 117.49,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "St James Redlegs",
+      "wins": 7,
+      "points": 70,
+      "percentage": 125.48,
+      "marker": "P"
+    },
+    {
+      "position": 3,
+      "team": "Glen Huntly Moonballs",
+      "wins": 5,
+      "points": 65,
+      "percentage": 140.48,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Carmelite Middle Park",
+      "wins": 5,
+      "points": 64,
+      "percentage": 90.24,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Bentleigh Rec Mck Green",
+      "wins": 2,
+      "points": 27,
+      "percentage": 49.39,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 6,
+    "doublesBestOf": 1,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "TN33-TN004",
+  "fixtures": 46,
+  "completed_fixtures": 23,
+  "draw_fixtures": 57,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 138,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

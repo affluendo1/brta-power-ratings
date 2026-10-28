@@ -1,0 +1,103 @@
+{
+  "asset_id": "TN4-TN001",
+  "competition_code": "TN",
+  "competition_label": "Tuesday Night - Autumn 2012",
+  "season_id": "TN4",
+  "season_label": "Autumn 2012",
+  "source_section_code": "TN001",
+  "section_label": "Tue Night A12",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Elwood ETG",
+      "wins": 10,
+      "points": 110,
+      "percentage": 164.56,
+      "marker": ""
+    },
+    {
+      "position": 2,
+      "team": "Basterfield Park Scratchies",
+      "wins": 7,
+      "points": 82,
+      "percentage": 120.29,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Carmelite MP",
+      "wins": 7,
+      "points": 81,
+      "percentage": 113.97,
+      "marker": "*"
+    },
+    {
+      "position": 4,
+      "team": "Black Rock Rusty",
+      "wins": 6,
+      "points": 74,
+      "percentage": 110.43,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Black Rock Woodlands",
+      "wins": 7,
+      "points": 67,
+      "percentage": 113.55,
+      "marker": "*"
+    },
+    {
+      "position": 6,
+      "team": "Elwood Unknowns",
+      "wins": 3,
+      "points": 41,
+      "percentage": 84.43,
+      "marker": "*"
+    },
+    {
+      "position": 7,
+      "team": "Basterfield Park Park",
+      "wins": 2,
+      "points": 27,
+      "percentage": 76.12,
+      "marker": "*"
+    },
+    {
+      "position": 8,
+      "team": "Hurlingham Park Hurls",
+      "wins": 0,
+      "points": 18,
+      "percentage": 62.19,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 6,
+    "doublesBestOf": 1,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "TN4-TN001",
+  "fixtures": 52,
+  "completed_fixtures": 43,
+  "draw_fixtures": 56,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 258,
+  "latest_round": 13,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

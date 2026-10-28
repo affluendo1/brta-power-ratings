@@ -1,0 +1,87 @@
+{
+  "asset_id": "TN34-TN003",
+  "competition_code": "TN",
+  "competition_label": "Tuesday Night - Autumn 2023",
+  "season_id": "TN34",
+  "season_label": "Autumn 2023",
+  "source_section_code": "TN003",
+  "section_label": "Section 3",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Murrumbeena Beasts",
+      "wins": 10,
+      "points": 100,
+      "percentage": 127.62,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Basterfield Park Basterfield",
+      "wins": 10,
+      "points": 98,
+      "percentage": 123.44,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Stella Maris Mavericks",
+      "wins": 7,
+      "points": 81,
+      "percentage": 114.33,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Hurlingham Park HP Sauce",
+      "wins": 4,
+      "points": 61.5,
+      "percentage": 87.54,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "St James Redlegs",
+      "wins": 4,
+      "points": 56,
+      "percentage": 74.94,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Maccabi Magicians",
+      "wins": 2,
+      "points": 53.5,
+      "percentage": 79.94,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 6,
+    "doublesBestOf": 1,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "TN34-TN003",
+  "fixtures": 46,
+  "completed_fixtures": 38,
+  "draw_fixtures": 57,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 228,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

@@ -1,0 +1,103 @@
+{
+  "asset_id": "TN29-TN001",
+  "competition_code": "TN",
+  "competition_label": "Tuesday Night - Spring 2020",
+  "season_id": "TN29",
+  "season_label": "Spring 2020",
+  "source_section_code": "TN001",
+  "section_label": "Section 1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Black Rock Brady Bunch",
+      "wins": 5,
+      "points": 45,
+      "percentage": 168.69,
+      "marker": ""
+    },
+    {
+      "position": 2,
+      "team": "Hurlingham Park Gunslingers",
+      "wins": 3,
+      "points": 35,
+      "percentage": 118.81,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Hurlingham Park Hoboes",
+      "wins": 3,
+      "points": 31,
+      "percentage": 110.69,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "St James Premiers",
+      "wins": 3,
+      "points": 29,
+      "percentage": 115.2,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Basterfield Park Scratchies",
+      "wins": 1,
+      "points": 18,
+      "percentage": 85.21,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "St James All Stars",
+      "wins": 1,
+      "points": 17,
+      "percentage": 90.06,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Hurlingham Park Battlers",
+      "wins": 1,
+      "points": 14,
+      "percentage": 75.32,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "Black Rock Snags",
+      "wins": 1,
+      "points": 11,
+      "percentage": 65.65,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 6,
+    "doublesBestOf": 1,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "TN29-TN001",
+  "fixtures": 20,
+  "completed_fixtures": 19,
+  "draw_fixtures": 56,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 114,
+  "latest_round": 5,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

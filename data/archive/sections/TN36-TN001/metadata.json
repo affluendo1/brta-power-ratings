@@ -1,0 +1,89 @@
+{
+  "asset_id": "TN36-TN001",
+  "competition_code": "TN",
+  "competition_label": "Tuesday Night - Autumn 2024",
+  "season_id": "TN36",
+  "season_label": "Autumn 2024",
+  "source_section_code": "TN001",
+  "section_label": "Section 1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Hurlingham Park Gunslingers",
+      "wins": 10,
+      "points": 91,
+      "percentage": 111.4,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "Hurlingham Park Hoboes",
+      "wins": 8,
+      "points": 87,
+      "percentage": 115.58,
+      "marker": "P"
+    },
+    {
+      "position": 3,
+      "team": "Black Rock UrbanWarGods",
+      "wins": 9,
+      "points": 83,
+      "percentage": 110.31,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Basterfield Park HamptonHacks",
+      "wins": 6,
+      "points": 74,
+      "percentage": 96.49,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Lauriston Lemurs",
+      "wins": 6,
+      "points": 63,
+      "percentage": 87.32,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Hurlingham Park Battlers",
+      "wins": 4,
+      "points": 52,
+      "percentage": 83.91,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 6,
+    "doublesBestOf": 1,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "TN36-TN001",
+  "fixtures": 46,
+  "completed_fixtures": 43,
+  "draw_fixtures": 57,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 258,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Fixture game totals do not match rubbers for TN001321: TROLS team total 24-25; complete-score total 24-24. Both published records retained."
+  ]
+}

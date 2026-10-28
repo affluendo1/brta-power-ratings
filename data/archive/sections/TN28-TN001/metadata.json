@@ -1,0 +1,159 @@
+{
+  "asset_id": "TN28-TN001",
+  "competition_code": "TN",
+  "competition_label": "Tuesday Night - Autumn 2020",
+  "season_id": "TN28",
+  "season_label": "Autumn 2020",
+  "source_section_code": "TN001",
+  "section_label": "1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Black Rock BradyBunch",
+      "wins": 0,
+      "points": 0,
+      "percentage": 0.0,
+      "marker": ""
+    },
+    {
+      "position": 2,
+      "team": "Black Rock NetMargin",
+      "wins": 0,
+      "points": 0,
+      "percentage": 0.0,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Black Rock TinyTim",
+      "wins": 0,
+      "points": 0,
+      "percentage": 0.0,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Hurlingham Park Hoboes",
+      "wins": 0,
+      "points": 0,
+      "percentage": 0.0,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "St James Premiers",
+      "wins": 0,
+      "points": 0,
+      "percentage": 0.0,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "St James AllStars",
+      "wins": 0,
+      "points": 0,
+      "percentage": 0.0,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Basterfield Park Scratchies",
+      "wins": 0,
+      "points": 0,
+      "percentage": 0.0,
+      "marker": ""
+    },
+    {
+      "position": 8,
+      "team": "Black Rock Snags",
+      "wins": 0,
+      "points": 0,
+      "percentage": 0.0,
+      "marker": ""
+    },
+    {
+      "position": 9,
+      "team": "Hurlingham Park Battlers",
+      "wins": 0,
+      "points": 0,
+      "percentage": 0.0,
+      "marker": ""
+    },
+    {
+      "position": 10,
+      "team": "Hurlingham Park Hpsause",
+      "wins": 0,
+      "points": 0,
+      "percentage": 0.0,
+      "marker": ""
+    },
+    {
+      "position": 11,
+      "team": "Basterfield Park Baste",
+      "wins": 0,
+      "points": 0,
+      "percentage": 0.0,
+      "marker": ""
+    },
+    {
+      "position": 12,
+      "team": "Carmelite MP",
+      "wins": 0,
+      "points": 0,
+      "percentage": 0.0,
+      "marker": ""
+    },
+    {
+      "position": 13,
+      "team": "Bodley Tennis Plus Maverics",
+      "wins": 0,
+      "points": 0,
+      "percentage": 0.0,
+      "marker": ""
+    },
+    {
+      "position": 14,
+      "team": "Murrumbeena Beasts",
+      "wins": 0,
+      "points": 0,
+      "percentage": 0.0,
+      "marker": ""
+    },
+    {
+      "position": 15,
+      "team": "Hurlingham Park Gunslingers",
+      "wins": 0,
+      "points": 0,
+      "percentage": 0.0,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 0,
+    "doublesBestOf": 1,
+    "doublesTarget": 6,
+    "playersPerTeam": 0,
+    "matchTiebreak": false
+  },
+  "section_code": "TN28-TN001",
+  "fixtures": 0,
+  "completed_fixtures": 0,
+  "draw_fixtures": 56,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 0,
+  "latest_round": 0,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

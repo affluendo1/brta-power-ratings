@@ -1,0 +1,87 @@
+{
+  "asset_id": "TN34-TN002",
+  "competition_code": "TN",
+  "competition_label": "Tuesday Night - Autumn 2023",
+  "season_id": "TN34",
+  "season_label": "Autumn 2023",
+  "source_section_code": "TN002",
+  "section_label": "Section 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Hurlingham Park Battlers",
+      "wins": 14,
+      "points": 124,
+      "percentage": 150.47,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Black Rock Shanks-a-lot",
+      "wins": 8,
+      "points": 87,
+      "percentage": 116.62,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "St Finbar's Barbarians",
+      "wins": 8,
+      "points": 86,
+      "percentage": 115.56,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "St James All Stars",
+      "wins": 7,
+      "points": 75,
+      "percentage": 100.25,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "St Finbar's Black Sheep",
+      "wins": 2,
+      "points": 48,
+      "percentage": 76.96,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Black Rock Net Margin",
+      "wins": 1,
+      "points": 30,
+      "percentage": 61.24,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 6,
+    "doublesBestOf": 1,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "TN34-TN002",
+  "fixtures": 46,
+  "completed_fixtures": 42,
+  "draw_fixtures": 57,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 248,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

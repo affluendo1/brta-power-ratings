@@ -1,0 +1,90 @@
+{
+  "asset_id": "TN1-TN001",
+  "competition_code": "TN",
+  "competition_label": "Tuesday Night - Spring 2010",
+  "season_id": "TN1",
+  "season_label": "Spring 2010",
+  "source_section_code": "TN001",
+  "section_label": "Night",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Black Rock Rusty Balls",
+      "wins": 0,
+      "points": 8,
+      "percentage": 128.0,
+      "marker": ""
+    },
+    {
+      "position": 2,
+      "team": "Black Rock Woodlands",
+      "wins": 0,
+      "points": 2,
+      "percentage": 78.13,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Carmelite MiddleParkSP",
+      "wins": 0,
+      "points": 0,
+      "percentage": 0.0,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Elwood WoodlandsII",
+      "wins": 0,
+      "points": 0,
+      "percentage": 0.0,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Basterfield Park 3Peat",
+      "wins": 0,
+      "points": 0,
+      "percentage": 0.0,
+      "marker": "*"
+    },
+    {
+      "position": 6,
+      "team": "Basterfield Park",
+      "wins": 0,
+      "points": 0,
+      "percentage": 0.0,
+      "marker": "*"
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 0,
+    "doublesBestOf": 1,
+    "doublesTarget": 6,
+    "playersPerTeam": 0,
+    "matchTiebreak": false
+  },
+  "section_code": "TN1-TN001",
+  "fixtures": 4,
+  "completed_fixtures": 1,
+  "draw_fixtures": 56,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 0,
+  "latest_round": 1,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "No scorecard rubbers for TN001013",
+    "Fixture game totals do not match rubbers for TN001013: TROLS team total 32-25; complete-score total 0-0. Both published records retained."
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "asset_id": "TN29-TN005",
+  "competition_code": "TN",
+  "competition_label": "Tuesday Night - Spring 2020",
+  "season_id": "TN29",
+  "season_label": "Spring 2020",
+  "source_section_code": "TN005",
+  "section_label": "Section 2",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Murrumbeena Beena Beasts",
+      "wins": 4,
+      "points": 48,
+      "percentage": 200.0,
+      "marker": ""
+    },
+    {
+      "position": 2,
+      "team": "Black Rock Net Margin",
+      "wins": 2,
+      "points": 29,
+      "percentage": 118.99,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Basterfield Park Baste",
+      "wins": 2,
+      "points": 28,
+      "percentage": 102.41,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Black Rock Tim Tams",
+      "wins": 2,
+      "points": 20,
+      "percentage": 124.0,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Hurlingham Park HP Sauce",
+      "wins": 1,
+      "points": 14,
+      "percentage": 79.49,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Carmelite Middle Park",
+      "wins": 0,
+      "points": 8,
+      "percentage": 64.29,
+      "marker": ""
+    },
+    {
+      "position": 7,
+      "team": "Black Rock Mavericks",
+      "wins": 0,
+      "points": 3,
+      "percentage": 46.6,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 6,
+    "doublesBestOf": 1,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "TN29-TN005",
+  "fixtures": 20,
+  "completed_fixtures": 12,
+  "draw_fixtures": 45,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 72,
+  "latest_round": 5,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

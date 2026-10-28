@@ -1,0 +1,79 @@
+{
+  "asset_id": "TN34-TN004",
+  "competition_code": "TN",
+  "competition_label": "Tuesday Night - Autumn 2023",
+  "season_id": "TN34",
+  "season_label": "Autumn 2023",
+  "source_section_code": "TN004",
+  "section_label": "Section 4",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Glen Huntly Moonballs",
+      "wins": 7,
+      "points": 81,
+      "percentage": 131.28,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Murrumbeena Aces",
+      "wins": 7,
+      "points": 71,
+      "percentage": 112.46,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Carmelite Middle Park",
+      "wins": 4,
+      "points": 57,
+      "percentage": 111.52,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Black Rock Racq Pack",
+      "wins": 3,
+      "points": 54,
+      "percentage": 89.16,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Patterson Lakes",
+      "wins": 3,
+      "points": 37,
+      "percentage": 61.4,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 6,
+    "doublesBestOf": 1,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "TN34-TN004",
+  "fixtures": 46,
+  "completed_fixtures": 23,
+  "draw_fixtures": 57,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 138,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

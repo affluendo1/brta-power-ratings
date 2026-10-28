@@ -1,0 +1,79 @@
+{
+  "asset_id": "TN31-TN003",
+  "competition_code": "TN",
+  "competition_label": "Tuesday Night - Spring 2021",
+  "season_id": "TN31",
+  "season_label": "Spring 2021",
+  "source_section_code": "TN003",
+  "section_label": "Section 3",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "St Finbar's Finbarbarian",
+      "wins": 4,
+      "points": 36,
+      "percentage": 160.71,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Basterfield Park Basterfield",
+      "wins": 2,
+      "points": 19,
+      "percentage": 100.0,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Hurlingham Park HP Sauce",
+      "wins": 2,
+      "points": 18,
+      "percentage": 86.78,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Murrumbeena Aces",
+      "wins": 1,
+      "points": 14,
+      "percentage": 89.19,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Black Rock Tim Tams",
+      "wins": 1,
+      "points": 13,
+      "percentage": 81.45,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 6,
+    "doublesBestOf": 1,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "TN31-TN003",
+  "fixtures": 31,
+  "completed_fixtures": 21,
+  "draw_fixtures": 57,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 66,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

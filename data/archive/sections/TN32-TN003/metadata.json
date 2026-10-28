@@ -1,0 +1,79 @@
+{
+  "asset_id": "TN32-TN003",
+  "competition_code": "TN",
+  "competition_label": "Tuesday Night - Autumn 2022",
+  "season_id": "TN32",
+  "season_label": "Autumn 2022",
+  "source_section_code": "TN003",
+  "section_label": "Section 3",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Basterfield Park Basterfield",
+      "wins": 8,
+      "points": 92,
+      "percentage": 153.91,
+      "marker": ""
+    },
+    {
+      "position": 2,
+      "team": "Glen Huntly Dropshots",
+      "wins": 7,
+      "points": 74,
+      "percentage": 122.41,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Hurlingham Park HP Sauce",
+      "wins": 5,
+      "points": 59,
+      "percentage": 101.02,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Black Rock Tim Tams",
+      "wins": 3,
+      "points": 45,
+      "percentage": 77.23,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Murrumbeena Aces",
+      "wins": 2,
+      "points": 30,
+      "percentage": 68.7,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 6,
+    "doublesBestOf": 1,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "TN32-TN003",
+  "fixtures": 46,
+  "completed_fixtures": 27,
+  "draw_fixtures": 57,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 160,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

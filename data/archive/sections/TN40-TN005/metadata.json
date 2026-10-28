@@ -1,0 +1,81 @@
+{
+  "asset_id": "TN40-TN005",
+  "competition_code": "TN",
+  "competition_label": "Tuesday Night - Autumn 2026",
+  "season_id": "TN40",
+  "season_label": "Autumn 2026",
+  "source_section_code": "TN005",
+  "section_label": "Section 5",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Murrumbeena Aces",
+      "wins": 10,
+      "points": 89.5,
+      "percentage": 135.14,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Wattle Warriors",
+      "wins": 6,
+      "points": 62,
+      "percentage": 105.79,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Mentone Killa Bee",
+      "wins": 6,
+      "points": 58.5,
+      "percentage": 91.91,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "St Pauls Crusaders",
+      "wins": 4,
+      "points": 52,
+      "percentage": 92.83,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Carmelite Middle Park",
+      "wins": 3,
+      "points": 38,
+      "percentage": 76.29,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 6,
+    "doublesBestOf": 1,
+    "doublesTarget": 6,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "TN40-TN005",
+  "fixtures": 46,
+  "completed_fixtures": 29,
+  "draw_fixtures": 46,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 174,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": [
+    "Incomplete TROLS score for TN005041 doubles No. 5: '3-1'. Missing score not inferred; excluded from ratings and game totals."
+  ]
+}
