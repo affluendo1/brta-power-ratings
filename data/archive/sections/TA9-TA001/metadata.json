@@ -1,0 +1,79 @@
+{
+  "asset_id": "TA9-TA001",
+  "competition_code": "TA",
+  "competition_label": "Tuesday AM - Spring 2023",
+  "season_id": "TA9",
+  "season_label": "Spring 2023",
+  "source_section_code": "TA001",
+  "section_label": "T Section 1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Mordialloc",
+      "wins": 9,
+      "points": 73.5,
+      "percentage": 227.1,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Stella Maris Red",
+      "wins": 7,
+      "points": 70.5,
+      "percentage": 227.52,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Aspendale",
+      "wins": 5,
+      "points": 52.5,
+      "percentage": 115.04,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Stella Maris Blue",
+      "wins": 3,
+      "points": 32,
+      "percentage": 50.0,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Dingley",
+      "wins": 0,
+      "points": 11.5,
+      "percentage": 33.33,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 1,
+    "doublesTarget": 10,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "TA9-TA001",
+  "fixtures": 46,
+  "completed_fixtures": 27,
+  "draw_fixtures": 57,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 101,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

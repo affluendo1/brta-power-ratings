@@ -1,0 +1,79 @@
+{
+  "asset_id": "TA11-TA001",
+  "competition_code": "TA",
+  "competition_label": "Tuesday AM - Spring 2024",
+  "season_id": "TA11",
+  "season_label": "Spring 2024",
+  "source_section_code": "TA001",
+  "section_label": "T Section 1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Aspendale",
+      "wins": 11,
+      "points": 82,
+      "percentage": 188.21,
+      "marker": "R"
+    },
+    {
+      "position": 2,
+      "team": "Mordialloc",
+      "wins": 8,
+      "points": 65,
+      "percentage": 159.13,
+      "marker": "P"
+    },
+    {
+      "position": 3,
+      "team": "Stella Maris Red",
+      "wins": 8,
+      "points": 63,
+      "percentage": 138.43,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Stella Maris Blue",
+      "wins": 2,
+      "points": 20.5,
+      "percentage": 54.99,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Dingley",
+      "wins": 0,
+      "points": 9.5,
+      "percentage": 35.68,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 1,
+    "doublesTarget": 10,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "TA11-TA001",
+  "fixtures": 46,
+  "completed_fixtures": 31,
+  "draw_fixtures": 57,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 122,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

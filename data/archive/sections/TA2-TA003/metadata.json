@@ -1,0 +1,71 @@
+{
+  "asset_id": "TA2-TA003",
+  "competition_code": "TA",
+  "competition_label": "Tuesday AM - Autumn 2021",
+  "season_id": "TA2",
+  "season_label": "Autumn 2021",
+  "source_section_code": "TA003",
+  "section_label": "Tuesday Section 1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Stella Maris",
+      "wins": 4,
+      "points": 42,
+      "percentage": 296.0,
+      "marker": ""
+    },
+    {
+      "position": 2,
+      "team": "Aspendale",
+      "wins": 2,
+      "points": 27,
+      "percentage": 128.45,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Mordialloc",
+      "wins": 3,
+      "points": 25,
+      "percentage": 83.21,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Dingley",
+      "wins": 0,
+      "points": 2,
+      "percentage": 33.33,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 1,
+    "doublesTarget": 10,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "TA2-TA003",
+  "fixtures": 12,
+  "completed_fixtures": 9,
+  "draw_fixtures": 0,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 36,
+  "latest_round": 6,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

@@ -1,0 +1,79 @@
+{
+  "asset_id": "TA1-TA002",
+  "competition_code": "TA",
+  "competition_label": "Tuesday AM - Spring 2019",
+  "season_id": "TA1",
+  "season_label": "Spring 2019",
+  "source_section_code": "TA002",
+  "section_label": "Section 1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Aspendale",
+      "wins": 10,
+      "points": 74,
+      "percentage": 157.69,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Stella Maris",
+      "wins": 8,
+      "points": 69,
+      "percentage": 163.48,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Mordialloc",
+      "wins": 5,
+      "points": 51,
+      "percentage": 134.93,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Dingley 1",
+      "wins": 4,
+      "points": 42,
+      "percentage": 106.53,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Dingley 2",
+      "wins": 0,
+      "points": 4,
+      "percentage": 13.64,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 1,
+    "doublesTarget": 10,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "TA1-TA002",
+  "fixtures": 46,
+  "completed_fixtures": 28,
+  "draw_fixtures": 1,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 112,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

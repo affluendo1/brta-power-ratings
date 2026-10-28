@@ -1,0 +1,71 @@
+{
+  "asset_id": "TA6-TA001",
+  "competition_code": "TA",
+  "competition_label": "Tuesday AM - Autumn 2022",
+  "season_id": "TA6",
+  "season_label": "Autumn 2022",
+  "source_section_code": "TA001",
+  "section_label": "T Section 1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Mordialloc",
+      "wins": 13,
+      "points": 94,
+      "percentage": 170.75,
+      "marker": "P"
+    },
+    {
+      "position": 2,
+      "team": "Stella Maris",
+      "wins": 11,
+      "points": 86,
+      "percentage": 149.23,
+      "marker": "R"
+    },
+    {
+      "position": 3,
+      "team": "Aspendale",
+      "wins": 6,
+      "points": 53,
+      "percentage": 100.0,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Dingley",
+      "wins": 0,
+      "points": 7,
+      "percentage": 35.66,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 4,
+    "doublesBestOf": 1,
+    "doublesTarget": 10,
+    "playersPerTeam": 4,
+    "matchTiebreak": false
+  },
+  "section_code": "TA6-TA001",
+  "fixtures": 31,
+  "completed_fixtures": 31,
+  "draw_fixtures": 57,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 124,
+  "latest_round": 16,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

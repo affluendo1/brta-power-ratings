@@ -1,0 +1,60 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+TA001011,03 Feb 26,1,regular,Round 1,Aspendale Gold,Aspendale Green,4,4,2,2,,,30,30,Completed,
+TA001012,03 Feb 26,1,regular,Round 1,BLTC,Dingley,8,0,4,0,,,40,5,Completed,
+TA001013,03 Feb 26,1,regular,Round 1,Mordialloc Red,Mordialloc White,6,2,2,2,,,37,28,Completed,
+pending-ta001-r1-stella-maris-bye,03 Feb 26,1,regular,Round 1,Stella Maris,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+TA001022,17 Feb 26,2,regular,Round 2,Aspendale Green,BLTC,0,8,0,4,,,10,40,Completed,
+TA001023,17 Feb 26,2,regular,Round 2,Dingley,Mordialloc Red,0,8,0,4,,,5,40,Completed,
+TA001024,17 Feb 26,2,regular,Round 2,Mordialloc White,Stella Maris,4,4,1,1,,,17,11,Completed,
+pending-ta001-r2-bye-aspendale-gold,17 Feb 26,2,regular,Round 2,Bye,Aspendale Gold,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+TA001031,24 Feb 26,3,regular,Round 3,Aspendale Gold,Mordialloc White,1,7,1,3,,,20,36,Completed,
+TA001033,24 Feb 26,3,regular,Round 3,Mordialloc Red,Aspendale Green,8,0,4,0,,,40,16,Completed,
+TA001034,24 Feb 26,3,regular,Round 3,Stella Maris,Dingley,8,0,4,0,,,40,2,Completed,
+pending-ta001-r3-bltc-bye,24 Feb 26,3,regular,Round 3,BLTC,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+TA001041,03 Mar 26,4,regular,Round 4,Dingley,Aspendale Gold,1,7,1,3,,,19,39,Completed,
+TA001042,03 Mar 26,4,regular,Round 4,Mordialloc White,BLTC,1,7,1,3,,,22,38,Completed,
+TA001044,03 Mar 26,4,regular,Round 4,Aspendale Green,Stella Maris,1,7,1,3,,,16,39,Completed,
+pending-ta001-r4-bye-mordialloc-red,03 Mar 26,4,regular,Round 4,Bye,Mordialloc Red,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+TA001051,10 Mar 26,5,regular,Round 5,Mordialloc Red,Stella Maris,7,1,3,1,,,39,20,Completed,
+TA001053,10 Mar 26,5,regular,Round 5,Dingley,Aspendale Green,0,8,0,4,,,18,40,Completed,
+TA001054,10 Mar 26,5,regular,Round 5,Aspendale Gold,BLTC,0,8,0,4,,,6,40,Completed,
+pending-ta001-r5-bye-mordialloc-white,10 Mar 26,5,regular,Round 5,Bye,Mordialloc White,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+TA001061,17 Mar 26,6,regular,Round 6,BLTC,Mordialloc Red,1,7,1,3,,,30,33,Completed,
+TA001062,17 Mar 26,6,regular,Round 6,Stella Maris,Aspendale Gold,8,0,4,0,,,40,13,Completed,
+TA001063,17 Mar 26,6,regular,Round 6,Mordialloc White,Dingley,7,1,3,1,,,38,15,Completed,
+pending-ta001-r6-aspendale-green-bye,17 Mar 26,6,regular,Round 6,Aspendale Green,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+TA001071,24 Mar 26,7,regular,Round 7,Aspendale Gold,Mordialloc Red,1,7,1,3,,,17,33,Completed,
+TA001072,24 Mar 26,7,regular,Round 7,BLTC,Stella Maris,8,0,4,0,,,40,26,Completed,
+TA001074,24 Mar 26,7,regular,Round 7,Mordialloc White,Aspendale Green,8,0,4,0,,,40,8,Completed,
+pending-ta001-r7-bye-dingley,24 Mar 26,7,regular,Round 7,Bye,Dingley,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+TA001081,31 Mar 26,8,regular,Round 8,Aspendale Green,Aspendale Gold,2,6,2,2,,,26,33,Completed,
+TA001082,31 Mar 26,8,regular,Round 8,Dingley,BLTC,1,7,1,3,,,15,38,Completed,
+TA001083,31 Mar 26,8,regular,Round 8,Mordialloc White,Mordialloc Red,1,7,1,3,,,22,38,Completed,
+pending-ta001-r8-bye-stella-maris,31 Mar 26,8,regular,Round 8,Bye,Stella Maris,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+TA001092,21 Apr 26,9,regular,Round 9,BLTC,Aspendale Green,7,1,3,1,,,34,14,Completed,
+TA001093,21 Apr 26,9,regular,Round 9,Mordialloc Red,Dingley,7,1,3,1,,,35,12,Completed,
+TA001094,21 Apr 26,9,regular,Round 9,Stella Maris,Mordialloc White,7,1,3,1,,,38,16,Completed,
+pending-ta001-r9-aspendale-gold-bye,21 Apr 26,9,regular,Round 9,Aspendale Gold,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+TA001101,28 Apr 26,10,regular,Round 10,Mordialloc White,Aspendale Gold,7,1,3,1,,,37,19,Completed,
+TA001103,28 Apr 26,10,regular,Round 10,Aspendale Green,Mordialloc Red,1,7,1,3,,,16,33,Completed,
+TA001104,28 Apr 26,10,regular,Round 10,Dingley,Stella Maris,2,6,2,2,,,22,28,Completed,
+pending-ta001-r10-bye-bltc,28 Apr 26,10,regular,Round 10,Bye,BLTC,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+TA001111,05 May 26,11,regular,Round 11,Aspendale Gold,Dingley,8,0,4,0,,,40,15,Completed,
+TA001112,05 May 26,11,regular,Round 11,BLTC,Mordialloc White,2,6,2,2,,,29,30,Completed,
+TA001114,05 May 26,11,regular,Round 11,Stella Maris,Aspendale Green,6,2,2,2,,,25,22,Completed,
+pending-ta001-r11-mordialloc-red-bye,05 May 26,11,regular,Round 11,Mordialloc Red,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+TA001121,12 May 26,12,regular,Round 12,Stella Maris,Mordialloc Red,0,8,0,4,,,14,40,Completed,
+TA001123,12 May 26,12,regular,Round 12,Aspendale Green,Dingley,1,7,1,3,,,26,34,Completed,
+TA001124,12 May 26,12,regular,Round 12,BLTC,Aspendale Gold,7,1,3,1,,,37,20,Completed,
+pending-ta001-r12-mordialloc-white-bye,12 May 26,12,regular,Round 12,Mordialloc White,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+TA001131,19 May 26,13,regular,Round 13,Mordialloc Red,BLTC,2,6,2,2,,,34,36,Completed,
+TA001132,19 May 26,13,regular,Round 13,Aspendale Gold,Stella Maris,6,2,2,2,,,35,28,Completed,
+TA001133,19 May 26,13,regular,Round 13,Dingley,Mordialloc White,0,8,0,4,,,12,40,Completed,
+pending-ta001-r13-bye-aspendale-green,19 May 26,13,regular,Round 13,Bye,Aspendale Green,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+TA001141,26 May 26,14,regular,Round 14,Mordialloc Red,Aspendale Gold,8,0,4,0,,,40,9,Completed,
+TA001142,26 May 26,14,regular,Round 14,Stella Maris,BLTC,1,7,1,3,,,18,37,Completed,
+pending-ta001-r14-aspendale-green-mordialloc-white,26 May 26,14,regular,Round 14,Aspendale Green,Mordialloc White,,,,,,,,,Forfeited By,No individual scorecard / no rubbers recorded
+pending-ta001-r14-dingley-bye,26 May 26,14,regular,Round 14,Dingley,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+TA001301,,16,semi_final,Semi-final,Mordialloc Red,Stella Maris,7,1,3,1,,,38,14,Completed,
+TA001302,,16,semi_final,Semi-final,BLTC,Mordialloc White,8,0,4,0,,,40,16,Completed,
+TA001321,,17,grand_final,Grand final · TROLS entry 2,Mordialloc Red,BLTC,6,2,2,2,,,29,26,Completed,

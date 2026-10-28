@@ -1,0 +1,71 @@
+{
+  "asset_id": "TA3-TA002",
+  "competition_code": "TA",
+  "competition_label": "Tuesday AM - Spring 2020",
+  "season_id": "TA3",
+  "season_label": "Spring 2020",
+  "source_section_code": "TA002",
+  "section_label": "Section 1",
+  "format": "sets",
+  "green_ball": false,
+  "is_archive": true,
+  "results_loaded_by_trols": null,
+  "official_standings": [
+    {
+      "position": 1,
+      "team": "Mordialloc",
+      "wins": 0,
+      "points": 0,
+      "percentage": 0.0,
+      "marker": ""
+    },
+    {
+      "position": 2,
+      "team": "Dingley",
+      "wins": 0,
+      "points": 0,
+      "percentage": 0.0,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Stella Maris",
+      "wins": 0,
+      "points": 0,
+      "percentage": 0.0,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Aspendale",
+      "wins": 0,
+      "points": 0,
+      "percentage": 0.0,
+      "marker": ""
+    }
+  ],
+  "competition_rules": {
+    "source": "observed TROLS scorecards",
+    "teamPoints": "published only",
+    "singlesSlots": 0,
+    "singlesBestOf": 1,
+    "setTarget": 6,
+    "doublesSlots": 0,
+    "doublesBestOf": 1,
+    "doublesTarget": 6,
+    "playersPerTeam": 0,
+    "matchTiebreak": false
+  },
+  "section_code": "TA3-TA002",
+  "fixtures": 0,
+  "completed_fixtures": 0,
+  "draw_fixtures": 0,
+  "singles_rubbers": 0,
+  "doubles_rubbers": 0,
+  "latest_round": 0,
+  "regular_season_rounds": 14,
+  "validation": "passed",
+  "source": "TROLS Past Results and Past Ladders",
+  "draw_source": "TROLS Fixtures",
+  "validation_warnings": []
+}

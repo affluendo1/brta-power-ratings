@@ -1,0 +1,47 @@
+fixture_id,date,round,stage,round_label,home_team,away_team,home_points,away_points,home_rubbers,away_rubbers,home_sets,away_sets,home_games,away_games,status,notes
+TA001012,11 Jul 23,1,regular,Round 1,Stella Maris Blue,Dingley,7,1,3,1,,,35,19,Completed,
+TA001013,11 Jul 23,1,regular,Round 1,Aspendale,Stella Maris Red,6,2,2,2,,,34,30,Completed,
+pending-ta001-r1-mordialloc-bye,11 Jul 23,1,regular,Round 1,Mordialloc,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+TA001021,18 Jul 23,2,regular,Round 2,Stella Maris Red,Mordialloc,5,3,2,0,,,20,2,Completed,
+TA001022,18 Jul 23,2,regular,Round 2,Dingley,Aspendale,3.5,4.5,0,1,,,6,19,Completed,
+pending-ta001-r2-bye-stella-maris-blue,18 Jul 23,2,regular,Round 2,Bye,Stella Maris Blue,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+TA001033,25 Jul 23,3,regular,Round 3,Stella Maris Red,Dingley,8,0,4,0,,,40,8,Completed,
+pending-ta001-r3-aspendale-bye,25 Jul 23,3,regular,Round 3,Aspendale,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ta001-r3-mordialloc-stella-maris-blue,25 Jul 23,3,regular,Round 3,Mordialloc,Stella Maris Blue,,,,,,,,,Forfeited To,No individual scorecard / no rubbers recorded
+TA001041,01 Aug 23,4,regular,Round 4,Dingley,Mordialloc,0,8,0,4,,,12,40,Completed,
+TA001043,01 Aug 23,4,regular,Round 4,Stella Maris Blue,Aspendale,1,7,1,3,,,16,38,Completed,
+pending-ta001-r4-bye-stella-maris-red,01 Aug 23,4,regular,Round 4,Bye,Stella Maris Red,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+TA001051,08 Aug 23,5,regular,Round 5,Mordialloc,Aspendale,7,1,3,1,,,36,17,Completed,
+TA001053,08 Aug 23,5,regular,Round 5,Stella Maris Red,Stella Maris Blue,8,0,4,0,,,40,17,Completed,
+pending-ta001-r5-dingley-bye,08 Aug 23,5,regular,Round 5,Dingley,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+TA001062,15 Aug 23,6,regular,Round 6,Dingley,Stella Maris Blue,1,7,1,3,,,22,36,Completed,
+TA001063,15 Aug 23,6,regular,Round 6,Stella Maris Red,Aspendale,8,0,4,0,,,40,12,Completed,
+pending-ta001-r6-bye-mordialloc,15 Aug 23,6,regular,Round 6,Bye,Mordialloc,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+TA001071,22 Aug 23,7,regular,Round 7,Mordialloc,Stella Maris Red,4.5,3.5,1,0,,,10,2,Completed,
+TA001072,22 Aug 23,7,regular,Round 7,Aspendale,Dingley,7,1,3,1,,,36,15,Completed,
+pending-ta001-r7-stella-maris-blue-bye,22 Aug 23,7,regular,Round 7,Stella Maris Blue,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+TA001081,29 Aug 23,8,regular,Round 8,Stella Maris Blue,Mordialloc,0,8,0,4,,,9,40,Completed,
+TA001083,29 Aug 23,8,regular,Round 8,Dingley,Stella Maris Red,0,8,0,4,,,7,40,Completed,
+pending-ta001-r8-bye-aspendale,29 Aug 23,8,regular,Round 8,Bye,Aspendale,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+TA001091,05 Sep 23,9,regular,Round 9,Mordialloc,Dingley,8,0,4,0,,,40,8,Completed,
+pending-ta001-r9-aspendale-stella-maris-blue,05 Sep 23,9,regular,Round 9,Aspendale,Stella Maris Blue,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ta001-r9-stella-maris-red-bye,05 Sep 23,9,regular,Round 9,Stella Maris Red,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+TA001101,12 Sep 23,10,regular,Round 10,Aspendale,Mordialloc,2,6,2,2,,,28,37,Completed,
+TA001103,12 Sep 23,10,regular,Round 10,Stella Maris Blue,Stella Maris Red,0,8,0,4,,,10,40,Completed,
+pending-ta001-r10-bye-dingley,12 Sep 23,10,regular,Round 10,Bye,Dingley,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ta001-r11-aspendale-stella-maris-red,03 Oct 23,11,regular,Round 11,Aspendale,Stella Maris Red,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+pending-ta001-r11-mordialloc-bye,03 Oct 23,11,regular,Round 11,Mordialloc,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+pending-ta001-r11-stella-maris-blue-dingley,03 Oct 23,11,regular,Round 11,Stella Maris Blue,Dingley,,,,,,,,,Wash Out,No individual scorecard / no rubbers recorded
+TA001121,10 Oct 23,12,regular,Round 12,Stella Maris Red,Mordialloc,0,8,0,4,,,7,40,Completed,
+TA001122,10 Oct 23,12,regular,Round 12,Dingley,Aspendale,1,7,1,3,,,19,33,Completed,
+pending-ta001-r12-bye-stella-maris-blue,10 Oct 23,12,regular,Round 12,Bye,Stella Maris Blue,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+TA001131,17 Oct 23,13,regular,Round 13,Mordialloc,Stella Maris Blue,7,1,3,1,,,37,12,Completed,
+TA001133,17 Oct 23,13,regular,Round 13,Stella Maris Red,Dingley,8,0,4,0,,,40,3,Completed,
+pending-ta001-r13-aspendale-bye,17 Oct 23,13,regular,Round 13,Aspendale,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+TA001141,24 Oct 23,14,regular,Round 14,Dingley,Mordialloc,0,8,0,4,,,14,40,Completed,
+TA001143,24 Oct 23,14,regular,Round 14,Stella Maris Blue,Aspendale,0,8,0,4,,,17,40,Completed,
+pending-ta001-r14-bye-stella-maris-red,24 Oct 23,14,regular,Round 14,Bye,Stella Maris Red,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+TA001151,31 Oct 23,15,regular,Round 15,Mordialloc,Aspendale,6,2,2,2,,,30,26,Completed,
+TA001153,31 Oct 23,15,regular,Round 15,Stella Maris Red,Stella Maris Blue,8,0,4,0,,,40,6,Completed,
+pending-ta001-r15-dingley-bye,31 Oct 23,15,regular,Round 15,Dingley,Bye,,,,,,,,,Bye,No individual scorecard / no rubbers recorded
+TA001321,,16,grand_final,Grand final · TROLS entry 2,Mordialloc,Stella Maris Red,7,1,3,1,,,37,16,Completed,
