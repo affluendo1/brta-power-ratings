@@ -3,5 +3,6 @@ window.BRTA_DEEDS = Object.freeze([
  'Most impactful GitHub repository award',
  'Most nominations for suspiciously caffeinated developers',
  'Outstanding commitment to unnecessary settings',
- 'Excellence in extremely specific tennis statistics'
+ 'Excellence in extremely specific tennis statistics',
+ 'Record for fastest website update'
 ]);

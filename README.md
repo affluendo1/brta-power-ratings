@@ -1,6 +1,6 @@
 # BRTA Power Ratings
 
-**Current version: 8.1**
+**Current version: 8.1.0.1**
 
 [Open the live site](https://affluendo1.github.io/brta-power-ratings/)
 
