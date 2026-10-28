@@ -154,7 +154,7 @@ def _season_order(label: str) -> int:
     match = re.search(r"(Spring|Autumn|Winter|Summer)\s+(\d{4})", str(label), re.I)
     if not match:
         return 0
-    term = {"winter": 1, "autumn": 2, "spring": 3}[match.group(1).casefold()]
+    term = {"winter": 1, "autumn": 2, "spring": 3, "summer": 4}[match.group(1).casefold()]
     return int(match.group(2)) * 10 + term
 
 

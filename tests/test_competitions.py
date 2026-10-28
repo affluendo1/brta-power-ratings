@@ -17,4 +17,8 @@ class ExpandedCompetitionTests(unittest.TestCase):
         r=observed_rules(section);self.assertEqual(r['singlesSlots'],0);self.assertEqual(r['doublesSlots'],4);self.assertEqual(r['doublesTarget'],10)
         section['doubles'][0]['score']='6-2 6-3';self.assertEqual(observed_rules(section)['doublesBestOf'],3)
         self.assertEqual(set(DAYTIME_NAMES),{'AA','AP','UA','TA','TN','WA','HA'})
+    def test_summer_history_order(self):
+        from generate_archive_site_data import _season_order, _season_sort_key
+        self.assertGreater(_season_order('Summer 2026/27'), _season_order('Spring 2026'))
+        self.assertGreater(_season_sort_key({'season_label':'Summer 2026/27'}), _season_sort_key({'season_label':'Winter 2026'}))
 if __name__=='__main__':unittest.main()
