@@ -5750,8 +5750,8 @@
         "Kooyong Purple",
         "Kooyong Green",
         "Kooyong **",
-        "Kooyong Green **",
-        "Kooyong Purple **"
+        "Kooyong Purple **",
+        "Kooyong Green **"
       ],
       "observations": [
         {
@@ -6207,9 +6207,9 @@
           }
         },
         {
-          "team": "Kooyong Green **",
+          "team": "Kooyong Purple **",
           "club": "Kooyong",
-          "team_number": 3,
+          "team_number": 1,
           "start_time": "9:00",
           "venue_lines": [
             "@",
@@ -6220,9 +6220,9 @@
           "contacts": [
             {
               "role": "team",
-              "name": "Arthur",
+              "name": "Sandra",
               "phones": [
-                "0408 610 710"
+                "0417 058 900"
               ]
             }
           ],
@@ -6241,9 +6241,9 @@
           }
         },
         {
-          "team": "Kooyong Purple **",
+          "team": "Kooyong Green **",
           "club": "Kooyong",
-          "team_number": 1,
+          "team_number": 3,
           "start_time": "9:00",
           "venue_lines": [
             "@",
@@ -6254,9 +6254,9 @@
           "contacts": [
             {
               "role": "team",
-              "name": "Sandra",
+              "name": "Arthur",
               "phones": [
-                "0417 058 900"
+                "0408 610 710"
               ]
             }
           ],

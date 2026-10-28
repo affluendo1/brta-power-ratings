@@ -1,7 +1,7 @@
 {
   "source": "https://www.trols.org.au/brta/p_results.php",
   "fixture_source": "https://www.trols.org.au/brta/fixture.php",
-  "synced_at_utc": "2026-10-28T02:21:38.066457+00:00",
+  "synced_at_utc": "2026-10-28T04:29:52.799240+00:00",
   "competitions": 2,
   "sections": 44,
   "current_seasons": {
@@ -16,8 +16,8 @@
       "season_label": "Spring 2026"
     }
   },
-  "fixtures": 1968,
-  "completed_fixtures": 1604,
+  "fixtures": 2076,
+  "completed_fixtures": 1605,
   "singles_rubbers": 6051,
   "doubles_rubbers": 3035,
   "validation": "source discrepancies",
@@ -35,5 +35,5 @@
       "message": "Fixture rubber totals do not match rubbers for AA007112: TROLS 3-3; scorecard 2-3. Both published records retained."
     }
   ],
-  "elapsed_seconds": 51.6
+  "elapsed_seconds": 39.8
 }
