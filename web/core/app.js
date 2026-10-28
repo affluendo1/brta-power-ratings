@@ -797,7 +797,7 @@ document.addEventListener('click',e=>{
   const globalPlayer=e.target.closest('[data-global-player]');if(globalPlayer){e.stopPropagation();openGlobalPlayer(globalPlayer.dataset.sectionCode,globalPlayer.dataset.globalPlayer,globalPlayer.dataset.seasonKey);return}
   const player=e.target.closest('[data-player]');if(player){e.stopPropagation();close('#resultOverlay');openProfile(player.dataset.player);return}
   const schedule=e.target.closest('[data-sos-open]');if(schedule){openSchedule();return}
-  const fixtureResult=e.target.closest('[data-fixture-result-id]');if(fixtureResult){const id=fixtureResult.dataset.fixtureResultId,f=fixtureById(id),result=f&&findFixtureResult(f,f.round);if(result){openMatch(result.fixtureId)}else switchPage('results');return}
+  const fixtureResult=e.target.closest('[data-fixture-result-id]');if(fixtureResult){const id=fixtureResult.dataset.fixtureResultId,f=fixtureById(id),result=f&&findFixtureResult(f,f.round);if(result){openMatch(result.fixtureId)}else lab8Modal('Scorecard unavailable','<p>This fixture does not have a published scorecard yet.</p>');return}
   const roundSimulation=e.target.closest('[data-simulate-round]');if(roundSimulation){simulateRound(roundSimulation.dataset.simulateRound);return}
   const closeRoundSimulationButton=e.target.closest('[data-close-round-simulation]');if(closeRoundSimulationButton){closeRoundSimulation(closeRoundSimulationButton.dataset.closeRoundSimulation);return}
   const prediction=e.target.closest('[data-predict-id]');if(prediction){openPrediction(prediction.dataset.predictId);return}
@@ -810,7 +810,7 @@ document.addEventListener('click',e=>{
   const rivalryFixture=e.target.closest('[data-rival-fixture]');if(rivalryFixture){close('#rivalryOverlay');close('#profileOverlay');openMatch(rivalryFixture.dataset.rivalFixture,activeProfilePlayer);return}
   if(e.target.closest('[data-run-simulation]')){runPredictionSimulation();return}
   const autoOrder=e.target.closest('[data-auto-order]');if(autoOrder){const side=autoOrder.dataset.autoOrder,match=currentPredictionMatch();if(match){selectedPrediction[side].manualOrder=false;selectedPrediction.simulation=null;refreshPrediction()}return}
-  const match=e.target.closest('[data-match-id]');if(match){const sourcePlayer=!$('#profileOverlay').classList.contains('hidden')?activeProfilePlayer:null;close('#roundOverlay');close('#profileOverlay');openMatch(match.dataset.matchId,sourcePlayer);return}
+  const match=e.target.closest('[data-match-id]');if(match){const sourcePlayer=!$('#profileOverlay').classList.contains('hidden')?activeProfilePlayer:null;close('#roundOverlay');openMatch(match.dataset.matchId,sourcePlayer);return}
   const clubTeam=e.target.closest('[data-club-team]');if(clubTeam){e.stopPropagation();openClubForTeam(clubTeam.dataset.clubTeam);return}
   const rival=e.target.closest('[data-club-rival]');if(rival){activeClubZone.opponent=rival.dataset.clubRival;activeClubZone.resultLimit=16;renderClubZone();return}
   if(e.target.closest('#clubResultMore')){activeClubZone.resultLimit=(activeClubZone.resultLimit||16)+16;renderClubZone();return}
