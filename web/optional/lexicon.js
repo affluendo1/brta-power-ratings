@@ -8,12 +8,11 @@
  ratingInfo[key]=['BETTER singles','RM3ultra — finally, a rating that reads the name.'];
  function pick(view=key){if(!auxiliaryEnabled()||revealing)return;ratingView=view;if(isPair())ratingScope=model.pairScope();cancelAuxiliaryReveal();$$('#ratingTabs .subtab').forEach(b=>b.classList.toggle('active',b.dataset.rating===view));renderRatings()}
  async function reveal(pair=false){
- if(pair){if(!auxiliaryEnabled()||$('#ratingTabs [data-rating="'+pairKey+'"]'))return;pairRevealed=true;const b=document.createElement('button');b.type='button';b.className='subtab lexicon-tab lexicon-pair-tab';b.dataset.rating=pairKey;b.textContent='BETTER doubles pairs';b.onclick=()=>pick(pairKey);$('#ratingTabs [data-rating="pairs"]').after(b);await b.animate?.([{opacity:0,transform:'translateX(-20px)'},{opacity:1,transform:'translateX(0)'}],{duration:3000,easing:'ease-out'})?.finished;return}
 
-  if(revealed||revealing||!auxiliaryEnabled()||activePage!=='ratings')return;
-  revealed=true;revealing=true;
-  const tabs=$('#ratingTabs'),others=[...tabs.children].slice(1),before=others.map(b=>b.getBoundingClientRect()),button=document.createElement('button');
-  button.type='button';button.className='subtab lexicon-tab';button.dataset.rating=key;button.textContent='BETTER singles';button.onclick=()=>pick();button.style.visibility='hidden';tabs.children[0].after(button);
+  if((pair?pairRevealed:revealed)||revealing||!auxiliaryEnabled()||activePage!=='ratings')return;
+  if(pair)pairRevealed=true;else revealed=true;revealing=true;
+  const tabs=$('#ratingTabs'),anchor=tabs.querySelector('[data-rating="'+(pair?'pairs':'singles')+'"]'),others=[...tabs.children].slice([...tabs.children].indexOf(anchor)+1),before=others.map(b=>b.getBoundingClientRect()),button=document.createElement('button');
+  button.type='button';button.className='subtab lexicon-tab'+(pair?' lexicon-pair-tab':'');button.dataset.rating=pair?pairKey:key;button.textContent=pair?'BETTER doubles pairs':'BETTER singles';button.onclick=()=>pick(pair?pairKey:key);button.style.visibility='hidden';anchor.after(button);
   const motions=others.map((b,i)=>{const after=b.getBoundingClientRect();return b.animate?.([{transform:'translate('+ (before[i].left-after.left)+'px,'+(before[i].top-after.top)+'px)'},{transform:'translate(0,0)'}],{duration:4200,easing:'cubic-bezier(.22,.65,.3,1)'})});
   await Promise.all(motions.map(a=>a?.finished?.catch(()=>{})));
   if(!button.isConnected||!auxiliaryEnabled()){revealing=false;return}
@@ -36,7 +35,7 @@
    const q=$('#search').value.trim();if(!q)return {rows:[],notice:'Type a player name to search all Saturday and Sunday history.'};
    if(playerSearchError)return {rows:[],notice:'History search could not load. Switch to Singles to retry.'};
    if(!playerSearchIndex){ensurePlayerSearchIndex();return {rows:[],notice:'Loading the player index…'}}
-   return {rows:q.toLowerCase()===':highest-score'?playerSearchIndex.entries.map(([nameId,sectionId,team])=>({...playerSearchIndex.sections[sectionId],player:playerSearchIndex.players[nameId],team})):BRTAPlayerSearch.find(playerSearchIndex,q)};
+   return {rows:[':highest-score',':highest-scores'].includes(q.toLowerCase())?playerSearchIndex.entries.map(([nameId,sectionId,team])=>({...playerSearchIndex.sections[sectionId],player:playerSearchIndex.players[nameId],team})):BRTAPlayerSearch.find(playerSearchIndex,q)};
   }
   if(ratingScope==='all'){
    const archive=activeHistorySeasonId?archiveGlobalRows():null;
@@ -56,8 +55,8 @@
   if(!$('#updatedMethodology')){const button=document.createElement('button');button.id='updatedMethodology';button.className='lexicon-method';button.type='button';button.textContent='Updated Methodology';$('.ratings-toolbar').append(button);button.onclick=()=>{openLayoutOverlay('methodology');eightRaise($('#layoutOverlay'));$('#orthographicMethod')?.scrollIntoView({block:'start',behavior:'smooth'})}}
   $('#updatedMethodology').classList.remove('hidden');bandInfo(band);
   $('#ratingHead').innerHTML='<tr>'+['#','Player','Team',...(external?['Section']:[]),'Ultra','Letters','Tile value','Spaces','Digraphs','Trigraphs','Quadgraphs'].map(x=>'<th>'+x+'</th>').join('')+'</tr>';
-  let last='',out='';const colspan=external?12:11;
-  for(const r of rows){const a=r.analysis,cls=band.classFor(r.rating);if(q===':highest-score'&&r.rating!==rows[0]?.rating||q&&q!==':highest-score'&&!r.player.toLowerCase().includes(q)||!external&&tf&&r.team!==tf||window.lexiconBandFilter&&cls!==window.lexiconBandFilter)continue;
+  let last='',out='';const colspan=external?12:11;const chosen=BRTASearchCommands.select(rows.filter(r=>(external||!tf||r.team===tf)&&(!window.lexiconBandFilter||band.classFor(r.rating)===window.lexiconBandFilter)),q);const selected=chosen?new Set(chosen):null;
+  for(const r of rows){const a=r.analysis,cls=band.classFor(r.rating);if(selected&&!chosen.some(x=>x.player===r.player&&x.team===r.team&&x.sectionCode===r.sectionCode&&x.seasonKey===r.seasonKey)||!selected&&q&&!r.player.toLowerCase().includes(q)||!external&&tf&&r.team!==tf||window.lexiconBandFilter&&cls!==window.lexiconBandFilter)continue;
    if(cls!==last){const i=+cls.slice(1);out+='<tr class="band-divider '+cls+'"><td colspan="'+colspan+'"><div><i></i><b>'+esc(model.bandNames[i])+'</b><span>'+esc(band.bounds[i])+'</span></div></td></tr>';last=cls}
    const section=r.sectionLabel||D.meta.section_label,context=[r.competitionLabel||r.seasonLabel||'',section].filter(Boolean).join(' · ');
    out+='<tr class="'+cls+'"><td>'+r.rank+'</td><td><button class="person" data-lexicon-player="'+esc(r.player)+'" data-lexicon-team="'+esc(r.team)+'" data-lexicon-context="'+esc(context)+'">'+esc(r.player)+'</button></td><td>'+teamName(r.team)+'</td>'+(external?'<td>'+esc(context)+'</td>':'')+'<td><b>'+a.score+'</b></td><td>'+a.letters+'</td><td>'+a.tileValue+'</td><td>'+a.spaces+'</td><td>'+a.digraphs.length+'</td><td>'+a.trigraphs.length+'</td><td>'+a.quadgraphs.length+'</td></tr>';

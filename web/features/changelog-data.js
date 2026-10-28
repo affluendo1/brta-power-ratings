@@ -1,6 +1,17 @@
 // Website releases, newest first. Routine result checks are not website releases.
 window.BRTA_RELEASES = Object.freeze([
 {
+  "version": "8.1",
+  "title": "Theme Studio",
+  "size": "large",
+  "committedAt": "2026-10-28T05:42:12.205024+00:00",
+  "changes": [
+    "Create, preview and save your own themes and colour schemes.",
+    "Find leading ratings, records and game percentages with search commands.",
+    "Refined extras and prepared future Club Zone features."
+  ]
+},
+{
   "version": "8.0.1.4",
   "size": "tiny",
   "committedAt": "2026-10-28T05:02:49.214809+00:00",

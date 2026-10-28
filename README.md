@@ -1,6 +1,6 @@
 # BRTA Power Ratings
 
-**Current version: 8.0.1.4**
+**Current version: 8.1**
 
 [Open the live site](https://affluendo1.github.io/brta-power-ratings/)
 
@@ -356,3 +356,27 @@ The fixture pipeline also maintains a source-attributed club directory in
 `data/current/clubs.json`, merged across current Saturday and Sunday sections.
 This prepares future Club Zone work; the directory is not displayed in the site.
 Venue and contact variations are retained with their original section context.
+
+### Theme Studio and search commands
+
+Settings → Theme Studio creates themes and single-colour schemes with three live
+section previews on desktop. Mobile editing is supported with a preview notice.
+Saved designs stay in this browser; use the tinted custom lists to reorder, edit,
+delete, or double-click a name to rename it. Custom themes accept the built-in and
+custom colour schemes. Black + retains its own palette in More Settings.
+
+Ratings → Options lists the rating, record and game-percentage search commands.
+Plural rating commands return up to ten rows; singular extremes include ties.
+Records compare win percentage, then most wins (best) or most losses (worst).
+Game percentage is games won / games played. The history command index preserves
+season and section context, qualification and all ties without loading every
+section into the browser. Historical command ratings use published RM3 snapshots.
+
+The background Clubs collector stores the full TROLS directory in
+`data/current/club-directory.json`, alongside the fixture-derived network. The
+dormant `BRTAClubMap.mountNetwork(container, clubs, onClubSelect)` adapter uses
+Leaflet 1.9.4 and OpenStreetMap tiles, limits navigation to metropolitan Melbourne,
+and passes a club identity to the future Club Zone navigation callback. It is not
+mounted anywhere yet and makes no tile requests until explicitly mounted. Leaflet
+is vendored under its BSD-2-Clause licence; unused CSS image backgrounds are
+omitted because this map uses circle markers and no layer-switcher images.

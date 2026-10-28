@@ -19,8 +19,10 @@ from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 if __package__:
     from .club_information import parse_club_information, build_club_network
+    from .club_directory import collect_directory
 else:
     from club_information import parse_club_information, build_club_network
+    from club_directory import collect_directory
 
 BASE = "https://www.trols.org.au/brta/"
 RESULTS_URL = urljoin(BASE, "results.php")
@@ -902,6 +904,7 @@ def main() -> None:
                 print(message)
         elif old_singles or old_doubles:
             print(f"{code}: TROLS season changed; starting fresh row counts for {section['season_label']}")
+    directory = collect_directory(_get, _post, min(MAX_WORKERS, 6))
     network = build_club_network(sections)
     if len(network["sections"]) != len(sections):
         raise RuntimeError("Club directory did not cover every synced section")
@@ -932,6 +935,7 @@ def main() -> None:
         catalog.append(metadata)
     synced_at = datetime.now(timezone.utc).isoformat()
     # Data preparation only: no frontend fetch or Club Zone presentation yet.
+    (OUT / "club-directory.json").write_text(json.dumps(directory, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     (OUT / "clubs.json").write_text(json.dumps(network, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     competitions = {
         row["competition_code"]: row["competition_label"]

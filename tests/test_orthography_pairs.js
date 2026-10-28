@@ -17,9 +17,9 @@ for(const scope of ['section','all','history'])assert.equal(M.pairScope(scope),'
 // Exercise actual optional-view wiring without an external DOM dependency.
 const scopes=['section','all','history'].map(searchScope=>({dataset:{searchScope}}));
 let contextmenu;
-const tabs={addEventListener(type,fn){contextmenu=fn}};
+const tabs={children:[],querySelector(){return pairTab},addEventListener(type,fn){contextmenu=fn}};
 const pairTab={after(){}};
-const box={window:{BRTAOrthography:M,addEventListener(){}},ratingView:'orthographicPairs',ratingScope:'all',ratingInfo:{},activePage:'ratings',auxiliaryEnabled:()=>true,renderRatings(){},renderRatingOptions(){},eightMethodologyHTML:()=>'',applyProfilePosition(){},document:{addEventListener(){},createElement:()=>({dataset:{},animate:()=>({finished:Promise.resolve()})})},$:s=>s==='#ratingTabs'?tabs:s==='#ratingTabs [data-rating="pairs"]'?pairTab:null,$$:()=>scopes};
+const box={window:{BRTAOrthography:M,addEventListener(){}},ratingView:'orthographicPairs',ratingScope:'all',ratingInfo:{},activePage:'ratings',auxiliaryEnabled:()=>true,renderRatings(){},renderRatingOptions(){},eightMethodologyHTML:()=>'',applyProfilePosition(){},document:{addEventListener(){},createElement:()=>({dataset:{},style:{},isConnected:true,animate:()=>({finished:Promise.resolve()})})},$:s=>s==='#ratingTabs'?tabs:s==='#ratingTabs [data-rating="pairs"]'?pairTab:null,$$:()=>scopes};
 vm.createContext(box);vm.runInContext(fs.readFileSync(require.resolve('../web/optional/lexicon.js'),'utf8'),box);
 box.renderRatingOptions();assert.equal(box.ratingScope,'section');assert(scopes[1].disabled&&scopes[2].disabled);assert(!scopes[0].disabled);
 contextmenu({target:{closest:s=>s==='[data-rating="pairs"]'?{}:null},preventDefault(){}});

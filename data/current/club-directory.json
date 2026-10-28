@@ -1,0 +1,4661 @@
+{
+  "version": 1,
+  "source": "https://www.trols.org.au/brta/clubs.php",
+  "clubs": [
+    {
+      "id": "albert-park",
+      "name": "Albert Park",
+      "address_lines": [
+        "St Vincent Place",
+        "St Vincent Gardens",
+        "Albert Park, 3206"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "2J-K5",
+      "phones": [],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Albert Park"
+      },
+      "coordinates": {
+        "latitude": -37.8396,
+        "longitude": 144.9524
+      },
+      "published_details": [
+        "No Web-site listed",
+        "2 Classic Clay courts (2 under Lights)"
+      ]
+    },
+    {
+      "id": "albert-reserve",
+      "name": "Albert Reserve",
+      "address_lines": [
+        "Cnr Hanna St & St Kilda Rd",
+        "Melbourne,"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "2L-A8",
+      "phones": [],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Albert Reserve"
+      },
+      "coordinates": {
+        "latitude": -37.8444,
+        "longitude": 144.9778
+      },
+      "published_details": [
+        "No Web-site listed"
+      ]
+    },
+    {
+      "id": "all-souls",
+      "name": "All Souls",
+      "address_lines": [
+        "Rose Street",
+        "Sandringham,"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "-",
+      "phones": [],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "All Souls"
+      },
+      "coordinates": {
+        "latitude": -37.9549,
+        "longitude": 145.0193
+      },
+      "published_details": [
+        "No Web-site listed"
+      ]
+    },
+    {
+      "id": "altona",
+      "name": "Altona",
+      "address_lines": [
+        "1 Fresno Street",
+        "in JK Grant Reserve",
+        "Altona,"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "45-H10",
+      "phones": [],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Altona"
+      },
+      "coordinates": {
+        "latitude": -37.8631,
+        "longitude": 144.8334
+      },
+      "published_details": [
+        "No Web-site listed",
+        "11 En-Tous-Cas courts (11 under Lights)"
+      ]
+    },
+    {
+      "id": "ardrie-park",
+      "name": "Ardrie Park",
+      "address_lines": [
+        "Howard Street",
+        "Ardrie Park",
+        "Malvern East, 3145"
+      ],
+      "mailing_address_lines": [
+        "55 MacGregor Street",
+        "East Malvern, 3145"
+      ],
+      "melway": "68-H2",
+      "phones": [
+        "0413 617 092"
+      ],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Ardrie Park"
+      },
+      "coordinates": {
+        "latitude": -37.879,
+        "longitude": 145.0542
+      },
+      "published_details": [
+        "No Web-site listed",
+        "4 Classic Clay courts (4 under Lights)"
+      ]
+    },
+    {
+      "id": "aspendale",
+      "name": "Aspendale",
+      "address_lines": [
+        "Sixth Avenue",
+        "Enter pedestrian gate along Sixth Avenue",
+        "Aspendale, 3195"
+      ],
+      "mailing_address_lines": [
+        "PO Box 5325",
+        "Mordialloc, 3195"
+      ],
+      "melway": "92-K7",
+      "phones": [],
+      "contacts": [
+        {
+          "role": "Senior Convenor",
+          "name": "Todd Waugh",
+          "phone": "",
+          "email": "toddles_waugh@hotmail.com"
+        },
+        {
+          "role": "Junior Convenor",
+          "name": "Grant Plozza",
+          "phone": "0412163143 0412163143",
+          "email": "grant@gpbusiness.com.au"
+        },
+        {
+          "role": "Mid-Week Convenor",
+          "name": "Vivienne O'Brien",
+          "phone": "",
+          "email": "gamekids@aapt.net.au"
+        }
+      ],
+      "websites": [
+        "https://play.tennis.com.au/aspendaletennisclub"
+      ],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Aspendale"
+      },
+      "coordinates": {
+        "latitude": -38.0314,
+        "longitude": 145.108
+      },
+      "published_details": [
+        "Web-site https://play.tennis.com.au/aspendaletennisclub",
+        "4 Classic Clay courts (4 under Lights)",
+        "2 Plexipave courts (2 under Lights)"
+      ]
+    },
+    {
+      "id": "basterfield-park",
+      "name": "Basterfield Park",
+      "address_lines": [
+        "Cnr Dane Rd & Keith St",
+        "Hampton East, 3188"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "77-C7",
+      "phones": [],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Basterfield Park"
+      },
+      "coordinates": {
+        "latitude": -37.9404,
+        "longitude": 145.0306
+      },
+      "published_details": [
+        "No Web-site listed",
+        "3 Mod Grass courts (3 under Lights)",
+        "3 Mod Grass courts (3 under Lights)"
+      ]
+    },
+    {
+      "id": "beaumaris-cc",
+      "name": "Beaumaris CC",
+      "address_lines": [
+        "84 Reserve Road",
+        "Beaumaris, 3193"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "86-D6",
+      "phones": [
+        "0411 554 546"
+      ],
+      "contacts": [
+        {
+          "role": "President",
+          "name": "Kirsty Grove",
+          "phone": "0413194991",
+          "email": "President@bcctc.org.au"
+        },
+        {
+          "role": "Secretary",
+          "name": "Natasha Hudson-Coxon",
+          "phone": "0410413478",
+          "email": "tashka1978@hotmail.com"
+        },
+        {
+          "role": "Treasurer",
+          "name": "Matt Turner",
+          "phone": "0400 189 285",
+          "email": "treasurer@bcctc.org.au"
+        },
+        {
+          "role": "Coach",
+          "name": "Tom Paino",
+          "phone": "0412693456",
+          "email": "tpaino@bigpond.net.au"
+        }
+      ],
+      "websites": [
+        "http://www.bcctc.org.au/"
+      ],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Beaumaris CC"
+      },
+      "coordinates": {
+        "latitude": -37.9834,
+        "longitude": 145.0342
+      },
+      "published_details": [
+        "Web-site http://www.bcctc.org.au/"
+      ]
+    },
+    {
+      "id": "belvedere-park",
+      "name": "Belvedere Park",
+      "address_lines": [
+        "104R East Road",
+        "Seaford, 3198"
+      ],
+      "mailing_address_lines": [
+        "PO Box 267",
+        "Seaford, 3198"
+      ],
+      "melway": "99-K4",
+      "phones": [],
+      "contacts": [
+        {
+          "role": "President",
+          "name": "Leonie Kerley",
+          "phone": "0408 359 570",
+          "email": "lmker69@yahoo.com.au"
+        }
+      ],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Belvedere Park"
+      },
+      "coordinates": {
+        "latitude": -38.1058,
+        "longitude": 145.1516
+      },
+      "published_details": [
+        "No Web-site listed",
+        "4 En-Tous-Cas courts"
+      ]
+    },
+    {
+      "id": "bentleigh-rec",
+      "name": "Bentleigh Rec",
+      "address_lines": [
+        ","
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "77-E1",
+      "phones": [],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Bentleigh Rec"
+      },
+      "coordinates": {
+        "latitude": -37.9197,
+        "longitude": 145.0428
+      },
+      "published_details": [
+        "No Web-site listed"
+      ]
+    },
+    {
+      "id": "berwick",
+      "name": "Berwick",
+      "address_lines": [
+        "Buchan Road",
+        "Arch Brown Reserve",
+        "Berwick,"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "111-F6",
+      "phones": [],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Berwick"
+      },
+      "coordinates": {
+        "latitude": -38.0265,
+        "longitude": 145.355
+      },
+      "published_details": [
+        "No Web-site listed"
+      ]
+    },
+    {
+      "id": "black-rock",
+      "name": "Black Rock",
+      "address_lines": [
+        "2 Fern Street",
+        "Black Rock, 3193"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "85-K1",
+      "phones": [],
+      "contacts": [],
+      "websites": [
+        "https://www.blackrocksportsclub.com.au"
+      ],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Black Rock"
+      },
+      "coordinates": {
+        "latitude": -37.9649,
+        "longitude": 145.0202
+      },
+      "published_details": [
+        "Web-site https://www.blackrocksportsclub.com.au",
+        "4 En-Tous-Cas courts (4 under Lights)",
+        "4 Grass courts"
+      ]
+    },
+    {
+      "id": "blackburn",
+      "name": "Blackburn",
+      "address_lines": [
+        ","
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "-",
+      "phones": [],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Blackburn"
+      },
+      "published_details": [
+        "No Web-site listed"
+      ]
+    },
+    {
+      "id": "bltc",
+      "name": "BLTC",
+      "address_lines": [
+        "Banksia Reserve",
+        "Entrance on Oak Street",
+        "Beaumaris, 3193"
+      ],
+      "mailing_address_lines": [
+        "Cnr Tramway Parade and Cromb Avenue",
+        "Beaumaris, 3193"
+      ],
+      "melway": "86-E7",
+      "phones": [
+        "0491 749 609"
+      ],
+      "contacts": [
+        {
+          "role": "Senior Convenor",
+          "name": "Emma Kate McCarthy",
+          "phone": "0408 944 035",
+          "email": "emmakatetobia@gmail.com"
+        }
+      ],
+      "websites": [
+        "https://www.beaumarislawntc.com.au"
+      ],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "BLTC"
+      },
+      "coordinates": {
+        "latitude": -37.9866,
+        "longitude": 145.0411
+      },
+      "published_details": [
+        "Web-site https://www.beaumarislawntc.com.au",
+        "10 En-Tous-Cas courts (10 under Lights)",
+        "3 Plexicushion courts (3 under Lights)"
+      ]
+    },
+    {
+      "id": "bodley-tennis-plus",
+      "name": "Bodley Tennis Plus",
+      "address_lines": [
+        "Bodley Street",
+        "Beaumaris,"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "86-E8",
+      "phones": [],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Bodley Tennis Plus"
+      },
+      "coordinates": {
+        "latitude": -37.9906,
+        "longitude": 145.0397
+      },
+      "published_details": [
+        "No Web-site listed"
+      ]
+    },
+    {
+      "id": "bruce-park",
+      "name": "Bruce Park",
+      "address_lines": [
+        "Margate Avenue",
+        "Frankston, 3199"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "102-G7",
+      "phones": [],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Bruce Park"
+      },
+      "coordinates": {
+        "latitude": -38.1606,
+        "longitude": 145.139
+      },
+      "published_details": [
+        "No Web-site listed",
+        "3 En-Tous-Cas courts (3 under Lights)",
+        "4 Poly-Clay courts (4 under Lights)"
+      ]
+    },
+    {
+      "id": "buckley-park",
+      "name": "Buckley Park",
+      "address_lines": [
+        "85 Market Street",
+        "Essendon, 3040"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "28-C1",
+      "phones": [],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Buckley Park"
+      },
+      "coordinates": {
+        "latitude": -37.7429,
+        "longitude": 144.8968
+      },
+      "published_details": [
+        "No Web-site listed"
+      ]
+    },
+    {
+      "id": "burden-park",
+      "name": "Burden Park",
+      "address_lines": [
+        "Olympic Avenue",
+        "Springvale South, 3171"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "89-A1",
+      "phones": [],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Burden Park"
+      },
+      "coordinates": {
+        "latitude": -37.963,
+        "longitude": 145.155
+      },
+      "published_details": [
+        "No Web-site listed"
+      ]
+    },
+    {
+      "id": "burwood",
+      "name": "Burwood",
+      "address_lines": [
+        "Warrigal Road",
+        "Burwood Reserve. Enter via Queens Pde",
+        "Glen Iris, 3146"
+      ],
+      "mailing_address_lines": [
+        "PO Box 80",
+        "Burwood, 3125"
+      ],
+      "melway": "60-G7",
+      "phones": [
+        "9830 6618"
+      ],
+      "contacts": [
+        {
+          "role": "Senior Convenor",
+          "name": "Tim Shakleton",
+          "phone": "",
+          "email": "tim@toptenn.com.au"
+        }
+      ],
+      "websites": [
+        "https://www.burwoodtennisclub.org"
+      ],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Burwood"
+      },
+      "coordinates": {
+        "latitude": -37.853,
+        "longitude": 145.092
+      },
+      "published_details": [
+        "Web-site https://www.burwoodtennisclub.org",
+        "5 Mod Grass courts"
+      ]
+    },
+    {
+      "id": "canterbury",
+      "name": "Canterbury",
+      "address_lines": [
+        "25A Croydon Road",
+        "Surrey Hills, 3127"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "46-F10",
+      "phones": [],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Canterbury"
+      },
+      "coordinates": {
+        "latitude": -37.8226,
+        "longitude": 145.0893
+      },
+      "published_details": [
+        "No Web-site listed"
+      ]
+    },
+    {
+      "id": "carmelite",
+      "name": "Carmelite",
+      "address_lines": [
+        "Cnr Canterbury & Armstrong Sts",
+        "Albert Park Reserve (under light rail)",
+        "Middle Park,"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "2K-F11",
+      "phones": [],
+      "contacts": [
+        {
+          "role": "Senior Convenor",
+          "name": "Michael",
+          "phone": "",
+          "email": "mj.tennis@hotmail.com"
+        },
+        {
+          "role": "Junior Convenor",
+          "name": "Dimi Hatziioannou",
+          "phone": "0417581318",
+          "email": "dimi@metrotennis.com.au"
+        }
+      ],
+      "websites": [
+        "https://www.ctc.org.au"
+      ],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Carmelite"
+      },
+      "coordinates": {
+        "latitude": -37.8496,
+        "longitude": 144.9649
+      },
+      "published_details": [
+        "Web-site https://www.ctc.org.au",
+        "5 En-Tous-Cas courts (5 under Lights)"
+      ]
+    },
+    {
+      "id": "caulfield-grammar",
+      "name": "Caulfield Grammar",
+      "address_lines": [
+        "Corner McWhae Ave & Furneaux Grove",
+        "St Kilda East,"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "67-G1",
+      "phones": [],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Caulfield Grammar"
+      },
+      "coordinates": {
+        "latitude": -37.8754,
+        "longitude": 145.0023
+      },
+      "published_details": [
+        "Description",
+        "Melway 67 G1",
+        "No Web-site listed",
+        "4 Plexipave courts"
+      ]
+    },
+    {
+      "id": "caulfield-park",
+      "name": "Caulfield Park",
+      "address_lines": [
+        "280 Balaclava Rd, Caulfield North 3161",
+        ","
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "-",
+      "phones": [],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Caulfield Park"
+      },
+      "published_details": [
+        "No Web-site listed",
+        "5 Mod Grass courts (5 under Lights)"
+      ]
+    },
+    {
+      "id": "caulfield-rec",
+      "name": "Caulfield Rec",
+      "address_lines": [
+        "Cnr Leila & Murrumbeena Rds",
+        "Murrumbeena,"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "68-K8",
+      "phones": [],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Caulfield Rec"
+      },
+      "coordinates": {
+        "latitude": -37.9029,
+        "longitude": 145.064
+      },
+      "published_details": [
+        "No Web-site listed",
+        "8 En-Tous-Cas courts"
+      ]
+    },
+    {
+      "id": "centenary-park",
+      "name": "Centenary Park",
+      "address_lines": [
+        "120 Brady Road",
+        "Bentleigh East, 3165"
+      ],
+      "mailing_address_lines": [
+        "PO Box 111",
+        "Bentleigh East, 3165"
+      ],
+      "melway": "78-A2",
+      "phones": [
+        "0420 430 874"
+      ],
+      "contacts": [],
+      "websites": [
+        "https://play.tennis.com.au/centenaryparktennisclub"
+      ],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Centenary Park"
+      },
+      "coordinates": {
+        "latitude": -37.9265,
+        "longitude": 145.0671
+      },
+      "published_details": [
+        "Description",
+        "https://www.facebook.com/CentenaryParkTennis/",
+        "Web-site https://play.tennis.com.au/centenaryparktennisclub",
+        "5 En-Tous-Cas courts (4 under Lights)"
+      ]
+    },
+    {
+      "id": "chadstone",
+      "name": "Chadstone",
+      "address_lines": [
+        "32A Chadstone Road",
+        "Free park under Centre; bring ticket",
+        "Malvern East, 3145"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "69-D3",
+      "phones": [],
+      "contacts": [
+        {
+          "role": "Secretary",
+          "name": "Robert Datson",
+          "phone": "0423784522 0423784522",
+          "email": "datsonr@gmail.com"
+        },
+        {
+          "role": "Senior Convenor",
+          "name": "Craig Jendra",
+          "phone": "0409 434 403 0409 434 403",
+          "email": "craig_jendra@hotmail.com"
+        },
+        {
+          "role": "Senior Convenor",
+          "name": "Ian Martin",
+          "phone": "0419 366 251",
+          "email": "imartin2@bigpond.net.au"
+        },
+        {
+          "role": "Mid-Week Convenor",
+          "name": "Steph Gibson",
+          "phone": "0402117409",
+          "email": "stephgib56@gmail.com"
+        },
+        {
+          "role": "Mid-Week Convenor",
+          "name": "Georgina Fanshaw",
+          "phone": "",
+          "email": "gfanshaw6@gmail.com"
+        },
+        {
+          "role": "Online Entry-Only",
+          "name": "Team Manager",
+          "phone": "",
+          "email": ""
+        }
+      ],
+      "websites": [
+        "https://playtennis.com.au/chadstonetennisclub"
+      ],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Chadstone"
+      },
+      "coordinates": {
+        "latitude": -37.8819,
+        "longitude": 145.0812
+      },
+      "published_details": [
+        "Description",
+        "Parking available in Stonnington Sports Centre. Please bring your ticket to clubrooms for validation and free parking.",
+        "Web-site https://playtennis.com.au/chadstonetennisclub",
+        "7 Classic Clay courts (7 under Lights)"
+      ]
+    },
+    {
+      "id": "chadstone-anz",
+      "name": "Chadstone ANZ",
+      "address_lines": [
+        ","
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "-",
+      "phones": [],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Chadstone ANZ"
+      },
+      "published_details": [
+        "No Web-site listed"
+      ]
+    },
+    {
+      "id": "chelsea-heights",
+      "name": "Chelsea Heights",
+      "address_lines": [
+        "Thames Promenade",
+        "Chelsea Heights,"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "93-E12",
+      "phones": [
+        "0439 616 748"
+      ],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Chelsea Heights"
+      },
+      "coordinates": {
+        "latitude": -38.0471,
+        "longitude": 145.1306
+      },
+      "published_details": [
+        "No Web-site listed"
+      ]
+    },
+    {
+      "id": "chelsea-lawn",
+      "name": "Chelsea Lawn",
+      "address_lines": [
+        "Beardsworth Avenue",
+        "Chelsea,"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "93-D12",
+      "phones": [],
+      "contacts": [
+        {
+          "role": "President",
+          "name": "Marg McDonald",
+          "phone": "0428 130 743",
+          "email": "magsmcd_1@bigpond.com"
+        },
+        {
+          "role": "Secretary",
+          "name": "Janet Atkins",
+          "phone": "9772 6659",
+          "email": "janetatkins@optusnet.com.au"
+        }
+      ],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Chelsea Lawn"
+      },
+      "coordinates": {
+        "latitude": -38.0495,
+        "longitude": 145.1232
+      },
+      "published_details": [
+        "No Web-site listed"
+      ]
+    },
+    {
+      "id": "city-of-camberwell",
+      "name": "City of Camberwell",
+      "address_lines": [
+        "10 Trumper Street",
+        "Enter via Bowen Street",
+        "Camberwell, 3124"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "59-K3",
+      "phones": [
+        "9982 4897"
+      ],
+      "contacts": [],
+      "websites": [
+        "https://www.coctc.com.au"
+      ],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "City of Camberwell"
+      },
+      "coordinates": {
+        "latitude": -37.8395,
+        "longitude": 145.0621
+      },
+      "published_details": [
+        "Web-site https://www.coctc.com.au"
+      ]
+    },
+    {
+      "id": "clarinda",
+      "name": "Clarinda",
+      "address_lines": [
+        "4-14 Crawford Road",
+        "Clarinda, 3169"
+      ],
+      "mailing_address_lines": [
+        "9 Shannon Court",
+        "Clarinda, 3169"
+      ],
+      "melway": "78-J3",
+      "phones": [],
+      "contacts": [
+        {
+          "role": "Treasurer",
+          "name": "Gayle Hall",
+          "phone": "0422296622",
+          "email": "clarindatc@gmail.com"
+        },
+        {
+          "role": "Senior Convenor",
+          "name": "Gayle Hall",
+          "phone": "0422296622",
+          "email": "clarindatc@gmail.com"
+        }
+      ],
+      "websites": [
+        "https://www.clarindatennis.com.au"
+      ],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Clarinda"
+      },
+      "coordinates": {
+        "latitude": -37.9286,
+        "longitude": 145.1019
+      },
+      "published_details": [
+        "Web-site https://www.clarindatennis.com.au",
+        "3 Classic Clay courts (3 under Lights)",
+        "3 Mod Grass courts (3 under Lights)"
+      ]
+    },
+    {
+      "id": "coatesville",
+      "name": "Coatesville",
+      "address_lines": [
+        "29 Orange Street",
+        "East Bentleigh,"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "69-C12",
+      "phones": [],
+      "contacts": [
+        {
+          "role": "Junior/Senior Convenor",
+          "name": "Mike Burke",
+          "phone": "0401 906 341",
+          "email": "mjbmjb1993@gmail.com"
+        },
+        {
+          "role": "Junior Sat Convenor",
+          "name": "Ottavio Boron",
+          "phone": "0417 015588",
+          "email": "tournamenttennis@bigpond.com"
+        }
+      ],
+      "websites": [
+        "https://www.coatesvilletc.com.au"
+      ],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Coatesville"
+      },
+      "coordinates": {
+        "latitude": -37.9171,
+        "longitude": 145.0769
+      },
+      "published_details": [
+        "Web-site https://www.coatesvilletc.com.au",
+        "6 En-Tous-Cas courts"
+      ]
+    },
+    {
+      "id": "dandenong",
+      "name": "Dandenong",
+      "address_lines": [
+        "Greaves Reserve",
+        "Bennet Street",
+        "Dandenong, 3175"
+      ],
+      "mailing_address_lines": [
+        "PO Box 383",
+        "Doveton, 3175"
+      ],
+      "melway": "90-A7",
+      "phones": [
+        "9792 9696"
+      ],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Dandenong"
+      },
+      "coordinates": {
+        "latitude": -37.985,
+        "longitude": 145.2
+      },
+      "published_details": [
+        "No Web-site listed",
+        "6 Plexipave courts (4 under Lights)"
+      ]
+    },
+    {
+      "id": "dandenong-rec",
+      "name": "Dandenong Rec",
+      "address_lines": [
+        ","
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "-",
+      "phones": [],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Dandenong Rec"
+      },
+      "published_details": [
+        "No Web-site listed"
+      ]
+    },
+    {
+      "id": "dendy-park",
+      "name": "Dendy Park",
+      "address_lines": [
+        "Breen Drive",
+        "East Brighton,"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "77-B2",
+      "phones": [],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Dendy Park"
+      },
+      "coordinates": {
+        "latitude": -37.9251,
+        "longitude": 145.0241
+      },
+      "published_details": [
+        "No Web-site listed",
+        "19 En-Tous-Cas courts"
+      ]
+    },
+    {
+      "id": "dingley",
+      "name": "Dingley",
+      "address_lines": [
+        "Rowan Road",
+        "Behind Netball courts",
+        "Dingley, 3172"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "88-H4",
+      "phones": [],
+      "contacts": [],
+      "websites": [
+        "https://www.dingleytennisclub.com.au"
+      ],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Dingley"
+      },
+      "coordinates": {
+        "latitude": -37.9816,
+        "longitude": 145.1429
+      },
+      "published_details": [
+        "Web-site https://www.dingleytennisclub.com.au",
+        "16 En-Tous-Cas courts (16 under Lights)"
+      ]
+    },
+    {
+      "id": "donvale",
+      "name": "Donvale",
+      "address_lines": [
+        "Donvale Reserve",
+        "Enter off Mitcham Road",
+        "Donvale, 3111"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "48-F3",
+      "phones": [],
+      "contacts": [
+        {
+          "role": "Senior Convenor",
+          "name": "Joy Kaias",
+          "phone": "0413399038",
+          "email": "donvaletennisladies@gmail.com"
+        }
+      ],
+      "websites": [
+        "https://www.donvaletennisclub.org.au"
+      ],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Donvale"
+      },
+      "coordinates": {
+        "latitude": -37.794,
+        "longitude": 145.1748
+      },
+      "published_details": [
+        "Web-site https://www.donvaletennisclub.org.au"
+      ]
+    },
+    {
+      "id": "dromana",
+      "name": "Dromana",
+      "address_lines": [
+        "Marna Street",
+        "Dromana, 3936"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "159-J7",
+      "phones": [],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Dromana"
+      },
+      "coordinates": {
+        "latitude": -38.3362,
+        "longitude": 144.9713
+      },
+      "published_details": [
+        "No Web-site listed",
+        "8 En-Tous-Cas courts (8 under Lights)"
+      ]
+    },
+    {
+      "id": "eaglemont",
+      "name": "Eaglemont",
+      "address_lines": [
+        "The Boulevard",
+        "East Ivanhoe,"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "31-K11",
+      "phones": [],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Eaglemont"
+      },
+      "coordinates": {
+        "latitude": -37.7794,
+        "longitude": 145.062
+      },
+      "published_details": [
+        "No Web-site listed"
+      ]
+    },
+    {
+      "id": "east-malvern",
+      "name": "East Malvern",
+      "address_lines": [
+        "15 Moira Street",
+        "Opp Dorothy Laver Reserve West",
+        "Glen Iris, 3146"
+      ],
+      "mailing_address_lines": [
+        "PO Box 1007",
+        "DARLING, 3145"
+      ],
+      "melway": "59-K10",
+      "phones": [
+        "0477 858 854"
+      ],
+      "contacts": [
+        {
+          "role": "Secretary",
+          "name": "Marina Woods",
+          "phone": "0407 869 661",
+          "email": "secretary@eastmalverntc.com.au"
+        },
+        {
+          "role": "Senior Convenor",
+          "name": "Alan Young",
+          "phone": "0468314700",
+          "email": "seniors@eastmalverntc.com.au"
+        },
+        {
+          "role": "Senior Convenor",
+          "name": "Chris Woods",
+          "phone": "",
+          "email": "night@eastmalverntc.com.au"
+        }
+      ],
+      "websites": [
+        "https://www.eastmalverntc.com.au"
+      ],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "East Malvern"
+      },
+      "coordinates": {
+        "latitude": -37.8668,
+        "longitude": 145.0628
+      },
+      "published_details": [
+        "Web-site https://www.eastmalverntc.com.au"
+      ]
+    },
+    {
+      "id": "eildon-park",
+      "name": "Eildon Park",
+      "address_lines": [
+        "Eildon Parade, Rowville",
+        "(off Taylors Lane)",
+        "Rowville, 3178"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "82-C1",
+      "phones": [],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Eildon Park"
+      },
+      "coordinates": {
+        "latitude": -37.919,
+        "longitude": 145.253
+      },
+      "published_details": [
+        "No Web-site listed",
+        "9 Mod Grass courts (9 under Lights)"
+      ]
+    },
+    {
+      "id": "elsternwick-park",
+      "name": "Elsternwick Park",
+      "address_lines": [
+        "464 St Kilda Street",
+        "Brighton, 3186"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "67-D5",
+      "phones": [
+        "9531 3782"
+      ],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Elsternwick Park"
+      },
+      "coordinates": {
+        "latitude": -37.8915,
+        "longitude": 144.991
+      },
+      "published_details": [
+        "No Web-site listed"
+      ]
+    },
+    {
+      "id": "elwood",
+      "name": "Elwood",
+      "address_lines": [
+        "69A Ormond Esplanade",
+        "Elwood, 3184"
+      ],
+      "mailing_address_lines": [
+        "PO Box 132",
+        "Elwood, 3184"
+      ],
+      "melway": "67-B4",
+      "phones": [
+        "9531 2509"
+      ],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Elwood"
+      },
+      "coordinates": {
+        "latitude": -37.8878,
+        "longitude": 144.9849
+      },
+      "published_details": [
+        "No Web-site listed",
+        "4 Mod Grass courts (4 under Lights)"
+      ]
+    },
+    {
+      "id": "endeavour-hills",
+      "name": "Endeavour Hills",
+      "address_lines": [
+        "Cnr James Cook Dve & Sydney Parkinson Av",
+        "Endeavour Hills, 3802"
+      ],
+      "mailing_address_lines": [
+        "P.O. Box 202",
+        "Endeavour Hills, 3802"
+      ],
+      "melway": "91-E7",
+      "phones": [],
+      "contacts": [
+        {
+          "role": "Secretary",
+          "name": "Jindi Ambrose",
+          "phone": "0423 618 766",
+          "email": "jindiambrose@gmail.com.au"
+        }
+      ],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Endeavour Hills"
+      },
+      "coordinates": {
+        "latitude": -37.9871,
+        "longitude": 145.2615
+      },
+      "published_details": [
+        "No Web-site listed"
+      ]
+    },
+    {
+      "id": "essendon",
+      "name": "Essendon",
+      "address_lines": [
+        "Clifton Reserve",
+        "7A Batman Street",
+        "Aberfeldie, 3040"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "28-B4",
+      "phones": [],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Essendon"
+      },
+      "coordinates": {
+        "latitude": -37.7554,
+        "longitude": 144.8924
+      },
+      "published_details": [
+        "No Web-site listed",
+        "4 En-Tous-Cas courts",
+        "6 Poly-Clay courts"
+      ]
+    },
+    {
+      "id": "fctc",
+      "name": "FCTC",
+      "address_lines": [
+        "240 Centenary Park Drive",
+        "Frankston, 3199"
+      ],
+      "mailing_address_lines": [
+        "PO Box 6066",
+        "KARINGAL, 3199"
+      ],
+      "melway": "100-E11",
+      "phones": [],
+      "contacts": [
+        {
+          "role": "Secretary",
+          "name": "Anne Baldwin",
+          "phone": "0411 155 707",
+          "email": "anniebaldwin@gmail.com"
+        }
+      ],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "FCTC"
+      },
+      "coordinates": {
+        "latitude": -38.133,
+        "longitude": 145.1757
+      },
+      "published_details": [
+        "No Web-site listed",
+        "13 Plexicushion courts"
+      ]
+    },
+    {
+      "id": "fitzroy",
+      "name": "Fitzroy",
+      "address_lines": [
+        "Brunswick Street",
+        "Edinburgh Gardens",
+        "Fitzroy North,"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "2C-C1",
+      "phones": [],
+      "contacts": [
+        {
+          "role": "Secretary",
+          "name": "Sarah-Jane Beavitt",
+          "phone": "0408 039 223",
+          "email": "secretary@fitzroytc.net"
+        }
+      ],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Fitzroy"
+      },
+      "coordinates": {
+        "latitude": -37.788,
+        "longitude": 144.9822
+      },
+      "published_details": [
+        "No Web-site listed",
+        "3 En-Tous-Cas courts",
+        "3 Classic Clay courts"
+      ]
+    },
+    {
+      "id": "gardiner",
+      "name": "Gardiner",
+      "address_lines": [
+        "14 Kyarra Road",
+        "Glen Iris, 3146"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "-",
+      "phones": [
+        "0404 639 050"
+      ],
+      "contacts": [
+        {
+          "role": "Full Online Entry",
+          "name": "Robert Wyld",
+          "phone": "0427 790 212",
+          "email": "robert@sapien.com.au"
+        }
+      ],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Gardiner"
+      },
+      "published_details": [
+        "No Web-site listed",
+        "5 En-Tous-Cas courts"
+      ]
+    },
+    {
+      "id": "gladeswood",
+      "name": "Gladeswood",
+      "address_lines": [
+        "Maygrove Way",
+        "Mulgrave, 3170"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "81-A4",
+      "phones": [
+        "0414 732 160"
+      ],
+      "contacts": [],
+      "websites": [
+        "https://www.tennis.com.au/gladeswood"
+      ],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Gladeswood"
+      },
+      "coordinates": {
+        "latitude": -37.9312,
+        "longitude": 145.1994
+      },
+      "published_details": [
+        "Web-site https://www.tennis.com.au/gladeswood"
+      ]
+    },
+    {
+      "id": "glen-eira",
+      "name": "Glen Eira",
+      "address_lines": [
+        "Princes Park, Beech Street",
+        "Caulfield South, 3162"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "68-B5",
+      "phones": [],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Glen Eira"
+      },
+      "coordinates": {
+        "latitude": -37.8929,
+        "longitude": 145.0259
+      },
+      "published_details": [
+        "No Web-site listed"
+      ]
+    },
+    {
+      "id": "glen-huntly",
+      "name": "Glen Huntly",
+      "address_lines": [
+        "Cnr Booran & Neerim Roads",
+        "Glenhuntly Park",
+        "Glenhuntly, 3163"
+      ],
+      "mailing_address_lines": [
+        "Nicole Haynes, GHTC 2/95 Coorigil Rd",
+        "Carnegie, 3163"
+      ],
+      "melway": "68-E3",
+      "phones": [],
+      "contacts": [
+        {
+          "role": "Treasurer",
+          "name": "Ray Yates",
+          "phone": "0491 141 551",
+          "email": "caulfieldparkray@dodo.com.au"
+        }
+      ],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Glen Huntly"
+      },
+      "coordinates": {
+        "latitude": -37.885,
+        "longitude": 145.0388
+      },
+      "published_details": [
+        "Description",
+        "Michael Stagg (President) - Ph: 0430 089 908 , Email: docstagg@me.com Nicole Haynes (Secretary/Public Officer) - Ph: 0400 575 305 , Email: margaret011h@gmail.com",
+        "Web-site https//play.tennis.com.au/glenhuntlytennisclub",
+        "2 Mod Grass courts (2 under Lights)",
+        "2 En-Tous-Cas courts (2 under Lights)"
+      ]
+    },
+    {
+      "id": "glen-iris-valley",
+      "name": "Glen Iris Valley",
+      "address_lines": [
+        "260-270 High Street Road",
+        "Mt Waverley,"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "61-B11",
+      "phones": [],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Glen Iris Valley"
+      },
+      "coordinates": {
+        "latitude": -37.8691,
+        "longitude": 145.1185
+      },
+      "published_details": [
+        "No Web-site listed"
+      ]
+    },
+    {
+      "id": "glen-waverley",
+      "name": "Glen Waverley",
+      "address_lines": [
+        "3 Aquatic Place",
+        "Glen Waverley,"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "71-A5",
+      "phones": [],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Glen Waverley"
+      },
+      "coordinates": {
+        "latitude": -37.8887,
+        "longitude": 145.156
+      },
+      "published_details": [
+        "No Web-site listed"
+      ]
+    },
+    {
+      "id": "glencairn",
+      "name": "Glencairn",
+      "address_lines": [
+        "Mailer Reserve - Haig Avenue",
+        "Coburg, 3058"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "29-F3",
+      "phones": [],
+      "contacts": [],
+      "websites": [
+        "https://play.tennis.com.au/glencairntennisclub"
+      ],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Glencairn"
+      },
+      "coordinates": {
+        "latitude": -37.7528,
+        "longitude": 144.9546
+      },
+      "published_details": [
+        "Web-site https://play.tennis.com.au/glencairntennisclub",
+        "3 Mod Grass courts (3 under Lights)"
+      ]
+    },
+    {
+      "id": "glenvale",
+      "name": "Glenvale",
+      "address_lines": [
+        "915 Waverley Road",
+        "at Glen Waverley Sports Hub",
+        "Glen Waverley, 3150"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "71-J5",
+      "phones": [],
+      "contacts": [],
+      "websites": [
+        "https://www.glenvaletennis.club/"
+      ],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Glenvale"
+      },
+      "coordinates": {
+        "latitude": -37.8897,
+        "longitude": 145.1934
+      },
+      "published_details": [
+        "Web-site https://www.glenvaletennis.club/",
+        "8 Mod Grass courts (8 under Lights)"
+      ]
+    },
+    {
+      "id": "gphc",
+      "name": "GPHC",
+      "address_lines": [
+        "Hilda Crescent",
+        "Hawthorn, 3122"
+      ],
+      "mailing_address_lines": [
+        "2 Hilda Crescent",
+        "Hawthorn, 3122"
+      ],
+      "melway": "45-B10",
+      "phones": [
+        "9818 5534"
+      ],
+      "contacts": [],
+      "websites": [
+        "https://gphc.com.au"
+      ],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "GPHC"
+      },
+      "coordinates": {
+        "latitude": -37.8204,
+        "longitude": 145.0291
+      },
+      "published_details": [
+        "Description",
+        "Grace Park - Hawthorn Club",
+        "Web-site https://gphc.com.au",
+        "7 En-Tous-Cas courts (7 under Lights)"
+      ]
+    },
+    {
+      "id": "hallam",
+      "name": "Hallam",
+      "address_lines": [
+        "Frawley Road",
+        "Hallam,"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "91-A10",
+      "phones": [],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Hallam"
+      },
+      "coordinates": {
+        "latitude": -38.0014,
+        "longitude": 145.2685
+      },
+      "published_details": [
+        "No Web-site listed"
+      ]
+    },
+    {
+      "id": "hampton",
+      "name": "Hampton",
+      "address_lines": [
+        "5 Grenville Street",
+        "Hampton, 3188"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "76-F5",
+      "phones": [
+        "0406 937 354"
+      ],
+      "contacts": [],
+      "websites": [
+        "https://www.voyagertennis.com/hampton"
+      ],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Hampton"
+      },
+      "coordinates": {
+        "latitude": -37.9348,
+        "longitude": 144.9988
+      },
+      "published_details": [
+        "Web-site https://www.voyagertennis.com/hampton",
+        "4 Plexipave courts (4 under Lights)"
+      ]
+    },
+    {
+      "id": "hampton-park",
+      "name": "Hampton Park",
+      "address_lines": [
+        "Booth Reserve",
+        "Somerville Road",
+        "Hampton Park, 3976"
+      ],
+      "mailing_address_lines": [
+        "PO BOX 189",
+        "Hampton Park, 3976"
+      ],
+      "melway": "96-D7",
+      "phones": [
+        "9799 3263"
+      ],
+      "contacts": [
+        {
+          "role": "Secretary",
+          "name": "Liz Drew",
+          "phone": "0488 551 238",
+          "email": "hamptonparktc@gmail.com"
+        },
+        {
+          "role": "Senior Convenor",
+          "name": "Carlos Santin",
+          "phone": "0418 962 377",
+          "email": "hamptonparktc@gmail.com"
+        }
+      ],
+      "websites": [
+        "https://www.hamptonparktc.com.au"
+      ],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Hampton Park"
+      },
+      "coordinates": {
+        "latitude": -38.031,
+        "longitude": 145.2597
+      },
+      "published_details": [
+        "Web-site https://www.hamptonparktc.com.au"
+      ]
+    },
+    {
+      "id": "hampton-u-c",
+      "name": "Hampton U/C",
+      "address_lines": [
+        "Cnr Service & Deakins Streets",
+        "(Rear of hall)",
+        "Hampton,"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "76-G6",
+      "phones": [],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Hampton U/C"
+      },
+      "coordinates": {
+        "latitude": -37.938,
+        "longitude": 145.006
+      },
+      "published_details": [
+        "No Web-site listed"
+      ]
+    },
+    {
+      "id": "harkaway",
+      "name": "Harkaway",
+      "address_lines": [
+        ","
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "-",
+      "phones": [],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Harkaway"
+      },
+      "published_details": [
+        "No Web-site listed"
+      ]
+    },
+    {
+      "id": "hartwell",
+      "name": "Hartwell",
+      "address_lines": [
+        "1082 Toorak Road",
+        "Camberwell, 3124"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "60-C5",
+      "phones": [],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Hartwell"
+      },
+      "coordinates": {
+        "latitude": -37.8481,
+        "longitude": 145.0736
+      },
+      "published_details": [
+        "No Web-site listed"
+      ]
+    },
+    {
+      "id": "hastings",
+      "name": "Hastings",
+      "address_lines": [
+        "54 Marine Parade",
+        "Hastings, 3915"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "154-J10",
+      "phones": [],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Hastings"
+      },
+      "coordinates": {
+        "latitude": -38.305,
+        "longitude": 145.1931
+      },
+      "published_details": [
+        "No Web-site listed",
+        "4 En-Tous-Cas courts"
+      ]
+    },
+    {
+      "id": "hawksburn",
+      "name": "Hawksburn",
+      "address_lines": [
+        "12 Bunalbo Avenue",
+        "South Yarra, 3141"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "58-F4",
+      "phones": [],
+      "contacts": [
+        {
+          "role": "Secretary",
+          "name": "Greg Giesekam",
+          "phone": "0404 757 572",
+          "email": "gregjckg@gmail.com"
+        }
+      ],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Hawksburn"
+      },
+      "coordinates": {
+        "latitude": -37.8417,
+        "longitude": 145.0006
+      },
+      "published_details": [
+        "No Web-site listed",
+        "3 En-Tous-Cas courts"
+      ]
+    },
+    {
+      "id": "hawthorn",
+      "name": "Hawthorn",
+      "address_lines": [
+        "13 Swinburne Avenue",
+        "Hawthorn, 3122"
+      ],
+      "mailing_address_lines": [
+        "P O Box 25",
+        "Hawthorn, 3122"
+      ],
+      "melway": "45-D11",
+      "phones": [],
+      "contacts": [
+        {
+          "role": "President",
+          "name": "Nadine Maloney",
+          "phone": "0407097398 0407097398",
+          "email": "nadine.maloney@live.com.au"
+        },
+        {
+          "role": "Secretary",
+          "name": "Madeline Penny",
+          "phone": "0419 020066",
+          "email": "info@hawthorntennisclub.com"
+        },
+        {
+          "role": "Senior Convenor",
+          "name": "Nadine Maloney",
+          "phone": "0407097398 0407097398",
+          "email": "nadine.maloney@live.com.au"
+        }
+      ],
+      "websites": [
+        "https://www.hawthorntennisclub.com"
+      ],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Hawthorn"
+      },
+      "coordinates": {
+        "latitude": -37.8252,
+        "longitude": 145.0362
+      },
+      "published_details": [
+        "Web-site https://www.hawthorntennisclub.com",
+        "7 En-Tous-Cas courts (7 under Lights)"
+      ]
+    },
+    {
+      "id": "highett",
+      "name": "Highett",
+      "address_lines": [
+        "Cnr Tibrockney & Eddie Streets",
+        "Highett,"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "77-C10",
+      "phones": [],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Highett"
+      },
+      "coordinates": {
+        "latitude": -37.9531,
+        "longitude": 145.0335
+      },
+      "published_details": [
+        "No Web-site listed",
+        "3 En-Tous-Cas courts"
+      ]
+    },
+    {
+      "id": "highmoor-uniting",
+      "name": "Highmoor Uniting",
+      "address_lines": [
+        "Le Page Street",
+        "Moorabbin, 3189"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "77-E7",
+      "phones": [],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Highmoor Uniting"
+      },
+      "coordinates": {
+        "latitude": -37.9433,
+        "longitude": 145.0385
+      },
+      "published_details": [
+        "No Web-site listed",
+        "5 En-Tous-Cas courts"
+      ]
+    },
+    {
+      "id": "hurlingham-park",
+      "name": "Hurlingham Park",
+      "address_lines": [
+        "Francis Street",
+        "Brighton East,"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "67-J10",
+      "phones": [
+        "0418 258 147"
+      ],
+      "contacts": [
+        {
+          "role": "Secretary",
+          "name": "Michelle Zgalin",
+          "phone": "0405 109 225",
+          "email": "mzgalin@live.com"
+        },
+        {
+          "role": "Senior Convenor",
+          "name": "Mike Lee",
+          "phone": "",
+          "email": "MLee@jmichel.com.au"
+        },
+        {
+          "role": "Senior Convenor",
+          "name": "John Malakasiotis",
+          "phone": "0418258147",
+          "email": "John.m@hptc.org.au"
+        }
+      ],
+      "websites": [
+        "https://HTTP://hptc.org.au"
+      ],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Hurlingham Park"
+      },
+      "coordinates": {
+        "latitude": -37.9094,
+        "longitude": 145.0132
+      },
+      "published_details": [
+        "Web-site https://HTTP://hptc.org.au",
+        "6 Mod Grass courts (4 under Lights)"
+      ]
+    },
+    {
+      "id": "immac-heart",
+      "name": "Immac Heart",
+      "address_lines": [
+        ","
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "-",
+      "phones": [],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Immac Heart"
+      },
+      "published_details": [
+        "No Web-site listed"
+      ]
+    },
+    {
+      "id": "karingal",
+      "name": "Karingal",
+      "address_lines": [
+        ","
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "-",
+      "phones": [],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Karingal"
+      },
+      "published_details": [
+        "No Web-site listed"
+      ]
+    },
+    {
+      "id": "kew-heights",
+      "name": "Kew Heights",
+      "address_lines": [
+        ","
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "-",
+      "phones": [],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Kew Heights"
+      },
+      "published_details": [
+        "No Web-site listed"
+      ]
+    },
+    {
+      "id": "keysborough",
+      "name": "Keysborough",
+      "address_lines": [
+        "Wachter Reserve",
+        "Bloomfield Rd (laneway at No. 196 )",
+        "Keysborough, 3173"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "89-E8",
+      "phones": [],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Keysborough"
+      },
+      "coordinates": {
+        "latitude": -37.99,
+        "longitude": 145.1748
+      },
+      "published_details": [
+        "No Web-site listed",
+        "6 Mod Grass courts (6 under Lights)",
+        "2 En-Tous-Cas courts (2 under Lights)"
+      ]
+    },
+    {
+      "id": "kings-park",
+      "name": "Kings Park",
+      "address_lines": [
+        "King George VI Reserve",
+        "East Boundary Road",
+        "East Bentleigh, 3165"
+      ],
+      "mailing_address_lines": [
+        "PO Box 1",
+        "East Bentleigh, 3165"
+      ],
+      "melway": "77-J3",
+      "phones": [
+        "0422 495 824"
+      ],
+      "contacts": [
+        {
+          "role": "Junior/Senior Convenor",
+          "name": "Ben Eden",
+          "phone": "0422 495 824",
+          "email": "beneden43@gmail.com"
+        }
+      ],
+      "websites": [
+        "https://play.tennis.com.au/kingsparktennisclub"
+      ],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Kings Park"
+      },
+      "coordinates": {
+        "latitude": -37.9293,
+        "longitude": 145.0587
+      },
+      "published_details": [
+        "Web-site https://play.tennis.com.au/kingsparktennisclub",
+        "8 En-Tous-Cas courts (8 under Lights)"
+      ]
+    },
+    {
+      "id": "knox-city",
+      "name": "Knox City",
+      "address_lines": [
+        ","
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "-",
+      "phones": [],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Knox City"
+      },
+      "published_details": [
+        "No Web-site listed"
+      ]
+    },
+    {
+      "id": "kooyong",
+      "name": "Kooyong",
+      "address_lines": [
+        "489 Glenferrie Road",
+        "Park in northern carpark next to stadium",
+        "Kooyong, 3144"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "59-B3",
+      "phones": [
+        "9822 3333"
+      ],
+      "contacts": [
+        {
+          "role": "Senior Convenor",
+          "name": "Lita Trimmings",
+          "phone": "9822 3333",
+          "email": "ltrimmings@kooyong.com.au"
+        }
+      ],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Kooyong"
+      },
+      "coordinates": {
+        "latitude": -37.8387,
+        "longitude": 145.0324
+      },
+      "published_details": [
+        "No Web-site listed"
+      ]
+    },
+    {
+      "id": "langwarrin",
+      "name": "Langwarrin",
+      "address_lines": [
+        "Lloyd Park",
+        "Langwarrin, 3910"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "103-H4",
+      "phones": [],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Langwarrin"
+      },
+      "coordinates": {
+        "latitude": -38.15,
+        "longitude": 145.1893
+      },
+      "published_details": [
+        "No Web-site listed",
+        "9 Plexicushion courts"
+      ]
+    },
+    {
+      "id": "lauriston",
+      "name": "Lauriston",
+      "address_lines": [
+        "11 Rosanna Street",
+        "Carnegie, 3163"
+      ],
+      "mailing_address_lines": [
+        "PO Box 408",
+        "Carnegie, 3163"
+      ],
+      "melway": "69-J7",
+      "phones": [],
+      "contacts": [
+        {
+          "role": "Junior Convenor",
+          "name": "Chris Price",
+          "phone": "0408 806 339",
+          "email": "chris@up4.tennis"
+        }
+      ],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Lauriston"
+      },
+      "coordinates": {
+        "latitude": -37.8981,
+        "longitude": 145.057
+      },
+      "published_details": [
+        "No Web-site listed",
+        "8 En-Tous-Cas courts"
+      ]
+    },
+    {
+      "id": "le-page",
+      "name": "Le Page",
+      "address_lines": [
+        "Herald Street",
+        "Cheltenham, 3192"
+      ],
+      "mailing_address_lines": [
+        "5 Lorna St",
+        "Cheltenham, 3192"
+      ],
+      "melway": "78-B11",
+      "phones": [],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Le Page"
+      },
+      "coordinates": {
+        "latitude": -37.958,
+        "longitude": 145.0721
+      },
+      "published_details": [
+        "No Web-site listed",
+        "6 En-Tous-Cas courts (3 under Lights)"
+      ]
+    },
+    {
+      "id": "legend-park",
+      "name": "Legend Park",
+      "address_lines": [
+        "85-95 Capital Avenue",
+        "Capital Reserve",
+        "Glen Waverley, 3150"
+      ],
+      "mailing_address_lines": [
+        "85-95 Capital Avenue",
+        "Glen Waverley, 3150"
+      ],
+      "melway": "62-G12",
+      "phones": [],
+      "contacts": [
+        {
+          "role": "Secretary",
+          "name": "Jenny Leveleky",
+          "phone": "",
+          "email": "lptcsecretary@hotmail.com"
+        }
+      ],
+      "websites": [
+        "https://www.legendparktc.com.au"
+      ],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Legend Park"
+      },
+      "coordinates": {
+        "latitude": -37.8734,
+        "longitude": 145.1815
+      },
+      "published_details": [
+        "Web-site https://www.legendparktc.com.au",
+        "6 En-Tous-Cas courts (6 under Lights)"
+      ]
+    },
+    {
+      "id": "liston",
+      "name": "Liston",
+      "address_lines": [
+        "142 Nelson Place",
+        "Commonwealth Reserve",
+        "Williamstown, 3016"
+      ],
+      "mailing_address_lines": [
+        "P.O. Box 500",
+        "Williamstown, 3016"
+      ],
+      "melway": "56-D9",
+      "phones": [
+        "0499 980 031"
+      ],
+      "contacts": [
+        {
+          "role": "Senior Convenor",
+          "name": "Daniel Walsh",
+          "phone": "0438 019 597",
+          "email": "daniel.walsh@wwtennis.com.au"
+        }
+      ],
+      "websites": [
+        "https://play.tennis.com.au/listontennisclub"
+      ],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Liston"
+      },
+      "coordinates": {
+        "latitude": -37.862,
+        "longitude": 144.903
+      },
+      "published_details": [
+        "Description",
+        "Email: teams.listontc@gmail.com",
+        "Web-site https://play.tennis.com.au/listontennisclub",
+        "6 Plexicushion courts (6 under Lights)"
+      ]
+    },
+    {
+      "id": "long-beach",
+      "name": "Long Beach",
+      "address_lines": [
+        "Dyson Road",
+        "Roy Dore Reserve",
+        "Carrum, 3197"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "97-E8",
+      "phones": [],
+      "contacts": [],
+      "websites": [
+        "https://play.tennis.com.au/LongBeachTennisClub"
+      ],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Long Beach"
+      },
+      "coordinates": {
+        "latitude": -38.0785,
+        "longitude": 145.1334
+      },
+      "published_details": [
+        "Web-site https://play.tennis.com.au/LongBeachTennisClub",
+        "2 Classic Clay courts (2 under Lights)",
+        "4 En-Tous-Cas courts (2 under Lights)"
+      ]
+    },
+    {
+      "id": "maccabi",
+      "name": "Maccabi",
+      "address_lines": [
+        "92 Bignell Road",
+        "Bentleigh East, 3165"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "78-B 5",
+      "phones": [
+        "0493 099 276"
+      ],
+      "contacts": [
+        {
+          "role": "Treasurer",
+          "name": "Marcus Frajman",
+          "phone": "0421228053",
+          "email": "tennis.VIC@maccabi.com.au"
+        },
+        {
+          "role": "Senior Convenor",
+          "name": "Adam Needleman",
+          "phone": "0395966848 0417 103 966",
+          "email": "aneedlem@bigpond.net.au"
+        },
+        {
+          "role": "Junior Convenor",
+          "name": "Joel Rabinov.",
+          "phone": "0409 563 696",
+          "email": "joel_rab@hotmail.com"
+        }
+      ],
+      "websites": [
+        "https://play.tennis.com.au/maccabitennisclub"
+      ],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Maccabi"
+      },
+      "coordinates": {
+        "latitude": -37.9338,
+        "longitude": 145.0714
+      },
+      "published_details": [
+        "Web-site https://play.tennis.com.au/maccabitennisclub",
+        "8 Plexipave courts (4 under Lights)"
+      ]
+    },
+    {
+      "id": "malvern-tennis",
+      "name": "Malvern Tennis",
+      "address_lines": [
+        "Union Street",
+        "Malvern,"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "59-A8",
+      "phones": [],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Malvern Tennis"
+      },
+      "published_details": [
+        "No Web-site listed"
+      ]
+    },
+    {
+      "id": "mcc",
+      "name": "MCC",
+      "address_lines": [
+        "Lakeside Drive",
+        "Junction Oval",
+        "St Kilda,"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "2P-B2",
+      "phones": [
+        "9534 7626"
+      ],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "MCC"
+      },
+      "coordinates": {
+        "latitude": -37.8556,
+        "longitude": 144.9788
+      },
+      "published_details": [
+        "No Web-site listed",
+        "6 En-Tous-Cas courts"
+      ]
+    },
+    {
+      "id": "mcc-glen-iris",
+      "name": "MCC Glen Iris",
+      "address_lines": [
+        "260-270 High Street Road",
+        "Opposite Surrey Road",
+        "Mt Waverley, 3149"
+      ],
+      "mailing_address_lines": [
+        "PO Box 39",
+        "Glen Iris, 3145"
+      ],
+      "melway": "61-B11",
+      "phones": [
+        "9807 7755"
+      ],
+      "contacts": [
+        {
+          "role": "President",
+          "name": "Peter Gillieron",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "role": "Secretary",
+          "name": "Jordana Dymond",
+          "phone": "",
+          "email": "jd@mcmahonfearnley.com.au"
+        },
+        {
+          "role": "Senior Convenor",
+          "name": "Angelo Giampaolo",
+          "phone": "0407 477 798",
+          "email": "angelo@vidatennis.com.au"
+        }
+      ],
+      "websites": [
+        "https://www.gleniristennis.org.au"
+      ],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "MCC Glen Iris"
+      },
+      "coordinates": {
+        "latitude": -37.8691,
+        "longitude": 145.1185
+      },
+      "published_details": [
+        "Web-site https://www.gleniristennis.org.au",
+        "12 En-Tous-Cas courts (8 under Lights)"
+      ]
+    },
+    {
+      "id": "melbourne-grammar",
+      "name": "Melbourne Grammar",
+      "address_lines": [
+        "Laneway off Domain Street",
+        "Opposite school oval/pedestrian crossing",
+        "Melbourne,"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "2L-B3",
+      "phones": [],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Melbourne Grammar"
+      },
+      "published_details": [
+        "No Web-site listed"
+      ]
+    },
+    {
+      "id": "melbourne-univ",
+      "name": "Melbourne Univ",
+      "address_lines": [
+        "Tin Alley",
+        "Park in local sts, gen free after 12.30p",
+        "Parkville,"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "2B-E5",
+      "phones": [],
+      "contacts": [
+        {
+          "role": "Secretary",
+          "name": "Anthony Davies",
+          "phone": "0403 916 096",
+          "email": "melbunitennis@gmail.com"
+        }
+      ],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Melbourne Univ"
+      },
+      "coordinates": {
+        "latitude": -37.7962,
+        "longitude": 144.9615
+      },
+      "published_details": [
+        "No Web-site listed"
+      ]
+    },
+    {
+      "id": "mentone",
+      "name": "Mentone",
+      "address_lines": [
+        "Cnr Nepean Highway & First Street",
+        "Parkdale, 3195"
+      ],
+      "mailing_address_lines": [
+        "PO Box 225",
+        "Mentone, 3194"
+      ],
+      "melway": "87-C6",
+      "phones": [],
+      "contacts": [
+        {
+          "role": "President",
+          "name": "Sue Williams",
+          "phone": "0400 874 966",
+          "email": "sue.margaret@hotmail.com"
+        },
+        {
+          "role": "Junior Convenor",
+          "name": "Chris Wickramage",
+          "phone": "0448 527 560",
+          "email": "mentonetennisjuniors@gmail.com"
+        }
+      ],
+      "websites": [
+        "https://play.tennis.com.au/MentoneTennisClub"
+      ],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Mentone"
+      },
+      "coordinates": {
+        "latitude": -37.9828,
+        "longitude": 145.074
+      },
+      "published_details": [
+        "Description",
+        "Everyone at Mentone Tennis Club takes pride in their family oriented club. New members are always welcome.",
+        "Web-site https://play.tennis.com.au/MentoneTennisClub",
+        "4 En-Tous-Cas courts (4 under Lights)",
+        "1 Mod Grass courts (1 under Lights)"
+      ]
+    },
+    {
+      "id": "middle-brighton",
+      "name": "Middle Brighton",
+      "address_lines": [
+        "30A Willansby Avenue",
+        "Brighton,"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "67-G9",
+      "phones": [
+        "0450 030 816"
+      ],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Middle Brighton"
+      },
+      "coordinates": {
+        "latitude": -37.9065,
+        "longitude": 145.0036
+      },
+      "published_details": [
+        "No Web-site listed"
+      ]
+    },
+    {
+      "id": "monash-university",
+      "name": "Monash University",
+      "address_lines": [
+        "Monash University Campus, Wellington Rd",
+        "Clayton, 3168"
+      ],
+      "mailing_address_lines": [
+        "4 Summit Crescent",
+        "GLEN WAVERLEY, 3150"
+      ],
+      "melway": "70-G10",
+      "phones": [],
+      "contacts": [
+        {
+          "role": "President",
+          "name": "Sam Soo",
+          "phone": "0421385925",
+          "email": "monashtennis@gmail.com"
+        },
+        {
+          "role": "Secretary",
+          "name": "Philip Phung",
+          "phone": "",
+          "email": "pjphu1@gmail.com"
+        },
+        {
+          "role": "Senior Convenor",
+          "name": "Ken Kennedy",
+          "phone": "0402059477",
+          "email": "kjkennedy05@gmail.com"
+        }
+      ],
+      "websites": [
+        "https://connectedcommunities.monash.edu/Clubs/Tennis"
+      ],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Monash University"
+      },
+      "coordinates": {
+        "latitude": -37.9108,
+        "longitude": 145.1371
+      },
+      "published_details": [
+        "Web-site https://connectedcommunities.monash.edu/Clubs/Tennis",
+        "8 Plexipave courts"
+      ]
+    },
+    {
+      "id": "moorabbin-indoor",
+      "name": "Moorabbin Indoor",
+      "address_lines": [
+        ","
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "-",
+      "phones": [],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Moorabbin Indoor"
+      },
+      "published_details": [
+        "No Web-site listed"
+      ]
+    },
+    {
+      "id": "mordialloc",
+      "name": "Mordialloc",
+      "address_lines": [
+        "McDonald Street",
+        "Doug Denyer Reserve",
+        "Mordialloc,"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "92-E1",
+      "phones": [],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Mordialloc"
+      },
+      "coordinates": {
+        "latitude": -38.0032,
+        "longitude": 145.0971
+      },
+      "published_details": [
+        "No Web-site listed",
+        "6 En-Tous-Cas courts"
+      ]
+    },
+    {
+      "id": "mornington",
+      "name": "Mornington",
+      "address_lines": [
+        "350 Dunns Road",
+        "Mornington Civic Reserve",
+        "Mornington,"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "145-G4",
+      "phones": [],
+      "contacts": [
+        {
+          "role": "Secretary",
+          "name": "Virginia McLeod",
+          "phone": "0438 771 653",
+          "email": "secretary@morningtontennis.com.au"
+        }
+      ],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Mornington"
+      },
+      "coordinates": {
+        "latitude": -38.2373,
+        "longitude": 145.0506
+      },
+      "published_details": [
+        "No Web-site listed"
+      ]
+    },
+    {
+      "id": "mountain-gate",
+      "name": "Mountain Gate",
+      "address_lines": [
+        "Agora Boulevard",
+        "Reta Matthews Reserve",
+        "Fertree Gully, 3156"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "64-H11",
+      "phones": [],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Mountain Gate"
+      },
+      "coordinates": {
+        "latitude": -37.8694,
+        "longitude": 145.2775
+      },
+      "published_details": [
+        "No Web-site listed",
+        "8 En-Tous-Cas courts"
+      ]
+    },
+    {
+      "id": "mt-eliza",
+      "name": "Mt Eliza",
+      "address_lines": [
+        "55 Wimbledon Avenue",
+        "Mt Eliza,"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "105-E1",
+      "phones": [],
+      "contacts": [
+        {
+          "role": "Secretary",
+          "name": "Steven Foot",
+          "phone": "",
+          "email": "bettertennis@bigpond.com"
+        }
+      ],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Mt Eliza"
+      },
+      "coordinates": {
+        "latitude": -38.1823,
+        "longitude": 145.0854
+      },
+      "published_details": [
+        "No Web-site listed"
+      ]
+    },
+    {
+      "id": "mt-martha",
+      "name": "Mt Martha",
+      "address_lines": [
+        "Cnr Esplanade & Dominion Rd",
+        "Mt Martha,"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "144-H12",
+      "phones": [],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Mt Martha"
+      },
+      "coordinates": {
+        "latitude": -38.2702,
+        "longitude": 145.0107
+      },
+      "published_details": [
+        "No Web-site listed"
+      ]
+    },
+    {
+      "id": "mt-waverley",
+      "name": "Mt Waverley",
+      "address_lines": [
+        ","
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "-",
+      "phones": [],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Mt Waverley"
+      },
+      "published_details": [
+        "No Web-site listed"
+      ]
+    },
+    {
+      "id": "murrumbeena",
+      "name": "Murrumbeena",
+      "address_lines": [
+        "Bute Street",
+        "Murrumbeena, 3163"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "69-B6",
+      "phones": [],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Murrumbeena"
+      },
+      "coordinates": {
+        "latitude": -37.8926,
+        "longitude": 145.0705
+      },
+      "published_details": [
+        "No Web-site listed",
+        "3 Classic Clay courts"
+      ]
+    },
+    {
+      "id": "narre-warren",
+      "name": "Narre Warren",
+      "address_lines": [
+        ","
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "110-K9",
+      "phones": [],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Narre Warren"
+      },
+      "coordinates": {
+        "latitude": -38.0384,
+        "longitude": 145.3289
+      },
+      "published_details": [
+        "No Web-site listed"
+      ]
+    },
+    {
+      "id": "narre-warren-nth",
+      "name": "Narre Warren Nth",
+      "address_lines": [
+        "Recreation Reserve A'Beckett Road",
+        "Next to Primary school",
+        "Narre Warren North, 3804"
+      ],
+      "mailing_address_lines": [
+        "P.O. Box 36",
+        "Narre Warren North, 3804"
+      ],
+      "melway": "108-G5",
+      "phones": [],
+      "contacts": [],
+      "websites": [
+        "https://narrewarrennorthtc.com.au"
+      ],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Narre Warren Nth"
+      },
+      "coordinates": {
+        "latitude": -37.978,
+        "longitude": 145.315
+      },
+      "published_details": [
+        "Web-site https://narrewarrennorthtc.com.au"
+      ]
+    },
+    {
+      "id": "noble-park",
+      "name": "Noble Park",
+      "address_lines": [
+        "Ellendale Road",
+        "Noble Park,"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "89-G1",
+      "phones": [],
+      "contacts": [
+        {
+          "role": "Senior Convenor",
+          "name": "Deborah Kelly",
+          "phone": "9791 5600 0416028185",
+          "email": "kellygang_ddva@hotmail.com"
+        }
+      ],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Noble Park"
+      },
+      "coordinates": {
+        "latitude": -37.9626,
+        "longitude": 145.1829
+      },
+      "published_details": [
+        "No Web-site listed"
+      ]
+    },
+    {
+      "id": "oakleigh",
+      "name": "Oakleigh",
+      "address_lines": [
+        "Park Road",
+        "Oakleigh,"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "69-H6",
+      "phones": [
+        "9568 4191"
+      ],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Oakleigh"
+      },
+      "coordinates": {
+        "latitude": -37.893,
+        "longitude": 145.097
+      },
+      "published_details": [
+        "No Web-site listed"
+      ]
+    },
+    {
+      "id": "old-scotch",
+      "name": "Old Scotch",
+      "address_lines": [
+        "Morrison Street",
+        "Hawthorn,"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "59-B1",
+      "phones": [],
+      "contacts": [
+        {
+          "role": "Secretary",
+          "name": "Graeme Thomson",
+          "phone": "0407 093 470",
+          "email": "thomson@bigpond.net.au"
+        }
+      ],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Old Scotch"
+      },
+      "coordinates": {
+        "latitude": -37.8339,
+        "longitude": 145.0287
+      },
+      "published_details": [
+        "No Web-site listed"
+      ]
+    },
+    {
+      "id": "olgc",
+      "name": "OLGC",
+      "address_lines": [
+        "Genazzano College",
+        "301 Cotham Road",
+        "Kew, 3101"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "45-H6",
+      "phones": [
+        "9817 2279"
+      ],
+      "contacts": [
+        {
+          "role": "Secretary",
+          "name": "Michael Chung",
+          "phone": "0413 578 002",
+          "email": "mchung08@gmail.com"
+        }
+      ],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "OLGC"
+      },
+      "coordinates": {
+        "latitude": -37.8094,
+        "longitude": 145.0556
+      },
+      "published_details": [
+        "No Web-site listed"
+      ]
+    },
+    {
+      "id": "ormond",
+      "name": "Ormond",
+      "address_lines": [
+        "11 Foch Street",
+        "Ormond, 3204"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "68-E7",
+      "phones": [],
+      "contacts": [
+        {
+          "role": "Senior Convenor",
+          "name": "Steve Gelagin",
+          "phone": "0448 148 794",
+          "email": "steve.gelagin@aecom.com"
+        }
+      ],
+      "websites": [
+        "https://play.tennis.com.au/ormondtennisclub"
+      ],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Ormond"
+      },
+      "coordinates": {
+        "latitude": -37.8992,
+        "longitude": 145.0379
+      },
+      "published_details": [
+        "Web-site https://play.tennis.com.au/ormondtennisclub",
+        "5 En-Tous-Cas courts (4 under Lights)"
+      ]
+    },
+    {
+      "id": "overport-park",
+      "name": "Overport Park",
+      "address_lines": [
+        "Cnr Overport and Somerset Roads",
+        "Enter off Somerset Rd",
+        "Frankston South, 3199"
+      ],
+      "mailing_address_lines": [
+        "PO Box 281",
+        ","
+      ],
+      "melway": "102-C12",
+      "phones": [],
+      "contacts": [],
+      "websites": [
+        "https://play.tennis.com.au/overportparktennisclub"
+      ],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Overport Park"
+      },
+      "coordinates": {
+        "latitude": -38.1806,
+        "longitude": 145.1207
+      },
+      "published_details": [
+        "Web-site https://play.tennis.com.au/overportparktennisclub",
+        "11 En-Tous-Cas courts (9 under Lights)",
+        "3 Plexipave courts"
+      ]
+    },
+    {
+      "id": "pakenham",
+      "name": "Pakenham",
+      "address_lines": [
+        "11 Webster Way",
+        "Pakenham, 3810"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "317-F11",
+      "phones": [],
+      "contacts": [
+        {
+          "role": "President",
+          "name": "Greg Menzel",
+          "phone": "0418521866",
+          "email": "gregmen@bigpond.net.au"
+        },
+        {
+          "role": "Senior Convenor",
+          "name": "Ged Scanlon",
+          "phone": "0400945152",
+          "email": "gscan16@gmail.com"
+        }
+      ],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Pakenham"
+      },
+      "coordinates": {
+        "latitude": -38.0858,
+        "longitude": 145.4873
+      },
+      "published_details": [
+        "No Web-site listed"
+      ]
+    },
+    {
+      "id": "parkdale",
+      "name": "Parkdale",
+      "address_lines": [
+        "Cnr Imes & Chandler Streets",
+        "Parkdale, 3195"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "87-E8",
+      "phones": [
+        "0434 285 032"
+      ],
+      "contacts": [
+        {
+          "role": "Secretary",
+          "name": "Michele Barry",
+          "phone": "0434285032",
+          "email": "parkdaletennisclub@gmail.com"
+        },
+        {
+          "role": "Junior Convenor",
+          "name": "Michael Logarzo",
+          "phone": "0431407294",
+          "email": "mlogarzo79@gmail.com"
+        }
+      ],
+      "websites": [
+        "https://play.tennis.com.au/parkdaletennisclub"
+      ],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Parkdale"
+      },
+      "coordinates": {
+        "latitude": -37.9902,
+        "longitude": 145.0844
+      },
+      "published_details": [
+        "Web-site https://play.tennis.com.au/parkdaletennisclub",
+        "6 En-Tous-Cas courts (6 under Lights)",
+        "3 Mod Grass courts (3 under Lights)"
+      ]
+    },
+    {
+      "id": "patterson-lakes",
+      "name": "Patterson Lakes",
+      "address_lines": [
+        "Cnr Learmonth & Thompson Rds",
+        "Patterson Lakes, 3197"
+      ],
+      "mailing_address_lines": [
+        "PO Box 60",
+        "Patterson Lakes, 3197"
+      ],
+      "melway": "98-A5",
+      "phones": [],
+      "contacts": [],
+      "websites": [
+        "https://www.pltc.com.au"
+      ],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Patterson Lakes"
+      },
+      "coordinates": {
+        "latitude": -38.0683,
+        "longitude": 145.1551
+      },
+      "published_details": [
+        "Web-site https://www.pltc.com.au",
+        "6 Mod Grass courts (6 under Lights)"
+      ]
+    },
+    {
+      "id": "pearcedale",
+      "name": "Pearcedale",
+      "address_lines": [
+        "Baxter Tooradin Road",
+        "Pearcedale,"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "140-G7",
+      "phones": [],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Pearcedale"
+      },
+      "coordinates": {
+        "latitude": -38.2046,
+        "longitude": 145.2292
+      },
+      "published_details": [
+        "No Web-site listed"
+      ]
+    },
+    {
+      "id": "port-melbourne",
+      "name": "Port Melbourne",
+      "address_lines": [
+        "Swallow Street",
+        "Port Melbourne, 3207"
+      ],
+      "mailing_address_lines": [
+        "Port Melbourne, 3207"
+      ],
+      "melway": "2J-B4",
+      "phones": [],
+      "contacts": [
+        {
+          "role": "President",
+          "name": "John Wickham",
+          "phone": "0413 701 174",
+          "email": "wicko6@bigpond.com"
+        }
+      ],
+      "websites": [
+        "https://www.pmtc.org.au"
+      ],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Port Melbourne"
+      },
+      "coordinates": {
+        "latitude": -37.8374,
+        "longitude": 144.9352
+      },
+      "published_details": [
+        "Web-site https://www.pmtc.org.au",
+        "3 Mod Grass courts (3 under Lights)"
+      ]
+    },
+    {
+      "id": "royal-ave",
+      "name": "Royal Ave",
+      "address_lines": [
+        "30 Royal Avenue",
+        "Sandringham, 3193"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "76-J12",
+      "phones": [
+        "0417 054 901"
+      ],
+      "contacts": [],
+      "websites": [
+        "https://www.mckimmtennis.com.au"
+      ],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Royal Ave"
+      },
+      "coordinates": {
+        "latitude": -37.9588,
+        "longitude": 145.0141
+      },
+      "published_details": [
+        "Web-site https://www.mckimmtennis.com.au",
+        "14 En-Tous-Cas courts"
+      ]
+    },
+    {
+      "id": "royal-south-yarra",
+      "name": "Royal South Yarra",
+      "address_lines": [
+        "Verdant Avenue",
+        "Cnr Bruce St",
+        "Toorak,"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "2M-D2",
+      "phones": [
+        "9829 1526"
+      ],
+      "contacts": [
+        {
+          "role": "Junior/Senior Convenor",
+          "name": "Matthew Owen",
+          "phone": "9829 1526",
+          "email": "matthewowen@rsyltc.org.au"
+        }
+      ],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Royal South Yarra"
+      },
+      "coordinates": {
+        "latitude": -37.835,
+        "longitude": 145.0066
+      },
+      "published_details": [
+        "No Web-site listed",
+        "12 En-Tous-Cas courts (12 under Lights)"
+      ]
+    },
+    {
+      "id": "sacred-heart-kew",
+      "name": "Sacred Heart Kew",
+      "address_lines": [
+        "Cnr Glenferrie & Cotham Rds",
+        "Kew,"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "45-D6",
+      "phones": [],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Sacred Heart Kew"
+      },
+      "coordinates": {
+        "latitude": -37.8077,
+        "longitude": 145.0381
+      },
+      "published_details": [
+        "No Web-site listed"
+      ]
+    },
+    {
+      "id": "sacred-heart-oak",
+      "name": "Sacred Heart Oak.",
+      "address_lines": [
+        ","
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "-",
+      "phones": [],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Sacred Heart Oak."
+      },
+      "published_details": [
+        "No Web-site listed"
+      ]
+    },
+    {
+      "id": "sandringham",
+      "name": "Sandringham",
+      "address_lines": [
+        "92 Beach Road",
+        "Sandringham, 3191"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "76-F8",
+      "phones": [],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Sandringham"
+      },
+      "coordinates": {
+        "latitude": -37.9474,
+        "longitude": 145.0014
+      },
+      "published_details": [
+        "No Web-site listed",
+        "5 Mod Grass courts (5 under Lights)"
+      ]
+    },
+    {
+      "id": "scoresby",
+      "name": "Scoresby",
+      "address_lines": [
+        "Stud Road",
+        "Exner Reserve",
+        "Scoresby,"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "72-H7",
+      "phones": [],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Scoresby"
+      },
+      "coordinates": {
+        "latitude": -37.8973,
+        "longitude": 145.2324
+      },
+      "published_details": [
+        "No Web-site listed"
+      ]
+    },
+    {
+      "id": "springvale-north",
+      "name": "Springvale North",
+      "address_lines": [
+        ","
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "-",
+      "phones": [],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Springvale North"
+      },
+      "published_details": [
+        "No Web-site listed"
+      ]
+    },
+    {
+      "id": "st-andrews-mb",
+      "name": "St Andrews MB",
+      "address_lines": [
+        "35 St Andrews Street",
+        "Enter via laneway next to Duigan Centre",
+        "Brighton, 3186"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "67-D11",
+      "phones": [],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "St Andrews MB"
+      },
+      "coordinates": {
+        "latitude": -37.9117,
+        "longitude": 144.9936
+      },
+      "published_details": [
+        "No Web-site listed",
+        "3 Poly-Clay courts (3 under Lights)"
+      ]
+    },
+    {
+      "id": "st-anthony-s",
+      "name": "St Anthony's",
+      "address_lines": [
+        "Cnr Grange & Neerim Rds",
+        "Glenhuntly, 3163"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "68-G4",
+      "phones": [],
+      "contacts": [],
+      "websites": [
+        "https://www.statcglenhuntly.com"
+      ],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "St Anthony's"
+      },
+      "coordinates": {
+        "latitude": -37.8872,
+        "longitude": 145.0461
+      },
+      "published_details": [
+        "Web-site https://www.statcglenhuntly.com",
+        "2 Mod Grass courts (2 under Lights)"
+      ]
+    },
+    {
+      "id": "st-cecilia-s",
+      "name": "St Cecilia's",
+      "address_lines": [
+        "Cnr Hillside Pde & Van Ness Ave",
+        "Glen Iris,"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "60-A6",
+      "phones": [],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "St Cecilia's"
+      },
+      "coordinates": {
+        "latitude": -37.8494,
+        "longitude": 145.0639
+      },
+      "published_details": [
+        "No Web-site listed"
+      ]
+    },
+    {
+      "id": "st-finbar-s",
+      "name": "St Finbar's",
+      "address_lines": [
+        "Narrow Lane Off St Finbars Cresent",
+        "East Brighton, 3187"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "67-J12",
+      "phones": [],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "St Finbar's"
+      },
+      "coordinates": {
+        "latitude": -37.916,
+        "longitude": 145.015
+      },
+      "published_details": [
+        "No Web-site listed",
+        "2 Mod Grass courts"
+      ]
+    },
+    {
+      "id": "st-james",
+      "name": "St James",
+      "address_lines": [
+        "St James Close",
+        "Brighton,"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "67-E7",
+      "phones": [],
+      "contacts": [
+        {
+          "role": "Secretary",
+          "name": "Jonathon McKeown",
+          "phone": "",
+          "email": "jonathanmckeown@mac.com"
+        },
+        {
+          "role": "Junior Convenor",
+          "name": "Virginia Shedden",
+          "phone": "",
+          "email": "vshedden@researchink.com.au"
+        }
+      ],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "St James"
+      },
+      "coordinates": {
+        "latitude": -37.8982,
+        "longitude": 144.9971
+      },
+      "published_details": [
+        "No Web-site listed"
+      ]
+    },
+    {
+      "id": "st-joan-of-arc",
+      "name": "St Joan of Arc",
+      "address_lines": [
+        "3 Wallace Grove",
+        "Brighton,"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "76-E1",
+      "phones": [],
+      "contacts": [
+        {
+          "role": "Secretary",
+          "name": "Jonathon McKeon",
+          "phone": "",
+          "email": "jonathanmckeown@mac.com"
+        }
+      ],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "St Joan of Arc"
+      },
+      "coordinates": {
+        "latitude": -37.9204,
+        "longitude": 144.9943
+      },
+      "published_details": [
+        "No Web-site listed"
+      ]
+    },
+    {
+      "id": "st-johns",
+      "name": "St Johns",
+      "address_lines": [
+        "Cnr Foster & Murray Streets",
+        "Elsternwick,"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "67-J3",
+      "phones": [],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "St Johns"
+      },
+      "coordinates": {
+        "latitude": -37.8848,
+        "longitude": 145.0117
+      },
+      "published_details": [
+        "No Web-site listed",
+        "2 En-Tous-Cas courts"
+      ]
+    },
+    {
+      "id": "st-joseph-s-br",
+      "name": "St Joseph's BR",
+      "address_lines": [
+        ","
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "-",
+      "phones": [],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "St Joseph's BR"
+      },
+      "published_details": [
+        "No Web-site listed"
+      ]
+    },
+    {
+      "id": "st-kevin-s",
+      "name": "St Kevin's",
+      "address_lines": [
+        "74 Glen Orme Avenue",
+        "Ormond,"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "68-E9",
+      "phones": [],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "St Kevin's"
+      },
+      "coordinates": {
+        "latitude": -37.9053,
+        "longitude": 145.0389
+      },
+      "published_details": [
+        "No Web-site listed"
+      ]
+    },
+    {
+      "id": "st-leonard-s",
+      "name": "St Leonard's",
+      "address_lines": [
+        "Wolseley Grove",
+        "Brighton Beach, 3186"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "76-H3",
+      "phones": [],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "St Leonard's"
+      },
+      "coordinates": {
+        "latitude": -37.9265,
+        "longitude": 144.9954
+      },
+      "published_details": [
+        "No Web-site listed"
+      ]
+    },
+    {
+      "id": "st-louis-de-mont",
+      "name": "St Louis de Mont",
+      "address_lines": [
+        "37 Dolphin Street",
+        "Enter via gate left side of church",
+        "Aspendale, 3195"
+      ],
+      "mailing_address_lines": [
+        "3195",
+        ", 3195"
+      ],
+      "melway": "92-J4",
+      "phones": [],
+      "contacts": [
+        {
+          "role": "Junior/Senior Convenor",
+          "name": "Trish Angliss",
+          "phone": "0421604849",
+          "email": "trish.angliss@gmail.com"
+        }
+      ],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "St Louis de Mont"
+      },
+      "coordinates": {
+        "latitude": -38.019,
+        "longitude": 145.102
+      },
+      "published_details": [
+        "No Web-site listed",
+        "4 Mod Grass courts (4 under Lights)"
+      ]
+    },
+    {
+      "id": "st-mary-s",
+      "name": "St Mary's",
+      "address_lines": [
+        "Cnr Hayward Grv and Bendigo Street",
+        "Hampton, 3188"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "76-F4",
+      "phones": [],
+      "contacts": [
+        {
+          "role": "Secretary",
+          "name": "Darren Ellis",
+          "phone": "0488 888 633",
+          "email": "dellis13@yahoo.com"
+        }
+      ],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "St Mary's"
+      },
+      "coordinates": {
+        "latitude": -37.9325,
+        "longitude": 145.0009
+      },
+      "published_details": [
+        "No Web-site listed",
+        "2 Mod Grass courts"
+      ]
+    },
+    {
+      "id": "st-pats-mentone",
+      "name": "St Pats Mentone",
+      "address_lines": [
+        "Cnr Childer & Warrigal Road",
+        "Mentone, 3194"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "87-B6",
+      "phones": [
+        "9583 3965"
+      ],
+      "contacts": [
+        {
+          "role": "Secretary",
+          "name": "Catherine Boulton",
+          "phone": "0425784959",
+          "email": "stpatstc@yahoo.com"
+        }
+      ],
+      "websites": [
+        "https://stpatrickstcmentone.com/"
+      ],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "St Pats Mentone"
+      },
+      "coordinates": {
+        "latitude": -37.9835,
+        "longitude": 145.0708
+      },
+      "published_details": [
+        "Web-site https://stpatrickstcmentone.com/",
+        "4 Mod Grass courts (4 under Lights)"
+      ]
+    },
+    {
+      "id": "st-pauls",
+      "name": "St Pauls",
+      "address_lines": [
+        "Riddle Street",
+        "Bentleigh,"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "77-E2",
+      "phones": [],
+      "contacts": [
+        {
+          "role": "Secretary",
+          "name": "Ann Lloyd",
+          "phone": "",
+          "email": "stephenlloyd67@optusnet.com.au"
+        }
+      ],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "St Pauls"
+      },
+      "coordinates": {
+        "latitude": -37.9234,
+        "longitude": 145.0418
+      },
+      "published_details": [
+        "No Web-site listed"
+      ]
+    },
+    {
+      "id": "st-peter-s",
+      "name": "St Peter's",
+      "address_lines": [
+        "Dalriada Street",
+        "off Lansell Rd",
+        "Toorak,"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "2M-J7",
+      "phones": [],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "St Peter's"
+      },
+      "coordinates": {
+        "latitude": -37.8406,
+        "longitude": 145.0172
+      },
+      "published_details": [
+        "No Web-site listed"
+      ]
+    },
+    {
+      "id": "st-stephens",
+      "name": "St Stephens",
+      "address_lines": [
+        ","
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "-",
+      "phones": [],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "St Stephens"
+      },
+      "published_details": [
+        "No Web-site listed"
+      ]
+    },
+    {
+      "id": "stella-maris",
+      "name": "Stella Maris",
+      "address_lines": [
+        "Charlotte Avenue",
+        "Beaumaris, 3193"
+      ],
+      "mailing_address_lines": [
+        "PO BOX 6007",
+        "Beaumaris, 3193"
+      ],
+      "melway": "86-E6",
+      "phones": [],
+      "contacts": [],
+      "websites": [
+        "https://stellamaristennisclub.com.au"
+      ],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Stella Maris"
+      },
+      "coordinates": {
+        "latitude": -37.9814,
+        "longitude": 145.0397
+      },
+      "published_details": [
+        "Description",
+        "Mid-Week Convenor Gitte Vear 0432 384 422",
+        "Web-site https://stellamaristennisclub.com.au",
+        "4 En-Tous-Cas courts (4 under Lights)"
+      ]
+    },
+    {
+      "id": "sth-hawthorn",
+      "name": "Sth Hawthorn",
+      "address_lines": [
+        "Circular Driveway",
+        "Anderson Road",
+        "East Hawthorn, 3123"
+      ],
+      "mailing_address_lines": [
+        "P O Box 2012",
+        "Camberwell West, 3124"
+      ],
+      "melway": "59-G3",
+      "phones": [],
+      "contacts": [],
+      "websites": [
+        "https://southhawthorntennisclub.com.au"
+      ],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Sth Hawthorn"
+      },
+      "coordinates": {
+        "latitude": -37.838,
+        "longitude": 145.048
+      },
+      "published_details": [
+        "Web-site https://southhawthorntennisclub.com.au",
+        "2 En-Tous-Cas courts",
+        "2 Poly-Clay courts",
+        "2 Mod Grass courts"
+      ]
+    },
+    {
+      "id": "sth-murrumbeena",
+      "name": "Sth Murrumbeena",
+      "address_lines": [
+        "Rear of 5 Dalny Road",
+        "Murrumbeena,"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "69-A8",
+      "phones": [],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Sth Murrumbeena"
+      },
+      "coordinates": {
+        "latitude": -37.9019,
+        "longitude": 145.0666
+      },
+      "published_details": [
+        "No Web-site listed",
+        "6 Mod Grass courts"
+      ]
+    },
+    {
+      "id": "tally-ho",
+      "name": "Tally Ho",
+      "address_lines": [
+        "Bennett Aveue",
+        "Tally Ho Reserve",
+        "Mt Waverley, 3149"
+      ],
+      "mailing_address_lines": [
+        "PO Box 3091",
+        "Syndal, 3149"
+      ],
+      "melway": "61-J9",
+      "phones": [
+        "9803 8436"
+      ],
+      "contacts": [],
+      "websites": [
+        "https://play.tennis.com.au/tallyhotennisclub"
+      ],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Tally Ho"
+      },
+      "coordinates": {
+        "latitude": -37.8625,
+        "longitude": 145.1445
+      },
+      "published_details": [
+        "Web-site https://play.tennis.com.au/tallyhotennisclub",
+        "7 Plexicushion courts (7 under Lights)"
+      ]
+    },
+    {
+      "id": "tennis-world",
+      "name": "Tennis World",
+      "address_lines": [
+        "46 Queens Rd, Melbourne VIC 3004",
+        "Enter via Hannah St",
+        "Melbourne,"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "2L-A8",
+      "phones": [],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Tennis World"
+      },
+      "coordinates": {
+        "latitude": -37.844,
+        "longitude": 144.9783
+      },
+      "published_details": [
+        "No Web-site listed",
+        "8 Plexicushion courts"
+      ]
+    },
+    {
+      "id": "tyabb",
+      "name": "Tyabb",
+      "address_lines": [
+        "1475 Frankston-Flinders Road",
+        "Tyabb,"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "148-J9",
+      "phones": [],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Tyabb"
+      },
+      "coordinates": {
+        "latitude": -38.2566,
+        "longitude": 145.1914
+      },
+      "published_details": [
+        "No Web-site listed",
+        "4 En-Tous-Cas courts (4 under Lights)"
+      ]
+    },
+    {
+      "id": "upper-beaconsfield",
+      "name": "Upper Beaconsfield",
+      "address_lines": [
+        ","
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "-",
+      "phones": [],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Upper Beaconsfield"
+      },
+      "published_details": [
+        "No Web-site listed"
+      ]
+    },
+    {
+      "id": "vermont-south",
+      "name": "Vermont South",
+      "address_lines": [
+        ","
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "-",
+      "phones": [],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Vermont South"
+      },
+      "published_details": [
+        "No Web-site listed"
+      ]
+    },
+    {
+      "id": "victory-park",
+      "name": "Victory Park",
+      "address_lines": [
+        "End Charlton Street",
+        "(Off Brewer Road)",
+        "Bentleigh, 3204"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "77-C2",
+      "phones": [
+        "0401 639 661"
+      ],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Victory Park"
+      },
+      "coordinates": {
+        "latitude": -37.922,
+        "longitude": 145.031
+      },
+      "published_details": [
+        "No Web-site listed",
+        "4 En-Tous-Cas courts (4 under Lights)"
+      ]
+    },
+    {
+      "id": "wattle",
+      "name": "Wattle",
+      "address_lines": [
+        "1 Arthur St",
+        "Bentleigh,"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "77-E1",
+      "phones": [
+        "0407 282 083"
+      ],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Wattle"
+      },
+      "coordinates": {
+        "latitude": -37.921,
+        "longitude": 145.0419
+      },
+      "published_details": [
+        "No Web-site listed",
+        "6 En-Tous-Cas courts (4 under Lights)"
+      ]
+    },
+    {
+      "id": "wellington",
+      "name": "Wellington",
+      "address_lines": [
+        "Rupert Drive",
+        ","
+      ],
+      "mailing_address_lines": [
+        "Mulgrave,"
+      ],
+      "melway": "80-F4",
+      "phones": [],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Wellington"
+      },
+      "coordinates": {
+        "latitude": -37.9328,
+        "longitude": 145.1782
+      },
+      "published_details": [
+        "No Web-site listed"
+      ]
+    },
+    {
+      "id": "westall",
+      "name": "Westall",
+      "address_lines": [
+        "136 Osborne Avenue",
+        "via Westall Road",
+        "Clayton South, 3169"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "79-F8",
+      "phones": [],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Westall"
+      },
+      "coordinates": {
+        "latitude": -37.9453,
+        "longitude": 145.134
+      },
+      "published_details": [
+        "No Web-site listed"
+      ]
+    },
+    {
+      "id": "williamstown",
+      "name": "Williamstown",
+      "address_lines": [
+        "Morris Street",
+        "Williamstown, 3016"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "56-D12",
+      "phones": [],
+      "contacts": [
+        {
+          "role": "Secretary",
+          "name": "Melissa Rutze",
+          "phone": "0403 945 330",
+          "email": "melissa_kidd@hotmail.com"
+        }
+      ],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Williamstown"
+      },
+      "coordinates": {
+        "latitude": -37.8709,
+        "longitude": 144.9024
+      },
+      "published_details": [
+        "No Web-site listed"
+      ]
+    },
+    {
+      "id": "willy-central",
+      "name": "Willy Central",
+      "address_lines": [
+        "Dennis Reserve",
+        "Cnr Ferguson St and Melbourne Road",
+        "Williamstown, 3016"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "55-B7",
+      "phones": [],
+      "contacts": [],
+      "websites": [],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Willy Central"
+      },
+      "coordinates": {
+        "latitude": -37.86,
+        "longitude": 144.8953
+      },
+      "published_details": [
+        "No Web-site listed",
+        "2 Mod Grass courts"
+      ]
+    },
+    {
+      "id": "yamala",
+      "name": "Yamala",
+      "address_lines": [
+        "Cnr Ithaca Rd & Bowes St",
+        "Frankston South, 3199"
+      ],
+      "mailing_address_lines": [
+        ","
+      ],
+      "melway": "101-J8",
+      "phones": [],
+      "contacts": [
+        {
+          "role": "Secretary",
+          "name": "Laraine Cunningham",
+          "phone": "0412 774 632",
+          "email": "secretary@yamalaparktc.org.au"
+        },
+        {
+          "role": "Senior Convenor",
+          "name": "Dan Swords",
+          "phone": "0417 889 042",
+          "email": "seniors@yamalaparktc.org.au"
+        }
+      ],
+      "websites": [
+        "https://www.yamalaparktc.org.au"
+      ],
+      "source": {
+        "url": "https://www.trols.org.au/brta/clubs.php",
+        "club": "Yamala"
+      },
+      "coordinates": {
+        "latitude": -38.1664,
+        "longitude": 145.1041
+      },
+      "published_details": [
+        "Web-site https://www.yamalaparktc.org.au",
+        "2 En-Tous-Cas courts",
+        "2 Mod Grass courts (2 under Lights)"
+      ]
+    }
+  ]
+}

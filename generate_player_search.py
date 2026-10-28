@@ -70,8 +70,88 @@ def build_player_search(catalog: dict, root: Path = Path('.')) -> dict:
             'unavailableSections': unavailable}
 
 
+def build_rating_search(catalog: dict, root: Path = Path('.')) -> dict:
+    result = {view: [] for view in ('singles', 'doublesPlayers', 'pairs', 'overall')}
+    for season in catalog.get('seasons', []):
+        if season['competition_code'] not in ('AA', 'UA'):
+            continue
+        for section in season.get('sections', []):
+            path = root / section.get('data_path', '__missing__')
+            if not path.is_file():
+                continue
+            data = json.loads(path.read_text())
+            context = {'sectionCode': section['section_code'], 'sectionLabel': section['section_label'],
+                       'seasonKey': season['id'], 'seasonLabel': season['season_label'],
+                       'competitionLabel': season['competition_label']}
+            sm = {r['player']: r for r in data.get('singles', [])}
+            dm = {r['player']: r for r in data.get('doublesIndividuals', [])}
+            groups = {'singles': data.get('singles', []), 'doublesPlayers': data.get('doublesIndividuals', []), 'pairs': data.get('doubles', [])}
+            groups['overall'] = []
+            for name in sm.keys() | dm.keys():
+                a, b = sm.get(name, {}), dm.get(name, {})
+                rating = round((a['rating'] + b['rating']) / 2) if a and b else (a or b)['rating']
+                row = {'player': name, 'team': (a or b).get('team', ''), 'rating': rating,
+                       'qualified': bool(a.get('matches', 0) >= 4 and b.get('qualified'))}
+                for field in ('wins', 'losses', 'gf', 'ga'):
+                    row[field] = (a.get(field) or 0) + (b.get(field) or 0)
+                groups['overall'].append(row)
+            for view, rows in groups.items():
+                for r in rows:
+                    qualified = r.get('qualified', False) if view in ('overall', 'doublesPlayers') else r.get('matches', 0) >= (2 if view == 'pairs' else 4)
+                    result[view].append({**context, **{k: r.get(k) for k in ('player', 'team', 'rating', 'wins', 'losses', 'gf', 'ga')}, 'qualified': qualified})
+    return result
+
+
+def rating_candidates(groups):
+    """Only extremes are needed by commands; retain all ties for singular queries."""
+    result = {}
+    for cohort in ('ranked', 'all'):
+        result[cohort] = {}
+        for view, values in groups.items():
+            rows = [r for r in values if cohort == 'all' or r['qualified']]
+            selected = {}
+            for metric in ('rating', 'record', 'games'):
+                for direction in (-1, 1):
+                    def key(r):
+                        if metric == 'rating':
+                            return (r['rating'],)
+                        if metric == 'record':
+                            total = (r.get('wins') or 0) + (r.get('losses') or 0)
+                            return ((r.get('wins') or 0) / total, (r.get('wins') or 0) if direction == -1 else -(r.get('losses') or 0)) if total else None
+                        total = (r.get('gf') or 0) + (r.get('ga') or 0)
+                        return ((r.get('gf') or 0) / total,) if total else None
+                    candidates = sorted((r for r in rows if r.get('rating') is not None and key(r) is not None), key=key, reverse=direction == -1)
+                    if candidates:
+                        top = key(candidates[0])
+                        for i, r in enumerate(candidates):
+                            if i >= 10 and key(r) != top:
+                                break
+                            selected[(r['seasonKey'], r['sectionCode'], r['player'], r.get('team'))] = r
+            result[cohort][view] = list(selected.values())
+    return result
+
+
+def compact_rating_candidates(candidates):
+    sections, section_ids = [], {}
+    result = {'version': 1, 'sections': sections}
+    for cohort, groups in candidates.items():
+        result[cohort] = {}
+        for view, rows in groups.items():
+            output = []
+            for row in rows:
+                key = (row['seasonKey'], row['sectionCode'])
+                if key not in section_ids:
+                    section_ids[key] = len(sections)
+                    sections.append({k: row.get(k) for k in ('seasonKey', 'sectionCode', 'sectionLabel', 'competitionLabel', 'seasonLabel')})
+                output.append([section_ids[key]] + [row.get(k) for k in ('player','team','rating','wins','losses','gf','ga','qualified')])
+            result[cohort][view] = output
+    return result
+
+
 def write_player_search(catalog: dict) -> dict:
     index = build_player_search(catalog)
+    INDEX_PATH.parent.mkdir(parents=True, exist_ok=True)
+    (INDEX_PATH.parent / 'rating-search.json').write_text(json.dumps(compact_rating_candidates(rating_candidates(build_rating_search(catalog))), ensure_ascii=False, separators=(',', ':')) + '\n', encoding='utf-8')
     INDEX_PATH.parent.mkdir(parents=True, exist_ok=True)
     INDEX_PATH.write_text(json.dumps(index, ensure_ascii=False, separators=(',', ':')) + '\n', encoding='utf-8')
     print(f"Player search: {len(index['players'])} names, {len(index['sections'])} sections, "
