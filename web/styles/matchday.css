@@ -16,3 +16,4 @@
 @media(max-width:760px){.rounds821-overlay .rounds82-grid{grid-template-columns:1fr}.rounds821-overlay .rounds82-panel+section{padding:20px 0 0;border-left:0;border-top:1px solid var(--border-color)}.calendar821-day{min-height:70px;padding:3px}.calendar821-event{font-size:9px;padding:4px 2px}.share82-preview{height:38dvh;min-height:200px}.share82-preview canvas{max-width:none;max-height:none}.main-nav .main-tab{font-size:clamp(10px,3vw,13px)}}
 
 .calendar821-day{min-height:64px}.calendar821-detail{text-align:left}.rounds821-overlay #roundsContext{text-align:left}
+@media(max-width:760px){.calendar821-event{min-height:34px}.calendar821-event span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;overflow-wrap:normal}.calendar821-toolbar{justify-content:center;gap:14px}.calendar821-toolbar h3{font-size:16px}}
