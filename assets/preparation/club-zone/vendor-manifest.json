@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "prepared_at_utc": "2026-10-29T05:51:23.041381+00:00",
+  "activation": "Unloaded preparation assets. No homepage, account, navigation or Club Zone feature is enabled.",
+  "packages": [
+    {
+      "name": "leaflet",
+      "version": "1.9.4",
+      "license": "BSD-2-Clause",
+      "upstream": "https://github.com/Leaflet/Leaflet",
+      "archive_url": "https://registry.npmjs.org/leaflet/-/leaflet-1.9.4.tgz",
+      "archive_integrity": "sha512-nxS1ynzJOmOlHp+iL3FyWqK89GtNL8U8rvlMOsQdTTssxZwCXh8N2NB3GDQOL+YR3XnWyZAxwQixURb+FA74PA==",
+      "files": [
+        {
+          "path": "web/vendor/leaflet/LICENSE",
+          "package_path": "LICENSE",
+          "bytes": 1369,
+          "sha256": "bbc959aaef7488b38942e7f05cfd1244351f8bce54261951ea17dd7cf60f894b",
+          "source_sha256": "53e8dc25862014e4324741ca18fbe3611e11d42ef69f59f86ea8c5389647d4cb",
+          "normalization": "CRLF to LF; trailing horizontal whitespace removed. No code or licence text changed."
+        },
+        {
+          "path": "web/vendor/leaflet/leaflet.css",
+          "package_path": "dist/leaflet.css",
+          "bytes": 14145,
+          "sha256": "337bfca5cabd03b39815b2700febe2b3b7edf55921c59cd49f88ecb328212303",
+          "source_sha256": "a7837102824184820dfa198d1ebcd109ff6d0ff9a2672a074b9a1b4d147d04c6",
+          "normalization": "CRLF to LF; trailing horizontal whitespace removed. No code or licence text changed."
+        },
+        {
+          "path": "web/vendor/leaflet/images/layers-2x.png",
+          "package_path": "dist/images/layers-2x.png",
+          "bytes": 1259,
+          "sha256": "066daca850d8ffbef007af00b06eac0015728dee279c51f3cb6c716df7c42edf"
+        },
+        {
+          "path": "web/vendor/leaflet/images/layers.png",
+          "package_path": "dist/images/layers.png",
+          "bytes": 696,
+          "sha256": "1dbbe9d028e292f36fcba8f8b3a28d5e8932754fc2215b9ac69e4cdecf5107c6"
+        },
+        {
+          "path": "web/vendor/leaflet/images/marker-icon-2x.png",
+          "package_path": "dist/images/marker-icon-2x.png",
+          "bytes": 2464,
+          "sha256": "00179c4c1ee830d3a108412ae0d294f55776cfeb085c60129a39aa6fc4ae2528"
+        },
+        {
+          "path": "web/vendor/leaflet/images/marker-icon.png",
+          "package_path": "dist/images/marker-icon.png",
+          "bytes": 1466,
+          "sha256": "574c3a5cca85f4114085b6841596d62f00d7c892c7b03f28cbfa301deb1dc437"
+        },
+        {
+          "path": "web/vendor/leaflet/images/marker-shadow.png",
+          "package_path": "dist/images/marker-shadow.png",
+          "bytes": 618,
+          "sha256": "264f5c640339f042dd729062cfc04c17f8ea0f29882b538e3848ed8f10edb4da"
+        },
+        {
+          "path": "web/vendor/leaflet/leaflet.js",
+          "package_path": "dist/leaflet.js",
+          "bytes": 147552,
+          "sha256": "db49d009c841f5ca34a888c96511ae936fd9f5533e90d8b2c4d57596f4e5641a"
+        }
+      ]
+    },
+    {
+      "name": "leaflet.markercluster",
+      "version": "1.5.3",
+      "license": "MIT",
+      "upstream": "https://github.com/Leaflet/Leaflet.markercluster",
+      "archive_url": "https://registry.npmjs.org/leaflet.markercluster/-/leaflet.markercluster-1.5.3.tgz",
+      "archive_integrity": "sha512-vPTw/Bndq7eQHjLBVlWpnGeLa3t+3zGiuM7fJwCkiMFq+nmRuG3RI3f7f4N4TDX7T4NpbAXpR2+NTRSEGfCSeA==",
+      "files": [
+        {
+          "path": "web/vendor/leaflet-markercluster/MIT-LICENCE.txt",
+          "package_path": "MIT-LICENCE.txt",
+          "bytes": 1052,
+          "sha256": "3133dacd38250bd1f524d8166cc60a016a382522e062fce143691c65bf5e4b3d"
+        },
+        {
+          "path": "web/vendor/leaflet-markercluster/MarkerCluster.css",
+          "package_path": "dist/MarkerCluster.css",
+          "bytes": 872,
+          "sha256": "614dea0a98ff3f4ead74f04918f6b1d1b9ba435c25b5fc23b21a394d1e3e4d87"
+        },
+        {
+          "path": "web/vendor/leaflet-markercluster/MarkerCluster.Default.css",
+          "package_path": "dist/MarkerCluster.Default.css",
+          "bytes": 1287,
+          "sha256": "61258232d98d64dc2a7b1e02130d67421bc5b9bda5994eef70228ff97570c170"
+        },
+        {
+          "path": "web/vendor/leaflet-markercluster/leaflet.markercluster.js",
+          "package_path": "dist/leaflet.markercluster.js",
+          "bytes": 34136,
+          "sha256": "1e4e1d22972a3926f48598e0caf14e3fe7049835d428a344fed4f9e3665b3508"
+        }
+      ]
+    }
+  ]
+}
