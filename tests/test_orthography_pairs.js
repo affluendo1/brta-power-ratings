@@ -9,6 +9,8 @@ for(const name of ['Anne Anne / Anne Anne','Ashleigh Lee / Anna Brown','李 明 
  for(const m of a.members){assert.equal(m.score,M.analyse(m.name).score);assert.deepEqual(m.composition,M.analyse(m.name).composition)}
  assert.equal(a.quadgraphs.reduce((n,p)=>n+p.points,0),a.parts.filter(p=>p.key==='quadgraphs').reduce((n,p)=>n+p.points,0));
 }
+const summary=M.createSummaryScorer();
+for(const name of ['Zane / Bob','Ashleigh Lee / Anna Brown','李 明 / José Silva']){const full=M.analysePair(name),small=summary(name,true);for(const key of ['score','letters','tileValue','spaces'])assert.equal(small[key],full[key]);for(const key of ['digraphs','trigraphs','quadgraphs'])assert.equal(small[key].length,full[key].length)}
 const rows=M.rank([{player:'Zane / Bob',team:'A'},{player:'Bob / Zane',team:'B'},{player:'Al / Al',team:'C'}],M.analysePair);
 assert.equal(rows[0].rank,1);assert.equal(rows[1].rank,1);assert.equal(rows[2].rank,3);
 assert.equal(M.highest(rows).length,2);

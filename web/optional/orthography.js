@@ -83,7 +83,10 @@
  result.combinations={common:members.flatMap(m=>m.combinations.common)};return result;
  }
  function pairScope(scope='section'){return ['section','all','history'].includes(scope)?scope:'section'}
+ // Tables need counts, not a full points ledger for every archived partnership.
+ // Score each distinct member once and build detailed analyses only on demand.
+ function createSummaryScorer(){const cache=new Map();const single=name=>{if(!cache.has(name)){const a=analyse(name),s={};for(const key of ['score','letters','tileValue','spaces'])s[key]=a[key];for(const key of ['digraphs','trigraphs','quadgraphs'])s[key]={length:a[key].length};cache.set(name,s)}return cache.get(name)};return(name,pair=false)=>{if(!pair)return single(name);const members=String(name).split(/\s*\/\s*/).map(single),s={};for(const key of ['score','letters','tileValue','spaces'])s[key]=members.reduce((n,m)=>n+m[key],0);for(const key of ['digraphs','trigraphs','quadgraphs'])s[key]={length:members.reduce((n,m)=>n+m[key].length,0)};return s}}
  function highest(rows){return rows.filter(r=>r.rating===rows[0]?.rating)}
  function rank(rows,analyser=analyse){let prior=null,place=0;return rows.map(row=>({...row,analysis:analyser(row.player)})).sort((a,b)=>b.analysis.score-a.analysis.score||a.player.localeCompare(b.player)).map((row,i)=>{if(row.analysis.score!==prior)place=i+1;prior=row.analysis.score;return {...row,rating:row.analysis.score,rank:place}})}
- const api={tiles,digraphs,trigraphs,quadgraphs,commonPairs,bandNames,normalise,analyse,analysePair,pairScope,highest,rank};root.BRTAOrthography=api;if(typeof module!=='undefined')module.exports=api;
+ const api={tiles,digraphs,trigraphs,quadgraphs,commonPairs,bandNames,normalise,analyse,analysePair,pairScope,createSummaryScorer,highest,rank};root.BRTAOrthography=api;if(typeof module!=='undefined')module.exports=api;
 })(typeof window==='undefined'?globalThis:window);
