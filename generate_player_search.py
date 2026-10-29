@@ -82,7 +82,8 @@ def build_rating_search(catalog: dict, root: Path = Path('.')) -> dict:
             data = json.loads(path.read_text())
             context = {'sectionCode': section['section_code'], 'sectionLabel': section['section_label'],
                        'seasonKey': season['id'], 'seasonLabel': season['season_label'],
-                       'competitionLabel': season['competition_label']}
+                       'competitionLabel': season['competition_label'], 'competitionCode': season['competition_code'],
+                       'seasonId': season['season_id'], 'isCurrent': bool(season.get('is_current')), 'dataPath': section.get('data_path')}
             sm = {r['player']: r for r in data.get('singles', [])}
             dm = {r['player']: r for r in data.get('doublesIndividuals', [])}
             groups = {'singles': data.get('singles', []), 'doublesPlayers': data.get('doublesIndividuals', []), 'pairs': data.get('doubles', [])}
@@ -98,7 +99,7 @@ def build_rating_search(catalog: dict, root: Path = Path('.')) -> dict:
             for view, rows in groups.items():
                 for r in rows:
                     qualified = r.get('qualified', False) if view in ('overall', 'doublesPlayers') else r.get('matches', 0) >= (2 if view == 'pairs' else 4)
-                    result[view].append({**context, **{k: r.get(k) for k in ('player', 'team', 'rating', 'wins', 'losses', 'gf', 'ga')}, 'qualified': qualified})
+                    result[view].append({**context, **{k: r.get(k) for k in ('player', 'team', 'rating', 'wins', 'losses', 'gf', 'ga', 'matches', 'se', 'pairEffect', 'individualAverage')}, 'qualified': qualified})
     return result
 
 
@@ -148,10 +149,24 @@ def compact_rating_candidates(candidates):
     return result
 
 
+def compact_complete_rows(rows):
+    sections, ids, entries = [], {}, []
+    for row in rows:
+        key=(row['seasonKey'],row['sectionCode'])
+        if key not in ids:
+            ids[key]=len(sections)
+            sections.append({k:row.get(k) for k in ('sectionCode','sectionLabel','seasonKey','seasonId','seasonLabel','competitionCode','competitionLabel','isCurrent','dataPath')})
+        entries.append([ids[key]]+[row.get(k) for k in ('player','team','rating','wins','losses','gf','ga','matches','se','qualified','pairEffect','individualAverage')])
+    return {'version':1,'sections':sections,'entries':entries}
+
+
 def write_player_search(catalog: dict) -> dict:
     index = build_player_search(catalog)
     INDEX_PATH.parent.mkdir(parents=True, exist_ok=True)
-    (INDEX_PATH.parent / 'rating-search.json').write_text(json.dumps(compact_rating_candidates(rating_candidates(build_rating_search(catalog))), ensure_ascii=False, separators=(',', ':')) + '\n', encoding='utf-8')
+    groups=build_rating_search(catalog)
+    for view, filename in [('pairs','pair-search.json'),('singles','singles-search.json')]:
+        (INDEX_PATH.parent/filename).write_text(json.dumps(compact_complete_rows(groups[view]),ensure_ascii=False,separators=(',',':'))+'\n',encoding='utf-8')
+    (INDEX_PATH.parent / 'rating-search.json').write_text(json.dumps(compact_rating_candidates(rating_candidates(groups)), ensure_ascii=False, separators=(',', ':')) + '\n', encoding='utf-8')
     INDEX_PATH.parent.mkdir(parents=True, exist_ok=True)
     INDEX_PATH.write_text(json.dumps(index, ensure_ascii=False, separators=(',', ':')) + '\n', encoding='utf-8')
     print(f"Player search: {len(index['players'])} names, {len(index['sections'])} sections, "

@@ -1,6 +1,6 @@
 # BRTA Power Ratings
 
-**Current version: 8.2.1.2**
+**Current version: 8.2.2**
 
 Returning visitors see the changelog once after a newer release. The Ratings
 star opens Following management, including the followed-player filter.
@@ -484,3 +484,36 @@ Generated datasets are ignored by git and do not change the live site's menus.
 `python -m scraper.probe_associations --association wdta` remains available for
 quick selector-only inspection. See `internal/association/trols-expansion.md`
 for source differences and the boundary between collection and rating integration.
+
+### 8.2.2 — partnerships, cards and club foundations
+
+Doubles pairs support section, all-section and historical searches. Search either
+partner, then open the partnership in its original section and season. Optional
+ratings views keep their selected model when filtering by team.
+
+Share-card previews and PNG downloads support five system fonts and four aspect
+ratios. Landscape uses a two-column match layout; square, portrait and story cards
+use their own spacing. Player and team cards follow the same chosen presentation.
+
+Team Explorer sits alongside the selected team's lineup and opens its fixtures
+without leaving Teams. Prediction Centre uses the compact squad/pair checkbox
+style from Custom Section Creator; projected players and partnerships open labs.
+
+Club logistics preparation joins `data/current/club-directory.json` and fixture
+observations into `data/current/club-foundation.json`. Club, team and venue IDs
+are separate. Reviewed aliases, source provenance, unknown facility fields,
+multiple-ground review flags and fixture-specific venue overrides are preserved.
+The opt-in BRTA pilot (`?club-pilot=1`) uses a lazy map and an accessible club list,
+with separate Logistics and Past stats tabs. It does not enable the general Club
+Zone rollout or accounts. Existing historical club statistics remain the source
+for the pilot's Past stats view; generated venue data does not rewrite history.
+
+Unlocked Black + has an accent control in normal Display settings. Kâvąc mode
+has a floating translator for loaded site text and names. Optional-view additions
+remain deliberately vague in the public changelog.
+
+Additional regression suite:
+
+```sh
+NODE_PATH=/tmp/brta-ui-tests/node_modules node tests/browser/refinement.cjs
+```

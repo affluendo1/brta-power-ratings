@@ -19,12 +19,27 @@
       return output;
     });
   }
-  function translate(value,isName=false){
+  function translateCore(value,isName=false){
     return String(value).split(/(\b(?:Sid Basa|Siddharth(?: R\.)? Basa)\b)/gi).map(part=>/^(?:Sid Basa|Siddharth(?: R\.)? Basa)$/i.test(part)?part:isName?name(part):part.replace(/[\p{L}\p{M}]+|\d/gu,word=>{
       if(/^\d$/.test(word))return numerals[Number(word)];
       if(!dictionary.has(word)){let h=hash(word.toLowerCase()),out='';for(let i=0;i<Math.max(1,Math.ceil(word.length/2));i++){out+=syllables[h%syllables.length];h=Math.imul(h^i,2246822519)>>>0}dictionary.set(word,out)}
       return dictionary.get(word);
     })).join('');
+  }
+  const reverseWords=new Map(),reverseNames=new Map(),reversePhrases=new Map();
+  function register(value,isName=false){
+    const input=String(value),output=translateCore(input,isName),target=isName?reverseNames:reverseWords;
+    const from=input.match(/[\p{L}\p{M}]+|\d/gu)||[],to=output.match(/[\p{L}\p{M}]+|[£$%&¤§¥€¢¶]/gu)||[];
+    if(isName)reverseNames.set(output,input);
+    else if(from.length===to.length)from.forEach((word,i)=>{if(!target.has(to[i]))target.set(to[i],word)});
+    reversePhrases.set(output,input);if(reversePhrases.size>20000)reversePhrases.delete(reversePhrases.keys().next().value);
+    return output;
+  }
+  function translate(value,isName=false){return register(value,isName)}
+  function toEnglish(value,includeNames=false){
+    let input=String(value);if(reversePhrases.has(input)&&(!reverseNames.has(input)||includeNames))return reversePhrases.get(input);
+    if(includeNames)for(const [encoded,plain]of [...reverseNames].sort((a,b)=>b[0].length-a[0].length))input=input.split(encoded).join(plain);
+    return input.replace(/[\p{L}\p{M}]+|[£$%&¤§¥€¢¶]/gu,word=>reverseWords.get(word)??(numerals.includes(word)?String(numerals.indexOf(word)):word));
   }
   function shuffled(items,random=Math.random){const result=items.slice();for(let i=result.length-1;i>0;i--){const j=Math.floor(random()*(i+1));[result[i],result[j]]=[result[j],result[i]]}return result}
   function pressure(value){const number=Number(value);return Number.isFinite(number)?Math.max(.01,Math.min(2.01,Math.round(number*100)/100)):1}
@@ -55,6 +70,6 @@
     {text:'As a final measure, this confirmation is different. We just want to make sure you are a human. Clicking [I CONFIRM] results in you cancelling your confirmation, and clicking [I CANCEL MY CONFIRMATION] will confirm your cancellation.',yes:'I CONFIRM',no:'I CANCEL MY CONFIRMATION'},
     {text:'Great! You’ve cancelled your confirmation.',yes:'OKAY'}
   ];
-  const api={alphabet,glyphs,numerals,translate,name,shuffled,pressure,rates,progressPlan,progressAt,cupWin,cupPoint,cupPath,cupOrbit,confirmations};
+  const api={alphabet,glyphs,numerals,translate,toEnglish,register,name,shuffled,pressure,rates,progressPlan,progressAt,cupWin,cupPoint,cupPath,cupOrbit,confirmations};
   root.AmbientParameters=api;if(typeof module!=='undefined')module.exports=api;
 })(typeof window!=='undefined'?window:globalThis);

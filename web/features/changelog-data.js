@@ -1,6 +1,17 @@
 // Website releases, newest first. Routine result checks are not website releases.
 window.BRTA_RELEASES = Object.freeze([
 {
+  "version": "8.2.2",
+  "size": "small",
+  "committedAt": "2026-10-29T11:26:03.149254+00:00",
+  "changes": [
+    "Search doubles partnerships across sections and history.",
+    "Redesigned share cards with font choices and layouts for each format.",
+    "Refined lineup selection and added Team Explorer.",
+    "Prepared club and venue information, and expanded extras."
+  ]
+},
+{
   "version": "8.2.1.2",
   "size": "tiny",
   "committedAt": "2026-10-29T05:07:12.198030+00:00",

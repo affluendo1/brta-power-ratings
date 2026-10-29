@@ -82,7 +82,7 @@
  for(const key of ['digraphs','trigraphs','quadgraphs'])result[key]=members.flatMap(m=>m[key]);
  result.combinations={common:members.flatMap(m=>m.combinations.common)};return result;
  }
- function pairScope(){return 'section'}
+ function pairScope(scope='section'){return ['section','all','history'].includes(scope)?scope:'section'}
  function highest(rows){return rows.filter(r=>r.rating===rows[0]?.rating)}
  function rank(rows,analyser=analyse){let prior=null,place=0;return rows.map(row=>({...row,analysis:analyser(row.player)})).sort((a,b)=>b.analysis.score-a.analysis.score||a.player.localeCompare(b.player)).map((row,i)=>{if(row.analysis.score!==prior)place=i+1;prior=row.analysis.score;return {...row,rating:row.analysis.score,rank:place}})}
  const api={tiles,digraphs,trigraphs,quadgraphs,commonPairs,bandNames,normalise,analyse,analysePair,pairScope,highest,rank};root.BRTAOrthography=api;if(typeof module!=='undefined')module.exports=api;

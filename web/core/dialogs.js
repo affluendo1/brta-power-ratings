@@ -29,6 +29,7 @@
   new MutationObserver(sync).observe(document.body,{subtree:true,childList:true,attributes:true,attributeFilter:['class']});
   root.addEventListener('focusin',event=>{const overlay=event.target.closest?.('.overlay');if(overlay&&!opened.has(overlay)&&!focusCandidates.has(overlay))focusCandidates.set(overlay,previousFocus);previousFocus=event.target;},true);
   root.addEventListener('keydown',event=>{
+    if(event.target.closest?.('[data-floating-translator]'))return;
     const transition=document.querySelector('#modeSwitchOverlay:not(.hidden)');if(transition&&event.key==='Escape'){event.preventDefault();event.stopImmediatePropagation();return}const overlay=top();if(!overlay)return;
     // These scenes have their own keyboard controls, including the narrator.
     if(overlay.id==='moreSettingsOverlay'){if(event.key==='Escape'){event.preventDefault();event.stopImmediatePropagation();callbacks.get(overlay.id)?.()}return;}

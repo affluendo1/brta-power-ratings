@@ -21,10 +21,12 @@ if __package__:
     from .club_information import parse_club_information, build_club_network
     from .club_directory import collect_directory
     from .trols_sources import ASSOCIATIONS
+    from .club_foundation import build_foundation
 else:
     from club_information import parse_club_information, build_club_network
     from club_directory import collect_directory
     from trols_sources import ASSOCIATIONS
+    from club_foundation import build_foundation
 
 BASE = ASSOCIATIONS["brta"].base_url
 RESULTS_URL = urljoin(BASE, "results.php")
@@ -62,7 +64,7 @@ FIXTURE_FIELDS = [
     "home_points", "away_points", "home_rubbers", "away_rubbers",
     "home_sets", "away_sets", "home_games", "away_games", "status", "notes",
 ]
-DRAW_FIELDS = ["draw_id", "date", "round", "stage", "round_label", "home_team", "away_team", "fixture_id", "start_time", "venue"]
+DRAW_FIELDS = ["draw_id", "date", "round", "stage", "round_label", "home_team", "away_team", "fixture_id", "start_time", "venue", "venue_override"]
 SINGLES_FIELDS = [
     "fixture_id", "date", "round", "home_team", "away_team", "position",
     "home_player", "away_player", "winning_player", "score", "home_games",
@@ -85,7 +87,7 @@ def clean_text(value: str) -> str:
 
 def clean_team(value: str) -> str:
     value = unicodedata.normalize("NFKC", clean_text(value))
-    value = re.sub(r"\s+Playing\s+@.*$", "", value, flags=re.I)
+    value = re.sub(r"\s+Playing\s*(?:@|at\b)\s*.*$", "", value, flags=re.I)
     # Some scorecards append both a team suffix and its scheduled venue, e.g.
     # "Mentone (DTC) (10:00) Playing @ Dingley". Remove every trailing
     # parenthetical annotation, not just the final time annotation.
@@ -571,7 +573,8 @@ def parse_draw_page(html: str, section_code: str) -> list[dict]:
                      "date": date, "round": round_no, "stage": "regular", "round_label": f"Round {round_no}",
                      "home_team": home, "away_team": away, "fixture_id": "",
                      "start_time": (re.search(r"\((\d{1,2}:\d{2}(?:\s*[ap]m)?)\)", cells[2], re.I).group(1) if re.search(r"\((\d{1,2}:\d{2}(?:\s*[ap]m)?)\)", cells[2], re.I) else ""),
-                     "venue": (clean_team(re.split(r"Playing\s*@", cells[2], flags=re.I)[-1]) if re.search(r"Playing\s*@", cells[2], re.I) else home)})
+                     "venue_override": (re.split(r"Playing\s*(?:@|at\b)",cells[2],flags=re.I)[-1].strip() if re.search(r"Playing\s*(?:@|at\b)",cells[2],re.I) else None),
+                     "venue": (clean_team(re.split(r"Playing\s*(?:@|at\b)", cells[2], flags=re.I)[-1]) if re.search(r"Playing\s*(?:@|at\b)", cells[2], re.I) else home)})
     return draw
 
 
@@ -997,6 +1000,7 @@ def main() -> None:
     # Data preparation only: no frontend fetch or Club Zone presentation yet.
     (OUT / "club-directory.json").write_text(json.dumps(directory, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     (OUT / "clubs.json").write_text(json.dumps(network, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    (OUT / "club-foundation.json").write_text(json.dumps(build_foundation(directory,network,sections,checked_at=synced_at),ensure_ascii=False,separators=(",",":"))+"\n",encoding="utf-8")
     competitions = {
         row["competition_code"]: row["competition_label"]
         for row in catalog

@@ -55,9 +55,12 @@ def parse_club_information(html: str) -> list[dict]:
         if len(cells) >= 2 and texts[0].isdigit() and texts[1]:
             time = re.search(r"\((\d{1,2}:\d{2})\)", texts[1])
             team = re.sub(r"\s*\(\d{1,2}:\d{2}\)", "", texts[1]).strip()
-            current = {"team": team, "club": club_name(team), "team_number": int(texts[0]),
+            raw_team=team
+            playing=re.search(r"(?i)\bplaying\s*(?:at\b|@)\s*:?\s*(.+)",team)
+            team=re.split(r"(?i)\bplaying\s*(?:at\b|@)",team)[0].strip()
+            current = {"raw_team":raw_team,"team": team, "club": club_name(team), "team_number": int(texts[0]),
                        "start_time": time.group(1) if time else None,
-                       "venue_lines": [], "clubhouse_phones": [], "contacts": []}
+                       "venue_lines": [], "clubhouse_phones": [], "contacts": [], "playing_at": (playing.group(1).strip() if playing else None)}
             if len(cells) > 2:
                 current["melway"] = texts[2] or None
                 # Parse only numeric map arguments; never execute the source script.

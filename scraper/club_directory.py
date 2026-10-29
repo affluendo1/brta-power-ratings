@@ -58,7 +58,7 @@ def collect_directory(request_get, request_post, workers=6):
         raise RuntimeError('TROLS published no clubs')
     def load(option):
         name, value=option
-        return parse_club(request_post(URL, {'which':'2','style':'','club':value}).text,name)
+        return {**parse_club(request_post(URL, {'which':'2','style':'','club':value}).text,name), 'native_club_id':value}
     with ThreadPoolExecutor(max_workers=workers) as pool:
         clubs=list(pool.map(load,options))
     return {'version':1,'source':URL,'clubs':sorted(clubs,key=lambda c:c['id'])}
