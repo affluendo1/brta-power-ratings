@@ -157,7 +157,7 @@ async function loadSection(code,preloadedPayload=null){
     if(token!==loadingToken)return false;
     const next=await layoutApplyModel(meta?.is_custom?payload:normaliseTeamLabels(payload));if(token!==loadingToken)return false;
     if(meta?.is_custom)ratingScope='section';committedCatalog=viewCatalog;committedHistorySeason=activeHistorySeasonId;ratingRound=null;$$('.overlay:not(.hidden)').filter(o=>o.id!=='settingsOverlay'&&o.id!=='layoutOverlay').forEach(o=>{if(o.id)close('#'+o.id)});D=next;lab8Context=null;window.eightBandFilter='';focusedSearchPlayer=null;singles=D.singles||[];dinds=D.doublesIndividuals||[];pairs=D.doubles||[];teams=D.teams||[];
-    if(activeHistorySeasonId){const selection={seasonId:activeHistorySeasonId,sectionCode:code};localStorage.setItem('brta-history-selection',JSON.stringify(selection))}else localStorage.setItem('brta-section',code);
+    if(activeHistorySeasonId){const selection={seasonId:activeHistorySeasonId,sectionCode:code};localStorage.setItem('brta-history-selection',JSON.stringify(selection))}else{localStorage.removeItem('brta-history-selection');localStorage.setItem('brta-section',code);}
     resultRound=D.results?.[0]?.round??null;selectedMatch=null;selectedPrediction=null;activePredictionMatch=null;roundSimulations={};
     renderChoice('competitionSelect',[...new Map(viewCatalog.map(x=>[x.competition_code,sectionCompetitionLabel(x).replace(' - ',' · ')])).entries()],D.meta.competition_code);fillSections(D.meta.competition_code,code);
     $('#sectionSubtitle').textContent=D.meta.competition_label.replace(' - ',' · ')+' · '+D.meta.section_label;
