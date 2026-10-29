@@ -4,6 +4,13 @@ from scraper.club_information import parse_club_information
 from generate_player_search import compact_complete_rows
 
 class ClubFoundationTests(unittest.TestCase):
+    def test_native_club_identity_survives_a_directory_name_change(self):
+        def make(key,name):
+            return build_foundation({'clubs':[{'id':key,'name':name,'native_club_id':'C42','address_lines':['1 Road']}]},{},aliases={})
+        before,after=make('old-name','Old Name'),make('new-name','New Name')
+        self.assertEqual(before['clubs'][0]['id'],after['clubs'][0]['id'])
+        self.assertEqual(before['clubs'][0]['main_venue_id'],after['clubs'][0]['main_venue_id'])
+        self.assertEqual(after['clubs'][0]['native_club_id'],'C42')
     def test_join_aliases_and_distinct_grounds_without_losing_team_or_fixture_scopes(self):
         directory={'clubs':[{'id':'alpha','name':'Alpha','address_lines':['1 Main Street'],'coordinates':{'latitude':-38,'longitude':145},'published_details':['6 synthetic courts','6 synthetic courts']},{'id':'beta','name':'Beta','address_lines':['2 Other Street']}]}
         network={'clubs':[{'observations':[{'team':'Alpha Rockets','team_number':1,'venue_lines':['1 Main Street'],'coordinates':{'latitude':-38,'longitude':145},'playing_at':'Beta','source':{'section_code':'AA001','season_id':'AA50'}},{'team':'Alpha Rockets','team_number':1,'venue_lines':['9 Alternate Road'],'source':{'section_code':'UA001','season_id':'UA50'}}]}]}

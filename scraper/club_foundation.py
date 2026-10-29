@@ -68,10 +68,11 @@ def build_foundation(directory,network,sections=(),*,checked_at=None,aliases=Non
         venues.setdefault(vid,{'id':vid,'club_id':cid,'primary':primary,'address_lines':lines,'coordinates':coords or None,'sources':[],'status':'directory' if primary else 'observed_alternate'})['sources'].append(provenance(source))
         return vid
     for key,c in raw_clubs.items():
-        cid='brta:club:'+key
+        native=c.get('native_club_id')
+        cid='brta:club:'+('trols:'+str(native) if native is not None else key)
         vid=add_venue(cid,c.get('address_lines',[]),c.get('coordinates'),c.get('source',{}),True)
         lines=c.get('published_details',[])
-        clubs[key]={'id':cid,'legacy_id':key,'name':c['name'],'venue_ids':[vid],'main_venue_id':vid,
+        clubs[key]={'id':cid,'legacy_id':key,'native_club_id':native,'name':c['name'],'venue_ids':[vid],'main_venue_id':vid,
                     'contacts':c.get('contacts',[]),'phones':c.get('phones',[]),'websites':c.get('websites',[]),
                     'facts':facts(lines),'additional_details':list(dict.fromkeys(lines)),
                     'sources':[provenance(c.get('source',{}))],'observations':[],'review_required':False}
