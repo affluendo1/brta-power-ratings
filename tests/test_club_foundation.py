@@ -26,6 +26,15 @@ class ClubFoundationTests(unittest.TestCase):
         from scraper.sync_trols import parse_draw_page
         html='<table><tr><th>Rd</th><th>Date</th><th>Home</th><th>Away</th></tr><tr><td>1</td><td>1 Nov 26</td><td>Alpha (9:00) Playing at Beta</td><td>Other</td></tr></table>'
         row=parse_draw_page(html,'AA001')[0];self.assertEqual(row['home_team'],'Alpha');self.assertEqual(row['venue_override'],'Beta');self.assertEqual(row['venue'],'Beta')
+    def test_venue_footnotes_join_the_correct_coloured_team(self):
+        directory={'clubs':[{'id':'alpha','name':'Alpha'},{'id':'beta','name':'Beta','address_lines':['2 Street']}]}
+        network={'clubs':[{'observations':[{'team':'Alpha Gold **','team_number':1,'source':{'section_code':'AA001','season_id':'AA50'}},{'team':'Alpha Green **','team_number':2,'source':{'section_code':'AA001','season_id':'AA50'}}]}]}
+        section={'section_code':'AA001','season_id':'AA50','draw':[{'home_team':'Alpha Gold','round':1,'venue_override':'Beta'},{'home_team':'Alpha Green','round':1,'venue_override':'Unknown ground'},{'home_team':'Alpha Green','round':2,'venue_override':'Unknown ground'}]}
+        d=build_foundation(directory,network,[section],aliases={})
+        self.assertNotEqual(d['venue_assignments'][0]['team_id'],d['venue_assignments'][1]['team_id'])
+        self.assertEqual(d['venue_assignments'][0]['resolved_venue_id'],'brta:club:beta:venue:main')
+        self.assertTrue(all(a['team_id'] for a in d['venue_assignments']))
+        self.assertEqual([r['kind'] for r in d['review_queue']],['unresolved_venue'])
     def test_complete_index_keeps_partnerships_outside_command_extremes(self):
         rows=[{'seasonKey':'UA:1','sectionCode':'UA001','player':'A / B','team':'One','rating':1501,'qualified':True,'dataPath':'one.json','isCurrent':True},{'seasonKey':'UA:0','sectionCode':'UA001','player':'C / D','rating':1000,'qualified':False,'dataPath':'old.json','isCurrent':False}]
         data=compact_complete_rows(rows);self.assertEqual(len(data['entries']),2);self.assertEqual(len(data['sections']),2);self.assertEqual(data['sections'][0]['dataPath'],'one.json');self.assertFalse(data['sections'][1]['isCurrent'])

@@ -105,15 +105,21 @@ def build_foundation(directory,network,sections=(),*,checked_at=None,aliases=Non
             home=draw.get('home_team','')
             target=draw.get('venue_override') or assignment(home) or assignment(draw.get('venue','')) or (draw.get('venue') if draw.get('venue') and draw.get('venue')!=home else None)
             if not target:continue
-            same_label=lambda value:re.sub(r'\s+\([A-Z]{2,6}\)$','',value).casefold().strip()
+            # Footnote marks flag alternate grounds, not a different team.
+            # Keep colours: Gold and Green may be separate teams in a section.
+            same_label=lambda value:re.sub(r'\s+\([A-Z]{2,6}\)$','',re.sub(r'[\s*†‡]+$','',clean(value))).casefold().strip()
             candidates=[t for t in teams.values() if t['section_code']==code and t['season_id']==season and same_label(t['name'])==same_label(home)]
             team=candidates[0] if len(candidates)==1 else None
             if not team:review.append({'kind':'unresolved_fixture_team','team':home,'section_code':code,'season_id':season})
             venue=next((v for v in venues.values() if venue_key([target])==venue_key(v['address_lines'])),None)
+            venue_club=clubs.get(aliases.get(club_key(target),{}).get('club_id',club_key(target)))
+            if not venue and venue_club:venue=venues[venue_club['main_venue_id']]
+            if not venue:review.append({'kind':'unresolved_venue','label':target,'team_id':team['id'] if team else None,'section_code':code,'season_id':season})
             assignments.append({'team_id':team['id'] if team else None,'home_team':home,'scope':'fixture','fixture_id':draw.get('fixture_id') or draw.get('draw_id'),'round':draw.get('round'),'date':draw.get('date'),'label':target,'resolved_venue_id':venue['id'] if venue else None,'source':provenance({'url':network.get('fixture_url','https://www.trols.org.au/brta/fixture.php'),'section_code':code,'season_id':season})})
     for club in clubs.values():
         club['review_required']=len(club['venue_ids'])>1
         if club['review_required']:review.append({'kind':'multiple_venues','club_id':club['id'],'venue_ids':club['venue_ids']})
+    review=list({json.dumps(item,sort_keys=True):item for item in review}.values())
     return {'version':1,'association':'brta','checked_at':checked_at,'clubs':list(clubs.values()),'teams':list(teams.values()),'venues':list(venues.values()),'venue_assignments':assignments,'review_queue':review,'aliases':aliases}
 
 
