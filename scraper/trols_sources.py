@@ -1,4 +1,4 @@
-"""Read-only preparation for other TROLS associations; never publishes site data.
+"""Shared association profiles and transport for the multi-association collector.
 
 BRTA's production collector remains deliberately opt-in and separate. Observing
 another association's controls is not evidence that its scoring rules are known.
@@ -10,11 +10,13 @@ import re
 from urllib.parse import quote, urljoin, urlparse
 
 import requests
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 from bs4 import BeautifulSoup
 
 ROOT = 'https://www.trols.org.au/'
 PUBLIC_PAGES = frozenset({'index.php', 'results.php', 'p_results.php', 'ladders.php',
-                          'p_ladders.php', 'fixture.php', 'clubs.php', 'match_popup.php'})
+                          'p_ladders.php', 'fixture.php', 'clubs.php', 'match_popup.php', 'awards.php'})
 
 
 @dataclass(frozen=True)
@@ -23,6 +25,7 @@ class Association:
     label: str
     active: bool = True
     production_enabled: bool = False
+    collection_enabled: bool = True
 
     def __post_init__(self):
         if not re.fullmatch(r'[a-z][a-z0-9]*', self.key):
@@ -95,11 +98,17 @@ class SourceClient:
     def __init__(self, association: str, *, session=None):
         self.association = ASSOCIATIONS[association]
         self.session = session if session is not None else requests.Session()
+        if session is None:
+            retry = Retry(total=3, backoff_factor=0.5, status_forcelist=(429,500,502,503,504),
+                          allowed_methods=frozenset({'GET','POST'}), respect_retry_after_header=True)
+            self.session.mount('https://', HTTPAdapter(max_retries=retry))
 
     def read(self, page: str, *, controls: dict | None = None, params: dict | None = None) -> str:
         url = self.association.endpoint(page)
-        if controls is not None and page not in {'results.php', 'p_results.php', 'fixture.php', 'ladders.php', 'p_ladders.php'}:
+        if controls is not None and page not in {'results.php', 'p_results.php', 'fixture.php', 'ladders.php', 'p_ladders.php', 'clubs.php'}:
             raise ValueError('Form submissions are limited to public competition selectors')
+        if controls is not None and set(controls) - {'which','style','daytime','season','section','team','club'}:
+            raise ValueError('Only public selector fields may be submitted')
         if controls is not None and params is not None:
             raise ValueError('Use either form controls or query parameters')
         if controls is not None:

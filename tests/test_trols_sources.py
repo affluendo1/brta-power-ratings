@@ -16,6 +16,7 @@ class AssociationPreparationTests(unittest.TestCase):
 
     def test_only_brta_is_production_enabled_and_legacy_is_separate(self):
         self.assertEqual([key for key, a in ASSOCIATIONS.items() if a.production_enabled], ['brta'])
+        self.assertTrue(all(a.collection_enabled for a in ASSOCIATIONS.values()))
         self.assertFalse(ASSOCIATIONS['mdjta'].active)
         self.assertEqual(ASSOCIATIONS['brta'].base_url, 'https://www.trols.org.au/brta/')
 

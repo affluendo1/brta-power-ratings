@@ -435,15 +435,44 @@ formats. The history workflow resumes missing sections and publishes each comple
 competition separately. It retains the existing archive and excludes the award
 competition. Only successfully imported and fitted sections appear in History.
 
-### Future TROLS association adapters
+### Multi-association TROLS collector
 
-The current website and scheduled imports remain BRTA-only. Read-only source
-profiles and a manual discovery probe are prepared for other TROLS associations:
+The repository can collect public competition data from all twelve TROLS
+association directories, including legacy MDJTA. The website's existing BRTA
+ratings and scheduled sync remain separate from this source collection.
 
 ```sh
-python -m scraper.probe_associations --association wdta
+# All associations, all published seasons, every section, scorecard and team draw.
+python -m scraper.trols_collect --associations all --history all
+
+# Current data for selected associations.
+python -m scraper.trols_collect --associations wdta bdta --history current
+
+# Explicit small validation run: partial, never marked complete.
+python -m scraper.trols_collect --associations all --history current --limit-sections 1 --limit-matches 1 --limit-clubs 1
 ```
 
-Reports go to `debug/trols-associations/`, separate from published data.
-See `internal/association/trols-expansion.md` for observed layout differences,
-limitations and the requirements before enabling another association.
+The output is `data/trols/<association>/`: namespaced JSON records for sections,
+scorecards and clubs, plus the original source HTML and request metadata.
+Results retain published points/statuses, ladders retain their exact columns,
+and team draws retain dates, starting times, venues, no-play weeks and finals.
+Historical draws require explicit season confirmation; otherwise only the
+fixtures published in that season’s Results are retained, with a recorded gap.
+Public club details and special award ladders are included. Credentials and
+protected Club Zone pages are outside this public-data collector.
+
+The default covers current and historical seasons. `--history past` collects
+only archives. Native season labels and IDs are preserved without assuming
+Spring/Autumn or four-digit years. Each association has its own request session.
+
+Interrupted runs resume from verified cached pages; re-run the same command.
+Use `--refresh` when you want updated source snapshots. `--workers` controls
+association concurrency (default 2, maximum 4). Each manifest records scope,
+limits, fetched/cached pages, errors and completion. Failed collections exit
+nonzero while keeping completed work. Unknown scorecard layouts retain raw HTML
+and table data, with an explicit normalisation warning instead of silent loss.
+Generated datasets are ignored by git and do not change the live site's menus.
+
+`python -m scraper.probe_associations --association wdta` remains available for
+quick selector-only inspection. See `internal/association/trols-expansion.md`
+for source differences and the boundary between collection and rating integration.

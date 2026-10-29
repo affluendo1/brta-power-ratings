@@ -3,3 +3,6 @@ __pycache__/
 
 # Read-only exploratory TROLS probes are never production data.
 debug/trols-associations/
+
+# Multi-association source datasets are generated, separate from the live site.
+data/trols/

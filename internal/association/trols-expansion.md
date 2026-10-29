@@ -1,7 +1,7 @@
 # Preparing for associations beyond BRTA
 
-Observed 29 October 2026. This is source research and read-only infrastructure,
-not an announcement that another association is supported in the ratings site.
+Observed 29 October 2026. All twelve directories are supported by the standalone public-data collector.
+This does not add other associations to the ratings website.
 Current public version remains 8.2.1.1.
 
 ## Research scope
@@ -50,38 +50,51 @@ its overview explains a tiebreak at five-all. Do not normalize that to 6-7.
 Scoring, point allocation, tiebreaks, penalties and qualification must be
 verified separately per competition/season before rating integration.
 
-## Development now included
+## Working collector
 
-- Association profiles with explicit production enablement; only BRTA enabled.
-- BRTA endpoints now come from its fixed profile, preserving existing URLs.
-- Landing-directory discovery reports unknown associations without enabling them.
-- Per-client sessions isolate cookies and association URLs.
-- Opaque native competition/season IDs and namespaced entity identities prevent
-  AA001 or AA001031 from colliding across associations or seasons.
-- Public selector inspection handles preselected competitions and preserves
-  unusual season labels without guessing dates or chronological order.
-- Structural scorecard diagnostics identify the three-table layout at either
-  width and report observed roster/match counts. Unknown/ambiguous layouts fail
-  visibly. Recognition does not mark rating/scoring rules as verified.
-- A manual probe saves only to ignored debug/trols-associations/<association>/.
-  It never changes data/current, data/archive, rating fits or website menus.
+Run `python -m scraper.trols_collect --associations all --history all` to collect
+all source-published current and historical seasons, sections, match scorecards,
+results, ladders, team draws, public clubs and special award ladders. All twelve
+profiles permit collection, including the MDJTA legacy directory. Only BRTA is
+currently enabled for the separate public ratings pipeline.
 
-Run from repository root:
+The collector preserves native labels, opaque IDs, roster codes, emergency
+markers, row order, raw scores, incomplete rows, merged table cells and links.
+It reads the three-table scorecard family structurally at either width without
+padding a two- or three-player roster to four. Other layouts are retained as
+source tables and HTML with an explicit normalisation warning.
 
-```sh
-python -m scraper.probe_associations --association wdta
-python -m scraper.probe_associations --association wdta --competition AA --section AA021 --match AA021031
-```
+Output lives under `data/trols/<association>/`. Association + competition +
+season namespaces prevent cross-source entity collisions. Original HTML, URL,
+request controls, hash and fetched time are recorded for every collected page.
+Historical draws require explicit season confirmation. If TROLS exposes only
+current Fixtures, retain the old season’s Results fixtures and report the gap.
+Generic table documents preserve official ladder columns and published fixture
+information without applying BRTA scoring, name corrections or colour stripping.
 
-Identifiers in the second example were observed, not inferred; select current
-values from the first report as seasons change. Use --season with an observed
-archive-season value. Keep probes small and manual. Do not schedule a full
-cross-association crawl yet.
+Requests run sequentially within each association (two associations by default,
+maximum four), with bounded retries and Retry-After handling. Atomic checkpoints
+and hash-verified snapshots let an interrupted run resume. `--refresh` obtains a
+new source snapshot. Manifests report failures and explicit validation limits;
+partial runs never claim complete coverage. A failed scope does not discard
+other associations or sections. All public club selections are enumerated.
+Awards discovered in Ladders are stored independently of match competitions.
 
-## Before enabling any association
+Use `--history current` or `--history past` to restrict the source scope. Optional
+`--limit-competitions`, `--limit-seasons`, `--limit-sections`, `--limit-matches`
+and `--limit-clubs` create explicit validation subsets. Limits apply within their
+parent scope; omit every limit for a complete collection. A root manifest links
+each association manifest. No generated dataset is automatically pushed into
+BRTA's current/archive ratings store, and no protected entry workflow is used.
 
-Implement an adapter and regression fixtures for results, ladders, fixtures,
-scorecards, incomplete/forfeited/retired outcomes and finals. Replace BRTA-only
+The old selector-only probe remains available:
+`python -m scraper.probe_associations --association wdta`.
+
+## Before publishing non-BRTA ratings
+
+Collection now preserves these sources. Before rating them, verify competition
+rules and add rating-specific regression fixtures for incomplete/forfeited/retired
+outcomes and finals. Replace BRTA-only
 section/match-ID validation in that adapter, not globally. Avoid BRTA's four-player
 roster assumptions, junior point fallbacks, emergency rules, name corrections,
 club aliases and colour stripping. Preserve raw source names and native IDs.
@@ -97,3 +110,20 @@ https://www.trols.org.au/wdta/results.php
 https://www.trols.org.au/bdnta/results.php
 https://www.trols.org.au/erta/results.php
 https://www.trols.org.au/ldnta/results.php
+
+## Collector validation — 29 October 2026
+
+Live bounded runs covered every current competition in all twelve directories,
+using the first section and one linked scorecard from each. Totals: 43 sections,
+43 scorecards, 311 team draws and 12 public club-detail records; zero errors.
+A second pass collected the first available past season/section/card for each
+association: 12 historical sections/cards and 12 club records, again without errors.
+Historical fixture requests could not confirm the requested season; the collector
+correctly retained fixtures from the historical Results instead of attaching
+current-season team draws. The manifest explicitly states this source limitation.
+A Berwick run without a match limit collected all 20 linked scorecards across
+two selected sections. These bounded checks are not a full-database download.
+Machine-readable counts/scopes are in `trols-collection-validation.json`.
+Offline tests cover all twelve observed scorecard structures plus failures,
+unknown layouts, cache corruption, refresh, resume, identity collisions,
+current/past selection, blank scores and partial-run completeness reporting.
