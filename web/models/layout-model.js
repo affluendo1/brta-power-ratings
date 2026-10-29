@@ -11,22 +11,27 @@ function bands(rows,qualified=()=>true){
  return{names,bounds,cuts,classFor:rating=>'b'+cuts.filter(c=>rating<c).length};
 }
 function percentage(row){return row.officialPercentage!=null?Number(row.officialPercentage):row.gamesAgainst?100*row.gamesFor/row.gamesAgainst:row.gamesFor?Infinity:0}
+function sourceDate(value){
+ const text=String(value||''),iso=text.match(/^(\d{4})-(\d{2})-(\d{2})$/),named=text.match(/^(\d{1,2})\s+([A-Za-z]+)\s+(\d{2,4})$/);
+ let year,month,day;if(iso){[,year,month,day]=iso;year=+year;month=+month;day=+day}else if(named){day=+named[1];month=['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec'].indexOf(named[2].slice(0,3).toLowerCase())+1;year=+named[3]+(named[3].length===2?2000:0)}else return null;
+ const date=new Date(Date.UTC(year,month-1,day));return year>=1000&&date.getUTCFullYear()===year&&date.getUTCMonth()===month-1&&date.getUTCDate()===day?date.toISOString().slice(0,10):null;
+}
 function observations(data){const result=[];
  for(const round of data.results||[])for(const f of round.fixtures||[])for(const r of f.rubbers||[]){
-  if(r.status&&r.status!=='Completed'||!r.winner||/ret|forfeit|walkover|unfinished/i.test(r.score||''))continue;
+  if(r.valid_for_rating===false||r.status&&r.status!=='Completed'||!r.winner||/ret|forfeit|walkover|unfinished/i.test(r.score||''))continue;
   const home=String(r.home||'').split(/\s*\/\s*/),away=String(r.away||'').split(/\s*\/\s*/);if(!home[0]||!away[0])continue;
   const sets=[...String(r.score||'').matchAll(/(\[)?(\d+)\s*[-–:]\s*(\d+)(?:\([^)]*\))?\]?/g)].map(m=>({h:+m[2],a:+m[3],mt:!!m[1]}));
   if(sets.length>=3&&(sets.at(-1).h>=10||sets.at(-1).a>=10))sets.at(-1).mt=true;
   if(!sets.length)continue;
   const regular=sets.filter(s=>!s.mt),hs=sets.filter(s=>s.h>s.a).length,as=sets.filter(s=>s.a>s.h).length;
-  result.push({home,away,type:r.type,hg:regular.reduce((n,s)=>n+s.h,0),ag:regular.reduce((n,s)=>n+s.a,0),hs,as,matchTiebreaks:sets.filter(s=>s.mt),winner:r.winner===r.home?'home':'away',date:new Date(f.date||round.date).toISOString().slice(0,10),round:Number(round.round),homeTeam:f.home,awayTeam:f.away});
+  result.push({home,away,type:r.type,hg:regular.reduce((n,s)=>n+s.h,0),ag:regular.reduce((n,s)=>n+s.a,0),hs,as,matchTiebreaks:sets.filter(s=>s.mt),winner:r.winner===r.home?'home':'away',date:sourceDate(f.date||round.date),round:Number(round.round),homeTeam:f.home,awayTeam:f.away});
  }return result;
 }
 function recalculate(data,model,engine){
  if(model!=='RM3b'&&data.meta?.ratingModel!=='V3B')return data;const fitModel=model==='RM3b'?'V3B':'V3';
  const all=observations(data),copy={...data,meta:{...data.meta,ratingModel:fitModel},ratingHistory:{...data.ratingHistory,tables:{},players:{}},doublesRatingHistory:{...data.doublesRatingHistory,tables:{}}};
  const merge=(base,fitted)=>{const byName=new Map(fitted.map(r=>[r.player,r]));return(base||[]).map(r=>{const f=byName.get(r.player);return f?{...r,rating:f.rating,se:f.se,lo:f.lo,hi:f.hi}:r}).sort((a,b)=>b.rating-a.rating||a.player.localeCompare(b.player));};
- function calculate(round,baseS,baseD,baseP){const matches=round==null?all:all.filter(m=>m.round<=round),s=engine.fit(matches.filter(m=>m.type==='Singles'),false,false,fitModel),d=engine.fit(matches.filter(m=>m.type==='Doubles'),true,data.format==='rubbers',fitModel),p=engine.fit(matches.filter(m=>m.type==='Doubles'),false,false,fitModel),powers=new Map(d.map(r=>[r.player,r.rating]));p.forEach(r=>{r.individualAverage=Math.round(r.player.split(' / ').reduce((n,p)=>n+(powers.get(p)||1500),0)/2);r.pairEffect=r.rating-r.individualAverage});return{singles:merge(baseS,s),doublesPlayers:merge(baseD,d),pairs:merge(baseP,p).map(r=>{const f=p.find(x=>x.player===r.player);return f?{...r,individualAverage:f.individualAverage,pairEffect:f.pairEffect}:r})};}
+ function calculate(round,baseS,baseD,baseP){const subset=round==null?all:all.filter(m=>m.round<=round),reference=subset.map(m=>m.date).filter(Boolean).sort().at(-1)||'2000-01-01',matches=subset.map(m=>({...m,date:m.date||reference})),s=engine.fit(matches.filter(m=>m.type==='Singles'),false,false,fitModel),d=engine.fit(matches.filter(m=>m.type==='Doubles'),true,data.format==='rubbers',fitModel),p=engine.fit(matches.filter(m=>m.type==='Doubles'),false,false,fitModel),powers=new Map(d.map(r=>[r.player,r.rating]));p.forEach(r=>{r.individualAverage=Math.round(r.player.split(' / ').reduce((n,p)=>n+(powers.get(p)||1500),0)/2);r.pairEffect=r.rating-r.individualAverage});return{singles:merge(baseS,s),doublesPlayers:merge(baseD,d),pairs:merge(baseP,p).map(r=>{const f=p.find(x=>x.player===r.player);return f?{...r,individualAverage:f.individualAverage,pairEffect:f.pairEffect}:r})};}
  for(const item of data.ratingHistory?.rounds||[]){const n=+item.round,b=data.doublesRatingHistory?.tables?.[n],r=calculate(n,data.ratingHistory?.tables?.[n]||[],b?.doublesPlayers||[],b?.pairs||[]);copy.ratingHistory.tables[n]=r.singles;copy.doublesRatingHistory.tables[n]={doublesPlayers:r.doublesPlayers,pairs:r.pairs};r.singles.forEach(p=>(copy.ratingHistory.players[p.player]??=[]).push([n,p.rating,p.se,p.matches,p.team]));}
  const latest=calculate(null,data.singles,data.doublesIndividuals,data.doubles);copy.singles=latest.singles;copy.doublesIndividuals=latest.doublesPlayers;copy.doubles=latest.pairs;return copy;
 }

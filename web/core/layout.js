@@ -1,18 +1,18 @@
 /* Layout Overhaul — shared navigation, display preferences and section reports. */
-let layoutOverlayFocus=null,layoutInert=[],layoutWorker=null;
+let layoutOverlayFocus=null,layoutInert=[];
 const layoutCache=new WeakMap();
 function layoutDefaultCode(){const c=localStorage.getItem('brta-default-competition'),s=localStorage.getItem('brta-default-section');return currentCatalog().find(x=>x.competition_code===c&&(!s||x.section_code===s))?.section_code||''}
-async function layoutApplyModel(data){
- const model=localStorage.getItem('brta-rating-model')||'RM3';if(model==='RM3'&&data.meta?.ratingModel!=='V3B')return data;
+async function layoutApplyModel(data,model=localStorage.getItem('brta-rating-model')||'RM3'){
+ if(model==='RM3'&&data.meta?.ratingModel!=='V3B')return data;
  if(layoutCache.get(data)?.model===model)return layoutCache.get(data).result;
- const result=await new Promise((resolve,reject)=>{const worker=new Worker('web/workers/rating-worker.js?v=80');worker.onmessage=e=>{worker.terminate();e.data.error?reject(Error(e.data.error)):resolve(e.data.data)};worker.onerror=e=>{worker.terminate();reject(Error(e.message||'Could not calculate RM3b.'))};worker.postMessage({data,model})});layoutCache.set(data,{model,result});return result;
+ const result=await new Promise((resolve,reject)=>{const worker=new Worker('web/workers/rating-worker.js?v=8212');worker.onmessage=e=>{worker.terminate();e.data.error?reject(Error(e.data.error)):resolve(e.data.data)};worker.onerror=e=>{worker.terminate();reject(Error(e.message||'Could not calculate RM3b.'))};worker.postMessage({data,model})});layoutCache.set(data,{model,result});return result;
 }
 function ratingChangeCell(row){const n=row.ratingChange;return '<td class="rating-change '+(n>0?'rank-up':n<0?'rank-down':'rank-still')+'">'+(n==null?'—':(n>0?'+':'')+n)+'</td>'}
 function renderStandings(){
  const rows=D.standings||[],played=Math.max(0,...rows.map(r=>Number(r.played)||Number(r.wins||0)+Number(r.draws||0)+Number(r.losses||0)));
  $('#standingsHead').innerHTML='<tr><th>#</th><th>Team</th><th>W–D–L</th><th>%</th><th>Pts</th></tr>';
  $('#standingsBody').innerHTML=rows.map((r,i)=>{const pct=BRTALayoutModel.percentage(r);return'<tr><td><b>'+(r.officialPosition||i+1)+'</b></td><td><b>'+clubTeamButton(r.team)+'</b></td><td class="standing-record"><span class="rank-up">'+esc(r.officialWins??r.wins??'—')+'</span>–<span class="rank-still">'+esc(r.draws??'—')+'</span>–<span class="rank-down">'+esc(r.losses??'—')+'</span></td><td>'+(Number.isFinite(pct)?pct.toFixed(2):'∞')+'</td><td><b>'+esc(r.points)+'</b></td></tr>'+(i===(D.meta?.is_custom?(D.meta.semifinalPlaces??4):4)-1&&rows.length>(D.meta?.is_custom?(D.meta.semifinalPlaces??4):4)?'<tr class="playoff-cut"><td colspan="5"><span class="sf-wave" aria-hidden="true">∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿</span><span>↑ SF</span></td></tr>':'')}).join('');
- $('#standingsNote').textContent=played+' round'+(played===1?'':'s')+' played';$('#standingsCaveat').innerHTML='% = games won ÷ games lost × 100. Used to separate teams tied on points.';renderKnockout();
+ $('#standingsNote').textContent=played+' round'+(played===1?'':'s')+' played';$('#standingsCaveat').innerHTML='% = games won ÷ games lost × 100. Used to separate teams tied on points.';const missing=D.sync?.missingFixtures||0;if(missing)$('#standingsCaveat').insertAdjacentHTML('afterbegin','<b>Incomplete: '+missing+' scorecard'+(missing===1?'':'s')+' missing.</b> ');if(D.meta?.is_archive)$('#standingsCaveat').insertAdjacentHTML('beforeend',rows.some(r=>r.standingsSource==='TROLS')?' Final positions and points are published by TROLS; match records are reconstructed.':' The final ladder was unavailable; standings are reconstructed from published results.');if(D.sync?.sourceWarnings?.length)$('#standingsCaveat').insertAdjacentHTML('beforeend','<br><b>TROLS source discrepancy:</b> '+D.sync.sourceWarnings.map(esc).join(' '));renderKnockout();
 }
 function renderFixtures(){renderFixtureRounds();const host=$('#fixturesList'),sections=[...host.children],past=[];const completed=new Set((D.results||[]).filter(r=>(r.fixtures||[]).every(f=>f.status!=='Scheduled')).map(r=>String(r.round)));for(const section of sections){const round=(D.upcomingFixtures||[])[sections.indexOf(section)];if(round&&completed.has(String(round.round)))past.push(section)}if(past.length){const details=document.createElement('details');details.className='previous-rounds';details.innerHTML='<summary>Previous rounds <span>'+past.length+' Played Rounds</span></summary>';host.prepend(details);past.forEach(s=>details.append(s));}}
 function historyDialogHTML(){return'<div class="history-selects"><label>Competition<select id="historyCompetition"><option value="AA">Saturday AM</option><option value="UA">Sunday AM</option></select></label><label>Season<select id="historySeason"></select></label><label>Section<select id="historySection"></select></label></div><p id="historyInfo" role="status">Loading seasons…</p><div class="history-actions"><button class="button primary" id="historyOpenBtn">View selected section</button><button class="button secondary" id="historyCurrentBtn">Return to current season</button></div>'}
@@ -43,6 +43,7 @@ document.addEventListener('keydown',e=>{const o=$('#layoutOverlay');if(!o||o.cla
 
 // Search indexes retain names and records; fit only sections matching the user's query.
 const layoutSearchCache=new Map(),layoutSearchJobs=[];let layoutSearchBusy=0;
+window.addEventListener('brta-custom-sections-change',()=>layoutSearchCache.clear());
 function layoutSearchPump(){while(layoutSearchBusy<2&&layoutSearchJobs.length){const job=layoutSearchJobs.shift();layoutSearchBusy++;job().finally(()=>{layoutSearchBusy--;layoutSearchPump()})}}
 function layoutSearchRatings(rows){
  if(localStorage.getItem('brta-rating-model')!=='RM3b')return rows;

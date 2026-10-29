@@ -1,2 +1,2 @@
-importScripts('../models/custom-section-model.js?v=80','../models/layout-model.js?v=80');
+importScripts('../models/custom-section-model.js?v=8212','../models/layout-model.js?v=8212');
 onmessage=event=>{try{postMessage({data:BRTALayoutModel.recalculate(event.data.data,event.data.model,CustomSectionModel)})}catch(error){postMessage({error:error.message})}};

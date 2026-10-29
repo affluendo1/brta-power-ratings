@@ -1,6 +1,6 @@
 const CACHE_PREFIX="brta-power-ratings-";
-const CACHE_NAME=CACHE_PREFIX+"shell-v8211b";
-const SHELL_FILES=["web/models/search-commands.js?v=821","web/models/theme-studio.js?v=821","web/features/search-commands.js?v=821","web/features/theme-studio.js?v=821","web/optional/deeds-data.js?v=821","web/optional/deeds.js?v=821","web/features/club-map.js?v=821","web/styles/studio.css?v=821","web/vendor/leaflet/leaflet.js?v=821","web/vendor/leaflet/leaflet.css?v=821","web/optional/orthography.js?v=821","web/optional/lexicon.js?v=821","web/optional/lexicon.css?v=821","web/styles/site.css?v=821","web/styles/style.css?v=821","web/styles/future.css?v=821","./","index.html","data.js","manifest.webmanifest","web/workers/rating-worker.js?v=821","assets/kavac-display.woff?v=821","assets/sequence-impact.mp3","assets/gong.mp3","assets/brta-icon-180.png?v=821","assets/brta-icon-192.png?v=821","manifest.webmanifest?v=821","web/optional/collection.css?v=821","web/styles/custom-sections.css?v=821","web/styles/player-search.css?v=821","web/styles/team-lab.css?v=821","web/styles/changelog.css?v=8211","web/optional/ambient.css?v=821","web/styles/layout.css?v=821","web/styles/polish.css?v=821","assets/brta-logo.png?v=821","data.js?v=821","web/models/prediction.js?v=821","web/optional/records.js?v=821","web/models/rating-history.js?v=821","web/models/custom-section-model.js?v=821","web/models/custom-section-tools.js?v=821","web/features/custom-sections.js?v=821","web/features/player-search.js?v=8211","web/models/team-lab.js?v=821","web/features/team-lab-ui.js?v=821","web/features/changelog-data.js?v=8211","web/features/changelog.js?v=8211","web/optional/parameters.js?v=821","web/optional/presentation.js?v=821","web/models/layout-model.js?v=821","web/features/maps.js?v=821","web/features/waiting-game.js?v=821","web/core/app.js?v=821","web/core/layout.js?v=821","web/features/confetti.js?v=821","web/features/archive.js?v=821","web/optional/sequence.js?v=821","web/optional/controls.js?v=821","web/models/lab-model.js?v=821a","web/features/labs.js?v=821","web/core/polish.js?v=821","web/core/pwa.js?v=821","web/models/matchday.js?v=821","web/features/matchday.js?v=821c","web/features/following.js?v=8211","web/features/share-cards.js?v=821c","web/features/competition-formats.js?v=821","web/styles/matchday.css?v=821d"];
+const CACHE_NAME=CACHE_PREFIX+"shell-v8212";
+const SHELL_FILES=["web/core/dialogs.js?v=8212","web/models/search-commands.js?v=8212","web/models/theme-studio.js?v=8212","web/features/search-commands.js?v=8212","web/features/theme-studio.js?v=8212","web/optional/deeds-data.js?v=8212","web/optional/deeds.js?v=8212","web/features/club-map.js?v=8212","web/styles/studio.css?v=8212","web/vendor/leaflet/leaflet.js?v=8212","web/vendor/leaflet/leaflet.css?v=8212","web/optional/orthography.js?v=8212","web/optional/lexicon.js?v=8212","web/optional/lexicon.css?v=8212","web/styles/site.css?v=8212","web/styles/style.css?v=8212","web/styles/future.css?v=8212","./","index.html","data.js","manifest.webmanifest","web/workers/rating-worker.js?v=8212","assets/kavac-display.woff?v=8212","assets/sequence-impact.mp3","assets/gong.mp3","assets/brta-icon-180.png?v=8212","assets/brta-icon-192.png?v=8212","manifest.webmanifest?v=8212","web/optional/collection.css?v=8212","web/styles/custom-sections.css?v=8212","web/styles/player-search.css?v=8212","web/styles/team-lab.css?v=8212","web/styles/changelog.css?v=8212","web/optional/ambient.css?v=8212","web/styles/layout.css?v=8212","web/styles/polish.css?v=8212","assets/brta-logo.png?v=8212","data.js?v=8212","web/models/prediction.js?v=8212","web/optional/records.js?v=8212","web/models/rating-history.js?v=8212","web/models/custom-section-model.js?v=8212","web/models/custom-section-tools.js?v=8212","web/features/custom-sections.js?v=8212","web/features/player-search.js?v=8212","web/models/team-lab.js?v=8212","web/features/team-lab-ui.js?v=8212","web/features/changelog-data.js?v=8212","web/features/changelog.js?v=8212","web/optional/parameters.js?v=8212","web/optional/presentation.js?v=8212","web/models/layout-model.js?v=8212","web/features/maps.js?v=8212","web/features/waiting-game.js?v=8212","web/core/app.js?v=8212","web/core/layout.js?v=8212","web/features/confetti.js?v=8212","web/features/archive.js?v=8212","web/optional/sequence.js?v=8212","web/optional/controls.js?v=8212","web/models/lab-model.js?v=8212","web/features/labs.js?v=8212","web/core/polish.js?v=8212","web/core/pwa.js?v=8212","web/models/matchday.js?v=8212","web/features/matchday.js?v=8212","web/features/following.js?v=8212","web/features/share-cards.js?v=8212","web/features/competition-formats.js?v=8212","web/styles/matchday.css?v=8212"];
 const scopedUrl=path=>new URL(path,self.registration.scope).href;
 self.addEventListener("install",event=>{
   event.waitUntil((async()=>{
@@ -17,15 +17,24 @@ self.addEventListener("activate",event=>{
   })());
 });
 async function networkFirst(request){
-  const cache=await caches.open(CACHE_NAME);
+  let cache;
+  try{cache=await caches.open(CACHE_NAME)}catch{}
+  const cached=async()=>{try{return await cache?.match(request)||await cache?.match(request,{ignoreSearch:true})}catch{return undefined}};
   try{
     const response=await fetch(request);
-    if(response.ok){await cache.put(request,response.clone());return response}
-    return await cache.match(request)||await cache.match(request,{ignoreSearch:true})||response;
+    if(response.ok){
+      // Quota/private-mode cache failures must never discard a valid network response.
+      try{await cache?.put(request,response.clone())}catch{}
+      return response;
+    }
+    return await cached()||response;
   }catch{}
-  return await cache.match(request,{ignoreSearch:true})
-    ||await cache.match(scopedUrl("index.html"))
-    ||new Response("You are offline. Reconnect to open BRTA Power Ratings.",{status:503,headers:{"Content-Type":"text/plain; charset=utf-8"}});
+  const hit=await cached();if(hit)return hit;
+  // HTML is only a navigation fallback. It is never valid JavaScript, CSS or JSON.
+  if(request.mode==="navigate"){
+    try{const shell=await cache?.match(scopedUrl("index.html"));if(shell)return shell}catch{}
+  }
+  return new Response("You are offline. Reconnect to open BRTA Power Ratings.",{status:503,headers:{"Content-Type":"text/plain; charset=utf-8"}});
 }
 self.addEventListener("fetch",event=>{
   const request=event.request;
@@ -34,6 +43,6 @@ self.addEventListener("fetch",event=>{
   const scope=new URL(self.registration.scope);
   if(url.origin!==scope.origin||!url.pathname.startsWith(scope.pathname))return;
   if(request.mode==="navigate"){event.respondWith(networkFirst(request));return}
-  if(!/\.(?:js|css|png|jpe?g|webmanifest|woff2?)$/.test(url.pathname)&&!url.pathname.endsWith('/assets/gong.mp3'))return;
+  if(!/\.(?:js|json|css|png|jpe?g|webmanifest|woff2?|mp3)$/.test(url.pathname))return;
   event.respondWith(networkFirst(request));
 });

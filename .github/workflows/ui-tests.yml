@@ -1,0 +1,24 @@
+name: UI regression audit
+on:
+  push:
+    paths: ['web/**', 'index.html', 'sw.js', 'tests/**', '.github/workflows/ui-tests.yml']
+  pull_request:
+    paths: ['web/**', 'index.html', 'sw.js', 'tests/**', '.github/workflows/ui-tests.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  ui:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install isolated UI test dependency
+        run: npm install --prefix "$RUNNER_TEMP/brta-ui-tests" --no-save --ignore-scripts jsdom@26.1.0
+      - name: Run JavaScript regression suites
+        run: |
+          for test in tests/*.js; do node "$test"; done
+          NODE_PATH="$RUNNER_TEMP/brta-ui-tests/node_modules" node tests/browser/audit.cjs

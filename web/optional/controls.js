@@ -67,12 +67,12 @@
     await root.BRTAConfetti.cups(overlay,{reduced:reduced.matches,isActive:()=>alive(id)});
   }
 
-  function voidBackground(){return '<div class="ms-void-background" aria-hidden="true"><div class="ms-void-glow"></div><div class="ms-void-sea"><svg viewBox="0 0 1200 400" preserveAspectRatio="none"><path d="M-600 110 Q-450 30 -300 110 T0 110 T300 110 T600 110 T900 110 T1200 110 T1500 110 T1800 110 V500 H-600Z"/><path d="M-600 150 Q-450 80 -300 150 T0 150 T300 150 T600 150 T900 150 T1200 150 T1500 150 T1800 150 V500 H-600Z"/><path d="M-600 200 Q-450 140 -300 200 T0 200 T300 200 T600 200 T900 200 T1200 200 T1500 200 T1800 200 V500 H-600Z"/></svg></div><svg class="ms-void-crown" role="button" tabindex="0" aria-label="Crown" viewBox="0 0 100 70"><path d="M12 15 31 36 50 7 69 36 88 15 78 58H22Z"/><path d="M23 64H77"/><circle cx="50" cy="7" r="3"/><circle cx="12" cy="15" r="3"/><circle cx="88" cy="15" r="3"/></svg></div>';}
+  function voidBackground(){return '<div class="ms-void-background"><div class="ms-void-glow" aria-hidden="true"></div><div class="ms-void-sea" aria-hidden="true"><svg viewBox="0 0 1200 400" preserveAspectRatio="none"><path d="M-600 110 Q-450 30 -300 110 T0 110 T300 110 T600 110 T900 110 T1200 110 T1500 110 T1800 110 V500 H-600Z"/><path d="M-600 150 Q-450 80 -300 150 T0 150 T300 150 T600 150 T900 150 T1200 150 T1500 150 T1800 150 V500 H-600Z"/><path d="M-600 200 Q-450 140 -300 200 T0 200 T300 200 T600 200 T900 200 T1200 200 T1500 200 T1800 200 V500 H-600Z"/></svg></div><svg class="ms-void-crown" role="button" tabindex="-1" aria-label="Crown" viewBox="0 0 100 70"><path d="M12 15 31 36 50 7 69 36 88 15 78 58H22Z"/><path d="M23 64H77"/><circle cx="50" cy="7" r="3"/><circle cx="12" cy="15" r="3"/><circle cx="88" cy="15" r="3"/></svg></div>';}
   async function hidePanel(){
     if(phase!=='void'||panelHidden)return;panelHidden=true;crownCount=0;overlay.classList.add('ms-panel-hidden');const sheet=overlay.querySelector('.ms-sheet');sheet.inert=true;$('.ms-show-panel').classList.remove('hidden');$('.ms-show-panel').focus();const id=serial;
-    crownTimer=setTimeout(()=>{if(alive(id)&&phase==='void'&&panelHidden)overlay.classList.add('ms-crown-visible')},5850);
+    crownTimer=setTimeout(()=>{if(alive(id)&&phase==='void'&&panelHidden){overlay.classList.add('ms-crown-visible');overlay.querySelector('.ms-void-crown').setAttribute('tabindex','0')}},5850);
   }
-  function showPanel(){if(phase!=='void')return;panelHidden=false;clearTimeout(crownTimer);overlay.classList.remove('ms-panel-hidden','ms-crown-visible');overlay.querySelector('.ms-sheet').inert=false;$('.ms-show-panel').classList.add('hidden');$('[data-ms="hide-panel"]').focus({preventScroll:true});}
+  function showPanel(){if(phase!=='void')return;panelHidden=false;clearTimeout(crownTimer);overlay.classList.remove('ms-panel-hidden','ms-crown-visible');overlay.querySelector('.ms-sheet').inert=false;overlay.querySelector('.ms-void-crown').setAttribute('tabindex','-1');$('.ms-show-panel').classList.add('hidden');$('[data-ms="hide-panel"]').focus({preventScroll:true});}
   function voidSettings(){
     clearScene();phase='void';overlay.removeAttribute('data-ms-cutscene');document.documentElement.setAttribute('data-ms-void','');
     overlay.innerHTML=voidBackground()+'<button class="button secondary ms-show-panel hidden" data-ms="show-panel" type="button">Show panel ↓</button>'+'<button class="button secondary ms-hide-panel" data-ms="hide-panel" type="button">Hide panel ↑</button>'+panel('More Settings',
@@ -208,5 +208,6 @@
     if(event.key==='Tab'){const focusable=[...overlay.querySelectorAll('button,input,select,[tabindex="0"]'),...document.querySelectorAll('#msNarrator button')].filter(e=>!e.disabled&&!e.closest('.hidden,[inert]')&&e.getClientRects().length);if(!focusable.length){event.preventDefault();return;}const first=focusable[0],last=focusable.at(-1);if(event.shiftKey&&(document.activeElement===first||!overlay.contains(document.activeElement))){event.preventDefault();last.focus()}else if(!event.shiftKey&&(document.activeElement===last||!overlay.contains(document.activeElement))){event.preventDefault();first.focus()}}
   },true);
   root.addEventListener('brta-module-toggle',()=>{if(!enabled()&&phase!=='closed')close();bindSettings();applyPreferences();});
+  root.BRTAOverlays?.register('moreSettingsOverlay',()=>{if(phase==='gate')close();else if(phase==='lost')gate()});
   root.AmbientPanel=Object.freeze({bindSettings});bindSettings();applyPreferences();
 })(window);

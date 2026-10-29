@@ -1,0 +1,45 @@
+const {JSDOM,VirtualConsole}=require('jsdom');
+const fs=require('fs'),path=require('path'),vm=require('vm');
+const ROOT=path.resolve(__dirname,'../..');
+const errors=[];const vc=new VirtualConsole();vc.on('jsdomError',e=>errors.push(e.stack));
+const dom=new JSDOM(fs.readFileSync(ROOT+'/index.html','utf8'),{url:'https://affluendo1.github.io/brta-power-ratings/',runScripts:'outside-only',pretendToBeVisual:true,virtualConsole:vc});
+const w=dom.window;
+w.matchMedia=()=>({matches:false,addEventListener(){},removeEventListener(){}});
+w.CSS={supports:()=>true};w.structuredClone=structuredClone;w.TextEncoder=TextEncoder;
+w.IntersectionObserver=class {observe(){}unobserve(){}disconnect(){}};
+w.ResizeObserver=class {observe(){}disconnect(){}};
+Object.defineProperty(w.HTMLElement.prototype,'inert',{get(){return this.hasAttribute('inert')},set(value){this.toggleAttribute('inert',!!value)}});
+w.HTMLElement.prototype.getClientRects=function(){return this.closest('.hidden,[hidden]')?[]:[{width:100,height:50}]};
+w.HTMLElement.prototype.scrollIntoView=function(){};
+w.Element.prototype.getAnimations=()=>[];w.document.getAnimations=()=>[];
+w.Element.prototype.animate=function(){return{finished:Promise.resolve(),cancel(){},finish(){}}};
+const canvas={clearRect(){},fillRect(){},scale(){},stroke(){},beginPath(){},moveTo(){},lineTo(){},fillText(){},measureText:s=>({width:String(s).length*12}),save(){},restore(){},translate(){},rotate(){}};
+w.HTMLCanvasElement.prototype.getContext=()=>canvas;w.HTMLMediaElement.prototype.play=()=>Promise.resolve();w.HTMLMediaElement.prototype.pause=function(){};w.HTMLMediaElement.prototype.load=function(){};
+w.confirm=()=>true;
+w.localStorage.setItem('brta-following-v1',JSON.stringify({pins:[null,{},false],pending:[null,{}]}));
+w.fetch=async url=>{const file=path.join(ROOT,new URL(url,w.location.href).pathname.replace('/brta-power-ratings/',''));if(!fs.existsSync(file))return {ok:false,status:404,json:async()=>null};return{ok:true,json:async()=>JSON.parse(fs.readFileSync(file,'utf8'))}};
+const ctx=dom.getInternalVMContext();
+for(const s of [...w.document.scripts]){try{vm.runInContext(s.src?fs.readFileSync(path.join(ROOT,new URL(s.src).pathname.replace('/brta-power-ratings/','')),'utf8'):s.textContent,ctx,{filename:s.src||'bootstrap'})}catch(e){errors.push(e.stack)}}
+w.addEventListener('error',e=>errors.push(e.error?.stack||e.message));
+const tick=()=>new Promise(r=>setTimeout(r,25));
+(async()=>{await tick();await tick();const assert=require('assert/strict');assert.equal(w.document.querySelector('#ratingsTitle').textContent,'Singles ratings');assert(w.document.querySelectorAll('#ratingBody [data-player]').length>20);console.log('Loaded current section and all feature scripts');
+const click=s=>{assert(w.document.querySelector(s),s);w.document.querySelector(s).focus();w.document.querySelector(s).click()};
+const esc=()=>w.dispatchEvent(new w.KeyboardEvent('keydown',{key:'Escape',bubbles:true,cancelable:true}));
+click('#settingsBtn');await tick();click('#installBtn');await tick();esc();await tick();assert(w.document.querySelector('#installOverlay').classList.contains('hidden'));assert(!w.document.querySelector('#settingsOverlay').classList.contains('hidden'));assert.equal(w.document.activeElement.id,'installBtn');console.log('Install Escape preserves Settings and restores focus');
+click('[data-layout-open="methodology"]');await tick();esc();await tick();assert(w.document.querySelector('#layoutOverlay').classList.contains('hidden'));assert(!w.document.querySelector('#settingsOverlay').classList.contains('hidden'));assert(!w.document.querySelector('#settingsOverlay').inert);console.log('Methodology Escape restores interactive Settings');
+click('[data-studio="theme"]');await tick();esc();await tick();assert(w.document.querySelector('#themeStudioOverlay').classList.contains('hidden'));assert(!w.document.querySelector('#settingsOverlay').classList.contains('hidden'));console.log('Theme creator Escape preserves Settings');
+click('[data-changelog-open]');await tick();esc();await tick();assert(w.document.querySelector('#changelogOverlay').classList.contains('hidden'));assert(!w.document.querySelector('#settingsOverlay').classList.contains('hidden'));console.log('Changelog Escape restores Settings');esc();await tick();
+click('#roundBtn');await tick();click('[data-82-result]');await tick();assert(!w.document.querySelector('#resultOverlay').classList.contains('hidden'));esc();await tick();assert(w.document.querySelector('#resultOverlay').classList.contains('hidden'));assert(w.document.querySelector('.rounds821-overlay'));esc();await tick();assert(!w.document.querySelector('.release82-overlay'));console.log('Rounds result Escape preserves parent then dismisses cleanly');
+vm.runInContext("BRTA82.modal('Rounds test','',true).classList.add('rounds821-overlay');BRTA82.modal('First child','');BRTA82.modal('Replacement child','')",ctx);await tick();assert.equal(w.document.querySelectorAll('.release82-overlay').length,2);esc();await tick();assert.equal(w.document.querySelectorAll('.release82-overlay').length,1);esc();await tick();assert.equal(w.document.querySelectorAll('.release82-overlay').length,0);console.log('Replacing a shared child retains exactly one Rounds parent');
+click('.main-tab[data-page="ratings"]');click('#ratingBody [data-player]');await tick();assert(!w.document.querySelector('#profileOverlay').classList.contains('hidden'));click('[data-eight-split]');await tick();esc();await tick();assert(w.document.querySelector('#lab8Overlay').classList.contains('hidden'));assert(!w.document.querySelector('#profileOverlay').classList.contains('hidden'));esc();await tick();console.log('Player Lab drilldown Escape preserves lab');
+
+const singleGraph=vm.runInContext("lab8Graph('singles',Object.keys(D.ratingHistory.players)[0],'Singles',1)",ctx);assert(singleGraph.includes('<circle '));console.log('Single-observation chart contains a visible point');
+w.localStorage.setItem('brta-animations','off');let completed=false;w.runBRTAInterfaceTransition(()=>completed=true,{duration:20000,randomProgress:true});assert(completed);assert(w.document.querySelector('#modeSwitchOverlay').classList.contains('hidden'));console.log('Animations-off transitions complete immediately and clean up');
+const fetchBefore=w.fetch;w.fetch=async url=>String(url).includes('rating-search.json')?{ok:true,json:async()=>({all:{singles:[]},ranked:{singles:[]},sections:[]})}:fetchBefore(url);
+vm.runInContext("ratingScope='history';ratingView='singles';$('#search').value=':highest-rating';renderRatings()",ctx);await tick();assert(w.document.querySelector('#ratingBody').textContent.includes('No eligible entries.'));assert(!w.document.querySelector('#ratingBody').textContent.includes('Loading'));console.log('An empty resolved historical command has an empty state, not perpetual loading');
+vm.runInContext("ratingScope='section';$('#search').value='';renderRatings()",ctx);
+click('#settingsBtn');await tick();click('#showExtrasBtn');await tick();click('[data-more-settings]');await tick();esc();await tick();assert(w.document.querySelector('#moreSettingsOverlay').classList.contains('hidden'));assert(!w.document.querySelector('#settingsOverlay').classList.contains('hidden'));console.log('More Settings gate uses its own Escape cleanup and restores Settings');esc();await tick();
+
+vm.runInContext("D.meta.ratingModel='V3B';D.singles[0].rating+=100;openProfile(D.singles[0].player)",ctx);await tick();click('#profileContent [data-follow82-kind]');await tick();const pinned=JSON.parse(w.localStorage.getItem('brta-following-v1')).pins[0];assert.equal(pinned.ratingModel,'V3B');
+const modelBefore=w.layoutApplyModel;w.layoutApplyModel=async(data,model)=>{assert.equal(model,'RM3b');const copy=structuredClone(data);copy.meta.ratingModel='V3B';copy.singles.find(r=>r.player===pinned.name).rating+=100;return copy};await w.BRTAFollowing.check();const afterCheck=JSON.parse(w.localStorage.getItem('brta-following-v1')).pins[0];assert.equal(afterCheck.ratingChange,0);assert.equal(afterCheck.summary.rating,pinned.summary.rating);w.layoutApplyModel=modelBefore;esc();await tick();esc();await tick();console.log('Following discards malformed pins and compares RM3b summaries within the same model');
+if(errors.length)throw Error(errors.join('\n'));console.log('No script/runtime errors');dom.window.close();})().catch(e=>{console.error(e.stack);console.error(errors);dom.window.close();process.exitCode=1});
