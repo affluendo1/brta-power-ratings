@@ -20,9 +20,10 @@
       const others=layers().filter(e=>e!==overlay);
       overlay.style.zIndex=String(Math.max(30,...others.map(e=>Number(getComputedStyle(e).zIndex)||0))+2);
       const sheet=overlay.querySelector('section,aside');
-      if(sheet&&!sheet.hasAttribute('role')){sheet.setAttribute('role','dialog');sheet.setAttribute('aria-modal','true');const title=sheet.querySelector('h2');if(title)sheet.setAttribute('aria-label',title.textContent);}
+      if(sheet&&!sheet.hasAttribute('role')){sheet.setAttribute('role','dialog');sheet.setAttribute('aria-modal','true');sheet.dataset.dialogAutoLabel='true';}
       if(!overlay.contains(document.activeElement))controls(overlay)[0]?.focus({preventScroll:true});
     }
+    for(const sheet of document.querySelectorAll('[data-dialog-auto-label]')){const title=sheet.querySelector('h2');if(title&&sheet.getAttribute('aria-label')!==title.textContent)sheet.setAttribute('aria-label',title.textContent);}
     document.body.classList.toggle('modal-open',!!document.querySelector('.overlay:not(.hidden)'));
   }
   new MutationObserver(sync).observe(document.body,{subtree:true,childList:true,attributes:true,attributeFilter:['class']});
