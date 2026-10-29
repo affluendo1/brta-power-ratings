@@ -53,13 +53,37 @@
     {
       "position": 1,
       "team": "Basterfield Park Scratchies",
-      "wins": 4,
-      "points": 50.5,
-      "percentage": 108.81,
+      "wins": 5,
+      "points": 57.5,
+      "percentage": 109.82,
       "marker": ""
     },
     {
       "position": 2,
+      "team": "Murrumbeena Beasts",
+      "wins": 6,
+      "points": 56,
+      "percentage": 100.36,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "St James Premiers",
+      "wins": 4,
+      "points": 55,
+      "percentage": 109.82,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "St Finbar's Barbarians",
+      "wins": 5,
+      "points": 53,
+      "percentage": 93.31,
+      "marker": ""
+    },
+    {
+      "position": 5,
       "team": "Hurlingham Park All Stars",
       "wins": 4,
       "points": 50,
@@ -67,59 +91,41 @@
       "marker": ""
     },
     {
-      "position": 3,
-      "team": "St Finbar's Barbarians",
-      "wins": 5,
-      "points": 50,
-      "percentage": 94.39,
-      "marker": ""
-    },
-    {
-      "position": 4,
+      "position": 6,
       "team": "Basterfield Park Lakers",
       "wins": 4,
-      "points": 48.5,
-      "percentage": 110.19,
-      "marker": ""
-    },
-    {
-      "position": 5,
-      "team": "Murrumbeena Beasts",
-      "wins": 5,
-      "points": 48,
-      "percentage": 98.43,
-      "marker": ""
-    },
-    {
-      "position": 6,
-      "team": "St James Premiers",
-      "wins": 3,
-      "points": 46,
-      "percentage": 103.43,
+      "points": 49.5,
+      "percentage": 102.49,
       "marker": ""
     },
     {
       "position": 7,
       "team": "Hurlingham Park Hammers",
       "wins": 3,
-      "points": 37,
-      "percentage": 88.06,
+      "points": 39,
+      "percentage": 87.58,
       "marker": ""
     }
   ],
   "green_ball": false,
   "results_loaded_by_trols": null,
-  "fixtures": 44,
-  "completed_fixtures": 32,
+  "fixtures": 48,
+  "completed_fixtures": 35,
   "draw_fixtures": 56,
   "singles_rubbers": 0,
-  "doubles_rubbers": 186,
-  "latest_round": 11,
+  "doubles_rubbers": 210,
+  "latest_round": 12,
   "validation": "source discrepancies",
   "source_warnings": [
-    "Incomplete TROLS score for TN002013 doubles No. 4: '3-2'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for TN002012 doubles No. 5: ''. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for TN002012 doubles No. 6: ''. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for TN002013 doubles No. 3: ''. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for TN002013 doubles No. 4: ''. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for TN002013 doubles No. 6: '3-2'. Missing score not inferred; excluded from ratings and game totals.",
     "Incomplete TROLS score for TN002014 doubles No. 3: '2-3'. Missing score not inferred; excluded from ratings and game totals.",
     "Incomplete TROLS score for TN002014 doubles No. 4: '0-4'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for TN002014 doubles No. 5: ''. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for TN002014 doubles No. 6: ''. Missing score not inferred; excluded from ratings and game totals.",
     "Incomplete TROLS score for TN002034 doubles No. 5: '4-3'. Missing score not inferred; excluded from ratings and game totals.",
     "Incomplete TROLS score for TN002034 doubles No. 6: '3-2'. Missing score not inferred; excluded from ratings and game totals."
   ]

@@ -102,13 +102,15 @@
   "fixtures": 16,
   "completed_fixtures": 9,
   "draw_fixtures": 56,
-  "singles_rubbers": 34,
+  "singles_rubbers": 36,
   "doubles_rubbers": 18,
   "latest_round": 4,
   "validation": "source discrepancies",
   "source_warnings": [
-    "Incomplete TROLS score for AP007042 singles No. 3: '4-3'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP007042 singles No. 2: ''. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP007042 singles No. 4: '4-3'. Missing score not inferred; excluded from ratings and game totals.",
     "Incomplete TROLS score for AP007043 singles No. 1: '3-0'. Missing score not inferred; excluded from ratings and game totals.",
-    "Incomplete TROLS score for AP007043 singles No. 2: '0-1'. Missing score not inferred; excluded from ratings and game totals."
+    "Incomplete TROLS score for AP007043 singles No. 2: '0-1'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AP007043 singles No. 4: ''. Missing score not inferred; excluded from ratings and game totals."
   ]
 }

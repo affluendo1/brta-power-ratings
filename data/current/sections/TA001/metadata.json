@@ -48,17 +48,17 @@
     {
       "position": 1,
       "team": "BLTC",
-      "wins": 9,
-      "points": 70.5,
-      "percentage": 179.4,
+      "wins": 10,
+      "points": 78.5,
+      "percentage": 197.51,
       "marker": ""
     },
     {
       "position": 2,
       "team": "Mordialloc White",
-      "wins": 8,
-      "points": 67,
-      "percentage": 178.18,
+      "wins": 9,
+      "points": 74,
+      "percentage": 176.13,
       "marker": ""
     },
     {
@@ -67,7 +67,7 @@
       "wins": 8,
       "points": 63,
       "percentage": 169.54,
-      "marker": ""
+      "marker": "*"
     },
     {
       "position": 4,
@@ -75,14 +75,14 @@
       "wins": 6,
       "points": 49,
       "percentage": 98.93,
-      "marker": ""
+      "marker": "*"
     },
     {
       "position": 5,
       "team": "Aspendale Green",
       "wins": 3,
-      "points": 30,
-      "percentage": 81.11,
+      "points": 31,
+      "percentage": 79.39,
       "marker": ""
     },
     {
@@ -98,18 +98,21 @@
       "team": "Dingley",
       "wins": 0,
       "points": 8,
-      "percentage": 24.61,
+      "percentage": 22.77,
       "marker": ""
     }
   ],
   "green_ball": false,
   "results_loaded_by_trols": null,
-  "fixtures": 52,
-  "completed_fixtures": 37,
+  "fixtures": 58,
+  "completed_fixtures": 39,
   "draw_fixtures": 56,
   "singles_rubbers": 0,
-  "doubles_rubbers": 146,
-  "latest_round": 13,
-  "validation": "passed",
-  "source_warnings": []
+  "doubles_rubbers": 156,
+  "latest_round": 16,
+  "validation": "source discrepancies",
+  "source_warnings": [
+    "Incomplete TROLS score for TA001044 doubles No. 3: ''. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for TA001044 doubles No. 4: ''. Missing score not inferred; excluded from ratings and game totals."
+  ]
 }

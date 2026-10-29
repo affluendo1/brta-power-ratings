@@ -52,30 +52,38 @@
   "official_standings": [
     {
       "position": 1,
-      "team": "St James Redlegs",
+      "team": "Keysborough KeysyComeKGo",
       "wins": 6,
-      "points": 65,
-      "percentage": 125.38,
+      "points": 69,
+      "percentage": 129.32,
       "marker": ""
     },
     {
       "position": 2,
-      "team": "Keysborough KeysyComeKGo",
-      "wins": 5,
-      "points": 61,
-      "percentage": 128.48,
+      "team": "St James Redlegs",
+      "wins": 6,
+      "points": 67,
+      "percentage": 118.61,
       "marker": ""
     },
     {
       "position": 3,
       "team": "Basterfield Park Basterfield",
       "wins": 5,
-      "points": 57.5,
-      "percentage": 131.03,
+      "points": 58.5,
+      "percentage": 117.7,
       "marker": ""
     },
     {
       "position": 4,
+      "team": "Maccabi Magicians",
+      "wins": 3,
+      "points": 49.5,
+      "percentage": 93.25,
+      "marker": ""
+    },
+    {
+      "position": 5,
       "team": "BLTC Tornadoes",
       "wins": 4,
       "points": 42,
@@ -83,40 +91,42 @@
       "marker": ""
     },
     {
-      "position": 5,
-      "team": "Maccabi Magicians",
-      "wins": 2,
-      "points": 41.5,
-      "percentage": 89.33,
-      "marker": ""
-    },
-    {
       "position": 6,
-      "team": "Hurlingham Park HPSauce",
-      "wins": 2,
-      "points": 32,
-      "percentage": 84.65,
+      "team": "Middle Brighton Warriors",
+      "wins": 3,
+      "points": 40,
+      "percentage": 82.28,
       "marker": ""
     },
     {
       "position": 7,
-      "team": "Middle Brighton Warriors",
+      "team": "Hurlingham Park HPSauce",
       "wins": 2,
-      "points": 31,
-      "percentage": 73.06,
+      "points": 34,
+      "percentage": 83.33,
       "marker": ""
     }
   ],
   "green_ball": false,
   "results_loaded_by_trols": null,
-  "fixtures": 44,
-  "completed_fixtures": 29,
+  "fixtures": 48,
+  "completed_fixtures": 32,
   "draw_fixtures": 56,
   "singles_rubbers": 0,
-  "doubles_rubbers": 164,
-  "latest_round": 11,
+  "doubles_rubbers": 192,
+  "latest_round": 12,
   "validation": "source discrepancies",
   "source_warnings": [
-    "Incomplete TROLS score for TN003083 doubles No. 1: '1-0'. Missing score not inferred; excluded from ratings and game totals."
+    "Incomplete TROLS score for TN003011 doubles No. 5: ''. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for TN003011 doubles No. 6: ''. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for TN003013 doubles No. 3: ''. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for TN003013 doubles No. 4: ''. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for TN003013 doubles No. 5: ''. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for TN003083 doubles No. 1: '1-0'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for TN003083 doubles No. 2: ''. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for TN003083 doubles No. 3: ''. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for TN003083 doubles No. 4: ''. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for TN003083 doubles No. 5: ''. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for TN003083 doubles No. 6: ''. Missing score not inferred; excluded from ratings and game totals."
   ]
 }

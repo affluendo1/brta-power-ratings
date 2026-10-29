@@ -48,19 +48,19 @@
   "official_standings": [
     {
       "position": 1,
-      "team": "St Pauls Crusaders",
-      "wins": 6,
-      "points": 61,
-      "percentage": 120.18,
+      "team": "Wattle Warriors",
+      "wins": 5,
+      "points": 66,
+      "percentage": 157.05,
       "marker": ""
     },
     {
       "position": 2,
-      "team": "Wattle Warriors",
-      "wins": 4,
-      "points": 56,
-      "percentage": 157.05,
-      "marker": ""
+      "team": "St Pauls Crusaders",
+      "wins": 6,
+      "points": 61,
+      "percentage": 120.18,
+      "marker": "*"
     },
     {
       "position": 3,
@@ -84,21 +84,25 @@
       "wins": 1,
       "points": 18,
       "percentage": 60.43,
-      "marker": ""
+      "marker": "*"
     }
   ],
   "green_ball": false,
   "results_loaded_by_trols": null,
-  "fixtures": 33,
+  "fixtures": 36,
   "completed_fixtures": 19,
   "draw_fixtures": 45,
   "singles_rubbers": 0,
-  "doubles_rubbers": 110,
-  "latest_round": 11,
+  "doubles_rubbers": 114,
+  "latest_round": 12,
   "validation": "source discrepancies",
   "source_warnings": [
     "Incomplete TROLS score for TN005011 doubles No. 5: '0-2'. Missing score not inferred; excluded from ratings and game totals.",
     "Incomplete TROLS score for TN005011 doubles No. 6: '1-2'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for TN005023 doubles No. 3: ''. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for TN005023 doubles No. 4: ''. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for TN005023 doubles No. 5: ''. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for TN005023 doubles No. 6: ''. Missing score not inferred; excluded from ratings and game totals.",
     "Incomplete TROLS score for TN005052 doubles No. 3: '6-6'. Missing score not inferred; excluded from ratings and game totals."
   ]
 }

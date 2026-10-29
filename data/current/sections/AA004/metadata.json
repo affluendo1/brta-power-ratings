@@ -49,11 +49,14 @@
   "fixtures": 48,
   "completed_fixtures": 42,
   "draw_fixtures": 56,
-  "singles_rubbers": 165,
+  "singles_rubbers": 168,
   "doubles_rubbers": 84,
   "latest_round": 12,
   "validation": "source discrepancies",
   "source_warnings": [
-    "Incomplete TROLS score for AA004024 singles No. 1: '2-1'. Missing score not inferred; excluded from ratings and game totals."
+    "Incomplete TROLS score for AA004024 singles No. 1: ''. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AA004024 singles No. 2: ''. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AA004024 singles No. 3: ''. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AA004024 singles No. 4: '2-1'. Missing score not inferred; excluded from ratings and game totals."
   ]
 }

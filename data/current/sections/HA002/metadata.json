@@ -108,12 +108,16 @@
   "completed_fixtures": 37,
   "draw_fixtures": 56,
   "singles_rubbers": 0,
-  "doubles_rubbers": 144,
+  "doubles_rubbers": 148,
   "latest_round": 13,
   "validation": "source discrepancies",
   "source_warnings": [
     "Incomplete TROLS score for HA002081 doubles No. 1: '5-7 1-1'. Missing score not inferred; excluded from ratings and game totals.",
     "Incomplete TROLS score for HA002081 doubles No. 2: '6-2 2-1'. Missing score not inferred; excluded from ratings and game totals.",
-    "Incomplete TROLS score for HA002083 doubles No. 1: '6-4 1-0'. Missing score not inferred; excluded from ratings and game totals."
+    "Incomplete TROLS score for HA002081 doubles No. 3: ''. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for HA002081 doubles No. 4: ''. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for HA002083 doubles No. 1: '6-4 1-0'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for HA002083 doubles No. 3: ''. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for HA002083 doubles No. 4: ''. Missing score not inferred; excluded from ratings and game totals."
   ]
 }

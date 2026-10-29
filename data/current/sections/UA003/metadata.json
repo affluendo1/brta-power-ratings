@@ -49,9 +49,13 @@
   "fixtures": 48,
   "completed_fixtures": 32,
   "draw_fixtures": 56,
-  "singles_rubbers": 62,
-  "doubles_rubbers": 31,
+  "singles_rubbers": 64,
+  "doubles_rubbers": 32,
   "latest_round": 12,
-  "validation": "passed",
-  "source_warnings": []
+  "validation": "source discrepancies",
+  "source_warnings": [
+    "Incomplete TROLS score for UA003121 singles No. 1: ''. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for UA003121 singles No. 2: ''. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for UA003121 doubles No. 1: ''. Missing score not inferred; excluded from ratings and game totals."
+  ]
 }

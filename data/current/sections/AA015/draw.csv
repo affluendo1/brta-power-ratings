@@ -1,57 +1,57 @@
-draw_id,date,round,stage,round_label,home_team,away_team,fixture_id,start_time,venue
-draw-aa015-r1-bltc-stella-maris,18 Jul 26,1,regular,Round 1,BLTC,Stella Maris,AA015012,10:00,BLTC
-draw-aa015-r1-bye-mordialloc,18 Jul 26,1,regular,Round 1,Bye,Mordialloc,pending-aa015-r1-bye-mordialloc,,Bye
-draw-aa015-r1-clarinda-glen-huntly,18 Jul 26,1,regular,Round 1,Clarinda,Glen Huntly,AA015011,10:00,Clarinda
-draw-aa015-r1-st-joan-of-arc-ormond,18 Jul 26,1,regular,Round 1,St Joan of Arc,Ormond,AA015013,10:00,St Joan of Arc
-draw-aa015-r2-glen-huntly-bltc,25 Jul 26,2,regular,Round 2,Glen Huntly,BLTC,AA015022,8:00,Glen Huntly
-draw-aa015-r2-mordialloc-clarinda,25 Jul 26,2,regular,Round 2,Mordialloc,Clarinda,AA015021,8:30,Mordialloc
-draw-aa015-r2-ormond-bye,25 Jul 26,2,regular,Round 2,Ormond,Bye,pending-aa015-r2-ormond-bye,10:00,Lauriston
-draw-aa015-r2-stella-maris-st-joan-of-arc,25 Jul 26,2,regular,Round 2,Stella Maris,St Joan of Arc,AA015023,8:30,Stella Maris
-draw-aa015-r3-bltc-mordialloc,1 Aug 26,3,regular,Round 3,BLTC,Mordialloc,AA015032,10:00,BLTC
-draw-aa015-r3-bye-stella-maris,1 Aug 26,3,regular,Round 3,Bye,Stella Maris,pending-aa015-r3-bye-stella-maris,,Bye
-draw-aa015-r3-clarinda-ormond,1 Aug 26,3,regular,Round 3,Clarinda,Ormond,AA015031,10:00,Clarinda
-draw-aa015-r3-st-joan-of-arc-glen-huntly,1 Aug 26,3,regular,Round 3,St Joan of Arc,Glen Huntly,AA015033,10:00,St Joan of Arc
-draw-aa015-r4-glen-huntly-bye,8 Aug 26,4,regular,Round 4,Glen Huntly,Bye,pending-aa015-r4-glen-huntly-bye,8:00,Glen Huntly
-draw-aa015-r4-mordialloc-st-joan-of-arc,8 Aug 26,4,regular,Round 4,Mordialloc,St Joan of Arc,AA015043,8:30,Mordialloc
-draw-aa015-r4-ormond-bltc,8 Aug 26,4,regular,Round 4,Ormond,BLTC,AA015042,10:00,Lauriston
-draw-aa015-r4-stella-maris-clarinda,8 Aug 26,4,regular,Round 4,Stella Maris,Clarinda,AA015041,8:30,Stella Maris
-draw-aa015-r5-clarinda-bltc,15 Aug 26,5,regular,Round 5,Clarinda,BLTC,AA015054,10:00,Clarinda
-draw-aa015-r5-mordialloc-ormond,15 Aug 26,5,regular,Round 5,Mordialloc,Ormond,AA015052,8:30,Mordialloc
-draw-aa015-r5-st-joan-of-arc-bye,15 Aug 26,5,regular,Round 5,St Joan of Arc,Bye,pending-aa015-r5-st-joan-of-arc-bye,10:00,St Joan of Arc
-draw-aa015-r5-stella-maris-glen-huntly,15 Aug 26,5,regular,Round 5,Stella Maris,Glen Huntly,AA015053,8:30,Stella Maris
-draw-aa015-r6-bltc-st-joan-of-arc,22 Aug 26,6,regular,Round 6,BLTC,St Joan of Arc,pending-aa015-r6-bltc-st-joan-of-arc,10:00,BLTC
-draw-aa015-r6-bye-clarinda,22 Aug 26,6,regular,Round 6,Bye,Clarinda,pending-aa015-r6-bye-clarinda,,Bye
-draw-aa015-r6-glen-huntly-mordialloc,22 Aug 26,6,regular,Round 6,Glen Huntly,Mordialloc,AA015064,8:00,Glen Huntly
-draw-aa015-r6-ormond-stella-maris,22 Aug 26,6,regular,Round 6,Ormond,Stella Maris,pending-aa015-r6-ormond-stella-maris,10:00,Lauriston
-draw-aa015-r7-bltc-bye,29 Aug 26,7,regular,Round 7,BLTC,Bye,pending-aa015-r7-bltc-bye,10:00,BLTC
-draw-aa015-r7-clarinda-st-joan-of-arc,29 Aug 26,7,regular,Round 7,Clarinda,St Joan of Arc,pending-aa015-r7-clarinda-st-joan-of-arc,10:00,Clarinda
-draw-aa015-r7-mordialloc-stella-maris,29 Aug 26,7,regular,Round 7,Mordialloc,Stella Maris,AA015073,8:30,Mordialloc
-draw-aa015-r7-ormond-glen-huntly,29 Aug 26,7,regular,Round 7,Ormond,Glen Huntly,AA015074,10:00,Lauriston
-draw-aa015-r8-glen-huntly-clarinda,5 Sep 26,8,regular,Round 8,Glen Huntly,Clarinda,pending-aa015-r8-glen-huntly-clarinda,8:00,Glen Huntly
-draw-aa015-r8-mordialloc-bye,5 Sep 26,8,regular,Round 8,Mordialloc,Bye,pending-aa015-r8-mordialloc-bye,8:30,Mordialloc
-draw-aa015-r8-ormond-st-joan-of-arc,5 Sep 26,8,regular,Round 8,Ormond,St Joan of Arc,pending-aa015-r8-ormond-st-joan-of-arc,10:00,Lauriston
-draw-aa015-r8-stella-maris-bltc,5 Sep 26,8,regular,Round 8,Stella Maris,BLTC,pending-aa015-r8-stella-maris-bltc,8:30,Stella Maris
-draw-aa015-r9-bltc-glen-huntly,12 Sep 26,9,regular,Round 9,BLTC,Glen Huntly,AA015092,10:00,BLTC
-draw-aa015-r9-bye-ormond,12 Sep 26,9,regular,Round 9,Bye,Ormond,pending-aa015-r9-bye-ormond,,Bye
-draw-aa015-r9-clarinda-mordialloc,12 Sep 26,9,regular,Round 9,Clarinda,Mordialloc,AA015091,10:00,Clarinda
-draw-aa015-r9-st-joan-of-arc-stella-maris,12 Sep 26,9,regular,Round 9,St Joan of Arc,Stella Maris,AA015093,10:00,St Joan of Arc
-draw-aa015-r10-glen-huntly-st-joan-of-arc,10 Oct 26,10,regular,Round 10,Glen Huntly,St Joan of Arc,AA015103,8:00,Glen Huntly
-draw-aa015-r10-mordialloc-bltc,10 Oct 26,10,regular,Round 10,Mordialloc,BLTC,AA015102,8:30,Mordialloc
-draw-aa015-r10-ormond-clarinda,10 Oct 26,10,regular,Round 10,Ormond,Clarinda,AA015101,10:00,Lauriston
-draw-aa015-r10-stella-maris-bye,10 Oct 26,10,regular,Round 10,Stella Maris,Bye,pending-aa015-r10-stella-maris-bye,8:30,Stella Maris
-draw-aa015-r11-bltc-ormond,17 Oct 26,11,regular,Round 11,BLTC,Ormond,AA015112,10:00,BLTC
-draw-aa015-r11-bye-glen-huntly,17 Oct 26,11,regular,Round 11,Bye,Glen Huntly,pending-aa015-r11-bye-glen-huntly,,Bye
-draw-aa015-r11-clarinda-stella-maris,17 Oct 26,11,regular,Round 11,Clarinda,Stella Maris,AA015111,10:00,Clarinda
-draw-aa015-r11-st-joan-of-arc-mordialloc,17 Oct 26,11,regular,Round 11,St Joan of Arc,Mordialloc,AA015113,10:00,St Joan of Arc
-draw-aa015-r12-bltc-clarinda,24 Oct 26,12,regular,Round 12,BLTC,Clarinda,AA015124,10:00,BLTC
-draw-aa015-r12-bye-st-joan-of-arc,24 Oct 26,12,regular,Round 12,Bye,St Joan of Arc,pending-aa015-r12-bye-st-joan-of-arc,,Bye
-draw-aa015-r12-glen-huntly-stella-maris,24 Oct 26,12,regular,Round 12,Glen Huntly,Stella Maris,AA015123,8:00,Glen Huntly
-draw-aa015-r12-ormond-mordialloc,24 Oct 26,12,regular,Round 12,Ormond,Mordialloc,AA015122,10:00,Lauriston
-draw-aa015-r13-clarinda-bye,7 Nov 26,13,regular,Round 13,Clarinda,Bye,,10:00,Clarinda
-draw-aa015-r13-mordialloc-glen-huntly,7 Nov 26,13,regular,Round 13,Mordialloc,Glen Huntly,,8:30,Mordialloc
-draw-aa015-r13-st-joan-of-arc-bltc,7 Nov 26,13,regular,Round 13,St Joan of Arc,BLTC,,10:00,St Joan of Arc
-draw-aa015-r13-stella-maris-ormond,7 Nov 26,13,regular,Round 13,Stella Maris,Ormond,,8:30,Stella Maris
-draw-aa015-r14-bye-bltc,14 Nov 26,14,regular,Round 14,Bye,BLTC,,,Bye
-draw-aa015-r14-glen-huntly-ormond,14 Nov 26,14,regular,Round 14,Glen Huntly,Ormond,,8:00,Glen Huntly
-draw-aa015-r14-st-joan-of-arc-clarinda,14 Nov 26,14,regular,Round 14,St Joan of Arc,Clarinda,,10:00,St Joan of Arc
-draw-aa015-r14-stella-maris-mordialloc,14 Nov 26,14,regular,Round 14,Stella Maris,Mordialloc,,8:30,Stella Maris
+draw_id,date,round,stage,round_label,home_team,away_team,fixture_id,start_time,venue,venue_override
+draw-aa015-r1-bltc-stella-maris,18 Jul 26,1,regular,Round 1,BLTC,Stella Maris,AA015012,10:00,BLTC,
+draw-aa015-r1-bye-mordialloc,18 Jul 26,1,regular,Round 1,Bye,Mordialloc,pending-aa015-r1-bye-mordialloc,,Bye,
+draw-aa015-r1-clarinda-glen-huntly,18 Jul 26,1,regular,Round 1,Clarinda,Glen Huntly,AA015011,10:00,Clarinda,
+draw-aa015-r1-st-joan-of-arc-ormond,18 Jul 26,1,regular,Round 1,St Joan of Arc,Ormond,AA015013,10:00,St Joan of Arc,
+draw-aa015-r2-glen-huntly-bltc,25 Jul 26,2,regular,Round 2,Glen Huntly,BLTC,AA015022,8:00,Glen Huntly,
+draw-aa015-r2-mordialloc-clarinda,25 Jul 26,2,regular,Round 2,Mordialloc,Clarinda,AA015021,8:30,Mordialloc,
+draw-aa015-r2-ormond-bye,25 Jul 26,2,regular,Round 2,Ormond,Bye,pending-aa015-r2-ormond-bye,10:00,Lauriston,Lauriston
+draw-aa015-r2-stella-maris-st-joan-of-arc,25 Jul 26,2,regular,Round 2,Stella Maris,St Joan of Arc,AA015023,8:30,Stella Maris,
+draw-aa015-r3-bltc-mordialloc,1 Aug 26,3,regular,Round 3,BLTC,Mordialloc,AA015032,10:00,BLTC,
+draw-aa015-r3-bye-stella-maris,1 Aug 26,3,regular,Round 3,Bye,Stella Maris,pending-aa015-r3-bye-stella-maris,,Bye,
+draw-aa015-r3-clarinda-ormond,1 Aug 26,3,regular,Round 3,Clarinda,Ormond,AA015031,10:00,Clarinda,
+draw-aa015-r3-st-joan-of-arc-glen-huntly,1 Aug 26,3,regular,Round 3,St Joan of Arc,Glen Huntly,AA015033,10:00,St Joan of Arc,
+draw-aa015-r4-glen-huntly-bye,8 Aug 26,4,regular,Round 4,Glen Huntly,Bye,pending-aa015-r4-glen-huntly-bye,8:00,Glen Huntly,
+draw-aa015-r4-mordialloc-st-joan-of-arc,8 Aug 26,4,regular,Round 4,Mordialloc,St Joan of Arc,AA015043,8:30,Mordialloc,
+draw-aa015-r4-ormond-bltc,8 Aug 26,4,regular,Round 4,Ormond,BLTC,AA015042,10:00,Lauriston,Lauriston
+draw-aa015-r4-stella-maris-clarinda,8 Aug 26,4,regular,Round 4,Stella Maris,Clarinda,AA015041,8:30,Stella Maris,
+draw-aa015-r5-clarinda-bltc,15 Aug 26,5,regular,Round 5,Clarinda,BLTC,AA015054,10:00,Clarinda,
+draw-aa015-r5-mordialloc-ormond,15 Aug 26,5,regular,Round 5,Mordialloc,Ormond,AA015052,8:30,Mordialloc,
+draw-aa015-r5-st-joan-of-arc-bye,15 Aug 26,5,regular,Round 5,St Joan of Arc,Bye,pending-aa015-r5-st-joan-of-arc-bye,10:00,St Joan of Arc,
+draw-aa015-r5-stella-maris-glen-huntly,15 Aug 26,5,regular,Round 5,Stella Maris,Glen Huntly,AA015053,8:30,Stella Maris,
+draw-aa015-r6-bltc-st-joan-of-arc,22 Aug 26,6,regular,Round 6,BLTC,St Joan of Arc,pending-aa015-r6-bltc-st-joan-of-arc,10:00,BLTC,
+draw-aa015-r6-bye-clarinda,22 Aug 26,6,regular,Round 6,Bye,Clarinda,pending-aa015-r6-bye-clarinda,,Bye,
+draw-aa015-r6-glen-huntly-mordialloc,22 Aug 26,6,regular,Round 6,Glen Huntly,Mordialloc,AA015064,8:00,Glen Huntly,
+draw-aa015-r6-ormond-stella-maris,22 Aug 26,6,regular,Round 6,Ormond,Stella Maris,pending-aa015-r6-ormond-stella-maris,10:00,Lauriston,Lauriston
+draw-aa015-r7-bltc-bye,29 Aug 26,7,regular,Round 7,BLTC,Bye,pending-aa015-r7-bltc-bye,10:00,BLTC,
+draw-aa015-r7-clarinda-st-joan-of-arc,29 Aug 26,7,regular,Round 7,Clarinda,St Joan of Arc,pending-aa015-r7-clarinda-st-joan-of-arc,10:00,Clarinda,
+draw-aa015-r7-mordialloc-stella-maris,29 Aug 26,7,regular,Round 7,Mordialloc,Stella Maris,AA015073,8:30,Mordialloc,
+draw-aa015-r7-ormond-glen-huntly,29 Aug 26,7,regular,Round 7,Ormond,Glen Huntly,AA015074,10:00,Lauriston,Lauriston
+draw-aa015-r8-glen-huntly-clarinda,5 Sep 26,8,regular,Round 8,Glen Huntly,Clarinda,pending-aa015-r8-glen-huntly-clarinda,8:00,Glen Huntly,
+draw-aa015-r8-mordialloc-bye,5 Sep 26,8,regular,Round 8,Mordialloc,Bye,pending-aa015-r8-mordialloc-bye,8:30,Mordialloc,
+draw-aa015-r8-ormond-st-joan-of-arc,5 Sep 26,8,regular,Round 8,Ormond,St Joan of Arc,pending-aa015-r8-ormond-st-joan-of-arc,10:00,Lauriston,Lauriston
+draw-aa015-r8-stella-maris-bltc,5 Sep 26,8,regular,Round 8,Stella Maris,BLTC,pending-aa015-r8-stella-maris-bltc,8:30,Stella Maris,
+draw-aa015-r9-bltc-glen-huntly,12 Sep 26,9,regular,Round 9,BLTC,Glen Huntly,AA015092,10:00,BLTC,
+draw-aa015-r9-bye-ormond,12 Sep 26,9,regular,Round 9,Bye,Ormond,pending-aa015-r9-bye-ormond,,Bye,
+draw-aa015-r9-clarinda-mordialloc,12 Sep 26,9,regular,Round 9,Clarinda,Mordialloc,AA015091,10:00,Clarinda,
+draw-aa015-r9-st-joan-of-arc-stella-maris,12 Sep 26,9,regular,Round 9,St Joan of Arc,Stella Maris,AA015093,10:00,St Joan of Arc,
+draw-aa015-r10-glen-huntly-st-joan-of-arc,10 Oct 26,10,regular,Round 10,Glen Huntly,St Joan of Arc,AA015103,8:00,Glen Huntly,
+draw-aa015-r10-mordialloc-bltc,10 Oct 26,10,regular,Round 10,Mordialloc,BLTC,AA015102,8:30,Mordialloc,
+draw-aa015-r10-ormond-clarinda,10 Oct 26,10,regular,Round 10,Ormond,Clarinda,AA015101,10:00,Lauriston,Lauriston
+draw-aa015-r10-stella-maris-bye,10 Oct 26,10,regular,Round 10,Stella Maris,Bye,pending-aa015-r10-stella-maris-bye,8:30,Stella Maris,
+draw-aa015-r11-bltc-ormond,17 Oct 26,11,regular,Round 11,BLTC,Ormond,AA015112,10:00,BLTC,
+draw-aa015-r11-bye-glen-huntly,17 Oct 26,11,regular,Round 11,Bye,Glen Huntly,pending-aa015-r11-bye-glen-huntly,,Bye,
+draw-aa015-r11-clarinda-stella-maris,17 Oct 26,11,regular,Round 11,Clarinda,Stella Maris,AA015111,10:00,Clarinda,
+draw-aa015-r11-st-joan-of-arc-mordialloc,17 Oct 26,11,regular,Round 11,St Joan of Arc,Mordialloc,AA015113,10:00,St Joan of Arc,
+draw-aa015-r12-bltc-clarinda,24 Oct 26,12,regular,Round 12,BLTC,Clarinda,AA015124,10:00,BLTC,
+draw-aa015-r12-bye-st-joan-of-arc,24 Oct 26,12,regular,Round 12,Bye,St Joan of Arc,pending-aa015-r12-bye-st-joan-of-arc,,Bye,
+draw-aa015-r12-glen-huntly-stella-maris,24 Oct 26,12,regular,Round 12,Glen Huntly,Stella Maris,AA015123,8:00,Glen Huntly,
+draw-aa015-r12-ormond-mordialloc,24 Oct 26,12,regular,Round 12,Ormond,Mordialloc,AA015122,10:00,Lauriston,Lauriston
+draw-aa015-r13-clarinda-bye,7 Nov 26,13,regular,Round 13,Clarinda,Bye,,10:00,Clarinda,
+draw-aa015-r13-mordialloc-glen-huntly,7 Nov 26,13,regular,Round 13,Mordialloc,Glen Huntly,,8:30,Mordialloc,
+draw-aa015-r13-st-joan-of-arc-bltc,7 Nov 26,13,regular,Round 13,St Joan of Arc,BLTC,,10:00,St Joan of Arc,
+draw-aa015-r13-stella-maris-ormond,7 Nov 26,13,regular,Round 13,Stella Maris,Ormond,,8:30,Stella Maris,
+draw-aa015-r14-bye-bltc,14 Nov 26,14,regular,Round 14,Bye,BLTC,,,Bye,
+draw-aa015-r14-glen-huntly-ormond,14 Nov 26,14,regular,Round 14,Glen Huntly,Ormond,,8:00,Glen Huntly,
+draw-aa015-r14-st-joan-of-arc-clarinda,14 Nov 26,14,regular,Round 14,St Joan of Arc,Clarinda,,10:00,St Joan of Arc,
+draw-aa015-r14-stella-maris-mordialloc,14 Nov 26,14,regular,Round 14,Stella Maris,Mordialloc,,8:30,Stella Maris,

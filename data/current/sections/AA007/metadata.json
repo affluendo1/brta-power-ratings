@@ -49,11 +49,15 @@
   "fixtures": 48,
   "completed_fixtures": 42,
   "draw_fixtures": 56,
-  "singles_rubbers": 164,
+  "singles_rubbers": 168,
   "doubles_rubbers": 84,
   "latest_round": 12,
   "validation": "source discrepancies",
   "source_warnings": [
+    "Incomplete TROLS score for AA007062 singles No. 1: ''. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AA007062 singles No. 2: ''. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AA007062 singles No. 3: ''. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AA007062 singles No. 4: ''. Missing score not inferred; excluded from ratings and game totals.",
     "Incomplete TROLS score for AA007112 singles No. 1: '6-'. Missing score not inferred; excluded from ratings and game totals.",
     "Fixture game totals do not match rubbers for AA007112: TROLS team total 28-24; complete-score total 22-24. Both published records retained.",
     "Fixture rubber totals do not match rubbers for AA007112: TROLS 3-3; scorecard 2-3. Both published records retained."

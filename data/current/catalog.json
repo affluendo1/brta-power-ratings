@@ -1,5 +1,5 @@
 {
-  "synced_at_utc": "2026-10-28T21:40:29.855414+00:00",
+  "synced_at_utc": "2026-10-29T11:37:15.657996+00:00",
   "competitions": {
     "AA": "Saturday AM - Spring 2026",
     "AP": "Saturday PM - Summer 2026/27",
@@ -155,11 +155,16 @@
       "fixtures": 48,
       "completed_fixtures": 41,
       "draw_fixtures": 56,
-      "singles_rubbers": 160,
+      "singles_rubbers": 164,
       "doubles_rubbers": 82,
       "latest_round": 12,
-      "validation": "passed",
-      "source_warnings": []
+      "validation": "source discrepancies",
+      "source_warnings": [
+        "Incomplete TROLS score for AA003061 singles No. 1: ''. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for AA003061 singles No. 2: ''. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for AA003061 singles No. 3: ''. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for AA003061 singles No. 4: ''. Missing score not inferred; excluded from ratings and game totals."
+      ]
     },
     {
       "competition_code": "AA",
@@ -212,12 +217,15 @@
       "fixtures": 48,
       "completed_fixtures": 42,
       "draw_fixtures": 56,
-      "singles_rubbers": 165,
+      "singles_rubbers": 168,
       "doubles_rubbers": 84,
       "latest_round": 12,
       "validation": "source discrepancies",
       "source_warnings": [
-        "Incomplete TROLS score for AA004024 singles No. 1: '2-1'. Missing score not inferred; excluded from ratings and game totals."
+        "Incomplete TROLS score for AA004024 singles No. 1: ''. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for AA004024 singles No. 2: ''. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for AA004024 singles No. 3: ''. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for AA004024 singles No. 4: '2-1'. Missing score not inferred; excluded from ratings and game totals."
       ]
     },
     {
@@ -271,12 +279,16 @@
       "fixtures": 48,
       "completed_fixtures": 41,
       "draw_fixtures": 56,
-      "singles_rubbers": 161,
-      "doubles_rubbers": 81,
+      "singles_rubbers": 164,
+      "doubles_rubbers": 82,
       "latest_round": 12,
       "validation": "source discrepancies",
       "source_warnings": [
-        "Incomplete TROLS score for AA005021 singles No. 4: '3-3'. Missing score not inferred; excluded from ratings and game totals."
+        "Incomplete TROLS score for AA005021 singles No. 4: '3-3'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for AA005063 singles No. 1: ''. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for AA005063 singles No. 3: ''. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for AA005063 singles No. 4: ''. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for AA005063 doubles No. 1: ''. Missing score not inferred; excluded from ratings and game totals."
       ]
     },
     {
@@ -387,11 +399,15 @@
       "fixtures": 48,
       "completed_fixtures": 42,
       "draw_fixtures": 56,
-      "singles_rubbers": 164,
+      "singles_rubbers": 168,
       "doubles_rubbers": 84,
       "latest_round": 12,
       "validation": "source discrepancies",
       "source_warnings": [
+        "Incomplete TROLS score for AA007062 singles No. 1: ''. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for AA007062 singles No. 2: ''. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for AA007062 singles No. 3: ''. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for AA007062 singles No. 4: ''. Missing score not inferred; excluded from ratings and game totals.",
         "Incomplete TROLS score for AA007112 singles No. 1: '6-'. Missing score not inferred; excluded from ratings and game totals.",
         "Fixture game totals do not match rubbers for AA007112: TROLS team total 28-24; complete-score total 22-24. Both published records retained.",
         "Fixture rubber totals do not match rubbers for AA007112: TROLS 3-3; scorecard 2-3. Both published records retained."
@@ -842,11 +858,14 @@
       "fixtures": 48,
       "completed_fixtures": 30,
       "draw_fixtures": 56,
-      "singles_rubbers": 118,
+      "singles_rubbers": 120,
       "doubles_rubbers": 60,
       "latest_round": 12,
-      "validation": "passed",
-      "source_warnings": []
+      "validation": "source discrepancies",
+      "source_warnings": [
+        "Incomplete TROLS score for AA015064 singles No. 1: ''. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for AA015064 singles No. 2: ''. Missing score not inferred; excluded from ratings and game totals."
+      ]
     },
     {
       "competition_code": "AA",
@@ -899,11 +918,14 @@
       "fixtures": 48,
       "completed_fixtures": 23,
       "draw_fixtures": 54,
-      "singles_rubbers": 90,
+      "singles_rubbers": 92,
       "doubles_rubbers": 46,
       "latest_round": 12,
-      "validation": "passed",
-      "source_warnings": []
+      "validation": "source discrepancies",
+      "source_warnings": [
+        "Incomplete TROLS score for AA016061 singles No. 2: ''. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for AA016061 singles No. 4: ''. Missing score not inferred; excluded from ratings and game totals."
+      ]
     },
     {
       "competition_code": "AA",
@@ -956,11 +978,20 @@
       "fixtures": 48,
       "completed_fixtures": 33,
       "draw_fixtures": 56,
-      "singles_rubbers": 126,
-      "doubles_rubbers": 64,
+      "singles_rubbers": 132,
+      "doubles_rubbers": 66,
       "latest_round": 12,
-      "validation": "passed",
-      "source_warnings": []
+      "validation": "source discrepancies",
+      "source_warnings": [
+        "Incomplete TROLS score for AA017062 singles No. 1: ''. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for AA017062 singles No. 2: ''. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for AA017083 singles No. 1: ''. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for AA017083 singles No. 2: ''. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for AA017083 singles No. 3: ''. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for AA017083 singles No. 4: ''. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for AA017083 doubles No. 1: ''. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for AA017083 doubles No. 2: ''. Missing score not inferred; excluded from ratings and game totals."
+      ]
     },
     {
       "competition_code": "AA",
@@ -1060,10 +1091,10 @@
         {
           "position": 1,
           "team": "Buckley Park",
-          "wins": 2,
-          "points": 24,
-          "percentage": 220.0,
-          "marker": "*"
+          "wins": 3,
+          "points": 34,
+          "percentage": 220.78,
+          "marker": ""
         },
         {
           "position": 2,
@@ -1102,17 +1133,17 @@
           "team": "Altona Gold",
           "wins": 0,
           "points": 8,
-          "percentage": 63.0,
-          "marker": "*"
+          "percentage": 56.25,
+          "marker": ""
         }
       ],
       "green_ball": false,
       "results_loaded_by_trols": null,
       "fixtures": 12,
-      "completed_fixtures": 8,
+      "completed_fixtures": 9,
       "draw_fixtures": 45,
-      "singles_rubbers": 32,
-      "doubles_rubbers": 16,
+      "singles_rubbers": 36,
+      "doubles_rubbers": 18,
       "latest_round": 4,
       "validation": "passed",
       "source_warnings": []
@@ -1210,12 +1241,14 @@
       "completed_fixtures": 9,
       "draw_fixtures": 45,
       "singles_rubbers": 36,
-      "doubles_rubbers": 16,
+      "doubles_rubbers": 18,
       "latest_round": 4,
       "validation": "source discrepancies",
       "source_warnings": [
         "Incomplete TROLS score for AP002041 doubles No. 1: '7-5 2-2'. Missing score not inferred; excluded from ratings and game totals.",
-        "Incomplete TROLS score for AP002041 doubles No. 2: '6-0 3-2'. Missing score not inferred; excluded from ratings and game totals."
+        "Incomplete TROLS score for AP002041 doubles No. 2: '6-0 3-2'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for AP002043 doubles No. 1: ''. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for AP002043 doubles No. 2: ''. Missing score not inferred; excluded from ratings and game totals."
       ]
     },
     {
@@ -1322,13 +1355,15 @@
       "fixtures": 16,
       "completed_fixtures": 9,
       "draw_fixtures": 56,
-      "singles_rubbers": 34,
+      "singles_rubbers": 36,
       "doubles_rubbers": 18,
       "latest_round": 4,
       "validation": "source discrepancies",
       "source_warnings": [
         "Incomplete TROLS score for AP003044 singles No. 1: '0-2'. Missing score not inferred; excluded from ratings and game totals.",
-        "Incomplete TROLS score for AP003044 singles No. 2: '3-2'. Missing score not inferred; excluded from ratings and game totals."
+        "Incomplete TROLS score for AP003044 singles No. 2: ''. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for AP003044 singles No. 3: '3-2'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for AP003044 singles No. 4: ''. Missing score not inferred; excluded from ratings and game totals."
       ]
     },
     {
@@ -1796,14 +1831,16 @@
       "fixtures": 16,
       "completed_fixtures": 9,
       "draw_fixtures": 56,
-      "singles_rubbers": 34,
+      "singles_rubbers": 36,
       "doubles_rubbers": 18,
       "latest_round": 4,
       "validation": "source discrepancies",
       "source_warnings": [
-        "Incomplete TROLS score for AP007042 singles No. 3: '4-3'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for AP007042 singles No. 2: ''. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for AP007042 singles No. 4: '4-3'. Missing score not inferred; excluded from ratings and game totals.",
         "Incomplete TROLS score for AP007043 singles No. 1: '3-0'. Missing score not inferred; excluded from ratings and game totals.",
-        "Incomplete TROLS score for AP007043 singles No. 2: '0-1'. Missing score not inferred; excluded from ratings and game totals."
+        "Incomplete TROLS score for AP007043 singles No. 2: '0-1'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for AP007043 singles No. 4: ''. Missing score not inferred; excluded from ratings and game totals."
       ]
     },
     {
@@ -1962,6 +1999,14 @@
       "official_standings": [
         {
           "position": 1,
+          "team": "Hurlingham Park",
+          "wins": 3,
+          "points": 24,
+          "percentage": 174.7,
+          "marker": ""
+        },
+        {
+          "position": 2,
           "team": "Kooyong",
           "wins": 2,
           "points": 22,
@@ -1969,20 +2014,12 @@
           "marker": ""
         },
         {
-          "position": 2,
+          "position": 3,
           "team": "Essendon",
           "wins": 2,
           "points": 19,
           "percentage": 174.24,
           "marker": ""
-        },
-        {
-          "position": 3,
-          "team": "Hurlingham Park",
-          "wins": 2,
-          "points": 17,
-          "percentage": 202.08,
-          "marker": "*"
         },
         {
           "position": 4,
@@ -2012,18 +2049,18 @@
           "position": 7,
           "team": "BLTC",
           "wins": 0,
-          "points": 7,
-          "percentage": 65.77,
-          "marker": "*"
+          "points": 10,
+          "percentage": 67.92,
+          "marker": ""
         }
       ],
       "green_ball": false,
       "results_loaded_by_trols": null,
       "fixtures": 16,
-      "completed_fixtures": 8,
+      "completed_fixtures": 9,
       "draw_fixtures": 56,
-      "singles_rubbers": 32,
-      "doubles_rubbers": 16,
+      "singles_rubbers": 36,
+      "doubles_rubbers": 18,
       "latest_round": 4,
       "validation": "passed",
       "source_warnings": []
@@ -2200,16 +2237,16 @@
           "position": 3,
           "team": "Tennis World",
           "wins": 1,
-          "points": 20.5,
-          "percentage": 100.79,
+          "points": 21,
+          "percentage": 107.56,
           "marker": ""
         },
         {
           "position": 4,
           "team": "Highmoor Uniting",
           "wins": 1,
-          "points": 18.5,
-          "percentage": 126.87,
+          "points": 18,
+          "percentage": 114.93,
           "marker": ""
         },
         {
@@ -2242,12 +2279,14 @@
       "fixtures": 16,
       "completed_fixtures": 8,
       "draw_fixtures": 56,
-      "singles_rubbers": 31,
+      "singles_rubbers": 32,
       "doubles_rubbers": 16,
       "latest_round": 4,
       "validation": "source discrepancies",
       "source_warnings": [
-        "Incomplete TROLS score for AP011042 singles No. 2: '2-3'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for AP011042 singles No. 1: ''. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for AP011042 singles No. 2: ''. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for AP011042 singles No. 3: '2-3'. Missing score not inferred; excluded from ratings and game totals.",
         "Incomplete TROLS score for AP011044 singles No. 1: '2-2'. Missing score not inferred; excluded from ratings and game totals.",
         "Incomplete TROLS score for AP011044 singles No. 2: '4-1'. Missing score not inferred; excluded from ratings and game totals.",
         "Incomplete TROLS score for AP011044 singles No. 4: '1-1'. Missing score not inferred; excluded from ratings and game totals.",
@@ -2424,19 +2463,19 @@
         },
         {
           "position": 3,
+          "team": "Royal South Yarra",
+          "wins": 2,
+          "points": 25,
+          "percentage": 130.65,
+          "marker": ""
+        },
+        {
+          "position": 4,
           "team": "BLTC Blue",
           "wins": 1,
           "points": 16,
           "percentage": 106.52,
           "marker": ""
-        },
-        {
-          "position": 4,
-          "team": "Royal South Yarra",
-          "wins": 1,
-          "points": 15,
-          "percentage": 101.92,
-          "marker": "*"
         },
         {
           "position": 5,
@@ -2459,21 +2498,22 @@
           "team": "BLTC Light",
           "wins": 0,
           "points": 5,
-          "percentage": 25.0,
-          "marker": "*"
+          "percentage": 30.36,
+          "marker": ""
         }
       ],
       "green_ball": false,
       "results_loaded_by_trols": null,
       "fixtures": 16,
-      "completed_fixtures": 8,
+      "completed_fixtures": 9,
       "draw_fixtures": 56,
-      "singles_rubbers": 31,
-      "doubles_rubbers": 16,
+      "singles_rubbers": 36,
+      "doubles_rubbers": 18,
       "latest_round": 4,
       "validation": "source discrepancies",
       "source_warnings": [
-        "Incomplete TROLS score for AP013041 singles No. 1: '1-1'. Missing score not inferred; excluded from ratings and game totals."
+        "Incomplete TROLS score for AP013041 singles No. 1: '1-1'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for AP013041 singles No. 4: ''. Missing score not inferred; excluded from ratings and game totals."
       ]
     },
     {
@@ -2692,12 +2732,15 @@
       "fixtures": 16,
       "completed_fixtures": 9,
       "draw_fixtures": 56,
-      "singles_rubbers": 33,
+      "singles_rubbers": 36,
       "doubles_rubbers": 18,
       "latest_round": 4,
       "validation": "source discrepancies",
       "source_warnings": [
         "Incomplete TROLS score for AP015041 singles No. 1: '4-4'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for AP015041 singles No. 2: ''. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for AP015041 singles No. 3: ''. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for AP015041 singles No. 4: ''. Missing score not inferred; excluded from ratings and game totals.",
         "Incomplete TROLS score for AP015042 singles No. 4: '1-2'. Missing score not inferred; excluded from ratings and game totals."
       ]
     },
@@ -3656,13 +3699,17 @@
       "completed_fixtures": 37,
       "draw_fixtures": 56,
       "singles_rubbers": 0,
-      "doubles_rubbers": 144,
+      "doubles_rubbers": 148,
       "latest_round": 13,
       "validation": "source discrepancies",
       "source_warnings": [
         "Incomplete TROLS score for HA002081 doubles No. 1: '5-7 1-1'. Missing score not inferred; excluded from ratings and game totals.",
         "Incomplete TROLS score for HA002081 doubles No. 2: '6-2 2-1'. Missing score not inferred; excluded from ratings and game totals.",
-        "Incomplete TROLS score for HA002083 doubles No. 1: '6-4 1-0'. Missing score not inferred; excluded from ratings and game totals."
+        "Incomplete TROLS score for HA002081 doubles No. 3: ''. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for HA002081 doubles No. 4: ''. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for HA002083 doubles No. 1: '6-4 1-0'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for HA002083 doubles No. 3: ''. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for HA002083 doubles No. 4: ''. Missing score not inferred; excluded from ratings and game totals."
       ]
     },
     {
@@ -3905,17 +3952,17 @@
         {
           "position": 1,
           "team": "BLTC",
-          "wins": 9,
-          "points": 70.5,
-          "percentage": 179.4,
+          "wins": 10,
+          "points": 78.5,
+          "percentage": 197.51,
           "marker": ""
         },
         {
           "position": 2,
           "team": "Mordialloc White",
-          "wins": 8,
-          "points": 67,
-          "percentage": 178.18,
+          "wins": 9,
+          "points": 74,
+          "percentage": 176.13,
           "marker": ""
         },
         {
@@ -3924,7 +3971,7 @@
           "wins": 8,
           "points": 63,
           "percentage": 169.54,
-          "marker": ""
+          "marker": "*"
         },
         {
           "position": 4,
@@ -3932,14 +3979,14 @@
           "wins": 6,
           "points": 49,
           "percentage": 98.93,
-          "marker": ""
+          "marker": "*"
         },
         {
           "position": 5,
           "team": "Aspendale Green",
           "wins": 3,
-          "points": 30,
-          "percentage": 81.11,
+          "points": 31,
+          "percentage": 79.39,
           "marker": ""
         },
         {
@@ -3955,20 +4002,23 @@
           "team": "Dingley",
           "wins": 0,
           "points": 8,
-          "percentage": 24.61,
+          "percentage": 22.77,
           "marker": ""
         }
       ],
       "green_ball": false,
       "results_loaded_by_trols": null,
-      "fixtures": 52,
-      "completed_fixtures": 37,
+      "fixtures": 58,
+      "completed_fixtures": 39,
       "draw_fixtures": 56,
       "singles_rubbers": 0,
-      "doubles_rubbers": 146,
-      "latest_round": 13,
-      "validation": "passed",
-      "source_warnings": []
+      "doubles_rubbers": 156,
+      "latest_round": 16,
+      "validation": "source discrepancies",
+      "source_warnings": [
+        "Incomplete TROLS score for TA001044 doubles No. 3: ''. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for TA001044 doubles No. 4: ''. Missing score not inferred; excluded from ratings and game totals."
+      ]
     },
     {
       "competition_code": "TN",
@@ -4026,8 +4076,8 @@
           "position": 1,
           "team": "Hurlingham Park Gunslingers",
           "wins": 8,
-          "points": 80,
-          "percentage": 140.37,
+          "points": 81.5,
+          "percentage": 132.53,
           "marker": ""
         },
         {
@@ -4042,55 +4092,61 @@
           "position": 3,
           "team": "Hurlingham Park Lobs",
           "wins": 4,
-          "points": 48,
-          "percentage": 101.9,
+          "points": 53,
+          "percentage": 101.68,
           "marker": ""
         },
         {
           "position": 4,
           "team": "Kings Park Royals",
-          "wins": 3,
-          "points": 36,
-          "percentage": 85.47,
+          "wins": 4,
+          "points": 44.5,
+          "percentage": 88.75,
           "marker": ""
         },
         {
           "position": 5,
-          "team": "Hurlingham Park Battlers",
-          "wins": 1,
-          "points": 35.5,
-          "percentage": 87.5,
+          "team": "Maccabi Turquoise",
+          "wins": 3,
+          "points": 42,
+          "percentage": 84.91,
           "marker": ""
         },
         {
           "position": 6,
-          "team": "Maccabi Turquoise",
-          "wins": 2,
-          "points": 35,
-          "percentage": 82.52,
+          "team": "Hurlingham Park Battlers",
+          "wins": 1,
+          "points": 40.5,
+          "percentage": 89.04,
           "marker": ""
         },
         {
           "position": 7,
           "team": "Black Rock Strikers",
           "wins": 2,
-          "points": 24.5,
-          "percentage": 72.6,
+          "points": 27.5,
+          "percentage": 74.68,
           "marker": ""
         }
       ],
       "green_ball": false,
       "results_loaded_by_trols": null,
-      "fixtures": 44,
-      "completed_fixtures": 30,
+      "fixtures": 48,
+      "completed_fixtures": 33,
       "draw_fixtures": 56,
       "singles_rubbers": 0,
-      "doubles_rubbers": 174,
-      "latest_round": 11,
+      "doubles_rubbers": 198,
+      "latest_round": 12,
       "validation": "source discrepancies",
       "source_warnings": [
         "Incomplete TROLS score for TN001011 doubles No. 3: '2-1'. Missing score not inferred; excluded from ratings and game totals.",
         "Incomplete TROLS score for TN001011 doubles No. 4: '0-2'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for TN001011 doubles No. 5: ''. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for TN001011 doubles No. 6: ''. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for TN001012 doubles No. 5: ''. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for TN001012 doubles No. 6: ''. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for TN001014 doubles No. 5: ''. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for TN001014 doubles No. 6: ''. Missing score not inferred; excluded from ratings and game totals.",
         "Incomplete TROLS score for TN001031 doubles No. 5: '4-2'. Missing score not inferred; excluded from ratings and game totals.",
         "Incomplete TROLS score for TN001031 doubles No. 6: '2-4'. Missing score not inferred; excluded from ratings and game totals.",
         "Incomplete TROLS score for TN001111 doubles No. 5: '6-6'. Missing score not inferred; excluded from ratings and game totals."
@@ -4151,13 +4207,37 @@
         {
           "position": 1,
           "team": "Basterfield Park Scratchies",
-          "wins": 4,
-          "points": 50.5,
-          "percentage": 108.81,
+          "wins": 5,
+          "points": 57.5,
+          "percentage": 109.82,
           "marker": ""
         },
         {
           "position": 2,
+          "team": "Murrumbeena Beasts",
+          "wins": 6,
+          "points": 56,
+          "percentage": 100.36,
+          "marker": ""
+        },
+        {
+          "position": 3,
+          "team": "St James Premiers",
+          "wins": 4,
+          "points": 55,
+          "percentage": 109.82,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "St Finbar's Barbarians",
+          "wins": 5,
+          "points": 53,
+          "percentage": 93.31,
+          "marker": ""
+        },
+        {
+          "position": 5,
           "team": "Hurlingham Park All Stars",
           "wins": 4,
           "points": 50,
@@ -4165,59 +4245,41 @@
           "marker": ""
         },
         {
-          "position": 3,
-          "team": "St Finbar's Barbarians",
-          "wins": 5,
-          "points": 50,
-          "percentage": 94.39,
-          "marker": ""
-        },
-        {
-          "position": 4,
+          "position": 6,
           "team": "Basterfield Park Lakers",
           "wins": 4,
-          "points": 48.5,
-          "percentage": 110.19,
-          "marker": ""
-        },
-        {
-          "position": 5,
-          "team": "Murrumbeena Beasts",
-          "wins": 5,
-          "points": 48,
-          "percentage": 98.43,
-          "marker": ""
-        },
-        {
-          "position": 6,
-          "team": "St James Premiers",
-          "wins": 3,
-          "points": 46,
-          "percentage": 103.43,
+          "points": 49.5,
+          "percentage": 102.49,
           "marker": ""
         },
         {
           "position": 7,
           "team": "Hurlingham Park Hammers",
           "wins": 3,
-          "points": 37,
-          "percentage": 88.06,
+          "points": 39,
+          "percentage": 87.58,
           "marker": ""
         }
       ],
       "green_ball": false,
       "results_loaded_by_trols": null,
-      "fixtures": 44,
-      "completed_fixtures": 32,
+      "fixtures": 48,
+      "completed_fixtures": 35,
       "draw_fixtures": 56,
       "singles_rubbers": 0,
-      "doubles_rubbers": 186,
-      "latest_round": 11,
+      "doubles_rubbers": 210,
+      "latest_round": 12,
       "validation": "source discrepancies",
       "source_warnings": [
-        "Incomplete TROLS score for TN002013 doubles No. 4: '3-2'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for TN002012 doubles No. 5: ''. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for TN002012 doubles No. 6: ''. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for TN002013 doubles No. 3: ''. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for TN002013 doubles No. 4: ''. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for TN002013 doubles No. 6: '3-2'. Missing score not inferred; excluded from ratings and game totals.",
         "Incomplete TROLS score for TN002014 doubles No. 3: '2-3'. Missing score not inferred; excluded from ratings and game totals.",
         "Incomplete TROLS score for TN002014 doubles No. 4: '0-4'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for TN002014 doubles No. 5: ''. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for TN002014 doubles No. 6: ''. Missing score not inferred; excluded from ratings and game totals.",
         "Incomplete TROLS score for TN002034 doubles No. 5: '4-3'. Missing score not inferred; excluded from ratings and game totals.",
         "Incomplete TROLS score for TN002034 doubles No. 6: '3-2'. Missing score not inferred; excluded from ratings and game totals."
       ]
@@ -4276,30 +4338,38 @@
       "official_standings": [
         {
           "position": 1,
-          "team": "St James Redlegs",
+          "team": "Keysborough KeysyComeKGo",
           "wins": 6,
-          "points": 65,
-          "percentage": 125.38,
+          "points": 69,
+          "percentage": 129.32,
           "marker": ""
         },
         {
           "position": 2,
-          "team": "Keysborough KeysyComeKGo",
-          "wins": 5,
-          "points": 61,
-          "percentage": 128.48,
+          "team": "St James Redlegs",
+          "wins": 6,
+          "points": 67,
+          "percentage": 118.61,
           "marker": ""
         },
         {
           "position": 3,
           "team": "Basterfield Park Basterfield",
           "wins": 5,
-          "points": 57.5,
-          "percentage": 131.03,
+          "points": 58.5,
+          "percentage": 117.7,
           "marker": ""
         },
         {
           "position": 4,
+          "team": "Maccabi Magicians",
+          "wins": 3,
+          "points": 49.5,
+          "percentage": 93.25,
+          "marker": ""
+        },
+        {
+          "position": 5,
           "team": "BLTC Tornadoes",
           "wins": 4,
           "points": 42,
@@ -4307,41 +4377,43 @@
           "marker": ""
         },
         {
-          "position": 5,
-          "team": "Maccabi Magicians",
-          "wins": 2,
-          "points": 41.5,
-          "percentage": 89.33,
-          "marker": ""
-        },
-        {
           "position": 6,
-          "team": "Hurlingham Park HPSauce",
-          "wins": 2,
-          "points": 32,
-          "percentage": 84.65,
+          "team": "Middle Brighton Warriors",
+          "wins": 3,
+          "points": 40,
+          "percentage": 82.28,
           "marker": ""
         },
         {
           "position": 7,
-          "team": "Middle Brighton Warriors",
+          "team": "Hurlingham Park HPSauce",
           "wins": 2,
-          "points": 31,
-          "percentage": 73.06,
+          "points": 34,
+          "percentage": 83.33,
           "marker": ""
         }
       ],
       "green_ball": false,
       "results_loaded_by_trols": null,
-      "fixtures": 44,
-      "completed_fixtures": 29,
+      "fixtures": 48,
+      "completed_fixtures": 32,
       "draw_fixtures": 56,
       "singles_rubbers": 0,
-      "doubles_rubbers": 164,
-      "latest_round": 11,
+      "doubles_rubbers": 192,
+      "latest_round": 12,
       "validation": "source discrepancies",
       "source_warnings": [
-        "Incomplete TROLS score for TN003083 doubles No. 1: '1-0'. Missing score not inferred; excluded from ratings and game totals."
+        "Incomplete TROLS score for TN003011 doubles No. 5: ''. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for TN003011 doubles No. 6: ''. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for TN003013 doubles No. 3: ''. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for TN003013 doubles No. 4: ''. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for TN003013 doubles No. 5: ''. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for TN003083 doubles No. 1: '1-0'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for TN003083 doubles No. 2: ''. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for TN003083 doubles No. 3: ''. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for TN003083 doubles No. 4: ''. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for TN003083 doubles No. 5: ''. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for TN003083 doubles No. 6: ''. Missing score not inferred; excluded from ratings and game totals."
       ]
     },
     {
@@ -4399,83 +4471,91 @@
         {
           "position": 1,
           "team": "Ormond Dragons",
-          "wins": 8,
-          "points": 76,
-          "percentage": 126.61,
+          "wins": 9,
+          "points": 86,
+          "percentage": 133.73,
           "marker": ""
         },
         {
           "position": 2,
-          "team": "Middle Brighton Whompbat",
-          "wins": 6,
-          "points": 74,
-          "percentage": 119.77,
+          "team": "Glen Huntly Dropshots",
+          "wins": 7,
+          "points": 78.5,
+          "percentage": 133.33,
           "marker": ""
         },
         {
           "position": 3,
-          "team": "Glen Huntly Dropshots",
+          "team": "Middle Brighton Whompbat",
           "wins": 6,
-          "points": 70.5,
-          "percentage": 132.17,
+          "points": 76,
+          "percentage": 111.76,
           "marker": ""
         },
         {
           "position": 4,
-          "team": "Black Rock Breakers",
+          "team": "St Finbar's Black Sheep",
           "wins": 6,
-          "points": 65,
-          "percentage": 129.26,
+          "points": 71,
+          "percentage": 117.79,
           "marker": ""
         },
         {
           "position": 5,
-          "team": "St Finbar's Black Sheep",
-          "wins": 5,
-          "points": 62,
-          "percentage": 114.67,
+          "team": "Black Rock Breakers",
+          "wins": 6,
+          "points": 68,
+          "percentage": 124.42,
           "marker": ""
         },
         {
           "position": 6,
           "team": "Glen Huntly Moonballs",
           "wins": 5,
-          "points": 55.5,
-          "percentage": 96.82,
+          "points": 56.5,
+          "percentage": 93.38,
           "marker": ""
         },
         {
           "position": 7,
-          "team": "St Pauls Knights",
-          "wins": 1,
-          "points": 20,
-          "percentage": 55.72,
+          "team": "Stella Maris Mavericks",
+          "wins": 2,
+          "points": 24,
+          "percentage": 58.58,
           "marker": ""
         },
         {
           "position": 8,
-          "team": "Stella Maris Mavericks",
+          "team": "St Pauls Knights",
           "wins": 1,
-          "points": 17,
-          "percentage": 52.67,
+          "points": 20,
+          "percentage": 54.35,
           "marker": ""
         }
       ],
       "green_ball": false,
       "results_loaded_by_trols": null,
-      "fixtures": 44,
-      "completed_fixtures": 38,
+      "fixtures": 48,
+      "completed_fixtures": 42,
       "draw_fixtures": 56,
       "singles_rubbers": 0,
-      "doubles_rubbers": 220,
-      "latest_round": 11,
+      "doubles_rubbers": 252,
+      "latest_round": 12,
       "validation": "source discrepancies",
       "source_warnings": [
         "Incomplete TROLS score for TN004011 doubles No. 5: '1-1'. Missing score not inferred; excluded from ratings and game totals.",
         "Incomplete TROLS score for TN004011 doubles No. 6: '1-0'. Missing score not inferred; excluded from ratings and game totals.",
         "Incomplete TROLS score for TN004013 doubles No. 2: '3-3'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for TN004013 doubles No. 5: ''. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for TN004013 doubles No. 6: ''. Missing score not inferred; excluded from ratings and game totals.",
         "Incomplete TROLS score for TN004014 doubles No. 3: '1-4'. Missing score not inferred; excluded from ratings and game totals.",
-        "Incomplete TROLS score for TN004014 doubles No. 4: '1-2'. Missing score not inferred; excluded from ratings and game totals."
+        "Incomplete TROLS score for TN004014 doubles No. 4: '1-2'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for TN004014 doubles No. 5: ''. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for TN004014 doubles No. 6: ''. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for TN004084 doubles No. 3: ''. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for TN004084 doubles No. 4: ''. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for TN004084 doubles No. 5: ''. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for TN004084 doubles No. 6: ''. Missing score not inferred; excluded from ratings and game totals."
       ]
     },
     {
@@ -4528,19 +4608,19 @@
       "official_standings": [
         {
           "position": 1,
-          "team": "St Pauls Crusaders",
-          "wins": 6,
-          "points": 61,
-          "percentage": 120.18,
+          "team": "Wattle Warriors",
+          "wins": 5,
+          "points": 66,
+          "percentage": 157.05,
           "marker": ""
         },
         {
           "position": 2,
-          "team": "Wattle Warriors",
-          "wins": 4,
-          "points": 56,
-          "percentage": 157.05,
-          "marker": ""
+          "team": "St Pauls Crusaders",
+          "wins": 6,
+          "points": 61,
+          "percentage": 120.18,
+          "marker": "*"
         },
         {
           "position": 3,
@@ -4564,21 +4644,25 @@
           "wins": 1,
           "points": 18,
           "percentage": 60.43,
-          "marker": ""
+          "marker": "*"
         }
       ],
       "green_ball": false,
       "results_loaded_by_trols": null,
-      "fixtures": 33,
+      "fixtures": 36,
       "completed_fixtures": 19,
       "draw_fixtures": 45,
       "singles_rubbers": 0,
-      "doubles_rubbers": 110,
-      "latest_round": 11,
+      "doubles_rubbers": 114,
+      "latest_round": 12,
       "validation": "source discrepancies",
       "source_warnings": [
         "Incomplete TROLS score for TN005011 doubles No. 5: '0-2'. Missing score not inferred; excluded from ratings and game totals.",
         "Incomplete TROLS score for TN005011 doubles No. 6: '1-2'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for TN005023 doubles No. 3: ''. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for TN005023 doubles No. 4: ''. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for TN005023 doubles No. 5: ''. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for TN005023 doubles No. 6: ''. Missing score not inferred; excluded from ratings and game totals.",
         "Incomplete TROLS score for TN005052 doubles No. 3: '6-6'. Missing score not inferred; excluded from ratings and game totals."
       ]
     },
@@ -4747,11 +4831,15 @@
       "fixtures": 48,
       "completed_fixtures": 32,
       "draw_fixtures": 56,
-      "singles_rubbers": 62,
-      "doubles_rubbers": 31,
+      "singles_rubbers": 64,
+      "doubles_rubbers": 32,
       "latest_round": 12,
-      "validation": "passed",
-      "source_warnings": []
+      "validation": "source discrepancies",
+      "source_warnings": [
+        "Incomplete TROLS score for UA003121 singles No. 1: ''. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for UA003121 singles No. 2: ''. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for UA003121 doubles No. 1: ''. Missing score not inferred; excluded from ratings and game totals."
+      ]
     },
     {
       "competition_code": "UA",
@@ -5203,11 +5291,12 @@
       "fixtures": 48,
       "completed_fixtures": 42,
       "draw_fixtures": 56,
-      "singles_rubbers": 167,
+      "singles_rubbers": 168,
       "doubles_rubbers": 84,
       "latest_round": 12,
       "validation": "source discrepancies",
       "source_warnings": [
+        "Incomplete TROLS score for UA011022 singles No. 2: ''. Missing score not inferred; excluded from ratings and game totals.",
         "Incomplete TROLS score for UA011084 singles No. 4: '3-4'. Missing score not inferred; excluded from ratings and game totals."
       ]
     },
@@ -6171,41 +6260,41 @@
         {
           "position": 1,
           "team": "Elwood",
-          "wins": 10,
-          "points": 88,
-          "percentage": 203.26,
+          "wins": 11,
+          "points": 94,
+          "percentage": 191.28,
           "marker": ""
         },
         {
           "position": 2,
           "team": "Black Rock Maroon",
           "wins": 8,
-          "points": 77,
-          "percentage": 212.79,
+          "points": 79,
+          "percentage": 187.87,
           "marker": ""
         },
         {
           "position": 3,
           "team": "St Pats Mentone",
-          "wins": 6,
-          "points": 57,
-          "percentage": 114.55,
+          "wins": 7,
+          "points": 64,
+          "percentage": 114.22,
           "marker": ""
         },
         {
           "position": 4,
           "team": "Langwarrin",
           "wins": 6,
-          "points": 57,
-          "percentage": 102.32,
+          "points": 58,
+          "percentage": 100.92,
           "marker": ""
         },
         {
           "position": 5,
           "team": "Basterfield Park",
-          "wins": 1,
-          "points": 19,
-          "percentage": 48.6,
+          "wins": 2,
+          "points": 27,
+          "percentage": 55.17,
           "marker": ""
         },
         {
@@ -6213,24 +6302,28 @@
           "team": "Black Rock Navy",
           "wins": 0,
           "points": 14,
-          "percentage": 35.87,
+          "percentage": 38.52,
           "marker": ""
         }
       ],
       "green_ball": false,
       "results_loaded_by_trols": null,
-      "fixtures": 39,
-      "completed_fixtures": 34,
+      "fixtures": 42,
+      "completed_fixtures": 37,
       "draw_fixtures": 45,
       "singles_rubbers": 0,
-      "doubles_rubbers": 132,
-      "latest_round": 13,
+      "doubles_rubbers": 148,
+      "latest_round": 14,
       "validation": "source discrepancies",
       "source_warnings": [
         "Incomplete TROLS score for WA002061 doubles No. 1: '3-6 2-1'. Missing score not inferred; excluded from ratings and game totals.",
         "Incomplete TROLS score for WA002061 doubles No. 2: '3-6 1-3'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for WA002061 doubles No. 3: ''. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for WA002061 doubles No. 4: ''. Missing score not inferred; excluded from ratings and game totals.",
         "Incomplete TROLS score for WA002062 doubles No. 1: '4-2'. Missing score not inferred; excluded from ratings and game totals.",
         "Incomplete TROLS score for WA002062 doubles No. 2: '4-2'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for WA002062 doubles No. 3: ''. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for WA002062 doubles No. 4: ''. Missing score not inferred; excluded from ratings and game totals.",
         "Incomplete TROLS score for WA002063 doubles No. 3: '2-1'. Missing score not inferred; excluded from ratings and game totals.",
         "Incomplete TROLS score for WA002063 doubles No. 4: '0-2'. Missing score not inferred; excluded from ratings and game totals."
       ]
@@ -6281,17 +6374,17 @@
         {
           "position": 1,
           "team": "Kings Park",
-          "wins": 9,
-          "points": 82,
-          "percentage": 194.53,
+          "wins": 10,
+          "points": 90,
+          "percentage": 192.98,
           "marker": ""
         },
         {
           "position": 2,
           "team": "Elwood",
-          "wins": 9,
-          "points": 77,
-          "percentage": 153.06,
+          "wins": 10,
+          "points": 85,
+          "percentage": 161.09,
           "marker": ""
         },
         {
@@ -6299,7 +6392,7 @@
           "team": "BLTC Blue",
           "wins": 8,
           "points": 70,
-          "percentage": 130.42,
+          "percentage": 121.85,
           "marker": ""
         },
         {
@@ -6307,15 +6400,15 @@
           "team": "Aspendale",
           "wins": 3,
           "points": 35,
-          "percentage": 83.68,
+          "percentage": 78.33,
           "marker": ""
         },
         {
           "position": 5,
           "team": "BLTC White",
-          "wins": 1,
-          "points": 27,
-          "percentage": 66.74,
+          "wins": 2,
+          "points": 35,
+          "percentage": 74.4,
           "marker": ""
         },
         {
@@ -6323,22 +6416,32 @@
           "team": "St Pats Mentone",
           "wins": 1,
           "points": 21,
-          "percentage": 42.8,
+          "percentage": 41.8,
           "marker": ""
         }
       ],
       "green_ball": false,
       "results_loaded_by_trols": null,
-      "fixtures": 39,
-      "completed_fixtures": 34,
+      "fixtures": 42,
+      "completed_fixtures": 37,
       "draw_fixtures": 45,
       "singles_rubbers": 0,
-      "doubles_rubbers": 126,
-      "latest_round": 13,
+      "doubles_rubbers": 148,
+      "latest_round": 14,
       "validation": "source discrepancies",
       "source_warnings": [
+        "Incomplete TROLS score for WA003043 doubles No. 1: ''. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for WA003043 doubles No. 2: ''. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for WA003043 doubles No. 3: ''. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for WA003043 doubles No. 4: ''. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for WA003061 doubles No. 1: ''. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for WA003061 doubles No. 2: ''. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for WA003061 doubles No. 3: ''. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for WA003061 doubles No. 4: ''. Missing score not inferred; excluded from ratings and game totals.",
         "Incomplete TROLS score for WA003062 doubles No. 1: '3-4'. Missing score not inferred; excluded from ratings and game totals.",
         "Incomplete TROLS score for WA003062 doubles No. 2: '6-1 0-1'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for WA003062 doubles No. 3: ''. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for WA003062 doubles No. 4: ''. Missing score not inferred; excluded from ratings and game totals.",
         "Incomplete TROLS score for WA003063 doubles No. 4: '2-1'. Missing score not inferred; excluded from ratings and game totals."
       ]
     },
@@ -6388,17 +6491,17 @@
         {
           "position": 1,
           "team": "Dingley",
-          "wins": 7,
-          "points": 70,
-          "percentage": 240.85,
+          "wins": 8,
+          "points": 78,
+          "percentage": 236.31,
           "marker": ""
         },
         {
           "position": 2,
           "team": "Beaumaris CC",
-          "wins": 6,
-          "points": 50,
-          "percentage": 105.72,
+          "wins": 7,
+          "points": 57,
+          "percentage": 108.89,
           "marker": ""
         },
         {
@@ -6414,30 +6517,32 @@
           "team": "Black Rock",
           "wins": 3,
           "points": 38,
-          "percentage": 96.4,
+          "percentage": 88.29,
           "marker": ""
         },
         {
           "position": 5,
           "team": "Kings Park Red",
           "wins": 0,
-          "points": 10,
-          "percentage": 42.21,
+          "points": 11,
+          "percentage": 44.65,
           "marker": ""
         }
       ],
       "green_ball": false,
       "results_loaded_by_trols": null,
-      "fixtures": 39,
-      "completed_fixtures": 20,
+      "fixtures": 42,
+      "completed_fixtures": 22,
       "draw_fixtures": 45,
       "singles_rubbers": 0,
-      "doubles_rubbers": 78,
-      "latest_round": 13,
+      "doubles_rubbers": 88,
+      "latest_round": 14,
       "validation": "source discrepancies",
       "source_warnings": [
         "Incomplete TROLS score for WA004061 doubles No. 1: '5-5'. Missing score not inferred; excluded from ratings and game totals.",
-        "Incomplete TROLS score for WA004061 doubles No. 2: '1-4'. Missing score not inferred; excluded from ratings and game totals."
+        "Incomplete TROLS score for WA004061 doubles No. 2: '1-4'. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for WA004061 doubles No. 3: ''. Missing score not inferred; excluded from ratings and game totals.",
+        "Incomplete TROLS score for WA004061 doubles No. 4: ''. Missing score not inferred; excluded from ratings and game totals."
       ]
     }
   ]

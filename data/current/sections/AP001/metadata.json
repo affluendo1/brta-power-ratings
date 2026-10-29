@@ -39,10 +39,10 @@
     {
       "position": 1,
       "team": "Buckley Park",
-      "wins": 2,
-      "points": 24,
-      "percentage": 220.0,
-      "marker": "*"
+      "wins": 3,
+      "points": 34,
+      "percentage": 220.78,
+      "marker": ""
     },
     {
       "position": 2,
@@ -81,17 +81,17 @@
       "team": "Altona Gold",
       "wins": 0,
       "points": 8,
-      "percentage": 63.0,
-      "marker": "*"
+      "percentage": 56.25,
+      "marker": ""
     }
   ],
   "green_ball": false,
   "results_loaded_by_trols": null,
   "fixtures": 12,
-  "completed_fixtures": 8,
+  "completed_fixtures": 9,
   "draw_fixtures": 45,
-  "singles_rubbers": 32,
-  "doubles_rubbers": 16,
+  "singles_rubbers": 36,
+  "doubles_rubbers": 18,
   "latest_round": 4,
   "validation": "passed",
   "source_warnings": []

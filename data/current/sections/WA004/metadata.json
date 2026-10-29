@@ -44,17 +44,17 @@
     {
       "position": 1,
       "team": "Dingley",
-      "wins": 7,
-      "points": 70,
-      "percentage": 240.85,
+      "wins": 8,
+      "points": 78,
+      "percentage": 236.31,
       "marker": ""
     },
     {
       "position": 2,
       "team": "Beaumaris CC",
-      "wins": 6,
-      "points": 50,
-      "percentage": 105.72,
+      "wins": 7,
+      "points": 57,
+      "percentage": 108.89,
       "marker": ""
     },
     {
@@ -70,29 +70,31 @@
       "team": "Black Rock",
       "wins": 3,
       "points": 38,
-      "percentage": 96.4,
+      "percentage": 88.29,
       "marker": ""
     },
     {
       "position": 5,
       "team": "Kings Park Red",
       "wins": 0,
-      "points": 10,
-      "percentage": 42.21,
+      "points": 11,
+      "percentage": 44.65,
       "marker": ""
     }
   ],
   "green_ball": false,
   "results_loaded_by_trols": null,
-  "fixtures": 39,
-  "completed_fixtures": 20,
+  "fixtures": 42,
+  "completed_fixtures": 22,
   "draw_fixtures": 45,
   "singles_rubbers": 0,
-  "doubles_rubbers": 78,
-  "latest_round": 13,
+  "doubles_rubbers": 88,
+  "latest_round": 14,
   "validation": "source discrepancies",
   "source_warnings": [
     "Incomplete TROLS score for WA004061 doubles No. 1: '5-5'. Missing score not inferred; excluded from ratings and game totals.",
-    "Incomplete TROLS score for WA004061 doubles No. 2: '1-4'. Missing score not inferred; excluded from ratings and game totals."
+    "Incomplete TROLS score for WA004061 doubles No. 2: '1-4'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for WA004061 doubles No. 3: ''. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for WA004061 doubles No. 4: ''. Missing score not inferred; excluded from ratings and game totals."
   ]
 }

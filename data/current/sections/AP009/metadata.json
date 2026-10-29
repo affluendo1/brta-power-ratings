@@ -42,6 +42,14 @@
   "official_standings": [
     {
       "position": 1,
+      "team": "Hurlingham Park",
+      "wins": 3,
+      "points": 24,
+      "percentage": 174.7,
+      "marker": ""
+    },
+    {
+      "position": 2,
       "team": "Kooyong",
       "wins": 2,
       "points": 22,
@@ -49,20 +57,12 @@
       "marker": ""
     },
     {
-      "position": 2,
+      "position": 3,
       "team": "Essendon",
       "wins": 2,
       "points": 19,
       "percentage": 174.24,
       "marker": ""
-    },
-    {
-      "position": 3,
-      "team": "Hurlingham Park",
-      "wins": 2,
-      "points": 17,
-      "percentage": 202.08,
-      "marker": "*"
     },
     {
       "position": 4,
@@ -92,18 +92,18 @@
       "position": 7,
       "team": "BLTC",
       "wins": 0,
-      "points": 7,
-      "percentage": 65.77,
-      "marker": "*"
+      "points": 10,
+      "percentage": 67.92,
+      "marker": ""
     }
   ],
   "green_ball": false,
   "results_loaded_by_trols": null,
   "fixtures": 16,
-  "completed_fixtures": 8,
+  "completed_fixtures": 9,
   "draw_fixtures": 56,
-  "singles_rubbers": 32,
-  "doubles_rubbers": 16,
+  "singles_rubbers": 36,
+  "doubles_rubbers": 18,
   "latest_round": 4,
   "validation": "passed",
   "source_warnings": []
