@@ -163,6 +163,27 @@ class DatasetValidationTests(unittest.TestCase):
         row["winning_player"] = row["home_player"] if int(row["home_sets"]) > int(row["away_sets"]) else row["away_player"]
         validate_dataset(self.fixtures, singles, self.doubles, "UA009")
 
+    def test_cleared_source_scores_keep_their_rows_and_later_positions(self):
+        html = """<table width="99%"><tr><td>Home</td><td>Away</td></tr><tr><td>
+        <table><tr><td>1. Alice</td></tr><tr><td>2. Bob</td></tr></table>
+        <table><tr><td>1</td><td>&nbsp;</td><td>1</td></tr>
+        <tr><td>2</td><td>8-3</td><td>2</td></tr>
+        <tr><td>1+2</td><td></td><td>1+2</td></tr></table>
+        <table><tr><td>1. Cara</td></tr><tr><td>2. Dan</td></tr></table>
+        </td></tr></table>"""
+        fixture = {"fixture_id": "AP011042", "date": "24 Oct 26", "round": 4,
+                   "home_team": "Home", "away_team": "Away", "home_sets": ""}
+        singles, doubles = parse_scorecard(html, fixture)
+        self.assertEqual([(r["position"], r["home_player"]) for r in singles],
+                         [("No. 1", "Alice"), ("No. 2", "Bob")])
+        self.assertEqual(singles[1]["winning_player"], "Bob")
+        for row in (singles[0], doubles[0]):
+            self.assertEqual((row["score"], row["status"], row["valid_for_rating"]),
+                             ("", "Unfinished", "false"))
+            self.assertEqual(row["home_games"] + row["away_games"], 0)
+        self.assertEqual(singles[0]["winning_player"], "")
+        self.assertEqual(doubles[0]["winning_pair"], "")
+
     def test_wrong_rubber_score_is_rejected(self):
         bad_singles = copy.deepcopy(self.singles)
         row = next(row for row in bad_singles if int(row["home_games"]) > int(row["away_games"]))

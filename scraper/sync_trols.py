@@ -512,6 +512,12 @@ def parse_scorecard(html: str, fixture: dict) -> tuple[list[dict], list[dict]]:
         if not is_pair and not is_single:
             continue
         score = _rubbers_score(raw_score, str(fixture.get("format", "")).casefold() == "rubbers")
+        if not score and not raw_score.strip():
+            # A numbered official row can have its score cleared on TROLS.
+            # Keep that row unrated, rather than dropping it and shifting all
+            # later lineup positions (or retaining a superseded result).
+            score = {"score": "", "home_games": 0, "away_games": 0,
+                     "home_sets": 0, "away_sets": 0, "decisive": False, "incomplete": True}
         if not score:
             continue
         home_games, away_games = score["home_games"], score["away_games"]
