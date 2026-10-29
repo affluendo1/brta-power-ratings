@@ -10,7 +10,7 @@ function source(view='pairs'){
  return{rows};
 }
 async function openRow(row,pair=true){const request=++openRequest;
- try{if(row.sectionCode&&row.sectionCode!==D.meta.section_code||row.seasonKey&&row.seasonKey!==activeHistorySeasonId&&!row.isCurrent){let season=null;if(row.seasonKey){const catalog=await ensureHistoryCatalog();season=catalog.seasons.find(s=>s.id===row.seasonKey)}const data=row.isCustom?CustomSections.payload(row.sectionCode):await fetch(row.dataPath,{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('Section unavailable');return r.json()});if(request!==openRequest)return;activeHistorySeasonId=season&&!season.is_current?season.id:null;viewCatalog=activeHistorySeasonId?historySeasonSections(season):currentCatalog();setupSelectors();if(await loadSection(row.sectionCode,data)===false)return;switchPage('ratings')}
+ try{if(R.needsSection(row,D.meta.section_code,activeHistorySeasonId)){let season=null;if(row.seasonKey){const catalog=await ensureHistoryCatalog();season=catalog.seasons.find(s=>s.id===row.seasonKey)}const data=row.isCustom?CustomSections.payload(row.sectionCode):await fetch(row.dataPath,{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('Section unavailable');return r.json()});if(request!==openRequest)return;activeHistorySeasonId=season&&!season.is_current?season.id:null;viewCatalog=activeHistorySeasonId?historySeasonSections(season):currentCatalog();setupSelectors();if(await loadSection(row.sectionCode,data)===false)return;switchPage('ratings')}
  if(request!==openRequest)return;if(pair)lab8Open(row.player,null,true);else openProfile(row.player);
  }catch(error){BRTA82.modal('Could not open section','<p>'+esc(error.message)+'</p>')}
 }
