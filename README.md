@@ -383,8 +383,14 @@ dormant `BRTAClubMap.mountNetwork(container, clubs, onClubSelect)` adapter uses
 Leaflet 1.9.4 and OpenStreetMap tiles, limits navigation to metropolitan Melbourne,
 and passes a club identity to the future Club Zone navigation callback. It is not
 mounted anywhere yet and makes no tile requests until explicitly mounted. Leaflet
-is vendored under its BSD-2-Clause licence; unused CSS image backgrounds are
-omitted because this map uses circle markers and no layer-switcher images.
+is vendored under its BSD-2-Clause licence. Its original marker, retina and
+layer-control images are now bundled for future map development.
+
+Additional dormant preparation assets, sources and integration notes are listed
+in [Club Zone preparation](docs/club-zone-preparation.md). Official-source logos
+for all twelve TROLS directories are stored under `assets/associations/`, with
+checksums and provenance in `assets/associations/manifest.json`. These assets do
+not activate Club Zone or any new homepage, account system or navigation.
 
 ### Rounds, Following and Share Cards (8.2)
 
