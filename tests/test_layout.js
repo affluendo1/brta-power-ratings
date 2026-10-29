@@ -7,3 +7,12 @@ assert.equal(L.recalculate(d,'RM3',M),d);assert.equal(L.percentage({gamesFor:30,
 const band=L.bands(Array.from({length:60},(_,i)=>({rating:1000+i*15})));assert.equal(band.bounds.length,6);assert.equal(new Set(Array.from({length:60},(_,i)=>band.classFor(1000+i*15))).size,6);assert(band.cuts.every((x,i,a)=>i===0||x<a[i-1]));assert.equal(L.bands([{rating:1500},{rating:1500}]).classFor(1500),'b3');
 const out=L.report(d,H);assert(out.includes('&lt;My Section&gt;'));for(const title of ['Singles','Doubles players','Doubles pairs','Overall','Standings','Full fixture list','All results','Ratings after Round'])assert(out.includes(title),title);assert(!out.includes('undefined'));
 console.log('Layout: score parsing, match tiebreak evidence, model rollback, unchanged scores/stats, six bands, official percentage and complete export passed.');
+
+// Undated playoff scorecards must use only the selected snapshot's known dates.
+const undated=structuredClone(d);undated.results[0].date='';undated.results[0].fixtures[0].date='';
+assert.equal(L.observations(undated)[0].date,null);
+assert(L.recalculate(undated,'RM3b',M).singles.every(r=>Number.isFinite(r.rating)));
+const invalid=structuredClone(d);invalid.results[0].fixtures[0].date='31 Feb 26';assert.equal(L.observations(invalid)[0].date,null);
+const excluded=structuredClone(d);excluded.results[0].fixtures[0].rubbers[0].valid_for_rating=false;assert.equal(L.observations(excluded).length,0);
+const dated=structuredClone(d);dated.results[0].fixtures[0].date='2026-10-18';assert.equal(L.observations(dated)[0].date,'2026-10-18');
+console.log('Undated playoffs, invalid dates, ISO dates and excluded scorecards passed.');

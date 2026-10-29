@@ -9,3 +9,5 @@ const past=[{id:'one',signature:'a'}],current=[{id:'one',signature:'b'},{id:'two
 const f={fixtureId:'one',home:'A',away:'B',status:'Completed',homeGames:10,awayGames:5,rubbers:[{type:'Doubles',home:'Sam / Pat',away:'Bob / Jo',score:'6-3',winner:'Sam / Pat'}]};data.results=[{round:1,fixtures:[f]}];assert.equal(M.observations(data,{kind:'player',name:'Sam'}).length,1);assert.equal(M.observations(data,{kind:'player',name:'Sa'}).length,0);assert.equal(M.overview(data).doubles,1);assert.equal(M.overview(data).games,15);
 const P=require('../web/models/prediction.js');for(const targetGames of [6,8,10])for(const matchTiebreak of [true,false]){const d=P.matchDistribution(.6,{bestOf:3,targetGames,matchTiebreak});assert(Math.abs(d.reduce((n,x)=>n+x.probability,0)-1)<1e-10);assert(d.every(x=>Math.max(x.homeSets,x.awaySets)===2))}
 console.log('Matchday: calendar, DST, source gaps, identity, corrections and competition projections passed');
+
+assert.equal(M.iso('2026-02-31'),'');assert.equal(M.iso('2026-02-29'),'');assert.equal(M.iso('2028-02-29'),'2028-02-29');assert.equal(M.iso('2026-13-01'),'');

@@ -31,3 +31,16 @@ class FrontendPathsTests(unittest.TestCase):
         worker=ROOT/'web/workers/rating-worker.js'
         for url in re.findall(r"'([^']+\.js[^']*)'",worker.read_text()):
             self.assertTrue((worker.parent/url.split('?')[0]).is_file(),url)
+
+    def test_release_shell_revisions_match(self):
+        sw = (ROOT / 'sw.js').read_text()
+        shell = json.loads(re.search(r'const SHELL_FILES=(\[.*?\]);', sw).group(1))
+        self.assertEqual(len(shell), len(set(shell)), 'Duplicate precache requests reject addAll')
+        html = (ROOT / 'index.html').read_text()
+        for ref in re.findall(r'(?:src|href)="([^"#]+)"', html):
+            if not ref.startswith(('http', 'data:', '#')):
+                self.assertIn(ref, shell, ref)
+        for css in [ROOT/'web/styles/future.css', ROOT/'web/styles/style.css', ROOT/'web/optional/ambient.css']:
+            for ref in re.findall(r'@import\s+url\([\'"]?([^\)\'\"]+)', css.read_text()):
+                path, _, query = ref.partition('?')
+                self.assertIn(str((css.parent / path).relative_to(ROOT)) + ('?' + query if query else ''), shell)

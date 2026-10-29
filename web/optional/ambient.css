@@ -1,4 +1,4 @@
-@font-face{font-family:KavacDisplay;src:url('../../assets/kavac-display.woff?v=80') format('woff');font-display:swap}
+@font-face{font-family:KavacDisplay;src:url('../../assets/kavac-display.woff?v=8212') format('woff');font-display:swap}
 html[data-kavac] input:not([type=password]):not([type=checkbox]):not([type=range]):not([data-ms-literal]),html[data-kavac] textarea{font-family:KavacDisplay,Arial,sans-serif!important}
 html[data-kavac] *::before,html[data-kavac] *::after{font-family:KavacDisplay,Arial,sans-serif}
 html[data-ms-inverted]{height:100%;overflow:hidden}

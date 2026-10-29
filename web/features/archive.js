@@ -13,6 +13,10 @@
     {event:'WIMBLEDON · 2027',name:'S. BASA def. J. SINNER',score:'6–2  6–4  6–4',src:'assets/sid-wimbledon-2027-vs-sinner.png',alt:'Sid Basa defeats Jannik Sinner in the 2027 Wimbledon final.'},
     {event:'US OPEN · 2027',name:'S. BASA def. N. DJOKOVIC',score:'2–6  6–7(6)  6–3  6–0  6–1',src:'assets/sid-us-open-2027-vs-djokovic.png',alt:'Sid Basa defeats Novak Djokovic in the 2027 US Open final.'}
   ];
+  let portalEpoch=0,effectVolume=null,effectTimers=new Set();
+  const motionOff=()=>reduced.matches||localStorage.getItem('brta-animations')==='off';
+  function later(callback,ms){const timer=setTimeout(()=>{effectTimers.delete(timer);callback()},ms);effectTimers.add(timer);return timer}
+  function stopEffects(){portalEpoch++;clearInterval(fadeTimer);for(const timer of effectTimers)clearTimeout(timer);effectTimers.clear();if(effectVolume!=null){music.volume=effectVolume;effectVolume=null}document.querySelectorAll('.sid-rise-stage').forEach(e=>e.remove());sidBusy=false}
   let portalOpen=false,slide=0,track=0,lightboxSlide=-1,audioContext=null,analyser=null,sourceNode=null,animationFrame=0,quoteTimer=0,sidBusy=false,returnFocus=null,touchStart=0,fadeTimer=0;
   const music=new Audio(),gong=new Audio('assets/gong.mp3');music.loop=false;music.preload='metadata';music.volume=.55;gong.preload='auto';
   const archiveMedia=['assets/sid-throne-hero.png','assets/sid-royal-rise-transparent.png','assets/sid-federer-handshake.png','assets/sid-federer-kneeling.png','assets/sid-honour-plaque-transparent.png','assets/sid-wilson-blade-web.png','assets/royal-court-sunset.jpg','assets/royal-crowd-web.jpg',...wins.map(win=>win.src)];
@@ -100,7 +104,7 @@
     archive.querySelector('[data-lightbox-next]').addEventListener('click',()=>navigateLightbox(1));
     archive.querySelector('[data-lightbox]').addEventListener('click',event=>{if(event.target===event.currentTarget)closeLightbox()});
     const hero=archive.querySelector('[data-hero]'),heroImage=hero.querySelector('img');
-    hero.addEventListener('pointermove',event=>{if(reduced.matches)return;const box=hero.getBoundingClientRect(),x=(event.clientX-box.left)/box.width-.5,y=(event.clientY-box.top)/box.height-.5;heroImage.style.transform=`scale(1.025) translate(${x*6}px,${y*5}px)`});
+    hero.addEventListener('pointermove',event=>{if(motionOff())return;const box=hero.getBoundingClientRect(),x=(event.clientX-box.left)/box.width-.5,y=(event.clientY-box.top)/box.height-.5;heroImage.style.transform=`scale(1.025) translate(${x*6}px,${y*5}px)`});
     hero.addEventListener('pointerleave',()=>{heroImage.style.transform='scale(1.018)'});
     setTrack(0,false);setSlide(0);
   }
@@ -127,17 +131,17 @@
   function closeLightbox(){const box=archive.querySelector('[data-lightbox]');if(!box)return;lightboxSlide=-1;box.classList.remove('is-carousel');box.classList.add('hidden');document.body.classList.remove('archive-lightbox-open')}
   function fadeMusic(target,duration,done){clearInterval(fadeTimer);const start=music.volume,steps=Math.max(1,Math.round(duration/45));let tick=0;fadeTimer=setInterval(()=>{tick++;music.volume=start+(target-start)*(tick/steps);syncMusic();if(tick>=steps){clearInterval(fadeTimer);music.volume=target;done?.()}},45)}
   function beginQuotes(){const quote=archive.querySelector('[data-archive-quote]'),quotes=['“The racket chose him.” — Royal Archive','“Four majors. One year. Suspicious.” — Statistical Department','“The throne did not make the champion. It merely fitted.” — Court Historian','“He made the draw look ceremonial.” — Archive Clerk','“Every point was a coronation rehearsal.” — The North Stand'];let index=0;clearInterval(quoteTimer);quoteTimer=setInterval(()=>{if(!portalOpen||!quote)return;quote.classList.add('fading');setTimeout(()=>{index=(index+1)%quotes.length;quote.textContent=quotes[index];quote.classList.remove('fading')},220)},5200)}
-  function showIntro(){const intro=archive.querySelector('.archive-intro');if(sessionStorage.getItem(INTRO_KEY)==='1'||reduced.matches){intro.hidden=true;return}intro.hidden=false;setTimeout(()=>{intro.querySelector('p').textContent='SIDDHARTH R. BASA'},560);setTimeout(()=>{intro.classList.add('leaving');sessionStorage.setItem(INTRO_KEY,'1');setTimeout(()=>{intro.hidden=true;intro.classList.remove('leaving')},470)},1350)}
+  function showIntro(){const intro=archive.querySelector('.archive-intro');if(sessionStorage.getItem(INTRO_KEY)==='1'||motionOff()){intro.hidden=true;return}intro.hidden=false;setTimeout(()=>{intro.querySelector('p').textContent='SIDDHARTH R. BASA'},560);setTimeout(()=>{intro.classList.add('leaving');sessionStorage.setItem(INTRO_KEY,'1');setTimeout(()=>{intro.hidden=true;intro.classList.remove('leaving')},470)},1350)}
   function enterPortal(){if(!unlocked())return;returnFocus=document.activeElement;preloadArchiveMedia();playMusic();transition(activatePortal,{title:'THE GLORIOUS SID BASA PORTAL',message:'Summoning the Royal Archive…',variant:'royal'})}
   function activatePortal(){if(!unlocked())return;preloadArchiveMedia();renderPortal();portalOpen=true;document.body.classList.add('portal-active');archive.classList.remove('hidden');archive.setAttribute('aria-hidden','false');document.title='Royal Tennis Archive';showIntro();beginQuotes();syncMusic();if(!music.paused)drawSpectrum();setTimeout(()=>archive.querySelector('[data-archive-return]')?.focus(),0)}
-  function leavePortal(){if(!portalOpen)return;closeLightbox();transition(()=>{portalOpen=false;music.pause();stopSpectrum();clearInterval(quoteTimer);document.body.classList.remove('portal-active');archive.classList.add('hidden');archive.setAttribute('aria-hidden','true');document.title='BRTA Power Ratings';returnFocus?.focus?.()},{title:'Returning to ratings',message:'Restoring BRTA Power Ratings…'})}
+  function leavePortal(){if(!portalOpen)return;stopEffects();closeLightbox();transition(()=>{portalOpen=false;music.pause();stopSpectrum();clearInterval(quoteTimer);document.body.classList.remove('portal-active');archive.classList.add('hidden');archive.setAttribute('aria-hidden','true');document.title='BRTA Power Ratings';returnFocus?.focus?.()},{title:'Returning to ratings',message:'Restoring BRTA Power Ratings…'})}
   function sidEffect(){
     if(sidBusy||!portalOpen)return;
-    sidBusy=true;
-    const restoreVolume=music.volume,wasPlaying=!music.paused;
+    sidBusy=true;const epoch=portalEpoch;
+    const restoreVolume=music.volume,wasPlaying=!music.paused;effectVolume=restoreVolume;
     fadeMusic(0,520,()=>{
       if(wasPlaying)music.pause();
-      setTimeout(()=>{
+      later(()=>{
         const stage=document.createElement('div');
         stage.className='sid-rise-stage';
         stage.setAttribute('aria-hidden','true');
@@ -148,16 +152,16 @@
         figure.alt='';
         stage.appendChild(figure);
         const beginArrival=()=>{
-          if(!portalOpen){sidBusy=false;return}
+          if(!portalOpen||epoch!==portalEpoch){sidBusy=false;return}
           document.body.appendChild(stage);
           playRoyalGong();
-          if(!reduced.matches)stage.classList.add('royal-shake');
-          setTimeout(()=>stage.classList.remove('royal-shake'),reduced.matches?0:3300);
-          const stay=reduced.matches?1200:8500;
-          setTimeout(()=>{
-            if(wasPlaying){music.volume=0;playMusic();fadeMusic(restoreVolume,2400)}
+          if(!motionOff())stage.classList.add('royal-shake');
+          later(()=>stage.classList.remove('royal-shake'),motionOff()?0:3300);
+          const stay=motionOff()?1200:8500;
+          later(()=>{
+            if(wasPlaying&&portalOpen&&epoch===portalEpoch){music.volume=0;playMusic();fadeMusic(restoreVolume,2400,()=>{effectVolume=null})}
           },stay);
-          setTimeout(()=>{stage.remove();sidBusy=false},stay+(reduced.matches?450:1850));
+          later(()=>{stage.remove();sidBusy=false;if(!wasPlaying){music.volume=restoreVolume;effectVolume=null}},stay+(motionOff()?450:1850));
         };
         if(typeof figure.decode==='function')figure.decode().then(beginArrival,beginArrival);
         else if(figure.complete)beginArrival();
