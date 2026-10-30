@@ -1,6 +1,6 @@
 # BRTA Power Ratings
 
-**Current version: 8.2.3**
+**Current version: 8.2.3.1**
 
 Match tiebreaks use bracketed point scores when available. Legacy TROLS outcome-only
 deciders use `[TB W]` / `[TB L]` from the home side’s perspective, with no invented
