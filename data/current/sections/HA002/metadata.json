@@ -48,9 +48,9 @@
     {
       "position": 1,
       "team": "BLTC Green",
-      "wins": 10,
-      "points": 74,
-      "percentage": 134.72,
+      "wins": 11,
+      "points": 81,
+      "percentage": 139.01,
       "marker": ""
     },
     {
@@ -64,17 +64,17 @@
     {
       "position": 3,
       "team": "Kooyong Yellow",
-      "wins": 5,
-      "points": 45,
-      "percentage": 102.27,
+      "wins": 6,
+      "points": 53,
+      "percentage": 104.76,
       "marker": ""
     },
     {
       "position": 4,
       "team": "BLTC Blue",
-      "wins": 5,
-      "points": 42,
-      "percentage": 107.41,
+      "wins": 6,
+      "points": 50,
+      "percentage": 109.51,
       "marker": ""
     },
     {
@@ -82,7 +82,7 @@
       "team": "Black Rock",
       "wins": 4,
       "points": 36,
-      "percentage": 95.77,
+      "percentage": 93.71,
       "marker": ""
     },
     {
@@ -90,26 +90,26 @@
       "team": "Elwood",
       "wins": 4,
       "points": 36,
-      "percentage": 82.31,
+      "percentage": 81.72,
       "marker": ""
     },
     {
       "position": 7,
       "team": "Carmelite",
       "wins": 2,
-      "points": 25,
-      "percentage": 78.4,
+      "points": 26,
+      "percentage": 75.97,
       "marker": ""
     }
   ],
   "green_ball": false,
   "results_loaded_by_trols": null,
-  "fixtures": 52,
-  "completed_fixtures": 37,
+  "fixtures": 58,
+  "completed_fixtures": 40,
   "draw_fixtures": 56,
   "singles_rubbers": 0,
-  "doubles_rubbers": 148,
-  "latest_round": 13,
+  "doubles_rubbers": 160,
+  "latest_round": 16,
   "validation": "source discrepancies",
   "source_warnings": [
     "Incomplete TROLS score for HA002081 doubles No. 1: '5-7 1-1'. Missing score not inferred; excluded from ratings and game totals.",

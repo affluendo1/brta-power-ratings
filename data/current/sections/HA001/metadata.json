@@ -43,6 +43,14 @@
   "official_standings": [
     {
       "position": 1,
+      "team": "Eaglemont",
+      "wins": 8,
+      "points": 73,
+      "percentage": 124.89,
+      "marker": ""
+    },
+    {
+      "position": 2,
       "team": "Canterbury",
       "wins": 8,
       "points": 70,
@@ -50,46 +58,38 @@
       "marker": ""
     },
     {
-      "position": 2,
-      "team": "Eaglemont",
-      "wins": 7,
-      "points": 66,
-      "percentage": 123.1,
-      "marker": ""
-    },
-    {
       "position": 3,
       "team": "Glen Waverley",
       "wins": 6,
-      "points": 55,
-      "percentage": 127.81,
+      "points": 57,
+      "percentage": 125.81,
       "marker": ""
     },
     {
       "position": 4,
       "team": "Kooyong",
       "wins": 1,
-      "points": 32,
-      "percentage": 93.22,
+      "points": 33,
+      "percentage": 90.31,
       "marker": ""
     },
     {
       "position": 5,
       "team": "Hampton",
-      "wins": 1,
-      "points": 24,
-      "percentage": 65.12,
+      "wins": 2,
+      "points": 30,
+      "percentage": 67.45,
       "marker": ""
     }
   ],
   "green_ball": false,
   "results_loaded_by_trols": null,
-  "fixtures": 39,
-  "completed_fixtures": 23,
+  "fixtures": 42,
+  "completed_fixtures": 25,
   "draw_fixtures": 45,
   "singles_rubbers": 0,
-  "doubles_rubbers": 92,
-  "latest_round": 13,
+  "doubles_rubbers": 100,
+  "latest_round": 14,
   "validation": "passed",
   "source_warnings": []
 }
