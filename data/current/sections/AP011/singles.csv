@@ -1,33 +1,33 @@
-fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
-AP011022,10 Oct 26,2,Beaumaris CC,Highmoor Uniting,No. 1,Trevor Allwright,Fraser Elvins,Trevor Allwright,8-7,8,7,1,0,Completed,true,false,false
-AP011022,10 Oct 26,2,Beaumaris CC,Highmoor Uniting,No. 2,Paul Power,Ben Campbell,Ben Campbell,4-8,4,8,0,1,Completed,true,false,false
-AP011022,10 Oct 26,2,Beaumaris CC,Highmoor Uniting,No. 3,Chris Gibson,Ben Reidy,Chris Gibson,8-4,8,4,1,0,Completed,true,false,false
-AP011022,10 Oct 26,2,Beaumaris CC,Highmoor Uniting,No. 4,Jeremy Rouch,Jake Reidy,Jake Reidy,5-8,5,8,0,1,Completed,true,false,false
-AP011024,10 Oct 26,2,Tennis World,Kooyong,No. 1,Pratik Shetty,Andrew Argyrou,Andrew Argyrou,3-8,3,8,0,1,Completed,true,false,false
-AP011024,10 Oct 26,2,Tennis World,Kooyong,No. 2,Alon Faingertz,Theo Schlicht,Theo Schlicht,5-8,5,8,0,1,Completed,true,false,false
-AP011024,10 Oct 26,2,Tennis World,Kooyong,No. 3,Dario Latina,Lucas Wang,Dario Latina,8-3,8,3,1,0,Completed,true,false,false
-AP011024,10 Oct 26,2,Tennis World,Kooyong,No. 4,Alex Mitsopoulos,Enrique Klix,Enrique Klix,2-8,2,8,0,1,Completed,true,false,false
-AP011031,17 Oct 26,3,East Malvern,Tennis World,No. 1,Ben Stephens,Jacob Hayton,Jacob Hayton,2-8,2,8,0,1,Completed,true,true,false
-AP011031,17 Oct 26,3,East Malvern,Tennis World,No. 2,Luke Barber,Pratik Shetty,Pratik Shetty,6-8,6,8,0,1,Completed,true,false,false
-AP011031,17 Oct 26,3,East Malvern,Tennis World,No. 3,James Bryden,Dario Latina,James Bryden,8-6,8,6,1,0,Completed,true,false,false
-AP011031,17 Oct 26,3,East Malvern,Tennis World,No. 4,David Bryden,Alex Mitsopoulos,Alex Mitsopoulos,3-8,3,8,0,1,Completed,true,true,false
-AP011033,17 Oct 26,3,Royal South Yarra,Beaumaris CC,No. 1,Julian Giuffrida,Ethan Dunlea,Ethan Dunlea,1-8,1,8,0,1,Completed,true,false,false
-AP011033,17 Oct 26,3,Royal South Yarra,Beaumaris CC,No. 2,David Rix,Chase Kelso,Chase Kelso,5-8,5,8,0,1,Completed,true,false,true
-AP011033,17 Oct 26,3,Royal South Yarra,Beaumaris CC,No. 3,David Le Page,Paul Power,Paul Power,2-8,2,8,0,1,Completed,true,false,false
-AP011033,17 Oct 26,3,Royal South Yarra,Beaumaris CC,No. 4,Conor Kelly,Chris Gibson,Conor Kelly,8-0,8,0,1,0,Completed,true,false,false
-AP011034,17 Oct 26,3,Kooyong,Overport Park,No. 1,Andrew Argyrou,Trevor Kulpa,Andrew Argyrou,8-6,8,6,1,0,Completed,true,false,false
-AP011034,17 Oct 26,3,Kooyong,Overport Park,No. 2,Theo Schlicht,Toby Ulyatt,Toby Ulyatt,5-8,5,8,0,1,Completed,true,false,false
-AP011034,17 Oct 26,3,Kooyong,Overport Park,No. 3,Enrique Klix,Leon Prosper,Leon Prosper,4-8,4,8,0,1,Completed,true,false,false
-AP011034,17 Oct 26,3,Kooyong,Overport Park,No. 4,Richard Ji,James Richards,James Richards,2-8,2,8,0,1,Completed,true,false,false
-AP011041,24 Oct 26,4,Overport Park,East Malvern,No. 1,Trevor Kulpa,Tysyn Danda,Tysyn Danda,0-8,0,8,0,1,Completed,true,false,false
-AP011041,24 Oct 26,4,Overport Park,East Malvern,No. 2,Toby Ulyatt,Todd Cappadona,Toby Ulyatt,8-4,8,4,1,0,Completed,true,false,false
-AP011041,24 Oct 26,4,Overport Park,East Malvern,No. 3,Leon Prosper,Patrick King,Leon Prosper,8-5,8,5,1,0,Completed,true,false,false
-AP011041,24 Oct 26,4,Overport Park,East Malvern,No. 4,James Richards,James Bryden,James Richards,8-1,8,1,1,0,Completed,true,false,false
-AP011042,24 Oct 26,4,Tennis World,Highmoor Uniting,No. 1,Pratik Shetty,Callum Elvins,,,0,0,0,0,Unfinished,false,false,false
-AP011042,24 Oct 26,4,Tennis World,Highmoor Uniting,No. 2,Alon Faingertz,Richard Elvins,,,0,0,0,0,Unfinished,false,false,false
-AP011042,24 Oct 26,4,Tennis World,Highmoor Uniting,No. 3,Dario Latina,Charlie Daalder,,2-3,2,3,0,1,Unfinished,false,false,false
-AP011042,24 Oct 26,4,Tennis World,Highmoor Uniting,No. 4,Joel Dalidowicz,David Urpani,Joel Dalidowicz,8-3,8,3,1,0,Completed,true,false,false
-AP011044,24 Oct 26,4,Beaumaris CC,Kooyong,No. 1,Trevor Allwright,Andrew Argyrou,,2-2,2,2,0,0,Unfinished,false,false,false
-AP011044,24 Oct 26,4,Beaumaris CC,Kooyong,No. 2,Daniel Wotherspoon,Enrique Klix,,4-1,4,1,1,0,Unfinished,false,false,false
-AP011044,24 Oct 26,4,Beaumaris CC,Kooyong,No. 3,Paul Power,Neil Waters,Paul Power,8-1,8,1,1,0,Completed,true,false,false
-AP011044,24 Oct 26,4,Beaumaris CC,Kooyong,No. 4,Chris Gibson,Steve Avery,,1-1,1,1,0,0,Unfinished,false,false,true
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency,source_score
+AP011022,10 Oct 26,2,Beaumaris CC,Highmoor Uniting,No. 1,Trevor Allwright,Fraser Elvins,Trevor Allwright,8-7,8,7,1,0,Completed,true,false,false,8-7
+AP011022,10 Oct 26,2,Beaumaris CC,Highmoor Uniting,No. 2,Paul Power,Ben Campbell,Ben Campbell,4-8,4,8,0,1,Completed,true,false,false,4-8
+AP011022,10 Oct 26,2,Beaumaris CC,Highmoor Uniting,No. 3,Chris Gibson,Ben Reidy,Chris Gibson,8-4,8,4,1,0,Completed,true,false,false,8-4
+AP011022,10 Oct 26,2,Beaumaris CC,Highmoor Uniting,No. 4,Jeremy Rouch,Jake Reidy,Jake Reidy,5-8,5,8,0,1,Completed,true,false,false,5-8
+AP011024,10 Oct 26,2,Tennis World,Kooyong,No. 1,Pratik Shetty,Andrew Argyrou,Andrew Argyrou,3-8,3,8,0,1,Completed,true,false,false,3-8
+AP011024,10 Oct 26,2,Tennis World,Kooyong,No. 2,Alon Faingertz,Theo Schlicht,Theo Schlicht,5-8,5,8,0,1,Completed,true,false,false,5-8
+AP011024,10 Oct 26,2,Tennis World,Kooyong,No. 3,Dario Latina,Lucas Wang,Dario Latina,8-3,8,3,1,0,Completed,true,false,false,8-3
+AP011024,10 Oct 26,2,Tennis World,Kooyong,No. 4,Alex Mitsopoulos,Enrique Klix,Enrique Klix,2-8,2,8,0,1,Completed,true,false,false,2-8
+AP011031,17 Oct 26,3,East Malvern,Tennis World,No. 1,Ben Stephens,Jacob Hayton,Jacob Hayton,2-8,2,8,0,1,Completed,true,true,false,2-8
+AP011031,17 Oct 26,3,East Malvern,Tennis World,No. 2,Luke Barber,Pratik Shetty,Pratik Shetty,6-8,6,8,0,1,Completed,true,false,false,6-8
+AP011031,17 Oct 26,3,East Malvern,Tennis World,No. 3,James Bryden,Dario Latina,James Bryden,8-6,8,6,1,0,Completed,true,false,false,8-6
+AP011031,17 Oct 26,3,East Malvern,Tennis World,No. 4,David Bryden,Alex Mitsopoulos,Alex Mitsopoulos,3-8,3,8,0,1,Completed,true,true,false,3-8
+AP011033,17 Oct 26,3,Royal South Yarra,Beaumaris CC,No. 1,Julian Giuffrida,Ethan Dunlea,Ethan Dunlea,1-8,1,8,0,1,Completed,true,false,false,1-8
+AP011033,17 Oct 26,3,Royal South Yarra,Beaumaris CC,No. 2,David Rix,Chase Kelso,Chase Kelso,5-8,5,8,0,1,Completed,true,false,true,5-8
+AP011033,17 Oct 26,3,Royal South Yarra,Beaumaris CC,No. 3,David Le Page,Paul Power,Paul Power,2-8,2,8,0,1,Completed,true,false,false,2-8
+AP011033,17 Oct 26,3,Royal South Yarra,Beaumaris CC,No. 4,Conor Kelly,Chris Gibson,Conor Kelly,8-0,8,0,1,0,Completed,true,false,false,8-0
+AP011034,17 Oct 26,3,Kooyong,Overport Park,No. 1,Andrew Argyrou,Trevor Kulpa,Andrew Argyrou,8-6,8,6,1,0,Completed,true,false,false,8-6
+AP011034,17 Oct 26,3,Kooyong,Overport Park,No. 2,Theo Schlicht,Toby Ulyatt,Toby Ulyatt,5-8,5,8,0,1,Completed,true,false,false,5-8
+AP011034,17 Oct 26,3,Kooyong,Overport Park,No. 3,Enrique Klix,Leon Prosper,Leon Prosper,4-8,4,8,0,1,Completed,true,false,false,4-8
+AP011034,17 Oct 26,3,Kooyong,Overport Park,No. 4,Richard Ji,James Richards,James Richards,2-8,2,8,0,1,Completed,true,false,false,2-8
+AP011041,24 Oct 26,4,Overport Park,East Malvern,No. 1,Trevor Kulpa,Tysyn Danda,Tysyn Danda,0-8,0,8,0,1,Completed,true,false,false,0-8
+AP011041,24 Oct 26,4,Overport Park,East Malvern,No. 2,Toby Ulyatt,Todd Cappadona,Toby Ulyatt,8-4,8,4,1,0,Completed,true,false,false,8-4
+AP011041,24 Oct 26,4,Overport Park,East Malvern,No. 3,Leon Prosper,Patrick King,Leon Prosper,8-5,8,5,1,0,Completed,true,false,false,8-5
+AP011041,24 Oct 26,4,Overport Park,East Malvern,No. 4,James Richards,James Bryden,James Richards,8-1,8,1,1,0,Completed,true,false,false,8-1
+AP011042,24 Oct 26,4,Tennis World,Highmoor Uniting,No. 1,Pratik Shetty,Callum Elvins,,,0,0,0,0,Unfinished,false,false,false,
+AP011042,24 Oct 26,4,Tennis World,Highmoor Uniting,No. 2,Alon Faingertz,Richard Elvins,,,0,0,0,0,Unfinished,false,false,false,
+AP011042,24 Oct 26,4,Tennis World,Highmoor Uniting,No. 3,Dario Latina,Charlie Daalder,,2-3,2,3,0,1,Unfinished,false,false,false,2-3
+AP011042,24 Oct 26,4,Tennis World,Highmoor Uniting,No. 4,Joel Dalidowicz,David Urpani,Joel Dalidowicz,8-3,8,3,1,0,Completed,true,false,false,8-3
+AP011044,24 Oct 26,4,Beaumaris CC,Kooyong,No. 1,Trevor Allwright,Andrew Argyrou,,2-2,2,2,0,0,Unfinished,false,false,false,2-2
+AP011044,24 Oct 26,4,Beaumaris CC,Kooyong,No. 2,Daniel Wotherspoon,Enrique Klix,,4-1,4,1,1,0,Unfinished,false,false,false,4-1
+AP011044,24 Oct 26,4,Beaumaris CC,Kooyong,No. 3,Paul Power,Neil Waters,Paul Power,8-1,8,1,1,0,Completed,true,false,false,8-1
+AP011044,24 Oct 26,4,Beaumaris CC,Kooyong,No. 4,Chris Gibson,Steve Avery,,1-1,1,1,0,0,Unfinished,false,false,true,1-1

@@ -1,37 +1,37 @@
-fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
-AP009021,10 Oct 26,2,Hurlingham Park,Lauriston,No. 1,John Malakasiotis,Aaron Nazaretian,John Malakasiotis,8-2,8,2,1,0,Completed,true,false,false
-AP009021,10 Oct 26,2,Hurlingham Park,Lauriston,No. 2,Con Pasas,Jude Teo,Con Pasas,8-7,8,7,1,0,Completed,true,false,false
-AP009021,10 Oct 26,2,Hurlingham Park,Lauriston,No. 3,Gary McKenzie,Dean Smith,Dean Smith,5-8,5,8,0,1,Completed,true,false,false
-AP009021,10 Oct 26,2,Hurlingham Park,Lauriston,No. 4,Jason Attana,Jake Smith,Jason Attana,8-1,8,1,1,0,Completed,true,true,true
-AP009022,10 Oct 26,2,Kooyong,Albert Park,No. 1,Josh Nowell,Leon Katelis,Josh Nowell,8-7,8,7,1,0,Completed,true,false,false
-AP009022,10 Oct 26,2,Kooyong,Albert Park,No. 2,Ben Tohill,Dean Stewart,Ben Tohill,8-2,8,2,1,0,Completed,true,false,false
-AP009022,10 Oct 26,2,Kooyong,Albert Park,No. 3,Ivor Van Der Sluys,Jean-Yves Nouaze,Ivor Van Der Sluys,8-2,8,2,1,0,Completed,true,false,false
-AP009022,10 Oct 26,2,Kooyong,Albert Park,No. 4,Will Preston,Alan Attwood,Will Preston,8-1,8,1,1,0,Completed,true,false,false
-AP009023,10 Oct 26,2,Essendon,BLTC,No. 1,Max Ferguson,Ernie Brook,Max Ferguson,8-6,8,6,1,0,Completed,true,false,false
-AP009023,10 Oct 26,2,Essendon,BLTC,No. 2,Liam Tomaszewksi,Daniel Choi,Liam Tomaszewksi,8-1,8,1,1,0,Completed,true,false,false
-AP009023,10 Oct 26,2,Essendon,BLTC,No. 3,Ryan Jegadeesh,Josh Tesler,Ryan Jegadeesh,8-6,8,6,1,0,Completed,true,false,false
-AP009023,10 Oct 26,2,Essendon,BLTC,No. 4,Sam O'Reilly,John Van Der Meulen,Sam O'Reilly,8-2,8,2,1,0,Completed,true,false,false
-AP009031,17 Oct 26,3,Lauriston,Highmoor Uniting,No. 1,Ben Dix,Jason Mahmoud,Ben Dix,8-3,8,3,1,0,Completed,true,false,false
-AP009031,17 Oct 26,3,Lauriston,Highmoor Uniting,No. 2,Aaron Nazaretian,Glenn Collins,Aaron Nazaretian,8-1,8,1,1,0,Completed,true,false,false
-AP009031,17 Oct 26,3,Lauriston,Highmoor Uniting,No. 3,Jude Teo,Nick Martin,Jude Teo,8-6,8,6,1,0,Completed,true,false,false
-AP009031,17 Oct 26,3,Lauriston,Highmoor Uniting,No. 4,Dean Smith,Brett Collins,Dean Smith,8-6,8,6,1,0,Completed,true,false,false
-AP009032,17 Oct 26,3,Albert Park,Hurlingham Park,No. 1,Leon Katelis,John Malakasiotis,Leon Katelis,8-2,8,2,1,0,Completed,true,false,false
-AP009032,17 Oct 26,3,Albert Park,Hurlingham Park,No. 2,Bill Katelis,Con Pasas,Con Pasas,1-8,1,8,0,1,Completed,true,false,false
-AP009032,17 Oct 26,3,Albert Park,Hurlingham Park,No. 3,Paul Robinson,Gary McKenzie,Gary McKenzie,0-8,0,8,0,1,Completed,true,false,false
-AP009032,17 Oct 26,3,Albert Park,Hurlingham Park,No. 4,Kobe Earle,John Murray,John Murray,0-8,0,8,0,1,Completed,true,false,false
-AP009033,17 Oct 26,3,BLTC,Kooyong,No. 1,Robert Donat,Nicky Li,Robert Donat,8-3,8,3,1,0,Completed,true,false,false
-AP009033,17 Oct 26,3,BLTC,Kooyong,No. 2,David Jenkins,Chris Gerendasi,Chris Gerendasi,2-8,2,8,0,1,Completed,true,false,false
-AP009033,17 Oct 26,3,BLTC,Kooyong,No. 3,Daniel Choi,Will Preston,Will Preston,0-8,0,8,0,1,Completed,true,false,false
-AP009033,17 Oct 26,3,BLTC,Kooyong,No. 4,James Pilcher,Josh Van Der Sluys,James Pilcher,8-3,8,3,1,0,Completed,true,false,false
-AP009041,24 Oct 26,4,Essendon,Lauriston,No. 1,Max Ferguson,Aaron Nazaretian,Max Ferguson,8-5,8,5,1,0,Completed,true,false,false
-AP009041,24 Oct 26,4,Essendon,Lauriston,No. 2,Liam Tomaszewksi,Jude Teo,Liam Tomaszewksi,8-7,8,7,1,0,Completed,true,false,false
-AP009041,24 Oct 26,4,Essendon,Lauriston,No. 3,Ryan Jegadeesh,Dean Smith,Ryan Jegadeesh,8-5,8,5,1,0,Completed,true,false,false
-AP009041,24 Oct 26,4,Essendon,Lauriston,No. 4,Sam O'Reilly,[Unnamed emergency — TROLS AP009041 away code 4],Sam O'Reilly,8-0,8,0,1,0,Completed,false,false,true
-AP009042,24 Oct 26,4,Highmoor Uniting,Albert Park,No. 1,Nick Martin,Leon Katelis,Leon Katelis,3-8,3,8,0,1,Completed,true,false,false
-AP009042,24 Oct 26,4,Highmoor Uniting,Albert Park,No. 2,Leo McInerney,Paul Robinson,Leo McInerney,8-0,8,0,1,0,Completed,true,false,false
-AP009042,24 Oct 26,4,Highmoor Uniting,Albert Park,No. 3,Brett Collins,Alan Attwood,Brett Collins,8-0,8,0,1,0,Completed,true,false,false
-AP009042,24 Oct 26,4,Highmoor Uniting,Albert Park,No. 4,Vikram Jangra,Jean-Yves Nouaze,Vikram Jangra,8-4,8,4,1,0,Completed,true,false,false
-AP009043,24 Oct 26,4,Hurlingham Park,BLTC,No. 1,John Malakasiotis,David Jenkins,John Malakasiotis,8-0,8,0,1,0,Completed,true,false,false
-AP009043,24 Oct 26,4,Hurlingham Park,BLTC,No. 2,Con Pasas,Ernie Brook,Ernie Brook,7-8,7,8,0,1,Completed,true,false,false
-AP009043,24 Oct 26,4,Hurlingham Park,BLTC,No. 3,William Mulholland,Josh Tesler,Josh Tesler,5-8,5,8,0,1,Completed,true,false,false
-AP009043,24 Oct 26,4,Hurlingham Park,BLTC,No. 4,Trevor Phillips,John Van Der Meulen,Trevor Phillips,8-5,8,5,1,0,Completed,true,false,false
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency,source_score
+AP009021,10 Oct 26,2,Hurlingham Park,Lauriston,No. 1,John Malakasiotis,Aaron Nazaretian,John Malakasiotis,8-2,8,2,1,0,Completed,true,false,false,8-2
+AP009021,10 Oct 26,2,Hurlingham Park,Lauriston,No. 2,Con Pasas,Jude Teo,Con Pasas,8-7,8,7,1,0,Completed,true,false,false,8-7
+AP009021,10 Oct 26,2,Hurlingham Park,Lauriston,No. 3,Gary McKenzie,Dean Smith,Dean Smith,5-8,5,8,0,1,Completed,true,false,false,5-8
+AP009021,10 Oct 26,2,Hurlingham Park,Lauriston,No. 4,Jason Attana,Jake Smith,Jason Attana,8-1,8,1,1,0,Completed,true,true,true,8-1
+AP009022,10 Oct 26,2,Kooyong,Albert Park,No. 1,Josh Nowell,Leon Katelis,Josh Nowell,8-7,8,7,1,0,Completed,true,false,false,8-7
+AP009022,10 Oct 26,2,Kooyong,Albert Park,No. 2,Ben Tohill,Dean Stewart,Ben Tohill,8-2,8,2,1,0,Completed,true,false,false,8-2
+AP009022,10 Oct 26,2,Kooyong,Albert Park,No. 3,Ivor Van Der Sluys,Jean-Yves Nouaze,Ivor Van Der Sluys,8-2,8,2,1,0,Completed,true,false,false,8-2
+AP009022,10 Oct 26,2,Kooyong,Albert Park,No. 4,Will Preston,Alan Attwood,Will Preston,8-1,8,1,1,0,Completed,true,false,false,8-1
+AP009023,10 Oct 26,2,Essendon,BLTC,No. 1,Max Ferguson,Ernie Brook,Max Ferguson,8-6,8,6,1,0,Completed,true,false,false,8-6
+AP009023,10 Oct 26,2,Essendon,BLTC,No. 2,Liam Tomaszewksi,Daniel Choi,Liam Tomaszewksi,8-1,8,1,1,0,Completed,true,false,false,8-1
+AP009023,10 Oct 26,2,Essendon,BLTC,No. 3,Ryan Jegadeesh,Josh Tesler,Ryan Jegadeesh,8-6,8,6,1,0,Completed,true,false,false,8-6
+AP009023,10 Oct 26,2,Essendon,BLTC,No. 4,Sam O'Reilly,John Van Der Meulen,Sam O'Reilly,8-2,8,2,1,0,Completed,true,false,false,8-2
+AP009031,17 Oct 26,3,Lauriston,Highmoor Uniting,No. 1,Ben Dix,Jason Mahmoud,Ben Dix,8-3,8,3,1,0,Completed,true,false,false,8-3
+AP009031,17 Oct 26,3,Lauriston,Highmoor Uniting,No. 2,Aaron Nazaretian,Glenn Collins,Aaron Nazaretian,8-1,8,1,1,0,Completed,true,false,false,8-1
+AP009031,17 Oct 26,3,Lauriston,Highmoor Uniting,No. 3,Jude Teo,Nick Martin,Jude Teo,8-6,8,6,1,0,Completed,true,false,false,8-6
+AP009031,17 Oct 26,3,Lauriston,Highmoor Uniting,No. 4,Dean Smith,Brett Collins,Dean Smith,8-6,8,6,1,0,Completed,true,false,false,8-6
+AP009032,17 Oct 26,3,Albert Park,Hurlingham Park,No. 1,Leon Katelis,John Malakasiotis,Leon Katelis,8-2,8,2,1,0,Completed,true,false,false,8-2
+AP009032,17 Oct 26,3,Albert Park,Hurlingham Park,No. 2,Bill Katelis,Con Pasas,Con Pasas,1-8,1,8,0,1,Completed,true,false,false,1-8
+AP009032,17 Oct 26,3,Albert Park,Hurlingham Park,No. 3,Paul Robinson,Gary McKenzie,Gary McKenzie,0-8,0,8,0,1,Completed,true,false,false,0-8
+AP009032,17 Oct 26,3,Albert Park,Hurlingham Park,No. 4,Kobe Earle,John Murray,John Murray,0-8,0,8,0,1,Completed,true,false,false,0-8
+AP009033,17 Oct 26,3,BLTC,Kooyong,No. 1,Robert Donat,Nicky Li,Robert Donat,8-3,8,3,1,0,Completed,true,false,false,8-3
+AP009033,17 Oct 26,3,BLTC,Kooyong,No. 2,David Jenkins,Chris Gerendasi,Chris Gerendasi,2-8,2,8,0,1,Completed,true,false,false,2-8
+AP009033,17 Oct 26,3,BLTC,Kooyong,No. 3,Daniel Choi,Will Preston,Will Preston,0-8,0,8,0,1,Completed,true,false,false,0-8
+AP009033,17 Oct 26,3,BLTC,Kooyong,No. 4,James Pilcher,Josh Van Der Sluys,James Pilcher,8-3,8,3,1,0,Completed,true,false,false,8-3
+AP009041,24 Oct 26,4,Essendon,Lauriston,No. 1,Max Ferguson,Aaron Nazaretian,Max Ferguson,8-5,8,5,1,0,Completed,true,false,false,8-5
+AP009041,24 Oct 26,4,Essendon,Lauriston,No. 2,Liam Tomaszewksi,Jude Teo,Liam Tomaszewksi,8-7,8,7,1,0,Completed,true,false,false,8-7
+AP009041,24 Oct 26,4,Essendon,Lauriston,No. 3,Ryan Jegadeesh,Dean Smith,Ryan Jegadeesh,8-5,8,5,1,0,Completed,true,false,false,8-5
+AP009041,24 Oct 26,4,Essendon,Lauriston,No. 4,Sam O'Reilly,[Unnamed emergency — TROLS AP009041 away code 4],Sam O'Reilly,8-0,8,0,1,0,Completed,false,false,true,8-0
+AP009042,24 Oct 26,4,Highmoor Uniting,Albert Park,No. 1,Nick Martin,Leon Katelis,Leon Katelis,3-8,3,8,0,1,Completed,true,false,false,3-8
+AP009042,24 Oct 26,4,Highmoor Uniting,Albert Park,No. 2,Leo McInerney,Paul Robinson,Leo McInerney,8-0,8,0,1,0,Completed,true,false,false,8-0
+AP009042,24 Oct 26,4,Highmoor Uniting,Albert Park,No. 3,Brett Collins,Alan Attwood,Brett Collins,8-0,8,0,1,0,Completed,true,false,false,8-0
+AP009042,24 Oct 26,4,Highmoor Uniting,Albert Park,No. 4,Vikram Jangra,Jean-Yves Nouaze,Vikram Jangra,8-4,8,4,1,0,Completed,true,false,false,8-4
+AP009043,24 Oct 26,4,Hurlingham Park,BLTC,No. 1,John Malakasiotis,David Jenkins,John Malakasiotis,8-0,8,0,1,0,Completed,true,false,false,8-0
+AP009043,24 Oct 26,4,Hurlingham Park,BLTC,No. 2,Con Pasas,Ernie Brook,Ernie Brook,7-8,7,8,0,1,Completed,true,false,false,7-8
+AP009043,24 Oct 26,4,Hurlingham Park,BLTC,No. 3,William Mulholland,Josh Tesler,Josh Tesler,5-8,5,8,0,1,Completed,true,false,false,5-8
+AP009043,24 Oct 26,4,Hurlingham Park,BLTC,No. 4,Trevor Phillips,John Van Der Meulen,Trevor Phillips,8-5,8,5,1,0,Completed,true,false,false,8-5

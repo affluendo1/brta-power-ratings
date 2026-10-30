@@ -1,37 +1,37 @@
-fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
-AP008021,10 Oct 26,2,Clarinda,Overport Park,No. 1,David James,Degan Johnston,David James,8-7,8,7,1,0,Completed,true,false,false
-AP008021,10 Oct 26,2,Clarinda,Overport Park,No. 2,Tri Dinh,Leith Scott,Tri Dinh,8-5,8,5,1,0,Completed,true,false,false
-AP008021,10 Oct 26,2,Clarinda,Overport Park,No. 3,Vincent Wen,William Oakes,Vincent Wen,8-3,8,3,1,0,Completed,true,false,false
-AP008021,10 Oct 26,2,Clarinda,Overport Park,No. 4,Roland Detterbeck,Theo Thomas,Roland Detterbeck,8-3,8,3,1,0,Completed,true,false,true
-AP008022,10 Oct 26,2,Carmelite,Mt Eliza Penins,No. 1,Mark Doherty,Russell Human,Mark Doherty,8-3,8,3,1,0,Completed,true,false,false
-AP008022,10 Oct 26,2,Carmelite,Mt Eliza Penins,No. 2,Francis Forbes,Daniel Black,Daniel Black,7-8,7,8,0,1,Completed,true,false,false
-AP008022,10 Oct 26,2,Carmelite,Mt Eliza Penins,No. 3,Adam Taylor,William Ong,Adam Taylor,8-2,8,2,1,0,Completed,true,true,false
-AP008022,10 Oct 26,2,Carmelite,Mt Eliza Penins,No. 4,Moritz Altrichter,Jason Moser,Moritz Altrichter,8-0,8,0,1,0,Completed,true,true,true
-AP008024,10 Oct 26,2,BLTC,Sandringham,No. 1,Ingo Bohlken,Jason Clarke,Ingo Bohlken,8-2,8,2,1,0,Completed,true,false,false
-AP008024,10 Oct 26,2,BLTC,Sandringham,No. 2,Nicholas Higgins,Gavan Wright,Nicholas Higgins,8-3,8,3,1,0,Completed,true,false,false
-AP008024,10 Oct 26,2,BLTC,Sandringham,No. 3,Bob McCarthy,Mark Creelman,Mark Creelman,6-8,6,8,0,1,Completed,true,false,false
-AP008024,10 Oct 26,2,BLTC,Sandringham,No. 4,Grant Burnell,Craig Schwerdt,Craig Schwerdt,4-8,4,8,0,1,Completed,true,false,false
-AP008031,17 Oct 26,3,Overport Park,BLTC,No. 1,Leith Scott,Jeremy Mitchell,Jeremy Mitchell,6-8,6,8,0,1,Completed,true,false,false
-AP008031,17 Oct 26,3,Overport Park,BLTC,No. 2,William Oakes,Bob McCarthy,Bob McCarthy,7-8,7,8,0,1,Completed,true,false,false
-AP008031,17 Oct 26,3,Overport Park,BLTC,No. 3,Kyle Turnbull,Joe Livermore,Joe Livermore,7-8,7,8,0,1,Completed,true,true,false
-AP008031,17 Oct 26,3,Overport Park,BLTC,No. 4,Charlie Oakes,Alberto Polintan,Alberto Polintan,1-8,1,8,0,1,Completed,true,true,false
-AP008032,17 Oct 26,3,Mt Eliza Penins,Clarinda,No. 1,Daniel Black,Roland Detterbeck,Daniel Black,8-3,8,3,1,0,Completed,true,false,false
-AP008032,17 Oct 26,3,Mt Eliza Penins,Clarinda,No. 2,William Ong,Chris Ch'ng,William Ong,8-2,8,2,1,0,Completed,true,false,true
-AP008032,17 Oct 26,3,Mt Eliza Penins,Clarinda,No. 3,James Cullen,Steven Gu,James Cullen,8-3,8,3,1,0,Completed,true,false,true
-AP008032,17 Oct 26,3,Mt Eliza Penins,Clarinda,No. 4,Andrew Coletti,Charles Mac,Andrew Coletti,8-2,8,2,1,0,Completed,true,true,true
-AP008033,17 Oct 26,3,Tennis World,Carmelite,No. 1,Ben Lambell,Gim Kurti,Gim Kurti,3-8,3,8,0,1,Completed,true,false,false
-AP008033,17 Oct 26,3,Tennis World,Carmelite,No. 2,Sam Cassar,Mark Doherty,Mark Doherty,4-8,4,8,0,1,Completed,true,false,false
-AP008033,17 Oct 26,3,Tennis World,Carmelite,No. 3,Juan Carlos Saaverdra,Francis Forbes,Juan Carlos Saaverdra,8-5,8,5,1,0,Completed,true,false,false
-AP008033,17 Oct 26,3,Tennis World,Carmelite,No. 4,Andrew Patuto,Adam Taylor,Adam Taylor,6-8,6,8,0,1,Completed,true,false,true
-AP008042,24 Oct 26,4,BLTC,Mt Eliza Penins,No. 1,Ingo Bohlken,Daniel Black,Daniel Black,6-8,6,8,0,1,Completed,true,false,false
-AP008042,24 Oct 26,4,BLTC,Mt Eliza Penins,No. 2,Nicholas Higgins,William Ong,Nicholas Higgins,6-3,6,3,1,0,Completed,true,false,false
-AP008042,24 Oct 26,4,BLTC,Mt Eliza Penins,No. 3,Grant Burnell,James Cullen,,0-1,0,1,0,1,Unfinished,false,false,false
-AP008042,24 Oct 26,4,BLTC,Mt Eliza Penins,No. 4,Alberto Polintan,Andrew Coletti,Andrew Coletti,2-8,2,8,0,1,Completed,true,false,true
-AP008043,24 Oct 26,4,Clarinda,Tennis World,No. 1,David James,Ben Lambell,David James,8-1,8,1,1,0,Completed,true,false,false
-AP008043,24 Oct 26,4,Clarinda,Tennis World,No. 2,Tung Lam,[Unnamed emergency — TROLS AP008043 away code 2],Tung Lam,8-0,8,0,1,0,Completed,false,false,true
-AP008043,24 Oct 26,4,Clarinda,Tennis World,No. 3,Vincent Wen,Connor Hindle,Vincent Wen,8-6,8,6,1,0,Completed,true,false,false
-AP008043,24 Oct 26,4,Clarinda,Tennis World,No. 4,Roland Detterbeck,Andrew Patuto,Andrew Patuto,1-8,1,8,0,1,Completed,true,false,false
-AP008044,24 Oct 26,4,Carmelite,Sandringham,No. 1,Mark Doherty,Jason Clarke,Mark Doherty,8-2,8,2,1,0,Completed,true,false,false
-AP008044,24 Oct 26,4,Carmelite,Sandringham,No. 2,Francis Forbes,Gavan Wright,Gavan Wright,6-8,6,8,0,1,Completed,true,false,false
-AP008044,24 Oct 26,4,Carmelite,Sandringham,No. 3,Adam Taylor,Mark Creelman,Mark Creelman,2-8,2,8,0,1,Completed,true,true,false
-AP008044,24 Oct 26,4,Carmelite,Sandringham,No. 4,Moritz Altrichter,Craig Schwerdt,Moritz Altrichter,8-2,8,2,1,0,Completed,true,true,false
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency,source_score
+AP008021,10 Oct 26,2,Clarinda,Overport Park,No. 1,David James,Degan Johnston,David James,8-7,8,7,1,0,Completed,true,false,false,8-7
+AP008021,10 Oct 26,2,Clarinda,Overport Park,No. 2,Tri Dinh,Leith Scott,Tri Dinh,8-5,8,5,1,0,Completed,true,false,false,8-5
+AP008021,10 Oct 26,2,Clarinda,Overport Park,No. 3,Vincent Wen,William Oakes,Vincent Wen,8-3,8,3,1,0,Completed,true,false,false,8-3
+AP008021,10 Oct 26,2,Clarinda,Overport Park,No. 4,Roland Detterbeck,Theo Thomas,Roland Detterbeck,8-3,8,3,1,0,Completed,true,false,true,8-3
+AP008022,10 Oct 26,2,Carmelite,Mt Eliza Penins,No. 1,Mark Doherty,Russell Human,Mark Doherty,8-3,8,3,1,0,Completed,true,false,false,8-3
+AP008022,10 Oct 26,2,Carmelite,Mt Eliza Penins,No. 2,Francis Forbes,Daniel Black,Daniel Black,7-8,7,8,0,1,Completed,true,false,false,7-8
+AP008022,10 Oct 26,2,Carmelite,Mt Eliza Penins,No. 3,Adam Taylor,William Ong,Adam Taylor,8-2,8,2,1,0,Completed,true,true,false,8-2
+AP008022,10 Oct 26,2,Carmelite,Mt Eliza Penins,No. 4,Moritz Altrichter,Jason Moser,Moritz Altrichter,8-0,8,0,1,0,Completed,true,true,true,8-0
+AP008024,10 Oct 26,2,BLTC,Sandringham,No. 1,Ingo Bohlken,Jason Clarke,Ingo Bohlken,8-2,8,2,1,0,Completed,true,false,false,8-2
+AP008024,10 Oct 26,2,BLTC,Sandringham,No. 2,Nicholas Higgins,Gavan Wright,Nicholas Higgins,8-3,8,3,1,0,Completed,true,false,false,8-3
+AP008024,10 Oct 26,2,BLTC,Sandringham,No. 3,Bob McCarthy,Mark Creelman,Mark Creelman,6-8,6,8,0,1,Completed,true,false,false,6-8
+AP008024,10 Oct 26,2,BLTC,Sandringham,No. 4,Grant Burnell,Craig Schwerdt,Craig Schwerdt,4-8,4,8,0,1,Completed,true,false,false,4-8
+AP008031,17 Oct 26,3,Overport Park,BLTC,No. 1,Leith Scott,Jeremy Mitchell,Jeremy Mitchell,6-8,6,8,0,1,Completed,true,false,false,6-8
+AP008031,17 Oct 26,3,Overport Park,BLTC,No. 2,William Oakes,Bob McCarthy,Bob McCarthy,7-8,7,8,0,1,Completed,true,false,false,7-8
+AP008031,17 Oct 26,3,Overport Park,BLTC,No. 3,Kyle Turnbull,Joe Livermore,Joe Livermore,7-8,7,8,0,1,Completed,true,true,false,7-8
+AP008031,17 Oct 26,3,Overport Park,BLTC,No. 4,Charlie Oakes,Alberto Polintan,Alberto Polintan,1-8,1,8,0,1,Completed,true,true,false,1-8
+AP008032,17 Oct 26,3,Mt Eliza Penins,Clarinda,No. 1,Daniel Black,Roland Detterbeck,Daniel Black,8-3,8,3,1,0,Completed,true,false,false,8-3
+AP008032,17 Oct 26,3,Mt Eliza Penins,Clarinda,No. 2,William Ong,Chris Ch'ng,William Ong,8-2,8,2,1,0,Completed,true,false,true,8-2
+AP008032,17 Oct 26,3,Mt Eliza Penins,Clarinda,No. 3,James Cullen,Steven Gu,James Cullen,8-3,8,3,1,0,Completed,true,false,true,8-3
+AP008032,17 Oct 26,3,Mt Eliza Penins,Clarinda,No. 4,Andrew Coletti,Charles Mac,Andrew Coletti,8-2,8,2,1,0,Completed,true,true,true,8-2
+AP008033,17 Oct 26,3,Tennis World,Carmelite,No. 1,Ben Lambell,Gim Kurti,Gim Kurti,3-8,3,8,0,1,Completed,true,false,false,3-8
+AP008033,17 Oct 26,3,Tennis World,Carmelite,No. 2,Sam Cassar,Mark Doherty,Mark Doherty,4-8,4,8,0,1,Completed,true,false,false,4-8
+AP008033,17 Oct 26,3,Tennis World,Carmelite,No. 3,Juan Carlos Saaverdra,Francis Forbes,Juan Carlos Saaverdra,8-5,8,5,1,0,Completed,true,false,false,8-5
+AP008033,17 Oct 26,3,Tennis World,Carmelite,No. 4,Andrew Patuto,Adam Taylor,Adam Taylor,6-8,6,8,0,1,Completed,true,false,true,6-8
+AP008042,24 Oct 26,4,BLTC,Mt Eliza Penins,No. 1,Ingo Bohlken,Daniel Black,Daniel Black,6-8,6,8,0,1,Completed,true,false,false,6-8
+AP008042,24 Oct 26,4,BLTC,Mt Eliza Penins,No. 2,Nicholas Higgins,William Ong,Nicholas Higgins,6-3,6,3,1,0,Completed,true,false,false,6-3
+AP008042,24 Oct 26,4,BLTC,Mt Eliza Penins,No. 3,Grant Burnell,James Cullen,,0-1,0,1,0,1,Unfinished,false,false,false,0-1
+AP008042,24 Oct 26,4,BLTC,Mt Eliza Penins,No. 4,Alberto Polintan,Andrew Coletti,Andrew Coletti,2-8,2,8,0,1,Completed,true,false,true,2-8
+AP008043,24 Oct 26,4,Clarinda,Tennis World,No. 1,David James,Ben Lambell,David James,8-1,8,1,1,0,Completed,true,false,false,8-1
+AP008043,24 Oct 26,4,Clarinda,Tennis World,No. 2,Tung Lam,[Unnamed emergency — TROLS AP008043 away code 2],Tung Lam,8-0,8,0,1,0,Completed,false,false,true,8-0
+AP008043,24 Oct 26,4,Clarinda,Tennis World,No. 3,Vincent Wen,Connor Hindle,Vincent Wen,8-6,8,6,1,0,Completed,true,false,false,8-6
+AP008043,24 Oct 26,4,Clarinda,Tennis World,No. 4,Roland Detterbeck,Andrew Patuto,Andrew Patuto,1-8,1,8,0,1,Completed,true,false,false,1-8
+AP008044,24 Oct 26,4,Carmelite,Sandringham,No. 1,Mark Doherty,Jason Clarke,Mark Doherty,8-2,8,2,1,0,Completed,true,false,false,8-2
+AP008044,24 Oct 26,4,Carmelite,Sandringham,No. 2,Francis Forbes,Gavan Wright,Gavan Wright,6-8,6,8,0,1,Completed,true,false,false,6-8
+AP008044,24 Oct 26,4,Carmelite,Sandringham,No. 3,Adam Taylor,Mark Creelman,Mark Creelman,2-8,2,8,0,1,Completed,true,true,false,2-8
+AP008044,24 Oct 26,4,Carmelite,Sandringham,No. 4,Moritz Altrichter,Craig Schwerdt,Moritz Altrichter,8-2,8,2,1,0,Completed,true,true,false,8-2

@@ -1,29 +1,29 @@
-fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
-AP012022,10 Oct 26,2,Mentone,BLTC,No. 1,Jack Forster,Peter Maroudas,Jack Forster,8-1,8,1,1,0,Completed,true,false,false
-AP012022,10 Oct 26,2,Mentone,BLTC,No. 2,Dante Ortega,Alex Khakham,Dante Ortega,8-0,8,0,1,0,Completed,true,false,false
-AP012022,10 Oct 26,2,Mentone,BLTC,No. 3,Owen Richardson,Jeremy Gomeze,Owen Richardson,8-2,8,2,1,0,Completed,true,false,false
-AP012022,10 Oct 26,2,Mentone,BLTC,No. 4,Phillip Nyamukondiala,Alex Panait,Phillip Nyamukondiala,8-4,8,4,1,0,Completed,true,false,false
-AP012024,10 Oct 26,2,St Louis de Mont Blue,Mordialloc,No. 1,Michael Lindfield,Andrew Livermore,Andrew Livermore,0-8,0,8,0,1,Completed,true,false,true
-AP012024,10 Oct 26,2,St Louis de Mont Blue,Mordialloc,No. 2,Thomas Gellie,Xavier Stainthorpe,Xavier Stainthorpe,5-8,5,8,0,1,Completed,true,false,false
-AP012024,10 Oct 26,2,St Louis de Mont Blue,Mordialloc,No. 3,Luke Evans,Hunter Wicking,Hunter Wicking,2-8,2,8,0,1,Completed,true,true,false
-AP012024,10 Oct 26,2,St Louis de Mont Blue,Mordialloc,No. 4,Jimi Kalpakoff,Chris Huang,Chris Huang,2-8,2,8,0,1,Completed,true,false,false
-AP012031,17 Oct 26,3,Le Page,St Louis de Mont Blue,No. 1,Jack Malasek,Michael Lindfield,Jack Malasek,8-6,8,6,1,0,Completed,true,false,false
-AP012031,17 Oct 26,3,Le Page,St Louis de Mont Blue,No. 2,Sarah Daniell,Luke Evans,Sarah Daniell,8-5,8,5,1,0,Completed,true,false,true
-AP012031,17 Oct 26,3,Le Page,St Louis de Mont Blue,No. 3,Alex Zhao,Elliott Fairlie,Alex Zhao,8-2,8,2,1,0,Completed,true,false,false
-AP012031,17 Oct 26,3,Le Page,St Louis de Mont Blue,No. 4,Kieran Start,Will Devlin,Will Devlin,2-8,2,8,0,1,Completed,true,false,false
-AP012032,17 Oct 26,3,BLTC,Royal Ave,No. 1,Peter Maroudas,Conor Mooney,Conor Mooney,0-8,0,8,0,1,Completed,true,false,true
-AP012032,17 Oct 26,3,BLTC,Royal Ave,No. 2,Alex Khakham,Jacob Hu,Jacob Hu,3-8,3,8,0,1,Completed,true,false,true
-AP012032,17 Oct 26,3,BLTC,Royal Ave,No. 3,Jeremy Gomeze,Jimi Weir,Jimi Weir,3-8,3,8,0,1,Completed,true,false,false
-AP012032,17 Oct 26,3,BLTC,Royal Ave,No. 4,Leo Henschke,Sanjeeva Attygale,Leo Henschke,8-2,8,2,1,0,Completed,true,false,true
-AP012033,17 Oct 26,3,St Louis de Mont Red,Mentone,No. 1,Tom Vella,Owen Richardson,Owen Richardson,1-8,1,8,0,1,Completed,true,false,false
-AP012033,17 Oct 26,3,St Louis de Mont Red,Mentone,No. 2,Patrick Devlin,Phillip Nyamukondiala,Phillip Nyamukondiala,1-8,1,8,0,1,Completed,true,false,false
-AP012033,17 Oct 26,3,St Louis de Mont Red,Mentone,No. 3,Zavier Modeley,Jitesh Gursahani,Jitesh Gursahani,2-8,2,8,0,1,Completed,true,false,false
-AP012033,17 Oct 26,3,St Louis de Mont Red,Mentone,No. 4,Patrick Freeman,Arun Gulur,Patrick Freeman,8-7,8,7,1,0,Completed,true,true,false
-AP012042,24 Oct 26,4,St Louis de Mont Blue,BLTC,No. 1,Michael Lindfield,Alex Khakham,Alex Khakham,3-8,3,8,0,1,Completed,true,false,false
-AP012042,24 Oct 26,4,St Louis de Mont Blue,BLTC,No. 2,Thomas Gellie,Leo Henschke,Thomas Gellie,8-4,8,4,1,0,Completed,true,false,false
-AP012042,24 Oct 26,4,St Louis de Mont Blue,BLTC,No. 3,Luke Evans,Tin Dang,Luke Evans,8-3,8,3,1,0,Completed,true,true,false
-AP012042,24 Oct 26,4,St Louis de Mont Blue,BLTC,No. 4,Elliott Fairlie,Alex Panait,Elliott Fairlie,8-2,8,2,1,0,Completed,true,false,false
-AP012043,24 Oct 26,4,Royal Ave,St Louis de Mont Red,No. 1,Conor Mooney,Nicholas Shipham,Nicholas Shipham,6-8,6,8,0,1,Completed,true,true,false
-AP012043,24 Oct 26,4,Royal Ave,St Louis de Mont Red,No. 2,Charlie Vakrinos,Dylan Joughin,Charlie Vakrinos,8-1,8,1,1,0,Completed,true,true,false
-AP012043,24 Oct 26,4,Royal Ave,St Louis de Mont Red,No. 3,Lachie Scott,Patrick Devlin,Lachie Scott,8-3,8,3,1,0,Completed,true,true,false
-AP012043,24 Oct 26,4,Royal Ave,St Louis de Mont Red,No. 4,Sanjeeva Attygale,Zavier Modeley,Sanjeeva Attygale,8-2,8,2,1,0,Completed,true,true,false
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency,source_score
+AP012022,10 Oct 26,2,Mentone,BLTC,No. 1,Jack Forster,Peter Maroudas,Jack Forster,8-1,8,1,1,0,Completed,true,false,false,8-1
+AP012022,10 Oct 26,2,Mentone,BLTC,No. 2,Dante Ortega,Alex Khakham,Dante Ortega,8-0,8,0,1,0,Completed,true,false,false,8-0
+AP012022,10 Oct 26,2,Mentone,BLTC,No. 3,Owen Richardson,Jeremy Gomeze,Owen Richardson,8-2,8,2,1,0,Completed,true,false,false,8-2
+AP012022,10 Oct 26,2,Mentone,BLTC,No. 4,Phillip Nyamukondiala,Alex Panait,Phillip Nyamukondiala,8-4,8,4,1,0,Completed,true,false,false,8-4
+AP012024,10 Oct 26,2,St Louis de Mont Blue,Mordialloc,No. 1,Michael Lindfield,Andrew Livermore,Andrew Livermore,0-8,0,8,0,1,Completed,true,false,true,0-8
+AP012024,10 Oct 26,2,St Louis de Mont Blue,Mordialloc,No. 2,Thomas Gellie,Xavier Stainthorpe,Xavier Stainthorpe,5-8,5,8,0,1,Completed,true,false,false,5-8
+AP012024,10 Oct 26,2,St Louis de Mont Blue,Mordialloc,No. 3,Luke Evans,Hunter Wicking,Hunter Wicking,2-8,2,8,0,1,Completed,true,true,false,2-8
+AP012024,10 Oct 26,2,St Louis de Mont Blue,Mordialloc,No. 4,Jimi Kalpakoff,Chris Huang,Chris Huang,2-8,2,8,0,1,Completed,true,false,false,2-8
+AP012031,17 Oct 26,3,Le Page,St Louis de Mont Blue,No. 1,Jack Malasek,Michael Lindfield,Jack Malasek,8-6,8,6,1,0,Completed,true,false,false,8-6
+AP012031,17 Oct 26,3,Le Page,St Louis de Mont Blue,No. 2,Sarah Daniell,Luke Evans,Sarah Daniell,8-5,8,5,1,0,Completed,true,false,true,8-5
+AP012031,17 Oct 26,3,Le Page,St Louis de Mont Blue,No. 3,Alex Zhao,Elliott Fairlie,Alex Zhao,8-2,8,2,1,0,Completed,true,false,false,8-2
+AP012031,17 Oct 26,3,Le Page,St Louis de Mont Blue,No. 4,Kieran Start,Will Devlin,Will Devlin,2-8,2,8,0,1,Completed,true,false,false,2-8
+AP012032,17 Oct 26,3,BLTC,Royal Ave,No. 1,Peter Maroudas,Conor Mooney,Conor Mooney,0-8,0,8,0,1,Completed,true,false,true,0-8
+AP012032,17 Oct 26,3,BLTC,Royal Ave,No. 2,Alex Khakham,Jacob Hu,Jacob Hu,3-8,3,8,0,1,Completed,true,false,true,3-8
+AP012032,17 Oct 26,3,BLTC,Royal Ave,No. 3,Jeremy Gomeze,Jimi Weir,Jimi Weir,3-8,3,8,0,1,Completed,true,false,false,3-8
+AP012032,17 Oct 26,3,BLTC,Royal Ave,No. 4,Leo Henschke,Sanjeeva Attygale,Leo Henschke,8-2,8,2,1,0,Completed,true,false,true,8-2
+AP012033,17 Oct 26,3,St Louis de Mont Red,Mentone,No. 1,Tom Vella,Owen Richardson,Owen Richardson,1-8,1,8,0,1,Completed,true,false,false,1-8
+AP012033,17 Oct 26,3,St Louis de Mont Red,Mentone,No. 2,Patrick Devlin,Phillip Nyamukondiala,Phillip Nyamukondiala,1-8,1,8,0,1,Completed,true,false,false,1-8
+AP012033,17 Oct 26,3,St Louis de Mont Red,Mentone,No. 3,Zavier Modeley,Jitesh Gursahani,Jitesh Gursahani,2-8,2,8,0,1,Completed,true,false,false,2-8
+AP012033,17 Oct 26,3,St Louis de Mont Red,Mentone,No. 4,Patrick Freeman,Arun Gulur,Patrick Freeman,8-7,8,7,1,0,Completed,true,true,false,8-7
+AP012042,24 Oct 26,4,St Louis de Mont Blue,BLTC,No. 1,Michael Lindfield,Alex Khakham,Alex Khakham,3-8,3,8,0,1,Completed,true,false,false,3-8
+AP012042,24 Oct 26,4,St Louis de Mont Blue,BLTC,No. 2,Thomas Gellie,Leo Henschke,Thomas Gellie,8-4,8,4,1,0,Completed,true,false,false,8-4
+AP012042,24 Oct 26,4,St Louis de Mont Blue,BLTC,No. 3,Luke Evans,Tin Dang,Luke Evans,8-3,8,3,1,0,Completed,true,true,false,8-3
+AP012042,24 Oct 26,4,St Louis de Mont Blue,BLTC,No. 4,Elliott Fairlie,Alex Panait,Elliott Fairlie,8-2,8,2,1,0,Completed,true,false,false,8-2
+AP012043,24 Oct 26,4,Royal Ave,St Louis de Mont Red,No. 1,Conor Mooney,Nicholas Shipham,Nicholas Shipham,6-8,6,8,0,1,Completed,true,true,false,6-8
+AP012043,24 Oct 26,4,Royal Ave,St Louis de Mont Red,No. 2,Charlie Vakrinos,Dylan Joughin,Charlie Vakrinos,8-1,8,1,1,0,Completed,true,true,false,8-1
+AP012043,24 Oct 26,4,Royal Ave,St Louis de Mont Red,No. 3,Lachie Scott,Patrick Devlin,Lachie Scott,8-3,8,3,1,0,Completed,true,true,false,8-3
+AP012043,24 Oct 26,4,Royal Ave,St Louis de Mont Red,No. 4,Sanjeeva Attygale,Zavier Modeley,Sanjeeva Attygale,8-2,8,2,1,0,Completed,true,true,false,8-2
