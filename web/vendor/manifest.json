@@ -1,7 +1,5 @@
 {
   "schema_version": 1,
-  "prepared_at_utc": "2026-10-29T05:51:23.041381+00:00",
-  "activation": "Unloaded preparation assets. No homepage, account, navigation or Club Zone feature is enabled.",
   "packages": [
     {
       "name": "leaflet",
@@ -99,5 +97,6 @@
         }
       ]
     }
-  ]
+  ],
+  "recorded_at_utc": "2026-10-29T05:51:23.041381+00:00"
 }

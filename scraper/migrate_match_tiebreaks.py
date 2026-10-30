@@ -70,10 +70,11 @@ def migrate(root=Path('.'), *, build=False):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--build', action='store_true', help='Refit affected historical sections as well as correcting raw rows')
-    parser.add_argument('--report', default='internal/association/match-tiebreak-audit.json')
+    parser.add_argument('--report', help='Optional path for a local correction report')
     args = parser.parse_args()
     report = migrate(build=args.build)
-    destination = Path(args.report)
-    destination.parent.mkdir(parents=True, exist_ok=True)
-    destination.write_text(json.dumps(report, indent=2) + '\n')
+    if args.report:
+        destination = Path(args.report)
+        destination.parent.mkdir(parents=True, exist_ok=True)
+        destination.write_text(json.dumps(report, indent=2) + '\n')
     print(f"Scanned {report['sections_scanned']} current/historical sections; {len(report['affected_sections'])} contain match tiebreaks")

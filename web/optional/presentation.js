@@ -4,7 +4,7 @@
   const textRecords=new Map(),attributeRecords=new Map(),baseRates=new WeakMap();
   let translated=false,observer,animationTimer,pressure=1,scheduled=false;
   const attributes=['title','aria-label','aria-description','placeholder','alt','label'];
-  const exempt=element=>element.closest('script,style,noscript,[data-ms-literal]');
+  const exempt=element=>element.closest('script,style,noscript,[data-ms-literal],[data-floating-translator]');
   function transform(){
     scheduled=false;if(!translated)return;
     const names=new Set([...document.querySelectorAll('[data-player],[data-global-player],[data-club-team],[data-tl-open]')].flatMap(e=>[e.dataset.player,e.dataset.globalPlayer,e.dataset.clubTeam,e.dataset.tlOpen]).filter(Boolean));
@@ -30,7 +30,7 @@
     if(enabled){document.documentElement.lang='x-kavac';if(!observer)observer=new MutationObserver(schedule);observer.observe(document.documentElement,{subtree:true,childList:true,characterData:true,attributes:true,attributeFilter:attributes});transform();}
     else{observer?.disconnect();scheduled=false;document.documentElement.lang='en';for(const [node,record]of textRecords)if(node.data===record.output)node.data=record.source;for(const[element,record]of attributeRecords)for(const[key,value]of Object.entries(record))if(element.getAttribute(key)===value.output)element.setAttribute(key,value.source);textRecords.clear();attributeRecords.clear();}
   }
-  document.addEventListener('input',event=>{if(event.target.matches('input,textarea'))event.target.toggleAttribute('data-ms-literal',/^(?:Sid Basa|Siddharth(?: R\.)? Basa)$/i.test(event.target.value));},true);
+  document.addEventListener('input',event=>{if(event.target.closest('[data-floating-translator]'))return;if(event.target.matches('input,textarea'))event.target.toggleAttribute('data-ms-literal',/^(?:Sid Basa|Siddharth(?: R\.)? Basa)$/i.test(event.target.value));},true);
   function updateAnimations(){
     for(const animation of document.getAnimations()){
       const target=animation.effect?.target;

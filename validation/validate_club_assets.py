@@ -1,4 +1,4 @@
-"""Validate dormant third-party and association assets without network access."""
+"""Validate bundled third-party and association assets without network access."""
 from pathlib import Path
 import hashlib
 import json
@@ -34,7 +34,7 @@ def validate():
         assert size == (logo['width'], logo['height'])
         assert min(size) > 2, f'Placeholder image: {path}'
         assert logo['modified'] is False
-    vendors = json.loads((ROOT / 'assets/preparation/club-zone/vendor-manifest.json').read_text())['packages']
+    vendors = json.loads((ROOT / 'web/vendor/manifest.json').read_text())['packages']
     assert {v['name'] for v in vendors} == {'leaflet', 'leaflet.markercluster'}
     for vendor in vendors:
         assert vendor['license'] in {'BSD-2-Clause', 'MIT'}
@@ -45,11 +45,11 @@ def validate():
         for ref in re.findall(r'url\([\'"]?([^\)\'\"]+)', css.read_text()):
             if not ref.startswith(('data:', 'http', '#')):
                 assert (css.parent/ref).is_file(), f'Missing CSS image: {ref}'
-    # Preparatory assets must remain disconnected from startup and precaching.
+    # These assets are not part of the startup shell.
     for file in [ROOT/'index.html', ROOT/'sw.js']:
         assert 'leaflet-markercluster' not in file.read_text()
         assert 'assets/associations/' not in file.read_text()
-    print(f'Validated {len(logos)} association marks, {len(vendors)} pinned packages, image references and dormant wiring.')
+    print(f'Validated {len(logos)} association marks, {len(vendors)} pinned packages, image references and startup wiring.')
 
 if __name__ == '__main__':
     validate()

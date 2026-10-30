@@ -17,8 +17,6 @@ star opens Following management, including the followed-player filter.
 
 [Open the live site](https://affluendo1.github.io/brta-power-ratings/)
 
-The [8.2.1.2 audit report](docs/audit-8.2.1.2.md) records the repaired failure paths, validation and remaining test limits.
-
 ### Version and changelog
 
 Open **Settings → Changelog** to see the latest website update or expand entries
@@ -152,7 +150,7 @@ The five main views are:
 Other views are opened from the header or player profiles:
 
 - **Player Lab** includes the player's matchup outlook, actual-versus-expected results, schedule difficulty, form, rating history and doubles evidence. Historical Player Lab views use the selected round's ratings and results.
-- **Club Zone** is under maintenance while the logistics and map experience is prepared.
+- **Club Zone** is under maintenance.
 - **Rounds** combines round highlights with your team’s week-by-week calendar, published no-play dates, starting times and calendar downloads.
 - **Settings** contains display preferences, Theme Studio, methodology and BRTA rules. The section picker also links directly to past seasons. A separate control exports the selected section's match and fixture data as CSV.
 
@@ -268,7 +266,7 @@ URLs so current and archived section payloads continue to load normally.
 | `assets/` | Images, fonts and audio |
 | `scraper/`, `generate_*.py`, `model.py` | Source ingestion and generated section data |
 | `data/current/`, `data/site/`, `data/archive/` | Source records and published payloads |
-| `tests/`, `validation/` | Regression checks and model validation |
+| `tests/`, `validation/` | Regression and bundled-asset checks |
 
 Models expose small browser APIs and CommonJS exports for direct Node tests.
 Feature scripts consume those APIs; the lab model scopes records and ratings to
@@ -296,8 +294,6 @@ python generate_site_data.py
 ```
 
 To run the full historical backfill locally, use `python -m scraper.backfill_history` followed by `python generate_archive_site_data.py`. This is network-intensive and can take substantially longer than a current-season sync.
-
-`validation/validate_v2_v3.py` contains a walk-forward comparison harness for game log loss and match Brier score. The development datasets used for tuning are not included in this repository, so those historical comparison results cannot be reproduced from the checked-in files alone.
 
 ## Disclaimer
 
@@ -371,11 +367,6 @@ lineups, emergencies, doubles configurations and round-selection tables.
 Display settings includes a saved match display order for scorecards, labs, predictions and exports. Player Lab lists the selected player first in partnerships; team contexts use lineup order.
 Player Lab charts have independent Rating/Ranking tabs. Display also offers rounded graph lines; changing one chart's tab redraws only that chart. Match Explorer uses bold opponent names, italic partner names, and green/red performance comparisons against the relevant context's rating.
 
-The fixture pipeline also maintains a source-attributed club directory in
-`data/current/clubs.json`, merged across current Saturday and Sunday sections.
-This prepares future Club Zone work; the directory is not displayed in the site.
-Venue and contact variations are retained with their original section context.
-
 ### Theme Studio and search commands
 
 Settings → Theme Studio creates themes and single-colour schemes with three live
@@ -390,21 +381,6 @@ Records compare win percentage, then most wins (best) or most losses (worst).
 Game percentage is games won / games played. The history command index preserves
 season and section context, qualification and all ties without loading every
 section into the browser. Historical command ratings use published RM3 snapshots.
-
-The background Clubs collector stores the full TROLS directory in
-`data/current/club-directory.json`, alongside the fixture-derived network. The
-dormant `BRTAClubMap.mountNetwork(container, clubs, onClubSelect)` adapter uses
-Leaflet 1.9.4 and OpenStreetMap tiles, limits navigation to metropolitan Melbourne,
-and passes a club identity to the future Club Zone navigation callback. It is not
-mounted anywhere yet and makes no tile requests until explicitly mounted. Leaflet
-is vendored under its BSD-2-Clause licence. Its original marker, retina and
-layer-control images are now bundled for future map development.
-
-Additional dormant preparation assets, sources and integration notes are listed
-in [Club Zone preparation](docs/club-zone-preparation.md). Official-source logos
-for all twelve TROLS directories are stored under `assets/associations/`, with
-checksums and provenance in `assets/associations/manifest.json`. These assets do
-not activate Club Zone or any new homepage, account system or navigation.
 
 ### Rounds, Following and Share Cards (8.2)
 
@@ -441,8 +417,7 @@ backfill of adult competitions.
 
 `web/models/matchday.js` owns calendar dates, ICS generation, scoped following
 identities and result-change comparisons. Separate feature modules own Rounds,
-Following and canvas share cards. `web/future/club-zone-shell.html` is an unmounted
-design template and does not enable Club Zone.
+Following and canvas share cards.
 
 ### 8.2.1 presentation and archive expansion
 
@@ -496,10 +471,9 @@ and table data, with an explicit normalisation warning instead of silent loss.
 Generated datasets are ignored by git and do not change the live site's menus.
 
 `python -m scraper.probe_associations --association wdta` remains available for
-quick selector-only inspection. See `internal/association/trols-expansion.md`
-for source differences and the boundary between collection and rating integration.
+quick selector-only inspection.
 
-### 8.2.2 — partnerships, cards and club foundations
+### 8.2.2 — partnerships and cards
 
 Doubles pairs support section, all-section and historical searches. Search either
 partner, then open the partnership in its original section and season. Optional
@@ -513,15 +487,6 @@ Team Explorer sits alongside the selected team's lineup and opens its fixtures
 without leaving Teams. Prediction Centre uses the compact squad/pair checkbox
 style from Custom Section Creator; projected players and partnerships open labs.
 
-Club logistics preparation joins `data/current/club-directory.json` and fixture
-observations into `data/current/club-foundation.json`. Club, team and venue IDs
-are separate. Reviewed aliases, source provenance, unknown facility fields,
-multiple-ground review flags and fixture-specific venue overrides are preserved.
-The opt-in BRTA pilot (`?club-pilot=1`) uses a lazy map and an accessible club list,
-with separate Logistics and Past stats tabs. It does not enable the general Club
-Zone rollout or accounts. Existing historical club statistics remain the source
-for the pilot's Past stats view; generated venue data does not rewrite history.
-
 Unlocked Black + has an accent control in normal Display settings. Kâvąc mode
 has a floating translator for loaded site text and names. Optional-view additions
 remain deliberately vague in the public changelog.
@@ -532,9 +497,9 @@ Additional regression suite:
 NODE_PATH=/tmp/brta-ui-tests/node_modules node tests/browser/refinement.cjs
 ```
 
-### RM4 development
+### Stored score corrections
 
-The [RM4 proposal](docs/rm4-proposal.md) describes the next offline model experiments.
-RM4 is not a released rating model. To repeat the historical score correction, run
+To repeat the historical score correction, run
 `python -m scraper.migrate_match_tiebreaks --build`, then regenerate current data
-and the archive search indexes. The migration is idempotent and preserves source scores.
+and the archive search indexes. The migration is idempotent and preserves source
+scores. Add `--report /path/to/report.json` to save a local correction report.

@@ -1,4 +1,4 @@
-"""Collect the public TROLS Clubs directory; retained for the future Club Zone."""
+"""Collect the public TROLS Clubs directory."""
 from __future__ import annotations
 import json
 import re

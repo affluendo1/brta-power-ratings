@@ -1,9 +1,9 @@
 name: UI regression audit
 on:
   push:
-    paths: ['web/**', 'index.html', 'sw.js', 'assets/associations/**', 'assets/preparation/**', 'validation/validate_club_assets.py', 'tests/**', '.github/workflows/ui-tests.yml']
+    paths: ['web/**', 'index.html', 'sw.js', 'assets/associations/**', 'validation/validate_club_assets.py', 'tests/**', '.github/workflows/ui-tests.yml']
   pull_request:
-    paths: ['web/**', 'index.html', 'sw.js', 'assets/associations/**', 'assets/preparation/**', 'validation/validate_club_assets.py', 'tests/**', '.github/workflows/ui-tests.yml']
+    paths: ['web/**', 'index.html', 'sw.js', 'assets/associations/**', 'validation/validate_club_assets.py', 'tests/**', '.github/workflows/ui-tests.yml']
   workflow_dispatch:
 permissions:
   contents: read
@@ -18,7 +18,7 @@ jobs:
           node-version: '22'
       - name: Install isolated UI test dependency
         run: npm install --prefix "$RUNNER_TEMP/brta-ui-tests" --no-save --ignore-scripts jsdom@26.1.0
-      - name: Validate dormant Club Zone assets
+      - name: Validate bundled assets
         run: python3 validation/validate_club_assets.py
       - name: Run JavaScript regression suites
         run: |

@@ -6,3 +6,9 @@ debug/trols-associations/
 
 # Multi-association source datasets are generated, separate from the live site.
 data/trols/
+
+# Private notes and generated local reports are not published.
+internal/
+docs/
+.github/notes/
+debug/

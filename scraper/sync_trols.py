@@ -42,7 +42,7 @@ ALIASES = {"Geoge Si": "George Si"}
 MAX_WORKERS = int(os.getenv("TROLS_WORKERS", "10"))
 _thread_local = threading.local()
 
-# Future source collectors: name -> callable(section_snapshot, request_get).
+# Source collector registry: name -> callable(section_snapshot, request_get).
 # Empty by default: no speculative fields or additional TROLS requests.
 SECTION_ENRICHERS = {}
 
@@ -1011,7 +1011,7 @@ def main() -> None:
         (section_dir / "metadata.json").write_text(json.dumps(metadata, indent=2) + "\n", encoding="utf-8")
         catalog.append(metadata)
     synced_at = datetime.now(timezone.utc).isoformat()
-    # Data preparation only: no frontend fetch or Club Zone presentation yet.
+    # Store the source-attributed directory separately from match results.
     (OUT / "club-directory.json").write_text(json.dumps(directory, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     (OUT / "clubs.json").write_text(json.dumps(network, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     (OUT / "club-foundation.json").write_text(json.dumps(build_foundation(directory,network,sections,checked_at=synced_at),ensure_ascii=False,separators=(",",":"))+"\n",encoding="utf-8")
