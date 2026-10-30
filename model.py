@@ -13,12 +13,14 @@ import numpy as np
 import pandas as pd
 from scipy.optimize import minimize
 from scipy.special import expit
+from scraper.score_formats import rating_counts, normalise_frame
 
 GAME_SCALE = 0.75
 HALF_LIFE_DAYS = 365.0
 L2 = 5.0
 DISPLAY_CENTRE = 1500.0
 DISPLAY_SCALE = 600.0
+MATCH_TIEBREAK_WEIGHT = 1.0  # One bounded outcome unit, never ordinary games.
 MIN_MATCHES = 4
 MIN_DOUBLES_MATCHES = 2
 
@@ -59,12 +61,16 @@ def prepare(df):
     df["match_date"]=df.apply(inferred_date,axis=1)
     return df
 
-def fit_power_ratings(csv_path):
-    df=prepare(pd.read_csv(csv_path))
+def fit_power_ratings(csv_path, *, match_tiebreak_weight=MATCH_TIEBREAK_WEIGHT):
+    from pathlib import Path
+    import json
+    meta_path=Path(csv_path).parent/"metadata.json"
+    meta=json.loads(meta_path.read_text()) if meta_path.exists() else {}
+    df=prepare(normalise_frame(pd.read_csv(csv_path), meta))
     players=sorted(set(df["home_player"])|set(df["away_player"]))
     ix={p:k for k,p in enumerate(players)}; n_players=len(players)
     i=df["home_player"].map(ix).to_numpy(); j=df["away_player"].map(ix).to_numpy()
-    gi=df["home_games"].astype(float).to_numpy(); gj=df["away_games"].astype(float).to_numpy(); games=gi+gj
+    gi,gj=rating_counts(df, "RM3", match_tiebreak_weight); games=gi+gj
     reference_date=df["match_date"].max()
     age_days=(reference_date-df["match_date"]).dt.days.to_numpy()
     weight=2.0**(-np.maximum(age_days,0)/HALF_LIFE_DAYS)

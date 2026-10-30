@@ -10,9 +10,11 @@ import pandas as pd
 from scipy.optimize import minimize
 from scipy.special import expit
 
+from scraper.score_formats import normalise_frame, rating_counts, parse_score
+
 from model import (
     GAME_SCALE, HALF_LIFE_DAYS, L2, DISPLAY_CENTRE, DISPLAY_SCALE,
-    MIN_MATCHES, MIN_DOUBLES_MATCHES, centred_covariance, fit_power_ratings,
+    MIN_MATCHES, MIN_DOUBLES_MATCHES, MATCH_TIEBREAK_WEIGHT, centred_covariance, fit_power_ratings,
 )
 
 DATA_DIR = Path("data/current")
@@ -155,7 +157,7 @@ def fit_power_ratings_from_df(df):
     players=sorted(set(df["home_player"])|set(df["away_player"]))
     ix={p:k for k,p in enumerate(players)}; n=len(players)
     i=df["home_player"].map(ix).to_numpy(); j=df["away_player"].map(ix).to_numpy()
-    gi=df["home_games"].astype(float).to_numpy(); gj=df["away_games"].astype(float).to_numpy(); games=gi+gj
+    gi,gj=rating_counts(df, "RM3", MATCH_TIEBREAK_WEIGHT); games=gi+gj
     ref=df["match_date"].max(); age=(ref-df["match_date"]).dt.days.to_numpy()
     weight=2.0**(-np.maximum(age,0)/HALF_LIFE_DAYS)
     def fg(theta):
@@ -198,7 +200,7 @@ def fit_individual_doubles(doubles, *, rubbers_format=False):
     away_members=[pair_members(x) for x in df.away_pair]
     players=sorted(set(sum(home_members+away_members,[])))
     ix={p:k for k,p in enumerate(players)}; n=len(players)
-    gi=df.home_games.astype(float).to_numpy(); gj=df.away_games.astype(float).to_numpy(); games=gi+gj
+    gi,gj=rating_counts(df, "RM3", MATCH_TIEBREAK_WEIGHT); games=gi+gj
     ref=df.match_date.max(); age=(ref-df.match_date).dt.days.to_numpy()
     weight=2.0**(-np.maximum(age,0)/HALF_LIFE_DAYS)
     design=np.zeros((len(df),n))
@@ -965,7 +967,7 @@ def _oriented_score(score, home_side):
     text = str(score or "")
     if home_side:
         return text
-    return re.sub(r"(\d+)(\s*[-–]\s*)(\d+)", lambda match: match.group(3) + match.group(2) + match.group(1), text)
+    return re.sub(r"\[TB ([WL])\]", lambda m: "[TB L]" if m[1]=="W" else "[TB W]", re.sub(r"(\d+)(\s*[-–]\s*)(\d+)", lambda match: match.group(3) + match.group(2) + match.group(1), text))
 
 
 def _score_profile(score, home_side):
@@ -975,11 +977,9 @@ def _score_profile(score, home_side):
     contribute no set-level statistic rather than inventing an outcome.
     """
     text = str(score or "")
-    plain = re.sub(r"[\(\[].*?[\)\]]", "", text)
-    pairs = [(int(a), int(b)) for a, b in re.findall(r"(\d+)\s*[-–]\s*(\d+)", plain)]
-    own_pairs = [(a, b) if home_side else (b, a) for a, b in pairs]
-    match_tiebreak = bool(own_pairs and len(own_pairs) >= 3 and max(own_pairs[-1]) >= 10)
-    normal = own_pairs[:-1] if match_tiebreak else own_pairs
+    typed = parse_score(text)
+    normal = [(v['h'], v['a']) if home_side else (v['a'], v['h']) for v in typed if not v['mt']]
+    match_tiebreak = any(v['mt'] for v in typed)
     won_sets = sum(1 for mine, theirs in normal if mine > theirs)
     lost_sets = sum(1 for mine, theirs in normal if mine < theirs)
     tiebreaks = [(mine, theirs) for mine, theirs in normal if max(mine, theirs) == 7 and min(mine, theirs) == 6]
@@ -1402,9 +1402,12 @@ def result_rounds(fixtures, singles, doubles, rules):
 
 
 def build_section(meta, *, sections_dir=None):
+    meta={**meta, "scoreSchema": 2}
     section_dir=(sections_dir or SECTIONS_DIR)/meta["section_code"]
     singles=pd.read_csv(section_dir/"singles.csv")
     doubles=pd.read_csv(section_dir/"doubles.csv")
+    singles=normalise_frame(singles, meta, "singles")
+    doubles=normalise_frame(doubles, meta, "doubles")
     fixtures=pd.read_csv(section_dir/"fixtures.csv")
     draw=pd.read_csv(section_dir/"draw.csv")
     if "stage" not in fixtures: fixtures["stage"]="regular"
@@ -1597,7 +1600,7 @@ def main():
     leaders.sort(key=lambda row:(-row["expectedGameShare"],-row["runnerUpGap"],row["sectionCode"]))
     for rank,row in enumerate(leaders,1): row["dominanceRank"]=rank
     model={
-        "version":"V3","centre":int(DISPLAY_CENTRE),"displayScale":int(DISPLAY_SCALE),
+        "version":"V3","matchTiebreak":{"RM3":{"weight":MATCH_TIEBREAK_WEIGHT,"mode":"outcome"},"RM3b":{"weight":2,"mode":"point-share","unknownPoints":"outcome"},"countsAsOrdinaryGames":False},"centre":int(DISPLAY_CENTRE),"displayScale":int(DISPLAY_SCALE),
         "singlesMinMatches":MIN_MATCHES,"doublesMinMatches":MIN_DOUBLES_MATCHES,
         "doublesIndividualMinMatches":INDIVIDUAL_DOUBLES_MIN,
         "doublesIndividualMinPartners":INDIVIDUAL_DOUBLES_MIN_PARTNERS,

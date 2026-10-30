@@ -1,6 +1,16 @@
 # BRTA Power Ratings
 
-**Current version: 8.2.2**
+**Current version: 8.2.3**
+
+Match tiebreaks use bracketed point scores when available. Legacy TROLS outcome-only
+deciders use `[TB W]` / `[TB L]` from the home side’s perspective, with no invented
+point scores. Ordinary games, official fixture totals and rating evidence stay separate.
+The correction covers current and historical 2026 junior Rubbers sections.
+Adult third sets are retained unless the source or verified rules identify a match tiebreak.
+
+Player Lab includes close-set/tiebreak records and, for multi-set matches, first-set
+recoveries, straight sets and deciding matches. Doubles-only sections omit Singles
+and Overall views. Team Explorer expands to show the full fixture list.
 
 Returning visitors see the changelog once after a newer release. The Ratings
 star opens Following management, including the followed-player filter.
@@ -79,7 +89,11 @@ that custom section. V3B retains V3's logistic scale (0.75), 365-day half-life,
 L2 penalty (5), and displayed power scale (1500 + 600θ). Its composite likelihood
 adds evidence in game-equivalent units: each normal game has weight 1, each set
 win 2, and each match win 4. A deciding match tiebreak contributes 2 units total,
-split by the share of points won, including extended tiebreaks. The deciding
+split by the share of points won when recorded, or assigned by the known outcome
+when points are unavailable. RM3 instead uses 1 fixed outcome unit per deciding
+match tiebreak. Neither model adds tiebreak points to ordinary games; extended
+tiebreaks retain the same bounded weight. Parameters live in `model.py`,
+`scraper/score_formats.py` and `web/models/custom-section-model.js`. The deciding
 tiebreak also counts as a set won. These are explicit initial model weights,
 not tuned against a historical validation set. The components are correlated;
 the Hessian uncertainty is an approximation for this composite objective.
@@ -517,3 +531,10 @@ Additional regression suite:
 ```sh
 NODE_PATH=/tmp/brta-ui-tests/node_modules node tests/browser/refinement.cjs
 ```
+
+### RM4 development
+
+The [RM4 proposal](docs/rm4-proposal.md) describes the next offline model experiments.
+RM4 is not a released rating model. To repeat the historical score correction, run
+`python -m scraper.migrate_match_tiebreaks --build`, then regenerate current data
+and the archive search indexes. The migration is idempotent and preserves source scores.

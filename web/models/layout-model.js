@@ -1,5 +1,6 @@
 (function(root){
 'use strict';
+const Scores=root.BRTAScores||(typeof require==='function'?require('./score-formats'):null);
 const names=['Apex','Elite','Strong','Middle Class','Developing','Basement'];
 function bands(rows,qualified=()=>true){
  const values=rows.filter(qualified).map(r=>r.rating).filter(Number.isFinite).sort((a,b)=>a-b);
@@ -20,17 +21,15 @@ function observations(data){const result=[];
  for(const round of data.results||[])for(const f of round.fixtures||[])for(const r of f.rubbers||[]){
   if(r.valid_for_rating===false||r.status&&r.status!=='Completed'||!r.winner||/ret|forfeit|walkover|unfinished/i.test(r.score||''))continue;
   const home=String(r.home||'').split(/\s*\/\s*/),away=String(r.away||'').split(/\s*\/\s*/);if(!home[0]||!away[0])continue;
-  const sets=[...String(r.score||'').matchAll(/(\[)?(\d+)\s*[-–:]\s*(\d+)(?:\([^)]*\))?\]?/g)].map(m=>({h:+m[2],a:+m[3],mt:!!m[1]}));
-  if(sets.length>=3&&(sets.at(-1).h>=10||sets.at(-1).a>=10))sets.at(-1).mt=true;
-  if(!sets.length)continue;
-  const regular=sets.filter(s=>!s.mt),hs=sets.filter(s=>s.h>s.a).length,as=sets.filter(s=>s.a>s.h).length;
-  result.push({home,away,type:r.type,hg:regular.reduce((n,s)=>n+s.h,0),ag:regular.reduce((n,s)=>n+s.a,0),hs,as,matchTiebreaks:sets.filter(s=>s.mt),winner:r.winner===r.home?'home':'away',date:sourceDate(f.date||round.date),round:Number(round.round),homeTeam:f.home,awayTeam:f.away});
+  const sets=Scores.parse(r.score,{outcomeCode:Scores.outcomeCode(data,r.type)});if(!sets.length)continue;
+  const regular=sets.filter(s=>!s.mt),hs=sets.filter(s=>s.winner==='home').length,as=sets.filter(s=>s.winner==='away').length;
+  result.push({home,away,type:r.type,hg:regular.reduce((n,s)=>n+s.h,0),ag:regular.reduce((n,s)=>n+s.a,0),hs,as,matchTiebreaks:sets.filter(s=>s.mt).map(s=>s.unknown?s:{h:s.h,a:s.a,mt:true}),winner:r.winner===r.home?'home':'away',date:sourceDate(f.date||round.date),round:Number(round.round),homeTeam:f.home,awayTeam:f.away});
  }return result;
 }
 function recalculate(data,model,engine){
- if(model!=='RM3b'&&data.meta?.ratingModel!=='V3B')return data;const fitModel=model==='RM3b'?'V3B':'V3';
- const all=observations(data),copy={...data,meta:{...data.meta,ratingModel:fitModel},ratingHistory:{...data.ratingHistory,tables:{},players:{}},doublesRatingHistory:{...data.doublesRatingHistory,tables:{}}};
- const merge=(base,fitted)=>{const byName=new Map(fitted.map(r=>[r.player,r]));return(base||[]).map(r=>{const f=byName.get(r.player);return f?{...r,rating:f.rating,se:f.se,lo:f.lo,hi:f.hi}:r}).sort((a,b)=>b.rating-a.rating||a.player.localeCompare(b.player));};
+ if(model!=='RM3b'&&data.meta?.ratingModel!=='V3B'&&!data.meta?.needsScoreRefit)return data;const fitModel=model==='RM3b'?'V3B':'V3';
+ const all=observations(data),copy={...data,meta:{...data.meta,ratingModel:fitModel,scoreSchema:2,needsScoreRefit:false},ratingHistory:{...data.ratingHistory,tables:{},players:{}},doublesRatingHistory:{...data.doublesRatingHistory,tables:{}}};
+ const merge=(base,fitted)=>{const byName=new Map(fitted.map(r=>[r.player,r]));return(base||[]).map(r=>{const f=byName.get(r.player);return f?{...r,rating:f.rating,se:f.se,lo:f.lo,hi:f.hi,gf:f.gf,ga:f.ga}:r}).sort((a,b)=>b.rating-a.rating||a.player.localeCompare(b.player));};
  function calculate(round,baseS,baseD,baseP){const subset=round==null?all:all.filter(m=>m.round<=round),reference=subset.map(m=>m.date).filter(Boolean).sort().at(-1)||'2000-01-01',matches=subset.map(m=>({...m,date:m.date||reference})),s=engine.fit(matches.filter(m=>m.type==='Singles'),false,false,fitModel),d=engine.fit(matches.filter(m=>m.type==='Doubles'),true,data.format==='rubbers',fitModel),p=engine.fit(matches.filter(m=>m.type==='Doubles'),false,false,fitModel),powers=new Map(d.map(r=>[r.player,r.rating]));p.forEach(r=>{r.individualAverage=Math.round(r.player.split(' / ').reduce((n,p)=>n+(powers.get(p)||1500),0)/2);r.pairEffect=r.rating-r.individualAverage});return{singles:merge(baseS,s),doublesPlayers:merge(baseD,d),pairs:merge(baseP,p).map(r=>{const f=p.find(x=>x.player===r.player);return f?{...r,individualAverage:f.individualAverage,pairEffect:f.pairEffect}:r})};}
  for(const item of data.ratingHistory?.rounds||[]){const n=+item.round,b=data.doublesRatingHistory?.tables?.[n],r=calculate(n,data.ratingHistory?.tables?.[n]||[],b?.doublesPlayers||[],b?.pairs||[]);copy.ratingHistory.tables[n]=r.singles;copy.doublesRatingHistory.tables[n]={doublesPlayers:r.doublesPlayers,pairs:r.pairs};r.singles.forEach(p=>(copy.ratingHistory.players[p.player]??=[]).push([n,p.rating,p.se,p.matches,p.team]));}
  const latest=calculate(null,data.singles,data.doublesIndividuals,data.doubles);copy.singles=latest.singles;copy.doublesIndividuals=latest.doublesPlayers;copy.doubles=latest.pairs;return copy;
