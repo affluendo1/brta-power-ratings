@@ -1,49 +1,49 @@
-fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
-AP005021,10 Oct 26,2,Kooyong Green,Kooyong Purple,No. 1,Monty Coller,Brad Skinner,Monty Coller,8-7,8,7,1,0,Completed,true,false,false
-AP005021,10 Oct 26,2,Kooyong Green,Kooyong Purple,No. 2,Steve Brookes,Andu Borasaru,Andu Borasaru,5-8,5,8,0,1,Completed,true,false,false
-AP005021,10 Oct 26,2,Kooyong Green,Kooyong Purple,No. 3,Roddy Reynolds,Scott Porter,Roddy Reynolds,8-4,8,4,1,0,Completed,true,false,false
-AP005021,10 Oct 26,2,Kooyong Green,Kooyong Purple,No. 4,Owen Cooper,Mark De Stefanis,Owen Cooper,8-5,8,5,1,0,Completed,true,false,false
-AP005022,10 Oct 26,2,Overport Park,Tennis World,No. 1,Josh Adams,Felipe Sinuela,Josh Adams,8-1,8,1,1,0,Completed,true,false,false
-AP005022,10 Oct 26,2,Overport Park,Tennis World,No. 2,Michael Neylan,Abhi Gajwani,Michael Neylan,8-6,8,6,1,0,Completed,true,false,true
-AP005022,10 Oct 26,2,Overport Park,Tennis World,No. 3,Oliver Hanson,Jose Ignacio Carrasco,Oliver Hanson,8-6,8,6,1,0,Completed,true,false,false
-AP005022,10 Oct 26,2,Overport Park,Tennis World,No. 4,Beno Siebermann,Yashank Maini,Beno Siebermann,8-5,8,5,1,0,Completed,true,false,false
-AP005023,10 Oct 26,2,BLTC,Royal South Yarra,No. 1,Miguel Rasguido,Ben Giles,Ben Giles,1-8,1,8,0,1,Completed,true,false,false
-AP005023,10 Oct 26,2,BLTC,Royal South Yarra,No. 2,Emir Zmak,Dean Park,Emir Zmak,8-4,8,4,1,0,Completed,true,false,false
-AP005023,10 Oct 26,2,BLTC,Royal South Yarra,No. 3,Charlie Pettifer,Adrian Anderson,Charlie Pettifer,8-7,8,7,1,0,Completed,true,false,false
-AP005023,10 Oct 26,2,BLTC,Royal South Yarra,No. 4,Simon Scott-Branagan,Tom Park,Simon Scott-Branagan,8-4,8,4,1,0,Completed,true,false,false
-AP005024,10 Oct 26,2,Ardrie Park,Caulfield Rec,No. 1,Sam Cohen,Michael Hickey,Michael Hickey,4-8,4,8,0,1,Completed,true,false,false
-AP005024,10 Oct 26,2,Ardrie Park,Caulfield Rec,No. 2,Philip Cassou-Desus,Nathan Kazakevich,Nathan Kazakevich,5-8,5,8,0,1,Completed,true,false,false
-AP005024,10 Oct 26,2,Ardrie Park,Caulfield Rec,No. 3,Brandt Kakulas,Luke Barton,Luke Barton,4-8,4,8,0,1,Completed,true,true,true
-AP005024,10 Oct 26,2,Ardrie Park,Caulfield Rec,No. 4,Blake Pfeiffer,Egor Barabanov,Egor Barabanov,2-8,2,8,0,1,Completed,true,true,false
-AP005031,17 Oct 26,3,Kooyong Purple,Ardrie Park,No. 1,Andu Borasaru,Tom Miller,Tom Miller,3-8,3,8,0,1,Completed,true,false,false
-AP005031,17 Oct 26,3,Kooyong Purple,Ardrie Park,No. 2,James Leong,Will Nolan,James Leong,8-3,8,3,1,0,Completed,true,false,false
-AP005031,17 Oct 26,3,Kooyong Purple,Ardrie Park,No. 3,Mark Teoh,Sam Cohen,Mark Teoh,8-5,8,5,1,0,Completed,true,false,false
-AP005031,17 Oct 26,3,Kooyong Purple,Ardrie Park,No. 4,Mark De Stefanis,Brandt Kakulas,Mark De Stefanis,8-4,8,4,1,0,Completed,true,false,true
-AP005032,17 Oct 26,3,Tennis World,Kooyong Green,No. 1,Michael Johnston,Monty Coller,Michael Johnston,8-3,8,3,1,0,Completed,true,false,false
-AP005032,17 Oct 26,3,Tennis World,Kooyong Green,No. 2,Felipe Sinuela,Steve Brookes,Felipe Sinuela,8-3,8,3,1,0,Completed,true,false,false
-AP005032,17 Oct 26,3,Tennis World,Kooyong Green,No. 3,Jose Ignacio Carrasco,Owen Cooper,Jose Ignacio Carrasco,8-4,8,4,1,0,Completed,true,false,false
-AP005032,17 Oct 26,3,Tennis World,Kooyong Green,No. 4,Nikolas Salazar,Chris Hey,Chris Hey,7-8,7,8,0,1,Completed,true,true,false
-AP005033,17 Oct 26,3,Royal South Yarra,Overport Park,No. 1,Jordan Wong,Michael Neylan,Jordan Wong,8-2,8,2,1,0,Completed,true,false,false
-AP005033,17 Oct 26,3,Royal South Yarra,Overport Park,No. 2,Robert Read,Oliver Hanson,Oliver Hanson,0-8,0,8,0,1,Completed,true,false,false
-AP005033,17 Oct 26,3,Royal South Yarra,Overport Park,No. 3,Lachlan Kemp,Beno Siebermann,Beno Siebermann,5-8,5,8,0,1,Completed,true,false,false
-AP005033,17 Oct 26,3,Royal South Yarra,Overport Park,No. 4,Sam Hill,Sonny Woodford,Sonny Woodford,4-8,4,8,0,1,Completed,true,false,false
-AP005034,17 Oct 26,3,Caulfield Rec,BLTC,No. 1,Nathan Kazakevich,Miguel Rasguido,Nathan Kazakevich,8-3,8,3,1,0,Completed,true,false,false
-AP005034,17 Oct 26,3,Caulfield Rec,BLTC,No. 2,Gary Slapar,Emir Zmak,Emir Zmak,4-8,4,8,0,1,Completed,true,false,false
-AP005034,17 Oct 26,3,Caulfield Rec,BLTC,No. 3,Egor Barabanov,Charlie Pettifer,Egor Barabanov,8-7,8,7,1,0,Completed,true,false,false
-AP005034,17 Oct 26,3,Caulfield Rec,BLTC,No. 4,Taylor Ashton,Simon Scott-Branagan,Taylor Ashton,8-7,8,7,1,0,Completed,true,true,false
-AP005041,24 Oct 26,4,BLTC,Kooyong Purple,No. 1,Miguel Rasguido,Brad Skinner,Miguel Rasguido,8-2,8,2,1,0,Completed,true,false,false
-AP005041,24 Oct 26,4,BLTC,Kooyong Purple,No. 2,Emir Zmak,Mark Teoh,Emir Zmak,8-4,8,4,1,0,Completed,true,false,false
-AP005041,24 Oct 26,4,BLTC,Kooyong Purple,No. 3,Charlie Pettifer,Mark De Stefanis,Charlie Pettifer,8-4,8,4,1,0,Completed,true,false,false
-AP005041,24 Oct 26,4,BLTC,Kooyong Purple,No. 4,Simon Scott-Branagan,Richie Gee,Richie Gee,0-8,0,8,0,1,Completed,true,false,false
-AP005042,24 Oct 26,4,Ardrie Park,Tennis World,No. 1,Tom Miller,Michael Johnston,Tom Miller,8-0,8,0,1,0,Completed,true,false,false
-AP005042,24 Oct 26,4,Ardrie Park,Tennis World,No. 2,Will Nolan,Thomas Josephson,Thomas Josephson,0-8,0,8,0,1,Completed,true,false,true
-AP005042,24 Oct 26,4,Ardrie Park,Tennis World,No. 3,Philip Cassou-Desus,Felipe Sinuela,Felipe Sinuela,4-8,4,8,0,1,Completed,true,false,false
-AP005042,24 Oct 26,4,Ardrie Park,Tennis World,No. 4,Brandt Kakulas,Jose Ignacio Carrasco,Jose Ignacio Carrasco,4-8,4,8,0,1,Completed,true,true,false
-AP005043,24 Oct 26,4,Kooyong Green,Royal South Yarra,No. 1,Monty Coller,Ben Giles,Ben Giles,5-8,5,8,0,1,Completed,true,false,false
-AP005043,24 Oct 26,4,Kooyong Green,Royal South Yarra,No. 2,Roddy Reynolds,Lachlan Kemp,Lachlan Kemp,4-8,4,8,0,1,Completed,true,false,false
-AP005043,24 Oct 26,4,Kooyong Green,Royal South Yarra,No. 3,Owen Cooper,Dean Park,Owen Cooper,8-0,8,0,1,0,Completed,true,false,false
-AP005043,24 Oct 26,4,Kooyong Green,Royal South Yarra,No. 4,Chris Hey,Tom Park,Chris Hey,8-1,8,1,1,0,Completed,true,false,false
-AP005044,24 Oct 26,4,Overport Park,Caulfield Rec,No. 1,Josh Adams,Michael Hickey,Michael Hickey,4-8,4,8,0,1,Completed,true,false,false
-AP005044,24 Oct 26,4,Overport Park,Caulfield Rec,No. 2,Oliver Hanson,Nathan Kazakevich,Oliver Hanson,8-3,8,3,1,0,Completed,true,false,false
-AP005044,24 Oct 26,4,Overport Park,Caulfield Rec,No. 3,Sonny Woodford,Mateo Munoz,Mateo Munoz,4-8,4,8,0,1,Completed,true,false,true
-AP005044,24 Oct 26,4,Overport Park,Caulfield Rec,No. 4,Degan Johnston,Gary Slapar,Gary Slapar,5-8,5,8,0,1,Completed,true,true,false
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency,source_score
+AP005021,10 Oct 26,2,Kooyong Green,Kooyong Purple,No. 1,Monty Coller,Brad Skinner,Monty Coller,8-7,8,7,1,0,Completed,true,false,false,8-7
+AP005021,10 Oct 26,2,Kooyong Green,Kooyong Purple,No. 2,Steve Brookes,Andu Borasaru,Andu Borasaru,5-8,5,8,0,1,Completed,true,false,false,5-8
+AP005021,10 Oct 26,2,Kooyong Green,Kooyong Purple,No. 3,Roddy Reynolds,Scott Porter,Roddy Reynolds,8-4,8,4,1,0,Completed,true,false,false,8-4
+AP005021,10 Oct 26,2,Kooyong Green,Kooyong Purple,No. 4,Owen Cooper,Mark De Stefanis,Owen Cooper,8-5,8,5,1,0,Completed,true,false,false,8-5
+AP005022,10 Oct 26,2,Overport Park,Tennis World,No. 1,Josh Adams,Felipe Sinuela,Josh Adams,8-1,8,1,1,0,Completed,true,false,false,8-1
+AP005022,10 Oct 26,2,Overport Park,Tennis World,No. 2,Michael Neylan,Abhi Gajwani,Michael Neylan,8-6,8,6,1,0,Completed,true,false,true,8-6
+AP005022,10 Oct 26,2,Overport Park,Tennis World,No. 3,Oliver Hanson,Jose Ignacio Carrasco,Oliver Hanson,8-6,8,6,1,0,Completed,true,false,false,8-6
+AP005022,10 Oct 26,2,Overport Park,Tennis World,No. 4,Beno Siebermann,Yashank Maini,Beno Siebermann,8-5,8,5,1,0,Completed,true,false,false,8-5
+AP005023,10 Oct 26,2,BLTC,Royal South Yarra,No. 1,Miguel Rasguido,Ben Giles,Ben Giles,1-8,1,8,0,1,Completed,true,false,false,1-8
+AP005023,10 Oct 26,2,BLTC,Royal South Yarra,No. 2,Emir Zmak,Dean Park,Emir Zmak,8-4,8,4,1,0,Completed,true,false,false,8-4
+AP005023,10 Oct 26,2,BLTC,Royal South Yarra,No. 3,Charlie Pettifer,Adrian Anderson,Charlie Pettifer,8-7,8,7,1,0,Completed,true,false,false,8-7
+AP005023,10 Oct 26,2,BLTC,Royal South Yarra,No. 4,Simon Scott-Branagan,Tom Park,Simon Scott-Branagan,8-4,8,4,1,0,Completed,true,false,false,8-4
+AP005024,10 Oct 26,2,Ardrie Park,Caulfield Rec,No. 1,Sam Cohen,Michael Hickey,Michael Hickey,4-8,4,8,0,1,Completed,true,false,false,4-8
+AP005024,10 Oct 26,2,Ardrie Park,Caulfield Rec,No. 2,Philip Cassou-Desus,Nathan Kazakevich,Nathan Kazakevich,5-8,5,8,0,1,Completed,true,false,false,5-8
+AP005024,10 Oct 26,2,Ardrie Park,Caulfield Rec,No. 3,Brandt Kakulas,Luke Barton,Luke Barton,4-8,4,8,0,1,Completed,true,true,true,4-8
+AP005024,10 Oct 26,2,Ardrie Park,Caulfield Rec,No. 4,Blake Pfeiffer,Egor Barabanov,Egor Barabanov,2-8,2,8,0,1,Completed,true,true,false,2-8
+AP005031,17 Oct 26,3,Kooyong Purple,Ardrie Park,No. 1,Andu Borasaru,Tom Miller,Tom Miller,3-8,3,8,0,1,Completed,true,false,false,3-8
+AP005031,17 Oct 26,3,Kooyong Purple,Ardrie Park,No. 2,James Leong,Will Nolan,James Leong,8-3,8,3,1,0,Completed,true,false,false,8-3
+AP005031,17 Oct 26,3,Kooyong Purple,Ardrie Park,No. 3,Mark Teoh,Sam Cohen,Mark Teoh,8-5,8,5,1,0,Completed,true,false,false,8-5
+AP005031,17 Oct 26,3,Kooyong Purple,Ardrie Park,No. 4,Mark De Stefanis,Brandt Kakulas,Mark De Stefanis,8-4,8,4,1,0,Completed,true,false,true,8-4
+AP005032,17 Oct 26,3,Tennis World,Kooyong Green,No. 1,Michael Johnston,Monty Coller,Michael Johnston,8-3,8,3,1,0,Completed,true,false,false,8-3
+AP005032,17 Oct 26,3,Tennis World,Kooyong Green,No. 2,Felipe Sinuela,Steve Brookes,Felipe Sinuela,8-3,8,3,1,0,Completed,true,false,false,8-3
+AP005032,17 Oct 26,3,Tennis World,Kooyong Green,No. 3,Jose Ignacio Carrasco,Owen Cooper,Jose Ignacio Carrasco,8-4,8,4,1,0,Completed,true,false,false,8-4
+AP005032,17 Oct 26,3,Tennis World,Kooyong Green,No. 4,Nikolas Salazar,Chris Hey,Chris Hey,7-8,7,8,0,1,Completed,true,true,false,7-8
+AP005033,17 Oct 26,3,Royal South Yarra,Overport Park,No. 1,Jordan Wong,Michael Neylan,Jordan Wong,8-2,8,2,1,0,Completed,true,false,false,8-2
+AP005033,17 Oct 26,3,Royal South Yarra,Overport Park,No. 2,Robert Read,Oliver Hanson,Oliver Hanson,0-8,0,8,0,1,Completed,true,false,false,0-8
+AP005033,17 Oct 26,3,Royal South Yarra,Overport Park,No. 3,Lachlan Kemp,Beno Siebermann,Beno Siebermann,5-8,5,8,0,1,Completed,true,false,false,5-8
+AP005033,17 Oct 26,3,Royal South Yarra,Overport Park,No. 4,Sam Hill,Sonny Woodford,Sonny Woodford,4-8,4,8,0,1,Completed,true,false,false,4-8
+AP005034,17 Oct 26,3,Caulfield Rec,BLTC,No. 1,Nathan Kazakevich,Miguel Rasguido,Nathan Kazakevich,8-3,8,3,1,0,Completed,true,false,false,8-3
+AP005034,17 Oct 26,3,Caulfield Rec,BLTC,No. 2,Gary Slapar,Emir Zmak,Emir Zmak,4-8,4,8,0,1,Completed,true,false,false,4-8
+AP005034,17 Oct 26,3,Caulfield Rec,BLTC,No. 3,Egor Barabanov,Charlie Pettifer,Egor Barabanov,8-7,8,7,1,0,Completed,true,false,false,8-7
+AP005034,17 Oct 26,3,Caulfield Rec,BLTC,No. 4,Taylor Ashton,Simon Scott-Branagan,Taylor Ashton,8-7,8,7,1,0,Completed,true,true,false,8-7
+AP005041,24 Oct 26,4,BLTC,Kooyong Purple,No. 1,Miguel Rasguido,Brad Skinner,Miguel Rasguido,8-2,8,2,1,0,Completed,true,false,false,8-2
+AP005041,24 Oct 26,4,BLTC,Kooyong Purple,No. 2,Emir Zmak,Mark Teoh,Emir Zmak,8-4,8,4,1,0,Completed,true,false,false,8-4
+AP005041,24 Oct 26,4,BLTC,Kooyong Purple,No. 3,Charlie Pettifer,Mark De Stefanis,Charlie Pettifer,8-4,8,4,1,0,Completed,true,false,false,8-4
+AP005041,24 Oct 26,4,BLTC,Kooyong Purple,No. 4,Simon Scott-Branagan,Richie Gee,Richie Gee,0-8,0,8,0,1,Completed,true,false,false,0-8
+AP005042,24 Oct 26,4,Ardrie Park,Tennis World,No. 1,Tom Miller,Michael Johnston,Tom Miller,8-0,8,0,1,0,Completed,true,false,false,8-0
+AP005042,24 Oct 26,4,Ardrie Park,Tennis World,No. 2,Will Nolan,Thomas Josephson,Thomas Josephson,0-8,0,8,0,1,Completed,true,false,true,0-8
+AP005042,24 Oct 26,4,Ardrie Park,Tennis World,No. 3,Philip Cassou-Desus,Felipe Sinuela,Felipe Sinuela,4-8,4,8,0,1,Completed,true,false,false,4-8
+AP005042,24 Oct 26,4,Ardrie Park,Tennis World,No. 4,Brandt Kakulas,Jose Ignacio Carrasco,Jose Ignacio Carrasco,4-8,4,8,0,1,Completed,true,true,false,4-8
+AP005043,24 Oct 26,4,Kooyong Green,Royal South Yarra,No. 1,Monty Coller,Ben Giles,Ben Giles,5-8,5,8,0,1,Completed,true,false,false,5-8
+AP005043,24 Oct 26,4,Kooyong Green,Royal South Yarra,No. 2,Roddy Reynolds,Lachlan Kemp,Lachlan Kemp,4-8,4,8,0,1,Completed,true,false,false,4-8
+AP005043,24 Oct 26,4,Kooyong Green,Royal South Yarra,No. 3,Owen Cooper,Dean Park,Owen Cooper,8-0,8,0,1,0,Completed,true,false,false,8-0
+AP005043,24 Oct 26,4,Kooyong Green,Royal South Yarra,No. 4,Chris Hey,Tom Park,Chris Hey,8-1,8,1,1,0,Completed,true,false,false,8-1
+AP005044,24 Oct 26,4,Overport Park,Caulfield Rec,No. 1,Josh Adams,Michael Hickey,Michael Hickey,4-8,4,8,0,1,Completed,true,false,false,4-8
+AP005044,24 Oct 26,4,Overport Park,Caulfield Rec,No. 2,Oliver Hanson,Nathan Kazakevich,Oliver Hanson,8-3,8,3,1,0,Completed,true,false,false,8-3
+AP005044,24 Oct 26,4,Overport Park,Caulfield Rec,No. 3,Sonny Woodford,Mateo Munoz,Mateo Munoz,4-8,4,8,0,1,Completed,true,false,true,4-8
+AP005044,24 Oct 26,4,Overport Park,Caulfield Rec,No. 4,Degan Johnston,Gary Slapar,Gary Slapar,5-8,5,8,0,1,Completed,true,true,false,5-8

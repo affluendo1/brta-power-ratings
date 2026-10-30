@@ -1,63 +1,63 @@
-fixture_id,date,round,home_team,away_team,position,home_pair,away_pair,winning_pair,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergencies,away_emergencies
-UA023011,19 Jul 26,1,GPHC,BLTC,No. 1,Hugo Rutherford / Lewis O'Donnell,Angus Christie / Tomas Cabrera,Angus Christie / Tomas Cabrera,3-6,3,6,0,1,Completed,true,"[false, false]","[false, false]"
-UA023011,19 Jul 26,1,GPHC,BLTC,No. 2,Finn Noonan / Julian Delcoigne,Celina Sakaci / Preston Liu,Celina Sakaci / Preston Liu,3-6,3,6,0,1,Completed,true,"[false, false]","[false, false]"
-UA023012,19 Jul 26,1,Victory Park,Dendy Park,No. 1,Kit Smith / Alexei Moralis,Oscar Want / Kevin Xie,Oscar Want / Kevin Xie,4-6,4,6,0,1,Completed,true,"[false, false]","[false, false]"
-UA023012,19 Jul 26,1,Victory Park,Dendy Park,No. 2,Cameron Wilson / Aahana Dodia,Taku Ramensky / Reina Hasegawa,Taku Ramensky / Reina Hasegawa,4-6,4,6,0,1,Completed,true,"[false, false]","[false, true]"
-UA023013,19 Jul 26,1,Black Rock,Maccabi,No. 1,Luca Nadal / Raef Harvey,Riley Hersz / Ari Zipor,Luca Nadal / Raef Harvey,6-2,6,2,1,0,Completed,true,"[false, false]","[false, false]"
-UA023013,19 Jul 26,1,Black Rock,Maccabi,No. 2,Angus Ray / Charlotte Ray,Eden Feinberg / Matti Feinberg,Eden Feinberg / Matti Feinberg,3-6,3,6,0,1,Completed,true,"[false, false]","[false, false]"
-UA023021,26 Jul 26,2,Le Page,GPHC,No. 1,Hunter Newman / Eeshan Gurjar,Hugo Rutherford / Ella Greville,Hunter Newman / Eeshan Gurjar,6-1,6,1,1,0,Completed,true,"[false, false]","[false, false]"
-UA023021,26 Jul 26,2,Le Page,GPHC,No. 2,Ma'ayan Alamaru / Zac Bianchi,Lewis O'Donnell / Finn Noonan,Ma'ayan Alamaru / Zac Bianchi,6-4,6,4,1,0,Completed,true,"[false, false]","[false, false]"
-UA023022,26 Jul 26,2,BLTC,Victory Park,No. 1,Tomas Cabrera / Celina Sakaci,Kit Smith / Nathan He,Kit Smith / Nathan He,6-7,6,7,0,1,Completed,true,"[false, false]","[false, false]"
-UA023022,26 Jul 26,2,BLTC,Victory Park,No. 2,Preston Liu / Angus Christie,Alexei Moralis / Aahana Dodia,Preston Liu / Angus Christie,7-5,7,5,1,0,Completed,true,"[false, false]","[false, false]"
-UA023023,26 Jul 26,2,Dendy Park,Black Rock,No. 1,Oscar Want / Kevin Xie,Luca Nadal / Angus Ray,Oscar Want / Kevin Xie,6-0,6,0,1,0,Completed,true,"[false, false]","[false, false]"
-UA023023,26 Jul 26,2,Dendy Park,Black Rock,No. 2,Taku Ramensky / Reina Hasegawa,Charlotte Ray / Jess Leeds,Taku Ramensky / Reina Hasegawa,6-1,6,1,1,0,Completed,true,"[false, true]","[false, false]"
-UA023031,02 Aug 26,3,GPHC,Maccabi,No. 1,Hugo Rutherford / Lewis O'Donnell,Riley Hersz / Matti Feinberg,Riley Hersz / Matti Feinberg,6-7,6,7,0,1,Completed,true,"[false, false]","[false, false]"
-UA023031,02 Aug 26,3,GPHC,Maccabi,No. 2,Finn Noonan / Julian Delcoigne,Eden Feinberg / Adam Hope,Eden Feinberg / Adam Hope,4-6,4,6,0,1,Completed,true,"[false, false]","[false, true]"
-UA023032,02 Aug 26,3,Victory Park,Le Page,No. 1,Alexei Moralis / Cameron Wilson,Hunter Newman / Matan Shargian,Hunter Newman / Matan Shargian,3-6,3,6,0,1,Completed,true,"[false, false]","[false, false]"
-UA023032,02 Aug 26,3,Victory Park,Le Page,No. 2,Nathan He / Aahana Dodia,Eeshan Gurjar / Shlok Pawali,Eeshan Gurjar / Shlok Pawali,2-6,2,6,0,1,Completed,true,"[false, false]","[false, false]"
-UA023033,02 Aug 26,3,Black Rock,BLTC,No. 1,Stirling Maguire / Angus Ray,Sebastian Smith-Lopez / Tomas Cabrera,Sebastian Smith-Lopez / Tomas Cabrera,2-6,2,6,0,1,Completed,true,"[false, false]","[false, false]"
-UA023033,02 Aug 26,3,Black Rock,BLTC,No. 2,Charlotte Ray / Jess Leeds,Celina Sakaci / Preston Liu,Celina Sakaci / Preston Liu,0-6,0,6,0,1,Completed,true,"[false, false]","[false, false]"
-UA023041,09 Aug 26,4,Dendy Park,GPHC,No. 1,Oscar Want / Kevin Xie,Hugo Rutherford / Phoebe Wong,Oscar Want / Kevin Xie,6-3,6,3,1,0,Completed,true,"[false, false]","[false, false]"
-UA023041,09 Aug 26,4,Dendy Park,GPHC,No. 2,Daniel Bloom / Charlie Deutscher,Lewis O'Donnell / Julian Delcoigne,Lewis O'Donnell / Julian Delcoigne,5-7,5,7,0,1,Completed,true,"[false, false]","[false, false]"
-UA023052,16 Aug 26,5,Le Page,Maccabi,No. 1,Hunter Newman / Eeshan Gurjar,Riley Hersz / Ari Zipor,Hunter Newman / Eeshan Gurjar,6-0,6,0,1,0,Completed,true,"[false, false]","[false, false]"
-UA023052,16 Aug 26,5,Le Page,Maccabi,No. 2,Shlok Pawali / Zac Bianchi,Matti Feinberg / Eden Feinberg,Matti Feinberg / Eden Feinberg,6-7,6,7,0,1,Completed,true,"[false, false]","[false, false]"
-UA023053,16 Aug 26,5,Dendy Park,BLTC,No. 1,Oscar Want / Taku Ramensky,Sebastian Smith-Lopez / Tomas Cabrera,Sebastian Smith-Lopez / Tomas Cabrera,4-6,4,6,0,1,Completed,true,"[false, false]","[false, false]"
-UA023053,16 Aug 26,5,Dendy Park,BLTC,No. 2,Daniel Bloom / Charlie Deutscher,Celina Sakaci / Angus Christie,Celina Sakaci / Angus Christie,0-6,0,6,0,1,Completed,true,"[false, false]","[false, false]"
-UA023054,16 Aug 26,5,GPHC,Victory Park,No. 1,Hugo Rutherford / Phoebe Wong,Lenny Nunn / Kit Smith,Lenny Nunn / Kit Smith,3-6,3,6,0,1,Completed,true,"[false, false]","[false, false]"
-UA023054,16 Aug 26,5,GPHC,Victory Park,No. 2,Finn Noonan / Julian Delcoigne,Cameron Wilson / Aahana Dodia,Cameron Wilson / Aahana Dodia,4-6,4,6,0,1,Completed,true,"[false, false]","[false, false]"
-UA023061,23 Aug 26,6,Victory Park,Black Rock,No. 1,Lenny Nunn / Nathan He,Luca Nadal / Angus Ray,Lenny Nunn / Nathan He,6-1,6,1,1,0,Completed,true,"[false, false]","[false, false]"
-UA023061,23 Aug 26,6,Victory Park,Black Rock,No. 2,Alexei Moralis / Oscar Forbes,Charlotte Ray / Jess Leeds,Alexei Moralis / Oscar Forbes,6-2,6,2,1,0,Completed,true,"[false, false]","[false, false]"
-UA023063,23 Aug 26,6,Maccabi,Dendy Park,No. 1,Matti Feinberg / Eden Feinberg,Kevin Xie / Taku Ramensky,Matti Feinberg / Eden Feinberg,7-6,7,6,1,0,Completed,true,"[false, false]","[false, false]"
-UA023063,23 Aug 26,6,Maccabi,Dendy Park,No. 2,Riley Hersz / Ari Zipor,Daniel Bloom / Charlie Deutscher,Daniel Bloom / Charlie Deutscher,5-7,5,7,0,1,Completed,true,"[false, false]","[false, false]"
-UA023064,23 Aug 26,6,BLTC,Le Page,No. 1,Sebastian Smith-Lopez / Tomas Cabrera,Hunter Newman / Ma'ayan Alamaru,Sebastian Smith-Lopez / Tomas Cabrera,6-2,6,2,1,0,Completed,true,"[false, false]","[false, false]"
-UA023064,23 Aug 26,6,BLTC,Le Page,No. 2,Preston Liu / Angus Christie,Eeshan Gurjar / Shlok Pawali,Eeshan Gurjar / Shlok Pawali,3-6,3,6,0,1,Completed,true,"[false, false]","[false, false]"
-UA023071,30 Aug 26,7,GPHC,Black Rock,No. 1,Hugo Rutherford / Lewis O'Donnell,Luca Nadal / Stirling Maguire,Luca Nadal / Stirling Maguire,1-6,1,6,0,1,Completed,true,"[false, false]","[false, false]"
-UA023071,30 Aug 26,7,GPHC,Black Rock,No. 2,Finn Noonan / Julian Delcoigne,Angus Ray / Charlotte Ray,Angus Ray / Charlotte Ray,4-6,4,6,0,1,Completed,true,"[false, false]","[false, false]"
-UA023073,30 Aug 26,7,Le Page,Dendy Park,No. 1,Matan Shargian / Eeshan Gurjar,Oscar Want / Kevin Xie,Oscar Want / Kevin Xie,6-7,6,7,0,1,Completed,true,"[false, false]","[false, false]"
-UA023073,30 Aug 26,7,Le Page,Dendy Park,No. 2,Shlok Pawali / Zac Bianchi,Charlie Deutscher / Reina Hasegawa,Shlok Pawali / Zac Bianchi,6-0,6,0,1,0,Completed,true,"[false, false]","[false, true]"
-UA023074,30 Aug 26,7,Maccabi,BLTC,No. 1,Matti Feinberg / Eden Feinberg,Sebastian Smith-Lopez / Preston Liu,Matti Feinberg / Eden Feinberg,6-1,6,1,1,0,Completed,true,"[false, false]","[false, false]"
-UA023074,30 Aug 26,7,Maccabi,BLTC,No. 2,Riley Hersz / Ari Zipor,Tomas Cabrera / Celina Sakaci,Tomas Cabrera / Celina Sakaci,3-6,3,6,0,1,Completed,true,"[false, false]","[false, false]"
-UA023081,06 Sep 26,8,BLTC,GPHC,No. 1,Sebastian Smith-Lopez / Tomas Cabrera,Hugo Rutherford / Ella Greville,Sebastian Smith-Lopez / Tomas Cabrera,6-2,6,2,1,0,Completed,true,"[false, false]","[false, false]"
-UA023081,06 Sep 26,8,BLTC,GPHC,No. 2,Celina Sakaci / Preston Liu,Lewis O'Donnell / Finn Noonan,Celina Sakaci / Preston Liu,6-4,6,4,1,0,Completed,true,"[false, false]","[false, false]"
-UA023082,06 Sep 26,8,Dendy Park,Victory Park,No. 1,Oscar Want / Miku Higuchi,Kit Smith / Nathan He,Oscar Want / Miku Higuchi,6-2,6,2,1,0,Completed,true,"[false, false]","[false, false]"
-UA023082,06 Sep 26,8,Dendy Park,Victory Park,No. 2,Taku Ramensky / Daniel Bloom,Cameron Wilson / Aahana Dodia,Cameron Wilson / Aahana Dodia,3-6,3,6,0,1,Completed,true,"[false, false]","[false, false]"
-UA023083,06 Sep 26,8,Maccabi,Black Rock,No. 1,Riley Hersz / Josh Green,Luca Nadal / Stirling Maguire,Luca Nadal / Stirling Maguire,1-6,1,6,0,1,Completed,true,"[false, false]","[false, false]"
-UA023083,06 Sep 26,8,Maccabi,Black Rock,No. 2,Zev Harris / Ari Zipor,Charlotte Ray / Jess Leeds,Zev Harris / Ari Zipor,6-2,6,2,1,0,Completed,true,"[true, false]","[false, false]"
-UA023091,13 Sep 26,9,GPHC,Le Page,No. 1,Hugo Rutherford / Julian Delcoigne,Hunter Newman / Eeshan Gurjar,Hunter Newman / Eeshan Gurjar,0-6,0,6,0,1,Completed,true,"[false, false]","[false, false]"
-UA023091,13 Sep 26,9,GPHC,Le Page,No. 2,Ella Greville / Phoebe Wong,Shlok Pawali / Ma'ayan Alamaru,Ella Greville / Phoebe Wong,6-4,6,4,1,0,Completed,true,"[false, false]","[false, false]"
-UA023092,13 Sep 26,9,Victory Park,BLTC,No. 1,Lenny Nunn / Kit Smith,Tomas Cabrera / Celina Sakaci,Lenny Nunn / Kit Smith,6-4,6,4,1,0,Completed,true,"[false, false]","[false, false]"
-UA023092,13 Sep 26,9,Victory Park,BLTC,No. 2,Cameron Wilson / Oscar Forbes,Preston Liu / Angus Christie,Cameron Wilson / Oscar Forbes,6-4,6,4,1,0,Completed,true,"[false, false]","[false, false]"
-UA023093,13 Sep 26,9,Black Rock,Dendy Park,No. 1,Leo Gu / Jayshan Kumaran,Miku Higuchi / Kevin Xie,Leo Gu / Jayshan Kumaran,6-4,6,4,1,0,Completed,true,"[true, true]","[false, false]"
-UA023093,13 Sep 26,9,Black Rock,Dendy Park,No. 2,Stirling Maguire / Jess Leeds,Daniel Bloom / Charlie Deutscher,Stirling Maguire / Jess Leeds,6-2,6,2,1,0,Completed,true,"[false, false]","[false, false]"
-UA023101,11 Oct 26,10,Maccabi,GPHC,No. 1,Matti Feinberg / Eden Feinberg,Hugo Rutherford / Lewis O'Donnell,Matti Feinberg / Eden Feinberg,6-0,6,0,1,0,Completed,true,"[false, false]","[false, false]"
-UA023101,11 Oct 26,10,Maccabi,GPHC,No. 2,Riley Hersz / Josh Green,Finn Noonan / Julian Delcoigne,Riley Hersz / Josh Green,7-5,7,5,1,0,Completed,true,"[false, false]","[false, false]"
-UA023102,11 Oct 26,10,Le Page,Victory Park,No. 1,Hunter Newman / Matan Shargian,Kit Smith / Alexei Moralis,Hunter Newman / Matan Shargian,6-1,6,1,1,0,Completed,true,"[false, false]","[false, false]"
-UA023102,11 Oct 26,10,Le Page,Victory Park,No. 2,Shlok Pawali / Ma'ayan Alamaru,Oscar Forbes / Aahana Dodia,Shlok Pawali / Ma'ayan Alamaru,6-3,6,3,1,0,Completed,true,"[false, false]","[false, false]"
-UA023103,11 Oct 26,10,BLTC,Black Rock,No. 1,Sebastian Smith-Lopez / Tomas Cabrera,Luca Nadal / Angus Ray,Sebastian Smith-Lopez / Tomas Cabrera,6-3,6,3,1,0,Completed,true,"[false, false]","[false, false]"
-UA023103,11 Oct 26,10,BLTC,Black Rock,No. 2,Celina Sakaci / Angus Christie,Raef Harvey / Charlotte Ray,Raef Harvey / Charlotte Ray,4-6,4,6,0,1,Completed,true,"[false, false]","[false, false]"
-UA023111,18 Oct 26,11,GPHC,Dendy Park,No. 1,Hugo Rutherford / Finn Noonan,Miku Higuchi / Daniel Bloom,Hugo Rutherford / Finn Noonan,6-0,6,0,1,0,Completed,true,"[false, false]","[false, false]"
-UA023111,18 Oct 26,11,GPHC,Dendy Park,No. 2,Ella Greville / Lewis O'Donnell,Taku Ramensky / Charlie Deutscher,Taku Ramensky / Charlie Deutscher,6-7,6,7,0,1,Completed,true,"[false, false]","[false, false]"
-UA023112,18 Oct 26,11,Victory Park,Maccabi,No. 1,Nathan He / Alexei Moralis,Matti Feinberg / Eden Feinberg,Matti Feinberg / Eden Feinberg,6-7,6,7,0,1,Completed,true,"[false, false]","[false, false]"
-UA023112,18 Oct 26,11,Victory Park,Maccabi,No. 2,Cameron Wilson / Aahana Dodia,Riley Hersz / Josh Green,Cameron Wilson / Aahana Dodia,6-1,6,1,1,0,Completed,true,"[false, false]","[false, false]"
-UA023113,18 Oct 26,11,Black Rock,Le Page,No. 1,Luca Nadal / Raef Harvey,Hunter Newman / Matan Shargian,Hunter Newman / Matan Shargian,2-6,2,6,0,1,Completed,true,"[false, false]","[false, false]"
-UA023113,18 Oct 26,11,Black Rock,Le Page,No. 2,Stirling Maguire / Angus Ray,Eeshan Gurjar / Zac Bianchi,Eeshan Gurjar / Zac Bianchi,2-6,2,6,0,1,Completed,true,"[false, false]","[false, false]"
+fixture_id,date,round,home_team,away_team,position,home_pair,away_pair,winning_pair,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergencies,away_emergencies,source_score
+UA023011,19 Jul 26,1,GPHC,BLTC,No. 1,Hugo Rutherford / Lewis O'Donnell,Angus Christie / Tomas Cabrera,Angus Christie / Tomas Cabrera,3-6,3,6,0,1,Completed,true,"[false, false]","[false, false]",3-6
+UA023011,19 Jul 26,1,GPHC,BLTC,No. 2,Finn Noonan / Julian Delcoigne,Celina Sakaci / Preston Liu,Celina Sakaci / Preston Liu,3-6,3,6,0,1,Completed,true,"[false, false]","[false, false]",3-6
+UA023012,19 Jul 26,1,Victory Park,Dendy Park,No. 1,Kit Smith / Alexei Moralis,Oscar Want / Kevin Xie,Oscar Want / Kevin Xie,4-6,4,6,0,1,Completed,true,"[false, false]","[false, false]",4-6
+UA023012,19 Jul 26,1,Victory Park,Dendy Park,No. 2,Cameron Wilson / Aahana Dodia,Taku Ramensky / Reina Hasegawa,Taku Ramensky / Reina Hasegawa,4-6,4,6,0,1,Completed,true,"[false, false]","[false, true]",4-6
+UA023013,19 Jul 26,1,Black Rock,Maccabi,No. 1,Luca Nadal / Raef Harvey,Riley Hersz / Ari Zipor,Luca Nadal / Raef Harvey,6-2,6,2,1,0,Completed,true,"[false, false]","[false, false]",6-2
+UA023013,19 Jul 26,1,Black Rock,Maccabi,No. 2,Angus Ray / Charlotte Ray,Eden Feinberg / Matti Feinberg,Eden Feinberg / Matti Feinberg,3-6,3,6,0,1,Completed,true,"[false, false]","[false, false]",3-6
+UA023021,26 Jul 26,2,Le Page,GPHC,No. 1,Hunter Newman / Eeshan Gurjar,Hugo Rutherford / Ella Greville,Hunter Newman / Eeshan Gurjar,6-1,6,1,1,0,Completed,true,"[false, false]","[false, false]",6-1
+UA023021,26 Jul 26,2,Le Page,GPHC,No. 2,Ma'ayan Alamaru / Zac Bianchi,Lewis O'Donnell / Finn Noonan,Ma'ayan Alamaru / Zac Bianchi,6-4,6,4,1,0,Completed,true,"[false, false]","[false, false]",6-4
+UA023022,26 Jul 26,2,BLTC,Victory Park,No. 1,Tomas Cabrera / Celina Sakaci,Kit Smith / Nathan He,Kit Smith / Nathan He,6-7,6,7,0,1,Completed,true,"[false, false]","[false, false]",6-7
+UA023022,26 Jul 26,2,BLTC,Victory Park,No. 2,Preston Liu / Angus Christie,Alexei Moralis / Aahana Dodia,Preston Liu / Angus Christie,7-5,7,5,1,0,Completed,true,"[false, false]","[false, false]",7-5
+UA023023,26 Jul 26,2,Dendy Park,Black Rock,No. 1,Oscar Want / Kevin Xie,Luca Nadal / Angus Ray,Oscar Want / Kevin Xie,6-0,6,0,1,0,Completed,true,"[false, false]","[false, false]",6-0
+UA023023,26 Jul 26,2,Dendy Park,Black Rock,No. 2,Taku Ramensky / Reina Hasegawa,Charlotte Ray / Jess Leeds,Taku Ramensky / Reina Hasegawa,6-1,6,1,1,0,Completed,true,"[false, true]","[false, false]",6-1
+UA023031,02 Aug 26,3,GPHC,Maccabi,No. 1,Hugo Rutherford / Lewis O'Donnell,Riley Hersz / Matti Feinberg,Riley Hersz / Matti Feinberg,6-7,6,7,0,1,Completed,true,"[false, false]","[false, false]",6-7
+UA023031,02 Aug 26,3,GPHC,Maccabi,No. 2,Finn Noonan / Julian Delcoigne,Eden Feinberg / Adam Hope,Eden Feinberg / Adam Hope,4-6,4,6,0,1,Completed,true,"[false, false]","[false, true]",4-6
+UA023032,02 Aug 26,3,Victory Park,Le Page,No. 1,Alexei Moralis / Cameron Wilson,Hunter Newman / Matan Shargian,Hunter Newman / Matan Shargian,3-6,3,6,0,1,Completed,true,"[false, false]","[false, false]",3-6
+UA023032,02 Aug 26,3,Victory Park,Le Page,No. 2,Nathan He / Aahana Dodia,Eeshan Gurjar / Shlok Pawali,Eeshan Gurjar / Shlok Pawali,2-6,2,6,0,1,Completed,true,"[false, false]","[false, false]",2-6
+UA023033,02 Aug 26,3,Black Rock,BLTC,No. 1,Stirling Maguire / Angus Ray,Sebastian Smith-Lopez / Tomas Cabrera,Sebastian Smith-Lopez / Tomas Cabrera,2-6,2,6,0,1,Completed,true,"[false, false]","[false, false]",2-6
+UA023033,02 Aug 26,3,Black Rock,BLTC,No. 2,Charlotte Ray / Jess Leeds,Celina Sakaci / Preston Liu,Celina Sakaci / Preston Liu,0-6,0,6,0,1,Completed,true,"[false, false]","[false, false]",0-6
+UA023041,09 Aug 26,4,Dendy Park,GPHC,No. 1,Oscar Want / Kevin Xie,Hugo Rutherford / Phoebe Wong,Oscar Want / Kevin Xie,6-3,6,3,1,0,Completed,true,"[false, false]","[false, false]",6-3
+UA023041,09 Aug 26,4,Dendy Park,GPHC,No. 2,Daniel Bloom / Charlie Deutscher,Lewis O'Donnell / Julian Delcoigne,Lewis O'Donnell / Julian Delcoigne,5-7,5,7,0,1,Completed,true,"[false, false]","[false, false]",5-7
+UA023052,16 Aug 26,5,Le Page,Maccabi,No. 1,Hunter Newman / Eeshan Gurjar,Riley Hersz / Ari Zipor,Hunter Newman / Eeshan Gurjar,6-0,6,0,1,0,Completed,true,"[false, false]","[false, false]",6-0
+UA023052,16 Aug 26,5,Le Page,Maccabi,No. 2,Shlok Pawali / Zac Bianchi,Matti Feinberg / Eden Feinberg,Matti Feinberg / Eden Feinberg,6-7,6,7,0,1,Completed,true,"[false, false]","[false, false]",6-7
+UA023053,16 Aug 26,5,Dendy Park,BLTC,No. 1,Oscar Want / Taku Ramensky,Sebastian Smith-Lopez / Tomas Cabrera,Sebastian Smith-Lopez / Tomas Cabrera,4-6,4,6,0,1,Completed,true,"[false, false]","[false, false]",4-6
+UA023053,16 Aug 26,5,Dendy Park,BLTC,No. 2,Daniel Bloom / Charlie Deutscher,Celina Sakaci / Angus Christie,Celina Sakaci / Angus Christie,0-6,0,6,0,1,Completed,true,"[false, false]","[false, false]",0-6
+UA023054,16 Aug 26,5,GPHC,Victory Park,No. 1,Hugo Rutherford / Phoebe Wong,Lenny Nunn / Kit Smith,Lenny Nunn / Kit Smith,3-6,3,6,0,1,Completed,true,"[false, false]","[false, false]",3-6
+UA023054,16 Aug 26,5,GPHC,Victory Park,No. 2,Finn Noonan / Julian Delcoigne,Cameron Wilson / Aahana Dodia,Cameron Wilson / Aahana Dodia,4-6,4,6,0,1,Completed,true,"[false, false]","[false, false]",4-6
+UA023061,23 Aug 26,6,Victory Park,Black Rock,No. 1,Lenny Nunn / Nathan He,Luca Nadal / Angus Ray,Lenny Nunn / Nathan He,6-1,6,1,1,0,Completed,true,"[false, false]","[false, false]",6-1
+UA023061,23 Aug 26,6,Victory Park,Black Rock,No. 2,Alexei Moralis / Oscar Forbes,Charlotte Ray / Jess Leeds,Alexei Moralis / Oscar Forbes,6-2,6,2,1,0,Completed,true,"[false, false]","[false, false]",6-2
+UA023063,23 Aug 26,6,Maccabi,Dendy Park,No. 1,Matti Feinberg / Eden Feinberg,Kevin Xie / Taku Ramensky,Matti Feinberg / Eden Feinberg,7-6,7,6,1,0,Completed,true,"[false, false]","[false, false]",7-6
+UA023063,23 Aug 26,6,Maccabi,Dendy Park,No. 2,Riley Hersz / Ari Zipor,Daniel Bloom / Charlie Deutscher,Daniel Bloom / Charlie Deutscher,5-7,5,7,0,1,Completed,true,"[false, false]","[false, false]",5-7
+UA023064,23 Aug 26,6,BLTC,Le Page,No. 1,Sebastian Smith-Lopez / Tomas Cabrera,Hunter Newman / Ma'ayan Alamaru,Sebastian Smith-Lopez / Tomas Cabrera,6-2,6,2,1,0,Completed,true,"[false, false]","[false, false]",6-2
+UA023064,23 Aug 26,6,BLTC,Le Page,No. 2,Preston Liu / Angus Christie,Eeshan Gurjar / Shlok Pawali,Eeshan Gurjar / Shlok Pawali,3-6,3,6,0,1,Completed,true,"[false, false]","[false, false]",3-6
+UA023071,30 Aug 26,7,GPHC,Black Rock,No. 1,Hugo Rutherford / Lewis O'Donnell,Luca Nadal / Stirling Maguire,Luca Nadal / Stirling Maguire,1-6,1,6,0,1,Completed,true,"[false, false]","[false, false]",1-6
+UA023071,30 Aug 26,7,GPHC,Black Rock,No. 2,Finn Noonan / Julian Delcoigne,Angus Ray / Charlotte Ray,Angus Ray / Charlotte Ray,4-6,4,6,0,1,Completed,true,"[false, false]","[false, false]",4-6
+UA023073,30 Aug 26,7,Le Page,Dendy Park,No. 1,Matan Shargian / Eeshan Gurjar,Oscar Want / Kevin Xie,Oscar Want / Kevin Xie,6-7,6,7,0,1,Completed,true,"[false, false]","[false, false]",6-7
+UA023073,30 Aug 26,7,Le Page,Dendy Park,No. 2,Shlok Pawali / Zac Bianchi,Charlie Deutscher / Reina Hasegawa,Shlok Pawali / Zac Bianchi,6-0,6,0,1,0,Completed,true,"[false, false]","[false, true]",6-0
+UA023074,30 Aug 26,7,Maccabi,BLTC,No. 1,Matti Feinberg / Eden Feinberg,Sebastian Smith-Lopez / Preston Liu,Matti Feinberg / Eden Feinberg,6-1,6,1,1,0,Completed,true,"[false, false]","[false, false]",6-1
+UA023074,30 Aug 26,7,Maccabi,BLTC,No. 2,Riley Hersz / Ari Zipor,Tomas Cabrera / Celina Sakaci,Tomas Cabrera / Celina Sakaci,3-6,3,6,0,1,Completed,true,"[false, false]","[false, false]",3-6
+UA023081,06 Sep 26,8,BLTC,GPHC,No. 1,Sebastian Smith-Lopez / Tomas Cabrera,Hugo Rutherford / Ella Greville,Sebastian Smith-Lopez / Tomas Cabrera,6-2,6,2,1,0,Completed,true,"[false, false]","[false, false]",6-2
+UA023081,06 Sep 26,8,BLTC,GPHC,No. 2,Celina Sakaci / Preston Liu,Lewis O'Donnell / Finn Noonan,Celina Sakaci / Preston Liu,6-4,6,4,1,0,Completed,true,"[false, false]","[false, false]",6-4
+UA023082,06 Sep 26,8,Dendy Park,Victory Park,No. 1,Oscar Want / Miku Higuchi,Kit Smith / Nathan He,Oscar Want / Miku Higuchi,6-2,6,2,1,0,Completed,true,"[false, false]","[false, false]",6-2
+UA023082,06 Sep 26,8,Dendy Park,Victory Park,No. 2,Taku Ramensky / Daniel Bloom,Cameron Wilson / Aahana Dodia,Cameron Wilson / Aahana Dodia,3-6,3,6,0,1,Completed,true,"[false, false]","[false, false]",3-6
+UA023083,06 Sep 26,8,Maccabi,Black Rock,No. 1,Riley Hersz / Josh Green,Luca Nadal / Stirling Maguire,Luca Nadal / Stirling Maguire,1-6,1,6,0,1,Completed,true,"[false, false]","[false, false]",1-6
+UA023083,06 Sep 26,8,Maccabi,Black Rock,No. 2,Zev Harris / Ari Zipor,Charlotte Ray / Jess Leeds,Zev Harris / Ari Zipor,6-2,6,2,1,0,Completed,true,"[true, false]","[false, false]",6-2
+UA023091,13 Sep 26,9,GPHC,Le Page,No. 1,Hugo Rutherford / Julian Delcoigne,Hunter Newman / Eeshan Gurjar,Hunter Newman / Eeshan Gurjar,0-6,0,6,0,1,Completed,true,"[false, false]","[false, false]",0-6
+UA023091,13 Sep 26,9,GPHC,Le Page,No. 2,Ella Greville / Phoebe Wong,Shlok Pawali / Ma'ayan Alamaru,Ella Greville / Phoebe Wong,6-4,6,4,1,0,Completed,true,"[false, false]","[false, false]",6-4
+UA023092,13 Sep 26,9,Victory Park,BLTC,No. 1,Lenny Nunn / Kit Smith,Tomas Cabrera / Celina Sakaci,Lenny Nunn / Kit Smith,6-4,6,4,1,0,Completed,true,"[false, false]","[false, false]",6-4
+UA023092,13 Sep 26,9,Victory Park,BLTC,No. 2,Cameron Wilson / Oscar Forbes,Preston Liu / Angus Christie,Cameron Wilson / Oscar Forbes,6-4,6,4,1,0,Completed,true,"[false, false]","[false, false]",6-4
+UA023093,13 Sep 26,9,Black Rock,Dendy Park,No. 1,Leo Gu / Jayshan Kumaran,Miku Higuchi / Kevin Xie,Leo Gu / Jayshan Kumaran,6-4,6,4,1,0,Completed,true,"[true, true]","[false, false]",6-4
+UA023093,13 Sep 26,9,Black Rock,Dendy Park,No. 2,Stirling Maguire / Jess Leeds,Daniel Bloom / Charlie Deutscher,Stirling Maguire / Jess Leeds,6-2,6,2,1,0,Completed,true,"[false, false]","[false, false]",6-2
+UA023101,11 Oct 26,10,Maccabi,GPHC,No. 1,Matti Feinberg / Eden Feinberg,Hugo Rutherford / Lewis O'Donnell,Matti Feinberg / Eden Feinberg,6-0,6,0,1,0,Completed,true,"[false, false]","[false, false]",6-0
+UA023101,11 Oct 26,10,Maccabi,GPHC,No. 2,Riley Hersz / Josh Green,Finn Noonan / Julian Delcoigne,Riley Hersz / Josh Green,7-5,7,5,1,0,Completed,true,"[false, false]","[false, false]",7-5
+UA023102,11 Oct 26,10,Le Page,Victory Park,No. 1,Hunter Newman / Matan Shargian,Kit Smith / Alexei Moralis,Hunter Newman / Matan Shargian,6-1,6,1,1,0,Completed,true,"[false, false]","[false, false]",6-1
+UA023102,11 Oct 26,10,Le Page,Victory Park,No. 2,Shlok Pawali / Ma'ayan Alamaru,Oscar Forbes / Aahana Dodia,Shlok Pawali / Ma'ayan Alamaru,6-3,6,3,1,0,Completed,true,"[false, false]","[false, false]",6-3
+UA023103,11 Oct 26,10,BLTC,Black Rock,No. 1,Sebastian Smith-Lopez / Tomas Cabrera,Luca Nadal / Angus Ray,Sebastian Smith-Lopez / Tomas Cabrera,6-3,6,3,1,0,Completed,true,"[false, false]","[false, false]",6-3
+UA023103,11 Oct 26,10,BLTC,Black Rock,No. 2,Celina Sakaci / Angus Christie,Raef Harvey / Charlotte Ray,Raef Harvey / Charlotte Ray,4-6,4,6,0,1,Completed,true,"[false, false]","[false, false]",4-6
+UA023111,18 Oct 26,11,GPHC,Dendy Park,No. 1,Hugo Rutherford / Finn Noonan,Miku Higuchi / Daniel Bloom,Hugo Rutherford / Finn Noonan,6-0,6,0,1,0,Completed,true,"[false, false]","[false, false]",6-0
+UA023111,18 Oct 26,11,GPHC,Dendy Park,No. 2,Ella Greville / Lewis O'Donnell,Taku Ramensky / Charlie Deutscher,Taku Ramensky / Charlie Deutscher,6-7,6,7,0,1,Completed,true,"[false, false]","[false, false]",6-7
+UA023112,18 Oct 26,11,Victory Park,Maccabi,No. 1,Nathan He / Alexei Moralis,Matti Feinberg / Eden Feinberg,Matti Feinberg / Eden Feinberg,6-7,6,7,0,1,Completed,true,"[false, false]","[false, false]",6-7
+UA023112,18 Oct 26,11,Victory Park,Maccabi,No. 2,Cameron Wilson / Aahana Dodia,Riley Hersz / Josh Green,Cameron Wilson / Aahana Dodia,6-1,6,1,1,0,Completed,true,"[false, false]","[false, false]",6-1
+UA023113,18 Oct 26,11,Black Rock,Le Page,No. 1,Luca Nadal / Raef Harvey,Hunter Newman / Matan Shargian,Hunter Newman / Matan Shargian,2-6,2,6,0,1,Completed,true,"[false, false]","[false, false]",2-6
+UA023113,18 Oct 26,11,Black Rock,Le Page,No. 2,Stirling Maguire / Angus Ray,Eeshan Gurjar / Zac Bianchi,Eeshan Gurjar / Zac Bianchi,2-6,2,6,0,1,Completed,true,"[false, false]","[false, false]",2-6

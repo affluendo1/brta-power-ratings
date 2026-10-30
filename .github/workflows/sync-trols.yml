@@ -64,6 +64,9 @@ jobs:
             rm -f "$TRANSITION_FILE"
           fi
 
+      - name: Correct stored match-tiebreak semantics and refit affected history
+        run: python -m scraper.migrate_match_tiebreaks --build
+
       - name: Detect new or corrected TROLS results
         id: changes
         shell: bash

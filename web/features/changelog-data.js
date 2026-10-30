@@ -1,139 +1,143 @@
 // Website releases, newest first. Routine result checks are not website releases.
 window.BRTA_RELEASES = Object.freeze([
-{
-  "version": "8.2.2",
-  "size": "small",
-  "committedAt": "2026-10-29T11:26:03.149254+00:00",
-  "changes": [
-    "Search doubles partnerships across sections and history.",
-    "Redesigned share cards with font choices and layouts for each format.",
-    "Refined lineup selection and added Team Explorer.",
-    "Prepared club and venue information, and expanded extras."
-  ]
-},
-{
-  "version": "8.2.1.2",
-  "size": "tiny",
-  "committedAt": "2026-10-29T05:07:12.198030+00:00",
-  "changes": [
-    "Fixed stacked dialogs, keyboard focus and navigation during section changes.",
-    "Improved reduced-motion behaviour and cleaned up interrupted effects.",
-    "Fixed historical rating recalculation and empty search results.",
-    "Corrected share-card cleanup, Following checks and standings notices.",
-    "Improved offline loading and refreshed cached website assets."
-  ]
-},
-{
-  "version": "8.2.1.1",
-  "size": "tiny",
-  "committedAt": "2026-10-28T21:31:14.779242+00:00",
-  "changes": [
-    "Fixed historical season ordering and made Following easier to manage.",
-    "See and highlight the latest update when returning after a new release."
-  ]
-},
-{
-  "version": "8.2.1",
-  "size": "small",
-  "committedAt": "2026-10-28T12:23:10.520421+00:00",
-  "changes": [
-    "Redesigned share cards with full-image previews and simpler controls.",
-    "Moved Rounds into an overlay with an interactive calendar.",
-    "Refined Following controls and expanded historical competition support."
-  ]
-},
-{
-  "version": "8.2",
-  "title": "Matchday",
-  "size": "large",
-  "committedAt": "2026-10-28T11:34:03.686597+00:00",
-  "changes": [
-    "Explore Rounds with team calendars, no-play weeks and calendar exports.",
-    "Follow players and teams, with new-result updates when you return.",
-    "Create and share custom player, lineup and result cards.",
-    "Added Saturday afternoon and weekday BRTA competitions."
-  ]
-},
-{
-  "version": "8.1.0.1",
-  "size": "tiny",
-  "committedAt": "2026-10-28T05:42:14.433Z",
-  "changes": [
-    "Added another extra."
-  ]
-},
-{
-  "version": "8.1",
-  "title": "Theme Studio",
-  "size": "large",
-  "committedAt": "2026-10-28T05:42:12.205024+00:00",
-  "changes": [
-    "Create, preview and save your own themes and colour schemes.",
-    "Find leading ratings, records and game percentages with search commands.",
-    "Refined extras and prepared future Club Zone features."
-  ]
-},
-{
-  "version": "8.0.1.4",
-  "size": "tiny",
-  "committedAt": "2026-10-28T05:02:49.214809+00:00",
-  "changes": [
-    "Fixed extras rankings, search controls and lab breakdowns."
-  ]
-},
-{
-  "version": "8.0.1.3.1",
-  "size": "tiny",
-  "committedAt": "2026-10-28T04:57:54.542917+00:00",
-  "changes": [
-    "Bug fix."
-  ]
-},
-{
-  "version": "8.0.1.3",
-  "size": "tiny",
-  "committedAt": "2026-10-28T04:53:46.548057+00:00",
-  "changes": [
-    "Expanded extras and search shortcuts."
-  ]
-},
-{
-  "version": "8.0.1.2",
-  "size": "tiny",
-  "committedAt": "2026-10-28T04:43:21.585568+00:00",
-  "changes": [
-    "Expanded extras and refined their layouts."
-  ]
-},
-{
-  "version": "8.0.1.1",
-  "size": "tiny",
-  "committedAt": "2026-10-28T04:23:16.845191+00:00",
-  "changes": [
-    "Added more extras, small refinements and preparations."
-  ]
-},
-{
-  "version": "8.0.1",
-  "size": "small",
-  "committedAt": "2026-10-28T02:14:48+00:00",
-  "changes": [
-    "Added match display order and rounded graph settings.",
-    "Refined Player Lab charts, match explorers and pairing labels.",
-    "Improved team navigation and more settings."
-  ]
-},
+  {
+    "version": "8.2.3",
+    "size": "small",
+    "committedAt": "2026-10-30T11:29:25.314604+00:00",
+    "changes": [
+      "Improved Rubbers scores and added more Player Lab insights.",
+      "Refined doubles-only sections, Team Explorer and mobile layouts."
+    ]
+  },
+  {
+    "version": "8.2.2",
+    "size": "small",
+    "committedAt": "2026-10-29T11:26:03.149254+00:00",
+    "changes": [
+      "Find doubles pairs across sections and history.",
+      "Improved share cards and lineup tools.",
+      "Added Team Explorer.",
+      "Small additions and improvements."
+    ]
+  },
+  {
+    "version": "8.2.1.2",
+    "size": "tiny",
+    "committedAt": "2026-10-29T05:07:12.198030+00:00",
+    "changes": [
+      "Bug fixes."
+    ]
+  },
+  {
+    "version": "8.2.1.1",
+    "size": "tiny",
+    "committedAt": "2026-10-28T21:31:14.779242+00:00",
+    "changes": [
+      "Improved Following and update notifications.",
+      "Bug fixes."
+    ]
+  },
+  {
+    "version": "8.2.1",
+    "size": "small",
+    "committedAt": "2026-10-28T12:23:10.520421+00:00",
+    "changes": [
+      "Improved share cards, Rounds and Following.",
+      "Expanded historical competition support."
+    ]
+  },
+  {
+    "version": "8.2",
+    "title": "Matchday",
+    "size": "large",
+    "committedAt": "2026-10-28T11:34:03.686597+00:00",
+    "changes": [
+      "Explore Rounds with team calendars, no-play weeks and calendar exports.",
+      "Follow players and teams, with new-result updates when you return.",
+      "Create and share custom player, lineup and result cards.",
+      "Added Saturday afternoon and weekday BRTA competitions."
+    ]
+  },
+  {
+    "version": "8.1.0.1",
+    "size": "tiny",
+    "committedAt": "2026-10-28T05:42:14.433Z",
+    "changes": [
+      "Small additions."
+    ]
+  },
+  {
+    "version": "8.1",
+    "title": "Theme Studio",
+    "size": "large",
+    "committedAt": "2026-10-28T05:42:12.205024+00:00",
+    "changes": [
+      "Create, preview and save your own themes and colour schemes.",
+      "Find leading ratings, records and game percentages with search commands.",
+      "Small additions and improvements."
+    ]
+  },
+  {
+    "version": "8.0.1.4",
+    "size": "tiny",
+    "committedAt": "2026-10-28T05:02:49.214809+00:00",
+    "changes": [
+      "Bug fixes."
+    ]
+  },
+  {
+    "version": "8.0.1.3.1",
+    "size": "tiny",
+    "committedAt": "2026-10-28T04:57:54.542917+00:00",
+    "changes": [
+      "Bug fix."
+    ]
+  },
+  {
+    "version": "8.0.1.3",
+    "size": "tiny",
+    "committedAt": "2026-10-28T04:53:46.548057+00:00",
+    "changes": [
+      "Small additions."
+    ]
+  },
+  {
+    "version": "8.0.1.2",
+    "size": "tiny",
+    "committedAt": "2026-10-28T04:43:21.585568+00:00",
+    "changes": [
+      "Small improvements."
+    ]
+  },
+  {
+    "version": "8.0.1.1",
+    "size": "tiny",
+    "committedAt": "2026-10-28T04:23:16.845191+00:00",
+    "changes": [
+      "Small additions and improvements."
+    ]
+  },
+  {
+    "version": "8.0.1",
+    "size": "small",
+    "committedAt": "2026-10-28T02:14:48+00:00",
+    "changes": [
+      "Added match display order and rounded graph settings.",
+      "Improved Player Lab and navigation.",
+      "Bug fixes."
+    ]
+  },
   {
     "version": "8.0",
     "title": "Refined",
     "size": "major",
     "committedAt": "2026-10-28T01:32:25+00:00",
     "changes": [
-      "Redesigned Player Lab and added Doubles Pair Lab, with richer histories and match explorers.",
-      "Refined Teams, standings navigation, rating bands and section exports.",
-      "Reworked Settings with font and animation controls, defaults and rating-model choices.",
-      "Added more settings and refined their surprises.",
-      "Improved navigation, layout and usability throughout the site."
+      "Redesigned Player Lab and added Doubles Pair Lab.",
+      "Refined Teams, standings and section exports.",
+      "Added more display and customisation settings.",
+      "Added more settings.",
+      "Improved navigation and layouts."
     ]
   },
   {

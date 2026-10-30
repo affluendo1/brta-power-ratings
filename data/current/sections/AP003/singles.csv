@@ -1,37 +1,37 @@
-fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency
-AP003021,10 Oct 26,2,Willy Central,Black Rock,No. 1,Luka Milinovic,Ali Roshan,Luka Milinovic,8-7,8,7,1,0,Completed,true,false,false
-AP003021,10 Oct 26,2,Willy Central,Black Rock,No. 2,Koray Soylemez,Kayaan Saluja,Kayaan Saluja,5-8,5,8,0,1,Completed,true,false,false
-AP003021,10 Oct 26,2,Willy Central,Black Rock,No. 3,Gabriel Umbach,Cooper Follett,Cooper Follett,2-8,2,8,0,1,Completed,true,true,false
-AP003021,10 Oct 26,2,Willy Central,Black Rock,No. 4,Oscar Roeling,Kengo Iwasaka,Kengo Iwasaka,0-8,0,8,0,1,Completed,true,true,false
-AP003022,10 Oct 26,2,BLTC,Mt Eliza Penins,No. 1,Luca Magro,Nick Geslicki,Luca Magro,8-4,8,4,1,0,Completed,true,false,false
-AP003022,10 Oct 26,2,BLTC,Mt Eliza Penins,No. 2,Lucas Sleep,Alexander Dodd,Alexander Dodd,4-8,4,8,0,1,Completed,true,true,true
-AP003022,10 Oct 26,2,BLTC,Mt Eliza Penins,No. 3,Sebastian Maddams,Jai Smith,Jai Smith,7-8,7,8,0,1,Completed,true,false,false
-AP003022,10 Oct 26,2,BLTC,Mt Eliza Penins,No. 4,Max Henderson,Kento Nguyen,Max Henderson,8-1,8,1,1,0,Completed,true,false,false
-AP003024,10 Oct 26,2,Liston Red,Maccabi,No. 1,Ronan Sweeney,Dean Steinberg,Ronan Sweeney,8-0,8,0,1,0,Completed,true,true,false
-AP003024,10 Oct 26,2,Liston Red,Maccabi,No. 2,Andrew Protopapas,Luka Federman,Andrew Protopapas,8-3,8,3,1,0,Completed,true,false,false
-AP003024,10 Oct 26,2,Liston Red,Maccabi,No. 3,Joshua Oosthuizen,Arvid Kreimer,Joshua Oosthuizen,8-2,8,2,1,0,Completed,true,false,true
-AP003024,10 Oct 26,2,Liston Red,Maccabi,No. 4,Liam Brown,Ryan Behr,Liam Brown,8-5,8,5,1,0,Completed,true,true,true
-AP003031,17 Oct 26,3,Black Rock,Liston Red,No. 1,Kayaan Saluja,Joseph Tomo,Kayaan Saluja,8-4,8,4,1,0,Completed,true,false,false
-AP003031,17 Oct 26,3,Black Rock,Liston Red,No. 2,Nicholas Shaw,Joshua Oosthuizen,Nicholas Shaw,8-1,8,1,1,0,Completed,true,false,false
-AP003031,17 Oct 26,3,Black Rock,Liston Red,No. 3,Alexander Henao,Liam Brown,Alexander Henao,8-4,8,4,1,0,Completed,true,true,true
-AP003031,17 Oct 26,3,Black Rock,Liston Red,No. 4,Ethan Kleiman,Isaac Kurti,Isaac Kurti,0-8,0,8,0,1,Completed,true,true,true
-AP003032,17 Oct 26,3,Mt Eliza Penins,Willy Central,No. 1,Jai Smith,Josh Fleming,Jai Smith,8-5,8,5,1,0,Completed,true,false,false
-AP003032,17 Oct 26,3,Mt Eliza Penins,Willy Central,No. 2,Kento Nguyen,Luka Milinovic,Luka Milinovic,2-8,2,8,0,1,Completed,true,false,false
-AP003032,17 Oct 26,3,Mt Eliza Penins,Willy Central,No. 3,Lennard Geiger,Harris Mamone,Harris Mamone,1-8,1,8,0,1,Completed,true,false,true
-AP003032,17 Oct 26,3,Mt Eliza Penins,Willy Central,No. 4,Tye Cheasley,Koray Soylemez,Koray Soylemez,7-8,7,8,0,1,Completed,true,true,false
-AP003033,17 Oct 26,3,Liston Blue,BLTC,No. 1,Chris Stavropoulos,Luca Magro,Luca Magro,1-8,1,8,0,1,Completed,true,true,false
-AP003033,17 Oct 26,3,Liston Blue,BLTC,No. 2,Leo Di Stefano,Stevan Dakic,Leo Di Stefano,8-0,8,0,1,0,Completed,true,true,false
-AP003033,17 Oct 26,3,Liston Blue,BLTC,No. 3,Charlie Andrews,Caleb Jackson Wright,Caleb Jackson Wright,3-8,3,8,0,1,Completed,true,true,false
-AP003033,17 Oct 26,3,Liston Blue,BLTC,No. 4,Von Rudinas,Max Henderson,Von Rudinas,8-6,8,6,1,0,Completed,true,true,false
-AP003042,24 Oct 26,4,Liston Red,Mt Eliza Penins,No. 1,Joseph Tomo,Nick Geslicki,Nick Geslicki,4-8,4,8,0,1,Completed,true,false,false
-AP003042,24 Oct 26,4,Liston Red,Mt Eliza Penins,No. 2,Andrew Protopapas,Alexander Dodd,Alexander Dodd,6-7,6,7,0,1,Completed,true,false,true
-AP003042,24 Oct 26,4,Liston Red,Mt Eliza Penins,No. 3,Liam Brown,Kento Nguyen,Liam Brown,8-1,8,1,1,0,Completed,true,true,false
-AP003042,24 Oct 26,4,Liston Red,Mt Eliza Penins,No. 4,James Oosthuizen,Lennard Geiger,James Oosthuizen,8-0,8,0,1,0,Completed,true,true,false
-AP003043,24 Oct 26,4,Willy Central,Liston Blue,No. 1,Josh Fleming,Jayden Stewart,Josh Fleming,8-3,8,3,1,0,Completed,true,false,true
-AP003043,24 Oct 26,4,Willy Central,Liston Blue,No. 2,Gabriel Umbach,Joshua Oosthuizen,Gabriel Umbach,8-7,8,7,1,0,Completed,true,true,true
-AP003043,24 Oct 26,4,Willy Central,Liston Blue,No. 3,Ryan Roper,Leo Di Stefano,Ryan Roper,8-4,8,4,1,0,Completed,true,true,true
-AP003043,24 Oct 26,4,Willy Central,Liston Blue,No. 4,Oscar Roeling,Patrick Siriphromphan,Patrick Siriphromphan,1-8,1,8,0,1,Completed,true,true,true
-AP003044,24 Oct 26,4,BLTC,Maccabi,No. 1,Luca Magro,Jonny Henquin,,0-2,0,2,0,1,Unfinished,false,false,false
-AP003044,24 Oct 26,4,BLTC,Maccabi,No. 2,Caleb Jackson Wright,Geoff Rosenberger,,,0,0,0,0,Unfinished,false,false,true
-AP003044,24 Oct 26,4,BLTC,Maccabi,No. 3,Max Henderson,Robert Minc,,3-2,3,2,1,0,Unfinished,false,false,false
-AP003044,24 Oct 26,4,BLTC,Maccabi,No. 4,Kabeer Gulsahani,Daniel Sneider,,,0,0,0,0,Unfinished,false,true,false
+fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency,source_score
+AP003021,10 Oct 26,2,Willy Central,Black Rock,No. 1,Luka Milinovic,Ali Roshan,Luka Milinovic,8-7,8,7,1,0,Completed,true,false,false,8-7
+AP003021,10 Oct 26,2,Willy Central,Black Rock,No. 2,Koray Soylemez,Kayaan Saluja,Kayaan Saluja,5-8,5,8,0,1,Completed,true,false,false,5-8
+AP003021,10 Oct 26,2,Willy Central,Black Rock,No. 3,Gabriel Umbach,Cooper Follett,Cooper Follett,2-8,2,8,0,1,Completed,true,true,false,2-8
+AP003021,10 Oct 26,2,Willy Central,Black Rock,No. 4,Oscar Roeling,Kengo Iwasaka,Kengo Iwasaka,0-8,0,8,0,1,Completed,true,true,false,0-8
+AP003022,10 Oct 26,2,BLTC,Mt Eliza Penins,No. 1,Luca Magro,Nick Geslicki,Luca Magro,8-4,8,4,1,0,Completed,true,false,false,8-4
+AP003022,10 Oct 26,2,BLTC,Mt Eliza Penins,No. 2,Lucas Sleep,Alexander Dodd,Alexander Dodd,4-8,4,8,0,1,Completed,true,true,true,4-8
+AP003022,10 Oct 26,2,BLTC,Mt Eliza Penins,No. 3,Sebastian Maddams,Jai Smith,Jai Smith,7-8,7,8,0,1,Completed,true,false,false,7-8
+AP003022,10 Oct 26,2,BLTC,Mt Eliza Penins,No. 4,Max Henderson,Kento Nguyen,Max Henderson,8-1,8,1,1,0,Completed,true,false,false,8-1
+AP003024,10 Oct 26,2,Liston Red,Maccabi,No. 1,Ronan Sweeney,Dean Steinberg,Ronan Sweeney,8-0,8,0,1,0,Completed,true,true,false,8-0
+AP003024,10 Oct 26,2,Liston Red,Maccabi,No. 2,Andrew Protopapas,Luka Federman,Andrew Protopapas,8-3,8,3,1,0,Completed,true,false,false,8-3
+AP003024,10 Oct 26,2,Liston Red,Maccabi,No. 3,Joshua Oosthuizen,Arvid Kreimer,Joshua Oosthuizen,8-2,8,2,1,0,Completed,true,false,true,8-2
+AP003024,10 Oct 26,2,Liston Red,Maccabi,No. 4,Liam Brown,Ryan Behr,Liam Brown,8-5,8,5,1,0,Completed,true,true,true,8-5
+AP003031,17 Oct 26,3,Black Rock,Liston Red,No. 1,Kayaan Saluja,Joseph Tomo,Kayaan Saluja,8-4,8,4,1,0,Completed,true,false,false,8-4
+AP003031,17 Oct 26,3,Black Rock,Liston Red,No. 2,Nicholas Shaw,Joshua Oosthuizen,Nicholas Shaw,8-1,8,1,1,0,Completed,true,false,false,8-1
+AP003031,17 Oct 26,3,Black Rock,Liston Red,No. 3,Alexander Henao,Liam Brown,Alexander Henao,8-4,8,4,1,0,Completed,true,true,true,8-4
+AP003031,17 Oct 26,3,Black Rock,Liston Red,No. 4,Ethan Kleiman,Isaac Kurti,Isaac Kurti,0-8,0,8,0,1,Completed,true,true,true,0-8
+AP003032,17 Oct 26,3,Mt Eliza Penins,Willy Central,No. 1,Jai Smith,Josh Fleming,Jai Smith,8-5,8,5,1,0,Completed,true,false,false,8-5
+AP003032,17 Oct 26,3,Mt Eliza Penins,Willy Central,No. 2,Kento Nguyen,Luka Milinovic,Luka Milinovic,2-8,2,8,0,1,Completed,true,false,false,2-8
+AP003032,17 Oct 26,3,Mt Eliza Penins,Willy Central,No. 3,Lennard Geiger,Harris Mamone,Harris Mamone,1-8,1,8,0,1,Completed,true,false,true,1-8
+AP003032,17 Oct 26,3,Mt Eliza Penins,Willy Central,No. 4,Tye Cheasley,Koray Soylemez,Koray Soylemez,7-8,7,8,0,1,Completed,true,true,false,7-8
+AP003033,17 Oct 26,3,Liston Blue,BLTC,No. 1,Chris Stavropoulos,Luca Magro,Luca Magro,1-8,1,8,0,1,Completed,true,true,false,1-8
+AP003033,17 Oct 26,3,Liston Blue,BLTC,No. 2,Leo Di Stefano,Stevan Dakic,Leo Di Stefano,8-0,8,0,1,0,Completed,true,true,false,8-0
+AP003033,17 Oct 26,3,Liston Blue,BLTC,No. 3,Charlie Andrews,Caleb Jackson Wright,Caleb Jackson Wright,3-8,3,8,0,1,Completed,true,true,false,3-8
+AP003033,17 Oct 26,3,Liston Blue,BLTC,No. 4,Von Rudinas,Max Henderson,Von Rudinas,8-6,8,6,1,0,Completed,true,true,false,8-6
+AP003042,24 Oct 26,4,Liston Red,Mt Eliza Penins,No. 1,Joseph Tomo,Nick Geslicki,Nick Geslicki,4-8,4,8,0,1,Completed,true,false,false,4-8
+AP003042,24 Oct 26,4,Liston Red,Mt Eliza Penins,No. 2,Andrew Protopapas,Alexander Dodd,Alexander Dodd,6-7,6,7,0,1,Completed,true,false,true,6-7
+AP003042,24 Oct 26,4,Liston Red,Mt Eliza Penins,No. 3,Liam Brown,Kento Nguyen,Liam Brown,8-1,8,1,1,0,Completed,true,true,false,8-1
+AP003042,24 Oct 26,4,Liston Red,Mt Eliza Penins,No. 4,James Oosthuizen,Lennard Geiger,James Oosthuizen,8-0,8,0,1,0,Completed,true,true,false,8-0
+AP003043,24 Oct 26,4,Willy Central,Liston Blue,No. 1,Josh Fleming,Jayden Stewart,Josh Fleming,8-3,8,3,1,0,Completed,true,false,true,8-3
+AP003043,24 Oct 26,4,Willy Central,Liston Blue,No. 2,Gabriel Umbach,Joshua Oosthuizen,Gabriel Umbach,8-7,8,7,1,0,Completed,true,true,true,8-7
+AP003043,24 Oct 26,4,Willy Central,Liston Blue,No. 3,Ryan Roper,Leo Di Stefano,Ryan Roper,8-4,8,4,1,0,Completed,true,true,true,8-4
+AP003043,24 Oct 26,4,Willy Central,Liston Blue,No. 4,Oscar Roeling,Patrick Siriphromphan,Patrick Siriphromphan,1-8,1,8,0,1,Completed,true,true,true,1-8
+AP003044,24 Oct 26,4,BLTC,Maccabi,No. 1,Luca Magro,Jonny Henquin,,0-2,0,2,0,1,Unfinished,false,false,false,0-2
+AP003044,24 Oct 26,4,BLTC,Maccabi,No. 2,Caleb Jackson Wright,Geoff Rosenberger,,,0,0,0,0,Unfinished,false,false,true,
+AP003044,24 Oct 26,4,BLTC,Maccabi,No. 3,Max Henderson,Robert Minc,,3-2,3,2,1,0,Unfinished,false,false,false,3-2
+AP003044,24 Oct 26,4,BLTC,Maccabi,No. 4,Kabeer Gulsahani,Daniel Sneider,,,0,0,0,0,Unfinished,false,true,false,

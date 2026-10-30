@@ -45,11 +45,11 @@ s=sample();s.rounds[0].fixtures[0].homePointsOverride=9;s.rounds[0].fixtures[0].
 s=sample();s.rounds[0].fixtures[0].homePointsOverride=9;assert.throws(()=>M.validate(s),/both competition-point/);
 // V3B uses extra outcome evidence without changing actual results or game statistics.
 const observation={home:['A'],away:['B'],hg:10,ag:10,hs:2,as:1,winner:'home',matchTiebreaks:[{h:10,a:8}],date:'2026-10-01',homeTeam:'X',awayTeam:'Y'};
-assert.deepEqual(M.ratingEvidence(observation),{home:10,away:10});
+assert.deepEqual(M.ratingEvidence(observation),{home:11,away:10});
 const composite=M.ratingEvidence(observation,'V3B');assert(Math.abs(composite.home-(10+4+4+20/18))<1e-10);assert(Math.abs(composite.away-(10+2+16/18))<1e-10);
 assert.deepEqual(M.fit([observation]),M.fit([observation],false,false,'V3'));
 const power=(match,model)=>M.fit(Array(4).fill(match),false,false,model).find(p=>p.player==='A').rating;
-assert.equal(power(observation,'V3'),1500);assert(power(observation,'V3B')>1500);
+assert(power(observation,'V3')>1500);assert(power(observation,'V3B')>1500);
 assert(power({...observation,winner:'home'},'V3B')>power({...observation,winner:'away'},'V3B'),'Match wins contribute.');
 assert(power({...observation,hs:2,as:1},'V3B')>power({...observation,hs:1,as:2},'V3B'),'Set wins contribute.');
 assert(power({...observation,matchTiebreaks:[{h:10,a:2}]},'V3B')>power({...observation,matchTiebreaks:[{h:10,a:8}]},'V3B'),'Tiebreak score margins contribute.');

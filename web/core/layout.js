@@ -3,9 +3,9 @@ let layoutOverlayFocus=null,layoutInert=[];
 const layoutCache=new WeakMap();
 function layoutDefaultCode(){const c=localStorage.getItem('brta-default-competition'),s=localStorage.getItem('brta-default-section');return currentCatalog().find(x=>x.competition_code===c&&(!s||x.section_code===s))?.section_code||''}
 async function layoutApplyModel(data,model=localStorage.getItem('brta-rating-model')||'RM3'){
- if(model==='RM3'&&data.meta?.ratingModel!=='V3B')return data;
+ data=BRTAScores.normalise(data);if(model==='RM3'&&data.meta?.ratingModel!=='V3B'&&!data.meta?.needsScoreRefit)return data;
  if(layoutCache.get(data)?.model===model)return layoutCache.get(data).result;
- const result=await new Promise((resolve,reject)=>{const worker=new Worker('web/workers/rating-worker.js?v=8212');worker.onmessage=e=>{worker.terminate();e.data.error?reject(Error(e.data.error)):resolve(e.data.data)};worker.onerror=e=>{worker.terminate();reject(Error(e.message||'Could not calculate RM3b.'))};worker.postMessage({data,model})});layoutCache.set(data,{model,result});return result;
+ const result=await new Promise((resolve,reject)=>{const worker=new Worker('web/workers/rating-worker.js?v=823');worker.onmessage=e=>{worker.terminate();e.data.error?reject(Error(e.data.error)):resolve(e.data.data)};worker.onerror=e=>{worker.terminate();reject(Error(e.message||'Could not calculate RM3b.'))};worker.postMessage({data,model})});layoutCache.set(data,{model,result});return result;
 }
 function ratingChangeCell(row){const n=row.ratingChange;return '<td class="rating-change '+(n>0?'rank-up':n<0?'rank-down':'rank-still')+'">'+(n==null?'—':(n>0?'+':'')+n)+'</td>'}
 function renderStandings(){

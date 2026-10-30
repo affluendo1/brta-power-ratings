@@ -87,23 +87,25 @@
     return a.map(row=>row.slice(n));
   }
   const V3B_WEIGHTS=Object.freeze({game:1,setWin:2,matchWin:4,matchTiebreak:2});
+  const RM3_MATCH_TIEBREAK_WEIGHT=1;
   // Composite evidence in game-equivalent units. A deciding tiebreak contributes
   // a fixed total weight split by points, so extended tiebreaks cannot dominate.
-  function ratingEvidence(m,model='V3'){
+  function ratingEvidence(m,model='V3',parameters={}){
     if(!['V3','V3B'].includes(model))fail('Choose V3 or V3B as the rating model.');
     let home=m.hg,away=m.ag;
     if(model==='V3B'){
       home+=V3B_WEIGHTS.setWin*(m.hs||0)+V3B_WEIGHTS.matchWin*Number(m.winner==='home');
       away+=V3B_WEIGHTS.setWin*(m.as||0)+V3B_WEIGHTS.matchWin*Number(m.winner==='away');
-      for(const tb of m.matchTiebreaks||[]){const total=Number(tb.h)+Number(tb.a);if(total>0){home+=V3B_WEIGHTS.matchTiebreak*Number(tb.h)/total;away+=V3B_WEIGHTS.matchTiebreak*Number(tb.a)/total;}}
     }
+    const mtWeight=parameters.matchTiebreakWeight??(model==='V3B'?V3B_WEIGHTS.matchTiebreak:RM3_MATCH_TIEBREAK_WEIGHT),mode=parameters.matchTiebreakMode||(model==='V3B'?'point-share':'outcome');if(!Number.isFinite(mtWeight)||mtWeight<0||mtWeight>20)fail('Match-tiebreak weight must be between 0 and 20.');if(!['point-share','outcome'].includes(mode))fail('Choose outcome or point-share match-tiebreak evidence.');
+    for(const tb of m.matchTiebreaks||[]){const total=Number(tb.h)+Number(tb.a),winner=tb.winner||(Number(tb.h)>Number(tb.a)?'home':'away');if(!tb.unknown&&!(total>0))continue;const share=mode==='point-share'&&!tb.unknown?Number(tb.h)/total:Number(winner==='home');home+=mtWeight*share;away+=mtWeight*(1-share)}
     return {home,away};
   }
-  function fit(matches,individual=false,rubbers=false,ratingModel='V3'){
+  function fit(matches,individual=false,rubbers=false,ratingModel='V3',parameters={}){
     if(!matches.length)return [];
     const labels=m=>individual?m.home.concat(m.away):[pair(m.home),pair(m.away)],names=[...new Set(matches.flatMap(labels))].sort(),ix=new Map(names.map((p,i)=>[p,i])),n=names.length;
     const ref=Math.max(...matches.map(m=>Date.parse(m.date))),design=matches.map(m=>{const d=Array(n).fill(0);if(individual){m.home.forEach(p=>d[ix.get(p)]+=.5);m.away.forEach(p=>d[ix.get(p)]-=.5)}else{d[ix.get(pair(m.home))]=1;d[ix.get(pair(m.away))]=-1}return d}),weights=matches.map(m=>2**(-Math.max(0,(ref-Date.parse(m.date))/86400000)/365));
-    const counts=matches.map(m=>ratingEvidence(m,ratingModel));
+    const counts=matches.map(m=>ratingEvidence(m,ratingModel,parameters));
     let theta=Array(n).fill(0),H;
     for(let iter=0;iter<100;iter++){
       const grad=theta.map(x=>5*x);H=Array.from({length:n},(_,i)=>Array.from({length:n},(_,j)=>i===j?5:0));
@@ -152,12 +154,12 @@
       const rnd=Number(round.number),sm=singles.filter(m=>m.round<=rnd),dm=doubles.filter(m=>m.round<=rnd);sr=fit(sm,false,false,ratingModel);dr=fit(dm,true,section.format==='rubbers',ratingModel);pr=fit(dm,false,false,ratingModel);const powers=new Map(dr.map(x=>[x.player,x.rating]));pr.forEach(p=>{p.individualAverage=Math.round(mean(p.player.split(' / ').map(n=>powers.get(n)||1500)));p.pairEffect=p.rating-p.individualAverage});ratingHistory.tables[rnd]=sr;doublesRatingHistory.tables[rnd]={pairs:pr,doublesPlayers:dr};ratingHistory.rounds.push({round:rnd,date:dateLabel(round.date),players:sr.length});sr.forEach(p=>(ratingHistory.players[p.player]??=[]).push([rnd,p.rating,p.se,p.matches,p.team]));
     }
     const rows=[...standings.values()].sort((a,b)=>b.points-a.points||(b.gamesAgainst?b.gamesFor/b.gamesAgainst:b.gamesFor?Infinity:0)-(a.gamesAgainst?a.gamesFor/a.gamesAgainst:a.gamesFor?Infinity:0)||a.team.localeCompare(b.team));
-    const meta={semifinalPlaces:section.semifinalPlaces??4,section_code:section.id,section_label:section.name,competition_code:'LOCAL',competition_label:'My sections - '+(section.season||'Custom season'),season_id:section.id,season_label:section.season||'Custom season',format:section.format,customRules:{singlesSlots:Number(section.singlesSlots),doublesSlots:Number(section.doublesSlots),singlesBestOf:Number(section.singlesBestOf||(section.format==='rubbers'?3:1)),doublesBestOf:Number(section.doublesBestOf||1),setTarget:Number(section.setTarget),doublesTarget:Number(section.doublesTarget||section.setTarget)},ratingModel,ratingWeights:ratingModel==='V3B'?{...V3B_WEIGHTS}:{game:1,setWin:0,matchWin:0,matchTiebreak:0},doublesSurnames:!!section.doublesSurnames,is_custom:true,latest_round:latest};
+    const meta={semifinalPlaces:section.semifinalPlaces??4,section_code:section.id,section_label:section.name,competition_code:'LOCAL',competition_label:'My sections - '+(section.season||'Custom season'),season_id:section.id,season_label:section.season||'Custom season',format:section.format,customRules:{singlesSlots:Number(section.singlesSlots),doublesSlots:Number(section.doublesSlots),singlesBestOf:Number(section.singlesBestOf||(section.format==='rubbers'?3:1)),doublesBestOf:Number(section.doublesBestOf||1),setTarget:Number(section.setTarget),doublesTarget:Number(section.doublesTarget||section.setTarget)},ratingModel,ratingWeights:ratingModel==='V3B'?{...V3B_WEIGHTS}:{game:1,setWin:0,matchWin:0,matchTiebreak:RM3_MATCH_TIEBREAK_WEIGHT},doublesSurnames:!!section.doublesSurnames,is_custom:true,latest_round:latest};
     const customRoster=section.players.filter(p=>!p.archived).map(p=>({...p,team:tm.get(p.teamId)||'',rating:sr.find(x=>x.player===p.name)?.rating??dr.find(x=>x.player===p.name)?.rating??1500}));
     const teamRows=section.teams.map(t=>{const registered=new Set(customRoster.filter(p=>p.teamId===t.id).map(p=>p.name)),players=sr.filter(x=>registered.has(x.player)),four=players.slice(0,4);return {team:t.name,avg:mean(players.map(x=>x.rating))||1500,best4:mean(four.map(x=>x.rating))||1500,modelled:players.length,ladder:standings.get(t.name).points}});
     const orderEvidence={};section.teams.forEach(t=>orderEvidence[t.name]={players:section.players.filter(p=>p.teamId===t.id&&!p.archived).sort((a,b)=>a.order-b.order).map(p=>({player:p.name,rating:sr.find(x=>x.player===p.name)?.rating||1500,appearances:singles.filter(m=>m.home.includes(p.name)||m.away.includes(p.name)).length,averagePosition:p.order,emergencyOnly:!!p.emergency})),precedence:[]});
     const last=results[0],roundOverview=last?{round:last.round,label:last.label,date:last.date,fixtures:last.fixtures,summary:{completedFixtures:last.fixtures.filter(f=>f.status==='Completed').length,singlesRubbers:singles.filter(m=>m.round===last.round).length,doublesRubbers:doubles.filter(m=>m.round===last.round).length,averageSinglesMargin:Math.round(mean(singles.filter(m=>m.round===last.round).map(m=>Math.abs(m.hg-m.ag)))*10)/10}}:null;
-    return {meta,singles:sr,doubles:pr,doublesIndividuals:dr,singlesMatches:singles.map(m=>[m.round,m.dateLabel,m.home[0],m.away[0],m.hg,m.ag,m.winner==='home'?m.home[0]:m.away[0],m.score,m.fixtureId]),ratingHistory,doublesRatingHistory,teams:teamRows,standings:rows,results,upcomingFixtures,format:section.format,greenBall:false,knockout:{source:'none'},sync:{checkedAt:section.updatedAt,latestRound:latest,validation:'passed',missingFixtures:0},note:'Custom section saved on this device. Ratings use '+ratingModel+(ratingModel==='V3B'?' composite game, set, match and match-tiebreak evidence':' game evidence')+' on completed played matches.',teamOrderEvidence:orderEvidence,customRoster,teamInsights:teamInsights(section,results),playerInsights:{},strengthOfSchedule:[],resultsExpectation:{players:[],matches:[]},roundOverview};
+    return {meta,singles:sr,doubles:pr,doublesIndividuals:dr,singlesMatches:singles.map(m=>[m.round,m.dateLabel,m.home[0],m.away[0],m.hg,m.ag,m.winner==='home'?m.home[0]:m.away[0],m.score,m.fixtureId]),ratingHistory,doublesRatingHistory,teams:teamRows,standings:rows,results,upcomingFixtures,format:section.format,greenBall:false,knockout:{source:'none'},sync:{checkedAt:section.updatedAt,latestRound:latest,validation:'passed',missingFixtures:0},note:'Custom section saved on this device. Ratings use '+ratingModel+(ratingModel==='V3B'?' composite game, set, match and match-tiebreak evidence':' game and deciding-tiebreak outcome evidence')+' on completed played matches.',teamOrderEvidence:orderEvidence,customRoster,teamInsights:teamInsights(section,results),playerInsights:{},strengthOfSchedule:[],resultsExpectation:{players:[],matches:[]},roundOverview};
   }
-  const api={validate,score,fit,build,clone,ratingEvidence,V3B_WEIGHTS};root.CustomSectionModel=api;if(typeof module!=='undefined')module.exports=api;
+  const api={validate,score,fit,build,clone,ratingEvidence,V3B_WEIGHTS,RM3_MATCH_TIEBREAK_WEIGHT};root.CustomSectionModel=api;if(typeof module!=='undefined')module.exports=api;
 })(typeof window!=='undefined'?window:globalThis);
