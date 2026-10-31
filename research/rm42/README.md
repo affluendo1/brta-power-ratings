@@ -110,3 +110,10 @@ Audit calibration and interval coverage, sparse pairs, newcomers and per-format
 regressions. Add pair-specific experience if it survives that test. Keep the
 current models available and publish a flagship only with explicit evidence and
 format limitations. A higher version number is not the evaluation metric.
+
+## Further research
+
+[Accuracy experiment 01](experiments/accuracy-01/README.md) tests 35 configurations
+with development-only selection and 7,196 additional archived forecasts. A
+lower-shrinkage, composite-heavy Melody is a promising next candidate. These
+experimental choices do not overwrite the bundle or public defaults.
