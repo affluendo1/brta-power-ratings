@@ -2,19 +2,19 @@
   "RM4.2 Ensemble": {
     "baseline": "RM4.1 Ensemble",
     "sectionCount": 15,
-    "logLossDifference": -0.0018437130486765442,
+    "logLossDifference": -0.0016737292401514646,
     "sectionBootstrap95": [
-      -0.012331411559278273,
-      0.008949990657374216
+      -0.012332101325338341,
+      0.009734944661423653
     ]
   },
-  "RM4.2b": {
+  "RM4.2 Melody": {
     "baseline": "RM4b",
     "sectionCount": 15,
-    "logLossDifference": -0.0006831150355927183,
+    "logLossDifference": -0.0002753418197586936,
     "sectionBootstrap95": [
-      -0.007919593747532424,
-      0.006967386241728769
+      -0.00879689880568915,
+      0.008886336726604367
     ]
   },
   "RM Foundation-3": {

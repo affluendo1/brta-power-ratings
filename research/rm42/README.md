@@ -1,8 +1,8 @@
-# RM4.2 / RM Foundation-3 — candidate build 1
+# RM4.2 / RM Foundation-3 — Melody candidate build 2
 
 These are working offline candidates, not released replacements or new defaults.
 The proposed flagship pair is RM Foundation-3 (stable rating baseline) and RM4.2
-Ensemble (format-aware forecasting). Build 1 does not yet justify promoting either.
+Ensemble (format-aware forecasting). This build does not yet justify promoting either.
 No site release number or public model selector changes accompany this branch.
 
 ## Implemented
@@ -10,15 +10,18 @@ No site release number or public model selector changes accompany this branch.
 - **RM Foundation-3:** the RM3 game-evidence core with slightly stronger shrinkage
   (latent-space L2 3.25 versus 2.8125), separate singles/doubles skills, no manual
   opponent-strength bonus and 365-day decay.
-- **RM4.2a:** stopped-score likelihood, L2 7.5, singles/doubles correlation 0.65.
-- **RM4.2b:** composite likelihood, L2 4, correlation 0.85. Both 4.2 cores cap a
-  long rubber's likelihood weight at 24 ordinary-game equivalents, reducing the
-  dominance of longer scorecards; this is a hypothesis, not an established fix.
+- **RM4.2 Melody:** one hybrid fitted model combining equal parts stopped-score
+  negative log likelihood and composite game/set/match negative log likelihood.
+  It solves for one shared set of singles/doubles latent strengths. This is not
+  an average of two published rating tables or two forecast probabilities.
+  L2 is 5.5; singles/doubles correlation is 0.75; decay is 365 days. A 24-game
+  evidence cap limits longer scorecards. These fixed build-2 choices were set
+  before rerunning; the assessment seasons have already been inspected.
 - Symmetric regularised temperature calibration conditioned on discipline,
   Green Ball/multi-set format and the least-experienced selected player's prior
   appearances. There is no home intercept, player identity feature, or arbitrary
   switch at a particular round. Future rounds matter through prior evidence.
-- **RM4.2 Ensemble:** convex probability blend with format/discipline weights
+- **RM4.2 Ensemble:** convex probability blend of Foundation-3 and Melody with format/discipline weights
   pooled toward global weights by n/(n+200). Unseen formats fall back to global.
 - Frozen serving: model fitting only uses earlier dates AND earlier rounds when
   forecasting a target. Calibration/weights are trained offline on development
@@ -55,18 +58,25 @@ The results do not establish future superiority or external-association transfer
 | RM3 | 0.571569 | 0.194532 | 672 |
 | RM Foundation-3 | 0.572104 | 0.194684 | 668 |
 | RM4a | 0.559393 | 0.189201 | 679 |
-| RM4.2a | 0.561789 | 0.190259 | 680 |
 | RM4b | 0.560047 | 0.189203 | 687 |
-| RM4.2b | 0.559363 | 0.188562 | 681 |
 | RM4.1 Ensemble | 0.561445 | 0.190149 | 682 |
-| RM4.2 Ensemble | 0.559601 | 0.188774 | 681 |
+| RM4.2 Melody | 0.559771 | 0.189143 | 675 |
+| RM4.2 Ensemble | 0.559771 | 0.189143 | 675 |
 
-RM4.2 Ensemble's paired log-loss difference versus 4.1 is -0.001844.
-The section-bootstrap 95% interval is [-0.012331, +0.008950], spanning zero.
-RM4.2b's interval versus RM4b also spans zero. Foundation-3 worsened the point
-estimates relative to RM3. None of these results warrants an unconditional
-flagship promotion. RM4.2 Ensemble is the most useful candidate to develop;
-Foundation-3's extra shrinkage should be reconsidered using development data.
+The new three-model family replaces the separate RM4.2a/b candidates. Old RM4a/b
+remain comparison baselines, not newly renamed candidates.
+
+RM4.2 Ensemble's log-loss difference versus 4.1 is -0.001674, with a
+section-bootstrap 95% interval of [-0.012332, +0.009735], spanning zero.
+Melody's interval versus RM4b also spans zero. Foundation-3 still worsens the
+point estimates relative to RM3. The development fit selected 100% Melody for
+all current Ensemble groups and the global fallback, so Melody and Ensemble
+currently have identical forecasts and ratings. No minimum Foundation weight is
+forced. The architecture can blend them when development evidence supports it;
+it does not yet demonstrate an ensemble advantage. No public promotion is justified.
+
+This is a rerun on already-inspected historical assessment data, not a new holdout.
+The previous a/b build remains in Git history; its scores do not describe Melody.
 
 ## Reproduce and use
 
