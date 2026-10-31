@@ -2,11 +2,18 @@
 let layoutOverlayFocus=null,layoutInert=[];
 const layoutCache=new WeakMap();
 function layoutDefaultCode(){const c=localStorage.getItem('brta-default-competition'),s=localStorage.getItem('brta-default-section');return currentCatalog().find(x=>x.competition_code===c&&(!s||x.section_code===s))?.section_code||''}
-async function layoutApplyModel(data,model=localStorage.getItem('brta-rating-model')||'RM3'){
- data=BRTAScores.normalise(data);if(model==='RM3'&&data.meta?.ratingModel!=='V3B'&&!data.meta?.needsScoreRefit)return data;
- if(layoutCache.get(data)?.model===model)return layoutCache.get(data).result;
- const result=await new Promise((resolve,reject)=>{const worker=new Worker('web/workers/rating-worker.js?v=823');worker.onmessage=e=>{worker.terminate();e.data.error?reject(Error(e.data.error)):resolve(e.data.data)};worker.onerror=e=>{worker.terminate();reject(Error(e.message||'Could not calculate RM3b.'))};worker.postMessage({data,model})});layoutCache.set(data,{model,result});return result;
+let rm4FrozenPromise=null;
+async function ensureRM4Frozen(){if(!rm4FrozenPromise)rm4FrozenPromise=fetch('web/models/rm4-frozen.json?v=83').then(r=>{if(!r.ok)throw Error('Prediction model unavailable.');return r.json()}).then(b=>window.BRTARM4Frozen=b).catch(e=>{rm4FrozenPromise=null;throw e});return rm4FrozenPromise}
+function selectedRatingModel(){const saved=localStorage.getItem('brta-rating-model');return ['RM3','RM3b','RM4a','RM4b','RM4.1 Ensemble'].includes(saved)?saved:'RM4.1 Ensemble'}
+function selectedRatingCentre(){return localStorage.getItem('brta-rating-centre')==='1500'?1500:2000}
+async function layoutApplyModel(data,model=selectedRatingModel()){
+ data=BRTAScores.normalise(data);const centre=selectedRatingCentre(),key=model+':'+centre;
+ if(layoutCache.get(data)?.model===key)return layoutCache.get(data).result;
+ let result=data;if(model.startsWith('RM4'))await ensureRM4Frozen();
+ if(model!=='RM3'||data.meta?.ratingModel==='V3B'||data.meta?.needsScoreRefit){result=await new Promise((resolve,reject)=>{const worker=new Worker('web/workers/rating-worker.js?v=83'),timer=setTimeout(()=>{worker.terminate();reject(Error('Rating calculation timed out. Try RM3 in Settings.'))},90000);const finish=()=>{clearTimeout(timer);worker.terminate()};worker.onmessage=e=>{finish();e.data.error?reject(Error(e.data.error)):resolve(e.data.data)};worker.onerror=e=>{finish();reject(Error(e.message||'Could not calculate ratings.'))};worker.postMessage({data,model})})}
+ result=BRTARM4Engine.centre(result,centre);layoutCache.set(data,{model:key,result});return result;
 }
+
 function ratingChangeCell(row){const n=row.ratingChange;return '<td class="rating-change '+(n>0?'rank-up':n<0?'rank-down':'rank-still')+'">'+(n==null?'—':(n>0?'+':'')+n)+'</td>'}
 function renderStandings(){
  const rows=D.standings||[],played=Math.max(0,...rows.map(r=>Number(r.played)||Number(r.wins||0)+Number(r.draws||0)+Number(r.losses||0)));
@@ -46,10 +53,12 @@ const layoutSearchCache=new Map(),layoutSearchJobs=[];let layoutSearchBusy=0;
 window.addEventListener('brta-custom-sections-change',()=>layoutSearchCache.clear());
 function layoutSearchPump(){while(layoutSearchBusy<2&&layoutSearchJobs.length){const job=layoutSearchJobs.shift();layoutSearchBusy++;job().finally(()=>{layoutSearchBusy--;layoutSearchPump()})}}
 function layoutSearchRatings(rows){
- if(localStorage.getItem('brta-rating-model')!=='RM3b')return rows;
+ const offset=selectedRatingCentre()-1500;rows=rows.map(r=>({...r,...Object.fromEntries(['singlesRating','doublesRating','overallRating'].filter(k=>Number.isFinite(r[k])).map(k=>[k,r[k]+offset]))}));
+ if(selectedRatingModel()==='RM3')return rows;
  const query=$('#search').value.trim().toLowerCase();if(!query)return rows;
- return rows.map(row=>{if(!row.player.toLowerCase().includes(query))return row;const key=(activeHistorySeasonId||'current')+':'+row.sectionCode;let entry=layoutSearchCache.get(key);
-  if(!entry){entry={rows:null,error:false};layoutSearchCache.set(key,entry);const section=viewCatalog.find(s=>s.section_code===row.sectionCode);layoutSearchJobs.push(async()=>{try{let payload;if(D.meta.section_code===row.sectionCode)payload=D;else{payload=section?.is_custom?CustomSections.payload(row.sectionCode):await fetch(section?.data_path||('data/site/sections/'+row.sectionCode+'.json')).then(r=>{if(!r.ok)throw Error('Section unavailable');return r.json()});payload=await layoutApplyModel(normaliseTeamLabels(payload));}entry.rows=new Map(archiveGlobalRowsFromSection(payload,section||{section_code:row.sectionCode}).map(r=>[r.player,r]));}catch{entry.error=true}if(localStorage.getItem('brta-rating-model')==='RM3b'&&ratingScope==='all')renderRatings()});queueMicrotask(layoutSearchPump);}
+ return rows.map(row=>{if(!row.player.toLowerCase().includes(query))return row;const key=(activeHistorySeasonId||'current')+':'+selectedRatingModel()+':'+selectedRatingCentre()+':'+row.sectionCode;let entry=layoutSearchCache.get(key);
+  if(!entry){entry={rows:null,error:false};layoutSearchCache.set(key,entry);const section=viewCatalog.find(s=>s.section_code===row.sectionCode);layoutSearchJobs.push(async()=>{try{let payload;if(D.meta.section_code===row.sectionCode)payload=D;else{payload=section?.is_custom?CustomSections.payload(row.sectionCode):await fetch(section?.data_path||('data/site/sections/'+row.sectionCode+'.json')).then(r=>{if(!r.ok)throw Error('Section unavailable');return r.json()});payload=await layoutApplyModel(normaliseTeamLabels(payload));}entry.rows=new Map(archiveGlobalRowsFromSection(payload,section||{section_code:row.sectionCode}).map(r=>[r.player,r]));}catch{entry.error=true}if(ratingScope==='all')renderRatings()});queueMicrotask(layoutSearchPump);}
   if(entry.rows)return entry.rows.get(row.player)||row;return{...row,...Object.fromEntries(['singlesRating','doublesRating','overallRating'].filter(k=>row[k]!=null).map(k=>[k,entry.error?'—':'…']))};
  });
 }
+

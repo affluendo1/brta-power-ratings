@@ -43,6 +43,20 @@ class FakeClient:
 
 
 class CollectionTests(unittest.TestCase):
+    def test_crlf_cache_reuses_exact_source_bytes(self):
+        class CRLFClient(FakeClient):
+            def read(self, *args, **kwargs):
+                return super().read(*args, **kwargs) + '\r\n<p>Unchanged source</p>\r\n'
+        with tempfile.TemporaryDirectory() as tmp:
+            first = CRLFClient()
+            store = Store(tmp, first.association)
+            original, _ = store.read(first, 'index.php')
+            second = CRLFClient()
+            cached, _ = store.read(second, 'index.php')
+            self.assertEqual(cached, original)
+            self.assertEqual(second.calls, [])
+            self.assertEqual(store.cached, 1)
+
     def test_all_observed_cards_parse_real_roster_sizes_and_all_schedule_rows(self):
         expected={'wdta-triples':(3,3,6),'wdta-rubbers':(2,2,3),'bdnta-singles-doubles':(3,3,6),'erta-green':(3,3,6),'ldnta-incomplete':(4,4,6)}
         for name,counts in expected.items():
@@ -190,3 +204,4 @@ class CollectionTests(unittest.TestCase):
 
 
 if __name__=='__main__':unittest.main()
+

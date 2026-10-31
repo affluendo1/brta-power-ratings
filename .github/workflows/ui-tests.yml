@@ -25,3 +25,5 @@ jobs:
           for test in tests/*.js; do node "$test"; done
           NODE_PATH="$RUNNER_TEMP/brta-ui-tests/node_modules" node tests/browser/audit.cjs
           NODE_PATH="$RUNNER_TEMP/brta-ui-tests/node_modules" node tests/browser/refinement.cjs
+
+          NODE_PATH="$RUNNER_TEMP/brta-ui-tests/node_modules" node tests/browser/rm4.cjs

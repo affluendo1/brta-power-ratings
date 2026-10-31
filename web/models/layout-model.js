@@ -23,7 +23,7 @@ function observations(data){const result=[];
   const home=String(r.home||'').split(/\s*\/\s*/),away=String(r.away||'').split(/\s*\/\s*/);if(!home[0]||!away[0])continue;
   const sets=Scores.parse(r.score,{outcomeCode:Scores.outcomeCode(data,r.type)});if(!sets.length)continue;
   const regular=sets.filter(s=>!s.mt),hs=sets.filter(s=>s.winner==='home').length,as=sets.filter(s=>s.winner==='away').length;
-  result.push({home,away,type:r.type,hg:regular.reduce((n,s)=>n+s.h,0),ag:regular.reduce((n,s)=>n+s.a,0),hs,as,matchTiebreaks:sets.filter(s=>s.mt).map(s=>s.unknown?s:{h:s.h,a:s.a,mt:true}),winner:r.winner===r.home?'home':'away',date:sourceDate(f.date||round.date),round:Number(round.round),homeTeam:f.home,awayTeam:f.away});
+  result.push({home,away,type:r.type,hg:regular.reduce((n,s)=>n+s.h,0),ag:regular.reduce((n,s)=>n+s.a,0),hs,as,matchTiebreaks:sets.filter(s=>s.mt).map(s=>s.unknown?s:{h:s.h,a:s.a,mt:true}),winner:r.winner===r.home?'home':'away',date:sourceDate(f.date||round.date),round:Number(round.round),homeTeam:f.home,awayTeam:f.away,events:sets,fixtureId:f.fixtureId,position:r.position});
  }return result;
 }
 function recalculate(data,model,engine){
@@ -38,7 +38,7 @@ const escape=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&
 function report(data,history){
  const table=(rows,columns)=>'<div class="scroll"><table><thead><tr>'+columns.map(([key,label])=>'<th>'+escape(label)+'</th>').join('')+'</tr></thead><tbody>'+rows.map(row=>'<tr>'+columns.map(([key])=>'<td>'+escape(row[key])+'</td>').join('')+'</tr>').join('')+'</tbody></table></div>';
  const statKeys=[['rank','#'],['player','Player / pair'],['team','Team'],['rating','Power'],['band','Band'],['wins','Wins'],['losses','Losses'],['matches','Matches'],['gf','Games won'],['ga','Games lost'],['percentage','Game %'],['movement','Position change'],['ratingChange','Power change'],['se','Uncertainty ±'],['lo','95% low'],['hi','95% high'],['partner_count','Partners'],['ranking_status','Status'],['individualAverage','Individual average'],['pairEffect','Pair effect'],['singlesPower','Singles Power'],['doublesPower','Doubles Power']];
- let body='<h1>'+escape(data.meta.competition_label)+' · '+escape(data.meta.section_label)+'</h1><p>Complete section · '+escape(data.meta.season_label||'')+' · '+escape(data.meta.ratingModel==='V3B'?'RM3b':'RM3')+'</p>';
+ let body='<h1>'+escape(data.meta.competition_label)+' · '+escape(data.meta.section_label)+'</h1><p>Complete section · '+escape(data.meta.season_label||'')+' · '+escape(data.meta.predictionModel||(data.meta.ratingModel==='V3B'?'RM3b':'RM3'))+'</p>';
  for(const [view,title]of [['singles','Singles'],['doublesPlayers','Doubles players'],['pairs','Doubles pairs'],['overall','Overall']]){const rows=history.withMovement(data,view),b=bands(rows,r=>history.qualified(r,view));body+='<h2>'+title+'</h2>'+table(rows.map(r=>({...r,ranking_status:r.ranking_status||(r.rank==null?'Provisional':'Ranked'),band:r.rank==null?'Provisional':names[+b.classFor(r.rating).slice(1)],percentage:r.gf+r.ga?(100*r.gf/(r.gf+r.ga)).toFixed(2)+'%':'—',singlesPower:r.s?.rating,doublesPower:r.d?.rating})),statKeys);}
  body+='<h2>Standings</h2>'+table((data.standings||[]).map((r,i)=>({...r,position:r.officialPosition||i+1,percentage:Number.isFinite(percentage(r))?percentage(r).toFixed(2)+'%':'∞'})),[['position','#'],['team','Team'],['played','Played'],['wins','Wins'],['draws','Draws'],['losses','Losses'],['gamesFor','Games for'],['gamesAgainst','Games against'],['percentage','%'],['points','Points']]);
  body+='<h2>Full fixture list</h2>'+table((data.upcomingFixtures||[]).flatMap(r=>(r.fixtures||[]).map(f=>({...f,round:r.label||r.round,date:f.date||r.date}))),[['round','Round'],['date','Date'],['home','Home'],['away','Away'],['status','Status']]);
@@ -49,5 +49,6 @@ function report(data,history){
  body+='<details><summary>Complete section data (JSON)</summary><pre>'+escape(JSON.stringify(data,null,2))+'</pre></details>';
  return'<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Complete section</title><style>body{font:15px/1.5 Arial,sans-serif;margin:32px;color:#202b35}h1{font-size:26px}h2{border-bottom:2px solid #43596b;margin-top:32px}table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums}th,td{padding:8px;text-align:left;border:1px solid #cbd2d9;white-space:nowrap}th{background:#e9edf1}tr:nth-child(even){background:#f7f8fa}.scroll{overflow:auto}details{margin:16px 0;padding:12px;border:1px solid #cbd2d9}pre{white-space:pre-wrap;overflow-wrap:anywhere}@media print{body{margin:0}.scroll{overflow:visible}table{font-size:9px}th,td{white-space:normal;padding:3px}}</style>'+body+'</html>';
 }
-const api={names,bands,percentage,observations,recalculate,report};root.BRTALayoutModel=api;if(typeof module!=='undefined')module.exports=api;
+const api={names,bands,percentage,sourceDate,observations,recalculate,report};root.BRTALayoutModel=api;if(typeof module!=='undefined')module.exports=api;
 })(typeof window==='undefined'?globalThis:window);
+

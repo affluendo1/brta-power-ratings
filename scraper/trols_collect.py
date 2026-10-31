@@ -192,7 +192,7 @@ class Store:
         raw = self.root/'raw'/f'{key}.html'
         meta = self.root/'raw'/f'{key}.json'
         if not self.refresh and raw.exists() and meta.exists():
-            info = json.loads(meta.read_text());html=raw.read_text(encoding='utf-8')
+            info = json.loads(meta.read_text());html=raw.read_bytes().decode('utf-8')
             if info.get('sha256') == hashlib.sha256(html.encode()).hexdigest():
                 validate_selection(html,controls or params)
                 self.cached += 1
@@ -420,3 +420,4 @@ def main():
 
 
 if __name__=='__main__':main()
+

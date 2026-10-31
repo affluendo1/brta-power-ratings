@@ -4,6 +4,7 @@ const ROOT=path.resolve(__dirname,'../..');
 const errors=[];const vc=new VirtualConsole();vc.on('jsdomError',e=>errors.push(e.stack));
 const dom=new JSDOM(fs.readFileSync(ROOT+'/index.html','utf8'),{url:'https://affluendo1.github.io/brta-power-ratings/',runScripts:'outside-only',pretendToBeVisual:true,virtualConsole:vc});
 const w=dom.window;
+w.localStorage.setItem('brta-rating-model','RM3');w.localStorage.setItem('brta-rating-centre','1500');
 w.matchMedia=()=>({matches:false,addEventListener(){},removeEventListener(){}});
 w.CSS={supports:()=>true};w.structuredClone=structuredClone;w.TextEncoder=TextEncoder;
 w.IntersectionObserver=class {observe(){}unobserve(){}disconnect(){}};
@@ -54,3 +55,4 @@ w.localStorage.setItem('brta-more-settings-v1',JSON.stringify({black:true}));cli
 
 w.localStorage.setItem('brta-club-pilot','1');let destroyed=0;const mount=w.BRTAClubMap.mountNetwork;w.BRTAClubMap.mountNetwork=async(container,clubs,onSelect,{signal})=>{await tick();if(signal.aborted)throw new w.DOMException('Closed','AbortError');return{destroy(){destroyed++}}};await w.BRTAClubPilot.open();await tick();assert(w.document.querySelector('#club822Search'));assert(w.document.querySelectorAll('[data-club822-id]').length>100);w.history.back();await tick();await tick();assert(!w.document.querySelector('#clubPilot822'));assert.equal(destroyed,1);let release;w.BRTAClubMap.mountNetwork=()=>new Promise(resolve=>release=resolve);const opening=w.BRTAClubPilot.open();await tick();click('#clubPilot822 button[data-82-close]');await tick();release({destroy(){destroyed++}});await opening;assert.equal(destroyed,2);assert(!w.document.querySelector('#clubPilot822'));w.BRTAClubMap.mountNetwork=mount;console.log('Club pilot preserves navigation, browser Back and cleanup when closed during loading');
 if(errors.length)throw Error(errors.join('\n'));console.log('8.2.2 UI checks passed without runtime errors');dom.window.close();})().catch(e=>{console.error(e.stack);console.error(errors);dom.window.close();process.exitCode=1});
+

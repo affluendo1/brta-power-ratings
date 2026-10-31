@@ -1,6 +1,27 @@
 # BRTA Power Ratings
 
-**Current version: 8.2.3.1**
+**Current version: 8.3**
+
+The default model is **RM4.1 Ensemble** (experimental), with **RM4a**, **RM4b**,
+**RM3** and **RM3b** available in Settings. Existing explicit model preferences
+are retained. Ratings default to a **2000** centre; choose **1500** in Settings.
+This is only a display offset: it changes no ordering, uncertainty width or forecast.
+RM4.1 uses RM4b leaderboard ratings with a separate frozen prediction blend.
+
+Prediction Centre adds upcoming-fixture entry points, a lineup-dependent outlook,
+close-rubber counts, a closest-match projection, clickable likely scores and saved
+simulation order. Simulations sample the same calibrated score distribution used
+by the projected probabilities. Outcomes are conditional on selected players;
+team probabilities assume independent rubbers.
+
+Share cards are now **results only**. **Save as default** remembers the card’s
+ratio, font, colour, background, order and detail choices on this device.
+
+See [RM4 methodology and release evidence](RM4_METHODOLOGY.md) for the exact
+models, frozen weights, external evaluation, transfer limits and reproduction
+checks. Better probability scores are the demonstrated benefit; winner accuracy
+did not improve on the reserved WDTA sample.
+
 
 Match tiebreaks use bracketed point scores when available. Legacy TROLS outcome-only
 deciders use `[TB W]` / `[TB L]` from the home side’s perspective, with no invented
@@ -503,3 +524,4 @@ To repeat the historical score correction, run
 `python -m scraper.migrate_match_tiebreaks --build`, then regenerate current data
 and the archive search indexes. The migration is idempotent and preserves source
 scores. Add `--report /path/to/report.json` to save a local correction report.
+

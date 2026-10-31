@@ -1,0 +1,33 @@
+const {JSDOM,VirtualConsole}=require('jsdom');
+const fs=require('fs'),path=require('path'),vm=require('vm');
+const ROOT=path.resolve(__dirname,'../..');
+const errors=[];const vc=new VirtualConsole();vc.on('jsdomError',e=>errors.push(e.stack));
+const dom=new JSDOM(fs.readFileSync(ROOT+'/index.html','utf8'),{url:'https://affluendo1.github.io/brta-power-ratings/',runScripts:'outside-only',pretendToBeVisual:true,virtualConsole:vc});
+const w=dom.window;
+
+w.matchMedia=()=>({matches:false,addEventListener(){},removeEventListener(){}});
+w.CSS={supports:()=>true};w.structuredClone=structuredClone;w.TextEncoder=TextEncoder;
+w.IntersectionObserver=class {observe(){}unobserve(){}disconnect(){}};
+w.ResizeObserver=class {observe(){}disconnect(){}};
+Object.defineProperty(w.HTMLElement.prototype,'inert',{get(){return this.hasAttribute('inert')},set(value){this.toggleAttribute('inert',!!value)}});
+w.HTMLElement.prototype.getClientRects=function(){return this.closest('.hidden,[hidden]')?[]:[{width:100,height:50}]};
+w.HTMLElement.prototype.scrollIntoView=function(){};
+w.Element.prototype.getAnimations=()=>[];w.document.getAnimations=()=>[];
+w.Element.prototype.animate=function(){return{finished:Promise.resolve(),cancel(){},finish(){}}};
+const canvas={clearRect(){},fillRect(){},scale(){},stroke(){},beginPath(){},moveTo(){},lineTo(){},fillText(){},measureText:s=>({width:String(s).length*12}),save(){},restore(){},translate(){},rotate(){}};
+w.HTMLCanvasElement.prototype.getContext=()=>canvas;w.HTMLMediaElement.prototype.play=()=>Promise.resolve();w.HTMLMediaElement.prototype.pause=function(){};w.HTMLMediaElement.prototype.load=function(){};
+w.confirm=()=>true;
+w.localStorage.setItem('brta-following-v1',JSON.stringify({pins:[null,{},false],pending:[null,{}]}));
+w.fetch=async url=>{const file=path.join(ROOT,new URL(url,w.location.href).pathname.replace('/brta-power-ratings/',''));if(!fs.existsSync(file))return {ok:false,status:404,json:async()=>null};return{ok:true,json:async()=>JSON.parse(fs.readFileSync(file,'utf8'))}};
+w.Worker=class{postMessage({data,model}){setTimeout(()=>{try{const result=model.startsWith('RM4')?require('../../web/models/rm4-engine').recalculate(data,model,require('../../web/models/rm4-frozen.json')):require('../../web/models/layout-model').recalculate(data,model,require('../../web/models/custom-section-model'));this.onmessage?.({data:{data:result}})}catch(error){this.onmessage?.({data:{error:error.message}})}},0)}terminate(){}};
+const ctx=dom.getInternalVMContext();
+for(const s of [...w.document.scripts]){try{vm.runInContext(s.src?fs.readFileSync(path.join(ROOT,new URL(s.src).pathname.replace('/brta-power-ratings/','')),'utf8'):s.textContent,ctx,{filename:s.src||'bootstrap'})}catch(e){errors.push(e.stack)}}
+w.addEventListener('error',e=>errors.push(e.error?.stack||e.message));
+const tick=()=>new Promise(r=>setTimeout(r,25));
+(async()=>{const assert=require('node:assert/strict'),run=s=>vm.runInContext(s,ctx),click=s=>{const n=w.document.querySelector(s);assert(n,'Missing '+s);n.click()},wait=async()=>{for(let i=0;i<30;i++){await tick();if(!w.document.body.classList.contains('section-loading'))return}throw Error('Section did not finish loading')};await wait();
+assert.equal(run('selectedRatingModel()'),'RM4.1 Ensemble');assert.equal(run('D.meta.ratingCentre'),2000);assert.equal(run('D.meta.predictionModel'),'RM4.1 Ensemble');assert(w.document.querySelectorAll('#ratingBody [data-player]').length>20);const first=run('D.singles[0].rating');
+click('#settingsBtn');const centre=w.document.querySelector('#settingsContent [data-rm4-centre]');centre.value='1500';centre.dispatchEvent(new w.Event('change',{bubbles:true}));await wait();assert.equal(run('D.singles[0].rating'),first-500);assert.equal(w.localStorage.getItem('brta-rating-centre'),'1500');
+for(const model of ['RM4a','RM4b','RM3','RM3b','RM4.1 Ensemble']){const select=w.document.querySelector('#settingsContent [data-rm4-model]');select.value=model;select.dispatchEvent(new w.Event('change',{bubbles:true}));await wait();assert.equal(run('selectedRatingModel()'),model);assert.equal(run('D.meta.ratingCentre'),1500);assert(run('D.singles.every(r=>Number.isFinite(r.rating)&&Number.isFinite(r.se))'));}
+run("close('#settingsOverlay');openPredictionHome()");assert(w.document.querySelector('.outlook-fixture'));click('.outlook-fixture');await tick();assert(w.document.querySelector('.prediction-outlook'));const prediction=run('predictionMath(selectedPrediction.home,selectedPrediction.away)');assert(Math.abs(prediction.homeWin+prediction.awayWin+prediction.draw-1)<1e-9);assert(prediction.rubbers.every(r=>r.forecastDistribution?.length));click('[data-prediction-estimate]');assert(w.document.querySelector('[data-prediction-estimate]').textContent.startsWith('~ '));click('[data-run-simulation]');assert(run('selectedPrediction.simulation.results.every(r=>Number.isFinite(r.homeGames))'));run("close('#predictionOverlay');openProfile(D.singles[0].player)");await tick();assert(!w.document.querySelector('[data-share82-player]'));run("close('#profileOverlay');BRTATeamLabUI.open(D.teams[0].team)");await tick();assert(!w.document.querySelector('[data-share82-team]'));
+run("BRTAShareCards.open('result',D.results.flatMap(r=>r.fixtures).find(f=>f.status==='Completed').fixtureId)");await tick();for(const [id,v]of [['Ratio','story'],['Font','Georgia'],['Order','singles']]){const input=w.document.querySelector('#share82'+id);input.value=v;input.dispatchEvent(new w.Event('input',{bubbles:true}))}const details=w.document.querySelector('#share82Details');details.checked=false;details.dispatchEvent(new w.Event('input',{bubbles:true}));click('#share82SaveDefaults');assert(w.document.querySelector('#share82Status').textContent.includes('Saved'));run("BRTA82.dismiss();BRTAShareCards.open('result',D.results.flatMap(r=>r.fixtures).find(f=>f.status==='Completed').fixtureId)");await tick();assert.equal(w.document.querySelector('#share82Ratio').value,'story');assert.equal(w.document.querySelector('#share82Font').value,'Georgia');assert.equal(w.document.querySelector('#share82Details').checked,false);assert.equal(w.document.querySelector('#share82Canvas').height,w.BRTARefinement.layouts.story.h);
+run("BRTA82.dismiss();openLayoutOverlay('methodology')");assert(w.document.querySelector('#layoutOverlay').textContent.includes('511/751'));if(errors.length)throw Error(errors.join('\n'));console.log('8.3 UI: default ensemble, five model switches, saved centre, fixture outlook, score/simulation, results-only cards, remembered defaults and honest methodology passed.');dom.window.close()})().catch(e=>{console.error(e.stack);console.error(errors);dom.window.close();process.exitCode=1});

@@ -1,6 +1,19 @@
 // Website releases, newest first. Routine result checks are not website releases.
 window.BRTA_RELEASES = Object.freeze([
   {
+  "version": "8.3",
+  "title": "RM4 & Prediction Outlook",
+  "size": "large",
+  "committedAt": "2026-10-31T02:41:52.034768+00:00",
+  "changes": [
+    "Added experimental RM4a, RM4b and RM4.1 Ensemble, with RM3 still available.",
+    "Revamped Prediction Centre with fixture outlooks, score estimates and simulation order.",
+    "Choose a 2000 or 1500 rating centre in Settings.",
+    "Result cards can remember your defaults; removed player and team share cards.",
+    "Updated methodology and fixed model, display and collector issues."
+  ]
+},
+  {
     "version": "8.2.3.1",
     "size": "tiny",
     "committedAt": "2026-10-30T12:46:47.583615+00:00",
@@ -547,3 +560,4 @@ window.BRTA_RELEASES = Object.freeze([
     "title": "Launch"
   }
 ]);
+

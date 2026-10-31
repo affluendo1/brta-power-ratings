@@ -85,6 +85,8 @@
     return {...rubber,homeWon:homeSets>awaySets,score:scores.join(' '),homeGames:sets.reduce((n,s)=>n+s.homeGames,0),awayGames:sets.reduce((n,s)=>n+s.awayGames,0),homeSets,awaySets};
   }
   function sampleRubber(rubber,{format='sets',greenBall=false,rng=Math.random}={}){
+    if(rubber.forecastDistribution?.length){let value=rng(),row=rubber.forecastDistribution.at(-1);for(const candidate of rubber.forecastDistribution){value-=candidate.probability;if(value<=0){row=candidate;break}}return{...rubber,...row,homeWon:row.homeWin,score:row.score}}
+
     if(rubber.bestOf)return sampleConfiguredRubber(rubber,rng);
     const p=clamp01(rubber.gameProbability);
     if(format!=='rubbers'){
@@ -110,13 +112,37 @@
       homeGames:first.homeGames+second.homeGames,awayGames:first.awayGames+second.awayGames,
       homeSets,awaySets};
   }
+  function mostLikelyScore(rubber,{format='sets',greenBall=false}={}){
+    if(rubber.forecastDistribution?.length)return rubber.forecastDistribution.reduce((a,b)=>b.probability>a.probability?b:a);
+    const p=clamp01(rubber.gameProbability),target=rubber.targetGames||(format==='rubbers'&&/^Doubles/.test(rubber.label)?8:6),bestOf=rubber.bestOf||(format==='rubbers'&&!/^Doubles/.test(rubber.label)?3:1);
+    const scores=[];
+    for(let lost=0;lost<=target-2;lost++){
+      scores.push({score:target+'–'+lost,homeWin:true,probability:choose(target-1+lost,lost)*p**target*(1-p)**lost});
+      scores.push({score:lost+'–'+target,homeWin:false,probability:choose(target-1+lost,lost)*(1-p)**target*p**lost});
+    }
+    const level=choose(2*(target-1),target-1)*(p*(1-p))**(target-1);
+    if(greenBall){scores.push({score:target+'–'+(target-1),homeWin:true,probability:level*p},{score:(target-1)+'–'+target,homeWin:false,probability:level*(1-p)})}
+    else for(const win of [true,false]){const q=win?p:1-p;scores.push({score:(win?target+1:target-1)+'–'+(win?target-1:target+1),homeWin:win,probability:level*q*q},{score:(win?target+1:target)+'–'+(win?target:target+1),homeWin:win,probability:level*2*p*(1-p)*q})}
+    if(bestOf===1)return scores.reduce((a,b)=>b.probability>a.probability?b:a);
+    let best=null;const consider=row=>{if(!best||row.probability>best.probability)best=row};
+    for(const first of scores)for(const second of scores){const probability=first.probability*second.probability,score=first.score+' '+second.score;
+      if(first.homeWin===second.homeWin)consider({score,homeWin:first.homeWin,probability});
+      else if(rubber.matchTiebreak===false)for(const third of scores)consider({score:score+' '+third.score,homeWin:third.homeWin,probability:probability*third.probability});
+      else for(const win of [true,false])consider({score:score+(win?' [TB W]':' [TB L]'),homeWin:win,probability:probability*(win?p:1-p)});
+    }
+    return best;
+  }
+  function orderRubbers(rubbers,order='doubles-first'){
+    const rank=row=>/^Doubles/.test(row.label)?(order==='singles-first'?1:0):(order==='singles-first'?0:1);
+    return rubbers.slice().sort((a,b)=>rank(a)-rank(b));
+  }
   function simulateTie(rubbers,{format='sets',greenBall=false,custom=false,setWinsDecideTies=false,rng=Math.random}={}){
     const results=rubbers.map(r=>sampleRubber(r,{format,greenBall,rng}));
     const homeRubbers=results.filter(r=>r.homeWon).length,awayRubbers=results.length-homeRubbers;
     const homeGames=results.reduce((n,r)=>n+r.homeGames,0),awayGames=results.reduce((n,r)=>n+r.awayGames,0);
     const homeSets=results.reduce((n,r)=>n+r.homeSets,0),awaySets=results.reduce((n,r)=>n+r.awaySets,0);
     // Sets ties use rubber wins, then games. Rubbers has three rubbers.
-    const bySets=setWinsDecideTies||custom&&format==='rubbers',decidingHome=bySets?homeSets:homeRubbers,decidingAway=bySets?awaySets:awayRubbers;
+    const bySets=setWinsDecideTies||format==='rubbers',decidingHome=bySets?homeSets:homeRubbers,decidingAway=bySets?awaySets:awayRubbers;
     const winner=decidingHome>decidingAway?1:decidingAway>decidingHome?-1:
       homeGames>awayGames?1:awayGames>homeGames?-1:0;
     const base=format==='rubbers'?(custom?1:2):4,drawBase=base/2,homeScore=custom&&format!=='rubbers'?homeRubbers:homeSets,awayScore=custom&&format!=='rubbers'?awayRubbers:awaySets;
@@ -174,5 +200,8 @@
     sampleSet,
     sampleRubber,
     simulateTie,
+    mostLikelyScore,
+    orderRubbers,
   };
 });
+

@@ -4,6 +4,7 @@ const ROOT=path.resolve(__dirname,'../..');
 const errors=[];const vc=new VirtualConsole();vc.on('jsdomError',e=>errors.push(e.stack));
 const dom=new JSDOM(fs.readFileSync(ROOT+'/index.html','utf8'),{url:'https://affluendo1.github.io/brta-power-ratings/',runScripts:'outside-only',pretendToBeVisual:true,virtualConsole:vc});
 const w=dom.window;
+w.localStorage.setItem('brta-rating-model','RM3');w.localStorage.setItem('brta-rating-centre','1500');
 w.matchMedia=()=>({matches:false,addEventListener(){},removeEventListener(){}});
 w.CSS={supports:()=>true};w.structuredClone=structuredClone;w.TextEncoder=TextEncoder;
 w.IntersectionObserver=class {observe(){}unobserve(){}disconnect(){}};
@@ -57,3 +58,4 @@ vm.runInContext("BRTATeamLabUI.open(D.results[0].fixtures[0].home)",ctx);await t
 click('[data-team822-expand]');await tick();assert(w.document.querySelector('#teamLabContent').classList.contains('team823-expanded'));
 console.log('Rubbers records, honest outcome-only scorecards and full Team Explorer expansion passed');
 if(errors.length)throw Error(errors.join('\n'));console.log('No script/runtime errors');dom.window.close();})().catch(e=>{console.error(e.stack);console.error(errors);dom.window.close();process.exitCode=1});
+

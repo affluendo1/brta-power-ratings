@@ -1,2 +1,2 @@
-importScripts('../models/score-formats.js?v=823','../models/custom-section-model.js?v=823','../models/layout-model.js?v=823');
-onmessage=event=>{try{postMessage({data:BRTALayoutModel.recalculate(event.data.data,event.data.model,CustomSectionModel)})}catch(error){postMessage({error:error.message})}};
+importScripts('../models/score-formats.js?v=83','../models/custom-section-model.js?v=83','../models/layout-model.js?v=83','../models/rm4.js?v=83','../models/rm4-engine.js?v=83');
+onmessage=async event=>{try{const {data,model}=event.data;let result;if(model.startsWith('RM4')){const response=await fetch('../models/rm4-frozen.json?v=83');if(!response.ok)throw Error('Frozen prediction model unavailable.');result=BRTARM4Engine.recalculate(data,model,await response.json())}else result=BRTALayoutModel.recalculate(data,model,CustomSectionModel);postMessage({data:result})}catch(error){postMessage({error:error.message})}};

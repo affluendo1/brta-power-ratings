@@ -1,4 +1,4 @@
-@import url("./site.css?v=823");
+@import url("./site.css?v=83");
 :root{
  --display-font:"Arial Narrow",Arial,Helvetica,sans-serif;
  --body-font:Arial,Helvetica,sans-serif;
@@ -143,3 +143,4 @@ html[data-theme="dark"]{
  font-size:10px;
  font-weight:500;
 }
+

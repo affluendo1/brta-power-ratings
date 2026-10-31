@@ -17,11 +17,11 @@ function matches(data,name,kind='singles',through=null){const isPair=kind==='pai
    const home=isPair?key(r.home)===key(name):members(r.home).includes(name),away=isPair?key(r.away)===key(name):members(r.away).includes(name);if(!home&&!away)continue;
    const own=home?r.home:r.away,opp=home?r.away:r.home,won=key(r.winner)===key(own),sets=Scores.parse(r.score,{outcomeCode:Scores.outcomeCode(data,r.type)});if(!sets.length)continue;
    const gf=sets.filter(x=>!x.mt).reduce((s,x)=>s+(home?x.h:x.a),0),ga=sets.filter(x=>!x.mt).reduce((s,x)=>s+(home?x.a:x.h),0),pre=round-1;
-   const oppPower=double?pairPower(data,opp,pre).rating:row(data,'singles',opp,pre)?.rating??1500,ownPower=double?pairPower(data,own,pre).rating:row(data,'singles',name,pre)?.rating??1500;
+   const oppPower=double?pairPower(data,opp,pre).rating:row(data,'singles',opp,pre)?.rating??(data.meta?.ratingCentre??1500),ownPower=double?pairPower(data,own,pre).rating:row(data,'singles',name,pre)?.rating??(data.meta?.ratingCentre??1500);
    const currentOpp=double?pairPower(data,opp,through).rating:row(data,'singles',opp,through)?.rating,currentOwn=double?pairPower(data,own,through).rating:row(data,'singles',name,through)?.rating;
-   const gap=(oppPower??1500)-(ownPower??1500),higher=gap?gap>0:(currentOpp??1500)!==(currentOwn??1500)?currentOpp>currentOwn:(double?key(opp):opp).localeCompare(double?key(own):name)<0;
+   const gap=(oppPower??(data.meta?.ratingCentre??1500))-(ownPower??(data.meta?.ratingCentre??1500)),higher=gap?gap>0:(currentOpp??(data.meta?.ratingCentre??1500))!==(currentOwn??(data.meta?.ratingCentre??1500))?currentOpp>currentOwn:(double?key(opp):opp).localeCompare(double?key(own):name)<0;
    const opponent=double?pairPower(data,opp,through):{rating:currentOpp,fallback:false};
-   result.push({round,date:f.date||group.date,fixtureId:f.fixtureId,opp,partner:double?members(own).find(n=>n!==name):null,pair:key(own),won,gf,ga,score:home?Scores.format(sets):Scores.flip(Scores.format(sets)),sets:sets.map(s=>home?{...s}:{...s,h:s.a,a:s.h,winner:s.winner==='home'?'away':s.winner==='away'?'home':null}),multiSet:sets.filter(s=>!s.mt).length>1,oppRating:opponent.rating,fallback:opponent.fallback,preOpponent:oppPower??1500,preOwn:ownPower??1500,gap,higher,position:Number(String(r.position).match(/\d+/)?.[0])||1,team:home?f.home:f.away,emergency:!!r[home?'homeEmergency':'awayEmergency'],performance:Math.round((oppPower??1500)+450*Math.log((gf+.5)/(ga+.5))),close:data.format==='rubbers'?sets.length>=3||sets.some(x=>x.mt):Math.abs(gf-ga)<=2});
+   result.push({round,date:f.date||group.date,fixtureId:f.fixtureId,opp,partner:double?members(own).find(n=>n!==name):null,pair:key(own),won,gf,ga,score:home?Scores.format(sets):Scores.flip(Scores.format(sets)),sets:sets.map(s=>home?{...s}:{...s,h:s.a,a:s.h,winner:s.winner==='home'?'away':s.winner==='away'?'home':null}),multiSet:sets.filter(s=>!s.mt).length>1,oppRating:opponent.rating,fallback:opponent.fallback,preOpponent:oppPower??(data.meta?.ratingCentre??1500),preOwn:ownPower??(data.meta?.ratingCentre??1500),gap,higher,position:Number(String(r.position).match(/\d+/)?.[0])||1,team:home?f.home:f.away,emergency:!!r[home?'homeEmergency':'awayEmergency'],performance:Math.round((oppPower??(data.meta?.ratingCentre??1500))+450*Math.log((gf+.5)/(ga+.5))),close:data.format==='rubbers'?sets.length>=3||sets.some(x=>x.mt):Math.abs(gf-ga)<=2});
   }
  }return result.sort((a,b)=>a.round-b.round||a.position-b.position);
 }
@@ -37,3 +37,4 @@ function pressure(ms){
 function discipline(data,pair=false){return pair?'pairs':Scores.doublesOnly(data)?'doublesPlayers':'singles'}
 const api={pressure,doublesOnly:Scores.doublesOnly,discipline,key,members,rows,row,rank,pairPower,matches,contextData,schedule,history};root.BRTALabModel=api;if(typeof module!=='undefined')module.exports=api;
 })(typeof window==='undefined'?globalThis:window);
+
