@@ -127,3 +127,12 @@
 @media(max-height:720px){
  .fixture-forecast .overlay-title{padding-bottom:6px;margin-bottom:6px}.fixture-forecast .overlay-title h2{font-size:20px}.fixture-forecast .prediction-summary{margin:6px 0;gap:5px}.fixture-forecast .prediction-summary>div{padding:6px 8px}.fixture-forecast .prediction-summary b{font-size:20px}.fixture-forecast .prediction-summary span{font-size:10px}.fixture-forecast .projection-section-heading{display:none}.fixture-forecast .prediction-rubbers{gap:4px}.fixture-rubber .prediction-rubber{padding:6px 8px;min-height:44px;font-size:14px}.fixture-rubber .projection822-side,.fixture-rubber .projection822-side .person{line-height:1.2}.fixture-rubber .prediction-estimate{min-height:32px;padding:6px 2px}.fixture-forecast .simulation-actions{margin:7px 0}.fixture-forecast .simulation-actions .button,.prediction-lineups>summary{min-height:36px;padding-block:8px}.prediction-lineups{margin-top:7px}
 }
+
+.fixture-forecast .overlay-title h2{margin-right:0}
+@media(max-width:360px){
+ .fixture-rubber .prediction-rubber{grid-template-columns:minmax(0,1fr) 70px;grid-template-areas:'home chance' 'away chance';gap:2px 8px;padding:6px 8px;min-height:46px;font-size:14px}
+ .fixture-rubber .prediction-rubber .projection822-side:last-child{text-align:left}
+ .fixture-rubber .prediction-rubber .projection822-side .person{overflow-wrap:normal;word-break:normal}
+ .fixture-controls{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:8px;margin-top:8px;align-items:start}
+ .fixture-controls .simulation-actions,.fixture-controls .prediction-lineups{margin:0}.fixture-controls .simulation-actions .button{min-height:40px;padding:8px;font-size:12px;width:100%}.fixture-controls .prediction-lineups>summary{min-height:40px;padding:8px 10px;font-size:12px}.fixture-controls .prediction-lineups[open]{grid-column:1/-1}.fixture-controls:has(.prediction-lineups[open]){display:block}.fixture-controls:has(.prediction-lineups[open]) .simulation-actions{margin-bottom:8px}
+}
