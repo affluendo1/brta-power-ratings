@@ -15,9 +15,8 @@ and introduces eight robust distribution-based bands shared by ranked and provis
 entries. Extras → More Settings can unlock the original RM2 likelihood, restored
 from commit `6388eeb`; it then appears in Methodology and the model selector.
 
-Prediction Centre adds upcoming-fixture entry points, a lineup-dependent outlook,
-close-rubber counts, clickable likely scores and saved
-simulation order. Simulations sample the same calibrated score distribution used
+Prediction Centre adds upcoming-fixture entry points, a lineup-dependent outlook and clickable likely scores.
+The fixture overview lists singles first, with lineup editing collapsed. Simulations sample the same calibrated score distribution used
 by the projected probabilities. Outcomes are conditional on selected players;
 team probabilities assume independent rubbers.
 

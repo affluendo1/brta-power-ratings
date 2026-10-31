@@ -1,0 +1,284 @@
+{
+  "design": "Four small predeclared parameter alternatives; rounds 4\u20137 select, rounds 8+ assess; strictly earlier dates and rounds; common support within discipline. Frozen probability temperatures retained. No player-specific targets. Already-inspected seasons, not untouched evidence.",
+  "variants": {
+    "RM4a": {
+      "l2": 6,
+      "rho": 0.75,
+      "native": true
+    },
+    "RM4a \u00b7 weaker coupling": {
+      "l2": 6,
+      "rho": 0.65,
+      "native": true
+    },
+    "RM4a \u00b7 lower shrinkage": {
+      "l2": 5,
+      "rho": 0.75,
+      "native": true
+    },
+    "RM4b": {
+      "l2": 3,
+      "rho": 0.95,
+      "native": false
+    },
+    "RM4b \u00b7 weaker coupling": {
+      "l2": 3,
+      "rho": 0.9,
+      "native": false
+    },
+    "RM4b \u00b7 higher shrinkage": {
+      "l2": 3.5,
+      "rho": 0.95,
+      "native": false
+    }
+  },
+  "cohorts": {
+    "early": {
+      "RM4a": {
+        "n": 340,
+        "correct": 232,
+        "logLoss": 0.5677179189086087,
+        "brier": 0.19489731544918457
+      },
+      "RM4a \u00b7 weaker coupling": {
+        "n": 340,
+        "correct": 235,
+        "logLoss": 0.5688055110492539,
+        "brier": 0.1952792160294378
+      },
+      "RM4a \u00b7 lower shrinkage": {
+        "n": 340,
+        "correct": 233,
+        "logLoss": 0.5666443860671472,
+        "brier": 0.1947970410243316
+      },
+      "RM4b": {
+        "n": 340,
+        "correct": 241,
+        "logLoss": 0.5627318677551265,
+        "brier": 0.19248607019576616
+      },
+      "RM4b \u00b7 weaker coupling": {
+        "n": 340,
+        "correct": 239,
+        "logLoss": 0.562947972468867,
+        "brier": 0.19256653135666066
+      },
+      "RM4b \u00b7 higher shrinkage": {
+        "n": 340,
+        "correct": 241,
+        "logLoss": 0.5652091402737253,
+        "brier": 0.1931594142839367
+      }
+    },
+    "later": {
+      "RM4a": {
+        "n": 355,
+        "correct": 233,
+        "logLoss": 0.5920531244422227,
+        "brier": 0.20639244599387296
+      },
+      "RM4a \u00b7 weaker coupling": {
+        "n": 355,
+        "correct": 234,
+        "logLoss": 0.5913081093915448,
+        "brier": 0.20619223456540028
+      },
+      "RM4a \u00b7 lower shrinkage": {
+        "n": 355,
+        "correct": 233,
+        "logLoss": 0.5940934556171327,
+        "brier": 0.20728333711882108
+      },
+      "RM4b": {
+        "n": 355,
+        "correct": 235,
+        "logLoss": 0.5808208698856243,
+        "brier": 0.2013303225025577
+      },
+      "RM4b \u00b7 weaker coupling": {
+        "n": 355,
+        "correct": 233,
+        "logLoss": 0.5793849528162578,
+        "brier": 0.2008259577098791
+      },
+      "RM4b \u00b7 higher shrinkage": {
+        "n": 355,
+        "correct": 235,
+        "logLoss": 0.5819281816859327,
+        "brier": 0.20152143088306831
+      }
+    },
+    "laterSingles": {
+      "RM4a": {
+        "n": 245,
+        "correct": 164,
+        "logLoss": 0.5786582798898445,
+        "brier": 0.2003886816741809
+      },
+      "RM4a \u00b7 weaker coupling": {
+        "n": 245,
+        "correct": 162,
+        "logLoss": 0.5794624400858733,
+        "brier": 0.20090520804760617
+      },
+      "RM4a \u00b7 lower shrinkage": {
+        "n": 245,
+        "correct": 164,
+        "logLoss": 0.5814626882152598,
+        "brier": 0.20154616772319553
+      },
+      "RM4b": {
+        "n": 245,
+        "correct": 167,
+        "logLoss": 0.5629884639629075,
+        "brier": 0.19374575729338342
+      },
+      "RM4b \u00b7 weaker coupling": {
+        "n": 245,
+        "correct": 166,
+        "logLoss": 0.5629582575060103,
+        "brier": 0.19388939055074803
+      },
+      "RM4b \u00b7 higher shrinkage": {
+        "n": 245,
+        "correct": 167,
+        "logLoss": 0.564228656186961,
+        "brier": 0.19394085594778282
+      }
+    },
+    "laterDoubles": {
+      "RM4a": {
+        "n": 110,
+        "correct": 69,
+        "logLoss": 0.6218870963997921,
+        "brier": 0.21976446652409545
+      },
+      "RM4a \u00b7 weaker coupling": {
+        "n": 110,
+        "correct": 72,
+        "logLoss": 0.6176916455723593,
+        "brier": 0.21796788453685054
+      },
+      "RM4a \u00b7 lower shrinkage": {
+        "n": 110,
+        "correct": 69,
+        "logLoss": 0.62222561937585,
+        "brier": 0.22006157804544182
+      },
+      "RM4b": {
+        "n": 110,
+        "correct": 68,
+        "logLoss": 0.6205385012589475,
+        "brier": 0.21822321774117365
+      },
+      "RM4b \u00b7 weaker coupling": {
+        "n": 110,
+        "correct": 67,
+        "logLoss": 0.6159716832799929,
+        "brier": 0.2162755845643069
+      },
+      "RM4b \u00b7 higher shrinkage": {
+        "n": 110,
+        "correct": 68,
+        "logLoss": 0.6213498521154611,
+        "brier": 0.2184054386934768
+      }
+    },
+    "laterSets": {
+      "RM4a": {
+        "n": 288,
+        "correct": 187,
+        "logLoss": 0.5919455564282715,
+        "brier": 0.20712501874293274
+      },
+      "RM4a \u00b7 weaker coupling": {
+        "n": 288,
+        "correct": 189,
+        "logLoss": 0.5919696029617633,
+        "brier": 0.20714698218639246
+      },
+      "RM4a \u00b7 lower shrinkage": {
+        "n": 288,
+        "correct": 187,
+        "logLoss": 0.5946702306990574,
+        "brier": 0.2083565998355289
+      },
+      "RM4b": {
+        "n": 288,
+        "correct": 190,
+        "logLoss": 0.5841287453690709,
+        "brier": 0.2026660571724131
+      },
+      "RM4b \u00b7 weaker coupling": {
+        "n": 288,
+        "correct": 188,
+        "logLoss": 0.5836147223686325,
+        "brier": 0.20254160818032016
+      },
+      "RM4b \u00b7 higher shrinkage": {
+        "n": 288,
+        "correct": 190,
+        "logLoss": 0.584818477622409,
+        "brier": 0.20268470360655247
+      }
+    },
+    "laterRubbers": {
+      "RM4a": {
+        "n": 67,
+        "correct": 46,
+        "logLoss": 0.5925155063529379,
+        "brier": 0.20324347656507716
+      },
+      "RM4a \u00b7 weaker coupling": {
+        "n": 67,
+        "correct": 45,
+        "logLoss": 0.588464674343445,
+        "brier": 0.20208824479158324
+      },
+      "RM4a \u00b7 lower shrinkage": {
+        "n": 67,
+        "correct": 46,
+        "logLoss": 0.5916141836231888,
+        "brier": 0.20266990932162968
+      },
+      "RM4b": {
+        "n": 67,
+        "correct": 45,
+        "logLoss": 0.5666019424343923,
+        "brier": 0.19558865705601552
+      },
+      "RM4b \u00b7 weaker coupling": {
+        "n": 67,
+        "correct": 45,
+        "logLoss": 0.5612032568299313,
+        "brier": 0.1934512213593256
+      },
+      "RM4b \u00b7 higher shrinkage": {
+        "n": 67,
+        "correct": 45,
+        "logLoss": 0.5695042230336161,
+        "brier": 0.1965210944000315
+      }
+    }
+  },
+  "sections": [
+    "UA009",
+    "UA001",
+    "AA003",
+    "AA008",
+    "AA018",
+    "UA015"
+  ],
+  "RM4a": {
+    "selectedOnEarlierRounds": "RM4a \u00b7 lower shrinkage",
+    "laterLogLossDifference": 0.0020403311749099817,
+    "laterCorrectDifference": 0
+  },
+  "RM4b": {
+    "selectedOnEarlierRounds": "RM4b",
+    "laterLogLossDifference": 0,
+    "laterCorrectDifference": 0
+  },
+  "decision": "Retain both original cores. RM4a lower shrinkage was selected on earlier rounds but worsened later log loss by 0.00204 with unchanged winner count. Original RM4b won the earlier selection. Small later-only improvements in other variants are not a basis for retuning after looking at their evaluation results. Ensemble remains frozen."
+}

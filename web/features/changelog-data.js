@@ -1,31 +1,28 @@
 // Website releases, newest first. Routine result checks are not website releases.
 window.BRTA_RELEASES = Object.freeze([
   {
-  "version": "8.3.1",
-  "title": "A clearer view",
-  "size": "small",
-  "committedAt": "2026-10-31T07:33:56.769948+00:00",
-  "changes": [
-    "Redesigned Methodology and BRTA Rules with quick guides and expandable detail.",
-    "Improved mobile predictions, readable player names, doubles spacing and vertical weekly lineups.",
-    "Eight distribution-aware performance bands, with provisional players grouped correctly.",
-    "Expanded the Ensemble Power scale consistently across ratings, uncertainty and history.",
-    "Restored RM2 from the original source as a More Settings unlock."
-  ]
-},
+    "version": "8.3.1",
+    "title": "A clearer view",
+    "size": "small",
+    "committedAt": "2026-10-31T07:33:56.769948+00:00",
+    "changes": [
+      "Refreshed guides and a cleaner, more readable mobile experience.",
+      "A clearer Prediction Centre with easier lineup changes.",
+      "Improved rating displays, performance bands and reliability.",
+      "A few more things to discover in Extras."
+    ]
+  },
   {
-  "version": "8.3",
-  "title": "RM4 & Prediction Outlook",
-  "size": "large",
-  "committedAt": "2026-10-31T02:41:52.034768+00:00",
-  "changes": [
-    "Added experimental RM4a, RM4b and RM4.1 Ensemble, with RM3 still available.",
-    "Revamped Prediction Centre with fixture outlooks, score estimates and simulation order.",
-    "Choose a 2000 or 1500 rating centre in Settings.",
-    "Result cards can remember your defaults; removed player and team share cards.",
-    "Updated methodology and fixed model, display and collector issues."
-  ]
-},
+    "version": "8.3",
+    "title": "RM4 & Prediction Outlook",
+    "size": "large",
+    "committedAt": "2026-10-31T02:41:52.034768+00:00",
+    "changes": [
+      "New rating models and more ways to explore upcoming matches.",
+      "More control over rating preferences and result sharing.",
+      "Updated guides and general fixes."
+    ]
+  },
   {
     "version": "8.2.3.1",
     "size": "tiny",
@@ -573,4 +570,3 @@ window.BRTA_RELEASES = Object.freeze([
     "title": "Launch"
   }
 ]);
-

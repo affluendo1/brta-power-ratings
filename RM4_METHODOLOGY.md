@@ -160,3 +160,26 @@ rounds/dates for every model, with at least three earlier rounds and both single
 players previously seen. Sets 6 favours RM3 on log loss but RM3b/RM4b on winner
 count; Rubbers 1 favours RM4b on both in these small cohorts. This already-inspected
 data was not used to retune coefficients and is not a fresh untouched holdout.
+
+## Small-variation check for 8.3.1
+
+`validation/check_rm4_variants.js` checks four predeclared changes: RM4a rho
+0.65 or L2 5; RM4b rho 0.90 or L2 3.5. Other parameters and probability
+temperatures stay frozen. Six current BRTA sections provide 340 earlier-round
+targets (rounds 4–7) and 355 later targets (rounds 8+), comprising 245 singles
+and 110 doubles later targets. Every fitted snapshot excludes the target date
+and round. These inspected seasons are not a new untouched prospective cohort.
+
+Earlier-round selection chose RM4a L2 5, but later log loss worsened by 0.00204
+with no winner-count gain. Original RM4b won the earlier-round selection.
+Therefore 8.3.1 retains both original parameter sets. Choosing a different
+variant because it looks better only after examining the later outcomes would
+reuse evaluation data. Raw aggregates and the decision are in
+`validation/rm4-variants831.json`. Player-specific ranking examples do not
+serve as tuning targets. A future core change also needs a compatible
+Ensemble calibration/retraining study.
+
+Prediction Centre now lists singles first and removes the cosmetic simulation
+order preference. It does not estimate a psychological carry-over effect from
+an earlier rubber. Lineup editing is collapsed behind its own control; labels
+sit outside matchup cards so probability controls align with the entire row.
