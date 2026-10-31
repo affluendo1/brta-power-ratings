@@ -185,7 +185,7 @@ function renderRatingRoundNotice(){const box=$('#ratingRoundNotice');box.classLi
 function ratingQualified(x,min,type){if(type==='overall')return x.qualified;if(type==='doublesPlayers')return!!x.qualified;return x.matches>=min}
 function bandModel(rows,min,type){return BRTALayoutModel.bands(rows,x=>ratingQualified(x,min,type))}
 
-function renderBandInfo(model){$('#page-ratings').dataset.bandCount=model.names.length;$('#bandInfo').innerHTML=model.bounds.length?'<div class="band-info-head"><b>Performance bands</b></div><div class="band-keys">'+BAND_NAMES.map((n,i)=>'<div class="band-key b'+i+'"><i></i><span><b>'+n+'</b><small>'+model.bounds[i]+'</small></span></div>').join('')+'</div>':''}
+function renderBandInfo(model){$('#page-ratings').dataset.bandCount=model.names?.length||BAND_NAMES.length;$('#bandInfo').innerHTML=model.bounds.length?'<div class="band-info-head"><b>Performance bands</b></div><div class="band-keys">'+BAND_NAMES.map((n,i)=>'<div class="band-key b'+i+'"><i></i><span><b>'+n+'</b><small>'+model.bounds[i]+'</small></span></div>').join('')+'</div>':''}
 function bandDivider(cls,model,colspan=10){const i=Number(cls.slice(1));return'<tr class="band-divider '+cls+'"><td colspan="'+colspan+'"><div><i></i><b>'+BAND_NAMES[i]+'</b><span>'+model.bounds[i]+'</span></div></td></tr>'}
 
 function archiveGlobalRowsFromSection(payload,section){
