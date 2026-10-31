@@ -3,7 +3,7 @@ let layoutOverlayFocus=null;
 const layoutCache=new WeakMap();
 function layoutDefaultCode(){const c=localStorage.getItem('brta-default-competition'),s=localStorage.getItem('brta-default-section');return currentCatalog().find(x=>x.competition_code===c&&(!s||x.section_code===s))?.section_code||''}
 let rm4FrozenPromise=null;
-async function ensureRM4Frozen(){if(!rm4FrozenPromise)rm4FrozenPromise=fetch('web/models/rm4-frozen.json?v=841').then(r=>{if(!r.ok)throw Error('Prediction model unavailable.');return r.json()}).then(b=>window.BRTARM4Frozen=b).catch(e=>{rm4FrozenPromise=null;throw e});return rm4FrozenPromise}
+async function ensureRM4Frozen(){if(!rm4FrozenPromise)rm4FrozenPromise=fetch('web/models/rm4-frozen.json?v=8411').then(r=>{if(!r.ok)throw Error('Prediction model unavailable.');return r.json()}).then(b=>window.BRTARM4Frozen=b).catch(e=>{rm4FrozenPromise=null;throw e});return rm4FrozenPromise}
 function legacyModelUnlocked(model){try{return auxiliaryEnabled()&&JSON.parse(localStorage.getItem('brta-more-settings-v1')||'{}')[model.toLowerCase()]===true}catch{return false}}
 function rm1Unlocked(){return legacyModelUnlocked('RM1')}
 function rm2Unlocked(){return legacyModelUnlocked('RM2')}
@@ -13,7 +13,7 @@ async function layoutApplyModel(data,model=selectedRatingModel()){
  data=BRTAScores.normalise(data);const centre=selectedRatingCentre(),key=model+':'+centre;
  if(layoutCache.get(data)?.model===key)return layoutCache.get(data).result;
  let result=data;if(model==='Automatic'||model.startsWith('RM4'))await ensureRM4Frozen();
- if(model!=='RM3'||data.meta?.ratingModel==='V3B'||data.meta?.needsScoreRefit){result=await new Promise((resolve,reject)=>{const worker=new Worker('web/workers/rating-worker.js?v=841'),timer=setTimeout(()=>{worker.terminate();reject(Error('Rating calculation timed out. Try RM3 in Settings.'))},90000);const finish=()=>{clearTimeout(timer);worker.terminate()};worker.onmessage=e=>{finish();e.data.error?reject(Error(e.data.error)):resolve(e.data.data)};worker.onerror=e=>{finish();reject(Error(e.message||'Could not calculate ratings.'))};worker.postMessage({data,model})})}
+ if(model!=='RM3'||data.meta?.ratingModel==='V3B'||data.meta?.needsScoreRefit){result=await new Promise((resolve,reject)=>{const worker=new Worker('web/workers/rating-worker.js?v=8411'),timer=setTimeout(()=>{worker.terminate();reject(Error('Rating calculation timed out. Try RM3 in Settings.'))},90000);const finish=()=>{clearTimeout(timer);worker.terminate()};worker.onmessage=e=>{finish();e.data.error?reject(Error(e.data.error)):resolve(e.data.data)};worker.onerror=e=>{finish();reject(Error(e.message||'Could not calculate ratings.'))};worker.postMessage({data,model})})}
  if(model!=='Automatic')result=BRTARM4Engine.display({...result,meta:{...result.meta,predictionModel:model}});layoutCache.set(data,{model:key,result});return result;
 }
 
@@ -57,8 +57,9 @@ const layoutSearchCache=new Map(),layoutSearchJobs=[];let layoutSearchBusy=0;
 window.addEventListener('brta-custom-sections-change',()=>layoutSearchCache.clear());
 function layoutSearchPump(){while(layoutSearchBusy<2&&layoutSearchJobs.length){const job=layoutSearchJobs.shift();layoutSearchBusy++;job().finally(()=>{layoutSearchBusy--;layoutSearchPump()})}}
 function layoutSearchRatings(rows){
- // Static RM3 index: expand to the fixed 8.4 probability units without moving its origin.
- rows=rows.map(r=>({...r,...Object.fromEntries(['singlesRating','doublesRating','overallRating'].filter(k=>Number.isFinite(r[k])).map(k=>[k,Math.round(1500+1.7*(r[k]-1500))])),...Object.fromEntries(['singlesSe','doublesSe','overallSe'].filter(k=>Number.isFinite(r[k])).map(k=>[k,Math.round(1.7*r[k])]))}));
+ // Static RM3 index: use the current fixed RM3 display units.
+ const indexFactor=BRTARM4Engine.policy('RM3').probabilityScale/450;
+ rows=rows.map(r=>({...r,...Object.fromEntries(['singlesRating','doublesRating','overallRating'].filter(k=>Number.isFinite(r[k])).map(k=>[k,Math.round(1500+indexFactor*(r[k]-1500))])),...Object.fromEntries(['singlesSe','doublesSe','overallSe'].filter(k=>Number.isFinite(r[k])).map(k=>[k,Math.round(indexFactor*r[k])]))}));
  if(selectedRatingModel()==='RM3')return rows;
  const query=$('#search').value.trim().toLowerCase();if(!query)return rows;
  return rows.map(row=>{if(!row.player.toLowerCase().includes(query))return row;const key=(activeHistorySeasonId||'current')+':'+selectedRatingModel()+':'+selectedRatingCentre()+':'+row.sectionCode;let entry=layoutSearchCache.get(key);

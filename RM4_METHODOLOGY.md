@@ -249,3 +249,15 @@ chronological check, not a new prospective holdout. Input hashes and results are
 `validation/rm4-variants841.json`. On later forecasts the original RM4b scored
 0.55161 log loss and 331/463 winners versus RM3 0.56904 and 323/463; those results
 do not establish superiority in every section or format.
+
+
+## 8.4.1.1 display revision
+
+This supersedes the shared 8.4 display units. Fixed probability-scale divisors
+are RM1 375, RM2 275, RM3 435, RM3b 275, RM4a 1125 and RM4b/Ensemble 765.
+Automatic uses RM3 display units. These give approximate established-player
+ranges of 500–1500 at centre 1000, 1000–2000 at centre 1500, and slightly beyond
+1000–3000 at centre 2000, using Sets 6 as a reference. Other sections and sparse
+players can exceed those ranges. No min/max normalisation, clipping, fitting or
+forecast weights change. Uncertainty, history and probability conversions share
+the same affine transformation.

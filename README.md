@@ -1,6 +1,6 @@
 # BRTA Power Ratings
 
-**Current version: 8.4.1**
+**Current version: 8.4.1.1**
 
 The default model is **RM4.1 Ensemble** (experimental), with **RM4a**, **RM4b**,
 **RM3**, **RM3b** and **Automatic** available in Settings. Existing explicit model preferences
@@ -8,17 +8,20 @@ are retained. Display scales are automatic and cannot be changed in Settings:
 
 | Models | Centre | Display points per fitted strength | Game-probability scale |
 |---|---:|---:|---:|
-| RM4a, RM4b, RM4.1 Ensemble | 2000 | 765 | 765 |
-| RM3, RM3b | 1500 | 1020 | 765 |
-| RM2 | 1000 | 1020 | 765 |
-| RM1 | 1000 | 765 | 765 |
+| RM4a | 2000 | 1125 | 1125 |
+| RM4b, RM4.1 Ensemble | 2000 | 765 | 765 |
+| RM3 / Automatic tables | 1500 | 580 | 435 |
+| RM3b | 1500 | 366⅔ | 275 |
+| RM2 | 1000 | 366⅔ | 275 |
+| RM1 | 1000 | 375 | 375 |
 
-All models now share the Ensemble’s game-probability units, without forcing
-identical distributions: real fitted
-strengths determine how far players sit from the centre. Probability conversions,
-uncertainty where available, history and deltas scale consistently. Display
-changes do not improve predictive accuracy. RM4.1 still uses RM4b leaderboard
-strength with a separate frozen prediction blend. RM3ultra remains independent.
+8.4.1.1 uses fixed model-specific spreads: approximately 500–1500 around 1000,
+1000–2000 around 1500, and just below 1000 to just above 3000 around 2000.
+These are reference ranges for established players, not enforced limits or a
+per-section min/max remapping. Fitted strengths and rankings are unchanged.
+History, deltas, uncertainty and probability divisors scale together, preserving
+forecasts. RM3ultra remains independent. RM4.1 still uses RM4b leaderboard
+strengths with a separate frozen prediction blend.
 
 8.4.1 restores individual square projection cards, a shared percentage/score switch
 and expected rubbers. Fixture predictions start from the most frequently used

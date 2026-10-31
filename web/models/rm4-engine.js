@@ -27,7 +27,8 @@ function automatic(data,bundle,baselineEngine){
 const absolute=new Set(['rating','power','lo','hi','averageOpponent','individualAverage','singlesRating','doublesRating','overallRating','singlesPower','doublesPower','ratingAtTime','opponentRatingAtTime','winnerRating','loserRating','performance','avg','best4']);
 const differences=new Set(['se','powerSe','singlesSe','doublesSe','overallSe','pairEffect','pairSynergy','ratingChange','change','dominanceGap','runnerUpGap']);
 function policy(model='RM4.1 Ensemble'){
- return model.startsWith('RM4')?{centre:2000,probabilityScale:765}:['RM1','RM2'].includes(model)?{centre:1000,probabilityScale:765}:{centre:1500,probabilityScale:765};
+ const scales={RM1:375,RM2:275,RM3:435,RM3b:275,RM4a:1125,RM4b:765,'RM4.1 Ensemble':765,Automatic:435};
+ return {centre:model.startsWith('RM4')?2000:['RM1','RM2'].includes(model)?1000:1500,probabilityScale:scales[model]??435};
 }
 function display(data){const p=policy(data.meta?.predictionModel);return centre(data,p.centre,p.probabilityScale)}
 function centre(data,value=2000,probabilityScale=null){
