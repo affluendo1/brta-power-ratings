@@ -9,6 +9,12 @@
   function clamp01(value){return Math.max(0,Math.min(1,Number(value)))}
   function logistic(value){return 1/(1+Math.exp(-value))}
   function gameProbability(homeRating,awayRating,denominator=RATING_DENOMINATOR){return logistic((Number(homeRating)-Number(awayRating))/denominator)}
+  function roundedChances(probabilities){
+    const total=probabilities.reduce((n,p)=>n+p,0)||1,values=probabilities.map(p=>100*p/total),rounded=values.map(Math.floor);
+    const order=values.map((v,i)=>({i,remainder:v-rounded[i]})).sort((a,b)=>b.remainder-a.remainder||a.i-b.i);
+    for(let n=100-rounded.reduce((a,b)=>a+b,0),i=0;i<n;i++)rounded[order[i%order.length].i]++;
+    return rounded;
+  }
   function choose(n,k){let value=1;for(let i=1;i<=k;i++)value=value*(n-k+i)/i;return value}
   function addDistribution(map,homeWin,margin,probability){
     if(probability<=0)return;
@@ -191,6 +197,7 @@
     RATING_DENOMINATOR,
     logistic,
     gameProbability,
+    roundedChances,
     shortSetDistribution,
     shortSetWin,
     matchDistribution,

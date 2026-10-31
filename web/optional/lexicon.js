@@ -49,7 +49,7 @@
   }
   return {rows:BRTAHistory.withMovement(D,'singles',ratingRound)};
  }
- function bandInfo(band){$('#bandInfo').innerHTML='<div class="band-info-head"><b>Name bands</b><label>Filter <select id="lexiconBand"><option value="">All bands</option>'+model.bandNames.map((n,i)=>'<option value="b'+i+'">'+esc(n)+'</option>').join('')+'</select></label></div><div class="band-keys">'+model.bandNames.map((n,i)=>'<div class="band-key b'+i+'"><i></i><span><b>'+esc(n)+'</b><small>'+esc(band.bounds[i]||'—')+'</small></span></div>').join('')+'</div>';$('#lexiconBand').value=window.lexiconBandFilter||'';$('#lexiconBand').onchange=e=>{window.lexiconBandFilter=e.target.value;renderRatings()}}
+ function bandInfo(band){$('#page-ratings').dataset.bandCount=model.bandNames.length;$('#bandInfo').innerHTML='<div class="band-info-head"><b>Name bands</b><label>Filter <select id="lexiconBand"><option value="">All bands</option>'+model.bandNames.map((n,i)=>'<option value="b'+i+'">'+esc(n)+'</option>').join('')+'</select></label></div><div class="band-keys">'+model.bandNames.map((n,i)=>'<div class="band-key b'+i+'"><i></i><span><b>'+esc(n)+'</b><small>'+esc(band.bounds[i]||'—')+'</small></span></div>').join('')+'</div>';$('#lexiconBand').value=window.lexiconBandFilter||'';$('#lexiconBand').onchange=e=>{window.lexiconBandFilter=e.target.value;renderRatings()}}
  function ranked(input){let cached=rankCache.get(input);if(cached?.view===ratingView)return cached.rows;const data=input.map(r=>({...r,tennisRating:r.singlesRating??r.rating}));let rows=originalModel.rank(data,name=>tableAnalysis(name,isPair()));if(isOverall()){rows=rows.map(r=>({...r,rating:BRTARefinement.blend(r.analysis.score,r.tennisRating)})).filter(r=>r.rating!=null).sort((a,b)=>b.rating-a.rating||a.player.localeCompare(b.player));let prior=null,place=0;rows=rows.map((r,i)=>{if(r.rating!==prior)place=i+1;prior=r.rating;return{...r,rank:place}})}rankCache.set(input,{view:ratingView,rows});return rows}
  function render(){
   const src=source(),q=$('#search').value.toLowerCase().trim(),tf=$('#teamFilter').value,external=ratingScope!=='section',rows=external&&!q?[]:ranked(src.rows),band=BRTALayoutModel.bands(rows),signature=ratingView+'|'+ratingScope+'|'+activeHistorySeasonId+'|'+q+'|'+tf;if(signature!==visibleSignature){visibleSignature=signature;visibleLimit=150}
@@ -101,3 +101,4 @@ return '<section class="lab-panel"><h3>Name composition</h3>'+compositionBar+'<d
  window.BRTALexicon={openLab,reveal};
  window.addEventListener('brta-module-toggle',sync);
 })();
+

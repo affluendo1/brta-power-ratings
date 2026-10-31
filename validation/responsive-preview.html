@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BRTA responsive layout preview</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#151718;color:#e8ece7;font:14px/1.5 system-ui,sans-serif}header{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:8px;padding:12px}header b{margin-right:12px}button{font:inherit;padding:6px 12px;background:#262b2c;color:inherit;border:1px solid #59605b;border-radius:6px;cursor:pointer}button[aria-pressed=true]{background:#d3e177;color:#181e13}iframe{display:block;width:390px;max-width:100%;height:calc(100dvh - 68px);margin:0 auto;border:1px solid #59605b;border-radius:12px;background:#fff}
+</style>
+<header><b>Responsive preview</b><button data-width="320">320px</button><button data-width="390" aria-pressed="true">390px</button><button data-width="768">768px</button><button data-width="1024">1024px</button></header>
+<iframe src="../index.html" title="BRTA website preview"></iframe>
+<script>
+document.addEventListener('click',event=>{const button=event.target.closest('[data-width]');if(!button)return;document.querySelector('iframe').style.width=button.dataset.width+'px';for(const b of document.querySelectorAll('[data-width]'))b.setAttribute('aria-pressed',String(b===button))});
+</script>
+</html>

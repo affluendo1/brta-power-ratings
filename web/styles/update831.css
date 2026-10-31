@@ -95,3 +95,8 @@
 @media(prefers-reduced-motion:reduce){.reading-guide *{scroll-behavior:auto}}
 
 .rm2-extra{color:#9c70c9}.rm2-extra.guide-section{padding:20px;border:1px solid #9c70c9;border-radius:10px}.rm2-extra .guide-heading h3,.rm2-extra .guide-heading>span{color:#9c70c9}.rm2-extra .default-field{display:grid;gap:8px;margin:14px 0}.rm2-extra .default-field select{width:100%}
+
+#page-ratings[data-band-count="8"] .b6{--band-color:#d5846d}#page-ratings[data-band-count="8"] .b7{--band-color:#c6657c}
+
+.lineup-position-grid select{font-size:15px!important;min-height:44px;width:100%;min-width:0}.lineup-position-grid label{min-width:0}.lineup-week>summary strong small{display:block;font-size:11px;font-weight:500;color:var(--muted-color);text-align:right;margin-top:4px}
+@media(max-width:680px){.lineup-position-grid{grid-template-columns:1fr}.lineup-position-grid select{font-size:15px!important}}

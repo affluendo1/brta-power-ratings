@@ -18,3 +18,6 @@ for(const row of legacy){assert.equal(row.rating,Math.round(original[row.player]
 const shifted=C.fit(matches.map(m=>({...m,round:m.round+20})),false,false,'V2');assert.deepEqual(legacy,shifted);
 const old=E.centre({meta:{predictionModel:'RM2',ratingScale:250,ratingProbabilityScale:187.5},singles:legacy},2000);assert.equal(old.meta.ratingScale,250);assert.equal(old.singles[0].rating,legacy[0].rating+500);
 console.log('8.3.1: eight robust bands, provisional boundaries, affine consistency, Ensemble units/history/uncertainty, unchanged probabilities, and original Python RM2 parity passed.');
+
+for(const values of [[.526,.436,.038],[1/3,1/3,1/3],[1,0,0],[.499,.499,.002]]){const rounded=P.roundedChances(values);assert.equal(rounded.reduce((a,b)=>a+b),100);rounded.forEach((v,i)=>assert(Math.abs(v-100*values[i])<1))}
+console.log('Displayed team chances add to 100% without changing model probabilities.');
