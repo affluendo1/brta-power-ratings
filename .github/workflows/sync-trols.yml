@@ -28,8 +28,8 @@ permissions:
   contents: write
 
 concurrency:
-  group: brta-results-sync-${{ github.ref }}
-  cancel-in-progress: true
+  group: brta-data-writer-${{ github.ref }}
+  cancel-in-progress: false
 
 jobs:
   sync:
@@ -129,3 +129,4 @@ jobs:
           BRANCH="${GITHUB_REF_NAME:-main}"
           git pull --rebase origin "$BRANCH"
           git push origin "HEAD:$BRANCH"
+

@@ -17,7 +17,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: brta-archive-history-${{ github.ref }}
+  group: brta-data-writer-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
@@ -62,3 +62,4 @@ jobs:
         run: |
           python -m unittest discover -s tests -v
           for test in tests/*.js; do node "$test"; done
+
