@@ -11,6 +11,7 @@
     });
   }
   function rowsAt(data,view,round=null){
+    if(data.meta?.singlesOnly&&view!=='singles')return [];
     if(round==null){
       if(view==='overall')return overall(data.singles||[],data.doublesIndividuals||[]);
       return data[view==='pairs'?'doubles':view==='doublesPlayers'?'doublesIndividuals':'singles']||[];
@@ -24,6 +25,7 @@
     return view==='singles'?singles:(doubles?.[view]||[]);
   }
   function rounds(data,view){
+    if(data.meta?.singlesOnly&&view!=='singles')return [];
     return (data.ratingHistory?.rounds||[]).filter(x=>view==='singles'||data.doublesRatingHistory?.tables?.[x.round]);
   }
   function ranked(rows,view){let rank=0;return sorted(rows).map(row=>({...row,rank:qualified(row,view)?++rank:null}))}
@@ -40,3 +42,4 @@
   const api={rowsAt,rounds,ranked,withMovement,qualified};
   root.BRTAHistory=api;if(typeof module!=='undefined')module.exports=api;
 })(typeof window!=='undefined'?window:globalThis);
+

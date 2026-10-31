@@ -1,0 +1,113 @@
+{
+  "source": "scikit-learn 1.8.0; expanded per-game rows",
+  "C": 0.5,
+  "fit_intercept": false,
+  "matches": [
+    {
+      "home": [
+        "A"
+      ],
+      "away": [
+        "B"
+      ],
+      "hg": 6,
+      "ag": 2,
+      "type": "Singles",
+      "round": 1,
+      "date": "2026-09-01",
+      "winner": "home"
+    },
+    {
+      "home": [
+        "A"
+      ],
+      "away": [
+        "B"
+      ],
+      "hg": 6,
+      "ag": 1,
+      "type": "Singles",
+      "round": 2,
+      "date": "2026-09-02",
+      "winner": "home"
+    },
+    {
+      "home": [
+        "B"
+      ],
+      "away": [
+        "C"
+      ],
+      "hg": 6,
+      "ag": 0,
+      "type": "Singles",
+      "round": 3,
+      "date": "2026-09-03",
+      "winner": "home"
+    },
+    {
+      "home": [
+        "C"
+      ],
+      "away": [
+        "A"
+      ],
+      "hg": 4,
+      "ag": 6,
+      "type": "Singles",
+      "round": 4,
+      "date": "2026-09-04",
+      "winner": "away"
+    },
+    {
+      "home": [
+        "D"
+      ],
+      "away": [
+        "A"
+      ],
+      "hg": 7,
+      "ag": 6,
+      "type": "Singles",
+      "round": 5,
+      "date": "2026-09-05",
+      "winner": "home"
+    },
+    {
+      "home": [
+        "C"
+      ],
+      "away": [
+        "B"
+      ],
+      "hg": 6,
+      "ag": 4,
+      "type": "Singles",
+      "round": 6,
+      "date": "2026-09-06",
+      "winner": "home"
+    },
+    {
+      "home": [
+        "E"
+      ],
+      "away": [
+        "F"
+      ],
+      "hg": 6,
+      "ag": 0,
+      "type": "Singles",
+      "round": 7,
+      "date": "2026-09-07",
+      "winner": "home"
+    }
+  ],
+  "strength": {
+    "A": 0.36038991791976593,
+    "B": -0.2868635987495238,
+    "C": -0.3918590673011084,
+    "D": 0.3183327481308663,
+    "E": 0.6462698216433523,
+    "F": -0.6462698216433523
+  }
+}

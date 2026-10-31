@@ -12,8 +12,10 @@ RM4.1 uses RM4b leaderboard strength with a separate frozen prediction blend.
 
 8.3.2 rebuilds Classic with a table masthead, native-looking controls, dense
 bordered tables and plain reading pages. RM1 joins the optional legacy models.
-Its launch formula and the saved RM2 script have matching coefficients; both
-use the selected rating centre.
+RM1 restores the supplied Section 6 Rating 1.0 specification: singles game
+strength with C=0.5, no recency weights and no uncertainty. RM2 retains the
+later website-launch formula. Both use the selected rating centre.
+See [RM1 methodology](RM1_METHODOLOGY.md) for provenance and reproduction.
 
 8.3.1 redesigns Methodology and BRTA Rules, makes forecasts readable on phones,
 and introduces eight robust distribution-based bands shared by ranked and provisional

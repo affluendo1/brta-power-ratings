@@ -23,7 +23,7 @@ function recalculate(data,model,bundle){const base=model==='RM4a'?'RM4a':'RM4b',
 const absolute=new Set(['rating','power','lo','hi','averageOpponent','individualAverage','singlesRating','doublesRating','overallRating','singlesPower','doublesPower','ratingAtTime','opponentRatingAtTime','winnerRating','loserRating','performance','avg','best4']);
 const differences=new Set(['se','powerSe','singlesSe','doublesSe','overallSe','pairEffect','pairSynergy','ratingChange','change','dominanceGap','runnerUpGap']);
 function centre(data,value=2000){
- const previous=data.meta?.ratingCentre??1500,target=data.meta?.predictionModel==='RM4.1 Ensemble'?765:['RM1','RM2'].includes(data.meta?.predictionModel)?187.5:450,factor=target/(data.meta?.ratingProbabilityScale||450),copy=JSON.parse(JSON.stringify(data));
+ const previous=data.meta?.ratingCentre??1500,target=data.meta?.predictionModel==='RM4.1 Ensemble'?765:data.meta?.predictionModel==='RM1'?400/Math.log(10):data.meta?.predictionModel==='RM2'?187.5:450,factor=target/(data.meta?.ratingProbabilityScale||450),copy=JSON.parse(JSON.stringify(data));
  const scaled=(v,absoluteValue)=>{const n=absoluteValue?value+factor*(v-previous):factor*v;return Number.isInteger(v)?Math.round(n):n};
  function walk(x,key=''){if(!x||typeof x!=='object'||key==='rm4'||key==='meta')return;if(Array.isArray(x)){x.forEach(v=>walk(v));return}for(const [k,v]of Object.entries(x)){if(typeof v==='number'&&absolute.has(k))x[k]=scaled(v,true);else if(typeof v==='number'&&differences.has(k))x[k]=scaled(v,false);else walk(v,k)}}
  walk(copy);for(const list of Object.values(copy.ratingHistory?.players||{}))for(const point of list){point[1]=scaled(point[1],true);if(Number.isFinite(point[2]))point[2]=scaled(point[2],false)}

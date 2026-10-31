@@ -184,19 +184,31 @@ order preference. It does not estimate a psychological carry-over effect from
 an earlier rubber. Lineup editing is collapsed behind its own control; labels
 sit outside matchup cards so probability controls align with the entire row.
 
-## 8.3.2: RM1 launch restoration
+## 8.3.2: original Rating 1.0 restoration
 
-Jayden identifies RM1 as the website’s launch model. The first README
-(`50f42825626cfe6e0cc472a0954d73f03f1fd0a2`) and launch HTML
-(`ab46f0786baa2a80d2756dc0e19d850ddc69391e`) state the full formula:
-game scale 0.75, match scale 0.55, match weight 1.8, L2 0.75, round decay
-0.90, and original display 1000 + 250 × centred strength. The script added
-in `6388eeb`, restored as RM2 in 8.3.1, states identical coefficients.
+Jayden supplied the pre-website Section 6 Rating 1.0 methodology after the
+initial 8.3.2 launch. It supersedes the earlier inference that the website's
+first commit was RM1. RM1 and RM2 now have distinct objectives.
 
-The RM1 option faithfully exposes the launch formula and shares the tested
-legacy fitting implementation with RM2. Matching centres therefore produce
-matching ratings, rather than manufactured differences between the archived
-versions. As with RM2, the selected 1500/2000 origin replaces the original
-1000 origin, valid-score filtering is retained, doubles uses a documented
-extension, and approximate centred Hessian uncertainty is added. Each legacy
-option has its own More Settings unlock and is hidden while Extras is off.
+RM1 is singles-only game-level Bradley–Terry logistic regression with no
+intercept, fixed sklearn L2 C=0.5, no date or round weighting, and
+R = centre + (400 / ln 10) × beta. No match-win term, doubles extension or
+uncertainty is added. The sum-form objective is negative game log likelihood
+plus sum(beta²)/(2C). All observed singles players enter the fit; publication
+requires four singles matches. Historical tables refit only results through
+the selected round. The selected centre changes only the rating origin.
+
+The supplied original data description is Round 9, 136 singles, 57 players.
+Its reported shuffled eight-fold C search is historical evidence supplied by
+Jayden, not a forecasting evaluation rerun in this release. This restoration
+uses current selected section data. The available Sets 6 Round 9 snapshot
+contains the stated 136 singles/57 players and exactly reproduces the five
+leading supplied ratings. Some later entries differ by one point; no values
+are hardcoded to force agreement.
+See RM1_METHODOLOGY.md and validation/check_rm1.py for implementation checks.
+
+RM2 keeps the website-launch formula documented in 50f42825/ab46f078 and
+implemented in 6388eeb: game scale 0.75, match scale 0.55, match weight 1.8,
+L2 0.75, round decay 0.90, original display 1000 + 250 × centred strength.
+Its documented doubles extension and approximate uncertainty remain. Both
+options have separate More Settings unlocks and hide when Extras is off.
