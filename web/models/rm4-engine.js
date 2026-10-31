@@ -22,12 +22,17 @@ function recalculate(data,model,bundle){const base=model==='RM4a'?'RM4a':'RM4b',
 }
 const absolute=new Set(['rating','power','lo','hi','averageOpponent','individualAverage','singlesRating','doublesRating','overallRating','singlesPower','doublesPower','ratingAtTime','opponentRatingAtTime','winnerRating','loserRating','performance','avg','best4']);
 const differences=new Set(['se','powerSe','singlesSe','doublesSe','overallSe','pairEffect','pairSynergy','ratingChange','change','dominanceGap','runnerUpGap']);
-function centre(data,value=2000){
- const previous=data.meta?.ratingCentre??1500,target=data.meta?.predictionModel==='RM4.1 Ensemble'?765:data.meta?.predictionModel==='RM1'?400/Math.log(10):data.meta?.predictionModel==='RM2'?187.5:450,factor=target/(data.meta?.ratingProbabilityScale||450),copy=JSON.parse(JSON.stringify(data));
+function policy(model='RM4.1 Ensemble'){
+ return model.startsWith('RM4')?{centre:2000,probabilityScale:765}:['RM1','RM2'].includes(model)?{centre:1000,probabilityScale:765}:{centre:1500,probabilityScale:765};
+}
+function display(data){const p=policy(data.meta?.predictionModel);return centre(data,p.centre,p.probabilityScale)}
+function centre(data,value=2000,probabilityScale=null){
+ const previous=data.meta?.ratingCentre??1500,target=probabilityScale??(data.meta?.predictionModel==='RM4.1 Ensemble'?765:data.meta?.predictionModel==='RM1'?400/Math.log(10):data.meta?.predictionModel==='RM2'?187.5:450),factor=target/(data.meta?.ratingProbabilityScale||450),copy=JSON.parse(JSON.stringify(data));
  const scaled=(v,absoluteValue)=>{const n=absoluteValue?value+factor*(v-previous):factor*v;return Number.isInteger(v)?Math.round(n):n};
  function walk(x,key=''){if(!x||typeof x!=='object'||key==='rm4'||key==='meta')return;if(Array.isArray(x)){x.forEach(v=>walk(v));return}for(const [k,v]of Object.entries(x)){if(typeof v==='number'&&absolute.has(k))x[k]=scaled(v,true);else if(typeof v==='number'&&differences.has(k))x[k]=scaled(v,false);else walk(v,k)}}
  walk(copy);for(const list of Object.values(copy.ratingHistory?.players||{}))for(const point of list){point[1]=scaled(point[1],true);if(Number.isFinite(point[2]))point[2]=scaled(point[2],false)}
  copy.meta={...copy.meta,ratingCentre:value,ratingScale:(data.meta?.ratingScale||(data.rm4?450:600))*factor,ratingProbabilityScale:target};return copy;
 }
-const api={prepare,recalculate,centre};root.BRTARM4Engine=api;if(typeof module!=='undefined')module.exports=api;
+const api={prepare,recalculate,centre,policy,display};root.BRTARM4Engine=api;if(typeof module!=='undefined')module.exports=api;
 })(typeof window==='undefined'?globalThis:window);
+

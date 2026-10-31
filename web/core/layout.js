@@ -1,27 +1,28 @@
 /* Layout Overhaul — shared navigation, display preferences and section reports. */
-let layoutOverlayFocus=null,layoutInert=[];
+let layoutOverlayFocus=null;
 const layoutCache=new WeakMap();
 function layoutDefaultCode(){const c=localStorage.getItem('brta-default-competition'),s=localStorage.getItem('brta-default-section');return currentCatalog().find(x=>x.competition_code===c&&(!s||x.section_code===s))?.section_code||''}
 let rm4FrozenPromise=null;
-async function ensureRM4Frozen(){if(!rm4FrozenPromise)rm4FrozenPromise=fetch('web/models/rm4-frozen.json?v=832r1').then(r=>{if(!r.ok)throw Error('Prediction model unavailable.');return r.json()}).then(b=>window.BRTARM4Frozen=b).catch(e=>{rm4FrozenPromise=null;throw e});return rm4FrozenPromise}
+async function ensureRM4Frozen(){if(!rm4FrozenPromise)rm4FrozenPromise=fetch('web/models/rm4-frozen.json?v=840').then(r=>{if(!r.ok)throw Error('Prediction model unavailable.');return r.json()}).then(b=>window.BRTARM4Frozen=b).catch(e=>{rm4FrozenPromise=null;throw e});return rm4FrozenPromise}
 function legacyModelUnlocked(model){try{return auxiliaryEnabled()&&JSON.parse(localStorage.getItem('brta-more-settings-v1')||'{}')[model.toLowerCase()]===true}catch{return false}}
 function rm1Unlocked(){return legacyModelUnlocked('RM1')}
 function rm2Unlocked(){return legacyModelUnlocked('RM2')}
 function selectedRatingModel(){const saved=localStorage.getItem('brta-rating-model');return (saved==='RM1'||saved==='RM2'?legacyModelUnlocked(saved):['RM3','RM3b','RM4a','RM4b','RM4.1 Ensemble'].includes(saved))?saved:'RM4.1 Ensemble'}
-function selectedRatingCentre(){return localStorage.getItem('brta-rating-centre')==='1500'?1500:2000}
+function selectedRatingCentre(){return BRTARM4Engine.policy(selectedRatingModel()).centre}
 async function layoutApplyModel(data,model=selectedRatingModel()){
  data=BRTAScores.normalise(data);const centre=selectedRatingCentre(),key=model+':'+centre;
  if(layoutCache.get(data)?.model===key)return layoutCache.get(data).result;
  let result=data;if(model.startsWith('RM4'))await ensureRM4Frozen();
- if(model!=='RM3'||data.meta?.ratingModel==='V3B'||data.meta?.needsScoreRefit){result=await new Promise((resolve,reject)=>{const worker=new Worker('web/workers/rating-worker.js?v=832r1'),timer=setTimeout(()=>{worker.terminate();reject(Error('Rating calculation timed out. Try RM3 in Settings.'))},90000);const finish=()=>{clearTimeout(timer);worker.terminate()};worker.onmessage=e=>{finish();e.data.error?reject(Error(e.data.error)):resolve(e.data.data)};worker.onerror=e=>{finish();reject(Error(e.message||'Could not calculate ratings.'))};worker.postMessage({data,model})})}
- result=BRTARM4Engine.centre(result,centre);layoutCache.set(data,{model:key,result});return result;
+ if(model!=='RM3'||data.meta?.ratingModel==='V3B'||data.meta?.needsScoreRefit){result=await new Promise((resolve,reject)=>{const worker=new Worker('web/workers/rating-worker.js?v=840'),timer=setTimeout(()=>{worker.terminate();reject(Error('Rating calculation timed out. Try RM3 in Settings.'))},90000);const finish=()=>{clearTimeout(timer);worker.terminate()};worker.onmessage=e=>{finish();e.data.error?reject(Error(e.data.error)):resolve(e.data.data)};worker.onerror=e=>{finish();reject(Error(e.message||'Could not calculate ratings.'))};worker.postMessage({data,model})})}
+ result=BRTARM4Engine.display({...result,meta:{...result.meta,predictionModel:model}});layoutCache.set(data,{model:key,result});return result;
 }
 
 function ratingChangeCell(row){const n=row.ratingChange;return '<td class="rating-change '+(n>0?'rank-up':n<0?'rank-down':'rank-still')+'">'+(n==null?'—':(n>0?'+':'')+n)+'</td>'}
+function standingsHeadHTML(){return '<tr><th>#</th><th>Team</th><th>W–D–L</th><th>%</th><th>Pts</th><th>Movement</th><th>Points Δ</th></tr>'}
+function standingsRowsHTML(rows){return rows.map((r,i)=>{const pct=r.officialPercentage??BRTAStandings.percentage(r),movement=r.positionChange,delta=r.pointsChange;return '<tr><td><b>'+(r.position??'—')+'</b></td><td><b>'+clubTeamButton(r.team)+'</b></td><td class="standing-record"><span class="rank-up">'+esc(r.officialWins??r.wins??'—')+'</span>–<span class="rank-still">'+esc(r.draws??'—')+'</span>–<span class="rank-down">'+esc(r.losses??'—')+'</span></td><td>'+(Number.isFinite(Number(pct))?Number(pct).toFixed(2):'∞')+'</td><td><b>'+esc(r.points??'—')+'</b></td><td class="'+(movement>0?'rank-up':movement<0?'rank-down':'rank-still')+'">'+(movement==null?'—':movement>0?'↑ '+movement:movement<0?'↓ '+Math.abs(movement):'0')+'</td><td class="'+(delta>0?'rank-up':delta<0?'rank-down':'rank-still')+'">'+(delta==null?'—':(delta>0?'+':'')+delta)+'</td></tr>'+(i===(D.meta?.is_custom?(D.meta.semifinalPlaces??4):4)-1&&rows.length>(D.meta?.is_custom?(D.meta.semifinalPlaces??4):4)?'<tr class="playoff-cut"><td colspan="7"><span class="sf-wave" aria-hidden="true">∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿</span><span>↑ SF</span></td></tr>':'')}).join('')}
 function renderStandings(){
- const rows=D.standings||[],played=Math.max(0,...rows.map(r=>Number(r.played)||Number(r.wins||0)+Number(r.draws||0)+Number(r.losses||0)));
- $('#standingsHead').innerHTML='<tr><th>#</th><th>Team</th><th>W–D–L</th><th>%</th><th>Pts</th></tr>';
- $('#standingsBody').innerHTML=rows.map((r,i)=>{const pct=BRTALayoutModel.percentage(r);return'<tr><td><b>'+(r.officialPosition||i+1)+'</b></td><td><b>'+clubTeamButton(r.team)+'</b></td><td class="standing-record"><span class="rank-up">'+esc(r.officialWins??r.wins??'—')+'</span>–<span class="rank-still">'+esc(r.draws??'—')+'</span>–<span class="rank-down">'+esc(r.losses??'—')+'</span></td><td>'+(Number.isFinite(pct)?pct.toFixed(2):'∞')+'</td><td><b>'+esc(r.points)+'</b></td></tr>'+(i===(D.meta?.is_custom?(D.meta.semifinalPlaces??4):4)-1&&rows.length>(D.meta?.is_custom?(D.meta.semifinalPlaces??4):4)?'<tr class="playoff-cut"><td colspan="5"><span class="sf-wave" aria-hidden="true">∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿</span><span>↑ SF</span></td></tr>':'')}).join('');
+ const rows=BRTAStandings.current(D),played=Math.max(0,...rows.map(r=>Number(r.played)||Number(r.wins||0)+Number(r.draws||0)+Number(r.losses||0)));
+ $('#standingsHead').innerHTML=standingsHeadHTML();$('#standingsBody').innerHTML=standingsRowsHTML(rows);
  $('#standingsNote').textContent=played+' round'+(played===1?'':'s')+' played';$('#standingsCaveat').innerHTML='% = games won ÷ games lost × 100. Used to separate teams tied on points.';const missing=D.sync?.missingFixtures||0;if(missing)$('#standingsCaveat').insertAdjacentHTML('afterbegin','<b>Incomplete: '+missing+' scorecard'+(missing===1?'':'s')+' missing.</b> ');if(D.meta?.is_archive)$('#standingsCaveat').insertAdjacentHTML('beforeend',rows.some(r=>r.standingsSource==='TROLS')?' Final positions and points are published by TROLS; match records are reconstructed.':' The final ladder was unavailable; standings are reconstructed from published results.');if(D.sync?.sourceWarnings?.length)$('#standingsCaveat').insertAdjacentHTML('beforeend','<br><b>TROLS source discrepancy:</b> '+D.sync.sourceWarnings.map(esc).join(' '));renderKnockout();
 }
 function renderFixtures(){renderFixtureRounds();const host=$('#fixturesList'),sections=[...host.children],past=[];const completed=new Set((D.results||[]).filter(r=>(r.fixtures||[]).every(f=>f.status!=='Scheduled')).map(r=>String(r.round)));for(const section of sections){const round=(D.upcomingFixtures||[])[sections.indexOf(section)];if(round&&completed.has(String(round.round)))past.push(section)}if(past.length){const details=document.createElement('details');details.className='previous-rounds';details.innerHTML='<summary>Previous rounds <span>'+past.length+' Played Rounds</span></summary>';host.prepend(details);past.forEach(s=>details.append(s));}}
@@ -30,9 +31,9 @@ function openLayoutOverlay(kind){
  let overlay=$('#layoutOverlay');if(!overlay){overlay=document.createElement('div');overlay.id='layoutOverlay';overlay.className='overlay hidden layout-overlay';document.body.append(overlay)}
  const titles={history:'Section History',methodology:'Rating Methodology',rules:'BRTA Rules'},method=eightMethodologyHTML();
  overlay.innerHTML='<div class="overlay-backdrop" data-layout-close></div><section class="settings-sheet" role="dialog" aria-modal="true" aria-labelledby="layoutTitle"><button class="close-btn" data-layout-close aria-label="Close">×</button><div class="overlay-title"><h2 id="layoutTitle">'+titles[kind]+'</h2></div>'+(kind==='history'?historyDialogHTML():kind==='rules'?brtaRulesHTML():method)+'</section>';
- layoutOverlayFocus=document.activeElement;layoutInert=[...document.body.children].filter(e=>e!==overlay).map(e=>[e,e.inert]);layoutInert.forEach(([e])=>e.inert=true);overlay.classList.remove('hidden');document.body.classList.add('modal-open');overlay.querySelector('button').focus();if(kind==='history')hydrateHistorySettings();if(kind==='methodology')eightBindModel();
+ layoutOverlayFocus=document.activeElement;overlay.classList.remove('hidden');BRTAOverlays.lock(overlay);document.body.classList.add('modal-open');overlay.querySelector('button').focus();if(kind==='history')hydrateHistorySettings();if(kind==='methodology')eightBindModel();
 }
-function closeLayoutOverlay(){const o=$('#layoutOverlay');if(!o||o.classList.contains('hidden'))return;o.classList.add('hidden');layoutInert.forEach(([e,v])=>e.inert=v);layoutInert=[];if(!document.querySelector('.overlay:not(.hidden)'))document.body.classList.remove('modal-open');layoutOverlayFocus?.focus?.({preventScroll:true})}
+function closeLayoutOverlay(){const o=$('#layoutOverlay');if(!o||o.classList.contains('hidden'))return;o.classList.add('hidden');BRTAOverlays.unlock(o);if(!document.querySelector('.overlay:not(.hidden)'))document.body.classList.remove('modal-open');layoutOverlayFocus?.focus?.({preventScroll:true})}
 function openSettings(){
  const install=$('#installBtn');if(install)$('#installSettingsStash').append(install);
  const classic=interfaceMode==='classic',on=auxiliaryEnabled(),palette=[['yellow','Yellow'],['green','Green'],['blue','Blue'],['red','Red'],['purple','Purple'],['black','Black'],['white','White']];
@@ -56,7 +57,8 @@ const layoutSearchCache=new Map(),layoutSearchJobs=[];let layoutSearchBusy=0;
 window.addEventListener('brta-custom-sections-change',()=>layoutSearchCache.clear());
 function layoutSearchPump(){while(layoutSearchBusy<2&&layoutSearchJobs.length){const job=layoutSearchJobs.shift();layoutSearchBusy++;job().finally(()=>{layoutSearchBusy--;layoutSearchPump()})}}
 function layoutSearchRatings(rows){
- const offset=selectedRatingCentre()-1500;rows=rows.map(r=>({...r,...Object.fromEntries(['singlesRating','doublesRating','overallRating'].filter(k=>Number.isFinite(r[k])).map(k=>[k,r[k]+offset]))}));
+ // Static RM3 index: expand to the fixed 8.4 probability units without moving its origin.
+ rows=rows.map(r=>({...r,...Object.fromEntries(['singlesRating','doublesRating','overallRating'].filter(k=>Number.isFinite(r[k])).map(k=>[k,Math.round(1500+1.7*(r[k]-1500))])),...Object.fromEntries(['singlesSe','doublesSe','overallSe'].filter(k=>Number.isFinite(r[k])).map(k=>[k,Math.round(1.7*r[k])]))}));
  if(selectedRatingModel()==='RM3')return rows;
  const query=$('#search').value.trim().toLowerCase();if(!query)return rows;
  return rows.map(row=>{if(!row.player.toLowerCase().includes(query))return row;const key=(activeHistorySeasonId||'current')+':'+selectedRatingModel()+':'+selectedRatingCentre()+':'+row.sectionCode;let entry=layoutSearchCache.get(key);
@@ -64,4 +66,5 @@ function layoutSearchRatings(rows){
   if(entry.rows)return entry.rows.get(row.player)||row;return{...row,...Object.fromEntries(['singlesRating','doublesRating','overallRating'].filter(k=>row[k]!=null).map(k=>[k,entry.error?'—':'…']))};
  });
 }
+
 

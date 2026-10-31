@@ -37,8 +37,10 @@ Original scale: R = 1500 + (400 / ln(10)) * beta. Therefore:
 
     P(i wins a game against j) = 1 / (1 + 10^(-(R_i - R_j) / 400))
 
-The site's 2000 default and optional 1500 centre replace only the origin,
-while preserving the scale, gaps and probabilities. Ratings are rounded for
+In 8.4 RM1 has a fixed centre of 1000 and 765 display points per beta. The
+game-probability divisor expands to 765 consistently. Fitted strengths, rankings
+and probabilities remain unchanged; the archived 1500 + 173.718 × beta display
+is used only when checking the supplied original leaderboard. Ratings are rounded for
 display. Four completed singles matches qualify a player for publication;
 players with fewer matches still enter the mathematical network and can be
 shown as provisional. Average opponent Power counts each singles meeting
@@ -81,3 +83,4 @@ exactly. A few later displayed entries differ by one point. Their exact
 historical solver settings are unavailable; the restoration keeps the stated
 C=0.5 objective and converges tightly rather than hardcoding the supplied
 ratings. The independent sklearn coefficient check verifies that objective.
+

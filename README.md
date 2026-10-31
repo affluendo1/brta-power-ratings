@@ -1,20 +1,53 @@
 # BRTA Power Ratings
 
-**Current version: 8.3.2**
+**Current version: 8.4**
 
 The default model is **RM4.1 Ensemble** (experimental), with **RM4a**, **RM4b**,
 **RM3** and **RM3b** available in Settings. Existing explicit model preferences
-are retained. Ratings default to a **2000** centre; choose **1500** in Settings.
-The centre changes the origin, preserving gaps and forecasts. RM4.1 has an expanded
-Power scale (765 × latent skill, versus RM4b’s 450); uncertainty, history and
-rating differences expand together. This is a display scale, not a new fitted model.
-RM4.1 uses RM4b leaderboard strength with a separate frozen prediction blend.
+are retained. Display scales are automatic and cannot be changed in Settings:
+
+| Models | Centre | Display points per fitted strength | Game-probability scale |
+|---|---:|---:|---:|
+| RM4a, RM4b, RM4.1 Ensemble | 2000 | 765 | 765 |
+| RM3, RM3b | 1500 | 1020 | 765 |
+| RM2 | 1000 | 1020 | 765 |
+| RM1 | 1000 | 765 | 765 |
+
+All models now share the Ensemble’s game-probability units, without forcing
+identical distributions: real fitted
+strengths determine how far players sit from the centre. Probability conversions,
+uncertainty where available, history and deltas scale consistently. Display
+changes do not improve predictive accuracy. RM4.1 still uses RM4b leaderboard
+strength with a separate frozen prediction blend. RM3ultra remains independent.
+
+8.4 adds direct performance-band filtering, a player-only Following manager,
+separate calendar event dialogs, visible fixture lineup editing and a restored
+match verdict. Rubber projections share one rectangular panel with row dividers.
+Round simulation opens standard scorecards with previous/next fixture navigation,
+a rerun control and a hypothetical ladder rendered with the real standings table.
+Real standings now include position movement and points change since the previous
+published round. Earlier positions are reconstructed from recorded points and game
+percentage; ambiguous historical ties have no invented movement. Historical
+penalties or missing scorecards can limit reconstructed comparisons.
+
+Simulations use only remaining scheduled fixtures in the selected round and never
+write to official results, ratings or standings. Finals do not change the
+regular-season ladder. The hypothetical ladder starts
+from the current official ladder; a later-round simulation does not invent results
+for intervening unplayed rounds. Adult competitions with published-only team-point
+rules can show simulated scores and game totals, but projected points/positions are
+unavailable rather than borrowed from junior rules. Registered order guides initial
+lineups; user edits in Prediction Centre are independent from whole-round simulations.
+
+Dialog locks now have a shared owner, so a refresh or out-of-order close releases
+the page correctly. Classic extends to secondary screens and dialogs. Mobile
+headers reserve space at the top; rating tables have no frozen name/rank columns.
 
 8.3.2 rebuilds Classic with a table masthead, native-looking controls, dense
 bordered tables and plain reading pages. RM1 joins the optional legacy models.
 RM1 restores the supplied Section 6 Rating 1.0 specification: singles game
 strength with C=0.5, no recency weights and no uncertainty. RM2 retains the
-later website-launch formula. Both use the selected rating centre.
+later website-launch formula. Their original fits remain available with the fixed 8.4 display policy.
 See [RM1 methodology](RM1_METHODOLOGY.md) for provenance and reproduction.
 
 8.3.1 redesigns Methodology and BRTA Rules, makes forecasts readable on phones,
@@ -537,4 +570,5 @@ To repeat the historical score correction, run
 `python -m scraper.migrate_match_tiebreaks --build`, then regenerate current data
 and the archive search indexes. The migration is idempotent and preserves source
 scores. Add `--report /path/to/report.json` to save a local correction report.
+
 

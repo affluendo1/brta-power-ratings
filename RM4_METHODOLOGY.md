@@ -212,3 +212,21 @@ implemented in 6388eeb: game scale 0.75, match scale 0.55, match weight 1.8,
 L2 0.75, round decay 0.90, original display 1000 + 250 × centred strength.
 Its documented doubles extension and approximate uncertainty remain. Both
 options have separate More Settings unlocks and hide when Extras is off.
+
+
+## 8.4: fixed display policy and hypothetical ladders
+
+The browser applies `BRTARM4Engine.display` after fitting. All RM4 models use
+centre 2000 and scale 765, preserving the Ensemble spread. RM3/RM3b use centre
+1500 and scale 1020. RM2 uses centre 1000 and scale 1020. RM1 uses centre 1000
+and scale 765 per beta. All corresponding probability scales are 765, giving
+rating gaps a consistent game-log-odds interpretation without forcing every
+model to have an identical empirical distribution. Original fitted strengths, rankings and forecasts remain unchanged; widened
+numbers are not evidence of a better model. The 1500/2000 preference is retired.
+
+The shared standings module reconstructs the preceding published round for
+movement/points comparisons. Missing historical positions and tied reconstructed
+positions do not receive invented movements. Simulated ladders copy the current
+published ladder and add only generated scheduled fixtures. They share the real
+standings renderer and do not alter the source. Published-only adult team-point
+rules are not inferred; hypothetical points and positions remain unavailable.

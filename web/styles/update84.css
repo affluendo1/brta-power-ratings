@@ -1,0 +1,85 @@
+/* 8.4: shared controls, usable phone spacing and one scroll surface per dialog. */
+:root{--band-0:#b78b18;--band-1:#8d63c7;--band-2:#387cbd;--band-3:#218b89;--band-4:#6c8734;--band-5:#bc7628;--band-6:#bc5b4b;--band-7:#bd476d;--nav-sticky-height:58px;--team-tabs-height:0px}
+html{scroll-padding-top:calc(var(--nav-sticky-height) + 16px)}
+#teamLabContent{scroll-margin-top:calc(var(--nav-sticky-height) + var(--team-tabs-height) + 16px)}
+#page-ratings #ratingHead th,#page-ratings #ratingBody td{position:static!important;left:auto!important;z-index:auto!important}
+.band-keys .band-key{font:inherit;text-align:left;cursor:pointer;color:var(--text-color);border:1px solid var(--border-color);border-left:4px solid var(--band-color);background:color-mix(in srgb,var(--band-color) 9%,var(--surface));transition:background .12s}
+.band-keys .band-key:hover{background:color-mix(in srgb,var(--band-color) 20%,var(--surface))}
+.band-keys .band-key[aria-pressed="true"]{outline:2px solid var(--band-color);outline-offset:-2px;background:color-mix(in srgb,var(--band-color) 24%,var(--surface))}
+.band-keys .band-key i{background:var(--band-color);flex-shrink:0}
+#page-ratings .band-divider div{border-color:var(--band-color);background:color-mix(in srgb,var(--band-color) 12%,var(--surface));color:var(--text-color)}
+.team822-explorer{top:calc(var(--nav-sticky-height) + var(--team-tabs-height) + 14px);z-index:1;max-height:min(62dvh,calc(100dvh - var(--nav-sticky-height) - var(--team-tabs-height) - 30px))}
+.tl-hero>div{flex:1;min-width:0}.tl-hero>[data-team-predict]{align-self:flex-start;margin-left:auto;flex-shrink:0}
+.team822-matches .match-score{font-size:13px;white-space:nowrap;line-height:1.3}.team822-matches .match-row{grid-template-columns:30px 64px minmax(0,1fr)}
+.following84-overlay .settings-sheet{width:min(650px,96vw)}
+.following84{display:grid;gap:20px}.following84-toggle{display:flex;align-items:center;gap:12px;line-height:1.4;font-size:14px;text-align:left}.following84-toggle input{width:20px;height:20px;flex:none;accent-color:var(--primary)}
+.following84-list{display:grid;gap:0;border:1px solid var(--border-color);background:var(--surface)}
+.following84-row{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px;border-bottom:1px solid var(--border-color)}.following84-row:last-child{border-bottom:0}.following84-row h3{font-size:19px;margin:0 0 5px}.following84-row p{font-size:12px;color:var(--muted-color);margin:0;line-height:1.5;text-align:left}
+.following84-record{display:flex;gap:12px;align-items:center;font-size:14px;margin-top:8px}.following84-actions{display:grid;justify-items:center;gap:12px;flex:none}.following84-actions .button{font-size:13px;padding:8px 12px;min-height:36px}.following84-empty{padding:24px}.following84-empty p{font-size:14px;line-height:1.5;margin-bottom:0}.following84-footer{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px}.following84-footer p{margin:0;width:100%;text-align:left;font-size:12px;color:var(--muted-color)}
+.calendar84-event{display:grid;gap:12px}.calendar84-event time{font-weight:700}.calendar84-event h3{margin:0;font-size:23px}.calendar84-event p{margin:0;line-height:1.5}
+#predictionOverlay .prediction-sheet{overflow-y:auto;overscroll-behavior:contain}
+.prediction-lineups{margin:22px 0;display:block}.prediction-lineups h3{font-size:18px;margin-bottom:12px}.prediction-lineups .ca-squad-list{max-height:none;overflow:visible}
+.fixture-forecast .prediction-verdict{display:flex;justify-content:space-between;align-items:center;gap:20px;border:1px solid var(--border-color);border-left:4px solid var(--primary);background:var(--surface);padding:18px;margin:18px 0}.prediction-verdict h3{font-size:21px;margin:5px 0 0}.prediction-verdict>span{color:var(--muted-color);font-size:14px}.prediction-verdict b{display:block;color:var(--text-color);font-size:20px}
+.fixture-forecast .prediction-rubbers{display:block;border:1px solid var(--border-color);border-radius:0;background:var(--surface);overflow:visible;max-height:none}
+.fixture-forecast .fixture-rubber{border:0;border-bottom:1px solid var(--border-color);gap:0;grid-template-columns:30px minmax(0,1fr);border-radius:0;min-height:54px}.fixture-forecast .fixture-rubber:last-child{border-bottom:0}
+.fixture-rubber .prediction-rubber{border:0!important;border-radius:0!important;box-shadow:none;background:none;min-height:54px;padding:9px 12px;font-size:15px}.fixture-rubber .prediction-estimate{background:none!important;border:0!important;border-radius:0!important;box-shadow:none!important;min-height:34px;padding:7px 3px}
+.fixture-forecast .projection-section-heading{display:flex}.fixture-forecast .simulation-actions{margin:16px 0}
+.round84-tools{display:flex;flex-wrap:wrap;gap:8px;margin:0 42px 14px 0}.round84-tools .button{font-size:13px;min-height:38px;padding:8px 12px}.round84-nav{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:12px 0 18px}.round84-nav>span{font-size:11px;letter-spacing:.06em;font-weight:800;text-align:center;color:var(--muted-color)}.round84-arrow{width:38px;height:38px;border:1px solid var(--border-color);background:var(--surface);font-size:26px;color:var(--text-color);line-height:1}
+.simulated84-standings table{min-width:610px}.simulation84-context{line-height:1.5}.simulated84-standings td{white-space:nowrap}
+@media(min-width:1150px){.round84-arrow{position:fixed;top:50%;z-index:2}.round84-arrow:first-child{left:max(12px,calc((100vw - 1080px)/2 - 48px))}.round84-arrow:last-child{right:max(12px,calc((100vw - 1080px)/2 - 48px))}.round84-nav{justify-content:center}}
+@media(max-width:1050px){.team822-explorer{position:relative;top:auto;max-height:none}}
+@media(max-width:680px){
+ html body>.site-header{padding-top:calc(24px + env(safe-area-inset-top))}
+ .overlay:not(#modeSwitchOverlay){padding-top:calc(12px + env(safe-area-inset-top));padding-bottom:calc(12px + env(safe-area-inset-bottom))}
+ .following84-row{padding:14px;gap:12px}.following84-row h3{font-size:17px}.following84-footer{align-items:flex-start}.following84-footer>.button{width:100%}
+ .tl-hero{flex-wrap:wrap}.tl-hero>[data-team-predict]{font-size:13px;min-height:38px}
+ .fixture-forecast .prediction-verdict{padding:14px;gap:14px}.prediction-verdict h3{font-size:18px}.prediction-verdict>span{font-size:12px}.prediction-verdict b{font-size:17px}
+ .fixture-forecast .prediction-rubbers{max-height:none;overflow:visible}.fixture-forecast .fixture-rubber{grid-template-columns:24px minmax(0,1fr)}.fixture-rubber .prediction-rubber{min-height:52px;padding:8px;font-size:14px;grid-template-columns:minmax(0,1fr) 76px minmax(0,1fr);grid-template-areas:'home chance away';gap:7px}.fixture-rubber .projection822-side{line-height:1.25}.fixture-rubber .projection822-side .person{word-break:normal;overflow-wrap:anywhere}.fixture-rubber .prediction-estimate{font-size:12px;min-height:32px;padding:6px 0}
+ .fixture-forecast .projection-section-heading h3{font-size:17px}.fixture-forecast .overlay-title h2{font-size:25px}.prediction-lineups .lineup-pickers{display:grid;grid-template-columns:1fr;gap:16px}
+}
+@media(max-width:360px){.following84-row{align-items:flex-start;flex-direction:column}.following84-actions{display:flex;justify-content:space-between;width:100%}.round84-tools{margin-right:30px}.round84-tools .button{padding:7px 8px;font-size:12px}}
+
+.b0{--band-color:var(--band-0)}
+.b1{--band-color:var(--band-1)}
+.b2{--band-color:var(--band-2)}
+.b3{--band-color:var(--band-3)}
+.b4{--band-color:var(--band-4)}
+.b5{--band-color:var(--band-5)}
+.b6{--band-color:var(--band-6)}
+.b7{--band-color:var(--band-7)}
+.b8{--band-color:var(--band-0)}
+.b9{--band-color:var(--band-1)}
+.b10{--band-color:var(--band-2)}
+.b11{--band-color:var(--band-3)}
+.b12{--band-color:var(--band-4)}
+.b13{--band-color:var(--band-5)}
+.b14{--band-color:var(--band-6)}
+.b15{--band-color:var(--band-7)}
+.b16{--band-color:var(--band-0)}
+.b17{--band-color:var(--band-1)}
+
+html:not([data-interface="classic"]) :is(.person,.export-link){color:color-mix(in srgb,var(--primary) 62%,var(--text-color))}
+.round84-externalnav{display:none}
+@media(min-width:1150px){.round84-nav .round84-arrow{display:none}.round84-externalnav{display:block}.round84-externalnav .round84-arrow{position:fixed;top:var(--sim84-top,50%);transform:translateY(-50%)}.round84-externalnav .round84-arrow:first-child{left:var(--sim84-left,12px);right:auto}.round84-externalnav .round84-arrow:last-child{right:var(--sim84-right,12px);left:auto}}
+
+@media(max-width:680px){.following84-overlay .settings-sheet{width:100%;max-width:100%;height:100dvh;max-height:100dvh;padding:calc(24px + env(safe-area-inset-top)) 14px calc(20px + env(safe-area-inset-bottom))}}
+/* Explicit areas avoid the old label cell creating phantom grid columns. */
+.fixture-forecast .fixture-rubber{display:grid;align-items:center;min-width:0}
+.fixture-rubber .prediction-rubber>.projection822-side:first-child{grid-area:home;font-size:inherit;letter-spacing:normal;text-transform:none}
+.fixture-rubber .prediction-rubber>.projection822-side:last-child{grid-area:away;text-align:right}
+.fixture-rubber .prediction-rubber .prediction-estimate{grid-area:chance}
+.fixture-rubber .projection822-side{display:block;min-width:0;line-height:1.25;font-weight:750}
+.fixture-rubber .projection822-side.favourite{color:var(--good-color)}.fixture-rubber .projection822-side.underdog{color:var(--muted-color)}
+.fixture-rubber .projection-pair-sep{display:inline;min-height:0!important;line-height:inherit!important;font-size:inherit!important;padding:0 .2em!important}
+.fixture-rubber-id{text-align:center;font-size:11px;font-weight:bold;color:var(--muted-color)}
+body.section-loading :is(.main-nav,#statusStrip,#teamCards,#exportCompleteBtn,#exportSectionBtn,#roundBtn){pointer-events:none}
+#statusStrip:empty{min-height:68px}
+@media(max-width:680px){#statusStrip:empty{min-height:114px}}
+@media(max-width:680px){
+ .lineup-position-grid{display:grid;grid-template-columns:1fr!important}
+ .lineup-position-grid label{display:grid;grid-template-columns:28px minmax(0,1fr)!important;align-items:center;gap:8px}
+ .lineup-position-grid select{width:100%;min-width:0}
+ .release82-overlay .settings-sheet{width:100%!important;max-width:100%!important;height:100dvh;max-height:100dvh;left:0;top:0;transform:none}
+ .overlay:not(#moreSettingsOverlay):not(#modeSwitchOverlay) [role="dialog"]{padding-top:calc(24px + env(safe-area-inset-top))!important}
+}
+.fixture-rubber .projection822-side .person{line-height:1.25}

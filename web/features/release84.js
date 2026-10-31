@@ -1,0 +1,6 @@
+/* Sticky panels follow the measured team tabs, including wrapped phone rows. */
+(function(){'use strict';const unstable='.main-nav,#statusStrip,#teamCards,#exportCompleteBtn,#exportSectionBtn,#roundBtn';let loadingPress=false;document.addEventListener('pointerdown',e=>{loadingPress=document.body.classList.contains('section-loading')&&!!e.target.closest(unstable)},true);document.addEventListener('click',e=>{if(e.target.closest(unstable)&&(loadingPress||document.body.classList.contains('section-loading'))){e.preventDefault();e.stopImmediatePropagation()}loadingPress=false},true);const nav=document.querySelector('.main-nav'),teams=document.querySelector('#teamCards');
+ function stickyHeight(node){if(!node||!node.getClientRects().length||getComputedStyle(node).position!=='sticky')return 0;return node.getBoundingClientRect().height+(parseFloat(getComputedStyle(node).top)||0)}
+ function measure(){document.documentElement.style.setProperty('--nav-sticky-height',stickyHeight(nav)+'px');document.documentElement.style.setProperty('--team-tabs-height',stickyHeight(teams)+'px')}
+ if(typeof ResizeObserver!=='undefined'){const observer=new ResizeObserver(measure);for(const node of [nav,teams])if(node)observer.observe(node)}window.addEventListener('resize',measure);window.addEventListener('brta-section-ready',measure);measure();
+})();

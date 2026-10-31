@@ -6,7 +6,6 @@
   const parentRelease=releases.find(r=>['major','large'].includes(r.size))||latest,patches=releases.slice(0,releases.indexOf(parentRelease));
   let overlay;
   let returnFocus;
-  let inertState = [];
   const escape = value => String(value).replace(/[&<>"']/g, character => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[character]));
 
   function dateLabel(release) {
@@ -71,9 +70,8 @@
     ensureOverlay();
     if (!overlay.classList.contains('hidden')) return;
     returnFocus = document.activeElement;
-    inertState = [...document.body.children].filter(element => element !== overlay).map(element => [element, element.inert]);
-    inertState.forEach(([element]) => { element.inert = true; });
     overlay.classList.remove('hidden');
+    root.BRTAOverlays.lock(overlay);
     document.body.classList.add('modal-open');
     setTab('latest', true);
   }
@@ -81,8 +79,7 @@
   function close() {
     if (!overlay || overlay.classList.contains('hidden')) return;
     overlay.classList.add('hidden');
-    inertState.forEach(([element, wasInert]) => { element.inert = wasInert; });
-    inertState = [];
+    root.BRTAOverlays.unlock(overlay);
     if (!document.querySelector('.overlay:not(.hidden)')) document.body.classList.remove('modal-open');
     if (returnFocus?.isConnected) returnFocus.focus({preventScroll:true});
   }
@@ -155,3 +152,4 @@
 
   root.BRTAChangelog = Object.freeze({version:latest.version, settingsHTML, open, close});
 })(window);
+

@@ -41,8 +41,8 @@ vm.runInContext("ratingScope='history';ratingView='singles';$('#search').value='
 vm.runInContext("ratingScope='section';$('#search').value='';renderRatings()",ctx);
 click('#settingsBtn');await tick();click('#showExtrasBtn');await tick();click('[data-more-settings]');await tick();esc();await tick();assert(w.document.querySelector('#moreSettingsOverlay').classList.contains('hidden'));assert(!w.document.querySelector('#settingsOverlay').classList.contains('hidden'));console.log('More Settings gate uses its own Escape cleanup and restores Settings');esc();await tick();
 
-vm.runInContext("D.meta.ratingModel='V3B';D.singles[0].rating+=100;openProfile(D.singles[0].player)",ctx);await tick();click('#profileContent [data-follow82-kind]');await tick();const pinned=JSON.parse(w.localStorage.getItem('brta-following-v1')).pins[0];assert.equal(pinned.ratingModel,'V3B');
-const modelBefore=w.layoutApplyModel;w.layoutApplyModel=async(data,model)=>{assert.equal(model,'RM3b');const copy=structuredClone(data);copy.meta.ratingModel='V3B';copy.singles.find(r=>r.player===pinned.name).rating+=100;return copy};await w.BRTAFollowing.check();const afterCheck=JSON.parse(w.localStorage.getItem('brta-following-v1')).pins[0];assert.equal(afterCheck.ratingChange,0);assert.equal(afterCheck.summary.rating,pinned.summary.rating);w.layoutApplyModel=modelBefore;esc();await tick();esc();await tick();console.log('Following discards malformed pins and compares RM3b summaries within the same model');
+vm.runInContext("D.meta.ratingModel='V3B';D.meta.predictionModel='RM3b';D.singles[0].rating+=100;openProfile(D.singles[0].player)",ctx);await tick();click('#profileContent [data-follow82-kind]');await tick();const pinned=JSON.parse(w.localStorage.getItem('brta-following-v1')).pins[0];assert.equal(pinned.ratingModel,'V3B');
+const modelBefore=w.layoutApplyModel;w.layoutApplyModel=async(data,model)=>{assert.equal(model,'RM3b');const copy=await modelBefore(data,'RM3');copy.meta.ratingModel='V3B';copy.meta.predictionModel='RM3b';copy.singles.find(r=>r.player===pinned.name).rating+=100;return copy};await w.BRTAFollowing.check();const afterCheck=JSON.parse(w.localStorage.getItem('brta-following-v1')).pins[0];assert.equal(afterCheck.ratingChange,0);assert.equal(afterCheck.summary.rating,pinned.summary.rating);w.layoutApplyModel=modelBefore;esc();await tick();esc();await tick();console.log('Following discards malformed pins and compares RM3b summaries within the same model');
 
 await vm.runInContext("(async()=>{ratingScope='section';ratingView='singles';await loadSection('TN003');openProfile(dinds[0].player)})()",ctx);await tick();
 assert(w.document.querySelector('[data-rating="singles"]').hidden);assert(w.document.querySelector('[data-rating="overall"]').hidden);
@@ -58,4 +58,5 @@ vm.runInContext("BRTATeamLabUI.open(D.results[0].fixtures[0].home)",ctx);await t
 click('[data-team822-expand]');await tick();assert(w.document.querySelector('#teamLabContent').classList.contains('team823-expanded'));
 console.log('Rubbers records, honest outcome-only scorecards and full Team Explorer expansion passed');
 if(errors.length)throw Error(errors.join('\n'));console.log('No script/runtime errors');dom.window.close();})().catch(e=>{console.error(e.stack);console.error(errors);dom.window.close();process.exitCode=1});
+
 

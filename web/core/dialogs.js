@@ -3,11 +3,26 @@
   'use strict';
   const callbacks=new Map(),opened=new Map(),focusCandidates=new WeakMap();
   let previousFocus=document.activeElement;
+  const locks=new Map(),originalInert=new Map();
+  function reconcileLocks(){
+    for(const owner of locks.keys())if(!owner.isConnected||owner.classList.contains('hidden')||owner.hidden)locks.delete(owner);
+    if(!locks.size){for(const [node,value]of originalInert)if(node.isConnected)node.inert=value;originalInert.clear();return}
+    const dialogs=[...document.querySelectorAll('.overlay:not(.hidden)')].filter(e=>!e.hidden&&getComputedStyle(e).display!=='none').sort((a,b)=>(Number(getComputedStyle(a).zIndex)||0)-(Number(getComputedStyle(b).zIndex)||0)),front=dialogs.at(-1);
+    for(const node of document.body.children){
+      if(!originalInert.has(node))originalInert.set(node,node.inert);
+      const exempt=node===front||node.hasAttribute('data-floating-translator')||[...locks.values()].some(ids=>ids.includes(node.id));
+      node.inert=exempt?false:true;
+    }
+  }
+  function lock(owner,exempt=[]){const others=[...document.querySelectorAll('.overlay:not(.hidden)')].filter(e=>e!==owner);owner.style.zIndex=String(Math.max(30,...others.map(e=>Number(getComputedStyle(e).zIndex)||0))+2);locks.set(owner,exempt);reconcileLocks()}
+  function unlock(owner){locks.delete(owner);reconcileLocks()}
+
   const visible=element=>element.isConnected&&!element.hidden&&!element.closest('.hidden,[hidden],[inert]')&&getComputedStyle(element).display!=='none'&&getComputedStyle(element).visibility!=='hidden';
   function layers(){return [...document.querySelectorAll('.overlay:not(.hidden)')].filter(visible).sort((a,b)=>(Number(getComputedStyle(a).zIndex)||0)-(Number(getComputedStyle(b).zIndex)||0));}
   const top=()=>layers().at(-1);
   const controls=overlay=>[...overlay.querySelectorAll('button,input,select,textarea,a[href],summary,[tabindex]')].filter(e=>!e.disabled&&e.tabIndex>=0&&visible(e)&&e.getClientRects().length);
   function sync(){
+    reconcileLocks();
     for(const [overlay,focus] of opened){
       if(overlay.isConnected&&!overlay.classList.contains('hidden'))continue;
       opened.delete(overlay);
@@ -26,7 +41,7 @@
     for(const sheet of document.querySelectorAll('[data-dialog-auto-label]')){const title=sheet.querySelector('h2');if(title&&sheet.getAttribute('aria-label')!==title.textContent)sheet.setAttribute('aria-label',title.textContent);}
     document.body.classList.toggle('modal-open',!!document.querySelector('.overlay:not(.hidden)'));
   }
-  new MutationObserver(sync).observe(document.body,{subtree:true,childList:true,attributes:true,attributeFilter:['class']});
+  new MutationObserver(sync).observe(document.body,{subtree:true,childList:true,attributes:true,attributeFilter:['class','hidden']});
   root.addEventListener('focusin',event=>{const overlay=event.target.closest?.('.overlay');if(overlay&&!opened.has(overlay)&&!focusCandidates.has(overlay))focusCandidates.set(overlay,previousFocus);previousFocus=event.target;},true);
   root.addEventListener('keydown',event=>{
     if(event.target.closest?.('[data-floating-translator]'))return;
@@ -49,5 +64,6 @@
       event.stopImmediatePropagation();
     }
   },true);
-  root.BRTAOverlays={top,register:(id,callback)=>callbacks.set(id,callback)};
+  root.BRTAOverlays={top,lock,unlock,sync,register:(id,callback)=>callbacks.set(id,callback)};
 })(window);
+

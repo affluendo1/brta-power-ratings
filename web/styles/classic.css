@@ -139,7 +139,7 @@ html[data-interface="classic"] :is(.tl-roster-row,.lineup-week-players li){paddi
 html[data-interface="classic"] .fixture-forecast .overlay-title{padding:6px 36px 6px 8px}
 html[data-interface="classic"] .fixture-forecast .overlay-title h2{font-size:22px;margin:3px 0 0}
 html[data-interface="classic"] .prediction-summary>div{padding:7px;border:1px solid var(--border-color);background:var(--surface)}
-html[data-interface="classic"] .fixture-rubber .prediction-rubber{border:1px solid var(--border-color)!important;background:var(--surface);min-height:46px;padding:7px 10px}
+html[data-interface="classic"] .fixture-rubber .prediction-rubber{border:0!important;background:none;min-height:46px;padding:7px 10px}
 html[data-interface="classic"] .fixture-rubber .projection822-side{font-family:Arial,sans-serif}
 html[data-interface="classic"] .prediction-estimate{border:2px outset var(--classic-edge);background:var(--classic-button);color:var(--classic-button-ink);min-height:30px;padding:4px}
 html[data-interface="classic"] .projection822-side .person{color:inherit}
@@ -175,3 +175,28 @@ html[data-interface="classic"] .legacy-extra{color:#800080}html[data-interface="
 @media(prefers-color-scheme:dark){html[data-interface="classic"][data-theme="auto"] .legacy-extra{color:#d8b0ff}}
 html[data-interface="classic"] body{min-width:0}
 html[data-interface="classic"] [role="dialog"]{border:3px outset var(--classic-edge);background:var(--surface-raised)}
+
+/* Complete the old-web treatment for secondary screens and utility dialogs. */
+html[data-interface="classic"] :is(*,*::before,*::after){background-image:none!important;text-shadow:none!important}
+html[data-interface="classic"] :is(h1,h2,h3,h4){font-family:"Times New Roman",Times,serif!important;letter-spacing:normal;text-transform:none}
+html[data-interface="classic"] :is(.rounds82-panel,.rounds821-overview,.calendar821-day,.calendar821-detail,.following84-list,.following84-row,.follow82-note,.team822-explorer,.prediction-verdict,.prediction-rubbers,.share82-options,.share82-preview,.theme821-card,.studio-palette,.club822-panel,.club-panel,.ca-panel,.ca-card,.notification82-row,.release-entry,.release-latest,.release-patch){background:var(--surface);color:var(--text-color);border:1px solid var(--border-color)}
+html[data-interface="classic"] :is(.rounds82-head,.calendar821-toolbar,.team822-explorer>header,.following84-updates>h3,.round84-nav){padding:5px 8px;background:var(--surface-muted);border-bottom:1px solid var(--border-color)}
+html[data-interface="classic"] :is(.rounds82-grid,.release82-actions,.following84,.calendar84-event){gap:10px}
+html[data-interface="classic"] .calendar821-grid{gap:1px;background:var(--border-color);border:1px solid var(--border-color)}
+html[data-interface="classic"] .calendar821-weekday{padding:4px;background:var(--header-bg);color:#fff;font:12px Arial,sans-serif}
+html[data-interface="classic"] .calendar821-day{border:0;min-height:75px;padding:4px;background:var(--surface);color:var(--text-color)}
+html[data-interface="classic"] .calendar821-day.outside{background:var(--surface-muted)}
+html[data-interface="classic"] .calendar821-event{font:11px/1.2 Arial,sans-serif;background:var(--classic-button);color:var(--classic-button-ink);border:2px outset var(--classic-edge);padding:3px;white-space:normal}
+html[data-interface="classic"] .calendar821-day.today{outline:2px solid var(--classic-link);outline-offset:-2px}
+html[data-interface="classic"] .following84-row :is(h3,p){margin:0 0 6px}.following84-record{font-size:14px}
+html[data-interface="classic"] .following84-toggle input{appearance:auto;width:auto;height:auto}
+html[data-interface="classic"] .following84-actions .button{font:12px Arial,sans-serif;padding:4px 7px;min-height:26px}
+html[data-interface="classic"] :is(.prediction-verdict,.team822-explorer){border:2px groove var(--classic-edge)}
+html[data-interface="classic"] .prediction-verdict h3{font-size:20px}.round84-arrow{border-radius:0}
+html[data-interface="classic"] :is(.calendar821-toolbar h3,.rounds82-head h2){font-size:18px;text-decoration:underline}
+html[data-interface="classic"] .release-entry summary{font-family:Arial,sans-serif}
+html[data-interface="classic"] .band-keys .band-key{border:1px solid var(--border-color);border-left:4px solid var(--band-color);background:color-mix(in srgb,var(--band-color) 10%,var(--surface));text-align:left}
+html[data-interface="classic"] .band-keys .band-key[aria-pressed="true"]{border-style:inset;outline:2px solid var(--band-color);background:color-mix(in srgb,var(--band-color) 25%,var(--surface))}
+html[data-interface="classic"] .team822-matches .match-row{font:13px Arial,sans-serif;background:var(--surface);color:var(--text-color);border:0;border-bottom:1px solid var(--border-color);padding:8px}
+@media(max-width:680px){html[data-interface="classic"] body>.site-header{padding-top:calc(24px + env(safe-area-inset-top))}html[data-interface="classic"] .calendar821-day{min-height:62px;padding:2px}html[data-interface="classic"] .calendar821-event{font-size:10px}html[data-interface="classic"] .rounds821-overlay .settings-sheet{padding:10px}}
+@media(max-width:680px){html[data-interface="classic"] .lineup-position-grid{grid-template-columns:1fr!important}html[data-interface="classic"] .lineup-position-grid label{grid-template-columns:28px minmax(0,1fr)!important}}

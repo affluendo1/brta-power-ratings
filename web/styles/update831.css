@@ -43,7 +43,7 @@
 .guide-band{display:grid;grid-template-columns:8px 1fr auto;gap:10px;align-items:center;padding:14px 16px;background:var(--surface);font-size:14px}
 .guide-band i{width:7px;height:24px;border-radius:3px;background:var(--band-color)}
 .guide-band span{font-size:12px;color:var(--muted-color);white-space:nowrap}
-.band831-0{--band-color:#bb8c21}.band831-1{--band-color:#a783d8}.band831-2{--band-color:#6c9edf}.band831-3{--band-color:#4cafa0}.band831-4{--band-color:#8d9a83}.band831-5{--band-color:#c69d65}.band831-6{--band-color:#d5846d}.band831-7{--band-color:#c6657c}
+.band831-0{--band-color:#bb8c21}.band831-1{--band-color:#a783d8}.band831-2{--band-color:#6c9edf}.band831-3{--band-color:#4cafa0}.band831-4{--band-color:#8d9a83}.band831-5{--band-color:#c69d65}.band831-6{--band-color:var(--band-6)}.band831-7{--band-color:var(--band-7)}
 .guide-evidence small,.guide-points small{display:block;font-size:10px;color:var(--muted-color);font-weight:750;letter-spacing:.05em}
 .guide-evidence b{display:block;font-size:26px;line-height:1.2;margin:12px 0 8px}
 .guide-evidence span{font-size:12px;color:var(--muted-color);display:block;line-height:1.5}
@@ -74,7 +74,7 @@
 .lineup-week-players{list-style:none;counter-reset:lineup;padding:0;margin:0 0 12px;display:grid;gap:0;border-top:1px solid var(--border-color)}.lineup-week-players li{counter-increment:lineup;display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid var(--border-color);font-size:16px}.lineup-week-players li:before{content:counter(lineup);display:grid;place-items:center;width:26px;height:26px;flex-shrink:0;border-radius:50%;background:var(--surface-muted);color:var(--muted-color);font-size:12px}.lineup-week-players .person{font-size:inherit;font-weight:750;white-space:normal;text-align:left}
 .lineup-week-pairs{display:grid;gap:10px;margin:14px 0}.lineup-week-pairs small{display:block;color:var(--muted-color);font-size:11px;margin-bottom:2px}.lineup-week-pairs b{font-size:14px;line-height:1.5}
 .band-keys{grid-template-columns:repeat(4,minmax(0,1fr))}.band-key{min-width:0}.band-key span{min-width:0}.band-key b{white-space:normal}
-.band-key.b6,.band-divider.b6{--band-color:#d5846d}.band-key.b7,.band-divider.b7{--band-color:#c6657c}
+.band-key.b6,.band-divider.b6{--band-color:var(--band-6)}.band-key.b7,.band-divider.b7{--band-color:var(--band-7)}
 @media(max-width:680px){
  #layoutOverlay{padding:8px;padding-top:max(8px,env(safe-area-inset-top));padding-bottom:max(8px,env(safe-area-inset-bottom))}
  #layoutOverlay .settings-sheet{width:100%;max-height:calc(100dvh - max(8px,env(safe-area-inset-top)) - max(8px,env(safe-area-inset-bottom)));padding:18px 16px;border-radius:12px}
@@ -96,43 +96,8 @@
 
 .rm2-extra{color:#9c70c9}.rm2-extra.guide-section{padding:20px;border:1px solid #9c70c9;border-radius:10px}.rm2-extra .guide-heading h3,.rm2-extra .guide-heading>span{color:#9c70c9}.rm2-extra .default-field{display:grid;gap:8px;margin:14px 0}.rm2-extra .default-field select{width:100%}
 
-#page-ratings[data-band-count="8"] .b6{--band-color:#d5846d}#page-ratings[data-band-count="8"] .b7{--band-color:#c6657c}
+#page-ratings[data-band-count="8"] .b6{--band-color:var(--band-6)}#page-ratings[data-band-count="8"] .b7{--band-color:var(--band-7)}
 
 .lineup-position-grid select{font-size:15px!important;min-height:44px;width:100%;min-width:0}.lineup-position-grid label{min-width:0}.lineup-week>summary strong small{display:block;font-size:11px;font-weight:500;color:var(--muted-color);text-align:right;margin-top:4px}
 @media(max-width:680px){.lineup-position-grid{grid-template-columns:1fr}.lineup-position-grid select{font-size:15px!important}}
 
-/* Fixture overview: all rubbers first; lineup editing opens when needed. */
-.fixture-forecast .overlay-title{margin-bottom:10px;padding-bottom:10px}
-.fixture-forecast .overlay-title h2{font-size:clamp(22px,2.5vw,30px);line-height:1.2;margin:5px 44px 0 0}
-.fixture-forecast .overlay-title .kicker{font-size:10px}
-.fixture-forecast .prediction-summary{grid-template-columns:repeat(3,minmax(0,1fr));margin:10px 0;gap:8px}
-.fixture-forecast .prediction-summary>div{padding:10px 12px}.fixture-forecast .prediction-summary b{font-size:24px;line-height:1.15}.fixture-forecast .prediction-summary span{font-size:11px;line-height:1.35;margin-bottom:4px}
-.projection-section-heading{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:12px 0 8px}.projection-section-heading h3{font-size:16px;margin:0}.projection-section-heading .projection-tap-hint{max-width:none;padding:0}
-.fixture-forecast .prediction-rubbers{gap:6px}
-.fixture-rubber{display:grid;grid-template-columns:26px minmax(0,1fr);align-items:center;gap:8px;min-width:0}
-.fixture-rubber-id{font-size:11px;font-weight:800;color:var(--muted-color);text-align:center;white-space:nowrap}
-.fixture-rubber .prediction-rubber{grid-template-areas:'home chance away';grid-template-columns:minmax(0,1fr) 112px minmax(0,1fr);gap:12px;padding:10px 16px;min-height:58px;border-radius:8px;font-size:16px}
-.fixture-rubber .prediction-rubber>.projection822-side:first-child{grid-area:home;font-size:inherit;text-transform:none;letter-spacing:normal}
-.fixture-rubber .projection822-side{display:block;line-height:1.35;font-weight:750}
-.fixture-rubber .projection822-side.favourite{color:var(--good-color)}.fixture-rubber .projection822-side.underdog{color:var(--muted-color)}
-.fixture-rubber .projection-pair-sep{display:inline;padding:0 .25em!important;min-height:0;font-size:inherit!important;line-height:inherit!important;color:inherit}
-.fixture-rubber .prediction-estimate{align-self:center;min-height:38px;padding:8px 4px;font-size:14px}
-.fixture-forecast .simulation-actions{margin:12px 0}.fixture-forecast .simulation-actions .button{min-height:42px;font-size:14px}
-.prediction-lineups{margin-top:10px}.prediction-lineups>summary{cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:42px;padding:10px 14px;border:1px solid var(--border-color);border-radius:8px;font-size:14px;font-weight:750;list-style:none;background:var(--surface)}.prediction-lineups>summary::-webkit-details-marker{display:none}.prediction-lineups>summary:after{content:'+';font-size:20px;line-height:1}.prediction-lineups[open]>summary:after{content:'−'}.prediction-lineups .lineup-pickers{margin-top:12px}
-@media(max-width:680px){
- .fixture-forecast .overlay-title h2{font-size:22px}.fixture-forecast .prediction-summary{gap:6px}.fixture-forecast .prediction-summary>div{padding:9px}.fixture-forecast .prediction-summary b{font-size:22px}.fixture-forecast .prediction-summary span{font-size:10px}
- .fixture-rubber{grid-template-columns:20px minmax(0,1fr);gap:6px}.fixture-rubber-id{font-size:10px}.fixture-rubber .prediction-rubber{grid-template-columns:minmax(0,1fr) 80px minmax(0,1fr);padding:8px;gap:8px;min-height:54px;font-size:14px}.fixture-rubber .prediction-estimate{font-size:12px;min-height:36px;padding:8px 2px}
- .projection-section-heading h3{font-size:15px}.projection-section-heading .projection-tap-hint{font-size:10px}.fixture-forecast .prediction-section{margin-top:10px}.fixture-forecast .simulation-actions .button{width:100%}
-}
-@media(max-height:720px){
- .fixture-forecast .overlay-title{padding-bottom:6px;margin-bottom:6px}.fixture-forecast .overlay-title h2{font-size:20px}.fixture-forecast .prediction-summary{margin:6px 0;gap:5px}.fixture-forecast .prediction-summary>div{padding:6px 8px}.fixture-forecast .prediction-summary b{font-size:20px}.fixture-forecast .prediction-summary span{font-size:10px}.fixture-forecast .projection-section-heading{display:none}.fixture-forecast .prediction-rubbers{gap:4px}.fixture-rubber .prediction-rubber{padding:6px 8px;min-height:44px;font-size:14px}.fixture-rubber .projection822-side,.fixture-rubber .projection822-side .person{line-height:1.2}.fixture-rubber .prediction-estimate{min-height:32px;padding:6px 2px}.fixture-forecast .simulation-actions{margin:7px 0}.fixture-forecast .simulation-actions .button,.prediction-lineups>summary{min-height:36px;padding-block:8px}.prediction-lineups{margin-top:7px}
-}
-
-.fixture-forecast .overlay-title h2{margin-right:0}
-@media(max-width:360px){
- .fixture-rubber .prediction-rubber{grid-template-columns:minmax(0,1fr) 70px;grid-template-areas:'home chance' 'away chance';gap:2px 8px;padding:6px 8px;min-height:46px;font-size:14px}
- .fixture-rubber .prediction-rubber .projection822-side:last-child{text-align:left}
- .fixture-rubber .prediction-rubber .projection822-side .person{overflow-wrap:normal;word-break:normal}
- .fixture-controls{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:8px;margin-top:8px;align-items:start}
- .fixture-controls .simulation-actions,.fixture-controls .prediction-lineups{margin:0}.fixture-controls .simulation-actions .button{min-height:40px;padding:8px;font-size:12px;width:100%}.fixture-controls .prediction-lineups>summary{min-height:40px;padding:8px 10px;font-size:12px}.fixture-controls .prediction-lineups[open]{grid-column:1/-1}.fixture-controls:has(.prediction-lineups[open]){display:block}.fixture-controls:has(.prediction-lineups[open]) .simulation-actions{margin-bottom:8px}
-}
