@@ -183,3 +183,20 @@ Prediction Centre now lists singles first and removes the cosmetic simulation
 order preference. It does not estimate a psychological carry-over effect from
 an earlier rubber. Lineup editing is collapsed behind its own control; labels
 sit outside matchup cards so probability controls align with the entire row.
+
+## 8.3.2: RM1 launch restoration
+
+Jayden identifies RM1 as the website’s launch model. The first README
+(`50f42825626cfe6e0cc472a0954d73f03f1fd0a2`) and launch HTML
+(`ab46f0786baa2a80d2756dc0e19d850ddc69391e`) state the full formula:
+game scale 0.75, match scale 0.55, match weight 1.8, L2 0.75, round decay
+0.90, and original display 1000 + 250 × centred strength. The script added
+in `6388eeb`, restored as RM2 in 8.3.1, states identical coefficients.
+
+The RM1 option faithfully exposes the launch formula and shares the tested
+legacy fitting implementation with RM2. Matching centres therefore produce
+matching ratings, rather than manufactured differences between the archived
+versions. As with RM2, the selected 1500/2000 origin replaces the original
+1000 origin, valid-score filtering is retained, doubles uses a documented
+extension, and approximate centred Hessian uncertainty is added. Each legacy
+option has its own More Settings unlock and is hidden while Extras is off.

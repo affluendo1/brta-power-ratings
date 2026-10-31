@@ -1,6 +1,6 @@
 # BRTA Power Ratings
 
-**Current version: 8.3.1**
+**Current version: 8.3.2**
 
 The default model is **RM4.1 Ensemble** (experimental), with **RM4a**, **RM4b**,
 **RM3** and **RM3b** available in Settings. Existing explicit model preferences
@@ -9,6 +9,11 @@ The centre changes the origin, preserving gaps and forecasts. RM4.1 has an expan
 Power scale (765 × latent skill, versus RM4b’s 450); uncertainty, history and
 rating differences expand together. This is a display scale, not a new fitted model.
 RM4.1 uses RM4b leaderboard strength with a separate frozen prediction blend.
+
+8.3.2 rebuilds Classic with a table masthead, native-looking controls, dense
+bordered tables and plain reading pages. RM1 joins the optional legacy models.
+Its launch formula and the saved RM2 script have matching coefficients; both
+use the selected rating centre.
 
 8.3.1 redesigns Methodology and BRTA Rules, makes forecasts readable on phones,
 and introduces eight robust distribution-based bands shared by ranked and provisional

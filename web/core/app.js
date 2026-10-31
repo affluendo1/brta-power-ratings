@@ -97,18 +97,19 @@ function exportModelAudit(){
     fixture_id:fixture.fixtureId,date:fixture.date??round.date,round:fixture.round??round.round,status:fixture.status,
     home_team:fixture.home,away_team:fixture.away,...rubber
   }))));
+  const legacy=['RM1','RM2'].includes(D.meta.predictionModel);
   const audit={
     export_type:'BRTA Power Ratings calculation audit',
     generated_at:new Date().toISOString(),
     disclaimer:D.meta.is_custom?'Custom section calculated from locally entered scorecards.':'Unofficial analysis. Official-as-entered TROLS scorecards are the source data.',
     section:D.meta,
     model:{
-      version:D.meta.predictionModel||(D.meta.ratingModel==='V3B'?'RM3b':'RM3'),rating_parameters:D.rm4?BRTARM4.config[D.rm4.base]:{gameScale:.75,l2:5},prediction_calibration:D.rm4?window.BRTARM4Frozen?.ensemble:null,
+      version:D.meta.predictionModel||(D.meta.ratingModel==='V3B'?'RM3b':'RM3'),rating_parameters:D.rm4?BRTARM4.config[D.rm4.base]:legacy?{gameScale:.75,matchScale:.55,matchWeight:1.8,l2:.75,roundDecay:.9}:{gameScale:.75,l2:5},prediction_calibration:D.rm4?window.BRTARM4Frozen?.ensemble:null,
       ...(D.meta.ratingModel==='V3B'?{evidence_weights:D.meta.ratingWeights,match_tiebreak_evidence:'2 total game-equivalent units split by points won',uncertainty:'Approximate Hessian uncertainty for correlated composite evidence'}:{}),
       game_probability:D.rm4?'logistic(latent gap); native tiebreak point log-odds = 0.4 * gap':'logistic((theta_i - theta_j) / 0.75)',
-      score_likelihood:D.rm4?(D.rm4.base==='RM4a'?'Stopped tennis score likelihood with bounded outcome-only tiebreaks':'Games plus 0.25 times set/match evidence, with bounded match-tiebreak evidence'):D.meta.ratingModel==='V3B'?'weighted_home_evidence * log(p) + weighted_away_evidence * log(1 - p)':'games_for * log(p) + games_against * log(1 - p)',
-      match_date_weight:'2^(-age_days / 365)',
-      regularisation:D.rm4?'Correlated singles/doubles Gaussian prior; see rating_parameters':'L2 penalty: (5 / 2) * sum(theta_i^2)',
+      score_likelihood:legacy?'Game likelihood plus 1.8 times match-outcome likelihood':D.rm4?(D.rm4.base==='RM4a'?'Stopped tennis score likelihood with bounded outcome-only tiebreaks':'Games plus 0.25 times set/match evidence, with bounded match-tiebreak evidence'):D.meta.ratingModel==='V3B'?'weighted_home_evidence * log(p) + weighted_away_evidence * log(1 - p)':'games_for * log(p) + games_against * log(1 - p)',
+      match_date_weight:legacy?'0.90^(latest_round - round)':'2^(-age_days / 365)',
+      regularisation:legacy?'L2 penalty: (0.75 / 2) * sum(theta_i^2)':D.rm4?'Correlated singles/doubles Gaussian prior; see rating_parameters':'L2 penalty: (5 / 2) * sum(theta_i^2)',
       displayed_power:(D.meta.ratingCentre??2000)+' + '+(D.meta.ratingScale||(D.rm4?450:600))+' * fitted strength',
       publication_thresholds:{singles:'4 completed singles rubbers',doubles_pairs:'2 matches',individual_doubles:'4 appearances, 2 distinct partners and identifiable network position (Rubbers sections show partner-dependent evidence)'}
     },
