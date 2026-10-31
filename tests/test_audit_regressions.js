@@ -18,11 +18,13 @@ async function sectionRaces(){
   console.log('Section request races: stale successes and stale errors cannot overwrite the latest view.');
 }
 async function offline(){
-  const listeners={};let network,putFails=false,cacheFails=false;const entries=new Map();
-  const cache={match:async key=>entries.get(typeof key==='string'?key:key.url),put:async()=>{if(putFails)throw Error('quota')}};
-  const context=vm.createContext({URL,Response,fetch:async()=>{if(network instanceof Error)throw network;return network},caches:{open:async()=>{if(cacheFails)throw Error('private mode');return cache}},self:{registration:{scope:'https://example.test/brta/'},addEventListener:(name,fn)=>listeners[name]=fn}});
+  const listeners={};let network,putFails=false,cacheFails=false,lastFetchOptions,precache;const entries=new Map();
+  const cache={addAll:async requests=>{precache=requests},match:async key=>entries.get(typeof key==='string'?key:key.url),put:async()=>{if(putFails)throw Error('quota')}};
+  const context=vm.createContext({URL,Response,Request,fetch:async(request,options)=>{lastFetchOptions=options;if(network instanceof Error)throw network;return network},caches:{open:async()=>{if(cacheFails)throw Error('private mode');return cache}},self:{registration:{scope:'https://example.test/brta/'},skipWaiting:async()=>{},addEventListener:(name,fn)=>listeners[name]=fn}});
   vm.runInContext(fs.readFileSync(require.resolve('../sw.js'),'utf8'),context);
+  let installed;listeners.install({waitUntil:p=>installed=p});await installed;assert(precache.every(r=>r.cache==='reload'));
   const request=(file,mode='cors')=>({url:'https://example.test/brta/'+file,method:'GET',mode});
+  network=new Response('<html>current</html>');await context.networkFirst(request('index.html','navigate'));assert.equal(lastFetchOptions.cache,'no-cache');
   putFails=true;network=new Response('fresh');assert.equal(await(await context.networkFirst(request('app.js'))).text(),'fresh');
   cacheFails=true;network=new Response('uncached network');assert.equal(await(await context.networkFirst(request('app.js'))).text(),'uncached network');cacheFails=false;
   entries.set('https://example.test/brta/index.html',new Response('<html>shell</html>'));network=Error('offline');
@@ -34,3 +36,4 @@ async function offline(){
   console.log('Offline: data/audio routing, navigation-only HTML, quota errors and unavailable caches passed.');
 }
 (async()=>{await sectionRaces();await offline()})().catch(e=>{console.error(e);process.exitCode=1});
+
