@@ -1,0 +1,29 @@
+{
+  "RM4.2 Ensemble": {
+    "baseline": "RM4.1 Ensemble",
+    "sectionCount": 15,
+    "logLossDifference": -0.0018437130486765442,
+    "sectionBootstrap95": [
+      -0.012331411559278273,
+      0.008949990657374216
+    ]
+  },
+  "RM4.2b": {
+    "baseline": "RM4b",
+    "sectionCount": 15,
+    "logLossDifference": -0.0006831150355927183,
+    "sectionBootstrap95": [
+      -0.007919593747532424,
+      0.006967386241728769
+    ]
+  },
+  "RM Foundation-3": {
+    "baseline": "RM3",
+    "sectionCount": 15,
+    "logLossDifference": 0.0005353764011952648,
+    "sectionBootstrap95": [
+      -0.0026198905711472243,
+      0.004145988221042722
+    ]
+  }
+}
