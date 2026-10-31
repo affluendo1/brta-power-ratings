@@ -1,0 +1,235 @@
+{
+  "comparisons": {
+    "Selected Melody vs RM4.2 Melody": {
+      "n": 7196,
+      "correctCandidate": 5246,
+      "correctBaseline": 5209,
+      "rescued": 121,
+      "spoiled": 84,
+      "logLossDifference": 0.0002361812386598356,
+      "sectionCount": 40,
+      "accuracyDifference95": [
+        0.0011014732204323282,
+        0.008892025405786874
+      ],
+      "logLossDifference95": [
+        -0.0008698732913677927,
+        0.0013482311174761964
+      ]
+    },
+    "Selected Melody vs RM4b": {
+      "n": 7196,
+      "correctCandidate": 5246,
+      "correctBaseline": 5226,
+      "rescued": 135,
+      "spoiled": 115,
+      "logLossDifference": -0.005985060177189536,
+      "sectionCount": 40,
+      "accuracyDifference95": [
+        -0.0013804527885146328,
+        0.0073937153419593345
+      ],
+      "logLossDifference95": [
+        -0.008561753024391518,
+        -0.003667972895181173
+      ]
+    },
+    "Selected Melody vs RM4.1 Ensemble": {
+      "n": 7196,
+      "correctCandidate": 5246,
+      "correctBaseline": 5220,
+      "rescued": 139,
+      "spoiled": 113,
+      "logLossDifference": -0.010188362598957869,
+      "sectionCount": 40,
+      "accuracyDifference95": [
+        -0.0008206811653672548,
+        0.008247422680412371
+      ],
+      "logLossDifference95": [
+        -0.01296233173157915,
+        -0.007684611962263257
+      ]
+    },
+    "Selected Foundation vs RM3": {
+      "n": 7196,
+      "correctCandidate": 5137,
+      "correctBaseline": 5127,
+      "rescued": 91,
+      "spoiled": 81,
+      "logLossDifference": -0.02407822417479804,
+      "sectionCount": 40,
+      "accuracyDifference95": [
+        -0.0018118466898954704,
+        0.004452103978170329
+      ],
+      "logLossDifference95": [
+        -0.02998463630916301,
+        -0.018878289843352884
+      ]
+    },
+    "Selected Foundation vs RM Foundation-3": {
+      "n": 7196,
+      "correctCandidate": 5137,
+      "correctBaseline": 5132,
+      "rescued": 105,
+      "spoiled": 100,
+      "logLossDifference": 0.0020026254300244306,
+      "sectionCount": 40,
+      "accuracyDifference95": [
+        -0.0035531552018192155,
+        0.0049126637554585155
+      ],
+      "logLossDifference95": [
+        0.0007109107497593329,
+        0.0033491778713988347
+      ]
+    }
+  },
+  "byDiscipline": {
+    "Singles": {
+      "n": 4916,
+      "correctCandidate": 3588,
+      "correctBaseline": 3572,
+      "rescued": 76,
+      "spoiled": 60,
+      "logLossDifference": -0.003917884321346249
+    },
+    "Doubles": {
+      "n": 2280,
+      "correctCandidate": 1658,
+      "correctBaseline": 1654,
+      "rescued": 59,
+      "spoiled": 55,
+      "logLossDifference": -0.010442181452332321
+    }
+  },
+  "byFormat": {
+    "multi:Singles": {
+      "n": 65,
+      "correctCandidate": 54,
+      "correctBaseline": 53,
+      "rescued": 1,
+      "spoiled": 0,
+      "logLossDifference": -0.01693156540410958
+    },
+    "set:Doubles": {
+      "n": 2178,
+      "correctCandidate": 1573,
+      "correctBaseline": 1568,
+      "rescued": 59,
+      "spoiled": 54,
+      "logLossDifference": -0.009322808114879049
+    },
+    "set:Singles": {
+      "n": 4620,
+      "correctCandidate": 3350,
+      "correctBaseline": 3336,
+      "rescued": 74,
+      "spoiled": 60,
+      "logLossDifference": -0.0024152754347181015
+    },
+    "green:Singles": {
+      "n": 231,
+      "correctCandidate": 184,
+      "correctBaseline": 183,
+      "rescued": 1,
+      "spoiled": 0,
+      "logLossDifference": -0.030308203740577622
+    },
+    "green:Doubles": {
+      "n": 102,
+      "correctCandidate": 85,
+      "correctBaseline": 86,
+      "rescued": 0,
+      "spoiled": 1,
+      "logLossDifference": -0.03434409448148123
+    }
+  },
+  "byExperience": {
+    "1–2": {
+      "n": 2084,
+      "correctCandidate": 1475,
+      "correctBaseline": 1468,
+      "rescued": 47,
+      "spoiled": 40,
+      "logLossDifference": -0.0046754234026256366
+    },
+    "3–5": {
+      "n": 3363,
+      "correctCandidate": 2468,
+      "correctBaseline": 2466,
+      "rescued": 52,
+      "spoiled": 50,
+      "logLossDifference": -0.005037471493381624
+    },
+    "6+": {
+      "n": 1749,
+      "correctCandidate": 1303,
+      "correctBaseline": 1292,
+      "rescued": 36,
+      "spoiled": 25,
+      "logLossDifference": -0.009367578062745333
+    }
+  },
+  "byPairExperience": {
+    "Singles": {
+      "n": 4916,
+      "correctCandidate": 3588,
+      "correctBaseline": 3572,
+      "rescued": 76,
+      "spoiled": 60,
+      "logLossDifference": -0.003917884321346249
+    },
+    "New pair": {
+      "n": 968,
+      "correctCandidate": 685,
+      "correctBaseline": 681,
+      "rescued": 29,
+      "spoiled": 25,
+      "logLossDifference": -0.0063336200898597515
+    },
+    "1–3 pair meetings": {
+      "n": 1169,
+      "correctCandidate": 866,
+      "correctBaseline": 870,
+      "rescued": 26,
+      "spoiled": 30,
+      "logLossDifference": -0.012109380674844213
+    },
+    "4+ pair meetings": {
+      "n": 143,
+      "correctCandidate": 107,
+      "correctBaseline": 103,
+      "rescued": 4,
+      "spoiled": 0,
+      "logLossDifference": -0.02462491926881514
+    }
+  },
+  "byBaselineConfidence": {
+    "75–100%": {
+      "n": 2026,
+      "correctCandidate": 1813,
+      "correctBaseline": 1813,
+      "rescued": 0,
+      "spoiled": 0,
+      "logLossDifference": -0.009115475820944149
+    },
+    "60–75%": {
+      "n": 2761,
+      "correctCandidate": 2038,
+      "correctBaseline": 2038,
+      "rescued": 0,
+      "spoiled": 0,
+      "logLossDifference": -0.008178820972430917
+    },
+    "50–60%": {
+      "n": 2409,
+      "correctCandidate": 1395,
+      "correctBaseline": 1375,
+      "rescued": 135,
+      "spoiled": 115,
+      "logLossDifference": -0.0008380300194857717
+    }
+  }
+}

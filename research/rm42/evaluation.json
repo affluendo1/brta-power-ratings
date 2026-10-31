@@ -1,0 +1,1021 @@
+{
+  "design": "Development sections: numeric section ID not divisible by 3, rounds 4–7. Assessment: separate sections divisible by 3, rounds 8–14. Strict earlier dates AND rounds; common previously-seen discipline support. Historical data, some previously inspected, not prospective evidence. No assessment targets select coefficients.",
+  "hashes": {
+    "AA002.json": "a80d1a5a9f57b4d9979b6aad820bba8490b3fcb95a0d52ad5e56191f8e6d0c86",
+    "AA003.json": "d043438a015bf43d12142af5b9ef3831e643ffcdabb66d4a0f31f403ff9ceb65",
+    "AA004.json": "1f56587c02aa99c51f13bcd3e293435d916af2b03783a0226599b4aa35e3295c",
+    "AA005.json": "b5312ee574fb69eec2137c1099e65c2650fbf2b25bb24ac9003c4e205a44c4b5",
+    "AA006.json": "fd4a90e11e85704a37542366d542e2d6896e492c117f628acab5e50671fbf3bd",
+    "AA007.json": "1ade68cca08e57ffd9769be693703e1df76bc35cf29ef7b86ec11315ebd0b74a",
+    "AA008.json": "44f79037fcc32861dc61f9ca95fa0d0c0e71ae4682a63e1b3ff9f153b51b2fa2",
+    "AA009.json": "fa1c3acad82442d8533b805589333fb34a97826d7aedf6dcab21f17aab8954cd",
+    "AA010.json": "8ac500eb6609d2ef7f643d107aba7d6e280a904811e5e5131adbcfb3b642213d",
+    "AA011.json": "2577e33aa79e5e1c72f2d0aace4708c5bf1bf90ab8e3a551e4a62eee4dde4a3c",
+    "AA012.json": "868aad205e6e083099dcbee6f79651962cf1983fade1be445f06630c61db7e2d",
+    "AA013.json": "e8f5ba8ad5894653f95fe538eddc35dab15822affc74e57275d018ed68724396",
+    "AA014.json": "066952f16b49b3c6c2177203dae83a823b3260412960bb32c79c593da0767598",
+    "AA015.json": "2d85588c69cfc0feb3378440dbc88075146e7699efa9bf96a29e172bd19262f0",
+    "AA016.json": "763f7fc38c7a9eb61b20d683fcbde3192a9d4b1900730cf799e28b6e28e64cee",
+    "AA017.json": "a2d7d5974b6df5a0d07efab290720687d74045440319e9cd659972a318f26926",
+    "AA018.json": "569abd0a8f2f5b52b6d89f41ba58f996faf706d91e1a0eac87934c75aba7d216",
+    "UA001.json": "57cb66461bad5ac27437cd4b357cce21381f783846fc679cc2d1c8ed2205a33e",
+    "UA002.json": "9d40f7bcc5051f97b44c829e7268a8ad2d3ef4ef1338860b67ebdb507d4004b8",
+    "UA003.json": "57654bddd3a8228bbc6e1fc71a0678cbee3d7936d6872f1896a903048dad786a",
+    "UA004.json": "4b0ad97a2e732ed590d318af303ca8ddd555852c282a9a795b6c27f47ed5ac87",
+    "UA005.json": "eb9de36c3fec620ec2f0610b8a989b3fc1bf896419f665471eec877fcc087140",
+    "UA006.json": "ab00b0d09f6fb2c8d98a812320cf6a5e180747f1a8bf5ddd11c3e6e0e3cd0ac8",
+    "UA007.json": "081fc5926b4e716d45bc1ed699d7f68602ed1ed7d57f43963a8317ae299097f6",
+    "UA008.json": "18ca320cef1febb9de2d25255003535fff4e9e95f763731f308ae119f65620f5",
+    "UA009.json": "d62a418dd0f3274310468657ad9eb50b9de12039f2445bb6576aad07ba418af5",
+    "UA010.json": "80d3bb2266b14dd727aab6d009fbc8ab4514ef0abbbb8aec7126651ea77d61b2",
+    "UA011.json": "e6a60469fd39a0fb116b8cfc046de3eb25d092e5ba4b66c270bf2b4a8a77dbbe",
+    "UA012.json": "7786ac30e27babd7c75674799ebfde56c270e55f3a5cad5537c0559436b8120f",
+    "UA013.json": "7f7a4c4ad01c636dd8e16f78d1c8cd047a3631ec3c8c6170a67c09642da408fe",
+    "UA014.json": "6930f8d181957c71e886bac3830ee2c96eec63a70d865ec0cd9dcd07579ef2b0",
+    "UA015.json": "ed24d3c3047a5f99f6ad6056515f0e6ccf999a3bbddb78cb03da612ef4204a11",
+    "UA016.json": "3bfb5c4d6ff58d32ba5585584dae65bcddf65ce575abf59c20365cafe114fd14",
+    "UA017.json": "a2c3121d47020461fc90becefd3674132f3291db9bcc363e88128259adcbb2ba",
+    "UA018.json": "b6ae8b10c5214cbca6260456ab1c4800d75bb72a2d2308f654b763de08597f2f",
+    "UA019.json": "8754932b96bd3f4623203f8930b4e466d437826365ee7e51be5d3ef40396a12f",
+    "UA020.json": "9dc409e3c7caa7ed18f598c11e282b8d9431302cacedbba6716a402ca25fa01a",
+    "UA021.json": "45fcee77dbc9a9c66c8fadeced2be7d8ad58f6451fc54ffacd094d918a662831",
+    "UA022.json": "232225d5c19824c36318c96db3d2a8108bcd2ddeffd198cf02832212139032f0",
+    "UA023.json": "b516c918314b63c38181c19770468b98d8ae91a62aee5f8ccd60b2db7ff9b0fb",
+    "UA024.json": "ea77c7657e7553d73f463344942ba2d4e2e00cd0b7fc5b56c007754d9571d593",
+    "UA025.json": "5fe4d57f82686e3fd82959c809ce2c81dde0533ede61c345dbed9f6cfded09ef",
+    "UA026.json": "b0ff5b4cd0c7488c2c2a64c031ef8448e54089046cb2f4ffd1fda2074b8dffbd",
+    "UA027.json": "2e6e19ffb04e0b85eebcd52d7db04016aba4d42838547669f3c4d21f054908d6"
+  },
+  "development": {
+    "RM4.1 Ensemble": {
+      "n": 1797,
+      "logLoss": 0.5808149645862084,
+      "brier": 0.19903114262909036,
+      "correct": 1231
+    },
+    "RM3": {
+      "n": 1797,
+      "logLoss": 0.5942921767381804,
+      "brier": 0.20494558143165537,
+      "correct": 1208
+    },
+    "RM4a": {
+      "n": 1797,
+      "logLoss": 0.5743134515992376,
+      "brier": 0.19662117107527693,
+      "correct": 1231
+    },
+    "RM4b": {
+      "n": 1797,
+      "logLoss": 0.573738557676161,
+      "brier": 0.19613049064769547,
+      "correct": 1250
+    },
+    "RM Foundation-3": {
+      "n": 1797,
+      "logLoss": 0.590144902151582,
+      "brier": 0.20357014224279835,
+      "correct": 1205
+    },
+    "RM4.2 Melody": {
+      "n": 1797,
+      "logLoss": 0.5702216664874057,
+      "brier": 0.19529629447793076,
+      "correct": 1230
+    },
+    "RM4.2 Ensemble": {
+      "n": 1797,
+      "logLoss": 0.5702216664874057,
+      "brier": 0.19529629447793076,
+      "correct": 1230
+    }
+  },
+  "assessment": {
+    "RM4.1 Ensemble": {
+      "n": 960,
+      "logLoss": 0.5614449628090584,
+      "brier": 0.1901490248134909,
+      "correct": 682
+    },
+    "RM3": {
+      "n": 960,
+      "logLoss": 0.5715687311862238,
+      "brier": 0.1945317161238934,
+      "correct": 672
+    },
+    "RM4a": {
+      "n": 960,
+      "logLoss": 0.5593927128837454,
+      "brier": 0.1892007606996972,
+      "correct": 679
+    },
+    "RM4b": {
+      "n": 960,
+      "logLoss": 0.5600465753886652,
+      "brier": 0.18920269069290227,
+      "correct": 687
+    },
+    "RM Foundation-3": {
+      "n": 960,
+      "logLoss": 0.5721041075874198,
+      "brier": 0.19468367187721458,
+      "correct": 668
+    },
+    "RM4.2 Melody": {
+      "n": 960,
+      "logLoss": 0.5597712335689063,
+      "brier": 0.18914334361277174,
+      "correct": 675
+    },
+    "RM4.2 Ensemble": {
+      "n": 960,
+      "logLoss": 0.5597712335689063,
+      "brier": 0.18914334361277174,
+      "correct": 675
+    }
+  },
+  "byFormat": {
+    "set:Singles": {
+      "RM4.1 Ensemble": {
+        "n": 586,
+        "logLoss": 0.5458626676646289,
+        "brier": 0.1839344853567589,
+        "correct": 420
+      },
+      "RM3": {
+        "n": 586,
+        "logLoss": 0.5525514928836229,
+        "brier": 0.18667477555340975,
+        "correct": 411
+      },
+      "RM4a": {
+        "n": 586,
+        "logLoss": 0.5462396548977793,
+        "brier": 0.18392134088927345,
+        "correct": 421
+      },
+      "RM4b": {
+        "n": 586,
+        "logLoss": 0.5460726498420082,
+        "brier": 0.18361433591495058,
+        "correct": 431
+      },
+      "RM Foundation-3": {
+        "n": 586,
+        "logLoss": 0.5534969784315013,
+        "brier": 0.1871142270644983,
+        "correct": 410
+      },
+      "RM4.2 Melody": {
+        "n": 586,
+        "logLoss": 0.5457258585384749,
+        "brier": 0.1838849021508313,
+        "correct": 419
+      },
+      "RM4.2 Ensemble": {
+        "n": 586,
+        "logLoss": 0.5457258585384749,
+        "brier": 0.1838849021508313,
+        "correct": 419
+      }
+    },
+    "set:Doubles": {
+      "RM4.1 Ensemble": {
+        "n": 278,
+        "logLoss": 0.5996027900819265,
+        "brier": 0.20614598656352953,
+        "correct": 191
+      },
+      "RM3": {
+        "n": 278,
+        "logLoss": 0.6176433748439062,
+        "brier": 0.21420107513445397,
+        "correct": 189
+      },
+      "RM4a": {
+        "n": 278,
+        "logLoss": 0.5884389086629094,
+        "brier": 0.20219919635232658,
+        "correct": 188
+      },
+      "RM4b": {
+        "n": 278,
+        "logLoss": 0.5901390333522236,
+        "brier": 0.20217757165109176,
+        "correct": 191
+      },
+      "RM Foundation-3": {
+        "n": 278,
+        "logLoss": 0.615874155557628,
+        "brier": 0.21355249054043926,
+        "correct": 187
+      },
+      "RM4.2 Melody": {
+        "n": 278,
+        "logLoss": 0.5874775416040005,
+        "brier": 0.20187960771029734,
+        "correct": 186
+      },
+      "RM4.2 Ensemble": {
+        "n": 278,
+        "logLoss": 0.5874775416040005,
+        "brier": 0.20187960771029734,
+        "correct": 186
+      }
+    },
+    "multi:Singles": {
+      "RM4.1 Ensemble": {
+        "n": 35,
+        "logLoss": 0.5396910673535494,
+        "brier": 0.18046362849898145,
+        "correct": 25
+      },
+      "RM3": {
+        "n": 35,
+        "logLoss": 0.5524357440552211,
+        "brier": 0.18420833748368867,
+        "correct": 25
+      },
+      "RM4a": {
+        "n": 35,
+        "logLoss": 0.5656698994441891,
+        "brier": 0.1888169000944306,
+        "correct": 23
+      },
+      "RM4b": {
+        "n": 35,
+        "logLoss": 0.5527843796254803,
+        "brier": 0.1845344173314258,
+        "correct": 22
+      },
+      "RM Foundation-3": {
+        "n": 35,
+        "logLoss": 0.5492443212707249,
+        "brier": 0.1840494923271566,
+        "correct": 25
+      },
+      "RM4.2 Melody": {
+        "n": 35,
+        "logLoss": 0.5565180451267929,
+        "brier": 0.18715574251146996,
+        "correct": 23
+      },
+      "RM4.2 Ensemble": {
+        "n": 35,
+        "logLoss": 0.5565180451267929,
+        "brier": 0.18715574251146996,
+        "correct": 23
+      }
+    },
+    "green:Singles": {
+      "RM4.1 Ensemble": {
+        "n": 42,
+        "logLoss": 0.5250107696518802,
+        "brier": 0.16969796203838788,
+        "correct": 33
+      },
+      "RM3": {
+        "n": 42,
+        "logLoss": 0.5248635923948078,
+        "brier": 0.17136667309492473,
+        "correct": 34
+      },
+      "RM4a": {
+        "n": 42,
+        "logLoss": 0.5369592698586851,
+        "brier": 0.17200507759989211,
+        "correct": 33
+      },
+      "RM4b": {
+        "n": 42,
+        "logLoss": 0.5420338513254704,
+        "brier": 0.17558522472017432,
+        "correct": 31
+      },
+      "RM Foundation-3": {
+        "n": 42,
+        "logLoss": 0.533082008113925,
+        "brier": 0.16977415909634935,
+        "correct": 34
+      },
+      "RM4.2 Melody": {
+        "n": 42,
+        "logLoss": 0.5544129397182372,
+        "brier": 0.1697054078621814,
+        "correct": 33
+      },
+      "RM4.2 Ensemble": {
+        "n": 42,
+        "logLoss": 0.5544129397182372,
+        "brier": 0.1697054078621814,
+        "correct": 33
+      }
+    },
+    "green:Doubles": {
+      "RM4.1 Ensemble": {
+        "n": 19,
+        "logLoss": 0.6043381957734252,
+        "brier": 0.21080682811330412,
+        "correct": 13
+      },
+      "RM3": {
+        "n": 19,
+        "logLoss": 0.6224435252553557,
+        "brier": 0.2192862123865955,
+        "correct": 13
+      },
+      "RM4a": {
+        "n": 19,
+        "logLoss": 0.5780954829155988,
+        "brier": 0.20056016642883046,
+        "correct": 14
+      },
+      "RM4b": {
+        "n": 19,
+        "logLoss": 0.6039270132222475,
+        "brier": 0.21041753974601904,
+        "correct": 12
+      },
+      "RM Foundation-3": {
+        "n": 19,
+        "logLoss": 0.6339317417253784,
+        "brier": 0.22671308729424525,
+        "correct": 12
+      },
+      "RM4.2 Melody": {
+        "n": 19,
+        "logLoss": 0.6054105004783559,
+        "brier": 0.21160253401568516,
+        "correct": 14
+      },
+      "RM4.2 Ensemble": {
+        "n": 19,
+        "logLoss": 0.6054105004783559,
+        "brier": 0.21160253401568516,
+        "correct": 14
+      }
+    }
+  },
+  "bySection": {
+    "AA003": {
+      "RM4.1 Ensemble": {
+        "n": 73,
+        "logLoss": 0.6954724650583423,
+        "brier": 0.25121277845029377,
+        "correct": 42
+      },
+      "RM3": {
+        "n": 73,
+        "logLoss": 0.6962594041887826,
+        "brier": 0.2522657568415967,
+        "correct": 41
+      },
+      "RM4a": {
+        "n": 73,
+        "logLoss": 0.7409285106557819,
+        "brier": 0.2682693556469942,
+        "correct": 40
+      },
+      "RM4b": {
+        "n": 73,
+        "logLoss": 0.6996403183415725,
+        "brier": 0.25158176167631463,
+        "correct": 42
+      },
+      "RM Foundation-3": {
+        "n": 73,
+        "logLoss": 0.7070796625925613,
+        "brier": 0.25662884225082633,
+        "correct": 40
+      },
+      "RM4.2 Melody": {
+        "n": 73,
+        "logLoss": 0.7439301534134932,
+        "brier": 0.2688718817277527,
+        "correct": 41
+      },
+      "RM4.2 Ensemble": {
+        "n": 73,
+        "logLoss": 0.7439301534134932,
+        "brier": 0.2688718817277527,
+        "correct": 41
+      }
+    },
+    "AA006": {
+      "RM4.1 Ensemble": {
+        "n": 86,
+        "logLoss": 0.5695359571426636,
+        "brier": 0.1947732864138115,
+        "correct": 60
+      },
+      "RM3": {
+        "n": 86,
+        "logLoss": 0.581397236633804,
+        "brier": 0.2002358237494048,
+        "correct": 59
+      },
+      "RM4a": {
+        "n": 86,
+        "logLoss": 0.5679765735338106,
+        "brier": 0.19366820252600309,
+        "correct": 57
+      },
+      "RM4b": {
+        "n": 86,
+        "logLoss": 0.5606615267740871,
+        "brier": 0.19068912207492159,
+        "correct": 58
+      },
+      "RM Foundation-3": {
+        "n": 86,
+        "logLoss": 0.5816786638179409,
+        "brier": 0.20066240069798516,
+        "correct": 59
+      },
+      "RM4.2 Melody": {
+        "n": 86,
+        "logLoss": 0.5665915841517548,
+        "brier": 0.19388522764156943,
+        "correct": 56
+      },
+      "RM4.2 Ensemble": {
+        "n": 86,
+        "logLoss": 0.5665915841517548,
+        "brier": 0.19388522764156943,
+        "correct": 56
+      }
+    },
+    "AA009": {
+      "RM4.1 Ensemble": {
+        "n": 56,
+        "logLoss": 0.46720507209014306,
+        "brier": 0.1429117311378847,
+        "correct": 49
+      },
+      "RM3": {
+        "n": 56,
+        "logLoss": 0.4799627167062342,
+        "brier": 0.1471470713901994,
+        "correct": 47
+      },
+      "RM4a": {
+        "n": 56,
+        "logLoss": 0.44535258429686,
+        "brier": 0.13469905199805376,
+        "correct": 50
+      },
+      "RM4b": {
+        "n": 56,
+        "logLoss": 0.46311888516576966,
+        "brier": 0.14217995367282169,
+        "correct": 49
+      },
+      "RM Foundation-3": {
+        "n": 56,
+        "logLoss": 0.47328009719759473,
+        "brier": 0.145491087894381,
+        "correct": 46
+      },
+      "RM4.2 Melody": {
+        "n": 56,
+        "logLoss": 0.44137206681976704,
+        "brier": 0.13461697797565553,
+        "correct": 48
+      },
+      "RM4.2 Ensemble": {
+        "n": 56,
+        "logLoss": 0.44137206681976704,
+        "brier": 0.13461697797565553,
+        "correct": 48
+      }
+    },
+    "AA012": {
+      "RM4.1 Ensemble": {
+        "n": 46,
+        "logLoss": 0.39055086350562795,
+        "brier": 0.1180281006976221,
+        "correct": 40
+      },
+      "RM3": {
+        "n": 46,
+        "logLoss": 0.40030754045245925,
+        "brier": 0.12377585086650048,
+        "correct": 39
+      },
+      "RM4a": {
+        "n": 46,
+        "logLoss": 0.35506089877011365,
+        "brier": 0.10749295568174831,
+        "correct": 39
+      },
+      "RM4b": {
+        "n": 46,
+        "logLoss": 0.3834537425844453,
+        "brier": 0.1144602761140257,
+        "correct": 41
+      },
+      "RM Foundation-3": {
+        "n": 46,
+        "logLoss": 0.40272245273019736,
+        "brier": 0.12530636828425049,
+        "correct": 39
+      },
+      "RM4.2 Melody": {
+        "n": 46,
+        "logLoss": 0.36183271241113063,
+        "brier": 0.10975433850912142,
+        "correct": 39
+      },
+      "RM4.2 Ensemble": {
+        "n": 46,
+        "logLoss": 0.36183271241113063,
+        "brier": 0.10975433850912142,
+        "correct": 39
+      }
+    },
+    "AA015": {
+      "RM4.1 Ensemble": {
+        "n": 58,
+        "logLoss": 0.5460240833158673,
+        "brier": 0.1855385096345546,
+        "correct": 40
+      },
+      "RM3": {
+        "n": 58,
+        "logLoss": 0.5560516799558538,
+        "brier": 0.18977210152618512,
+        "correct": 40
+      },
+      "RM4a": {
+        "n": 58,
+        "logLoss": 0.5225021238053317,
+        "brier": 0.1764690540905135,
+        "correct": 42
+      },
+      "RM4b": {
+        "n": 58,
+        "logLoss": 0.5468653372222761,
+        "brier": 0.18606250938339788,
+        "correct": 41
+      },
+      "RM Foundation-3": {
+        "n": 58,
+        "logLoss": 0.5509956826254074,
+        "brier": 0.18739922607004247,
+        "correct": 40
+      },
+      "RM4.2 Melody": {
+        "n": 58,
+        "logLoss": 0.5281488319659515,
+        "brier": 0.17909550630305845,
+        "correct": 41
+      },
+      "RM4.2 Ensemble": {
+        "n": 58,
+        "logLoss": 0.5281488319659515,
+        "brier": 0.17909550630305845,
+        "correct": 41
+      }
+    },
+    "AA018": {
+      "RM4.1 Ensemble": {
+        "n": 25,
+        "logLoss": 0.5773002229501799,
+        "brier": 0.19821920918341235,
+        "correct": 18
+      },
+      "RM3": {
+        "n": 25,
+        "logLoss": 0.5811950172331198,
+        "brier": 0.20020592943673832,
+        "correct": 18
+      },
+      "RM4a": {
+        "n": 25,
+        "logLoss": 0.5948473582046312,
+        "brier": 0.20739283594919602,
+        "correct": 16
+      },
+      "RM4b": {
+        "n": 25,
+        "logLoss": 0.5905774614065035,
+        "brier": 0.20484160703245796,
+        "correct": 15
+      },
+      "RM Foundation-3": {
+        "n": 25,
+        "logLoss": 0.5719762436658922,
+        "brier": 0.19638835599391247,
+        "correct": 18
+      },
+      "RM4.2 Melody": {
+        "n": 25,
+        "logLoss": 0.5782474852216741,
+        "brier": 0.20071118903046353,
+        "correct": 16
+      },
+      "RM4.2 Ensemble": {
+        "n": 25,
+        "logLoss": 0.5782474852216741,
+        "brier": 0.20071118903046353,
+        "correct": 16
+      }
+    },
+    "UA003": {
+      "RM4.1 Ensemble": {
+        "n": 23,
+        "logLoss": 0.4349965767906419,
+        "brier": 0.13056919848442303,
+        "correct": 19
+      },
+      "RM3": {
+        "n": 23,
+        "logLoss": 0.4626140782214678,
+        "brier": 0.14024851310125494,
+        "correct": 19
+      },
+      "RM4a": {
+        "n": 23,
+        "logLoss": 0.4109815515635415,
+        "brier": 0.11674502249242963,
+        "correct": 20
+      },
+      "RM4b": {
+        "n": 23,
+        "logLoss": 0.4281438743408888,
+        "brier": 0.12624821366787484,
+        "correct": 19
+      },
+      "RM Foundation-3": {
+        "n": 23,
+        "logLoss": 0.4502150471487934,
+        "brier": 0.1375068974358376,
+        "correct": 19
+      },
+      "RM4.2 Melody": {
+        "n": 23,
+        "logLoss": 0.40287383282254163,
+        "brier": 0.11719451146146911,
+        "correct": 20
+      },
+      "RM4.2 Ensemble": {
+        "n": 23,
+        "logLoss": 0.40287383282254163,
+        "brier": 0.11719451146146911,
+        "correct": 20
+      }
+    },
+    "UA006": {
+      "RM4.1 Ensemble": {
+        "n": 88,
+        "logLoss": 0.536091393116596,
+        "brier": 0.1784836785346582,
+        "correct": 64
+      },
+      "RM3": {
+        "n": 88,
+        "logLoss": 0.549378720148312,
+        "brier": 0.18396266478849566,
+        "correct": 61
+      },
+      "RM4a": {
+        "n": 88,
+        "logLoss": 0.515421227822496,
+        "brier": 0.17086143204122187,
+        "correct": 64
+      },
+      "RM4b": {
+        "n": 88,
+        "logLoss": 0.5192655912104895,
+        "brier": 0.1712279162872187,
+        "correct": 68
+      },
+      "RM Foundation-3": {
+        "n": 88,
+        "logLoss": 0.5447347200010791,
+        "brier": 0.18223991054170244,
+        "correct": 61
+      },
+      "RM4.2 Melody": {
+        "n": 88,
+        "logLoss": 0.5090382327239206,
+        "brier": 0.16867953952462808,
+        "correct": 64
+      },
+      "RM4.2 Ensemble": {
+        "n": 88,
+        "logLoss": 0.5090382327239206,
+        "brier": 0.16867953952462808,
+        "correct": 64
+      }
+    },
+    "UA009": {
+      "RM4.1 Ensemble": {
+        "n": 78,
+        "logLoss": 0.4943018456298715,
+        "brier": 0.16339398236856384,
+        "correct": 58
+      },
+      "RM3": {
+        "n": 78,
+        "logLoss": 0.5088662060018622,
+        "brier": 0.1706765478546035,
+        "correct": 58
+      },
+      "RM4a": {
+        "n": 78,
+        "logLoss": 0.4805751769778398,
+        "brier": 0.15957706303018676,
+        "correct": 58
+      },
+      "RM4b": {
+        "n": 78,
+        "logLoss": 0.495651000385302,
+        "brier": 0.16342866048383914,
+        "correct": 59
+      },
+      "RM Foundation-3": {
+        "n": 78,
+        "logLoss": 0.5080834624274612,
+        "brier": 0.16992516120662357,
+        "correct": 58
+      },
+      "RM4.2 Melody": {
+        "n": 78,
+        "logLoss": 0.4785434309782737,
+        "brier": 0.15880354451007841,
+        "correct": 57
+      },
+      "RM4.2 Ensemble": {
+        "n": 78,
+        "logLoss": 0.4785434309782737,
+        "brier": 0.15880354451007841,
+        "correct": 57
+      }
+    },
+    "UA012": {
+      "RM4.1 Ensemble": {
+        "n": 62,
+        "logLoss": 0.5954451795245709,
+        "brier": 0.2043552706375825,
+        "correct": 40
+      },
+      "RM3": {
+        "n": 62,
+        "logLoss": 0.5998911819570547,
+        "brier": 0.20687059822006604,
+        "correct": 41
+      },
+      "RM4a": {
+        "n": 62,
+        "logLoss": 0.6056540996822434,
+        "brier": 0.20752377541935335,
+        "correct": 43
+      },
+      "RM4b": {
+        "n": 62,
+        "logLoss": 0.597964608512522,
+        "brier": 0.2050599337770668,
+        "correct": 43
+      },
+      "RM Foundation-3": {
+        "n": 62,
+        "logLoss": 0.6045338834583265,
+        "brier": 0.20878480890049772,
+        "correct": 40
+      },
+      "RM4.2 Melody": {
+        "n": 62,
+        "logLoss": 0.6048853733809869,
+        "brier": 0.2074777353747062,
+        "correct": 42
+      },
+      "RM4.2 Ensemble": {
+        "n": 62,
+        "logLoss": 0.6048853733809869,
+        "brier": 0.2074777353747062,
+        "correct": 42
+      }
+    },
+    "UA015": {
+      "RM4.1 Ensemble": {
+        "n": 81,
+        "logLoss": 0.607593242528208,
+        "brier": 0.21330366691570818,
+        "correct": 52
+      },
+      "RM3": {
+        "n": 81,
+        "logLoss": 0.6240972348320614,
+        "brier": 0.21942863456074937,
+        "correct": 52
+      },
+      "RM4a": {
+        "n": 81,
+        "logLoss": 0.6053944091292819,
+        "brier": 0.2140583751027695,
+        "correct": 50
+      },
+      "RM4b": {
+        "n": 81,
+        "logLoss": 0.6027240625623803,
+        "brier": 0.21152811469245925,
+        "correct": 49
+      },
+      "RM Foundation-3": {
+        "n": 81,
+        "logLoss": 0.6247875524293829,
+        "brier": 0.21996268908203,
+        "correct": 52
+      },
+      "RM4.2 Melody": {
+        "n": 81,
+        "logLoss": 0.606520829414861,
+        "brier": 0.2148109230982368,
+        "correct": 50
+      },
+      "RM4.2 Ensemble": {
+        "n": 81,
+        "logLoss": 0.606520829414861,
+        "brier": 0.2148109230982368,
+        "correct": 50
+      }
+    },
+    "UA018": {
+      "RM4.1 Ensemble": {
+        "n": 80,
+        "logLoss": 0.6008338831454668,
+        "brier": 0.20820077676228982,
+        "correct": 53
+      },
+      "RM3": {
+        "n": 80,
+        "logLoss": 0.5981211847415915,
+        "brier": 0.20790845702029107,
+        "correct": 51
+      },
+      "RM4a": {
+        "n": 80,
+        "logLoss": 0.6143198635036111,
+        "brier": 0.21422610834950273,
+        "correct": 53
+      },
+      "RM4b": {
+        "n": 80,
+        "logLoss": 0.61169165265252,
+        "brier": 0.21203494540792187,
+        "correct": 54
+      },
+      "RM Foundation-3": {
+        "n": 80,
+        "logLoss": 0.5926597096584966,
+        "brier": 0.20582593773355487,
+        "correct": 51
+      },
+      "RM4.2 Melody": {
+        "n": 80,
+        "logLoss": 0.608578302134546,
+        "brier": 0.21196059163346223,
+        "correct": 53
+      },
+      "RM4.2 Ensemble": {
+        "n": 80,
+        "logLoss": 0.608578302134546,
+        "brier": 0.21196059163346223,
+        "correct": 53
+      }
+    },
+    "UA021": {
+      "RM4.1 Ensemble": {
+        "n": 91,
+        "logLoss": 0.5815600515555774,
+        "brier": 0.1951494758463403,
+        "correct": 67
+      },
+      "RM3": {
+        "n": 91,
+        "logLoss": 0.5955160347268313,
+        "brier": 0.19795657316490978,
+        "correct": 68
+      },
+      "RM4a": {
+        "n": 91,
+        "logLoss": 0.5912689608133971,
+        "brier": 0.19666220621687244,
+        "correct": 66
+      },
+      "RM4b": {
+        "n": 91,
+        "logLoss": 0.5867126338479243,
+        "brier": 0.19818288722774702,
+        "correct": 69
+      },
+      "RM Foundation-3": {
+        "n": 91,
+        "logLoss": 0.5940324321969942,
+        "brier": 0.19806547730400828,
+        "correct": 68
+      },
+      "RM4.2 Melody": {
+        "n": 91,
+        "logLoss": 0.5870350032610064,
+        "brier": 0.19612931276283319,
+        "correct": 67
+      },
+      "RM4.2 Ensemble": {
+        "n": 91,
+        "logLoss": 0.5870350032610064,
+        "brier": 0.19612931276283319,
+        "correct": 67
+      }
+    },
+    "UA024": {
+      "RM4.1 Ensemble": {
+        "n": 52,
+        "logLoss": 0.6272334785698845,
+        "brier": 0.21837782144006035,
+        "correct": 34
+      },
+      "RM3": {
+        "n": 52,
+        "logLoss": 0.6436818245178798,
+        "brier": 0.2275278956827349,
+        "correct": 31
+      },
+      "RM4a": {
+        "n": 52,
+        "logLoss": 0.620484763165167,
+        "brier": 0.21237292721808076,
+        "correct": 34
+      },
+      "RM4b": {
+        "n": 52,
+        "logLoss": 0.6083421374690225,
+        "brier": 0.20756324661493436,
+        "correct": 37
+      },
+      "RM Foundation-3": {
+        "n": 52,
+        "logLoss": 0.6611117173561306,
+        "brier": 0.23214094381625497,
+        "correct": 31
+      },
+      "RM4.2 Melody": {
+        "n": 52,
+        "logLoss": 0.6342908435500975,
+        "brier": 0.21425614133084842,
+        "correct": 34
+      },
+      "RM4.2 Ensemble": {
+        "n": 52,
+        "logLoss": 0.6342908435500975,
+        "brier": 0.21425614133084842,
+        "correct": 34
+      }
+    },
+    "UA027": {
+      "RM4.1 Ensemble": {
+        "n": 61,
+        "logLoss": 0.5497193122143286,
+        "brier": 0.1825023629469683,
+        "correct": 46
+      },
+      "RM3": {
+        "n": 61,
+        "logLoss": 0.5552573419743227,
+        "brier": 0.18629243123495334,
+        "correct": 47
+      },
+      "RM4a": {
+        "n": 61,
+        "logLoss": 0.5497721886796914,
+        "brier": 0.18089928559579094,
+        "correct": 47
+      },
+      "RM4b": {
+        "n": 61,
+        "logLoss": 0.5613120492933189,
+        "brier": 0.18643463431838816,
+        "correct": 43
+      },
+      "RM Foundation-3": {
+        "n": 61,
+        "logLoss": 0.5644942202224102,
+        "brier": 0.18750923509241527,
+        "correct": 46
+      },
+      "RM4.2 Melody": {
+        "n": 61,
+        "logLoss": 0.5702974258566349,
+        "brier": 0.1827553324017974,
+        "correct": 47
+      },
+      "RM4.2 Ensemble": {
+        "n": 61,
+        "logLoss": 0.5702974258566349,
+        "brier": 0.1827553324017974,
+        "correct": 47
+      }
+    }
+  }
+}
