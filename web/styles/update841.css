@@ -1,0 +1,39 @@
+/* 8.4.1: separate square projections and a centred view switch. */
+.fixture-forecast .prediction-summary{grid-template-columns:repeat(4,minmax(0,1fr))}
+.fixture-forecast .projection-section-heading{display:block;margin:18px 0 0}.projection-section-heading h3{margin:0;font-size:18px}
+.projection841-switchline{display:flex;justify-content:center;align-items:center;gap:10px;margin:10px 0 12px}.projection841-switchline:before,.projection841-switchline:after{content:'';height:1px;background:var(--border-color);flex:1}
+.projection841-switchline .projection841-toggle{width:auto;min-height:26px;padding:4px 9px;font-size:11px;font-weight:600;white-space:nowrap}
+.fixture-forecast .prediction-rubbers{display:grid;gap:7px;border:0;background:none;overflow:visible}
+.fixture-forecast .fixture-rubber{border:0;grid-template-columns:25px minmax(0,1fr);gap:7px;min-height:0}
+.fixture-rubber .prediction-rubber{border:1px solid var(--border-color)!important;border-radius:0!important;background:var(--surface);min-height:54px}
+.fixture-forecast .prediction-verdict{display:block}
+.lineup-history-sheet{width:min(1200px,calc(100vw - 40px))}
+.lineup841-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(205px,1fr));gap:12px;align-items:start}
+.lineup841-card{min-width:0;border:1px solid var(--border-color);background:var(--surface);border-radius:var(--panel-radius);overflow:hidden}
+.lineup841-card>header{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:9px 10px;border-bottom:1px solid var(--border-color);min-height:42px}
+.lineup841-rounds{display:flex;flex-wrap:wrap;gap:7px}.lineup841-rounds .export-link{font-size:11px;padding:0;min-height:0;font-weight:600}.lineup841-apply{flex:none;width:28px;height:28px;min-height:28px;font-size:17px;padding:0;display:grid;place-items:center}
+.lineup841-result{display:block;width:100%;border:0;border-radius:0;background:none;color:var(--text-color);padding:10px;text-align:left;font:inherit;cursor:pointer}.lineup841-result:hover{background:var(--surface-muted)}.lineup841-result>b{font-size:11px;color:var(--muted-color);display:block;margin-bottom:8px}.lineup841-result ol{list-style:none;margin:0;padding:0}.lineup841-result li{display:flex;gap:8px;padding:3px 0;font-size:13px;line-height:1.3}.lineup841-result li span,.lineup841-pairs p>span{font-size:10px;color:var(--muted-color);min-width:18px;flex:none}.lineup841-result strong{overflow-wrap:anywhere;font-weight:650}.lineup841-pairs{border-top:1px solid var(--border-color);margin-top:8px;padding-top:5px}.lineup841-pairs p{display:flex;gap:8px;margin:4px 0;font-size:11px;line-height:1.4}.lineup841-pairs b{font-weight:600;overflow-wrap:anywhere}
+.standings841-notice{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:12px 0;padding:12px;border:1px solid var(--border-color);background:var(--surface)}.standings841-notice[hidden]{display:none}.standings841-notice span{display:block;color:var(--muted-color);font-size:12px;margin-top:4px}.standings841-notice .button{font-size:12px;min-height:34px;padding:7px 10px}
+#resultOverlay[data-simulated] .result-sheet{max-height:calc(100dvh - 160px)}
+.round841-controls{position:fixed;left:var(--sim841-left);top:var(--sim841-top);width:var(--sim841-width);color:var(--text-color)}
+.round841-tools{display:flex;justify-content:flex-start;gap:8px}.round841-tools .button{font-size:13px;min-height:36px;padding:8px 12px;background:var(--surface-raised)}
+.round841-counter{display:flex;align-items:center;justify-content:center;gap:10px;min-height:24px;margin-top:7px;font-size:11px;font-weight:700;letter-spacing:.05em;color:var(--muted-color)}.round841-mobile-step{display:none}
+#resultOverlay:not([data-simulated]) :is(.round841-controls,.round84-externalnav){display:none}
+@media(max-width:1149px){.round841-mobile-step{display:block;min-height:28px;width:30px;font-size:19px;padding:0}.round841-counter{justify-content:space-between}}
+@media(max-width:680px){
+ .fixture-forecast .prediction-summary{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .fixture-forecast .fixture-rubber{grid-template-columns:20px minmax(0,1fr);gap:5px}.fixture-rubber .prediction-rubber{min-height:50px;padding:7px 8px}.fixture-forecast .prediction-rubbers{gap:6px}
+ .lineup841-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.lineup841-card>header{padding:7px}.lineup841-result{padding:8px}.lineup841-result li{font-size:12px;gap:4px}.lineup841-pairs p{font-size:10px;gap:4px}.lineup841-result li span,.lineup841-pairs p>span{min-width:15px}.lineup841-rounds{gap:5px}.lineup841-rounds .export-link{font-size:10px}
+ .round841-controls{left:10px;top:calc(10px + env(safe-area-inset-top));width:calc(100% - 20px)}.round841-tools{justify-content:center}.round841-tools .button{font-size:12px;padding:7px 9px;min-height:33px}.round841-counter{margin-top:4px;font-size:10px;min-height:28px}
+ #resultOverlay[data-simulated] .result-sheet{top:calc(88px + env(safe-area-inset-top));height:calc(100dvh - 88px - env(safe-area-inset-top));max-height:calc(100dvh - 88px - env(safe-area-inset-top))}
+}
+@media(max-width:350px){.lineup841-grid{grid-template-columns:1fr}.round841-tools .button{font-size:11px;padding:7px 8px}}
+html[data-interface="classic"] .fixture-rubber .prediction-rubber{border:1px solid var(--border-color)!important;background:var(--surface)}
+html[data-interface="classic"] :is(.lineup841-card,.standings841-notice){border:1px solid var(--border-color);border-radius:0;background:var(--surface)}
+html[data-interface="classic"] .lineup841-result{border:0;background:none;padding:8px;font:12px Arial,sans-serif}
+html[data-interface="classic"] .lineup841-card>header{background:var(--surface-muted)}
+html[data-interface="classic"] .round841-tools .button{border:2px outset var(--classic-edge);background:var(--classic-button);color:var(--classic-button-ink);font-size:12px}
+/* Keep the fixture caption below both team names in the native Classic buttons. */
+html[data-interface="classic"] .fixture-match{display:grid;position:relative;min-height:54px;padding:8px 9px 24px!important;font-size:13px;gap:7px;line-height:1.3}
+html[data-interface="classic"] .fixture-match small{position:absolute;bottom:5px;line-height:1.2;font-size:10px}
+.round841-counter>span{background:var(--surface);border:1px solid var(--border-color);padding:4px 8px;color:var(--text-color);line-height:1.3}

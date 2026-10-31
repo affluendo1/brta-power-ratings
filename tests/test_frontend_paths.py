@@ -29,7 +29,8 @@ class FrontendPathsTests(unittest.TestCase):
 
     def test_worker_imports(self):
         worker=ROOT/'web/workers/rating-worker.js'
-        for url in re.findall(r"'([^']+\.js[^']*)'",worker.read_text()):
+        imports = re.search(r"importScripts\((.*?)\)", worker.read_text(), re.S).group(1)
+        for url in re.findall(r"'([^']+)'", imports):
             self.assertTrue((worker.parent/url.split('?')[0]).is_file(),url)
 
     def test_release_shell_revisions_match(self):
@@ -44,3 +45,4 @@ class FrontendPathsTests(unittest.TestCase):
             for ref in re.findall(r'@import\s+url\([\'"]?([^\)\'\"]+)', css.read_text()):
                 path, _, query = ref.partition('?')
                 self.assertIn(str((css.parent / path).relative_to(ROOT)) + ('?' + query if query else ''), shell)
+

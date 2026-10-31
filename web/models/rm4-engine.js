@@ -20,6 +20,10 @@ function recalculate(data,model,bundle){const base=model==='RM4a'?'RM4a':'RM4b',
  copy.resultsExpectation={players:[],matches:[],note:'RM3-only diagnostic; use the selected model in Prediction Centre.'};copy.playerInsights={};copy.matchupMatrix=null;copy.leader=null;if(copy.roundOverview){for(const key of ['topPerformance','biggestUpset','dominantWin','closestMatch'])copy.roundOverview[key]=null;const rounds=(copy.ratingHistory.rounds||[]).map(x=>+x.round).sort((a,b)=>a-b),now=rounds.at(-1),before=rounds.at(-2),prior=new Map((copy.ratingHistory.tables[before]||[]).map(r=>[r.player,r.rating])),moves=(copy.ratingHistory.tables[now]||[]).filter(r=>prior.has(r.player)).map(r=>({player:r.player,change:r.rating-prior.get(r.player)})).sort((a,b)=>b.change-a.change);if(copy.roundOverview.summary){copy.roundOverview.summary.topMover=moves[0]||null;copy.roundOverview.summary.biggestDrop=moves.at(-1)||null}}
  return copy;
 }
+function automatic(data,bundle,baselineEngine){
+ const baseline=Layout.recalculate(data,'RM3',baselineEngine),ratings=display({...baseline,meta:{...baseline.meta,predictionModel:'RM3'}}),forecasts=recalculate(data,'RM4.1 Ensemble',bundle);
+ return {...ratings,rm4:forecasts.rm4,meta:{...ratings.meta,modelChoice:'Automatic',automatic:true,ratingChoice:'RM3',predictionModel:'RM4.1 Ensemble',automaticPolicyVersion:1},note:'Automatic: RM3 tables and history; RM4.1 Ensemble live forecasts. A fixed policy, not a guarantee of superiority.'};
+}
 const absolute=new Set(['rating','power','lo','hi','averageOpponent','individualAverage','singlesRating','doublesRating','overallRating','singlesPower','doublesPower','ratingAtTime','opponentRatingAtTime','winnerRating','loserRating','performance','avg','best4']);
 const differences=new Set(['se','powerSe','singlesSe','doublesSe','overallSe','pairEffect','pairSynergy','ratingChange','change','dominanceGap','runnerUpGap']);
 function policy(model='RM4.1 Ensemble'){
@@ -33,6 +37,6 @@ function centre(data,value=2000,probabilityScale=null){
  walk(copy);for(const list of Object.values(copy.ratingHistory?.players||{}))for(const point of list){point[1]=scaled(point[1],true);if(Number.isFinite(point[2]))point[2]=scaled(point[2],false)}
  copy.meta={...copy.meta,ratingCentre:value,ratingScale:(data.meta?.ratingScale||(data.rm4?450:600))*factor,ratingProbabilityScale:target};return copy;
 }
-const api={prepare,recalculate,centre,policy,display};root.BRTARM4Engine=api;if(typeof module!=='undefined')module.exports=api;
+const api={prepare,recalculate,centre,policy,display,automatic};root.BRTARM4Engine=api;if(typeof module!=='undefined')module.exports=api;
 })(typeof window==='undefined'?globalThis:window);
 

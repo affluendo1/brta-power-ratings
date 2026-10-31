@@ -79,7 +79,7 @@
       '<div class="settings-group"><h3>Extra theme</h3><label class="accent-choice ms-black-swatch '+(prefs.black?'selected':'')+'"><i></i><span>Black +</span><input type="checkbox" data-ms-pref="black" '+(prefs.black?'checked':'')+' aria-label="Add Black + theme"></label></div>'+
       '<div class="settings-group ms-pressure" data-ms-pressure><h3>Change Atmospheric Pressure</h3><div class="ms-pressure-controls"></div><button class="ms-pressure-secret" data-ms="hint" type="button">There must be another way.</button><button class="button secondary '+(pressureModeRevealed?'':'hidden')+'" data-ms="slider" type="button">'+(slider?'Display as dropdown':'Display as slider')+'</button></div>'+
       '<div class="settings-group"><label class="setting-row"><span><b>Kâvąc</b><small>Translate the entire website.</small></span><input type="checkbox" data-ms-pref="language" '+(prefs.language?'checked':'')+'></label></div>'+
-      '<div class="settings-group"><button class="button secondary" data-ms="admin" type="button">Gain Administrative Powers</button></div>'+
+      '<div class="settings-group"><button class="button secondary" data-ms="admin" type="button">Gain Administrative Privileges</button></div>'+
       '<div class="settings-group"><label class="setting-row"><span><b>Reverse Orientation</b></span><select data-ms-pref="inverted"><option value="normal" '+(!prefs.inverted?'selected':'')+'>Right side up</option><option value="inverted" '+(prefs.inverted?'selected':'')+'>Upside down</option></select></label></div>'+
       '<div class="settings-group"><label class="setting-row"><span><b>Enable Narrator</b></span><input class="ms-switch" role="switch" type="checkbox" data-ms-pref="narrator" '+(prefs.narrator?'checked':'')+'></label></div>'+
       '<div class="settings-group"><label class="setting-row"><span><b>Enable More Bands</b><small>A less conventional scale.</small></span><input class="ms-switch" type="checkbox" data-ms-pref="moreBands" '+(prefs.moreBands?'checked':'')+'></label></div>'+
@@ -136,7 +136,7 @@
     if(action==='hide-panel')hidePanel();
     if(action==='show-panel')showPanel();
     if(action==='admin'&&phase==='void'){step=0;confirmation();}
-    if(action==='confirm-yes'&&phase==='confirm'){if(M.confirmations[step].phrase&&$('[data-ms-confirm]').value!==M.confirmations[step].phrase)return;if(step===8)voidSettings();else{step++;confirmation();}}
+    if(action==='confirm-yes'&&phase==='confirm'){if(M.confirmations[step].phrase&&$('[data-ms-confirm]').value!==M.confirmations[step].phrase)return;if(step===M.confirmations.length-1)voidSettings();else{step++;confirmation();}}
     if(action==='confirm-no'&&phase==='confirm'){if(step===7){step=8;confirmation()}else voidSettings();}
     if(action==='return'&&phase==='void')longReturn();
   }

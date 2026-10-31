@@ -53,9 +53,10 @@ for(const [width,height]of [[360,350],[1050,570]]){
  assert(Math.abs(a.x+x[0]-b.x-y[0])>size||Math.abs(a.y+x[1]-b.y-y[1])>size,'cup rectangles must not overlap anywhere in the orbit');
  }
 }
-assert.equal(M.confirmations.length,9);
+assert.equal(M.confirmations.length,17);
 assert.equal(M.confirmations[2].phrase,'I CONFIRM');
-assert.equal(M.confirmations[6].phrase,'I will confirm, regardless of the suffering homeless children.');
+assert.equal(M.confirmations[6].phrase,'I accept the paperwork.');
 assert.equal(M.confirmations[7].yes,'I CONFIRM');
-assert.equal(M.confirmations[8].yes,'OKAY');
+assert.equal(M.confirmations.at(-1).yes,'BACK TO MORE SETTINGS');assert(M.confirmations.some(c=>c.phrase==='I AM STILL HERE'));assert(M.confirmations.every(c=>c.text&&c.yes));
 console.log('More Settings: translation, names, preserved entry phrase, pressure bounds, shuffle permutations and confirmation sequence passed.');
+

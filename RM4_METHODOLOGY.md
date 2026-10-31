@@ -230,3 +230,22 @@ positions do not receive invented movements. Simulated ladders copy the current
 published ladder and add only generated scheduled fixtures. They share the real
 standings renderer and do not alter the source. Published-only adult team-point
 rules are not inferred; hypothetical points and positions remain unavailable.
+
+
+## 8.4.1 evaluation and optional Automatic mode
+
+Automatic uses a fixed, explicit split: RM3 for rating tables/history/Power summaries,
+RM4.1 Ensemble for live forecasts and simulations. It is a convenience policy, not a
+claim that either model is universally best. The default remains Ensemble.
+
+`validation/check_rm4_841.js` evaluates eight current sections (two overlap the
+8.3.1 study). Fits use strictly earlier rounds and dates, with common previously
+observed-player support. 425 forecasts from rounds 4–7 select among the original,
+180-/540-day decay and stronger-shrinkage variants separately for RM4a/RM4b; 463
+later forecasts assess that selection. The original RM4a won selection. Selected
+RM4b 540-day decay worsened later log loss by 0.000115 with unchanged winner picks.
+No core parameter or frozen blend change is shipped. This is a retrospective
+chronological check, not a new prospective holdout. Input hashes and results are in
+`validation/rm4-variants841.json`. On later forecasts the original RM4b scored
+0.55161 log loss and 331/463 winners versus RM3 0.56904 and 323/463; those results
+do not establish superiority in every section or format.

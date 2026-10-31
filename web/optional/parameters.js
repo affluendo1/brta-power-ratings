@@ -60,16 +60,25 @@
     return Array.from({length:13},(_,i)=>{const t=i/12,s=t*t*(3-2*t),bend=Math.sin(Math.PI*s);return{offset:t,transform:'translate('+((a.x-b.x)*(1-s)+arcX*bend)+'px,'+((a.y-b.y)*(1-s)+arcY*bend)+'px)'}});
   }
   const confirmations=[
-    {text:'Are you sure want to confirm?',yes:'YES',no:'NO'},
-    {text:'No seriously. No joking this time. Are you confident in your confirmation?',yes:'YES',no:'NO'},
-    {text:"I’m still not sure. Type into this box ‘I CONFIRM’. Otherwise click ‘No’ to cancel.",phrase:'I CONFIRM',yes:'YES',no:'NO'},
-    {text:'Okay, last confirmation this time. Are you COMPLETELY, UTTERLY, POSITIVE that you want to gain administrative privileges?',yes:'DEFINITELY',no:'MAYBE NOT'},
-    {text:'Haha, that was a funny joke. But really. Confirm or no?',yes:'YES!',no:'I CHANGED MY MIND'},
-    {text:'You know, confirming also means you take away one meal for a homeless child somewhere. Do you really want to do this? Think about the children…',yes:'OKAY, I WILL BE A BAD HUMAN',no:'I EMPATHIZE FOR THE HOMELESS, CANCEL THE CONFIRMATION'},
-    {text:"Wow. Unbelievable. I just want you to confirm this? Type in ‘I will confirm, regardless of the suffering homeless children.’",phrase:'I will confirm, regardless of the suffering homeless children.',yes:'YES, I AGREE',no:"NO, THAT’S HORRIBLE"},
-    {text:'As a final measure, this confirmation is different. We just want to make sure you are a human. Clicking [I CONFIRM] results in you cancelling your confirmation, and clicking [I CANCEL MY CONFIRMATION] will confirm your cancellation.',yes:'I CONFIRM',no:'I CANCEL MY CONFIRMATION'},
-    {text:'Great! You’ve cancelled your confirmation.',yes:'OKAY'}
+    {text:'Are you sure you want administrative privileges?',yes:'YES',no:'NO'},
+    {text:'Please confirm that your previous confirmation was intentional.',yes:'YES',no:'NO'},
+    {text:'Type “I CONFIRM” to confirm your confirmation.',phrase:'I CONFIRM',yes:'YES',no:'NO'},
+    {text:'Last confirmation. Are you completely, utterly certain?',yes:'DEFINITELY',no:'MAYBE NOT'},
+    {text:'That was not the last confirmation. Would you like to confirm your continued interest in confirming?',yes:'YES!',no:'I CHANGED MY MIND'},
+    {text:'This request creates seventeen forms for a tiny imaginary office. Are you prepared for the paperwork?',yes:'BRING ON THE PAPERWORK',no:'SPARE THE STATIONERY'},
+    {text:'Type “I accept the paperwork.” so the imaginary office can order another filing cabinet.',phrase:'I accept the paperwork.',yes:'I ACCEPT',no:'CANCEL'},
+    {text:'To confirm cancellation, select “I CANCEL MY CONFIRMATION”. To cancel cancellation, select “I CONFIRM”. The buttons may have their own opinions.',yes:'I CONFIRM',no:'I CANCEL MY CONFIRMATION'},
+    {text:'Your cancellation has been referred to the Department of Confirmed Cancellations. Would you like to take a number?',yes:'TAKE A NUMBER',no:'LEAVE THE QUEUE'},
+    {text:'You are number 1. We are currently serving number 1. Please confirm that this is a coincidence.',yes:'PURE COINCIDENCE',no:'TOO SUSPICIOUS'},
+    {text:'A committee has formed to investigate why this needs a committee. Authorise a smaller committee?',yes:'FORM THE SUBCOMMITTEE',no:'DISBAND EVERYONE'},
+    {text:'The subcommittee requires proof that you are still here. Type “I AM STILL HERE”.',phrase:'I AM STILL HERE',yes:'STILL HERE',no:'ACTUALLY, NO'},
+    {text:'A rubber duck has reviewed your application. Its recommendation is “quack”. Do you accept the findings?',yes:'QUACK',no:'REQUEST A SECOND DUCK'},
+    {text:'The second duck agrees. The first duck would like that entered into the minutes.',yes:'ENTER IT INTO THE MINUTES',no:'THE MINUTES ARE FULL'},
+    {text:'Before we finish, please confirm that “before we finish” does not imply that we are about to finish.',yes:'NO FINISH IMPLIED',no:'I WOULD LIKE A FINISH'},
+    {text:'Excellent. Your patience has been recognised with an imaginary certificate, printed on imaginary paper.',yes:'FRAME THE CERTIFICATE',no:'RECYCLE THE CERTIFICATE'},
+    {text:'Your request to cancel the confirmation of your administrative-privilege request has been confirmed. The ducks may go home.',yes:'BACK TO MORE SETTINGS'}
   ];
   const api={alphabet,glyphs,numerals,translate,toEnglish,register,name,shuffled,pressure,rates,progressPlan,progressAt,cupWin,cupPoint,cupPath,cupOrbit,confirmations};
   root.AmbientParameters=api;if(typeof module!=='undefined')module.exports=api;
 })(typeof window!=='undefined'?window:globalThis);
+

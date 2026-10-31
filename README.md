@@ -1,9 +1,9 @@
 # BRTA Power Ratings
 
-**Current version: 8.4**
+**Current version: 8.4.1**
 
 The default model is **RM4.1 Ensemble** (experimental), with **RM4a**, **RM4b**,
-**RM3** and **RM3b** available in Settings. Existing explicit model preferences
+**RM3**, **RM3b** and **Automatic** available in Settings. Existing explicit model preferences
 are retained. Display scales are automatic and cannot be changed in Settings:
 
 | Models | Centre | Display points per fitted strength | Game-probability scale |
@@ -20,15 +20,20 @@ uncertainty where available, history and deltas scale consistently. Display
 changes do not improve predictive accuracy. RM4.1 still uses RM4b leaderboard
 strength with a separate frozen prediction blend. RM3ultra remains independent.
 
-8.4 adds direct performance-band filtering, a player-only Following manager,
-separate calendar event dialogs, visible fixture lineup editing and a restored
-match verdict. Rubber projections share one rectangular panel with row dividers.
-Round simulation opens standard scorecards with previous/next fixture navigation,
-a rerun control and a hypothetical ladder rendered with the real standings table.
-Real standings now include position movement and points change since the previous
-published round. Earlier positions are reconstructed from recorded points and game
-percentage; ambiguous historical ties have no invented movement. Historical
-penalties or missing scorecards can limit reconstructed comparisons.
+8.4.1 restores individual square projection cards, a shared percentage/score switch
+and expected rubbers. Fixture predictions start from the most frequently used
+complete ordered singles lineup and doubles pairs before the fixture round.
+Previous lineups are grouped by configuration and frequency, with round links and
+an apply button. Registered order is the fallback when no complete lineup exists.
+Round simulation uses the normal scorecard with controls outside it. Past standings
+reconstruct earlier rounds with the shared standings renderer. Historical penalties,
+missing published points and ambiguous ties can limit reconstructed comparisons.
+
+**Automatic** is an optional fixed policy: RM3 powers ratings, history and Power
+summaries; RM4.1 Ensemble powers live forecasts, score estimates and simulations.
+It does not select a model per player or in response to an outcome. The default
+remains RM4.1 Ensemble. Neither rating spread nor a larger version number proves
+forecast superiority. See the methodology for the 8.4.1 chronological experiment.
 
 Simulations use only remaining scheduled fixtures in the selected round and never
 write to official results, ratings or standings. Finals do not change the
@@ -36,8 +41,8 @@ regular-season ladder. The hypothetical ladder starts
 from the current official ladder; a later-round simulation does not invent results
 for intervening unplayed rounds. Adult competitions with published-only team-point
 rules can show simulated scores and game totals, but projected points/positions are
-unavailable rather than borrowed from junior rules. Registered order guides initial
-lineups; user edits in Prediction Centre are independent from whole-round simulations.
+unavailable rather than borrowed from junior rules. Most-used complete lineups guide initial
+selections; user edits in Prediction Centre are independent from whole-round simulations.
 
 Dialog locks now have a shared owner, so a refresh or out-of-order close releases
 the page correctly. Classic extends to secondary screens and dialogs. Mobile
@@ -56,7 +61,7 @@ entries. Extras → More Settings can unlock the original RM2 likelihood, restor
 from commit `6388eeb`; it then appears in Methodology and the model selector.
 
 Prediction Centre adds upcoming-fixture entry points, a lineup-dependent outlook and clickable likely scores.
-The fixture overview lists singles first, with lineup editing collapsed. Simulations sample the same calibrated score distribution used
+The fixture overview lists singles first with visible lineup editing. Simulations sample the same calibrated score distribution used
 by the projected probabilities. Outcomes are conditional on selected players;
 team probabilities assume independent rubbers.
 

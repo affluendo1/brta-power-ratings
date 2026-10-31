@@ -1,0 +1,228 @@
+{
+  "design": "Predeclared 180/540-day and stronger-shrinkage candidates; earlier rounds select, later rounds assess on common within-discipline support, excluding same-day/round results. Frozen winner calibration retained. This inspected-data diagnostic does not establish universal superiority or change the frozen Ensemble.",
+  "files": [
+    "../brta-power-ratings/data/site/sections/AA003.json",
+    "../brta-power-ratings/data/site/sections/AA006.json",
+    "../brta-power-ratings/data/site/sections/AA012.json",
+    "../brta-power-ratings/data/site/sections/AA018.json",
+    "../brta-power-ratings/data/site/sections/UA003.json",
+    "../brta-power-ratings/data/site/sections/UA006.json",
+    "../brta-power-ratings/data/site/sections/UA012.json",
+    "../brta-power-ratings/data/site/sections/UA020.json"
+  ],
+  "sections": [
+    "AA003",
+    "AA006",
+    "AA012",
+    "AA018",
+    "UA003",
+    "UA006",
+    "UA012",
+    "UA020"
+  ],
+  "variants": {
+    "RM3": {
+      "l2": 2.8125,
+      "rho": 0,
+      "baseline": true
+    },
+    "RM3b": {
+      "l2": 2.8125,
+      "rho": 0,
+      "baseline": true,
+      "composite": true
+    },
+    "RM4a": {
+      "l2": 6,
+      "rho": 0.75,
+      "native": true
+    },
+    "RM4a \u00b7 180 days": {
+      "l2": 6,
+      "rho": 0.75,
+      "native": true,
+      "halfLife": 180
+    },
+    "RM4a \u00b7 540 days": {
+      "l2": 6,
+      "rho": 0.75,
+      "native": true,
+      "halfLife": 540
+    },
+    "RM4a \u00b7 stronger shrinkage": {
+      "l2": 8,
+      "rho": 0.75,
+      "native": true
+    },
+    "RM4b": {
+      "l2": 3,
+      "rho": 0.95,
+      "native": false
+    },
+    "RM4b \u00b7 180 days": {
+      "l2": 3,
+      "rho": 0.95,
+      "native": false,
+      "halfLife": 180
+    },
+    "RM4b \u00b7 540 days": {
+      "l2": 3,
+      "rho": 0.95,
+      "native": false,
+      "halfLife": 540
+    },
+    "RM4b \u00b7 stronger shrinkage": {
+      "l2": 4,
+      "rho": 0.95,
+      "native": false
+    }
+  },
+  "early": {
+    "RM3": {
+      "n": 425,
+      "logLoss": 0.5698469488001473,
+      "brier": 0.19506769155276235,
+      "correct": 302
+    },
+    "RM3b": {
+      "n": 425,
+      "logLoss": 0.5738942297013416,
+      "brier": 0.19675392034753747,
+      "correct": 299
+    },
+    "RM4a": {
+      "n": 425,
+      "logLoss": 0.5447297373745693,
+      "brier": 0.1844242726979692,
+      "correct": 303
+    },
+    "RM4a \u00b7 180 days": {
+      "n": 425,
+      "logLoss": 0.5447553316972661,
+      "brier": 0.18442582738893973,
+      "correct": 303
+    },
+    "RM4a \u00b7 540 days": {
+      "n": 425,
+      "logLoss": 0.5447363711139095,
+      "brier": 0.18442830797041912,
+      "correct": 303
+    },
+    "RM4a \u00b7 stronger shrinkage": {
+      "n": 425,
+      "logLoss": 0.5499615953587125,
+      "brier": 0.1861700873647519,
+      "correct": 304
+    },
+    "RM4b": {
+      "n": 425,
+      "logLoss": 0.5424829780252397,
+      "brier": 0.18237350646568792,
+      "correct": 303
+    },
+    "RM4b \u00b7 180 days": {
+      "n": 425,
+      "logLoss": 0.5426602253925785,
+      "brier": 0.18244526934030747,
+      "correct": 304
+    },
+    "RM4b \u00b7 540 days": {
+      "n": 425,
+      "logLoss": 0.5424350677390627,
+      "brier": 0.18235347931193652,
+      "correct": 303
+    },
+    "RM4b \u00b7 stronger shrinkage": {
+      "n": 425,
+      "logLoss": 0.5479129078129769,
+      "brier": 0.18449452615083742,
+      "correct": 305
+    }
+  },
+  "later": {
+    "RM3": {
+      "n": 463,
+      "logLoss": 0.5690421667107793,
+      "brier": 0.1941493620716876,
+      "correct": 323
+    },
+    "RM3b": {
+      "n": 463,
+      "logLoss": 0.5704149946818073,
+      "brier": 0.19487112888107816,
+      "correct": 318
+    },
+    "RM4a": {
+      "n": 463,
+      "logLoss": 0.557930660619645,
+      "brier": 0.18935279938961375,
+      "correct": 323
+    },
+    "RM4a \u00b7 180 days": {
+      "n": 463,
+      "logLoss": 0.5563020694745244,
+      "brier": 0.18878126486827557,
+      "correct": 325
+    },
+    "RM4a \u00b7 540 days": {
+      "n": 463,
+      "logLoss": 0.5585114121302583,
+      "brier": 0.18954990693514098,
+      "correct": 323
+    },
+    "RM4a \u00b7 stronger shrinkage": {
+      "n": 463,
+      "logLoss": 0.5591823397425948,
+      "brier": 0.19011769806011497,
+      "correct": 321
+    },
+    "RM4b": {
+      "n": 463,
+      "logLoss": 0.5516101621545718,
+      "brier": 0.1864149680810365,
+      "correct": 331
+    },
+    "RM4b \u00b7 180 days": {
+      "n": 463,
+      "logLoss": 0.5513433362243653,
+      "brier": 0.1862490440208952,
+      "correct": 330
+    },
+    "RM4b \u00b7 540 days": {
+      "n": 463,
+      "logLoss": 0.5517249779890987,
+      "brier": 0.18647859952510926,
+      "correct": 331
+    },
+    "RM4b \u00b7 stronger shrinkage": {
+      "n": 463,
+      "logLoss": 0.5558722974456718,
+      "brier": 0.18807623379472366,
+      "correct": 327
+    }
+  },
+  "RM4a": {
+    "selectedOnEarlierRounds": "RM4a",
+    "laterLogLossDifference": 0,
+    "laterCorrectDifference": 0
+  },
+  "RM4b": {
+    "selectedOnEarlierRounds": "RM4b \u00b7 540 days",
+    "laterLogLossDifference": 0.00011481583452688238,
+    "laterCorrectDifference": 0
+  },
+  "sourceHashes": {
+    "../brta-power-ratings/data/site/sections/AA003.json": "d043438a015bf43d12142af5b9ef3831e643ffcdabb66d4a0f31f403ff9ceb65",
+    "../brta-power-ratings/data/site/sections/AA006.json": "fd4a90e11e85704a37542366d542e2d6896e492c117f628acab5e50671fbf3bd",
+    "../brta-power-ratings/data/site/sections/AA012.json": "868aad205e6e083099dcbee6f79651962cf1983fade1be445f06630c61db7e2d",
+    "../brta-power-ratings/data/site/sections/AA018.json": "569abd0a8f2f5b52b6d89f41ba58f996faf706d91e1a0eac87934c75aba7d216",
+    "../brta-power-ratings/data/site/sections/UA003.json": "57654bddd3a8228bbc6e1fc71a0678cbee3d7936d6872f1896a903048dad786a",
+    "../brta-power-ratings/data/site/sections/UA006.json": "ab00b0d09f6fb2c8d98a812320cf6a5e180747f1a8bf5ddd11c3e6e0e3cd0ac8",
+    "../brta-power-ratings/data/site/sections/UA012.json": "7786ac30e27babd7c75674799ebfde56c270e55f3a5cad5537c0559436b8120f",
+    "../brta-power-ratings/data/site/sections/UA020.json": "9dc409e3c7caa7ed18f598c11e282b8d9431302cacedbba6716a402ca25fa01a"
+  },
+  "overlapWith831": [
+    "AA003",
+    "AA018"
+  ]
+}
