@@ -1,6 +1,19 @@
 // Website releases, newest first. Routine result checks are not website releases.
 window.BRTA_RELEASES = Object.freeze([
   {
+  "version": "8.3.1",
+  "title": "A clearer view",
+  "size": "small",
+  "committedAt": "2026-10-31T07:33:56.769948+00:00",
+  "changes": [
+    "Redesigned Methodology and BRTA Rules with quick guides and expandable detail.",
+    "Improved mobile predictions, readable player names, doubles spacing and vertical weekly lineups.",
+    "Eight distribution-aware performance bands, with provisional players grouped correctly.",
+    "Expanded the Ensemble Power scale consistently across ratings, uncertainty and history.",
+    "Restored RM2 from the original source as a More Settings unlock."
+  ]
+},
+  {
   "version": "8.3",
   "title": "RM4 & Prediction Outlook",
   "size": "large",

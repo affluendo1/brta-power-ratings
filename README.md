@@ -1,15 +1,22 @@
 # BRTA Power Ratings
 
-**Current version: 8.3**
+**Current version: 8.3.1**
 
 The default model is **RM4.1 Ensemble** (experimental), with **RM4a**, **RM4b**,
 **RM3** and **RM3b** available in Settings. Existing explicit model preferences
 are retained. Ratings default to a **2000** centre; choose **1500** in Settings.
-This is only a display offset: it changes no ordering, uncertainty width or forecast.
-RM4.1 uses RM4b leaderboard ratings with a separate frozen prediction blend.
+The centre changes the origin, preserving gaps and forecasts. RM4.1 has an expanded
+Power scale (765 × latent skill, versus RM4b’s 450); uncertainty, history and
+rating differences expand together. This is a display scale, not a new fitted model.
+RM4.1 uses RM4b leaderboard strength with a separate frozen prediction blend.
+
+8.3.1 redesigns Methodology and BRTA Rules, makes forecasts readable on phones,
+and introduces eight robust distribution-based bands shared by ranked and provisional
+entries. Extras → More Settings can unlock the original RM2 likelihood, restored
+from commit `6388eeb`; it then appears in Methodology and the model selector.
 
 Prediction Centre adds upcoming-fixture entry points, a lineup-dependent outlook,
-close-rubber counts, a closest-match projection, clickable likely scores and saved
+close-rubber counts, clickable likely scores and saved
 simulation order. Simulations sample the same calibrated score distribution used
 by the projected probabilities. Outcomes are conditional on selected players;
 team probabilities assume independent rubbers.

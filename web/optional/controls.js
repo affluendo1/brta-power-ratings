@@ -2,7 +2,7 @@
   'use strict';
   const M=root.AmbientParameters,E=root.AmbientPresentation,$=s=>document.querySelector(s);
   const KEY='brta-more-settings-v1',reduced=matchMedia('(prefers-reduced-motion: reduce)');
-  const defaults={black:false,pressure:1,language:false,inverted:false,narrator:false,moreBands:false};
+  const defaults={black:false,pressure:1,language:false,inverted:false,narrator:false,moreBands:false,rm2:false};
   let prefs;try{prefs={...defaults,...JSON.parse(localStorage.getItem(KEY)||'{}')}}catch{prefs={...defaults}}
   prefs.pressure=M.pressure(prefs.pressure);
   let overlay,phase='closed',dodges=0,left=false,busy=false,serial=0,returnFocus,inert=[],pressureTimer,pressureTarget=prefs.pressure,slider=false,step=0;
@@ -83,6 +83,7 @@
       '<div class="settings-group"><label class="setting-row"><span><b>Reverse Orientation</b></span><select data-ms-pref="inverted"><option value="normal" '+(!prefs.inverted?'selected':'')+'>Right side up</option><option value="inverted" '+(prefs.inverted?'selected':'')+'>Upside down</option></select></label></div>'+
       '<div class="settings-group"><label class="setting-row"><span><b>Enable Narrator</b></span><input class="ms-switch" role="switch" type="checkbox" data-ms-pref="narrator" '+(prefs.narrator?'checked':'')+'></label></div>'+
       '<div class="settings-group"><label class="setting-row"><span><b>Enable More Bands</b><small>A less conventional scale.</small></span><input class="ms-switch" type="checkbox" data-ms-pref="moreBands" '+(prefs.moreBands?'checked':'')+'></label></div>'+
+      '<div class="settings-group"><label class="setting-row"><span><b>Unlock RM2</b><small>The original rating model.</small></span><input class="ms-switch" type="checkbox" data-ms-pref="rm2" '+(prefs.rm2?'checked':'')+'></label></div>'+
       '<button class="button primary ms-return" data-ms="return" type="button">Return</button>');
     pressureControls();overlay.querySelector('input').focus();E.refresh();
   }
@@ -139,7 +140,7 @@
     if(action==='return'&&phase==='void')longReturn();
   }
   function input(event){if(event.target.matches('[data-ms-confirm]')){$('[data-ms="confirm-yes"]').disabled=phase!=='confirm'||event.target.value!==M.confirmations[step].phrase;return;}if(event.target.matches('[data-ms-range]')){const target=Number(event.target.value)/100;event.target.value=String(Math.round(prefs.pressure*100));setPressureTarget(target);}}
-  function change(event){const key=event.target.dataset.msPref;if(!key)return;if(key==='black')event.target.closest('.ms-black-swatch')?.classList.toggle('selected',event.target.checked);prefs[key]=key==='inverted'?event.target.value==='inverted':event.target.checked;save();applyPreferences();if(key==='moreBands')root.dispatchEvent(new Event('brta-bands-toggle'));if(key==='narrator'&&prefs.narrator)speak('Narrator enabled.',true);}
+  function change(event){const key=event.target.dataset.msPref;if(!key)return;if(key==='black')event.target.closest('.ms-black-swatch')?.classList.toggle('selected',event.target.checked);prefs[key]=key==='inverted'?event.target.value==='inverted':event.target.checked;save();applyPreferences();if(key==='moreBands')root.dispatchEvent(new Event('brta-bands-toggle'));if(key==='rm2')root.dispatchEvent(new Event('brta-rm2-toggle'));if(key==='narrator'&&prefs.narrator)speak('Narrator enabled.',true);}
   function syncThemeOptions(){
     const available=enabled()&&prefs.black;if(!available&&root.BRTASitePreferences?.getTheme()==='black-plus')root.BRTASitePreferences.setTheme('dark');
     const select=$('#themeSelect');if(!select)return;
@@ -211,3 +212,4 @@
   root.BRTAOverlays?.register('moreSettingsOverlay',()=>{if(phase==='gate')close();else if(phase==='lost')gate()});
   root.AmbientPanel=Object.freeze({bindSettings});bindSettings();applyPreferences();
 })(window);
+

@@ -1,0 +1,92 @@
+{
+  "purpose": "Round-frozen diagnostic on already inspected data; not a new untouched holdout. No model tuning.",
+  "support": "Singles with both players previously seen in singles, at least three earlier rounds; strictly earlier round AND date. All models use identical targets.",
+  "sections": [
+    {
+      "section": "UA009",
+      "label": "Sets 6",
+      "firstRound": 4,
+      "lastRound": 11,
+      "metrics": {
+        "RM3": {
+          "n": 108,
+          "correct": 81,
+          "accuracy": 0.75,
+          "logLoss": 0.4669987499172101,
+          "brier": 0.15814103461429038
+        },
+        "RM3b": {
+          "n": 108,
+          "correct": 83,
+          "accuracy": 0.7685185185185185,
+          "logLoss": 0.5022419028347025,
+          "brier": 0.16124554660315038
+        },
+        "RM4a": {
+          "n": 108,
+          "correct": 79,
+          "accuracy": 0.7314814814814815,
+          "logLoss": 0.4838898979587359,
+          "brier": 0.16087515399971486
+        },
+        "RM4b": {
+          "n": 108,
+          "correct": 83,
+          "accuracy": 0.7685185185185185,
+          "logLoss": 0.4950152273248258,
+          "brier": 0.1632647588021035
+        },
+        "RM4.1 Ensemble": {
+          "n": 108,
+          "correct": 82,
+          "accuracy": 0.7592592592592593,
+          "logLoss": 0.480484175661159,
+          "brier": 0.15828297577866401
+        }
+      }
+    },
+    {
+      "section": "UA001",
+      "label": "Rubbers 1",
+      "firstRound": 4,
+      "lastRound": 11,
+      "metrics": {
+        "RM3": {
+          "n": 45,
+          "correct": 31,
+          "accuracy": 0.6888888888888889,
+          "logLoss": 0.5802477972493278,
+          "brier": 0.19713959764054229
+        },
+        "RM3b": {
+          "n": 45,
+          "correct": 31,
+          "accuracy": 0.6888888888888889,
+          "logLoss": 0.6715643843498298,
+          "brier": 0.20655048574967957
+        },
+        "RM4a": {
+          "n": 45,
+          "correct": 33,
+          "accuracy": 0.7333333333333333,
+          "logLoss": 0.5474485108414525,
+          "brier": 0.1809020551761763
+        },
+        "RM4b": {
+          "n": 45,
+          "correct": 33,
+          "accuracy": 0.7333333333333333,
+          "logLoss": 0.5236004149902271,
+          "brier": 0.175965424972728
+        },
+        "RM4.1 Ensemble": {
+          "n": 45,
+          "correct": 31,
+          "accuracy": 0.6888888888888889,
+          "logLoss": 0.5316977731906706,
+          "brier": 0.1800732282243147
+        }
+      }
+    }
+  ]
+}

@@ -8,7 +8,7 @@
 
   function clamp01(value){return Math.max(0,Math.min(1,Number(value)))}
   function logistic(value){return 1/(1+Math.exp(-value))}
-  function gameProbability(homeRating,awayRating){return logistic((Number(homeRating)-Number(awayRating))/RATING_DENOMINATOR)}
+  function gameProbability(homeRating,awayRating,denominator=RATING_DENOMINATOR){return logistic((Number(homeRating)-Number(awayRating))/denominator)}
   function choose(n,k){let value=1;for(let i=1;i<=k;i++)value=value*(n-k+i)/i;return value}
   function addDistribution(map,homeWin,margin,probability){
     if(probability<=0)return;

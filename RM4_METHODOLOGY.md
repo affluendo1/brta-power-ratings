@@ -130,3 +130,33 @@ Carlo frequencies and centre invariance. Solver comparison tolerances are 1e-5
 for component probabilities and 5e-5 for derived numeric features. Existing model,
 source, dialog/navigation, custom-section and UI audits remain part of the checks.
 The frozen tree export preserves scikit-learn’s float32 decision inputs.
+
+## 8.3.1 display and band corrections
+
+Ensemble Power is centre + 765 × RM4b latent skill, a 1.7× expansion relative
+to RM4b. Uncertainty, interval endpoints, rating history, pair effects and
+movement use the same scale. Probability calculations use the corresponding
+765-point denominator or the original latent fits; enlarging numbers must not
+change forecasts. The centre remains an independent 1500/2000 origin choice.
+
+Eight bands use qualified ratings’ median and IQR / 1.349. Cutoffs in robust
+spread units are +2, +1.25, +0.6, +0.1, −0.5, −1.1, −1.8; ties stay together.
+Provisional entries use exactly those cutoffs and retain provisional status.
+Empty extreme bands are allowed. If no entries qualify, all finite ratings
+anchor the distribution. A zero IQR falls back to RMS deviation from the median,
+then 100 points for a constant distribution.
+
+RM2 is an optional Extras restoration from `6388eeb3cb0b42fb0a93a02e02b0df5051333baa`,
+confirmed by the subsequent V3 upgrade `7055a2c`. Original game scale 0.75,
+match scale 0.55, match weight 1.8, L2 0.75, round decay 0.90, display scale 250.
+The selected centre replaces its original 1000 origin. Original singles likelihood
+is preserved; doubles uses a documented extension to averaged partner strength
+or pair identities. Modern valid-score filtering remains, and centred Hessian
+uncertainty is added. This is not a claim that RM2 is more accurate.
+
+The round-frozen BRTA diagnostic in `validation/model-check831.json` is generated
+by `validation/compare_models.js`. It uses identical targets and strictly earlier
+rounds/dates for every model, with at least three earlier rounds and both singles
+players previously seen. Sets 6 favours RM3 on log loss but RM3b/RM4b on winner
+count; Rubbers 1 favours RM4b on both in these small cohorts. This already-inspected
+data was not used to retune coefficients and is not a fresh untouched holdout.

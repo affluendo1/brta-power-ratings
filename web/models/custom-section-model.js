@@ -104,12 +104,13 @@
   function fit(matches,individual=false,rubbers=false,ratingModel='V3',parameters={}){
     if(!matches.length)return [];
     const labels=m=>individual?m.home.concat(m.away):[pair(m.home),pair(m.away)],names=[...new Set(matches.flatMap(labels))].sort(),ix=new Map(names.map((p,i)=>[p,i])),n=names.length;
-    const ref=Math.max(...matches.map(m=>Date.parse(m.date))),design=matches.map(m=>{const d=Array(n).fill(0);if(individual){m.home.forEach(p=>d[ix.get(p)]+=.5);m.away.forEach(p=>d[ix.get(p)]-=.5)}else{d[ix.get(pair(m.home))]=1;d[ix.get(pair(m.away))]=-1}return d}),weights=matches.map(m=>2**(-Math.max(0,(ref-Date.parse(m.date))/86400000)/365));
-    const counts=matches.map(m=>ratingEvidence(m,ratingModel,parameters));
+    const legacy=ratingModel==='V2',regularisation=legacy?.75:5,displayScale=legacy?250:600,latestRound=Math.max(...matches.map(m=>Number(m.round)||0));
+    const ref=Math.max(...matches.map(m=>Date.parse(m.date))),design=matches.map(m=>{const d=Array(n).fill(0);if(individual){m.home.forEach(p=>d[ix.get(p)]+=.5);m.away.forEach(p=>d[ix.get(p)]-=.5)}else{d[ix.get(pair(m.home))]=1;d[ix.get(pair(m.away))]=-1}return d}),weights=matches.map(m=>legacy?.9**(latestRound-(Number(m.round)||0)):2**(-Math.max(0,(ref-Date.parse(m.date))/86400000)/365));
+    const counts=matches.map(m=>legacy?{home:m.hg,away:m.ag}:ratingEvidence(m,ratingModel,parameters));
     let theta=Array(n).fill(0),H;
     for(let iter=0;iter<100;iter++){
-      const grad=theta.map(x=>5*x);H=Array.from({length:n},(_,i)=>Array.from({length:n},(_,j)=>i===j?5:0));
-      matches.forEach((m,k)=>{const d=design[k],p=1/(1+Math.exp(-sum(d.map((x,i)=>x*theta[i]))/.75)),g=weights[k]*((counts[k].home+counts[k].away)*p-counts[k].home)/.75,c=weights[k]*(counts[k].home+counts[k].away)*p*(1-p)/(.75*.75);for(let i=0;i<n;i++){if(!d[i])continue;grad[i]+=g*d[i];for(let j=0;j<n;j++)if(d[j])H[i][j]+=c*d[i]*d[j]}});
+      const grad=theta.map(x=>regularisation*x);H=Array.from({length:n},(_,i)=>Array.from({length:n},(_,j)=>i===j?regularisation:0));
+      matches.forEach((m,k)=>{const d=design[k],eta=sum(d.map((x,i)=>x*theta[i])),p=1/(1+Math.exp(-eta/.75)),pm=1/(1+Math.exp(-eta/.55)),matchGradient=legacy?1.8*(pm-Number(m.winner==='home'))/.55:0,matchCurvature=legacy?1.8*pm*(1-pm)/(.55*.55):0,g=weights[k]*(((counts[k].home+counts[k].away)*p-counts[k].home)/.75+matchGradient),c=weights[k]*((counts[k].home+counts[k].away)*p*(1-p)/(.75*.75)+matchCurvature);for(let i=0;i<n;i++){if(!d[i])continue;grad[i]+=g*d[i];for(let j=0;j<n;j++)if(d[j])H[i][j]+=c*d[i]*d[j]}});
       if(Math.max(...grad.map(Math.abs))<1e-8)break;
       const inv=invert(H),step=inv.map(row=>sum(row.map((x,i)=>x*grad[i]))),scale=Math.min(1,1/(Math.max(...step.map(Math.abs))||1));theta=theta.map((x,i)=>x-scale*step[i]);
     }
@@ -118,7 +119,7 @@
     // Orthonormalise the centred design rows. Missing centred directions
     // measure the same extra-nullspace exposure used by the Python model.
     const basis=[];if(individual)for(const d of design){let v=d.slice();for(const b of basis){const dot=sum(v.map((x,i)=>x*b[i]));v=v.map((x,i)=>x-dot*b[i])}const len=Math.hypot(...v);if(len>1e-9)basis.push(v.map(x=>x/len))}
-    return sorted(names.map((player,i)=>{const s=stats.get(player),rating=Math.round(1500+600*(theta[i]-centre)),se=Math.round(600*Math.sqrt(Math.max(0,inv[i][i]-2*rowMeans[i]+grand))),out={player,team:s.team,rating,se,lo:Math.round(rating-1.96*se),hi:Math.round(rating+1.96*se),matches:s.matches,wins:s.wins,losses:s.matches-s.wins,gf:s.gf,ga:s.ga};if(individual){const exposure=Math.sqrt(Math.max(0,1-1/n-sum(basis.map(b=>b[i]*b[i])))),count=s.partners.size,qualified=s.matches>=4&&(rubbers||(count>=2&&exposure<0.05));Object.assign(out,{partners:count,partner_count:count,qualified,network_rank:basis.length,identifiability_exposure:exposure,ranking_status:qualified?(rubbers?'Partner-dependent':'Established'):(exposure>=0.05||s.matches>=4&&count<2?'Partner-dependent':'Provisional')})}return out}));
+    return sorted(names.map((player,i)=>{const s=stats.get(player),rating=Math.round(1500+displayScale*(theta[i]-centre)),se=Math.round(displayScale*Math.sqrt(Math.max(0,inv[i][i]-2*rowMeans[i]+grand))),out={player,team:s.team,rating,se,lo:Math.round(rating-1.96*se),hi:Math.round(rating+1.96*se),matches:s.matches,wins:s.wins,losses:s.matches-s.wins,gf:s.gf,ga:s.ga};if(individual){const exposure=Math.sqrt(Math.max(0,1-1/n-sum(basis.map(b=>b[i]*b[i])))),count=s.partners.size,qualified=s.matches>=4&&(rubbers||(count>=2&&exposure<0.05));Object.assign(out,{partners:count,partner_count:count,qualified,network_rank:basis.length,identifiability_exposure:exposure,ranking_status:qualified?(rubbers?'Partner-dependent':'Established'):(exposure>=0.05||s.matches>=4&&count<2?'Partner-dependent':'Provisional')})}return out}));
   }
   function teamInsights(section,results){
     const output=Object.fromEntries(section.teams.map(t=>[t.name,{completedTies:0,lineupCount:0,lineupStability:null,lineups:[],pairs:[]}])) ,rowsByTeam=new Map(section.teams.map(t=>[t.name,[]]));
@@ -163,3 +164,4 @@
   }
   const api={validate,score,fit,build,clone,ratingEvidence,V3B_WEIGHTS,RM3_MATCH_TIEBREAK_WEIGHT};root.CustomSectionModel=api;if(typeof module!=='undefined')module.exports=api;
 })(typeof window!=='undefined'?window:globalThis);
+

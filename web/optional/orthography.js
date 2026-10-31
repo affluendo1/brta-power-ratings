@@ -12,7 +12,7 @@
  // An explicit game-rule list of familiar English sequences, not population
  // statistics about people's names. A common sequence can also be a digraph.
  const commonPairs=Object.freeze('th he in er an re on at en nd ti es or te ed is it al ar st to nt ng se ha as ou io le ve co me de hi ri ro ne ea ra li ch ll ma si om ur'.split(' '));
- const bandNames=Object.freeze(['Blessed','Alphabet Royalty','Letter Rich','Ordinarily Named','Vowel Dependent','Typographically Cursed']);
+ const bandNames=Object.freeze(['Blessed','Alphabet Royalty','Letter Rich','Well Lettered','Ordinarily Named','Vowel Dependent','Letter Poor','Typographically Cursed']);
  function normalise(name){return String(name??'').normalize('NFKD').replace(/\p{M}/gu,'').replace(/ß/g,'ss').replace(/ẞ/g,'SS').replace(/æ/gi,'ae').replace(/œ/gi,'oe').replace(/ø/gi,'o').replace(/ł/gi,'l').replace(/đ|ð/gi,'d').replace(/þ/gi,'th').toLowerCase()}
  const tile=letter=>tiles[letter]||1,vowel=letter=>'aeiou'.includes(letter),latin=letter=>/^[a-z]$/.test(letter);
  function analyse(name){
@@ -90,3 +90,4 @@
  function rank(rows,analyser=analyse){let prior=null,place=0;return rows.map(row=>({...row,analysis:analyser(row.player)})).sort((a,b)=>b.analysis.score-a.analysis.score||a.player.localeCompare(b.player)).map((row,i)=>{if(row.analysis.score!==prior)place=i+1;prior=row.analysis.score;return {...row,rating:row.analysis.score,rank:place}})}
  const api={tiles,digraphs,trigraphs,quadgraphs,commonPairs,bandNames,normalise,analyse,analysePair,pairScope,createSummaryScorer,highest,rank};root.BRTAOrthography=api;if(typeof module!=='undefined')module.exports=api;
 })(typeof window==='undefined'?globalThis:window);
+
