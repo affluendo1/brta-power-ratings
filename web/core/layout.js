@@ -3,17 +3,18 @@ let layoutOverlayFocus=null;
 const layoutCache=new WeakMap();
 function layoutDefaultCode(){const c=localStorage.getItem('brta-default-competition'),s=localStorage.getItem('brta-default-section');return currentCatalog().find(x=>x.competition_code===c&&(!s||x.section_code===s))?.section_code||''}
 let rm4FrozenPromise=null;
-async function ensureRM4Frozen(){if(!rm4FrozenPromise)rm4FrozenPromise=fetch('web/models/rm4-frozen.json?v=8411').then(r=>{if(!r.ok)throw Error('Prediction model unavailable.');return r.json()}).then(b=>window.BRTARM4Frozen=b).catch(e=>{rm4FrozenPromise=null;throw e});return rm4FrozenPromise}
+async function ensureRM4Frozen(){if(!rm4FrozenPromise)rm4FrozenPromise=fetch('web/models/rm4-frozen.json?v=842').then(r=>{if(!r.ok)throw Error('Prediction model unavailable.');return r.json()}).then(b=>window.BRTARM4Frozen=b).catch(e=>{rm4FrozenPromise=null;throw e});return rm4FrozenPromise}
 function legacyModelUnlocked(model){try{return auxiliaryEnabled()&&JSON.parse(localStorage.getItem('brta-more-settings-v1')||'{}')[model.toLowerCase()]===true}catch{return false}}
 function rm1Unlocked(){return legacyModelUnlocked('RM1')}
 function rm2Unlocked(){return legacyModelUnlocked('RM2')}
-function selectedRatingModel(){const saved=localStorage.getItem('brta-rating-model');return (saved==='RM1'||saved==='RM2'?legacyModelUnlocked(saved):['Automatic','RM3','RM3b','RM4a','RM4b','RM4.1 Ensemble'].includes(saved))?saved:'RM4.1 Ensemble'}
+function ascensionUnlocked(){return legacyModelUnlocked('ascension')}
+function selectedRatingModel(){const saved=localStorage.getItem('brta-rating-model');return (saved==='RM1000 Ascension'?ascensionUnlocked():saved==='RM1'||saved==='RM2'?legacyModelUnlocked(saved):['Automatic','RM3','RM3b','RM4a','RM4b','RM4.1 Ensemble'].includes(saved))?saved:'RM4.1 Ensemble'}
 function selectedRatingCentre(){return BRTARM4Engine.policy(selectedRatingModel()).centre}
 async function layoutApplyModel(data,model=selectedRatingModel()){
  data=BRTAScores.normalise(data);const centre=selectedRatingCentre(),key=model+':'+centre;
  if(layoutCache.get(data)?.model===key)return layoutCache.get(data).result;
- let result=data;if(model==='Automatic'||model.startsWith('RM4'))await ensureRM4Frozen();
- if(model!=='RM3'||data.meta?.ratingModel==='V3B'||data.meta?.needsScoreRefit){result=await new Promise((resolve,reject)=>{const worker=new Worker('web/workers/rating-worker.js?v=8411'),timer=setTimeout(()=>{worker.terminate();reject(Error('Rating calculation timed out. Try RM3 in Settings.'))},90000);const finish=()=>{clearTimeout(timer);worker.terminate()};worker.onmessage=e=>{finish();e.data.error?reject(Error(e.data.error)):resolve(e.data.data)};worker.onerror=e=>{finish();reject(Error(e.message||'Could not calculate ratings.'))};worker.postMessage({data,model})})}
+ let result=data;if(model==='Automatic'||model==='RM1000 Ascension'||model.startsWith('RM4'))await ensureRM4Frozen();
+ if(model!=='RM3'||data.meta?.ratingModel==='V3B'||data.meta?.needsScoreRefit){result=await new Promise((resolve,reject)=>{const worker=new Worker('web/workers/rating-worker.js?v=842'),timer=setTimeout(()=>{worker.terminate();reject(Error('Rating calculation timed out. Try RM3 in Settings.'))},90000);const finish=()=>{clearTimeout(timer);worker.terminate()};worker.onmessage=e=>{finish();e.data.error?reject(Error(e.data.error)):resolve(e.data.data)};worker.onerror=e=>{finish();reject(Error(e.message||'Could not calculate ratings.'))};worker.postMessage({data,model})})}
  if(model!=='Automatic')result=BRTARM4Engine.display({...result,meta:{...result.meta,predictionModel:model}});layoutCache.set(data,{model:key,result});return result;
 }
 
@@ -29,9 +30,9 @@ function renderFixtures(){renderFixtureRounds();const host=$('#fixturesList'),se
 function historyDialogHTML(){return'<div class="history-selects"><label>Competition<select id="historyCompetition"><option value="AA">Saturday AM</option><option value="UA">Sunday AM</option></select></label><label>Season<select id="historySeason"></select></label><label>Section<select id="historySection"></select></label></div><p id="historyInfo" role="status">Loading seasons…</p><div class="history-actions"><button class="button primary" id="historyOpenBtn">View selected section</button><button class="button secondary" id="historyCurrentBtn">Return to current season</button></div>'}
 function openLayoutOverlay(kind){
  let overlay=$('#layoutOverlay');if(!overlay){overlay=document.createElement('div');overlay.id='layoutOverlay';overlay.className='overlay hidden layout-overlay';document.body.append(overlay)}
- const titles={history:'Section History',methodology:'Rating Methodology',rules:'BRTA Rules'},method=eightMethodologyHTML();
- overlay.innerHTML='<div class="overlay-backdrop" data-layout-close></div><section class="settings-sheet" role="dialog" aria-modal="true" aria-labelledby="layoutTitle"><button class="close-btn" data-layout-close aria-label="Close">×</button><div class="overlay-title"><h2 id="layoutTitle">'+titles[kind]+'</h2></div>'+(kind==='history'?historyDialogHTML():kind==='rules'?brtaRulesHTML():method)+'</section>';
- layoutOverlayFocus=document.activeElement;overlay.classList.remove('hidden');BRTAOverlays.lock(overlay);document.body.classList.add('modal-open');overlay.querySelector('button').focus();if(kind==='history')hydrateHistorySettings();if(kind==='methodology')eightBindModel();
+ const titles={history:'Section History',methodology:'Rating Methodology',rules:'BRTA Rules',model:'Rating model'},method=kind==='methodology'?eightMethodologyHTML():'';
+ overlay.innerHTML='<div class="overlay-backdrop" data-layout-close></div><section class="settings-sheet" role="dialog" aria-modal="true" aria-labelledby="layoutTitle"><button class="close-btn" data-layout-close aria-label="Close">×</button><div class="overlay-title"><h2 id="layoutTitle">'+titles[kind]+'</h2></div>'+(kind==='history'?historyDialogHTML():kind==='rules'?brtaRulesHTML():kind==='model'?'<div class="settings-group"><p>Choose how ratings and predictions are calculated.</p>'+window.BRTAModelFields.html('homeModel')+'</div>':method)+'</section>';
+ layoutOverlayFocus=document.activeElement;overlay.classList.remove('hidden');BRTAOverlays.lock(overlay);document.body.classList.add('modal-open');overlay.querySelector('button').focus();if(kind==='history')hydrateHistorySettings();if(kind==='methodology'||kind==='model')eightBindModel();
 }
 function closeLayoutOverlay(){const o=$('#layoutOverlay');if(!o||o.classList.contains('hidden'))return;o.classList.add('hidden');BRTAOverlays.unlock(o);if(!document.querySelector('.overlay:not(.hidden)'))document.body.classList.remove('modal-open');layoutOverlayFocus?.focus?.({preventScroll:true})}
 function openSettings(){

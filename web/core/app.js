@@ -169,7 +169,7 @@ async function loadSection(code,preloadedPayload=null){
   finally{if(token===loadingToken)document.body.classList.remove('section-loading')}
 }
 
-function statusStrip(){const sync=D.sync||{},version=window.BRTAChangelog?.version||'8.2';$('#statusStrip').innerHTML='<div><b>Last checked</b><span>'+esc(fmtTime(sync.checkedAt))+'</span></div><button type="button" data-layout-open="history"><b>History</b><span>Browse seasons</span></button><button type="button" data-changelog-open><b>Version</b><span>'+esc(version)+'</span></button><button type="button" data-layout-settings><b>Rating model</b><span>'+selectedRatingModel()+'</span></button>';}
+function statusStrip(){const sync=D.sync||{},version=window.BRTAChangelog?.version||'8.2';$('#statusStrip').innerHTML='<div><b>Last checked</b><span>'+esc(fmtTime(sync.checkedAt))+'</span></div><button type="button" data-layout-open="history"><b>History</b><span>Browse seasons</span></button><button type="button" data-changelog-open><b>Version</b><span>'+esc(version)+'</span></button><button type="button" data-layout-open="model"><b>Rating model</b><span>'+selectedRatingModel()+'</span></button>';}
 
 function showSyncToast(){const s=DATA.globalSync||{},check=s.checkedAt;if(!check||localStorage.getItem('brta-sync-toast-seen')===check)return;localStorage.setItem('brta-sync-toast-seen',check);const fresh=!!s.newResultsLastCheck,title=fresh?'Results refreshed':'Results checked',message=fresh?'Official results changed, so the ratings and match pages have been refreshed across the BRTA competitions.':'The latest check found no new official results. Everything already published remains up to date.';const toast=document.createElement('div');toast.className='sync-toast '+(fresh?'updated':'checked');toast.innerHTML='<div class="sync-toast-icon">'+(fresh?'✓':'i')+'</div><div><b>'+title+'</b><p>'+message+'</p></div><button class="sync-toast-close" aria-label="Close update">×</button>';const end=()=>{toast.classList.add('leaving');setTimeout(()=>toast.remove(),220)};toast.querySelector('button').onclick=end;$('#syncToastHost').appendChild(toast);setTimeout(end,10000)}
 function teamOptions(){
@@ -302,7 +302,7 @@ function renderRatings(){
   renderRatingRoundNotice();if(ratingScope==='history'){cancelAuxiliaryReveal();renderHistoryPlayerSearch();return}if(ratingScope==='all'){cancelAuxiliaryReveal();renderGlobalRatings();return}
   $('#teamFilter').disabled=false;
   const [title,desc]=ratingInfo[ratingView];$('#ratingsTitle').textContent=title;$('#ratingsDesc').textContent=desc+(ratingRound==null?'':' After Round '+ratingRound+'.');
-  $('#ratingFilters').classList.remove('hidden');$('#ratingsHint').textContent='Model: '+selectedRatingModel()+' · Centre '+(D.meta?.ratingCentre??2000);
+  $('#ratingFilters').classList.remove('hidden');$('#ratingsHint').textContent='';
   const {rows,min,type}=currentRows(),q=$('#search').value.toLowerCase(),tf=$('#teamFilter').value,band=bandModel(rows,min,type),derived=ratingRound==null?auxiliaryVisibleContext():null;
   renderBandInfo(band);
   let rank=0,out='',lastBand='';
