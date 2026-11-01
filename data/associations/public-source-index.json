@@ -1,0 +1,91 @@
+{
+  "description": "Aggregate source directory index; collection counts, not validated training examples. No raw pages, personal contact details, roster data, or source content included.",
+  "source": "https://www.trols.org.au/",
+  "scope": "current selectors; historical archive not represented",
+  "associations": [
+    {
+      "association": "brta",
+      "source": "https://www.trols.org.au/brta/",
+      "sections_collected": 79,
+      "scorecards_collected": 2227,
+      "legacy": false
+    },
+    {
+      "association": "bdta",
+      "source": "https://www.trols.org.au/bdta/",
+      "sections_collected": 19,
+      "scorecards_collected": 171,
+      "legacy": false
+    },
+    {
+      "association": "bdnta",
+      "source": "https://www.trols.org.au/bdnta/",
+      "sections_collected": 66,
+      "scorecards_collected": 2432,
+      "legacy": false
+    },
+    {
+      "association": "dvta",
+      "source": "https://www.trols.org.au/dvta/",
+      "sections_collected": 26,
+      "scorecards_collected": 989,
+      "legacy": false
+    },
+    {
+      "association": "erta",
+      "source": "https://www.trols.org.au/erta/",
+      "sections_collected": 117,
+      "scorecards_collected": 1022,
+      "legacy": false
+    },
+    {
+      "association": "hdta",
+      "source": "https://www.trols.org.au/hdta/",
+      "sections_collected": 5,
+      "scorecards_collected": 197,
+      "legacy": false
+    },
+    {
+      "association": "ldnta",
+      "source": "https://www.trols.org.au/ldnta/",
+      "sections_collected": 22,
+      "scorecards_collected": 436,
+      "legacy": false
+    },
+    {
+      "association": "metro",
+      "source": "https://www.trols.org.au/metro/",
+      "sections_collected": 5,
+      "scorecards_collected": 246,
+      "legacy": false
+    },
+    {
+      "association": "mdjta",
+      "source": "https://www.trols.org.au/mdjta/",
+      "sections_collected": 16,
+      "scorecards_collected": 698,
+      "legacy": true
+    },
+    {
+      "association": "nejta",
+      "source": "https://www.trols.org.au/nejta/",
+      "sections_collected": 30,
+      "scorecards_collected": 1089,
+      "legacy": false
+    },
+    {
+      "association": "nentg",
+      "source": "https://www.trols.org.au/nentg/",
+      "sections_collected": 48,
+      "scorecards_collected": 1937,
+      "legacy": false
+    },
+    {
+      "association": "wdta",
+      "source": "https://www.trols.org.au/wdta/",
+      "sections_collected": 137,
+      "scorecards_collected": 1700,
+      "legacy": false
+    }
+  ]
+}
