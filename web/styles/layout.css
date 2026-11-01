@@ -17,3 +17,30 @@
 .wg-layout{position:relative;width:min(1040px,96vw);height:min(720px,94dvh)}.wg-left{position:absolute;left:50%;top:50%;width:min(420px,90vw);transform:translate(-50%,-50%);transition:transform 3s cubic-bezier(.4,0,.2,1),top 3s}.wg-left .mode-switch-box{width:100%;box-sizing:border-box}.wg-launch{display:block;margin:18px auto 0;font-size:12px;animation:wg-in 1s ease both}.wg-open .wg-left{transform:translate(calc(-100% - 30px),-50%)}.wg-game{position:absolute;left:calc(50% + 30px);top:50%;transform:translateY(-50%);width:320px;max-width:90vw;padding:0;border:0;background:none;box-shadow:none;color:#e6d8f3;animation:wg-in 2.8s .6s both}.wg-game[hidden],.wg-launch[hidden]{display:none}.wg-game canvas{display:block;width:100%;height:auto;aspect-ratio:1;border:0;background:transparent;outline:none;touch-action:none;user-select:none}.wg-score{display:block;text-align:right;margin:0 0 14px;font:24px/1.3 'Snake Retro',monospace;font-synthesis:none;color:#e5d4ff}@keyframes wg-in{from{opacity:0;translate:0 8px}to{opacity:1;translate:0 0}}
 @media(max-width:800px){.wg-open .wg-left{top:15%;transform:translate(-50%,-50%) scale(.65)}.wg-game{left:50%;top:62%;transform:translate(-50%,-50%);width:min(330px,88vw,34dvh)}}
 @media(prefers-reduced-motion:reduce){.wg-left{transition:none}.wg-game,.wg-launch{animation:none}}
+
+/* Mobile foundation: preserve every column while making each main view easier to navigate. */
+@media (max-width: 600px){
+ html[data-interface="future"] .site-header{gap:8px;padding-inline:12px}
+ html[data-interface="future"] .header-actions{display:flex;flex-wrap:wrap;gap:6px}
+ html[data-interface="future"] .header-actions .button{flex:1 1 auto;min-height:44px;padding-inline:9px}
+ html[data-interface="future"] .wrap{padding-inline:10px}
+ html[data-interface="future"] .section-picker{gap:8px}
+ html[data-interface="future"] .section-picker-footer{gap:10px;flex-wrap:wrap}
+ html[data-interface="future"] .provisional-control{min-height:44px}
+ html[data-interface="future"] .status-strip>button{min-height:52px}
+ html[data-interface="future"] .main-nav{display:flex;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:thin}
+ html[data-interface="future"] .main-tab{flex:1 0 68px;min-height:44px;font-size:12px}
+ html[data-interface="future"] .subtab{min-height:44px}
+ html[data-interface="future"] .filters input,html[data-interface="future"] .filters select,html[data-interface="future"] .search-options-button{min-height:44px;font-size:16px}
+ html[data-interface="future"] .table-wrap{max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:thin}
+ html[data-interface="future"] .table-wrap table{width:max-content;min-width:100%}
+ html[data-interface="future"] .result-round-head,html[data-interface="future"] .fixture-round-head{flex-wrap:wrap;gap:8px}
+ html[data-interface="future"] .fixture-round-actions{flex-wrap:wrap;gap:7px}
+ html[data-interface="future"] .fixture-round-actions .button{min-height:44px}
+ html[data-interface="future"] .result-match,html[data-interface="future"] .fixture-match{min-height:70px}
+ html[data-interface="future"] .team-cards{max-width:100%;overflow-x:auto;overscroll-behavior-x:contain}
+ html[data-interface="future"] .settings-sheet,html[data-interface="future"] .prediction-sheet,html[data-interface="future"] .result-sheet,html[data-interface="future"] .profile-sheet{overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
+ html[data-interface="future"] .settings-sheet select,html[data-interface="future"] .prediction-sheet select,html[data-interface="future"] .settings-sheet input:not([type="checkbox"]){font-size:16px;min-height:44px}
+ html[data-interface="future"] .overlay .close-btn{min-width:44px;min-height:44px}
+ html[data-interface="future"] .site-footer{overflow-wrap:anywhere}
+}

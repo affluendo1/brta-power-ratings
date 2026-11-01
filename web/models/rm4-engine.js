@@ -26,9 +26,11 @@ function automatic(data,bundle,baselineEngine){
 }
 function ascension(data,bundle){
  const copy=recalculate(data,'RM4.1 Ensemble',bundle);
- function invert(x){if(!x||typeof x!=='object')return;if(Array.isArray(x)){x.forEach(invert);return}for(const [k,v] of Object.entries(x)){if(k==='rm4'||k==='meta')continue;if(typeof v==='number'&&absolute.has(k))x[k]=3000-v;else if(typeof v==='number'&&differences.has(k)&&k!=='se'&&k!=='powerSe'&&k!=='singlesSe'&&k!=='doublesSe'&&k!=='overallSe')x[k]=-v;else invert(v)}if(Number.isFinite(x.lo)&&Number.isFinite(x.hi)&&x.lo>x.hi)[x.lo,x.hi]=[x.hi,x.lo]}
- invert(copy);for(const list of Object.values(copy.ratingHistory?.players||{}))for(const point of list)point[1]=3000-point[1];
- for(const rows of [copy.singles,copy.doublesIndividuals,copy.doubles,...Object.values(copy.ratingHistory?.tables||{}),...Object.values(copy.doublesRatingHistory?.tables||{}).flatMap(x=>[x.doublesPlayers,x.pairs])])if(Array.isArray(rows))sort(rows);
+ // Transform each player's current and historical skill with the same deterministic joke signal.
+ const score=(name,rating)=>Math.round(1500+450*M.ascensionSkill(name,(rating-1500)/450));
+ function apply(row){if(!row||typeof row.player!=='string'||!Number.isFinite(row.rating))return;const old=row.rating;row.rating=score(row.player,old);if(Number.isFinite(row.se)){row.lo=row.rating-Math.round(1.96*row.se);row.hi=row.rating+Math.round(1.96*row.se)}if(Number.isFinite(row.ratingChange))row.ratingChange=0}
+ for(const rows of [copy.singles,copy.doublesIndividuals,copy.doubles,...Object.values(copy.ratingHistory?.tables||{}),...Object.values(copy.doublesRatingHistory?.tables||{}).flatMap(x=>[x.doublesPlayers,x.pairs])])if(Array.isArray(rows)){rows.forEach(apply);sort(rows)}
+ for(const [name,list] of Object.entries(copy.ratingHistory?.players||{}))for(const point of list)if(Number.isFinite(point[1]))point[1]=score(name,point[1]);
  copy.meta={...copy.meta,predictionModel:'RM1000 Ascension',ratingModel:'RM1000 Ascension',noveltyModel:true};copy.note='RM 1000 Ascension is a joke model for entertainment.';return copy;
 }
 const absolute=new Set(['rating','power','lo','hi','averageOpponent','individualAverage','singlesRating','doublesRating','overallRating','singlesPower','doublesPower','ratingAtTime','opponentRatingAtTime','winnerRating','loserRating','performance','avg','best4']);

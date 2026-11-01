@@ -1,6 +1,17 @@
 // Website releases, newest first. Routine result checks are not website releases.
 window.BRTA_RELEASES = Object.freeze([
 {
+  "version": "8.4.3",
+  "title": "Made for mobile",
+  "size": "small",
+  "committedAt": "2026-11-01T10:22:00.000Z",
+  "changes": [
+    "The first stage of a more comfortable mobile layout across the site.",
+    "Easier touch controls, tables and fixture browsing.",
+    "A further evolution in the Ascension model."
+  ]
+},
+{
   "version": "8.4.2",
   "title": "A clearer view",
   "size": "small",
