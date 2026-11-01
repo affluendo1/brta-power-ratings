@@ -1,5 +1,6 @@
 // Website releases, newest first. Routine result checks are not website releases.
 window.BRTA_RELEASES = Object.freeze([
+{"version":"8.4.4","size":"small","committedAt":"2026-11-01T10:51:00Z","changes":["A new hidden forecast in More Settings: The Patch Prophet."]},
 {
   "version": "8.4.3",
   "title": "Made for mobile",
