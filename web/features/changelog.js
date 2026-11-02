@@ -90,7 +90,7 @@
 
   // Handle this dialog before the site's Escape shortcut, keeping Settings open underneath.
   document.addEventListener('keydown', event => {
-    if (!overlay || overlay.classList.contains('hidden') || document.querySelector('#prophetOverlay:not(.hidden)')) return;
+    if (!overlay || overlay.classList.contains('hidden')) return;
     if (event.key === 'Escape') {
       event.preventDefault();
       event.stopImmediatePropagation();
