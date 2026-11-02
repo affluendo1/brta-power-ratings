@@ -21,8 +21,8 @@ function recalculate(data,model,bundle){const base=model==='RM4a'?'RM4a':'RM4b',
  return copy;
 }
 function automatic(data,bundle,baselineEngine){
- const baseline=Layout.recalculate(data,'RM3',baselineEngine),ratings=display({...baseline,meta:{...baseline.meta,predictionModel:'RM3'}}),forecasts=recalculate(data,'RM4.1 Ensemble',bundle);
- return {...ratings,rm4:forecasts.rm4,meta:{...ratings.meta,modelChoice:'Automatic',automatic:true,ratingChoice:'RM3',predictionModel:'RM4.1 Ensemble',automaticPolicyVersion:1},note:'Automatic: RM3 tables and history; RM4.1 Ensemble live forecasts. A fixed policy, not a guarantee of superiority.'};
+ const result=display(recalculate(data,'RM4.1 Ensemble',bundle));
+ return {...result,meta:{...result.meta,modelChoice:'Automatic',automatic:true,ratingChoice:'RM4b',automaticPolicyVersion:2},note:'Automatic uses RM4.1 Ensemble.'};
 }
 function ascension(data,bundle){
  const copy=recalculate(data,'RM4.1 Ensemble',bundle);
@@ -36,8 +36,8 @@ function ascension(data,bundle){
 const absolute=new Set(['rating','power','lo','hi','averageOpponent','individualAverage','singlesRating','doublesRating','overallRating','singlesPower','doublesPower','ratingAtTime','opponentRatingAtTime','winnerRating','loserRating','performance','avg','best4']);
 const differences=new Set(['se','powerSe','singlesSe','doublesSe','overallSe','pairEffect','pairSynergy','ratingChange','change','dominanceGap','runnerUpGap']);
 function policy(model='RM4.1 Ensemble'){
- const scales={RM1:375,RM2:275,RM3:435,RM3b:275,RM4a:1125,RM4b:765,'RM4.1 Ensemble':765,'RM1000 Ascension':765,Automatic:435};
- return {centre:(model.startsWith('RM4')||model==='RM1000 Ascension')?2000:['RM1','RM2'].includes(model)?1000:1500,probabilityScale:scales[model]??435};
+ const scales={RM1:375,RM2:275,RM3:435,RM3b:275,RM4a:1125,RM4b:765,'RM4.1 Ensemble':765,'RM1000 Ascension':765,Automatic:765};
+ return {centre:(model.startsWith('RM4')||model==='RM1000 Ascension'||model==='Automatic')?2000:['RM1','RM2'].includes(model)?1000:1500,probabilityScale:scales[model]??435};
 }
 function display(data){const p=policy(data.meta?.predictionModel);return centre(data,p.centre,p.probabilityScale)}
 function centre(data,value=2000,probabilityScale=null){

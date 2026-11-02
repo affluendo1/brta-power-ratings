@@ -73,7 +73,7 @@ function auxiliaryPlayer(name){return name===window.AuxiliaryModule?.CANONICAL&&
 
 function csvCell(value){const text=String(value??'');return'"'+text.replace(/"/g,'""')+'"'}
 function exportSectionCSV(){
-  if(!D?.meta)return;
+  if(!D?.meta||document.body.classList.contains('section-loading'))return;
   const header=['record_type','competition','section','date','round','status','home_team','away_team','home_points','away_points','home_rubbers','away_rubbers','home_games','away_games','rubber_type','rubber_position','home_players','away_players','winner','score'];
   const rows=[header];
   for(const round of D.results||[])for(const fixture of round.fixtures||[]){
@@ -153,7 +153,7 @@ function fillSections(comp,selected){
 async function loadSection(code,preloadedPayload=null){
   cancelAuxiliaryReveal();const token=++loadingToken,meta=viewCatalog.find(x=>x.section_code===code);
   $('#sectionSubtitle').textContent=(meta?.competition_label||'').replace(' - ',' · ')+' · '+(meta?.section_label||'Loading…');
-  document.body.classList.add('section-loading');
+  document.body.classList.add('section-loading');for(const id of ['exportCompleteBtn','exportSectionBtn']){const button=$('#'+id);if(button)button.disabled=true;}
   try{
     const dataPath=meta?.data_path||('data/site/sections/'+code+'.json');
     const payload=preloadedPayload||(meta?.is_custom?window.CustomSections.payload(code):await fetch(dataPath+'?v='+encodeURIComponent(DATA.globalSync.checkedAt||''),{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('Section data could not be loaded');return r.json()}));
@@ -166,7 +166,7 @@ async function loadSection(code,preloadedPayload=null){
     $('#sectionSubtitle').textContent=D.meta.competition_label.replace(' - ',' · ')+' · '+D.meta.section_label;
     window.CustomSections?.bindHeader(D.meta?.is_custom?code:null);renderAll();return true;
   }catch(error){if(token!==loadingToken)return false;if(D){if(committedCatalog){viewCatalog=committedCatalog;activeHistorySeasonId=committedHistorySeason;}$('#sectionSubtitle').textContent=D.meta.competition_label.replace(' - ',' · ')+' · '+D.meta.section_label;renderChoice('competitionSelect',[...new Map(viewCatalog.map(x=>[x.competition_code,sectionCompetitionLabel(x)])).entries()],D.meta.competition_code);fillSections(D.meta.competition_code,D.meta.section_code);}$('#statusStrip').innerHTML='<div class="notice"><b>Could not load this section.</b><span>'+esc(error.message)+'</span></div>';return false}
-  finally{if(token===loadingToken)document.body.classList.remove('section-loading')}
+  finally{if(token===loadingToken){document.body.classList.remove('section-loading');for(const id of ['exportCompleteBtn','exportSectionBtn']){const button=$('#'+id);if(button)button.disabled=false;}}}
 }
 
 function statusStrip(){const sync=D.sync||{},version=window.BRTAChangelog?.version||'8.2';$('#statusStrip').innerHTML='<div><b>Last checked</b><span>'+esc(fmtTime(sync.checkedAt))+'</span></div><button type="button" data-layout-open="history"><b>History</b><span>Browse seasons</span></button><button type="button" data-changelog-open><b>Version</b><span>'+esc(version)+'</span></button><button type="button" data-layout-open="model"><b>Rating model</b><span>'+selectedRatingModel()+'</span></button>';}

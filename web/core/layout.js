@@ -1,6 +1,6 @@
 /* Layout Overhaul — shared navigation, display preferences and section reports. */
 let layoutOverlayFocus=null;
-const layoutCache=new WeakMap();
+const layoutCache=new WeakMap(),layoutSources=new WeakMap();
 function layoutDefaultCode(){const c=localStorage.getItem('brta-default-competition'),s=localStorage.getItem('brta-default-section');return currentCatalog().find(x=>x.competition_code===c&&(!s||x.section_code===s))?.section_code||''}
 let rm4FrozenPromise=null;
 async function ensureRM4Frozen(){if(!rm4FrozenPromise)rm4FrozenPromise=fetch('web/models/rm4-frozen.json?v=844').then(r=>{if(!r.ok)throw Error('Prediction model unavailable.');return r.json()}).then(b=>window.BRTARM4Frozen=b).catch(e=>{rm4FrozenPromise=null;throw e});return rm4FrozenPromise}
@@ -11,11 +11,11 @@ function ascensionUnlocked(){return legacyModelUnlocked('ascension')}
 function selectedRatingModel(){const saved=localStorage.getItem('brta-rating-model');return (saved==='RM1000 Ascension'?ascensionUnlocked():saved==='RM1'||saved==='RM2'?legacyModelUnlocked(saved):['Automatic','RM3','RM3b','RM4a','RM4b','RM4.1 Ensemble'].includes(saved))?saved:'RM4.1 Ensemble'}
 function selectedRatingCentre(){return BRTARM4Engine.policy(selectedRatingModel()).centre}
 async function layoutApplyModel(data,model=selectedRatingModel()){
- data=BRTAScores.normalise(data);const centre=selectedRatingCentre(),key=model+':'+centre;
+ const source=layoutSources.get(data)||data;data=BRTAScores.normalise(source);const centre=BRTARM4Engine.policy(model).centre,key=model+':'+centre;
  if(layoutCache.get(data)?.model===key)return layoutCache.get(data).result;
  let result=data;if(model==='Automatic'||model==='RM1000 Ascension'||model.startsWith('RM4'))await ensureRM4Frozen();
- if(model!=='RM3'||data.meta?.ratingModel==='V3B'||data.meta?.needsScoreRefit){result=await new Promise((resolve,reject)=>{const worker=new Worker('web/workers/rating-worker.js?v=844'),timer=setTimeout(()=>{worker.terminate();reject(Error('Rating calculation timed out. Try RM3 in Settings.'))},90000);const finish=()=>{clearTimeout(timer);worker.terminate()};worker.onmessage=e=>{finish();e.data.error?reject(Error(e.data.error)):resolve(e.data.data)};worker.onerror=e=>{finish();reject(Error(e.message||'Could not calculate ratings.'))};worker.postMessage({data,model})})}
- if(model!=='Automatic')result=BRTARM4Engine.display({...result,meta:{...result.meta,predictionModel:model}});layoutCache.set(data,{model:key,result});return result;
+ if(model!=='RM3'||data.meta?.ratingModel==='V3B'||data.meta?.needsScoreRefit){result=await new Promise((resolve,reject)=>{const worker=new Worker('web/workers/rating-worker.js?v=8441'),timer=setTimeout(()=>{worker.terminate();reject(Error('Rating calculation timed out. Try RM3 in Settings.'))},90000);const finish=()=>{clearTimeout(timer);worker.terminate()};worker.onmessage=e=>{finish();e.data.error?reject(Error(e.data.error)):resolve(e.data.data)};worker.onerror=e=>{finish();reject(Error(e.message||'Could not calculate ratings.'))};worker.postMessage({data,model})})}
+ if(model!=='Automatic')result=BRTARM4Engine.display({...result,meta:{...result.meta,predictionModel:model}});layoutCache.set(data,{model:key,result});layoutSources.set(result,source);return result;
 }
 
 function ratingChangeCell(row){const n=row.ratingChange;return '<td class="rating-change '+(n>0?'rank-up':n<0?'rank-down':'rank-still')+'">'+(n==null?'—':(n>0?'+':'')+n)+'</td>'}
@@ -48,7 +48,7 @@ function openSettings(){
 
  window.AuxiliaryPortal?.bindSettings?.();window.CustomSections?.bindSettings();window.AmbientPanel?.bindSettings();$('#settingsClose').focus();
 }
-$('#settingsBtn').onclick=openSettings;$('#exportCompleteBtn').onclick=()=>{if(!D)return;downloadFile(BRTALayoutModel.report(D,BRTAHistory),(D.meta.section_label+'-complete-section').replace(/[^\w-]+/g,'-')+'.html','text/html;charset=utf-8')};
+$('#settingsBtn').onclick=openSettings;$('#exportCompleteBtn').onclick=async()=>{if(!D||document.body.classList.contains('section-loading'))return;const button=$('#exportCompleteBtn'),section=D,model=selectedRatingModel();button.disabled=true;try{const data=await layoutApplyModel(section,model);if(D!==section||selectedRatingModel()!==model||document.body.classList.contains('section-loading'))return;downloadFile(BRTALayoutModel.report(data,BRTAHistory),(data.meta.section_label+'-complete-section').replace(/[^\w-]+/g,'-')+'.html','text/html;charset=utf-8')}catch(error){alert('Could not export this section: '+error.message)}finally{button.disabled=document.body.classList.contains('section-loading')}};
 $('#provToggle').checked=showProv;$('#provToggle').onchange=e=>{showProv=e.target.checked;localStorage.setItem('brta-show-provisional',showProv?'1':'0');renderRatings()};
 document.addEventListener('click',e=>{const o=e.target.closest('[data-layout-open]');if(o)openLayoutOverlay(o.dataset.layoutOpen);if(e.target.closest('[data-layout-close]'))closeLayoutOverlay();if(e.target.closest('[data-layout-settings]'))openSettings()});
 document.addEventListener('keydown',e=>{const o=$('#layoutOverlay');if(!o||o.classList.contains('hidden'))return;if(e.key==='Escape'){e.preventDefault();e.stopImmediatePropagation();closeLayoutOverlay()}if(e.key==='Tab'){const items=[...o.querySelectorAll('button,select,summary,a[href]')].filter(x=>!x.disabled&&x.getClientRects().length),first=items[0],last=items.at(-1);if(e.shiftKey&&(document.activeElement===first||!o.contains(document.activeElement))){e.preventDefault();last.focus()}else if(!e.shiftKey&&(document.activeElement===last||!o.contains(document.activeElement))){e.preventDefault();first.focus()}}},true);
