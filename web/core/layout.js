@@ -4,9 +4,9 @@ let layoutOverlayFocus=null;
 const layoutCache=new WeakMap(),layoutSources=new WeakMap();
 function layoutDefaultCode(){const c=localStorage.getItem('brta-default-competition'),s=localStorage.getItem('brta-default-section');return currentCatalog().find(x=>x.competition_code===c&&(!s||x.section_code===s))?.section_code||''}
 let rm4FrozenPromise=null;
-async function ensureRM4Frozen(){if(!rm4FrozenPromise)rm4FrozenPromise=fetch('web/models/rm4-frozen.json?v=852').then(r=>{if(!r.ok)throw Error('Prediction model unavailable.');return r.json()}).then(b=>window.BRTARM4Frozen=b).catch(e=>{rm4FrozenPromise=null;throw e});return rm4FrozenPromise}
+async function ensureRM4Frozen(){if(!rm4FrozenPromise)rm4FrozenPromise=fetch('web/models/rm4-frozen.json?v=8521').then(r=>{if(!r.ok)throw Error('Prediction model unavailable.');return r.json()}).then(b=>window.BRTARM4Frozen=b).catch(e=>{rm4FrozenPromise=null;throw e});return rm4FrozenPromise}
 let orchestraPromise=null;
-async function ensureOrchestra(){if(!orchestraPromise)orchestraPromise=Promise.all([fetch('web/models/orchestra-bundle.json?v=852').then(r=>{if(!r.ok)throw Error('Orchestra unavailable.');return r.json()}),fetch('web/models/orchestra-history.json?v=852').then(r=>r.ok?r.json():null).catch(()=>null)]).then(([bundle,history])=>{window.BRTAOrchestraBundle=bundle;window.BRTAOrchestraHistory=history;return bundle}).catch(e=>{orchestraPromise=null;throw e});return orchestraPromise}
+async function ensureOrchestra(){if(!orchestraPromise)orchestraPromise=Promise.all([fetch('web/models/orchestra-bundle.json?v=8521').then(r=>{if(!r.ok)throw Error('Orchestra unavailable.');return r.json()}),fetch('web/models/orchestra-history.json?v=8521').then(r=>r.ok?r.json():null).catch(()=>null)]).then(([bundle,history])=>{window.BRTAOrchestraBundle=bundle;window.BRTAOrchestraHistory=history;return bundle}).catch(e=>{orchestraPromise=null;throw e});return orchestraPromise}
 function legacyModelUnlocked(model){try{return auxiliaryEnabled()&&JSON.parse(localStorage.getItem('brta-more-settings-v1')||'{}')[model.toLowerCase()]===true}catch{return false}}
 function rm1Unlocked(){return legacyModelUnlocked('RM1')}
 function rm2Unlocked(){return legacyModelUnlocked('RM2')}
@@ -18,7 +18,7 @@ async function layoutApplyModel(data,model=selectedRatingModel()){
  if(layoutCache.get(data)?.model===key)return layoutCache.get(data).result;
  if(BRTAOrchestra.isModel(model))await ensureOrchestra();
  let result=data;if(BRTAOrchestra.isModel(model)||model==='Automatic'||model==='RM1000 Ascension'||model.startsWith('RM4'))await ensureRM4Frozen();
- if(model!=='RM3'||data.meta?.ratingModel==='V3B'||data.meta?.needsScoreRefit){result=await new Promise((resolve,reject)=>{const worker=new Worker('web/workers/rating-worker.js?v=852'),timer=setTimeout(()=>{worker.terminate();reject(Error('Rating calculation timed out. Try RM3 in Settings.'))},90000);const finish=()=>{clearTimeout(timer);worker.terminate()};worker.onmessage=e=>{finish();e.data.error?reject(Error(e.data.error)):resolve(e.data.data)};worker.onerror=e=>{finish();reject(Error(e.message||'Could not calculate ratings.'))};worker.postMessage({data,model,orchestraBundle:window.BRTAOrchestraBundle,history:window.BRTAOrchestraHistory})})}
+ if(model!=='RM3'||data.meta?.ratingModel==='V3B'||data.meta?.needsScoreRefit){result=await new Promise((resolve,reject)=>{const worker=new Worker('web/workers/rating-worker.js?v=8521'),timer=setTimeout(()=>{worker.terminate();reject(Error('Rating calculation timed out. Try RM3 in Settings.'))},90000);const finish=()=>{clearTimeout(timer);worker.terminate()};worker.onmessage=e=>{finish();e.data.error?reject(Error(e.data.error)):resolve(e.data.data)};worker.onerror=e=>{finish();reject(Error(e.message||'Could not calculate ratings.'))};worker.postMessage({data,model,orchestraBundle:window.BRTAOrchestraBundle,history:window.BRTAOrchestraHistory})})}
  result=BRTARM4Engine.display({...result,meta:{...result.meta,predictionModel:BRTAOrchestra.isModel(model)?(result.meta?.predictionModel||'4.2 Orchestra'):model}});layoutCache.set(data,{model:key,result});layoutSources.set(result,source);return result;
 }
 

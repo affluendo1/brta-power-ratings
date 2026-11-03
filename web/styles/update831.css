@@ -108,3 +108,5 @@
 .rules-guide .guide-detail summary{flex-wrap:wrap}
 .rules-source{margin:22px 0!important}
 @media(max-width:650px){.model-guide .guide-model-grid{grid-template-columns:1fr}.guide-hero{padding:22px}.guide-detail-body{padding:0 16px 16px}}
+
+.guide-model ul{padding-left:20px;font-size:14px;line-height:1.6}.guide-model li{margin:8px 0}.guide-extras .guide-model{border-color:#9b72cf;background:color-mix(in srgb,#9b72cf 12%,var(--surface))}

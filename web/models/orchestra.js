@@ -106,7 +106,7 @@
   if(manual&&!['4foundation.2','4melody.2','4choir.2',ids[p]].includes(selected))return fallback('Selected specialist does not support this format');
   const partial=history.linked>0&&history.linked<(m.type==='Singles'?2:4),historyCell=history.linked?':'+(partial?'partial':'full'):'',guard=bundle.guard?.winner?.[p+':'+m.type+historyCell]||bundle.guard?.winner?.[p+':'+m.type];
   // A guard is a frozen context decision, never the outcome of this target.
-  if((!manual||selected===ids[p])&&guard?.delegate&&valid(row.baseline[guard.delegate]))return{p:row.baseline['RM4.2'],engine:'RM4.2',fallback:'Frozen context delegation',guardSource:guard.source,partial,linked:history.linked,historyUsed:false};
+  if((!manual||selected===ids[p])&&guard?.delegate&&valid(row.baseline[guard.delegate]))return{p:row.baseline[guard.delegate],engine:guard.delegate,fallback:'Frozen context delegation',guardSource:guard.source,partial,linked:history.linked,historyUsed:false};
   if(m.target===6&&m.bestOf===1&&!m.green&&p==='sets.standard'){
    const reset=advanced(row.raw,m,row.experience,row.elo,row.oldML,bundle.advanced),partial=history.linked>0&&history.linked<(m.type==='Singles'?2:4),config=bundle.ordinary[m.type],beta=partial?config.partialCap:1;
    const ps=['Foundation','Melody','Orchestra'].map(n=>history.linked?M.sigmoid(M.logit(reset[n])+beta*history.prior):reset[n]);ps.push(row.baseline.RM4b);
@@ -141,7 +141,7 @@
   if(!n||input.home?.length!==n||input.away?.length!==n||new Set([...input.home,...input.away]).size!==2*n)throw Error('Distinct forecast players required');
   const m=configured(state.source,input),ctx=context(state,m,bundle,frozen),p=profile(state.source,m);
   if(new Set(ctx.past.map(r=>r.round)).size<3)throw Error('Predictions open after three rounds of current-season evidence.');
-  if(m.formatRules){const legacy=M.forecast(ctx,m,frozen,'RM4.2');return{...legacy,engine:'RM4.2',fallback:'Explicit scoring contract',system:'4.2 Orchestra'}}
+  if(m.formatRules){const legacy=M.forecast(ctx,m,frozen,'RM4b');return{...legacy,engine:'RM4b',fallback:'Explicit scoring contract',system:'4.2 Orchestra'}}
   const row=featureRow(ctx,m,bundle,frozen),history=p==='sets.standard'?historyEvidence(state,m,ctx.past):{linked:0,prior:0},decision=route(row,m,p,bundle,selected,history,frozen);
   if(!valid(decision.p))throw Error('Invalid Orchestra probability');
   // Invert the compatible scoring map; calibrated winner mass remains exact.
@@ -150,7 +150,7 @@
  }
  function distribution(state,target,decision,bundle,frozen){
   const m=configured(state.source,target),key=m.type+':'+(decision.partial?'partial':'full'),guard=decision.profile==='sets.standard'?bundle.guard?.scores?.[key]:null;
-  const engine=guard?.delegate?'RM4.2':(['RM4a','RM4b','RM4.2'].includes(decision.engine)?decision.engine:null);
+  const engine=guard?.delegate||(['RM4a','RM4b','RM4.2'].includes(decision.engine)?decision.engine:null);
   const eta=engine?M.gap(context(state,m,bundle,frozen).fits[engine],m):decision.eta;
   return{rows:M.distribution(eta,{target:m.target,green:m.green,bestOf:m.bestOf,matchTiebreak:m.matchTiebreak,...(m.formatRules?{formatRules:m.formatRules}:{}),native:true},decision.p),engine:engine||decision.engine,shapeDelegated:!!engine};
  }
