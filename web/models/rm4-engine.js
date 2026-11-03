@@ -37,13 +37,14 @@ const absolute=new Set(['rating','power','lo','hi','averageOpponent','individual
 const differences=new Set(['se','powerSe','singlesSe','doublesSe','overallSe','pairEffect','pairSynergy','ratingChange','change','dominanceGap','runnerUpGap']);
 function policy(model='RM4.1 Ensemble'){
  const scales={RM1:375,RM2:275,RM3:435,RM3b:275,RM4a:1125,RM4b:765,'RM4.1 Ensemble':765,'RM1000 Ascension':765,Automatic:765};
+ if(/^(?:4\.2 Orchestra|4(?:foundation|melody|harmony|brass|woodwind|strings|percussion|choir)\.2)$/.test(model))return{centre:2000,probabilityScale:765};
  return {centre:(model.startsWith('RM4')||model==='RM1000 Ascension'||model==='Automatic')?2000:['RM1','RM2'].includes(model)?1000:1500,probabilityScale:scales[model]??435};
 }
 function display(data){const p=policy(data.meta?.predictionModel);return centre(data,p.centre,p.probabilityScale)}
 function centre(data,value=2000,probabilityScale=null){
  const previous=data.meta?.ratingCentre??1500,target=probabilityScale??(data.meta?.predictionModel==='RM4.1 Ensemble'?765:data.meta?.predictionModel==='RM1'?400/Math.log(10):data.meta?.predictionModel==='RM2'?187.5:450),factor=target/(data.meta?.ratingProbabilityScale||450),copy=JSON.parse(JSON.stringify(data));
  const scaled=(v,absoluteValue)=>{const n=absoluteValue?value+factor*(v-previous):factor*v;return Number.isInteger(v)?Math.round(n):n};
- function walk(x,key=''){if(!x||typeof x!=='object'||key==='rm4'||key==='meta')return;if(Array.isArray(x)){x.forEach(v=>walk(v));return}for(const [k,v]of Object.entries(x)){if(typeof v==='number'&&absolute.has(k))x[k]=scaled(v,true);else if(typeof v==='number'&&differences.has(k))x[k]=scaled(v,false);else walk(v,k)}}
+ function walk(x,key=''){if(!x||typeof x!=='object'||key==='rm4'||key==='orchestra'||key==='meta')return;if(Array.isArray(x)){x.forEach(v=>walk(v));return}for(const [k,v]of Object.entries(x)){if(typeof v==='number'&&absolute.has(k))x[k]=scaled(v,true);else if(typeof v==='number'&&differences.has(k))x[k]=scaled(v,false);else walk(v,k)}}
  walk(copy);for(const list of Object.values(copy.ratingHistory?.players||{}))for(const point of list){point[1]=scaled(point[1],true);if(Number.isFinite(point[2]))point[2]=scaled(point[2],false)}
  copy.meta={...copy.meta,ratingCentre:value,ratingScale:(data.meta?.ratingScale||(data.rm4?450:600))*factor,ratingProbabilityScale:target};return copy;
 }

@@ -3,19 +3,22 @@ let layoutOverlayFocus=null;
 const layoutCache=new WeakMap(),layoutSources=new WeakMap();
 function layoutDefaultCode(){const c=localStorage.getItem('brta-default-competition'),s=localStorage.getItem('brta-default-section');return currentCatalog().find(x=>x.competition_code===c&&(!s||x.section_code===s))?.section_code||''}
 let rm4FrozenPromise=null;
-async function ensureRM4Frozen(){if(!rm4FrozenPromise)rm4FrozenPromise=fetch('web/models/rm4-frozen.json?v=844').then(r=>{if(!r.ok)throw Error('Prediction model unavailable.');return r.json()}).then(b=>window.BRTARM4Frozen=b).catch(e=>{rm4FrozenPromise=null;throw e});return rm4FrozenPromise}
+async function ensureRM4Frozen(){if(!rm4FrozenPromise)rm4FrozenPromise=fetch('web/models/rm4-frozen.json?v=850').then(r=>{if(!r.ok)throw Error('Prediction model unavailable.');return r.json()}).then(b=>window.BRTARM4Frozen=b).catch(e=>{rm4FrozenPromise=null;throw e});return rm4FrozenPromise}
+let orchestraPromise=null;
+async function ensureOrchestra(){if(!orchestraPromise)orchestraPromise=Promise.all([fetch('web/models/orchestra-bundle.json?v=850').then(r=>{if(!r.ok)throw Error('Orchestra unavailable.');return r.json()}),fetch('web/models/orchestra-history.json?v=850').then(r=>r.ok?r.json():null).catch(()=>null)]).then(([bundle,history])=>{window.BRTAOrchestraBundle=bundle;window.BRTAOrchestraHistory=history;return bundle}).catch(e=>{orchestraPromise=null;throw e});return orchestraPromise}
 function legacyModelUnlocked(model){try{return auxiliaryEnabled()&&JSON.parse(localStorage.getItem('brta-more-settings-v1')||'{}')[model.toLowerCase()]===true}catch{return false}}
 function rm1Unlocked(){return legacyModelUnlocked('RM1')}
 function rm2Unlocked(){return legacyModelUnlocked('RM2')}
 function ascensionUnlocked(){return legacyModelUnlocked('ascension')}
-function selectedRatingModel(){const saved=localStorage.getItem('brta-rating-model');return (saved==='RM1000 Ascension'?ascensionUnlocked():saved==='RM1'||saved==='RM2'?legacyModelUnlocked(saved):['Automatic','RM3','RM3b','RM4a','RM4b','RM4.1 Ensemble'].includes(saved))?saved:'RM4.1 Ensemble'}
+function selectedRatingModel(){const saved=localStorage.getItem('brta-rating-model');return (saved==='RM1000 Ascension'?ascensionUnlocked():saved==='RM1'||saved==='RM2'?legacyModelUnlocked(saved):['RM3','RM3b','RM4a','RM4b','RM4.1 Ensemble'].includes(saved))?saved:window.BRTAOrchestra?.isModel(saved)?(saved==='Automatic'?'4.2 Orchestra':saved):'4.2 Orchestra'}
 function selectedRatingCentre(){return BRTARM4Engine.policy(selectedRatingModel()).centre}
 async function layoutApplyModel(data,model=selectedRatingModel()){
  const source=layoutSources.get(data)||data;data=BRTAScores.normalise(source);const centre=BRTARM4Engine.policy(model).centre,key=model+':'+centre;
  if(layoutCache.get(data)?.model===key)return layoutCache.get(data).result;
- let result=data;if(model==='Automatic'||model==='RM1000 Ascension'||model.startsWith('RM4'))await ensureRM4Frozen();
- if(model!=='RM3'||data.meta?.ratingModel==='V3B'||data.meta?.needsScoreRefit){result=await new Promise((resolve,reject)=>{const worker=new Worker('web/workers/rating-worker.js?v=8441'),timer=setTimeout(()=>{worker.terminate();reject(Error('Rating calculation timed out. Try RM3 in Settings.'))},90000);const finish=()=>{clearTimeout(timer);worker.terminate()};worker.onmessage=e=>{finish();e.data.error?reject(Error(e.data.error)):resolve(e.data.data)};worker.onerror=e=>{finish();reject(Error(e.message||'Could not calculate ratings.'))};worker.postMessage({data,model})})}
- if(model!=='Automatic')result=BRTARM4Engine.display({...result,meta:{...result.meta,predictionModel:model}});layoutCache.set(data,{model:key,result});layoutSources.set(result,source);return result;
+ if(BRTAOrchestra.isModel(model))await ensureOrchestra();
+ let result=data;if(BRTAOrchestra.isModel(model)||model==='Automatic'||model==='RM1000 Ascension'||model.startsWith('RM4'))await ensureRM4Frozen();
+ if(model!=='RM3'||data.meta?.ratingModel==='V3B'||data.meta?.needsScoreRefit){result=await new Promise((resolve,reject)=>{const worker=new Worker('web/workers/rating-worker.js?v=850'),timer=setTimeout(()=>{worker.terminate();reject(Error('Rating calculation timed out. Try RM3 in Settings.'))},90000);const finish=()=>{clearTimeout(timer);worker.terminate()};worker.onmessage=e=>{finish();e.data.error?reject(Error(e.data.error)):resolve(e.data.data)};worker.onerror=e=>{finish();reject(Error(e.message||'Could not calculate ratings.'))};worker.postMessage({data,model,orchestraBundle:window.BRTAOrchestraBundle,history:window.BRTAOrchestraHistory})})}
+ result=BRTARM4Engine.display({...result,meta:{...result.meta,predictionModel:model==='Automatic'?'4.2 Orchestra':model}});layoutCache.set(data,{model:key,result});layoutSources.set(result,source);return result;
 }
 
 function ratingChangeCell(row){const n=row.ratingChange;return '<td class="rating-change '+(n>0?'rank-up':n<0?'rank-down':'rank-still')+'">'+(n==null?'—':(n>0?'+':'')+n)+'</td>'}
@@ -62,9 +65,9 @@ function layoutSearchRatings(rows){
  const indexFactor=BRTARM4Engine.policy('RM3').probabilityScale/450;
  rows=rows.map(r=>({...r,...Object.fromEntries(['singlesRating','doublesRating','overallRating'].filter(k=>Number.isFinite(r[k])).map(k=>[k,Math.round(1500+indexFactor*(r[k]-1500))])),...Object.fromEntries(['singlesSe','doublesSe','overallSe'].filter(k=>Number.isFinite(r[k])).map(k=>[k,Math.round(indexFactor*r[k])]))}));
  if(selectedRatingModel()==='RM3')return rows;
- const query=$('#search').value.trim().toLowerCase();if(!query)return rows;
- return rows.map(row=>{if(!row.player.toLowerCase().includes(query))return row;const key=(activeHistorySeasonId||'current')+':'+selectedRatingModel()+':'+selectedRatingCentre()+':'+row.sectionCode;let entry=layoutSearchCache.get(key);
-  if(!entry){entry={rows:null,error:false};layoutSearchCache.set(key,entry);const section=viewCatalog.find(s=>s.section_code===row.sectionCode);layoutSearchJobs.push(async()=>{try{let payload;if(D.meta.section_code===row.sectionCode)payload=D;else{payload=section?.is_custom?CustomSections.payload(row.sectionCode):await fetch(section?.data_path||('data/site/sections/'+row.sectionCode+'.json')).then(r=>{if(!r.ok)throw Error('Section unavailable');return r.json()});payload=await layoutApplyModel(normaliseTeamLabels(payload));}entry.rows=new Map(archiveGlobalRowsFromSection(payload,section||{section_code:row.sectionCode}).map(r=>[r.player,r]));}catch{entry.error=true}if(ratingScope==='all')renderRatings()});queueMicrotask(layoutSearchPump);}
+ const query=$('#search').value.trim().toLowerCase();if(!query&&!BRTAOrchestra.isModel(selectedRatingModel()))return rows;
+ return rows.map(row=>{if(query&&!row.player.toLowerCase().includes(query))return row;const model=selectedRatingModel(),key=(activeHistorySeasonId||'current')+':'+selectedRatingModel()+':'+selectedRatingCentre()+':'+row.sectionCode;let entry=layoutSearchCache.get(key);
+  if(!entry){entry={rows:null,error:false};layoutSearchCache.set(key,entry);const section=viewCatalog.find(s=>s.section_code===row.sectionCode);layoutSearchJobs.push(async()=>{try{let payload;if(D.meta.section_code===row.sectionCode)payload=D;else{payload=section?.is_custom?CustomSections.payload(row.sectionCode):await fetch(section?.data_path||('data/site/sections/'+row.sectionCode+'.json')).then(r=>{if(!r.ok)throw Error('Section unavailable');return r.json()});}payload=await layoutApplyModel(normaliseTeamLabels(payload),model);entry.rows=new Map(archiveGlobalRowsFromSection(payload,section||{section_code:row.sectionCode}).map(r=>[r.player,r]));}catch{entry.error=true}if(ratingScope==='all')renderRatings()});queueMicrotask(layoutSearchPump);}
   if(entry.rows)return entry.rows.get(row.player)||row;return{...row,...Object.fromEntries(['singlesRating','doublesRating','overallRating'].filter(k=>row[k]!=null).map(k=>[k,entry.error?'—':'…']))};
  });
 }

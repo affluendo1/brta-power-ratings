@@ -2,7 +2,7 @@
 (function(){'use strict';
 eightMethodologyHTML=function(){return '<div class="eight-reading">'+(D?.meta?.noveltyModel?'<p>RM 1000 Ascension is a joke model, just for fun.</p>':'')+
  '<section class="settings-group"><h3>Power ratings</h3><p>Power is an estimate of playing strength within a section, based on completed results and opponents. A higher number means a stronger rating.</p><p>Ratings become more settled as players build a record. A provisional rating can still change quickly, and ratings from different sections are not directly comparable.</p></section>'+
- '<section class="settings-group"><h3>Singles and doubles</h3><p>Explore singles, individual doubles and pairs from the ratings page. Each view uses the results relevant to it.</p></section>'+
+ '<section class="settings-group"><h3>Singles and doubles</h3><p>Explore singles, individual doubles and pairs from the ratings page. Orchestra is the default model family. Each view uses the results relevant to it.</p></section>'+
  '<section class="settings-group"><h3>Performance bands</h3><p>Bands group players by their Power in the selected section. Provisional players use the same bands.</p></section>'+
  '<section class="settings-group"><h3>Predictions</h3><p>Predictions are estimates based on the selected players and available results. You can choose another rating model in Settings.</p></section></div>'};
 brtaRulesHTML=function(){return '<div class="eight-reading">'+

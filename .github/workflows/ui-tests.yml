@@ -26,6 +26,7 @@ jobs:
           NODE_PATH="$RUNNER_TEMP/brta-ui-tests/node_modules" node tests/browser/audit.cjs
           NODE_PATH="$RUNNER_TEMP/brta-ui-tests/node_modules" node tests/browser/refinement.cjs
 
+          NODE_PATH="$RUNNER_TEMP/brta-ui-tests/node_modules" node tests/browser/orchestra85.cjs
           NODE_PATH="$RUNNER_TEMP/brta-ui-tests/node_modules" node tests/browser/rm4.cjs
 
           BRTA_TEST_CLASSIC=1 BRTA_TEST_LEGACY=RM1 NODE_PATH="$RUNNER_TEMP/brta-ui-tests/node_modules" node tests/browser/rm4.cjs

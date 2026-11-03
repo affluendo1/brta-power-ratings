@@ -1,5 +1,6 @@
 // Website releases, newest first. Routine result checks are not website releases.
 window.BRTA_RELEASES = Object.freeze([
+{"version":"8.5","title":"Orchestra","size":"large","committedAt":"2026-11-03T10:30:00Z","changes":["Orchestra is now the default rating and prediction system, with models suited to singles, doubles and each supported section format.","Refined player ratings, individual doubles ratings and score predictions, with eligible historical results used where available.","Model choices now carry through section exports, player comparisons and fixture simulations. Previous models remain available in Settings."]},
 {"version":"8.4.4.1","size":"tiny","committedAt":"2026-11-02T12:00:00Z","changes":["Expanded scoring-format support for future association imports, including RM4a, RM4b and RM4.1 Ensemble.","Fixed section exports to follow the selected rating model.","Automatic now uses the same ratings and spread as RM4.1 Ensemble."]},
 {"version":"8.4.4","size":"small","committedAt":"2026-11-01T10:51:00Z","changes":["Removed a discontinued extra and cleaned up its settings."]},
 {
