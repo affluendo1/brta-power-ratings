@@ -24,7 +24,7 @@ test('real worker imports the complete new engine and returns the same tables',a
  const w=new Worker(),value=await new Promise((resolve,reject)=>{w.onmessage=e=>e.data.error?reject(Error(e.data.error)):resolve(e.data.data);w.postMessage({data,model:'4.2 Orchestra',orchestraBundle:b,history})});w.terminate();assert.deepEqual(JSON.parse(JSON.stringify(value.singles)),result.singles);assert.equal(value.meta.orchestraVersion,b.version);
 });
 test('Baton produces repeatable forecasts and side reversal with separate discipline weights',()=>{
- const a=O.forecast(result.orchestra,target,b,f),again=O.forecast(result.orchestra,target,b,f),reverse=O.forecast(result.orchestra,{...target,home:target.away,away:target.home},b,f);assert.deepEqual(a,again);assert(Math.abs(a.p+reverse.p-1)<1e-10);if(a.engine==='4harmony.2')assert.deepEqual(a.weights,[.5,0,.25,.25]);else assert.equal(a.engine,'RM4a');
+ const a=O.forecast(result.orchestra,target,b,f),again=O.forecast(result.orchestra,target,b,f),reverse=O.forecast(result.orchestra,{...target,home:target.away,away:target.home},b,f);assert.deepEqual(a,again);assert(Math.abs(a.p+reverse.p-1)<1e-10);if(a.engine==='4harmony.2')assert.deepEqual(a.weights,[.5,0,.25,.25]);else assert.equal(a.engine,'RM4.2');
  const d=matches.find(m=>m.type==='Doubles'),m={...target,type:'Doubles',home:d.home,away:d.away};assert.deepEqual(O.forecast(result.orchestra,m,b,f).weights,[.75,0,.25,0]);
 });
 test('target/future contamination cannot change an earlier forecast or rating-history prefix',()=>{
@@ -57,16 +57,16 @@ test('outcome fields, invalid dates, duplicate players and corrupt policies are 
  for(const extra of [{winner:'home'},{y:1},{hg:6},{date:'2026-02-31'},{home:target.away}])assert.throws(()=>O.forecast(result.orchestra,{...target,...extra},b,f));
  const bad=structuredClone(b);bad.schema=0;assert.throws(()=>O.forecast(result.orchestra,target,bad,f));
 });
-test('known weak specialist contexts delegate exact original probabilities',()=>{
- for(const profile of ['sets.green','junior.rubbers']){const row={experience:4,baseline:{RM4a:.63,RM4b:.59}},out=O.route(row,{type:'Doubles'},profile,b,'4.2 Orchestra',undefined,f);assert.equal(out.p,.63);assert.equal(out.engine,'RM4a');assert.equal(out.fallback,'Frozen context delegation')}
- const out=O.route({experience:2,baseline:{RM4b:.58}},{type:'Singles',target:4,bestOf:1},'adult.extended-set',b,'4.2 Orchestra',undefined,f);assert.equal(out.p,.58);assert.equal(out.engine,'RM4b');
+test('specialist fallback uses the raw RM4.2 probability',()=>{
+ for(const profile of ['sets.green','junior.rubbers']){const row={experience:4,baseline:{RM4a:.63,RM4b:.59,'RM4.2':.61}},out=O.route(row,{type:'Doubles'},profile,b,'4.2 Orchestra',undefined,f);assert.equal(out.p,.61);assert.equal(out.engine,'RM4.2');assert.equal(out.fallback,'Frozen context delegation')}
+ const out=O.route({experience:2,baseline:{RM4b:.58,'RM4.2':.57}},{type:'Singles',target:4,bestOf:1},'adult.extended-set',b,'4.2 Orchestra',undefined,f);assert.equal(out.p,.57);assert.equal(out.engine,'RM4.2');
 });
 test('score shapes preserve routed winner mass and use original latent gap on delegation',()=>{
- const decision=O.forecast(result.orchestra,target,b,f),dist=O.distribution(result.orchestra,target,{...decision,partial:true},b,f);assert.equal(dist.engine,'RM4b');assert(Math.abs(dist.rows.reduce((s,r)=>s+r.probability,0)-1)<1e-10);assert(Math.abs(dist.rows.filter(r=>r.homeWin).reduce((s,r)=>s+r.probability,0)-decision.p)<1e-10);
+ const decision=O.forecast(result.orchestra,target,b,f),dist=O.distribution(result.orchestra,target,{...decision,partial:true},b,f);assert.equal(dist.engine,'RM4.2');assert(Math.abs(dist.rows.reduce((s,r)=>s+r.probability,0)-1)<1e-10);assert(Math.abs(dist.rows.filter(r=>r.homeWin).reduce((s,r)=>s+r.probability,0)-decision.p)<1e-10);
  assert(dist.rows.every(r=>Number.isFinite(r.probability)&&r.probability>=0));
 });
 test('all named models are selectable, and unsupported specialists preserve the fallback',()=>{
- assert.equal(O.choices.length,9);for(const name of O.choices){assert(O.isModel(name));const r=O.recalculate(data,name,b,f,null);assert.equal(r.meta.modelChoice,name);const p=O.forecast(r.orchestra,target,b,f);assert(Number.isFinite(p.p));if(['4brass.2','4strings.2','4percussion.2','4woodwind.2'].includes(name))assert.equal(p.engine,'RM4b')}
+ assert.equal(O.choices.length,9);for(const name of O.choices){assert(O.isModel(name));const r=O.recalculate(data,name,b,f,null);assert.equal(r.meta.modelChoice,name);const p=O.forecast(r.orchestra,target,b,f);assert(Number.isFinite(p.p));if(['4brass.2','4strings.2','4percussion.2','4woodwind.2'].includes(name))assert.equal(p.engine,'RM4.2')}
 });
 test('section exports preserve chosen model and displayed rating rows',()=>{
  const d=E.display(result),html=L.report(d,H);assert(html.includes('4.2 Orchestra'));assert(html.includes(d.singles[0].player));assert(html.includes(String(d.singles[0].rating)));

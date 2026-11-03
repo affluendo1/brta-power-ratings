@@ -25,6 +25,6 @@ const box={window:{BRTAOrthography:M,addEventListener(){}},ratingView:'orthograp
 vm.createContext(box);vm.runInContext(fs.readFileSync(require.resolve('../web/optional/lexicon.js'),'utf8'),box);
 box.renderRatingOptions();assert.equal(box.ratingScope,'all');assert(scopes.every(b=>!b.disabled),'Partnership search exposes every supported scope');
 contextmenu({target:{closest:s=>s==='[data-rating="pairs"]'?{}:null},preventDefault(){}});
-assert(box.eightMethodologyHTML().includes('Doubles pairs.'),'Pair-first reveal must expose methodology');
+assert(box.eightMethodologyHTML().includes('RM3ultra'),'Pair-first reveal must expose methodology');
 box.ratingView='singles';box.renderRatingOptions();assert(scopes.every(b=>!b.disabled),'Normal scopes must be restored');
 console.log('Pair regressions: independent totals/composition, quadgraphs, ties, highest-score, honest scopes, pair-first methodology and scope restoration passed');

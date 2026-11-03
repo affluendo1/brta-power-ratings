@@ -65,7 +65,7 @@
   let memo=cache.get(state);if(!memo){memo=new Map();cache.set(state,memo)}
   const key=target.date+':'+target.round;if(memo.has(key))return memo.get(key);
   const past=state.matches.filter(r=>r.date<target.date&&r.round<target.round),fits={};
-  for(const n of ['RM3','RM3b','RM4a','RM4b'])fits[n]=M.fit(past,n,{covariance:false});
+  for(const n of ['RM3','RM3b','RM4a','RM4b','RM4.2'])fits[n]=M.fit(past,n,{covariance:false});
   const candidates={};for(const [n,d]of Object.entries(bundle.definitions))candidates[n]=fitDefinition(past,d);
   const earlierCache=new Map(),matches=past.map(m=>{
    const k=m.date+':'+m.round;if(!earlierCache.has(k)){
@@ -88,7 +88,7 @@
  }
  function featureRow(ctx,m,bundle,frozen){
   const original=M.forecast(ctx,m,frozen),reverse=M.forecast(ctx,{...m,home:m.away,away:m.home},frozen),baseline={};
-  for(const name of ['RM3','RM3b','RM4a','RM4b'])baseline[name]=M.forecast(ctx,m,frozen,name).p;
+  for(const name of ['RM3','RM3b','RM4a','RM4b','RM4.2'])baseline[name]=M.forecast(ctx,m,frozen,name).p;
   baseline['RM4.1 Ensemble']=original.p;
   const raw=Object.fromEntries(Object.entries(ctx.candidates).map(([name,fit])=>[name,M.win(M.gap(fit,m),{...m,native:bundle.definitions[name].core!=='RM3'})]));
   const experience=Math.min(...[...m.home,...m.away].map(p=>ctx.past.filter(r=>r.type===m.type&&(r.home.includes(p)||r.away.includes(p))).length));
@@ -99,14 +99,14 @@
   return e.names.reduce((s,n,i)=>s+e.weights[i]*component[n],0);
  }
  function route(row,m,p,bundle,selected,history={linked:0,prior:0},frozen=null){
-  const fallback=reason=>({p:row.baseline.RM4b,engine:'RM4b',fallback:reason});
+  const fallback=reason=>({p:row.baseline['RM4.2'],engine:'RM4.2',fallback:reason});
   if(!valid(row.baseline.RM4b))throw Error('Original fallback unavailable');
   const manual=selected!=='4.2 Orchestra'&&selected!=='Automatic';
   if(!Number.isFinite(row.experience)||row.experience<0)return fallback('Missing current evidence');
   if(manual&&!['4foundation.2','4melody.2','4choir.2',ids[p]].includes(selected))return fallback('Selected specialist does not support this format');
   const partial=history.linked>0&&history.linked<(m.type==='Singles'?2:4),historyCell=history.linked?':'+(partial?'partial':'full'):'',guard=bundle.guard?.winner?.[p+':'+m.type+historyCell]||bundle.guard?.winner?.[p+':'+m.type];
   // A guard is a frozen context decision, never the outcome of this target.
-  if((!manual||selected===ids[p])&&guard?.delegate&&valid(row.baseline[guard.delegate]))return{p:row.baseline[guard.delegate],engine:guard.delegate,fallback:'Frozen context delegation',guardSource:guard.source,partial,linked:history.linked,historyUsed:false};
+  if((!manual||selected===ids[p])&&guard?.delegate&&valid(row.baseline[guard.delegate]))return{p:row.baseline['RM4.2'],engine:'RM4.2',fallback:'Frozen context delegation',guardSource:guard.source,partial,linked:history.linked,historyUsed:false};
   if(m.target===6&&m.bestOf===1&&!m.green&&p==='sets.standard'){
    const reset=advanced(row.raw,m,row.experience,row.elo,row.oldML,bundle.advanced),partial=history.linked>0&&history.linked<(m.type==='Singles'?2:4),config=bundle.ordinary[m.type],beta=partial?config.partialCap:1;
    const ps=['Foundation','Melody','Orchestra'].map(n=>history.linked?M.sigmoid(M.logit(reset[n])+beta*history.prior):reset[n]);ps.push(row.baseline.RM4b);
@@ -140,7 +140,8 @@
   const n=input.type==='Singles'?1:input.type==='Doubles'?2:0;
   if(!n||input.home?.length!==n||input.away?.length!==n||new Set([...input.home,...input.away]).size!==2*n)throw Error('Distinct forecast players required');
   const m=configured(state.source,input),ctx=context(state,m,bundle,frozen),p=profile(state.source,m);
-  if(m.formatRules){const legacy=M.forecast(ctx,m,frozen,'RM4b');return{...legacy,engine:'RM4b',fallback:'Explicit scoring contract',system:'4.2 Orchestra'}}
+  if(new Set(ctx.past.map(r=>r.round)).size<3)throw Error('Predictions open after three rounds of current-season evidence.');
+  if(m.formatRules){const legacy=M.forecast(ctx,m,frozen,'RM4.2');return{...legacy,engine:'RM4.2',fallback:'Explicit scoring contract',system:'4.2 Orchestra'}}
   const row=featureRow(ctx,m,bundle,frozen),history=p==='sets.standard'?historyEvidence(state,m,ctx.past):{linked:0,prior:0},decision=route(row,m,p,bundle,selected,history,frozen);
   if(!valid(decision.p))throw Error('Invalid Orchestra probability');
   // Invert the compatible scoring map; calibrated winner mass remains exact.
@@ -149,17 +150,18 @@
  }
  function distribution(state,target,decision,bundle,frozen){
   const m=configured(state.source,target),key=m.type+':'+(decision.partial?'partial':'full'),guard=decision.profile==='sets.standard'?bundle.guard?.scores?.[key]:null;
-  const engine=guard?.delegate||(['RM4a','RM4b'].includes(decision.engine)?decision.engine:null);
+  const engine=guard?.delegate?'RM4.2':(['RM4a','RM4b','RM4.2'].includes(decision.engine)?decision.engine:null);
   const eta=engine?M.gap(context(state,m,bundle,frozen).fits[engine],m):decision.eta;
   return{rows:M.distribution(eta,{target:m.target,green:m.green,bestOf:m.bestOf,matchTiebreak:m.matchTiebreak,...(m.formatRules?{formatRules:m.formatRules}:{}),native:true},decision.p),engine:engine||decision.engine,shapeDelegated:!!engine};
  }
  function recalculate(data,model,bundle,frozen,history){
   if(!isModel(model)||bundle.schema!==85)throw Error('Unknown Orchestra model');
+  if(data.meta?.is_custom)return E.recalculate(data,'RM4.2',frozen);
   const copy=JSON.parse(JSON.stringify(data)),matches=E.prepare(data).filter(m=>m.date&&m.date!=='2000-01-01').map(m=>configured(data,m));
-  const levelMatch=String(data.meta?.section_label||'').match(/\d+/),state={schema:85,model:model==='Automatic'?'4.2 Orchestra':model,matches,source:{meta:data.meta,format:data.format,greenBall:data.greenBall},history:snapshot(data,history),level:levelMatch?Number(levelMatch[0]):null};
+  const levelMatch=String(data.meta?.section_label||'').match(/\d+/),state={schema:85,model:['Automatic','4melody.2','4foundation.2'].includes(model)?'4.2 Orchestra':model,matches,source:{meta:data.meta,format:data.format,greenBall:data.greenBall},history:snapshot(data,history),level:levelMatch?Number(levelMatch[0]):null};
   // Only carry the current section's eligible names back from the worker.
   if(state.history){const names=new Set(matches.flatMap(m=>[...m.home,...m.away]).map(nameKey));state.history={...state.history,players:Object.fromEntries(['Singles','Doubles'].map(type=>[type,Object.fromEntries(Object.entries(state.history.players[type]||{}).filter(([name])=>names.has(name)))]))}}
-  const sample=matches[0]||configured(data,{type:'Singles',target:6,bestOf:1}),p=profile(data,sample);if(p!=='sets.standard')state.history=null;const d=definition(bundle,p,model==='4foundation.2'?'Foundation':'Melody'),memo=new Map();
+  const sample=matches[0]||configured(data,{type:'Singles',target:6,bestOf:1}),p=profile(data,sample);if(matches.some(m=>!bundle.formatRouting.allowedSignatures.includes([profile(data,m),m.type,m.target,m.bestOf,Number(m.bestOf===3&&!!m.matchTiebreak),Number(!!m.green)].join('|'))))return E.recalculate(data,'RM4.2',frozen);if(p!=='sets.standard')state.history=null;const d=definition(bundle,p,model==='4foundation.2'?'Foundation':'Melody'),memo=new Map();
   const sort=rows=>rows.sort((a,b)=>b.rating-a.rating||a.player.localeCompare(b.player));
   function merge(original,fitted){const byName=new Map(fitted.map(r=>[r.player,r]));return sort((original||[]).map(r=>({...r,...byName.get(r.player)})))}
   function tables(subset,original){
@@ -181,7 +183,7 @@
   const latest=tables(matches,{singles:data.singles,doublesPlayers:data.doublesIndividuals,pairs:data.doubles});
   copy.singles=latest.singles;copy.doublesIndividuals=latest.doublesPlayers;copy.doubles=latest.pairs;
   copy.orchestra=state;delete copy.rm4;
-  copy.meta={...copy.meta,modelChoice:state.model,predictionModel:state.model,ratingModel:model==='4foundation.2'?'4foundation.2':'4melody.2',doublesRatingModel:model==='4foundation.2'?'4foundation.2':'4choir.2',ratingCentre:1500,ratingScale:450,ratingProbabilityScale:450,scoreSchema:2,needsScoreRefit:false,orchestraVersion:bundle.version,automatic:model==='Automatic'||model==='4.2 Orchestra',ratingChoice:model==='4foundation.2'?'4foundation.2':'4melody.2',automaticPolicyVersion:85};
+  copy.meta={...copy.meta,modelChoice:model==='Automatic'?'4melody.2':model,predictionModel:['4melody.2','4foundation.2'].includes(model)?'4.2 Orchestra':state.model,ratingModel:model==='4foundation.2'?'4foundation.2':'4melody.2',doublesRatingModel:model==='4foundation.2'?'4foundation.2':'4choir.2',ratingCentre:1500,ratingScale:450,ratingProbabilityScale:450,scoreSchema:2,needsScoreRefit:false,orchestraVersion:bundle.version,automatic:model==='Automatic'||model==='4.2 Orchestra',ratingChoice:model==='4foundation.2'?'4foundation.2':'4melody.2',automaticPolicyVersion:85};
   copy.note='Ratings and forecasts use '+state.model+'.';
   const powers=new Map(copy.singles.map(r=>[r.player,r.rating]));
   copy.teams=(copy.teams||[]).map(t=>{const rows=copy.singles.filter(r=>r.team===t.team);return{...t,avg:rows.length?avg(rows.map(r=>r.rating)):1500,best4:rows.length?avg(rows.slice(0,4).map(r=>r.rating)):1500}});

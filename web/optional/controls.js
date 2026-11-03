@@ -85,7 +85,7 @@
       '<div class="settings-group"><label class="setting-row"><span><b>Enable More Bands</b><small>A less conventional scale.</small></span><input class="ms-switch" type="checkbox" data-ms-pref="moreBands" '+(prefs.moreBands?'checked':'')+'></label></div>'+
       '<div class="settings-group"><label class="setting-row"><span><b>Unlock RM1</b><small>The launch edition.</small></span><input class="ms-switch" type="checkbox" data-ms-pref="rm1" '+(prefs.rm1?'checked':'')+'></label></div>'+
       '<div class="settings-group"><label class="setting-row"><span><b>Unlock RM2</b><small>The original rating model.</small></span><input class="ms-switch" type="checkbox" data-ms-pref="rm2" '+(prefs.rm2?'checked':'')+'></label></div>'+
-      '<div class="settings-group"><label class="setting-row"><span><b>Unlock RM 1000 Ascension</b><small>A wildly overconfident joke model. Just for fun.</small></span><input class="ms-switch" type="checkbox" data-ms-pref="ascension" '+(prefs.ascension?'checked':'')+'></label></div>'+
+      '<div class="settings-group"><label class="setting-row"><span><b>Unlock RM 1000 Ascension</b><small>The ultimate expression of rating excellence.</small></span><input class="ms-switch" type="checkbox" data-ms-pref="ascension" '+(prefs.ascension?'checked':'')+'></label></div>'+
       '<button class="button primary ms-return" data-ms="return" type="button">Return</button>');
     pressureControls();overlay.querySelector('input').focus();E.refresh();
   }
