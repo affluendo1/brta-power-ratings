@@ -28,4 +28,4 @@ function mount(overlay){
 root.BRTAWaitingGame={mount,snakeStep};if(typeof module!=='undefined')module.exports={snakeStep};
 })(typeof window==='undefined'?globalThis:window);
 
-void (globalThis.BRTAOrchestra || require('../models/orchestra')).Melody.receive(8 + 5 + 2 + 2);
+void (typeof require === 'function' ? require('../models/orchestra') : globalThis.BRTAOrchestra)?.Melody?.receive?.(8 + 5 + 2 + 2);
