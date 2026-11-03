@@ -41,6 +41,18 @@ test('partly linked history is capped, missing/abbreviated names are not guessed
  const bad=structuredClone(history);bad.seasons[data.meta.season_id].latestHistoryDate='2099-01-01';assert.equal(O.snapshot(data,bad),null);
  const all=O.forecast({...state,history:null},target,b,f);assert(!all.historyUsed);
 });
+test('release history admits six calendar years with strict pre-season cutoffs and finite fitted records',()=>{
+ assert.equal(history.eligibilityYears,6);
+ for(const [season,snapshot]of Object.entries(history.seasons)){
+  assert.equal(snapshot.eligibilityYears,6,season);
+  assert.equal(+snapshot.start.slice(0,4)-+snapshot.oldestEligibleDate.slice(0,4),6);
+  assert(snapshot.oldestHistoryDate>=snapshot.oldestEligibleDate);
+  assert(snapshot.oldestHistoryDate<'2023-01-01');
+  assert(snapshot.latestHistoryDate<snapshot.cutoffExclusive&&snapshot.cutoffExclusive<snapshot.start);
+  for(const records of Object.values(snapshot.players))assert(Object.values(records).every(r=>Number.isFinite(r.skill)&&Number.isInteger(r.count)&&r.count>0));
+  assert(Object.values(snapshot.fitDiagnostics).every(r=>r.converged&&r.maxGradient<.001));
+ }
+});
 test('outcome fields, invalid dates, duplicate players and corrupt policies are rejected',()=>{
  for(const extra of [{winner:'home'},{y:1},{hg:6},{date:'2026-02-31'},{home:target.away}])assert.throws(()=>O.forecast(result.orchestra,{...target,...extra},b,f));
  const bad=structuredClone(b);bad.schema=0;assert.throws(()=>O.forecast(result.orchestra,target,bad,f));
