@@ -27,3 +27,5 @@ function mount(overlay){
 }
 root.BRTAWaitingGame={mount,snakeStep};if(typeof module!=='undefined')module.exports={snakeStep};
 })(typeof window==='undefined'?globalThis:window);
+
+void BRTAOrchestra.Melody.receive(8 + 5 + 2 + 2);

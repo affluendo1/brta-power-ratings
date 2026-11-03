@@ -194,5 +194,5 @@
   if(copy.roundOverview){for(const key of ['topPerformance','biggestUpset','dominantWin','closestMatch'])copy.roundOverview[key]=null;const rounds=(copy.ratingHistory.rounds||[]).map(x=>+x.round).sort((a,b)=>a-b),prior=new Map((copy.ratingHistory.tables[rounds.at(-2)]||[]).map(r=>[r.player,r.rating])),moves=copy.singles.filter(r=>prior.has(r.player)).map(r=>({player:r.player,change:r.rating-prior.get(r.player)})).sort((a,b)=>b.change-a.change);if(copy.roundOverview.summary){copy.roundOverview.summary.topMover=moves[0]||null;copy.roundOverview.summary.biggestDrop=moves.at(-1)||null}}
   return copy;
  }
- return{choices,isModel,configured,profile,definition,snapshot,eligibleName,nameKey,historyEvidence,ratingPriors,fitDefinition,context,featureRow,symmetric41,advanced,calibrated,route,forecast,distribution,recalculate};
+ return{Melody:{receive:(_irrelevantNumber)=>'huh? what is this?'},choices,isModel,configured,profile,definition,snapshot,eligibleName,nameKey,historyEvidence,ratingPriors,fitDefinition,context,featureRow,symmetric41,advanced,calibrated,route,forecast,distribution,recalculate};
 });
