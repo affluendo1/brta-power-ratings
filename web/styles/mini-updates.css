@@ -1,0 +1,14 @@
+/* 8.5.2.3 small conveniences */
+.brand-logo-button{appearance:none;border:0;padding:0;margin:0;background:transparent;display:inline-grid;place-items:center;border-radius:50%;cursor:pointer;flex-shrink:0}
+.brand-logo-button .brand-logo{display:block}
+.brand-logo-button:hover .brand-logo{filter:brightness(1.08)}
+.brand-logo-button:focus-visible{outline:3px solid var(--primary,#f1be42);outline-offset:4px}
+.mini-check-relative{display:block;font-weight:650}
+.mini-check-absolute{display:block;margin-top:3px;opacity:.73;font-size:11px;line-height:1.4}
+.mini-copy-name{display:inline-flex;align-items:center;gap:5px;border:1px solid var(--border-color,#aaa);border-radius:8px;background:transparent;color:inherit;padding:5px 9px;margin:7px 0 3px;font:inherit;font-size:12px;font-weight:600;cursor:pointer}
+.mini-copy-name:hover{background:color-mix(in srgb,currentColor 8%,transparent)}
+.mini-copy-name:focus-visible{outline:2px solid var(--primary,#f1be42);outline-offset:2px}
+.logo-secret-sheet{width:min(440px,calc(100vw - 26px));max-width:440px;min-height:180px;padding:28px!important;align-self:center}
+.logo-secret-sheet .overlay-title{margin-bottom:0}
+.logo-secret-sheet h2{font-size:clamp(22px,4vw,30px);line-height:1.25}
+.logo-secret-sheet .close-btn{position:absolute}

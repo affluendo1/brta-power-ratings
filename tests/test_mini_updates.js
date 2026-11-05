@@ -1,0 +1,15 @@
+const assert=require('node:assert/strict');
+const {relativeTime}=require('../web/features/mini-updates');
+const t=Date.parse('2026-11-05T10:00:00Z');
+const ago=ms=>new Date(t-ms).toISOString();
+assert.equal(relativeTime(null,t),'Not available');
+assert.equal(relativeTime(ago(0),t),'Just now');
+assert.equal(relativeTime(ago(60000),t),'1 minute ago');
+assert.equal(relativeTime(ago(120000),t),'2 minutes ago');
+assert.equal(relativeTime(ago(3600000),t),'1 hour ago');
+assert.equal(relativeTime(ago(6*3600000),t),'6 hours ago');
+assert.equal(relativeTime(ago(86400000),t),'1 day ago');
+assert.equal(relativeTime(ago(3*86400000),t),'3 days ago');
+assert.equal(relativeTime(ago(-60000),t),'Just now');
+assert(relativeTime(ago(8*86400000),t).includes('Oct 2026'));
+console.log('Relative check-time boundaries passed.');
