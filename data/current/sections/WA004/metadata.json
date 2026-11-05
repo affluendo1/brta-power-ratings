@@ -52,44 +52,44 @@
     {
       "position": 2,
       "team": "Beaumaris CC",
-      "wins": 7,
-      "points": 57,
-      "percentage": 108.89,
+      "wins": 8,
+      "points": 63,
+      "percentage": 109.77,
       "marker": ""
     },
     {
       "position": 3,
       "team": "Kings Park Blue",
-      "wins": 4,
-      "points": 40,
-      "percentage": 106.42,
+      "wins": 5,
+      "points": 46,
+      "percentage": 105.61,
       "marker": ""
     },
     {
       "position": 4,
       "team": "Black Rock",
       "wins": 3,
-      "points": 38,
-      "percentage": 88.29,
+      "points": 40,
+      "percentage": 87.77,
       "marker": ""
     },
     {
       "position": 5,
       "team": "Kings Park Red",
       "wins": 0,
-      "points": 11,
-      "percentage": 44.65,
+      "points": 13,
+      "percentage": 51.68,
       "marker": ""
     }
   ],
   "green_ball": false,
   "results_loaded_by_trols": null,
-  "fixtures": 42,
-  "completed_fixtures": 22,
+  "fixtures": 46,
+  "completed_fixtures": 24,
   "draw_fixtures": 45,
   "singles_rubbers": 0,
-  "doubles_rubbers": 88,
-  "latest_round": 14,
+  "doubles_rubbers": 96,
+  "latest_round": 16,
   "validation": "source discrepancies",
   "source_warnings": [
     "Incomplete TROLS score for WA004061 doubles No. 1: '5-5'. Missing score not inferred; excluded from ratings and game totals.",

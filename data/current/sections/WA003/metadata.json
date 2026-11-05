@@ -44,33 +44,33 @@
     {
       "position": 1,
       "team": "Kings Park",
-      "wins": 10,
-      "points": 90,
-      "percentage": 192.98,
+      "wins": 11,
+      "points": 98,
+      "percentage": 201.68,
       "marker": ""
     },
     {
       "position": 2,
       "team": "Elwood",
       "wins": 10,
-      "points": 85,
-      "percentage": 161.09,
+      "points": 86,
+      "percentage": 151.41,
       "marker": ""
     },
     {
       "position": 3,
       "team": "BLTC Blue",
-      "wins": 8,
-      "points": 70,
-      "percentage": 121.85,
+      "wins": 9,
+      "points": 77,
+      "percentage": 121.93,
       "marker": ""
     },
     {
       "position": 4,
       "team": "Aspendale",
-      "wins": 3,
-      "points": 35,
-      "percentage": 78.33,
+      "wins": 4,
+      "points": 43,
+      "percentage": 85.83,
       "marker": ""
     },
     {
@@ -78,7 +78,7 @@
       "team": "BLTC White",
       "wins": 2,
       "points": 35,
-      "percentage": 74.4,
+      "percentage": 69.91,
       "marker": ""
     },
     {
@@ -86,18 +86,18 @@
       "team": "St Pats Mentone",
       "wins": 1,
       "points": 21,
-      "percentage": 41.8,
+      "percentage": 40.8,
       "marker": ""
     }
   ],
   "green_ball": false,
   "results_loaded_by_trols": null,
-  "fixtures": 42,
-  "completed_fixtures": 37,
+  "fixtures": 46,
+  "completed_fixtures": 40,
   "draw_fixtures": 45,
   "singles_rubbers": 0,
-  "doubles_rubbers": 148,
-  "latest_round": 14,
+  "doubles_rubbers": 160,
+  "latest_round": 16,
   "validation": "source discrepancies",
   "source_warnings": [
     "Incomplete TROLS score for WA003043 doubles No. 1: ''. Missing score not inferred; excluded from ratings and game totals.",
