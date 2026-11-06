@@ -1,7 +1,7 @@
 {
   "source": "https://www.trols.org.au/brta/p_results.php",
   "fixture_source": "https://www.trols.org.au/brta/fixture.php",
-  "synced_at_utc": "2026-11-05T12:13:38.895372+00:00",
+  "synced_at_utc": "2026-11-06T12:02:09.152925+00:00",
   "competitions": 7,
   "sections": 79,
   "current_seasons": {
@@ -41,10 +41,10 @@
       "season_label": "Spring 2026"
     }
   },
-  "fixtures": 3016,
-  "completed_fixtures": 2235,
+  "fixtures": 3029,
+  "completed_fixtures": 2243,
   "singles_rubbers": 6674,
-  "doubles_rubbers": 5583,
+  "doubles_rubbers": 5615,
   "validation": "source discrepancies",
   "source_warnings": [
     {
@@ -270,10 +270,6 @@
     {
       "section_code": "AP011",
       "message": "Incomplete TROLS score for AP011042 singles No. 1: ''. Missing score not inferred; excluded from ratings and game totals."
-    },
-    {
-      "section_code": "AP011",
-      "message": "Incomplete TROLS score for AP011042 singles No. 2: ''. Missing score not inferred; excluded from ratings and game totals."
     },
     {
       "section_code": "AP011",
@@ -708,5 +704,5 @@
       "message": "Incomplete TROLS score for WA004061 doubles No. 4: ''. Missing score not inferred; excluded from ratings and game totals."
     }
   ],
-  "elapsed_seconds": 72.4
+  "elapsed_seconds": 93.0
 }

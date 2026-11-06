@@ -1,5 +1,5 @@
 {
-  "synced_at_utc": "2026-11-05T12:13:38.895372+00:00",
+  "synced_at_utc": "2026-11-06T12:02:09.152925+00:00",
   "competitions": {
     "AA": "Saturday AM - Spring 2026",
     "AP": "Saturday PM - Summer 2026/27",
@@ -2237,16 +2237,16 @@
           "position": 3,
           "team": "Tennis World",
           "wins": 1,
-          "points": 21,
-          "percentage": 107.56,
+          "points": 20.5,
+          "percentage": 100.79,
           "marker": ""
         },
         {
           "position": 4,
           "team": "Highmoor Uniting",
           "wins": 1,
-          "points": 18,
-          "percentage": 114.93,
+          "points": 18.5,
+          "percentage": 126.87,
           "marker": ""
         },
         {
@@ -2285,7 +2285,6 @@
       "validation": "source discrepancies",
       "source_warnings": [
         "Incomplete TROLS score for AP011042 singles No. 1: ''. Missing score not inferred; excluded from ratings and game totals.",
-        "Incomplete TROLS score for AP011042 singles No. 2: ''. Missing score not inferred; excluded from ratings and game totals.",
         "Incomplete TROLS score for AP011042 singles No. 3: '2-3'. Missing score not inferred; excluded from ratings and game totals.",
         "Incomplete TROLS score for AP011044 singles No. 1: '2-2'. Missing score not inferred; excluded from ratings and game totals.",
         "Incomplete TROLS score for AP011044 singles No. 2: '4-1'. Missing score not inferred; excluded from ratings and game totals.",
@@ -3539,6 +3538,14 @@
       "official_standings": [
         {
           "position": 1,
+          "team": "Canterbury",
+          "wins": 9,
+          "points": 77,
+          "percentage": 136.71,
+          "marker": ""
+        },
+        {
+          "position": 2,
           "team": "Eaglemont",
           "wins": 8,
           "points": 73,
@@ -3546,46 +3553,38 @@
           "marker": ""
         },
         {
-          "position": 2,
-          "team": "Canterbury",
-          "wins": 8,
-          "points": 70,
-          "percentage": 136.61,
-          "marker": ""
-        },
-        {
           "position": 3,
           "team": "Glen Waverley",
           "wins": 6,
-          "points": 57,
-          "percentage": 125.81,
+          "points": 58,
+          "percentage": 121.28,
           "marker": ""
         },
         {
           "position": 4,
           "team": "Kooyong",
-          "wins": 1,
-          "points": 33,
-          "percentage": 90.31,
+          "wins": 2,
+          "points": 39,
+          "percentage": 91.34,
           "marker": ""
         },
         {
           "position": 5,
           "team": "Hampton",
           "wins": 2,
-          "points": 30,
-          "percentage": 67.45,
+          "points": 32,
+          "percentage": 69.05,
           "marker": ""
         }
       ],
       "green_ball": false,
       "results_loaded_by_trols": null,
-      "fixtures": 42,
-      "completed_fixtures": 25,
+      "fixtures": 46,
+      "completed_fixtures": 27,
       "draw_fixtures": 45,
       "singles_rubbers": 0,
-      "doubles_rubbers": 100,
-      "latest_round": 14,
+      "doubles_rubbers": 108,
+      "latest_round": 16,
       "validation": "passed",
       "source_warnings": []
     },
@@ -3695,12 +3694,12 @@
       ],
       "green_ball": false,
       "results_loaded_by_trols": null,
-      "fixtures": 58,
-      "completed_fixtures": 40,
+      "fixtures": 59,
+      "completed_fixtures": 42,
       "draw_fixtures": 56,
       "singles_rubbers": 0,
-      "doubles_rubbers": 160,
-      "latest_round": 16,
+      "doubles_rubbers": 168,
+      "latest_round": 17,
       "validation": "source discrepancies",
       "source_warnings": [
         "Incomplete TROLS score for HA002081 doubles No. 1: '5-7 1-1'. Missing score not inferred; excluded from ratings and game totals.",
@@ -3758,9 +3757,9 @@
         {
           "position": 1,
           "team": "Basterfield Park",
-          "wins": 11,
-          "points": 78,
-          "percentage": 172.28,
+          "wins": 12,
+          "points": 86,
+          "percentage": 181.53,
           "marker": ""
         },
         {
@@ -3774,17 +3773,17 @@
         {
           "position": 3,
           "team": "Mentone",
-          "wins": 6,
-          "points": 46,
-          "percentage": 105.93,
+          "wins": 7,
+          "points": 52,
+          "percentage": 104.45,
           "marker": ""
         },
         {
           "position": 4,
           "team": "Black Rock",
           "wins": 4,
-          "points": 38,
-          "percentage": 96.93,
+          "points": 40,
+          "percentage": 98.28,
           "marker": ""
         },
         {
@@ -3792,18 +3791,18 @@
           "team": "Dingley",
           "wins": 0,
           "points": 5,
-          "percentage": 43.17,
+          "percentage": 41.53,
           "marker": ""
         }
       ],
       "green_ball": false,
       "results_loaded_by_trols": null,
-      "fixtures": 42,
-      "completed_fixtures": 28,
+      "fixtures": 46,
+      "completed_fixtures": 30,
       "draw_fixtures": 45,
       "singles_rubbers": 0,
-      "doubles_rubbers": 112,
-      "latest_round": 14,
+      "doubles_rubbers": 120,
+      "latest_round": 16,
       "validation": "passed",
       "source_warnings": []
     },
@@ -3853,17 +3852,17 @@
         {
           "position": 1,
           "team": "Albert Park",
-          "wins": 8,
-          "points": 62,
-          "percentage": 125.37,
+          "wins": 9,
+          "points": 69,
+          "percentage": 126.73,
           "marker": ""
         },
         {
           "position": 2,
           "team": "Kings Park",
-          "wins": 7,
-          "points": 56,
-          "percentage": 135.71,
+          "wins": 8,
+          "points": 64,
+          "percentage": 137.88,
           "marker": ""
         },
         {
@@ -3871,15 +3870,15 @@
           "team": "Hawksburn",
           "wins": 6,
           "points": 48,
-          "percentage": 105.53,
+          "percentage": 100.0,
           "marker": ""
         },
         {
           "position": 4,
           "team": "Chadstone",
           "wins": 5,
-          "points": 39,
-          "percentage": 93.44,
+          "points": 40,
+          "percentage": 91.25,
           "marker": ""
         },
         {
@@ -3893,12 +3892,12 @@
       ],
       "green_ball": false,
       "results_loaded_by_trols": null,
-      "fixtures": 42,
-      "completed_fixtures": 26,
+      "fixtures": 46,
+      "completed_fixtures": 28,
       "draw_fixtures": 45,
       "singles_rubbers": 0,
-      "doubles_rubbers": 104,
-      "latest_round": 14,
+      "doubles_rubbers": 112,
+      "latest_round": 16,
       "validation": "passed",
       "source_warnings": []
     },

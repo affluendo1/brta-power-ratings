@@ -60,16 +60,16 @@
       "position": 3,
       "team": "Tennis World",
       "wins": 1,
-      "points": 21,
-      "percentage": 107.56,
+      "points": 20.5,
+      "percentage": 100.79,
       "marker": ""
     },
     {
       "position": 4,
       "team": "Highmoor Uniting",
       "wins": 1,
-      "points": 18,
-      "percentage": 114.93,
+      "points": 18.5,
+      "percentage": 126.87,
       "marker": ""
     },
     {
@@ -108,7 +108,6 @@
   "validation": "source discrepancies",
   "source_warnings": [
     "Incomplete TROLS score for AP011042 singles No. 1: ''. Missing score not inferred; excluded from ratings and game totals.",
-    "Incomplete TROLS score for AP011042 singles No. 2: ''. Missing score not inferred; excluded from ratings and game totals.",
     "Incomplete TROLS score for AP011042 singles No. 3: '2-3'. Missing score not inferred; excluded from ratings and game totals.",
     "Incomplete TROLS score for AP011044 singles No. 1: '2-2'. Missing score not inferred; excluded from ratings and game totals.",
     "Incomplete TROLS score for AP011044 singles No. 2: '4-1'. Missing score not inferred; excluded from ratings and game totals.",
