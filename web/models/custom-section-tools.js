@@ -40,7 +40,6 @@
       matches.push(makeMatch(section,f,'Doubles',i+1,pairFor('home',i,hp),pairFor('away',i,ap)));
     return matches;
   }
-  }
   function delimited(text,separator){const rows=[];let row=[],field='',quoted=false;for(let i=0;i<text.length;i++){const c=text[i];if(c==='"'){if(quoted&&text[i+1]==='"'){field+='"';i++}else quoted=!quoted}else if(!quoted&&c===separator){row.push(field.trim());field=''}else if(!quoted&&(c==='\n'||c==='\r')){if(c==='\r'&&text[i+1]==='\n')i++;row.push(field.trim());if(row.some(Boolean))rows.push(row);row=[];field=''}else field+=c}if(quoted)throw Error('Unclosed quotation mark in the imported table.');row.push(field.trim());if(row.some(Boolean))rows.push(row);return rows}
   function parse(text,section,defaults={}){
     if(typeof text!=='string'||!text.trim())throw Error('Paste fixtures or choose a file first.');if(text.length>2*1024*1024)throw Error('Import up to 2 MB at a time.');
