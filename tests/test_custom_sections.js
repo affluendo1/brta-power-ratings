@@ -32,7 +32,7 @@ s=sample();s.rounds[0].fixtures[0].rubbers[0].status='Scheduled';assert.throws((
 const r={status:'Completed',type:'Singles',sets:[{h:6,a:4},{h:4,a:6},{h:10,a:8,mt:true}]};
 assert.deepEqual(M.score(r,{format:'rubbers',setTarget:6,singlesBestOf:3}),{hg:10,ag:10,hs:2,as:1,winner:'home',score:'6-4 4-6 [10-8]'});
 assert.throws(()=>M.score({...r,sets:[{h:10,a:8,mt:true}]},{format:'rubbers',setTarget:6,singlesBestOf:3}),/deciding third/);
-const forfeit=M.score({status:'Forfeit',type:'Singles',sets:[],winner:'away'},{format:'rubbers',setTarget:6,singlesBestOf:3});assert.equal(forfeit.as,2);assert.equal(forfeit.ag,0);
+const forfeit=M.score({status:'Forfeit',type:'Singles',sets:[],winner:'away'},{format:'rubbers',setTarget:6,singlesBestOf:3});assert.equal(forfeit.as,2);assert.equal(forfeit.ag,12,'Manual best-of-three forfeits award the same games as No Player forfeits');
 s=sample();s.rounds[0].fixtures[0].status='Forfeited To';s.rounds[0].fixtures[0].rubbers=[];const forfeited=M.build(s).results.at(-1).fixtures[0];assert.equal(forfeited.homePoints,0);assert.equal(forfeited.awayPoints,7);
 s=sample();s.rounds[0].fixtures[0].status='Wash Out';s.rounds[0].fixtures[0].rubbers=[];assert.equal(M.build(s).results.at(-1).fixtures[0].homePoints,3.5);
 const strong=M.fit([{home:['A'],away:['B'],hg:6,ag:0,date:'2026-10-01',homeTeam:'X',awayTeam:'Y',winner:'home'}]);assert(strong[0].rating>1500);assert(strong[1].rating<1500);assert.equal(strong[0].rating+strong[1].rating,3000);
