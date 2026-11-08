@@ -18,7 +18,7 @@
     const ids=f[side+'Lineup']||[],chosen=f[side+'DoublesPairs'];
     return Array.from({length:Number(section.doublesSlots)},(_,i)=>{
       const existing=(f.rubbers||[]).find(m=>m.type==='Doubles'&&Number(m.position)===i+1);
-      const previous=existing?.[side],pair=chosen?.[i]??(previous?.length===2&&previous.every(id=>ids.includes(id))?previous:null)??(ids.length>=2?[ids[2*i%ids.length],ids[(2*i+1)%ids.length]]:[]);
+      const previous=existing?.[side],pair=chosen?.[i]??(previous?.length===2&&previous.every(id=>id===M.NO_PLAYER||ids.includes(id))?previous:null)??(ids.length>=2?[ids[2*i%ids.length],ids[(2*i+1)%ids.length]]:[]);
       return pair.filter(id=>id===M.NO_PLAYER||ids.includes(id)).slice(0,2);
     });
   }
