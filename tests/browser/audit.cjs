@@ -134,6 +134,10 @@ click('#customAdminOverlay [data-ca-action="close"]');await tick();
 click('#customCompetitionsBtn');await tick();
 assert(!w.document.querySelector('#customAdminOverlay').classList.contains('hidden'),'Header shortcut opens the creator');
 console.log('Repeated special-status edits, auto-status, save/return position, custom-model export and header entry passed');
+const totalsDoc=new w.DOMParser().parseFromString(vm.runInContext("resultDetailHTML({status:'Completed',home:'A',away:'B',homeRubbers:2,awayRubbers:4,homeGames:24,awayGames:33,homePoints:2,awayPoints:8,rubbers:[]})",ctx),'text/html');
+assert.equal(totalsDoc.querySelectorAll('.result-metrics b>.win').length,3);
+assert.equal(totalsDoc.querySelectorAll('.result-metrics b>.loss').length,3);
+assert.equal(totalsDoc.querySelector('.result-points .win').textContent,'8');
 if(errors.length)throw Error(errors.join('\n'));console.log('No script/runtime errors');closeDOM();})().catch(e=>{console.error(e.stack);console.error(errors);closeDOM();process.exitCode=1});
 
 

@@ -80,6 +80,5 @@ body.section-loading :is(.main-nav,#statusStrip,#teamCards,#exportCompleteBtn,#e
  .lineup-position-grid label{display:grid;grid-template-columns:28px minmax(0,1fr)!important;align-items:center;gap:8px}
  .lineup-position-grid select{width:100%;min-width:0}
  .release82-overlay .settings-sheet{width:100%!important;max-width:100%!important;height:100dvh;max-height:100dvh;left:0;top:0;transform:none}
- .overlay:not(#moreSettingsOverlay):not(#modeSwitchOverlay) [role="dialog"]{padding-top:calc(24px + env(safe-area-inset-top))!important}
 }
 .fixture-rubber .projection822-side .person{line-height:1.25}
