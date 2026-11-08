@@ -55,7 +55,7 @@
     for(const key of ['singlesSlots','doublesSlots'])if(!Number.isInteger(Number(section[key]))||Number(section[key])<0||Number(section[key])>8)fail('Choose 0–8 singles and doubles matches per fixture.');
     if(Number(section.singlesSlots)+Number(section.doublesSlots)===0)fail('A fixture needs at least one match.');
     if(section.semifinalPlaces!=null&&(!Number.isInteger(section.semifinalPlaces)||section.semifinalPlaces<0||section.semifinalPlaces>32))fail('Semifinal places must be an integer from 0 to 32.');
-    if(section.ratingModel!=null&&!['V3','V3B','RM4.2','RM4a','RM4b','RM4.1 Ensemble','4melody.2','4foundation.2'].includes(section.ratingModel))fail('Choose a supported rating model.');
+    if(section.ratingModel!=null&&!['V3','V3B','RM4.2','RM4a','RM4b','RM4.1 Ensemble','4melody.2','4foundation.2'].includes(section.ratingModel))fail('Choose V3 or V3B or a supported RM4 family rating model.');
     if(['RM4a','RM4b','RM4.1 Ensemble','4melody.2','4foundation.2'].includes(section.ratingModel)&&!specialistCompatible(section))fail('This model requires standard sets or junior rubbers scoring. Change the rules or select RM4.2 / RM3.');
     if(section.doublesSurnames!=null&&typeof section.doublesSurnames!=='boolean')fail('The doubles surname setting must be on or off.');
     if(!Array.isArray(section.teams)||!Array.isArray(section.players)||!Array.isArray(section.rounds))fail('The section is missing its teams, players or rounds.');
