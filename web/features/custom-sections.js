@@ -7,7 +7,29 @@
   let unlocked=true,sections=null,draft=null,tab='setup',roundId=null,fixtureId=null,dirty=false,importPreview=null,importText='',importNumber=1,importDate='';
   const enabled=()=>true;
   const today=()=>{const d=new Date();return [d.getFullYear(),String(d.getMonth()+1).padStart(2,'0'),String(d.getDate()).padStart(2,'0')].join('-')};
-  function read(){if(sections)return sections;const raw=localStorage.getItem(STORE);try{sections=raw?JSON.parse(raw):[];if(!Array.isArray(sections))throw Error();return sections}catch(e){throw Error('The saved custom-section data could not be read. Import a backup to restore it.')}}
+  function read(){
+    if(sections)return sections;
+    const raw=localStorage.getItem(STORE);
+    try{
+      sections=raw?JSON.parse(raw):[];
+      if(!Array.isArray(sections))throw Error();
+      // Old backups can contain TROLS's internal missing-name codes. Match records reference
+      // player IDs, so friendly, unique display names leave their results intact.
+      for(const s of sections){
+        const used=new Set((s.players||[]).filter(p=>!root.BRTAPlayerDisplay?.isUnknown(p.name)).map(p=>String(p.name).toLowerCase()));
+        for(const p of s.players||[]){
+          if(!root.BRTAPlayerDisplay?.isUnknown(p.name))continue;
+          p.noCode=true;
+          const team=s.teams?.find(t=>t.id===p.teamId)?.name||'Unassigned';
+          const label='Unidentified player ('+team+')';
+          let display=label,n=2;
+          while(used.has(display.toLowerCase()))display='Unidentified player ('+team+' '+n++ +')';
+          p.name=display;used.add(display.toLowerCase());
+        }
+      }
+      return sections;
+    }catch(e){throw Error('The saved custom-section data could not be read. Import a backup to restore it.')}
+  }
   function persist(next){localStorage.setItem(STORE,JSON.stringify(next));sections=next;payloadCache.clear();root.dispatchEvent(new Event('brta-custom-sections-change'))}
   const metadata=s=>({section_code:s.id,section_label:s.name,competition_code:'LOCAL',competition_label:'Custom Competitions - '+(s.season||'Custom season'),season_id:s.id,season_label:s.season||'Custom season',is_custom:true});
   function catalog(){if(!enabled())return [];try{return read().map(metadata)}catch(e){return []}}
@@ -22,18 +44,74 @@
   function ensureOverlay(){if($('#customAdminOverlay'))return;const el=document.createElement('div');el.id='customAdminOverlay';el.className='overlay hidden';el.innerHTML='<div class="overlay-backdrop" data-ca-action="close"></div><section class="ca-sheet" role="dialog" aria-modal="true" aria-labelledby="caTitle"><header class="ca-head"><div><div class="kicker">YOUR TENNIS WORLD</div><h2 id="caTitle">Custom Competitions</h2></div>'+button('close','×','secondary','aria-label="Close creator"')+'</header><div id="caMessage" role="status" aria-live="polite"></div><div id="caBody"></div></section>';document.body.appendChild(el);el.addEventListener('click',click);el.addEventListener('change',change);el.addEventListener('input',inputEvent);el.addEventListener('keydown',e=>{if(e.key==='Enter'&&['score-h','score-a'].includes(e.target.dataset.ca)){e.preventDefault();const fields=[...el.querySelectorAll('input[data-ca="score-h"],input[data-ca="score-a"]')],next=fields[fields.indexOf(e.target)+1];next?.focus();next?.select();}});}
   function message(text,error=false){const box=$('#caMessage');if(box){box.textContent=text;box.className=text?'ca-message '+(error?'ca-error':'ca-success'):''}}
   function open(){if(!enabled())return;unlocked=true;ensureOverlay();$('#customAdminOverlay').classList.remove('hidden');document.body.classList.add('modal-open');message('');render()}
-  function captureEditorView(){const body=$('#caBody'),active=document.activeElement,path=[];let node=active;while(node&&node!==body){const parent=node.parentElement;if(!parent)break;path.unshift([...parent.children].indexOf(node));node=parent}return {sectionId:draft.id,tab,roundId,fixtureId,scroll:body.scrollTop,navScroll:body.querySelector('.ca-round-nav')?.scrollTop||0,details:[...body.querySelectorAll('details')].map(el=>el.open),focus:node===body?path:null};}
-  function restoreEditorView(view){const body=$('#caBody');body.querySelectorAll('details').forEach((el,i)=>{el.open=!!view.details[i]});let focus=body;if(view.focus){for(const i of view.focus)focus=focus?.children[i];focus?.focus?.({preventScroll:true})}body.scrollTop=view.scroll;const nav=body.querySelector('.ca-round-nav');if(nav)nav.scrollTop=view.navScroll||0;requestAnimationFrame(()=>{if(body.isConnected){body.scrollTop=view.scroll;const sidebar=body.querySelector('.ca-round-nav');if(sidebar)sidebar.scrollTop=view.navScroll||0}});}
-  function openSection(code){if(!enabled())return;rosterText='';rosterPreview=null;const saved=read().find(s=>s.id===code);if(!saved)return;if(dirty&&!confirm('Discard unsaved changes and return to this section?'))return;const view=editorViews.get(code);draft=M.clone(saved);tab=view?.tab||'setup';roundId=view?.roundId||null;fixtureId=view?.fixtureId||null;dirty=false;pendingEditorView=view||null;open();}
+  const RETURN_VIEW_KEY='brta-editor-return-8541';
+  function rememberEditorView(view){
+    if(!view?.sectionId)return;
+    editorViews.set(view.sectionId,view);
+    try{sessionStorage.setItem(RETURN_VIEW_KEY,JSON.stringify(view))}catch{}
+  }
+  function previousEditorView(code){
+    if(editorViews.has(code))return editorViews.get(code);
+    try{const view=JSON.parse(sessionStorage.getItem(RETURN_VIEW_KEY)||'null');return view?.sectionId===code?view:null}catch{return null}
+  }
+  function captureEditorView(){
+    const body=$('#caBody'),active=document.activeElement,match=active?.closest?.('.ca-rubber[data-ca-match-id]');
+    const matched=(id)=>[...body.querySelectorAll('.ca-rubber[data-ca-match-id]')].find(el=>el.dataset.caMatchId===id);
+    const viewport=body.getBoundingClientRect(),available=[...body.querySelectorAll('.ca-rubber[data-ca-match-id]')];
+    const visible=available.filter(el=>{const box=el.getBoundingClientRect();return box.bottom>viewport.top+15&&box.top<viewport.bottom});
+    const anchor=(match&&visible.includes(match)?match:null)||visible.sort((a,b)=>Math.abs(a.getBoundingClientRect().top-viewport.top)-Math.abs(b.getBoundingClientRect().top-viewport.top))[0];
+    const focus=active&&body.contains(active)?{matchId:match?.dataset.caMatchId||null,ca:active.dataset?.ca||'',action:active.dataset?.caAction||'',index:active.dataset?.index||'',side:active.dataset?.side||'',slot:active.dataset?.slot||'',set:active.dataset?.set||'',pair:active.dataset?.pair||'',id:active.id||''}:null;
+    return {sectionId:draft.id,tab,roundId,fixtureId,scroll:body.scrollTop,
+      navScroll:body.querySelector('.ca-round-nav')?.scrollTop||0,
+      openMatches:[...body.querySelectorAll('.ca-rubber[data-ca-match-id]')].filter(el=>el.querySelector('.ca-match-details')?.open).map(el=>el.dataset.caMatchId),
+      openOthers:[...body.querySelectorAll('details:not(.ca-match-details)')].map(el=>el.open),
+      anchor:anchor?{matchId:anchor.dataset.caMatchId,top:anchor.getBoundingClientRect().top-viewport.top}:null,focus};
+  }
+  function restoreEditorView(view){
+    const body=$('#caBody');if(!view||!body)return;
+    const matches=[...body.querySelectorAll('.ca-rubber[data-ca-match-id]')];
+    const open=new Set(view.openMatches||[]);
+    matches.forEach(el=>{const details=el.querySelector('.ca-match-details');if(details)details.open=open.has(el.dataset.caMatchId)});
+    body.querySelectorAll('details:not(.ca-match-details)').forEach((el,i)=>{if(view.openOthers)el.open=!!view.openOthers[i]});
+    const locate=()=>{
+      body.scrollTop=Number(view.scroll)||0;
+      const nav=body.querySelector('.ca-round-nav');if(nav)nav.scrollTop=Number(view.navScroll)||0;
+      const anchor=matches.find(el=>el.dataset.caMatchId===view.anchor?.matchId);
+      if(anchor){const diff=anchor.getBoundingClientRect().top-body.getBoundingClientRect().top-Number(view.anchor.top);body.scrollTop+=diff}
+    };
+    locate();
+    const f=view.focus;
+    if(f){
+      const scope=matches.find(el=>el.dataset.caMatchId===f.matchId)||body;
+      const candidate=[...scope.querySelectorAll('input,select,button,textarea,summary')].find(el=>
+        (!f.id||el.id===f.id)&&
+        (!f.ca||el.dataset.ca===f.ca)&&(!f.action||el.dataset.caAction===f.action)&&
+        (!f.index||el.dataset.index===f.index)&&(!f.side||el.dataset.side===f.side)&&
+        (!f.slot||el.dataset.slot===f.slot)&&(!f.set||el.dataset.set===f.set)&&(!f.pair||el.dataset.pair===f.pair));
+      candidate?.focus?.({preventScroll:true});
+    }
+    requestAnimationFrame(()=>{if(body.isConnected&&draft?.id===view.sectionId){locate();}});
+  }
+  function openSection(code){if(!enabled())return;rosterText='';rosterPreview=null;const saved=read().find(s=>s.id===code);if(!saved)return;if(dirty&&!confirm('Discard unsaved changes and return to this section?'))return;const view=previousEditorView(code);draft=M.clone(saved);tab=view?.tab||'setup';roundId=draft.rounds.some(r=>r.id===view?.roundId)?view.roundId:null;fixtureId=draft.rounds.flatMap(r=>r.fixtures).some(f=>f.id===view?.fixtureId)?view.fixtureId:null;dirty=false;pendingEditorView=view||null;open();}
   function bindHeader(code=viewedSectionId){viewedSectionId=code;const btn=$('#customEditorBtn');if(!btn)return;btn.classList.toggle('hidden',!enabled()||!code);btn.onclick=()=>openSection(viewedSectionId);}
-  function close(){if(dirty&&!confirm('Close without saving your section changes?'))return;dirty=false;draft=null;$('#customAdminOverlay').classList.add('hidden');if(!document.querySelector('.overlay:not(.hidden)'))document.body.classList.remove('modal-open')}
+  function close(){
+    if(dirty&&!confirm('Close without saving your section changes?'))return false;
+    const code=draft?.id,exists=!!code&&read().some(s=>s.id===code);
+    if(exists)rememberEditorView(captureEditorView());
+    dirty=false;draft=null;pendingEditorView=null;
+    $('#customAdminOverlay').classList.add('hidden');
+    if(!document.querySelector('.overlay:not(.hidden)'))document.body.classList.remove('modal-open');
+    // The section behind the editor should always be the saved competition just edited.
+    if(exists)root.dispatchEvent(new CustomEvent('brta-custom-section-open',{detail:code}));
+    return true;
+  }
   function bindSettings(){const host=$('#customAdminSettings');if(!host)return;host.classList.add('hidden');host.innerHTML=''}
   function newSection(){return {id:'local-'+id(),name:'New section',season:'My season',doublesSurnames:false,ratingModel:'RM4.2',format:'sets',setTarget:6,doublesTarget:6,singlesBestOf:1,doublesBestOf:1,singlesSlots:4,doublesSlots:2,teams:[],players:[],rounds:[],updatedAt:new Date().toISOString()}}
-  function save(){if(!unlocked||!enabled())throw Error('Unlock Admin before saving.');M.validate(draft);draft.updatedAt=new Date().toISOString();const next=read().filter(s=>s.id!==draft.id).concat(M.clone(draft));persist(next);dirty=false;render();message('Section saved on this device. Export a backup to keep another copy.')}
-  function render(){const view=draft&&$('#caBody')?.querySelector('.ca-rubber')?captureEditorView():null;const scroll=$('#caBody')?.scrollTop||0;if(!enabled())return;unlocked=true;let list;try{list=read()}catch(e){$('#caBody').innerHTML='<p>'+esc(e.message)+'</p><input id="caImport" type="file" accept=".json,application/json">';return}
+  function save(){if(!unlocked||!enabled())throw Error('Unlock Admin before saving.');M.validate(draft);const view=captureEditorView();draft.updatedAt=new Date().toISOString();const next=read().filter(s=>s.id!==draft.id).concat(M.clone(draft));persist(next);rememberEditorView(view);pendingEditorView=view;dirty=false;render();message('Section saved on this device. Export a backup to keep another copy.')}
+  function render(){const body=$('#caBody'),domRound=body?.querySelector('.ca-round-nav>.button.primary')?.dataset.id,domFixture=body?.querySelector('.ca-fixture-tabs>.button.primary')?.dataset.id;const sameView=!body?.querySelector('.ca-rubber')||((domRound||null)===(roundId||null)&&(domFixture||null)===(fixtureId||null));const view=draft&&sameView&&body?.querySelector('.ca-rubber')?captureEditorView():null;const scroll=body?.scrollTop||0;if(!enabled())return;unlocked=true;let list;try{list=read()}catch(e){$('#caBody').innerHTML='<p>'+esc(e.message)+'</p><input id="caImport" type="file" accept=".json,application/json">';return}
     const nav='<div class="ca-toolbar"><label class="ca-picker">Your sections<select id="caSection">'+options(list.map(s=>({id:s.id,name:s.name})),draft?.id,'Select a section')+'</select></label>'+button('new','New section','primary')+button('import','Import backup')+button('export-all','Back up all')+'<input id="caImport" type="file" accept=".json,application/json" hidden></div>';
     if(!draft){$('#caBody').innerHTML=nav+'<div class="ca-empty"><h3>Your own competition, your own scorecards.</h3><p>Create a section, register its teams and players, then add rounds and fixtures. Your saved sections appear under <b>My sections</b> in the normal competition selector while Extras is on.</p>'+button('new','Create a section','primary')+'</div>';return}
-    $('#caBody').innerHTML=nav+'<div class="ca-section-head"><div><h3>'+esc(draft.name)+'</h3><span id="caSaveState">'+(dirty?'Unsaved changes':'Saved on this device')+'</span></div><div class="ca-actions">'+button('save','Save changes','primary')+button('view','View section')+button('export','Export backup')+button('delete','Delete section','danger')+'</div></div><nav class="ca-tabs">'+[['setup','Section setup'],['roster','Teams & players'],['rounds','Rounds & fixtures']].map(([value,label])=>button('tab',label,tab===value?'primary':'secondary','data-value="'+value+'"')).join('')+'</nav>'+(tab==='setup'?setupHTML():tab==='roster'?rosterHTML():roundsHTML());$('#caBody').scrollTop=scroll;const keep=pendingEditorView?.sectionId===draft.id?pendingEditorView:view;if(keep){restoreEditorView(keep);pendingEditorView=null;}
+    $('#caBody').innerHTML=nav+'<div class="ca-section-head"><div><h3>'+esc(draft.name)+'</h3><span id="caSaveState">'+(dirty?'Unsaved changes':'Saved on this device')+'</span></div><div class="ca-actions">'+button('save','Save changes','primary')+button('view','View section')+button('export','Export backup')+button('delete','Delete section','danger')+'</div></div><nav class="ca-tabs">'+[['setup','Section setup'],['roster','Teams & players'],['rounds','Rounds & fixtures']].map(([value,label])=>button('tab',label,tab===value?'primary':'secondary','data-value="'+value+'"')).join('')+'</nav>'+(tab==='setup'?setupHTML():tab==='roster'?rosterHTML():roundsHTML());$('#caBody').scrollTop=scroll;const keep=pendingEditorView?.sectionId===draft.id&&pendingEditorView.tab===tab?pendingEditorView:view;if(keep){restoreEditorView(keep);pendingEditorView=null;}
   }
   function setupHTML(){
   const standard=M.specialistCompatible(draft);
@@ -73,7 +151,7 @@
 
   function doublesPairsHTML(side,f){
     if(!Number(draft.doublesSlots))return '';const ids=f[side+'Lineup']||[],pairs=T.doublesPairs(draft,f,side);
-    return '<div class="ca-pair-picker"><h4>Doubles pairs</h4><p class="ca-note">Choose two per pair.</p>'+pairs.map((pair,i)=>'<fieldset><legend>D'+(i+1)+' <span>'+pair.length+'/2 selected</span></legend><div>'+ids.map(id=>{const p=draft.players.find(p=>p.id===id);return p?'<label class="'+(pair.includes(id)?'selected':'')+'"><input type="checkbox" data-ca="pair-player" data-side="'+side+'" data-pair="'+i+'" data-id="'+esc(id)+'" '+(pair.includes(id)?'checked':'')+'><span>'+esc(p.name)+'</span></label>':''}).join('')+'</div>'+(!ids.length?'<p class="ca-note">Select your squad above first.</p>':'')+'</fieldset>').join('')+'</div>';
+    return '<div class="ca-pair-picker"><h4>Doubles pairs</h4><p class="ca-note">Choose two per pair. Any missing spot is only a placeholder, not a selected player.</p>'+pairs.map((pair,i)=>'<fieldset><legend>D'+(i+1)+' <span>'+pair.length+'/2 selected</span></legend><div>'+ids.map(id=>{const p=draft.players.find(p=>p.id===id);return p?'<label class="'+(pair.includes(id)?'selected':'')+'"><input type="checkbox" data-ca="pair-player" data-side="'+side+'" data-pair="'+i+'" data-id="'+esc(id)+'" '+(pair.includes(id)?'checked':'')+'><span>'+esc(p.name)+'</span></label>':''}).join('')+'</div>'+(pair.length<2?'<p class="ca-pair-vacant">'+(2-pair.length)+' empty spot'+(pair.length===1?'':'s')+' · Choose '+(2-pair.length===1?'one more player':'players')+' above</p>':'')+(!ids.length?'<p class="ca-note">Select your squad above first.</p>':'')+'</fieldset>').join('')+'</div>';
   }
   function fixtureHTML(){const f=fixture();if(!f)return '<p class="ca-note">Select a fixture to edit its scorecard.</p>';return '<div class="ca-fixture"><div class="ca-grid">'+field('Home team',select('fixture-home',draft.teams,f.homeTeamId))+field('Away team / bye','<select data-ca="fixture-away">'+options(draft.teams,f.awayTeamId,'Bye')+'</select>')+field('Fixture status','<select data-ca="fixture-status">'+['Scheduled','Completed','Wash Out','Forfeited To','Forfeited By','Bye'].map(x=>'<option '+(f.status===x?'selected':'')+'>'+x+'</option>').join('')+'</select>')+'</div><p class="ca-note">“Forfeited To” means the home team concedes; “Forfeited By” means the away team concedes.</p>'+(f.status==='Bye'?'':'<section class="ca-lineup-panel"><h3>1. Tick your matchday squads</h3><p class="ca-note">Tick players, adjust their order and choose doubles pairs.</p><div class="ca-grid">'+lineupHTML('home',f)+lineupHTML('away',f)+'</div>'+button('generate-card',f.rubbers.length?'Rebuild matches from squads':'Create matches','secondary')+button('jump-scores','Enter scores ↓','primary')+'<p class="ca-note">To replace one player in a completed match, use Swap player on that match; all others stay intact. Rebuilding resets the whole scorecard. Missing squad players become forfeits.</p></section><div class="ca-score-toolbar"><h3>2. Enter scores</h3><label><input type="checkbox" data-ca="auto-status" '+(f.autoStatus!==false?'checked':'')+'> Automatically mark finished matches and fixture complete</label><p class="ca-note">Tap a common score or type into the boxes. Tab moves to the next box.</p></div><div class="ca-rubber-list">'+(f.rubbers||[]).map((m,i)=>rubberHTML(m,i,f)).join('')+'</div><div class="ca-actions">'+button('add-single','Add singles match')+button('add-double','Add doubles match')+'</div>')+'<details class="ca-bulk"><summary>Competition-point overrides</summary><p class="ca-note">Leave blank to calculate points from the scorecard. Enter both values for a manual adjustment.</p><div class="ca-grid">'+field('Home competition points',input('fixture-home-points',f.homePointsOverride??'','number','min="0" step="0.5"'))+field('Away competition points',input('fixture-away-points',f.awayPointsOverride??'','number','min="0" step="0.5"'))+'</div></details><div class="ca-actions ca-bottom">'+button('save','Save changes','primary')+button('remove-fixture','Delete fixture','danger')+'</div></div>'}
   const quickWinner=m=>m.quickWinner||((m.sets[0]?.h!==''&&Number(m.sets[0]?.a)>Number(m.sets[0]?.h))?'away':'home');
@@ -82,10 +160,14 @@
     const roster=side=>'<div class="ca-rubber-players">'+Array.from({length:n},(_,i)=>'<div><select data-ca="match-player" data-index="'+index+'" data-side="'+side+'" data-slot="'+i+'" aria-label="'+side+' player '+(i+1)+'">'+playerOptions(f[side+'TeamId'],m[side]?.[i]||'')+'</select><label class="ca-emergency"><input type="checkbox" data-ca="match-emergency" data-index="'+index+'" data-side="'+side+'" data-slot="'+i+'" '+(m[side+'Emergencies']?.[i]?'checked':'')+'> Emergency</label></div>').join('')+'</div>';
     const sets=Array.from({length:Math.max(length,m.sets.length)},(_,i)=>{const x=m.sets[i]||{h:'',a:'',mt:i===2};return '<div class="ca-score-set"><b>Set '+(i+1)+'</b><div>'+input('score-h',x.h,'number','inputmode="numeric" min="0" max="99" data-index="'+index+'" data-set="'+i+'" aria-label="Set '+(i+1)+' home score"')+'<span>–</span>'+input('score-a',x.a,'number','inputmode="numeric" min="0" max="99" data-index="'+index+'" data-set="'+i+'" aria-label="Set '+(i+1)+' away score"')+'</div>'+(i===2?'<label><input type="checkbox" data-ca="score-mt" data-index="'+index+'" data-set="'+i+'" '+(x.mt?'checked':'')+'> Match tiebreak</label>':'')+'</div>'}).join('');
     const scores=Array.from({length:target-1},(_,i)=>[target,i]).concat([[target+1,target-1],[target+1,target]]);
-    return '<article class="ca-rubber ca-quick-rubber"><header><b>'+(m.type==='Singles'?'S':'D')+m.position+' · '+m.type+'</b><span class="ca-match-state '+(m.status==='Completed'?'complete':'')+'" data-index="'+index+'">'+(m.status==='Completed'?'✓ Complete':esc(m.status))+'</span>'+button('edit-this-match','Swap player','secondary','data-index="'+index+'"')+'</header><div class="ca-score-names"><b>'+esc(name('home'))+'</b><span>v</span><b>'+esc(name('away'))+'</b></div><div class="ca-set-grid ca-quick-sets">'+sets+'</div>'+(length===1?'<div class="ca-score-presets"><div class="ca-winner-choice">'+button('quick-winner','Home won',winner==='home'?'primary':'secondary','data-index="'+index+'" data-side="home"')+button('quick-winner','Away won',winner==='away'?'primary':'secondary','data-index="'+index+'" data-side="away"')+'</div><div class="ca-preset-buttons">'+scores.map(([h,a])=>button('quick-score',h+'–'+a,'secondary','data-index="'+index+'" data-home="'+h+'" data-away="'+a+'"')).join('')+'</div></div>':'')+'<details class="ca-match-details"><summary>Edit players, pairs, order or special status</summary><div class="ca-match-sides">'+roster('home')+'<span class="ca-vs">v</span>'+roster('away')+'</div><div class="ca-grid">'+field('Match status','<select data-ca="match-status" data-index="'+index+'">'+['Scheduled','Completed','Unfinished','Retired','Forfeit','No Contest'].map(x=>'<option '+(m.status===x?'selected':'')+'>'+x+'</option>').join('')+'</select>')+field('Position',input('match-position',m.position,'number','min="1" data-index="'+index+'"'))+(['Forfeit','Retired'].includes(m.status)?field('Winner','<select data-ca="match-winner" data-index="'+index+'"><option value="">Choose winner</option><option value="home" '+(m.winner==='home'?'selected':'')+'>Home</option><option value="away" '+(m.winner==='away'?'selected':'')+'>Away</option></select>'):'')+'</div><div class="ca-actions">'+button('match-up','Play earlier ↑','secondary','data-index="'+index+'"')+button('match-down','Play later ↓','secondary','data-index="'+index+'"')+button('remove-match','Remove match','danger','data-index="'+index+'"')+'</div></details></article>';
+    return '<article class="ca-rubber ca-quick-rubber" data-ca-match-id="'+esc(m.id)+'"><header><b>'+(m.type==='Singles'?'S':'D')+m.position+' · '+m.type+'</b><span class="ca-match-state '+(m.status==='Completed'?'complete':'')+'" data-index="'+index+'">'+(m.status==='Completed'?'✓ Complete':esc(m.status))+'</span>'+button('edit-this-match','Swap player','secondary','data-index="'+index+'"')+'</header><div class="ca-score-names"><b>'+esc(name('home'))+'</b><span>v</span><b>'+esc(name('away'))+'</b></div><div class="ca-set-grid ca-quick-sets">'+sets+'</div>'+(length===1?'<div class="ca-score-presets"><div class="ca-winner-choice">'+button('quick-winner','Home won',winner==='home'?'primary':'secondary','data-index="'+index+'" data-side="home"')+button('quick-winner','Away won',winner==='away'?'primary':'secondary','data-index="'+index+'" data-side="away"')+'</div><div class="ca-preset-buttons">'+scores.map(([h,a])=>button('quick-score',h+'–'+a,'secondary','data-index="'+index+'" data-home="'+h+'" data-away="'+a+'"')).join('')+'</div></div>':'')+'<details class="ca-match-details"><summary>Edit players, pairs, order or special status</summary><div class="ca-match-sides">'+roster('home')+'<span class="ca-vs">v</span>'+roster('away')+'</div><div class="ca-grid">'+field('Match status','<select data-ca="match-status" data-index="'+index+'">'+['Scheduled','Completed','Unfinished','Retired','Forfeit','No Contest'].map(x=>'<option '+(m.status===x?'selected':'')+'>'+x+'</option>').join('')+'</select>')+field('Position',input('match-position',m.position,'number','min="1" data-index="'+index+'"'))+(['Forfeit','Retired'].includes(m.status)?field('Winner','<select data-ca="match-winner" data-index="'+index+'"><option value="">Choose winner</option><option value="home" '+(m.winner==='home'?'selected':'')+'>Home</option><option value="away" '+(m.winner==='away'?'selected':'')+'>Away</option></select>'):'')+'</div><div class="ca-actions">'+button('match-up','Play earlier ↑','secondary','data-index="'+index+'"')+button('match-down','Play later ↓','secondary','data-index="'+index+'"')+button('remove-match','Remove match','danger','data-index="'+index+'"')+'</div></details></article>';
   }
-  function hasScores(f){return (f.rubbers||[]).some(m=>m.sets.some(x=>x.h!==''||x.a!=='')||['Retired','Forfeit'].includes(m.status))}
-  function syncSquads(f){if(hasScores(f))return;try{f.rubbers=T.generate(draft,f)}catch(e){f.rubbers=[]}T.finish(f,draft)}
+  function hasScores(f){return T.hasEnteredResults(f)}
+  function syncSquads(f){
+    if(hasScores(f)){T.fillMissing(draft,f);return}
+    try{f.rubbers=T.generate(draft,f)}catch(e){f.rubbers=[]}
+    T.finish(f,draft);
+  }
   function refreshScores(){const f=fixture();if(!f)return;T.finish(f,draft);const status=$('[data-ca="fixture-status"]');if(status)status.value=f.status;document.querySelectorAll('.ca-match-state').forEach(el=>{const m=f.rubbers[Number(el.dataset.index)];if(m){el.textContent=m.status==='Completed'?'✓ Complete':m.status;el.classList.toggle('complete',m.status==='Completed')}})}
 
   function importExample(withMatches=false){
@@ -104,10 +186,10 @@
     if(key==='squad-player'){const selected=new Set(f[el.dataset.side+'Lineup']||[]);if(value){const other=el.dataset.side==='home'?'away':'home';if((f[other+'Lineup']||[]).includes(el.dataset.id)){el.checked=false;message('This player is already selected for the other side.',true);return}selected.add(el.dataset.id)}else selected.delete(el.dataset.id);T.lineup(draft,f,el.dataset.side,[...selected]);syncSquads(f);mark();render();return;}
     if(key==='pair-player'){
       const side=el.dataset.side,position=Number(el.dataset.pair),pairs=T.doublesPairs(draft,f,side),pair=pairs[position],match=f.rubbers.find(m=>m.type==='Doubles'&&Number(m.position)===position+1);
-      if(value&&pair.length>=2){el.checked=false;message('Untick one player in D'+(position+1)+' before choosing a new partner.',true);return;}
+      if(value&&pair.length>=2){el.checked=false;message('Untick a real player in D'+(position+1)+' before choosing another partner.',true);return;}
       if(match&&hasScores({rubbers:[match]})&&!confirm('Changing this pair clears the D'+(position+1)+' score. Other match scores stay unchanged. Continue?')){el.checked=!value;return;}
       pairs[position]=value?[...pair,el.dataset.id]:pair.filter(id=>id!==el.dataset.id);f[side+'DoublesPairs']=pairs;
-      if(match){match[side]=Array.from({length:2},(_,i)=>pairs[position][i]||'');if(match[side+'RegisteredTeams'])match[side+'RegisteredTeams']=match[side].map(id=>draft.players.find(p=>p.id===id)?.teamId||'');match[side+'Emergencies']=match[side].map(id=>{const p=draft.players.find(p=>p.id===id);return !!p&&(p.emergency||p.teamId!==f[side+'TeamId'])});match.sets=[{h:'',a:'',mt:false}];match.status='Scheduled';match.winner='';delete match.quickWinner;if(f.status==='Completed')f.status='Scheduled';T.finish(f,draft);}
+      if(match){match[side]=Array.from({length:2},(_,i)=>pairs[position][i]||M.NO_PLAYER);if(match[side+'RegisteredTeams'])match[side+'RegisteredTeams']=match[side].map(id=>draft.players.find(p=>p.id===id)?.teamId||'');match[side+'Emergencies']=match[side].map(id=>{const p=draft.players.find(p=>p.id===id);return !!p&&(p.emergency||p.teamId!==f[side+'TeamId'])});match.sets=[{h:'',a:'',mt:false}];const noHome=match.home.includes(M.NO_PLAYER),noAway=match.away.includes(M.NO_PLAYER);match.status=noHome&&noAway?'No Contest':noHome||noAway?'Forfeit':'Scheduled';match.winner=noHome&&noAway?'':noHome?'away':noAway?'home':'';delete match.quickWinner;if(f.status==='Completed')f.status='Scheduled';T.finish(f,draft);}
       else if(!hasScores(f))syncSquads(f);
       else {const home=T.doublesPairs(draft,f,'home')[position],away=T.doublesPairs(draft,f,'away')[position];if(home.length===2&&away.length===2)f.rubbers.push(T.makeMatch(draft,f,'Doubles',position+1,home,away));}
       mark();render();return;
@@ -163,7 +245,7 @@
       if(a==='preview-round-import'){captureImport();importPreview=T.parse(importText,draft,{number:importNumber,date:importDate});renderImport();return}
       if(a==='apply-round-import'){if(!importPreview)throw Error('Preview the import first.');const numbers=[...document.querySelectorAll('[data-import-round]:checked')].map(x=>Number(x.dataset.importRound)),replace=!!$('#caReplaceRounds')?.checked,old=draft.rounds.filter(r=>numbers.includes(Number(r.number)));if(replace&&old.length&&!confirm('Replace '+old.length+' existing round(s), including their scorecards?'))return;const next=T.merge(draft,importPreview,{numbers,replace});draft=next;roundId=draft.rounds.find(r=>Number(r.number)===numbers[0])?.id;fixtureId=round()?.fixtures[0]?.id||null;importPreview=null;mark();render();message('Fixtures added to your draft. Save changes to keep them on this device.');return}
       if(a==='new'){if(dirty&&!confirm('Discard unsaved changes?'))return;draft=newSection();rosterText='';rosterPreview=null;tab='setup';roundId=fixtureId=null;dirty=true;render();return}
-      if(a==='save'){save();return}if(a==='view'){const view=captureEditorView();if(dirty)save();editorViews.set(draft.id,view);root.dispatchEvent(new CustomEvent('brta-custom-section-open',{detail:draft.id}));close();return}
+      if(a==='save'){save();return}if(a==='view'){if(dirty)save();close();return}
 
       if(a==='import'){$('#caImport').click();return}if(a==='export-all'){download(read(),'my-brta-sections.json');return}if(a==='export'){M.validate(draft);download([draft],(draft.name.replace(/[^a-z0-9]+/gi,'-')||'section')+'.json');return}
       if(a==='delete'){if(!confirm('Delete '+draft.name+' from this browser? Export a backup first if you want to keep it.'))return;persist(read().filter(s=>s.id!==draft.id));draft=null;dirty=false;render();return}

@@ -127,8 +127,27 @@ function showSchedule(){
  }
  o.classList.remove('hidden');root.BRTAOverlays?.lock?.(o);o.querySelector('.close-btn').focus();
  const stamp=iso=>{if(!iso)return 'Not recorded';const d=new Date(iso);return Number.isFinite(d.getTime())?new Intl.DateTimeFormat('en-AU',{timeZone:'Australia/Melbourne',dateStyle:'medium',timeStyle:'short'}).format(d):'Not recorded';};
- const detail=(x,latest)=>{if(!x)return '<p>No discovery has been recorded by the new tracker yet.</p>';const found=latest?!!x.new_results:true,n=Number(x.changed_sections?.length||0);return '<p><b>'+esc(stamp(x.checked_at_utc))+'</b></p><p>'+esc(found?'New or corrected official results were detected.':'No new results were detected.')+'</p>'+(found?'<p>'+esc(n?n+' section'+(n===1?'':'s')+' changed: '+x.changed_sections.join(', '):'Results changed; section-level details unavailable.')+'</p>':'')+(x.validation&&latest?'<p>Source validation: '+esc(x.validation)+'</p>':'')};
- fetch('data/current/last_check.json?stamp='+Date.now(),{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('Check data unavailable.');return r.json()}).then(data=>{if(!o.isConnected||o.classList.contains('hidden'))return;o.querySelector('#check853Latest').innerHTML=detail(data,true);o.querySelector('#check853Positive').innerHTML=detail(data.last_positive,false)}).catch(()=>{if(o.isConnected){o.querySelector('#check853Latest').textContent='The latest check could not be loaded.';o.querySelector('#check853Positive').textContent='The historical discovery log is unavailable.';}});
+ const humanLabel=label=>String(label||'').replace(/\bMens\s+S\/D\b/i,"Men's singles & doubles").replace(/\bWomens\s+S\/D\b/i,"Women's singles & doubles").replace(/\bS\/D\b/gi,'singles & doubles');
+ const sectionGroups=(codes,catalog)=>{
+  const known=[...(root.DATA?.catalog||[]),...(catalog?.sections||[])],meta=new Map(known.map(s=>[s.section_code,s]));
+  const types={AP:'Saturday PM',HA:'Thursday AM',AA:'Saturday AM',UA:'Sunday AM',TA:'Tuesday AM',TN:'Tuesday Night',WA:'Wednesday AM'};
+  const groups=new Map();
+  for(const code of codes){
+   const record=meta.get(code),competition=record?.competition_label||types[String(code).slice(0,2)]||'Other competition';
+   const name=record?.section_label||('Section '+(Number(String(code).slice(2))||'name unavailable'));
+   if(!groups.has(competition))groups.set(competition,[]);
+   groups.get(competition).push(humanLabel(name));
+  }
+  return '<ul class="check853-friendly-list">'+[...groups].map(([comp,items])=>'<li><b>'+esc(comp)+'</b><span>'+items.map(esc).join(', ')+'</span></li>').join('')+'</ul>';
+ };
+ const detail=(x,latest,catalog)=>{if(!x)return '<p>No discovery has been recorded by the new tracker yet.</p>';const found=latest?!!x.new_results:true,n=Number(x.changed_sections?.length||0);return '<p><b>'+esc(stamp(x.checked_at_utc))+'</b></p><p>'+esc(found?'New or corrected official results were detected.':'No new results were detected.')+'</p>'+(found?'<p>'+esc(n?n+' section'+(n===1?'':'s')+' updated:':'Results changed; section names were not recorded.')+'</p>'+(n?sectionGroups(x.changed_sections,catalog):''):'')+(x.validation&&latest?'<p>Source validation: '+esc(x.validation==='source discrepancies'?'Some source results need reviewing.':x.validation)+'</p>':'')};
+ const json=path=>fetch(path+'?stamp='+Date.now(),{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('Check data unavailable.');return r.json()});
+ Promise.all([json('data/current/last_check.json'),json('data/current/catalog.json').catch(()=>null)]).then(([data,catalog])=>{
+  if(!o.isConnected||o.classList.contains('hidden'))return;
+  o.querySelector('#check853Latest').innerHTML=detail(data,true,catalog);
+  o.querySelector('#check853Positive').innerHTML=detail(data.last_positive,false,catalog);
+ }).catch(()=>{if(o.isConnected){o.querySelector('#check853Latest').textContent='The latest check could not be loaded.';o.querySelector('#check853Positive').textContent='The historical discovery log is unavailable.';}});
+
 }
 document.addEventListener('click',e=>{if(e.target.closest?.('#export853Open,#exportSectionBtn')){e.preventDefault();open()}else if(e.target.closest?.('[data-check-schedule]')){e.preventDefault();showSchedule()}});
 const observer=new MutationObserver(()=>{if($('#defaultSection')&&!$('#export853SettingsRow'))bind()});

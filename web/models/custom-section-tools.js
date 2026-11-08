@@ -18,9 +18,61 @@
     const ids=f[side+'Lineup']||[],chosen=f[side+'DoublesPairs'];
     return Array.from({length:Number(section.doublesSlots)},(_,i)=>{
       const existing=(f.rubbers||[]).find(m=>m.type==='Doubles'&&Number(m.position)===i+1);
-      const previous=existing?.[side],pair=chosen?.[i]??(previous?.length===2&&previous.every(id=>id===M.NO_PLAYER||ids.includes(id))?previous:null)??(ids.length>=2?[ids[2*i%ids.length],ids[(2*i+1)%ids.length]]:[]);
-      return pair.filter(id=>id===M.NO_PLAYER||ids.includes(id)).slice(0,2);
+      const previous=existing?.[side],validPrevious=previous?.length===2&&previous.every(id=>id===M.NO_PLAYER||ids.includes(id));
+      const defaultPair=ids.length>=2*Number(section.doublesSlots)
+        ?[ids[2*i%ids.length],ids[(2*i+1)%ids.length]]
+        :[ids[2*i],ids[2*i+1]].filter(Boolean);
+      // An auto-filled No Player slot must not stop a newly selected squad member joining the pair.
+      const pair=chosen?.[i]??(validPrevious&&!previous.includes(M.NO_PLAYER)?previous:defaultPair);
+      // No Player fills an unoccupied match slot; it is NEVER a checked player in the pairing editor.
+      return [...new Set(pair.filter(id=>id!==M.NO_PLAYER&&ids.includes(id)))].slice(0,2);
     });
+  }
+  function hasEnteredResults(f){
+    return (f.rubbers||[]).some(m=>{
+      if((m.sets||[]).some(s=>s.h!==''&&s.h!=null||s.a!==''&&s.a!=null))return true;
+      if(m.status==='Retired')return true;
+      // Generated short-handed fixtures must stay editable as the squad fills up.
+      if(['Forfeit','No Contest'].includes(m.status)){
+        const absent=(m.home||[]).includes(M.NO_PLAYER)||(m.away||[]).includes(M.NO_PLAYER);
+        return !absent||f.autoStatus===false;
+      }
+      return false;
+    });
+  }
+  function fillMissing(section,f){
+    if(!(f.rubbers||[]).length)return 0;
+    let fresh;
+    try{fresh=generate(section,f)}catch{return 0}
+    let changes=0;
+    for(const m of f.rubbers){
+      if((m.sets||[]).some(s=>s.h!==''&&s.h!=null||s.a!==''&&s.a!=null)||m.status==='Retired')continue;
+      if(f.autoStatus===false&&['Forfeit','No Contest'].includes(m.status))continue;
+      const wanted=fresh.find(x=>x.type===m.type&&Number(x.position)===Number(m.position));
+      if(!wanted)continue;
+      let changed=false;
+      for(const side of ['home','away']){
+        const current=m[side]||[],replacement=wanted[side]||[];
+        if(!current.includes(M.NO_PLAYER))continue;
+        const used=new Set(current.filter(id=>id!==M.NO_PLAYER));
+        const available=replacement.filter(id=>id!==M.NO_PLAYER&&!used.has(id));
+        const next=current.map(id=>id===M.NO_PLAYER&&available.length?available.shift():id);
+        if(next.some((id,i)=>id!==current[i])){
+          m[side]=next;
+          m[side+'Emergencies']=next.map(id=>{const p=section.players.find(p=>p.id===id);return !!p&&(p.emergency||p.teamId!==f[side+'TeamId'])});
+          if(m[side+'RegisteredTeams'])m[side+'RegisteredTeams']=next.map(id=>section.players.find(p=>p.id===id)?.teamId||'');
+          changed=true;
+        }
+      }
+      if(changed){
+        const absentHome=m.home.includes(M.NO_PLAYER),absentAway=m.away.includes(M.NO_PLAYER);
+        m.status=absentHome&&absentAway?'No Contest':absentHome||absentAway?'Forfeit':'Scheduled';
+        m.winner=absentHome&&absentAway?'':absentHome?'away':absentAway?'home':'';
+        m.sets=[{h:'',a:'',mt:false}];delete m.quickWinner;changes++;
+      }
+    }
+    if(changes)finish(f,section);
+    return changes;
   }
   function generate(section,f){
     const sentinel=M.NO_PLAYER,h=f.homeLineup||[],a=f.awayLineup||[],hp=doublesPairs(section,f,'home'),ap=doublesPairs(section,f,'away'),matches=[];
@@ -30,7 +82,7 @@
     const pairFor=(side,i,existing)=>{
       const ids=f[side+'Lineup']||[];
       const chosen=f[side+'DoublesPairs']?.[i];
-      let pair=chosen||existing[i]||[];
+      let pair=existing[i]||[];
       if(!chosen&&ids.length<2*Number(section.doublesSlots)){
         pair=[ids[2*i],ids[2*i+1]].filter(Boolean);
       }
@@ -101,5 +153,5 @@
     for(const round of next.rounds)for(const f of round.fixtures)for(const m of f.rubbers)for(const side of ['home','away'])if((m[side]||[]).some(id=>prior.get(id)?.teamId!==current.get(id)?.teamId))m[side+'RegisteredTeams']=(m[side]||[]).map((id,i)=>m[side+'RegisteredTeams']?.[i]??prior.get(id)?.teamId??'');
     M.validate(next);return {section:next,summary};
   }
-  const api={parse,merge,finish,lineup,generate,makeMatch,scoreSets,date,plusDays,doublesPairs,rosterPlayers,rosterText,replaceRoster,playerReferences};root.CustomSectionTools=api;if(typeof module!=='undefined')module.exports=api;
+  const api={parse,merge,finish,lineup,generate,makeMatch,scoreSets,date,plusDays,doublesPairs,hasEnteredResults,fillMissing,rosterPlayers,rosterText,replaceRoster,playerReferences};root.CustomSectionTools=api;if(typeof module!=='undefined')module.exports=api;
 })(typeof window!=='undefined'?window:globalThis);

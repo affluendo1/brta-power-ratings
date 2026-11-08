@@ -67,9 +67,9 @@ function toBackup(source,now=new Date().toISOString()){
  const fmt=rawFormat,evidence=source.teamOrderEvidence||{};
  const teams=[],ids=new Map(),roster=[],named=new Map(),orders=new Map(),identityKey=(name,tid)=>String(tid||'unassigned')+'|'+clean(name).toLowerCase();
  const uniqueDisplay=(original,tid)=>{
-  let display=original,n=1;
+  const safe=String(original).replace(/\[(?:Unnamed|Unlisted)\s+player[^\]]*\]/gi,'Unidentified player').replace(/\bTROLS\s+No[\s-]?Code\b/gi,'Unidentified player');let display=safe,n=1;
   const club=teams.find(t=>t.id===tid)?.name||'Unassigned';
-  while(roster.some(p=>p.name.toLowerCase()===display.toLowerCase()))display=original+' ('+club+(n++>1?' '+(n-1):'')+')';
+  while(roster.some(p=>p.name.toLowerCase()===display.toLowerCase()))display=safe+' ('+club+(n++>1?' '+(n-1):'')+')';
   return display;
  };
  const teamId=name=>{

@@ -1,10 +1,28 @@
 # BRTA Power Ratings
 
-**Current version: 8.4.1.1**
+**Current version: 8.5.4.1**
 
-The default model is **RM4.1 Ensemble** (experimental), with **RM4a**, **RM4b**,
-**RM3**, **RM3b** and **Automatic** available in Settings. Existing explicit model preferences
-are retained. Display scales are automatic and cannot be changed in Settings:
+The default player rating model is **4.2 Melody**, while **4.2 Orchestra** handles predictions.
+Other available models include **4.2 Foundation**, **RM4.2**, **RM4.1 Ensemble**, **RM4a**,
+**RM4b**, **RM3** and **RM3b**. Existing valid model preferences are retained.
+
+### Latest updates
+
+- **8.5.4.1:** Match scorecards now use real, flat three-column tables with subtle win/loss
+  shading, bigger scores and plain, theme-coloured player names. Fixed missing-player
+  selections, widened the round list, humanised results checks and unnamed-player labels,
+  and repaired the return-to-editor navigation. Updated regression checks.
+- **8.5.4:** Custom Competitions moved into the main header. Improved result editing,
+  short-handed matches, no contests, custom Orchestra ratings, exports and results-check
+  reporting.
+- **8.5.3:** Added section export options and more flexible custom competition tools.
+
+[Open the live site](https://affluendo1.github.io/brta-power-ratings/)
+
+### Historical model notes (8.4.x)
+
+The following fixed display scales document the earlier 8.4.1.1 model policy;
+they are **not** the current default-model list:
 
 | Models | Centre | Display points per fitted strength | Game-probability scale |
 |---|---:|---:|---:|
@@ -34,8 +52,8 @@ missing published points and ambiguous ties can limit reconstructed comparisons.
 
 **Automatic** is an optional fixed policy: RM3 powers ratings, history and Power
 summaries; RM4.1 Ensemble powers live forecasts, score estimates and simulations.
-It does not select a model per player or in response to an outcome. The default
-remains RM4.1 Ensemble. Neither rating spread nor a larger version number proves
+It does not select a model per player or in response to an outcome. In 8.4.1,
+RM4.1 Ensemble was the default. Neither rating spread nor a larger version number proves
 forecast superiority. See the methodology for the 8.4.1 chronological experiment.
 
 Simulations use only remaining scheduled fixtures in the selected round and never
@@ -110,11 +128,11 @@ size and changes; add a short title only for a substantial update. Bump the data
 in `index.html` and `sw.js`, plus the service-worker cache version. Result-sync
 commits do not change the website version.
 
-### Custom Section Creator
+### Custom Competitions
 
-Turn on **Settings → Show Extras**, then open **Custom Section Creator** above
-the Extras toggle. No password is required. Sections are stored locally in your
-browser; saving them does not publish them to the official site.
+Open **Settings → Custom Competitions** to make your own section. No Extras switch or password is
+required. Competitions are stored locally in your browser; saving them does not
+publish them to the official site. Editable JSON backups can be imported or exported.
 
 Create a section and choose its season, match counts, scoring format, and separate
 singles/doubles set lengths. Add teams and named players in their registered order.
@@ -150,15 +168,18 @@ created automatically once both sides are ready. Existing scores are preserved
 unless you explicitly rebuild the matches. You can then edit every singles matchup, doubles pairing,
 emergency marker, match position, playing order, score, and status. Set scores
 are entered from the home team's perspective. Deciding match tiebreak points
-do not count as games. Forfeits and unfinished/retired matches do not enter the
-rating model. Quick-score buttons fill common one-set results from either side.
+do not count as games. Forfeits, No Contest rubbers and unfinished/retired matches do not enter the
+rating model. Use **No Player** for a missing participant; when both sides are
+absent, record **No Contest** with no games or player-rating evidence. Quick-score buttons fill common one-set results from either side.
 Typing scores automatically completes finished matches and fixtures unless you
 turn off the automatic-status checkbox. Tab or Enter moves between score boxes.
 Optional home/away competition-point overrides handle manual
 adjustments without changing the scorecard or player ratings.
 
-**Section setup → Rating calculation model** chooses RM3 (default) or RM3b for
-that custom section. V3B retains V3's logistic scale (0.75), 365-day half-life,
+**Section setup → Rating calculation model** offers RM3, RM3b and RM4.2, plus
+4.2 Melody and 4.2 Foundation on supported scoring formats. Custom Melody and
+Foundation use local match evidence without official historical priors.
+V3B retains V3's logistic scale (0.75), 365-day half-life,
 L2 penalty (5), and displayed power scale (1500 + 600θ). Its composite likelihood
 adds evidence in game-equivalent units: each normal game has weight 1, each set
 win 2, and each match win 4. A deciding match tiebreak contributes 2 units total,
@@ -171,7 +192,7 @@ tiebreak also counts as a set won. These are explicit initial model weights,
 not tuned against a historical validation set. The components are correlated;
 the Hessian uncertainty is an approximation for this composite objective.
 
-Both models use only completed played matches. Singles, doubles pairs,
+RM3 and RM3b use only completed played matches. Singles, doubles pairs,
 individual doubles, team power and all round snapshots are refitted with the
 selected model after saving. Match counts, actual game totals, game percentages,
 results and competition points stay unchanged. Match-tiebreak points contribute
