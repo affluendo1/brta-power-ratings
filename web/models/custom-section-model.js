@@ -78,7 +78,7 @@
           const needed=r.type==='Singles'?1:2;
           for(const side of ['home','away']){
             const ids=r[side]||[];
-            if(ids.length!==needed||ids.some(id=>id!==NO_PLAYER&&!players.has(id))||new Set(ids).size!==needed){if(r.status!=='Scheduled')fail('Select '+needed+' different player'+(needed===1?'':'s')+' on each side of every played match.');continue}
+            if(ids.length!==needed||ids.some(id=>id!==NO_PLAYER&&!players.has(id))||new Set(ids.filter(id=>id!==NO_PLAYER)).size!==ids.filter(id=>id!==NO_PLAYER).length){if(r.status!=='Scheduled')fail('Select '+needed+' different player'+(needed===1?'':'s')+' on each side of every played match.');continue}
             const registered=r[side+'RegisteredTeams'];if(registered!=null&&(!Array.isArray(registered)||registered.length!==needed||registered.some(id=>id&&!teams.has(id))))fail('Invalid historical team registration.');ids.forEach((id,i)=>{if(id===NO_PLAYER)return;const p=players.get(id),team=registered?.[i]??p.teamId;if(team!==(side==='home'?f.homeTeamId:f.awayTeamId)&&!r[side+'Emergencies']?.[i])fail(p.name+' is outside this team; mark them as an emergency.');});
           }
           if((r.home||[]).some(id=>id!==NO_PLAYER&&(r.away||[]).includes(id)))fail('A player cannot play against themselves.');

@@ -36,6 +36,17 @@ assert.equal(singlesForfeit.home[0],Model.NO_PLAYER);
 assert.equal(singlesForfeit.away[0],'p9');
 assert.equal(singlesForfeit.status,'Forfeit');
 assert.equal(doublesForfeit.status,'Forfeit');
+const absent=clone(s),absentFixture=absent.rounds[0].fixtures[0];
+absentFixture.homeLineup=[];absentFixture.rubbers=Tools.generate(absent,absentFixture);
+assert.deepEqual(absentFixture.rubbers.find(m=>m.type==='Doubles').home,[Model.NO_PLAYER,Model.NO_PLAYER],
+ 'An entirely absent doubles team is still represented as a forfeit.');
+assert(absentFixture.rubbers.every(m=>m.status==='Forfeit'));
+Tools.finish(absentFixture,absent);
+Model.validate(absent);
+const absentData=Model.build(absent);
+assert.equal(absentData.singlesMatches.length,0,'Absent players cannot create rating evidence');
+assert(absentData.results[0].fixtures[0].awayGames>0,'Forfeit games still count in the tie');
+
 assert(doublesForfeit.home.includes(Model.NO_PLAYER));
 assert.equal(Model.score(singlesForfeit,s).score,'0-6 Forfeit');
 assert.equal(Model.score(doublesForfeit,s).winner,'away');
