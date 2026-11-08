@@ -87,16 +87,16 @@ function toBackup(source,now=new Date().toISOString()){
    const key=name.toLowerCase();
    if(named.has(key))continue;
    const order=index+1;const id='player-'+(roster.length+1);
-   const row={id,name,teamId:tid,order,emergency:!!p.emergencyOnly};
+   const row={id,name,teamId:tid,order,emergency:!!p.emergencyOnly,noCode:/^(?:\[Unnamed |\[Unlisted |No Player\b|TROLS\s*No.?Code\b|No.?Code\b)/i.test(name)};
    roster.push(row);named.set(key,row);
   }
  }
- const register=(name,tid)=>{
+ const register=(name,tid,scope='')=>{
   name=clean(name);if(!name)return '';
   if(name.includes('/'))throw Error('Cannot transfer a player name containing a slash: '+name);
-  const key=name.toLowerCase();let p=named.get(key);
+  const noCode=/^(?:\[Unnamed |\[Unlisted |No Player\b|TROLS\s*No.?Code\b|No.?Code\b)/i.test(name);if(noCode&&scope&&!name.startsWith('['))name=name+' · '+scope;const key=name.toLowerCase();let p=named.get(key);
   if(!p){const order=orders.get(tid)||roster.filter(p=>p.teamId===tid).length;orders.set(tid,order+1);
-   p={id:'player-'+(roster.length+1),name,teamId:tid,order:order+1,emergency:!tid};
+   p={id:'player-'+(roster.length+1),name,teamId:tid,order:order+1,emergency:!tid,noCode};
    roster.push(p);named.set(key,p);}
   return p.id;
  };
@@ -122,8 +122,8 @@ function toBackup(source,now=new Date().toISOString()){
   const type=m.type==='Doubles'?'Doubles':'Singles',size=type==='Doubles'?2:1;
   const homeNames=players(m.home),awayNames=players(m.away);
   if(homeNames.length!==size||awayNames.length!==size)return null;
-  const home=homeNames.map(name=>register(name,f.homeTeamId));
-  const away=awayNames.map(name=>register(name,f.awayTeamId));
+  const home=homeNames.map(name=>register(name,f.homeTeamId,f.sourceFixtureId||f.id));
+  const away=awayNames.map(name=>register(name,f.awayTeamId,f.sourceFixtureId||f.id));
   const hs=sets(m.score),status=clean(m.status)||'Completed';
   let stage=['Completed','Unfinished','Retired','Forfeit','Scheduled'].includes(status)?status:'Completed';
   if(!hs.length&&stage==='Completed')stage='Scheduled';

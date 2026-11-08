@@ -57,6 +57,10 @@ assert(built.standings.some(x=>x.points>0));
 const both=clone(s);both.rounds[0].fixtures[0].rubbers[3].away=[Model.NO_PLAYER];
 assert.throws(()=>Model.validate(both),/Both sides cannot forfeit/);
 
+const unknown=sample();unknown.players.find(p=>p.id==='p1').noCode=true;
+const noCodeData=Model.build(unknown),regularData=Model.build(sample());
+assert.equal(noCodeData.results[0].fixtures[0].homeGames,regularData.results[0].fixtures[0].homeGames);
+assert(!noCodeData.singlesMatches.some(x=>x[2]==='Alice'),'Unidentified TROLS-style names must not enter ratings');
 const historical=clone(s);
 historical.ratingModel='V3';
 Model.validate(historical);
