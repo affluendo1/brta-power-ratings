@@ -1,0 +1,64 @@
+const assert=require('node:assert/strict');
+const Model=require('../web/models/custom-section-model.js');
+const Tools=require('../web/models/custom-section-tools.js');
+const Exports=require('../web/models/export-853.js');
+const {sample}=require('./test_custom_sections.js');
+const clone=x=>JSON.parse(JSON.stringify(x));
+const src=sample();
+const exported=Exports.toBackup(Model.build(src),'2026-11-08T06:00:00.000Z');
+assert.equal(exported.format,'brta-custom-sections');
+assert.equal(exported.version,1);
+assert.equal(exported.sections.length,1);
+const imported=exported.sections[0];
+Model.validate(imported);
+assert(imported.id.startsWith('local-'));
+assert.equal(imported.ratingModel,'RM4.2');
+assert.equal(imported.rounds.length,src.rounds.length);
+assert.equal(imported.teams.length,2);
+assert(Exports.csv(Model.build(src)).includes('record_type'));
+assert(!Exports.csv(Model.build(src)).includes('match_id'));
+assert(Exports.csv(Model.build(src),true).includes('"match_id","fixture_id"'));
+assert(Exports.markdown(Model.build(src)).includes('Round 1'));
+
+const s=clone(src);
+s.ratingModel='RM4.2';
+s.singlesSlots=4;s.doublesSlots=2;
+s.players.push({id:'p6',name:'Chris',teamId:'a',order:3},{id:'p7',name:'David',teamId:'a',order:4},
+ {id:'p8',name:'Eve',teamId:'b',order:3},{id:'p9',name:'Frank',teamId:'b',order:4});
+s.rounds=[{id:'round-1',number:1,date:'2026-10-18',fixtures:[{id:'f-1',status:'Scheduled',homeTeamId:'a',awayTeamId:'b',
+ homeLineup:['p1','p2','p6'],awayLineup:['p3','p4','p8','p9'],rubbers:[],autoStatus:true}]}];
+const f=s.rounds[0].fixtures[0];
+f.rubbers=Tools.generate(s,f);
+assert.equal(f.rubbers.length,6);
+const singlesForfeit=f.rubbers.find(r=>r.type==='Singles'&&r.position===4);
+const doublesForfeit=f.rubbers.find(r=>r.type==='Doubles'&&r.position===2);
+assert.equal(singlesForfeit.home[0],Model.NO_PLAYER);
+assert.equal(singlesForfeit.away[0],'p9');
+assert.equal(singlesForfeit.status,'Forfeit');
+assert.equal(doublesForfeit.status,'Forfeit');
+assert(doublesForfeit.home.includes(Model.NO_PLAYER));
+assert.equal(Model.score(singlesForfeit,s).score,'0-6 Forfeit');
+assert.equal(Model.score(doublesForfeit,s).winner,'away');
+for(const m of f.rubbers.filter(m=>m.status==='Scheduled')){
+ m.sets=[{h:6,a:2,mt:false}];m.status='Completed';
+}
+Tools.finish(f,s);
+assert.equal(f.status,'Completed');
+assert.equal(Model.validate(s),s);
+const built=Model.build(s);
+const tie=built.results[0].fixtures[0];
+assert.equal(tie.rubbers.length,6);
+assert.equal(tie.awayRubbers,2);
+assert(tie.awayGames>=12);
+assert.equal(built.singlesMatches.length,3,'Forfeited singles must not affect player ratings');
+assert.equal(built.singles.some(x=>x.player==='No Player'),false);
+assert(tie.rubbers.some(x=>x.status==='Forfeit'&&x.home==='No Player'));
+assert(built.standings.some(x=>x.points>0));
+const both=clone(s);both.rounds[0].fixtures[0].rubbers[3].away=[Model.NO_PLAYER];
+assert.throws(()=>Model.validate(both),/Both sides cannot forfeit/);
+
+const historical=clone(s);
+historical.ratingModel='V3';
+Model.validate(historical);
+assert.equal(Model.build(historical).results[0].fixtures[0].homeGames,tie.homeGames,'Legacy and current scoring must be identical');
+console.log('8.5.3 backups, CSV IDs, short-handed squads, forfeits, rubbers, games and rating exclusion: passed');

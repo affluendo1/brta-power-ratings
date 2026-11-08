@@ -7,7 +7,7 @@ if(!root.document)return;
 const document=root.document;
 const $=selector=>document.querySelector(selector);
 function updateCheck(){
- const card=$('#statusStrip > div:first-child');
+ const card=$('#statusStrip > [data-check-schedule]');
  const original=card?.querySelector('span');
  if(!card||!original)return;
  const iso=(typeof D!=='undefined'&&D?.sync?.checkedAt)||null;

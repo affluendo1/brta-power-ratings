@@ -1,0 +1,52 @@
+/* 8.5.3 · export chooser, clearer custom-section setup and sticky rounds */
+.export853-overlay{z-index:130}
+.export853-sheet{width:min(690px,calc(100vw - 30px));max-height:min(88vh,850px);overflow:auto;padding:27px 30px 24px;position:relative}
+.export853-sheet .close-btn,.schedule853-sheet .close-btn{position:absolute;right:16px;top:16px;z-index:3}
+.export853-sheet .overlay-title{padding-right:40px}
+.export853-choices{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px;margin:20px 0}
+.export853-choices button{display:grid;gap:7px;text-align:left;padding:16px;cursor:pointer;color:inherit;border:1px solid var(--border-color);border-radius:12px;background:var(--surface-color,var(--surface-raised));font:inherit;transition:background .17s,border-color .17s,transform .17s}
+.export853-choices button:hover:not(:disabled){border-color:var(--primary);background:color-mix(in srgb,var(--primary) 7%,var(--surface-raised));transform:translateY(-1px)}
+.export853-choices button:focus-visible{outline:3px solid var(--primary);outline-offset:2px}
+.export853-choices button:disabled{opacity:.5;cursor:wait}
+.export853-choices b{font-size:14px}
+.export853-choices span{font-size:12px;line-height:1.45;color:var(--muted-color)}
+.export853-settings-row{border-top:1px solid var(--border-color);padding-top:14px;margin-top:16px}
+.export853-settings-row .settings-help{margin:0 0 10px}
+#export853Status{font-size:12px;line-height:1.5;color:var(--muted-color)}
+.schedule853-overlay{z-index:131}
+.schedule853-sheet{position:relative;width:min(490px,calc(100vw - 30px));padding:28px 32px 28px;line-height:1.6}
+.schedule853-sheet .overlay-title{padding-right:36px}
+.schedule853-sheet p{margin:12px 0;font-size:13px}
+#logoSecretOverlay .logo-secret-sheet{position:relative;padding:28px 66px 30px 28px!important}
+#logoSecretOverlay .logo-secret-sheet .close-btn{position:absolute!important;right:14px!important;top:14px!important;margin:0!important;transform:none!important;z-index:10}
+#logoSecretOverlay .logo-secret-sheet .overlay-title{margin-right:0;max-width:100%}
+#statusStrip .status-history-853{position:relative;cursor:pointer;border:1px solid var(--primary);background:color-mix(in srgb,var(--primary) 8%,var(--surface-raised));box-shadow:0 2px 8px #00000010;transition:transform .16s,background .16s,box-shadow .16s}
+#statusStrip .status-history-853:after{content:'›';font-size:22px;position:absolute;right:14px;top:50%;transform:translateY(-50%);opacity:.75}
+#statusStrip .status-history-853:hover{background:color-mix(in srgb,var(--primary) 14%,var(--surface-raised));box-shadow:0 5px 17px #00000019;transform:translateY(-1px)}
+#statusStrip .status-check-853{cursor:pointer;border:1px solid transparent;background:transparent;text-align:left;transition:border-color .15s,background .15s}
+#statusStrip .status-check-853:hover{border-color:var(--border-color);background:color-mix(in srgb,currentColor 3%,transparent)}
+#statusStrip .status-check-853:focus-visible,#statusStrip .status-history-853:focus-visible{outline:3px solid var(--primary);outline-offset:2px}
+.ca-setup-shell{display:grid;gap:17px}
+.ca-setup-hero{padding:22px 25px;border:1px solid var(--border-color);background:color-mix(in srgb,var(--primary) 5%,var(--surface-raised));border-radius:14px}
+.ca-setup-hero span{font-size:10px;font-weight:800;letter-spacing:.16em;color:var(--muted-color)}
+.ca-setup-hero h3{font-size:23px;margin:7px 0}
+.ca-setup-hero p{font-size:13px;line-height:1.5;max-width:570px;margin:0}
+.ca-setup-card{display:grid;grid-template-columns:minmax(170px,1fr) minmax(0,2fr);gap:22px;padding:23px;border:1px solid var(--border-color);border-radius:13px;background:var(--surface-raised)}
+.ca-setup-intro h3{font-size:16px;margin:0 0 7px}
+.ca-setup-intro p{font-size:12px;line-height:1.6;color:var(--muted-color);margin:0}
+.ca-model-note{grid-column:1/-1;font-size:12px;line-height:1.55;color:var(--muted-color);margin:0}
+.ca-round-layout{align-items:start}
+.ca-round-nav{position:sticky;top:10px;max-height:min(75vh,calc(100vh - 80px));overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin;padding:3px 5px 8px 0;align-self:start}
+.ca-round-nav>.button.primary{scroll-margin-block:12px}
+.ca-rubber>header [data-ca-action="edit-this-match"]{margin-left:auto;font-size:11px;padding:7px 10px}
+.ca-rubber .ca-match-details[open]{scroll-margin-top:14px}
+@media(max-width:760px){
+ .export853-sheet,.schedule853-sheet{padding:22px 18px}
+ .export853-choices{grid-template-columns:1fr}
+ .ca-setup-card{grid-template-columns:1fr;padding:17px;gap:15px}
+ .ca-setup-hero{padding:17px}
+ .ca-round-nav{position:sticky;top:0;max-height:146px;display:flex;flex-flow:row wrap;align-content:start;overflow:auto;z-index:5;background:var(--surface-raised);border:1px solid var(--border-color);padding:10px;border-radius:10px}
+ .ca-round-nav>.button{flex:0 0 auto;max-width:160px}
+ #logoSecretOverlay .logo-secret-sheet{padding:24px 53px 28px 18px!important}
+}
+@media(prefers-reduced-motion:reduce){.export853-choices button,#statusStrip .status-history-853{transition:none}}
