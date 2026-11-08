@@ -66,6 +66,12 @@ function toBackup(source,now=new Date().toISOString()){
  if(!['sets','rubbers'].includes(rawFormat))throw Error('This section uses a scoring format the Section Creator does not yet support.');
  const fmt=rawFormat,evidence=source.teamOrderEvidence||{};
  const teams=[],ids=new Map(),roster=[],named=new Map(),orders=new Map(),identityKey=(name,tid)=>String(tid||'unassigned')+'|'+clean(name).toLowerCase();
+ const uniqueDisplay=(original,tid)=>{
+  let display=original,n=1;
+  const club=teams.find(t=>t.id===tid)?.name||'Unassigned';
+  while(roster.some(p=>p.name.toLowerCase()===display.toLowerCase()))display=original+' ('+club+(n++>1?' '+(n-1):'')+')';
+  return display;
+ };
  const teamId=name=>{
   name=clean(name);
   if(!name||/^(bye|byes)$/i.test(name))return '';
@@ -94,7 +100,7 @@ function toBackup(source,now=new Date().toISOString()){
    const key=identityKey(name,tid);
    if(named.has(key))continue;
    const order=index+1;const id='player-'+(roster.length+1);
-   const row={id,name,teamId:tid,order,emergency:!!p.emergencyOnly,noCode:/^(?:\[Unnamed |\[Unlisted |No Player\b|TROLS\s*No.?Code\b|No.?Code\b)/i.test(name)};
+   const row={id,name:uniqueDisplay(name,tid),teamId:tid,order,emergency:!!p.emergencyOnly,noCode:/^(?:\[Unnamed |\[Unlisted |No Player\b|TROLS\s*No.?Code\b|No.?Code\b)/i.test(name)};
    roster.push(row);named.set(key,row);
   }
  }
@@ -103,7 +109,7 @@ function toBackup(source,now=new Date().toISOString()){
   if(name.includes('/'))throw Error('Cannot transfer a player name containing a slash: '+name);
   const noCode=/^(?:\[Unnamed |\[Unlisted |No Player\b|TROLS\s*No.?Code\b|No.?Code\b)/i.test(name);if(noCode&&scope&&!name.startsWith('['))name=name+' · '+scope;const key=identityKey(name,tid);let p=named.get(key);
   if(!p){const order=orders.get(tid)||roster.filter(p=>p.teamId===tid).length;orders.set(tid,order+1);
-   p={id:'player-'+(roster.length+1),name,teamId:tid,order:order+1,emergency:!tid,noCode};
+   p={id:'player-'+(roster.length+1),name:uniqueDisplay(name,tid),teamId:tid,order:order+1,emergency:!tid,noCode};
    roster.push(p);named.set(key,p);}
   return p.id;
  };
