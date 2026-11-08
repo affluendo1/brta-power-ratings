@@ -6,18 +6,26 @@
   const playerLabel=id=>id===NO_PLAYER?'No Player':id;
   const pair=names=>names.slice().sort((a,b)=>a.localeCompare(b)).join(' / ');
   function fail(message){throw Error(message)}
+  // One eligibility contract for editor, validation, and fitting.
+  function specialistCompatible(s){
+    const fmt=s?.format,st=Number(s?.setTarget),dt=Number(s?.doublesTarget??s?.setTarget),
+      sb=Number(s?.singlesBestOf??(fmt==='rubbers'?3:1)),db=Number(s?.doublesBestOf??1);
+    return (fmt==='sets'&&st===6&&dt===6&&sb===1&&db===1)||
+      (fmt==='rubbers'&&st===6&&dt===8&&sb===3&&db===1);
+  }
   function score(r,section){
     if((r.sets||[]).some(s=>(s.h==='')!==(s.a==='')))fail('Enter both sides of each set score.');
     const bestOf=Number(section[r.type==='Doubles'?'doublesBestOf':'singlesBestOf']||(section.format==='rubbers'&&r.type==='Singles'?3:1)),targetGames=Number(r.type==='Doubles'?(section.doublesTarget||section.setTarget):section.setTarget);
     const missingHome=(r.home||[]).includes(NO_PLAYER),missingAway=(r.away||[]).includes(NO_PLAYER);
     if(missingHome||missingAway){
-      if(r.status!=='Forfeit')fail('A No Player match must be a forfeit.');
-      if(missingHome&&missingAway)fail('Both sides cannot forfeit the same match. Choose the team receiving the forfeit.');
+      if(r.status!==(missingHome&&missingAway?'No Contest':'Forfeit'))fail('Missing players require Forfeit or No Contest as appropriate.');
+      if(missingHome&&missingAway)return {hg:0,ag:0,hs:0,as:0,winner:'',score:'No contest'};
       const side=missingHome?'away':'home',setsWon=bestOf===3?2:1;
       const hg=side==='home'?setsWon*targetGames:0,ag=side==='away'?setsWon*targetGames:0;
       return {hg,ag,hs:side==='home'?setsWon:0,as:side==='away'?setsWon:0,winner:side,
         score:Array.from({length:setsWon},()=>side==='home'?targetGames+'-0':'0-'+targetGames).join(' ')+' Forfeit'};
     }
+    if(r.status==='No Contest')fail('No Contest requires No Player on both sides.');
     const sets=(r.sets||[]).filter(s=>s.h!==''&&s.a!=='');let hg=0,ag=0,hs=0,as=0;
     const text=[];
     for(const [i,s] of sets.entries()){
@@ -34,7 +42,7 @@
     let winner=hs>as?'home':as>hs?'away':'';
     if(r.status==='Forfeit'||r.status==='Retired')winner=r.winner||'';if(r.status==='Unfinished')winner='';
     if(r.status==='Completed'&&(!sets.length||(bestOf===3?Math.max(hs,as)!==2:sets.length!==1)))fail(bestOf===3?'Completed best-of-three matches need two sets won.':'A completed one-set match needs exactly one set.');
-    if(r.status==='Forfeit'&&!sets.length){hs=winner==='home'?(bestOf===3?2:1):0;as=winner==='away'?(bestOf===3?2:1):0;}
+    if(r.status==='Forfeit'&&!sets.length){const awarded=bestOf===3?2:1;hs=winner==='home'?awarded:0;as=winner==='away'?awarded:0;hg=winner==='home'?awarded*targetGames:0;ag=winner==='away'?awarded*targetGames:0;for(let i=0;i<awarded;i++)text.push(winner==='home'?targetGames+'-0':'0-'+targetGames);}
     if((r.status==='Forfeit'||r.status==='Retired')&&!['home','away'].includes(winner))fail('Select the winning side for a forfeited or retired match.');
     return {hg,ag,hs,as,winner,score:text.join(' ')+(r.status==='Forfeit'?' W/O':r.status==='Retired'?' ret.':r.status==='Unfinished'?' unfinished':'')};
   }
@@ -47,7 +55,8 @@
     for(const key of ['singlesSlots','doublesSlots'])if(!Number.isInteger(Number(section[key]))||Number(section[key])<0||Number(section[key])>8)fail('Choose 0–8 singles and doubles matches per fixture.');
     if(Number(section.singlesSlots)+Number(section.doublesSlots)===0)fail('A fixture needs at least one match.');
     if(section.semifinalPlaces!=null&&(!Number.isInteger(section.semifinalPlaces)||section.semifinalPlaces<0||section.semifinalPlaces>32))fail('Semifinal places must be an integer from 0 to 32.');
-    if(section.ratingModel!=null&&!['V3','V3B','RM4.2','RM4a','RM4b','RM4.1 Ensemble','4melody.2','4foundation.2'].includes(section.ratingModel))fail('Choose V3 or V3B or a supported RM4.2 family model.');
+    if(section.ratingModel!=null&&!['V3','V3B','RM4.2','RM4a','RM4b','RM4.1 Ensemble','4melody.2','4foundation.2'].includes(section.ratingModel))fail('Choose V3 or V3B or a supported RM4 family rating model.');
+    if(['RM4a','RM4b','RM4.1 Ensemble','4melody.2','4foundation.2'].includes(section.ratingModel)&&!specialistCompatible(section))fail('This model requires standard sets or junior rubbers scoring. Change the rules or select RM4.2 / RM3.');
     if(section.doublesSurnames!=null&&typeof section.doublesSurnames!=='boolean')fail('The doubles surname setting must be on or off.');
     if(!Array.isArray(section.teams)||!Array.isArray(section.players)||!Array.isArray(section.rounds))fail('The section is missing its teams, players or rounds.');
     if(section.players.length>256||section.teams.length>64||section.rounds.length>200)fail('This browser editor supports up to 256 players, 64 teams and 200 rounds per section.');
@@ -73,7 +82,7 @@
         for(const key of ['homePointsOverride','awayPointsOverride'])if(f[key]!=null&&f[key]!==''&&(!Number.isFinite(Number(f[key]))||Number(f[key])<0||Number(f[key])>1000))fail('Competition points must be between 0 and 1000.');
         const positions=new Set();
         for(const r of f.rubbers||[]){
-          if(!['Singles','Doubles'].includes(r.type)||!['Scheduled','Completed','Unfinished','Retired','Forfeit'].includes(r.status))fail('Invalid match type or status.');
+          if(!['Singles','Doubles'].includes(r.type)||!['Scheduled','Completed','Unfinished','Retired','Forfeit','No Contest'].includes(r.status))fail('Invalid match type or status.');
           const key=r.type+':'+r.position;if(!Number.isInteger(Number(r.position))||Number(r.position)<1||positions.has(key))fail('Match positions must be positive and unique within singles or doubles.');positions.add(key);
           const needed=r.type==='Singles'?1:2;
           for(const side of ['home','away']){
@@ -82,7 +91,7 @@
             const registered=r[side+'RegisteredTeams'];if(registered!=null&&(!Array.isArray(registered)||registered.length!==needed||registered.some(id=>id&&!teams.has(id))))fail('Invalid historical team registration.');ids.forEach((id,i)=>{if(id===NO_PLAYER)return;const p=players.get(id),team=registered?.[i]??p.teamId;if(team!==(side==='home'?f.homeTeamId:f.awayTeamId)&&!r[side+'Emergencies']?.[i])fail(p.name+' is outside this team; mark them as an emergency.');});
           }
           if((r.home||[]).some(id=>id!==NO_PLAYER&&(r.away||[]).includes(id)))fail('A player cannot play against themselves.');
-          if(((r.home||[]).includes(NO_PLAYER)||(r.away||[]).includes(NO_PLAYER))&&r.status!=='Forfeit'&&r.status!=='Scheduled')fail('No Player entries must be forfeited, not played.');
+          if(((r.home||[]).includes(NO_PLAYER)||(r.away||[]).includes(NO_PLAYER))&&r.status!=='Forfeit'&&r.status!=='No Contest'&&r.status!=='Scheduled')fail('No Player entries must be forfeited, not played.');
           if(r.status!=='Scheduled')score(r,section);
         }
         if(f.status==='Completed'){
@@ -150,13 +159,19 @@
     const dateLabel=date=>new Date(date+'T12:00:00Z').toLocaleDateString('en-GB',{day:'2-digit',month:'short',year:'2-digit',timeZone:'UTC'}).replace(/ /g,' '),calendar=section.rounds.slice().sort((a,b)=>a.number-b.number);
     for(const round of calendar){const group={round:Number(round.number),date:dateLabel(round.date),label:round.label||'Round '+round.number,stage:'regular',fixtures:[]};
       for(const fixture of round.fixtures){const f={fixtureId:fixture.id,round:group.round,date:group.date,label:group.label,stage:'regular',home:tm.get(fixture.homeTeamId),away:tm.get(fixture.awayTeamId)||'Bye',status:fixture.status,rubbers:[],homeRubbers:0,awayRubbers:0,homeGames:0,awayGames:0,homeSets:section.format==='rubbers'?0:null,awaySets:section.format==='rubbers'?0:null};
-        for(const [order,r] of (fixture.rubbers||[]).entries()){if(r.status==='Scheduled')continue;const x=score(r,section),home=r.home.map(id=>id===NO_PLAYER?'No Player':pm.get(id)),away=r.away.map(id=>id===NO_PLAYER?'No Player':pm.get(id));const rb={type:r.type,position:'No. '+r.position,order,status:r.status,forfeit:r.status==='Forfeit',noPlayer:(r.home||[]).includes(NO_PLAYER)||(r.away||[]).includes(NO_PLAYER),home:r.type==='Singles'?home[0]:home.join(' / '),away:r.type==='Singles'?away[0]:away.join(' / '),winner:x.winner?(x.winner==='home'?(r.type==='Singles'?home[0]:home.join(' / ')):(r.type==='Singles'?away[0]:away.join(' / '))):'',score:x.score,homeEmergency:!!r.homeEmergencies?.some(Boolean),awayEmergency:!!r.awayEmergencies?.some(Boolean),homeEmergencies:r.homeEmergencies||[],awayEmergencies:r.awayEmergencies||[]};f.rubbers.push(rb);f.homeGames+=x.hg;f.awayGames+=x.ag;f.homeRubbers+=Number(x.winner==='home');f.awayRubbers+=Number(x.winner==='away');if(section.format==='rubbers'){f.homeSets+=x.hs;f.awaySets+=x.as}
+        for(const [order,r] of (fixture.rubbers||[]).entries()){if(r.status==='Scheduled')continue;const x=score(r,section),home=r.home.map(id=>id===NO_PLAYER?'No Player':pm.get(id)),away=r.away.map(id=>id===NO_PLAYER?'No Player':pm.get(id));const rb={type:r.type,position:'No. '+r.position,order,status:r.status,forfeit:r.status==='Forfeit',noPlayer:(r.home||[]).includes(NO_PLAYER)||(r.away||[]).includes(NO_PLAYER),home:r.type==='Singles'?home[0]:home.join(' / '),away:r.type==='Singles'?away[0]:away.join(' / '),winner:x.winner?(x.winner==='home'?(r.type==='Singles'?home[0]:home.join(' / ')):(r.type==='Singles'?away[0]:away.join(' / '))):'',score:x.score,homeEmergency:!!r.homeEmergencies?.some(Boolean),awayEmergency:!!r.awayEmergencies?.some(Boolean),homeEmergencies:r.homeEmergencies||[],awayEmergencies:r.awayEmergencies||[],valid_for_rating:r.status==='Completed'&&!r.home.concat(r.away).some(pid=>section.players.find(p=>p.id===pid)?.noCode)};f.rubbers.push(rb);f.homeGames+=x.hg;f.awayGames+=x.ag;f.homeRubbers+=Number(x.winner==='home');f.awayRubbers+=Number(x.winner==='away');if(section.format==='rubbers'){f.homeSets+=x.hs;f.awaySets+=x.as}
           if(r.status==='Completed'&&!r.home.concat(r.away).some(pid=>section.players.find(p=>p.id===pid)?.noCode)&&fixture.status!=='Scheduled'&&fixture.status!=='Bye'&&fixture.status!=='Forfeited To'&&fixture.status!=='Forfeited By'){
             const evidence={home,away,hg:x.hg,ag:x.ag,hs:x.hs,as:x.as,matchTiebreaks:(r.sets||[]).filter(s=>s.mt&&s.h!==''&&s.a!=='').map(s=>({h:Number(s.h),a:Number(s.a)})),winner:x.winner,homeTeam:f.home,awayTeam:f.away,date:round.date,round:group.round,dateLabel:group.date,fixtureId:f.fixtureId,position:r.position,score:x.score,homeEmergencies:rb.homeEmergencies,awayEmergencies:rb.awayEmergencies};(r.type==='Singles'?singles:doubles).push(evidence);
           }
         }
         const scheduledSets=Number(section.singlesSlots)*(Number(section.singlesBestOf|| (section.format==='rubbers'?3:1))===3?2:1)+Number(section.doublesSlots)*(Number(section.doublesBestOf||1)===3?2:1),teamBonus=section.format==='rubbers'?1:4,drawBonus=teamBonus/2;
-        let winner='';if(f.status==='Completed'){const h=section.format==='rubbers'?f.homeSets:f.homeRubbers,a=section.format==='rubbers'?f.awaySets:f.awayRubbers;winner=h!==a?(h>a?'home':'away'):f.homeGames!==f.awayGames?(f.homeGames>f.awayGames?'home':'away'):'';f.homePoints=(section.format==='rubbers'?f.homeSets:f.homeRubbers)+(winner==='home'?teamBonus:winner?0:drawBonus);f.awayPoints=(section.format==='rubbers'?f.awaySets:f.awayRubbers)+(winner==='away'?teamBonus:winner?0:drawBonus)}
+        let winner='';if(f.status==='Completed'){const h=section.format==='rubbers'?f.homeSets:f.homeRubbers,a=section.format==='rubbers'?f.awaySets:f.awayRubbers;winner=h!==a?(h>a?'home':'away'):f.homeGames!==f.awayGames?(f.homeGames>f.awayGames?'home':'away'):'';
+          // BRTA Junior By-Laws 5.10: a three-player sets team cannot win the tie.
+          if(section.format==='sets'&&Number(section.singlesSlots)===4&&Number(section.doublesSlots)===2){
+            const present=side=>new Set([...(fixture[side+'Lineup']||[]),...fixture.rubbers.flatMap(r=>r[side]||[])].filter(id=>id!==NO_PLAYER&&pm.has(id))).size;
+            const shortH=present('home')<4,shortA=present('away')<4;
+            if(shortH&&shortA)winner='';else if(shortH)winner='away';else if(shortA)winner='home';
+          }f.homePoints=(section.format==='rubbers'?f.homeSets:f.homeRubbers)+(winner==='home'?teamBonus:winner?0:drawBonus);f.awayPoints=(section.format==='rubbers'?f.awaySets:f.awayRubbers)+(winner==='away'?teamBonus:winner?0:drawBonus)}
         else if(f.status==='Wash Out')f.homePoints=f.awayPoints=scheduledSets/2+drawBonus;
         else if(f.status==='Forfeited To'||f.status==='Forfeited By'){winner=f.status==='Forfeited To'?'away':'home';f.homePoints=winner==='home'?scheduledSets+teamBonus:0;f.awayPoints=winner==='away'?scheduledSets+teamBonus:0}
         if(fixture.homePointsOverride!=null&&fixture.homePointsOverride!==''&&f.status!=='Scheduled'&&f.status!=='Bye'){f.homePoints=Number(fixture.homePointsOverride);f.awayPoints=Number(fixture.awayPointsOverride);}
@@ -177,6 +192,6 @@
     const last=results[0],roundOverview=last?{round:last.round,label:last.label,date:last.date,fixtures:last.fixtures,summary:{completedFixtures:last.fixtures.filter(f=>f.status==='Completed').length,singlesRubbers:singles.filter(m=>m.round===last.round).length,doublesRubbers:doubles.filter(m=>m.round===last.round).length,averageSinglesMargin:Math.round(mean(singles.filter(m=>m.round===last.round).map(m=>Math.abs(m.hg-m.ag)))*10)/10}}:null;
     return {meta,singles:sr,doubles:pr,doublesIndividuals:dr,singlesMatches:singles.map(m=>[m.round,m.dateLabel,m.home[0],m.away[0],m.hg,m.ag,m.winner==='home'?m.home[0]:m.away[0],m.score,m.fixtureId]),ratingHistory,doublesRatingHistory,teams:teamRows,standings:rows,results,upcomingFixtures,format:section.format,greenBall:false,knockout:{source:'none'},sync:{checkedAt:section.updatedAt,latestRound:latest,validation:'passed',missingFixtures:0},note:'Custom section saved on this device. Ratings use '+ratingModel+(ratingModel==='V3B'?' composite game, set, match and match-tiebreak evidence':' game and deciding-tiebreak outcome evidence')+' on completed played matches.',teamOrderEvidence:orderEvidence,customRoster,teamInsights:teamInsights(section,results),playerInsights:{},strengthOfSchedule:[],resultsExpectation:{players:[],matches:[]},roundOverview};
   }
-  const api={validate,score,fit,build,clone,ratingEvidence,V3B_WEIGHTS,RM3_MATCH_TIEBREAK_WEIGHT,NO_PLAYER};root.CustomSectionModel=api;if(typeof module!=='undefined')module.exports=api;
+  const api={validate,score,fit,build,clone,specialistCompatible,ratingEvidence,V3B_WEIGHTS,RM3_MATCH_TIEBREAK_WEIGHT,NO_PLAYER};root.CustomSectionModel=api;if(typeof module!=='undefined')module.exports=api;
 })(typeof window!=='undefined'?window:globalThis);
 

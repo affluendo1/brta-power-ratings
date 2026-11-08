@@ -72,7 +72,14 @@ assert.equal(built.singles.some(x=>x.player==='No Player'),false);
 assert(tie.rubbers.some(x=>x.status==='Forfeit'&&x.home==='No Player'));
 assert(built.standings.some(x=>x.points>0));
 const both=clone(s);both.rounds[0].fixtures[0].rubbers[3].away=[Model.NO_PLAYER];
-assert.throws(()=>Model.validate(both),/Both sides cannot forfeit/);
+both.rounds[0].fixtures[0].rubbers[3].status='No Contest';
+both.rounds[0].fixtures[0].rubbers[3].winner='';
+Model.validate(both);
+const noContest=Model.score(both.rounds[0].fixtures[0].rubbers[3],both);
+assert.equal(noContest.winner,'','A doubly absent rubber awards no winner');
+assert.equal(noContest.hg+noContest.ag,0,'Neither side receives games for a double absence');
+assert.equal(noContest.hs+noContest.as,0,'Neither side receives sets for a double absence');
+assert.equal(Model.build(both).results[0].fixtures[0].rubbers.find(r=>r.position==='No. 4'&&r.type==='Singles').status,'No Contest');
 
 const creatorUI=require('node:fs').readFileSync(require('node:path').join(__dirname,'../web/features/custom-sections.js'),'utf8');
 assert(creatorUI.includes('data-ca="player-nocode"'),'Unidentified players must be selectable in the roster editor');
@@ -92,4 +99,20 @@ const historical=clone(s);
 historical.ratingModel='V3';
 Model.validate(historical);
 assert.equal(Model.build(historical).results[0].fixtures[0].homeGames,tie.homeGames,'Legacy and current scoring must be identical');
-console.log('8.5.3 backups, CSV IDs, short-handed squads, forfeits, rubbers, games and rating exclusion: passed');
+const scheduledOnly=clone(src);scheduledOnly.rounds[0].fixtures[0].status='Scheduled';
+const planned=Model.build(scheduledOnly);planned.results=[];assert(Exports.csv(planned).includes('Scheduled'),'CSV must include calendar entries even without results');
+const manual=clone(singlesForfeit);manual.home=['p1'];manual.away=['p9'];manual.winner='away';manual.sets=[{h:'',a:'',mt:false}];
+const manualScored=Model.score(manual,s);assert.equal(manualScored.hg,0);assert.equal(manualScored.ag,6,'Manual and No Player forfeits share the same games treatment');
+const incompatible=clone(s);incompatible.setTarget=4;incompatible.ratingModel='4melody.2';
+assert.throws(()=>Model.validate(incompatible),/requires standard sets/i);
+assert.equal(Model.specialistCompatible(s),true);
+assert.equal(Model.specialistCompatible(incompatible),false);
+const duplicateSource=clone(Model.build(src));
+duplicateSource.teamOrderEvidence={
+ 'Alpha':{players:[{player:'Alex Smith',order:1}]},
+ 'Beta':{players:[{player:'Alex Smith',order:1}]}
+};
+duplicateSource.upcomingFixtures=[];duplicateSource.results=[];
+const sameName=Exports.toBackup(duplicateSource,'2026-11-08T06:00:00.000Z').sections[0];
+assert.equal(new Set(sameName.players.map(p=>p.name)).size,sameName.players.length,'Same-name imports must not merge clubs');
+console.log('8.5.4 exports, no contests, forfeit scores, identity disambiguation and eligibility: passed');

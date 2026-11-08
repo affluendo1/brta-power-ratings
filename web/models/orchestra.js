@@ -156,12 +156,12 @@
  }
  function recalculate(data,model,bundle,frozen,history){
   if(!isModel(model)||bundle.schema!==85)throw Error('Unknown Orchestra model');
-  if(data.meta?.is_custom)return E.recalculate(data,'RM4.2',frozen);
+  if(data.meta?.is_custom&&!['4melody.2','4foundation.2'].includes(model))return E.recalculate(data,'RM4.2',frozen);
   const copy=JSON.parse(JSON.stringify(data)),matches=E.prepare(data).filter(m=>m.date&&m.date!=='2000-01-01').map(m=>configured(data,m));
   const levelMatch=String(data.meta?.section_label||'').match(/\d+/),state={schema:85,model:['Automatic','4melody.2','4foundation.2'].includes(model)?'4.2 Orchestra':model,matches,source:{meta:data.meta,format:data.format,greenBall:data.greenBall},history:snapshot(data,history),level:levelMatch?Number(levelMatch[0]):null};
   // Only carry the current section's eligible names back from the worker.
   if(state.history){const names=new Set(matches.flatMap(m=>[...m.home,...m.away]).map(nameKey));state.history={...state.history,players:Object.fromEntries(['Singles','Doubles'].map(type=>[type,Object.fromEntries(Object.entries(state.history.players[type]||{}).filter(([name])=>names.has(name)))]))}}
-  const sample=matches[0]||configured(data,{type:'Singles',target:6,bestOf:1}),p=profile(data,sample);if(matches.some(m=>!bundle.formatRouting.allowedSignatures.includes([profile(data,m),m.type,m.target,m.bestOf,Number(m.bestOf===3&&!!m.matchTiebreak),Number(!!m.green)].join('|'))))return E.recalculate(data,'RM4.2',frozen);if(p!=='sets.standard')state.history=null;const d=definition(bundle,p,model==='4foundation.2'?'Foundation':'Melody'),memo=new Map();
+  const sample=matches[0]||configured(data,{type:'Singles',target:6,bestOf:1}),p=profile(data,sample);if(matches.some(m=>!bundle.formatRouting.allowedSignatures.includes([profile(data,m),m.type,m.target,m.bestOf,Number(m.bestOf===3&&!!m.matchTiebreak),Number(!!m.green)].join('|')))){if(data.meta?.is_custom)throw Error('This specialist does not support this scoring format. Choose RM4.2.');return E.recalculate(data,'RM4.2',frozen);}if(p!=='sets.standard')state.history=null;const d=definition(bundle,p,model==='4foundation.2'?'Foundation':'Melody'),memo=new Map();
   const sort=rows=>rows.sort((a,b)=>b.rating-a.rating||a.player.localeCompare(b.player));
   function merge(original,fitted){const byName=new Map(fitted.map(r=>[r.player,r]));return sort((original||[]).map(r=>({...r,...byName.get(r.player)})))}
   function tables(subset,original){
@@ -184,7 +184,7 @@
   copy.singles=latest.singles;copy.doublesIndividuals=latest.doublesPlayers;copy.doubles=latest.pairs;
   copy.orchestra=state;delete copy.rm4;
   copy.meta={...copy.meta,modelChoice:model==='Automatic'?'4melody.2':model,predictionModel:['4melody.2','4foundation.2'].includes(model)?'4.2 Orchestra':state.model,ratingModel:model==='4foundation.2'?'4foundation.2':'4melody.2',doublesRatingModel:model==='4foundation.2'?'4foundation.2':'4choir.2',ratingCentre:1500,ratingScale:450,ratingProbabilityScale:450,scoreSchema:2,needsScoreRefit:false,orchestraVersion:bundle.version,automatic:model==='Automatic'||model==='4.2 Orchestra',ratingChoice:model==='4foundation.2'?'4foundation.2':'4melody.2',automaticPolicyVersion:85};
-  copy.note='Ratings and forecasts use '+state.model+'.';
+  copy.note='Ratings and forecasts use '+state.model+'.'+(data.meta?.is_custom?' Local result evidence only, without historical priors.':'');
   const powers=new Map(copy.singles.map(r=>[r.player,r.rating]));
   copy.teams=(copy.teams||[]).map(t=>{const rows=copy.singles.filter(r=>r.team===t.team);return{...t,avg:rows.length?avg(rows.map(r=>r.rating)):1500,best4:rows.length?avg(rows.slice(0,4).map(r=>r.rating)):1500}});
   copy.strengthOfSchedule=copy.singles.map(r=>{const opponents=matches.filter(m=>m.type==='Singles'&&(m.home.includes(r.player)||m.away.includes(r.player))).map(m=>powers.get(m.home.includes(r.player)?m.away[0]:m.home[0])).filter(Number.isFinite);return{player:r.player,team:r.team,matches:opponents.length,averageOpponent:Math.round(avg(opponents))}}).sort((a,b)=>b.averageOpponent-a.averageOpponent).map((r,i,a)=>({...r,rank:i+1,total:a.length}));

@@ -50,3 +50,37 @@
  #logoSecretOverlay .logo-secret-sheet{padding:24px 53px 28px 18px!important}
 }
 @media(prefers-reduced-motion:reduce){.export853-choices button,#statusStrip .status-history-853{transition:none}}
+
+/* 8.5.4: three true columns, with win/loss independent of theme accent. */
+.rubber-list .rubber-row-854{display:grid;grid-template-columns:minmax(0,1fr) minmax(58px,max-content) minmax(0,1fr);gap:7px;align-items:stretch;padding:6px 8px;white-space:normal}
+.rubber-row-854 .rubber-side{display:flex;align-items:center;min-width:0;padding:10px 11px;border:1px solid var(--border-color);border-radius:8px;color:var(--text-color);background:var(--surface-raised);font-size:inherit;line-height:1.45;overflow-wrap:anywhere;white-space:normal;text-overflow:clip;overflow:visible;font-weight:400}
+.rubber-row-854 .rubber-side.side-won{border-color:var(--good-color,#25814e);background:color-mix(in srgb,var(--good-color,#25814e) 12%,var(--surface-raised));}
+.rubber-row-854 .rubber-side.side-lost{border-color:var(--bad-color,#b73d4c);background:color-mix(in srgb,var(--bad-color,#b73d4c) 10%,var(--surface-raised));}
+.rubber-row-854 .rubber-side.side-neutral{border-color:var(--border-color);background:var(--surface-raised)}
+.rubber-row-854 .rubber-home{text-align:left;justify-content:flex-start}
+.rubber-row-854 .rubber-away{text-align:right;justify-content:flex-end}
+.rubber-row-854 .rubber-side b{font-weight:800}
+.rubber-row-854 .rubber-side span{font-weight:400}
+.rubber-row-854 .rubber-side .person,.rubber-row-854 .rubber-side .pair-sep{color:inherit!important;text-decoration-color:currentColor}
+.rubber-row-854 .side-won .person{font-weight:800}
+.rubber-row-854 .side-lost .person,.rubber-row-854 .side-neutral .person{font-weight:400}
+.rubber-row-854 .rubber-code{position:static;flex:0 0 auto;align-self:center;margin-right:10px;font-size:10px;opacity:.85}
+.rubber-row-854 .rubber-score-854{display:flex;align-items:center;justify-content:center;text-align:center;min-width:58px;padding:5px 2px;color:var(--text-color);font-weight:800;white-space:normal;overflow-wrap:anywhere}
+.rubber-row-854 .rubber-away .emergency-marker,.rubber-row-854 .rubber-home .emergency-marker{flex-shrink:0}
+.export853-import-prompt{z-index:150}
+.export853-prompt-sheet{width:min(470px,calc(100vw - 30px));padding:26px 28px}
+.export853-prompt-sheet h2{font-size:21px;margin:0 0 12px}
+.export853-prompt-sheet p{line-height:1.6}
+.export853-prompt-actions{display:flex;gap:10px;justify-content:flex-end;flex-wrap:wrap;margin-top:17px}
+.schedule853-sheet{width:min(900px,calc(100vw - 30px))}
+.schedule853-sync-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.schedule853-sync-card{border:1px solid var(--border-color);border-radius:12px;padding:15px;background:var(--surface-raised)}
+.schedule853-sync-card h3{margin:0 0 8px;font-size:14px}
+.schedule853-sync-card p{margin:7px 0}
+@media(max-width:760px){
+ .rubber-list .rubber-row-854{gap:4px;padding:5px 4px;grid-template-columns:minmax(0,1fr) minmax(48px,max-content) minmax(0,1fr);font-size:11px}
+ .rubber-row-854 .rubber-side{padding:8px 5px;line-height:1.35}
+ .rubber-row-854 .rubber-code{margin-right:4px;font-size:9px}
+ .rubber-row-854 .rubber-score-854{min-width:48px;font-size:11px}
+ .schedule853-sync-grid{grid-template-columns:1fr}
+}
