@@ -18,8 +18,15 @@
   const bestOf=r?(r[m.type==='Singles'?'singlesBestOf':'doublesBestOf']||1):rubbers&&m.type==='Singles'?3:(m.bestOf||1);
   return{...m,target:r?(m.type==='Singles'?r.setTarget:r.doublesTarget||r.setTarget):rubbers&&m.type==='Doubles'?8:(m.target||6),green:!!data.greenBall,bestOf,matchTiebreak:bestOf===3?(r?r.matchTiebreak!==false:rubbers):false};
  }
+ function isCustomJuniorRubbers(data){
+  const rules=data.meta?.customRules;
+  return !!data.meta?.is_custom&&data.format==='rubbers'&&!!rules&&
+    Number(rules.setTarget)===6&&Number(rules.doublesTarget)===8&&
+    Number(rules.singlesBestOf)===3&&Number(rules.doublesBestOf)===1;
+ }
  function profile(data,m){
-  if(['AA','UA'].includes(data.meta?.competition_code)&&data.format==='rubbers')return'junior.rubbers';
+  // An exact junior scoring contract matters more than the creator's LOCAL competition code.
+  if(isCustomJuniorRubbers(data)||(['AA','UA'].includes(data.meta?.competition_code)&&data.format==='rubbers'))return'junior.rubbers';
   if(m.green&&m.bestOf===1)return'sets.green';
   if(m.bestOf===3)return m.matchTiebreak?'adult.match-tiebreak':'adult.full-third';
   return m.target===6?'sets.standard':'adult.extended-set';
