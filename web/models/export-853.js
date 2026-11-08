@@ -25,12 +25,15 @@ function sets(value){
 function rows(data,technical=false){
  const columns=['record_type','competition','section','date','round','status','home_team','away_team','home_points','away_points','home_rubbers','away_rubbers','home_games','away_games','rubber_type','rubber_position','home_players','away_players','winner','score',...(technical?['match_id','fixture_id']:[])];
  const output=[columns];
- for(const round of data.results||[])for(const f of round.fixtures||[]){
+ const fixtures=new Map(),key=(round,f)=>String(round.round)+'|'+String(f.fixtureId||f.id||f.home+'|'+f.away);
+ for(const round of data.upcomingFixtures||[])for(const f of round.fixtures||[])fixtures.set(key(round,f),{round,f});
+ for(const round of data.results||[])for(const f of round.fixtures||[])fixtures.set(key(round,f),{round,f});
+ for(const {round,f} of fixtures.values()){
   const base=['Fixture',data.meta?.competition_label,data.meta?.section_label,f.date??round.date,f.round??round.round,f.status,f.home,f.away,f.homePoints,f.awayPoints,f.homeRubbers,f.awayRubbers,f.homeGames,f.awayGames,'','','','','',''];
   const identity=clean(f.fixtureId||f.id);
   output.push(technical?[...base,'',identity]:base);
   for(const m of f.rubbers||[]){
-   const line=['Rubber',data.meta?.competition_label,data.meta?.section_label,f.date??round.date,f.round??round.round,f.status,f.home,f.away,f.homePoints,f.awayPoints,f.homeRubbers,f.awayRubbers,f.homeGames,f.awayGames,m.type,m.position,m.home,m.away,m.winner,m.score];
+   const line=['Rubber',data.meta?.competition_label,data.meta?.section_label,f.date??round.date,f.round??round.round,m.status||f.status,f.home,f.away,f.homePoints,f.awayPoints,f.homeRubbers,f.awayRubbers,f.homeGames,f.awayGames,m.type,m.position,m.home,m.away,m.winner,m.score];
    // TROLS generally supplies fixture IDs, not distinct per-rubber IDs. Do not fabricate them.
    output.push(technical?[...line,clean(m.matchId||m.match_id),identity]:line);
   }
@@ -41,7 +44,11 @@ function csv(data,technical=false){return '\ufeff'+rows(data,technical).map(r=>r
 function markdown(data){
  const meta=data.meta||{};let out='# '+clean(meta.competition_label)+' · '+clean(meta.section_label)+'\n\n';
  out+='Season: '+clean(meta.season_label)+'\n\n';
- for(const round of [...(data.results||[])].reverse()){
+ const fixtures=new Map(),key=(round,f)=>String(round.round)+'|'+String(f.fixtureId||f.id||f.home+'|'+f.away);
+ for(const round of data.upcomingFixtures||[])for(const f of round.fixtures||[])fixtures.set(key(round,f),{round,f});
+ for(const round of data.results||[])for(const f of round.fixtures||[])fixtures.set(key(round,f),{round,f});
+ const groups=new Map();for(const {round,f} of fixtures.values()){const k=String(round.round);if(!groups.has(k))groups.set(k,{...round,fixtures:[]});groups.get(k).fixtures.push(f)}
+ for(const round of [...groups.values()].reverse()){
   out+='## '+clean(round.label||'Round '+round.round)+' · '+clean(round.date)+'\n\n';
   for(const f of round.fixtures||[]){
    out+='### '+clean(f.home)+' vs '+clean(f.away)+'\n\n';
@@ -58,7 +65,7 @@ function toBackup(source,now=new Date().toISOString()){
  const rawFormat=clean(source.format||source.meta.format).toLowerCase();
  if(!['sets','rubbers'].includes(rawFormat))throw Error('This section uses a scoring format the Section Creator does not yet support.');
  const fmt=rawFormat,evidence=source.teamOrderEvidence||{};
- const teams=[],ids=new Map(),roster=[],named=new Map(),orders=new Map();
+ const teams=[],ids=new Map(),roster=[],named=new Map(),orders=new Map(),identityKey=(name,tid)=>String(tid||'unassigned')+'|'+clean(name).toLowerCase();
  const teamId=name=>{
   name=clean(name);
   if(!name||/^(bye|byes)$/i.test(name))return '';
@@ -84,7 +91,7 @@ function toBackup(source,now=new Date().toISOString()){
   const tid=teamId(team);
   for(const [index,p] of (entry.players||[]).entries()){
    const name=clean(p.player||p.name);if(!name)continue;
-   const key=name.toLowerCase();
+   const key=identityKey(name,tid);
    if(named.has(key))continue;
    const order=index+1;const id='player-'+(roster.length+1);
    const row={id,name,teamId:tid,order,emergency:!!p.emergencyOnly,noCode:/^(?:\[Unnamed |\[Unlisted |No Player\b|TROLS\s*No.?Code\b|No.?Code\b)/i.test(name)};
@@ -94,7 +101,7 @@ function toBackup(source,now=new Date().toISOString()){
  const register=(name,tid,scope='')=>{
   name=clean(name);if(!name)return '';
   if(name.includes('/'))throw Error('Cannot transfer a player name containing a slash: '+name);
-  const noCode=/^(?:\[Unnamed |\[Unlisted |No Player\b|TROLS\s*No.?Code\b|No.?Code\b)/i.test(name);if(noCode&&scope&&!name.startsWith('['))name=name+' · '+scope;const key=name.toLowerCase();let p=named.get(key);
+  const noCode=/^(?:\[Unnamed |\[Unlisted |No Player\b|TROLS\s*No.?Code\b|No.?Code\b)/i.test(name);if(noCode&&scope&&!name.startsWith('['))name=name+' · '+scope;const key=identityKey(name,tid);let p=named.get(key);
   if(!p){const order=orders.get(tid)||roster.filter(p=>p.teamId===tid).length;orders.set(tid,order+1);
    p={id:'player-'+(roster.length+1),name,teamId:tid,order:order+1,emergency:!tid,noCode};
    roster.push(p);named.set(key,p);}
