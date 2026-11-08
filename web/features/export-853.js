@@ -8,13 +8,14 @@ const title=(meta)=>[meta.competition_label,meta.section_label].filter(Boolean).
 const prefix=(meta)=>api.slug(title(meta));
 const download=(text,name,type)=>{const url=URL.createObjectURL(new Blob([text],{type})),a=document.createElement('a');a.href=url;a.download=name;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),2500)};
 function selected(){
- const comp=localStorage.getItem('brta-default-competition'),code=localStorage.getItem('brta-default-section');
- const meta=(typeof currentCatalog==='function'?currentCatalog():[]).find(x=>x.section_code===code&&x.competition_code===comp);
- if(!meta)throw Error('Choose a Default Competition and Default Section in Settings first.');
+ const meta=(typeof D!=='undefined'&&D?.meta)||null;
+
+ if(!meta)throw Error('Open a competition section first.');
  return meta;
 }
 async function source(meta){
  const code=meta.section_code;
+ if(typeof D!=='undefined'&&D?.meta?.section_code===code)return {data:meta.is_custom?root.CustomSections.payload(code):D,saved:meta.is_custom?JSON.parse(localStorage.getItem('brta-custom-sections-v1')||'[]').find(s=>s.id===code):null};
  if(meta.is_custom){
   const actual=JSON.parse(localStorage.getItem('brta-custom-sections-v1')||'[]').find(s=>s.id===code);
   if(!actual)throw Error('The saved custom section cannot be found.');
@@ -39,7 +40,8 @@ async function run(mode){
   }else if(mode==='json'){
    const backup=saved?{format:'brta-custom-sections',version:1,sections:[saved]}:api.toBackup(data);
    root.CustomSectionModel.validate(backup.sections[0]);
-   download(JSON.stringify(backup,null,2),base+'-editable-backup.json','application/json;charset=utf-8');
+    download(JSON.stringify(backup,null,2),base+'-editable-backup.json','application/json;charset=utf-8');
+    promptCreator(backup);
   }else if(mode==='markdown'){
    download(api.markdown(data),base+'-results.md','text/markdown;charset=utf-8');
   }else if(mode==='complete'){
@@ -50,10 +52,21 @@ async function run(mode){
    if(!root.BRTAModelComparison?.export)throw Error('Comparison export is unavailable.');
    const processed=await layoutApplyModel(data,selectedRatingModel());
    await root.BRTAModelComparison.export(processed);
-  }else throw Error('Unknown export option.');
-  status.textContent='Export ready. Your default section was not changed.';
+  }else throw Error('This export format is unavailable. Choose an option from the export panel.');
+  status.textContent='Export ready. Your current section was not changed.';
  }catch(err){status.textContent=err.message||'Could not prepare this export.';}
  finally{busy=false;buttons.forEach(b=>b.disabled=false)}
+}
+let creatorPrompt=null;
+function promptCreator(backup){
+ if(creatorPrompt)creatorPrompt.remove();
+ creatorPrompt=document.createElement('div');creatorPrompt.className='overlay export853-import-prompt';creatorPrompt.id='export853ImportPrompt';
+ creatorPrompt.innerHTML='<div class="overlay-backdrop" data-creator-no></div><section class="settings-sheet export853-prompt-sheet" role="dialog" aria-modal="true" aria-labelledby="export853ImportTitle"><h2 id="export853ImportTitle">Open in Custom Competitions?</h2><p>Your editable JSON was downloaded. You can also load it directly into the editor.</p><div class="export853-prompt-actions"><button type="button" class="button secondary" data-creator-no>Not now</button><button type="button" class="button primary" data-creator-yes>Open in Custom Competitions</button></div><p role="status" id="export853ImportError"></p></section>';
+ document.body.append(creatorPrompt);root.BRTAOverlays?.lock?.(creatorPrompt);
+ const dismiss=()=>{root.BRTAOverlays?.unlock?.(creatorPrompt);creatorPrompt?.remove();creatorPrompt=null;};
+ creatorPrompt.querySelectorAll('[data-creator-no]').forEach(b=>b.onclick=dismiss);
+ creatorPrompt.querySelector('[data-creator-yes]').onclick=()=>{try{if(!root.CustomSections?.openBackup)throw Error('Custom Competitions is unavailable.');if(root.CustomSections.openBackup(backup)){dismiss();close();}}catch(e){creatorPrompt.querySelector('#export853ImportError').textContent=e.message;}};
+ creatorPrompt.querySelector('[data-creator-yes]').focus();
 }
 function close(){
  if(!modal||modal.classList.contains('hidden')||busy)return;
@@ -69,7 +82,7 @@ function open(){
   document.body.append(modal);
   root.BRTAOverlays?.register?.('export853Overlay',close);
  }
- let description='Choose a default section in Settings.';
+ let description='Open a section to export it.';
  try{description=title(selected())}catch(_){}
  const choices=[
   ['csv','CSV','Original results table, without extra technical columns.'],
@@ -79,14 +92,14 @@ function open(){
   ['markdown','Markdown','A clean, portable round-by-round match report.'],
   ...(auxiliaryEnabled()?[['comparison','Rating model comparison','All enabled rating models and round histories.']]:[])
  ];
- modal.innerHTML='<div class="overlay-backdrop" data-export-close></div><section class="settings-sheet export853-sheet" role="dialog" aria-modal="true" aria-labelledby="export853Title"><button type="button" class="close-btn" data-export-close aria-label="Close export chooser">×</button><div class="overlay-title"><div class="kicker">DEFAULT SECTION</div><h2 id="export853Title">Export section</h2><p>'+esc(description)+'</p></div><div class="export853-choices">'+choices.map(([code,name,desc])=>'<button type="button" data-export-853="'+code+'"><b>'+name+'</b><span>'+desc+'</span></button>').join('')+'</div><p id="export853Status" role="status" aria-live="polite">Choose a format to download a copy.</p></section>';
+ modal.innerHTML='<div class="overlay-backdrop" data-export-close></div><section class="settings-sheet export853-sheet" role="dialog" aria-modal="true" aria-labelledby="export853Title"><button type="button" class="close-btn" data-export-close aria-label="Close export chooser">×</button><div class="overlay-title"><div class="kicker">CURRENT SECTION</div><h2 id="export853Title">Export section</h2><p>'+esc(description)+'</p></div><div class="export853-choices">'+choices.map(([code,name,desc])=>'<button type="button" data-export-853="'+code+'"><b>'+name+'</b><span>'+desc+'</span></button>').join('')+'</div><p id="export853Status" role="status" aria-live="polite">Choose a format to download a copy.</p></section>';
  modal.querySelectorAll('[data-export-close]').forEach(b=>b.onclick=close);
- modal.querySelectorAll('[data-export-853]').forEach(b=>b.onclick=()=>run(b.dataset.export853));
+ modal.querySelectorAll('[data-export-853]').forEach(b=>b.addEventListener('click',event=>{event.preventDefault();event.stopPropagation();run(b.getAttribute('data-export-853'));}));
  modal.classList.remove('hidden');root.BRTAOverlays?.lock?.(modal);
  modal.querySelector('[data-export-853]')?.focus();
 }
 function bind(){
- const section=$('#defaultSection')?.closest('.default-field'),group=section?.parentElement;
+ return; // Export lives beneath the currently viewed section.
  if(!group)return;
  let row=$('#export853SettingsRow');
  if(!row){
@@ -114,7 +127,7 @@ function showSchedule(){
  }
  o.classList.remove('hidden');root.BRTAOverlays?.lock?.(o);o.querySelector('.close-btn').focus();
 }
-document.addEventListener('click',e=>{if(e.target.closest?.('#export853Open')){e.preventDefault();open()}else if(e.target.closest?.('[data-check-schedule]')){e.preventDefault();showSchedule()}});
+document.addEventListener('click',e=>{if(e.target.closest?.('#export853Open,#exportSectionBtn')){e.preventDefault();open()}else if(e.target.closest?.('[data-check-schedule]')){e.preventDefault();showSchedule()}});
 const observer=new MutationObserver(()=>{if($('#defaultSection')&&!$('#export853SettingsRow'))bind()});
 function start(){const host=$('#settingsContent');if(host){observer.observe(host,{childList:true,subtree:true});bind()}}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start,{once:true});else start();
