@@ -87,7 +87,26 @@ jobs:
           from datetime import datetime, timezone
           from pathlib import Path
           sync = json.loads(Path("data/current/sync_status.json").read_text())
+          previous_path = Path("data/current/last_check.json")
+          try:
+              previous = json.loads(previous_path.read_text()) if previous_path.exists() else {}
+          except (OSError, ValueError):
+              previous = {}
+          import subprocess
+          changed = subprocess.check_output(["git", "diff", "--name-only", "--", "data/current/sections"], text=True).splitlines()
+          changed_sections = sorted({part[3] for item in changed if len(part := item.split("/")) >= 4})
+          discovered = os.environ.get("NEW_RESULTS") == "true"
+          positive = previous.get("last_positive")
+          if discovered:
+              positive = {
+                  "checked_at_utc": datetime.now(timezone.utc).isoformat(),
+                  "changed_sections": changed_sections,
+                  "previous_completed_fixtures": previous.get("completed_fixtures"),
+                  "completed_fixtures": sync["completed_fixtures"],
+              }
           heartbeat = {
+              "changed_sections": changed_sections if discovered else [],
+              "last_positive": positive,
               "checked_at_utc": datetime.now(timezone.utc).isoformat(),
               "new_results": os.environ.get("NEW_RESULTS") == "true",
               "sections": sync["sections"],
