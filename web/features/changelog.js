@@ -9,9 +9,10 @@
   const escape = value => String(value).replace(/[&<>"']/g, character => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[character]));
 
   function dateLabel(release) {
-    const minutes = {major:60, large:60, small:30, tiny:10}[release.size];
+    const minutes = ({major:60,large:60,medium:30,small:30,tiny:10})[release.size] ?? 30;
     const interval = minutes * 60000;
-    const rounded = new Date(Math.round(Date.parse(release.committedAt) / interval) * interval);
+    const parsed = Date.parse(release.committedAt);
+    const rounded = new Date(Math.round((Number.isFinite(parsed)?parsed:Date.now()) / interval) * interval);
     return new Intl.DateTimeFormat('en-AU', {
       timeZone:'Australia/Melbourne', weekday:'long', day:'numeric', month:'long', year:'numeric',
       hour:'numeric', minute:minutes === 60 ? undefined : '2-digit', hour12:true
