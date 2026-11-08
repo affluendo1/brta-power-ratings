@@ -9,11 +9,11 @@ Other available models include **4.2 Foundation**, **RM4.2**, **RM4.1 Ensemble**
 ### Latest updates
 
 - **8.5.4.2 (tiny):** Refined creator layouts and touch controls on mobile, kept special-status
-  editing in place, restored the Custom Competitions header shortcut, and improved editable
-  transfers, calendar order, custom-model reports and results-check panels.
+  editing in place, strengthened result colours and borders, and aligned mobile Player Lab
+  panels. Restored the Custom Competitions shortcut and improved exports and results checks.
 
-- **8.5.4.1:** Match scorecards now use real, flat three-column tables with subtle win/loss
-  shading, bigger scores and plain, theme-coloured player names. Fixed missing-player
+- **8.5.4.1:** Match scorecards now use real, flat three-column tables with win/loss
+  shading (strengthened in 8.5.4.2), bigger scores and plain, theme-coloured player names. Fixed missing-player
   selections, widened the round list, humanised results checks and unnamed-player labels,
   and repaired the return-to-editor navigation. Updated regression checks.
 - **8.5.4:** Custom Competitions moved into the main header. Improved result editing,
@@ -54,8 +54,8 @@ Round simulation uses the normal scorecard with controls outside it. Past standi
 reconstruct earlier rounds with the shared standings renderer. Historical penalties,
 missing published points and ambiguous ties can limit reconstructed comparisons.
 
-**Automatic** is an optional fixed policy: RM3 powers ratings, history and Power
-summaries; RM4.1 Ensemble powers live forecasts, score estimates and simulations.
+**Automatic (historical 8.4.1 policy)** used RM3 for ratings, history and Power
+summaries; RM4.1 Ensemble powered forecasts, score estimates and simulations.
 It does not select a model per player or in response to an outcome. In 8.4.1,
 RM4.1 Ensemble was the default. Neither rating spread nor a larger version number proves
 forecast superiority. See the methodology for the 8.4.1 chronological experiment.
@@ -70,8 +70,8 @@ unavailable rather than borrowed from junior rules. Most-used complete lineups g
 selections; user edits in Prediction Centre are independent from whole-round simulations.
 
 Dialog locks now have a shared owner, so a refresh or out-of-order close releases
-the page correctly. Classic extends to secondary screens and dialogs. Mobile
-headers reserve space at the top; rating tables have no frozen name/rank columns.
+the page correctly. Classic extends to secondary screens and dialogs. Mobile full-screen views respect device safe areas; compact dialogs avoid the extra
+header gap. Rating tables have no frozen name/rank columns.
 
 8.3.2 rebuilds Classic with a table masthead, native-looking controls, dense
 bordered tables and plain reading pages. RM1 joins the optional legacy models.
@@ -121,11 +121,15 @@ in **Full history**. The Settings version and both views use `web/features/chang
 Entries contain concise user-facing changes; routine results checks are excluded,
 and Easter-egg notes remain deliberately vague. Only substantial updates have titles.
 Dates use Melbourne time and round to an hour for major/large updates, 30 minutes
-for small updates, and 10 minutes for tiny updates. Release numbers use dotted levels: `7.0` is a major release, `7.1` is a feature
+for medium/small updates, and 10 minutes for tiny updates. Release numbers use dotted levels: `7.0` is a major release, `7.1` is a feature
 update, `7.1.1` is a smaller follow-up, and `7.1.1.1` is a further revision.
 Each level counts independently, so `6.10` follows `6.9`. Older compact numbers
 are now dotted too: `6.101` becomes `6.1.1` and `7.01` becomes `7.0.1`.
-The work previously labelled `7.1`, `7.1.1` and `7.1.1.1` is consolidated into `8.0`.
+The original `7.1`, `7.1.1` and `7.1.1.1` entries are restored separately from `8.0`.
+Older grouped development is split into retrospective entries at source-commit timestamps.
+Those entries include a `sourceCommit` for provenance; the version labels describe the
+reconstructed release cadence, rather than claiming corresponding Git tags existed.
+The current website version remains 8.5.4.2: this history revision is documentation maintenance.
 
 To publish a website release, prepend an entry with its version, commit timestamp,
 size and changes; add a short title only for a substantial update. Bump the data asset version
@@ -134,7 +138,7 @@ commits do not change the website version.
 
 ### Custom Competitions
 
-Open **Settings → Custom Competitions** to make your own section. No Extras switch or password is
+Open **Custom Competitions** in the main header (also available from Settings) to make your own section. No Extras switch or password is
 required. Competitions are stored locally in your browser; saving them does not
 publish them to the official site. Editable JSON backups can be imported or exported.
 
@@ -145,8 +149,10 @@ Players can also be unassigned emergency substitutes. Bulk entry accepts one
 
 **Teams & players → Edit current roster as text** loads the current active list
 as `Name | Team | Order | E`. Edit or replace it, preview the changes, then apply
-and save. Matching is by name (ignoring case and extra spaces), so moving a line
-or changing registered order preserves the player's ID, matches and scores.
+and save. Bulk roster matching uses names (ignoring case and extra spaces). Duplicate names
+are rejected in this text workflow; use individual player controls for identity review.
+Moving a line or changing registered order preserves a recognised player's ID, matches
+and scores.
 **Use pasted row order as registered order** numbers each team's players from
 their order in the text, ignoring the old numbers. Otherwise the Order column
 is used; blank orders are numbered automatically. The individual editor also
@@ -174,15 +180,24 @@ emergency marker, match position, playing order, score, and status. Set scores
 are entered from the home team's perspective. Deciding match tiebreak points
 do not count as games. Forfeits, No Contest rubbers and unfinished/retired matches do not enter the
 rating model. Use **No Player** for a missing participant; when both sides are
-absent, record **No Contest** with no games or player-rating evidence. Quick-score buttons fill common one-set results from either side.
+absent, record **No Contest** with no games or player-rating evidence. A missing-player
+forfeit awards the configured walkover games and sets to the other team, without
+giving the named opponent a played win or rating evidence. Manual forfeits without
+entered scores also receive the configured walkover score. **Unidentified player**
+records preserve source results without inventing an identity or rating evidence. Quick-score buttons fill common one-set results from either side.
 Typing scores automatically completes finished matches and fixtures unless you
 turn off the automatic-status checkbox. Tab or Enter moves between score boxes.
 Optional home/away competition-point overrides handle manual
 adjustments without changing the scorecard or player ratings.
 
-**Section setup → Rating calculation model** offers RM3, RM3b and RM4.2, plus
-4.2 Melody and 4.2 Foundation on supported scoring formats. Custom Melody and
-Foundation use local match evidence without official historical priors.
+**Section setup → Rating calculation model** defaults to RM4.2. RM3 and RM3b are
+also available; supported standard Sets and Junior Rubbers configurations additionally
+offer RM4a, RM4b, RM4.1 Ensemble, 4.2 Melody and 4.2 Foundation. Compatibility is
+checked by both the editor and document validation. Custom Melody and Foundation
+use local match evidence without official historical priors.
+
+The following V3/V3B formulas describe those legacy custom-model choices, not the
+default Melody model used for official sections.
 V3B retains V3's logistic scale (0.75), 365-day half-life,
 L2 penalty (5), and displayed power scale (1500 + 600θ). Its composite likelihood
 adds evidence in game-equivalent units: each normal game has weight 1, each set
@@ -252,21 +267,27 @@ Other views are opened from the header or player profiles:
 - **Player Lab** includes the player's matchup outlook, actual-versus-expected results, schedule difficulty, form, rating history and doubles evidence. Historical Player Lab views use the selected round's ratings and results.
 - **Club Zone** is under maintenance.
 - **Rounds** combines round highlights with your team’s week-by-week calendar, published no-play dates, starting times and calendar downloads.
-- **Settings** contains display preferences, Theme Studio, methodology and BRTA rules. The section picker also links directly to past seasons. A separate control exports the selected section's match and fixture data as CSV.
+- **Settings** contains display preferences, Theme Studio, methodology and BRTA rules. The section picker also links directly to past seasons. **Export section** beneath the competition/section picker opens the export chooser.
 
 ## Competition and historical coverage
 
 The live scraper discovers the active seasons across all seven published BRTA competitions from TROLS and follows the season IDs TROLS marks as current. Routine checks update those active seasons only; they do not repeatedly fetch finished seasons. The 8.2 live snapshot contains 79 sections: 44 junior morning sections and 35 afternoon/weekday sections. Future section counts depend on what TROLS publishes.
 
-The History selector is backed by a separate archive catalogue and set of section files under `data/archive/`. The archive importer reads the past seasons and sections exposed by TROLS, including published scorecards, official fixture order, final ladders and playoffs. Only seasons successfully imported into that catalogue can be selected. TROLS' archive has gaps, so the feature does not imply a complete year-by-year record for both competitions. Missing results and dates are not fabricated.
+The History selector is backed by a separate archive catalogue and set of section files under `data/archive/`. The archive importer reads the past seasons and sections exposed by TROLS, including published scorecards, official fixture order, final ladders and playoffs. Only seasons successfully imported into that catalogue can be selected. TROLS' archive has gaps, so the feature does not imply a complete year-by-year record for every competition. Missing results and dates are not fabricated.
 
-Historical ratings are refitted from the archived match records using the site's current V3 model. They are retrospective estimates, not historical BRTA or TROLS ratings. Where TROLS publishes a final ladder, its recorded order and points are retained. Where the source has no date or an internal score discrepancy, the importer preserves the source record and records the limitation rather than silently correcting it.
+Published archive payloads contain refitted RM3 baseline ratings; the browser can recalculate supported sections with the selected model. They are retrospective estimates, not historical BRTA or TROLS ratings. Where TROLS publishes a final ladder, its recorded order and points are retained. Where the source has no date or an internal score discrepancy, the importer preserves the source record and records the limitation rather than silently correcting it.
 
 Semifinals and grand finals are shown from TROLS when published. Before a semifinal draw is published, the site projects the 1-v-4 and 2-v-3 matchups only once all 14 regular rounds are present and resolved. Rescheduled or repeated grand-final entries remain separate records; unpublished dates stay blank.
 
 ## Ratings
 
-### Singles
+### Legacy RM3 reference
+
+The equations below describe the RM3 baseline retained in generated data and the
+optional RM3 view. Current official-section tables default to 4.2 Melody, with
+Orchestra handling its predictions; these equations are not a specification of Melody.
+Open the site’s Methodology guide for the current Orchestra model family;
+[RM4 methodology](RM4_METHODOLOGY.md) documents the predecessor models and evidence.
 
 For each completed, valid singles rubber, the model treats games as scoreline evidence. If player `i` wins `g_i` games and player `j` wins `g_j` games:
 
@@ -298,11 +319,11 @@ Adaptive rating bands are calculated from qualified entries in the selected sect
 
 ### Match predictions and round history
 
-The Prediction Centre converts Power differences to game probabilities, then uses the competition format to estimate rubber and team outcomes. It distinguishes standard Sets, Green Ball and Rubbers singles scoring. Selected players' default singles order is inferred from continuity in previous official playing orders and average position, with TROLS emergency markers kept at the bottom; it is not simply sorted by rating. Users may replace the singles order and choose both doubles pairs from the drafted players. For Sets playoffs, each side may draft up to six players, use four in singles and independently choose four for doubles.
+The Prediction Centre converts Power differences to game probabilities, then uses the competition format to estimate rubber and team outcomes. It distinguishes standard Sets, Green Ball and Rubbers singles scoring. Default lineups use the most-used complete ordered selections available before the fixture round, with registered/observed-order fallbacks when evidence is incomplete. Emergency markers and format limits are retained; lineups are not simply sorted by rating. Users may replace the singles order and choose both doubles pairs from the drafted players. For Sets playoffs, each side may draft up to six players, use four in singles and independently choose four for doubles.
 
 Run Simulation samples each rubber from those same game probabilities and displays one possible scorecard, game totals, set totals and estimated team points. The simulated score is illustrative and can change on every run; the projected win percentages are long-run averages, not a promise about any particular set of 100 runs. The round simulator samples each remaining scheduled fixture using its default lineup. These results do not alter the official TROLS data.
 
-Round-by-round snapshots refit the ratings using results available through each round in the official draw. A round without new valid singles evidence carries the previous state forward. Results-versus-expectation calculations use pre-round ratings; players without an earlier snapshot start at the neutral 1500 section centre.
+Round-by-round snapshots refit the ratings using results available through each round in the official draw. A round without new valid singles evidence carries the previous state forward. Results-versus-expectation calculations use pre-round ratings; players without an earlier snapshot use the selected model’s neutral starting point.
 
 ## Results, standings and BRTA scoring
 
@@ -312,20 +333,31 @@ For archived seasons, a published TROLS final ladder takes precedence over a rec
 
 ## Settings and exports
 
-Settings contains display choices, default competition and section selectors, and
-separate Methodology and BRTA rules overlays. **RM3** is the default rating model;
-**RM3b** is an experimental alternative using game, set, match and match-tiebreak
-evidence. History is opened from the home page, alongside the current version.
+Settings contains display preferences, default competition and section choices,
+Theme Studio and links to Methodology and BRTA rules. Official-section tables default
+to **4.2 Melody**, with **4.2 Orchestra** predictions. Change the saved rating model
+from the Home rating-model control or Settings. Existing valid preferences are retained.
 
-**Export Section Results** downloads the results CSV without internal fixture IDs.
-**Export Complete Section** downloads an HTML report containing ratings, bands,
-round history, standings, fixtures and scorecards. Provisional entries can be
-shown with the checkbox beside these export links. Rating-model selection lives
-at the bottom of Methodology; enabling RM3b requires confirmation. Display also
-offers persistent animation and system-font preferences. Custom sections can
-choose the number of semifinal positions shown on the ladder.
+**Export section** beneath the competition/section picker opens one chooser for the
+currently selected section:
 
-Extras also reveals More Settings, with optional surprises saved on this device.
+- **CSV** — fixture and rubber rows without internal IDs.
+- **Complete Section** — an HTML report with ratings, standings, history, fixtures and scorecards.
+- **Technical CSV** — CSV with source match and fixture IDs.
+- **Editable JSON** — a Section Creator backup that can be imported and edited locally.
+- **Markdown** — a portable fixture and match report.
+- **Rating model comparison** — an HTML comparison, available when Extras is enabled.
+
+CSV and Markdown include results and scheduled fixtures, merging overlapping fixture
+records. CSV preserves rubber-specific statuses. Editable transfers retain source
+identities where possible and distinguish same-name players by team; incomplete source
+identities still require review. Exported reports use the selected section/model where
+applicable. Use the provisional checkbox to include provisional rating entries.
+
+Result cards use stronger win/loss tints and coloured borders, bold winners and italic
+losers. Rubbers, games and points colour each side’s totals; points receive extra emphasis.
+Display preferences include match order, animation, graph shape and system fonts.
+Extras reveals additional optional controls saved on this device.
 
 ## Data flow and automation
 
@@ -343,7 +375,7 @@ static site on GitHub Pages
 
 `scraper/sync_trols.py` discovers the active competitions and sections, downloads the results and scorecards, reads each team's official draw, validates the records, and writes the current-season source data. `generate_site_data.py` fits the section models and creates the data consumed by the website. The default section is embedded in `data.js`; other section payloads are loaded when selected.
 
-The routine GitHub Actions sync runs daily at approximately 3:07 PM Australia/Melbourne time, and can also be started manually. It runs the regression tests, regenerates the current-season site data, and records a heartbeat. On a later first visit in a browser, the site shows a short plain-English notice describing whether that check found updated results.
+The routine GitHub Actions sync runs daily at approximately 3:07 PM Australia/Melbourne time, and can also be started manually. It runs the regression tests, regenerates the current-season site data, and records a heartbeat. The Last checked control opens a panel showing the most recent check separately from the last check that found new results. Publishing may finish after the scheduled start. Returning visitors also receive a short results-check notice.
 
 Historical importing is separate from routine sync: `scraper/backfill_history.py` fetches the past seasons listed by TROLS, and `generate_archive_site_data.py` builds their rating payloads and History catalogue. The archive workflow is manually dispatchable and code-triggered; normal scheduled checks do not rescan the past.
 
@@ -480,7 +512,9 @@ Plural rating commands return up to ten rows; singular extremes include ties.
 Records compare win percentage, then most wins (best) or most losses (worst).
 Game percentage is games won / games played. The history command index preserves
 season and section context, qualification and all ties without loading every
-section into the browser. Historical command ratings use published RM3 snapshots.
+section into the browser. Historical command ratings use published RM3 snapshots. Custom sections are excluded
+from cross-section command leaderboards; locally edited results do not compete with
+official records.
 
 ### Rounds, Following and Share Cards (8.2)
 
@@ -594,6 +628,7 @@ remain deliberately vague in the public changelog.
 Additional regression suite:
 
 ```sh
+npm install --prefix /tmp/brta-ui-tests jsdom
 NODE_PATH=/tmp/brta-ui-tests/node_modules node tests/browser/refinement.cjs
 ```
 
