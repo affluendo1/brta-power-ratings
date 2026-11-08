@@ -1,12 +1,15 @@
 # BRTA Power Ratings
 
-**Current version: 8.5.4.2**
+**Current version: 8.5.4.3**
 
 The default player rating model is **4.2 Melody**, while **4.2 Orchestra** handles predictions.
 Other available models include **4.2 Foundation**, **RM4.2**, **RM4.1 Ensemble**, **RM4a**,
 **RM4b**, **RM3** and **RM3b**. Existing valid model preferences are retained.
 
 ### Latest updates
+
+- **8.5.4.3 (tiny):** Refined match scorecards and centred the totals below the matches.
+  Small model adjustments and other additions.
 
 - **8.5.4.2 (tiny):** Refined creator layouts and touch controls on mobile, kept special-status
   editing in place, strengthened result colours and borders, and aligned mobile Player Lab
@@ -129,7 +132,7 @@ The original `7.1`, `7.1.1` and `7.1.1.1` entries are restored separately from `
 Older grouped development is split into retrospective entries at source-commit timestamps.
 Those entries include a `sourceCommit` for provenance; the version labels describe the
 reconstructed release cadence, rather than claiming corresponding Git tags existed.
-The current website version remains 8.5.4.2: this history revision is documentation maintenance.
+The restored history was published as documentation maintenance during 8.5.4.2.
 
 To publish a website release, prepend an entry with its version, commit timestamp,
 size and changes; add a short title only for a substantial update. Bump the data asset version
@@ -640,3 +643,10 @@ and the archive search indexes. The migration is idempotent and preserves source
 scores. Add `--report /path/to/report.json` to save a local correction report.
 
 
+
+### 8.5.4.3 model coefficient note
+
+Orchestra blend coefficients received manual changes at hundredths-of-a-percentage-point
+resolution. These are not newly fitted or validated improvements. The bundle records
+the adjustment; stored evaluation metrics describe the original coefficients. Excluded
+experts, format eligibility and single-expert fallbacks are retained.

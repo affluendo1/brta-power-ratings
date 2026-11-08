@@ -6,7 +6,7 @@ function layoutDefaultCode(){const c=localStorage.getItem('brta-default-competit
 let rm4FrozenPromise=null;
 async function ensureRM4Frozen(){if(!rm4FrozenPromise)rm4FrozenPromise=fetch('web/models/rm4-frozen.json?v=8521').then(r=>{if(!r.ok)throw Error('Prediction model unavailable.');return r.json()}).then(b=>window.BRTARM4Frozen=b).catch(e=>{rm4FrozenPromise=null;throw e});return rm4FrozenPromise}
 let orchestraPromise=null;
-async function ensureOrchestra(){if(!orchestraPromise)orchestraPromise=Promise.all([fetch('web/models/orchestra-bundle.json?v=8521').then(r=>{if(!r.ok)throw Error('Orchestra unavailable.');return r.json()}),fetch('web/models/orchestra-history.json?v=8521').then(r=>r.ok?r.json():null).catch(()=>null)]).then(([bundle,history])=>{window.BRTAOrchestraBundle=bundle;window.BRTAOrchestraHistory=history;return bundle}).catch(e=>{orchestraPromise=null;throw e});return orchestraPromise}
+async function ensureOrchestra(){if(!orchestraPromise)orchestraPromise=Promise.all([fetch('web/models/orchestra-bundle.json?v=8543').then(r=>{if(!r.ok)throw Error('Orchestra unavailable.');return r.json()}),fetch('web/models/orchestra-history.json?v=8521').then(r=>r.ok?r.json():null).catch(()=>null)]).then(([bundle,history])=>{window.BRTAOrchestraBundle=bundle;window.BRTAOrchestraHistory=history;return bundle}).catch(e=>{orchestraPromise=null;throw e});return orchestraPromise}
 function legacyModelUnlocked(model){try{return auxiliaryEnabled()&&JSON.parse(localStorage.getItem('brta-more-settings-v1')||'{}')[model.toLowerCase()]===true}catch{return false}}
 function rm1Unlocked(){return legacyModelUnlocked('RM1')}
 function rm2Unlocked(){return legacyModelUnlocked('RM2')}

@@ -24,8 +24,8 @@ test('real worker imports the complete new engine and returns the same tables',a
  const w=new Worker(),value=await new Promise((resolve,reject)=>{w.onmessage=e=>e.data.error?reject(Error(e.data.error)):resolve(e.data.data);w.postMessage({data,model:'4.2 Orchestra',orchestraBundle:b,history})});w.terminate();assert.deepEqual(JSON.parse(JSON.stringify(value.singles)),result.singles);assert.equal(value.meta.orchestraVersion,b.version);
 });
 test('Baton produces repeatable forecasts and side reversal with separate discipline weights',()=>{
- const a=O.forecast(result.orchestra,target,b,f),again=O.forecast(result.orchestra,target,b,f),reverse=O.forecast(result.orchestra,{...target,home:target.away,away:target.home},b,f);assert.deepEqual(a,again);assert(Math.abs(a.p+reverse.p-1)<1e-10);if(a.engine==='4harmony.2')assert.deepEqual(a.weights,[.5,0,.25,.25]);else assert.equal(a.engine,'RM4a');
- const d=matches.find(m=>m.type==='Doubles'),m={...target,type:'Doubles',home:d.home,away:d.away};assert.deepEqual(O.forecast(result.orchestra,m,b,f).weights,[.75,0,.25,0]);
+ const a=O.forecast(result.orchestra,target,b,f),again=O.forecast(result.orchestra,target,b,f),reverse=O.forecast(result.orchestra,{...target,home:target.away,away:target.home},b,f);assert.deepEqual(a,again);assert(Math.abs(a.p+reverse.p-1)<1e-10);if(a.engine==='4harmony.2')assert.deepEqual(a.weights,b.ordinary.Singles.weights);else assert.equal(a.engine,'RM4a');
+ const d=matches.find(m=>m.type==='Doubles'),m={...target,type:'Doubles',home:d.home,away:d.away};assert.deepEqual(O.forecast(result.orchestra,m,b,f).weights,b.ordinary.Doubles.weights);
 });
 test('target/future contamination cannot change an earlier forecast or rating-history prefix',()=>{
  const m={...target,date:matches.find(r=>r.round===5).date,round:5},expected=O.forecast(result.orchestra,m,b,f);

@@ -2,6 +2,15 @@
 // Retrospective entries use source-commit timestamps; sourceCommit records their provenance.
 window.BRTA_RELEASES = Object.freeze([
   {
+    "version": "8.5.4.3",
+    "size": "tiny",
+    "committedAt": "2026-11-08T11:57:24.357080+00:00",
+    "changes": [
+      "Refined match scorecards and team totals.",
+      "Small model adjustments and other additions."
+    ]
+  },
+  {
     "version": "8.5.4.2",
     "title": "Creator and export refinements",
     "size": "tiny",
