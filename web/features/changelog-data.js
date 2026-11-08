@@ -2,6 +2,16 @@
 // Retrospective entries use source-commit timestamps; sourceCommit records their provenance.
 window.BRTA_RELEASES = Object.freeze([
   {
+    "version": "8.5.4.4",
+    "size": "tiny",
+    "committedAt": "2026-11-08T12:12:01.020352+00:00",
+    "changes": [
+      "Faster custom fixture setup and score entry.",
+      "Simpler attendance options and mobile round navigation.",
+      "Refined mobile creator layouts and reliability."
+    ]
+  },
+  {
     "version": "8.5.4.3",
     "size": "tiny",
     "committedAt": "2026-11-08T11:57:24.357080+00:00",

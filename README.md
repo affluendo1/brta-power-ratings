@@ -1,12 +1,14 @@
 # BRTA Power Ratings
 
-**Current version: 8.5.4.3**
+**Current version: 8.5.4.4**
 
 The default player rating model is **4.2 Melody**, while **4.2 Orchestra** handles predictions.
 Other available models include **4.2 Foundation**, **RM4.2**, **RM4.1 Ensemble**, **RM4a**,
 **RM4b**, **RM3** and **RM3b**. Existing valid model preferences are retained.
 
 ### Latest updates
+
+- **8.5.4.4 (tiny):** Faster custom fixtures, optional attendance exceptions and cleaner mobile navigation.
 
 - **8.5.4.3 (tiny):** Refined match scorecards and centred the totals below the matches.
   Small model adjustments and other additions.
@@ -174,7 +176,10 @@ round-by-round selections, doubles partnerships, emergencies and suggested lineu
 configured match counts, set lengths and best-of settings, with custom team
 scoring. Club Zone entry points currently show a maintenance notice.
 
-For each round, choose the date and fixtures. Tick the matchday squad checkboxes;
+For each round, choose the date and fixtures. New fixtures automatically reuse the
+team’s previous active squad and doubles pairs, or the first registered players on
+their first appearance. Matches are generated immediately. Change squad checkboxes only
+when selections differ;
 registered order is used automatically, and the up/down buttons adjust it.
 **First N** and **Last round** shortcuts fill the squads quickly. Matchups are
 created automatically once both sides are ready. Existing scores are preserved
@@ -650,3 +655,7 @@ Orchestra blend coefficients received manual changes at hundredths-of-a-percenta
 resolution. These are not newly fitted or validated improvements. The bundle records
 the adjustment; stored evaluation metrics describe the original coefficients. Excluded
 experts, format eligibility and single-expert fallbacks are retained.
+
+Attendance exceptions are optional and collapsed by default. Normal fixtures need no
+per-player attendance confirmation. Mobile rounds use a native jump selector instead
+of a sticky scrolling list. Score presets update in place without rebuilding the editor.
