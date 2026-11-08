@@ -356,12 +356,29 @@ function renderResults(){const rounds=D.results||[];if(!rounds.length){$('#resul
 function rubberCode(r){const n=String(r.position||'').match(/\d+/)?.[0]||'';return(r.type==='Doubles'?'D':'S')+n}
 function doublesPlayerLabel(name){if(name==='No Player')return 'No Player';if(window.BRTAPlayerDisplay?.isUnknown(name)||/^Unidentified player(?:\s|\()/i.test(name))return 'Unidentified player';const parts=String(name).trim().split(/\s+/);return D.meta?.is_custom&&D.meta.doublesSurnames&&parts.length>1?parts.slice(1).join(' '):parts[0]}
 function compactDoublesName(name){return String(name).split('/').map(doublesPlayerLabel).join(' / ')}
+function rubberWinnerSide(r){
+  const explicit=r.winnerSide||r.winner_side;
+  if(explicit==='home'||explicit==='away')return explicit;
+  if(r.winner==='home'||r.winner==='away')return r.winner;
+  const same=String(r.home||'').trim().toLowerCase()===String(r.away||'').trim().toLowerCase();
+  if(r.winner&&!same){
+    if(r.winner===r.home)return 'home';
+    if(r.winner===r.away)return 'away';
+  }
+  // Only use the score to resolve genuinely ambiguous same-name players.
+  // Do not guess outcomes for a forfeit, washout or incomplete score.
+  if(!same||!r.winner||!/\d+\s*[-–:]\s*\d+/.test(String(r.score||'')))return '';
+  const scores=[...String(r.score).matchAll(/(\d+)\s*[-–:]\s*(\d+)/g)];
+  let home=0,away=0;
+  for(const part of scores){const h=Number(part[1]),a=Number(part[2]);home+=Number(h>a);away+=Number(a>h)}
+  return home>away?'home':away>home?'away':'';
+}
 function resultDetailHTML(match,contextPlayer=null){
   if(!match)return'<div class="notice">This fixture does not have a scorecard yet.</div>';
   const complete=match.status==='Completed',scored=match.homePoints!=null&&match.awayPoints!=null,winner=matchWinner(match),result=complete?match.homeRubbers+'–'+match.awayRubbers:'—',outcome=winner?esc(winner)+(complete?(match.simulated?' wins the team tie':' won the team tie'):' received the team points'):(match.status==='Wash Out'?'The fixture was recorded as a washout':'Team tie level'),pairNames=(name,flags=[])=>String(name).split('/').map((p,i)=>({full:p.trim(),flag:flags[i]})).sort((a,b)=>{const side=String(name)===String(match.rubbers?.find(r=>r.type==='Doubles'&&r.home===name)?.home)?'home':'away',team=match[side],names=lab8OrderedNames(name,team);return names.indexOf(a.full)-names.indexOf(b.full)}).map(({full,flag})=>{return resultPerson(full,doublesPlayerLabel(full))+(flag?'<i class="emergency-marker" title="Emergency player recorded by TROLS">X</i>':'')}).join(' <button type="button" class="pair-sep person" data-eight-pair="'+esc(name)+'" data-eight-round="'+(lab8Context?.round??'')+'" aria-label="Open pair lab">/</button> ');
   let metrics=complete?'<div class="result-metrics"><div><span>Rubbers</span><b>'+match.homeRubbers+'–'+match.awayRubbers+'</b></div><div><span>Games</span><b>'+match.homeGames+'–'+match.awayGames+'</b></div><div><span>Points</span><b>'+(match.homePoints??'—')+'–'+(match.awayPoints??'—')+'</b></div></div>':scored?'<div class="result-metrics"><div><span>Team points</span><b>'+(match.homePoints??'—')+'–'+(match.awayPoints??'—')+'</b></div><div><span>Games</span><b>Not recorded</b></div></div>':'';
   let head='<div class="result-detail-head"><span>'+esc(match.label||('Round '+match.round))+' · '+esc(roundDate(match.date))+'</span><h2>'+teamName(match.home)+' <b>'+result+'</b> '+teamName(match.away)+'</h2><p>'+outcome+(complete?'':' · '+esc(match.status))+'</p>'+metrics+'</div>';
-  let rows=(match.rubbers||[]).slice().sort((a,b)=>disciplineCompare(a,b)||(a.order??0)-(b.order??0)).map(r=>{const marker=emergency=>emergency?'<i class="emergency-marker" title="Emergency player recorded by TROLS">X</i>':'',home=(r.type==='Doubles'?pairNames(r.home,r.homeEmergencies||[]):resultPerson(r.home)+marker(r.homeEmergency)),away=(r.type==='Doubles'?pairNames(r.away,r.awayEmergencies||[]):resultPerson(r.away)+marker(r.awayEmergency));const hWon=!!r.winner&&r.winner===r.home,aWon=!!r.winner&&r.winner===r.away,decided=hWon!==aWon;
+  let rows=(match.rubbers||[]).slice().sort((a,b)=>disciplineCompare(a,b)||(a.order??0)-(b.order??0)).map(r=>{const marker=emergency=>emergency?'<i class="emergency-marker" title="Emergency player recorded by TROLS">X</i>':'',home=(r.type==='Doubles'?pairNames(r.home,r.homeEmergencies||[]):resultPerson(r.home)+marker(r.homeEmergency)),away=(r.type==='Doubles'?pairNames(r.away,r.awayEmergencies||[]):resultPerson(r.away)+marker(r.awayEmergency));const winningSide=rubberWinnerSide(r),hWon=winningSide==='home',aWon=winningSide==='away',decided=!!winningSide;
     const homeTone=decided?(hWon?'side-won':'side-lost'):'side-neutral',awayTone=decided?(aWon?'side-won':'side-lost'):'side-neutral';
     return '<tr class="rubber-row rubber-row-854">'
       +'<td class="rubber-side rubber-home '+homeTone+'" aria-label="'+esc('Home side: '+(decided?(hWon?'winner':'loser'):'no result')+'. '+r.home)+'" title="'+esc(r.home)+'">'

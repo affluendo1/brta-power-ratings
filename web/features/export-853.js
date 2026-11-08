@@ -133,8 +133,8 @@ function showSchedule(){
   const known=[...(root.DATA?.catalog||[]),...(catalog?.sections||[])],meta=new Map(known.map(s=>[s.section_code,s]));
   const types={AP:'Saturday PM',HA:'Thursday AM',AA:'Saturday AM',UA:'Sunday AM',TA:'Tuesday AM',TN:'Tuesday Night',WA:'Wednesday AM'};
   const groups=new Map();
-  for(const code of codes){
-   const record=meta.get(code),competition=record?.competition_label||types[String(code).slice(0,2)]||'Other competition';
+  for(const rawCode of codes){
+   const code=String(rawCode).replace(/\.json$/i,''),record=meta.get(code),competition=record?.competition_label||types[String(code).slice(0,2)]||'Other competition';
    const name=record?.section_label||('Section '+(Number(String(code).slice(2))||'name unavailable'));
    if(!groups.has(competition))groups.set(competition,[]);
    groups.get(competition).push(humanLabel(name));
