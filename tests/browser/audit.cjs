@@ -57,6 +57,29 @@ esc();await tick();assert(!w.document.querySelector('#profileOverlay').classList
 vm.runInContext("BRTATeamLabUI.open(D.results[0].fixtures[0].home)",ctx);await tick();
 click('[data-team822-expand]');await tick();assert(w.document.querySelector('#teamLabContent').classList.contains('team823-expanded'));
 console.log('Rubbers records, honest outcome-only scorecards and full Team Explorer expansion passed');
+esc();await tick();
+const local=structuredClone(require('../test_custom_sections.js').sample());
+const backup={format:'brta-custom-sections',version:1,sections:[local]};
+assert.equal(w.CustomSections.openBackup(backup),true);
+await tick();
+assert(!w.document.querySelector('#customAdminOverlay').classList.contains('hidden'),'Imported local editor opens');
+click('#customAdminOverlay [data-ca-action="view"]');
+await vm.runInContext("loadSection('local-test')",ctx);
+assert.equal(vm.runInContext('D.meta.section_code',ctx),'local-test');
+assert.equal(w.CustomSections.openBackup(backup),true,'Re-importing the currently viewed local section succeeds');
+await tick();await tick();await tick();
+assert(!w.document.querySelector('#customAdminOverlay').classList.contains('hidden'),'Concurrent local reload must not close newly opened editor');
+click('#customAdminOverlay [data-ca-action="view"]');
+await vm.runInContext("loadSection('local-test')",ctx);
+w.URL.createObjectURL=()=> 'blob:ui-audit';w.URL.revokeObjectURL=()=>{};
+w.HTMLAnchorElement.prototype.click=function(){};
+click('#exportSectionBtn');await tick();
+click('[data-export-853="json"]');await tick();await tick();
+assert(w.document.querySelector('#export853ImportPrompt'),'Editable export opens the import prompt');
+esc();await tick();
+assert(!w.document.querySelector('#export853ImportPrompt'),'Escape dismisses the import prompt');
+assert(!w.document.querySelector('#export853Overlay').classList.contains('hidden'),'Export chooser remains open after dismissing prompt');
+console.log('Existing-local import race and export prompt Escape/focus regressions passed');
 if(errors.length)throw Error(errors.join('\n'));console.log('No script/runtime errors');dom.window.close();})().catch(e=>{console.error(e.stack);console.error(errors);dom.window.close();process.exitCode=1});
 
 

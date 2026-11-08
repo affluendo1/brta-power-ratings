@@ -30,3 +30,12 @@
 .ca-checkbox-setting{display:flex;align-items:center;gap:9px;line-height:1.5}.ca-field:has(.ca-checkbox-setting)>small{font-size:11px;font-weight:400;color:var(--muted-color)}
 
 .ca-roster-preview{margin-top:14px;padding:14px;border:1px solid var(--border-color);border-radius:8px}.ca-roster-preview h4{margin:0 0 8px}.ca-roster-preview p{overflow-wrap:anywhere}.ca-bulk>.ca-checkbox-setting{margin:10px 0}.custom-team-roster{margin:18px 0;border-top:1px solid var(--border-color);padding-top:14px;overflow:auto}.custom-team-roster summary{cursor:pointer;font-weight:700;font-size:13px}.custom-team-roster table{width:100%;font-size:12px;margin-top:10px}.custom-team-roster th,.custom-team-roster td{padding:7px 6px}.custom-team-roster td:nth-child(2){white-space:normal}.custom-section [data-club-team]{display:none!important}
+
+/* Audit: keep the matchday-attendance control compact without squeezing roster names. */
+.ca-squad-row>label.ca-attendance-check{flex:0 0 auto;min-width:max-content;padding:8px;gap:5px;font-size:11px;font-weight:600;white-space:nowrap;color:var(--text-color);border-left:1px solid var(--border-color)}
+.ca-squad-row>label.ca-attendance-check input{width:16px;height:16px;flex:none}
+@media(max-width:600px){
+ .ca-squad-row{flex-wrap:wrap}
+ .ca-squad-row>label:first-child{flex:1 1 100%}
+ .ca-squad-row>label.ca-attendance-check{min-width:0;flex:1 1 auto;padding:7px 10px;border-left:0;border-top:1px solid var(--border-color)}
+}
