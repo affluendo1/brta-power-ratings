@@ -18,6 +18,12 @@ assert.equal(imported.teams.length,2);
 assert(Exports.csv(Model.build(src)).includes('record_type'));
 assert(!Exports.csv(Model.build(src)).includes('match_id'));
 assert(Exports.csv(Model.build(src),true).includes('"match_id","fixture_id"'));
+const testRows=Exports.rows(Model.build(src),true);
+const fixtureRow=testRows.find(row=>row[0]==='Fixture'),rubberRow=testRows.find(row=>row[0]==='Rubber');
+assert.equal(fixtureRow.at(-2),'','A fixture ID is not a match ID.');
+assert.equal(rubberRow.at(-2),'','Absent source match IDs must not be fabricated.');
+assert.equal(fixtureRow.at(-1),rubberRow.at(-1),'Both rows share the real fixture ID.');
+
 assert(Exports.markdown(Model.build(src)).includes('Round 1'));
 
 const s=clone(src);

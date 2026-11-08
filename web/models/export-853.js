@@ -28,11 +28,11 @@ function rows(data,technical=false){
  for(const round of data.results||[])for(const f of round.fixtures||[]){
   const base=['Fixture',data.meta?.competition_label,data.meta?.section_label,f.date??round.date,f.round??round.round,f.status,f.home,f.away,f.homePoints,f.awayPoints,f.homeRubbers,f.awayRubbers,f.homeGames,f.awayGames,'','','','','',''];
   const identity=clean(f.fixtureId||f.id);
-  output.push(technical?[...base,identity,identity]:base);
+  output.push(technical?[...base,'',identity]:base);
   for(const m of f.rubbers||[]){
    const line=['Rubber',data.meta?.competition_label,data.meta?.section_label,f.date??round.date,f.round??round.round,f.status,f.home,f.away,f.homePoints,f.awayPoints,f.homeRubbers,f.awayRubbers,f.homeGames,f.awayGames,m.type,m.position,m.home,m.away,m.winner,m.score];
    // TROLS generally supplies fixture IDs, not distinct per-rubber IDs. Do not fabricate them.
-   output.push(technical?[...line,clean(m.matchId||m.match_id||identity),identity]:line);
+   output.push(technical?[...line,clean(m.matchId||m.match_id),identity]:line);
   }
  }
  return output;
