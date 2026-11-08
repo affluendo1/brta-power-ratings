@@ -69,7 +69,7 @@ function toBackup(source,now=new Date().toISOString()){
  for(const row of source.teams||[])teamId(row.team||row.name);
  const schedule=new Map();
  const add=(r,f,fromResults=false)=>{
-  if(!f?.home)return;const n=roundNo(r),day=date(f.date||r.date);if(!n||!day)return;
+  if(!f?.home)return;if(/^byes?$/i.test(clean(f.home))&&clean(f.away))f={...f,home:f.away,away:'Bye',status:'Bye'};const n=roundNo(r),day=date(f.date||r.date);if(!n||!day)return;
   const key=n+'|'+clean(f.home).toLowerCase()+'|'+clean(f.away||'Bye').toLowerCase();
   let gr=schedule.get(n);if(!gr){gr={number:n,date:day,label:r.label||'Round '+n,fixtures:new Map()};schedule.set(n,gr)}
   let item=gr.fixtures.get(key);

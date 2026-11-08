@@ -64,6 +64,11 @@ assert(!noCodeData.singlesMatches.some(x=>x[2]==='Alice'),'Unidentified TROLS-st
 assert(Tools.doublesPairs(s,f,'home')[1].includes(Model.NO_PLAYER),'Short-handed pair remains visible in the pair picker');
 const rubbersSection=clone(s);rubbersSection.format='rubbers';rubbersSection.singlesBestOf=3;rubbersSection.doublesBestOf=1;
 assert.equal(Model.score(singlesForfeit,rubbersSection).score,'0-6 0-6 Forfeit','Rubbers forfeit awards two sets');
+const adultSource=require('../data/site/sections/TN003.json');
+const adultBackup=Exports.toBackup(adultSource,'2026-11-08T06:00:00.000Z').sections[0];
+assert(adultBackup.rounds.some(r=>r.fixtures.some(f=>f.status==='Bye')));
+assert(adultBackup.rounds.every(r=>r.fixtures.every(f=>f.homeTeamId)),'Reverse TROLS byes must be normalised');
+Model.validate(adultBackup);
 const historical=clone(s);
 historical.ratingModel='V3';
 Model.validate(historical);
