@@ -3,7 +3,7 @@
 'use strict';
 const $=s=>document.querySelector(s),esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const api=root.BRTAExport853;
-let modal=null,returnFocus=null,busy=false;
+let modal=null,returnFocus=null,busy=false,exportTarget=null,exportModel=null;
 const title=(meta)=>[meta.competition_label,meta.section_label].filter(Boolean).join(' · ');
 const prefix=(meta)=>api.slug(title(meta));
 const download=(text,name,type)=>{const url=URL.createObjectURL(new Blob([text],{type})),a=document.createElement('a');a.href=url;a.download=name;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),2500)};
@@ -32,7 +32,7 @@ async function run(mode){
  buttons.forEach(b=>b.disabled=true);
  const status=modal.querySelector('#export853Status');
  try{
-  const meta=selected();
+  const meta=exportTarget||selected();
   status.textContent='Preparing '+title(meta)+'…';
   const {data,saved}=await source(meta),base=prefix(meta);
   if(mode==='csv'||mode==='technical'){
@@ -45,12 +45,12 @@ async function run(mode){
   }else if(mode==='markdown'){
    download(api.markdown(data),base+'-results.md','text/markdown;charset=utf-8');
   }else if(mode==='complete'){
-   const processed=await layoutApplyModel(data,selectedRatingModel());
+   const processed=await layoutApplyModel(data,exportModel||selectedRatingModel());
    download(BRTALayoutModel.report(processed,BRTAHistory),base+'-complete-section.html','text/html;charset=utf-8');
   }else if(mode==='comparison'){
    if(!auxiliaryEnabled())throw Error('Enable Extras to export a model comparison.');
    if(!root.BRTAModelComparison?.export)throw Error('Comparison export is unavailable.');
-   const processed=await layoutApplyModel(data,selectedRatingModel());
+   const processed=await layoutApplyModel(data,exportModel||selectedRatingModel());
    await root.BRTAModelComparison.export(processed);
   }else throw Error('This export format is unavailable. Choose an option from the export panel.');
   status.textContent='Export ready. Your current section was not changed.';
@@ -92,7 +92,7 @@ function open(){
   root.BRTAOverlays?.register?.('export853Overlay',close);
  }
  let description='Open a section to export it.';
- try{description=title(selected())}catch(_){}
+ try{exportTarget={...selected()};description=title(exportTarget);exportModel=exportTarget.is_custom?(exportTarget.modelChoice||{V3:'RM3',V3B:'RM3b'}[exportTarget.ratingModel]||exportTarget.ratingModel||'RM4.2'):selectedRatingModel()}catch(_){exportTarget=null;exportModel=null}
  const choices=[
   ['csv','CSV','Original results table, without extra technical columns.'],
   ['complete','Complete Section','Full section report with ratings, fixtures and results.'],
@@ -107,24 +107,6 @@ function open(){
  modal.classList.remove('hidden');root.BRTAOverlays?.lock?.(modal);
  modal.querySelector('[data-export-853]')?.focus();
 }
-function bind(){
- return; // Export lives beneath the currently viewed section.
- if(!group)return;
- let row=$('#export853SettingsRow');
- if(!row){
-  row=document.createElement('div');row.id='export853SettingsRow';row.className='export853-settings-row';
-  row.innerHTML='<p class="settings-help">Download your default section, including an editable Section Creator backup.</p><button type="button" id="export853Open" class="button secondary">Export default section</button>';
-  section.insertAdjacentElement('afterend',row);
-  row.querySelector('button').onclick=open;
- }
- const set=()=>{
-  const b=row.querySelector('button');
-  b.disabled=!$('#defaultCompetition')?.value||!$('#defaultSection')?.value;
-  b.title=b.disabled?'Choose both default fields to enable exports.':'';
- };
- set();
- for(const id of ['defaultCompetition','defaultSection'])$('#'+id)?.addEventListener('change',()=>set());
-}
 function showSchedule(){
  let o=$('#checkSchedule853');
  if(!o){
@@ -134,6 +116,8 @@ function showSchedule(){
   root.BRTAOverlays?.register?.(o.id,close);
   o.querySelectorAll('[data-check853-close]').forEach(b=>b.onclick=close);
  }
+ o.querySelector('#check853Latest').textContent='Loading the latest check…';
+ o.querySelector('#check853Positive').textContent='Loading the last successful discovery…';
  o.classList.remove('hidden');root.BRTAOverlays?.lock?.(o);o.querySelector('.close-btn').focus();
  const stamp=iso=>{if(!iso)return 'Not recorded';const d=new Date(iso);return Number.isFinite(d.getTime())?new Intl.DateTimeFormat('en-AU',{timeZone:'Australia/Melbourne',dateStyle:'medium',timeStyle:'short'}).format(d):'Not recorded';};
  const humanLabel=label=>String(label||'').replace(/\bMens\s+S\/D\b/i,"Men's singles & doubles").replace(/\bWomens\s+S\/D\b/i,"Women's singles & doubles").replace(/\bS\/D\b/gi,'singles & doubles');
@@ -159,8 +143,5 @@ function showSchedule(){
 
 }
 document.addEventListener('click',e=>{if(e.target.closest?.('#export853Open,#exportSectionBtn')){e.preventDefault();open()}else if(e.target.closest?.('[data-check-schedule]')){e.preventDefault();showSchedule()}});
-const observer=new MutationObserver(()=>{if($('#defaultSection')&&!$('#export853SettingsRow'))bind()});
-function start(){const host=$('#settingsContent');if(host){observer.observe(host,{childList:true,subtree:true});bind()}}
-if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start,{once:true});else start();
 root.BRTAExportUI853={open,run,selected,showSchedule};
 })(window);

@@ -48,7 +48,7 @@ function markdown(data){
  for(const round of data.upcomingFixtures||[])for(const f of round.fixtures||[])fixtures.set(key(round,f),{round,f});
  for(const round of data.results||[])for(const f of round.fixtures||[])fixtures.set(key(round,f),{round,f});
  const groups=new Map();for(const {round,f} of fixtures.values()){const k=String(round.round);if(!groups.has(k))groups.set(k,{...round,fixtures:[]});groups.get(k).fixtures.push(f)}
- for(const round of [...groups.values()].reverse()){
+ for(const round of [...groups.values()].sort((a,b)=>roundNo(b)-roundNo(a))){
   out+='## '+clean(round.label||'Round '+round.round)+' · '+clean(round.date)+'\n\n';
   for(const f of round.fixtures||[]){
    out+='### '+clean(f.home)+' vs '+clean(f.away)+'\n\n';
@@ -106,6 +106,7 @@ function toBackup(source,now=new Date().toISOString()){
  }
  const register=(name,tid,scope='')=>{
   name=clean(name);if(!name)return '';
+  if(/^No Player$/i.test(name))return Model.NO_PLAYER;
   if(name.includes('/'))throw Error('Cannot transfer a player name containing a slash: '+name);
   const noCode=/^(?:\[Unnamed |\[Unlisted |No Player\b|TROLS\s*No.?Code\b|No.?Code\b)/i.test(name);if(noCode&&scope&&!name.startsWith('['))name=name+' · '+scope;const key=identityKey(name,tid);let p=named.get(key);
   if(!p){const order=orders.get(tid)||roster.filter(p=>p.teamId===tid).length;orders.set(tid,order+1);
@@ -116,11 +117,11 @@ function toBackup(source,now=new Date().toISOString()){
  // Derive a format contract before writing match scorecards.
  const rubbers=[...schedule.values()].flatMap(r=>[...r.fixtures.values()]).flatMap(f=>f.rubbers||[]);
  const maxType=kind=>Math.max(0,...rubbers.filter(m=>m.type===kind).map(m=>pos(m.position)));
- const slotsS=maxType('Singles')||(fmt==='sets'?4:2);
- const slotsD=maxType('Doubles')||(fmt==='sets'?2:1);
+ const slotsS=source.meta.customRules?.singlesSlots??(maxType('Singles')||(fmt==='sets'?4:2));
+ const slotsD=source.meta.customRules?.doublesSlots??(maxType('Doubles')||(fmt==='sets'?2:1));
  if(slotsS>8||slotsD>8)throw Error('The Section Creator can store at most eight matches of each type.');
  const bo=kind=>rubbers.some(m=>m.type===kind&&sets(m.score).length>1)?3:1;
- const singlesBestOf=Math.max(bo('Singles'),fmt==='rubbers'?3:1),doublesBestOf=bo('Doubles');
+ const singlesBestOf=source.meta.customRules?.singlesBestOf??Math.max(bo('Singles'),fmt==='rubbers'?3:1),doublesBestOf=source.meta.customRules?.doublesBestOf??bo('Doubles');
  const setTarget=source.meta.customRules?.setTarget||6;
  const doublesTarget=source.meta.customRules?.doublesTarget||(fmt==='rubbers'?8:6);
  const nowSafe=/^\d{4}-\d\d-\d\d/.test(now)?now:new Date().toISOString();
@@ -138,7 +139,9 @@ function toBackup(source,now=new Date().toISOString()){
   const home=homeNames.map(name=>register(name,f.homeTeamId,f.sourceFixtureId||f.id));
   const away=awayNames.map(name=>register(name,f.awayTeamId,f.sourceFixtureId||f.id));
   const hs=sets(m.score),status=clean(m.status)||'Completed';
-  let stage=['Completed','Unfinished','Retired','Forfeit','Scheduled'].includes(status)?status:'Completed';
+  let stage=['Completed','Unfinished','Retired','Forfeit','No Contest','Scheduled'].includes(status)?status:'Completed';
+  const missingHome=home.includes(Model.NO_PLAYER),missingAway=away.includes(Model.NO_PLAYER);
+  if(missingHome||missingAway)stage=missingHome&&missingAway?'No Contest':'Forfeit';
   if(!hs.length&&stage==='Completed')stage='Scheduled';
   // Nonstandard incomplete scores are retained without claiming a completed match.
   if(stage==='Completed'){
@@ -148,9 +151,11 @@ function toBackup(source,now=new Date().toISOString()){
   }
   const flag=(list,names,side)=>list.map((id,i)=>{
    const p=roster.find(p=>p.id===id);
-   return !!m[side+'Emergencies']?.[i]||!!m[side+'Emergency']||!!p?.emergency||p?.teamId!==f[side+'TeamId'];
+   return id!==Model.NO_PLAYER&&(!!m[side+'Emergencies']?.[i]||!!m[side+'Emergency']||!!p?.emergency||p?.teamId!==f[side+'TeamId']);
   });
-  const winner=(clean(m.winner)===clean(m.home))?'home':(clean(m.winner)===clean(m.away))?'away':'';
+  const winner=missingHome&&missingAway?'':missingHome?'away':missingAway?'home':
+   ['home','away'].includes(m.winnerSide)?m.winnerSide:
+   (clean(m.winner)===clean(m.home))?'home':(clean(m.winner)===clean(m.away))?'away':'';
   return {id:'rubber-'+f.rubbers.length+'-'+type.toLowerCase(),type,position:pos(m.position),
    home,away,homeEmergencies:flag(home,homeNames,'home'),awayEmergencies:flag(away,awayNames,'away'),
    sets:hs.length?hs:[{h:'',a:'',mt:false}],status:stage,winner:stage==='Retired'||stage==='Forfeit'?winner:'',
@@ -167,7 +172,7 @@ function toBackup(source,now=new Date().toISOString()){
    for(const m of sourceFixture.rubbers||[]){
     const converted=finishMatch(m,f);if(!converted)continue;
     f.rubbers.push(converted);
-    for(const side of ['home','away'])for(const id of converted[side])if(!f[side+'Lineup'].includes(id))f[side+'Lineup'].push(id);
+    for(const side of ['home','away'])for(const id of converted[side])if(id!==Model.NO_PLAYER&&!f[side+'Lineup'].includes(id))f[side+'Lineup'].push(id);
    }
    if(f.status==='Completed'){
     const complete=f.rubbers.filter(m=>m.type==='Singles').length===slotsS&&f.rubbers.filter(m=>m.type==='Doubles').length===slotsD&&f.rubbers.every(m=>m.status!=='Scheduled');
