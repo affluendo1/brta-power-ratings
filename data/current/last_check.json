@@ -6,5 +6,19 @@
   "completed_fixtures": 2243,
   "singles_rubbers": 6674,
   "doubles_rubbers": 5615,
-  "validation": "source discrepancies"
+  "validation": "source discrepancies",
+  "changed_sections": [],
+  "last_positive": {
+    "checked_at_utc": "2026-11-06T12:05:11Z",
+    "changed_sections": [
+      "AP010",
+      "AP011",
+      "HA001",
+      "HA002",
+      "HA003",
+      "HA004"
+    ],
+    "source_commit": "f8c58df0242184e72f8c116ce263d20978da3717",
+    "completed_fixtures": null
+  }
 }
