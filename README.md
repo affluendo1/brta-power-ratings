@@ -1,12 +1,16 @@
 # BRTA Power Ratings
 
-**Current version: 8.5.4.1**
+**Current version: 8.5.4.2**
 
 The default player rating model is **4.2 Melody**, while **4.2 Orchestra** handles predictions.
 Other available models include **4.2 Foundation**, **RM4.2**, **RM4.1 Ensemble**, **RM4a**,
 **RM4b**, **RM3** and **RM3b**. Existing valid model preferences are retained.
 
 ### Latest updates
+
+- **8.5.4.2 (tiny):** Refined creator layouts and touch controls on mobile, kept special-status
+  editing in place, restored the Custom Competitions header shortcut, and improved editable
+  transfers, calendar order, custom-model reports and results-check panels.
 
 - **8.5.4.1:** Match scorecards now use real, flat three-column tables with subtle win/loss
   shading, bigger scores and plain, theme-coloured player names. Fixed missing-player

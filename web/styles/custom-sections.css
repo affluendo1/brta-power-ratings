@@ -31,6 +31,34 @@
 
 .ca-roster-preview{margin-top:14px;padding:14px;border:1px solid var(--border-color);border-radius:8px}.ca-roster-preview h4{margin:0 0 8px}.ca-roster-preview p{overflow-wrap:anywhere}.ca-bulk>.ca-checkbox-setting{margin:10px 0}.custom-team-roster{margin:18px 0;border-top:1px solid var(--border-color);padding-top:14px;overflow:auto}.custom-team-roster summary{cursor:pointer;font-weight:700;font-size:13px}.custom-team-roster table{width:100%;font-size:12px;margin-top:10px}.custom-team-roster th,.custom-team-roster td{padding:7px 6px}.custom-team-roster td:nth-child(2){white-space:normal}.custom-section [data-club-team]{display:none!important}
 
+/* Give every roster field its own column, with comfortable touch controls. */
+.ca-player-row{grid-template-columns:minmax(140px,2fr) minmax(110px,1.4fr) 64px 80px minmax(110px,1fr) auto;align-items:start}
+.ca-player-row>.button{align-self:end}
+.ca-player-row .ca-checkbox-setting{font-size:11px;font-weight:400;flex-wrap:wrap}
+.ca-match-details>summary{padding:7px 0;line-height:1.5}
+.ca-status-help:empty{display:none}
+.ca-sheet button:focus-visible,.ca-sheet summary:focus-visible{outline:2px solid var(--primary);outline-offset:3px}
+@media(min-width:761px) and (max-width:1100px){
+ .ca-roster-grid{grid-template-columns:1fr}
+}
+@media(max-width:760px){
+ .ca-sheet input:not([data-ca^="score-"]),.ca-sheet select,.ca-sheet textarea{font-size:16px}
+ .ca-player-row{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px;padding:14px;border:1px solid var(--border-color);border-radius:10px}
+ .ca-player-row>.ca-field:first-child{grid-column:1/-1}
+ .ca-player-row>.button{align-self:end;justify-self:start;min-height:44px}
+ .ca-sheet .ca-actions>.button,.ca-sheet .ca-tabs>.button,.ca-pair-picker label,.ca-match-details>summary{min-height:44px;box-sizing:border-box}
+ .ca-match-details>summary{display:list-item;padding-block:12px}
+ .ca-match-sides{grid-template-columns:minmax(0,1fr);gap:8px}
+ .ca-match-sides>.ca-vs{padding:0}
+ .ca-head h2{font-size:clamp(17px,5vw,21px)}
+ .ca-section-head>div,.ca-actions,.ca-toolbar{min-width:0;max-width:100%}
+ .ca-section-head h3{overflow-wrap:anywhere}
+ .ca-quick-sets:has(.ca-score-set:nth-child(2)){display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}
+ .ca-quick-sets:has(.ca-score-set:nth-child(2)) .ca-score-set{width:auto;min-width:0}
+ .ca-quick-sets:has(.ca-score-set:nth-child(2)) .ca-score-set>div{gap:3px}
+ .ca-quick-sets:has(.ca-score-set:nth-child(2)) input{min-width:0;font-size:17px;padding-inline:2px}
+}
+
 /* Audit: keep the matchday-attendance control compact without squeezing roster names. */
 .ca-squad-row>label.ca-attendance-check{flex:0 0 auto;min-width:max-content;padding:8px;gap:5px;font-size:11px;font-weight:600;white-space:nowrap;color:var(--text-color);border-left:1px solid var(--border-color)}
 .ca-squad-row>label.ca-attendance-check input{width:16px;height:16px;flex:none}

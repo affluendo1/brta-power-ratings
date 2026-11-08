@@ -14,7 +14,7 @@
 .export853-settings-row .settings-help{margin:0 0 10px}
 #export853Status{font-size:12px;line-height:1.5;color:var(--muted-color)}
 .schedule853-overlay{z-index:131}
-.schedule853-sheet{position:relative;width:min(490px,calc(100vw - 30px));padding:28px 32px 28px;line-height:1.6}
+.schedule853-sheet{position:relative;width:min(490px,calc(100vw - 30px));max-height:calc(100dvh - 32px);overflow-y:auto;box-sizing:border-box;padding:28px 32px 28px;line-height:1.6}
 .schedule853-sheet .overlay-title{padding-right:36px}
 .schedule853-sheet p{margin:12px 0;font-size:13px}
 #logoSecretOverlay .logo-secret-sheet{position:relative;padding:28px 66px 30px 28px!important}
@@ -149,3 +149,16 @@ table.rubber-list.rubber-table-8541{
 .check853-friendly-list li{display:grid;gap:3px;padding:8px 0;border-top:1px solid var(--border-color);line-height:1.4}
 .check853-friendly-list b{font-size:12px;color:var(--text-color)}
 .check853-friendly-list span{font-size:12px;color:var(--muted-color)}
+.check853-friendly-list span{overflow-wrap:anywhere}
+.export853-sheet,.schedule853-sheet,.export853-prompt-sheet{
+ position:absolute;left:50%;right:auto;top:50%;bottom:auto;
+ transform:translate(-50%,-50%);height:auto;box-sizing:border-box;
+ border:1px solid var(--border-color);border-radius:var(--panel-radius,12px)
+}
+.export853-prompt-sheet{max-height:calc(100dvh - 32px);overflow:auto}
+@media(max-width:760px){
+ .export853-sheet,.schedule853-sheet{max-height:calc(100dvh - 24px);width:calc(100vw - 24px);box-sizing:border-box}
+ .schedule853-sync-card{padding:13px}
+ .export853-choices button{min-height:76px;padding:15px}
+ #customCompetitionsBtn{flex-basis:100%;white-space:normal}
+}

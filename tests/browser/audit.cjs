@@ -4,6 +4,7 @@ const ROOT=path.resolve(__dirname,'../..');
 const errors=[];const vc=new VirtualConsole();vc.on('jsdomError',e=>errors.push(e.stack));
 const dom=new JSDOM(fs.readFileSync(ROOT+'/index.html','utf8'),{url:'https://affluendo1.github.io/brta-power-ratings/',runScripts:'outside-only',pretendToBeVisual:true,virtualConsole:vc});
 const w=dom.window;
+const closeDOM=require('../fixtures/dom-lifecycle.cjs')(w);
 w.localStorage.setItem('brta-rating-model','RM3');w.localStorage.setItem('brta-rating-centre','1500');
 w.matchMedia=()=>({matches:false,addEventListener(){},removeEventListener(){}});
 w.CSS={supports:()=>true};w.structuredClone=structuredClone;w.TextEncoder=TextEncoder;
@@ -19,6 +20,7 @@ w.HTMLCanvasElement.prototype.getContext=()=>canvas;w.HTMLMediaElement.prototype
 w.confirm=()=>true;
 w.localStorage.setItem('brta-following-v1',JSON.stringify({pins:[null,{},false],pending:[null,{}]}));
 w.fetch=async url=>{const file=path.join(ROOT,new URL(url,w.location.href).pathname.replace('/brta-power-ratings/',''));if(!fs.existsSync(file))return {ok:false,status:404,json:async()=>null};return{ok:true,json:async()=>JSON.parse(fs.readFileSync(file,'utf8'))}};
+w.Worker=require('../fixtures/rating-worker.cjs');
 const ctx=dom.getInternalVMContext();
 for(const s of [...w.document.scripts]){try{vm.runInContext(s.src?fs.readFileSync(path.join(ROOT,new URL(s.src).pathname.replace('/brta-power-ratings/','')),'utf8'):s.textContent,ctx,{filename:s.src||'bootstrap'})}catch(e){errors.push(e.stack)}}
 w.addEventListener('error',e=>errors.push(e.error?.stack||e.message));
@@ -59,13 +61,15 @@ click('[data-team822-expand]');await tick();assert(w.document.querySelector('#te
 console.log('Rubbers records, honest outcome-only scorecards and full Team Explorer expansion passed');
 esc();await tick();
 const local=structuredClone(require('../test_custom_sections.js').sample());
+for(const round of local.rounds)for(const f of round.fixtures)f.rubbers.forEach((m,i)=>m.id=f.id+'-rubber-'+i);
+local.ratingModel='RM4.1 Ensemble';
 const backup={format:'brta-custom-sections',version:1,sections:[local]};
 assert.equal(w.CustomSections.openBackup(backup),true);
 await tick();
 assert(!w.document.querySelector('#customAdminOverlay').classList.contains('hidden'),'Imported local editor opens');
 click('#customAdminOverlay [data-ca-action="view"]');
 await vm.runInContext("loadSection('local-test')",ctx);
-assert.equal(vm.runInContext('D.meta.section_code',ctx),'local-test');
+assert.equal(vm.runInContext('D.meta.section_code',ctx),'local-test',w.document.querySelector('#statusStrip').textContent);
 assert.equal(w.CustomSections.openBackup(backup),true,'Re-importing the currently viewed local section succeeds');
 await tick();await tick();await tick();
 assert(!w.document.querySelector('#customAdminOverlay').classList.contains('hidden'),'Concurrent local reload must not close newly opened editor');
@@ -80,6 +84,57 @@ esc();await tick();
 assert(!w.document.querySelector('#export853ImportPrompt'),'Escape dismisses the import prompt');
 assert(!w.document.querySelector('#export853Overlay').classList.contains('hidden'),'Export chooser remains open after dismissing prompt');
 console.log('Existing-local import race and export prompt Escape/focus regressions passed');
-if(errors.length)throw Error(errors.join('\n'));console.log('No script/runtime errors');dom.window.close();})().catch(e=>{console.error(e.stack);console.error(errors);dom.window.close();process.exitCode=1});
+// Repeated special-status edits retain the expanded match and update the fixture.
+esc();await tick();
+w.CustomSections.openSection('local-test');await tick();
+click('[data-ca-action="tab"][data-value="rounds"]');
+click('[data-ca-action="round"][data-id="round-1"]');
+click('[data-ca-action="fixture"][data-id="match-1"]');
+click('[data-ca-action="edit-this-match"][data-index="0"]');
+const change=(selector,value)=>{const node=w.document.querySelector(selector);assert(node,selector);node.value=value;node.dispatchEvent(new w.Event('change',{bubbles:true}))};
+change('[data-ca="match-status"][data-index="0"]','Retired');
+assert(w.document.querySelector('.ca-match-details').open,'Changing special status keeps details open');
+change('[data-ca="match-winner"][data-index="0"]','away');
+assert(w.document.querySelector('.ca-match-details').open,'Choosing a winner keeps details open');
+assert.equal(w.document.querySelector('[data-ca="fixture-status"]').value,'Completed');
+change('[data-ca="match-status"][data-index="0"]','Scheduled');
+assert(w.document.querySelector('.ca-match-details').open);
+// Blank scores make Scheduled genuinely unfinished under auto-completion.
+const score=w.document.querySelector('[data-ca="score-h"][data-index="0"]');score.value='';score.dispatchEvent(new w.Event('input',{bubbles:true}));
+assert.equal(w.document.querySelector('[data-ca="fixture-status"]').value,'Scheduled');
+change('[data-ca="score-h"][data-index="0"]','6');
+click('#caBody [data-ca-action="save"]');
+assert(!w.document.querySelector('#customAdminOverlay').classList.contains('hidden'),'Saving stays in the editor');
+assert(w.document.querySelector('.ca-match-details').open,'Saving retains expanded details');
+click('#caBody [data-ca-action="view"]');
+await vm.runInContext("loadSection('local-test')",ctx);
+assert.equal(vm.runInContext('D.meta.modelChoice',ctx),'RM4.1 Ensemble');
+// Complete exports must follow the custom section's model, even when the global model differs.
+const blobs=[];w.Blob=Blob;w.URL.createObjectURL=blob=>{blobs.push(blob);return 'blob:ui-audit'};
+click('#exportSectionBtn');await tick();click('[data-export-853="complete"]');
+for(let i=0;i<120&&w.document.querySelector('[data-export-853="complete"]').disabled;i++)await tick();
+assert(w.document.querySelector('#export853Status').textContent.includes('Export ready'),w.document.querySelector('#export853Status').textContent);
+const report=await blobs.at(-1).text();const reportDoc=new w.DOMParser().parseFromString(report,'text/html');const reportData=JSON.parse([...reportDoc.querySelectorAll('pre')].at(-1).textContent);assert.equal(reportData.meta.modelChoice,'RM4.1 Ensemble','Complete report retains the selected ensemble, not only its base ratings');
+// Every chooser route works from the nested label, including the Extras-only option.
+esc();await tick();w.localStorage.setItem('brta-module-enabled-v1','1');
+click('#exportSectionBtn');await tick();
+assert.equal(w.document.querySelectorAll('[data-export-853]').length,6);
+const comparisonBefore=w.BRTAModelComparison.export;let comparisons=0;
+w.BRTAModelComparison.export=async data=>{comparisons++;assert.equal(data.meta.modelChoice,'RM4.1 Ensemble')};
+for(const mode of ['csv','technical','markdown','json','comparison']){
+ click('[data-export-853="'+mode+'"] b');
+ for(let i=0;i<120&&w.document.querySelector('[data-export-853="'+mode+'"]').disabled;i++)await tick();
+ assert(w.document.querySelector('#export853Status').textContent.includes('Export ready'),mode+': '+w.document.querySelector('#export853Status').textContent);
+ if(mode==='json'){assert(w.document.querySelector('#export853ImportPrompt'));esc();await tick()}
+}
+assert.equal(comparisons,1);w.BRTAModelComparison.export=comparisonBefore;
+esc();await tick();w.localStorage.removeItem('brta-module-enabled-v1');click('#customEditorBtn');await tick();
+assert(w.document.querySelector('.ca-match-details').open,'View section and return restores the expanded match');
+assert(w.document.querySelector('[data-ca-action="round"][data-id="round-1"]').classList.contains('primary'));
+click('#customAdminOverlay [data-ca-action="close"]');await tick();
+click('#customCompetitionsBtn');await tick();
+assert(!w.document.querySelector('#customAdminOverlay').classList.contains('hidden'),'Header shortcut opens the creator');
+console.log('Repeated special-status edits, auto-status, save/return position, custom-model export and header entry passed');
+if(errors.length)throw Error(errors.join('\n'));console.log('No script/runtime errors');closeDOM();})().catch(e=>{console.error(e.stack);console.error(errors);closeDOM();process.exitCode=1});
 
 

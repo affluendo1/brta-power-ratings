@@ -152,3 +152,29 @@ duplicateSource.upcomingFixtures=[];duplicateSource.results=[];
 const sameName=Exports.toBackup(duplicateSource,'2026-11-08T06:00:00.000Z').sections[0];
 assert.equal(new Set(sameName.players.map(p=>p.name)).size,sameName.players.length,'Same-name imports must not merge clubs');
 console.log('8.5.4 exports, no contests, forfeit scores, identity disambiguation and eligibility: passed');
+
+// Editable transfers preserve absent slots and terminal statuses, without creating fake players.
+for(const section of [s,both]){
+ const source=Model.build(section),backup=Exports.toBackup(source,'2026-11-08T06:00:00Z').sections[0];
+ Model.validate(backup);
+ const result=Model.build(backup).results[0].fixtures[0],original=source.results[0].fixtures[0];
+ assert.equal(result.homeGames,original.homeGames);
+ assert.equal(result.awayGames,original.awayGames);
+ assert.deepEqual(result.rubbers.map(r=>r.status),original.rubbers.map(r=>r.status));
+ assert(!backup.players.some(p=>p.name==='No Player'),'An absence is not a roster identity');
+ assert(backup.rounds[0].fixtures[0].rubbers.some(r=>r.home.includes(Model.NO_PLAYER)));
+ assert(!backup.rounds[0].fixtures[0].homeLineup.includes(Model.NO_PLAYER));
+}
+const doublesOnly=sample();doublesOnly.singlesSlots=0;doublesOnly.doublesBestOf=3;
+for(const round of doublesOnly.rounds)for(const f of round.fixtures){f.rubbers=f.rubbers.filter(r=>r.type==='Doubles');for(const r of f.rubbers)r.sets=[{h:6,a:4},{h:6,a:3}]}
+const doublesBackup=Exports.toBackup(Model.build(doublesOnly)).sections[0];
+assert.equal(doublesBackup.singlesSlots,0,'A doubles-only section must remain doubles-only');
+assert.equal(doublesBackup.doublesBestOf,3);
+const mixedOrder=clone(Model.build(src));mixedOrder.upcomingFixtures.reverse();
+const markdown=Exports.markdown(mixedOrder);
+assert.deepEqual([...markdown.matchAll(/^## Round (\d+)/gm)].map(m=>+m[1]),[5,4,3,2,1]);
+const retirement=clone(Model.build(src));const retiredRubber=retirement.results[0].fixtures[0].rubbers[0];
+retiredRubber.status='Retired';retiredRubber.score='3-2 ret.';retiredRubber.winner='';retiredRubber.winnerSide='away';
+const retirementBackup=Exports.toBackup(retirement).sections[0];
+assert.equal(retirementBackup.rounds.find(r=>r.number===4).fixtures[0].rubbers[0].winner,'away');
+console.log('Export refinements: absent slots, No Contest, winner sides, doubles-only rules and calendar order passed');
