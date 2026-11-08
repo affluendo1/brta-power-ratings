@@ -59,11 +59,12 @@ async function run(mode){
 }
 let creatorPrompt=null;
 function promptCreator(backup){
- if(creatorPrompt)creatorPrompt.remove();
+ if(creatorPrompt){root.BRTAOverlays?.unlock?.(creatorPrompt);creatorPrompt.remove();creatorPrompt=null;}
  creatorPrompt=document.createElement('div');creatorPrompt.className='overlay export853-import-prompt';creatorPrompt.id='export853ImportPrompt';
  creatorPrompt.innerHTML='<div class="overlay-backdrop" data-creator-no></div><section class="settings-sheet export853-prompt-sheet" role="dialog" aria-modal="true" aria-labelledby="export853ImportTitle"><h2 id="export853ImportTitle">Open in Custom Competitions?</h2><p>Your editable JSON was downloaded. You can also load it directly into the editor.</p><div class="export853-prompt-actions"><button type="button" class="button secondary" data-creator-no>Not now</button><button type="button" class="button primary" data-creator-yes>Open in Custom Competitions</button></div><p role="status" id="export853ImportError"></p></section>';
  document.body.append(creatorPrompt);root.BRTAOverlays?.lock?.(creatorPrompt);
- const dismiss=()=>{root.BRTAOverlays?.unlock?.(creatorPrompt);creatorPrompt?.remove();creatorPrompt=null;};
+ const dismiss=()=>{const active=creatorPrompt;if(!active)return;root.BRTAOverlays?.unlock?.(active);active.remove();creatorPrompt=null;};
+ root.BRTAOverlays?.register?.('export853ImportPrompt',dismiss);
  creatorPrompt.querySelectorAll('[data-creator-no]').forEach(b=>b.onclick=dismiss);
  creatorPrompt.querySelector('[data-creator-yes]').onclick=()=>{try{if(!root.CustomSections?.openBackup)throw Error('Custom Competitions is unavailable.');if(root.CustomSections.openBackup(backup)){dismiss();close();}}catch(e){creatorPrompt.querySelector('#export853ImportError').textContent=e.message;}};
  creatorPrompt.querySelector('[data-creator-yes]').focus();

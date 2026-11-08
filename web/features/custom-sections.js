@@ -110,7 +110,7 @@
   function save(){if(!unlocked||!enabled())throw Error('Unlock Admin before saving.');M.validate(draft);const view=captureEditorView();draft.updatedAt=new Date().toISOString();const next=read().filter(s=>s.id!==draft.id).concat(M.clone(draft));persist(next);rememberEditorView(view);pendingEditorView=view;dirty=false;render();message('Section saved on this device. Export a backup to keep another copy.')}
   function render(){const body=$('#caBody'),domRound=body?.querySelector('.ca-round-nav>.button.primary')?.dataset.id,domFixture=body?.querySelector('.ca-fixture-tabs>.button.primary')?.dataset.id;const sameView=!body?.querySelector('.ca-rubber')||((domRound||null)===(roundId||null)&&(domFixture||null)===(fixtureId||null));const view=draft&&sameView&&body?.querySelector('.ca-rubber')?captureEditorView():null;const scroll=body?.scrollTop||0;if(!enabled())return;unlocked=true;let list;try{list=read()}catch(e){$('#caBody').innerHTML='<p>'+esc(e.message)+'</p><input id="caImport" type="file" accept=".json,application/json">';return}
     const nav='<div class="ca-toolbar"><label class="ca-picker">Your sections<select id="caSection">'+options(list.map(s=>({id:s.id,name:s.name})),draft?.id,'Select a section')+'</select></label>'+button('new','New section','primary')+button('import','Import backup')+button('export-all','Back up all')+'<input id="caImport" type="file" accept=".json,application/json" hidden></div>';
-    if(!draft){$('#caBody').innerHTML=nav+'<div class="ca-empty"><h3>Your own competition, your own scorecards.</h3><p>Create a section, register its teams and players, then add rounds and fixtures. Your saved sections appear under <b>My sections</b> in the normal competition selector while Extras is on.</p>'+button('new','Create a section','primary')+'</div>';return}
+    if(!draft){$('#caBody').innerHTML=nav+'<div class="ca-empty"><h3>Your own competition, your own scorecards.</h3><p>Create a section, register its teams and players, then add rounds and fixtures. Your saved sections appear under <b>Custom Competitions</b> in the normal competition selector, with no Extras setting required.</p>'+button('new','Create a section','primary')+'</div>';return}
     $('#caBody').innerHTML=nav+'<div class="ca-section-head"><div><h3>'+esc(draft.name)+'</h3><span id="caSaveState">'+(dirty?'Unsaved changes':'Saved on this device')+'</span></div><div class="ca-actions">'+button('save','Save changes','primary')+button('view','View section')+button('export','Export backup')+button('delete','Delete section','danger')+'</div></div><nav class="ca-tabs">'+[['setup','Section setup'],['roster','Teams & players'],['rounds','Rounds & fixtures']].map(([value,label])=>button('tab',label,tab===value?'primary':'secondary','data-value="'+value+'"')).join('')+'</nav>'+(tab==='setup'?setupHTML():tab==='roster'?rosterHTML():roundsHTML());$('#caBody').scrollTop=scroll;const keep=pendingEditorView?.sectionId===draft.id&&pendingEditorView.tab===tab?pendingEditorView:view;if(keep){restoreEditorView(keep);pendingEditorView=null;}
   }
   function setupHTML(){
@@ -282,8 +282,12 @@
     const section=backup.sections[0];M.validate(section);
     const previous=read().find(s=>s.id===section.id);
     if(previous&&!confirm('Replace the existing local competition with this exported version?'))return false;
-    persist(read().filter(s=>s.id!==section.id).concat(M.clone(section)));
-    draft=M.clone(section);tab='setup';roundId=fixtureId=null;dirty=false;open();return true;
+    // Open the modal before notifying the main app that the catalog has changed.
+    // Otherwise a reload of the currently viewed local section can finish later
+    // and close this brand-new editor while it is being used.
+    const next=read().filter(s=>s.id!==section.id).concat(M.clone(section));
+    draft=M.clone(section);tab='setup';roundId=fixtureId=null;dirty=false;
+    pendingEditorView=null;open();persist(next);render();return true;
   }
   root.CustomSections={catalog,payload,bindSettings,bindHeader,open,openSection,openBackup,metadata,validate:M.validate};
 })(window);
