@@ -61,7 +61,6 @@ click('[data-team822-expand]');await tick();assert(w.document.querySelector('#te
 console.log('Rubbers records, honest outcome-only scorecards and full Team Explorer expansion passed');
 esc();await tick();
 const local=structuredClone(require('../test_custom_sections.js').sample());
-for(const round of local.rounds)for(const f of round.fixtures)f.rubbers.forEach((m,i)=>m.id=f.id+'-rubber-'+i);
 local.ratingModel='RM4.1 Ensemble';
 const backup={format:'brta-custom-sections',version:1,sections:[local]};
 assert.equal(w.CustomSections.openBackup(backup),true);

@@ -34,7 +34,7 @@
   const metadata=s=>({section_code:s.id,section_label:s.name,competition_code:'LOCAL',competition_label:'Custom Competitions - '+(s.season||'Custom season'),season_id:s.id,season_label:s.season||'Custom season',is_custom:true});
   function catalog(){if(!enabled())return [];try{return read().map(metadata)}catch(e){return []}}
   function payload(code){const section=read().find(s=>s.id===code);if(!section)throw Error('This custom section is not saved in this browser.');if(!payloadCache.has(code))payloadCache.set(code,M.build(section));return payloadCache.get(code)}
-  function editable(section){const next=M.clone(section);for(const r of next?.rounds||[])for(const f of r.fixtures||[]){const seen=new Set();for(const m of f.rubbers||[]){if(!m.id||seen.has(m.id))m.id=id();seen.add(m.id)}}return next}
+  function editable(section){const next=M.clone(section);for(const r of next?.rounds||[])for(const f of r.fixtures||[]){const seen=new Set();for(const [index,m] of (f.rubbers||[]).entries()){if(!m.id||seen.has(m.id)){const key='match-'+f.id+'-'+index;let suffix=1;m.id=key;while(seen.has(m.id))m.id=key+'-'+suffix++}seen.add(m.id)}}return next}
   function section(){return draft}
   const round=()=>draft?.rounds.find(r=>r.id===roundId),fixture=()=>round()?.fixtures.find(f=>f.id===fixtureId);
   function options(rows,value,blank='Choose…'){return '<option value="">'+esc(blank)+'</option>'+rows.map(r=>'<option value="'+esc(r.id)+'" '+(r.id===value?'selected':'')+'>'+esc(r.name)+'</option>').join('')}
