@@ -62,6 +62,8 @@
 .rubber-row-854 .rubber-side b{font-weight:800}
 .rubber-row-854 .rubber-side span{font-weight:400}
 .rubber-row-854 .rubber-side .person,.rubber-row-854 .rubber-side .pair-sep{color:inherit!important;text-decoration-color:currentColor}
+.rubber-row-854 .side-won .person{font-weight:800}
+.rubber-row-854 .side-lost .person,.rubber-row-854 .side-neutral .person{font-weight:400}
 .rubber-row-854 .rubber-code{position:static;flex:0 0 auto;align-self:center;margin-right:10px;font-size:10px;opacity:.85}
 .rubber-row-854 .rubber-score-854{display:flex;align-items:center;justify-content:center;text-align:center;min-width:58px;padding:5px 2px;color:var(--text-color);font-weight:800;white-space:normal;overflow-wrap:anywhere}
 .rubber-row-854 .rubber-away .emergency-marker,.rubber-row-854 .rubber-home .emergency-marker{flex-shrink:0}
