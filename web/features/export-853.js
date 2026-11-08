@@ -62,9 +62,18 @@ function promptCreator(backup){
  if(creatorPrompt)creatorPrompt.remove();
  creatorPrompt=document.createElement('div');creatorPrompt.className='overlay export853-import-prompt';creatorPrompt.id='export853ImportPrompt';
  creatorPrompt.innerHTML='<div class="overlay-backdrop" data-creator-no></div><section class="settings-sheet export853-prompt-sheet" role="dialog" aria-modal="true" aria-labelledby="export853ImportTitle"><h2 id="export853ImportTitle">Open in Custom Competitions?</h2><p>Your editable JSON was downloaded. You can also load it directly into the editor.</p><div class="export853-prompt-actions"><button type="button" class="button secondary" data-creator-no>Not now</button><button type="button" class="button primary" data-creator-yes>Open in Custom Competitions</button></div><p role="status" id="export853ImportError"></p></section>';
- document.body.append(creatorPrompt);root.BRTAOverlays?.lock?.(creatorPrompt);
- const dismiss=()=>{root.BRTAOverlays?.unlock?.(creatorPrompt);creatorPrompt?.remove();creatorPrompt=null;};
- creatorPrompt.querySelectorAll('[data-creator-no]').forEach(b=>b.onclick=dismiss);
+ const previousFocus=document.activeElement;
+ const prompt=creatorPrompt;
+ document.body.append(prompt);
+ const dismiss=()=>{
+  if(creatorPrompt!==prompt)return;
+  root.BRTAOverlays?.unlock?.(prompt);
+  prompt.remove();creatorPrompt=null;
+  if(previousFocus?.isConnected)previousFocus.focus({preventScroll:true});
+ };
+ root.BRTAOverlays?.register?.(prompt.id,dismiss);
+ root.BRTAOverlays?.lock?.(prompt);
+ prompt.querySelectorAll('[data-creator-no]').forEach(b=>b.onclick=dismiss);
  creatorPrompt.querySelector('[data-creator-yes]').onclick=()=>{try{if(!root.CustomSections?.openBackup)throw Error('Custom Competitions is unavailable.');if(root.CustomSections.openBackup(backup)){dismiss();close();}}catch(e){creatorPrompt.querySelector('#export853ImportError').textContent=e.message;}};
  creatorPrompt.querySelector('[data-creator-yes]').focus();
 }
@@ -133,7 +142,7 @@ function showSchedule(){
   const types={AP:'Saturday PM',HA:'Thursday AM',AA:'Saturday AM',UA:'Sunday AM',TA:'Tuesday AM',TN:'Tuesday Night',WA:'Wednesday AM'};
   const groups=new Map();
   for(const code of codes){
-   const record=meta.get(code),competition=record?.competition_label||types[String(code).slice(0,2)]||'Other competition';
+   const sectionCode=String(code).replace(/\.json$/i,''),record=meta.get(sectionCode),competition=record?.competition_label||types[sectionCode.slice(0,2)]||'Other competition';
    const name=record?.section_label||('Section '+(Number(String(code).slice(2))||'name unavailable'));
    if(!groups.has(competition))groups.set(competition,[]);
    groups.get(competition).push(humanLabel(name));
