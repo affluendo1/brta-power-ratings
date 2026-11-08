@@ -6,6 +6,7 @@ on:
     - cron: "7 15 * * *"
       timezone: "Australia/Melbourne"
   push:
+    branches: [main]
     paths:
       - "scraper/**"
       - "model.py"
@@ -94,7 +95,7 @@ jobs:
               previous = {}
           import subprocess
           changed = subprocess.check_output(["git", "diff", "--name-only", "--", "data/current/sections"], text=True).splitlines()
-          changed_sections = sorted({part[3] for item in changed if len(part := item.split("/")) >= 4})
+          changed_sections = sorted({part[3].removesuffix(".json") for item in changed if len(part := item.split("/")) == 4 and part[3].endswith(".json")})
           discovered = os.environ.get("NEW_RESULTS") == "true"
           positive = previous.get("last_positive")
           if discovered:
