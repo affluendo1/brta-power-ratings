@@ -103,7 +103,7 @@
   // Composite evidence in game-equivalent units. A deciding tiebreak contributes
   // a fixed total weight split by points, so extended tiebreaks cannot dominate.
   function ratingEvidence(m,model='V3',parameters={}){
-    if(!['V3','V3B'].includes(model))fail('Choose V3 or V3B as the rating model.');
+    if(!['V3','V3B','RM4.2','RM4a','RM4b','RM4.1 Ensemble','4melody.2','4foundation.2'].includes(model))fail('Choose V3 or V3B as the rating model.');
     let home=m.hg,away=m.ag;
     if(model==='V3B'){
       home+=V3B_WEIGHTS.setWin*(m.hs||0)+V3B_WEIGHTS.matchWin*Number(m.winner==='home');
