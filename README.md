@@ -1,12 +1,15 @@
 # BRTA Power Ratings
 
-**Current version: 8.5.4.4**
+**Current version: 9.0**
 
 The default player rating model is **4.2 Melody**, while **4.2 Orchestra** handles predictions.
 Other available models include **4.2 Foundation**, **RM4.2**, **RM4.1 Ensemble**, **RM4a**,
 **RM4b**, **RM3** and **RM3b**. Existing valid model preferences are retained.
 
 ### Latest updates
+
+- **9.0 — Clubs:** Club logistics, venue maps, all-time performance, team ratings and participation in one tab.
+- **Also in 9.0:** A past-season label in the section picker and support for semifinals and grand finals in the Section Creator.
 
 - **8.5.4.4 (tiny):** Faster custom fixtures, optional attendance exceptions and cleaner mobile navigation.
 
@@ -171,7 +174,7 @@ renames. Team transfers retain the registration attached to earlier appearances
 without retroactively marking those appearances as emergencies. Roster previews
 are atomic and report duplicates or invalid rows before changing the draft.
 
-The custom **Teams** tab shows the active registered squad in its saved order, actual
+The custom **Clubs → Team Stats** view shows the active registered squad in its saved order, actual
 round-by-round selections, doubles partnerships, emergencies and suggested lineups. Prediction Centre uses the section's
 configured match counts, set lengths and best-of settings, with custom team
 scoring. Club Zone entry points currently show a maintenance notice.
@@ -267,7 +270,7 @@ The five main views are:
 - **Results** — round-by-round fixture results and scorecards, including singles and doubles order where TROLS provides it. A bye occupies its own card in seven-team rounds.
 - **Standings** — current-season ladder calculations, or the published final TROLS ladder for an archived season when one is available. The standings view also shows recorded or projected semifinals and grand finals.
 - **Ratings** — singles, recurring doubles pairs, individual doubles and Overall tables. Player rows open Player Lab.
-- **Teams** — sticky team tabs with compact lineups, doubles configurations, chronological selections, emergencies and suggested squads.
+- **Clubs** — section teams, club venues and logistics, all-time performance, season participation, and Team Stats with lineups and team-only ratings.
 - **Fixtures** — the official TROLS draw, including completed and future fixtures. A recorded fixture opens its result; a scheduled fixture opens the Prediction Centre. Upcoming rounds have a button to simulate their scheduled ties.
 
 Other views are opened from the header or player profiles:
@@ -276,6 +279,23 @@ Other views are opened from the header or player profiles:
 - **Club Zone** is under maintenance.
 - **Rounds** combines round highlights with your team’s week-by-week calendar, published no-play dates, starting times and calendar downloads.
 - **Settings** contains display preferences, Theme Studio, methodology and BRTA rules. The section picker also links directly to past seasons. **Export section** beneath the competition/section picker opens the export chooser.
+
+### Clubs
+
+Choose a team from the section to open its club. Colour variants have separate Team
+Stats and share the parent club’s logistics and history. **Overview** shows the club
+directory details, venue directions and comparative ladder performance. The map can
+show the section, the current competition or recorded BRTA history. TROLS venue pins
+can be approximate, so the directions link uses the published street address.
+
+**Participation** links current and past team entries to their sections. Both the
+participation and performance filters start with your default competition when one
+is set in Settings. **Find a club** can search beyond the current section, sort the
+directory, and include provisional listings with limited records.
+
+In the Section Creator, set a round’s **Stage** to Semifinals or Grand final when
+building a draw. The matches remain in results and ratings, and their points stay
+outside the regular-season ladder. Editable JSON backups preserve the round stage.
 
 ## Competition and historical coverage
 
@@ -399,7 +419,7 @@ URLs so current and archived section payloads continue to load normally.
 | --- | --- |
 | `web/core/` | Application state, navigation, settings and progressive installation |
 | `web/models/` | Pure rating, history, prediction, roster and lab computations |
-| `web/features/` | Player/pair labs, Teams, custom editor, search, history and changelog |
+| `web/features/` | Player/pair labs, Clubs, custom editor, search, history and changelog |
 | `web/workers/` | Background rating-model recalculation |
 | `web/styles/` | Shared design, responsive layouts and feature presentation |
 | `web/optional/` | Isolated optional presentation modules |

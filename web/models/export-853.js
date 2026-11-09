@@ -84,7 +84,8 @@ function toBackup(source,now=new Date().toISOString()){
  const add=(r,f,fromResults=false)=>{
   if(!f?.home)return;if(/^byes?$/i.test(clean(f.home))&&clean(f.away))f={...f,home:f.away,away:'Bye',status:'Bye'};const n=roundNo(r),day=date(f.date||r.date);if(!n||!day)return;
   const key=n+'|'+clean(f.home).toLowerCase()+'|'+clean(f.away||'Bye').toLowerCase();
-  let gr=schedule.get(n);if(!gr){gr={number:n,date:day,label:r.label||'Round '+n,fixtures:new Map()};schedule.set(n,gr)}
+  let gr=schedule.get(n);if(!gr){gr={number:n,date:day,label:Model.roundLabel(r),stage:Model.roundStage({...r,stage:f.stage||r.stage}),fixtures:new Map()};schedule.set(n,gr)}
+  if(gr.stage==='regular'&&Model.roundStage(f)!=='regular')gr.stage=Model.roundStage(f);
   let item=gr.fixtures.get(key);
   if(!item){item={...clone(f),_round:n,_date:day,_results:!!fromResults};gr.fixtures.set(key,item);}
   else if(fromResults||!item._results){Object.assign(item,clone(f));item._results=!!fromResults;}
@@ -162,7 +163,7 @@ function toBackup(source,now=new Date().toISOString()){
    sourceScore:clean(m.score),sourceStatus:status};
  };
  for(const r of [...schedule.values()].sort((a,b)=>a.number-b.number)){
-  const round={id:'round-'+r.number,number:r.number,date:r.date,label:r.label,fixtures:[]};
+  const round={id:'round-'+r.number,number:r.number,date:r.date,label:r.label,stage:r.stage,fixtures:[]};
   for(const sourceFixture of r.fixtures.values()){
    const home=teamId(sourceFixture.home),away=teamId(sourceFixture.away);
    const status=clean(sourceFixture.status);

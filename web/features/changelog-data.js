@@ -2,6 +2,20 @@
 // Retrospective entries use source-commit timestamps; sourceCommit records their provenance.
 window.BRTA_RELEASES = Object.freeze([
   {
+    "version": "9.0",
+    "title": "Clubs",
+    "size": "major",
+    "committedAt": "2026-11-09T23:00:00+11:00",
+    "changes": [
+      "The new Clubs tab brings venues, facilities, club history and section-specific team stats together.",
+      "Explore participation and ladder performance across BRTA competitions, or find a club using the directory and interactive map."
+    ],
+    "otherChanges": [
+      "Past seasons are labelled beside the section controls.",
+      "Semifinals and grand finals have their own labels. The Section Creator supports both stages and displays their knockout results separately from the regular-season ladder."
+    ]
+  },
+  {
     "version": "8.5.4.4",
     "size": "tiny",
     "committedAt": "2026-11-08T12:12:01.020352+00:00",

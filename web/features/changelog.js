@@ -24,7 +24,9 @@
   }
 
   function points(release) {
-    return '<ul class="release-points">'+release.changes.map(change => '<li>'+escape(change)+'</li>').join('')+'</ul>';
+    const list = changes => '<ul class="release-points">'+changes.map(change => '<li>'+escape(change)+'</li>').join('')+'</ul>';
+    return list(release.changes)+(release.otherChanges?.length?
+      '<h4>Other changes</h4>'+list(release.otherChanges):'');
   }
 
   function settingsHTML() {

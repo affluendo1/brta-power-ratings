@@ -14,6 +14,21 @@ assert.equal(data.results.length,4);assert.equal(data.upcomingFixtures.length,5)
 assert.equal(data.results[0].fixtures[0].homePoints,6);assert.equal(data.results[0].fixtures[0].awayPoints,1);
 assert.equal(data.standings[0].team,'A');assert.equal(data.standings[0].points,24);
 assert.equal(data.singles.find(x=>x.player==='Alice').matches,4);
+const playoffs=sample();
+playoffs.rounds[2].label='SF';
+playoffs.rounds[3].stage='grand_final';
+const playoffData=M.build(playoffs);
+assert.equal(playoffData.results[1].label,'Semifinals');
+assert.equal(M.roundLabel(playoffData.results[0],true),'GF');
+assert.equal(M.roundLabel({round:15,stage:'regular'},true),'R15');
+assert.equal(playoffData.standings[0].points,12,'Playoffs do not change regular-season points.');
+assert.equal(playoffData.singles.find(x=>x.player==='Alice').matches,4,'Playoffs count for player ratings.');
+assert.equal(playoffData.knockout.champion,'A');
+assert.equal(playoffData.knockout.runnerUp,'B');
+const backup=require('../web/models/export-853.js').toBackup(playoffData,'2026-11-09T12:00:00Z').sections[0];
+assert.deepEqual(backup.rounds.slice(2,4).map(round=>round.stage),['semi_final','grand_final']);
+assert.equal(M.build(backup).knockout.champion,'A');
+
 assert.equal(data.ratingHistory.tables[1].find(x=>x.player==='Alice').matches,1);
 assert.equal(data.doublesRatingHistory.tables[2].pairs[0].matches,2);
 assert(data.doublesIndividuals.every(x=>!x.qualified),'Fixed partnerships must remain unidentifiable.');

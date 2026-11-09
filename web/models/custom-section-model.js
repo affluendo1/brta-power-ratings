@@ -23,6 +23,36 @@
     return (fmt==='sets'&&st===6&&dt===6&&sb===1&&db===1)||
       (fmt==='rubbers'&&st===6&&dt===8&&sb===3&&db===1);
   }
+  function roundStage(round){
+    const value=String(round?.stage??round?.label??'').trim().toLowerCase().replace(/[_–—-]+/g,' ').replace(/\s+/g,' ');
+    if(/^(?:semi ?finals?|s\.?f\.?)(?:\s+\d+)?$/.test(value))return 'semi_final';
+    if(/^(?:grand ?finals?|finals?|g\.?f\.?|f)(?:\s+\d+)?$/.test(value))return 'grand_final';
+    return 'regular';
+  }
+  function roundLabel(round,short=false){
+    const stage=roundStage(round);
+    if(stage==='semi_final')return short?'SF':'Semifinals';
+    if(stage==='grand_final')return short?'GF':'Grand final';
+    const number=round.round??round.number;
+    return short?'R'+number:round.label||'Round '+number;
+  }
+  function knockout(fixtures,standings){
+    const all=fixtures.flatMap(group=>group.fixtures);
+    const semifinalHistory=all.filter(f=>f.stage==='semi_final');
+    const grandFinalHistory=all.filter(f=>f.stage==='grand_final');
+    if(!semifinalHistory.length&&!grandFinalHistory.length)return {source:'none'};
+    const grandFinal=grandFinalHistory.at(-1)||null;
+    const champion=grandFinal?.winner||null;
+    const runnerUp=champion?(grandFinal.home===champion?grandFinal.away:grandFinal.home):null;
+    const qualifiers=[...new Set(semifinalHistory.flatMap(f=>[f.home,f.away]))]
+      .map(team=>({team,seed:standings.findIndex(row=>row.team===team)+1}));
+    const regular=fixtures.filter(group=>group.stage==='regular').flatMap(group=>group.fixtures);
+    return {source:'custom',status:champion?'complete':grandFinal?'grand_final_pending':'semifinals_recorded',
+      regularSeasonComplete:regular.length>0&&regular.every(f=>f.status!=='Scheduled'),
+      qualifiers,semifinals:semifinalHistory,semifinalHistory,grandFinal,grandFinalHistory,
+      semifinalSource:semifinalHistory.length?'custom':'none',
+      grandFinalSource:grandFinal?'custom':'none',champion,runnerUp};
+  }
   function score(r,section){
     if((r.sets||[]).some(s=>(s.h==='')!==(s.a==='')))fail('Enter both sides of each set score.');
     const bestOf=Number(section[r.type==='Doubles'?'doublesBestOf':'singlesBestOf']||(section.format==='rubbers'&&r.type==='Singles'?3:1)),targetGames=Number(r.type==='Doubles'?(section.doublesTarget||section.setTarget):section.setTarget);
@@ -79,8 +109,12 @@
     for(const round of section.rounds){
       if(!Number.isInteger(Number(round.number))||Number(round.number)<1||roundNumbers.has(Number(round.number)))fail('Round numbers must be unique positive integers.');roundNumbers.add(Number(round.number));
       if(!/^\d{4}-\d{2}-\d{2}$/.test(round.date)||!Number.isFinite(Date.parse(round.date))||new Date(round.date).toISOString().slice(0,10)!==round.date)fail('Give every round a valid date.');
+      if(round.stage!=null&&!['regular','semi_final','grand_final'].includes(round.stage))fail('Choose a valid round stage.');
+      const stage=roundStage(round);
+      if(stage==='grand_final'&&(round.fixtures||[]).length>1)fail('A grand final round can contain only one tie.');
       const scheduled=new Set();
       for(const f of round.fixtures||[]){
+        if(stage!=='regular'&&(!f.awayTeamId||f.status==='Bye'))fail('A finals tie needs two teams.');
         if(typeof f.id!=='string'||!/^[a-zA-Z0-9-]+$/.test(f.id)||fixtureIds.has(f.id))fail('Invalid or duplicate fixture ID.');fixtureIds.add(f.id);
         if(!Array.isArray(f.rubbers))fail('A fixture must contain a scorecard list.');
         for(const side of ['home','away']){
@@ -173,8 +207,8 @@
   function build(section){
     validate(section);const ratingModel=section.ratingModel||'RM4.2',tm=new Map(section.teams.map(t=>[t.id,t.name])),pm=new Map(section.players.map(p=>[p.id,p.name])),singles=[],doubles=[],results=[],upcomingFixtures=[],standings=new Map(section.teams.map(t=>[t.name,{team:t.name,played:0,wins:0,draws:0,losses:0,rubbersFor:0,rubbersAgainst:0,gamesFor:0,gamesAgainst:0,points:0}]));
     const dateLabel=date=>new Date(date+'T12:00:00Z').toLocaleDateString('en-GB',{day:'2-digit',month:'short',year:'2-digit',timeZone:'UTC'}).replace(/ /g,' '),calendar=section.rounds.slice().sort((a,b)=>a.number-b.number);
-    for(const round of calendar){const group={round:Number(round.number),date:dateLabel(round.date),label:round.label||'Round '+round.number,stage:'regular',fixtures:[]};
-      for(const fixture of round.fixtures){const f={fixtureId:fixture.id,round:group.round,date:group.date,label:group.label,stage:'regular',home:tm.get(fixture.homeTeamId),away:tm.get(fixture.awayTeamId)||'Bye',status:fixture.status,rubbers:[],homeRubbers:0,awayRubbers:0,homeGames:0,awayGames:0,homeSets:section.format==='rubbers'?0:null,awaySets:section.format==='rubbers'?0:null};
+    for(const round of calendar){const group={round:Number(round.number),date:dateLabel(round.date),label:roundLabel(round),stage:roundStage(round),fixtures:[]};
+      for(const fixture of round.fixtures){const f={fixtureId:fixture.id,round:group.round,date:group.date,label:group.label,stage:group.stage,home:tm.get(fixture.homeTeamId),away:tm.get(fixture.awayTeamId)||'Bye',status:fixture.status,rubbers:[],homeRubbers:0,awayRubbers:0,homeGames:0,awayGames:0,homeSets:section.format==='rubbers'?0:null,awaySets:section.format==='rubbers'?0:null};
         for(const [order,r] of (fixture.rubbers||[]).entries()){if(r.status==='Scheduled')continue;const x=score(r,section),home=r.home.map(id=>id===NO_PLAYER?'No Player':pm.get(id)),away=r.away.map(id=>id===NO_PLAYER?'No Player':pm.get(id));const rb={type:r.type,position:'No. '+r.position,order,status:r.status,forfeit:r.status==='Forfeit',noPlayer:(r.home||[]).includes(NO_PLAYER)||(r.away||[]).includes(NO_PLAYER),home:r.type==='Singles'?home[0]:home.join(' / '),away:r.type==='Singles'?away[0]:away.join(' / '),winner:x.winner?(x.winner==='home'?(r.type==='Singles'?home[0]:home.join(' / ')):(r.type==='Singles'?away[0]:away.join(' / '))):'',winnerSide:x.winner||'',score:x.score,homeEmergency:!!r.homeEmergencies?.some(Boolean),awayEmergency:!!r.awayEmergencies?.some(Boolean),homeEmergencies:r.homeEmergencies||[],awayEmergencies:r.awayEmergencies||[],valid_for_rating:r.status==='Completed'&&!r.home.concat(r.away).some(pid=>section.players.find(p=>p.id===pid)?.noCode)};f.rubbers.push(rb);f.homeGames+=x.hg;f.awayGames+=x.ag;f.homeRubbers+=Number(x.winner==='home');f.awayRubbers+=Number(x.winner==='away');if(section.format==='rubbers'){f.homeSets+=x.hs;f.awaySets+=x.as}
           if(r.status==='Completed'&&!r.home.concat(r.away).some(pid=>section.players.find(p=>p.id===pid)?.noCode)&&fixture.status!=='Scheduled'&&fixture.status!=='Bye'&&fixture.status!=='Forfeited To'&&fixture.status!=='Forfeited By'){
             const evidence={home,away,hg:x.hg,ag:x.ag,hs:x.hs,as:x.as,matchTiebreaks:(r.sets||[]).filter(s=>s.mt&&s.h!==''&&s.a!=='').map(s=>({h:Number(s.h),a:Number(s.a)})),winner:x.winner,homeTeam:f.home,awayTeam:f.away,date:round.date,round:group.round,dateLabel:group.date,fixtureId:f.fixtureId,position:r.position,score:x.score,homeEmergencies:rb.homeEmergencies,awayEmergencies:rb.awayEmergencies};(r.type==='Singles'?singles:doubles).push(evidence);
@@ -191,7 +225,8 @@
         else if(f.status==='Wash Out')f.homePoints=f.awayPoints=scheduledSets/2+drawBonus;
         else if(f.status==='Forfeited To'||f.status==='Forfeited By'){winner=f.status==='Forfeited To'?'away':'home';f.homePoints=winner==='home'?scheduledSets+teamBonus:0;f.awayPoints=winner==='away'?scheduledSets+teamBonus:0}
         if(fixture.homePointsOverride!=null&&fixture.homePointsOverride!==''&&f.status!=='Scheduled'&&f.status!=='Bye'){f.homePoints=Number(fixture.homePointsOverride);f.awayPoints=Number(fixture.awayPointsOverride);}
-        if(f.homePoints!=null&&f.away!=='Bye'){for(const side of ['home','away']){const s=standings.get(f[side]),other=side==='home'?'away':'home';s.played++;s.wins+=Number(winner===side);s.losses+=Number(!!winner&&winner!==side);s.draws+=Number(!winner);s.points+=f[side+'Points'];s.rubbersFor+=f[side+'Rubbers'];s.rubbersAgainst+=f[other+'Rubbers'];s.gamesFor+=f[side+'Games'];s.gamesAgainst+=f[other+'Games']}}
+        f.winner=winner?f[winner]:'';
+        if(group.stage==='regular'&&f.homePoints!=null&&f.away!=='Bye'){for(const side of ['home','away']){const s=standings.get(f[side]),other=side==='home'?'away':'home';s.played++;s.wins+=Number(winner===side);s.losses+=Number(!!winner&&winner!==side);s.draws+=Number(!winner);s.points+=f[side+'Points'];s.rubbersFor+=f[side+'Rubbers'];s.rubbersAgainst+=f[other+'Rubbers'];s.gamesFor+=f[side+'Games'];s.gamesAgainst+=f[other+'Games']}}
         group.fixtures.push(f);
       }
       upcomingFixtures.push(group);if(group.fixtures.some(f=>f.status!=='Scheduled'&&f.status!=='Bye'))results.unshift({...group,fixtures:group.fixtures.filter(f=>f.status!=='Scheduled'&&f.status!=='Bye')});
@@ -205,9 +240,9 @@
     const customRoster=section.players.filter(p=>!p.archived).map(p=>({...p,team:tm.get(p.teamId)||'',rating:sr.find(x=>x.player===p.name)?.rating??dr.find(x=>x.player===p.name)?.rating??1500}));
     const teamRows=section.teams.map(t=>{const registered=new Set(customRoster.filter(p=>p.teamId===t.id).map(p=>p.name)),players=sr.filter(x=>registered.has(x.player)),four=players.slice(0,4);return {team:t.name,avg:mean(players.map(x=>x.rating))||1500,best4:mean(four.map(x=>x.rating))||1500,modelled:players.length,ladder:standings.get(t.name).points}});
     const orderEvidence={};section.teams.forEach(t=>orderEvidence[t.name]={players:section.players.filter(p=>p.teamId===t.id&&!p.archived).sort((a,b)=>a.order-b.order).map(p=>({player:p.name,rating:sr.find(x=>x.player===p.name)?.rating||1500,appearances:singles.filter(m=>m.home.includes(p.name)||m.away.includes(p.name)).length,averagePosition:p.order,emergencyOnly:!!p.emergency})),precedence:[]});
-    const last=results[0],roundOverview=last?{round:last.round,label:last.label,date:last.date,fixtures:last.fixtures,summary:{completedFixtures:last.fixtures.filter(f=>f.status==='Completed').length,singlesRubbers:singles.filter(m=>m.round===last.round).length,doublesRubbers:doubles.filter(m=>m.round===last.round).length,averageSinglesMargin:Math.round(mean(singles.filter(m=>m.round===last.round).map(m=>Math.abs(m.hg-m.ag)))*10)/10}}:null;
-    return {meta,singles:sr,doubles:pr,doublesIndividuals:dr,singlesMatches:singles.map(m=>[m.round,m.dateLabel,m.home[0],m.away[0],m.hg,m.ag,m.winner==='home'?m.home[0]:m.away[0],m.score,m.fixtureId]),ratingHistory,doublesRatingHistory,teams:teamRows,standings:rows,results,upcomingFixtures,format:section.format,greenBall:false,knockout:{source:'none'},sync:{checkedAt:section.updatedAt,latestRound:latest,validation:'passed',missingFixtures:0},note:'Custom section saved on this device. Ratings use '+ratingModel+(ratingModel==='V3B'?' composite game, set, match and match-tiebreak evidence':' game and deciding-tiebreak outcome evidence')+' on completed played matches.',teamOrderEvidence:orderEvidence,customRoster,teamInsights:teamInsights(section,results),playerInsights:{},strengthOfSchedule:[],resultsExpectation:{players:[],matches:[]},roundOverview};
+    const last=results[0],roundOverview=last?{round:last.round,label:last.label,stage:last.stage,date:last.date,fixtures:last.fixtures,summary:{completedFixtures:last.fixtures.filter(f=>f.status==='Completed').length,singlesRubbers:singles.filter(m=>m.round===last.round).length,doublesRubbers:doubles.filter(m=>m.round===last.round).length,averageSinglesMargin:Math.round(mean(singles.filter(m=>m.round===last.round).map(m=>Math.abs(m.hg-m.ag)))*10)/10}}:null;
+    return {meta,singles:sr,doubles:pr,doublesIndividuals:dr,singlesMatches:singles.map(m=>[m.round,m.dateLabel,m.home[0],m.away[0],m.hg,m.ag,m.winner==='home'?m.home[0]:m.away[0],m.score,m.fixtureId]),ratingHistory,doublesRatingHistory,teams:teamRows,standings:rows,results,upcomingFixtures,format:section.format,greenBall:false,knockout:knockout(upcomingFixtures,rows),sync:{checkedAt:section.updatedAt,latestRound:latest,validation:'passed',missingFixtures:0},note:'Custom section saved on this device. Ratings use '+ratingModel+(ratingModel==='V3B'?' composite game, set, match and match-tiebreak evidence':' game and deciding-tiebreak outcome evidence')+' on completed played matches.',teamOrderEvidence:orderEvidence,customRoster,teamInsights:teamInsights(section,results),playerInsights:{},strengthOfSchedule:[],resultsExpectation:{players:[],matches:[]},roundOverview};
   }
-  const api={validate,score,fit,build,clone,specialistCompatible,attendance,ratingEvidence,V3B_WEIGHTS,RM3_MATCH_TIEBREAK_WEIGHT,NO_PLAYER};root.CustomSectionModel=api;if(typeof module!=='undefined')module.exports=api;
+  const api={validate,score,roundStage,roundLabel,fit,build,clone,specialistCompatible,attendance,ratingEvidence,V3B_WEIGHTS,RM3_MATCH_TIEBREAK_WEIGHT,NO_PLAYER};root.CustomSectionModel=api;if(typeof module!=='undefined')module.exports=api;
 })(typeof window!=='undefined'?window:globalThis);
 

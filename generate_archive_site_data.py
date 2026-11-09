@@ -328,6 +328,9 @@ def main() -> None:
         if catalog is None:
             return
     write_player_search(catalog)
+    if CLUB_INDEX.exists() and CURRENT_CATALOG.exists():
+        from scripts.build_clubs_index import build as build_club_participation
+        build_club_participation()
     print(json.dumps({"generated_sections": count, "seasons": catalog["season_count"], "sections": catalog["section_count"]}, indent=2))
 
 

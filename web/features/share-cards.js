@@ -4,7 +4,7 @@ const presets=[['Current scheme',''],['Yellow','#c1cd12'],['Blue','#356bc7'],['G
 function currentColor(){const probe=document.createElement('span');probe.style.color='var(--primary)';document.body.append(probe);const value=getComputedStyle(probe).color;probe.remove();return value||'#c1cd12'}
 const DEFAULTS_KEY='brta-result-card-defaults-v1';
 function savedDefaults(){try{const x=JSON.parse(localStorage.getItem(DEFAULTS_KEY)||'{}'),v={};if(Object.hasOwn(BRTARefinement.layouts,x.ratio))v.ratio=x.ratio;if(['Arial','Verdana','Georgia','Trebuchet MS','Courier New'].includes(x.font))v.font=x.font;if(['singles','doubles'].includes(x.order))v.order=x.order;if(x.colour===''||/^#[a-f\d]{6}$/i.test(x.colour))v.colour=x.colour;for(const k of ['dark','details','fullNames'])if(typeof x[k]==='boolean')v[k]=x[k];return v}catch{return {}}}
-function modelFor(kind,name){if(kind!=='result')return null;const f=findMatch(name);return f?{kind:'result',title:f.home+' vs '+f.away,subtitle:(f.label||'Round '+f.round)+' · '+roundDate(f.date),fixture:f,rows:f.rubbers||[]}:null}
+function modelFor(kind,name){if(kind!=='result')return null;const f=findMatch(name);return f?{kind:'result',title:f.home+' vs '+f.away,subtitle:roundHeading(f)+' · '+roundDate(f.date),fixture:f,rows:f.rubbers||[]}:null}
 
 function draw(){
  if(!canvas||!model)return;const L=BRTARefinement.layouts[options.ratio],w=L.w,h=L.h;canvas.width=w;canvas.height=h;

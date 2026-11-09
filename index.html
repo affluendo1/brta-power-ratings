@@ -42,6 +42,7 @@
 <link rel="stylesheet" href="web/styles/update841.css?v=8521">
 <link rel="stylesheet" href="web/styles/mini-updates.css?v=8525">
 <link rel="stylesheet" href="web/styles/update853.css?v=8544">
+<link rel="stylesheet" href="web/styles/clubs.css?v=900">
 </head>
 <body>
 <header class="site-header">
@@ -53,7 +54,6 @@
   <div class="header-actions">
 
     <button id="roundBtn" class="button secondary">Rounds</button>
-    <button id="clubZoneBtn" class="button secondary" aria-haspopup="dialog" aria-controls="clubPickerOverlay">Club Zone</button>
     
     <button id="settingsBtn" class="button secondary">Settings</button>
     <button id="customCompetitionsBtn" class="button secondary" type="button" data-open-custom-competitions aria-haspopup="dialog" aria-controls="customAdminOverlay">Custom Competitions</button>
@@ -76,14 +76,14 @@
       <button id="sectionSelect" class="choice-trigger" type="button" aria-haspopup="listbox" aria-expanded="false"><span>Loading sections</span><i aria-hidden="true"></i></button>
       <div id="sectionOptions" class="choice-options" role="listbox" aria-label="Section"></div>
     </div>
-    <div class="section-picker-footer"><label class="provisional-control"><input class="custom-check" id="provToggle" type="checkbox"> Provisional entries</label><div class="section-exports"><button id="exportSectionBtn" class="export-link" type="button" aria-haspopup="dialog" aria-controls="export853Overlay">Export section</button></div></div>
+    <div class="section-picker-footer"><label class="provisional-control"><input class="custom-check" id="provToggle" type="checkbox"> Provisional entries</label><span id="archiveSeasonLabel" hidden></span><div class="section-exports"><button id="exportSectionBtn" class="export-link" type="button" aria-haspopup="dialog" aria-controls="export853Overlay">Export section</button></div></div>
   </section>
   <section class="status-strip" id="statusStrip"></section>
   <nav class="main-nav" aria-label="Main navigation">
     <button class="main-tab active" data-page="results">Results</button>
     <button class="main-tab" data-page="standings">Standings</button>
     <button class="main-tab" data-page="ratings">Ratings</button>
-    <button class="main-tab" data-page="teams">Teams</button>
+    <button class="main-tab" data-page="teams">Clubs</button>
     <button class="main-tab" data-page="fixtures">Fixtures</button>
   </nav>
 
@@ -103,7 +103,7 @@
   </section>
 
   <section id="page-teams" class="page">
-    <div id="teamCards" class="team-cards"></div><div id="teamLabContent" class="team-inline" role="tabpanel"></div>
+    <div id="teamCards" class="team-cards"></div><div id="clubs9Shell"></div><div id="teamLabContent" class="team-inline" role="tabpanel"></div>
   </section>
 
   <section id="page-standings" class="page">
@@ -154,15 +154,15 @@
 <script src="web/models/competition-formats.js?v=8521"></script>
 <script src="web/models/association-import.js?v=8521"></script>
 <script src="web/models/score-formats.js?v=8521"></script>
-<script src="web/models/custom-section-model.js?v=audit2"></script>
-<script src="web/models/custom-section-tools.js?v=8541"></script>
-<script src="web/models/export-853.js?v=8542"></script>
-<script src="web/features/custom-sections.js?v=8544"></script>
+<script src="web/models/custom-section-model.js?v=900"></script>
+<script src="web/models/custom-section-tools.js?v=900"></script>
+<script src="web/models/export-853.js?v=900"></script>
+<script src="web/features/custom-sections.js?v=900"></script>
 <script src="web/features/player-search.js?v=8521"></script>
 <script src="web/models/team-lab.js?v=8521"></script>
-<script src="web/features/team-lab-ui.js?v=8521"></script>
-<script src="web/features/changelog-data.js?v=8544"></script>
-<script src="web/features/changelog.js?v=8540"></script>
+<script src="web/features/team-lab-ui.js?v=900"></script>
+<script src="web/features/changelog-data.js?v=900"></script>
+<script src="web/features/changelog.js?v=900"></script>
 <script src="web/optional/parameters.js?v=8521"></script>
 <script src="web/optional/presentation.js?v=8521"></script>
 <script src="web/models/layout-model.js?v=8521"></script>
@@ -172,14 +172,14 @@
 <script src="web/models/rm4-engine.js?v=8521"></script>
 <script src="web/models/orchestra-fit.js?v=8521"></script>
 <script src="web/models/orchestra.js?v=audit2"></script>
-<script src="web/core/app.js?v=8543"></script>
+<script src="web/core/app.js?v=900"></script>
 <script src="web/core/layout.js?v=8543"></script>
 <script src="web/features/confetti.js?v=8521"></script>
 <script src="web/features/archive.js?v=8521"></script>
 <script src="web/optional/sequence.js?v=8521"></script>
 <script src="web/optional/controls.js?v=8521-removed"></script>
 <script src="web/models/lab-model.js?v=8521"></script>
-<script src="web/features/labs.js?v=8521"></script>
+<script src="web/features/labs.js?v=900"></script>
 <script src="web/core/polish.js?v=8521"></script>
 <script src="web/optional/orthography.js?v=8521"></script>
 <script src="web/models/search-commands.js?v=8521"></script>
@@ -191,15 +191,14 @@
 <script src="web/optional/deeds-data.js?v=8521"></script>
 <script src="web/features/model-relay.js?v=8524"></script>
 <script src="web/optional/deeds.js?v=8521"></script>
-<script src="web/features/club-map.js?v=8521"></script>
+<script src="web/features/club-map.js?v=900"></script>
 <script src="web/models/matchday.js?v=8521"></script>
 <script src="web/features/matchday.js?v=8521"></script>
 <script src="web/features/following.js?v=8521"></script>
-<script src="web/features/share-cards.js?v=8521"></script>
+<script src="web/features/share-cards.js?v=900"></script>
 <script src="web/features/competition-formats.js?v=8521"></script>
 <script src="web/features/pair-search.js?v=8521"></script>
-<script src="web/features/team-explorer.js?v=8521"></script>
-<script src="web/features/club-foundation.js?v=8521"></script>
+<script src="web/features/team-explorer.js?v=900"></script>
 <script src="web/features/extras-refinement.js?v=8521"></script>
 <script src="web/features/rm4-ui.js?v=8521"></script>
 <script src="web/features/reading-pages.js?v=8521"></script>
@@ -211,6 +210,8 @@
 <script src="web/core/pwa.js?v=8521"></script>
 <script src="web/features/mini-updates.js?v=8530"></script>
 <script src="web/features/export-853.js?v=8542"></script>
+<script src="web/models/clubs.js?v=900"></script>
+<script src="web/features/clubs.js?v=900"></script>
 </body>
 </html>
 
