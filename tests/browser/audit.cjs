@@ -57,7 +57,8 @@ assert(w.document.querySelector('#profileContent').textContent.includes('Rubbers
 assert(w.document.querySelector('#resultContent').textContent.includes('Actual point scores were not recorded'));
 esc();await tick();assert(!w.document.querySelector('#profileOverlay').classList.contains('hidden'));esc();await tick();
 vm.runInContext("BRTATeamLabUI.open(D.results[0].fixtures[0].home)",ctx);await tick();
-click('[data-team822-expand]');await tick();assert(w.document.querySelector('#teamLabContent').classList.contains('team823-expanded'));
+assert(w.document.querySelector('#teamLabContent > .team822-explorer.expanded'));
+assert(!w.document.querySelector('[data-team822-expand]'));
 console.log('Rubbers records, honest outcome-only scorecards and full Team Explorer expansion passed');
 esc();await tick();
 const local=structuredClone(require('../test_custom_sections.js').sample());

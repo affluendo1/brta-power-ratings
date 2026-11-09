@@ -52,7 +52,8 @@ assert(Model.build(s).meta.competition_label.startsWith('Custom Competitions -')
 const root=path.resolve(__dirname,'..');
 const script=p=>fs.readFileSync(path.join(root,p),'utf8');
 const creator=script('web/features/custom-sections.js');
-assert(creator.includes('data-ca="attendance-player"'),'Creator exposes matchday attendance');
+assert(creator.includes('Attendance exceptions (optional)')&&creator.includes('data-ca="absent-player"'),
+ 'Creator exposes optional matchday attendance exceptions');
 assert(!creator.includes('while Extras is on'),'Creator help must not falsely require Extras');
 assert(creator.indexOf("ensureOverlay();$('#customAdminOverlay').classList.remove('hidden');")<
  creator.indexOf("persist(read().filter(s=>s.id!==section.id).concat(M.clone(section)))"),
