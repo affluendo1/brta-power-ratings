@@ -152,15 +152,57 @@ function fillSections(comp,selected){
   renderChoice('sectionSelect',list.map(x=>[x.section_code,x.section_label]),code);
   return code;
 }
-async function loadSection(code,preloadedPayload=null){
+function loadSection(code,preloadedPayload=null,activity=null,isCurrent=()=>true){
+  const open=task=>loadSectionData(code,preloadedPayload,task,isCurrent);
+  return activity?open(activity):BRTAActivity.run('Loading section',open,{priority:1,message:'Getting section data…'});
+}
+async function readSectionPayload(path,task,label){
+  const response=await fetch(path+'?v='+encodeURIComponent(DATA.globalSync.checkedAt||''),{
+    cache:'no-store',signal:AbortSignal.timeout?.(30000)
+  });
+  if(!response.ok)throw Error('Section data could not be loaded');
+  const total=Number(response.headers?.get('Content-Length'));
+  if(!response.body||!(total>0)||response.headers.get('Content-Encoding')||typeof TransformStream==='undefined')return response.json();
+  let loaded=0,previous=15;
+  const stream=response.body.pipeThrough(new TransformStream({
+    transform(chunk,controller){
+      loaded+=chunk.byteLength;
+      const progress=15+Math.floor(20*Math.min(1,loaded/total));
+      if(progress>previous){task.stage(progress,'Downloading '+label+'…');previous=progress}
+      controller.enqueue(chunk);
+    }
+  }));
+  return new Response(stream).json();
+}
+async function loadSectionData(code,preloadedPayload,task,isCurrent){
   cancelAuxiliaryReveal();const token=++loadingToken,meta=viewCatalog.find(x=>x.section_code===code);
+  const stale=()=>token!==loadingToken||!isCurrent();
+  let committed=false;
+  function restore(){
+    if(!D)return;
+    if(committedCatalog){viewCatalog=committedCatalog;activeHistorySeasonId=committedHistorySeason}
+    $('#sectionSubtitle').textContent=D.meta.competition_label.replace(' - ',' · ')+' · '+D.meta.section_label;
+    renderChoice('competitionSelect',[...new Map(viewCatalog.map(x=>[x.competition_code,sectionCompetitionLabel(x)])).entries()],D.meta.competition_code);
+    fillSections(D.meta.competition_code,D.meta.section_code);
+  }
   $('#sectionSubtitle').textContent=(meta?.competition_label||'').replace(' - ',' · ')+' · '+(meta?.section_label||'Loading…');
   document.body.classList.add('section-loading');for(const id of ['exportSectionBtn']){const button=$('#'+id);if(button)button.disabled=true;}
   try{
+    const label=meta?.section_label||'section';
+    task.stage(15,'Getting '+label+' data…');
     const dataPath=meta?.data_path||('data/site/sections/'+code+'.json');
-    const payload=preloadedPayload||(meta?.is_custom?window.CustomSections.payload(code):await fetch(dataPath+'?v='+encodeURIComponent(DATA.globalSync.checkedAt||''),{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('Section data could not be loaded');return r.json()}));
-    if(token!==loadingToken)return false;
-    const customChoice=meta?.is_custom?(payload.meta?.ratingModel==='V3'?'RM3':payload.meta?.ratingModel==='V3B'?'RM3b':payload.meta?.ratingModel||'RM4.2'):null;const next=meta?.is_custom?await layoutApplyModel(payload,customChoice):await layoutApplyModel(normaliseTeamLabels(payload));if(token!==loadingToken)return false;
+    const payload=preloadedPayload||(meta?.is_custom?window.CustomSections.payload(code):await readSectionPayload(dataPath,task,label));
+    if(stale())return false;
+    if(activeHistorySeasonId&&!payload?.meta?.is_archive)throw Error('The selected file is not a historical section.');
+    task.stage(38,'Preparing scorecards and rating model…');
+    await task.paint();
+    if(stale())return false;
+    const customChoice=meta?.is_custom?(payload.meta?.ratingModel==='V3'?'RM3':payload.meta?.ratingModel==='V3B'?'RM3b':payload.meta?.ratingModel||'RM4.2'):null;
+    const next=await layoutApplyModel(meta?.is_custom?payload:normaliseTeamLabels(payload),customChoice||selectedRatingModel(),task);
+    if(stale())return false;
+    task.stage(84,'Drawing results, standings and fixtures…');
+    await task.paint();
+    if(stale())return false;
     if(meta?.is_custom)ratingScope='section';committedCatalog=viewCatalog;committedHistorySeason=activeHistorySeasonId;ratingRound=null;$$('.overlay:not(.hidden)').filter(o=>o.id!=='settingsOverlay'&&o.id!=='layoutOverlay'&&o.id!=='customAdminOverlay').forEach(o=>{if(o.id)close('#'+o.id)});D=next;lab8Context=null;window.eightBandFilter='';focusedSearchPlayer=null;singles=D.singles||[];dinds=D.doublesIndividuals||[];pairs=D.doubles||[];teams=D.teams||[];
     if(activeHistorySeasonId){const selection={seasonId:activeHistorySeasonId,sectionCode:code};localStorage.setItem('brta-history-selection',JSON.stringify(selection))}else{localStorage.removeItem('brta-history-selection');localStorage.setItem('brta-section',code);}
     resultRound=D.results?.[0]?.round??null;selectedMatch=null;selectedPrediction=null;activePredictionMatch=null;roundSimulations={};
@@ -169,9 +211,27 @@ async function loadSection(code,preloadedPayload=null){
     const archiveLabel=$('#archiveSeasonLabel');
     archiveLabel.hidden=!D.meta.is_archive;
     archiveLabel.textContent=D.meta.is_archive?'Past season · '+D.meta.season_label:'';
-    window.CustomSections?.bindHeader(D.meta?.is_custom?code:null);renderAll();return true;
-  }catch(error){if(token!==loadingToken)return false;if(D){if(committedCatalog){viewCatalog=committedCatalog;activeHistorySeasonId=committedHistorySeason;}$('#sectionSubtitle').textContent=D.meta.competition_label.replace(' - ',' · ')+' · '+D.meta.section_label;renderChoice('competitionSelect',[...new Map(viewCatalog.map(x=>[x.competition_code,sectionCompetitionLabel(x)])).entries()],D.meta.competition_code);fillSections(D.meta.competition_code,D.meta.section_code);}$('#statusStrip').innerHTML='<div class="notice"><b>Could not load this section.</b><span>'+esc(error.message)+'</span></div>';return false}
-  finally{if(token===loadingToken){document.body.classList.remove('section-loading');for(const id of ['exportSectionBtn']){const button=$('#'+id);if(button)button.disabled=false;}}}
+    committed=true;
+    window.CustomSections?.bindHeader(D.meta?.is_custom?code:null);renderAll();
+    if(activePage==='teams'){
+      task.stage(94,'Preparing the Clubs view…');
+      await window.BRTAClubs?.ready();
+    }
+    return !stale();
+  }catch(error){
+    if(stale())return false;
+    restore();
+    const strip=$('#statusStrip');
+    strip.querySelector('.section-load-error')?.remove();
+    strip.insertAdjacentHTML('beforeend','<div class="notice section-load-error" role="alert"><b>Could not load this section.</b><span>'+esc(error.message)+'</span></div>');
+    return false;
+  }finally{
+    if(token===loadingToken){
+      if(!committed&&!isCurrent())restore();
+      document.body.classList.remove('section-loading');
+      const button=$('#exportSectionBtn');if(button)button.disabled=false;
+    }
+  }
 }
 
 function statusStrip(){const sync=D.sync||{},version=window.BRTAChangelog?.version||'8.2';$('#statusStrip').innerHTML='<button type="button" class="status-check-853" data-check-schedule aria-label="When does the site check for new results?"><b>Last checked</b><span>'+esc(fmtTime(sync.checkedAt))+'</span></button><button type="button" class="status-history-853" data-layout-open="history"><b>History</b><span>Browse seasons</span></button><button type="button" data-changelog-open><b>Version</b><span>'+esc(version)+'</span></button><button type="button" data-layout-open="model"><b>Rating model</b><span>'+modelDisplayName(selectedRatingModel())+'</span></button>';}
@@ -213,12 +273,27 @@ function archiveGlobalRows(){
   const seasonId=activeHistorySeasonId;if(!seasonId)return null;
   let entry=archiveGlobalRowsCache.get(seasonId);if(entry)return entry;
   entry={rows:null,error:null};
-  entry.promise=Promise.all(viewCatalog.map(section=>fetch(section.data_path+'?v='+encodeURIComponent(DATA.globalSync.checkedAt||''),{cache:'no-store'}).then(response=>{if(!response.ok)throw Error('One or more archived sections could not be loaded.');return response.json()}).then(payload=>archiveGlobalRowsFromSection(normaliseTeamLabels(payload),section)))).then(groups=>{entry.rows=groups.flat();return entry.rows}).catch(error=>{entry.error=error;return[]});
-  entry.promise.then(()=>{if(activeHistorySeasonId===seasonId&&ratingScope==='all')renderRatings()});
+  const sections=viewCatalog;
+  const load=async task=>{
+    try{
+      let completed=0;
+      const groups=await Promise.all(sections.map(async section=>{
+        const response=await fetch(section.data_path+'?v='+encodeURIComponent(DATA.globalSync.checkedAt||''),{cache:'no-store'});
+        if(!response.ok)throw Error('One or more archived sections could not be loaded.');
+        const rows=archiveGlobalRowsFromSection(normaliseTeamLabels(await response.json()),section);
+        completed++;
+        task?.stage(Math.round(90*completed/sections.length),'Read '+completed+' of '+sections.length+' sections…');
+        return rows;
+      }));
+      entry.rows=groups.flat();
+      return entry.rows;
+    }catch(error){entry.error=error;return false}
+    finally{if(activeHistorySeasonId===seasonId&&ratingScope==='all')renderRatings()}
+  };
   archiveGlobalRowsCache.set(seasonId,entry);
+  entry.promise=activePage==='ratings'?BRTAActivity.run('Loading season search',load):load();
   return entry;
 }
-function primeArchiveGlobalRows(){if(activeHistorySeasonId)archiveGlobalRows()}
 function globalRatingRows(rows=DATA.globalPlayers||[]){
   if(!activeHistorySeasonId&&window.CustomSections)rows=rows.concat(window.CustomSections.catalog().flatMap(meta=>archiveGlobalRowsFromSection(window.CustomSections.payload(meta.section_code),meta)));
   rows=layoutSearchRatings(rows);
@@ -231,11 +306,12 @@ async function ensurePlayerSearchIndex(){
   if(playerSearchIndex)return playerSearchIndex;
   if(!playerSearchPromise){
     playerSearchError=null;
-    playerSearchPromise=fetch('data/archive/player-search.json?v='+encodeURIComponent(DATA.globalSync.checkedAt||''),{cache:'no-store'})
+    const load=task=>fetch('data/archive/player-search.json?v='+encodeURIComponent(DATA.globalSync.checkedAt||''),{cache:'no-store'})
       .then(response=>{if(!response.ok)throw Error('The history player index could not be loaded.');return response.json()})
-      .then(index=>{if(index.version!==1||!Array.isArray(index.entries)||!Array.isArray(index.players)||!Array.isArray(index.sections))throw Error('The history player index is unavailable.');playerSearchIndex=index;return index})
-      .catch(error=>{playerSearchError=error;playerSearchPromise=null;return null})
+      .then(index=>{task?.stage(80,'Preparing player matches…');if(index.version!==1||!Array.isArray(index.entries)||!Array.isArray(index.players)||!Array.isArray(index.sections))throw Error('The history player index is unavailable.');playerSearchIndex=index;return index})
+      .catch(error=>{playerSearchError=error;playerSearchPromise=null;return false})
       .finally(()=>{if(ratingScope==='history')renderRatings()});
+    playerSearchPromise=activePage==='ratings'?BRTAActivity.run('Loading player history',load):load();
   }
   return playerSearchPromise;
 }
@@ -261,7 +337,7 @@ function renderHistoryPlayerSearch(){
 }
 function renderGlobalRatings(){
   const [title,desc]=ratingInfo[ratingView],q=$('#search').value.trim().toLowerCase();
-  const archive=activeHistorySeasonId?archiveGlobalRows():null,sectionCount=viewCatalog.length,seasonLabel=activeHistorySeasonId?(viewCatalog[0]?.season_label||D?.meta?.season_label||'selected season'):'current season';
+  const archive=activeHistorySeasonId&&q?archiveGlobalRows():null,sectionCount=viewCatalog.length,seasonLabel=activeHistorySeasonId?(viewCatalog[0]?.season_label||D?.meta?.season_label||'selected season'):'current season';
   $('#ratingsTitle').textContent='All sections · '+title;
   $('#ratingsDesc').textContent=desc+' Search spans all '+sectionCount+' sections in '+seasonLabel+'.';
   $('#ratingsHint').textContent='Section ratings are fitted independently and are not cross-section rankings.';
@@ -405,7 +481,8 @@ function renderFixtureRounds(){
     const middle=complete?f.homeRubbers+'–'+f.awayRubbers:(f.status==='Scheduled'?'v':f.status==='Wash Out'?'Washout':f.status==='Forfeited To'||f.status==='Forfeited By'?'Forfeit':f.status);
     const sub=complete?(f.homePoints+'–'+f.awayPoints+' pts · '+f.homeGames+'–'+f.awayGames+' games'):scored?(f.homePoints+'–'+f.awayPoints+' pts'):(f.status==='Scheduled'?'Scheduled':f.status);
     const result=findFixtureResult(f,r.round),predict=f.status==='Scheduled'&&!result;
-    return'<button class="fixture-match '+(complete?'complete':'')+'" '+(predict?'data-predict-id':'data-fixture-result-id')+'="'+esc(f.fixtureId)+'"><span>'+teamName(f.home)+'</span><b>'+esc(middle)+'</b><span>'+teamName(f.away)+'</span><small>'+esc(sub)+' · '+(predict?'Prediction centre':'View result')+'</small></button>'
+    const alternate=f.venue&&f.venue.trim().toLowerCase()!==String(f.home||'').trim().toLowerCase();
+    return'<button class="fixture-match '+(complete?'complete':'')+'" '+(predict?'data-predict-id':'data-fixture-result-id')+'="'+esc(f.fixtureId)+'"><span>'+teamName(f.home)+'</span><b>'+esc(middle)+'</b><span>'+teamName(f.away)+'</span><small>'+esc(sub)+' · '+(predict?'Prediction centre':'View result')+(alternate?' · Venue: '+esc(f.venue):'')+'</small></button>'
   }).join('')+'</div>'+(roundSimulations[r.round]||'')+'</section>').join(''):'<div class="notice">No official fixtures are currently published.</div>'
 }
 
@@ -679,6 +756,7 @@ function profileMatchupSection(name,matches,round=null){
 let globalPlayerRequest=0;
 async function openGlobalPlayer(sectionCode,player,seasonKey=''){
   const request=++globalPlayerRequest,sectionRequest=loadingToken;
+  return BRTAActivity.run('Opening Player Lab',async task=>{
   try{
     let catalog=currentCatalog(),season=null;
     if(seasonKey){
@@ -686,23 +764,20 @@ async function openGlobalPlayer(sectionCode,player,seasonKey=''){
       if(!season)throw Error('That season could not be found.');
       catalog=historySeasonSections(season);
     }
-    if(request!==globalPlayerRequest||sectionRequest!==loadingToken)return;
+    if(request!==globalPlayerRequest||sectionRequest!==loadingToken)return false;
     const section=catalog.find(row=>row.section_code===sectionCode);
     if(!section)throw Error('That section could not be found.');
-    // Check the destination before changing the user's active season.
-    let payload=null;
-    if(!section.is_custom){const response=await fetch(section.data_path||('data/site/sections/'+sectionCode+'.json'),{cache:'no-store'});if(!response.ok)throw Error('That section could not be loaded.');payload=await response.json()}
-    if(request!==globalPlayerRequest||sectionRequest!==loadingToken)return;
     activeHistorySeasonId=season&&!season.is_current?season.id:null;
-    viewCatalog=activeHistorySeasonId?catalog:currentCatalog();setupSelectors();
-    if(!activeHistorySeasonId)localStorage.removeItem('brta-history-selection');
-    if(await loadSection(sectionCode,payload)===false)return;
-    if(request!==globalPlayerRequest||D?.meta?.section_code!==sectionCode)return;
+    viewCatalog=activeHistorySeasonId?catalog:currentCatalog();
+    if(!await loadSection(sectionCode,null,task))return false;
+    if(request!==globalPlayerRequest||D?.meta?.section_code!==sectionCode)return false;
+    task.stage(97,'Opening player ratings and match history…');
     switchPage('ratings');openProfile(player);
     const banner=document.createElement('div');banner.className='profile-section-switch';
     banner.innerHTML='<div><b>'+esc(D.meta.season_label||season?.season_label||'Current season')+' · '+esc(D.meta.section_label)+'</b><small>'+esc(competitionLabel(D.meta.competition_code))+'</small></div><button class="button primary" type="button" data-switch-player-section="'+esc(player)+'">Switch to this section</button>';
     $('#profileContent').prepend(banner);
-  }catch(error){if(request===globalPlayerRequest&&sectionRequest===loadingToken)$('#ratingsHint').textContent=error.message+' Please try again.'}
+  }catch(error){if(request===globalPlayerRequest)$('#ratingsHint').textContent=error.message+' Please try again.';return false}
+  },{priority:1,message:'Finding the player’s section…'});
 }
 function switchToPlayerSection(player){
   ratingScope='section';ratingRound=null;localStorage.setItem('brta-rating-scope','section');
@@ -798,46 +873,41 @@ async function ensureHistoryCatalog(){if(historyCatalog)return historyCatalog;if
 function refreshHistorySectionChoices(seasonId=null,sectionCode=null){const seasonSelect=$('#historySeason'),sectionSelect=$('#historySection'),info=$('#historyInfo');if(!seasonSelect||!sectionSelect)return;const competition=$('#historyCompetition').value,seasons=(historyCatalog?.seasons||[]).filter(x=>x.competition_code===competition);let selected=seasonId||seasonSelect.value;if(!seasons.some(x=>x.id===selected)){const saved=readHistorySelection();selected=activeHistorySeasonId||((saved&&seasons.some(x=>x.id===saved.seasonId))?saved.seasonId:'')||seasons.find(x=>x.is_current)?.id||seasons[0]?.id||''}seasonSelect.innerHTML=seasons.map(x=>'<option value="'+esc(x.id)+'">'+esc(x.season_option_label||x.season_label)+'</option>').join('');seasonSelect.value=selected;const season=seasons.find(x=>x.id===selected),sections=season?.sections||[];let currentSection=sectionCode||sectionSelect.value;const saved=readHistorySelection();if(!sections.some(x=>x.section_code===currentSection))currentSection=saved?.seasonId===selected?saved.sectionCode:'';if(!sections.some(x=>x.section_code===currentSection))currentSection=D?.meta?.competition_code===competition?D.meta.section_code:'';if(!sections.some(x=>x.section_code===currentSection))currentSection=sections[0]?.section_code||'';sectionSelect.innerHTML=sections.map(x=>'<option value="'+esc(x.section_code)+'">'+esc(x.section_label)+'</option>').join('');sectionSelect.value=currentSection;if(info)info.textContent=season?season.season_label+' · '+sections.length+' sections'+(season.is_current?' · live season data':' · TROLS archive'):'No archived seasons available.';$('#historyOpenBtn').disabled=!season||!sections.length}
 async function hydrateHistorySettings(){const info=$('#historyInfo');if(!info)return;const catalog=await ensureHistoryCatalog();if(!info.isConnected)return;if(!catalog){info.textContent='The season archive is not available yet.';$('#historyOpenBtn').disabled=true;return}const competition=$('#historyCompetition');competition.innerHTML=[...new Map(catalog.seasons.map(s=>[s.competition_code,competitionLabel(s.competition_code)])).entries()].map(([v,l])=>'<option value="'+esc(v)+'">'+esc(l)+'</option>').join('');const currentComp=D?.meta?.is_custom?'UA':D?.meta?.competition_code||'UA';const saved=readHistorySelection();const preferred=activeHistorySeasonId||saved?.seasonId||catalog.seasons.find(x=>x.competition_code===currentComp&&x.is_current)?.id;competition.value=(catalog.seasons.find(x=>x.id===preferred)?.competition_code||currentComp);refreshHistorySectionChoices(preferred,saved?.sectionCode||D?.meta?.section_code||'');competition.onchange=()=>refreshHistorySectionChoices();$('#historySeason').onchange=()=>refreshHistorySectionChoices($('#historySeason').value,'');$('#historyOpenBtn').onclick=()=>openHistoryChoice();$('#historyCurrentBtn').onclick=()=>goToCurrentSeason()}
 async function openHistoryChoice(){
-  const season=historyCatalog?.seasons.find(x=>x.id===$('#historySeason').value),section=season?.sections.find(x=>x.section_code===$('#historySection').value),button=$('#historyOpenBtn'),info=$('#historyInfo');
-  if(!season||!section)return;
-  if(season.is_current){activeHistorySeasonId=null;viewCatalog=currentCatalog();localStorage.removeItem('brta-history-selection');setupSelectors();closeLayoutOverlay();close('#settingsOverlay');switchPage('results');await loadSection(section.section_code);return}
-  const historicalCatalog=historySeasonSections(season),meta=historicalCatalog.find(x=>x.section_code===section.section_code),dataPath=meta?.data_path;
-  if(!dataPath){if(info)info.textContent='This historical section has no published archive file yet.';return}
-  const sectionRequest=loadingToken;button.disabled=true;if(info)info.textContent='Opening '+season.season_label+' · '+section.section_label+'…';
+  const season=historyCatalog?.seasons.find(x=>x.id===$('#historySeason').value);
+  const section=season?.sections.find(x=>x.section_code===$('#historySection').value);
+  const button=$('#historyOpenBtn'),info=$('#historyInfo');
+  if(!season||!section||button.disabled)return;
+  const catalog=season.is_current?currentCatalog():historySeasonSections(season);
+  if(!season.is_current&&!catalog.find(row=>row.section_code===section.section_code)?.data_path){
+    info.textContent='This historical section has no published archive file yet.';return;
+  }
+  button.disabled=true;
+  activeHistorySeasonId=season.is_current?null:season.id;
+  viewCatalog=catalog;
   try{
-    const response=await fetch(dataPath+'?v='+encodeURIComponent(DATA.globalSync.checkedAt||''),{cache:'no-store'});
-    if(!response.ok)throw Error('The archive file is unavailable.');
-    const payload=await response.json();
-    if(sectionRequest!==loadingToken||!info.isConnected||$('#layoutOverlay').classList.contains('hidden'))return;
-    if(!payload?.meta?.is_archive)throw Error('The selected file is not a historical section.');
-    activeHistorySeasonId=season.id;viewCatalog=historicalCatalog;localStorage.setItem('brta-history-selection',JSON.stringify({seasonId:season.id,sectionCode:section.section_code}));
-    setupSelectors();primeArchiveGlobalRows();closeLayoutOverlay();close('#settingsOverlay');switchPage('results');await loadSection(section.section_code,payload);
-  }catch(error){
-    if(info)info.textContent='Could not open this archive: '+error.message+' Your current section has not been changed.';
-  }finally{if(button)button.disabled=false}
+    return await BRTAActivity.run('Opening '+season.season_label,async task=>{
+      if(!await loadSection(section.section_code,null,task)){
+        if(info.isConnected)info.textContent='Could not open this section. Check the archive or try again.';
+        return false;
+      }
+      closeLayoutOverlay();close('#settingsOverlay');switchPage('results');
+      return true;
+    },{priority:1});
+  }finally{button.disabled=false}
 }
-function goToCurrentSeason(){activeHistorySeasonId=null;viewCatalog=currentCatalog();localStorage.removeItem('brta-history-selection');const code=viewCatalog.some(x=>x.section_code===localStorage.getItem('brta-section'))?localStorage.getItem('brta-section'):DATA.defaultSectionCode;setupSelectors();closeLayoutOverlay();close('#settingsOverlay');switchPage('results');loadSection(code)}
+function goToCurrentSeason(){
+  const catalog=currentCatalog(),saved=localStorage.getItem('brta-section');
+  const code=catalog.some(x=>x.section_code===saved)?saved:DATA.defaultSectionCode;
+  activeHistorySeasonId=null;viewCatalog=catalog;
+  return BRTAActivity.run('Returning to the current season',async task=>{
+    if(!await loadSection(code,null,task))return false;
+    closeLayoutOverlay();close('#settingsOverlay');switchPage('results');
+    return true;
+  },{priority:1});
+}
 
 function applyProfilePosition(){$('#profileOverlay').dataset.position=profilePosition}
-function runModeTransition(complete,{title='Switching interface',message='Preparing layout…',variant='default',duration=500,randomProgress=false,statuses=[],quotes=[]}={}){
-  const ov=$('#modeSwitchOverlay'),ring=$('#progressRing');ov.classList.toggle('royal-transition',variant==='royal');ov.classList.toggle('ms-void-transition',variant==='void');ov.querySelector('h2').textContent=title;$('#switchStatus').textContent=message;ring.style.setProperty('--progress','0deg');$('#progressPct').textContent='0%';ov.classList.remove('hidden');ov.setAttribute('data-ms-cutscene','');
-  let tip;if(quotes.length){tip=document.createElement('p');tip.className='mode-switch-tip';tip.textContent=quotes[0];ov.querySelector('.mode-switch-box').prepend(tip);}
-  const noMotion=localStorage.getItem('brta-animations')==='off'||matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if(noMotion){try{complete()}finally{ov.classList.add('hidden');ov.classList.remove('royal-transition','ms-void-transition');ov.removeAttribute('data-ms-cutscene');tip?.remove()}return}
-  const start=performance.now(),total=Math.max(100,duration),milestones=randomProgress?window.AmbientParameters.progressPlan(total):null;
-  if(milestones)for(let i=1;i<milestones.length;i++)milestones[i].value=Math.max(milestones[i-1].value,milestones[i].value);
-  const endGame=randomProgress?window.BRTAWaitingGame?.mount(ov):null;
-  let lastQuote=0,lastStatus=0,shown=0;
-  const timer=setInterval(()=>{const elapsed=performance.now()-start;let p;
-    if(randomProgress){p=window.AmbientParameters.progressAt(milestones,elapsed);}else p=Math.min(100,Math.floor(elapsed/total*100));
-    if(randomProgress){shown=Math.min(100,shown+Number(Math.floor(p)>shown));ring.style.setProperty('--progress',Math.min(p,shown+.999)*3.6+'deg');$('#progressPct').textContent=shown+'%';}else{ring.style.setProperty('--progress',p*3.6+'deg');$('#progressPct').textContent=p+'%';}
-    const quote=Math.floor(elapsed/5000);if(tip&&quote!==lastQuote){lastQuote=quote;tip.textContent=quotes[quote%quotes.length];tip.style.animation='none';void tip.offsetWidth;tip.style.animation='';}
-    const status=Math.floor(elapsed/3500);if(statuses.length&&status!==lastStatus){lastStatus=status;$('#switchStatus').textContent=statuses[status%statuses.length];}
-    if(elapsed>=total&&(!randomProgress||shown===100)){clearInterval(timer);endGame?.();$('#progressPct').textContent='100%';ring.style.setProperty('--progress','360deg');setTimeout(()=>{try{complete()}finally{ov.classList.add('hidden');ov.classList.remove('royal-transition','ms-void-transition');ov.removeAttribute('data-ms-cutscene');tip?.remove();}},150);}
-  },randomProgress?16:20);
-}
-function switchInterface(target){if(target===interfaceMode)return;runModeTransition(()=>{localStorage.setItem('brta-interface',target);location.reload()})}
-window.runBRTAInterfaceTransition=runModeTransition;
+function switchInterface(target){if(target===interfaceMode)return;localStorage.setItem('brta-interface',target);location.reload()}
 window.BRTASitePreferences={getTheme:()=>theme,setTheme:value=>{theme=value;localStorage.setItem('brta-theme',value);applyTheme()}};
 function renderAll(){document.body.classList.toggle('custom-section',!!D.meta?.is_custom);if(D.meta?.is_custom){close('#clubPickerOverlay');close('#clubZoneOverlay');activeClubZone=null;}statusStrip();teamOptions();renderRatings();renderTeams();renderStandings();renderResults();renderFixtures();$('#roundBtn').textContent=D.roundOverview?(D.roundOverview.label||('Round '+D.roundOverview.round))+' overview':'Latest round';window.dispatchEvent(new Event('brta-section-ready'))}
 
@@ -918,7 +988,20 @@ window.addEventListener('brta-module-toggle',()=>{
 });
 window.addEventListener('brta-custom-sections-change',()=>{if(activeHistorySeasonId)return;const code=D?.meta?.section_code;viewCatalog=currentCatalog();setupSelectors();if(code?.startsWith('local-')&&!document.querySelector('#customAdminOverlay:not(.hidden)')){if(viewCatalog.some(x=>x.section_code===code))loadSection(code);else loadSection(DATA.defaultSectionCode)}});
 window.addEventListener('brta-custom-section-open',e=>{activeHistorySeasonId=null;localStorage.removeItem('brta-history-selection');viewCatalog=currentCatalog();setupSelectors();close('#settingsOverlay');switchPage('results');loadSection(e.detail)});
-async function startApp(){applyProfilePosition();viewCatalog=currentCatalog();setupSelectors();showSyncToast();const saved=readHistorySelection();if(!saved||layoutDefaultCode()){await loadSection(choiceValue('sectionSelect'));ensureHistoryCatalog();return}const catalog=await ensureHistoryCatalog(),season=catalog?.seasons.find(x=>x.id===saved.seasonId),section=season?.sections.find(x=>x.section_code===saved.sectionCode);if(season&&section){activeHistorySeasonId=season.id;viewCatalog=historySeasonSections(season);setupSelectors();primeArchiveGlobalRows();await loadSection(section.section_code)}else{activeHistorySeasonId=null;viewCatalog=currentCatalog();setupSelectors();await loadSection(choiceValue('sectionSelect'))}}
+async function startApp(){
+  applyProfilePosition();viewCatalog=currentCatalog();setupSelectors();showSyncToast();
+  const saved=readHistorySelection();
+  if(!saved||layoutDefaultCode()){
+    await loadSection(choiceValue('sectionSelect'));ensureHistoryCatalog();return;
+  }
+  await BRTAActivity.run('Restoring your section',async task=>{
+    const catalog=await ensureHistoryCatalog();
+    const season=catalog?.seasons.find(x=>x.id===saved.seasonId);
+    const section=season?.sections.find(x=>x.section_code===saved.sectionCode);
+    if(season&&section){activeHistorySeasonId=season.id;viewCatalog=historySeasonSections(season)}
+    return loadSection(section?.section_code||choiceValue('sectionSelect'),null,task);
+  },{priority:1,message:'Finding the saved season…'});
+}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',startApp,{once:true});else startApp();
 
 

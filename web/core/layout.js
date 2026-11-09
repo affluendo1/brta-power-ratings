@@ -13,11 +13,12 @@ function rm2Unlocked(){return legacyModelUnlocked('RM2')}
 function ascensionUnlocked(){return legacyModelUnlocked('ascension')}
 function selectedRatingModel(){const saved=localStorage.getItem('brta-rating-model');return (saved==='RM1000 Ascension'?ascensionUnlocked():saved==='RM1'||saved==='RM2'?legacyModelUnlocked(saved):['RM3','RM3b','RM4a','RM4b','RM4.1 Ensemble','RM4.2','4melody.2','4foundation.2'].includes(saved))?saved:'4melody.2'}
 function selectedRatingCentre(){return BRTARM4Engine.policy(selectedRatingModel()).centre}
-async function layoutApplyModel(data,model=selectedRatingModel()){
+async function layoutApplyModel(data,model=selectedRatingModel(),activity=null){
  const source=layoutSources.get(data)||data;data=BRTAScores.normalise(source);const centre=BRTARM4Engine.policy(model).centre,key=model+':'+centre;
  if(layoutCache.get(data)?.model===key)return layoutCache.get(data).result;
  if(BRTAOrchestra.isModel(model))await ensureOrchestra();
  let result=data;if(BRTAOrchestra.isModel(model)||model==='Automatic'||model==='RM1000 Ascension'||model.startsWith('RM4'))await ensureRM4Frozen();
+ activity?.stage(55,'Calculating '+modelDisplayName(model)+' ratings…');
  if(model!=='RM3'||data.meta?.ratingModel==='V3B'||data.meta?.needsScoreRefit){result=await new Promise((resolve,reject)=>{const worker=new Worker('web/workers/rating-worker.js?v=audit2'),timer=setTimeout(()=>{worker.terminate();reject(Error('Rating calculation timed out. Try RM3 in Settings.'))},90000);const finish=()=>{clearTimeout(timer);worker.terminate()};worker.onmessage=e=>{finish();e.data.error?reject(Error(e.data.error)):resolve(e.data.data)};worker.onerror=e=>{finish();reject(Error(e.message||'Could not calculate ratings.'))};worker.postMessage({data,model,orchestraBundle:window.BRTAOrchestraBundle,history:window.BRTAOrchestraHistory})})}
  result=BRTARM4Engine.display({...result,meta:{...result.meta,predictionModel:BRTAOrchestra.isModel(model)?(result.meta?.predictionModel||'4.2 Orchestra'):model}});layoutCache.set(data,{model:key,result});layoutSources.set(result,source);return result;
 }
@@ -36,7 +37,7 @@ function openLayoutOverlay(kind){
  let overlay=$('#layoutOverlay');if(!overlay){overlay=document.createElement('div');overlay.id='layoutOverlay';overlay.className='overlay hidden layout-overlay';document.body.append(overlay)}
  const titles={history:'Section History',methodology:'Rating Methodology',rules:'BRTA Rules',model:'Rating model'},method=kind==='methodology'?eightMethodologyHTML():'';
  overlay.innerHTML='<div class="overlay-backdrop" data-layout-close></div><section class="settings-sheet" role="dialog" aria-modal="true" aria-labelledby="layoutTitle"><button class="close-btn" data-layout-close aria-label="Close">×</button><div class="overlay-title"><h2 id="layoutTitle">'+titles[kind]+'</h2></div>'+(kind==='history'?historyDialogHTML():kind==='rules'?brtaRulesHTML():kind==='model'?'<div class="settings-group"><p>Choose the rating model. Orchestra automatically handles predictions for the frontier family.</p>'+window.BRTAModelFields.html('homeModel')+'</div>':method)+'</section>';
- layoutOverlayFocus=document.activeElement;overlay.classList.remove('hidden');BRTAOverlays.lock(overlay);document.body.classList.add('modal-open');overlay.querySelector('button').focus();if(kind==='history')hydrateHistorySettings();if(kind==='methodology'||kind==='model')eightBindModel();
+ layoutOverlayFocus=document.activeElement;overlay.classList.remove('hidden');BRTAOverlays.lock(overlay);document.body.classList.add('modal-open');overlay.querySelector('button').focus();if(kind==='history')BRTAActivity.run('Loading season history',()=>hydrateHistorySettings(),{message:'Getting the season directory…'});if(kind==='methodology'||kind==='model')eightBindModel();
 }
 function closeLayoutOverlay(){const o=$('#layoutOverlay');if(!o||o.classList.contains('hidden'))return;o.classList.add('hidden');BRTAOverlays.unlock(o);if(!document.querySelector('.overlay:not(.hidden)'))document.body.classList.remove('modal-open');layoutOverlayFocus?.focus?.({preventScroll:true})}
 function openSettings(){
@@ -58,19 +59,73 @@ document.addEventListener('click',e=>{const o=e.target.closest('[data-layout-ope
 document.addEventListener('keydown',e=>{const o=$('#layoutOverlay');if(!o||o.classList.contains('hidden'))return;if(e.key==='Escape'){e.preventDefault();e.stopImmediatePropagation();closeLayoutOverlay()}if(e.key==='Tab'){const items=[...o.querySelectorAll('button,select,summary,a[href]')].filter(x=>!x.disabled&&x.getClientRects().length),first=items[0],last=items.at(-1);if(e.shiftKey&&(document.activeElement===first||!o.contains(document.activeElement))){e.preventDefault();last.focus()}else if(!e.shiftKey&&(document.activeElement===last||!o.contains(document.activeElement))){e.preventDefault();first.focus()}}},true);
 
 // Search indexes retain names and records; fit only sections matching the user's query.
-const layoutSearchCache=new Map(),layoutSearchJobs=[];let layoutSearchBusy=0;
+const layoutSearchCache=new Map(),layoutSearchJobs=[];
+let layoutSearchBusy=0,layoutSearchActivity='';
 window.addEventListener('brta-custom-sections-change',()=>layoutSearchCache.clear());
-function layoutSearchPump(){while(layoutSearchBusy<2&&layoutSearchJobs.length){const job=layoutSearchJobs.shift();layoutSearchBusy++;job().finally(()=>{layoutSearchBusy--;layoutSearchPump()})}}
+function layoutSearchPump(){
+ while(layoutSearchBusy<2&&layoutSearchJobs.length){
+   const job=layoutSearchJobs.shift();
+   layoutSearchBusy++;
+   job().finally(()=>{layoutSearchBusy--;layoutSearchPump()});
+ }
+}
+
+function layoutSearchFit(key,code,model){
+ const entry={rows:null,error:false,promise:null};
+ const section=viewCatalog.find(row=>row.section_code===code);
+ const active=D.meta.section_code===code?D:null;
+ layoutSearchCache.set(key,entry);
+ entry.promise=new Promise(resolve=>{
+   layoutSearchJobs.push(async()=>{
+     try{
+       let payload=active;
+       if(!payload){
+         payload=section?.is_custom?CustomSections.payload(code):await fetch(section?.data_path||('data/site/sections/'+code+'.json')).then(response=>{
+           if(!response.ok)throw Error('Section unavailable');
+           return response.json();
+         });
+         payload=await layoutApplyModel(normaliseTeamLabels(payload),model);
+       }
+       entry.rows=new Map(archiveGlobalRowsFromSection(payload,section||{section_code:code}).map(row=>[row.player,row]));
+     }catch{entry.error=true}
+     finally{resolve()}
+     if(ratingScope==='all'&&activePage==='ratings')renderRatings();
+   });
+   queueMicrotask(layoutSearchPump);
+ });
+ return entry;
+}
+
 function layoutSearchRatings(rows){
  // Static RM3 index: use the current fixed RM3 display units.
  const indexFactor=BRTARM4Engine.policy('RM3').probabilityScale/450;
- rows=rows.map(r=>({...r,...Object.fromEntries(['singlesRating','doublesRating','overallRating'].filter(k=>Number.isFinite(r[k])).map(k=>[k,Math.round(1500+indexFactor*(r[k]-1500))])),...Object.fromEntries(['singlesSe','doublesSe','overallSe'].filter(k=>Number.isFinite(r[k])).map(k=>[k,Math.round(indexFactor*r[k])]))}));
- if(selectedRatingModel()==='RM3')return rows;
- const query=$('#search').value.trim().toLowerCase();if(!query&&!BRTAOrchestra.isModel(selectedRatingModel()))return rows;
- return rows.map(row=>{if(query&&!row.player.toLowerCase().includes(query))return row;const model=selectedRatingModel(),key=(activeHistorySeasonId||'current')+':'+selectedRatingModel()+':'+selectedRatingCentre()+':'+row.sectionCode;let entry=layoutSearchCache.get(key);
-  if(!entry){entry={rows:null,error:false};layoutSearchCache.set(key,entry);const section=viewCatalog.find(s=>s.section_code===row.sectionCode);layoutSearchJobs.push(async()=>{try{let payload;if(D.meta.section_code===row.sectionCode)payload=D;else{payload=section?.is_custom?CustomSections.payload(row.sectionCode):await fetch(section?.data_path||('data/site/sections/'+row.sectionCode+'.json')).then(r=>{if(!r.ok)throw Error('Section unavailable');return r.json()});}payload=await layoutApplyModel(normaliseTeamLabels(payload),model);entry.rows=new Map(archiveGlobalRowsFromSection(payload,section||{section_code:row.sectionCode}).map(r=>[r.player,r]));}catch{entry.error=true}if(ratingScope==='all')renderRatings()});queueMicrotask(layoutSearchPump);}
-  if(entry.rows)return entry.rows.get(row.player)||row;return{...row,...Object.fromEntries(['singlesRating','doublesRating','overallRating'].filter(k=>row[k]!=null).map(k=>[k,entry.error?'—':'…']))};
+ const ratings=['singlesRating','doublesRating','overallRating'];
+ rows=rows.map(row=>({...row,...Object.fromEntries(ratings.filter(key=>Number.isFinite(row[key])).map(key=>[key,Math.round(1500+indexFactor*(row[key]-1500))])),...Object.fromEntries(['singlesSe','doublesSe','overallSe'].filter(key=>Number.isFinite(row[key])).map(key=>[key,Math.round(indexFactor*row[key])]))}));
+ const model=selectedRatingModel(),query=$('#search').value.trim().toLowerCase();
+ if(model==='RM3'||!query)return rows;
+ const scope=[activeHistorySeasonId||'current',model,selectedRatingCentre()].join(':');
+ const fits=new Set();
+ const results=rows.map(row=>{
+   if(!row.player.toLowerCase().includes(query))return row;
+   const key=scope+':'+row.sectionCode;
+   const entry=layoutSearchCache.get(key)||layoutSearchFit(key,row.sectionCode,model);
+   if(entry.rows)return entry.rows.get(row.player)||row;
+   if(!entry.error)fits.add(entry.promise);
+   return {...row,...Object.fromEntries(ratings.filter(key=>row[key]!=null).map(key=>[key,entry.error?'—':'…']))};
  });
+ const signature=scope+'|'+query;
+ if(activePage==='ratings'&&fits.size&&layoutSearchActivity!==signature){
+   layoutSearchActivity=signature;
+   BRTAActivity.run('Calculating search ratings',async task=>{
+     let completed=0;
+     await Promise.all([...fits].map(fit=>fit.then(()=>{
+       completed++;
+       task.stage(Math.round(95*completed/fits.size),'Fitted '+completed+' of '+fits.size+' matching sections…');
+     })));
+     if(layoutSearchActivity===signature)layoutSearchActivity='';
+   },{key:'rating-search',message:'Preparing the rating model for matching sections…'});
+ }
+ return results;
 }
 
 

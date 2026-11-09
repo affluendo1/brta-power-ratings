@@ -20,9 +20,8 @@
   function ensure(){if(overlay)return;overlay=document.createElement('div');overlay.id='moreSettingsOverlay';overlay.className='overlay hidden ms-overlay';overlay.setAttribute('data-ms-cutscene','');document.body.append(overlay);overlay.addEventListener('pointerover',event=>{if(event.target.closest('[data-ms="dodge"]'))dodge();if(event.target.closest('[data-ms="confirm-no"]')&&step===7)swapConfirmation()});overlay.addEventListener('pointerdown',event=>{if(event.pointerType!=='mouse'&&event.target.closest('[data-ms="dodge"]')){event.preventDefault();dodge()}});overlay.addEventListener('click',click);overlay.addEventListener('change',change);overlay.addEventListener('input',input);}
   function show(){ensure();if(phase==='closed'){returnFocus=document.activeElement;}overlay.classList.remove('hidden');BRTAOverlays.lock(overlay,['modeSwitchOverlay','msNarrator']);document.body.classList.add('modal-open');}
   function close(){clearScene();phase='closed';overlay?.classList.add('hidden');document.documentElement.removeAttribute('data-ms-void');BRTAOverlays.unlock(overlay);if(!document.querySelector('.overlay:not(.hidden)'))document.body.classList.remove('modal-open');if(returnFocus?.isConnected)returnFocus.focus({preventScroll:true});}
-  function gate(){if(localStorage.getItem('brta-ambient-access')==='1'){show();phase='transition';transition(voidSettings,{title:'More Settings',message:'Opening the remaining settings…',variant:'void'});return}clearScene();show();phase='gate';overlay.setAttribute('data-ms-cutscene','');overlay.innerHTML='<div class="overlay-backdrop"></div>'+panel('More Settings','<div class="ms-gate-body '+(dodges>=5?'ms-gate-expanded':'')+'"><div class="ms-dodge-track"><button class="ms-circle ms-dodger '+(left?'ms-left':'')+'" type="button" data-ms="dodge" aria-label="Open more settings">↗</button></div><div class="ms-gate-reward '+(dodges>=5?'ms-reward-visible':'')+'"><button class="button primary" type="button" data-ms="try">Try me.</button></div></div>',true);$('.ms-dodger').focus({preventScroll:true});}
+  function gate(){if(localStorage.getItem('brta-ambient-access')==='1'){show();voidSettings();return}clearScene();show();phase='gate';overlay.setAttribute('data-ms-cutscene','');overlay.innerHTML='<div class="overlay-backdrop"></div>'+panel('More Settings','<div class="ms-gate-body '+(dodges>=5?'ms-gate-expanded':'')+'"><div class="ms-dodge-track"><button class="ms-circle ms-dodger '+(left?'ms-left':'')+'" type="button" data-ms="dodge" aria-label="Open more settings">↗</button></div><div class="ms-gate-reward '+(dodges>=5?'ms-reward-visible':'')+'"><button class="button primary" type="button" data-ms="try">Try me.</button></div></div>',true);$('.ms-dodger').focus({preventScroll:true});}
   function dodge(){if(phase!=='gate'||busy)return;busy=true;left=!left;dodges++;$('.ms-dodger').classList.toggle('ms-left',left);if(dodges>=5){$('.ms-gate-body').classList.add('ms-gate-expanded');$('.ms-gate-reward').classList.add('ms-reward-visible')}setTimeout(()=>{busy=false},260);}
-  function transition(done,options={}){if(root.runBRTAInterfaceTransition)root.runBRTAInterfaceTransition(done,options);else done();}
   async function shuffle(){
     clearScene();phase='shuffle';overlay.setAttribute('data-ms-cutscene','');const id=serial;
     overlay.innerHTML='<div class="ms-game" role="dialog" aria-modal="true" aria-labelledby="msTitle"><h2 id="msTitle">Keep your eye on it.</h2><p class="ms-game-status" aria-live="polite">Just one button.</p><div class="ms-cup-table"></div><button class="ms-game-exit close-btn hidden" data-ms="back" type="button" aria-label="Return">×</button></div>';
@@ -116,12 +115,10 @@
     phase='confirm';$('[data-ms="confirm-yes"]').disabled=!!item.phrase&&$('[data-ms-confirm]').value!==item.phrase;const no=$('[data-ms="confirm-no"]');if(no)no.disabled=false;overlay.querySelector('input,button').focus();E.refresh();
   }
   function swapConfirmation(){if(phase!=='confirm'||step!==7||busy)return;busy=true;$('.ms-confirm-actions').classList.toggle('ms-confirm-swapped');setTimeout(()=>busy=false,100);}
-  function longReturn(){
-    clearScene();phase='returning';const id=serial;
-    transition(()=>{if(alive(id)){document.documentElement.removeAttribute('data-ms-void');close();syncThemeOptions();}},
-      {title:'Returning',message:'Re-implementing mechanics…',variant:'void',duration:40000+Math.random()*20000,randomProgress:true,
-       statuses:['Re-implementing mechanics…','Re-attaching the settings…','Adjusting the remaining atmosphere…','Looking for the normal amount of black…','Reticulating tennis balls…','Reconsidering the return journey…','Putting the website back where it was…'],
-       quotes:['Did you know? This website calculates ratings.','The Settings button opens Settings. Usually.','No administrative powers were gained today.','The void has excellent contrast.','Your cursor has remained a cursor throughout.','Please remain approximately where you are.','A watched progress wheel still takes its time.']});
+  function returnToSettings(){
+    document.documentElement.removeAttribute('data-ms-void');
+    close();
+    syncThemeOptions();
   }
   function click(event){
     if(event.target.closest('.ms-void-crown')&&phase==='void'&&panelHidden&&overlay.classList.contains('ms-crown-visible')){crownCount++;root.BRTASequence?.prime();const crown=event.target.closest('.ms-void-crown');crown.style.setProperty('--crown-jolt',(1+crownCount*.9)+'px');crown.classList.remove('ms-crown-jolt');void crown.getBoundingClientRect();crown.classList.add('ms-crown-jolt');if(crownCount===11){phase='sequence';root.BRTASequence?.start(overlay)}return;}
@@ -129,8 +126,8 @@
     const action=event.target.closest('[data-ms]')?.dataset.ms;if(!action||!enabled())return;
     if(action==='close'&&phase==='gate')close();
     if(action==='back'&&phase==='lost')gate();
-    if(action==='try'&&phase==='gate'&&dodges>=5){phase='transition';transition(shuffle,{title:'More Settings',message:'Preparing a perfectly reasonable interface…',variant:'void'});}
-    if(action==='prize'&&phase==='won'){phase='transition';transition(voidSettings,{title:'More Settings',message:'Opening the remaining settings…',variant:'void'});}
+    if(action==='try'&&phase==='gate'&&dodges>=5)shuffle();
+    if(action==='prize'&&phase==='won')voidSettings();
     if(action==='hint'){pressureModeRevealed=true;$('[data-ms="slider"]').classList.remove('hidden');}
     if(action==='slider'){slider=!slider;pressureControls();event.target.textContent=slider?'Display as dropdown':'Display as slider';}
     if(action==='pressure-list'){const list=$('#msPressureList'),open=list.classList.contains('hidden');list.classList.toggle('hidden',!open);event.target.closest('button').setAttribute('aria-expanded',String(open));if(open){list.scrollTop=(Math.round(prefs.pressure*100)-1)*36-list.clientHeight/2+18;list.focus();}}
@@ -139,7 +136,7 @@
     if(action==='admin'&&phase==='void'){step=0;confirmation();}
     if(action==='confirm-yes'&&phase==='confirm'){if(M.confirmations[step].phrase&&$('[data-ms-confirm]').value!==M.confirmations[step].phrase)return;if(step===M.confirmations.length-1)voidSettings();else{step++;confirmation();}}
     if(action==='confirm-no'&&phase==='confirm'){if(step===7){step=8;confirmation()}else voidSettings();}
-    if(action==='return'&&phase==='void')longReturn();
+    if(action==='return'&&phase==='void')returnToSettings();
   }
   function input(event){if(event.target.matches('[data-ms-confirm]')){$('[data-ms="confirm-yes"]').disabled=phase!=='confirm'||event.target.value!==M.confirmations[step].phrase;return;}if(event.target.matches('[data-ms-range]')){const target=Number(event.target.value)/100;event.target.value=String(Math.round(prefs.pressure*100));setPressureTarget(target);}}
   function change(event){const key=event.target.dataset.msPref;if(!key)return;if(key==='black')event.target.closest('.ms-black-swatch')?.classList.toggle('selected',event.target.checked);prefs[key]=key==='inverted'?event.target.value==='inverted':event.target.checked;save();applyPreferences();if(key==='moreBands')root.dispatchEvent(new Event('brta-bands-toggle'));if(key==='rm1'||key==='rm2'||key==='ascension')root.dispatchEvent(new Event('brta-'+key+'-toggle'));if(key==='narrator'&&prefs.narrator)speak('Narrator enabled.',true);}
@@ -164,7 +161,7 @@
   }
   function drainSpeech(){
     if(voiceBusy||!enabled()||!prefs.narrator)return;
-    if(['transition','shuffle','reveal','returning','confirm-loading'].includes(phase)){speechQueue.length=0;return;}
+    if(['shuffle','reveal','confirm-loading'].includes(phase)){speechQueue.length=0;return;}
     const text=speechQueue.shift();if(!text)return;
     const epoch=voiceEpoch;let ended=false;
     const finish=()=>{if(ended||epoch!==voiceEpoch)return;ended=true;clearTimeout(voiceTimeout);voiceBusy=false;currentVoice=null;$('#msNarrator')?.classList.remove('ms-narrating');setTimeout(drainSpeech,80);};
@@ -180,7 +177,7 @@
     }catch{finish();}
   }
   function speak(text,priority=false){
-    if(!enabled()||!prefs.narrator||['transition','shuffle','reveal','returning','confirm-loading'].includes(phase))return;
+    if(!enabled()||!prefs.narrator||['shuffle','reveal','confirm-loading'].includes(phase))return;
     text=String(text).replace(/\s+/g,' ').trim().slice(0,160);const now=performance.now();if(!text||(text===lastSpoken&&now-lastSpokenAt<2200))return;
     lastSpoken=text;lastSpokenAt=now;
     if(priority)speechQueue.length=0;
@@ -206,7 +203,7 @@
 
     if(phase==='closed'||event.target.closest('#msNarrator,.wg-game'))return;
     if(event.key==='Escape'){event.preventDefault();event.stopImmediatePropagation();if(phase==='gate')close();else if(phase==='lost')gate();return;}
-    if(['transition','shuffle','reveal','returning','confirm-loading'].includes(phase)&&['Tab','Enter',' ','ArrowUp','ArrowDown','ArrowLeft','ArrowRight','Home','End'].includes(event.key)){event.preventDefault();event.stopImmediatePropagation();return;}
+    if(['shuffle','reveal','confirm-loading'].includes(phase)&&['Tab','Enter',' ','ArrowUp','ArrowDown','ArrowLeft','ArrowRight','Home','End'].includes(event.key)){event.preventDefault();event.stopImmediatePropagation();return;}
     if(event.key==='Enter'&&event.target.matches('[data-ms="dodge"]')){event.preventDefault();dodge();}
     if(event.key==='Tab'){const focusable=[...overlay.querySelectorAll('button,input,select,[tabindex="0"]'),...document.querySelectorAll('#msNarrator button')].filter(e=>!e.disabled&&!e.closest('.hidden,[inert]')&&e.getClientRects().length);if(!focusable.length){event.preventDefault();return;}const first=focusable[0],last=focusable.at(-1);if(event.shiftKey&&(document.activeElement===first||!overlay.contains(document.activeElement))){event.preventDefault();last.focus()}else if(!event.shiftKey&&(document.activeElement===last||!overlay.contains(document.activeElement))){event.preventDefault();first.focus()}}
   },true);

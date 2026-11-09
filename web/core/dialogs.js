@@ -10,7 +10,7 @@
     const dialogs=[...document.querySelectorAll('.overlay:not(.hidden)')].filter(e=>!e.hidden&&getComputedStyle(e).display!=='none').sort((a,b)=>(Number(getComputedStyle(a).zIndex)||0)-(Number(getComputedStyle(b).zIndex)||0)),front=dialogs.at(-1);
     for(const node of document.body.children){
       if(!originalInert.has(node))originalInert.set(node,node.inert);
-      const exempt=node===front||node.hasAttribute('data-floating-translator')||[...locks.values()].some(ids=>ids.includes(node.id));
+      const exempt=node===front||node.id==='modeSwitchOverlay'||node.hasAttribute('data-floating-translator')||[...locks.values()].some(ids=>ids.includes(node.id));
       node.inert=exempt?false:true;
     }
   }

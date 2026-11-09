@@ -12,6 +12,11 @@ else:
     from club_information import club_key,clean
 
 ALIASES=Path(__file__).with_name('club_aliases.json')
+COURT_LINE = re.compile(
+    r'^(\d+)\s+(?:(.+?)\s+)?courts?\b(?:\s*\((\d+)\s+under\s+lights?\))?', re.I
+)
+PARKING = re.compile(r'\b(?:parking|car\s*park|park\s+(?:in|at|on))\b', re.I)
+ACCESS = re.compile(r'\b(?:wheelchair|accessible|accessibility|step[- ]free|disabled access)\b', re.I)
 
 def venue_key(lines):
     # Ignore display punctuation/postcodes when comparing a venue observation.
@@ -28,16 +33,33 @@ def assignment(value):
 def facts(lines):
     result={'courts':None,'lighting':None,'parking':None,'accessibility':None}
     unique=list(dict.fromkeys(clean(x) for x in lines if clean(x)))
-    counts=[]
+    groups = {}
+    lighting = []
     for line in unique:
-        if re.search(r'court',line,re.I):
-            counts.extend(int(x) for x in re.findall(r'\b(\d+)\s+(?:(?:synthetic|grass|hard|clay|en.tout.cas|mod.grass)\s+)*courts?\b',line,re.I))
-        if re.search(r'light|floodlit',line,re.I):result['lighting']=line
-        if re.search(r'park(?:ing|\s+(?:in|at|on))|car\s*park',line,re.I):result['parking']=line
-        if re.search(r'wheelchair|accessible|accessibility',line,re.I):result['accessibility']=line
-    # Repeated descriptions are not additional courts. Different counts need
-    # review; no speculative total is derived from ambiguous prose.
-    if counts:result['courts']={'count':counts[0] if len(set(counts))==1 else None,'observed_counts':sorted(set(counts))}
+        match = COURT_LINE.match(line)
+        if match:
+            amount, surface, lit = match.groups()
+            count = int(amount)
+            lit_count = int(lit) if lit is not None and int(lit) <= count else None
+            name = surface or 'courts'
+            by_count = groups.setdefault(name.casefold(), {})
+            previous = by_count.get(count)
+            if previous is None or previous['lit'] is None:
+                by_count[count] = {'surface':name,'count':count,'lit':lit_count}
+        if re.search(r'\b(?:lights?|floodlit)\b',line,re.I):lighting.append(line)
+        if PARKING.search(line):result['parking']=line
+        if ACCESS.search(line):result['accessibility']=line
+    if groups:
+        courts = [group for by_count in groups.values() for group in by_count.values()]
+        conflict = any(len(by_count) > 1 for by_count in groups.values())
+        typed_count = sum(group['count'] for group in courts if group['surface'] != 'courts')
+        generic = groups.get('courts', {})
+        total = next(iter(generic)) if generic else typed_count
+        if conflict or generic and typed_count and total != typed_count:
+            total = None
+        result['courts'] = {'count':total,'observed_counts':sorted({g['count'] for g in courts}),
+                            'groups':courts if not conflict else []}
+    if lighting:result['lighting']=' / '.join(lighting)
     return result
 
 
@@ -77,7 +99,8 @@ def build_foundation(directory,network,sections=(),*,checked_at=None,aliases=Non
         clubs[key]={'id':cid,'legacy_id':key,'native_club_id':native,'name':c['name'],'venue_ids':[vid],'main_venue_id':vid,
                     'contacts':c.get('contacts',[]),'phones':c.get('phones',[]),'websites':c.get('websites',[]),
                     'mailing_address_lines':c.get('mailing_address_lines',[]),
-                    'facts':facts(lines),'additional_details':list(dict.fromkeys(lines)),
+                    'facts':facts([*lines, *(line for line in c.get('address_lines', []) if PARKING.search(line) or ACCESS.search(line))]),
+                    'additional_details':list(dict.fromkeys(lines)),
                     'sources':[provenance(c.get('source',{}))],'observations':[],'review_required':False}
     def resolve(label):
         key=club_key(label)

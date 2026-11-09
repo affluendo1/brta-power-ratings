@@ -8,6 +8,7 @@ const closeDOM=require('../fixtures/dom-lifecycle.cjs')(w);
 w.localStorage.setItem('brta-rating-model','RM3');w.localStorage.setItem('brta-rating-centre','1500');
 w.matchMedia=()=>({matches:false,addEventListener(){},removeEventListener(){}});
 w.CSS={supports:()=>true};w.structuredClone=structuredClone;w.TextEncoder=TextEncoder;
+w.Response=Response;w.DecompressionStream=DecompressionStream;w.scrollTo=()=>{};
 w.IntersectionObserver=class {observe(){}unobserve(){}disconnect(){}};
 w.ResizeObserver=class {observe(){}disconnect(){}};
 Object.defineProperty(w.HTMLElement.prototype,'inert',{get(){return this.hasAttribute('inert')},set(value){this.toggleAttribute('inert',!!value)}});
@@ -19,7 +20,7 @@ const canvas={clearRect(){},fillRect(){},scale(){},stroke(){},beginPath(){},move
 w.HTMLCanvasElement.prototype.getContext=()=>canvas;w.HTMLMediaElement.prototype.play=()=>Promise.resolve();w.HTMLMediaElement.prototype.pause=function(){};w.HTMLMediaElement.prototype.load=function(){};
 w.confirm=()=>true;
 w.localStorage.setItem('brta-following-v1',JSON.stringify({pins:[null,{},false],pending:[null,{}]}));
-w.fetch=async url=>{const file=path.join(ROOT,new URL(url,w.location.href).pathname.replace('/brta-power-ratings/',''));if(!fs.existsSync(file))return {ok:false,status:404,json:async()=>null};return{ok:true,json:async()=>JSON.parse(fs.readFileSync(file,'utf8'))}};
+w.fetch=async url=>{const file=path.join(ROOT,new URL(url,w.location.href).pathname.replace('/brta-power-ratings/',''));if(!fs.existsSync(file))return {ok:false,status:404,json:async()=>null};if(file.endsWith('.gz'))return new Response(fs.readFileSync(file));return{ok:true,json:async()=>JSON.parse(fs.readFileSync(file,'utf8'))}};
 const ctx=dom.getInternalVMContext();
 for(const s of [...w.document.scripts]){try{vm.runInContext(s.src?fs.readFileSync(path.join(ROOT,new URL(s.src).pathname.replace('/brta-power-ratings/','')),'utf8'):s.textContent,ctx,{filename:s.src||'bootstrap'})}catch(e){errors.push(e.stack)}}
 w.addEventListener('error',e=>errors.push(e.error?.stack||e.message));
@@ -71,5 +72,50 @@ finishMount({focusSelected(){}});await tick();
 assert(!w.document.querySelector('#clubs9Map'));
 w.BRTAClubMap.mountNetwork=mount;
 console.log('Clubs overview cancels an in-flight map when leaving the tab');
+
+const pastGroups=[...w.document.querySelectorAll('.clubs9-past-block details')];
+assert(pastGroups.length>1);
+const pastGroup=pastGroups[1],originSeason=run('activeHistorySeasonId'),originCode=run('D.meta.section_code');
+const originLabel=pastGroup.dataset.seasonLabel;
+pastGroup.open=true;
+const originEntry=pastGroup.querySelector('[data-clubs-action="entry"]:not(:disabled)');
+assert(originEntry);
+const originTeam=originEntry.querySelector('small:last-child').textContent;
+const realFetch=w.fetch;
+let releaseArchive,enteredFetch=false;
+w.fetch=async url=>{
+ if(String(url).includes('data/archive/site/sections/')){
+  enteredFetch=true;
+  await new Promise(resolve=>releaseArchive=resolve);
+ }
+ return realFetch(url);
+};
+originEntry.click();
+for(let i=0;i<8&&!enteredFetch;i++)await tick();
+assert(enteredFetch,'The chosen entry must fetch an archive section');
+for(let i=0;i<6;i++)await tick();
+assert(!w.document.querySelector('#modeSwitchOverlay').classList.contains('hidden'));
+assert.equal(run('D.meta.section_code'),originCode);
+releaseArchive();w.fetch=realFetch;
+for(let i=0;i<40&&!w.document.querySelector('#modeSwitchOverlay').classList.contains('hidden');i++)await tick();
+assert(w.document.querySelector('#modeSwitchOverlay').classList.contains('hidden'));
+assert.notEqual(run('activeHistorySeasonId'),originSeason);
+assert(w.document.querySelector('#clubs9TeamRatings'));
+click('[data-clubs-action="return"]');
+for(let i=0;i<40&&run('D.meta.section_code')!==originCode;i++)await tick();
+await tick();await tick();
+assert.equal(run('activeHistorySeasonId'),originSeason);
+assert.equal(run('D.meta.section_code'),originCode);
+const restored=[...w.document.querySelectorAll('.clubs9-past-block details')].find(g=>g.dataset.seasonLabel===originLabel);
+assert(restored.open);
+assert.equal(w.document.activeElement.querySelector('small:last-child').textContent,originTeam);
+w.fetch=async url=>String(url).includes('data/archive/site/sections/')?{ok:false,status:404}:realFetch(url);
+restored.querySelector('[data-clubs-action="entry"]:not(:disabled)').click();
+await tick();await tick();
+assert.equal(run('D.meta.section_code'),originCode);
+assert.match(w.document.querySelector('[data-clubs-navigation]').textContent,/could not be opened/i);
+assert(w.document.querySelector('#modeSwitchOverlay').classList.contains('hidden'));
+w.fetch=realFetch;
+console.log('Archived team navigation waits for data, restores the exact Participation entry and recovers from failed loads');
 if(errors.length)throw Error(errors.join('\n'));console.log('8.2.2 UI checks passed without runtime errors');closeDOM();})().catch(e=>{console.error(e.stack);console.error(errors);closeDOM();process.exitCode=1});
 

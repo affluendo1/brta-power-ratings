@@ -51,6 +51,7 @@ jobs:
           for COMP in TA WA HA TN AP AA UA; do
             TROLS_HISTORY_COMPETITIONS="$COMP" python -m scraper.backfill_history
             python generate_archive_site_data.py --missing-only
+            python scripts/build_clubs_index.py
             git add data/archive
             if ! git diff --cached --quiet; then
               git commit -m "Expand published BRTA history: $COMP"

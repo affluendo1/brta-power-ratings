@@ -6,17 +6,20 @@
   const statsView = BRTATeamLabUI.open;
   const tabs = [['overview', 'Overview'], ['stats', 'Team Stats'], ['participation', 'Participation']];
   const requests = new Map();
+  const competitionRecords = new Map();
+  const recordScopes = new Map();
+  const trail = [];
   let data, network, directory, catalog, selected, team, panel = 'overview';
   let entries, mapAbort, mountedMap, revision = 0, navigation = 0, competition = '', historyCompetition = '', entryOrder = 'section';
   let sectionClubs = [], searchClubs = [], query = '', scope = 'section';
   let searchOpen = false, searchOrder = 'name', showProvisional = false, mapScope = 'section';
-  let recordIndex, recordIndexRequest, ratingViewForTeam = 'singles';
+  let recordIndex, recordRevision = 0, ratingViewForTeam = 'singles', destinationView, pendingView;
   const escape = esc;
   const localClub = () => selected?.id.startsWith('local:');
 
   function json(path) {
     if (!requests.has(path)) {
-      requests.set(path, fetch(path).then(response => {
+      requests.set(path, fetch(path, { signal: AbortSignal.timeout?.(15000) }).then(response => {
         if (!response.ok) throw Error('This club data could not be loaded.');
         if (!path.endsWith('.gz')) return response.json();
         return new Response(response.body.pipeThrough(new DecompressionStream('gzip'))).json();
@@ -29,11 +32,12 @@
   }
 
   async function prepare() {
-    if (!directory) {
-      network = await json('data/current/club-foundation.json');
-      directory = Model.directory(network);
-    }
-    if (!catalog) catalog = await json('data/archive/clubs.json');
+    if (directory && catalog) return;
+    const [foundation, archive] = await Promise.all([
+      json('data/current/club-foundation.json'), json('data/archive/clubs.json')
+    ]);
+    if (!directory) directory = Model.directory(network = foundation);
+    catalog = archive;
   }
 
   function resolve(name, meta = data.meta, baseName = clubBaseName(name)) {
@@ -64,7 +68,7 @@
     team = pickedTeam || sectionClubs.find(item => item.id === club.id)?.teams[0]?.name || '';
     panel = tab;
     if (!team && panel === 'stats') panel = 'participation';
-    render();
+    return render();
   }
 
   function toolbar() {
@@ -138,7 +142,7 @@
     bindChoice('clubScope', [
       ['section', 'This section'], ['brta', 'All BRTA clubs'], ...competitionChoices(),
       ['beta', 'BRTA archive · beta'], ['beyond', 'Beyond BRTA · coming later']
-    ], scope, value => { scope = value; searchControls(); searchResults(); });
+    ], scope, value => { scope = value; searchControls(); refreshRecords(); });
     bindChoice('clubSort', [
       ['name', 'Alphabetical'], ['results', 'Best historical results'],
       ['size', 'Most team entries'], ['active', 'Most active this season']
@@ -240,13 +244,16 @@
     const address = venue?.address_lines?.map(line => line.trim().replace(/[,;]+$/, '')).filter(Boolean).join(', ');
     const facts = [
       ['Courts', courts?.count ?? (typeof courts === 'number' ? courts : null)],
-      ['Surface and lights', club?.facts?.lighting], ['Parking', club?.facts?.parking],
-      ['Accessibility', club?.facts?.accessibility], ['Club phone', club?.phones?.join(' · ')]
+      ['Court facilities', courts?.groups?.map(group =>
+        group.count + ' ' + group.surface + (group.lit == null ? '' : ' · ' + group.lit + ' lit')).join(' / ') || club?.facts?.lighting],
+      ['Parking', club?.facts?.parking || 'No published details'],
+      ['Accessibility', club?.facts?.accessibility || 'No published details'], ['Club phone', club?.phones?.join(' · ')]
     ].filter(([, value]) => value != null && String(value).trim());
     const contacts = (club?.contacts || []).filter(contact =>
       [contact.name, contact.phone, contact.email].some(Boolean));
     const extraDetails = [...new Set(club?.additional_details || [])].filter(line =>
       !/^no (?:web.?site|details?)|^(?:https?:|www\.)/i.test(line) &&
+      !(courts?.groups?.length && /^\d+\s+.*\bcourts?\b/i.test(line)) &&
       !facts.some(([, value]) => line === value));
     const melway = venue?.melway || club?.observations?.find(row => row.melway &&
       row.coordinates?.latitude === venue?.coordinates?.latitude &&
@@ -323,32 +330,99 @@
       'Main venues from TROLS. Pins may be approximate.' : 'The selected club has no verified map location.');
     mapAbort = new AbortController();
     const signal = mapAbort.signal;
-    root.BRTAClubMap.mountNetwork(container, clubs, point => {
+    return root.BRTAClubMap.mountNetwork(container, clubs, point => {
       const club = clubs.find(item => item.id === point.id);
       if (club) select(club);
     }, { signal, selectedId: selected.id, onTileError: () => {
       if (id === revision && status.isConnected) status.textContent = 'Street tiles are unavailable. Club markers still show relative locations.';
-    }}).then(mount => { if (!signal.aborted) mountedMap = mount; }).catch(error => {
+    }}).then(mount => {
+      if (!signal.aborted) { mountedMap = mount; return mount.ready; }
+    }).catch(error => {
       if (id === revision && error.name !== 'AbortError' && status.isConnected) status.textContent = error.message;
     });
   }
 
-  function loadRecords() {
-    if (recordIndexRequest) return recordIndexRequest;
-    const codes = Object.keys(catalog.competitions);
-    recordIndexRequest = Promise.allSettled(codes.map(code => json('data/archive/club-participation/' + code + '.json.gz'))).then(result => {
-      const all = result.flatMap(part => part.status === 'fulfilled' ? part.value : []);
-      const clubs = new Map();
-      for (const row of all) {
-        const id = resolve(row.team, row, row.club);
-        if (!clubs.has(id)) clubs.set(id, []);
-        clubs.get(id).push(row);
+  function loadCompetition(code) {
+    if (!competitionRecords.has(code)) {
+      competitionRecords.set(code, json('data/archive/club-participation/' + code + '.json.gz').then(rows => {
+        const clubs = new Map();
+        for (const row of rows) {
+          const id = resolve(row.team, row, row.club);
+          if (!clubs.has(id)) clubs.set(id, []);
+          clubs.get(id).push(row);
+        }
+        return { clubs, reference: Model.benchmark(rows) };
+      }).catch(error => {
+        competitionRecords.delete(code);
+        throw error;
+      }));
+    }
+    return competitionRecords.get(code);
+  }
+
+  function loadRecords(codes) {
+    const key = [...codes].sort().join('|');
+    if (!recordScopes.has(key)) {
+      const request = Promise.allSettled([...codes].map(loadCompetition)).then(parts => {
+        const clubs = new Map(), reference = new Map();
+        for (const part of parts) {
+          if (part.status !== 'fulfilled') continue;
+          for (const [id, rows] of part.value.clubs) {
+            if (!clubs.has(id)) clubs.set(id, []);
+            clubs.get(id).push(...rows);
+          }
+          for (const [row, value] of part.value.reference) reference.set(row, value);
+        }
+        const partial = parts.some(part => part.status === 'rejected');
+        if (partial) recordScopes.delete(key);
+        return { clubs, reference, partial };
+      });
+      recordScopes.set(key, request);
+    }
+    return recordScopes.get(key);
+  }
+
+  function requestedCodes() {
+    const codes = new Set();
+    const add = code => {
+      if (!code) Object.keys(catalog.competitions).forEach(value => codes.add(value));
+      else if (catalog.competitions[code]) codes.add(code);
+    };
+    if (!localClub() && panel === 'participation') add(competition);
+    if (!localClub() && panel === 'overview') {
+      add(historyCompetition);
+      if (mapScope === 'history') add('');
+      if (mapScope === 'competition') add(data.meta.competition_code);
+    }
+    if (searchOpen && scope !== 'beyond') add(scope === 'section' ? data.meta.competition_code :
+      catalog.competitions[scope] ? scope : '');
+    return codes;
+  }
+
+  async function showRecords(id, task) {
+    if (!catalog) return;
+    const request = ++recordRevision;
+    task.stage(36, 'Getting participation and ladder records…');
+    const index = await loadRecords(requestedCodes());
+    if (revision !== id || request !== recordRevision) return false;
+    recordIndex = index;
+    if (searchOpen) searchResults();
+    if (selected && !localClub()) {
+      entries = { rows: index.clubs.get(selected.id) || [], partial: index.partial };
+      if (panel === 'overview') updateStats(entries);
+      if (panel === 'participation') participation();
+    }
+  }
+
+  function refreshRecords() {
+    const id = revision;
+    return BRTAActivity.run('Loading club records', async task => {
+      try { return await showRecords(id, task); }
+      catch (error) {
+        if (revision === id) $('#clubs9Panel')?.insertAdjacentHTML('beforeend', '<p role="alert">' + escape(error.message) + '</p>');
+        return false;
       }
-      recordIndex = { clubs, reference: Model.benchmark(all), partial: result.some(part => part.status === 'rejected') };
-      if (recordIndex.partial) recordIndexRequest = null;
-      return recordIndex;
-    });
-    return recordIndexRequest;
+    }, { key: 'clubs-records' });
   }
 
   function trend(rows) {
@@ -411,7 +485,7 @@
     dest.innerHTML = '<div class="clubs9-history-lead"><div class="clubs9-history-verdict ' +
       (delta >= 0 ? 'clubs9-above' : 'clubs9-below') + '"><span class="kicker">RELATIVE LADDER PERFORMANCE</span><strong>' +
       escape(line) + '</strong><p class="clubs9-note">' + comparison.sample +
-      ' complete ladder entries. Each team is compared with opponents in its own section.</p></div>' + titles + '</div>' +
+       ' complete ladder entries. Every team entry counts once, so seasons with more teams count more. Each team is compared with opponents in its own section.</p></div>' + titles + '</div>' +
       '<div class="clubs9-history-grid">' + (comparison.eligible.length ? trend(comparison.eligible) : '') +
       '<section class="clubs9-history-section">' + (comparison.eligible.length ? finishBreakdown(comparison.eligible) : '') +
       '<h4>Competition record</h4><ul class="clubs9-comp-record">' + comps +
@@ -445,7 +519,7 @@
     const best = [...group.rows].sort(performanceOrder).find(row => Number.isFinite(Model.position(row)));
     const rows = [...group.rows].sort(entryOrder === 'performance' ? performanceOrder : Model.sectionOrder);
     const count = rows.length + (rows.length === 1 ? ' entry' : ' entries');
-    return '<details class="clubs9-season' + (current ? ' clubs9-current' : '') + '"' + (open ? ' open' : '') +
+    return '<details class="clubs9-season' + (current ? ' clubs9-current' : '') + '" data-season-label="' + escape(group.label) + '"' + (open ? ' open' : '') +
       '><summary>' + escape(group.label + ' · ' + count) + '</summary>' +
       '<div class="clubs9-season-body"><div class="clubs9-entries">' +
       rows.map(row => card(row, entries.rows.indexOf(row))).join('') +
@@ -472,39 +546,99 @@
         seasonGroup(group, index === 0)).join('') : '<p class="clubs9-note">No past entries in this scope.</p>') + '</section>' +
       '<p data-clubs-navigation role="status"></p>';
     bindChoice('clubCompetition', [['', 'All BRTA competitions'], ...competitionChoices()], competition,
-      value => { competition = value; participation(); });
+       value => { competition = value; render(); });
     bindChoice('clubEntryOrder', [['section', 'Section order'], ['performance', 'Best performance']], entryOrder,
       value => { entryOrder = value; participation(); });
   }
 
+  function participationSnapshot(row) {
+    return {
+      code: data.meta.section_code, season: activeHistorySeasonId, catalog: viewCatalog,
+      selected, team, competition, entryOrder, searchOpen, scope, query, searchOrder, showProvisional,
+      expanded: [...document.querySelectorAll('.clubs9-season[open]')].map(group => group.dataset.seasonLabel),
+      scroll: [root.scrollX, root.scrollY], row
+    };
+  }
+
+  function navigationMessage(message) {
+    const status = $('[data-clubs-navigation]') || $('.clubs9-return-status');
+    if (status) status.textContent = message;
+  }
+
+  function sameEntry(a, b) {
+    return a.section_code === b.section_code && a.season_id === b.season_id &&
+      a.competition === b.competition && a.team === b.team;
+  }
+
   async function navigate(row) {
     if (!row) return;
+    const request = ++navigation, sectionRequest = loadingToken, origin = participationSnapshot(row);
+    let target;
+    navigationMessage('Opening ' + row.section_label + '…');
+    return BRTAActivity.run('Opening ' + row.section_label, async task => {
+      try {
+        const history = row.current ? null : await ensureHistoryCatalog();
+        const season = history?.seasons.find(item => item.id === row.historyKey);
+        if (!row.current && !season) throw Error('This archived season is unavailable.');
+        if (request !== navigation || sectionRequest !== loadingToken) return false;
+        const catalog = row.current ? currentCatalog() : historySeasonSections(season);
+        if (!catalog.some(item => item.section_code === row.section_code)) throw Error('This section is unavailable.');
+        const matchInCurrentSection = data.meta.section_code === row.section_code && activeHistorySeasonId === (season?.id || null);
+        target = { code: row.section_code, team: row.team, origin };
+        destinationView = target;
+        if (matchInCurrentSection) await mount(data);
+        else {
+          activeHistorySeasonId = season?.id || null;
+          viewCatalog = catalog;
+          if (!await loadSection(row.section_code, null, task, () => request === navigation)) throw Error('This section could not be opened.');
+        }
+        if (request !== navigation) return false;
+        if (panel !== 'stats') navigationMessage('The selected team is missing from this section.');
+        $('#clubs9Shell').scrollIntoView({ block: 'start', behavior: 'instant' });
+        $('[data-clubs-action="return"]')?.focus({ preventScroll: true });
+        return true;
+      } catch (error) {
+        if (request === navigation) navigationMessage(error.message);
+        return false;
+      } finally {
+        if (destinationView === target) destinationView = null;
+      }
+    }, { priority: 1, message: 'Finding the season and section…' });
+  }
+
+  async function returnToParticipation() {
+    if (destinationView?.restore) return;
+    const origin = trail.pop();
+    if (!origin) return;
     const request = ++navigation;
-    const sectionRequest = loadingToken;
-    const status = $('[data-clubs-navigation]');
-    if (status) status.textContent = 'Opening ' + row.section_label + '…';
-    try {
-      const history = row.current ? null : await ensureHistoryCatalog();
-      const season = history?.seasons.find(item => item.id === row.historyKey);
-      const sections = row.current ? currentCatalog() : historySeasonSections(season);
-      const section = sections.find(item => item.section_code === row.section_code);
-      if (!section) throw Error('This section is unavailable.');
-      if (request !== navigation || sectionRequest !== loadingToken) return;
-      const response = await fetch(section.data_path || 'data/site/sections/' + row.section_code + '.json');
-      if (!response.ok) throw Error('This section file is unavailable.');
-      const payload = await response.json();
-      if (request !== navigation || sectionRequest !== loadingToken) return;
-      activeHistorySeasonId = season?.id || null;
-      viewCatalog = sections;
-      if (!await loadSection(row.section_code, payload)) throw Error('This section could not be opened.');
-      if (request !== navigation) return;
-      const match = BRTATeamLab.teamNames(D).find(name => Model.key(name) === Model.key(row.team));
-      if (match) openTeam(match);
-      else $('#clubs9Panel').insertAdjacentHTML('beforeend', '<p role="status">The selected team is missing from this section’s scorecards.</p>');
-      $('#clubs9Shell').scrollIntoView({ block: 'start' });
-    } catch (error) {
-      if (request === navigation && status?.isConnected) status.textContent = error.message;
-    }
+    const target = { code: origin.code, restore: origin };
+    return BRTAActivity.run('Returning to Participation', async task => {
+      try {
+        const sameSection = data.meta.section_code === origin.code && activeHistorySeasonId === origin.season;
+        destinationView = target;
+        if (sameSection) await mount(data);
+        else {
+          activeHistorySeasonId = origin.season;
+          viewCatalog = origin.catalog;
+          if (!await loadSection(origin.code, null, task, () => request === navigation)) throw Error('Could not reopen the original section.');
+        }
+        if (request !== navigation) return false;
+        for (const group of document.querySelectorAll('.clubs9-season')) group.open = origin.expanded.includes(group.dataset.seasonLabel);
+        const index = entries?.rows.findIndex(row => sameEntry(row, origin.row));
+        const control = index >= 0 && $('[data-clubs-action="entry"][data-value="' + index + '"]');
+        control?.focus?.({ preventScroll: true });
+        root.scrollTo({ left: origin.scroll[0], top: origin.scroll[1], behavior: 'instant' });
+        return true;
+      } catch (error) {
+        if (request === navigation) {
+          trail.push(origin);
+          navigationMessage(error.message);
+        }
+        return false;
+      } finally {
+        if (destinationView === target) destinationView = null;
+      }
+    }, { priority: 1 });
   }
 
   const teamRatingViews = [
@@ -581,99 +715,102 @@
 
   function render() {
     const shell = $('#clubs9Shell');
-    if (!shell || !data) return;
+    if (!shell || !data || activePage !== 'teams') return;
     const id = ++revision;
-    const needsMapRecords = !recordIndex || recordIndex.partial;
     mapAbort?.abort();
-    const lab = $('#teamLabContent');
-    lab.hidden = panel !== 'stats';
-    $('#teamCards').innerHTML = toolbar();
-    if (searchOpen) { searchControls(); searchResults(); }
-    shell.innerHTML = selected ? header() + '<div id="clubs9Panel"></div>' :
-      '<div class="clubs9-card"><p>No clubs are recorded in this section.</p></div>';
-    if (!selected) {
-      if (catalog && searchOpen) loadRecords().then(() => { if (revision === id) searchResults(); });
-      return;
-    }
-    const dest = $('#clubs9Panel');
-    if (panel === 'stats') {
-      statsView(team);
-      lab.removeAttribute('aria-labelledby');
-      lab.setAttribute('aria-label', 'Team Stats');
-      teamRatings(lab);
-    }
-    if (panel === 'overview') {
-      dest.innerHTML = overview();
-      const changeMapScope = value => {
-        mapScope = value;
-        bindChoice('clubMap', mapScopes, mapScope, changeMapScope);
-        map(id);
-      };
-      bindChoice('clubMap', mapScopes, mapScope, changeMapScope);
-      map(id);
-    } else if (panel === 'participation') dest.innerHTML = localClub() ? '<p class="clubs9-note">Local clubs have no published BRTA participation records.</p>' : '<p role="status">Loading club participation…</p>';
-    if (!catalog) return;
-    loadRecords().then(index => {
-      if (revision !== id) return;
-      if (searchOpen) searchResults();
-      if (localClub()) return;
-      entries = { rows: index.clubs.get(selected.id) || [], partial: index.partial };
-      if (panel === 'overview') {
-        const changeHistoryCompetition = value => {
-          historyCompetition = value;
-          bindChoice('clubHistoryCompetition', filters, historyCompetition, changeHistoryCompetition);
-          updateStats(entries);
-        };
-        const filters = [['', 'All BRTA competitions'], ...competitionChoices()];
-        bindChoice('clubHistoryCompetition', filters, historyCompetition, changeHistoryCompetition);
-        updateStats(entries);
-        if (needsMapRecords && mapScope !== 'section') map(id);
+    pendingView = BRTAActivity.run('Loading Clubs', async task => {
+      try {
+        if (!localClub() || searchOpen) {
+          task.stage(10, 'Getting the club directory…');
+          if (!directory || !catalog) {
+            await prepare();
+            if (revision !== id) return false;
+            sectionClubs = sectionTeams();
+            if (team) selected = sectionClubs.find(item => item.teams[0].name === team) || selected;
+          }
+        }
+        if (revision !== id) return false;
+        const lab = $('#teamLabContent');
+        lab.hidden = panel !== 'stats';
+        $('#teamCards').innerHTML = toolbar();
+        shell.innerHTML = (trail.length ? '<div class="clubs9-return">' + button('← Back to Participation', 'return') +
+          '<span class="clubs9-return-status" role="status"></span></div>' : '') +
+          (selected ? header() + '<div id="clubs9Panel"></div>' : '<div class="clubs9-card"><p>No clubs are recorded in this section.</p></div>');
+        const dest = $('#clubs9Panel');
+        if (searchOpen) { searchControls(); searchResults(); }
+        if (selected && panel === 'stats') {
+          statsView(team);
+          lab.removeAttribute('aria-labelledby');
+          lab.setAttribute('aria-label', 'Team Stats');
+          teamRatings(lab);
+        }
+        if (selected && panel === 'participation') dest.innerHTML = localClub() ?
+          '<p class="clubs9-note">Local clubs have no published BRTA participation records.</p>' :
+          '<p role="status">Loading club participation…</p>';
+        if (selected && panel === 'overview') {
+          dest.innerHTML = overview();
+          bindChoice('clubMap', mapScopes, mapScope, value => { mapScope = value; render(); });
+          const filters = [['', 'All BRTA competitions'], ...competitionChoices()];
+          const changeHistory = value => {
+            historyCompetition = value;
+            bindChoice('clubHistoryCompetition', filters, historyCompetition, changeHistory);
+            refreshRecords();
+          };
+          bindChoice('clubHistoryCompetition', filters, historyCompetition, changeHistory);
+        }
+        const mapReady = panel === 'overview' && mapScope === 'section' ? map(id) : null;
+        await showRecords(id, task);
+        if (revision !== id) return false;
+        task.stage(85, 'Preparing the club view…');
+        await (panel === 'overview' && mapScope !== 'section' ? map(id) : mapReady);
+        return revision === id;
+      } catch (error) {
+        if (revision === id) shell.insertAdjacentHTML('beforeend', '<p role="alert">' + escape(error.message) + '</p>');
+        return false;
       }
-      if (panel === 'participation') participation();
-    }).catch(error => {
-      if (revision === id) dest.textContent = error.message;
-    });
+    }, { key: 'clubs-view' });
+    return pendingView;
   }
 
   function mount(section) {
     if (!section) return;
-    const changedSection = !data || data.meta.section_code !== section.meta.section_code || data.meta.season_id !== section.meta.season_id;
+    const changed = !data || data.meta.section_code !== section.meta.section_code || data.meta.season_id !== section.meta.season_id;
     data = section;
-    if (changedSection) {
+    if (changed) {
       selected = null;
       team = '';
       panel = section.meta.is_custom ? 'stats' : 'overview';
       const configured = localStorage.getItem('brta-default-competition');
-      const defaultCompetition = (DATA.catalog || []).some(row => row.competition_code === configured) ? configured : '';
+      const defaultCompetition = (DATA.catalog || []).some(row => row.competition_code === configured) ? configured : section.meta.competition_code;
       competition = defaultCompetition;
       historyCompetition = defaultCompetition;
       mapScope = 'section';
+      if (!destinationView) trail.length = 0;
     }
     sectionClubs = sectionTeams();
     if (!selected && sectionClubs.length) {
       selected = sectionClubs[0];
       team = selected.teams[0].name;
     }
-    if (activePage !== 'teams') return;
-    render();
-    if (directory && catalog) return;
-    prepare().then(() => {
-      if (data !== section || activePage !== 'teams') return;
-      const oldTeam = team;
-      sectionClubs = sectionTeams();
-      selected = sectionClubs.find(club => club.teams.some(row => row.name === oldTeam)) || sectionClubs[0];
-      team = oldTeam || selected?.teams[0]?.name;
-      render();
-    }).catch(error => {
-      if (data === section && activePage === 'teams') $('#clubs9Panel')?.insertAdjacentHTML('beforeend',
-        '<p role="alert">' + escape(error.message) + '</p>');
-    });
+    if (destinationView?.code === section.meta.section_code) {
+      const target = destinationView;
+      destinationView = null;
+      if (target.restore) {
+        ({ selected, team, competition, entryOrder, searchOpen, scope, query, searchOrder, showProvisional } = target.restore);
+        panel = 'participation';
+      } else {
+        trail.push(target.origin);
+        const match = sectionClubs.find(item => Model.key(item.teams[0].name) === Model.key(target.team));
+        if (match) { selected = match; team = match.teams[0].name; panel = 'stats'; }
+      }
+    }
+    if (activePage === 'teams') return render();
   }
 
   function openTeam(name, tab = 'stats') {
     if (activePage !== 'teams') switchPage('teams');
     const club = sectionClubs.find(item => item.teams.some(row => row.name === name));
-    if (club) select(club, tab, name);
+    if (club) return select(club, tab, name);
   }
 
   function openSearch() {
@@ -694,6 +831,7 @@
       return;
     }
     if (action === 'entry') navigate(entries?.rows[Number(value)]);
+    else if (action === 'return') returnToParticipation();
     else {
       navigation++;
       if (action === 'club' || action === 'search-result') {
@@ -744,7 +882,8 @@
     if (control.matches('[data-clubs-provisional]')) { showProvisional = control.checked; searchResults(); }
   });
 
-  root.BRTAClubs = { mount, openTeam, openSearch, leave: () => { navigation++; revision++; mapAbort?.abort(); } };
+  root.BRTAClubs = { mount, openTeam, openSearch, ready: () => pendingView,
+    leave: () => { navigation++; revision++; destinationView = null; mapAbort?.abort(); } };
   BRTATeamLabUI.open = name => openTeam(name);
   if (new URLSearchParams(location.search).get('view') === 'clubs') {
     root.addEventListener('brta-section-ready', () => switchPage('teams'), { once: true });

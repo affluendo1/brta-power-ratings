@@ -31,10 +31,12 @@ async function run(mode){
  const buttons=[...modal.querySelectorAll('[data-export-853]')];
  buttons.forEach(b=>b.disabled=true);
  const status=modal.querySelector('#export853Status');
+ return root.BRTAActivity.run('Preparing section export',async task=>{
  try{
   const meta=exportTarget||selected();
   status.textContent='Preparing '+title(meta)+'…';
   const {data,saved}=await source(meta),base=prefix(meta);
+  task.stage(35,'Preparing the selected export format…');
   if(mode==='csv'||mode==='technical'){
    download(api.csv(data,mode==='technical'),base+(mode==='technical'?'-technical':'-results')+'.csv','text/csv;charset=utf-8');
   }else if(mode==='json'){
@@ -45,17 +47,18 @@ async function run(mode){
   }else if(mode==='markdown'){
    download(api.markdown(data),base+'-results.md','text/markdown;charset=utf-8');
   }else if(mode==='complete'){
-   const processed=await layoutApplyModel(data,exportModel||selectedRatingModel());
+   const processed=await layoutApplyModel(data,exportModel||selectedRatingModel(),task);
    download(BRTALayoutModel.report(processed,BRTAHistory),base+'-complete-section.html','text/html;charset=utf-8');
   }else if(mode==='comparison'){
    if(!auxiliaryEnabled())throw Error('Enable Extras to export a model comparison.');
    if(!root.BRTAModelComparison?.export)throw Error('Comparison export is unavailable.');
    const processed=await layoutApplyModel(data,exportModel||selectedRatingModel());
-   await root.BRTAModelComparison.export(processed);
+   await root.BRTAModelComparison.export(processed,task);
   }else throw Error('This export format is unavailable. Choose an option from the export panel.');
   status.textContent='Export ready. Your current section was not changed.';
- }catch(err){status.textContent=err.message||'Could not prepare this export.';}
+ }catch(err){status.textContent=err.message||'Could not prepare this export.';return false}
  finally{busy=false;buttons.forEach(b=>b.disabled=false)}
+ },{message:'Getting section data…'});
 }
 let creatorPrompt=null;
 function promptCreator(backup){

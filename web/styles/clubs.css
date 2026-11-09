@@ -238,3 +238,4 @@ body:has(.clubs9-map-expanded) { overflow: hidden; }
 }
 
 .clubs9-map-actions { display: flex; flex-wrap: wrap; justify-content: end; gap: 6px; }
+.clubs9-return{display:flex;align-items:center;flex-wrap:wrap;gap:.6rem;margin:0 0 .8rem}

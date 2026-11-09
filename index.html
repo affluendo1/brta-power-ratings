@@ -22,7 +22,7 @@
     @media(prefers-reduced-motion:reduce){.auxiliary-reveal,.auxiliary-archive-button{animation:none}}
   </style>
   <script>
-    (function(){var m=localStorage.getItem('brta-interface')||'future',t=localStorage.getItem('brta-theme')||'auto',a=localStorage.getItem('brta-accent')||'yellow',d=t==='dark'||t==='black-plus'||(t==='auto'&&matchMedia('(prefers-color-scheme: dark)').matches),future=m!=='classic',c=future?(d?'#101109':'#f3f2e9'):(d?'#000000':'#c0c0c0'),l=document.createElement('link');document.documentElement.dataset.interface=m;document.documentElement.dataset.accent=a;document.documentElement.style.backgroundColor=c;document.documentElement.style.colorScheme=d?'dark':'light';document.getElementById('themeColor').content=c;l.id='siteStyles';l.rel='stylesheet';l.href=future?'web/styles/future.css?v=8521':'web/styles/style.css?v=8521';document.head.appendChild(l)})()
+    (function(){var m=localStorage.getItem('brta-interface')||'future',t=localStorage.getItem('brta-theme')||'auto',a=localStorage.getItem('brta-accent')||'yellow',d=t==='dark'||t==='black-plus'||(t==='auto'&&matchMedia('(prefers-color-scheme: dark)').matches),future=m!=='classic',c=future?(d?'#101109':'#f3f2e9'):(d?'#000000':'#c0c0c0'),l=document.createElement('link');document.documentElement.dataset.interface=m;document.documentElement.dataset.accent=a;document.documentElement.style.backgroundColor=c;document.documentElement.style.colorScheme=d?'dark':'light';document.getElementById('themeColor').content=c;l.id='siteStyles';l.rel='stylesheet';l.href=future?'web/styles/future.css?v=901':'web/styles/style.css?v=901';document.head.appendChild(l)})()
   </script>
   <link rel="stylesheet" href="web/optional/collection.css?v=8521">
 <link rel="stylesheet" href="web/styles/custom-sections.css?v=8542">
@@ -42,7 +42,7 @@
 <link rel="stylesheet" href="web/styles/update841.css?v=8521">
 <link rel="stylesheet" href="web/styles/mini-updates.css?v=8525">
 <link rel="stylesheet" href="web/styles/update853.css?v=8544">
-<link rel="stylesheet" href="web/styles/clubs.css?v=900">
+<link rel="stylesheet" href="web/styles/clubs.css?v=901">
 </head>
 <body>
 <header class="site-header">
@@ -140,10 +140,11 @@
 <div id="lineupHistoryOverlay" class="overlay hidden"><div class="overlay-backdrop" data-lineup-history-close="1"></div><aside class="prediction-sheet lineup-history-sheet"><button id="lineupHistoryClose" class="close-btn" aria-label="Close">×</button><div id="lineupHistoryContent"></div></aside></div>
 <div id="sosOverlay" class="overlay hidden"><div class="overlay-backdrop" data-sos-close="1"></div><aside class="sos-sheet"><button id="sosClose" class="close-btn" aria-label="Close">×</button><div id="sosContent"></div></aside></div>
 <div id="installOverlay" class="overlay hidden"><div class="overlay-backdrop" data-install-close="1"></div><section class="install-sheet" role="dialog" aria-modal="true" aria-labelledby="installTitle"><button id="installClose" class="close-btn" type="button" aria-label="Close install help">×</button><div class="overlay-title"><div class="kicker">BRTA POWER RATINGS</div><h2 id="installTitle">Install the app</h2><p>Keep your section results one tap away.</p></div><div id="installGuide" class="install-guide"></div><div class="install-actions"><button id="nativeInstallBtn" class="button primary hidden" type="button">Install BRTA Ratings</button><button id="installDoneBtn" class="button secondary" type="button">Done</button></div></section></div>
-<div id="modeSwitchOverlay" class="mode-switch hidden" aria-live="polite"><div class="mode-switch-box"><div class="progress-ring" id="progressRing"><div><b id="progressPct">0%</b></div></div><h2>Switching interface</h2><p id="switchStatus">Preparing layout…</p></div></div>
+<div id="modeSwitchOverlay" class="mode-switch hidden" role="dialog" aria-modal="true" aria-labelledby="loadingTitle" tabindex="-1" data-ms-cutscene><div class="mode-switch-box"><div class="progress-ring" id="progressRing" role="progressbar" aria-labelledby="loadingTitle" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div><b id="progressPct" aria-hidden="true">0%</b></div></div><h2 id="loadingTitle">Loading</h2><p id="switchStatus" role="status">Getting ready…</p></div></div>
 <div id="installSettingsStash" hidden><button id="installBtn" class="button secondary" type="button" aria-haspopup="dialog" aria-controls="installOverlay">Install app</button></div>
 <div id="syncToastHost" class="sync-toast-host" aria-live="polite" aria-atomic="true"></div>
-<script src="web/core/dialogs.js?v=8521"></script>
+<script src="web/core/activity.js?v=901"></script>
+<script src="web/core/dialogs.js?v=901"></script>
 <script src="data.js?v=8521"></script>
 <script src="web/models/player-display.js?v=8541"></script>
 <script src="web/models/prediction.js?v=8521"></script>
@@ -157,11 +158,11 @@
 <script src="web/models/custom-section-model.js?v=900"></script>
 <script src="web/models/custom-section-tools.js?v=900"></script>
 <script src="web/models/export-853.js?v=900"></script>
-<script src="web/features/custom-sections.js?v=900"></script>
+<script src="web/features/custom-sections.js?v=901"></script>
 <script src="web/features/player-search.js?v=8521"></script>
 <script src="web/models/team-lab.js?v=8521"></script>
 <script src="web/features/team-lab-ui.js?v=900"></script>
-<script src="web/features/changelog-data.js?v=900"></script>
+<script src="web/features/changelog-data.js?v=901"></script>
 <script src="web/features/changelog.js?v=900"></script>
 <script src="web/optional/parameters.js?v=8521"></script>
 <script src="web/optional/presentation.js?v=8521"></script>
@@ -172,12 +173,12 @@
 <script src="web/models/rm4-engine.js?v=8521"></script>
 <script src="web/models/orchestra-fit.js?v=8521"></script>
 <script src="web/models/orchestra.js?v=audit2"></script>
-<script src="web/core/app.js?v=9001"></script>
-<script src="web/core/layout.js?v=8543"></script>
+<script src="web/core/app.js?v=901"></script>
+<script src="web/core/layout.js?v=901"></script>
 <script src="web/features/confetti.js?v=8521"></script>
-<script src="web/features/archive.js?v=8521"></script>
+<script src="web/features/archive.js?v=901"></script>
 <script src="web/optional/sequence.js?v=8521"></script>
-<script src="web/optional/controls.js?v=8521-removed"></script>
+<script src="web/optional/controls.js?v=901"></script>
 <script src="web/models/lab-model.js?v=8521"></script>
 <script src="web/features/labs.js?v=900"></script>
 <script src="web/core/polish.js?v=8521"></script>
@@ -186,18 +187,18 @@
 <script src="web/models/refinement.js?v=8521"></script>
 <script src="web/optional/lexicon.js?v=8521"></script>
 <script src="web/models/theme-studio.js?v=8521"></script>
-<script src="web/features/search-commands.js?v=8530"></script>
+<script src="web/features/search-commands.js?v=901"></script>
 <script src="web/features/theme-studio.js?v=8521"></script>
 <script src="web/optional/deeds-data.js?v=8521"></script>
 <script src="web/features/model-relay.js?v=8524"></script>
 <script src="web/optional/deeds.js?v=8521"></script>
-<script src="web/features/club-map.js?v=900"></script>
+<script src="web/features/club-map.js?v=901"></script>
 <script src="web/models/matchday.js?v=8521"></script>
 <script src="web/features/matchday.js?v=8521"></script>
-<script src="web/features/following.js?v=8521"></script>
+<script src="web/features/following.js?v=901"></script>
 <script src="web/features/share-cards.js?v=900"></script>
 <script src="web/features/competition-formats.js?v=8521"></script>
-<script src="web/features/pair-search.js?v=8521"></script>
+<script src="web/features/pair-search.js?v=901"></script>
 <script src="web/features/team-explorer.js?v=900"></script>
 <script src="web/features/extras-refinement.js?v=8521"></script>
 <script src="web/features/rm4-ui.js?v=8521"></script>
@@ -206,12 +207,12 @@
 <script src="web/features/release84.js?v=8521"></script>
 <script src="web/features/standings-history.js?v=8521"></script>
 <script src="web/features/classic-ui.js?v=8521"></script>
-<script src="web/features/model-comparison.js?v=8541"></script>
+<script src="web/features/model-comparison.js?v=901"></script>
 <script src="web/core/pwa.js?v=8521"></script>
 <script src="web/features/mini-updates.js?v=8530"></script>
-<script src="web/features/export-853.js?v=8542"></script>
+<script src="web/features/export-853.js?v=901"></script>
 <script src="web/models/clubs.js?v=900"></script>
-<script src="web/features/clubs.js?v=900"></script>
+<script src="web/features/clubs.js?v=901"></script>
 </body>
 </html>
 

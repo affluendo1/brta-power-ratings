@@ -423,8 +423,9 @@ html[data-theme="dark"] .team-colour{color:var(--team-colour-dark)}
 .sync-toast{display:flex;align-items:flex-start;gap:10px;padding:12px;border:1px solid var(--border-color);background:var(--surface-raised);color:var(--text-color);box-shadow:0 8px 26px rgba(0,0,0,.22);pointer-events:auto}
 .sync-toast-icon{color:var(--primary);font-weight:900}
 .sync-toast-close{margin-left:auto;border:0;background:transparent;color:inherit;font-size:20px}
-.mode-switch{position:fixed;z-index:60;inset:0;display:grid;place-items:center;padding:20px;background:var(--page-bg);color:var(--text-color)}
+.mode-switch{position:fixed;z-index:2147483000;inset:0;display:grid;place-items:center;padding:20px;background:var(--page-bg);color:var(--text-color);overscroll-behavior:contain;touch-action:none}
 .mode-switch.hidden{display:none}
+#statusStrip .section-load-error{grid-column:1/-1}
 .mode-switch-box{width:min(360px,100%);padding:28px;border:1px solid var(--border-color);background:var(--surface);text-align:center}
 .mode-switch-box h2{margin:12px 0 4px}
 .mode-switch-box p{margin:0;color:var(--muted-color)}

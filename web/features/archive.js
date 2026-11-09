@@ -25,10 +25,6 @@
 
   const unlocked=()=>localStorage.getItem(UNLOCK_KEY)==='1';
   const updateEntry=()=>{};
-  const transition=(done,copy)=>{
-    if(typeof window.runBRTAInterfaceTransition==='function')window.runBRTAInterfaceTransition(done,copy);
-    else done();
-  };
   function preloadArchiveMedia(){
     if(archivePreload)return archivePreload;
     archivePreload=Promise.all(archiveMedia.map(src=>new Promise(resolve=>{
@@ -132,9 +128,9 @@
   function fadeMusic(target,duration,done){clearInterval(fadeTimer);const start=music.volume,steps=Math.max(1,Math.round(duration/45));let tick=0;fadeTimer=setInterval(()=>{tick++;music.volume=start+(target-start)*(tick/steps);syncMusic();if(tick>=steps){clearInterval(fadeTimer);music.volume=target;done?.()}},45)}
   function beginQuotes(){const quote=archive.querySelector('[data-archive-quote]'),quotes=['“The racket chose him.” — Royal Archive','“Four majors. One year. Suspicious.” — Statistical Department','“The throne did not make the champion. It merely fitted.” — Court Historian','“He made the draw look ceremonial.” — Archive Clerk','“Every point was a coronation rehearsal.” — The North Stand'];let index=0;clearInterval(quoteTimer);quoteTimer=setInterval(()=>{if(!portalOpen||!quote)return;quote.classList.add('fading');setTimeout(()=>{index=(index+1)%quotes.length;quote.textContent=quotes[index];quote.classList.remove('fading')},220)},5200)}
   function showIntro(){const intro=archive.querySelector('.archive-intro');if(sessionStorage.getItem(INTRO_KEY)==='1'||motionOff()){intro.hidden=true;return}intro.hidden=false;setTimeout(()=>{intro.querySelector('p').textContent='SIDDHARTH R. BASA'},560);setTimeout(()=>{intro.classList.add('leaving');sessionStorage.setItem(INTRO_KEY,'1');setTimeout(()=>{intro.hidden=true;intro.classList.remove('leaving')},470)},1350)}
-  function enterPortal(){if(!unlocked())return;returnFocus=document.activeElement;preloadArchiveMedia();playMusic();transition(activatePortal,{title:'THE GLORIOUS SID BASA PORTAL',message:'Summoning the Royal Archive…',variant:'royal'})}
+  function enterPortal(){if(!unlocked())return;returnFocus=document.activeElement;preloadArchiveMedia();playMusic();activatePortal()}
   function activatePortal(){if(!unlocked())return;preloadArchiveMedia();renderPortal();portalOpen=true;document.body.classList.add('portal-active');archive.classList.remove('hidden');archive.setAttribute('aria-hidden','false');document.title='Royal Tennis Archive';showIntro();beginQuotes();syncMusic();if(!music.paused)drawSpectrum();setTimeout(()=>archive.querySelector('[data-archive-return]')?.focus(),0)}
-  function leavePortal(){if(!portalOpen)return;stopEffects();closeLightbox();transition(()=>{portalOpen=false;music.pause();stopSpectrum();clearInterval(quoteTimer);document.body.classList.remove('portal-active');archive.classList.add('hidden');archive.setAttribute('aria-hidden','true');document.title='BRTA Power Ratings';returnFocus?.focus?.()},{title:'Returning to ratings',message:'Restoring BRTA Power Ratings…'})}
+  function leavePortal(){if(!portalOpen)return;stopEffects();closeLightbox();portalOpen=false;music.pause();stopSpectrum();clearInterval(quoteTimer);document.body.classList.remove('portal-active');archive.classList.add('hidden');archive.setAttribute('aria-hidden','true');document.title='BRTA Power Ratings';returnFocus?.focus?.()}
   function sidEffect(){
     if(sidBusy||!portalOpen)return;
     sidBusy=true;const epoch=portalEpoch;

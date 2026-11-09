@@ -18,7 +18,7 @@ def build():
     current = read("data/current/catalog.json")
     live_keys = {(row["competition_code"], row["season_id"]) for row in current["sections"]}
     seasons = {
-        row["section_code"]: season["id"]
+        (season["competition_code"], season["season_id"], row["section_code"]): season["id"]
         for season in history["seasons"] if not season["is_current"]
         for row in season["sections"]
     }
@@ -36,7 +36,7 @@ def build():
                         "finalist", "semifinalist"
                     )},
                     "club": club["name"], "competition": code,
-                    "historyKey": seasons.get(row["section_code"]), "current": False,
+                    "historyKey": seasons.get((code, row["season_id"], row["section_code"])), "current": False,
                 })
     for meta in current["sections"]:
         code = meta["section_code"]

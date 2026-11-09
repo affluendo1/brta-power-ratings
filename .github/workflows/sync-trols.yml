@@ -129,7 +129,9 @@ jobs:
         run: python generate_site_data.py
 
       - name: Refresh History season list from current TROLS season
-        run: python generate_archive_site_data.py --catalog-only
+        run: |
+          python generate_archive_site_data.py --catalog-only
+          python scripts/build_clubs_index.py
 
       - name: Commit check and any regenerated ratings
         shell: bash

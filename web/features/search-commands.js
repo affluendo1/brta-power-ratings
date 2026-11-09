@@ -1,6 +1,26 @@
 (function(){
  const normal=renderRatings;let history=null,historyError=null,historyPending=false;
- function rowsForHistory(){if(history)return history;if(historyError||historyPending)return null;historyPending=true;fetch('data/archive/rating-search.json?v='+encodeURIComponent(DATA.globalSync.checkedAt||''),{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('Search statistics are not available yet.');return r.json()}).then(d=>{history={};for(const cohort of ['all','ranked']){history[cohort]={};for(const [view,rows]of Object.entries(d[cohort]))history[cohort][view]=rows.map(([section,player,team,rating,wins,losses,gf,ga,qualified])=>({...d.sections[section],player,team,rating,wins,losses,gf,ga,qualified}))}historyPending=false;if(ratingScope==='history')renderRatings()}).catch(e=>{historyPending=false;history=null;historyError=e.message;if(ratingScope==='history')renderRatings()});return null}
+ function rowsForHistory(){
+   if(history)return history;
+   if(historyError||historyPending)return null;
+   historyPending=true;
+   const load=async task=>{
+     try{
+       const response=await fetch('data/archive/rating-search.json?v='+encodeURIComponent(DATA.globalSync.checkedAt||''),{cache:'no-store'});
+       if(!response.ok)throw Error('Search statistics are not available yet.');
+       const data=await response.json();
+       task?.stage(75,'Preparing historical rating statistics…');
+       history={};
+       for(const cohort of ['all','ranked']){
+         history[cohort]={};
+         for(const [view,rows] of Object.entries(data[cohort]))history[cohort][view]=rows.map(([section,player,team,rating,wins,losses,gf,ga,qualified])=>({...data.sections[section],player,team,rating,wins,losses,gf,ga,qualified}));
+       }
+     }catch(error){history=null;historyError=error.message;return false}
+     finally{historyPending=false;if(ratingScope==='history')renderRatings()}
+   };
+   if(activePage==='ratings')BRTAActivity.run('Loading historical ratings',load);else load();
+   return null;
+ }
  renderRatings=function(){const q=$('#search').value.trim().toLowerCase(),rule=BRTASearchCommands.commands[q];if(!rule||ratingView.startsWith('orthographic')||q.includes('score')){normal();return}
  renderRatingRoundNotice();let rows=[],notice='',external=ratingScope!=='section';
  if(ratingScope==='history'){const data=rowsForHistory();rows=data?.[showProv?'all':'ranked']?.[ratingView]||[];notice=historyError||(historyPending?'Loading all-history rating statistics…':'')}

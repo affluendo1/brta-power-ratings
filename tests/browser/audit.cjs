@@ -37,7 +37,22 @@ vm.runInContext("BRTA82.modal('Rounds test','',true).classList.add('rounds821-ov
 click('.main-tab[data-page="ratings"]');click('#ratingBody [data-player]');await tick();assert(!w.document.querySelector('#profileOverlay').classList.contains('hidden'));vm.runInContext("openProfile(D.singles[1].player)",ctx);await tick();assert.equal(w.document.querySelector('#profileOverlay .profile-sheet').getAttribute('aria-label'),w.document.querySelector('#profileContent h2').textContent);click('[data-eight-split]');await tick();esc();await tick();assert(w.document.querySelector('#lab8Overlay').classList.contains('hidden'));assert(!w.document.querySelector('#profileOverlay').classList.contains('hidden'));esc();await tick();console.log('Player Lab drilldown Escape preserves lab');
 
 const singleGraph=vm.runInContext("lab8Graph('singles',Object.keys(D.ratingHistory.players)[0],'Singles',1)",ctx);assert(singleGraph.includes('<circle '));console.log('Single-observation chart contains a visible point');
-w.localStorage.setItem('brta-animations','off');let completed=false;w.runBRTAInterfaceTransition(()=>completed=true,{duration:20000,randomProgress:true});assert(completed);assert(w.document.querySelector('#modeSwitchOverlay').classList.contains('hidden'));console.log('Animations-off transitions complete immediately and clean up');
+w.localStorage.setItem('brta-animations','off');
+let finishLoading;
+const pending=w.BRTAActivity.run('Preparing test',async task=>{
+ task.stage(35,'Waiting for data');
+ await new Promise(resolve=>finishLoading=resolve);
+});
+await new Promise(resolve=>setTimeout(resolve,130));
+assert(!w.document.querySelector('#modeSwitchOverlay').classList.contains('hidden'));
+assert.equal(w.document.querySelector('#progressPct').textContent,'35%');
+await tick();
+assert.equal(w.document.querySelector('#progressPct').textContent,'35%');
+finishLoading();await pending;
+assert(w.document.querySelector('#modeSwitchOverlay').classList.contains('hidden'));
+await w.BRTAActivity.run('Cached test',()=>true);
+assert(w.document.querySelector('#modeSwitchOverlay').classList.contains('hidden'));
+console.log('The wheel follows actual work with animations off and skips instant operations');
 const fetchBefore=w.fetch;w.fetch=async url=>String(url).includes('rating-search.json')?{ok:true,json:async()=>({all:{singles:[]},ranked:{singles:[]},sections:[]})}:fetchBefore(url);
 vm.runInContext("ratingScope='history';ratingView='singles';$('#search').value=':highest-rating';renderRatings()",ctx);await tick();assert(w.document.querySelector('#ratingBody').textContent.includes('No eligible entries.'));assert(!w.document.querySelector('#ratingBody').textContent.includes('Loading'));console.log('An empty resolved historical command has an empty state, not perpetual loading');
 vm.runInContext("ratingScope='section';$('#search').value='';renderRatings()",ctx);

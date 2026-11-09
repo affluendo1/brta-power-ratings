@@ -2,6 +2,16 @@
 // Retrospective entries use source-commit timestamps; sourceCommit records their provenance.
 window.BRTA_RELEASES = Object.freeze([
   {
+    "version": "9.0.1",
+    "size": "small",
+    "committedAt": "2026-11-10T09:00:23+11:00",
+    "changes": [
+      "Loading progress now follows section changes, rating calculations and other longer operations.",
+      "Club Participation remembers where you were when you return from a team entry.",
+      "Refined venue details, historical club matching and the way club comparisons are explained."
+    ]
+  },
+  {
     "version": "9.0",
     "title": "Clubs",
     "size": "major",

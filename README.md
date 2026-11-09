@@ -1,6 +1,6 @@
 # BRTA Power Ratings
 
-**Current version: 9.0**
+**Current version: 9.0.1**
 
 The default player rating model is **4.2 Melody**, while **4.2 Orchestra** handles predictions.
 Other available models include **4.2 Foundation**, **RM4.2**, **RM4.1 Ensemble**, **RM4a**,
@@ -8,6 +8,7 @@ Other available models include **4.2 Foundation**, **RM4.2**, **RM4.1 Ensemble**
 
 ### Latest updates
 
+- **9.0.1:** Section changes and other longer operations show progress as data loads and ratings finish calculating. Clubs restores your place when you return from a Participation entry and improves venue details and historical matching.
 - **9.0 — Clubs:** Club logistics, venue maps, all-time performance, team ratings and participation in one tab.
 - **Also in 9.0:** A past-season label in the section picker and support for semifinals and grand finals in the Section Creator.
 
@@ -288,9 +289,12 @@ directory details, venue directions and comparative ladder performance. The map 
 show the section, the current competition or recorded BRTA history. TROLS venue pins
 can be approximate, so the directions link uses the published street address.
 
-**Participation** links current and past team entries to their sections. Both the
-participation and performance filters start with your default competition when one
-is set in Settings. **Find a club** can search beyond the current section, sort the
+**Participation** links current and past team entries to their sections. **Back to
+Participation** restores the club, filters, expanded seasons and reading position.
+Both the participation and performance filters start with your default competition
+when one is set in Settings, or the section's competition otherwise. The historical
+performance average weights each eligible team entry equally, so seasons with more
+teams count more. **Find a club** can search beyond the current section, sort the
 directory, and include provisional listings with limited records.
 
 In the Section Creator, set a round’s **Stage** to Semifinals or Grand final when

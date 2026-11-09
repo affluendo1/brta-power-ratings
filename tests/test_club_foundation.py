@@ -29,6 +29,18 @@ class ClubFoundationTests(unittest.TestCase):
     def test_unknown_explicit_override_does_not_fall_back_to_main_ground(self):
         d={'teams':[{'id':'a','venue_id':'main'}],'venue_assignments':[{'team_id':'a','scope':'fixture','fixture_id':'r1','label':'Temporary ground','resolved_venue_id':None,'source':{}}]}
         self.assertEqual(resolve_venue(d,'a','r1')['status'],'unresolved');self.assertIsNone(resolve_venue(d,'a','r1')['venue_id']);self.assertEqual(resolve_venue(d,'a','r2')['venue_id'],'main')
+    def test_court_surfaces_and_lights_are_kept_as_separate_groups(self):
+        parsed = facts(['4 Classic Clay courts (4 under Lights)', '2 Plexipave courts (2 under Lights)',
+                        '2 Plexipave courts (2 under Lights)', 'Park in local streets', 'Step-free access from the clubhouse'])
+        self.assertEqual(parsed['courts']['count'], 6)
+        self.assertEqual(parsed['courts']['groups'], [
+            {'surface': 'Classic Clay', 'count': 4, 'lit': 4},
+            {'surface': 'Plexipave', 'count': 2, 'lit': 2},
+        ])
+        self.assertEqual(parsed['parking'], 'Park in local streets')
+        self.assertEqual(parsed['accessibility'], 'Step-free access from the clubhouse')
+        self.assertEqual(facts(['8 En-Tous-Cas courts (8 under Lights)'])['courts']['count'], 8)
+        self.assertIsNone(facts(['4 Classic Clay courts', '6 Classic Clay courts'])['courts']['count'])
     def test_playing_at_does_not_pollute_the_team_name(self):
         from scraper.sync_trols import parse_draw_page
         html='<table><tr><th>Rd</th><th>Date</th><th>Home</th><th>Away</th></tr><tr><td>1</td><td>1 Nov 26</td><td>Alpha (9:00) Playing at Beta</td><td>Other</td></tr></table>'

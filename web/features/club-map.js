@@ -21,12 +21,15 @@
   function script(src) {
     return new Promise((resolve, reject) => {
       const element = document.createElement('script');
+      const timeout = setTimeout(() => failed(), 7000);
       element.src = src;
-      element.onload = resolve;
-      element.onerror = () => {
+      function failed() {
+        clearTimeout(timeout);
         element.remove();
         reject(Error('The map library could not load.'));
-      };
+      }
+      element.onload = () => { clearTimeout(timeout); resolve(); };
+      element.onerror = failed;
       document.head.append(element);
     });
   }
@@ -49,7 +52,7 @@
 
   function tiles() {
     if (!tileSource) tileSource = (async () => {
-      const response = await fetch('https://tiles.openfreemap.org/planet');
+      const response = await fetch('https://tiles.openfreemap.org/planet', { signal: AbortSignal.timeout(4500) });
       if (!response.ok) throw Error('Street tiles unavailable.');
       const source = await response.json();
       if (!source.tiles?.length) throw Error('Street tiles unavailable.');
@@ -109,13 +112,24 @@
     }
 
     let destroyed = false;
-    tiles().then(source => {
+    const ready = tiles().then(source => {
       if (destroyed) return;
       const grid = L.vectorGrid.protobuf(source.tiles[0], {
         vectorTileLayerStyles: styles, rendererFactory: L.canvas.tile,
         interactive: false, bounds, noWrap: true, maxNativeZoom: source.maxzoom || 14
       });
-      grid.on('tileerror', onTileError).addTo(map);
+      return new Promise(resolve => {
+        const timeout = setTimeout(settle, 2200);
+        function settle() {
+          clearTimeout(timeout);
+          grid.off('load', settle);
+          signal?.removeEventListener('abort', settle);
+          resolve();
+        }
+        grid.once('load', settle);
+        signal?.addEventListener('abort', settle, { once: true });
+        grid.on('tileerror', onTileError).addTo(map);
+      });
     }).catch(() => { if (!destroyed) onTileError(); });
 
     const observer = new ResizeObserver(() => {
@@ -132,7 +146,7 @@
       map.remove();
     }
     signal?.addEventListener('abort', destroy, { once: true });
-    return { map, destroy, focusSelected() {
+    return { map, destroy, ready, focusSelected() {
       const point = points.find(item => item.id === selectedId);
       if (point) map.setView([point.lat, point.lng], 17);
     }};
