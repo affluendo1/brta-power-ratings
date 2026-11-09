@@ -46,15 +46,21 @@
   "official_standings": [],
   "green_ball": false,
   "results_loaded_by_trols": null,
-  "fixtures": 48,
-  "completed_fixtures": 30,
+  "fixtures": 52,
+  "completed_fixtures": 31,
   "draw_fixtures": 56,
-  "singles_rubbers": 120,
-  "doubles_rubbers": 60,
-  "latest_round": 12,
+  "singles_rubbers": 124,
+  "doubles_rubbers": 62,
+  "latest_round": 13,
   "validation": "source discrepancies",
   "source_warnings": [
     "Incomplete TROLS score for AA015064 singles No. 1: ''. Missing score not inferred; excluded from ratings and game totals.",
-    "Incomplete TROLS score for AA015064 singles No. 2: ''. Missing score not inferred; excluded from ratings and game totals."
+    "Incomplete TROLS score for AA015064 singles No. 2: ''. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AA015133 singles No. 1: ''. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AA015133 singles No. 2: ''. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AA015133 singles No. 3: ''. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AA015133 singles No. 4: ''. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AA015133 doubles No. 1: ''. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AA015133 doubles No. 2: ''. Missing score not inferred; excluded from ratings and game totals."
   ]
 }

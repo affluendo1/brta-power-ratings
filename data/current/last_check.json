@@ -1,24 +1,17 @@
 {
   "changed_sections": [],
   "last_positive": {
-    "checked_at_utc": "2026-11-06T12:02:14.753746+00:00",
-    "changed_sections": [
-      "AP010",
-      "AP011",
-      "HA001",
-      "HA002",
-      "HA003",
-      "HA004"
-    ],
-    "source_commit": "f8c58df0242184e72f8c116ce263d20978da3717",
-    "completed_fixtures": 2243
+    "checked_at_utc": "2026-11-09T12:46:55.992894+00:00",
+    "changed_sections": [],
+    "previous_completed_fixtures": 2243,
+    "completed_fixtures": 2251
   },
-  "checked_at_utc": "2026-11-08T12:13:40.928023+00:00",
-  "new_results": false,
+  "checked_at_utc": "2026-11-09T12:46:55.992907+00:00",
+  "new_results": true,
   "sections": 79,
-  "fixtures": 3029,
-  "completed_fixtures": 2243,
-  "singles_rubbers": 6674,
-  "doubles_rubbers": 5615,
+  "fixtures": 3094,
+  "completed_fixtures": 2251,
+  "singles_rubbers": 6704,
+  "doubles_rubbers": 5630,
   "validation": "source discrepancies"
 }

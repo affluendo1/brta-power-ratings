@@ -46,12 +46,15 @@
   "official_standings": [],
   "green_ball": false,
   "results_loaded_by_trols": null,
-  "fixtures": 48,
-  "completed_fixtures": 32,
+  "fixtures": 52,
+  "completed_fixtures": 33,
   "draw_fixtures": 56,
-  "singles_rubbers": 64,
-  "doubles_rubbers": 32,
-  "latest_round": 12,
-  "validation": "passed",
-  "source_warnings": []
+  "singles_rubbers": 66,
+  "doubles_rubbers": 33,
+  "latest_round": 13,
+  "validation": "source discrepancies",
+  "source_warnings": [
+    "Incomplete TROLS score for AA002133 singles No. 1: '3-6 2-1'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for AA002133 singles No. 2: '6-1 3-0'. Missing score not inferred; excluded from ratings and game totals."
+  ]
 }
