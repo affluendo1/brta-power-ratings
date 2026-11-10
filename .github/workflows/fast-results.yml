@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: "2-57/5 * * * *"
   workflow_dispatch:
+    inputs:
+      sections:
+        description: Comma-separated section codes for a targeted check
+        type: string
+        required: false
   push:
     branches: [main]
     paths:
@@ -31,7 +36,7 @@ jobs:
           sparse-checkout: |
             scraper
             data/current
-            data/site/sections
+            data/site
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
@@ -39,10 +44,19 @@ jobs:
       - name: Install sync dependencies
         run: pip install -r requirements.txt
       - name: Check current results and rebuild changed sections
-        run: python -m scraper.fast_sync
+        env:
+          TARGET_SECTIONS: ${{ inputs.sections }}
+        shell: bash
+        run: |
+          if [ -n "$TARGET_SECTIONS" ]; then
+            python -m scraper.fast_sync --sections "$TARGET_SECTIONS"
+          else
+            python -m scraper.fast_sync
+          fi
       - name: Publish changed results
         env:
           GH_TOKEN: ${{ github.token }}
+          TARGET_SECTIONS: ${{ inputs.sections }}
         shell: bash
         run: |
           if git diff --quiet -- data/current data/site data.js; then
@@ -53,6 +67,7 @@ jobs:
               --jq '[.workflow_runs[] | select(.status != "completed")] | length')
             if [ "$active" -ne 0 ]; then
               echo "A full data workflow is active. Leaving publication to it."
+              if [ -n "$TARGET_SECTIONS" ]; then exit 1; fi
               exit 0
             fi
           done
@@ -67,6 +82,7 @@ jobs:
           head=$(git ls-remote --exit-code origin refs/heads/main | cut -f1)
           if [ "$head" != "$base" ]; then
             echo "Main moved during this check. The next check will use the new snapshot."
+            if [ -n "$TARGET_SECTIONS" ]; then exit 1; fi
             exit 0
           fi
           exit 1

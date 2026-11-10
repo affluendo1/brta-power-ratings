@@ -202,6 +202,8 @@ def main() -> None:
                     back_off |= isinstance(error, RequestException)
             if back_off:
                 break
+    if explicit and successes != len(targets):
+        raise SystemExit("Not all targeted sections could be checked; retry needed")
     if targets and not successes:
         raise SystemExit("No selected section could be checked successfully")
     if changes and not args.dry_run:

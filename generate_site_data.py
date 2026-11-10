@@ -11,6 +11,7 @@ from scipy.optimize import minimize
 from scipy.special import expit
 
 from scraper.score_formats import normalise_frame, rating_counts, parse_score
+from scraper.watch_manifest import write_manifest
 
 from model import (
     GAME_SCALE, HALF_LIFE_DAYS, L2, DISPLAY_CENTRE, DISPLAY_SCALE,
@@ -1559,6 +1560,7 @@ def main(*, rebuild_sections=None):
         if rebuild:
             path.write_text(json.dumps(payload,separators=(",",":"),ensure_ascii=False,allow_nan=False)+"\n",encoding="utf-8")
             print(f"Wrote {code}: {len(payload['singles'])} singles ratings")
+    write_manifest(catalog, section_payloads)
     global_players=[]
     for meta in catalog:
         payload=section_payloads[meta["section_code"]]
