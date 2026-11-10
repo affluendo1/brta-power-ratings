@@ -1,6 +1,6 @@
 import tempfile
 import unittest
-from datetime import datetime
+from datetime import datetime, timedelta
 from pathlib import Path
 from shutil import copytree
 from unittest.mock import patch
@@ -57,6 +57,21 @@ class FastSyncTests(unittest.TestCase):
         for minute in (2, 7, 12):
             now = date.replace(hour=16, minute=minute, tzinfo=fast_sync.MELBOURNE)
             self.assertTrue(fast_sync.due(self.meta, self.directory, now))
+
+    def test_late_results_remain_due_through_day_four(self):
+        played = datetime(2026, 11, 8, 16, 2, tzinfo=fast_sync.MELBOURNE)
+        slot = {"date": "8 Nov 26", "round": "13", "home_team": "Home", "away_team": "Away"}
+        for status in ("Missing Result", "Completed"):
+            for age in (2, 3, 4, 5):
+                now = played + timedelta(days=age)
+                with self.subTest(status=status, age=age), patch.object(
+                    sync_trols, "read_csv", side_effect=[[{**slot, "status": status}], [slot]]
+                ):
+                    if status == "Missing Result" and age <= 4:
+                        self.assertTrue(fast_sync.due({"section_code": "UA009"}, self.directory, now))
+                    else:
+                        staggered = int(now.timestamp()) // 300 % 12 == fast_sync.crc32(b"UA009") % 12
+                        self.assertEqual(fast_sync.due({"section_code": "UA009"}, self.directory, now), staggered)
 
 
 if __name__ == "__main__":

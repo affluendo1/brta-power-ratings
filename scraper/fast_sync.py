@@ -15,6 +15,7 @@ from . import sync_trols as source
 
 SECTIONS = source.OUT / "sections"
 MELBOURNE = ZoneInfo("Australia/Melbourne")
+LATE_RESULTS_DAYS = 4
 DISCIPLINES = {"singles": source.SINGLES_FIELDS, "doubles": source.DOUBLES_FIELDS}
 
 
@@ -27,7 +28,7 @@ def write_json(path: Path, value: dict) -> None:
 
 
 def due(meta: dict, directory: Path, now: datetime) -> bool:
-    """Prioritize today's fixtures; stagger quiet checks across an hour."""
+    """Prioritize match day and outstanding results for four days after play."""
     today = now.date()
     fixtures = source.read_csv(directory / "fixtures.csv")
     resolved = {"Completed", "Bye", "Wash Out", "Forfeit", "Walkover"}
@@ -47,9 +48,11 @@ def due(meta: dict, directory: Path, now: datetime) -> bool:
             continue
         if age == 0 and 8 <= now.hour < 23:
             return True
-        if 0 <= age <= 2:
+        if 0 <= age <= LATE_RESULTS_DAYS:
             slot = (row.get("round"), row.get("home_team"), row.get("away_team"))
             recent_pending |= slot not in settled
+    if recent_pending and 8 <= now.hour < 23:
+        return True
     interval = 6 if recent_pending else 12
     bucket = int(now.timestamp()) // 300
     return bucket % interval == crc32(meta["section_code"].encode()) % interval
