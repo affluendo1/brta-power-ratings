@@ -42,42 +42,42 @@
   "official_standings": [
     {
       "position": 1,
-      "team": "Le Page",
-      "wins": 2,
-      "points": 22,
-      "percentage": 135.14,
+      "team": "Langwarrin White",
+      "wins": 3,
+      "points": 29,
+      "percentage": 182.35,
       "marker": ""
     },
     {
       "position": 2,
       "team": "Pakenham",
-      "wins": 2,
-      "points": 22,
-      "percentage": 112.17,
+      "wins": 3,
+      "points": 29,
+      "percentage": 109.47,
       "marker": ""
     },
     {
       "position": 3,
-      "team": "Langwarrin White",
+      "team": "Langwarrin Blue",
       "wins": 2,
-      "points": 21,
-      "percentage": 182.19,
+      "points": 23,
+      "percentage": 148.0,
       "marker": ""
     },
     {
       "position": 4,
-      "team": "Langwarrin Blue",
-      "wins": 1,
-      "points": 16,
-      "percentage": 121.79,
+      "team": "Victory Park",
+      "wins": 2,
+      "points": 23,
+      "percentage": 114.77,
       "marker": ""
     },
     {
       "position": 5,
-      "team": "Victory Park",
-      "wins": 1,
-      "points": 15,
-      "percentage": 99.35,
+      "team": "Le Page",
+      "wins": 2,
+      "points": 23,
+      "percentage": 104.88,
       "marker": ""
     },
     {
@@ -85,7 +85,7 @@
       "team": "Black Rock",
       "wins": 1,
       "points": 14,
-      "percentage": 62.07,
+      "percentage": 56.2,
       "marker": ""
     },
     {
@@ -93,26 +93,26 @@
       "team": "Mentone Yellow",
       "wins": 1,
       "points": 13,
-      "percentage": 93.38,
+      "percentage": 82.54,
       "marker": ""
     },
     {
       "position": 8,
       "team": "Mentone Gold",
       "wins": 0,
-      "points": 5,
-      "percentage": 42.0,
+      "points": 6,
+      "percentage": 56.8,
       "marker": ""
     }
   ],
   "green_ball": false,
   "results_loaded_by_trols": null,
-  "fixtures": 16,
-  "completed_fixtures": 11,
+  "fixtures": 20,
+  "completed_fixtures": 15,
   "draw_fixtures": 56,
   "singles_rubbers": 0,
-  "doubles_rubbers": 44,
-  "latest_round": 4,
+  "doubles_rubbers": 60,
+  "latest_round": 5,
   "validation": "passed",
   "source_warnings": []
 }

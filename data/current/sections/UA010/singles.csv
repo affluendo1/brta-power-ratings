@@ -42,7 +42,7 @@ UA010032,02 Aug 26,3,Hurlingham Park Red,Glen Huntly,No. 4,Angus O'Neil,Brooklyn
 UA010033,02 Aug 26,3,Le Page,Dendy Park,No. 1,Liam Bianchi,Lucia Colla,Liam Bianchi,7-5,7,5,1,0,Completed,true,false,false,7-5
 UA010033,02 Aug 26,3,Le Page,Dendy Park,No. 2,Drake Brooks,Emily Van De Water,Drake Brooks,6-0,6,0,1,0,Completed,true,false,false,6-0
 UA010033,02 Aug 26,3,Le Page,Dendy Park,No. 3,Ethan Hadjinak,Alex Ng,Ethan Hadjinak,7-5,7,5,1,0,Completed,true,false,true,7-5
-UA010033,02 Aug 26,3,Le Page,Dendy Park,No. 4,Skyler Wijendra,Eleanor Keady,Skyler Wijendra,6-1,6,1,1,0,Completed,true,false,true,6-1
+UA010033,02 Aug 26,3,Le Page,Dendy Park,No. 4,Skyler Wijendra,Eleanor Keady,Skyler Wijendra,6-1,6,1,1,0,Completed,true,false,false,6-1
 UA010034,02 Aug 26,3,St Joan of Arc,Hurlingham Park Blue,No. 1,Kris Xu,Ava Nimorakiotakis,Kris Xu,6-0,6,0,1,0,Completed,true,false,false,6-0
 UA010034,02 Aug 26,3,St Joan of Arc,Hurlingham Park Blue,No. 2,Nicholas Andrew,Cristian Bianchi,Nicholas Andrew,6-3,6,3,1,0,Completed,true,false,false,6-3
 UA010034,02 Aug 26,3,St Joan of Arc,Hurlingham Park Blue,No. 3,Lachlan Pullman,Asher Vaughan,Lachlan Pullman,6-4,6,4,1,0,Completed,true,false,false,6-4
@@ -66,7 +66,7 @@ UA010052,16 Aug 26,5,Glen Huntly,Royal Ave,No. 4,Brooklyn Samuel,Odette Okulicz,
 UA010053,16 Aug 26,5,Hurlingham Park Blue,Dendy Park,No. 1,Rey Hu,Liam Dever,Rey Hu,6-2,6,2,1,0,Completed,true,false,false,6-2
 UA010053,16 Aug 26,5,Hurlingham Park Blue,Dendy Park,No. 2,Cristian Bianchi,Jake Bloom,Jake Bloom,2-6,2,6,0,1,Completed,true,false,false,2-6
 UA010053,16 Aug 26,5,Hurlingham Park Blue,Dendy Park,No. 3,Eden Morehu,Lucia Colla,Lucia Colla,5-7,5,7,0,1,Completed,true,false,false,5-7
-UA010053,16 Aug 26,5,Hurlingham Park Blue,Dendy Park,No. 4,Freddie Williams,Eleanor Keady,Freddie Williams,6-1,6,1,1,0,Completed,true,false,true,6-1
+UA010053,16 Aug 26,5,Hurlingham Park Blue,Dendy Park,No. 4,Freddie Williams,Eleanor Keady,Freddie Williams,6-1,6,1,1,0,Completed,true,false,false,6-1
 UA010054,16 Aug 26,5,Royal South Yarra,Hurlingham Park Red,No. 1,Tiyaan Jayawardena,Anastasia Turner,Anastasia Turner,2-6,2,6,0,1,Completed,true,false,false,2-6
 UA010054,16 Aug 26,5,Royal South Yarra,Hurlingham Park Red,No. 2,Annabel Atkins,Eva Moralis,Eva Moralis,3-6,3,6,0,1,Completed,true,false,false,3-6
 UA010054,16 Aug 26,5,Royal South Yarra,Hurlingham Park Red,No. 3,Teddy Syme,Lewis Thorp,Teddy Syme,6-1,6,1,1,0,Completed,true,false,false,6-1
@@ -101,7 +101,7 @@ UA010073,30 Aug 26,7,Glen Huntly,Hurlingham Park Blue,No. 3,Jadyn Green,Cristian
 UA010073,30 Aug 26,7,Glen Huntly,Hurlingham Park Blue,No. 4,Milo Peric,Asher Vaughan,Milo Peric,6-1,6,1,1,0,Completed,true,false,false,6-1
 UA010074,30 Aug 26,7,Royal Ave,Dendy Park,No. 1,Livian Gomes,Tobias Maddams,Tobias Maddams,0-6,0,6,0,1,Completed,true,false,true,0-6
 UA010074,30 Aug 26,7,Royal Ave,Dendy Park,No. 2,Amber Sutherland,Emily Van De Water,Amber Sutherland,6-1,6,1,1,0,Completed,true,false,false,6-1
-UA010074,30 Aug 26,7,Royal Ave,Dendy Park,No. 3,Sia Kasapidis,Eleanor Keady,Sia Kasapidis,6-2,6,2,1,0,Completed,true,false,true,6-2
+UA010074,30 Aug 26,7,Royal Ave,Dendy Park,No. 3,Sia Kasapidis,Eleanor Keady,Sia Kasapidis,6-2,6,2,1,0,Completed,true,false,false,6-2
 UA010074,30 Aug 26,7,Royal Ave,Dendy Park,No. 4,Amelie Hollingsworth,Freddie Rowe,Amelie Hollingsworth,6-0,6,0,1,0,Completed,true,false,true,6-0
 UA010081,06 Sep 26,8,Dendy Park,Royal South Yarra,No. 1,Liam Dever,Tiyaan Jayawardena,Liam Dever,6-1,6,1,1,0,Completed,true,false,false,6-1
 UA010081,06 Sep 26,8,Dendy Park,Royal South Yarra,No. 2,Jake Bloom,Archer Luff,Jake Bloom,6-1,6,1,1,0,Completed,true,false,false,6-1
@@ -163,3 +163,19 @@ UA010114,18 Oct 26,11,St Joan of Arc,Dendy Park,No. 1,Nicholas Andrew,Tobias Mad
 UA010114,18 Oct 26,11,St Joan of Arc,Dendy Park,No. 2,Nick Sands,Jake Bloom,Nick Sands,6-2,6,2,1,0,Completed,true,false,false,6-2
 UA010114,18 Oct 26,11,St Joan of Arc,Dendy Park,No. 3,Lachlan Pullman,Emily Van De Water,Emily Van De Water,1-6,1,6,0,1,Completed,true,false,false,1-6
 UA010114,18 Oct 26,11,St Joan of Arc,Dendy Park,No. 4,Milo Cross,Jack Loffel,Milo Cross,6-4,6,4,1,0,Completed,true,false,false,6-4
+UA010131,08 Nov 26,13,Le Page,Hurlingham Park Red,No. 1,Liam Bianchi,Anastasia Turner,Anastasia Turner,6-7,6,7,0,1,Completed,true,false,false,6-7
+UA010131,08 Nov 26,13,Le Page,Hurlingham Park Red,No. 2,Drake Brooks,Hudson Sumner,Drake Brooks,6-3,6,3,1,0,Completed,true,false,false,6-3
+UA010131,08 Nov 26,13,Le Page,Hurlingham Park Red,No. 3,Ethan Hadjinak,Eva Moralis,Ethan Hadjinak,6-3,6,3,1,0,Completed,true,false,false,6-3
+UA010131,08 Nov 26,13,Le Page,Hurlingham Park Red,No. 4,Skyler Wijendra,Angus O'Neil,Skyler Wijendra,6-4,6,4,1,0,Completed,true,false,false,6-4
+UA010132,08 Nov 26,13,Royal South Yarra,St Joan of Arc,No. 1,Tiyaan Jayawardena,Nicholas Andrew,Nicholas Andrew,0-6,0,6,0,1,Completed,true,false,false,0-6
+UA010132,08 Nov 26,13,Royal South Yarra,St Joan of Arc,No. 2,Archer Luff,Nick Sands,Nick Sands,1-6,1,6,0,1,Completed,true,false,false,1-6
+UA010132,08 Nov 26,13,Royal South Yarra,St Joan of Arc,No. 3,Teddy Syme,Lachlan Pullman,Teddy Syme,6-3,6,3,1,0,Completed,true,false,false,6-3
+UA010132,08 Nov 26,13,Royal South Yarra,St Joan of Arc,No. 4,Lucy Staple,Milo Cross,Milo Cross,4-6,4,6,0,1,Completed,true,true,false,4-6
+UA010133,08 Nov 26,13,Hurlingham Park Blue,Royal Ave,No. 1,Rey Hu,Livian Gomes,Rey Hu,6-4,6,4,1,0,Completed,true,false,false,6-4
+UA010133,08 Nov 26,13,Hurlingham Park Blue,Royal Ave,No. 2,Cristian Bianchi,Amber Sutherland,Cristian Bianchi,6-2,6,2,1,0,Completed,true,false,false,6-2
+UA010133,08 Nov 26,13,Hurlingham Park Blue,Royal Ave,No. 3,Eden Morehu,Sia Kasapidis,Sia Kasapidis,4-6,4,6,0,1,Completed,true,false,false,4-6
+UA010133,08 Nov 26,13,Hurlingham Park Blue,Royal Ave,No. 4,Freddie Williams,Tara Chruszcz,Tara Chruszcz,5-7,5,7,0,1,Completed,true,false,false,5-7
+UA010134,08 Nov 26,13,Glen Huntly,Dendy Park,No. 1,Jessica Elsner,Liam Dever,Jessica Elsner,6-4,6,4,1,0,Completed,true,false,false,6-4
+UA010134,08 Nov 26,13,Glen Huntly,Dendy Park,No. 2,Jadyn Green,Jake Bloom,Jadyn Green,6-1,6,1,1,0,Completed,true,false,false,6-1
+UA010134,08 Nov 26,13,Glen Huntly,Dendy Park,No. 3,Peter Kalogeropoulos,Lucia Colla,Peter Kalogeropoulos,6-3,6,3,1,0,Completed,true,false,false,6-3
+UA010134,08 Nov 26,13,Glen Huntly,Dendy Park,No. 4,Milo Peric,Eleanor Keady,Milo Peric,6-0,6,0,1,0,Completed,true,false,false,6-0

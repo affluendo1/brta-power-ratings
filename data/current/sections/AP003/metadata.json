@@ -43,17 +43,17 @@
     {
       "position": 1,
       "team": "Willy Central",
-      "wins": 2,
-      "points": 24,
-      "percentage": 105.47,
+      "wins": 3,
+      "points": 33,
+      "percentage": 116.87,
       "marker": ""
     },
     {
       "position": 2,
       "team": "Black Rock",
-      "wins": 2,
-      "points": 23,
-      "percentage": 192.59,
+      "wins": 3,
+      "points": 31,
+      "percentage": 162.77,
       "marker": ""
     },
     {
@@ -68,43 +68,43 @@
       "position": 4,
       "team": "Liston Red",
       "wins": 1,
-      "points": 18.5,
-      "percentage": 117.65,
+      "points": 19.5,
+      "percentage": 98.14,
       "marker": ""
     },
     {
       "position": 5,
       "team": "Mt Eliza Penins",
       "wins": 2,
-      "points": 15.5,
-      "percentage": 83.92,
+      "points": 17.5,
+      "percentage": 83.33,
       "marker": ""
     },
     {
       "position": 6,
-      "team": "Maccabi",
-      "wins": 0,
-      "points": 10,
-      "percentage": 48.31,
+      "team": "Liston Blue",
+      "wins": 1,
+      "points": 16,
+      "percentage": 100.83,
       "marker": ""
     },
     {
       "position": 7,
-      "team": "Liston Blue",
+      "team": "Maccabi",
       "wins": 0,
-      "points": 9,
-      "percentage": 83.7,
+      "points": 13,
+      "percentage": 53.38,
       "marker": ""
     }
   ],
   "green_ball": false,
   "results_loaded_by_trols": null,
-  "fixtures": 16,
-  "completed_fixtures": 9,
+  "fixtures": 20,
+  "completed_fixtures": 12,
   "draw_fixtures": 56,
-  "singles_rubbers": 36,
-  "doubles_rubbers": 18,
-  "latest_round": 4,
+  "singles_rubbers": 48,
+  "doubles_rubbers": 24,
+  "latest_round": 5,
   "validation": "source discrepancies",
   "source_warnings": [
     "Incomplete TROLS score for AP003044 singles No. 1: '0-2'. Missing score not inferred; excluded from ratings and game totals.",

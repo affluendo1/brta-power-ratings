@@ -44,7 +44,7 @@
       "position": 1,
       "team": "BLTC White",
       "wins": 2,
-      "points": 29,
+      "points": 34,
       "percentage": 152.58,
       "marker": ""
     },
@@ -52,7 +52,7 @@
       "position": 2,
       "team": "East Malvern Blue",
       "wins": 2,
-      "points": 25,
+      "points": 30,
       "percentage": 147.17,
       "marker": ""
     },
@@ -68,7 +68,7 @@
       "position": 4,
       "team": "BLTC Blue",
       "wins": 1,
-      "points": 16,
+      "points": 21,
       "percentage": 106.52,
       "marker": ""
     },
@@ -76,7 +76,7 @@
       "position": 5,
       "team": "East Malvern Navy",
       "wins": 0,
-      "points": 12,
+      "points": 17,
       "percentage": 91.11,
       "marker": ""
     },
@@ -84,7 +84,7 @@
       "position": 6,
       "team": "Altona",
       "wins": 1,
-      "points": 8,
+      "points": 13,
       "percentage": 65.7,
       "marker": ""
     },
@@ -92,19 +92,19 @@
       "position": 7,
       "team": "BLTC Light",
       "wins": 0,
-      "points": 5,
+      "points": 10,
       "percentage": 30.36,
       "marker": ""
     }
   ],
   "green_ball": false,
   "results_loaded_by_trols": null,
-  "fixtures": 16,
+  "fixtures": 20,
   "completed_fixtures": 9,
   "draw_fixtures": 56,
   "singles_rubbers": 36,
   "doubles_rubbers": 18,
-  "latest_round": 4,
+  "latest_round": 5,
   "validation": "source discrepancies",
   "source_warnings": [
     "Incomplete TROLS score for AP013041 singles No. 1: '1-1'. Missing score not inferred; excluded from ratings and game totals.",

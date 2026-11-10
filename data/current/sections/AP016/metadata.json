@@ -43,9 +43,9 @@
     {
       "position": 1,
       "team": "Hurlingham Park",
-      "wins": 2,
-      "points": 25,
-      "percentage": 125.36,
+      "wins": 3,
+      "points": 33,
+      "percentage": 129.21,
       "marker": ""
     },
     {
@@ -60,15 +60,15 @@
       "position": 3,
       "team": "Kooyong Purple",
       "wins": 2,
-      "points": 22,
-      "percentage": 115.27,
+      "points": 24,
+      "percentage": 101.6,
       "marker": ""
     },
     {
       "position": 4,
       "team": "Tennis World",
       "wins": 2,
-      "points": 18,
+      "points": 23,
       "percentage": 106.12,
       "marker": ""
     },
@@ -76,35 +76,35 @@
       "position": 5,
       "team": "Glenvale",
       "wins": 1,
-      "points": 16,
+      "points": 21,
       "percentage": 95.28,
       "marker": ""
     },
     {
       "position": 6,
-      "team": "Mordialloc",
-      "wins": 0,
-      "points": 8,
-      "percentage": 61.86,
+      "team": "Royal South Yarra",
+      "wins": 1,
+      "points": 13,
+      "percentage": 82.39,
       "marker": ""
     },
     {
       "position": 7,
-      "team": "Royal South Yarra",
+      "team": "Mordialloc",
       "wins": 0,
-      "points": 6,
-      "percentage": 67.77,
+      "points": 11,
+      "percentage": 71.88,
       "marker": ""
     }
   ],
   "green_ball": false,
   "results_loaded_by_trols": null,
-  "fixtures": 16,
-  "completed_fixtures": 9,
+  "fixtures": 20,
+  "completed_fixtures": 11,
   "draw_fixtures": 56,
-  "singles_rubbers": 36,
-  "doubles_rubbers": 18,
-  "latest_round": 4,
+  "singles_rubbers": 44,
+  "doubles_rubbers": 22,
+  "latest_round": 5,
   "validation": "passed",
   "source_warnings": []
 }

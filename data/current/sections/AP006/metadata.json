@@ -43,24 +43,24 @@
     {
       "position": 1,
       "team": "Elwood",
-      "wins": 3,
-      "points": 30,
-      "percentage": 144.64,
+      "wins": 4,
+      "points": 38,
+      "percentage": 154.01,
       "marker": ""
     },
     {
       "position": 2,
       "team": "Ormond",
-      "wins": 3,
-      "points": 30,
-      "percentage": 132.52,
+      "wins": 4,
+      "points": 38,
+      "percentage": 130.38,
       "marker": ""
     },
     {
       "position": 3,
       "team": "BLTC",
       "wins": 2,
-      "points": 24,
+      "points": 29,
       "percentage": 107.38,
       "marker": ""
     },
@@ -68,7 +68,7 @@
       "position": 4,
       "team": "Glen Huntly",
       "wins": 2,
-      "points": 21,
+      "points": 26,
       "percentage": 95.27,
       "marker": ""
     },
@@ -76,43 +76,43 @@
       "position": 5,
       "team": "Kings Park",
       "wins": 1,
-      "points": 17,
-      "percentage": 85.26,
+      "points": 19,
+      "percentage": 84.42,
       "marker": ""
     },
     {
       "position": 6,
-      "team": "Coatesville",
+      "team": "Hurlingham Park",
       "wins": 1,
-      "points": 15,
-      "percentage": 81.93,
+      "points": 18,
+      "percentage": 97.09,
       "marker": ""
     },
     {
       "position": 7,
-      "team": "Altona",
-      "wins": 0,
-      "points": 12,
-      "percentage": 87.58,
+      "team": "Coatesville",
+      "wins": 1,
+      "points": 18,
+      "percentage": 79.28,
       "marker": ""
     },
     {
       "position": 8,
-      "team": "Hurlingham Park",
+      "team": "Altona",
       "wins": 0,
-      "points": 11,
-      "percentage": 86.75,
+      "points": 14,
+      "percentage": 78.71,
       "marker": ""
     }
   ],
   "green_ball": false,
   "results_loaded_by_trols": null,
-  "fixtures": 16,
-  "completed_fixtures": 12,
+  "fixtures": 20,
+  "completed_fixtures": 15,
   "draw_fixtures": 56,
-  "singles_rubbers": 48,
-  "doubles_rubbers": 24,
-  "latest_round": 4,
+  "singles_rubbers": 60,
+  "doubles_rubbers": 30,
+  "latest_round": 5,
   "validation": "passed",
   "source_warnings": []
 }

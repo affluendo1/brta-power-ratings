@@ -42,50 +42,50 @@
   "official_standings": [
     {
       "position": 1,
-      "team": "Kooyong",
+      "team": "East Malvern Blue",
       "wins": 3,
-      "points": 28,
-      "percentage": 236.36,
+      "points": 34,
+      "percentage": 129.11,
       "marker": ""
     },
     {
       "position": 2,
-      "team": "East Malvern Blue",
-      "wins": 2,
-      "points": 25,
-      "percentage": 112.69,
+      "team": "Kooyong",
+      "wins": 3,
+      "points": 33,
+      "percentage": 236.36,
       "marker": ""
     },
     {
       "position": 3,
-      "team": "East Malvern Navy",
-      "wins": 1,
-      "points": 17,
-      "percentage": 98.51,
+      "team": "Chadstone",
+      "wins": 2,
+      "points": 21.5,
+      "percentage": 104.35,
       "marker": ""
     },
     {
       "position": 4,
       "team": "BLTC Blue",
       "wins": 1,
-      "points": 14,
+      "points": 19,
       "percentage": 89.62,
       "marker": ""
     },
     {
       "position": 5,
-      "team": "Chadstone",
+      "team": "East Malvern Navy",
       "wins": 1,
-      "points": 13.5,
-      "percentage": 92.16,
+      "points": 19,
+      "percentage": 87.18,
       "marker": ""
     },
     {
       "position": 6,
       "team": "Tennis World",
       "wins": 0,
-      "points": 13,
-      "percentage": 72.52,
+      "points": 14,
+      "percentage": 64.67,
       "marker": ""
     },
     {
@@ -99,12 +99,12 @@
   ],
   "green_ball": false,
   "results_loaded_by_trols": null,
-  "fixtures": 16,
-  "completed_fixtures": 9,
+  "fixtures": 20,
+  "completed_fixtures": 11,
   "draw_fixtures": 56,
-  "singles_rubbers": 36,
-  "doubles_rubbers": 18,
-  "latest_round": 4,
+  "singles_rubbers": 44,
+  "doubles_rubbers": 22,
+  "latest_round": 5,
   "validation": "source discrepancies",
   "source_warnings": [
     "Incomplete TROLS score for AP015041 singles No. 1: '4-4'. Missing score not inferred; excluded from ratings and game totals.",

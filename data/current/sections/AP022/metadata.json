@@ -39,33 +39,33 @@
     {
       "position": 1,
       "team": "Chadstone",
-      "wins": 2,
-      "points": 20,
-      "percentage": 136.73,
+      "wins": 3,
+      "points": 27,
+      "percentage": 156.3,
       "marker": ""
     },
     {
       "position": 2,
-      "team": "Hawthorn",
-      "wins": 2,
-      "points": 20,
-      "percentage": 133.98,
+      "team": "Overport Park Green",
+      "wins": 3,
+      "points": 27,
+      "percentage": 115.48,
       "marker": ""
     },
     {
       "position": 3,
-      "team": "Overport Park Green",
+      "team": "Hawthorn",
       "wins": 2,
-      "points": 19,
-      "percentage": 100.0,
+      "points": 24,
+      "percentage": 133.98,
       "marker": ""
     },
     {
       "position": 4,
       "team": "Mentone",
       "wins": 1,
-      "points": 15,
-      "percentage": 100.0,
+      "points": 16,
+      "percentage": 83.33,
       "marker": ""
     },
     {
@@ -73,26 +73,26 @@
       "team": "Overport Park Gold",
       "wins": 1,
       "points": 14,
-      "percentage": 90.0,
+      "percentage": 79.01,
       "marker": ""
     },
     {
       "position": 6,
       "team": "Ormond",
       "wins": 0,
-      "points": 8,
+      "points": 12,
       "percentage": 62.18,
       "marker": ""
     }
   ],
   "green_ball": false,
   "results_loaded_by_trols": null,
-  "fixtures": 12,
-  "completed_fixtures": 9,
+  "fixtures": 15,
+  "completed_fixtures": 11,
   "draw_fixtures": 45,
   "singles_rubbers": 0,
-  "doubles_rubbers": 36,
-  "latest_round": 4,
+  "doubles_rubbers": 44,
+  "latest_round": 5,
   "validation": "passed",
   "source_warnings": []
 }

@@ -44,67 +44,67 @@
       "position": 1,
       "team": "BLTC White",
       "wins": 2,
-      "points": 21,
+      "points": 26,
       "percentage": 230.95,
       "marker": ""
     },
     {
       "position": 2,
-      "team": "Lauriston",
-      "wins": 2,
-      "points": 20,
-      "percentage": 118.29,
+      "team": "Hawthorn",
+      "wins": 3,
+      "points": 26,
+      "percentage": 113.17,
       "marker": ""
     },
     {
       "position": 3,
-      "team": "Hawthorn",
+      "team": "Kooyong",
       "wins": 2,
-      "points": 19,
-      "percentage": 113.6,
+      "points": 26,
+      "percentage": 89.94,
       "marker": ""
     },
     {
       "position": 4,
-      "team": "BLTC Blue",
-      "wins": 1,
-      "points": 19,
-      "percentage": 110.79,
+      "team": "Lauriston",
+      "wins": 2,
+      "points": 23,
+      "percentage": 107.75,
       "marker": ""
     },
     {
       "position": 5,
-      "team": "Kooyong",
+      "team": "BLTC Blue",
       "wins": 1,
-      "points": 16,
-      "percentage": 70.77,
+      "points": 19,
+      "percentage": 96.98,
       "marker": ""
     },
     {
       "position": 6,
+      "team": "Royal South Yarra",
+      "wins": 0,
+      "points": 15,
+      "percentage": 74.49,
+      "marker": ""
+    },
+    {
+      "position": 7,
       "team": "Overport Park",
       "wins": 1,
       "points": 15,
       "percentage": 72.14,
       "marker": ""
-    },
-    {
-      "position": 7,
-      "team": "Royal South Yarra",
-      "wins": 0,
-      "points": 10,
-      "percentage": 74.49,
-      "marker": ""
     }
   ],
   "green_ball": false,
   "results_loaded_by_trols": null,
-  "fixtures": 16,
-  "completed_fixtures": 9,
+  "fixtures": 20,
+  "completed_fixtures": 11,
   "draw_fixtures": 56,
-  "singles_rubbers": 36,
-  "doubles_rubbers": 18,
-  "latest_round": 4,
+  "singles_rubbers": 44,
+  "doubles_rubbers": 22,
+  "latest_round": 5,
   "validation": "source discrepancies",
   "source_warnings": [
     "Incomplete TROLS score for AP014043 singles No. 1: '3-0'. Missing score not inferred; excluded from ratings and game totals."

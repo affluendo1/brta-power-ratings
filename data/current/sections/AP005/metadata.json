@@ -43,32 +43,32 @@
     {
       "position": 1,
       "team": "Caulfield Rec",
-      "wins": 2,
-      "points": 29,
-      "percentage": 127.68,
+      "wins": 3,
+      "points": 38,
+      "percentage": 133.78,
       "marker": ""
     },
     {
       "position": 2,
-      "team": "Overport Park",
-      "wins": 2,
-      "points": 28,
-      "percentage": 153.33,
+      "team": "Kooyong Green",
+      "wins": 4,
+      "points": 38,
+      "percentage": 126.04,
       "marker": ""
     },
     {
       "position": 3,
-      "team": "Kooyong Green",
-      "wins": 3,
-      "points": 28,
-      "percentage": 111.43,
+      "team": "Overport Park",
+      "wins": 2,
+      "points": 33,
+      "percentage": 153.33,
       "marker": ""
     },
     {
       "position": 4,
       "team": "BLTC",
       "wins": 1,
-      "points": 22,
+      "points": 27,
       "percentage": 124.77,
       "marker": ""
     },
@@ -76,7 +76,7 @@
       "position": 5,
       "team": "Tennis World",
       "wins": 1,
-      "points": 17,
+      "points": 22,
       "percentage": 96.8,
       "marker": ""
     },
@@ -84,7 +84,7 @@
       "position": 6,
       "team": "Kooyong Purple",
       "wins": 0,
-      "points": 14,
+      "points": 19,
       "percentage": 89.26,
       "marker": ""
     },
@@ -93,26 +93,26 @@
       "team": "Ardrie Park",
       "wins": 1,
       "points": 13,
-      "percentage": 72.96,
+      "percentage": 67.13,
       "marker": ""
     },
     {
       "position": 8,
       "team": "Royal South Yarra",
       "wins": 0,
-      "points": 9,
-      "percentage": 63.13,
+      "points": 10,
+      "percentage": 63.72,
       "marker": ""
     }
   ],
   "green_ball": false,
   "results_loaded_by_trols": null,
-  "fixtures": 16,
-  "completed_fixtures": 12,
+  "fixtures": 20,
+  "completed_fixtures": 14,
   "draw_fixtures": 56,
-  "singles_rubbers": 48,
-  "doubles_rubbers": 24,
-  "latest_round": 4,
+  "singles_rubbers": 56,
+  "doubles_rubbers": 28,
+  "latest_round": 5,
   "validation": "source discrepancies",
   "source_warnings": [
     "Incomplete TROLS score for AP005041 doubles No. 2: '6-4 2-2'. Missing score not inferred; excluded from ratings and game totals.",

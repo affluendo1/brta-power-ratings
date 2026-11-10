@@ -2,7 +2,7 @@ fixture_id,date,round,home_team,away_team,position,home_player,away_player,winni
 AP004021,10 Oct 26,2,Altona,Carmelite,No. 1,Louis Walter,Daniil Levashov,Louis Walter,8-6,8,6,1,0,Completed,true,false,false,8-6
 AP004021,10 Oct 26,2,Altona,Carmelite,No. 2,Emri Jeka,Charlie Smit,Emri Jeka,8-3,8,3,1,0,Completed,true,false,false,8-3
 AP004021,10 Oct 26,2,Altona,Carmelite,No. 3,Julian Ventura,Nathan Crouch-Phan,Julian Ventura,8-6,8,6,1,0,Completed,true,false,false,8-6
-AP004021,10 Oct 26,2,Altona,Carmelite,No. 4,Tanush Thakkar,Lucas Worrall,Tanush Thakkar,8-2,8,2,1,0,Completed,true,true,true,8-2
+AP004021,10 Oct 26,2,Altona,Carmelite,No. 4,Tanush Thakkar,Lucas Worrall,Tanush Thakkar,8-2,8,2,1,0,Completed,true,false,false,8-2
 AP004022,10 Oct 26,2,Black Rock,Hurlingham Park,No. 1,Rob Cvitkovic,Lucas Valansi,Lucas Valansi,3-8,3,8,0,1,Completed,true,false,false,3-8
 AP004022,10 Oct 26,2,Black Rock,Hurlingham Park,No. 2,Alexander Henao,Tom McKerrow,Tom McKerrow,3-8,3,8,0,1,Completed,true,false,false,3-8
 AP004022,10 Oct 26,2,Black Rock,Hurlingham Park,No. 3,Ethan Kleiman,Hugh Blacket,Ethan Kleiman,8-3,8,3,1,0,Completed,true,true,false,8-3
@@ -22,7 +22,7 @@ AP004031,17 Oct 26,3,Carmelite,BLTC,No. 4,Josh Kempin,Grant Harris,Josh Kempin,8
 AP004032,17 Oct 26,3,Hurlingham Park,Altona,No. 1,Lucas Valansi,Louis Walter,Lucas Valansi,8-5,8,5,1,0,Completed,true,false,false,8-5
 AP004032,17 Oct 26,3,Hurlingham Park,Altona,No. 2,Tom McKerrow,Emri Jeka,Tom McKerrow,8-3,8,3,1,0,Completed,true,false,false,8-3
 AP004032,17 Oct 26,3,Hurlingham Park,Altona,No. 3,Tony Schiavello,Julian Ventura,Julian Ventura,6-8,6,8,0,1,Completed,true,false,false,6-8
-AP004032,17 Oct 26,3,Hurlingham Park,Altona,No. 4,Guillaume Drelon,Tanush Thakkar,Tanush Thakkar,5-8,5,8,0,1,Completed,true,false,true,5-8
+AP004032,17 Oct 26,3,Hurlingham Park,Altona,No. 4,Guillaume Drelon,Tanush Thakkar,Tanush Thakkar,5-8,5,8,0,1,Completed,true,false,false,5-8
 AP004033,17 Oct 26,3,Highmoor Uniting,Black Rock,No. 1,Paul Luke,Tory Dickson,Tory Dickson,0-8,0,8,0,1,Completed,true,false,false,0-8
 AP004033,17 Oct 26,3,Highmoor Uniting,Black Rock,No. 2,Alistair Young,Rob Cvitkovic,Rob Cvitkovic,5-8,5,8,0,1,Completed,true,true,false,5-8
 AP004033,17 Oct 26,3,Highmoor Uniting,Black Rock,No. 3,Ben Abbott,Anthony Angus,Ben Abbott,8-4,8,4,1,0,Completed,true,false,false,8-4
@@ -30,7 +30,7 @@ AP004033,17 Oct 26,3,Highmoor Uniting,Black Rock,No. 4,Kyle Malligan,Michael Ker
 AP004041,24 Oct 26,4,Essendon,Carmelite,No. 1,Manas Patil,Daniil Levashov,Manas Patil,8-7,8,7,1,0,Completed,true,false,false,8-7
 AP004041,24 Oct 26,4,Essendon,Carmelite,No. 2,James Morrow,Charlie Smit,James Morrow,8-7,8,7,1,0,Completed,true,false,false,8-7
 AP004041,24 Oct 26,4,Essendon,Carmelite,No. 3,Matt Absolom,Nathan Crouch-Phan,Nathan Crouch-Phan,4-8,4,8,0,1,Completed,true,false,false,4-8
-AP004041,24 Oct 26,4,Essendon,Carmelite,No. 4,Joel McLeod,Lucas Worrall,Joel McLeod,8-3,8,3,1,0,Completed,true,false,true,8-3
+AP004041,24 Oct 26,4,Essendon,Carmelite,No. 4,Joel McLeod,Lucas Worrall,Joel McLeod,8-3,8,3,1,0,Completed,true,false,false,8-3
 AP004042,24 Oct 26,4,BLTC,Hurlingham Park,No. 1,Juan Sanchez,Lucas Valansi,Lucas Valansi,3-8,3,8,0,1,Completed,true,false,false,3-8
 AP004042,24 Oct 26,4,BLTC,Hurlingham Park,No. 2,Ethan Donati,Hugh Blacket,Ethan Donati,8-2,8,2,1,0,Completed,true,false,false,8-2
 AP004042,24 Oct 26,4,BLTC,Hurlingham Park,No. 3,Warren Kennard,Tony Schiavello,Tony Schiavello,0-8,0,8,0,1,Completed,true,false,false,0-8
@@ -38,8 +38,24 @@ AP004042,24 Oct 26,4,BLTC,Hurlingham Park,No. 4,Roger Boyd,Guillaume Drelon,Guil
 AP004043,24 Oct 26,4,Altona,Highmoor Uniting,No. 1,[Unnamed emergency — TROLS AP004043 home code 1],Jason Newell,Jason Newell,0-8,0,8,0,1,Completed,false,true,false,0-8
 AP004043,24 Oct 26,4,Altona,Highmoor Uniting,No. 2,Emri Jeka,Erik Bucko,Erik Bucko,7-8,7,8,0,1,Completed,true,false,false,7-8
 AP004043,24 Oct 26,4,Altona,Highmoor Uniting,No. 3,Julian Ventura,Kyle Malligan,Kyle Malligan,4-8,4,8,0,1,Completed,true,false,false,4-8
-AP004043,24 Oct 26,4,Altona,Highmoor Uniting,No. 4,Tanush Thakkar,Yves Zenou,Tanush Thakkar,8-5,8,5,1,0,Completed,true,true,false,8-5
+AP004043,24 Oct 26,4,Altona,Highmoor Uniting,No. 4,Tanush Thakkar,Yves Zenou,Tanush Thakkar,8-5,8,5,1,0,Completed,true,false,false,8-5
 AP004044,24 Oct 26,4,Black Rock,Mt Martha,No. 1,Tory Dickson,Robert Chipp,,3-0,3,0,1,0,Unfinished,false,false,false,3-0
 AP004044,24 Oct 26,4,Black Rock,Mt Martha,No. 2,Alexander Henao,Hayden Thomas,Alexander Henao,8-7,8,7,1,0,Completed,true,false,false,8-7
 AP004044,24 Oct 26,4,Black Rock,Mt Martha,No. 3,Anthony Angus,William Burnell,,0-1,0,1,0,1,Unfinished,false,false,false,0-1
 AP004044,24 Oct 26,4,Black Rock,Mt Martha,No. 4,Jon Wheeler,Luca Salpietro,Luca Salpietro,3-8,3,8,0,1,Completed,true,true,false,3-8
+AP004051,07 Nov 26,5,Highmoor Uniting,Mt Martha,No. 1,Lachlan Peters,Robert Chipp,Lachlan Peters,8-4,8,4,1,0,Completed,true,false,false,8-4
+AP004051,07 Nov 26,5,Highmoor Uniting,Mt Martha,No. 2,Alistair Young,Hayden Thomas,Hayden Thomas,2-8,2,8,0,1,Completed,true,true,false,2-8
+AP004051,07 Nov 26,5,Highmoor Uniting,Mt Martha,No. 3,Ben Abbott,Adam Snow,Adam Snow,3-8,3,8,0,1,Completed,true,false,true,3-8
+AP004051,07 Nov 26,5,Highmoor Uniting,Mt Martha,No. 4,Paul Luke,William Burnell,William Burnell,0-8,0,8,0,1,Completed,true,false,false,0-8
+AP004052,07 Nov 26,5,Altona,BLTC,No. 1,Harschil Kaparwan,Ethan Donati,Ethan Donati,2-8,2,8,0,1,Completed,true,false,false,2-8
+AP004052,07 Nov 26,5,Altona,BLTC,No. 2,Jaz Somal,Roger Boyd,Jaz Somal,8-4,8,4,1,0,Completed,true,false,false,8-4
+AP004052,07 Nov 26,5,Altona,BLTC,No. 3,Emri Jeka,James Curtin,Emri Jeka,8-3,8,3,1,0,Completed,true,false,false,8-3
+AP004052,07 Nov 26,5,Altona,BLTC,No. 4,Tanush Thakkar,Grant Harris,Tanush Thakkar,8-3,8,3,1,0,Completed,true,false,true,8-3
+AP004053,07 Nov 26,5,Essendon,Black Rock,No. 1,James Morrow,Tory Dickson,Tory Dickson,2-8,2,8,0,1,Completed,true,false,false,2-8
+AP004053,07 Nov 26,5,Essendon,Black Rock,No. 2,Matt Absolom,Matthew Glico,Matthew Glico,5-8,5,8,0,1,Completed,true,false,true,5-8
+AP004053,07 Nov 26,5,Essendon,Black Rock,No. 3,Joel McLeod,Alexander Henao,Alexander Henao,7-8,7,8,0,1,Completed,true,false,false,7-8
+AP004053,07 Nov 26,5,Essendon,Black Rock,No. 4,Rafael Hernandez,Anthony Angus,Anthony Angus,3-8,3,8,0,1,Completed,true,true,false,3-8
+AP004054,07 Nov 26,5,Carmelite,Hurlingham Park,No. 1,Daniil Levashov,Lucas Valansi,Lucas Valansi,2-8,2,8,0,1,Completed,true,false,false,2-8
+AP004054,07 Nov 26,5,Carmelite,Hurlingham Park,No. 2,Charlie Smit,Hugh Blacket,Hugh Blacket,2-8,2,8,0,1,Completed,true,false,false,2-8
+AP004054,07 Nov 26,5,Carmelite,Hurlingham Park,No. 3,Nathan Crouch-Phan,Tony Schiavello,Nathan Crouch-Phan,8-5,8,5,1,0,Completed,true,false,false,8-5
+AP004054,07 Nov 26,5,Carmelite,Hurlingham Park,No. 4,Lucas Worrall,Paul Bryner,Lucas Worrall,8-7,8,7,1,0,Completed,true,false,true,8-7

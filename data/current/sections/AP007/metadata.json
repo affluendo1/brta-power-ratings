@@ -42,18 +42,18 @@
   "official_standings": [
     {
       "position": 1,
-      "team": "Hawthorn",
-      "wins": 3,
-      "points": 31,
-      "percentage": 127.27,
+      "team": "Kooyong",
+      "wins": 4,
+      "points": 38.5,
+      "percentage": 156.69,
       "marker": ""
     },
     {
       "position": 2,
-      "team": "Kooyong",
+      "team": "Hawthorn",
       "wins": 3,
-      "points": 30.5,
-      "percentage": 176.19,
+      "points": 33,
+      "percentage": 114.53,
       "marker": ""
     },
     {
@@ -67,44 +67,44 @@
     {
       "position": 4,
       "team": "Chadstone",
-      "wins": 0,
-      "points": 10,
-      "percentage": 100.93,
+      "wins": 1,
+      "points": 19,
+      "percentage": 108.78,
       "marker": ""
     },
     {
       "position": 5,
-      "team": "Kings Park",
-      "wins": 0,
-      "points": 8,
-      "percentage": 55.66,
+      "team": "Maccabi",
+      "wins": 1,
+      "points": 15,
+      "percentage": 81.11,
       "marker": ""
     },
     {
       "position": 6,
-      "team": "BLTC",
+      "team": "Kings Park",
       "wins": 0,
-      "points": 7.5,
-      "percentage": 55.91,
+      "points": 9,
+      "percentage": 62.89,
       "marker": ""
     },
     {
       "position": 7,
-      "team": "Maccabi",
+      "team": "BLTC",
       "wins": 0,
-      "points": 6,
-      "percentage": 63.64,
+      "points": 8.5,
+      "percentage": 60.14,
       "marker": ""
     }
   ],
   "green_ball": false,
   "results_loaded_by_trols": null,
-  "fixtures": 16,
-  "completed_fixtures": 9,
+  "fixtures": 20,
+  "completed_fixtures": 12,
   "draw_fixtures": 56,
-  "singles_rubbers": 36,
-  "doubles_rubbers": 18,
-  "latest_round": 4,
+  "singles_rubbers": 48,
+  "doubles_rubbers": 24,
+  "latest_round": 5,
   "validation": "source discrepancies",
   "source_warnings": [
     "Incomplete TROLS score for AP007042 singles No. 2: ''. Missing score not inferred; excluded from ratings and game totals.",

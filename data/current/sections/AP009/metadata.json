@@ -42,14 +42,30 @@
   "official_standings": [
     {
       "position": 1,
-      "team": "Hurlingham Park",
+      "team": "Essendon",
       "wins": 3,
-      "points": 24,
-      "percentage": 174.7,
+      "points": 29,
+      "percentage": 174.24,
       "marker": ""
     },
     {
       "position": 2,
+      "team": "Hurlingham Park",
+      "wins": 3,
+      "points": 26,
+      "percentage": 147.62,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Lauriston",
+      "wins": 2,
+      "points": 25,
+      "percentage": 93.55,
+      "marker": ""
+    },
+    {
+      "position": 4,
       "team": "Kooyong",
       "wins": 2,
       "points": 22,
@@ -57,35 +73,19 @@
       "marker": ""
     },
     {
-      "position": 3,
-      "team": "Essendon",
-      "wins": 2,
-      "points": 19,
-      "percentage": 174.24,
-      "marker": ""
-    },
-    {
-      "position": 4,
-      "team": "Lauriston",
-      "wins": 1,
-      "points": 16,
-      "percentage": 75.84,
-      "marker": ""
-    },
-    {
       "position": 5,
-      "team": "Albert Park",
-      "wins": 1,
-      "points": 15,
-      "percentage": 66.45,
+      "team": "Highmoor Uniting",
+      "wins": 2,
+      "points": 22,
+      "percentage": 96.55,
       "marker": ""
     },
     {
       "position": 6,
-      "team": "Highmoor Uniting",
+      "team": "Albert Park",
       "wins": 1,
-      "points": 14,
-      "percentage": 93.27,
+      "points": 16,
+      "percentage": 64.81,
       "marker": ""
     },
     {
@@ -99,12 +99,12 @@
   ],
   "green_ball": false,
   "results_loaded_by_trols": null,
-  "fixtures": 16,
-  "completed_fixtures": 9,
+  "fixtures": 20,
+  "completed_fixtures": 11,
   "draw_fixtures": 56,
-  "singles_rubbers": 36,
-  "doubles_rubbers": 18,
-  "latest_round": 4,
+  "singles_rubbers": 44,
+  "doubles_rubbers": 22,
+  "latest_round": 5,
   "validation": "passed",
   "source_warnings": []
 }

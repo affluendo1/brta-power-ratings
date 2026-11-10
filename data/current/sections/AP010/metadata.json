@@ -43,29 +43,45 @@
     {
       "position": 1,
       "team": "Black Rock",
-      "wins": 3,
-      "points": 31,
-      "percentage": 159.34,
+      "wins": 4,
+      "points": 38,
+      "percentage": 144.2,
       "marker": ""
     },
     {
       "position": 2,
-      "team": "Coatesville",
-      "wins": 2,
-      "points": 22,
-      "percentage": 133.75,
+      "team": "Murrumbeena",
+      "wins": 3,
+      "points": 28,
+      "percentage": 132.47,
       "marker": ""
     },
     {
       "position": 3,
-      "team": "Murrumbeena",
+      "team": "Coatesville",
       "wins": 2,
-      "points": 19,
-      "percentage": 128.18,
+      "points": 27,
+      "percentage": 133.75,
       "marker": ""
     },
     {
       "position": 4,
+      "team": "Gardiner",
+      "wins": 1,
+      "points": 17,
+      "percentage": 71.84,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Hawthorn",
+      "wins": 0,
+      "points": 16,
+      "percentage": 68.75,
+      "marker": ""
+    },
+    {
+      "position": 6,
       "team": "Maccabi Blue",
       "wins": 0,
       "points": 15,
@@ -73,38 +89,22 @@
       "marker": ""
     },
     {
-      "position": 5,
-      "team": "Gardiner",
-      "wins": 1,
-      "points": 14,
-      "percentage": 66.45,
-      "marker": ""
-    },
-    {
-      "position": 6,
-      "team": "Hawthorn",
-      "wins": 0,
-      "points": 11,
-      "percentage": 68.75,
-      "marker": ""
-    },
-    {
       "position": 7,
       "team": "Maccabi Green",
       "wins": 0,
-      "points": 8,
-      "percentage": 63.11,
+      "points": 9,
+      "percentage": 65.66,
       "marker": ""
     }
   ],
   "green_ball": false,
   "results_loaded_by_trols": null,
-  "fixtures": 16,
-  "completed_fixtures": 8,
+  "fixtures": 20,
+  "completed_fixtures": 10,
   "draw_fixtures": 56,
-  "singles_rubbers": 32,
-  "doubles_rubbers": 16,
-  "latest_round": 4,
+  "singles_rubbers": 40,
+  "doubles_rubbers": 20,
+  "latest_round": 5,
   "validation": "passed",
   "source_warnings": []
 }

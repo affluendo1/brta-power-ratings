@@ -39,25 +39,25 @@
     {
       "position": 1,
       "team": "Royal South Yarra",
-      "wins": 3,
-      "points": 24.5,
-      "percentage": 158.43,
+      "wins": 4,
+      "points": 32.5,
+      "percentage": 175.0,
       "marker": ""
     },
     {
       "position": 2,
       "team": "Parkdale",
       "wins": 2,
-      "points": 20,
-      "percentage": 105.3,
+      "points": 22,
+      "percentage": 102.15,
       "marker": ""
     },
     {
       "position": 3,
       "team": "Overport Park",
       "wins": 2,
-      "points": 19,
-      "percentage": 124.39,
+      "points": 20,
+      "percentage": 108.72,
       "marker": ""
     },
     {
@@ -65,34 +65,34 @@
       "team": "Sth Hawthorn",
       "wins": 2,
       "points": 18,
-      "percentage": 96.85,
+      "percentage": 81.14,
       "marker": ""
     },
     {
       "position": 5,
-      "team": "Black Rock",
-      "wins": 0,
-      "points": 7.5,
-      "percentage": 65.71,
+      "team": "Hawthorn",
+      "wins": 1,
+      "points": 14,
+      "percentage": 86.59,
       "marker": ""
     },
     {
       "position": 6,
-      "team": "Hawthorn",
-      "wins": 0,
-      "points": 7,
-      "percentage": 71.54,
+      "team": "Black Rock",
+      "wins": 1,
+      "points": 13.5,
+      "percentage": 76.44,
       "marker": ""
     }
   ],
   "green_ball": false,
   "results_loaded_by_trols": null,
-  "fixtures": 12,
-  "completed_fixtures": 9,
+  "fixtures": 15,
+  "completed_fixtures": 12,
   "draw_fixtures": 45,
   "singles_rubbers": 0,
-  "doubles_rubbers": 36,
-  "latest_round": 4,
+  "doubles_rubbers": 48,
+  "latest_round": 5,
   "validation": "passed",
   "source_warnings": []
 }
