@@ -4,7 +4,7 @@ from pathlib import Path
 import unittest
 
 ROOT = Path(__file__).resolve().parents[1]
-spec = importlib.util.spec_from_file_location('history_builder', ROOT / 'research/rm42/experiments/site-release-35/build_history.py')
+spec = importlib.util.spec_from_file_location('history_builder', ROOT / 'scripts/build_orchestra_history.py')
 builder = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(builder)
 
