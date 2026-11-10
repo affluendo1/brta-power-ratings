@@ -407,7 +407,9 @@ static site on GitHub Pages
 
 `scraper/sync_trols.py` discovers the active competitions and sections, downloads the results and scorecards, reads each team's official draw, validates the records, and writes the current-season source data. `generate_site_data.py` fits the section models and creates the data consumed by the website. The default section is embedded in `data.js`; other section payloads are loaded when selected.
 
-The routine GitHub Actions sync runs daily at approximately 3:07 PM Australia/Melbourne time, and can also be started manually. It runs the regression tests, regenerates the current-season site data, and records a heartbeat. The Last checked control opens a panel showing the most recent check separately from the last check that found new results. Publishing may finish after the scheduled start. Returning visitors also receive a short results-check notice.
+The fast GitHub Actions check is scheduled every five minutes. It prioritizes sections playing that day (8 am to 11 pm Melbourne time), checks recently outstanding sections on a staggered 30-minute cycle, and spreads quieter sections across the hour. Each check reads section result indexes and only fetches scorecards whose published fixture rows changed. Changed sections are rebuilt and published as one commit. GitHub scheduling and Pages deployment can add delay.
+
+The daily full sync remains scheduled for approximately 3:07 pm Melbourne time. It refreshes draws, archives and club indexes, and catches scorecard-only corrections that leave fixture summaries unchanged. The Last checked control shows the latest published check and the last detected results change. Fast checks that find no change appear in Actions without triggering a Pages deployment.
 
 Historical importing is separate from routine sync: `scraper/backfill_history.py` fetches the past seasons listed by TROLS, and `generate_archive_site_data.py` builds their rating payloads and History catalogue. The archive workflow is manually dispatchable and code-triggered; normal scheduled checks do not rescan the past.
 

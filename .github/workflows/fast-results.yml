@@ -1,0 +1,72 @@
+name: Fast TROLS results check
+
+on:
+  schedule:
+    - cron: "2-57/5 * * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/fast-results.yml"
+
+permissions:
+  actions: read
+  contents: write
+
+concurrency:
+  group: brta-fast-results-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  check:
+    if: github.ref_name == 'main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    env:
+      OPENBLAS_NUM_THREADS: "1"
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          sparse-checkout: |
+            scraper
+            data/current
+            data/site/sections
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install sync dependencies
+        run: pip install -r requirements.txt
+      - name: Check current results and rebuild changed sections
+        run: python -m scraper.fast_sync
+      - name: Publish changed results
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          if git diff --quiet -- data/current data/site data.js; then
+            exit 0
+          fi
+          for workflow in sync-trols.yml import-history.yml; do
+            active=$(gh api "repos/$GITHUB_REPOSITORY/actions/workflows/$workflow/runs?branch=main&per_page=20" \
+              --jq '[.workflow_runs[] | select(.status != "completed")] | length')
+            if [ "$active" -ne 0 ]; then
+              echo "A full data workflow is active. Leaving publication to it."
+              exit 0
+            fi
+          done
+          base=$(git rev-parse HEAD)
+          git config user.name "brta-ratings-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- data/current data/site data.js
+          git commit -m "NEW BRTA RESULTS OUT: fast section refresh"
+          if git push origin HEAD:main; then
+            exit 0
+          fi
+          head=$(git ls-remote --exit-code origin refs/heads/main | cut -f1)
+          if [ "$head" != "$base" ]; then
+            echo "Main moved during this check. The next check will use the new snapshot."
+            exit 0
+          fi
+          exit 1

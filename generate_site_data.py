@@ -1542,20 +1542,23 @@ def build_section(meta, *, sections_dir=None):
                            "expectedGameShare":round(100*float(expit((leader["rating"]-DISPLAY_CENTRE)/450)),1)}
     return payload
 
-def main():
+def main(*, rebuild_sections=None):
     catalog_doc=json.loads((DATA_DIR/"catalog.json").read_text(encoding="utf-8"))
     SITE_SECTIONS_DIR.mkdir(parents=True,exist_ok=True)
     section_payloads={}
     catalog=[]
     for meta in catalog_doc["sections"]:
-        payload=build_section(meta)
         code=meta["section_code"]
+        path=SITE_SECTIONS_DIR/f"{code}.json"
+        rebuild=rebuild_sections is None or code in rebuild_sections or not path.exists()
+        payload=build_section(meta) if rebuild else json.loads(path.read_text(encoding="utf-8"))
         section_payloads[code]=payload
         summary={**meta}
         if payload.get("leader"): summary["leader"]=payload["leader"]
         catalog.append(summary)
-        (SITE_SECTIONS_DIR/f"{code}.json").write_text(json.dumps(payload,separators=(",",":"),ensure_ascii=False,allow_nan=False)+"\n",encoding="utf-8")
-        print(f"Wrote {code}: {len(payload['singles'])} singles ratings")
+        if rebuild:
+            path.write_text(json.dumps(payload,separators=(",",":"),ensure_ascii=False,allow_nan=False)+"\n",encoding="utf-8")
+            print(f"Wrote {code}: {len(payload['singles'])} singles ratings")
     global_players=[]
     for meta in catalog:
         payload=section_payloads[meta["section_code"]]
