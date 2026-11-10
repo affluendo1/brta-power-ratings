@@ -22,7 +22,7 @@
     @media(prefers-reduced-motion:reduce){.auxiliary-reveal,.auxiliary-archive-button{animation:none}}
   </style>
   <script>
-    (function(){var m=localStorage.getItem('brta-interface')||'future',t=localStorage.getItem('brta-theme')||'auto',a=localStorage.getItem('brta-accent')||'yellow',d=t==='dark'||t==='black-plus'||(t==='auto'&&matchMedia('(prefers-color-scheme: dark)').matches),future=m!=='classic',c=future?(d?'#101109':'#f3f2e9'):(d?'#000000':'#c0c0c0'),l=document.createElement('link');document.documentElement.dataset.interface=m;document.documentElement.dataset.accent=a;document.documentElement.style.backgroundColor=c;document.documentElement.style.colorScheme=d?'dark':'light';document.getElementById('themeColor').content=c;l.id='siteStyles';l.rel='stylesheet';l.href=future?'web/styles/future.css?v=901':'web/styles/style.css?v=901';document.head.appendChild(l)})()
+    (function(){var m=localStorage.getItem('brta-interface')||'future',t=localStorage.getItem('brta-theme')||'auto',a=localStorage.getItem('brta-accent')||'yellow',d=t==='dark'||t==='black-plus'||t==='neon-plus'||(t==='auto'&&matchMedia('(prefers-color-scheme: dark)').matches),future=m!=='classic',c=future?(d?'#101109':'#f3f2e9'):(d?'#000000':'#c0c0c0'),l=document.createElement('link');document.documentElement.dataset.interface=m;document.documentElement.dataset.accent=a;document.documentElement.style.backgroundColor=c;document.documentElement.style.colorScheme=d?'dark':'light';document.getElementById('themeColor').content=c;l.id='siteStyles';l.rel='stylesheet';l.href=future?'web/styles/future.css?v=901':'web/styles/style.css?v=901';document.head.appendChild(l)})()
   </script>
   <link rel="stylesheet" href="web/optional/collection.css?v=8521">
 <link rel="stylesheet" href="web/styles/custom-sections.css?v=8542">
@@ -44,6 +44,7 @@
 <link rel="stylesheet" href="web/styles/update853.css?v=8544">
 <link rel="stylesheet" href="web/styles/clubs.css?v=901">
 <link rel="stylesheet" href="web/styles/model-vault.css?v=9011">
+<link rel="stylesheet" href="web/styles/archive-secret.css?v=9012">
 </head>
 <body>
 <header class="site-header">
@@ -127,7 +128,7 @@
 </main>
 
 <main id="royalArchive" class="royal-archive hidden" aria-hidden="true"></main>
-<footer class="site-footer"><div class="classic-only classic-footer"><b>BRTA Power Ratings</b> · Version <span data-classic-version></span><br><button type="button" data-layout-open="methodology" aria-label="Read rating methodology">Methodology</button> | <button type="button" data-layout-open="rules" aria-label="Read BRTA rules">BRTA Rules</button></div><span><b>BRTA Power Ratings</b> is an independent, unofficial site.</span><span>Not affiliated with BRTA, Tennis Australia or UTR. Results are as entered on TROLS.</span></footer>
+<footer class="site-footer"><div class="classic-only classic-footer"><b>BRTA Power Ratings</b> · Version <span data-classic-version></span><br><button type="button" data-layout-open="methodology" aria-label="Read rating methodology">Methodology</button> | <button type="button" data-layout-open="rules" aria-label="Read BRTA rules">BRTA Rules</button></div><span id="siteIndependence"><b>BRTA Power Ratings</b> is an independent, unofficial site.</span><span>Not affiliated with BRTA, Tennis Australia or UTR. Results are as entered on TROLS.</span></footer>
 
 
 <div id="clubPickerOverlay" class="overlay hidden"><div class="overlay-backdrop" data-club-picker-close="1"></div><section class="club-picker-sheet" role="dialog" aria-modal="true" aria-labelledby="clubPickerTitle"><button id="clubPickerClose" class="close-btn" type="button" aria-label="Close Club Zone">×</button><div class="overlay-title"><div class="kicker">CLUB ZONE</div><h2 id="clubPickerTitle">Open a club record</h2><p>Choose competition, then club.</p></div><div class="club-picker-fields"><label>Competition<select id="clubPickerCompetition"><option value="">Choose Saturday or Sunday AM</option><option value="AA">Saturday AM</option><option value="UA">Sunday AM</option></select></label><label>Club<select id="clubPickerClub" disabled><option value="">Choose a competition first</option></select></label></div><p id="clubPickerStatus" class="club-picker-status"></p><button id="clubPickerOpen" class="button primary" type="button" disabled>Open Club Zone</button></section></div>
@@ -163,7 +164,7 @@
 <script src="web/features/player-search.js?v=8521"></script>
 <script src="web/models/team-lab.js?v=8521"></script>
 <script src="web/features/team-lab-ui.js?v=900"></script>
-<script src="web/features/changelog-data.js?v=9011"></script>
+<script src="web/features/changelog-data.js?v=9012"></script>
 <script src="web/features/changelog.js?v=900"></script>
 <script src="web/optional/parameters.js?v=8521"></script>
 <script src="web/optional/presentation.js?v=8521"></script>
@@ -174,7 +175,7 @@
 <script src="web/models/rm4-engine.js?v=8521"></script>
 <script src="web/models/orchestra-fit.js?v=8521"></script>
 <script src="web/models/orchestra.js?v=audit2"></script>
-<script src="web/core/app.js?v=901"></script>
+<script src="web/core/app.js?v=9012"></script>
 <script src="web/core/layout.js?v=901"></script>
 <script src="web/features/confetti.js?v=8521"></script>
 <script src="web/features/archive.js?v=901"></script>
@@ -214,7 +215,8 @@
 <script src="web/features/export-853.js?v=901-fast"></script>
 <script src="web/models/clubs.js?v=900"></script>
 <script src="web/features/clubs.js?v=901"></script>
-<script src="web/features/model-vault.js?v=9011"></script>
+<script src="web/features/model-vault.js?v=9012"></script>
+<script src="web/features/archive-secret.js?v=9012"></script>
 </body>
 </html>
 

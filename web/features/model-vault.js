@@ -254,10 +254,16 @@
   entry.addEventListener('click', openVault);
   function submitCode(event) {
     event.preventDefault();
-    const input = vault.querySelector('input'), code = input.value.trim().toUpperCase();
+    const input = vault.querySelector('input'), raw = input.value, code = raw.trim().toUpperCase();
     if (!code) return;
     input.value = '';
     const reply = vault.querySelector('.vault-reply');
+    if (window.BRTAArchiveSecret?.redeem(raw)) {
+      reply.textContent = 'Neon + unlocked. Find it under Theme in Settings.';
+      sound(340, 1040, .34, 'triangle');
+      input.focus();
+      return;
+    }
     switch (code) {
       case '104756':
         spawnKey(vault.querySelector('[type=submit]'));

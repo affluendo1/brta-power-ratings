@@ -31,7 +31,7 @@ const ratingInfo={
   overall:['Overall ratings','Singles and Individual Doubles, equally weighted.']
 };
 
-function resolvedDark(){return theme==='dark'||theme==='black-plus'||(theme==='auto'&&matchMedia('(prefers-color-scheme: dark)').matches)}
+function resolvedDark(){return theme==='dark'||theme==='black-plus'||theme==='neon-plus'||(theme==='auto'&&matchMedia('(prefers-color-scheme: dark)').matches)}
 function competitionLabel(code){if(code==='LOCAL')return 'My sections';return ({AA:'Saturday AM',AP:'Saturday PM',UA:'Sunday AM',TA:'Tuesday AM',TN:'Tuesday Night',WA:'Wednesday AM',HA:'Thursday AM'})[code]||'Competition'}
 function sectionCompetitionLabel(section){return section?.competition_label||competitionLabel(section?.competition_code)}
 function historySeasonSections(season){return(season?.sections||[]).map(section=>({...section,competition_code:section.competition_code||season.competition_code,competition_label:section.competition_label||season.competition_label||competitionLabel(section.competition_code||season.competition_code),season_id:section.season_id||season.season_id,season_label:section.season_label||season.season_label}))}
