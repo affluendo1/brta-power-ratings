@@ -1,0 +1,1002 @@
+[
+  {
+    "name": "Garnet Light",
+    "family": "Light",
+    "palette": {
+      "surface": "hsl(0 35% 96%)",
+      "accent": "hsl(0 75% 30%)",
+      "text": "#172132",
+      "ink": "#ffffff"
+    }
+  },
+  {
+    "name": "Ember Light",
+    "family": "Light",
+    "palette": {
+      "surface": "hsl(14 35% 96%)",
+      "accent": "hsl(14 75% 30%)",
+      "text": "#172132",
+      "ink": "#ffffff"
+    }
+  },
+  {
+    "name": "Copper Light",
+    "family": "Light",
+    "palette": {
+      "surface": "hsl(28 35% 96%)",
+      "accent": "hsl(28 75% 30%)",
+      "text": "#172132",
+      "ink": "#ffffff"
+    }
+  },
+  {
+    "name": "Amber Light",
+    "family": "Light",
+    "palette": {
+      "surface": "hsl(43 35% 96%)",
+      "accent": "hsl(43 75% 30%)",
+      "text": "#172132",
+      "ink": "#ffffff"
+    }
+  },
+  {
+    "name": "Gold Light",
+    "family": "Light",
+    "palette": {
+      "surface": "hsl(57 35% 96%)",
+      "accent": "hsl(57 75% 30%)",
+      "text": "#172132",
+      "ink": "#ffffff"
+    }
+  },
+  {
+    "name": "Citron Light",
+    "family": "Light",
+    "palette": {
+      "surface": "hsl(72 35% 96%)",
+      "accent": "hsl(72 75% 30%)",
+      "text": "#172132",
+      "ink": "#ffffff"
+    }
+  },
+  {
+    "name": "Olive Light",
+    "family": "Light",
+    "palette": {
+      "surface": "hsl(86 35% 96%)",
+      "accent": "hsl(86 75% 30%)",
+      "text": "#172132",
+      "ink": "#ffffff"
+    }
+  },
+  {
+    "name": "Fern Light",
+    "family": "Light",
+    "palette": {
+      "surface": "hsl(100 35% 96%)",
+      "accent": "hsl(100 75% 30%)",
+      "text": "#172132",
+      "ink": "#ffffff"
+    }
+  },
+  {
+    "name": "Moss Light",
+    "family": "Light",
+    "palette": {
+      "surface": "hsl(115 35% 96%)",
+      "accent": "hsl(115 75% 30%)",
+      "text": "#172132",
+      "ink": "#ffffff"
+    }
+  },
+  {
+    "name": "Jade Light",
+    "family": "Light",
+    "palette": {
+      "surface": "hsl(129 35% 96%)",
+      "accent": "hsl(129 75% 30%)",
+      "text": "#172132",
+      "ink": "#ffffff"
+    }
+  },
+  {
+    "name": "Mint Light",
+    "family": "Light",
+    "palette": {
+      "surface": "hsl(144 35% 96%)",
+      "accent": "hsl(144 75% 30%)",
+      "text": "#172132",
+      "ink": "#ffffff"
+    }
+  },
+  {
+    "name": "Lagoon Light",
+    "family": "Light",
+    "palette": {
+      "surface": "hsl(158 35% 96%)",
+      "accent": "hsl(158 75% 30%)",
+      "text": "#172132",
+      "ink": "#ffffff"
+    }
+  },
+  {
+    "name": "Teal Light",
+    "family": "Light",
+    "palette": {
+      "surface": "hsl(172 35% 96%)",
+      "accent": "hsl(172 75% 30%)",
+      "text": "#172132",
+      "ink": "#ffffff"
+    }
+  },
+  {
+    "name": "Glacier Light",
+    "family": "Light",
+    "palette": {
+      "surface": "hsl(187 35% 96%)",
+      "accent": "hsl(187 75% 30%)",
+      "text": "#172132",
+      "ink": "#ffffff"
+    }
+  },
+  {
+    "name": "Sky Light",
+    "family": "Light",
+    "palette": {
+      "surface": "hsl(201 35% 96%)",
+      "accent": "hsl(201 75% 30%)",
+      "text": "#172132",
+      "ink": "#ffffff"
+    }
+  },
+  {
+    "name": "Cobalt Light",
+    "family": "Light",
+    "palette": {
+      "surface": "hsl(216 35% 96%)",
+      "accent": "hsl(216 75% 30%)",
+      "text": "#172132",
+      "ink": "#ffffff"
+    }
+  },
+  {
+    "name": "Indigo Light",
+    "family": "Light",
+    "palette": {
+      "surface": "hsl(230 35% 96%)",
+      "accent": "hsl(230 75% 30%)",
+      "text": "#172132",
+      "ink": "#ffffff"
+    }
+  },
+  {
+    "name": "Iris Light",
+    "family": "Light",
+    "palette": {
+      "surface": "hsl(244 35% 96%)",
+      "accent": "hsl(244 75% 30%)",
+      "text": "#172132",
+      "ink": "#ffffff"
+    }
+  },
+  {
+    "name": "Violet Light",
+    "family": "Light",
+    "palette": {
+      "surface": "hsl(259 35% 96%)",
+      "accent": "hsl(259 75% 30%)",
+      "text": "#172132",
+      "ink": "#ffffff"
+    }
+  },
+  {
+    "name": "Orchid Light",
+    "family": "Light",
+    "palette": {
+      "surface": "hsl(273 35% 96%)",
+      "accent": "hsl(273 75% 30%)",
+      "text": "#172132",
+      "ink": "#ffffff"
+    }
+  },
+  {
+    "name": "Plum Light",
+    "family": "Light",
+    "palette": {
+      "surface": "hsl(288 35% 96%)",
+      "accent": "hsl(288 75% 30%)",
+      "text": "#172132",
+      "ink": "#ffffff"
+    }
+  },
+  {
+    "name": "Magenta Light",
+    "family": "Light",
+    "palette": {
+      "surface": "hsl(302 35% 96%)",
+      "accent": "hsl(302 75% 30%)",
+      "text": "#172132",
+      "ink": "#ffffff"
+    }
+  },
+  {
+    "name": "Rose Light",
+    "family": "Light",
+    "palette": {
+      "surface": "hsl(316 35% 96%)",
+      "accent": "hsl(316 75% 30%)",
+      "text": "#172132",
+      "ink": "#ffffff"
+    }
+  },
+  {
+    "name": "Cerise Light",
+    "family": "Light",
+    "palette": {
+      "surface": "hsl(331 35% 96%)",
+      "accent": "hsl(331 75% 30%)",
+      "text": "#172132",
+      "ink": "#ffffff"
+    }
+  },
+  {
+    "name": "Coral Light",
+    "family": "Light",
+    "palette": {
+      "surface": "hsl(345 35% 96%)",
+      "accent": "hsl(345 75% 30%)",
+      "text": "#172132",
+      "ink": "#ffffff"
+    }
+  },
+  {
+    "name": "Garnet Dark",
+    "family": "Dark",
+    "palette": {
+      "surface": "hsl(0 35% 16%)",
+      "accent": "hsl(0 75% 66%)",
+      "text": "#f5f7fc",
+      "ink": "#111827"
+    }
+  },
+  {
+    "name": "Ember Dark",
+    "family": "Dark",
+    "palette": {
+      "surface": "hsl(14 35% 16%)",
+      "accent": "hsl(14 75% 66%)",
+      "text": "#f5f7fc",
+      "ink": "#111827"
+    }
+  },
+  {
+    "name": "Copper Dark",
+    "family": "Dark",
+    "palette": {
+      "surface": "hsl(28 35% 16%)",
+      "accent": "hsl(28 75% 66%)",
+      "text": "#f5f7fc",
+      "ink": "#111827"
+    }
+  },
+  {
+    "name": "Amber Dark",
+    "family": "Dark",
+    "palette": {
+      "surface": "hsl(43 35% 16%)",
+      "accent": "hsl(43 75% 66%)",
+      "text": "#f5f7fc",
+      "ink": "#111827"
+    }
+  },
+  {
+    "name": "Gold Dark",
+    "family": "Dark",
+    "palette": {
+      "surface": "hsl(57 35% 16%)",
+      "accent": "hsl(57 75% 66%)",
+      "text": "#f5f7fc",
+      "ink": "#111827"
+    }
+  },
+  {
+    "name": "Citron Dark",
+    "family": "Dark",
+    "palette": {
+      "surface": "hsl(72 35% 16%)",
+      "accent": "hsl(72 75% 66%)",
+      "text": "#f5f7fc",
+      "ink": "#111827"
+    }
+  },
+  {
+    "name": "Olive Dark",
+    "family": "Dark",
+    "palette": {
+      "surface": "hsl(86 35% 16%)",
+      "accent": "hsl(86 75% 66%)",
+      "text": "#f5f7fc",
+      "ink": "#111827"
+    }
+  },
+  {
+    "name": "Fern Dark",
+    "family": "Dark",
+    "palette": {
+      "surface": "hsl(100 35% 16%)",
+      "accent": "hsl(100 75% 66%)",
+      "text": "#f5f7fc",
+      "ink": "#111827"
+    }
+  },
+  {
+    "name": "Moss Dark",
+    "family": "Dark",
+    "palette": {
+      "surface": "hsl(115 35% 16%)",
+      "accent": "hsl(115 75% 66%)",
+      "text": "#f5f7fc",
+      "ink": "#111827"
+    }
+  },
+  {
+    "name": "Jade Dark",
+    "family": "Dark",
+    "palette": {
+      "surface": "hsl(129 35% 16%)",
+      "accent": "hsl(129 75% 66%)",
+      "text": "#f5f7fc",
+      "ink": "#111827"
+    }
+  },
+  {
+    "name": "Mint Dark",
+    "family": "Dark",
+    "palette": {
+      "surface": "hsl(144 35% 16%)",
+      "accent": "hsl(144 75% 66%)",
+      "text": "#f5f7fc",
+      "ink": "#111827"
+    }
+  },
+  {
+    "name": "Lagoon Dark",
+    "family": "Dark",
+    "palette": {
+      "surface": "hsl(158 35% 16%)",
+      "accent": "hsl(158 75% 66%)",
+      "text": "#f5f7fc",
+      "ink": "#111827"
+    }
+  },
+  {
+    "name": "Teal Dark",
+    "family": "Dark",
+    "palette": {
+      "surface": "hsl(172 35% 16%)",
+      "accent": "hsl(172 75% 66%)",
+      "text": "#f5f7fc",
+      "ink": "#111827"
+    }
+  },
+  {
+    "name": "Glacier Dark",
+    "family": "Dark",
+    "palette": {
+      "surface": "hsl(187 35% 16%)",
+      "accent": "hsl(187 75% 66%)",
+      "text": "#f5f7fc",
+      "ink": "#111827"
+    }
+  },
+  {
+    "name": "Sky Dark",
+    "family": "Dark",
+    "palette": {
+      "surface": "hsl(201 35% 16%)",
+      "accent": "hsl(201 75% 66%)",
+      "text": "#f5f7fc",
+      "ink": "#111827"
+    }
+  },
+  {
+    "name": "Cobalt Dark",
+    "family": "Dark",
+    "palette": {
+      "surface": "hsl(216 35% 16%)",
+      "accent": "hsl(216 75% 66%)",
+      "text": "#f5f7fc",
+      "ink": "#111827"
+    }
+  },
+  {
+    "name": "Indigo Dark",
+    "family": "Dark",
+    "palette": {
+      "surface": "hsl(230 35% 16%)",
+      "accent": "hsl(230 75% 66%)",
+      "text": "#f5f7fc",
+      "ink": "#111827"
+    }
+  },
+  {
+    "name": "Iris Dark",
+    "family": "Dark",
+    "palette": {
+      "surface": "hsl(244 35% 16%)",
+      "accent": "hsl(244 75% 66%)",
+      "text": "#f5f7fc",
+      "ink": "#111827"
+    }
+  },
+  {
+    "name": "Violet Dark",
+    "family": "Dark",
+    "palette": {
+      "surface": "hsl(259 35% 16%)",
+      "accent": "hsl(259 75% 66%)",
+      "text": "#f5f7fc",
+      "ink": "#111827"
+    }
+  },
+  {
+    "name": "Orchid Dark",
+    "family": "Dark",
+    "palette": {
+      "surface": "hsl(273 35% 16%)",
+      "accent": "hsl(273 75% 66%)",
+      "text": "#f5f7fc",
+      "ink": "#111827"
+    }
+  },
+  {
+    "name": "Plum Dark",
+    "family": "Dark",
+    "palette": {
+      "surface": "hsl(288 35% 16%)",
+      "accent": "hsl(288 75% 66%)",
+      "text": "#f5f7fc",
+      "ink": "#111827"
+    }
+  },
+  {
+    "name": "Magenta Dark",
+    "family": "Dark",
+    "palette": {
+      "surface": "hsl(302 35% 16%)",
+      "accent": "hsl(302 75% 66%)",
+      "text": "#f5f7fc",
+      "ink": "#111827"
+    }
+  },
+  {
+    "name": "Rose Dark",
+    "family": "Dark",
+    "palette": {
+      "surface": "hsl(316 35% 16%)",
+      "accent": "hsl(316 75% 66%)",
+      "text": "#f5f7fc",
+      "ink": "#111827"
+    }
+  },
+  {
+    "name": "Cerise Dark",
+    "family": "Dark",
+    "palette": {
+      "surface": "hsl(331 35% 16%)",
+      "accent": "hsl(331 75% 66%)",
+      "text": "#f5f7fc",
+      "ink": "#111827"
+    }
+  },
+  {
+    "name": "Coral Dark",
+    "family": "Dark",
+    "palette": {
+      "surface": "hsl(345 35% 16%)",
+      "accent": "hsl(345 75% 66%)",
+      "text": "#f5f7fc",
+      "ink": "#111827"
+    }
+  },
+  {
+    "name": "Garnet Black +",
+    "family": "Black +",
+    "palette": {
+      "surface": "hsl(0 35% 5%)",
+      "accent": "hsl(0 75% 73%)",
+      "text": "#f5f7fc",
+      "ink": "#111827"
+    }
+  },
+  {
+    "name": "Ember Black +",
+    "family": "Black +",
+    "palette": {
+      "surface": "hsl(14 35% 5%)",
+      "accent": "hsl(14 75% 73%)",
+      "text": "#f5f7fc",
+      "ink": "#111827"
+    }
+  },
+  {
+    "name": "Copper Black +",
+    "family": "Black +",
+    "palette": {
+      "surface": "hsl(28 35% 5%)",
+      "accent": "hsl(28 75% 73%)",
+      "text": "#f5f7fc",
+      "ink": "#111827"
+    }
+  },
+  {
+    "name": "Amber Black +",
+    "family": "Black +",
+    "palette": {
+      "surface": "hsl(43 35% 5%)",
+      "accent": "hsl(43 75% 73%)",
+      "text": "#f5f7fc",
+      "ink": "#111827"
+    }
+  },
+  {
+    "name": "Gold Black +",
+    "family": "Black +",
+    "palette": {
+      "surface": "hsl(57 35% 5%)",
+      "accent": "hsl(57 75% 73%)",
+      "text": "#f5f7fc",
+      "ink": "#111827"
+    }
+  },
+  {
+    "name": "Citron Black +",
+    "family": "Black +",
+    "palette": {
+      "surface": "hsl(72 35% 5%)",
+      "accent": "hsl(72 75% 73%)",
+      "text": "#f5f7fc",
+      "ink": "#111827"
+    }
+  },
+  {
+    "name": "Olive Black +",
+    "family": "Black +",
+    "palette": {
+      "surface": "hsl(86 35% 5%)",
+      "accent": "hsl(86 75% 73%)",
+      "text": "#f5f7fc",
+      "ink": "#111827"
+    }
+  },
+  {
+    "name": "Fern Black +",
+    "family": "Black +",
+    "palette": {
+      "surface": "hsl(100 35% 5%)",
+      "accent": "hsl(100 75% 73%)",
+      "text": "#f5f7fc",
+      "ink": "#111827"
+    }
+  },
+  {
+    "name": "Moss Black +",
+    "family": "Black +",
+    "palette": {
+      "surface": "hsl(115 35% 5%)",
+      "accent": "hsl(115 75% 73%)",
+      "text": "#f5f7fc",
+      "ink": "#111827"
+    }
+  },
+  {
+    "name": "Jade Black +",
+    "family": "Black +",
+    "palette": {
+      "surface": "hsl(129 35% 5%)",
+      "accent": "hsl(129 75% 73%)",
+      "text": "#f5f7fc",
+      "ink": "#111827"
+    }
+  },
+  {
+    "name": "Mint Black +",
+    "family": "Black +",
+    "palette": {
+      "surface": "hsl(144 35% 5%)",
+      "accent": "hsl(144 75% 73%)",
+      "text": "#f5f7fc",
+      "ink": "#111827"
+    }
+  },
+  {
+    "name": "Lagoon Black +",
+    "family": "Black +",
+    "palette": {
+      "surface": "hsl(158 35% 5%)",
+      "accent": "hsl(158 75% 73%)",
+      "text": "#f5f7fc",
+      "ink": "#111827"
+    }
+  },
+  {
+    "name": "Teal Black +",
+    "family": "Black +",
+    "palette": {
+      "surface": "hsl(172 35% 5%)",
+      "accent": "hsl(172 75% 73%)",
+      "text": "#f5f7fc",
+      "ink": "#111827"
+    }
+  },
+  {
+    "name": "Glacier Black +",
+    "family": "Black +",
+    "palette": {
+      "surface": "hsl(187 35% 5%)",
+      "accent": "hsl(187 75% 73%)",
+      "text": "#f5f7fc",
+      "ink": "#111827"
+    }
+  },
+  {
+    "name": "Sky Black +",
+    "family": "Black +",
+    "palette": {
+      "surface": "hsl(201 35% 5%)",
+      "accent": "hsl(201 75% 73%)",
+      "text": "#f5f7fc",
+      "ink": "#111827"
+    }
+  },
+  {
+    "name": "Cobalt Black +",
+    "family": "Black +",
+    "palette": {
+      "surface": "hsl(216 35% 5%)",
+      "accent": "hsl(216 75% 73%)",
+      "text": "#f5f7fc",
+      "ink": "#111827"
+    }
+  },
+  {
+    "name": "Indigo Black +",
+    "family": "Black +",
+    "palette": {
+      "surface": "hsl(230 35% 5%)",
+      "accent": "hsl(230 75% 73%)",
+      "text": "#f5f7fc",
+      "ink": "#111827"
+    }
+  },
+  {
+    "name": "Iris Black +",
+    "family": "Black +",
+    "palette": {
+      "surface": "hsl(244 35% 5%)",
+      "accent": "hsl(244 75% 73%)",
+      "text": "#f5f7fc",
+      "ink": "#111827"
+    }
+  },
+  {
+    "name": "Violet Black +",
+    "family": "Black +",
+    "palette": {
+      "surface": "hsl(259 35% 5%)",
+      "accent": "hsl(259 75% 73%)",
+      "text": "#f5f7fc",
+      "ink": "#111827"
+    }
+  },
+  {
+    "name": "Orchid Black +",
+    "family": "Black +",
+    "palette": {
+      "surface": "hsl(273 35% 5%)",
+      "accent": "hsl(273 75% 73%)",
+      "text": "#f5f7fc",
+      "ink": "#111827"
+    }
+  },
+  {
+    "name": "Plum Black +",
+    "family": "Black +",
+    "palette": {
+      "surface": "hsl(288 35% 5%)",
+      "accent": "hsl(288 75% 73%)",
+      "text": "#f5f7fc",
+      "ink": "#111827"
+    }
+  },
+  {
+    "name": "Magenta Black +",
+    "family": "Black +",
+    "palette": {
+      "surface": "hsl(302 35% 5%)",
+      "accent": "hsl(302 75% 73%)",
+      "text": "#f5f7fc",
+      "ink": "#111827"
+    }
+  },
+  {
+    "name": "Rose Black +",
+    "family": "Black +",
+    "palette": {
+      "surface": "hsl(316 35% 5%)",
+      "accent": "hsl(316 75% 73%)",
+      "text": "#f5f7fc",
+      "ink": "#111827"
+    }
+  },
+  {
+    "name": "Cerise Black +",
+    "family": "Black +",
+    "palette": {
+      "surface": "hsl(331 35% 5%)",
+      "accent": "hsl(331 75% 73%)",
+      "text": "#f5f7fc",
+      "ink": "#111827"
+    }
+  },
+  {
+    "name": "Coral Black +",
+    "family": "Black +",
+    "palette": {
+      "surface": "hsl(345 35% 5%)",
+      "accent": "hsl(345 75% 73%)",
+      "text": "#f5f7fc",
+      "ink": "#111827"
+    }
+  },
+  {
+    "name": "Garnet Neon +",
+    "family": "Neon +",
+    "palette": {
+      "surface": "hsl(0 35% 9%)",
+      "accent": "hsl(0 100% 68%)",
+      "text": "#f5f7fc",
+      "ink": "#111827"
+    }
+  },
+  {
+    "name": "Ember Neon +",
+    "family": "Neon +",
+    "palette": {
+      "surface": "hsl(14 35% 9%)",
+      "accent": "hsl(14 100% 68%)",
+      "text": "#f5f7fc",
+      "ink": "#111827"
+    }
+  },
+  {
+    "name": "Copper Neon +",
+    "family": "Neon +",
+    "palette": {
+      "surface": "hsl(28 35% 9%)",
+      "accent": "hsl(28 100% 68%)",
+      "text": "#f5f7fc",
+      "ink": "#111827"
+    }
+  },
+  {
+    "name": "Amber Neon +",
+    "family": "Neon +",
+    "palette": {
+      "surface": "hsl(43 35% 9%)",
+      "accent": "hsl(43 100% 68%)",
+      "text": "#f5f7fc",
+      "ink": "#111827"
+    }
+  },
+  {
+    "name": "Gold Neon +",
+    "family": "Neon +",
+    "palette": {
+      "surface": "hsl(57 35% 9%)",
+      "accent": "hsl(57 100% 68%)",
+      "text": "#f5f7fc",
+      "ink": "#111827"
+    }
+  },
+  {
+    "name": "Citron Neon +",
+    "family": "Neon +",
+    "palette": {
+      "surface": "hsl(72 35% 9%)",
+      "accent": "hsl(72 100% 68%)",
+      "text": "#f5f7fc",
+      "ink": "#111827"
+    }
+  },
+  {
+    "name": "Olive Neon +",
+    "family": "Neon +",
+    "palette": {
+      "surface": "hsl(86 35% 9%)",
+      "accent": "hsl(86 100% 68%)",
+      "text": "#f5f7fc",
+      "ink": "#111827"
+    }
+  },
+  {
+    "name": "Fern Neon +",
+    "family": "Neon +",
+    "palette": {
+      "surface": "hsl(100 35% 9%)",
+      "accent": "hsl(100 100% 68%)",
+      "text": "#f5f7fc",
+      "ink": "#111827"
+    }
+  },
+  {
+    "name": "Moss Neon +",
+    "family": "Neon +",
+    "palette": {
+      "surface": "hsl(115 35% 9%)",
+      "accent": "hsl(115 100% 68%)",
+      "text": "#f5f7fc",
+      "ink": "#111827"
+    }
+  },
+  {
+    "name": "Jade Neon +",
+    "family": "Neon +",
+    "palette": {
+      "surface": "hsl(129 35% 9%)",
+      "accent": "hsl(129 100% 68%)",
+      "text": "#f5f7fc",
+      "ink": "#111827"
+    }
+  },
+  {
+    "name": "Mint Neon +",
+    "family": "Neon +",
+    "palette": {
+      "surface": "hsl(144 35% 9%)",
+      "accent": "hsl(144 100% 68%)",
+      "text": "#f5f7fc",
+      "ink": "#111827"
+    }
+  },
+  {
+    "name": "Lagoon Neon +",
+    "family": "Neon +",
+    "palette": {
+      "surface": "hsl(158 35% 9%)",
+      "accent": "hsl(158 100% 68%)",
+      "text": "#f5f7fc",
+      "ink": "#111827"
+    }
+  },
+  {
+    "name": "Teal Neon +",
+    "family": "Neon +",
+    "palette": {
+      "surface": "hsl(172 35% 9%)",
+      "accent": "hsl(172 100% 68%)",
+      "text": "#f5f7fc",
+      "ink": "#111827"
+    }
+  },
+  {
+    "name": "Glacier Neon +",
+    "family": "Neon +",
+    "palette": {
+      "surface": "hsl(187 35% 9%)",
+      "accent": "hsl(187 100% 68%)",
+      "text": "#f5f7fc",
+      "ink": "#111827"
+    }
+  },
+  {
+    "name": "Sky Neon +",
+    "family": "Neon +",
+    "palette": {
+      "surface": "hsl(201 35% 9%)",
+      "accent": "hsl(201 100% 68%)",
+      "text": "#f5f7fc",
+      "ink": "#111827"
+    }
+  },
+  {
+    "name": "Cobalt Neon +",
+    "family": "Neon +",
+    "palette": {
+      "surface": "hsl(216 35% 9%)",
+      "accent": "hsl(216 100% 68%)",
+      "text": "#f5f7fc",
+      "ink": "#111827"
+    }
+  },
+  {
+    "name": "Indigo Neon +",
+    "family": "Neon +",
+    "palette": {
+      "surface": "hsl(230 35% 9%)",
+      "accent": "hsl(230 100% 68%)",
+      "text": "#f5f7fc",
+      "ink": "#111827"
+    }
+  },
+  {
+    "name": "Iris Neon +",
+    "family": "Neon +",
+    "palette": {
+      "surface": "hsl(244 35% 9%)",
+      "accent": "hsl(244 100% 68%)",
+      "text": "#f5f7fc",
+      "ink": "#111827"
+    }
+  },
+  {
+    "name": "Violet Neon +",
+    "family": "Neon +",
+    "palette": {
+      "surface": "hsl(259 35% 9%)",
+      "accent": "hsl(259 100% 68%)",
+      "text": "#f5f7fc",
+      "ink": "#111827"
+    }
+  },
+  {
+    "name": "Orchid Neon +",
+    "family": "Neon +",
+    "palette": {
+      "surface": "hsl(273 35% 9%)",
+      "accent": "hsl(273 100% 68%)",
+      "text": "#f5f7fc",
+      "ink": "#111827"
+    }
+  },
+  {
+    "name": "Plum Neon +",
+    "family": "Neon +",
+    "palette": {
+      "surface": "hsl(288 35% 9%)",
+      "accent": "hsl(288 100% 68%)",
+      "text": "#f5f7fc",
+      "ink": "#111827"
+    }
+  },
+  {
+    "name": "Magenta Neon +",
+    "family": "Neon +",
+    "palette": {
+      "surface": "hsl(302 35% 9%)",
+      "accent": "hsl(302 100% 68%)",
+      "text": "#f5f7fc",
+      "ink": "#111827"
+    }
+  },
+  {
+    "name": "Rose Neon +",
+    "family": "Neon +",
+    "palette": {
+      "surface": "hsl(316 35% 9%)",
+      "accent": "hsl(316 100% 68%)",
+      "text": "#f5f7fc",
+      "ink": "#111827"
+    }
+  },
+  {
+    "name": "Cerise Neon +",
+    "family": "Neon +",
+    "palette": {
+      "surface": "hsl(331 35% 9%)",
+      "accent": "hsl(331 100% 68%)",
+      "text": "#f5f7fc",
+      "ink": "#111827"
+    }
+  },
+  {
+    "name": "Coral Neon +",
+    "family": "Neon +",
+    "palette": {
+      "surface": "hsl(345 35% 9%)",
+      "accent": "hsl(345 100% 68%)",
+      "text": "#f5f7fc",
+      "ink": "#111827"
+    }
+  }
+]

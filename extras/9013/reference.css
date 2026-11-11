@@ -1,0 +1,15 @@
+:root { font: 16px/1.5 system-ui, sans-serif; color: #202938; background: #f3f6fa; }
+body { margin: 0; }
+main { width: min(1080px, 100% - 32px); margin: 40px auto; }
+h1 { font-size: clamp(1.8rem, 5vw, 3rem); margin: 0 0 14px; }
+form { display: flex; flex-wrap: wrap; align-items: end; gap: 12px; margin: 22px 0; }
+label { display: grid; gap: 4px; width: fit-content; }
+select, button { font: inherit; padding: 8px 12px; border-radius: 6px; border: 1px solid #8995a5; background: white; color: inherit; }
+output { display: block; font-size: 1.5rem; font-weight: 650; }
+#themes { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); gap: 12px; }
+article { padding: 16px; border-radius: 8px; border: 1px solid var(--preview-accent); background: var(--preview-surface); color: var(--preview-text); }
+article h2 { font-size: 1.1rem; margin: 0; }
+article p { margin: 4px 0 12px; }
+article span { display: inline-block; padding: 3px 8px; border-radius: 4px; color: var(--preview-ink); background: var(--preview-accent); }
+textarea { font: inherit; padding: 8px 12px; border-radius: 6px; border: 1px solid #8995a5; max-width: calc(100vw - 64px); }
+output { white-space: pre-wrap; overflow-wrap: anywhere; }

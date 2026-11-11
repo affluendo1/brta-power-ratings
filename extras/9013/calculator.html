@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lookup Calculator</title>
+<link rel="stylesheet" href="reference.css">
+<main>
+<h1>Lookup Calculator</h1>
+<p>Select two whole numbers from 0 through 20 and an operation.</p>
+<form>
+<label>First number <select id="left" required></select></label>
+<label>Operation <select id="operator"><option value="add">Addition</option><option value="subtract">Subtraction</option><option value="multiply">Multiplication</option><option value="divide">Division</option></select></label>
+<label>Second number <select id="right" required></select></label>
+<button type="submit" disabled>Look up result</button>
+</form>
+<output aria-live="polite">Loading answer table…</output>
+</main>
+<script type="module" src="calculator.js"></script>

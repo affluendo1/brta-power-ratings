@@ -1,6 +1,6 @@
 # BRTA Power Ratings
 
-**Current version: 9.0.1.2**
+**Current version: 9.0.1.3**
 
 The default player rating model is **4.2 Melody**, while **4.2 Orchestra** handles predictions.
 Other available models include **4.2 Foundation**, **RM4.2**, **RM4.1 Ensemble**, **RM4a**,
@@ -8,6 +8,7 @@ Other available models include **4.2 Foundation**, **RM4.2**, **RM4.1 Ensemble**
 
 ### Latest updates
 
+- **9.0.1.3:** Added standalone reference pages and repository development notes.
 - **9.0.1.2:** Added a hidden site interaction and an optional appearance.
 - **9.0.1.1:** Added optional interactions and an expanded model conversation.
 - **9.0.1:** Section changes and other longer operations show progress as data loads and ratings finish calculating. Clubs restores your place when you return from a Participation entry and improves venue details and historical matching.
