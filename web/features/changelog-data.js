@@ -2,6 +2,12 @@
 // Retrospective entries use source-commit timestamps; sourceCommit records their provenance.
 window.BRTA_RELEASES = Object.freeze([
   {
+    "version": "9.0.1.4",
+    "size": "tiny",
+    "committedAt": "2026-11-11T22:55:32+11:00",
+    "changes": ["Theme Calendar rotates through 366 presets. Choose any preset as your default in Theme Studio."]
+  },
+  {
     "version": "9.0.1.3",
     "size": "tiny",
     "committedAt": "2026-11-11T22:40:19+11:00",
