@@ -33,11 +33,11 @@
   "calendar_events": [
     {
       "date": "11 Nov 26",
-      "label": "Grand Final \u00b7 if qualified"
+      "label": "Grand Final · if qualified"
     },
     {
       "date": "18 Nov 26",
-      "label": "Spare \u00b7 if required"
+      "label": "Spare · if required"
     }
   ],
   "official_standings": [
@@ -47,7 +47,7 @@
       "wins": 8,
       "points": 78,
       "percentage": 236.31,
-      "marker": ""
+      "marker": "P"
     },
     {
       "position": 2,
@@ -55,7 +55,7 @@
       "wins": 8,
       "points": 63,
       "percentage": 109.77,
-      "marker": ""
+      "marker": "R"
     },
     {
       "position": 3,
@@ -85,10 +85,10 @@
   "green_ball": false,
   "results_loaded_by_trols": null,
   "fixtures": 46,
-  "completed_fixtures": 24,
+  "completed_fixtures": 25,
   "draw_fixtures": 45,
   "singles_rubbers": 0,
-  "doubles_rubbers": 96,
+  "doubles_rubbers": 100,
   "latest_round": 16,
   "validation": "source discrepancies",
   "source_warnings": [
