@@ -68,6 +68,7 @@
     team = pickedTeam || sectionClubs.find(item => item.id === club.id)?.teams[0]?.name || '';
     panel = tab;
     if (!team && panel === 'stats') panel = 'participation';
+    window.BRTARouteUI?.club(team, panel);
     return render();
   }
 
@@ -299,7 +300,7 @@
       link('https://www.trols.org.au/brta/clubs.php', 'TROLS directory ↗') + '</div></section></div>' +
       '<section class="clubs9-card clubs9-alltime"><span class="kicker">ALL-TIME PERFORMANCE</span><h3>How the club has performed</h3>' +
       '<div class="clubs9-filters clubs9-history-filters">' + choice('clubHistoryCompetition', 'Competition') +
-      '</div><div data-clubs-history-stats>Loading participation records…</div></section>';
+      '</div><div data-clubs-history-stats>Loading participation records…</div><div data-clubs-archive-names></div></section>';
   }
 
   function map(id) {
@@ -409,7 +410,24 @@
     if (searchOpen) searchResults();
     if (selected && !localClub()) {
       entries = { rows: index.clubs.get(selected.id) || [], partial: index.partial };
-      if (panel === 'overview') updateStats(entries);
+      if (panel === 'overview') {
+        updateStats(entries);
+        const host = $('[data-clubs-archive-names]');
+        const aliases = new Map();
+        for (const row of entries.rows.filter(row => !row.current)) {
+          if (!aliases.has(row.team)) aliases.set(row.team, new Map());
+          const seasons = aliases.get(row.team);
+          if (!seasons.has(row.season_label)) seasons.set(row.season_label, row);
+        }
+        if (host) host.innerHTML = aliases.size ? '<details class="clubs9-contacts"><summary>Names in the archive</summary><ul>' +
+          [...aliases].sort(([a], [b]) => a.localeCompare(b)).map(([name, seasons]) => '<li><b>' + escape(name) + '</b> · ' +
+            [...seasons.values()].sort((a, b) => String(b.season_label).match(/\d{4}/)?.[0]?.localeCompare(String(a.season_label).match(/\d{4}/)?.[0] || '') || 0)
+              .map(row => {
+                const path = root.BRTASiteRoutes.path({ season_label: row.season_label, section_label: row.section_label,
+                  competition_code: row.competition_code || row.competition }, 'teams', { club: row.team });
+                return path ? '<a href="' + escape(new URL(path, document.baseURI).href) + '">' + escape(row.season_label) + '</a>' : escape(row.season_label);
+              }).join(' · ') + '</li>').join('') + '</ul></details>' : '';
+      }
       if (panel === 'participation') participation();
     }
   }
@@ -840,7 +858,7 @@
         if (club) select(club, club.id.startsWith('local:') ? 'stats' : 'overview',
           action === 'club' ? value : undefined);
       }
-      if (action === 'panel') { panel = value; render(); }
+      if (action === 'panel') { panel = value; window.BRTARouteUI?.club(team, panel); render(); }
       if (action === 'search') { searchOpen = !searchOpen; render(); if (searchOpen) $('[data-clubs-query]')?.focus(); }
       if (action === 'focus-map') mountedMap?.focusSelected();
       if (action === 'map') toggleMap(control.closest('.clubs9-location'));

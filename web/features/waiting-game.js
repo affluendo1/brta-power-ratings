@@ -6,7 +6,7 @@ function snakeStep(state,random=Math.random){
  const body=[head,...state.body];if(!eating)body.pop();const free=[];for(let y=0;y<20;y++)for(let x=0;x<20;x++)if(!body.some(p=>p.x===x&&p.y===y))free.push({x,y});
  return{body,direction,next:null,food:eating?(free[Math.floor(random()*free.length)]||head):state.food,score:state.score+Number(eating),over:free.length===0};
 }
-function mount(overlay){
+function mount(overlay,delay=5000){
  const box=overlay.querySelector('.mode-switch-box'),shell=document.createElement('div');shell.className='wg-layout';shell.innerHTML='<div class="wg-left"><button class="button secondary wg-launch hidden" type="button">Play A Game</button></div><section class="wg-game" hidden aria-label="Snake"><output class="wg-score" aria-label="Score: 0">0</output><canvas width="320" height="320" tabindex="0" aria-label="Snake. Use arrow keys, WASD or swipe to turn. Tap or press a direction to restart after a game ends."></canvas></section>';
  const left=shell.querySelector('.wg-left'),launch=shell.querySelector('.wg-launch'),game=shell.querySelector('.wg-game'),canvas=game.querySelector('canvas'),ctx=canvas.getContext('2d');left.prepend(box);overlay.append(shell);
  let state,paused=false,active=false,timer;const reset=()=>{state={body:[{x:7,y:10},{x:6,y:10},{x:5,y:10}],direction:{x:1,y:0},next:null,food:{x:14,y:10},score:0,over:false};paused=false;draw()};
@@ -15,7 +15,7 @@ function mount(overlay){
  function turn(name){const v=vectors[name];if(!active||!v)return;if(state.over)reset();if(state.next)return;if(v.x===-state.direction.x&&v.y===-state.direction.y)return;state.next=v;}
  function pause(){paused=!paused;}
  function key(event){if(!active)return;const name=({ArrowUp:'up',w:'up',ArrowDown:'down',s:'down',ArrowLeft:'left',a:'left',ArrowRight:'right',d:'right'})[event.key];if(name||event.key===' '){event.preventDefault();event.stopImmediatePropagation();if(name)turn(name);else pause();}}
- const reveal=setTimeout(()=>launch.classList.remove('hidden'),5000);
+ const reveal=setTimeout(()=>launch.classList.remove('hidden'),delay);
  launch.onclick=()=>{if(active)return;active=true;game.hidden=false;shell.classList.add('wg-open');launch.hidden=true;reset();canvas.focus();timer=setInterval(()=>{if(!paused&&!state.over){state=snakeStep(state);draw()}},135);};
  let swipe=null;
  canvas.addEventListener('pointerdown',e=>{if(!active||!e.isPrimary||e.button!==0)return;e.preventDefault();canvas.focus();if(state.over)reset();swipe={id:e.pointerId,x:e.clientX,y:e.clientY};canvas.setPointerCapture(e.pointerId)});

@@ -83,6 +83,7 @@
       <div class="settings-action-row">
         <label>Calendar preset <select id="themeCalendarPreset" aria-label="Calendar preset"></select></label>
         <button type="button" class="button secondary" id="themeCalendarDefault">Set as default</button>
+        <button type="button" class="button secondary" id="themeCalendarPostcard">Download theme postcard</button>
       </div>`;
     const toggle = $('#themeCalendarEnabled'), select = $('#themeCalendarPreset');
     toggle.checked = enabled;
@@ -99,6 +100,25 @@
       localStorage.setItem(storageKey, enabled ? '1' : '0');
       applyTheme();
       refreshStatus();
+    });
+    $('#themeCalendarPostcard').addEventListener('click', () => {
+      const preset = lookup.get(select.value);
+      if (!preset) return;
+      const [bg, accent, muted, panel, ink, loss, win] = preset.colors.map(opaque);
+      const date = new Intl.DateTimeFormat('en-AU', { dateStyle: 'long' }).format(new Date());
+      const name = esc(preset.name);
+      const svg = '<svg xmlns="http://www.w3.org/2000/svg" width="960" height="560" viewBox="0 0 960 560">' +
+        '<rect width="960" height="560" fill="' + bg + '"/><path d="M50 55H910" stroke="' + accent + '" stroke-width="3"/>' +
+        '<g font-family="Arial,sans-serif" fill="' + ink + '"><text x="50" y="102" font-size="20" letter-spacing="3">BRTA POWER RATINGS</text>' +
+        '<text x="50" y="164" font-size="48" font-weight="700">' + name + '</text><text x="50" y="203" font-size="20">' + esc(date) + '</text>' +
+        '<rect x="50" y="247" width="860" height="70" fill="' + panel + '" stroke="' + muted + '"/>' +
+        '<text x="72" y="290" font-size="22">#1　Sample player</text><text x="880" y="290" font-size="22" text-anchor="end">2,480 Power</text>' +
+        '<rect x="50" y="332" width="860" height="70" fill="' + panel + '" stroke="' + muted + '"/>' +
+        '<text x="72" y="375" font-size="22" fill="' + win + '">Home</text><text x="480" y="375" font-size="25" text-anchor="middle">7–5</text>' +
+        '<text x="880" y="375" font-size="22" fill="' + loss + '" text-anchor="end">Away</text></g>' +
+        [bg, accent, muted, panel, ink, loss, win].map((color, i) =>
+          '<rect x="' + (50 + i * 125) + '" y="447" width="110" height="62" fill="' + color + '" stroke="' + muted + '"/>').join('') + '</svg>';
+      downloadFile(svg, 'brta-theme-' + preset.id + '.svg', 'image/svg+xml;charset=utf-8');
     });
     $('#themeCalendarDefault').addEventListener('click', () => {
       if (!lookup.has(select.value)) return;

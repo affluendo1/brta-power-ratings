@@ -21,13 +21,27 @@ function sourceDate(value){
  let year,month,day;if(iso){[,year,month,day]=iso;year=+year;month=+month;day=+day}else if(named){day=+named[1];month=['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec'].indexOf(named[2].slice(0,3).toLowerCase())+1;year=+named[3]+(named[3].length===2?2000:0)}else return null;
  const date=new Date(Date.UTC(year,month-1,day));return year>=1000&&date.getUTCFullYear()===year&&date.getUTCMonth()===month-1&&date.getUTCDate()===day?date.toISOString().slice(0,10):null;
 }
-function observations(data){const result=[];
+function evidenceDates(data){
+ const groups=(data.results||[]).slice().sort((a,b)=>Number(a.round)-Number(b.round)),known=groups.map(group=>sourceDate(group.date||(group.fixtures||[]).find(f=>sourceDate(f.date))?.date));
+ // TROLS regularly leaves the semifinal/final header undated. Keep those
+ // scorecards in chronological rating evidence by placing undated published
+ // rounds one week after the preceding published round (or before the next
+ // one when the missing run is at the beginning).
+ for(let i=0;i<known.length;i++)if(!known[i]){
+  let before=i-1,after=i+1;while(before>=0&&!known[before])before--;while(after<known.length&&!known[after])after++;
+  const anchor=before>=0?new Date(known[before]+'T00:00:00Z'):after<known.length?new Date(known[after]+'T00:00:00Z'):null;
+  if(anchor){const steps=before>=0?i-before:-(after-i);anchor.setUTCDate(anchor.getUTCDate()+7*steps);known[i]=anchor.toISOString().slice(0,10)}
+ }
+ return new Map(groups.map((group,index)=>[Number(group.round),known[index]||null]));
+}
+function observations(data){const result=[],roundDates=evidenceDates(data);
  for(const round of data.results||[])for(const f of round.fixtures||[])for(const r of f.rubbers||[]){
   if(r.valid_for_rating===false||r.status&&r.status!=='Completed'||!r.winner||/ret|forfeit|walkover|unfinished/i.test(r.score||''))continue;
   const home=String(r.home||'').split(/\s*\/\s*/),away=String(r.away||'').split(/\s*\/\s*/);if(!home[0]||!away[0])continue;
   const sets=Scores.parse(r.score,{outcomeCode:Scores.outcomeCode(data,r.type)});if(!sets.length)continue;
   const regular=sets.filter(s=>!s.mt),hs=sets.filter(s=>s.winner==='home').length,as=sets.filter(s=>s.winner==='away').length;
-  result.push({home,away,type:r.type,hg:regular.reduce((n,s)=>n+s.h,0),ag:regular.reduce((n,s)=>n+s.a,0),hs,as,matchTiebreaks:sets.filter(s=>s.mt).map(s=>s.unknown?s:{h:s.h,a:s.a,mt:true}),winner:r.winner===r.home?'home':'away',date:sourceDate(f.date||round.date),round:Number(round.round),homeTeam:f.home,awayTeam:f.away,events:sets,fixtureId:f.fixtureId,position:r.position});
+  const publishedDate=f.date||round.date;
+  result.push({home,away,type:r.type,hg:regular.reduce((n,s)=>n+s.h,0),ag:regular.reduce((n,s)=>n+s.a,0),hs,as,matchTiebreaks:sets.filter(s=>s.mt).map(s=>s.unknown?s:{h:s.h,a:s.a,mt:true}),winner:r.winner===r.home?'home':'away',date:publishedDate?sourceDate(publishedDate):roundDates.get(Number(round.round)),round:Number(round.round),homeTeam:f.home,awayTeam:f.away,events:sets,fixtureId:f.fixtureId,position:r.position});
  }return result;
 }
 function recalculate(data,model,engine){
@@ -61,6 +75,6 @@ function report(data,history,{withoutRatings=false}={}){
  body+='<details><summary>Complete section data (JSON)</summary><pre>'+escape(JSON.stringify(data,null,2))+'</pre></details>';
  return'<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Complete section</title><style>body{font:15px/1.5 Arial,sans-serif;margin:32px;color:#202b35}h1{font-size:26px}h2{border-bottom:2px solid #43596b;margin-top:32px}table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums}th,td{padding:8px;text-align:left;border:1px solid #cbd2d9;white-space:nowrap}th{background:#e9edf1}tr:nth-child(even){background:#f7f8fa}.scroll{overflow:auto}details{margin:16px 0;padding:12px;border:1px solid #cbd2d9}pre{white-space:pre-wrap;overflow-wrap:anywhere}@media print{body{margin:0}.scroll{overflow:visible}table{font-size:9px}th,td{white-space:normal;padding:3px}}</style>'+body+'</html>';
 }
-const api={names,bands,percentage,sourceDate,observations,recalculate,report};root.BRTALayoutModel=api;if(typeof module!=='undefined')module.exports=api;
+const api={names,bands,percentage,sourceDate,evidenceDates,observations,recalculate,report};root.BRTALayoutModel=api;if(typeof module!=='undefined')module.exports=api;
 })(typeof window==='undefined'?globalThis:window);
 

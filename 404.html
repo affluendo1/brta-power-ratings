@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page unavailable · BRTA Power Ratings</title>
+</head>
+<body>
+  <h1>Page unavailable</h1>
+  <p><a href="/brta-power-ratings/">Open BRTA Power Ratings</a></p>
+  <script>
+    const base = location.pathname.startsWith('/brta-power-ratings/') ? '/brta-power-ratings/' : '/';
+    document.querySelector('a').href = base;
+    const path = location.pathname.startsWith(base) ? location.pathname.slice(base.length) : '';
+    if (/^(current|history)\/[a-z0-9][a-z0-9_/-]*$/i.test(path)) {
+      location.replace(base + '?brta-route=' + encodeURIComponent(path));
+    }
+  </script>
+</body>
+</html>

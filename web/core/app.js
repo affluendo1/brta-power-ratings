@@ -42,8 +42,8 @@ function publicPlayerName(name){return window.BRTAPlayerDisplay?.display(name)??
 function personButton(name){return '<button class="person" data-player="'+esc(name)+'">'+esc(publicPlayerName(name))+'</button>'}
 function globalPersonButton(row){return '<button class="person" data-global-player="'+esc(row.player)+'" data-section-code="'+esc(row.sectionCode)+'" data-season-key="'+esc(row.seasonKey||activeHistorySeasonId||'')+'">'+esc(publicPlayerName(row.player))+'</button>'}
 function resultPerson(name,label=name){const known=singles.some(x=>x.player===name)||dinds.some(x=>x.player===name);return known?'<button class="person" data-player="'+esc(name)+'">'+esc(publicPlayerName(label))+'</button>':esc(publicPlayerName(label))}
-function close(id){const overlay=$(id);if(!overlay)return;overlay.classList.add('hidden');if(id==='#profileOverlay')$('#profileMatchExplorer')?.classList.add('hidden');if(!document.querySelector('.overlay:not(.hidden)'))document.body.classList.remove('modal-open')}
-function switchPage(page){activePage=page;if(page!=='ratings')cancelAuxiliaryReveal();$$('.main-tab').forEach(b=>b.classList.toggle('active',b.dataset.page===page));$$('.page').forEach(p=>p.classList.toggle('active',p.id==='page-'+page));if(page==='teams')window.BRTAClubs?.mount(D);else window.BRTAClubs?.leave()}
+function close(id){const overlay=$(id);if(!overlay)return;overlay.classList.add('hidden');if(id==='#profileOverlay')$('#profileMatchExplorer')?.classList.add('hidden');if(!document.querySelector('.overlay:not(.hidden)'))document.body.classList.remove('modal-open');if(id==='#predictionOverlay'||id==='#resultOverlay')window.BRTAFixtureDetails?.closeMap(id);window.BRTARouteUI?.close(id)}
+function switchPage(page){activePage=page;if(page!=='ratings')cancelAuxiliaryReveal();$$('.main-tab').forEach(b=>b.classList.toggle('active',b.dataset.page===page));$$('.page').forEach(p=>p.classList.toggle('active',p.id==='page-'+page));if(page==='teams')window.BRTAClubs?.mount(D);else window.BRTAClubs?.leave();window.BRTARouteUI?.page()}
 
 function auxiliaryEnabled(){return !!window.AuxiliaryPortal?.isUnlocked?.()}
 function auxiliarySectionEligible(){return !!(D&&window.AuxiliaryModule?.isHighestSundaySection(D.meta,viewCatalog))}
@@ -144,7 +144,16 @@ function setupSelectors(){
   if(!meta)return;
   renderChoice('competitionSelect',comps.map(([c,l])=>[c,String(l).replace(' - ',' · ')]),meta.competition_code);
   fillSections(meta.competition_code,code);
-
+  updateArchiveReturn();
+}
+function defaultSectionMeta(){
+  const catalog=currentCatalog(),preferred=layoutDefaultCode()||localStorage.getItem('brta-section')||DATA.defaultSectionCode;
+  return catalog.find(row=>row.section_code===preferred)||catalog.find(row=>row.section_code===DATA.defaultSectionCode)||catalog[0];
+}
+function updateArchiveReturn(){
+  const button=$('#returnLiveSection');if(!button)return;
+  button.hidden=!activeHistorySeasonId;
+  if(activeHistorySeasonId){const target=defaultSectionMeta();button.querySelector('small').textContent=target?'Open '+sectionCompetitionLabel(target)+' · '+target.section_label:'Leave this past season and reopen the live competition';}
 }
 function fillSections(comp,selected){
   const list=viewCatalog.filter(x=>x.competition_code===comp);
@@ -211,18 +220,20 @@ async function loadSectionData(code,preloadedPayload,task,isCurrent){
     const archiveLabel=$('#archiveSeasonLabel');
     archiveLabel.hidden=!D.meta.is_archive;
     archiveLabel.textContent=D.meta.is_archive?'Past season · '+D.meta.season_label:'';
+    if(typeof updateArchiveReturn==='function')updateArchiveReturn();
     committed=true;
     window.CustomSections?.bindHeader(D.meta?.is_custom?code:null);renderAll();
     if(activePage==='teams'){
       task.stage(94,'Preparing the Clubs view…');
       await window.BRTAClubs?.ready();
     }
+    window.BRTARouteUI?.section();
     return !stale();
   }catch(error){
     if(stale())return false;
     restore();
     const strip=$('#statusStrip');
-    strip.querySelector('.section-load-error')?.remove();
+    strip.querySelector?.('.section-load-error')?.remove();
     strip.insertAdjacentHTML('beforeend','<div class="notice section-load-error" role="alert"><b>Could not load this section.</b><span>'+esc(error.message)+'</span></div>');
     return false;
   }finally{
@@ -248,7 +259,8 @@ function currentRows(){const rows=BRTAHistory.withMovement(D,ratingView,ratingRo
 function rankCell(row){const arrow=row.movement>0?'↑':row.movement<0?'↓':'';return '<span class="rank-position">'+(row.rank??'—')+(arrow?' <span class="rank-arrow '+(row.movement>0?'rank-up':'rank-down')+'" aria-label="Moved '+(row.movement>0?'up':'down')+' '+Math.abs(row.movement)+' spots">'+arrow+'</span>':'')+'</span>'}
 function movementCell(row){const n=row.movement,cls=n>0?'rank-up':n<0?'rank-down':'rank-still',text=n==null?(row.isNew?'New':'—'):n===0?'0':(n>0?'+':'')+n;return '<td class="rank-movement '+cls+'">'+text+'</td>'+ratingChangeCell(row)}
 function ratingPerson(row){return ratingRound==null?personButton(row.player):'<button class="person" data-history-player="'+esc(row.player)+'" data-history-round="'+ratingRound+'">'+esc(publicPlayerName(row.player))+'</button>'}
-function renderRatingRoundNotice(){const box=$('#ratingRoundNotice');box.classList.toggle('hidden',ratingRound==null);box.innerHTML=ratingRound==null?'':'<div><b>After Round '+ratingRound+'</b><span>'+esc(historicalRoundDate(ratingRound))+' · '+esc(ratingInfo[ratingView][0])+'</span></div><button type="button" class="button secondary" data-rating-round="latest">Latest ratings</button>'}
+function ratingRoundLabel(round){const item=(D.ratingHistory?.rounds||[]).find(row=>Number(row.round)===Number(round)),result=(D.results||[]).find(row=>Number(row.round)===Number(round)),label=String(item?.label||result?.label||'').trim();return label&&!/^round\s+\d+$/i.test(label)?'After '+label:'After Round '+round}
+function renderRatingRoundNotice(){const box=$('#ratingRoundNotice');box.classList.toggle('hidden',ratingRound==null);box.innerHTML=ratingRound==null?'':'<div><b>'+esc(ratingRoundLabel(ratingRound))+'</b><span>'+esc(historicalRoundDate(ratingRound)||'Date not published by TROLS')+' · '+esc(ratingInfo[ratingView][0])+'</span></div><button type="button" class="button secondary" data-rating-round="latest">Latest ratings</button>'}
 
 function ratingQualified(x,min,type){if(type==='overall')return x.qualified;if(type==='doublesPlayers')return!!x.qualified;return x.matches>=min}
 function bandModel(rows,min,type){return BRTALayoutModel.bands(rows,x=>ratingQualified(x,min,type))}
@@ -382,7 +394,7 @@ function renderRatings(){
   const original=D.meta?.predictionModel==='RM1';$$('[data-rating]').forEach(b=>{b.disabled=original&&b.dataset.rating!=='singles';b.title=b.disabled?'RM1 supports singles only':''});if(original&&ratingView!=='singles'){ratingView='singles';$$('[data-rating]').forEach(b=>b.classList.toggle('active',b.dataset.rating==='singles'))}
   renderRatingRoundNotice();if(ratingScope==='history'){cancelAuxiliaryReveal();renderHistoryPlayerSearch();return}if(ratingScope==='all'){cancelAuxiliaryReveal();renderGlobalRatings();return}
   $('#teamFilter').disabled=false;
-  const [title,desc]=ratingInfo[ratingView];$('#ratingsTitle').textContent=title;$('#ratingsDesc').textContent=desc+(ratingRound==null?'':' After Round '+ratingRound+'.');
+  const [title,desc]=ratingInfo[ratingView],hasFinals=(D.results||[]).some(row=>/final|playoff|knockout/i.test([row.stage,row.label].join(' '))&&(row.fixtures||[]).some(f=>f.rubbers?.length));$('#ratingsTitle').textContent=title;$('#ratingsDesc').textContent=desc+(ratingRound==null?(hasFinals?' Includes published semifinal and grand-final matches.':''):' '+ratingRoundLabel(ratingRound)+'.');
   $('#ratingFilters').classList.remove('hidden');$('#ratingsHint').textContent='';
   const {rows,min,type}=currentRows(),q=$('#search').value.toLowerCase(),tf=$('#teamFilter').value,band=bandModel(rows,min,type),derived=ratingRound==null?auxiliaryVisibleContext():null;
   renderBandInfo(band);
@@ -461,18 +473,18 @@ function resultDetailHTML(match,contextPlayer=null){
   const complete=match.status==='Completed',scored=match.homePoints!=null&&match.awayPoints!=null,winner=matchWinner(match),result=complete?match.homeRubbers+'–'+match.awayRubbers:'—',outcome=winner?esc(winner)+(complete?(match.simulated?' wins the team tie':' won the team tie'):' received the team points'):(match.status==='Wash Out'?'The fixture was recorded as a washout':'Team tie level'),pairNames=(name,flags=[])=>String(name).split('/').map((p,i)=>({full:p.trim(),flag:flags[i]})).sort((a,b)=>{const side=String(name)===String(match.rubbers?.find(r=>r.type==='Doubles'&&r.home===name)?.home)?'home':'away',team=match[side],names=lab8OrderedNames(name,team);return names.indexOf(a.full)-names.indexOf(b.full)}).map(({full,flag})=>{return resultPerson(full,doublesPlayerLabel(full))+(flag?'<i class="emergency-marker" title="Emergency player recorded by TROLS">X</i>':'')}).join(' <button type="button" class="pair-sep person" data-eight-pair="'+esc(name)+'" data-eight-round="'+(lab8Context?.round??'')+'" aria-label="Open pair lab">/</button> ');
   const totals=(h,a)=>{const known=h!=null&&a!=null&&Number.isFinite(Number(h))&&Number.isFinite(Number(a)),tone=known&&Number(h)!==Number(a)?(Number(h)>Number(a)?['win','loss']:['loss','win']):['',''];return '<b><span class="'+tone[0]+'">'+esc(h??'—')+'</span><span class="metric-separator">–</span><span class="'+tone[1]+'">'+esc(a??'—')+'</span></b>'};
   let metrics=complete?'<div class="result-metrics"><div><span>Rubbers</span>'+totals(match.homeRubbers,match.awayRubbers)+'</div><div><span>Games</span>'+totals(match.homeGames,match.awayGames)+'</div><div class="result-points"><span>Points</span>'+totals(match.homePoints,match.awayPoints)+'</div></div>':scored?'<div class="result-metrics"><div class="result-points"><span>Team points</span>'+totals(match.homePoints,match.awayPoints)+'</div><div><span>Games</span><b>Not recorded</b></div></div>':'';
-  let head='<div class="result-detail-head"><span>'+esc(roundHeading(match))+' · '+esc(roundDate(match.date))+'</span><h2>'+teamName(match.home)+' <b>'+result+'</b> '+teamName(match.away)+'</h2><p>'+outcome+(complete?'':' · '+esc(match.status))+'</p></div>';
+  let head='<div class="result-detail-head"><span>'+esc(roundHeading(match))+' · '+esc(roundDate(match.date))+'</span><h2>'+teamName(match.home)+' <b data-scoreline>'+result+'</b> '+teamName(match.away)+'</h2><p>'+outcome+(complete?'':' · '+esc(match.status))+'</p></div>';
   let rows=(match.rubbers||[]).slice().sort((a,b)=>disciplineCompare(a,b)||(a.order??0)-(b.order??0)).map(r=>{const marker=emergency=>emergency?'<i class="emergency-marker" title="Emergency player recorded by TROLS">X</i>':'',home=(r.type==='Doubles'?pairNames(r.home,r.homeEmergencies||[]):resultPerson(r.home)+marker(r.homeEmergency)),away=(r.type==='Doubles'?pairNames(r.away,r.awayEmergencies||[]):resultPerson(r.away)+marker(r.awayEmergency));const side=rubberWinnerSide(r),hWon=side==='home',aWon=side==='away',decided=!!side;
     const homeTone=decided?(hWon?'side-won':'side-lost'):'side-neutral',awayTone=decided?(aWon?'side-won':'side-lost'):'side-neutral';
     return '<tr class="rubber-row rubber-row-854">'
       +'<td class="rubber-side rubber-home '+homeTone+'" aria-label="'+esc('Home side: '+(decided?(hWon?'winner':'loser'):'no result')+'. '+r.home)+'" title="'+esc(r.home)+'">'
       +'<small class="rubber-code" title="'+esc(r.type)+' · '+esc(r.position)+'">'+rubberCode(r)+'</small> '+(hWon?'<b>':'<span>')+home+(hWon?'</b>':'</span>')+'</td>'
-      +'<td class="rubber-score-854"><strong>'+esc(r.score||'—')+'</strong></td>'
+      +'<td class="rubber-score-854" data-scoreline><strong>'+esc(r.score||'—')+'</strong></td>'
       +'<td class="rubber-side rubber-away '+awayTone+'" aria-label="'+esc('Away side: '+(decided?(aWon?'winner':'loser'):'no result')+'. '+r.away)+'" title="'+esc(r.away)+'">'+(aWon?'<b>':'<span>')+away+(aWon?'</b>':'</span>')+'</td>'
       +'</tr>'}).join('');
   return head+'<section class="result-scorecard" aria-label="Match scorecard">'+(rows?'<table class="rubber-list rubber-table-8541" aria-label="Individual rubber results"><tbody>'+rows+'</tbody></table>':'<div class="notice">TROLS has not published an individual scorecard for this match.</div>')+metrics+'</section>'+(match.simulated?'':historicalMatchContext(match,contextPlayer))
 }
-function openMatch(id,sourcePlayer=null){const match=findMatch(id);if(match){delete $('#resultOverlay').dataset.simulated;$('#resultOverlay .round84-externalnav')?.remove();$('#resultOverlay .round841-controls')?.remove();selectedMatch=id;$('#resultContent').innerHTML=resultDetailHTML(match,sourcePlayer);eightRaise($('#resultOverlay'));$('#resultOverlay').classList.remove('hidden');document.body.classList.add('modal-open');return}if(auxiliaryPlayer(activeProfilePlayer))openAuxiliaryMatch(auxiliaryCache.matches.find(row=>row.fixtureId===id))}
+function openMatch(id,sourcePlayer=null){const match=findMatch(id);if(match){window.BRTAFixtureDetails?.closeMap('#resultOverlay');delete $('#resultOverlay').dataset.simulated;$('#resultOverlay .round84-externalnav')?.remove();$('#resultOverlay .round841-controls')?.remove();selectedMatch=id;$('#resultContent').innerHTML=resultDetailHTML(match,sourcePlayer);eightRaise($('#resultOverlay'));$('#resultOverlay').classList.remove('hidden');document.body.classList.add('modal-open');if(activePage==='fixtures'){const scheduled=fixtureById(id);if(scheduled){const host=$('#resultContent');host.querySelector('.result-detail-head')?.insertAdjacentHTML('afterend',window.BRTAFixtureDetails?.html(scheduled)||'');window.BRTAFixtureDetails?.hydrate(scheduled,host)}}window.BRTARouteUI?.fixture(match,activePage==='fixtures'?'fixtures':'results');return}if(auxiliaryPlayer(activeProfilePlayer))openAuxiliaryMatch(auxiliaryCache.matches.find(row=>row.fixtureId===id))}
 function renderFixtureRounds(){
   const rounds=D.upcomingFixtures||[];
   $('#fixturesList').innerHTML=rounds.length?rounds.map(r=>'<section class="fixture-round"><div class="fixture-round-head"><h2>'+esc(roundHeading(r))+'</h2><div class="fixture-round-actions"><span>'+esc(roundDate(r.date))+'</span>'+(r.fixtures.some(f=>f.status==='Scheduled'&&!findFixtureResult(f,r.round))?'<button type="button" class="button secondary" data-simulate-round="'+esc(r.round)+'">Simulate round</button>':'')+'</div></div><div class="fixture-list">'+r.fixtures.map(f=>{
@@ -512,10 +524,11 @@ function predictionRubber(label,home,away,homeRating,awayRating,{rubbersSingles=
   const targetGames=D.format==='rubbers'&&!rubbersSingles?8:6,p=rubbersSingles?BRTAPrediction.rubbersSinglesWin(game):BRTAPrediction.shortSetWin(game,{greenBall,targetGames});
   return{label,home,away,p,gameProbability:game,targetGames,bestOf:rubbersSingles?3:1,matchTiebreak:true,scoreDistribution:rubbersSingles?null:BRTAPrediction.shortSetDistribution(game,{greenBall,targetGames})};
 }
-function predictionMath(homeSide,awaySide){
+function predictionMath(homeSide,awaySide,includeOutcome=true){
   if(D.meta?.singlesOnly)return null;
   if(D.meta?.is_custom||D.meta?.competition_rules){const rules=D.meta.customRules||D.meta.competition_rules,rubbers=[];if(!BRTAPrediction.lineupReady(homeSide.singles,awaySide.singles,rules.singlesSlots))return null;
     for(const type of ['Doubles','Singles'])for(let i=0;i<rules[type==='Singles'?'singlesSlots':'doublesSlots'];i++){const h=type==='Singles'?[homeSide.singles[i]]:homeSide.doubles[i]||[],a=type==='Singles'?[awaySide.singles[i]]:awaySide.doubles[i]||[];if(!BRTAPrediction.lineupReady(h,a,type==='Singles'?1:2)||h.some(p=>a.includes(p)))return null;const discipline=type==='Singles'?'singles':'doubles',hr=h.reduce((n,p)=>n+ratingFor(p,discipline),0)/h.length,ar=a.reduce((n,p)=>n+ratingFor(p,discipline),0)/a.length,game=BRTAPrediction.gameProbability(hr,ar,D.meta?.ratingProbabilityScale||450),bestOf=rules[type==='Singles'?'singlesBestOf':'doublesBestOf'],targetGames=rules[type==='Singles'?'setTarget':'doublesTarget'],distribution=BRTAPrediction.matchDistribution(game,{bestOf,targetGames,matchTiebreak:rules.matchTiebreak!==false});rubbers.push({label:type+' '+(i+1),home:h.join(' / '),away:a.join(' / '),p:distribution.filter(x=>x.homeWin).reduce((n,x)=>n+x.probability,0),gameProbability:game,scoreDistribution:distribution,bestOf,targetGames,matchTiebreak:rules.matchTiebreak!==false});}
+    if(!includeOutcome)return{rubbers};
     return {rubbers,...BRTAPrediction.teamOutcome(rubbers,{gamesDecideTies:true,setWinsDecideTies:D.format==='rubbers'||!!D.meta?.competition_rules})};
   }
 
@@ -533,9 +546,11 @@ function predictionMath(homeSide,awaySide){
     }
   }
   for(let i=0;i<needed;i++)rubbers.push(predictionRubber('Singles '+(i+1),home[i],away[i],ratingFor(home[i]),ratingFor(away[i]),{rubbersSingles:rubbersFormat}));
+  if(!includeOutcome)return{rubbers};
   const outcome=BRTAPrediction.teamOutcome(rubbers,{gamesDecideTies:!rubbersFormat});
   return{rubbers,...outcome};
 }
+function singlesRatingForLineup(name){const rows=D.meta?.competition_rules?.singlesSlots===0?dinds:singles;return rows.find(row=>row.player===name)?.rating??'—'}
 function predictionHTML(match){
   const state=predictionState(match),needed=predictionNeeded(),playoff=isPlayoff(match);
   const home=normaliseSide(match.home,state.home,needed),away=normaliseSide(match.away,state.away,needed);
@@ -545,7 +560,7 @@ function predictionHTML(match){
     const singles=Array.from({length:rules?.singlesSlots??needed},(_,i)=>'<label><span>S'+(i+1)+'</span><select aria-label="Singles '+(i+1)+'" data-singles-side="'+key+'" data-singles-position="'+i+'">'+side.draft.map(name=>'<option value="'+esc(name)+'" '+(side.singles[i]===name?'selected':'')+'>'+esc(name)+'</option>').join('')+'</select></label>').join('');
     const showPairs=rules?rules.doublesSlots>0:D.format!=='rubbers';
     const doubles=showPairs?'<div class="ca-pair-picker"><h4>Doubles pairs</h4>'+side.doubles.map((pair,i)=>'<fieldset><legend>D'+(i+1)+' <span>'+pair.length+'/2</span></legend><div>'+side.draft.map(name=>{const selected=pair.includes(name),used=!rules&&side.doubles.some((p,j)=>j!==i&&p.includes(name));return '<label class="'+(selected?'selected':'')+'"><input type="checkbox" data-predict-pair-check data-side="'+key+'" data-pair="'+i+'" value="'+esc(name)+'" '+(selected?'checked':'')+' '+(!selected&&(pair.length>=2||used)?'disabled':'')+'><span>'+esc(name)+'</span></label>'}).join('')+'</div></fieldset>').join('')+'</div>':'';
-    return '<section class="ca-squad lineup-picker compact-lineup"><header><h3>'+teamName(team)+'</h3><span>'+side.draft.length+' selected</span></header><div class="ca-squad-list">'+rows.map((row,i)=>{const selected=side.draft.includes(row.player);return '<div class="ca-squad-row '+(selected?'selected':'')+'"><label><input type="checkbox" data-predict-side="'+key+'" data-predict-player="'+esc(row.player)+'" '+(selected?'checked':'')+'><span><b>'+esc(row.player)+'</b>'+(row.emergencyOnly?'<small>Emergency</small>':'')+'</span><em>'+(side.singles.includes(row.player)?'S'+(side.singles.indexOf(row.player)+1):'#'+(i+1))+'</em></label></div>'}).join('')+'</div><div class="lineup-order-head"><h4>Singles order</h4><button class="export-link" type="button" data-auto-order="'+key+'">Suggested</button></div><div class="lineup-position-grid">'+singles+'</div>'+doubles+'<button type="button" class="export-link" data-lineup-history="'+esc(team)+'">Previous lineups & results</button></section>';
+    return '<section class="ca-squad lineup-picker compact-lineup"><header><h3>'+teamName(team)+'</h3><span>'+side.draft.length+' selected</span></header><div class="ca-squad-list">'+rows.map((row,i)=>{const selected=side.draft.includes(row.player);return '<div class="ca-squad-row '+(selected?'selected':'')+'"><label><input type="checkbox" data-predict-side="'+key+'" data-predict-player="'+esc(row.player)+'" '+(selected?'checked':'')+'><span><b>'+esc(row.player)+'</b>'+(row.emergencyOnly?'<small>Emergency</small>':'')+'</span><span class="prediction-player-power" title="Singles Power">'+esc(singlesRatingForLineup(row.player))+'</span><em>'+(side.singles.includes(row.player)?'S'+(side.singles.indexOf(row.player)+1):'#'+(i+1))+'</em></label></div>'}).join('')+'</div><div class="lineup-order-head"><h4>Singles order</h4><button class="export-link" type="button" data-auto-order="'+key+'">Suggested</button></div><div class="lineup-position-grid">'+singles+'</div>'+doubles+'<button type="button" class="export-link" data-lineup-history="'+esc(team)+'">Previous lineups & results</button></section>';
   };
   const chances=prediction?BRTAPrediction.roundedChances([prediction.homeWin,prediction.awayWin,prediction.draw]):[];
   const summary=!prediction?'<div class="notice prediction-not-ready"><b>Draft at least '+needed+' distinct players per team.</b></div>':('<div class="prediction-summary"><div><span>'+teamName(match.home)+'</span><b>'+chances[0]+'%</b></div><div><span>'+teamName(match.away)+'</span><b>'+chances[1]+'%</b></div><div><span>Exact draw</span><b>'+chances[2]+'%</b></div><div><span>Expected rubbers</span><b>'+prediction.rubbers.reduce((n,r)=>n+r.p,0).toFixed(1)+'–'+prediction.rubbers.reduce((n,r)=>n+1-r.p,0).toFixed(1)+'</b></div></div>');
@@ -555,10 +570,10 @@ function predictionHTML(match){
   const simulation=state.simulation?simulationHTML(state.simulation,match.home,match.away):'';
   const lineups='<section class="prediction-lineups" data-prediction-lineups><h3>Choose lineups</h3><div class="lineup-pickers">'+picker(match.home,home,'home')+picker(match.away,away,'away')+'</div></section>';
   const verdict=prediction?'<section class="prediction-verdict"><div><span class="kicker">MATCH OUTLOOK</span><h3>'+teamName(Math.max(prediction.homeWin,prediction.awayWin)<.55?'Finely balanced':prediction.homeWin>prediction.awayWin?match.home+' favoured':match.away+' favoured')+'</h3></div></section>':'';
-  return '<div class="fixture-forecast"><div class="overlay-title"><div class="kicker">'+esc(roundHeading(match))+' · FIXTURE OUTLOOK</div><h2>'+teamName(match.home)+' vs '+teamName(match.away)+'</h2></div>'+summary+verdict+lineups+'<section class="prediction-section"><div class="projection-section-heading"><h3>Rubber projections</h3></div><div class="projection841-switchline"><button type="button" class="projection841-toggle button secondary" data-projection841-toggle aria-pressed="'+(ordered.length>0&&ordered.every(r=>state.scoreEstimates?.[r.label]))+'">'+(ordered.length>0&&ordered.every(r=>state.scoreEstimates?.[r.label])?'Percentages':'Score estimates')+'</button></div><div class="prediction-rubbers">'+rows+'</div></section><div class="simulation-actions"><button type="button" class="button primary" data-run-simulation '+(prediction?'':'disabled')+'>Run Simulation</button></div>'+simulation+'</div>';
+  return '<div class="fixture-forecast"><div class="overlay-title"><div class="kicker">'+esc(roundHeading(match))+' · FIXTURE OUTLOOK</div><h2>'+teamName(match.home)+' vs '+teamName(match.away)+'</h2></div>'+(window.BRTAFixtureDetails?.html(match)||'')+'<h3>Prediction Centre</h3>'+summary+verdict+lineups+'<section class="prediction-section"><div class="projection-section-heading"><h3>Rubber projections</h3></div><div class="projection841-switchline"><button type="button" class="projection841-toggle button secondary" data-projection841-toggle aria-pressed="'+(ordered.length>0&&ordered.every(r=>state.scoreEstimates?.[r.label]))+'">'+(ordered.length>0&&ordered.every(r=>state.scoreEstimates?.[r.label])?'Percentages':'Score estimates')+'</button></div><div class="prediction-rubbers">'+rows+'</div></section><div class="simulation-actions"><button type="button" class="button primary" data-run-simulation '+(prediction?'':'disabled')+'>Run Simulation</button></div>'+simulation+(window.BRTARoundSimulation?.predictionControls(match)||'')+(window.BRTAFinalsRace?.editorControls(match)||'')+'</div>';
 
 }
-function fixtureById(id){return(D.upcomingFixtures||[]).flatMap(round=>round.fixtures.map(f=>({...f,round:round.round,date:round.date}))).find(f=>f.fixtureId===id)}
+function fixtureById(id){return(D.upcomingFixtures||[]).flatMap(round=>round.fixtures.map(f=>({...f,round:round.round,date:f.date||round.date}))).find(f=>f.fixtureId===id)}
 function currentPredictionMatch(){return activePredictionMatch||fixtureById(selectedPrediction?.id)}
 function findFixtureResult(f,round){return findMatch(f.fixtureId)||(D.results||[]).filter(r=>r.round===round).flatMap(r=>r.fixtures).find(result=>result.home===f.home&&result.away===f.away)||null}
 let lineup841Cards=[],lineup841Team='';
@@ -571,10 +586,12 @@ function openTeamLineupHistory(team){
 }
 function applyRecordedLineup(index){const lineup=lineup841Cards[index],match=currentPredictionMatch();if(!lineup||!selectedPrediction||!match)return;const side=match.home===lineup841Team?'home':match.away===lineup841Team?'away':null;if(!side)return;selectedPrediction[side]=BRTALineups.side(lineup);selectedPrediction.simulation=null;close('#lineupHistoryOverlay');refreshPrediction()}
 
-function refreshPrediction(){const match=currentPredictionMatch();if(match)$('#predictionContent').innerHTML=predictionHTML(match)}
-function openPrediction(id){if(D.meta?.singlesOnly){openPredictionHome();return}const match=fixtureById(id);if(!match||match.status!=='Scheduled'||findFixtureResult(match,match.round))return;activePredictionMatch=match;selectedPrediction=null;refreshPredictionFor(match);$('#predictionOverlay').classList.remove('hidden');document.body.classList.add('modal-open')}
+function refreshPrediction(){const match=currentPredictionMatch();if(match)refreshPredictionFor(match)}
+function openPrediction(id){window.BRTAFinalsRace?.clearEditor();window.BRTAFixtureDetails?.closeMap('#predictionOverlay');delete $('#predictionContent').dataset.roundSetup;const match=fixtureById(id);if(!match||match.status!=='Scheduled'||findFixtureResult(match,match.round))return;
+if(D.meta?.singlesOnly||!predictionEvidenceReady()){activePredictionMatch=match;selectedPrediction=null;$('#predictionContent').innerHTML='<div class="overlay-title"><h2>'+teamName(match.home)+' vs '+teamName(match.away)+'</h2></div>'+(window.BRTAFixtureDetails?.html(match)||'')+(D.meta?.singlesOnly?rm1PredictionNotice():predictionEvidenceNotice());window.BRTAFixtureDetails?.hydrate(match,$('#predictionContent'));$('#predictionOverlay').classList.remove('hidden');document.body.classList.add('modal-open');window.BRTARouteUI?.fixture(match,'fixtures');return;}activePredictionMatch=match;selectedPrediction=null;refreshPredictionFor(match);$('#predictionOverlay').classList.remove('hidden');document.body.classList.add('modal-open');window.BRTARouteUI?.fixture(match,'fixtures')}
 function rm1PredictionNotice(){return '<div class="overlay-title"><h2>Prediction Centre</h2></div><p>RM1 supports singles game strength. Choose another model in Settings for fixture predictions.</p><button type="button" class="button secondary" data-layout-open="methodology">Choose model</button>'}
 function openPredictionHome(selectedTeam=''){
+  delete $('#predictionContent').dataset.roundSetup;
   if(D.meta?.singlesOnly){$('#predictionContent').innerHTML=rm1PredictionNotice();$('#predictionOverlay').classList.remove('hidden');document.body.classList.add('modal-open');return}
   const names=teams.map(x=>x.team).sort((a,b)=>a.localeCompare(b)),home=selectedTeam||names[0]||'',away=names.find(name=>name!==home)||'';
   $('#predictionContent').innerHTML='<div class="overlay-title"><div class="kicker">PREDICTION CENTRE</div><h2>Build a matchup</h2><p>Pick two teams to get started.</p></div><div class="prediction-home-fields"><label>Home team<select id="predictionHomeTeam">'+names.map(name=>'<option value="'+esc(name)+'" '+(name===home?'selected':'')+'>'+teamName(name)+'</option>').join('')+'</select></label><label>Away team<select id="predictionAwayTeam">'+names.map(name=>'<option value="'+esc(name)+'" '+(name===away?'selected':'')+'>'+teamName(name)+'</option>').join('')+'</select></label></div><button type="button" class="button primary" data-start-custom-prediction="1">Choose lineups</button>';
@@ -586,7 +603,7 @@ function startCustomPrediction(){
   activePredictionMatch={fixtureId:'custom:'+home+'|'+away,home,away,status:'Scheduled',round:'Custom matchup',date:'',stage:'custom'};
   selectedPrediction=null;refreshPrediction();
 }
-function refreshPredictionFor(match){$('#predictionContent').innerHTML=predictionHTML(match)}
+function refreshPredictionFor(match){const host=$('#predictionContent'),details=host.querySelector('[data-fixture-logistics]');if(details?.dataset.fixtureLogistics===match.fixtureId)details.remove();host.innerHTML=predictionHTML(match);if(details?.dataset.fixtureLogistics===match.fixtureId)host.querySelector('[data-fixture-logistics]')?.replaceWith(details);else window.BRTAFixtureDetails?.hydrate(match,host);}
 function updatePrediction(side,player,checked){const match=currentPredictionMatch();if(!match)return;const current=selectedPrediction[side].draft,needed=predictionNeeded(),max=D.meta?.is_custom?teamRoster(side==='home'?match.home:match.away).length:isPlayoff(match)&&needed===4?6:needed;if(checked&&current.length>=max){refreshPrediction();return}if(checked&&!current.includes(player))current.push(player);if(!checked)selectedPrediction[side].draft=current.filter(x=>x!==player);selectedPrediction.simulation=null;refreshPrediction()}
 function updateSingles(side,position,player){const s=selectedPrediction[side];if(!s.draft.includes(player))return;const previous=s.singles.indexOf(player),displaced=s.singles[position];s.singles[position]=player;if(previous>=0&&previous!==position)s.singles[previous]=displaced;s.manualOrder=true;selectedPrediction.simulation=null;refreshPrediction()}
 function updateDoubles(side,pair,slot,player){const s=selectedPrediction[side];if(!s.draft.includes(player))return;if(D.meta?.is_custom||D.meta?.competition_rules){const other=1-slot,displaced=s.doubles[pair][slot];if(s.doubles[pair][other]===player)s.doubles[pair][other]=displaced;s.doubles[pair][slot]=player;selectedPrediction.simulation=null;refreshPrediction();return;}const other=s.doubles.findIndex(row=>row.includes(player)),otherSlot=other>=0?s.doubles[other].indexOf(player):-1,displaced=s.doubles[pair][slot];s.doubles[pair][slot]=player;if(other>=0&&(other!==pair||otherSlot!==slot))s.doubles[other][otherSlot]=displaced;selectedPrediction.simulation=null;refreshPrediction()}
@@ -863,7 +880,7 @@ function fillClubChoices(){
   clubSelect.innerHTML+=competition.clubs.map(club=>'<option value="'+esc(club.name)+'">'+esc(club.name)+' · '+club.entries+' entries</option>').join('');clubSelect.disabled=false;status.textContent=competition.clubs.length+' combined clubs across the '+competition.label+' archive.';
 }
 function openChosenClubZone(){openClubMaintenance()}
-function openClubForTeam(team){if(window.BRTAClubs)return window.BRTAClubs.openTeam(team,'overview');openClubMaintenance()}
+function openClubForTeam(team){if(window.BRTAClubs)return window.BRTAClubs.openTeam(team,'stats');openClubMaintenance()}
 function openRound(){const r=D.roundOverview;if(!r)return;const s=r.summary||{},mover=s.topMover?esc(s.topMover.player)+' +'+s.topMover.change:'No prior snapshot',drop=s.biggestDrop?esc(s.biggestDrop.player)+' '+s.biggestDrop.change:'No prior snapshot';$('#roundContent').innerHTML='<div class="overlay-title"><div class="kicker">LATEST ROUND</div><h2>'+esc(r.label||('Round '+r.round))+'</h2><p>'+esc(roundDate(r.date))+' · '+esc(D.meta.section_label)+'</p></div><div class="round-metrics"><div><span>Completed ties</span><b>'+esc(s.completedFixtures??'—')+'</b></div><div><span>Singles rubbers</span><b>'+esc(s.singlesRubbers??'—')+'</b></div><div><span>Doubles rubbers</span><b>'+esc(s.doublesRubbers??'—')+'</b></div><div><span>Average singles margin</span><b>'+(s.averageSinglesMargin??'—')+' games</b></div></div><div class="round-fixtures">'+r.fixtures.map(f=>'<button class="round-fixture '+(f.status!=='Completed'?'pending':'')+'" data-match-id="'+esc(f.fixtureId)+'"><b>'+esc(f.home)+' '+(f.status==='Completed'?f.homeRubbers+'–'+f.awayRubbers:'v')+' '+esc(f.away)+'</b><span>'+(f.status==='Completed'?'Games '+f.homeGames+'–'+f.awayGames+(f.winner?' · '+esc(f.winner)+' won':''):esc(f.status))+' · View result</span></button>').join('')+'</div><div class="round-highlights">'+roundHighlight('Top performance',r.topPerformance,'top')+roundHighlight('Biggest upset',r.biggestUpset,'upset')+roundHighlight('Most dominant',r.dominantWin,'dominant')+roundHighlight('Closest singles',r.closestMatch,'close')+'</div><div class="round-movers"><div><span>Biggest Power rise</span><b>'+mover+'</b></div><div><span>Largest Power fall</span><b>'+drop+'</b></div></div><p class="small-note">Rating movements use the as-of-round snapshots.</p>';$('#roundOverlay').classList.remove('hidden');document.body.classList.add('modal-open')}
 function methodologyHTML(){return'<div class="methodology"><h3>Rating model</h3><p>Expected game probability:</p><div class="equation">p = 1 / (1 + e<sup>−(θᵢ − θⱼ) / 0.75</sup>)</div><p>Match-date weighting and displayed scale:</p><div class="equation">w = 2<sup>− age / 365</sup> &nbsp; · &nbsp; Power = 1500 + 600θ</div><p>Rubbers-format multi-set singles are one contest in the record, while ordinary games and a separately bounded deciding-tiebreak outcome contribute to the likelihood.</p><h3>Individual doubles</h3><div class="equation">θ<sub>team</sub> = (θ<sub>A</sub> + θ<sub>B</sub>) / 2</div><p>Sets and Green Ball need 4 appearances, 2 distinct partners and an identifiable network position. Two-player Rubbers sections show 4+ appearance doubles evidence as partner-dependent.</p><div class="model-export"><b>Calculation audit</b><p>Download this section’s entered rubbers, model settings and fitted rating outputs in a readable JSON file.</p><button id="exportModelAuditBtn" class="button secondary" type="button">Export rating model audit</button></div></div>'}
 function brtaRulesHTML(){return'<div class="brta-rules"><p class="rules-intro">The site applies these 2026 Weekend Junior By-Law rules consistently to every Saturday and Sunday AM section.</p><details open><summary>Team points</summary><p><b>Sets and Green Ball:</b> 4 points for a team win, 2 points each for a draw or undecided tie, plus 1 point for each set won and 0.5 for each uncompleted set.</p><p><b>Rubbers:</b> 2 points for a team win, 1 point each for a draw or undecided tie, plus the same set points.</p></details><details><summary>Formats and deciding a tie</summary><p>Sets and Green Ball use four players per team. Rubbers uses two. Team ties are decided by sets, then games if sets are level. Green Ball is first to six games with no tiebreak, so 5–5 is decided by the next game; Rubbers singles uses two 6-game sets with a 10-point match tiebreak if required.</p></details><details><summary>Washouts, byes and forfeits</summary><p>Byes earn no points. A washout or unfinished home-and-away tie receives the draw points plus 0.5 for every uncompleted set; recorded games still count toward percentage. A complete team forfeit awards the receiving team all available set points, but no game percentage.</p></details><details><summary>Ladder order and corrections</summary><p>Teams are ordered by points, then games-for divided by games-against percentage. A result missing after five business days may be awarded to the visiting team. Eligibility, order-of-merit and duplicate-player breaches can also change an official result; TROLS remains the public source of truth for entered scorecards.</p></details><p class="rules-source">Summary of BRTA Weekend Junior By-Laws (effective 1 January 2026). <a href="https://www.baysidetennis.asn.au/wp-content/uploads/2026/08/BRTA-By-Laws-Weekend-Junior-V4.pdf" target="_blank" rel="noopener">Read the official by-laws</a>.</p></div>'}
@@ -896,8 +913,8 @@ async function openHistoryChoice(){
   }finally{button.disabled=false}
 }
 function goToCurrentSeason(){
-  const catalog=currentCatalog(),saved=localStorage.getItem('brta-section');
-  const code=catalog.some(x=>x.section_code===saved)?saved:DATA.defaultSectionCode;
+  const catalog=currentCatalog(),target=defaultSectionMeta();
+  const code=target?.section_code||DATA.defaultSectionCode;
   activeHistorySeasonId=null;viewCatalog=catalog;
   return BRTAActivity.run('Returning to the current season',async task=>{
     if(!await loadSection(code,null,task))return false;
@@ -911,7 +928,7 @@ function switchInterface(target){if(target===interfaceMode)return;localStorage.s
 window.BRTASitePreferences={getTheme:()=>theme,setTheme:value=>{theme=value;localStorage.setItem('brta-theme',value);applyTheme()}};
 function renderAll(){document.body.classList.toggle('custom-section',!!D.meta?.is_custom);if(D.meta?.is_custom){close('#clubPickerOverlay');close('#clubZoneOverlay');activeClubZone=null;}statusStrip();teamOptions();renderRatings();renderTeams();renderStandings();renderResults();renderFixtures();$('#roundBtn').textContent=D.roundOverview?(D.roundOverview.label||('Round '+D.roundOverview.round))+' overview':'Latest round';window.dispatchEvent(new Event('brta-section-ready'))}
 
-BRTATeamLabUI.configure({getData:()=>D,escape:esc,teamName,close,showTeams:()=>switchPage('teams'),openMatch:id=>{const page=activePage;openMatch(id);switchPage(page)}});
+BRTATeamLabUI.configure({getData:()=>D,escape:esc,teamName,close,showTeams:()=>switchPage('teams'),openMatch:id=>openMatch(id)});
 
 document.addEventListener('click',e=>{
   if(e.target.closest('[data-open-custom-competitions]')){close('#settingsOverlay');window.CustomSections?.open();return}
@@ -968,7 +985,7 @@ document.addEventListener('change',e=>{
 function renderRatingOptions(){
   document.querySelectorAll('[data-search-scope]').forEach(button=>button.classList.toggle('selected',button.dataset.searchScope===ratingScope));
   $('.ratings-history-options h3').textContent='Rating History ● '+D.meta.section_label;const rounds=BRTAHistory.rounds(D,ratingView).slice().sort((a,b)=>b.round-a.round);
-  $('#ratingHistoryChoices').innerHTML='<button type="button" data-rating-round="latest" aria-pressed="'+(ratingRound==null)+'" class="'+(ratingRound==null?'selected':'')+'"><b>Latest ratings</b><span>Current standings</span></button>'+rounds.map(x=>'<button type="button" data-rating-round="'+x.round+'" aria-pressed="'+(ratingRound===Number(x.round))+'" class="'+(ratingRound===Number(x.round)?'selected':'')+'"><b>After Round '+x.round+'</b><span>'+esc(x.date)+'</span></button>').join('')+(!rounds.length?'<p class="small-note">Round history is not available for this rating view yet.</p>':'');
+  $('#ratingHistoryChoices').innerHTML='<button type="button" data-rating-round="latest" aria-pressed="'+(ratingRound==null)+'" class="'+(ratingRound==null?'selected':'')+'"><b>Latest ratings</b><span>All published matches</span></button>'+rounds.map(x=>'<button type="button" data-rating-round="'+x.round+'" aria-pressed="'+(ratingRound===Number(x.round))+'" class="'+(ratingRound===Number(x.round)?'selected':'')+'"><b>'+esc(ratingRoundLabel(x.round))+'</b><span>'+esc(x.date||'Date not published by TROLS')+'</span></button>').join('')+(!rounds.length?'<p class="small-note">Round history is not available for this rating view yet.</p>':'');
 }
 function selectRatingRound(value){ratingRound=value==='latest'?null:Number(value);if(ratingRound!=null){ratingScope='section';localStorage.setItem('brta-rating-scope','section')}renderRatings();close('#searchOptionsOverlay')}
 function setRatingScope(value){ratingScope=['all','history'].includes(value)?value:'section';localStorage.setItem('brta-rating-scope',ratingScope);if(ratingScope!=='section'){ratingRound=null;}renderRatings();renderRatingOptions()}
@@ -976,9 +993,10 @@ function openSearchOptions(){if(!D)return;renderRatingOptions();$('#searchOption
 
 document.addEventListener('contextmenu',e=>{const schedule=e.target.closest('[data-sos-open]');if(schedule){e.preventDefault();openSchedule()}});
 $$('.main-tab').forEach(b=>b.onclick=()=>switchPage(b.dataset.page));
-document.querySelectorAll('.subtab').forEach(b=>b.onclick=()=>{ratingView=b.dataset.rating;if(ratingRound!=null&&!BRTAHistory.rounds(D,ratingView).some(x=>Number(x.round)===ratingRound))ratingRound=null;if(ratingView==='pairs'&&ratingScope!=='section'){ratingScope='section';localStorage.setItem('brta-rating-scope',ratingScope)}document.querySelectorAll('.subtab').forEach(x=>x.classList.toggle('active',x===b));renderRatings()});
+document.querySelectorAll('.subtab').forEach(b=>b.onclick=()=>{ratingView=b.dataset.rating;window.BRTARouteUI?.rating();if(ratingRound!=null&&!BRTAHistory.rounds(D,ratingView).some(x=>Number(x.round)===ratingRound))ratingRound=null;if(ratingView==='pairs'&&ratingScope!=='section'){ratingScope='section';localStorage.setItem('brta-rating-scope',ratingScope)}document.querySelectorAll('.subtab').forEach(x=>x.classList.toggle('active',x===b));renderRatings()});
 $('#search').oninput=renderRatings;$('#teamFilter').onchange=()=>renderRatings();$('#clubPickerOpen').onclick=openChosenClubZone;$('#clubPickerClose').onclick=()=>close('#clubPickerOverlay');$('#clubZoneClose').onclick=()=>close('#clubZoneOverlay');$('#roundBtn').onclick=openRound;$('#settingsBtn').onclick=()=>openSettings();
 $('#profileClose').onclick=()=>close('#profileOverlay');$('#roundClose').onclick=()=>close('#roundOverlay');$('#settingsClose').onclick=()=>close('#settingsOverlay');$('#resultClose').onclick=()=>close('#resultOverlay');
+$('#returnLiveSection').onclick=()=>goToCurrentSeason();
 $('#predictionClose').onclick=()=>close('#predictionOverlay');$('#lineupHistoryClose').onclick=()=>close('#lineupHistoryOverlay');$('#sosClose').onclick=()=>close('#sosOverlay');$('#rivalryClose').onclick=()=>close('#rivalryOverlay');$('#searchOptionsBtn').onclick=openSearchOptions;$('#searchOptionsClose').onclick=()=>close('#searchOptionsOverlay');
 document.addEventListener('keydown',e=>{if(e.key==='Escape')$$('.overlay:not(.hidden)').forEach(o=>close('#'+o.id))});
 window.addEventListener('brta-module-toggle',()=>{
@@ -990,6 +1008,7 @@ window.addEventListener('brta-custom-sections-change',()=>{if(activeHistorySeaso
 window.addEventListener('brta-custom-section-open',e=>{activeHistorySeasonId=null;localStorage.removeItem('brta-history-selection');viewCatalog=currentCatalog();setupSelectors();close('#settingsOverlay');switchPage('results');loadSection(e.detail)});
 async function startApp(){
   applyProfilePosition();viewCatalog=currentCatalog();setupSelectors();showSyncToast();
+  if(await window.BRTARouteUI?.start())return;
   const saved=readHistorySelection();
   if(!saved||layoutDefaultCode()){
     await loadSection(choiceValue('sectionSelect'));ensureHistoryCatalog();return;

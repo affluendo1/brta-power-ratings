@@ -73,6 +73,7 @@ function closeLogo(){
  $('#brandLogoSecret')?.focus({preventScroll:true});
 }
 function openLogo(){
+ window.BRTARouteUI?.secret();
  const overlay=$('#logoSecretOverlay');
  if(!overlay)return;
  overlay.classList.remove('hidden');

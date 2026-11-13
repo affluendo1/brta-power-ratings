@@ -132,6 +132,7 @@ jobs:
         run: |
           python generate_archive_site_data.py --catalog-only
           python scripts/build_clubs_index.py
+          python scripts/build_scoreline_index.py
 
       - name: Commit check and any regenerated ratings
         shell: bash

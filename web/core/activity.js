@@ -7,12 +7,14 @@
   const status = document.getElementById('switchStatus');
   const heading = overlay.querySelector('h2');
   const pending = new Set();
-  let visible, returnFocus;
+  let visible, returnFocus, stopGame;
 
   function draw() {
     const next = [...pending].filter(job => job.ready).sort((a, b) => a.priority - b.priority).at(-1);
     if (!next) {
       const restore = document.activeElement === overlay;
+      stopGame?.();
+      stopGame = null;
       visible = null;
       overlay.classList.add('hidden');
       if (restore && returnFocus?.isConnected) returnFocus.focus({ preventScroll: true });
@@ -20,6 +22,10 @@
       return;
     }
     const opening = !visible;
+    if (visible !== next) {
+      stopGame?.();
+      stopGame = next.game ? root.BRTAWaitingGame?.mount(overlay, 4000) : null;
+    }
     visible = next;
     heading.textContent = next.title;
     status.textContent = next.message;
@@ -45,8 +51,8 @@
     });
   }
 
-  async function run(title, work, { priority = 0, message = 'Getting ready…', key = priority ? 'navigation' : null } = {}) {
-    const job = { title, message, percent: 0, priority, key, ready: false };
+  async function run(title, work, { priority = 0, message = 'Getting ready…', key = priority ? 'navigation' : null, game = false } = {}) {
+    const job = { title, message, percent: 0, priority, key, game, ready: false };
     if (key) for (const previous of pending) {
       if (previous.key !== key) continue;
       job.ready ||= visible === previous;
@@ -85,6 +91,7 @@
   }
 
   root.addEventListener('keydown', event => {
+    if (event.target.closest?.('.wg-layout') && overlay.contains(event.target)) return;
     if (!visible || event.ctrlKey || event.metaKey || event.altKey) return;
     event.preventDefault();
     event.stopImmediatePropagation();

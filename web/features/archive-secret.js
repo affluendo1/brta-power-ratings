@@ -52,6 +52,7 @@
     return layer;
   }
   function open(layer) {
+    window.BRTARouteUI?.secret();
     layer.classList.remove('hidden');
     BRTAOverlays.lock(layer);
     layer.querySelector('.close-btn').focus({ preventScroll: true });

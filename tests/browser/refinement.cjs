@@ -20,7 +20,7 @@ const canvas={clearRect(){},fillRect(){},scale(){},stroke(){},beginPath(){},move
 w.HTMLCanvasElement.prototype.getContext=()=>canvas;w.HTMLMediaElement.prototype.play=()=>Promise.resolve();w.HTMLMediaElement.prototype.pause=function(){};w.HTMLMediaElement.prototype.load=function(){};
 w.confirm=()=>true;
 w.localStorage.setItem('brta-following-v1',JSON.stringify({pins:[null,{},false],pending:[null,{}]}));
-w.fetch=async url=>{const file=path.join(ROOT,new URL(url,w.location.href).pathname.replace('/brta-power-ratings/',''));if(!fs.existsSync(file))return {ok:false,status:404,json:async()=>null};if(file.endsWith('.gz'))return new Response(fs.readFileSync(file));return{ok:true,json:async()=>JSON.parse(fs.readFileSync(file,'utf8'))}};
+w.fetch=async url=>{const file=path.join(ROOT,new URL(url,w.document.baseURI).pathname.replace('/brta-power-ratings/',''));if(!fs.existsSync(file))return {ok:false,status:404,json:async()=>null};if(file.endsWith('.gz'))return new Response(fs.readFileSync(file));return{ok:true,json:async()=>JSON.parse(fs.readFileSync(file,'utf8'))}};
 const ctx=dom.getInternalVMContext();
 for(const s of [...w.document.scripts]){try{vm.runInContext(s.src?fs.readFileSync(path.join(ROOT,new URL(s.src).pathname.replace('/brta-power-ratings/','')),'utf8'):s.textContent,ctx,{filename:s.src||'bootstrap'})}catch(e){errors.push(e.stack)}}
 w.addEventListener('error',e=>errors.push(e.error?.stack||e.message));

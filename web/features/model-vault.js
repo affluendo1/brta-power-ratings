@@ -39,6 +39,7 @@
     return overlay;
   }
   function open(overlay, focus) {
+    window.BRTARouteUI?.secret();
     overlay.classList.remove('hidden');
     BRTAOverlays.lock(overlay);
     document.body.classList.add('modal-open');
@@ -334,6 +335,27 @@
     hide(chamber);
     lock?.focus({ preventScroll: true });
   }
+  function zoomFrom(layer, source) {
+    const rect = source.getBoundingClientRect();
+    layer.style.setProperty('--portal-x', rect.left + rect.width / 2 + 'px');
+    layer.style.setProperty('--portal-y', rect.top + rect.height / 2 + 'px');
+    layer.querySelector('section').innerHTML = `<div class="chamber-zoom" aria-hidden="true">${lockIcon}</div>`;
+    open(layer, 'section');
+    sound(175, 34, .95, 'triangle');
+  }
+
+  window.BRTAVaultTransition = { play(source, done) {
+    if (motion.matches) return done();
+    const layer = makeOverlay('scorelineChamberTransition', 'model-chamber',
+      '<section class="model-chamber-view" tabindex="-1" aria-label="Opening the Scoreline Vault"></section>', () => {});
+    zoomFrom(layer, source);
+    setTimeout(() => {
+      layer.remove();
+      BRTAOverlays.unlock(layer);
+      done();
+    }, 1350);
+  } };
+
   function enterChamber() {
     if (phase !== 'idle' && !chamber.classList.contains('hidden')) return;
     if (!chamber) {
@@ -343,14 +365,8 @@
     }
     clearTimeout(sceneTimer);
     phase = 'zoom';
-    const rect = lock.getBoundingClientRect();
-    chamber.style.setProperty('--portal-x', rect.left + rect.width / 2 + 'px');
-    chamber.style.setProperty('--portal-y', rect.top + rect.height / 2 + 'px');
-    const view = chamber.querySelector('section');
-    view.innerHTML = `<div class="chamber-zoom" aria-hidden="true">${lockIcon}</div>`;
     chamber.classList.remove('chamber-arrived');
-    open(chamber, 'section');
-    sound(175, 34, .95, 'triangle');
+    zoomFrom(chamber, lock);
     sceneTimer = setTimeout(drawChamber, motion.matches ? 0 : 1350);
   }
   function drawChamber() {

@@ -750,7 +750,7 @@ def round_rating_history(singles, player_teams, round_calendar=None):
         for player, snap in previous.items():
             history[player].append(snap)
         tables[str(rnd)] = fitted
-        rounds.append({"round": rnd, "date": date, "players": len(previous)})
+        rounds.append({"round": rnd, "date": date, "label": str(item.get("label") or f"Round {rnd}"), "players": len(previous)})
     return {"rounds": rounds, "players": dict(history), "tables": tables}
 
 

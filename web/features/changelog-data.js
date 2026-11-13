@@ -2,6 +2,18 @@
 // Retrospective entries use source-commit timestamps; sourceCommit records their provenance.
 window.BRTA_RELEASES = Object.freeze([
   {
+    "version": "9.1",
+    "size": "large",
+    "title": "Finals Race",
+    "committedAt": "2026-11-13T19:05:00+11:00",
+    "changes": [
+      "Follow the finals race from Fixtures and Standings. See what your team needs, forecast the finish and try different lineups.",
+      "Fixture cards now surface venue details, player ratings and a printable scorecard. Round simulations support edited lineups and locked results.",
+      "Explore individual set scores in the Scoreline Vault, and share exact sections, ratings views and scorecards from the address bar.",
+      "Club profiles show names from the archive and Theme Studio can export calendar postcards."
+    ]
+  },
+  {
     "version": "9.0.1.4",
     "size": "tiny",
     "committedAt": "2026-11-11T22:55:32+11:00",

@@ -1,12 +1,14 @@
 # BRTA Power Ratings
 
-**Current version: 9.0.1.4**
+**Current version: 9.1**
 
 The default player rating model is **4.2 Melody**, while **4.2 Orchestra** handles predictions.
 Other available models include **4.2 Foundation**, **RM4.2**, **RM4.1 Ensemble**, **RM4a**,
 **RM4b**, **RM3** and **RM3b**. Existing valid model preferences are retained.
 
 ### Latest updates
+
+- **9.1:** Finals Race, editable round simulations, fixture logistics and exact section and scorecard URLs.
 
 - **9.0.1.4:** Theme Calendar rotates through 366 presets. Every preset can be saved as the default in Theme Studio.
 - **9.0.1.3:** Added standalone reference pages and repository development notes.
@@ -357,9 +359,15 @@ Adaptive rating bands are calculated from qualified entries in the selected sect
 
 The Prediction Centre converts Power differences to game probabilities, then uses the competition format to estimate rubber and team outcomes. It distinguishes standard Sets, Green Ball and Rubbers singles scoring. Default lineups use the most-used complete ordered selections available before the fixture round, with registered/observed-order fallbacks when evidence is incomplete. Emergency markers and format limits are retained; lineups are not simply sorted by rating. Users may replace the singles order and choose both doubles pairs from the drafted players. For Sets playoffs, each side may draft up to six players, use four in singles and independently choose four for doubles.
 
-Run Simulation samples each rubber from those same game probabilities and displays one possible scorecard, game totals, set totals and estimated team points. The simulated score is illustrative and can change on every run; the projected win percentages are long-run averages, not a promise about any particular set of 100 runs. The round simulator samples each remaining scheduled fixture using its default lineup. These results do not alter the official TROLS data.
+Run Simulation samples each rubber from those same game probabilities and displays one possible scorecard, game totals, set totals and estimated team points. The simulated score is illustrative and can change on every run; the projected win percentages are long-run averages, not a promise about any particular set of 100 runs. The round simulator accepts edited lineups and locked results, then samples the remaining fixtures. These results do not alter the official TROLS data.
 
 Round-by-round snapshots refit the ratings using results available through each round in the official draw. A round without new valid singles evidence carries the previous state forward. Results-versus-expectation calculations use pre-round ratings; players without an earlier snapshot use the selected model’s neutral starting point.
+
+### Finals Race and shareable views
+
+Open **Finals Race** in late-season Fixtures or below the Standings table. The initial view uses conservative points bounds to flag teams that have clinched or been eliminated. **Run the Numbers** samples future scorecards using the chosen rating model and lineup depth. Exact ties at the cutoff share qualification credit. Each browser keeps its own forecast snapshots for comparison with later results.
+
+The address bar follows the season, competition, section, tab, ratings discipline and published fixture. For example, `/brta-power-ratings/history/spring-2026/sunday-am/sets-6/fixtures/r14/lauriston-v-kings-park/` opens a specific fixture. Links under `/current/` resolve against the live season, and the short `/current/s6/ratings/` form prefers Sunday AM if more than one competition matches. The Clubs tab also supports links to a particular team and panel. A fixture without a round must identify a unique tie. GitHub Pages' custom 404 bootstraps nested routes on a fresh visit.
 
 ## Results, standings and BRTA scoring
 
