@@ -33,15 +33,15 @@
   "calendar_events": [
     {
       "date": "5 Nov 26",
-      "label": "Semi Final \u00b7 if qualified"
+      "label": "Semi Final · if qualified"
     },
     {
       "date": "12 Nov 26",
-      "label": "Grand Final \u00b7 if qualified"
+      "label": "Grand Final · if qualified"
     },
     {
       "date": "19 Nov 26",
-      "label": "Spare \u00b7 if required"
+      "label": "Spare · if required"
     }
   ],
   "official_standings": [
@@ -51,7 +51,7 @@
       "wins": 11,
       "points": 81,
       "percentage": 139.01,
-      "marker": ""
+      "marker": "P"
     },
     {
       "position": 2,
@@ -59,7 +59,7 @@
       "wins": 6,
       "points": 54,
       "percentage": 114.09,
-      "marker": ""
+      "marker": "R"
     },
     {
       "position": 3,
@@ -105,10 +105,10 @@
   "green_ball": false,
   "results_loaded_by_trols": null,
   "fixtures": 59,
-  "completed_fixtures": 42,
+  "completed_fixtures": 43,
   "draw_fixtures": 56,
   "singles_rubbers": 0,
-  "doubles_rubbers": 168,
+  "doubles_rubbers": 172,
   "latest_round": 17,
   "validation": "source discrepancies",
   "source_warnings": [
@@ -118,6 +118,7 @@
     "Incomplete TROLS score for HA002081 doubles No. 4: ''. Missing score not inferred; excluded from ratings and game totals.",
     "Incomplete TROLS score for HA002083 doubles No. 1: '6-4 1-0'. Missing score not inferred; excluded from ratings and game totals.",
     "Incomplete TROLS score for HA002083 doubles No. 3: ''. Missing score not inferred; excluded from ratings and game totals.",
-    "Incomplete TROLS score for HA002083 doubles No. 4: ''. Missing score not inferred; excluded from ratings and game totals."
+    "Incomplete TROLS score for HA002083 doubles No. 4: ''. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for HA002321 doubles No. 4: '7-5 2-2'. Missing score not inferred; excluded from ratings and game totals."
   ]
 }

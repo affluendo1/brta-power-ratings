@@ -33,11 +33,11 @@
   "calendar_events": [
     {
       "date": "12 Nov 26",
-      "label": "Grand Final \u00b7 if qualified"
+      "label": "Grand Final · if qualified"
     },
     {
       "date": "19 Nov 26",
-      "label": "Spare \u00b7 if required"
+      "label": "Spare · if required"
     }
   ],
   "official_standings": [
@@ -47,7 +47,7 @@
       "wins": 12,
       "points": 86,
       "percentage": 181.53,
-      "marker": ""
+      "marker": "P"
     },
     {
       "position": 2,
@@ -55,7 +55,7 @@
       "wins": 7,
       "points": 57,
       "percentage": 117.75,
-      "marker": ""
+      "marker": "R"
     },
     {
       "position": 3,
@@ -85,11 +85,13 @@
   "green_ball": false,
   "results_loaded_by_trols": null,
   "fixtures": 46,
-  "completed_fixtures": 30,
+  "completed_fixtures": 31,
   "draw_fixtures": 45,
   "singles_rubbers": 0,
-  "doubles_rubbers": 120,
+  "doubles_rubbers": 124,
   "latest_round": 16,
-  "validation": "passed",
-  "source_warnings": []
+  "validation": "source discrepancies",
+  "source_warnings": [
+    "Incomplete TROLS score for HA003321 doubles No. 4: '6-3 3-5'. Missing score not inferred; excluded from ratings and game totals."
+  ]
 }
