@@ -91,7 +91,9 @@ function toBackup(source,now=new Date().toISOString()){
   else if(fromResults||!item._results){Object.assign(item,clone(f));item._results=!!fromResults;}
   teamId(f.home);teamId(f.away);
  };
- for(const r of source.upcomingFixtures||[])for(const f of r.fixtures||[])add(r,f,false);
+ // This archive includes a different section's regular-season schedule.
+ const archiveScheduleMismatch=source.meta.is_archive&&source.meta.section_code==='AA32-AA002';
+ if(!archiveScheduleMismatch)for(const r of source.upcomingFixtures||[])for(const f of r.fixtures||[])add(r,f,false);
  for(const r of source.results||[])for(const f of r.fixtures||[])add(r,f,true);
  // Preserve registered order when published; infer only where the official record is silent.
  for(const [team,entry] of Object.entries(evidence)){
@@ -157,10 +159,14 @@ function toBackup(source,now=new Date().toISOString()){
   const winner=missingHome&&missingAway?'':missingHome?'away':missingAway?'home':
    ['home','away'].includes(m.winnerSide)?m.winnerSide:
    (clean(m.winner)===clean(m.home))?'home':(clean(m.winner)===clean(m.away))?'away':'';
-  return {id:'rubber-'+f.rubbers.length+'-'+type.toLowerCase(),type,position:pos(m.position),
+  const converted={id:'rubber-'+f.rubbers.length+'-'+type.toLowerCase(),type,position:pos(m.position),
    home,away,homeEmergencies:flag(home,homeNames,'home'),awayEmergencies:flag(away,awayNames,'away'),
    sets:hs.length?hs:[{h:'',a:'',mt:false}],status:stage,winner:stage==='Retired'||stage==='Forfeit'?winner:'',
    sourceScore:clean(m.score),sourceStatus:status};
+  if(converted.status==='Completed'){
+   try{Model.score(converted,section)}catch{converted.status='Unfinished'}
+  }
+  return converted;
  };
  for(const r of [...schedule.values()].sort((a,b)=>a.number-b.number)){
   const round={id:'round-'+r.number,number:r.number,date:r.date,label:r.label,stage:r.stage,fixtures:[]};

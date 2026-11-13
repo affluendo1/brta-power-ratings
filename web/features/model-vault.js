@@ -259,6 +259,10 @@
     if (!code) return;
     input.value = '';
     const reply = vault.querySelector('.vault-reply');
+    if (window.BRTAArchiveCalculator?.redeem(raw)) {
+      reply.textContent = '';
+      return;
+    }
     if (window.BRTAArchiveSecret?.redeem(raw)) {
       reply.textContent = 'Neon + unlocked. Find it under Theme in Settings.';
       sound(340, 1040, .34, 'triangle');

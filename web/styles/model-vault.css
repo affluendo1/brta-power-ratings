@@ -222,3 +222,12 @@ body:has(:is(#modelChamberOverlay, #modelVaultOverlay, #vaultConsoleOverlay):not
   .chamber-dust > span { animation: none; visibility: hidden; }
   .vault-hidden-lock .lock-shackle { transition: none; }
 }
+.archive-calculator .overlay-backdrop { background:#000 }
+.archive-calculator .settings-sheet { width:min(420px,calc(100vw - 32px)); height:auto; inset:50% auto auto 50%; transform:translate(-50%,-50%); padding:18px }
+.archive-calculator form { display:flex; align-items:center; justify-content:center; gap:8px; flex-wrap:wrap }
+.archive-calculator select { font:inherit; color:var(--text-color); background:var(--surface); border:1px solid var(--border-color); padding:8px }
+.archive-calculator output { display:block; flex-basis:100%; text-align:center; user-select:text }
+@media(prefers-reduced-motion:no-preference) {
+  .archive-calculator .settings-sheet { animation:archive-calculator-arrival .55s .12s ease-out both }
+}
+@keyframes archive-calculator-arrival { from { translate:0 100dvh } }

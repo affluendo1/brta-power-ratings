@@ -1,6 +1,6 @@
 # BRTA Power Ratings
 
-**Current version: 9.1.0.1**
+**Current version: 9.1.0.1.1**
 
 The default player rating model is **4.2 Melody**, while **4.2 Orchestra** handles predictions.
 Other available models include **4.2 Foundation**, **RM4.2**, **RM4.1 Ensemble**, **RM4a**,
