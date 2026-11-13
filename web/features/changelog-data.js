@@ -2,6 +2,17 @@
 // Retrospective entries use source-commit timestamps; sourceCommit records their provenance.
 window.BRTA_RELEASES = Object.freeze([
   {
+    "version": "9.1.0.1",
+    "size": "tiny",
+    "title": "Finals Race refinements",
+    "committedAt": "2026-11-13T22:40:00+11:00",
+    "changes": [
+      "Pick a team from the forecast to see a round-by-round route to finals, with lineup-based odds and example scores.",
+      "Choose Quick or Standard forecasts with no minimum wait. Small chances are shown to two decimal places.",
+      "Fixture outlooks show the venue map inline, repeat simulations keep your place, and the Scoreline Vault entrance has been refined."
+    ]
+  },
+  {
     "version": "9.1",
     "size": "large",
     "title": "Finals Race",

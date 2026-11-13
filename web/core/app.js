@@ -608,7 +608,21 @@ function updatePrediction(side,player,checked){const match=currentPredictionMatc
 function updateSingles(side,position,player){const s=selectedPrediction[side];if(!s.draft.includes(player))return;const previous=s.singles.indexOf(player),displaced=s.singles[position];s.singles[position]=player;if(previous>=0&&previous!==position)s.singles[previous]=displaced;s.manualOrder=true;selectedPrediction.simulation=null;refreshPrediction()}
 function updateDoubles(side,pair,slot,player){const s=selectedPrediction[side];if(!s.draft.includes(player))return;if(D.meta?.is_custom||D.meta?.competition_rules){const other=1-slot,displaced=s.doubles[pair][slot];if(s.doubles[pair][other]===player)s.doubles[pair][other]=displaced;s.doubles[pair][slot]=player;selectedPrediction.simulation=null;refreshPrediction();return;}const other=s.doubles.findIndex(row=>row.includes(player)),otherSlot=other>=0?s.doubles[other].indexOf(player):-1,displaced=s.doubles[pair][slot];s.doubles[pair][slot]=player;if(other>=0&&(other!==pair||otherSlot!==slot))s.doubles[other][otherSlot]=displaced;selectedPrediction.simulation=null;refreshPrediction()}
 function simulationHTML(sim,home,away){return'<div class="simulation-result"><h3>Simulated result · '+teamName(home)+' '+sim.homeRubbers+'–'+sim.awayRubbers+' '+teamName(away)+'</h3><p>'+sim.results.slice().sort(disciplineCompare).map(r=>'<span><b>'+esc(r.label)+'</b> · '+esc(r.home)+' <strong>'+esc(r.score)+'</strong> '+esc(r.away)+'</span>').join('')+'</p><div class="simulation-total">Games '+sim.homeGames+'–'+sim.awayGames+' · Sets '+sim.homeSets+'–'+sim.awaySets+' · <b>Points '+sim.homePoints+'–'+sim.awayPoints+'</b></div><small>'+(sim.winner===1?teamName(home)+' wins':sim.winner===-1?teamName(away)+' wins':'Exact draw')+'</small></div>'}
-function runPredictionSimulation(){const match=currentPredictionMatch();if(!match)return;const prediction=predictionMath(selectedPrediction.home,selectedPrediction.away);if(!prediction)return;selectedPrediction.simulation=BRTAPrediction.simulateTie(BRTAPrediction.orderRubbers(prediction.rubbers,'singles-first'),{format:D.format,greenBall:D.greenBall,custom:!!D.meta?.is_custom,setWinsDecideTies:!!D.meta?.competition_rules});refreshPrediction()}
+function runPredictionSimulation(){
+  const match=currentPredictionMatch();
+  if(!match)return;
+  const prediction=predictionMath(selectedPrediction.home,selectedPrediction.away);
+  if(!prediction)return;
+  const button=$('#predictionContent [data-run-simulation]');
+  const top=button?.getBoundingClientRect().top;
+  selectedPrediction.simulation=BRTAPrediction.simulateTie(BRTAPrediction.orderRubbers(prediction.rubbers,'singles-first'),{format:D.format,greenBall:D.greenBall,custom:!!D.meta?.is_custom,setWinsDecideTies:!!D.meta?.competition_rules});
+  refreshPrediction();
+  const next=$('#predictionContent [data-run-simulation]');
+  if(next&&top!=null){
+    next.closest('.prediction-sheet').scrollTop+=next.getBoundingClientRect().top-top;
+    next.focus({preventScroll:true});
+  }
+}
 function simulateRound(round){BRTARoundSimulation.open(round)}
 function closeRoundSimulation(round){delete roundSimulations[round];renderFixtures()}
 

@@ -349,11 +349,14 @@
     const layer = makeOverlay('scorelineChamberTransition', 'model-chamber',
       '<section class="model-chamber-view" tabindex="-1" aria-label="Opening the Scoreline Vault"></section>', () => {});
     zoomFrom(layer, source);
-    setTimeout(() => {
+    const finish = () => {
       layer.remove();
       BRTAOverlays.unlock(layer);
       done();
-    }, 1350);
+    };
+    const animation = layer.querySelector('.chamber-zoom svg')?.getAnimations().find(item => item.animationName === 'chamber-zoom');
+    if (animation) animation.finished.then(finish, finish);
+    else finish();
   } };
 
   function enterChamber() {

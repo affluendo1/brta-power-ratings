@@ -20,7 +20,7 @@
 .race-sheet .race-inline-title,.race-sheet .race-panel::before { display:none }
 .round841-tools { flex-wrap:wrap }
 .race-status-grid b,.race-scenario-row select { overflow-wrap:anywhere }
-.race-heading,.race-run,.fixture-logistics-actions {
+.race-heading,.race-run {
   display:flex; align-items:end; justify-content:space-between; gap:14px; flex-wrap:wrap;
 }
 .race-heading h2,.fixture-logistics h3 { margin:0 0 6px }
@@ -55,7 +55,6 @@
 .race-scenario-row>b { grid-column:1/-1 }
 .fixture-match .race-fixture-tag { color:var(--primary); font-weight:700 }
 .race-fixtures-link { width:100%; margin:10px 0; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:8px; text-align:left }
-.fixture-logistics-actions { margin-top:12px }
 .fixture-logistics-map { min-height:210px; margin:8px 0; border:1px solid var(--border-color) }
 .fixture-logistics details { margin-top:10px }
 .prediction-player-power { font-size:.85em; color:var(--muted-color); font-variant-numeric:tabular-nums; text-align:end }
@@ -73,20 +72,11 @@
 .scoreline-vault-metrics,.scoreline-vault-examples { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:8px; margin:12px 0 }
 .scoreline-vault-metrics b { font-size:1.45rem }
 .scoreline-vault-examples small { display:block }
-.blank-scorecard table td { min-width:55px; height:36px }
 @media(max-width:520px) {
   .race-heading>label,.race-run>label { width:100% }
   .race-panel { margin:12px 0 }
   .race-panel label,.round-lock-fields label { font-size:.88rem }
   .round-lock-fields { grid-template-columns:repeat(2,minmax(0,1fr)) }
-}
-@media print {
-  body:has(.blank-scorecard) * { visibility:hidden }
-  body:has(.blank-scorecard) .blank-scorecard,body:has(.blank-scorecard) .blank-scorecard * { visibility:visible; color:#000; background:#fff }
-  body:has(.blank-scorecard) .overlay:has(.blank-scorecard) { position:absolute; inset:0; overflow:visible }
-  body:has(.blank-scorecard) .overlay:has(.blank-scorecard) .settings-sheet { position:static; width:100%; max-width:none; overflow:visible }
-  .blank-scorecard [data-print-scorecard] { display:none }
-  .blank-scorecard table :is(th,td) { border:1px solid #555 }
 }
 
 /* Finals and fixture panels follow the site's active palette. */
@@ -219,3 +209,18 @@
 .race-details summary { cursor:pointer; font-weight:750 }
 .race-detail-note { color:var(--muted-color); font-size:.85rem }
 .race-lineup-conditions li { display:flex; justify-content:space-between; gap:8px; padding:5px 0; overflow-wrap:anywhere }
+.race-projection-card { color:inherit; font:inherit; text-align:left; cursor:pointer }
+.race-projection-card:hover,.race-projection-card:focus-visible { outline:2px solid var(--primary); outline-offset:2px }
+.race-path { margin-block:16px; padding:clamp(12px,3vw,22px); border:1px solid var(--border-color); border-inline-start:4px solid var(--primary); border-radius:var(--panel-radius); background:var(--surface) }
+.race-path h3,.race-path h4 { margin:0 0 8px }
+.race-path-round { margin-block:14px }
+.race-path-round ul { list-style:none; padding:0; margin:0 }
+.race-path-round li { display:flex; justify-content:space-between; flex-wrap:wrap; gap:6px 12px; padding:8px 0; border-top:1px solid var(--border-color) }
+.race-path-round strong { color:var(--primary); white-space:nowrap }
+.race-path details { margin-top:8px }
+@media(prefers-reduced-motion:no-preference) {
+  .scoreline-arriving .overlay-backdrop { animation:scoreline-backdrop .4s ease-out }
+  .scoreline-arriving .scoreline-vault-sheet { animation:scoreline-arrive .4s ease-out both }
+}
+@keyframes scoreline-backdrop { from { background:#000 } }
+@keyframes scoreline-arrive { from { translate:0 32dvh; opacity:0 } }

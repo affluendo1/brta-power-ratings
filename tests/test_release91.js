@@ -38,6 +38,14 @@ const result = finals.tally(start, 1, [{ id: 'ab', home: 'A', away: 'B', samples
 assert.deepEqual(result.teams.map(row => row.qualifies), [50, 50, 0]);
 assert.equal(result.unresolvedCutoffs, 100);
 assert.equal(result.fixtures[0].lineups[1][1].count, 100);
+assert.deepEqual(result.paths[0].results, [2]);
+assert.deepEqual(result.paths[0].finishes, [[50], [50], [0]]);
+assert.deepEqual(result.paths[0].examples, {});
+const decisive = finals.tally(start, 1, [{ id: 'ab', home: 'A', away: 'B', samples: [
+  { hp: 8, ap: 2, hg: 30, ag: 12, h: 0, a: 0 }
+] }], 100, null, () => 0);
+assert.deepEqual(decisive.paths[0].examples['0:0'], [[8, 2]]);
+assert.deepEqual(decisive.fixtures[0].finishes[0], [[100], [0], [0]]);
 
 const undatedFinal = {
   results: [

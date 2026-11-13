@@ -111,7 +111,7 @@
     }
   }
 
-  function open() {
+  function open(fromTransition = false) {
     window.BRTARouteUI?.secret();
     if (!overlay) {
       overlay = document.createElement('div');
@@ -127,6 +127,7 @@
       document.body.append(overlay);
     }
     overlay.classList.remove('hidden');
+    overlay.classList.toggle('scoreline-arriving', fromTransition);
     document.body.classList.add('modal-open');
     eightRaise(overlay);
     overlay.querySelector('input').value = query;
@@ -137,12 +138,12 @@
     query = canonical(normal(element.textContent).split(" ")[0]);
     const first = localStorage.getItem(storageKey) !== '1';
     localStorage.setItem(storageKey, '1');
-    if (!first || matchMedia('(prefers-reduced-motion: reduce)').matches) return open();
+    if (!first || matchMedia('(prefers-reduced-motion: reduce)').matches || !window.BRTAVaultTransition) return open();
     if (portal) return;
     portal = true;
     BRTAVaultTransition.play(element, () => {
       portal = null;
-      open();
+      open(true);
     });
 
   }

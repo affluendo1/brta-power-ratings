@@ -3,10 +3,8 @@
 
   const model = BRTAFinalsMath;
   const depths = [
-    { title: 'Quick', runs: 2500, samples: 400, variants: 2, seconds: 2, description: 'Likely lineups' },
-    { title: 'Standard', runs: 12000, samples: 1800, variants: 5, seconds: 5, description: 'Recent lineups and substitutions' },
-    { title: 'Deep', runs: 50000, samples: 6500, variants: 10, seconds: 10, description: 'Lineup and rubber-level analysis' },
-    { title: 'Maximum', runs: 150000, samples: 18000, variants: 22, seconds: 25, description: 'Broadest roster and doubles coverage' }
+    { title: 'Quick', runs: 100000, samples: 12000, variants: 16, description: 'Faster forecast with broad lineup coverage' },
+    { title: 'Standard', runs: 150000, samples: 18000, variants: 22, description: 'Broadest roster and doubles coverage' }
   ];
   const pause = ms => new Promise(resolve => setTimeout(resolve, ms));
   let editing;
@@ -16,7 +14,7 @@
     try { return JSON.parse(localStorage.getItem('brta-finals-race-91') || '{}'); } catch { return {}; }
   };
   const key = () => [data.meta.season_id, data.meta.source_section_code || data.meta.section_code, (data.meta.modelChoice || data.meta.predictionModel)].join(':');
-  const pct = (value, total) => total ? (100 * value / total).toFixed(1).replace(/\.0$/, '') + '%' : '—';
+  const pct = (value, total) => total ? (100 * value / total).toFixed(2) + '%' : '—';
   const playedRound = () => BRTAStandings.rounds(data).at(-1)?.round || 0;
   const firstRaceRound = () => Math.min(10, Math.max(1, (Number(data.meta.regular_season_rounds) ||
     Math.max(0, ...BRTAStandings.rounds(data).map(row => row.round), ...pending.map(row => row.round))) - 4));
@@ -187,16 +185,51 @@
       (outcomes ? '<ul>' + outcomes + '</ul>' : '') + '</details>';
   }
 
-  function decisiveRubbers(fixture, source, index, runs) {
-    const qualified = report.teams[index].qualifies;
-    const rows = fixture.rubbers.filter(row => row.homeWins > 0 && row.homeWins < runs).map(row => {
-      const home = row.qualifiesWhenHomeWins[index] / row.homeWins;
-      const away = (qualified - row.qualifiesWhenHomeWins[index]) / (runs - row.homeWins);
-      return { label: row.label, home, away, difference: Math.abs(home - away) };
-    }).sort((a, b) => b.difference - a.difference).slice(0, 3);
-    return rows.length ? '<h4>Individual matches to watch</h4><div class="race-lineup-conditions">' + rows.map(row =>
-      '<div><b>' + esc(row.label) + '</b><ul><li><span>If ' + esc(source.home) + ' wins</span><strong>' + pct(row.home, 1) +
-      '</strong></li><li><span>If ' + esc(source.away) + ' wins</span><strong>' + pct(row.away, 1) + '</strong></li></ul></div>').join('') + '</div>' : '';
+  function pathHTML(index) {
+    const entry = report.teams[index];
+    const status = rows[index].status;
+    const target = status === 'Clinched' ? entry.counts.slice(0, places).findIndex(count => count > 0) : places - 1;
+    if (target < 0) return '';
+    const own = pending.findIndex(fixture => [fixture.home, fixture.away].includes(team));
+    const exact = pointsOnly() && status === 'In contention' ? model.finalRoundPaths(rows, pending, places, team) : null;
+    const winning = exact?.filter(row => row.points > 5);
+    const guaranteed = winning?.length && winning.every(row => row.clear === row.total);
+    const heading = guaranteed ? 'How to make finals' : target === 0 ? 'How to finish first' : 'How to finish #' + (target + 1);
+    const start = '<section class="race-path"><h3>' + heading + '</h3>';
+    const counts = path => path.finishes[index][target];
+    const paths = report.paths.filter(path => counts(path)).sort((a, b) => counts(b) - counts(a));
+    const best = paths[0];
+    if (!guaranteed && !best) return start + '<p>No route to this spot appeared in the forecast.</p></section>';
+    const relevant = pending.map((fixture, i) => {
+      const side = fixture.home === team ? 0 : fixture.away === team ? 1 : -1;
+      const result = guaranteed ? side : best.results[i];
+      const relevance = Math.max(0.0001, entry.counts[target] / report.runs * 0.1);
+      if (guaranteed ? i !== own : side < 0 && resultSwing(report.fixtures[i], index, target) < relevance) return null;
+      const winner = result === 0 ? fixture.home : fixture.away;
+      const loser = result === 0 ? fixture.away : fixture.home;
+      const instruction = result === 2 ? title(fixture) + ' ends in a draw' :
+        winner === team ? 'Defeat ' + loser : (side < 0 ? 'Hope ' : '') + winner + ' beats ' + loser;
+      const range = report.fixtures[i].ranges?.[result];
+      return { i, fixture, instruction, range };
+    }).filter(Boolean);
+    const groups = [...new Set(relevant.map(row => row.fixture.round))].sort((a, b) => a - b);
+    const alternate = paths.find(path => path !== best && path.examples[index + ':' + target] &&
+      relevant.some(({i}) => path.results[i] !== best.results[i]));
+    const example = (alternate || best)?.examples[index + ':' + target];
+    return start + '<p>' + (guaranteed ? 'A win secures a finals spot.' : 'One route from the forecast. The exact scores can matter.') + '</p>' +
+      groups.map(round => '<div class="race-path-round"><h4>' + esc(roundLabel(relevant.find(row => row.fixture.round === round).fixture)) + '</h4><ul>' +
+        relevant.filter(row => row.fixture.round === round).map(({ instruction, range }) => '<li><span>' + esc(instruction) + '</span>' +
+          (range ? '<strong>' + pct(range[0], 1) + ' – ' + pct(range[1], 1) + '</strong>' : '') + '</li>').join('') + '</ul></div>').join('') +
+      (relevant.some(row => row.range) ? '<details><summary>How lineup ranges work</summary><p>Lowest and highest win or draw estimates among lineup pairings with enough samples. Each estimate assumes those two lineups play.</p></details>' : '') +
+      (!guaranteed && example && relevant.length ? '<details><summary>' + (alternate ? 'Another score combination' : 'Example scores') + '</summary><ul>' +
+        relevant.map(({ i, fixture }) => '<li>' + esc(roundLabel(fixture) + ' · ' + title(fixture)) + ' · <b>' + example[i].join('–') + '</b></li>').join('') + '</ul></details>' : '') +
+      '</section>';
+  }
+
+  function resultSwing(fixture, index, target) {
+    const chances = fixture.wins.flatMap((count, side) => count >= 30 ?
+      [(target == null ? fixture.conditions[index][side] : fixture.finishes[index][side][target]) / count] : []);
+    return chances.length > 1 ? Math.max(...chances) - Math.min(...chances) : 0;
   }
 
   function reportHTML() {
@@ -206,34 +239,31 @@
       .sort((a, b) => b.mean - a.mean);
     const projectionCards = projected.map((row, position) => {
       const chance = 100 * row.qualifies / report.runs, seed = row.counts.indexOf(Math.max(...row.counts)) + 1;
-      return '<article class="race-projection-card' + (row.name === team ? ' selected' : '') + '" data-chance="' +
+      return '<button type="button" data-race-select="' + esc(row.name) + '" aria-pressed="' + (row.name === team) + '" class="race-projection-card' + (row.name === team ? ' selected' : '') + '" data-chance="' +
         (chance >= 80 ? 'high' : chance >= 35 ? 'live' : 'low') + '"><header><span>#' + (position + 1) + ' projected</span><b>' + teamName(row.name) +
-        '</b></header><div class="race-projection-number"><strong>' + chance.toFixed(chance < 10 ? 1 : 0) + '%</strong><span>qualify</span></div>' +
+        '</b></header><div class="race-projection-number"><strong>' + pct(row.qualifies, report.runs) + '</strong><span>qualify</span></div>' +
         '<div class="race-probability-track" aria-label="' + esc(row.name + ' qualification chance ' + chance.toFixed(1) + ' percent') + '"><i style="width:' + chance.toFixed(2) + '%"></i></div>' +
-        '<footer><span>' + Math.round(row.mean) + ' expected pts</span><span>Most often #' + seed + '</span></footer></article>';
+        '<footer><span>' + Math.round(row.mean) + ' expected pts</span><span>Most often #' + seed + '</span></footer></button>';
     }).join('');
     const outcome = report.fixtures.map((fixture, i) => {
-      const source = pending[i], variants = report.variants[i];
+      const source = pending[i];
       const score = Object.entries(fixture.points).sort((a, b) => b[1] - a[1])[0];
-      const samples = fixture.wins.reduce((a, b) => a + b, 0);
       const conditions = [source.home + ' win', source.away + ' win', 'Draw'];
-      const split = fixture.wins.map((count, j) => count ? [conditions[j], pct(fixture.conditions[index][j], count), count] : null).filter(Boolean);
-      return { source, variants, score, fixture, samples, split, swing: Math.max(0, ...split.map(row => parseFloat(row[1]))) -
-        Math.min(...(split.length ? split.map(row => parseFloat(row[1])) : [0])) };
-    }).sort((a, b) => b.swing - a.swing);
+      const split = fixture.wins.map((count, j) => [conditions[j], pct(fixture.conditions[index][j], count)]);
+      return { source, score, split, swing: resultSwing(fixture, index) };
+    }).filter(({ swing }) => swing >= Math.max(0.0001, report.teams[index].qualifies / report.runs * 0.1))
+      .sort((a, b) => b.swing - a.swing);
     return '<section class="race-report"><header class="race-report-head"><div><span class="kicker">Simulation complete</span><h3>' + (report.scenario ? 'Lineup scenario' : 'Forecast') +
       '</h3></div><p><b>' + report.runs.toLocaleString() + '</b> seasons<br><small>' + esc(report.depth) + ' · ' + esc(modelDisplayName(data.meta.modelChoice || data.meta.predictionModel)) + '</small></p></header>' +
-      '<div class="race-projection-grid">' + projectionCards + '</div>' +
-      '<div class="race-effects-heading"><h3>Fixtures to watch for ' + esc(team) + '</h3><p>See how each result could change their chance of making finals.</p></div><div class="race-fixture-grid">' +
-      outcome.map(({ source, score, fixture, samples, split, variants }) => '<details><summary><b>' + esc(title(source)) +
+      '<p class="race-detail-note">Select a team to see its route to finals.</p><div class="race-projection-grid">' + projectionCards + '</div>' + pathHTML(index) +
+      (outcome.length ? '<div class="race-effects-heading"><h3>Fixtures to watch for ' + esc(team) + '</h3><p>See how each result could change their chance of making finals.</p></div><div class="race-fixture-grid">' +
+      outcome.map(({ source, score, split }) => '<details><summary><b>' + esc(title(source)) +
         '</b><span>' + esc(roundLabel(source)) + ' · most likely score ' + esc(score[0]) + '</span></summary>' +
         '<h4>' + esc(team) + '’s chance of making finals</h4><ul class="race-outcome-bars">' + split.map(([label, chance]) =>
-          '<li><span>' + esc(label) + '</span><meter aria-label="' + esc(label) + '" min="0" max="100" value="' + parseFloat(chance) + '"></meter><b>' + chance + '</b></li>').join('') + '</ul>' +
-        (report.deep ? decisiveRubbers(fixture, source, index, samples) + '<h4>Chance by lineup</h4><div class="race-lineup-conditions">' + fixture.lineups.map((lineups, side) =>
-          '<div><b>' + esc(source[side ? 'away' : 'home']) + '</b><ul>' +
-          Object.entries(lineups).sort((a,b) => b[1].count - a[1].count).map(([variant, entry]) => '<li><span>' + esc(variants[side][variant]) + '</span><strong>' +
-            pct(entry.qualifies[index], entry.count) + '</strong></li>').join('') + '</ul></div>').join('') + '</div>' : '') +
-        '</details>').join('') + '</div>' +
+          '<li><span>' + esc(label) + '</span>' + (chance === '—' ? '<small>No sampled results</small>' :
+            '<meter aria-label="' + esc(label) + '" min="0" max="100" value="' + parseFloat(chance) + '"></meter>') + '<b>' + chance + '</b></li>').join('') + '</ul>' +
+        '<details><summary>What these chances mean</summary><p>Each bar uses simulated seasons with that fixture result. The other fixtures can still go either way.</p></details>' +
+        '</details>').join('') + '</div>' : '') +
       '<p class="race-detail-note">Forecasts depend on who plays and how each match goes.' +
       (report.unresolvedCutoffs ? ' Teams tied for the last spot share the chance of qualifying in those simulations.' : '') + '</p></section>';
   }
@@ -256,7 +286,7 @@
     dialog.querySelector('[data-race-setup]').innerHTML = '<div class="kicker">Finals race</div><h2>Run the Numbers</h2>' +
       '<h3>Simulation depth</h3><div class="race-depth-grid">' + depths.map((depth,index) =>
         '<button type="button" data-race-depth="' + index + '" aria-pressed="' + (planned === index) + '"><b>' + depth.title +
-        '</b><strong>~' + depth.seconds + 's</strong><small>' + depth.runs.toLocaleString() + ' seasons</small><span>' +
+        '</b><small>' + depth.runs.toLocaleString() + ' seasons</small><span>' +
         depth.description + '</span></button>').join('') + '</div><h3>Team to follow</h3>' +
       '<div class="race-team-pills">' + rows.map(row => '<button type="button" data-race-setup-team="' + esc(row.team) +
         '" aria-pressed="' + (team === row.team) + '">' + esc(row.team) + '</button>').join('') + '</div>' +
@@ -323,7 +353,7 @@
     report = null;
     const savedRounds = snapshots()[key()] || {};
     selectedRound = savedRounds[playedRound() - 1] ? String(playedRound()) : '';
-    planned = 2;
+    planned = 1;
     scenario = {};
     const marker = $('#fixturesList .previous-rounds');
     if (eligible && !data.meta.is_archive && pending.length) {
@@ -352,8 +382,6 @@
     close('#raceSetupOverlay');
     const depth = depths[planned];
     const running = job = { abort: new AbortController() };
-    const start = performance.now();
-    const minimum = depth.seconds * 1000;
     try {
       await BRTAActivity.run('Running the Numbers', async task => {
         const fixtures = [];
@@ -361,8 +389,7 @@
         let stage = 'Preparing lineups';
         let worker;
         const update = () => {
-          const remaining = Math.max(0, minimum - (performance.now() - start));
-          task.stage(completed, stage + ' · ' + (remaining ? '~' + Math.ceil(remaining / 1000) + 's remaining' : 'still working'));
+          task.stage(completed, stage);
         };
         const clock = setInterval(update, 250);
         const timeout = setTimeout(() => running.abort.abort('The forecast timed out.'), 90000);
@@ -377,7 +404,7 @@
           }
           if (signal.aborted) return false;
           const result = await new Promise((resolve, reject) => {
-            worker = new Worker('web/workers/finals-race-worker.js?v=91release');
+            worker = new Worker('web/workers/finals-race-worker.js?v=9101');
             signal.addEventListener('abort', () => reject(Error(signal.reason?.message || signal.reason)), { once: true });
             worker.onerror = event => reject(Error(event.message || 'The simulation worker could not start.'));
             worker.onmessage = ({ data: message }) => {
@@ -397,11 +424,9 @@
               seed: crypto.getRandomValues(new Uint32Array(1))[0] });
           });
           stage = 'Preparing forecast cards';
-          await pause(Math.max(0, minimum - (performance.now() - start)));
           if (signal.aborted) return false;
           const hasScenario = Object.values(scenario).some(pair => pair.some(Boolean));
-          report = { ...result, variants: fixtures.map(fixture => fixture.variants), depth: depth.title,
-            deep: depth.variants >= 10 || hasScenario, scenario: hasScenario };
+          report = { ...result, depth: depth.title, scenario: hasScenario };
           if (!hasScenario && !data.meta.is_custom) {
             const previous = snapshots();
             const history = previous[key()] ||= {};
@@ -496,7 +521,15 @@
       $('#raceSetupOverlay details').open = true;
     }
     const button = event.target.closest('[data-race-select]');
-    if (button) follow(button.dataset.raceSelect);
+    if (button) {
+      const host = button.closest('.race-panel');
+      const sheet = button.closest('.settings-sheet');
+      const top = sheet?.scrollTop;
+      follow(button.dataset.raceSelect);
+      if (top != null) sheet.scrollTop = top;
+      const selector = button.classList.contains('race-projection-card') ? '.race-projection-card' : '[data-race-select]';
+      [...host.querySelectorAll(selector)].find(item => item.dataset.raceSelect === team)?.focus({preventScroll:true});
+    }
   });
   document.addEventListener('change', event => {
     const input = event.target;

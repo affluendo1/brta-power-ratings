@@ -108,7 +108,9 @@
     const fixtures = fixtureList.filter(fixture => !bye(fixture) && indices.has(fixture.home) && indices.has(fixture.away))
       .map(fixture => ({ ...fixture, home: indices.get(fixture.home), away: indices.get(fixture.away) }));
     const teams = names.map(name => ({ name, counts: Array(names.length).fill(0), qualifies: 0, points: 0 }));
+    const paths = new Map();
     const stats = fixtures.map(fixture => ({ id: fixture.id, points: {}, wins: [0, 0, 0],
+      finishes: names.map(() => [0, 1, 2].map(() => Array(places).fill(0))),
       conditions: Array.from({ length: names.length }, () => [0, 0, 0]), lineups: [{}, {}],
       rubbers: (fixture.rubberLabels || []).map(label => ({ label, homeWins: 0, qualifiesWhenHomeWins: Array(names.length).fill(0) })) }));
     const order = names.map((_, i) => i);
@@ -127,6 +129,15 @@
         return sample;
       });
       const finish = rank(ladder, order);
+      const results = outcomes.map(score => score.hp > score.ap ? 0 : score.hp < score.ap ? 1 : 2);
+      const pathKey = results.join('');
+      let path = paths.get(pathKey);
+      // Keep the most useful report data bounded for unusually large schedules.
+      if (!path && paths.size < 4096) {
+        path = { results, count: 0, finishes: names.map(() => Array(places).fill(0)), examples: {} };
+        paths.set(pathKey, path);
+      }
+      if (path) path.count++;
       const qualifies = Array(names.length).fill(0);
       for (let start = 0; start < finish.length;) {
         let end = start + 1;
@@ -141,6 +152,13 @@
           teams[team].qualifies += share;
           teams[team].points += ladder[team].points;
           for (let seed = start; seed < end; seed++) teams[team].counts[seed] += 1 / (end - start);
+          for (let seed = start; seed < Math.min(end, places); seed++) {
+            for (let i = 0; i < fixtures.length; i++) stats[i].finishes[team][results[i]][seed] += 1 / (end - start);
+            if (path) {
+              path.finishes[team][seed] += 1 / (end - start);
+              if (end - start === 1) path.examples[team + ':' + seed] ??= outcomes.map(score => [score.hp, score.ap]);
+            }
+          }
         }
         start = end;
       }
@@ -165,7 +183,7 @@
       }
       if ((run + 1) % 100 === 0 || run === runs - 1) onProgress?.(run + 1);
     }
-    return { runs, teams, fixtures: stats, unresolvedCutoffs };
+    return { runs, teams, fixtures: stats, paths: [...paths.values()], pathsComplete: paths.size < 4096, unresolvedCutoffs };
   }
 
   const api = { bye, remaining, pointsCap, bounds, finalRoundPaths, tally };
