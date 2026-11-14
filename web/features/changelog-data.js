@@ -2,6 +2,16 @@
 // Retrospective entries use source-commit timestamps; sourceCommit records their provenance.
 window.BRTA_RELEASES = Object.freeze([
   {
+    "version": "9.1.2",
+    "size": "small",
+    "title": "Racquet Club",
+    "committedAt": "2026-11-14T22:49:08+11:00",
+    "changes": [
+      "Enable Gamify the Site under Extras to earn Tennis Balls while exploring BRTA Power Ratings.",
+      "Collect 60 racquets, sell duplicates for Club Cash, and equip accessories to improve your next spin."
+    ]
+  },
+  {
     "version": "9.1.1.1",
     "size": "tiny",
     "committedAt": "2026-11-14T21:30:00+11:00",

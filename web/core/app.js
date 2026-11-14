@@ -43,7 +43,7 @@ function personButton(name){return '<button class="person" data-player="'+esc(na
 function globalPersonButton(row){return '<button class="person" data-global-player="'+esc(row.player)+'" data-section-code="'+esc(row.sectionCode)+'" data-season-key="'+esc(row.seasonKey||activeHistorySeasonId||'')+'">'+esc(publicPlayerName(row.player))+'</button>'}
 function resultPerson(name,label=name){const known=singles.some(x=>x.player===name)||dinds.some(x=>x.player===name);return known?'<button class="person" data-player="'+esc(name)+'">'+esc(publicPlayerName(label))+'</button>':esc(publicPlayerName(label))}
 function close(id){const overlay=$(id);if(!overlay)return;overlay.classList.add('hidden');if(id==='#profileOverlay')$('#profileMatchExplorer')?.classList.add('hidden');if(!document.querySelector('.overlay:not(.hidden)'))document.body.classList.remove('modal-open');if(id==='#predictionOverlay'||id==='#resultOverlay')window.BRTAFixtureDetails?.closeMap(id);window.BRTARouteUI?.close(id)}
-function switchPage(page){activePage=page;if(page!=='ratings')cancelAuxiliaryReveal();$$('.main-tab').forEach(b=>b.classList.toggle('active',b.dataset.page===page));$$('.page').forEach(p=>p.classList.toggle('active',p.id==='page-'+page));if(page==='teams')window.BRTAClubs?.mount(D);else window.BRTAClubs?.leave();window.BRTARouteUI?.page()}
+function switchPage(page){const changed=activePage!==page;activePage=page;if(page!=='ratings')cancelAuxiliaryReveal();$$('.main-tab').forEach(b=>b.classList.toggle('active',b.dataset.page===page));$$('.page').forEach(p=>p.classList.toggle('active',p.id==='page-'+page));if(page==='teams')window.BRTAClubs?.mount(D);else window.BRTAClubs?.leave();window.BRTARouteUI?.page();if(changed&&page)racquetClubActivity('tab',page)}
 
 function auxiliaryEnabled(){return !!window.AuxiliaryPortal?.isUnlocked?.()}
 function auxiliarySectionEligible(){return !!(D&&window.AuxiliaryModule?.isHighestSundaySection(D.meta,viewCatalog))}
@@ -707,9 +707,14 @@ function openAuxiliaryBackstory(context){
   $('#roundContent').innerHTML='<div class="overlay-title"><div class="kicker">BACKSTORY</div><h2>'+esc(s.player)+'</h2><p>'+esc(context.sectionLabel)+' · '+esc(D.meta.season_label||'Current season')+'</p></div><p>Across '+s.matches+' completed singles matches, '+esc(s.player)+' has stayed unbeaten while conceding '+s.ga+' games. The schedule has drawn '+context.rivalries.length+' opponents from this section; the rest of the ratings have continued their day entirely normally.</p><div class="lab-context-actions"><button class="auxiliary-archive-button" type="button" data-aux-open-archive>Open Royal Archive</button></div>';
   $('#roundOverlay').classList.remove('hidden');document.body.classList.add('modal-open');
 }
+function racquetClubActivity(action,target){
+  window.dispatchEvent(new CustomEvent('brta-club-activity',{detail:{action,target}}));
+}
 function rainbowPlayerHeading(){
   const heading=$('#profileContent .profile-head h2');
-  if(!heading || Math.random()>=.01)return;
+  if(!heading)return;
+  racquetClubActivity('player',heading.textContent);
+  if(Math.random()>=.01)return;
   heading.classList.add('player-lab-rainbow');
   window.dispatchEvent(new Event('brta-player-lab-rainbow'));
 }

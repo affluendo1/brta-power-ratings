@@ -1,0 +1,110 @@
+.header-actions .rc-entry[hidden], #racquetClubSettings[hidden], .rc-dialog [hidden] { display:none!important }
+.rc-dialog {
+  --rc-green:#cde87a; --rc-ink:#eff4df; --rc-bg:#151c16; --rc-panel:#202a21; --rc-border:#485a47;
+  color:var(--rc-ink); background:var(--rc-bg); border:1px solid var(--rc-border); border-radius:22px;
+  box-shadow:0 24px 80px #0008; width:min(970px,calc(100% - 24px)); max-width:none;
+  max-height:min(92dvh,850px); padding:0; overflow:hidden; box-sizing:border-box;
+}
+.rc-dialog[open] { display:flex; flex-direction:column }
+.rc-dialog::backdrop { background:#080c0bd9 }
+.rc-dialog .button { min-height:42px; white-space:normal; color:var(--rc-ink); border-color:var(--rc-border); background:var(--rc-panel) }
+.rc-dialog .button.primary { background:var(--rc-green); color:#172016; border-color:var(--rc-green) }
+.rc-dialog :focus-visible { outline:2px solid var(--rc-green); outline-offset:2px }
+.rc-dialog button:disabled { opacity:.55; cursor:not-allowed }
+.rc-header,.rc-summary,.rc-tabs { padding:14px 24px; flex:none }
+.rc-header { display:flex; justify-content:space-between; align-items:start; gap:12px;
+  background:linear-gradient(125deg,#303f2c,#202923 64%,#283427) }
+.rc-header .kicker { color:var(--rc-green); margin:0 0 4px }
+.rc-header h2 { margin:0; font-size:clamp(1.7rem,4vw,2.9rem); line-height:1.1; color:inherit }
+.rc-header button { font-size:1.3rem; min-width:44px }
+.rc-summary { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px; border-bottom:1px solid var(--rc-border) }
+.rc-summary label,.rc-settings label { display:flex; gap:8px; align-items:center }
+.rc-settings { overflow:auto }
+.rc-dialog input[type=checkbox] { accent-color:var(--rc-green); width:19px; height:19px }
+.rc-tabs { display:flex; gap:6px; overflow:auto; border-bottom:1px solid var(--rc-border) }
+.rc-tabs button { flex:none; min-height:42px; padding:8px 14px; border-radius:8px; border:1px solid transparent;
+  background:var(--rc-panel); color:inherit; cursor:pointer }
+.rc-tabs button[aria-pressed=true] { color:#172016; background:var(--rc-green) }
+.rc-body { overflow:auto; overscroll-behavior:contain; padding:20px 24px 24px; min-height:0 }
+.rc-body h3 { color:inherit; margin:0 0 8px }
+.rc-body p { margin:8px 0 }
+.rc-stats { display:grid; grid-template-columns:repeat(auto-fit,minmax(110px,1fr)); gap:8px; margin:0 0 16px }
+.rc-stats div { padding:12px; background:var(--rc-panel); border:1px solid var(--rc-border); border-radius:10px }
+.rc-stats dt,.rc-dialog small { color:#c3d1bc }
+.rc-stats dd { margin:4px 0 0; font-weight:750; overflow-wrap:anywhere }
+.rc-statistics { grid-template-columns:repeat(auto-fit,minmax(150px,1fr)) }
+.rc-progress { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:8px; margin-bottom:12px }
+.rc-dialog progress { accent-color:var(--rc-green); width:100%; height:10px }
+.rc-reel { overflow:hidden; position:relative; min-height:158px; margin-bottom:14px; border:1px solid var(--rc-border);
+  border-radius:14px; background:linear-gradient(90deg,#18231b,#314638,#18231b) }
+.rc-reel::after { content:''; position:absolute; z-index:1; pointer-events:none; top:0; bottom:0; left:50%;
+  width:2px; background:var(--rc-green); box-shadow:0 0 13px var(--rc-green) }
+.rc-reel.rc-titanium::after { background:#edfbff; box-shadow:0 0 20px 3px #b2e9fc }
+.rc-track { position:relative; display:flex; width:max-content; gap:8px; padding:12px }
+.rc-wheel-card { flex:0 0 128px; width:128px; text-align:center; display:grid; align-content:center; justify-items:center;
+  min-height:132px; padding:8px; box-sizing:border-box; border:1px solid var(--rarity,#b1bcae); border-radius:10px; background:#1a241c; font-size:.8rem }
+.rc-spin-actions,.rc-actions { display:flex; align-items:center; flex-wrap:wrap; gap:8px }
+.rc-spin-button { min-width:155px; font-size:1.05rem; font-weight:800 }
+.rc-bonus { box-shadow:0 0 18px #cde87a70 }
+.rc-tier-0 { --rarity:#bdc8c1 } .rc-tier-1 { --rarity:#8dd798 } .rc-tier-2 { --rarity:#8ac4ff }
+.rc-tier-3 { --rarity:#caa5fa } .rc-tier-4 { --rarity:#ff9c9a } .rc-tier-5 { --rarity:#ffb37f }
+.rc-tier-6 { --rarity:#f6db83 } .rc-tier-7 { --rarity:#bbf5fa }
+.rc-badge { color:var(--rarity); font-size:.76rem; font-weight:800; letter-spacing:.045em }
+.rc-racquet-art { display:inline-block; width:43px; height:79px; transform:rotate(23deg); position:relative;
+  color:hsl(var(--paint) 65% 67%); flex:none; margin:5px }
+.rc-racquet-art i { position:absolute; inset:1px 4px 30px; border:3px solid currentColor; border-radius:50% 50% 45% 45%;
+  background:repeating-linear-gradient(90deg,#dae5d34c 0 1px,transparent 1px 5px),repeating-linear-gradient(0deg,#dae5d34c 0 1px,transparent 1px 5px) }
+.rc-racquet-art b { position:absolute; top:47px; bottom:0; width:7px; left:18px; border-radius:2px;
+  background:linear-gradient(currentColor 35%,transparent 35%),repeating-linear-gradient(0deg,#bfc7b9 0 2px,#586155 2px 4px) }
+.rc-mystery { color:#657867; opacity:.55 }
+.rc-result { display:flex; align-items:center; justify-content:center; min-height:135px; margin-top:16px; padding:12px; gap:24px; position:relative;
+  border:1px solid var(--rarity); border-radius:16px; background:radial-gradient(ellipse at 40% 120%,color-mix(in srgb,var(--rarity) 30%,#202a21),#202a21 75%) }
+.rc-result strong,.rc-result div>span { display:block }
+.rc-result strong { font-size:clamp(1.2rem,4vw,2rem) }
+.rc-result.rc-tier-2 { box-shadow:0 0 20px #5496e235 }
+.rc-result.rc-hof { background:linear-gradient(120deg,#373221,#484737,#28322b) }
+.rc-result.rc-regna,.rc-card.rc-tier-7 { background:linear-gradient(125deg,#26363d,#343149,#223a39) }
+.rc-reveal { isolation:isolate; overflow:hidden; animation:rc-arrival .7s ease-out both }
+.rc-reveal.rc-tier-3 { --rc-reveal-duration:.7s }
+.rc-reveal.rc-tier-4 { --rc-reveal-duration:1s } .rc-reveal.rc-tier-5 { --rc-reveal-duration:1.2s }
+.rc-reveal.rc-tier-6 { --rc-reveal-duration:1.4s } .rc-reveal.rc-tier-7 { --rc-reveal-duration:1.8s }
+.rc-reveal::before { content:''; position:absolute; z-index:-1; pointer-events:none; inset:0;
+  background:linear-gradient(105deg,transparent 20%,color-mix(in srgb,var(--rarity) 35%,transparent),transparent 80%);
+  animation:rc-sweep var(--rc-reveal-duration,.7s) ease-out both }
+.rc-reveal.rc-regna::before { background:conic-gradient(from 90deg,#a4e4f422,#ecc3fd44,#fdf9c833,#a4e4f422) }
+@keyframes rc-arrival { from { opacity:.45; transform:scale(.985) } }
+@keyframes rc-sweep { from { opacity:.2; transform:translateX(-80%) } to { opacity:.85; transform:translateX(35%) } }
+.rc-grid,.rc-gear-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(145px,1fr)); gap:9px; margin-top:12px }
+.rc-gear-grid { grid-template-columns:repeat(auto-fit,minmax(255px,1fr)) }
+.rc-card { background:var(--rc-panel); border:1px solid var(--rc-border); border-radius:12px }
+.rc-grid .rc-card,.rc-card:has(.rc-detail) { border-color:color-mix(in srgb,var(--rarity) 65%,var(--rc-border)) }
+.rc-item { appearance:none; font:inherit; display:grid; justify-items:start; gap:4px; width:100%; height:100%;
+  text-align:left; padding:12px; color:inherit; background:transparent; border:0; border-radius:12px }
+button.rc-item:hover { background:#ffffff0c }
+.rc-item span:not(.rc-badge,.rc-racquet-art),.rc-gear-row small { font-size:.82rem; color:#c3d1bc }
+.rc-tools { display:flex; flex-wrap:wrap; align-items:end; gap:10px; margin:12px 0 }
+.rc-tools label,.rc-actions label { display:grid; gap:3px; font-size:.84rem }
+.rc-dialog select,.rc-dialog input:not([type=checkbox]) { min-height:42px; padding:5px 8px;
+  color:var(--rc-ink); background:var(--rc-panel); border:1px solid var(--rc-border); border-radius:8px; font:inherit }
+.rc-actions input { width:68px }
+.rc-detail { padding:14px; display:flex; align-items:center; gap:20px }
+.rc-detail .rc-racquet-art { scale:1.2 }
+.rc-gear { padding:12px }
+.rc-gear-row { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:8px; padding:10px 0; border-top:1px solid var(--rc-border) }
+.rc-gear-row small { display:block; margin-top:4px }
+.rc-message:empty { display:none }
+.rc-achievement { color:#f6db83 }
+#racquetClubStatus { position:fixed; z-index:9999; right:16px; bottom:max(15px,env(safe-area-inset-bottom)); pointer-events:none; opacity:0 }
+#racquetClubStatus.rc-notify { opacity:1; background:#223223; color:#eff4df; padding:8px 13px; border-radius:9px; box-shadow:0 4px 14px #0005; animation:rc-arrival .25s ease-out }
+@media(max-width:560px) {
+  .rc-header,.rc-summary,.rc-tabs,.rc-body { padding-inline:12px }
+  .rc-summary { font-size:.88rem }
+  .rc-grid { grid-template-columns:repeat(2,minmax(0,1fr)) }
+  .rc-tools label { flex:1 1 42%; min-width:0 }
+  .rc-tools select,.rc-tools input { width:100%; box-sizing:border-box }
+  .rc-detail { gap:8px }
+  .rc-detail .rc-racquet-art { scale:.9 }
+}
+@media(prefers-reduced-motion:reduce) {
+  .rc-reveal,.rc-reveal::before,#racquetClubStatus.rc-notify { animation:none }
+}
