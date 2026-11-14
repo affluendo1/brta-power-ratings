@@ -79,3 +79,78 @@ const boosted=M.probabilities(next.effectiveLuck,next.mutation);
 assert(boosted[59]>odds[59]);
 assert(Math.abs(boosted.reduce((a,b)=>a+b,0)-1)<1e-14);
 console.log('Racquet Club catalog, exact odds, 500,000 sample spins, rewards, sales, gear and bonus spins passed.');
+
+// Split-wheel totals and conditional odds reproduce the original model at any luck.
+for (const [luck,mutation] of [[1,1],[50,1.8]]) {
+  const weights=M.probabilities(luck,mutation), wheel=M.wheel(weights);
+  assert.equal(wheel.length,27);
+  assert(Math.abs(wheel.reduce((sum,entry)=>sum+entry.weight,0)-1)<1e-14);
+  for(const entry of wheel.filter(x=>x.key)){
+    const game=M.initial(), key=M.makeKey(game,entry.tier,weights,now);
+    assert(Math.abs(key.weights.reduce((sum,r)=>sum+r.weight,0)-1)<1e-14);
+    for(const r of key.weights) assert(Math.abs(entry.weight*r.weight-weights[r.id-1])<1e-15);
+  }
+}
+const game=M.initial();
+game.cash=1e6;
+game.balls=2;
+assert(M.buyFuel(game,'gel'));
+assert(M.buyFuel(game,'gel'));
+assert(M.craft(game,'match'));
+assert.equal(game.fuel.gel,0);
+assert(M.activate(game,'match',now));
+const keyRoll=M.spin(game,.9999999,now);
+assert.equal(keyRoll.tier,7);
+assert.equal(keyRoll.key,true);
+assert.equal(game.balls,1);
+assert.equal(game.spins,1);
+assert.equal(game.boosts.luck,undefined);
+assert.equal(Object.keys(game.items).length,0);
+const saved=JSON.parse(JSON.stringify(game));
+const key=saved.keys[0];
+assert.equal(key.acquired,now);
+assert(Math.abs(key.weights[1].weight-3/7)<1e-14);
+assert(M.buyFuel(saved,'training'));
+assert(M.activate(saved,'training',now));
+assert(M.buy(saved,'graphite',true));
+const pull=M.redeem(saved,key.id,.99,now+60000);
+assert.equal(pull.id,60);
+assert.equal(pull.odds,key.weights[1].weight);
+assert.equal(saved.balls,1);
+assert.equal(saved.spins,1);
+assert.equal(saved.boosts.luck.remaining,5);
+assert.equal(M.redeem(saved,key.id,.99,now),null);
+assert.equal(saved.keysRedeemed,1);
+assert.equal(M.spin(saved,0,now).id,1);
+assert.equal(saved.boosts.luck.remaining,4);
+assert.equal(M.spin(saved,0,now),null);
+assert.equal(saved.boosts.luck.remaining,4);
+assert(M.buyFuel(saved,'electrolyte'));
+assert.equal(M.activate(saved,'electrolyte',now),false);
+assert(M.activate(saved,'electrolyte',now,true));
+assert.equal(M.next(saved,now+599999).effectiveLuck,1.5);
+assert.equal(M.next(saved,now+600000).effectiveLuck,1);
+assert(M.buy(saved,'alu',true));
+assert(M.buy(saved,'gold',true));
+assert(M.buyFuel(saved,'slam'));
+assert(M.activate(saved,'slam',now,true));
+saved.spins=9;
+assert.equal(M.next(saved,now).uncappedLuck,100);
+assert.equal(M.next(saved,now).effectiveLuck,50);
+assert(M.buyFuel(saved,'shake'));
+assert(M.activate(saved,'shake',now));
+assert.equal(M.sell(saved,60,1,true,now),150000);
+assert.equal(saved.boosts.sale.remaining,2);
+
+const cart=M.initial();
+cart.cash=250000;
+assert(M.buy(cart,'basket',true));
+for(let i=0;i<5;i++) M.reward(cart,'tab','tab-'+i,now+3000*i);
+assert.equal(cart.balls,6);
+assert.equal(cart.ballRemainder,0);
+assert.equal(M.reward(cart,'tab','tab-5',now+15000),0);
+for(const [id,recipe] of Object.entries(M.recipes)){
+  const total=recipe.fee+Object.entries(recipe.ingredients).reduce((sum,[ingredient,count])=>sum+M.fuelItem(ingredient).price*count,0);
+  assert(total<M.fuelItem(id).price,id);
+}
+console.log('Key odds, durable snapshots, redemption, fuel crafting, expiry, sales and fractional earnings passed.');

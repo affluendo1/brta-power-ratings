@@ -2,13 +2,16 @@
   'use strict';
   const M = window.BRTARacquetModel;
   const key = 'brta-racquet-club-v1';
-  const sections = ['Spin', 'Inventory', 'Collection', 'Equipment', 'Accessory Shop', 'Statistics'];
+  const sections = ['Spin','Key Vault','Collection','Inventory','Equipment','Accessory Shop','Fuel Station','Statistics'];
   const icons = ['◉', '▧', '⊙', '✦'];
   const $ = selector => document.querySelector(selector);
   const number = value => new Intl.NumberFormat('en-AU').format(value);
   const cash = value => '$' + number(value);
   const percent = p => (p * 100).toPrecision(4) + '%';
   const ratio = n => Number(n.toFixed(3)) + '×';
+  const known = r => r.tier < 2 || !!state.items[r.id]?.pulled;
+  const obtained = () => Object.values(state.items).reduce((sum,item)=>sum+item.pulled,0);
+  const keyCount = tier => state.keys.filter(key=>key.tier===tier).length;
   const date = time => new Date(time).toLocaleDateString('en-AU');
   const extras = () => auxiliaryEnabled();
   const openButton = document.createElement('button');
@@ -20,7 +23,7 @@
 
   let state = read(), dialog, panel = 'Spin', selected = 0, animation, busy = false, saving = false;
   let filter = 'all', sort = 'high', query = '', confirmId = 0, actionMessage = '';
-  let mode = 'club', toastTimer, spinVersion = 0;
+  let mode = 'club', toastTimer, spinVersion = 0, fuelConfirmation = '', inventoryView = 'Racquets';
   const motion = matchMedia('(prefers-reduced-motion: reduce)');
   const enabled = () => extras() && state.enabled;
 
@@ -103,6 +106,7 @@
     dialog.addEventListener('close', () => {
       cancelSpinPresentation();
       confirmId = 0;
+      fuelConfirmation = '';
       actionMessage = '';
     });
     document.body.append(dialog);
@@ -124,9 +128,8 @@
     dialog.querySelector('[data-rc-close]')?.focus();
   }
 
-  function art(r, mystery = false) {
-    return '<span aria-hidden="true" class="rc-racquet-art' + (mystery ? ' rc-mystery' : '') + '" style="--paint:' +
-      (mystery ? 0 : (r.id * 43) % 360) + '"><i></i><b></b></span>';
+  function art(r) {
+    return '<span aria-hidden="true" class="rc-racquet-art" style="--paint:' + (r.id * 43) % 360 + '"><i></i><b></b></span>';
   }
   const label = r => r.name + (r.parent ? ' ✦' : '');
   const baseOdds = r => r.denominator ? '1 in ' + number(r.denominator) : percent(r.base);
@@ -138,7 +141,7 @@
     '</dd></div><div><dt>Spin time</dt><dd>' + e.duration.toFixed(1) +
     ' s</dd></div><div><dt>Tenth spin</dt><dd>' + ratio(e.bonus) +
     '</dd></div><div><dt>Mutation weight</dt><dd>+' + Math.round((e.mutation - 1) * 100) +
-    '%</dd></div><div><dt>Selling bonus</dt><dd>+' + Math.round((e.sale - 1) * 100) + '%</dd></div></dl>';
+    '%</dd></div><div><dt>Selling bonus</dt><dd>+' + Math.round((e.sale - 1) * 100) + '%</dd></div><div><dt>Ball earnings</dt><dd>+' + e.balls + '%</dd></div></dl>';
 
   function draw() {
     const oldFocus = document.activeElement;
@@ -155,7 +158,7 @@
       '<div class="rc-summary"><strong data-rc-balance>' + number(state.balls) + ' 🎾 · ' + cash(state.cash) + ' Club Cash</strong>' +
       '<label><input type="checkbox" data-rc-motion data-rc-focus="motion"' + (state.skip ? ' checked' : '') +
       '> Skip animations</label></div><nav class="rc-tabs" aria-label="Racquet Club panels">' +
-      sections.map(tab => '<button type="button" data-rc-tab="' + tab + '" data-rc-focus="tab-' + tab + '" aria-pressed="' + (tab === panel) + '">' + tab + '</button>').join('') +
+      sections.map(tab => '<button type="button" data-rc-tab="' + tab + '" data-rc-focus="tab-' + tab + '" aria-pressed="' + (tab === panel) + '">' + tab + (tab === 'Key Vault' && state.keys.length ? ' · ' + state.keys.length : '') + '</button>').join('') +
       '</nav><div class="rc-body" role="region" aria-label="' + panel + '">' + content() +
       '<p class="rc-message" role="status">' + actionMessage + '</p></div>');
     dialog.querySelector('.rc-body').scrollTop = scroll;
@@ -166,6 +169,14 @@
 
   function content() {
     if (panel === 'Spin') return spinPanel();
+    if (panel === 'Key Vault') return keyPanel();
+    if (panel === 'Fuel Station') return activePanel() + fuelPanel();
+    if (panel === 'Inventory') {
+      const tabs = ['Racquets','Keys','Consumables'].map(label=>'<button class="button secondary" data-rc-inventory="' +
+        label + '" aria-pressed="' + (inventoryView===label) + '">' + label + '</button>').join('');
+      return '<nav class="rc-actions" aria-label="Inventory categories">' + tabs + '</nav>' +
+        (inventoryView==='Keys'?keyPanel(false):inventoryView==='Consumables'?activePanel()+fuelInventory():racquetPanel(false));
+    }
     if (panel === 'Equipment' || panel === 'Accessory Shop') return gearPanel();
     if (panel === 'Statistics') return statsPanel();
     return racquetPanel(panel === 'Collection');
@@ -173,9 +184,11 @@
 
   function spinPanel() {
     const setup = M.next(state);
-    return '<div class="rc-spin">' + gearSummary(setup) + '<div class="rc-progress">' + spinProgress(setup) + '</div>' +
+    return '<div class="rc-spin">' + gearSummary(M.effects(state)) +
+      '<div data-rc-active>' + activeMarkup() + '</div><p data-rc-luck>' + luckText(setup) + '</p>' +
+      '<p><button class="button secondary" data-rc-tab="Key Vault">Key Vault · ' + state.keys.length + '</button></p>' + '<div class="rc-progress">' + spinProgress(setup) + '</div>' +
       '<div class="rc-reel" aria-hidden="true"><div class="rc-track">' +
-      [3,10,23,34,51].map(id => wheelCard(M.racquet(id))).join('') + '</div></div>' +
+      [{id:3,tier:0},{id:10,tier:0},{tier:2,key:true},{id:17,tier:1},{tier:4,key:true}].map(entry => wheelCard(entry)).join('') + '</div></div>' +
       '<div class="rc-spin-actions"><button class="button primary rc-spin-button' + (setup.bonusSpin ? ' rc-bonus' : '') +
       '" data-rc-spin data-rc-focus="spin"' + (!state.balls || busy ? ' disabled' : '') +
       '>Spin · 1 🎾</button><button class="button secondary" data-rc-skip hidden>Skip spin animation</button></div>' +
@@ -191,42 +204,126 @@
       '</strong><progress aria-label="Tenth-spin progress" value="' + progress + '" max="10"></progress>';
   }
 
-  function wheelCard(r) {
+  function wheelCard(entry, hidden = false) {
+    if (hidden) return '<span class="rc-wheel-card rc-unknown"><strong>?</strong></span>';
+    if (entry.key) return '<span class="rc-wheel-card rc-tier-' + entry.tier + '"><span class="rc-key-icon" aria-hidden="true">⚿</span><b>' + M.keyName(entry.tier) + '</b></span>';
+    const r = M.racquet(entry.id);
     return '<span class="rc-wheel-card rc-tier-' + r.tier + '">' + art(r) + '<b>' + label(r) + '</b></span>';
   }
 
-  function resultCard(last, reveal = false) {
+  function resultCard(last, reveal = false, redemption = false) {
+    if (last.key) return '<div class="rc-result rc-tier-' + last.tier + '" role="status"><span class="rc-key-icon" aria-hidden="true">⚿</span><div><strong>' +
+      M.keyName(last.tier) + '</strong><span>' + percent(last.odds) + ' on this spin</span><button class="button secondary" data-rc-tab="Key Vault">Open Key Vault</button></div></div>';
     const r = M.racquet(last.id);
     return '<div class="rc-result rc-tier-' + r.tier + (reveal && r.tier >= 3 ? ' rc-reveal' : '') +
       (r.id === 60 ? ' rc-regna' : r.id === 59 ? ' rc-hof' : '') + '" role="status">' + art(r) +
       '<div>' + badge(r) + '<strong>' + label(r) + '</strong><span>' + percent(last.odds) +
-      ' on this spin' + (last.new ? ' · New discovery' : '') + (last.bonusSpin ? ' · Bonus spin' : '') + '</span></div></div>';
+      (redemption ? ' inside this key' : ' on this spin') + (last.new ? ' · New discovery' : '') +
+      (last.bonusSpin ? ' · Bonus spin' : '') + '</span></div></div>';
+  }
+
+  function keyPanel(openable = true) {
+    const weights = M.wheel(M.probabilities());
+    return '<div class="rc-key-grid">' + M.keyTiers.map(tier => {
+      const key = state.keys.find(item=>item.tier===tier);
+      return '<article class="rc-card rc-gear rc-tier-' + tier + '"><span class="rc-key-icon" aria-hidden="true">⚿</span><h3>' +
+        M.keyName(tier) + ' × ' + keyCount(tier) + '</h3><p>Base drop rate ' +
+        percent(weights.find(item=>item.key&&item.tier===tier).weight) + '</p>' +
+        (openable ? '<button class="button secondary" data-rc-redeem="' + (key?.id || 0) +
+          '" data-rc-focus="key-' + tier + '"' + (!key || busy ? ' disabled' : '') + '>Open Key</button>' : '') + '</article>';
+    }).join('') + '</div>' + (openable ?
+      '<div class="rc-key-stage"><div class="rc-reel" aria-hidden="true" hidden><div class="rc-track"></div></div>' +
+      '<button class="button secondary" data-rc-skip hidden>Skip key animation</button>' +
+      (state.lastKey && !busy ? resultCard(state.lastKey,false,true) : '') + '</div>' :
+      '<p><button class="button secondary" data-rc-tab="Key Vault">Open Key Vault</button></p>');
+  }
+
+  function luckText(setup) {
+    return 'Upcoming spin luck <strong>' + ratio(setup.effectiveLuck) + '</strong>' +
+      (setup.uncappedLuck > setup.effectiveLuck ? ' · Capped from ' + ratio(setup.uncappedLuck) : '') +
+      ' · Equipment ' + ratio(setup.gearLuck) + (setup.bonusSpin ? ' · Tenth spin ' + ratio(setup.bonus) : '') +
+      (setup.boosts.some(b=>b.effect.luck) ? ' · Fuel ' + ratio(setup.boosts.find(b=>b.effect.luck).effect.luck) : '');
+  }
+
+  function fuelEffect(item) {
+    const e = item.effect;
+    const bonus = [e.luck ? ratio(e.luck) + ' luck' : '', e.mutation ? '+' + Math.round((e.mutation-1)*100) + '% mutation weight' : '',
+      e.balls ? '+' + e.balls + '% Tennis Balls' : '', e.sale ? '+' + Math.round((e.sale-1)*100) + '% selling cash' : ''].filter(Boolean).join(' · ');
+    const duration = item.minutes ? item.minutes + ' min' : item.slot === 'sale' ? item.charges + ' sales' : item.charges === 1 ? 'Next spin' : item.charges + ' spins';
+    return bonus + ' · ' + duration;
+  }
+
+  function activeMarkup() {
+    const now = Date.now(), boosts = M.activeBoosts(state,now);
+    return boosts.length ? '<h3>Active boosts</h3><ul class="rc-boosts">' + boosts.map(b => {
+      const seconds = b.expires ? Math.ceil((b.expires-now)/1000) : 0;
+      const remaining = b.expires ? Math.floor(seconds/60) + 'm ' + seconds % 60 + 's' :
+        b.slot === 'sale' ? b.remaining + ' sales' : b.remaining === 1 ? 'Next spin' : b.remaining + ' spins';
+      return '<li><strong>' + b.name + '</strong> · ' + fuelEffect(b).split(' · ').slice(0,-1).join(' · ') + ' · ' + remaining + '</li>';
+    }).join('') + '</ul>' : '<p>No active fuel boosts.</p>';
+  }
+
+  function activePanel() { return '<div data-rc-active>' + activeMarkup() + '</div>'; }
+
+  function fuelInventory() {
+    const owned = M.fuel.filter(item=>state.fuel[item.id] > 0);
+    return '<h3>Consumables</h3>' + (owned.length ? '<div class="rc-gear-grid">' + owned.map(item=>
+      '<article class="rc-card rc-gear"><h3>🍌 ' + item.name + ' × ' + state.fuel[item.id] + '</h3><p>' +
+      fuelEffect(item) + '</p><button class="button secondary" data-rc-use="' + item.id + '">' +
+      (fuelConfirmation.startsWith(item.id+':')?'Confirm replacement':'Activate') + '</button></article>').join('') + '</div>' : '<p>No consumables owned.</p>');
+  }
+
+  function fuelPanel() {
+    return fuelInventory() + '<h3 class="rc-subhead">Shop and crafting</h3><div class="rc-gear-grid">' + M.fuel.map(item => {
+      const recipe = M.recipes[item.id];
+      const ingredients = recipe ? Object.entries(recipe.ingredients) : [];
+      const affordable = state.cash >= item.price;
+      const craftable = recipe && state.cash >= recipe.fee && ingredients.every(([id,n])=>(state.fuel[id]||0)>=n);
+      return '<article class="rc-card rc-gear"><h3>🍌 ' + item.name + '</h3><p>' + fuelEffect(item) +
+        '</p><button class="button secondary" data-rc-fuel="' + item.id + '"' + (affordable?'':' disabled') +
+        '>Buy · ' + cash(item.price) + '</button>' + (recipe ? '<p>' + ingredients.map(([id,n])=>
+          n + ' × ' + M.fuelItem(id).name + ' (' + (state.fuel[id]||0) + ' owned)').join(' + ') + ' + ' + cash(recipe.fee) +
+          '</p><button class="button secondary" data-rc-craft="' + item.id + '"' + (craftable?'':' disabled') + '>Craft</button>' : '') + '</article>';
+    }).join('') + '</div>';
   }
 
   function random() {
     return crypto.getRandomValues(new Uint32Array(1))[0] / 4294967296;
   }
 
-  async function spin() {
-    if (busy || !state.balls) return;
+  async function spin(keyId = 0) {
+    if (busy || (!keyId && !state.balls)) return;
     const version = ++spinVersion;
     busy = true;
-    const last = await update(s => M.spin(s, random(), Date.now()));
+    const redemption = !!keyId, targetPanel = redemption ? 'Key Vault' : 'Spin';
+    let oldKey;
+    const priorKnown = new Set(M.racquets.filter(known).map(r=>r.id));
+    const last = await update(s => {
+      if (!redemption) return M.spin(s,random(),Date.now());
+      oldKey = s.keys.find(key=>key.id===keyId);
+      return M.redeem(s,keyId,random(),Date.now());
+    });
     if (version !== spinVersion) return;
-    if (!last || !dialog.open || mode !== 'club' || panel !== 'Spin') { busy = false; return; }
+    if (!last || !dialog.open || mode !== 'club' || panel !== targetPanel) { busy = false; if (dialog.open) draw(); return; }
     draw();
     let skip = state.skip || motion.matches || document.documentElement.dataset.animation === 'off';
     const reel = dialog.querySelector('.rc-reel');
-    dialog.querySelector('[data-rc-spin]').classList.toggle('rc-bonus', last.bonusSpin);
+    if (!redemption) dialog.querySelector('[data-rc-spin]').classList.toggle('rc-bonus', last.bonusSpin);
+    reel.hidden = false;
+    if (redemption) reel.classList.add('rc-key-reel','rc-tier-' + last.tier);
     const track = reel.querySelector('.rc-track');
     try {
       if (!skip && track.animate) {
         // Independent filler draws. The recorded result is always the final card.
-        const weights = M.probabilities(last.effectiveLuck, last.mutation);
-        track.innerHTML = Array.from({length:29}, () => wheelCard(M.pick(weights, random()))).join('') + wheelCard(M.racquet(last.id));
+        const weights = redemption ? oldKey.weights : M.wheel(M.probabilities(last.effectiveLuck,last.mutation));
+        const final = last;
+        track.innerHTML = Array.from({length:29}, () => {
+          const entry = M.select(weights,random());
+          return wheelCard(entry,redemption&&!priorKnown.has(entry.id));
+        }).join('') + wheelCard(final,redemption&&!priorKnown.has(last.id));
         reel.classList.toggle('rc-titanium', last.titanium);
-        const final = track.lastElementChild;
-        const x = final.offsetLeft + final.offsetWidth / 2 - reel.clientWidth / 2;
+        const finalCard = track.lastElementChild;
+        const x = finalCard.offsetLeft + finalCard.offsetWidth / 2 - reel.clientWidth / 2;
         dialog.querySelector('[data-rc-skip]').hidden = false;
         animation = track.animate([{transform:'translateX(0)'}, {transform:'translateX(' + -x + 'px)'}],
           {duration:last.duration * 1000, easing:'cubic-bezier(.10,.72,.18,1)', fill:'forwards'});
@@ -234,20 +331,27 @@
         skip ||= reel.hasAttribute('data-skipped');
         track.style.transform = 'translateX(' + -x + 'px)';
       }
-      if (dialog.open && mode === 'club' && panel === 'Spin' && dialog.contains(reel)) {
+      if (dialog.open && mode === 'club' && panel === targetPanel && dialog.contains(reel)) {
         const reveal = !skip && !state.skip;
         busy = false;
-        reel.hidden = skip;
-        const pending = dialog.querySelector('.rc-spin-note');
-        pending?.insertAdjacentHTML('afterend', resultCard(last, reveal));
-        pending?.remove();
-        dialog.querySelector('[data-rc-skip]').hidden = true;
-        const button = dialog.querySelector('[data-rc-spin]');
-        button.disabled = !state.balls;
-        const after = M.next(state);
-        dialog.querySelector('.rc-progress').innerHTML = spinProgress(after);
-        button.classList.toggle('rc-bonus', after.bonusSpin);
-        if (!button.disabled) button.focus({preventScroll:true});
+        if (redemption) {
+          draw();
+          if (!skip) dialog.querySelector('.rc-key-stage .rc-reel').replaceWith(reel);
+          const result = dialog.querySelector('.rc-key-stage .rc-result');
+          if (result) result.outerHTML = resultCard(last,reveal,true);
+        } else {
+          reel.hidden = skip;
+          const pending = dialog.querySelector('.rc-spin-note');
+          pending?.insertAdjacentHTML('afterend',resultCard(last,reveal));
+          pending?.remove();
+          dialog.querySelector('[data-rc-skip]').hidden = true;
+          const button = dialog.querySelector('[data-rc-spin]');
+          button.disabled = !state.balls;
+          const after = M.next(state);
+          dialog.querySelector('.rc-progress').innerHTML = spinProgress(after);
+          button.classList.toggle('rc-bonus',after.bonusSpin);
+          if (!button.disabled) button.focus({preventScroll:true});
+        }
       }
     } catch {
       // Navigating away cancels only the presentation. The award is already saved.
@@ -258,8 +362,8 @@
   function racquetPanel(collection) {
     const found = discovered();
     const list = M.racquets.filter(r => {
-      const item = state.items[r.id], visible = !collection || item?.pulled;
-      return (collection || item?.count > 0) && (filter === 'all' || filter === String(r.tier) ||
+      const item = state.items[r.id], visible = !collection || known(r);
+      return (collection ? visible : item?.count > 0) && (filter === 'all' || filter === String(r.tier) ||
         filter === 'mutations' && r.parent || filter === 'duplicates' && item?.count > 1) &&
         (!query || visible && (r.name + ' ' + r.brand).toLowerCase().includes(query.trim().toLowerCase()));
     });
@@ -272,7 +376,7 @@
     };
     if (!collection) list.sort(orders[sort]);
     const toolbar = '<div class="rc-tools"><label>Search <input type="search" data-rc-search data-rc-focus="search" placeholder="Racquet or brand"></label><label>Filter <select data-rc-filter data-rc-focus="filter">' +
-      [['all','All rarities'], ...M.tiers.map((t,i)=>[i,t[0]]), ['mutations','Mutations'], ...(!collection ? [['duplicates','Duplicates']] : [])]
+      [['all','All rarities'], ...M.tiers.flatMap((t,i)=>!collection||M.racquets.some(r=>r.tier===i&&known(r))?[[i,t[0]]]:[]), ['mutations','Mutations'], ...(!collection ? [['duplicates','Duplicates']] : [])]
         .map(([v,n])=>'<option value="' + v + '"' + (String(v) === filter ? ' selected' : '') + '>' + n + '</option>').join('') +
       '</select></label>' + (!collection ? '<label>Sort <select data-rc-sort data-rc-focus="sort">' +
         [['high','Rarity, highest first'],['low','Rarity, lowest first'],['alpha','Alphabetical'],['brand','Brand'],
@@ -282,23 +386,22 @@
         (duplicateValue() ? ' · ' + cash(duplicateValue()) : '') + '</button>' : '') + '</div>';
     const summary = collection ? '<div class="rc-collection-summary"><h3>' + found.length + '/60 racquets discovered</h3><progress aria-label="Collection completion" value="' +
       found.length + '" max="60"></progress><p>' + Math.round(found.length / 60 * 100) + '% complete · ' +
-      found.filter(r=>r.parent).length + '/9 mutations · ' + number(state.spins) + ' obtained' +
-      (rarest() ? ' · Rarest: ' + label(rarest()) : '') + '</p><p>' +
-      M.tiers.map(([name],i)=>name + ' ' + found.filter(r=>r.tier===i).length + '/' + M.racquets.filter(r=>r.tier===i).length).join(' · ') +
+      found.filter(r=>r.parent).length + ' mutations · ' + number(obtained()) + ' obtained' +
+      (rarest() ? ' · Rarest: ' + label(rarest()) : '') +
       '</p>' + (found.length === 60 ? '<strong class="rc-achievement">✦ Grand Slam Collection</strong>' : '') + '</div>' :
       '<h3>' + Object.values(state.items).reduce((sum,item)=>sum+item.count,0) + ' racquets owned</h3>';
     const cards = list.map(r => {
       const item = state.items[r.id];
-      const known = !collection || item?.pulled;
-      return tile(r, known ?
-        '<button class="rc-item" data-rc-focus="detail-' + r.id + '" data-rc-detail="' + r.id + '">' + art(r) + badge(r) +
-        '<strong>' + label(r) + '</strong><span>' + r.brand + ' · ' + baseOdds(r) + '</span><span>' +
-        (item.count ? '×' + item.count : 'Discovered') + (item.count && !collection ? ' · ' + cash(M.sellValue(state,r.id)) : '') +
-        (item.locked ? ' · Locked' : '') + (state.favourite === r.id ? ' · Favourite' : '') + '</span></button>' :
-        '<div class="rc-item">' + art(r,true) + badge(r) + '<strong>Undiscovered</strong></div>');
+      const hint = M.racquets.some(variant=>variant.parent===r.id&&!state.items[variant.id]?.pulled);
+      return tile(r, '<button class="rc-item" data-rc-focus="detail-' + r.id + '" data-rc-detail="' + r.id + '">' +
+        art(r) + badge(r) + '<strong>' + label(r) + '</strong><span>' + r.brand + ' · ' + baseOdds(r) + '</span><span>' +
+        (item?.count ? '×' + item.count : item?.pulled ? 'Discovered' : 'Uncollected') +
+        (item?.count && !collection ? ' · ' + cash(M.sellValue(state,r.id)) : '') +
+        (item?.locked ? ' · Locked' : '') + (state.favourite===r.id?' · Favourite':'') +
+        '</span>' + (collection&&hint?'<small>✦ Undiscovered mutation available</small>':'') + '</button>');
     }).join('');
     return summary + toolbar + (selected ? itemDetail(M.racquet(selected)) : '') +
-      '<div class="rc-grid">' + (cards || '<p>No racquets match these filters.</p>') + '</div>';
+      '<div class="rc-grid">' + (cards + (collection && filter==='all' && !query ? '<article class="rc-card rc-item rc-unknown"><strong>?</strong><span>Undiscovered racquet</span></article>'.repeat(M.racquets.filter(r=>!known(r)).length) : '') || '<p>No racquets match these filters.</p>') + '</div>';
   }
 
   function duplicateValue() {
@@ -309,13 +412,13 @@
   }
 
   function itemDetail(r) {
-    const item = state.items[r.id], setup = M.next(state);
-    const variants = M.racquets.filter(x => x.parent === r.id);
-    const links = r.parent ? '<p>Variant of ' + M.racquet(r.parent).name + '</p>' :
+    const item = state.items[r.id] || {count:0}, setup = M.next(state);
+    const variants = M.racquets.filter(x => x.parent === r.id && state.items[x.id]?.pulled);
+    const links = r.parent && known(M.racquet(r.parent)) ? '<p>Variant of ' + M.racquet(r.parent).name + '</p>' :
       variants.length ? '<p>Related variant · ' + variants.map(label).join(', ') + '</p>' : '';
     return tile(r, '<div class="rc-detail">' + art(r) + '<div>' + badge(r) + '<h3>' + label(r) + '</h3><p>' + r.brand +
-      ' · Discovered ' + date(item.first) + ' · ' + item.count + ' owned</p><p>Base odds ' + baseOdds(r) +
-      ' · Next spin ' + percent(M.probabilities(setup.effectiveLuck,setup.mutation)[r.id-1]) +
+      (item.first ? ' · Discovered ' + date(item.first) : ' · Uncollected') + ' · ' + item.count + ' owned</p><p>Base odds ' + baseOdds(r) +
+      (r.tier < 2 ? ' · Next spin ' : ' · Per-roll equivalent ') + percent(M.probabilities(setup.effectiveLuck,setup.mutation)[r.id-1]) +
       ' · Sell value ' + cash(M.sellValue(state,r.id)) + '</p>' + links +
       '<div class="rc-actions"><button class="button secondary" data-rc-detail="0">Close details</button>' +
       (item.count ? '<button class="button secondary" data-rc-focus="lock-' + r.id + '" data-rc-lock="' + r.id + '">' + (item.locked ? 'Unlock' : 'Lock') + '</button>' +
@@ -330,6 +433,7 @@
     if (effect.luck) return ratio(effect.luck) + ' luck' + (effect.titanium ? ' · Titanium spin finish' : '');
     if (effect.duration) return effect.duration.toFixed(1) + ' s spin';
     if (effect.mutation) return '+' + Math.round((effect.mutation-1)*100) + '% mutation weight';
+    if (effect.balls) return '+' + effect.balls + '% Tennis Balls';
     if (effect.sale) return '+' + Math.round((effect.sale-1)*100) + '% selling cash';
     return ratio(effect.bonus) + ' tenth-spin bonus';
   }
@@ -358,11 +462,15 @@
     const stats = [
       ['Spins completed',state.spins],['Balls earned',state.earned],['Balls spent',state.spins],
       ['Club Cash earned',cash(state.cashEarned)],['Club Cash spent',cash(state.cashSpent)],
-      ['Racquets obtained',state.spins],['Unique discoveries',found.length],
+      ['Racquets obtained',obtained()],['Unique discoveries',found.length],
       ['Mutations',found.filter(r=>r.parent).length],['Rarest pull',rarest() ? label(rarest()) : '—'],
       ['Most pulled',most ? label(most) + ' × ' + number(state.items[most.id].pulled) : '—'],
       ['Favourite',state.favourite ? label(M.racquet(state.favourite)) : '—'],
       ['Equipped luck',ratio(M.effects(state).luck)],['Bonus spins',state.bonusSpins],['Duplicates sold',state.duplicatesSold],
+      ['Keys obtained',Object.values(state.keysEarned).reduce((a,b)=>a+b,0)],['Keys opened',state.keysRedeemed],
+      ['Fuel purchased',state.fuelBought],['Fuel crafted',state.fuelCrafted],['Fuel activated',state.fuelUsed],
+      ['Highest spin luck',ratio(state.strongestLuck)],
+      ...M.keyTiers.map(tier=>[M.keyName(tier)+'s obtained',state.keysEarned[tier]||0]),
       ...M.tiers.slice(3).map(([name],i)=>[name+' pulls',found.filter(r=>r.tier===i+3).reduce((n,r)=>n+state.items[r.id].pulled,0)])
     ];
     return '<dl class="rc-stats rc-statistics">' + stats.map(([name,value])=>
@@ -376,19 +484,23 @@
     if (data.rcClose !== undefined) { dialog.close(); return; }
     if (data.rcOpen !== undefined) { show('club'); return; }
     if (data.rcSkip !== undefined) { dialog.querySelector('.rc-reel')?.setAttribute('data-skipped',''); animation?.finish(); return; }
+    if (data.rcInventory) { inventoryView = data.rcInventory; selected = 0; draw(); return; }
+    if (data.rcRedeem) { void spin(Number(data.rcRedeem)); return; }
     if (data.rcTab) {
       cancelSpinPresentation();
       panel = data.rcTab;
       filter = 'all';
       query = '';
       selected = confirmId = 0;
+      fuelConfirmation = '';
       actionMessage = '';
       draw();
       dialog.querySelector('.rc-body').scrollTop = 0;
       return;
     }
     if (data.rcDetail !== undefined) {
-      selected = Number(data.rcDetail); confirmId = 0; draw();
+      const entry = M.racquet(data.rcDetail);
+      selected = entry && known(entry) ? entry.id : 0; confirmId = 0; draw();
       if (selected) dialog.querySelector('.rc-detail')?.scrollIntoView({block:'nearest'});
       return;
     }
@@ -410,6 +522,20 @@
         actionMessage = payout ? 'Sold for ' + cash(payout) + '.' : 'Sale unavailable.';
         confirmId = 0;
         if (!state.items[id]?.count && panel==='Inventory') selected = 0;
+      } else if (data.rcFuel || data.rcCraft || data.rcUse) {
+        const item = M.fuelItem(data.rcFuel || data.rcCraft || data.rcUse);
+        const current = M.activeBoosts(state,Date.now()).find(b=>b.slot===item.slot);
+        const confirmation = [item.id,current?.id,current?.expires,current?.remaining].join(':');
+        if (data.rcUse && current && fuelConfirmation !== confirmation) {
+          fuelConfirmation = confirmation;
+          actionMessage = 'Activating ' + item.name + ' will replace ' + current.name + '. Confirm to continue.';
+          draw();
+          return;
+        }
+        const applied = await update(s=>data.rcFuel?M.buyFuel(s,item.id):data.rcCraft?M.craft(s,item.id):
+          M.activate(s,item.id,Date.now(),fuelConfirmation===confirmation && M.activeBoosts(s,Date.now()).some(b=>[item.id,b.id,b.expires,b.remaining].join(':')===confirmation)));
+        fuelConfirmation = '';
+        actionMessage = applied ? item.name + (data.rcFuel?' purchased.':data.rcCraft?' crafted.':' activated.') : 'Action unavailable.';
       } else if (data.rcDuplicates !== undefined) {
         const payout = await update(M.sellDuplicates);
         actionMessage = payout ? 'Duplicates sold for ' + cash(payout) + '.' : 'No unlocked duplicates to sell.';
@@ -431,7 +557,10 @@
         return true;
       });
       else return;
-      if (dialog.open) draw();
+      if (dialog.open) {
+        draw();
+        if (data.rcCraft && actionMessage.endsWith(' crafted.') && !state.skip) dialog.querySelector('.rc-message').classList.add('rc-crafted');
+      }
     } finally { saving = false; }
   }
 
@@ -484,5 +613,12 @@
       if (el.value) void earn('filter', el.id + '|' + el.value);
     }
   });
+  setInterval(() => {
+    if (!dialog?.open || busy) return;
+    const active = dialog.querySelector('[data-rc-active]');
+    if (active) active.innerHTML = activeMarkup();
+    const luck = dialog.querySelector('[data-rc-luck]');
+    if (luck) luck.innerHTML = luckText(M.next(state));
+  },1000);
   sync();
 })();

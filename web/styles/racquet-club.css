@@ -108,3 +108,17 @@ button.rc-item:hover { background:#ffffff0c }
 @media(prefers-reduced-motion:reduce) {
   .rc-reveal,.rc-reveal::before,#racquetClubStatus.rc-notify { animation:none }
 }
+
+.rc-key-grid { display:grid; gap:10px; grid-template-columns:repeat(auto-fit,minmax(190px,1fr)); margin-bottom:14px }
+.rc-key-grid .rc-card { border-color:color-mix(in srgb,var(--rarity) 65%,var(--rc-border)) }
+.rc-key-icon { display:inline-grid; place-items:center; padding:10px; font-size:2.4rem; line-height:1; color:var(--rarity) }
+.rc-key-reel { border-color:var(--rarity); background:radial-gradient(ellipse at center,color-mix(in srgb,var(--rarity) 24%,#19231a),#19231a 78%) }
+.rc-key-reel::after { background:var(--rarity); box-shadow:0 0 13px var(--rarity) }
+.rc-unknown { color:#a8b4a6; justify-items:center; align-content:center; min-height:140px; border:1px dashed var(--rc-border)!important }
+.rc-unknown strong { font-size:2rem }
+.rc-boosts { display:flex; flex-wrap:wrap; padding:0; gap:8px; list-style:none }
+.rc-boosts li { padding:6px 10px; border:1px solid var(--rc-border); border-radius:8px }
+.rc-body .rc-subhead { margin-top:22px }
+.rc-actions [aria-pressed=true] { border-color:var(--rc-green) }
+.rc-crafted { animation:rc-arrival .35s ease-out }
+@media(prefers-reduced-motion:reduce) { .rc-crafted { animation:none } }
