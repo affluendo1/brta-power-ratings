@@ -5,6 +5,8 @@
   const latest = releases[0];
   const parentRelease=releases.find(r=>['major','large'].includes(r.size))||latest,patches=releases.slice(0,releases.indexOf(parentRelease));
   let overlay;
+  const pastSoftware = root.BRTAPastSoftware;
+  const canViewPast = () => pastSoftware && auxiliaryEnabled() && sessionStorage.getItem(pastSoftware.unlockKey) === '1';
   let returnFocus;
   const escape = value => String(value).replace(/[&<>"']/g, character => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[character]));
 
@@ -45,6 +47,18 @@
     });
   }
 
+  function pastButton(release) {
+    const alias = pastSoftware?.byVersion[release.version];
+    if (!alias || !/^\d+\.\d+$/.test(release.version)) return '';
+    return '<button class="release-past-button" type="button" hidden data-past-release="'+escape(alias)+
+      '" aria-label="View historical release '+escape(release.version)+'">View past</button>';
+  }
+
+  function syncPastButtons() {
+    const visible = canViewPast();
+    overlay?.querySelectorAll('[data-past-release]').forEach(button => { button.hidden = !visible; });
+  }
+
   function ensureOverlay() {
     if (overlay) return;
     overlay = document.createElement('div');
@@ -57,20 +71,27 @@
       '<button id="changelog-latest-tab" type="button" role="tab" aria-selected="true" aria-controls="changelog-latest" data-changelog-tab="latest">Latest update</button>'+
       '<button id="changelog-history-tab" type="button" role="tab" aria-selected="false" aria-controls="changelog-history" tabindex="-1" data-changelog-tab="history">Full history</button></div>'+
       '<div class="changelog-panels"><div id="changelog-latest" role="tabpanel" aria-labelledby="changelog-latest-tab" tabindex="0">'+
-      '<article class="release-latest"><div class="release-latest-label">LATEST UPDATE</div><div class="release-heading"><h3>'+escape(parentRelease.version)+'</h3>'+(parentRelease.title?'<span>'+escape(parentRelease.title)+'</span>':'')+'</div>'+time(parentRelease)+points(parentRelease)+patches.slice().reverse().map(r=>'<div class="release-patch" data-release-version="'+escape(r.version)+'"><b>'+escape(r.version)+'</b>'+time(r)+points(r)+'</div>').join('')+'</article></div>'+
+      '<article class="release-latest"><div class="release-latest-label">LATEST UPDATE</div><div class="release-heading"><h3>'+escape(parentRelease.version)+'</h3>'+(parentRelease.title?'<span>'+escape(parentRelease.title)+'</span>':'')+pastButton(parentRelease)+'</div>'+time(parentRelease)+points(parentRelease)+patches.slice().reverse().map(r=>'<div class="release-patch" data-release-version="'+escape(r.version)+'"><b>'+escape(r.version)+'</b>'+time(r)+points(r)+'</div>').join('')+'</article></div>'+
       '<div id="changelog-history" role="tabpanel" aria-labelledby="changelog-history-tab" tabindex="0" hidden><p class="changelog-history-hint">Choose an update to see what changed.</p><div class="release-history">'+releases.map(release =>
-        '<details class="release-entry'+' release-'+release.size+'"><summary><span class="release-version">'+escape(release.version)+'</span><span class="release-name">'+escape(release.title||'')+'</span><span class="release-chevron" aria-hidden="true">⌄</span>'+time(release)+'</summary><div class="release-details">'+points(release)+'</div></details>'
+        '<div class="release-history-row"><details class="release-entry'+' release-'+release.size+'"><summary><span class="release-version">'+escape(release.version)+'</span><span class="release-name">'+escape(release.title||'')+'</span><span class="release-chevron" aria-hidden="true">⌄</span>'+time(release)+'</summary><div class="release-details">'+points(release)+'</div></details>'+pastButton(release)+'</div>'
       ).join('')+'</div></div></div></section>';
     document.body.appendChild(overlay);
     overlay.addEventListener('click', event => {
       if (event.target.closest('[data-changelog-close]')) close();
       const tab = event.target.closest('[data-changelog-tab]');
       if (tab) setTab(tab.dataset.changelogTab);
+      const past = event.target.closest('[data-past-release]');
+      if (past && canViewPast()) {
+        const target = new URL('extras/past-software/', document.baseURI);
+        target.searchParams.set('release', past.dataset.pastRelease);
+        location.assign(target);
+      }
     });
   }
 
   function open() {
     ensureOverlay();
+    syncPastButtons();
     if (!overlay.classList.contains('hidden')) return;
     returnFocus = document.activeElement;
     overlay.classList.remove('hidden');
@@ -150,6 +171,7 @@
       target.classList.add('release-arrival');
     }, reduced ? 0 : 350);
   }
+  root.addEventListener('brta-module-toggle', syncPastButtons);
   root.addEventListener('brta-section-ready', offerUpdate, {once:true});
   root.addEventListener('load', () => setTimeout(offerUpdate, 700), {once:true});
 

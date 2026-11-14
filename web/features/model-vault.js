@@ -255,6 +255,7 @@
   entry.addEventListener('click', openVault);
   function submitCode(event) {
     event.preventDefault();
+    if (!auxiliaryEnabled()) return;
     const input = vault.querySelector('input'), raw = input.value, code = raw.trim().toUpperCase();
     if (!code) return;
     input.value = '';
@@ -266,6 +267,13 @@
     if (window.BRTAArchiveSecret?.redeem(raw)) {
       reply.textContent = 'Neon + unlocked. Find it under Theme in Settings.';
       sound(340, 1040, .34, 'triangle');
+      input.focus();
+      return;
+    }
+    if (raw === 'PASTSOFTWARE' && window.BRTAPastSoftware) {
+      sessionStorage.setItem(window.BRTAPastSoftware.unlockKey, '1');
+      reply.textContent = 'Past Software unlocked. Open the Changelog to visit a historical release.';
+      sound(290, 870, .34);
       input.focus();
       return;
     }
@@ -543,6 +551,7 @@
     hide(consoleLayer);
   }
   function openConsole() {
+    if (!auxiliaryEnabled()) return;
     if (!consoleLayer) {
       consoleLayer = makeOverlay('vaultConsoleOverlay', 'vault-console-overlay',
         `<div class="overlay-backdrop" data-console-close></div>
@@ -571,6 +580,7 @@
   }
   function command(event) {
     event.preventDefault();
+    if (!auxiliaryEnabled()) return;
     const value = consoleInput.value.trim().toLowerCase();
     if (!value) return;
     consoleInput.value = '';
@@ -621,14 +631,20 @@
   }
 
   window.addEventListener('keydown', event => {
-    if (!event.shiftKey || !event.altKey || event.ctrlKey || event.metaKey ||
-        (event.code !== 'KeyU' && event.key.toLowerCase() !== 'u')) return;
+    if (!auxiliaryEnabled() || !event.shiftKey || !event.altKey || event.ctrlKey || event.metaKey ||
+        (event.code !== 'KeyU' && event.key?.toLowerCase() !== 'u')) return;
     event.preventDefault();
     event.stopImmediatePropagation();
     if (event.repeat) return;
     if (consoleLayer && !consoleLayer.classList.contains('hidden') && BRTAOverlays.top() === consoleLayer) closeConsole();
     else openConsole();
   }, true);
+  window.addEventListener('brta-module-toggle', () => {
+    if (auxiliaryEnabled()) return;
+    if (window.BRTAPastSoftware) sessionStorage.removeItem(window.BRTAPastSoftware.unlockKey);
+    logging = false;
+    closeConsole();
+  });
   for (const type of ['click', 'change', 'submit']) {
     document.addEventListener(type, event => {
       if (!logging || event.target.closest?.('#vaultConsoleOverlay')) return;
