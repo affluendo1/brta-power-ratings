@@ -45,7 +45,6 @@
 
   globalThis.BRTAPastSoftware = Object.freeze({
     extrasKey: 'brta-module-enabled-v1',
-    unlockKey: 'brta-past-software-unlocked',
     snapshots,
     byVersion: Object.fromEntries(Object.entries(snapshots).map(([alias, snapshot]) => [snapshot.version, alias])),
   });

@@ -3,10 +3,10 @@
 
   const releases = root.BRTA_RELEASES;
   const latest = releases[0];
-  const parentRelease=releases.find(r=>['major','large'].includes(r.size))||latest,patches=releases.slice(0,releases.indexOf(parentRelease));
+  const parentRelease=releases.find(r=>['major','large','small'].includes(r.size))||latest,patches=releases.slice(0,releases.indexOf(parentRelease));
   let overlay;
   const pastSoftware = root.BRTAPastSoftware;
-  const canViewPast = () => pastSoftware && auxiliaryEnabled() && sessionStorage.getItem(pastSoftware.unlockKey) === '1';
+  const canViewPast = () => pastSoftware && auxiliaryEnabled();
   let returnFocus;
   const escape = value => String(value).replace(/[&<>"']/g, character => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[character]));
 
