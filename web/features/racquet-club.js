@@ -2,7 +2,9 @@
   'use strict';
   const M = window.BRTARacquetModel;
   const key = 'brta-racquet-club-v1';
-  const sections = ['Spin','Key Vault','Collection','Inventory','Equipment','Accessory Shop','Fuel Station','Statistics'];
+  const sections = ['Spin','Key Vault','Collection','Inventory','Equipment','Accessory Shop','Fuel Station','Statistics','Settings'];
+  const navIcons = ['▷','⚿','▦','▤','⊙','◇','＋','◫','⚙'];
+  const defaults = {effective:true,base:true,confirmFuel:true,confirmReplace:true,cinematics:true,minTier:3,quiet:false,master:0,roll:50,reveal:65,interface:25,compact:false,motion:false,contrast:false,boosts:true,stage:true};
   const icons = ['◉', '▧', '⊙', '✦'];
   const $ = selector => document.querySelector(selector);
   const number = value => new Intl.NumberFormat('en-AU').format(value);
@@ -24,6 +26,13 @@
   let state = read(), dialog, panel = 'Spin', selected = 0, animation, busy = false, saving = false;
   let filter = 'all', sort = 'high', query = '', confirmId = 0, actionMessage = '';
   let mode = 'club', toastTimer, spinVersion = 0, fuelConfirmation = '', inventoryView = 'Racquets';
+  let shopSlot = 0, gearSlot = 0, gearId = '', fuelTab = 'Buy', recipeId = 'match', settingsTab = 'Rolling';
+  let keySelection = 0, presentation = null, menu = false, resultVisible = true, confirmFuel = '', audio;
+  const scrollPositions = new Map();
+  const pref = name => state.presentation?.[name] ?? defaults[name];
+  const reduced = () => motion.matches || pref('motion') || document.documentElement.dataset.animation === 'off';
+  const animateRoll = () => !state.skip && !reduced();
+  let inventoryFilter = 'all', inventoryQuery = '';
   const motion = matchMedia('(prefers-reduced-motion: reduce)');
   const enabled = () => extras() && state.enabled;
 
@@ -62,7 +71,13 @@
     if (settings) settings.hidden = !extras();
     if (dialog?.open && (!extras() || (mode === 'club' && !enabled()))) dialog.close();
     const balance = dialog?.querySelector('[data-rc-balance]');
-    if (balance) balance.textContent = number(state.balls) + ' 🎾 · ' + cash(state.cash) + ' Club Cash';
+    if(balance) {
+      const message=number(state.balls)+' 🎾 · '+cash(state.cash)+' Club Cash';
+      if(balance.textContent!==message){
+        balance.textContent=message;
+        if(!reduced()&&!pref('quiet')) balance.animate?.([{opacity:.6},{opacity:1}],{duration:260});
+      }
+    }
   }
 
   function notify(message) {
@@ -103,7 +118,15 @@
       draw();
       dialog.querySelector('[data-rc-search]').setSelectionRange(start,end);
     });
+    dialog.addEventListener('cancel', event => {
+      if (presentation || menu || keySelection || (panel === 'Collection' && selected)) {
+        event.preventDefault();
+        presentation = null; menu = false; keySelection = 0; selected = 0;
+        cancelSpinPresentation(); draw();
+      }
+    });
     dialog.addEventListener('close', () => {
+      presentation = null; keySelection = 0; menu = false;
       cancelSpinPresentation();
       confirmId = 0;
       fuelConfirmation = '';
@@ -129,8 +152,35 @@
   }
 
   function art(r) {
-    return '<span aria-hidden="true" class="rc-racquet-art" style="--paint:' + (r.id * 43) % 360 + '"><i></i><b></b></span>';
+    const paint = (r.id * 43) % 360;
+    return '<svg class="rc-racquet-art" viewBox="0 0 120 265" aria-hidden="true" style="--paint:'+paint+'">' +
+      '<path class="rc-frame-shadow" d="M60 8C29 8 9 31 9 67c0 49 20 71 42 83l5 35h8l5-35c22-12 42-34 42-83C111 31 91 8 60 8Z"/>' +
+      '<path class="rc-frame" d="M60 8C29 8 9 31 9 67c0 49 20 71 42 83l5 35h8l5-35c22-12 42-34 42-83C111 31 91 8 60 8Z"/>' +
+      '<path class="rc-bed" d="M60 18C36 18 20 38 20 67c0 35 17 62 40 65 23-3 40-30 40-65C100 38 84 18 60 18Z"/>' +
+      '<path class="rc-strings" d="M31 38v69M41 24v96M51 20v108M61 18v113M71 20v108M81 25v93M91 39v65M30 37h60M24 47h72M21 57h78M20 67h80M21 77h78M23 87h74M26 97h68M30 107h60M38 117h44"/>' +
+      '<path class="rc-shine" d="M18 59C20 35 35 16 55 15M101 83c-5 22-17 41-30 51M51 143l9 30 9-30"/>' +
+      '<path class="rc-grip" d="M49 182h22l3 70H46Z"/><path class="rc-wrap" d="M50 194l20 5m-20 4 20 5m-21 4 22 5m-22 4 22 5m-23 4 24 5m-24 4 24 5"/><path class="rc-cap" d="M44 249h32v9H44Z"/></svg>';
   }
+
+  function keyArt(tier) {
+    return '<svg class="rc-key-art rc-tier-'+tier+'" viewBox="0 0 140 140" aria-hidden="true"><path d="M36 22 60 12 84 22 94 46 84 70 73 75 73 112 64 121 55 112 55 103 63 95 55 87 55 77 36 70 26 46Z" class="rc-key-metal"/><path d="M60 26 76 36 76 55 60 65 44 55 44 36Z" class="rc-key-cut"/><path d="M60 26v39m-16-29 32 19m0-19L44 55m20 25v9" class="rc-key-line"/><path d="M94 79v22m-11-11h22M109 106v12m-6-6h12" class="rc-key-line"/></svg>';
+  }
+
+  function sound(kind) {
+    const level = pref('master') * pref(kind) / 10000;
+    const Context = window.AudioContext || window.webkitAudioContext;
+    if (!level || !Context) return;
+    try {
+      audio ||= new Context();
+      if(audio.state==='suspended') audio.resume().catch(()=>{});
+      const start=audio.currentTime, note=audio.createOscillator(), gain=audio.createGain();
+      note.type='sine'; note.frequency.setValueAtTime(kind==='reveal'?470:kind==='roll'?260:380,start);
+      note.frequency.exponentialRampToValueAtTime(kind==='reveal'?940:310,start+.13);
+      gain.gain.setValueAtTime(.13*level,start); gain.gain.exponentialRampToValueAtTime(.001,start+.24);
+      note.connect(gain).connect(audio.destination); note.start(start); note.stop(start+.25);
+    } catch {}
+  }
+
   const label = r => r.name + (r.parent ? ' ✦' : '');
   const baseOdds = r => r.denominator ? '1 in ' + number(r.denominator) : percent(r.base);
   const tile = (r, content) => '<article class="rc-card rc-tier-' + r.tier + '">' + content + '</article>';
@@ -148,19 +198,35 @@
     const focusKey = oldFocus?.dataset.rcFocus;
     const scroll = dialog.querySelector('.rc-body')?.scrollTop || 0;
     const title = mode === 'club' ? 'Racquet Club' : 'Gamify the Site';
-    dialog.innerHTML = '<header class="rc-header"><div><p class="kicker">BRTA Power Ratings</p><h2 id="racquetClubTitle">' + title +
-      '</h2></div><button class="button secondary" data-rc-close data-rc-focus="close" aria-label="Close ' + title +
-      '">×</button></header>' + (mode === 'settings' ? '<div class="rc-body rc-settings">' +
+    dialog.dataset.mode = mode;
+    dialog.dataset.panel = panel;
+    dialog.classList.toggle('rc-compact',pref('compact'));
+    dialog.classList.toggle('rc-contrast',pref('contrast'));
+    dialog.classList.toggle('rc-reduced',reduced()||pref('quiet'));
+    dialog.classList.toggle('rc-wide-stage',pref('stage'));
+    const stats = M.next(state);
+    const info = mode==='club' ? '<div class="rc-top-stats"><strong data-rc-balance>'+number(state.balls)+' 🎾 · '+cash(state.cash)+' Club Cash</strong>' +
+      '<span data-rc-top-luck>'+ratio(stats.effectiveLuck)+' luck</span><span data-rc-top-boosts title="Active fuel boosts">'+stats.boosts.length+' boosts</span>' +
+      '<button class="button secondary rc-icon-button" data-rc-tab="Settings" data-rc-focus="settings" aria-label="Racquet Club settings">⚙</button></div>' : '';
+    const header = '<header class="rc-header"><div class="rc-brand"><button class="button secondary" data-rc-close data-rc-focus="close">'+
+      (mode==='club'?'← Back to BRTA':'Close')+'</button><span class="rc-brand-mark" aria-hidden="true">◉</span><h2 id="racquetClubTitle">'+title+'</h2></div>'+info+'</header>';
+    const navButton = (tab, i, name = tab) => '<button type="button" data-rc-tab="'+tab+'" data-rc-focus="tab-'+tab+
+      '" aria-current="'+(tab===panel?'page':'false')+'"><span aria-hidden="true">'+navIcons[i]+'</span><b>'+name+'</b>'+
+      (tab==='Key Vault'&&state.keys.length?'<small>'+state.keys.length+'</small>':'')+'</button>';
+    const desktopNav = '<nav class="rc-tabs" aria-label="Racquet Club sections">'+sections.map((tab,i)=>navButton(tab,i,
+      tab==='Spin'?'Roll':tab==='Accessory Shop'?'Shop':tab)).join('')+'</nav>';
+    const mobileNav = '<nav class="rc-mobile" aria-label="Mobile sections">'+navButton('Spin',0,'Roll')+navButton('Key Vault',1,'Keys')+
+      navButton('Collection',2)+'<button data-rc-menu aria-expanded="'+menu+'"><span aria-hidden="true">☰</span><b>Menu</b></button></nav>';
+    const extraMenu = menu ? '<nav class="rc-mobile-menu" aria-label="More Racquet Club sections">'+
+      sections.slice(3).map(tab=>navButton(tab,sections.indexOf(tab))).join('')+'</nav>' : '';
+    dialog.innerHTML = header + (mode === 'settings' ? '<div class="rc-body rc-settings">' +
       '<label><input type="checkbox" data-rc-enable data-rc-focus="enable"' + (state.enabled ? ' checked' : '') +
       '> Enable Gamify the Site</label><p>Earn Tennis Balls while using BRTA Power Ratings. Spin for racquets and trade duplicates for Club Cash.</p>' +
       '<p>Progress is saved in this browser. Club Cash is fictional.</p>' + (enabled() ?
         '<button class="button primary" data-rc-open data-rc-focus="open">Open Racquet Club</button>' : '') + '</div>' :
-      '<div class="rc-summary"><strong data-rc-balance>' + number(state.balls) + ' 🎾 · ' + cash(state.cash) + ' Club Cash</strong>' +
-      '<label><input type="checkbox" data-rc-motion data-rc-focus="motion"' + (state.skip ? ' checked' : '') +
-      '> Skip animations</label></div><nav class="rc-tabs" aria-label="Racquet Club panels">' +
-      sections.map(tab => '<button type="button" data-rc-tab="' + tab + '" data-rc-focus="tab-' + tab + '" aria-pressed="' + (tab === panel) + '">' + tab + (tab === 'Key Vault' && state.keys.length ? ' · ' + state.keys.length : '') + '</button>').join('') +
-      '</nav><div class="rc-body" role="region" aria-label="' + panel + '">' + content() +
-      '<p class="rc-message" role="status">' + actionMessage + '</p></div>');
+      '<div class="rc-shell"'+(presentation?' inert':'')+'>'+desktopNav+'<div class="rc-body" role="region" aria-label="'+panel+'">' + content() +
+      '<p class="rc-message" role="status">' + actionMessage + '</p></div>'+extraMenu+mobileNav+'</div>') + presentationMarkup();
+    dialog.querySelector('.rc-header').inert = !!presentation;
     dialog.querySelector('.rc-body').scrollTop = scroll;
     const search = dialog.querySelector('[data-rc-search]');
     if (search) search.value = query;
@@ -169,8 +235,9 @@
 
   function content() {
     if (panel === 'Spin') return spinPanel();
-    if (panel === 'Key Vault') return keyPanel();
-    if (panel === 'Fuel Station') return activePanel() + fuelPanel();
+    if (panel === 'Key Vault') return keySelection ? keyOpening() : keyPanel();
+    if (panel === 'Settings') return settingsPanel();
+    if (panel === 'Fuel Station') return fuelPanel();
     if (panel === 'Inventory') {
       const tabs = ['Racquets','Keys','Consumables'].map(label=>'<button class="button secondary" data-rc-inventory="' +
         label + '" aria-pressed="' + (inventoryView===label) + '">' + label + '</button>').join('');
@@ -184,17 +251,18 @@
 
   function spinPanel() {
     const setup = M.next(state);
-    return '<div class="rc-spin">' + gearSummary(M.effects(state)) +
-      '<div data-rc-active>' + activeMarkup() + '</div><p data-rc-luck>' + luckText(setup) + '</p>' +
-      '<p><button class="button secondary" data-rc-tab="Key Vault">Key Vault · ' + state.keys.length + '</button></p>' + '<div class="rc-progress">' + spinProgress(setup) + '</div>' +
-      '<div class="rc-reel" aria-hidden="true"><div class="rc-track">' +
-      [{id:3,tier:0},{id:10,tier:0},{tier:2,key:true},{id:17,tier:1},{tier:4,key:true}].map(entry => wheelCard(entry)).join('') + '</div></div>' +
-      '<div class="rc-spin-actions"><button class="button primary rc-spin-button' + (setup.bonusSpin ? ' rc-bonus' : '') +
-      '" data-rc-spin data-rc-focus="spin"' + (!state.balls || busy ? ' disabled' : '') +
-      '>Spin · 1 🎾</button><button class="button secondary" data-rc-skip hidden>Skip spin animation</button></div>' +
-      (state.last && !busy ? resultCard(state.last) : '<p class="rc-spin-note">' +
-        (state.balls ? 'One Tennis Ball per spin.' : 'Open Player Lab, explore tabs, or try a comparison to earn Tennis Balls.') +
-        '</p>') + '</div>';
+    return '<section class="rc-spin"><div class="rc-stage-top"><div><p class="kicker">Racquet roulette</p><h3>Roll</h3></div>'+
+      '<button class="button secondary" data-rc-tab="Key Vault">Key Vault'+(state.keys.length?' · '+state.keys.length:'')+'</button></div>'+
+      '<div class="rc-roll-meta"><p data-rc-luck>'+luckText(setup)+'</p>'+(pref('boosts')?'<div data-rc-active>'+activeMarkup()+'</div>':'')+'</div>'+
+      '<div class="rc-roulette" aria-label="Racquet roulette"><div class="rc-reel" aria-hidden="true"><div class="rc-track">'+
+      (state.last && !busy ? [{id:3,tier:0},state.last,{id:17,tier:1}] :
+        [{id:3,tier:0},{id:10,tier:0},{tier:2,key:true},{id:17,tier:1},{tier:4,key:true}]).map(entry=>wheelCard(entry)).join('')+
+      '</div></div></div><div class="rc-roll-controls"><div class="rc-progress">'+spinProgress(setup)+'</div>'+
+      '<div class="rc-spin-actions"><button class="button primary rc-spin-button'+(setup.bonusSpin?' rc-bonus':'')+
+      '" data-rc-spin data-rc-focus="spin"'+(!state.balls||busy?' disabled':'')+'>Spin · 1 🎾</button>'+
+      '<button class="button secondary" data-rc-skip hidden>Skip animation</button></div>'+
+      (state.last && !busy && resultVisible ? resultCard(state.last) : '<p class="rc-spin-note">'+
+        (state.balls?'':'Explore BRTA Power Ratings to earn Tennis Balls.')+'</p>')+'</div></section>';
   }
 
   function spinProgress(setup) {
@@ -206,36 +274,67 @@
 
   function wheelCard(entry, hidden = false) {
     if (hidden) return '<span class="rc-wheel-card rc-unknown"><strong>?</strong></span>';
-    if (entry.key) return '<span class="rc-wheel-card rc-tier-' + entry.tier + '"><span class="rc-key-icon" aria-hidden="true">⚿</span><b>' + M.keyName(entry.tier) + '</b></span>';
+    if (entry.key) return '<span class="rc-wheel-card rc-tier-' + entry.tier + '">' + keyArt(entry.tier) + '<b>' + M.keyName(entry.tier) + '</b></span>';
     const r = M.racquet(entry.id);
     return '<span class="rc-wheel-card rc-tier-' + r.tier + '">' + art(r) + '<b>' + label(r) + '</b></span>';
   }
 
-  function resultCard(last, reveal = false, redemption = false) {
-    if (last.key) return '<div class="rc-result rc-tier-' + last.tier + '" role="status"><span class="rc-key-icon" aria-hidden="true">⚿</span><div><strong>' +
-      M.keyName(last.tier) + '</strong><span>' + percent(last.odds) + ' on this spin</span><button class="button secondary" data-rc-tab="Key Vault">Open Key Vault</button></div></div>';
-    const r = M.racquet(last.id);
-    return '<div class="rc-result rc-tier-' + r.tier + (reveal && r.tier >= 3 ? ' rc-reveal' : '') +
-      (r.id === 60 ? ' rc-regna' : r.id === 59 ? ' rc-hof' : '') + '" role="status">' + art(r) +
-      '<div>' + badge(r) + '<strong>' + label(r) + '</strong><span>' + percent(last.odds) +
-      (redemption ? ' inside this key' : ' on this spin') + (last.new ? ' · New discovery' : '') +
-      (last.bonusSpin ? ' · Bonus spin' : '') + '</span></div></div>';
+  function resultCard(last, redemption = false) {
+    const r = last.key ? null : M.racquet(last.id);
+    const tier = last.key ? last.tier : r.tier;
+    return '<div class="rc-result rc-tier-'+tier+'" role="status">'+(last.key?keyArt(tier):art(r))+
+      '<div>'+(r?badge(r):'')+'<strong>'+(r?label(r):M.keyName(tier))+'</strong>'+
+      '<span>'+(pref('effective')?percent(last.odds)+(redemption?' inside this key':' on this spin'):'')+
+      (r&&pref('base')?' · Base '+baseOdds(r):'')+(last.new?' · New discovery':'')+
+      (last.bonusSpin?' · Bonus spin':'')+'</span><div class="rc-actions">'+
+      (last.key?'<button class="button secondary" data-rc-tab="Key Vault">Open Key Vault</button>':
+        '<button class="button secondary" data-rc-tab="Inventory">View Inventory</button>')+
+      '<button class="button secondary" '+(redemption?'data-rc-key-back':'data-rc-continue')+'>Continue</button></div></div></div>';
   }
 
   function keyPanel(openable = true) {
     const weights = M.wheel(M.probabilities());
-    return '<div class="rc-key-grid">' + M.keyTiers.map(tier => {
-      const key = state.keys.find(item=>item.tier===tier);
-      return '<article class="rc-card rc-gear rc-tier-' + tier + '"><span class="rc-key-icon" aria-hidden="true">⚿</span><h3>' +
-        M.keyName(tier) + ' × ' + keyCount(tier) + '</h3><p>Base drop rate ' +
-        percent(weights.find(item=>item.key&&item.tier===tier).weight) + '</p>' +
-        (openable ? '<button class="button secondary" data-rc-redeem="' + (key?.id || 0) +
-          '" data-rc-focus="key-' + tier + '"' + (!key || busy ? ' disabled' : '') + '>Open Key</button>' : '') + '</article>';
-    }).join('') + '</div>' + (openable ?
-      '<div class="rc-key-stage"><div class="rc-reel" aria-hidden="true" hidden><div class="rc-track"></div></div>' +
-      '<button class="button secondary" data-rc-skip hidden>Skip key animation</button>' +
-      (state.lastKey && !busy ? resultCard(state.lastKey,false,true) : '') + '</div>' :
-      '<p><button class="button secondary" data-rc-tab="Key Vault">Open Key Vault</button></p>');
+    return '<div class="rc-page-head"><p class="kicker">Racquet keys</p><h3>'+(openable?'Key Vault':'Key inventory')+'</h3></div>'+
+      '<div class="rc-key-grid">' + M.keyTiers.map(tier => {
+        const key = state.keys.find(item=>item.tier===tier);
+        return '<article class="rc-card rc-gear rc-tier-' + tier + (key?'':' rc-unavailable')+'">' + keyArt(tier) +
+          '<h3>'+M.keyName(tier)+'</h3><p>'+keyCount(tier)+' owned'+(pref('base')?' · '+percent(weights.find(item=>item.key&&item.tier===tier).weight)+' base drop rate':'')+'</p>'+
+          '<button class="button secondary" data-rc-key-select="'+(key?.id||0)+'"'+(!key?' disabled':'')+'>Open Key</button></article>';
+      }).join('')+'</div>';
+  }
+
+  function keyOpening() {
+    const key=state.keys.find(item=>item.id===keySelection);
+    const last=keySelection===-1?state.lastKey:null;
+    const tier=key?.tier??last?.tier;
+    if (tier==null) return keyPanel();
+    return '<section class="rc-spin rc-key-opening rc-tier-'+tier+'"><div class="rc-stage-top"><div><p class="kicker">Key Vault</p><h3>'+M.keyName(tier)+'</h3></div>'+
+      '<button class="button secondary" data-rc-key-back>← Key Vault</button></div>'+
+      '<div class="rc-roulette"><div class="rc-reel rc-key-reel rc-tier-'+tier+'" aria-hidden="true"><div class="rc-track">'+
+      Array.from({length:5},()=>wheelCard({},true)).join('')+'</div></div></div><div class="rc-roll-controls"><div class="rc-key-controls">'+
+      keyArt(tier)+(key?'<button class="button primary rc-spin-button" data-rc-redeem="'+key.id+'"'+(busy?' disabled':'')+'>Open Key · Free</button>':'')+
+      '<button class="button secondary" data-rc-skip hidden>Skip animation</button></div>'+
+      (last&&!busy?resultCard(last,true):'<p class="rc-spin-note">A guaranteed '+M.tiers[tier][0]+' racquet. This key keeps its original odds.</p>')+'</div></section>';
+  }
+
+  function presentationMarkup() {
+    if (!presentation) return '';
+    const {id, kind} = presentation, r = M.racquet(id);
+    const cinema = kind === 'reveal';
+    const animation = cinema && pref('cinematics') && r.tier >= pref('minTier') && !reduced() && !pref('quiet');
+    return '<section role="region" aria-label="'+(cinema?'Racquet reveal':'Racquet showcase')+'" class="rc-presentation rc-tier-'+r.tier+
+      (animation?' rc-cinematic':'')+(r.id===60?' rc-regna':r.id===59?' rc-hof':r.id===51?' rc-espresso':'')+'">'+
+      '<button class="button secondary rc-exit-presentation" data-rc-presentation-close>'+ (cinema?'Skip reveal':'Exit showcase')+'</button>'+
+      '<div class="rc-presentation-art">'+art(r)+'</div><div class="rc-presentation-copy"><p class="kicker">'+r.rarity+
+      (presentation.new?' · New discovery':'')+'</p><h3>'+label(r)+'</h3><p>'+r.brand+(pref('base')?' · '+baseOdds(r):'')+
+      '</p><button class="button primary" data-rc-presentation-close>Continue</button></div></section>';
+  }
+
+  function showPresentation(id,kind,fresh=false) {
+    presentation={id,kind,new:fresh};
+    draw();
+    dialog.querySelector('.rc-exit-presentation')?.focus();
+    if(kind==='reveal'&&!reduced())sound('reveal');
   }
 
   function luckText(setup) {
@@ -270,21 +369,51 @@
     return '<h3>Consumables</h3>' + (owned.length ? '<div class="rc-gear-grid">' + owned.map(item=>
       '<article class="rc-card rc-gear"><h3>🍌 ' + item.name + ' × ' + state.fuel[item.id] + '</h3><p>' +
       fuelEffect(item) + '</p><button class="button secondary" data-rc-use="' + item.id + '">' +
-      (fuelConfirmation.startsWith(item.id+':')?'Confirm replacement':'Activate') + '</button></article>').join('') + '</div>' : '<p>No consumables owned.</p>');
+      (fuelConfirmation.startsWith(item.id+':')?'Confirm replacement':confirmFuel===item.id?'Confirm':'Activate') + '</button></article>').join('') + '</div>' : '<p>No consumables owned.</p>');
+  }
+
+  function subnav(items,current,attr) {
+    return '<nav class="rc-subnav">'+items.map(([value,title])=>'<button class="button secondary" '+attr+'="'+value+
+      '" aria-pressed="'+(value===current)+'">'+title+'</button>').join('')+'</nav>';
   }
 
   function fuelPanel() {
-    return fuelInventory() + '<h3 class="rc-subhead">Shop and crafting</h3><div class="rc-gear-grid">' + M.fuel.map(item => {
-      const recipe = M.recipes[item.id];
-      const ingredients = recipe ? Object.entries(recipe.ingredients) : [];
-      const affordable = state.cash >= item.price;
-      const craftable = recipe && state.cash >= recipe.fee && ingredients.every(([id,n])=>(state.fuel[id]||0)>=n);
-      return '<article class="rc-card rc-gear"><h3>🍌 ' + item.name + '</h3><p>' + fuelEffect(item) +
-        '</p><button class="button secondary" data-rc-fuel="' + item.id + '"' + (affordable?'':' disabled') +
-        '>Buy · ' + cash(item.price) + '</button>' + (recipe ? '<p>' + ingredients.map(([id,n])=>
-          n + ' × ' + M.fuelItem(id).name + ' (' + (state.fuel[id]||0) + ' owned)').join(' + ') + ' + ' + cash(recipe.fee) +
-          '</p><button class="button secondary" data-rc-craft="' + item.id + '"' + (craftable?'':' disabled') + '>Craft</button>' : '') + '</article>';
-    }).join('') + '</div>';
+    const tabs=subnav(['Buy','Craft','Active Boosts'].map(n=>[n,n]),fuelTab,'data-rc-fuel-tab');
+    const head='<div class="rc-page-head"><p class="kicker">Performance & hydration</p><h3>Fuel Station</h3></div>'+tabs;
+    if(fuelTab==='Active Boosts') return head+activePanel()+fuelInventory();
+    if(fuelTab==='Buy') return head+'<div class="rc-gear-grid">'+M.fuel.map(item=>
+      '<article class="rc-card rc-product"><div class="rc-product-art" aria-hidden="true">'+(item.minutes?'◒':item.slot==='sale'?'◉':'ϟ')+
+      '</div><h3>'+item.name+'</h3><p>'+fuelEffect(item)+'</p><p>'+(state.fuel[item.id]||0)+' owned</p>'+
+      '<button class="button primary" data-rc-fuel="'+item.id+'"'+(state.cash<item.price?' disabled':'')+'>Buy · '+cash(item.price)+'</button></article>').join('')+'</div>';
+    const item=M.fuelItem(recipeId), recipe=M.recipes[recipeId];
+    const ingredients=Object.entries(recipe.ingredients);
+    const craftable=state.cash>=recipe.fee&&ingredients.every(([id,n])=>(state.fuel[id]||0)>=n);
+    const requirement=(name,have,need)=>'<div class="rc-requirement'+(have>=need?' rc-complete':'')+'"><strong>'+name+'</strong><span>'+
+      number(Math.min(have,need))+' / '+number(need)+'</span><progress aria-label="'+name+'" value="'+Math.min(have,need)+'" max="'+need+'"></progress></div>';
+    return head+'<div class="rc-workspace"><aside class="rc-recipe-list">'+
+      subnav(Object.keys(M.recipes).map(id=>[id,M.fuelItem(id).name]),recipeId,'data-rc-recipe')+
+      '</aside><section class="rc-card rc-work-detail"><h3>Ingredients</h3>'+ingredients.map(([id,n])=>requirement(M.fuelItem(id).name,state.fuel[id]||0,n)).join('')+
+      requirement('Club Cash',state.cash,recipe.fee)+'</section><section class="rc-card rc-product"><div class="rc-product-art" aria-hidden="true">ϟ</div><h3>'+
+      item.name+'</h3><p>'+fuelEffect(item)+'</p><button class="button primary" data-rc-craft="'+item.id+'"'+(craftable?'':' disabled')+'>Craft</button></section></div>';
+  }
+
+  function settingsPanel() {
+    const tabs=['Rolling','Animations','Audio','Display'];
+    const box=(id,title)=>'<label><span>'+title+'</span><input type="checkbox" data-rc-pref="'+id+'"'+(pref(id)?' checked':'')+'></label>';
+    const range=(id,title)=>'<label><span>'+title+' · '+pref(id)+'%</span><input type="range" min="0" max="100" step="5" data-rc-pref="'+id+'" value="'+pref(id)+'"></label>';
+    const parts={
+      Rolling:box('effective','Show effective odds')+box('base','Show base odds')+box('confirmFuel','Confirm before activating expensive fuel')+
+        box('confirmReplace','Confirm boost replacement')+'<p>Every tenth paid spin uses your bonus multiplier. Key openings do not advance it.</p>',
+      Animations:box('cinematics','Play reveal cinematics')+box('quiet','Reduce particle and lighting effects')+
+        '<label><span>Minimum cinematic rarity</span><select data-rc-pref="minTier">'+M.tiers.slice(3).map(([tier],i)=>
+          '<option value="'+(i+3)+'"'+(pref('minTier')===i+3?' selected':'')+'>'+tier+'</option>').join('')+
+        '</select></label><label><span>Skip ordinary roll animations</span><input type="checkbox" data-rc-motion'+(state.skip?' checked':'')+'></label>'+
+        '<p>Replay Epic or higher reveals from a discovered racquet’s detail screen.</p>',
+      Audio:range('master','Master volume')+range('roll','Roulette volume')+range('reveal','Reveal volume')+range('interface','Interface volume'),
+      Display:box('compact','Compact inventory')+box('motion','Reduced motion')+box('contrast','High contrast')+box('boosts','Show active boosts on Roll')+box('stage','Expanded roulette stage'),
+    };
+    return '<div class="rc-page-head"><p class="kicker">Racquet Club</p><h3>Settings</h3></div>'+subnav(tabs.map(t=>[t,t]),settingsTab,'data-rc-settings-tab')+
+      '<div class="rc-card rc-preferences">'+parts[settingsTab]+'</div>';
   }
 
   function random() {
@@ -305,11 +434,15 @@
     });
     if (version !== spinVersion) return;
     if (!last || !dialog.open || mode !== 'club' || panel !== targetPanel) { busy = false; if (dialog.open) draw(); return; }
+    if (redemption) keySelection=-1;
+    resultVisible=true;
     draw();
-    let skip = state.skip || motion.matches || document.documentElement.dataset.animation === 'off';
+    let skip = !animateRoll();
+    if(!skip)sound('roll');
     const reel = dialog.querySelector('.rc-reel');
     if (!redemption) dialog.querySelector('[data-rc-spin]').classList.toggle('rc-bonus', last.bonusSpin);
     reel.hidden = false;
+    reel.closest('.rc-roulette')?.classList.add('rc-rolling');
     if (redemption) reel.classList.add('rc-key-reel','rc-tier-' + last.tier);
     const track = reel.querySelector('.rc-track');
     try {
@@ -329,20 +462,28 @@
           {duration:last.duration * 1000, easing:'cubic-bezier(.10,.72,.18,1)', fill:'forwards'});
         await animation.finished;
         skip ||= reel.hasAttribute('data-skipped');
+        track.style.left = '0';
         track.style.transform = 'translateX(' + -x + 'px)';
       }
       if (dialog.open && mode === 'club' && panel === targetPanel && dialog.contains(reel)) {
-        const reveal = !skip && !state.skip;
+        const reveal = !skip && animateRoll();
+        reel.closest('.rc-roulette')?.classList.remove('rc-rolling');
+        track.lastElementChild?.classList.add('rc-landed');
         busy = false;
         if (redemption) {
-          draw();
-          if (!skip) dialog.querySelector('.rc-key-stage .rc-reel').replaceWith(reel);
-          const result = dialog.querySelector('.rc-key-stage .rc-result');
-          if (result) result.outerHTML = resultCard(last,reveal,true);
+          if(!reduced() && pref('cinematics') && last.tier>=pref('minTier') && (reveal || state.skip && !reel.hasAttribute('data-skipped'))) showPresentation(last.id,'reveal',last.new);
+          else {
+            draw();
+            if(!skip) dialog.querySelector('.rc-roulette .rc-reel').replaceWith(reel);
+            dialog.querySelector('[data-rc-key-back]')?.focus();
+          }
         } else {
-          reel.hidden = skip;
+          if(skip) {
+            track.innerHTML=wheelCard({id:3,tier:0})+wheelCard(last)+wheelCard({id:17,tier:1});
+            track.children[1].classList.add('rc-landed');
+          }
           const pending = dialog.querySelector('.rc-spin-note');
-          pending?.insertAdjacentHTML('afterend',resultCard(last,reveal));
+          pending?.insertAdjacentHTML('afterend',resultCard(last));
           pending?.remove();
           dialog.querySelector('[data-rc-skip]').hidden = true;
           const button = dialog.querySelector('[data-rc-spin]');
@@ -384,7 +525,7 @@
           '<option value="' + v + '"' + (v === sort ? ' selected' : '') + '>' + n + '</option>').join('') +
         '</select></label><button class="button secondary" data-rc-duplicates data-rc-focus="duplicates">Sell Duplicates' +
         (duplicateValue() ? ' · ' + cash(duplicateValue()) : '') + '</button>' : '') + '</div>';
-    const summary = collection ? '<div class="rc-collection-summary"><h3>' + found.length + '/60 racquets discovered</h3><progress aria-label="Collection completion" value="' +
+    const summary = collection ? '<div class="rc-page-head"><p class="kicker">Collection</p><h3>Racquet gallery</h3></div><div class="rc-collection-summary"><strong>' + found.length + '/60 racquets discovered</strong><progress aria-label="Collection completion" value="' +
       found.length + '" max="60"></progress><p>' + Math.round(found.length / 60 * 100) + '% complete · ' +
       found.filter(r=>r.parent).length + ' mutations · ' + number(obtained()) + ' obtained' +
       (rarest() ? ' · Rarest: ' + label(rarest()) : '') +
@@ -394,14 +535,13 @@
       const item = state.items[r.id];
       const hint = M.racquets.some(variant=>variant.parent===r.id&&!state.items[variant.id]?.pulled);
       return tile(r, '<button class="rc-item" data-rc-focus="detail-' + r.id + '" data-rc-detail="' + r.id + '">' +
-        art(r) + badge(r) + '<strong>' + label(r) + '</strong><span>' + r.brand + ' · ' + baseOdds(r) + '</span><span>' +
-        (item?.count ? '×' + item.count : item?.pulled ? 'Discovered' : 'Uncollected') +
+        art(r) + badge(r) + '<strong>' + label(r) + '</strong><span>' + r.brand + (pref('base')?' · '+baseOdds(r):'') + '</span><span>' +
+        (item?.first && Date.now()-item.first<86400000 ? 'NEW · ' : '') + (item?.count ? '×' + item.count : item?.pulled ? 'Discovered' : 'Uncollected') +
         (item?.count && !collection ? ' · ' + cash(M.sellValue(state,r.id)) : '') +
         (item?.locked ? ' · Locked' : '') + (state.favourite===r.id?' · Favourite':'') +
         '</span>' + (collection&&hint?'<small>✦ Undiscovered mutation available</small>':'') + '</button>');
     }).join('');
-    return summary + toolbar + (selected ? itemDetail(M.racquet(selected)) : '') +
-      '<div class="rc-grid">' + (cards + (collection && filter==='all' && !query ? '<article class="rc-card rc-item rc-unknown"><strong>?</strong><span>Undiscovered racquet</span></article>'.repeat(M.racquets.filter(r=>!known(r)).length) : '') || '<p>No racquets match these filters.</p>') + '</div>';
+    return summary + toolbar + '<div class="rc-catalog-layout'+(!collection&&selected?' rc-master-detail':'')+'"><div class="rc-grid">' + (cards + (collection && filter==='all' && !query ? '<article class="rc-card rc-item rc-unknown"><strong>?</strong><span>Undiscovered racquet</span></article>'.repeat(M.racquets.filter(r=>!known(r)).length) : '') || '<p>No racquets match these filters.</p>') + '</div>' + (selected ? '<div class="rc-inspector'+(collection?' rc-gallery-detail':'')+'">'+itemDetail(M.racquet(selected))+'</div>' : '')+'</div>';
   }
 
   function duplicateValue() {
@@ -414,13 +554,17 @@
   function itemDetail(r) {
     const item = state.items[r.id] || {count:0}, setup = M.next(state);
     const variants = M.racquets.filter(x => x.parent === r.id && state.items[x.id]?.pulled);
-    const links = r.parent && known(M.racquet(r.parent)) ? '<p>Variant of ' + M.racquet(r.parent).name + '</p>' :
-      variants.length ? '<p>Related variant · ' + variants.map(label).join(', ') + '</p>' : '';
+    const undiscovered = M.racquets.some(x=>x.parent===r.id&&!state.items[x.id]?.pulled);
+    const links = (r.parent&&known(M.racquet(r.parent))?'<p>Variant of '+M.racquet(r.parent).name+'</p>':'')+
+      (undiscovered?'<p>✦ Undiscovered mutation</p>':'')+
+      variants.map(v=>'<button class="button secondary" data-rc-detail="'+v.id+'">View '+label(v)+'</button>').join('');
     return tile(r, '<div class="rc-detail">' + art(r) + '<div>' + badge(r) + '<h3>' + label(r) + '</h3><p>' + r.brand +
-      (item.first ? ' · Discovered ' + date(item.first) : ' · Uncollected') + ' · ' + item.count + ' owned</p><p>Base odds ' + baseOdds(r) +
-      (r.tier < 2 ? ' · Next spin ' : ' · Per-roll equivalent ') + percent(M.probabilities(setup.effectiveLuck,setup.mutation)[r.id-1]) +
+      (item.first ? ' · Discovered ' + date(item.first) : ' · Uncollected') + ' · ' + item.count + ' owned</p><p>' + (pref('base')?'Base odds '+baseOdds(r):'') +
+      (pref('effective')?(r.tier < 2 ? ' · Next spin ' : ' · Per-roll equivalent ') + percent(M.probabilities(setup.effectiveLuck,setup.mutation)[r.id-1]):'') +
       ' · Sell value ' + cash(M.sellValue(state,r.id)) + '</p>' + links +
-      '<div class="rc-actions"><button class="button secondary" data-rc-detail="0">Close details</button>' +
+      '<div class="rc-actions"><button class="button secondary" data-rc-detail="0">Close details</button>'+
+      '<button class="button secondary" data-rc-showcase="'+r.id+'">Showcase Mode</button>'+
+      (item.pulled&&r.tier>=3?'<button class="button secondary" data-rc-replay="'+r.id+'">Replay reveal</button>':'') +
       (item.count ? '<button class="button secondary" data-rc-focus="lock-' + r.id + '" data-rc-lock="' + r.id + '">' + (item.locked ? 'Unlock' : 'Lock') + '</button>' +
       '<button class="button secondary" data-rc-focus="favourite-' + r.id + '" data-rc-favourite="' + r.id + '">' + (state.favourite === r.id ? 'Remove favourite' : 'Favourite') + '</button>' +
       (!item.locked ? '<label>Quantity <input type="number" data-rc-count min="1" max="' + item.count + '" value="1"></label>' +
@@ -439,22 +583,33 @@
   }
 
   function gearPanel() {
-    const shop = panel === 'Accessory Shop';
-    return gearSummary(M.effects(state)) + '<div class="rc-gear-grid">' + M.slots.map((slot,i)=>{
-      const equipped = M.accessory(state.equipped[i]);
-      return '<section class="rc-card rc-gear"><h3><span aria-hidden="true">' + icons[i] + '</span> ' + slot + '</h3><p>' +
-        (equipped ? 'Equipped · ' + equipped.name : i===1 ? 'Default Grip · 5.0 s' : 'Empty slot') + '</p>' +
-        (!shop && equipped ? '<button class="button secondary" data-rc-focus="unequip-' + i + '" data-rc-unequip="' + i + '">Unequip</button>' : '') +
-        M.accessories.filter(item=>item.slot===i).map(item=>{
-          const owned = !!state.gear[item.id];
-          return '<div class="rc-gear-row"><div><strong>' + item.name + '</strong><small>' + effectText(item.effect) +
-            ' · ' + (owned ? (equipped === item ? 'Equipped' : 'Owned') : cash(item.price)) + '</small></div>' +
-            (owned ? (equipped !== item ? '<button class="button secondary" data-rc-focus="equip-' + item.id + '" data-rc-equip="' + item.id + '">Equip</button>' : '') :
-              shop ? '<div class="rc-actions"><button class="button secondary" data-rc-focus="buy-' + item.id + '" data-rc-buy="' + item.id + '"' +
-              (state.cash < item.price ? ' disabled' : '') + '>Buy</button><button class="button secondary" data-rc-focus="buy-equip-' + item.id + '" data-rc-buy-equip="' + item.id + '"' +
-              (state.cash < item.price ? ' disabled' : '') + '>Buy &amp; equip</button></div>' : '') + '</div>';
-        }).join('') + '</section>';
-    }).join('') + '</div>';
+    const shop=panel==='Accessory Shop', slot=shop?shopSlot:gearSlot;
+    const equipped=M.accessory(state.equipped[slot]);
+    const items=M.accessories.filter(item=>item.slot===slot&&(shop||state.gear[item.id]));
+    const chosen=items.find(item=>item.id===gearId);
+    const heading='<div class="rc-page-head"><p class="kicker">Accessories</p><h3>'+(shop?'Accessory Shop':'Equipment loadout')+'</h3></div>';
+    const slotName=(i)=>M.accessory(state.equipped[i])?.name||(i===1?'Default grip':'Empty');
+    const loadout=shop?'':'<section class="rc-loadout"><div class="rc-loadout-art">'+art(M.racquet(state.favourite)||M.racquet(1))+'</div>'+
+      M.slots.map((name,i)=>'<button class="button secondary rc-slot rc-slot-'+i+'" data-rc-gear-slot="'+i+'" aria-pressed="'+(i===slot)+
+      '"><span aria-hidden="true">'+icons[i]+'</span><strong>'+name+'</strong><small>'+slotName(i)+'</small></button>').join('')+
+      '<div class="rc-loadout-stats">'+gearSummary(M.effects(state))+'</div></section>';
+    const controls=item=>{
+      const owned=state.gear[item.id], disabled=state.cash<item.price?' disabled':'';
+      if(owned) return equipped===item?'<button class="button secondary" data-rc-unequip="'+slot+'">Unequip</button>':
+        '<button class="button primary" data-rc-equip="'+item.id+'">Equip</button>';
+      return '<button class="button secondary" data-rc-buy="'+item.id+'"'+disabled+'>Buy</button> '+
+        '<button class="button primary" data-rc-buy-equip="'+item.id+'"'+disabled+'>Buy &amp; equip</button>';
+    };
+    const products=items.map(item=>'<article class="rc-card rc-product"><button class="rc-product-pick" data-rc-gear-detail="'+item.id+
+      '"><span class="rc-product-art" aria-hidden="true">'+icons[slot]+'</span><strong>'+item.name+'</strong><span>'+
+      effectText(item.effect)+'</span><small>'+(equipped===item?'Equipped':state.gear[item.id]?'Owned':cash(item.price))+
+      '</small></button>'+controls(item)+'</article>').join('');
+    const detail=chosen?'<section class="rc-card rc-gear-comparison"><div><p class="kicker">Current '+M.slots[slot]+'</p><h3>'+
+      slotName(slot)+'</h3><p>'+(equipped?effectText(equipped.effect):'Default effects')+'</p></div><div><p class="kicker">Selected</p><h3>'+
+      chosen.name+'</h3><p>'+effectText(chosen.effect)+(state.gear[chosen.id]?'':' · '+cash(chosen.price))+'</p>'+controls(chosen)+'</div></section>':'';
+    return heading+loadout+(shop?subnav(M.slots.map((name,i)=>[i,name]),slot,'data-rc-gear-slot')+
+      '<p><button class="button secondary" data-rc-tab="Fuel Station">Visit Fuel Station</button></p>':'')+detail+
+      '<div class="rc-gear-grid">'+(products||'<p>No owned items in this slot. <button class="button secondary" data-rc-tab="Accessory Shop">Browse shop</button></p>')+'</div>';
   }
 
   function statsPanel() {
@@ -473,7 +628,7 @@
       ...M.keyTiers.map(tier=>[M.keyName(tier)+'s obtained',state.keysEarned[tier]||0]),
       ...M.tiers.slice(3).map(([name],i)=>[name+' pulls',found.filter(r=>r.tier===i+3).reduce((n,r)=>n+state.items[r.id].pulled,0)])
     ];
-    return '<dl class="rc-stats rc-statistics">' + stats.map(([name,value])=>
+    return '<div class="rc-page-head"><p class="kicker">Club record</p><h3>Statistics</h3></div><dl class="rc-stats rc-statistics">' + stats.map(([name,value])=>
       '<div><dt>' + name + '</dt><dd>' + (typeof value==='number' ? number(value) : value) + '</dd></div>').join('') + '</dl>';
   }
 
@@ -484,24 +639,51 @@
     if (data.rcClose !== undefined) { dialog.close(); return; }
     if (data.rcOpen !== undefined) { show('club'); return; }
     if (data.rcSkip !== undefined) { dialog.querySelector('.rc-reel')?.setAttribute('data-skipped',''); animation?.finish(); return; }
-    if (data.rcInventory) { inventoryView = data.rcInventory; selected = 0; draw(); return; }
+    if (data.rcPresentationClose !== undefined) {
+      presentation=null;draw();
+      dialog.querySelector('[data-rc-replay], [data-rc-key-back], [data-rc-spin]')?.focus();
+      return;
+    }
+    if (data.rcShowcase || data.rcReplay) {
+      const r=M.racquet(data.rcShowcase||data.rcReplay);
+      if(r&&known(r)&&(!data.rcReplay||state.items[r.id]?.pulled&&r.tier>=3))showPresentation(r.id,data.rcReplay?'reveal':'showcase');
+      return;
+    }
+    if (data.rcContinue !== undefined) { resultVisible=false;draw();dialog.querySelector('[data-rc-spin]')?.focus();return; }
+    if (data.rcMenu !== undefined) { menu=!menu;draw();dialog.querySelector('[data-rc-menu]')?.focus();return; }
+    if (data.rcInventory) { inventoryView=data.rcInventory;selected=0;draw();return; }
+    if (data.rcKeyBack !== undefined) { cancelSpinPresentation();keySelection=0;draw();return; }
+    if (data.rcKeySelect) {
+      if (!state.keys.some(k=>k.id===Number(data.rcKeySelect))) return;
+      panel='Key Vault';keySelection=Number(data.rcKeySelect);draw();dialog.querySelector('[data-rc-redeem]')?.focus();return;
+    }
     if (data.rcRedeem) { void spin(Number(data.rcRedeem)); return; }
+    if (data.rcGearSlot !== undefined) {
+      if(panel==='Accessory Shop')shopSlot=Number(data.rcGearSlot);else gearSlot=Number(data.rcGearSlot);
+      gearId='';draw();return;
+    }
+    if (data.rcGearDetail) {gearId=data.rcGearDetail;draw();return;}
+    if (data.rcFuelTab) {fuelTab=data.rcFuelTab;fuelConfirmation=confirmFuel='';actionMessage='';draw();return;}
+    if (data.rcRecipe) {recipeId=data.rcRecipe;draw();return;}
+    if (data.rcSettingsTab) {settingsTab=data.rcSettingsTab;draw();return;}
     if (data.rcTab) {
+      scrollPositions.set(panel,dialog.querySelector('.rc-body').scrollTop);
+      if(panel==='Inventory'){inventoryFilter=filter;inventoryQuery=query;}
       cancelSpinPresentation();
-      panel = data.rcTab;
-      filter = 'all';
-      query = '';
-      selected = confirmId = 0;
-      fuelConfirmation = '';
-      actionMessage = '';
-      draw();
-      dialog.querySelector('.rc-body').scrollTop = 0;
+      panel=data.rcTab;menu=false;keySelection=0;
+      filter=panel==='Inventory'?inventoryFilter:'all';
+      query=panel==='Inventory'?inventoryQuery:'';
+      selected=confirmId=0;
+      fuelConfirmation=confirmFuel='';
+      actionMessage='';
+      sound('interface');draw();
+      dialog.querySelector('.rc-body').scrollTop=scrollPositions.get(panel)||0;
       return;
     }
     if (data.rcDetail !== undefined) {
       const entry = M.racquet(data.rcDetail);
       selected = entry && known(entry) ? entry.id : 0; confirmId = 0; draw();
-      if (selected) dialog.querySelector('.rc-detail')?.scrollIntoView({block:'nearest'});
+      if(selected) {dialog.querySelector('.rc-detail')?.scrollIntoView({block:'nearest'});dialog.querySelector('.rc-detail button')?.focus({preventScroll:true});}
       return;
     }
     if (data.rcSpin !== undefined) { void spin(); return; }
@@ -526,15 +708,20 @@
         const item = M.fuelItem(data.rcFuel || data.rcCraft || data.rcUse);
         const current = M.activeBoosts(state,Date.now()).find(b=>b.slot===item.slot);
         const confirmation = [item.id,current?.id,current?.expires,current?.remaining].join(':');
-        if (data.rcUse && current && fuelConfirmation !== confirmation) {
+        if (data.rcUse && current && pref('confirmReplace') && fuelConfirmation !== confirmation) {
           fuelConfirmation = confirmation;
           actionMessage = 'Activating ' + item.name + ' will replace ' + current.name + '. Confirm to continue.';
           draw();
           return;
         }
+        if(data.rcUse && item.price>=7500 && pref('confirmFuel') && confirmFuel!==item.id && !fuelConfirmation){
+          confirmFuel=item.id;
+          actionMessage='Use '+item.name+'? Select Confirm to activate it.';
+          draw();return;
+        }
         const applied = await update(s=>data.rcFuel?M.buyFuel(s,item.id):data.rcCraft?M.craft(s,item.id):
-          M.activate(s,item.id,Date.now(),fuelConfirmation===confirmation && M.activeBoosts(s,Date.now()).some(b=>[item.id,b.id,b.expires,b.remaining].join(':')===confirmation)));
-        fuelConfirmation = '';
+          M.activate(s,item.id,Date.now(),!pref('confirmReplace') || fuelConfirmation===confirmation && M.activeBoosts(s,Date.now()).some(b=>[item.id,b.id,b.expires,b.remaining].join(':')===confirmation)));
+        fuelConfirmation = confirmFuel = '';
         actionMessage = applied ? item.name + (data.rcFuel?' purchased.':data.rcCraft?' crafted.':' activated.') : 'Action unavailable.';
       } else if (data.rcDuplicates !== undefined) {
         const payout = await update(M.sellDuplicates);
@@ -566,6 +753,12 @@
 
   async function change(event) {
     const el = event.target;
+    if(el.dataset.rcPref) {
+      const id=el.dataset.rcPref;
+      await update(s=>{(s.presentation||={})[id]=el.type==='checkbox'?el.checked:Number(el.value);return true;});
+      if(dialog.open){draw();dialog.querySelector('[data-rc-pref="'+id+'"]')?.focus();}
+      return;
+    }
     if (el.matches('[data-rc-enable]')) {
       await update(s=>{ s.enabled = el.checked; return true; },false);
     } else if (el.matches('[data-rc-motion]')) {
@@ -617,8 +810,10 @@
     if (!dialog?.open || busy) return;
     const active = dialog.querySelector('[data-rc-active]');
     if (active) active.innerHTML = activeMarkup();
-    const luck = dialog.querySelector('[data-rc-luck]');
-    if (luck) luck.innerHTML = luckText(M.next(state));
+    const setup=M.next(state), luck=dialog.querySelector('[data-rc-luck]'), top=dialog.querySelector('[data-rc-top-luck]'), boosts=dialog.querySelector('[data-rc-top-boosts]');
+    if(luck)luck.innerHTML=luckText(setup);
+    if(top)top.textContent=ratio(setup.effectiveLuck)+' luck';
+    if(boosts)boosts.textContent=setup.boosts.length+' boosts';
   },1000);
   sync();
 })();

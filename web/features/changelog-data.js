@@ -9,7 +9,8 @@ window.BRTA_RELEASES = Object.freeze([
     "changes": [
       "Enable Gamify the Site under Extras to earn Tennis Balls while exploring BRTA Power Ratings.",
       "Collect 60 racquets, sell duplicates for Club Cash, and equip accessories to improve your next spin.",
-      "Unlock hidden racquets with rarity keys, and craft temporary boosts in the Fuel Station."
+      "Unlock hidden racquets with rarity keys, and craft temporary boosts in the Fuel Station.",
+      "Racquet Club fills the screen with a larger roulette, rarity reveals, and redesigned equipment and collection menus."
     ]
   },
   {
