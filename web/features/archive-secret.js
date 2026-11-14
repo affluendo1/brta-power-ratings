@@ -22,12 +22,12 @@
     // Desktop browser zoom changes the CSS viewport, while the browser
     // window width stays in screen units. The page can compensate its own scale.
     const ratio = innerWidth && outerWidth > 0 ? outerWidth / innerWidth : 1;
-    if (fit && ratio >= .94) {
+    if (fit && (!auxiliaryEnabled() || ratio >= .94)) {
       fit = false;
       sessionStorage.removeItem(zoomKey);
     }
     root.style.setProperty('--archive-zoom', fit ? String(Math.min(5, 1 / ratio)) : '1');
-    door.hidden = fit || ratio > .56;
+    door.hidden = !auxiliaryEnabled() || fit || ratio > .56;
   }
   window.addEventListener('resize', syncZoom);
   syncZoom();
@@ -42,14 +42,16 @@
         <h2 id="${id}-title">${title}</h2>${content}
       </section>`;
     document.body.append(layer);
-    const hide = () => {
-      layer.classList.add('hidden');
-      BRTAOverlays.unlock(layer);
-    };
+    const hide = () => closeLayer(layer);
     layer.querySelector('.close-btn').addEventListener('click', hide);
     layer.querySelector('.overlay-backdrop').addEventListener('click', hide);
     BRTAOverlays.register(id, hide);
     return layer;
+  }
+  function closeLayer(layer) {
+    if (!layer || layer.classList.contains('hidden')) return;
+    layer.classList.add('hidden');
+    BRTAOverlays.unlock(layer);
   }
   function open(layer) {
     window.BRTARouteUI?.secret();
@@ -59,6 +61,7 @@
   }
   let menu, clue;
   door.addEventListener('click', () => {
+    if (!auxiliaryEnabled()) return;
     fit = true;
     sessionStorage.setItem(zoomKey, '1');
     syncZoom();
@@ -68,6 +71,7 @@
       const checkbox = menu.querySelector('input');
       checkbox.checked = archiveEnabled;
       checkbox.addEventListener('change', () => {
+        if (!auxiliaryEnabled()) return;
         localStorage.setItem(archiveKey, checkbox.checked ? '1' : '0');
         location.reload();
       });
@@ -81,7 +85,7 @@
   link.href = '#archive-clue';
   link.addEventListener('click', event => {
     event.preventDefault();
-    if (!archiveEnabled || activePage !== 'ratings') return;
+    if (!auxiliaryEnabled() || !archiveEnabled || activePage !== 'ratings') return;
     if (!clue) {
       clue = overlay('archiveSecretClue', 'Congrats, you found me.',
         '<p>Nice. Here’s a Vault code. Remember this one!</p><code class="archive-vault-code"></code><p class="archive-code-hint">Case-sensitive. This code changes when you reload.</p>');
@@ -90,7 +94,7 @@
     open(clue);
   });
   function syncFooter() {
-    if (archiveEnabled && activePage === 'ratings') {
+    if (auxiliaryEnabled() && archiveEnabled && activePage === 'ratings') {
       if (!link.isConnected) {
         title.replaceWith(link);
         link.append(title);
@@ -105,10 +109,18 @@
     syncFooter();
   };
   syncFooter();
+  window.addEventListener('brta-module-toggle', () => {
+    syncZoom();
+    syncFooter();
+    if (!auxiliaryEnabled()) {
+      closeLayer(menu);
+      closeLayer(clue);
+    }
+  });
 
   window.BRTAArchiveSecret = {
     redeem(value) {
-      if (!archiveEnabled || value !== code) return false;
+      if (!auxiliaryEnabled() || !archiveEnabled || value !== code) return false;
       localStorage.setItem(rewardKey, '1');
       syncThemeOption();
       return true;

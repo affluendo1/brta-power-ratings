@@ -12,7 +12,12 @@
     const base = location.pathname.startsWith('/brta-power-ratings/') ? '/brta-power-ratings/' : '/';
     document.querySelector('a').href = base;
     const path = location.pathname.startsWith(base) ? location.pathname.slice(base.length) : '';
-    if (/^(current|history)\/[a-z0-9][a-z0-9_/-]*$/i.test(path)) {
+    const pastRelease = path.match(/^extras\/past-software\/([a-z]+[0-9]+)(?:\/((?:current|history)\/[a-z0-9][a-z0-9_/-]*))?\/?$/i);
+    if (pastRelease) {
+      const params = new URLSearchParams({ release: pastRelease[1] });
+      if (pastRelease[2]) params.set('route', pastRelease[2]);
+      location.replace(base + 'extras/past-software/?' + params);
+    } else if (/^(current|history)\/[a-z0-9][a-z0-9_/-]*$/i.test(path)) {
       location.replace(base + '?brta-route=' + encodeURIComponent(path));
     }
   </script>
