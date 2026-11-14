@@ -3,9 +3,32 @@ import tempfile
 import unittest
 from pathlib import Path
 from generate_player_search import build_player_search, section_players
+from player_identity import appearances, link
+from datetime import date
 
 
 class PlayerSearchTests(unittest.TestCase):
+    def test_fill_ins_and_competition_changes_link_but_same_day_namesakes_do_not(self):
+        sunday = {date(2026, 8, 2), date(2026, 8, 16)}
+        fill_in = {date(2026, 8, 9)}
+        saturday = {date(2027, 2, 6)}
+        rows = [('Alex Lee', 'Club Blue', sunday), ('Alex Lee', 'Club 2', fill_in),
+                ('Álex Lee', 'Club 1', saturday), ('Alex Lee', 'Other Club', saturday)]
+        self.assertEqual(link(rows), [[0, 1, 2]])
+        rows[1] = ('Alex Lee', 'Club 2', {date(2026, 8, 2)})
+        self.assertEqual(link(rows), [])
+
+    def test_forfeit_does_not_create_a_same_day_conflict(self):
+        fixture = {'home': 'Club', 'away': 'Other Club', 'rubbers': [
+            {'status': 'Forfeit', 'score': '6-0', 'home': 'Alex Lee'},
+            {'status': 'Completed', 'score': '6-4', 'home': 'Sam Lee / Kim Lee'},
+            {'score': '4-6', 'home': 'Older Record', 'winner': 'Opponent'},
+        ]}
+        evidence = appearances({'results': [{'date': '02 Aug 26', 'fixtures': [fixture]}]})
+        self.assertNotIn(('Alex Lee', 'Club'), evidence)
+        self.assertEqual(evidence['Kim Lee', 'Club'], {date(2026, 8, 2)})
+        self.assertEqual(evidence['Older Record', 'Club'], {date(2026, 8, 2)})
+
     def test_includes_doubles_only_and_unrated_scorecard_players_without_placeholders(self):
         rows = section_players({'singles': [{'player': 'Alex', 'team': 'A'}],
             'doubles': [{'player': 'Alex / Doubles Only', 'team': 'A'}],

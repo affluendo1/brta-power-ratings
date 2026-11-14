@@ -6,8 +6,8 @@
     if(!q)return [];
     const names=new Map();
     index.players.forEach((name,i)=>{const n=normalise(name);if(tokens.every(t=>n.includes(t)))names.set(i,{name,score:n===q?0:n.startsWith(q)?1:2})});
-    return index.entries.filter(row=>names.has(row[0])).map(([nameId,sectionId,team])=>({
-      ...index.sections[sectionId],player:names.get(nameId).name,team,score:names.get(nameId).score
+    return index.entries.filter(row=>names.has(row[0])).map(([nameId,sectionId,team,identity])=>({
+      ...index.sections[sectionId],player:names.get(nameId).name,team,score:names.get(nameId).score,identity
     })).sort((a,b)=>a.score-b.score||a.player.localeCompare(b.player)||
       seasonOrder(b)-seasonOrder(a)||
       a.competitionCode.localeCompare(b.competitionCode)||a.sectionLabel.localeCompare(b.sectionLabel,undefined,{numeric:true}));

@@ -2,6 +2,7 @@
   'use strict';
   let foundation;
   const maps = new WeakMap();
+  const calendarLocations = new WeakMap();
   const points = venue => venue?.coordinates;
   const address = venue => venue?.address_lines?.join(', ') || '';
   const published = fixture => !String(fixture.fixtureId).startsWith('custom:') && !fixture.simulated;
@@ -25,13 +26,16 @@
   function html(fixture) {
     if (!published(fixture)) return '';
     const date = roundDate(fixture.date), venue = fixture.venue || 'Venue not published';
-    const time = fixture.startTime ? String(fixture.startTime).replace(/^(\d{1,2}):(\d\d)$/, (_, hour, minute) =>
-      (Number(hour) % 12 || 12) + ':' + minute + (Number(hour) >= 12 ? ' pm' : ' am')) : '';
+    const clock = BRTAMatchday.time(fixture.startTime, D.meta.competition_code);
+    const hour = Number(clock.slice(0, 2));
+    const time = clock ? (hour % 12 || 12) + ':' + clock.slice(2, 4) + (hour >= 12 ? ' pm' : ' am') : '';
     return '<section class="fixture-logistics" data-fixture-logistics="' + esc(fixture.fixtureId) + '"><h3>Fixture details</h3>' +
       '<div class="fixture-logistics-grid"><div><span>Home</span><b>' + teamName(fixture.home) + '</b></div>' +
       '<div><span>Away</span><b>' + teamName(fixture.away) + '</b></div>' +
       '<div><span>Date and time</span><b>' + esc([date, time].filter(Boolean).join(' · ') || 'Not published') +
       '</b></div><div><span>Playing venue</span><b>' + esc(venue) + '</b><small data-venue-side="fixture"></small></div></div>' +
+      (fixture.status === 'Scheduled' && BRTAMatchday.iso(fixture.date)
+        ? '<p><button class="button secondary" type="button" data-fixture-calendar>Add to calendar (.ics)</button> <small>Apple Calendar, Outlook or Google Calendar</small></p>' : '') +
       (window.BRTAFinalsRace?.hint(fixture) || '') + '</section>';
   }
 
@@ -58,6 +62,8 @@
       const isHome = venueKey && [fixture.home, clubBaseName(fixture.home)].some(name => BRTAClubData.key(name) === venueKey);
       const location = directory.venues.get(assignment?.resolved_venue_id) ||
         (isHome ? home : fixture.venue ? homeVenue(fixture.venue) : null);
+      const venueAddress = address(location);
+      if (venueAddress) calendarLocations.set(target, [fixture.venue, venueAddress].filter(Boolean).join(', '));
       const locations = location ? [{ id: 'fixture', name: fixture.venue, venue: location }] : [];
       const markers = locations.filter(item => BRTAClubMap.inside(points(item.venue))).map(item => ({
         id: item.id, name: item.name, coordinates: points(item.venue), group: 'section'
@@ -90,6 +96,21 @@
       for (const node of target.querySelectorAll('[data-venue-side]')) node.textContent = 'Location unavailable';
     }
   }
+
+  document.addEventListener('click', event => {
+    const button = event.target.closest('[data-fixture-calendar]');
+    if (!button) return;
+    const target = button.closest('[data-fixture-logistics]');
+    const fixture = fixtureById(target.dataset.fixtureLogistics);
+    if (!fixture || fixture.status !== 'Scheduled') return;
+    const date = BRTAMatchday.iso(fixture.date);
+    if (!date) return;
+    const entry = { ...fixture, date, kind: 'fixture', isHome: true, opponent: fixture.away,
+      label: roundHeading(fixture), venue: calendarLocations.get(target) || fixture.venue };
+    const url = new URL(location.href);
+    const text = BRTAMatchday.ics(D, fixture.home, [entry], { url: url.href });
+    downloadFile(text, 'brta-fixture-' + String(fixture.fixtureId).replace(/[^\w-]/g, '-') + '.ics', 'text/calendar;charset=utf-8');
+  });
 
   window.BRTAFixtureDetails = { html, hydrate, closeMap(id) {
     for (const target of $(id)?.querySelectorAll('[data-fixture-logistics]') || []) maps.get(target)?.abort();

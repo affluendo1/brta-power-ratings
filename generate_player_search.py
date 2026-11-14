@@ -4,6 +4,7 @@ from __future__ import annotations
 import json
 import re
 from pathlib import Path
+from player_identity import appearances, link
 
 INDEX_PATH = Path('data/archive/player-search.json')
 
@@ -37,6 +38,7 @@ def section_players(payload: dict) -> dict[str, set[str]]:
 
 def build_player_search(catalog: dict, root: Path = Path('.')) -> dict:
     names, name_ids, sections, entries, unavailable = [], {}, [], [], []
+    occurrences = []
     seen = set()
     for season in catalog.get('seasons', []):
         if season['competition_code'] not in ('AA', 'AP', 'UA', 'TA', 'TN', 'WA', 'HA'):
@@ -61,11 +63,17 @@ def build_player_search(catalog: dict, root: Path = Path('.')) -> dict:
                 'sectionCode': section['section_code'], 'sectionLabel': section['section_label'],
                 'dataPath': path, 'isCurrent': bool(season.get('is_current')),
             })
+            played = appearances(payload)
             for name, teams in sorted(section_players(payload).items()):
                 if name not in name_ids:
                     name_ids[name] = len(names)
                     names.append(name)
-                entries.append([name_ids[name], section_id, ' / '.join(sorted(teams))])
+                for team in sorted(teams) or ['']:
+                    entries.append([name_ids[name], section_id, team])
+                    occurrences.append((name, team, played.get((name, team), set())))
+    for identity, group in enumerate(link(occurrences), 1):
+        for entry in group:
+            entries[entry].append(identity)
     return {'version': 1, 'players': names, 'sections': sections, 'entries': entries,
             'unavailableSections': unavailable}
 

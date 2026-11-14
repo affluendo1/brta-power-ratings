@@ -331,7 +331,7 @@ function renderHistoryPlayerSearch(){
   const query=$('#search').value.trim();
   $('#ratingsTitle').textContent='All history · Player search';
   $('#ratingsDesc').textContent='Find players across every published Saturday and Sunday AM season, including the current season.';
-  $('#ratingsHint').textContent='Each result is a separate season and section. Matching names may belong to different people.';
+  $('#ratingsHint').textContent='Each row is a section appearance. Matching history labels mark likely links based on name, club and dates played.';
   $('#teamFilter').disabled=true;$('#teamFilter').value='';renderBandInfo({bounds:[]});
   $('#ratingHead').innerHTML='<tr><th>Player</th><th>Team</th><th>Season</th><th>Competition</th><th>Section</th></tr>';
   const message=text=>{$('#ratingBody').innerHTML='<tr><td colspan="5">'+text+'</td></tr>'};
@@ -344,7 +344,9 @@ function renderHistoryPlayerSearch(){
   const missing=playerSearchIndex.unavailableSections?.length||0;
   if(missing)$('#ratingsHint').textContent+=' '+missing+' sections have not yet been published and could not be searched.';
   if(!rows.length){message('No player found in the published Saturday and Sunday history. Try a surname or part of the name.');return}
-  $('#ratingBody').innerHTML=visible.map(row=>'<tr><td>'+globalPersonButton(row)+'</td><td>'+teamName(row.team)+'</td><td>'+esc(row.seasonOptionLabel||row.seasonLabel)+(row.isCurrent?' <small>Current</small>':'')+'</td><td>'+esc(competitionLabel(row.competitionCode))+'</td><td>'+esc(row.sectionLabel)+'</td></tr>').join('')+
+  const histories=new Map();
+  for(const row of rows)if(row.identity&&!histories.has(row.identity))histories.set(row.identity,histories.size+1);
+  $('#ratingBody').innerHTML=visible.map(row=>'<tr><td>'+globalPersonButton(row)+(row.identity?' <small>History '+histories.get(row.identity)+'</small>':'')+'</td><td>'+teamName(row.team)+'</td><td>'+esc(row.seasonOptionLabel||row.seasonLabel)+(row.isCurrent?' <small>Current</small>':'')+'</td><td>'+esc(competitionLabel(row.competitionCode))+'</td><td>'+esc(row.sectionLabel)+'</td></tr>').join('')+
     (rows.length>visible.length?'<tr><td colspan="5"><button class="button secondary" type="button" data-history-search-more>Show next 100</button><span> Showing '+visible.length+' of '+rows.length+' results</span></td></tr>':'');
 }
 function renderGlobalRatings(){

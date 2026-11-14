@@ -5,26 +5,75 @@ function modal(title,html,wide=false){if(dialog&&!dialog.classList.contains('rou
 document.addEventListener('click',e=>{if(e.target.closest('[data-82-close]')){e.stopImmediatePropagation();dismiss()}},true);
 document.addEventListener('keydown',e=>{if(!dialog)return;const higher=[...document.querySelectorAll('.overlay:not(.hidden)')].filter(o=>o!==dialog&&Number(getComputedStyle(o).zIndex)>Number(dialog.style.zIndex));if(higher.length){if(e.key==='Escape'){e.preventDefault();e.stopImmediatePropagation();close('#'+higher.sort((a,b)=>Number(getComputedStyle(b).zIndex)-Number(getComputedStyle(a).zIndex))[0].id)}return}if(e.key==='Escape'){e.preventDefault();e.stopImmediatePropagation();dismiss()}if(e.key==='Tab'){const items=[...dialog.querySelectorAll('button,input,select,a[href],summary,[tabindex="0"]')].filter(x=>!x.disabled&&x.getClientRects().length);if(!items.length)return;if(e.shiftKey&&(document.activeElement===items[0]||!dialog.contains(document.activeElement))){e.preventDefault();items.at(-1).focus()}else if(!e.shiftKey&&(document.activeElement===items.at(-1)||!dialog.contains(document.activeElement))){e.preventDefault();items[0].focus()}}},true);
 window.BRTA82={modal,dismiss};
-const page=document.createElement('div');page.id='rounds821Content';page.innerHTML='<p id="roundsContext" class="small-note"></p><div class="rounds82-grid"><section id="rounds82Overview" class="rounds82-panel"></section><section class="rounds82-panel"><div class="rounds82-head"><h2>Your calendar</h2><label><b>Team</b><select id="rounds82Team"><option value="">Choose your team</option></select></label></div><div id="rounds82Calendar"></div></section></div>';
-const stash=document.createElement('div');stash.hidden=true;stash.append(page);document.body.append(stash);
-let calendarMonth=null;
-function showRounds(){const o=modal('Rounds','',true);o.classList.add('rounds821-overlay');o.querySelector('.settings-sheet').append(page);render();}
-const baseDismiss=dismiss;
-$('#roundBtn').textContent='Rounds';$('#roundBtn').onclick=showRounds;openRound=showRounds;
-function teamKey(){return 'brta-calendar-team:'+M.scope(D)}
-function renderOverview(){const groups=(D.results||[]).filter(r=>r.fixtures.some(f=>f.status!=='Scheduled'&&f.status!=='Bye')).slice().sort((a,b)=>Number(b.round)-Number(a.round));if(!groups.some(r=>String(r.round)===String(selectedRound)))selectedRound=groups[0]?.round;const r=M.overview(D,selectedRound),box=$('#rounds82Overview');if(!r){box.innerHTML='<h2>Round overview</h2><p class="small-note">No results have been published yet.</p>';return}const newest=String(r.round)===String(groups[0]?.round),highlights=Number(D.roundOverview?.round)===Number(r.round)?D.roundOverview:null;box.innerHTML='<div class="rounds82-head"><h2>Round overview</h2><select id="rounds82Round" aria-label="Overview round">'+groups.map(g=>'<option value="'+g.round+'" '+(g.round===r.round?'selected':'')+'>'+esc(roundHeading(g))+'</option>').join('')+'</select></div><p class="small-note">'+esc(roundDate(r.date))+'</p><div class="round-metrics"><div><span>Completed ties</span><b>'+r.completed+'</b></div><div><span>Games played</span><b>'+r.games+'</b></div><div><span>Singles</span><b>'+r.singles+'</b></div><div><span>Doubles</span><b>'+r.doubles+'</b></div></div>'+(r.pending?'<p class="small-note">'+r.pending+' result'+(r.pending===1?'':'s')+' still pending.</p>':'')+'<div class="round-fixtures">'+r.fixtures.filter(f=>f.status!=='Bye').map(f=>'<button class="round-fixture" data-82-result="'+esc(f.fixtureId)+'"><b>'+teamName(f.home)+' '+(f.status==='Completed'?(f.homeSets??f.homeRubbers)+'–'+(f.awaySets??f.awayRubbers):'v')+' '+teamName(f.away)+'</b><span>'+esc(f.status)+(f.status==='Completed'?' · '+f.homeGames+'–'+f.awayGames+' games':'')+'</span></button>').join('')+'</div>'+(highlights?'<div class="round-highlights">'+roundHighlight('Top performance',highlights.topPerformance,'top')+roundHighlight('Biggest upset',highlights.biggestUpset,'upset')+'</div>':'')+(r.closest?'<p class="small-note"><b>Closest tie:</b> '+esc(r.closest.home)+' / '+esc(r.closest.away)+' — '+Math.abs(r.closest.homeGames-r.closest.awayGames)+' game margin.</p>':'');$('#rounds82Round').onchange=e=>{selectedRound=Number(e.target.value);renderOverview()}}
-function today(){return new Intl.DateTimeFormat('en-CA',{timeZone:'Australia/Melbourne',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date())}
-function dateLabel(date){return new Date(date+'T12:00:00Z').toLocaleDateString('en-AU',{weekday:'short',day:'numeric',month:'short',year:'numeric',timeZone:'UTC'})}
-function renderCalendar(){const team=$('#rounds82Team').value,host=$('#rounds82Calendar');localStorage.setItem(teamKey(),team);if(!team){host.innerHTML='<div class="calendar821-empty">Choose your team to see your tennis calendar.</div>';return}
-const all=M.calendar(D,team),now=today();if(!calendarMonth)calendarMonth=(all.find(e=>e.date>=now)?.date||all.at(-1)?.date||now).slice(0,7);
-const [year,month]=calendarMonth.split('-').map(Number),first=new Date(Date.UTC(year,month-1,1)),offset=(first.getUTCDay()+6)%7,days=new Date(Date.UTC(year,month,0)).getUTCDate(),title=first.toLocaleDateString('en-AU',{month:'long',year:'numeric',timeZone:'UTC'});
-const cells=Array.from({length:Math.ceil((offset+days)/7)*7},(_,i)=>{const n=i-offset+1;if(n<1||n>days)return '<div class="calendar821-day outside" aria-hidden="true"></div>';const date=calendarMonth+'-'+String(n).padStart(2,'0'),events=all.filter(e=>e.date===date);return '<div class="calendar821-day '+(date===now?'today':'')+'"><span class="calendar821-number">'+n+'</span>'+events.map((f,j)=>'<button class="calendar821-event '+f.kind+'" data-calendar821-date="'+date+'" data-calendar821-index="'+j+'"><span>'+esc(f.kind==='fixture'?(f.isHome?'H · ':'A · ')+f.opponent:f.kind==='bye'?'Bye':f.label)+'</span>'+(f.startTime?'<small>'+esc(f.startTime)+'</small>':'')+'</button>').join('')+'</div>'});
-host.innerHTML='<div class="calendar821-toolbar"><button class="icon821" data-calendar821-step="-1" aria-label="Previous month">‹</button><h3>'+title+'</h3><button class="icon821" data-calendar821-step="1" aria-label="Next month">›</button></div><div class="calendar821-grid">'+['Mon','Tue','Wed','Thu','Fri','Sat','Sun'].map(d=>'<b class="calendar821-weekday">'+d+'</b>').join('')+cells.join('')+'</div><button class="export-link" id="calendar82Export">Add remaining fixtures to calendar ↗</button><p class="small-note calendar821-footnote">H = home · A = away. Dates as published. Calendar downloads do not update automatically.</p>';
-$('#calendar82Export').onclick=()=>exportCalendar(all.filter(f=>f.date>=now));host.querySelectorAll('[data-calendar821-step]').forEach(b=>b.onclick=()=>{const d=new Date(Date.UTC(year,month-1+Number(b.dataset.calendar821Step),1));calendarMonth=d.toISOString().slice(0,7);renderCalendar()});host.querySelectorAll('[data-calendar821-date]').forEach(b=>b.onclick=()=>{const f=all.filter(e=>e.date===b.dataset.calendar821Date)[Number(b.dataset.calendar821Index)],result=f.fixtureId&&findMatch(f.fixtureId);host.querySelectorAll('.calendar821-event').forEach(e=>e.classList.toggle('selected',e===b));modal('Calendar event','<article class="calendar84-event"><time>'+dateLabel(f.date)+'</time><h3>'+esc(f.kind==='fixture'?f.opponent:f.label||'Bye')+'</h3>'+(f.kind==='fixture'?'<p>'+esc(f.label)+' · '+(f.isHome?'Home':'Away')+' · '+esc(f.startTime?'Starts '+f.startTime:'Time not published')+'</p><p><button class="export-link" data-82-club="'+esc(f.venue)+'">'+esc(f.venue)+'</button></p><div class="settings-action-row">'+(result?'<button class="button secondary" data-82-result="'+esc(f.fixtureId)+'">View result</button>':f.status==='Scheduled'?'<button class="button secondary" data-82-predict="'+esc(f.fixtureId)+'">Prediction Centre</button>':'<span>'+esc(f.status)+'</span>')+(f.status==='Scheduled'?'<button class="export-link" data-82-calendar="'+esc(f.fixtureId)+'">Add to calendar ↗</button>':'')+'</div>':'<p>No fixture scheduled for this date.</p>')+'</article>')})}
-function exportCalendar(entries){const team=$('#rounds82Team').value,text=M.ics(D,team,entries,{url:location.href});downloadFile(text,team.replace(/[^\w-]+/g,'-')+'-fixtures.ics','text/calendar;charset=utf-8')}
-function render(){if(!D)return;$('#roundBtn').textContent='Rounds';$('#roundsContext').textContent=D.meta.competition_label+' · '+D.meta.section_label;$('#rounds82Team').innerHTML='<option value="">Choose your team</option>'+M.teams(D).map(t=>'<option>'+esc(t)+'</option>').join('');$('#rounds82Team').value=localStorage.getItem(teamKey())||'';selectedRound=null;calendarMonth=null;renderOverview();renderCalendar()}
-$('#rounds82Team').onchange=()=>{calendarMonth=null;renderCalendar()};
-document.addEventListener('click',e=>{const r=e.target.closest('[data-82-result]');if(r){openMatch(r.dataset['82Result']);$('#resultOverlay').style.zIndex=Number(dialog?.style.zIndex||170)+2;return}const p=e.target.closest('[data-82-predict]');if(p){openPrediction(p.dataset['82Predict']);$('#predictionOverlay').style.zIndex=Number(dialog?.style.zIndex||170)+2;return}const c=e.target.closest('[data-82-club]');if(c){openClubMaintenance();$('#clubZoneOverlay').style.zIndex=Number(dialog?.style.zIndex||170)+2;return}const cal=e.target.closest('[data-82-calendar]');if(cal)exportCalendar(M.calendar(D,$('#rounds82Team').value).filter(f=>f.fixtureId===cal.dataset['82Calendar']))});
-window.addEventListener('brta-section-ready',render);if(D)render();
+const page = document.createElement('div');
+page.id = 'rounds821Content';
+const stash = document.createElement('div');
+stash.hidden = true;
+stash.append(page);
+document.body.append(stash);
+
+function fixtureRow(fixture) {
+  const { home, away, status, fixtureId } = fixture;
+  const score = (a, b) => a != null && b != null ? esc(a + '–' + b) : '—';
+  if (status === 'Bye') return '<div class="round-fixture latest-fixture"><b>' + teamName(home === 'Bye' ? away : home) + '</b><span>Bye</span></div>';
+  const complete = status === 'Completed';
+  const action = complete || findMatch(fixtureId) ? 'data-82-result' :
+    status === 'Scheduled' && fixtureById(fixtureId) ? 'data-82-predict' : '';
+  const tag = action ? 'button' : 'div';
+  return '<' + tag + ' class="round-fixture latest-fixture"' + (action ? ' type="button" ' + action + '="' + esc(fixtureId) + '"' : '') +
+    '><div class="latest-fixture-title"><b>' + teamName(home) + ' <span>vs</span> ' + teamName(away) +
+    '</b><span class="latest-status' + (complete ? ' complete' : '') + '">' + esc(status === 'Missing Result' ? 'Awaiting result' : status) + '</span></div>' +
+    (complete ? '<div class="latest-score"><span>Points <b>' + score(fixture.homePoints, fixture.awayPoints) +
+      '</b></span><span>Rubbers <b>' + score(fixture.homeRubbers ?? fixture.homeSets, fixture.awayRubbers ?? fixture.awaySets) +
+      '</b></span><span>Games <b>' + score(fixture.homeGames, fixture.awayGames) + '</b></span></div>' : '') +
+    (action ? '<span class="latest-action">' + (action === 'data-82-result' ? 'View scorecard' : 'Fixture Outlook') + ' ›</span>' : '') + '</' + tag + '>';
+}
+
+function render() {
+  $('#roundBtn').textContent = 'Latest Round';
+  if (!D) return;
+  const round = M.overview(D);
+  const context = '<p id="roundsContext" class="small-note">' +
+    esc([D.meta.competition_label, D.meta.season_label, D.meta.section_label].filter(Boolean).join(' · ')) + '</p>';
+  if (!round) {
+    page.innerHTML = context + '<p>No results have been published yet.</p>';
+    return;
+  }
+  const remaining = (D.upcomingFixtures || []).filter(group => String(group.round) === String(round.round))
+    .flatMap(group => group.fixtures || []).filter(fixture => !round.fixtures.some(result =>
+      result.fixtureId === fixture.fixtureId || (result.home === fixture.home && result.away === fixture.away)));
+  const fixtures = [...round.fixtures, ...remaining];
+  const pending = fixtures.filter(f => ['Scheduled', 'Missing Result'].includes(f.status)).length;
+  const highlights = Number(D.roundOverview?.round) === Number(round.round) ? D.roundOverview : null;
+  const featured = [highlights?.topPerformance && roundHighlight('Top performance', highlights.topPerformance, 'top'),
+    highlights?.biggestUpset && roundHighlight('Biggest upset', highlights.biggestUpset, 'upset'),
+    round.closest && '<div class="round-highlight"><span>Closest by games</span><b>' + teamName(round.closest.home) +
+      ' vs ' + teamName(round.closest.away) + '</b><small>' + Math.abs(round.closest.homeGames - round.closest.awayGames) +
+      ' game margin</small></div>'].filter(Boolean);
+  page.innerHTML = context + '<section class="latest-round-summary"><div><span class="kicker">Round overview</span><h3>' +
+    esc(roundHeading(round)) + '</h3><p class="small-note">' + esc(roundDate(round.date)) + '</p></div>' +
+    '<div class="latest-round-kpis">' + [['Completed', round.completed], ['Awaiting results', pending],
+      ['Matches played', round.singles + round.doubles], ['Games played', round.games]].map(([label, value]) =>
+      '<div><strong>' + value + '</strong><span>' + label + '</span></div>').join('') + '</div></section>' +
+    (featured.length ? '<div class="round-highlights latest-highlights">' + featured.join('') + '</div>' : '') +
+    '<h3>Fixtures</h3><div class="round-fixtures latest-fixtures">' + fixtures.map(fixtureRow).join('') + '</div>';
+}
+
+function showRounds() {
+  const overlay = modal('Latest Round', '', true);
+  overlay.classList.add('rounds821-overlay');
+  overlay.querySelector('.settings-sheet').append(page);
+  render();
+}
+$('#roundBtn').onclick = showRounds;
+openRound = showRounds;
+document.addEventListener('click', event => {
+  const result = event.target.closest('#rounds821Content [data-82-result]');
+  const prediction = event.target.closest('#rounds821Content [data-82-predict]');
+  if (result) openMatch(result.dataset['82Result']);
+  if (prediction) openPrediction(prediction.dataset['82Predict']);
+});
+window.addEventListener('brta-section-ready', render);
+render();
 })();
 

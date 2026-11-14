@@ -2,6 +2,17 @@
 // Retrospective entries use source-commit timestamps; sourceCommit records their provenance.
 window.BRTA_RELEASES = Object.freeze([
   {
+    "version": "9.1.1",
+    "size": "small",
+    "title": "Latest Round and player histories",
+    "committedAt": "2026-11-14T12:00:00+11:00",
+    "changes": [
+      "Latest Round puts fixture scorecards and round highlights in one place.",
+      "Save a scheduled fixture to your calendar from Fixture Outlook, with the venue and address when available.",
+      "Archive search marks likely player histories across sections, seasons and competitions using club and match-date evidence."
+    ]
+  },
+  {
     "version": "9.1.0.1.2",
     "size": "tiny",
     "title": "Archive update",
