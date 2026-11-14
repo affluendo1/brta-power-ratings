@@ -1,0 +1,19 @@
+name: Nothing Here! Yet.
+on:
+  schedule:
+    - cron: '7,22,37,52 * * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  complain:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Confirm that nothing is here
+        run: |
+          test -f nothing.txt || { echo "::error::Nothing is missing."; exit 1; }
+          if [[ -s nothing.txt ]]; then
+            echo "::error file=nothing.txt::Expected 0 bytes of nothing. Found $(wc -c < nothing.txt)."
+            exit 1
+          fi
