@@ -38,40 +38,40 @@
   "calendar_events": [
     {
       "date": "24 Nov 26",
-      "label": "Semi Final \u00b7 if qualified"
+      "label": "Semi Final · if qualified"
     },
     {
       "date": "1 Dec 26",
-      "label": "Grand Final \u00b7 if qualified"
+      "label": "Grand Final · if qualified"
     },
     {
       "date": "8 Dec 26",
-      "label": "Spare \u00b7 if required"
+      "label": "Spare · if required"
     }
   ],
   "official_standings": [
     {
       "position": 1,
       "team": "Keysborough KeysyComeKGo",
-      "wins": 6,
-      "points": 69,
-      "percentage": 129.32,
+      "wins": 7,
+      "points": 77,
+      "percentage": 127.31,
       "marker": ""
     },
     {
       "position": 2,
       "team": "St James Redlegs",
-      "wins": 6,
-      "points": 67,
-      "percentage": 118.61,
+      "wins": 7,
+      "points": 74,
+      "percentage": 119.22,
       "marker": ""
     },
     {
       "position": 3,
       "team": "Basterfield Park Basterfield",
-      "wins": 5,
-      "points": 58.5,
-      "percentage": 117.7,
+      "wins": 6,
+      "points": 68.5,
+      "percentage": 126.91,
       "marker": ""
     },
     {
@@ -86,16 +86,16 @@
       "position": 5,
       "team": "BLTC Tornadoes",
       "wins": 4,
-      "points": 42,
-      "percentage": 89.53,
+      "points": 45,
+      "percentage": 88.65,
       "marker": ""
     },
     {
       "position": 6,
       "team": "Middle Brighton Warriors",
       "wins": 3,
-      "points": 40,
-      "percentage": 82.28,
+      "points": 42,
+      "percentage": 83.02,
       "marker": ""
     },
     {
@@ -103,18 +103,18 @@
       "team": "Hurlingham Park HPSauce",
       "wins": 2,
       "points": 34,
-      "percentage": 83.33,
+      "percentage": 77.96,
       "marker": ""
     }
   ],
   "green_ball": false,
   "results_loaded_by_trols": null,
-  "fixtures": 48,
-  "completed_fixtures": 32,
+  "fixtures": 52,
+  "completed_fixtures": 35,
   "draw_fixtures": 56,
   "singles_rubbers": 0,
-  "doubles_rubbers": 192,
-  "latest_round": 12,
+  "doubles_rubbers": 210,
+  "latest_round": 13,
   "validation": "source discrepancies",
   "source_warnings": [
     "Incomplete TROLS score for TN003011 doubles No. 5: ''. Missing score not inferred; excluded from ratings and game totals.",

@@ -38,44 +38,60 @@
   "calendar_events": [
     {
       "date": "24 Nov 26",
-      "label": "Semi Final \u00b7 if qualified"
+      "label": "Semi Final · if qualified"
     },
     {
       "date": "1 Dec 26",
-      "label": "Grand Final \u00b7 if qualified"
+      "label": "Grand Final · if qualified"
     },
     {
       "date": "8 Dec 26",
-      "label": "Spare \u00b7 if required"
+      "label": "Spare · if required"
     }
   ],
   "official_standings": [
     {
       "position": 1,
-      "team": "Basterfield Park Scratchies",
-      "wins": 5,
-      "points": 57.5,
-      "percentage": 109.82,
+      "team": "Murrumbeena Beasts",
+      "wins": 7,
+      "points": 64,
+      "percentage": 102.65,
       "marker": ""
     },
     {
       "position": 2,
-      "team": "Murrumbeena Beasts",
-      "wins": 6,
-      "points": 56,
-      "percentage": 100.36,
+      "team": "Hurlingham Park All Stars",
+      "wins": 5,
+      "points": 60,
+      "percentage": 108.07,
       "marker": ""
     },
     {
       "position": 3,
-      "team": "St James Premiers",
-      "wins": 4,
-      "points": 55,
-      "percentage": 109.82,
+      "team": "Basterfield Park Lakers",
+      "wins": 5,
+      "points": 58.5,
+      "percentage": 104.83,
       "marker": ""
     },
     {
       "position": 4,
+      "team": "Basterfield Park Scratchies",
+      "wins": 5,
+      "points": 57.5,
+      "percentage": 101.86,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "St James Premiers",
+      "wins": 4,
+      "points": 57,
+      "percentage": 105.91,
+      "marker": ""
+    },
+    {
+      "position": 6,
       "team": "St Finbar's Barbarians",
       "wins": 5,
       "points": 53,
@@ -83,38 +99,22 @@
       "marker": ""
     },
     {
-      "position": 5,
-      "team": "Hurlingham Park All Stars",
-      "wins": 4,
-      "points": 50,
-      "percentage": 100.37,
-      "marker": ""
-    },
-    {
-      "position": 6,
-      "team": "Basterfield Park Lakers",
-      "wins": 4,
-      "points": 49.5,
-      "percentage": 102.49,
-      "marker": ""
-    },
-    {
       "position": 7,
       "team": "Hurlingham Park Hammers",
       "wins": 3,
-      "points": 39,
-      "percentage": 87.58,
+      "points": 40,
+      "percentage": 86.79,
       "marker": ""
     }
   ],
   "green_ball": false,
   "results_loaded_by_trols": null,
-  "fixtures": 48,
-  "completed_fixtures": 35,
+  "fixtures": 52,
+  "completed_fixtures": 38,
   "draw_fixtures": 56,
   "singles_rubbers": 0,
-  "doubles_rubbers": 210,
-  "latest_round": 12,
+  "doubles_rubbers": 228,
+  "latest_round": 13,
   "validation": "source discrepancies",
   "source_warnings": [
     "Incomplete TROLS score for TN002012 doubles No. 5: ''. Missing score not inferred; excluded from ratings and game totals.",

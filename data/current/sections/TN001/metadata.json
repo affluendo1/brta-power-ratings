@@ -38,15 +38,15 @@
   "calendar_events": [
     {
       "date": "24 Nov 26",
-      "label": "Semi Final \u00b7 if qualified"
+      "label": "Semi Final · if qualified"
     },
     {
       "date": "1 Dec 26",
-      "label": "Grand Final \u00b7 if qualified"
+      "label": "Grand Final · if qualified"
     },
     {
       "date": "8 Dec 26",
-      "label": "Spare \u00b7 if required"
+      "label": "Spare · if required"
     }
   ],
   "official_standings": [
@@ -54,28 +54,36 @@
       "position": 1,
       "team": "Hurlingham Park Gunslingers",
       "wins": 8,
-      "points": 81.5,
-      "percentage": 132.53,
+      "points": 83.5,
+      "percentage": 125.0,
       "marker": ""
     },
     {
       "position": 2,
       "team": "Black Rock UrbanWarGods",
-      "wins": 7,
-      "points": 71,
-      "percentage": 147.83,
+      "wins": 8,
+      "points": 79,
+      "percentage": 146.89,
       "marker": ""
     },
     {
       "position": 3,
       "team": "Hurlingham Park Lobs",
       "wins": 4,
-      "points": 53,
-      "percentage": 101.68,
+      "points": 54,
+      "percentage": 94.87,
       "marker": ""
     },
     {
       "position": 4,
+      "team": "Hurlingham Park Battlers",
+      "wins": 2,
+      "points": 50.5,
+      "percentage": 102.21,
+      "marker": ""
+    },
+    {
+      "position": 5,
       "team": "Kings Park Royals",
       "wins": 4,
       "points": 44.5,
@@ -83,38 +91,30 @@
       "marker": ""
     },
     {
-      "position": 5,
+      "position": 6,
       "team": "Maccabi Turquoise",
       "wins": 3,
       "points": 42,
-      "percentage": 84.91,
-      "marker": ""
-    },
-    {
-      "position": 6,
-      "team": "Hurlingham Park Battlers",
-      "wins": 1,
-      "points": 40.5,
-      "percentage": 89.04,
+      "percentage": 76.12,
       "marker": ""
     },
     {
       "position": 7,
       "team": "Black Rock Strikers",
-      "wins": 2,
-      "points": 27.5,
-      "percentage": 74.68,
+      "wins": 3,
+      "points": 36.5,
+      "percentage": 81.54,
       "marker": ""
     }
   ],
   "green_ball": false,
   "results_loaded_by_trols": null,
-  "fixtures": 48,
-  "completed_fixtures": 33,
+  "fixtures": 52,
+  "completed_fixtures": 36,
   "draw_fixtures": 56,
   "singles_rubbers": 0,
-  "doubles_rubbers": 198,
-  "latest_round": 12,
+  "doubles_rubbers": 216,
+  "latest_round": 13,
   "validation": "source discrepancies",
   "source_warnings": [
     "Incomplete TROLS score for TN001011 doubles No. 3: '2-1'. Missing score not inferred; excluded from ratings and game totals.",

@@ -1,17 +1,27 @@
 {
-  "changed_sections": [],
-  "last_positive": {
-    "checked_at_utc": "2026-11-13T10:07:37.116930+00:00",
-    "changed_sections": [],
-    "previous_completed_fixtures": 2418,
-    "completed_fixtures": 2418
-  },
-  "checked_at_utc": "2026-11-13T13:07:43.415349+00:00",
-  "new_results": false,
   "sections": 79,
-  "fixtures": 3286,
-  "completed_fixtures": 2418,
+  "fixtures": 3302,
+  "completed_fixtures": 2431,
   "singles_rubbers": 7238,
-  "doubles_rubbers": 6009,
-  "validation": "source discrepancies"
+  "doubles_rubbers": 6087,
+  "validation": "source discrepancies",
+  "checked_at_utc": "2026-11-14T01:47:41.287485+00:00",
+  "new_results": true,
+  "changed_sections": [
+    "TN001",
+    "TN002",
+    "TN003",
+    "TN004"
+  ],
+  "last_positive": {
+    "checked_at_utc": "2026-11-14T01:47:41.287485+00:00",
+    "changed_sections": [
+      "TN001",
+      "TN002",
+      "TN003",
+      "TN004"
+    ],
+    "previous_completed_fixtures": 2418,
+    "completed_fixtures": 2431
+  }
 }
