@@ -1,7 +1,7 @@
 (() => {
   'use strict';
 
-  const { extrasKey, unlockKey, snapshots } = BRTAPastSoftware;
+  const { extrasKey, snapshots } = BRTAPastSoftware;
   const tikituffScope = new URL('./', location.href);
   const tikituffWorker = new URL('sw.js', tikituffScope);
   const currentSite = new URL('../../', tikituffScope);
@@ -10,7 +10,7 @@
   const status = document.querySelector('#pastSoftwareStatus');
 
   async function launch() {
-    if (localStorage.getItem(extrasKey) !== '1' || sessionStorage.getItem(unlockKey) !== '1') {
+    if (localStorage.getItem(extrasKey) !== '1') {
       location.replace(currentSite);
       return;
     }
@@ -43,7 +43,7 @@
       });
     }
     // Recheck in case Extras was turned off in another tab during activation.
-    if (localStorage.getItem(extrasKey) !== '1' || sessionStorage.getItem(unlockKey) !== '1') {
+    if (localStorage.getItem(extrasKey) !== '1') {
       location.replace(currentSite);
       return;
     }

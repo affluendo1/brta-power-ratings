@@ -1,5 +1,5 @@
 /* Serve each historical website from immutable GitHub blobs, under its own URL subtree. */
-importScripts('releases.js?v=1');
+importScripts('releases.js?v=9111');
 
 const { snapshots } = BRTAPastSoftware;
 const tikituffScope = new URL(self.registration.scope);
@@ -31,8 +31,8 @@ function tikituffPage(html, path, snapshot, base) {
   const mount = new URL('./', new URL(path, base));
   const bridge = '<meta name="robots" content="noindex">' +
     '<base href="' + mount.href + '">' +
-    '<script src="' + new URL('releases.js?v=1', tikituffScope).href + '"></script>' +
-    '<script src="' + new URL('snapshot.js?v=1', tikituffScope).href + '"></script>' +
+    '<script src="' + new URL('releases.js?v=9111', tikituffScope).href + '"></script>' +
+    '<script src="' + new URL('snapshot.js?v=9111', tikituffScope).href + '"></script>' +
     '<style>#pastSoftwareBanner{position:relative;z-index:2;display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:.3em 1em;padding:.55em .8em;background:#29241a;color:#fff4d2;text-align:center;font:600 .85rem/1.4 system-ui,sans-serif}' +
     '#pastSoftwareBanner a{color:#ffe28a;text-decoration:underline}#pastSoftwareMark{margin-inline-end:.4em;color:inherit;font:800 .65em/1 system-ui,sans-serif;letter-spacing:.06em;white-space:nowrap}</style>';
   const banner = '<aside id="pastSoftwareBanner" aria-label="Historical release"><strong>PAST · ' + snapshot.version +

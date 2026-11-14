@@ -270,13 +270,6 @@
       input.focus();
       return;
     }
-    if (raw === 'PASTSOFTWARE' && window.BRTAPastSoftware) {
-      sessionStorage.setItem(window.BRTAPastSoftware.unlockKey, '1');
-      reply.textContent = 'Past Software unlocked. Open the Changelog to visit a historical release.';
-      sound(290, 870, .34);
-      input.focus();
-      return;
-    }
     switch (code) {
       case '104756':
         spawnKey(vault.querySelector('[type=submit]'));
@@ -546,6 +539,7 @@
   function trace(action, detail) {
     if (logging) print(action + (detail ? ' · ' + detail : ''));
   }
+  window.addEventListener('brta-player-lab-rainbow', () => trace('Player Lab', 'Rainbow name appeared'));
   function closeConsole() {
     playback++;
     hide(consoleLayer);
@@ -641,7 +635,6 @@
   }, true);
   window.addEventListener('brta-module-toggle', () => {
     if (auxiliaryEnabled()) return;
-    if (window.BRTAPastSoftware) sessionStorage.removeItem(window.BRTAPastSoftware.unlockKey);
     logging = false;
     closeConsole();
   });

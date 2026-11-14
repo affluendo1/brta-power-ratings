@@ -224,3 +224,21 @@
 }
 @keyframes scoreline-backdrop { from { background:#000 } }
 @keyframes scoreline-arrive { from { translate:0 32dvh; opacity:0 } }
+
+@supports (background-clip: text) {
+  .profile-head h2.player-lab-rainbow {
+    background: linear-gradient(90deg, #ff4664, #e69715, #19a85e, #287deb, #a553df, #ff4664);
+    background-size: 200% 100%;
+    background-clip: text;
+    color: transparent;
+    animation: player-lab-rainbow 3s linear infinite;
+  }
+}
+@keyframes player-lab-rainbow { to { background-position: 200% 0; } }
+@media (prefers-reduced-motion: reduce) {
+  .profile-head h2.player-lab-rainbow { animation: none; }
+}
+html[data-animation="off"] .profile-head h2.player-lab-rainbow { animation: none; }
+@media (forced-colors: active) {
+  .profile-head h2.player-lab-rainbow { background: none; color: CanvasText; }
+}

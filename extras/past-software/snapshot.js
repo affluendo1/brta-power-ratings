@@ -1,14 +1,14 @@
 (() => {
   'use strict';
 
-  const { extrasKey, unlockKey, snapshots } = BRTAPastSoftware;
+  const { extrasKey, snapshots } = BRTAPastSoftware;
   const tikituffScript = new URL(document.currentScript.src);
   const tikituffScope = new URL('./', tikituffScript);
   const alias = location.pathname.slice(tikituffScope.pathname.length).split('/')[0];
   const currentSite = new URL('../../', tikituffScope);
   const liveStorage = window.localStorage;
   const liveSession = window.sessionStorage;
-  const allowed = () => liveStorage.getItem(extrasKey) === '1' && liveSession.getItem(unlockKey) === '1';
+  const allowed = () => liveStorage.getItem(extrasKey) === '1';
 
   if (!Object.hasOwn(snapshots, alias) || !allowed()) {
     // Stop the old page before its inline settings and application scripts run.
