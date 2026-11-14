@@ -1,0 +1,155 @@
+.header-actions .rc-entry[hidden],#racquetClubSettings[hidden],.rc-dialog [hidden]{display:none!important}
+.rc-dialog{--accent:var(--primary);--text:var(--text-color);--muted:var(--muted-color);--bg:var(--page-bg);--surface:var(--surface-raised);--panel:var(--surface);--line:var(--border-color);color:var(--text);background:var(--bg);border:1px solid var(--line);padding:0;overflow:hidden;font-family:var(--body-font,Arial,Helvetica,sans-serif);font-variant-numeric:tabular-nums;box-sizing:border-box}
+.rc-dialog *{box-sizing:border-box}
+.rc-dialog[open]{display:flex;flex-direction:column}
+.rc-dialog[data-mode=settings]{width:min(530px,calc(100vw - 24px));border-radius:var(--panel-radius,7px)}
+.rc-dialog[data-mode=club]{position:fixed;inset:0;margin:0;width:100%;height:100dvh;max-width:none;max-height:none;border:0}
+.rc-dialog::backdrop{background:#03050bdc}
+.rc-dialog button:not(.button){font:inherit;color:inherit;cursor:pointer}
+.rc-dialog button:disabled{opacity:.48;cursor:not-allowed}
+.rc-dialog :focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.rc-dialog .kicker{margin:0 0 6px}
+.rc-header{display:flex;justify-content:space-between;align-items:center;min-height:68px;gap:12px;padding:10px max(22px,env(safe-area-inset-right)) 10px max(22px,env(safe-area-inset-left));padding-top:max(10px,env(safe-area-inset-top));border-bottom:1px solid var(--line);background:var(--surface);flex:none}
+.rc-brand,.rc-top-stats{display:flex;align-items:center;gap:14px;min-width:0}
+.rc-brand-mark{display:grid;place-items:center;width:30px;height:30px;border:1px solid var(--accent);border-radius:50%;color:var(--accent);flex:none}
+.rc-header h2{font-family:var(--display-font,inherit);font-size:clamp(1rem,2.5vw,1.35rem);margin:0;color:inherit;white-space:nowrap}
+.rc-top-stats{color:var(--muted);font-size:.86rem}
+.rc-top-stats strong{color:var(--text);white-space:nowrap}
+.rc-icon-button{min-width:42px}
+.rc-shell{display:grid;grid-template-columns:190px minmax(0,1fr);flex:1;min-height:0;position:relative}
+.rc-tabs{display:flex;flex-direction:column;gap:6px;overflow:auto;padding:19px 12px;background:var(--surface);border-right:1px solid var(--line)}
+.rc-tabs button,.rc-mobile button,.rc-mobile-menu button{display:flex;align-items:center;gap:10px;text-align:left;border:1px solid transparent;background:transparent;color:var(--muted);min-height:45px;border-radius:var(--control-radius,5px);padding:8px 10px}
+.rc-tabs button span,.rc-mobile button span,.rc-mobile-menu button span{color:var(--accent);width:20px;text-align:center}
+.rc-tabs button b,.rc-mobile button b,.rc-mobile-menu button b{font-size:.84rem;font-weight:640}
+.rc-tabs button:hover,.rc-mobile button:hover,.rc-mobile-menu button:hover{background:var(--panel);color:var(--text)}
+.rc-tabs button[aria-current=page],.rc-mobile button[aria-current=page],.rc-mobile-menu button[aria-current=page]{background:var(--panel);border-color:var(--line);color:var(--text)}
+.rc-tabs small,.rc-mobile small{font-size:.7rem;background:var(--accent);color:var(--primary-ink);border-radius:var(--panel-radius,7px);padding:0 5px;margin-left:auto}
+.rc-tabs [data-rc-tab=Statistics]{margin-top:12px}
+.rc-mobile,.rc-mobile-menu{display:none}
+.rc-body{min-height:0;overflow:auto;overscroll-behavior:contain;padding:clamp(16px,3vw,32px);background:var(--bg)}
+.rc-settings label{display:flex;align-items:center;gap:10px}
+.rc-dialog input[type=checkbox],.rc-dialog input[type=range],.rc-dialog progress{accent-color:var(--accent)}
+.rc-dialog input[type=checkbox]{width:19px;height:19px}
+.rc-page-head{margin:0 0 18px}
+.rc-page-head h3,.rc-stage-top h3,.rc-collection-summary h3{font-family:var(--display-font,inherit);margin:0;font-size:clamp(1.75rem,4vw,3rem);line-height:1.05;letter-spacing:-.045em}
+.rc-body h3,.rc-body h4{color:inherit}
+.rc-body p{margin:7px 0;color:var(--muted)}
+.rc-body .rc-message:empty{display:none}
+.rc-spin{min-height:100%;display:flex;flex-direction:column;gap:12px;animation:rc-enter .2s ease-out}
+.rc-stage-top{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.rc-roll-meta{display:flex;align-items:start;flex-wrap:wrap;gap:8px 18px;font-size:.86rem}
+.rc-roll-meta p,.rc-roll-meta h3{margin:0;font-size:inherit}
+.rc-roll-meta [data-rc-active]{display:flex;flex-wrap:wrap;gap:8px;color:var(--muted)}
+.rc-roll-meta .rc-boosts{margin:0}
+.rc-roll-meta .rc-boosts li{padding:1px 6px}
+.rc-roulette{position:relative;min-height:clamp(230px,44dvh,560px);display:grid;align-items:center;overflow:hidden;
+  border:1px solid var(--line);border-radius:var(--panel-radius,7px);background:
+  linear-gradient(90deg,transparent 49.88%,color-mix(in srgb,var(--primary) 14%,transparent) 50%,transparent 50.12%),
+  repeating-linear-gradient(0deg,transparent 0 45px,color-mix(in srgb,var(--primary) 7%,transparent) 45px 46px),radial-gradient(ellipse at center,color-mix(in srgb,var(--primary) 14%,var(--surface)) 0%,var(--surface-raised) 57%,var(--page-bg) 100%)}
+.rc-wide-stage .rc-roulette{min-height:clamp(270px,56dvh,670px)}
+.rc-roulette.rc-rolling{box-shadow:inset 0 0 70px #03050ab0}
+.rc-reel{position:absolute;inset:0;display:grid;align-items:center;overflow:hidden;mask-image:linear-gradient(90deg,transparent,#000 22% 78%,transparent)}
+.rc-reel::after{content:'';position:absolute;inset:0 auto 0 50%;width:2px;z-index:2;pointer-events:none;background:var(--accent);box-shadow:0 0 18px 2px var(--accent)}
+.rc-roulette::before,.rc-roulette::after{content:'';position:absolute;z-index:3;left:50%;transform:translateX(-50%);width:0;height:0;border:8px solid transparent;pointer-events:none}
+.rc-roulette::before{top:0;border-top-color:var(--accent)}.rc-roulette::after{bottom:0;border-bottom-color:var(--accent)}
+.rc-track{position:relative;display:flex;width:max-content;gap:12px;padding:8px;left:50%;transform:translateX(-50%)}
+.rc-rolling .rc-track{left:0;transform:none}
+.rc-wheel-card{flex:none;width:clamp(118px,15vw,220px);height:clamp(184px,34dvh,400px);display:grid;justify-items:center;align-content:center;gap:12px;padding:14px;text-align:center;background:var(--surface);border:1px solid color-mix(in srgb,var(--rarity,#8193a9) 50%,var(--line));border-radius:var(--panel-radius,7px)}
+.rc-wheel-card b{font-size:.9rem}.rc-wheel-card.rc-landed{border-color:var(--rarity,var(--accent));box-shadow:0 0 32px color-mix(in srgb,var(--rarity,var(--accent)) 28%,transparent)}
+.rc-wheel-card .rc-racquet-art,.rc-wheel-card .rc-key-art{height:75%;width:100%;max-height:28dvh}
+.rc-roll-controls{display:grid;justify-items:center;gap:10px;padding-bottom:5px}
+.rc-spin-actions,.rc-actions,.rc-key-controls,.rc-subnav{display:flex;align-items:center;flex-wrap:wrap;gap:8px}
+.rc-spin-button{min-width:min(250px,70vw);min-height:52px!important;font-size:1.05rem!important}
+.rc-bonus{box-shadow:0 0 22px color-mix(in srgb,var(--primary) 38%,transparent)}
+.rc-progress{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:5px 12px;width:min(500px,100%);color:var(--muted);font-size:.82rem}
+.rc-dialog progress{width:100%;height:7px}
+.rc-spin-note:empty{display:none}
+.rc-key-controls .rc-key-art{width:50px;height:50px}
+.rc-tier-0{--rarity:#c0c8d2}.rc-tier-1{--rarity:#8dd798}.rc-tier-2{--rarity:#8ac4ff}
+.rc-tier-3{--rarity:#caa5fa}.rc-tier-4{--rarity:#ff9c9a}.rc-tier-5{--rarity:#ffb37f}.rc-tier-6{--rarity:#f6db83}.rc-tier-7{--rarity:#bbf5fa}
+.rc-badge{font-size:.74rem;font-weight:750;letter-spacing:.08em;text-transform:uppercase;color:var(--rarity)}
+.rc-racquet-art{display:block;width:70px;height:145px;--paint-color:hsl(var(--paint) 72% 68%);filter:drop-shadow(8px 10px 9px #0008);overflow:visible}
+.rc-frame-shadow{fill:#182332;stroke:#080c13;stroke-width:9}.rc-frame{fill:#283243;stroke:var(--paint-color);stroke-width:5}
+.rc-bed{fill:#142131;stroke:#97acce;stroke-width:1}.rc-strings{fill:none;stroke:#d7e2ed;stroke-width:.73;opacity:.6}
+.rc-shine{fill:none;stroke:#fff;opacity:.62;stroke-width:1.5}.rc-grip{fill:#282d36;stroke:var(--page-bg);stroke-width:3}
+.rc-wrap{fill:none;stroke:#7b8799;stroke-width:1.6}.rc-cap{fill:var(--paint-color)}
+.rc-key-art{display:block;width:108px;height:108px;color:var(--rarity);filter:drop-shadow(6px 10px 10px #0009)}
+.rc-key-metal{fill:color-mix(in srgb,currentColor 35%,#142033);stroke:currentColor;stroke-width:3}.rc-key-cut{fill:#101521;stroke:currentColor;stroke-width:3}.rc-key-line{fill:none;stroke:currentColor;stroke-width:1.15}
+.rc-key-reel::after{background:var(--rarity);box-shadow:0 0 15px var(--rarity)}.rc-titanium::after{box-shadow:0 0 21px 3px #e4faff}
+.rc-key-grid,.rc-grid,.rc-gear-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px}
+.rc-key-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.rc-key-grid .rc-card{padding:18px;border-top-color:var(--rarity)}.rc-key-grid h3{margin:8px 0}.rc-unavailable .rc-key-art{opacity:.48}
+.rc-card{background:var(--panel);border:1px solid var(--line);border-radius:var(--panel-radius,7px);min-width:0}
+.rc-item,.rc-product-pick{display:grid;justify-items:start;width:100%;height:100%;gap:5px;text-align:left;background:transparent;border:0;padding:13px;border-radius:var(--panel-radius,7px)}
+.rc-item:hover,.rc-product-pick:hover{background:var(--surface-muted)}.rc-item .rc-racquet-art{justify-self:center;height:clamp(122px,22dvh,230px);width:85%;margin:6px 0}
+.rc-item span:not(.rc-badge),.rc-item small,.rc-product small{color:var(--muted);font-size:.83rem}
+.rc-grid .rc-card:not(.rc-unknown){border-top-color:color-mix(in srgb,var(--rarity) 70%,var(--line))}
+.rc-unknown{color:var(--muted);display:grid;place-content:center;justify-items:center;min-height:220px;border-style:dashed;background:var(--surface)}
+.rc-wheel-card.rc-unknown{min-height:0}.rc-unknown strong{font-size:2.5rem;color:var(--muted-color)}
+.rc-collection-summary{margin-bottom:18px}.rc-collection-summary progress{max-width:520px}
+.rc-achievement{color:#f6db83}
+.rc-tools{display:flex;align-items:end;flex-wrap:wrap;gap:10px;margin:14px 0}.rc-tools label,.rc-actions label{display:grid;gap:4px;font-size:.84rem}
+.rc-dialog select,.rc-dialog input:not([type=checkbox],[type=range]){min-height:42px;padding:6px 8px;background:var(--surface);color:var(--text);border:1px solid var(--line);border-radius:var(--control-radius,5px);font:inherit;max-width:100%}
+.rc-actions input{width:76px}.rc-subnav{margin-bottom:14px}.rc-actions [aria-pressed=true],.rc-subnav [aria-pressed=true],.rc-slot[aria-pressed=true]{border-color:var(--accent)}
+.rc-master-detail{display:grid;grid-template-columns:minmax(0,1fr) minmax(290px,34%);gap:14px;align-items:start}
+.rc-master-detail .rc-grid{grid-template-columns:repeat(auto-fit,minmax(130px,1fr))}
+.rc-inspector{position:sticky;top:0}.rc-detail{padding:20px;display:grid;gap:20px;align-items:center;grid-template-columns:minmax(0,1fr)}
+.rc-detail .rc-racquet-art{width:100%;height:min(40dvh,370px)}
+.rc-gallery-detail{position:absolute;inset:0;background:var(--bg);z-index:6;overflow:auto;padding:clamp(16px,3vw,36px)}
+.rc-gallery-detail .rc-detail{grid-template-columns:1fr 1fr;min-height:65dvh}
+.rc-gallery-detail .rc-racquet-art{height:min(58dvh,590px)}.rc-gallery-detail h3{font-size:clamp(1.6rem,3vw,3rem)}
+.rc-compact [aria-label=Inventory] .rc-item .rc-racquet-art{height:80px}
+.rc-result{display:flex;align-items:center;gap:16px;width:min(630px,100%);padding:10px 15px;border:1px solid var(--rarity);border-radius:var(--panel-radius,7px);background:var(--panel)}
+.rc-result .rc-racquet-art,.rc-result .rc-key-art{height:70px;width:46px;flex:none}.rc-result strong{display:block;font-size:1.05rem}
+.rc-result div>span{display:block;color:var(--muted);font-size:.82rem}.rc-result .rc-actions{margin-top:6px}.rc-result.rc-tier-2{box-shadow:0 0 20px #5496e235}
+.rc-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(115px,1fr));gap:8px;margin:0}
+.rc-stats div{padding:11px;background:var(--panel);border:1px solid var(--line);border-radius:var(--panel-radius,7px)}.rc-stats dt{color:var(--muted);font-size:.82rem}.rc-stats dd{margin:3px 0 0;font-weight:740}
+.rc-loadout{display:grid;grid-template-columns:1fr minmax(140px,32%) 1fr;grid-template-areas:"s0 racquet s2" "s1 racquet s3" "stats stats stats";
+  align-items:center;gap:14px;padding:17px;margin-bottom:15px;border:1px solid var(--line);border-radius:var(--panel-radius,7px);background:radial-gradient(ellipse at center,color-mix(in srgb,var(--primary) 12%,var(--surface)),var(--surface) 72%)}
+.rc-loadout-art{grid-area:racquet}.rc-loadout-art .rc-racquet-art{height:min(42dvh,450px);width:100%}
+.rc-slot{display:grid;justify-items:start;gap:4px;text-align:left}.rc-slot span{color:var(--accent)}.rc-slot small{color:var(--muted)}
+.rc-slot-0{grid-area:s0}.rc-slot-1{grid-area:s1}.rc-slot-2{grid-area:s2}.rc-slot-3{grid-area:s3}.rc-loadout-stats{grid-area:stats}
+.rc-product,.rc-work-detail,.rc-gear{padding:15px}.rc-product-pick{height:auto;padding:0 0 10px}
+.rc-product-art{display:grid;place-items:center;width:100%;height:90px;background:var(--surface);color:var(--accent);border-radius:var(--control-radius,5px);margin-bottom:6px;font-size:2.35rem}
+.rc-product h3{margin:8px 0}.rc-gear-comparison{display:grid;grid-template-columns:1fr 1fr;gap:15px;padding:15px;margin-bottom:14px}
+.rc-workspace{display:grid;grid-template-columns:minmax(145px,1fr) minmax(180px,1.35fr) minmax(165px,1fr);gap:12px;align-items:start}
+.rc-recipe-list .rc-subnav{display:grid}.rc-recipe-list button{text-align:left}.rc-requirement{display:grid;grid-template-columns:1fr auto;gap:4px 8px;margin:10px 0;color:var(--muted)}.rc-requirement progress{grid-column:1/-1}.rc-requirement.rc-complete{color:#a1daa4}
+.rc-boosts{display:flex;flex-wrap:wrap;gap:8px;padding:0;list-style:none}.rc-boosts li{padding:6px 9px;border:1px solid var(--line);border-radius:var(--control-radius,5px);background:var(--surface)}
+.rc-preferences{max-width:700px;padding:14px 18px}.rc-preferences label{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid var(--line)}.rc-preferences input[type=range]{max-width:40%}
+.rc-presentation{position:absolute;inset:0;z-index:12;display:grid;place-content:center;justify-items:center;gap:12px;overflow:auto;padding:54px 18px 18px;text-align:center;
+  background:radial-gradient(ellipse at 50% 42%,color-mix(in srgb,var(--rarity) 28%,var(--surface)),var(--page-bg) 72%)}
+.rc-exit-presentation{position:absolute;right:max(20px,env(safe-area-inset-right));top:max(18px,env(safe-area-inset-top))}
+.rc-presentation-art{width:min(60vw,500px);height:min(48dvh,570px)}.rc-presentation-art .rc-racquet-art{width:100%;height:100%}
+.rc-presentation-copy h3{font-size:clamp(1.9rem,6vw,4rem);line-height:1;margin:8px 0}.rc-presentation-copy p{color:var(--muted)}
+.rc-presentation .kicker{color:var(--rarity)}
+.rc-presentation.rc-hof{background:radial-gradient(ellipse at 50% 42%,color-mix(in srgb,#f6db83 27%,var(--surface)),var(--page-bg) 70%)}
+.rc-presentation.rc-regna{background:radial-gradient(ellipse at 46% 42%,color-mix(in srgb,#bbf5fa 48%,var(--surface)),color-mix(in srgb,#caa5fa 27%,var(--surface)) 37%,var(--surface) 62%,var(--page-bg) 77%)}
+.rc-presentation.rc-espresso{background:radial-gradient(ellipse at 50% 42%,color-mix(in srgb,#bd865a 36%,var(--surface)),var(--page-bg) 71%)}
+.rc-cinematic{--cinema:1s;animation:rc-enter .38s ease-out}.rc-cinematic.rc-tier-4{--cinema:1.4s}.rc-cinematic.rc-tier-5{--cinema:1.7s}.rc-cinematic.rc-tier-6{--cinema:1.9s}.rc-cinematic.rc-tier-7{--cinema:2.1s}
+.rc-cinematic .rc-presentation-art{animation:rc-unveil var(--cinema) cubic-bezier(.18,.68,.25,1) both}
+.rc-cinematic .rc-presentation-copy{animation:rc-enter .45s ease-out .12s both}
+.rc-cinematic:not(.rc-tier-3)::before{content:'';pointer-events:none;position:absolute;inset:0;background:repeating-conic-gradient(from 12deg at 50% 41%,transparent 0 18deg,var(--rarity) 19deg,transparent 21deg 42deg);mask-image:radial-gradient(ellipse,#000 0%,transparent 58%);animation:rc-rays var(--cinema) ease-out both}
+@keyframes rc-enter{from{opacity:.45;transform:translateY(5px)}}@keyframes rc-unveil{from{opacity:.1;transform:scale(.72) translateY(28px)}}@keyframes rc-rays{from{opacity:0;transform:rotate(-14deg)}to{opacity:.15}}
+.rc-crafted,.rc-balance-pulse{animation:rc-enter .3s ease-out}.rc-dialog.rc-contrast{--line:var(--text-color);--muted:var(--text-color)}
+#racquetClubStatus{position:fixed;z-index:9999;right:16px;bottom:max(15px,env(safe-area-inset-bottom));pointer-events:none;opacity:0}
+#racquetClubStatus.rc-notify{opacity:1;background:var(--surface-raised);color:var(--text-color);padding:8px 13px;border-radius:var(--control-radius,5px)}
+@media(max-width:760px){
+ .rc-header{gap:7px;padding-inline:10px}.rc-brand,.rc-top-stats{gap:7px}.rc-brand-mark,.rc-top-stats>span{display:none}.rc-header .button{font-size:.78rem;padding:7px}.rc-top-stats strong{white-space:normal;font-size:.7rem}
+ .rc-shell{grid-template-columns:minmax(0,1fr);grid-template-rows:minmax(0,1fr) auto}.rc-tabs{display:none}.rc-body{padding:13px}
+ .rc-mobile{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));padding:4px 6px max(4px,env(safe-area-inset-bottom));background:var(--surface);border-top:1px solid var(--line);gap:4px}
+ .rc-mobile button{justify-content:center;gap:3px;flex-wrap:wrap;padding:4px}.rc-mobile button b{font-size:.75rem}
+ .rc-mobile-menu{display:grid;grid-template-columns:1fr 1fr;position:absolute;z-index:9;inset:auto 8px max(58px,calc(54px + env(safe-area-inset-bottom)));padding:9px;background:var(--surface);border:1px solid var(--line);border-radius:var(--panel-radius,7px)}
+ .rc-wide-stage .rc-roulette{min-height:clamp(210px,39dvh,400px)}.rc-wheel-card{height:clamp(155px,28dvh,250px)}
+ .rc-master-detail,.rc-gallery-detail .rc-detail{grid-template-columns:minmax(0,1fr)}
+ .rc-inspector{position:absolute;inset:0;z-index:7;overflow:auto;background:var(--bg);padding:13px}
+ .rc-gallery-detail .rc-racquet-art,.rc-detail .rc-racquet-art{height:min(42dvh,320px)}
+ .rc-grid,.rc-gear-grid,.rc-key-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.rc-key-grid .rc-card{padding:10px}.rc-key-art{width:75px;height:75px}
+ .rc-loadout{grid-template-columns:1fr minmax(75px,27%) 1fr;gap:7px;padding:10px}.rc-loadout-art .rc-racquet-art{height:200px}.rc-slot{padding:7px!important;overflow-wrap:anywhere}
+ .rc-workspace{grid-template-columns:minmax(0,1fr)}.rc-recipe-list .rc-subnav{display:flex}
+ .rc-result{padding:8px;gap:8px}.rc-result .button{padding:6px 8px}
+}
+@media(prefers-reduced-motion:reduce){.rc-dialog *,.rc-dialog *::before,.rc-dialog *::after{animation:none!important;transition:none!important}}
+.rc-reduced *,.rc-reduced *::before,.rc-reduced *::after{animation:none!important;transition:none!important}
+.rc-nav-enter .rc-body{animation:rc-enter .18s ease-out}
+.rc-roulette:has(.rc-key-reel){background:radial-gradient(ellipse at center,color-mix(in srgb,var(--rarity,var(--primary)) 24%,var(--surface-raised)),var(--page-bg) 75%)}
+@media(max-width:760px) and (max-height:750px){.rc-wide-stage .rc-roulette{min-height:32dvh}.rc-wheel-card{height:24dvh}.rc-wheel-card .rc-racquet-art,.rc-wheel-card .rc-key-art{max-height:16dvh}}
