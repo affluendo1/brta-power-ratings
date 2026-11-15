@@ -32,26 +32,26 @@
   "calendar_events": [
     {
       "date": "21 Nov 26",
-      "label": "Semi Final \u00b7 if qualified"
+      "label": "Semi Final · if qualified"
     },
     {
       "date": "28 Nov 26",
-      "label": "Grand Final \u00b7 if qualified"
+      "label": "Grand Final · if qualified"
     },
     {
       "date": "5 Dec 26",
-      "label": "Spare \u00b7 if required"
+      "label": "Spare · if required"
     }
   ],
   "official_standings": [],
   "green_ball": false,
   "results_loaded_by_trols": null,
-  "fixtures": 52,
+  "fixtures": 56,
   "completed_fixtures": 42,
   "draw_fixtures": 56,
   "singles_rubbers": 168,
   "doubles_rubbers": 84,
-  "latest_round": 13,
+  "latest_round": 14,
   "validation": "passed",
   "source_warnings": []
 }

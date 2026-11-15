@@ -32,22 +32,22 @@
   "calendar_events": [
     {
       "date": "28 Nov 26",
-      "label": "Grand Final \u00b7 if qualified"
+      "label": "Grand Final · if qualified"
     },
     {
       "date": "5 Dec 26",
-      "label": "Spare \u00b7 if required"
+      "label": "Spare · if required"
     }
   ],
   "official_standings": [],
   "green_ball": false,
   "results_loaded_by_trols": null,
-  "fixtures": 39,
+  "fixtures": 42,
   "completed_fixtures": 31,
   "draw_fixtures": 45,
   "singles_rubbers": 124,
   "doubles_rubbers": 62,
-  "latest_round": 13,
+  "latest_round": 14,
   "validation": "source discrepancies",
   "source_warnings": [
     "Incomplete TROLS score for AA011021 singles No. 4: '3-3'. Missing score not inferred; excluded from ratings and game totals."
