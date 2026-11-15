@@ -1,7 +1,7 @@
 {
   "source": "https://www.trols.org.au/brta/p_results.php",
   "fixture_source": "https://www.trols.org.au/brta/fixture.php",
-  "synced_at_utc": "2026-11-15T23:34:36.603550+00:00",
+  "synced_at_utc": "2026-11-15T23:40:36.654412+00:00",
   "competitions": 7,
   "sections": 79,
   "current_seasons": {
@@ -42,9 +42,9 @@
     }
   },
   "fixtures": 3320,
-  "completed_fixtures": 2434,
-  "singles_rubbers": 7238,
-  "doubles_rubbers": 6105,
+  "completed_fixtures": 2435,
+  "singles_rubbers": 7242,
+  "doubles_rubbers": 6107,
   "validation": "source discrepancies",
   "source_warnings": [
     {
@@ -130,6 +130,22 @@
     {
       "section_code": "AA005",
       "message": "Incomplete TROLS score for AA005063 doubles No. 1: ''. Missing score not inferred; excluded from ratings and game totals."
+    },
+    {
+      "section_code": "AA006",
+      "message": "Incomplete TROLS score for AA006144 singles No. 1: ''. Missing score not inferred; excluded from ratings and game totals."
+    },
+    {
+      "section_code": "AA006",
+      "message": "Incomplete TROLS score for AA006144 singles No. 3: ''. Missing score not inferred; excluded from ratings and game totals."
+    },
+    {
+      "section_code": "AA006",
+      "message": "Incomplete TROLS score for AA006144 singles No. 4: ''. Missing score not inferred; excluded from ratings and game totals."
+    },
+    {
+      "section_code": "AA006",
+      "message": "Incomplete TROLS score for AA006144 doubles No. 2: ''. Missing score not inferred; excluded from ratings and game totals."
     },
     {
       "section_code": "AA007",
