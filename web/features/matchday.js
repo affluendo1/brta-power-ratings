@@ -12,26 +12,105 @@ stash.hidden = true;
 stash.append(page);
 document.body.append(stash);
 
-function fixtureRow(fixture) {
+function fixtureRow(fixture, forecast) {
   const { home, away, status, fixtureId } = fixture;
   const score = (a, b) => a != null && b != null ? esc(a + '–' + b) : '—';
-  if (status === 'Bye') return '<div class="round-fixture latest-fixture"><b>' + teamName(home === 'Bye' ? away : home) + '</b><span>Bye</span></div>';
+  if (status === 'Bye') return customFixtureCard(fixture, '<div class="round-fixture latest-fixture"><b>' + teamName(home === 'Bye' ? away : home) + '</b><span>Bye</span></div>');
   const complete = status === 'Completed';
   const action = complete || findMatch(fixtureId) ? 'data-82-result' :
     status === 'Scheduled' && fixtureById(fixtureId) ? 'data-82-predict' : '';
   const tag = action ? 'button' : 'div';
-  return '<' + tag + ' class="round-fixture latest-fixture"' + (action ? ' type="button" ' + action + '="' + esc(fixtureId) + '"' : '') +
+  const card = '<' + tag + ' class="round-fixture latest-fixture"' + (action ? ' type="button" ' + action + '="' + esc(fixtureId) + '"' : '') +
     '><div class="latest-fixture-title"><b>' + teamName(home) + ' <span>vs</span> ' + teamName(away) +
     '</b><span class="latest-status' + (complete ? ' complete' : '') + '">' + esc(status === 'Missing Result' ? 'Awaiting result' : status) + '</span></div>' +
     (complete ? '<div class="latest-score"><span>Points <b>' + score(fixture.homePoints, fixture.awayPoints) +
       '</b></span><span>Rubbers <b>' + score(fixture.homeRubbers ?? fixture.homeSets, fixture.awayRubbers ?? fixture.awaySets) +
       '</b></span><span>Games <b>' + score(fixture.homeGames, fixture.awayGames) + '</b></span></div>' : '') +
+    (forecast ? '<span class="latest-chance">' + chance(forecast.resultChance) + ' pre-round chance of this outcome</span>' : '') +
     (action ? '<span class="latest-action">' + (action === 'data-82-result' ? 'View scorecard' : 'Fixture Outlook') + ' ›</span>' : '') + '</' + tag + '>';
+  return customFixtureCard(fixture, card);
+}
+
+const chance = value => (100 * value).toFixed(1) + '%';
+function highlight(title, row, tone, detail, empty = 'No completed match') {
+  if (!row) return '<div class="round-highlight"><span>' + title + '</span><b>' + empty + '</b></div>';
+  return '<div class="round-highlight ' + tone + '"><span>' + title + '</span><b>' +
+    esc(row.winner + ' ' + row.score + ' ' + row.loser) + '</b>' +
+    (detail ? '<small>' + esc(detail(row)) + '</small>' : '') + '</div>';
+}
+
+let previousAnalysis;
+function roundAnalysis(round) {
+  if (previousAnalysis?.data === D && previousAnalysis.round === round.round) return previousAnalysis;
+  const prior = (D.ratingHistory?.rounds || []).map(row => Number(row.round))
+    .filter(number => number < Number(round.round)).sort((a,b) => b-a)[0];
+  const ratings = new Map((D.ratingHistory?.tables?.[prior] || []).map(row => [row.player, row.rating]));
+  const doubles = new Map((D.doublesRatingHistory?.tables?.[prior]?.doublesPlayers || []).map(row => [row.player, row.rating]));
+  const power = (names, isDoubles) => {
+    const values = names.split(/\s+\/\s+/).map(name => (isDoubles ? doubles.get(name) : undefined) ?? ratings.get(name));
+    return values.every(Number.isFinite) ? values.reduce((sum, value) => sum + value, 0) / values.length : null;
+  };
+  const scale = D.meta.ratingProbabilityScale || 450;
+  const rules = D.meta.customRules || D.meta.competition_rules;
+  const options = { format: D.format, greenBall: !!D.greenBall, custom: !!D.meta.is_custom, setWinsDecideTies: !!D.meta.competition_rules };
+  const players = [], teams = [], forecasts = new Map();
+  for (const fixture of round.fixtures.filter(row => row.status === 'Completed')) {
+    const rubbers = [];
+    for (const rubber of fixture.rubbers || []) {
+      if (!rubber.winner || rubber.valid_for_rating === false || (rubber.status && rubber.status !== 'Completed') ||
+        /ret|forfeit|walkover|unfinished/i.test(rubber.score || '')) continue;
+      const sets = BRTAScores.parse(rubber.score, { outcomeCode: BRTAScores.outcomeCode(D, rubber.type) }).filter(set => !set.mt);
+      if (!sets.length) continue;
+      const homeWon = rubber.winner === rubber.home;
+      const diff = sets.reduce((sum, set) => sum + set.h - set.a, 0);
+      const games = sets.reduce((sum, set) => sum + set.h + set.a, 0);
+      const item = { winner: homeWon ? rubber.home : rubber.away, loser: homeWon ? rubber.away : rubber.home,
+        score: homeWon ? rubber.score : BRTAScores.flip(rubber.score), margin: Math.abs(diff) };
+      players.push(item);
+      const isDoubles = rubber.type === 'Doubles';
+      const home = power(rubber.home, isDoubles), away = power(rubber.away, isDoubles);
+      if (home == null || away == null) continue;
+      const p = BRTAPrediction.gameProbability(home, away, scale);
+      const bestOf = rules ? rules[isDoubles ? 'doublesBestOf' : 'singlesBestOf'] : D.format === 'rubbers' && !isDoubles ? 3 : 1;
+      const targetGames = rules ? rules[isDoubles ? 'doublesTarget' : 'setTarget'] : D.format === 'rubbers' && isDoubles ? 8 : 6;
+      const matchTiebreak = rules?.matchTiebreak !== false;
+      const distribution = bestOf === 1 ? BRTAPrediction.shortSetDistribution(p, { greenBall: options.greenBall, targetGames }) :
+        BRTAPrediction.matchDistribution(p, { bestOf, targetGames, matchTiebreak });
+      const win = distribution.reduce((sum, row) => sum + (row.homeWin ? row.probability : 0), 0);
+      item.chance = homeWon ? win : 1 - win;
+      item.performance = Math.round((homeWon ? away : home) + scale * Math.log((games + (homeWon ? diff : -diff) + 1) /
+        (games - (homeWon ? diff : -diff) + 1)));
+      rubbers.push({ p: win, scoreDistribution: distribution });
+    }
+    if (fixture.homeGames == null || fixture.awayGames == null || fixture.homePoints == null || fixture.awayPoints == null) continue;
+    const homeWon = fixture.homePoints > fixture.awayPoints, draw = fixture.homePoints === fixture.awayPoints;
+    const team = { winner: homeWon || draw ? fixture.home : fixture.away, loser: homeWon || draw ? fixture.away : fixture.home,
+      score: (homeWon || draw ? [fixture.homePoints, fixture.awayPoints] : [fixture.awayPoints, fixture.homePoints]).join('–'),
+      margin: Math.abs(fixture.homeGames - fixture.awayGames) };
+    teams.push(team);
+    if (!rubbers.length || rubbers.length !== fixture.rubbers.length) continue;
+    const outcome = BRTAPrediction.teamOutcome(rubbers, { gamesDecideTies: true,
+      setWinsDecideTies: options.setWinsDecideTies || options.format === 'rubbers' });
+    const resultChance = draw ? outcome.draw : homeWon ? outcome.homeWin : outcome.awayWin;
+    forecasts.set(fixture.fixtureId, { resultChance });
+    const expectedMargin = rubbers.reduce((sum, row) => sum + row.scoreDistribution.reduce((n, score) => n + score.margin * score.probability, 0), 0);
+    team.above = (fixture.homeGames - fixture.awayGames - expectedMargin) * (homeWon ? 1 : -1);
+    if (!draw) team.chance = resultChance;
+    else delete team.above;
+  }
+  const best = (rows, getter) => rows.filter(row => Number.isFinite(getter(row)))
+    .sort((a,b) => getter(b) - getter(a))[0];
+  previousAnalysis = { data: D, round: round.round, forecasts, top: best(players, row => row.performance),
+    upset: best(players, row => row.chance < .5 ? -row.chance : NaN),
+    dominant: best(players, row => row.margin), closest: best(players, row => -row.margin),
+    teamPerformance: best(teams, row => row.above > 0 ? row.above : NaN),
+    teamUpset: best(teams, row => row.chance < .5 ? -row.chance : NaN), teamDominant: best(teams, row => row.margin) };
+  return previousAnalysis;
 }
 
 function render() {
   $('#roundBtn').textContent = 'Latest Round';
-  if (!D) return;
+  if (!D || !page.closest('.rounds821-overlay')) return;
   const round = M.overview(D);
   const context = '<p id="roundsContext" class="small-note">' +
     esc([D.meta.competition_label, D.meta.season_label, D.meta.section_label].filter(Boolean).join(' · ')) + '</p>';
@@ -44,19 +123,26 @@ function render() {
       result.fixtureId === fixture.fixtureId || (result.home === fixture.home && result.away === fixture.away)));
   const fixtures = [...round.fixtures, ...remaining];
   const pending = fixtures.filter(f => ['Scheduled', 'Missing Result'].includes(f.status)).length;
-  const highlights = Number(D.roundOverview?.round) === Number(round.round) ? D.roundOverview : null;
-  const featured = [highlights?.topPerformance && roundHighlight('Top performance', highlights.topPerformance, 'top'),
-    highlights?.biggestUpset && roundHighlight('Biggest upset', highlights.biggestUpset, 'upset'),
-    round.closest && '<div class="round-highlight"><span>Closest by games</span><b>' + teamName(round.closest.home) +
+  const analysis = roundAnalysis(round);
+  const featured = [
+    highlight('Top performance', analysis.top, 'top', row => 'Performance ≈ ' + row.performance, 'No pre-round rating evidence'),
+    highlight('Biggest upset', analysis.upset, 'upset', row => chance(row.chance) + ' pre-round win chance', 'No upset identified'),
+    highlight('Most dominant', analysis.dominant, '', row => row.margin + ' game margin'),
+    highlight('Closest player match', analysis.closest, ''),
+    highlight('Top team performance', analysis.teamPerformance, 'top', row => '+' + row.above.toFixed(1) + ' games vs expected', 'No team outperformance identified'),
+    highlight('Biggest team upset', analysis.teamUpset, 'upset', row => chance(row.chance) + ' pre-round win chance', 'No upset identified'),
+    highlight('Most dominant team', analysis.teamDominant, '', row => row.margin + ' game margin'),
+    round.closest && '<div class="round-highlight"><span>Closest team match</span><b>' + teamName(round.closest.home) +
       ' vs ' + teamName(round.closest.away) + '</b><small>' + Math.abs(round.closest.homeGames - round.closest.awayGames) +
-      ' game margin</small></div>'].filter(Boolean);
+      ' game margin</small></div>'
+  ].filter(Boolean);
   page.innerHTML = context + '<section class="latest-round-summary"><div><span class="kicker">Round overview</span><h3>' +
     esc(roundHeading(round)) + '</h3><p class="small-note">' + esc(roundDate(round.date)) + '</p></div>' +
     '<div class="latest-round-kpis">' + [['Completed', round.completed], ['Awaiting results', pending],
       ['Matches played', round.singles + round.doubles], ['Games played', round.games]].map(([label, value]) =>
       '<div><strong>' + value + '</strong><span>' + label + '</span></div>').join('') + '</div></section>' +
-    (featured.length ? '<div class="round-highlights latest-highlights">' + featured.join('') + '</div>' : '') +
-    '<h3>Fixtures</h3><div class="round-fixtures latest-fixtures">' + fixtures.map(fixtureRow).join('') + '</div>';
+    (featured.length ? '<h3>Round highlights</h3><div class="round-highlights latest-highlights">' + featured.join('') + '</div>' : '') +
+    '<h3>Fixtures</h3><div class="round-fixtures latest-fixtures">' + fixtures.map(fixture => fixtureRow(fixture, analysis.forecasts.get(fixture.fixtureId))).join('') + '</div>';
 }
 
 function showRounds() {

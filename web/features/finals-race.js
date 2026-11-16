@@ -3,13 +3,13 @@
 
   const model = BRTAFinalsMath;
   const depths = [
-    { title: 'Quick', runs: 100000, samples: 12000, variants: 16, description: 'Faster forecast with broad lineup coverage' },
-    { title: 'Standard', runs: 150000, samples: 18000, variants: 22, description: 'Broadest roster and doubles coverage' }
+    { title: 'Quick', runs: 100000, samples: 12000, description: 'Faster forecast with broad lineup coverage' },
+    { title: 'Standard', runs: 150000, samples: 18000, description: 'More season and scorecard simulations' }
   ];
   const pause = ms => new Promise(resolve => setTimeout(resolve, ms));
   let editing;
   let data, pending, rows, places, caps, team, report, job, selectedRound, planned, scenario = {};
-  let pools = new Map(), compiled = new Map(), rubberCache = new Map();
+  let pools = new Map(), rubberCache = new Map();
   const snapshots = () => {
     try { return JSON.parse(localStorage.getItem('brta-finals-race-91') || '{}'); } catch { return {}; }
   };
@@ -28,77 +28,56 @@
   const title = fixture => fixture.home + ' v ' + fixture.away;
 
   const signature = side => JSON.stringify([side.singles, side.doubles.map(pair => [...pair].sort())]);
-  function pool(teamName, round, size) {
+  function pool(teamName, round) {
     const key = JSON.stringify([teamName, round]);
-    if (pools.has(key)) return pools.get(key).slice(0, size);
-    const max = depths.at(-1).variants;
-    const recorded = BRTALineups.configurations(data, teamName, round)
-      .filter(lineup => lineup.players.every(name => !/^(no player|bye)$/i.test(name)));
-    const roster = teamRoster(teamName);
-    const variants = recorded.slice(0, max).map(lineup => ({
-      side: BRTALineups.side(lineup),
-      label: lineup.singles.length ? lineup.singles.join(', ') : lineup.players.join(', '),
-      weight: lineup.count * (1 + .08 * Math.max(0, 5 - (round - lineup.latest)))
-    }));
-    if (!variants.length) variants.push({ side: defaultSide(teamName, predictionNeeded(), round), label: 'Suggested lineup', weight: 1 });
-    const original = variants[0].side;
-    const seen = new Set(variants.map(({ side }) => signature(side)));
-    function add(side, weight, label) {
-      const key = signature(side);
-      if (seen.has(key)) return;
-      seen.add(key);
-      variants.push({ side, weight, label });
+    if (pools.has(key)) return pools.get(key);
+    const needed = predictionNeeded();
+    const template = defaultSide(teamName, needed, round);
+    const eligible = name => name && !/^(no player|bye)$/i.test(name);
+    const roster = [...new Set([...teamRoster(teamName).map(row => row.player), ...template.draft])].filter(eligible);
+    const variants = new Map();
+    function add(side) {
+      if (side.draft.length < needed || !side.draft.every(eligible)) return;
+      variants.set(signature(side), { side, label: side.draft.join(', ') +
+        (side.doubles.length ? ' · ' + side.doubles.map(pair => pair.join(' / ')).join(' · ') : '') });
     }
-    const substitutes = roster.filter(row => !original.draft.includes(row.player));
-    for (const [slot, outgoing] of original.draft.entries()) {
-      for (const player of substitutes) {
-        const substitute = name => name === outgoing ? player.player : name;
-        const side = { draft: original.draft.map(substitute), singles: original.singles.map(substitute),
-          doubles: original.doubles.map(pair => pair.map(substitute)), manualOrder: false, manualPairs: true };
-        normaliseSide(teamName, side, predictionNeeded());
-        add(side, (player.emergencyOnly ? .11 : .32) / (1 + slot * .18),
-          (player.emergencyOnly ? 'Emergency · ' : 'Substitute · ') + player.player + ' for ' + outgoing);
+    for (const recorded of BRTALineups.configurations(data, teamName, round)) add(BRTALineups.side(recorded));
+    function draftFrom(start, names) {
+      if (names.length === needed) {
+        const order = orderLineup(teamName, names);
+        const bySlot = new Map(orderLineup(teamName, template.draft).map((name, index) => [name, order[index]]));
+        const doubles = template.doubles.map(pair => pair.map(name => bySlot.get(name)).filter(Boolean));
+        const side = normaliseSide(teamName, { draft: order, singles: [], doubles }, needed);
+        if (needed === 4 && side.doubles.length === 2) {
+          const [a, b, c, d] = order;
+          for (const pairs of [[[a,b],[c,d]], [[a,c],[b,d]], [[a,d],[b,c]]]) {
+            add({ ...side, doubles: pairs, manualPairs: true });
+            add({ ...side, doubles: [...pairs].reverse(), manualPairs: true });
+          }
+        } else add(side);
+        return;
       }
+      for (let i = start; i <= roster.length - needed + names.length; i++) draftFrom(i + 1, [...names, roster[i]]);
     }
-    if (original.draft.length === 4 && original.doubles.length === 2) {
-      const [a,b,c,d] = original.draft;
-      for (const doubles of [[[a,c],[b,d]], [[a,d],[b,c]]]) {
-        add({ ...original, doubles, manualPairs: true }, .28, doubles.map(pair => pair.join(' / ')).join(' · '));
-      }
-    }
-    for (const [i, first] of substitutes.entries()) for (const second of substitutes.slice(i + 1)) {
-      if (original.draft.length < 2 || variants.length >= max * 3) break;
-      const names = original.draft.slice(-2);
-      const swap = name => name === names[0] ? first.player : name === names[1] ? second.player : name;
-      const side = { draft: original.draft.map(swap), singles: original.singles.map(swap),
-        doubles: original.doubles.map(pair => pair.map(swap)), manualPairs: true };
-      normaliseSide(teamName, side, predictionNeeded());
-      add(side, first.emergencyOnly || second.emergencyOnly ? .025 : .075, first.player + ' + ' + second.player);
-    }
-    variants.sort((a,b) => b.weight - a.weight);
-    const emergency = variants.find(({ side }) => side.draft.some(name => roster.some(row => row.player === name && row.emergencyOnly)));
-    if (emergency && variants.indexOf(emergency) >= max) variants.splice(max - 1, 0, ...variants.splice(variants.indexOf(emergency), 1));
-    pools.set(key, variants);
-    return variants.slice(0, size);
+    draftFrom(0, []);
+    const result = [...variants.values()];
+    pools.set(key, result);
+    return result;
   }
 
-  async function compile(fixture, size, running) {
-    const variants = [pool(fixture.home, fixture.round, size), pool(fixture.away, fixture.round, size)];
+  async function compile(fixture, running) {
+    const variants = [pool(fixture.home, fixture.round), pool(fixture.away, fixture.round)];
     const locks = scenario[fixture.fixtureId] || [];
-    for (const [index, side] of locks.entries()) if (side) variants[index] = [{ side, label: 'Pinned · ' + side.draft.join(', '), weight: 1 }];
+    for (const [index, side] of locks.entries()) if (side) variants[index] = [{ side, label: 'Pinned · ' + side.draft.join(', ') }];
     const combinations = [];
     let evaluations = 0;
     for (const [i, home] of variants[0].entries()) {
       for (const [j, away] of variants[1].entries()) {
         if (home.side.draft.some(name => away.side.draft.includes(name))) continue;
-        const key = JSON.stringify([fixture.fixtureId, signature(home.side), signature(away.side)]);
-        if (!compiled.has(key)) {
-          if (++evaluations % 8 === 1) await pause(0);
-          if (running.abort.signal.aborted) throw Error("Forecast stopped.");
-          compiled.set(key, BRTAForecastRubbers(home.side, away.side, fixture, rubberCache));
-        }
-        const rubbers = compiled.get(key);
-        if (rubbers) combinations.push({ home: i, away: j, weight: home.weight * away.weight, rubbers });
+        if (++evaluations % 128 === 1) await pause(0);
+        if (running.abort.signal.aborted) throw Error('Forecast stopped.');
+        const rubbers = BRTAForecastRubbers(home.side, away.side, fixture, rubberCache);
+        if (rubbers) combinations.push({ home: i, away: j, rubbers });
       }
     }
     if (!combinations.length) throw Error('A full forecast lineup is unavailable for ' + title(fixture) + '.');
@@ -113,8 +92,8 @@
     const gap = cutoff && selected.points != null && cutoff.points != null
       ? Number(cutoff.points) - Number(selected.points) : null;
     const own = pending.filter(fixture => [fixture.home, fixture.away].includes(team));
-    const rivals = pending.filter(fixture => !own.includes(fixture) && [fixture.home, fixture.away].some(name =>
-      opponents.slice(Math.max(0, places - 2), places + 1).some(row => row.team === name)));
+    const rivals = pending.filter((fixture, i) => !own.includes(fixture) && matters(fixture, places) &&
+      (!report || resultSwing(report.fixtures[i], teamIndex()) >= .01));
     const metric = (label, value, tone = '') => '<div data-tone="' + tone + '"><span>' + label + '</span><strong>' + esc(value ?? '—') + '</strong></div>';
     const fixtures = (label, list) => list.length ? '<section><h4>' + label + '</h4>' + list.map(fixture =>
       '<div class="race-mini-fixture"><span>' + esc(roundLabel(fixture)) + '</span><b>' + esc(title(fixture)) + '</b></div>').join('') + '</section>' : '';
@@ -194,40 +173,63 @@
     const exact = pointsOnly() && status === 'In contention' ? model.finalRoundPaths(rows, pending, places, team) : null;
     const winning = exact?.filter(row => row.points > 5);
     const guaranteed = winning?.length && winning.every(row => row.clear === row.total);
-    const heading = guaranteed ? 'How to make finals' : target === 0 ? 'How to finish first' : 'How to finish #' + (target + 1);
+    const heading = guaranteed ? 'How to make finals' : status !== 'Clinched' ? 'How to make finals' : target === 0 ? 'How to finish first' : 'How to finish #' + (target + 1);
     const start = '<section class="race-path"><h3>' + heading + '</h3>';
-    const counts = path => path.finishes[index][target];
-    const paths = report.paths.filter(path => counts(path)).sort((a, b) => counts(b) - counts(a));
+    const inTarget = (path) => status === 'Clinched' ? path.finishes[index][target] :
+      path.finishes[index].reduce((sum, count) => sum + count, 0);
+    const keyFixtures = pending.map((fixture, i) => {
+      const owned = [fixture.home, fixture.away].includes(team);
+      if (guaranteed) return i === own ? i : -1;
+      return owned || (matters(fixture, target + 1) && resultSwing(report.fixtures[i], index,
+        status === 'Clinched' ? target : null) >= .01) ? i : -1;
+    }).filter(i => i >= 0);
+    const routes = new Map();
+    for (const path of report.paths) {
+      const key = keyFixtures.map(i => path.results[i]).join('');
+      const route = routes.get(key) || { count: 0, successes: 0, example: null };
+      const successes = inTarget(path);
+      route.count += path.count;
+      route.successes += successes;
+      if (successes && (!route.example || inTarget(route.example) < successes)) route.example = path;
+      routes.set(key, route);
+    }
+    const paths = [...routes.values()].filter(route => route.example)
+      .sort((a,b) => (b.successes + 1) / (b.count + 2) - (a.successes + 1) / (a.count + 2) || b.successes - a.successes)
+      .map(route => route.example);
     const best = paths[0];
     if (!guaranteed && !best) return start + '<p>No route to this spot appeared in the forecast.</p></section>';
-    const relevant = pending.map((fixture, i) => {
+    const relevant = keyFixtures.map(i => {
+      const fixture = pending[i];
       const side = fixture.home === team ? 0 : fixture.away === team ? 1 : -1;
       const result = guaranteed ? side : best.results[i];
-      const relevance = Math.max(0.0001, entry.counts[target] / report.runs * 0.1);
-      if (guaranteed ? i !== own : side < 0 && resultSwing(report.fixtures[i], index, target) < relevance) return null;
       const winner = result === 0 ? fixture.home : fixture.away;
       const loser = result === 0 ? fixture.away : fixture.home;
-      const instruction = result === 2 ? title(fixture) + ' ends in a draw' :
-        winner === team ? 'Defeat ' + loser : (side < 0 ? 'Hope ' : '') + winner + ' beats ' + loser;
-      const range = report.fixtures[i].ranges?.[result];
-      return { i, fixture, instruction, range };
-    }).filter(Boolean);
+      const instruction = result === 2 ? (side < 0 ? 'Hope ' : '') + fixture.home + ' and ' + fixture.away + ' draw' :
+        winner === team ? 'Beat ' + loser : (side < 0 ? 'Hope ' : '') + winner + ' beats ' + loser;
+      return { i, fixture, instruction, chance: report.fixtures[i].odds[result] };
+    });
     const groups = [...new Set(relevant.map(row => row.fixture.round))].sort((a, b) => a - b);
     const alternate = paths.find(path => path !== best && path.examples[index + ':' + target] &&
       relevant.some(({i}) => path.results[i] !== best.results[i]));
-    const example = (alternate || best)?.examples[index + ':' + target];
+    const examplePath = alternate || best;
+    const example = examplePath?.examples[index + ':' + target] || (status !== 'Clinched' && examplePath &&
+      Object.entries(examplePath.examples).find(([key]) => key.startsWith(index + ':'))?.[1]);
     return start + '<p>' + (guaranteed ? 'A win secures a finals spot.' : 'One route from the forecast. The exact scores can matter.') + '</p>' +
       groups.map(round => '<div class="race-path-round"><h4>' + esc(roundLabel(relevant.find(row => row.fixture.round === round).fixture)) + '</h4><ul>' +
-        relevant.filter(row => row.fixture.round === round).map(({ instruction, range }) => '<li><span>' + esc(instruction) + '</span>' +
-          (range ? '<strong>' + pct(range[0], 1) + ' – ' + pct(range[1], 1) + '</strong>' : '') + '</li>').join('') + '</ul></div>').join('') +
-      (relevant.some(row => row.range) ? '<details><summary>How lineup ranges work</summary><p>Lowest and highest win or draw estimates among lineup pairings with enough samples. Each estimate assumes those two lineups play.</p></details>' : '') +
+        relevant.filter(row => row.fixture.round === round).map(({ instruction, chance }) => '<li><span>' + esc(instruction) + '</span>' +
+          '<strong>' + pct(chance, 1) + '</strong>' + '</li>').join('') + '</ul></div>').join('') +
+      (relevant.length ? '<p class="small-note">Result odds average every eligible lineup pairing in this forecast.</p>' : '') +
       (!guaranteed && example && relevant.length ? '<details><summary>' + (alternate ? 'Another score combination' : 'Example scores') + '</summary><ul>' +
         relevant.map(({ i, fixture }) => '<li>' + esc(roundLabel(fixture) + ' · ' + title(fixture)) + ' · <b>' + example[i].join('–') + '</b></li>').join('') + '</ul></details>' : '') +
       '</section>';
   }
 
+  function matters(fixture, target) {
+    return model.fixtureMatters(rows, fixture, team, target);
+  }
+
   function resultSwing(fixture, index, target) {
-    const chances = fixture.wins.flatMap((count, side) => count >= 30 ?
+    const chances = fixture.wins.flatMap((count, side) => count >= Math.max(30, report.runs * .005) ?
       [(target == null ? fixture.conditions[index][side] : fixture.finishes[index][side][target]) / count] : []);
     return chances.length > 1 ? Math.max(...chances) - Math.min(...chances) : 0;
   }
@@ -251,7 +253,7 @@
       const conditions = [source.home + ' win', source.away + ' win', 'Draw'];
       const split = fixture.wins.map((count, j) => [conditions[j], pct(fixture.conditions[index][j], count)]);
       return { source, score, split, swing: resultSwing(fixture, index) };
-    }).filter(({ swing }) => swing >= Math.max(0.0001, report.teams[index].qualifies / report.runs * 0.1))
+    }).filter(({ source, swing }) => swing >= .01 && ([source.home, source.away].includes(team) || matters(source, places)))
       .sort((a, b) => b.swing - a.swing);
     return '<section class="race-report"><header class="race-report-head"><div><span class="kicker">Simulation complete</span><h3>' + (report.scenario ? 'Lineup scenario' : 'Forecast') +
       '</h3></div><p><b>' + report.runs.toLocaleString() + '</b> seasons<br><small>' + esc(report.depth) + ' · ' + esc(modelDisplayName(data.meta.modelChoice || data.meta.predictionModel)) + '</small></p></header>' +
@@ -332,7 +334,6 @@
     cancel();
     data = D;
     pools = new Map();
-    compiled = new Map();
     rubberCache = new Map();
     pending = model.remaining(data);
     places = Number(data.meta?.semifinalPlaces ?? 4);
@@ -392,19 +393,19 @@
           task.stage(completed, stage);
         };
         const clock = setInterval(update, 250);
-        const timeout = setTimeout(() => running.abort.abort('The forecast timed out.'), 90000);
+        const timeout = setTimeout(() => running.abort.abort('The forecast timed out.'), 180000);
         const signal = running.abort.signal;
         try {
           for (const fixture of pending) {
             stage = 'Preparing ' + title(fixture);
             update();
-            fixtures.push(await compile(fixture, depth.variants, running));
+            fixtures.push(await compile(fixture, running));
             completed = 15 * fixtures.length / pending.length;
             update();
           }
           if (signal.aborted) return false;
           const result = await new Promise((resolve, reject) => {
-            worker = new Worker('web/workers/finals-race-worker.js?v=9101');
+            worker = new Worker('web/workers/finals-race-worker.js?v=9113');
             signal.addEventListener('abort', () => reject(Error(signal.reason?.message || signal.reason)), { once: true });
             worker.onerror = event => reject(Error(event.message || 'The simulation worker could not start.'));
             worker.onmessage = ({ data: message }) => {
@@ -460,7 +461,7 @@
     const affected = rows.filter(row => [fixture.home, fixture.away].includes(row.team) && row.status === 'In contention');
     if (!affected.length && !forecast) return '';
     const summary = forecast ? [fixture.home, fixture.away].map((name, index) => esc(name) + ' win · ' +
-      pct(forecast.wins[index], report.runs)).join(' · ') :
+      pct(forecast.odds[index], 1)).join(' · ') :
       esc(affected.map(row => row.team).join(' and ')) + ' still in contention';
     return '<p class="small-note">Finals race · ' + summary +
       ' <button class="export-link" type="button" data-race-open>See qualification paths</button></p>';

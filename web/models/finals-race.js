@@ -47,6 +47,17 @@
     });
   }
 
+  function fixtureMatters(rows, fixture, team, places) {
+    const selected = rows.find(row => row.team === team);
+    if ([fixture.home, fixture.away].includes(team)) return true;
+    return [fixture.home, fixture.away].some(name => {
+      const rival = rows.find(row => row.team === name);
+      if (!rival || !selected || rival.ceiling == null || selected.ceiling == null) return true;
+      const ahead = rows.filter(row => row.team !== name && Number(row.points) > rival.ceiling).length;
+      return ahead < places && rival.ceiling >= Number(selected.points) && Number(rival.points) <= selected.ceiling;
+    });
+  }
+
   // Exhaust final-round points scores for ordinary Sets. Exact points ties
   // remain open until games percentage is known.
   function finalRoundPaths(rows, fixtures, places, team) {
@@ -186,7 +197,7 @@
     return { runs, teams, fixtures: stats, paths: [...paths.values()], pathsComplete: paths.size < 4096, unresolvedCutoffs };
   }
 
-  const api = { bye, remaining, pointsCap, bounds, finalRoundPaths, tally };
+  const api = { bye, remaining, pointsCap, bounds, fixtureMatters, finalRoundPaths, tally };
   root.BRTAFinalsMath = api;
   if (typeof module !== 'undefined') module.exports = api;
 })(globalThis);

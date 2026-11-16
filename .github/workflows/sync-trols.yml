@@ -15,6 +15,7 @@ on:
       - "web/**"
       - "generate_player_search.py"
       - "player_identity.py"
+      - "web/models/player-identity-aliases.json"
       - "web/models/custom-section-model.js"
       - "web/features/custom-sections.js"
       - "web/models/custom-section-tools.js"

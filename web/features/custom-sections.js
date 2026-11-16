@@ -94,6 +94,24 @@
     requestAnimationFrame(()=>{if(body.isConnected&&draft?.id===view.sectionId){locate();}});
   }
   function openSection(code){if(!enabled())return;rosterText='';rosterPreview=null;const saved=read().find(s=>s.id===code);if(!saved)return;if(dirty&&!confirm('Discard unsaved changes and return to this section?'))return;const view=previousEditorView(code);draft=editable(saved);tab=view?.tab||'setup';roundId=draft.rounds.some(r=>r.id===view?.roundId)?view.roundId:null;fixtureId=draft.rounds.flatMap(r=>r.fixtures).some(f=>f.id===view?.fixtureId)?view.fixtureId:null;dirty=false;pendingEditorView=view||null;open();}
+  function openFixture(id){
+    const saved=read().find(section=>section.id===viewedSectionId);
+    const target=saved?.rounds.find(round=>round.fixtures.some(fixture=>fixture.id===id));
+    if(!enabled()||!target)return;
+    if(draft?.id!==saved.id){
+      if(dirty&&!confirm('Discard unsaved changes and open this fixture?'))return;
+      draft=editable(saved);
+      rosterText='';rosterPreview=null;dirty=false;
+    }
+    const draftRound=draft.rounds.find(round=>round.id===target.id);
+    if(!draftRound?.fixtures.some(fixture=>fixture.id===id)){
+      open();
+      message('This fixture was removed in your unsaved changes.',true);
+      return;
+    }
+    tab='rounds';roundId=draftRound.id;fixtureId=id;pendingEditorView=null;
+    open();
+  }
   function bindHeader(code=viewedSectionId){viewedSectionId=code;const btn=$('#customEditorBtn');if(!btn)return;btn.classList.toggle('hidden',!enabled()||!code);btn.onclick=()=>openSection(viewedSectionId);}
   function close(){
     if(dirty&&!confirm('Close without saving your section changes?'))return false;
@@ -315,5 +333,5 @@
     persist(read().filter(s=>s.id!==section.id).concat(M.clone(section)));
     open();return true;
   }
-  root.CustomSections={catalog,payload,bindSettings,bindHeader,open,openSection,openBackup,metadata,validate:M.validate};
+  root.CustomSections={catalog,payload,bindSettings,bindHeader,open,openSection,openFixture,openBackup,metadata,validate:M.validate};
 })(window);

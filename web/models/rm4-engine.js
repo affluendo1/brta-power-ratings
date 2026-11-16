@@ -27,8 +27,15 @@ function automatic(data,bundle,baselineEngine){
 function ascension(data,bundle){
  const copy=recalculate(data,'RM4.1 Ensemble',bundle);
  // Transform each player's current and historical skill with the same deterministic joke signal.
- const score=(name,rating)=>Math.round(1500+450*M.ascensionSkill(name,(rating-1500)/450));
- function apply(row){if(!row||typeof row.player!=='string'||!Number.isFinite(row.rating))return;const old=row.rating;row.rating=score(row.player,old);if(Number.isFinite(row.se)){row.lo=row.rating-Math.round(1.96*row.se);row.hi=row.rating+Math.round(1.96*row.se)}if(Number.isFinite(row.ratingChange))row.ratingChange=0}
+ // Work in display units so the lower limit remains 500 after display conversion.
+ const { centre, probabilityScale } = policy('RM1000 Ascension');
+ const score=(name,rating)=>{
+   const skill=M.ascensionSkill(name,(rating-1500)/450);
+   const power=centre+probabilityScale*skill;
+   const bounded=power>=1000?power:500+500*Math.exp((power-1000)/500);
+   return 1500+450*(Math.max(501,Math.round(bounded))-centre)/probabilityScale;
+ };
+ function apply(row){if(!row||typeof row.player!=='string'||!Number.isFinite(row.rating))return;const old=row.rating;row.rating=score(row.player,old);if(Number.isFinite(row.se)){row.lo=Math.max(1500+450*(500-centre)/probabilityScale,row.rating-Math.round(1.96*row.se));row.hi=row.rating+Math.round(1.96*row.se)}if(Number.isFinite(row.ratingChange))row.ratingChange=0}
  for(const rows of [copy.singles,copy.doublesIndividuals,copy.doubles,...Object.values(copy.ratingHistory?.tables||{}),...Object.values(copy.doublesRatingHistory?.tables||{}).flatMap(x=>[x.doublesPlayers,x.pairs])])if(Array.isArray(rows)){rows.forEach(apply);sort(rows)}
  for(const [name,list] of Object.entries(copy.ratingHistory?.players||{}))for(const point of list)if(Number.isFinite(point[1]))point[1]=score(name,point[1]);
  copy.meta={...copy.meta,predictionModel:'RM1000 Ascension',ratingModel:'RM1000 Ascension',noveltyModel:true};copy.note='RM 1000 Ascension. The pinnacle of mathematical achievement.';return copy;

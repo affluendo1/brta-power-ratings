@@ -15,6 +15,27 @@ const section = {
 assert(Array.isArray(finals.remaining(current)));
 const fixtures = finals.remaining(section);
 
+const fixtureBounds = finals.bounds(section.standings, fixtures, 10, 4);
+assert.equal(finals.fixtureMatters(fixtureBounds, fixtures.find(row=>row.home==='Victory Park'), 'Kings Park', 4), false);
+assert.equal(finals.fixtureMatters(fixtureBounds, fixtures.find(row=>row.home==='BLTC'), 'Kings Park', 4), true);
+
+const vm = require('node:vm');
+const fs = require('node:fs');
+const worker = { postMessage: message => { if (message.result || message.error) outcome = message; } };
+let outcome;
+vm.runInNewContext(fs.readFileSync(require.resolve('../web/workers/finals-race-worker.js'), 'utf8'), {
+  self: worker, importScripts() {}, BRTAFinalsMath: finals,
+  BRTAPrediction: { simulateTie: ([result]) => result }
+});
+const scores = [[7,3], [3,7], [5,5], [5,5]];
+worker.onmessage({data: {
+  rows: fixtureBounds, places: 4, runs: 200, sampleSize: 100, seed: 67,
+  fixtures: [{id:'rival-tie',home:'BLTC',away:'Coatesville',combinations:scores.map(([homePoints,awayPoints],home)=>({
+    home,away:0,rubbers:[{homePoints,awayPoints,homeGames:20,awayGames:20,results:[]}]
+  }))}]
+}});
+assert.deepEqual(Array.from(outcome.result.fixtures[0].odds), [.25,.25,.5]);
+
 const byeSection = structuredClone(section);
 byeSection.upcomingFixtures[0].fixtures.push({ home: 'St James', away: 'Bye', status: 'Scheduled', fixtureId: 'malformed-bye' });
 assert(!finals.remaining(byeSection).some(row => row.fixtureId === 'malformed-bye'));

@@ -1,7 +1,6 @@
 (function () {
   'use strict';
 
-  const storageKey = 'brta-scoreline-vault';
   const normal = value => String(value || '').replace(/[–−]/g, '-').replace(/\s+/g, ' ').trim();
   let portal, overlay, archive, taps, query = '', revision = 0;
   const canonical = value => {
@@ -136,9 +135,8 @@
 
   function unlock(element) {
     query = canonical(normal(element.textContent).split(" ")[0]);
-    const first = localStorage.getItem(storageKey) !== '1';
-    localStorage.setItem(storageKey, '1');
     if (!first || matchMedia('(prefers-reduced-motion: reduce)').matches || !window.BRTAVaultTransition) return open();
+    if (!window.BRTAVaultTransition) return open();
     if (portal) return;
     portal = true;
     BRTAVaultTransition.play(element, () => {
@@ -156,14 +154,6 @@
       if (taps.count === 5) { taps = null; unlock(element); }
     } else taps = null;
     if (event.target.closest('[data-scoreline-close]')) close('#scorelineVaultOverlay');
-    if (event.target.closest('[data-scoreline-vault-open]')) open();
   });
 
-  const settings = openSettings;
-  openSettings = function () {
-    settings();
-    if (localStorage.getItem(storageKey) === '1') $('#settingsContent').insertAdjacentHTML('beforeend',
-      '<button type="button" class="button secondary" data-scoreline-vault-open>Scoreline Vault</button>');
-  };
-  $('#settingsBtn').onclick = openSettings;
 })();

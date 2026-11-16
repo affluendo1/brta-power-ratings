@@ -16,7 +16,14 @@ class PlayerSearchTests(unittest.TestCase):
                 ('Álex Lee', 'Club 1', saturday), ('Alex Lee', 'Other Club', saturday)]
         self.assertEqual(link(rows), [[0, 1, 2]])
         rows[1] = ('Alex Lee', 'Club 2', {date(2026, 8, 2)})
+        self.assertEqual(link(rows), [[0, 2]])
+
+    def test_reviewed_alias_preserves_transfer_and_spelling_change(self):
+        rows = [('Alex Lee', 'Club Blue', {date(2026, 8, 2)}),
+                ('Alexander Li', 'Other Club', {date(2026, 10, 4)})]
         self.assertEqual(link(rows), [])
+        aliases = {('alex lee', 'club'): 'example', ('alexander li', 'other club'): 'example'}
+        self.assertEqual(link(rows, aliases), [[0, 1]])
 
     def test_forfeit_does_not_create_a_same_day_conflict(self):
         fixture = {'home': 'Club', 'away': 'Other Club', 'rubbers': [

@@ -4,7 +4,8 @@ from __future__ import annotations
 import json
 import re
 from pathlib import Path
-from player_identity import appearances, link
+from hashlib import blake2s
+from player_identity import appearances, club_key, link, normalized
 
 INDEX_PATH = Path('data/archive/player-search.json')
 
@@ -71,7 +72,20 @@ def build_player_search(catalog: dict, root: Path = Path('.')) -> dict:
                 for team in sorted(teams) or ['']:
                     entries.append([name_ids[name], section_id, team])
                     occurrences.append((name, team, played.get((name, team), set())))
-    for identity, group in enumerate(link(occurrences), 1):
+    alias_path = root / 'web/models/player-identity-aliases.json'
+    aliases = {}
+    if alias_path.is_file():
+        for identity, names in json.loads(alias_path.read_text(encoding='utf-8')).items():
+            for name, club in names:
+                aliases[normalized(name), club_key(club)] = identity
+    for group in link(occurrences, aliases):
+        def appearance_key(entry):
+            name, team, days = occurrences[entry]
+            section = sections[entries[entry][1]]
+            return min(days), normalized(name), club_key(team), section['seasonKey'], section['sectionCode'], team
+
+        anchor = min(appearance_key(entry) for entry in group)
+        identity = blake2s('|'.join(map(str, anchor)).encode(), digest_size=5).hexdigest()
         for entry in group:
             entries[entry].append(identity)
     return {'version': 1, 'players': names, 'sections': sections, 'entries': entries,

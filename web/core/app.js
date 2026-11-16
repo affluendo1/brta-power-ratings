@@ -330,23 +330,21 @@ async function ensurePlayerSearchIndex(){
 function renderHistoryPlayerSearch(){
   const query=$('#search').value.trim();
   $('#ratingsTitle').textContent='All history · Player search';
-  $('#ratingsDesc').textContent='Find players across every published Saturday and Sunday AM season, including the current season.';
+  $('#ratingsDesc').textContent='Find players across all published BRTA competitions and seasons, including the current season.';
   $('#ratingsHint').textContent='Each row is a section appearance. Matching history labels mark likely links based on name, club and dates played.';
   $('#teamFilter').disabled=true;$('#teamFilter').value='';renderBandInfo({bounds:[]});
   $('#ratingHead').innerHTML='<tr><th>Player</th><th>Team</th><th>Season</th><th>Competition</th><th>Section</th></tr>';
   const message=text=>{$('#ratingBody').innerHTML='<tr><td colspan="5">'+text+'</td></tr>'};
   if(query!==historySearchQuery){historySearchQuery=query;historySearchLimit=100}
-  if(!query){message('Type a player name to search all Saturday and Sunday AM history.');return}
+  if(!query){message('Type a player name to search all published BRTA history.');return}
   if(playerSearchError){message('Could not load history search. <button type="button" class="button secondary" data-history-search-retry>Try again</button>');return}
-  if(!playerSearchIndex){message('Loading the Saturday and Sunday player index…');ensurePlayerSearchIndex();return}
+  if(!playerSearchIndex){message('Loading the BRTA player index…');ensurePlayerSearchIndex();return}
   const rows=BRTAPlayerSearch.find(playerSearchIndex,query),visible=rows.slice(0,historySearchLimit);
-  $('#ratingsDesc').textContent=rows.length+' appearance'+(rows.length===1?'':'s')+' found across '+playerSearchIndex.sections.length+' Saturday and Sunday sections.';
+  $('#ratingsDesc').textContent=rows.length+' appearance'+(rows.length===1?'':'s')+' found across '+playerSearchIndex.sections.length+' published sections.';
   const missing=playerSearchIndex.unavailableSections?.length||0;
   if(missing)$('#ratingsHint').textContent+=' '+missing+' sections have not yet been published and could not be searched.';
-  if(!rows.length){message('No player found in the published Saturday and Sunday history. Try a surname or part of the name.');return}
-  const histories=new Map();
-  for(const row of rows)if(row.identity&&!histories.has(row.identity))histories.set(row.identity,histories.size+1);
-  $('#ratingBody').innerHTML=visible.map(row=>'<tr><td>'+globalPersonButton(row)+(row.identity?' <small>History '+histories.get(row.identity)+'</small>':'')+'</td><td>'+teamName(row.team)+'</td><td>'+esc(row.seasonOptionLabel||row.seasonLabel)+(row.isCurrent?' <small>Current</small>':'')+'</td><td>'+esc(competitionLabel(row.competitionCode))+'</td><td>'+esc(row.sectionLabel)+'</td></tr>').join('')+
+  if(!rows.length){message('No player found in the published BRTA history. Try a surname or part of the name.');return}
+  $('#ratingBody').innerHTML=visible.map(row=>'<tr><td>'+globalPersonButton(row)+(row.identity?' <small title="Estimated match based on published records">Likely history · '+esc(row.identity)+'</small>':'')+'</td><td>'+teamName(row.team)+'</td><td>'+esc(row.seasonOptionLabel||row.seasonLabel)+(row.isCurrent?' <small>Current</small>':'')+'</td><td>'+esc(competitionLabel(row.competitionCode))+'</td><td>'+esc(row.sectionLabel)+'</td></tr>').join('')+
     (rows.length>visible.length?'<tr><td colspan="5"><button class="button secondary" type="button" data-history-search-more>Show next 100</button><span> Showing '+visible.length+' of '+rows.length+' results</span></td></tr>':'');
 }
 function renderGlobalRatings(){
@@ -450,8 +448,12 @@ function roundNumberHeading(number,short=false){
   return roundHeading(group||{round:number},short);
 }
 function roundDate(value){return value||'Date not published by TROLS'}
-function byeCard(f){return'<div class="fixture-bye"><small>BYE</small><b>'+teamName(f.home==='Bye'?f.away:f.home)+'</b><span>No match this round</span></div>'}
-function renderResults(){const rounds=D.results||[];if(!rounds.length){$('#resultsList').innerHTML='<div class="notice">No published results yet.</div>';return}$('#resultsList').innerHTML=rounds.map(round=>{const draw=(D.upcomingFixtures||[]).find(r=>r.round===round.round),byes=(draw?.fixtures||[]).filter(f=>f.status==='Bye');return'<section class="result-round"><header class="result-round-head"><h2>'+esc(roundHeading(round))+'</h2><span>'+esc(roundDate(round.date))+'</span></header><div class="result-round-matches">'+round.fixtures.map(matchCard).join('')+byes.map(byeCard).join('')+'</div></section>'}).join('')}
+function customFixtureCard(fixture, card){
+  if(!D.meta?.is_custom)return card;
+  return '<div class="custom-fixture-card"><button type="button" class="button secondary custom-fixture-edit" data-edit-custom-fixture="'+esc(fixture.fixtureId)+'">Edit fixture</button>'+card+'</div>';
+}
+function byeCard(f){return'<div class="fixture-bye"><small>BYE</small><b>'+teamName(f.home==='Bye'?f.away:f.home)+'</b></div>'}
+function renderResults(){const rounds=D.results||[];if(!rounds.length){$('#resultsList').innerHTML='<div class="notice">No published results yet.</div>';return}$('#resultsList').innerHTML=rounds.map(round=>{const draw=(D.upcomingFixtures||[]).find(r=>r.round===round.round),byes=(draw?.fixtures||[]).filter(f=>f.status==='Bye');return'<section class="result-round"><header class="result-round-head"><h2>'+esc(roundHeading(round))+'</h2><span>'+esc(roundDate(round.date))+'</span></header><div class="result-round-matches">'+round.fixtures.map(match=>customFixtureCard(match,matchCard(match))).join('')+byes.map(match=>customFixtureCard(match,byeCard(match))).join('')+'</div></section>'}).join('')}
 function rubberCode(r){const n=String(r.position||'').match(/\d+/)?.[0]||'';return(r.type==='Doubles'?'D':'S')+n}
 function doublesPlayerLabel(name){if(name==='No Player')return 'No Player';if(window.BRTAPlayerDisplay?.isUnknown(name)||/^Unidentified player(?:\s|\()/i.test(name))return 'Unidentified player';const parts=String(name).trim().split(/\s+/);return D.meta?.is_custom&&D.meta.doublesSurnames&&parts.length>1?parts.slice(1).join(' '):parts[0]}
 function compactDoublesName(name){return String(name).split('/').map(doublesPlayerLabel).join(' / ')}
@@ -475,7 +477,7 @@ function resultDetailHTML(match,contextPlayer=null){
   const complete=match.status==='Completed',scored=match.homePoints!=null&&match.awayPoints!=null,winner=matchWinner(match),result=complete?match.homeRubbers+'–'+match.awayRubbers:'—',outcome=winner?esc(winner)+(complete?(match.simulated?' wins the team tie':' won the team tie'):' received the team points'):(match.status==='Wash Out'?'The fixture was recorded as a washout':'Team tie level'),pairNames=(name,flags=[])=>String(name).split('/').map((p,i)=>({full:p.trim(),flag:flags[i]})).sort((a,b)=>{const side=String(name)===String(match.rubbers?.find(r=>r.type==='Doubles'&&r.home===name)?.home)?'home':'away',team=match[side],names=lab8OrderedNames(name,team);return names.indexOf(a.full)-names.indexOf(b.full)}).map(({full,flag})=>{return resultPerson(full,doublesPlayerLabel(full))+(flag?'<i class="emergency-marker" title="Emergency player recorded by TROLS">X</i>':'')}).join(' <button type="button" class="pair-sep person" data-eight-pair="'+esc(name)+'" data-eight-round="'+(lab8Context?.round??'')+'" aria-label="Open pair lab">/</button> ');
   const totals=(h,a)=>{const known=h!=null&&a!=null&&Number.isFinite(Number(h))&&Number.isFinite(Number(a)),tone=known&&Number(h)!==Number(a)?(Number(h)>Number(a)?['win','loss']:['loss','win']):['',''];return '<b><span class="'+tone[0]+'">'+esc(h??'—')+'</span><span class="metric-separator">–</span><span class="'+tone[1]+'">'+esc(a??'—')+'</span></b>'};
   let metrics=complete?'<div class="result-metrics"><div><span>Rubbers</span>'+totals(match.homeRubbers,match.awayRubbers)+'</div><div><span>Games</span>'+totals(match.homeGames,match.awayGames)+'</div><div class="result-points"><span>Points</span>'+totals(match.homePoints,match.awayPoints)+'</div></div>':scored?'<div class="result-metrics"><div class="result-points"><span>Team points</span>'+totals(match.homePoints,match.awayPoints)+'</div><div><span>Games</span><b>Not recorded</b></div></div>':'';
-  let head='<div class="result-detail-head"><span>'+esc(roundHeading(match))+' · '+esc(roundDate(match.date))+'</span><h2>'+teamName(match.home)+' <b data-scoreline>'+result+'</b> '+teamName(match.away)+'</h2><p>'+outcome+(complete?'':' · '+esc(match.status))+'</p></div>';
+  let head='<div class="result-detail-head"><span>'+esc(roundHeading(match))+' · '+esc(roundDate(match.date))+'</span><h2>'+clubTeamButton(match.home)+' <b data-scoreline>'+result+'</b> '+clubTeamButton(match.away)+'</h2><p>'+outcome+(complete?'':' · '+esc(match.status))+'</p></div>';
   let rows=(match.rubbers||[]).slice().sort((a,b)=>disciplineCompare(a,b)||(a.order??0)-(b.order??0)).map(r=>{const marker=emergency=>emergency?'<i class="emergency-marker" title="Emergency player recorded by TROLS">X</i>':'',home=(r.type==='Doubles'?pairNames(r.home,r.homeEmergencies||[]):resultPerson(r.home)+marker(r.homeEmergency)),away=(r.type==='Doubles'?pairNames(r.away,r.awayEmergencies||[]):resultPerson(r.away)+marker(r.awayEmergency));const side=rubberWinnerSide(r),hWon=side==='home',aWon=side==='away',decided=!!side;
     const homeTone=decided?(hWon?'side-won':'side-lost'):'side-neutral',awayTone=decided?(aWon?'side-won':'side-lost'):'side-neutral';
     return '<tr class="rubber-row rubber-row-854">'
@@ -490,13 +492,13 @@ function openMatch(id,sourcePlayer=null){const match=findMatch(id);if(match){win
 function renderFixtureRounds(){
   const rounds=D.upcomingFixtures||[];
   $('#fixturesList').innerHTML=rounds.length?rounds.map(r=>'<section class="fixture-round"><div class="fixture-round-head"><h2>'+esc(roundHeading(r))+'</h2><div class="fixture-round-actions"><span>'+esc(roundDate(r.date))+'</span>'+(r.fixtures.some(f=>f.status==='Scheduled'&&!findFixtureResult(f,r.round))?'<button type="button" class="button secondary" data-simulate-round="'+esc(r.round)+'">Simulate round</button>':'')+'</div></div><div class="fixture-list">'+r.fixtures.map(f=>{
-    if(f.status==='Bye')return byeCard(f);
+    if(f.status==='Bye')return customFixtureCard(f,byeCard(f));
     const complete=f.status==='Completed',scored=f.homePoints!=null&&f.awayPoints!=null;
     const middle=complete?f.homeRubbers+'–'+f.awayRubbers:(f.status==='Scheduled'?'v':f.status==='Wash Out'?'Washout':f.status==='Forfeited To'||f.status==='Forfeited By'?'Forfeit':f.status);
     const sub=complete?(f.homePoints+'–'+f.awayPoints+' pts · '+f.homeGames+'–'+f.awayGames+' games'):scored?(f.homePoints+'–'+f.awayPoints+' pts'):(f.status==='Scheduled'?'Scheduled':f.status);
     const result=findFixtureResult(f,r.round),predict=f.status==='Scheduled'&&!result;
     const alternate=f.venue&&f.venue.trim().toLowerCase()!==String(f.home||'').trim().toLowerCase();
-    return'<button class="fixture-match '+(complete?'complete':'')+'" '+(predict?'data-predict-id':'data-fixture-result-id')+'="'+esc(f.fixtureId)+'"><span>'+teamName(f.home)+'</span><b>'+esc(middle)+'</b><span>'+teamName(f.away)+'</span><small>'+esc(sub)+' · '+(predict?'Prediction centre':'View result')+(alternate?' · Venue: '+esc(f.venue):'')+'</small></button>'
+    return customFixtureCard(f,'<button class="fixture-match '+(complete?'complete':'')+'" '+(predict?'data-predict-id':'data-fixture-result-id')+'="'+esc(f.fixtureId)+'"><span>'+teamName(f.home)+'</span><b>'+esc(middle)+'</b><span>'+teamName(f.away)+'</span><small>'+esc(sub)+' · '+(predict?'Prediction centre':'View result')+(alternate?' · Venue: '+esc(f.venue):'')+'</small></button>')
   }).join('')+'</div>'+(roundSimulations[r.round]||'')+'</section>').join(''):'<div class="notice">No official fixtures are currently published.</div>'
 }
 
@@ -977,8 +979,9 @@ document.addEventListener('click',e=>{
   const scoreEstimate=e.target.closest('[data-prediction-estimate]');if(scoreEstimate&&selectedPrediction){const label=scoreEstimate.dataset.predictionEstimate;selectedPrediction.scoreEstimates=selectedPrediction.scoreEstimates||{};selectedPrediction.scoreEstimates[label]=!selectedPrediction.scoreEstimates[label];refreshPrediction();$$('[data-prediction-estimate]').find(b=>b.dataset.predictionEstimate===label)?.focus();return}
   if(e.target.closest('[data-run-simulation]')){runPredictionSimulation();return}
   const autoOrder=e.target.closest('[data-auto-order]');if(autoOrder){const side=autoOrder.dataset.autoOrder,match=currentPredictionMatch();if(match){selectedPrediction[side].manualOrder=false;selectedPrediction.simulation=null;refreshPrediction()}return}
+  const editFixture=e.target.closest('[data-edit-custom-fixture]');if(editFixture){window.CustomSections?.openFixture(editFixture.dataset.editCustomFixture);return}
   const match=e.target.closest('[data-match-id]');if(match){const sourcePlayer=!$('#profileOverlay').classList.contains('hidden')?activeProfilePlayer:null;close('#roundOverlay');openMatch(match.dataset.matchId,sourcePlayer);return}
-  const clubTeam=e.target.closest('[data-club-team]');if(clubTeam){e.stopPropagation();openClubForTeam(clubTeam.dataset.clubTeam);return}
+  const clubTeam=e.target.closest('[data-club-team]');if(clubTeam){e.stopPropagation();if(clubTeam.closest('#resultOverlay'))close('#resultOverlay');openClubForTeam(clubTeam.dataset.clubTeam);return}
   const rival=e.target.closest('[data-club-rival]');if(rival){activeClubZone.opponent=rival.dataset.clubRival;activeClubZone.resultLimit=16;renderClubZone();return}
   if(e.target.closest('#clubResultMore')){activeClubZone.resultLimit=(activeClubZone.resultLimit||16)+16;renderClubZone();return}
   if(e.target.dataset.close)close('#profileOverlay');if(e.target.dataset.searchOptionsClose)close('#searchOptionsOverlay');if(e.target.dataset.rivalryClose)close('#rivalryOverlay');if(e.target.dataset.clubPickerClose)close('#clubPickerOverlay');if(e.target.dataset.clubZoneClose)close('#clubZoneOverlay');if(e.target.dataset.roundClose)close('#roundOverlay');if(e.target.dataset.settingsClose)close('#settingsOverlay');if(e.target.dataset.resultClose)close('#resultOverlay');if(e.target.dataset.predictionClose)close('#predictionOverlay');if(e.target.dataset.lineupHistoryClose)close('#lineupHistoryOverlay');if(e.target.dataset.sosClose)close('#sosOverlay');

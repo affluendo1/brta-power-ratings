@@ -1,6 +1,7 @@
 """Conservative links between published player appearances."""
 
 from collections import defaultdict
+from itertools import groupby
 from datetime import datetime
 from functools import lru_cache
 import re
@@ -55,44 +56,58 @@ def appearances(payload):
     return played
 
 
-def link(occurrences):
-    """Return groups of entry indexes. A date clash blocks the entire merge."""
+def link(occurrences, aliases=None):
+    """Merge compatible histories, leaving equally plausible conflicts unresolved.
+
+    Optional reviewed aliases map (normalized name, club key) to a common
+    identity key for known spelling changes and club transfers.
+    """
+    aliases = aliases or {}
     by_name = defaultdict(list)
     for index, (name, team, days) in enumerate(occurrences):
-        club = club_key(team)
-        if len(normalized(name).split()) >= 2 and club and days:
-            by_name[normalized(name), club].append(index)
+        name, club = normalized(name), club_key(team)
+        if len(name.split()) >= 2 and club and days:
+            key = (name, club)
+            by_name[aliases.get(key, key)].append(index)
     groups = []
     for indexes in by_name.values():
-        days = {i: occurrences[i][2] for i in indexes}
-        neighbors = defaultdict(set)
+        dates = {i: set(occurrences[i][2]) for i in indexes}
+        members = {i: [i] for i in indexes}
+        edges = []
         for offset, i in enumerate(indexes):
             for j in indexes[offset + 1:]:
-                if days[i] & days[j]:
+                if dates[i] & dates[j]:
                     continue
-                gap = max((min(days[i]) - max(days[j])).days,
-                          (min(days[j]) - max(days[i])).days, 0)
+                gap = max((min(dates[i]) - max(dates[j])).days,
+                          (min(dates[j]) - max(dates[i])).days, 0)
                 if gap <= 550:
-                    neighbors[i].add(j)
-                    neighbors[j].add(i)
-        seen = set()
-        for i in indexes:
-            if i in seen:
-                continue
-            component, queue = [], [i]
-            seen.add(i)
-            while queue:
-                j = queue.pop()
-                component.append(j)
-                for k in sorted(neighbors[j] - seen):
-                    seen.add(k)
-                    queue.append(k)
-            occupied = set()
-            for j in component:
-                if occupied & days[j]:
-                    break
-                occupied.update(days[j])
-            else:
-                if len(component) > 1:
-                    groups.append(sorted(component))
+                    edges.append((gap, i, j))
+        owner = {i: i for i in indexes}
+        for _, batch in groupby(sorted(edges), key=lambda edge: edge[0]):
+            candidates = defaultdict(set)
+            for _, i, j in batch:
+                a, b = owner[i], owner[j]
+                if a != b and not dates[a] & dates[b]:
+                    candidates[a].add(b)
+                    candidates[b].add(a)
+            # If two equally close neighbors clash, leave the ambiguous bridge
+            # open. Independent links can still survive elsewhere in the group.
+            blocked = set()
+            for a, neighbors in candidates.items():
+                ordered = sorted(neighbors)
+                if any(dates[b] & dates[c] for pos, b in enumerate(ordered)
+                       for c in ordered[pos + 1:]):
+                    blocked.add(a)
+            for i, neighbors in candidates.items():
+                for j in sorted(neighbors):
+                    if i in blocked or j in blocked:
+                        continue
+                    a, b = owner[i], owner[j]
+                    if a == b or dates[a] & dates[b]:
+                        continue
+                    dates[a].update(dates.pop(b))
+                    for entry in members[b]:
+                        owner[entry] = a
+                    members[a].extend(members.pop(b))
+        groups.extend(sorted(group) for group in members.values() if len(group) > 1)
     return sorted(groups)

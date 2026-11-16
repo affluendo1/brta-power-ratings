@@ -2,6 +2,20 @@
 // Retrospective entries use source-commit timestamps; sourceCommit records their provenance.
 window.BRTA_RELEASES = Object.freeze([
   {
+    "version": "9.1.1.3",
+    "size": "tiny",
+    "title": "Fixtures, finals and player history",
+    "committedAt": "2026-11-16T23:00:00+11:00",
+    "changes": [
+      "Edit custom fixtures directly from their cards. Team names stay legible in standings and open club profiles from published scorecards.",
+      "Finals Race gives win and draw estimates across eligible lineup pairings and focuses on fixtures that affect qualification.",
+      "Latest Round adds player and team highlights with pre-round outcome odds where rating evidence is available.",
+      "Fixture Outlook loads the venue and map together. Timed calendar exports reserve an approximate two-hour block.",
+      "Player Lab compares singles and individual doubles on one graph. Player search shows likely history references across published competitions.",
+      "Refined rating bands, Ascension ratings, the settings button, archive door, vault entrance and changelog."
+    ]
+  },
+  {
     "version": "9.1.1.2",
     "size": "tiny",
     "title": "Racquet Club",

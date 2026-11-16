@@ -3,7 +3,7 @@
   'use strict';
   const root = document.documentElement;
   const archiveKey = 'brta-secret-archive', rewardKey = 'brta-neon-plus-unlocked';
-  const zoomKey = 'brta-secret-archive-fit', colorKey = 'brta-neon-plus-color';
+  const colorKey = 'brta-neon-plus-color';
   const themeId = 'neon-plus', defaultColor = '#3bff72';
   const codes = ['ModelCongress', 'CongressOfModels', 'MelodyParliament'];
   const code = codes[Math.floor(Math.random() * codes.length)];
@@ -14,22 +14,15 @@
   door.className = 'archive-secret-door';
   door.hidden = true;
   door.setAttribute('aria-label', 'Open a distant door');
-  door.innerHTML = '<svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M7 28h18M9 28V5h14v23M12 28V9l8 2v17"/><path d="M17 19h1"/></svg>';
+  door.innerHTML = '<svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 29h22M7 29V3h18v26" stroke-width="2"/><path d="M10 29V6h12v23" fill="#74472e"/><path d="M12 8h8v8h-8zM12 20h8v6h-8z" stroke="#d9a871"/><circle cx="19.5" cy="18" r="1" fill="#ffe0a1" stroke="none"/></svg>';
   document.body.append(door);
 
-  let fit = sessionStorage.getItem(zoomKey) === '1';
   function syncZoom() {
-    // Desktop browser zoom changes the CSS viewport, while the browser
-    // window width stays in screen units. The page can compensate its own scale.
     const ratio = innerWidth && outerWidth > 0 ? outerWidth / innerWidth : 1;
-    if (fit && (!auxiliaryEnabled() || ratio >= .94)) {
-      fit = false;
-      sessionStorage.removeItem(zoomKey);
-    }
-    root.style.setProperty('--archive-zoom', fit ? String(Math.min(5, 1 / ratio)) : '1');
-    door.hidden = !auxiliaryEnabled() || fit || ratio > .56;
+    door.hidden = !auxiliaryEnabled() || ratio > .56;
   }
   window.addEventListener('resize', syncZoom);
+  window.visualViewport?.addEventListener('resize', syncZoom);
   syncZoom();
 
   function overlay(id, title, content) {
@@ -62,9 +55,6 @@
   let menu, clue;
   door.addEventListener('click', () => {
     if (!auxiliaryEnabled()) return;
-    fit = true;
-    sessionStorage.setItem(zoomKey, '1');
-    syncZoom();
     if (!menu) {
       menu = overlay('archiveSecretMenu', 'The Archive',
         '<label class="archive-secret-check"><input type="checkbox"> Enable The Archive</label>');

@@ -219,11 +219,9 @@
 .race-path-round strong { color:var(--primary); white-space:nowrap }
 .race-path details { margin-top:8px }
 @media(prefers-reduced-motion:no-preference) {
-  .scoreline-arriving .overlay-backdrop { animation:scoreline-backdrop .4s ease-out }
-  .scoreline-arriving .scoreline-vault-sheet { animation:scoreline-arrive .4s ease-out both }
+  .scoreline-arriving .overlay-backdrop { animation:chamber-appear .55s ease-out both }
+  .scoreline-arriving .scoreline-vault-sheet { animation:chamber-appear .55s ease-out both }
 }
-@keyframes scoreline-backdrop { from { background:#000 } }
-@keyframes scoreline-arrive { from { translate:0 32dvh; opacity:0 } }
 
 @supports (background-clip: text) {
   .profile-head h2.player-lab-rainbow {
@@ -242,3 +240,32 @@ html[data-animation="off"] .profile-head h2.player-lab-rainbow { animation: none
 @media (forced-colors: active) {
   .profile-head h2.player-lab-rainbow { background: none; color: CanvasText; }
 }
+
+.custom-fixture-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  align-content: start;
+  gap: 6px;
+  min-width: 0;
+}
+.custom-fixture-edit { justify-self: end; font-size: .82rem; }
+.custom-fixture-card > :is(.fixture-match, .result-match, .latest-fixture) { width: 100%; }
+#page-standings .standings-team { min-width: 9rem; text-align: left; color: var(--text-color); overflow-wrap: anywhere; }
+#page-standings tbody .standings-team { position: static; background: inherit; text-transform: none; letter-spacing: normal; }
+#page-standings .standings-team .team-colour { color: inherit; }
+.result-detail-head .club-link { display: inline; }
+#settingsBtn {
+  border-color: var(--primary);
+  background: color-mix(in srgb, var(--primary) 8%, var(--surface-raised));
+  box-shadow: 0 2px 8px #00000010;
+}
+#settingsBtn:hover, #settingsBtn:focus-visible { background: color-mix(in srgb, var(--primary) 16%, var(--surface-raised)); }
+.lab8-graph .lab-compare-0 { --series-color: var(--primary); }
+.lab8-graph .lab-compare-1 { --series-color: #bf7844; }
+.lab8-graph path[class^="lab-compare-"] { stroke: var(--series-color); }
+.lab8-graph path.lab-compare-1 { stroke-dasharray: 4 2; }
+.lab8-graph circle[class^="lab-compare-"] { fill: var(--series-color); }
+.lab-compare-key { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: .85rem; }
+.lab-compare-key span { border-inline-start: 3px solid var(--series-color); padding-inline-start: 6px; }
+.latest-highlights { grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr)); }
+.latest-chance { color: var(--muted-color); font-size: .8rem; text-align: left; }

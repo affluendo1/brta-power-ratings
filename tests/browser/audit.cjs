@@ -31,12 +31,27 @@ const esc=()=>w.dispatchEvent(new w.KeyboardEvent('keydown',{key:'Escape',bubble
 click('#settingsBtn');await tick();click('#installBtn');await tick();esc();await tick();assert(w.document.querySelector('#installOverlay').classList.contains('hidden'));assert(!w.document.querySelector('#settingsOverlay').classList.contains('hidden'));assert.equal(w.document.activeElement.id,'installBtn');console.log('Install Escape preserves Settings and restores focus');
 click('[data-layout-open="methodology"]');await tick();esc();await tick();assert(w.document.querySelector('#layoutOverlay').classList.contains('hidden'));assert(!w.document.querySelector('#settingsOverlay').classList.contains('hidden'));assert(!w.document.querySelector('#settingsOverlay').inert);console.log('Methodology Escape restores interactive Settings');
 click('[data-studio="theme"]');await tick();esc();await tick();assert(w.document.querySelector('#themeStudioOverlay').classList.contains('hidden'));assert(!w.document.querySelector('#settingsOverlay').classList.contains('hidden'));console.log('Theme creator Escape preserves Settings');
-click('[data-changelog-open]');await tick();esc();await tick();assert(w.document.querySelector('#changelogOverlay').classList.contains('hidden'));assert(!w.document.querySelector('#settingsOverlay').classList.contains('hidden'));console.log('Changelog Escape restores Settings');esc();await tick();
-click('#roundBtn');await tick();click('[data-82-result]');await tick();assert(!w.document.querySelector('#resultOverlay').classList.contains('hidden'));esc();await tick();assert(w.document.querySelector('#resultOverlay').classList.contains('hidden'));assert(w.document.querySelector('.rounds821-overlay'));esc();await tick();assert(!w.document.querySelector('.release82-overlay'));console.log('Rounds result Escape preserves parent then dismisses cleanly');
+click('[data-changelog-open]');await tick();assert.equal(w.document.querySelector('.release-heading h3').textContent,'9.0');esc();await tick();assert(w.document.querySelector('#changelogOverlay').classList.contains('hidden'));assert(!w.document.querySelector('#settingsOverlay').classList.contains('hidden'));console.log('Changelog Escape restores Settings');esc();await tick();
+click('#roundBtn');await tick();assert(w.document.querySelector('.latest-highlights').textContent.includes('Top team performance'));click('[data-82-result]');await tick();assert(!w.document.querySelector('#resultOverlay').classList.contains('hidden'));assert.equal(w.document.querySelectorAll('.result-detail-head [data-club-team]').length,2);esc();await tick();assert(w.document.querySelector('#resultOverlay').classList.contains('hidden'));assert(w.document.querySelector('.rounds821-overlay'));esc();await tick();assert(!w.document.querySelector('.release82-overlay'));console.log('Rounds result Escape preserves parent then dismisses cleanly');
 vm.runInContext("BRTA82.modal('Rounds test','',true).classList.add('rounds821-overlay');BRTA82.modal('First child','');BRTA82.modal('Replacement child','')",ctx);await tick();assert.equal(w.document.querySelectorAll('.release82-overlay').length,2);esc();await tick();assert.equal(w.document.querySelectorAll('.release82-overlay').length,1);esc();await tick();assert.equal(w.document.querySelectorAll('.release82-overlay').length,0);console.log('Replacing a shared child retains exactly one Rounds parent');
 click('.main-tab[data-page="ratings"]');click('#ratingBody [data-player]');await tick();assert(!w.document.querySelector('#profileOverlay').classList.contains('hidden'));vm.runInContext("openProfile(D.singles[1].player)",ctx);await tick();assert.equal(w.document.querySelector('#profileOverlay .profile-sheet').getAttribute('aria-label'),w.document.querySelector('#profileContent h2').textContent);click('[data-eight-split]');await tick();esc();await tick();assert(w.document.querySelector('#lab8Overlay').classList.contains('hidden'));assert(!w.document.querySelector('#profileOverlay').classList.contains('hidden'));esc();await tick();console.log('Player Lab drilldown Escape preserves lab');
 
 const singleGraph=vm.runInContext("lab8Graph('singles',Object.keys(D.ratingHistory.players)[0],'Singles',1)",ctx);assert(singleGraph.includes('<circle '));console.log('Single-observation chart contains a visible point');
+vm.runInContext("openProfile(D.singles.find(row=>D.doublesIndividuals.some(other=>other.player===row.player)).player)",ctx);
+click('[data-eight-graph="overall"][data-graph-mode="compare"]');
+assert(w.document.querySelector('.lab8-overall .lab-compare-key').textContent.includes('Individual doubles'));
+esc();await tick();
+const custom = require('../test_custom_sections').sample();
+w.CustomSections.openBackup({format:'brta-custom-sections',version:1,sections:[custom]});
+vm.runInContext("close('#customAdminOverlay')",ctx);
+const original = vm.runInContext('D.meta.section_code',ctx);
+await vm.runInContext("loadSection('local-test')",ctx);
+assert.deepEqual([...w.document.querySelectorAll('#standingsBody .standings-team')].map(node=>node.textContent),['A','B']);
+click('[data-edit-custom-fixture="match-3"]');
+assert.equal(w.document.querySelector('.ca-fixture-tabs > .primary').dataset.id,'match-3');
+vm.runInContext("close('#customAdminOverlay')",ctx);
+await vm.runInContext('loadSection('+JSON.stringify(original)+')',ctx);
+console.log('Custom fixture shortcut, standings team names, and dual-series lab chart passed');
 w.localStorage.setItem('brta-animations','off');
 let finishLoading;
 const pending=w.BRTAActivity.run('Preparing test',async task=>{

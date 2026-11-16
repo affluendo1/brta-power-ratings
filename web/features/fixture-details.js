@@ -35,7 +35,7 @@
       '<div><span>Date and time</span><b>' + esc([date, time].filter(Boolean).join(' · ') || 'Not published') +
       '</b></div><div><span>Playing venue</span><b>' + esc(venue) + '</b><small data-venue-side="fixture"></small></div></div>' +
       (fixture.status === 'Scheduled' && BRTAMatchday.iso(fixture.date)
-        ? '<p><button class="button secondary" type="button" data-fixture-calendar>Add to calendar (.ics)</button> <small>Apple Calendar, Outlook or Google Calendar</small></p>' : '') +
+        ? '<p><button class="button secondary" type="button" data-fixture-calendar>Add to calendar (.ics)</button> <small>'+ (time ? 'Reserves about 2 hours' : 'Saved as an all-day event') +'</small></p>' : '') +
       (window.BRTAFinalsRace?.hint(fixture) || '') + '</section>';
   }
 
@@ -44,54 +44,49 @@
     if (!target || D.meta.is_custom) return;
     const meta = D.meta;
     try {
-      const { network, directory } = await BRTAActivity.run('Loading fixture venue', async task => {
-        task.stage(30, 'Reading the club directory…');
-        return load();
-      }, { key: 'fixture-venue' });
-      if (!target.isConnected || target.closest('.overlay')?.classList.contains('hidden')) return;
-      function homeVenue(team) {
-        const club = directory.clubs.get(directory.resolve(team, meta, clubBaseName(team)));
-        return directory.venues.get(club?.main_venue_id);
-      }
-      const home = homeVenue(fixture.home);
-      const assignment = network.venue_assignments.find(row => row.fixture_id === fixture.fixtureId &&
-        row.source?.season_id === meta.season_id) || network.venue_assignments.find(row => row.scope === 'fixture' &&
-        row.source?.season_id === meta.season_id && row.source?.section_code === meta.section_code &&
-        String(row.round) === String(fixture.round) && row.home_team === fixture.home);
-      const venueKey = BRTAClubData.key(fixture.venue);
-      const isHome = venueKey && [fixture.home, clubBaseName(fixture.home)].some(name => BRTAClubData.key(name) === venueKey);
-      const location = directory.venues.get(assignment?.resolved_venue_id) ||
-        (isHome ? home : fixture.venue ? homeVenue(fixture.venue) : null);
-      const venueAddress = address(location);
-      if (venueAddress) calendarLocations.set(target, [fixture.venue, venueAddress].filter(Boolean).join(', '));
-      const locations = location ? [{ id: 'fixture', name: fixture.venue, venue: location }] : [];
-      const markers = locations.filter(item => BRTAClubMap.inside(points(item.venue))).map(item => ({
-        id: item.id, name: item.name, coordinates: points(item.venue), group: 'section'
-      }));
-      if (markers.length) {
-        target.insertAdjacentHTML('beforeend', '<section><h4>Venue map</h4><div class="fixture-logistics-map" aria-label="Fixture venue map"></div><small role="status"></small></section>');
-        const mapSection = target.lastElementChild;
-        const mount = async () => {
+      await BRTAActivity.run('Loading fixture venue and map', async task => {
+        task.stage(25, 'Reading the club directory…');
+        const { network, directory } = await load();
+        if (!target.isConnected || target.closest('.overlay')?.classList.contains('hidden')) return;
+        function homeVenue(team) {
+          const club = directory.clubs.get(directory.resolve(team, meta, clubBaseName(team)));
+          return directory.venues.get(club?.main_venue_id);
+        }
+        const home = homeVenue(fixture.home);
+        const assignment = network.venue_assignments.find(row => row.fixture_id === fixture.fixtureId &&
+          row.source?.season_id === meta.season_id) || network.venue_assignments.find(row => row.scope === 'fixture' &&
+          row.source?.season_id === meta.season_id && row.source?.section_code === meta.section_code &&
+          String(row.round) === String(fixture.round) && row.home_team === fixture.home);
+        const venueKey = BRTAClubData.key(fixture.venue);
+        const isHome = venueKey && [fixture.home, clubBaseName(fixture.home)].some(name => BRTAClubData.key(name) === venueKey);
+        const location = directory.venues.get(assignment?.resolved_venue_id) ||
+          (isHome ? home : fixture.venue ? homeVenue(fixture.venue) : null);
+        const venueAddress = address(location);
+        if (venueAddress) calendarLocations.set(target, [fixture.venue, venueAddress].filter(Boolean).join(', '));
+        const locations = location ? [{ id: 'fixture', name: fixture.venue, venue: location }] : [];
+        const markers = locations.filter(item => BRTAClubMap.inside(points(item.venue))).map(item => ({
+          id: item.id, name: item.name, coordinates: points(item.venue), group: 'section'
+        }));
+        target.querySelector('[data-venue-side="fixture"]').innerHTML =
+          (venueAddress ? '<span>' + esc(venueAddress) + '</span>' : '') + directions('Directions', location);
+        if (markers.length) {
+          target.insertAdjacentHTML('beforeend', '<section><h4>Venue map</h4><div class="fixture-logistics-map" aria-label="Fixture venue map"></div><small role="status"></small></section>');
+          const mapSection = target.lastElementChild;
           const controller = new AbortController();
           maps.set(target, controller);
           const status = mapSection.querySelector('[role=status]');
           try {
-            await BRTAActivity.run('Loading venue map', async task => {
-              task.stage(35, 'Opening the map…');
-              const map = await BRTAClubMap.mountNetwork(mapSection.querySelector('.fixture-logistics-map'), markers, () => {}, {
+            task.stage(65, 'Opening the venue map…');
+            const map = await BRTAClubMap.mountNetwork(mapSection.querySelector('.fixture-logistics-map'), markers, () => {}, {
               signal: controller.signal, selectedId: 'fixture',
-              onTileError: () => { status.textContent = 'Map tiles are unavailable. The venue pins may still be visible.'; }
-              });
-              await map.ready;
-            }, { key: 'fixture-map' });
+              onTileError: () => { status.textContent = 'Map tiles are unavailable. The venue pin may still be visible.'; }
+            });
+            await map.ready;
           } catch (error) {
-            if (error.name !== 'AbortError') status.textContent = 'The map could not load. Use the club or venue map links above.';
+            if (error.name !== 'AbortError') status.textContent = 'The map could not load. Use the directions link above.';
           }
-        };
-        void mount();
-      }
-      target.querySelector('[data-venue-side="fixture"]').innerHTML =
-        (address(location) ? '<span>' + esc(address(location)) + '</span>' : '') + directions('Directions', location);
+        }
+      }, { key: 'fixture-venue' });
     } catch {
       for (const node of target.querySelectorAll('[data-venue-side]')) node.textContent = 'Location unavailable';
     }
