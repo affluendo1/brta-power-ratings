@@ -57,7 +57,18 @@ function roundAnalysis(round) {
   const scale = D.meta.ratingProbabilityScale || 450;
   const rules = D.meta.customRules || D.meta.competition_rules;
   const options = { format: D.format, greenBall: !!D.greenBall, custom: !!D.meta.is_custom, setWinsDecideTies: !!D.meta.competition_rules };
-  const players = [], teams = [], forecasts = new Map();
+  const players = [], teams = [], forecasts = new Map(), rareUpsets = [];
+  const priorBands = new Map();
+  function priorBand(view, name) {
+    if (prior == null) return '';
+    const lab = window.BRTALabModel;
+    if (!priorBands.has(view)) {
+      const rows = lab.rows(D, view, prior);
+      const bands = lab.performanceBands(D, view, rows, prior);
+      priorBands.set(view, new Map(rows.map(row => [view === 'pairs' ? lab.key(row.player) : row.player, bands.classForEntry(row)])));
+    }
+    return priorBands.get(view).get(view === 'pairs' ? lab.key(name) : name);
+  }
   for (const fixture of round.fixtures.filter(row => row.status === 'Completed')) {
     const rubbers = [];
     for (const rubber of fixture.rubbers || []) {
@@ -71,6 +82,11 @@ function roundAnalysis(round) {
       const item = { playerNames: true, winner: homeWon ? rubber.home : rubber.away, loser: homeWon ? rubber.away : rubber.home,
         score: homeWon ? rubber.score : BRTAScores.flip(rubber.score), margin: Math.abs(diff) };
       players.push(item);
+      const view = rubber.type === 'Doubles' ? 'pairs' : 'singles';
+      const hasBand = (name, band) => priorBand(view, name) === band ||
+        (view === 'pairs' && window.BRTALabModel.members(name).some(player => priorBand('doublesPlayers', player) === band));
+      if (hasBand(item.loser, 'b18')) rareUpsets.push({title:'Zenith upset', item});
+      if (hasBand(item.winner, 'b19')) rareUpsets.push({title:'Basement breakthrough', item});
       const isDoubles = rubber.type === 'Doubles';
       const home = power(rubber.home, isDoubles), away = power(rubber.away, isDoubles);
       if (home == null || away == null) continue;
@@ -104,7 +120,7 @@ function roundAnalysis(round) {
   }
   const best = (rows, getter) => rows.filter(row => Number.isFinite(getter(row)))
     .sort((a,b) => getter(b) - getter(a))[0];
-  previousAnalysis = { data: D, round: round.round, forecasts, top: best(players, row => row.performance),
+  previousAnalysis = { data: D, round: round.round, forecasts, rareUpsets, top: best(players, row => row.performance),
     upset: best(players, row => row.chance < .5 ? -row.chance : NaN),
     dominant: best(players, row => row.margin), closest: best(players, row => -row.margin),
     teamPerformance: best(teams, row => row.above > 0 ? row.above : NaN),
@@ -129,6 +145,7 @@ function render() {
   const pending = fixtures.filter(f => ['Scheduled', 'Missing Result'].includes(f.status)).length;
   const analysis = roundAnalysis(round);
   const playerHighlights = [
+    ...analysis.rareUpsets.map(({title,item})=>highlight(title,item,'rare-upset')),
     highlight('Top performance', analysis.top, 'top', row => 'Performance ≈ ' + row.performance, 'No pre-round rating evidence'),
     highlight('Biggest upset', analysis.upset, 'upset', row => chance(row.chance) + ' pre-round win chance', 'No upset identified'),
     highlight('Most dominant', analysis.dominant, '', row => row.margin + ' game margin'),

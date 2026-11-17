@@ -308,28 +308,37 @@ html[data-animation="off"] .profile-head h2.player-lab-rainbow { animation: none
 .latest-chance { color: var(--muted-color); font-size: .8rem; text-align: left; }
 
 /* Rare performance bands and their Player Lab summaries. */
-:is(.band-key,.band-divider,tr).b18,.lab8:has(.lab-performance-band.b18) .profile-head {
+:is(.band-key,.band-divider,tr).b18,.lab8:has(.lab-performance-band.b18) {
   --band:#bd86fc;
   --band-color:#bd86fc;
   --rare-bg:linear-gradient(115deg,#743ad02b,#d759e02b,#5231bf30,#743ad02b);
 }
-:is(.band-key,.band-divider,tr).b19,.lab8:has(.lab-performance-band.b19):not(:has(.lab-performance-band.b18)) .profile-head {
+:is(.band-key,.band-divider,tr).b19,.lab8:has(.lab-performance-band.b19):not(:has(.lab-performance-band.b18)) {
   --band:#ff747c;
   --band-color:#ff747c;
   --rare-bg:linear-gradient(115deg,#69293a36,#ae35492e,#44294136,#69293a36);
 }
-:is(.band-key.b18,.band-key.b19,tr.b18 > td,tr.b19 > td,.lab8:has(.lab-performance-band:is(.b18,.b19)) .profile-head) {
+:is(.band-key.b18,.band-key.b19,tr.b18,tr.b19,.lab8:has(.lab-performance-band:is(.b18,.b19))) {
   background-image:var(--rare-bg);
 }
-:is(.band-key.b18,.band-key.b19,tr.b18 > td,tr.b19 > td,.lab8:has(.lab-performance-band:is(.b18,.b19)) .profile-head) {
+:is(.band-key.b18,.band-key.b19,tr.b18,tr.b19,.lab8:has(.lab-performance-band:is(.b18,.b19))) {
   background-size:220% 100%;
 }
 :is(.band-key,.band-divider):is(.b18,.b19) i { background:var(--band); }
 tr:not(.band-divider):is(.b18,.b19) > td:first-child { box-shadow:inset 3px 0 var(--band); }
-.lab8:has(.lab-performance-band:is(.b18,.b19)) .profile-head { border-inline-start:3px solid var(--band); padding-inline:12px; }
+.lab8:has(.lab-performance-band:is(.b18,.b19)) {
+  border-inline-start:2px solid var(--band);
+  padding-inline:10px;
+  background-color:color-mix(in srgb,transparent 94%,var(--band));
+}
+.lab8:has(.lab-performance-band.b18) { --rare-bg:linear-gradient(115deg,#743ad00b,#d759e013,#5231bf0b); }
+.lab8:has(.lab-performance-band.b19):not(:has(.lab-performance-band.b18)) { --rare-bg:linear-gradient(115deg,#69293a0d,#ae354912,#4429410c); }
+#ratingBody tr:not(.band-divider):is(.b18,.b19) > td { background-color:transparent; }
+#ratingBody tr:not(.band-divider):is(.b18,.b19) > td:nth-child(2) .person { text-shadow:0 0 12px color-mix(in srgb,var(--band) 55%,transparent); }
+.latest-highlights .round-highlight.rare-upset { border-inline-start-color:#bd86fc; }
 @media (prefers-reduced-motion:no-preference) {
- html:not([data-animation="off"]) :is(.band-key.b18,.band-key.b19,tr.b18 > td,tr.b19 > td,
-   .lab8:has(.lab-performance-band:is(.b18,.b19)) .profile-head) {
+ html:not([data-animation="off"]) :is(.band-key.b18,.band-key.b19,tr.b18,tr.b19,
+   .lab8:has(.lab-performance-band:is(.b18,.b19))) {
    animation:rare-band-sweep 8s ease-in-out infinite alternate;
  }
  @keyframes rare-band-sweep { to { background-position:100% 0; } }
