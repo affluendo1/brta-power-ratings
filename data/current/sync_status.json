@@ -1,7 +1,7 @@
 {
   "source": "https://www.trols.org.au/brta/p_results.php",
   "fixture_source": "https://www.trols.org.au/brta/fixture.php",
-  "synced_at_utc": "2026-11-17T07:27:44.045136+00:00",
+  "synced_at_utc": "2026-11-17T07:30:50.245176+00:00",
   "competitions": 7,
   "sections": 79,
   "current_seasons": {
@@ -41,10 +41,10 @@
       "season_label": "Spring 2026"
     }
   },
-  "fixtures": 3601,
-  "completed_fixtures": 2573,
-  "singles_rubbers": 7704,
-  "doubles_rubbers": 6406,
+  "fixtures": 3643,
+  "completed_fixtures": 2595,
+  "singles_rubbers": 7792,
+  "doubles_rubbers": 6450,
   "validation": "source discrepancies",
   "source_warnings": [
     {
@@ -770,6 +770,38 @@
     {
       "section_code": "UA018",
       "message": "Incomplete TROLS score for UA018141 singles No. 4: ''. Missing score not inferred; excluded from ratings and game totals."
+    },
+    {
+      "section_code": "UA022",
+      "message": "Incomplete TROLS score for UA022144 singles No. 1: '1-0'. Missing score not inferred; excluded from ratings and game totals."
+    },
+    {
+      "section_code": "UA022",
+      "message": "Incomplete TROLS score for UA022144 singles No. 2: ''. Missing score not inferred; excluded from ratings and game totals."
+    },
+    {
+      "section_code": "UA022",
+      "message": "Incomplete TROLS score for UA022144 singles No. 3: '1-2'. Missing score not inferred; excluded from ratings and game totals."
+    },
+    {
+      "section_code": "UA022",
+      "message": "Incomplete TROLS score for UA022144 singles No. 4: ''. Missing score not inferred; excluded from ratings and game totals."
+    },
+    {
+      "section_code": "UA026",
+      "message": "Incomplete TROLS score for UA026143 singles No. 1: '4-3'. Missing score not inferred; excluded from ratings and game totals."
+    },
+    {
+      "section_code": "UA026",
+      "message": "Incomplete TROLS score for UA026143 singles No. 2: ''. Missing score not inferred; excluded from ratings and game totals."
+    },
+    {
+      "section_code": "UA026",
+      "message": "Incomplete TROLS score for UA026143 singles No. 3: ''. Missing score not inferred; excluded from ratings and game totals."
+    },
+    {
+      "section_code": "UA026",
+      "message": "Incomplete TROLS score for UA026143 singles No. 4: '3-1'. Missing score not inferred; excluded from ratings and game totals."
     },
     {
       "section_code": "WA002",
