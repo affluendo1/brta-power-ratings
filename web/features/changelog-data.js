@@ -2,6 +2,16 @@
 // Retrospective entries use source-commit timestamps; sourceCommit records their provenance.
 window.BRTA_RELEASES = Object.freeze([
   {
+    "version": "9.1.2.2",
+    "size": "tiny",
+    "title": "Performance bands and small-section ranking",
+    "committedAt": "2026-11-17T12:30:00+11:00",
+    "changes": [
+      "Performance bands use ranked and provisional players, with a minimum spread to keep the cutoffs meaningful.",
+      "Sections with two or three players per side use a three-match ranking minimum."
+    ]
+  },
+  {
     "version": "9.1.2.1",
     "size": "tiny",
     "title": "Round and scorecard refinements",
