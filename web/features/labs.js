@@ -41,16 +41,16 @@ function lab8Hero(view,name,matches,team,round){const royal=view==='singles'&&au
 return '<section class="lab8-hero"><div class="lab8-power"><div><span>'+label+' Power</span><strong>'+(r?.rating??'—')+'</strong></div><div><span>Section rank</span><strong>'+(rank?'#'+rank:'—')+'</strong></div></div><div class="lab8-facts">'+profileMetric('Record',wins+'–'+(matches.length-wins))+'<button type="button" class="lab-metric" data-eight-lineup="'+esc(team)+'"><span>Lineup position</span><b>'+lineup+'</b></button></div>'+lab8Highlights(matches)+'</section>'}
 function lab8Partners(name,round){const pairs=L8.rows(D,'pairs',round).filter(p=>L8.members(p.player).includes(name));return '<div class="lab8-partners">'+pairs.map(p=>{const ms=L8.matches(D,p.player,'pairs',round),position=ms.length?(ms.reduce((n,m)=>n+m.position,0)/ms.length).toFixed(1):'—';return '<div>'+lab8PairLink(p.player,round,[name,...L8.members(p.player).filter(n=>n!==name)].join(' / '))+'<span>'+p.rating+' – '+(p.wins??ms.filter(m=>m.won).length)+'–'+(p.losses??ms.filter(m=>!m.won).length)+' – D'+position+'</span></div>'}).join('')+'</div>'}
 const labBandDescriptions={
- Zenith:'At least 3000 Power and a recorded win over a high-Elite or Apex opponent.',
- Apex:'Among the highest-rated players or pairs in this section.',
- Elite:'Rated well above the section’s typical level.',
- Advanced:'Rated above the main group in this section.',
- Strong:'Rated on the stronger side of the section’s core group.',
- 'Middle Class':'Rated around the middle of the section.',
- Developing:'Rated below the middle of the section.',
- Struggling:'Rated toward the lower end of the section.',
- Foundational:'In the lowest ordinary rating band for this section.',
- Basement:'Very low Power for the section, backed by sustained heavy losses across at least six matches.'
+ Zenith:'Exceptional results against the section’s strongest opponents.',
+ Apex:'Among the section’s strongest.',
+ Elite:'Well above the section average.',
+ Advanced:'Above the section’s main group.',
+ Strong:'At the upper end of the main group.',
+ 'Middle Class':'Near the section midpoint.',
+ Developing:'Below the section midpoint.',
+ Struggling:'Toward the lower end of the section.',
+ Foundational:'In the section’s lowest standard band.',
+ Basement:'Sustained results at the section’s lowest end.'
 };
 function labPerformanceBands(name,round,pair,doublesOnly){
  const views=pair?[['pairs','Partnership']]:doublesOnly?[['doublesPlayers','Doubles']]:
@@ -61,8 +61,8 @@ function labPerformanceBands(name,round,pair,doublesOnly){
   const model=bandModel(rows,0,view,view,round),id=model.classForEntry?.(entry)??model.classFor(entry.rating);
   const index=Number(id.slice(1)),band=model.names[index];
   if(!band)return [];
-  return ['<article class="lab-performance-band band-key '+id+'"><i aria-hidden="true"></i><div><small>'+label+'</small><h4>'+esc(band)+
-   '</h4><p>'+esc(labBandDescriptions[band]||('This band covers '+model.bounds[index]+' Power.'))+'</p></div></article>'];
+  return ['<article class="lab-performance-band band-key '+id+'"><div class="lab-band-top"><span>'+label+'</span><span>'+esc(entry.rating)+' Power</span></div>'+
+   '<h4>'+esc(band)+'</h4><p>'+esc(labBandDescriptions[band]||('Power range '+model.bounds[index]))+'</p></article>'];
  });
  return '<section class="profile-section lab-section lab-performance-bands"><h3>Performance bands</h3>'+
   (cards.length?'<div>'+cards.join('')+'</div>':'<p class="small-note">A section band is unavailable for this entry.</p>')+'</section>';

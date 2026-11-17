@@ -52,8 +52,8 @@ function performanceBands(data,view,list,round=null){
   if(gamesWon+gamesLost>0&&gamesWon/(gamesWon+gamesLost)<=.25)assignment.set(id,'b19');
  }
  const active=new Set(assignment.values());
- if(active.has('b18')){order.unshift('b18');names[18]='Zenith';bounds[18]='3000+ Power · high Elite or Apex win';}
- if(active.has('b19')){order.push('b19');names[19]='Basement';bounds[19]='Very low Power · sustained heavy losses';}
+ if(active.has('b18')){order.unshift('b18');names[18]='Zenith';bounds[18]='';}
+ if(active.has('b19')){order.push('b19');names[19]='Basement';bounds[19]='';}
  return {...base,names,bounds,order,classForEntry:entry=>assignment.get(label(entry.player))||base.classFor(entry.rating)};
 }
 function contextData(data,round=null){if(round==null)return data;const filter=groups=>(groups||[]).filter(g=>Number(g.round)<=round);return {...data,singles:rows(data,'singles',round),doubles:rows(data,'pairs',round),doublesIndividuals:rows(data,'doublesPlayers',round),results:filter(data.results),upcomingFixtures:filter(data.upcomingFixtures),teamOrderEvidence:{},playerInsights:{}}}

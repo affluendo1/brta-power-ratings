@@ -8,7 +8,9 @@ window.BRTA_RELEASES = Object.freeze([
     "committedAt": "2026-11-17T13:30:00+11:00",
     "changes": [
       "Apex and Foundational anchor the standard ratings bands. Zenith and Basement appear when a player or partnership qualifies.",
-      "Player and Pair Labs show the applicable performance bands with short explanations."
+      "Player and Pair Labs show compact band cards, and rare bands have animated treatments in the ratings and Labs.",
+      "Player names in Latest Round highlights open their Labs.",
+      "Racquet Club earns cash on spins, offers daily packs and fuel sales, and adds craftable luck potions."
     ]
   },
   {

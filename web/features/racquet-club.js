@@ -26,7 +26,7 @@
   let state = read(), dialog, panel = 'Spin', selected = 0, animation, busy = false, saving = false;
   let filter = 'all', sort = 'high', query = '', confirmId = 0, actionMessage = '';
   let mode = 'club', toastTimer, spinVersion = 0, fuelConfirmation = '', inventoryView = 'Racquets';
-  let shopSlot = 0, gearSlot = 0, gearId = '', fuelTab = 'Buy', recipeId = 'match', settingsTab = 'Rolling';
+  let shopSlot = 0, gearSlot = 0, gearId = '', fuelTab = 'Buy', recipeId = 'rallyPotion', settingsTab = 'Rolling';
   let keySelection = 0, presentation = null, menu = false, resultVisible = true, confirmFuel = '', audio;
   const scrollPositions = new Map();
   const pref = name => state.presentation?.[name] ?? defaults[name];
@@ -250,7 +250,7 @@
   }
 
   function spinPanel() {
-    const setup = M.next(state);
+    const setup = M.next(state), duplicates = duplicateValue(), daily = M.canClaimDaily(state);
     return '<section class="rc-spin"><div class="rc-stage-top"><div><p class="kicker">Racquet roulette</p><h3>Roll</h3></div>'+
       '<button class="button secondary" data-rc-tab="Key Vault">Key Vault'+(state.keys.length?' · '+state.keys.length:'')+'</button></div>'+
       '<div class="rc-roll-meta"><p data-rc-luck>'+luckText(setup)+'</p>'+(pref('boosts')?'<div data-rc-active>'+activeMarkup()+'</div>':'')+'</div>'+
@@ -261,6 +261,9 @@
       '<div class="rc-spin-actions"><button class="button primary rc-spin-button'+(setup.bonusSpin?' rc-bonus':'')+
       '" data-rc-spin data-rc-focus="spin"'+(!state.balls||busy?' disabled':'')+'>Spin · 1 🎾</button>'+
       '<button class="button secondary" data-rc-skip hidden>Skip animation</button></div>'+
+      '<div class="rc-actions rc-earnings"><button class="button secondary" data-rc-daily'+(daily?'':' disabled')+'>'+
+      (daily?'Daily pack · '+cash(M.config.dailyPack.cash)+' + '+M.config.dailyPack.balls+' 🎾':'Daily pack claimed')+'</button>'+
+      (duplicates?'<button class="button secondary" data-rc-duplicates'+(busy?' disabled':'')+'>Sell duplicates · '+cash(duplicates)+'</button>':'')+'</div>'+
       (state.last && !busy && resultVisible ? resultCard(state.last) : '<p class="rc-spin-note">'+
         (state.balls?'':'Explore BRTA Power Ratings to earn Tennis Balls.')+'</p>')+'</div></section>';
   }
@@ -286,7 +289,7 @@
       '<div>'+(r?badge(r):'')+'<strong>'+(r?label(r):M.keyName(tier))+'</strong>'+
       '<span>'+(pref('effective')?percent(last.odds)+(redemption?' inside this key':' on this spin'):'')+
       (r&&pref('base')?' · Base '+baseOdds(r):'')+(last.new?' · New discovery':'')+
-      (last.bonusSpin?' · Bonus spin':'')+'</span><div class="rc-actions">'+
+      (last.bonusSpin?' · Bonus spin':'')+(last.cashReward?' · +'+cash(last.cashReward)+' Club Cash':'')+'</span><div class="rc-actions">'+
       (last.key?'<button class="button secondary" data-rc-tab="Key Vault">Open Key Vault</button>':
         '<button class="button secondary" data-rc-tab="Inventory">View Inventory</button>')+
       '<button class="button secondary" '+(redemption?'data-rc-key-back':'data-rc-continue')+'>Continue</button></div></div></div>';
@@ -369,7 +372,7 @@
     return '<h3>Consumables</h3>' + (owned.length ? '<div class="rc-gear-grid">' + owned.map(item=>
       '<article class="rc-card rc-gear"><h3>🍌 ' + item.name + ' × ' + state.fuel[item.id] + '</h3><p>' +
       fuelEffect(item) + '</p><button class="button secondary" data-rc-use="' + item.id + '">' +
-      (fuelConfirmation.startsWith(item.id+':')?'Confirm replacement':confirmFuel===item.id?'Confirm':'Activate') + '</button></article>').join('') + '</div>' : '<p>No consumables owned.</p>');
+      (fuelConfirmation.startsWith(item.id+':')?'Confirm replacement':confirmFuel===item.id?'Confirm':'Activate') + '</button> <button class="button secondary" data-rc-fuel-sell="'+item.id+'">Sell one · '+cash(M.fuelSellValue(item.id))+'</button></article>').join('') + '</div>' : '<p>No consumables owned.</p>');
   }
 
   function subnav(items,current,attr) {
@@ -381,7 +384,7 @@
     const tabs=subnav(['Buy','Craft','Active Boosts'].map(n=>[n,n]),fuelTab,'data-rc-fuel-tab');
     const head='<div class="rc-page-head"><p class="kicker">Performance & hydration</p><h3>Fuel Station</h3></div>'+tabs;
     if(fuelTab==='Active Boosts') return head+activePanel()+fuelInventory();
-    if(fuelTab==='Buy') return head+'<div class="rc-gear-grid">'+M.fuel.map(item=>
+    if(fuelTab==='Buy') return head+'<div class="rc-gear-grid">'+M.fuel.filter(item=>!item.craftOnly).map(item=>
       '<article class="rc-card rc-product"><div class="rc-product-art" aria-hidden="true">'+(item.minutes?'◒':item.slot==='sale'?'◉':'ϟ')+
       '</div><h3>'+item.name+'</h3><p>'+fuelEffect(item)+'</p><p>'+(state.fuel[item.id]||0)+' owned</p>'+
       '<button class="button primary" data-rc-fuel="'+item.id+'"'+(state.cash<item.price?' disabled':'')+'>Buy · '+cash(item.price)+'</button></article>').join('')+'</div>';
@@ -691,7 +694,13 @@
     actionMessage = '';
     saving = true;
     try {
-      if (data.rcSell) {
+      if (data.rcDaily !== undefined) {
+        const pack = await update(s=>M.claimDaily(s));
+        actionMessage = pack ? 'Daily pack claimed · '+cash(pack.cash)+' and '+pack.balls+' Tennis Balls.' : 'Daily pack already claimed.';
+      } else if (data.rcFuelSell) {
+        const payout = await update(s=>M.sellFuel(s,data.rcFuelSell));
+        actionMessage = payout ? 'Fuel sold for '+cash(payout)+'.' : 'No fuel available to sell.';
+      } else if (data.rcSell) {
         const id = Number(data.rcSell), quantity = Number(dialog.querySelector('[data-rc-count]').value);
         if (quantity === state.items[id]?.count && M.racquet(id).tier >= 3 && confirmId !== id) {
           confirmId = id;

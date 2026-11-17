@@ -80,13 +80,13 @@
   });
   const slots = ['Strings', 'Grips', 'Dampeners', 'Special'];
   const accessories = [
-    ['lynx','Head Lynx',0,250,{luck:1.2}], ['polytour','Yonex PolyTour Pro',0,1000,{luck:1.5}],
-    ['hyperg','Solinco Hyper-G',0,3500,{luck:2}], ['rpm','Babolat RPM Blast',0,12000,{luck:3}],
+    ['lynx','Head Lynx',0,120,{luck:1.3}], ['polytour','Yonex PolyTour Pro',0,500,{luck:1.6}],
+    ['hyperg','Solinco Hyper-G',0,2000,{luck:2}], ['rpm','Babolat RPM Blast',0,7500,{luck:3}],
     ['alu','Luxilon ALU Power',0,40000,{luck:4}],
-    ['overgrip','Wilson Pro Overgrip',1,200,{duration:4.7}], ['grap','Yonex Super Grap',1,750,{duration:4.3}],
+    ['overgrip','Wilson Pro Overgrip',1,100,{duration:4.7}], ['grap','Yonex Super Grap',1,750,{duration:4.3}],
     ['tourna','Tourna Grip',1,2500,{duration:3.8}], ['original','Babolat VS Original',1,8000,{duration:3.2}],
     ['prime','Head Prime Tour',1,25000,{duration:2.5}],
-    ['feel','Wilson Pro Feel',2,350,{sale:1.1}], ['damp','Babolat Custom Damp',2,1500,{sale:1.2}],
+    ['feel','Wilson Pro Feel',2,180,{sale:1.1}], ['damp','Babolat Custom Damp',2,1500,{sale:1.2}],
     ['stopper','Yonex Vibration Stopper',2,5500,{mutation:1.1}], ['logo','Head Logo Dampener',2,18000,{mutation:1.2}],
     ['lead','Lead Tape',3,12000,{bonus:3}], ['graphite','Graphite Tuning Kit',3,65000,{mutation:1.25}],
     ['titanium','Titanium Stabilizer',3,150000,{luck:1.3,titanium:true}], ['gold','Golden Grommet',3,275000,{bonus:5}],
@@ -95,13 +95,13 @@
   ].map(([id,name,slot,price,effect])=>({id,name,slot,price,effect}));
   const racquet = id => racquets[Number(id) - 1];
   const accessory = id => accessories.find(item => item.id === id);
-  const config = {maxLuck:50, bonusEvery:10, dailyLimit:50, rewards:{
-    player:{amount:2,cap:20,cooldown:1500}, tab:{amount:1,cap:5,cooldown:2500},
-    comparison:{amount:3,cap:5,cooldown:3000}, filter:{amount:1,cap:7,cooldown:3000},
+  const config = {maxLuck:75, bonusEvery:10, dailyLimit:85, dailyPack:{cash:100,balls:5}, rewards:{
+    player:{amount:3,cap:25,cooldown:1500}, tab:{amount:2,cap:5,cooldown:2500},
+    comparison:{amount:4,cap:5,cooldown:3000}, filter:{amount:2,cap:7,cooldown:3000},
   }};
   const fuel = [
-    ['banana','Rally Banana',300,'luck',{luck:1.5},1],
-    ['gel','Energy Gel',900,'luck',{luck:2},1],
+    ['banana','Rally Banana',85,'luck',{luck:1.5},1],
+    ['gel','Energy Gel',300,'luck',{luck:2},1],
     ['match','Match Point Gel',3000,'luck',{luck:3},1],
     ['slam','Grand Slam Fuel',12000,'luck',{luck:5},1],
     ['training','Training Banana Pack',2000,'luck',{luck:1.5},5],
@@ -114,9 +114,13 @@
     ['ball','Ball Boost Banana',1800,'balls',{balls:25},0,10],
     ['shake','Club Cash Shake',2400,'sale',{sale:1.25},3],
     ['precision','Precision Fuel',10500,'luck',{luck:2,mutation:1.2},3],
-  ].map(([id,name,price,slot,effect,charges,minutes])=>({id,name,price,slot,effect,charges,minutes}));
+    ['rallyPotion','Rally Luck Potion',400,'luck',{luck:2.5},4,0,true],
+    ['acePotion','Ace Luck Potion',1350,'luck',{luck:5},6,0,true],
+  ].map(([id,name,price,slot,effect,charges,minutes,craftOnly])=>({id,name,price,slot,effect,charges,minutes,craftOnly}));
   const fuelItem = id => fuel.find(item => item.id === id);
   const recipes = {
+    rallyPotion:{ingredients:{banana:2},fee:45},
+    acePotion:{ingredients:{rallyPotion:1,gel:2},fee:250},
     match:{ingredients:{gel:2},fee:500},
     tournament:{ingredients:{gel:3},fee:3000},
     slam:{ingredients:{match:2},fee:5000},
@@ -127,7 +131,7 @@
   const keyTiers = [2,3,4,5,6,7];
   const keyName = tier => tiers[tier][0] + ' Racquet Key';
   const initial = () => ({
-    enabled:false, skip:false, balls:0, cash:0, spins:0, bonusSpins:0, earned:0, cashEarned:0,
+    enabled:false, skip:false, dailyClaim:'', balls:0, cash:0, spins:0, bonusSpins:0, earned:0, cashEarned:0,
     cashSpent:0, duplicatesSold:0, items:{}, gear:{}, equipped:{}, favourite:null, daily:{}, last:null, keys:[], nextKey:1, keysEarned:{}, keysRedeemed:0, lastKey:null,
     fuel:{}, boosts:{}, fuelBought:0, fuelCrafted:0, fuelUsed:0, strongestLuck:0, ballRemainder:0
   });
@@ -251,6 +255,9 @@
       effectiveLuck:setup.effectiveLuck, mutation:setup.mutation, duration:setup.duration, titanium:setup.titanium};
     if (result.key) makeKey(state,result.tier,weights,now);
     else last.new = award(state,result.id,now);
+    last.cashReward = 20 + result.tier * 10 + (last.new ? 30 : 0);
+    state.cash += last.cashReward;
+    state.cashEarned += last.cashReward;
     return state.last = last;
   }
 
@@ -268,7 +275,7 @@
 
   function buyFuel(state, id) {
     const item = fuelItem(id);
-    if (!item || state.cash < item.price) return false;
+    if (!item || item.craftOnly || state.cash < item.price) return false;
     state.cash -= item.price;
     state.cashSpent += item.price;
     state.fuel[id] = (state.fuel[id] || 0) + 1;
@@ -300,10 +307,43 @@
     return true;
   }
 
+  const dayKey = now => new Intl.DateTimeFormat('en-CA', {
+    timeZone:'Australia/Melbourne', year:'numeric', month:'2-digit', day:'2-digit'
+  }).format(now);
+
+  function canClaimDaily(state, now = Date.now()) {
+    return state.dailyClaim !== dayKey(now);
+  }
+
+  function claimDaily(state, now = Date.now()) {
+    if (!canClaimDaily(state, now)) return false;
+    const pack = config.dailyPack;
+    state.dailyClaim = dayKey(now);
+    state.cash += pack.cash;
+    state.cashEarned += pack.cash;
+    state.balls += pack.balls;
+    state.earned += pack.balls;
+    return pack;
+  }
+
+  function fuelSellValue(id) {
+    const item = fuelItem(id);
+    return item ? Math.floor(item.price * .3) : 0;
+  }
+
+  function sellFuel(state, id) {
+    const payout = fuelSellValue(id);
+    if (!payout || !state.fuel[id]) return 0;
+    state.fuel[id]--;
+    state.cash += payout;
+    state.cashEarned += payout;
+    return payout;
+  }
+
   function reward(state, action, key, now) {
     const rule = config.rewards[action];
     if (!rule || !key) return 0;
-    const day = new Intl.DateTimeFormat('en-CA', {timeZone:'Australia/Melbourne', year:'numeric', month:'2-digit', day:'2-digit'}).format(now);
+    const day = dayKey(now);
     if (state.daily.day !== day) state.daily = {day, balls:0, actions:{}};
     const daily = state.daily;
     const group = daily.actions[action] ||= {last:0, keys:[]};
@@ -323,7 +363,7 @@
   }
 
   function sellValue(state, id, now = Date.now()) {
-    return Math.round(racquet(id).value * combined(state,now).sale);
+    return Math.round(racquet(id).value * 1.5 * combined(state,now).sale);
   }
 
   function sell(state, id, quantity, confirmed = false, now = Date.now(), useBoost = true) {
@@ -365,7 +405,7 @@
   }
 
   const api = {config, tiers, slots, racquets, racquet, accessories, accessory, initial, effects, probabilities,
-    pick, next, spin, reward, sellValue, sell, sellDuplicates, equip, buy, keyName, keyTiers, wheel, select,
+    pick, next, spin, reward, canClaimDaily, claimDaily, fuelSellValue, sellFuel, sellValue, sell, sellDuplicates, equip, buy, keyName, keyTiers, wheel, select,
     makeKey, redeem, fuel, fuelItem, recipes, buyFuel, craft, activate, activeBoosts};
   if (typeof module === 'object') module.exports = api;
   else root.BRTARacquetModel = api;

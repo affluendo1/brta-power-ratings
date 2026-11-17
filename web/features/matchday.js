@@ -32,10 +32,14 @@ function fixtureRow(fixture, forecast) {
 }
 
 const chance = value => (100 * value).toFixed(1) + '%';
+function latestPlayerNames(names) {
+  return String(names).split(/\s*\/\s*/).map(personButton).join(' / ');
+}
 function highlight(title, row, tone, detail, empty = 'No completed match') {
   if (!row) return '<div class="round-highlight"><span>' + title + '</span><b>' + empty + '</b></div>';
   return '<div class="round-highlight ' + tone + '"><span>' + title + '</span><b>' +
-    esc(row.winner + ' ' + row.score + ' ' + row.loser) + '</b>' +
+    (row.playerNames ? latestPlayerNames(row.winner) + ' <span class="latest-player-score">' + esc(row.score) + '</span> ' + latestPlayerNames(row.loser) :
+      esc(row.winner + ' ' + row.score + ' ' + row.loser)) + '</b>' +
     (detail ? '<small>' + esc(detail(row)) + '</small>' : '') + '</div>';
 }
 
@@ -64,7 +68,7 @@ function roundAnalysis(round) {
       const homeWon = rubber.winner === rubber.home;
       const diff = sets.reduce((sum, set) => sum + set.h - set.a, 0);
       const games = sets.reduce((sum, set) => sum + set.h + set.a, 0);
-      const item = { winner: homeWon ? rubber.home : rubber.away, loser: homeWon ? rubber.away : rubber.home,
+      const item = { playerNames: true, winner: homeWon ? rubber.home : rubber.away, loser: homeWon ? rubber.away : rubber.home,
         score: homeWon ? rubber.score : BRTAScores.flip(rubber.score), margin: Math.abs(diff) };
       players.push(item);
       const isDoubles = rubber.type === 'Doubles';

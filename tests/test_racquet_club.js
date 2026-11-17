@@ -34,10 +34,10 @@ M.tiers.forEach((_,tier)=>{
 const state=M.initial();
 assert.equal(M.spin(state,0,123),null);
 const now=Date.parse('2026-11-14T00:00:00+11:00');
-assert.equal(M.reward(state,'player','One',now),2);
+assert.equal(M.reward(state,'player','One',now),M.config.rewards.player.amount);
 assert.equal(M.reward(state,'player','Two',now+10),0);
 assert.equal(M.reward(state,'player','One',now+2000),0);
-assert.equal(M.reward(state,'player','One',now+86400000),2);
+assert.equal(M.reward(state,'player','One',now+86400000),M.config.rewards.player.amount);
 const capped=M.initial();
 for(let i=0;i<20;i++){
   for(const kind of Object.keys(M.config.rewards)) M.reward(capped,kind,kind+i,now+10000*i);
@@ -55,14 +55,14 @@ assert.equal(state.items[1].count,10);
 state.items[1].locked=true;
 assert.equal(M.sellDuplicates(state),0);
 state.items[1].locked=false;
-assert.equal(M.sellDuplicates(state),72);
+assert.equal(M.sellDuplicates(state),108);
 assert.equal(state.items[1].count,1);
-assert.equal(M.sell(state,1,1),8);
+assert.equal(M.sell(state,1,1),12);
 assert.equal(state.items[1].count,0);
 assert.equal(state.items[1].pulled,10);
 state.items[60]={count:1,pulled:1,first:1,last:1};
 assert.equal(M.sell(state,60,1),0);
-assert.equal(M.sell(state,60,1,true),120000);
+assert.equal(M.sell(state,60,1,true),180000);
 assert.equal(M.buy(state,'gold'),false);
 state.cash=500000;
 for(const id of ['alu','prime','stopper','gold']) assert(M.buy(state,id,true));
@@ -136,17 +136,17 @@ assert(M.buyFuel(saved,'slam'));
 assert(M.activate(saved,'slam',now,true));
 saved.spins=9;
 assert.equal(M.next(saved,now).uncappedLuck,100);
-assert.equal(M.next(saved,now).effectiveLuck,50);
+assert.equal(M.next(saved,now).effectiveLuck,M.config.maxLuck);
 assert(M.buyFuel(saved,'shake'));
 assert(M.activate(saved,'shake',now));
-assert.equal(M.sell(saved,60,1,true,now),150000);
+assert.equal(M.sell(saved,60,1,true,now),225000);
 assert.equal(saved.boosts.sale.remaining,2);
 
 const cart=M.initial();
 cart.cash=250000;
 assert(M.buy(cart,'basket',true));
 for(let i=0;i<5;i++) M.reward(cart,'tab','tab-'+i,now+3000*i);
-assert.equal(cart.balls,6);
+assert.equal(cart.balls,12);
 assert.equal(cart.ballRemainder,0);
 assert.equal(M.reward(cart,'tab','tab-5',now+15000),0);
 for(const [id,recipe] of Object.entries(M.recipes)){
@@ -154,3 +154,24 @@ for(const [id,recipe] of Object.entries(M.recipes)){
   assert(total<M.fuelItem(id).price,id);
 }
 console.log('Key odds, durable snapshots, redemption, fuel crafting, expiry, sales and fractional earnings passed.');
+
+const starter=M.initial();
+assert.deepEqual(M.claimDaily(starter,now),M.config.dailyPack);
+assert.equal(M.claimDaily(starter,now+1),false);
+assert.equal(starter.balls,5);
+const firstSpin=M.spin(starter,0,now);
+assert.equal(firstSpin.cashReward,50);
+assert(M.buy(starter,'lynx',true));
+assert.equal(M.effects(starter).luck,1.3);
+assert(M.claimDaily(starter,now+86400000));
+starter.cash=1000;
+assert(M.buyFuel(starter,'banana'));
+assert(M.buyFuel(starter,'banana'));
+assert.equal(M.buyFuel(starter,'rallyPotion'),false);
+assert(M.craft(starter,'rallyPotion'));
+assert(M.activate(starter,'rallyPotion',now));
+assert.equal(M.next(starter,now).effectiveLuck,3.25);
+assert(M.buyFuel(starter,'gel'));
+assert.equal(M.sellFuel(starter,'gel'),90);
+assert.equal(M.sellFuel(starter,'gel'),0);
+console.log('Daily packs, cash rewards, craft-only potions and fuel resale passed.');
