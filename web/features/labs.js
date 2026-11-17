@@ -63,7 +63,9 @@ function labBandEvidence(evidence,rating,view){
  return '<div class="lab-band-metrics">'+tile('Record',wins+'–'+losses)+
   tile('Games won',gamesWon+' / '+gamesPlayed,share.toFixed(1)+'% · max '+limit+'%')+
   (scorelineRoute?'':tile('Power',rating,'Maximum '+maximumPower))+
-  '</div><meter aria-label="Share of games won" min="0" max="100" value="'+share+'"></meter>';
+  '</div><meter aria-label="Share of games won" min="0" max="100" value="'+share+'"></meter>'+
+  '<p>'+(scorelineRoute?'Qualified after going winless over at least six matches and winning 10% or fewer of the games.':
+    'Qualified through low section Power and a sustained low share of matches and games won.')+'</p>';
 }
 function labPerformanceBands(name,round,pair,doublesOnly){
  const views=pair?[['pairs','Partnership']]:doublesOnly?[['doublesPlayers','Doubles']]:

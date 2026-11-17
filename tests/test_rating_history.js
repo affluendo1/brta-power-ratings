@@ -25,3 +25,11 @@ assert.equal(H.rowsAt(data,'overall',5).find(x=>x.player==='Bob').qualified,fals
 assert.equal(H.rowsAt(data,'overall',6).find(x=>x.player==='Bob').rating,1750);
 assert.equal(H.withMovement(data,'pairs',6)[0].movement,0);
 console.log('rating history and rank movement tests passed');
+
+const placeholder = structuredClone(data);
+placeholder.results = [{round:7, fixtures:[{status:'Missing Result'},{status:'Scheduled'}]}];
+const active = H.withMovement(placeholder,'singles');
+assert.equal(active[0].previousRound,5);
+assert.deepEqual(H.rounds(placeholder,'singles').map(row=>row.round),[5,6]);
+placeholder.results[0].fixtures[0].status='Completed';
+assert.equal(H.withMovement(placeholder,'singles')[0].previousRound,6);

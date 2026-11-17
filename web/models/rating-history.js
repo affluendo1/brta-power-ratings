@@ -39,7 +39,15 @@
   }
   function rounds(data,view){
     if(data.meta?.singlesOnly&&view!=='singles')return [];
-    return (data.ratingHistory?.rounds||[]).filter(x=>view==='singles'||data.doublesRatingHistory?.tables?.[x.round]);
+    const published = new Map();
+    for(const group of data.results||[]){
+      if(!group.fixtures?.length)continue;
+      const key=Number(group.round);
+      const scored=group.fixtures.some(f=>!['Scheduled','Missing Result','Pending','Bye'].includes(f.status));
+      published.set(key,published.get(key)||scored);
+    }
+    return (data.ratingHistory?.rounds||[]).filter(x=>published.get(Number(x.round))!==false&&
+      (view==='singles'||data.doublesRatingHistory?.tables?.[x.round]));
   }
   function ranked(rows,view,data){let rank=0;return sorted(rows).map(row=>({...row,rank:qualified(row,view,data)?++rank:null}))}
   function withMovement(data,view,round=null){
