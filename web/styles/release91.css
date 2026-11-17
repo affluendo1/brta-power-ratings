@@ -400,6 +400,20 @@ html[data-animation="off"] .profile-head h2.player-lab-rainbow { animation: none
   font-size: clamp(10px, 3.6cqi, 18px);
   letter-spacing: -.035em;
 }
+@media (max-width: 760px) {
+  #resultContent .result-detail-head { margin-block-end: 20px; }
+  .result-scorecard .rubber-table-8541 td {
+    min-height: clamp(44px, 12cqi, 56px);
+    padding-block: 12px;
+  }
+  .result-scorecard .rubber-table-8541 td.rubber-score-854 {
+    padding-inline: clamp(10px, 4.5cqi, 24px);
+  }
+  .result-scorecard .rubber-table-8541 td.rubber-score-854 strong {
+    font-size: clamp(14px, 4.3cqi, 18px);
+  }
+  .result-scorecard .result-metrics > div { min-height: 84px; }
+}
 .round-inline-editor { padding-block: 12px; }
 .round-inline-sides { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr)); gap: 12px; }
 .standings-source-details { margin-block-start: .55rem; }
