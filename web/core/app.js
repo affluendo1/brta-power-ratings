@@ -657,9 +657,10 @@ function applyRecordedLineup(index){const lineup=lineup841Cards[index],match=cur
 
 function refreshPrediction(){const match=currentPredictionMatch();if(match)refreshPredictionFor(match)}
 function openPrediction(id){window.BRTAFinalsRace?.clearEditor();window.BRTAFixtureDetails?.closeMap('#predictionOverlay');delete $('#predictionContent').dataset.roundSetup;const match=fixtureById(id);if(!match||!canPredictFixture(match,match.round))return;
-if(D.meta?.singlesOnly||!predictionEvidenceReady()){activePredictionMatch=match;selectedPrediction=null;$('#predictionContent').innerHTML='<div class="overlay-title"><h2>'+teamName(match.home)+' vs '+teamName(match.away)+'</h2></div>'+(window.BRTAFixtureDetails?.html(match)||'')+(D.meta?.singlesOnly?rm1PredictionNotice():predictionEvidenceNotice());window.BRTAFixtureDetails?.hydrate(match,$('#predictionContent'));$('#predictionOverlay').classList.remove('hidden');document.body.classList.add('modal-open');window.BRTARouteUI?.fixture(match,'fixtures');return;}activePredictionMatch=match;selectedPrediction=null;refreshPredictionFor(match);$('#predictionOverlay').classList.remove('hidden');document.body.classList.add('modal-open');window.BRTARouteUI?.fixture(match,'fixtures')}
+if(D.meta?.singlesOnly||!predictionEvidenceReady()){activePredictionMatch=match;selectedPrediction=null;$('#predictionContent').innerHTML='<div class="overlay-title"><h2>'+teamName(match.home)+' vs '+teamName(match.away)+'</h2></div>'+(window.BRTAFixtureDetails?.html(match)||'')+(D.meta?.singlesOnly?rm1PredictionNotice():predictionEvidenceNotice());window.BRTAFixtureDetails?.hydrate(match,$('#predictionContent'));$('#predictionOverlay').classList.remove('hidden');document.body.classList.add('modal-open');window.BRTARouteUI?.fixture(match,'fixtures');return;}activePredictionMatch=match;selectedPrediction=null;refreshPredictionFor(match,false);$('#predictionOverlay').classList.remove('hidden');document.body.classList.add('modal-open');window.BRTARouteUI?.fixture(match,'fixtures')}
 function rm1PredictionNotice(){return '<div class="overlay-title"><h2>Prediction Centre</h2></div><p>RM1 supports singles game strength. Choose another model in Settings for fixture predictions.</p><button type="button" class="button secondary" data-layout-open="methodology">Choose model</button>'}
 function openPredictionHome(selectedTeam=''){
+  $('#predictionContent').closest('.prediction-sheet').scrollTop=0;
   delete $('#predictionContent').dataset.roundSetup;
   if(D.meta?.singlesOnly){$('#predictionContent').innerHTML=rm1PredictionNotice();$('#predictionOverlay').classList.remove('hidden');document.body.classList.add('modal-open');return}
   const names=teams.map(x=>x.team).sort((a,b)=>a.localeCompare(b)),home=selectedTeam||names[0]||'',away=names.find(name=>name!==home)||'';
@@ -672,7 +673,35 @@ function startCustomPrediction(){
   activePredictionMatch={fixtureId:'custom:'+home+'|'+away,home,away,status:'Scheduled',round:'Custom matchup',date:'',stage:'custom'};
   selectedPrediction=null;refreshPrediction();
 }
-function refreshPredictionFor(match){const host=$('#predictionContent'),details=host.querySelector('[data-fixture-logistics]');if(details?.dataset.fixtureLogistics===match.fixtureId)details.remove();host.innerHTML=predictionHTML(match);if(details?.dataset.fixtureLogistics===match.fixtureId)host.querySelector('[data-fixture-logistics]')?.replaceWith(details);else window.BRTAFixtureDetails?.hydrate(match,host);}
+function refreshPredictionFor(match, preserveScroll=true){
+  const host=$('#predictionContent'),sheet=host.closest('.prediction-sheet');
+  const sameFixture=preserveScroll&&host.dataset.predictionFixture===match.fixtureId&&host.querySelector('.fixture-forecast');
+  const scroll=sameFixture?sheet.scrollTop:0;
+  const controls=()=>[...host.querySelectorAll('button,input,select')].filter(el=>Object.keys(el.dataset).length);
+  const key=el=>JSON.stringify([el.tagName,el.dataset,el.type==='checkbox'?el.value:'']);
+  const before=sameFixture?controls():[];
+  const focused=before.includes(document.activeElement)?document.activeElement:null;
+  const viewport=sheet.getBoundingClientRect();
+  const visible=el=>{const box=el.getBoundingClientRect();return box.height>0&&box.bottom>viewport.top&&box.top<viewport.bottom};
+  const anchor=focused&&visible(focused)?focused:before.find(visible);
+  const anchorTop=anchor?.getBoundingClientRect().top;
+  const describe=el=>el?{key:key(el),index:before.filter(control=>key(control)===key(el)).indexOf(el)}:null;
+  const anchorRef=describe(anchor),focusRef=describe(focused);
+  const details=host.querySelector('[data-fixture-logistics]');
+  if(details?.dataset.fixtureLogistics===match.fixtureId)details.remove();
+  host.innerHTML=predictionHTML(match);
+  host.dataset.predictionFixture=match.fixtureId;
+  if(details?.dataset.fixtureLogistics===match.fixtureId)host.querySelector('[data-fixture-logistics]')?.replaceWith(details);
+  else window.BRTAFixtureDetails?.hydrate(match,host);
+
+  const after=sameFixture?controls():[];
+  const find=ref=>ref&&after.filter(el=>key(el)===ref.key)[ref.index];
+  const nextAnchor=find(anchorRef),nextFocus=find(focusRef);
+  const adjustment=nextAnchor?.getClientRects().length?nextAnchor.getBoundingClientRect().top-anchorTop+sheet.scrollTop-scroll:0;
+  sheet.scrollTop=scroll+adjustment;
+  if(nextFocus&&!nextFocus.disabled)nextFocus.focus({preventScroll:true});
+}
+
 function updatePrediction(side,player,checked){const match=currentPredictionMatch();if(!match)return;const current=selectedPrediction[side].draft,needed=predictionNeeded(),max=D.meta?.is_custom?teamRoster(side==='home'?match.home:match.away).length:isPlayoff(match)&&needed===4?6:needed;if(checked&&current.length>=max){refreshPrediction();return}if(checked&&!current.includes(player))current.push(player);if(!checked)selectedPrediction[side].draft=current.filter(x=>x!==player);selectedPrediction.simulation=null;refreshPrediction()}
 function updateSingles(side,position,player){const s=selectedPrediction[side];if(!s.draft.includes(player))return;const previous=s.singles.indexOf(player),displaced=s.singles[position];s.singles[position]=player;if(previous>=0&&previous!==position)s.singles[previous]=displaced;s.manualOrder=true;selectedPrediction.simulation=null;refreshPrediction()}
 function updateDoubles(side,pair,slot,player){const s=selectedPrediction[side];if(!s.draft.includes(player))return;if(D.meta?.is_custom||D.meta?.competition_rules){const other=1-slot,displaced=s.doubles[pair][slot];if(s.doubles[pair][other]===player)s.doubles[pair][other]=displaced;s.doubles[pair][slot]=player;selectedPrediction.simulation=null;refreshPrediction();return;}const other=s.doubles.findIndex(row=>row.includes(player)),otherSlot=other>=0?s.doubles[other].indexOf(player):-1,displaced=s.doubles[pair][slot];s.doubles[pair][slot]=player;if(other>=0&&(other!==pair||otherSlot!==slot))s.doubles[other][otherSlot]=displaced;selectedPrediction.simulation=null;refreshPrediction()}
