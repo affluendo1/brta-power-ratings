@@ -1,7 +1,7 @@
 (function(root){
 'use strict';
 const Scores=root.BRTAScores||(typeof require==='function'?require('./score-formats'):null);
-const names=['Apex','Elite','Advanced','Strong','Middle Class','Developing','Struggling','Basement'];
+const names=['Apex','Elite','Advanced','Strong','Middle Class','Developing','Struggling','Foundational'];
 function bands(rows){
  const values=rows.map(r=>r.rating).filter(Number.isFinite).sort((a,b)=>a-b);
  if(!values.length)return{names,bounds:[],cuts:[],classFor:()=>''};
@@ -9,6 +9,16 @@ function bands(rows){
  // IQR resists isolated extremes; unlike percentile buckets, rare bands need not be filled.
  const spread=Math.max(50,(quantile(.75)-quantile(.25))/1.349);
  const cuts=[1.55,1.1,.6,.1,-.5,-1,-1.4].map(z=>Math.ceil(median+z*spread));
+ if(values.length>=8){
+  const top=values.filter(value=>value>=cuts[0]).length;
+  const bottom=values.filter(value=>value<cuts[6]).length;
+  cuts[0]=values.at(-Math.min(3,Math.max(2,top)));
+  cuts[6]=Math.floor(values[Math.min(3,Math.max(2,bottom))-1])+1;
+  // Keep room for the middle bands without moving the tail thresholds.
+  if(cuts[0]-cuts[6]>=6){
+   for(let i=1;i<6;i++)cuts[i]=Math.max(cuts[6]+6-i,Math.min(cuts[i],cuts[i-1]-1));
+  }
+ }
  for(let i=cuts.length-2;i>=0;i--)cuts[i]=Math.max(cuts[i],cuts[i+1]+1);
  const bounds=names.map((_,i)=>i===0?'≥ '+cuts[0]:i===names.length-1?'< '+cuts.at(-1):cuts[i]+'–'+(cuts[i-1]-1));
  return{names,bounds,cuts,median,spread,classFor:rating=>Number.isFinite(rating)?'b'+cuts.filter(c=>rating<c).length:''};

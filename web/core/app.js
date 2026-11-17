@@ -23,7 +23,7 @@ let theme=localStorage.getItem('brta-theme')||'auto',interfaceMode=localStorage.
 let ratingRound=null,focusedSearchPlayer=null;
 let ratingView='singles',resultRound=null,selectedMatch=null,selectedPrediction=null,activePredictionMatch=null,activeProfilePlayer=null,loadingToken=0,roundSimulations={};
 let activePage='results',auxiliaryCache=null,auxiliaryCacheKey='',auxiliaryRevealTimer=0,auxiliaryRevealKey='',auxiliaryReadyKey='',auxiliaryFadeKey='';
-const BAND_NAMES=['Apex','Elite','Advanced','Strong','Middle Class','Developing','Struggling','Basement'];
+const BAND_NAMES=['Apex','Elite','Advanced','Strong','Middle Class','Developing','Struggling','Foundational'];
 const ratingInfo={
   singles:['Singles ratings','Singles Power.'],
   pairs:['Doubles pair ratings','Partnership Power · 2 matches to rank.'],
@@ -263,10 +263,10 @@ function ratingRoundLabel(round){const item=(D.ratingHistory?.rounds||[]).find(r
 function renderRatingRoundNotice(){const box=$('#ratingRoundNotice');box.classList.toggle('hidden',ratingRound==null);box.innerHTML=ratingRound==null?'':'<div><b>'+esc(ratingRoundLabel(ratingRound))+'</b><span>'+esc(historicalRoundDate(ratingRound)||'Date not published by TROLS')+' · '+esc(ratingInfo[ratingView][0])+'</span></div><button type="button" class="button secondary" data-rating-round="latest">Latest ratings</button>'}
 
 function ratingQualified(x,min,type){if(type==='overall')return x.qualified;if(type==='doublesPlayers')return!!x.qualified;return x.matches>=min}
-function bandModel(rows,min,type){return BRTALayoutModel.bands(rows)}
+function bandModel(rows,min,type,view=ratingView,round=ratingRound){return BRTALabModel.performanceBands(D,view,rows,round)}
 
-function renderBandInfo(model){$('#page-ratings').dataset.bandCount=model.names?.length||BAND_NAMES.length;$('#bandInfo').innerHTML=model.bounds.length?'<div class="band-info-head"><b>Performance bands</b></div><div class="band-keys">'+BAND_NAMES.map((n,i)=>'<button type="button" class="band-key b'+i+(window.eightBandFilter==='b'+i?' selected':'')+'" data-band-choice="b'+i+'" aria-pressed="'+(window.eightBandFilter==='b'+i)+'"><i aria-hidden="true"></i><span><b>'+n+'</b><small>'+model.bounds[i]+'</small></span></button>').join('')+'</div>':''}
-function bandDivider(cls,model,colspan=10){const i=Number(cls.slice(1));return'<tr class="band-divider '+cls+'"><td colspan="'+colspan+'"><div><i></i><b>'+BAND_NAMES[i]+'</b><span>'+model.bounds[i]+'</span></div></td></tr>'}
+function renderBandInfo(model){$('#page-ratings').dataset.bandCount=model.order?.length||model.names?.length||BAND_NAMES.length;$('#bandInfo').innerHTML=model.bounds.length?'<div class="band-info-head"><b>Performance bands</b></div><div class="band-keys">'+(model.order||BAND_NAMES.map((_,i)=>'b'+i)).map(id=>{const i=Number(id.slice(1)),n=model.names[i];return '<button type="button" class="band-key b'+i+(window.eightBandFilter==='b'+i?' selected':'')+'" data-band-choice="b'+i+'" aria-pressed="'+(window.eightBandFilter==='b'+i)+'"><i aria-hidden="true"></i><span><b>'+n+'</b><small>'+model.bounds[i]+'</small></span></button>'}).join('')+'</div>':''}
+function bandDivider(cls,model,colspan=10){const i=Number(cls.slice(1));return'<tr class="band-divider '+cls+'"><td colspan="'+colspan+'"><div><i></i><b>'+model.names[i]+'</b><span>'+model.bounds[i]+'</span></div></td></tr>'}
 
 function archiveGlobalRowsFromSection(payload,section){
   const singlesByPlayer=new Map((payload.singles||[]).map(row=>[row.player,row])),doublesByPlayer=new Map(BRTAHistory.rowsAt(payload,'doublesPlayers').map(row=>[row.player,row]));
@@ -398,15 +398,18 @@ function renderRatings(){
   $('#ratingFilters').classList.remove('hidden');$('#ratingsHint').textContent='';
   const {rows,min,type}=currentRows(),q=$('#search').value.toLowerCase(),tf=$('#teamFilter').value,band=bandModel(rows,min,type),derived=ratingRound==null?auxiliaryVisibleContext():null;
   renderBandInfo(band);
-  let rank=0,out='',lastBand='';
+  let out='',lastBand='';
   if(derived){
     const fading=auxiliaryFadeKey===auxiliarySignature()?' auxiliary-reveal':'';
     const godly=window.AuxiliaryModule.godlyThreshold(derived.row);
-    $('#bandInfo').innerHTML='<div class="band-info-head"><b>Performance bands</b></div><div class="band-keys"><div class="band-key b0"><i></i><span><b>Godly</b><small>≥ '+godly+'</small></span></div>'+BAND_NAMES.map((n,i)=>'<div class="band-key b'+i+'"><i></i><span><b>'+n+'</b><small>'+band.bounds[i]+'</small></span></div>').join('')+'</div>';
+    $('#bandInfo').innerHTML='<div class="band-info-head"><b>Performance bands</b></div><div class="band-keys"><div class="band-key b0"><i></i><span><b>Godly</b><small>≥ '+godly+'</small></span></div>'+(band.order||BAND_NAMES.map((_,i)=>'b'+i)).map(id=>{const i=Number(id.slice(1));return '<div class="band-key '+id+'"><i></i><span><b>'+band.names[i]+'</b><small>'+band.bounds[i]+'</small></span></div>'}).join('')+'</div>';
     out+='<tr class="band-divider b0"><td colspan="10"><div><i></i><b>Godly</b><span>≥ '+godly+'</span></div></td></tr>';
     out+='<tr class="b0'+fading+'"><td>0</td><td>'+personButton(derived.row.player)+'</td><td>'+teamName(derived.row.team)+'</td><td><b>'+derived.row.rating+'</b></td><td>'+derived.row.wins+'–0</td><td>'+derived.row.gf+'–'+derived.row.ga+'</td><td>'+(derived.row.gf+derived.row.ga?(100*derived.row.gf/(derived.row.gf+derived.row.ga)).toFixed(1)+'%':'—')+'</td><td class="rank-movement rank-still">—</td><td>—</td>'+uncertaintyCell(derived.row.se)+'</tr>';
   }
-  for(const x of rows){const qual=ratingQualified(x,min,type);if(qual)rank++;if(!qual&&!showProv&&ratingRound==null&&x.player!==focusedSearchPlayer)continue;if(q&&!x.player.toLowerCase().includes(q))continue;if(tf&&x.team!==tf)continue;const bandCls=band.classFor(x.rating),cls=bandCls+(qual?'':' provisional');if(window.eightBandFilter&&bandCls!==window.eightBandFilter)continue;if(bandCls&&bandCls!==lastBand){out+=bandDivider(bandCls,band,(type==='pair'?11:10)-(original?1:0));lastBand=bandCls}
+  if(band.order&&!band.order.includes(window.eightBandFilter))window.eightBandFilter='';
+  const bandClass=x=>band.classForEntry?.(x)??band.classFor(x.rating);
+  const displayRows=band.order?.some(id=>id==='b18'||id==='b19')?[...rows].sort((a,b)=>band.order.indexOf(bandClass(a))-band.order.indexOf(bandClass(b))):rows;
+  for(const x of displayRows){const qual=ratingQualified(x,min,type);if(!qual&&!showProv&&ratingRound==null&&x.player!==focusedSearchPlayer)continue;if(q&&!x.player.toLowerCase().includes(q))continue;if(tf&&x.team!==tf)continue;const bandCls=bandClass(x),cls=bandCls+(qual?'':' provisional');if(window.eightBandFilter&&bandCls!==window.eightBandFilter)continue;if(bandCls&&bandCls!==lastBand){out+=bandDivider(bandCls,band,(type==='pair'?11:10)-(original?1:0));lastBand=bandCls}
     const pct=x.gf+x.ga?(100*x.gf/(x.gf+x.ga)).toFixed(1)+'%':'—';
     if(type==='pair'){const pair=lab8OrderedNames(x.player,x.team).map(personButton).join('<button type="button" class="pair-sep person" data-eight-pair="'+esc(x.player)+'" data-eight-round="'+(ratingRound??'')+'" aria-label="Open pair lab"> / </button>'),effect=(x.pairEffect>=0?'+':'')+(x.pairEffect??0);out+='<tr class="'+cls+'"><td>'+rankCell(x)+'</td><td>'+pair+'</td><td>'+teamName(x.team)+'</td><td><b>'+x.rating+'</b></td><td>'+(x.individualAverage??'—')+'</td><td class="'+((x.pairEffect??0)>=0?'performance-above':'performance-below')+'">'+effect+'</td><td>'+(x.wins??'—')+'–'+(x.losses??'—')+'</td><td>'+x.matches+'</td>'+movementCell(x)+''+uncertaintyCell(x.se)+'</tr>'}
     else if(type==='overall')out+='<tr class="'+cls+'"><td>'+rankCell(x)+'</td><td>'+ratingPerson(x)+'</td><td>'+teamName(x.team)+'</td><td><b>'+x.rating+'</b></td><td>'+(x.s?.rating??'—')+'</td><td>'+(x.d?.rating??'—')+'</td><td>'+(qual?'Ranked':'Provisional')+'</td>'+movementCell(x)+''+uncertaintyCell(x.se)+'</tr>';

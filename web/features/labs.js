@@ -40,6 +40,33 @@ function lab8TeamModel(team,round){const m=BRTATeamLab.build(L8.contextData(D,ro
 function lab8Hero(view,name,matches,team,round){const royal=view==='singles'&&auxiliaryPlayer(name)?auxiliaryCache:null,r=royal?.row||L8.row(D,view,name,round),rank=royal?null:L8.rank(D,view,name,round),wins=matches.filter(m=>m.won).length,label=view==='singles'?'Singles':view==='pairs'?'Pair':L8.doublesOnly(D)?'Player':'Individual doubles';let lineup='—';if(royal)lineup='#1';else if(view==='singles'){const model=lab8TeamModel(team,round),i=model.core.findIndex(p=>p.name===name);lineup=i>=0?'#'+(i+1):model.emergencies.some(p=>p.name===name)?'E':'—'}else if(matches.length){const count={};matches.forEach(m=>count[m.position]=(count[m.position]||0)+1);lineup='D'+Object.keys(count).sort((a,b)=>count[b]-count[a])[0]}
 return '<section class="lab8-hero"><div class="lab8-power"><div><span>'+label+' Power</span><strong>'+(r?.rating??'—')+'</strong></div><div><span>Section rank</span><strong>'+(rank?'#'+rank:'—')+'</strong></div></div><div class="lab8-facts">'+profileMetric('Record',wins+'–'+(matches.length-wins))+'<button type="button" class="lab-metric" data-eight-lineup="'+esc(team)+'"><span>Lineup position</span><b>'+lineup+'</b></button></div>'+lab8Highlights(matches)+'</section>'}
 function lab8Partners(name,round){const pairs=L8.rows(D,'pairs',round).filter(p=>L8.members(p.player).includes(name));return '<div class="lab8-partners">'+pairs.map(p=>{const ms=L8.matches(D,p.player,'pairs',round),position=ms.length?(ms.reduce((n,m)=>n+m.position,0)/ms.length).toFixed(1):'—';return '<div>'+lab8PairLink(p.player,round,[name,...L8.members(p.player).filter(n=>n!==name)].join(' / '))+'<span>'+p.rating+' – '+(p.wins??ms.filter(m=>m.won).length)+'–'+(p.losses??ms.filter(m=>!m.won).length)+' – D'+position+'</span></div>'}).join('')+'</div>'}
+const labBandDescriptions={
+ Zenith:'At least 3000 Power and a recorded win over another player or pair in Apex.',
+ Apex:'Among the highest-rated players or pairs in this section.',
+ Elite:'Rated well above the section’s typical level.',
+ Advanced:'Rated above the main group in this section.',
+ Strong:'Rated on the stronger side of the section’s core group.',
+ 'Middle Class':'Rated around the middle of the section.',
+ Developing:'Rated below the middle of the section.',
+ Struggling:'Rated toward the lower end of the section.',
+ Foundational:'In the lowest ordinary rating band for this section.',
+ Basement:'At least ten completed matches, all straight 6–0 losses to below-average opponents.'
+};
+function labPerformanceBands(name,round,pair,doublesOnly){
+ const views=pair?[['pairs','Partnership']]:doublesOnly?[['doublesPlayers','Doubles']]:
+  [['singles','Singles'],['doublesPlayers','Individual doubles'],['overall','Overall']];
+ const cards=views.flatMap(([view,label])=>{
+  const rows=L8.rows(D,view,round),entry=rows.find(row=>pair?L8.key(row.player)===L8.key(name):row.player===name);
+  if(!entry||!Number.isFinite(entry.rating))return [];
+  const model=bandModel(rows,0,view,view,round),id=model.classForEntry?.(entry)??model.classFor(entry.rating);
+  const index=Number(id.slice(1)),band=model.names[index];
+  if(!band)return [];
+  return ['<article class="lab-performance-band band-key '+id+'"><i aria-hidden="true"></i><div><small>'+label+'</small><h4>'+esc(band)+
+   '</h4><p>'+esc(labBandDescriptions[band]||('This band covers '+model.bounds[index]+' Power.'))+'</p></div></article>'];
+ });
+ return '<section class="profile-section lab-section lab-performance-bands"><h3>Performance bands</h3>'+
+  (cards.length?'<div>'+cards.join('')+'</div>':'<p class="small-note">A section band is unavailable for this entry.</p>')+'</section>';
+}
 function lab8Open(name,round=null,pair=false){
  const royal=!pair&&auxiliaryPlayer(name)?auxiliaryCache:null;
  const doublesOnly=!royal&&L8.doublesOnly(D);lab8Context={name,round,pair};activeProfilePlayer=name;
@@ -54,6 +81,7 @@ function lab8Open(name,round=null,pair=false){
  if(!pair){const days=royal?single:(D.results||[]).filter(g=>round==null||g.round<=round).flatMap(g=>g.fixtures||[]).filter(f=>(f.home===team||f.away===team)&&f.status!=='Scheduled'&&f.status!=='Bye'),appear=new Set([...single,...double].map(m=>m.fixtureId)).size,roleMatches=doublesOnly?double:single,positions=[...new Set(roleMatches.map(m=>m.position))].sort((a,b)=>a-b);html+='<section class="profile-section lab-section"><h3>Team role</h3><p>'+appear+'/'+days.length+' ties – '+(days.length?Math.round(100*appear/days.length):0)+'%</p><div class="table-wrap"><table><thead><tr><th>Position</th><th>Matches</th><th>W–L</th></tr></thead><tbody>'+positions.map(pos=>{const ms=roleMatches.filter(m=>m.position===pos);return '<tr><td>'+(doublesOnly?'D':'S')+pos+'</td><td>'+ms.length+'</td><td>'+rec(ms)+'</td></tr>'}).join('')+'</tbody></table></div></section><section class="profile-section lab-section"><h3>Partnerships</h3>'+lab8Partners(name,round)+'</section>'}
  if(royal)html+='<section class="profile-section lab-section"><h3>Season notes</h3><button class="button secondary" type="button" data-aux-backstory>See Backstory</button></section>';
  html+=lab823Pressure(single,double,pair);
+ html+=labPerformanceBands(name,round,pair,doublesOnly);
  html+='<div class="profile-inline-explorer">'+(!pair?'<h3>Singles matches</h3>'+lab8Rows(single):'')+'<h3>Doubles matches</h3>'+lab8Rows(double,pair?'pairs':'doublesPlayers')+'</div>';
  $('#profileContent').innerHTML=html;$('#profileContent').classList.add('lab8');$('#profileOverlay').classList.remove('hidden');eightRaise($('#profileOverlay'));
  const explorer=$('#profileMatchExplorerContent');explorer.innerHTML='<div class="floating-explorer-head"><div class="kicker">MATCH EXPLORER</div><h3>'+(pair||doublesOnly?double.length+' doubles matches':single.length+' singles match'+(single.length===1?'':'es'))+'</h3></div>'+(!pair?lab8Rows(single):'')+(pair?'':'<h3>'+double.length+' doubles match'+(double.length===1?'':'es')+'</h3>')+lab8Rows(double,pair?'pairs':'doublesPlayers')+'';$('#profileMatchExplorer').classList.remove('hidden');document.body.classList.add('modal-open');lab801Order(single,double,pair);

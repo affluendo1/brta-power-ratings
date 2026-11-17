@@ -306,3 +306,20 @@ html[data-animation="off"] .profile-head h2.player-lab-rainbow { animation: none
 .lab-compare-key span { border-inline-start: 3px solid var(--series-color); padding-inline-start: 6px; }
 .latest-highlights { grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr)); }
 .latest-chance { color: var(--muted-color); font-size: .8rem; text-align: left; }
+
+/* Rare performance bands and their Player Lab summaries. */
+:is(.band-key,.band-divider,tr).b18 { --band:#bd86fc; --band-color:#bd86fc; }
+:is(.band-key,.band-divider,tr).b19 { --band:#ff686f; --band-color:#ff686f; }
+.band-key.b18,.band-divider.b18 td { background:linear-gradient(115deg,#9a58e728,#d759e015,#9a58e728); background-size:230% 100%; }
+.band-key.b18 i,.band-divider.b18 i { background:#bd86fc; }
+.band-key.b19 i,.band-divider.b19 i { background:#ff686f; }
+.band-key.b19,.band-divider.b19 td { background:color-mix(in srgb,#d74257 12%,var(--surface)); }
+@media (prefers-reduced-motion:no-preference) {
+ .band-key.b18,.band-divider.b18 td { animation:zenith-band 6s ease-in-out infinite alternate; }
+ @keyframes zenith-band { to { background-position:100% 0; } }
+}
+.lab-performance-bands > div { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,165px),1fr)); gap:12px; }
+.lab-performance-band { display:flex; align-items:flex-start; gap:12px; padding:14px; min-width:0; }
+.lab-performance-band i { flex:0 0 4px; height:34px; }
+.lab-performance-band h4 { margin:3px 0 6px; font-size:1.3rem; }
+.lab-performance-band p { margin:0; font-size:.84rem; }

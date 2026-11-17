@@ -2,6 +2,16 @@
 // Retrospective entries use source-commit timestamps; sourceCommit records their provenance.
 window.BRTA_RELEASES = Object.freeze([
   {
+    "version": "9.1.2.3",
+    "size": "tiny",
+    "title": "Zenith and Foundational bands",
+    "committedAt": "2026-11-17T13:30:00+11:00",
+    "changes": [
+      "Apex and Foundational anchor the standard ratings bands. Zenith and Basement appear when a player or partnership qualifies.",
+      "Player and Pair Labs show the applicable performance bands with short explanations."
+    ]
+  },
+  {
     "version": "9.1.2.2",
     "size": "tiny",
     "title": "Performance bands and small-section ranking",
