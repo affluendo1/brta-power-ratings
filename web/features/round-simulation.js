@@ -3,7 +3,7 @@
  let setup;
  const fixturesFor = round => (D.upcomingFixtures || []).find(row => String(row.round) === String(round));
  const isBye = fixture => window.BRTAFinalsMath?.bye?.(fixture) ?? (fixture.status === 'Bye' || /^(?:bye|byes)$/i.test(fixture.home) || /^(?:bye|byes)$/i.test(fixture.away));
- const scheduled = entry => entry.fixtures.filter(fixture => !isBye(fixture) && fixture.status === 'Scheduled' && !findFixtureResult(fixture, entry.round));
+ const scheduled = entry => entry.fixtures.filter(fixture => canPredictFixture(fixture, entry.round));
  const byeTeams = entry => entry.fixtures.filter(isBye).map(fixture => fixture.home === 'Bye' ? fixture.away : fixture.home).filter(Boolean);
  const options = () => ({ format: D.format, greenBall: !!D.greenBall, custom: !!D.meta.is_custom,
    setWinsDecideTies: !!D.meta.competition_rules });

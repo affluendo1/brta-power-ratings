@@ -2,6 +2,17 @@
 // Retrospective entries use source-commit timestamps; sourceCommit records their provenance.
 window.BRTA_RELEASES = Object.freeze([
   {
+    "version": "9.1.3",
+    "size": "small",
+    "title": "Final standings and knockout draw",
+    "committedAt": "2026-11-17T18:00:00+11:00",
+    "changes": [
+      "The final regular-season ladder highlights qualifiers and the standings page shows their path through the knockout draw.",
+      "Playoff cards stand out in Results. Pending TROLS playoff fixtures stay open for predictions, with estimated dates when needed.",
+      "Finals Race closes once the regular season is complete, and Latest Round stays on the most recent round with results. Mobile scoresheets leave more room beside each scoreline."
+    ]
+  },
+  {
     "version": "9.1.2.3",
     "size": "tiny",
     "title": "Zenith and Foundational bands",

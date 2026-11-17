@@ -363,7 +363,7 @@
     pending = model.remaining(data);
     places = Number(data.meta?.semifinalPlaces ?? 4);
     caps = model.pointsCap(data);
-    const eligible = !model.finalsStarted(data) && !scheduledFinalsUnderway() && data.standings?.length > places && places > 0 &&
+    const eligible = !BRTAStandings.season(data).complete && !model.finalsStarted(data) && !scheduledFinalsUnderway() && data.standings?.length > places && places > 0 &&
       (data.meta.is_archive || playedRound() >= 10 || (playedRound() > 0 && new Set(pending.map(row => row.round)).size <= 4));
     rows = eligible ? model.bounds(data.standings, pending, caps, places) : [];
     if (!pending.length && rows.length) rows = rows.map((row, index) => {

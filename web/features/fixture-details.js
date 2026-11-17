@@ -25,7 +25,7 @@
 
   function html(fixture) {
     if (!published(fixture)) return '';
-    const date = roundDate(fixture.date), venue = fixture.venue || 'Venue not published';
+    const date = roundDate(fixture.date, fixture.dateEstimated), venue = fixture.venue || 'Venue not published';
     const clock = BRTAMatchday.time(fixture.startTime, D.meta.competition_code);
     const hour = Number(clock.slice(0, 2));
     const time = clock ? (hour % 12 || 12) + ':' + clock.slice(2, 4) + (hour >= 12 ? ' pm' : ' am') : '';

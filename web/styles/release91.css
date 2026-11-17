@@ -403,11 +403,11 @@ html[data-animation="off"] .profile-head h2.player-lab-rainbow { animation: none
 @media (max-width: 760px) {
   #resultContent .result-detail-head { margin-block-end: 20px; }
   .result-scorecard .rubber-table-8541 td {
-    min-height: clamp(44px, 12cqi, 56px);
-    padding-block: 12px;
+    min-height: clamp(37px, 10cqi, 47px);
+    padding-block: 8px;
   }
   .result-scorecard .rubber-table-8541 td.rubber-score-854 {
-    padding-inline: clamp(10px, 4.5cqi, 24px);
+    padding-inline: clamp(14px, 6cqi, 29px);
   }
   .result-scorecard .rubber-table-8541 td.rubber-score-854 strong {
     font-size: clamp(14px, 4.3cqi, 18px);
@@ -526,3 +526,62 @@ tr:not(.band-divider):is(.b18,.b19) > td:first-child { box-shadow:inset 3px 0 va
 .lab-band-evidence strong { display:block; margin:8px 0 2px; }
 .latest-highlights .person { text-decoration:underline; text-underline-offset:.15em; }
 .latest-player-score { white-space:nowrap; color:var(--muted-color); }
+
+/* Finals series */
+.result-round.result-playoff {
+  --playoff-accent: var(--primary);
+  border-color: color-mix(in srgb, var(--playoff-accent) 50%, var(--border-color));
+  border-inline-start: 4px solid var(--playoff-accent);
+}
+.result-round.result-playoff.grand_final { --playoff-accent: #c18d42; }
+.result-playoff .result-round-head {
+  padding: 16px 18px;
+  background: color-mix(in srgb, var(--playoff-accent) 14%, var(--surface));
+}
+.result-playoff .result-round-head h2 { font-size: clamp(1.25rem, 4vw, 1.65rem); }
+.result-playoff .result-round-matches { padding: 12px; }
+.result-playoff .result-match { min-height: 84px; }
+#standingsBody .standing-qualifier {
+  background: color-mix(in srgb, var(--good-color) 11%, var(--surface));
+}
+#standingsBody .standing-qualifier td:first-child { box-shadow: inset 3px 0 var(--good-color); }
+.finals-qualified { display: inline-block; color: var(--good-color); font-size: .72rem; margin-inline-start: .4em; }
+#standingsNote { font-weight: 700; }
+#knockoutSummary:not(:empty) {
+  --bracket-line: color-mix(in srgb, var(--primary) 62%, var(--border-color));
+  padding: clamp(16px, 4vw, 32px);
+  border-color: var(--bracket-line);
+  background: linear-gradient(135deg,color-mix(in srgb,var(--primary) 10%,var(--surface)),var(--surface) 68%);
+}
+.knockout-head { flex-wrap: wrap; align-items: center; }
+.knockout-head h2 { font-size: clamp(1.55rem, 5vw, 2.55rem); }
+.knockout-head p { margin: 4px 0 12px; color: var(--muted-color); }
+.knockout-crown { color: var(--primary); }
+.bracket-grid { --bracket-gap: clamp(30px, 6vw, 72px); display: grid; gap: var(--bracket-gap); }
+.bracket-grid:has(.bracket-semis):has(.bracket-finals) { grid-template-columns: minmax(0,1fr) minmax(0,1fr); }
+.bracket-grid h3 { margin: 0 0 10px; }
+.bracket-grid section { display: flex; flex-direction: column; min-width: 0; }
+.bracket-entries { display: grid; gap: 18px; align-content: center; flex: 1; }
+.bracket-match { position: relative; min-width: 0; padding: 10px; border: 1px solid var(--border-color); border-radius: var(--panel-radius); background: var(--surface-raised); }
+.bracket-match header { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 4px 8px; padding-bottom: 8px; }
+.bracket-match h4 { margin: 0; }
+.bracket-match small,.bracket-seed,.bracket-advance { color: var(--muted-color); font-size: .75rem; }
+.bracket-team { display: flex; align-items: center; gap: 8px; min-height: 36px; padding: 5px 7px; border-top: 1px solid var(--border-color); }
+.bracket-team b { flex: 1; overflow-wrap: anywhere; }
+.bracket-team.advancing { color: var(--good-color); background: color-mix(in srgb,var(--good-color) 10%,var(--surface)); }
+.bracket-finals .bracket-match { border-color: var(--bracket-line); }
+.bracket-grid:has(.bracket-finals) .bracket-semis .bracket-entries:has(.bracket-match:nth-child(2):last-child) .bracket-match::after {
+  content: ''; position: absolute; inset-inline-start: 100%; width: calc(var(--bracket-gap) / 2); height: calc(50% + 10px); border-inline-end: 2px solid var(--bracket-line);
+}
+.bracket-grid:has(.bracket-finals) .bracket-semis .bracket-entries:has(.bracket-match:nth-child(2):last-child) .bracket-match:first-child::after { top: 50%; border-top: 2px solid var(--bracket-line); }
+.bracket-grid:has(.bracket-finals) .bracket-semis .bracket-entries:has(.bracket-match:nth-child(2):last-child) .bracket-match:last-child::after { bottom: 50%; border-bottom: 2px solid var(--bracket-line); }
+.bracket-grid:has(.bracket-semis .bracket-match:nth-child(2):last-child) .bracket-finals .bracket-match:only-child::before {
+  content: ''; position: absolute; top: 50%; inset-inline-end: 100%; width: calc(var(--bracket-gap) / 2); border-top: 2px solid var(--bracket-line);
+}
+@media(max-width:620px) {
+  .bracket-grid:has(.bracket-semis):has(.bracket-finals) { grid-template-columns: 1fr; }
+  .bracket-grid:has(.bracket-finals) .bracket-semis .bracket-entries .bracket-match::after { display: none; }
+  .bracket-grid:has(.bracket-semis .bracket-match:nth-child(2):last-child) .bracket-finals .bracket-match:only-child::before {
+    inset-inline: 50% auto; top: auto; bottom: 100%; width: 0; height: 10px; border: 0; border-inline-start: 2px solid var(--bracket-line);
+  }
+}

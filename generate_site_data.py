@@ -397,12 +397,12 @@ def team_rows(single_rows, fixtures, rules):
                      "ladder":int(ladder_points) if ladder_points.is_integer() else ladder_points})
     return sorted(rows,key=lambda x:x["avg"],reverse=True)
 
-def reconstructed_standings(fixtures, rules):
+def reconstructed_standings(fixtures, rules, regular_rounds=14):
     if "stage" in fixtures.columns:
         stages = fixtures["stage"].fillna("").astype(str).str.casefold()
         fixtures = fixtures[~stages.isin({"semi_final", "grand_final", "semi-final", "grand-final"})].copy()
     if "round" in fixtures.columns and not rules.get("published_only"):
-        fixtures = fixtures[pd.to_numeric(fixtures["round"], errors="coerce").fillna(0).astype(int).le(14)].copy()
+        fixtures = fixtures[pd.to_numeric(fixtures["round"], errors="coerce").fillna(0).astype(int).le(regular_rounds)].copy()
     teams = sorted((set(fixtures.home_team) | set(fixtures.away_team))-{"Bye"})
     s = {t: dict(team=t, played=0, wins=0, draws=0, losses=0, rubbersFor=0, rubbersAgainst=0,
                  gamesFor=0, gamesAgainst=0, points=0) for t in teams}
@@ -554,12 +554,12 @@ def knockout_summary(fixtures, standings, rules, meta):
     stages = fixtures.get("stage", pd.Series([""] * len(fixtures), index=fixtures.index)).fillna("").astype(str).str.casefold()
     semi_stage = stages.isin({"semi_final", "semi-final"})
     final_stage = stages.isin({"grand_final", "grand-final"})
-    semis_mask = semi_stage if rules.get("published_only") else semi_stage | (rounds.eq(15) & ~final_stage)
-    final_mask = final_stage if rules.get("published_only") else final_stage | (rounds.ge(16) & ~semi_stage)
-    regular_mask = ~semis_mask & ~final_mask & (True if rules.get("published_only") else rounds.le(14))
+    expected_rounds = int(meta.get("regular_season_rounds", 14) or 14)
+    semis_mask = semi_stage if rules.get("published_only") else semi_stage | (rounds.eq(expected_rounds + 1) & ~final_stage)
+    final_mask = final_stage if rules.get("published_only") else final_stage | (rounds.ge(expected_rounds + 2) & ~semi_stage)
+    regular_mask = ~semis_mask & ~final_mask & (True if rules.get("published_only") else rounds.le(expected_rounds))
     regular = fixtures[regular_mask]
     unresolved = regular[regular["status"].astype(str).isin({"Missing Result", "Scheduled", "Pending"})]
-    expected_rounds = int(meta.get("regular_season_rounds", 14) or 14)
     published_rounds = set(rounds[regular_mask].tolist())
     all_regular_rounds_present = all(round_no in published_rounds for round_no in range(1, expected_rounds + 1))
     regular_complete = bool(all_regular_rounds_present and unresolved.empty and not rules.get("published_only"))
@@ -1491,7 +1491,7 @@ def build_section(meta, *, sections_dir=None):
                     "scheduleRank":schedule_by_player.get(row["player"],{}).get("rank"),
                     "scheduleTotal":schedule_by_player.get(row["player"],{}).get("total")})
 
-    standings=apply_official_standings(reconstructed_standings(fixtures,rules),meta.get("official_standings", []))
+    standings=apply_official_standings(reconstructed_standings(fixtures,rules,int(meta.get("regular_season_rounds") or 14)),meta.get("official_standings", []))
     knockout=knockout_summary(fixtures,standings,rules,meta)
     team_data=team_rows(srows,fixtures,rules)
     ladder_points={row["team"]:row["points"] for row in standings}

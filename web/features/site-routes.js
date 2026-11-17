@@ -30,7 +30,8 @@
   const publishedFixtures = page => {
     const results = flatten(D.results);
     if (page === 'results') return results;
-    return [...results, ...flatten(D.upcomingFixtures).filter(row => row.status === 'Scheduled' && !findFixtureResult(row, row.round))];
+    return [...results.filter(row => !isPlayoff(row) || !BRTAStandings.pending(row)),
+      ...flatten(D.upcomingFixtures).filter(row => canPredictFixture(row, row.round))];
   };
 
   function publish(replace = false) {
@@ -99,7 +100,7 @@
         const target = routes.findFixture(publishedFixtures(route.page), route.detail);
         if (!target) notice('This link does not identify a unique published fixture.');
         else {
-          if (target.status === 'Scheduled') openPrediction(target.fixtureId);
+          if (canPredictFixture(target, target.round) && fixtureById(target.fixtureId)) openPrediction(target.fixtureId);
           else openMatch(target.fixtureId);
           fixture = target;
           fixturePage = route.page;
