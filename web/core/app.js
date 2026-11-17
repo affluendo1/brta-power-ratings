@@ -489,7 +489,11 @@ function resultDetailHTML(match,contextPlayer=null){
       +'</tr>'}).join('');
   return head+'<section class="result-scorecard" aria-label="Match scorecard">'+(rows?'<table class="rubber-list rubber-table-8541" aria-label="Individual rubber results"><tbody>'+rows+'</tbody></table>':'<div class="notice">TROLS has not published an individual scorecard for this match.</div>')+metrics+'</section>'+(match.simulated?'':historicalMatchContext(match,contextPlayer))
 }
-function openMatch(id,sourcePlayer=null){const match=findMatch(id);if(match){window.BRTAFixtureDetails?.closeMap('#resultOverlay');delete $('#resultOverlay').dataset.simulated;const edit=$('#resultFixtureEdit');edit.hidden=!D.meta?.is_custom||activePage!=='results';edit.dataset.editCustomFixture=id;$('#resultOverlay .round84-externalnav')?.remove();$('#resultOverlay .round841-controls')?.remove();selectedMatch=id;$('#resultContent').innerHTML=resultDetailHTML(match,sourcePlayer);eightRaise($('#resultOverlay'));$('#resultOverlay').classList.remove('hidden');document.body.classList.add('modal-open');if(activePage==='fixtures'){const scheduled=fixtureById(id);if(scheduled){const host=$('#resultContent');host.querySelector('.result-detail-head')?.insertAdjacentHTML('afterend',window.BRTAFixtureDetails?.html(scheduled)||'');window.BRTAFixtureDetails?.hydrate(scheduled,host)}}window.BRTARouteUI?.fixture(match,activePage==='fixtures'?'fixtures':'results');return}if(auxiliaryPlayer(activeProfilePlayer))openAuxiliaryMatch(auxiliaryCache.matches.find(row=>row.fixtureId===id))}
+function resetResultScroll(){
+  $('#resultContent').scrollTop=0;
+  $('#resultOverlay .result-sheet').scrollTop=0;
+}
+function openMatch(id,sourcePlayer=null){const match=findMatch(id);if(match){window.BRTAFixtureDetails?.closeMap('#resultOverlay');delete $('#resultOverlay').dataset.simulated;const edit=$('#resultFixtureEdit');edit.hidden=!D.meta?.is_custom||activePage!=='results';edit.dataset.editCustomFixture=id;$('#resultOverlay .round84-externalnav')?.remove();$('#resultOverlay .round841-controls')?.remove();selectedMatch=id;$('#resultContent').innerHTML=resultDetailHTML(match,sourcePlayer);eightRaise($('#resultOverlay'));$('#resultOverlay').classList.remove('hidden');resetResultScroll();document.body.classList.add('modal-open');if(activePage==='fixtures'){const scheduled=fixtureById(id);if(scheduled){const host=$('#resultContent');host.querySelector('.result-detail-head')?.insertAdjacentHTML('afterend',window.BRTAFixtureDetails?.html(scheduled)||'');window.BRTAFixtureDetails?.hydrate(scheduled,host)}}window.BRTARouteUI?.fixture(match,activePage==='fixtures'?'fixtures':'results');return}if(auxiliaryPlayer(activeProfilePlayer))openAuxiliaryMatch(auxiliaryCache.matches.find(row=>row.fixtureId===id))}
 function renderFixtureRounds(){
   const rounds=D.upcomingFixtures||[];
   $('#fixturesList').innerHTML=rounds.length?rounds.map(r=>'<section class="fixture-round"><div class="fixture-round-head"><h2>'+esc(roundHeading(r))+'</h2><div class="fixture-round-actions"><span>'+esc(roundDate(r.date))+'</span>'+(r.fixtures.some(f=>f.status==='Scheduled'&&!findFixtureResult(f,r.round))?'<button type="button" class="button secondary" data-simulate-round="'+esc(r.round)+'">Simulate round</button>':'')+'</div></div><div class="fixture-list">'+r.fixtures.map(f=>{
@@ -702,8 +706,11 @@ function openAuxiliaryProfile(context){
 }
 function openAuxiliaryMatch(match){
   if(!match)return;
+  const overlay=$('#resultOverlay');
+  delete overlay.dataset.simulated;
+  $('#resultFixtureEdit').hidden=true;
   $('#resultContent').innerHTML='<div class="result-detail-head"><span>Royal Match · '+esc(match.date||'Date not published')+'</span><h2>'+esc(window.AuxiliaryModule.CANONICAL)+' <b>'+esc(match.score)+'</b> '+esc(match.opp)+'</h2><p>Completed best-of-three result</p></div><div class="rubber-list"><div class="rubber-row"><small class="rubber-code" title="Singles 1">S1</small><b class="rubber-home winner">'+esc(window.AuxiliaryModule.CANONICAL)+'</b><strong>'+esc(match.score)+'</strong><b class="rubber-away">'+esc(match.opp)+'</b></div></div>';
-  eightRaise($('#resultOverlay'));$('#resultOverlay').classList.remove('hidden');document.body.classList.add('modal-open');
+  eightRaise($('#resultOverlay'));$('#resultOverlay').classList.remove('hidden');resetResultScroll();document.body.classList.add('modal-open');
 }
 function openAuxiliaryBackstory(context){
   const s=context.row;

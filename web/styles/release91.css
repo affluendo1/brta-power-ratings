@@ -261,6 +261,75 @@ html[data-animation="off"] .profile-head h2.player-lab-rainbow { animation: none
 }
 #resultFixtureEdit { position: relative; grid-row: 1; width: fit-content; z-index: 1; }
 #resultFixtureEdit[hidden] { display: none; }
+#resultOverlay .result-sheet { overscroll-behavior-y: contain; }
+@media (max-width: 760px) {
+  html:has(#resultOverlay:not(.hidden)) {
+    overflow: hidden;
+    overflow-anchor: none;
+    overscroll-behavior: none;
+  }
+  /* The floating results-refresh toast otherwise intercepts swipes above the sheet. */
+  body:has(#resultOverlay:not(.hidden)) .sync-toast {
+    visibility: hidden;
+    pointer-events: none;
+  }
+  #resultOverlay:not(.hidden) {
+    display: grid;
+    grid-template: minmax(0, 1fr) / minmax(0, 1fr);
+    padding: 0;
+    overscroll-behavior: contain;
+  }
+  #resultOverlay:not(.hidden):is([data-simulated], :has(#resultFixtureEdit:not([hidden]))) {
+    grid-template-rows: auto minmax(0, 1fr);
+  }
+  #resultOverlay:not(.hidden):has(#resultFixtureEdit:not([hidden])) {
+    padding: max(8px, env(safe-area-inset-top)) 8px 0;
+  }
+  #resultOverlay:not(.hidden) .result-sheet,
+  #resultOverlay:has(#resultFixtureEdit:not([hidden])) .result-sheet {
+    grid-row: -2 / -1;
+    position: relative;
+    inset: auto;
+    transform: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    max-height: none;
+    min-height: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  #resultClose {
+    position: static;
+    float: none;
+    flex: none;
+    align-self: end;
+    margin: max(8px, env(safe-area-inset-top)) max(12px, env(safe-area-inset-right)) 0 0;
+  }
+  #resultOverlay:is([data-simulated], :has(#resultFixtureEdit:not([hidden]))) #resultClose {
+    margin-top: 8px;
+  }
+  #resultContent {
+    flex: 1 1 auto;
+    min-height: 0;
+    min-width: 0;
+    overflow: hidden auto;
+    overflow-anchor: none;
+    overscroll-behavior-y: contain;
+    padding: 4px max(12px, env(safe-area-inset-right))
+      calc(16px + env(safe-area-inset-bottom)) max(12px, env(safe-area-inset-left));
+  }
+  #resultContent .result-detail-head h2 { margin-inline-end: 0; }
+  #resultOverlay[data-simulated] .round841-controls {
+    grid-row: 1;
+    position: relative;
+    inset: auto;
+    width: 100%;
+    padding: max(8px, env(safe-area-inset-top)) 10px 4px;
+  }
+  #resultOverlay .round841-tools { flex-wrap: wrap; }
+}
 .result-scorecard { container-type: inline-size; }
 .result-scorecard .rubber-table-8541 td.rubber-score-854 {
   white-space: nowrap;
