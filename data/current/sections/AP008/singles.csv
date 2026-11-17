@@ -1,11 +1,11 @@
 fixture_id,date,round,home_team,away_team,position,home_player,away_player,winning_player,score,home_games,away_games,home_sets,away_sets,status,valid_for_rating,home_emergency,away_emergency,source_score
-AP008021,10 Oct 26,2,Clarinda,Overport Park,No. 1,David James,Degan Johnston,David James,8-7,8,7,1,0,Completed,true,false,false,8-7
+AP008021,10 Oct 26,2,Clarinda,Overport Park,No. 1,David James,Degan Johnston,David James,8-7,8,7,1,0,Completed,true,false,true,8-7
 AP008021,10 Oct 26,2,Clarinda,Overport Park,No. 2,Tri Dinh,Leith Scott,Tri Dinh,8-5,8,5,1,0,Completed,true,false,false,8-5
 AP008021,10 Oct 26,2,Clarinda,Overport Park,No. 3,Vincent Wen,William Oakes,Vincent Wen,8-3,8,3,1,0,Completed,true,false,false,8-3
 AP008021,10 Oct 26,2,Clarinda,Overport Park,No. 4,Roland Detterbeck,Theo Thomas,Roland Detterbeck,8-3,8,3,1,0,Completed,true,false,true,8-3
 AP008022,10 Oct 26,2,Carmelite,Mt Eliza Penins,No. 1,Mark Doherty,Russell Human,Mark Doherty,8-3,8,3,1,0,Completed,true,false,false,8-3
 AP008022,10 Oct 26,2,Carmelite,Mt Eliza Penins,No. 2,Francis Forbes,Daniel Black,Daniel Black,7-8,7,8,0,1,Completed,true,false,false,7-8
-AP008022,10 Oct 26,2,Carmelite,Mt Eliza Penins,No. 3,Adam Taylor,William Ong,Adam Taylor,8-2,8,2,1,0,Completed,true,true,false,8-2
+AP008022,10 Oct 26,2,Carmelite,Mt Eliza Penins,No. 3,Adam Taylor,William Ong,Adam Taylor,8-2,8,2,1,0,Completed,true,false,false,8-2
 AP008022,10 Oct 26,2,Carmelite,Mt Eliza Penins,No. 4,Moritz Altrichter,Jason Moser,Moritz Altrichter,8-0,8,0,1,0,Completed,true,true,true,8-0
 AP008024,10 Oct 26,2,BLTC,Sandringham,No. 1,Ingo Bohlken,Jason Clarke,Ingo Bohlken,8-2,8,2,1,0,Completed,true,false,false,8-2
 AP008024,10 Oct 26,2,BLTC,Sandringham,No. 2,Nicholas Higgins,Gavan Wright,Nicholas Higgins,8-3,8,3,1,0,Completed,true,false,false,8-3
@@ -22,7 +22,7 @@ AP008032,17 Oct 26,3,Mt Eliza Penins,Clarinda,No. 4,Andrew Coletti,Charles Mac,A
 AP008033,17 Oct 26,3,Tennis World,Carmelite,No. 1,Ben Lambell,Gim Kurti,Gim Kurti,3-8,3,8,0,1,Completed,true,false,false,3-8
 AP008033,17 Oct 26,3,Tennis World,Carmelite,No. 2,Sam Cassar,Mark Doherty,Mark Doherty,4-8,4,8,0,1,Completed,true,false,false,4-8
 AP008033,17 Oct 26,3,Tennis World,Carmelite,No. 3,Juan Carlos Saaverdra,Francis Forbes,Juan Carlos Saaverdra,8-5,8,5,1,0,Completed,true,false,false,8-5
-AP008033,17 Oct 26,3,Tennis World,Carmelite,No. 4,Andrew Patuto,Adam Taylor,Adam Taylor,6-8,6,8,0,1,Completed,true,false,true,6-8
+AP008033,17 Oct 26,3,Tennis World,Carmelite,No. 4,Andrew Patuto,Adam Taylor,Adam Taylor,6-8,6,8,0,1,Completed,true,false,false,6-8
 AP008042,24 Oct 26,4,BLTC,Mt Eliza Penins,No. 1,Ingo Bohlken,Daniel Black,Daniel Black,6-8,6,8,0,1,Completed,true,false,false,6-8
 AP008042,24 Oct 26,4,BLTC,Mt Eliza Penins,No. 2,Nicholas Higgins,William Ong,Nicholas Higgins,6-3,6,3,1,0,Completed,true,false,false,6-3
 AP008042,24 Oct 26,4,BLTC,Mt Eliza Penins,No. 3,Grant Burnell,James Cullen,,0-1,0,1,0,1,Unfinished,false,false,false,0-1
@@ -33,7 +33,7 @@ AP008043,24 Oct 26,4,Clarinda,Tennis World,No. 3,Vincent Wen,Connor Hindle,Vince
 AP008043,24 Oct 26,4,Clarinda,Tennis World,No. 4,Roland Detterbeck,Andrew Patuto,Andrew Patuto,1-8,1,8,0,1,Completed,true,false,false,1-8
 AP008044,24 Oct 26,4,Carmelite,Sandringham,No. 1,Mark Doherty,Jason Clarke,Mark Doherty,8-2,8,2,1,0,Completed,true,false,false,8-2
 AP008044,24 Oct 26,4,Carmelite,Sandringham,No. 2,Francis Forbes,Gavan Wright,Gavan Wright,6-8,6,8,0,1,Completed,true,false,false,6-8
-AP008044,24 Oct 26,4,Carmelite,Sandringham,No. 3,Adam Taylor,Mark Creelman,Mark Creelman,2-8,2,8,0,1,Completed,true,true,false,2-8
+AP008044,24 Oct 26,4,Carmelite,Sandringham,No. 3,Adam Taylor,Mark Creelman,Mark Creelman,2-8,2,8,0,1,Completed,true,false,false,2-8
 AP008044,24 Oct 26,4,Carmelite,Sandringham,No. 4,Moritz Altrichter,Craig Schwerdt,Moritz Altrichter,8-2,8,2,1,0,Completed,true,true,false,8-2
 AP008051,07 Nov 26,5,Tennis World,Sandringham,No. 1,Sam Cassar,Jason Clarke,Sam Cassar,8-4,8,4,1,0,Completed,true,false,false,8-4
 AP008051,07 Nov 26,5,Tennis World,Sandringham,No. 2,Connor Hindle,Gavan Wright,Connor Hindle,8-5,8,5,1,0,Completed,true,false,false,8-5
