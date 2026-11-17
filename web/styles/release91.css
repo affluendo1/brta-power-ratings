@@ -609,3 +609,81 @@ tr:not(.band-divider):is(.b18,.b19) > td:first-child { box-shadow:inset 3px 0 va
   text-underline-offset: .18em;
 }
 #standingsBody .club-link::after { content: none; }
+
+.header-settings-group { display: flex; align-items: stretch; gap: 6px; flex: none; }
+@media(max-width:760px) {
+  .header-settings-group:has(#customEditorBtn:not(.hidden)) { grid-column: span 2; }
+  .header-settings-group > .button { flex: 1 1 0; }
+}
+html[data-theme="light"] #settingsBtn {
+  color: #171928;
+  background: #f0f2f8;
+  border-color: #777d91;
+}
+html[data-theme="light"] #settingsBtn:is(:hover,:focus-visible) { background: #e1e5f0; }
+
+:is(.band-key,.band-divider,tr).b18,
+#profileOverlay:has(.lab-performance-band.b18) {
+  --rare-ink: #f2e8ff;
+  --rare-surface: #211332;
+  --rare-accent: #cca4ff;
+  --rare-deep: #503280;
+}
+:is(.band-key,.band-divider,tr).b19,
+#profileOverlay:has(.lab-performance-band.b19):not(:has(.lab-performance-band.b18)) {
+  --rare-ink: #ffeded;
+  --rare-surface: #301619;
+  --rare-accent: #ffa1a4;
+  --rare-deep: #722d36;
+}
+html[data-theme="light"] :is(.band-key,.band-divider,tr).b18,
+html[data-theme="light"] #profileOverlay:has(.lab-performance-band.b18) {
+  --rare-ink: #281244;
+  --rare-surface: #f6efff;
+  --rare-accent: #6332a2;
+  --rare-deep: #d8bdf8;
+}
+html[data-theme="light"] :is(.band-key,.band-divider,tr).b19,
+html[data-theme="light"] #profileOverlay:has(.lab-performance-band.b19):not(:has(.lab-performance-band.b18)) {
+  --rare-ink: #441416;
+  --rare-surface: #fff0ef;
+  --rare-accent: #9d303c;
+  --rare-deep: #fac5c9;
+}
+html[data-theme="neon-plus"] :is(.band-key,.band-divider,tr).b18,
+html[data-theme="neon-plus"] #profileOverlay:has(.lab-performance-band.b18) {
+  --rare-surface: #160925;
+  --rare-accent: #e0adff;
+  --rare-deep: #54269b;
+}
+html[data-theme="neon-plus"] :is(.band-key,.band-divider,tr).b19,
+html[data-theme="neon-plus"] #profileOverlay:has(.lab-performance-band.b19):not(:has(.lab-performance-band.b18)) {
+  --rare-surface: #270a12;
+  --rare-accent: #ffa0b6;
+  --rare-deep: #801934;
+}
+:is(.band-key,.band-divider,tr):is(.b18,.b19) {
+  --band: var(--rare-accent);
+  --band-color: var(--rare-accent);
+  --rare-bg: linear-gradient(115deg,var(--rare-surface),color-mix(in srgb,var(--rare-deep) 48%,var(--rare-surface)),var(--rare-surface));
+  background-color: var(--rare-surface);
+  color: var(--rare-ink);
+}
+#ratingBody tr:is(.b18,.b19) :is(.person,.club-link,.team-colour) { color: var(--rare-ink); }
+#profileOverlay:has(.lab-performance-band:is(.b18,.b19)) :is(.profile-sheet,.profile-match-explorer) {
+  --primary: var(--rare-accent);
+  --primary-ink: var(--rare-surface);
+  --accent-color: var(--rare-accent);
+  --surface: var(--rare-surface);
+  --surface-muted: var(--rare-surface);
+  --text-color: var(--rare-ink);
+  --muted-color: color-mix(in srgb,var(--rare-ink) 77%,var(--rare-surface));
+  --lab-accent: var(--rare-accent);
+  --lab-light: var(--rare-deep);
+  --lab-deep: var(--rare-deep);
+  --table-row-alt: color-mix(in srgb,var(--rare-surface) 83%,var(--rare-deep));
+  color: var(--rare-ink);
+}
+#profileOverlay:has(.lab-performance-band:is(.b18,.b19)) :is(.profile-sheet,.profile-match-explorer) :is(.person,.team-colour) {
+  color: var(--rare-accent);
+}

@@ -54,3 +54,22 @@ const append=T.replaceRoster(roster,'Fresh | A\nOther | New team | | E',{replace
 const refsOnly=sample();refsOnly.players.push({id:'reserve',name:'Reserve',teamId:'a',order:3});refsOnly.rounds.at(-1).fixtures[0].homeDoublesPairs=[['reserve','p1']];assert(T.replaceRoster(refsOnly,exported).section.players.find(p=>p.id==='reserve').archived);
 const insights=built.teamInsights;assert.equal(insights.A.completedTies,4);assert.equal(insights.A.lineupCount,1);assert.equal(insights.A.lineupStability,100);assert.equal(insights.A.lineups[0].wins,4);assert.equal(insights.B.lineups[0].losses,4);assert.equal(insights.A.pairs[0].pair,'Alice / Amy');assert.equal(insights.A.lineups[0].rows[0].fixtureId,'match-1');
 console.log('Roster text, matching IDs, row order, archival/reactivation, transfers, atomic validation, append mode and custom team insights: passed');
+
+{
+  const rules={format:'sets',setTarget:6,doublesTarget:6};
+  const match=(h,a)=>({type:'Singles',home:['a'],away:['b'],status:'Scheduled',sets:[{h,a}]});
+  const before={status:'Scheduled',homeLineup:['a'],awayLineup:['b'],homeAttendees:['a'],rubbers:[match('','')]};
+  T.washOut(before,rules,true);
+  assert(T.noPlayWashout(before));
+  assert.deepEqual(before.homeLineup,[]);
+  assert.equal(before.homeAttendees,undefined);
+
+  const during={status:'Scheduled',homeLineup:['a'],awayLineup:['b'],rubbers:[match(6,2),match(3,2),match('','')]};
+  assert.throws(()=>T.washOut(during,rules,true),/play recorded/);
+  T.washOut(during,rules);
+  assert.equal(during.status,'Wash Out');
+  assert.deepEqual(during.rubbers.map(r=>r.status),['Completed','Unfinished','Scheduled']);
+  assert.deepEqual(during.homeLineup,['a']);
+  assert.equal(M.score(during.rubbers[1],rules).score,'3-2 unfinished');
+  console.log('Washouts preserve started scorecards or clear both squads when no play started.');
+}

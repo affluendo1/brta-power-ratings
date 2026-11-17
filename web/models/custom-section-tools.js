@@ -40,6 +40,28 @@
       return false;
     });
   }
+  const enteredScore=m=>(m.sets||[]).some(s=>[s.h,s.a].some(value=>value!==''&&value!=null));
+  const hasPlayed=f=>(f.rubbers||[]).some(m=>enteredScore(m)||['Completed','Retired','Unfinished'].includes(m.status));
+  const noPlayWashout=f=>f.status==='Wash Out'&&!f.rubbers.length&&!f.homeLineup?.length&&!f.awayLineup?.length;
+  function washOut(f,section,noPlay=false){
+    if(noPlay){
+      if(hasPlayed(f))throw Error('This fixture has play recorded. Keep the matches for a mid-fixture washout.');
+      for(const side of ['home','away']){
+        f[side+'Lineup']=[];
+        for(const key of ['DoublesPairs','Attendees','OrderEdited'])delete f[side+key];
+      }
+      f.rubbers=[];
+    }else{
+      const updates=(f.rubbers||[]).filter(m=>m.status==='Scheduled'&&enteredScore(m)).map(m=>{
+        const result={...m,status:'Completed'};
+        try{M.score(result,section)}catch{result.status='Unfinished';M.score(result,section)}
+        return [m,result.status];
+      });
+      for(const [match,status] of updates)match.status=status;
+    }
+    f.status='Wash Out';
+    f.autoStatus=false;
+  }
   function fillMissing(section,f){
     if(!(f.rubbers||[]).length)return 0;
     let fresh;
@@ -153,5 +175,5 @@
     for(const round of next.rounds)for(const f of round.fixtures)for(const m of f.rubbers)for(const side of ['home','away'])if((m[side]||[]).some(id=>prior.get(id)?.teamId!==current.get(id)?.teamId))m[side+'RegisteredTeams']=(m[side]||[]).map((id,i)=>m[side+'RegisteredTeams']?.[i]??prior.get(id)?.teamId??'');
     M.validate(next);return {section:next,summary};
   }
-  const api={parse,merge,finish,lineup,generate,makeMatch,scoreSets,date,plusDays,doublesPairs,hasEnteredResults,fillMissing,rosterPlayers,rosterText,replaceRoster,playerReferences};root.CustomSectionTools=api;if(typeof module!=='undefined')module.exports=api;
+  const api={parse,merge,finish,lineup,generate,makeMatch,scoreSets,date,plusDays,doublesPairs,hasEnteredResults,hasPlayed,noPlayWashout,washOut,fillMissing,rosterPlayers,rosterText,replaceRoster,playerReferences};root.CustomSectionTools=api;if(typeof module!=='undefined')module.exports=api;
 })(typeof window!=='undefined'?window:globalThis);

@@ -21,7 +21,7 @@
   openButton.className = 'button secondary rc-entry';
   openButton.hidden = true;
   openButton.setAttribute('aria-haspopup', 'dialog');
-  $('#settingsBtn')?.before(openButton);
+  $('.header-settings-group')?.before(openButton);
 
   let state = read(), dialog, panel = 'Spin', selected = 0, animation, busy = false, saving = false;
   let filter = 'all', sort = 'high', query = '', confirmId = 0, actionMessage = '';

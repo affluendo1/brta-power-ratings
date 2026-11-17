@@ -2,6 +2,17 @@
 // Retrospective entries use source-commit timestamps; sourceCommit records their provenance.
 window.BRTA_RELEASES = Object.freeze([
   {
+    "version": "9.1.3.1",
+    "size": "small",
+    "title": "Custom competition editor and theme polish",
+    "committedAt": "2026-11-17T21:00:00+11:00",
+    "changes": [
+      "Keep your place while editing a custom competition.",
+      "Record a washout before play without squads, or keep completed and partial scores for a washout during play.",
+      "Settings stays legible in Light mode, Back to editor sits beside it, and Zenith and Basement use independent theme palettes."
+    ]
+  },
+  {
     "version": "9.1.3",
     "size": "small",
     "title": "Final standings and knockout draw",
