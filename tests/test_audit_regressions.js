@@ -3,10 +3,10 @@ const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('nod
 const source=fs.readFileSync(require.resolve('../web/core/app.js'),'utf8');
 const deferred=()=>{let resolve,reject;const promise=new Promise((yes,no)=>{resolve=yes;reject=no});return{promise,resolve,reject}};
 async function sectionRaces(){
-  const nodes=new Map(),get=id=>{if(!nodes.has(id))nodes.set(id,{textContent:'',innerHTML:''});return nodes.get(id)};
+  const nodes=new Map(),get=id=>{if(!nodes.has(id))nodes.set(id,{textContent:'',innerHTML:'',insertAdjacentHTML(_position,html){this.innerHTML+=html}});return nodes.get(id)};
   const fits=new Map(),requests=new Map(),saved=new Map([['brta-history-selection','old season']]);let renders=0;
   const context=vm.createContext({loadingToken:0,D:null,viewCatalog:[{section_code:'old'},{section_code:'new'}],DATA:{globalSync:{}},window:{},document:{body:{classList:{add(){},remove(){}}}},$:get,$$:()=>[],cancelAuxiliaryReveal(){},layoutApplyModel:p=>{const job=deferred();fits.set(p.meta.section_code,job);return job.promise},normaliseTeamLabels:x=>x,fetch:()=>{throw Error('Use preloaded data')},localStorage:{setItem:(key,value)=>saved.set(key,value),removeItem:key=>saved.delete(key)},activeHistorySeasonId:null,renderChoice(){},sectionCompetitionLabel:()=> 'Sunday',fillSections(){},renderAll(){renders++},esc:x=>x});
-  Object.assign(context,{activePage:'results',selectedRatingModel:()=> 'RM3',
+  Object.assign(context,{BRTAStandings:require('../web/models/standings'),activePage:'results',selectedRatingModel:()=> 'RM3',
     BRTAActivity:{run:(_title,work)=>work({stage(){},paint:()=>Promise.resolve()})}});
   vm.runInContext(source.slice(source.indexOf('function loadSection('),source.indexOf('\nfunction statusStrip')),context);
   const payload=code=>({meta:{section_code:code,competition_code:'UA',competition_label:'Sunday',section_label:code},singles:[{player:code}],results:[]});

@@ -1287,6 +1287,30 @@ def sync_meta(metadata, fixtures):
         "resultsLoadedByTrols": raw,
     }
 
+def season_upset_rankings(singles, rating_history, rules):
+    """Rank each round's least likely rated singles win using pre-round Power."""
+    tables = {int(round_no): {row["player"]: row["rating"] for row in rows}
+              for round_no, rows in rating_history.get("tables", {}).items()}
+    biggest_by_round = []
+    for round_no, matches in singles.groupby("round"):
+        round_no = int(round_no)
+        prior = tables.get(max((n for n in tables if n < round_no), default=0), {})
+        candidates = []
+        for match in matches.itertuples(index=False):
+            home, away = match.home_player, match.away_player
+            winner = match.winning_player
+            if home not in prior or away not in prior or winner not in (home, away):
+                continue
+            loser = away if winner == home else home
+            _, chance = _singles_match_probability(prior[winner], prior[loser], rules)
+            if chance < .5:
+                candidates.append({"round": round_no, "fixtureId": str(match.fixture_id),
+                                   "winner": winner, "loser": loser, "winProbability": chance})
+        if candidates:
+            biggest_by_round.append(min(candidates, key=lambda row: row["winProbability"]))
+    return sorted(biggest_by_round, key=lambda row: (row["winProbability"], row["round"]))
+
+
 def round_overview(fixtures, singles, doubles, rating_map, rating_history=None):
     completed_rounds=sorted(set(int(x) for x in singles["round"]))
     latest=max(completed_rounds)
@@ -1519,6 +1543,7 @@ def build_section(meta, *, sections_dir=None):
         "greenBall":bool(rules.get("green_ball",False)),
         "teams":team_data,
         "note":archive_note,
+        "seasonUpsetRankings":season_upset_rankings(singles,history,rules),
         "roundOverview":round_overview(fixtures,singles,doubles,rmap,history) if len(singles) else None,
         "standings":standings,
         "knockout":knockout,

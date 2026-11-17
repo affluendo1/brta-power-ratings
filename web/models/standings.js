@@ -45,6 +45,10 @@
   const last=dates.at(-1),interval=intervals[Math.floor((intervals.length-1)/2)]||7;
   const estimate=phase=>last&&!data.meta?.is_custom?new Date(last[1]+day*interval*(lastRound-last[0]+(phase==='semi_final'?1:2))).toISOString().slice(0,10):'';
   const phaseDates=new Map(playoffFixtures.filter(f=>iso(f.date)).map(f=>[stage(data,f),f.date]));
+  for(const event of data.calendarEvents||[]){
+   const phase=stage(data,event);
+   if(phase!=='regular'&&iso(event.date)&&!phaseDates.has(phase))phaseDates.set(phase,event.date);
+  }
   const posted=new Set(playoffFixtures.filter(f=>!pending(f)).map(f=>stage(data,f)));
   function playoff(f,phase=stage(data,f)){
    if(phase==='regular')return f;

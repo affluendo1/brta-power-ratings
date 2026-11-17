@@ -79,8 +79,8 @@ function roundAnalysis(round) {
       const homeWon = rubber.winner === rubber.home;
       const diff = sets.reduce((sum, set) => sum + set.h - set.a, 0);
       const games = sets.reduce((sum, set) => sum + set.h + set.a, 0);
-      const item = { playerNames: true, winner: homeWon ? rubber.home : rubber.away, loser: homeWon ? rubber.away : rubber.home,
-        score: homeWon ? rubber.score : BRTAScores.flip(rubber.score), margin: Math.abs(diff) };
+      const item = { playerNames: true, homeWon, winner: homeWon ? rubber.home : rubber.away, loser: homeWon ? rubber.away : rubber.home,
+        score: homeWon ? rubber.score : BRTAScores.flip(rubber.score), margin: Math.abs(diff), bagelSets: sets.flatMap((set,index) => set.h === 6 && set.a === 0 ? [{index,home:true}] : set.a === 6 && set.h === 0 ? [{index,home:false}] : []) };
       players.push(item);
       const view = rubber.type === 'Doubles' ? 'pairs' : 'singles';
       const hasBand = (name, band) => priorBand(view, name) === band ||
@@ -98,6 +98,7 @@ function roundAnalysis(round) {
         BRTAPrediction.matchDistribution(p, { bestOf, targetGames, matchTiebreak });
       const win = distribution.reduce((sum, row) => sum + (row.homeWin ? row.probability : 0), 0);
       item.chance = homeWon ? win : 1 - win;
+      item.gameChance = p;
       item.performance = Math.round((homeWon ? away : home) + scale * Math.log((games + (homeWon ? diff : -diff) + 1) /
         (games - (homeWon ? diff : -diff) + 1)));
       rubbers.push({ p: win, scoreDistribution: distribution });
@@ -122,6 +123,12 @@ function roundAnalysis(round) {
     .sort((a,b) => getter(b) - getter(a))[0];
   previousAnalysis = { data: D, round: round.round, forecasts, rareUpsets, top: best(players, row => row.performance),
     upset: best(players, row => row.chance < .5 ? -row.chance : NaN),
+    bagels: players.flatMap(row => row.bagelSets.map(set => ({
+      ...row, score: '6–0', set: set.index+1,
+      winner: set.home === row.homeWon ? row.winner : row.loser,
+      loser: set.home === row.homeWon ? row.loser : row.winner,
+      bagelChance: row.gameChance == null ? null : (set.home ? row.gameChance : 1-row.gameChance)**6
+    }))).sort((a,b) => (a.bagelChance ?? Infinity) - (b.bagelChance ?? Infinity)),
     dominant: best(players, row => row.margin), closest: best(players, row => -row.margin),
     teamPerformance: best(teams, row => row.above > 0 ? row.above : NaN),
     teamUpset: best(teams, row => row.chance < .5 ? -row.chance : NaN), teamDominant: best(teams, row => row.margin) };
@@ -148,7 +155,10 @@ function render() {
     ...analysis.rareUpsets.map(({title,item})=>highlight(title,item,'rare-upset')),
     highlight('Top performance', analysis.top, 'top', row => 'Performance ≈ ' + row.performance, 'No pre-round rating evidence'),
     highlight('Biggest upset', analysis.upset, 'upset', row => chance(row.chance) + ' pre-round win chance', 'No upset identified'),
-    highlight('Most dominant', analysis.dominant, '', row => row.margin + ' game margin'),
+    analysis.bagels.length ? '<details class="round-highlight latest-bagels"><summary>Most dominant · '+analysis.bagels.length+' 6–0 scoreline'+(analysis.bagels.length===1?'':'s')+'</summary>'+
+      analysis.bagels.map(row => highlight('Set '+row.set, row, '', item => item.bagelChance == null ?
+        'No pre-round rating evidence' : chance(item.bagelChance)+' chance of a 6–0 set')).join('')+'</details>' :
+      highlight('Most dominant', analysis.dominant, '', row => row.margin + ' game margin'),
     highlight('Closest player match', analysis.closest, '')
   ];
   const teamHighlights = [

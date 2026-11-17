@@ -9,7 +9,9 @@ window.BRTA_RELEASES = Object.freeze([
     "changes": [
       "The final regular-season ladder highlights qualifiers and the standings page shows their path through the knockout draw.",
       "Playoff cards stand out in Results. Pending TROLS playoff fixtures stay open for predictions, with estimated dates when needed.",
-      "Finals Race closes once the regular season is complete, and Latest Round stays on the most recent round with results. Mobile scoresheets leave more room beside each scoreline."
+      "Finals Race closes once the regular season is complete, and Latest Round stays on the most recent round with results. Mobile scoresheets leave more room beside each scoreline.",
+      "Official TROLS playoff dates take priority, the ladder uses a compact Q marker, and Latest Round lists every 6–0 set by likelihood.",
+      "Rare rating bands show visual evidence, and six lopsided losses can qualify for Basement."
     ]
   },
   {

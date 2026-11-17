@@ -585,3 +585,21 @@ tr:not(.band-divider):is(.b18,.b19) > td:first-child { box-shadow:inset 3px 0 va
     inset-inline: 50% auto; top: auto; bottom: 100%; width: 0; height: 10px; border: 0; border-inline-start: 2px solid var(--bracket-line);
   }
 }
+
+.standings-arrow { width: .9em; height: .9em; fill: none; stroke: currentColor; stroke-width: 1.7; vertical-align: -.1em; }
+.finals-qualified { font-size: 1em; font-weight: 900; }
+.result-playoff .result-match {
+  background: color-mix(in srgb,var(--playoff-accent) 12%,var(--surface));
+  border-color: color-mix(in srgb,var(--playoff-accent) 36%,var(--border-color));
+}
+.result-playoff .result-match:hover,.result-playoff .result-match:focus-visible {
+  background: color-mix(in srgb,var(--playoff-accent) 20%,var(--surface));
+}
+.lab-band-metrics { display: grid; grid-template-columns: repeat(auto-fit,minmax(72px,1fr)); gap: 8px; }
+.lab-band-metrics > div { display: grid; align-content: start; gap: 3px; padding: 6px; border-top: 2px solid var(--band); }
+.lab-band-metrics span,.lab-band-metrics small,.lab-band-result { font-size: .75rem; }
+.lab-band-metrics b { font-size: 1.15rem; }
+.lab-band-evidence meter { width: 100%; accent-color: var(--band); }
+.lab-band-result { padding: 6px; }
+.latest-bagels summary { cursor: pointer; font-weight: 700; }
+.latest-bagels > div { margin-top: .4rem; }

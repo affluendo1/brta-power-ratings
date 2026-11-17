@@ -35,7 +35,7 @@ function performanceBands(data,view,list,round=null){
  const zenithPower=3050;
  const highElite=Math.ceil(base.cuts[1]+(base.cuts[0]-1-base.cuts[1])*2/3);
  const basementPower=Math.floor(base.median-2*base.spread);
- const basementMatches=8,basementWinShare=.125,basementGameShare=.22;
+ const basementMatches=6,basementWinShare=.125,basementGameShare=.22;
  const discipline=view==='overall'?'singles':view;
  const opponentPower=match=>{
   if(view!=='doublesPlayers')return powers.get(label(match.opp));
@@ -52,15 +52,16 @@ function performanceBands(data,view,list,round=null){
    if(bestWin)qualifications.set(id,{band:'b18',minimumPower:zenithPower,opponentMinimum:highElite,
     opponent:bestWin.match.opp,opponentPower:bestWin.power,score:bestWin.match.score,round:bestWin.match.round});
   }
-  if(ordinary!=='b7'||entry.rating>basementPower||!((entry.matches??entry.s?.matches)>=basementMatches))continue;
+  if(!((entry.matches??entry.s?.matches)>=basementMatches))continue;
   const record=matches(data,entry.player,discipline,round);
   const wins=record.filter(match=>match.won).length;
   if(record.length<basementMatches||wins/record.length>basementWinShare)continue;
   const gamesWon=record.reduce((count,match)=>count+match.gf,0);
   const gamesLost=record.reduce((count,match)=>count+match.ga,0);
   const gamesPlayed=gamesWon+gamesLost;
-  if(gamesPlayed>0&&gamesWon/gamesPlayed<=basementGameShare)qualifications.set(id,{band:'b19',
-   maximumPower:basementPower,medianPower:base.median,wins,losses:record.length-wins,gamesWon,gamesPlayed});
+  const gameShare=gamesWon/gamesPlayed, scorelineRoute=wins===0&&gameShare<=.10;
+  if(gamesPlayed>0&&(scorelineRoute||(ordinary==='b7'&&entry.rating<=basementPower&&gameShare<=basementGameShare)))qualifications.set(id,{band:'b19',
+   maximumPower:basementPower,scorelineRoute,wins,losses:record.length-wins,gamesWon,gamesPlayed});
  }
  const active=new Set([...qualifications.values()].map(result=>result.band));
  if(active.has('b18')){order.unshift('b18');names[18]='Zenith';bounds[18]='';}

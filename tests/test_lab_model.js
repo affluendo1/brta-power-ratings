@@ -36,7 +36,11 @@ assert.deepEqual(
  [0,8,8,56]
 );
 assert(!modelFor(1).order.includes('b18'));
-assert(!modelFor(7).order.includes('b19'));
+assert(!modelFor(5).order.includes('b19'));
+assert(modelFor(6).order.includes('b19'));
+const lopsided = {...rareData,results:Array.from({length:6},(_,i)=>
+ singlesResult(i+1,low.player,regular[6].player,regular[6].player,i<2?'1-6':'0-6'))};
+assert(modelFor(null,rareRows,lopsided).qualificationForEntry(low).scorelineRoute);
 assert(!modelFor(null,[{...top,rating:3049},...rareRows.slice(1)]).qualificationForEntry(top));
 const eliteWin={...rareData,results:[singlesResult(1,top.player,regular[0].player,top.player,'6-4')]};
 assert.equal(modelFor(null,rareRows,eliteWin).classForEntry(top),'b0');

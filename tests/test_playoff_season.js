@@ -51,3 +51,12 @@ suppliedDate.results.at(-1).date = '2 Nov 26';
 assert.equal(standings.season(suppliedDate).fixtures.at(-1).date, '2 Nov 26');
 assert(!standings.season(suppliedDate).fixtures.at(-1).dateEstimated);
 console.log('Playoff season: stage-based dating, scheduled placeholders, partial results, archive handling and frozen ladder passed.');
+
+const officialCalendar = {...sample, calendarEvents: [
+  {label:'Semi Final · if qualified',date:'8 Nov 26'},
+  {label:'Grand Final · if qualified',date:'15 Nov 26'}
+]};
+const official = standings.season(officialCalendar);
+assert.equal(official.results.at(-1).date,'8 Nov 26');
+assert(!official.results.at(-1).dateEstimated);
+assert.equal(official.playoff({status:'Scheduled'},'grand_final').date,'15 Nov 26');

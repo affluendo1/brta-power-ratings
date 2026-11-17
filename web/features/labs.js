@@ -51,17 +51,19 @@ const labBandDescriptions={
  Foundational:'In the section’s lowest standard band.'
 };
 function labBandEvidence(evidence,rating,view){
+ const tile=(label,value,target)=>'<div><span>'+esc(label)+'</span><b>'+esc(value)+'</b>'+(target?'<small>'+esc(target)+'</small>':'')+'</div>';
  if(evidence.band==='b18'){
   const {opponent,opponentPower,opponentMinimum,minimumPower,score,round}=evidence;
-  const powerLabel=view==='doublesPlayers'?'average individual doubles Power':view==='overall'?'Overall Power':'Power';
-  const result=view==='overall'?'a singles win over':'a win over';
-  return rating+' Power met the '+minimumPower+' minimum. The qualifying result was '+result+' '+opponent+
-   ' '+score+(Number.isFinite(round)?' in Round '+round:'')+' ('+opponentPower+' '+powerLabel+', with '+opponentMinimum+' needed).';
+  const label=view==='doublesPlayers'?'Opposing pair average':view==='overall'?'Opponent Overall Power':'Opponent Power';
+  return '<div class="lab-band-metrics">'+tile('Power',rating,'Minimum '+minimumPower)+tile(label,opponentPower,'Minimum '+opponentMinimum)+
+   '</div><div class="lab-band-result"><b>W '+esc(score)+'</b> '+esc(opponent)+(Number.isFinite(round)?' · R'+esc(round):'')+'</div>';
  }
- const {maximumPower,medianPower,wins,losses,gamesWon,gamesPlayed}=evidence;
- return rating+' Power was below the section median of '+Math.round(medianPower)+' and met the '+maximumPower+
-  ' cutoff. The record was '+wins+'–'+losses+', with '+gamesWon+' of '+gamesPlayed+' games won ('+
-  (100*gamesWon/gamesPlayed).toFixed(1)+'%).';
+ const {maximumPower,scorelineRoute,wins,losses,gamesWon,gamesPlayed}=evidence;
+ const share=100*gamesWon/gamesPlayed, limit=scorelineRoute?10:22;
+ return '<div class="lab-band-metrics">'+tile('Record',wins+'–'+losses)+
+  tile('Games won',gamesWon+' / '+gamesPlayed,share.toFixed(1)+'% · max '+limit+'%')+
+  (scorelineRoute?'':tile('Power',rating,'Maximum '+maximumPower))+
+  '</div><meter aria-label="Share of games won" min="0" max="100" value="'+share+'"></meter>';
 }
 function labPerformanceBands(name,round,pair,doublesOnly){
  const views=pair?[['pairs','Partnership']]:doublesOnly?[['doublesPlayers','Doubles']]:
@@ -74,7 +76,7 @@ function labPerformanceBands(name,round,pair,doublesOnly){
   if(!band)return [];
   const evidence=model.qualificationForEntry?.(entry);
   return ['<article class="lab-performance-band band-key '+id+'"><div class="lab-band-top"><span>'+label+'</span><span>'+esc(entry.rating)+' Power</span></div>'+
-   '<h4>'+esc(band)+'</h4>'+(evidence?'<p class="lab-band-evidence"><strong>Why '+esc(band)+'</strong>'+esc(labBandEvidence(evidence,entry.rating,view))+'</p>':
+   '<h4>'+esc(band)+'</h4>'+(evidence?'<div class="lab-band-evidence" aria-label="Qualification for '+esc(band)+'">'+labBandEvidence(evidence,entry.rating,view)+'</div>':
    '<p>'+esc(labBandDescriptions[band]||('Power range '+model.bounds[index]))+'</p>')+'</article>'];
  });
  return '<section class="profile-section lab-section lab-performance-bands"><h3>Performance bands</h3>'+

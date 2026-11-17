@@ -170,5 +170,22 @@ class HistoricalDataTests(unittest.TestCase):
         self.assertTrue(roster["Emergency"]["emergencyOnly"])
 
 
+class SeasonUpsetTests(unittest.TestCase):
+    def test_only_rated_upset_from_each_round_is_ranked_by_pre_match_chance(self):
+        from generate_site_data import season_upset_rankings
+        games = pd.DataFrame([
+            (1, "early", "A", "B", "A"),
+            (2, "small", "A", "B", "A"),
+            (2, "larger", "A", "C", "A"),
+            (3, "largest", "B", "C", "B"),
+        ], columns=["round", "fixture_id", "home_player", "away_player", "winning_player"])
+        tables = {"1": [{"player": "A", "rating": 1300}, {"player": "B", "rating": 1400},
+                        {"player": "C", "rating": 1600}],
+                  "2": [{"player": "B", "rating": 1200}, {"player": "C", "rating": 1900}]}
+        rows = season_upset_rankings(games, {"tables": tables}, {"format": "sets"})
+        self.assertEqual([row["fixtureId"] for row in rows], ["largest", "larger"])
+        self.assertLess(rows[0]["winProbability"], rows[1]["winProbability"])
+
+
 if __name__ == "__main__":
     unittest.main()
