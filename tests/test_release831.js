@@ -1,10 +1,11 @@
 'use strict';
 const assert=require('node:assert/strict'),L=require('../web/models/layout-model'),E=require('../web/models/rm4-engine'),P=require('../web/models/prediction'),C=require('../web/models/custom-section-model');
 const ranked=Array.from({length:43},(_,i)=>({player:'P'+i,rating:1100+i*22,qualified:true}));
-const provisional={player:'New',rating:1660,qualified:false},a=L.bands(ranked,r=>r.qualified),b=L.bands([...ranked,provisional,{rating:9000,qualified:false}],r=>r.qualified);
-assert.equal(a.names.length,8);assert.deepEqual(a.cuts,b.cuts);assert.equal(b.classFor(provisional.rating),b.classFor(1660));
+const provisional={player:'New',rating:1660,qualified:false},a=L.bands(ranked),b=L.bands([...ranked,provisional,{rating:9000,qualified:false}]);
+assert.equal(a.names.length,8);assert.notDeepEqual(a.cuts,b.cuts);assert.equal(b.classFor(9000),'b0');
+assert.match(b.classFor(provisional.rating),/^b[0-7]$/);assert(b.spread<2*a.spread,'A provisional outlier must not dominate the robust spread.');
 assert.equal(a.classFor(a.cuts[0]),'b0');assert.equal(a.classFor(a.cuts.at(-1)-1),'b7');assert.equal(L.bands([{rating:1500},{rating:1500}]).classFor(1500),'b4');
-assert.equal(L.bands([{rating:1700,qualified:false}],r=>r.qualified).bounds.length,8);
+assert.equal(L.bands([{rating:1700,qualified:false}]).bounds.length,8);
 const transformed=L.bands(ranked.map(r=>({...r,rating:2000+1.7*(r.rating-1500)})));
 for(const r of ranked)assert.equal(a.classFor(r.rating),transformed.classFor(2000+1.7*(r.rating-1500)));
 const data={meta:{predictionModel:'RM4.1 Ensemble',ratingCentre:1500,ratingScale:450,ratingProbabilityScale:450},singles:[{player:'A',rating:1800,se:100,lo:1604,hi:1996,ratingChange:20},{player:'B',rating:1200,se:80}],doubles:[{rating:1650,individualAverage:1600,pairEffect:50}],ratingHistory:{players:{A:[[1,1700,100,4,'Red']]},tables:{1:[{rating:1700,se:100}]}},rm4:{fits:{RM4b:{skills:{Singles:{A:2/3,B:-2/3}}}}}};

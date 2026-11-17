@@ -33,7 +33,9 @@ assert.equal(data.ratingHistory.tables[1].find(x=>x.player==='Alice').matches,1)
 assert.equal(data.doublesRatingHistory.tables[2].pairs[0].matches,2);
 assert(data.doublesIndividuals.every(x=>!x.qualified),'Fixed partnerships must remain unidentifiable.');
 assert.deepEqual(data.results[0].fixtures[0].rubbers.map(x=>x.type),['Singles','Doubles','Singles'],'Manual match order must survive.');
-assert(H.withMovement(data,'singles').some(x=>x.isNew));
+assert(H.withMovement(data,'singles',2).every(row=>row.rank===null),'Two matches are still provisional.');
+assert(H.withMovement(data,'singles',3).every(row=>row.rank!==null&&row.isNew),'Players in the two-player format first rank in round three.');
+assert(H.withMovement(data,'singles').every(row=>row.rank!==null&&!row.isNew),'Round four carries the existing rankings forward.');
 let s=sample();s.rounds[0].fixtures[0].rubbers[0].away=['p5'];assert.throws(()=>M.build(s),/emergency/);s.rounds[0].fixtures[0].rubbers[0].awayEmergencies=[true];assert(M.build(s).results.at(-1).fixtures[0].rubbers[0].awayEmergency);
 s=sample();s.rounds[0].fixtures[0].rubbers[0].sets=[{h:6,a:6}];assert.throws(()=>M.build(s),/winning score/);
 s=sample();s.rounds[0].fixtures[0].rubbers[0].sets=[{h:6,a:''}];assert.throws(()=>M.build(s),/both sides/);
