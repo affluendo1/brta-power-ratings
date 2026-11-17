@@ -28,83 +28,83 @@
   "calendar_events": [
     {
       "date": "27 Feb 27",
-      "label": "Semi Final \u00b7 if qualified"
+      "label": "Semi Final · if qualified"
     },
     {
       "date": "13 Mar 27",
-      "label": "Grand Final \u00b7 if qualified"
+      "label": "Grand Final · if qualified"
     },
     {
       "date": "20 Mar 27",
-      "label": "Spare \u00b7 if required"
+      "label": "Spare · if required"
     }
   ],
   "official_standings": [
     {
       "position": 1,
-      "team": "Mentone",
-      "wins": 3,
-      "points": 34,
-      "percentage": 217.54,
+      "team": "Royal Ave",
+      "wins": 4,
+      "points": 36,
+      "percentage": 192.44,
       "marker": ""
     },
     {
       "position": 2,
-      "team": "Royal Ave",
+      "team": "Mentone",
       "wins": 3,
-      "points": 28,
-      "percentage": 253.03,
+      "points": 36,
+      "percentage": 148.74,
       "marker": ""
     },
     {
       "position": 3,
-      "team": "Le Page",
-      "wins": 2,
-      "points": 26,
-      "percentage": 102.25,
+      "team": "Mordialloc",
+      "wins": 3,
+      "points": 30,
+      "percentage": 131.67,
       "marker": ""
     },
     {
       "position": 4,
-      "team": "Mordialloc",
+      "team": "Le Page",
       "wins": 2,
-      "points": 21,
-      "percentage": 128.21,
+      "points": 27,
+      "percentage": 90.48,
       "marker": ""
     },
     {
       "position": 5,
-      "team": "St Louis de Mont Red",
-      "wins": 1,
-      "points": 15,
-      "percentage": 64.38,
+      "team": "BLTC",
+      "wins": 2,
+      "points": 20,
+      "percentage": 89.91,
       "marker": ""
     },
     {
       "position": 6,
+      "team": "St Louis de Mont Red",
+      "wins": 1,
+      "points": 16,
+      "percentage": 61.5,
+      "marker": ""
+    },
+    {
+      "position": 7,
       "team": "St Louis de Mont Blue",
       "wins": 1,
       "points": 15,
       "percentage": 57.56,
       "marker": ""
-    },
-    {
-      "position": 7,
-      "team": "BLTC",
-      "wins": 1,
-      "points": 11,
-      "percentage": 76.0,
-      "marker": ""
     }
   ],
   "green_ball": false,
   "results_loaded_by_trols": null,
-  "fixtures": 20,
-  "completed_fixtures": 10,
+  "fixtures": 24,
+  "completed_fixtures": 13,
   "draw_fixtures": 56,
-  "singles_rubbers": 40,
-  "doubles_rubbers": 20,
-  "latest_round": 5,
+  "singles_rubbers": 52,
+  "doubles_rubbers": 26,
+  "latest_round": 6,
   "validation": "passed",
   "source_warnings": []
 }

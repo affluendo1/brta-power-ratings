@@ -28,20 +28,28 @@
   "calendar_events": [
     {
       "date": "27 Feb 27",
-      "label": "Semi Final \u00b7 if qualified"
+      "label": "Semi Final · if qualified"
     },
     {
       "date": "13 Mar 27",
-      "label": "Grand Final \u00b7 if qualified"
+      "label": "Grand Final · if qualified"
     },
     {
       "date": "20 Mar 27",
-      "label": "Spare \u00b7 if required"
+      "label": "Spare · if required"
     }
   ],
   "official_standings": [
     {
       "position": 1,
+      "team": "Kooyong Green",
+      "wins": 3,
+      "points": 34,
+      "percentage": 121.47,
+      "marker": ""
+    },
+    {
+      "position": 2,
       "team": "Hurlingham Park",
       "wins": 3,
       "points": 33,
@@ -49,62 +57,54 @@
       "marker": ""
     },
     {
-      "position": 2,
-      "team": "Kooyong Green",
-      "wins": 2,
-      "points": 25,
-      "percentage": 113.08,
-      "marker": ""
-    },
-    {
       "position": 3,
       "team": "Kooyong Purple",
       "wins": 2,
-      "points": 24,
-      "percentage": 101.6,
+      "points": 25,
+      "percentage": 93.72,
       "marker": ""
     },
     {
       "position": 4,
-      "team": "Tennis World",
-      "wins": 2,
+      "team": "Glenvale",
+      "wins": 1,
       "points": 23,
-      "percentage": 106.12,
+      "percentage": 92.62,
       "marker": ""
     },
     {
       "position": 5,
-      "team": "Glenvale",
-      "wins": 1,
-      "points": 21,
-      "percentage": 95.28,
+      "team": "Tennis World",
+      "wins": 2,
+      "points": 23,
+      "percentage": 92.2,
       "marker": ""
     },
     {
       "position": 6,
-      "team": "Royal South Yarra",
+      "team": "Mordialloc",
       "wins": 1,
-      "points": 13,
-      "percentage": 82.39,
+      "points": 21,
+      "percentage": 89.64,
       "marker": ""
     },
     {
       "position": 7,
-      "team": "Mordialloc",
-      "wins": 0,
-      "points": 11,
-      "percentage": 71.88,
+      "team": "Royal South Yarra",
+      "wins": 2,
+      "points": 21,
+      "percentage": 88.26,
       "marker": ""
     }
   ],
   "green_ball": false,
   "results_loaded_by_trols": null,
-  "fixtures": 20,
-  "completed_fixtures": 11,
+  "fixtures": 24,
+  "completed_fixtures": 14,
   "draw_fixtures": 56,
-  "singles_rubbers": 44,
-  "doubles_rubbers": 22,
-  "latest_round": 5,
+  "singles_rubbers": 56,
+  "doubles_rubbers": 28,
+  "latest_round": 6,
   "validation": "passed",
   "source_warnings": []
 }

@@ -28,28 +28,36 @@
   "calendar_events": [
     {
       "date": "27 Feb 27",
-      "label": "Semi Final \u00b7 if qualified"
+      "label": "Semi Final · if qualified"
     },
     {
       "date": "13 Mar 27",
-      "label": "Grand Final \u00b7 if qualified"
+      "label": "Grand Final · if qualified"
     },
     {
       "date": "20 Mar 27",
-      "label": "Spare \u00b7 if required"
+      "label": "Spare · if required"
     }
   ],
   "official_standings": [
     {
       "position": 1,
       "team": "Overport Park",
-      "wins": 3,
-      "points": 34,
-      "percentage": 123.68,
+      "wins": 4,
+      "points": 43,
+      "percentage": 134.93,
       "marker": ""
     },
     {
       "position": 2,
+      "team": "Highmoor Uniting",
+      "wins": 2,
+      "points": 28.5,
+      "percentage": 109.66,
+      "marker": ""
+    },
+    {
+      "position": 3,
       "team": "Beaumaris CC",
       "wins": 2,
       "points": 28.5,
@@ -57,54 +65,46 @@
       "marker": ""
     },
     {
-      "position": 3,
-      "team": "Tennis World",
-      "wins": 1,
-      "points": 20.5,
-      "percentage": 100.79,
-      "marker": ""
-    },
-    {
       "position": 4,
-      "team": "Highmoor Uniting",
-      "wins": 1,
-      "points": 20.5,
-      "percentage": 100.0,
-      "marker": ""
-    },
-    {
-      "position": 5,
       "team": "East Malvern",
       "wins": 1,
-      "points": 17,
+      "points": 22,
       "percentage": 97.52,
       "marker": ""
     },
     {
-      "position": 6,
-      "team": "Royal South Yarra",
+      "position": 5,
+      "team": "Tennis World",
       "wins": 1,
-      "points": 16,
-      "percentage": 120.55,
+      "points": 21.5,
+      "percentage": 87.43,
+      "marker": ""
+    },
+    {
+      "position": 6,
+      "team": "Kooyong",
+      "wins": 1,
+      "points": 18.5,
+      "percentage": 75.94,
       "marker": ""
     },
     {
       "position": 7,
-      "team": "Kooyong",
+      "team": "Royal South Yarra",
       "wins": 1,
-      "points": 13.5,
-      "percentage": 75.94,
+      "points": 18,
+      "percentage": 100.86,
       "marker": ""
     }
   ],
   "green_ball": false,
   "results_loaded_by_trols": null,
-  "fixtures": 20,
-  "completed_fixtures": 11,
+  "fixtures": 24,
+  "completed_fixtures": 13,
   "draw_fixtures": 56,
-  "singles_rubbers": 44,
-  "doubles_rubbers": 22,
-  "latest_round": 5,
+  "singles_rubbers": 52,
+  "doubles_rubbers": 26,
+  "latest_round": 6,
   "validation": "source discrepancies",
   "source_warnings": [
     "Incomplete TROLS score for AP011042 singles No. 1: ''. Missing score not inferred; excluded from ratings and game totals.",

@@ -28,24 +28,24 @@
   "calendar_events": [
     {
       "date": "27 Feb 27",
-      "label": "Semi Final \u00b7 if qualified"
+      "label": "Semi Final · if qualified"
     },
     {
       "date": "13 Mar 27",
-      "label": "Grand Final \u00b7 if qualified"
+      "label": "Grand Final · if qualified"
     },
     {
       "date": "20 Mar 27",
-      "label": "Spare \u00b7 if required"
+      "label": "Spare · if required"
     }
   ],
   "official_standings": [
     {
       "position": 1,
       "team": "Kooyong",
-      "wins": 4,
-      "points": 38.5,
-      "percentage": 156.69,
+      "wins": 5,
+      "points": 46.5,
+      "percentage": 143.82,
       "marker": ""
     },
     {
@@ -60,51 +60,51 @@
       "position": 3,
       "team": "Parkdale",
       "wins": 2,
-      "points": 27,
-      "percentage": 140.0,
+      "points": 29,
+      "percentage": 122.22,
       "marker": ""
     },
     {
       "position": 4,
-      "team": "Chadstone",
-      "wins": 1,
-      "points": 19,
-      "percentage": 108.78,
+      "team": "Maccabi",
+      "wins": 2,
+      "points": 23,
+      "percentage": 93.3,
       "marker": ""
     },
     {
       "position": 5,
-      "team": "Maccabi",
+      "team": "Chadstone",
       "wins": 1,
-      "points": 15,
-      "percentage": 81.11,
+      "points": 21,
+      "percentage": 104.95,
       "marker": ""
     },
     {
       "position": 6,
-      "team": "Kings Park",
-      "wins": 0,
-      "points": 9,
-      "percentage": 62.89,
+      "team": "BLTC",
+      "wins": 1,
+      "points": 16.5,
+      "percentage": 71.86,
       "marker": ""
     },
     {
       "position": 7,
-      "team": "BLTC",
+      "team": "Kings Park",
       "wins": 0,
-      "points": 8.5,
-      "percentage": 60.14,
+      "points": 11,
+      "percentage": 62.02,
       "marker": ""
     }
   ],
   "green_ball": false,
   "results_loaded_by_trols": null,
-  "fixtures": 20,
-  "completed_fixtures": 12,
+  "fixtures": 24,
+  "completed_fixtures": 15,
   "draw_fixtures": 56,
-  "singles_rubbers": 48,
-  "doubles_rubbers": 24,
-  "latest_round": 5,
+  "singles_rubbers": 60,
+  "doubles_rubbers": 30,
+  "latest_round": 6,
   "validation": "source discrepancies",
   "source_warnings": [
     "Incomplete TROLS score for AP007042 singles No. 2: ''. Missing score not inferred; excluded from ratings and game totals.",

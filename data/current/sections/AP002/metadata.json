@@ -28,71 +28,71 @@
   "calendar_events": [
     {
       "date": "13 Mar 27",
-      "label": "Grand Final \u00b7 if qualified"
+      "label": "Grand Final · if qualified"
     },
     {
       "date": "20 Mar 27",
-      "label": "Spare \u00b7 if required"
+      "label": "Spare · if required"
     }
   ],
   "official_standings": [
     {
       "position": 1,
-      "team": "Mt Eliza Penins",
-      "wins": 2,
-      "points": 30,
-      "percentage": 133.33,
+      "team": "BLTC Blue",
+      "wins": 4,
+      "points": 39,
+      "percentage": 133.17,
       "marker": ""
     },
     {
       "position": 2,
-      "team": "BLTC Blue",
+      "team": "Overport Park",
       "wins": 3,
-      "points": 30,
-      "percentage": 127.5,
+      "points": 37,
+      "percentage": 115.27,
       "marker": ""
     },
     {
       "position": 3,
-      "team": "Overport Park",
-      "wins": 2,
-      "points": 28,
-      "percentage": 105.23,
+      "team": "Carmelite Blue",
+      "wins": 3,
+      "points": 33,
+      "percentage": 104.27,
       "marker": ""
     },
     {
       "position": 4,
-      "team": "Carmelite Blue",
+      "team": "Mt Eliza Penins",
       "wins": 2,
-      "points": 25,
-      "percentage": 96.12,
+      "points": 31,
+      "percentage": 112.68,
       "marker": ""
     },
     {
       "position": 5,
       "team": "BLTC White",
       "wins": 1,
-      "points": 22,
-      "percentage": 88.37,
+      "points": 23,
+      "percentage": 81.33,
       "marker": ""
     },
     {
       "position": 6,
       "team": "Carmelite Red",
       "wins": 0,
-      "points": 15,
-      "percentage": 62.56,
+      "points": 17,
+      "percentage": 62.24,
       "marker": ""
     }
   ],
   "green_ball": false,
   "results_loaded_by_trols": null,
-  "fixtures": 15,
-  "completed_fixtures": 12,
+  "fixtures": 18,
+  "completed_fixtures": 15,
   "draw_fixtures": 45,
-  "singles_rubbers": 48,
-  "doubles_rubbers": 24,
-  "latest_round": 5,
+  "singles_rubbers": 60,
+  "doubles_rubbers": 30,
+  "latest_round": 6,
   "validation": "source discrepancies",
   "source_warnings": [
     "Incomplete TROLS score for AP002041 doubles No. 1: '7-5 2-2'. Missing score not inferred; excluded from ratings and game totals.",

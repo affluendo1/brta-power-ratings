@@ -28,91 +28,91 @@
   "calendar_events": [
     {
       "date": "27 Feb 27",
-      "label": "Semi Final \u00b7 if qualified"
+      "label": "Semi Final · if qualified"
     },
     {
       "date": "13 Mar 27",
-      "label": "Grand Final \u00b7 if qualified"
+      "label": "Grand Final · if qualified"
     },
     {
       "date": "20 Mar 27",
-      "label": "Spare \u00b7 if required"
+      "label": "Spare · if required"
     }
   ],
   "official_standings": [
     {
       "position": 1,
       "team": "Caulfield Rec",
-      "wins": 3,
-      "points": 38,
-      "percentage": 133.78,
+      "wins": 4,
+      "points": 47,
+      "percentage": 130.65,
       "marker": ""
     },
     {
       "position": 2,
-      "team": "Kooyong Green",
-      "wins": 4,
-      "points": 38,
-      "percentage": 126.04,
+      "team": "Overport Park",
+      "wins": 3,
+      "points": 43,
+      "percentage": 161.48,
       "marker": ""
     },
     {
       "position": 3,
-      "team": "Overport Park",
-      "wins": 2,
-      "points": 33,
-      "percentage": 153.33,
+      "team": "Kooyong Green",
+      "wins": 4,
+      "points": 38,
+      "percentage": 107.46,
       "marker": ""
     },
     {
       "position": 4,
       "team": "BLTC",
       "wins": 1,
-      "points": 27,
-      "percentage": 124.77,
+      "points": 29,
+      "percentage": 108.43,
       "marker": ""
     },
     {
       "position": 5,
       "team": "Tennis World",
       "wins": 1,
-      "points": 22,
-      "percentage": 96.8,
+      "points": 25,
+      "percentage": 98.25,
       "marker": ""
     },
     {
       "position": 6,
-      "team": "Kooyong Purple",
-      "wins": 0,
-      "points": 19,
-      "percentage": 89.26,
+      "team": "Ardrie Park",
+      "wins": 2,
+      "points": 21,
+      "percentage": 77.69,
       "marker": ""
     },
     {
       "position": 7,
-      "team": "Ardrie Park",
-      "wins": 1,
-      "points": 13,
-      "percentage": 67.13,
+      "team": "Kooyong Purple",
+      "wins": 0,
+      "points": 20,
+      "percentage": 87.2,
       "marker": ""
     },
     {
       "position": 8,
       "team": "Royal South Yarra",
-      "wins": 0,
-      "points": 10,
-      "percentage": 63.72,
+      "wins": 1,
+      "points": 17,
+      "percentage": 69.85,
       "marker": ""
     }
   ],
   "green_ball": false,
   "results_loaded_by_trols": null,
-  "fixtures": 20,
-  "completed_fixtures": 14,
+  "fixtures": 24,
+  "completed_fixtures": 18,
   "draw_fixtures": 56,
-  "singles_rubbers": 56,
-  "doubles_rubbers": 28,
-  "latest_round": 5,
+  "singles_rubbers": 72,
+  "doubles_rubbers": 36,
+  "latest_round": 6,
   "validation": "source discrepancies",
   "source_warnings": [
     "Incomplete TROLS score for AP005041 doubles No. 2: '6-4 2-2'. Missing score not inferred; excluded from ratings and game totals.",

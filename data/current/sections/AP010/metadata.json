@@ -28,15 +28,15 @@
   "calendar_events": [
     {
       "date": "27 Feb 27",
-      "label": "Semi Final \u00b7 if qualified"
+      "label": "Semi Final · if qualified"
     },
     {
       "date": "13 Mar 27",
-      "label": "Grand Final \u00b7 if qualified"
+      "label": "Grand Final · if qualified"
     },
     {
       "date": "20 Mar 27",
-      "label": "Spare \u00b7 if required"
+      "label": "Spare · if required"
     }
   ],
   "official_standings": [
@@ -51,9 +51,9 @@
     {
       "position": 2,
       "team": "Murrumbeena",
-      "wins": 3,
-      "points": 28,
-      "percentage": 132.47,
+      "wins": 4,
+      "points": 38,
+      "percentage": 137.7,
       "marker": ""
     },
     {
@@ -61,32 +61,32 @@
       "team": "Coatesville",
       "wins": 2,
       "points": 27,
-      "percentage": 133.75,
+      "percentage": 103.6,
       "marker": ""
     },
     {
       "position": 4,
-      "team": "Gardiner",
+      "team": "Maccabi Blue",
       "wins": 1,
-      "points": 17,
-      "percentage": 71.84,
+      "points": 22,
+      "percentage": 96.27,
       "marker": ""
     },
     {
       "position": 5,
-      "team": "Hawthorn",
-      "wins": 0,
-      "points": 16,
-      "percentage": 68.75,
+      "team": "Gardiner",
+      "wins": 1,
+      "points": 20,
+      "percentage": 77.44,
       "marker": ""
     },
     {
       "position": 6,
-      "team": "Maccabi Blue",
+      "team": "Hawthorn",
       "wins": 0,
-      "points": 15,
-      "percentage": 92.23,
-      "marker": ""
+      "points": 16,
+      "percentage": 68.75,
+      "marker": "*"
     },
     {
       "position": 7,
@@ -94,17 +94,17 @@
       "wins": 0,
       "points": 9,
       "percentage": 65.66,
-      "marker": ""
+      "marker": "*"
     }
   ],
   "green_ball": false,
   "results_loaded_by_trols": null,
-  "fixtures": 20,
-  "completed_fixtures": 10,
+  "fixtures": 24,
+  "completed_fixtures": 12,
   "draw_fixtures": 56,
-  "singles_rubbers": 40,
-  "doubles_rubbers": 20,
-  "latest_round": 5,
+  "singles_rubbers": 48,
+  "doubles_rubbers": 24,
+  "latest_round": 6,
   "validation": "passed",
   "source_warnings": []
 }

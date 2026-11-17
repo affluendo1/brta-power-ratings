@@ -28,41 +28,41 @@
   "calendar_events": [
     {
       "date": "27 Feb 27",
-      "label": "Semi Final \u00b7 if qualified"
+      "label": "Semi Final · if qualified"
     },
     {
       "date": "13 Mar 27",
-      "label": "Grand Final \u00b7 if qualified"
+      "label": "Grand Final · if qualified"
     },
     {
       "date": "20 Mar 27",
-      "label": "Spare \u00b7 if required"
+      "label": "Spare · if required"
     }
   ],
   "official_standings": [
     {
       "position": 1,
-      "team": "BLTC",
-      "wins": 3,
-      "points": 29,
-      "percentage": 114.93,
+      "team": "Mordialloc",
+      "wins": 4,
+      "points": 34,
+      "percentage": 124.58,
       "marker": ""
     },
     {
       "position": 2,
       "team": "Elwood Yellow",
       "wins": 3,
-      "points": 28,
-      "percentage": 132.69,
+      "points": 29,
+      "percentage": 123.33,
       "marker": ""
     },
     {
       "position": 3,
-      "team": "Mordialloc",
+      "team": "BLTC",
       "wins": 3,
-      "points": 27,
-      "percentage": 122.6,
-      "marker": ""
+      "points": 29,
+      "percentage": 114.93,
+      "marker": "*"
     },
     {
       "position": 4,
@@ -70,49 +70,49 @@
       "wins": 3,
       "points": 26,
       "percentage": 118.88,
-      "marker": ""
+      "marker": "*"
     },
     {
       "position": 5,
       "team": "Elwood Green",
-      "wins": 1,
-      "points": 19,
-      "percentage": 113.79,
+      "wins": 2,
+      "points": 26,
+      "percentage": 110.71,
       "marker": ""
     },
     {
       "position": 6,
       "team": "Tally Ho",
       "wins": 2,
-      "points": 18,
-      "percentage": 94.66,
+      "points": 19,
+      "percentage": 91.2,
       "marker": ""
     },
     {
       "position": 7,
-      "team": "Parkdale",
-      "wins": 0,
-      "points": 7,
-      "percentage": 66.04,
+      "team": "Ormond",
+      "wins": 1,
+      "points": 12,
+      "percentage": 77.13,
       "marker": ""
     },
     {
       "position": 8,
-      "team": "Ormond",
+      "team": "Parkdale",
       "wins": 0,
-      "points": 6,
-      "percentage": 69.95,
+      "points": 9,
+      "percentage": 70.61,
       "marker": ""
     }
   ],
   "green_ball": false,
   "results_loaded_by_trols": null,
-  "fixtures": 20,
-  "completed_fixtures": 15,
+  "fixtures": 24,
+  "completed_fixtures": 18,
   "draw_fixtures": 56,
   "singles_rubbers": 0,
-  "doubles_rubbers": 60,
-  "latest_round": 5,
+  "doubles_rubbers": 72,
+  "latest_round": 6,
   "validation": "passed",
   "source_warnings": []
 }

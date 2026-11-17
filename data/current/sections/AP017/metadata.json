@@ -28,71 +28,71 @@
   "calendar_events": [
     {
       "date": "13 Mar 27",
-      "label": "Grand Final \u00b7 if qualified"
+      "label": "Grand Final · if qualified"
     },
     {
       "date": "20 Mar 27",
-      "label": "Spare \u00b7 if required"
+      "label": "Spare · if required"
     }
   ],
   "official_standings": [
     {
       "position": 1,
       "team": "Royal South Yarra",
-      "wins": 4,
-      "points": 32.5,
-      "percentage": 175.0,
+      "wins": 5,
+      "points": 40.5,
+      "percentage": 190.55,
       "marker": ""
     },
     {
       "position": 2,
       "team": "Parkdale",
-      "wins": 2,
-      "points": 22,
-      "percentage": 102.15,
+      "wins": 3,
+      "points": 28,
+      "percentage": 104.61,
       "marker": ""
     },
     {
       "position": 3,
-      "team": "Overport Park",
+      "team": "Hawthorn",
       "wins": 2,
-      "points": 20,
-      "percentage": 108.72,
+      "points": 21,
+      "percentage": 102.69,
       "marker": ""
     },
     {
       "position": 4,
-      "team": "Sth Hawthorn",
+      "team": "Overport Park",
       "wins": 2,
-      "points": 18,
-      "percentage": 81.14,
+      "points": 20,
+      "percentage": 91.56,
       "marker": ""
     },
     {
       "position": 5,
-      "team": "Hawthorn",
-      "wins": 1,
-      "points": 14,
-      "percentage": 86.59,
+      "team": "Sth Hawthorn",
+      "wins": 2,
+      "points": 20,
+      "percentage": 81.6,
       "marker": ""
     },
     {
       "position": 6,
       "team": "Black Rock",
       "wins": 1,
-      "points": 13.5,
-      "percentage": 76.44,
+      "points": 14.5,
+      "percentage": 70.0,
       "marker": ""
     }
   ],
   "green_ball": false,
   "results_loaded_by_trols": null,
-  "fixtures": 15,
-  "completed_fixtures": 12,
+  "fixtures": 18,
+  "completed_fixtures": 15,
   "draw_fixtures": 45,
   "singles_rubbers": 0,
-  "doubles_rubbers": 48,
-  "latest_round": 5,
+  "doubles_rubbers": 60,
+  "latest_round": 6,
   "validation": "passed",
   "source_warnings": []
 }

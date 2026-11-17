@@ -28,15 +28,15 @@
   "calendar_events": [
     {
       "date": "27 Feb 27",
-      "label": "Semi Final \u00b7 if qualified"
+      "label": "Semi Final · if qualified"
     },
     {
       "date": "13 Mar 27",
-      "label": "Grand Final \u00b7 if qualified"
+      "label": "Grand Final · if qualified"
     },
     {
       "date": "20 Mar 27",
-      "label": "Spare \u00b7 if required"
+      "label": "Spare · if required"
     }
   ],
   "official_standings": [
@@ -44,12 +44,28 @@
       "position": 1,
       "team": "BLTC White",
       "wins": 2,
-      "points": 34,
-      "percentage": 152.58,
+      "points": 36,
+      "percentage": 121.99,
       "marker": ""
     },
     {
       "position": 2,
+      "team": "Royal South Yarra",
+      "wins": 3,
+      "points": 33,
+      "percentage": 139.19,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "BLTC Blue",
+      "wins": 2,
+      "points": 31,
+      "percentage": 158.76,
+      "marker": ""
+    },
+    {
+      "position": 4,
       "team": "East Malvern Blue",
       "wins": 2,
       "points": 30,
@@ -57,35 +73,19 @@
       "marker": ""
     },
     {
-      "position": 3,
-      "team": "Royal South Yarra",
-      "wins": 2,
-      "points": 25,
-      "percentage": 130.65,
-      "marker": ""
-    },
-    {
-      "position": 4,
-      "team": "BLTC Blue",
-      "wins": 1,
-      "points": 21,
-      "percentage": 106.52,
-      "marker": ""
-    },
-    {
       "position": 5,
-      "team": "East Malvern Navy",
-      "wins": 0,
-      "points": 17,
-      "percentage": 91.11,
+      "team": "Altona",
+      "wins": 2,
+      "points": 23,
+      "percentage": 89.95,
       "marker": ""
     },
     {
       "position": 6,
-      "team": "Altona",
-      "wins": 1,
-      "points": 13,
-      "percentage": 65.7,
+      "team": "East Malvern Navy",
+      "wins": 0,
+      "points": 17,
+      "percentage": 67.35,
       "marker": ""
     },
     {
@@ -93,18 +93,18 @@
       "team": "BLTC Light",
       "wins": 0,
       "points": 10,
-      "percentage": 30.36,
+      "percentage": 23.21,
       "marker": ""
     }
   ],
   "green_ball": false,
   "results_loaded_by_trols": null,
-  "fixtures": 20,
-  "completed_fixtures": 9,
+  "fixtures": 24,
+  "completed_fixtures": 12,
   "draw_fixtures": 56,
-  "singles_rubbers": 36,
-  "doubles_rubbers": 18,
-  "latest_round": 5,
+  "singles_rubbers": 48,
+  "doubles_rubbers": 24,
+  "latest_round": 6,
   "validation": "source discrepancies",
   "source_warnings": [
     "Incomplete TROLS score for AP013041 singles No. 1: '1-1'. Missing score not inferred; excluded from ratings and game totals.",

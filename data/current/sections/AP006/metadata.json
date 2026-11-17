@@ -28,47 +28,47 @@
   "calendar_events": [
     {
       "date": "27 Feb 27",
-      "label": "Semi Final \u00b7 if qualified"
+      "label": "Semi Final · if qualified"
     },
     {
       "date": "13 Mar 27",
-      "label": "Grand Final \u00b7 if qualified"
+      "label": "Grand Final · if qualified"
     },
     {
       "date": "20 Mar 27",
-      "label": "Spare \u00b7 if required"
+      "label": "Spare · if required"
     }
   ],
   "official_standings": [
     {
       "position": 1,
       "team": "Elwood",
-      "wins": 4,
-      "points": 38,
-      "percentage": 154.01,
+      "wins": 5,
+      "points": 47,
+      "percentage": 152.63,
       "marker": ""
     },
     {
       "position": 2,
       "team": "Ormond",
       "wins": 3,
-      "points": 33,
-      "percentage": 120.48,
+      "points": 36,
+      "percentage": 113.81,
       "marker": ""
     },
     {
       "position": 3,
       "team": "BLTC",
-      "wins": 2,
-      "points": 29,
-      "percentage": 107.38,
+      "wins": 3,
+      "points": 36,
+      "percentage": 108.51,
       "marker": ""
     },
     {
       "position": 4,
       "team": "Glen Huntly",
       "wins": 2,
-      "points": 26,
+      "points": 31,
       "percentage": 95.27,
       "marker": ""
     },
@@ -76,43 +76,43 @@
       "position": 5,
       "team": "Kings Park",
       "wins": 2,
-      "points": 24,
+      "points": 29,
       "percentage": 91.19,
       "marker": ""
     },
     {
       "position": 6,
       "team": "Hurlingham Park",
-      "wins": 1,
-      "points": 18,
-      "percentage": 97.09,
+      "wins": 2,
+      "points": 25,
+      "percentage": 97.97,
       "marker": ""
     },
     {
       "position": 7,
       "team": "Coatesville",
       "wins": 1,
-      "points": 18,
-      "percentage": 79.28,
+      "points": 19,
+      "percentage": 77.21,
       "marker": ""
     },
     {
       "position": 8,
       "team": "Altona",
       "wins": 0,
-      "points": 14,
-      "percentage": 78.71,
+      "points": 17,
+      "percentage": 81.89,
       "marker": ""
     }
   ],
   "green_ball": false,
   "results_loaded_by_trols": null,
-  "fixtures": 20,
-  "completed_fixtures": 15,
+  "fixtures": 24,
+  "completed_fixtures": 18,
   "draw_fixtures": 56,
-  "singles_rubbers": 60,
-  "doubles_rubbers": 30,
-  "latest_round": 5,
+  "singles_rubbers": 72,
+  "doubles_rubbers": 36,
+  "latest_round": 6,
   "validation": "passed",
   "source_warnings": []
 }
