@@ -30,38 +30,30 @@ function performanceBands(data,view,list,round=null){
  const order=base.bounds.map((_,i)=>'b'+i),names=base.names.slice(),bounds=base.bounds.slice();
  const assignment=new Map();
  const ranked=list.filter(entry=>Number.isFinite(entry.rating));
- const sectionAverage=avg(ranked.map(entry=>entry.rating));
  const label=name=>view==='pairs'?key(name):name;
  const powers=new Map(ranked.map(entry=>[label(entry.player),entry.rating]));
- const apex=new Set(ranked.filter(entry=>base.classFor(entry.rating)==='b0').map(entry=>label(entry.player)));
- const protectedApex=new Set();
+ const highElite=(base.cuts[0]-1+base.cuts[1])/2;
  const discipline=view==='overall'?'singles':view;
- for(const entry of ranked.slice().sort((a,b)=>b.rating-a.rating)){
-  const id=label(entry.player);
-  if(entry.rating>=3000&&apex.has(id)&&!protectedApex.has(id)){
-   const win=matches(data,entry.player,discipline,round).find(match=>{
-    const opponent=label(match.opp);
-    return match.won&&opponent!==id&&apex.has(opponent)&&assignment.get(opponent)!=='b18';
+ for(const entry of ranked){
+  const id=label(entry.player),ordinary=base.classFor(entry.rating);
+  if(entry.rating>=3000&&(ordinary==='b0'||ordinary==='b1')){
+   const win=matches(data,entry.player,discipline,round).some(match=>{
+    const score=view==='doublesPlayers'?match.oppRating:powers.get(label(match.opp));
+    return match.won&&Number.isFinite(score)&&score>=highElite;
    });
-   if(win){assignment.set(id,'b18');protectedApex.add(label(win.opp));}
+   if(win)assignment.set(id,'b18');
   }
-  if(base.classFor(entry.rating)!=='b7'||(entry.wins??entry.s?.wins)>0||!((entry.matches??entry.s?.matches)>=10))continue;
+  // A substantial rating gap and sustained poor results both matter.
+  if(ordinary!=='b7'||entry.rating>base.median-1.8*base.spread||!((entry.matches??entry.s?.matches)>=6))continue;
   const record=matches(data,entry.player,discipline,round);
-  if(record.length<10)continue;
-  const opponentPower=match=>{
-   if(view!=='doublesPlayers')return powers.get(label(match.opp));
-   const values=members(match.opp).map(name=>powers.get(name));
-   return values.length===2&&values.every(Number.isFinite)?avg(values):null;
-  };
-  if(record.every(match=>{
-   const opponent=opponentPower(match);
-   return !match.won&&opponent!=null&&opponent<sectionAverage&&match.sets.length>0&&
-    match.sets.every(set=>!set.mt&&set.h===0&&set.a===6);
-  }))assignment.set(id,'b19');
+  if(record.length<6||record.filter(match=>match.won).length>record.length*.15)continue;
+  const gamesWon=record.reduce((count,match)=>count+match.gf,0);
+  const gamesLost=record.reduce((count,match)=>count+match.ga,0);
+  if(gamesWon+gamesLost>0&&gamesWon/(gamesWon+gamesLost)<=.25)assignment.set(id,'b19');
  }
  const active=new Set(assignment.values());
- if(active.has('b18')){order.unshift('b18');names[18]='Zenith';bounds[18]='3000+ Power · Apex win';}
- if(active.has('b19')){order.push('b19');names[19]='Basement';bounds[19]='10+ matches · all 6–0 losses';}
+ if(active.has('b18')){order.unshift('b18');names[18]='Zenith';bounds[18]='3000+ Power · high Elite or Apex win';}
+ if(active.has('b19')){order.push('b19');names[19]='Basement';bounds[19]='Very low Power · sustained heavy losses';}
  return {...base,names,bounds,order,classForEntry:entry=>assignment.get(label(entry.player))||base.classFor(entry.rating)};
 }
 function contextData(data,round=null){if(round==null)return data;const filter=groups=>(groups||[]).filter(g=>Number(g.round)<=round);return {...data,singles:rows(data,'singles',round),doubles:rows(data,'pairs',round),doublesIndividuals:rows(data,'doublesPlayers',round),results:filter(data.results),upcomingFixtures:filter(data.upcomingFixtures),teamOrderEvidence:{},playerInsights:{}}}

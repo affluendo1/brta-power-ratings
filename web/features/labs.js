@@ -41,7 +41,7 @@ function lab8Hero(view,name,matches,team,round){const royal=view==='singles'&&au
 return '<section class="lab8-hero"><div class="lab8-power"><div><span>'+label+' Power</span><strong>'+(r?.rating??'—')+'</strong></div><div><span>Section rank</span><strong>'+(rank?'#'+rank:'—')+'</strong></div></div><div class="lab8-facts">'+profileMetric('Record',wins+'–'+(matches.length-wins))+'<button type="button" class="lab-metric" data-eight-lineup="'+esc(team)+'"><span>Lineup position</span><b>'+lineup+'</b></button></div>'+lab8Highlights(matches)+'</section>'}
 function lab8Partners(name,round){const pairs=L8.rows(D,'pairs',round).filter(p=>L8.members(p.player).includes(name));return '<div class="lab8-partners">'+pairs.map(p=>{const ms=L8.matches(D,p.player,'pairs',round),position=ms.length?(ms.reduce((n,m)=>n+m.position,0)/ms.length).toFixed(1):'—';return '<div>'+lab8PairLink(p.player,round,[name,...L8.members(p.player).filter(n=>n!==name)].join(' / '))+'<span>'+p.rating+' – '+(p.wins??ms.filter(m=>m.won).length)+'–'+(p.losses??ms.filter(m=>!m.won).length)+' – D'+position+'</span></div>'}).join('')+'</div>'}
 const labBandDescriptions={
- Zenith:'At least 3000 Power and a recorded win over another player or pair in Apex.',
+ Zenith:'At least 3000 Power and a recorded win over a high-Elite or Apex opponent.',
  Apex:'Among the highest-rated players or pairs in this section.',
  Elite:'Rated well above the section’s typical level.',
  Advanced:'Rated above the main group in this section.',
@@ -50,7 +50,7 @@ const labBandDescriptions={
  Developing:'Rated below the middle of the section.',
  Struggling:'Rated toward the lower end of the section.',
  Foundational:'In the lowest ordinary rating band for this section.',
- Basement:'At least ten completed matches, all straight 6–0 losses to below-average opponents.'
+ Basement:'Very low Power for the section, backed by sustained heavy losses across at least six matches.'
 };
 function labPerformanceBands(name,round,pair,doublesOnly){
  const views=pair?[['pairs','Partnership']]:doublesOnly?[['doublesPlayers','Doubles']]:
