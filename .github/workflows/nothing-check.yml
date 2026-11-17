@@ -7,13 +7,26 @@ permissions:
   contents: read
 jobs:
   complain:
+    if: github.ref == 'refs/heads/main'
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
+    timeout-minutes: 14
     steps:
       - uses: actions/checkout@v4
       - name: Confirm that nothing is here
+        id: nothing
         run: |
           test -f nothing.txt || { echo "::error::Nothing is missing."; exit 1; }
           if [[ -s nothing.txt ]]; then
-            echo "::error file=nothing.txt::Expected 0 bytes of nothing. Found $(wc -c < nothing.txt)."
-            exit 1
+            echo 'panic=true' >> "$GITHUB_OUTPUT"
           fi
+      - name: Dwell on it for ten minutes
+        if: steps.nothing.outputs.panic == 'true'
+        continue-on-error: true
+        run: bash .github/scripts/nothing-panic.sh
+      - name: Finally tell miguelphonkistuffinindia1234
+        if: steps.nothing.outputs.panic == 'true'
+        run: |
+          echo '::error file=nothing.txt::I waited ten minutes. Something is still philosophically unacceptable.'
+          exit 1
