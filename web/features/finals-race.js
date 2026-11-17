@@ -3,8 +3,8 @@
 
   const model = BRTAFinalsMath;
   const depths = [
-    { title: 'Quick', runs: 100000, samples: 12000, description: 'Faster forecast with broad lineup coverage' },
-    { title: 'Standard', runs: 150000, samples: 18000, description: 'More season and scorecard simulations' }
+    { title: 'Quick', runs: 12000, samples: 2400, variants: 6, description: 'Faster forecast with broad lineup coverage' },
+    { title: 'Standard', runs: 30000, samples: 6000, variants: 10, description: 'More season and scorecard simulations' }
   ];
   const pause = ms => new Promise(resolve => setTimeout(resolve, ms));
   let editing;
@@ -15,6 +15,9 @@
   };
   const key = () => [data.meta.season_id, data.meta.source_section_code || data.meta.section_code, (data.meta.modelChoice || data.meta.predictionModel)].join(':');
   const pct = (value, total) => total ? (100 * value / total).toFixed(2) + '%' : '—';
+  const qualification = (row, status) => row.qualifies === 0 && status !== 'Eliminated'
+    ? '0 observed' : row.qualifies > 0 && row.qualifies * 100 / report.runs < .01
+      ? '<0.01%' : pct(row.qualifies, report.runs);
   const playedRound = () => BRTAStandings.rounds(data).at(-1)?.round || 0;
   const firstRaceRound = () => Math.min(10, Math.max(1, (Number(data.meta.regular_season_rounds) ||
     Math.max(0, ...BRTAStandings.rounds(data).map(row => row.round), ...pending.map(row => row.round))) - 4));
@@ -36,39 +39,45 @@
     const eligible = name => name && !/^(no player|bye)$/i.test(name);
     const roster = [...new Set([...teamRoster(teamName).map(row => row.player), ...template.draft])].filter(eligible);
     const variants = new Map();
-    function add(side) {
-      if (side.draft.length < needed || !side.draft.every(eligible)) return;
-      variants.set(signature(side), { side, label: side.draft.join(', ') +
+    function add(side, weight) {
+      if (side.draft.length !== needed || !side.draft.every(eligible)) return;
+      const id = signature(side);
+      if (!variants.has(id)) variants.set(id, { side, weight, label: side.draft.join(', ') +
         (side.doubles.length ? ' · ' + side.doubles.map(pair => pair.join(' / ')).join(' · ') : '') });
     }
-    for (const recorded of BRTALineups.configurations(data, teamName, round)) add(BRTALineups.side(recorded));
-    function draftFrom(start, names) {
-      if (names.length === needed) {
-        const order = orderLineup(teamName, names);
-        const bySlot = new Map(orderLineup(teamName, template.draft).map((name, index) => [name, order[index]]));
-        const doubles = template.doubles.map(pair => pair.map(name => bySlot.get(name)).filter(Boolean));
-        const side = normaliseSide(teamName, { draft: order, singles: [], doubles }, needed);
-        if (needed === 4 && side.doubles.length === 2) {
-          const [a, b, c, d] = order;
-          for (const pairs of [[[a,b],[c,d]], [[a,c],[b,d]], [[a,d],[b,c]]]) {
-            add({ ...side, doubles: pairs, manualPairs: true });
-            add({ ...side, doubles: [...pairs].reverse(), manualPairs: true });
-          }
-        } else add(side);
-        return;
-      }
-      for (let i = start; i <= roster.length - needed + names.length; i++) draftFrom(i + 1, [...names, roster[i]]);
+    for (const recorded of BRTALineups.configurations(data, teamName, round).slice(0, 10)) {
+      add(BRTALineups.side(recorded), recorded.count);
     }
-    draftFrom(0, []);
+    const baseline = variants.values().next().value?.side || template;
+    add(baseline, 1);
+    const preferred = orderLineup(teamName, roster).slice(0, needed);
+    const candidates = [preferred];
+    for (const replacement of roster.filter(name => !preferred.includes(name)).slice(0, 8)) {
+      for (let slot = preferred.length - 1; slot >= 0; slot--) {
+        const draft = [...preferred];
+        draft[slot] = replacement;
+        candidates.push(draft);
+      }
+    }
+    for (const draft of candidates) {
+      if (variants.size >= 10) break;
+      const doubles = baseline.doubles.map(pair => pair.map(name => draft[baseline.draft.indexOf(name)]).filter(Boolean));
+      const side = normaliseSide(teamName, { draft, singles: [], doubles }, needed);
+      add(side, 0.12);
+      if (needed === 4 && side.doubles.length === 2 && variants.size < 10) {
+        const [a,b,c,d] = draft;
+        add({ ...side, doubles: [[a,c],[b,d]] }, 0.06);
+      }
+    }
     const result = [...variants.values()];
     pools.set(key, result);
     return result;
   }
 
-  async function compile(fixture, running) {
-    const variants = [pool(fixture.home, fixture.round), pool(fixture.away, fixture.round)];
+  async function compile(fixture, running, limit) {
+    const variants = [pool(fixture.home, fixture.round).slice(0, limit), pool(fixture.away, fixture.round).slice(0, limit)];
     const locks = scenario[fixture.fixtureId] || [];
-    for (const [index, side] of locks.entries()) if (side) variants[index] = [{ side, label: 'Pinned · ' + side.draft.join(', ') }];
+    for (const [index, side] of locks.entries()) if (side) variants[index] = [{ side, weight: 1, label: 'Pinned · ' + side.draft.join(', ') }];
     const combinations = [];
     let evaluations = 0;
     for (const [i, home] of variants[0].entries()) {
@@ -77,7 +86,7 @@
         if (++evaluations % 128 === 1) await pause(0);
         if (running.abort.signal.aborted) throw Error('Forecast stopped.');
         const rubbers = BRTAForecastRubbers(home.side, away.side, fixture, rubberCache);
-        if (rubbers) combinations.push({ home: i, away: j, rubbers });
+        if (rubbers) combinations.push({ home: i, away: j, weight: home.weight * away.weight, rubbers });
       }
     }
     if (!combinations.length) throw Error('A full forecast lineup is unavailable for ' + title(fixture) + '.');
@@ -101,7 +110,7 @@
       '</h3></div><span class="race-status-chip" data-status="' + esc(selected.status) + '">' + esc(selected.status) + '</span></header>' +
       '<div class="race-metrics">' + metric('Current points', selected.points, 'current') +
       (own.length && selected.ceiling != null ? metric('Most possible points', selected.ceiling, 'ceiling') : '') +
-      (report ? metric('Chance of making finals', pct(report.teams[teamIndex()].qualifies, report.runs), 'odds') : '') + '</div>' +
+      (report ? metric('Chance of making finals', qualification(report.teams[teamIndex()], selected.status), 'odds') : '') + '</div>' +
       (cutoff && gap != null && own.length && selected.status === 'In contention' ? '<p class="race-cutoff-note"><b>' + esc(cutoff.team) +
       '</b> currently holds the cutoff. ' + (gap >= 0 ? 'Earn more than ' + esc(gap) + ' points to pass their current total.' : 'You lead them on points.') +
       ' Equal points go to games percentage.</p>' : '') +
@@ -197,7 +206,7 @@
       .sort((a,b) => (b.successes + 1) / (b.count + 2) - (a.successes + 1) / (a.count + 2) || b.successes - a.successes)
       .map(route => route.example);
     const best = paths[0];
-    if (!guaranteed && !best) return start + '<p>No route to this spot appeared in the forecast.</p></section>';
+    if (!guaranteed && !best) return start + '<p>No qualifying finish appeared in the sampled seasons.' + (exact ? ' Check the points scenarios above for possible routes.' : '') + '</p></section>';
     const relevant = keyFixtures.map(i => {
       const fixture = pending[i];
       const side = fixture.home === team ? 0 : fixture.away === team ? 1 : -1;
@@ -218,7 +227,7 @@
       groups.map(round => '<div class="race-path-round"><h4>' + esc(roundLabel(relevant.find(row => row.fixture.round === round).fixture)) + '</h4><ul>' +
         relevant.filter(row => row.fixture.round === round).map(({ instruction, chance }) => '<li><span>' + esc(instruction) + '</span>' +
           '<strong>' + pct(chance, 1) + '</strong>' + '</li>').join('') + '</ul></div>').join('') +
-      (relevant.length ? '<p class="small-note">Result odds average every eligible lineup pairing in this forecast.</p>' : '') +
+      (relevant.length ? '<p class="small-note">Result odds weight recorded lineups by how often they played, with a small allowance for other plausible lineups.</p>' : '') +
       (!guaranteed && example && relevant.length ? '<details><summary>' + (alternate ? 'Another score combination' : 'Example scores') + '</summary><ul>' +
         relevant.map(({ i, fixture }) => '<li>' + esc(roundLabel(fixture) + ' · ' + title(fixture)) + ' · <b>' + example[i].join('–') + '</b></li>').join('') + '</ul></details>' : '') +
       '</section>';
@@ -243,7 +252,7 @@
       const chance = 100 * row.qualifies / report.runs, seed = row.counts.indexOf(Math.max(...row.counts)) + 1;
       return '<button type="button" data-race-select="' + esc(row.name) + '" aria-pressed="' + (row.name === team) + '" class="race-projection-card' + (row.name === team ? ' selected' : '') + '" data-chance="' +
         (chance >= 80 ? 'high' : chance >= 35 ? 'live' : 'low') + '"><header><span>#' + (position + 1) + ' projected</span><b>' + teamName(row.name) +
-        '</b></header><div class="race-projection-number"><strong>' + pct(row.qualifies, report.runs) + '</strong><span>qualify</span></div>' +
+        '</b></header><div class="race-projection-number"><strong>' + esc(qualification(row, rows.find(item => item.team === row.name)?.status)) + '</strong><span>qualify</span></div>' +
         '<div class="race-probability-track" aria-label="' + esc(row.name + ' qualification chance ' + chance.toFixed(1) + ' percent') + '"><i style="width:' + chance.toFixed(2) + '%"></i></div>' +
         '<footer><span>' + Math.round(row.mean) + ' expected pts</span><span>Most often #' + seed + '</span></footer></button>';
     }).join('');
@@ -330,6 +339,22 @@
     }
   }
 
+  function scheduledFinalsUnderway() {
+    const parts = new Intl.DateTimeFormat('sv-SE', {
+      timeZone: 'Australia/Melbourne', year: 'numeric', month: '2-digit', day: '2-digit',
+      hour: '2-digit', minute: '2-digit', hourCycle: 'h23'
+    }).formatToParts(new Date());
+    const local = Object.fromEntries(parts.map(({ type, value }) => [type, value]));
+    const today = [local.year, local.month, local.day].join('-');
+    return (data.upcomingFixtures || []).some(group => (group.fixtures || []).some(fixture => {
+      const name = [group.stage, group.label, fixture.stage, fixture.label].join(' ');
+      const day = BRTAMatchday.iso(fixture.date || group.date);
+      const start = BRTAMatchday.time(fixture.startTime, data.meta.competition_code);
+      return /final|playoff|knockout|\bsf\b/i.test(name) && !model.bye(fixture) && day &&
+        (day < today || (day === today && start && start.slice(0, 2) + ':' + start.slice(2, 4) <= local.hour + ':' + local.minute));
+    }));
+  }
+
   function setUp() {
     cancel();
     data = D;
@@ -338,7 +363,7 @@
     pending = model.remaining(data);
     places = Number(data.meta?.semifinalPlaces ?? 4);
     caps = model.pointsCap(data);
-    const eligible = data.standings?.length > places && places > 0 &&
+    const eligible = !model.finalsStarted(data) && !scheduledFinalsUnderway() && data.standings?.length > places && places > 0 &&
       (data.meta.is_archive || playedRound() >= 10 || (playedRound() > 0 && new Set(pending.map(row => row.round)).size <= 4));
     rows = eligible ? model.bounds(data.standings, pending, caps, places) : [];
     if (!pending.length && rows.length) rows = rows.map((row, index) => {
@@ -399,13 +424,13 @@
           for (const fixture of pending) {
             stage = 'Preparing ' + title(fixture);
             update();
-            fixtures.push(await compile(fixture, running));
+            fixtures.push(await compile(fixture, running, depth.variants));
             completed = 15 * fixtures.length / pending.length;
             update();
           }
           if (signal.aborted) return false;
           const result = await new Promise((resolve, reject) => {
-            worker = new Worker('web/workers/finals-race-worker.js?v=9113');
+            worker = new Worker('web/workers/finals-race-worker.js?v=9121');
             signal.addEventListener('abort', () => reject(Error(signal.reason?.message || signal.reason)), { once: true });
             worker.onerror = event => reject(Error(event.message || 'The simulation worker could not start.'));
             worker.onmessage = ({ data: message }) => {

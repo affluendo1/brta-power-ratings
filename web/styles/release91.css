@@ -241,19 +241,56 @@ html[data-animation="off"] .profile-head h2.player-lab-rainbow { animation: none
   .profile-head h2.player-lab-rainbow { background: none; color: CanvasText; }
 }
 
-.custom-fixture-card {
+.result-detail-head .club-link { display: inline; font-weight: 800; text-decoration: underline; text-underline-offset: .18em; }
+.result-detail-head .club-link::after { content: none; }
+#resultOverlay:not(.hidden):has(#resultFixtureEdit:not([hidden])) {
   display: grid;
-  grid-template-columns: minmax(0, 1fr);
-  align-content: start;
-  gap: 6px;
-  min-width: 0;
+  justify-items: center;
+  align-content: center;
+  row-gap: 8px;
+  padding: max(8px, env(safe-area-inset-top)) 12px max(8px, env(safe-area-inset-bottom));
 }
-.custom-fixture-edit { justify-self: end; font-size: .82rem; }
-.custom-fixture-card > :is(.fixture-match, .result-match, .latest-fixture) { width: 100%; }
-#page-standings .standings-team { min-width: 9rem; text-align: left; color: var(--text-color); overflow-wrap: anywhere; }
-#page-standings tbody .standings-team { position: static; background: inherit; text-transform: none; letter-spacing: normal; }
-#page-standings .standings-team .team-colour { color: inherit; }
-.result-detail-head .club-link { display: inline; }
+#resultOverlay:has(#resultFixtureEdit:not([hidden])) .result-sheet {
+  grid-row: 2;
+  position: relative;
+  inset: auto;
+  transform: none;
+  width: min(900px, 100%);
+  height: auto;
+  max-height: calc(100dvh - 90px - env(safe-area-inset-top) - env(safe-area-inset-bottom));
+}
+#resultFixtureEdit { position: relative; grid-row: 1; width: fit-content; z-index: 1; }
+#resultFixtureEdit[hidden] { display: none; }
+.result-scorecard { container-type: inline-size; }
+.result-scorecard .rubber-table-8541 td.rubber-score-854 {
+  white-space: nowrap;
+  width: clamp(104px, 35%, 176px);
+}
+.result-scorecard .rubber-table-8541 td.rubber-score-854 strong {
+  font-size: clamp(10px, 4.2cqi, 18px);
+  letter-spacing: -.035em;
+}
+.round-inline-editor { padding-block: 12px; }
+.round-inline-sides { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr)); gap: 12px; }
+.standings-source-details { margin-block-start: .55rem; }
+.standings-source-details summary { cursor: pointer; }
+.latest-round-summary {
+  padding: clamp(14px, 3vw, 24px);
+  border: 1px solid var(--border-color);
+  border-radius: var(--panel-radius);
+  background: color-mix(in srgb, var(--primary) 8%, var(--surface-raised));
+}
+.latest-round-summary h3 { font-size: clamp(1.5rem, 5vw, 2.35rem); }
+.latest-round-kpis > div { min-width: 4.5rem; }
+.latest-round-kpis strong { font-size: 1.45rem; }
+.latest-section-heading { margin-block: 1.5rem .65rem; }
+.latest-highlight-group h4 { margin: 0 0 .45rem; color: var(--muted-color); }
+.latest-highlights .round-highlight { display: grid; gap: .4rem; border-inline-start: 3px solid var(--border-color); }
+.latest-highlights .round-highlight.top { border-inline-start-color: var(--primary); }
+.latest-highlights .round-highlight.upset { border-inline-start-color: #bf7844; }
+.latest-score > span:first-child { background: color-mix(in srgb, var(--primary) 12%, var(--surface)); border-color: var(--primary); }
+.latest-score > span:first-child b { font-size: 1.3rem; }
+
 #settingsBtn {
   border-color: var(--primary);
   background: color-mix(in srgb, var(--primary) 8%, var(--surface-raised));

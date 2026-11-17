@@ -4,18 +4,25 @@
   const bye = fixture => fixture?.status === 'Bye' || /^(?:bye|byes)$/i.test(String(fixture?.home || '').trim()) ||
     /^(?:bye|byes)$/i.test(String(fixture?.away || '').trim()) || !fixture?.home || !fixture?.away;
 
+  function finalsStarted(data) {
+    return (data.results || []).some(group =>
+      (group.fixtures || []).some(fixture =>
+        /final|playoff|knockout|\bsf\b/i.test([group.stage, group.label, fixture.stage, fixture.label].join(' ')) &&
+        !['Scheduled', 'Bye', 'Missing Result'].includes(fixture.status)));
+  }
+
   function remaining(data) {
     const results = new Map();
     for (const group of data.results || []) {
       for (const fixture of group.fixtures || []) {
         if (['Scheduled', 'Bye', 'Missing Result'].includes(fixture.status)) continue;
-        results.set(JSON.stringify([group.round, fixture.home, fixture.away]), fixture);
+        results.set(JSON.stringify([String(group.round), fixture.home, fixture.away]), fixture);
       }
     }
     return (data.upcomingFixtures || []).filter(group => root.BRTAStandings.counts(data, group))
       .flatMap(group => group.fixtures.map(fixture => ({ ...group, fixtures: undefined, ...fixture })))
       .filter(fixture => !bye(fixture) && ['Scheduled', 'Missing Result'].includes(fixture.status) &&
-        root.BRTAStandings.counts(data, fixture) && !results.has(JSON.stringify([fixture.round, fixture.home, fixture.away])));
+        root.BRTAStandings.counts(data, fixture) && !results.has(JSON.stringify([String(fixture.round), fixture.home, fixture.away])));
   }
 
   function pointsCap(data) {
@@ -69,7 +76,6 @@
     if (!points.has(team) || rows.some(row => row.points == null) ||
         fixtures.some(fixture => !points.has(fixture.home) || !points.has(fixture.away))) return null;
     const own = fixtures.findIndex(fixture => [fixture.home, fixture.away].includes(team));
-    if (own < 0) return null;
     const cap = 10;
     const scores = [0, 1, 2, 3, 5, 7, 8, 9, 10];
     const chosen = [];
@@ -81,7 +87,7 @@
         const rivals = [...points].filter(([name]) => name !== team).map(([, value]) => value);
         const ahead = rivals.filter(value => value > current).length;
         const tied = rivals.filter(value => value === current).length;
-        const ownPoints = fixtures[own].home === team ? chosen[own] : cap - chosen[own];
+        const ownPoints = own < 0 ? 0 : fixtures[own].home === team ? chosen[own] : cap - chosen[own];
         const entry = paths.get(ownPoints) || { points: ownPoints, total: 0, clear: 0, tie: 0, eliminated: 0, example: null };
         entry.total++;
         if (ahead >= places) entry.eliminated++;
@@ -197,7 +203,7 @@
     return { runs, teams, fixtures: stats, paths: [...paths.values()], pathsComplete: paths.size < 4096, unresolvedCutoffs };
   }
 
-  const api = { bye, remaining, pointsCap, bounds, fixtureMatters, finalRoundPaths, tally };
+  const api = { bye, finalsStarted, remaining, pointsCap, bounds, fixtureMatters, finalRoundPaths, tally };
   root.BRTAFinalsMath = api;
   if (typeof module !== 'undefined') module.exports = api;
 })(globalThis);

@@ -66,7 +66,7 @@
   function select(club, tab = 'overview', pickedTeam) {
     selected = club;
     team = pickedTeam || sectionClubs.find(item => item.id === club.id)?.teams[0]?.name || '';
-    panel = tab;
+    panel = data.meta.is_custom ? 'stats' : tab;
     if (!team && panel === 'stats') panel = 'participation';
     window.BRTARouteUI?.club(team, panel);
     return render();
@@ -80,7 +80,7 @@
     }).join('');
     return '<div class="clubs9-toolbar"><div>' +
       '<h2>' + (data.meta.is_custom ? 'Local clubs' : 'Clubs in this section') + '</h2></div>' +
-      button(searchOpen ? 'Close club search' : 'Find a club', 'search', '', 'aria-expanded="' + searchOpen + '"') +
+      (data.meta.is_custom ? '' : button(searchOpen ? 'Close club search' : 'Find a club', 'search', '', 'aria-expanded="' + searchOpen + '"')) +
       '</div><div class="clubs9-picker" aria-label="Clubs in this section">' + list + '</div>' +
       (searchOpen ? searchHTML() : '');
   }
@@ -215,10 +215,10 @@
         (record.some(n => n != null) ? '<span class="clubs9-wdl" aria-label="Wins, draws, losses">' +
           record.map((n, index) => '<span class="' + ['clubs9-win', '', 'clubs9-loss'][index] + '">' +
             escape(n ?? '—') + '</span>').join('<span aria-hidden="true">–</span>') + '</span>' : '') + '</div>' : '') + '</header>' +
-      '<nav class="clubs9-tabs" aria-label="Club views">' + tabs.map(([id, label]) =>
+      (data.meta.is_custom ? '' : '<nav class="clubs9-tabs" aria-label="Club views">' + tabs.map(([id, label]) =>
         button(label, 'panel', id, 'aria-pressed="' + (panel === id) + '"' +
           (id === 'stats' && !team ? ' disabled title="Choose a team from Participation"' : ''))
-      ).join('') + '</nav>';
+      ).join('') + '</nav>');
   }
 
   function link(url, label) {
@@ -798,6 +798,7 @@
       selected = null;
       team = '';
       panel = section.meta.is_custom ? 'stats' : 'overview';
+      if (section.meta.is_custom) searchOpen = false;
       const configured = localStorage.getItem('brta-default-competition');
       const defaultCompetition = (DATA.catalog || []).some(row => row.competition_code === configured) ? configured : section.meta.competition_code;
       competition = defaultCompetition;

@@ -1,4 +1,4 @@
-importScripts('../models/standings.js?v=91', '../models/prediction.js?v=8521', '../models/finals-race.js?v=9113');
+importScripts('../models/standings.js?v=91', '../models/prediction.js?v=8521', '../models/finals-race.js?v=9121');
 
 function randomWithSeed(seed) {
   return () => {
@@ -12,26 +12,23 @@ self.onmessage = ({ data }) => {
     const { rows, places, fixtures, runs, options, sampleSize, seed } = data;
     const rng = randomWithSeed(seed);
     const sampled = fixtures.map((fixture, index) => {
-      const perPairing = Math.max(24, Math.ceil(sampleSize / fixture.combinations.length));
       const odds = [0, 0, 0];
-      const total = perPairing * fixture.combinations.length;
-      // Every pairing contributes the same number of trials to the displayed
-      // odds. Keep a bounded, evenly sampled bank for the season simulation.
+      let weight = 0;
+      const cumulative = fixture.combinations.map(pair => (weight += pair.weight ?? 1));
       const samples = [];
-      const stride = total / sampleSize;
-      let next = Math.floor(rng() * stride);
-      for (let trial = 0; trial < total; trial++) {
-        const combination = fixture.combinations[Math.floor(trial / perPairing)];
+      let pairing = 0;
+      for (let trial = 0; trial < sampleSize; trial++) {
+        const draw = (trial + rng()) * weight / sampleSize;
+        while (pairing < cumulative.length - 1 && draw >= cumulative[pairing]) pairing++;
+        const combination = fixture.combinations[pairing];
         const result = BRTAPrediction.simulateTie(combination.rubbers, { ...options, rng });
         odds[result.homePoints > result.awayPoints ? 0 : result.homePoints < result.awayPoints ? 1 : 2]++;
-        if (trial !== next) continue;
         samples.push({ hp: result.homePoints, ap: result.awayPoints, hg: result.homeGames, ag: result.awayGames,
           h: combination.home, a: combination.away, rubberWinners: result.results.map(row => Number(row.homeWon)) });
-        next = Math.floor((samples.length + rng()) * stride);
       }
       self.postMessage({ prepared: index + 1, total: fixtures.length });
       return { id: fixture.id, home: fixture.home, away: fixture.away, samples,
-        odds: odds.map(count => count / total),
+        odds: odds.map(count => count / sampleSize),
         rubberLabels: fixture.combinations[0].rubbers.map(row => row.label) };
     });
     self.postMessage({ ready: true });

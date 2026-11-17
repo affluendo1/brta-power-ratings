@@ -46,8 +46,14 @@ w.CustomSections.openBackup({format:'brta-custom-sections',version:1,sections:[c
 vm.runInContext("close('#customAdminOverlay')",ctx);
 const original = vm.runInContext('D.meta.section_code',ctx);
 await vm.runInContext("loadSection('local-test')",ctx);
-assert.deepEqual([...w.document.querySelectorAll('#standingsBody .standings-team')].map(node=>node.textContent),['A','B']);
-click('[data-edit-custom-fixture="match-3"]');
+assert.deepEqual([...w.document.querySelectorAll('#standingsBody [data-club-team]')].map(node=>node.textContent),['A','B']);
+click('[data-page="results"]');
+assert(!w.document.querySelector('#resultsList [data-edit-custom-fixture]'));
+click('#resultsList [data-match-id="match-3"]');
+assert.equal(w.document.querySelector('#resultFixtureEdit').closest('#resultOverlay').id, 'resultOverlay');
+assert(!w.document.querySelector('.result-sheet #resultFixtureEdit'));
+assert.equal(w.document.querySelectorAll('#resultContent h2 [data-club-team]').length, 2);
+click('#resultFixtureEdit:not([hidden])');
 assert.equal(w.document.querySelector('.ca-fixture-tabs > .primary').dataset.id,'match-3');
 vm.runInContext("close('#customAdminOverlay')",ctx);
 await vm.runInContext('loadSection('+JSON.stringify(original)+')',ctx);
@@ -84,7 +90,8 @@ assert(w.document.querySelector('#profileContent').textContent.includes('Close s
 console.log('Doubles-only sections hide irrelevant views and use unqualified match labels');
 await vm.runInContext("(async()=>{await loadSection('UA001');const r=D.results.flatMap(g=>g.fixtures).find(f=>f.rubbers.some(r=>r.score.includes('[TB ')));openProfile(r.rubbers.find(r=>r.score.includes('[TB ')).home);openMatch(r.fixtureId)})()",ctx);await tick();
 assert(w.document.querySelector('#profileContent').textContent.includes('Rubbers record'));
-assert(w.document.querySelector('#resultContent').textContent.includes('Actual point scores were not recorded'));
+assert(!w.document.querySelector('#resultContent').textContent.includes('Actual point scores were not recorded'));
+assert([...w.document.querySelectorAll('#resultContent .rubber-score-854')].some(node=>node.textContent.includes(', ')));
 esc();await tick();assert(!w.document.querySelector('#profileOverlay').classList.contains('hidden'));esc();await tick();
 vm.runInContext("BRTATeamLabUI.open(D.results[0].fixtures[0].home)",ctx);await tick();
 assert(w.document.querySelector('#teamLabContent > .team822-explorer.expanded'));

@@ -35,7 +35,7 @@
     (function(){var m=localStorage.getItem('brta-interface')||'future',t=localStorage.getItem('brta-theme')||'auto',a=localStorage.getItem('brta-accent')||'yellow',d=t==='dark'||t==='black-plus'||t==='neon-plus'||(t==='auto'&&matchMedia('(prefers-color-scheme: dark)').matches),future=m!=='classic',c=future?(d?'#101109':'#f3f2e9'):(d?'#000000':'#c0c0c0'),l=document.createElement('link');document.documentElement.dataset.interface=m;document.documentElement.dataset.accent=a;document.documentElement.style.backgroundColor=c;document.documentElement.style.colorScheme=d?'dark':'light';document.getElementById('themeColor').content=c;l.id='siteStyles';l.rel='stylesheet';l.href=future?'web/styles/future.css?v=901':'web/styles/style.css?v=901';document.head.appendChild(l)})()
   </script>
   <link rel="stylesheet" href="web/optional/collection.css?v=8521">
-<link rel="stylesheet" href="web/styles/custom-sections.css?v=8542">
+<link rel="stylesheet" href="web/styles/custom-sections.css?v=9121">
 <link rel="stylesheet" href="web/styles/player-search.css?v=8521">
 <link rel="stylesheet" href="web/styles/team-lab.css?v=8521">
 <link rel="stylesheet" href="web/styles/changelog.css?v=911-past">
@@ -55,7 +55,7 @@
 <link rel="stylesheet" href="web/styles/clubs.css?v=901">
 <link rel="stylesheet" href="web/styles/model-vault.css?v=91011">
 <link rel="stylesheet" href="web/styles/archive-secret.css?v=9113">
-<link rel="stylesheet" href="web/styles/release91.css?v=9113">
+<link rel="stylesheet" href="web/styles/release91.css?v=9121">
 <link rel="stylesheet" href="web/styles/racquet-club.css?v=9112">
 </head>
 <body>
@@ -153,7 +153,7 @@
 <div id="profileOverlay" class="overlay hidden"><div class="overlay-backdrop" data-close="1"></div><aside class="profile-sheet"><button id="profileClose" class="close-btn" aria-label="Close">×</button><div id="profileContent"></div></aside><aside id="profileMatchExplorer" class="profile-match-explorer hidden" aria-label="Match explorer"><div id="profileMatchExplorerContent"></div></aside></div>
 <div id="searchOptionsOverlay" class="overlay hidden"><div class="overlay-backdrop" data-search-options-close="1"></div><section class="search-options-sheet" role="dialog" aria-modal="true" aria-labelledby="searchOptionsTitle"><button id="searchOptionsClose" class="close-btn" type="button" aria-label="Close">×</button><div class="overlay-title"><div class="kicker">RATINGS</div><h2 id="searchOptionsTitle">Options</h2></div><h3>Search scope</h3><div class="search-scope-choice" role="group" aria-label="Search players in"><button type="button" data-search-scope="section">This section</button><button type="button" data-search-scope="all">All sections</button><button type="button" data-search-scope="history">All history</button></div><div class="ratings-history-options"><h3>Rating History</h3><div id="ratingHistoryChoices" class="rating-history-choices"></div></div></section></div><div id="rivalryOverlay" class="overlay hidden"><div class="overlay-backdrop" data-rivalry-close="1"></div><aside class="rivalry-sheet"><button id="rivalryClose" class="close-btn" type="button" aria-label="Close">×</button><div id="rivalryContent"></div></aside></div><div id="roundOverlay" class="overlay hidden"><div class="overlay-backdrop" data-round-close="1"></div><aside class="round-sheet"><button id="roundClose" class="close-btn" aria-label="Close">×</button><div id="roundContent"></div></aside></div>
 <div id="settingsOverlay" class="overlay hidden"><div class="overlay-backdrop" data-settings-close="1"></div><aside class="settings-sheet"><button id="settingsClose" class="close-btn" aria-label="Close">×</button><div id="settingsContent"></div></aside></div>
-<div id="resultOverlay" class="overlay hidden"><div class="overlay-backdrop" data-result-close="1"></div><aside class="result-sheet"><button id="resultClose" class="close-btn" aria-label="Close">×</button><div id="resultContent"></div></aside></div>
+<div id="resultOverlay" class="overlay hidden"><div class="overlay-backdrop" data-result-close="1"></div><aside class="result-sheet"><button id="resultClose" class="close-btn" aria-label="Close">×</button><div id="resultContent"></div></aside><button id="resultFixtureEdit" class="button primary" type="button" data-edit-custom-fixture hidden>Edit fixture</button></div>
 <div id="raceSetupOverlay" class="overlay hidden"><div class="overlay-backdrop" data-race-setup-close></div><aside class="settings-sheet race-setup-sheet" role="dialog" aria-modal="true" aria-label="Forecast setup"><button type="button" class="close-btn" data-race-setup-close aria-label="Close">×</button><div data-race-setup></div></aside></div>
 <div id="finalsRaceOverlay" class="overlay hidden"><div class="overlay-backdrop" data-race-close></div><aside class="settings-sheet race-sheet" role="dialog" aria-modal="true" aria-labelledby="finalsRaceTitle"><button type="button" class="close-btn" data-race-close aria-label="Close">×</button><header class="overlay-title"><h2 id="finalsRaceTitle">Finals race</h2></header><div class="race-panel" data-race-body></div></aside></div>
 <div id="predictionOverlay" class="overlay hidden"><div class="overlay-backdrop" data-prediction-close="1"></div><aside class="prediction-sheet"><button id="predictionClose" class="close-btn" aria-label="Close">×</button><div id="predictionContent"></div></aside></div>
@@ -182,7 +182,7 @@
 <script src="web/features/player-search.js?v=9113"></script>
 <script src="web/models/team-lab.js?v=8521"></script>
 <script src="web/features/team-lab-ui.js?v=900"></script>
-<script src="web/features/changelog-data.js?v=9113"></script>
+<script src="web/features/changelog-data.js?v=9121"></script>
 <script src="extras/past-software/releases.js?v=9111"></script>
 <script src="web/features/changelog.js?v=9113"></script>
 <script src="web/optional/parameters.js?v=8521"></script>
@@ -195,8 +195,8 @@
 <script src="web/models/orchestra-fit.js?v=8521"></script>
 <script src="web/models/orchestra.js?v=audit2"></script>
 <script src="web/models/site-routes.js?v=9101"></script>
-<script src="web/core/app.js?v=9113"></script>
-<script src="web/core/layout.js?v=9113"></script>
+<script src="web/core/app.js?v=9121"></script>
+<script src="web/core/layout.js?v=9121"></script>
 <script src="web/features/confetti.js?v=8521"></script>
 <script src="web/features/archive.js?v=901"></script>
 <script src="web/optional/sequence.js?v=8521"></script>
@@ -217,16 +217,16 @@
 <script src="web/optional/deeds.js?v=8521"></script>
 <script src="web/features/club-map.js?v=901"></script>
 <script src="web/models/matchday.js?v=9113"></script>
-<script src="web/features/matchday.js?v=9113"></script>
+<script src="web/features/matchday.js?v=9121"></script>
 <script src="web/features/following.js?v=901"></script>
 <script src="web/features/share-cards.js?v=900"></script>
-<script src="web/features/competition-formats.js?v=8521"></script>
+<script src="web/features/competition-formats.js?v=9121"></script>
 <script src="web/features/pair-search.js?v=901"></script>
 <script src="web/features/team-explorer.js?v=900"></script>
 <script src="web/features/extras-refinement.js?v=8521"></script>
-<script src="web/features/rm4-ui.js?v=9113"></script>
+<script src="web/features/rm4-ui.js?v=9121"></script>
 <script src="web/features/reading-pages.js?v=8521"></script>
-<script src="web/features/round-simulation.js?v=9101"></script>
+<script src="web/features/round-simulation.js?v=9121"></script>
 <script src="web/features/release84.js?v=8521"></script>
 <script src="web/features/standings-history.js?v=8521"></script>
 <script src="web/features/classic-ui.js?v=8521"></script>
@@ -235,19 +235,19 @@
 <script src="web/features/mini-updates.js?v=91"></script>
 <script src="web/features/export-853.js?v=901-fast"></script>
 <script src="web/models/clubs.js?v=900"></script>
-<script src="web/features/clubs.js?v=91"></script>
+<script src="web/features/clubs.js?v=9121"></script>
 <script src="web/features/model-vault.js?v=9111"></script>
 <script src="web/features/archive-secret.js?v=9113"></script>
 <script src="web/themes/theme-calendar/presets.js?v=9014"></script>
 <script src="web/features/theme-calendar.js?v=91"></script>
 <script src="web/features/site-routes.js?v=91"></script>
-<script src="web/models/finals-race.js?v=9113"></script>
-<script src="web/features/finals-race.js?v=9113"></script>
+<script src="web/models/finals-race.js?v=9121"></script>
+<script src="web/features/finals-race.js?v=9121"></script>
 <script src="web/features/fixture-details.js?v=9113"></script>
 <script src="web/features/scoreline-vault.js?v=9113"></script>
 <script src="web/optional/round-zero.js?v=9111"></script>
 <script src="web/models/racquet-club.js?v=9112"></script>
-<script src="web/features/racquet-club.js?v=9112"></script>
+<script src="web/features/racquet-club.js?v=9121"></script>
 </body>
 </html>
 

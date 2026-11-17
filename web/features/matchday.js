@@ -15,7 +15,7 @@ document.body.append(stash);
 function fixtureRow(fixture, forecast) {
   const { home, away, status, fixtureId } = fixture;
   const score = (a, b) => a != null && b != null ? esc(a + '–' + b) : '—';
-  if (status === 'Bye') return customFixtureCard(fixture, '<div class="round-fixture latest-fixture"><b>' + teamName(home === 'Bye' ? away : home) + '</b><span>Bye</span></div>');
+  if (fixtureIsBye(fixture)) return byeCard(fixture);
   const complete = status === 'Completed';
   const action = complete || findMatch(fixtureId) ? 'data-82-result' :
     status === 'Scheduled' && fixtureById(fixtureId) ? 'data-82-predict' : '';
@@ -28,7 +28,7 @@ function fixtureRow(fixture, forecast) {
       '</b></span><span>Games <b>' + score(fixture.homeGames, fixture.awayGames) + '</b></span></div>' : '') +
     (forecast ? '<span class="latest-chance">' + chance(forecast.resultChance) + ' pre-round chance of this outcome</span>' : '') +
     (action ? '<span class="latest-action">' + (action === 'data-82-result' ? 'View scorecard' : 'Fixture Outlook') + ' ›</span>' : '') + '</' + tag + '>';
-  return customFixtureCard(fixture, card);
+  return card;
 }
 
 const chance = value => (100 * value).toFixed(1) + '%';
@@ -124,11 +124,13 @@ function render() {
   const fixtures = [...round.fixtures, ...remaining];
   const pending = fixtures.filter(f => ['Scheduled', 'Missing Result'].includes(f.status)).length;
   const analysis = roundAnalysis(round);
-  const featured = [
+  const playerHighlights = [
     highlight('Top performance', analysis.top, 'top', row => 'Performance ≈ ' + row.performance, 'No pre-round rating evidence'),
     highlight('Biggest upset', analysis.upset, 'upset', row => chance(row.chance) + ' pre-round win chance', 'No upset identified'),
     highlight('Most dominant', analysis.dominant, '', row => row.margin + ' game margin'),
-    highlight('Closest player match', analysis.closest, ''),
+    highlight('Closest player match', analysis.closest, '')
+  ];
+  const teamHighlights = [
     highlight('Top team performance', analysis.teamPerformance, 'top', row => '+' + row.above.toFixed(1) + ' games vs expected', 'No team outperformance identified'),
     highlight('Biggest team upset', analysis.teamUpset, 'upset', row => chance(row.chance) + ' pre-round win chance', 'No upset identified'),
     highlight('Most dominant team', analysis.teamDominant, '', row => row.margin + ' game margin'),
@@ -136,13 +138,14 @@ function render() {
       ' vs ' + teamName(round.closest.away) + '</b><small>' + Math.abs(round.closest.homeGames - round.closest.awayGames) +
       ' game margin</small></div>'
   ].filter(Boolean);
+  const highlights = (title, cards) => '<section class="latest-highlight-group"><h4>' + title + '</h4><div class="round-highlights latest-highlights">' + cards.join('') + '</div></section>';
   page.innerHTML = context + '<section class="latest-round-summary"><div><span class="kicker">Round overview</span><h3>' +
     esc(roundHeading(round)) + '</h3><p class="small-note">' + esc(roundDate(round.date)) + '</p></div>' +
     '<div class="latest-round-kpis">' + [['Completed', round.completed], ['Awaiting results', pending],
       ['Matches played', round.singles + round.doubles], ['Games played', round.games]].map(([label, value]) =>
       '<div><strong>' + value + '</strong><span>' + label + '</span></div>').join('') + '</div></section>' +
-    (featured.length ? '<h3>Round highlights</h3><div class="round-highlights latest-highlights">' + featured.join('') + '</div>' : '') +
-    '<h3>Fixtures</h3><div class="round-fixtures latest-fixtures">' + fixtures.map(fixture => fixtureRow(fixture, analysis.forecasts.get(fixture.fixtureId))).join('') + '</div>';
+    '<h3 class="latest-section-heading">Round highlights</h3>' + highlights('Team highlights', teamHighlights) + highlights('Player highlights', playerHighlights) +
+    '<h3 class="latest-section-heading">Fixtures</h3><div class="round-fixtures latest-fixtures">' + fixtures.map(fixture => fixtureRow(fixture, analysis.forecasts.get(fixture.fixtureId))).join('') + '</div>';
 }
 
 function showRounds() {

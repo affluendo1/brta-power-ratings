@@ -2,8 +2,21 @@
 // Retrospective entries use source-commit timestamps; sourceCommit records their provenance.
 window.BRTA_RELEASES = Object.freeze([
   {
-    "version": "9.1.1.3",
+    "version": "9.1.2.1",
     "size": "tiny",
+    "title": "Round and scorecard refinements",
+    "committedAt": "2026-11-17T12:00:00+11:00",
+    "changes": [
+      "Latest Round separates team and player highlights and makes the fixture score easier to scan.",
+      "Custom scorecards link to Team Stats and provide a fixture editor shortcut beside the dialog.",
+      "Finals Race limits lineup permutations and weighs lineups by actual appearances.",
+      "Round Simulation edits lineups in place, and multi-set scores display on one line.",
+      "Byes are non-interactive, standings source notes can be expanded, and Finals Race closes when finals begin."
+    ]
+  },
+  {
+    "version": "9.1.2",
+    "size": "small",
     "title": "Fixtures, finals and player history",
     "committedAt": "2026-11-16T23:00:00+11:00",
     "changes": [

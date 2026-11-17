@@ -39,14 +39,14 @@
    const names = [['homePoints', 'Home points'], ['awayPoints', 'Away points'], ['homeGames', 'Home games'],
      ['awayGames', 'Away games'], ['homeRubbers', 'Home rubbers'], ['awayRubbers', 'Away rubbers']];
    const byes=byeTeams(entry);
-   const form = '<form class="round-scenario-form"><p>Edit a lineup in the Prediction Centre or lock totals for any fixture. Remaining fixtures are simulated.</p>' +
+   const form = '<form class="round-scenario-form"><p>Edit either team’s lineup below or lock totals for any fixture. Remaining fixtures are simulated.</p>' +
      (byes.length?'<div class="round-bye-note"><span>BYE</span><div><b>'+byes.map(teamName).join(' · ')+'</b><small>No fixture, no points and no lineup required this round.</small></div></div>':'')+
      scheduled(entry).map(fixture => {
        const lock = setup.locks[fixture.fixtureId];
        return '<details class="round-scenario-fixture"' + (lock ? ' open' : '') + '><summary><b>' +
          esc(fixture.home + ' v ' + fixture.away) + '</b>' + (setup.lineups[fixture.fixtureId] ? ' · edited lineup' : '') +
          (lock ? ' · result locked' : '') + '</summary><button class="button secondary" type="button" data-round-edit="' +
-         esc(fixture.fixtureId) + '">Edit lineups</button>' +
+         esc(fixture.fixtureId) + '">Edit lineups</button><div class="round-inline-editor" hidden></div>' +
          (D.meta.competition_rules?.teamPoints === 'published only' ? '' : '<fieldset data-round-lock="' + esc(fixture.fixtureId) +
          '"><legend>Result lock</legend><label><input type="checkbox" data-round-lock-toggle ' + (lock ? 'checked' : '') +
          '> Lock this result</label><div class="round-lock-fields"' + (lock ? '' : ' hidden') + '>' + names.map(([key, label]) =>
@@ -86,7 +86,7 @@
  }
 
  function positionArrows(){const o=$('#resultOverlay'),r=o.querySelector('.result-sheet').getBoundingClientRect();o.style.setProperty('--sim84-left',Math.max(8,r.left-52)+'px');o.style.setProperty('--sim84-right',Math.max(8,innerWidth-r.right-52)+'px');o.style.setProperty('--sim84-top',r.top+r.height/2+'px');o.style.setProperty('--sim841-left',r.left+'px');o.style.setProperty('--sim841-width',r.width+'px');o.style.setProperty('--sim841-top',Math.max(8,r.top-76)+'px')}
- function draw(){if(!state)return;const f=state.fixtures[state.index];selectedMatch=null;const overlay=$('#resultOverlay');overlay.dataset.simulated='true';$('#resultContent').innerHTML=f.simulationError?'<h2>'+teamName(f.home)+' vs '+teamName(f.away)+'</h2><p>'+esc(f.simulationError)+'</p>':resultDetailHTML(f);if(f.locked){const noScores=$('#resultContent .result-scorecard .notice');if(noScores)noScores.textContent='Locked totals supplied for this scenario.'}overlay.querySelector('.round841-controls')?.remove();overlay.insertAdjacentHTML('beforeend','<div class="round841-controls"><div class="round841-tools"><button class="button secondary" data-round84-standings>Simulated standings</button><button class="button secondary" data-round84-rerun>Rerun simulation</button><button class="button secondary" data-round84-configure>Edit scenario</button></div><nav class="round841-counter" aria-label="Simulated fixture position"><button class="round841-mobile-step" data-round84-step="-1" aria-label="Previous simulated fixture">‹</button><span>SIMULATED · ROUND '+esc(state.round)+' · '+(state.index+1)+' / '+state.fixtures.length+'</span><button class="round841-mobile-step" data-round84-step="1" aria-label="Next simulated fixture">›</button></nav></div>');overlay.querySelector('.round84-externalnav')?.remove();if(state.fixtures.length>1)overlay.insertAdjacentHTML('beforeend','<nav class="round84-externalnav" aria-label="Navigate simulated fixtures"><button class="round84-arrow" data-round84-step="-1" aria-label="Previous simulated fixture">‹</button><button class="round84-arrow" data-round84-step="1" aria-label="Next simulated fixture">›</button></nav>');overlay.classList.remove('hidden');positionArrows();eightRaise(overlay);document.body.classList.add('modal-open')}
+ function draw(){if(!state)return;const f=state.fixtures[state.index];selectedMatch=null;const overlay=$('#resultOverlay');overlay.dataset.simulated='true';$('#resultFixtureEdit').hidden=true;$('#resultContent').innerHTML=f.simulationError?'<h2>'+teamName(f.home)+' vs '+teamName(f.away)+'</h2><p>'+esc(f.simulationError)+'</p>':resultDetailHTML(f);if(f.locked){const noScores=$('#resultContent .result-scorecard .notice');if(noScores)noScores.textContent='Locked totals supplied for this scenario.'}overlay.querySelector('.round841-controls')?.remove();overlay.insertAdjacentHTML('beforeend','<div class="round841-controls"><div class="round841-tools"><button class="button secondary" data-round84-standings>Simulated standings</button><button class="button secondary" data-round84-rerun>Rerun simulation</button><button class="button secondary" data-round84-configure>Edit scenario</button></div><nav class="round841-counter" aria-label="Simulated fixture position"><button class="round841-mobile-step" data-round84-step="-1" aria-label="Previous simulated fixture">‹</button><span>SIMULATED · ROUND '+esc(state.round)+' · '+(state.index+1)+' / '+state.fixtures.length+'</span><button class="round841-mobile-step" data-round84-step="1" aria-label="Next simulated fixture">›</button></nav></div>');overlay.querySelector('.round84-externalnav')?.remove();if(state.fixtures.length>1)overlay.insertAdjacentHTML('beforeend','<nav class="round84-externalnav" aria-label="Navigate simulated fixtures"><button class="round84-arrow" data-round84-step="-1" aria-label="Previous simulated fixture">‹</button><button class="round84-arrow" data-round84-step="1" aria-label="Next simulated fixture">›</button></nav>');overlay.classList.remove('hidden');positionArrows();eightRaise(overlay);document.body.classList.add('modal-open')}
  function open(round){if(D.meta?.singlesOnly){openPredictionHome();return}configure(round)}
  function standings() {
    if (!state) return;
@@ -109,6 +109,13 @@
  document.addEventListener('submit', event => {
    if (!event.target.matches('.round-scenario-form')) return;
    event.preventDefault();
+   const unapplied = event.target.querySelector('.round-inline-editor:not([hidden])');
+   if (unapplied) {
+     unapplied.closest('details').open = true;
+     unapplied.querySelector('[data-inline-lineup-error]').textContent = 'Apply or cancel this lineup edit before simulating.';
+     unapplied.querySelector('[data-inline-save]').focus();
+     return;
+   }
    if (!saveLocks(event.target)) return;
    state = build(setup.round);
    BRTA82.dismiss();
@@ -120,45 +127,87 @@
    fields.hidden = !event.target.checked;
    for (const input of fields.querySelectorAll('input')) input.required = !(input.disabled = fields.hidden);
  });
+ function editLineups(trigger) {
+   const host = trigger.nextElementSibling;
+   const fixture = scheduled(fixturesFor(setup.round)).find(row => row.fixtureId === trigger.dataset.roundEdit);
+   if (!fixture || !host.hidden) return;
+   const needed = predictionNeeded();
+   const sides = structuredClone(setup.lineups[fixture.fixtureId] ||
+     [defaultSide(fixture.home, needed, setup.round), defaultSide(fixture.away, needed, setup.round)]);
+   const render = () => {
+     sides.forEach((side, index) => normaliseSide(index ? fixture.away : fixture.home, side, needed));
+     host.innerHTML = '<div class="round-inline-sides">' +
+       predictionLineupPicker(fixture.home, sides[0], 'home', needed, false) +
+       predictionLineupPicker(fixture.away, sides[1], 'away', needed, false) +
+       '</div><p role="alert" data-inline-lineup-error></p><button type="button" class="button primary" data-inline-save>Apply lineups</button> ' +
+       '<button type="button" class="button secondary" data-inline-cancel>Cancel</button>';
+   };
+   const finish = () => {
+     host.hidden = true;
+     host.replaceChildren();
+     trigger.hidden = false;
+     trigger.focus();
+   };
+   host.onchange = event => {
+     const input = event.target, d = input.dataset;
+     const side = sides[(d.predictSide || d.singlesSide || d.side) === 'away' ? 1 : 0];
+     event.stopPropagation();
+     if (d.predictSide) {
+       if (!input.checked) side.draft = side.draft.filter(name => name !== d.predictPlayer);
+       else if (side.draft.length < needed) side.draft.push(d.predictPlayer);
+     } else if (d.singlesSide) {
+       const slot = Number(d.singlesPosition), previous = side.singles.indexOf(input.value);
+       if (previous >= 0) side.singles[previous] = side.singles[slot];
+       side.singles[slot] = input.value;
+       side.manualOrder = true;
+     } else if (input.matches('[data-predict-pair-check]')) {
+       const pair = side.doubles[Number(d.pair)];
+       if (input.checked && pair.length < 2) pair.push(input.value);
+       if (!input.checked) side.doubles[Number(d.pair)] = pair.filter(name => name !== input.value);
+       side.manualPairs = true;
+     }
+     render();
+     const control = [...host.querySelectorAll('input,select')].find(node =>
+       node.dataset.predictPlayer === d.predictPlayer && node.dataset.predictSide === d.predictSide &&
+       node.dataset.singlesSide === d.singlesSide && node.dataset.singlesPosition === d.singlesPosition &&
+       node.dataset.pair === d.pair && node.dataset.side === d.side && (!d.pair || node.value === input.value));
+     control?.focus({ preventScroll: true });
+   };
+   host.onclick = event => {
+     event.stopPropagation();
+     const button = event.target.closest('button');
+     if (!button) return;
+     if (button.dataset.autoOrder) {
+       sides[button.dataset.autoOrder === 'away' ? 1 : 0].manualOrder = false;
+       render();
+       return;
+     }
+     if (button.hasAttribute('data-inline-cancel')) return finish();
+     if (!button.hasAttribute('data-inline-save')) return;
+     if (sides[0].draft.some(name => sides[1].draft.includes(name)) || !predictionMath(...sides, false, fixture)) {
+       host.querySelector('[data-inline-lineup-error]').textContent = 'Choose two complete lineups without shared players.';
+       return;
+     }
+     setup.lineups[fixture.fixtureId] = structuredClone(sides);
+     trigger.textContent = 'Edit lineups · saved';
+     finish();
+   };
+   trigger.hidden = true;
+   host.hidden = false;
+   render();
+   host.querySelector('input, select, button')?.focus();
+ }
+
  document.addEventListener('click', event => {
    const edit = event.target.closest('[data-round-edit]');
-   if (edit) {
-     const form = edit.closest('form');
-     if (!saveLocks(form)) return;
-     const fixture = fixtureById(edit.dataset.roundEdit);
-     if (!fixture) return;
-     BRTA82.dismiss();
-     openPrediction(fixture.fixtureId);
-     const saved = setup.lineups[fixture.fixtureId];
-     if (saved && selectedPrediction) {
-       [selectedPrediction.home, selectedPrediction.away] = structuredClone(saved);
-       refreshPrediction();
-     }
-     const host = $('#predictionContent');
-     if (selectedPrediction) { host.dataset.roundSetup = fixture.fixtureId; refreshPrediction(); }
-     window.BRTARouteUI?.close('#predictionOverlay');
-   }
-   const apply = event.target.closest('[data-round-apply-lineup]');
+   if (edit) editLineups(edit);
    if (event.target.closest('[data-round84-configure]') && state) {
      close('#resultOverlay');
      configure(state.round);
-   }
-   if (apply && setup && selectedPrediction) {
-     if (!predictionMath(selectedPrediction.home, selectedPrediction.away, false)) {
-       $('#predictionContent [data-round-lineup-error]').textContent = 'Select complete, distinct lineups before applying.';
-       return;
-     }
-     setup.lineups[apply.dataset.roundApplyLineup] = structuredClone([selectedPrediction.home, selectedPrediction.away]);
-     delete $('#predictionContent').dataset.roundSetup;
-     close('#predictionOverlay');
-     configure(setup.round);
    }
  });
  document.addEventListener('click',e=>{const step=e.target.closest('[data-round84-step]');if(step&&state){state.index=(state.index+Number(step.dataset.round84Step)+state.fixtures.length)%state.fixtures.length;draw();return}if(e.target.closest('[data-round84-rerun]')&&state){const i=state.index;state=build(state.round);if(state){state.index=Math.min(i,state.fixtures.length-1);draw()}return}if(e.target.closest('[data-round84-standings]'))standings()});
  window.addEventListener('resize',()=>{if(state&&!$('#resultOverlay').classList.contains('hidden'))positionArrows()});
  window.addEventListener('brta-section-ready',()=>{state=null;setup=null;delete $('#resultOverlay').dataset.simulated});
- window.BRTARoundSimulation={open,standings,getState:()=>state, predictionControls(match) {
-   return $('#predictionContent').dataset.roundSetup === match.fixtureId ? '<div class="round-lineup-apply"><button class="button primary" type="button" data-round-apply-lineup="' +
-     esc(match.fixtureId) + '">Use these lineups in round simulation</button><p role="alert" data-round-lineup-error></p></div>' : '';
- }};
+ window.BRTARoundSimulation={open,standings,getState:()=>state};
 })();
