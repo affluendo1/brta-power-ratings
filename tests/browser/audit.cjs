@@ -33,7 +33,9 @@ click('[data-layout-open="methodology"]');await tick();esc();await tick();assert
 click('[data-studio="theme"]');await tick();esc();await tick();assert(w.document.querySelector('#themeStudioOverlay').classList.contains('hidden'));assert(!w.document.querySelector('#settingsOverlay').classList.contains('hidden'));console.log('Theme creator Escape preserves Settings');
 click('[data-changelog-open]');await tick();assert.equal(w.document.querySelector('.release-heading h3').textContent,'9.0');esc();await tick();assert(w.document.querySelector('#changelogOverlay').classList.contains('hidden'));assert(!w.document.querySelector('#settingsOverlay').classList.contains('hidden'));console.log('Changelog Escape restores Settings');esc();await tick();
 click('#roundBtn');await tick();assert(w.document.querySelector('.latest-highlights').textContent.includes('Top team performance'));click('[data-82-result]');await tick();assert(!w.document.querySelector('#resultOverlay').classList.contains('hidden'));assert.equal(w.document.querySelectorAll('.result-detail-head [data-club-team]').length,2);esc();await tick();assert(w.document.querySelector('#resultOverlay').classList.contains('hidden'));assert(w.document.querySelector('.rounds821-overlay'));
-const resultContent=w.document.querySelector('#resultContent'),resultSheet=resultContent.closest('.result-sheet');
+const resultContent=w.document.querySelector('#resultOverlay .result-scroll'),resultSheet=resultContent.closest('.result-sheet');
+assert(w.document.querySelector('#resultShare:not([hidden]) svg'),'Share uses an SVG in the result toolbar.');
+assert(!w.document.querySelector('#resultContent [data-share82-result]'),'Share does not overlap result content.');
 resultContent.scrollTop=180;
 resultSheet.scrollTop=120;
 click('[data-82-result]');await tick();

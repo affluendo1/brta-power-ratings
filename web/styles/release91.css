@@ -261,6 +261,25 @@ html[data-animation="off"] .profile-head h2.player-lab-rainbow { animation: none
 }
 #resultFixtureEdit { position: relative; grid-row: 1; width: fit-content; z-index: 1; }
 #resultFixtureEdit[hidden] { display: none; }
+.result-toolbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+  width: min(100%, 820px);
+  margin: 0 auto 8px;
+}
+.result-toolbar :is(#resultClose,#resultShare) {
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  position: static;
+  float: none;
+  flex: none;
+  margin: 0;
+}
+.result-toolbar #resultShare[hidden] { display: none; }
 #resultOverlay .result-sheet { overscroll-behavior-y: contain; }
 @media (max-width: 760px) {
   html:has(#resultOverlay:not(.hidden)) {
@@ -300,25 +319,26 @@ html[data-animation="off"] .profile-head h2.player-lab-rainbow { animation: none
     padding: 0;
     overflow: hidden;
   }
-  #resultClose {
-    position: static;
-    float: none;
+  .result-toolbar {
     flex: none;
-    align-self: end;
-    margin: max(8px, env(safe-area-inset-top)) max(12px, env(safe-area-inset-right)) 0 0;
+    margin: 0 auto;
+    padding: max(8px, env(safe-area-inset-top)) max(12px, env(safe-area-inset-right)) 8px;
   }
-  #resultOverlay:is([data-simulated], :has(#resultFixtureEdit:not([hidden]))) #resultClose {
-    margin-top: 8px;
+  #resultOverlay:is([data-simulated], :has(#resultFixtureEdit:not([hidden]))) .result-toolbar {
+    padding-top: 8px;
   }
-  #resultContent {
+  .result-scroll {
     flex: 1 1 auto;
     min-height: 0;
     min-width: 0;
     overflow: hidden auto;
     overflow-anchor: none;
     overscroll-behavior-y: contain;
+  }
+  #resultContent {
+    min-height: calc(100% + 64px);
     padding: 4px max(12px, env(safe-area-inset-right))
-      calc(16px + env(safe-area-inset-bottom)) max(12px, env(safe-area-inset-left));
+      calc(40px + env(safe-area-inset-bottom)) max(12px, env(safe-area-inset-left));
   }
   #resultContent .result-detail-head h2 { margin-inline-end: 0; }
   #resultOverlay[data-simulated] .round841-controls {
@@ -331,12 +351,53 @@ html[data-animation="off"] .profile-head h2.player-lab-rainbow { animation: none
   #resultOverlay .round841-tools { flex-wrap: wrap; }
 }
 .result-scorecard { container-type: inline-size; }
-.result-scorecard .rubber-table-8541 td.rubber-score-854 {
+/* All rubbers share one intrinsic score track. A short score never reserves space
+   for a longer format, and both player columns get an equal share of what's left. */
+.result-scorecard table.rubber-list.rubber-table-8541 {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) fit-content(48%) minmax(0, 1fr);
+}
+.result-scorecard .rubber-table-8541 > tbody,
+.result-scorecard .rubber-table-8541 .rubber-row-854 {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-template-columns: subgrid;
+  gap: 0;
+  align-items: stretch;
+}
+.result-scorecard .rubber-table-8541 td {
+  display: grid;
+  align-items: center;
+  min-width: 0;
   white-space: nowrap;
-  width: clamp(104px, 35%, 176px);
+  overflow-wrap: normal;
+}
+.rubber-side-line,.rubber-names {
+  display: flex;
+  align-items: baseline;
+  gap: .3em;
+  min-width: 0;
+}
+.rubber-away .rubber-side-line { justify-content: flex-end; }
+.rubber-table-8541 td.rubber-side .rubber-code { flex: none; margin-right: 0; }
+.result-scorecard .rubber-table-8541 .rubber-names :is(.person,.rubber-name) {
+  display: block;
+  min-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.rubber-names :is(.pair-sep,.emergency-marker) { flex: none; }
+.result-scorecard .rubber-table-8541 td.rubber-score-854 {
+  width: auto;
+  padding-inline: clamp(6px, 1.7cqi, 14px);
 }
 .result-scorecard .rubber-table-8541 td.rubber-score-854 strong {
-  font-size: clamp(10px, 4.2cqi, 18px);
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: clamp(10px, 3.6cqi, 18px);
   letter-spacing: -.035em;
 }
 .round-inline-editor { padding-block: 12px; }
