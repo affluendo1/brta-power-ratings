@@ -28,33 +28,45 @@ function matches(data,name,kind='singles',through=null){const isPair=kind==='pai
 function performanceBands(data,view,list,round=null){
  const base=root.BRTALayoutModel.bands(list);
  const order=base.bounds.map((_,i)=>'b'+i),names=base.names.slice(),bounds=base.bounds.slice();
- const assignment=new Map();
+ const qualifications=new Map();
  const ranked=list.filter(entry=>Number.isFinite(entry.rating));
  const label=name=>view==='pairs'?key(name):name;
  const powers=new Map(ranked.map(entry=>[label(entry.player),entry.rating]));
- const highElite=(base.cuts[0]-1+base.cuts[1])/2;
+ const zenithPower=3050;
+ const highElite=Math.ceil(base.cuts[1]+(base.cuts[0]-1-base.cuts[1])*2/3);
+ const basementPower=Math.floor(base.median-2*base.spread);
+ const basementMatches=8,basementWinShare=.125,basementGameShare=.22;
  const discipline=view==='overall'?'singles':view;
+ const opponentPower=match=>{
+  if(view!=='doublesPlayers')return powers.get(label(match.opp));
+  const ratings=members(match.opp).map(p=>powers.get(p));
+  return ratings.length===2&&ratings.every(Number.isFinite)?avg(ratings):null;
+ };
  for(const entry of ranked){
   const id=label(entry.player),ordinary=base.classFor(entry.rating);
-  if(entry.rating>=3000&&(ordinary==='b0'||ordinary==='b1')){
-   const win=matches(data,entry.player,discipline,round).some(match=>{
-    const score=view==='doublesPlayers'?match.oppRating:powers.get(label(match.opp));
-    return match.won&&Number.isFinite(score)&&score>=highElite;
-   });
-   if(win)assignment.set(id,'b18');
+  if(entry.rating>=zenithPower&&(ordinary==='b0'||ordinary==='b1')){
+   const bestWin=matches(data,entry.player,discipline,round).filter(match=>match.won)
+    .map(match=>({match,power:opponentPower(match)}))
+    .filter(win=>Number.isFinite(win.power)&&win.power>=highElite)
+    .sort((a,b)=>b.power-a.power||b.match.round-a.match.round)[0];
+   if(bestWin)qualifications.set(id,{band:'b18',minimumPower:zenithPower,opponentMinimum:highElite,
+    opponent:bestWin.match.opp,opponentPower:bestWin.power,score:bestWin.match.score,round:bestWin.match.round});
   }
-  // A substantial rating gap and sustained poor results both matter.
-  if(ordinary!=='b7'||entry.rating>base.median-1.8*base.spread||!((entry.matches??entry.s?.matches)>=6))continue;
+  if(ordinary!=='b7'||entry.rating>basementPower||!((entry.matches??entry.s?.matches)>=basementMatches))continue;
   const record=matches(data,entry.player,discipline,round);
-  if(record.length<6||record.filter(match=>match.won).length>record.length*.15)continue;
+  const wins=record.filter(match=>match.won).length;
+  if(record.length<basementMatches||wins/record.length>basementWinShare)continue;
   const gamesWon=record.reduce((count,match)=>count+match.gf,0);
   const gamesLost=record.reduce((count,match)=>count+match.ga,0);
-  if(gamesWon+gamesLost>0&&gamesWon/(gamesWon+gamesLost)<=.25)assignment.set(id,'b19');
+  const gamesPlayed=gamesWon+gamesLost;
+  if(gamesPlayed>0&&gamesWon/gamesPlayed<=basementGameShare)qualifications.set(id,{band:'b19',
+   maximumPower:basementPower,medianPower:base.median,wins,losses:record.length-wins,gamesWon,gamesPlayed});
  }
- const active=new Set(assignment.values());
+ const active=new Set([...qualifications.values()].map(result=>result.band));
  if(active.has('b18')){order.unshift('b18');names[18]='Zenith';bounds[18]='';}
  if(active.has('b19')){order.push('b19');names[19]='Basement';bounds[19]='';}
- return {...base,names,bounds,order,classForEntry:entry=>assignment.get(label(entry.player))||base.classFor(entry.rating)};
+ const qualificationForEntry=entry=>qualifications.get(label(entry.player));
+ return {...base,names,bounds,order,qualificationForEntry,classForEntry:entry=>qualificationForEntry(entry)?.band||base.classFor(entry.rating)};
 }
 function contextData(data,round=null){if(round==null)return data;const filter=groups=>(groups||[]).filter(g=>Number(g.round)<=round);return {...data,singles:rows(data,'singles',round),doubles:rows(data,'pairs',round),doublesIndividuals:rows(data,'doublesPlayers',round),results:filter(data.results),upcomingFixtures:filter(data.upcomingFixtures),teamOrderEvidence:{},playerInsights:{}}}
 function schedule(data,round=null,provisional=false){return rows(data,'singles',round).filter(x=>provisional||root.BRTAHistory.qualified(x,'singles',data)).map(x=>{const m=matches(data,x.player,'singles',round),ratings=m.map(r=>row(data,'singles',r.opp,round)?.rating).filter(Number.isFinite);return {...x,averageOpponent:ratings.length?Math.round(avg(ratings)):null,matches:ratings.length,provisional:!root.BRTAHistory.qualified(x,'singles',data)}}).filter(x=>x.averageOpponent!=null).sort((a,b)=>b.averageOpponent-a.averageOpponent||a.player.localeCompare(b.player)).map((x,i,all)=>({...x,rank:i+1,total:all.length}))}

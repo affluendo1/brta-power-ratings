@@ -8,3 +8,44 @@ const doublesOnly=structuredClone(D);doublesOnly.meta={competition_rules:{single
 assert.equal(L.discipline(doublesOnly),'doublesPlayers');assert.equal(L.discipline(doublesOnly,true),'pairs');assert.equal(L.discipline(D),'singles');
 const evidence=L.matches(doublesOnly,'A',L.discipline(doublesOnly));assert.equal(evidence.length,1);assert.equal(evidence.filter(m=>m.higher).length+evidence.filter(m=>!m.higher).length,1);assert.equal(evidence[0].partner,'C');
 console.log('Doubles-only summary/detail discipline and partner evidence agree.');
+
+global.BRTALayoutModel=require('../web/models/layout-model');
+const top=S('Aster',3440),strong=S('Birch',3230),low=S('Cedar',1400,8);
+const regular=[3110,2700,2660,2600,2540,2440,2350,2300].map((rating,i)=>S('Player '+i,rating));
+const rareRows=[top,strong,...regular,low];
+const singlesResult=(round,home,away,winner,score)=>({
+ round,fixtures:[{rubbers:[{type:'Singles',home,away,winner,score}]}]
+});
+const rareData={singles:rareRows,results:[
+ singlesResult(1,top.player,regular[2].player,top.player,'6-4'),
+ singlesResult(2,strong.player,top.player,top.player,'4-6'),
+ ...Array.from({length:8},(_,i)=>singlesResult(i+1,low.player,regular[6].player,regular[6].player,'1-6'))
+]};
+const modelFor=(round=null,rows=rareRows,data=rareData)=>L.performanceBands(data,'singles',rows,round);
+const model=modelFor();
+assert.equal(model.order[0],'b18');
+assert.equal(model.order.at(-1),'b19');
+assert.equal(model.classForEntry(top),'b18');
+assert.deepEqual(model.qualificationForEntry(top),{
+ band:'b18',minimumPower:3050,opponentMinimum:3158,
+ opponent:strong.player,opponentPower:strong.rating,score:'6-4',round:2
+});
+assert.equal(model.classForEntry(low),'b19');
+assert.deepEqual(
+ [model.qualificationForEntry(low).wins,model.qualificationForEntry(low).losses,model.qualificationForEntry(low).gamesWon,model.qualificationForEntry(low).gamesPlayed],
+ [0,8,8,56]
+);
+assert(!modelFor(1).order.includes('b18'));
+assert(!modelFor(7).order.includes('b19'));
+assert(!modelFor(null,[{...top,rating:3049},...rareRows.slice(1)]).qualificationForEntry(top));
+const eliteWin={...rareData,results:[singlesResult(1,top.player,regular[0].player,top.player,'6-4')]};
+assert.equal(modelFor(null,rareRows,eliteWin).classForEntry(top),'b0');
+const highEliteRows=rareRows.map(row=>row===regular[0]?{...row,rating:3200}:row);
+assert.equal(modelFor(null,highEliteRows,eliteWin).classForEntry(highEliteRows[2]),'b1');
+assert.equal(modelFor(null,highEliteRows,eliteWin).classForEntry(top),'b18');
+const closerLosses={...rareData,results:rareData.results.map(group=>{
+ const rubber=group.fixtures[0].rubbers[0];
+ return rubber.home===low.player?singlesResult(group.round,rubber.home,rubber.away,rubber.winner,'2-6'):group;
+})};
+assert.equal(modelFor(null,rareRows,closerLosses).classForEntry(low),'b7');
+console.log('Rare bands use stricter cutoffs, completed results through the selected round and auditable qualifying evidence.');

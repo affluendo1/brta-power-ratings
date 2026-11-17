@@ -41,7 +41,6 @@ function lab8Hero(view,name,matches,team,round){const royal=view==='singles'&&au
 return '<section class="lab8-hero"><div class="lab8-power"><div><span>'+label+' Power</span><strong>'+(r?.rating??'—')+'</strong></div><div><span>Section rank</span><strong>'+(rank?'#'+rank:'—')+'</strong></div></div><div class="lab8-facts">'+profileMetric('Record',wins+'–'+(matches.length-wins))+'<button type="button" class="lab-metric" data-eight-lineup="'+esc(team)+'"><span>Lineup position</span><b>'+lineup+'</b></button></div>'+lab8Highlights(matches)+'</section>'}
 function lab8Partners(name,round){const pairs=L8.rows(D,'pairs',round).filter(p=>L8.members(p.player).includes(name));return '<div class="lab8-partners">'+pairs.map(p=>{const ms=L8.matches(D,p.player,'pairs',round),position=ms.length?(ms.reduce((n,m)=>n+m.position,0)/ms.length).toFixed(1):'—';return '<div>'+lab8PairLink(p.player,round,[name,...L8.members(p.player).filter(n=>n!==name)].join(' / '))+'<span>'+p.rating+' – '+(p.wins??ms.filter(m=>m.won).length)+'–'+(p.losses??ms.filter(m=>!m.won).length)+' – D'+position+'</span></div>'}).join('')+'</div>'}
 const labBandDescriptions={
- Zenith:'Exceptional results against the section’s strongest opponents.',
  Apex:'Among the section’s strongest.',
  Elite:'Well above the section average.',
  Advanced:'Above the section’s main group.',
@@ -49,20 +48,34 @@ const labBandDescriptions={
  'Middle Class':'Near the section midpoint.',
  Developing:'Below the section midpoint.',
  Struggling:'Toward the lower end of the section.',
- Foundational:'In the section’s lowest standard band.',
- Basement:'Sustained results at the section’s lowest end.'
+ Foundational:'In the section’s lowest standard band.'
 };
+function labBandEvidence(evidence,rating,view){
+ if(evidence.band==='b18'){
+  const {opponent,opponentPower,opponentMinimum,minimumPower,score,round}=evidence;
+  const powerLabel=view==='doublesPlayers'?'average individual doubles Power':view==='overall'?'Overall Power':'Power';
+  const result=view==='overall'?'a singles win over':'a win over';
+  return rating+' Power met the '+minimumPower+' minimum. The qualifying result was '+result+' '+opponent+
+   ' '+score+(Number.isFinite(round)?' in Round '+round:'')+' ('+opponentPower+' '+powerLabel+', with '+opponentMinimum+' needed).';
+ }
+ const {maximumPower,medianPower,wins,losses,gamesWon,gamesPlayed}=evidence;
+ return rating+' Power was below the section median of '+Math.round(medianPower)+' and met the '+maximumPower+
+  ' cutoff. The record was '+wins+'–'+losses+', with '+gamesWon+' of '+gamesPlayed+' games won ('+
+  (100*gamesWon/gamesPlayed).toFixed(1)+'%).';
+}
 function labPerformanceBands(name,round,pair,doublesOnly){
  const views=pair?[['pairs','Partnership']]:doublesOnly?[['doublesPlayers','Doubles']]:
-  [['singles','Singles'],['doublesPlayers','Individual doubles'],['overall','Overall']];
+  D.meta?.singlesOnly?[['singles','Singles']]:[['singles','Singles'],['doublesPlayers','Individual doubles'],['overall','Overall']];
  const cards=views.flatMap(([view,label])=>{
   const rows=L8.rows(D,view,round),entry=rows.find(row=>pair?L8.key(row.player)===L8.key(name):row.player===name);
   if(!entry||!Number.isFinite(entry.rating))return [];
   const model=bandModel(rows,0,view,view,round),id=model.classForEntry?.(entry)??model.classFor(entry.rating);
   const index=Number(id.slice(1)),band=model.names[index];
   if(!band)return [];
+  const evidence=model.qualificationForEntry?.(entry);
   return ['<article class="lab-performance-band band-key '+id+'"><div class="lab-band-top"><span>'+label+'</span><span>'+esc(entry.rating)+' Power</span></div>'+
-   '<h4>'+esc(band)+'</h4><p>'+esc(labBandDescriptions[band]||('Power range '+model.bounds[index]))+'</p></article>'];
+   '<h4>'+esc(band)+'</h4>'+(evidence?'<p class="lab-band-evidence"><strong>Why '+esc(band)+'</strong>'+esc(labBandEvidence(evidence,entry.rating,view))+'</p>':
+   '<p>'+esc(labBandDescriptions[band]||('Power range '+model.bounds[index]))+'</p>')+'</article>'];
  });
  return '<section class="profile-section lab-section lab-performance-bands"><h3>Performance bands</h3>'+
   (cards.length?'<div>'+cards.join('')+'</div>':'<p class="small-note">A section band is unavailable for this entry.</p>')+'</section>';
@@ -89,8 +102,18 @@ function lab8Open(name,round=null,pair=false){
  if(royal)lab8Context.royalMatches=single;
 }
 const originalSinglesProfile=openProfile,originalSinglesHistory=openHistoricalProfile;
-openProfile=function(name){if(D.meta?.singlesOnly)return originalSinglesProfile(name);lab8Open(name)};
-openHistoricalProfile=(name,round)=>D.meta?.singlesOnly?originalSinglesHistory(name,round):lab8Open(name,Number(round));
+openProfile=function(name){
+ if(!D.meta?.singlesOnly)return lab8Open(name);
+ originalSinglesProfile(name);
+ if(L8.row(D,'singles',name))$('#profileContent').insertAdjacentHTML('beforeend',labPerformanceBands(name,null,false,false));
+};
+openHistoricalProfile=(name,round)=>{
+ if(!D.meta?.singlesOnly)return lab8Open(name,Number(round));
+ const snapshot=historicalSnapshot(name,round);
+ if(!snapshot)return;
+ originalSinglesHistory(name,round);
+ $('#profileContent').insertAdjacentHTML('beforeend',labPerformanceBands(name,Number(snapshot[0]),false,false));
+};
 function lab8Split(tab){const {name,round,pair}=lab8Context,kind=L8.discipline(D,pair),ms=(lab8Context.royalMatches||L8.matches(D,name,kind,round)).filter(m=>m.higher===(tab==='higher'));lab8Modal('Opponent ratings','<div class="segmented"><button data-eight-split="higher" class="'+(tab==='higher'?'selected':'')+'">Higher-rated</button><button data-eight-split="lower" class="'+(tab==='lower'?'selected':'')+'">Lower-rated</button></div>'+lab8Rows(ms,kind,true))}
 openSchedule=function(){const round=lab8Context?.round??null;function draw(show){const rows=L8.schedule(D,round,show);$('#sosContent').innerHTML='<div class="overlay-title"><h2>Strength of schedule</h2><p>Average opponent Power through '+(round?'Round '+round:'the latest results')+'.</p></div><label><input type="checkbox" data-eight-sos '+(show?'checked':'')+'> Show provisional entries</label><div class="table-wrap"><table><thead><tr><th>#</th><th>Player</th><th>Team</th><th>Opponent Power</th><th>Matches</th></tr></thead><tbody>'+rows.map(r=>'<tr class="'+(r.provisional?'provisional':'')+'"><td>'+r.rank+'</td><td>'+(round?'<button class="person" data-history-player="'+esc(r.player)+'" data-history-round="'+round+'">'+esc(r.player)+'</button>':personButton(r.player))+(r.provisional?' <small>Provisional</small>':'')+'</td><td>'+teamName(r.team)+'</td><td>'+r.averageOpponent+'</td><td>'+r.matches+'</td></tr>').join('')+'</tbody></table></div>';$('#sosContent [data-eight-sos]').onchange=e=>draw(e.target.checked)}draw(false);$('#sosOverlay').classList.remove('hidden');eightRaise($('#sosOverlay'));document.body.classList.add('modal-open')};
 document.addEventListener('click',e=>{const synthetic=e.target.closest('[data-match-id]');if(synthetic&&lab8Context?.royalMatches&&auxiliaryPlayer(lab8Context.name)){const match=lab8Context.royalMatches.find(m=>m.fixtureId===synthetic.dataset.matchId);if(match){e.preventDefault();e.stopImmediatePropagation();openAuxiliaryMatch(match);return}}const pair=e.target.closest('[data-eight-pair]');if(pair){e.preventDefault();e.stopImmediatePropagation();lab8Open(pair.dataset.eightPair,pair.dataset.eightRound?Number(pair.dataset.eightRound):null,true);return}const back=e.target.closest('[data-eight-back]');if(back){close('#lab8Overlay');lab8Focus?.focus?.({preventScroll:true});return}const graph=e.target.closest('[data-eight-graph]');if(graph&&lab8Context){const view=graph.dataset.eightGraph,mode=graph.dataset.graphMode;if(lab8GraphModes[view]===mode||(mode==='rating'&&!lab8GraphModes[view]))return;lab8GraphModes[view]=mode;const {name,round}=lab8Context,card=graph.closest('.lab8-graph'),title=card.querySelector('h3').textContent;card.outerHTML=lab8Graph(view,name,title,round);$('#profileContent [data-graph-view="'+view+'"] [data-graph-mode="'+mode+'"]').focus({preventScroll:true});return}const split=e.target.closest('[data-eight-split]');if(split){lab8Split(split.dataset.eightSplit);return}const lineup=e.target.closest('[data-eight-lineup]');if(lineup){const m=lab8TeamModel(lineup.dataset.eightLineup,lab8Context?.round);lab8Modal(lineup.dataset.eightLineup,'<div class="lab8-lineup">'+[...m.core.map((p,i)=>({p,n:'#'+(i+1)})),...m.emergencies.filter(p=>!m.core.some(c=>c.name===p.name)).map(p=>({p,n:'E'}))].map(({p,n})=>'<p class="'+(p.name===lab8Context?.name?'lab8-selected':'')+'">'+n+' – '+esc(p.name)+'</p>').join('')+'</div>');return}},true);
