@@ -603,3 +603,9 @@ tr:not(.band-divider):is(.b18,.b19) > td:first-child { box-shadow:inset 3px 0 va
 .lab-band-result { padding: 6px; }
 .latest-bagels summary { cursor: pointer; font-weight: 700; }
 .latest-bagels > div { margin-top: .4rem; }
+
+#standingsBody .club-link {
+  text-decoration: underline;
+  text-underline-offset: .18em;
+}
+#standingsBody .club-link::after { content: none; }
