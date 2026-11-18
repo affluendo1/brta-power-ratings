@@ -185,6 +185,9 @@ class SeasonUpsetTests(unittest.TestCase):
         rows = season_upset_rankings(games, {"tables": tables}, {"format": "sets"})
         self.assertEqual([row["fixtureId"] for row in rows], ["largest", "larger"])
         self.assertLess(rows[0]["winProbability"], rows[1]["winProbability"])
+        self.assertEqual([row["throughRound"] for row in rows], [2, 1])
+        self.assertTrue(all((row["ratingModel"], row["discipline"], row["format"]) ==
+                            ("V3", "singles", "sets") for row in rows))
 
 
 if __name__ == "__main__":

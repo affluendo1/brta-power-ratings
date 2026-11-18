@@ -2,6 +2,17 @@
 // Retrospective entries use source-commit timestamps; sourceCommit records their provenance.
 window.BRTA_RELEASES = Object.freeze([
   {
+    "version": "9.1.3.2",
+    "size": "tiny",
+    "title": "Clearer round odds and Following checks",
+    "committedAt": "2026-11-18T21:30:27+11:00",
+    "changes": [
+      "Latest Round labels team win and draw chances for the lineups that played. Upset highlights identify their rating model.",
+      "Following shows how many players it checked and flags ended seasons, missing sections and failed checks.",
+      "The homepage describes all seven competition families. Mobile regression coverage checks lineup editing, custom fixtures and result scoresheets."
+    ]
+  },
+  {
     "version": "9.1.3.1",
     "size": "small",
     "title": "Custom competition editor and theme polish",

@@ -1294,7 +1294,8 @@ def season_upset_rankings(singles, rating_history, rules):
     biggest_by_round = []
     for round_no, matches in singles.groupby("round"):
         round_no = int(round_no)
-        prior = tables.get(max((n for n in tables if n < round_no), default=0), {})
+        prior_round = max((n for n in tables if n < round_no), default=0)
+        prior = tables.get(prior_round, {})
         candidates = []
         for match in matches.itertuples(index=False):
             home, away = match.home_player, match.away_player
@@ -1305,7 +1306,9 @@ def season_upset_rankings(singles, rating_history, rules):
             _, chance = _singles_match_probability(prior[winner], prior[loser], rules)
             if chance < .5:
                 candidates.append({"round": round_no, "fixtureId": str(match.fixture_id),
-                                   "winner": winner, "loser": loser, "winProbability": chance})
+                                   "winner": winner, "loser": loser, "winProbability": chance,
+                                   "ratingModel": rating_history.get("model", "V3"),
+                                   "discipline": "singles", "format": rules["format"], "throughRound": prior_round})
         if candidates:
             biggest_by_round.append(min(candidates, key=lambda row: row["winProbability"]))
     return sorted(biggest_by_round, key=lambda row: (row["winProbability"], row["round"]))

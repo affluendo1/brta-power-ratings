@@ -26,7 +26,7 @@ function fixtureRow(fixture, forecast) {
     (complete ? '<div class="latest-score"><span>Points <b>' + score(fixture.homePoints, fixture.awayPoints) +
       '</b></span><span>Rubbers <b>' + score(fixture.homeRubbers ?? fixture.homeSets, fixture.awayRubbers ?? fixture.awaySets) +
       '</b></span><span>Games <b>' + score(fixture.homeGames, fixture.awayGames) + '</b></span></div>' : '') +
-    (forecast ? '<span class="latest-chance">' + chance(forecast.resultChance) + ' pre-round chance of this outcome</span>' : '') +
+    (forecast ? '<span class="latest-chance">' + esc(forecast.label) + ' with these lineups · ' + chance(forecast.resultChance) + '</span>' : '') +
     (action ? '<span class="latest-action">' + (action === 'data-82-result' ? 'View scorecard' : 'Fixture Outlook') + ' ›</span>' : '') + '</' + tag + '>';
   return card;
 }
@@ -113,7 +113,8 @@ function roundAnalysis(round) {
     const outcome = BRTAPrediction.teamOutcome(rubbers, { gamesDecideTies: true,
       setWinsDecideTies: options.setWinsDecideTies || options.format === 'rubbers' });
     const resultChance = draw ? outcome.draw : homeWon ? outcome.homeWin : outcome.awayWin;
-    forecasts.set(fixture.fixtureId, { resultChance });
+    const label = draw ? 'Pre-round draw chance' : (homeWon ? fixture.home : fixture.away) + ' pre-round win chance';
+    forecasts.set(fixture.fixtureId, { resultChance, label });
     const expectedMargin = rubbers.reduce((sum, row) => sum + row.scoreDistribution.reduce((n, score) => n + score.margin * score.probability, 0), 0);
     team.above = (fixture.homeGames - fixture.awayGames - expectedMargin) * (homeWon ? 1 : -1);
     if (!draw) team.chance = resultChance;
@@ -151,10 +152,11 @@ function render() {
   const fixtures = [...round.fixtures, ...remaining];
   const pending = fixtures.filter(f => ['Scheduled', 'Missing Result'].includes(f.status)).length;
   const analysis = roundAnalysis(round);
+  const modelName = modelDisplayName(D.meta.modelChoice || selectedRatingModel());
   const playerHighlights = [
     ...analysis.rareUpsets.map(({title,item})=>highlight(title,item,'rare-upset')),
     highlight('Top performance', analysis.top, 'top', row => 'Performance ≈ ' + row.performance, 'No pre-round rating evidence'),
-    highlight('Biggest upset', analysis.upset, 'upset', row => chance(row.chance) + ' pre-round win chance', 'No upset identified'),
+    highlight('Biggest upset', analysis.upset, 'upset', row => chance(row.chance) + ' pre-round win chance · ' + modelName, 'No upset identified'),
     analysis.bagels.length ? '<details class="round-highlight latest-bagels"><summary>Most dominant · '+analysis.bagels.length+' 6–0 scoreline'+(analysis.bagels.length===1?'':'s')+'</summary>'+
       analysis.bagels.map(row => highlight('Set '+row.set, row, '', item => item.bagelChance == null ?
         'No pre-round rating evidence' : chance(item.bagelChance)+' chance of a 6–0 set')).join('')+'</details>' :
@@ -163,7 +165,7 @@ function render() {
   ];
   const teamHighlights = [
     highlight('Top team performance', analysis.teamPerformance, 'top', row => '+' + row.above.toFixed(1) + ' games vs expected', 'No team outperformance identified'),
-    highlight('Biggest team upset', analysis.teamUpset, 'upset', row => chance(row.chance) + ' pre-round win chance', 'No upset identified'),
+    highlight('Biggest team upset', analysis.teamUpset, 'upset', row => chance(row.chance) + ' pre-round win chance · ' + modelName, 'No upset identified'),
     highlight('Most dominant team', analysis.teamDominant, '', row => row.margin + ' game margin'),
     round.closest && '<div class="round-highlight"><span>Closest team match</span><b>' + teamName(round.closest.home) +
       ' vs ' + teamName(round.closest.away) + '</b><small>' + Math.abs(round.closest.homeGames - round.closest.awayGames) +

@@ -30,3 +30,22 @@ jobs:
           NODE_PATH="$RUNNER_TEMP/brta-ui-tests/node_modules" node tests/browser/rm4.cjs
 
           BRTA_TEST_CLASSIC=1 BRTA_TEST_LEGACY=RM1 NODE_PATH="$RUNNER_TEMP/brta-ui-tests/node_modules" node tests/browser/rm4.cjs
+  mobile:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install mobile browser test dependencies
+        run: |
+          npm install --prefix "$RUNNER_TEMP/brta-playwright" --no-save --ignore-scripts playwright@1.62.1
+          "$RUNNER_TEMP/brta-playwright/node_modules/.bin/playwright" install --with-deps chromium webkit
+      - name: Check mobile scrolling and scoresheets
+        run: |
+          python3 -m http.server 8822 --bind 127.0.0.1 > "$RUNNER_TEMP/brta-http.log" 2>&1 &
+          server_pid=$!
+          trap 'kill "$server_pid"' EXIT
+          curl --retry 10 --retry-connrefused --silent --fail http://127.0.0.1:8822/ -o /dev/null
+          NODE_PATH="$RUNNER_TEMP/brta-playwright/node_modules" node tests/browser/mobile-scroll.cjs
