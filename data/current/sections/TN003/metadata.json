@@ -38,15 +38,15 @@
   "calendar_events": [
     {
       "date": "24 Nov 26",
-      "label": "Semi Final \u00b7 if qualified"
+      "label": "Semi Final · if qualified"
     },
     {
       "date": "1 Dec 26",
-      "label": "Grand Final \u00b7 if qualified"
+      "label": "Grand Final · if qualified"
     },
     {
       "date": "8 Dec 26",
-      "label": "Spare \u00b7 if required"
+      "label": "Spare · if required"
     }
   ],
   "official_standings": [
@@ -54,12 +54,20 @@
       "position": 1,
       "team": "Keysborough KeysyComeKGo",
       "wins": 7,
-      "points": 77,
-      "percentage": 127.31,
+      "points": 79,
+      "percentage": 120.24,
       "marker": ""
     },
     {
       "position": 2,
+      "team": "Basterfield Park Basterfield",
+      "wins": 7,
+      "points": 76.5,
+      "percentage": 128.16,
+      "marker": ""
+    },
+    {
+      "position": 3,
       "team": "St James Redlegs",
       "wins": 7,
       "points": 74,
@@ -67,54 +75,46 @@
       "marker": ""
     },
     {
-      "position": 3,
-      "team": "Basterfield Park Basterfield",
-      "wins": 6,
-      "points": 68.5,
-      "percentage": 126.91,
-      "marker": ""
-    },
-    {
       "position": 4,
       "team": "Maccabi Magicians",
-      "wins": 3,
-      "points": 49.5,
-      "percentage": 93.25,
+      "wins": 4,
+      "points": 57.5,
+      "percentage": 96.04,
       "marker": ""
     },
     {
       "position": 5,
-      "team": "BLTC Tornadoes",
+      "team": "Middle Brighton Warriors",
       "wins": 4,
-      "points": 45,
-      "percentage": 88.65,
+      "points": 51,
+      "percentage": 90.46,
       "marker": ""
     },
     {
       "position": 6,
-      "team": "Middle Brighton Warriors",
-      "wins": 3,
-      "points": 42,
-      "percentage": 83.02,
+      "team": "BLTC Tornadoes",
+      "wins": 4,
+      "points": 47,
+      "percentage": 87.99,
       "marker": ""
     },
     {
       "position": 7,
       "team": "Hurlingham Park HPSauce",
       "wins": 2,
-      "points": 34,
-      "percentage": 77.96,
+      "points": 35,
+      "percentage": 75.07,
       "marker": ""
     }
   ],
   "green_ball": false,
   "results_loaded_by_trols": null,
-  "fixtures": 52,
-  "completed_fixtures": 35,
+  "fixtures": 58,
+  "completed_fixtures": 38,
   "draw_fixtures": 56,
   "singles_rubbers": 0,
-  "doubles_rubbers": 210,
-  "latest_round": 13,
+  "doubles_rubbers": 228,
+  "latest_round": 16,
   "validation": "source discrepancies",
   "source_warnings": [
     "Incomplete TROLS score for TN003011 doubles No. 5: ''. Missing score not inferred; excluded from ratings and game totals.",

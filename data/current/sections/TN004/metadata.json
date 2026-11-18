@@ -38,15 +38,15 @@
   "calendar_events": [
     {
       "date": "24 Nov 26",
-      "label": "Semi Final \u00b7 if qualified"
+      "label": "Semi Final · if qualified"
     },
     {
       "date": "1 Dec 26",
-      "label": "Grand Final \u00b7 if qualified"
+      "label": "Grand Final · if qualified"
     },
     {
       "date": "8 Dec 26",
-      "label": "Spare \u00b7 if required"
+      "label": "Spare · if required"
     }
   ],
   "official_standings": [
@@ -54,40 +54,40 @@
       "position": 1,
       "team": "Ormond Dragons",
       "wins": 9,
-      "points": 91,
-      "percentage": 130.32,
+      "points": 93,
+      "percentage": 125.65,
       "marker": ""
     },
     {
       "position": 2,
-      "team": "Middle Brighton Whompbat",
-      "wins": 7,
-      "points": 84,
-      "percentage": 112.93,
+      "team": "Glen Huntly Dropshots",
+      "wins": 8,
+      "points": 92.5,
+      "percentage": 130.62,
       "marker": ""
     },
     {
       "position": 3,
-      "team": "Glen Huntly Dropshots",
-      "wins": 7,
-      "points": 83.5,
-      "percentage": 130.0,
+      "team": "Middle Brighton Whompbat",
+      "wins": 8,
+      "points": 92,
+      "percentage": 113.57,
       "marker": ""
     },
     {
       "position": 4,
       "team": "Black Rock Breakers",
-      "wins": 7,
-      "points": 76,
-      "percentage": 126.07,
+      "wins": 8,
+      "points": 86,
+      "percentage": 130.1,
       "marker": ""
     },
     {
       "position": 5,
       "team": "St Finbar's Black Sheep",
-      "wins": 6,
-      "points": 73,
-      "percentage": 112.78,
+      "wins": 7,
+      "points": 80,
+      "percentage": 113.61,
       "marker": ""
     },
     {
@@ -95,34 +95,34 @@
       "team": "Glen Huntly Moonballs",
       "wins": 6,
       "points": 65.5,
-      "percentage": 97.63,
+      "percentage": 93.32,
       "marker": ""
     },
     {
       "position": 7,
       "team": "Stella Maris Mavericks",
       "wins": 2,
-      "points": 25,
-      "percentage": 58.94,
+      "points": 28,
+      "percentage": 60.96,
       "marker": ""
     },
     {
       "position": 8,
       "team": "St Pauls Knights",
       "wins": 1,
-      "points": 22,
-      "percentage": 56.66,
+      "points": 23,
+      "percentage": 58.0,
       "marker": ""
     }
   ],
   "green_ball": false,
   "results_loaded_by_trols": null,
-  "fixtures": 52,
-  "completed_fixtures": 46,
+  "fixtures": 58,
+  "completed_fixtures": 50,
   "draw_fixtures": 56,
   "singles_rubbers": 0,
-  "doubles_rubbers": 276,
-  "latest_round": 13,
+  "doubles_rubbers": 300,
+  "latest_round": 16,
   "validation": "source discrepancies",
   "source_warnings": [
     "Incomplete TROLS score for TN004011 doubles No. 5: '1-1'. Missing score not inferred; excluded from ratings and game totals.",

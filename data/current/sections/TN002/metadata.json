@@ -38,44 +38,52 @@
   "calendar_events": [
     {
       "date": "24 Nov 26",
-      "label": "Semi Final \u00b7 if qualified"
+      "label": "Semi Final · if qualified"
     },
     {
       "date": "1 Dec 26",
-      "label": "Grand Final \u00b7 if qualified"
+      "label": "Grand Final · if qualified"
     },
     {
       "date": "8 Dec 26",
-      "label": "Spare \u00b7 if required"
+      "label": "Spare · if required"
     }
   ],
   "official_standings": [
     {
       "position": 1,
-      "team": "Murrumbeena Beasts",
-      "wins": 7,
-      "points": 64,
-      "percentage": 102.65,
+      "team": "Hurlingham Park All Stars",
+      "wins": 6,
+      "points": 68,
+      "percentage": 109.74,
       "marker": ""
     },
     {
       "position": 2,
-      "team": "Hurlingham Park All Stars",
+      "team": "St James Premiers",
       "wins": 5,
-      "points": 60,
-      "percentage": 108.07,
+      "points": 67,
+      "percentage": 115.04,
       "marker": ""
     },
     {
       "position": 3,
       "team": "Basterfield Park Lakers",
-      "wins": 5,
-      "points": 58.5,
-      "percentage": 104.83,
+      "wins": 6,
+      "points": 66.5,
+      "percentage": 105.08,
       "marker": ""
     },
     {
       "position": 4,
+      "team": "Murrumbeena Beasts",
+      "wins": 7,
+      "points": 66,
+      "percentage": 101.82,
+      "marker": ""
+    },
+    {
+      "position": 5,
       "team": "Basterfield Park Scratchies",
       "wins": 5,
       "points": 57.5,
@@ -83,19 +91,11 @@
       "marker": ""
     },
     {
-      "position": 5,
-      "team": "St James Premiers",
-      "wins": 4,
-      "points": 57,
-      "percentage": 105.91,
-      "marker": ""
-    },
-    {
       "position": 6,
       "team": "St Finbar's Barbarians",
       "wins": 5,
-      "points": 53,
-      "percentage": 93.31,
+      "points": 55,
+      "percentage": 91.86,
       "marker": ""
     },
     {
@@ -103,18 +103,18 @@
       "team": "Hurlingham Park Hammers",
       "wins": 3,
       "points": 40,
-      "percentage": 86.79,
+      "percentage": 81.35,
       "marker": ""
     }
   ],
   "green_ball": false,
   "results_loaded_by_trols": null,
-  "fixtures": 52,
-  "completed_fixtures": 38,
+  "fixtures": 58,
+  "completed_fixtures": 41,
   "draw_fixtures": 56,
   "singles_rubbers": 0,
-  "doubles_rubbers": 228,
-  "latest_round": 13,
+  "doubles_rubbers": 246,
+  "latest_round": 16,
   "validation": "source discrepancies",
   "source_warnings": [
     "Incomplete TROLS score for TN002012 doubles No. 5: ''. Missing score not inferred; excluded from ratings and game totals.",

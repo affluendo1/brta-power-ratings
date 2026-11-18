@@ -38,20 +38,28 @@
   "calendar_events": [
     {
       "date": "24 Nov 26",
-      "label": "Semi Final \u00b7 if qualified"
+      "label": "Semi Final · if qualified"
     },
     {
       "date": "1 Dec 26",
-      "label": "Grand Final \u00b7 if qualified"
+      "label": "Grand Final · if qualified"
     },
     {
       "date": "8 Dec 26",
-      "label": "Spare \u00b7 if required"
+      "label": "Spare · if required"
     }
   ],
   "official_standings": [
     {
       "position": 1,
+      "team": "Black Rock UrbanWarGods",
+      "wins": 9,
+      "points": 88,
+      "percentage": 147.64,
+      "marker": ""
+    },
+    {
+      "position": 2,
       "team": "Hurlingham Park Gunslingers",
       "wins": 8,
       "points": 83.5,
@@ -59,62 +67,54 @@
       "marker": ""
     },
     {
-      "position": 2,
-      "team": "Black Rock UrbanWarGods",
-      "wins": 8,
-      "points": 79,
-      "percentage": 146.89,
-      "marker": ""
-    },
-    {
       "position": 3,
       "team": "Hurlingham Park Lobs",
-      "wins": 4,
-      "points": 54,
-      "percentage": 94.87,
+      "wins": 5,
+      "points": 62.5,
+      "percentage": 98.33,
       "marker": ""
     },
     {
       "position": 4,
       "team": "Hurlingham Park Battlers",
       "wins": 2,
-      "points": 50.5,
-      "percentage": 102.21,
+      "points": 51.5,
+      "percentage": 98.48,
       "marker": ""
     },
     {
       "position": 5,
       "team": "Kings Park Royals",
       "wins": 4,
-      "points": 44.5,
-      "percentage": 88.75,
+      "points": 45.5,
+      "percentage": 86.27,
       "marker": ""
     },
     {
       "position": 6,
-      "team": "Maccabi Turquoise",
-      "wins": 3,
-      "points": 42,
-      "percentage": 76.12,
+      "team": "Black Rock Strikers",
+      "wins": 4,
+      "points": 45.5,
+      "percentage": 85.59,
       "marker": ""
     },
     {
       "position": 7,
-      "team": "Black Rock Strikers",
+      "team": "Maccabi Turquoise",
       "wins": 3,
-      "points": 36.5,
-      "percentage": 81.54,
+      "points": 43.5,
+      "percentage": 75.99,
       "marker": ""
     }
   ],
   "green_ball": false,
   "results_loaded_by_trols": null,
-  "fixtures": 52,
-  "completed_fixtures": 36,
+  "fixtures": 58,
+  "completed_fixtures": 39,
   "draw_fixtures": 56,
   "singles_rubbers": 0,
-  "doubles_rubbers": 216,
-  "latest_round": 13,
+  "doubles_rubbers": 234,
+  "latest_round": 16,
   "validation": "source discrepancies",
   "source_warnings": [
     "Incomplete TROLS score for TN001011 doubles No. 3: '2-1'. Missing score not inferred; excluded from ratings and game totals.",
@@ -127,6 +127,7 @@
     "Incomplete TROLS score for TN001014 doubles No. 6: ''. Missing score not inferred; excluded from ratings and game totals.",
     "Incomplete TROLS score for TN001031 doubles No. 5: '4-2'. Missing score not inferred; excluded from ratings and game totals.",
     "Incomplete TROLS score for TN001031 doubles No. 6: '2-4'. Missing score not inferred; excluded from ratings and game totals.",
-    "Incomplete TROLS score for TN001111 doubles No. 5: '6-6'. Missing score not inferred; excluded from ratings and game totals."
+    "Incomplete TROLS score for TN001111 doubles No. 5: '6-6'. Missing score not inferred; excluded from ratings and game totals.",
+    "Incomplete TROLS score for TN001144 doubles No. 5: '3-3'. Missing score not inferred; excluded from ratings and game totals."
   ]
 }
