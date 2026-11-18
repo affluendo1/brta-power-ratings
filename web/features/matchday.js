@@ -152,7 +152,7 @@ function render() {
   const fixtures = [...round.fixtures, ...remaining];
   const pending = fixtures.filter(f => ['Scheduled', 'Missing Result'].includes(f.status)).length;
   const analysis = roundAnalysis(round);
-  const modelName = modelDisplayName(D.meta.modelChoice || selectedRatingModel());
+  const modelName = modelDisplayName(D.meta.modelChoice || D.meta.predictionModel || selectedRatingModel());
   const playerHighlights = [
     ...analysis.rareUpsets.map(({title,item})=>highlight(title,item,'rare-upset')),
     highlight('Top performance', analysis.top, 'top', row => 'Performance ≈ ' + row.performance, 'No pre-round rating evidence'),
