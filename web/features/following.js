@@ -19,7 +19,19 @@ function open(notifications=false){
  const html='<div class="following84">'+(state.pending.length?'<section class="following84-updates"><h3>Since your last visit</h3>'+updatesHTML()+'<button class="button secondary" data-follow82-read>Mark as read</button></section>':'')+(notifications?'':'<label class="following84-toggle"><input id="follow821Only" type="checkbox" '+(onlyFollowing?'checked':'')+'><span>Only followed players in Ratings</span></label><div class="following84-list">'+(rows||'<div class="following84-empty"><b>No players followed yet</b><p>Open a Player Lab and select the star to add someone here.</p></div>')+'</div><footer class="following84-footer"><label class="following84-toggle"><input id="follow82Notify" type="checkbox" '+(state.notify?'checked':'')+'><span>Show new results when I return</span></label><button class="button secondary" data-follow82-check>Check for updates</button><p id="follow82Status" role="status">Saved on this device, for each season and section.</p></footer>')+'</div>';
  const overlay=BRTA82.modal(notifications?'Following updates':'Following players',html);overlay?.classList.add('following84-overlay');if($('#follow821Only'))$('#follow821Only').onchange=e=>{onlyFollowing=e.target.checked;renderRatings()};if($('#follow82Notify'))$('#follow82Notify').onchange=e=>{state.notify=e.target.checked;persist()}
 }
-async function dataFor(pin){if(pin.isCustom){const meta=CustomSections.catalog().find(s=>s.section_code===pin.sectionCode);return meta?CustomSections.payload(pin.sectionCode):null}const response=await fetch(pin.dataPath,{cache:'no-store'});if(!response.ok)throw Error('Section unavailable');const data=await response.json();return M.scope(data)===pin.scope?data:null}
+async function dataFor(pin) {
+  if (pin.isCustom) {
+    const section = CustomSections.catalog().find(row => row.section_code === pin.sectionCode);
+    return section ? CustomSections.payload(section.section_code) : null;
+  }
+  const competition = pin.scope.split('|')[0];
+  if (pin.seasonId && DATA.catalog.some(row => row.competition_code === competition) &&
+      !DATA.catalog.some(row => row.competition_code === competition && row.season_id === pin.seasonId)) return null;
+  const response = await fetch(pin.dataPath, { cache: 'no-store' });
+  if (!response.ok) throw Error('Section unavailable');
+  const data = await response.json();
+  return M.scope(data) === pin.scope ? data : null;
+}
 function check(auto=false){
  if(auto)return checkPins(true);
  return BRTAActivity.run('Checking followed players',task=>checkPins(false,task));
@@ -128,10 +140,12 @@ async function navigate(key){
      if(request!==navigationRequest||sectionRequest!==loadingToken)return false;
      if(archived&&!season)throw Error('This archived season is not available.');
      const catalog=season?historySeasonSections(season):currentCatalog();
-     if(!catalog.some(s=>s.section_code===pin.sectionCode))throw Error('Open that season or section from History first.');
+     const section = catalog.find(row => row.section_code === pin.sectionCode) ||
+       (archived && catalog.find(row => row.source_section_code === pin.sectionCode));
+     if(!section)throw Error('This saved section is unavailable in the selected season.');
      activeHistorySeasonId=season?.id||null;
      viewCatalog=catalog;
-     if(!await loadSection(pin.sectionCode,null,task)||request!==navigationRequest)return false;
+     if(!await loadSection(section.section_code,null,task)||request!==navigationRequest)return false;
      BRTA82.dismiss();
      if(pin.kind==='team'){switchPage('teams');BRTATeamLabUI.open(pin.name);await window.BRTAClubs?.ready()}
      else{switchPage('ratings');openProfile(pin.name)}
