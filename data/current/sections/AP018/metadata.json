@@ -28,15 +28,15 @@
   "calendar_events": [
     {
       "date": "27 Feb 27",
-      "label": "Semi Final \u00b7 if qualified"
+      "label": "Semi Final · if qualified"
     },
     {
       "date": "13 Mar 27",
-      "label": "Grand Final \u00b7 if qualified"
+      "label": "Grand Final · if qualified"
     },
     {
       "date": "20 Mar 27",
-      "label": "Spare \u00b7 if required"
+      "label": "Spare · if required"
     }
   ],
   "official_standings": [
@@ -50,27 +50,27 @@
     },
     {
       "position": 2,
+      "team": "BLTC",
+      "wins": 3,
+      "points": 33,
+      "percentage": 114.93,
+      "marker": ""
+    },
+    {
+      "position": 3,
+      "team": "Hawthorn",
+      "wins": 3,
+      "points": 30,
+      "percentage": 118.88,
+      "marker": ""
+    },
+    {
+      "position": 4,
       "team": "Elwood Yellow",
       "wins": 3,
       "points": 29,
       "percentage": 123.33,
       "marker": ""
-    },
-    {
-      "position": 3,
-      "team": "BLTC",
-      "wins": 3,
-      "points": 29,
-      "percentage": 114.93,
-      "marker": "*"
-    },
-    {
-      "position": 4,
-      "team": "Hawthorn",
-      "wins": 3,
-      "points": 26,
-      "percentage": 118.88,
-      "marker": "*"
     },
     {
       "position": 5,
