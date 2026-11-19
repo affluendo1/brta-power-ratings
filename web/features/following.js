@@ -12,32 +12,140 @@ let onlyFollowing=false;const originalRatings=renderRatings;renderRatings=functi
 const openButton=document.createElement('button');openButton.id='following82Open';openButton.className='search-options-button';openButton.textContent='★';openButton.setAttribute('aria-label','Following');openButton.title='Manage Following';openButton.onclick=()=>open();$('#ratingFilters').append(openButton);
 
 function updatesHTML(){return state.pending.map(n=>'<article class="follow82-note"><b>'+esc(n.name)+'</b><p>'+esc(n.sectionLabel)+' · '+esc(n.competitionLabel)+'</p><span>'+n.matches.length+' new or corrected result'+(n.matches.length===1?'':'s')+' · '+esc([...new Set(n.matches.map(m=>m.label))].join(', '))+'</span><div><button class="export-link" data-follow82-open="'+esc(n.key)+'">View '+(n.kind==='team'?'team':'player')+' →</button></div></article>').join('')}
+const pinStatuses = new WeakMap();
+
 function open(notifications=false){
- const rows=state.pins.map(p=>'<article class="following84-row"><div><h3>'+esc(p.name)+'</h3><p>'+esc(p.sectionLabel)+' · '+esc(p.competitionLabel)+'</p><div class="following84-record">'+(p.summary?'<b>'+esc(p.summary.record)+'</b><span>'+(p.summary.rating!=null?esc(p.summary.rating)+' Power':'')+'</span>':'')+'</div></div><div class="following84-actions"><button class="button secondary" data-follow82-open="'+esc(M.key(p))+'">Player Lab</button><button class="export-link" data-follow82-remove="'+esc(M.key(p))+'">Unfollow</button></div></article>').join('');
+ const rows=state.pins.map(p=>'<article class="following84-row"><div><h3>'+esc(p.name)+'</h3><p>'+esc(p.sectionLabel)+' · '+esc(p.competitionLabel)+'</p><div class="following84-record">'+(p.summary?'<b>'+esc(p.summary.record)+'</b><span>'+(p.summary.rating!=null?esc(p.summary.rating)+' Power':'')+'</span>':'')+'</div>'+(pinStatuses.has(p)?'<p>'+esc(pinStatuses.get(p))+'</p>':'')+'</div><div class="following84-actions"><button class="button secondary" data-follow82-open="'+esc(M.key(p))+'">'+(pinStatuses.get(p)==='Saved season has ended'?'Find in History':'Player Lab')+'</button><button class="export-link" data-follow82-remove="'+esc(M.key(p))+'">Unfollow</button></div></article>').join('');
  const html='<div class="following84">'+(state.pending.length?'<section class="following84-updates"><h3>Since your last visit</h3>'+updatesHTML()+'<button class="button secondary" data-follow82-read>Mark as read</button></section>':'')+(notifications?'':'<label class="following84-toggle"><input id="follow821Only" type="checkbox" '+(onlyFollowing?'checked':'')+'><span>Only followed players in Ratings</span></label><div class="following84-list">'+(rows||'<div class="following84-empty"><b>No players followed yet</b><p>Open a Player Lab and select the star to add someone here.</p></div>')+'</div><footer class="following84-footer"><label class="following84-toggle"><input id="follow82Notify" type="checkbox" '+(state.notify?'checked':'')+'><span>Show new results when I return</span></label><button class="button secondary" data-follow82-check>Check for updates</button><p id="follow82Status" role="status">Saved on this device, for each season and section.</p></footer>')+'</div>';
  const overlay=BRTA82.modal(notifications?'Following updates':'Following players',html);overlay?.classList.add('following84-overlay');if($('#follow821Only'))$('#follow821Only').onchange=e=>{onlyFollowing=e.target.checked;renderRatings()};if($('#follow82Notify'))$('#follow82Notify').onchange=e=>{state.notify=e.target.checked;persist()}
 }
-async function dataFor(pin){if(pin.isCustom){const meta=CustomSections.catalog().find(s=>s.section_code===pin.sectionCode);return meta?CustomSections.payload(pin.sectionCode):null}const response=await fetch(pin.dataPath,{cache:'no-store'});if(!response.ok)throw Error('Section unavailable');const data=await response.json();return M.scope(data)===pin.scope?data:null}
+async function dataFor(pin) {
+  if (pin.isCustom) {
+    const section = CustomSections.catalog().find(row => row.section_code === pin.sectionCode);
+    return section ? CustomSections.payload(section.section_code) : null;
+  }
+  const competition = pin.scope.split('|')[0];
+  if (pin.seasonId && DATA.catalog.some(row => row.competition_code === competition) &&
+      !DATA.catalog.some(row => row.competition_code === competition && row.season_id === pin.seasonId)) return null;
+  const response = await fetch(pin.dataPath, { cache: 'no-store' });
+  if (!response.ok) throw Error('Section unavailable');
+  const data = await response.json();
+  return M.scope(data) === pin.scope ? data : null;
+}
 function check(auto=false){
  if(auto)return checkPins(true);
  return BRTAActivity.run('Checking followed players',task=>checkPins(false,task));
 }
-async function checkPins(auto,task){if(checking)return;checking=true;let failed=0;const groups=new Map();for(const p of state.pins.filter(p=>!p.isArchive)){const k=p.scope;if(!groups.has(k))groups.set(k,[]);groups.get(k).push(p)}const jobs=[...groups.values()];async function worker(){while(jobs.length){const pins=jobs.shift();try{const data=await dataFor(pins[0]);if(!data)continue;for(const pin of pins){if(!state.pins.includes(pin))continue;const summaryData=await layoutApplyModel(data,pin.modelChoice||(pin.ratingModel==='V3B'?'RM3b':'RM3'));if(!state.pins.includes(pin))continue;const current=M.observations(data,pin),delta=M.changes(pin.observations,current);if(delta.length){const key=M.key(pin),pending=state.pending.find(p=>p.key===key);if(pending){const existing=new Map(pending.matches.map(m=>[m.id,m]));delta.forEach(m=>existing.set(m.id,m));pending.matches=[...existing.values()]}else state.pending.push({...pin,key,matches:delta})}const summary=snapshot(summaryData,pin),model=summaryData.meta?.ratingModel||'V3';pin.ratingChange=pin.ratingModel===model&&(pin.ratingCentre??1500)===(summaryData.meta?.ratingCentre??1500)&&summary?.rating!=null&&pin.summary?.rating!=null?summary.rating-pin.summary.rating:null;pin.ratingModel=model;pin.ratingCentre=summaryData.meta?.ratingCentre??1500;pin.summary=summary;pin.observations=current}}catch{failed++}}}task?.stage(15,'Checking saved sections for results…');await Promise.all([worker(),worker(),worker()]);task?.stage(90,'Updating your followed results…');checking=false;persist();updateBadge();if(auto&&state.notify&&state.pending.length&&!opened){function offer(){if(!state.pending.length)return;if(document.querySelector('.overlay:not(.hidden)')){setTimeout(offer,2000);return}opened=true;open(true)}setTimeout(offer,1400)}else if(!auto){open();if($('#follow82Status'))$('#follow82Status').textContent=failed?'Some sections could not be checked. Their previous results have been kept.':'Following is up to date.'}}
+async function checkPins(auto, task) {
+  if (checking) return;
+  checking = true;
+  const groups = new Map();
+  for (const pin of state.pins) {
+    if (pin.isArchive) {
+      pinStatuses.set(pin, 'Archived season');
+      continue;
+    }
+    if (!groups.has(pin.scope)) groups.set(pin.scope, []);
+    groups.get(pin.scope).push(pin);
+  }
+  const jobs = [...groups.values()];
+  const checkedPins = new Set();
+
+  async function updatePin(data, pin) {
+    if (!state.pins.includes(pin)) return;
+    try {
+      const summaryData = await layoutApplyModel(data, pin.modelChoice || (pin.ratingModel === 'V3B' ? 'RM3b' : 'RM3'));
+      if (!state.pins.includes(pin)) return;
+      const current = M.observations(data, pin);
+      const delta = M.changes(pin.observations, current);
+      if (delta.length) {
+        const key = M.key(pin);
+        const pending = state.pending.find(item => item.key === key);
+        if (pending) {
+          const matches = new Map(pending.matches.map(match => [match.id, match]));
+          delta.forEach(match => matches.set(match.id, match));
+          pending.matches = [...matches.values()];
+        } else state.pending.push({ ...pin, key, matches: delta });
+      }
+      const summary = snapshot(summaryData, pin);
+      const model = summaryData.meta?.ratingModel || 'V3';
+      const centre = summaryData.meta?.ratingCentre ?? 1500;
+      pin.ratingChange = pin.ratingModel === model && (pin.ratingCentre ?? 1500) === centre &&
+        summary?.rating != null && pin.summary?.rating != null ? summary.rating - pin.summary.rating : null;
+      Object.assign(pin, { ratingModel: model, ratingCentre: centre, summary, observations: current });
+      pinStatuses.delete(pin);
+      checkedPins.add(pin);
+    } catch {
+      pinStatuses.set(pin, 'Could not check ratings');
+    }
+  }
+
+  async function worker() {
+    while (jobs.length) {
+      const pins = jobs.shift();
+      const first = pins[0];
+      try {
+        const data = await dataFor(first);
+        if (data) {
+          for (const pin of pins) await updatePin(data, pin);
+        } else {
+          const status = first.isCustom ? 'Custom section unavailable' : 'Saved season has ended';
+          pins.forEach(pin => pinStatuses.set(pin, status));
+        }
+      } catch {
+        pins.forEach(pin => pinStatuses.set(pin, 'Could not check this section'));
+      }
+    }
+  }
+
+  try {
+    task?.stage(15, 'Checking saved sections for results…');
+    await Promise.all([worker(), worker(), worker()]);
+    task?.stage(90, 'Updating your followed results…');
+    persist();
+    updateBadge();
+    if (auto && state.notify && state.pending.length && !opened) {
+      function offer() {
+        if (!state.pending.length) return;
+        if (document.querySelector('.overlay:not(.hidden)')) {
+          setTimeout(offer, 2000);
+          return;
+        }
+        opened = true;
+        open(true);
+      }
+      setTimeout(offer, 1400);
+    } else if (!auto) {
+      const total = state.pins.length;
+      const count = state.pins.filter(pin => checkedPins.has(pin)).length;
+      open();
+      $('#follow82Status').textContent = total ? 'Checked ' + count + ' of ' + total + ' followed players.' : 'No followed players to check.';
+    }
+  } finally {
+    checking = false;
+  }
+}
 async function navigate(key){
  const request=++navigationRequest,sectionRequest=loadingToken;
  const pin=state.pins.find(p=>M.key(p)===key);
  if(!pin)return;
  return BRTAActivity.run('Opening '+pin.name,async task=>{
    try{
-     const history=pin.isArchive?await ensureHistoryCatalog():null;
-     const season=history?.seasons.find(s=>s.id===pin.seasonKey);
+     const archived = pin.isArchive || pinStatuses.get(pin) === 'Saved season has ended';
+     const history=archived?await ensureHistoryCatalog():null;
+     const season = history?.seasons.find(s => !s.is_current && (
+       pin.seasonKey ? s.id === pin.seasonKey :
+       s.season_id === pin.seasonId && s.competition_code === pin.scope.split('|')[0]
+     ));
      if(request!==navigationRequest||sectionRequest!==loadingToken)return false;
-     if(pin.isArchive&&!season)throw Error('This archived season is not available.');
+     if(archived&&!season)throw Error('This archived season is not available.');
      const catalog=season?historySeasonSections(season):currentCatalog();
-     if(!catalog.some(s=>s.section_code===pin.sectionCode))throw Error('Open that season or section from History first.');
+     const section = catalog.find(row => row.section_code === pin.sectionCode) ||
+       (archived && catalog.find(row => row.source_section_code === pin.sectionCode));
+     if(!section)throw Error('This saved section is unavailable in the selected season.');
      activeHistorySeasonId=season?.id||null;
      viewCatalog=catalog;
-     if(!await loadSection(pin.sectionCode,null,task)||request!==navigationRequest)return false;
+     if(!await loadSection(section.section_code,null,task)||request!==navigationRequest)return false;
      BRTA82.dismiss();
      if(pin.kind==='team'){switchPage('teams');BRTATeamLabUI.open(pin.name);await window.BRTAClubs?.ready()}
      else{switchPage('ratings');openProfile(pin.name)}
