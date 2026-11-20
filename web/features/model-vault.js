@@ -624,15 +624,7 @@
     print(relay.done ? 'End of recovered transcript.' : 'The relay is still running. Type prank again for the rest.', 'system');
   }
 
-  window.addEventListener('keydown', event => {
-    if (!auxiliaryEnabled() || !event.shiftKey || !event.altKey || event.ctrlKey || event.metaKey ||
-        (event.code !== 'KeyU' && event.key?.toLowerCase() !== 'u')) return;
-    event.preventDefault();
-    event.stopImmediatePropagation();
-    if (event.repeat) return;
-    if (consoleLayer && !consoleLayer.classList.contains('hidden') && BRTAOverlays.top() === consoleLayer) closeConsole();
-    else openConsole();
-  }, true);
+  window.addEventListener('brta-open-diagnostics', openConsole);
   window.addEventListener('brta-module-toggle', () => {
     if (auxiliaryEnabled()) return;
     logging = false;
@@ -652,3 +644,4 @@
     window.addEventListener(event, () => trace(event));
   }
 })();
+

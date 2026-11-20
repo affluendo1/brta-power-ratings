@@ -1,6 +1,17 @@
 // Website releases, newest first. Routine result checks are not website releases.
 // Retrospective entries use source-commit timestamps; sourceCommit records their provenance.
 window.BRTA_RELEASES = Object.freeze([
+{
+  "version": "9.2",
+  "size": "large",
+  "title": "Find your way",
+  "committedAt": "2026-11-20T19:00:00+11:00",
+  "changes": [
+    "New visitors can choose their competition and home section on arrival, with a short guide to the main features.",
+    "Save the current section as your default directly beside the competition selectors.",
+    "Quick navigation searches pages, competitions, sections and players. Open it from the header, Escape, Ctrl/Cmd+Shift+P, or Shift+Alt+U."
+  ]
+},
   {
     "version": "9.1.3.2",
     "size": "tiny",
@@ -1503,3 +1514,4 @@ window.BRTA_RELEASES = Object.freeze([
     "title": "Launch"
   }
 ]);
+

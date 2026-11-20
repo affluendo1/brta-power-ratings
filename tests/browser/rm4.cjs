@@ -3,7 +3,7 @@ const fs=require('fs'),path=require('path'),vm=require('vm');
 const ROOT=path.resolve(__dirname,'../..');
 const errors=[];const vc=new VirtualConsole();vc.on('jsdomError',e=>errors.push(e.stack));
 const dom=new JSDOM(fs.readFileSync(ROOT+'/index.html','utf8'),{url:'https://affluendo1.github.io/brta-power-ratings/',runScripts:'outside-only',pretendToBeVisual:true,virtualConsole:vc});
-const w=dom.window;
+const w=dom.window;w.localStorage.setItem('brta-onboarding-v1','1');
 const closeDOM=require('../fixtures/dom-lifecycle.cjs')(w);
 const addTestScheduledRound=require('../fixtures/scheduled-round.cjs');
 if(!process.env.BRTA_TEST_ORCHESTRA)w.localStorage.setItem('brta-rating-model','RM4.1 Ensemble');

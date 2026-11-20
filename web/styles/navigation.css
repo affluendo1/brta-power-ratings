@@ -1,0 +1,18 @@
+.navigation-sheet { width: min(680px, calc(100vw - 24px)); max-height: min(80dvh, 760px); display: flex; flex-direction: column; gap: 14px; padding: 24px; }
+.navigation-sheet header { display: flex; justify-content: space-between; align-items: start; }
+.navigation-sheet h2 { margin: 4px 36px 0 0; }
+.navigation-sheet .close-btn { position: static; flex: none; }
+.navigation-sheet p { margin: 0; line-height: 1.6; }
+.navigation-search { display: flex; gap: 8px; }
+.navigation-search input { width: 100%; min-width: 0; font: inherit; padding: 13px; background: var(--surface, Canvas); color: var(--text-color); border: 1px solid var(--border-color); border-radius: 8px; }
+.navigation-search button { color: inherit; background: transparent; border: 1px solid var(--border-color); border-radius: 8px; }
+#navigationResults { overflow-y: auto; min-height: 0; overscroll-behavior: contain; }
+#navigationResults button { display: flex; width: 100%; flex-direction: column; align-items: flex-start; text-align: left; gap: 5px; padding: 14px; color: inherit; background: transparent; border: 0; border-radius: 8px; font: inherit; cursor: pointer; }
+#navigationResults button small { opacity: .75; line-height: 1.5; }
+#navigationResults button[aria-selected="true"], #navigationResults button:hover { background: var(--accent-soft, rgba(128,128,128,.18)); box-shadow: inset 3px 0 var(--primary, #a89b35); }
+.navigation-sheet footer { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; font-size: 12px; }
+.navigation-home-actions { display: flex; flex-wrap: wrap; gap: 12px 20px; grid-column: 1 / -1; padding-top: 12px; border-top: 1px solid var(--border-color); }
+.navigation-home-actions button { text-decoration: underline; text-underline-offset: 3px; }
+.navigation-home-actions span { font-size: 12px; }
+.navigation-home-actions button:disabled { opacity: .7; cursor: default; }
+@media(max-width: 600px) { .navigation-sheet { padding: 18px; max-height: 88dvh; } .navigation-sheet footer > span { display: none; } #quickNavigationBtn { font-size: 12px; } }

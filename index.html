@@ -3,6 +3,11 @@
 <head>
   <meta charset="utf-8">
   <script>
+    window.BRTAFirstVisit = !localStorage.getItem('brta-onboarding-v1') &&
+      !localStorage.getItem('brta-section') && !localStorage.getItem('brta-default-section') &&
+      !localStorage.getItem('brta-history-selection');
+  </script>
+  <script>
     const deepLinkBase = location.pathname.match(/^(\/(?:brta-power-ratings\/)?)(?:current|history)\//i)?.[1];
     if (deepLinkBase) {
       const base = document.createElement('base');
@@ -64,6 +69,7 @@
 <link rel="stylesheet" href="web/styles/archive-secret.css?v=9113">
 <link rel="stylesheet" href="web/styles/release91.css?v=9131">
 <link rel="stylesheet" href="web/styles/racquet-club.css?v=9112">
+<link rel="stylesheet" href="web/styles/navigation.css?v=920">
 </head>
 <body>
 <header class="site-header">
@@ -189,7 +195,7 @@
 <script src="web/features/player-search.js?v=9113"></script>
 <script src="web/models/team-lab.js?v=8521"></script>
 <script src="web/features/team-lab-ui.js?v=900"></script>
-<script src="web/features/changelog-data.js?v=9132"></script>
+<script src="web/features/changelog-data.js?v=920"></script>
 <script src="extras/past-software/releases.js?v=9111"></script>
 <script src="web/features/changelog.js?v=9113"></script>
 <script src="web/optional/parameters.js?v=8521"></script>
@@ -243,7 +249,7 @@
 <script src="web/features/export-853.js?v=901-fast"></script>
 <script src="web/models/clubs.js?v=900"></script>
 <script src="web/features/clubs.js?v=9121"></script>
-<script src="web/features/model-vault.js?v=9111"></script>
+<script src="web/features/model-vault.js?v=920"></script>
 <script src="web/features/archive-secret.js?v=9113"></script>
 <script src="web/themes/theme-calendar/presets.js?v=9014"></script>
 <script src="web/features/theme-calendar.js?v=91"></script>
@@ -255,7 +261,9 @@
 <script src="web/optional/round-zero.js?v=9111"></script>
 <script src="web/models/racquet-club.js?v=9123b"></script>
 <script src="web/features/racquet-club.js?v=9131"></script>
+<script src="web/features/navigation.js?v=920"></script>
 </body>
 </html>
+
 
 
