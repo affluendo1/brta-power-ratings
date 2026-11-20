@@ -1,17 +1,18 @@
 // Website releases, newest first. Routine result checks are not website releases.
 // Retrospective entries use source-commit timestamps; sourceCommit records their provenance.
 window.BRTA_RELEASES = Object.freeze([
-{
-  "version": "9.2",
-  "size": "large",
-  "title": "Find your way",
-  "committedAt": "2026-11-20T19:00:00+11:00",
-  "changes": [
-    "New visitors can choose their competition and home section on arrival, with a short guide to the main features.",
-    "Save the current section as your default directly beside the competition selectors.",
-    "Quick navigation searches pages, competitions, sections and players. Open it from the header, Escape, Ctrl/Cmd+Shift+P, or Shift+Alt+U."
-  ]
-},
+  {
+    "version": "9.1.4",
+    "size": "small",
+    "title": "Find your way",
+    "committedAt": "2026-11-20T20:46:37+11:00",
+    "changes": [
+      "Set a default section from the competition picker or open a guided tutorial. Export section and Provisional entries are available beside the selectors.",
+      "Search for teams directly in Quick Nav, including historical team names. Open team results, stats and competition participation from the search.",
+      "On phones, Menu brings back the header actions, and Quick Nav leaves the keyboard closed until you tap Search.",
+      "Basement players have a rating no higher than any Foundational player in the same section and discipline."
+    ]
+  },
   {
     "version": "9.1.3.2",
     "size": "tiny",
