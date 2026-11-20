@@ -388,7 +388,6 @@
   }
   const latest = document.querySelector('#roundBtn');
   document.querySelector('#page-results .section-title').append(latest);
-  document.querySelector('#customCompetitionsBtn').classList.add('navigation-secondary-entry');
   document.querySelector('#settingsBtn').innerHTML = '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m9 3-1 3-3 1-2 5 2 5 3 1 1 3h6l1-3 3-1 2-5-2-5-3-1-1-3Z"/><circle cx="12" cy="12" r="3"/></svg><span>Settings</span>';
   const mobileMenu = document.createElement('div');
   mobileMenu.id = 'mobileHeaderMenu';
