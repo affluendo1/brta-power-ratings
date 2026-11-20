@@ -49,3 +49,4 @@ jobs:
           trap 'kill "$server_pid"' EXIT
           curl --retry 10 --retry-connrefused --silent --fail http://127.0.0.1:8822/ -o /dev/null
           NODE_PATH="$RUNNER_TEMP/brta-playwright/node_modules" node tests/browser/mobile-scroll.cjs
+          NODE_PATH="$RUNNER_TEMP/brta-playwright/node_modules" node tests/browser/navigation.cjs

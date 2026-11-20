@@ -52,7 +52,7 @@ function performanceBands(data,view,list,round=null){
    if(bestWin)qualifications.set(id,{band:'b18',minimumPower:zenithPower,opponentMinimum:highElite,
     opponent:bestWin.match.opp,opponentPower:bestWin.power,score:bestWin.match.score,round:bestWin.match.round});
   }
-  if(!((entry.matches??entry.s?.matches)>=basementMatches))continue;
+  if(ordinary!=='b7'||!((entry.matches??entry.s?.matches)>=basementMatches))continue;
   const record=matches(data,entry.player,discipline,round);
   const wins=record.filter(match=>match.won).length;
   if(record.length<basementMatches||wins/record.length>basementWinShare)continue;
@@ -62,6 +62,13 @@ function performanceBands(data,view,list,round=null){
   const gameShare=gamesWon/gamesPlayed, scorelineRoute=wins===0&&gameShare<=.10;
   if(gamesPlayed>0&&(scorelineRoute||(ordinary==='b7'&&entry.rating<=basementPower&&gameShare<=basementGameShare)))qualifications.set(id,{band:'b19',
    maximumPower:basementPower,scorelineRoute,wins,losses:record.length-wins,gamesWon,gamesPlayed});
+ }
+ // Basement is a qualifying bottom tail. A lower-rated ordinary player keeps
+ // higher-rated candidates in Foundational until the ordering is consistent.
+ const foundational=ranked.filter(entry=>base.classFor(entry.rating)==='b7'&&qualifications.get(label(entry.player))?.band!=='b19');
+ const lowestFoundational=Math.min(...foundational.map(entry=>entry.rating));
+ for(const entry of ranked){
+  if(qualifications.get(label(entry.player))?.band==='b19'&&entry.rating>lowestFoundational)qualifications.delete(label(entry.player));
  }
  const active=new Set([...qualifications.values()].map(result=>result.band));
  if(active.has('b18')){order.unshift('b18');names[18]='Zenith';bounds[18]='';}

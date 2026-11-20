@@ -53,3 +53,20 @@ const closerLosses={...rareData,results:rareData.results.map(group=>{
 })};
 assert.equal(modelFor(null,rareRows,closerLosses).classForEntry(low),'b7');
 console.log('Rare bands use stricter cutoffs, completed results through the selected round and auditable qualifying evidence.');
+// A higher-rated severe-loss candidate must not sit beneath a lower-rated
+// Foundational entry, including a provisional player with less evidence.
+const lowerProvisional = {player:'Lower provisional',rating:low.rating-1,matches:1};
+const orderedRows = [...rareRows,lowerProvisional];
+const orderedBands = modelFor(null,orderedRows,lopsided);
+assert.notEqual(orderedBands.classForEntry(low),'b19');
+assert.equal(orderedBands.classForEntry(lowerProvisional),'b7');
+const tiedProvisional = {...lowerProvisional,rating:low.rating};
+const tiedBands = modelFor(null,[...rareRows,tiedProvisional],lopsided);
+assert.equal(tiedBands.classForEntry(low),'b19');
+for(const through of [null,5,6]){
+ const bands=modelFor(through,orderedRows,lopsided);
+ const basement=orderedRows.filter(row=>bands.classForEntry(row)==='b19');
+ const foundational=orderedRows.filter(row=>bands.classForEntry(row)==='b7');
+ assert(basement.every(row=>foundational.every(other=>row.rating<=other.rating)));
+}
+console.log('Basement stays below every Foundational rating, including provisional entries and round snapshots.');

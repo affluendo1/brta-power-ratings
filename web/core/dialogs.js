@@ -7,7 +7,7 @@
   function reconcileLocks(){
     for(const owner of locks.keys())if(!owner.isConnected||owner.classList.contains('hidden')||owner.hidden)locks.delete(owner);
     if(!locks.size){for(const [node,value]of originalInert)if(node.isConnected)node.inert=value;originalInert.clear();return}
-    const dialogs=[...document.querySelectorAll('.overlay:not(.hidden)')].filter(e=>!e.hidden&&getComputedStyle(e).display!=='none').sort((a,b)=>(Number(getComputedStyle(a).zIndex)||0)-(Number(getComputedStyle(b).zIndex)||0)),front=dialogs.at(-1);
+    const dialogs=[...document.querySelectorAll('.overlay:not(.hidden)')].filter(e=>!e.hidden&&!e.hasAttribute('data-dialog-preview')&&getComputedStyle(e).display!=='none').sort((a,b)=>(Number(getComputedStyle(a).zIndex)||0)-(Number(getComputedStyle(b).zIndex)||0)),front=dialogs.at(-1);
     for(const node of document.body.children){
       if(!originalInert.has(node))originalInert.set(node,node.inert);
       const exempt=node===front||node.id==='modeSwitchOverlay'||node.hasAttribute('data-floating-translator')||[...locks.values()].some(ids=>ids.includes(node.id));
@@ -18,7 +18,7 @@
   function unlock(owner){locks.delete(owner);reconcileLocks()}
 
   const visible=element=>element.isConnected&&!element.hidden&&!element.closest('.hidden,[hidden],[inert]')&&getComputedStyle(element).display!=='none'&&getComputedStyle(element).visibility!=='hidden';
-  function layers(){return [...document.querySelectorAll('.overlay:not(.hidden)')].filter(visible).sort((a,b)=>(Number(getComputedStyle(a).zIndex)||0)-(Number(getComputedStyle(b).zIndex)||0));}
+  function layers(){return [...document.querySelectorAll('.overlay:not(.hidden)')].filter(e=>!e.hasAttribute('data-dialog-preview')&&visible(e)).sort((a,b)=>(Number(getComputedStyle(a).zIndex)||0)-(Number(getComputedStyle(b).zIndex)||0));}
   const top=()=>layers().at(-1);
   const controls=overlay=>[...overlay.querySelectorAll('button,input,select,textarea,a[href],summary,[tabindex]')].filter(e=>!e.disabled&&e.tabIndex>=0&&visible(e)&&e.getClientRects().length);
   function sync(){
@@ -29,7 +29,7 @@
       if((document.activeElement===document.body||overlay.contains(document.activeElement))&&focus?.isConnected&&visible(focus))focus.focus({preventScroll:true});
     }
     for(const overlay of document.querySelectorAll('.overlay:not(.hidden)')){
-      if(opened.has(overlay)||!visible(overlay))continue;
+      if(opened.has(overlay)||overlay.hasAttribute('data-dialog-preview')||!visible(overlay))continue;
       opened.set(overlay,focusCandidates.get(overlay)||(overlay.contains(document.activeElement)?previousFocus:document.activeElement));
       focusCandidates.delete(overlay);
       const others=layers().filter(e=>e!==overlay);

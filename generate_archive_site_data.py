@@ -286,10 +286,18 @@ def write_club_index(catalog: dict) -> None:
         manifest["competitions"][code] = {
             "label": bucket["label"], "sections": sorted(bucket["sections"]),
             "path": f"data/archive/clubs-{code}.json",
-            "clubs": [{"name": club["name"], "entries": len(club["entries"])} for club in clubs],
+            "clubs": [club_search_entry(club) for club in clubs],
         }
     CLUB_INDEX.write_text(json.dumps(manifest, separators=(",", ":"), ensure_ascii=False) + "\n", encoding="utf-8")
 
+
+
+def club_search_entry(club: dict) -> dict:
+    summary = {"name": club["name"], "entries": len(club["entries"])}
+    teams = sorted({entry["team"] for entry in club["entries"] if entry["team"] != club["name"]})
+    if teams:
+        summary["teams"] = teams
+    return summary
 
 
 def write_archive_payloads(raw: dict, *, missing_only: bool = False) -> int:

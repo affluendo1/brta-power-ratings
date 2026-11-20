@@ -15,7 +15,7 @@ for (const round of competition.rounds) {
 }
 
 async function openCompetition(page) {
-  await page.addInitScript(() => localStorage.setItem('brta-rating-model', 'RM3'));
+  await page.addInitScript(() => { localStorage.setItem('brta-rating-model', 'RM3'); localStorage.setItem('brta-onboarding-v1', '1'); });
   await page.goto(baseURL);
   await page.locator('.result-match').first().waitFor();
   await page.evaluate(async section => {
