@@ -18,7 +18,7 @@ const base = process.env.BRTA_TEST_URL || 'http://127.0.0.1:8822/';
       await overlay.getByRole('option').first().click();
       await overlay.waitFor({ state: 'hidden' });
       assert.equal(await page.evaluate(() => localStorage.getItem('brta-default-section')), chosen.section_code);
-      await page.reload();
+      await page.goto(base);
       await page.locator('.result-match').first().waitFor();
       assert.equal(await page.evaluate(() => D.meta.section_code), chosen.section_code);
       assert.equal(await overlay.isVisible(), false);

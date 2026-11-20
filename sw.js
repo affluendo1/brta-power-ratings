@@ -47,6 +47,3 @@ self.addEventListener("fetch",event=>{
   if(!/\.(?:js|json|css|png|jpe?g|webmanifest|woff2?|mp3)$/.test(url.pathname))return;
   event.respondWith(networkFirst(request));
 });
-
-
-

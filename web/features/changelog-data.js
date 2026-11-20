@@ -1514,4 +1514,3 @@ window.BRTA_RELEASES = Object.freeze([
     "title": "Launch"
   }
 ]);
-
