@@ -162,7 +162,9 @@
   button.textContent = 'Quick navigation';
   button.title = 'Quick navigation · Ctrl/Cmd+Shift+P';
   button.onclick = openNavigation;
-  document.querySelector('#settingsBtn').before(button);
+  button.setAttribute('aria-haspopup', 'dialog');
+  button.setAttribute('aria-controls', 'navigationOverlay');
+  document.querySelector('#roundBtn').before(button);
   const toolbar = document.createElement('div');
   toolbar.className = 'navigation-home-actions';
   toolbar.innerHTML = '<button class="export-link" id="navigationDefault">Make this my default</button><button class="export-link" id="navigationChoose">Choose my home section</button><button class="export-link" id="navigationGuide">New here? Site guide</button><span id="navigationSaved" role="status"></span>';
