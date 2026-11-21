@@ -1,5 +1,5 @@
 /*
- * Lazy, read-only derived-player support.  Nothing in this file writes to a
+ * Lazy, read-only derived-player support.  nothing in this file writes to a
  * section payload: it receives a snapshot and returns a separate context.
  */
 (function(root,factory){

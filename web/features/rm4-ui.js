@@ -1,4 +1,3 @@
-/* Release integration: fitted ratings stay separate from the prediction layer. */
 (function(){'use strict';
 const ratings=renderRatings;renderRatings=function(...args){ratings(...args);if(ratingScope==='all'&&!$('#search').value.trim()&&!BRTAOrchestra.isModel(selectedRatingModel()))$('#ratingsHint').textContent='Search a name to explore their rating.'};$('#search').oninput=renderRatings;
 const choices=['4melody.2','4foundation.2','RM4.2','RM4.1 Ensemble','RM4b','RM4a','RM3','RM3b'];
@@ -33,7 +32,7 @@ const matchup=profileMatchupResult;profileMatchupResult=function(name,opponent,r
 })();
 
 
-/* Predictions require completed current-section evidence, independently of historical rating priors. */
+/* predictions require completed current-section evidence, independently of historical rating priors. */
 function predictionEvidenceRounds(round=null){if(!D)return 0;const observations=BRTALayoutModel.observations(D);return new Set(observations.filter(m=>round==null||m.round<=Number(round)).map(m=>m.round)).size}
 function predictionEvidenceReady(round=null){return predictionEvidenceRounds(round)>=3}
 function predictionEvidenceNotice(){return '<section class="guide-hero prediction-evidence-gate"><span class="guide-tag">Prediction Centre</span><h3>More evidence is on the way</h3><p>Predictions open after three rounds of completed results. Come back when there is more current-season evidence.</p><p>Player ratings remain available as the season develops.</p></section>'}

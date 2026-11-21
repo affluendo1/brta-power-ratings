@@ -1,4 +1,4 @@
-/* Keep one set of controls and handlers; Classic puts them in a table masthead. */
+/* classic moves the actual buttons into the table so their handlers come along */
 (function(){'use strict';
  const classic=document.documentElement.dataset.interface==='classic';
  const masthead=document.querySelector('.classic-masthead');

@@ -1,4 +1,3 @@
-/* The Ratings footer clue and its optional Neon + reward. */
 (() => {
   'use strict';
   const root = document.documentElement;

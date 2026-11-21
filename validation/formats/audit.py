@@ -18,12 +18,12 @@ with zipfile.ZipFile(source) as z:
     valid=[(s.get('home'),s.get('away')) for s in scores if isinstance(s,dict) and type(s.get('home')) is int and type(s.get('away')) is int]
     counts[discipline]+=1
     if not valid:profiles[discipline]['no_numeric_score']+=1;continue
-    # Preserve a signature of all terminal pairs. This describes source notation only.
+    # preserve a signature of all terminal pairs. this describes source notation only.
     pattern=min(' '.join('%d-%d'%pair for pair in valid),' '.join('%d-%d'%(a,h) for h,a in valid))
     profiles[discipline][pattern]+=1;all_patterns[(association,discipline,len(valid),pattern)]+=1
   associations[association]+=1
   sections.append({'association':association,'competition':d.get('competition_code'),'season':d.get('native_season_id'),'section':d.get('native_id'),'label':d.get('section_label'),'scorecardReferences':len(matches),'missingScorecards':missing,'counts':dict(counts),'observedScores':{k:dict(sorted(v.items())) for k,v in profiles.items()},'ruleStatus':'requires explicit competition rules; observed scores do not establish stopping rules'})
-# Optional fresh scorecard supplement, kept outside the public repository.
+# optional fresh scorecard supplement, kept outside the public repository.
 supplement=None
 if len(sys.argv)>3:
  extra=Path(sys.argv[3]);manifest=json.loads((extra/'manifest.json').read_text());lookup={(x['association'],x['competition'],x['season'],x['section']):x for x in sections};hashes=[]

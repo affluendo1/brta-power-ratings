@@ -19,7 +19,7 @@ PARKING = re.compile(r'\b(?:parking|car\s*park|park\s+(?:in|at|on))\b', re.I)
 ACCESS = re.compile(r'\b(?:wheelchair|accessible|accessibility|step[- ]free|disabled access)\b', re.I)
 
 def venue_key(lines):
-    # Ignore display punctuation/postcodes when comparing a venue observation.
+    # ignore display punctuation/postcodes when comparing a venue observation.
     value=re.sub(r'\b\d{4}\b','', ' '.join(lines)).casefold()
     return re.sub(r'[^a-z0-9]','',value)
 
@@ -74,8 +74,8 @@ def build_foundation(directory,network,sections=(),*,checked_at=None,aliases=Non
         if not primary and not lines and not coords:return cid+':venue:main'
         primary_id=cid+':venue:main'
         if not primary:
-            # Same mapped location with differently formatted address lines is
-            # one venue. Distinct coordinates/addresses remain separate.
+            # same mapped location with differently formatted address lines is
+            # one venue. distinct coordinates/addresses remain separate.
             for venue in venues.values():
                 if venue['club_id']!=cid:continue
                 a,b=venue.get('coordinates'),coords
@@ -128,12 +128,12 @@ def build_foundation(directory,network,sections=(),*,checked_at=None,aliases=Non
         code=section.get('section_code');season=section.get('season_id')
         for draw in section.get('draw',[]):
             # Fixture-level venue overrides outrank a team default and a club's
-            # main ground. Preserve the original sentence for unresolved venues.
+            # main ground. preserve the original sentence for unresolved venues.
             home=draw.get('home_team','')
             target=draw.get('venue_override') or assignment(home) or assignment(draw.get('venue','')) or (draw.get('venue') if draw.get('venue') and draw.get('venue')!=home else None)
             if not target:continue
-            # Footnote marks flag alternate grounds, not a different team.
-            # Keep colours: Gold and Green may be separate teams in a section.
+            # footnote marks flag alternate grounds, not a different team.
+            # keep colours: Gold and Green may be separate teams in a section.
             same_label=lambda value:re.sub(r'\s+\([A-Z]{2,6}\)$','',re.sub(r'[\s*†‡]+$','',clean(value))).casefold().strip()
             candidates=[t for t in teams.values() if t['section_code']==code and t['season_id']==season and same_label(t['name'])==same_label(home)]
             team=candidates[0] if len(candidates)==1 else None

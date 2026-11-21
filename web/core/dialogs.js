@@ -1,4 +1,4 @@
-/* Route keyboard input to the visible front dialog before legacy feature handlers. */
+/* route keyboard input to the visible front dialog before legacy feature handlers. */
 (function(root){
   'use strict';
   const callbacks=new Map(),opened=new Map(),focusCandidates=new WeakMap();
@@ -46,7 +46,7 @@
   root.addEventListener('keydown',event=>{
     if(event.target.closest?.('[data-floating-translator]'))return;
     const transition=document.querySelector('#modeSwitchOverlay:not(.hidden)');if(transition&&event.key==='Escape'){event.preventDefault();event.stopImmediatePropagation();return}const overlay=top();if(!overlay)return;
-    // These scenes have their own keyboard controls, including the narrator.
+    // these scenes have their own keyboard controls, including the narrator.
     if(overlay.id==='moreSettingsOverlay'){if(event.key==='Escape'){event.preventDefault();event.stopImmediatePropagation();callbacks.get(overlay.id)?.()}return;}
     if(event.key==='Escape'){
       event.preventDefault();event.stopImmediatePropagation();
@@ -60,7 +60,7 @@
       const nodes=controls(overlay),first=nodes[0],last=nodes.at(-1);
       if(!first){event.preventDefault();return;}
       if(!overlay.contains(document.activeElement)||event.shiftKey&&document.activeElement===first||!event.shiftKey&&document.activeElement===last){event.preventDefault();(event.shiftKey?last:first).focus();}
-      // Underlying dialogs must not run their own focus traps.
+      // underlying dialogs must not run their own focus traps.
       event.stopImmediatePropagation();
     }
   },true);

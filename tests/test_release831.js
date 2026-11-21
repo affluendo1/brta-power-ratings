@@ -12,7 +12,7 @@ const data={meta:{predictionModel:'RM4.1 Ensemble',ratingCentre:1500,ratingScale
 const expanded=E.centre(data,2000);assert.equal(expanded.singles[0].rating,2510);assert.equal(expanded.singles[0].se,170);assert.equal(expanded.singles[0].ratingChange,34);assert.equal(expanded.doubles[0].pairEffect,85);assert.deepEqual(expanded.ratingHistory.players.A[0].slice(1,3),[2340,170]);assert.equal(expanded.meta.ratingScale,765);assert.deepEqual(expanded.rm4,data.rm4);assert.deepEqual(E.centre(expanded,2000),expanded);
 const lowered=E.centre(expanded,1500);assert.equal(lowered.singles[0].rating,2010);assert.equal(lowered.singles[0].se,170);assert.equal(lowered.meta.ratingScale,765);
 const p=P.gameProbability(1800,1200),q=P.gameProbability(expanded.singles[0].rating,expanded.singles[1].rating,expanded.meta.ratingProbabilityScale);assert(Math.abs(p-q)<1e-12);
-// Independent reference: original Python RM2 at commit 6388eeb, scipy L-BFGS-B.
+// independent reference: original Python RM2 at commit 6388eeb, scipy L-BFGS-B.
 const matches=[[1,'A','B',6,1],[2,'B','C',6,3],[3,'C','A',6,4],[4,'A','C',7,5],[5,'B','A',6,4],[6,'C','B',6,0]].map(([round,h,a,hg,ag])=>({round,date:'2026-09-0'+round,home:[h],away:[a],hg,ag,winner:'home',homeTeam:'Red',awayTeam:'Blue'}));
 const original={A:1006.7518030005,B:963.618552991,C:1029.6296440085},legacy=C.fit(matches,false,false,'V2');
 for(const row of legacy){assert.equal(row.rating,Math.round(original[row.player]+500));assert(Number.isFinite(row.se)&&row.se>0)}

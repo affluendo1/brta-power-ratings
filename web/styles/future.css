@@ -110,7 +110,7 @@ html[data-theme="dark"]{
  .result-match:hover,.fixture-match:hover{transform:translateY(-1px)}
 }
 
-/* Default: restore the original full-width category separators in the ratings table. */
+/* default: restore the original full-width category separators in the ratings table. */
 #page-ratings .band-divider td{
  padding:0!important;
  border-left:1px solid var(--border-color)!important;

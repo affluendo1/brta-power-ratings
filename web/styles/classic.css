@@ -1,4 +1,3 @@
-/* Classic is deliberately a plain, table-heavy early web interface. */
 .classic-only{display:none}
 html[data-interface="classic"]{
  color-scheme:light;font-family:"Times New Roman",Times,serif;font-size:16px;
@@ -176,7 +175,7 @@ html[data-interface="classic"] .legacy-extra{color:#800080}html[data-interface="
 html[data-interface="classic"] body{min-width:0}
 html[data-interface="classic"] [role="dialog"]{border:3px outset var(--classic-edge);background:var(--surface-raised)}
 
-/* Complete the old-web treatment for secondary screens and utility dialogs. */
+/* complete the old-web treatment for secondary screens and utility dialogs. */
 html[data-interface="classic"] :is(*,*::before,*::after){background-image:none!important;text-shadow:none!important}
 html[data-interface="classic"] :is(h1,h2,h3,h4){font-family:"Times New Roman",Times,serif!important;letter-spacing:normal;text-transform:none}
 html[data-interface="classic"] :is(.rounds82-panel,.rounds821-overview,.calendar821-day,.calendar821-detail,.following84-list,.following84-row,.follow82-note,.team822-explorer,.prediction-verdict,.prediction-rubbers,.share82-options,.share82-preview,.theme821-card,.studio-palette,.club822-panel,.club-panel,.ca-panel,.ca-card,.notification82-row,.release-entry,.release-latest,.release-patch){background:var(--surface);color:var(--text-color);border:1px solid var(--border-color)}

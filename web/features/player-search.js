@@ -6,7 +6,7 @@
     if(!q)return [];
     const names=new Map();
     index.players.forEach((name,i)=>{const n=normalise(name);if(tokens.every(t=>n.includes(t)))names.set(i,{name,score:n===q?0:n.startsWith(q)?1:2})});
-    // Existing published indexes used global numeric IDs; preserve those
+    // old indexes used global numeric ids, keep those
     // references until the next full archive index build.
     return index.entries.filter(row=>names.has(row[0])).map(([nameId,sectionId,team,identity])=>({
       ...index.sections[sectionId],player:names.get(nameId).name,team,score:names.get(nameId).score,identity

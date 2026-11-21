@@ -1,4 +1,4 @@
-/* Visual tutorials. Steps use the live section and preserve the visitor's page. */
+/* use the real section for the tour, then put the page back */
 (function () {
   'use strict';
   const $ = selector => document.querySelector(selector);

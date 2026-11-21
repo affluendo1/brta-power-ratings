@@ -1,14 +1,14 @@
 # BRTA Power Ratings
 
-**Current version: 9.1.1**
+results, ladders and power ratings for BRTA tennis. [open the site](https://affluendo1.github.io/brta-power-ratings/) and pick a competition and section.
 
-The default player rating model is **4.2 Melody**, while **4.2 Orchestra** handles predictions.
-Other available models include **4.2 Foundation**, **RM4.2**, **RM4.1 Ensemble**, **RM4a**,
-**RM4b**, **RM3** and **RM3b**. Existing valid model preferences are retained.
+melody is the default for the ratings table and orchestra does the predictions.
+you can swap the models in settings. the in-site changelog has the current version.
 
-### Latest updates
+### latest updates
 
-- **9.1:** Finals Race, editable round simulations, fixture logistics and exact section and scorecard URLs.
+- **9.1.4:** quick nav, the tutorials, a default section picker and a phone menu.
+- **9.1:** finals race, editable round simulations, fixture details and links that open the right section or scorecard.
 
 - **9.0.1.4:** Theme Calendar rotates through 366 presets. Every preset can be saved as the default in Theme Studio.
 - **9.0.1.3:** Added standalone reference pages and repository development notes.

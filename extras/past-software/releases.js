@@ -1,7 +1,6 @@
-/* Published X.Y release commits. Pin new releases here once their release commit is on main. */
 (() => {
   'use strict';
-  // The first completed history import supplies the data for 4.0 and 4.1.
+  // the first completed history import supplies the data for 4.0 and 4.1.
   const snapshots = {
     tikituff91: { version: '9.1', commit: '157972b513e12916fb646f15f7547b493e3e3716' },
     tikiphonkaura90: { version: '9.0', commit: 'c97633e215a9a43f9c32367a737d36d7bc58dbd3' },

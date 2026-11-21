@@ -1,4 +1,3 @@
-/* Run the real worker and importScripts graph in an isolated Node context. */
 const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm');
 module.exports=class RatingWorker{
  constructor(){this.closed=false}

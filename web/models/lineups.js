@@ -1,4 +1,3 @@
-/* Recorded full lineups, grouped by ordered singles and doubles slots. */
 (function(root){'use strict';
  const members=v=>String(v||'').split(/\s*\/\s*/).filter(Boolean),slot=r=>(Number(String(r.position||'').match(/\d+/)?.[0])||1)-1;
  function rules(data){const r=data.meta?.customRules||data.meta?.competition_rules;return r?{singles:r.singlesSlots,doubles:r.doublesSlots,players:r.playersPerTeam??Math.max(r.singlesSlots,2)}:data.format==='rubbers'?{singles:2,doubles:1,players:2}:{singles:4,doubles:2,players:4}}

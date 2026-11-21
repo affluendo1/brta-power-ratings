@@ -45,7 +45,7 @@ def validate():
         for ref in re.findall(r'url\([\'"]?([^\)\'\"]+)', css.read_text()):
             if not ref.startswith(('data:', 'http', '#')):
                 assert (css.parent/ref).is_file(), f'Missing CSS image: {ref}'
-    # These assets are not part of the startup shell.
+    # these assets are not part of the startup shell.
     for file in [ROOT/'index.html', ROOT/'sw.js']:
         assert 'leaflet-markercluster' not in file.read_text()
         assert 'assets/associations/' not in file.read_text()

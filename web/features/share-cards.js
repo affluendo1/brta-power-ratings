@@ -1,4 +1,3 @@
-/* Canvas is the preview AND the export: no screenshot services or remote uploads. */
 (function(){'use strict';let model,canvas,options,exportFocus,previewObserver;
 const presets=[['Current scheme',''],['Yellow','#c1cd12'],['Blue','#356bc7'],['Green','#25814e'],['Red','#b73d4c'],['Purple','#8754c2']];
 function currentColor(){const probe=document.createElement('span');probe.style.color='var(--primary)';document.body.append(probe);const value=getComputedStyle(probe).color;probe.remove();return value||'#c1cd12'}

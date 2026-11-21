@@ -1,4 +1,4 @@
-/* Predeclared temporal/shrinkage candidates. Select on rounds 4–7; assess 8+.
+/* predeclared temporal/shrinkage candidates. select on rounds 4–7; assess 8+.
  * A diagnostic on additional BRTA sections, not a fresh prospective test.
  * Frozen Ensemble is not changed or retrained by this experiment.
  */

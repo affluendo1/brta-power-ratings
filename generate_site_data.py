@@ -26,13 +26,13 @@ DEFAULT_SECTION = "UA009"
 INDIVIDUAL_DOUBLES_MIN = 4
 INDIVIDUAL_DOUBLES_MIN_PARTNERS = 2
 # A player whose loading on an exact unidentifiable direction exceeds this is
-# not publishable as an independently ranked doubles contributor.  This is a
+# not publishable as an independently ranked doubles contributor.  this is a
 # structural data check, not a judgement of playing ability.
 IDENTIFIABILITY_EXPOSURE_THRESHOLD = 0.05
-# Conditional pair effects are deliberately much more strongly shrunk than
-# player effects. They are exploratory diagnostics, not a fourth leaderboard.
+# conditional pair effects are deliberately much more strongly shrunk than
+# player effects. they are exploratory diagnostics, not a fourth leaderboard.
 PAIR_SYNERGY_L2 = 50.0
-# Generated analysis contracts are intentionally complete enough for client
+# generated analysis contracts are intentionally complete enough for client
 # views to consume without reproducing statistical logic in the browser.
 
 def canonical_pair(value: str) -> str:
@@ -69,10 +69,10 @@ def standard_doubles_rows(doubles):
 def parse_dates(df):
     out = df.copy()
     parsed = pd.to_datetime(out["date"], format="%d %b %y", errors="coerce")
-    # TROLS does not publish dates on some historic playoff scorecards. Keep
+    # TROLS does not publish dates on some historic playoff scorecards. keep
     # their stored date blank for display; for the rating likelihood only,
     # use the latest known match date so we do not invent a postponement gap.
-    # If it publishes no dates for the season, one neutral common timestamp
+    # if it publishes no dates for the season, one neutral common timestamp
     # makes all observations receive equal recency weight.
     reference_date = parsed.max() if not parsed.dropna().empty else pd.Timestamp("2000-01-01")
     out["match_date"] = parsed.fillna(reference_date)
@@ -239,10 +239,10 @@ def fit_individual_doubles(doubles, *, rubbers_format=False):
         k=ix[p0]; s=stats[p0]
         partner_count=len(s["partners"])
         structurally_unidentified=identifiability_exposure[k] >= IDENTIFIABILITY_EXPOSURE_THRESHOLD
-        # Rubbers divisions have two-player teams. Their doubles evidence is
+        # rubbers divisions have two-player teams. their doubles evidence is
         # inherently partner-dependent, so hiding every doubles/Overall entry
         # is less useful than publishing the evidence with that limitation
-        # explicit. Other formats retain the stricter identifiable-network
+        # explicit. other formats retain the stricter identifiable-network
         # qualification rule.
         qualified=(s["matches"] >= INDIVIDUAL_DOUBLES_MIN and
                    (rubbers_format or
@@ -383,7 +383,7 @@ def ladder(fixtures, rules):
 def team_rows(single_rows, fixtures, rules):
     pts=ladder(fixtures, rules); by=defaultdict(list)
     for x in single_rows:
-        # Team Power measures the active modelled roster, not only the public
+        # team Power measures the active modelled roster, not only the public
         # leaderboard.  Low-sample ratings are already shrunk toward 1500.
         by[x["team"]].append(x["rating"])
     all_teams=sorted((set(fixtures.home_team)|set(fixtures.away_team))-{"Bye"})
@@ -420,8 +420,8 @@ def reconstructed_standings(fixtures, rules, regular_rounds=14):
                 s[winner]["wins"] += 1; s[loser]["losses"] += 1
             continue
         if status == "Wash Out":
-            # Rule 14 gives both teams draw points plus a half point per
-            # uncompleted set. With no scorecard this is a draw, but contributes
+            # rule 14 gives both teams draw points plus a half point per
+            # uncompleted set. with no scorecard this is a draw, but contributes
             # no game percentage.
             s[h]["played"] += 1; s[a]["played"] += 1
             s[h]["draws"] += 1; s[a]["draws"] += 1
@@ -445,7 +445,7 @@ def reconstructed_standings(fixtures, rules, regular_rounds=14):
         s[h]["gamesFor"] += hg; s[h]["gamesAgainst"] += ag
         s[a]["gamesFor"] += ag; s[a]["gamesAgainst"] += hg
         s[h]["points"] += home_points; s[a]["points"] += away_points
-        # Rules 2.1–2.4 decide a tied match on sets, then games. Sets-format
+        # rules 2.1–2.4 decide a tied match on sets, then games. Sets-format
         # result rows have one set per rubber, so the published rubber figure
         # is the set total in that format.
         hs, ass=_number(r.home_sets), _number(r.away_sets)
@@ -460,8 +460,8 @@ def reconstructed_standings(fixtures, rules, regular_rounds=14):
             s[h]["draws"] += 1; s[a]["draws"] += 1
     for row in s.values():
         if float(row["points"]).is_integer(): row["points"]=int(row["points"])
-    # Rule 14.4 uses games-for / games-against percentage, not the rubber
-    # difference. Complete forfeits deliberately have no percentage.
+    # rule 14.4 uses games-for / games-against percentage, not the rubber
+    # difference. complete forfeits deliberately have no percentage.
     def standing_key(x):
         total=x["gamesFor"]+x["gamesAgainst"]
         percentage=x["gamesFor"] / total if total else -1.0
@@ -654,10 +654,10 @@ def draw_fixtures(draw, fixtures, rules):
                 item.update({"homeRubbers":int(result.home_rubbers),"awayRubbers":int(result.away_rubbers),
                              "homeGames":int(result.home_games),"awayGames":int(result.away_games)})
         by_round[int(r["round"])].append(item)
-    # Some TROLS fixtures pages omit the bye row, leaving seven-team rounds
-    # with only three cards. Reconstruct it only when the full section draw
+    # some TROLS fixtures pages omit the bye row, leaving seven-team rounds
+    # with only three cards. reconstruct it only when the full section draw
     # contains an odd team count and a regular round has the expected number
-    # of real fixtures with exactly one team absent. An incomplete scrape will
+    # of real fixtures with exactly one team absent. an incomplete scrape will
     # therefore not be mistaken for a bye.
     def is_bye_name(value):
         return str(value).strip().casefold() == "bye"
@@ -782,7 +782,7 @@ def _short_set_win_probability(game_probability, *, green_ball=False):
     win = sum(math.comb(5 + lost, lost) * (p ** 6) * (q ** lost) for lost in range(5))
     five_all = math.comb(10, 5) * (p ** 5) * (q ** 5)
     if green_ball:
-        # BRTA Green Ball is first to six games with no tiebreak. At 5-5,
+        # BRTA Green Ball is first to six games with no tiebreak. at 5-5,
         # the next game ends the set 6-5.
         return win + five_all * p
     continuation = p * p + 2 * p * q * p
@@ -1237,12 +1237,12 @@ def team_order_evidence(singles, rating_map, player_teams):
                 emergency_appearances[team][player] += int(emergency)
                 listed.append((emergency, position, player))
             # TROLS labels emergency entries with X/E but may still retain a
-            # nominal roster number.  For an inferred selection order they
+            # nominal roster number.  for an inferred selection order they
             # belong below every listed regular, while their actual scorecard
             # row remains untouched elsewhere in the data.
             listed.sort(key=lambda item: (item[0], item[1], item[2].casefold()))
-            # Every later entry in this sorted official row is below the
-            # current one.  Recording only this direction matters: adding
+            # every later entry in this sorted official row is below the
+            # current one.  recording only this direction matters: adding
             # both directions would erase the precedence evidence entirely.
             for index, (_, _, player_a) in enumerate(listed):
                 for _, _, player_b in listed[index + 1:]:
@@ -1255,7 +1255,7 @@ def team_order_evidence(singles, rating_map, player_teams):
             roster.append({"player": player, "rating": rating_map.get(player, DISPLAY_CENTRE),
                            "appearances": len(positions), "averagePosition": round(float(np.mean(positions)), 2),
                            "emergencyOnly": emergency_only})
-        # An actual named substitute is still a real player and keeps their
+        # an actual named substitute is still a real player and keeps their
         # official result, but a player who has only appeared as an emergency
         # never becomes the default No. 1 in a future fixture prediction.
         roster.sort(key=lambda row: (row["emergencyOnly"], row["averagePosition"], -row["appearances"], row["player"].casefold()))

@@ -1,5 +1,5 @@
 'use strict';
-// Regression coverage for audit findings subsequent to 8.5.4.1.
+// regression coverage for audit findings subsequent to 8.5.4.1.
 const assert=require('node:assert/strict');
 const fs=require('node:fs'),path=require('node:path');
 const Model=require('../web/models/custom-section-model.js');

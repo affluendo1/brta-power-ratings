@@ -4,7 +4,7 @@
   const sorted=rows=>rows.sort((a,b)=>b.rating-a.rating||a.player.localeCompare(b.player));
   const NO_PLAYER='no-player';
   const playerLabel=id=>id===NO_PLAYER?'No Player':id;
-  // Attendance is independent of a planned lineup. Explicit matchday attendance wins;
+  // attendance is independent of a planned lineup. explicit matchday attendance wins;
   // older scorecards infer actual presence from played/forfeited rubber participants.
   function attendance(fixture,side){
     const explicit=fixture[side+'Attendees'];
@@ -16,7 +16,7 @@
   }
   const pair=names=>names.slice().sort((a,b)=>a.localeCompare(b)).join(' / ');
   function fail(message){throw Error(message)}
-  // One eligibility contract for editor, validation, and fitting.
+  // one eligibility contract for editor, validation, and fitting.
   function specialistCompatible(s){
     const fmt=s?.format,st=Number(s?.setTarget),dt=Number(s?.doublesTarget??s?.setTarget),
       sb=Number(s?.singlesBestOf??(fmt==='rubbers'?3:1)),db=Number(s?.doublesBestOf??1);
@@ -159,7 +159,7 @@
   }
   const V3B_WEIGHTS=Object.freeze({game:1,setWin:2,matchWin:4,matchTiebreak:2});
   const RM3_MATCH_TIEBREAK_WEIGHT=1;
-  // Composite evidence in game-equivalent units. A deciding tiebreak contributes
+  // composite evidence in game-equivalent units. A deciding tiebreak contributes
   // a fixed total weight split by points, so extended tiebreaks cannot dominate.
   function ratingEvidence(m,model='V3',parameters={}){
     if(!['V3','V3B','RM4.2','RM4a','RM4b','RM4.1 Ensemble','4melody.2','4foundation.2'].includes(model))fail('Choose V3 or V3B as the rating model.');
@@ -173,7 +173,7 @@
     return {home,away};
   }
   function fit(matches,individual=false,rubbers=false,ratingModel='V3',parameters={}){
-    // Rating 1.0: individual singles games, no intercept, sklearn L2 C=0.5.
+    // rating 1.0: individual singles games, no intercept, sklearn L2 C=0.5.
     // Sum-form negative log likelihood + ||beta||²/(2C); no date weights.
     const original=ratingModel==='V1';if(original){if(individual)return [];matches=matches.filter(m=>(!m.type||m.type==='Singles')&&m.home.length===1&&m.away.length===1)}
     if(!matches.length)return [];
@@ -190,7 +190,7 @@
     }
     const inv=invert(H),rowMeans=inv.map(mean),grand=mean(rowMeans),centre=mean(theta),stats=new Map(names.map(p=>[p,{matches:0,wins:0,gf:0,ga:0,partners:new Set(),team:''}]));
     matches.forEach(m=>{for(const side of ['home','away']){const entities=individual?m[side]:[pair(m[side])];entities.forEach(p=>{const s=stats.get(p),home=side==='home';s.matches++;s.wins+=Number(m.winner===side);s.gf+=home?m.hg:m.ag;s.ga+=home?m.ag:m.hg;s.team=home?m.homeTeam:m.awayTeam;if(individual)m[side].filter(x=>x!==p).forEach(x=>s.partners.add(x))})}});
-    // Orthonormalise the centred design rows. Missing centred directions
+    // orthonormalise the centred design rows. missing centred directions
     // measure the same extra-nullspace exposure used by the Python model.
     const basis=[];if(individual)for(const d of design){let v=d.slice();for(const b of basis){const dot=sum(v.map((x,i)=>x*b[i]));v=v.map((x,i)=>x-dot*b[i])}const len=Math.hypot(...v);if(len>1e-9)basis.push(v.map(x=>x/len))}
     return sorted(names.map((player,i)=>{const s=stats.get(player),rating=Math.round(1500+displayScale*(theta[i]-centre)),se=original?null:Math.round(displayScale*Math.sqrt(Math.max(0,inv[i][i]-2*rowMeans[i]+grand))),out={player,team:s.team,rating,se,lo:original?null:Math.round(rating-1.96*se),hi:original?null:Math.round(rating+1.96*se),matches:s.matches,wins:s.wins,losses:s.matches-s.wins,gf:s.gf,ga:s.ga};if(original)out.strength=theta[i]-centre;if(individual){const exposure=Math.sqrt(Math.max(0,1-1/n-sum(basis.map(b=>b[i]*b[i])))),count=s.partners.size,qualified=s.matches>=4&&(rubbers||(count>=2&&exposure<0.05));Object.assign(out,{partners:count,partner_count:count,qualified,network_rank:basis.length,identifiability_exposure:exposure,ranking_status:qualified?(rubbers?'Partner-dependent':'Established'):(exposure>=0.05||s.matches>=4&&count<2?'Partner-dependent':'Provisional')})}return out}));

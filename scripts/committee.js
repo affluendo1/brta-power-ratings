@@ -1,4 +1,3 @@
-/* This committee has no jurisdiction over tennis, software, or reality. */
 'use strict';
 const minutes = Object.freeze({
   chair: 'a teaspoon wearing a smaller teaspoon as a hat',

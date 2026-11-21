@@ -1,15 +1,14 @@
-/* A deliberately unserious, deterministic name model. No match results enter it. */
 (function(root){
  'use strict';
  const tiles={a:1,b:3,c:3,d:2,e:1,f:4,g:2,h:4,i:1,j:8,k:5,l:1,m:3,n:1,o:1,p:3,q:10,r:1,s:1,t:1,u:1,v:4,w:4,x:8,y:4,z:10};
- // Fixed spelling inventory, not a pronunciation or language detector.
- // Sources: Victorian phonics scope & sequence; DfE Letters and Sounds;
- // Unicode CLDR contractions. Four-letter English patterns also appear in
+ // fixed spelling inventory, not a pronunciation or language detector.
+ // sources: Victorian phonics scope & sequence; DfE Letters and Sounds;
+ // unicode CLDR contractions. Four-letter English patterns also appear in
  // the DfE 2011 phonics technical report (aigh, eigh, augh, ough).
  const digraphs=Object.freeze('ae ai ar au aw ay bh ch ci ck cs cz dd dh dj dz ea ee ei eo er eu ew ey ff gh gi gn gu gw gy ie ij ir kh kj kn ks ky lh lj ll ly mb mh ng nh nj ny oa oe oi oo or ou ow oy ph pn ps pt qu rh rr sc sh si sj sk ss sz th ti ts tt tx ty ue ui ur uu wh wr zh zs zz'.split(' '));
  const trigraphs=Object.freeze('air are chr dge dzs eau ear eer ere eur igh ill iou ngh oor ore our sch tch thr ure'.split(' '));
  const quadgraphs=Object.freeze('aigh augh dsch eaux eigh ough shch tsch'.split(' '));
- // An explicit game-rule list of familiar English sequences, not population
+ // an explicit game-rule list of familiar English sequences, not population
  // statistics about people's names. A common sequence can also be a digraph.
  const commonPairs=Object.freeze('th he in er an re on at en nd ti es or te ed is it al ar st to nt ng se ha as ou io le ve co me de hi ri ro ne ea ra li ch ll ma si om ur'.split(' '));
  const bandNames=Object.freeze(['Blessed','Alphabet Royalty','Letter Rich','Well Lettered','Ordinarily Named','Vowel Dependent','Letter Poor','Typographically Cursed']);
@@ -83,8 +82,8 @@
  result.combinations={common:members.flatMap(m=>m.combinations.common)};return result;
  }
  function pairScope(scope='section'){return ['section','all','history'].includes(scope)?scope:'section'}
- // Tables need counts, not a full points ledger for every archived partnership.
- // Score each distinct member once and build detailed analyses only on demand.
+ // tables need counts, not a full points ledger for every archived partnership.
+ // score each distinct member once and build detailed analyses only on demand.
  function createSummaryScorer(){const cache=new Map();const single=name=>{if(!cache.has(name)){const a=analyse(name),s={};for(const key of ['score','letters','tileValue','spaces'])s[key]=a[key];for(const key of ['digraphs','trigraphs','quadgraphs'])s[key]={length:a[key].length};cache.set(name,s)}return cache.get(name)};return(name,pair=false)=>{if(!pair)return single(name);const members=String(name).split(/\s*\/\s*/).map(single),s={};for(const key of ['score','letters','tileValue','spaces'])s[key]=members.reduce((n,m)=>n+m[key],0);for(const key of ['digraphs','trigraphs','quadgraphs'])s[key]={length:members.reduce((n,m)=>n+m[key].length,0)};return s}}
  function highest(rows){return rows.filter(r=>r.rating===rows[0]?.rating)}
  function rank(rows,analyser=analyse){let prior=null,place=0;return rows.map(row=>({...row,analysis:analyser(row.player)})).sort((a,b)=>b.analysis.score-a.analysis.score||a.player.localeCompare(b.player)).map((row,i)=>{if(row.analysis.score!==prior)place=i+1;prior=row.analysis.score;return {...row,rating:row.analysis.score,rank:place}})}

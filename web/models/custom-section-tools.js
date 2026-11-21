@@ -22,9 +22,9 @@
       const defaultPair=ids.length>=2*Number(section.doublesSlots)
         ?[ids[2*i%ids.length],ids[(2*i+1)%ids.length]]
         :[ids[2*i],ids[2*i+1]].filter(Boolean);
-      // An auto-filled No Player slot must not stop a newly selected squad member joining the pair.
+      // let the new player take an auto-filled "No Player" spot
       const pair=chosen?.[i]??(validPrevious&&!previous.includes(M.NO_PLAYER)?previous:defaultPair);
-      // No Player fills an unoccupied match slot; it is NEVER a checked player in the pairing editor.
+      // "No Player" fills the gap on the card. never tick it as a player
       return [...new Set(pair.filter(id=>id!==M.NO_PLAYER&&ids.includes(id)))].slice(0,2);
     });
   }
@@ -32,7 +32,7 @@
     return (f.rubbers||[]).some(m=>{
       if((m.sets||[]).some(s=>s.h!==''&&s.h!=null||s.a!==''&&s.a!=null))return true;
       if(m.status==='Retired')return true;
-      // Generated short-handed fixtures must stay editable as the squad fills up.
+      // generated short-handed fixtures must stay editable as the squad fills up.
       if(['Forfeit','No Contest'].includes(m.status)){
         const absent=(m.home||[]).includes(M.NO_PLAYER)||(m.away||[]).includes(M.NO_PLAYER);
         return !absent||f.autoStatus===false;
@@ -166,7 +166,7 @@
       }catch(e){throw Error('Line '+(lineNumber+1)+': '+e.message);}
     }
     if(!replace&&!rows.length)throw Error('Paste at least one player.');
-    // Retain stable IDs for names. Omitted players with scorecards or saved squads
+    // retain stable IDs for names. omitted players with scorecards or saved squads
     // remain historical identities, outside the active roster and future pickers.
     if(replace){for(const p of section.players)if(!usedIds.has(p.id)){if(refs.has(p.id)){rows.push({...p,archived:true});if(!p.archived)summary.archived.push(p.name);}else summary.removed.push(p.name);}next.players=rows;}
     else next.players=next.players.filter(p=>!usedIds.has(p.id)).concat(rows);

@@ -55,7 +55,7 @@ function approx(actual,expected,tolerance=1e-9){
   approx(result.awayWin,0);
 }
 {
-  // Sampling the same set model should converge to the projection, including
+  // sampling the same set model should converge to the projection, including
   // the 5-5 and tiebreak branches used for Sets team margins.
   let seed=4711;
   const rng=()=>((seed=(1664525*seed+1013904223)>>>0)/4294967296);
@@ -92,7 +92,7 @@ function approx(actual,expected,tolerance=1e-9){
   assert.match(tie.score,/^\d+-\d+ \d+-\d+(?: \[\d+-\d+\])?$/);
 }
 console.log('prediction engine tests passed');
-// Custom sections use their configured set lengths, match lengths and team scoring.
+// custom sections use their configured set lengths, match lengths and team scoring.
 for(const targetGames of [4,6,8])for(const bestOf of [1,3]){
   const rows=P.matchDistribution(.63,{targetGames,bestOf});approx(rows.reduce((n,r)=>n+r.probability,0),1,1e-10);approx(P.matchDistribution(.5,{targetGames,bestOf}).filter(r=>r.homeWin).reduce((n,r)=>n+r.probability,0),.5,1e-10);const mirror=P.matchDistribution(.37,{targetGames,bestOf});approx(rows.filter(r=>r.homeWin).reduce((n,r)=>n+r.probability,0)+mirror.filter(r=>r.homeWin).reduce((n,r)=>n+r.probability,0),1,1e-10);
   const won=P.sampleRubber({label:'Configured',gameProbability:1,bestOf,targetGames},{rng:()=>0});assert.equal(won.homeSets,bestOf===3?2:1);assert.equal(won.awaySets,0);assert.equal(won.homeGames,targetGames*(bestOf===3?2:1));assert.equal(won.awayGames,0);

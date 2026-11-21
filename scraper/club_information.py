@@ -23,7 +23,7 @@ def club_name(team: str) -> str:
     name = re.sub(r"\s+\([A-Z]{2,6}\)$", "", name)
     name = re.sub(r"\s+\d+\.\d{2}$", "", name)
     words = name.split()
-    # Black Rock is a place, not a Black-coloured Rock team.
+    # black rock is the club name. leave the colour in this one
     protected = 2 if name.casefold().startswith("black rock") else 0
     while len(words) > max(1, protected) and (words[-1].casefold().strip("()[]") in COLOURS or words[-1].isdigit()):
         words.pop()
@@ -36,7 +36,7 @@ def club_key(name: str) -> str:
 
 
 def phone_numbers(text: str) -> list[str]:
-    # Local eight-digit clubhouse numbers are published without an area code.
+    # local eight-digit clubhouse numbers are published without an area code.
     patterns = PHONE.findall(text)
     patterns += re.findall(r"(?i)(?:ph(?:one)?|tel)\s*:?\s*(\d{4}[ -]?\d{4})(?!\d)", text)
     return list(dict.fromkeys(clean(p) for p in patterns))
@@ -63,7 +63,7 @@ def parse_club_information(html: str) -> list[dict]:
                        "venue_lines": [], "clubhouse_phones": [], "contacts": [], "playing_at": (playing.group(1).strip() if playing else None)}
             if len(cells) > 2:
                 current["melway"] = texts[2] or None
-                # Parse only numeric map arguments; never execute the source script.
+                # parse only numeric map arguments; never execute the source script.
                 link = cells[2].find("a")
                 coordinates = re.search(r"pop_map\(.*?,\s*(-?\d+(?:\.\d+)?)\s*,\s*(-?\d+(?:\.\d+)?)\s*\)", link.get("onclick", "") if link else "")
                 if coordinates:

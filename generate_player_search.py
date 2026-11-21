@@ -27,7 +27,7 @@ def section_players(payload: dict) -> dict[str, set[str]]:
     for row in payload.get('doubles', []):
         for name in str(row.get('player', '')).split(' / '):
             add(name, row.get('team'))
-    # Include players with only incomplete/retired/forfeited records, too.
+    # keep these names searchable even if they have no rated match
     for group in payload.get('results', []):
         for fixture in group.get('fixtures', []):
             for rubber in fixture.get('rubbers', []):

@@ -1,4 +1,4 @@
-/* Dormant interactive maps. No iframe or network request exists until mount(). */
+/* dormant interactive maps. no iframe or network request exists until mount(). */
 (function(root){
  'use strict';
  function mapURL({latitude,longitude,span=.02}){

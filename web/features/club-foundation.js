@@ -1,4 +1,3 @@
-/* BRTA pilot behind an explicit flag; ordinary Club Zone remains under maintenance. */
 (function(root){'use strict';let promise,current=null,mapHandle=null,abort=null,serial=0,detailRequest=0,observer=null;
 const enabled=()=>new URLSearchParams(location.search).get('club-pilot')==='1'||localStorage.getItem('brta-club-pilot')==='1';
 function data(){if(!promise)promise=fetch('data/current/club-foundation.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('Club directory is unavailable.');return r.json()}).catch(e=>{promise=null;throw e});return promise}

@@ -1,4 +1,4 @@
-/* Source formats are explicit. Junior by-laws are never applied to adult draws. */
+/* source formats are explicit. junior by-laws are never applied to adult draws. */
 (function(){'use strict';
 function formats823(){
  const only=BRTAScores.doublesOnly(D),local=ratingScope==='section';$('#page-ratings').dataset.ratingScope=ratingScope;

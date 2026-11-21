@@ -1,4 +1,3 @@
-/* A bounded Leaflet map with OpenFreeMap vector tiles rendered on canvas. */
 (function (root) {
   'use strict';
   const bounds = [[-38.7, 144.3], [-37.1, 146.3]];

@@ -1,4 +1,3 @@
-/* 8.5.3: portable section exports and edit-ready Section Creator backups. */
 (function(root,factory){
 'use strict';
 const api=factory(root.CustomSectionModel||(typeof require==='function'?require('./custom-section-model.js'):null));
@@ -34,7 +33,7 @@ function rows(data,technical=false){
   output.push(technical?[...base,'',identity]:base);
   for(const m of f.rubbers||[]){
    const line=['Rubber',data.meta?.competition_label,data.meta?.section_label,f.date??round.date,f.round??round.round,m.status||f.status,f.home,f.away,f.homePoints,f.awayPoints,f.homeRubbers,f.awayRubbers,f.homeGames,f.awayGames,m.type,m.position,m.home,m.away,m.winner,m.score];
-   // TROLS generally supplies fixture IDs, not distinct per-rubber IDs. Do not fabricate them.
+   // TROLS generally supplies fixture IDs, not distinct per-rubber IDs. do not fabricate them.
    output.push(technical?[...line,clean(m.matchId||m.match_id),identity]:line);
   }
  }
@@ -91,11 +90,11 @@ function toBackup(source,now=new Date().toISOString()){
   else if(fromResults||!item._results){Object.assign(item,clone(f));item._results=!!fromResults;}
   teamId(f.home);teamId(f.away);
  };
- // This archive includes a different section's regular-season schedule.
+ // this archive includes a different section's regular-season schedule.
  const archiveScheduleMismatch=source.meta.is_archive&&source.meta.section_code==='AA32-AA002';
  if(!archiveScheduleMismatch)for(const r of source.upcomingFixtures||[])for(const f of r.fixtures||[])add(r,f,false);
  for(const r of source.results||[])for(const f of r.fixtures||[])add(r,f,true);
- // Preserve registered order when published; infer only where the official record is silent.
+ // preserve registered order when published; infer only where the official record is silent.
  for(const [team,entry] of Object.entries(evidence)){
   const tid=teamId(team);
   for(const [index,p] of (entry.players||[]).entries()){
@@ -117,7 +116,7 @@ function toBackup(source,now=new Date().toISOString()){
    roster.push(p);named.set(key,p);}
   return p.id;
  };
- // Derive a format contract before writing match scorecards.
+ // derive a format contract before writing match scorecards.
  const rubbers=[...schedule.values()].flatMap(r=>[...r.fixtures.values()]).flatMap(f=>f.rubbers||[]);
  const maxType=kind=>Math.max(0,...rubbers.filter(m=>m.type===kind).map(m=>pos(m.position)));
  const slotsS=source.meta.customRules?.singlesSlots??(maxType('Singles')||(fmt==='sets'?4:2));
@@ -146,7 +145,7 @@ function toBackup(source,now=new Date().toISOString()){
   const missingHome=home.includes(Model.NO_PLAYER),missingAway=away.includes(Model.NO_PLAYER);
   if(missingHome||missingAway)stage=missingHome&&missingAway?'No Contest':'Forfeit';
   if(!hs.length&&stage==='Completed')stage='Scheduled';
-  // Nonstandard incomplete scores are retained without claiming a completed match.
+  // nonstandard incomplete scores are retained without claiming a completed match.
   if(stage==='Completed'){
    const best=type==='Doubles'?doublesBestOf:singlesBestOf;
    const hw=hs.filter(x=>x.h>x.a).length,aw=hs.filter(x=>x.a>x.h).length;
@@ -189,7 +188,7 @@ function toBackup(source,now=new Date().toISOString()){
   }
   section.rounds.push(round);
  }
- // Fill team registrations inferred from results after all source fixtures have been visited.
+ // fill team registrations inferred from results after all source fixtures have been visited.
  if(roster.length>256||teams.length>64||section.rounds.length>200)throw Error('This section exceeds the local editor limits.');
  Model.validate(section);
  return {format:'brta-custom-sections',version:1,sections:[section]};

@@ -10,13 +10,13 @@ function recalculate(data,model,bundle){const base=model==='RM4.2'?'RM4.2':model
  for(const item of data.ratingHistory?.rounds||[]){const n=+item.round,d=data.doublesRatingHistory?.tables?.[n],r=tables(matches.filter(m=>m.round<=n),data.ratingHistory.tables?.[n],d?.doublesPlayers,d?.pairs);copy.ratingHistory.tables[n]=r.singles;copy.doublesRatingHistory.tables[n]={doublesPlayers:r.doublesPlayers,pairs:r.pairs};for(const p of r.singles)(copy.ratingHistory.players[p.player]??=[]).push([n,p.rating,p.se,p.matches,p.team])}
  const latest=tables(matches,data.singles,data.doublesIndividuals,data.doubles);copy.singles=latest.singles;copy.doublesIndividuals=latest.doublesPlayers;copy.doubles=latest.pairs;
  const ms=dated(matches),fits={[base]:calculate(matches).fit};if(model==='RM4.1 Ensemble'){for(const name of ['RM3','RM3b','RM4a'])fits[name]=M.fit(ms,name,{covariance:false});
- // Freeze each pre-match day/round; no scorecard ordering or same-day leakage.
+ // freeze each pre-match day/round; no scorecard ordering or same-day leakage.
  for(const target of matches){if(!target.date)continue;const past=matches.filter(r=>r.date&&r.date<target.date&&r.round<target.round);if(new Set(past.map(r=>r.round)).size<3)continue;const f=calculate(past).fit;target.preProbability=M.sigmoid(bundle.baseAlpha*M.logit(M.win(M.gap(f,target),{target:target.target,green:target.green,bestOf:target.bestOf,matchTiebreak:target.matchTiebreak})))}}
  copy.rm4={model,base,fits,matches:matches.filter(m=>m.date),elo:M.elo(ms)};copy.meta={...copy.meta,modelChoice:model,ratingModel:base,predictionModel:model,ratingCentre:1500,ratingScale:450,ratingProbabilityScale:450,scoreSchema:2,needsScoreRefit:false};copy.note='Experimental '+model+'. Ratings are local to this section; RM4.1 uses RM4b ratings and a frozen prediction ensemble.';
  const sm=new Map(copy.singles.map(r=>[r.player,r]));copy.teams=(copy.teams||[]).map(t=>{const players=copy.singles.filter(r=>r.team===t.team);return{...t,avg:players.length?avg(players.map(r=>r.rating)):1500,best4:players.length?avg(players.slice(0,4).map(r=>r.rating)):1500}});
  copy.strengthOfSchedule=(copy.singles||[]).map(r=>{const opponents=matches.filter(m=>m.type==='Singles'&&(m.home.includes(r.player)||m.away.includes(r.player))).map(m=>sm.get(m.home.includes(r.player)?m.away[0]:m.home[0])?.rating).filter(Number.isFinite);return{player:r.player,team:r.team,matches:opponents.length,averageOpponent:Math.round(avg(opponents))}}).sort((a,b)=>b.averageOpponent-a.averageOpponent).map((r,i,a)=>({...r,rank:i+1,total:a.length}));for(const r of copy.singles){const s=copy.strengthOfSchedule.find(x=>x.player===r.player);Object.assign(r,{averageOpponent:s?.averageOpponent,scheduleRank:s?.rank,scheduleTotal:s?.total})}
  for(const team of Object.values(copy.teamOrderEvidence||{}))for(const p of team.players||[])if(sm.has(p.player))p.rating=sm.get(p.player).rating;
- // These source-generated diagnostics belong to RM3; omit stale claims under RM4.
+ // these source-generated diagnostics belong to RM3; omit stale claims under RM4.
  copy.resultsExpectation={players:[],matches:[],note:'RM3-only diagnostic; use the selected model in Prediction Centre.'};copy.playerInsights={};copy.matchupMatrix=null;copy.leader=null;if(copy.roundOverview){for(const key of ['topPerformance','biggestUpset','dominantWin','closestMatch'])copy.roundOverview[key]=null;const rounds=(copy.ratingHistory.rounds||[]).map(x=>+x.round).sort((a,b)=>a-b),now=rounds.at(-1),before=rounds.at(-2),prior=new Map((copy.ratingHistory.tables[before]||[]).map(r=>[r.player,r.rating])),moves=(copy.ratingHistory.tables[now]||[]).filter(r=>prior.has(r.player)).map(r=>({player:r.player,change:r.rating-prior.get(r.player)})).sort((a,b)=>b.change-a.change);if(copy.roundOverview.summary){copy.roundOverview.summary.topMover=moves[0]||null;copy.roundOverview.summary.biggestDrop=moves.at(-1)||null}}
  return copy;
 }
@@ -26,8 +26,8 @@ function automatic(data,bundle,baselineEngine){
 }
 function ascension(data,bundle){
  const copy=recalculate(data,'RM4.1 Ensemble',bundle);
- // Transform each player's current and historical skill with the same deterministic joke signal.
- // Work in display units so the lower limit remains 500 after display conversion.
+ // transform each player's current and historical skill with the same deterministic joke signal.
+ // work in display units so the lower limit remains 500 after display conversion.
  const { centre, probabilityScale } = policy('RM1000 Ascension');
  const score=(name,rating)=>{
    const skill=M.ascensionSkill(name,(rating-1500)/450);

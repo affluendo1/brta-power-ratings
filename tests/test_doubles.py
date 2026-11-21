@@ -13,7 +13,7 @@ class DoublesIdentifiabilityTests(unittest.TestCase):
         self.assertTrue(np.allclose(exposure, 0.0))
 
     def test_extra_null_direction_is_reported(self):
-        # Two isolated pair comparisons have two more unresolved directions
+        # two isolated pair comparisons have two more unresolved directions
         # beyond the ordinary common shift.
         design = np.array([[1.0, -1.0, 0.0, 0.0], [0.0, 0.0, 1.0, -1.0]])
         rank, exposure = doubles_identifiability(design)

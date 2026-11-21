@@ -8,7 +8,7 @@ assert.equal(M.racquets.filter(r=>r.parent).length,9);
 assert.equal(M.racquets.filter(r=>r.parent && !M.racquet(r.parent)).length,0);
 assert(odds.every(p=>Number.isFinite(p)&&p>0));
 
-// Use a common denominator to check the underlying fractions exactly.
+// use a common denominator to check the underlying fractions exactly.
 const denominators = M.racquets.slice(1).map(r=>BigInt(r.denominator));
 const whole = denominators.reduce((a,b)=>a*b,1n);
 const tails = denominators.map(x=>whole/x);

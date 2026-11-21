@@ -31,7 +31,7 @@
 
   function path(meta, page, { view, fixture, club, panel, fixtureId = false } = {}) {
     if (!meta || meta.is_custom || !competitions[meta.competition_code] || !pages[page]) return '';
-    // Current-season payloads still carry a season label for display. Only an
+    // Current-season payloads still carry a season label for display. only an
     // archive payload belongs under /history/; otherwise returning home can
     // leave the section trapped behind an archive-looking URL.
     const season = meta.is_archive ? slug(meta.season_label) : '';

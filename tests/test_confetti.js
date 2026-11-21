@@ -30,7 +30,7 @@ const vm=require('node:vm');
   assert.equal(pending.length,1);assert.equal(pending[0].style.width,'3px');assert.equal(pending[0].style.height,'5px');
   assert.equal(pending[0].dataset.confettiFinal,'');await Promise.resolve();assert.equal(completed,false);
   pending[0].finish();await late;assert.equal(completed,true);assert.equal(pending[0].removed,true);
-  // Cancelling a scene must also release its animation wait.
+  // cancelling a scene must also release its animation wait.
   pending=[];const cancelled=C.burst(parent,{count:1});frames.shift()();pending[0].cancel(new Error('scene removed'));await cancelled;
   console.log('Shared confetti: identical pieces, slowed duration, complete-burst wait, tiny final piece and cancellation passed.');
 })().catch(error=>{console.error(error);process.exitCode=1});

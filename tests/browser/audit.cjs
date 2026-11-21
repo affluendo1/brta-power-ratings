@@ -130,7 +130,7 @@ esc();await tick();
 assert(!w.document.querySelector('#export853ImportPrompt'),'Escape dismisses the import prompt');
 assert(!w.document.querySelector('#export853Overlay').classList.contains('hidden'),'Export chooser remains open after dismissing prompt');
 console.log('Existing-local import race and export prompt Escape/focus regressions passed');
-// Repeated special-status edits retain the expanded match and update the fixture.
+// repeated special-status edits retain the expanded match and update the fixture.
 esc();await tick();
 w.CustomSections.openSection('local-test');await tick();
 click('[data-ca-action="tab"][data-value="rounds"]');
@@ -145,7 +145,7 @@ assert(w.document.querySelector('.ca-match-details').open,'Choosing a winner kee
 assert.equal(w.document.querySelector('[data-ca="fixture-status"]').value,'Completed');
 change('[data-ca="match-status"][data-index="0"]','Scheduled');
 assert(w.document.querySelector('.ca-match-details').open);
-// Blank scores make Scheduled genuinely unfinished under auto-completion.
+// blank scores make Scheduled genuinely unfinished under auto-completion.
 const score=w.document.querySelector('[data-ca="score-h"][data-index="0"]');score.value='';score.dispatchEvent(new w.Event('input',{bubbles:true}));
 assert.equal(w.document.querySelector('[data-ca="fixture-status"]').value,'Scheduled');
 change('[data-ca="score-h"][data-index="0"]','6');
@@ -155,13 +155,13 @@ assert(w.document.querySelector('.ca-match-details').open,'Saving retains expand
 click('#caBody [data-ca-action="view"]');
 await vm.runInContext("loadSection('local-test')",ctx);
 assert.equal(vm.runInContext('D.meta.modelChoice',ctx),'RM4.1 Ensemble');
-// Complete exports must follow the custom section's model, even when the global model differs.
+// complete exports must follow the custom section's model, even when the global model differs.
 const blobs=[];w.Blob=Blob;w.URL.createObjectURL=blob=>{blobs.push(blob);return 'blob:ui-audit'};
 click('#exportSectionBtn');await tick();click('[data-export-853="complete"]');
 for(let i=0;i<120&&w.document.querySelector('[data-export-853="complete"]').disabled;i++)await tick();
 assert(w.document.querySelector('#export853Status').textContent.includes('Export ready'),w.document.querySelector('#export853Status').textContent);
 const report=await blobs.at(-1).text();const reportDoc=new w.DOMParser().parseFromString(report,'text/html');const reportData=JSON.parse([...reportDoc.querySelectorAll('pre')].at(-1).textContent);assert.equal(reportData.meta.modelChoice,'RM4.1 Ensemble','Complete report retains the selected ensemble, not only its base ratings');
-// Every chooser route works from the nested label, including the Extras-only option.
+// every chooser route works from the nested label, including the Extras-only option.
 esc();await tick();w.localStorage.setItem('brta-module-enabled-v1','1');
 click('#exportSectionBtn');await tick();
 assert.equal(w.document.querySelectorAll('[data-export-853]').length,6);
@@ -181,7 +181,7 @@ click('#customAdminOverlay [data-ca-action="close"]');await tick();
 click('#customCompetitionsBtn');await tick();
 assert(!w.document.querySelector('#customAdminOverlay').classList.contains('hidden'),'Header shortcut opens the creator');
 console.log('Repeated special-status edits, auto-status, save/return position, custom-model export and header entry passed');
-// Exercise the ordinary creator flow through its actual controls.
+// exercise the ordinary creator flow through its actual controls.
 click('[data-ca-action="new"]');
 const enter=(selector,value)=>{const el=w.document.querySelector(selector);assert(el,selector);el.value=value;el.dispatchEvent(new w.Event('input',{bubbles:true}));el.dispatchEvent(new w.Event('change',{bubbles:true}));};
 enter('[data-ca="name"]','Convenience regression');

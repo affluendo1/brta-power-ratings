@@ -112,7 +112,7 @@
     if (event.target.closest('[data-changelog-open]')) open();
   });
 
-  // Handle this dialog before the site's Escape shortcut, keeping Settings open underneath.
+  // escape should close this bit while settings stays open
   document.addEventListener('keydown', event => {
     if (!overlay || overlay.classList.contains('hidden')) return;
     if (event.key === 'Escape') {
@@ -137,7 +137,7 @@
     }
   }, true);
 
-  // Only returning visitors with a previously observed release get an automatic tour.
+  // nothing to compare on the first visit, so leave the changelog shut
   const seenKey = 'brta-last-seen-release';
   let previousVersion;
   try { previousVersion = localStorage.getItem(seenKey); } catch {}
@@ -153,7 +153,7 @@
       return;
     }
     const previousIndex = releases.findIndex(release => release.version === previousVersion);
-    // An old cached page must not announce a downgrade.
+    // an old cached page must not announce a downgrade.
     if (previousIndex < 1) { offered = true; return; }
     if (document.visibilityState === 'hidden' || document.querySelector('.overlay:not(.hidden)')) {
       setTimeout(offerUpdate, 1000);

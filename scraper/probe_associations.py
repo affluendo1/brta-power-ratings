@@ -45,7 +45,7 @@ def main():
             html = client.read('match_popup.php', params={'matchid': args.match, 'seasonid': args.season})
             report['scorecard_layout'] = scorecard_layout(html)
         report['observed_at_utc'] = datetime.now(timezone.utc).isoformat()
-        # Fixed separate destination; never data/current, data/site or data/archive.
+        # fixed separate destination; never data/current, data/site or data/archive.
         out = Path('debug/trols-associations') / args.association / 'inventory.json'
         out.parent.mkdir(parents=True, exist_ok=True)
         out.write_text(json.dumps(report, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')

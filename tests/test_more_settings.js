@@ -9,7 +9,7 @@ assert.equal(M.translate('Settings'),M.translate('Settings'));
 assert.notEqual(M.translate('Settings'),'Settings');
 assert.notEqual(M.translate('Jayden Bone',true),'Jayden Bone');
 assert.equal(M.translate('Jayden Bone',true),M.name('Jayden Bone'));
-// Names must change their spelling, rather than keeping the same letters with accents.
+// names must change their spelling, rather than keeping the same letters with accents.
 const formerGlyphs=[...'ąƀçđęƒģħįĵķłɱņøþզŗşŧųṽŵẋŷž'];
 for(let i=0;i<26;i++)assert.notEqual(M.name(M.alphabet[i]),formerGlyphs[i]);
 assert.notEqual(M.name(M.alphabet),[...M.alphabet].map(letter=>M.name(letter)).join(''));
@@ -29,7 +29,7 @@ assert(M.rates(.01).animation>.9&&M.rates(2.01).animation<1.1);
 const original=[0,1,2,3,4];
 for(let i=0;i<100;i++){const permutation=M.shuffled(original);assert.deepEqual(permutation.slice().sort(),original);}
 assert.deepEqual(original,[0,1,2,3,4]);
-// Every return takes the requested duration, progresses forward, and has a new cadence.
+// every return takes the requested duration, progresses forward, and has a new cadence.
 const plans=new Set();
 for(const duration of [40000,50000,60000])for(let sample=0;sample<30;sample++){
   const plan=M.progressPlan(duration);plans.add(JSON.stringify(plan));
@@ -38,7 +38,7 @@ for(const duration of [40000,50000,60000])for(let sample=0;sample<30;sample++){
   for(let i=1;i<plan.length;i++){assert(plan[i].at>plan[i-1].at);assert(plan[i].value>=plan[i-1].value);if(i<plan.length-1)assert(plan[i].value<100);}
 }
 assert.equal(plans.size,90);
-// Fifteen visual cups, but exactly one of each three equal random intervals wins.
+// fifteen visual cups, but exactly one of each three equal random intervals wins.
 assert.equal(M.cupWin(()=>0),true);assert.equal(M.cupWin(()=>1/5-Number.EPSILON),true);
 assert.equal(M.cupWin(()=>.2),false);assert.equal(M.cupWin(()=>.999999),false);
 assert.equal(Array.from({length:1500},(_,i)=>M.cupWin(()=>(i+.5)/1500)).filter(Boolean).length,300);

@@ -1,4 +1,3 @@
-/* Serve each historical website from immutable GitHub blobs, under its own URL subtree. */
 importScripts('releases.js?v=9111');
 
 const { snapshots } = BRTAPastSoftware;
@@ -66,7 +65,7 @@ async function tikituffFetch(request, alias, path) {
       return new Response(html, { headers: { 'Content-Type': 'text/html; charset=utf-8' } });
     }
 
-    // Archived installs would compete with the current site's service-worker caches.
+    // archived installs would compete with the current site's service-worker caches.
     if (file === 'pwa.js' || file === 'web/core/pwa.js') {
       const js = (await response.text()).replace(/if\("serviceWorker" in navigator\)\{[\s\S]*?\n  \}/, '');
       return new Response(js, { headers: { 'Content-Type': types.js } });

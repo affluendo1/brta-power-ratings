@@ -83,7 +83,7 @@ class CollectionTests(unittest.TestCase):
     def test_missing_names_and_emergencies_are_not_invented_or_reordered(self):
         html=(FIXTURES/'wdta-triples.html').read_text().replace('Home Player 3','').replace('<td>\xa0</td><td>1. Home Player 1','<td>X</td><td>1. Home Player 1')
         data=parse_scorecard(html)
-        # Original code sequence 2+3 is preserved, including the source gap.
+        # original code sequence 2+3 is preserved, including the source gap.
         self.assertEqual(data['matches'][0]['home_codes'],['2','3'])
         self.assertEqual(data['matches'][0]['home_players'][1]['name'],'')
         self.assertEqual(data['home_roster'][0]['name'],'Home Player 1')

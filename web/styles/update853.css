@@ -1,4 +1,3 @@
-/* 8.5.3 · export chooser, clearer custom-section setup and sticky rounds */
 .export853-overlay{z-index:130}
 .export853-sheet{width:min(690px,calc(100vw - 30px));max-height:min(88vh,850px);overflow:auto;padding:27px 30px 24px;position:relative}
 .export853-sheet .close-btn,.schedule853-sheet .close-btn{position:absolute;right:16px;top:16px;z-index:3}
@@ -51,7 +50,7 @@
 }
 @media(prefers-reduced-motion:reduce){.export853-choices button,#statusStrip .status-history-853{transition:none}}
 
-/* 8.5.4.1: one real, border-collapsed scorecard table. Colour belongs to the cells,
+/* 8.5.4.1: one real, border-collapsed scorecard table. colour belongs to the cells,
    not to inset cards; the current theme always controls player-name ink. */
 table.rubber-list.rubber-table-8541{
  display:table;width:min(100%,820px);table-layout:fixed;border-collapse:collapse;
@@ -163,7 +162,7 @@ table.rubber-list.rubber-table-8541{
  #customCompetitionsBtn{flex-basis:100%;white-space:normal}
 }
 
-/* Result emphasis: keep team outcomes legible in every colour scheme. */
+/* result emphasis: keep team outcomes legible in every colour scheme. */
 .rubber-table-8541 td.rubber-side.side-won{background:color-mix(in srgb,var(--good-color,#25814e) 17%,var(--surface-raised));box-shadow:inset 0 0 0 1px var(--good-color,#25814e);font-weight:800}
 .rubber-table-8541 td.rubber-side.side-lost{background:color-mix(in srgb,var(--bad-color,#b73d4c) 13%,var(--surface-raised));box-shadow:inset 0 0 0 1px var(--bad-color,#b73d4c);font-style:italic}
 .rubber-table-8541 td.rubber-side.side-won .person{font-weight:800!important}
@@ -181,7 +180,7 @@ table.rubber-list.rubber-table-8541{
 .result-metrics b>.win{color:var(--good-color,#25814e)!important}
 .result-metrics b>.loss{color:var(--bad-color,#b73d4c)!important}
 
-/* Keep the match table and its totals together, with a balanced score footer. */
+/* keep the match table and its totals together, with a balanced score footer. */
 .result-detail-head{padding-bottom:16px;margin-bottom:18px;border-bottom:0}
 .result-scorecard{width:min(100%,820px);margin:0 auto 22px;min-width:0}
 .result-scorecard .rubber-table-8541{width:100%;margin:0;table-layout:fixed}
@@ -201,7 +200,7 @@ table.rubber-list.rubber-table-8541{
  .result-scorecard .result-metrics>div>span{font-size:9px;letter-spacing:.08em}
 }
 
-/* Creator: one scroll surface on phones, with a native round jump control. */
+/* creator: one scroll surface on phones, with a native round jump control. */
 .ca-mobile-rounds{display:none}
 .ca-sheet,.ca-sheet *{box-sizing:border-box}
 #caBody{overflow-x:hidden}

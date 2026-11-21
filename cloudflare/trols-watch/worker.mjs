@@ -20,7 +20,7 @@ export function targets(sections, now) {
 }
 
 export async function fingerprint(html) {
-  // This table follows the season/section form. The form and the page chrome
+  // this table follows the season/section form. the form and the page chrome
   // can change without any fixture having changed.
   const table = html.match(/<\/form>\s*(?:<(?:br|hr)\b[^>]*>\s*)*<table\b[^>]*>([\s\S]*?)<\/table>/i)?.[1];
   if (!table || !/<th\b[^>]*>\s*Home Team/i.test(table)) throw new Error("TROLS result table missing");
@@ -61,7 +61,7 @@ export async function check(env, now, request = fetch) {
     if (run.conclusion === "success") Object.assign(digests, state.pending.digests);
     else console.warn("Targeted sync did not succeed", state.pending.runId, run.conclusion);
     await env.WATCH_STATE.put("state", JSON.stringify({ digests }));
-    // Avoid a second write to the same KV key in the same tick.
+    // avoid a second write to the same KV key in the same tick.
     return { finished: state.pending.runId, conclusion: run.conclusion };
   }
 

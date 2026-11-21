@@ -1,5 +1,5 @@
 function modelDisplayName(name){return ({'4melody.2':'4.2 Melody','4foundation.2':'4.2 Foundation','4choir.2':'4.2 Choir','4harmony.2':'4.2 Harmony','4brass.2':'4.2 Brass','4woodwind.2':'4.2 Woodwind','4strings.2':'4.2 Strings','4percussion.2':'4.2 Percussion'})[name]||name}
-/* Layout Overhaul — shared navigation, display preferences and section reports. */
+/* layout Overhaul — shared navigation, display preferences and section reports. */
 let layoutOverlayFocus=null;
 const layoutCache=new WeakMap(),layoutSources=new WeakMap();
 function layoutDefaultCode(){const c=localStorage.getItem('brta-default-competition'),s=localStorage.getItem('brta-default-section');return currentCatalog().find(x=>x.competition_code===c&&(!s||x.section_code===s))?.section_code||''}
@@ -70,7 +70,7 @@ $('#provToggle').checked=showProv;$('#provToggle').onchange=e=>{showProv=e.targe
 document.addEventListener('click',e=>{const o=e.target.closest('[data-layout-open]');if(o)openLayoutOverlay(o.dataset.layoutOpen);if(e.target.closest('[data-layout-close]'))closeLayoutOverlay();if(e.target.closest('[data-layout-settings]'))openSettings()});
 document.addEventListener('keydown',e=>{const o=$('#layoutOverlay');if(!o||o.classList.contains('hidden'))return;if(e.key==='Escape'){e.preventDefault();e.stopImmediatePropagation();closeLayoutOverlay()}if(e.key==='Tab'){const items=[...o.querySelectorAll('button,select,summary,a[href]')].filter(x=>!x.disabled&&x.getClientRects().length),first=items[0],last=items.at(-1);if(e.shiftKey&&(document.activeElement===first||!o.contains(document.activeElement))){e.preventDefault();last.focus()}else if(!e.shiftKey&&(document.activeElement===last||!o.contains(document.activeElement))){e.preventDefault();first.focus()}}},true);
 
-// Search indexes retain names and records; fit only sections matching the user's query.
+// search indexes retain names and records; fit only sections matching the user's query.
 const layoutSearchCache=new Map(),layoutSearchJobs=[];
 let layoutSearchBusy=0,layoutSearchActivity='';
 window.addEventListener('brta-custom-sections-change',()=>layoutSearchCache.clear());
@@ -109,7 +109,7 @@ function layoutSearchFit(key,code,model){
 }
 
 function layoutSearchRatings(rows){
- // Static RM3 index: use the current fixed RM3 display units.
+ // static RM3 index: use the current fixed RM3 display units.
  const indexFactor=BRTARM4Engine.policy('RM3').probabilityScale/450;
  const ratings=['singlesRating','doublesRating','overallRating'];
  rows=rows.map(row=>({...row,...Object.fromEntries(ratings.filter(key=>Number.isFinite(row[key])).map(key=>[key,Math.round(1500+indexFactor*(row[key]-1500))])),...Object.fromEntries(['singlesSe','doublesSe','overallSe'].filter(key=>Number.isFinite(row[key])).map(key=>[key,Math.round(indexFactor*row[key])]))}));

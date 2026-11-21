@@ -1,4 +1,3 @@
-/* Standings snapshots and hypothetical results; source data stays immutable. */
 (function(root){'use strict';
  const percentage=r=>r.gamesAgainst?100*r.gamesFor/r.gamesAgainst:r.gamesFor?Infinity:0;
  function order(rows){return rows.sort((a,b)=>(b.points??-Infinity)-(a.points??-Infinity)||percentage(b)-percentage(a)||a.team.localeCompare(b.team)).map((r,i,all)=>({...r,position:i+1,ambiguousPosition:all.some((x,j)=>j!==i&&x.points===r.points&&percentage(x)===percentage(r))}))}
@@ -24,7 +23,7 @@
   const results=data.results||[],draw=data.upcomingFixtures||[],all=[...draw,...results];
   const regularFixtures=groups=>groups.flatMap(g=>(g.fixtures||[]).map(f=>withGroup(g,f)).filter(f=>counts(data,f)));
   const regularResults=regularFixtures(results);
-  // Old TROLS draw links can point at the current season for the same section code.
+  // old TROLS draw links can point at the current season for the same section code.
   const regular=data.meta?.is_archive&&regularResults.length?regularResults:regularFixtures(all);
   const played=new Set(regularResults.filter(f=>!pending(f)).map(fixtureKey));
   const missing=regular.filter(f=>!bye(f)&&pending(f)&&!played.has(fixtureKey(f)));

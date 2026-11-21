@@ -1,4 +1,3 @@
-/* A simulated round uses the real scorecard and standings renderers. */
 (function(){'use strict';let state=null;
  let setup;
  const fixturesFor = round => (D.upcomingFixtures || []).find(row => String(row.round) === String(round));

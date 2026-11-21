@@ -63,7 +63,7 @@ function performanceBands(data,view,list,round=null){
   if(gamesPlayed>0&&(scorelineRoute||(ordinary==='b7'&&entry.rating<=basementPower&&gameShare<=basementGameShare)))qualifications.set(id,{band:'b19',
    maximumPower:basementPower,scorelineRoute,wins,losses:record.length-wins,gamesWon,gamesPlayed});
  }
- // Basement is a qualifying bottom tail. A lower-rated ordinary player keeps
+ // basement is a qualifying bottom tail. A lower-rated ordinary player keeps
  // higher-rated candidates in Foundational until the ordering is consistent.
  const foundational=ranked.filter(entry=>base.classFor(entry.rating)==='b7'&&qualifications.get(label(entry.player))?.band!=='b19');
  const lowestFoundational=Math.min(...foundational.map(entry=>entry.rating));

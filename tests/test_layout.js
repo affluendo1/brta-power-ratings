@@ -8,7 +8,7 @@ const band=L.bands(Array.from({length:60},(_,i)=>({rating:1000+i*15})));assert.e
 const out=L.report(d,H);assert(out.includes('&lt;My Section&gt;'));for(const title of ['Singles','Doubles players','Doubles pairs','Overall','Standings','Full fixture list','All results','Ratings after Round'])assert(out.includes(title),title);assert(!out.includes('undefined'));
 console.log('Layout: score parsing, match tiebreak evidence, model rollback, unchanged scores/stats, eight bands, official percentage and complete export passed.');
 
-// Undated playoff scorecards must use only the selected snapshot's known dates.
+// undated playoff scorecards must use only the selected snapshot's known dates.
 const undated=structuredClone(d);undated.results[0].date='';undated.results[0].fixtures[0].date='';
 assert.equal(L.observations(undated)[0].date,null);
 assert(L.recalculate(undated,'RM3b',M).singles.every(r=>Number.isFinite(r.rating)));

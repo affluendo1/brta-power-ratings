@@ -1,4 +1,4 @@
-/* Shared normal/optional partnership scopes. Complete indexes load only on demand. */
+/* shared normal/optional partnership scopes. complete indexes load only on demand. */
 (function(root){'use strict';const R=BRTARefinement,cache=new Map();let limit=150,signature='',openRequest=0;
 function source(view='pairs'){
  if(ratingScope==='section')return{rows:BRTAHistory.withMovement(D,view==='pairs'?'pairs':'singles',ratingRound)};
@@ -49,6 +49,6 @@ $('#ratingBody').innerHTML=rows.slice(0,limit).map((r,i)=>'<tr><td><button class
 };
 document.addEventListener('click',e=>{const p=e.target.closest('[data-wide-pair]');if(p){openRow(root.BRTAPairSource.visible[+p.dataset.widePair]);return}if(e.target.closest('[data-wide-pair-more]')){limit+=150;renderRatings()}});
 root.BRTAPairSource={source,openRow,visible:[]};
-// Resolve render handlers at event time, after optional views have decorated them.
+// resolve render handlers at event time, after optional views have decorated them.
 $('#teamFilter').onchange=()=>renderRatings();$('#search').oninput=()=>renderRatings();
 })(window);

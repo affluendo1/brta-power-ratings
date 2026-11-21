@@ -14,10 +14,10 @@ assert.equal(get('Provisional').rank,null);assert.equal(get('Provisional').movem
 rows=H.withMovement(data,'singles',5);assert(rows.every(x=>x.movement===null&&!x.isNew));
 rows=H.withMovement(data,'singles',7);assert(rows.filter(x=>x.rank).every(x=>x.movement===0));
 rows=H.withMovement(data,'singles');assert(rows.filter(x=>x.rank).every(x=>x.movement===0));
-// Identical Power ratings must use the same tie ordering at both dates.
+// identical Power ratings must use the same tie ordering at both dates.
 const tied={singles:[row('Zed',1600),row('Amy',1600)],ratingHistory:{rounds:[{round:1},{round:2}],tables:{1:[row('Amy',1600),row('Zed',1600)],2:[row('Zed',1600),row('Amy',1600)]}}};
 assert(H.withMovement(tied,'singles').every(x=>x.movement===0));
-// Doubles qualification and overall snapshots use as-of-round evidence.
+// doubles qualification and overall snapshots use as-of-round evidence.
 data.doublesIndividuals=[{...row('Bob',1800),qualified:true},{...row('Alice',1500),qualified:true}];
 data.doublesRatingHistory={tables:{5:{pairs:[row('A / B',1700,2)],doublesPlayers:[{...row('Bob',1600),qualified:false},{...row('Alice',1800),qualified:true}]},6:{pairs:[row('A / B',1700,3)],doublesPlayers:data.doublesIndividuals},7:{pairs:[row('A / B',1700,3)],doublesPlayers:data.doublesIndividuals}}};
 assert.equal(H.withMovement(data,'doublesPlayers',6).find(x=>x.player==='Bob').isNew,true);

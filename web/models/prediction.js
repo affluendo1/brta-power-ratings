@@ -29,7 +29,7 @@
     }
     const fiveAll=choose(2*(targetGames-1),targetGames-1)*p**(targetGames-1)*q**(targetGames-1);
     if(greenBall){
-      // BRTA Green Ball is first to six games with no tiebreak. At 5-5,
+      // BRTA Green Ball is first to six games with no tiebreak. at 5-5,
       // the next game ends the set 6-5.
       addDistribution(map,true,1,fiveAll*p);
       addDistribution(map,false,-1,fiveAll*q);
@@ -73,7 +73,7 @@
     return{homeGames:home,awayGames:away,score:home+'-'+away,homeWon:home>away};
   }
   function sampleTiebreakLoserPoints(target,rng=Math.random){
-    // The rubber model gives the tiebreak winner probability. Score detail is
+    // the rubber model gives the tiebreak winner probability. score detail is
     // illustrative conditional on that winner, with a valid win-by-two score.
     if(rng()<.18)return target+Math.floor(rng()*4)-1;
     return Math.floor(rng()*(target-1));
@@ -147,7 +147,7 @@
     const homeRubbers=results.filter(r=>r.homeWon).length,awayRubbers=results.length-homeRubbers;
     const homeGames=results.reduce((n,r)=>n+r.homeGames,0),awayGames=results.reduce((n,r)=>n+r.awayGames,0);
     const homeSets=results.reduce((n,r)=>n+r.homeSets,0),awaySets=results.reduce((n,r)=>n+r.awaySets,0);
-    // Sets ties use rubber wins, then games. Rubbers has three rubbers.
+    // sets ties use rubber wins, then games. rubbers has three rubbers.
     const bySets=setWinsDecideTies||format==='rubbers',decidingHome=bySets?homeSets:homeRubbers,decidingAway=bySets?awaySets:awayRubbers;
     const winner=decidingHome>decidingAway?1:decidingAway>decidingHome?-1:
       homeGames>awayGames?1:awayGames>homeGames?-1:0;

@@ -1,6 +1,6 @@
-/* Joint RM4 fitter reused for Orchestra rating priors. Legacy rm4.js is unchanged.
-Difference: a declared pre-season mean replaces zero in the same Gaussian penalty.
-Choir uses the Melody joint fit; it is not a separately learned partnership model. */
+/* joint RM4 fitter reused for Orchestra rating priors. legacy rm4.js is unchanged.
+difference: a declared pre-season mean replaces zero in the same Gaussian penalty.
+choir uses the Melody joint fit; it is not a separately learned partnership model. */
 (function(root,factory){const M=root.BRTARM4||(typeof require==='function'?require('./rm4'):null),api=factory(M);if(typeof module==='object'&&module.exports)module.exports=api;else root.BRTAOrchestraFit=api})(typeof globalThis==='undefined'?this:globalThis,function(M){'use strict';
 const sum=a=>a.reduce((s,v)=>s+v,0),mean=a=>sum(a)/(a.length||1),sigmoid=M.sigmoid,softplus=x=>Math.max(x,0)+Math.log1p(Math.exp(-Math.abs(x))),nativeEvidence=M.nativeEvidence,config=M.config;
 function evidence(m,eta,c){if(c.melody){const a=nativeEvidence(m,eta),b=evidence(m,eta,{...c,melody:false,native:false}),w=c.melodyWeight??.5;return{loss:w*a.loss+(1-w)*b.loss,gradient:w*a.gradient+(1-w)*b.gradient}}if(c.native)return nativeEvidence(m,eta);let h=m.hg,a=m.ag;const sw=c.outcomeWeight??(c.baseline?(c.composite?1:0):.25);h+=sw*(2*m.hs+4*(m.draw?.5:Number(m.winner==='home')));a+=sw*(2*m.as+4*(m.draw?.5:Number(m.winner==='away')));for(const t of m.matchTiebreaks||[]){const weight=c.baseline&&!c.composite?1:2,share=t.unknown||weight===1?Number(t.winner==='home'):t.h/(t.h+t.a);h+=weight*share;a+=weight*(1-share)}return{loss:h*softplus(-eta)+a*softplus(eta),gradient:(h+a)*sigmoid(eta)-h}}

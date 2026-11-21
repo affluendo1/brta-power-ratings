@@ -1,4 +1,4 @@
-/* Orchestra 8.5: ratings, Choir and deterministic Baton routing.
+/* orchestra 8.5: ratings, Choir and deterministic Baton routing.
  * Reuses frozen research components; selection is offline, never target-trained.
  */
 (function(root,factory){
@@ -148,7 +148,7 @@
   if(m.formatRules){const legacy=M.forecast(ctx,m,frozen,'RM4b');return{...legacy,engine:'RM4b',fallback:'Explicit scoring contract',system:'4.2 Orchestra'}}
   const row=featureRow(ctx,m,bundle,frozen),history=p==='sets.standard'?historyEvidence(state,m,ctx.past):{linked:0,prior:0},decision=route(row,m,p,bundle,selected,history,frozen);
   if(!valid(decision.p))throw Error('Invalid Orchestra probability');
-  // Invert the compatible scoring map; calibrated winner mass remains exact.
+  // invert the compatible scoring map; calibrated winner mass remains exact.
   let lo=-12,hi=12;for(let i=0;i<55;i++){const mid=(lo+hi)/2;if(M.win(mid,m)<decision.p)lo=mid;else hi=mid}
   return{...decision,eta:(lo+hi)/2,profile:p,system:'4.2 Orchestra',version:bundle.version,components:row.baseline};
  }
@@ -163,7 +163,7 @@
   if(data.meta?.is_custom&&!['4melody.2','4foundation.2'].includes(model))return E.recalculate(data,'RM4.2',frozen);
   const copy=JSON.parse(JSON.stringify(data)),matches=E.prepare(data).filter(m=>m.date&&m.date!=='2000-01-01').map(m=>configured(data,m));
   const levelMatch=String(data.meta?.section_label||'').match(/\d+/),state={schema:85,model:['Automatic','4melody.2','4foundation.2'].includes(model)?'4.2 Orchestra':model,matches,source:{meta:data.meta,format:data.format,greenBall:data.greenBall},history:snapshot(data,history),level:levelMatch?Number(levelMatch[0]):null};
-  // Only carry the current section's eligible names back from the worker.
+  // only carry the current section's eligible names back from the worker.
   if(state.history){const names=new Set(matches.flatMap(m=>[...m.home,...m.away]).map(nameKey));state.history={...state.history,players:Object.fromEntries(['Singles','Doubles'].map(type=>[type,Object.fromEntries(Object.entries(state.history.players[type]||{}).filter(([name])=>names.has(name)))]))}}
   const sample=matches[0]||configured(data,{type:'Singles',target:6,bestOf:1}),p=profile(data,sample);if(matches.some(m=>!bundle.formatRouting.allowedSignatures.includes([profile(data,m),m.type,m.target,m.bestOf,Number(m.bestOf===3&&!!m.matchTiebreak),Number(!!m.green)].join('|')))){if(data.meta?.is_custom)throw Error('This specialist does not support this scoring format. Choose RM4.2.');return E.recalculate(data,'RM4.2',frozen);}if(p!=='sets.standard')state.history=null;const d=definition(bundle,p,model==='4foundation.2'?'Foundation':'Melody'),memo=new Map();
   const sort=rows=>rows.sort((a,b)=>b.rating-a.rating||a.player.localeCompare(b.player));

@@ -54,7 +54,7 @@ const closerLosses={...rareData,results:rareData.results.map(group=>{
 assert.equal(modelFor(null,rareRows,closerLosses).classForEntry(low),'b7');
 console.log('Rare bands use stricter cutoffs, completed results through the selected round and auditable qualifying evidence.');
 // A higher-rated severe-loss candidate must not sit beneath a lower-rated
-// Foundational entry, including a provisional player with less evidence.
+// foundational entry, including a provisional player with less evidence.
 const lowerProvisional = {player:'Lower provisional',rating:low.rating-1,matches:1};
 const orderedRows = [...rareRows,lowerProvisional];
 const orderedBands = modelFor(null,orderedRows,lopsided);

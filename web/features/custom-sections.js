@@ -13,7 +13,7 @@
     try{
       sections=raw?JSON.parse(raw):[];
       if(!Array.isArray(sections))throw Error();
-      // Old backups can contain TROLS's internal missing-name codes. Match records reference
+      // old backups can contain TROLS's internal missing-name codes. match records reference
       // player IDs, so friendly, unique display names leave their results intact.
       for(const s of sections){
         const used=new Set((s.players||[]).filter(p=>!root.BRTAPlayerDisplay?.isUnknown(p.name)).map(p=>String(p.name).toLowerCase()));
@@ -122,7 +122,7 @@
     dirty=false;draft=null;pendingEditorView=null;
     $('#customAdminOverlay').classList.add('hidden');
     if(!document.querySelector('.overlay:not(.hidden)'))document.body.classList.remove('modal-open');
-    // The section behind the editor should always be the saved competition just edited.
+    // the section behind the editor should always be the saved competition just edited.
     if(exists)root.dispatchEvent(new CustomEvent('brta-custom-section-open',{detail:code}));
     return true;
   }
@@ -334,7 +334,7 @@
     const section=backup.sections[0];M.validate(section);
     const previous=read().find(s=>s.id===section.id);
     if(previous&&!confirm('Replace the existing local competition with this exported version?'))return false;
-    // Show the editor before the change event, preventing the app from reloading
+    // show the editor before the change event, preventing the app from reloading
     // an existing local section and closing the newly opened editor.
     draft=editable(section);tab='setup';roundId=fixtureId=null;dirty=false;
     ensureOverlay();$('#customAdminOverlay').classList.remove('hidden');

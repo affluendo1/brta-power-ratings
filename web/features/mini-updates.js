@@ -1,4 +1,3 @@
-/* Small conveniences for BRTA Power Ratings 8.5.2.3. */
 (function(root,factory){
 'use strict';
 const util=factory();

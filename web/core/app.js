@@ -511,8 +511,8 @@ function rubberWinnerSide(r){
   if(explicit==='home'||explicit==='away')return explicit;
   if(r.winner&&r.winner===r.home&&r.winner!==r.away)return 'home';
   if(r.winner&&r.winner===r.away&&r.winner!==r.home)return 'away';
-  // Legacy scorecards may use identical display names on both sides.
-  // Use their recorded score only if the published winner is genuinely ambiguous.
+  // legacy scorecards may use identical display names on both sides.
+  // use their recorded score only if the published winner is genuinely ambiguous.
   if(!r.winner||r.winner!==r.home||r.winner!==r.away||
      !['Completed','Forfeit','Retired'].includes(r.status))return '';
   const clean=String(r.score||'').replace(/\(\s*\d+\s*[-–]\s*\d+\s*\)/g,'');

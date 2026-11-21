@@ -1,4 +1,4 @@
-/* First visit setup and searchable navigation. */
+/* first visit stuff and the quick nav list */
 (function () {
   'use strict';
   const mobile = matchMedia('(max-width: 900px)');

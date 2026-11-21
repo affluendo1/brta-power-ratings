@@ -16,7 +16,7 @@ assert.equal(rows[0].rank,1);assert.equal(rows[1].rank,1);assert.equal(rows[2].r
 assert.equal(M.highest(rows).length,2);
 assert.equal(M.rank(rows,M.analysePair).find(r=>r.team==='B').rank,1,'Lab and table use the same tie ranking');
 for(const scope of ['section','all','history'])assert.equal(M.pairScope(scope),scope);
-// Exercise actual optional-view wiring without an external DOM dependency.
+// exercise actual optional-view wiring without an external DOM dependency.
 const scopes=['section','all','history'].map(searchScope=>({dataset:{searchScope}}));
 let contextmenu;
 const tabs={children:[],querySelector(){return pairTab},addEventListener(type,fn){contextmenu=fn}};

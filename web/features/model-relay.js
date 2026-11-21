@@ -1,4 +1,3 @@
-/* 8.5.2.2: a private, entirely local model-to-model misunderstanding. */
 (function (root, factory) {
   'use strict';
   const api = factory();
@@ -7,7 +6,7 @@
 
   let started = false;
   const record = { packet: null, scrambled: null, transcript: [], done: false };
-  // Console-only inspection; this does not alter predictions or render anything.
+  // just here for the console, doesn't change the actual predictions
   root.BRTAHiddenRelay = Object.freeze({ inspect: () => ({
     packet: record.packet, scrambled: record.scrambled,
     transcript: record.transcript.map(line => ({ ...line })), done: record.done

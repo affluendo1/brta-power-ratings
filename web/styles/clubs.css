@@ -1,4 +1,3 @@
-/* The section navigator remains part of the main app. Club content shares its theme. */
 #page-teams { min-width: 0; }
 #page-teams #teamCards { display: block; position: static; }
 #teamLabContent[hidden] { display: none; }

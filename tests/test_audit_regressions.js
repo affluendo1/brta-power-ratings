@@ -1,4 +1,3 @@
-/* Regression tests for request ordering and service-worker failure paths. */
 const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
 const source=fs.readFileSync(require.resolve('../web/core/app.js'),'utf8');
 const deferred=()=>{let resolve,reject;const promise=new Promise((yes,no)=>{resolve=yes;reject=no});return{promise,resolve,reject}};

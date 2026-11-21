@@ -1,4 +1,3 @@
-/* Foreground work reports completed milestones. Network and worker time vary. */
 (function (root) {
   'use strict';
   const overlay = document.getElementById('modeSwitchOverlay');
@@ -40,7 +39,7 @@
   }
 
   function paint() {
-    // Hidden tabs suspend animation frames. They should still finish loading.
+    // hidden tabs suspend animation frames. they should still finish loading.
     if (document.hidden || !root.requestAnimationFrame) return Promise.resolve();
     return new Promise(resolve => {
       const fallback = setTimeout(resolve, 50);

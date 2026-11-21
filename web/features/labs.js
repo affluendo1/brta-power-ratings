@@ -1,4 +1,3 @@
-/* Unified player and partnership labs, including historical round contexts. */
 let lab8Context=null,lab8GraphModes={},lab8Return=[];
 const L8=window.BRTALabModel;
 function lab823Pressure(single,double,pair){

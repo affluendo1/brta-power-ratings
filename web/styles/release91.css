@@ -79,7 +79,7 @@
   .round-lock-fields { grid-template-columns:repeat(2,minmax(0,1fr)) }
 }
 
-/* Finals and fixture panels follow the site's active palette. */
+/* finals and fixture panels follow the site's active palette. */
 .race-panel { position:relative; overflow:hidden }
 .race-panel::before { content:""; position:absolute; z-index:0; pointer-events:none; width:360px; height:360px; right:-190px; top:-210px; border-radius:50%; background:color-mix(in srgb,var(--primary) 11%,transparent); filter:blur(2px) }
 .race-panel>* { position:relative; z-index:1 }
@@ -287,7 +287,7 @@ html[data-animation="off"] .profile-head h2.player-lab-rainbow { animation: none
     overflow-anchor: none;
     overscroll-behavior: none;
   }
-  /* The floating results-refresh toast otherwise intercepts swipes above the sheet. */
+  /* the floating results-refresh toast otherwise intercepts swipes above the sheet. */
   body:has(#resultOverlay:not(.hidden)) .sync-toast {
     visibility: hidden;
     pointer-events: none;
@@ -351,7 +351,7 @@ html[data-animation="off"] .profile-head h2.player-lab-rainbow { animation: none
   #resultOverlay .round841-tools { flex-wrap: wrap; }
 }
 .result-scorecard { container-type: inline-size; }
-/* All rubbers share one intrinsic score track. A short score never reserves space
+/* all rubbers share one intrinsic score track. A short score never reserves space
    for a longer format, and both player columns get an equal share of what's left. */
 .result-scorecard table.rubber-list.rubber-table-8541 {
   display: grid;
@@ -451,7 +451,7 @@ html[data-animation="off"] .profile-head h2.player-lab-rainbow { animation: none
 .latest-highlights { grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr)); }
 .latest-chance { color: var(--muted-color); font-size: .8rem; text-align: left; }
 
-/* Rare performance bands and their Player Lab summaries. */
+/* rare performance bands and their Player Lab summaries. */
 :is(.band-key,.band-divider,tr).b18 {
   --band:#bd86fc;
   --band-color:#bd86fc;
@@ -527,7 +527,7 @@ tr:not(.band-divider):is(.b18,.b19) > td:first-child { box-shadow:inset 3px 0 va
 .latest-highlights .person { text-decoration:underline; text-underline-offset:.15em; }
 .latest-player-score { white-space:nowrap; color:var(--muted-color); }
 
-/* Finals series */
+/* finals series */
 .result-round.result-playoff {
   --playoff-accent: var(--primary);
   border-color: color-mix(in srgb, var(--playoff-accent) 50%, var(--border-color));

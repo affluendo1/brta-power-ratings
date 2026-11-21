@@ -1,5 +1,5 @@
-/* Predeclared small changes. Earlier rounds select; later rounds only assess.
- * No player-specific objectives. This is a diagnostic on inspected seasons,
+/* predeclared small changes. earlier rounds select; later rounds only assess.
+ * No player-specific objectives. this is a diagnostic on inspected seasons,
  * not a replacement for fresh prospective validation or Ensemble retraining.
  */
 'use strict';

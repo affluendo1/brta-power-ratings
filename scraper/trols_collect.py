@@ -76,7 +76,7 @@ def parse_results(html):
             continue
         ids = list(dict.fromkeys(filter(None, (match_reference(a) for a in cells[0].select('[onclick], a[href]')))))
         is_bye = values[0].casefold() == 'bye' or values[-1].casefold() == 'bye'
-        # Published no-score/washout rows need not expose a scorecard link.
+        # a washout can be listed without a scorecard
         is_status = bool(re.search(r'wash.?out|forfeit|missing result|not played|heat.?out|abandon|cancel|unplayed', ' '.join(values[1:-1]), re.I))
         if not ids and not (heading and (is_bye or is_status)):
             continue
@@ -103,7 +103,7 @@ def parse_scorecard(html):
         if len(teams) >= 2 and len(nested) == 3:
             candidates.append((table, teams, nested))
     if len(candidates) != 1:
-        # Lossless HTML and generic tables are still stored. Mark this explicitly
+        # lossless HTML and generic tables are still stored. mark this explicitly
         # for review rather than pretending an empty scorecard parsed normally.
         return {'layout': 'unrecognised', 'normalised': False, 'tables': source_tables(html)}
     table, teams, nested = candidates[0]
@@ -171,7 +171,7 @@ def write_json(path, value):
 
 
 def asset_key(value):
-    # Hashing the complete namespace avoids traversal, invalid filenames and
+    # hashing the complete namespace avoids traversal, invalid filenames and
     # collisions between source IDs that merely sanitise to the same string.
     return hashlib.sha256(value.encode()).hexdigest()
 
@@ -248,7 +248,7 @@ class Collector:
         form={'which':'1','style':'','daytime':comp['value'],'season':sid,'section':code}
         html,raw=self.read('p_results.php',controls=form)
         rows=parse_results(html)
-        # Preserve source rows/documents even when a new result layout has no
+        # preserve source rows/documents even when a new result layout has no
         # recognised match links; no numeric association-specific inference.
         match_ids=list(dict.fromkeys(m for row in rows for m in row['match_ids']))
         all_ids=list(dict.fromkeys(filter(None,(match_reference(a) for a in BeautifulSoup(html,'html.parser').select('[onclick], a[href]')))))
@@ -296,7 +296,7 @@ class Collector:
         if fixture_page.get('availability')=='historical_draw_unavailable':
             # A fixture observed in this season's Results is authoritative for
             # its published date/opponents, but says nothing about start times,
-            # holiday gaps or unplayed future rounds. Never fill those in.
+            # holiday gaps or unplayed future rounds. never fill those in.
             fallback=[{'source':'results','native_match_id':r['native_match_id'],
                        'round_heading':r['round_heading'],'home':r['home'],'away':r['away'],
                        'start_time':None,'venue':None} for r in rows]
@@ -324,7 +324,7 @@ class Collector:
             except Exception as error:self.failure('club/'+club['value'],error)
 
     def special_standings(self):
-        # Awards are public ladders, not standard fixture competitions. Discover
+        # awards are public ladders, not standard fixture competitions. discover
         # them from the ladder selector instead of assuming BRTA-only code XX.
         html,raw=self.read('ladders.php')
         self.report['ladder_directory']={'raw_path':raw,'data':document(html)}

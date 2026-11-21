@@ -90,8 +90,8 @@ def link(occurrences, aliases=None):
                 if a != b and not dates[a] & dates[b]:
                     candidates[a].add(b)
                     candidates[b].add(a)
-            # If two equally close neighbors clash, leave the ambiguous bridge
-            # open. Independent links can still survive elsewhere in the group.
+            # same gap and two possible people? leave that link alone.
+            # other links in the group can still work.
             blocked = set()
             for a, neighbors in candidates.items():
                 ordered = sorted(neighbors)

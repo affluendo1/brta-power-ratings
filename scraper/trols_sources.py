@@ -43,7 +43,7 @@ class Association:
     def identity(self, kind: str, source_id: str, *, season_id: str) -> str:
         if not all(isinstance(v, str) and v.strip() for v in (kind, source_id, season_id)):
             raise ValueError('Association, season, entity kind and source ID are required')
-        # Native IDs are opaque. AA001 in WDTA is unrelated to BRTA AA001.
+        # wdta AA001 and brta AA001 are two completely different sections
         return ':'.join(quote(v, safe='') for v in (self.key, season_id, kind, source_id))
 
 

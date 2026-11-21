@@ -1,4 +1,3 @@
-/* Extras export keeps observed section facts separate from computed model tables. */
 (function(){'use strict';
 const escape=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function stripRatings(value){if(Array.isArray(value))return value.map(stripRatings);if(!value||typeof value!=='object')return value;const out={};for(const [k,v]of Object.entries(value)){if(/rating|power|^se$|^lo$|^hi$|^avg$|^best4$|individualAverage|pairEffect|strengthOfSchedule|resultsExpectation|playerInsights|teamInsights|matchupMatrix|topMover|biggestDrop|topPerformance|biggestUpset|^rank$|^band$|^leader$|^rm4$|^orchestra$/i.test(k))continue;out[k]=stripRatings(v)}return out}

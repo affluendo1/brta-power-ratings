@@ -42,8 +42,8 @@ ALIASES = {"Geoge Si": "George Si"}
 MAX_WORKERS = int(os.getenv("TROLS_WORKERS", "10"))
 _thread_local = threading.local()
 
-# Source collector registry: name -> callable(section_snapshot, request_get).
-# Empty by default: no speculative fields or additional TROLS requests.
+# source collector registry: name -> callable(section_snapshot, request_get).
+# empty by default: no speculative fields or additional TROLS requests.
 SECTION_ENRICHERS = {}
 
 
@@ -56,7 +56,7 @@ def collect_section_extras(section: dict, collectors=None) -> dict:
         if value is not None:
             if not isinstance(value, dict):
                 raise ValueError(f"Source extension {name} must return an object or None")
-            # Reject invalid data before any section files are written.
+            # reject invalid data before any section files are written.
             result[name] = json.loads(json.dumps(value, allow_nan=False))
     return result
 
@@ -90,8 +90,8 @@ def clean_text(value: str) -> str:
 def clean_team(value: str) -> str:
     value = unicodedata.normalize("NFKC", clean_text(value))
     value = re.sub(r"\s+Playing\s*(?:@|at\b)\s*.*$", "", value, flags=re.I)
-    # Some scorecards append both a team suffix and its scheduled venue, e.g.
-    # "Mentone (DTC) (10:00) Playing @ Dingley". Remove every trailing
+    # some scorecards append both a team suffix and its scheduled venue, e.g.
+    # "Mentone (DTC) (10:00) Playing @ Dingley". remove every trailing
     # parenthetical annotation, not just the final time annotation.
     while True:
         cleaned = re.sub(r"\s*\([^)]*\)\s*[\W_]*$", "", value)
@@ -99,7 +99,7 @@ def clean_team(value: str) -> str:
             break
         value = cleaned
     # TROLS occasionally appends a percentage-like value to a team cell.
-    # It is not part of the published club/team name (for example,
+    # it is not part of the published club/team name (for example,
     # "Ormond White 8.00").
     value = re.sub(r"\s+\d+\.\d{2}\s*$", "", value)
     return value.strip()
@@ -179,7 +179,7 @@ def discover_current_season(competition_code: str) -> dict:
     option_label, season_id = current[0]
     season_label = _visible_season_label(soup, season_id, option_label)
     if season_label.casefold() in {"current season", "current"}:
-        # The active results page sometimes includes a dated competition name
+        # the active results page sometimes includes a dated competition name
         # even though the archive selector uses the generic "Current Season".
         live_page = _post(RESULTS_URL, {"which": "0", "style": "", "daytime": competition_code})
         page_label = _visible_season_label(
@@ -219,7 +219,7 @@ def _visible_season_label(soup: BeautifulSoup, season_id: str, placeholder: str)
     distinct = list(dict.fromkeys(candidates))
     if len(distinct) == 1:
         return distinct[0]
-    # The stable value is intentionally preferred over last season's cached
+    # the stable value is intentionally preferred over last season's cached
     # text when TROLS exposes no name for its active option.
     return placeholder
 
@@ -370,7 +370,7 @@ def parse_roster(table) -> list[dict]:
 
 def _unnamed_player(fixture_id: str, side: str, code: int, emergency: bool) -> str:
     label = "Unnamed emergency" if emergency else "Unnamed player"
-    # The source has not supplied an identity.  Do not turn two unknown people
+    # the source has not supplied an identity.  do not turn two unknown people
     # into one fake person or quietly guess from an opponent/partner.
     return f"[{label} — TROLS {fixture_id} {side} code {code}]"
 
@@ -403,8 +403,8 @@ def _player_from_code(players: list[dict], code: str, fixture_id: str, side: str
         raise RuntimeError(f"Bad singles code {code!r}; BRTA roster positions are 1 to 6")
     entry = next((row for row in players if row["code"] == number), None)
     if entry is None:
-        # An old TROLS scorecard may reference a roster number whose name was
-        # not published. Keep that official rubber visible without inventing a
+        # an old TROLS scorecard may reference a roster number whose name was
+        # not published. keep that official rubber visible without inventing a
         # player identity or admitting it to rating calculations.
         return {"code": number, "name": _unnamed_player(fixture_id, side, number, False), "emergency": False}
     name = entry["name"]
@@ -423,8 +423,8 @@ def _rubbers_score(raw_score: str, rubbers_format: bool) -> dict | None:
     values = [(int(a), int(b)) for a, b in re.findall(r"(\d+)\s*-\s*(\d+)", raw_score)]
     if not values:
         if re.fullmatch(r"(?:\d+\s*-\s*|-\s*\d+)", raw_score.strip()):
-            # Keep the published partial score visible without guessing its
-            # missing side. Zero evidence fields never enter ratings or totals.
+            # keep the published partial score visible without guessing its
+            # missing side. zero evidence fields never enter ratings or totals.
             return {"score": raw_score.strip(), "home_games": 0, "away_games": 0,
                     "home_sets": 0, "away_sets": 0, "decisive": False, "incomplete": True}
         return None
@@ -479,7 +479,7 @@ def parse_scorecard(html: str, fixture: dict) -> tuple[list[dict], list[dict]]:
         codes = [entry["code"] for entry in roster]
         if len(roster) > 6 or any(code < 1 or code > 6 for code in codes) or len(codes) != len(set(codes)):
             raise RuntimeError(f"Invalid {side} roster for {fixture['fixture_id']}: {roster}")
-    # TROLS occasionally omits a roster name altogether. Preserve the rubber,
+    # TROLS occasionally omits a roster name altogether. preserve the rubber,
     # but keep an explicit source-limited identity and exclude it from ratings.
     for side, roster in (("home", home_players), ("away", away_players)):
         used = {entry["code"] for entry in roster}
@@ -494,8 +494,8 @@ def parse_scorecard(html: str, fixture: dict) -> tuple[list[dict], list[dict]]:
         if len(cells) != 3:
             continue
         home_code, raw_score, away_code = cells
-        # Some incomplete TROLS rosters leave the numbered code blank (or
-        # shorten a doubles code to its listed member). Mirror the opposing
+        # some incomplete TROLS rosters leave the numbered code blank (or
+        # shorten a doubles code to its listed member). mirror the opposing
         # positional code only to preserve the official row; the padded
         # participant remains visibly unlisted and is never rated.
         if not home_code and away_code:
@@ -518,7 +518,7 @@ def parse_scorecard(html: str, fixture: dict) -> tuple[list[dict], list[dict]]:
             score.update(score=canonical, home_sets=1 + int(unknown['winner']=='home'), away_sets=1 + int(unknown['winner']=='away'), decisive=True, incomplete=False)
         if not score and not raw_score.strip():
             # A numbered official row can have its score cleared on TROLS.
-            # Keep that row unrated, rather than dropping it and shifting all
+            # keep that row unrated, rather than dropping it and shifting all
             # later lineup positions (or retaining a superseded result).
             score = {"score": "", "home_games": 0, "away_games": 0,
                      "home_sets": 0, "away_sets": 0, "decisive": False, "incomplete": True}
@@ -614,7 +614,7 @@ def observed_rules(section: dict) -> dict:
     for kind in ("singles", "doubles"):
         rows = section[kind]
         counts = Counter(r["fixture_id"] for r in rows)
-        # Include interrupted cards when measuring slots; prefer complete days.
+        # include interrupted cards when measuring slots; prefer complete days.
         rules[kind + "Slots"] = max(counts.values(), default=0)
         scores = [[(int(a), int(b)) for a,b in re.findall(r"(\d+)-(\d+)", r["score"])] for r in rows]
         rules[kind + "BestOf"] = 3 if any(len(v) >= 2 for v in scores) else 1
@@ -709,7 +709,7 @@ def validate_dataset(
                 home_entry = row.get("home_player") or row.get("home_pair")
                 away_entry = row.get("away_player") or row.get("away_pair")
                 expected_winner = home_entry if hs > aws else away_entry if aws > hs else ""
-                # Names are not globally unique in TROLS. If both opponents
+                # names are not globally unique in TROLS. if both opponents
                 # have the same displayed name, the result is still coherent
                 # when that shared name is the recorded winner.
                 agrees = winner == expected_winner
@@ -851,7 +851,7 @@ def is_same_saved_season(section: dict, previous_metadata: dict) -> bool:
     current_label = clean_text(section.get("competition_label", ""))
     if old_label and current_label:
         return old_label.casefold() == current_label.casefold()
-    # Missing metadata is not evidence that the season changed: retain the
+    # missing metadata is not evidence that the season changed: retain the
     # conservative shrink guard until the prior season can be identified.
     return True
 
@@ -932,7 +932,7 @@ def scrape_all() -> list[dict]:
         section["singles"].sort(key=lambda row: (int(row["round"]), row["fixture_id"], row["position"]))
         section["doubles"].sort(key=lambda row: (int(row["round"]), row["fixture_id"], row["position"]))
         # TROLS team summaries can disagree with its own individual scores.
-        # Preserve both verbatim; structural, identity and winner checks stay strict.
+        # preserve both verbatim; structural, identity and winner checks stay strict.
         section["source_warnings"] = validate_dataset(
             section["fixtures"], section["singles"], section["doubles"], section["section_code"],
             allow_total_discrepancies=True,
@@ -959,7 +959,7 @@ def main() -> None:
     previous_seasons = _load_previous_current_seasons()
     sections = scrape_all()
     catalog = []
-    # Review every section before writing any of them. A failed review must
+    # review every section before writing any of them. A failed review must
     # not leave an output directory mixing old and new section snapshots.
     for section in sections:
         code = section["section_code"]
@@ -1011,7 +1011,7 @@ def main() -> None:
         (section_dir / "metadata.json").write_text(json.dumps(metadata, indent=2) + "\n", encoding="utf-8")
         catalog.append(metadata)
     synced_at = datetime.now(timezone.utc).isoformat()
-    # Store the source-attributed directory separately from match results.
+    # store the source-attributed directory separately from match results.
     (OUT / "club-directory.json").write_text(json.dumps(directory, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     (OUT / "clubs.json").write_text(json.dumps(network, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     (OUT / "club-foundation.json").write_text(json.dumps(build_foundation(directory,network,sections,checked_at=synced_at),ensure_ascii=False,separators=(",",":"))+"\n",encoding="utf-8")

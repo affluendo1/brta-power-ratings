@@ -50,7 +50,7 @@
     if (overlay) BRTAOverlays.unlock(overlay);
   }
 
-  // All navigation paths use switchPage, including deep links inside other features.
+  // all navigation paths use switchPage, including deep links inside other features.
   const originalSwitch = switchPage;
   switchPage = function (page) {
     if (removed.has(page)) {
@@ -578,7 +578,7 @@
     const value = consoleInput.value.trim().toLowerCase();
     if (!value) return;
     consoleInput.value = '';
-    // Only keep recognised commands in history. Mistyped pasted text is discarded.
+    // only keep recognised commands in history. mistyped pasted text is discarded.
     const known = ['help', 'log', 'stop', 'clear', 'status', 'prank', 'mute', 'unmute', 'exit'];
     if (known.includes(value)) {
       history.push(value);
@@ -635,7 +635,7 @@
       if (!logging || event.target.closest?.('#vaultConsoleOverlay')) return;
       const target = event.target.closest?.('button,a,summary,input,select,textarea,form');
       if (!target) return;
-      // Report the control, never a form value, link destination, player name or typed key.
+      // report the control, never a form value, link destination, player name or typed key.
       const named = target.dataset.page || target.id || [...target.attributes].find(attr => attr.name.startsWith('data-'))?.name;
       trace(type, named || target.localName);
     }, true);

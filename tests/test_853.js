@@ -153,7 +153,7 @@ const sameName=Exports.toBackup(duplicateSource,'2026-11-08T06:00:00.000Z').sect
 assert.equal(new Set(sameName.players.map(p=>p.name)).size,sameName.players.length,'Same-name imports must not merge clubs');
 console.log('8.5.4 exports, no contests, forfeit scores, identity disambiguation and eligibility: passed');
 
-// Editable transfers preserve absent slots and terminal statuses, without creating fake players.
+// editable transfers preserve absent slots and terminal statuses, without creating fake players.
 for(const section of [s,both]){
  const source=Model.build(section),backup=Exports.toBackup(source,'2026-11-08T06:00:00Z').sections[0];
  Model.validate(backup);

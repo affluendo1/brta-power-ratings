@@ -1,4 +1,4 @@
-/* Optional ratings presentation. Loaded after the ordinary labs and preferences. */
+/* optional ratings presentation. loaded after the ordinary labs and preferences. */
 (function(){
  'use strict';
  const originalModel=window.BRTAOrthography,analysisCache=new Map(),model={...originalModel,analyse:name=>{if(!analysisCache.has(name))analysisCache.set(name,originalModel.analyse(name));return analysisCache.get(name)},analysePair:name=>{const key='pair:'+name;if(!analysisCache.has(key))analysisCache.set(key,originalModel.analysePair(name));return analysisCache.get(key)}},key='orthographic',pairKey='orthographicPairs',overallKey='orthographicOverall';
@@ -21,7 +21,7 @@
   button.style.visibility='';await button.animate?.([{opacity:0,filter:'blur(5px)'},{opacity:1,filter:'blur(0)'}],{duration:1900,easing:'ease-out'})?.finished?.catch(()=>{});
   revealing=false;
  }
- // On touch devices a long press also supplies the browser's contextmenu gesture.
+ // phones fire contextmenu on a long press too
  $('#ratingTabs').addEventListener('contextmenu',e=>{if(e.target.closest('[data-rating="singles"]')&&auxiliaryEnabled()&&activePage==='ratings'){e.preventDefault();reveal()}else if(e.target.closest('[data-rating="pairs"]')&&auxiliaryEnabled()&&activePage==='ratings'){e.preventDefault();reveal(true)}else if(e.target.closest('[data-rating="overall"]')&&auxiliaryEnabled()&&activePage==='ratings'){e.preventDefault();reveal(false,true)}});
  function sync(){
   if(!auxiliaryEnabled()){
@@ -70,7 +70,7 @@
   $('#ratingBody').innerHTML=out||'<tr><td colspan="'+colspan+'">'+esc(src.notice||(external&&!q?'Type a name or search command.':'No matching names.'))+'</td></tr>';
  }
  const ordinaryRender=renderRatings;renderRatings=function(){sync();if((ratingView===key||isPair()||isOverall())&&D&&auxiliaryEnabled()){render();return}ordinaryRender()};
- // The history selector still refers to the rounds in which these names existed.
+ // the history selector still refers to the rounds in which these names existed.
  const ordinaryOptions=renderRatingOptions;renderRatingOptions=function(){const view=ratingView;try{if(view===key||view===overallKey)ratingView='singles';if(view===pairKey)ratingView='pairs';ordinaryOptions();$$('[data-search-scope]').forEach(b=>{b.disabled=false;b.title=''})}finally{ratingView=view}};
  window.BRTAUltraAvailable=()=>auxiliaryEnabled()&&(revealed||pairRevealed||overallRevealed);
  const ordinaryMethod=eightMethodologyHTML;eightMethodologyHTML=function(){return ordinaryMethod()+((revealed||pairRevealed||overallRevealed)&&auxiliaryEnabled()?'<section id="orthographicMethod" class="reading-guide"><article class="guide-model"><span class="guide-tag">Discovered model</span><h3>RM3ultra</h3><p>A study of the competitive potential hidden in a name. Letter composition, unusual spelling and recurring patterns combine into an individual Ultra score.</p><p>Pair Ultra combines both partners. BETTER overall combines Ultra with singles Power. Explore the contributions in Letter Lab.</p></article></section>':'')};

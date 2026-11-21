@@ -1,7 +1,7 @@
 'use strict';
 const assert=require('node:assert/strict'),L=require('../web/models/layout-model'),C=require('../web/models/custom-section-model'),E=require('../web/models/rm4-engine'),H=require('../web/models/rating-history'),reference=require('./fixtures/rm1-sklearn.json');
 const scale=400/Math.log(10),fitted=C.fit(reference.matches,false,false,'V1');
-// Independent library comparison verifies C normalization, no intercept and
+// independent library comparison verifies C normalization, no intercept and
 // exact game counts, including repeat opponents and a disconnected component.
 for(const row of fitted){assert(Math.abs(row.strength-reference.strength[row.player])<1e-7,row.player+' differs from sklearn');assert.equal(row.rating,Math.round(1500+scale*reference.strength[row.player]));assert.equal(row.se,null);assert.equal(row.lo,null);assert.equal(row.hi,null)}
 assert.deepEqual(C.fit(reference.matches.map(m=>({...m,date:'1990-01-01',round:99,winner:m.winner==='home'?'away':'home'})),false,false,'V1').map(r=>r.rating),fitted.map(r=>r.rating),'Dates, round numbers and match-win labels must not change game-strength ratings');

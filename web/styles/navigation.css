@@ -16,7 +16,7 @@
 .navigation-home-actions span { font-size: 12px; }
 .navigation-home-actions button:disabled { opacity: .7; cursor: default; }
 @media(max-width: 600px) { .navigation-sheet { padding: 18px; max-height: 88dvh; } .navigation-sheet footer > span { display: none; } #quickNavigationBtn { font-size: 12px; } }
-/* Tutorial and default section actions. */
+/* tutorial and default section actions. */
 .navigation-home-actions { justify-content: flex-start; gap: 12px; }
 .navigation-home-actions button { text-decoration: none; padding: 12px 22px; font-size: 15px; border-radius: 8px; }
 .navigation-home-actions .primary { box-shadow: 0 3px 12px #0001; }

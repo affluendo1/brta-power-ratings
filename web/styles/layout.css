@@ -1,5 +1,5 @@
 @font-face{font-family:"Snake Retro";src:url(data:font/woff;base64,d09GRgABAAAAAAQMAAoAAAAAC5AAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABPUy8yAAABZAAAAC4AAABgRN5FO2NtYXAAAAGkAAAALAAAADQADACMZ2x5ZgAAAegAAAFRAAAIRIzwk2hoZWFkAAAA9AAAADYAAAA2L2S/CGhoZWEAAAEsAAAAIAAAACQFmAL6aG10eAAAAZQAAAANAAAAGALQAABsb2NhAAAB0AAAABgAAAAYCjAL/21heHAAAAFMAAAAGAAAACAAIwBebmFtZQAAAzwAAACTAAABCL2Lkehwb3N0AAAD0AAAADkAAABWvxmCbwABAAAAAQAAhFkKcV8PPPUAAQPoAAAAAOcGPXoAAAAA5wY9egAAAAACRAM0AAAAAwACAAAAAAAAeJxjYGRgYA76P4eBgekCAwNDD5MLA1AEBTACAF9pA5h4nGNgZGBg4GaIYRBnAAEmBjQAAAyXAIJ4nGNgZrrAOIGBlYGFgTBgRObYAwGQMmCwZA76P4eBgTmIIQVNvQIDAwD1uAWfAAB4nGO6wIAVAAAS+ADTAAAAeJxjYGBgYmBgYAZiESDJCKZZGBSANAsQgviW//8DSYP///9fBPMZAFHLBpUAAAAAAIoAxgE0AZwB8QJfAtsDHAOmBCJ4nLVVPW7CMBT+AKFIRQK1EfLQASSGDgwMtGJg6NBKHRg6dOjA6oEj5CgcqgMHyMAROAGCxHF4ebbjGOhLXn4cR3nfj18gcI72Z+cVHUToYYAYAs8YYYIXTDHDHAss8Y4PfGGFb/zgF2vgcf42ESy7LAU5CzbG59GUMiH7cSxla1+cN+XQId+zq0SN03n0/fZO6kiLNI9pOQd4QAK0/hycID5XGBWVDllGBMVBF6CDVqS+qTf13ThQC6sGuhIbr13yvJ7zLDiP2X0FBuc2JSxW74CnIGxByOoQW1BtPTAdkBigfiM8OQ7udpfrqY+I4/duZ6vIC04l97Eq+E6uqnNOc/5tDgqQwHTV8IruFYyviXZ+nD4tazCbHarnwe1cPxHJi9eqelSkMcoqbPWv/w1X77rhv2FhPEgRc3WZqtzVjU27xe08eFegvbOUuE+GaCTtAAAAeJxtjE0KgzAQRl80WNpCF6V0nUXXBY+g9ATRC7gILhSFoF327B1jKFl0Bob3/STAiQ+KbRTncLfJOIjaOecqu7NOOoW8fUiq9FGcO8/IGRdekXNp2Mg66RTceDdTNzhj3eJn6/p17Hxt28oktimDCEzDRMeAw8ifjgXPHKhnZZTMU4tuqaTxv20ok+TnfwHtkSSjAHicfcHJAYAgEATBnRYPIBlvIanJ/2kGVAUxViOEJiXNWrRqU1ZRxTs+8IkvfOMHv/jDDfcfbw0GxgAAAA==) format("woff");font-display:swap}
-/* Shared controls use the same rectangular surfaces and borders as Player Lab. */
+/* shared controls use the same rectangular surfaces and borders as Player Lab. */
 #clubPickerOverlay{display:none!important}
 .section-picker-footer{gap:16px;flex-wrap:wrap}.section-exports{display:flex;gap:18px;flex-wrap:wrap}.provisional-control{display:flex;align-items:center;gap:9px;font-size:12px;color:var(--muted-color);margin-right:auto}.provisional-control .custom-check{width:17px;height:17px;flex:none}
 .status-strip{display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}.status-strip>button{font:inherit;text-align:left;border:0;border-right:1px solid var(--border-color);border-radius:0;background:var(--surface);color:var(--text-color);padding:12px 16px;cursor:pointer}.status-strip>button:hover{background:var(--surface-muted)}.status-strip>button b,.status-strip>button span{display:block}.status-strip>button span{font-size:11px;color:var(--muted-color);margin-top:5px}
@@ -18,7 +18,7 @@
 @media(max-width:800px){.wg-open .wg-left{top:15%;transform:translate(-50%,-50%) scale(.65)}.wg-game{left:50%;top:62%;transform:translate(-50%,-50%);width:min(330px,88vw,34dvh)}}
 @media(prefers-reduced-motion:reduce){.wg-left{transition:none}.wg-game,.wg-launch{animation:none}}
 
-/* Mobile foundation: preserve every column while making each main view easier to navigate. */
+/* mobile foundation: preserve every column while making each main view easier to navigate. */
 @media (max-width: 600px){
  html[data-interface="future"] .site-header{gap:8px;padding-inline:12px}
  html[data-interface="future"] .header-actions{display:flex;flex-wrap:wrap;gap:6px}

@@ -37,7 +37,7 @@ function draw(){
   content.classList.add('team823-expanded');
 }
 const base=BRTATeamLabUI.open;BRTATeamLabUI.open=function(...args){const out=base(...args);draw();return out};
-// Team UI's internal renderer retains its own closure, so also observe title changes.
+// team UI's internal renderer retains its own closure, so also observe title changes.
 new MutationObserver(()=>{if($('#teamLabTitle')&&!$('#teamLabContent .team822-explorer'))draw()}).observe($('#teamLabContent'),{childList:true});
 document.addEventListener('click',e=>{const pair=e.target.closest('[data-projection-pair]');if(pair){const name=pair.dataset.projectionPair,entry=L8.rows(D,'pairs',null).find(p=>L8.key(p.player)===L8.key(name));if(entry)lab8Open(entry.player,null,true);else BRTA82.modal('Doubles pair','<p>This pair has never been played before.</p>');return}});
 document.addEventListener('change',e=>{if(!e.target.matches('[data-predict-pair-check]'))return;const input=e.target,side=selectedPrediction?.[input.dataset.side];if(!side)return;const index=+input.dataset.pair,pair=side.doubles[index]||[],name=input.value;side.manualPairs=true;if(input.checked){if(pair.length>=2){input.checked=false;return}side.doubles[index]=[...pair,name]}else side.doubles[index]=pair.filter(p=>p!==name);selectedPrediction.simulation=null;refreshPrediction()});

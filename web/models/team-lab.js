@@ -9,7 +9,7 @@
   function teamNames(data){return [...new Set([...(data.standings||[]).map(x=>x.team),...(data.teams||[]).map(x=>x.team),...(data.customRoster||[]).map(x=>x.team)].filter(Boolean))]}
   function fixtures(data,team){
     const map=new Map();
-    // Results contain the authoritative scorecards; the schedule adds washouts/byes.
+    // results contain the authoritative scorecards; the schedule adds washouts/byes.
     for(const collection of [data.results||[],data.upcomingFixtures||[]])for(const group of collection)for(const f of group.fixtures||[]){
       if(f.home!==team&&f.away!==team)continue;
       if(f.status==='Scheduled')continue;
@@ -91,7 +91,7 @@
       if(pairs.length===count){if(!best||score>best.score||score===best.score&&evidence>best.evidence)best={pairs,score,evidence};return}
       if(remaining.length<2*(count-pairs.length))return;
       const first=remaining[0],rest=remaining.slice(1);
-      // This player may be a singles-only member of the squad.
+      // this player may be a singles-only member of the squad.
       if(rest.length>=2*(count-pairs.length))visit(rest,pairs,score,evidence);
       for(let i=0;i<rest.length;i++){
         const pair=pairProjection(model,[first,rest[i]]);if(pair.power==null)continue;
@@ -111,7 +111,7 @@
     if(chosen.length<singles)return{unavailable:true,reason:'Not enough recorded squad players for this format.'};
     if(chosen.some(p=>p.singlesPower==null))return{unavailable:true,reason:'More singles results are needed to suggest a Power lineup.'};
     const base=chosen.map(p=>p.name),minimum=Math.max(singles,2*doubles),max=minimum+(finals?1:0),extra=eligible.filter(p=>!base.includes(p.name)).sort(powerSort('doubles'));
-    // Standard Sets and Rubbers are searched in full. Very large custom formats
+    // standard Sets and Rubbers are searched in full. very large custom formats
     // use a bounded candidate list so a browser never enumerates millions of squads.
     const required=Math.max(0,minimum-base.length),limit=minimum>6?Math.max(12,required+1):extra.length,candidates=extra.slice(0,limit);
     let best=null,attempts=0;

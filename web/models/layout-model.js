@@ -14,7 +14,7 @@ function bands(rows){
   const bottom=values.filter(value=>value<cuts[6]).length;
   cuts[0]=values.at(-Math.min(3,Math.max(2,top)));
   cuts[6]=Math.floor(values[Math.min(3,Math.max(2,bottom))-1])+1;
-  // Keep room for the middle bands without moving the tail thresholds.
+  // keep room for the middle bands without moving the tail thresholds.
   if(cuts[0]-cuts[6]>=6){
    for(let i=1;i<6;i++)cuts[i]=Math.max(cuts[6]+6-i,Math.min(cuts[i],cuts[i-1]-1));
   }
@@ -31,7 +31,7 @@ function sourceDate(value){
 }
 function evidenceDates(data){
  const groups=(data.results||[]).slice().sort((a,b)=>Number(a.round)-Number(b.round)),known=groups.map(group=>sourceDate(group.date||(group.fixtures||[]).find(f=>sourceDate(f.date))?.date));
- // TROLS regularly leaves the semifinal/final header undated. Keep those
+ // TROLS regularly leaves the semifinal/final header undated. keep those
  // scorecards in chronological rating evidence by placing undated published
  // rounds one week after the preceding published round (or before the next
  // one when the missing run is at the beginning).

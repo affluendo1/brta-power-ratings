@@ -41,7 +41,7 @@
     catch { return M.initial(); }
   }
 
-  // Re-read under an origin-wide lock so tabs can't spend the same balance.
+  // read it again inside the lock so two tabs can't spend the same balls
   async function update(fn, requireEnabled = true) {
     const apply = () => {
       const draft = read();
@@ -450,7 +450,7 @@
     const track = reel.querySelector('.rc-track');
     try {
       if (!skip && track.animate) {
-        // Independent filler draws. The recorded result is always the final card.
+        // independent filler draws. the recorded result is always the final card.
         const weights = redemption ? oldKey.weights : M.wheel(M.probabilities(last.effectiveLuck,last.mutation));
         const final = last;
         track.innerHTML = Array.from({length:29}, () => {
@@ -498,7 +498,7 @@
         }
       }
     } catch {
-      // Navigating away cancels only the presentation. The award is already saved.
+      // navigating away cancels only the presentation. the award is already saved.
       if (dialog.open && dialog.contains(reel)) { busy = false; draw(); }
     } finally { if (version === spinVersion) { animation = null; busy = false; } }
   }

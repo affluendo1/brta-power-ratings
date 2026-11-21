@@ -17,7 +17,7 @@
   }
   async function burst(parent,options){
     const pieces=create(options);parent.append(...pieces);
-    // Query the actual shared animation, including its delay and reduced-motion treatment.
+    // query the actual shared animation, including its delay and reduced-motion treatment.
     await new Promise(resolve=>requestAnimationFrame(resolve));
     await Promise.all(pieces.flatMap(piece=>piece.getAnimations().map(animation=>animation.finished.catch(()=>{}))));
     pieces.forEach(piece=>piece.remove());

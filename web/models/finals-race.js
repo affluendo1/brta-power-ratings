@@ -65,7 +65,7 @@
     });
   }
 
-  // Exhaust final-round points scores for ordinary Sets. Exact points ties
+  // exhaust final-round points scores for ordinary Sets. exact points ties
   // remain open until games percentage is known.
   function finalRoundPaths(rows, fixtures, places, team) {
     fixtures = fixtures.filter(fixture => !bye(fixture));
@@ -149,7 +149,7 @@
       const results = outcomes.map(score => score.hp > score.ap ? 0 : score.hp < score.ap ? 1 : 2);
       const pathKey = results.join('');
       let path = paths.get(pathKey);
-      // Keep the most useful report data bounded for unusually large schedules.
+      // keep the most useful report data bounded for unusually large schedules.
       if (!path && paths.size < 4096) {
         path = { results, count: 0, finishes: names.map(() => Array(places).fill(0)), examples: {} };
         paths.set(pathKey, path);

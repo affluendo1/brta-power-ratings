@@ -1,4 +1,3 @@
-/* Optional ambient sequence. Intentionally separate from ordinary page features. */
 (function(root){
  let context,buffer,loading,started=false;
  const wait=ms=>new Promise(r=>setTimeout(r,ms));

@@ -30,7 +30,7 @@ async function networkFirst(request){
     return await cached()||response;
   }catch{}
   const hit=await cached();if(hit)return hit;
-  // HTML is only a navigation fallback. It is never valid JavaScript, CSS or JSON.
+  // HTML is only a navigation fallback. it is never valid JavaScript, CSS or JSON.
   if(request.mode==="navigate"){
     try{const shell=await cache?.match(scopedUrl("index.html"));if(shell)return shell}catch{}
   }

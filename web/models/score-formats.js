@@ -1,4 +1,3 @@
-/* Shared score semantics for current, historical and custom results. */
 (function(root){'use strict';
 const weights=Object.freeze({RM3:1,RM3b:2});
 function outcomeCode(data,type='Singles'){

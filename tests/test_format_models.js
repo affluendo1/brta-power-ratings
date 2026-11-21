@@ -15,10 +15,10 @@ for(const rules of contracts)for(const model of ['RM4a','RM4b','RM4.1 Ensemble']
  if(model==='RM4.1 Ensemble'){assert.deepEqual(a.excludedComponents,['ML_transfer']);assert(!a.components.ML_transfer);assert(Math.abs(Object.values(a.components).reduce((s,x)=>s+x.weight,0)-1)<1e-10)}
  if(rules.regular.tiebreakAt!=null||rules.regular.fixedGames){const d=F.matchDistribution(rules,{gameProbability:M.sigmoid(a.eta),setTiebreakProbability:M.tb(.4*a.eta).probability,matchTiebreakProbability:M.tb(.4*a.eta,rules.decider?.target||10).probability});assert(Math.abs(d.reduce((s,x)=>s+x.probability,0)-1)<1e-10)}
 }
-// Native 4a must recognize an 8–7 set's tiebreak as 7–7 games plus one point event.
+// native 4a must recognize an 8–7 set's tiebreak as 7–7 games plus one point event.
 const tiebreakRules={mode:'bestOf',sets:1,regular:{target:8,winBy:2,tiebreakAt:7}},m=I.observation({discipline:'singles',home_players:['A'],away_players:['B'],score_components:[{home:8,away:7}]},tiebreakRules),eta=.4,t=M.tb(.4*eta),sig=M.sigmoid(eta),expected=7*Math.log1p(Math.exp(-eta))+7*Math.log1p(Math.exp(eta))-Math.log(t.probability),actual=M.nativeEvidence(m,eta);assert(Math.abs(actual.loss-expected)<1e-10);
 const eps=1e-5,gradient=(M.nativeEvidence(m,eta+eps).loss-M.nativeEvidence(m,eta-eps).loss)/(2*eps);assert(Math.abs(actual.gradient-gradient)<1e-6);
-// Draws do not become losses or Elo away wins.
+// draws do not become losses or Elo away wins.
 const drawRules={mode:'fixedSets',sets:1,regular:{target:8,winBy:1,fixedGames:true}},draw={...I.observation({discipline:'singles',home_players:['A'],away_players:['B'],score_components:[{home:4,away:4}]},drawRules),date:'2026-02-01',round:1};
 for(const model of ['RM4a','RM4b']){const fit=M.fit([draw],model);assert(fit.singles.every(r=>r.losses===0&&r.draws===1));assert(Math.abs(M.gap(fit,target))<1e-10)}assert.deepEqual(M.elo([draw]),{'Singles:A':0,'Singles:B':0});
 assert.throws(()=>I.forecast(M,state,target,contracts[0],'RM4.1 Ensemble'),/configuration/);

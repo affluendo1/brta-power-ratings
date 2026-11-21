@@ -38,7 +38,7 @@
     const extra=Array.from({length:12},(_,i)=>makeCup(i+3));
     await Promise.all(extra.map((cup,i)=>{const point=M.cupPoint(slots[i+3],table.clientWidth,table.clientHeight);return animate(cup,[{opacity:0,transform:'translate('+((point.x-table.clientWidth/2)*1.8)+'px,'+((point.y-table.clientHeight/2)*1.8)+'px)'},{opacity:1,transform:'translate(0,0)'}],{duration:reduced.matches?1:1100,delay:reduced.matches?0:i*55,easing:'cubic-bezier(.22,.65,.25,1)'})}));if(!alive(id))return;
     $('.ms-game-status').textContent='A few more won’t hurt.';await wait(reduced.matches?100:650);if(!alive(id))return;
-    // One continuous compositor animation: no per-move promise gap or collision-prone crossings.
+    // one continuous compositor animation: no per-move promise gap or collision-prone crossings.
     if(!reduced.matches){
       const rotation=Math.random()*15,remask=setTimeout(()=>{if(alive(id))M.shuffled(cups)[0].append(prize)},20160);
       await Promise.all(cups.map((cup,i)=>animate(cup,M.cupOrbit(slots[i],table.clientWidth,table.clientHeight,rotation),{duration:28000,easing:'linear'})));clearTimeout(remask);
@@ -169,7 +169,7 @@
       utterance.onstart=()=>{if(epoch===voiceEpoch){$('#msNarrator')?.classList.add('ms-narrating');voiceLevel=1;}};
       utterance.onboundary=()=>{if(epoch===voiceEpoch)voiceLevel=1};utterance.onend=finish;utterance.onerror=finish;
       currentVoice=utterance;voiceBusy=true;
-      // Some speech engines fail to emit an end/error event. Recover without building a stuck queue.
+      // some speech engines fail to emit an end/error event. recover without building a stuck queue.
       voiceTimeout=setTimeout(()=>{if(currentVoice===utterance&&epoch===voiceEpoch){root.speechSynthesis.cancel();finish();}},Math.max(8000,text.length*140));
       root.speechSynthesis.resume();root.speechSynthesis.speak(utterance);
     }catch{finish();}

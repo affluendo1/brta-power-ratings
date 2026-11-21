@@ -61,8 +61,8 @@ async def main():
         await page.goto(URL, wait_until="domcontentloaded", timeout=30000)
         await dump(page, "00-results")
 
-        # TROLS remembers competition choice in cookies. Prefer the current
-        # Sunday AM 2026 competition, with Spring 2026 first if available.
+        # trols remembers the competition in cookies. prefer the current
+        # sunday AM 2026 competition, with Spring 2026 first if available.
         picked = await choose_matching_option(page, [
             r"Sunday\s*AM.*Spring\s*2026",
             r"Sunday\s*AM.*2026",
@@ -72,7 +72,7 @@ async def main():
             await page.wait_for_timeout(2000)
             await dump(page, "01-competition")
 
-        # If the page exposes a section selector, choose Section 6.
+        # if the page exposes a section selector, choose Section 6.
         picked_section = await choose_matching_option(page, [r"Sets 6"])
         if picked_section:
             await page.wait_for_timeout(2000)
@@ -83,7 +83,7 @@ async def main():
                 (OUT / "open_match.js").write_text(fn, encoding="utf-8")
             except Exception as e:
                 print("Could not inspect open_match:", e)
-            # Open one known completed scorecard so we can inspect its DOM.
+            # open one known completed scorecard so we can inspect its DOM.
             try:
                 await page.goto("https://www.trols.org.au/brta/match_popup.php?matchid=UA009094&seasonid=", wait_until="domcontentloaded")
                 await page.wait_for_timeout(1500)
@@ -91,7 +91,7 @@ async def main():
             except Exception as e:
                 print("Could not open sample scorecard:", e)
 
-        # Save cookies because they reveal which state TROLS uses.
+        # save cookies because they reveal which state TROLS uses.
         (OUT / "cookies.json").write_text(json.dumps(await context.cookies(), indent=2), encoding="utf-8")
         await page.screenshot(path=str(OUT / "page.png"), full_page=True)
         await browser.close()

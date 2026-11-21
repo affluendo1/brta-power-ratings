@@ -1,4 +1,3 @@
-/* 8.4: shared controls, usable phone spacing and one scroll surface per dialog. */
 :root{--band-0:#b78b18;--band-1:#8d63c7;--band-2:#387cbd;--band-3:#218b89;--band-4:#6c8734;--band-5:#bc7628;--band-6:#bc5b4b;--band-7:#bd476d;--nav-sticky-height:58px;--team-tabs-height:0px}
 html{scroll-padding-top:calc(var(--nav-sticky-height) + 16px)}
 #teamLabContent{scroll-margin-top:calc(var(--nav-sticky-height) + var(--team-tabs-height) + 16px)}
@@ -63,7 +62,7 @@ html:not([data-interface="classic"]) :is(.person,.export-link){color:color-mix(i
 @media(min-width:1150px){.round84-nav .round84-arrow{display:none}.round84-externalnav{display:block}.round84-externalnav .round84-arrow{position:fixed;top:var(--sim84-top,50%);transform:translateY(-50%)}.round84-externalnav .round84-arrow:first-child{left:var(--sim84-left,12px);right:auto}.round84-externalnav .round84-arrow:last-child{right:var(--sim84-right,12px);left:auto}}
 
 @media(max-width:680px){.following84-overlay .settings-sheet{width:100%;max-width:100%;height:100dvh;max-height:100dvh;padding:calc(24px + env(safe-area-inset-top)) 14px calc(20px + env(safe-area-inset-bottom))}}
-/* Explicit areas avoid the old label cell creating phantom grid columns. */
+/* explicit areas avoid the old label cell creating phantom grid columns. */
 .fixture-forecast .fixture-rubber{display:grid;align-items:center;min-width:0}
 .fixture-rubber .prediction-rubber>.projection822-side:first-child{grid-area:home;font-size:inherit;letter-spacing:normal;text-transform:none}
 .fixture-rubber .prediction-rubber>.projection822-side:last-child{grid-area:away;text-align:right}

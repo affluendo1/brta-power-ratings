@@ -11,7 +11,7 @@
   const allowed = () => liveStorage.getItem(extrasKey) === '1';
 
   if (!Object.hasOwn(snapshots, alias) || !allowed()) {
-    // Stop the old page before its inline settings and application scripts run.
+    // stop the old page before its inline settings and application scripts run.
     window.stop();
     location.replace(currentSite);
     return;
@@ -30,7 +30,7 @@
     };
   }
 
-  // Old display settings and custom competitions belong to their own release.
+  // old display settings and custom competitions belong to their own release.
   Object.defineProperties(window, {
     localStorage: { value: tikituffStorage(liveStorage) },
     sessionStorage: { value: tikituffStorage(liveSession) },

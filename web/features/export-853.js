@@ -1,4 +1,3 @@
-/* 8.5.3 default-section export chooser and daily results-check information. */
 (function(root){
 'use strict';
 const $=s=>document.querySelector(s),esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));

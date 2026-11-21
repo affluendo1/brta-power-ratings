@@ -1,4 +1,3 @@
-/* Reading pages and match planning, from a phone to a full-width screen. */
 #layoutOverlay{display:flex;align-items:center;justify-content:center;padding:20px;isolation:isolate}
 #layoutOverlay.hidden{display:none}
 #layoutOverlay .settings-sheet{position:relative;inset:auto;transform:none;width:min(1050px,100%);height:auto;max-height:calc(100dvh - 40px);margin:0;padding:28px;overflow-y:auto;overscroll-behavior:contain;scrollbar-gutter:stable;border:1px solid var(--border-color);border-radius:18px}
@@ -101,7 +100,7 @@
 .lineup-position-grid select{font-size:15px!important;min-height:44px;width:100%;min-width:0}.lineup-position-grid label{min-width:0}.lineup-week>summary strong small{display:block;font-size:11px;font-weight:500;color:var(--muted-color);text-align:right;margin-top:4px}
 @media(max-width:680px){.lineup-position-grid{grid-template-columns:1fr}.lineup-position-grid select{font-size:15px!important}}
 
-/* Frontier model reference and full rules guide. */
+/* frontier model reference and full rules guide. */
 .model-guide .guide-model-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
 .model-guide .guide-model:first-child{border-color:var(--primary)}
 .guide-detail-body{padding:0 20px 20px}

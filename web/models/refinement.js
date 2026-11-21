@@ -1,4 +1,3 @@
-/* Shared 8.2.2 presentation decisions; pure functions for tables and exports. */
 (function(root){'use strict';
 const blend=(ultra,singles)=>Number.isFinite(ultra)&&Number.isFinite(singles)?Math.round((ultra+singles)/2):null;
 function decodeIndex(data){const fields=['player','team','rating','wins','losses','gf','ga','matches','se','qualified','pairEffect','individualAverage'];return(data.entries||[]).map(entry=>({...data.sections[entry[0]],...Object.fromEntries(fields.map((f,i)=>[f,entry[i+1]]))}))}

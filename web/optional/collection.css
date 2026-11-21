@@ -1,4 +1,3 @@
-/* Archive view styles. */
 .extras-access{display:flex;justify-content:flex-end;margin-top:8px}
 
 body.portal-active{background:#05070d;color:#f8f1df;overflow-x:hidden;overflow-y:auto!important}body.portal-active>.site-header,body.portal-active>.wrap,body.portal-active>.site-footer,body.portal-active>.overlay:not(#modeSwitchOverlay),body.portal-active>#syncToastHost{display:none!important}.royal-archive.hidden{display:none!important}
@@ -28,7 +27,7 @@ body.portal-active{background:#05070d;color:#f8f1df;overflow-x:hidden;overflow-y
 @keyframes royalTransitionSweep{to{transform:translateX(21%) rotate(8deg)}}
 @media(prefers-reduced-motion:reduce){.mode-switch.royal-transition::before{animation:none}}
 
-/* Basavision: the throne remains behind every chapter; content is deliberately glass, not a new opaque page. */
+/* basavision: the throne remains behind every chapter; content is deliberately glass, not a new opaque page. */
 .royal-archive{background:linear-gradient(90deg,rgba(2,5,13,.89),rgba(3,8,21,.63) 52%,rgba(2,5,14,.86)),url('../../assets/sid-throne-hero.png') center 30%/cover fixed!important}
 .royal-archive::before{opacity:.52!important;background-image:linear-gradient(90deg,transparent 49.8%,rgba(252,211,118,.12) 50%,transparent 50.2%),linear-gradient(rgba(255,255,255,.024) 1px,transparent 1px)!important}
 .archive-section,.archive-plaque{border-left:1px solid rgba(255,231,164,.12);border-right:1px solid rgba(255,231,164,.12);background:linear-gradient(130deg,rgba(5,10,25,.76),rgba(12,22,49,.48));backdrop-filter:blur(13px) saturate(1.18);box-shadow:0 22px 60px rgba(0,0,0,.24),inset 0 1px rgba(255,239,180,.08)}
@@ -49,7 +48,7 @@ body.portal-active{background:#05070d;color:#f8f1df;overflow-x:hidden;overflow-y
 @media(max-width:760px){.archive-section{padding-left:15px;padding-right:15px}.royal-side-quote{display:none}.archive-image-frame figcaption span{display:none}.royal-idle-symbol{font-size:24px}.archive-plaque{padding-left:12px;padding-right:12px}.crown-item{padding-top:84px}.royal-trophy{width:64px}.sid-rise-figure{width:min(110vw,620px)!important}.archive-lightbox{padding:55px 12px}.archive-lightbox p{font-size:9px}}
 @media(prefers-reduced-motion:reduce){.royal-idle-symbol,.royal-side-quote,.royal-trophy,.crown-item::before,.record-stat::after,.record-stat b,.archive-image-frame::before,.sid-effect-button{animation:none!important}.sid-rise-figure{animation:sidPop .8s ease both!important}.royal-confetti{display:none}}
 
-/* Royal archive, version 25: one uninterrupted glass gallery over Sid's throne. */
+/* royal archive, version 25: one uninterrupted glass gallery over Sid's throne. */
 .royal-archive{background:radial-gradient(circle at 50% 12%,rgba(255,223,132,.34),transparent 23%),linear-gradient(90deg,rgba(2,5,13,.88),rgba(13,9,5,.45) 51%,rgba(2,5,14,.83)),url('../../assets/sid-throne-hero.png') center 30%/cover fixed!important}
 .archive-hero{border-bottom:0}
 .hero-copy{width:min(1170px,calc(100% - 24px));padding-left:clamp(8px,1.3vw,19px);padding-right:clamp(8px,1.3vw,19px);overflow:visible}
@@ -118,19 +117,19 @@ body.portal-active{background:#05070d;color:#f8f1df;overflow-x:hidden;overflow-y
 @media(max-width:760px){.hero-copy{width:calc(100% - 12px);padding-left:8px;padding-right:8px}.hero-copy h1{font-size:clamp(26px,8.8vw,55px);line-height:1.08;letter-spacing:0}.archive-story{width:calc(100% - 14px);margin-bottom:20px;padding:18px 15px 30px;border-radius:18px}.archive-story .archive-section,.archive-story .archive-plaque{padding:33px 0}.archive-duo,.royal-colour-gallery{grid-template-columns:1fr!important}.archive-image-frame img{aspect-ratio:1672/941}.royal-colour-photo,.royal-colour-photo img{min-height:240px}.royal-colour-gallery .testimonial-djokovic{grid-column:auto}.archive-testimonial{margin-top:23px;padding:21px}.archive-testimonial blockquote{font-size:20px}.record-strip{grid-template-columns:repeat(2,1fr)}.armament{grid-template-columns:1fr;text-align:center}.blade-racket{justify-self:center;width:195px}.sid-effect-button{right:13px;bottom:14px;width:94px;height:94px}.sid-effect-button span{font-size:8px}.sid-effect-button b{font-size:25px}.sid-rise-figure{height:116svh}.royal-confetti{width:8px;height:14px}}
 @media(prefers-reduced-motion:reduce){.hero-copy h1,.blade-racket,.sid-effect-button,.sid-rise-stage::before,.sid-rise-stage::after{animation:none!important}.sid-rise-figure{height:96svh;animation:sidRiseReduced .8s ease both!important}.royal-confetti{display:none}}
 
-/* Keep the floating archive language visible over the glass, without intercepting clicks. */
+/* keep the floating archive language visible over the glass, without intercepting clicks. */
 .royal-atmosphere,.royal-quote-field{z-index:6}
 .royal-idle-symbol{color:rgba(255,229,146,.52);text-shadow:0 0 24px rgba(255,210,79,.68)}
 .royal-side-quote{color:rgba(255,242,200,.64);text-shadow:0 2px 16px rgba(0,0,0,.92)}
 
-/* Carousel entries retain their full-screen lightbox and gain next/previous navigation. */
+/* carousel entries retain their full-screen lightbox and gain next/previous navigation. */
 .archive-lightbox .lightbox-nav{display:none;align-items:center;justify-content:center;top:50%;width:58px;height:72px;margin-top:-36px;border:1px solid rgba(255,229,154,.84);border-radius:16px;background:rgba(10,8,8,.66);color:#fff1bf;font-size:46px;line-height:1;backdrop-filter:blur(12px);z-index:2}
 .archive-lightbox.is-carousel .lightbox-nav{display:flex}.archive-lightbox .lightbox-prev{left:clamp(12px,3vw,42px);right:auto}.archive-lightbox .lightbox-next{right:clamp(12px,3vw,42px);left:auto}
 @media(max-width:760px){.archive-lightbox .lightbox-nav{width:44px;height:58px;margin-top:-29px;font-size:35px;border-radius:12px}.archive-lightbox .lightbox-prev{left:8px}.archive-lightbox .lightbox-next{right:8px}}
 @keyframes sidRiseReduced{0%{opacity:0;transform:translate(-50%,108svh) scale(.84)}45%,72%{opacity:1;transform:translate(-50%,0) scale(1)}100%{opacity:0;transform:translate(-50%,0) scale(1)}}
 
 
-/* Synchronized Sid arrival: keep the motion on its own fixed layer for mobile Safari. */
+/* synchronized Sid arrival: keep the motion on its own fixed layer for mobile Safari. */
 .sid-rise-figure{
   will-change:transform,opacity;
   -webkit-backface-visibility:hidden;

@@ -1,4 +1,4 @@
-// Keep prediction coverage independent of when TROLS publishes the real fixtures.
+// keep prediction coverage independent of when TROLS publishes the real fixtures.
 module.exports = function addTestScheduledRound(data) {
   const groups = [...data.results, ...data.upcomingFixtures];
   const round = Math.max(...groups.map(group => Number(group.round)).filter(Number.isFinite)) + 1;

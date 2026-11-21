@@ -1,4 +1,4 @@
-/* Diagnostic only: no hyperparameter selection or tuning on these outcomes.
+/* diagnostic only: no hyperparameter selection or tuning on these outcomes.
  * Usage: node validation/compare_models.js data/site/sections/UA009.json
  */
 'use strict';
@@ -15,7 +15,7 @@ function evaluate(data){
    const fits=fitsFor(past),state={fits,matches:past.map(m=>({...m})),elo:M.elo(past)};
    for(const m of state.matches){const earlier=past.filter(r=>r.round<m.round&&r.date<m.date);if(new Set(earlier.map(r=>r.round)).size<3)continue;const fit=fitsFor(earlier).RM4b;m.preProbability=M.sigmoid(bundle.baseAlpha*M.logit(M.win(M.gap(fit,m),{target:m.target,green:m.green,bestOf:m.bestOf,matchTiebreak:m.matchTiebreak})))}
    for(const m of targets.filter(m=>m.date===date)){
-    // Common support: both singles players must already have played a singles match.
+    // common support: both singles players must already have played a singles match.
     if(![...m.home,...m.away].every(p=>past.some(r=>r.type==='Singles'&&(r.home.includes(p)||r.away.includes(p)))))continue;
     records.push({round,date,y:Number(m.winner==='home'),probabilities:Object.fromEntries(models.map(model=>[model,M.forecast(state,m,bundle,model).p]))});
    }

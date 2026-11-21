@@ -45,7 +45,7 @@ def parse_club(html, name):
                 values=[clean(c.get_text(' ')) for c in row.find_all('td',recursive=False)]
                 if len(values)>=4:
                     record['contacts'].append(dict(zip(['role','name','phone','email'],values[:4])))
-    # Additional published website/court details are in the detail table itself.
+    # additional published website/court details are in the detail table itself.
     for link in details.find_all('a',href=True):
         if link['href'].startswith(('https://','http://')):
             record['websites'].append(link['href'])

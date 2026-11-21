@@ -173,7 +173,7 @@ def _scorecards(section: dict) -> None:
     section["singles"], section["doubles"] = singles, doubles
     section["draw"] = sync.attach_draw_ids(section.get("draw", []), fixtures)
     draw_keys = {(int(x["round"]), x["home_team"], x["away_team"]) for x in section["draw"]}
-    # TROLS' draw page normally contains regular fixtures only. Add actual
+    # TROLS' draw page normally contains regular fixtures only. add actual
     # playoff fixtures directly from the published results page, preserving
     # official match IDs, team order, status and any date TROLS supplies.
     for fixture in fixtures:
@@ -208,9 +208,9 @@ def _fetch_section(meta: dict) -> dict:
     section["validation_warnings"] = sync.validate_dataset(
         section["fixtures"], section["singles"], section["doubles"],
         section["source_section_code"], green_ball=meta["green_ball"],
-        # Published historic pages occasionally contain incomplete scorecards
+        # published historic pages occasionally contain incomplete scorecards
         # or aggregate totals that do not match the individual rubber rows.
-        # Retain both TROLS records, record the discrepancy, and keep the live
+        # retain both TROLS records, record the discrepancy, and keep the live
         # current-season sync on its stricter validation path.
         allow_source_discrepancies=True,
     )

@@ -42,7 +42,7 @@
         check();
       });
     }
-    // Recheck in case Extras was turned off in another tab during activation.
+    // recheck in case Extras was turned off in another tab during activation.
     if (localStorage.getItem(extrasKey) !== '1') {
       location.replace(currentSite);
       return;
