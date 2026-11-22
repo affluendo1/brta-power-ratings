@@ -110,3 +110,4 @@ async function checkScorecardAndEditor(page) {
   console.error(error);
   process.exitCode = 1;
 });
+/* BRTA Power Ratings 9.9g */

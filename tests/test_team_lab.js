@@ -33,3 +33,4 @@ const noDoubles=structuredClone(payload);noDoubles.meta.customRules={singlesSlot
 const empty={meta:{},teams:[{team:'Empty'}],standings:[],results:[]};m=M.build(empty,'Empty');assert.equal(m.days.length,0);assert(M.suggest(m).unavailable);
 const partial=structuredClone(payload);partial.results[0].fixtures[0].rubbers.push({type:'Doubles',position:'No. 2',home:'Unknown / Other',away:'Core Two / Core Three',winner:'',awayEmergency:true});m=M.build(partial,'A');assert(m.days[1].uncertainEmergency);assert(!m.days[1].selected['Core Two'].emergency,'An aggregate emergency flag must not mark both partners');
 console.log('Team Lab model passed: per-day participation, chronological selections, main/emergency/history squads, doubles match records, Power lineup, fifth-player doubles specialist, distinct pairs, custom formats and empty data.');
+/* BRTA Power Ratings 9.9g */

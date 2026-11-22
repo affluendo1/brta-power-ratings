@@ -70,3 +70,4 @@ for(const through of [null,5,6]){
  assert(basement.every(row=>foundational.every(other=>row.rating<=other.rating)));
 }
 console.log('Basement stays below every Foundational rating, including provisional entries and round snapshots.');
+/* BRTA Power Ratings 9.9g */

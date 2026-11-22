@@ -155,3 +155,4 @@
   root.BRTAClubMap = api;
   if (typeof module !== 'undefined') module.exports = api;
 })(typeof window === 'undefined' ? globalThis : window);
+/* BRTA Power Ratings 9.9g */

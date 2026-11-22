@@ -246,3 +246,4 @@
   const api={validate,score,roundStage,roundLabel,fit,build,clone,specialistCompatible,attendance,ratingEvidence,V3B_WEIGHTS,RM3_MATCH_TIEBREAK_WEIGHT,NO_PLAYER};root.CustomSectionModel=api;if(typeof module!=='undefined')module.exports=api;
 })(typeof window!=='undefined'?window:globalThis);
 
+/* BRTA Power Ratings 9.9g */

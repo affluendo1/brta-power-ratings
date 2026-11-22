@@ -32,3 +32,4 @@ output = dict(source=f'scikit-learn {sklearn.__version__}; expanded per-game row
 path = ROOT / 'tests/fixtures/rm1-sklearn.json'
 path.write_text(json.dumps(output, indent=2) + '\n')
 print(f'Wrote independent {len(names)}-player, {len(rows)}-game reference to {path.name}')
+# BRTA Power Ratings 9.9g

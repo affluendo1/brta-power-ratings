@@ -410,3 +410,4 @@
   if (typeof module === 'object') module.exports = api;
   else root.BRTARacquetModel = api;
 })(globalThis);
+/* BRTA Power Ratings 9.9g */

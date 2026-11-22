@@ -14,3 +14,4 @@ for p in sorted(fresh.glob('*/entities/section/*.json')):
 result={'asOf':'2026-11-02 live section listings','scope':'Current selector sections refreshed from all 12 association directories. New match-page downloads and clubs disabled; this is not a complete scorecard refresh.','coverage':dict(counts),'sectionCount':len(rows),'associations':manifests,'errors':len(errors),'currentSectionsAbsentFromSnapshot':sum(not r['retainedSectionFound'] for r in rows),'newScorecardReferences':sum(r['listedScorecardsAbsentFromSnapshot'] for r in rows),'sections':rows}
 if len(manifests)!=12 or not all(x['finished'] and not x['errors'] for x in manifests.values()):raise SystemExit('Refresh is not finished without errors for every association')
 out.write_text(json.dumps(result,indent=2)+'\n');print({k:result[k] for k in ['coverage','sectionCount','errors','currentSectionsAbsentFromSnapshot','newScorecardReferences']})
+# BRTA Power Ratings 9.9g

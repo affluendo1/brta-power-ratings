@@ -39,7 +39,7 @@ esc();await tick();assert(w.document.querySelector('#layoutOverlay').classList.c
 click('[data-studio="theme"]');await tick();esc();await tick();assert(w.document.querySelector('#themeStudioOverlay').classList.contains('hidden'));assert(!w.document.querySelector('#settingsOverlay').classList.contains('hidden'));console.log('Theme creator Escape preserves Settings');
 click('[data-changelog-open]');await tick();
 assert.equal(w.document.querySelector('.release-heading h3').textContent,w.BRTA_RELEASES.find(release=>release.size==='major').version);
-assert.equal(w.BRTAChangelog.version,'9.9f');
+assert.equal(w.BRTAChangelog.version,'9.9g');
 for(const release of w.BRTA_RELEASES.slice(0,6)){
   assert.equal(w.document.querySelector('[data-release-version="'+release.version+'"] h4').textContent,
     release.version+' · '+release.title);
@@ -348,3 +348,4 @@ assert.equal(totalsDoc.querySelector('.result-points .win').textContent,'8');
 if(errors.length)throw Error(errors.join('\n'));console.log('No script/runtime errors');closeDOM();})().catch(e=>{console.error(e.stack);console.error(errors);closeDOM();process.exitCode=1});
 
 
+/* BRTA Power Ratings 9.9g */

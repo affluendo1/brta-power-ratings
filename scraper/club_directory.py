@@ -62,3 +62,4 @@ def collect_directory(request_get, request_post, workers=6):
     with ThreadPoolExecutor(max_workers=workers) as pool:
         clubs=list(pool.map(load,options))
     return {'version':1,'source':URL,'clubs':sorted(clubs,key=lambda c:c['id'])}
+# BRTA Power Ratings 9.9g

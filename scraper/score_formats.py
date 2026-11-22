@@ -88,3 +88,4 @@ def rating_counts(frame, model="RM3", match_tiebreak_weight=None, match_tiebreak
             h[i] += weight * share
             a[i] += weight * (1 - share)
     return h, a
+# BRTA Power Ratings 9.9g

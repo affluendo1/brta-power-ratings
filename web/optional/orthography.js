@@ -90,3 +90,4 @@
  const api={tiles,digraphs,trigraphs,quadgraphs,commonPairs,bandNames,normalise,analyse,analysePair,pairScope,createSummaryScorer,highest,rank};root.BRTAOrthography=api;if(typeof module!=='undefined')module.exports=api;
 })(typeof window==='undefined'?globalThis:window);
 
+/* BRTA Power Ratings 9.9g */

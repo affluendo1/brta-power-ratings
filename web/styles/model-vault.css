@@ -231,3 +231,4 @@ body:has(:is(#modelChamberOverlay, #modelVaultOverlay, #vaultConsoleOverlay):not
   .archive-calculator .settings-sheet { animation:archive-calculator-arrival .55s .12s ease-out both }
 }
 @keyframes archive-calculator-arrival { from { translate:0 100dvh } }
+/* BRTA Power Ratings 9.9g */

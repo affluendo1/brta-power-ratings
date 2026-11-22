@@ -7,3 +7,4 @@ function needsSection(row,sectionCode,seasonKey){const targetSeason=row.isCurren
 const layouts={square:{w:1200,h:1200,header:.24,footer:.92,columns:1},portrait:{w:1080,h:1440,header:.24,footer:.93,columns:1},story:{w:1080,h:1920,header:.25,footer:.90,columns:1},landscape:{w:1600,h:1000,header:.27,footer:.91,columns:2}};
 const api={blend,decodeIndex,scoped,search,needsSection,layouts};root.BRTARefinement=api;if(typeof module!=='undefined')module.exports=api;
 })(typeof window==='undefined'?globalThis:window);
+/* BRTA Power Ratings 9.9g */

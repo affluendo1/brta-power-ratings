@@ -54,3 +54,4 @@
     status.textContent = 'Couldn’t start the historical viewer. Reload this page on a supported browser to try again.';
   });
 })();
+/* BRTA Power Ratings 9.9g */

@@ -169,3 +169,4 @@
   updateEntry();bindSettings();
   if(unlocked())queueMicrotask(()=>window.dispatchEvent(new Event('brta-module-toggle')));
 })();
+/* BRTA Power Ratings 9.9g */

@@ -138,3 +138,4 @@ if __name__=="__main__":
 #
 # A ranked Overall entry requires 4 singles and 4 doubles appearances.
 # entries below any publication threshold may still be shown as provisional.
+# BRTA Power Ratings 9.9g

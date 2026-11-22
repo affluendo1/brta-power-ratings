@@ -160,3 +160,4 @@ window.addEventListener('brta-section-ready',()=>{updateBadge();if(!checked&&D?.
 })();
 
 
+/* BRTA Power Ratings 9.9g */

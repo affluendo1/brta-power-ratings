@@ -61,3 +61,4 @@ class ClubInformationTests(unittest.TestCase):
 
     def test_absent_table_is_empty(self):
         self.assertEqual(parse_club_information('<p>No information</p>'), [])
+# BRTA Power Ratings 9.9g

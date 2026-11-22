@@ -73,3 +73,4 @@ console.log('Roster text, matching IDs, row order, archival/reactivation, transf
   assert.equal(M.score(during.rubbers[1],rules).score,'3-2 unfinished');
   console.log('Washouts preserve started scorecards or clear both squads when no play started.');
 }
+/* BRTA Power Ratings 9.9g */

@@ -102,3 +102,4 @@ class PlayerSearchTests(unittest.TestCase):
             self.assertEqual({row['seasonKey'] for row in index['sections']}, {'AA:2026','UA:2010','UA:2011'})
             self.assertEqual(len(index['unavailableSections']), 3)
             self.assertEqual(index['sections'][1]['dataPath'], 'one.json')
+# BRTA Power Ratings 9.9g

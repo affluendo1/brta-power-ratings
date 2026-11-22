@@ -11,3 +11,4 @@ class DirectoryTests(unittest.TestCase):
  def test_history_candidate_cohorts_keep_extremes_and_ties(self):
   rows=[dict(player=str(i),team='A',seasonKey='S',sectionCode='1',rating=i,wins=0,losses=i,gf=0,ga=i,qualified=i>2) for i in range(30)]
   c=rating_candidates({'singles':rows});self.assertTrue(any(r['rating']==29 for r in c['ranked']['singles']));self.assertFalse(any(r['rating']==0 for r in c['ranked']['singles']));self.assertTrue(any(r['rating']==0 for r in c['all']['singles']))
+# BRTA Power Ratings 9.9g

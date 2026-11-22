@@ -687,3 +687,4 @@ html[data-theme="neon-plus"] #profileOverlay:has(#profileContent:not([hidden]) .
 #profileOverlay:has(#profileContent:not([hidden]) .lab-performance-band:is(.b18,.b19)) :is(.profile-sheet,.profile-match-explorer) :is(.person,.team-colour) {
   color: var(--rare-accent);
 }
+/* BRTA Power Ratings 9.9g */

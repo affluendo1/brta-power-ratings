@@ -5,3 +5,4 @@
  document.addEventListener('click',e=>{if(e.target.closest('[data-standings841-history]')){open();return}const b=e.target.closest('[data-standings841-round]');if(b){selected=b.dataset.standings841Round==='latest'?null:Number(b.dataset.standings841Round);if(b.closest('.shared-sheet-overlay'))BRTAOverlays.dismissSheet();renderStandings()}});
  window.BRTAStandingsHistory={open,getRound:()=>selected};if(D)renderStandings();
 })();
+/* BRTA Power Ratings 9.9g */

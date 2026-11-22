@@ -26,3 +26,4 @@ function evaluate(data){
 }
 if(require.main===module){const files=process.argv.slice(2);if(!files.length)throw Error('Pass section JSON files.');console.log(JSON.stringify({purpose:'Round-frozen diagnostic on already inspected data; not a new untouched holdout. No model tuning.',support:'Singles with both players previously seen in singles, at least three earlier rounds; strictly earlier round AND date. All models use identical targets.',sections:files.map(f=>evaluate(JSON.parse(fs.readFileSync(f,'utf8'))))},null,2))}
 module.exports={evaluate};
+/* BRTA Power Ratings 9.9g */

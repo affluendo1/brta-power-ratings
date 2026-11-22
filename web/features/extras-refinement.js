@@ -14,3 +14,4 @@ const oldTheme=applyTheme;applyTheme=function(){oldTheme();accentStyle()};accent
 const settings=openSettings;openSettings=function(){settings();let prefs={};try{prefs=JSON.parse(localStorage.getItem('brta-more-settings-v1')||'{}')}catch{}if(prefs.black){$('.display-settings').insertAdjacentHTML('beforeend','<div class="setting-row black822-setting"><label><b>Black + accent</b><input type="color" id="black822Accent" value="'+(localStorage.getItem('brta-black-plus-accent')||'#d4cbff')+'"></label><button class="export-link" id="black822Reset">Reset</button></div>');$('#black822Accent').oninput=e=>{localStorage.setItem('brta-black-plus-accent',e.target.value);applyTheme()};$('#black822Reset').onclick=()=>{localStorage.removeItem('brta-black-plus-accent');$('#black822Accent').value='#d4cbff';applyTheme()}}};$('#settingsBtn').onclick=openSettings;
 syncTranslator();
 })(window);
+/* BRTA Power Ratings 9.9g */

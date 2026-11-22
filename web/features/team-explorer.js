@@ -43,3 +43,4 @@ document.addEventListener('click',e=>{const pair=e.target.closest('[data-project
 document.addEventListener('change',e=>{if(!e.target.matches('[data-predict-pair-check]'))return;const input=e.target,side=selectedPrediction?.[input.dataset.side];if(!side)return;const index=+input.dataset.pair,pair=side.doubles[index]||[],name=input.value;side.manualPairs=true;if(input.checked){if(pair.length>=2){input.checked=false;return}side.doubles[index]=[...pair,name]}else side.doubles[index]=pair.filter(p=>p!==name);selectedPrediction.simulation=null;refreshPrediction()});
 })(window);
 
+/* BRTA Power Ratings 9.9g */

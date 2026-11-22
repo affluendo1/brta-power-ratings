@@ -343,3 +343,4 @@
   }
   root.CustomSections={catalog,payload,bindSettings,bindHeader,open,openSection,openFixture,openBackup,metadata,validate:M.validate};
 })(window);
+/* BRTA Power Ratings 9.9g */

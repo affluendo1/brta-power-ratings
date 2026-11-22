@@ -132,3 +132,4 @@
   overlay.addEventListener('wheel', event => event.preventDefault(), { passive: false });
   root.BRTAActivity = { run };
 })(window);
+/* BRTA Power Ratings 9.9g */

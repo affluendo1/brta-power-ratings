@@ -13,3 +13,4 @@ const simulation=simulationHTML;simulationHTML=function(result,...args){let html
 const rules=brtaRulesHTML;brtaRulesHTML=function(){return '<div class="eight-reading"><h3>Other BRTA competitions</h3><p>Saturday afternoon and the weekday competitions retain TROLS’s published points and ladder order. Their scorecards can use doubles-only days, longer sets and multi-set doubles. Predictions use the format observed in that section and remain estimates. Missing starting times and unpublished results are not inferred. The Colin and Lin Price Award is not included.</p></div>'+rules()};
 })();
 
+/* BRTA Power Ratings 9.9g */

@@ -54,3 +54,4 @@
     window.addEventListener("load",()=>navigator.serviceWorker.register("./sw.js",{scope:"./"}).catch(()=>{}),{once:true});
   }
 })();
+/* BRTA Power Ratings 9.9g */

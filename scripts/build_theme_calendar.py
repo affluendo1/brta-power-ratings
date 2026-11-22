@@ -47,3 +47,4 @@ if __name__ == "__main__":
         + ",\n".join("  " + json.dumps(theme, ensure_ascii=False, separators=(",", ":")) for theme in themes)
         + "\n];\n"
     )
+# BRTA Power Ratings 9.9g

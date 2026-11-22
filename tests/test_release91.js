@@ -96,3 +96,4 @@ assert(index.sections > 1500);
 assert(index.scores['6-4'][0] > 1000);
 assert(index.scores['6-4'][1][0] < index.scores['6-4'][2][0]);
 console.log('Finals race math, exact routes and scoreline index passed');
+/* BRTA Power Ratings 9.9g */

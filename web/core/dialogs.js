@@ -103,3 +103,4 @@
   root.BRTAOverlays={top,lock,unlock,sync,openSheet,dismissSheet,register:(id,callback)=>callbacks.set(id,callback)};
 })(window);
 
+/* BRTA Power Ratings 9.9g */

@@ -178,3 +178,4 @@ retiredRubber.status='Retired';retiredRubber.score='3-2 ret.';retiredRubber.winn
 const retirementBackup=Exports.toBackup(retirement).sections[0];
 assert.equal(retirementBackup.rounds.find(r=>r.number===4).fixtures[0].rubbers[0].winner,'away');
 console.log('Export refinements: absent slots, No Contest, winner sides, doubles-only rules and calendar order passed');
+/* BRTA Power Ratings 9.9g */

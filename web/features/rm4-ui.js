@@ -44,3 +44,4 @@ simulateRound=function(round){if(!predictionEvidenceReady(Number(round)-1))retur
 profileMatchupResult=function(name,opponent,round=null){return predictionEvidenceReady(round)?comparison(name,opponent,round):predictionEvidenceNotice()};
 lab8PairComparison=function(name,opponent,round=null){return predictionEvidenceReady(round)?pair(name,opponent,round):predictionEvidenceNotice()};
 })();
+/* BRTA Power Ratings 9.9g */

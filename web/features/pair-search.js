@@ -52,3 +52,4 @@ root.BRTAPairSource={source,openRow,visible:[]};
 // resolve render handlers at event time, after optional views have decorated them.
 $('#teamFilter').onchange=()=>renderRatings();$('#search').oninput=()=>renderRatings();
 })(window);
+/* BRTA Power Ratings 9.9g */

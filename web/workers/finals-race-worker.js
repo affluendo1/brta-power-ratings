@@ -39,3 +39,4 @@ self.onmessage = ({ data }) => {
     self.postMessage({ error: error.message || 'The forecast failed.' });
   }
 };
+/* BRTA Power Ratings 9.9g */

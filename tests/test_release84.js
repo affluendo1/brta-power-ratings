@@ -13,3 +13,4 @@ const unknown=S.project(data,[fixture('A','B',null,null,0,36)]);assert(unknown.e
 assert.equal(S.current({...data,results:[]})[0].pointsChange,null);console.log('8.4: fixed per-model scales preserve predictions; standings movements, washouts, simulated ranks/points, missing published points and source immutability passed.');
 
 const finals={...fixture('A','B',0,1000,0,36),round:15,stage:'semi_final'};assert.equal(S.current({...data,results:[...data.results,{round:15,stage:'semi_final',fixtures:[finals]}]})[0].pointsChange,5);assert.deepEqual(S.project(data,[finals]).map(r=>[r.team,r.points,r.positionChange,r.pointsChange]),data.standings.map(r=>[r.team,r.points,0,0]));
+/* BRTA Power Ratings 9.9g */

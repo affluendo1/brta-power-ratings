@@ -12,3 +12,4 @@ for p in fresh.glob('*/entities/section/*.json'):
  for mid in sorted(ids-old.get(key,set())):
   a,comp,season,section=key;c=collectors.setdefault(a,Collector(a,out));html,raw=c.read('match_popup.php',params={'matchid':mid,'seasonid':season,'daytime':comp,'section':section},context={'competition':comp,'season':season,'section':section});parsed=parse_scorecard(html);path=c.store.entity('match',mid,season,{'raw_path':raw,'data':parsed},competition=comp);refs.append({'association':a,'competition':comp,'season':season,'section':section,'label':x.get('section_label'),'path':str(Path(a)/path),'normalised':parsed['normalised']});print(a,comp,season,section,mid,parsed['normalised'],flush=True)
 out.mkdir(parents=True,exist_ok=True);(out/'manifest.json').write_text(json.dumps({'scope':'Scorecards referenced by live 2 November 2026 current sections but absent from retained 1 November archive','scorecards':refs},indent=2)+'\n')
+# BRTA Power Ratings 9.9g

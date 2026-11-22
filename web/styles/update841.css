@@ -36,3 +36,4 @@ html[data-interface="classic"] .round841-tools .button{border:2px outset var(--c
 html[data-interface="classic"] .fixture-match{display:grid;position:relative;min-height:54px;padding:8px 9px 24px!important;font-size:13px;gap:7px;line-height:1.3}
 html[data-interface="classic"] .fixture-match small{position:absolute;bottom:5px;line-height:1.2;font-size:10px}
 .round841-counter>span{background:var(--surface);border:1px solid var(--border-color);padding:4px 8px;color:var(--text-color);line-height:1.3}
+/* BRTA Power Ratings 9.9g */

@@ -177,3 +177,4 @@
   }
   const api={parse,merge,finish,lineup,generate,makeMatch,scoreSets,date,plusDays,doublesPairs,hasEnteredResults,hasPlayed,noPlayWashout,washOut,fillMissing,rosterPlayers,rosterText,replaceRoster,playerReferences};root.CustomSectionTools=api;if(typeof module!=='undefined')module.exports=api;
 })(typeof window!=='undefined'?window:globalThis);
+/* BRTA Power Ratings 9.9g */

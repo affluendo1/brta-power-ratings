@@ -34,3 +34,4 @@ const vm=require('node:vm');
   pending=[];const cancelled=C.burst(parent,{count:1});frames.shift()();pending[0].cancel(new Error('scene removed'));await cancelled;
   console.log('Shared confetti: identical pieces, slowed duration, complete-burst wait, tiny final piece and cancellation passed.');
 })().catch(error=>{console.error(error);process.exitCode=1});
+/* BRTA Power Ratings 9.9g */

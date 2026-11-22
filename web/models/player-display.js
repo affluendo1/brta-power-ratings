@@ -24,3 +24,4 @@ function start(){
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start,{once:true});else start();
 root.BRTAPlayerDisplay=Object.freeze({display,isUnknown,scrub});
 })(window);
+/* BRTA Power Ratings 9.9g */

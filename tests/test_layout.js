@@ -22,3 +22,4 @@ const excluded=structuredClone(d);excluded.results[0].fixtures[0].rubbers[0].val
 const dated=structuredClone(d);dated.results[0].fixtures[0].date='2026-10-18';assert.equal(L.observations(dated)[0].date,'2026-10-18');
 console.log('Undated playoffs, invalid dates, ISO dates and excluded scorecards passed.');
 
+/* BRTA Power Ratings 9.9g */

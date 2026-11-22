@@ -233,3 +233,4 @@ window.addEventListener('brta-section-ready', render);
 render();
 })();
 
+/* BRTA Power Ratings 9.9g */

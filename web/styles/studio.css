@@ -8,3 +8,4 @@ html[data-theme="black-plus"][data-ms-void]{--primary:#d4cbff!important;--primar
 html[data-personal-tone="dark"] .team-colour{color:var(--team-colour-dark)}.studio-mobile-device .studio-preview{display:none}.studio-mobile-device .studio-mobile{display:block}.studio-mobile-device .studio-layout{display:block}
 
 .deeds-overlay{animation:deeds-blackout .6s ease-out both}@keyframes deeds-blackout{from{opacity:0}to{opacity:1}}@media(prefers-reduced-motion:reduce){.deeds-overlay{animation:none}}
+/* BRTA Power Ratings 9.9g */

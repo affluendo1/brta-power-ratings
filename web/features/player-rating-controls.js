@@ -113,3 +113,4 @@ window.BRTARatingControls = {
     };
   }
 };
+/* BRTA Power Ratings 9.9g */

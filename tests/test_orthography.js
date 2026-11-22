@@ -52,3 +52,4 @@ assert.equal(JSON.stringify(input),snapshot);
 assert.equal(M.analyse('Zane').score,rows[0].rating);
 assert.equal(B.bands(rows).names.length,M.bandNames.length);
 console.log('Letter model: signed totals, doubled scale, Unicode, quadgraphs, overlap, diminishing repeats, composition, rarity, penalties, ties and isolation passed');
+/* BRTA Power Ratings 9.9g */

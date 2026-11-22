@@ -158,3 +158,4 @@
   window.BRTARandomLayout = {bindSettings};
   schedule();
 })();
+/* BRTA Power Ratings 9.9g */

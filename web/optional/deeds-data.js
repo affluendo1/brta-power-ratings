@@ -6,3 +6,4 @@ window.BRTA_DEEDS = Object.freeze([
  'Excellence in extremely specific tennis statistics',
  'Record for fastest website update'
 ]);
+/* BRTA Power Ratings 9.9g */

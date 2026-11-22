@@ -47,3 +47,4 @@
   if (typeof module === 'object' && module.exports) module.exports = api;
   else root.BRTAClubsBackend = api;
 })(globalThis);
+/* BRTA Power Ratings 9.9g */

@@ -1051,3 +1051,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+# BRTA Power Ratings 9.9g

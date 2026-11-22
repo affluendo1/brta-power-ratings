@@ -5,3 +5,4 @@
 .profile-section-switch small{display:block;margin-top:4px;color:var(--muted-color)}
 .profile-section-switch .button{white-space:normal;text-align:center}
 @media(max-width:560px){.profile-section-switch{align-items:stretch;flex-direction:column}.profile-section-switch .button{width:100%}}
+/* BRTA Power Ratings 9.9g */

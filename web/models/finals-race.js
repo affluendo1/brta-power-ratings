@@ -207,3 +207,4 @@
   root.BRTAFinalsMath = api;
   if (typeof module !== 'undefined') module.exports = api;
 })(globalThis);
+/* BRTA Power Ratings 9.9g */

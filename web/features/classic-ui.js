@@ -8,3 +8,4 @@
  document.querySelector('.classic-actions-slot').append(document.querySelector('.header-actions'));
  const version=document.querySelector('[data-classic-version]');if(version)version.textContent=window.BRTA_RELEASES?.[0]?.version||'';
 })();
+/* BRTA Power Ratings 9.9g */

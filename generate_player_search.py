@@ -206,3 +206,4 @@ def write_player_search(catalog: dict) -> dict:
 
 if __name__ == '__main__':
     write_player_search(json.loads(Path('data/archive/catalog.json').read_text(encoding='utf-8')))
+# BRTA Power Ratings 9.9g

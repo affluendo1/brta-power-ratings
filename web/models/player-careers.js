@@ -77,3 +77,4 @@
   root.BRTACareers = model;
   if (typeof module !== 'undefined') module.exports = model;
 })(typeof window === 'undefined' ? globalThis : window);
+/* BRTA Power Ratings 9.9g */

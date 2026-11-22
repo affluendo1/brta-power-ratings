@@ -210,3 +210,4 @@
  window.addEventListener('brta-section-ready',()=>{state=null;setup=null;delete $('#resultOverlay').dataset.simulated});
  window.BRTARoundSimulation={open,standings,getState:()=>state};
 })();
+/* BRTA Power Ratings 9.9g */

@@ -42,3 +42,4 @@ const result = compare(club, benchmark([...club, ...others]));
 assert.equal(result.sample, 3);
 assert.equal(result.score, 200 / 3, 'The published benchmark weights each eligible team entry once');
 console.log('Clubs 9.0.1: audited ' + checked + ' archive destinations, team variants and benchmark weighting');
+/* BRTA Power Ratings 9.9g */

@@ -56,3 +56,4 @@ class FrontendPathsTests(unittest.TestCase):
                 path, _, query = ref.partition('?')
                 self.assertIn(str((css.parent / path).relative_to(ROOT)) + ('?' + query if query else ''), shell)
 
+# BRTA Power Ratings 9.9g

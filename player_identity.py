@@ -111,3 +111,4 @@ def link(occurrences, aliases=None):
                     members[a].extend(members.pop(b))
         groups.extend(sorted(group) for group in members.values() if len(group) > 1)
     return sorted(groups)
+# BRTA Power Ratings 9.9g

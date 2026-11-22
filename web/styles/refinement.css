@@ -32,3 +32,4 @@
 .prediction-estimate.rank-up{color:var(--win,#237e4a)}.prediction-estimate.rank-down{color:var(--loss,#b23d4c)}
 @media(max-width:600px){.prediction-outlook{padding:15px}.outlook-fixture{grid-template-columns:1fr}.outlook-fixture span:last-child{display:none}.prediction-order{display:block}.prediction-order label{min-width:0}.prediction-estimate{min-width:95px;padding:9px 3px;font-size:.85rem}}
 
+/* BRTA Power Ratings 9.9g */

@@ -23,3 +23,4 @@ def write_manifest(catalog, section_payloads, path=Path("data/site/trols-watch.j
         if dates:
             sections.append([code, meta["competition_code"], meta["season_id"], sorted(dates)])
     path.write_text(json.dumps(sections, separators=(",", ":")) + "\n", encoding="utf-8")
+# BRTA Power Ratings 9.9g

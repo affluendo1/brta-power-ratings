@@ -142,3 +142,4 @@ function layoutSearchRatings(rows){
 }
 
 
+/* BRTA Power Ratings 9.9g */

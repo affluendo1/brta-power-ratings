@@ -48,3 +48,4 @@
     byVersion: Object.fromEntries(Object.entries(snapshots).map(([alias, snapshot]) => [snapshot.version, alias])),
   });
 })();
+/* BRTA Power Ratings 9.9g */

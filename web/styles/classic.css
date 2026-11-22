@@ -192,3 +192,4 @@ html[data-interface="classic"] .band-keys .band-key[aria-pressed="true"]{border-
 html[data-interface="classic"] .team822-matches .match-row{font:13px Arial,sans-serif;background:var(--surface);color:var(--text-color);border:0;border-bottom:1px solid var(--border-color);padding:8px}
 @media(max-width:680px){html[data-interface="classic"] body>.site-header{padding-top:calc(24px + env(safe-area-inset-top))}html[data-interface="classic"] .latest-round-overlay .settings-sheet{padding:10px}}
 @media(max-width:680px){html[data-interface="classic"] .lineup-position-grid{grid-template-columns:1fr!important}html[data-interface="classic"] .lineup-position-grid label{grid-template-columns:28px minmax(0,1fr)!important}}
+/* BRTA Power Ratings 9.9g */

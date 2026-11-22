@@ -7,3 +7,4 @@ const minutes = Object.freeze({
 });
 if (require.main === module) process.stdout.write(JSON.stringify(minutes, null, 2) + '\n');
 module.exports = minutes;
+/* BRTA Power Ratings 9.9g */

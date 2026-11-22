@@ -166,3 +166,4 @@ def scorecard_layout(html: str) -> dict:
     if len(candidates) != 1:
         raise ValueError('Unrecognised or ambiguous scorecard layout; retain source for adapter review')
     return {**candidates[0], 'rating_rules_verified': False}
+# BRTA Power Ratings 9.9g

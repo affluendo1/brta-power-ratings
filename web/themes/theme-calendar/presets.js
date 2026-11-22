@@ -366,3 +366,4 @@ window.BRTAThemeCalendarPresets = [
   {"id":"wavez","name":"Wavez","source":"wavez","colors":["#1c292f","#6bde3b","#1f5e6b","#1b3238","#e9efe6","#ca4754","#ca4754"]},
   {"id":"witch_girl","name":"Witch Girl","source":"witch_girl","colors":["#f3dbda","#56786a","#ddb4a7","#e7c8be","#56786a","#b29a91","#b29a91"]}
 ];
+/* BRTA Power Ratings 9.9g */

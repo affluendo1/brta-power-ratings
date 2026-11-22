@@ -87,3 +87,4 @@ function report(data,history,{withoutRatings=false}={}){
 const api={names,bands,percentage,sourceDate,evidenceDates,observations,recalculate,report};root.BRTALayoutModel=api;if(typeof module!=='undefined')module.exports=api;
 })(typeof window==='undefined'?globalThis:window);
 
+/* BRTA Power Ratings 9.9g */

@@ -95,3 +95,4 @@ const base = process.env.BRTA_TEST_URL || 'http://127.0.0.1:8822/';
     }
   }
 })().catch(error => { console.error(error); process.exitCode = 1; });
+/* BRTA Power Ratings 9.9g */

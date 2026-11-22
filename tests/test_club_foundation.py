@@ -58,3 +58,4 @@ class ClubFoundationTests(unittest.TestCase):
         rows=[{'seasonKey':'UA:1','sectionCode':'UA001','player':'A / B','team':'One','rating':1501,'qualified':True,'dataPath':'one.json','isCurrent':True},{'seasonKey':'UA:0','sectionCode':'UA001','player':'C / D','rating':1000,'qualified':False,'dataPath':'old.json','isCurrent':False}]
         data=compact_complete_rows(rows);self.assertEqual(len(data['entries']),2);self.assertEqual(len(data['sections']),2);self.assertEqual(data['sections'][0]['dataPath'],'one.json');self.assertFalse(data['sections'][1]['isCurrent'])
 if __name__=='__main__':unittest.main()
+# BRTA Power Ratings 9.9g

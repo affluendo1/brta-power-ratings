@@ -147,3 +147,4 @@
   }
   return{CANONICAL,ALIASES,KINGS_PARK,VERSION,random,scoreFromRandom,royalScore,firstSundaySection,isHighestSundaySection,exactAlias,delayedAlias,teamChoices,godlyThreshold,discoveryState,roster,generatedSchedule,buildContext,fit,latestPublishedRound};
 });
+/* BRTA Power Ratings 9.9g */

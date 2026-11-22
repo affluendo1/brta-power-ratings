@@ -7,3 +7,4 @@ module.exports=function trackDOMLifecycle(window){
  };
  return ()=>{for(const observer of observers)observer.disconnect();observers.clear();close()};
 };
+/* BRTA Power Ratings 9.9g */

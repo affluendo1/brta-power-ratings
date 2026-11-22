@@ -561,3 +561,4 @@ abbr.emergency-marker { color: var(--player-emergency); font-size: .74em; font-w
 .wg-game canvas { box-sizing: border-box; border: 2px solid #a69bb7; background: #1b1726; border-radius: 5px; }
 .wg-game canvas:focus-visible { outline: 2px solid #c7b5ed; outline-offset: 4px; }
 @media(prefers-reduced-motion: reduce) { .wg-left { transition: none; } .wg-game,.wg-launch { animation: none; } }
+/* BRTA Power Ratings 9.9g */

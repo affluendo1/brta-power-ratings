@@ -18,3 +18,4 @@ function fit(matches,model='RM4b',{pairs=false,covariance=true,parameters={},pri
 }
 
 return{fit};});
+/* BRTA Power Ratings 9.9g */

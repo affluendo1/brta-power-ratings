@@ -103,3 +103,4 @@ return '<section class="lab-panel"><h3>Name composition</h3>'+compositionBar+'<d
  window.addEventListener('brta-module-toggle',sync);
 })();
 
+/* BRTA Power Ratings 9.9g */

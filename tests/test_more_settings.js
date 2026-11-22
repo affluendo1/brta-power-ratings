@@ -60,3 +60,4 @@ assert.equal(M.confirmations[7].yes,'I CONFIRM');
 assert.equal(M.confirmations.at(-1).yes,'BACK TO MORE SETTINGS');assert(M.confirmations.some(c=>c.phrase==='I AM STILL HERE'));assert(M.confirmations.every(c=>c.text&&c.yes));
 console.log('More Settings: translation, names, preserved entry phrase, pressure bounds, shuffle permutations and confirmation sequence passed.');
 
+/* BRTA Power Ratings 9.9g */

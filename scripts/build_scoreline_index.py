@@ -88,3 +88,4 @@ if __name__ == "__main__":
     for name, directory in (("archive", "data/archive/site/sections"), ("current", "data/site/sections")):
         if not scope or scope == name:
             print(build((ROOT / directory).glob("*.json"), ROOT / "data" / name / "scorelines.json"), name, "sections indexed")
+# BRTA Power Ratings 9.9g

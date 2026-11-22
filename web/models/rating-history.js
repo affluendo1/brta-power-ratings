@@ -67,3 +67,4 @@
   root.BRTAHistory=api;if(typeof module!=='undefined')module.exports=api;
 })(typeof window!=='undefined'?window:globalThis);
 
+/* BRTA Power Ratings 9.9g */

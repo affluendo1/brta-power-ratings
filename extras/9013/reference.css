@@ -13,3 +13,4 @@ article p { margin: 4px 0 12px; }
 article span { display: inline-block; padding: 3px 8px; border-radius: 4px; color: var(--preview-ink); background: var(--preview-accent); }
 textarea { font: inherit; padding: 8px 12px; border-radius: 6px; border: 1px solid #8995a5; max-width: calc(100vw - 64px); }
 output { white-space: pre-wrap; overflow-wrap: anywhere; }
+/* BRTA Power Ratings 9.9g */

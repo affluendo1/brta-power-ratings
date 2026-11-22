@@ -58,3 +58,4 @@ function centre(data,value=2000,probabilityScale=null){
 const api={prepare,recalculate,centre,policy,display,automatic,ascension};root.BRTARM4Engine=api;if(typeof module!=='undefined')module.exports=api;
 })(typeof window==='undefined'?globalThis:window);
 
+/* BRTA Power Ratings 9.9g */

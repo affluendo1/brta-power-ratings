@@ -2,6 +2,15 @@
 // Retrospective entries use source-commit timestamps; sourceCommit records their provenance.
 window.BRTA_RELEASES = Object.freeze([
 {
+  "version": "9.9g",
+  "size": "tiny",
+  "title": "Repository-wide refresh",
+  "committedAt": "2026-11-22T20:03:40+11:00",
+  "changes": [
+    "Updated all 12,247 tracked files, including code, historical data, assets and workflows."
+  ]
+},
+{
   "version": "9.9f",
   "size": "tiny",
   "title": "Random Layout",
@@ -1590,3 +1599,4 @@ window.BRTA_RELEASES = Object.freeze([
     "title": "Launch"
   }
 ]);
+/* BRTA Power Ratings 9.9g */

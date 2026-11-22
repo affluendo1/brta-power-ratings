@@ -67,3 +67,4 @@ assert(exportUI.includes("replace(/\\.json$/i,'')"),'Results check must resolve 
 const workflow=script('.github/workflows/sync-trols.yml');
 assert(workflow.includes('.removesuffix(".json")'),'Recorded changed sections must be clean IDs');
 console.log('Post-8.5.4.1 audit: actual attendance, winner-side, editor race, overlay, readable sync IDs and terminology passed');
+/* BRTA Power Ratings 9.9g */

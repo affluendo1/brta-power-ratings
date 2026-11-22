@@ -17,3 +17,4 @@ const gap=high.singles[0].rating-high.singles[1].rating;assert(Math.abs(1/(1+Mat
 const changed=structuredClone(data);changed.results.at(-1).fixtures[0].rubbers[0].score='0-6';changed.results.at(-1).fixtures[0].rubbers[0].winner='B';const altered=L.recalculate(changed,'RM1',C);assert.deepEqual(altered.ratingHistory.tables[1],one.ratingHistory.tables[1]);assert.notEqual(altered.singles.find(r=>r.player==='A').rating,one.singles.find(r=>r.player==='A').rating);
 const report=L.report(one,H);assert(!report.includes('<th>Uncertainty ±</th>'));assert(!report.includes('<th>95% low</th>'));
 console.log('8.3.2: original RM1 agrees with sklearn C=0.5; singles-only, no recency/uncertainty, game-probability units and historical cutoffs passed.');
+/* BRTA Power Ratings 9.9g */

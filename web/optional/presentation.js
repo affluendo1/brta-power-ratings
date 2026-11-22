@@ -51,3 +51,4 @@
   },{passive:false});
   root.AmbientPresentation={language,atmosphere,refresh:schedule};
 })(window);
+/* BRTA Power Ratings 9.9g */

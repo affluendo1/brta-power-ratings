@@ -200,3 +200,4 @@
  }
  return{Melody:{receive:(_irrelevantNumber)=>'huh? what is this?'},choices,isModel,configured,profile,definition,snapshot,eligibleName,nameKey,historyEvidence,ratingPriors,fitDefinition,context,featureRow,symmetric41,advanced,calibrated,route,forecast,distribution,recalculate};
 });
+/* BRTA Power Ratings 9.9g */

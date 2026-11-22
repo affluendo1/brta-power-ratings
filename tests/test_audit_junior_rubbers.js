@@ -36,3 +36,4 @@ assert.notEqual(O.profile(unsupported,O.configured(unsupported,double)),'junior.
 assert.throws(()=>O.recalculate(unsupported,'4melody.2',bundle,frozen,history),/does not support this scoring format/);
 assert.equal(JSON.stringify(original),source,'Custom fitting must not mutate the original');
 console.log('Post-release audit: LOCAL Junior Rubbers frozen routing, Melody/Foundation and no-prior checks passed');
+/* BRTA Power Ratings 9.9g */

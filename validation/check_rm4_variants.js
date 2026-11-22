@@ -28,3 +28,4 @@ for(const [label,filter]of Object.entries({early:r=>r.round<=7,later:r=>r.round>
 result.sections=[...new Set(rows.map(r=>r.section))];
 for(const core of ['RM4a','RM4b']){const options=Object.keys(variants).filter(n=>n.startsWith(core)),selected=options.sort((a,b)=>result.cohorts.early[a].logLoss-result.cohorts.early[b].logLoss)[0];result[core]={selectedOnEarlierRounds:selected,laterLogLossDifference:result.cohorts.later[selected].logLoss-result.cohorts.later[core].logLoss,laterCorrectDifference:result.cohorts.later[selected].correct-result.cohorts.later[core].correct}}
 console.log(JSON.stringify(result,null,2));
+/* BRTA Power Ratings 9.9g */

@@ -43,3 +43,4 @@
     if (!allowed()) location.replace(currentSite);
   });
 })();
+/* BRTA Power Ratings 9.9g */

@@ -67,3 +67,4 @@ def build():
 
 if __name__ == "__main__":
     build()
+# BRTA Power Ratings 9.9g

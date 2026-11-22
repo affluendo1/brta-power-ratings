@@ -41,3 +41,4 @@ async function offline(){
 }
 (async()=>{await sectionRaces();await offline()})().catch(e=>{console.error(e);process.exitCode=1});
 
+/* BRTA Power Ratings 9.9g */

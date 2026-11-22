@@ -105,3 +105,4 @@ function section({historical=false,latest=4}={}){
   assert.strictEqual(M.delayedAlias('Siddharth Basa'),true);
 }
 console.log('auxiliary module tests passed');
+/* BRTA Power Ratings 9.9g */

@@ -28,3 +28,4 @@ contextmenu({target:{closest:s=>s==='[data-rating="pairs"]'?{}:null},preventDefa
 assert(box.eightMethodologyHTML().includes('RM3ultra'),'Pair-first reveal must expose methodology');
 box.ratingView='singles';box.renderRatingOptions();assert(scopes.every(b=>!b.disabled),'Normal scopes must be restored');
 console.log('Pair regressions: independent totals/composition, quadgraphs, ties, highest-score, honest scopes, pair-first methodology and scope restoration passed');
+/* BRTA Power Ratings 9.9g */

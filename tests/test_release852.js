@@ -8,3 +8,4 @@ const round3=matches.find(m=>m.round===3),round4=matches.find(m=>m.round===4);as
 const early=matches.filter(m=>m.round<=2),priors=O.ratingPriors(melody.orchestra,early);assert(Object.keys(priors.Singles).length>0);const fitted=O.fitDefinition(early,O.definition(bundle,'sets.standard','Melody'),true,priors),reset=O.fitDefinition(early,O.definition(bundle,'sets.standard','Melody'),true);assert.notDeepEqual(fitted.skills,reset.skills);
 const custom=structuredClone(data);custom.meta.is_custom=true;const c=O.recalculate(custom,'4melody.2',bundle,frozen,history);assert.equal(c.meta.predictionModel,'4.2 Orchestra');assert.equal(c.meta.ratingModel,'4melody.2');assert(c.orchestra);assert.equal(c.orchestra.history,null);assert.equal(JSON.stringify(data),before);
 console.log('8.5.2 raw model, legacy isolation, forecast symmetry, Melody rating/prediction split, early history, three-round gate and local custom Melody fitting passed.');
+/* BRTA Power Ratings 9.9g */

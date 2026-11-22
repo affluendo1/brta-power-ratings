@@ -741,3 +741,4 @@ body.is-offline .site-header::after{position:absolute;right:16px;bottom:-22px;pa
 [data-theme="dark"] .rank-up{color:#67d99a}[data-theme="dark"] .rank-down{color:#ff8893}
 @media(prefers-color-scheme:dark){[data-theme="auto"] .rank-up{color:#67d99a}[data-theme="auto"] .rank-down{color:#ff8893}}
 #ratingHead th,#ratingBody td{white-space:nowrap}
+/* BRTA Power Ratings 9.9g */

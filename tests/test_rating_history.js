@@ -33,3 +33,4 @@ assert.equal(active[0].previousRound,5);
 assert.deepEqual(H.rounds(placeholder,'singles').map(row=>row.round),[5,6]);
 placeholder.results[0].fixtures[0].status='Completed';
 assert.equal(H.withMovement(placeholder,'singles')[0].previousRound,6);
+/* BRTA Power Ratings 9.9g */

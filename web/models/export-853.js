@@ -195,3 +195,4 @@ function toBackup(source,now=new Date().toISOString()){
 }
 return {slug,sets,rows,csv,markdown,toBackup};
 });
+/* BRTA Power Ratings 9.9g */

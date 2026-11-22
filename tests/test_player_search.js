@@ -16,3 +16,4 @@ const labels=['Winter 2026','Summer 25/26','Winter 2025','Summer 24/25','Winter 
 const shortSummer={players:['Test Player'],sections:labels.map(seasonLabel=>({seasonLabel,competitionCode:'AP',sectionLabel:'1'})),entries:labels.map((_,i)=>[0,i,'Team']).reverse()};
 assert.deepEqual(S.find(shortSummer,'Test Player').map(r=>r.seasonLabel),labels);
 console.log('Short Summer labels sort chronologically in all-history search');
+/* BRTA Power Ratings 9.9g */

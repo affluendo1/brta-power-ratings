@@ -103,3 +103,4 @@ const customTie=P.simulateTie(customRubbers,{custom:true,format:'rubbers',rng:()
 const setsTie=P.simulateTie(customRubbers,{custom:true,format:'sets',rng:()=>.5});assert.equal(setsTie.winner,-1);assert.equal(setsTie.homePoints,2);assert.equal(setsTie.awayPoints,7);
 const configured=customRubbers.map(r=>({...r,scoreDistribution:P.matchDistribution(r.gameProbability,r)})),projected=P.teamOutcome(configured,{setWinsDecideTies:true,gamesDecideTies:true});assert.equal(projected.homeWin,1);assert.equal(projected.awayWin,0);
 console.log('Custom match counts, 4/6/8-game sets, best-of-three distributions, simulation and set-based team scoring: passed');
+/* BRTA Power Ratings 9.9g */

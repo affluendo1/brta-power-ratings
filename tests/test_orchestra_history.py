@@ -45,3 +45,4 @@ class HistoryEligibilityTests(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+# BRTA Power Ratings 9.9g

@@ -251,3 +251,4 @@
   window.BRTAOverlays.register('tutorialTour', () => finish());
   window.BRTATutorial = { open: menu, active: () => !!origin };
 })();
+/* BRTA Power Ratings 9.9g */

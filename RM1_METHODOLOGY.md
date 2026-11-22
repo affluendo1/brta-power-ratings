@@ -83,4 +83,3 @@ exactly. A few later displayed entries differ by one point. Their exact
 historical solver settings are unavailable; the restoration keeps the stated
 C=0.5 objective and converges tightly rather than hardcoding the supplied
 ratings. The independent sklearn coefficient check verifies that objective.
-

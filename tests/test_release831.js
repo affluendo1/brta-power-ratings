@@ -22,3 +22,4 @@ console.log('8.3.1: eight robust bands, provisional boundaries, affine consisten
 
 for(const values of [[.526,.436,.038],[1/3,1/3,1/3],[1,0,0],[.499,.499,.002]]){const rounded=P.roundedChances(values);assert.equal(rounded.reduce((a,b)=>a+b),100);rounded.forEach((v,i)=>assert(Math.abs(v-100*values[i])<1))}
 console.log('Displayed team chances add to 100% without changing model probabilities.');
+/* BRTA Power Ratings 9.9g */

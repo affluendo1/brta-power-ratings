@@ -53,3 +53,4 @@ def validate():
 
 if __name__ == '__main__':
     validate()
+# BRTA Power Ratings 9.9g

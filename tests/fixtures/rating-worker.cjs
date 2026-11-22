@@ -9,3 +9,4 @@ module.exports=class RatingWorker{
  }catch(error){this.onmessage?.({data:{error:error.message}})}},0)}
  terminate(){this.closed=true}
 };
+/* BRTA Power Ratings 9.9g */

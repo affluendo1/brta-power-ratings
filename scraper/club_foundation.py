@@ -162,3 +162,4 @@ def resolve_venue(network,team_id,fixture_id=None,*,round_no=None,date=None):
         item=matches[0]
         return {'status':'resolved' if item.get('resolved_venue_id') else 'unresolved','venue_id':item.get('resolved_venue_id'),'scope':item['scope'],'label':item['label'],'source':item['source']}
     return {'status':'default','venue_id':team.get('venue_id'),'scope':'team_default'}
+# BRTA Power Ratings 9.9g

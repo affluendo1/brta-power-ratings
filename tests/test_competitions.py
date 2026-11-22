@@ -30,3 +30,4 @@ class ExpandedCompetitionTests(unittest.TestCase):
             self.assertEqual(_season_order(f'Summer {year:02}/{year+1:02}'), _season_order(f'Summer 20{year:02}/{year+1:02}'))
         self.assertEqual(_season_order('Unknown'), 0)
 if __name__=='__main__':unittest.main()
+# BRTA Power Ratings 9.9g

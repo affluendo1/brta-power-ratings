@@ -30,3 +30,4 @@ $('#exportSectionBtn')?.addEventListener('contextmenu',e=>{if(!auxiliaryEnabled(
 const roundOpen=BRTARoundSimulation.open;BRTARoundSimulation.open=function(round){if(!predictionEvidenceReady(Number(round)-1))return openPredictionHome();return roundOpen(round)};
 window.BRTAModelComparison={export:exportComparison,stripRatings};
 })();
+/* BRTA Power Ratings 9.9g */

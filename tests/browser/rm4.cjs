@@ -84,3 +84,4 @@ run("openSettings();openLayoutOverlay('methodology');BRTAChangelog.open()");awai
 console.log('8.4.1 UI: band buttons, round scorecards, reruns, projected ladder, calendar child dialogs, player-only following and interrupted/nested update-dialog cleanup passed.');
 if(errors.length)throw Error(errors.join('\n'));console.log('8.4.1 UI: default Ensemble, fixed model units, fixture outlook, score/simulation, results-only cards and remembered defaults passed.');closeDOM()})().catch(e=>{console.error(e.stack);console.error(errors);closeDOM();process.exitCode=1});
 
+/* BRTA Power Ratings 9.9g */

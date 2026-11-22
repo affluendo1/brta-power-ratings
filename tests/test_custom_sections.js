@@ -85,3 +85,4 @@ if(process.argv.includes('--json'))console.log(JSON.stringify(data));
 module.exports={sample};
 
 {const section=sample();section.semifinalPlaces=2;assert.equal(M.build(section).meta.semifinalPlaces,2);section.semifinalPlaces=0;assert.equal(M.build(section).meta.semifinalPlaces,0);section.semifinalPlaces=-1;assert.throws(()=>M.validate(section));}
+/* BRTA Power Ratings 9.9g */

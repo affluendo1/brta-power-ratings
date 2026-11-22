@@ -21,3 +21,4 @@ const release801Settings=openSettings;openSettings=function(){release801Settings
 const graph801Settings=openSettings;openSettings=function(){graph801Settings();$('.display-settings').insertAdjacentHTML('beforeend','<label class="setting-row"><b>Rounded graph lines</b><input type="checkbox" id="roundedGraphs" class="custom-check" '+(localStorage.getItem('brta-rounded-graphs')==='1'?'checked':'')+'></label>');$('#roundedGraphs').onchange=e=>{localStorage.setItem('brta-rounded-graphs',e.target.checked?'1':'0');if(lab8Context&&!$('#profileOverlay').classList.contains('hidden')){const {name,round}=lab8Context;$('#profileContent').querySelectorAll('[data-graph-view]').forEach(card=>{card.outerHTML=lab8Graph(card.dataset.graphView,name,card.querySelector('h3').textContent,round)})}}};$('#settingsBtn').onclick=openSettings;
 
 
+/* BRTA Power Ratings 9.9g */

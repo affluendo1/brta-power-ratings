@@ -38,3 +38,4 @@ form.addEventListener('submit', async event => {
     button.disabled = false;
   }
 });
+/* BRTA Power Ratings 9.9g */

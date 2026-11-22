@@ -71,3 +71,4 @@ test('all named models are selectable, and unsupported specialists preserve the 
 test('section exports preserve chosen model and displayed rating rows',()=>{
  const d=E.display(result),html=L.report(d,H);assert(html.includes('4.2 Orchestra'));assert(html.includes(d.singles[0].player));assert(html.includes(String(d.singles[0].rating)));
 });
+/* BRTA Power Ratings 9.9g */

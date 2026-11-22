@@ -31,3 +31,4 @@ console.log('Explicit score distributions preserve calibrated win/away/draw mass
 assert.throws(()=>I.fitModels(M,[{...history[0],winner:'away'}],target),/Contradictory/);assert.throws(()=>I.fitModels(M,history,{...target,date:'2026-02-31'}),/cutoff/);
 
 assert.throws(()=>I.fitModels(M,[{...history[0],events:history[0].events.map(e=>({...e,winner:'away'}))}],target),/Contradictory/);
+/* BRTA Power Ratings 9.9g */

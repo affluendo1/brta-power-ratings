@@ -7,3 +7,4 @@ function variables(item){validate(item);if(item.kind==='scheme')return{'brand':i
 function move(items,id,delta){const copy=items.slice(),at=copy.findIndex(x=>x.id===id),to=at+delta;if(at>=0&&to>=0&&to<copy.length)[copy[at],copy[to]]=[copy[to],copy[at]];return copy}
 const api={fields,defaults,ink,validate,variables,move};root.BRTAThemeStudio=api;if(typeof module!=='undefined')module.exports=api;
 })(typeof window==='undefined'?globalThis:window);
+/* BRTA Power Ratings 9.9g */

@@ -12,3 +12,4 @@ module.exports = function addTestScheduledRound(data) {
   data.upcomingFixtures = [{ round, date: source.date, fixtures }, ...data.upcomingFixtures];
   return round;
 };
+/* BRTA Power Ratings 9.9g */

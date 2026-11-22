@@ -11,3 +11,4 @@ assert.equal(R.needsSection(rows[0],'UA002',null),true);
 for(const [name,layout]of Object.entries(R.layouts)){assert(layout.w>0&&layout.h>0);assert(layout.footer>layout.header);assert(layout.columns>0)}assert.equal(R.layouts.landscape.columns,2);assert.equal(R.layouts.story.h/R.layouts.story.w,16/9);
 const encoded=M.translate('Settings are available');assert.equal(M.toEnglish(encoded),'Settings are available');const name='Jayden Bone',coded=M.register(name,true);assert.equal(M.toEnglish(coded,true),name);assert.notEqual(M.toEnglish(coded,false),name);assert.equal(M.toEnglish(M.translate('123')), '123');assert.equal(M.toEnglish('Unknown unencoded text'),'Unknown unencoded text');
 console.log('8.2.2: blended scores, complete pair scope, roster-name search, ratio layouts and reversible loaded translations passed');
+/* BRTA Power Ratings 9.9g */

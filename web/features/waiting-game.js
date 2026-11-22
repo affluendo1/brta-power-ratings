@@ -29,3 +29,4 @@ root.BRTAWaitingGame={mount,snakeStep};if(typeof module!=='undefined')module.exp
 })(typeof window==='undefined'?globalThis:window);
 
 
+/* BRTA Power Ratings 9.9g */

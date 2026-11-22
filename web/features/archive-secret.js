@@ -156,3 +156,4 @@
   if (theme === themeId && localStorage.getItem(rewardKey) !== '1') BRTASitePreferences.setTheme('dark');
   paintNeon(neonColor());
 })();
+/* BRTA Power Ratings 9.9g */

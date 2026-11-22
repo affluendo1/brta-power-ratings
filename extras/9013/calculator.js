@@ -19,3 +19,4 @@ async function initialize() {
 }
 
 initialize().catch(() => { result.textContent = 'Answer table unavailable. Reload to retry.'; });
+/* BRTA Power Ratings 9.9g */

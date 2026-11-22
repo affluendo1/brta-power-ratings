@@ -14,3 +14,4 @@ const P=require('../web/models/prediction.js');for(const targetGames of [6,8,10]
 console.log('Fixture records: calendar, DST, source gaps, identity, corrections and competition projections passed');
 
 assert.equal(M.iso('2026-02-31'),'');assert.equal(M.iso('2026-02-29'),'');assert.equal(M.iso('2028-02-29'),'2028-02-29');assert.equal(M.iso('2026-13-01'),'');
+/* BRTA Power Ratings 9.9g */

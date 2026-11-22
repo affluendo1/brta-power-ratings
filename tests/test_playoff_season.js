@@ -60,3 +60,4 @@ const official = standings.season(officialCalendar);
 assert.equal(official.results.at(-1).date,'8 Nov 26');
 assert(!official.results.at(-1).dateEstimated);
 assert.equal(official.playoff({status:'Scheduled'},'grand_final').date,'15 Nov 26');
+/* BRTA Power Ratings 9.9g */

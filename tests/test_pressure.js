@@ -19,3 +19,4 @@ console.log('Typed score orientation, outcome-only deciders, bounded RM3/RM3b ev
 assert.deepEqual(M.ratingEvidence(o,'V3',{matchTiebreakWeight:0}),{home:10,away:11});assert.throws(()=>M.ratingEvidence(o,'V3',{matchTiebreakWeight:-1}),/weight/);assert.throws(()=>M.ratingEvidence(o,'V3',{matchTiebreakMode:'invent'}),/outcome/);
 
 assert.deepEqual(L.pressure([{won:true,sets:S.parse('6-5')}]).fromFiveAll,{wins:1,losses:0,total:1});
+/* BRTA Power Ratings 9.9g */

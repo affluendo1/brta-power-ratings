@@ -21,3 +21,4 @@ class SourceExtensionsTests(unittest.TestCase):
         for name, value in [("", {}), ("future", []), ("future", {"value": float('nan')})]:
             with self.assertRaises(ValueError):
                 collect_section_extras({}, {name: lambda *_, value=value: value})
+# BRTA Power Ratings 9.9g

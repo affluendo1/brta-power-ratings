@@ -27,3 +27,4 @@ async function initialize() {
 }
 
 initialize().catch(() => { count.textContent = 'Theme catalogue unavailable. Reload to retry.'; });
+/* BRTA Power Ratings 9.9g */

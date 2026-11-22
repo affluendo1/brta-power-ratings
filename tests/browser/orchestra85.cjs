@@ -57,3 +57,4 @@ assert(comparisonExport);const comparisonDoc=new w.DOMParser().parseFromString(c
 console.log('8.5.2 rating labels and choices, optional model panels, full rules, prediction lock and comparison export including unlocked extras and Ultra passed.');
 
 if(errors.length)throw Error(errors.join('\n'));console.log('8.5 default Orchestra: all 9 model choices, real worker, four rating views, home overlay, exports, player/history panels, prediction probabilities/scores, fixture simulation, compact methodology, manual legacy override and Automatic migration passed.');closeDOM();})().catch(e=>{console.error(e.stack);console.error(errors);closeDOM();process.exitCode=1});
+/* BRTA Power Ratings 9.9g */

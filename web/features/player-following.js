@@ -228,3 +228,4 @@ window.BRTAPlayerFollowing = (() => {
   }
   return {setup, icon};
 })();
+/* BRTA Power Ratings 9.9g */

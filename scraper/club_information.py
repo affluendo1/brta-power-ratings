@@ -117,3 +117,4 @@ def build_club_network(sections: list[dict]) -> dict:
                 club["observations"].append(observation)
     return {"version": 1, "source": "TROLS fixture Section Information", "sections": covered,
             "clubs": [clubs[key] for key in sorted(clubs)]}
+# BRTA Power Ratings 9.9g

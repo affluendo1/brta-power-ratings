@@ -185,3 +185,4 @@
   root.BRTAChangelog = Object.freeze({version:latest.version, settingsHTML, open, close});
 })(window);
 
+/* BRTA Power Ratings 9.9g */

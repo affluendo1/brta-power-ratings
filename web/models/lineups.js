@@ -5,3 +5,4 @@
  function side(lineup){return{draft:lineup.players.slice(),singles:lineup.singles.slice(),doubles:lineup.doubles.map(p=>p.slice()),manualOrder:true,manualPairs:true}}
  const api={rules,configurations,side};root.BRTALineups=api;if(typeof module!=='undefined')module.exports=api;
 })(typeof window==='undefined'?globalThis:window);
+/* BRTA Power Ratings 9.9g */

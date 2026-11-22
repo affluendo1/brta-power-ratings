@@ -10,3 +10,4 @@ console.log('RM4: Python component/feature/ensemble parity, legal normalized sco
 
 // standard Rubbers ties compare sets then games, even if rubber wins differ.
 const team=P.simulateTie([{label:'Singles 1',forecastDistribution:[{homeWin:true,homeSets:2,awaySets:1,homeGames:12,awayGames:11,score:'6–4 0–6 [TB W]',probability:1}]},{label:'Singles 2',forecastDistribution:[{homeWin:false,homeSets:0,awaySets:2,homeGames:0,awayGames:12,score:'0–6 0–6',probability:1}]},{label:'Doubles',forecastDistribution:[{homeWin:true,homeSets:1,awaySets:0,homeGames:8,awayGames:7,score:'8–7',probability:1}]}],{format:'rubbers',rng:()=>.5});assert.equal(team.homeRubbers,2);assert.equal(team.homeSets,3);assert.equal(team.awaySets,3);assert.equal(team.winner,-1);console.log('Rubbers team simulation uses sets, then games rather than rubber count.');
+/* BRTA Power Ratings 9.9g */

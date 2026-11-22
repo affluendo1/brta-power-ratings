@@ -68,3 +68,4 @@ for attempt in 1 2 3; do
   if git push origin HEAD:main; then exit 0; fi
 done
 exit 1
+# BRTA Power Ratings 9.9g

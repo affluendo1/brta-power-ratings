@@ -78,3 +78,4 @@ if __name__ == '__main__':
         destination.parent.mkdir(parents=True, exist_ok=True)
         destination.write_text(json.dumps(report, indent=2) + '\n')
     print(f"Scanned {report['sections_scanned']} current/historical sections; {len(report['affected_sections'])} contain match tiebreaks")
+# BRTA Power Ratings 9.9g

@@ -3,3 +3,4 @@
  function measure(){document.documentElement.style.setProperty('--nav-sticky-height',stickyHeight(nav)+'px');document.documentElement.style.setProperty('--team-tabs-height',stickyHeight(teams)+'px')}
  if(typeof ResizeObserver!=='undefined'){const observer=new ResizeObserver(measure);for(const node of [nav,teams])if(node)observer.observe(node)}window.addEventListener('resize',measure);window.addEventListener('brta-section-ready',measure);measure();
 })();
+/* BRTA Power Ratings 9.9g */

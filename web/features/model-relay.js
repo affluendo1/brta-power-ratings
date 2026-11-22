@@ -119,3 +119,4 @@
   }
   return { versionSum, packet, scramble, decipher, perform };
 });
+/* BRTA Power Ratings 9.9g */

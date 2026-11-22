@@ -11,3 +11,4 @@ const drawn=I.observation({discipline:'singles',home_players:['A'],away_players:
 const points=F.fixturePoints([win,loss],{order:['sets','games'],points:{winBonus:4,drawBonus:2,setPoint:1,rubberPoint:0,gamePoint:0}});assert.equal(points.homePoints,5);assert.equal(points.awayPoints,1);assert.throws(()=>F.fixturePoints([win],{order:['sets'],points:{winBonus:4}}));console.log('Explicit additive fixture points and missing-rule refusal passed.');
 assert.throws(()=>F.rules({...r,decider:{kind:'timed',target:6,winBy:2}}));assert.throws(()=>F.rules({...mt,decider:{kind:'matchTiebreak',target:10,timed:true}}));
 assert.throws(()=>I.fitBaseline(M,[{...past,hg:99}],cutoff));assert.throws(()=>I.forecast(M,{skills:{}},{type:'Singles',home:['A'],away:['B'],winner:'home'},r));
+/* BRTA Power Ratings 9.9g */

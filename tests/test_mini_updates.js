@@ -13,3 +13,4 @@ assert.equal(relativeTime(ago(3*86400000),t),'3 days ago');
 assert.equal(relativeTime(ago(-60000),t),'Just now');
 assert(relativeTime(ago(8*86400000),t).includes('Oct 2026'));
 console.log('Relative check-time boundaries passed.');
+/* BRTA Power Ratings 9.9g */

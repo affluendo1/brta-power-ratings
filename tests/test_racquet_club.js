@@ -175,3 +175,4 @@ assert(M.buyFuel(starter,'gel'));
 assert.equal(M.sellFuel(starter,'gel'),90);
 assert.equal(M.sellFuel(starter,'gel'),0);
 console.log('Daily packs, cash rewards, craft-only potions and fuel resale passed.');
+/* BRTA Power Ratings 9.9g */

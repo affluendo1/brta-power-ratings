@@ -1088,3 +1088,4 @@ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',
 
 document.addEventListener('toggle',event=>{if(event.target.matches?.('[data-prediction-lineups]')&&event.target.isConnected&&selectedPrediction)selectedPrediction.lineupsOpen=event.target.open},true);
 
+/* BRTA Power Ratings 9.9g */

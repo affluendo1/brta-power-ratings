@@ -132,3 +132,4 @@ function relativeTime(iso,now=Date.now()){
 }
 return{relativeTime};
 });
+/* BRTA Power Ratings 9.9g */

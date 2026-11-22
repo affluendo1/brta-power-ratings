@@ -93,3 +93,4 @@ self.addEventListener('fetch', event => {
   if (/%(?:2f|5c|2e)/i.test(path)) return;
   event.respondWith(tikituffFetch(request, alias, path));
 });
+/* BRTA Power Ratings 9.9g */

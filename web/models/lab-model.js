@@ -89,3 +89,4 @@ function discipline(data,pair=false){return pair?'pairs':Scores.doublesOnly(data
 const api={performanceBands,pressure,doublesOnly:Scores.doublesOnly,discipline,key,members,rows,row,rank,pairPower,matches,contextData,schedule,history};root.BRTALabModel=api;if(typeof module!=='undefined')module.exports=api;
 })(typeof window==='undefined'?globalThis:window);
 
+/* BRTA Power Ratings 9.9g */

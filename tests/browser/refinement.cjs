@@ -123,3 +123,4 @@ w.fetch=realFetch;
 console.log('Archived team navigation waits for data, restores the exact Participation entry and recovers from failed loads');
 if(errors.length)throw Error(errors.join('\n'));console.log('8.2.2 UI checks passed without runtime errors');closeDOM();})().catch(e=>{console.error(e.stack);console.error(errors);closeDOM();process.exitCode=1});
 
+/* BRTA Power Ratings 9.9g */

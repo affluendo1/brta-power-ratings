@@ -111,3 +111,4 @@
     for (const target of $(id)?.querySelectorAll('[data-fixture-logistics]') || []) maps.get(target)?.abort();
   } };
 })();
+/* BRTA Power Ratings 9.9g */
