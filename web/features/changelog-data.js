@@ -2,6 +2,16 @@
 // Retrospective entries use source-commit timestamps; sourceCommit records their provenance.
 window.BRTA_RELEASES = Object.freeze([
 {
+  "version": "9.9f",
+  "size": "tiny",
+  "title": "Random Layout",
+  "committedAt": "2026-11-22T19:52:52+11:00",
+  "changes": [
+    "Turn on Random Layout in Settings to scatter, tilt and recolour buttons and dialogs on each launch.",
+    "Random Layout starts off and asks for confirmation before turning on. Press Ctrl or Command + Shift + Alt + R to turn it off."
+  ]
+},
+{
   "version": "9.9e",
   "size": "tiny",
   "title": "Exact section searches and scorecard recall",

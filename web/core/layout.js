@@ -63,6 +63,7 @@ function openSettings(){
  const comps=[...new Map(currentCatalog().map(x=>[x.competition_code,sectionCompetitionLabel(x)])).entries()],comp=$('#defaultCompetition'),section=$('#defaultSection');comp.innerHTML='<option value="">None</option>'+comps.map(([v,l])=>'<option value="'+esc(v)+'">'+esc(l)+'</option>').join('');comp.value=localStorage.getItem('brta-default-competition')||'';
  function sections(){const list=currentCatalog().filter(x=>x.competition_code===comp.value);section.innerHTML='<option value="">None</option>'+list.map(x=>'<option value="'+esc(x.section_code)+'">'+esc(x.section_label)+'</option>').join('');section.disabled=!comp.value;section.value=localStorage.getItem('brta-default-section')||'';}sections();comp.onchange=()=>{localStorage.setItem('brta-default-competition',comp.value);localStorage.removeItem('brta-default-section');sections()};section.onchange=()=>localStorage.setItem('brta-default-section',section.value);
 
+ window.BRTARandomLayout?.bindSettings($('#settingsContent'));
  window.AuxiliaryPortal?.bindSettings?.();window.CustomSections?.bindSettings();window.AmbientPanel?.bindSettings();$('#settingsClose').focus();
 }
 $('#settingsBtn').onclick=openSettings;// Export section is handled by the unified 8.5.4 chooser.
