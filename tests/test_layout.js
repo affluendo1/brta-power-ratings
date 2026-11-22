@@ -6,6 +6,11 @@ const before=JSON.stringify(d),r=L.recalculate(d,'RM3b',M);assert.equal(JSON.str
 assert.equal(L.recalculate(d,'RM3',M),d);assert.equal(L.percentage({gamesFor:30,gamesAgainst:20}),150);assert.equal(L.percentage({officialPercentage:201.2,gamesFor:30,gamesAgainst:20}),201.2);
 const band=L.bands(Array.from({length:60},(_,i)=>({rating:1000+i*15})));assert.equal(band.bounds.length,8);assert.equal(new Set(Array.from({length:60},(_,i)=>band.classFor(1000+i*15))).size>=5,true);assert(band.cuts.every((x,i,a)=>i===0||x<a[i-1]));assert.equal(L.bands([{rating:1500},{rating:1500}]).classFor(1500),'b4');
 const out=L.report(d,H);assert(out.includes('&lt;My Section&gt;'));for(const title of ['Singles','Doubles players','Doubles pairs','Overall','Standings','Full fixture list','All results','Ratings after Round'])assert(out.includes(title),title);assert(!out.includes('undefined'));
+const archived=L.report({...d,meta:{...d.meta,is_archive:true}},H);
+assert(archived.includes('All results'));
+assert(!archived.includes('<th>Position change</th>'));
+assert(!archived.includes('<th>Power change</th>'));
+assert(!archived.includes('<summary>Ratings after Round'));
 console.log('Layout: score parsing, match tiebreak evidence, model rollback, unchanged scores/stats, eight bands, official percentage and complete export passed.');
 
 // undated playoff scorecards must use only the selected snapshot's known dates.

@@ -22,7 +22,7 @@
   const followingOverlay = document.createElement('div');
   followingOverlay.id = 'playersFollowingOverlay';
   followingOverlay.className = 'overlay hidden';
-  followingOverlay.innerHTML = '<div class="overlay-backdrop" data-following-close></div><section class="settings-sheet players-following-sheet" role="dialog" aria-modal="true" aria-labelledby="players-following-title"><button type="button" class="close-btn" aria-label="Close Following" data-following-close>×</button><h2 id="players-following-title">Following</h2><div id="playersFollowing" hidden></div></section>';
+  followingOverlay.innerHTML = '<div class="overlay-backdrop" data-following-close></div><section class="settings-sheet players-following-sheet" role="dialog" aria-modal="true" aria-labelledby="players-following-title"><header class="players-following-header"><span class="following-icon">'+BRTAPlayerFollowing.icon+'</span><h2 id="players-following-title">Following</h2><button type="button" class="close-btn" aria-label="Close Following" data-following-close>×</button></header><div id="playersFollowing" hidden></div></section>';
   document.body.append(followingOverlay);
   const followingPanel = followingOverlay.querySelector('#playersFollowing');
   function closeFollowing() {
@@ -35,6 +35,7 @@
     followingOverlay.classList.remove('hidden');
     BRTAOverlays.lock(followingOverlay);
     following.draw();
+    followingPanel.scrollTop = 0;
     following.refresh();
     followingOverlay.querySelector('button').focus({preventScroll: true});
   }

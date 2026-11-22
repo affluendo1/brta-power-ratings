@@ -49,9 +49,12 @@
     return (data.ratingHistory?.rounds||[]).filter(x=>published.get(Number(x.round))!==false&&
       (view==='singles'||data.doublesRatingHistory?.tables?.[x.round]));
   }
+  function snapshotRounds(data,view){
+    return data.meta?.is_archive ? [] : rounds(data,view);
+  }
   function ranked(rows,view,data){let rank=0;return sorted(rows).map(row=>({...row,rank:qualified(row,view,data)?++rank:null}))}
   function withMovement(data,view,round=null){
-    const calendar=rounds(data,view).map(x=>Number(x.round)).sort((a,b)=>a-b),target=round==null?calendar.at(-1):Number(round);
+    const calendar=snapshotRounds(data,view).map(x=>Number(x.round)).sort((a,b)=>a-b),target=round==null?calendar.at(-1):Number(round);
     const previousRound=calendar.filter(x=>x<target).at(-1);
     const previous=new Map(previousRound==null?[]:ranked(rowsAt(data,view,previousRound),view,data).filter(x=>x.rank!=null).map(x=>[x.player,x]));
     const previousRatings=new Map(previousRound==null?[]:rowsAt(data,view,previousRound).map(x=>[x.player,x.rating]));
@@ -60,7 +63,7 @@
       ratingChange:previousRatings.has(row.player)?row.rating-previousRatings.get(row.player):null,
       isNew:row.rank!=null&&previousRound!=null&&!previous.has(row.player),previousRound}));
   }
-  const api={rowsAt,rounds,ranked,withMovement,qualified,minimum};
+  const api={rowsAt,rounds,snapshotRounds,ranked,withMovement,qualified,minimum};
   root.BRTAHistory=api;if(typeof module!=='undefined')module.exports=api;
 })(typeof window!=='undefined'?window:globalThis);
 

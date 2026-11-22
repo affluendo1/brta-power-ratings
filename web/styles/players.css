@@ -29,6 +29,7 @@
 .career-search-row p, .career-appearance p { font-size: 14px; }
 .career-search-meta { display: grid; gap: 4px; font-size: 14px; }
 .career-search-meta small { color: var(--muted-color); }
+.career-scopes:not([hidden]) ~ #profileContent .profile-head { margin-inline-end: 0; }
 .career-scopes { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; margin: 0 56px 16px 0; }
 .career-head { display: flex; justify-content: space-between; align-items: end; gap: 16px; padding: 20px 0 17px; border-top: 1px solid var(--border-color); }
 .career-head h2 { font-size: clamp(26px, 5vw, 42px); margin: 6px 0 2px; overflow-wrap: anywhere; }
@@ -211,20 +212,10 @@ abbr.emergency-marker { color: var(--player-emergency); font-size: .74em; font-w
 .career-equivalents { margin-top: 6px; }
 .career-equivalents ul { margin: 7px 0; padding-inline-start: 16px; }
 .career-equivalents small { display: block; color: var(--muted-color); }
-.career-season-form article, .following-rank { display: flex; gap: 7px 14px; align-items: baseline; flex-wrap: wrap; }
-.career-season-form strong, .following-rank strong { color: var(--primary); }
-.career-season-form strong small, .following-rank strong small { color: var(--muted-color); font-size: .7em; }
+.career-season-form article { display: flex; gap: 7px 14px; align-items: baseline; flex-wrap: wrap; }
+.career-season-form strong { color: var(--primary); }
+.career-season-form strong small { color: var(--muted-color); font-size: .7em; }
 [data-follow-count]:not(:empty) { margin-inline-start: .45em; border-radius: 1em; padding: .15em .45em; border: 1px solid currentColor; font-size: .78em; }
-.following-heading { padding: 16px; border: 1px solid var(--border-color); border-top: 3px solid var(--primary); border-radius: 7px; background: var(--surface-raised); }
-.following-heading h2, .association-follow-row h3 { margin: 0; }
-#playersFollowing p { color: var(--muted-color); margin: 6px 0 0; }
-.association-follow-row { margin: 8px 0; padding: 12px 14px; border: 1px solid var(--border-color); border-radius: 7px; background: var(--surface-raised); }
-.association-follow-row header { display: flex; align-items: start; justify-content: space-between; gap: 10px; }
-.association-follow-row .person { font-size: 18px; font-weight: 850; }
-.following-rank { padding-top: 9px; }
-.following-rank strong { font-size: 24px; }
-.following-review, .following-return, .following-method { margin-top: 10px; padding: 10px; background: var(--surface); border: 1px solid var(--border-color); border-radius: 5px; }
-.following-review > div { margin-top: 8px; display: flex; gap: 5px; flex-wrap: wrap; }
 @media (max-width: 600px) {
   .career-progress-metrics { grid-template-columns: repeat(2, minmax(0,1fr)); }
   .career-rivals summary { column-gap: 6px; }
@@ -326,8 +317,95 @@ abbr.emergency-marker { color: var(--player-emergency); font-size: .74em; font-w
   position: absolute; inset: -6px -7px auto auto; margin: 0; line-height: 1; font-weight: 800;
   background: var(--surface-raised);
 }
-.players-following-sheet > h2 { margin-top: 0; padding-inline-end: 48px; }
+#playersFollowingOverlay .players-following-sheet {
+  --following-accent: light-dark(#876008, #ffcf62);
+  display: flex;
+  flex-direction: column;
+  width: min(900px, calc(100vw - 32px));
+  padding: 0;
+  overflow: hidden;
+  border-radius: 16px;
+}
+.players-following-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: none;
+  padding: 16px 22px;
+  background: color-mix(in srgb, var(--primary) 7%, var(--surface-raised));
+  border-bottom: 1px solid var(--border-color);
+}
+.players-following-header h2 { margin: 0; flex: 1; font-size: 24px; }
+.players-following-header .close-btn { position: static; float: none; flex: none; margin: 0; }
+.following-icon, .following-remove {
+  display: grid;
+  flex: none;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 1px solid color-mix(in srgb, var(--following-accent) 35%, var(--border-color));
+  border-radius: 10px;
+  color: var(--following-accent);
+  background: color-mix(in srgb, var(--following-accent) 9%, var(--surface));
+}
+.following-icon svg, .following-remove svg { width: 20px; height: 20px; fill: currentColor; stroke: currentColor; stroke-width: 1.6; stroke-linejoin: round; }
+.following-remove { width: 36px; height: 36px; cursor: pointer; }
+.following-remove:is(:hover, :focus-visible) svg { fill: transparent; }
+#playersFollowing { min-height: 0; overflow-y: auto; overscroll-behavior: contain; padding: 20px 22px 22px; }
 #playersFollowing[hidden] { display: none; }
+#playersFollowing p { margin: 5px 0 0; color: var(--muted-color); }
+.following-group + .following-group { margin-top: 22px; }
+.following-group h3 { display: flex; align-items: baseline; gap: 9px; margin: 0 0 10px; font-size: 16px; }
+.following-group h3 span { color: var(--muted-color); font-weight: 600; font-variant-numeric: tabular-nums; }
+.following-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 308px), 1fr)); gap: 12px; }
+.association-follow-row {
+  min-width: 0;
+  padding: 14px;
+  border: 1px solid var(--border-color);
+  border-radius: 11px;
+  background: var(--surface);
+}
+.association-follow-row header { display: flex; align-items: start; justify-content: space-between; gap: 10px; }
+.association-follow-row header > div { min-width: 0; }
+.association-follow-row h4 { margin: 0; font-size: 17px; overflow-wrap: anywhere; }
+.association-follow-row .person { text-align: start; }
+.following-locations { list-style: none; padding: 0; margin: 4px 0 0; font-size: 13px; color: var(--muted-color); overflow-wrap: anywhere; }
+.following-locations li + li { margin-top: 4px; }
+.following-rank {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 5px 13px;
+  margin-top: 11px;
+  padding: 9px 11px;
+  border-radius: 7px;
+  background: var(--surface-muted);
+  font-variant-numeric: tabular-nums;
+}
+.following-rank > div { display: grid; gap: 2px; }
+.following-rank > div + div { padding-inline-start: 12px; border-inline-start: 1px solid var(--border-color); }
+.following-rank span, .following-rank small { color: var(--muted-color); font-size: 11px; }
+.following-rank strong { font-size: 19px; line-height: 1.2; }
+.following-rank > div:first-child strong { color: var(--primary); }
+.following-rank-context { grid-column: 1 / -1; }
+#playersFollowing .following-no-rank { margin-top: 12px; font-size: 13px; }
+.following-review, #playersFollowing .following-return {
+  margin-top: 11px;
+  padding: 9px 10px;
+  border-radius: 7px;
+  background: color-mix(in srgb, var(--following-accent) 8%, var(--surface-muted));
+  font-size: 13px;
+}
+.following-review > div { margin-top: 8px; display: flex; gap: 6px; flex-wrap: wrap; }
+.following-method { margin-top: 16px; padding-top: 12px; border-top: 1px solid var(--border-color); font-size: 13px; }
+.following-method summary { cursor: pointer; }
+.following-empty { padding: 24px 12px; text-align: center; }
+.following-empty h3 { margin: 0; }
+@media (max-width: 560px) {
+  #playersFollowingOverlay .players-following-sheet { width: calc(100vw - 20px); }
+  .players-following-header { padding: 12px 14px; }
+  #playersFollowing { padding: 14px; }
+}
 .players-roster-title { margin: 20px 0 9px; align-items: center; }
 .players-roster-key {
   display: grid;

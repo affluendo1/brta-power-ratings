@@ -73,7 +73,8 @@
       matches.push([item, item.typo ? 5 : score(item)]);
     }
     if (words.length) matches.sort((a, b) => a[1] - b[1]);
-    filtered = matches.slice(0, words.length ? 60 : rootSearch ? 16 : matches.length).map(([item]) => item);
+    list.classList.toggle('navigation-shortcuts', rootSearch && !words.length);
+    filtered = (words.length ? matches.slice(0, 60) : matches).map(([item]) => item);
     selected = Math.min(selected, Math.max(0, filtered.length - 1));
     list.innerHTML = filtered.map((item, index) => '<button type="button" role="option" id="navigationOption' + index + '" aria-selected="' + (index === selected) + '" data-nav-index="' + index + '"><span class="nav-row-copy"><b>' + esc(item.label) + '</b><small>' + esc(item.detail) + '</small></span>' + (item.nested ? '<span class="nav-chevron" aria-hidden="true"></span>' : '') + '</button>').join('');
     input.setAttribute('aria-activedescendant', filtered.length ? 'navigationOption' + selected : '');
@@ -336,30 +337,37 @@
   }
   function commands() {
     const rows = [
+      action('Results', 'Scorecards and rounds', () => switchPage('results')),
+      action('Latest Round', 'Recent results and highlights', () => BRTALatestRound.open()),
+      action('Standings', 'Section ladder and finals', () => switchPage('standings')),
+      action('Fixtures', 'Section draw', () => switchPage('fixtures')),
+      action('Prediction Centre', 'Lineups and score estimates', () => openPredictionHome()),
+      action('Players', 'Open the Players tab', () => switchPage('ratings')),
+      action('Ratings', 'Section rankings and Power', () => {
+        switchPage('ratings'); window.BRTAPlayers?.show('section');
+      }),
+      action('Player directory', 'Career search across seasons', () => {
+        switchPage('ratings'); window.BRTAPlayers?.show('history');
+      }),
+      action('Following', 'Starred players and return watches', () => { hide(); switchPage('ratings'); window.BRTAPlayers?.following(); }),
+      action('Clubs', 'Venues, teams and participation', () => switchPage('teams')),
+      action('Find a club', 'Search the club directory', () => { hide(); window.BRTAClubs.openSearch(); }),
       nested('Current competitions', 'Choose a competition and section', () => {
         const choices = [...new Map(official().map(row => [row.competition_code, sectionCompetitionLabel(row)])).entries()];
         show('Current competitions', choices.map(([code,label]) => nested(label, 'Sections, teams, players and fixtures', () =>
           show(label, official().filter(row => row.competition_code === code).map(row => nested(row.section_label, label, () => sectionMenu(row))), 'Choose a section.', true))), '', true);
       }),
       nested('Past seasons', 'Browse competitions, years and sections', historyMenu),
-      nested('Clubs across competitions', 'Find where a club plays and explore team results', clubDirectory),
-      nested('This section', 'Teams, Player Labs and fixtures', () => sectionMenu(D.meta, activeHistorySeasonId ? historyCatalog?.seasons.find(season => season.id === activeHistorySeasonId) : null)),
-      ...[['Results','results'],['Standings','standings'],['Players','ratings'],['Clubs','teams'],['Fixtures','fixtures']].map(([label,page]) => action(label, 'Open this section’s ' + label.toLowerCase(), () => switchPage(page))),
-      {...action('Ratings', 'Player Power, rankings, bands and rating snapshots', () => {
-        switchPage('ratings'); window.BRTAPlayers?.show('section');
-      }), searchOnly: true},
-      {...action('Player directory', 'Search player history and section lineups', () => {
-        switchPage('ratings'); window.BRTAPlayers?.show('history');
-      }), searchOnly: true},
-      {...action('Following', 'Starred players and return watches', () => { hide(); switchPage('ratings'); window.BRTAPlayers?.following(); }), searchOnly: true},
-      {...action('Prediction Centre', 'Fixtures, lineups and score estimates', () => openPredictionHome()), searchOnly: true},
-      {...action('Changelog', 'Version and release history', () => window.BRTAChangelog?.open()), searchOnly: true},
-      {...action('Rating model', 'Change the Power model', () => openLayoutOverlay('model')), searchOnly: true},
-      action('Latest Round', 'Recent results and highlights', () => BRTALatestRound.open()),
+      nested('This section', 'Browse teams, players and fixtures', () => sectionMenu(D.meta, activeHistorySeasonId ? historyCatalog?.seasons.find(season => season.id === activeHistorySeasonId) : null)),
+      nested('Clubs across competitions', 'Explore team entries and results', clubDirectory),
+      action('Custom Competitions', 'Create or edit a competition', () => window.CustomSections?.open()),
+      action('Export section', 'Download results or a section report', () => window.BRTAExportUI853.open()),
       nested('Default Section', 'Choose where the site opens', defaultMenu),
-      action('Tutorial', 'Guided walkthroughs of the actual site', guide),
       action('Settings', 'Theme, model and preferences', () => openSettings()),
-      action('Custom Competitions', 'Create or edit your competition', () => window.CustomSections?.open())
+      action('Changelog', 'Version and release history', () => window.BRTAChangelog?.open()),
+      action('Methodology', 'Rating models and full site reference', () => openLayoutOverlay('methodology')),
+      action('Rating model', 'Change the Power model', () => openLayoutOverlay('model')),
+      action('Tutorial', 'Guided walkthroughs', guide)
     ];
     if (D?.meta) {
       const data = D;

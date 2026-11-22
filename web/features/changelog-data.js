@@ -2,24 +2,42 @@
 // Retrospective entries use source-commit timestamps; sourceCommit records their provenance.
 window.BRTA_RELEASES = Object.freeze([
 {
+  "version": "9.9c",
+  "size": "small",
+  "title": "Quicker navigation and cleaner Player Labs",
+  "committedAt": "2026-11-22T18:11:41+11:00",
+  "changes": [
+    "Quick Navigation puts Prediction Centre, the player directory, Following, exports and other common tools on its first screen.",
+    "Archived sections show their published section ratings without a round selector, movement columns or round-by-round graphs in Player and Pair Labs.",
+    "Player Lab section panels have rounded corners, and the rank card and header divider extend to the full content width.",
+    "Following groups players who are playing now and players you’re watching for a return. Cards show rank and match record separately and open the player’s Career Lab.",
+    "Settings → Methodology has a downloadable copy of the full site reference. The repository README is now a short introduction, and 9.9a and 9.9b have fuller release notes."
+  ]
+},
+{
   "version": "9.9b",
   "size": "tiny",
-  "title": "One name for each feature",
-  "committedAt": "2026-11-22T16:37:05+11:00",
+  "title": "Latest Round and the end of Club Zone",
+  "committedAt": "2026-11-22T16:40:46+11:00",
+  "sourceCommit": "d1761dcb80e9337ee29501804388dbe7d3cbeeb2",
   "changes": [
-    "Latest Round now lives directly in Results. Fixture and season tools use the same names across the site.",
-    "Retired the old club pilot, maintenance screen and automatic all-time totals. Run clubs-backend in the site console to calculate historical club totals."
+    "Open Latest Round directly from Results for the latest completed fixtures, highlights and scorecards. Closing a scorecard returns you to the round summary.",
+    "The current site uses consistent names for Results, fixtures, and Season History. Historic release notes keep the original Matchday and Rounds names.",
+    "Club Zone’s picker and maintenance screen are retired. Team links from scorecards open Team Stats in Clubs, where venue details, participation and ladder comparisons are available.",
+    "Historical club totals are now calculated on request. With Extras enabled, open Diagnostics and run clubs-backend UA Kings Park to see records, games, ladder finishes and finals."
   ]
 },
 {
   "version": "9.9a",
   "size": "tiny",
-  "title": "Players release fixes",
-  "committedAt": "2026-11-22T15:12:00+11:00",
+  "title": "Players and Career Lab fixes",
+  "committedAt": "2026-11-22T15:14:25+11:00",
+  "sourceCommit": "a3909b95e52aa836ac002486a2c359708019f872",
   "changes": [
-    "Restored the public homepage title and made the homepage eligible for search indexing again.",
+    "Restored the production homepage title and canonical URL, and removed the preview setting that blocked search indexing.",
     "Full results syncs and history imports now rebuild career analytics alongside the player search index.",
-    "Fixed stale directory results, local searching in custom sections, zero-match charts and section Power when switching Lab scopes."
+    "Player directory results stay in sync as the name or scope changes. Custom Competition searches use the local player list and match name typos.",
+    "Career Lab recalculates section Power under the selected model when you change scope. Match-count charts scale correctly even when a season has zero matches."
   ]
 },
 {

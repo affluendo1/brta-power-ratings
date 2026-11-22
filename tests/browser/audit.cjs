@@ -30,9 +30,74 @@ const tick=()=>new Promise(r=>setTimeout(r,25));
 const click=s=>{assert(w.document.querySelector(s),s);w.document.querySelector(s).focus();w.document.querySelector(s).click()};
 const esc=()=>w.dispatchEvent(new w.KeyboardEvent('keydown',{key:'Escape',bubbles:true,cancelable:true}));
 click('#settingsBtn');await tick();click('#installBtn');await tick();esc();await tick();assert(w.document.querySelector('#installOverlay').classList.contains('hidden'));assert(!w.document.querySelector('#settingsOverlay').classList.contains('hidden'));assert.equal(w.document.activeElement.id,'installBtn');console.log('Install Escape preserves Settings and restores focus');
-click('[data-layout-open="methodology"]');await tick();esc();await tick();assert(w.document.querySelector('#layoutOverlay').classList.contains('hidden'));assert(!w.document.querySelector('#settingsOverlay').classList.contains('hidden'));assert(!w.document.querySelector('#settingsOverlay').inert);console.log('Methodology Escape restores interactive Settings');
+click('[data-layout-open="methodology"]');await tick();
+const reference=w.document.querySelector('#layoutOverlay a[download]');
+assert(reference,'Methodology offers the full site reference');
+assert.equal(reference.getAttribute('href'),'BRTA-Power-Ratings-Reference.md');
+assert(fs.readFileSync(path.join(ROOT,reference.getAttribute('href')),'utf8').includes('## Frontend architecture'));
+esc();await tick();assert(w.document.querySelector('#layoutOverlay').classList.contains('hidden'));assert(!w.document.querySelector('#settingsOverlay').classList.contains('hidden'));assert(!w.document.querySelector('#settingsOverlay').inert);console.log('Methodology Escape restores interactive Settings');
 click('[data-studio="theme"]');await tick();esc();await tick();assert(w.document.querySelector('#themeStudioOverlay').classList.contains('hidden'));assert(!w.document.querySelector('#settingsOverlay').classList.contains('hidden'));console.log('Theme creator Escape preserves Settings');
-click('[data-changelog-open]');await tick();assert.equal(w.document.querySelector('.release-heading h3').textContent,w.BRTA_RELEASES.find(release=>release.size==='major').version);esc();await tick();assert(w.document.querySelector('#changelogOverlay').classList.contains('hidden'));assert(!w.document.querySelector('#settingsOverlay').classList.contains('hidden'));console.log('Changelog Escape restores Settings');esc();await tick();
+click('[data-changelog-open]');await tick();
+assert.equal(w.document.querySelector('.release-heading h3').textContent,w.BRTA_RELEASES.find(release=>release.size==='major').version);
+assert.equal(w.BRTAChangelog.version,'9.9c');
+for(const release of w.BRTA_RELEASES.slice(0,3)){
+  assert.equal(w.document.querySelector('[data-release-version="'+release.version+'"] h4').textContent,
+    release.version+' · '+release.title);
+}
+click('#changelog-history-tab');
+assert.equal(w.document.getElementById('release-9.9b').querySelector('.release-name').textContent,w.BRTA_RELEASES.find(release=>release.version==='9.9b').title);
+esc();await tick();assert(w.document.querySelector('#changelogOverlay').classList.contains('hidden'));assert(!w.document.querySelector('#settingsOverlay').classList.contains('hidden'));console.log('Changelog Escape restores Settings');esc();await tick();
+click('#quickNavigationBtn');await tick();
+const shortcuts=[...w.document.querySelectorAll('#navigationResults [role="option"]')];
+for(const label of ['Prediction Centre','Ratings','Player directory','Following','Find a club','Export section','Changelog','Methodology','Rating model','Tutorial']){
+  assert(shortcuts.some(row=>row.querySelector('b').textContent===label),label+' is visible in Quick Navigation without searching');
+}
+shortcuts.find(row=>row.querySelector('b').textContent==='Prediction Centre').click();await tick();
+assert(w.document.querySelector('#navigationOverlay').classList.contains('hidden'));
+assert(!w.document.querySelector('#predictionOverlay').classList.contains('hidden'));
+esc();await tick();
+console.log('Quick Navigation exposes common destinations without typing');
+
+const liveCode=vm.runInContext('D.meta.section_code',ctx);
+assert(await vm.runInContext(`(async()=>{
+  const catalog=await ensureHistoryCatalog();
+  const season=catalog.seasons.find(row=>row.season_id==='UA38');
+  activeHistorySeasonId=season.id;viewCatalog=historySeasonSections(season);
+  return loadSection('UA38-UA012');
+})()`,ctx));
+await tick();
+click('.main-tab[data-page="ratings"]');
+assert(w.document.querySelector('#ratingFilters').classList.contains('hidden'));
+assert(w.document.querySelector('[data-rating-snapshot-help]').classList.contains('hidden'));
+for(const view of ['singles','pairs','doublesPlayers','overall']){
+  vm.runInContext("ratingView="+JSON.stringify(view)+";renderRatings()",ctx);
+  assert(!w.document.querySelector('#ratingBody .rank-movement, #ratingBody .rating-change'));
+  const headers=[...w.document.querySelectorAll('#ratingHead th')].map(th=>th.textContent);
+  assert(!headers.includes('Movement')&&!headers.includes('Power Δ'));
+  const row=w.document.querySelector('#ratingBody tr:not(.band-divider)');
+  if(row.cells.length===1)assert.equal(row.cells[0].colSpan,headers.length);
+  else assert.equal(row.cells.length,headers.length);
+}
+vm.runInContext("ratingView='singles';renderRatings();openProfile(D.singles[0].player)",ctx);
+await tick();
+assert(w.document.querySelector('#profileContent .lab8-hero'));
+assert(!w.document.querySelector('#profileContent .lab8-graph'));
+assert.equal(vm.runInContext("historyChart(D.singles[0].player)",ctx),'');
+esc();await tick();
+vm.runInContext("lab8Open(D.doubles[0].player,null,true)",ctx);
+await tick();
+assert(!w.document.querySelector('#profileContent .lab8-graph'));
+esc();await tick();
+vm.runInContext("openSearchOptions();selectRatingRound('2')",ctx);
+assert(w.document.querySelector('.ratings-history-options').hidden);
+assert.equal(vm.runInContext('ratingRound',ctx),null);
+esc();await tick();
+assert(await vm.runInContext("activeHistorySeasonId=null;viewCatalog=currentCatalog();ratingView='singles';loadSection("+JSON.stringify(liveCode)+")",ctx));
+assert(!w.document.querySelector('#ratingFilters').classList.contains('hidden'));
+assert(w.document.querySelector('#ratingBody .rank-movement'));
+click('.main-tab[data-page="results"]');
+console.log('Archived ratings hide snapshots and movement while current ratings retain both');
+
 click('#latestRoundBtn');await tick();assert(w.document.querySelector('.latest-highlights').textContent.includes('Top team performance'));click('[data-latest-result]');await tick();assert(!w.document.querySelector('#resultOverlay').classList.contains('hidden'));assert.equal(w.document.querySelectorAll('.result-detail-head [data-club-team]').length,2);esc();await tick();assert(w.document.querySelector('#resultOverlay').classList.contains('hidden'));assert(w.document.querySelector('.latest-round-overlay'));
 const resultContent=w.document.querySelector('#resultOverlay .result-scroll'),resultSheet=resultContent.closest('.result-sheet');
 assert(w.document.querySelector('#resultShare:not([hidden]) svg'),'Share uses an SVG in the result toolbar.');
@@ -147,8 +212,14 @@ click('#profileContent [data-player-follow]');await tick();
 assert(JSON.parse(w.localStorage.getItem('brta-association-following-v1')).pins.some(pin=>pin.name==='Jayden Bone'));
 esc();await tick();
 click('[data-following-open]');await tick();
-assert(w.document.querySelector('#playersFollowing').textContent.includes('Jayden Bone'));
-esc();await tick();console.log('Following adds a player from the Lab and shows them in the Players dialog');
+const followedCard=w.document.querySelector('#playersFollowing .following-grid .association-follow-row');
+assert(followedCard.textContent.includes('Jayden Bone'));
+assert(followedCard.querySelector('[data-follow-remove]').getAttribute('aria-label').includes('Jayden Bone'));
+assert(followedCard.querySelector('.following-rank').textContent.includes('Match record'));
+click('#playersFollowing [data-follow-open]');await tick();
+assert(w.document.querySelector('#playersFollowingOverlay').classList.contains('hidden'));
+assert(!w.document.querySelector('#profileOverlay').classList.contains('hidden'));
+esc();await tick();console.log('Following cards show the rank and record and open Career Lab');
 
 await vm.runInContext("(async()=>{ratingScope='section';ratingView='singles';await loadSection('TN003');openProfile(dinds[0].player)})()",ctx);await tick();
 assert(w.document.querySelector('[data-rating="singles"]').hidden);assert(w.document.querySelector('[data-rating="overall"]').hidden);

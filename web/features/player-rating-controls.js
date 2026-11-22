@@ -51,9 +51,10 @@ window.BRTARatingControls = {
       '<article><h3>Power</h3><p>A rating summarises performance against opponents in this section. It responds to the score and who was on the other side of the court.</p></article>' +
       '<article><h3>Pick a discipline</h3><p>Singles rates individual players. Doubles pairs rates a particular partnership. Individual doubles estimates each player’s contribution. Overall combines individual singles and doubles evidence where available.</p></article>' +
       '<article><h3>Read the ladder</h3><p>Performance bands group ratings within the section. Provisional players are still building a record. If shown, ± indicates model uncertainty.</p></article>' +
-      '<article><h3>Rewind a round</h3><p>Use Rating snapshot to view the ladder after a published round. Tap a name to explore the matches and graphs behind the rating in Player Lab.</p></article></div>' +
+      '<article data-rating-snapshot-help><h3>Rewind a round</h3><p>Use Rating snapshot to view the ladder after a published round. Tap a name to explore the matches and graphs behind the rating in Player Lab.</p></article></div>' +
       '<p class="career-footnote">Power is calculated separately for each section. To follow a player across sections, use Players.</p>';
     page.querySelector('.ratings-toolbar').after(description);
+    const snapshotHelp = description.querySelector('[data-rating-snapshot-help]');
 
     toggle.onclick = () => {
       choices.hidden = !choices.hidden;
@@ -97,7 +98,9 @@ window.BRTARatingControls = {
           choices.hidden = true;
           toggle.setAttribute('aria-expanded', 'false');
         }
-        const options = BRTAHistory.rounds(D, ratingView).slice().sort((a, b) => b.round - a.round);
+        const options = BRTAHistory.snapshotRounds(D, ratingView).sort((a, b) => b.round - a.round);
+        filters.classList.toggle('hidden', !options.length);
+        snapshotHelp.classList.toggle('hidden', !options.length);
         const key = JSON.stringify(options.map(x => [x.round, ratingRoundLabel(x.round)]));
         if (key !== lastKey) {
           lastKey = key;

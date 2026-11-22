@@ -31,6 +31,12 @@
       '<h4>Other changes</h4>'+list(release.otherChanges):'');
   }
 
+  function patch(release) {
+    return '<section class="release-patch" data-release-version="'+escape(release.version)+'">' +
+      '<h4>'+escape([release.version, release.title].filter(Boolean).join(' · '))+'</h4>' +
+      time(release)+points(release)+'</section>';
+  }
+
   function settingsHTML() {
     return '<div class="settings-group settings-wide version-settings"><div><h3>Version</h3><strong class="site-version">'+escape(latest.version)+'</strong><p>See what’s new in BRTA Power Ratings.</p></div><button class="button primary" type="button" data-changelog-open aria-haspopup="dialog" aria-controls="changelogOverlay">Changelog</button></div>';
   }
@@ -71,7 +77,7 @@
       '<button id="changelog-latest-tab" type="button" role="tab" aria-selected="true" aria-controls="changelog-latest" data-changelog-tab="latest">Latest update</button>'+
       '<button id="changelog-history-tab" type="button" role="tab" aria-selected="false" aria-controls="changelog-history" tabindex="-1" data-changelog-tab="history">Full history</button></div>'+
       '<div class="changelog-panels"><div id="changelog-latest" role="tabpanel" aria-labelledby="changelog-latest-tab" tabindex="0">'+
-      '<article class="release-latest"><div class="release-latest-label">LATEST '+escape(parentRelease.size.toUpperCase())+' UPDATE</div><div class="release-heading"><h3>'+escape(parentRelease.version)+'</h3>'+(parentRelease.title?'<span>'+escape(parentRelease.title)+'</span>':'')+pastButton(parentRelease)+'</div>'+time(parentRelease)+points(parentRelease)+patches.slice().reverse().map(r=>'<div class="release-patch" data-release-version="'+escape(r.version)+'"><b>'+escape(r.version)+'</b>'+time(r)+points(r)+'</div>').join('')+'</article></div>'+
+      '<article class="release-latest"><div class="release-latest-label">LATEST '+escape(parentRelease.size.toUpperCase())+' UPDATE</div><div class="release-heading"><h3>'+escape(parentRelease.version)+'</h3>'+(parentRelease.title?'<span>'+escape(parentRelease.title)+'</span>':'')+pastButton(parentRelease)+'</div>'+time(parentRelease)+points(parentRelease)+patches.slice().reverse().map(patch).join('')+'</article></div>'+
       '<div id="changelog-history" role="tabpanel" aria-labelledby="changelog-history-tab" tabindex="0" hidden><p class="changelog-history-hint">Choose an update to see what changed.</p><div class="release-history">'+releases.map(release =>
         '<div class="release-history-row' + (['major','large'].includes(release.size) ? ' release-anchor' : '') +
         '" id="release-' + escape(release.version) + '"><details class="release-entry'+' release-'+release.size+'"><summary><span class="release-version">'+escape(release.version)+'</span><span class="release-name">'+escape(release.title||'')+(['major','large'].includes(release.size) ? '<small>'+escape(release.size)+'</small>' : '')+'</span><span class="release-chevron" aria-hidden="true">⌄</span>'+time(release)+'</summary><div class="release-details">'+points(release)+'</div></details>'+pastButton(release)+'</div>'

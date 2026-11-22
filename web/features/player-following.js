@@ -117,9 +117,11 @@ window.BRTAPlayerFollowing = (() => {
         if (!previous || matches > previous.matches) records.set(pool, {pool, rank, count, matches, wins, ladders});
       }
       return [...records.values()].sort((a, b) => a.rank / a.count - b.rank / b.count).map(({pool, rank, count, matches, wins, ladders}) =>
-        '<div class="following-rank"><strong>#' + rank + '<small> / ' + count + '</small></strong><span>' +
-        (ladders > 1 ? 'Across ' + ladders + ' calibrated BRTA ladders' : esc(competitionLabel(pool.split('/')[0]).split(' - ')[0]) + ' comparison group') +
-        ' · ' + wins + '–' + (matches - wins) + '</span></div>').join('');
+        '<div class="following-rank"><div><span>Rank</span><strong>#' + rank + '<small> / ' + count + '</small></strong></div>' +
+        '<div><span>Match record</span><strong>' + wins + '–' + (matches - wins) + '</strong></div>' +
+        '<small class="following-rank-context">' +
+        (ladders > 1 ? ladders + ' calibrated BRTA ladders' : esc(competitionLabel(pool.split('/')[0]).split(' - ')[0]) + ' comparison group') +
+        '</small></div>').join('');
     }
     function draw() {
       if (!model) {
@@ -131,8 +133,9 @@ window.BRTAPlayerFollowing = (() => {
         const current = known.flatMap(person => person.rows.filter(row => row.isCurrent));
         return {pin, known, current};
       }).sort((a, b) => Number(!!b.current.length) - Number(!!a.current.length) || a.pin.name.localeCompare(b.pin.name));
-      const all = active => visible.map(({pin, known, current}, i) => {
-        if (!!current.length !== active) return '';
+      const activeCount = visible.filter(row => row.current.length).length;
+      const card = ({pin, known, current}, i) => {
+        const active = !!current.length;
         const review = (candidates.get(pin) || []).map((person, j) =>
           '<div class="following-review"><b>Same name in a current season</b><p>' +
           esc(locations(person.rows.filter(row => row.isCurrent)).join(' / ')) +
@@ -143,18 +146,24 @@ window.BRTAPlayerFollowing = (() => {
         const notice = notifications.has(pin) ? '<p class="following-return" role="status">New season or competition found. ' +
           '<button class="export-link" data-follow-seen="' + i + '">Mark seen</button></p>' : '';
         const primary = known.find(person => person.rows.some(row => row.isCurrent)) || known[0];
-        return '<article class="association-follow-row"><header><div><h3>' +
+        const locationsHTML = active ? '<ul class="following-locations">' +
+          locations(current).map(location => '<li>' + esc(location) + '</li>').join('') + '</ul>' :
+          '<p>' + esc(primary ? 'Last seen ' + primary.rows[0].seasonLabel + ' · ' + primary.rows[0].team : 'Saved history unavailable') + '</p>';
+        return '<article class="association-follow-row"><header><div><h4>' +
           (primary ? '<button type="button" class="person" data-follow-open="' + i + '">' + esc(pin.name) + '</button>' : esc(pin.name)) +
-          '</h3><p>' + (active ? esc(locations(current).join(' / ')) :
-            esc(primary ? 'Last seen ' + primary.rows[0].seasonLabel + ' · ' + primary.rows[0].team : 'Saved history unavailable')) +
-          '</p></div><button class="export-link" data-follow-remove="' + i + '">Unfollow</button></header>' +
-          (active ? ranking(known) || '<p>At least three scored matches are needed for a comparison.</p>' : '') + notice + review + '</article>';
-      }).join('');
-      host.innerHTML = '<header class="following-heading"><p>Star a player in their Lab to track their BRTA seasons on this device.</p></header>' +
-        (visible.length ? '<section><h3>Playing now</h3>' + (all(true) || '<p>No current entries for your followed players.</p>') +
-          '</section><section><h3>Watching for a return</h3>' + (all(false) || '<p>No archived players followed.</p>') + '</section>' :
-          '<p>No players followed yet.</p>') +
-        (visible.some(row => row.current.length) ? '<details class="following-method"><summary>How the comparison works</summary><p>Section level is weighted with win rate and game share. The comparison combines ladders only where there is enough evidence from players who played both. This estimate uses published match records.</p></details>' : '');
+          '</h4>' + locationsHTML + '</div><button type="button" class="following-remove" data-follow-remove="' + i +
+          '" aria-label="Unfollow ' + esc(pin.name) + '" title="Unfollow">' + icon + '</button></header>' +
+          (active ? ranking(known) || '<p class="following-no-rank">Comparison available after three scored matches.</p>' : '') +
+          notice + review + '</article>';
+      };
+      const group = (title, rows, offset = 0) => rows.length ? '<section class="following-group"><h3>' + title +
+        ' <span>' + rows.length + '</span></h3><div class="following-grid">' + rows.map((row, i) => card(row, offset + i)).join('') +
+        '</div></section>' : '';
+      host.innerHTML = visible.length ?
+        group('Playing now', visible.slice(0, activeCount)) +
+        group('Watching for a return', visible.slice(activeCount), activeCount) +
+        (activeCount ? '<details class="following-method"><summary>How the comparison works</summary><p>Section level is weighted with win rate and game share. The comparison combines ladders only where there is enough evidence from players who played both. This estimate uses published match records.</p></details>' : '') :
+        '<div class="following-empty"><h3>No players followed yet</h3><p>Star a player in their Lab to see their results here and track when they return.</p></div>';
     }
     host.addEventListener('click', event => {
       const button = event.target.closest('button');
@@ -191,6 +200,9 @@ window.BRTAPlayerFollowing = (() => {
       update();
       refreshStars();
       draw();
+      const next = host.querySelector('[data-follow-open="' + Math.min(i, visible.length - 1) + '"]') ||
+        host.closest('.players-following-sheet').querySelector('[data-following-close]');
+      next.focus({preventScroll: true});
     });
     document.addEventListener('click', async event => {
       const button = event.target.closest('[data-player-follow]');

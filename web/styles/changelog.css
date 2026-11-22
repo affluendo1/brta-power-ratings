@@ -22,6 +22,7 @@
 .changelog-sheet time{display:block;color:var(--muted-color);font-size:12px;line-height:1.6}
 .release-points{margin:18px 0 0;padding-left:20px;line-height:1.65;font-size:14px}
 .release-points li{padding-left:3px;margin:7px 0}
+.release-patch h4{margin:0 0 5px;font-size:16px;line-height:1.35}
 .changelog-history-hint{margin:0 0 16px;color:var(--muted-color);font-size:13px}
 .release-history{display:grid;gap:9px}
 .release-entry{border:1px solid var(--border-color);border-radius:var(--panel-radius,7px);background:var(--surface);overflow:hidden}
