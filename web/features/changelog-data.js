@@ -7,11 +7,9 @@ window.BRTA_RELEASES = Object.freeze([
   "title": "Quicker navigation and cleaner Player Labs",
   "committedAt": "2026-11-22T18:11:41+11:00",
   "changes": [
-    "Quick Navigation puts Prediction Centre, the player directory, Following, exports and other common tools on its first screen.",
-    "Archived sections show their published section ratings without a round selector, movement columns or round-by-round graphs in Player and Pair Labs.",
-    "Player Lab section panels have rounded corners, and the rank card and header divider extend to the full content width.",
-    "Following groups players who are playing now and players you’re watching for a return. Cards show rank and match record separately and open the player’s Career Lab.",
-    "Settings → Methodology has a downloadable copy of the full site reference. The repository README is now a short introduction, and 9.9a and 9.9b have fuller release notes."
+    "Quick Navigation surfaces common tools, and Following has a new card layout.",
+    "Archived ratings and Labs hide round snapshots and movement. Player Lab headers span the full width.",
+    "Download the full site reference in Settings → Methodology."
   ]
 },
 {
@@ -21,10 +19,8 @@ window.BRTA_RELEASES = Object.freeze([
   "committedAt": "2026-11-22T16:40:46+11:00",
   "sourceCommit": "d1761dcb80e9337ee29501804388dbe7d3cbeeb2",
   "changes": [
-    "Open Latest Round directly from Results for the latest completed fixtures, highlights and scorecards. Closing a scorecard returns you to the round summary.",
-    "The current site uses consistent names for Results, fixtures, and Season History. Historic release notes keep the original Matchday and Rounds names.",
-    "Club Zone’s picker and maintenance screen are retired. Team links from scorecards open Team Stats in Clubs, where venue details, participation and ladder comparisons are available.",
-    "Historical club totals are now calculated on request. With Extras enabled, open Diagnostics and run clubs-backend UA Kings Park to see records, games, ladder finishes and finals."
+    "Latest Round moved into Results, and match and season tools use consistent names.",
+    "Club Zone retired. Historical club totals are available in Diagnostics with clubs-backend."
   ]
 },
 {
@@ -34,10 +30,8 @@ window.BRTA_RELEASES = Object.freeze([
   "committedAt": "2026-11-22T15:14:25+11:00",
   "sourceCommit": "a3909b95e52aa836ac002486a2c359708019f872",
   "changes": [
-    "Restored the production homepage title and canonical URL, and removed the preview setting that blocked search indexing.",
-    "Full results syncs and history imports now rebuild career analytics alongside the player search index.",
-    "Player directory results stay in sync as the name or scope changes. Custom Competition searches use the local player list and match name typos.",
-    "Career Lab recalculates section Power under the selected model when you change scope. Match-count charts scale correctly even when a season has zero matches."
+    "Restored homepage search metadata and automated career analytics refreshes.",
+    "Fixed player searches, Career Lab Power and zero-match charts."
   ]
 },
 {
@@ -46,13 +40,9 @@ window.BRTA_RELEASES = Object.freeze([
   "title": "Players through time",
   "committedAt": "2026-11-22T14:00:00+11:00",
   "changes": [
-    "Players brings together section ratings, team lineups and searchable career records.",
-    "Open any player’s Career Lab directly from Quick Nav, or set your default section in one screen.",
-    "Player Lab compares section progression with BRTA peers, shows rivalry scorecards and applies the selected rating model to historical Power.",
-    "Follow active players across competitions and keep a watch list for returning players.",
-    "One career graph includes every recorded competition, with season awards and competition-specific records.",
-    "Ratings and team lineups gain better filters, Power sorting and typo suggestions. Career Labs show team ladder positions and improvement pace.",
-    "A simpler Default Section picker, a revised Players tutorial, smoother loading, and clearer Club and Prediction Centre layouts."
+    "Players brings together section ratings, lineups and searchable careers. Open Career Lab from Quick Navigation.",
+    "Explore cross-competition timelines, rivalries, awards and rating progression.",
+    "Follow active players, watch for returning players and set a default section in one screen."
   ]
 },
   {
