@@ -2,6 +2,17 @@
 // Retrospective entries use source-commit timestamps; sourceCommit records their provenance.
 window.BRTA_RELEASES = Object.freeze([
 {
+  "version": "9.9e",
+  "size": "tiny",
+  "title": "Exact section searches and scorecard recall",
+  "committedAt": "2026-11-22T19:36:11+11:00",
+  "changes": [
+    "Quick Navigation keeps section numbers exact, so Sets 1 search results exclude Sets 10.",
+    "Latest Round joins scorecards to scheduled fixtures in either home and away order.",
+    "Latest Round remembers the last scorecard you opened in each section and focuses it when you return."
+  ]
+},
+{
   "version": "9.9d",
   "size": "tiny",
   "title": "Section search and fixture matching",

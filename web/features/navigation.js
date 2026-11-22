@@ -69,7 +69,9 @@
       const details = BRTAPlayerSearch.normalise(item.detail);
       if (tokens.length === 0) return item.searchOnly ? Infinity : 0;
       if (label === query) return 0;
-      if (label.startsWith(query)) return 1;
+      const nextCharacter = label.charAt(query.length);
+      const continuesNumber = /\d$/.test(query) && /[\p{L}\p{N}]/u.test(nextCharacter);
+      if (label.startsWith(query) && !continuesNumber) return 1;
       if (matchesTokens(label)) return 2;
       return matchesTokens(label + ' ' + details) ? 4 : Infinity;
     }

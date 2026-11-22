@@ -2,6 +2,29 @@
 'use strict';
 const page = document.createElement('div');
 page.id = 'latestRoundContent';
+const lastViewedScorecards = new Map();
+
+function scorecardFocusKey(scope, visited = new Set()) {
+  if (visited.has(scope)) return null;
+  visited.add(scope);
+  const parent = scope === 'section' ? 'latest-round' : 'section';
+  const prefix = scorecardFocusKey(parent, visited);
+  const name = scope === 'section' ? D?.meta?.section_code : 'latest-round';
+  return prefix && name ? prefix + '/' + name : null;
+}
+
+function rememberScorecard(fixtureId) {
+  const key = scorecardFocusKey('section');
+  if (key && fixtureId) lastViewedScorecards.set(key, fixtureId);
+}
+
+function restoreScorecardFocus() {
+  const key = scorecardFocusKey('section');
+  if (!key) return;
+  const fixtureId = lastViewedScorecards.get(key);
+  const card = [...page.querySelectorAll('[data-latest-result]')].find(item => item.dataset.latestResult === fixtureId);
+  card?.focus({preventScroll:true});
+}
 
 function fixtureRow(fixture, forecast) {
   const { home, away, status, fixtureId } = fixture;
@@ -143,7 +166,9 @@ function render() {
   function hasScorecard(fixture) {
     return round.fixtures.some(result => {
       if (result.fixtureId === fixture.fixtureId) return true;
-      return result.home === fixture.home && result.away === fixture.away;
+      const sameOrder = result.home === fixture.home && result.away === fixture.away;
+      const reversedOrder = result.home === fixture.away && result.away === fixture.home;
+      return sameOrder || reversedOrder;
     });
   }
   const fixtures = [...round.fixtures, ...scheduledFixtures.filter(fixture => !hasScorecard(fixture))];
@@ -191,13 +216,17 @@ function showLatestRound() {
   });
   overlay.querySelector('.settings-sheet').append(page);
   render();
+  restoreScorecardFocus();
 }
 $('#latestRoundBtn').onclick = showLatestRound;
 window.BRTALatestRound = {open: showLatestRound};
 document.addEventListener('click', event => {
   const result = event.target.closest('#latestRoundContent [data-latest-result]');
   const prediction = event.target.closest('#latestRoundContent [data-latest-fixture]');
-  if (result) openMatch(result.dataset.latestResult);
+  if (result) {
+    rememberScorecard(result.dataset.latestResult);
+    openMatch(result.dataset.latestResult);
+  }
   if (prediction) openPrediction(prediction.dataset.latestFixture);
 });
 window.addEventListener('brta-section-ready', render);
