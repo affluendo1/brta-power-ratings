@@ -2,6 +2,17 @@
 // Retrospective entries use source-commit timestamps; sourceCommit records their provenance.
 window.BRTA_RELEASES = Object.freeze([
   {
+    "version": "9.9",
+    "size": "major",
+    "title": "Player career timelines",
+    "committedAt": "2026-11-22T03:04:24.313Z",
+    "changes": [
+      "Open a player's career timeline from their Player Lab. Compare win rate, games won and matches played across competitions on a shared date axis.",
+      "Best Seasons shows singles and doubles win rates, share of games won, most wins and most matches.",
+      "Season-by-season records show teams, sections, emergency appearances and finals where recorded."
+    ]
+  },
+  {
     "version": "9.1.4",
     "size": "small",
     "title": "Find your way",
