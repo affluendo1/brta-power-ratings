@@ -176,7 +176,7 @@
         show('Players', players.map(player => action(player.player, player.team + ' · ' + context,
           () => visit(row, season, 'ratings', () => openProfile(player.player)))), context, true);
       }),
-      nested('Fixtures & results', 'Search teams, opponents, rounds and dates', () => fixtureList(row, season, data))
+      nested('Results & fixtures', 'Search teams, opponents, rounds and dates', () => fixtureList(row, season, data))
     ], context, true);
   }
   function fixtureList(row, season, data, team) {
@@ -197,7 +197,7 @@
           if (result && !BRTAStandings.pending(result)) openMatch(fixture.fixtureId);
           else if (canPredictFixture(fixture, fixture.round)) return openPrediction(fixture.fixtureId);
         })));
-    show(team ? team + ' results & fixtures' : 'Fixtures & results', rows, row.season_label + ' · ' + row.section_label, true);
+    show(team ? team + ' results & fixtures' : 'Results & fixtures', rows, row.season_label + ' · ' + row.section_label, true);
   }
   function teamMenu(team, row, season, data) {
     show(team, [
@@ -355,7 +355,7 @@
       {...action('Prediction Centre', 'Fixtures, lineups and score estimates', () => openPredictionHome()), searchOnly: true},
       {...action('Changelog', 'Version and release history', () => window.BRTAChangelog?.open()), searchOnly: true},
       {...action('Rating model', 'Change the Power model', () => openLayoutOverlay('model')), searchOnly: true},
-      action('Latest Round', 'Recent results and highlights', () => openRound()),
+      action('Latest Round', 'Recent results and highlights', () => BRTALatestRound.open()),
       nested('Default Section', 'Choose where the site opens', defaultMenu),
       action('Tutorial', 'Guided walkthroughs of the actual site', guide),
       action('Settings', 'Theme, model and preferences', () => openSettings()),
@@ -488,7 +488,7 @@
   button.onclick = () => openNavigation();
   button.setAttribute('aria-haspopup', 'dialog');
   button.setAttribute('aria-controls', 'navigationOverlay');
-  document.querySelector('#roundBtn').before(button);
+  document.querySelector('.header-actions').prepend(button);
   const toolbar = document.createElement('div');
   toolbar.className = 'navigation-home-actions';
   toolbar.innerHTML = '<button class="button primary" id="navigationGuide">Tutorial</button><button class="button secondary" id="navigationDefault">Default Section</button>';
@@ -499,8 +499,6 @@
     const saved = currentCatalog().find(row => row.section_code === localStorage.getItem('brta-default-section'));
     toolbar.querySelector('#navigationDefault').title = saved ? 'Default · ' + sectionCompetitionLabel(saved) + ' · ' + saved.section_label : 'Choose where the site opens';
   }
-  const latest = document.querySelector('#roundBtn');
-  document.querySelector('#page-results .section-title').append(latest);
   document.querySelector('#settingsBtn').innerHTML = '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m9 3-1 3-3 1-2 5 2 5 3 1 1 3h6l1-3 3-1 2-5-2-5-3-1-1-3Z"/><circle cx="12" cy="12" r="3"/></svg><span>Settings</span>';
   const mobileMenu = document.createElement('div');
   mobileMenu.id = 'mobileHeaderMenu';
@@ -528,7 +526,7 @@
     actions.replaceChildren();
     const entries = [
       ['#settingsBtn', 'Settings'],
-      ['#roundBtn', 'Latest Round'],
+      ['#latestRoundBtn', 'Latest Round'],
       ['#customEditorBtn', 'Back to editor'],
       ['#customCompetitionsBtn', 'Custom Competitions'],
       ['.rc-entry', 'Racquet Club']

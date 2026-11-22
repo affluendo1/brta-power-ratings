@@ -71,13 +71,13 @@ html:not([data-interface="classic"]) :is(.person,.export-link){color:color-mix(i
 .fixture-rubber .projection822-side.favourite{color:var(--good-color)}.fixture-rubber .projection822-side.underdog{color:var(--muted-color)}
 .fixture-rubber .projection-pair-sep{display:inline;min-height:0!important;line-height:inherit!important;font-size:inherit!important;padding:0 .2em!important}
 .fixture-rubber-id{text-align:center;font-size:11px;font-weight:bold;color:var(--muted-color)}
-body.section-loading :is(.main-nav,#statusStrip,#teamCards,#exportCompleteBtn,#exportSectionBtn,#roundBtn){pointer-events:none}
+body.section-loading :is(.main-nav,#statusStrip,#teamCards,#exportCompleteBtn,#exportSectionBtn,#latestRoundBtn){pointer-events:none}
 #statusStrip:empty{min-height:68px}
 @media(max-width:680px){#statusStrip:empty{min-height:114px}}
 @media(max-width:680px){
  .lineup-position-grid{display:grid;grid-template-columns:1fr!important}
  .lineup-position-grid label{display:grid;grid-template-columns:28px minmax(0,1fr)!important;align-items:center;gap:8px}
  .lineup-position-grid select{width:100%;min-width:0}
- .release82-overlay .settings-sheet{width:100%!important;max-width:100%!important;height:100dvh;max-height:100dvh;left:0;top:0;transform:none}
+ .shared-sheet-overlay .settings-sheet{width:100%!important;max-width:100%!important;height:100dvh;max-height:100dvh;left:0;top:0;transform:none}
 }
 .fixture-rubber .projection822-side .person{line-height:1.25}

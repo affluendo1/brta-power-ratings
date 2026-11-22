@@ -33,17 +33,17 @@ click('#settingsBtn');await tick();click('#installBtn');await tick();esc();await
 click('[data-layout-open="methodology"]');await tick();esc();await tick();assert(w.document.querySelector('#layoutOverlay').classList.contains('hidden'));assert(!w.document.querySelector('#settingsOverlay').classList.contains('hidden'));assert(!w.document.querySelector('#settingsOverlay').inert);console.log('Methodology Escape restores interactive Settings');
 click('[data-studio="theme"]');await tick();esc();await tick();assert(w.document.querySelector('#themeStudioOverlay').classList.contains('hidden'));assert(!w.document.querySelector('#settingsOverlay').classList.contains('hidden'));console.log('Theme creator Escape preserves Settings');
 click('[data-changelog-open]');await tick();assert.equal(w.document.querySelector('.release-heading h3').textContent,w.BRTA_RELEASES.find(release=>release.size==='major').version);esc();await tick();assert(w.document.querySelector('#changelogOverlay').classList.contains('hidden'));assert(!w.document.querySelector('#settingsOverlay').classList.contains('hidden'));console.log('Changelog Escape restores Settings');esc();await tick();
-click('#roundBtn');await tick();assert(w.document.querySelector('.latest-highlights').textContent.includes('Top team performance'));click('[data-82-result]');await tick();assert(!w.document.querySelector('#resultOverlay').classList.contains('hidden'));assert.equal(w.document.querySelectorAll('.result-detail-head [data-club-team]').length,2);esc();await tick();assert(w.document.querySelector('#resultOverlay').classList.contains('hidden'));assert(w.document.querySelector('.rounds821-overlay'));
+click('#latestRoundBtn');await tick();assert(w.document.querySelector('.latest-highlights').textContent.includes('Top team performance'));click('[data-latest-result]');await tick();assert(!w.document.querySelector('#resultOverlay').classList.contains('hidden'));assert.equal(w.document.querySelectorAll('.result-detail-head [data-club-team]').length,2);esc();await tick();assert(w.document.querySelector('#resultOverlay').classList.contains('hidden'));assert(w.document.querySelector('.latest-round-overlay'));
 const resultContent=w.document.querySelector('#resultOverlay .result-scroll'),resultSheet=resultContent.closest('.result-sheet');
 assert(w.document.querySelector('#resultShare:not([hidden]) svg'),'Share uses an SVG in the result toolbar.');
 assert(!w.document.querySelector('#resultContent [data-share82-result]'),'Share does not overlap result content.');
 resultContent.scrollTop=180;
 resultSheet.scrollTop=120;
-click('[data-82-result]');await tick();
+click('[data-latest-result]');await tick();
 assert.equal(resultContent.scrollTop,0,'Opening a result clears the mobile scroll offset.');
 assert.equal(resultSheet.scrollTop,0,'Opening a result clears the desktop scroll offset.');
-esc();await tick();esc();await tick();assert(!w.document.querySelector('.release82-overlay'));console.log('Rounds result resets scroll and Escape preserves its parent');
-vm.runInContext("BRTA82.modal('Rounds test','',true).classList.add('rounds821-overlay');BRTA82.modal('First child','');BRTA82.modal('Replacement child','')",ctx);await tick();assert.equal(w.document.querySelectorAll('.release82-overlay').length,2);esc();await tick();assert.equal(w.document.querySelectorAll('.release82-overlay').length,1);esc();await tick();assert.equal(w.document.querySelectorAll('.release82-overlay').length,0);console.log('Replacing a shared child retains exactly one Rounds parent');
+esc();await tick();esc();await tick();assert(!w.document.querySelector('.shared-sheet-overlay'));console.log('Latest Round scorecard resets scroll and Escape preserves its parent');
+vm.runInContext("BRTALatestRound.open();BRTAOverlays.openSheet('First child','');BRTAOverlays.openSheet('Replacement child','')",ctx);await tick();assert.equal(w.document.querySelectorAll('.shared-sheet-overlay').length,2);esc();await tick();assert.equal(w.document.querySelectorAll('.shared-sheet-overlay').length,1);esc();await tick();assert.equal(w.document.querySelectorAll('.shared-sheet-overlay').length,0);console.log('Replacing a shared child retains exactly one Latest Round parent');
 click('.main-tab[data-page="ratings"]');click('#ratingBody [data-player]');await tick();assert(!w.document.querySelector('#profileOverlay').classList.contains('hidden'));vm.runInContext("openProfile(D.singles[1].player)",ctx);await tick();assert.equal(w.document.querySelector('#profileOverlay .profile-sheet').getAttribute('aria-label'),w.document.querySelector('#profileContent h2').textContent);click('[data-eight-split]');await tick();esc();await tick();assert(w.document.querySelector('#lab8Overlay').classList.contains('hidden'));assert(!w.document.querySelector('#profileOverlay').classList.contains('hidden'));esc();await tick();console.log('Player Lab drilldown Escape preserves lab');
 
 vm.runInContext("openProfile('Jayden Bone')",ctx);
@@ -119,6 +119,27 @@ assert(w.document.querySelector('#careerSearchStatus').textContent.includes('at 
 console.log('Players directory reports an identifiable typo match');
 vm.runInContext("ratingScope='section';$('#search').value='';renderRatings()",ctx);
 click('#settingsBtn');await tick();click('#showExtrasBtn');await tick();click('[data-more-settings]');await tick();esc();await tick();assert(w.document.querySelector('#moreSettingsOverlay').classList.contains('hidden'));assert(!w.document.querySelector('#settingsOverlay').classList.contains('hidden'));console.log('More Settings gate uses its own Escape cleanup and restores Settings');esc();await tick();
+assert.equal(w.document.querySelector('#latestRoundBtn').closest('.page').id,'page-results');
+assert(!w.document.querySelector('#clubZoneOverlay, #clubPickerOverlay'));
+const ordinaryFetch=w.fetch;
+let clubBackendReads=0;
+w.fetch=async url=>{
+  if(String(url).endsWith('data/archive/clubs-UA.json'))clubBackendReads++;
+  return ordinaryFetch(url);
+};
+w.dispatchEvent(new w.Event('brta-open-diagnostics'));
+await tick();
+assert.equal(clubBackendReads,0,'Opening diagnostics does not calculate club totals');
+const consoleInput=w.document.querySelector('#vault-console-input');
+consoleInput.value='clubs-backend UA Kings Park';
+consoleInput.form.dispatchEvent(new w.Event('submit',{bubbles:true,cancelable:true}));
+for(let i=0;i<40&&!w.document.querySelector('.vault-console-output').textContent.includes('W–D–L');i++)await tick();
+assert(w.document.querySelector('.vault-console-output').textContent.includes('Kings Park · Sunday AM'));
+assert(w.document.querySelector('.vault-console-output').textContent.includes('W–D–L'));
+assert.equal(clubBackendReads,1);
+esc();await tick();
+w.fetch=ordinaryFetch;
+console.log('Club archive stats run on demand in the site console');
 
 vm.runInContext("openProfile('Jayden Bone')",ctx);
 for(let i=0;i<80&&!w.document.querySelector('#profileContent [data-player-follow]');i++)await tick();

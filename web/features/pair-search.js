@@ -39,7 +39,7 @@ async function openRow(row,pair=true){
      task.stage(97,'Opening match history…');
      if(pair)lab8Open(row.player,null,true);else openProfile(row.player);
    }catch(error){
-     if(request===openRequest)BRTA82.modal('Could not open section','<p>'+esc(error.message)+'</p>');
+     if(request===openRequest)BRTAOverlays.openSheet('Could not open section','<p>'+esc(error.message)+'</p>');
      return false;
    }
  },{priority:1,message:'Finding the player’s section…'});

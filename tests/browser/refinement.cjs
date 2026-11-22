@@ -66,6 +66,10 @@ click('[data-clubs-action="panel"][data-value="overview"]');await tick();
 assert(w.document.querySelector('#clubs9Map'));
 assert(w.document.querySelector('[aria-label="Map key"]'));
 assert(mapSignal&&!mapSignal.aborted);
+for(let i=0;i<30&&!w.document.querySelector('.clubs9-history-verdict');i++)await tick();
+assert(w.document.querySelector('.clubs9-history-verdict'), 'Clubs retains the historical ladder comparison');
+assert.doesNotMatch(w.document.querySelector('[data-clubs-history-stats]').textContent,
+  /W–D–L|premierships|finals entries/i, 'Historical club totals stay in Diagnostics');
 click('[data-clubs-action="panel"][data-value="participation"]');await tick();
 assert(mapSignal.aborted);
 finishMount({focusSelected(){}});await tick();

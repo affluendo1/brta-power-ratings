@@ -36,7 +36,7 @@
   const complete=!missing.length&&hasResults&&(k.regularSeasonComplete||roundCount>=expected||
    (lastRound>=expected&&regular.some(f=>Number(f.round)===lastRound)&&draw.length>0)||
    (data.meta?.is_archive&&(playoffFixtures.length||data.standings?.some(r=>r.standingsSource==='TROLS'))));
-  const iso=root.BRTAMatchday?.iso||(typeof require==='function'?require('./matchday').iso:()=> '');
+  const iso=root.BRTAFixtureRecords?.iso||(typeof require==='function'?require('./fixture-records').iso:()=> '');
   const days=new Map();
   for(const f of regular){const date=iso(f.date);if(date&&Number.isFinite(Number(f.round)))days.set(Number(f.round),Date.parse(date));}
   const day=86400000,dates=[...days].sort((a,b)=>a[0]-b[0]);

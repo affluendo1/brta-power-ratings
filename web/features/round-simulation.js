@@ -53,7 +53,7 @@
            ' name="' + key + '" value="' + (lock?.[key] ?? '') + '" ' + (lock ? 'required' : 'disabled') + '></label>').join('') +
          '</div></fieldset>') + '</details>';
      }).join('') + '<p role="alert" data-round-error></p><button class="button primary" type="submit">Simulate round</button></form>';
-   BRTA82.modal('Round simulation · ' + roundHeading(entry), form, true);
+   BRTAOverlays.openSheet('Round simulation · ' + roundHeading(entry), form);
  }
 
  function saveLocks(form) {
@@ -95,7 +95,7 @@
    const unknown = rows.some(row => row.points == null);
    const changes = rows.filter(row => row.positionChange).map(row => teamName(row.team) +
      (row.positionChange > 0 ? ' up ' : ' down ') + Math.abs(row.positionChange));
-   BRTA82.modal('Simulated standings · Round ' + state.round,
+   BRTAOverlays.openSheet('Simulated standings · Round ' + state.round,
      '<p class="simulation84-context">After these hypothetical results. Movement compares with the current ladder.</p>' +
      (missing ? '<p>' + missing + ' fixture' + (missing === 1 ? ' was' : 's were') + ' omitted because the lineup was incomplete.</p>' : '') +
      (!fixtures.some(fixture => BRTAStandings.counts(D, fixture)) ? '<p>No regular-season ladder changes were projected.</p>' : '') +
@@ -103,7 +103,7 @@
      (unknown ? '<p>Competition points are published by TROLS for this format. Projected points and positions are unavailable.</p>' : '') +
      (changes.length ? '<p><b>Position changes</b> · ' + changes.join(' · ') + '</p>' : '') +
      '<div class="table-wrap simulated84-standings"><table><thead>' + standingsHeadHTML() +
-     '</thead><tbody>' + standingsRowsHTML(rows) + '</tbody></table></div>', true);
+     '</thead><tbody>' + standingsRowsHTML(rows) + '</tbody></table></div>');
  }
  document.addEventListener('submit', event => {
    if (!event.target.matches('.round-scenario-form')) return;
@@ -117,7 +117,7 @@
    }
    if (!saveLocks(event.target)) return;
    state = build(setup.round);
-   BRTA82.dismiss();
+   BRTAOverlays.dismissSheet();
    if (state) draw();
  });
  document.addEventListener('change', event => {

@@ -123,7 +123,7 @@ body:has(.clubs9-map-expanded) { overflow: hidden; }
 
 
 .clubs9-logistics-card h3 { margin-bottom: 12px; }
-.clubs9-address, .clubs9-history-verdict, .clubs9-title-benchmark {
+.clubs9-address, .clubs9-history-verdict {
   display: grid; align-content: start; gap: 7px; padding: 13px;
   border: 1px solid var(--border-color); border-inline-start: 3px solid var(--primary);
   border-radius: var(--control-radius, 5px); background: var(--surface-muted);
@@ -152,7 +152,7 @@ body:has(.clubs9-map-expanded) { overflow: hidden; }
   display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr); gap: 12px; margin-top: 14px;
 }
 .clubs9-history-grid > :only-child, .clubs9-history-lead > :only-child { grid-column: 1 / -1; }
-.clubs9-history-verdict strong, .clubs9-title-benchmark strong { font-size: clamp(16px, 2.2vw, 22px); line-height: 1.25; }
+.clubs9-history-verdict strong { font-size: clamp(16px, 2.2vw, 22px); line-height: 1.25; }
 .clubs9-history-lead p { margin: 0; }
 .clubs9-history-verdict.clubs9-above { border-inline-start-color: var(--good-color); }
 .clubs9-history-verdict.clubs9-below { border-inline-start-color: var(--bad-color); }

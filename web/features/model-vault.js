@@ -572,22 +572,53 @@
     open(consoleLayer, 'input');
     consoleOutput.scrollTop = consoleOutput.scrollHeight;
   }
+  async function showClubStats(args) {
+    if (!args) {
+      print('Usage: clubs-backend <club> or clubs-backend <competition code> <club>', 'system');
+      return;
+    }
+    const explicit = /^(AA|AP|HA|TA|TN|UA|WA)\s+(.+)$/i.exec(args);
+    const name = clubBaseName(explicit?.[2] || args);
+    const code = explicit?.[1] || D?.meta?.competition_code;
+    if (!code || code === 'CC') {
+      print('Choose a published competition code, such as UA or AA.', 'system');
+      return;
+    }
+    print('Calculating club archive stats…', 'system');
+    try {
+      const stats = await BRTAClubsBackend.calculate(name, code);
+      print(stats.club + ' · ' + stats.competition, 'system');
+      print(stats.entries + ' team entries over ' + stats.seasons + ' seasons · ' + stats.played +
+        ' published ties · ' + stats.wins + '–' + stats.draws + '–' + stats.losses + ' recorded W–D–L', 'system');
+      const share = stats.gameShare == null ? '' : ' (' + stats.gameShare.toFixed(1) + '% won)';
+      print(stats.gamesWon + '–' + stats.gamesLost + ' games' + share +
+        ' · ' + stats.premierships + ' premierships · ' + stats.finalsSections + ' sections with finals appearances' +
+        (stats.bestLadderPosition ? ' · best ladder position #' + stats.bestLadderPosition : ''), 'system');
+    } catch (error) {
+      print(error.message, 'system');
+    }
+  }
+
   function command(event) {
     event.preventDefault();
     if (!auxiliaryEnabled()) return;
-    const value = consoleInput.value.trim().toLowerCase();
-    if (!value) return;
+    const input = consoleInput.value.trim();
+    if (!input) return;
+    const [commandName] = input.split(/\s+/, 1);
+    const value = commandName.toLowerCase();
+    const args = input.slice(commandName.length).trim();
     consoleInput.value = '';
     // only keep recognised commands in history. mistyped pasted text is discarded.
-    const known = ['help', 'log', 'stop', 'clear', 'status', 'prank', 'mute', 'unmute', 'exit'];
-    if (known.includes(value)) {
-      history.push(value);
+    const known = ['help', 'log', 'stop', 'clear', 'status', 'prank', 'mute', 'unmute', 'exit', 'clubs-backend'];
+    if (known.includes(value) && (!args || value === 'clubs-backend')) {
+      history.push(input);
       if (history.length > 30) history.shift();
-      print('› ' + value, 'command');
+      print('› ' + input, 'command');
     }
     historyIndex = history.length;
-    switch (value) {
-      case 'help': print('help · log · stop · clear · status · prank · mute · unmute · exit', 'system'); break;
+    switch (args && value !== 'clubs-backend' ? '' : value) {
+      case 'help': print('help · log · stop · clear · status · clubs-backend · prank · mute · unmute · exit', 'system'); break;
+      case 'clubs-backend': showClubStats(args); break;
       case 'log': logging = true; print('Action logging on. Type stop to end it.', 'system'); break;
       case 'stop': logging = false; playback++; print('Action logging and playback stopped.', 'system'); break;
       case 'clear': playback++; lines.length = 0; consoleOutput.replaceChildren(); break;

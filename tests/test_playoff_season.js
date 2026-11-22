@@ -1,6 +1,6 @@
 const assert = require('node:assert/strict');
 const standings = require('../web/models/standings');
-const { overview } = require('../web/models/matchday');
+const { overview } = require('../web/models/fixture-records');
 
 const tie = (fixtureId, home, away, status, points = []) => ({
   fixtureId, home, away, status, homePoints: points[0], awayPoints: points[1]

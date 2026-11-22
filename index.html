@@ -44,32 +44,32 @@
     @media(prefers-reduced-motion:reduce){.auxiliary-reveal,.auxiliary-archive-button{animation:none}}
   </style>
   <script>
-    (function(){var m=localStorage.getItem('brta-interface')||'future',t=localStorage.getItem('brta-theme')||'dark',a=localStorage.getItem('brta-accent')||'black',d=t==='dark'||t==='black-plus'||t==='neon-plus'||(t==='auto'&&matchMedia('(prefers-color-scheme: dark)').matches),future=m!=='classic',c=future?(d?(a==='yellow'?'#101109':'#101318'):'#f3f2e9'):(d?'#000000':'#c0c0c0'),l=document.createElement('link');document.documentElement.dataset.interface=m;document.documentElement.dataset.accent=a;document.documentElement.dataset.theme=t;document.documentElement.style.backgroundColor=c;document.documentElement.style.colorScheme=d?'dark':'light';document.getElementById('themeColor').content=c;l.id='siteStyles';l.rel='stylesheet';l.href=future?'web/styles/future.css?v=901':'web/styles/style.css?v=901';document.head.appendChild(l)})()
+    (function(){var m=localStorage.getItem('brta-interface')||'future',t=localStorage.getItem('brta-theme')||'dark',a=localStorage.getItem('brta-accent')||'black',d=t==='dark'||t==='black-plus'||t==='neon-plus'||(t==='auto'&&matchMedia('(prefers-color-scheme: dark)').matches),future=m!=='classic',c=future?(d?(a==='yellow'?'#101109':'#101318'):'#f3f2e9'):(d?'#000000':'#c0c0c0'),l=document.createElement('link');document.documentElement.dataset.interface=m;document.documentElement.dataset.accent=a;document.documentElement.dataset.theme=t;document.documentElement.style.backgroundColor=c;document.documentElement.style.colorScheme=d?'dark':'light';document.getElementById('themeColor').content=c;l.id='siteStyles';l.rel='stylesheet';l.href=future?'web/styles/future.css?v=99b':'web/styles/style.css?v=99b';document.head.appendChild(l)})()
   </script>
   <link rel="stylesheet" href="web/optional/collection.css?v=8521">
-<link rel="stylesheet" href="web/styles/custom-sections.css?v=9131">
+<link rel="stylesheet" href="web/styles/custom-sections.css?v=99b">
 <link rel="stylesheet" href="web/styles/player-search.css?v=8521">
 <link rel="stylesheet" href="web/styles/team-lab.css?v=8521">
 <link rel="stylesheet" href="web/styles/changelog.css?v=990t">
 <link rel="stylesheet" href="web/optional/ambient.css?v=8521">
-<link rel="stylesheet" href="web/styles/layout.css?v=8521">
+<link rel="stylesheet" href="web/styles/layout.css?v=99b">
 <link rel="stylesheet" href="web/styles/polish.css?v=8521">
   <link rel="stylesheet" href="web/optional/lexicon.css?v=8521">
 <link rel="stylesheet" href="web/styles/studio.css?v=8521">
-<link rel="stylesheet" href="web/styles/matchday.css?v=9123e">
-<link rel="stylesheet" href="web/styles/refinement.css?v=8521">
+<link rel="stylesheet" href="web/styles/results.css?v=99b">
+<link rel="stylesheet" href="web/styles/refinement.css?v=99b">
 <link rel="stylesheet" href="web/styles/update831.css?v=8521">
-<link rel="stylesheet" href="web/styles/update84.css?v=9131p">
-<link rel="stylesheet" href="web/styles/classic.css?v=8521">
+<link rel="stylesheet" href="web/styles/update84.css?v=99b">
+<link rel="stylesheet" href="web/styles/classic.css?v=99b">
 <link rel="stylesheet" href="web/styles/update841.css?v=8521">
 <link rel="stylesheet" href="web/styles/mini-updates.css?v=8525">
 <link rel="stylesheet" href="web/styles/update853.css?v=8544">
-<link rel="stylesheet" href="web/styles/clubs.css?v=901">
+<link rel="stylesheet" href="web/styles/clubs.css?v=99b">
 <link rel="stylesheet" href="web/styles/model-vault.css?v=91011">
 <link rel="stylesheet" href="web/styles/archive-secret.css?v=9113">
 <link rel="stylesheet" href="web/styles/release91.css?v=990t">
 <link rel="stylesheet" href="web/styles/racquet-club.css?v=9112">
-<link rel="stylesheet" href="web/styles/navigation.css?v=990t">
+<link rel="stylesheet" href="web/styles/navigation.css?v=99b">
 <link rel="stylesheet" href="web/styles/tutorials.css?v=914">
 <link rel="stylesheet" href="web/styles/players.css?v=990v">
 <link rel="stylesheet" href="web/styles/career-history.css?v=990-full">
@@ -82,9 +82,6 @@
     <div class="subtitle" id="sectionSubtitle">Saturday &amp; Sunday AM · Spring 2026</div></div>
   </div>
   <div class="header-actions">
-
-    <button id="roundBtn" class="button secondary">Latest Round</button>
-    
     <button id="customCompetitionsBtn" class="button secondary" type="button" data-open-custom-competitions aria-haspopup="dialog" aria-controls="customAdminOverlay">Custom Competitions</button>
     <div class="header-settings-group"><button id="customEditorBtn" class="button custom-editor-button hidden" type="button" aria-haspopup="dialog" aria-controls="customAdminOverlay">↩ Back to editor</button>
     <button id="settingsBtn" class="button secondary">Settings</button></div>
@@ -148,7 +145,7 @@
   </section>
 
   <section id="page-results" class="page active">
-    <div class="section-title"><div><h1>Results</h1></div></div>
+    <div class="section-title"><div><h1>Results</h1></div><button id="latestRoundBtn" type="button" class="button secondary" aria-haspopup="dialog">Latest Round</button></div>
     <div id="resultsList" class="results-list"></div>
   </section>
 
@@ -163,11 +160,9 @@
 <footer class="site-footer"><div class="classic-only classic-footer"><b>BRTA Power Ratings</b> · Version <span data-classic-version></span><br><button type="button" data-layout-open="methodology" aria-label="Read rating methodology">Methodology</button> | <button type="button" data-layout-open="rules" aria-label="Read BRTA rules">BRTA Rules</button></div><span id="siteIndependence"><b>BRTA Power Ratings</b> is an independent, unofficial site.</span> <span>Browse Bayside Regional Tennis Association results, fixtures, standings and player ratings across seven Melbourne competitions. Not affiliated with BRTA, Tennis Australia or UTR. Results are as entered on TROLS.</span></footer>
 
 
-<div id="clubPickerOverlay" class="overlay hidden"><div class="overlay-backdrop" data-club-picker-close="1"></div><section class="club-picker-sheet" role="dialog" aria-modal="true" aria-labelledby="clubPickerTitle"><button id="clubPickerClose" class="close-btn" type="button" aria-label="Close Club Zone">×</button><div class="overlay-title"><div class="kicker">CLUB ZONE</div><h2 id="clubPickerTitle">Open a club record</h2><p>Choose competition, then club.</p></div><div class="club-picker-fields"><label>Competition<select id="clubPickerCompetition"><option value="">Choose Saturday or Sunday AM</option><option value="AA">Saturday AM</option><option value="UA">Sunday AM</option></select></label><label>Club<select id="clubPickerClub" disabled><option value="">Choose a competition first</option></select></label></div><p id="clubPickerStatus" class="club-picker-status"></p><button id="clubPickerOpen" class="button primary" type="button" disabled>Open Club Zone</button></section></div>
-<div id="clubZoneOverlay" class="overlay hidden"><div class="overlay-backdrop" data-club-zone-close="1"></div><aside class="club-zone-sheet"><button id="clubZoneClose" class="close-btn" aria-label="Close Club Zone">×</button><div id="clubZoneContent"></div></aside></div>
-<div id="logoSecretOverlay" class="overlay hidden"><div class="overlay-backdrop" data-logo-secret-close></div><section class="club-zone-sheet logo-secret-sheet" role="dialog" aria-modal="true" aria-labelledby="logoSecretTitle"><button id="logoSecretClose" type="button" class="close-btn" aria-label="Close">×</button><div class="overlay-title"><div class="kicker">BRTA POWER RATINGS</div><h2 id="logoSecretTitle">Nothing here! Yet.</h2></div></section></div>
+<div id="logoSecretOverlay" class="overlay hidden"><div class="overlay-backdrop" data-logo-secret-close></div><section class="logo-secret-sheet" role="dialog" aria-modal="true" aria-labelledby="logoSecretTitle"><button id="logoSecretClose" type="button" class="close-btn" aria-label="Close">×</button><div class="overlay-title"><div class="kicker">BRTA POWER RATINGS</div><h2 id="logoSecretTitle">Nothing here! Yet.</h2></div></section></div>
 <div id="profileOverlay" class="overlay hidden"><div class="overlay-backdrop" data-close="1"></div><aside class="profile-sheet"><button id="profileClose" class="close-btn" aria-label="Close">×</button><div id="profileContent"></div></aside><aside id="profileMatchExplorer" class="profile-match-explorer hidden" aria-label="Match explorer"><div id="profileMatchExplorerContent"></div></aside></div>
-<div id="searchOptionsOverlay" class="overlay hidden"><div class="overlay-backdrop" data-search-options-close="1"></div><section class="search-options-sheet" role="dialog" aria-modal="true" aria-labelledby="searchOptionsTitle"><button id="searchOptionsClose" class="close-btn" type="button" aria-label="Close">×</button><div class="overlay-title"><div class="kicker">RATINGS</div><h2 id="searchOptionsTitle">Options</h2></div><h3>Search scope</h3><div class="search-scope-choice" role="group" aria-label="Search players in"><button type="button" data-search-scope="section">This section</button><button type="button" data-search-scope="all">All sections</button><button type="button" data-search-scope="history">All history</button></div><div class="ratings-history-options"><h3>Rating History</h3><div id="ratingHistoryChoices" class="rating-history-choices"></div></div></section></div><div id="rivalryOverlay" class="overlay hidden"><div class="overlay-backdrop" data-rivalry-close="1"></div><aside class="rivalry-sheet"><button id="rivalryClose" class="close-btn" type="button" aria-label="Close">×</button><div id="rivalryContent"></div></aside></div><div id="roundOverlay" class="overlay hidden"><div class="overlay-backdrop" data-round-close="1"></div><aside class="round-sheet"><button id="roundClose" class="close-btn" aria-label="Close">×</button><div id="roundContent"></div></aside></div>
+<div id="searchOptionsOverlay" class="overlay hidden"><div class="overlay-backdrop" data-search-options-close="1"></div><section class="search-options-sheet" role="dialog" aria-modal="true" aria-labelledby="searchOptionsTitle"><button id="searchOptionsClose" class="close-btn" type="button" aria-label="Close">×</button><div class="overlay-title"><div class="kicker">RATINGS</div><h2 id="searchOptionsTitle">Options</h2></div><h3>Search scope</h3><div class="search-scope-choice" role="group" aria-label="Search players in"><button type="button" data-search-scope="section">This section</button><button type="button" data-search-scope="all">All sections</button><button type="button" data-search-scope="history">All history</button></div><div class="ratings-history-options"><h3>Rating History</h3><div id="ratingHistoryChoices" class="rating-history-choices"></div></div></section></div><div id="rivalryOverlay" class="overlay hidden"><div class="overlay-backdrop" data-rivalry-close="1"></div><aside class="rivalry-sheet"><button id="rivalryClose" class="close-btn" type="button" aria-label="Close">×</button><div id="rivalryContent"></div></aside></div><div id="playerDetailOverlay" class="overlay hidden"><div class="overlay-backdrop" data-player-detail-close="1"></div><aside class="player-detail-sheet"><button id="playerDetailClose" class="close-btn" aria-label="Close">×</button><div id="playerDetailContent"></div></aside></div>
 <div id="settingsOverlay" class="overlay hidden"><div class="overlay-backdrop" data-settings-close="1"></div><aside class="settings-sheet"><button id="settingsClose" class="close-btn" aria-label="Close">×</button><div id="settingsContent"></div></aside></div>
 <div id="resultOverlay" class="overlay hidden"><div class="overlay-backdrop" data-result-close="1"></div><aside class="result-sheet"><div class="result-toolbar"><button id="resultShare" class="icon821" type="button" data-share82-result aria-label="Share result card" title="Share card" hidden><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V3m-4 4 4-4 4 4M6 11H5a1 1 0 0 0-1 1v7a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7a1 1 0 0 0-1-1h-1"/></svg></button><button id="resultClose" class="close-btn" type="button" aria-label="Close">×</button></div><div class="result-scroll"><div id="resultContent"></div></div></aside><button id="resultFixtureEdit" class="button primary" type="button" data-edit-custom-fixture hidden>Edit fixture</button></div>
 <div id="raceSetupOverlay" class="overlay hidden"><div class="overlay-backdrop" data-race-setup-close></div><aside class="settings-sheet race-setup-sheet" role="dialog" aria-modal="true" aria-label="Forecast setup"><button type="button" class="close-btn" data-race-setup-close aria-label="Close">×</button><div data-race-setup></div></aside></div>
@@ -180,25 +175,25 @@
 <div id="installSettingsStash" hidden><button id="installBtn" class="button secondary" type="button" aria-haspopup="dialog" aria-controls="installOverlay">Install app</button></div>
 <div id="syncToastHost" class="sync-toast-host" aria-live="polite" aria-atomic="true"></div>
 <script src="web/core/activity.js?v=990t"></script>
-<script src="web/core/dialogs.js?v=914"></script>
+<script src="web/core/dialogs.js?v=99b"></script>
 <script src="data.js?v=8521"></script>
 <script src="web/models/player-display.js?v=8541"></script>
 <script src="web/models/prediction.js?v=8521"></script>
 <script src="web/optional/records.js?v=8521"></script>
     <script src="web/models/lineups.js?v=8521"></script>
-<script src="web/models/standings.js?v=913a"></script>
+<script src="web/models/standings.js?v=99b"></script>
 <script src="web/models/rating-history.js?v=913b"></script>
 <script src="web/models/competition-formats.js?v=8521"></script>
 <script src="web/models/association-import.js?v=8521"></script>
 <script src="web/models/score-formats.js?v=8521"></script>
-<script src="web/models/custom-section-model.js?v=900"></script>
+<script src="web/models/custom-section-model.js?v=99b"></script>
 <script src="web/models/custom-section-tools.js?v=9131"></script>
 <script src="web/models/export-853.js?v=91011"></script>
-<script src="web/features/custom-sections.js?v=9131"></script>
+<script src="web/features/custom-sections.js?v=99b"></script>
 <script src="web/features/player-search.js?v=990t"></script>
 <script src="web/models/team-lab.js?v=990t"></script>
 <script src="web/features/team-lab-ui.js?v=990t"></script>
-<script src="web/features/changelog-data.js?v=99a"></script>
+<script src="web/features/changelog-data.js?v=99b"></script>
 <script src="extras/past-software/releases.js?v=9111"></script>
 <script src="web/features/changelog.js?v=990t"></script>
 <script src="web/optional/parameters.js?v=8521"></script>
@@ -211,19 +206,19 @@
 <script src="web/models/orchestra-fit.js?v=8521"></script>
 <script src="web/models/orchestra.js?v=audit2"></script>
 <script src="web/models/site-routes.js?v=9101"></script>
-<script src="web/core/app.js?v=990t"></script>
-<script src="web/core/layout.js?v=913b"></script>
+<script src="web/core/app.js?v=99b"></script>
+<script src="web/core/layout.js?v=99b"></script>
 <script src="web/features/confetti.js?v=8521"></script>
 <script src="web/features/archive.js?v=901"></script>
 <script src="web/optional/sequence.js?v=8521"></script>
 <script src="web/optional/controls.js?v=9113"></script>
 <script src="web/models/lab-model.js?v=914"></script>
 <script src="web/features/labs.js?v=913b"></script>
-<script src="web/core/polish.js?v=9123"></script>
+<script src="web/core/polish.js?v=99b"></script>
 <script src="web/optional/orthography.js?v=8521"></script>
 <script src="web/models/search-commands.js?v=8521"></script>
 <script src="web/models/refinement.js?v=8521"></script>
-<script src="web/optional/lexicon.js?v=8521"></script>
+<script src="web/optional/lexicon.js?v=99b"></script>
 <script src="web/optional/archive-calculator.js?v=91011"></script>
 <script src="web/models/theme-studio.js?v=9014"></script>
 <script src="web/features/search-commands.js?v=901"></script>
@@ -232,40 +227,41 @@
 <script src="web/features/model-relay.js?v=8524"></script>
 <script src="web/optional/deeds.js?v=8521"></script>
 <script src="web/features/club-map.js?v=901"></script>
-<script src="web/models/matchday.js?v=913"></script>
-<script src="web/features/matchday.js?v=9132"></script>
-<script src="web/features/following.js?v=990t"></script>
-<script src="web/features/share-cards.js?v=9123e"></script>
+<script src="web/models/fixture-records.js?v=99b"></script>
+<script src="web/features/latest-round.js?v=99b"></script>
+<script src="web/features/following.js?v=99b"></script>
+<script src="web/features/share-cards.js?v=99b"></script>
 <script src="web/features/competition-formats.js?v=9121"></script>
-<script src="web/features/pair-search.js?v=901"></script>
-<script src="web/features/team-explorer.js?v=990u"></script>
+<script src="web/features/pair-search.js?v=99b"></script>
+<script src="web/features/team-explorer.js?v=99b"></script>
 <script src="web/features/extras-refinement.js?v=8521"></script>
 <script src="web/features/rm4-ui.js?v=9121"></script>
 <script src="web/features/reading-pages.js?v=8521"></script>
-<script src="web/features/round-simulation.js?v=913"></script>
-<script src="web/features/release84.js?v=8521"></script>
-<script src="web/features/standings-history.js?v=8521"></script>
+<script src="web/features/round-simulation.js?v=99b"></script>
+<script src="web/features/release84.js?v=99b"></script>
+<script src="web/features/standings-history.js?v=99b"></script>
 <script src="web/features/classic-ui.js?v=8521"></script>
 <script src="web/features/model-comparison.js?v=901"></script>
 <script src="web/core/pwa.js?v=8521"></script>
 <script src="web/features/mini-updates.js?v=91"></script>
 <script src="web/features/export-853.js?v=901-fast"></script>
-<script src="web/models/clubs.js?v=900"></script>
-<script src="web/features/clubs.js?v=9121"></script>
-<script src="web/features/model-vault.js?v=920"></script>
+<script src="web/models/clubs.js?v=99b"></script>
+<script src="web/features/clubs.js?v=99b"></script>
+<script src="web/models/clubs-backend.js?v=99b"></script>
+<script src="web/features/model-vault.js?v=99b"></script>
 <script src="web/features/archive-secret.js?v=9113"></script>
 <script src="web/themes/theme-calendar/presets.js?v=9014"></script>
 <script src="web/features/theme-calendar.js?v=91"></script>
 <script src="web/features/site-routes.js?v=913"></script>
 <script src="web/models/finals-race.js?v=9121"></script>
-<script src="web/features/finals-race.js?v=913"></script>
-<script src="web/features/fixture-details.js?v=913"></script>
+<script src="web/features/finals-race.js?v=99b"></script>
+<script src="web/features/fixture-details.js?v=99b"></script>
 <script src="web/features/scoreline-vault.js?v=9113"></script>
 <script src="web/optional/round-zero.js?v=9111"></script>
 <script src="web/models/racquet-club.js?v=9123b"></script>
 <script src="web/features/racquet-club.js?v=9131"></script>
 <script src="web/features/tutorials.js?v=990t"></script>
-<script src="web/features/navigation.js?v=990t"></script>
+<script src="web/features/navigation.js?v=99b"></script>
 <script src="web/models/player-careers.js?v=990t"></script>
 <script src="web/features/player-rating-controls.js?v=990t"></script>
 <script src="web/features/player-following.js?v=990t"></script>

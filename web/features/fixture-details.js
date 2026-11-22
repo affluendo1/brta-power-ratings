@@ -26,7 +26,7 @@
   function html(fixture) {
     if (!published(fixture)) return '';
     const date = roundDate(fixture.date, fixture.dateEstimated), venue = fixture.venue || 'Venue not published';
-    const clock = BRTAMatchday.time(fixture.startTime, D.meta.competition_code);
+    const clock = BRTAFixtureRecords.time(fixture.startTime, D.meta.competition_code);
     const hour = Number(clock.slice(0, 2));
     const time = clock ? (hour % 12 || 12) + ':' + clock.slice(2, 4) + (hour >= 12 ? ' pm' : ' am') : '';
     return '<section class="fixture-logistics" data-fixture-logistics="' + esc(fixture.fixtureId) + '"><h3>Fixture details</h3>' +
@@ -34,7 +34,7 @@
       '<div><span>Away</span><b>' + teamName(fixture.away) + '</b></div>' +
       '<div><span>Date and time</span><b>' + esc([date, time].filter(Boolean).join(' · ') || 'Not published') +
       '</b></div><div><span>Playing venue</span><b>' + esc(venue) + '</b><small data-venue-side="fixture"></small></div></div>' +
-      (fixture.status === 'Scheduled' && BRTAMatchday.iso(fixture.date)
+      (fixture.status === 'Scheduled' && BRTAFixtureRecords.iso(fixture.date)
         ? '<p><button class="button secondary" type="button" data-fixture-calendar>Add to calendar (.ics)</button> <small>'+ (time ? 'Reserves about 2 hours' : 'Saved as an all-day event') +'</small></p>' : '') +
       (window.BRTAFinalsRace?.hint(fixture) || '') + '</section>';
   }
@@ -98,12 +98,12 @@
     const target = button.closest('[data-fixture-logistics]');
     const fixture = fixtureById(target.dataset.fixtureLogistics);
     if (!fixture || fixture.status !== 'Scheduled') return;
-    const date = BRTAMatchday.iso(fixture.date);
+    const date = BRTAFixtureRecords.iso(fixture.date);
     if (!date) return;
     const entry = { ...fixture, date, kind: 'fixture', isHome: true, opponent: fixture.away,
       label: roundHeading(fixture), venue: calendarLocations.get(target) || fixture.venue };
     const url = new URL(location.href);
-    const text = BRTAMatchday.ics(D, fixture.home, [entry], { url: url.href });
+    const text = BRTAFixtureRecords.ics(D, fixture.home, [entry], { url: url.href });
     downloadFile(text, 'brta-fixture-' + String(fixture.fixtureId).replace(/[^\w-]/g, '-') + '.ics', 'text/calendar;charset=utf-8');
   });
 

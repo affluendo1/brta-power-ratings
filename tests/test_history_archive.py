@@ -15,6 +15,26 @@ from scraper.sync_trols import parse_results_page, parse_scorecard, validate_dat
 
 
 class HistoryArchiveTests(unittest.TestCase):
+    def test_club_archive_rebuild_keeps_entries_for_participation_and_on_demand_totals(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            section = root / "section.json"
+            section.write_text(json.dumps({
+                "standings": [{"team": "Kings Park", "played": 2, "wins": 1, "gamesFor": 21, "gamesAgainst": 17}],
+                "results": [{"fixtures": [{"status": "Completed", "home": "Kings Park", "away": "Kooyong"}]}],
+            }), encoding="utf-8")
+            catalog = {"seasons": [{"competition_code": "UA", "competition_label": "Sunday AM",
+                "season_id": "UA39", "season_label": "Spring 2026", "sections": [{
+                    "section_code": "UA009", "section_label": "Sets 6", "data_path": str(section),
+                }]}]}
+            with patch.object(archive_generator, "ARCHIVE", root), patch.object(archive_generator, "CLUB_INDEX", root / "clubs.json"):
+                archive_generator.write_club_index(catalog)
+            archive = json.loads((root / "clubs-UA.json").read_text(encoding="utf-8"))
+            club = archive["clubs"][0]
+            self.assertEqual(set(club), {"name", "entries"})
+            self.assertEqual(club["entries"][0]["games_for"], 21)
+            self.assertEqual(club["entries"][0]["played"], 2)
+
     def test_archive_seasons_are_discovered_from_trols_past_results_page(self):
         response = type("Response", (), {"text": """<select id='season'>
           <option value='UA39'>Current Season</option><option value='UA5'>Spring 2009</option>

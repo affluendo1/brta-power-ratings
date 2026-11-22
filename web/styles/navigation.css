@@ -24,7 +24,7 @@
 #quickNavigationBtn { display: inline-flex; align-items: center; justify-content: center; gap: 9px; }
 #settingsBtn { display: inline-flex; align-items: center; gap: 8px; }
 #page-results .section-title { gap: 14px; flex-wrap: wrap; }
-#page-results .section-title #roundBtn { margin-left: auto; }
+#page-results .section-title #latestRoundBtn { margin-left: auto; }
 .navigation-crumbs { color: var(--muted-color); font-size: 12px; overflow-wrap: anywhere; line-height: 1.5; }
 .navigation-sheet { width: min(620px, calc(100vw - 28px)); max-height: 76dvh; gap: 10px; }
 .navigation-sheet h2 { font-size: 22px; }

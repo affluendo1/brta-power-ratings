@@ -184,7 +184,7 @@ are atomic and report duplicates or invalid rows before changing the draft.
 The custom **Clubs → Team Stats** view shows the active registered squad in its saved order, actual
 round-by-round selections, doubles partnerships, emergencies and suggested lineups. Prediction Centre uses the section's
 configured match counts, set lengths and best-of settings, with custom team
-scoring. Club Zone entry points currently show a maintenance notice.
+scoring.
 
 For each round, choose the date and fixtures. New fixtures automatically reuse the
 team’s previous active squad and doubles pairs, or the first registered players on
@@ -272,19 +272,23 @@ BRTA Power Ratings is an unofficial analytics site for BRTA Saturday AM/PM, Sund
 
 The site lets you select a competition, season and section, then view that section's results, standings, ratings, team summaries and fixtures. Each section is fitted as its own opponent network. Ratings from different sections are not a combined ranking and should not be compared as if the players had all played one another.
 
-The five main views are:
+The main views are:
 
-- **Results** — round-by-round fixture results and scorecards, including singles and doubles order where TROLS provides it. A bye occupies its own card in seven-team rounds.
+- **Results** — round-by-round fixture results and scorecards, including singles and doubles order where TROLS provides it. **Latest Round** in Results summarises the most recent completed round, with highlights and links to scorecards. A bye occupies its own card in seven-team rounds.
 - **Standings** — current-season ladder calculations, or the published final TROLS ladder for an archived season when one is available. The standings view also shows recorded or projected semifinals and grand finals.
 - **Ratings** — singles, recurring doubles pairs, individual doubles and Overall tables. Player rows open Player Lab.
+- **Players** — a player directory, player profiles and career timelines across published seasons.
 - **Clubs** — section teams, club venues and logistics, all-time performance, season participation, and Team Stats with lineups and team-only ratings.
 - **Fixtures** — the official TROLS draw, including completed and future fixtures. A recorded fixture opens its result; a scheduled fixture opens the Prediction Centre. Upcoming rounds have a button to simulate their scheduled ties.
 
 Other views are opened from the header or player profiles:
 
 - **Player Lab** includes the player's matchup outlook, actual-versus-expected results, schedule difficulty, form, rating history and doubles evidence. Historical Player Lab views use the selected round's ratings and results.
-- **Club Zone** is under maintenance.
-- **Rounds** combines round highlights with your team’s week-by-week calendar, published no-play dates, starting times and calendar downloads.
+- **Fixture Outlook** shows the venue, starting time and calendar download for a published upcoming fixture.
+
+With Extras enabled, open **Diagnostics** from Quick Navigation and enter
+`clubs-backend UA Kings Park` to calculate archived club totals. Omit the
+competition code to use the published competition you have open.
 - **Settings** contains display preferences, Theme Studio, methodology and BRTA rules. The section picker also links directly to past seasons. **Export section** beneath the competition/section picker opens the export chooser.
 
 ### Clubs

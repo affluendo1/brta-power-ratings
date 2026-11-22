@@ -17,6 +17,42 @@
   function lock(owner,exempt=[]){const others=[...document.querySelectorAll('.overlay:not(.hidden)')].filter(e=>e!==owner);owner.style.zIndex=String(Math.max(30,...others.map(e=>Number(getComputedStyle(e).zIndex)||0))+2);locks.set(owner,exempt);reconcileLocks()}
   function unlock(owner){locks.delete(owner);reconcileLocks()}
 
+  const sheetStack = [];
+  let sheetId = 0;
+  function dismissSheet() {
+    const sheet = sheetStack.pop();
+    if (!sheet) return;
+    sheet.overlay.remove();
+    sheet.onDismiss?.();
+    if (!document.querySelector('.overlay:not(.hidden)')) document.body.classList.remove('modal-open');
+    sheet.focus?.focus({ preventScroll: true });
+  }
+  function openSheet(title, html, { className, keepOpen = false, onDismiss } = {}) {
+    if (sheetStack.length && !sheetStack.at(-1).keepOpen) dismissSheet();
+    const focus = document.activeElement;
+    const titleId = 'sheet-title-' + (++sheetId);
+    const overlay = document.createElement('div');
+    overlay.className = 'overlay shared-sheet-overlay';
+    if (className) overlay.classList.add(className);
+    overlay.style.zIndex = Math.max(170, ...layers().map(layer => Number(getComputedStyle(layer).zIndex) || 0)) + 5;
+    overlay.innerHTML = '<div class="overlay-backdrop" data-sheet-close></div>' +
+      '<section class="settings-sheet" role="dialog" aria-modal="true" aria-labelledby="' + titleId + '">' +
+      '<button class="close-btn" type="button" data-sheet-close aria-label="Close">×</button>' +
+      '<div class="overlay-title"><h2 id="' + titleId + '"></h2></div>' + html + '</section>';
+    overlay.querySelector('h2').textContent = title;
+    overlay.addEventListener('click', event => {
+      if (event.target.closest('[data-sheet-close]') && sheetStack.at(-1)?.overlay === overlay) {
+        event.stopPropagation();
+        dismissSheet();
+      }
+    });
+    sheetStack.push({ overlay, focus, keepOpen, onDismiss });
+    document.body.append(overlay);
+    document.body.classList.add('modal-open');
+    overlay.querySelector('button').focus();
+    return overlay;
+  }
+
   const visible=element=>element.isConnected&&!element.hidden&&!element.closest('.hidden,[hidden],[inert]')&&getComputedStyle(element).display!=='none'&&getComputedStyle(element).visibility!=='hidden';
   function layers(){return [...document.querySelectorAll('.overlay:not(.hidden)')].filter(e=>!e.hasAttribute('data-dialog-preview')&&visible(e)).sort((a,b)=>(Number(getComputedStyle(a).zIndex)||0)-(Number(getComputedStyle(b).zIndex)||0));}
   const top=()=>layers().at(-1);
@@ -52,7 +88,7 @@
       event.preventDefault();event.stopImmediatePropagation();
       const callback=callbacks.get(overlay.id);
       if(callback){callback();return;}
-      const button=overlay.querySelector('button[data-changelog-close],button[data-layout-close],button[data-82-close],button[data-studio-close],button[data-eight-back],button[data-ca-action="close"],button.close-btn');
+      const button=overlay.querySelector('button[data-changelog-close],button[data-layout-close],button[data-studio-close],button[data-eight-back],button[data-ca-action="close"],button.close-btn');
       if(button)button.click();
       return;
     }
@@ -64,6 +100,6 @@
       event.stopImmediatePropagation();
     }
   },true);
-  root.BRTAOverlays={top,lock,unlock,sync,register:(id,callback)=>callbacks.set(id,callback)};
+  root.BRTAOverlays={top,lock,unlock,sync,openSheet,dismissSheet,register:(id,callback)=>callbacks.set(id,callback)};
 })(window);
 

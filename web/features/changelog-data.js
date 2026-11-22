@@ -2,6 +2,16 @@
 // Retrospective entries use source-commit timestamps; sourceCommit records their provenance.
 window.BRTA_RELEASES = Object.freeze([
 {
+  "version": "9.9b",
+  "size": "tiny",
+  "title": "One name for each feature",
+  "committedAt": "2026-11-22T16:37:05+11:00",
+  "changes": [
+    "Latest Round now lives directly in Results. Fixture and season tools use the same names across the site.",
+    "Retired the old club pilot, maintenance screen and automatic all-time totals. Run clubs-backend in the site console to calculate historical club totals."
+  ]
+},
+{
   "version": "9.9a",
   "size": "tiny",
   "title": "Players release fixes",

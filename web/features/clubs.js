@@ -484,15 +484,9 @@
       dest.innerHTML = '<p class="clubs9-note">No published past-season results for this club in the selected competition.</p>';
       return;
     }
-    const stats = Model.totals(past);
-    const finalists = past.filter(row => row.finalist || row.champion).length;
-    const finals = past.filter(row => row.semifinalist || row.finalist || row.champion).length;
     const delta = Math.round((comparison.score ?? 50) - 50);
     const line = comparison.score == null ? 'Not enough complete ladders for a comparison' : delta === 0 ?
       'Around the section average' : Math.abs(delta) + ' percentage points ' + (delta > 0 ? 'above' : 'below') + ' the section average';
-    const titles = comparison.titleSample ? '<div class="clubs9-title-benchmark"><span class="kicker">PREMIERSHIPS VS OPPORTUNITY</span><strong>' +
-      comparison.won + ' won · ' + comparison.expected.toFixed(1) + ' expected</strong><p class="clubs9-note">Equal chances per team in ' +
-      comparison.titleSample + ' entries with a complete ladder and a recorded champion.</p></div>' : '';
     const comps = competitionChoices().map(([code, label]) => {
       const rows = past.filter(row => row.competition === code);
       if (!rows.length) return '';
@@ -503,15 +497,13 @@
     dest.innerHTML = '<div class="clubs9-history-lead"><div class="clubs9-history-verdict ' +
       (delta >= 0 ? 'clubs9-above' : 'clubs9-below') + '"><span class="kicker">RELATIVE LADDER PERFORMANCE</span><strong>' +
       escape(line) + '</strong><p class="clubs9-note">' + comparison.sample +
-       ' complete ladder entries. Every team entry counts once, so seasons with more teams count more. Each team is compared with opponents in its own section.</p></div>' + titles + '</div>' +
+       ' complete ladder entries. Every team entry counts once, so seasons with more teams count more. Each team is compared with opponents in its own section.</p></div></div>' +
       '<div class="clubs9-history-grid">' + (comparison.eligible.length ? trend(comparison.eligible) : '') +
       '<section class="clubs9-history-section">' + (comparison.eligible.length ? finishBreakdown(comparison.eligible) : '') +
       '<h4>Competition record</h4><ul class="clubs9-comp-record">' + comps +
-      '</ul><p class="clubs9-note">' + stats.titles + ' published premierships across ' + stats.seasons +
-      ' recorded seasons.</p>' + (finals ? '<p class="clubs9-note">Published finals records identify ' + finals +
-        ' finals entries, including ' + finalists + ' grand finalists.</p>' : '') + '</section></div><details class="clubs9-history-method"><summary>How the comparison works</summary><p>First in a complete ladder scores 100 and last scores 0. ' +
-      'Tied ranks share the midpoint of the positions they occupy. The section average is 50. Equal-chance premierships add one divided by the number of teams for each eligible entry. ' +
-      'The comparison uses published past-season results.</p></details>' +
+      '</ul></section></div><details class="clubs9-history-method"><summary>How the comparison works</summary>' +
+      '<p>First in a complete ladder scores 100 and last scores 0. Tied ranks share the midpoint of the positions they occupy. ' +
+      'The section average is 50. The comparison uses published past-season results.</p></details>' +
       (result.partial ? '<p class="clubs9-note">Some competition data could not be loaded.</p>' : '');
   }
 

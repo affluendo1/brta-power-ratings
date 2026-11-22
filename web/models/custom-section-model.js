@@ -4,7 +4,7 @@
   const sorted=rows=>rows.sort((a,b)=>b.rating-a.rating||a.player.localeCompare(b.player));
   const NO_PLAYER='no-player';
   const playerLabel=id=>id===NO_PLAYER?'No Player':id;
-  // attendance is independent of a planned lineup. explicit matchday attendance wins;
+  // attendance is independent of a planned lineup. explicit fixture attendance wins;
   // older scorecards infer actual presence from played/forfeited rubber participants.
   function attendance(fixture,side){
     const explicit=fixture[side+'Attendees'];
@@ -122,7 +122,7 @@
           if(!Array.isArray(lineup)||new Set(lineup).size!==lineup.length||lineup.some(pid=>!players.has(pid)))fail('Lineups must contain different registered players.');
           const attendees=f[side+'Attendees'];
           if(attendees!=null&&(!Array.isArray(attendees)||new Set(attendees).size!==attendees.length||attendees.some(pid=>!players.has(pid))))
-            fail('Matchday attendees must be a list of different registered players.');
+            fail('Fixture attendees must be a list of different registered players.');
         }
         if(!teams.has(f.homeTeamId)||f.awayTeamId&&(!teams.has(f.awayTeamId)||f.homeTeamId===f.awayTeamId))fail('Choose two different teams, or one team with a bye.');
         for(const id of [f.homeTeamId,f.awayTeamId].filter(Boolean)){if(scheduled.has(id))fail('A team cannot have two fixtures in the same round.');scheduled.add(id)}

@@ -1,23 +1,15 @@
-(function(){'use strict';const M=BRTAMatchday;let dialog=null,focus=null,selectedRound=null;const dialogStack=[];let dialogId=0;
-function dismiss(){if(!dialog)return;const rounds=dialog.querySelector('#rounds821Content');if(rounds)stash.append(rounds);dialog.remove();const previous=dialogStack.pop();dialog=previous?.dialog||null;const restoreFocus=focus;focus=previous?.focus||null;if(!document.querySelector('.overlay:not(.hidden)'))document.body.classList.remove('modal-open');restoreFocus?.focus?.({preventScroll:true})}
-function modal(title,html,wide=false){if(dialog&&!dialog.classList.contains('rounds821-overlay'))dismiss();if(dialog){dialogStack.push({dialog,focus});dialog=null}focus=document.activeElement;const titleId='release82Title-'+(++dialogId);dialog=document.createElement('div');dialog.className='overlay release82-overlay';dialog.style.zIndex=Math.max(170,...[...document.querySelectorAll('.overlay:not(.hidden)')].map(e=>Number(getComputedStyle(e).zIndex)||0))+5;dialog.innerHTML='<div class="overlay-backdrop" data-82-close></div><section class="settings-sheet '+(wide?'release82-wide':'')+'" role="dialog" aria-modal="true" aria-labelledby="'+titleId+'"><button class="close-btn" data-82-close aria-label="Close">×</button><div class="overlay-title"><h2 id="'+titleId+'">'+esc(title)+'</h2></div>'+html+'</section>';document.body.append(dialog);document.body.classList.add('modal-open');dialog.querySelector('button').focus();return dialog}
-document.addEventListener('click',e=>{if(e.target.closest('[data-82-close]')){e.stopImmediatePropagation();dismiss()}},true);
-document.addEventListener('keydown',e=>{if(!dialog)return;const higher=[...document.querySelectorAll('.overlay:not(.hidden)')].filter(o=>o!==dialog&&Number(getComputedStyle(o).zIndex)>Number(dialog.style.zIndex));if(higher.length){if(e.key==='Escape'){e.preventDefault();e.stopImmediatePropagation();close('#'+higher.sort((a,b)=>Number(getComputedStyle(b).zIndex)-Number(getComputedStyle(a).zIndex))[0].id)}return}if(e.key==='Escape'){e.preventDefault();e.stopImmediatePropagation();dismiss()}if(e.key==='Tab'){const items=[...dialog.querySelectorAll('button,input,select,a[href],summary,[tabindex="0"]')].filter(x=>!x.disabled&&x.getClientRects().length);if(!items.length)return;if(e.shiftKey&&(document.activeElement===items[0]||!dialog.contains(document.activeElement))){e.preventDefault();items.at(-1).focus()}else if(!e.shiftKey&&(document.activeElement===items.at(-1)||!dialog.contains(document.activeElement))){e.preventDefault();items[0].focus()}}},true);
-window.BRTA82={modal,dismiss};
+(function () {
+'use strict';
 const page = document.createElement('div');
-page.id = 'rounds821Content';
-const stash = document.createElement('div');
-stash.hidden = true;
-stash.append(page);
-document.body.append(stash);
+page.id = 'latestRoundContent';
 
 function fixtureRow(fixture, forecast) {
   const { home, away, status, fixtureId } = fixture;
   const score = (a, b) => a != null && b != null ? esc(a + '–' + b) : '—';
   if (fixtureIsBye(fixture)) return byeCard(fixture);
   const complete = status === 'Completed';
-  const action = complete || findMatch(fixtureId) ? 'data-82-result' :
-    status === 'Scheduled' && fixtureById(fixtureId) ? 'data-82-predict' : '';
+  const action = complete || findMatch(fixtureId) ? 'data-latest-result' :
+    status === 'Scheduled' && fixtureById(fixtureId) ? 'data-latest-fixture' : '';
   const tag = action ? 'button' : 'div';
   const card = '<' + tag + ' class="round-fixture latest-fixture"' + (action ? ' type="button" ' + action + '="' + esc(fixtureId) + '"' : '') +
     '><div class="latest-fixture-title"><b>' + teamName(home) + ' <span>vs</span> ' + teamName(away) +
@@ -26,7 +18,7 @@ function fixtureRow(fixture, forecast) {
       '</b></span><span>Rubbers <b>' + score(fixture.homeRubbers ?? fixture.homeSets, fixture.awayRubbers ?? fixture.awaySets) +
       '</b></span><span>Games <b>' + score(fixture.homeGames, fixture.awayGames) + '</b></span></div>' : '') +
     (forecast ? '<span class="latest-chance">' + esc(forecast.label) + ' with these lineups · ' + chance(forecast.resultChance) + '</span>' : '') +
-    (action ? '<span class="latest-action">' + (action === 'data-82-result' ? 'View scorecard' : 'Fixture Outlook') + ' ›</span>' : '') + '</' + tag + '>';
+    (action ? '<span class="latest-action">' + (action === 'data-latest-result' ? 'View scorecard' : 'Fixture Outlook') + ' ›</span>' : '') + '</' + tag + '>';
   return card;
 }
 
@@ -136,10 +128,9 @@ function roundAnalysis(round) {
 }
 
 function render() {
-  $('#roundBtn').textContent = 'Latest Round';
-  if (!D || !page.closest('.rounds821-overlay')) return;
-  const round = M.overview(D);
-  const context = '<p id="roundsContext" class="small-note">' +
+  if (!D || !page.closest('.latest-round-overlay')) return;
+  const round = BRTAFixtureRecords.overview(D);
+  const context = '<p id="latestRoundContext" class="small-note">' +
     esc([D.meta.competition_label, D.meta.season_label, D.meta.section_label].filter(Boolean).join(' · ')) + '</p>';
   if (!round) {
     page.innerHTML = context + '<p>No results have been published yet.</p>';
@@ -180,19 +171,27 @@ function render() {
     '<h3 class="latest-section-heading">Fixtures</h3><div class="round-fixtures latest-fixtures">' + fixtures.map(fixture => fixtureRow(fixture, analysis.forecasts.get(fixture.fixtureId))).join('') + '</div>';
 }
 
-function showRounds() {
-  const overlay = modal('Latest Round', '', true);
-  overlay.classList.add('rounds821-overlay');
+function showLatestRound() {
+  const existing = page.closest('.latest-round-overlay');
+  if (existing) {
+    existing.querySelector('.close-btn').focus();
+    return;
+  }
+  const overlay = BRTAOverlays.openSheet('Latest Round', '', {
+    className: 'latest-round-overlay',
+    keepOpen: true,
+    onDismiss: () => page.remove()
+  });
   overlay.querySelector('.settings-sheet').append(page);
   render();
 }
-$('#roundBtn').onclick = showRounds;
-openRound = showRounds;
+$('#latestRoundBtn').onclick = showLatestRound;
+window.BRTALatestRound = {open: showLatestRound};
 document.addEventListener('click', event => {
-  const result = event.target.closest('#rounds821Content [data-82-result]');
-  const prediction = event.target.closest('#rounds821Content [data-82-predict]');
-  if (result) openMatch(result.dataset['82Result']);
-  if (prediction) openPrediction(prediction.dataset['82Predict']);
+  const result = event.target.closest('#latestRoundContent [data-latest-result]');
+  const prediction = event.target.closest('#latestRoundContent [data-latest-fixture]');
+  if (result) openMatch(result.dataset.latestResult);
+  if (prediction) openPrediction(prediction.dataset.latestFixture);
 });
 window.addEventListener('brta-section-ready', render);
 render();

@@ -348,8 +348,8 @@
     const today = [local.year, local.month, local.day].join('-');
     return (data.upcomingFixtures || []).some(group => (group.fixtures || []).some(fixture => {
       const name = [group.stage, group.label, fixture.stage, fixture.label].join(' ');
-      const day = BRTAMatchday.iso(fixture.date || group.date);
-      const start = BRTAMatchday.time(fixture.startTime, data.meta.competition_code);
+      const day = BRTAFixtureRecords.iso(fixture.date || group.date);
+      const start = BRTAFixtureRecords.time(fixture.startTime, data.meta.competition_code);
       return /final|playoff|knockout|\bsf\b/i.test(name) && !model.bye(fixture) && day &&
         (day < today || (day === today && start && start.slice(0, 2) + ':' + start.slice(2, 4) <= local.hour + ':' + local.minute));
     }));
