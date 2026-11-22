@@ -56,25 +56,31 @@
   }
   function paint() {
     const query = BRTAPlayerSearch.normalise(input.value);
-    const words = query.split(/[^\p{L}\p{N}]+/u).filter(Boolean);
-    const matchWords = label => words.every(word => /^\d+$/.test(word) ?
-      label.split(/[^\p{L}\p{N}]+/u).includes(word) : label.includes(word));
-    const score = item => {
-      const label = BRTAPlayerSearch.normalise(item.label), details = BRTAPlayerSearch.normalise(item.detail);
-      if (!words.length) return item.searchOnly ? Infinity : 0;
+    const boundaries = /[^\p{L}\p{N}]+/u;
+    const tokens = query.split(boundaries).filter(Boolean);
+    function matchesTokens(text) {
+      return tokens.every(token => {
+        if (/^\d+$/.test(token)) return text.split(boundaries).includes(token);
+        return text.includes(token);
+      });
+    }
+    function matchRank(item) {
+      const label = BRTAPlayerSearch.normalise(item.label);
+      const details = BRTAPlayerSearch.normalise(item.detail);
+      if (tokens.length === 0) return item.searchOnly ? Infinity : 0;
       if (label === query) return 0;
       if (label.startsWith(query)) return 1;
-      if (matchWords(label)) return 2;
-      return matchWords(label + ' ' + details) ? 4 : Infinity;
-    };
-    const rootSearch = !stack.length && title.textContent === 'Quick navigation';
-    const matches = items.map(item => [item, score(item)]).filter(([, rank]) => Number.isFinite(rank));
-    if (rootSearch && input.value.trim() === playerQuery) for (const item of playerRows) {
-      matches.push([item, item.typo ? 5 : score(item)]);
+      if (matchesTokens(label)) return 2;
+      return matchesTokens(label + ' ' + details) ? 4 : Infinity;
     }
-    if (words.length) matches.sort((a, b) => a[1] - b[1]);
-    list.classList.toggle('navigation-shortcuts', rootSearch && !words.length);
-    filtered = (words.length ? matches.slice(0, 60) : matches).map(([item]) => item);
+    const rootSearch = !stack.length && title.textContent === 'Quick navigation';
+    const matches = items.map(item => [item, matchRank(item)]).filter(([, rank]) => Number.isFinite(rank));
+    if (rootSearch && input.value.trim() === playerQuery) for (const item of playerRows) {
+      matches.push([item, item.typo ? 5 : matchRank(item)]);
+    }
+    if (tokens.length) matches.sort((a, b) => a[1] - b[1]);
+    list.classList.toggle('navigation-shortcuts', rootSearch && !tokens.length);
+    filtered = (tokens.length ? matches.slice(0, 60) : matches).map(([item]) => item);
     selected = Math.min(selected, Math.max(0, filtered.length - 1));
     list.innerHTML = filtered.map((item, index) => '<button type="button" role="option" id="navigationOption' + index + '" aria-selected="' + (index === selected) + '" data-nav-index="' + index + '"><span class="nav-row-copy"><b>' + esc(item.label) + '</b><small>' + esc(item.detail) + '</small></span>' + (item.nested ? '<span class="nav-chevron" aria-hidden="true"></span>' : '') + '</button>').join('');
     input.setAttribute('aria-activedescendant', filtered.length ? 'navigationOption' + selected : '');

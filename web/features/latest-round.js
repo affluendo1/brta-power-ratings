@@ -136,10 +136,17 @@ function render() {
     page.innerHTML = context + '<p>No results have been published yet.</p>';
     return;
   }
-  const remaining = (D.upcomingFixtures || []).filter(group => String(group.round) === String(round.round))
-    .flatMap(group => group.fixtures || []).filter(fixture => !round.fixtures.some(result =>
-      result.fixtureId === fixture.fixtureId || (result.home === fixture.home && result.away === fixture.away)));
-  const fixtures = [...round.fixtures, ...remaining];
+  const currentRound = String(round.round);
+  const scheduledFixtures = (D.upcomingFixtures || [])
+    .filter(group => String(group.round) === currentRound)
+    .flatMap(group => group.fixtures || []);
+  function hasScorecard(fixture) {
+    return round.fixtures.some(result => {
+      if (result.fixtureId === fixture.fixtureId) return true;
+      return result.home === fixture.home && result.away === fixture.away;
+    });
+  }
+  const fixtures = [...round.fixtures, ...scheduledFixtures.filter(fixture => !hasScorecard(fixture))];
   const pending = fixtures.filter(f => ['Scheduled', 'Missing Result'].includes(f.status)).length;
   const analysis = roundAnalysis(round);
   const modelName = modelDisplayName(D.meta.modelChoice || D.meta.predictionModel || selectedRatingModel());
