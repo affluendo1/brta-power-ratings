@@ -3,11 +3,13 @@ import argparse
 import bisect
 import collections
 import csv
+import gzip
 import itertools
 import json
 import math
 import re
 import statistics
+import tempfile
 import unicodedata
 from pathlib import Path
 from datetime import date, datetime
@@ -105,7 +107,7 @@ def main():
     parser.add_argument('index', type=Path)
     parser.add_argument('output', type=Path)
     args = parser.parse_args()
-    index = json.loads(args.index.read_text())
+    index = json.loads(args.index.read_text(encoding='utf-8'))
     sections = index['sections']
     entries = DEFAULT(lambda: DEFAULT(list))
     for name_id, section_id, team, *identity in index['entries']:
@@ -261,7 +263,7 @@ def main():
 
     # Same person and season, across competitions in the same family. Each player's median counts once.
     overlaps = DEFAULT(lambda: DEFAULT(list))
-    latest = max(level[1] for level in levels.values())
+    latest = max((level[1] for level in levels.values()), default=0)
     for key, history in players.items():
         if not key.startswith('linked:'):
             continue
@@ -358,7 +360,19 @@ def main():
     report = {'association': 'BRTA', 'sections': len(loaded), 'indexedSections': len(sections), 'scorecards': scorecards,
               'progress': progress, 'equivalents': section_comparisons, 'edges': edges,
               'ranks': ranks, 'currentPoolSizes': {root: len(rows) for root, rows in rankings.items()}}
-    args.output.write_text(json.dumps(report, ensure_ascii=False, separators=(',', ':')) + '\n')
+    encoded = (json.dumps(report, ensure_ascii=False, separators=(',', ':')) + '\n').encode('utf-8')
+    if args.output.suffix == '.gz':
+        with tempfile.NamedTemporaryFile(dir=args.output.parent, delete=False) as output:
+            temporary = Path(output.name)
+            try:
+                with gzip.GzipFile(filename='', mode='wb', fileobj=output, mtime=0) as zipped:
+                    zipped.write(encoded)
+                output.close()
+                temporary.replace(args.output)
+            finally:
+                temporary.unlink(missing_ok=True)
+    else:
+        args.output.write_bytes(encoded)
     print(json.dumps({key: report[key] for key in ('sections', 'indexedSections', 'scorecards', 'edges', 'currentPoolSizes')}, indent=2))
 
 

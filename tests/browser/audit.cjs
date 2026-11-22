@@ -53,6 +53,17 @@ const career=w.document.querySelector('.career99');
 assert(career,'Current player lab has a Career scope');
 assert(career.querySelector('.career99-chart svg'),'Published matches produce a career timeline: '+career.textContent);
 assert(career.querySelector('.career99-awards article'),'Best-season categories display for a player with rated matches');
+const timeline = w.document.createElement('div');
+w.BRTACareerTimeline.render(timeline, [{
+  entry: {competitionCode:'UA', seasonKey:'UA:current', seasonLabel:'Spring 2026'},
+  date:'22 Nov 26', kind:'doublesPlayers', gf:6, ga:2, won:true,
+}]);
+timeline.querySelector('[data-career-discipline]').value='singles';
+const timelineMetric=timeline.querySelector('[data-career-metric]');
+timelineMetric.value='count';
+timelineMetric.dispatchEvent(new w.Event('change',{bubbles:true}));
+assert(timeline.querySelector('.career99-chart circle'),'A zero-match season still plots when viewing match counts');
+assert(!timeline.querySelector('.career99-chart').innerHTML.includes('NaN'),'A zero-match discipline has a finite chart scale');
 esc();await tick();console.log('Player Lab loads the career timeline and season awards from the archive');
 
 const singleGraph=vm.runInContext("lab8Graph('singles',Object.keys(D.ratingHistory.players)[0],'Singles',1)",ctx);assert(singleGraph.includes('<circle '));console.log('Single-observation chart contains a visible point');
@@ -100,6 +111,11 @@ careerSearch.dispatchEvent(new w.Event('input',{bubbles:true}));
 for(let i=0;i<100&&!w.document.querySelector('[data-career-result]');i++)await tick();
 assert(w.document.querySelector('#careerSearchResults').textContent.includes('Jayden Bone'));
 assert(w.document.querySelector('#careerSearchStatus').textContent.includes('possible matches'));
+careerSearch.value='J';
+careerSearch.dispatchEvent(new w.Event('input',{bubbles:true}));
+for(let i=0;i<30&&w.document.querySelector('[data-career-result]');i++)await tick();
+assert(!w.document.querySelector('[data-career-result]'),'Shortening the search clears old selectable results');
+assert(w.document.querySelector('#careerSearchStatus').textContent.includes('at least two'));
 console.log('Players directory reports an identifiable typo match');
 vm.runInContext("ratingScope='section';$('#search').value='';renderRatings()",ctx);
 click('#settingsBtn');await tick();click('#showExtrasBtn');await tick();click('[data-more-settings]');await tick();esc();await tick();assert(w.document.querySelector('#moreSettingsOverlay').classList.contains('hidden'));assert(!w.document.querySelector('#settingsOverlay').classList.contains('hidden'));console.log('More Settings gate uses its own Escape cleanup and restores Settings');esc();await tick();

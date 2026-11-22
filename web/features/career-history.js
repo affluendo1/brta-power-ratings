@@ -82,7 +82,9 @@
     const first = points[0].date, last = points.at(-1).date;
     const range = Math.max(last - first, 1);
     const x = date => first === last ? (left + right) / 2 : left + (date - first) / range * (right - left);
-    const scale = metric === 'count' ? Math.ceil(Math.max(...points.map(point => point[discipline].count)) / 4) * 4 : 100;
+    const scale = metric === 'count'
+      ? Math.ceil(Math.max(1, ...points.map(point => point[discipline].count)) / 4) * 4
+      : 100;
     const y = value => bottom - value / scale * (bottom - top);
     const dates = first === last ? [first] : [first, ...((last - first) > 12 * MONTH_MS ? [(first + last) / 2] : []), last];
     const tickDate = new Intl.DateTimeFormat('en-AU', {month: 'short', year: 'numeric', timeZone: 'UTC'});
@@ -125,6 +127,7 @@
   }
 
   root.BRTACareerTimeline = {
+    matchTime,
     render(panel, matches) {
       const entries = matches.map(match => ({row: match.entry, matches: [match]}));
       draw(panel, seasonRecords(entries));

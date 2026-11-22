@@ -6,6 +6,16 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 
 class FrontendPathsTests(unittest.TestCase):
+    def test_public_homepage_is_indexable(self):
+        html = (ROOT / 'index.html').read_text(encoding='utf-8')
+        title = re.search(r'<title>(.*?)</title>', html).group(1)
+        self.assertTrue(title.startswith('BRTA Power Ratings | '), title)
+        self.assertNotIn('preview', title.lower())
+        self.assertNotRegex(html.lower(), r'<meta\b[^>]*\bnoindex\b')
+        sitemap = (ROOT / 'sitemap.xml').read_text(encoding='utf-8')
+        canonical = re.search(r'<link rel="canonical" href="([^"]+)"', html).group(1)
+        self.assertIn('<loc>' + canonical + '</loc>', sitemap)
+
     def test_shell_dependencies_exist_in_git(self):
         import subprocess
         existing = set(subprocess.check_output(['git', 'ls-files'], cwd=ROOT, text=True).splitlines())

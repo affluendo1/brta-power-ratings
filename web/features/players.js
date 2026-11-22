@@ -202,24 +202,34 @@
     const value = query.value.trim(), scope = filterScope.value;
     if (!value) { renderDirectory(); return; }
     rosters.hidden = true;
-    if (value.length < 2) { status.textContent = 'Enter at least two characters.'; found.removeAttribute('aria-busy'); return; }
+    if (value.length < 2) {
+      searchResults = [];
+      found.replaceChildren();
+      found.removeAttribute('aria-busy');
+      status.textContent = 'Enter at least two characters.';
+      return;
+    }
     status.textContent = 'Searching published appearances…';
     found.setAttribute('aria-busy', 'true');
     try {
-      const m = await careers();
-      if (version !== searchVersion || query.value.trim() !== value || filterScope.value !== scope) return;
-      const inScope = person => person.rows.some(row => matchesScope(row, scope));
-      searchResults = m.find(value).filter(inScope);
-      if (!searchResults.length) searchResults = m.find(value, true).filter(inScope);
       if (D?.meta?.is_custom && scope === 'section') {
-        const exact = player => Number.isFinite(BRTAPlayerSearch.nameScore(player.name, value));
         const teams = BRTATeamLab.teamNames(D);
-        searchResults = teams.flatMap(team => BRTATeamLab.build(D, team).players.filter(player =>
-          exact(player) || Number.isFinite(BRTAPlayerSearch.nameScore(player.name, value, true))).map(player => {
-          const row = {player: player.name, team, score: BRTAPlayerSearch.nameScore(player.name, value, true), competitionLabel: 'Custom Competition', seasonLabel: D.meta.season_label,
+        searchResults = teams.flatMap(team => BRTATeamLab.build(D, team).players.flatMap(player => {
+          const score = BRTAPlayerSearch.nameScore(player.name, value, true);
+          if (!Number.isFinite(score)) return [];
+          const row = {player: player.name, team, score, competitionLabel: 'Custom Competition', seasonLabel: D.meta.season_label,
             sectionLabel: D.meta.section_label, sectionCode: D.meta.section_code};
-          return {rows: [row], match: row, teams: [team], seasons: [row.seasonLabel], competitions: [], custom: true};
+          return [{rows: [row], match: row, teams: [team], seasons: [row.seasonLabel], competitions: [], custom: true}];
         }));
+        if (searchResults.some(person => person.match.score <= 2)) {
+          searchResults = searchResults.filter(person => person.match.score <= 2);
+        }
+      } else {
+        const m = await careers();
+        if (version !== searchVersion || query.value.trim() !== value || filterScope.value !== scope) return;
+        const inScope = person => person.rows.some(row => matchesScope(row, scope));
+        searchResults = m.find(value).filter(inScope);
+        if (!searchResults.length) searchResults = m.find(value, true).filter(inScope);
       }
       searchResults.sort((a, b) => Number(a.match.score > 2) - Number(b.match.score > 2) || b.seasons.length - a.seasons.length || b.rows.length - a.rows.length ||
         (a.match.score || 0) - (b.match.score || 0) || a.match.player.localeCompare(b.match.player));
@@ -270,6 +280,7 @@
     overlay.classList.remove('hidden');
     document.body.classList.add('modal-open');
     eightRaise(overlay);
+    sheet.setAttribute('aria-label', publicPlayerName(origin.player));
     scopes.hidden = false;
     lab = {person, name: origin.player, season: origin.seasonLabel, sectionReady: false, origin, careerOnly};
     labVersion++;
@@ -466,7 +477,6 @@
   function isActiveLab(version) {
     return version === labVersion && !overlay.classList.contains('hidden');
   }
-  const fits = new Map();
   const fitQueue = [];
   let activeFits = 0;
   function pumpFits() {
@@ -475,8 +485,8 @@
       fitQueue.shift()().finally(() => { activeFits--; pumpFits(); });
     }
   }
-  function showPower(row, data, record, version, modelName) {
-    const key = row.dataPath + '|' + modelName;
+  function showPower(row, data, record, version, modelName, fits) {
+    const key = row.dataPath;
     const live = D?.meta?.section_code === row.sectionCode && D.meta.season_label === row.seasonLabel && !D.meta.is_custom ? D : null;
     if (!live && !fits.has(key)) {
       const pending = new Promise(resolve => fitQueue.push(async () => {
@@ -531,6 +541,7 @@
     let next = 0, unavailable = 0, completed = 0;
     const log = new Map(), meetings = new Map(), emergencyTies = new Set();
     const powers = [];
+    const fits = new Map();
     let completedPowers = 0;
     async function worker() {
       while (next < rows.length && isActiveLab(version)) {
@@ -581,7 +592,7 @@
           const record = card.querySelector('.career-card-record');
           record.innerHTML = html;
           const power = record.querySelector('.career-power');
-          if (power) powers.push(showPower(row, data, power, version, modelName)
+          if (power) powers.push(showPower(row, data, power, version, modelName, fits)
             .catch(() => { power.textContent = 'Power unavailable'; })
             .finally(() => {
               completedPowers++;
@@ -665,9 +676,7 @@
       }).join('') + '</div></details>';
   }
   function matchDate(date) {
-    if (!/^(?:\d{4}-\d{2}-\d{2}|\d{1,2} [A-Za-z]{3,9} \d{2,4})$/.test(date || '')) return 0;
-    const value = Date.parse(date);
-    return Number.isFinite(value) ? value : 0;
+    return BRTACareerTimeline.matchTime(date) ?? 0;
   }
   async function openAppearance(row, button) {
     if (!row) return;

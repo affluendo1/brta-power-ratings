@@ -1,4 +1,7 @@
+import gzip
 import json
+import subprocess
+import sys
 import tempfile
 import unittest
 from pathlib import Path
@@ -8,6 +11,43 @@ from datetime import date
 
 
 class PlayerSearchTests(unittest.TestCase):
+    def test_search_refresh_publishes_reproducible_career_analytics(self):
+        project = Path(__file__).resolve().parents[1]
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            archive = root / 'data/archive'
+            archive.mkdir(parents=True)
+            (archive / 'catalog.json').write_text('{"seasons":[]}', encoding='utf-8')
+            output = archive / 'player-analytics.json.gz'
+            command = [sys.executable, str(project / 'generate_player_search.py')]
+            subprocess.run(command, cwd=root, check=True, capture_output=True)
+            first = output.read_bytes()
+            self.assertEqual(json.loads(gzip.decompress(first))['indexedSections'], 0)
+
+            section = root / 'data/current/sections/UA001'
+            section.mkdir(parents=True)
+            (section / 'singles.csv').write_text(
+                'fixture_id,position,date,round,home_team,away_team,home_player,away_player,'
+                'home_games,away_games,winning_player,valid_for_rating\n'
+                '1,1,2026-08-02,1,Home,Away,Alex Lee,Sam Lee,6,2,Alex Lee,true\n',
+                encoding='utf-8',
+            )
+            (root / 'section.json').write_text(json.dumps({
+                'singles': [{'player': 'Alex Lee', 'team': 'Home', 'rating': 1600},
+                            {'player': 'Sam Lee', 'team': 'Away', 'rating': 1400}],
+            }), encoding='utf-8')
+            (archive / 'catalog.json').write_text(json.dumps({'seasons': [{
+                'id': 'UA:current', 'competition_code': 'UA', 'competition_label': 'Sunday AM',
+                'season_id': 'current', 'season_label': 'Spring 2026', 'is_current': True,
+                'sections': [{'section_code': 'UA001', 'section_label': 'Sets 1', 'data_path': 'section.json'}],
+            }]}), encoding='utf-8')
+            subprocess.run(command, cwd=root, check=True, capture_output=True)
+            refreshed = output.read_bytes()
+            report = json.loads(gzip.decompress(refreshed))
+            self.assertEqual((report['indexedSections'], report['scorecards']), (1, 1))
+            subprocess.run(command, cwd=root, check=True, capture_output=True)
+            self.assertEqual(output.read_bytes(), refreshed)
+
     def test_fill_ins_and_competition_changes_link_but_same_day_namesakes_do_not(self):
         sunday = {date(2026, 8, 2), date(2026, 8, 16)}
         fill_in = {date(2026, 8, 9)}

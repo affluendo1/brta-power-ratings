@@ -2,6 +2,17 @@
 // Retrospective entries use source-commit timestamps; sourceCommit records their provenance.
 window.BRTA_RELEASES = Object.freeze([
 {
+  "version": "9.9a",
+  "size": "tiny",
+  "title": "Players release fixes",
+  "committedAt": "2026-11-22T15:12:00+11:00",
+  "changes": [
+    "Restored the public homepage title and made the homepage eligible for search indexing again.",
+    "Full results syncs and history imports now rebuild career analytics alongside the player search index.",
+    "Fixed stale directory results, local searching in custom sections, zero-match charts and section Power when switching Lab scopes."
+  ]
+},
+{
   "version": "9.9",
   "size": "major",
   "title": "Players through time",

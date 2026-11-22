@@ -1,13 +1,16 @@
-"""Build a compact name index across every published Saturday/Sunday section."""
+"""Build the player search, ratings and career analytics indexes."""
 from __future__ import annotations
 
 import json
 import re
+import subprocess
+import sys
 from pathlib import Path
 from hashlib import blake2s
 from player_identity import appearances, club_key, link, normalized
 
 INDEX_PATH = Path('data/archive/player-search.json')
+ANALYTICS_TOOL = Path(__file__).with_name('tools') / 'player-analytics.py'
 
 
 def section_players(payload: dict) -> dict[str, set[str]]:
@@ -191,6 +194,11 @@ def write_player_search(catalog: dict) -> dict:
     (INDEX_PATH.parent / 'rating-search.json').write_text(json.dumps(compact_rating_candidates(rating_candidates(groups)), ensure_ascii=False, separators=(',', ':')) + '\n', encoding='utf-8')
     INDEX_PATH.parent.mkdir(parents=True, exist_ok=True)
     INDEX_PATH.write_text(json.dumps(index, ensure_ascii=False, separators=(',', ':')) + '\n', encoding='utf-8')
+    subprocess.run(
+        [sys.executable, str(ANALYTICS_TOOL), '.', str(INDEX_PATH),
+         str(INDEX_PATH.with_name('player-analytics.json.gz'))],
+        check=True,
+    )
     print(f"Player search: {len(index['players'])} names, {len(index['sections'])} sections, "
           f"{len(index['unavailableSections'])} unavailable sections")
     return index
