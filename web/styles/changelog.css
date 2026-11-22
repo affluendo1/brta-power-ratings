@@ -60,3 +60,11 @@ html[data-animation="off"] .release-arrival { animation: none; outline: 2px soli
 .release-history-row .release-past-button{margin-top:8px}
 .release-past-button{flex-shrink:0;min-height:36px;padding:6px 9px;border:1px solid var(--border-color);border-radius:var(--control-radius,4px);background:var(--surface);color:var(--text-color);font:700 12px var(--body-font,Arial,sans-serif);white-space:nowrap;cursor:pointer}
 .release-past-button:hover{border-color:var(--primary);background:var(--surface-muted)}
+
+.changelog-sheet .release-latest { border-top: 3px solid var(--primary); }
+.changelog-sheet .release-anchor { scroll-margin-block: 12px; }
+.changelog-sheet .release-anchor .release-entry { border-inline-start: 3px solid var(--primary); }
+.changelog-sheet .release-name small {
+  display: inline-block; margin-inline-start: .55em; padding: 2px 5px; border: 1px solid var(--border-color);
+  border-radius: 4px; font-size: 10px; font-weight: 750; text-transform: uppercase; color: var(--primary);
+}

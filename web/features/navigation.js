@@ -9,15 +9,27 @@
   overlay.id = 'navigationOverlay';
   overlay.className = 'overlay hidden';
   overlay.innerHTML = '<div class="overlay-backdrop" data-nav-close></div><section class="settings-sheet navigation-sheet" role="dialog" aria-modal="true" aria-labelledby="navigationTitle"><header><div><span class="kicker">BRTA POWER RATINGS</span><h2 id="navigationTitle">Quick navigation</h2></div><button class="close-btn" data-nav-close aria-label="Close quick navigation">×</button></header><div id="navigationCrumbs" class="navigation-crumbs"></div><p id="navigationIntro"></p><div class="navigation-search"><button id="navigationBack" type="button" aria-label="Back to navigation">Back</button><input id="navigationSearch" type="search" autocomplete="off" enterkeyhint="go" placeholder="Where would you like to go?" aria-label="Search navigation" role="combobox" aria-autocomplete="list" aria-expanded="true" aria-controls="navigationResults"></div><div id="navigationResults" role="listbox" aria-label="Navigation results"></div><p id="navigationStatus" role="status"></p><footer><span>↑ ↓ to choose · Enter to open · Esc to go back</span><button class="export-link" id="navigationHelp">Tutorials</button></footer></section>';
+  const defaultForm = document.createElement('form');
+  defaultForm.className = 'navigation-default-form';
+  defaultForm.hidden = true;
+  const choiceMarkup = (id, label) => '<div class="section-choice" id="' + id + 'Choice"><span class="choice-label" id="' + id +
+    'Label">' + label + '</span><button class="choice-trigger" type="button" id="' + id +
+    'Select" aria-haspopup="listbox" aria-expanded="false" aria-labelledby="' + id + 'Label ' + id +
+    'Value"><span id="' + id + 'Value"></span><i aria-hidden="true"></i></button><div class="choice-options" id="' +
+    id + 'Options" role="listbox" aria-labelledby="' + id + 'Label"></div></div>';
+  defaultForm.innerHTML = choiceMarkup('navigationDefaultCompetition', 'Competition') + choiceMarkup('navigationDefaultSection', 'Section') +
+    '<button type="submit" class="button primary">Save default section</button>';
+  overlay.querySelector('#navigationStatus').before(defaultForm);
   document.body.append(overlay);
   const input = overlay.querySelector('input');
-  const list = overlay.querySelector('[role="listbox"]');
+  const list = overlay.querySelector('#navigationResults');
   const back = overlay.querySelector('#navigationBack');
   const title = overlay.querySelector('h2');
   const intro = overlay.querySelector('#navigationIntro');
   const status = overlay.querySelector('[role="status"]');
   let items = [], filtered = [], selected = 0, stack = [], welcome = false, busy = false;
-  let demonstration = false;
+  let demonstration = false, playerQuery = '', playerRows = [], playerTimer, searchingPlayers = false;
+  const searchBox = overlay.querySelector('.navigation-search');
   const viewport = window.visualViewport;
   function fitViewport() {
     if (!mobile.matches || overlay.classList.contains('hidden')) return;
@@ -35,6 +47,7 @@
   const official = () => currentCatalog().filter(row => !row.is_custom);
   const action = (label, detail, run) => ({ label, detail, run });
   function hide() {
+    clearTimeout(playerTimer);
     input.blur();
     close('#navigationOverlay');
     if (welcome) localStorage.setItem('brta-onboarding-v1', '1');
@@ -42,16 +55,29 @@
     demonstration = false;
   }
   function paint() {
-    const words = input.value.toLowerCase().trim().split(/\s+/).filter(Boolean);
-    filtered = items.filter(item => {
-      if (!words.length && item.searchOnly) return false;
-      const text = (item.label + ' ' + item.detail).toLowerCase();
-      return words.every(word => /^\d+$/.test(word) ? new RegExp('(?:^|\\D)' + word + '(?:\\D|$)').test(text) : text.includes(word));
-    });
+    const query = BRTAPlayerSearch.normalise(input.value);
+    const words = query.split(/[^\p{L}\p{N}]+/u).filter(Boolean);
+    const matchWords = label => words.every(word => /^\d+$/.test(word) ?
+      label.split(/[^\p{L}\p{N}]+/u).includes(word) : label.includes(word));
+    const score = item => {
+      const label = BRTAPlayerSearch.normalise(item.label), details = BRTAPlayerSearch.normalise(item.detail);
+      if (!words.length) return item.searchOnly ? Infinity : 0;
+      if (label === query) return 0;
+      if (label.startsWith(query)) return 1;
+      if (matchWords(label)) return 2;
+      return matchWords(label + ' ' + details) ? 4 : Infinity;
+    };
+    const rootSearch = !stack.length && title.textContent === 'Quick navigation';
+    const matches = items.map(item => [item, score(item)]).filter(([, rank]) => Number.isFinite(rank));
+    if (rootSearch && input.value.trim() === playerQuery) for (const item of playerRows) {
+      matches.push([item, item.typo ? 5 : score(item)]);
+    }
+    if (words.length) matches.sort((a, b) => a[1] - b[1]);
+    filtered = matches.slice(0, words.length ? 60 : rootSearch ? 16 : matches.length).map(([item]) => item);
     selected = Math.min(selected, Math.max(0, filtered.length - 1));
     list.innerHTML = filtered.map((item, index) => '<button type="button" role="option" id="navigationOption' + index + '" aria-selected="' + (index === selected) + '" data-nav-index="' + index + '"><span class="nav-row-copy"><b>' + esc(item.label) + '</b><small>' + esc(item.detail) + '</small></span>' + (item.nested ? '<span class="nav-chevron" aria-hidden="true"></span>' : '') + '</button>').join('');
     input.setAttribute('aria-activedescendant', filtered.length ? 'navigationOption' + selected : '');
-    status.textContent = filtered.length ? '' : 'No matches. Try a team, competition, section, player or page name.';
+    status.textContent = searchingPlayers ? 'Searching player history…' : filtered.length ? '' : 'No matches. Try a player, team, section or page name.';
     back.hidden = !stack.length;
     overlay.querySelector('#navigationCrumbs').textContent = ['Quick Nav', ...stack.map(item => item.label).filter(label => label !== 'Quick navigation'), title.textContent].filter((label,index,all) => index === 0 || label !== all[index-1]).join(' / ');
   }
@@ -61,7 +87,16 @@
     if (nested) stack.push({
       label: title.textContent, rows: items, description: intro.textContent, query: input.value, scroll: list.scrollTop
     });
+    clearTimeout(playerTimer);
+    playerQuery = '';
+    playerRows = [];
+    searchingPlayers = false;
+    closeChoices();
+    defaultForm.hidden = true;
+    overlay.classList.remove('navigation-choosing-default');
+    searchBox.hidden = list.hidden = false;
     title.textContent = label;
+    input.placeholder = label === 'Quick navigation' ? 'Search players, teams or pages' : 'Search ' + label.toLowerCase();
     intro.textContent = description;
     intro.hidden = !description;
     items = rows;
@@ -90,17 +125,6 @@
       activeHistorySeasonId = previous.history;
       throw error;
     }
-  }
-  function competitions(saveDefault = false) {
-    const catalog = official();
-    const choices = [...new Map(catalog.map(row => [row.competition_code, sectionCompetitionLabel(row)])).entries()];
-    show(saveDefault ? 'Choose your home competition' : 'Change competition',
-      choices.map(([code, label]) => action(label, 'Choose a section', () => {
-        show('Choose your section', catalog.filter(row => row.competition_code === code).map(row =>
-          action(row.section_label, label + (saveDefault ? ' · Save as my default' : ''),
-            () => chooseSection(row, saveDefault))),
-          saveDefault ? 'Your choice opens automatically on future visits on this device.' : 'Open any current section.', true);
-      })), 'Select the day and competition you play in.', true);
   }
   function guide() { window.BRTATutorial.open(); }
   const requests = new Map();
@@ -250,18 +274,65 @@
   async function clubDirectory() {
     show('Clubs across competitions', await clubDirectoryRows(), 'Search for a club or team.', true);
   }
+  function bindDefaultChoice(id, options, current, select) {
+    const trigger = overlay.querySelector('#' + id + 'Select'), menu = overlay.querySelector('#' + id + 'Options');
+    renderChoice(trigger.id, options, current);
+    for (const item of menu.children) {
+      delete item.dataset.choiceId;
+      item.onclick = () => {
+        closeChoices();
+        select(item.dataset.choiceValue);
+        trigger.focus({preventScroll: true});
+      };
+    }
+    trigger.onkeydown = event => {
+      if (!['ArrowUp', 'ArrowDown'].includes(event.key)) return;
+      event.preventDefault();
+      if (trigger.getAttribute('aria-expanded') === 'false') trigger.click();
+      (menu.querySelector('.selected') || menu.firstElementChild)?.focus();
+    };
+    menu.onkeydown = event => {
+      if (!['ArrowUp', 'ArrowDown', 'Home', 'End'].includes(event.key)) return;
+      event.preventDefault();
+      const forward = event.key === 'ArrowDown';
+      const next = event.key === 'Home' ? menu.firstElementChild : event.key === 'End' ? menu.lastElementChild :
+        forward ? event.target.nextElementSibling || menu.firstElementChild : event.target.previousElementSibling || menu.lastElementChild;
+      next?.focus();
+    };
+  }
   function defaultMenu() {
-    const code = localStorage.getItem('brta-default-section');
-    const saved = currentCatalog().find(row => row.section_code === code);
-    show('Default Section', [
-      ...(!activeHistorySeasonId ? [action('Use this section', sectionCompetitionLabel(D.meta) + ' · ' + D.meta.section_label, () => {
-        localStorage.setItem('brta-default-competition', D.meta.competition_code);
-        localStorage.setItem('brta-default-section', D.meta.section_code);
-        update();
-      })] : []),
-      nested('Choose another section', 'Browse all current competitions', () => competitions(true)),
-      ...(saved ? [action('Open my default section', sectionCompetitionLabel(saved) + ' · ' + saved.section_label, () => chooseSection(saved, false))] : [])
-    ], saved ? 'Your default · ' + sectionCompetitionLabel(saved) + ' · ' + saved.section_label : 'Choose where the site opens on this device.', true);
+    const catalog = official();
+    const saved = catalog.find(row => row.section_code === localStorage.getItem('brta-default-section'));
+    const initial = saved || catalog.find(row => row.section_code === D?.meta?.section_code) ||
+      catalog.find(row => row.competition_code === D?.meta?.competition_code) || catalog[0];
+    show('Default Section', [], 'Choose where the site opens on this device.', true);
+    defaultForm.hidden = false;
+    overlay.classList.add('navigation-choosing-default');
+    input.blur();
+    searchBox.hidden = list.hidden = true;
+    status.textContent = '';
+    const competition = 'navigationDefaultCompetition', section = 'navigationDefaultSection';
+    const competitions = [...new Map(catalog.map(row => [row.competition_code, sectionCompetitionLabel(row)]))];
+    const sections = (code, current) => bindDefaultChoice(section,
+      catalog.filter(row => row.competition_code === code).map(row => [row.section_code, row.section_label]),
+      current, value => sections(code, value));
+    const chooseCompetition = (code, current) => {
+      bindDefaultChoice(competition, competitions, code, value => chooseCompetition(value));
+      sections(choiceValue(competition + 'Select'), current);
+    };
+    chooseCompetition(initial?.competition_code, initial?.section_code);
+    defaultForm.onsubmit = async event => {
+      event.preventDefault();
+      const row = catalog.find(item => item.section_code === choiceValue(section + 'Select'));
+      if (!row || defaultForm.querySelector('button').disabled) return;
+      const submit = defaultForm.querySelector('button');
+      submit.disabled = true;
+      status.textContent = 'Opening ' + row.section_label + '…';
+      try { await chooseSection(row, true); hide(); }
+      catch (error) { status.textContent = error.message; }
+      finally { submit.disabled = false; }
+    };
+    overlay.querySelector('#' + competition + 'Select').focus({preventScroll: true});
   }
   function commands() {
     const rows = [
@@ -273,7 +344,17 @@
       nested('Past seasons', 'Browse competitions, years and sections', historyMenu),
       nested('Clubs across competitions', 'Find where a club plays and explore team results', clubDirectory),
       nested('This section', 'Teams, Player Labs and fixtures', () => sectionMenu(D.meta, activeHistorySeasonId ? historyCatalog?.seasons.find(season => season.id === activeHistorySeasonId) : null)),
-      ...[['Results','results'],['Standings','standings'],['Ratings','ratings'],['Clubs','teams'],['Fixtures','fixtures']].map(([label,page]) => action(label, 'Open this section’s ' + label.toLowerCase(), () => switchPage(page))),
+      ...[['Results','results'],['Standings','standings'],['Players','ratings'],['Clubs','teams'],['Fixtures','fixtures']].map(([label,page]) => action(label, 'Open this section’s ' + label.toLowerCase(), () => switchPage(page))),
+      {...action('Ratings', 'Player Power, rankings, bands and rating snapshots', () => {
+        switchPage('ratings'); window.BRTAPlayers?.show('section');
+      }), searchOnly: true},
+      {...action('Player directory', 'Search player history and section lineups', () => {
+        switchPage('ratings'); window.BRTAPlayers?.show('history');
+      }), searchOnly: true},
+      {...action('Following', 'Starred players and return watches', () => { hide(); switchPage('ratings'); window.BRTAPlayers?.following(); }), searchOnly: true},
+      {...action('Prediction Centre', 'Fixtures, lineups and score estimates', () => openPredictionHome()), searchOnly: true},
+      {...action('Changelog', 'Version and release history', () => window.BRTAChangelog?.open()), searchOnly: true},
+      {...action('Rating model', 'Change the Power model', () => openLayoutOverlay('model')), searchOnly: true},
       action('Latest Round', 'Recent results and highlights', () => openRound()),
       nested('Default Section', 'Choose where the site opens', defaultMenu),
       action('Tutorial', 'Guided walkthroughs of the actual site', guide),
@@ -288,9 +369,9 @@
         rows.push({ ...nested(team, 'Team · ' + context, () => teamMenu(team, data.meta, season, data)), searchOnly: true });
       }
     }
-    for (const row of official()) rows.push(nested(sectionCompetitionLabel(row) + ' · ' + row.section_label, 'Browse this section', () => sectionMenu(row)));
-    for (const player of [...new Map([...(D?.singles || []), ...(D?.doublesIndividuals || [])].map(row => [row.player,row])).values()])
-      rows.push(action(player.player, 'Player Lab · ' + player.team, () => openProfile(player.player)));
+    for (const row of official()) rows.push({...nested(sectionCompetitionLabel(row) + ' · ' + row.section_label, 'Browse this section', () => sectionMenu(row)), searchOnly: true});
+    if (D?.meta?.is_custom) for (const player of [...new Map([...(D.singles || []), ...(D.doublesIndividuals || [])].map(row => [row.player,row])).values()])
+      rows.push({...action(player.player, 'Player Lab · ' + player.team, () => openProfile(player.player)), searchOnly: true});
     if (window.AuxiliaryPortal?.isUnlocked?.()) rows.push(action('Diagnostics', 'Extras · local logs and commands', () => window.dispatchEvent(new Event('brta-open-diagnostics'))));
     return rows;
   }
@@ -303,6 +384,7 @@
     document.body.classList.add('modal-open');
     const rootRows = commands();
     show('Quick navigation', rootRows);
+    if (!preview) window.BRTAPlayers?.ready().catch(() => {});
     if (!preview) clubDirectoryRows(true).then(rows => {
       rootRows.push(...rows);
       if (items === rootRows && !busy && input.value.trim() && !overlay.classList.contains('hidden')) paint();
@@ -337,8 +419,32 @@
   input.addEventListener('input', () => {
     if (busy) return;
     selected = 0;
+    clearTimeout(playerTimer);
+    const value = input.value.trim();
+    const global = !stack.length && title.textContent === 'Quick navigation' && value.length >= 2 && !demonstration;
+    playerQuery = value;
+    playerRows = [];
+    searchingPlayers = global;
     paint();
     list.scrollTop = 0;
+    if (!global) return;
+    const rootRows = items;
+    playerTimer = setTimeout(async () => {
+      try {
+        const matches = await window.BRTAPlayers.search(value);
+        if (items !== rootRows || input.value.trim() !== value || overlay.classList.contains('hidden')) return;
+        playerRows = matches.map(person => ({
+          ...action(publicPlayerName(person.match.player),
+            ['Career Lab', person.teams[0], person.seasons[0]].filter(Boolean).join(' · '),
+            () => { hide(); window.BRTAPlayers.open(person, {careerOnly: true}); }),
+          typo: person.match.score > 2
+        }));
+      } catch {
+        if (items !== rootRows || input.value.trim() !== value) return;
+      }
+      searchingPlayers = false;
+      paint();
+    }, 80);
   });
   input.addEventListener('keydown', event => {
     if (event.key === 'ArrowDown' || event.key === 'ArrowUp') {
@@ -364,7 +470,14 @@
     list.scrollTop = previous.scroll;
   };
   overlay.querySelector('#navigationHelp').onclick = guide;
-  function backOrClose() { if (!busy && stack.length) back.click(); else hide(); }
+  function backOrClose() {
+    const choice = defaultForm.querySelector('.section-choice.open');
+    if (choice) {
+      closeChoices();
+      choice.querySelector('.choice-trigger').focus();
+    } else if (!busy && stack.length) back.click();
+    else hide();
+  }
   window.BRTAOverlays?.register('navigationOverlay', backOrClose);
   const button = document.createElement('button');
   button.id = 'quickNavigationBtn';
@@ -454,7 +567,7 @@
     openNavigation();
     welcome = true;
     show('Welcome to BRTA Power Ratings', [
-      action('Find my competition', 'Choose your day and section, then save it as your default', () => competitions(true)),
+      action('Find my competition', 'Choose your day and section, then save it as your default', defaultMenu),
       action('Start tutorial', 'A short guide to results, ratings, clubs and predictions', guide),
       action('Explore this section', 'You can choose a home section at any time above the main tabs', () => {})
     ], 'Start with your competition. Your choice is saved on this device.');

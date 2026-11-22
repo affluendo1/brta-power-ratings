@@ -1,0 +1,21 @@
+.career99 { background: var(--surface); border: 1px solid var(--border-color); border-top: 2px solid var(--primary); border-radius: 8px; margin-block: 12px; padding: 12px 14px; }
+.career99 > summary { cursor: pointer; font-weight: 750; }
+.career99-content p, .career99-content small { color: var(--muted-color); }
+.career99-filters { display: flex; flex-wrap: wrap; gap: 8px 14px; margin-block: 12px; }
+.career99-filters label { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; color: var(--muted-color); font-weight: 650; }
+.career99-filters select { min-height: 36px; max-width: 100%; font: inherit; color: var(--text-color); background: var(--surface-raised); border: 1px solid var(--border-color); border-radius: 5px; padding-inline: 6px; }
+.career99-chart { border: 1px solid var(--border-color); border-radius: 6px; background: var(--surface-raised); padding: 8px; }
+.career99-chart svg { display: block; width: 100%; height: auto; }
+.career99-axes path { stroke: var(--border-color); }
+.career99-axes text { fill: var(--muted-color); font: 14px var(--body-font, sans-serif); }
+.career99-legend { display: flex; flex-wrap: wrap; gap: 8px 16px; margin: 4px 0; padding: 0; list-style: none; }
+.career99-legend li { display: flex; align-items: center; gap: 6px; font-size: 13px; }
+.career99-legend i { display: block; width: 9px; height: 9px; border-radius: 50%; }
+.career99-content h4 { margin: 18px 0 5px; font-size: 17px; }
+.career99-awards, .career99-seasons { display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%,205px),1fr)); gap: 8px; }
+.career99-awards article, .career99-seasons article { border: 1px solid var(--border-color); border-radius: 6px; background: var(--surface-raised); padding: 10px; }
+.career99-awards article { display: grid; gap: 4px; }
+.career99-awards strong { font-size: 23px; color: var(--primary); }
+.career99-seasons h5 { margin: 0; font-size: 14px; }
+.career99-seasons p { margin-block: 6px; }
+.career99-seasons ul { margin: 0; padding-inline-start: 16px; }

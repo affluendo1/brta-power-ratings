@@ -11,7 +11,15 @@
     $('#teamCards').innerHTML='<div class="tl-team-tabs" role="tablist" aria-label="Teams">'+names.map((name,i)=>{const m=getModel(data,name);return '<button role="tab" id="teamTab-'+i+'" aria-controls="teamLabContent" type="button" class="subtab" data-tl-open="'+E(name)+'" aria-selected="false">'+T(name)+' – '+(m.position==null?'—':'#'+m.position)+'</button>'}).join('')+'</div>';
     if(names.length)open(names.includes(active)?active:names[0]);else $('#teamLabContent').innerHTML='<p class="notice">No teams recorded yet.</p>';
   }
-  function playerRow(p,index,m,emergency=false){return '<article class="tl-roster-row"><span class="tl-order">'+(emergency?'E':p.order??index+1)+'</span><div class="tl-player-copy">'+person(p.name)+'<small>'+p.appearances+' tie'+(p.appearances===1?'':'s')+'</small></div><div class="tl-player-power"><b>'+(p.singlesPower??p.doublesPower??'—')+'</b></div></article>'}
+  function playerRow(p,index,m,emergency=false){
+    const fillIn = emergency || p.emergencyDays.length > 0;
+    const slot = emergency ? '<span class="tl-order tl-empty-order" aria-hidden="true"></span>' :
+      '<span class="tl-order">'+(p.order??index+1)+'</span>';
+    return '<article class="tl-roster-row'+(fillIn?' tl-roster-emergency':'')+'">'+slot+
+      '<div class="tl-player-copy"><div class="tl-lineup-name">'+person(p.name)+(fillIn?emergencyPlayerMark():'')+
+      '</div><small>'+p.appearances+' tie'+(p.appearances===1?'':'s')+'</small></div><div class="tl-player-power"><b>'+
+      (p.singlesPower??p.doublesPower??'—')+'</b></div></article>';
+  }
   function pairPosition(m,p){const slots={};for(const day of m.days)for(const r of day.rubbers.filter(r=>r.type==='Doubles'))if(BRTATeamLab.pairKey(String(r[day.side]).split(' / '))===p.key){const n=Number(String(r.position).match(/\d+/)?.[0])||1;slots[n]=(slots[n]||0)+1}return Object.keys(slots).sort((a,b)=>slots[b]-slots[a])[0]||'—'}
   function doublesPanel(m){
    const configurations={};for(const day of m.days){const doubles=day.rubbers.filter(r=>r.type==='Doubles').sort((a,b)=>Number(String(a.position).match(/\d+/)?.[0])-Number(String(b.position).match(/\d+/)?.[0]));const combos=doubles.map(r=>String(r[day.side]).split(' / ').map(n=>{const single=day.rubbers.find(s=>s.type==='Singles'&&s[day.side]===n);return single?'S'+(String(single.position).match(/\d+/)?.[0]||'?'):'D-only'}).join(' + ')).join(' / ');if(combos)configurations[combos]=(configurations[combos]||0)+1}
@@ -19,10 +27,13 @@
   }
   function matrix(m){
     const players=[...new Map([...m.core,...m.emergencies,...m.historical].map(p=>[p.name,p])).values()];
-    if(!m.days.length)return'<p class="tl-empty">Round-by-round selections will appear when scorecards are published.</p>';
-    const heading=day=>roundHeading({round:day.round,label:day.label,stage:day.raw?.stage},true);
-    const head='<tr><th scope="col">Player</th>'+m.days.map(day=>'<th scope="col"><button type="button" data-tl-fixture="'+E(day.id)+'" '+(day.openable?'':'disabled')+'><b>'+E(heading(day))+'</b><small>'+E(day.opponent)+'</small></button></th>').join('')+'</tr>';
-    const body=players.map(p=>'<tr><th scope="row">'+person(p.name)+(p.emergencyOnly?'<span class="tl-matrix-cover">E</span>':'')+'</th>'+m.days.map(day=>{const pick=day.selected[p.name],label=pick?pick.roles.join(' · '):'—',title=pick?day.label+' · '+pick.roles.map(r=>r[0]==='S'?'Singles '+r.slice(1):'Doubles '+r.slice(1)).join(', ')+(pick.emergency?' · emergency':''):Object.keys(day.selected).length?'Not listed on this scorecard':'Selection not recorded · '+day.status;return'<td class="'+(pick?'tl-selected'+(pick.emergency?' tl-emergency-cell':''):'tl-not-selected')+'" title="'+E(title)+'">'+(pick?'<span aria-label="'+E(title)+'">'+E(label)+(pick.emergency?' <b>E</b>':'')+'</span>':'<span aria-label="'+E(title)+'">—</span>')+'</td>'}).join('')+'</tr>').join('');
+    const fixtures = BRTATeamLab.fixtures(m.data,m.team,true);
+    const scored = new Map(m.days.map(day=>[day.id+'|'+day.round,day]));
+    const days = fixtures.map(day=>scored.get(day.id+'|'+day.round)||day);
+    if(!days.length)return'<p class="tl-empty">Round-by-round selections will appear when scorecards are published.</p>';
+    const heading=day=>roundHeading({round:day.round,label:day.label,stage:day.raw?.stage},true).replace(/\s*[·–-]?\s*scheduled\b/gi,'').trim()||'—';
+    const head='<tr><th scope="col">Player</th>'+days.map(day=>'<th scope="col"><button type="button" data-tl-fixture="'+E(day.id)+'" '+(day.openable?'':'disabled')+'><b>'+E(heading(day))+'</b><small>'+E(day.opponent)+'</small></button></th>').join('')+'</tr>';
+    const body=players.map(p=>'<tr><th scope="row">'+person(p.name)+(p.emergencyOnly?emergencyPlayerMark():'')+'</th>'+days.map(day=>{const pick=day.selected[p.name],label=pick?pick.roles.join(' · '):'—',title=pick?day.label+' · '+pick.roles.map(r=>r[0]==='S'?'Singles '+r.slice(1):'Doubles '+r.slice(1)).join(', ')+(pick.emergency?' · emergency':''):Object.keys(day.selected).length?'Not listed on this scorecard':day.status==='Scheduled'?'Scheduled':'Selection not recorded · '+day.status;return'<td class="'+(pick?'tl-selected'+(pick.emergency?' tl-emergency-cell':''):'tl-not-selected')+'" title="'+E(title)+'">'+(pick?'<span aria-label="'+E(title)+'">'+E(label)+(pick.emergency?' <b>E</b>':'')+'</span>':'<span aria-label="'+E(title)+'">—</span>')+'</td>'}).join('')+'</tr>').join('');
     return'<p class="tl-matrix-legend"><span><i></i> Regular lineup</span><span><i class="tl-legend-emergency"></i> Emergency</span></p><div class="tl-matrix-wrap" tabindex="0" role="region" aria-label="Round-by-round player selections. Scroll horizontally for more rounds."><table class="tl-matrix"><thead>'+head+'</thead><tbody>'+body+'</tbody></table></div><p class="tl-muted">Choose a round to open its scorecard.</p>'+(m.days.some(d=>d.unknown.length||d.uncertainEmergency)?'<p class="tl-muted">Some source scorecards have unnamed players or emergency flags that do not identify a specific partner.</p>':'');
   }
   function pairs(m){

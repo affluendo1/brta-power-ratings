@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-theme="auto" data-interface="future" data-accent="yellow">
+<html lang="en" data-theme="dark" data-interface="future" data-accent="black">
 <head>
   <meta charset="utf-8">
   <script>
@@ -16,7 +16,7 @@
     }
   </script>
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <meta id="themeColor" name="theme-color" content="#101207">
+  <meta id="themeColor" name="theme-color" content="#101318">
   <meta name="application-name" content="BRTA Power Ratings">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -25,9 +25,9 @@
   <link rel="apple-touch-icon" sizes="180x180" href="assets/brta-icon-180.png?v=8521">
   <link rel="icon" type="image/png" sizes="192x192" href="assets/brta-icon-192.png">
   <link rel="manifest" href="manifest.webmanifest?v=8521">
-  <title>BRTA Power Ratings | Tennis Results &amp; Standings</title>
+  <title>BRTA Power Ratings · 9.9 Players Preview</title>
   <meta name="description" content="Check BRTA tennis results, fixtures, standings and player ratings across seven Melbourne competitions. Browse current and past seasons.">
-  <link rel="canonical" href="https://affluendo1.github.io/brta-power-ratings/">
+  <meta name="robots" content="noindex">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="BRTA Power Ratings">
   <meta property="og:title" content="BRTA Power Ratings | Tennis Results &amp; Standings">
@@ -44,13 +44,13 @@
     @media(prefers-reduced-motion:reduce){.auxiliary-reveal,.auxiliary-archive-button{animation:none}}
   </style>
   <script>
-    (function(){var m=localStorage.getItem('brta-interface')||'future',t=localStorage.getItem('brta-theme')||'auto',a=localStorage.getItem('brta-accent')||'yellow',d=t==='dark'||t==='black-plus'||t==='neon-plus'||(t==='auto'&&matchMedia('(prefers-color-scheme: dark)').matches),future=m!=='classic',c=future?(d?'#101109':'#f3f2e9'):(d?'#000000':'#c0c0c0'),l=document.createElement('link');document.documentElement.dataset.interface=m;document.documentElement.dataset.accent=a;document.documentElement.style.backgroundColor=c;document.documentElement.style.colorScheme=d?'dark':'light';document.getElementById('themeColor').content=c;l.id='siteStyles';l.rel='stylesheet';l.href=future?'web/styles/future.css?v=901':'web/styles/style.css?v=901';document.head.appendChild(l)})()
+    (function(){var m=localStorage.getItem('brta-interface')||'future',t=localStorage.getItem('brta-theme')||'dark',a=localStorage.getItem('brta-accent')||'black',d=t==='dark'||t==='black-plus'||t==='neon-plus'||(t==='auto'&&matchMedia('(prefers-color-scheme: dark)').matches),future=m!=='classic',c=future?(d?(a==='yellow'?'#101109':'#101318'):'#f3f2e9'):(d?'#000000':'#c0c0c0'),l=document.createElement('link');document.documentElement.dataset.interface=m;document.documentElement.dataset.accent=a;document.documentElement.dataset.theme=t;document.documentElement.style.backgroundColor=c;document.documentElement.style.colorScheme=d?'dark':'light';document.getElementById('themeColor').content=c;l.id='siteStyles';l.rel='stylesheet';l.href=future?'web/styles/future.css?v=901':'web/styles/style.css?v=901';document.head.appendChild(l)})()
   </script>
   <link rel="stylesheet" href="web/optional/collection.css?v=8521">
 <link rel="stylesheet" href="web/styles/custom-sections.css?v=9131">
 <link rel="stylesheet" href="web/styles/player-search.css?v=8521">
 <link rel="stylesheet" href="web/styles/team-lab.css?v=8521">
-<link rel="stylesheet" href="web/styles/changelog.css?v=911-past">
+<link rel="stylesheet" href="web/styles/changelog.css?v=990t">
 <link rel="stylesheet" href="web/optional/ambient.css?v=8521">
 <link rel="stylesheet" href="web/styles/layout.css?v=8521">
 <link rel="stylesheet" href="web/styles/polish.css?v=8521">
@@ -67,10 +67,12 @@
 <link rel="stylesheet" href="web/styles/clubs.css?v=901">
 <link rel="stylesheet" href="web/styles/model-vault.css?v=91011">
 <link rel="stylesheet" href="web/styles/archive-secret.css?v=9113">
-<link rel="stylesheet" href="web/styles/release91.css?v=9131">
+<link rel="stylesheet" href="web/styles/release91.css?v=990t">
 <link rel="stylesheet" href="web/styles/racquet-club.css?v=9112">
-<link rel="stylesheet" href="web/styles/navigation.css?v=914b">
+<link rel="stylesheet" href="web/styles/navigation.css?v=990t">
 <link rel="stylesheet" href="web/styles/tutorials.css?v=914">
+<link rel="stylesheet" href="web/styles/players.css?v=990v">
+<link rel="stylesheet" href="web/styles/career-history.css?v=990-full">
 </head>
 <body>
 <header class="site-header">
@@ -113,7 +115,7 @@
   <nav class="main-nav" aria-label="Main navigation">
     <button class="main-tab active" data-page="results">Results</button>
     <button class="main-tab" data-page="standings">Standings</button>
-    <button class="main-tab" data-page="ratings">Ratings</button>
+    <button class="main-tab" data-page="ratings">Players</button>
     <button class="main-tab" data-page="teams">Clubs</button>
     <button class="main-tab" data-page="fixtures">Fixtures</button>
   </nav>
@@ -177,7 +179,7 @@
 <div id="modeSwitchOverlay" class="mode-switch hidden" role="dialog" aria-modal="true" aria-labelledby="loadingTitle" tabindex="-1" data-ms-cutscene><div class="mode-switch-box"><div class="progress-ring" id="progressRing" role="progressbar" aria-labelledby="loadingTitle" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div><b id="progressPct" aria-hidden="true">0%</b></div></div><h2 id="loadingTitle">Loading</h2><p id="switchStatus" role="status">Getting ready…</p></div></div>
 <div id="installSettingsStash" hidden><button id="installBtn" class="button secondary" type="button" aria-haspopup="dialog" aria-controls="installOverlay">Install app</button></div>
 <div id="syncToastHost" class="sync-toast-host" aria-live="polite" aria-atomic="true"></div>
-<script src="web/core/activity.js?v=91b2"></script>
+<script src="web/core/activity.js?v=990t"></script>
 <script src="web/core/dialogs.js?v=914"></script>
 <script src="data.js?v=8521"></script>
 <script src="web/models/player-display.js?v=8541"></script>
@@ -193,23 +195,23 @@
 <script src="web/models/custom-section-tools.js?v=9131"></script>
 <script src="web/models/export-853.js?v=91011"></script>
 <script src="web/features/custom-sections.js?v=9131"></script>
-<script src="web/features/player-search.js?v=9113"></script>
-<script src="web/models/team-lab.js?v=8521"></script>
-<script src="web/features/team-lab-ui.js?v=900"></script>
-<script src="web/features/changelog-data.js?v=914"></script>
+<script src="web/features/player-search.js?v=990t"></script>
+<script src="web/models/team-lab.js?v=990t"></script>
+<script src="web/features/team-lab-ui.js?v=990t"></script>
+<script src="web/features/changelog-data.js?v=990r"></script>
 <script src="extras/past-software/releases.js?v=9111"></script>
-<script src="web/features/changelog.js?v=9113"></script>
+<script src="web/features/changelog.js?v=990t"></script>
 <script src="web/optional/parameters.js?v=8521"></script>
 <script src="web/optional/presentation.js?v=8521"></script>
 <script src="web/models/layout-model.js?v=9123"></script>
 <script src="web/features/maps.js?v=8521"></script>
-<script src="web/features/waiting-game.js?v=91"></script>
+<script src="web/features/waiting-game.js?v=990t"></script>
 <script src="web/models/rm4.js?v=9113"></script>
 <script src="web/models/rm4-engine.js?v=9113"></script>
 <script src="web/models/orchestra-fit.js?v=8521"></script>
 <script src="web/models/orchestra.js?v=audit2"></script>
 <script src="web/models/site-routes.js?v=9101"></script>
-<script src="web/core/app.js?v=9131p"></script>
+<script src="web/core/app.js?v=990t"></script>
 <script src="web/core/layout.js?v=913b"></script>
 <script src="web/features/confetti.js?v=8521"></script>
 <script src="web/features/archive.js?v=901"></script>
@@ -232,11 +234,11 @@
 <script src="web/features/club-map.js?v=901"></script>
 <script src="web/models/matchday.js?v=913"></script>
 <script src="web/features/matchday.js?v=9132"></script>
-<script src="web/features/following.js?v=9132"></script>
+<script src="web/features/following.js?v=990t"></script>
 <script src="web/features/share-cards.js?v=9123e"></script>
 <script src="web/features/competition-formats.js?v=9121"></script>
 <script src="web/features/pair-search.js?v=901"></script>
-<script src="web/features/team-explorer.js?v=900"></script>
+<script src="web/features/team-explorer.js?v=990u"></script>
 <script src="web/features/extras-refinement.js?v=8521"></script>
 <script src="web/features/rm4-ui.js?v=9121"></script>
 <script src="web/features/reading-pages.js?v=8521"></script>
@@ -262,7 +264,13 @@
 <script src="web/optional/round-zero.js?v=9111"></script>
 <script src="web/models/racquet-club.js?v=9123b"></script>
 <script src="web/features/racquet-club.js?v=9131"></script>
-<script src="web/features/tutorials.js?v=914"></script>
-<script src="web/features/navigation.js?v=914b"></script>
+<script src="web/features/tutorials.js?v=990t"></script>
+<script src="web/features/navigation.js?v=990t"></script>
+<script src="web/models/player-careers.js?v=990t"></script>
+<script src="web/features/player-rating-controls.js?v=990t"></script>
+<script src="web/features/player-following.js?v=990t"></script>
+<script src="web/features/career-history.js?v=990-full"></script>
+<script src="web/features/players.js?v=990w"></script>
+
 </body>
 </html>

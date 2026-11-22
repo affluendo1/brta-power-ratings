@@ -6,7 +6,35 @@
   const status = document.getElementById('switchStatus');
   const heading = overlay.querySelector('h2');
   const pending = new Set();
-  let visible, returnFocus, stopGame;
+  let visible, returnFocus, stopGame, frame = 0, shown = 0, target = -1;
+  const reduced = matchMedia('(prefers-reduced-motion: reduce)');
+  const animationsOff = () => reduced.matches || localStorage.getItem('brta-animations') === 'off';
+  function present(value) {
+    ring.style.setProperty('--progress', value * 3.6 + 'deg');
+    const display = Math.floor(value);
+    if (percent.firstChild?.nodeType === 3) percent.firstChild.data = display + '%';
+    else percent.textContent = display + '%';
+    if (ring.getAttribute('aria-valuenow') !== String(display)) ring.setAttribute('aria-valuenow', String(display));
+  }
+  function advance(value) {
+    if (value === target) return;
+    target = value;
+    cancelAnimationFrame(frame);
+    if (document.hidden || animationsOff() || value <= shown) {
+      shown = value;
+      present(shown);
+      return;
+    }
+    const initial = shown, start = performance.now();
+    const duration = value === 100 ? 160 : 310;
+    const tick = time => {
+      const step = Math.min(1, (time - start) / duration);
+      shown = initial + (value - initial) * (1 - (1 - step) ** 3);
+      present(shown);
+      if (step < 1) frame = requestAnimationFrame(tick);
+    };
+    frame = requestAnimationFrame(tick);
+  }
 
   function draw() {
     const next = [...pending].filter(job => job.ready).sort((a, b) => a.priority - b.priority).at(-1);
@@ -15,6 +43,10 @@
       stopGame?.();
       stopGame = null;
       visible = null;
+      cancelAnimationFrame(frame);
+      shown = 0;
+      target = -1;
+      present(0);
       overlay.classList.add('hidden');
       if (restore && returnFocus?.isConnected) returnFocus.focus({ preventScroll: true });
       returnFocus = null;
@@ -23,14 +55,15 @@
     const opening = !visible;
     if (visible !== next) {
       stopGame?.();
-      stopGame = next.game ? root.BRTAWaitingGame?.mount(overlay, 4000) : null;
+      stopGame = root.BRTAWaitingGame?.mount(overlay, Math.max(0, 3000 - (performance.now() - next.started)));
+      shown = 0;
+      target = -1;
+      present(0);
     }
     visible = next;
-    heading.textContent = next.title;
-    status.textContent = next.message;
-    ring.style.setProperty('--progress', next.percent * 3.6 + 'deg');
-    ring.setAttribute('aria-valuenow', String(next.percent));
-    percent.textContent = next.percent + '%';
+    if (heading.textContent !== next.title) heading.textContent = next.title;
+    if (status.textContent !== next.message) status.textContent = next.message;
+    advance(next.percent);
     overlay.classList.remove('hidden');
     if (opening) {
       returnFocus = document.activeElement;
@@ -50,8 +83,8 @@
     });
   }
 
-  async function run(title, work, { priority = 0, message = 'Getting ready…', key = priority ? 'navigation' : null, game = false } = {}) {
-    const job = { title, message, percent: 0, priority, key, game, ready: false };
+  async function run(title, work, { priority = 0, message = 'Getting ready…', key = priority ? 'navigation' : null } = {}) {
+    const job = { title, message, percent: 2, priority, key, started: performance.now(), ready: false };
     if (key) for (const previous of pending) {
       if (previous.key !== key) continue;
       job.ready ||= visible === previous;
@@ -67,7 +100,7 @@
     const task = {
       stage(value, label) {
         if (!pending.has(job)) return;
-        job.percent = Math.max(job.percent, Math.min(99, value));
+        job.percent = Math.max(job.percent, Math.min(99, Math.round(value)));
         job.message = label;
         if (visible === job) draw();
       },
@@ -79,7 +112,8 @@
         job.percent = 100;
         job.message = 'Ready';
         draw();
-        await paint();
+        if (!document.hidden && !animationsOff()) await new Promise(resolve => setTimeout(resolve, 170));
+        else await paint();
       }
       return result;
     } finally {

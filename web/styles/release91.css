@@ -468,17 +468,17 @@ html[data-animation="off"] .profile-head h2.player-lab-rainbow { animation: none
 }
 :is(.band-key,.band-divider):is(.b18,.b19) i { background:var(--band); }
 tr:not(.band-divider):is(.b18,.b19) > td:first-child { box-shadow:inset 3px 0 var(--band); }
-#profileOverlay:has(.lab-performance-band.b18) {
+#profileOverlay:has(#profileContent:not([hidden]) .lab-performance-band.b18) {
   --lab-accent:#ad73ff;
   --lab-light:#e571e2;
   --lab-deep:#5c40c5;
 }
-#profileOverlay:has(.lab-performance-band.b19):not(:has(.lab-performance-band.b18)) {
+#profileOverlay:has(#profileContent:not([hidden]) .lab-performance-band.b19):not(:has(#profileContent:not([hidden]) .lab-performance-band.b18)) {
   --lab-accent:#e25567;
   --lab-light:#fd8c69;
   --lab-deep:#9d2647;
 }
-#profileOverlay:has(.lab-performance-band:is(.b18,.b19)) :is(.profile-sheet,.profile-match-explorer) {
+#profileOverlay:has(#profileContent:not([hidden]) .lab-performance-band:is(.b18,.b19)) :is(.profile-sheet,.profile-match-explorer) {
   --surface-raised:color-mix(in srgb,var(--surface) 80%,var(--lab-deep));
   --border-color:color-mix(in srgb,var(--surface) 58%,var(--lab-accent));
   --lab-accent-text:color-mix(in srgb,var(--text-color) 76%,var(--lab-accent));
@@ -491,14 +491,14 @@ tr:not(.band-divider):is(.b18,.b19) > td:first-child { box-shadow:inset 3px 0 va
   background-repeat:no-repeat;
   box-shadow:inset 0 0 0 1px var(--border-color),inset 0 0 42px color-mix(in srgb,transparent 87%,var(--lab-accent)),0 18px 52px #0005;
 }
-#profileOverlay:has(.lab-performance-band:is(.b18,.b19)) :is(.profile-head,.lab8-hero,.lab-hero) {
+#profileOverlay:has(#profileContent:not([hidden]) .lab-performance-band:is(.b18,.b19)) :is(.profile-head,.lab8-hero,.lab-hero) {
   border-bottom-color:var(--lab-accent);
 }
-#profileOverlay:has(.lab-performance-band:is(.b18,.b19)) :is(.lab8-power,.lab-power) strong {
+#profileOverlay:has(#profileContent:not([hidden]) .lab-performance-band:is(.b18,.b19)) :is(.lab8-power,.lab-power) strong {
   color:var(--lab-accent-text);
   text-shadow:0 0 16px color-mix(in srgb,transparent 52%,var(--lab-accent));
 }
-#profileOverlay:has(.lab-performance-band:is(.b18,.b19)) :is(.lab8-highlights,.lab8-overall,.lab8-insights .lab-metric) {
+#profileOverlay:has(#profileContent:not([hidden]) .lab-performance-band:is(.b18,.b19)) :is(.lab8-highlights,.lab8-overall,.lab8-insights .lab-metric) {
   background-color:var(--surface-raised);
 }
 #ratingBody tr:not(.band-divider):is(.b18,.b19) > td { background-color:transparent; }
@@ -508,7 +508,7 @@ tr:not(.band-divider):is(.b18,.b19) > td:first-child { box-shadow:inset 3px 0 va
  html:not([data-animation="off"]) :is(.band-key.b18,.band-key.b19,tr.b18,tr.b19) {
    animation:rare-band-sweep 8s ease-in-out infinite alternate;
  }
- html:not([data-animation="off"]) #profileOverlay:has(.lab-performance-band:is(.b18,.b19)) :is(.profile-sheet,.profile-match-explorer) {
+ html:not([data-animation="off"]) #profileOverlay:has(#profileContent:not([hidden]) .lab-performance-band:is(.b18,.b19)) :is(.profile-sheet,.profile-match-explorer) {
    animation:rare-lab-sweep 9s ease-in-out infinite alternate;
  }
  @keyframes rare-band-sweep { to { background-position:100% 0; } }
@@ -623,41 +623,41 @@ html[data-theme="light"] #settingsBtn {
 html[data-theme="light"] #settingsBtn:is(:hover,:focus-visible) { background: #e1e5f0; }
 
 :is(.band-key,.band-divider,tr).b18,
-#profileOverlay:has(.lab-performance-band.b18) {
+#profileOverlay:has(#profileContent:not([hidden]) .lab-performance-band.b18) {
   --rare-ink: #f2e8ff;
   --rare-surface: #211332;
   --rare-accent: #cca4ff;
   --rare-deep: #503280;
 }
 :is(.band-key,.band-divider,tr).b19,
-#profileOverlay:has(.lab-performance-band.b19):not(:has(.lab-performance-band.b18)) {
+#profileOverlay:has(#profileContent:not([hidden]) .lab-performance-band.b19):not(:has(#profileContent:not([hidden]) .lab-performance-band.b18)) {
   --rare-ink: #ffeded;
   --rare-surface: #301619;
   --rare-accent: #ffa1a4;
   --rare-deep: #722d36;
 }
 html[data-theme="light"] :is(.band-key,.band-divider,tr).b18,
-html[data-theme="light"] #profileOverlay:has(.lab-performance-band.b18) {
+html[data-theme="light"] #profileOverlay:has(#profileContent:not([hidden]) .lab-performance-band.b18) {
   --rare-ink: #281244;
   --rare-surface: #f6efff;
   --rare-accent: #6332a2;
   --rare-deep: #d8bdf8;
 }
 html[data-theme="light"] :is(.band-key,.band-divider,tr).b19,
-html[data-theme="light"] #profileOverlay:has(.lab-performance-band.b19):not(:has(.lab-performance-band.b18)) {
+html[data-theme="light"] #profileOverlay:has(#profileContent:not([hidden]) .lab-performance-band.b19):not(:has(#profileContent:not([hidden]) .lab-performance-band.b18)) {
   --rare-ink: #441416;
   --rare-surface: #fff0ef;
   --rare-accent: #9d303c;
   --rare-deep: #fac5c9;
 }
 html[data-theme="neon-plus"] :is(.band-key,.band-divider,tr).b18,
-html[data-theme="neon-plus"] #profileOverlay:has(.lab-performance-band.b18) {
+html[data-theme="neon-plus"] #profileOverlay:has(#profileContent:not([hidden]) .lab-performance-band.b18) {
   --rare-surface: #160925;
   --rare-accent: #e0adff;
   --rare-deep: #54269b;
 }
 html[data-theme="neon-plus"] :is(.band-key,.band-divider,tr).b19,
-html[data-theme="neon-plus"] #profileOverlay:has(.lab-performance-band.b19):not(:has(.lab-performance-band.b18)) {
+html[data-theme="neon-plus"] #profileOverlay:has(#profileContent:not([hidden]) .lab-performance-band.b19):not(:has(#profileContent:not([hidden]) .lab-performance-band.b18)) {
   --rare-surface: #270a12;
   --rare-accent: #ffa0b6;
   --rare-deep: #801934;
@@ -670,7 +670,7 @@ html[data-theme="neon-plus"] #profileOverlay:has(.lab-performance-band.b19):not(
   color: var(--rare-ink);
 }
 #ratingBody tr:is(.b18,.b19) :is(.person,.club-link,.team-colour) { color: var(--rare-ink); }
-#profileOverlay:has(.lab-performance-band:is(.b18,.b19)) :is(.profile-sheet,.profile-match-explorer) {
+#profileOverlay:has(#profileContent:not([hidden]) .lab-performance-band:is(.b18,.b19)) :is(.profile-sheet,.profile-match-explorer) {
   --primary: var(--rare-accent);
   --primary-ink: var(--rare-surface);
   --accent-color: var(--rare-accent);
@@ -684,6 +684,6 @@ html[data-theme="neon-plus"] #profileOverlay:has(.lab-performance-band.b19):not(
   --table-row-alt: color-mix(in srgb,var(--rare-surface) 83%,var(--rare-deep));
   color: var(--rare-ink);
 }
-#profileOverlay:has(.lab-performance-band:is(.b18,.b19)) :is(.profile-sheet,.profile-match-explorer) :is(.person,.team-colour) {
+#profileOverlay:has(#profileContent:not([hidden]) .lab-performance-band:is(.b18,.b19)) :is(.profile-sheet,.profile-match-explorer) :is(.person,.team-colour) {
   color: var(--rare-accent);
 }

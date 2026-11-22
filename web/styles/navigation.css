@@ -33,7 +33,7 @@
 #navigationResults button b { font-size: 15px; font-weight: 650; }
 #navigationResults button small { font-size: 13px; }
 .nav-chevron { width: 7px; height: 7px; border-top: 1.5px solid currentColor; border-right: 1.5px solid currentColor; transform: rotate(45deg); opacity: .5; flex: none; }
-@media(min-width: 901px) { #quickNavigationBtn { position: fixed; z-index: 24; top: 12px; right: 12px; width: 42px; height: 42px; padding: 0; border-radius: 50%; background: var(--surface-raised, Canvas); color: var(--text-color); box-shadow: 0 3px 16px #0002; } #quickNavigationBtn span { display: none; } .site-header { padding-right: 70px; } }
+@media(min-width: 901px) { #quickNavigationBtn { position: fixed; z-index: 24; top: 12px; left: 12px; width: 42px; height: 42px; padding: 0; border-radius: 50%; background: var(--surface-raised, Canvas); color: var(--text-color); box-shadow: 0 3px 16px #0002; } #quickNavigationBtn span { display: none; } .site-header { padding-right: 70px; } }
 @media(max-width: 900px) { #quickNavigationBtn { position: static; padding: 9px 12px; font-size: 13px; } }
 .site-header #settingsBtn { color: var(--header-ink, #fff); background: var(--header-hover, #272b1a); border-color: var(--header-border, #6a7138); }
 #returnLiveSection { display: none !important; }
@@ -134,4 +134,20 @@
 }
 @media (max-width: 900px) and (max-height: 440px) {
   .navigation-sheet footer, #navigationOverlay :is(#navigationIntro, #navigationCrumbs) { display: none; }
+}
+
+.navigation-sheet :is(.navigation-search, #navigationResults, .navigation-default-form)[hidden] { display: none; }
+.navigation-default-form { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; padding-block: 8px; }
+.navigation-default-form label { display: grid; gap: 6px; font-weight: 700; min-width: 0; }
+.navigation-default-form select { width: 100%; min-height: 44px; font-size: 16px; }
+.navigation-default-form > button { grid-column: 1 / -1; min-height: 44px; }
+@media (max-width: 480px) { .navigation-default-form { grid-template-columns: 1fr; } }
+#navigationOverlay.navigation-choosing-default :is(#navigationCrumbs, .navigation-sheet footer) { display: none; }
+
+.navigation-default-form .section-choice, .navigation-default-form .choice-trigger { width: 100%; min-width: 0; }
+.navigation-choosing-default .navigation-sheet { overflow: auto; min-height: min(440px, 82dvh); }
+.navigation-default-form .choice-options { max-height: min(235px, 44dvh); }
+
+@media(min-width: 901px) {
+  .site-header:has(#quickNavigationBtn) { padding-inline-start: max(66px,calc((100vw - 1260px)/2)); }
 }

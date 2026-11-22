@@ -19,7 +19,8 @@ const canvas={clearRect(){},fillRect(){},scale(){},stroke(){},beginPath(){},move
 w.HTMLCanvasElement.prototype.getContext=()=>canvas;w.HTMLMediaElement.prototype.play=()=>Promise.resolve();w.HTMLMediaElement.prototype.pause=function(){};w.HTMLMediaElement.prototype.load=function(){};
 w.confirm=()=>true;
 w.localStorage.setItem('brta-following-v1',JSON.stringify({pins:[null,{},false],pending:[null,{}]}));
-w.fetch=async url=>{const file=path.join(ROOT,new URL(url,w.document.baseURI).pathname.replace('/brta-power-ratings/',''));if(!fs.existsSync(file))return {ok:false,status:404,json:async()=>null};return{ok:true,json:async()=>JSON.parse(fs.readFileSync(file,'utf8'))}};
+w.DecompressionStream=global.DecompressionStream;w.Response=global.Response;
+w.fetch=async url=>{const file=path.join(ROOT,new URL(url,w.document.baseURI).pathname.replace('/brta-power-ratings/',''));if(file.endsWith('.json.gz')&&fs.existsSync(file))return new Response(fs.readFileSync(file));if(!fs.existsSync(file))return {ok:false,status:404,json:async()=>null};return{ok:true,json:async()=>JSON.parse(fs.readFileSync(file,'utf8'))}};
 w.Worker=require('../fixtures/rating-worker.cjs');
 const ctx=dom.getInternalVMContext();
 for(const s of [...w.document.scripts]){try{vm.runInContext(s.src?fs.readFileSync(path.join(ROOT,new URL(s.src).pathname.replace('/brta-power-ratings/','')),'utf8'):s.textContent,ctx,{filename:s.src||'bootstrap'})}catch(e){errors.push(e.stack)}}
@@ -31,7 +32,7 @@ const esc=()=>w.dispatchEvent(new w.KeyboardEvent('keydown',{key:'Escape',bubble
 click('#settingsBtn');await tick();click('#installBtn');await tick();esc();await tick();assert(w.document.querySelector('#installOverlay').classList.contains('hidden'));assert(!w.document.querySelector('#settingsOverlay').classList.contains('hidden'));assert.equal(w.document.activeElement.id,'installBtn');console.log('Install Escape preserves Settings and restores focus');
 click('[data-layout-open="methodology"]');await tick();esc();await tick();assert(w.document.querySelector('#layoutOverlay').classList.contains('hidden'));assert(!w.document.querySelector('#settingsOverlay').classList.contains('hidden'));assert(!w.document.querySelector('#settingsOverlay').inert);console.log('Methodology Escape restores interactive Settings');
 click('[data-studio="theme"]');await tick();esc();await tick();assert(w.document.querySelector('#themeStudioOverlay').classList.contains('hidden'));assert(!w.document.querySelector('#settingsOverlay').classList.contains('hidden'));console.log('Theme creator Escape preserves Settings');
-click('[data-changelog-open]');await tick();assert.equal(w.document.querySelector('.release-heading h3').textContent,'9.0');esc();await tick();assert(w.document.querySelector('#changelogOverlay').classList.contains('hidden'));assert(!w.document.querySelector('#settingsOverlay').classList.contains('hidden'));console.log('Changelog Escape restores Settings');esc();await tick();
+click('[data-changelog-open]');await tick();assert.equal(w.document.querySelector('.release-heading h3').textContent,w.BRTA_RELEASES.find(release=>release.size==='major').version);esc();await tick();assert(w.document.querySelector('#changelogOverlay').classList.contains('hidden'));assert(!w.document.querySelector('#settingsOverlay').classList.contains('hidden'));console.log('Changelog Escape restores Settings');esc();await tick();
 click('#roundBtn');await tick();assert(w.document.querySelector('.latest-highlights').textContent.includes('Top team performance'));click('[data-82-result]');await tick();assert(!w.document.querySelector('#resultOverlay').classList.contains('hidden'));assert.equal(w.document.querySelectorAll('.result-detail-head [data-club-team]').length,2);esc();await tick();assert(w.document.querySelector('#resultOverlay').classList.contains('hidden'));assert(w.document.querySelector('.rounds821-overlay'));
 const resultContent=w.document.querySelector('#resultOverlay .result-scroll'),resultSheet=resultContent.closest('.result-sheet');
 assert(w.document.querySelector('#resultShare:not([hidden]) svg'),'Share uses an SVG in the result toolbar.');
@@ -44,6 +45,15 @@ assert.equal(resultSheet.scrollTop,0,'Opening a result clears the desktop scroll
 esc();await tick();esc();await tick();assert(!w.document.querySelector('.release82-overlay'));console.log('Rounds result resets scroll and Escape preserves its parent');
 vm.runInContext("BRTA82.modal('Rounds test','',true).classList.add('rounds821-overlay');BRTA82.modal('First child','');BRTA82.modal('Replacement child','')",ctx);await tick();assert.equal(w.document.querySelectorAll('.release82-overlay').length,2);esc();await tick();assert.equal(w.document.querySelectorAll('.release82-overlay').length,1);esc();await tick();assert.equal(w.document.querySelectorAll('.release82-overlay').length,0);console.log('Replacing a shared child retains exactly one Rounds parent');
 click('.main-tab[data-page="ratings"]');click('#ratingBody [data-player]');await tick();assert(!w.document.querySelector('#profileOverlay').classList.contains('hidden'));vm.runInContext("openProfile(D.singles[1].player)",ctx);await tick();assert.equal(w.document.querySelector('#profileOverlay .profile-sheet').getAttribute('aria-label'),w.document.querySelector('#profileContent h2').textContent);click('[data-eight-split]');await tick();esc();await tick();assert(w.document.querySelector('#lab8Overlay').classList.contains('hidden'));assert(!w.document.querySelector('#profileOverlay').classList.contains('hidden'));esc();await tick();console.log('Player Lab drilldown Escape preserves lab');
+
+vm.runInContext("openProfile('Jayden Bone')",ctx);
+click('[data-lab-scope="career"]');
+for(let i=0;i<200&&!w.document.querySelector('.career99-chart svg');i++)await tick();
+const career=w.document.querySelector('.career99');
+assert(career,'Current player lab has a Career scope');
+assert(career.querySelector('.career99-chart svg'),'Published matches produce a career timeline: '+career.textContent);
+assert(career.querySelector('.career99-awards article'),'Best-season categories display for a player with rated matches');
+esc();await tick();console.log('Player Lab loads the career timeline and season awards from the archive');
 
 const singleGraph=vm.runInContext("lab8Graph('singles',Object.keys(D.ratingHistory.players)[0],'Singles',1)",ctx);assert(singleGraph.includes('<circle '));console.log('Single-observation chart contains a visible point');
 vm.runInContext("openProfile(D.singles.find(row=>D.doublesIndividuals.some(other=>other.player===row.player)).player)",ctx);
@@ -83,13 +93,25 @@ assert(w.document.querySelector('#modeSwitchOverlay').classList.contains('hidden
 await w.BRTAActivity.run('Cached test',()=>true);
 assert(w.document.querySelector('#modeSwitchOverlay').classList.contains('hidden'));
 console.log('The wheel follows actual work with animations off and skips instant operations');
-const fetchBefore=w.fetch;w.fetch=async url=>String(url).includes('rating-search.json')?{ok:true,json:async()=>({all:{singles:[]},ranked:{singles:[]},sections:[]})}:fetchBefore(url);
-vm.runInContext("ratingScope='history';ratingView='singles';$('#search').value=':highest-rating';renderRatings()",ctx);await tick();assert(w.document.querySelector('#ratingBody').textContent.includes('No eligible entries.'));assert(!w.document.querySelector('#ratingBody').textContent.includes('Loading'));console.log('An empty resolved historical command has an empty state, not perpetual loading');
+click('[data-players-view="history"]');
+const careerSearch=w.document.querySelector('#careerSearch');
+careerSearch.value='Jayden Bnoe';
+careerSearch.dispatchEvent(new w.Event('input',{bubbles:true}));
+for(let i=0;i<100&&!w.document.querySelector('[data-career-result]');i++)await tick();
+assert(w.document.querySelector('#careerSearchResults').textContent.includes('Jayden Bone'));
+assert(w.document.querySelector('#careerSearchStatus').textContent.includes('possible matches'));
+console.log('Players directory reports an identifiable typo match');
 vm.runInContext("ratingScope='section';$('#search').value='';renderRatings()",ctx);
 click('#settingsBtn');await tick();click('#showExtrasBtn');await tick();click('[data-more-settings]');await tick();esc();await tick();assert(w.document.querySelector('#moreSettingsOverlay').classList.contains('hidden'));assert(!w.document.querySelector('#settingsOverlay').classList.contains('hidden'));console.log('More Settings gate uses its own Escape cleanup and restores Settings');esc();await tick();
 
-vm.runInContext("D.meta.ratingModel='V3B';D.meta.predictionModel='RM3b';D.singles[0].rating+=100;openProfile(D.singles[0].player)",ctx);await tick();click('#profileContent [data-follow82-kind]');await tick();const pinned=JSON.parse(w.localStorage.getItem('brta-following-v1')).pins[0];assert.equal(pinned.ratingModel,'V3B');
-const modelBefore=w.layoutApplyModel;w.layoutApplyModel=async(data,model)=>{assert.equal(model,'RM3b');const copy=await modelBefore(data,'RM3');copy.meta.ratingModel='V3B';copy.meta.predictionModel='RM3b';copy.singles.find(r=>r.player===pinned.name).rating+=100;return copy};await w.BRTAFollowing.check();const afterCheck=JSON.parse(w.localStorage.getItem('brta-following-v1')).pins[0];assert.equal(afterCheck.ratingChange,0);assert.equal(afterCheck.summary.rating,pinned.summary.rating);w.layoutApplyModel=modelBefore;esc();await tick();esc();await tick();console.log('Following discards malformed pins and compares RM3b summaries within the same model');
+vm.runInContext("openProfile('Jayden Bone')",ctx);
+for(let i=0;i<80&&!w.document.querySelector('#profileContent [data-player-follow]');i++)await tick();
+click('#profileContent [data-player-follow]');await tick();
+assert(JSON.parse(w.localStorage.getItem('brta-association-following-v1')).pins.some(pin=>pin.name==='Jayden Bone'));
+esc();await tick();
+click('[data-following-open]');await tick();
+assert(w.document.querySelector('#playersFollowing').textContent.includes('Jayden Bone'));
+esc();await tick();console.log('Following adds a player from the Lab and shows them in the Players dialog');
 
 await vm.runInContext("(async()=>{ratingScope='section';ratingView='singles';await loadSection('TN003');openProfile(dinds[0].player)})()",ctx);await tick();
 assert(w.document.querySelector('[data-rating="singles"]').hidden);assert(w.document.querySelector('[data-rating="overall"]').hidden);

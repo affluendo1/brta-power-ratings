@@ -1,6 +1,21 @@
 // Website releases, newest first. Routine result checks are not website releases.
 // Retrospective entries use source-commit timestamps; sourceCommit records their provenance.
 window.BRTA_RELEASES = Object.freeze([
+{
+  "version": "9.9",
+  "size": "major",
+  "title": "Players through time",
+  "committedAt": "2026-11-22T14:00:00+11:00",
+  "changes": [
+    "Players brings together section ratings, team lineups and searchable career records.",
+    "Open any player’s Career Lab directly from Quick Nav, or set your default section in one screen.",
+    "Player Lab compares section progression with BRTA peers, shows rivalry scorecards and applies the selected rating model to historical Power.",
+    "Follow active players across competitions and keep a watch list for returning players.",
+    "One career graph includes every recorded competition, with season awards and competition-specific records.",
+    "Ratings and team lineups gain better filters, Power sorting and typo suggestions. Career Labs show team ladder positions and improvement pace.",
+    "A simpler Default Section picker, a revised Players tutorial, smoother loading, and clearer Club and Prediction Centre layouts."
+  ]
+},
   {
     "version": "9.1.4",
     "size": "small",

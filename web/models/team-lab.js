@@ -7,16 +7,16 @@
   const powerSort=kind=>(a,b)=>(strength(b,kind)??-Infinity)-(strength(a,kind)??-Infinity)||b.appearances-a.appearances||a.name.localeCompare(b.name);
   function rules(data){const r=data.meta?.customRules||data.meta?.competition_rules;return{singles:r?.singlesSlots??(data.format==='rubbers'?2:4),doubles:r?.doublesSlots??(data.format==='rubbers'?1:2)}}
   function teamNames(data){return [...new Set([...(data.standings||[]).map(x=>x.team),...(data.teams||[]).map(x=>x.team),...(data.customRoster||[]).map(x=>x.team)].filter(Boolean))]}
-  function fixtures(data,team){
+  function fixtures(data,team,includeScheduled=false){
     const map=new Map();
     // results contain the authoritative scorecards; the schedule adds washouts/byes.
     for(const collection of [data.results||[],data.upcomingFixtures||[]])for(const group of collection)for(const f of group.fixtures||[]){
       if(f.home!==team&&f.away!==team)continue;
-      if(f.status==='Scheduled')continue;
+      if(f.status==='Scheduled'&&!includeScheduled)continue;
       const key=f.fixtureId||[group.round,f.home,f.away].join('|');
       if(map.has(key))continue;
       const side=f.home===team?'home':'away',other=side==='home'?'away':'home';
-      map.set(key,{id:f.fixtureId||'',openable:(data.results||[]).some(g=>(g.fixtures||[]).some(r=>r.fixtureId===f.fixtureId)),round:Number(group.round??f.round)||0,label:group.label||f.label||'Round '+group.round,date:group.date||f.date||'',status:f.status,side,opponent:f[other],rubbers:f.rubbers||[],raw:f,selected:{},unknown:[]});
+      map.set(key,{id:f.fixtureId||'',openable:f.status!=='Scheduled'&&(data.results||[]).some(g=>(g.fixtures||[]).some(r=>r.fixtureId===f.fixtureId)),round:Number(group.round??f.round)||0,label:group.label||f.label||'Round '+group.round,date:group.date||f.date||'',status:f.status,side,opponent:f[other],rubbers:f.rubbers||[],raw:f,selected:{},unknown:[]});
     }
     return [...map.values()].sort((a,b)=>a.round-b.round||String(a.date).localeCompare(String(b.date))||a.id.localeCompare(b.id));
   }
@@ -130,5 +130,5 @@
     const order=[...chosen].sort((a,b)=>(a.order??a.averagePosition??99)-(b.order??b.averagePosition??99)||a.name.localeCompare(b.name));
     return{singles:order.map(p=>p.name),pairs:best.pairs,roster,finals,limited:limit<extra.length||doubles>3,attempts,provisional:chosen.some(p=>p.singlesEvidence<4),estimatedPairs:best.pairs.some(p=>!p.observed||p.fallback),score:best.score};
   }
-  const api={build,teamNames,rules,pairKey,suggest,pairProjection};root.BRTATeamLab=api;if(typeof module!=='undefined')module.exports=api;
+  const api={build,fixtures,teamNames,rules,pairKey,suggest,pairProjection};root.BRTATeamLab=api;if(typeof module!=='undefined')module.exports=api;
 })(typeof window!=='undefined'?window:globalThis);

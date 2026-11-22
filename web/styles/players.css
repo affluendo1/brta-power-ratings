@@ -1,0 +1,485 @@
+.players-search-panel p, .career-head p, .career-search-row p, .career-appearance p { margin: 5px 0 0; color: var(--muted-color); }
+.players-eyebrow { color: var(--primary); font-size: 11px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+.players-switch { display: inline-flex; flex-wrap: wrap; gap: 3px; padding: 3px; border: 1px solid var(--border-color); border-radius: 8px; background: var(--surface); }
+.players-switch button { background: transparent; border: 1px solid transparent; border-radius: 5px; color: var(--muted-color); font: inherit; font-size: 14px; font-weight: 700; min-height: 41px; padding: 7px 13px; cursor: pointer; }
+.players-switch button[aria-pressed="true"] { color: var(--text-color); background: var(--surface-raised); border-color: var(--border-color); box-shadow: inset 0 -2px var(--primary); }
+.players-switch button:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+.players-directory[hidden], .career-panel[hidden], .career-scopes[hidden], #profileContent[hidden] { display: none !important; }
+.players-search-panel {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  align-items: center;
+  border: 1px solid var(--border-color);
+  border-radius: var(--panel-radius, 8px);
+  padding: clamp(14px, 3vw, 24px);
+  background: var(--surface-raised);
+}
+.players-search-panel h2 { margin: 0; font-size: 23px; }
+.players-search-label { flex: 0 1 340px; min-width: 0; }
+.players-search-label input, .career-season-label select { width: 100%; font: inherit; font-size: 16px; min-height: 44px; padding: 8px 12px; border: 1px solid var(--border-color); border-radius: 6px; color: var(--text-color); background: var(--surface); }
+.players-picks { display: flex; flex-wrap: wrap; gap: 8px; }
+#careerSearchStatus { color: var(--muted-color); font-size: 14px; }
+#careerSearchStatus:not(:empty) { margin: 17px 0 9px; }
+#careerSearchResults { display: grid; gap: 8px; }
+#careerSearchResults h3 { margin: 12px 0 4px; }
+.career-search-row, .career-appearance { display: grid; align-items: center; gap: 12px; }
+.career-search-row { grid-template-columns: minmax(0,1fr) minmax(115px,.3fr) auto; background: var(--surface-raised); padding: 13px 16px; border: 1px solid var(--border-color); border-radius: 7px; }
+#careerSearchResults .career-search-row h3 { font-size: 17px; margin: 0; }
+.career-search-row p, .career-appearance p { font-size: 14px; }
+.career-search-meta { display: grid; gap: 4px; font-size: 14px; }
+.career-search-meta small { color: var(--muted-color); }
+.career-scopes { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; margin: 0 56px 16px 0; }
+.career-head { display: flex; justify-content: space-between; align-items: end; gap: 16px; padding: 20px 0 17px; border-top: 1px solid var(--border-color); }
+.career-head h2 { font-size: clamp(26px, 5vw, 42px); margin: 6px 0 2px; overflow-wrap: anywhere; }
+.career-head .players-eyebrow { color: var(--primary); margin: 0; }
+.career-season-label { display: grid; flex: none; gap: 5px; font-size: 14px; color: var(--muted-color); }
+.career-totals { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 1px; background: var(--border-color); border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; }
+.career-totals > div { background: var(--surface); padding: 13px clamp(9px, 3vw, 19px); display: grid; gap: 3px; }
+.career-totals b { color: var(--primary); font-size: clamp(22px, 5vw, 34px); }
+.career-totals span, .career-footnote { color: var(--muted-color); font-size: 14px; }
+.career-timeline { display: grid; gap: 16px; margin: 20px 0; }
+.career-year { border: 1px solid var(--border-color); border-radius: 7px; }
+.career-year-head { display: flex; align-items: center; justify-content: space-between; gap: 9px; background: var(--surface); padding: 10px 14px; border-radius: 6px 6px 0 0; }
+.career-year-head h3 { margin: 0; font-size: 16px; }
+.career-year-head button { min-height: 36px; }
+.career-appearance { grid-template-columns: minmax(0,1fr) auto; border-top: 1px solid var(--border-color); padding: 12px 14px; }
+.career-appearance:has(.career-card-record) { grid-template-columns: minmax(0,1fr) auto auto; }
+.career-card-record { display: flex; flex-wrap: wrap; gap: 6px 11px; color: var(--muted-color); font-size: 13px; }
+.career-card-record b { color: var(--text-color); }
+@media(max-width: 600px) {
+  .players-search-panel { align-items: stretch; flex-direction: column; gap: 12px; }
+  .players-switch { align-self: flex-start; }
+  .players-search-label { flex: auto; }
+  .career-search-row { grid-template-columns: minmax(0,1fr) auto; gap: 6px 10px; }
+  .career-search-meta { grid-row: 2; display: flex; flex-wrap: wrap; gap: 4px 10px; }
+  .career-search-row button { grid-column: 2; grid-row: 1 / 3; }
+  .career-appearance:has(.career-card-record) { grid-template-columns: minmax(0,1fr) auto; gap: 7px 10px; }
+  .career-card-record { grid-row: 2; }
+  .career-appearance:has(.career-card-record) button { grid-column: 2; grid-row: 1 / 3; }
+  .career-head { align-items: stretch; flex-direction: column; gap: 10px; }
+  .career-scopes { gap: 5px; }
+  .career-scopes .players-switch button { padding-inline: 9px; }
+}
+.career-match-log { padding: 14px 16px; border: 1px solid var(--border-color); border-radius: 7px; background: var(--surface); }
+.career-match-log h3 { margin: 0 0 5px; }
+.career-match-log p { margin: 0 0 9px; color: var(--muted-color); font-size: 14px; }
+.career-match-log summary { padding-block: 8px; font-weight: 700; cursor: pointer; }
+.career-match-rows article { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 10px 0; border-top: 1px solid var(--border-color); }
+.career-match-rows small { display: block; color: var(--muted-color); margin-top: 4px; }
+.career-score { display: flex; gap: 8px; align-items: center; text-align: right; }
+.career-score span { font-size: 12px; font-weight: 800; }
+.career-score .win { color: var(--good-color); }
+.career-score .loss { color: var(--bad-color); }
+
+.players-masthead .clubs9-hero h1 { font-size: clamp(28px, 4vw, 43px); line-height: 1.08; margin: 5px 0 0; }
+.clubs9-tabs.players-modes { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+#page-ratings.players-history > :not(.players-masthead,.players-directory) { display: none !important; }
+#page-ratings.show-rating-description > :is(.section-title,#ratingRoundNotice,#bandInfo,.players-rating-search,.table-wrap) { display: none !important; }
+#page-ratings #ratingTabs { display: flex; flex-wrap: wrap; align-items: start; overflow: visible; }
+#page-ratings .ratings-toolbar { align-items: start; gap: 12px; }
+.players-doubles { position: relative; }
+.players-doubles > button { width: 100%; }
+.players-doubles > button span { display: inline-block; transition: transform .2s; }
+.players-doubles > button[aria-expanded="true"] span { transform: rotate(180deg); }
+#playersDoublesChoices:not([hidden]) {
+  display: grid;
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  z-index: 7;
+  min-width: 100%;
+  gap: 4px;
+  padding: 5px;
+  border: 1px solid var(--border-color);
+  background: var(--surface-raised);
+  border-radius: 6px;
+  box-shadow: 0 4px 15px #0003;
+  animation: playersDoublesIn .16s ease-out both;
+}
+@keyframes playersDoublesIn { from { opacity: 0; transform: translateY(-5px); } to { opacity: 1; transform: translateY(0); } }
+@media(prefers-reduced-motion: reduce) { #playersDoublesChoices:not([hidden]) { animation: none; } .players-doubles span { transition: none; } }
+#ratingTabs .players-description-button { background: var(--primary); color: var(--accent-text, #111); font-weight: 750; }
+#ratingTabs .players-description-button[aria-expanded="true"] { box-shadow: inset 0 -2px currentColor; }
+#page-ratings #ratingFilters { display: flex; flex-wrap: wrap; gap: 8px; align-items: end; }
+#ratingFilters label, .players-directory-fields label { display: grid; gap: 5px; color: var(--muted-color); font-size: 13px; font-weight: 650; }
+#ratingFilters select, .players-directory-fields select { min-height: 42px; max-width: 100%; padding: 8px; font: inherit; font-size: 16px; color: var(--text-color); background: var(--surface-raised); border: 1px solid var(--border-color); border-radius: 5px; }
+#ratingFilters #teamFilter { min-width: min(100%, 160px); }
+.players-rating-search { margin: 12px 0; }
+.players-rating-search input { width: min(100%, 400px); min-height: 44px; font-size: 16px; }
+#playersRatingDescription { padding: 20px; border: 1px solid var(--border-color); border-top: 3px solid var(--primary); background: var(--surface-raised); border-radius: 7px; }
+#playersRatingDescription h2 { margin-top: 0; }
+.players-explain-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 10px; }
+.players-explain-grid article { padding: 12px 14px; border: 1px solid var(--border-color); border-radius: 6px; background: var(--surface); }
+.players-explain-grid h3 { margin: 0 0 6px; }
+.players-explain-grid p { color: var(--muted-color); margin: 0; line-height: 1.5; }
+#playersRatingDescription #searchCommandHelp { border-top: 1px solid var(--border-color); margin-top: 18px; }
+#playersRatingDescription #searchCommandHelp dl { display: grid; grid-template-columns: minmax(0,max-content) 1fr; gap: 8px 16px; }
+#playersRatingDescription #searchCommandHelp dd { margin: 0; }
+.players-directory-fields { display: grid; gap: 10px; grid-template-columns: repeat(2,minmax(0,1fr)); }
+.players-directory-fields input { width: 100%; min-height: 42px; font-size: 16px; }
+.career-search-table th, .career-search-table td { white-space: normal; }
+.career-search-table th:first-child { min-width: 140px; }
+.career-search-table td:nth-child(2), .career-search-table td:last-child { min-width: 150px; }
+.players-roster-title { margin: 20px 0 12px; }
+.players-roster-title h2 { margin: 0; }
+.players-roster-title p { color: var(--muted-color); margin: 5px 0; }
+.players-roster-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%,245px),1fr)); gap: 10px; }
+.players-roster-card { background: var(--surface-raised); border: 1px solid var(--border-color); border-radius: 7px; min-width: 0; }
+.players-roster-card h3 { margin: 0; padding: 11px 13px; border-bottom: 1px solid var(--border-color); background: var(--surface); border-radius: 7px 7px 0 0; }
+.players-roster-card ol { list-style: none; padding: 7px 12px; margin: 0; }
+.players-roster-card li { min-height: 37px; display: flex; flex-wrap: wrap; align-items: center; gap: 5px 8px; border-bottom: 1px solid var(--border-color); }
+.players-roster-card li:last-child { border-bottom: 0; }
+.players-roster-card p { padding: 0 13px; color: var(--muted-color); }
+.players-roster-slot { min-width: 20px; color: var(--muted-color); font-variant-numeric: tabular-nums; }
+.career-rollup { display: flex; flex-wrap: wrap; gap: 12px 20px; padding: 12px 0; color: var(--muted-color); }
+.career-rollup div { flex: 1; min-width: 100px; border-bottom: 1px solid var(--border-color); padding-bottom: 8px; }
+.career-rollup b { display: block; font-size: 22px; color: var(--text-color); margin-top: 4px; }
+.career-rollup p { flex-basis: 100%; margin: 0; font-size: 14px; }
+@media(max-width:600px) {
+  .players-directory-fields, .players-explain-grid { grid-template-columns: 1fr; }
+  #playersRatingDescription #searchCommandHelp dl { display: block; }
+  #playersRatingDescription #searchCommandHelp dd { margin-bottom: 10px; }
+  #page-ratings #ratingTabs { gap: 4px; width: 100%; }
+  #page-ratings #ratingTabs > * { flex: 1 1 auto; min-width: 0; }
+  #page-ratings #ratingTabs .subtab { font-size: 12px; padding: 8px 6px; min-height: 40px; }
+  #ratingFilters label { flex: 1 1 120px; min-width: 0; }
+  #page-ratings #ratingFilters select { min-width: 0; width: 100%; }
+}
+.players-rating-search input, .players-directory-fields input { color: var(--text-color); background: var(--surface); border: 1px solid var(--border-color); padding: 8px 12px; border-radius: 6px; }
+
+.clubs9-tabs.players-modes { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.players-directory [hidden], .players-switch button[hidden] { display: none !important; }
+#careerSearchStatus { min-height: 1.4em; margin: 12px 0 4px; }
+#careerSearchStatus:empty { display: none; }
+.career-search-table tbody th .person { font-size: 1rem; font-weight: 800; text-align: left; }
+.career-search-table tbody th { width: 17%; }
+.players-roster-title { display: flex; justify-content: space-between; align-items: end; gap: 12px; flex-wrap: wrap; }
+.players-roster-key { display: flex; gap: 5px 14px; align-items: center; flex-wrap: wrap; margin: 0; padding: 0; list-style: none; }
+.players-roster-key li { display: inline-flex; align-items: center; gap: 5px; color: var(--text-color); font-size: 13px; white-space: nowrap; }
+.players-roster-key i { width: 8px; height: 8px; border-radius: 50%; background: var(--roster-tone); }
+.roster-tone-top { --roster-tone: light-dark(#13792d, #79f890); }
+.roster-tone-strong { --roster-tone: light-dark(#2e633c, #8cc5a0); }
+.roster-tone-neutral { --roster-tone: var(--text-color); }
+.roster-tone-developing { --roster-tone: light-dark(#8e4149, #ffb5bb); }
+.roster-tone-low { --roster-tone: light-dark(#9a1c31, #ef737d); }
+.roster-tone-unrated { --roster-tone: var(--muted-color); }
+.players-roster-card li .person { color: var(--roster-tone, var(--text-color)); }
+.players-roster-card li .person:hover { text-decoration: underline; }
+.players-roster-card li.players-roster-emergency { column-gap: 5px; }
+.players-roster-card li.players-roster-emergency .emergency-marker { margin-inline-start: 0; }
+:root { --player-emergency: light-dark(#a32a3e, #ff9ca8); }
+.players-roster-emergency, .career-emergency { background: color-mix(in srgb, var(--player-emergency) 10%, var(--surface-raised)); }
+.players-roster-emergency .person, .career-emergency .career-team, .career-emergency .career-match-rows b,
+.rubber-names :is(.person, .rubber-name):has(+ .emergency-marker) { color: var(--player-emergency); }
+abbr.emergency-marker { color: var(--player-emergency); font-size: .74em; font-weight: 900; margin-inline-start: .35em; text-decoration: none; }
+.career-head h2 .player-follow-star { margin-inline-start: 10px; vertical-align: middle; }
+.career-year { --career-tone: var(--primary); border-inline-start: 3px solid var(--career-tone); overflow: clip; }
+.career-year-first { --career-tone: light-dark(#22668f, #86c3eb); }
+.career-year-second { --career-tone: light-dark(#615092, #c8aef4); }
+.career-year-third { --career-tone: light-dark(#257454, #92d1b1); }
+.career-year-head { justify-content: start; background: color-mix(in srgb, var(--career-tone) 13%, var(--surface)); }
+.career-year-head h3 { color: var(--career-tone); font-weight: 850; font-size: 18px; }
+.career-year-head span { color: var(--muted-color); font-size: 13px; }
+.career-year-head button { margin-inline-start: auto; }
+.career-card-record > span { display: grid; align-content: center; gap: 2px; min-width: 55px; }
+.career-card-record > span small { font-size: 12px; }
+.career-card-record .career-power { border-inline-start: 1px solid var(--border-color); padding-inline-start: 10px; }
+.career-rivals { margin: 18px 0; border: 1px solid color-mix(in srgb, var(--primary) 57%, var(--border-color)); border-top: 3px solid var(--primary); background: var(--surface-raised); }
+.career-rivals h3, .career-progression h3, .career-season-form h3 { font-size: 20px; }
+.career-rivals details { margin-top: 7px; padding-inline: 11px; border: 1px solid var(--border-color); border-radius: 5px; background: var(--surface); }
+.career-rivals summary { display: grid; align-items: center; grid-template-columns: 1fr auto minmax(42px, auto); column-gap: 11px; min-height: 40px; }
+.career-rivals summary b { font-size: 15px; }
+.career-rivals summary b::before { content: '+'; margin-inline-end: 8px; color: var(--primary); }
+.career-rivals details[open] summary b::before { content: '−'; }
+.career-rivals summary > span { color: var(--muted-color); font-size: 13px; }
+.career-rivals summary > strong { text-align: right; font-variant-numeric: tabular-nums; }
+.career-panel .win { color: var(--good-color); }
+.career-panel .loss { color: var(--bad-color); }
+.career-progression, .career-season-form { margin: 18px 0; border: 1px solid var(--border-color); border-radius: 7px; background: var(--surface); padding: 14px 16px; }
+.career-progression h3, .career-season-form h3 { margin: 0 0 10px; }
+.career-progression article, .career-season-form article { border-top: 1px solid var(--border-color); padding: 10px 0; }
+.career-progression article header { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 5px 10px; margin-bottom: 10px; }
+.career-progression article h4 { margin: 0; }
+.career-progression article header b { color: var(--primary); }
+.career-progress-metrics { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 9px; }
+.career-progress-metrics > div { background: var(--surface-raised); border: 1px solid var(--border-color); padding: 8px; border-radius: 5px; display: grid; gap: 4px; }
+.career-progress-metrics strong, .career-season-form strong { font-size: 20px; }
+.career-progress-metrics :is(small,span), .career-progression p, .career-season-form p { color: var(--muted-color); font-size: 13px; margin: 0; }
+.career-progression article p { margin-top: 8px; }
+.career-progression details summary, .career-equivalents summary { cursor: pointer; color: var(--muted-color); font-size: 13px; }
+.career-equivalents { margin-top: 6px; }
+.career-equivalents ul { margin: 7px 0; padding-inline-start: 16px; }
+.career-equivalents small { display: block; color: var(--muted-color); }
+.career-season-form article, .following-rank { display: flex; gap: 7px 14px; align-items: baseline; flex-wrap: wrap; }
+.career-season-form strong, .following-rank strong { color: var(--primary); }
+.career-season-form strong small, .following-rank strong small { color: var(--muted-color); font-size: .7em; }
+[data-follow-count]:not(:empty) { margin-inline-start: .45em; border-radius: 1em; padding: .15em .45em; border: 1px solid currentColor; font-size: .78em; }
+.following-heading { padding: 16px; border: 1px solid var(--border-color); border-top: 3px solid var(--primary); border-radius: 7px; background: var(--surface-raised); }
+.following-heading h2, .association-follow-row h3 { margin: 0; }
+#playersFollowing p { color: var(--muted-color); margin: 6px 0 0; }
+.association-follow-row { margin: 8px 0; padding: 12px 14px; border: 1px solid var(--border-color); border-radius: 7px; background: var(--surface-raised); }
+.association-follow-row header { display: flex; align-items: start; justify-content: space-between; gap: 10px; }
+.association-follow-row .person { font-size: 18px; font-weight: 850; }
+.following-rank { padding-top: 9px; }
+.following-rank strong { font-size: 24px; }
+.following-review, .following-return, .following-method { margin-top: 10px; padding: 10px; background: var(--surface); border: 1px solid var(--border-color); border-radius: 5px; }
+.following-review > div { margin-top: 8px; display: flex; gap: 5px; flex-wrap: wrap; }
+@media (max-width: 600px) {
+  .career-progress-metrics { grid-template-columns: repeat(2, minmax(0,1fr)); }
+  .career-rivals summary { column-gap: 6px; }
+}
+
+/* players, lineup tools and the career dialog */
+.players-rating-search, .players-directory-fields {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(150px, 27%);
+  align-items: end;
+  gap: 9px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.players-rating-search {
+  margin: 12px 0;
+  padding: 10px;
+  background: var(--surface-raised);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+}
+.players-rating-search label, .players-directory-fields label {
+  display: grid;
+  gap: 5px;
+  min-width: 0;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--muted-color);
+}
+.players-search-control { display: block; position: relative; min-width: 0; }
+.players-search-input svg {
+  position: absolute;
+  inset: 0 auto 0 12px;
+  margin-block: auto;
+  color: var(--primary);
+  pointer-events: none;
+}
+.players-rating-search input, .players-directory-fields input {
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 44px;
+  padding-inline: 40px 10px;
+  background: var(--surface);
+}
+.players-rating-search select, .players-directory-fields select {
+  width: 100%;
+  min-width: 0;
+  min-height: 44px;
+  padding: 8px 12px;
+  box-sizing: border-box;
+  font: inherit;
+  font-size: 16px;
+  color: var(--text-color);
+  background: var(--surface);
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+}
+.players-search-input input:focus, .players-directory-fields select:focus, .players-rating-search select:focus {
+  outline: 2px solid var(--primary);
+  outline-offset: 1px;
+}
+.players-search-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 12px;
+  padding: clamp(12px,2.2vw,22px);
+  border-top: 2px solid var(--primary);
+  background: linear-gradient(110deg,color-mix(in srgb,var(--primary) 8%,var(--surface-raised)),var(--surface-raised) 65%);
+}
+.players-search-panel h2 { font-size: clamp(19px,2vw,24px); }
+.career-search-table :is(th,td):last-child { text-align: center; min-width: 65px; width: 65px; }
+.career-search-table td:nth-child(6) { min-width: 120px; }
+.career-search-table td:last-child .player-follow-star { margin: 0 auto; }
+.clubs9-tabs.players-modes { grid-template-columns: repeat(2,minmax(0,1fr)); }
+.players-masthead .clubs9-hero { display: flex; align-items: center; justify-content: space-between; gap: 14px; }
+.follow82-star.player-follow-star {
+  --player-gold: light-dark(#876008,#ffcf62);
+  color: var(--player-gold);
+  border: 1px solid color-mix(in srgb,var(--player-gold) 62%,var(--border-color));
+  background: color-mix(in srgb,var(--player-gold) 9%,var(--surface));
+  border-radius: 8px;
+  opacity: 1;
+  position: relative;
+}
+.follow82-star.player-follow-star svg {
+  width: 21px;
+  height: 21px;
+  fill: transparent;
+  stroke: currentColor;
+  stroke-width: 1.6;
+  stroke-linejoin: round;
+  transition: fill .18s ease, transform .18s ease;
+}
+.follow82-star.player-follow-star[aria-pressed="true"] svg, .follow82-star.players-following-launch svg { fill: currentColor; }
+.follow82-star.players-following-launch { width: 42px; height: 42px; flex: 0 0 42px; }
+.follow82-star.players-following-launch svg { width: 24px; height: 24px; }
+.follow82-star.player-follow-star:hover svg { transform: scale(1.08); }
+.players-following-launch [data-follow-count]:not(:empty) {
+  position: absolute; inset: -6px -7px auto auto; margin: 0; line-height: 1; font-weight: 800;
+  background: var(--surface-raised);
+}
+.players-following-sheet > h2 { margin-top: 0; padding-inline-end: 48px; }
+#playersFollowing[hidden] { display: none; }
+.players-roster-title { margin: 20px 0 9px; align-items: center; }
+.players-roster-key {
+  display: grid;
+  grid-template-columns: repeat(5,minmax(0,1fr));
+  gap: 4px;
+  padding: 5px;
+  border: 1px solid var(--border-color);
+  border-radius: 7px;
+  background: var(--surface);
+  margin-bottom: 12px;
+}
+.players-roster-key li {
+  min-width: 0;
+  justify-content: center;
+  font-size: clamp(10px,2.8vw,13px);
+  font-weight: 700;
+  line-height: 1.15;
+  text-align: center;
+  white-space: normal;
+  padding: 8px 2px 4px;
+  color: var(--roster-tone);
+  border-top: 2px solid var(--roster-tone);
+  background: color-mix(in srgb,var(--roster-tone) 7%,var(--surface-raised));
+  border-radius: 3px;
+}
+.players-roster-grid { grid-template-columns: repeat(auto-fit,minmax(min(100%,303px),1fr)); }
+.players-roster-card > header {
+  display: grid;
+  grid-template-columns: minmax(0,1fr) auto;
+  align-items: center;
+  gap: 6px;
+  padding-inline: 10px;
+  border-bottom: 1px solid var(--border-color);
+  background: var(--surface);
+  border-radius: 6px 6px 0 0;
+}
+.players-roster-card header h3 { padding: 7px 0; border: 0; min-width: 0; line-height: 1.18; }
+.players-roster-card header h3 .person { text-align: left; font-size: 16px; }
+.players-roster-card .roster-sort { min-height: 31px; padding: 4px 7px; font-size: 11px; }
+.players-roster-card .roster-sort[aria-pressed="true"] { color: var(--primary); box-shadow: inset 0 -2px var(--primary); }
+.players-roster-card ol { padding-inline: 8px; }
+.players-roster-card ol li {
+  display: grid;
+  grid-template-columns: 19px minmax(0,1fr) auto;
+  gap: 5px;
+  padding: 4px 3px;
+}
+.players-roster-name { min-width: 0; display: flex; align-items: baseline; }
+.players-roster-name .person { min-width: 0; text-align: left; white-space: normal; overflow-wrap: anywhere; line-height: 1.2; }
+.players-roster-name abbr { flex: none; }
+.players-roster-power { color: var(--muted-color); font: 650 12px/1.3 ui-monospace,monospace; white-space: nowrap; }
+.players-roster-card li.players-roster-emergency .players-roster-name .person { color: var(--player-emergency); }
+.players-roster-card li.players-roster-emergency .emergency-marker { margin-inline-start: .35em; }
+.career-totals { grid-template-columns: repeat(auto-fit,minmax(min(105px,100%),1fr)); }
+.career-year:not(.career-year-current) { --career-tone: var(--border-color); }
+.career-year:not(.career-year-current) .career-year-head h3 { color: var(--text-color); }
+.career-card-record + .career-ladder:not([hidden]), .career-appearance p + .career-ladder:not([hidden]) {
+  display: inline-block; margin-top: 6px; padding: 3px 6px; font-size: 12px;
+  background: var(--surface-raised); border: 1px solid var(--border-color); border-radius: 4px;
+}
+.career-rivals { padding: 0; }
+.career-rivals .career-rival-list { margin: 0; padding: 0; border: 0; background: transparent; }
+.career-rivals .career-rival-list > summary {
+  padding: 11px 14px; grid-template-columns: minmax(0,1fr) auto;
+}
+.career-rivals .career-rival-list > summary b { font-size: 18px; }
+.career-rivals .career-rival-list > div { padding: 0 13px 12px; }
+.career-rivals .career-rival strong.win, .career-rivals .career-match-rows b.win { color: var(--good-color); }
+.career-rivals .career-rival strong.loss, .career-rivals .career-match-rows b.loss { color: var(--bad-color); }
+.career-progression article p { margin: 6px 0; line-height: 1.5; }
+.career-progression article details summary { padding-block: 4px; }
+@media(max-width: 600px) {
+  .players-rating-search, .players-directory-fields { grid-template-columns: minmax(0,1fr); }
+  .players-roster-title .players-switch button { min-height: 34px; padding: 4px 8px; }
+}
+
+/* compact lineups and centred forecast rows */
+#teamLabContent .tl-roster-row {
+  display: grid; grid-template-columns: 28px minmax(0,1fr) auto; align-items: center; gap: 8px;
+}
+#teamLabContent .tl-empty-order { background: none; }
+#teamLabContent .tl-player-copy .tl-lineup-name {
+  display: flex; align-items: baseline; flex-wrap: nowrap; gap: 4px; line-height: 1.2;
+}
+#teamLabContent .tl-lineup-name button { min-width: 0; text-align: left; }
+#teamLabContent .tl-roster-emergency .tl-lineup-name button { color: var(--player-emergency); }
+#teamLabContent .tl-roster-emergency { background: none; }
+#teamLabContent .tl-lineup-name abbr { flex: none; margin-inline-start: 0; }
+#teamLabContent .tl-player-power { grid-column: 3; grid-row: 1; align-self: center; }
+
+.prediction-lineups .lineup-picker .prediction-lineup-name {
+  display: flex; align-items: baseline; min-width: 0; gap: 4px; line-height: 1.2;
+}
+.prediction-lineup-name b { min-width: 0; }
+.prediction-lineup-name abbr { flex: none; margin-inline-start: 0; }
+.prediction-lineups .lineup-picker .players-roster-emergency .prediction-lineup-name b { color: var(--player-emergency); }
+.prediction-lineups .lineup-picker input[type="checkbox"] {
+  appearance: none; -webkit-appearance: none; display: inline-grid; place-items: center; flex: none;
+  inline-size: 17px; block-size: 17px; margin: 0; padding: 0; cursor: pointer;
+  border: 1px solid var(--muted-color); border-radius: 4px; background: var(--surface); color: var(--primary-ink);
+}
+.prediction-lineups .lineup-picker input[type="checkbox"]:checked { background: var(--primary); border-color: var(--primary); }
+.prediction-lineups .lineup-picker input[type="checkbox"]:checked::after {
+  content: ''; border: solid currentColor; border-width: 0 2px 2px 0;
+  inline-size: 4px; block-size: 8px; transform: translateY(-1px) rotate(42deg);
+}
+.prediction-lineups .lineup-picker input[type="checkbox"]:disabled { opacity: .45; cursor: default; }
+.prediction-lineups .lineup-picker :is(input,select):focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+.prediction-lineups .lineup-picker .lineup-position-grid { gap: 7px 12px; grid-template-columns: repeat(2,minmax(0,1fr)); }
+.prediction-lineups .lineup-picker .lineup-position-grid label {
+  display: grid; grid-template-columns: 24px minmax(0,1fr); gap: 6px; min-width: 0; align-items: center;
+}
+.prediction-lineups .lineup-picker .lineup-position-grid label > span { justify-self: center; font-weight: 750; }
+.prediction-lineups .lineup-picker .lineup-position-grid select { height: 36px; box-sizing: border-box; padding: 5px; }
+@media(max-width: 680px) {
+  .prediction-lineups .lineup-picker .lineup-position-grid select { font-size: 16px; }
+}
+.fixture-forecast .prediction-section { --projection-id: 25px; --projection-gap: 7px; }
+.fixture-forecast .prediction-section .projection841-switchline {
+  display: grid; grid-template-columns: minmax(0,1fr) auto minmax(0,1fr); align-items: center;
+  margin-inline-start: calc(var(--projection-id) + var(--projection-gap));
+}
+.fixture-forecast .prediction-section .projection841-toggle { min-height: 34px; }
+.fixture-forecast .prediction-section .fixture-rubber {
+  grid-template-columns: var(--projection-id) minmax(0,1fr); gap: var(--projection-gap);
+}
+.fixture-forecast .prediction-section .prediction-rubber {
+  grid-template: 'home chance away' auto / minmax(0,1fr) max-content minmax(0,1fr);
+  align-items: center; border-radius: 6px !important; gap: clamp(5px,1.2vw,14px);
+  background: var(--surface-raised); padding: 8px clamp(7px,1.3vw,15px);
+}
+.fixture-forecast .prediction-section .projection822-side { display: block; line-height: 1.25; align-self: center; }
+.fixture-forecast .prediction-section .projection822-side button { line-height: inherit; min-height: 0; }
+.fixture-forecast .prediction-section .prediction-estimate { justify-self: center; align-self: center; font-variant-numeric: tabular-nums; }
+@media(max-width: 680px) { .fixture-forecast .prediction-section { --projection-id: 20px; --projection-gap: 5px; } }
+
+/* shared animation timing */
+@media(prefers-reduced-motion: no-preference) {
+  .page.active { animation: brta-panel-in .24s cubic-bezier(.2,.65,.3,1) both; }
+  .settings-sheet, .profile-sheet, .changelog-sheet {
+    animation: brta-panel-in .21s cubic-bezier(.2,.65,.3,1) both;
+  }
+  .button, .choice-trigger, .choice-option, .subtab {
+    transition: background-color .17s ease, border-color .17s ease, color .17s ease, box-shadow .17s ease;
+  }
+}
+@keyframes brta-panel-in { from { opacity: .72; translate: 0 3px; } to { opacity: 1; translate: 0 0; } }
+.wg-left { transition-duration: .43s, .43s; }
+.wg-game, .wg-launch { animation: wg-in .32s ease-out both; }
+.wg-board-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 8px; }
+.wg-board-heading span { font: 700 13px/1.3 ui-monospace,monospace; }
+.wg-board-heading .wg-score { margin: 0; font-size: 22px; }
+.wg-game canvas { box-sizing: border-box; border: 2px solid #a69bb7; background: #1b1726; border-radius: 5px; }
+.wg-game canvas:focus-visible { outline: 2px solid #c7b5ed; outline-offset: 4px; }
+@media(prefers-reduced-motion: reduce) { .wg-left { transition: none; } .wg-game,.wg-launch { animation: none; } }

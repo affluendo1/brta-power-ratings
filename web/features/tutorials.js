@@ -25,12 +25,15 @@
         ['#standingsBody', 'Where every team stands', 'Read team points, records and movement together. Select an underlined team name for its club page.'],
         ['#page-standings', 'Qualification and knockout matches', 'At the end of the regular season, the final ladder stays fixed. Qualifiers and the knockout draw show the finals pathway.']
       ] },
-    { id: 'ratings', title: 'Ratings & Player Labs', detail: 'Singles, doubles, bands and individual detail', page: 'ratings',
+    { id: 'ratings', title: 'Players & ratings', detail: 'Power, lineups, career history and Following', page: 'ratings',
       steps: [
-        ['[data-rating="singles"]', 'Choose a discipline', 'Switch between singles, doubles pairs, individual doubles and Overall using these tabs.'],
-        ['#ratingFilters', 'Find a player', 'Search a name or filter by team. Provisional entries have less match evidence.'],
-        ['#ratingBody tr', 'Power and performance bands', 'Ratings summarise recorded performances. Bands describe where a player sits within the section.'],
-        ['#profileContent .profile-head', 'Inside a Player Lab', 'Select a player to see their graphs, results, partnerships and performance bands.', 'player']
+        ['.players-modes', 'Two ways to explore Players', 'Ratings shows Power by discipline. Players shows the lineup for each team and lets you search past seasons.'],
+        ['.players-rating-search', 'Filter section ratings', 'Search for a player or pair, or choose a team. Try part of a name or a close spelling.'],
+        ['#ratingBody tr', 'Power and performance bands', 'Power summarises recorded performance. Bands show where a rating sits within the section.'],
+        ['#profileContent .profile-head', 'Inside a Player Lab', 'The Section Lab shows graphs and results for the selected section. Use Career to see other seasons and rivalries.', 'player'],
+        ['#careerSearch', 'Search across seasons', 'Find a player in the BRTA archive. Choose a scope to narrow the results or select a player to open their Career Lab.', 'directory'],
+        ['#playersRosters .players-roster-title', 'Read the section lineups', 'Switch between Singles and Overall to change the colours and Power shown. Use a team’s Power order button to sort its players.', 'directory'],
+        ['[data-following-open]', 'Keep track of players', 'Star someone in search results or their Player Lab. The gold star here opens your Following list.', 'directory']
       ] },
     { id: 'clubs', title: 'Clubs & teams', detail: 'Club details, team stats and participation', page: 'teams',
       steps: [
@@ -45,12 +48,12 @@
     { id: 'history', title: 'Explore history', detail: 'Find past competitions, teams and scorecards', page: 'results',
       steps: [
         ['[data-layout-open="history"]', 'Browse another season', 'History opens the season directory. Quick Nav also lets you drill down through a competition, season and section.'],
-        ['#quickNavigationBtn', 'Go straight to what you want', 'Quick Nav can browse a past section’s teams, players and fixtures. Historical Player Labs open a specific season appearance.']
+        ['#quickNavigationBtn', 'Go straight to what you want', 'Quick Nav can browse a past section’s teams, players and fixtures. A name search opens the player’s Career Lab.']
       ] },
     { id: 'navigation', title: 'Quick navigation', detail: 'Search and browse with your keyboard or phone', page: 'results',
       steps: [
         ['#quickNavigationBtn', 'A shortcut to the whole site', 'Open Quick Nav here, with Ctrl/Cmd+Shift+P, or with Escape when a dialog is closed.'],
-        ['#navigationSearch', 'Search within a destination', 'Choose a category, then type to filter its choices. Arrow keys move, Enter opens, and Escape goes back one level.', 'navigation']
+        ['#navigationSearch', 'Search within a destination', 'Type a player, team or page name to search directly. Open a section to browse its results and fixtures. Arrow keys move, Enter opens, and Escape goes back.', 'navigation']
       ] }
   ];
   const library = document.createElement('div');
@@ -154,7 +157,8 @@
     try {
       if (item.topic.page === 'teams') await window.BRTAClubs?.ready();
       if (request !== token) return;
-      if (detail) {
+      if (item.topic.id === 'ratings') window.BRTAPlayers?.show(detail === 'directory' ? 'history' : 'section');
+      if (detail && examples[detail]) {
         example = $(examples[detail]);
         example?.setAttribute('data-dialog-preview', '');
       }
@@ -182,7 +186,7 @@
       }
       if (mobile.matches && item.topic.id === 'navigation') {
         panel.querySelector('p').textContent = detail ?
-          'Tap a category to browse, or tap Search and type to filter this list. Back returns to the previous list.' :
+          'Tap Search and type a player, team or page name. You can also tap a competition to browse its sections.' :
           'Tap Quick Nav in the header to browse sections, teams, fixtures and players.';
       }
       frameTarget();
@@ -201,7 +205,7 @@
   }
   function start(id) {
     closeLibrary();
-    origin = { page: activePage, scroll: [scrollX, scrollY], focus: menuFocus };
+    origin = { page: activePage, playersView: ratingScope, scroll: [scrollX, scrollY], focus: menuFocus };
     steps = topics.filter(topic => id === 'all' || topic.id === id).flatMap(topic => topic.steps.map(step => ({ topic, step })));
     position = 0;
     renderStep();
@@ -219,6 +223,7 @@
     const previous = origin;
     origin = null;
     if (previous) {
+      if (ratingScope !== previous.playersView) setRatingScope(previous.playersView);
       switchPage(previous.page);
       scrollTo(...previous.scroll);
       if (previous.focus?.isConnected) previous.focus.focus({ preventScroll: true });

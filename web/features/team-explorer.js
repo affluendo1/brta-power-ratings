@@ -26,10 +26,10 @@ function draw(){
     const score = complete ? [fixture.homeRubbers, fixture.awayRubbers] : null;
     if (score && !home) score.reverse();
     const label = score?.join('–') || ({ 'Forfeited To': 'W/O', 'Forfeited By': 'W/O', 'Wash Out': 'WASH' }[fixture.status] || fixture.status);
+    const displayScore = fixture.status === 'Scheduled' ? '<span aria-label="Scheduled">—</span>' : result + ' ' + esc(label);
     const tone = result === 'W' ? 'win' : result === 'L' ? 'loss' : '';
     return '<button class="match-row" title="' + esc(fixture.status) + '" data-match-id="' + esc(fixture.fixtureId) +
-      '"><span class="match-round">' + esc(roundHeading(fixture, true)) + '</span><b class="match-score ' + tone + '">' + result + ' ' +
-      esc(label) + '</b><span class="match-opponent"><b>' + esc(opponent) + '</b><small>' +
+      '"><span class="match-round">' + esc(roundHeading(fixture, true)) + '</span><b class="match-score ' + tone + '">' + displayScore + '</b><span class="match-opponent"><b>' + esc(opponent) + '</b><small>' +
       esc(roundDate(fixture.date)) + ' · ' + (home ? 'Home' : 'Away') + '</small></span></button>';
   }).join('');
   panel.innerHTML = '<header><div><h3>Team Explorer</h3><p>' + fixtures.length + ' fixtures · ' + esc(team) +
