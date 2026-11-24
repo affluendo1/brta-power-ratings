@@ -28,28 +28,36 @@
   "calendar_events": [
     {
       "date": "27 Feb 27",
-      "label": "Semi Final \u00b7 if qualified"
+      "label": "Semi Final · if qualified"
     },
     {
       "date": "13 Mar 27",
-      "label": "Grand Final \u00b7 if qualified"
+      "label": "Grand Final · if qualified"
     },
     {
       "date": "20 Mar 27",
-      "label": "Spare \u00b7 if required"
+      "label": "Spare · if required"
     }
   ],
   "official_standings": [
     {
       "position": 1,
       "team": "Mt Eliza Penins",
-      "wins": 4,
-      "points": 36,
-      "percentage": 144.1,
+      "wins": 5,
+      "points": 45,
+      "percentage": 149.21,
       "marker": ""
     },
     {
       "position": 2,
+      "team": "Carmelite",
+      "wins": 5,
+      "points": 43,
+      "percentage": 118.75,
+      "marker": ""
+    },
+    {
+      "position": 3,
       "team": "Clarinda",
       "wins": 3,
       "points": 36,
@@ -57,54 +65,46 @@
       "marker": ""
     },
     {
-      "position": 3,
-      "team": "Carmelite",
-      "wins": 4,
-      "points": 35,
-      "percentage": 120.83,
-      "marker": ""
-    },
-    {
       "position": 4,
       "team": "Sandringham",
       "wins": 3,
-      "points": 33,
-      "percentage": 132.85,
+      "points": 34,
+      "percentage": 111.58,
       "marker": ""
     },
     {
       "position": 5,
       "team": "BLTC",
       "wins": 1,
-      "points": 20,
-      "percentage": 93.64,
+      "points": 22,
+      "percentage": 93.09,
       "marker": ""
     },
     {
       "position": 6,
       "team": "Tennis World",
-      "wins": 0,
-      "points": 13,
-      "percentage": 76.44,
+      "wins": 1,
+      "points": 20,
+      "percentage": 81.85,
       "marker": ""
     },
     {
       "position": 7,
       "team": "Overport Park",
       "wins": 0,
-      "points": 7,
-      "percentage": 52.21,
+      "points": 10,
+      "percentage": 58.52,
       "marker": ""
     }
   ],
   "green_ball": false,
   "results_loaded_by_trols": null,
-  "fixtures": 24,
-  "completed_fixtures": 15,
+  "fixtures": 28,
+  "completed_fixtures": 18,
   "draw_fixtures": 56,
-  "singles_rubbers": 60,
-  "doubles_rubbers": 30,
-  "latest_round": 6,
+  "singles_rubbers": 72,
+  "doubles_rubbers": 36,
+  "latest_round": 7,
   "validation": "source discrepancies",
   "source_warnings": [
     "Incomplete TROLS score for AP008042 singles No. 3: '0-1'. Missing score not inferred; excluded from ratings and game totals."

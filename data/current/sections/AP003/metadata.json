@@ -28,15 +28,15 @@
   "calendar_events": [
     {
       "date": "27 Feb 27",
-      "label": "Semi Final \u00b7 if qualified"
+      "label": "Semi Final · if qualified"
     },
     {
       "date": "13 Mar 27",
-      "label": "Grand Final \u00b7 if qualified"
+      "label": "Grand Final · if qualified"
     },
     {
       "date": "20 Mar 27",
-      "label": "Spare \u00b7 if required"
+      "label": "Spare · if required"
     }
   ],
   "official_standings": [
@@ -52,59 +52,59 @@
       "position": 2,
       "team": "Black Rock",
       "wins": 3,
-      "points": 33,
-      "percentage": 128.57,
+      "points": 35,
+      "percentage": 109.6,
       "marker": ""
     },
     {
       "position": 3,
       "team": "Mt Eliza Penins",
-      "wins": 3,
-      "points": 24.5,
-      "percentage": 85.12,
+      "wins": 4,
+      "points": 32.5,
+      "percentage": 94.16,
       "marker": ""
     },
     {
       "position": 4,
-      "team": "Maccabi",
-      "wins": 1,
-      "points": 21,
-      "percentage": 73.13,
+      "team": "Liston Red",
+      "wins": 2,
+      "points": 28,
+      "percentage": 108.72,
       "marker": ""
     },
     {
       "position": 5,
-      "team": "BLTC",
-      "wins": 1,
-      "points": 20,
-      "percentage": 91.86,
+      "team": "Liston Blue",
+      "wins": 2,
+      "points": 27,
+      "percentage": 112.81,
       "marker": ""
     },
     {
       "position": 6,
-      "team": "Liston Red",
+      "team": "Maccabi",
       "wins": 1,
-      "points": 19.5,
-      "percentage": 98.14,
+      "points": 23,
+      "percentage": 70.28,
       "marker": ""
     },
     {
       "position": 7,
-      "team": "Liston Blue",
+      "team": "BLTC",
       "wins": 1,
-      "points": 19,
-      "percentage": 103.01,
+      "points": 21.5,
+      "percentage": 84.96,
       "marker": ""
     }
   ],
   "green_ball": false,
   "results_loaded_by_trols": null,
-  "fixtures": 24,
-  "completed_fixtures": 15,
+  "fixtures": 28,
+  "completed_fixtures": 18,
   "draw_fixtures": 56,
-  "singles_rubbers": 60,
-  "doubles_rubbers": 30,
-  "latest_round": 6,
+  "singles_rubbers": 72,
+  "doubles_rubbers": 36,
+  "latest_round": 7,
   "validation": "source discrepancies",
   "source_warnings": [
     "Incomplete TROLS score for AP003044 singles No. 1: '0-2'. Missing score not inferred; excluded from ratings and game totals.",

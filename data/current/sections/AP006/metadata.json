@@ -28,91 +28,91 @@
   "calendar_events": [
     {
       "date": "27 Feb 27",
-      "label": "Semi Final \u00b7 if qualified"
+      "label": "Semi Final · if qualified"
     },
     {
       "date": "13 Mar 27",
-      "label": "Grand Final \u00b7 if qualified"
+      "label": "Grand Final · if qualified"
     },
     {
       "date": "20 Mar 27",
-      "label": "Spare \u00b7 if required"
+      "label": "Spare · if required"
     }
   ],
   "official_standings": [
     {
       "position": 1,
       "team": "Elwood",
-      "wins": 5,
-      "points": 47,
-      "percentage": 152.63,
+      "wins": 6,
+      "points": 56,
+      "percentage": 143.44,
       "marker": ""
     },
     {
       "position": 2,
-      "team": "Ormond",
-      "wins": 3,
-      "points": 36,
-      "percentage": 113.81,
+      "team": "BLTC",
+      "wins": 4,
+      "points": 45,
+      "percentage": 116.96,
       "marker": ""
     },
     {
       "position": 3,
-      "team": "BLTC",
-      "wins": 3,
-      "points": 36,
-      "percentage": 108.51,
+      "team": "Ormond",
+      "wins": 4,
+      "points": 44,
+      "percentage": 119.58,
       "marker": ""
     },
     {
       "position": 4,
       "team": "Glen Huntly",
       "wins": 2,
-      "points": 31,
-      "percentage": 95.27,
+      "points": 33,
+      "percentage": 87.24,
       "marker": ""
     },
     {
       "position": 5,
       "team": "Kings Park",
       "wins": 2,
-      "points": 29,
-      "percentage": 91.19,
+      "points": 30,
+      "percentage": 84.46,
       "marker": ""
     },
     {
       "position": 6,
       "team": "Hurlingham Park",
       "wins": 2,
-      "points": 25,
-      "percentage": 97.97,
+      "points": 26,
+      "percentage": 96.36,
       "marker": ""
     },
     {
       "position": 7,
       "team": "Coatesville",
-      "wins": 1,
-      "points": 19,
-      "percentage": 77.21,
+      "wins": 2,
+      "points": 26,
+      "percentage": 82.65,
       "marker": ""
     },
     {
       "position": 8,
       "team": "Altona",
       "wins": 0,
-      "points": 17,
-      "percentage": 81.89,
+      "points": 20,
+      "percentage": 82.71,
       "marker": ""
     }
   ],
   "green_ball": false,
   "results_loaded_by_trols": null,
-  "fixtures": 24,
-  "completed_fixtures": 18,
+  "fixtures": 28,
+  "completed_fixtures": 22,
   "draw_fixtures": 56,
-  "singles_rubbers": 72,
-  "doubles_rubbers": 36,
-  "latest_round": 6,
+  "singles_rubbers": 88,
+  "doubles_rubbers": 44,
+  "latest_round": 7,
   "validation": "passed",
   "source_warnings": []
 }

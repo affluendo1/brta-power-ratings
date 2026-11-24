@@ -28,45 +28,45 @@
   "calendar_events": [
     {
       "date": "13 Mar 27",
-      "label": "Grand Final \u00b7 if qualified"
+      "label": "Grand Final · if qualified"
     },
     {
       "date": "20 Mar 27",
-      "label": "Spare \u00b7 if required"
+      "label": "Spare · if required"
     }
   ],
   "official_standings": [
     {
       "position": 1,
       "team": "Buckley Park",
-      "wins": 4,
-      "points": 43,
-      "percentage": 150.89,
+      "wins": 5,
+      "points": 51,
+      "percentage": 150.95,
       "marker": ""
     },
     {
       "position": 2,
-      "team": "Altona Black",
+      "team": "Altona Blue",
       "wins": 3,
-      "points": 34,
-      "percentage": 110.0,
+      "points": 36,
+      "percentage": 108.47,
       "marker": ""
     },
     {
       "position": 3,
-      "team": "Liston",
+      "team": "Altona Black",
       "wins": 3,
-      "points": 34,
-      "percentage": 97.21,
+      "points": 36,
+      "percentage": 102.28,
       "marker": ""
     },
     {
       "position": 4,
-      "team": "Altona Blue",
-      "wins": 2,
-      "points": 28,
-      "percentage": 102.53,
-      "marker": ""
+      "team": "Liston",
+      "wins": 3,
+      "points": 34,
+      "percentage": 97.21,
+      "marker": "*"
     },
     {
       "position": 5,
@@ -74,25 +74,25 @@
       "wins": 2,
       "points": 24,
       "percentage": 84.96,
-      "marker": ""
+      "marker": "*"
     },
     {
       "position": 6,
       "team": "Essendon",
       "wins": 1,
-      "points": 17,
-      "percentage": 70.61,
+      "points": 19,
+      "percentage": 69.71,
       "marker": ""
     }
   ],
   "green_ball": false,
   "results_loaded_by_trols": null,
-  "fixtures": 18,
-  "completed_fixtures": 15,
+  "fixtures": 21,
+  "completed_fixtures": 17,
   "draw_fixtures": 45,
-  "singles_rubbers": 60,
-  "doubles_rubbers": 30,
-  "latest_round": 6,
+  "singles_rubbers": 68,
+  "doubles_rubbers": 34,
+  "latest_round": 7,
   "validation": "passed",
   "source_warnings": []
 }

@@ -28,64 +28,64 @@
   "calendar_events": [
     {
       "date": "27 Feb 27",
-      "label": "Semi Final \u00b7 if qualified"
+      "label": "Semi Final · if qualified"
     },
     {
       "date": "13 Mar 27",
-      "label": "Grand Final \u00b7 if qualified"
+      "label": "Grand Final · if qualified"
     },
     {
       "date": "20 Mar 27",
-      "label": "Spare \u00b7 if required"
+      "label": "Spare · if required"
     }
   ],
   "official_standings": [
     {
       "position": 1,
       "team": "Essendon",
-      "wins": 3,
-      "points": 34,
-      "percentage": 174.24,
+      "wins": 4,
+      "points": 43,
+      "percentage": 160.75,
       "marker": ""
     },
     {
       "position": 2,
-      "team": "Hurlingham Park",
+      "team": "Kooyong",
       "wins": 3,
-      "points": 31,
-      "percentage": 147.62,
+      "points": 35,
+      "percentage": 160.0,
       "marker": ""
     },
     {
       "position": 3,
-      "team": "Kooyong",
-      "wins": 2,
-      "points": 27,
-      "percentage": 149.3,
+      "team": "Hurlingham Park",
+      "wins": 3,
+      "points": 32,
+      "percentage": 124.04,
       "marker": ""
     },
     {
       "position": 4,
       "team": "Highmoor Uniting",
       "wins": 2,
-      "points": 27,
-      "percentage": 96.55,
+      "points": 29,
+      "percentage": 84.92,
       "marker": ""
     },
     {
       "position": 5,
-      "team": "Lauriston",
+      "team": "BLTC",
       "wins": 2,
-      "points": 25,
-      "percentage": 93.55,
+      "points": 27,
+      "percentage": 87.4,
       "marker": ""
     },
     {
       "position": 6,
-      "team": "BLTC",
-      "wins": 1,
-      "points": 18,
-      "percentage": 78.65,
+      "team": "Lauriston",
+      "wins": 2,
+      "points": 26,
+      "percentage": 90.54,
       "marker": ""
     },
     {
@@ -99,12 +99,12 @@
   ],
   "green_ball": false,
   "results_loaded_by_trols": null,
-  "fixtures": 24,
-  "completed_fixtures": 12,
+  "fixtures": 28,
+  "completed_fixtures": 15,
   "draw_fixtures": 56,
-  "singles_rubbers": 48,
-  "doubles_rubbers": 24,
-  "latest_round": 6,
+  "singles_rubbers": 60,
+  "doubles_rubbers": 30,
+  "latest_round": 7,
   "validation": "source discrepancies",
   "source_warnings": [
     "Incomplete TROLS score for AP009061 doubles No. 1: '6-6'. Missing score not inferred; excluded from ratings and game totals.",

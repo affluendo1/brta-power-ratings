@@ -28,52 +28,52 @@
   "calendar_events": [
     {
       "date": "13 Mar 27",
-      "label": "Grand Final \u00b7 if qualified"
+      "label": "Grand Final · if qualified"
     },
     {
       "date": "20 Mar 27",
-      "label": "Spare \u00b7 if required"
+      "label": "Spare · if required"
     }
   ],
   "official_standings": [
     {
       "position": 1,
       "team": "BLTC Blue",
-      "wins": 4,
-      "points": 39,
-      "percentage": 133.17,
+      "wins": 5,
+      "points": 49,
+      "percentage": 143.75,
       "marker": ""
     },
     {
       "position": 2,
       "team": "Overport Park",
-      "wins": 3,
-      "points": 37,
-      "percentage": 115.27,
+      "wins": 4,
+      "points": 45,
+      "percentage": 113.41,
       "marker": ""
     },
     {
       "position": 3,
       "team": "Carmelite Blue",
       "wins": 3,
-      "points": 33,
-      "percentage": 104.27,
+      "points": 35,
+      "percentage": 100.0,
       "marker": ""
     },
     {
       "position": 4,
       "team": "Mt Eliza Penins",
       "wins": 2,
-      "points": 31,
-      "percentage": 112.68,
+      "points": 33,
+      "percentage": 109.6,
       "marker": ""
     },
     {
       "position": 5,
       "team": "BLTC White",
-      "wins": 1,
-      "points": 23,
-      "percentage": 81.33,
+      "wins": 2,
+      "points": 31,
+      "percentage": 88.41,
       "marker": ""
     },
     {
@@ -81,18 +81,18 @@
       "team": "Carmelite Red",
       "wins": 0,
       "points": 17,
-      "percentage": 62.24,
+      "percentage": 58.72,
       "marker": ""
     }
   ],
   "green_ball": false,
   "results_loaded_by_trols": null,
-  "fixtures": 18,
-  "completed_fixtures": 15,
+  "fixtures": 21,
+  "completed_fixtures": 18,
   "draw_fixtures": 45,
-  "singles_rubbers": 60,
-  "doubles_rubbers": 30,
-  "latest_round": 6,
+  "singles_rubbers": 72,
+  "doubles_rubbers": 36,
+  "latest_round": 7,
   "validation": "source discrepancies",
   "source_warnings": [
     "Incomplete TROLS score for AP002041 doubles No. 1: '7-5 2-2'. Missing score not inferred; excluded from ratings and game totals.",
