@@ -28,11 +28,11 @@
   "calendar_events": [
     {
       "date": "13 Mar 27",
-      "label": "Grand Final \u00b7 if qualified"
+      "label": "Grand Final · if qualified"
     },
     {
       "date": "20 Mar 27",
-      "label": "Spare \u00b7 if required"
+      "label": "Spare · if required"
     }
   ],
   "official_standings": [
@@ -40,59 +40,59 @@
       "position": 1,
       "team": "Royal South Yarra",
       "wins": 5,
-      "points": 40.5,
-      "percentage": 190.55,
+      "points": 41.5,
+      "percentage": 153.23,
       "marker": ""
     },
     {
       "position": 2,
       "team": "Parkdale",
       "wins": 3,
-      "points": 28,
-      "percentage": 104.61,
+      "points": 29,
+      "percentage": 103.33,
       "marker": ""
     },
     {
       "position": 3,
       "team": "Hawthorn",
-      "wins": 2,
-      "points": 21,
-      "percentage": 102.69,
+      "wins": 3,
+      "points": 28,
+      "percentage": 109.17,
       "marker": ""
     },
     {
       "position": 4,
       "team": "Overport Park",
-      "wins": 2,
-      "points": 20,
-      "percentage": 91.56,
+      "wins": 3,
+      "points": 27,
+      "percentage": 93.5,
       "marker": ""
     },
     {
       "position": 5,
-      "team": "Sth Hawthorn",
+      "team": "Black Rock",
       "wins": 2,
-      "points": 20,
-      "percentage": 81.6,
+      "points": 21.5,
+      "percentage": 78.07,
       "marker": ""
     },
     {
       "position": 6,
-      "team": "Black Rock",
-      "wins": 1,
-      "points": 14.5,
-      "percentage": 70.0,
+      "team": "Sth Hawthorn",
+      "wins": 2,
+      "points": 21,
+      "percentage": 79.53,
       "marker": ""
     }
   ],
   "green_ball": false,
   "results_loaded_by_trols": null,
-  "fixtures": 18,
-  "completed_fixtures": 15,
+  "fixtures": 21,
+  "completed_fixtures": 18,
   "draw_fixtures": 45,
   "singles_rubbers": 0,
-  "doubles_rubbers": 60,
-  "latest_round": 6,
+  "doubles_rubbers": 72,
+  "latest_round": 7,
   "validation": "passed",
   "source_warnings": []
 }

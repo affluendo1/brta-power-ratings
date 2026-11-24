@@ -28,20 +28,36 @@
   "calendar_events": [
     {
       "date": "27 Feb 27",
-      "label": "Semi Final \u00b7 if qualified"
+      "label": "Semi Final · if qualified"
     },
     {
       "date": "13 Mar 27",
-      "label": "Grand Final \u00b7 if qualified"
+      "label": "Grand Final · if qualified"
     },
     {
       "date": "20 Mar 27",
-      "label": "Spare \u00b7 if required"
+      "label": "Spare · if required"
     }
   ],
   "official_standings": [
     {
       "position": 1,
+      "team": "Mentone",
+      "wins": 4,
+      "points": 44,
+      "percentage": 151.28,
+      "marker": ""
+    },
+    {
+      "position": 2,
+      "team": "Mordialloc",
+      "wins": 4,
+      "points": 40,
+      "percentage": 138.75,
+      "marker": ""
+    },
+    {
+      "position": 3,
       "team": "Royal Ave",
       "wins": 4,
       "points": 36,
@@ -49,27 +65,11 @@
       "marker": ""
     },
     {
-      "position": 2,
-      "team": "Mentone",
-      "wins": 3,
-      "points": 36,
-      "percentage": 148.74,
-      "marker": ""
-    },
-    {
-      "position": 3,
-      "team": "Mordialloc",
-      "wins": 3,
-      "points": 30,
-      "percentage": 131.67,
-      "marker": ""
-    },
-    {
       "position": 4,
       "team": "Le Page",
-      "wins": 2,
-      "points": 27,
-      "percentage": 90.48,
+      "wins": 3,
+      "points": 35,
+      "percentage": 98.94,
       "marker": ""
     },
     {
@@ -77,34 +77,34 @@
       "team": "BLTC",
       "wins": 2,
       "points": 20,
-      "percentage": 89.91,
+      "percentage": 83.9,
       "marker": ""
     },
     {
       "position": 6,
       "team": "St Louis de Mont Red",
       "wins": 1,
-      "points": 16,
-      "percentage": 61.5,
+      "points": 18,
+      "percentage": 64.79,
       "marker": ""
     },
     {
       "position": 7,
       "team": "St Louis de Mont Blue",
       "wins": 1,
-      "points": 15,
-      "percentage": 57.56,
+      "points": 17,
+      "percentage": 58.71,
       "marker": ""
     }
   ],
   "green_ball": false,
   "results_loaded_by_trols": null,
-  "fixtures": 24,
-  "completed_fixtures": 13,
+  "fixtures": 28,
+  "completed_fixtures": 16,
   "draw_fixtures": 56,
-  "singles_rubbers": 52,
-  "doubles_rubbers": 26,
-  "latest_round": 6,
+  "singles_rubbers": 64,
+  "doubles_rubbers": 32,
+  "latest_round": 7,
   "validation": "passed",
   "source_warnings": []
 }

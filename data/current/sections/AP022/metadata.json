@@ -28,52 +28,52 @@
   "calendar_events": [
     {
       "date": "13 Mar 27",
-      "label": "Grand Final \u00b7 if qualified"
+      "label": "Grand Final · if qualified"
     },
     {
       "date": "20 Mar 27",
-      "label": "Spare \u00b7 if required"
+      "label": "Spare · if required"
     }
   ],
   "official_standings": [
     {
       "position": 1,
       "team": "Chadstone",
-      "wins": 4,
-      "points": 35,
-      "percentage": 166.2,
+      "wins": 5,
+      "points": 43,
+      "percentage": 186.27,
       "marker": ""
     },
     {
       "position": 2,
       "team": "Overport Park Green",
-      "wins": 4,
-      "points": 35,
-      "percentage": 138.29,
+      "wins": 5,
+      "points": 42,
+      "percentage": 133.64,
       "marker": ""
     },
     {
       "position": 3,
       "team": "Hawthorn",
       "wins": 3,
-      "points": 32,
-      "percentage": 160.34,
+      "points": 33,
+      "percentage": 139.02,
       "marker": ""
     },
     {
       "position": 4,
       "team": "Mentone",
-      "wins": 1,
-      "points": 16,
-      "percentage": 71.79,
+      "wins": 2,
+      "points": 23,
+      "percentage": 79.18,
       "marker": ""
     },
     {
       "position": 5,
       "team": "Overport Park Gold",
       "wins": 1,
-      "points": 14,
-      "percentage": 71.86,
+      "points": 15,
+      "percentage": 72.83,
       "marker": ""
     },
     {
@@ -81,18 +81,18 @@
       "team": "Ormond",
       "wins": 0,
       "points": 12,
-      "percentage": 50.98,
+      "percentage": 45.45,
       "marker": ""
     }
   ],
   "green_ball": false,
   "results_loaded_by_trols": null,
-  "fixtures": 18,
-  "completed_fixtures": 14,
+  "fixtures": 21,
+  "completed_fixtures": 17,
   "draw_fixtures": 45,
   "singles_rubbers": 0,
-  "doubles_rubbers": 56,
-  "latest_round": 6,
+  "doubles_rubbers": 68,
+  "latest_round": 7,
   "validation": "passed",
   "source_warnings": []
 }

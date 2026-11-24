@@ -1,5 +1,5 @@
 {
-  "synced_at_utc": "2026-11-24T03:07:35.449682+00:00",
+  "synced_at_utc": "2026-11-24T03:26:41.775702+00:00",
   "competitions": {
     "AA": "Saturday AM - Spring 2026",
     "AP": "Saturday PM - Summer 2026/27",
@@ -2269,61 +2269,61 @@
         },
         {
           "position": 2,
-          "team": "Highmoor Uniting",
-          "wins": 2,
-          "points": 28.5,
-          "percentage": 109.66,
+          "team": "Beaumaris CC",
+          "wins": 3,
+          "points": 38.5,
+          "percentage": 133.73,
           "marker": ""
         },
         {
           "position": 3,
-          "team": "Beaumaris CC",
-          "wins": 2,
-          "points": 28.5,
-          "percentage": 106.92,
+          "team": "Highmoor Uniting",
+          "wins": 3,
+          "points": 35.5,
+          "percentage": 112.77,
           "marker": ""
         },
         {
           "position": 4,
           "team": "East Malvern",
-          "wins": 1,
-          "points": 22,
-          "percentage": 97.52,
+          "wins": 2,
+          "points": 31,
+          "percentage": 112.84,
           "marker": ""
         },
         {
           "position": 5,
-          "team": "Tennis World",
+          "team": "Kooyong",
           "wins": 1,
           "points": 21.5,
-          "percentage": 87.43,
+          "percentage": 76.98,
           "marker": ""
         },
         {
           "position": 6,
-          "team": "Kooyong",
+          "team": "Tennis World",
           "wins": 1,
-          "points": 18.5,
-          "percentage": 75.94,
+          "points": 21.5,
+          "percentage": 71.13,
           "marker": ""
         },
         {
           "position": 7,
           "team": "Royal South Yarra",
           "wins": 1,
-          "points": 18,
-          "percentage": 100.86,
+          "points": 19,
+          "percentage": 87.27,
           "marker": ""
         }
       ],
       "green_ball": false,
       "results_loaded_by_trols": null,
-      "fixtures": 24,
-      "completed_fixtures": 13,
+      "fixtures": 28,
+      "completed_fixtures": 16,
       "draw_fixtures": 56,
-      "singles_rubbers": 52,
-      "doubles_rubbers": 26,
-      "latest_round": 6,
+      "singles_rubbers": 64,
+      "doubles_rubbers": 32,
+      "latest_round": 7,
       "validation": "source discrepancies",
       "source_warnings": [
         "Incomplete TROLS score for AP011042 singles No. 1: ''. Missing score not inferred; excluded from ratings and game totals.",
@@ -2378,6 +2378,22 @@
       "official_standings": [
         {
           "position": 1,
+          "team": "Mentone",
+          "wins": 4,
+          "points": 44,
+          "percentage": 151.28,
+          "marker": ""
+        },
+        {
+          "position": 2,
+          "team": "Mordialloc",
+          "wins": 4,
+          "points": 40,
+          "percentage": 138.75,
+          "marker": ""
+        },
+        {
+          "position": 3,
           "team": "Royal Ave",
           "wins": 4,
           "points": 36,
@@ -2385,27 +2401,11 @@
           "marker": ""
         },
         {
-          "position": 2,
-          "team": "Mentone",
-          "wins": 3,
-          "points": 36,
-          "percentage": 148.74,
-          "marker": ""
-        },
-        {
-          "position": 3,
-          "team": "Mordialloc",
-          "wins": 3,
-          "points": 30,
-          "percentage": 131.67,
-          "marker": ""
-        },
-        {
           "position": 4,
           "team": "Le Page",
-          "wins": 2,
-          "points": 27,
-          "percentage": 90.48,
+          "wins": 3,
+          "points": 35,
+          "percentage": 98.94,
           "marker": ""
         },
         {
@@ -2413,34 +2413,34 @@
           "team": "BLTC",
           "wins": 2,
           "points": 20,
-          "percentage": 89.91,
+          "percentage": 83.9,
           "marker": ""
         },
         {
           "position": 6,
           "team": "St Louis de Mont Red",
           "wins": 1,
-          "points": 16,
-          "percentage": 61.5,
+          "points": 18,
+          "percentage": 64.79,
           "marker": ""
         },
         {
           "position": 7,
           "team": "St Louis de Mont Blue",
           "wins": 1,
-          "points": 15,
-          "percentage": 57.56,
+          "points": 17,
+          "percentage": 58.71,
           "marker": ""
         }
       ],
       "green_ball": false,
       "results_loaded_by_trols": null,
-      "fixtures": 24,
-      "completed_fixtures": 13,
+      "fixtures": 28,
+      "completed_fixtures": 16,
       "draw_fixtures": 56,
-      "singles_rubbers": 52,
-      "doubles_rubbers": 26,
-      "latest_round": 6,
+      "singles_rubbers": 64,
+      "doubles_rubbers": 32,
+      "latest_round": 7,
       "validation": "passed",
       "source_warnings": []
     },
@@ -2488,6 +2488,22 @@
       "official_standings": [
         {
           "position": 1,
+          "team": "BLTC Blue",
+          "wins": 3,
+          "points": 40,
+          "percentage": 176.92,
+          "marker": ""
+        },
+        {
+          "position": 2,
+          "team": "Royal South Yarra",
+          "wins": 4,
+          "points": 40,
+          "percentage": 130.46,
+          "marker": ""
+        },
+        {
+          "position": 3,
           "team": "BLTC White",
           "wins": 2,
           "points": 36,
@@ -2495,43 +2511,27 @@
           "marker": ""
         },
         {
-          "position": 2,
-          "team": "Royal South Yarra",
-          "wins": 3,
-          "points": 33,
-          "percentage": 139.19,
-          "marker": ""
-        },
-        {
-          "position": 3,
-          "team": "BLTC Blue",
-          "wins": 2,
-          "points": 31,
-          "percentage": 158.76,
-          "marker": ""
-        },
-        {
           "position": 4,
           "team": "East Malvern Blue",
           "wins": 2,
-          "points": 30,
-          "percentage": 147.17,
+          "points": 33,
+          "percentage": 130.57,
           "marker": ""
         },
         {
           "position": 5,
           "team": "Altona",
-          "wins": 2,
-          "points": 23,
-          "percentage": 89.95,
+          "wins": 3,
+          "points": 33,
+          "percentage": 111.82,
           "marker": ""
         },
         {
           "position": 6,
           "team": "East Malvern Navy",
           "wins": 0,
-          "points": 17,
-          "percentage": 67.35,
+          "points": 18,
+          "percentage": 59.5,
           "marker": ""
         },
         {
@@ -2539,18 +2539,18 @@
           "team": "BLTC Light",
           "wins": 0,
           "points": 10,
-          "percentage": 23.21,
+          "percentage": 23.56,
           "marker": ""
         }
       ],
       "green_ball": false,
       "results_loaded_by_trols": null,
-      "fixtures": 24,
-      "completed_fixtures": 12,
+      "fixtures": 28,
+      "completed_fixtures": 15,
       "draw_fixtures": 56,
-      "singles_rubbers": 48,
-      "doubles_rubbers": 24,
-      "latest_round": 6,
+      "singles_rubbers": 60,
+      "doubles_rubbers": 30,
+      "latest_round": 7,
       "validation": "source discrepancies",
       "source_warnings": [
         "Incomplete TROLS score for AP013041 singles No. 1: '1-1'. Missing score not inferred; excluded from ratings and game totals.",
@@ -2601,22 +2601,38 @@
       "official_standings": [
         {
           "position": 1,
-          "team": "Hawthorn",
+          "team": "BLTC White",
           "wins": 4,
-          "points": 36,
-          "percentage": 132.43,
+          "points": 42,
+          "percentage": 184.26,
           "marker": ""
         },
         {
           "position": 2,
-          "team": "BLTC White",
-          "wins": 3,
-          "points": 34,
-          "percentage": 175.0,
+          "team": "Hawthorn",
+          "wins": 4,
+          "points": 38,
+          "percentage": 113.5,
           "marker": ""
         },
         {
           "position": 3,
+          "team": "Kooyong",
+          "wins": 3,
+          "points": 34,
+          "percentage": 98.54,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Lauriston",
+          "wins": 3,
+          "points": 33,
+          "percentage": 108.29,
+          "marker": ""
+        },
+        {
+          "position": 5,
           "team": "BLTC Blue",
           "wins": 2,
           "points": 27,
@@ -2624,46 +2640,30 @@
           "marker": ""
         },
         {
-          "position": 4,
-          "team": "Kooyong",
-          "wins": 2,
-          "points": 26,
-          "percentage": 89.94,
-          "marker": ""
-        },
-        {
-          "position": 5,
-          "team": "Lauriston",
-          "wins": 2,
-          "points": 25,
-          "percentage": 101.12,
-          "marker": ""
-        },
-        {
           "position": 6,
           "team": "Overport Park",
           "wins": 1,
-          "points": 17,
-          "percentage": 74.87,
+          "points": 19,
+          "percentage": 74.38,
           "marker": ""
         },
         {
           "position": 7,
           "team": "Royal South Yarra",
           "wins": 0,
-          "points": 15,
-          "percentage": 59.09,
+          "points": 17,
+          "percentage": 60.0,
           "marker": ""
         }
       ],
       "green_ball": false,
       "results_loaded_by_trols": null,
-      "fixtures": 24,
-      "completed_fixtures": 14,
+      "fixtures": 28,
+      "completed_fixtures": 17,
       "draw_fixtures": 56,
-      "singles_rubbers": 56,
-      "doubles_rubbers": 28,
-      "latest_round": 6,
+      "singles_rubbers": 68,
+      "doubles_rubbers": 34,
+      "latest_round": 7,
       "validation": "source discrepancies",
       "source_warnings": [
         "Incomplete TROLS score for AP014043 singles No. 1: '3-0'. Missing score not inferred; excluded from ratings and game totals."
@@ -2714,68 +2714,68 @@
         {
           "position": 1,
           "team": "Kooyong",
-          "wins": 4,
-          "points": 42,
-          "percentage": 253.01,
+          "wins": 5,
+          "points": 51,
+          "percentage": 226.05,
           "marker": ""
         },
         {
           "position": 2,
           "team": "East Malvern Blue",
           "wins": 3,
-          "points": 34,
-          "percentage": 129.11,
+          "points": 36,
+          "percentage": 117.54,
           "marker": ""
         },
         {
           "position": 3,
           "team": "Chadstone",
           "wins": 3,
-          "points": 31.5,
-          "percentage": 115.17,
+          "points": 32.5,
+          "percentage": 101.69,
           "marker": ""
         },
         {
           "position": 4,
-          "team": "East Malvern Navy",
-          "wins": 1,
-          "points": 20,
-          "percentage": 69.59,
+          "team": "BLTC Blue",
+          "wins": 2,
+          "points": 27,
+          "percentage": 86.11,
           "marker": ""
         },
         {
           "position": 5,
-          "team": "BLTC Blue",
-          "wins": 1,
-          "points": 19,
-          "percentage": 80.84,
+          "team": "BLTC White",
+          "wins": 2,
+          "points": 24.5,
+          "percentage": 82.02,
           "marker": ""
         },
         {
           "position": 6,
+          "team": "East Malvern Navy",
+          "wins": 1,
+          "points": 22,
+          "percentage": 75.68,
+          "marker": ""
+        },
+        {
+          "position": 7,
           "team": "Tennis World",
           "wins": 0,
           "points": 17,
           "percentage": 70.4,
           "marker": ""
-        },
-        {
-          "position": 7,
-          "team": "BLTC White",
-          "wins": 1,
-          "points": 16.5,
-          "percentage": 72.83,
-          "marker": ""
         }
       ],
       "green_ball": false,
       "results_loaded_by_trols": null,
-      "fixtures": 24,
-      "completed_fixtures": 14,
+      "fixtures": 28,
+      "completed_fixtures": 17,
       "draw_fixtures": 56,
-      "singles_rubbers": 56,
-      "doubles_rubbers": 28,
-      "latest_round": 6,
+      "singles_rubbers": 68,
+      "doubles_rubbers": 34,
+      "latest_round": 7,
       "validation": "source discrepancies",
       "source_warnings": [
         "Incomplete TROLS score for AP015041 singles No. 1: '4-4'. Missing score not inferred; excluded from ratings and game totals.",
@@ -2830,21 +2830,45 @@
         {
           "position": 1,
           "team": "Kooyong Green",
-          "wins": 3,
-          "points": 34,
-          "percentage": 121.47,
+          "wins": 4,
+          "points": 43,
+          "percentage": 130.41,
           "marker": ""
         },
         {
           "position": 2,
           "team": "Hurlingham Park",
           "wins": 3,
-          "points": 33,
-          "percentage": 129.21,
+          "points": 34,
+          "percentage": 112.02,
           "marker": ""
         },
         {
           "position": 3,
+          "team": "Mordialloc",
+          "wins": 2,
+          "points": 30,
+          "percentage": 98.25,
+          "marker": ""
+        },
+        {
+          "position": 4,
+          "team": "Royal South Yarra",
+          "wins": 3,
+          "points": 28,
+          "percentage": 89.23,
+          "marker": ""
+        },
+        {
+          "position": 5,
+          "team": "Tennis World",
+          "wins": 2,
+          "points": 26,
+          "percentage": 94.78,
+          "marker": ""
+        },
+        {
+          "position": 6,
           "team": "Kooyong Purple",
           "wins": 2,
           "points": 25,
@@ -2852,46 +2876,22 @@
           "marker": ""
         },
         {
-          "position": 4,
+          "position": 7,
           "team": "Glenvale",
           "wins": 1,
-          "points": 23,
-          "percentage": 92.62,
-          "marker": ""
-        },
-        {
-          "position": 5,
-          "team": "Tennis World",
-          "wins": 2,
-          "points": 23,
-          "percentage": 92.2,
-          "marker": ""
-        },
-        {
-          "position": 6,
-          "team": "Mordialloc",
-          "wins": 1,
-          "points": 21,
-          "percentage": 89.64,
-          "marker": ""
-        },
-        {
-          "position": 7,
-          "team": "Royal South Yarra",
-          "wins": 2,
-          "points": 21,
-          "percentage": 88.26,
+          "points": 24,
+          "percentage": 86.57,
           "marker": ""
         }
       ],
       "green_ball": false,
       "results_loaded_by_trols": null,
-      "fixtures": 24,
-      "completed_fixtures": 14,
+      "fixtures": 28,
+      "completed_fixtures": 17,
       "draw_fixtures": 56,
-      "singles_rubbers": 56,
-      "doubles_rubbers": 28,
-      "latest_round": 6,
+      "singles_rubbers": 68,
+      "doubles_rubbers": 34,
+      "latest_round": 7,
       "validation": "passed",
       "source_warnings": []
     },
@@ -2937,59 +2937,59 @@
           "position": 1,
           "team": "Royal South Yarra",
           "wins": 5,
-          "points": 40.5,
-          "percentage": 190.55,
+          "points": 41.5,
+          "percentage": 153.23,
           "marker": ""
         },
         {
           "position": 2,
           "team": "Parkdale",
           "wins": 3,
-          "points": 28,
-          "percentage": 104.61,
+          "points": 29,
+          "percentage": 103.33,
           "marker": ""
         },
         {
           "position": 3,
           "team": "Hawthorn",
-          "wins": 2,
-          "points": 21,
-          "percentage": 102.69,
+          "wins": 3,
+          "points": 28,
+          "percentage": 109.17,
           "marker": ""
         },
         {
           "position": 4,
           "team": "Overport Park",
-          "wins": 2,
-          "points": 20,
-          "percentage": 91.56,
+          "wins": 3,
+          "points": 27,
+          "percentage": 93.5,
           "marker": ""
         },
         {
           "position": 5,
-          "team": "Sth Hawthorn",
+          "team": "Black Rock",
           "wins": 2,
-          "points": 20,
-          "percentage": 81.6,
+          "points": 21.5,
+          "percentage": 78.07,
           "marker": ""
         },
         {
           "position": 6,
-          "team": "Black Rock",
-          "wins": 1,
-          "points": 14.5,
-          "percentage": 70.0,
+          "team": "Sth Hawthorn",
+          "wins": 2,
+          "points": 21,
+          "percentage": 79.53,
           "marker": ""
         }
       ],
       "green_ball": false,
       "results_loaded_by_trols": null,
-      "fixtures": 18,
-      "completed_fixtures": 15,
+      "fixtures": 21,
+      "completed_fixtures": 18,
       "draw_fixtures": 45,
       "singles_rubbers": 0,
-      "doubles_rubbers": 60,
-      "latest_round": 6,
+      "doubles_rubbers": 72,
+      "latest_round": 7,
       "validation": "passed",
       "source_warnings": []
     },
@@ -3037,58 +3037,58 @@
       "official_standings": [
         {
           "position": 1,
-          "team": "Mordialloc",
+          "team": "BLTC",
           "wins": 4,
-          "points": 34,
-          "percentage": 124.58,
+          "points": 40,
+          "percentage": 113.71,
           "marker": ""
         },
         {
           "position": 2,
-          "team": "BLTC",
+          "team": "Elwood Green",
           "wins": 3,
-          "points": 33,
-          "percentage": 114.93,
+          "points": 34,
+          "percentage": 126.49,
           "marker": ""
         },
         {
           "position": 3,
-          "team": "Hawthorn",
-          "wins": 3,
-          "points": 30,
-          "percentage": 118.88,
-          "marker": ""
+          "team": "Mordialloc",
+          "wins": 4,
+          "points": 34,
+          "percentage": 124.58,
+          "marker": "*"
         },
         {
           "position": 4,
           "team": "Elwood Yellow",
           "wins": 3,
-          "points": 29,
-          "percentage": 123.33,
+          "points": 30,
+          "percentage": 117.65,
           "marker": ""
         },
         {
           "position": 5,
-          "team": "Elwood Green",
-          "wins": 2,
-          "points": 26,
-          "percentage": 110.71,
+          "team": "Hawthorn",
+          "wins": 3,
+          "points": 30,
+          "percentage": 97.91,
           "marker": ""
         },
         {
           "position": 6,
           "team": "Tally Ho",
           "wins": 2,
-          "points": 19,
-          "percentage": 91.2,
+          "points": 20,
+          "percentage": 93.0,
           "marker": ""
         },
         {
           "position": 7,
           "team": "Ormond",
-          "wins": 1,
-          "points": 12,
-          "percentage": 77.13,
+          "wins": 2,
+          "points": 19,
+          "percentage": 80.58,
           "marker": ""
         },
         {
@@ -3097,17 +3097,17 @@
           "wins": 0,
           "points": 9,
           "percentage": 70.61,
-          "marker": ""
+          "marker": "*"
         }
       ],
       "green_ball": false,
       "results_loaded_by_trols": null,
-      "fixtures": 24,
-      "completed_fixtures": 18,
+      "fixtures": 28,
+      "completed_fixtures": 21,
       "draw_fixtures": 56,
       "singles_rubbers": 0,
-      "doubles_rubbers": 72,
-      "latest_round": 6,
+      "doubles_rubbers": 84,
+      "latest_round": 7,
       "validation": "passed",
       "source_warnings": []
     },
@@ -3155,22 +3155,30 @@
       "official_standings": [
         {
           "position": 1,
-          "team": "Highmoor Uniting",
+          "team": "Kings Park",
           "wins": 5,
-          "points": 36,
-          "percentage": 153.55,
+          "points": 41,
+          "percentage": 151.8,
           "marker": ""
         },
         {
           "position": 2,
-          "team": "Kings Park",
-          "wins": 4,
-          "points": 34,
-          "percentage": 171.74,
+          "team": "Highmoor Uniting",
+          "wins": 5,
+          "points": 37,
+          "percentage": 137.02,
           "marker": ""
         },
         {
           "position": 3,
+          "team": "Coatesville",
+          "wins": 2,
+          "points": 24,
+          "percentage": 125.9,
+          "marker": ""
+        },
+        {
+          "position": 4,
           "team": "Hurlingham Park",
           "wins": 2,
           "points": 21,
@@ -3178,27 +3186,19 @@
           "marker": ""
         },
         {
-          "position": 4,
+          "position": 5,
           "team": "Parkdale",
           "wins": 2,
-          "points": 20,
-          "percentage": 80.23,
-          "marker": ""
-        },
-        {
-          "position": 5,
-          "team": "Coatesville",
-          "wins": 1,
-          "points": 16,
-          "percentage": 108.05,
+          "points": 21,
+          "percentage": 80.82,
           "marker": ""
         },
         {
           "position": 6,
           "team": "Port Melbourne",
-          "wins": 1,
-          "points": 11,
-          "percentage": 68.75,
+          "wins": 2,
+          "points": 18,
+          "percentage": 80.84,
           "marker": ""
         },
         {
@@ -3206,18 +3206,18 @@
           "team": "Elwood",
           "wins": 0,
           "points": 6,
-          "percentage": 68.84,
+          "percentage": 62.35,
           "marker": ""
         }
       ],
       "green_ball": false,
       "results_loaded_by_trols": null,
-      "fixtures": 24,
-      "completed_fixtures": 14,
+      "fixtures": 28,
+      "completed_fixtures": 17,
       "draw_fixtures": 56,
       "singles_rubbers": 0,
-      "doubles_rubbers": 56,
-      "latest_round": 6,
+      "doubles_rubbers": 68,
+      "latest_round": 7,
       "validation": "passed",
       "source_warnings": []
     },
@@ -3266,49 +3266,49 @@
         {
           "position": 1,
           "team": "Langwarrin White",
-          "wins": 4,
-          "points": 36,
-          "percentage": 167.81,
+          "wins": 5,
+          "points": 42,
+          "percentage": 153.97,
           "marker": ""
         },
         {
           "position": 2,
-          "team": "Pakenham",
+          "team": "Victory Park",
           "wins": 4,
-          "points": 35,
-          "percentage": 115.12,
+          "points": 39,
+          "percentage": 130.58,
           "marker": ""
         },
         {
           "position": 3,
-          "team": "Victory Park",
-          "wins": 3,
-          "points": 31,
-          "percentage": 129.15,
+          "team": "Pakenham",
+          "wins": 4,
+          "points": 35,
+          "percentage": 105.68,
           "marker": ""
         },
         {
           "position": 4,
           "team": "Langwarrin Blue",
           "wins": 3,
-          "points": 30,
-          "percentage": 144.36,
+          "points": 32,
+          "percentage": 131.28,
           "marker": ""
         },
         {
           "position": 5,
           "team": "Le Page",
-          "wins": 2,
-          "points": 24,
-          "percentage": 96.86,
+          "wins": 3,
+          "points": 32,
+          "percentage": 104.26,
           "marker": ""
         },
         {
           "position": 6,
           "team": "Black Rock",
-          "wins": 1,
-          "points": 16,
-          "percentage": 60.11,
+          "wins": 2,
+          "points": 23,
+          "percentage": 73.09,
           "marker": ""
         },
         {
@@ -3316,26 +3316,26 @@
           "team": "Mentone Yellow",
           "wins": 1,
           "points": 14,
-          "percentage": 81.12,
+          "percentage": 78.32,
           "marker": ""
         },
         {
           "position": 8,
           "team": "Mentone Gold",
           "wins": 0,
-          "points": 6,
-          "percentage": 53.64,
+          "points": 7,
+          "percentage": 56.27,
           "marker": ""
         }
       ],
       "green_ball": false,
       "results_loaded_by_trols": null,
-      "fixtures": 24,
-      "completed_fixtures": 19,
+      "fixtures": 28,
+      "completed_fixtures": 23,
       "draw_fixtures": 56,
       "singles_rubbers": 0,
-      "doubles_rubbers": 76,
-      "latest_round": 6,
+      "doubles_rubbers": 92,
+      "latest_round": 7,
       "validation": "passed",
       "source_warnings": []
     },
@@ -3379,42 +3379,42 @@
       "official_standings": [
         {
           "position": 1,
-          "team": "Hurlingham Park",
-          "wins": 2,
-          "points": 32,
-          "percentage": 186.87,
+          "team": "Kooyong",
+          "wins": 4,
+          "points": 38,
+          "percentage": 162.31,
           "marker": ""
         },
         {
           "position": 2,
           "team": "St Louis de Mont",
-          "wins": 4,
-          "points": 31,
-          "percentage": 101.5,
+          "wins": 5,
+          "points": 38,
+          "percentage": 105.93,
           "marker": ""
         },
         {
           "position": 3,
-          "team": "Kooyong",
-          "wins": 3,
-          "points": 30,
-          "percentage": 157.28,
+          "team": "Hurlingham Park",
+          "wins": 2,
+          "points": 32,
+          "percentage": 143.24,
           "marker": ""
         },
         {
           "position": 4,
           "team": "Fitzroy",
           "wins": 2,
-          "points": 25,
-          "percentage": 97.53,
+          "points": 26,
+          "percentage": 92.82,
           "marker": ""
         },
         {
           "position": 5,
           "team": "Legend Park",
-          "wins": 1,
-          "points": 16,
-          "percentage": 74.59,
+          "wins": 2,
+          "points": 24,
+          "percentage": 87.73,
           "marker": ""
         },
         {
@@ -3422,18 +3422,18 @@
           "team": "Port Melbourne",
           "wins": 0,
           "points": 9,
-          "percentage": 56.83,
+          "percentage": 58.95,
           "marker": ""
         }
       ],
       "green_ball": false,
       "results_loaded_by_trols": null,
-      "fixtures": 18,
-      "completed_fixtures": 13,
+      "fixtures": 21,
+      "completed_fixtures": 16,
       "draw_fixtures": 45,
       "singles_rubbers": 0,
-      "doubles_rubbers": 52,
-      "latest_round": 6,
+      "doubles_rubbers": 64,
+      "latest_round": 7,
       "validation": "passed",
       "source_warnings": []
     },
@@ -3478,41 +3478,41 @@
         {
           "position": 1,
           "team": "Chadstone",
-          "wins": 4,
-          "points": 35,
-          "percentage": 166.2,
+          "wins": 5,
+          "points": 43,
+          "percentage": 186.27,
           "marker": ""
         },
         {
           "position": 2,
           "team": "Overport Park Green",
-          "wins": 4,
-          "points": 35,
-          "percentage": 138.29,
+          "wins": 5,
+          "points": 42,
+          "percentage": 133.64,
           "marker": ""
         },
         {
           "position": 3,
           "team": "Hawthorn",
           "wins": 3,
-          "points": 32,
-          "percentage": 160.34,
+          "points": 33,
+          "percentage": 139.02,
           "marker": ""
         },
         {
           "position": 4,
           "team": "Mentone",
-          "wins": 1,
-          "points": 16,
-          "percentage": 71.79,
+          "wins": 2,
+          "points": 23,
+          "percentage": 79.18,
           "marker": ""
         },
         {
           "position": 5,
           "team": "Overport Park Gold",
           "wins": 1,
-          "points": 14,
-          "percentage": 71.86,
+          "points": 15,
+          "percentage": 72.83,
           "marker": ""
         },
         {
@@ -3520,18 +3520,18 @@
           "team": "Ormond",
           "wins": 0,
           "points": 12,
-          "percentage": 50.98,
+          "percentage": 45.45,
           "marker": ""
         }
       ],
       "green_ball": false,
       "results_loaded_by_trols": null,
-      "fixtures": 18,
-      "completed_fixtures": 14,
+      "fixtures": 21,
+      "completed_fixtures": 17,
       "draw_fixtures": 45,
       "singles_rubbers": 0,
-      "doubles_rubbers": 56,
-      "latest_round": 6,
+      "doubles_rubbers": 68,
+      "latest_round": 7,
       "validation": "passed",
       "source_warnings": []
     },

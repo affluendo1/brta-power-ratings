@@ -28,36 +28,60 @@
   "calendar_events": [
     {
       "date": "27 Feb 27",
-      "label": "Semi Final \u00b7 if qualified"
+      "label": "Semi Final · if qualified"
     },
     {
       "date": "13 Mar 27",
-      "label": "Grand Final \u00b7 if qualified"
+      "label": "Grand Final · if qualified"
     },
     {
       "date": "20 Mar 27",
-      "label": "Spare \u00b7 if required"
+      "label": "Spare · if required"
     }
   ],
   "official_standings": [
     {
       "position": 1,
       "team": "Kooyong Green",
-      "wins": 3,
-      "points": 34,
-      "percentage": 121.47,
+      "wins": 4,
+      "points": 43,
+      "percentage": 130.41,
       "marker": ""
     },
     {
       "position": 2,
       "team": "Hurlingham Park",
       "wins": 3,
-      "points": 33,
-      "percentage": 129.21,
+      "points": 34,
+      "percentage": 112.02,
       "marker": ""
     },
     {
       "position": 3,
+      "team": "Mordialloc",
+      "wins": 2,
+      "points": 30,
+      "percentage": 98.25,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Royal South Yarra",
+      "wins": 3,
+      "points": 28,
+      "percentage": 89.23,
+      "marker": ""
+    },
+    {
+      "position": 5,
+      "team": "Tennis World",
+      "wins": 2,
+      "points": 26,
+      "percentage": 94.78,
+      "marker": ""
+    },
+    {
+      "position": 6,
       "team": "Kooyong Purple",
       "wins": 2,
       "points": 25,
@@ -65,46 +89,22 @@
       "marker": ""
     },
     {
-      "position": 4,
+      "position": 7,
       "team": "Glenvale",
       "wins": 1,
-      "points": 23,
-      "percentage": 92.62,
-      "marker": ""
-    },
-    {
-      "position": 5,
-      "team": "Tennis World",
-      "wins": 2,
-      "points": 23,
-      "percentage": 92.2,
-      "marker": ""
-    },
-    {
-      "position": 6,
-      "team": "Mordialloc",
-      "wins": 1,
-      "points": 21,
-      "percentage": 89.64,
-      "marker": ""
-    },
-    {
-      "position": 7,
-      "team": "Royal South Yarra",
-      "wins": 2,
-      "points": 21,
-      "percentage": 88.26,
+      "points": 24,
+      "percentage": 86.57,
       "marker": ""
     }
   ],
   "green_ball": false,
   "results_loaded_by_trols": null,
-  "fixtures": 24,
-  "completed_fixtures": 14,
+  "fixtures": 28,
+  "completed_fixtures": 17,
   "draw_fixtures": 56,
-  "singles_rubbers": 56,
-  "doubles_rubbers": 28,
-  "latest_round": 6,
+  "singles_rubbers": 68,
+  "doubles_rubbers": 34,
+  "latest_round": 7,
   "validation": "passed",
   "source_warnings": []
 }

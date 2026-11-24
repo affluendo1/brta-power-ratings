@@ -28,64 +28,64 @@
   "calendar_events": [
     {
       "date": "27 Feb 27",
-      "label": "Semi Final \u00b7 if qualified"
+      "label": "Semi Final · if qualified"
     },
     {
       "date": "13 Mar 27",
-      "label": "Grand Final \u00b7 if qualified"
+      "label": "Grand Final · if qualified"
     },
     {
       "date": "20 Mar 27",
-      "label": "Spare \u00b7 if required"
+      "label": "Spare · if required"
     }
   ],
   "official_standings": [
     {
       "position": 1,
       "team": "Langwarrin White",
-      "wins": 4,
-      "points": 36,
-      "percentage": 167.81,
+      "wins": 5,
+      "points": 42,
+      "percentage": 153.97,
       "marker": ""
     },
     {
       "position": 2,
-      "team": "Pakenham",
+      "team": "Victory Park",
       "wins": 4,
-      "points": 35,
-      "percentage": 115.12,
+      "points": 39,
+      "percentage": 130.58,
       "marker": ""
     },
     {
       "position": 3,
-      "team": "Victory Park",
-      "wins": 3,
-      "points": 31,
-      "percentage": 129.15,
+      "team": "Pakenham",
+      "wins": 4,
+      "points": 35,
+      "percentage": 105.68,
       "marker": ""
     },
     {
       "position": 4,
       "team": "Langwarrin Blue",
       "wins": 3,
-      "points": 30,
-      "percentage": 144.36,
+      "points": 32,
+      "percentage": 131.28,
       "marker": ""
     },
     {
       "position": 5,
       "team": "Le Page",
-      "wins": 2,
-      "points": 24,
-      "percentage": 96.86,
+      "wins": 3,
+      "points": 32,
+      "percentage": 104.26,
       "marker": ""
     },
     {
       "position": 6,
       "team": "Black Rock",
-      "wins": 1,
-      "points": 16,
-      "percentage": 60.11,
+      "wins": 2,
+      "points": 23,
+      "percentage": 73.09,
       "marker": ""
     },
     {
@@ -93,26 +93,26 @@
       "team": "Mentone Yellow",
       "wins": 1,
       "points": 14,
-      "percentage": 81.12,
+      "percentage": 78.32,
       "marker": ""
     },
     {
       "position": 8,
       "team": "Mentone Gold",
       "wins": 0,
-      "points": 6,
-      "percentage": 53.64,
+      "points": 7,
+      "percentage": 56.27,
       "marker": ""
     }
   ],
   "green_ball": false,
   "results_loaded_by_trols": null,
-  "fixtures": 24,
-  "completed_fixtures": 19,
+  "fixtures": 28,
+  "completed_fixtures": 23,
   "draw_fixtures": 56,
   "singles_rubbers": 0,
-  "doubles_rubbers": 76,
-  "latest_round": 6,
+  "doubles_rubbers": 92,
+  "latest_round": 7,
   "validation": "passed",
   "source_warnings": []
 }

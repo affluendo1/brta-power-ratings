@@ -28,52 +28,52 @@
   "calendar_events": [
     {
       "date": "13 Mar 27",
-      "label": "Grand Final \u00b7 if qualified"
+      "label": "Grand Final · if qualified"
     },
     {
       "date": "20 Mar 27",
-      "label": "Spare \u00b7 if required"
+      "label": "Spare · if required"
     }
   ],
   "official_standings": [
     {
       "position": 1,
-      "team": "Hurlingham Park",
-      "wins": 2,
-      "points": 32,
-      "percentage": 186.87,
+      "team": "Kooyong",
+      "wins": 4,
+      "points": 38,
+      "percentage": 162.31,
       "marker": ""
     },
     {
       "position": 2,
       "team": "St Louis de Mont",
-      "wins": 4,
-      "points": 31,
-      "percentage": 101.5,
+      "wins": 5,
+      "points": 38,
+      "percentage": 105.93,
       "marker": ""
     },
     {
       "position": 3,
-      "team": "Kooyong",
-      "wins": 3,
-      "points": 30,
-      "percentage": 157.28,
+      "team": "Hurlingham Park",
+      "wins": 2,
+      "points": 32,
+      "percentage": 143.24,
       "marker": ""
     },
     {
       "position": 4,
       "team": "Fitzroy",
       "wins": 2,
-      "points": 25,
-      "percentage": 97.53,
+      "points": 26,
+      "percentage": 92.82,
       "marker": ""
     },
     {
       "position": 5,
       "team": "Legend Park",
-      "wins": 1,
-      "points": 16,
-      "percentage": 74.59,
+      "wins": 2,
+      "points": 24,
+      "percentage": 87.73,
       "marker": ""
     },
     {
@@ -81,18 +81,18 @@
       "team": "Port Melbourne",
       "wins": 0,
       "points": 9,
-      "percentage": 56.83,
+      "percentage": 58.95,
       "marker": ""
     }
   ],
   "green_ball": false,
   "results_loaded_by_trols": null,
-  "fixtures": 18,
-  "completed_fixtures": 13,
+  "fixtures": 21,
+  "completed_fixtures": 16,
   "draw_fixtures": 45,
   "singles_rubbers": 0,
-  "doubles_rubbers": 52,
-  "latest_round": 6,
+  "doubles_rubbers": 64,
+  "latest_round": 7,
   "validation": "passed",
   "source_warnings": []
 }

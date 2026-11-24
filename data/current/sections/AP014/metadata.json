@@ -28,36 +28,52 @@
   "calendar_events": [
     {
       "date": "27 Feb 27",
-      "label": "Semi Final \u00b7 if qualified"
+      "label": "Semi Final · if qualified"
     },
     {
       "date": "13 Mar 27",
-      "label": "Grand Final \u00b7 if qualified"
+      "label": "Grand Final · if qualified"
     },
     {
       "date": "20 Mar 27",
-      "label": "Spare \u00b7 if required"
+      "label": "Spare · if required"
     }
   ],
   "official_standings": [
     {
       "position": 1,
-      "team": "Hawthorn",
+      "team": "BLTC White",
       "wins": 4,
-      "points": 36,
-      "percentage": 132.43,
+      "points": 42,
+      "percentage": 184.26,
       "marker": ""
     },
     {
       "position": 2,
-      "team": "BLTC White",
-      "wins": 3,
-      "points": 34,
-      "percentage": 175.0,
+      "team": "Hawthorn",
+      "wins": 4,
+      "points": 38,
+      "percentage": 113.5,
       "marker": ""
     },
     {
       "position": 3,
+      "team": "Kooyong",
+      "wins": 3,
+      "points": 34,
+      "percentage": 98.54,
+      "marker": ""
+    },
+    {
+      "position": 4,
+      "team": "Lauriston",
+      "wins": 3,
+      "points": 33,
+      "percentage": 108.29,
+      "marker": ""
+    },
+    {
+      "position": 5,
       "team": "BLTC Blue",
       "wins": 2,
       "points": 27,
@@ -65,46 +81,30 @@
       "marker": ""
     },
     {
-      "position": 4,
-      "team": "Kooyong",
-      "wins": 2,
-      "points": 26,
-      "percentage": 89.94,
-      "marker": ""
-    },
-    {
-      "position": 5,
-      "team": "Lauriston",
-      "wins": 2,
-      "points": 25,
-      "percentage": 101.12,
-      "marker": ""
-    },
-    {
       "position": 6,
       "team": "Overport Park",
       "wins": 1,
-      "points": 17,
-      "percentage": 74.87,
+      "points": 19,
+      "percentage": 74.38,
       "marker": ""
     },
     {
       "position": 7,
       "team": "Royal South Yarra",
       "wins": 0,
-      "points": 15,
-      "percentage": 59.09,
+      "points": 17,
+      "percentage": 60.0,
       "marker": ""
     }
   ],
   "green_ball": false,
   "results_loaded_by_trols": null,
-  "fixtures": 24,
-  "completed_fixtures": 14,
+  "fixtures": 28,
+  "completed_fixtures": 17,
   "draw_fixtures": 56,
-  "singles_rubbers": 56,
-  "doubles_rubbers": 28,
-  "latest_round": 6,
+  "singles_rubbers": 68,
+  "doubles_rubbers": 34,
+  "latest_round": 7,
   "validation": "source discrepancies",
   "source_warnings": [
     "Incomplete TROLS score for AP014043 singles No. 1: '3-0'. Missing score not inferred; excluded from ratings and game totals."

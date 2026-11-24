@@ -28,72 +28,72 @@
   "calendar_events": [
     {
       "date": "27 Feb 27",
-      "label": "Semi Final \u00b7 if qualified"
+      "label": "Semi Final · if qualified"
     },
     {
       "date": "13 Mar 27",
-      "label": "Grand Final \u00b7 if qualified"
+      "label": "Grand Final · if qualified"
     },
     {
       "date": "20 Mar 27",
-      "label": "Spare \u00b7 if required"
+      "label": "Spare · if required"
     }
   ],
   "official_standings": [
     {
       "position": 1,
-      "team": "Mordialloc",
+      "team": "BLTC",
       "wins": 4,
-      "points": 34,
-      "percentage": 124.58,
+      "points": 40,
+      "percentage": 113.71,
       "marker": ""
     },
     {
       "position": 2,
-      "team": "BLTC",
+      "team": "Elwood Green",
       "wins": 3,
-      "points": 33,
-      "percentage": 114.93,
+      "points": 34,
+      "percentage": 126.49,
       "marker": ""
     },
     {
       "position": 3,
-      "team": "Hawthorn",
-      "wins": 3,
-      "points": 30,
-      "percentage": 118.88,
-      "marker": ""
+      "team": "Mordialloc",
+      "wins": 4,
+      "points": 34,
+      "percentage": 124.58,
+      "marker": "*"
     },
     {
       "position": 4,
       "team": "Elwood Yellow",
       "wins": 3,
-      "points": 29,
-      "percentage": 123.33,
+      "points": 30,
+      "percentage": 117.65,
       "marker": ""
     },
     {
       "position": 5,
-      "team": "Elwood Green",
-      "wins": 2,
-      "points": 26,
-      "percentage": 110.71,
+      "team": "Hawthorn",
+      "wins": 3,
+      "points": 30,
+      "percentage": 97.91,
       "marker": ""
     },
     {
       "position": 6,
       "team": "Tally Ho",
       "wins": 2,
-      "points": 19,
-      "percentage": 91.2,
+      "points": 20,
+      "percentage": 93.0,
       "marker": ""
     },
     {
       "position": 7,
       "team": "Ormond",
-      "wins": 1,
-      "points": 12,
-      "percentage": 77.13,
+      "wins": 2,
+      "points": 19,
+      "percentage": 80.58,
       "marker": ""
     },
     {
@@ -102,17 +102,17 @@
       "wins": 0,
       "points": 9,
       "percentage": 70.61,
-      "marker": ""
+      "marker": "*"
     }
   ],
   "green_ball": false,
   "results_loaded_by_trols": null,
-  "fixtures": 24,
-  "completed_fixtures": 18,
+  "fixtures": 28,
+  "completed_fixtures": 21,
   "draw_fixtures": 56,
   "singles_rubbers": 0,
-  "doubles_rubbers": 72,
-  "latest_round": 6,
+  "doubles_rubbers": 84,
+  "latest_round": 7,
   "validation": "passed",
   "source_warnings": []
 }

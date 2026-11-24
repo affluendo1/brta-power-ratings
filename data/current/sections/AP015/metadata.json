@@ -28,83 +28,83 @@
   "calendar_events": [
     {
       "date": "27 Feb 27",
-      "label": "Semi Final \u00b7 if qualified"
+      "label": "Semi Final · if qualified"
     },
     {
       "date": "13 Mar 27",
-      "label": "Grand Final \u00b7 if qualified"
+      "label": "Grand Final · if qualified"
     },
     {
       "date": "20 Mar 27",
-      "label": "Spare \u00b7 if required"
+      "label": "Spare · if required"
     }
   ],
   "official_standings": [
     {
       "position": 1,
       "team": "Kooyong",
-      "wins": 4,
-      "points": 42,
-      "percentage": 253.01,
+      "wins": 5,
+      "points": 51,
+      "percentage": 226.05,
       "marker": ""
     },
     {
       "position": 2,
       "team": "East Malvern Blue",
       "wins": 3,
-      "points": 34,
-      "percentage": 129.11,
+      "points": 36,
+      "percentage": 117.54,
       "marker": ""
     },
     {
       "position": 3,
       "team": "Chadstone",
       "wins": 3,
-      "points": 31.5,
-      "percentage": 115.17,
+      "points": 32.5,
+      "percentage": 101.69,
       "marker": ""
     },
     {
       "position": 4,
-      "team": "East Malvern Navy",
-      "wins": 1,
-      "points": 20,
-      "percentage": 69.59,
+      "team": "BLTC Blue",
+      "wins": 2,
+      "points": 27,
+      "percentage": 86.11,
       "marker": ""
     },
     {
       "position": 5,
-      "team": "BLTC Blue",
-      "wins": 1,
-      "points": 19,
-      "percentage": 80.84,
+      "team": "BLTC White",
+      "wins": 2,
+      "points": 24.5,
+      "percentage": 82.02,
       "marker": ""
     },
     {
       "position": 6,
+      "team": "East Malvern Navy",
+      "wins": 1,
+      "points": 22,
+      "percentage": 75.68,
+      "marker": ""
+    },
+    {
+      "position": 7,
       "team": "Tennis World",
       "wins": 0,
       "points": 17,
       "percentage": 70.4,
       "marker": ""
-    },
-    {
-      "position": 7,
-      "team": "BLTC White",
-      "wins": 1,
-      "points": 16.5,
-      "percentage": 72.83,
-      "marker": ""
     }
   ],
   "green_ball": false,
   "results_loaded_by_trols": null,
-  "fixtures": 24,
-  "completed_fixtures": 14,
+  "fixtures": 28,
+  "completed_fixtures": 17,
   "draw_fixtures": 56,
-  "singles_rubbers": 56,
-  "doubles_rubbers": 28,
-  "latest_round": 6,
+  "singles_rubbers": 68,
+  "doubles_rubbers": 34,
+  "latest_round": 7,
   "validation": "source discrepancies",
   "source_warnings": [
     "Incomplete TROLS score for AP015041 singles No. 1: '4-4'. Missing score not inferred; excluded from ratings and game totals.",
