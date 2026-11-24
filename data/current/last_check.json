@@ -1,17 +1,53 @@
 {
-  "changed_sections": [],
-  "last_positive": {
-    "checked_at_utc": "2026-11-22T09:24:25.936549+00:00",
-    "changed_sections": [],
-    "previous_completed_fixtures": 2611,
-    "completed_fixtures": 2611
-  },
-  "checked_at_utc": "2026-11-23T14:30:40.317870+00:00",
-  "new_results": false,
   "sections": 79,
-  "fixtures": 3670,
-  "completed_fixtures": 2611,
-  "singles_rubbers": 7796,
-  "doubles_rubbers": 6540,
-  "validation": "source discrepancies"
+  "fixtures": 3696,
+  "completed_fixtures": 2649,
+  "singles_rubbers": 7940,
+  "doubles_rubbers": 6612,
+  "validation": "source discrepancies",
+  "checked_at_utc": "2026-11-24T03:07:35.449682+00:00",
+  "new_results": true,
+  "changed_sections": [
+    "AA002",
+    "AA003",
+    "AA004",
+    "AA005",
+    "AA006",
+    "AA007",
+    "AA008",
+    "AA009",
+    "AA010",
+    "AA011",
+    "AA012",
+    "AA013",
+    "AA014",
+    "AA015",
+    "AA016",
+    "AA017",
+    "AA018"
+  ],
+  "last_positive": {
+    "checked_at_utc": "2026-11-24T03:07:35.449682+00:00",
+    "changed_sections": [
+      "AA002",
+      "AA003",
+      "AA004",
+      "AA005",
+      "AA006",
+      "AA007",
+      "AA008",
+      "AA009",
+      "AA010",
+      "AA011",
+      "AA012",
+      "AA013",
+      "AA014",
+      "AA015",
+      "AA016",
+      "AA017",
+      "AA018"
+    ],
+    "previous_completed_fixtures": 2611,
+    "completed_fixtures": 2649
+  }
 }

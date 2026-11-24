@@ -32,26 +32,26 @@
   "calendar_events": [
     {
       "date": "21 Nov 26",
-      "label": "Semi Final \u00b7 if qualified"
+      "label": "Semi Final · if qualified"
     },
     {
       "date": "28 Nov 26",
-      "label": "Grand Final \u00b7 if qualified"
+      "label": "Grand Final · if qualified"
     },
     {
       "date": "5 Dec 26",
-      "label": "Spare \u00b7 if required"
+      "label": "Spare · if required"
     }
   ],
   "official_standings": [],
   "green_ball": false,
   "results_loaded_by_trols": null,
-  "fixtures": 58,
-  "completed_fixtures": 23,
+  "fixtures": 59,
+  "completed_fixtures": 25,
   "draw_fixtures": 54,
-  "singles_rubbers": 92,
-  "doubles_rubbers": 46,
-  "latest_round": 16,
+  "singles_rubbers": 100,
+  "doubles_rubbers": 50,
+  "latest_round": 17,
   "validation": "source discrepancies",
   "source_warnings": [
     "Incomplete TROLS score for AA016061 singles No. 2: ''. Missing score not inferred; excluded from ratings and game totals.",

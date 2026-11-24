@@ -32,22 +32,22 @@
   "calendar_events": [
     {
       "date": "28 Nov 26",
-      "label": "Grand Final \u00b7 if qualified"
+      "label": "Grand Final · if qualified"
     },
     {
       "date": "5 Dec 26",
-      "label": "Spare \u00b7 if required"
+      "label": "Spare · if required"
     }
   ],
   "official_standings": [],
   "green_ball": false,
   "results_loaded_by_trols": null,
-  "fixtures": 42,
-  "completed_fixtures": 29,
+  "fixtures": 46,
+  "completed_fixtures": 32,
   "draw_fixtures": 45,
-  "singles_rubbers": 116,
-  "doubles_rubbers": 58,
-  "latest_round": 14,
+  "singles_rubbers": 128,
+  "doubles_rubbers": 64,
+  "latest_round": 16,
   "validation": "passed",
   "source_warnings": []
 }
