@@ -1,7 +1,6 @@
 ((root) => {
   'use strict';
   const MONTHS = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec'];
-  const MONTH_MS = 86400000 * 30.4375;
   function matchTime(value) {
     const iso = /^(\d{4})-(\d{2})-(\d{2})$/.exec(value || '');
     if (iso) return Date.UTC(+iso[1], +iso[2] - 1, +iso[3]);
@@ -66,7 +65,7 @@
 
   // validation/calibrate_career_skill.py selects this bounded form adjustment
   // on past BRTA junior singles and measures it on Spring 2026.
-  const skillMethod = 'Within a competition, each division step is worth 45 points. Junior Rubbers sit above Sets 1 and Green Ball starts below the yellow-ball draw. Form uses 20% match win rate and 80% game share, shrunk by two neutral matches and capped smoothly. Season estimates weight each section by matches played. The calibration used junior singles, so other divisions and doubles use the same provisional scale.';
+  const skillMethod = 'Within a competition, each division step is worth 45 points. Junior Rubbers sit above Sets 1 and Green Ball starts below the yellow-ball draw. Form uses 20% match win rate and 80% game share, shrunk by two neutral matches and capped smoothly. Season estimates weight each section by matches played. Sets 1 anchors the display at 2,100 before the form adjustment. The calibration used junior singles, so other divisions and doubles use the same provisional scale.';
   const greenOffset = {AA:10, UA:22};
   const rubbersOffset = {AA:2, UA:3};
   function skillScale(row) {
@@ -75,7 +74,7 @@
     if (!Number.isInteger(number) || number < 1 || !/sets?|rub|section|secti?on|grade|div|s\/d|girls?|boys?|mixed|\bmx\b|^(?:a ?)?\d{1,2}$/.test(label)) return null;
     const code = row.competitionCode;
     const shift = /green/.test(label) ? -(greenOffset[code] ?? 10) : /^rub/.test(label) ? (rubbersOffset[code] ?? 0) : 0;
-    return {pool: code, baseline: 1500 + 45 * (1 - number + shift)};
+    return {pool: code, baseline: 2100 + 45 * (1 - number + shift)};
   }
 
   function skillHistory(matches, scale = skillScale, discipline = 'overall') {
@@ -100,7 +99,9 @@
       const {season, row, tier, count, wins, gamesFor, gamesAgainst, date} = sample;
       const winRate = wins / count, gameShare = gamesFor + gamesAgainst ? gamesFor / (gamesFor + gamesAgainst) : winRate;
       const form = 80 * (.2 * winRate + .8 * gameShare - .5) * count / (count + 2);
-      const score = tier.baseline + 45 * 12 * Math.tanh(form / 12);
+      const display = tier.baseline + 45 * 12 * Math.tanh(form / 12);
+      // Maintain the original point gaps above the floor, and compress its lower tail smoothly.
+      const score = display >= 100 ? display : Math.max(1,100 * Math.exp((display-100)/100));
       if (!seasons.has(season)) seasons.set(season, {row, ...tier, date: null, count: 0, weighted: 0, sections: []});
       const point = seasons.get(season);
       if (date != null) point.date = Math.max(point.date ?? date, date);
@@ -113,54 +114,72 @@
       .sort((a, b) => (a.date ?? Infinity) - (b.date ?? Infinity) || a.pool.localeCompare(b.pool));
   }
 
-  const career = {matchTime, seasonRecords, seasonAwards, skillScale, skillHistory, skillMethod};
+  function seasonSlot(label, date) {
+    const season = /\b(autumn|winter|spring|summer)\s+(\d{4}|\d{2})\b/i.exec(label || '');
+    if (season) {
+      const year = Number(season[2]) + (season[2].length===2?(Number(season[2])<70?2000:1900):0);
+      return year * 4 + ['autumn','winter','spring','summer'].indexOf(season[1].toLowerCase());
+    }
+    if (!Number.isFinite(date)) return null;
+    const d = new Date(date);
+    return d.getUTCFullYear()*4 + [3,0,0,0,0,1,1,1,2,2,2,3][d.getUTCMonth()];
+  }
+
+  const career = {matchTime, seasonRecords, seasonAwards, skillScale, skillHistory, skillMethod, seasonSlot};
   if (typeof module !== 'undefined') module.exports = career;
   if (typeof window === 'undefined') return;
 
-  const colours = ['#327bc1', '#269264', '#bd6434', '#9563bd', '#be5478', '#268a97', '#997b25'];
+  const colours = ['#62aafa','#33ba91','#ea9664','#b398f3','#ed87ae','#50beca','#e3c15a','#90cf73'];
+  const colour = index => colours[index] || 'hsl(' + Math.round(index * 137.5 % 360) + ' 66% 59%)';
   const percent = value => Number.isFinite(value) ? Math.round(value) + '%' : '—';
   const showCompetition = row => row.competitionLabel || competitionLabel(row.competitionCode);
   const label = row => row.seasonLabel + ' · ' + showCompetition(row);
   const ladderLabel = point => showCompetition(point.row);
-  function timeline(history, {seriesKey = point => point.pool, seriesLabel = ladderLabel, axes = null} = {}) {
-    const points = history.filter(point => Number.isFinite(point.date)).sort((a,b) => a.date - b.date);
-    if (!points.length) return '<p>No dated results in a recognised ladder for this discipline.</p>';
+  const disciplines = {singles:'Singles', doubles:'Doubles', overall:'Overall'};
+  const disciplineButtons = (value, attribute) => '<div class="skill-disciplines" role="group" aria-label="Discipline">'+
+    Object.entries(disciplines).map(([key,text])=>'<button type="button" '+attribute+'="'+key+'" aria-pressed="'+(key===value)+'">'+text+'</button>').join('') + '</div>';
+  const slotLabel = slot => ['Aut','Win','Spr','Sum'][slot % 4] + ' ’' + String(Math.floor(slot/4)).slice(-2);
+  function timeline(history, {seriesKey = point => point.pool, seriesLabel = ladderLabel, seriesIndex = null, legend = true, zoom = false} = {}) {
+    const points = history.map(point=>({...point, slot:seasonSlot(point.row.seasonLabel,point.date)}))
+      .filter(point => Number.isFinite(point.slot)).sort((a,b) => a.slot - b.slot);
+    if (!points.length) return '<p class="skill-chart-empty">No season ratings for this discipline.</p>';
     const series = new Map();
     for (const point of points) {
-      if (!series.has(seriesKey(point))) series.set(seriesKey(point), []);
-      series.get(seriesKey(point)).push(point);
+      const key = seriesKey(point);
+      if (!series.has(key)) series.set(key, new Map());
+      const previous = series.get(key).get(point.slot);
+      if (!previous || point.count>previous.count) series.get(key).set(point.slot, point);
     }
-    const left = 52, right = 608, top = 16, bottom = 179;
-    const reference = axes?.length ? axes : points;
-    const first = Math.min(...reference.map(point => point.date)), last = Math.max(...reference.map(point => point.date));
-    const x = date => first === last ? (left + right) / 2 : left + (date - first) / (last - first) * (right - left);
-    const low = Math.floor((Math.min(...reference.map(point => point.rating)) - 15) / 25) * 25;
-    const interval = Math.max(25, Math.ceil((Math.max(...reference.map(point => point.rating)) + 15 - low) / 100) * 25);
-    const y = value => bottom - (value - low) / (4 * interval) * (bottom - top);
-    const dates = first === last ? [first] : [first, ...((last - first) > 12 * MONTH_MS ? [(first + last) / 2] : []), last];
-    const tickDate = new Intl.DateTimeFormat('en-AU', {month: 'short', year: 'numeric', timeZone: 'UTC'});
-    const ticks = Array.from({length: 5}, (_, i) => {
-      const val = low + i * interval, at = y(val);
-      return '<path d="M52 ' + at + 'H608"/><text x="44" y="' + (at + 4) + '" text-anchor="end">' + val + '</text>';
-    }).join('') + dates.map((date, i) => '<text x="' + x(date) + '" y="205" text-anchor="' +
-      (dates.length === 1 || i === 1 && dates.length === 3 ? 'middle' : i === 0 ? 'start' : 'end') + '">' +
-      esc(tickDate.format(date)) + '</text>').join('');
-    let lines = '', legend = '';
-    for (const [index, entries] of [...series.values()].entries()) {
-      const color = colours[index] || 'hsl(' + Math.round(index * 137.5 % 360) + ' 62% 45%)';
-      const coords = point => x(point.date).toFixed(1) + ',' + y(point.rating).toFixed(1);
-      lines += '<polyline points="' + entries.map(coords).join(' ') + '" stroke="' + color + '" fill="none" stroke-width="2.5"/>' +
-        entries.map(point => {
-          const detail = [point.name, label(point.row), point.rating + ' skill', point.count + ' matches',
-            point.sections.map(section => section.label).join(', ')].filter(Boolean).join(' · ');
-          return '<circle cx="' + x(point.date) + '" cy="' + y(point.rating) + '" r="4.5" fill="' + color +
-            '" tabindex="0" aria-label="' + esc(detail) + '" data-skill-point="' + esc(detail) + '"><title>' +
-            esc(detail) + '</title></circle>';
-        }).join('');
-      legend += '<li><i style="background:' + color + '" aria-hidden="true"></i>' + esc(seriesLabel(entries[0])) + '</li>';
+    const left=50,right=548,top=13,bottom=zoom?195:148;
+    const first=points[0].slot,last=points.at(-1).slot;
+    const pad = first===last ? 1 : .22;
+    const x = slot => left + (slot-first+pad)/(last-first+2*pad)*(right-left);
+    const ratings = points.map(point=>point.rating);
+    const min=Math.min(...ratings),max=Math.max(...ratings),spread=max-min;
+    const margin=zoom?Math.max(5,spread*.07):Math.max(20,spread*.10);
+    const tickTarget=Math.max(5,(spread+2*margin)/4),magnitude=10**Math.floor(Math.log10(tickTarget));
+    const interval=([1,2,2.5,5,10].find(value=>value*magnitude>=tickTarget)||10)*magnitude;
+    const low=Math.max(0,Math.floor((min-margin)/interval)*interval);
+    const high=Math.max(low+interval*2,Math.ceil((max+margin)/interval)*interval);
+    const y = rating => bottom - (rating-low)/(high-low)*(bottom-top);
+    const slots=[...new Set(points.map(point=>point.slot))];
+    const ticks=slots.length<=5?slots:[first,Math.round((2*first+last)/3),Math.round((first+2*last)/3),last];
+    const grid = Array.from({length:Math.round((high-low)/interval)+1},(_,i)=>{
+      const value=low+i*interval,at=y(value);
+      return '<path d="M'+left+' '+at+'H'+right+'"/><text x="'+(left-8)+'" y="'+(at+4)+'" text-anchor="end">'+value+'</text>';
+    }).join('')+ticks.map((slot,i)=>'<text x="'+x(slot)+'" y="'+(bottom+18)+'" text-anchor="'+
+      (ticks.length===1?'middle':i===0?'start':i===ticks.length-1?'end':'middle')+'">'+slotLabel(slot)+'</text>').join('');
+    let lines='', keyHTML='';
+    for (const [index,[key,seasons]] of [...series].entries()) {
+      const entries=[...seasons.values()], id=seriesIndex?seriesIndex(key):index, color=colour(id);
+      const coords=point=>x(point.slot).toFixed(1)+','+y(point.rating).toFixed(1);
+      lines+='<g class="skill-series" data-skill-series="'+id+'">'+
+        (entries.length>1?'<polyline points="'+entries.map(coords).join(' ')+'" stroke="'+color+'" fill="none" stroke-width="2.6"/>':'')+
+        entries.map(point=>'<circle cx="'+x(point.slot).toFixed(1)+'" cy="'+y(point.rating).toFixed(1)+'" r="'+(entries.length===1?5:3.3)+'" fill="'+color+'"/>').join('')+'</g>';
+      keyHTML+='<li><i style="background:'+color+'" aria-hidden="true"></i>'+esc(seriesLabel(entries[0]))+'</li>';
     }
-    return '<svg viewBox="0 0 632 218" role="group" aria-label="Estimated playing skill by season and competition">' +
-      '<g class="career99-axes">' + ticks + '</g>' + lines + '</svg><ul class="career99-legend">' + legend + '</ul>';
+    return '<svg viewBox="0 0 560 '+(bottom+28)+'" role="img" aria-label="Estimated playing skill by season and competition">'+
+      '<g class="career99-axes">'+grid+'</g>'+lines+'</svg>'+(legend?'<ul class="career99-legend">'+keyHTML+'</ul>':'');
   }
 
   function skillTable(history) {
@@ -174,11 +193,10 @@
   function draw(panel, matches, scale) {
     const seasons = seasonRecords(matches.map(match => ({row: match.entry, matches: [match]})));
     panel.innerHTML = '<p>Each dot estimates playing skill for a season in one competition, including Green Ball and Rubbers. Compare points within the same competition.</p>' +
-      '<div class="career99-filters"><label>Discipline <select data-career-discipline><option value="overall">All matches</option><option value="singles">Singles</option><option value="doubles">Doubles</option></select></label>' +
-      '</div>' +
+      disciplineButtons('overall','data-career-discipline') +
       '<div data-career-chart class="career99-chart"></div><div data-career-skill-table></div>' +
       '<details><summary>How skill is estimated</summary><p>' + skillMethod + ' A rating based on fewer than five matches is provisional. ' +
-        'Dates are based on each competition’s last recorded match that season.</p></details>' +
+        'Points for the same season are aligned, even when players finish on different dates.</p></details>' +
       '<h4>Best seasons</h4><p>Rate awards require at least five matches. Each competition season is assessed separately.</p><div class="career99-awards">' +
       (seasonAwards(seasons).map(award => '<article><span>' + award.label + '</span><strong>' +
         (['winRate','gameShare'].includes(award.field) ? percent(award.value) : award.value) +
@@ -186,16 +204,18 @@
         '<p>Season awards will appear when there are recorded matches.</p>') +
       '</div>';
     const chart = panel.querySelector('[data-career-chart]');
-    const discipline = panel.querySelector('[data-career-discipline]');
-    const refresh = () => {
-      const points = skillHistory(matches, scale, discipline.value);
+    const refresh = discipline => {
+      const points = skillHistory(matches,scale,discipline);
       chart.innerHTML = timeline(points);
       panel.querySelector('[data-career-skill-table]').innerHTML = skillTable(points);
+      panel.querySelectorAll('[data-career-discipline]').forEach(button=>
+        button.setAttribute('aria-pressed',String(button.dataset.careerDiscipline===discipline)));
     };
-    discipline.addEventListener('change', refresh);
-    refresh();
+    panel.querySelectorAll('[data-career-discipline]').forEach(button=>
+      button.addEventListener('click',()=>refresh(button.dataset.careerDiscipline)));
+    refresh('overall');
   }
 
-  root.BRTACareerTimeline = {...career, chart: timeline, render: draw};
+  root.BRTACareerTimeline = {...career, chart:timeline, render:draw, colour, disciplineButtons};
 })(typeof window === 'undefined' ? globalThis : window);
 /* BRTA Power Ratings 9.9g */

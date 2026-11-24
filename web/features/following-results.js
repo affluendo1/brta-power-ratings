@@ -66,6 +66,36 @@
     return {slides, unread, tracking};
   }
 
+  // One carousel entry per followed identity. Additional scorecards remain reachable
+  // from that entry, including unread rounds and appearances in other competitions.
+  function presentation(slides) {
+    const byPlayer = new Map(), primary = new Map();
+    for (const card of slides) for (const player of card.players) {
+      if (!byPlayer.has(player.pin)) byPlayer.set(player.pin, []);
+      byPlayer.get(player.pin).push({card, player});
+    }
+    for (const entries of byPlayer.values()) {
+      const choice = entries.find(entry => entry.player.unread) || entries.find(entry => entry.card.fixture) || entries[0];
+      if (!primary.has(choice.card)) primary.set(choice.card, {card: choice.card, players: [], others: new Set(), empty: new Map()});
+      const group = primary.get(choice.card);
+      group.players.push(choice.player);
+      for (const {card} of entries) {
+        if (card === choice.card) continue;
+        if (card.fixture) group.others.add(card);
+        else if (choice.card.fixture && card.round != null && card.row?.dataPath === choice.card.row?.dataPath)
+          group.empty.set(choice.player.pin, card);
+      }
+    }
+    return [...primary.values()].map(group => ({...group, others:[...group.others]}));
+  }
+
+  function performanceLabel(winner, side, probability) {
+    if (!winner) return 'No recorded winner';
+    if (!Number.isFinite(probability)) return 'Too early to estimate';
+    if (winner === side) return probability < .4 ? 'Upset win' : probability < .6 ? 'Good win' : 'Expected win';
+    return probability > .6 ? 'Below expectation' : probability > .4 ? 'Close matchup' : 'Expected loss';
+  }
+
   function track(updates) {
     for (const {pin, key, firstRound} of updates) {
       pin.resultTracking ||= {};
@@ -82,7 +112,7 @@
     }
   }
 
-  const api = {collect, track, acknowledge, matchesPlayer};
+  const api = {collect, track, acknowledge, matchesPlayer, presentation, performanceLabel};
   if (typeof module !== 'undefined') module.exports = api;
   if (typeof window === 'undefined') return;
 
@@ -90,61 +120,117 @@
   const signed = value => (value > 0 ? '+' : '') + value;
   const label = slide => [slide.row?.competitionLabel, slide.row?.sectionLabel, slide.round == null ? '' :
     roundHeading(slide.fixture || slide.group || {round: slide.round})].filter(Boolean).join(' · ');
-  const power = (data, row, round, view) => {
-    const rounds = BRTAHistory.rounds(data, view).slice().sort((a,b) => Number(a.round)-Number(b.round));
-    const current = rounds.find(item => Number(item.round) === round);
-    const previous = rounds.filter(item => Number(item.round) < round).at(-1);
+  const roundsBefore = (data, view, round) => BRTAHistory.rounds(data, view).filter(item => Number(item.round) < round)
+    .map(item => Number(item.round)).sort((a,b)=>b-a);
+  function power(data, row, round, view) {
+    const current = BRTAHistory.rounds(data, view).find(item => Number(item.round) === round);
     if (!current) return null;
-    const rank = item => BRTAHistory.ranked(BRTAHistory.rowsAt(data, view, Number(item.round)), view, data)
+    const rank = number => BRTAHistory.ranked(BRTAHistory.rowsAt(data, view, number), view, data)
       .find(value => value.player === row.player);
-    const after = rank(current), before = previous && rank(previous);
+    const after = rank(round), previous = roundsBefore(data, view, round)[0];
+    const before = previous != null ? rank(previous) : null;
     if (!Number.isFinite(after?.rating)) return null;
-    const change = Number.isFinite(before?.rating) ? ' (' + signed(after.rating - before.rating) + ')' : ' · first rated round';
-    const rankChange = after.rank != null && before?.rank != null && after.rank !== before.rank ?
-      ' · rank #' + before.rank + ' → #' + after.rank : after.rank == null ? ' · provisional' : '';
-    return (view === 'singles' ? 'Singles' : 'Doubles') + ' Power ' + after.rating + change + rankChange;
-  };
-  const standing = (slide, row) => {
+    return {label:view==='singles'?'Singles Power':'Doubles Power', value:after.rating,
+      change:Number.isFinite(before?.rating)?after.rating-before.rating:null,
+      detail: after.rank == null ? 'Provisional' : before?.rank!=null && before.rank!==after.rank ?
+        '#' + before.rank + ' → #' + after.rank : 'Rank #' + after.rank};
+  }
+  function standing(slide, row) {
     const team = BRTAStandings.at(slide.data, slide.round).find(item => item.team === row.team);
-    if (!team || team.position == null) return '';
-    const movement = team.positionChange == null ? '' : team.positionChange === 0 ? ' · no ladder movement' :
-      ' · ' + (team.positionChange > 0 ? 'up ' : 'down ') + Math.abs(team.positionChange);
-    return row.team + ' #' + team.position + movement + (team.pointsChange == null ? '' : ' · ' + signed(team.pointsChange) + ' points');
+    if (!team || team.position == null) return null;
+    const movement = team.positionChange == null ? '' : team.positionChange === 0 ? 'Held position' :
+      (team.positionChange > 0 ? 'Up ' : 'Down ') + Math.abs(team.positionChange);
+    return {label:'Team ladder', value:'#'+team.position, change:team.pointsChange, suffix:' pts',
+      detail:[row.team,movement].filter(Boolean).join(' · ')};
+  }
+  const buttonFor = (type,name,text,css) => '<button type="button" class="' + css + '" data-follow-' + type + '="' +
+    esc(name) + '">' + text + '</button>';
+  const playerLink = (name,text=name) => !name || /^no player$/i.test(name) || BRTAPlayerDisplay?.isUnknown(name) ?
+    esc(publicPlayerName(text)) : buttonFor('player',name,esc(publicPlayerName(text)),'person');
+  const teamLink = name => name && !/^winner of semifinal \d+$/i.test(name) ?
+    buttonFor('team',name,teamName(name),'club-link') : teamName(name);
+  const metric = ({label,value,change,suffix='',detail}) => '<div class="follow-metric"><span>' + esc(label) + '</span><div><strong>' + esc(value) +
+    '</strong>' + (change==null?'':' <span class="follow-delta '+(change>0?'win':change<0?'loss':'')+'">' + esc(signed(change)+suffix) + '</span>') +
+    '</div>' + (detail?'<small>'+esc(detail)+'</small>':'') + '</div>';
+  const opponentBand = (rows, rating) => {
+    const rated = rows.filter(row => row.matches>=2 && Number.isFinite(row.rating));
+    if (rated.length < 6) return '';
+    const above = rated.filter(row => row.rating > rating).length / rated.length;
+    return above < 1/3 ? 'Top third in this section' : above < 2/3 ? 'Middle third in this section' : 'Lower third in this section';
   };
-  function updates(slide) {
+  function performance(slide, rubber, side) {
+    const doubles = rubber.type==='Doubles', other = side==='home'?'away':'home';
+    const view = doubles?'doublesPlayers':'singles';
+    const previous = roundsBefore(slide.data,view,slide.round)[0];
+    const rows = previous==null ? [] : BRTAHistory.rowsAt(slide.data,view,previous);
+    const lookup = name => rows.find(row => row.player===name && row.matches>=2 && Number.isFinite(row.rating));
+    const average = list => list.length && list.every(Boolean) ? list.reduce((sum,row)=>sum+row.rating,0)/list.length : null;
+    const own = participants(rubber,side).map(lookup), away = participants(rubber,other).map(lookup);
+    const ownPower = average(own), awayPower = average(away), winner = rubberWinnerSide(rubber);
+    const scored = !/forfeit|walkover|retir|unfinished/i.test((rubber.status || '')+' '+(rubber.score || '')) && rubber.valid_for_rating!==false;
+    let chance = null;
+    if (ownPower!=null && awayPower!=null && scored) {
+      const game = BRTAPrediction.gameProbability(ownPower,awayPower,slide.data.meta?.ratingProbabilityScale || 450);
+      chance = slide.data.format==='rubbers'&&!doubles ? BRTAPrediction.rubbersSinglesWin(game) :
+        BRTAPrediction.shortSetWin(game,{greenBall:!!slide.data.greenBall,targetGames:slide.data.format==='rubbers'?8:6});
+    }
+    const outcome = scored ? performanceLabel(winner, side, chance) : 'No playing estimate';
+    const tone = outcome==='Upset win'||outcome==='Good win'?'positive':outcome==='Below expectation'?'negative':'neutral';
+    const opponents = participants(rubber,other).map((name,i) => {
+      const opponent = away[i];
+      const band = opponent && opponentBand(rows,opponent.rating);
+      return '<li>'+playerLink(name)+(opponent?' <span>'+opponent.rating+' Power'+(band?' · '+esc(band):'')+'</span>':' <span>Limited prior results</span>')+'</li>';
+    }).join('');
+    return '<div class="follow-performance"><div><span>'+esc(rubber.type)+' · '+esc(rubber.position)+'</span><b class="follow-verdict '+tone+'">'+outcome+'</b></div>'+
+      '<ul>'+opponents+'</ul><small>'+(chance==null?'A reliable pre-match estimate was unavailable.':
+        Math.round(100*chance)+'% estimated chance to win before the round.')+'</small></div>';
+  }
+  function updates(slide, featured, noResults) {
     if (!slide.fixture) return '';
     const opponents = new Set();
     for (const rubber of slide.fixture.rubbers || []) {
-      const names = side => slide.players.filter(({row}) => matchesPlayer(slide.fixture, rubber, side, row)).map(({pin}) => pin.name);
-      for (const home of names('home')) for (const away of names('away')) if (home !== away)
+      const names = side => slide.players.filter(({row}) => matchesPlayer(slide.fixture,rubber,side,row)).map(({pin}) => pin.name);
+      for (const home of names('home')) for (const away of names('away')) if (home!==away)
         opponents.add([home,away].sort().join(' vs '));
     }
     return '<section class="following-fixture-updates"><h3>What changed</h3>' +
-      (opponents.size ? '<p class="following-head-to-head"><b>Followed players faced each other</b> · ' + esc([...opponents].join(' / ')) + '</p>' : '') +
-      '<p class="small-note">Power changes use the published section snapshots.</p>' +
-      slide.players.map(({pin,row}) => '<article><b>' + esc(pin.name) + '</b><p>' +
-        esc(['singles','doublesPlayers'].map(view => power(slide.data, row, slide.round, view)).filter(Boolean).join(' · ') || 'Power change unavailable') +
-        '</p><p>' + esc(standing(slide,row) || 'Ladder movement unavailable') + '</p></article>').join('') + '</section>';
+      (opponents.size?'<p class="following-head-to-head"><b>Followed players faced each other</b> · '+esc([...opponents].join(' / '))+'</p>':'') +
+      featured.map(({pin,row}) => {
+        const metrics = ['singles','doublesPlayers'].map(view=>power(slide.data,row,slide.round,view)).concat(standing(slide,row)).filter(Boolean);
+        const performances = (slide.fixture.rubbers || []).flatMap(rubber => ['home','away']
+          .filter(side=>matchesPlayer(slide.fixture,rubber,side,row)).map(side=>performance(slide,rubber,side))).join('');
+        const missing = noResults.get(pin);
+        return '<article class="following-player-update"><header><b>'+playerLink(row.player,pin.name)+'</b>'+
+          (missing?'<small>Nothing new in '+esc(roundHeading(missing.group || {round:missing.round}))+' · last played scorecard shown</small>':'')+
+          '</header><div class="follow-metrics">'+(metrics.map(metric).join('') || '<p>No rating or ladder change available.</p>')+
+          '</div><div class="follow-performances">'+performances+'</div></article>';
+      }).join('') + '</section>';
   }
 
   function setup() {
-    let cards = [], index = 0;
+    let cards = [], index = 0, alternate = null;
+    const current = () => alternate || cards[index]?.card;
     const active = () => scorecard().hasAttribute('data-following-results') && !scorecard().classList.contains('hidden');
     function render() {
-      const slide = cards[index], overlay = scorecard(), content = overlay.querySelector('#resultContent');
+      const group = cards[index], slide = current(), overlay = scorecard(), content = overlay.querySelector('#resultContent');
       delete overlay.dataset.simulated;
       overlay.dataset.followingResults = '';
       overlay.querySelector('#resultFixtureEdit').hidden = true;
       window.BRTAFixtureDetails?.closeMap('#resultOverlay');
       selectedMatch = null;
       overlay.querySelectorAll('.round841-controls,.round84-externalnav').forEach(element => element.remove());
-      const names = slide.players.map(({pin}) => pin.name).join(', ');
-      content.innerHTML = slide.fixture ? resultDetailHTML(slide.fixture, {followed: slide.players.map(player => player.row), sectionLabel: label(slide)}) + updates(slide) :
+      const featured = alternate ? slide.players.filter(player => group.players.some(item => item.pin===player.pin)) : group.players;
+      const names = featured.map(({pin}) => pin.name).join(', ');
+      content.innerHTML = slide.fixture ? resultDetailHTML(slide.fixture, {data:slide.data,followed:slide.players.map(player=>player.row),sectionLabel:label(slide),teamLabel:teamLink,playerLabel:playerLink}) +
+        updates(slide,featured,alternate?new Map():group.empty) :
         '<div class="result-detail-head"><span>' + esc(label(slide)) + '</span><h2>' + esc(names) + '</h2><p>Nothing new · ' + esc(slide.reason) + '</p></div>';
+      if (group.others.length) content.insertAdjacentHTML('beforeend','<details class="follow-other-scorecards"><summary>Other scorecards</summary>'+
+        [group.card,...group.others].map((card,i)=>'<button class="button secondary" type="button" data-follow-other="'+i+'"'+
+          (card===slide?' disabled':'')+'>'+esc(label(card)+' · '+card.fixture.home+' v '+card.fixture.away)+'</button>').join('')+'</details>');
       const step = (n, cls) => '<button type="button" class="' + cls + '" data-follow-result-step="' + n +
         '" aria-label="' + (n < 0 ? 'Previous' : 'Next') + ' followed scorecard">' + (n < 0 ? '‹' : '›') + '</button>';
       const multiple = cards.length > 1;
-      overlay.insertAdjacentHTML('beforeend', '<div class="round841-controls"><div class="round841-tools">' +
+      overlay.insertAdjacentHTML('beforeend', '<div class="round841-controls following-controls"><div class="round841-tools">' +
         (slide.data && slide.round != null ? '<button type="button" class="button secondary" data-follow-result-standings>View standings</button>' : '') +
         '</div><nav class="round841-counter" aria-label="Followed scorecard position">' + (multiple ? step(-1,'round841-mobile-step') : '') +
         '<span>FOLLOWING · ' + (index + 1) + ' / ' + cards.length + '</span>' + (multiple ? step(1,'round841-mobile-step') : '') + '</nav></div>');
@@ -157,8 +243,46 @@
     }
     function step(direction) {
       if (cards.length < 2) return;
-      index = (index + direction + cards.length) % cards.length;
+      alternate=null; index = (index + direction + cards.length) % cards.length;
       render();
+    }
+    async function navigate(link, slide) {
+      if (!slide?.row || link.disabled) return;
+      if (link.dataset.followPlayer) {
+        link.disabled = true;
+        try { await openGlobalPlayer(slide.row.sectionCode,link.dataset.followPlayer); }
+        finally { link.disabled = false; }
+        return;
+      }
+      link.disabled = true;
+      try {
+        await BRTAActivity.run('Opening section',async task => {
+          const code = slide.row.sectionCode;
+          if (D.meta.section_code!==code || D.meta.is_archive) {
+            activeHistorySeasonId=null;
+            viewCatalog=currentCatalog();
+            if (!await loadSection(code,null,task)) return false;
+          }
+          if (link.closest('.follow-standings-sheet')) BRTAOverlays.dismissSheet();
+          close('#resultOverlay');
+          if (link.dataset.followTeam) await openClubForTeam(link.dataset.followTeam);
+          else if (link.dataset.followMatch) { switchPage('results'); openMatch(link.dataset.followMatch); }
+        });
+      } finally { link.disabled = false; }
+    }
+    function showStandings(slide) {
+      const followed = new Set(slide.players.map(player=>player.row?.team).filter(Boolean));
+      const view = standingsView(slide.data,{followed,teamLabel:teamLink,teamLink,
+        matchLink: fixture=>buttonFor('match',fixture.fixtureId,'View result','export-link')});
+      const title = [slide.row.competitionLabel,slide.row.sectionLabel].filter(Boolean).join(' · ');
+      const sheet = BRTAOverlays.openSheet('Standings · '+title,'<p class="small-note">'+esc(view.note)+'</p>'+
+        '<div class="knockout-summary">'+view.knockout+'</div><div class="table-wrap" tabindex="0" role="region" aria-label="Standings table">'+
+        '<table><thead>'+view.head+'</thead><tbody>'+view.body+'</tbody></table></div><div class="notice">'+view.caveat+'</div>',
+        {className:'follow-standings-sheet'});
+      sheet.addEventListener('click',event=>{
+        const link=event.target.closest('[data-follow-team],[data-follow-match]');
+        if(link)void navigate(link,slide);
+      });
     }
     scorecard().addEventListener('click', event => {
       if (!active()) return;
@@ -167,13 +291,19 @@
         const kind = arrow.className;
         step(Number(arrow.dataset.followResultStep));
         scorecard().querySelector('[data-follow-result-step="' + arrow.dataset.followResultStep + '"].' + kind)?.focus();
+        return;
       }
-      if (!event.target.closest('[data-follow-result-standings]')) return;
-      const slide = cards[index], rows = BRTAStandings.at(slide.data, slide.round);
-      const table = BRTAOverlays.openSheet('Standings · ' + label(slide),
-        '<div class="table-wrap"><table><thead>' + standingsHeadHTML() + '</thead><tbody>' +
-        standingsRowsHTML(rows, new Set()) + '</tbody></table></div>');
-      table.querySelectorAll('[data-club-team]').forEach(button => button.replaceWith(document.createTextNode(button.textContent)));
+      const other = event.target.closest('[data-follow-other]');
+      if(other){
+        const i=Number(other.dataset.followOther);
+        alternate=i?cards[index].others[i-1]:null;
+        render();
+        scorecard().querySelector('#resultClose').focus();
+        return;
+      }
+      const link=event.target.closest('[data-follow-team],[data-follow-player]');
+      if(link)void navigate(link,current());
+      if(event.target.closest('[data-follow-result-standings]'))showStandings(current());
     });
     document.addEventListener('keydown', event => {
       if (!active() || !['ArrowLeft','ArrowRight'].includes(event.key) ||
@@ -187,8 +317,9 @@
     return {
       open(slides) {
         if (!slides.length) return false;
-        cards = slides;
+        cards = presentation(slides);
         index = 0;
+        alternate = null;
         render();
         eightRaise(scorecard());
         scorecard().querySelector('#resultClose').focus();

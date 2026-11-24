@@ -71,3 +71,7 @@ assert(!html.includes('<script>alert(1)</script>'));
 const json = /<script type="application\/json" id="brta-career-data">(.*?)<\/script>/.exec(html)[1];
 assert.equal(JSON.parse(json).records[0][1].recorded,4);
 console.log('Career skill, records, Power history, season highlights and standalone HTML export passed');
+
+assert.equal(Career.seasonSlot('Spring 2025',Date.UTC(2025,7,20)), Career.seasonSlot('Spring 25',Date.UTC(2025,10,15)));
+const weakest = {...entry,sectionLabel:'Sets 90 Green Ball'};
+assert(Career.skillHistory([record(weakest,false,'20 Nov 25')])[0].rating>0,'Skill is positive even at the bottom of the scale');

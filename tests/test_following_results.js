@@ -1,5 +1,5 @@
 const assert = require('node:assert/strict');
-const {collect, track, acknowledge} = require('../web/features/following-results');
+const {collect, track, acknowledge, presentation, performanceLabel} = require('../web/features/following-results');
 const row = (player, team, comp, seasonLabel = 'Spring 2026') => ({
   player, team, seasonLabel, competitionCode:comp, sectionCode:comp+'001', dataPath:comp+'.json'
 });
@@ -37,3 +37,9 @@ assert.deepEqual(collect(remembered,sections).unread,['Casey'],'Identical names 
 ua.results[0].fixtures[0].rubbers.push({type:'Doubles',position:1,home:'Alice / Reserve',away:'Beth / Other',score:'6-0'});
 assert(collect(remembered,sections).unread.includes('Alice'),'A delayed scorecard in the same round is new');
 console.log('Followed scorecards persist per player, competition, section and published round');
+
+const shown = presentation(collect(remembered,sections).slides);
+assert.equal(shown.flatMap(slide=>slide.players).length,3,'Only one carousel entry per followed identity');
+assert.equal(performanceLabel('home','home',.28),'Upset win');
+assert.equal(performanceLabel('away','home',.76),'Below expectation');
+assert.equal(performanceLabel('home','home',.72),'Expected win');

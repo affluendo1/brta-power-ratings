@@ -2,6 +2,18 @@
 // Retrospective entries use source-commit timestamps; sourceCommit records their provenance.
 window.BRTA_RELEASES = Object.freeze([
 {
+  "version": "9.9j&2",
+  "size": "medium",
+  "title": "Following and skill chart polish",
+  "committedAt": "2026-11-24T20:55:16+11:00",
+  "changes": [
+    "Following has a glowing unread indicator, compact scorecard controls, linked players and teams, and boxed Power, ladder and performance summaries.",
+    "The standings dialog shares the full standings page renderer, including finals qualifiers, the semifinal separator and the knockout draw.",
+    "Skill graphs use aligned season points, positive ratings, automatic axes, discipline buttons and a responsive two-column comparison layout.",
+    "Compare team lineups from built-in presets or open a team graph directly. Graph workspaces follow the selected competition and keep other layouts available."
+  ]
+},
+{
   "version": "9.9j&1",
   "size": "medium",
   "title": "Calibrated skill, comparison graphs and followed results",

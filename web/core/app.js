@@ -438,21 +438,22 @@ function teamInsight(team){return D.teamInsights?.[team]||{completedTies:0,lineu
 function recordText(row){return row?(row.wins+'–'+row.losses+(row.draws?'–'+row.draws+' D':'')):'No recorded ties'}
 function renderTeams(){if(window.BRTAClubs)window.BRTAClubs.mount(D);else BRTATeamLabUI.renderGrid(D)}
 
-function knockoutMatchHTML(match,label,seeds){
+function knockoutMatchHTML(match,label,seeds,{data=D,matchLink=null,teamLink=teamName,followed=new Set()}={}){
   const sides=['home','away'].map(side=>{
     const team=match[side],seed=seeds.get(team),winner=team&&match.winner===team;
     const score=match[side+'Rubbers']??match[side+'Sets'];
-    return '<div class="bracket-team'+(winner?' advancing':'')+'"><span class="bracket-seed">'+(seed?'#'+esc(seed):'')+'</span>'+
-      '<b>'+teamName(team)+'</b>'+(winner?'<span class="bracket-advance">Won</span>':'')+
+    return '<div class="bracket-team'+(winner?' advancing':'')+(followed.has(team)?' followed-standing':'')+'"><span class="bracket-seed">'+(seed?'#'+esc(seed):'')+'</span>'+
+      '<b>'+teamLink(team)+'</b>'+(winner?'<span class="bracket-advance">Won</span>':'')+
       (score!=null?'<strong>'+esc(score)+'</strong>':'')+'</div>';
   }).join('');
   const detail=[match.status==='Completed'?match.score||'Result':match.status,match.date?roundDate(match.date,match.dateEstimated):''].filter(Boolean).join(' · ');
-  const result=match.fixtureId&&findMatch(match.fixtureId);
-  const link=result&&!BRTAStandings.pending(result)?'<button type="button" class="export-link" data-match-id="'+esc(result.fixtureId)+'">View result</button>':'';
+  const result=match.fixtureId&&findMatch(match.fixtureId,data);
+  const link=result&&!BRTAStandings.pending(result)?(matchLink?matchLink(result):'<button type="button" class="export-link" data-match-id="'+esc(result.fixtureId)+'">View result</button>'):'';
   return '<article class="bracket-match"><header><h4>'+esc(label)+'</h4><small>'+esc(detail)+'</small></header>'+sides+link+'</article>';
 }
-function renderKnockout(){
-  const box=$('#knockoutSummary'),season=BRTAStandings.season(D),k=D.knockout||{};
+function knockoutHTML(data, options={}){
+  const season=BRTAStandings.season(data),k=data.knockout||{};
+  const context={data,...options};
   const matches=phase=>{
     const pairs=new Map();
     const recorded=phase==='semi_final'?(k.semifinalHistory?.length?k.semifinalHistory:k.semifinals||[]):
@@ -461,32 +462,33 @@ function renderKnockout(){
     for(const f of [...recorded,...actual]){
       const id=JSON.stringify([f.home,f.away].sort()),previous=pairs.get(id),match=season.playoff(f,phase);
       if(previous&&!BRTAStandings.pending(previous)&&BRTAStandings.pending(match))continue;
-      pairs.set(id,{...previous,...match,winner:BRTAStandings.pending(match)?null:matchWinner(match)||match.winner||previous?.winner});
+      pairs.set(id,{...previous,...match,winner:BRTAStandings.pending(match)?null:matchWinner(match,data)||match.winner||previous?.winner});
     }
     return [...pairs.values()].filter(f=>!actual.length||!['Projected','Awaiting TROLS result'].includes(f.status));
   };
   const semis=matches('semi_final'),finals=matches('grand_final');
-  if(!semis.length&&!finals.length){box.innerHTML='';return}
-  const seeds=new Map((D.standings||[]).map((row,i)=>[row.team,row.officialPosition||i+1]));
+  if(!semis.length&&!finals.length)return '';
+  const seeds=new Map((data.standings||[]).map((row,i)=>[row.team,row.officialPosition||i+1]));
   if(!finals.length&&semis.length===2)finals.push(season.playoff({
     home:semis[0].winner||'Winner of semifinal 1',away:semis[1].winner||'Winner of semifinal 2',status:'Scheduled'
   },'grand_final'));
   const champion=finals.find(f=>f.winner)?.winner;
-  box.innerHTML='<header class="knockout-head"><div><h2>Knockout draw</h2><p>'+(season.complete?'Finals series':'Season playoffs')+'</p></div>'+
-    (champion?'<strong class="knockout-crown">Champion · '+teamName(champion)+'</strong>':'')+'</header>'+
+  return '<header class="knockout-head"><div><h2>Knockout draw</h2><p>'+(season.complete?'Finals series':'Season playoffs')+'</p></div>'+
+    (champion?'<strong class="knockout-crown">Champion · '+(options.teamLink||teamName)(champion)+'</strong>':'')+'</header>'+
     '<div class="bracket-grid">'+(semis.length?'<section class="bracket-semis"><h3>Semifinals</h3><div class="bracket-entries">'+
-    semis.map((f,i)=>knockoutMatchHTML(f,'Semifinal '+(i+1),seeds)).join('')+'</div></section>':'')+
+    semis.map((f,i)=>knockoutMatchHTML(f,'Semifinal '+(i+1),seeds,context)).join('')+'</div></section>':'')+
     (finals.length?'<section class="bracket-finals"><h3>Grand final</h3><div class="bracket-entries">'+
-    finals.map((f,i)=>knockoutMatchHTML(f,finals.length>1?'Grand final '+(i+1):'Championship match',seeds)).join('')+'</div></section>':'')+'</div>';
+    finals.map((f,i)=>knockoutMatchHTML(f,finals.length>1?'Grand final '+(i+1):'Championship match',seeds,context)).join('')+'</div></section>':'')+'</div>';
 }
+function renderKnockout(){ $('#knockoutSummary').innerHTML=knockoutHTML(D); }
 function renderStandings(){const rows=D.standings||[],knockout=D.knockout||{},qualifiers=new Set((knockout.qualifiers||[]).map(x=>x.team)),hasSemis=qualifiers.size>=4||knockout.source==='projected';$('#standingsBody').innerHTML=rows.map((x,i)=>{const position=x.officialPosition||i+1,winCount=x.officialWins??x.wins,percent=x.officialPercentage;const cells=D.meta?.is_archive?'<td>'+esc(winCount??'—')+'</td><td><b>'+esc(x.points)+'</b></td><td>'+((percent==null||Number.isNaN(Number(percent)))?'—':Number(percent).toFixed(2)+'%')+'</td>':'<td>'+x.played+'</td><td>'+x.wins+'</td><td>'+x.draws+'</td><td>'+x.losses+'</td><td>'+x.rubbersFor+'–'+x.rubbersAgainst+'</td><td>'+x.gamesFor+'–'+x.gamesAgainst+'</td><td><b>'+x.points+'</b></td>';const row='<tr class="'+(qualifiers.has(x.team)?'standing-qualifier':'')+'"><td><b>'+position+'</b></td><td><b>'+teamName(x.team)+'</b></td>'+cells+'</tr>';const cut=i===3&&(rows.length>4||hasSemis)?'<tr class="playoff-cut"><td colspan="'+(D.meta?.is_archive?5:9)+'">Semifinal places · top four</td></tr>':'';return row+cut}).join('');$('#standingsHead').innerHTML=D.meta?.is_archive?'<tr><th>Pos</th><th>Team</th><th>TROLS wins</th><th>Final points</th><th>TROLS %</th></tr>':'<tr><th>Pos</th><th>Team</th><th>P</th><th>W</th><th>D</th><th>L</th><th>Rubbers</th><th>Games</th><th>Pts</th></tr>';renderKnockout();const missing=D.sync?.missingFixtures||0;$('#standingsNote').textContent=D.meta?.is_archive?'Final ladder from TROLS':missing?missing+' result'+(missing===1?'':'s')+' missing':'';$('#standingsCaveat').innerHTML=D.meta?.is_archive?(rows.some(x=>x.standingsSource==='TROLS')?'Final position, wins, points and game percentage are recorded from the TROLS past ladder. Match records are reconstructed from published results.':'TROLS did not publish a final ladder for this section; the displayed standings are reconstructed from its results.'):(missing?'<b>Incomplete:</b> TROLS still has '+missing+' result'+(missing===1?'':'s')+' missing a scorecard. ':'All published results are included. ')+'<span>Tied ladder points are ordered by BRTA games percentage; washouts and full-team forfeits use the published 2026 By-Law treatment.</span>';if(D.sync?.sourceWarnings?.length)$('#standingsCaveat').innerHTML+='<br><b>TROLS source discrepancy:</b> '+D.sync.sourceWarnings.map(esc).join(' ')}
 
-function findMatch(id){for(const round of D.results||[]){const match=round.fixtures.find(x=>x.fixtureId===id);if(match)return match}return null}
-function matchWinner(match){
+function findMatch(id,data=D){for(const round of data.results||[]){const match=round.fixtures.find(x=>x.fixtureId===id);if(match)return match}return null}
+function matchWinner(match,data=D){
   if(match.status==='Forfeited To')return match.away;
   if(match.status==='Forfeited By')return match.home;
   if(match.status!=='Completed')return'';
-  if(D?.meta?.is_custom&&typeof match.winner==='string')return match.winner;
+  if(data?.meta?.is_custom&&typeof match.winner==='string')return match.winner;
   const hs=match.homeSets??match.homeRubbers,as=match.awaySets??match.awayRubbers;
   if(hs!==as)return hs>as?match.home:match.away;
   if(match.homeGames!==match.awayGames)return match.homeGames>match.awayGames?match.home:match.away;
@@ -537,13 +539,12 @@ function rubberWinnerSide(r){
   for(const [,h,a] of sets){if(Number(h)>Number(a))home++;else if(Number(a)>Number(h))away++;}
   return home>away?'home':away>home?'away':'';
 }
-function resultDetailHTML(match,{followed=null,sectionLabel=''}={}){
-  const teamLabel=followed?teamName:clubTeamButton,playerLabel=followed?((name,label=name)=>esc(publicPlayerName(label))):resultPerson;
+function resultDetailHTML(match,{data=D,followed=null,sectionLabel='',teamLabel=clubTeamButton,playerLabel=resultPerson}={}){
   if(!match)return'<div class="notice">This fixture does not have a scorecard yet.</div>';
-  if(isPlayoff(match)&&BRTAStandings.pending(match))return '<div class="result-detail-head"><span>'+esc(roundHeading(match))+
+  if(BRTAStandings.stage(data,match)!=='regular'&&BRTAStandings.pending(match))return '<div class="result-detail-head"><span>'+esc(roundHeading(match))+
     ' · '+esc(roundDate(match.date,match.dateEstimated))+'</span><h2>'+teamLabel(match.home)+' v '+teamLabel(match.away)+
     '</h2><p>'+esc(match.status)+'</p></div>';
-  const complete=match.status==='Completed',scored=match.homePoints!=null&&match.awayPoints!=null,winner=matchWinner(match),result=complete?match.homeRubbers+'–'+match.awayRubbers:'—',outcome=winner?esc(winner)+(complete?(match.simulated?' wins the team tie':' won the team tie'):' received the team points'):(match.status==='Wash Out'?'The fixture was recorded as a washout':'Team tie level'),pairNames=(name,flags=[])=>String(name).split('/').map((p,i)=>({full:p.trim(),flag:flags[i]})).sort((a,b)=>{if(followed)return 0;const side=String(name)===String(match.rubbers?.find(r=>r.type==='Doubles'&&r.home===name)?.home)?'home':'away',team=match[side],names=lab8OrderedNames(name,team);return names.indexOf(a.full)-names.indexOf(b.full)}).map(({full,flag})=>{return playerLabel(full,followed?full:doublesPlayerLabel(full))+(flag?emergencyPlayerMark():'')}).join(followed?' / ':' <button type="button" class="pair-sep person" data-eight-pair="'+esc(name)+'" data-eight-round="'+(lab8Context?.round??'')+'" aria-label="Open pair lab">/</button> ');
+  const complete=match.status==='Completed',scored=match.homePoints!=null&&match.awayPoints!=null,winner=matchWinner(match,data),result=complete?match.homeRubbers+'–'+match.awayRubbers:'—',outcome=winner?esc(winner)+(complete?(match.simulated?' wins the team tie':' won the team tie'):' received the team points'):(match.status==='Wash Out'?'The fixture was recorded as a washout':'Team tie level'),pairNames=(name,flags=[])=>String(name).split('/').map((p,i)=>({full:p.trim(),flag:flags[i]})).sort((a,b)=>{if(followed)return 0;const side=String(name)===String(match.rubbers?.find(r=>r.type==='Doubles'&&r.home===name)?.home)?'home':'away',team=match[side],names=lab8OrderedNames(name,team);return names.indexOf(a.full)-names.indexOf(b.full)}).map(({full,flag})=>{return playerLabel(full,followed?full:doublesPlayerLabel(full))+(flag?emergencyPlayerMark():'')}).join(followed?' / ':' <button type="button" class="pair-sep person" data-eight-pair="'+esc(name)+'" data-eight-round="'+(lab8Context?.round??'')+'" aria-label="Open pair lab">/</button> ');
   const totals=(h,a)=>{const known=h!=null&&a!=null&&Number.isFinite(Number(h))&&Number.isFinite(Number(a)),tone=known&&Number(h)!==Number(a)?(Number(h)>Number(a)?['win','loss']:['loss','win']):['',''];return '<b><span class="'+tone[0]+'">'+esc(h??'—')+'</span><span class="metric-separator">–</span><span class="'+tone[1]+'">'+esc(a??'—')+'</span></b>'};
   let metrics=complete?'<div class="result-metrics"><div><span>Rubbers</span>'+totals(match.homeRubbers,match.awayRubbers)+'</div><div><span>Games</span>'+totals(match.homeGames,match.awayGames)+'</div><div class="result-points"><span>Points</span>'+totals(match.homePoints,match.awayPoints)+'</div></div>':scored?'<div class="result-metrics"><div class="result-points"><span>Team points</span>'+totals(match.homePoints,match.awayPoints)+'</div><div><span>Games</span><b>Not recorded</b></div></div>':'';
   let head='<div class="result-detail-head"><span>'+esc(sectionLabel||roundHeading(match))+' · '+esc(roundDate(match.date,match.dateEstimated))+'</span><h2>'+teamLabel(match.home)+' <b data-scoreline>'+result+'</b> '+teamLabel(match.away)+'</h2><p>'+outcome+(complete?'':' · '+esc(match.status))+'</p></div>';

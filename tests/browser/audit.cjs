@@ -39,12 +39,12 @@ esc();await tick();assert(w.document.querySelector('#layoutOverlay').classList.c
 click('[data-studio="theme"]');await tick();esc();await tick();assert(w.document.querySelector('#themeStudioOverlay').classList.contains('hidden'));assert(!w.document.querySelector('#settingsOverlay').classList.contains('hidden'));console.log('Theme creator Escape preserves Settings');
 click('[data-changelog-open]');await tick();
 assert.equal(w.document.querySelector('.release-heading h3').textContent,w.BRTA_RELEASES.find(release=>release.size==='major').version);
-assert.equal(w.BRTAChangelog.version,'9.9j&1');
+assert.equal(w.BRTAChangelog.version,'9.9j&2');
 for(const release of w.BRTA_RELEASES.slice(0,6)){
   assert.equal(w.document.querySelector('[data-release-version="'+release.version+'"] h4').textContent,
     release.version+' · '+release.title);
 }
-assert(w.document.querySelector('[data-release-version="9.9j&1"] .release-followup').textContent.includes('9.9j'));
+assert(w.document.querySelector('[data-release-version="9.9j&2"] .release-followup').textContent.includes('9.9j'));
 click('#changelog-history-tab');
 assert.equal(w.document.getElementById('release-9.9b').querySelector('.release-name').textContent,w.BRTA_RELEASES.find(release=>release.version==='9.9b').title);
 esc();await tick();assert(w.document.querySelector('#changelogOverlay').classList.contains('hidden'));assert(!w.document.querySelector('#settingsOverlay').classList.contains('hidden'));console.log('Changelog Escape restores Settings');esc();await tick();
@@ -127,9 +127,7 @@ w.BRTACareerTimeline.render(timeline, [{
   entry:skillEntry, date:'22 Nov 26', kind:'doublesPlayers', gf:6, ga:2, won:true,
 }], w.BRTACareerTimeline.skillScale);
 assert.equal(timeline.querySelectorAll('.career99-chart circle').length,1);
-const discipline = timeline.querySelector('[data-career-discipline]');
-discipline.value='singles';
-discipline.dispatchEvent(new w.Event('change',{bubbles:true}));
+timeline.querySelector('[data-career-discipline="singles"]').click();
 assert(!timeline.querySelector('.career99-chart circle'),'An empty discipline has no artificial skill point');
 const originalDownload=w.BRTAExportUI853.download;
 let careerDownload;
@@ -211,7 +209,7 @@ for(let i=0;i<60&&!w.document.querySelector('[data-skill-action="select-player"]
 click('[data-skill-action="select-player"]');
 for(let i=0;i<150&&!w.document.querySelector('[data-skill-plot] circle');i++)await tick();
 assert(w.document.querySelector('[data-skill-plot] circle'),'The comparison workspace loads career skill points');
-assert(w.document.querySelector('[data-skill-plot] .career99-legend').textContent.includes('Jayden Bone'));
+assert(w.document.querySelector('[data-skill-legend] .skill-selected').textContent.includes('Jayden Bone'));
 click('[data-skill-action="add-graph"]');
 assert.equal(w.document.querySelectorAll('[data-skill-graph]').length,2);
 const presetTitle = w.document.querySelector('[data-skill-preset-name]');
@@ -222,6 +220,13 @@ click('[data-skill-action="remove-graph"]');
 click('[data-skill-action="load-preset"]');
 assert.equal(w.document.querySelectorAll('[data-skill-graph]').length,2,'A preset restores graph count and selections');
 assert(w.document.querySelector('.skill-selected').textContent.includes('Jayden Bone'));
+assert(!w.document.querySelector('[data-skill-plot] circle[tabindex]'),'Chart points do not take focus or open a footer');
+click('[data-skill-discipline="singles"]');
+assert.equal(w.document.querySelector('[data-skill-discipline="singles"]').getAttribute('aria-pressed'),'true');
+click('[data-roster-skill]');
+for(let i=0;i<200&&!w.document.querySelector('.skill-team-dialog [data-skill-plot] svg');i++)await tick();
+assert(w.document.querySelector('.skill-team-dialog .skill-name-pill'),'Team skill graph contains lineup names');
+esc();await tick();
 
 vm.runInContext("ratingScope='section';$('#search').value='';renderRatings()",ctx);
 click('#settingsBtn');await tick();click('#showExtrasBtn');await tick();click('[data-more-settings]');await tick();esc();await tick();assert(w.document.querySelector('#moreSettingsOverlay').classList.contains('hidden'));assert(!w.document.querySelector('#settingsOverlay').classList.contains('hidden'));console.log('More Settings gate uses its own Escape cleanup and restores Settings');esc();await tick();
@@ -263,12 +268,18 @@ assert(w.document.querySelector('#resultOverlay[data-following-results]'));
 assert(w.document.querySelector('#resultContent').textContent.includes('Sets 6'));
 assert(w.document.querySelector('#resultContent .followed-rubber-side'));
 assert(w.document.querySelector('#resultContent .following-fixture-updates').textContent.includes('Jayden Bone'));
-click('[data-follow-result-step="1"]');
-assert(w.document.querySelector('#resultContent').textContent.includes('Nothing new'));
-click('[data-follow-result-step="-1"]');
-assert(w.document.querySelector('#resultContent .followed-rubber-side'));
+assert(w.document.querySelector('#resultContent .follow-metric'));
+assert(w.document.querySelector('#resultContent .follow-performance'));
+assert(w.document.querySelector('#resultContent [data-follow-player="Jayden Bone"]'));
+assert(w.document.querySelector('#resultContent h2 [data-follow-team]'));
+assert(w.document.querySelector('#resultContent').textContent.includes('Nothing new in'),'An idle round is shown on the player’s existing card');
 click('[data-follow-result-standings]');
-assert(w.document.querySelector('.shared-sheet-overlay:not(.hidden) h2').textContent.includes('Sets 6'));
+const followedStandings=w.document.querySelector('.follow-standings-sheet');
+assert(followedStandings.querySelector('h2').textContent.includes('Sets 6'));
+assert(followedStandings.querySelector('tr.followed-standing'));
+assert(followedStandings.querySelector('.knockout-summary .bracket-grid'));
+assert(followedStandings.querySelector('.playoff-cut .sf-wave'));
+assert(followedStandings.querySelectorAll('.finals-qualified').length>=4);
 esc();await tick();
 assert(w.document.querySelector('#resultOverlay[data-following-results]'));
 esc();await tick();

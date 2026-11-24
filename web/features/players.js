@@ -23,6 +23,7 @@
   rosters.before(skillWorkspace);
   const skillComparison = BRTASkillComparison.setup(skillWorkspace, {
     careers, section: () => D?.meta, load: loadComparison,
+    teams: () => rosterTeams, teamPlayers: comparisonTeamPlayers,
   });
   const ratingUI = window.BRTARatingControls.setup(page);
   const followingOverlay = document.createElement('div');
@@ -49,13 +50,9 @@
     if (event.target.closest('[data-following-close]')) closeFollowing();
   });
   BRTAOverlays.register(followingOverlay.id, closeFollowing);
-  const followingNotice = document.createElement('aside');
-  followingNotice.className = 'following-results-notice';
-  followingNotice.hidden = true;
-  document.querySelector('#statusStrip').after(followingNotice);
   const followingResults = BRTAFollowingResults.setup();
   const following = BRTAPlayerFollowing.setup({
-    host: followingPanel, badge: hero.querySelector('[data-follow-count]'), careers, notice: followingNotice,
+    host: followingPanel, badge: hero.querySelector('[data-follow-count]'), careers,
     async loadResults(path) {
       const response = await fetch(path, {cache: 'no-cache', signal: AbortSignal.timeout?.(20000)});
       if (!response.ok) throw Error('Section unavailable');
@@ -121,8 +118,10 @@
           '</span><span class="players-roster-power">' + power + '</span></li>';
       }
       return '<article class="players-roster-card"><header><h3><button type="button" class="person" data-directory-team="' +
-        i + '">' + teamName(team.team) + '</button></h3><button type="button" class="button secondary roster-sort" data-roster-sort="' +
-        i + '" aria-pressed="' + orderByPower + '" aria-label="Sort ' + esc(team.team) + ' by Power">Power order</button></header>' +
+        i + '">' + teamName(team.team) + '</button></h3><div class="roster-actions">'+
+        (!D.meta.is_custom && lineup.length ? '<button type="button" class="button secondary" data-roster-skill="'+i+'">Skill graph</button>':'')+
+        '<button type="button" class="button secondary roster-sort" data-roster-sort="' + i + '" aria-pressed="' + orderByPower +
+        '" aria-label="Sort ' + esc(team.team) + ' by Power">Power order</button></div></header>' +
         (lineup.length ? '<ol>' + lineup.map(row).join('') + '</ol>' : '<p>No published lineup</p>') + '</article>';
     }).join('') + '</div>';
   }
@@ -133,6 +132,11 @@
       rosterView = button.dataset.rosterView;
       drawRosters(true);
       rosters.querySelector('[data-roster-view="' + rosterView + '"]').focus({preventScroll: true});
+      return;
+    }
+    if (button.dataset.rosterSkill != null) {
+      const team=rosterTeams[Number(button.dataset.rosterSkill)];
+      if (team) void skillComparison.openTeam(team);
       return;
     }
     const sort = button.dataset.rosterSort;
@@ -524,9 +528,25 @@
     }
     return payloads.get(key);
   }
+  async function comparisonTeamPlayers(team) {
+    const data=D, seasonKey=activeHistorySeasonId;
+    const model=await careers();
+    return [...new Set([...team.core,...team.historical,...team.emergencies].map(player=>player.name))].map(name=>{
+      const person=model.inSection(name,data.meta,team.team,seasonKey);
+      const anchor=person?.rows.find(row=>row.sectionCode===data.meta.section_code && row.team===team.team);
+      return {name,id:person?.id || JSON.stringify([data.meta.section_code,team.team,name]),anchor,
+        section:person?null:{code:data.meta.section_code,team:team.team}};
+    });
+  }
   async function loadComparison(player, competition) {
     const model = await careers();
-    const person = model.get(player.id) || model.reconcileAppearance(player.anchor);
+    const person = model.get(player.id) || (player.anchor && model.reconcileAppearance(player.anchor));
+    if (!person && player.section && D.meta.section_code===player.section.code && D.meta.competition_code===competition) {
+      const row={competitionCode:competition,sectionCode:D.meta.section_code,sectionLabel:D.meta.section_label,seasonLabel:D.meta.season_label};
+      const matches=['singles','doublesPlayers'].flatMap(kind=>L8.matches(D,player.name,kind)
+        .filter(match=>match.team===player.section.team).map(match=>({...match,kind,entry:row})));
+      return {matches,unavailable:0};
+    }
     if (!person) return {matches: [], unavailable: 1};
     const rows = person.rows.filter(row => row.competitionCode === competition);
     const matches = new Map();
