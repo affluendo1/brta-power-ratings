@@ -39,11 +39,12 @@ esc();await tick();assert(w.document.querySelector('#layoutOverlay').classList.c
 click('[data-studio="theme"]');await tick();esc();await tick();assert(w.document.querySelector('#themeStudioOverlay').classList.contains('hidden'));assert(!w.document.querySelector('#settingsOverlay').classList.contains('hidden'));console.log('Theme creator Escape preserves Settings');
 click('[data-changelog-open]');await tick();
 assert.equal(w.document.querySelector('.release-heading h3').textContent,w.BRTA_RELEASES.find(release=>release.size==='major').version);
-assert.equal(w.BRTAChangelog.version,'9.9j');
+assert.equal(w.BRTAChangelog.version,'9.9j&1');
 for(const release of w.BRTA_RELEASES.slice(0,6)){
   assert.equal(w.document.querySelector('[data-release-version="'+release.version+'"] h4').textContent,
     release.version+' · '+release.title);
 }
+assert(w.document.querySelector('[data-release-version="9.9j&1"] .release-followup').textContent.includes('9.9j'));
 click('#changelog-history-tab');
 assert.equal(w.document.getElementById('release-9.9b').querySelector('.release-name').textContent,w.BRTA_RELEASES.find(release=>release.version==='9.9b').title);
 esc();await tick();assert(w.document.querySelector('#changelogOverlay').classList.contains('hidden'));assert(!w.document.querySelector('#settingsOverlay').classList.contains('hidden'));console.log('Changelog Escape restores Settings');esc();await tick();
@@ -124,7 +125,7 @@ const timeline = w.document.createElement('div');
 const skillEntry = {competitionCode:'UA', seasonKey:'UA:current', seasonLabel:'Spring 2026', sectionCode:'UA006', sectionLabel:'Sets 6'};
 w.BRTACareerTimeline.render(timeline, [{
   entry:skillEntry, date:'22 Nov 26', kind:'doublesPlayers', gf:6, ga:2, won:true,
-}], w.BRTACareerTimeline.skillScale([skillEntry]));
+}], w.BRTACareerTimeline.skillScale);
 assert.equal(timeline.querySelectorAll('.career99-chart circle').length,1);
 const discipline = timeline.querySelector('[data-career-discipline]');
 discipline.value='singles';
@@ -203,6 +204,25 @@ for(let i=0;i<30&&w.document.querySelector('[data-career-result]');i++)await tic
 assert(!w.document.querySelector('[data-career-result]'),'Shortening the search clears old selectable results');
 assert(w.document.querySelector('#careerSearchStatus').textContent.includes('at least two'));
 console.log('Players directory reports an identifiable typo match');
+const skillInput = w.document.querySelector('[data-skill-search]');
+skillInput.value = 'Jayden Bone';
+skillInput.dispatchEvent(new w.Event('input',{bubbles:true}));
+for(let i=0;i<60&&!w.document.querySelector('[data-skill-action="select-player"]');i++)await tick();
+click('[data-skill-action="select-player"]');
+for(let i=0;i<150&&!w.document.querySelector('[data-skill-plot] circle');i++)await tick();
+assert(w.document.querySelector('[data-skill-plot] circle'),'The comparison workspace loads career skill points');
+assert(w.document.querySelector('[data-skill-plot] .career99-legend').textContent.includes('Jayden Bone'));
+click('[data-skill-action="add-graph"]');
+assert.equal(w.document.querySelectorAll('[data-skill-graph]').length,2);
+const presetTitle = w.document.querySelector('[data-skill-preset-name]');
+presetTitle.value='Spring check';
+presetTitle.dispatchEvent(new w.Event('input',{bubbles:true}));
+click('[data-skill-action="save-preset"]');
+click('[data-skill-action="remove-graph"]');
+click('[data-skill-action="load-preset"]');
+assert.equal(w.document.querySelectorAll('[data-skill-graph]').length,2,'A preset restores graph count and selections');
+assert(w.document.querySelector('.skill-selected').textContent.includes('Jayden Bone'));
+
 vm.runInContext("ratingScope='section';$('#search').value='';renderRatings()",ctx);
 click('#settingsBtn');await tick();click('#showExtrasBtn');await tick();click('[data-more-settings]');await tick();esc();await tick();assert(w.document.querySelector('#moreSettingsOverlay').classList.contains('hidden'));assert(!w.document.querySelector('#settingsOverlay').classList.contains('hidden'));console.log('More Settings gate uses its own Escape cleanup and restores Settings');esc();await tick();
 assert.equal(w.document.querySelector('#latestRoundBtn').closest('.page').id,'page-results');
@@ -237,6 +257,22 @@ const followedCard=w.document.querySelector('#playersFollowing .following-grid .
 assert(followedCard.textContent.includes('Jayden Bone'));
 assert(followedCard.querySelector('[data-follow-remove]').getAttribute('aria-label').includes('Jayden Bone'));
 assert(followedCard.querySelector('.following-rank').textContent.includes('Match record'));
+click('#playersFollowing [data-follow-results]');
+for(let i=0;i<150&&!w.document.querySelector('#resultOverlay[data-following-results]');i++)await tick();
+assert(w.document.querySelector('#resultOverlay[data-following-results]'));
+assert(w.document.querySelector('#resultContent').textContent.includes('Sets 6'));
+assert(w.document.querySelector('#resultContent .followed-rubber-side'));
+assert(w.document.querySelector('#resultContent .following-fixture-updates').textContent.includes('Jayden Bone'));
+click('[data-follow-result-step="1"]');
+assert(w.document.querySelector('#resultContent').textContent.includes('Nothing new'));
+click('[data-follow-result-step="-1"]');
+assert(w.document.querySelector('#resultContent .followed-rubber-side'));
+click('[data-follow-result-standings]');
+assert(w.document.querySelector('.shared-sheet-overlay:not(.hidden) h2').textContent.includes('Sets 6'));
+esc();await tick();
+assert(w.document.querySelector('#resultOverlay[data-following-results]'));
+esc();await tick();
+click('[data-following-open]');await tick();
 click('#playersFollowing [data-follow-open]');await tick();
 assert(w.document.querySelector('#playersFollowingOverlay').classList.contains('hidden'));
 assert(!w.document.querySelector('#profileOverlay').classList.contains('hidden'));

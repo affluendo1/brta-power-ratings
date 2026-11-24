@@ -9,13 +9,14 @@ window.BRTAPlayerFollowing = (() => {
   const latestName = person => person.rows[0].player;
   const locations = rows => [...new Set(rows.map(row =>
     [row.team, row.competitionLabel, row.sectionLabel].filter(Boolean).join(' · ')))];
-  function setup({host, badge, careers, open, analytics}) {
+  function setup({host, badge, careers, open, analytics, notice, loadResults, openResults}) {
     const saved = read(storageKey, {});
     const state = {
       pins: Array.isArray(saved.pins) ? saved.pins.filter(pin => Array.isArray(pin.anchors)) : [],
       checkedLegacy: !!saved.checkedLegacy,
     };
-    let model, report, request, visible;
+    let model, report, request, visible, resultRequest, opening = false, checkedAt = 0;
+    let sections = new Map(), loadingPaths = new Set(), feed = {slides:[], unread:[], tracking:[]};
     const candidates = new Map();
     const notifications = new Map();
     const save = () => localStorage.setItem(storageKey, JSON.stringify(state));
@@ -76,6 +77,78 @@ window.BRTAPlayerFollowing = (() => {
       state.checkedLegacy = true;
       save();
     }
+    const followed = () => state.pins.map(pin => {
+      const known = related(pin);
+      const current = known.flatMap(person => person.rows.filter(row => row.isCurrent));
+      return {pin, known, current};
+    });
+    function paintResults(items = followed()) {
+      feed = BRTAFollowingResults.collect(items, sections);
+      if (feed.tracking.length) {
+        BRTAFollowingResults.track(feed.tracking);
+        save();
+      }
+      const n = candidates.size + notifications.size + feed.unread.length;
+      badge.textContent = n ? String(n) : '';
+      badge.title = n ? n + ' following updates' : '';
+      notice.hidden = !feed.unread.length;
+      const names = feed.unread.join(', ');
+      notice.innerHTML = feed.unread.length ?
+        '<span role="status"><b>New followed results</b> · ' + esc(names) + '</span> <button class="button secondary" type="button" data-follow-results>View all</button>' : '';
+    }
+    async function refreshResults(task, force = false) {
+      if (!model || !force && !resultRequest && Date.now() - checkedAt < 30000) return feed;
+      const paths = [...new Set(followed().flatMap(item => item.current.map(row => row.dataPath)))];
+      if (resultRequest) {
+        if (!force || paths.every(path => loadingPaths.has(path))) return resultRequest;
+        await resultRequest;
+        return refreshResults(task, true);
+      }
+      loadingPaths = new Set(paths);
+      resultRequest = (async () => {
+        const fresh = new Map(sections);
+        let next = 0, completed = 0;
+        await Promise.all(Array.from({length: Math.min(4, paths.length)}, async () => {
+          while (next < paths.length) {
+            const path = paths[next++];
+            try { fresh.set(path, await loadResults(path)); }
+            catch { fresh.delete(path); }
+            task?.stage(20 + 65 * ++completed / paths.length, 'Checked ' + completed + ' of ' + paths.length + ' followed sections');
+          }
+        }));
+        sections = fresh;
+        checkedAt = Date.now();
+        paintResults();
+        if (!host.hidden && !opening) draw();
+        return feed;
+      })().finally(() => { resultRequest = null; });
+      return resultRequest;
+    }
+    async function viewResults(button) {
+      if (opening) return;
+      opening = button.disabled = true;
+      try {
+        await BRTAActivity.run('Finding followed scorecards', async task => {
+          if (!model) await refresh();
+          await refreshResults(task, true);
+          task.stage(92, 'Matching players to their fixtures…');
+          await task.paint();
+          if (!openResults(feed.slides)) return false;
+          BRTAFollowingResults.acknowledge(feed.slides);
+          save();
+          paintResults();
+          return true;
+        }, {key:'following-scorecards', message:'Reading the latest published results…'});
+      } catch {
+        if (!host.hidden) draw();
+      } finally {
+        opening = button.disabled = false;
+      }
+    }
+    notice.addEventListener('click', event => {
+      const button = event.target.closest('[data-follow-results]');
+      if (button) void viewResults(button);
+    });
     const reviewKey = person => person.id + '|' + person.rows.filter(row => row.isCurrent)
       .map(row => row.seasonLabel + ':' + row.competitionCode).sort().join('|');
     function update() {
@@ -92,9 +165,7 @@ window.BRTAPlayerFollowing = (() => {
           person.rows.some(row => row.isCurrent) && !pin.dismissed.includes(reviewKey(person)) && !pinFor(person));
         if (possible.length) candidates.set(pin, possible);
       }
-      const n = candidates.size + notifications.size;
-      badge.textContent = n ? String(n) : '';
-      badge.title = n ? n + ' following updates' : '';
+      paintResults();
     }
     function refresh() {
       if (request) return request;
@@ -105,6 +176,7 @@ window.BRTAPlayerFollowing = (() => {
         update();
         refreshStars();
         if (!host.hidden) draw();
+        return refreshResults();
       }).catch(() => { if (!host.hidden) host.innerHTML = '<p>Player records could not be loaded.</p><button type="button" class="button secondary" data-follow-retry>Try again</button>'; })
         .finally(() => { request = null; });
       return request;
@@ -128,11 +200,7 @@ window.BRTAPlayerFollowing = (() => {
         host.innerHTML = '<p role="status">Loading followed players…</p>';
         return;
       }
-      visible = state.pins.map(pin => {
-        const known = related(pin);
-        const current = known.flatMap(person => person.rows.filter(row => row.isCurrent));
-        return {pin, known, current};
-      }).sort((a, b) => Number(!!b.current.length) - Number(!!a.current.length) || a.pin.name.localeCompare(b.pin.name));
+      visible = followed().sort((a, b) => Number(!!b.current.length) - Number(!!a.current.length) || a.pin.name.localeCompare(b.pin.name));
       const activeCount = visible.filter(row => row.current.length).length;
       const card = ({pin, known, current}, i) => {
         const active = !!current.length;
@@ -159,7 +227,10 @@ window.BRTAPlayerFollowing = (() => {
       const group = (title, rows, offset = 0) => rows.length ? '<section class="following-group"><h3>' + title +
         ' <span>' + rows.length + '</span></h3><div class="following-grid">' + rows.map((row, i) => card(row, offset + i)).join('') +
         '</div></section>' : '';
-      host.innerHTML = visible.length ?
+      const resultHeader = '<div class="following-result-summary"><div><b>Latest results</b><p>' +
+        (feed.unread.length ? esc(feed.unread.join(', ')) + ' · new results' : 'Browse the latest published scorecards.') +
+        '</p></div><button class="button primary" type="button" data-follow-results>View all</button></div>';
+      host.innerHTML = visible.length ? resultHeader +
         group('Playing now', visible.slice(0, activeCount)) +
         group('Watching for a return', visible.slice(activeCount), activeCount) +
         (activeCount ? '<details class="following-method"><summary>How the comparison works</summary><p>Section level is weighted with win rate and game share. The comparison combines ladders only where there is enough evidence from players who played both. This estimate uses published match records.</p></details>' : '') :
@@ -169,6 +240,7 @@ window.BRTAPlayerFollowing = (() => {
       const button = event.target.closest('button');
       if (!button) return;
       const data = button.dataset;
+      if ('followResults' in data) { void viewResults(button); return; }
       if ('followRetry' in data) { draw(); refresh(); return; }
       const key = ['followOpen','followRemove','followSeen','followCandidate','followConfirm','followDismiss'].find(key => key in data);
       if (!key) return;
@@ -198,6 +270,7 @@ window.BRTAPlayerFollowing = (() => {
       if (key === 'followDismiss' && candidate) pin.dismissed.push(reviewKey(candidate));
       save();
       update();
+      if (key === 'followConfirm') void refreshResults(null, true);
       refreshStars();
       draw();
       const next = host.querySelector('[data-follow-open="' + Math.min(i, visible.length - 1) + '"]') ||
@@ -215,6 +288,7 @@ window.BRTAPlayerFollowing = (() => {
       else state.pins.push(create(person));
       save();
       update();
+      if (!pin) void refreshResults(null, true);
       refreshStars();
       if (!host.hidden) draw();
       const active = [...document.querySelectorAll('[data-player-follow]')].find(item =>
@@ -224,6 +298,13 @@ window.BRTAPlayerFollowing = (() => {
     window.addEventListener('brta-section-ready', () => {
       if (state.pins.length) refresh();
     });
+    window.setInterval(() => {
+      if (state.pins.length && !document.hidden) void refresh();
+    }, 60000);
+    document.addEventListener('visibilitychange', () => {
+      if (state.pins.length && !document.hidden) void refresh();
+    });
+    if (state.pins.length || !state.checkedLegacy) queueMicrotask(() => { void refresh(); });
     return {star, placeSectionStar, refresh, draw};
   }
   return {setup, icon};

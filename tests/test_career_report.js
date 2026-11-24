@@ -7,16 +7,18 @@ const entry = {player: 'Player <One>', team: 'Blue', competitionCode: 'UA', comp
 const moved = {...entry, seasonKey: 'UA:26', seasonLabel: 'Spring 2026', sectionCode: 'UA6', sectionLabel: 'Sets 6'};
 const green = {...entry, sectionCode: 'UA-GREEN', sectionLabel: 'Sets 1 Green Ball'};
 const rubbers = {...entry, sectionCode: 'UA-R1', sectionLabel: 'Rubbers 1'};
-const scale = Career.skillScale([entry,moved,green,rubbers]);
+const scale = Career.skillScale;
 const record = (row, won, date) => ({entry: row, kind: 'singles', won, date, gf: won ? 6 : 3, ga: won ? 3 : 6});
 const history = Career.skillHistory([
   ...Array.from({length:5}, () => record(entry,true,'20 Nov 25')),
-  ...Array.from({length:5}, () => record(moved,false,'22 Nov 26')),
+  ...Array.from({length:5}, (_,i) => record(moved,i<3,'22 Nov 26')),
   record(green,true,'22 Nov 25'),
 ],scale);
-assert.equal(history.length,3);
-assert(history[2].rating > history[0].rating, 'A much stronger section can outweigh a lower raw win rate');
-assert.notEqual(history[0].pool, history[1].pool, 'Green and yellow-ball ladders stay separate');
+assert.equal(history.length,2);
+assert(history[1].rating > history[0].rating, 'A stronger section can outweigh a lower raw win rate');
+assert.deepEqual(history[0].sections.map(row => row.code),['UA20','UA-GREEN']);
+assert.equal(scale(green).pool, scale(rubbers).pool, 'Even different formats share their competition series');
+assert.notEqual(scale({...entry,competitionCode:'AA'}).pool, scale(entry).pool, 'Different competitions stay separate');
 assert(scale(rubbers).baseline > scale({...entry,sectionLabel:'Sets 1'}).baseline);
 assert.equal(Career.skillHistory([record(entry,true,'20 Nov 25')],scale,'doubles').length,0);
 assert.equal(Career.matchTime('05/09/2021'),Date.UTC(2021,8,5));

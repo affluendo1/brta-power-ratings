@@ -3,7 +3,10 @@
 
   const releases = root.BRTA_RELEASES;
   const latest = releases[0];
-  const parentRelease=releases.find(r=>['major','large'].includes(r.size))||latest,patches=releases.slice(0,releases.indexOf(parentRelease));
+  const followup=release=>/^(\d+(?:\.\d+)*[a-z]+)&[1-9]\d*$/i.exec(release.version)?.[1];
+  const isAnchor=release=>/^\d+$/.test(release.version)||
+    (!/^\d+[a-z]+$/i.test(release.version)&&!followup(release)&&['major','large'].includes(release.size));
+  const parentRelease=releases.find(isAnchor)||latest,patches=releases.slice(0,releases.indexOf(parentRelease));
   let overlay;
   const pastSoftware = root.BRTAPastSoftware;
   const canViewPast = () => pastSoftware && auxiliaryEnabled();
@@ -27,7 +30,8 @@
 
   function points(release) {
     const list = changes => '<ul class="release-points">'+changes.map(change => '<li>'+escape(change)+'</li>').join('')+'</ul>';
-    return list(release.changes)+(release.otherChanges?.length?
+    const parent = followup(release);
+    return (parent ? '<p class="release-followup">Follow-up to '+escape(parent)+'</p>' : '')+list(release.changes)+(release.otherChanges?.length?
       '<h4>Other changes</h4>'+list(release.otherChanges):'');
   }
 
@@ -55,7 +59,7 @@
 
   function pastButton(release) {
     const alias = pastSoftware?.byVersion[release.version];
-    if (!alias || !/^\d+\.\d+$/.test(release.version)) return '';
+    if (!alias || !/^\d+(?:\.\d+)?$/.test(release.version)) return '';
     return '<button class="release-past-button" type="button" hidden data-past-release="'+escape(alias)+
       '" aria-label="View historical release '+escape(release.version)+'">View past</button>';
   }
@@ -79,8 +83,8 @@
       '<div class="changelog-panels"><div id="changelog-latest" role="tabpanel" aria-labelledby="changelog-latest-tab" tabindex="0">'+
       '<article class="release-latest"><div class="release-latest-label">LATEST '+escape(parentRelease.size.toUpperCase())+' UPDATE</div><div class="release-heading"><h3>'+escape(parentRelease.version)+'</h3>'+(parentRelease.title?'<span>'+escape(parentRelease.title)+'</span>':'')+pastButton(parentRelease)+'</div>'+time(parentRelease)+points(parentRelease)+patches.slice().reverse().map(patch).join('')+'</article></div>'+
       '<div id="changelog-history" role="tabpanel" aria-labelledby="changelog-history-tab" tabindex="0" hidden><p class="changelog-history-hint">Choose an update to see what changed.</p><div class="release-history">'+releases.map(release =>
-        '<div class="release-history-row' + (['major','large'].includes(release.size) ? ' release-anchor' : '') +
-        '" id="release-' + escape(release.version) + '"><details class="release-entry'+' release-'+release.size+'"><summary><span class="release-version">'+escape(release.version)+'</span><span class="release-name">'+escape(release.title||'')+(['major','large'].includes(release.size) ? '<small>'+escape(release.size)+'</small>' : '')+'</span><span class="release-chevron" aria-hidden="true">⌄</span>'+time(release)+'</summary><div class="release-details">'+points(release)+'</div></details>'+pastButton(release)+'</div>'
+        '<div class="release-history-row' + (isAnchor(release) ? ' release-anchor' : '') +
+        '" id="release-' + escape(release.version) + '"><details class="release-entry'+' release-'+release.size+'"><summary><span class="release-version">'+escape(release.version)+'</span><span class="release-name">'+escape(release.title||'')+(isAnchor(release) ? '<small>'+escape(release.size)+'</small>' : '')+'</span><span class="release-chevron" aria-hidden="true">⌄</span>'+time(release)+'</summary><div class="release-details">'+points(release)+'</div></details>'+pastButton(release)+'</div>'
       ).join('')+'</div></div></div></section>';
     document.body.appendChild(overlay);
     overlay.addEventListener('click', event => {

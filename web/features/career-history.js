@@ -64,35 +64,21 @@
     });
   }
 
-  const skillMethod = 'Each division has a baseline 45 points above the next division in the same ladder. Sets 1 (or the top division of a separate ladder) starts at 1500, and junior Open Rubbers start above Sets. Results adjust the baseline using 60% match win rate and 40% game share, with five neutral matches pulling small samples toward the baseline. Each recorded match has equal weight in the season estimate.';
-  const sectionOrder = row => {
+  // validation/calibrate_career_skill.py selects this bounded form adjustment
+  // on past BRTA junior singles and measures it on Spring 2026.
+  const skillMethod = 'Within a competition, each division step is worth 45 points. Junior Rubbers sit above Sets 1 and Green Ball starts below the yellow-ball draw. Form uses 20% match win rate and 80% game share, shrunk by two neutral matches and capped smoothly. Season estimates weight each section by matches played. The calibration used junior singles, so other divisions and doubles use the same provisional scale.';
+  const greenOffset = {AA:10, UA:22};
+  const rubbersOffset = {AA:2, UA:3};
+  function skillScale(row) {
     const label = String(row.sectionLabel || '').trim().toLowerCase();
     const number = Number(/(?:^|[^\d])(\d{1,2})(?!\d)/.exec(label)?.[1]);
-    if (!Number.isInteger(number) || number < 1 || !label.match(/sets?|rub|section|secti?on|grade|div|s\/d|girls?|boys?|mixed|\bmx\b|^(?:a ?)?\d{1,2}$/)) return null;
-    const junior = ['AA', 'UA'].includes(row.competitionCode);
-    const family = /green/.test(label) ? 'Green Ball' : /girls?/.test(label) ? 'Girls' : /boys?/.test(label) ? 'Boys' :
-      /^(?:women|ladies)/.test(label) ? 'Women’s ' + (/rub/.test(label) ? 'Rubbers' : 'Sets') :
-      /^(?:men|tuemen)/.test(label) ? 'Men’s ' + (/rub/.test(label) ? 'Rubbers' : 'Sets') :
-      /^(?:mx|mixed)/.test(label) ? 'Mixed' : 'Open';
-    return {number, family, rubbers: junior && family === 'Open' && /^rub/.test(label)};
-  };
-
-  function skillScale(sections) {
-    const rubbers = new Map();
-    for (const row of sections) {
-      const order = sectionOrder(row);
-      if (order?.rubbers) rubbers.set(row.competitionCode, Math.max(order.number, rubbers.get(row.competitionCode) || 0));
-    }
-    return row => {
-      const order = sectionOrder(row);
-      if (!order) return null;
-      const {number, family} = order;
-      return {pool: row.competitionCode + '/' + family, family,
-        baseline: 1500 + 45 * (order.rubbers ? (rubbers.get(row.competitionCode) || number) - number + 1 : 1 - number)};
-    };
+    if (!Number.isInteger(number) || number < 1 || !/sets?|rub|section|secti?on|grade|div|s\/d|girls?|boys?|mixed|\bmx\b|^(?:a ?)?\d{1,2}$/.test(label)) return null;
+    const code = row.competitionCode;
+    const shift = /green/.test(label) ? -(greenOffset[code] ?? 10) : /^rub/.test(label) ? (rubbersOffset[code] ?? 0) : 0;
+    return {pool: code, baseline: 1500 + 45 * (1 - number + shift)};
   }
 
-  function skillHistory(matches, scale, discipline = 'overall') {
+  function skillHistory(matches, scale = skillScale, discipline = 'overall') {
     const seasons = new Map();
     const sections = new Map();
     for (const match of matches) {
@@ -113,7 +99,8 @@
     for (const sample of sections.values()) {
       const {season, row, tier, count, wins, gamesFor, gamesAgainst, date} = sample;
       const winRate = wins / count, gameShare = gamesFor + gamesAgainst ? gamesFor / (gamesFor + gamesAgainst) : winRate;
-      const score = tier.baseline + 160 * (.6 * winRate + .4 * gameShare - .5) * count / (count + 5);
+      const form = 80 * (.2 * winRate + .8 * gameShare - .5) * count / (count + 2);
+      const score = tier.baseline + 45 * 12 * Math.tanh(form / 12);
       if (!seasons.has(season)) seasons.set(season, {row, ...tier, date: null, count: 0, weighted: 0, sections: []});
       const point = seasons.get(season);
       if (date != null) point.date = Math.max(point.date ?? date, date);
@@ -134,20 +121,21 @@
   const percent = value => Number.isFinite(value) ? Math.round(value) + '%' : '—';
   const showCompetition = row => row.competitionLabel || competitionLabel(row.competitionCode);
   const label = row => row.seasonLabel + ' · ' + showCompetition(row);
-  const ladderLabel = point => showCompetition(point.row) + ' · ' + point.family;
-  function timeline(history) {
-    const points = history.filter(point => Number.isFinite(point.date));
+  const ladderLabel = point => showCompetition(point.row);
+  function timeline(history, {seriesKey = point => point.pool, seriesLabel = ladderLabel, axes = null} = {}) {
+    const points = history.filter(point => Number.isFinite(point.date)).sort((a,b) => a.date - b.date);
     if (!points.length) return '<p>No dated results in a recognised ladder for this discipline.</p>';
     const series = new Map();
     for (const point of points) {
-      if (!series.has(point.pool)) series.set(point.pool, []);
-      series.get(point.pool).push(point);
+      if (!series.has(seriesKey(point))) series.set(seriesKey(point), []);
+      series.get(seriesKey(point)).push(point);
     }
     const left = 52, right = 608, top = 16, bottom = 179;
-    const first = points[0].date, last = points.at(-1).date;
+    const reference = axes?.length ? axes : points;
+    const first = Math.min(...reference.map(point => point.date)), last = Math.max(...reference.map(point => point.date));
     const x = date => first === last ? (left + right) / 2 : left + (date - first) / (last - first) * (right - left);
-    const low = Math.floor((Math.min(...points.map(point => point.rating)) - 15) / 25) * 25;
-    const interval = Math.max(25, Math.ceil((Math.max(...points.map(point => point.rating)) + 15 - low) / 100) * 25);
+    const low = Math.floor((Math.min(...reference.map(point => point.rating)) - 15) / 25) * 25;
+    const interval = Math.max(25, Math.ceil((Math.max(...reference.map(point => point.rating)) + 15 - low) / 100) * 25);
     const y = value => bottom - (value - low) / (4 * interval) * (bottom - top);
     const dates = first === last ? [first] : [first, ...((last - first) > 12 * MONTH_MS ? [(first + last) / 2] : []), last];
     const tickDate = new Intl.DateTimeFormat('en-AU', {month: 'short', year: 'numeric', timeZone: 'UTC'});
@@ -159,21 +147,25 @@
       esc(tickDate.format(date)) + '</text>').join('');
     let lines = '', legend = '';
     for (const [index, entries] of [...series.values()].entries()) {
-      const color = colours[index % colours.length];
+      const color = colours[index] || 'hsl(' + Math.round(index * 137.5 % 360) + ' 62% 45%)';
       const coords = point => x(point.date).toFixed(1) + ',' + y(point.rating).toFixed(1);
       lines += '<polyline points="' + entries.map(coords).join(' ') + '" stroke="' + color + '" fill="none" stroke-width="2.5"/>' +
-        entries.map(point => '<circle cx="' + x(point.date) + '" cy="' + y(point.rating) + '" r="4.5" fill="' + color +
-          '"><title>' + esc(label(point.row) + ' · ' + point.family + ' · ' + point.rating + ' skill · ' +
-            point.sections.map(section => section.label).join(', ')) + '</title></circle>').join('');
-      legend += '<li><i style="background:' + color + '" aria-hidden="true"></i>' + esc(ladderLabel(entries[0])) + '</li>';
+        entries.map(point => {
+          const detail = [point.name, label(point.row), point.rating + ' skill', point.count + ' matches',
+            point.sections.map(section => section.label).join(', ')].filter(Boolean).join(' · ');
+          return '<circle cx="' + x(point.date) + '" cy="' + y(point.rating) + '" r="4.5" fill="' + color +
+            '" tabindex="0" aria-label="' + esc(detail) + '" data-skill-point="' + esc(detail) + '"><title>' +
+            esc(detail) + '</title></circle>';
+        }).join('');
+      legend += '<li><i style="background:' + color + '" aria-hidden="true"></i>' + esc(seriesLabel(entries[0])) + '</li>';
     }
-    return '<svg viewBox="0 0 632 218" role="img" aria-label="Estimated playing skill by season and ladder">' +
+    return '<svg viewBox="0 0 632 218" role="group" aria-label="Estimated playing skill by season and competition">' +
       '<g class="career99-axes">' + ticks + '</g>' + lines + '</svg><ul class="career99-legend">' + legend + '</ul>';
   }
 
   function skillTable(history) {
     if (!history.length) return '';
-    return '<details class="career-skill-record"><summary>Skill ratings by season</summary><div class="table-wrap"><table><thead><tr><th scope="col">Season</th><th scope="col">Ladder</th><th scope="col">Sections</th><th scope="col">Matches</th><th scope="col">Skill</th></tr></thead><tbody>' +
+    return '<details class="career-skill-record"><summary>Skill ratings by season</summary><div class="table-wrap"><table><thead><tr><th scope="col">Season</th><th scope="col">Competition</th><th scope="col">Sections</th><th scope="col">Matches</th><th scope="col">Skill</th></tr></thead><tbody>' +
       [...history].reverse().map(point => '<tr><td>' + esc(point.row.seasonLabel) + '</td><td>' + esc(ladderLabel(point)) +
         '</td><td>' + esc(point.sections.map(section => section.label).join(', ')) + '</td><td>' + point.count +
         '</td><td><b>' + point.rating + '</b>' + (point.count < 5 ? ' <small>Provisional</small>' : '') + '</td></tr>').join('') + '</tbody></table></div></details>';
@@ -181,12 +173,12 @@
 
   function draw(panel, matches, scale) {
     const seasons = seasonRecords(matches.map(match => ({row: match.entry, matches: [match]})));
-    panel.innerHTML = '<p>Each dot estimates playing skill for a season in one ladder. Compare points within the same ladder.</p>' +
+    panel.innerHTML = '<p>Each dot estimates playing skill for a season in one competition, including Green Ball and Rubbers. Compare points within the same competition.</p>' +
       '<div class="career99-filters"><label>Discipline <select data-career-discipline><option value="overall">All matches</option><option value="singles">Singles</option><option value="doubles">Doubles</option></select></label>' +
       '</div>' +
       '<div data-career-chart class="career99-chart"></div><div data-career-skill-table></div>' +
       '<details><summary>How skill is estimated</summary><p>' + skillMethod + ' A rating based on fewer than five matches is provisional. ' +
-        'Dates are based on each ladder’s last recorded match that season.</p></details>' +
+        'Dates are based on each competition’s last recorded match that season.</p></details>' +
       '<h4>Best seasons</h4><p>Rate awards require at least five matches. Each competition season is assessed separately.</p><div class="career99-awards">' +
       (seasonAwards(seasons).map(award => '<article><span>' + award.label + '</span><strong>' +
         (['winRate','gameShare'].includes(award.field) ? percent(award.value) : award.value) +
@@ -204,6 +196,6 @@
     refresh();
   }
 
-  root.BRTACareerTimeline = {...career, render: draw};
+  root.BRTACareerTimeline = {...career, chart: timeline, render: draw};
 })(typeof window === 'undefined' ? globalThis : window);
 /* BRTA Power Ratings 9.9g */

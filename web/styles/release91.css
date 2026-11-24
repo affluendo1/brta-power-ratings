@@ -298,7 +298,7 @@ html[data-animation="off"] .profile-head h2.player-lab-rainbow { animation: none
     padding: 0;
     overscroll-behavior: contain;
   }
-  #resultOverlay:not(.hidden):is([data-simulated], :has(#resultFixtureEdit:not([hidden]))) {
+  #resultOverlay:not(.hidden):is([data-simulated], [data-following-results], :has(#resultFixtureEdit:not([hidden]))) {
     grid-template-rows: auto minmax(0, 1fr);
   }
   #resultOverlay:not(.hidden):has(#resultFixtureEdit:not([hidden])) {
@@ -324,7 +324,7 @@ html[data-animation="off"] .profile-head h2.player-lab-rainbow { animation: none
     margin: 0 auto;
     padding: max(8px, env(safe-area-inset-top)) max(12px, env(safe-area-inset-right)) 8px;
   }
-  #resultOverlay:is([data-simulated], :has(#resultFixtureEdit:not([hidden]))) .result-toolbar {
+  #resultOverlay:is([data-simulated], [data-following-results], :has(#resultFixtureEdit:not([hidden]))) .result-toolbar {
     padding-top: 8px;
   }
   .result-scroll {
@@ -341,7 +341,7 @@ html[data-animation="off"] .profile-head h2.player-lab-rainbow { animation: none
       calc(40px + env(safe-area-inset-bottom)) max(12px, env(safe-area-inset-left));
   }
   #resultContent .result-detail-head h2 { margin-inline-end: 0; }
-  #resultOverlay[data-simulated] .round841-controls {
+  #resultOverlay:is([data-simulated],[data-following-results]) .round841-controls {
     grid-row: 1;
     position: relative;
     inset: auto;

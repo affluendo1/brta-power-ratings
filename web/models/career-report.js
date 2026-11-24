@@ -222,8 +222,8 @@
         (item.dominant ? '<li><b>Largest game margin</b> · ' + esc(describeMatch(item.dominant)) + '</li>' : '')).join('') +
         '</ul>' : '<p>No rated wins recorded.</p>') + season.sections.map(sectionHTML).join('') + '</section>').join('');
     const skill = ['overall','singles','doubles'].map(view => expandable(view[0].toUpperCase()+view.slice(1),
-      table(['Season','Ladder','Sections','Last dated match','Matches','Skill','Evidence'],
-        report.history[view].map(point => [point.row.seasonLabel,point.row.competitionLabel + ' · ' + point.family,
+      table(['Season','Competition','Sections','Last dated match','Matches','Skill','Evidence'],
+        report.history[view].map(point => [point.row.seasonLabel,point.row.competitionLabel,
           point.sections.map(section => section.label).join(', '),dateText(point.date),point.count,point.rating,point.count < 5 ? 'Provisional' : ''])),
       view === 'overall')).join('');
     const recordTable = rows => table(['Player or pair','Team','Discipline','Matches','Wins','Losses','Undecided','Games'],
@@ -248,7 +248,7 @@
       'Totals include recorded match outcomes, including non-rated results. Game totals include recorded ordinary-set games. Section Power model · ' +
       esc(report.model) + '.</p></header><nav aria-label="Report sections"><a href="#skill">Skill history</a> · <a href="#opponents">Opponents and partners</a> · ' +
       report.seasons.map((season,i) => '<a href="#season-' + i + '">' + esc(season.label) + '</a>').join(' · ') + '</nav>' +
-      '<section id="skill"><h2>Skill history</h2><p>' + esc(Career.skillMethod) + ' Compare points within each ladder.</p>' + skill +
+      '<section id="skill"><h2>Skill history</h2><p>' + esc(Career.skillMethod) + ' Compare points within each competition.</p>' + skill +
       '<h3>Best seasons</h3>' + table(['Award','Value','Competition seasons'],report.awards.map(award => [award.label,
         ['winRate','gameShare'].includes(award.field) ? award.value.toFixed(1)+'%' : award.value,
         award.seasons.map(season => season.season + ' · ' + season.competition).join(', ')])) + '</section>' + seasons +

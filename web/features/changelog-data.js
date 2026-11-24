@@ -2,6 +2,18 @@
 // Retrospective entries use source-commit timestamps; sourceCommit records their provenance.
 window.BRTA_RELEASES = Object.freeze([
 {
+  "version": "9.9j&1",
+  "size": "medium",
+  "title": "Calibrated skill, comparison graphs and followed results",
+  "committedAt": "2026-11-24T20:16:21+11:00",
+  "changes": [
+    "Career Skill Rating uses weights tested against later BRTA matches. Green Ball and Rubbers now appear in the same series as the rest of their competition.",
+    "Compare career skill in Players. Add multiple players and graphs, filter by discipline and date, share a scale, and save named presets.",
+    "Following alerts you when new scorecards include your players. Browse those fixtures with the round simulator’s carousel, with highlighted rubbers, Power and ladder changes, and the corresponding standings.",
+    "Changelog numbering starts its new scheme. Whole numbers mark major releases, letters mark distinct updates, and &1, &2 and later suffixes mark follow-ups to those updates."
+  ]
+},
+{
   "version": "9.9j",
   "size": "small",
   "title": "Career reports and skill ratings",

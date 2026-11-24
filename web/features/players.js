@@ -18,6 +18,12 @@
   const status = directory.querySelector('#careerSearchStatus');
   const filterScope = directory.querySelector('#careerSearchScope');
   const rosters = directory.querySelector('#playersRosters');
+  const skillWorkspace = document.createElement('section');
+  skillWorkspace.className = 'skill-comparison';
+  rosters.before(skillWorkspace);
+  const skillComparison = BRTASkillComparison.setup(skillWorkspace, {
+    careers, section: () => D?.meta, load: loadComparison,
+  });
   const ratingUI = window.BRTARatingControls.setup(page);
   const followingOverlay = document.createElement('div');
   followingOverlay.id = 'playersFollowingOverlay';
@@ -43,8 +49,23 @@
     if (event.target.closest('[data-following-close]')) closeFollowing();
   });
   BRTAOverlays.register(followingOverlay.id, closeFollowing);
+  const followingNotice = document.createElement('aside');
+  followingNotice.className = 'following-results-notice';
+  followingNotice.hidden = true;
+  document.querySelector('#statusStrip').after(followingNotice);
+  const followingResults = BRTAFollowingResults.setup();
   const following = BRTAPlayerFollowing.setup({
-    host: followingPanel, badge: hero.querySelector('[data-follow-count]'), careers,
+    host: followingPanel, badge: hero.querySelector('[data-follow-count]'), careers, notice: followingNotice,
+    async loadResults(path) {
+      const response = await fetch(path, {cache: 'no-store', signal: AbortSignal.timeout?.(20000)});
+      if (!response.ok) throw Error('Section unavailable');
+      return normaliseTeamLabels(await response.json());
+    },
+    openResults: slides => {
+      if (!slides.length) return false;
+      if (!followingPanel.hidden) closeFollowing();
+      return followingResults.open(slides);
+    },
     open: person => { closeFollowing(); openCareer(person); }, analytics,
   });
   const indexData = {request: null};
@@ -139,7 +160,7 @@
   content.before(scopes, career);
   let model, indexRequest, lab, searchResults = [], visible = 15, debounce, labVersion = 0;
   const payloads = new Map();
-  let careerSkillScale, exportingCareer = false;
+  let exportingCareer = false;
   const comp = row => String(row.competitionLabel || competitionLabel(row.competitionCode)).split(' - ')[0];
   const distinct = (rows, key) => new Set(rows.map(key)).size;
   const plural = (n, noun) => n + ' ' + noun + (n === 1 ? '' : noun.endsWith('match') ? 'es' : 's');
@@ -153,10 +174,7 @@
       if (index.version !== 1 || !Array.isArray(index.entries)) throw Error('The career index is unavailable.');
       playerSearchIndex = index;
       return index;
-    })().then(index => {
-      careerSkillScale = BRTACareerTimeline.skillScale(index.sections);
-      return model = BRTACareers.build(index, BRTAPlayerSearch);
-    }).catch(error => {
+    })().then(index => model = BRTACareers.build(index, BRTAPlayerSearch)).catch(error => {
       indexRequest = null;
       throw error;
     });
@@ -185,6 +203,7 @@
   });
   function renderDirectory() {
     drawRosters();
+    skillComparison.draw();
     if (!query.value.trim()) {
       status.textContent = '';
       found.replaceChildren();
@@ -505,6 +524,30 @@
     }
     return payloads.get(key);
   }
+  async function loadComparison(player, competition) {
+    const model = await careers();
+    const person = model.get(player.id) || model.reconcileAppearance(player.anchor);
+    if (!person) return {matches: [], unavailable: 1};
+    const rows = person.rows.filter(row => row.competitionCode === competition);
+    const matches = new Map();
+    let next = 0, unavailable = 0;
+    await Promise.all(Array.from({length: Math.min(3, rows.length)}, async () => {
+      while (next < rows.length) {
+        const row = rows[next++];
+        try {
+          const data = await sectionPayload(row);
+          for (const kind of ['singles','doublesPlayers']) {
+            for (const match of L8.matches(data, row.player, kind)) {
+              if (row.team && match.team !== row.team) continue;
+              const key = JSON.stringify([row.seasonKey,row.sectionCode,match.fixtureId || match.round,kind,match.position,match.opp,match.partner]);
+              matches.set(key, {...match, kind, entry: row});
+            }
+          }
+        } catch { unavailable++; }
+      }
+    }));
+    return {matches: [...matches.values()], unavailable};
+  }
   function sectionPower(row, data, modelName, fits, isCurrent, completeHistory = false) {
     const key = row.dataPath;
     if (!fits.has(key)) {
@@ -658,7 +701,7 @@
       (scope === 'career' && dated.length > 1 ? '<div><small>Recorded playing span</small><b>' + duration + '</b></div>' : '') +
       (unavailable ? '<p>' + plural(unavailable, 'section record') + ' unavailable. Totals cover loaded matches.</p>' : '');
     if (scope === 'career') {
-      BRTACareerTimeline.render(career.querySelector('.career99-content'), matches, careerSkillScale);
+      BRTACareerTimeline.render(career.querySelector('.career99-content'), matches, BRTACareerTimeline.skillScale);
       drawRivals(panel, [...meetings.values()], unavailable);
       return;
     }
@@ -746,7 +789,7 @@
         await Promise.all(Array.from({length: Math.min(rows.length, 3)}, worker));
         task.stage(94, 'Writing season summaries and the full match log…');
         await task.paint();
-        const report = BRTACareerReport.compile({...person, name: publicPlayerName(name)}, entries, careerSkillScale, modelLabel);
+        const report = BRTACareerReport.compile({...person, name: publicPlayerName(name)}, entries, BRTACareerTimeline.skillScale, modelLabel);
         BRTAExportUI853.download(BRTACareerReport.html(report), BRTAExport853.slug(name) + '-brta-career.html', 'text/html;charset=utf-8');
         status.textContent = report.missing || report.missingPower ? 'Downloaded with coverage notes.' : 'Career report downloaded.';
       }, {key: 'career-export', message: 'Loading scorecards and Power histories…'});
@@ -771,6 +814,7 @@
     lab.season = event.target.value;
     chooseScope('season');
   });
+  window.addEventListener('brta-section-ready', skillComparison.contextChanged);
   window.BRTAPlayers = {
     ready: careers,
     show(view) { setRatingScope(view === 'history' ? 'directory' : 'section'); },
