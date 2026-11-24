@@ -1,5 +1,5 @@
 {
-  "synced_at_utc": "2026-11-24T03:28:42.798267+00:00",
+  "synced_at_utc": "2026-11-24T03:47:42.034095+00:00",
   "competitions": {
     "AA": "Saturday AM - Spring 2026",
     "AP": "Saturday PM - Summer 2026/27",
@@ -4759,12 +4759,12 @@
       "official_standings": [],
       "green_ball": false,
       "results_loaded_by_trols": null,
-      "fixtures": 58,
-      "completed_fixtures": 46,
+      "fixtures": 59,
+      "completed_fixtures": 48,
       "draw_fixtures": 56,
-      "singles_rubbers": 92,
-      "doubles_rubbers": 46,
-      "latest_round": 16,
+      "singles_rubbers": 96,
+      "doubles_rubbers": 48,
+      "latest_round": 17,
       "validation": "passed",
       "source_warnings": []
     },
@@ -4816,14 +4816,16 @@
       "official_standings": [],
       "green_ball": false,
       "results_loaded_by_trols": null,
-      "fixtures": 58,
-      "completed_fixtures": 46,
+      "fixtures": 59,
+      "completed_fixtures": 48,
       "draw_fixtures": 56,
-      "singles_rubbers": 90,
-      "doubles_rubbers": 45,
-      "latest_round": 16,
-      "validation": "passed",
-      "source_warnings": []
+      "singles_rubbers": 94,
+      "doubles_rubbers": 47,
+      "latest_round": 17,
+      "validation": "source discrepancies",
+      "source_warnings": [
+        "Incomplete TROLS score for UA002302 singles No. 1: ''. Missing score not inferred; excluded from ratings and game totals."
+      ]
     },
     {
       "competition_code": "UA",
@@ -4873,12 +4875,12 @@
       "official_standings": [],
       "green_ball": false,
       "results_loaded_by_trols": null,
-      "fixtures": 58,
-      "completed_fixtures": 38,
+      "fixtures": 59,
+      "completed_fixtures": 40,
       "draw_fixtures": 56,
-      "singles_rubbers": 76,
-      "doubles_rubbers": 38,
-      "latest_round": 16,
+      "singles_rubbers": 80,
+      "doubles_rubbers": 40,
+      "latest_round": 17,
       "validation": "source discrepancies",
       "source_warnings": [
         "Incomplete TROLS score for UA003121 singles No. 1: ''. Missing score not inferred; excluded from ratings and game totals.",
