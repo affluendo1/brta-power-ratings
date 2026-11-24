@@ -74,3 +74,75 @@ console.log('Roster text, matching IDs, row order, archival/reactivation, transf
   console.log('Washouts preserve started scorecards or clear both squads when no play started.');
 }
 /* BRTA Power Ratings 9.9g */
+
+{
+  const section=empty();
+  section.singlesSlots=4;
+  section.doublesSlots=2;
+  for(const team of ['a','b']){
+    for(let order=1;order<=6;order++)section.players.push({id:team+order,name:team+order,teamId:team,order});
+  }
+  const fixture=T.scheduledFixture('a','b');
+  fixture.homeLineup=['a2','a3','a4','a5','a6'];
+  fixture.awayLineup=['b1','b2','b3','b4'];
+  fixture.homeDoublesPairs=[['a2','a3'],['a4','a6']];
+  fixture.rubbers=T.generate(section,fixture);
+  fixture.rubbers.forEach(match=>match.sets=[{h:6,a:2,mt:false}]);
+  T.finish(fixture,section);
+  const original=copy(fixture),next=copy(fixture);
+  T.lineup(section,next,'home',['a1','a2','a3','a4','a6']);
+  assert.deepEqual(T.reconcileSquad(section,fixture,next,'home'),['Singles:1','Singles:2','Singles:3','Singles:4']);
+  assert.equal(next.status,'Scheduled');
+  assert.deepEqual(next.rubbers.filter(m=>m.type==='Doubles'),fixture.rubbers.filter(m=>m.type==='Doubles'));
+  assert.deepEqual(next.rubbers.filter(m=>m.type==='Singles').map(m=>[m.home[0],m.status]),[
+    ['a1','Scheduled'],['a2','Scheduled'],['a3','Scheduled'],['a4','Scheduled']
+  ]);
+  assert.deepEqual(fixture,original,'Previewing lineup changes must not modify the original fixture');
+
+  const smaller=copy(fixture);
+  delete smaller.homeDoublesPairs;
+  T.lineup(section,smaller,'home',['a2','a4','a5','a6']);
+  const cleared=T.reconcileSquad(section,fixture,smaller,'home');
+  assert(!cleared.includes('Singles:1'),'Singles No. 1 has the same two players');
+  assert(!cleared.includes('Doubles:2'),'An unchanged doubles pairing survives');
+  assert.equal(new Set(smaller.rubbers.filter(m=>m.type==='Doubles').flatMap(m=>m.home)).size,4,'Automatic pairs use four different eligible players');
+}
+
+{
+  const section=empty();
+  section.teams=Array.from({length:8},(_,i)=>({id:'t'+i,name:'Team '+i}));
+  section.players=[];
+  const circle=section.teams.map(t=>t.id);
+  for(let i=0;i<7;i++){
+    section.rounds.push({id:'leg-'+i,number:i+1,date:T.plusDays('2026-01-03',i*7),
+      fixtures:circle.slice(0,4).map((home,j)=>T.scheduledFixture(home,circle[7-j]))});
+    circle.splice(1,0,circle.pop());
+  }
+  const missing=section.rounds[6].fixtures.pop();
+  assert.equal(T.completeDraw(section).returnFixtures,0,'An incomplete first leg creates no return fixtures');
+  section.rounds[6].fixtures.push(missing);
+  const original=copy(section.rounds);
+  assert.deepEqual(T.completeDraw(section),{returnFixtures:28,semifinals:0});
+  assert.deepEqual(section.rounds.slice(0,7),original);
+  assert.equal(section.rounds[7].date,'2026-02-21');
+  for(let i=0;i<7;i++){
+    assert.deepEqual(section.rounds[i+7].fixtures.map(f=>[f.homeTeamId,f.awayTeamId]),
+      section.rounds[i].fixtures.map(f=>[f.awayTeamId,f.homeTeamId]));
+    assert(section.rounds[i+7].fixtures.every(f=>f.status==='Scheduled'&&f.rubbers.length===0));
+  }
+  for(const round of section.rounds)for(const f of round.fixtures){
+    f.status=Number(f.homeTeamId.slice(1))<Number(f.awayTeamId.slice(1))?'Forfeited By':'Forfeited To';
+  }
+  const last=section.rounds[13].fixtures[0],status=last.status;
+  last.status='Scheduled';
+  assert.deepEqual(T.completeDraw(section),{returnFixtures:0,semifinals:0});
+  last.status=status;
+  assert.deepEqual(T.completeDraw(section),{returnFixtures:0,semifinals:2});
+  assert.deepEqual(section.rounds.at(-1).fixtures.map(f=>[f.homeTeamId,f.awayTeamId]),[['t0','t3'],['t1','t2']]);
+  assert.equal(section.rounds.at(-1).date,'2026-04-11');
+  assert.equal(M.roundStage(section.rounds.at(-1)),'semi_final');
+  const complete=copy(section);
+  assert.deepEqual(T.completeDraw(section),{returnFixtures:0,semifinals:0});
+  assert.deepEqual(section,complete,'Repeated saves are idempotent');
+  M.validate(section);
+}

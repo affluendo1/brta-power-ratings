@@ -140,7 +140,8 @@ const planned=Model.build(scheduledOnly);planned.results=[];assert(Exports.csv(p
 const manual=clone(singlesForfeit);manual.home=['p1'];manual.away=['p9'];manual.winner='away';manual.sets=[{h:'',a:'',mt:false}];
 const manualScored=Model.score(manual,s);assert.equal(manualScored.hg,0);assert.equal(manualScored.ag,6,'Manual and No Player forfeits share the same games treatment');
 const incompatible=clone(s);incompatible.setTarget=4;incompatible.ratingModel='4melody.2';
-assert.throws(()=>Model.validate(incompatible),/requires standard sets/i);
+Model.validate(incompatible);
+assert.equal(Model.ratingModelFor(incompatible),'RM4.2');
 assert.equal(Model.specialistCompatible(s),true);
 assert.equal(Model.specialistCompatible(incompatible),false);
 const duplicateSource=clone(Model.build(src));

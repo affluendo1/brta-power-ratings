@@ -71,3 +71,13 @@ for(const through of [null,5,6]){
 }
 console.log('Basement stays below every Foundational rating, including provisional entries and round snapshots.');
 /* BRTA Power Ratings 9.9g */
+
+const scheduleData=structuredClone(D);
+scheduleData.results[0].fixtures[0].rubbers.push({
+ type:'Singles',home:'P',away:'A',winner:'A',score:'1-6',position:2
+});
+const rankedSchedule=L.schedule(scheduleData);
+const fullSchedule=L.schedule(scheduleData,null,true);
+assert.deepEqual(fullSchedule.map(r=>[r.player,r.rank,r.total]),[['B',1,2],['P',null,2],['A',2,2]]);
+assert.deepEqual(fullSchedule.filter(r=>!r.provisional),rankedSchedule,'Showing provisional rows leaves qualified ranks unchanged');
+assert(L.schedule(D,1,true).every(r=>r.rank===null&&r.total===0),'A snapshot with only provisional players has no ranks');

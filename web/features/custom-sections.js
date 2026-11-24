@@ -113,6 +113,8 @@
     }
     tab='rounds';roundId=draftRound.id;fixtureId=id;pendingEditorView=null;
     open();
+    eightRaise($('#customAdminOverlay'));
+    return true;
   }
   function bindHeader(code=viewedSectionId){viewedSectionId=code;const btn=$('#customEditorBtn');if(!btn)return;btn.classList.toggle('hidden',!enabled()||!code);btn.onclick=()=>openSection(viewedSectionId);}
   function close(){
@@ -127,8 +129,21 @@
     return true;
   }
   function bindSettings(){const host=$('#customAdminSettings');if(!host)return;host.classList.add('hidden');host.innerHTML=''}
-  function newSection(){return {id:'local-'+id(),name:'New section',season:'My season',doublesSurnames:false,ratingModel:'RM4.2',format:'sets',setTarget:6,doublesTarget:6,singlesBestOf:1,doublesBestOf:1,singlesSlots:4,doublesSlots:2,teams:[],players:[],rounds:[],updatedAt:new Date().toISOString()}}
-  function save(){if(!unlocked||!enabled())throw Error('Unlock Admin before saving.');M.validate(draft);const view=captureEditorView();draft.updatedAt=new Date().toISOString();const next=read().filter(s=>s.id!==draft.id).concat(M.clone(draft));persist(next);rememberEditorView(view);pendingEditorView=view;dirty=false;render();message('Section saved on this device. Export a backup to keep another copy.')}
+  function newSection(){return {id:'local-'+id(),name:'New section',season:'My season',doublesSurnames:false,format:'sets',setTarget:6,doublesTarget:6,singlesBestOf:1,doublesBestOf:1,singlesSlots:4,doublesSlots:2,teams:[],players:[],rounds:[],updatedAt:new Date().toISOString()}}
+  function save(){
+    if(!unlocked||!enabled())throw Error('Unlock Admin before saving.');
+    const saved=M.validate(M.clone(draft)),view=captureEditorView();
+    const added=T.completeDraw(saved);
+    M.validate(saved);
+    saved.updatedAt=new Date().toISOString();
+    persist(read().filter(s=>s.id!==saved.id).concat(saved));
+    draft=editable(saved);
+    rememberEditorView(view);pendingEditorView=view;dirty=false;render();
+    const additions=[];
+    if(added.returnFixtures)additions.push(added.returnFixtures+' return fixtures');
+    if(added.semifinals)additions.push(added.semifinals+' semifinals');
+    message('Section saved on this device.'+(additions.length?' Added '+additions.join(' and ')+'.':' Export a backup to keep another copy.'));
+  }
   function render(){const body=$('#caBody'),domRound=body?.querySelector('.ca-round-nav>.button.primary')?.dataset.id,domFixture=body?.querySelector('.ca-fixture-tabs>.button.primary')?.dataset.id;const sameView=!body?.querySelector('.ca-rubber')||((domRound||null)===(roundId||null)&&(domFixture||null)===(fixtureId||null));const view=draft&&sameView&&body?.dataset.editorTab===tab?captureEditorView():null;const scroll=body?.scrollTop||0;if(!enabled())return;unlocked=true;let list;try{list=read()}catch(e){$('#caBody').innerHTML='<p>'+esc(e.message)+'</p><input id="caImport" type="file" accept=".json,application/json">';return}
     const nav='<div class="ca-toolbar"><label class="ca-picker">Your sections<select id="caSection">'+options(list.map(s=>({id:s.id,name:s.name})),draft?.id,'Select a section')+'</select></label>'+button('new','New section','primary')+button('import','Import backup')+button('export-all','Back up all')+'<input id="caImport" type="file" accept=".json,application/json" hidden></div>';
     if(!draft){$('#caBody').innerHTML=nav+'<div class="ca-empty"><h3>Your own competition, your own scorecards.</h3><p>Create a section, register its teams and players, then add rounds and fixtures. Saved sections appear under <b>Custom Competitions</b> in the competition selector, without enabling Extras.</p>'+button('new','Create a section','primary')+'</div>';return}
@@ -138,11 +153,11 @@
   function setupHTML(){
   const standard=M.specialistCompatible(draft);
   const choices=[['RM4.2','RM4.2 fallback'],['4melody.2','4.2 Melody'],['4foundation.2','4.2 Foundation'],['RM4a','RM4a'],['RM4b','RM4b'],['RM4.1 Ensemble','RM4.1 Ensemble'],['V3','RM3 · legacy'],['V3B','RM3b · legacy']];
-  const selectModel='<select data-ca="ratingModel">'+choices.map(([v,n])=>'<option value="'+v+'" '+((draft.ratingModel||'RM4.2')===v?'selected':'')+(!standard&&!['RM4.2','V3','V3B'].includes(v)?' disabled':'')+'>'+n+'</option>').join('')+'</select>';
+  const selectModel='<select data-ca="ratingModel">'+choices.map(([v,n])=>'<option value="'+v+'" '+(M.ratingModelFor(draft)===v?'selected':'')+(!standard&&!['RM4.2','V3','V3B'].includes(v)?' disabled':'')+'>'+n+'</option>').join('')+'</select>';
   const section=(name,desc,content)=>'<section class="ca-setup-card"><div class="ca-setup-intro"><h3>'+name+'</h3><p>'+desc+'</p></div><div class="ca-grid">'+content+'</div></section>';
   const optionsFor=(key,arr,current)=>'<select data-ca="'+key+'">'+arr.map(([v,n])=>'<option value="'+v+'" '+(Number(current)===v?'selected':'')+'>'+n+'</option>').join('')+'</select>';
   return '<div class="ca-setup-shell"><header class="ca-setup-hero"><span>COMPETITION DESIGN</span><h3>Section setup</h3><p>Design the rules, squads and ratings in clearly separated steps.</p></header>'+
-    section('01 · Competition','Name your section and season, and set the finals cut.',
+    section('01 · Competition','Save a complete first leg to schedule the return fixtures. After all regular rounds are finished, saving seeds semifinals from the standings.',
       field('Section name',input('name',draft.name))+field('Season',input('season',draft.season))+field('Semifinal places',input('semifinalPlaces',draft.semifinalPlaces??4,'number','min="0" max="32"')))+
     section('02 · Scoring rules','Configure the scoring format and match lengths.',
       field('Scoring format','<select data-ca="format"><option value="sets" '+(draft.format==='sets'?'selected':'')+'>Sets</option><option value="rubbers" '+(draft.format==='rubbers'?'selected':'')+'>Rubbers</option></select>')+
@@ -171,7 +186,14 @@
   function lineupHTML(side,f){
     const ids=f[side+'Lineup']||[],team=f[side+'TeamId'],registered=draft.players.filter(p=>p.teamId===team&&(!p.archived||ids.includes(p.id))).sort((a,b)=>a.order-b.order),others=draft.players.filter(p=>p.teamId!==team&&(!p.archived||ids.includes(p.id))),needed=Math.max(Number(draft.singlesSlots),2*Number(draft.doublesSlots));
     const row=p=>{const position=ids.indexOf(p.id),attending=Array.isArray(f[side+'Attendees'])?f[side+'Attendees'].includes(p.id):f.rubbers?.some(m=>m.status!=='Scheduled')?M.attendance(f,side).includes(p.id):true;return '<div class="ca-squad-row '+(position>=0?'selected':'')+'"><label><input type="checkbox" data-ca="squad-player" data-side="'+side+'" data-id="'+p.id+'" '+(position>=0?'checked':'')+'><span><b>'+esc(p.name)+'</b><small>'+esc(draft.teams.find(t=>t.id===p.teamId)?.name||'Unassigned')+(p.emergency||p.teamId!==team?' · Emergency':'')+'</small></span><em>'+(position>=0?'#'+(position+1):p.order)+'</em></label>'+(position>=0?'<div>'+button('lineup-up','↑','secondary','data-side="'+side+'" data-index="'+position+'" aria-label="Move '+esc(p.name)+' up"')+button('lineup-down','↓','secondary','data-side="'+side+'" data-index="'+position+'" aria-label="Move '+esc(p.name)+' down"')+'</div>':'')+'</div>'};
-    return '<section class="ca-squad compact-lineup"><header><h4>'+esc(draft.teams.find(t=>t.id===team)?.name||side)+' squad</h4><span>'+ids.length+' selected</span></header><div class="ca-squad-actions">'+button('squad-first','First '+needed,'secondary','data-side="'+side+'"')+button('squad-previous','Last round','secondary','data-side="'+side+'"')+button('squad-clear','Clear','secondary','data-side="'+side+'"')+'</div><div class="ca-squad-list">'+registered.map(row).join('')+'</div><details class="ca-emergency-pool" '+(others.some(p=>ids.includes(p.id))?'open':'')+'><summary>Other players / emergencies</summary>'+others.map(row).join('')+'</details>'+doublesPairsHTML(side,f)+'<details class="ca-attendance-options"><summary>Attendance exceptions (optional)</summary><p class="ca-note">Everyone is assumed available. Only mark a player absent when needed; use No Player in their unplayed matches to record a forfeit.</p>'+ids.map(id=>{const p=draft.players.find(p=>p.id===id);return p?'<label class="ca-checkbox-setting"><input type="checkbox" data-ca="absent-player" data-side="'+side+'" data-id="'+esc(id)+'" '+(Array.isArray(f[side+'Attendees'])&&!f[side+'Attendees'].includes(id)?'checked':'')+'> '+esc(p.name)+' absent</label>':''}).join('')+'</details></section>';
+    const other=side==='home'?'away':'home',opposing=f[other+'Lineup']||[];
+    const current=ids.map(id=>draft.players.find(p=>p.id===id)).filter(Boolean);
+    const available=[...registered,...others].filter(p=>!ids.includes(p.id)&&!opposing.includes(p.id));
+    const replacement=current.length&&available.length?'<details class="ca-attendance-options"><summary>Replace a squad player</summary><div class="ca-grid">'+
+      field('Player to replace',select('squad-out',current,'','data-side="'+side+'"'))+
+      field('Replacement',select('squad-in',available,'','data-side="'+side+'"'))+'</div>'+
+      button('squad-replace','Replace player','secondary','data-side="'+side+'"')+'</details>':'';
+    return '<section class="ca-squad compact-lineup"><header><h4>'+esc(draft.teams.find(t=>t.id===team)?.name||side)+' squad</h4><span>'+ids.length+' selected</span></header><div class="ca-squad-actions">'+button('squad-first','First '+needed,'secondary','data-side="'+side+'"')+button('squad-previous','Last round','secondary','data-side="'+side+'"')+button('squad-clear','Clear','secondary','data-side="'+side+'"')+'</div><div class="ca-squad-list">'+registered.map(row).join('')+'</div><details class="ca-emergency-pool" '+(others.some(p=>ids.includes(p.id))?'open':'')+'><summary>Other players / emergencies</summary>'+others.map(row).join('')+'</details>'+replacement+doublesPairsHTML(side,f)+'<details class="ca-attendance-options"><summary>Attendance exceptions (optional)</summary><p class="ca-note">Everyone is assumed available. Only mark a player absent when needed; use No Player in their unplayed matches to record a forfeit.</p>'+ids.map(id=>{const p=draft.players.find(p=>p.id===id);return p?'<label class="ca-checkbox-setting"><input type="checkbox" data-ca="absent-player" data-side="'+side+'" data-id="'+esc(id)+'" '+(Array.isArray(f[side+'Attendees'])&&!f[side+'Attendees'].includes(id)?'checked':'')+'> '+esc(p.name)+' absent</label>':''}).join('')+'</details></section>';
   }
 
   function doublesPairsHTML(side,f){
@@ -179,7 +201,7 @@
     return '<div class="ca-pair-picker"><h4>Doubles pairs</h4><p class="ca-note">Choose two per pair. Any missing spot is only a placeholder, not a selected player.</p>'+pairs.map((pair,i)=>'<fieldset><legend>D'+(i+1)+' <span>'+pair.length+'/2 selected</span></legend><div>'+ids.map(id=>{const p=draft.players.find(p=>p.id===id);return p?'<label class="'+(pair.includes(id)?'selected':'')+'"><input type="checkbox" data-ca="pair-player" data-side="'+side+'" data-pair="'+i+'" data-id="'+esc(id)+'" '+(pair.includes(id)?'checked':'')+'><span>'+esc(p.name)+'</span></label>':''}).join('')+'</div>'+(pair.length<2?'<p class="ca-pair-vacant">'+(2-pair.length)+' empty spot'+(pair.length===1?'':'s')+' · Choose '+(2-pair.length===1?'one more player':'players')+' above</p>':'')+(!ids.length?'<p class="ca-note">Select your squad above first.</p>':'')+'</fieldset>').join('')+'</div>';
   }
   function fixtureHTML(){const f=fixture();if(!f)return '<p class="ca-note">Select a fixture to edit its scorecard.</p>';return '<div class="ca-fixture"><div class="ca-grid">'+field('Home team',select('fixture-home',draft.teams,f.homeTeamId))+field('Away team / bye','<select data-ca="fixture-away">'+options(draft.teams,f.awayTeamId,'Bye')+'</select>')+field('Fixture status','<select data-ca="fixture-status">'+['Scheduled','Completed','Wash Out','Forfeited To','Forfeited By','Bye'].map(x=>'<option '+(f.status===x?'selected':'')+'>'+x+'</option>').join('')+'</select>')+'</div><p class="ca-note">“Forfeited To” means the home team concedes; “Forfeited By” means the away team concedes.</p>'+(f.status==='Wash Out'?'<div class="ca-actions"><p class="ca-note">Keep scores for play that started, or clear the squads for a washout before play.</p>'+
-      (!T.noPlayWashout(f)&&!T.hasPlayed(f)?button('washout-no-play','No play · clear lineups'):'')+'</div>':'')+(f.status==='Bye'||T.noPlayWashout(f)?(T.noPlayWashout(f)?'<p class="ca-note">Washout before play. No lineups or scorecard recorded.</p>':''):'<section class="ca-lineup-panel"><h3>1. Fixture squads</h3><p class="ca-note">Squads and pairs are filled automatically. Change only the players or pairings you need; everyone is assumed available.</p><div class="ca-grid">'+lineupHTML('home',f)+lineupHTML('away',f)+'</div>'+button('generate-card',f.rubbers.length?'Rebuild matches from squads':'Create matches','secondary')+button('jump-scores','Enter scores ↓','primary')+'<p class="ca-note">To replace one player in a completed match, use Swap player on that match; all others stay intact. Rebuilding resets the whole scorecard. Missing squad players become forfeits.</p></section><div class="ca-score-toolbar"><h3>2. Enter scores</h3><label><input type="checkbox" data-ca="auto-status" '+(f.autoStatus!==false?'checked':'')+'> Automatically mark finished matches and fixture complete</label><p class="ca-note">Tap a common score or type into the boxes. Tab moves to the next box.</p></div><div class="ca-rubber-list">'+(f.rubbers||[]).map((m,i)=>rubberHTML(m,i,f)).join('')+'</div><div class="ca-actions">'+button('add-single','Add singles match')+button('add-double','Add doubles match')+'</div>')+'<details class="ca-bulk"><summary>Competition-point overrides</summary><p class="ca-note">Leave blank to calculate points from the scorecard. Enter both values for a manual adjustment.</p><div class="ca-grid">'+field('Home competition points',input('fixture-home-points',f.homePointsOverride??'','number','min="0" step="0.5"'))+field('Away competition points',input('fixture-away-points',f.awayPointsOverride??'','number','min="0" step="0.5"'))+'</div></details><div class="ca-actions ca-bottom">'+button('save','Save changes','primary')+button('remove-fixture','Delete fixture','danger')+'</div></div>'}
+      (!T.noPlayWashout(f)&&!T.hasPlayed(f)?button('washout-no-play','No play · clear lineups'):'')+'</div>':'')+(f.status==='Bye'||T.noPlayWashout(f)?(T.noPlayWashout(f)?'<p class="ca-note">Washout before play. No lineups or scorecard recorded.</p>':''):'<section class="ca-lineup-panel"><h3>1. Fixture squads</h3><p class="ca-note">Squads and pairs are filled automatically. Change only the players or pairings you need; everyone is assumed available.</p><div class="ca-grid">'+lineupHTML('home',f)+lineupHTML('away',f)+'</div>'+button('generate-card',f.rubbers.length?'Rebuild matches from squads':'Create matches','secondary')+button('jump-scores','Enter scores ↓','primary')+'<p class="ca-note">Squad changes clear scores for affected matchups. Use Swap player on the scorecard to change a single match. Missing squad players become forfeits.</p></section><div class="ca-score-toolbar"><h3>2. Enter scores</h3><label><input type="checkbox" data-ca="auto-status" '+(f.autoStatus!==false?'checked':'')+'> Automatically mark finished matches and fixture complete</label><p class="ca-note">Tap a common score or type into the boxes. Tab moves to the next box.</p></div><div class="ca-rubber-list">'+(f.rubbers||[]).map((m,i)=>rubberHTML(m,i,f)).join('')+'</div><div class="ca-actions">'+button('add-single','Add singles match')+button('add-double','Add doubles match')+'</div>')+'<details class="ca-bulk"><summary>Competition-point overrides</summary><p class="ca-note">Leave blank to calculate points from the scorecard. Enter both values for a manual adjustment.</p><div class="ca-grid">'+field('Home competition points',input('fixture-home-points',f.homePointsOverride??'','number','min="0" step="0.5"'))+field('Away competition points',input('fixture-away-points',f.awayPointsOverride??'','number','min="0" step="0.5"'))+'</div></details><div class="ca-actions ca-bottom">'+button('save','Save changes','primary')+button('remove-fixture','Delete fixture','danger')+'</div></div>'}
   const quickWinner=m=>m.quickWinner||((m.sets[0]?.h!==''&&Number(m.sets[0]?.a)>Number(m.sets[0]?.h))?'away':'home');
   function rubberHTML(m,index,f){
     const n=m.type==='Singles'?1:2,name=side=>(m[side]||[]).map(id=>id===M.NO_PLAYER?'No Player':draft.players.find(p=>p.id===id)?.name||'Choose player').join(' / '),length=Number(draft[m.type==='Doubles'?'doublesBestOf':'singlesBestOf']||1),winner=quickWinner(m),target=Number(m.type==='Doubles'?(draft.doublesTarget||draft.setTarget):draft.setTarget);
@@ -207,6 +229,21 @@
     try{f.rubbers=T.generate(draft,f)}catch(e){f.rubbers=[]}
     T.finish(f,draft);
   }
+  function changeSquad(f,side,update){
+    const next=M.clone(f);
+    update(next);
+    if(Array.isArray(f[side+'Attendees'])){
+      const previous=new Set(f[side+'Lineup']||[]);
+      next[side+'Attendees']=next[side+'Lineup'].filter(id=>!previous.has(id)||f[side+'Attendees'].includes(id));
+    }
+    const cleared=T.reconcileSquad(draft,f,next,side);
+    if(cleared.length&&!confirm('Clear scores for '+cleared.map(key=>key[0]+key.split(':')[1]).join(', ')+'? Scores for unchanged matchups are kept.')){
+      render();return false;
+    }
+    Object.assign(f,next);
+    if(!(side+'DoublesPairs' in next))delete f[side+'DoublesPairs'];
+    return true;
+  }
   function refreshScores(){const f=fixture();if(!f)return;T.finish(f,draft);const status=$('[data-ca="fixture-status"]');if(status)status.value=f.status;document.querySelectorAll('.ca-match-state').forEach(el=>{const m=f.rubbers[Number(el.dataset.index)];if(m){el.textContent=m.status==='Completed'?'✓ Complete':m.status;el.classList.toggle('complete',m.status==='Completed')}})}
 
   function importExample(withMatches=false){
@@ -225,7 +262,17 @@
   function inputEvent(e){if(e.target.id==='caBulkPlayers'){rosterText=e.target.value;rosterPreview=null;$('#caRosterBulk .ca-roster-preview')?.remove();return;}const key=e.target.dataset.ca;if(!key||e.target.tagName==='SELECT'||e.target.type==='checkbox')return;update(e.target,false)}
   function change(e){if(['caRosterReplace','caRosterRenumber'].includes(e.target.id)){captureRosterForm();rosterPreview=null;$('#caRosterBulk .ca-roster-preview')?.remove();return;}if(e.target.id==='caRoundFile'){const file=e.target.files[0];if(file){captureImport();if(file.size>2*1024*1024){message('Import up to 2 MB at a time.',true);return}file.text().then(text=>{importText=text;importPreview=null;renderImport()}).catch(error=>message(error.message,true))}return}if(e.target.id==='caImport'){importFile(e.target.files[0]);return}if(e.target.id==='caSection'){if(dirty&&!confirm('Discard unsaved changes and switch sections?')){render();return}draft=editable(read().find(s=>s.id===e.target.value)||null);roundId=fixtureId=null;dirty=false;rosterText='';rosterPreview=null;message('');render();return}if(e.target.dataset.ca)update(e.target,true)}
   function update(el,redraw){if(!unlocked||!enabled()||!draft)return;const key=el.dataset.ca,value=el.type==='checkbox'?el.checked:el.type==='number'?(el.value===''?'':Number(el.value)):el.value,p=draft.players.find(p=>p.id===el.dataset.id),f=fixture(),r=round(),m=f?.rubbers?.[Number(el.dataset.index)],i=Number(el.dataset.slot),set=Number(el.dataset.set);
-    if(key==='squad-player'){const selected=new Set(f[el.dataset.side+'Lineup']||[]);if(value){const other=el.dataset.side==='home'?'away':'home';if((f[other+'Lineup']||[]).includes(el.dataset.id)){el.checked=false;message('This player is already selected for the other side.',true);return}selected.add(el.dataset.id)}else selected.delete(el.dataset.id);T.lineup(draft,f,el.dataset.side,[...selected]);if(Array.isArray(f[el.dataset.side+'Attendees'])){const attendees=new Set(f[el.dataset.side+'Attendees'].filter(pid=>selected.has(pid)));if(value)attendees.add(el.dataset.id);f[el.dataset.side+'Attendees']=[...attendees];}syncSquads(f);mark();render();return;}
+    if(key==='squad-player'){
+      const {side,id:pid}=el.dataset,other=side==='home'?'away':'home';
+      if(value&&(f[other+'Lineup']||[]).includes(pid)){
+        el.checked=false;message('This player is already selected for the other side.',true);return;
+      }
+      const selected=(f[side+'Lineup']||[]).filter(id=>id!==pid);
+      if(value)selected.push(pid);
+      if(changeSquad(f,side,next=>T.lineup(draft,next,side,selected))){mark();render();}
+      return;
+    }
+    if(key==='squad-out'||key==='squad-in')return;
     if(key==='round-select'){roundId=value;fixtureId=null;render();return;}
     if(key==='absent-player'){
       const side=el.dataset.side,current=f[side+'Attendees'];
@@ -247,7 +294,7 @@
     }
     if(key==='ratingModel'&&value==='V3B'&&!confirm('RM3b is experimental for this section. Enable it?')){render();return;}
     if(key==='auto-status'){f.autoStatus=value;refreshScores();mark();return;}
-    if(['name','season','semifinalPlaces','doublesSurnames','ratingModel','format','setTarget','doublesTarget','singlesBestOf','doublesBestOf','singlesSlots','doublesSlots'].includes(key)){draft[key]=['semifinalPlaces','setTarget','doublesTarget','singlesBestOf','doublesBestOf','singlesSlots','doublesSlots'].includes(key)?Number(value):value;if(key==='format'){draft.singlesBestOf=value==='rubbers'?3:1;draft.doublesBestOf=1;draft.doublesTarget=value==='rubbers'?8:6;}if(['format','setTarget','doublesTarget','singlesBestOf','doublesBestOf'].includes(key)&&!M.specialistCompatible(draft)&&!['V3','V3B','RM4.2'].includes(draft.ratingModel))draft.ratingModel='RM4.2';}
+    if(['name','season','semifinalPlaces','doublesSurnames','ratingModel','format','setTarget','doublesTarget','singlesBestOf','doublesBestOf','singlesSlots','doublesSlots'].includes(key)){draft[key]=['semifinalPlaces','setTarget','doublesTarget','singlesBestOf','doublesBestOf','singlesSlots','doublesSlots'].includes(key)?Number(value):value;if(key==='format'){draft.singlesBestOf=value==='rubbers'?3:1;draft.doublesBestOf=1;draft.doublesTarget=value==='rubbers'?8:6;}}
     else if(key==='team-name')draft.teams.find(t=>t.id===el.dataset.id).name=value;
     else if(key==='player-name')p.name=value;else if(key==='player-team'){for(const round of draft.rounds)for(const f of round.fixtures)for(const m of f.rubbers)for(const side of ['home','away'])if(m[side]?.includes(p.id))m[side+'RegisteredTeams']=m[side].map((id,i)=>m[side+'RegisteredTeams']?.[i]??draft.players.find(x=>x.id===id)?.teamId??'');p.teamId=value;}else if(key==='player-order')p.order=Number(value);else if(key==='player-emergency')p.emergency=value;else if(key==='player-nocode')p.noCode=value;
     else if(key==='round-number')r.number=Number(value);else if(key==='round-date')r.date=value;else if(key==='round-label')r.label=value;else if(key==='round-stage'){r.stage=value;mark();render();return;}
@@ -307,19 +354,56 @@
       if(a==='remove-player'){if(referenced(btn.dataset.id))throw Error('This player is in a lineup or scorecard. Remove those references before deleting them.');draft.players=draft.players.filter(p=>p.id!==btn.dataset.id)}
       if(a==='add-round'){const last=draft.rounds.slice().sort((a,b)=>b.number-a.number)[0],date=new Date((last?.date||today())+'T12:00:00Z');if(last)date.setUTCDate(date.getUTCDate()+7);const x={id:id(),number:last?Number(last.number)+1:1,date:date.toISOString().slice(0,10),label:'',fixtures:[]};draft.rounds.push(x);roundId=x.id;fixtureId=null}
       if(a==='remove-round'){if(!confirm('Delete this round and all its scorecards?'))return;draft.rounds=draft.rounds.filter(x=>x.id!==r.id);roundId=fixtureId=null}
-      if(a==='add-fixture'){const stage=M.roundStage(r);if(stage==='grand_final'&&r.fixtures.length)throw Error('This grand final already has a fixture.');if(draft.teams.length<1)throw Error('Add teams first.');const used=new Set(r.fixtures.flatMap(f=>[f.homeTeamId,f.awayTeamId])),available=draft.teams.filter(t=>!used.has(t.id));if(!available.length)throw Error('Every team already has a fixture in this round.');if(stage!=='regular'&&available.length<2)throw Error('A finals tie needs two available teams.');const x={id:id(),homeTeamId:available[0].id,awayTeamId:available[1]?.id||'',status:available[1]?'Scheduled':'Bye',homeLineup:[],awayLineup:[],rubbers:[]};r.fixtures.push(x);fixtureId=x.id;fillDefaultSquads(x)}
+      if(a==='add-fixture'){const stage=M.roundStage(r);if(stage==='grand_final'&&r.fixtures.length)throw Error('This grand final already has a fixture.');if(draft.teams.length<1)throw Error('Add teams first.');const used=new Set(r.fixtures.flatMap(f=>[f.homeTeamId,f.awayTeamId])),available=draft.teams.filter(t=>!used.has(t.id));if(!available.length)throw Error('Every team already has a fixture in this round.');if(stage!=='regular'&&available.length<2)throw Error('A finals tie needs two available teams.');const x=T.scheduledFixture(available[0].id,available[1]?.id||'');r.fixtures.push(x);fixtureId=x.id;fillDefaultSquads(x)}
       if(a==='remove-fixture'){if(!confirm('Delete this fixture and its scorecard?'))return;r.fixtures=r.fixtures.filter(x=>x.id!==f.id);fixtureId=null}
       if(a==='lineup-add'){const pid=$('#caLineup-'+side).value;if(!pid)throw Error('Choose a player.');const list=f[side+'Lineup']??=[];if(list.includes(pid))throw Error('This player is already in the lineup.');list.push(pid)}
       if(a==='lineup-remove')f[side+'Lineup'].splice(index,1);
-      if(a==='lineup-up'||a==='lineup-down'){f[side+'OrderEdited']=true;const list=f[side+'Lineup'],other=index+(a==='lineup-up'?-1:1);if(other>=0&&other<list.length)[list[index],list[other]]=[list[other],list[index]];syncSquads(f)}
+      if(a==='lineup-up'||a==='lineup-down'){
+        const list=f[side+'Lineup'].slice(),other=index+(a==='lineup-up'?-1:1);
+        if(other<0||other>=list.length)return;
+        [list[index],list[other]]=[list[other],list[index]];
+        if(!changeSquad(f,side,next=>{next[side+'OrderEdited']=true;next[side+'Lineup']=list;}))return;
+      }
+      if(a==='squad-replace'){
+        const picker=btn.closest('details'),out=picker.querySelector('[data-ca="squad-out"]').value,
+          incoming=picker.querySelector('[data-ca="squad-in"]').value;
+        if(!out||!incoming)throw Error('Choose the player to replace and their replacement.');
+        const ids=f[side+'Lineup'].map(pid=>pid===out?incoming:pid);
+        if(!changeSquad(f,side,next=>{
+          // Keep a manually ordered squad in its existing order. Otherwise use registered order.
+          if(next[side+'OrderEdited'])next[side+'Lineup']=ids;
+          T.lineup(draft,next,side,ids);
+        }))return;
+      }
       if(a==='washout-no-play')T.washOut(f,draft,true);
       if(a==='generate-card'){if(hasScores(f)&&!confirm('Replace this scorecard and its entered scores with the selected squads?'))return;f.rubbers=T.generate(draft,f);f.autoStatus=true;T.finish(f,draft);}
       if(a==='jump-scores'){$('.ca-score-toolbar')?.scrollIntoView({behavior:'smooth',block:'start'});return}if(a==='edit-this-match'){const details=document.querySelectorAll('#caBody .ca-rubber .ca-match-details')[index];if(details){details.open=true;details.scrollIntoView({behavior:'smooth',block:'nearest'});details.querySelector('select[data-ca="match-player"]')?.focus();}return}
       if(a==='quick-winner'){f.rubbers[index].quickWinner=side;btn.closest('.ca-winner-choice').querySelectorAll('button').forEach(b=>{b.classList.toggle('primary',b.dataset.side===side);b.classList.toggle('secondary',b.dataset.side!==side)});return}
       if(a==='quick-score'){const m=f.rubbers[index];if(m.home.concat(m.away).includes(M.NO_PLAYER)){message('Missing-player matches use Forfeit or No Contest. Choose real players before entering a played score.',true);return}const away=quickWinner(m)==='away';m.sets=[{h:Number(away?btn.dataset.away:btn.dataset.home),a:Number(away?btn.dataset.home:btn.dataset.away),mt:false}];m.status='Completed';const card=btn.closest('.ca-rubber');card.querySelector('[data-ca="score-h"]').value=m.sets[0].h;card.querySelector('[data-ca="score-a"]').value=m.sets[0].a;refreshScores();mark();return;}
-      if(a==='squad-first'){delete f[side+'DoublesPairs'];f[side+'OrderEdited']=false;const needed=Math.max(Number(draft.singlesSlots),2*Number(draft.doublesSlots)),ids=draft.players.filter(p=>p.teamId===f[side+'TeamId']&&!p.emergency&&!p.archived).sort((a,b)=>a.order-b.order).slice(0,needed).map(p=>p.id);T.lineup(draft,f,side,ids);syncSquads(f);}
-      if(a==='squad-clear'){delete f[side+'DoublesPairs'];f[side+'OrderEdited']=false;T.lineup(draft,f,side,[]);syncSquads(f);}
-      if(a==='squad-previous'){const team=f[side+'TeamId'],previous=draft.rounds.filter(x=>x.number<r.number).sort((a,b)=>b.number-a.number).flatMap(x=>x.fixtures).find(x=>(x.homeTeamId===team||x.awayTeamId===team)&&((x[x.homeTeamId===team?'homeLineup':'awayLineup']||[]).length||x.rubbers?.length));if(!previous)throw Error('No earlier squad found for this team.');const oldSide=previous.homeTeamId===team?'home':'away',ids=previous[oldSide+'Lineup']?.length?previous[oldSide+'Lineup']:[...new Set(previous.rubbers.flatMap(m=>m[oldSide]))];f[side+'Lineup']=ids.filter(id=>draft.players.some(p=>p.id===id));f[side+'DoublesPairs']=T.doublesPairs(draft,previous,oldSide);f[side+'OrderEdited']=true;T.lineup(draft,f,side,f[side+'Lineup']);syncSquads(f);}
+      if(a==='squad-first'||a==='squad-clear'){
+        const needed=Math.max(Number(draft.singlesSlots),2*Number(draft.doublesSlots));
+        const ids=a==='squad-clear'?[]:draft.players.filter(p=>p.teamId===f[side+'TeamId']&&!p.emergency&&!p.archived)
+          .sort((a,b)=>a.order-b.order).slice(0,needed).map(p=>p.id);
+        if(!changeSquad(f,side,next=>{
+          if(a==='squad-clear')delete next[side+'DoublesPairs'];
+          next[side+'OrderEdited']=false;
+          T.lineup(draft,next,side,ids);
+        }))return;
+      }
+      if(a==='squad-previous'){
+        const team=f[side+'TeamId'],previous=draft.rounds.filter(x=>x.number<r.number).sort((a,b)=>b.number-a.number)
+          .flatMap(x=>x.fixtures).find(x=>(x.homeTeamId===team||x.awayTeamId===team)&&
+            ((x[x.homeTeamId===team?'homeLineup':'awayLineup']||[]).length||x.rubbers?.length));
+        if(!previous)throw Error('No earlier squad found for this team.');
+        const oldSide=previous.homeTeamId===team?'home':'away',ids=previous[oldSide+'Lineup']?.length
+          ?previous[oldSide+'Lineup']:[...new Set(previous.rubbers.flatMap(m=>m[oldSide]))];
+        if(!changeSquad(f,side,next=>{
+          next[side+'Lineup']=ids.filter(id=>draft.players.some(p=>p.id===id));
+          next[side+'DoublesPairs']=T.doublesPairs(draft,previous,oldSide);
+          next[side+'OrderEdited']=true;
+          T.lineup(draft,next,side,next[side+'Lineup']);
+        }))return;
+      }
 
       if(a==='add-single'||a==='add-double'){const type=a==='add-single'?'Singles':'Doubles',position=Math.max(0,...f.rubbers.filter(m=>m.type===type).map(m=>Number(m.position)))+1;f.rubbers.push(makeMatch(type,position))}
       if(a==='remove-match')f.rubbers.splice(index,1);

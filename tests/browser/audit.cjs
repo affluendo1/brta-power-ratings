@@ -39,7 +39,7 @@ esc();await tick();assert(w.document.querySelector('#layoutOverlay').classList.c
 click('[data-studio="theme"]');await tick();esc();await tick();assert(w.document.querySelector('#themeStudioOverlay').classList.contains('hidden'));assert(!w.document.querySelector('#settingsOverlay').classList.contains('hidden'));console.log('Theme creator Escape preserves Settings');
 click('[data-changelog-open]');await tick();
 assert.equal(w.document.querySelector('.release-heading h3').textContent,w.BRTA_RELEASES.find(release=>release.size==='major').version);
-assert.equal(w.BRTAChangelog.version,'9.9h');
+assert.equal(w.BRTAChangelog.version,'9.9i');
 for(const release of w.BRTA_RELEASES.slice(0,6)){
   assert.equal(w.document.querySelector('[data-release-version="'+release.version+'"] h4').textContent,
     release.version+' · '+release.title);
@@ -148,6 +148,12 @@ click('#resultsList [data-match-id="match-3"]');
 assert.equal(w.document.querySelector('#resultFixtureEdit').closest('#resultOverlay').id, 'resultOverlay');
 assert(!w.document.querySelector('.result-sheet #resultFixtureEdit'));
 assert.equal(w.document.querySelectorAll('#resultContent h2 [data-club-team]').length, 2);
+esc();
+click('[data-page="ratings"]');
+vm.runInContext("openProfile('Alice')",ctx);
+click('#profileMatchExplorer [data-match-id="match-3"]');
+assert(!w.document.querySelector('#resultContent .historical-context'));
+assert(!w.document.querySelector('#resultFixtureEdit').hidden,'A custom scorecard opened from Player Lab can be edited');
 click('#resultFixtureEdit:not([hidden])');
 assert.equal(w.document.querySelector('.ca-fixture-tabs > .primary').dataset.id,'match-3');
 vm.runInContext("close('#customAdminOverlay')",ctx);

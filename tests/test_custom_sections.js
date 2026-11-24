@@ -8,6 +8,15 @@ function sample(){return {id:'local-test',name:'My league',season:'Spring 2026',
 if(require.main===module){
 const source=sample(),before=JSON.stringify(source),data=M.build(source);
 assert.equal(JSON.stringify(source),before,'Building must not mutate the saved section.');
+assert.equal(data.meta.ratingModel,'4melody.2');
+const unusualRules=sample();
+unusualRules.doublesTarget=8;
+unusualRules.ratingModel='4melody.2';
+for(const round of unusualRules.rounds)for(const match of round.fixtures[0].rubbers)
+  if(match.type==='Doubles')match.sets=[{h:4,a:8}];
+assert.equal(M.build(unusualRules).meta.ratingModel,'RM4.2');
+unusualRules.ratingModel='V3';
+assert.equal(M.build(unusualRules).meta.ratingModel,'V3');
 assert.equal(data.meta.doublesSurnames,false);
 const surnameSection=sample();surnameSection.doublesSurnames=true;const surnameData=M.build(surnameSection);assert.equal(surnameData.meta.doublesSurnames,true);assert.deepEqual(surnameData.results,data.results,'The display preference must not alter scores or winners.');assert.deepEqual(surnameData.doubles,data.doubles,'The display preference must not alter ratings.');surnameSection.doublesSurnames='false';assert.throws(()=>M.validate(surnameSection),/on or off/);
 assert.equal(data.results.length,4);assert.equal(data.upcomingFixtures.length,5);

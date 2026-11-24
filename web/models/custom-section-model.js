@@ -23,6 +23,11 @@
     return (fmt==='sets'&&st===6&&dt===6&&sb===1&&db===1)||
       (fmt==='rubbers'&&st===6&&dt===8&&sb===3&&db===1);
   }
+  function ratingModelFor(section){
+    const selected=section.ratingModel;
+    if(specialistCompatible(section))return selected||'4melody.2';
+    return ['V3','V3B'].includes(selected)?selected:'RM4.2';
+  }
   function roundStage(round){
     const value=String(round?.stage??round?.label??'').trim().toLowerCase().replace(/[_–—-]+/g,' ').replace(/\s+/g,' ');
     if(/^(?:semi ?finals?|s\.?f\.?)(?:\s+\d+)?$/.test(value))return 'semi_final';
@@ -96,7 +101,6 @@
     if(Number(section.singlesSlots)+Number(section.doublesSlots)===0)fail('A fixture needs at least one match.');
     if(section.semifinalPlaces!=null&&(!Number.isInteger(section.semifinalPlaces)||section.semifinalPlaces<0||section.semifinalPlaces>32))fail('Semifinal places must be an integer from 0 to 32.');
     if(section.ratingModel!=null&&!['V3','V3B','RM4.2','RM4a','RM4b','RM4.1 Ensemble','4melody.2','4foundation.2'].includes(section.ratingModel))fail('Choose V3 or V3B or a supported RM4 family rating model.');
-    if(['RM4a','RM4b','RM4.1 Ensemble','4melody.2','4foundation.2'].includes(section.ratingModel)&&!specialistCompatible(section))fail('This model requires standard sets or junior rubbers scoring. Change the rules or select RM4.2 / RM3.');
     if(section.doublesSurnames!=null&&typeof section.doublesSurnames!=='boolean')fail('The doubles surname setting must be on or off.');
     if(!Array.isArray(section.teams)||!Array.isArray(section.players)||!Array.isArray(section.rounds))fail('The section is missing its teams, players or rounds.');
     if(section.players.length>256||section.teams.length>64||section.rounds.length>200)fail('This browser editor supports up to 256 players, 64 teams and 200 rounds per section.');
@@ -204,8 +208,8 @@
     for(const [team,rows] of rowsByTeam){const lg=new Map(),pg=new Map();for(const row of rows){if(row.lineup.length){const key=JSON.stringify(row.lineup);if(!lg.has(key))lg.set(key,[]);lg.get(key).push(row);}for(const name of row.pairs){if(!pg.has(name))pg.set(name,[]);pg.get(name).push(row);}}const lineups=[...lg].map(([key,group])=>({players:JSON.parse(key),...summary(group)})).sort((a,b)=>b.matches-a.matches||b.wins-a.wins||a.players.join().localeCompare(b.players.join())),pairs=[...pg].map(([name,group])=>({pair:name,...summary(group)})).sort((a,b)=>b.matches-a.matches||b.wins-a.wins||a.pair.localeCompare(b.pair));output[team]={completedTies:rows.length,lineupCount:lineups.length,lineupStability:lineups.length?Math.round(1000*lineups[0].matches/rows.length)/10:null,lineups,pairs};}
     return output;
   }
-  function build(section){
-    validate(section);const ratingModel=section.ratingModel||'RM4.2',tm=new Map(section.teams.map(t=>[t.id,t.name])),pm=new Map(section.players.map(p=>[p.id,p.name])),singles=[],doubles=[],results=[],upcomingFixtures=[],standings=new Map(section.teams.map(t=>[t.name,{team:t.name,played:0,wins:0,draws:0,losses:0,rubbersFor:0,rubbersAgainst:0,gamesFor:0,gamesAgainst:0,points:0}]));
+  function build(section,{standingsOnly=false}={}){
+    validate(section);const ratingModel=ratingModelFor(section),tm=new Map(section.teams.map(t=>[t.id,t.name])),pm=new Map(section.players.map(p=>[p.id,p.name])),singles=[],doubles=[],results=[],upcomingFixtures=[],standings=new Map(section.teams.map(t=>[t.name,{team:t.name,played:0,wins:0,draws:0,losses:0,rubbersFor:0,rubbersAgainst:0,gamesFor:0,gamesAgainst:0,points:0}]));
     const dateLabel=date=>new Date(date+'T12:00:00Z').toLocaleDateString('en-GB',{day:'2-digit',month:'short',year:'2-digit',timeZone:'UTC'}).replace(/ /g,' '),calendar=section.rounds.slice().sort((a,b)=>a.number-b.number);
     for(const round of calendar){const group={round:Number(round.number),date:dateLabel(round.date),label:roundLabel(round),stage:roundStage(round),fixtures:[]};
       for(const fixture of round.fixtures){const f={fixtureId:fixture.id,round:group.round,date:group.date,label:group.label,stage:group.stage,home:tm.get(fixture.homeTeamId),away:tm.get(fixture.awayTeamId)||'Bye',status:fixture.status,rubbers:[],homeRubbers:0,awayRubbers:0,homeGames:0,awayGames:0,homeSets:section.format==='rubbers'?0:null,awaySets:section.format==='rubbers'?0:null};
@@ -231,11 +235,12 @@
       }
       upcomingFixtures.push(group);if(group.fixtures.some(f=>f.status!=='Scheduled'&&f.status!=='Bye'))results.unshift({...group,fixtures:group.fixtures.filter(f=>f.status!=='Scheduled'&&f.status!=='Bye')});
     }
+    const rows=[...standings.values()].sort((a,b)=>b.points-a.points||(b.gamesAgainst?b.gamesFor/b.gamesAgainst:b.gamesFor?Infinity:0)-(a.gamesAgainst?a.gamesFor/a.gamesAgainst:a.gamesFor?Infinity:0)||a.team.localeCompare(b.team));
+    if(standingsOnly)return rows;
     const ratingHistory={players:{},rounds:[],tables:{}},doublesRatingHistory={tables:{}},latest=results[0]?.round||0;let sr=[],dr=[],pr=[];
     for(const round of calendar.filter(r=>Number(r.number)<=latest)){
       const rnd=Number(round.number),sm=singles.filter(m=>m.round<=rnd),dm=doubles.filter(m=>m.round<=rnd);sr=fit(sm,false,false,ratingModel);dr=fit(dm,true,section.format==='rubbers',ratingModel);pr=fit(dm,false,false,ratingModel);const powers=new Map(dr.map(x=>[x.player,x.rating]));pr.forEach(p=>{p.individualAverage=Math.round(mean(p.player.split(' / ').map(n=>powers.get(n)||1500)));p.pairEffect=p.rating-p.individualAverage});ratingHistory.tables[rnd]=sr;doublesRatingHistory.tables[rnd]={pairs:pr,doublesPlayers:dr};ratingHistory.rounds.push({round:rnd,date:dateLabel(round.date),players:sr.length});sr.forEach(p=>(ratingHistory.players[p.player]??=[]).push([rnd,p.rating,p.se,p.matches,p.team]));
     }
-    const rows=[...standings.values()].sort((a,b)=>b.points-a.points||(b.gamesAgainst?b.gamesFor/b.gamesAgainst:b.gamesFor?Infinity:0)-(a.gamesAgainst?a.gamesFor/a.gamesAgainst:a.gamesFor?Infinity:0)||a.team.localeCompare(b.team));
     const meta={semifinalPlaces:section.semifinalPlaces??4,section_code:section.id,section_label:section.name,competition_code:'LOCAL',competition_label:'Custom Competitions - '+(section.season||'Custom season'),season_id:section.id,season_label:section.season||'Custom season',format:section.format,customRules:{singlesSlots:Number(section.singlesSlots),doublesSlots:Number(section.doublesSlots),singlesBestOf:Number(section.singlesBestOf||(section.format==='rubbers'?3:1)),doublesBestOf:Number(section.doublesBestOf||1),setTarget:Number(section.setTarget),doublesTarget:Number(section.doublesTarget||section.setTarget)},ratingModel,ratingWeights:ratingModel==='V3B'?{...V3B_WEIGHTS}:{game:1,setWin:0,matchWin:0,matchTiebreak:RM3_MATCH_TIEBREAK_WEIGHT},doublesSurnames:!!section.doublesSurnames,is_custom:true,latest_round:latest};
     const customRoster=section.players.filter(p=>!p.archived).map(p=>({...p,team:tm.get(p.teamId)||'',rating:sr.find(x=>x.player===p.name)?.rating??dr.find(x=>x.player===p.name)?.rating??1500}));
     const teamRows=section.teams.map(t=>{const registered=new Set(customRoster.filter(p=>p.teamId===t.id).map(p=>p.name)),players=sr.filter(x=>registered.has(x.player)),four=players.slice(0,4);return {team:t.name,avg:mean(players.map(x=>x.rating))||1500,best4:mean(four.map(x=>x.rating))||1500,modelled:players.length,ladder:standings.get(t.name).points}});
@@ -243,7 +248,7 @@
     const last=results[0],roundOverview=last?{round:last.round,label:last.label,stage:last.stage,date:last.date,fixtures:last.fixtures,summary:{completedFixtures:last.fixtures.filter(f=>f.status==='Completed').length,singlesRubbers:singles.filter(m=>m.round===last.round).length,doublesRubbers:doubles.filter(m=>m.round===last.round).length,averageSinglesMargin:Math.round(mean(singles.filter(m=>m.round===last.round).map(m=>Math.abs(m.hg-m.ag)))*10)/10}}:null;
     return {meta,singles:sr,doubles:pr,doublesIndividuals:dr,singlesMatches:singles.map(m=>[m.round,m.dateLabel,m.home[0],m.away[0],m.hg,m.ag,m.winner==='home'?m.home[0]:m.away[0],m.score,m.fixtureId]),ratingHistory,doublesRatingHistory,teams:teamRows,standings:rows,results,upcomingFixtures,format:section.format,greenBall:false,knockout:knockout(upcomingFixtures,rows),sync:{checkedAt:section.updatedAt,latestRound:latest,validation:'passed',missingFixtures:0},note:'Custom section saved on this device. Ratings use '+ratingModel+(ratingModel==='V3B'?' composite game, set, match and match-tiebreak evidence':' game and deciding-tiebreak outcome evidence')+' on completed played matches.',teamOrderEvidence:orderEvidence,customRoster,teamInsights:teamInsights(section,results),playerInsights:{},strengthOfSchedule:[],resultsExpectation:{players:[],matches:[]},roundOverview};
   }
-  const api={validate,score,roundStage,roundLabel,fit,build,clone,specialistCompatible,attendance,ratingEvidence,V3B_WEIGHTS,RM3_MATCH_TIEBREAK_WEIGHT,NO_PLAYER};root.CustomSectionModel=api;if(typeof module!=='undefined')module.exports=api;
+  const api={validate,score,roundStage,roundLabel,fit,build,clone,specialistCompatible,ratingModelFor,attendance,ratingEvidence,V3B_WEIGHTS,RM3_MATCH_TIEBREAK_WEIGHT,NO_PLAYER};root.CustomSectionModel=api;if(typeof module!=='undefined')module.exports=api;
 })(typeof window!=='undefined'?window:globalThis);
 
 /* BRTA Power Ratings 9.9g */

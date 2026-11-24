@@ -393,9 +393,6 @@ html[data-theme="dark"] .team-colour{color:var(--team-colour-dark)}
 .model-detail p{margin:7px 0 0!important;color:var(--muted-color);font-size:12px}
 .model-export{margin-top:12px;padding:12px;border:1px solid var(--border-color);background:var(--surface-muted)}
 .model-export p{margin:5px 0 10px}
-.historical-context{margin-top:24px}
-.historical-context>summary{cursor:pointer;font-weight:800}
-.historical-context[open]>summary{margin-bottom:10px}
 .emergency-marker{color:var(--warn-color);font-weight:800}
 .section-result-comp{display:block;margin-top:3px;color:var(--muted-color);font-size:10px;white-space:nowrap}
 .search-options{position:relative;display:block;align-self:center}

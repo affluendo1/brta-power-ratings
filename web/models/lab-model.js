@@ -77,7 +77,19 @@ function performanceBands(data,view,list,round=null){
  return {...base,names,bounds,order,qualificationForEntry,classForEntry:entry=>qualificationForEntry(entry)?.band||base.classFor(entry.rating)};
 }
 function contextData(data,round=null){if(round==null)return data;const filter=groups=>(groups||[]).filter(g=>Number(g.round)<=round);return {...data,singles:rows(data,'singles',round),doubles:rows(data,'pairs',round),doublesIndividuals:rows(data,'doublesPlayers',round),results:filter(data.results),upcomingFixtures:filter(data.upcomingFixtures),teamOrderEvidence:{},playerInsights:{}}}
-function schedule(data,round=null,provisional=false){return rows(data,'singles',round).filter(x=>provisional||root.BRTAHistory.qualified(x,'singles',data)).map(x=>{const m=matches(data,x.player,'singles',round),ratings=m.map(r=>row(data,'singles',r.opp,round)?.rating).filter(Number.isFinite);return {...x,averageOpponent:ratings.length?Math.round(avg(ratings)):null,matches:ratings.length,provisional:!root.BRTAHistory.qualified(x,'singles',data)}}).filter(x=>x.averageOpponent!=null).sort((a,b)=>b.averageOpponent-a.averageOpponent||a.player.localeCompare(b.player)).map((x,i,all)=>({...x,rank:i+1,total:all.length}))}
+function schedule(data,round=null,showProvisional=false){
+ const scheduleRows=rows(data,'singles',round).map(entry=>{
+  const provisional=!root.BRTAHistory.qualified(entry,'singles',data);
+  const ratings=matches(data,entry.player,'singles',round)
+   .map(match=>row(data,'singles',match.opp,round)?.rating).filter(Number.isFinite);
+  return {...entry,averageOpponent:ratings.length?Math.round(avg(ratings)):null,matches:ratings.length,provisional};
+ }).filter(entry=>entry.averageOpponent!=null)
+  .sort((a,b)=>b.averageOpponent-a.averageOpponent||a.player.localeCompare(b.player));
+ const total=scheduleRows.filter(entry=>!entry.provisional).length;
+ let rank=0;
+ return scheduleRows.filter(entry=>showProvisional||!entry.provisional)
+  .map(entry=>({...entry,rank:entry.provisional?null:++rank,total}));
+}
 function history(data,view,name,through=null){return (data.ratingHistory?.rounds||[]).filter(x=>through==null||x.round<=through).flatMap(x=>{const r=row(data,view,name,x.round);return r?[{round:x.round,rating:r.rating,rank:rank(data,view,name,x.round)}]:[]})}
 function pressure(ms){
  const record=items=>({wins:items.filter(x=>x.won).length,losses:items.filter(x=>!x.won).length,total:items.length});

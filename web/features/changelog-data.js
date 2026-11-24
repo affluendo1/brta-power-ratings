@@ -2,6 +2,18 @@
 // Retrospective entries use source-commit timestamps; sourceCommit records their provenance.
 window.BRTA_RELEASES = Object.freeze([
 {
+  "version": "9.9i",
+  "size": "small",
+  "title": "Custom draws and scorecard fixes",
+  "committedAt": "2026-11-24T18:58:42+11:00",
+  "changes": [
+    "Player Lab scorecards open without the Model context panel. Provisional players are placed by opponent Power and show a dash in the strength-of-schedule rank column.",
+    "Open Edit Fixture from any saved custom scorecard. Squad replacements preserve scores for unchanged singles matchups and doubles pairs.",
+    "Saving a complete first leg generates the return fixtures. Saving after the regular season finishes seeds the semifinals from the standings.",
+    "Custom competitions default to 4.2 Melody for supported scoring formats and fall back to RM4.2 for other formats."
+  ]
+},
+{
   "version": "9.9h",
   "size": "tiny",
   "title": "Version bump",
