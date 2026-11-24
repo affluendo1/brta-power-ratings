@@ -145,6 +145,6 @@ function showSchedule(){
 
 }
 document.addEventListener('click',e=>{if(e.target.closest?.('#export853Open,#exportSectionBtn')){e.preventDefault();open()}else if(e.target.closest?.('[data-check-schedule]')){e.preventDefault();showSchedule()}});
-root.BRTAExportUI853={open,run,selected,showSchedule};
+root.BRTAExportUI853={open,run,selected,showSchedule,download};
 })(window);
 /* BRTA Power Ratings 9.9g */

@@ -5,6 +5,8 @@
   function matchTime(value) {
     const iso = /^(\d{4})-(\d{2})-(\d{2})$/.exec(value || '');
     if (iso) return Date.UTC(+iso[1], +iso[2] - 1, +iso[3]);
+    const numeric = /^(\d{1,2})\/(\d{1,2})\/(\d{2}|\d{4})$/.exec(value || '');
+    if (numeric) return Date.UTC(+numeric[3] + (numeric[3].length === 2 ? (+numeric[3] < 70 ? 2000 : 1900) : 0), +numeric[2] - 1, +numeric[1]);
     const named = /^(\d{1,2}) ([a-z]{3,9}) (\d{2}|\d{4})$/i.exec(value || '');
     if (!named) return null;
     const month = MONTHS.indexOf(named[2].slice(0, 3).toLowerCase());
@@ -62,57 +64,129 @@
     });
   }
 
-  if (typeof module !== 'undefined') module.exports = {matchTime, seasonRecords, seasonAwards};
+  const skillMethod = 'Each division has a baseline 45 points above the next division in the same ladder. Sets 1 (or the top division of a separate ladder) starts at 1500, and junior Open Rubbers start above Sets. Results adjust the baseline using 60% match win rate and 40% game share, with five neutral matches pulling small samples toward the baseline. Each recorded match has equal weight in the season estimate.';
+  const sectionOrder = row => {
+    const label = String(row.sectionLabel || '').trim().toLowerCase();
+    const number = Number(/(?:^|[^\d])(\d{1,2})(?!\d)/.exec(label)?.[1]);
+    if (!Number.isInteger(number) || number < 1 || !label.match(/sets?|rub|section|secti?on|grade|div|s\/d|girls?|boys?|mixed|\bmx\b|^(?:a ?)?\d{1,2}$/)) return null;
+    const junior = ['AA', 'UA'].includes(row.competitionCode);
+    const family = /green/.test(label) ? 'Green Ball' : /girls?/.test(label) ? 'Girls' : /boys?/.test(label) ? 'Boys' :
+      /^(?:women|ladies)/.test(label) ? 'Women’s ' + (/rub/.test(label) ? 'Rubbers' : 'Sets') :
+      /^(?:men|tuemen)/.test(label) ? 'Men’s ' + (/rub/.test(label) ? 'Rubbers' : 'Sets') :
+      /^(?:mx|mixed)/.test(label) ? 'Mixed' : 'Open';
+    return {number, family, rubbers: junior && family === 'Open' && /^rub/.test(label)};
+  };
+
+  function skillScale(sections) {
+    const rubbers = new Map();
+    for (const row of sections) {
+      const order = sectionOrder(row);
+      if (order?.rubbers) rubbers.set(row.competitionCode, Math.max(order.number, rubbers.get(row.competitionCode) || 0));
+    }
+    return row => {
+      const order = sectionOrder(row);
+      if (!order) return null;
+      const {number, family} = order;
+      return {pool: row.competitionCode + '/' + family, family,
+        baseline: 1500 + 45 * (order.rubbers ? (rubbers.get(row.competitionCode) || number) - number + 1 : 1 - number)};
+    };
+  }
+
+  function skillHistory(matches, scale, discipline = 'overall') {
+    const seasons = new Map();
+    const sections = new Map();
+    for (const match of matches) {
+      if (discipline !== 'overall' && match.kind !== (discipline === 'doubles' ? 'doublesPlayers' : 'singles')) continue;
+      const row = match.entry, tier = scale(row);
+      if (!tier || typeof match.won !== 'boolean') continue;
+      const season = JSON.stringify([row.seasonKey || row.seasonLabel, tier.pool]);
+      const id = JSON.stringify([season, row.sectionCode]);
+      if (!sections.has(id)) sections.set(id, {season, row, tier, count: 0, wins: 0, gamesFor: 0, gamesAgainst: 0, date: null});
+      const sample = sections.get(id);
+      sample.count++;
+      sample.wins += Number(match.won);
+      sample.gamesFor += match.gf || 0;
+      sample.gamesAgainst += match.ga || 0;
+      const date = matchTime(match.date);
+      if (date != null) sample.date = Math.max(sample.date ?? date, date);
+    }
+    for (const sample of sections.values()) {
+      const {season, row, tier, count, wins, gamesFor, gamesAgainst, date} = sample;
+      const winRate = wins / count, gameShare = gamesFor + gamesAgainst ? gamesFor / (gamesFor + gamesAgainst) : winRate;
+      const score = tier.baseline + 160 * (.6 * winRate + .4 * gameShare - .5) * count / (count + 5);
+      if (!seasons.has(season)) seasons.set(season, {row, ...tier, date: null, count: 0, weighted: 0, sections: []});
+      const point = seasons.get(season);
+      if (date != null) point.date = Math.max(point.date ?? date, date);
+      point.count += count;
+      point.weighted += score * count;
+      point.sections.push({label: row.sectionLabel, code: row.sectionCode, baseline: tier.baseline, count,
+        winRate: winRate * 100, gameShare: gameShare * 100, rating: Math.round(score)});
+    }
+    return [...seasons.values()].map(({weighted, ...point}) => ({...point, rating: Math.round(weighted / point.count)}))
+      .sort((a, b) => (a.date ?? Infinity) - (b.date ?? Infinity) || a.pool.localeCompare(b.pool));
+  }
+
+  const career = {matchTime, seasonRecords, seasonAwards, skillScale, skillHistory, skillMethod};
+  if (typeof module !== 'undefined') module.exports = career;
   if (typeof window === 'undefined') return;
 
   const colours = ['#327bc1', '#269264', '#bd6434', '#9563bd', '#be5478', '#268a97', '#997b25'];
   const percent = value => Number.isFinite(value) ? Math.round(value) + '%' : '—';
   const showCompetition = row => row.competitionLabel || competitionLabel(row.competitionCode);
   const label = row => row.seasonLabel + ' · ' + showCompetition(row);
-  function timeline(seasons, discipline, metric) {
-    const points = seasons.filter(season => Number.isFinite(season.date) && Number.isFinite(season[discipline][metric])).sort((a, b) => a.date - b.date);
-    if (!points.length) return '<p>No dated matches for this view.</p>';
+  const ladderLabel = point => showCompetition(point.row) + ' · ' + point.family;
+  function timeline(history) {
+    const points = history.filter(point => Number.isFinite(point.date));
+    if (!points.length) return '<p>No dated results in a recognised ladder for this discipline.</p>';
     const series = new Map();
     for (const point of points) {
-      const code = point.row.competitionCode;
-      if (!series.has(code)) series.set(code, []);
-      series.get(code).push(point);
+      if (!series.has(point.pool)) series.set(point.pool, []);
+      series.get(point.pool).push(point);
     }
-    const left = 50, right = 608, top = 16, bottom = 179;
+    const left = 52, right = 608, top = 16, bottom = 179;
     const first = points[0].date, last = points.at(-1).date;
-    const range = Math.max(last - first, 1);
-    const x = date => first === last ? (left + right) / 2 : left + (date - first) / range * (right - left);
-    const scale = metric === 'count'
-      ? Math.ceil(Math.max(1, ...points.map(point => point[discipline].count)) / 4) * 4
-      : 100;
-    const y = value => bottom - value / scale * (bottom - top);
+    const x = date => first === last ? (left + right) / 2 : left + (date - first) / (last - first) * (right - left);
+    const low = Math.floor((Math.min(...points.map(point => point.rating)) - 15) / 25) * 25;
+    const interval = Math.max(25, Math.ceil((Math.max(...points.map(point => point.rating)) + 15 - low) / 100) * 25);
+    const y = value => bottom - (value - low) / (4 * interval) * (bottom - top);
     const dates = first === last ? [first] : [first, ...((last - first) > 12 * MONTH_MS ? [(first + last) / 2] : []), last];
     const tickDate = new Intl.DateTimeFormat('en-AU', {month: 'short', year: 'numeric', timeZone: 'UTC'});
     const ticks = Array.from({length: 5}, (_, i) => {
-      const val = i * scale / 4, at = y(val);
-      return '<path d="M50 ' + at + 'H608"/><text x="42" y="' + (at + 4) + '" text-anchor="end">' + val + (metric === 'count' ? '' : '%') + '</text>';
+      const val = low + i * interval, at = y(val);
+      return '<path d="M52 ' + at + 'H608"/><text x="44" y="' + (at + 4) + '" text-anchor="end">' + val + '</text>';
     }).join('') + dates.map((date, i) => '<text x="' + x(date) + '" y="205" text-anchor="' +
       (dates.length === 1 || i === 1 && dates.length === 3 ? 'middle' : i === 0 ? 'start' : 'end') + '">' +
       esc(tickDate.format(date)) + '</text>').join('');
     let lines = '', legend = '';
     for (const [index, entries] of [...series.values()].entries()) {
       const color = colours[index % colours.length];
-      const coords = point => x(point.date).toFixed(1) + ',' + y(point[discipline][metric]).toFixed(1);
+      const coords = point => x(point.date).toFixed(1) + ',' + y(point.rating).toFixed(1);
       lines += '<polyline points="' + entries.map(coords).join(' ') + '" stroke="' + color + '" fill="none" stroke-width="2.5"/>' +
-        entries.map(point => '<circle cx="' + x(point.date) + '" cy="' + y(point[discipline][metric]) + '" r="4.5" fill="' + color +
-          '"><title>' + esc(label(point.row)) + ' · ' + (metric === 'count' ? point[discipline][metric] + ' matches' : percent(point[discipline][metric])) +
-          '</title></circle>').join('');
-      legend += '<li><i style="background:' + color + '" aria-hidden="true"></i>' + esc(showCompetition(entries[0].row)) + '</li>';
+        entries.map(point => '<circle cx="' + x(point.date) + '" cy="' + y(point.rating) + '" r="4.5" fill="' + color +
+          '"><title>' + esc(label(point.row) + ' · ' + point.family + ' · ' + point.rating + ' skill · ' +
+            point.sections.map(section => section.label).join(', ')) + '</title></circle>').join('');
+      legend += '<li><i style="background:' + color + '" aria-hidden="true"></i>' + esc(ladderLabel(entries[0])) + '</li>';
     }
-    return '<svg viewBox="0 0 632 218" role="img" aria-label="Career results timeline, with all competitions on the same dates">' +
+    return '<svg viewBox="0 0 632 218" role="img" aria-label="Estimated playing skill by season and ladder">' +
       '<g class="career99-axes">' + ticks + '</g>' + lines + '</svg><ul class="career99-legend">' + legend + '</ul>';
   }
 
-  function draw(panel, seasons) {
-    panel.innerHTML = '<p>One timeline for all recorded competitions. Each dot is a competition season, placed at its last dated match.</p>' +
+  function skillTable(history) {
+    if (!history.length) return '';
+    return '<details class="career-skill-record"><summary>Skill ratings by season</summary><div class="table-wrap"><table><thead><tr><th scope="col">Season</th><th scope="col">Ladder</th><th scope="col">Sections</th><th scope="col">Matches</th><th scope="col">Skill</th></tr></thead><tbody>' +
+      [...history].reverse().map(point => '<tr><td>' + esc(point.row.seasonLabel) + '</td><td>' + esc(ladderLabel(point)) +
+        '</td><td>' + esc(point.sections.map(section => section.label).join(', ')) + '</td><td>' + point.count +
+        '</td><td><b>' + point.rating + '</b>' + (point.count < 5 ? ' <small>Provisional</small>' : '') + '</td></tr>').join('') + '</tbody></table></div></details>';
+  }
+
+  function draw(panel, matches, scale) {
+    const seasons = seasonRecords(matches.map(match => ({row: match.entry, matches: [match]})));
+    panel.innerHTML = '<p>Each dot estimates playing skill for a season in one ladder. Compare points within the same ladder.</p>' +
       '<div class="career99-filters"><label>Discipline <select data-career-discipline><option value="overall">All matches</option><option value="singles">Singles</option><option value="doubles">Doubles</option></select></label>' +
-      '<label>Show <select data-career-metric><option value="winRate">Match win rate</option><option value="gameShare">Share of games won</option><option value="count">Matches played</option></select></label></div>' +
-      '<div data-career-chart class="career99-chart"></div>' +
+      '</div>' +
+      '<div data-career-chart class="career99-chart"></div><div data-career-skill-table></div>' +
+      '<details><summary>How skill is estimated</summary><p>' + skillMethod + ' A rating based on fewer than five matches is provisional. ' +
+        'Dates are based on each ladder’s last recorded match that season.</p></details>' +
       '<h4>Best seasons</h4><p>Rate awards require at least five matches. Each competition season is assessed separately.</p><div class="career99-awards">' +
       (seasonAwards(seasons).map(award => '<article><span>' + award.label + '</span><strong>' +
         (['winRate','gameShare'].includes(award.field) ? percent(award.value) : award.value) +
@@ -120,18 +194,16 @@
         '<p>Season awards will appear when there are recorded matches.</p>') +
       '</div>';
     const chart = panel.querySelector('[data-career-chart]');
-    const refresh = () => { chart.innerHTML = timeline(seasons,
-      panel.querySelector('[data-career-discipline]').value, panel.querySelector('[data-career-metric]').value); };
-    panel.addEventListener('change', refresh);
+    const discipline = panel.querySelector('[data-career-discipline]');
+    const refresh = () => {
+      const points = skillHistory(matches, scale, discipline.value);
+      chart.innerHTML = timeline(points);
+      panel.querySelector('[data-career-skill-table]').innerHTML = skillTable(points);
+    };
+    discipline.addEventListener('change', refresh);
     refresh();
   }
 
-  root.BRTACareerTimeline = {
-    matchTime,
-    render(panel, matches) {
-      const entries = matches.map(match => ({row: match.entry, matches: [match]}));
-      draw(panel, seasonRecords(entries));
-    }
-  };
+  root.BRTACareerTimeline = {...career, render: draw};
 })(typeof window === 'undefined' ? globalThis : window);
 /* BRTA Power Ratings 9.9g */

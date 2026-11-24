@@ -39,7 +39,7 @@ esc();await tick();assert(w.document.querySelector('#layoutOverlay').classList.c
 click('[data-studio="theme"]');await tick();esc();await tick();assert(w.document.querySelector('#themeStudioOverlay').classList.contains('hidden'));assert(!w.document.querySelector('#settingsOverlay').classList.contains('hidden'));console.log('Theme creator Escape preserves Settings');
 click('[data-changelog-open]');await tick();
 assert.equal(w.document.querySelector('.release-heading h3').textContent,w.BRTA_RELEASES.find(release=>release.size==='major').version);
-assert.equal(w.BRTAChangelog.version,'9.9i');
+assert.equal(w.BRTAChangelog.version,'9.9j');
 for(const release of w.BRTA_RELEASES.slice(0,6)){
   assert.equal(w.document.querySelector('[data-release-version="'+release.version+'"] h4').textContent,
     release.version+' · '+release.title);
@@ -118,17 +118,32 @@ const career=w.document.querySelector('.career99');
 assert(career,'Current player lab has a Career scope');
 assert(career.querySelector('.career99-chart svg'),'Published matches produce a career timeline: '+career.textContent);
 assert(career.querySelector('.career99-awards article'),'Best-season categories display for a player with rated matches');
+assert(career.querySelector('svg').getAttribute('aria-label').includes('playing skill'));
+assert(!career.querySelector('[data-career-metric]'));
 const timeline = w.document.createElement('div');
+const skillEntry = {competitionCode:'UA', seasonKey:'UA:current', seasonLabel:'Spring 2026', sectionCode:'UA006', sectionLabel:'Sets 6'};
 w.BRTACareerTimeline.render(timeline, [{
-  entry: {competitionCode:'UA', seasonKey:'UA:current', seasonLabel:'Spring 2026'},
-  date:'22 Nov 26', kind:'doublesPlayers', gf:6, ga:2, won:true,
-}]);
-timeline.querySelector('[data-career-discipline]').value='singles';
-const timelineMetric=timeline.querySelector('[data-career-metric]');
-timelineMetric.value='count';
-timelineMetric.dispatchEvent(new w.Event('change',{bubbles:true}));
-assert(timeline.querySelector('.career99-chart circle'),'A zero-match season still plots when viewing match counts');
-assert(!timeline.querySelector('.career99-chart').innerHTML.includes('NaN'),'A zero-match discipline has a finite chart scale');
+  entry:skillEntry, date:'22 Nov 26', kind:'doublesPlayers', gf:6, ga:2, won:true,
+}], w.BRTACareerTimeline.skillScale([skillEntry]));
+assert.equal(timeline.querySelectorAll('.career99-chart circle').length,1);
+const discipline = timeline.querySelector('[data-career-discipline]');
+discipline.value='singles';
+discipline.dispatchEvent(new w.Event('change',{bubbles:true}));
+assert(!timeline.querySelector('.career99-chart circle'),'An empty discipline has no artificial skill point');
+const originalDownload=w.BRTAExportUI853.download;
+let careerDownload;
+w.BRTAExportUI853.download=(...args)=>{careerDownload=args;};
+click('[data-career-export]');
+for(let i=0;i<450&&!careerDownload;i++)await tick();
+w.BRTAExportUI853.download=originalDownload;
+assert(careerDownload,w.document.querySelector('[data-career-export-status]').textContent);
+assert.equal(careerDownload[1],'jayden-bone-brta-career.html');
+const exportedCareer = new w.DOMParser().parseFromString(careerDownload[0],'text/html');
+const careerData = JSON.parse(exportedCareer.querySelector('#brta-career-data').textContent);
+assert.equal(careerData.name,'Jayden Bone');
+assert(careerData.seasons.length>1);
+assert(careerData.records[0][1].recorded>0);
+assert(careerData.seasons.flatMap(season=>season.sections).some(section=>section.ratings?.some(view=>view.rounds.length>1)));
 esc();await tick();console.log('Player Lab loads the career timeline and season awards from the archive');
 
 const singleGraph=vm.runInContext("lab8Graph('singles',Object.keys(D.ratingHistory.players)[0],'Singles',1)",ctx);assert(singleGraph.includes('<circle '));console.log('Single-observation chart contains a visible point');

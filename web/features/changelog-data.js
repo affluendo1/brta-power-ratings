@@ -2,6 +2,16 @@
 // Retrospective entries use source-commit timestamps; sourceCommit records their provenance.
 window.BRTA_RELEASES = Object.freeze([
 {
+  "version": "9.9j",
+  "size": "small",
+  "title": "Career reports and skill ratings",
+  "committedAt": "2026-11-24T19:31:51+11:00",
+  "changes": [
+    "Export a standalone career report from Player Lab, with season highlights, match and team logs, opponents, doubles partners, and round-by-round Power.",
+    "The Career Skill Rating chart estimates progress from division strength, match wins and games won. Each competition ladder has its own series."
+  ]
+},
+{
   "version": "9.9i",
   "size": "small",
   "title": "Custom draws and scorecard fixes",

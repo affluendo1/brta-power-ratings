@@ -139,6 +139,7 @@
   content.before(scopes, career);
   let model, indexRequest, lab, searchResults = [], visible = 15, debounce, labVersion = 0;
   const payloads = new Map();
+  let careerSkillScale, exportingCareer = false;
   const comp = row => String(row.competitionLabel || competitionLabel(row.competitionCode)).split(' - ')[0];
   const distinct = (rows, key) => new Set(rows.map(key)).size;
   const plural = (n, noun) => n + ' ' + noun + (n === 1 ? '' : noun.endsWith('match') ? 'es' : 's');
@@ -152,7 +153,10 @@
       if (index.version !== 1 || !Array.isArray(index.entries)) throw Error('The career index is unavailable.');
       playerSearchIndex = index;
       return index;
-    })().then(index => model = BRTACareers.build(index, BRTAPlayerSearch)).catch(error => {
+    })().then(index => {
+      careerSkillScale = BRTACareerTimeline.skillScale(index.sections);
+      return model = BRTACareers.build(index, BRTAPlayerSearch);
+    }).catch(error => {
       indexRequest = null;
       throw error;
     });
@@ -395,6 +399,8 @@
     const clubs = distinct(rows.filter(row => row.team), row => clubBaseName(row.team));
     career.innerHTML = '<header class="career-head"><div><p class="players-eyebrow">' + label + '</p><h2 tabindex="-1">' +
       esc(publicPlayerName(name)) + following.star(person) + '</h2></div>' +
+      (scope === 'career' ? '<div class="career-export"><button class="button secondary" type="button" data-career-export' +
+        (exportingCareer ? ' disabled' : '') + '>Export career</button><span role="status" data-career-export-status></span></div>' : '') +
       (scope === 'season' ? '<label class="career-season-label">Current season<select data-career-season>' + currentLabels.map(s =>
         '<option' + (s === season ? ' selected' : '') + '>' + esc(s) + '</option>').join('') + '</select></label>' : '') + '</header>' +
       '<div class="career-totals">' + [
@@ -404,7 +410,7 @@
         ...(clubs > 1 ? [['Clubs', clubs]] : [])
       ].map(([text, n]) => '<div><b>' + n + '</b><span>' + text + '</span></div>').join('') + '</div>' +
       '<div class="career-rollup" role="status">Loading recorded matches…</div>' +
-      (scope === 'career' ? '<section class="profile-section career99"><h3>Career timeline</h3><div class="career99-content"></div></section><div class="career-progression"></div><section class="career-match-log career-rivals"><h3>Singles rivalries</h3><p>Loading repeat opponents…</p></section>' : '') +
+      (scope === 'career' ? '<section class="profile-section career99"><h3>Career skill rating</h3><div class="career99-content"></div></section><div class="career-progression"></div><section class="career-match-log career-rivals"><h3>Singles rivalries</h3><p>Loading repeat opponents…</p></section>' : '') +
       '<div class="career-timeline">' + [...new Set(rows.map(r => r.seasonLabel))].map(s =>
         '<section class="career-year' + (currentLabels.includes(s) ? ' career-year-current' : '') +
         '"><div class="career-year-head"><h3>' + esc(s) + '</h3>' + (currentLabels.includes(s) ? '<span>Current season</span>' : '') + (scope === 'career' && currentLabels.includes(s) ?
@@ -428,7 +434,7 @@
       const ordinals = new Intl.PluralRules('en', {type: 'ordinal'});
       const calendar = new Intl.DateTimeFormat('en-AU', {day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC'});
       const signed = value => (value > 0 ? '+' : value < 0 ? '−' : '') + Math.abs(value).toFixed(1);
-      section.innerHTML = '<h3>Playing level over time</h3><p>Estimated from match wins, share of games won and the strength of the section.</p>' +
+      section.innerHTML = '<h3>Improvement benchmark</h3><p>Estimated from match wins, share of games won and the strength of the section.</p>' +
         series.map(([pool, metrics]) => {
           const {discipline, days, first, last, change, percentile, peers} = metrics;
           const poolLabel = competitionLabel(pool.split('/')[0]).split(' - ')[0];
@@ -454,7 +460,7 @@
               ' players in the same competition ladder and discipline. Each player counts once.</p>') + '</details></article>';
         }).join('');
     } else if (section) {
-      section.innerHTML = '<h3>Playing level over time</h3><p>At least three rated matches in the same discipline in two comparable seasons, at least 90 days apart, are needed to estimate improvement.</p>';
+      section.innerHTML = '<h3>Improvement benchmark</h3><p>At least three rated matches in the same discipline in two comparable seasons, at least 90 days apart, are needed to estimate improvement.</p>';
     }
     rows.forEach((row, i) => {
       const comparisons = report.equivalents[row.sectionCode];
@@ -486,21 +492,46 @@
       fitQueue.shift()().finally(() => { activeFits--; pumpFits(); });
     }
   }
-  function showPower(row, data, record, version, modelName, fits) {
+  function sectionPayload(row) {
     const key = row.dataPath;
-    const live = D?.meta?.section_code === row.sectionCode && D.meta.season_label === row.seasonLabel && !D.meta.is_custom ? D : null;
-    if (!live && !fits.has(key)) {
+    if (!payloads.has(key)) {
+      payloads.set(key, fetch(key, {signal: AbortSignal.timeout?.(30000)}).then(response => {
+        if (!response.ok) throw Error('No published section');
+        return response.json();
+      }).then(normaliseTeamLabels).catch(error => {
+        payloads.delete(key);
+        throw error;
+      }));
+    }
+    return payloads.get(key);
+  }
+  function sectionPower(row, data, modelName, fits, isCurrent, completeHistory = false) {
+    const key = row.dataPath;
+    if (!fits.has(key)) {
       const pending = new Promise(resolve => fitQueue.push(async () => {
-        if (!isActiveLab(version)) { fits.delete(key); resolve(null); return; }
-        try { resolve(await layoutApplyModel(data, modelName)); }
-        catch { fits.delete(key); resolve(null); }
+        if (!isCurrent()) { resolve(null); return; }
+        try {
+          let source = data;
+          // Legacy archive payloads may omit the doubles snapshots published for current sections.
+          if (completeHistory && modelName === 'RM3' && data.ratingHistory?.rounds?.length &&
+              data.doubles?.length && !Object.keys(data.doublesRatingHistory?.tables || {}).length) {
+            source = structuredClone(data);
+            source.meta.needsScoreRefit = true;
+          }
+          resolve(await layoutApplyModel(source, modelName));
+        } catch { fits.delete(key); resolve(null); }
       }));
       fits.set(key, pending);
       pumpFits();
     }
+    return fits.get(key);
+  }
+  function showPower(row, data, record, version, modelName, fits) {
+    const live = D?.meta?.section_code === row.sectionCode && D.meta.season_label === row.seasonLabel && !D.meta.is_custom ? D : null;
+    const pending = live || sectionPower(row, data, modelName, fits, () => isActiveLab(version));
     const name = modelDisplayName(modelName);
     async function draw() {
-      const data = live || await fits.get(key);
+      const data = await pending;
       if (!isActiveLab(version)) return;
       if (!data) {
         record.textContent = 'Power unavailable';
@@ -550,11 +581,7 @@
         const card = career.querySelector('[data-career-card="' + i + '"]');
         let html, data;
         try {
-          if (!payloads.has(row.dataPath)) payloads.set(row.dataPath, fetch(row.dataPath).then(response => {
-            if (!response.ok) throw Error('No published section');
-            return response.json();
-          }).then(normaliseTeamLabels).catch(error => { payloads.delete(row.dataPath); throw error; }));
-          data = await payloads.get(row.dataPath);
+          data = await sectionPayload(row);
           if (!isActiveLab(version)) return;
           const teamModel = row.team ? BRTATeamLab.build(data, row.team) : null;
           if (teamModel?.position != null) {
@@ -631,7 +658,7 @@
       (scope === 'career' && dated.length > 1 ? '<div><small>Recorded playing span</small><b>' + duration + '</b></div>' : '') +
       (unavailable ? '<p>' + plural(unavailable, 'section record') + ' unavailable. Totals cover loaded matches.</p>' : '');
     if (scope === 'career') {
-      BRTACareerTimeline.render(career.querySelector('.career99-content'), matches);
+      BRTACareerTimeline.render(career.querySelector('.career99-content'), matches, careerSkillScale);
       drawRivals(panel, [...meetings.values()], unavailable);
       return;
     }
@@ -689,9 +716,52 @@
       if (button) button.disabled = false;
     }
   }
+  async function exportCareer(person, name, button) {
+    if (exportingCareer || !person) return;
+    exportingCareer = button.disabled = true;
+    const status = career.querySelector('[data-career-export-status]');
+    const modelChoice = selectedRatingModel();
+    const modelName = modelChoice === 'RM1' ? 'RM3' : modelChoice;
+    const modelLabel = modelDisplayName(modelName);
+    const rows = person.rows, entries = [], fits = new Map();
+    let next = 0, completed = 0;
+    status.textContent = 'Preparing career report…';
+    try {
+      await BRTAActivity.run('Preparing career export', async task => {
+        async function worker() {
+          while (next < rows.length) {
+            const i = next++, row = rows[i];
+            try {
+              const data = await sectionPayload(row);
+              const rated = await sectionPower(row, data, modelName, fits, () => true, true);
+              const actualModel = rated ? modelDisplayName(rated.meta?.modelChoice || rated.meta?.predictionModel || modelName) : 'Published section Power';
+              entries[i] = {...BRTACareerReport.extract(data, row, rated || data, actualModel), ratingFallback: !rated};
+            } catch {
+              entries[i] = {entry: row, unavailable: true};
+            }
+            completed++;
+            task.stage(10 + 80 * completed / rows.length, 'Processed ' + completed + ' of ' + rows.length + ' section entries');
+          }
+        }
+        await Promise.all(Array.from({length: Math.min(rows.length, 3)}, worker));
+        task.stage(94, 'Writing season summaries and the full match log…');
+        await task.paint();
+        const report = BRTACareerReport.compile({...person, name: publicPlayerName(name)}, entries, careerSkillScale, modelLabel);
+        BRTAExportUI853.download(BRTACareerReport.html(report), BRTAExport853.slug(name) + '-brta-career.html', 'text/html;charset=utf-8');
+        status.textContent = report.missing || report.missingPower ? 'Downloaded with coverage notes.' : 'Career report downloaded.';
+      }, {key: 'career-export', message: 'Loading scorecards and Power histories…'});
+    } catch {
+      status.textContent = 'Could not create the career report. Try again.';
+    } finally {
+      exportingCareer = false;
+      const current = career.querySelector('[data-career-export]');
+      if (current) current.disabled = false;
+    }
+  }
   career.addEventListener('click', event => {
     const b = event.target.closest('button');
     if (!b || !lab) return;
+    if (b.hasAttribute('data-career-export') && lab.scope === 'career') exportCareer(lab.person, lab.name, b);
     if (b.hasAttribute('data-career-lab-retry')) chooseScope(lab.scope);
     if (b.hasAttribute('data-career-appearance')) openAppearance(lab.displayRows[Number(b.dataset.careerAppearance)], b);
     if (b.hasAttribute('data-career-view-season')) { lab.season = b.dataset.careerViewSeason; chooseScope('season'); }
