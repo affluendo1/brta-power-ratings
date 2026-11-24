@@ -39,12 +39,12 @@ esc();await tick();assert(w.document.querySelector('#layoutOverlay').classList.c
 click('[data-studio="theme"]');await tick();esc();await tick();assert(w.document.querySelector('#themeStudioOverlay').classList.contains('hidden'));assert(!w.document.querySelector('#settingsOverlay').classList.contains('hidden'));console.log('Theme creator Escape preserves Settings');
 click('[data-changelog-open]');await tick();
 assert.equal(w.document.querySelector('.release-heading h3').textContent,w.BRTA_RELEASES.find(release=>release.size==='major').version);
-assert.equal(w.BRTAChangelog.version,'9.9j&2');
+assert.equal(w.BRTAChangelog.version,'9.9j&3');
 for(const release of w.BRTA_RELEASES.slice(0,6)){
   assert.equal(w.document.querySelector('[data-release-version="'+release.version+'"] h4').textContent,
     release.version+' · '+release.title);
 }
-assert(w.document.querySelector('[data-release-version="9.9j&2"] .release-followup').textContent.includes('9.9j'));
+assert(w.document.querySelector('[data-release-version="9.9j&3"] .release-followup').textContent.includes('9.9j'));
 click('#changelog-history-tab');
 assert.equal(w.document.getElementById('release-9.9b').querySelector('.release-name').textContent,w.BRTA_RELEASES.find(release=>release.version==='9.9b').title);
 esc();await tick();assert(w.document.querySelector('#changelogOverlay').classList.contains('hidden'));assert(!w.document.querySelector('#settingsOverlay').classList.contains('hidden'));console.log('Changelog Escape restores Settings');esc();await tick();
@@ -120,6 +120,9 @@ assert(career,'Current player lab has a Career scope');
 assert(career.querySelector('.career99-chart svg'),'Published matches produce a career timeline: '+career.textContent);
 assert(career.querySelector('.career99-awards article'),'Best-season categories display for a player with rated matches');
 assert(career.querySelector('svg').getAttribute('aria-label').includes('playing skill'));
+click('.career99 [data-career-expand]');
+assert(w.document.querySelector('.skill-expanded-dialog [data-career-expanded-chart] svg'));
+esc();await tick();
 assert(!career.querySelector('[data-career-metric]'));
 const timeline = w.document.createElement('div');
 const skillEntry = {competitionCode:'UA', seasonKey:'UA:current', seasonLabel:'Spring 2026', sectionCode:'UA006', sectionLabel:'Sets 6'};
@@ -223,6 +226,15 @@ assert(w.document.querySelector('.skill-selected').textContent.includes('Jayden 
 assert(!w.document.querySelector('[data-skill-plot] circle[tabindex]'),'Chart points do not take focus or open a footer');
 click('[data-skill-discipline="singles"]');
 assert.equal(w.document.querySelector('[data-skill-discipline="singles"]').getAttribute('aria-pressed'),'true');
+click('[data-skill-action="expand-graph"]');
+await tick();
+const expanded=w.document.querySelector('.skill-expanded-dialog');
+const normalAxis=expanded.querySelector('.career99-axes').innerHTML;
+click('.skill-expanded-dialog [data-skill-tight]');
+assert.equal(expanded.querySelector('[data-skill-tight]').getAttribute('aria-pressed'),'true');
+assert.notEqual(expanded.querySelector('.career99-axes').innerHTML,normalAxis);
+esc();await tick();
+assert(!w.document.querySelector('.skill-expanded-dialog'));
 click('[data-roster-skill]');
 for(let i=0;i<200&&!w.document.querySelector('.skill-team-dialog [data-skill-plot] svg');i++)await tick();
 assert(w.document.querySelector('.skill-team-dialog .skill-name-pill'),'Team skill graph contains lineup names');
@@ -257,6 +269,12 @@ for(let i=0;i<80&&!w.document.querySelector('#profileContent [data-player-follow
 click('#profileContent [data-player-follow]');await tick();
 assert(JSON.parse(w.localStorage.getItem('brta-association-following-v1')).pins.some(pin=>pin.name==='Jayden Bone'));
 esc();await tick();
+w.BRTAPlayers.show('history');
+w.document.querySelector('[data-skill-team]').value='following';
+click('[data-skill-action="team-preset"]');
+for(let i=0;i<100&&!Array.from(w.document.querySelectorAll('[data-skill-graph] h3')).some(h=>h.textContent==='Following');i++)await tick();
+const followingGraph=Array.from(w.document.querySelectorAll('[data-skill-graph]')).find(graph=>graph.querySelector('h3').textContent==='Following');
+assert(followingGraph?.querySelector('.skill-selected').textContent.includes('Jayden Bone'),'Following preset uses the followed identities in this competition');
 click('[data-following-open]');await tick();
 const followedCard=w.document.querySelector('#playersFollowing .following-grid .association-follow-row');
 assert(followedCard.textContent.includes('Jayden Bone'));

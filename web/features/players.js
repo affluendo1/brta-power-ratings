@@ -24,6 +24,7 @@
   const skillComparison = BRTASkillComparison.setup(skillWorkspace, {
     careers, section: () => D?.meta, load: loadComparison,
     teams: () => rosterTeams, teamPlayers: comparisonTeamPlayers,
+    followedPlayers: code => following.comparisonPlayers(code),
   });
   const ratingUI = window.BRTARatingControls.setup(page);
   const followingOverlay = document.createElement('div');

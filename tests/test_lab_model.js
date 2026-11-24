@@ -81,3 +81,8 @@ const fullSchedule=L.schedule(scheduleData,null,true);
 assert.deepEqual(fullSchedule.map(r=>[r.player,r.rank,r.total]),[['B',1,2],['P',null,2],['A',2,2]]);
 assert.deepEqual(fullSchedule.filter(r=>!r.provisional),rankedSchedule,'Showing provisional rows leaves qualified ranks unchanged');
 assert(L.schedule(D,1,true).every(r=>r.rank===null&&r.total===0),'A snapshot with only provisional players has no ranks');
+const emergencyPair=structuredClone(D);
+Object.assign(emergencyPair.results[0].fixtures[0].rubbers[1],{homeEmergency:true,homeEmergencies:[false,true]});
+assert.equal(L.matches(emergencyPair,'A','doublesPlayers',1)[0].emergency,false);
+assert.equal(L.matches(emergencyPair,'C','doublesPlayers',1)[0].emergency,true);
+assert.equal(L.matches(emergencyPair,'C / A','pairs',1)[0].emergency,true);

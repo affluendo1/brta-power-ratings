@@ -174,3 +174,18 @@ tr.followed-standing > td:first-child, .bracket-team.followed-standing { box-sha
 .skill-team-graph .career99-chart { padding: 8px; }
 .roster-actions { display: flex; flex-wrap: wrap; gap: 5px; justify-content: flex-end; }
 [data-skill-status]:empty { display: none; }
+
+.skill-graph-actions, .skill-expanded-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.skill-expanded-dialog .settings-sheet {
+  width: min(1500px,calc(100vw - 24px));
+  max-height: calc(100dvh - max(12px,env(safe-area-inset-top)) - max(12px,env(safe-area-inset-bottom)));
+}
+.skill-expanded-dialog .career99-chart svg { max-height: 65dvh; }
+.skill-expanded-controls [data-skill-tight][aria-pressed="true"] { border-color: var(--primary); color: var(--primary); }
+.skill-emergency-notes, [data-skill-preset-status] { font-size: .82rem; color: var(--muted-color); }
+.skill-emergency-notes { margin: 6px 4px; }
+.skill-emergency-notes summary { cursor: pointer; }
+.skill-emergency-notes ul { padding-inline-start: 1.4em; }
+@media (max-width:600px) {
+  .skill-expanded-dialog .settings-sheet { width: calc(100vw - 12px); padding: 14px; }
+}

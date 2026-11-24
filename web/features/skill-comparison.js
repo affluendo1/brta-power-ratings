@@ -6,9 +6,9 @@ window.BRTASkillComparison = (() => {
   const option = (value, title, selected) => '<option value="' + esc(value) + '"' + (selected ? ' selected' : '') + '>' + esc(title) + '</option>';
   const action = (label,key,extra='') => '<button type="button" class="button secondary" data-skill-action="'+key+'" '+extra+'>'+label+'</button>';
 
-  function setup(host, {careers, section, load, teams, teamPlayers}) {
+  function setup(host, {careers, section, load, teams, teamPlayers, followedPlayers}) {
     const workspaces=new Map(), histories=new Map(), searches=new WeakMap();
-    let active='', override='', revision=0, settingsOpen=false, presets, teamSheet;
+    let active='', override='', revision=0, settingsOpen=false, presets, expandedSheet;
     try { presets=JSON.parse(localStorage.getItem(storageKey)) || {}; }
     catch { presets={}; }
     presets=Object.fromEntries(Object.entries(presets).filter(([id,item])=>id.startsWith('preset-') && item?.id===id &&
@@ -48,8 +48,9 @@ window.BRTASkillComparison = (() => {
       }).join('')+'</ul>';
     }
     function graphCard(graph,i) {
-      return '<article class="skill-comparison-graph" data-skill-graph="'+i+'"><header><h3>'+esc(titleFor(graph,i))+'</h3>'+
-        (workspace().graphs.length>1?action('Remove','remove-graph','aria-label="Remove '+esc(titleFor(graph,i))+'"'):'')+'</header>'+
+      return '<article class="skill-comparison-graph" data-skill-graph="'+i+'"><header><h3>'+esc(titleFor(graph,i))+'</h3><div class="skill-graph-actions">'+
+        action('Expand','expand-graph','aria-label="Expand '+esc(titleFor(graph,i))+'"')+
+        (workspace().graphs.length>1?action('Remove','remove-graph','aria-label="Remove '+esc(titleFor(graph,i))+'"'):'')+'</div></header>'+
         BRTACareerTimeline.disciplineButtons(graph.discipline,'data-skill-discipline')+
         '<div class="career99-chart" data-skill-plot></div><div data-skill-legend></div>'+
         '<label class="skill-player-picker"><span>Add a player</span><input type="search" autocomplete="off" data-skill-search placeholder="Search for a player"></label>'+
@@ -77,8 +78,9 @@ window.BRTASkillComparison = (() => {
       revision++;
       host.innerHTML='<div class="skill-workspace-head"><div><h2>Compare career skill</h2><span class="skill-competition-pill">'+esc(codeLabel(active))+'</span></div>'+
         '<div class="skill-workspace-actions">'+action('Add graph','add-graph')+'</div></div>'+
-        (rosters.length?'<div class="skill-team-preset"><label>Start from a team<select data-skill-team>'+option('','Choose a team',true)+
-          rosters.map((team,i)=>option(String(i),team.team,false)).join('')+'</select></label>'+action('Add team graph','team-preset')+'</div>':'')+
+        '<div class="skill-team-preset"><label>Start from a preset<select data-skill-team>'+option('','Choose a preset',true)+
+          rosters.map((team,i)=>option(String(i),team.team,false)).join('')+option('following','Following',false)+
+          '</select></label>'+action('Add preset graph','team-preset')+'<span role="status" data-skill-preset-status></span></div>'+
         settings(view)+'<div class="skill-graph-list">'+view.graphs.map(graphCard).join('')+'</div>'+
         (others.length?'<details class="skill-other-workspaces"><summary>Graphs from other competitions</summary><div>'+
           others.map(([code])=>action(esc(codeLabel(code)),'other-competition','data-skill-code="'+esc(code)+'"')).join('')+'</div></details>':'');
@@ -86,7 +88,7 @@ window.BRTASkillComparison = (() => {
       view.graphs.flatMap(graph=>graph.players).forEach(player=>{void ensure(player,active);});
       drawPlots();
     }
-    function drawGraph(node,graph,code,{zoom=false,removable=true}={}) {
+    function drawGraph(node,graph,code,{zoom=false,tight=false,removable=true}={}) {
       const points=graph.players.flatMap(player=>{
         const data=histories.get(historyKey(player,code))?.data;
         return data?BRTACareerTimeline.skillHistory(data.matches,undefined,graph.discipline).map(point=>({...point,id:player.id})):[];
@@ -95,7 +97,7 @@ window.BRTASkillComparison = (() => {
       const pending=graph.players.some(player=>histories.get(historyKey(player,code))?.pending);
       const unavailable=graph.players.some(player=>histories.get(historyKey(player,code))?.data?.unavailable);
       plot.innerHTML=points.length?BRTACareerTimeline.chart(points,{seriesKey:point=>point.id,
-        seriesIndex:key=>graph.players.findIndex(player=>player.id===key),legend:false,zoom}):
+        seriesIndex:key=>graph.players.findIndex(player=>player.id===key),legend:false,zoom,tight,seriesLabel:point=>graph.players.find(player=>player.id===point.id)?.name}):
         '<p class="skill-chart-empty">'+(pending?'Loading match histories…':graph.players.length?'No season ratings for this discipline.':'Add players to compare their season ratings.')+'</p>';
       if (unavailable) plot.insertAdjacentHTML('beforeend','<p class="skill-data-note">Some match histories were unavailable.</p>');
       node.querySelector('[data-skill-legend]').innerHTML=legend(graph,points,removable);
@@ -181,6 +183,7 @@ window.BRTASkillComparison = (() => {
       const key=button.dataset.skillAction,view=workspace(),node=button.closest('[data-skill-graph]');
       const index=Number(node?.dataset.skillGraph),graph=view.graphs[index];
       const focusSearch=i=>host.querySelector('[data-skill-graph="'+i+'"] [data-skill-search]')?.focus();
+      if(key==='expand-graph')void openExpanded(titleFor(graph,index),active,()=>graph);
       if(key==='add-graph'){view.graphs.push(newGraph());draw();focusSearch(view.graphs.length-1);}
       if(key==='remove-graph'){view.graphs.splice(index,1);draw();host.querySelector('[data-skill-action="add-graph"]').focus();}
       if(key==='select-player'){
@@ -191,13 +194,22 @@ window.BRTASkillComparison = (() => {
       }
       if(key==='remove-player'){graph.players.splice(Number(button.dataset.skillPlayer),1);draw();focusSearch(index);}
       if(key==='team-preset'){
-        const choice=host.querySelector('[data-skill-team]').value,team=teams()[Number(choice)];
-        if(choice===''||!team)return;
+        const choice=host.querySelector('[data-skill-team]').value,team=teams()[Number(choice)],code=active;
+        const status=host.querySelector('[data-skill-preset-status]');
+        if(choice!=='following'&&!team)return;
         button.disabled=true;
+        status.textContent='Loading preset…';
         try{
-          const preset=await fromTeam(team);
-          if(view===workspace()){if(view.graphs.length===1&&!view.graphs[0].players.length)view.graphs[0]=preset;else view.graphs.push(preset);draw();}
-        }catch{inform('This team’s lineup could not be loaded.');}
+          const preset=choice==='following' ? {...newGraph(),title:'Following',players:await followedPlayers(code)} : await fromTeam(team);
+          if(!preset.players.length){status.textContent='No followed players have records in this competition.';return;}
+          if(view===workspace()){
+            const empty=view.graphs.findIndex(graph=>!graph.players.length&&!graph.title);
+            if(empty>=0)view.graphs[empty]=preset;else view.graphs.push(preset);
+            draw();
+            const added=view.graphs.indexOf(preset);
+            host.querySelector('[data-skill-graph="'+added+'"] [data-skill-action="expand-graph"]').focus();
+          }
+        }catch{status.textContent='This preset could not be loaded.';}
         finally{button.disabled=false;}
       }
       if(key==='other-competition'){override=button.dataset.skillCode;settingsOpen=true;draw();}
@@ -238,28 +250,45 @@ window.BRTASkillComparison = (() => {
       node.addEventListener('focusout',clear);
     }
     bindHighlight(host);
-    async function openTeam(team) {
-      const code=contextCode();
-      if(teamSheet?.isConnected)return;
-      const sheet=BRTAOverlays.openSheet(team.team+' · Career skill','<article class="skill-comparison-graph skill-team-graph">'+
-        BRTACareerTimeline.disciplineButtons('overall','data-skill-discipline')+
-        '<div class="career99-chart" data-skill-plot><p class="skill-chart-empty">Loading lineup histories…</p></div><div data-skill-legend></div></article>',
-        {className:'skill-team-dialog'});
-      teamSheet=sheet;
+    async function openExpanded(title,code,getGraph,isTeam=false) {
+      if(expandedSheet?.isConnected)return;
+      const sheet=BRTAOverlays.openSheet(title,'<article class="skill-comparison-graph skill-team-graph">'+
+        '<div class="skill-expanded-controls" data-skill-expanded-controls></div>'+
+        '<div class="career99-chart" data-skill-plot><p class="skill-chart-empty">Loading match histories…</p></div><div data-skill-legend></div></article>',
+        {className:'skill-expanded-dialog'});
+      if(isTeam)sheet.classList.add('skill-team-dialog');
+      expandedSheet=sheet;
       const node=sheet.querySelector('article');
       bindHighlight(sheet);
       try {
-        const graph=await fromTeam(team);
+        const graph=await getGraph();
         if(!sheet.isConnected)return;
-        const draw=()=>{if(sheet.isConnected)drawGraph(node,graph,code,{zoom:true,removable:false});};
+        let tight=false;
+        node.querySelector('[data-skill-expanded-controls]').innerHTML=
+          BRTACareerTimeline.disciplineButtons(graph.discipline,'data-skill-discipline')+
+          '<button type="button" class="button secondary" data-skill-tight aria-pressed="false">Tighter Y-axis</button>';
+        const draw=()=>{if(sheet.isConnected)drawGraph(node,graph,code,{zoom:true,tight,removable:false});};
         sheet.addEventListener('click',event=>{
-          const button=event.target.closest('[data-skill-discipline]');
-          if(button){graph.discipline=button.dataset.skillDiscipline;draw();}
+          const discipline=event.target.closest('[data-skill-discipline]');
+          const scale=event.target.closest('[data-skill-tight]');
+          if(discipline){
+            graph.discipline=discipline.dataset.skillDiscipline;
+            if(active===code)drawPlots();
+            draw();
+          }
+          if(scale){
+            tight=!tight;
+            scale.setAttribute('aria-pressed',String(tight));
+            draw();
+          }
         });
         const tasks=graph.players.map(player=>ensure(player,code).then(draw));
         draw();
         await Promise.all(tasks);
-      }catch{if(sheet.isConnected)node.querySelector('[data-skill-plot]').textContent='Could not load this team’s history.';}
+      }catch{if(sheet.isConnected)node.querySelector('[data-skill-plot]').textContent='Match histories could not be loaded.';}
+    }
+    function openTeam(team) {
+      return openExpanded(team.team+' · Career skill',contextCode(),()=>fromTeam(team),true);
     }
     return {
       draw(){if(!host.childElementCount)draw();},

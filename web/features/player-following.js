@@ -335,7 +335,18 @@ window.BRTAPlayerFollowing = (() => {
     const legacy = !state.checkedLegacy && read('brta-following-v1', {}).pins;
     const hasLegacyPlayers = Array.isArray(legacy) && legacy.some(pin => pin?.kind === 'player' && !pin.isCustom);
     if (state.pins.length || hasLegacyPlayers) queueMicrotask(() => { void refresh(); });
-    return {star, placeSectionStar, refresh, draw};
+    async function comparisonPlayers(code) {
+      model ||= await careers();
+      migrate();
+      mergeDuplicatePins();
+      const players = new Map();
+      for (const {known} of followed()) for (const person of known) {
+        const row = person.rows.find(row => row.competitionCode === code);
+        if (row) players.set(person.id, {id:person.id, name:row.player, anchor:row});
+      }
+      return [...players.values()];
+    }
+    return {star, placeSectionStar, refresh, draw, comparisonPlayers};
   }
   return {setup, icon};
 })();

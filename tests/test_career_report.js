@@ -64,7 +64,7 @@ assert.equal(report.records[0][1].recorded,4);
 assert.equal(report.records[0][1].rated,2);
 assert.equal(report.missing,1);
 assert.equal(report.seasons[0].highlights.find(item => item.upset).upset.opponent,'Opp A');
-assert.equal(report.history.overall[0].count,2);
+assert.equal(report.history.overall[0].count,1,'The career export rates the regular result while retaining the emergency match in the record');
 const html = Report.html({...report,name:'Test </script><script>alert(1)</script>'});
 assert(html.includes('Power history') && html.includes('Team fixtures played') && html.includes('Published section record could not be loaded'));
 assert(!html.includes('<script>alert(1)</script>'));
@@ -75,3 +75,14 @@ console.log('Career skill, records, Power history, season highlights and standal
 assert.equal(Career.seasonSlot('Spring 2025',Date.UTC(2025,7,20)), Career.seasonSlot('Spring 25',Date.UTC(2025,10,15)));
 const weakest = {...entry,sectionLabel:'Sets 90 Green Ball'};
 assert(Career.skillHistory([record(weakest,false,'20 Nov 25')])[0].rating>0,'Skill is positive even at the bottom of the scale');
+
+const regular = record({...entry,sectionLabel:'Sets 17'},true,'1 Nov 25');
+const emergency = {...record({...entry,sectionCode:'UA001',sectionLabel:'Sets 1'},false,'8 Nov 25'),emergency:true,gf:1,ga:6};
+const withEmergency = Career.skillHistory([emergency,regular])[0];
+assert.equal(withEmergency.rating,Career.skillHistory([regular])[0].rating);
+assert.deepEqual(withEmergency.emergencySections,['Sets 1']);
+assert.equal(withEmergency.emergencyOnly,false);
+assert.equal(withEmergency.row.sectionCode,regular.entry.sectionCode);
+const provisional = Career.skillHistory([emergency])[0];
+assert.equal(provisional.emergencyOnly,true);
+assert.equal(provisional.count,1);

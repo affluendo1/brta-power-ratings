@@ -2,6 +2,17 @@
 // Retrospective entries use source-commit timestamps; sourceCommit records their provenance.
 window.BRTA_RELEASES = Object.freeze([
 {
+  "version": "9.9j&3",
+  "size": "small",
+  "title": "Expanded career skill graphs",
+  "committedAt": "2026-11-24T21:21:42+11:00",
+  "changes": [
+    "Expand career and comparison graphs into a large dialog with a tighter Y-axis for close ratings.",
+    "Emergency appearances are annotated and excluded when there are regular results that season. Emergency-only seasons get a separate provisional marker.",
+    "Load your followed players as a built-in graph preset for the selected competition."
+  ]
+},
+{
   "version": "9.9j&2",
   "size": "medium",
   "title": "Following and skill chart polish",
