@@ -2,7 +2,7 @@ fixture_id,date,round,home_team,away_team,position,home_player,away_player,winni
 AP013022,10 Oct 26,2,East Malvern Blue,BLTC Light,No. 1,Millie Batoni,Sara Bayhan,Millie Batoni,8-1,8,1,1,0,Completed,true,false,false,8-1
 AP013022,10 Oct 26,2,East Malvern Blue,BLTC Light,No. 2,Mia Mitris,Lavinia Kolar,Mia Mitris,8-0,8,0,1,0,Completed,true,false,false,8-0
 AP013022,10 Oct 26,2,East Malvern Blue,BLTC Light,No. 3,Therese Oyston,Mischa Harris,Therese Oyston,8-1,8,1,1,0,Completed,true,false,true,8-1
-AP013022,10 Oct 26,2,East Malvern Blue,BLTC Light,No. 4,Stephanie Prvcic,India Illingworth,Stephanie Prvcic,8-3,8,3,1,0,Completed,true,false,true,8-3
+AP013022,10 Oct 26,2,East Malvern Blue,BLTC Light,No. 4,Stephanie Prvcic,India Illingworth,Stephanie Prvcic,8-3,8,3,1,0,Completed,true,false,false,8-3
 AP013023,10 Oct 26,2,BLTC White,BLTC Blue,No. 1,Monika Biernat,Nahla Naqqash,Nahla Naqqash,3-8,3,8,0,1,Completed,true,false,true,3-8
 AP013023,10 Oct 26,2,BLTC White,BLTC Blue,No. 2,Lisa D'Amelio,Kana Tamura,Lisa D'Amelio,8-2,8,2,1,0,Completed,true,false,false,8-2
 AP013023,10 Oct 26,2,BLTC White,BLTC Blue,No. 3,Erin Stojcevski,Amrutha Jaladanki,Amrutha Jaladanki,7-8,7,8,0,1,Completed,true,false,false,7-8
@@ -10,7 +10,7 @@ AP013023,10 Oct 26,2,BLTC White,BLTC Blue,No. 4,Maya Milosevic,Claudia Popovic,M
 AP013024,10 Oct 26,2,Royal South Yarra,Altona,No. 1,Bianca Barbic,Senaya De Silva,Bianca Barbic,8-7,8,7,1,0,Completed,true,false,false,8-7
 AP013024,10 Oct 26,2,Royal South Yarra,Altona,No. 2,Anya Lo,Anastasia Papadopoulos,Anya Lo,8-0,8,0,1,0,Completed,true,false,false,8-0
 AP013024,10 Oct 26,2,Royal South Yarra,Altona,No. 3,Mara Tausan,Elena Papadopoulos,Elena Papadopoulos,3-8,3,8,0,1,Completed,true,false,false,3-8
-AP013024,10 Oct 26,2,Royal South Yarra,Altona,No. 4,Sally Fiddes,Bianca Novacevski,Bianca Novacevski,6-8,6,8,0,1,Completed,true,false,true,6-8
+AP013024,10 Oct 26,2,Royal South Yarra,Altona,No. 4,Sally Fiddes,Bianca Novacevski,Bianca Novacevski,6-8,6,8,0,1,Completed,true,false,false,6-8
 AP013031,17 Oct 26,3,East Malvern Navy,Royal South Yarra,No. 1,Sienna Siveski,Anya Lo,Anya Lo,6-8,6,8,0,1,Completed,true,false,false,6-8
 AP013031,17 Oct 26,3,East Malvern Navy,Royal South Yarra,No. 2,Thea Teo,Stella Kephala,Thea Teo,8-6,8,6,1,0,Completed,true,false,false,8-6
 AP013031,17 Oct 26,3,East Malvern Navy,Royal South Yarra,No. 3,Natasha Lambrianidis,Lola Fromberg,Lola Fromberg,4-8,4,8,0,1,Completed,true,false,false,4-8
@@ -26,23 +26,23 @@ AP013034,17 Oct 26,3,Altona,BLTC White,No. 4,Elena Papadopoulos,Myra Janjua,Myra
 AP013041,24 Oct 26,4,BLTC White,East Malvern Navy,No. 1,Lisa D'Amelio,Sienna Siveski,,1-1,1,1,0,0,Unfinished,false,false,false,1-1
 AP013041,24 Oct 26,4,BLTC White,East Malvern Navy,No. 2,Erin Stojcevski,Thea Teo,Erin Stojcevski,8-6,8,6,1,0,Completed,true,false,false,8-6
 AP013041,24 Oct 26,4,BLTC White,East Malvern Navy,No. 3,Maya Milosevic,Aarya Nori,Maya Milosevic,8-6,8,6,1,0,Completed,true,false,false,8-6
-AP013041,24 Oct 26,4,BLTC White,East Malvern Navy,No. 4,Myra Janjua,Charlotte Aps,,,0,0,0,0,Unfinished,false,false,true,
+AP013041,24 Oct 26,4,BLTC White,East Malvern Navy,No. 4,Myra Janjua,Charlotte Aps,,,0,0,0,0,Unfinished,false,false,false,
 AP013042,24 Oct 26,4,Royal South Yarra,BLTC Light,No. 1,Anya Lo,Lavinia Kolar,Anya Lo,8-1,8,1,1,0,Completed,true,false,false,8-1
 AP013042,24 Oct 26,4,Royal South Yarra,BLTC Light,No. 2,Lola Fromberg,Mischa Harris,Lola Fromberg,8-1,8,1,1,0,Completed,true,false,true,8-1
 AP013042,24 Oct 26,4,Royal South Yarra,BLTC Light,No. 3,Sophie Emilson,Cassandra Neylan,Sophie Emilson,8-3,8,3,1,0,Completed,true,false,true,8-3
-AP013042,24 Oct 26,4,Royal South Yarra,BLTC Light,No. 4,Mara Tausan,India Illingworth,Mara Tausan,8-7,8,7,1,0,Completed,true,false,true,8-7
+AP013042,24 Oct 26,4,Royal South Yarra,BLTC Light,No. 4,Mara Tausan,India Illingworth,Mara Tausan,8-7,8,7,1,0,Completed,true,false,false,8-7
 AP013044,24 Oct 26,4,East Malvern Blue,Altona,No. 1,Millie Batoni,Kerrie Clarke,Millie Batoni,8-1,8,1,1,0,Completed,true,false,false,8-1
 AP013044,24 Oct 26,4,East Malvern Blue,Altona,No. 2,Kayla Coster,Elena Papadopoulos,Kayla Coster,8-0,8,0,1,0,Completed,true,false,false,8-0
-AP013044,24 Oct 26,4,East Malvern Blue,Altona,No. 3,Mia Mitris,Bianca Novacevski,Mia Mitris,8-2,8,2,1,0,Completed,true,false,true,8-2
-AP013044,24 Oct 26,4,East Malvern Blue,Altona,No. 4,Caitlin Cassidy,Ayra Patel,Ayra Patel,7-8,7,8,0,1,Completed,true,false,true,7-8
+AP013044,24 Oct 26,4,East Malvern Blue,Altona,No. 3,Mia Mitris,Bianca Novacevski,Mia Mitris,8-2,8,2,1,0,Completed,true,false,false,8-2
+AP013044,24 Oct 26,4,East Malvern Blue,Altona,No. 4,Caitlin Cassidy,Arya Patel,Arya Patel,7-8,7,8,0,1,Completed,true,false,true,7-8
 AP013061,14 Nov 26,6,BLTC Light,BLTC Blue,No. 1,Saffron Worsley,Wanda Bacskai,Wanda Bacskai,3-8,3,8,0,1,Completed,true,false,false,3-8
 AP013061,14 Nov 26,6,BLTC Light,BLTC Blue,No. 2,Lavinia Kolar,Kana Tamura,Kana Tamura,0-8,0,8,0,1,Completed,true,false,false,0-8
 AP013061,14 Nov 26,6,BLTC Light,BLTC Blue,No. 3,Mischa Harris,Amrutha Jaladanki,Amrutha Jaladanki,0-8,0,8,0,1,Completed,true,true,false,0-8
-AP013061,14 Nov 26,6,BLTC Light,BLTC Blue,No. 4,India Illingworth,Sezen Yildirim,Sezen Yildirim,1-8,1,8,0,1,Completed,true,true,true,1-8
+AP013061,14 Nov 26,6,BLTC Light,BLTC Blue,No. 4,India Illingworth,Sezen Yildirim,Sezen Yildirim,1-8,1,8,0,1,Completed,true,false,true,1-8
 AP013062,14 Nov 26,6,Altona,East Malvern Navy,No. 1,Zara Abdul-Rahim,Thea Teo,Zara Abdul-Rahim,8-3,8,3,1,0,Completed,true,false,false,8-3
 AP013062,14 Nov 26,6,Altona,East Malvern Navy,No. 2,Senaya De Silva,Eva Arounsavat,Senaya De Silva,8-4,8,4,1,0,Completed,true,false,true,8-4
 AP013062,14 Nov 26,6,Altona,East Malvern Navy,No. 3,Kerrie Clarke,Aarya Nori,Kerrie Clarke,8-2,8,2,1,0,Completed,true,false,false,8-2
-AP013062,14 Nov 26,6,Altona,East Malvern Navy,No. 4,Bianca Novacevski,Charlotte Aps,Bianca Novacevski,8-0,8,0,1,0,Completed,true,true,true,8-0
+AP013062,14 Nov 26,6,Altona,East Malvern Navy,No. 4,Bianca Novacevski,Charlotte Aps,Bianca Novacevski,8-0,8,0,1,0,Completed,true,false,false,8-0
 AP013063,14 Nov 26,6,Royal South Yarra,BLTC White,No. 1,Anya Lo,Scarlett Campbell,Anya Lo,8-0,8,0,1,0,Completed,true,false,false,8-0
 AP013063,14 Nov 26,6,Royal South Yarra,BLTC White,No. 2,Lola Fromberg,Sasha Minin,Lola Fromberg,8-4,8,4,1,0,Completed,true,false,true,8-4
 AP013063,14 Nov 26,6,Royal South Yarra,BLTC White,No. 3,Maia Gurov,Anhelina Cherkashnya,Anhelina Cherkashnya,2-8,2,8,0,1,Completed,true,false,true,2-8
