@@ -57,7 +57,7 @@
   const following = BRTAPlayerFollowing.setup({
     host: followingPanel, badge: hero.querySelector('[data-follow-count]'), careers, notice: followingNotice,
     async loadResults(path) {
-      const response = await fetch(path, {cache: 'no-store', signal: AbortSignal.timeout?.(20000)});
+      const response = await fetch(path, {cache: 'no-cache', signal: AbortSignal.timeout?.(20000)});
       if (!response.ok) throw Error('Section unavailable');
       return normaliseTeamLabels(await response.json());
     },

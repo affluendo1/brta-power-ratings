@@ -304,7 +304,9 @@ window.BRTAPlayerFollowing = (() => {
     document.addEventListener('visibilitychange', () => {
       if (state.pins.length && !document.hidden) void refresh();
     });
-    if (state.pins.length || !state.checkedLegacy) queueMicrotask(() => { void refresh(); });
+    const legacy = !state.checkedLegacy && read('brta-following-v1', {}).pins;
+    const hasLegacyPlayers = Array.isArray(legacy) && legacy.some(pin => pin?.kind === 'player' && !pin.isCustom);
+    if (state.pins.length || hasLegacyPlayers) queueMicrotask(() => { void refresh(); });
     return {star, placeSectionStar, refresh, draw};
   }
   return {setup, icon};
