@@ -28,11 +28,11 @@
   "calendar_events": [
     {
       "date": "13 Mar 27",
-      "label": "Grand Final \u00b7 if qualified"
+      "label": "Grand Final · if qualified"
     },
     {
       "date": "20 Mar 27",
-      "label": "Spare \u00b7 if required"
+      "label": "Spare · if required"
     }
   ],
   "official_standings": [
@@ -46,6 +46,14 @@
     },
     {
       "position": 2,
+      "team": "Liston",
+      "wins": 4,
+      "points": 42,
+      "percentage": 97.33,
+      "marker": ""
+    },
+    {
+      "position": 3,
       "team": "Altona Blue",
       "wins": 3,
       "points": 36,
@@ -53,7 +61,7 @@
       "marker": ""
     },
     {
-      "position": 3,
+      "position": 4,
       "team": "Altona Black",
       "wins": 3,
       "points": 36,
@@ -61,20 +69,12 @@
       "marker": ""
     },
     {
-      "position": 4,
-      "team": "Liston",
-      "wins": 3,
-      "points": 34,
-      "percentage": 97.21,
-      "marker": "*"
-    },
-    {
       "position": 5,
       "team": "Altona Gold",
       "wins": 2,
-      "points": 24,
-      "percentage": 84.96,
-      "marker": "*"
+      "points": 26,
+      "percentage": 87.87,
+      "marker": ""
     },
     {
       "position": 6,
@@ -88,10 +88,10 @@
   "green_ball": false,
   "results_loaded_by_trols": null,
   "fixtures": 21,
-  "completed_fixtures": 17,
+  "completed_fixtures": 18,
   "draw_fixtures": 45,
-  "singles_rubbers": 68,
-  "doubles_rubbers": 34,
+  "singles_rubbers": 72,
+  "doubles_rubbers": 36,
   "latest_round": 7,
   "validation": "passed",
   "source_warnings": []

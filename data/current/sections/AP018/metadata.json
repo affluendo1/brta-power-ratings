@@ -28,20 +28,28 @@
   "calendar_events": [
     {
       "date": "27 Feb 27",
-      "label": "Semi Final \u00b7 if qualified"
+      "label": "Semi Final · if qualified"
     },
     {
       "date": "13 Mar 27",
-      "label": "Grand Final \u00b7 if qualified"
+      "label": "Grand Final · if qualified"
     },
     {
       "date": "20 Mar 27",
-      "label": "Spare \u00b7 if required"
+      "label": "Spare · if required"
     }
   ],
   "official_standings": [
     {
       "position": 1,
+      "team": "Mordialloc",
+      "wins": 5,
+      "points": 42,
+      "percentage": 135.29,
+      "marker": ""
+    },
+    {
+      "position": 2,
       "team": "BLTC",
       "wins": 4,
       "points": 40,
@@ -49,20 +57,12 @@
       "marker": ""
     },
     {
-      "position": 2,
+      "position": 3,
       "team": "Elwood Green",
       "wins": 3,
       "points": 34,
       "percentage": 126.49,
       "marker": ""
-    },
-    {
-      "position": 3,
-      "team": "Mordialloc",
-      "wins": 4,
-      "points": 34,
-      "percentage": 124.58,
-      "marker": "*"
     },
     {
       "position": 4,
@@ -101,17 +101,17 @@
       "team": "Parkdale",
       "wins": 0,
       "points": 9,
-      "percentage": 70.61,
-      "marker": "*"
+      "percentage": 66.67,
+      "marker": ""
     }
   ],
   "green_ball": false,
   "results_loaded_by_trols": null,
   "fixtures": 28,
-  "completed_fixtures": 21,
+  "completed_fixtures": 22,
   "draw_fixtures": 56,
   "singles_rubbers": 0,
-  "doubles_rubbers": 84,
+  "doubles_rubbers": 88,
   "latest_round": 7,
   "validation": "passed",
   "source_warnings": []
