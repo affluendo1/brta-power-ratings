@@ -38,16 +38,24 @@
   "calendar_events": [
     {
       "date": "1 Dec 26",
-      "label": "Grand Final \u00b7 if qualified"
+      "label": "Grand Final · if qualified"
     },
     {
       "date": "8 Dec 26",
-      "label": "Spare \u00b7 if required"
+      "label": "Spare · if required"
     }
   ],
   "official_standings": [
     {
       "position": 1,
+      "team": "Wattle Warriors",
+      "wins": 7,
+      "points": 85,
+      "percentage": 164.86,
+      "marker": ""
+    },
+    {
+      "position": 2,
       "team": "St Pauls Crusaders",
       "wins": 8,
       "points": 80,
@@ -55,18 +63,10 @@
       "marker": ""
     },
     {
-      "position": 2,
-      "team": "Wattle Warriors",
-      "wins": 6,
-      "points": 76,
-      "percentage": 164.24,
-      "marker": ""
-    },
-    {
       "position": 3,
       "team": "Carmelite Middle Park",
-      "wins": 5,
-      "points": 60.5,
+      "wins": 6,
+      "points": 70.5,
       "percentage": 101.44,
       "marker": ""
     },
@@ -82,19 +82,19 @@
       "position": 5,
       "team": "Wattle Bloomers",
       "wins": 2,
-      "points": 28,
-      "percentage": 53.31,
+      "points": 29,
+      "percentage": 53.87,
       "marker": ""
     }
   ],
   "green_ball": false,
   "results_loaded_by_trols": null,
-  "fixtures": 42,
-  "completed_fixtures": 23,
+  "fixtures": 46,
+  "completed_fixtures": 24,
   "draw_fixtures": 45,
   "singles_rubbers": 0,
-  "doubles_rubbers": 138,
-  "latest_round": 14,
+  "doubles_rubbers": 144,
+  "latest_round": 16,
   "validation": "source discrepancies",
   "source_warnings": [
     "Incomplete TROLS score for TN005011 doubles No. 5: '0-2'. Missing score not inferred; excluded from ratings and game totals.",

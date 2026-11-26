@@ -38,15 +38,15 @@
   "calendar_events": [
     {
       "date": "24 Nov 26",
-      "label": "Semi Final \u00b7 if qualified"
+      "label": "Semi Final · if qualified"
     },
     {
       "date": "1 Dec 26",
-      "label": "Grand Final \u00b7 if qualified"
+      "label": "Grand Final · if qualified"
     },
     {
       "date": "8 Dec 26",
-      "label": "Spare \u00b7 if required"
+      "label": "Spare · if required"
     }
   ],
   "official_standings": [
@@ -109,12 +109,12 @@
   ],
   "green_ball": false,
   "results_loaded_by_trols": null,
-  "fixtures": 58,
-  "completed_fixtures": 38,
+  "fixtures": 59,
+  "completed_fixtures": 40,
   "draw_fixtures": 56,
   "singles_rubbers": 0,
-  "doubles_rubbers": 228,
-  "latest_round": 16,
+  "doubles_rubbers": 240,
+  "latest_round": 17,
   "validation": "source discrepancies",
   "source_warnings": [
     "Incomplete TROLS score for TN003011 doubles No. 5: ''. Missing score not inferred; excluded from ratings and game totals.",
