@@ -10,14 +10,14 @@ AP001022,10 Oct 26,2,Essendon,Buckley Park,No. 4,Matthew Conroy,Yuri Mijic,Yuri 
 AP001023,10 Oct 26,2,Liston,Altona Gold,No. 1,Angelantonio Errico,Ben Reese,Angelantonio Errico,8-6,8,6,1,0,Completed,true,false,false,8-6
 AP001023,10 Oct 26,2,Liston,Altona Gold,No. 2,Noah Kurti,Grant Thompson,Noah Kurti,8-4,8,4,1,0,Completed,true,false,false,8-4
 AP001023,10 Oct 26,2,Liston,Altona Gold,No. 3,Lemuel Sanheeth Alladi,Isai Torres,Lemuel Sanheeth Alladi,8-3,8,3,1,0,Completed,true,false,true,8-3
-AP001023,10 Oct 26,2,Liston,Altona Gold,No. 4,Jayden Stewart,Henry Hoult,Jayden Stewart,8-7,8,7,1,0,Completed,true,true,true,8-7
+AP001023,10 Oct 26,2,Liston,Altona Gold,No. 4,Jayden Stewart,Henry Hoult,Jayden Stewart,8-7,8,7,1,0,Completed,true,false,true,8-7
 AP001031,17 Oct 26,3,Altona Black,Altona Gold,No. 1,Marcus Newnham,Carlin Grant,Marcus Newnham,8-0,8,0,1,0,Completed,true,false,false,8-0
 AP001031,17 Oct 26,3,Altona Black,Altona Gold,No. 2,Aleks Jankovic,Luke Treveil,Luke Treveil,6-8,6,8,0,1,Completed,true,false,false,6-8
 AP001031,17 Oct 26,3,Altona Black,Altona Gold,No. 3,Alex Milanese,Henry Hoult,Alex Milanese,8-0,8,0,1,0,Completed,true,false,true,8-0
 AP001031,17 Oct 26,3,Altona Black,Altona Gold,No. 4,Xavier Tresidder,Nick Metz,Xavier Tresidder,8-3,8,3,1,0,Completed,true,true,true,8-3
 AP001032,17 Oct 26,3,Buckley Park,Liston,No. 1,Christian Williams,Noah Kurti,Christian Williams,8-3,8,3,1,0,Completed,true,false,false,8-3
 AP001032,17 Oct 26,3,Buckley Park,Liston,No. 2,Andrew Kotnik,Lemuel Sanheeth Alladi,Lemuel Sanheeth Alladi,6-8,6,8,0,1,Completed,true,false,false,6-8
-AP001032,17 Oct 26,3,Buckley Park,Liston,No. 3,Leon Suljovic,Jayden Stewart,Leon Suljovic,8-3,8,3,1,0,Completed,true,false,true,8-3
+AP001032,17 Oct 26,3,Buckley Park,Liston,No. 3,Leon Suljovic,Jayden Stewart,Leon Suljovic,8-3,8,3,1,0,Completed,true,false,false,8-3
 AP001032,17 Oct 26,3,Buckley Park,Liston,No. 4,Piet Van Der Lans,Andrew Protopapas,Piet Van Der Lans,8-4,8,4,1,0,Completed,true,false,true,8-4
 AP001033,17 Oct 26,3,Altona Blue,Essendon,No. 1,Jack Walker,Matthew Conroy,Jack Walker,8-3,8,3,1,0,Completed,true,false,false,8-3
 AP001033,17 Oct 26,3,Altona Blue,Essendon,No. 2,Matthew Poole,Rhys Collins,Matthew Poole,8-7,8,7,1,0,Completed,true,false,false,8-7
@@ -41,7 +41,7 @@ AP001051,07 Nov 26,5,Altona Black,Buckley Park,No. 3,Dion Boyle,Leon Suljovic,Le
 AP001051,07 Nov 26,5,Altona Black,Buckley Park,No. 4,Richard Dodson,Piet Van Der Lans,Richard Dodson,8-6,8,6,1,0,Completed,true,true,false,8-6
 AP001052,07 Nov 26,5,Essendon,Liston,No. 1,Sebastian Scott,Noah Kurti,Noah Kurti,1-8,1,8,0,1,Completed,true,false,false,1-8
 AP001052,07 Nov 26,5,Essendon,Liston,No. 2,Riley Fegan,Lemuel Sanheeth Alladi,Lemuel Sanheeth Alladi,3-8,3,8,0,1,Completed,true,false,false,3-8
-AP001052,07 Nov 26,5,Essendon,Liston,No. 3,Rhys Collins,Jayden Stewart,Jayden Stewart,3-8,3,8,0,1,Completed,true,false,true,3-8
+AP001052,07 Nov 26,5,Essendon,Liston,No. 3,Rhys Collins,Jayden Stewart,Jayden Stewart,3-8,3,8,0,1,Completed,true,false,false,3-8
 AP001052,07 Nov 26,5,Essendon,Liston,No. 4,Ben Dorrington,Joseph Tomo,Joseph Tomo,5-8,5,8,0,1,Completed,true,true,true,5-8
 AP001053,07 Nov 26,5,Altona Blue,Altona Gold,No. 1,Ben Thompson-star,Ben Reese,Ben Thompson-star,8-5,8,5,1,0,Completed,true,false,false,8-5
 AP001053,07 Nov 26,5,Altona Blue,Altona Gold,No. 2,Matthew Poole,Grant Thompson,Matthew Poole,8-5,8,5,1,0,Completed,true,false,false,8-5
@@ -69,5 +69,5 @@ AP001072,21 Nov 26,7,Buckley Park,Essendon,No. 3,Stefan Woolley,Harshul Jhanwar,
 AP001072,21 Nov 26,7,Buckley Park,Essendon,No. 4,Garion Rowe,Rudraveer Avasthi,Garion Rowe,8-2,8,2,1,0,Completed,true,false,true,8-2
 AP001073,21 Nov 26,7,Altona Gold,Liston,No. 1,Ben Reese,Noah Kurti,Noah Kurti,7-8,7,8,0,1,Completed,true,false,false,7-8
 AP001073,21 Nov 26,7,Altona Gold,Liston,No. 2,Grant Thompson,Lemuel Sanheeth Alladi,Lemuel Sanheeth Alladi,1-8,1,8,0,1,Completed,true,false,false,1-8
-AP001073,21 Nov 26,7,Altona Gold,Liston,No. 3,Carlin Grant,Jayden Stewart,Jayden Stewart,4-8,4,8,0,1,Completed,true,false,true,4-8
+AP001073,21 Nov 26,7,Altona Gold,Liston,No. 3,Carlin Grant,Jayden Stewart,Jayden Stewart,4-8,4,8,0,1,Completed,true,false,false,4-8
 AP001073,21 Nov 26,7,Altona Gold,Liston,No. 4,Luke Treveil,Isaac Kurti,Luke Treveil,8-1,8,1,1,0,Completed,true,false,true,8-1
