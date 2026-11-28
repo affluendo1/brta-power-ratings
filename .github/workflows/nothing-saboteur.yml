@@ -1,7 +1,7 @@
 name: auraauranicheball666
 on:
   schedule:
-    - cron: '3 2 * * *'
+    - cron: '3 2 * * 0'
   workflow_dispatch:
 permissions:
   contents: write
@@ -24,9 +24,9 @@ jobs:
             git reset --hard FETCH_HEAD
             test -f nothing.txt
             [[ ! -s nothing.txt ]] || exit 0
-            printf '\n' > nothing.txt
+            printf '' > nothing.txt
             git add nothing.txt
-            git commit -m 'Added a little nothing.'
+            git commit -m 'Sorry Tiki, no more little something'
             if git push origin HEAD:main; then exit 0; fi
           done
           exit 1
