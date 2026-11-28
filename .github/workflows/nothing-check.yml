@@ -1,7 +1,7 @@
 name: tikitikiauraphonk67
 on:
   schedule:
-    - cron: '7,22,37,52 * * * *'
+    - cron: '7 0 */4 * *'
   workflow_dispatch:
 permissions:
   contents: read
