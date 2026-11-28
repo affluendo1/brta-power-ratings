@@ -1,7 +1,34 @@
-.brand-logo-button{appearance:none;border:0;padding:0;margin:0;background:transparent;display:inline-grid;place-items:center;border-radius:50%;cursor:pointer;flex-shrink:0}
-.brand-logo-button .brand-logo{display:block}
-.brand-logo-button:hover .brand-logo{filter:brightness(1.08)}
-.brand-logo-button:focus-visible{outline:3px solid var(--primary,#f1be42);outline-offset:4px}
+.brand-logo-button {
+  appearance: none;
+  position: relative;
+  display: inline-grid;
+  place-items: center;
+  flex-shrink: 0;
+  padding: 2px;
+  border: 2px solid;
+  border-color: var(--primary, #f1be42);
+  border-radius: 9px;
+  background: var(--surface-raised);
+  color: var(--primary, #f1be42);
+  box-shadow: 0 2px 0 currentColor;
+  cursor: pointer;
+}
+.brand-logo-button .brand-logo { display: block; border-radius: 5px; }
+.brand-logo-button::after {
+  content: "";
+  position: absolute;
+  right: 3px;
+  bottom: 3px;
+  width: 15px;
+  height: 15px;
+  border-radius: 3px;
+  background-color: var(--primary, #f1be42);
+  clip-path: polygon(22% 17%,83% 17%,83% 78%,67% 78%,67% 43%,30% 80%,18% 68%,55% 33%,22% 33%);
+  pointer-events: none;
+}
+.brand-logo-button:hover .brand-logo { filter: brightness(1.2); }
+.brand-logo-button:active { transform: translateY(2px); box-shadow: none; }
+.brand-logo-button:focus-visible { outline: 3px solid currentColor; outline-offset: 4px; }
 .mini-check-relative{display:block;font-weight:650}
 .mini-check-absolute{display:block;margin-top:3px;opacity:.73;font-size:11px;line-height:1.4}
 .mini-copy-name{display:inline-flex;align-items:center;gap:5px;border:1px solid var(--border-color,#aaa);border-radius:8px;background:transparent;color:inherit;padding:5px 9px;margin:7px 0 3px;font:inherit;font-size:12px;font-weight:600;cursor:pointer}

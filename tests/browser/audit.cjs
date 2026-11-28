@@ -29,6 +29,14 @@ const tick=()=>new Promise(r=>setTimeout(r,25));
 (async()=>{await tick();await tick();const assert=require('assert/strict');assert.equal(w.document.querySelector('#ratingsTitle').textContent,'Singles ratings');assert(w.document.querySelectorAll('#ratingBody [data-player]').length>20);console.log('Loaded current section and all feature scripts');
 const click=s=>{assert(w.document.querySelector(s),s);w.document.querySelector(s).focus();w.document.querySelector(s).click()};
 const esc=()=>w.dispatchEvent(new w.KeyboardEvent('keydown',{key:'Escape',bubbles:true,cancelable:true}));
+click('#brandLogoSecret');
+assert(!w.document.querySelector('#logoSecretOverlay').classList.contains('hidden'));
+assert.equal(w.document.querySelector('#logoSecretTitle').textContent,'Prepare.');
+assert.equal(w.document.activeElement.id,'logoSecretClose');
+w.document.activeElement.dispatchEvent(new w.KeyboardEvent('keydown',{key:'Escape',bubbles:true,cancelable:true}));
+await tick();
+assert(w.document.querySelector('#logoSecretOverlay').classList.contains('hidden'));
+assert.equal(w.document.activeElement.id,'brandLogoSecret');
 click('#settingsBtn');await tick();click('#installBtn');await tick();esc();await tick();assert(w.document.querySelector('#installOverlay').classList.contains('hidden'));assert(!w.document.querySelector('#settingsOverlay').classList.contains('hidden'));assert.equal(w.document.activeElement.id,'installBtn');console.log('Install Escape preserves Settings and restores focus');
 click('[data-layout-open="methodology"]');await tick();
 const reference=w.document.querySelector('#layoutOverlay a[download]');
@@ -39,7 +47,7 @@ esc();await tick();assert(w.document.querySelector('#layoutOverlay').classList.c
 click('[data-studio="theme"]');await tick();esc();await tick();assert(w.document.querySelector('#themeStudioOverlay').classList.contains('hidden'));assert(!w.document.querySelector('#settingsOverlay').classList.contains('hidden'));console.log('Theme creator Escape preserves Settings');
 click('[data-changelog-open]');await tick();
 assert.equal(w.document.querySelector('.release-heading h3').textContent,w.BRTA_RELEASES.find(release=>release.size==='major').version);
-assert.equal(w.BRTAChangelog.version,'9.9j&3');
+assert.equal(w.BRTAChangelog.version,'9.9.9.9.9');
 for(const release of w.BRTA_RELEASES.slice(0,6)){
   assert.equal(w.document.querySelector('[data-release-version="'+release.version+'"] h4').textContent,
     release.version+' · '+release.title);

@@ -2,6 +2,15 @@
 // Retrospective entries use source-commit timestamps; sourceCommit records their provenance.
 window.BRTA_RELEASES = Object.freeze([
 {
+  "version": "9.9.9.9.9",
+  "size": "small",
+  "title": "Get Ready",
+  "committedAt": "2026-11-28T12:44:31+11:00",
+  "changes": [
+    "The BRTA logo button is easier to spot. Open it to read the message."
+  ]
+},
+{
   "version": "9.9j&3",
   "size": "small",
   "title": "Expanded career skill graphs",
